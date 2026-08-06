@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="movie.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineWatch</title>
+    <!-- Google Fonts: Inter & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Firebase Authentication & Firestore Module (must load before movie.js) -->
+    <script type="module" src="firebase-auth.js"></script>
+    <script src="movie.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <!-- Loading Splash Screen -->
+    <div class="app-loader" id="appLoader">
+        <div class="loader-content">
+            <div class="loader-logo">🎬 Cine<span>Watch</span></div>
+            <div class="loader-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+            </div>
+            <p class="loader-text">Loading your cinema...</p>
+        </div>
+    </div>
+
+    <!-- Fixed Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+                <!-- Logo: hidden on mobile (shown in slide-out menu instead) -->
+                <a href="#" class="brand-logo" id="logoBtn">
+                    <span class="logo-icon">🎬</span>
+                    <span class="logo-text">Cine<span class="logo-accent">Watch</span></span>
+                </a>
+                <nav class="nav-links">
+                    <a href="#" class="nav-link active" data-view="home"><ion-icon name="home-outline"></ion-icon>
+                        Home</a>
+                    <a href="#" class="nav-link" data-view="genres"><ion-icon name="grid-outline"></ion-icon> Genres</a>
+                    <a href="#" class="nav-link" data-view="continue"><ion-icon name="play-circle-outline"></ion-icon>
+                        Continue Watching</a>
+                    <a href="#" class="nav-link" data-view="watchlist"><ion-icon name="heart-outline"></ion-icon> My
+                        Watchlist <span class="badge" id="navWatchlistBadge" style="display: none;">0</span></a>
+                </nav>
+            </div>
+
+            <div class="nav-right">
+                <!-- Live Search Box -->
+                <div class="search-box">
+                    <span class="search-icon"><ion-icon name="search-outline"></ion-icon></span>
+                    <input type="text" id="searchInput" placeholder="Search titles, genres, actors..."
+                        autocomplete="off">
+                    <button class="search-clear-btn hidden" id="searchClearBtn">&times;</button>
+                    <div class="search-dropdown hidden" id="searchDropdown"></div>
+                </div>
+
+                <!-- User Auth Badge / Profile -->
+                <div class="user-profile-container" id="userProfileContainer">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu">
+            <!-- Logo at top of menu -->
+            <div class="mobile-menu-header">
+                <a href="#" class="brand-logo mobile-menu-logo">
+                    <span class="logo-icon">🎬</span>
+                    <span class="logo-text">Cine<span class="logo-accent">Watch</span></span>
+                </a>
+                <button class="mobile-menu-close" id="mobileMenuCloseBtn">&times;</button>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="mobile-nav-links">
+                <a href="#" class="nav-link active" data-view="home"><ion-icon name="home-outline"></ion-icon> Home</a>
+                <a href="#" class="nav-link" data-view="genres"><ion-icon name="grid-outline"></ion-icon> Genres</a>
+                <a href="#" class="nav-link" data-view="continue"><ion-icon name="play-circle-outline"></ion-icon> Continue Watching</a>
+                <a href="#" class="nav-link" data-view="watchlist"><ion-icon name="heart-outline"></ion-icon> My Watchlist <span class="badge" id="mobileNavWatchlistBadge" style="display: none;">0</span></a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Spotlight Section -->
+    <section class="hero-banner" id="heroBanner">
+        <div class="hero-track" id="heroTrack"></div>
+        <div class="hero-carousel-dots" id="heroDots"></div>
+    </section>
+
+    <!-- Quick Genre Filter Bar -->
+    <div class="genre-filter-wrapper">
+        <div class="genre-filter-container" id="genreFilterBar">
+            <button class="genre-chip active" data-genre="all"> All Titles</button>
+            <button class="genre-chip" data-genre="Action"> Action</button>
+            <button class="genre-chip" data-genre="Sci-Fi"> Sci-Fi</button>
+            <button class="genre-chip" data-genre="Horror"> Horror</button>
+            <button class="genre-chip" data-genre="Drama"> Drama</button>
+            <button class="genre-chip" data-genre="Comedy"> Comedy</button>
+            <button class="genre-chip" data-genre="Anime"> Anime</button>
+            <button class="genre-chip" data-genre="Animation"> Animation</button>
+        </div>
+    </div>
+
+    <!-- Main Views & Shelves Container -->
+    <main class="main-content" id="mainContent">
+
+        <!-- Continue Watching Shelf -->
+        <section class="shelf-section hidden" id="continueWatchingShelf">
+            <div class="shelf-header">
+                <h2 class="shelf-title">⏱️ Continue Watching</h2>
+                <span class="shelf-subtitle">Pick up right where you left off</span>
+            </div>
+            <div class="carousel-wrapper">
+                <button class="carousel-nav prev" data-target="continueTrack">‹</button>
+                <div class="carousel-track" id="continueTrack"></div>
+                <button class="carousel-nav next" data-target="continueTrack">›</button>
+            </div>
+        </section>
+
+        <!-- My Watchlist View (Dynamic) -->
+        <section class="shelf-section hidden" id="watchlistSection">
+            <div class="shelf-header">
+                <h2 class="shelf-title">♥ My Watchlist</h2>
+                <span class="shelf-subtitle" id="watchlistCountText">0 saved movies</span>
+            </div>
+            <div class="movies-grid" id="watchlistGrid"></div>
+            <div class="empty-state hidden" id="emptyWatchlist">
+                <div class="empty-icon">💔</div>
+                <h3>Your watchlist is empty</h3>
+                <p>Explore titles and tap the heart icon to save your favorite movies here!</p>
+                <button class="btn btn-primary mt-4" id="exploreBtn">Explore Movies</button>
+            </div>
+        </section>
+
+        <!-- Filtered Grid View (For Search / Genre Tabs) -->
+        <section class="shelf-section hidden" id="filteredSection">
+            <div class="shelf-header">
+                <h2 class="shelf-title" id="filteredTitle">Search Results</h2>
+                <span class="shelf-subtitle" id="filteredCount">0 titles found</span>
+            </div>
+            <div class="movies-grid" id="filteredGrid"></div>
+        </section>
+
+        <!-- Category Shelves Container -->
+        <div id="defaultShelves">
+            <!-- Shelf 1: Trending Now -->
+            <section class="shelf-section">
+                <div class="shelf-header">
+                    <h2 class="shelf-title"><p style="color: red; margin-top: 0%; position: absolute; margin-left: -0.5%; ">|</p>Trending This Week</h2>
+                    <span class="shelf-subtitle">Most watched movies this week</span>
+                </div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev" data-target="trendingTrack">‹</button>
+                    <div class="carousel-track" id="trendingTrack"></div>
+                    <button class="carousel-nav next" data-target="trendingTrack">›</button>
+                </div>
+            </section>
+
+            <!-- Shelf 2: Sci-Fi & Cyberpunk -->
+            <section class="shelf-section">
+                <div class="shelf-header">
+                    <h2 class="shelf-title"> Sci-Fi</h2>
+                </div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev" data-target="scifiTrack">‹</button>
+                    <div class="carousel-track" id="scifiTrack"></div>
+                    <button class="carousel-nav next" data-target="scifiTrack">›</button>
+                </div>
+            </section>
+
+            <!-- Shelf 3: High-Octane Action -->
+            <section class="shelf-section">
+                <div class="shelf-header">
+                    <h2 class="shelf-title">Action</h2>
+                </div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev" data-target="actionTrack">‹</button>
+                    <div class="carousel-track" id="actionTrack"></div>
+                    <button class="carousel-nav next" data-target="actionTrack">›</button>
+                </div>
+            </section>
+
+            <!-- Shelf 4: Anime & Animated Classics -->
+            <section class="shelf-section">
+                <div class="shelf-header">
+                    <h2 class="shelf-title">Animation</h2>
+                </div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev" data-target="animeTrack">‹</button>
+                    <div class="carousel-track" id="animeTrack"></div>
+                    <button class="carousel-nav next" data-target="animeTrack">›</button>
+                </div>
+            </section>
+
+            <!-- Shelf 5: Horror & Dark Mystery -->
+            <section class="shelf-section">
+                <div class="shelf-header">
+                    <h2 class="shelf-title">Horror</h2>
+                </div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev" data-target="horrorTrack">‹</button>
+                    <div class="carousel-track" id="horrorTrack"></div>
+                    <button class="carousel-nav next" data-target="horrorTrack">›</button>
+                </div>
+            </section>
+
+            <!-- Shelf 6: Acclaimed Dramas -->
+            <section class="shelf-section">
+                <div class="shelf-header">
+                    <h2 class="shelf-title">Dramas</h2>
+                </div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev" data-target="dramaTrack">‹</button>
+                    <div class="carousel-track" id="dramaTrack"></div>
+                    <button class="carousel-nav next" data-target="dramaTrack">›</button>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2 class="footer-logo">CINE<span class="text-primary">WATCH</span></h2>
+                <p class="footer-desc">
+                    Your ultimate streaming destination. Watch movies and TV shows in high quality with multiple server options.
+                </p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h3>BROWSE</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV Shows</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>GENRES</h3>
+                    <ul>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Comedy</a></li>
+                        <li><a href="#">Drama</a></li>
+                        <li><a href="#">Horror</a></li>
+                        <li><a href="#">Sci-Fi</a></li>
+                        <li><a href="#">Romance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>INFO</h3>
+                    <ul>
+                        <li><a href="#">DMCA</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <span class="tmdb-credit">Data provided by TMDB</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Movie Details Modal -->
+    <div class="modal-overlay hidden" id="detailsModal">
+        <div class="modal-card details-modal-card">
+            <button class="modal-close-btn" id="closeDetailsBtn">&times;</button>
+            <div class="details-hero">
+                <div class="details-bg" id="detailsBg"></div>
+                <div class="details-bg-gradient"></div>
+                <div class="details-poster-wrap">
+                    <img src="" alt="Poster" id="detailsPoster" class="details-poster">
+                </div>
+            </div>
+            <div class="details-info-body">
+                <div class="details-header-row">
+                    <h2 class="details-title" id="detailsTitle">Movie Title</h2>
+                    <div class="details-meta">
+                        <span class="meta-type" id="detailsType" style="background: var(--primary); color: #fff; padding: 0.1rem 0.4rem; border-radius: 4px; font-size: 0.78rem; font-weight: 700;">Movie</span>
+                        <span class="meta-rating">⭐ <span id="detailsRating">4.8</span></span>
+                        <span class="meta-year" id="detailsYear">2026</span>
+                        <span class="meta-age" id="detailsAge">PG-13</span>
+                        <span class="meta-duration" id="detailsDuration">2h 10m</span>
+                    </div>
+                </div>
+
+                <div class="details-tags" id="detailsTags"></div>
+
+                <p class="details-overview" id="detailsOverview">Synopsis goes here...</p>
+
+                <div class="details-credits">
+                    <p><strong>Director:</strong> <span id="detailsDirector">Christopher Nolan</span></p>
+                    <p><strong>Cast:</strong> <span id="detailsCast">Actor A, Actor B, Actor C</span></p>
+                </div>
+
+                <div class="details-actions">
+                    <button class="btn btn-primary btn-lg" id="detailsPlayBtn">
+                        ▶ Watch Movie
+                    </button>
+                    <button class="btn btn-secondary btn-lg" id="detailsFavBtn">
+                        ♥ <span id="detailsFavText">Add to Watchlist</span>
+                    </button>
+                </div>
+
+                <!-- TV Show Season/Episode Selector (hidden for Movies) -->
+                <div id="tvShowSection" class="tv-show-section hidden">
+                    <div class="season-episode-header">
+                        <h3 class="season-label">📺 Episodes</h3>
+                        <div class="season-select-wrap">
+                            <label for="seasonSelect">Season:</label>
+                            <select id="seasonSelect" class="season-select"></select>
+                        </div>
+                    </div>
+                    <div class="episode-grid" id="episodeGrid"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Video Player Modal -->
+    <div class="video-modal-overlay hidden" id="videoModal">
+        <div class="video-container">
+            <div class="video-header">
+                <div class="video-title-info">
+                    <button class="video-go-back-btn" id="closePlayerBtn">
+                      <svg viewBox="0 0 24 24" class="go-back-arr-2" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.82843 10.9999L13.1924 5.63589L11.7782 4.22168L4 11.9999L11.7782 19.778L13.1924 18.3638L7.82843 12.9999H20V10.9999H7.82843Z"></path>
+                      </svg>
+                      <span class="go-back-text">GO BACK</span>
+                      <span class="go-back-circle"></span>
+                      <svg viewBox="0 0 24 24" class="go-back-arr-1" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.82843 10.9999L13.1924 5.63589L11.7782 4.22168L4 11.9999L11.7782 19.778L13.1924 18.3638L7.82843 12.9999H20V10.9999H7.82843Z"></path>
+                      </svg>
+                    </button>
+                    <h3 id="playerMovieTitle">Movie Title</h3>
+                </div>
+                <div class="server-select-wrap hidden" id="serverSelectWrap">
+                    <label for="videoServerSelect">Server:</label>
+                    <select id="videoServerSelect" class="season-select">
+                        <option value="cinesrc">Server 1 (CineSrc)</option>
+                        <option value="multiembed">Server 2 (MultiEmbed - Best Quality)</option>
+                        <option value="vidsrcme">Server 3 (VidSrc.me)</option>
+                        <option value="vidsrcxyz">Server 4 (VidSrc.xyz)</option>
+                        <option value="vidlink">Server 5 (VidLink)</option>
+                        <option value="moviepire">Server 6 (MoviePire)</option>
+                    </select>
+                </div>
+                <button class="video-close-x" id="closePlayerX">&times;</button>
+            </div>
+
+            <!-- HTML5 Video Player -->
+            <video id="videoElement" class="video-element" preload="metadata" playsinline>
+                <source src="" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            
+            <!-- Iframe Video Player (For External Embeds) -->
+            <iframe id="iframeElement" class="video-element hidden" src="" width="100%" height="100%" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen allow="autoplay; fullscreen; encrypted-media; picture-in-picture"></iframe>
+
+            <!-- Floating Fullscreen Button for Iframe players -->
+            <button class="iframe-fullscreen-btn hidden" id="iframeFullscreenBtn" title="Fullscreen">⛶</button>
+
+            <!-- Center Play/Pause Overlay Animation -->
+            <div class="video-center-overlay hidden" id="videoCenterOverlay">
+                <span class="center-play-icon" id="centerPlayIcon">▶</span>
+            </div>
+
+            <!-- Custom Player Controls Bar -->
+            <div class="player-controls-bar" id="playerControlsBar">
+                <!-- Seek Progress Bar -->
+                <div class="seek-container">
+                    <div class="seek-progress-bg">
+                        <div class="seek-progress-fill" id="seekFill"></div>
+                    </div>
+                    <input type="range" id="seekBar" class="seek-slider" min="0" max="100" value="0" step="0.1">
+                    <div class="seek-tooltip" id="seekTooltip">00:00</div>
+                </div>
+
+                <div class="controls-row">
+                    <div class="controls-left">
+                        <button class="ctrl-btn" id="playPauseBtn" title="Play/Pause (Space)">▶</button>
+                        <button class="ctrl-btn" id="rewindBtn" title="Rewind 10s">↺ 10s</button>
+                        <button class="ctrl-btn" id="forwardBtn" title="Forward 10s">↻ 10s</button>
+
+                        <!-- Volume Control -->
+                        <div class="volume-container">
+                            <button class="ctrl-btn" id="muteBtn" title="Mute/Unmute">🔊</button>
+                            <input type="range" id="volumeBar" class="volume-slider" min="0" max="1" step="0.05"
+                                value="1">
+                        </div>
+
+                        <!-- Time Display -->
+                        <div class="time-display">
+                            <span id="currentTimeText">00:00</span> / <span id="durationText">00:00</span>
+                        </div>
+                    </div>
+
+                    <div class="controls-right">
+                        <!-- Speed Selector -->
+                        <div class="speed-container">
+                            <span class="speed-label">Speed:</span>
+                            <select id="speedSelect" class="speed-select">
+                                <option value="0.5">0.5x</option>
+                                <option value="1.0" selected>1.0x</option>
+                                <option value="1.25">1.25x</option>
+                                <option value="1.5">1.5x</option>
+                                <option value="2.0">2.0x</option>
+                            </select>
+                        </div>
+
+                        <!-- Fullscreen Button -->
+                        <button class="ctrl-btn" id="fullscreenBtn" title="Fullscreen (F)">⛶</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Authentication (Login / Signup) Modal -->
+    <div class="modal-overlay hidden" id="authModal">
+        <div class="modal-card auth-modal-card">
+            <button class="modal-close-btn" id="closeAuthBtn">&times;</button>
+
+            <div class="auth-header">
+                <div class="auth-logo">🎬 CineWatch</div>
+                <p class="auth-subtitle">Welcome to your personal cinema universe</p>
+            </div>
+
+            <!-- Auth Tabs -->
+            <div class="auth-tabs">
+                <button class="auth-tab active" id="tabLoginBtn"><ion-icon name="log-in-outline"></ion-icon> Sign
+                    In</button>
+                <button class="auth-tab" id="tabSignupBtn"><ion-icon name="person-add-outline"></ion-icon> Create
+                    Account</button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm" class="auth-form" novalidate>
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <div class="input-with-icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" id="loginEmail" class="form-control" placeholder="name@example.com"
+                            required>
+                    </div>
+                    <div class="form-error" id="loginEmailError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <div class="input-with-icon">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="loginPassword" class="form-control" placeholder="••••••••" required>
+                        <ion-icon name="eye-outline" class="password-toggle" id="toggleLoginPassword"></ion-icon>
+                    </div>
+                    <div class="form-error" id="loginPasswordError"></div>
+                </div>
+
+                <div class="form-alert hidden" id="loginAlert"></div>
+
+                <button type="submit" class="btn btn-primary btn-block"><ion-icon name="log-in-outline"></ion-icon> Sign
+                    In</button>
+            </form>
+
+            <!-- Signup Form -->
+            <form id="signupForm" class="auth-form hidden" novalidate>
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <div class="input-with-icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" id="signupName" class="form-control" placeholder="Username" required>
+                    </div>
+                    <div class="form-error" id="signupNameError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupEmail">Email Address</label>
+                    <div class="input-with-icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" id="signupEmail" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-error" id="signupEmailError"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <div class="input-with-icon">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="signupPassword" class="form-control" placeholder="Password" required>
+                        <ion-icon name="eye-outline" class="password-toggle" id="toggleSignupPassword"></ion-icon>
+                    </div>
+                    <div class="form-error" id="signupPasswordError"></div>
+                </div>
+
+                <div class="form-alert hidden" id="signupAlert"></div>
+
+                <button type="submit" class="btn btn-primary btn-block"><ion-icon name="person-add-outline"></ion-icon>
+                    Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="brand-logo">🎬 Cine<span class="logo-accent">Watch</span></div>
+                <p class="footer-tagline">Unlimited cinema, instant streaming, and personalized watchlists.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Help Center</a>
+                <a href="#">API Documentation</a>
+            </div>
+            <div class="footer-copyright">
+                © 2026 CineWatch, Inc. Crafted with pure Vanilla HTML5, CSS3 & JavaScript.
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Script -->
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTopBtn" title="Back to top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4L4 12H9V20H15V12H20L12 4Z" fill="currentColor"/>
+        </svg>
+    </button>
+
+</body>
+
+</html>
