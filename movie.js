@@ -39,7 +39,7 @@ const MOVIES = [
     poster:
       "https://www.themoviedb.org/t/p/w600_and_h900_face/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
     backdrop:
-      "https://4kwallpapers.com/images/walls/thumbs_2t/26473.jpg",
+      "https://4kwallpapers.com/images/walls/thumbs_2t/26613.jpg",
     videoUrl:
       "969681",
     overview:
