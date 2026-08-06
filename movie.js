@@ -39,7 +39,7 @@ const MOVIES = [
     poster:
       "https://www.themoviedb.org/t/p/w600_and_h900_face/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
     backdrop:
-      "https://4kwallpapers.com/images/walls/thumbs_2t/26613.jpg",
+      "https://4kwallpapers.com/images/wallpapers/spider-man-brand-2560x1080-26473.jpg",
     videoUrl:
       "969681",
     overview:
@@ -85,7 +85,7 @@ const MOVIES = [
     poster:
       "https://seriesgraph.com/_next/image?url=https://image.tmdb.org/t/p/w400/zCHmmoqtLsIsou866osiWtIWmoA.jpg&w=3840&q=75",
     backdrop:
-      "https://4kwallpapers.com/images/wallpapers/batman-caped-2880x1800-21836.jpg",
+      "https://images2.alphacoders.com/137/thumb-1920-1371307.jpg",
     videoUrl: "125909",
     overview:
       "Welcome to Gotham City, where corruption runs deep and criminals grow bolder by the night. Forged by tragedy, Bruce Wayne becomes the Batman — but his one-man crusade for justice draws unexpected allies, dangerous enemies, and consequences he never anticipated.",
