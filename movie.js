@@ -37,9 +37,9 @@ const MOVIES = [
     durationSec: 8280,
     genres: ["Action", "Adventure", "Science-Fiction"],
     poster:
-      "spiderman.jpg",
+      "https://www.themoviedb.org/t/p/w600_and_h900_face/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
     backdrop:
-      "spiderman-at-the-absolute-peak-r2-3840x2160.jpg",
+      "https://4kwallpapers.com/images/walls/thumbs_2t/26473.jpg",
     videoUrl:
       "969681",
     overview:
