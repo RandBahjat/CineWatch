@@ -85,7 +85,7 @@ const MOVIES = [
     poster:
       "https://seriesgraph.com/_next/image?url=https://image.tmdb.org/t/p/w400/zCHmmoqtLsIsou866osiWtIWmoA.jpg&w=3840&q=75",
     backdrop:
-      "1371307.jpg",
+      "https://4kwallpapers.com/images/wallpapers/batman-caped-2880x1800-21836.jpg",
     videoUrl: "125909",
     overview:
       "Welcome to Gotham City, where corruption runs deep and criminals grow bolder by the night. Forged by tragedy, Bruce Wayne becomes the Batman — but his one-man crusade for justice draws unexpected allies, dangerous enemies, and consequences he never anticipated.",
