@@ -253,9 +253,9 @@ const MOVIES = [
     durationSec: 9300,
     genres: ["Action", "Adventure", "Fantasy"],
     poster:
-      "odyssey-poster",
+      "https://www.themoviedb.org/t/p/w600_and_h900_face/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
     backdrop:
-      "https://images.hdqwalls.com/download/the-odyssey-movie-ly-3840x2160.jpg",
+      "https://img.uhdpaper.com/wallpaper/the-odyssey-movie-poster-530@5@o-thumb.jpg",
     videoUrl:
       "1368337",
     overview:
