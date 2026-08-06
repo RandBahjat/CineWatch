@@ -39,7 +39,7 @@ const MOVIES = [
     poster:
       "https://www.themoviedb.org/t/p/w600_and_h900_face/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
     backdrop:
-      "https://4kwallpapers.com/images/wallpapers/spider-man-brand-2560x1080-26473.jpg",
+      "spider-man-brand-3840x2160-26473.jpg",
     videoUrl:
       "969681",
     overview:
