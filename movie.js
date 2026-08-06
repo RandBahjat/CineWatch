@@ -255,7 +255,7 @@ const MOVIES = [
     poster:
       "https://www.themoviedb.org/t/p/w600_and_h900_face/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
     backdrop:
-      "https://img.uhdpaper.com/wallpaper/the-odyssey-movie-poster-530@5@o-thumb.jpg",
+      "odysseus-matt-damon-3840x2160-26432.jpg",
     videoUrl:
       "1368337",
     overview:
