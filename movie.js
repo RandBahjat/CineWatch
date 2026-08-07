@@ -5836,7 +5836,42 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-
+{
+    id: "m240", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Jason Bourne",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2016,
+    rating: 6.6,
+    age: "PG-13",
+    duration: "2h 3m ",
+    genres: ["Action", "Mystery", "Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w1280/xA7N41glw17MBQtcWSm2eBlBRuG.jpg",
+    backdrop: "https://media.themoviedb.org/t/p/w1000_and_h563_face/t8v8d5tn4L3BT3I1j86DDt3AhyH.jpg",
+    videoUrl: "324668",
+    overview: "A decade after walking away from the agency, a now-fully-remembered Jason Bourne is pulled out of the shadows. Scrimping a living via underground bare-knuckle boxing matches in Greece, his quiet isolation ends when his old ally, Nicky Parsons, hacks into the CIA’s most secure mainframe. She uncovers explosive new files regarding Treadstone's origins and a deeply personal secret about Bourne's father. Hunted across Athens, Berlin, and Las Vegas, Bourne must evade a ruthless new CIA director and a lethal asset while uncovering a massive global surveillance conspiracy known as Iron Hand.",
+    director: "Paul Greengrass",
+    cast: ["Matt Damon, Tommy Lee Jones, Alicia Vikander, Vincent Cassel, Julia Stiles, Riz Ahmed"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
+    id: "m241", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "The Martian",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2015,
+    rating: 8.0,
+    age: "PG-13",
+    duration: "2h 24m ",
+    genres: ["Sci-Fi", "Adventure", "Drama"],
+    poster: "https://www.themoviedb.org/t/p/w1280/pjYWdykADVLTCh5g475RnI2hWIN.jpg",
+    backdrop: "https://media.themoviedb.org/t/p/w1066_and_h600_face/oiaAHnlJjdkO4shP0UGNNTjEaIM.jpg",
+    videoUrl: "286217",
+    overview: "During a manned mission to Mars, astronaut Mark Watney is presumed dead after a fierce storm separates him from his crew and forces them to evacuate the planet. Left stranded alone on the hostile Martian landscape with meager supplies, the ingenious botanist must rely on his scientific wit, engineering skills, and sheer grit to survive. Using his knowledge to grow potatoes inside an artificial habitat and modify old equipment, he manages to broadcast a desperate signal back to Earth, triggering an audacious, high-stakes international rescue mission by NASA and his former crewmates.",
+    director: "Ridley Scott",
+    cast: ["Matt Damon, Jessica Chastain, Jeff Daniels, Kristen Wiig, Chiwetel Ejiofor, Sean Bean, Kate Mara, Sebastian Stan, Donald Glover, Michael Peña"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
 ]
 // ==========================================
 // 1b. HERO BANNER SETTINGS  (EDIT THIS SECTION)
