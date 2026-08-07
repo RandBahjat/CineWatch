@@ -5746,6 +5746,97 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
+{
+    id: "m235", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Interstellar",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2015,
+    rating: 8.0,
+    age: "PG-13",
+    duration: "2h 24m ",
+    genres: ["Sci-Fi", "Adventure", "Drama"],
+    poster: "https://www.themoviedb.org/t/p/w1280/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+    backdrop: "https://wallpapercave.com/wp/wp11717778.jpg",
+    videoUrl: "157336",
+    overview: "During a manned mission to Mars, astronaut Mark Watney is presumed dead after a fierce storm separates him from his crew and forces them to evacuate the planet. Left stranded alone on the hostile Martian landscape with meager supplies, the ingenious botanist must rely on his scientific wit, engineering skills, and sheer grit to survive. Using his knowledge to grow potatoes inside an artificial habitat and modify old equipment, he manages to broadcast a desperate signal back to Earth, triggering an audacious, high-stakes international rescue mission by NASA and his former crewmates.",
+    director: "Ridley Scott",
+    cast: ["Matt Damon, Jessica Chastain, Jeff Daniels, Kristen Wiig, Chiwetel Ejiofor, Sean Bean, Kate Mara, Sebastian Stan, Donald Glover, Michael Peña"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
+    id: "m236", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "The Bourne Identity",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2002,
+    rating: 7.8,
+    age: "PG-13",
+    duration: "1h 59m ",
+    genres: ["Action", "Mystery", "Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w1280/aP8swke3gmowbkfZ6lmNidu0y9p.jpg",
+    backdrop: "https://w0.peakpx.com/wallpaper/402/62/HD-wallpaper-the-bourne-identity-jason-bourne-bourne-matt-damon-as-jason-bourne.jpg",
+    videoUrl: "2501",
+    overview: "During a manned mission to Mars, astronaut Mark Watney is presumed dead after a fierce storm separates him from his crew and forces them to evacuate the planet. Left stranded alone on the hostile Martian landscape with meager supplies, the ingenious botanist must rely on his scientific wit, engineering skills, and sheer grit to survive. Using his knowledge to grow potatoes inside an artificial habitat and modify old equipment, he manages to broadcast a desperate signal back to Earth, triggering an audacious, high-stakes international rescue mission by NASA and his former crewmates.",
+    director: "Ridley Scott",
+    cast: ["Matt Damon, Jessica Chastain, Jeff Daniels, Kristen Wiig, Chiwetel Ejiofor, Sean Bean, Kate Mara, Sebastian Stan, Donald Glover, Michael Peña"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
+    id: "m237", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "The Bourne Supremacy",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2004,
+    rating: 7.7,
+    age: "PG-13",
+    duration: "1h 48m ",
+    genres: ["Action", "Mystery", "Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w1280/jupG9sFT64YwM8PSkwkUD2wHcYD.jpg",
+    backdrop: "https://m.media-amazon.com/images/S/pv-target-images/cf3bdec54c3f7f014c58c6ea104657dca5e1affe50533a96cc81a902546c0c5b.jpg",
+    videoUrl: "2502",
+    overview: "Two years after the events of the first film, Jason Bourne has built a quiet, anonymous life in Goa, India, with Marie Kreutz. Still plagued by fragmented, painful nightmares of his forgotten past, Bourne's peace is shattered when a ruthless Russian assassin frames him for a botched CIA operation in Berlin and tracks him down. Forced out of hiding by a tragic confrontation, Bourne hits the grid again to clear his name, outmaneuver the CIA, and finally extract vengeance on those still trying to destroy him.",
+    director: "Paul Greengrass",
+    cast: ["Matt Damon, Joan Allen, Brian Cox, Julia Stiles, Karl Urban, Franka Potente, John Wood"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
+    id: "m238", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "The Bourne Ultimatum",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2007,
+    rating: 8.0,
+    age: "PG-13",
+    duration: "1h 55m ",
+    genres: ["Action", "Mystery", "Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w1280/15rMz5MRXFp7CP4VxhjYw4y0FUn.jpg",
+    backdrop: "https://www.reelworldtheology.com/wp-content/uploads/2016/07/bourne-ultimatum-header.jpg",
+    videoUrl: "2503",
+    overview: "Jason Bourne continues his high-stakes quest to uncover the dark truths of his past while evading a new generation of highly trained black-ops assassins. Tracking clues from Moscow, Paris, Madrid, and London all the way to New York City, Bourne races to expose Operation Blackbriar—the sinister evolution of the Treadstone program that created him—and finally discover his true identity as David Webb.",
+    director: "Paul Greengrass",
+    cast: ["Matt Damon, Joan Allen, David Strathairn, Julia Stiles, Scott Glenn, Albert Finney, Edgar Ramírez"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
+    id: "m239", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "The Bourne Legacy",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2012,
+    rating: 6.6,
+    age: "PG-13",
+    duration: "2h 15m ",
+    genres: ["Action", "Mystery", "Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w1280/1aExL5DTGHj25ZfIC3dDwS84RWi.jpg",
+    backdrop: "https://media.themoviedb.org/t/p/w1066_and_h600_face/akNBILfG0vh7WhuzjA1bXfrgpYI.jpg",
+    videoUrl: "49040",
+    overview: "Set concurrently with and immediately following the explosive events of The Bourne Ultimatum, this expansion of the franchise shifts focus away from Jason Bourne to a new operative, Aaron Cross. Cross is a member of Outcome, a highly classified Department of Defense program that genetically enhances its agents' physical and mental capabilities using special pills called chems. When Jason Bourne exposes the CIA's black-ops operations, the mastermind behind the program decides to completely shut down Outcome and systematically assassinate every agent involved. Cross must escape the purge, rescue a genetic scientist who holds the key to locking in his physical enhancements permanently, and fight to survive.",
+    director: "Tony Gilro",
+    cast: ["Jeremy Renner, Rachel Weisz, Edward Norton, Stacy Keach, Oscar Isaac, Joan Allen, Albert Finney"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+
 ]
 // ==========================================
 // 1b. HERO BANNER SETTINGS  (EDIT THIS SECTION)
