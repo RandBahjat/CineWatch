@@ -5584,6 +5584,97 @@ const MOVIES = [
 
     ],
   },
+{
+    id: "m226", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Miraculous: Ladybug & Cat Noir, The Movie ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2023,
+    rating: 6.1,
+    age: "PG",
+    duration: "1h 45m ",
+    genres: ["Animation","Action", "Adventure", "Family", "Fantasy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dQNJ8SdCMn3zWwHzzQD2xrphR1X.jpg",
+    backdrop: "https://wallpapercg.com/download/miraculous-tales-of-ladybug-cat-noir--26041.jpeg",
+    videoUrl: "496450",
+    overview: "This animated musical feature film serves as a reimagining and origin story of the globally popular series. It follows Marinette Dupain-Cheng, a socially awkward Parisian teenager, and Adrien Agreste, the lonely son of a wealthy fashion mogul. When a sinister villain named Hawk Moth threatens Paris with dark magic, both teenagers are chosen to wield the magical jewels known as Miraculous. Transforming into the superheroes Ladybug and Cat Noir, they must learn to master their new powers and work together to save the city, all while keeping their true identities a secret from the world—and each other.",
+    director: "Jeremy Zag",
+    cast: ["Anouck Hautbois, Benjamin Bollen, Antoine Tomé (French) / Cristina Vee, Bryce Papenbrook, Keith Silverstein (English)"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
+    id: "m227", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Miraculous World: New York, United HeroeZ  ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2020,
+    rating: 7.2,
+    age: "TV-Y7",
+    duration: "52m ",
+    genres: ["Animation","Action", "Adventure", "Family"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9YbyvcrHmY2SVbdfXpb8mC4Fy0g.jpg",
+    backdrop: "https://www.acmodasi.in/amdb/images/movie/w1920/75/58/miraculous-world-new-york-united-heroez-2020-177377.webp",
+    videoUrl: "755812",
+    overview: "In the first feature-length television special of the Miraculous World series, Marinette's school class travels to New York City to celebrate French-American Friendship Week. The trip seems perfect until Adrien is initially left behind by his strict father. However, Gabriel Agreste has his own hidden agenda—he is traveling to New York to steal an ancient, powerful native American necklace holding the Eagle Miraculous. When Hawk Moth sets his plan into motion, Ladybug and Cat Noir must join forces with New York's legendary homegrown protectors, the United HeroeZ, to stop a catastrophic threat to global peace.",
+    director: "Thomas Astruc",
+    cast: ["Cristina Vee, Bryce Papenbrook, Keith Silverstein, Zeno Robinson, Jaimi Gray, Scott Whyte"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
+    id: "m228", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Miraculous World: London, at the Edge of Time  ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2024,
+    rating: 8.3,
+    age: "TV-Y7",
+    duration: "50m ",
+    genres: ["Animation","Action", "Adventure", "Family","Sc-Fi"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wcoHmWbTRNp0HSttto4faQL1MKG.jpg",
+    backdrop: "https://cdn.iview.abc.net.au/thumbs/1200/zw/ZW4200A001S00_67eb757f5f5e0.jpg",
+    videoUrl: "1147416",
+    overview: "In this pivotal television special set immediately after the dramatic events of the Season 5 finale, Marinette has become the Guardian of both the Miraculous and the new Butterfly Miraculous, but she faces a devastating reality: Adrien has lost his ring, and she is entirely cut off from Cat Noir. When a dangerous new villain suddenly discovers the secret identities of the heroes, the future hangs in the balance. Marinette must team up with Bunnyx and utilize the power of time travel, transforming into the time-skipping hero Chronobug to race against the clock in London and prevent the timeline from unraveling forever.",
+    director: "Thomas Astruc",
+    cast: ["Annouck Hautbois, Benjamin Bollen, Marie Nonnenmacher (French) / Cristina Vee, Bryce Papenbrook, Carrie Keranen (English)"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
+    id: "m229", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Miraculous World: Paris, Tales of Shadybug and Claw Noir  ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2023,
+    rating: 8.4,
+    age: "TV-Y7",
+    duration: "50m ",
+    genres: ["Animation","Action", "Adventure", "Family","Fantasy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7Md3nuV0ZprBTnkdR3OrUCEsrSP.jpg",
+    backdrop: "https://photos.tf1.fr/1920/1080/background-ott-png-miraculous-world-paris-toxinelle-7a5c72-9c41fa-0@1x.jpg",
+    videoUrl: "1147400",
+    overview: "In this unique dimension-hopping television special, Ladybug and Cat Noir face an entirely new kind of threat when two corrupted Miraculous holders from a dark parallel universe break into their world. In this mirror reality, the equivalents of Marinette and Adrien are the villainous Shadybug and Claw Noir, who serve under the cruel command of the Supreme. To defeat these lethal variants and save both versions of Paris, Ladybug and Cat Noir must team up with Betterfly, a heroic alternate-universe version of Monarch who uses the Butterfly Miraculous to inspire hope rather than despair.",
+    director: "Thomas Astruc",
+    cast: ["Anouck Hautbois, Benjamin Bollen, Antoine Tomé (French) / Cristina Vee, Bryce Papenbrook, Keith Silverstein (English)"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
+    id: "m230", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "The Polar Express",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2004,
+    rating: 6.6,
+    age: "G",
+    duration: "1h 40m ",
+    genres: ["Animation", "Adventure", "Family", "Fantasy","Christmas"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/eOoCzH0MqeGr2taUZO4SwG416PF.jpg",
+    backdrop: "https://www.raileventsretail.com/cdn/shop/files/PEX_Blanket_2022_SL220009_580x.jpg?v=1716586756",
+    videoUrl: "5255",
+    overview: "On a snowy Christmas Eve, a young boy who is growing skeptical of Santa Claus's existence lies awake in bed. Suddenly, a roaring, magical steam train pulls up directly in front of his house. The conductor invites him aboard, launching him on an extraordinary, high-speed journey to the North Pole alongside a group of other children. Through a series of thrilling adventures on the rails, he learns that the true wonder of life never fades for those who choose to believe.",
+    director: "Robert Zemeckis",
+    cast: ["Tom Hanks (in six distinct motion-capture roles, including the Conductor, Santa Claus, and the Hobo), Daryl Sabara, Nona Gaye, Eddie Deezen, Peter Scolari, Michael Jeter"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+
 ]
 // ==========================================
 // 1b. HERO BANNER SETTINGS  (EDIT THIS SECTION)
