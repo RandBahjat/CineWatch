@@ -5728,7 +5728,24 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-
+{
+    id: "m234", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "The Housemaid",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2025,
+    rating: 6.7,
+    age: "R",
+    duration: "2h 11m ",
+    genres: ["Phycological Thriller", "Erotic Thriller", "Drama"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+    backdrop: "https://img1.wsimg.com/isteam/ip/d6a3e7a7-e920-4711-bf09-856dd846af78/THEHOUSEMAID.webp/:/rs=w:1280",
+    videoUrl: "1368166",
+    overview: "Based on the wildly popular 2022 psychological thriller novel by Freida McFadden, the film follows Millie Calloway, a young woman with a troubled past struggling to rebuild her life on parole. Desperate for a job, she is hired as a live-in housemaid for the wealthy Winchester family at their luxurious Long Island estate. What starts as a dream opportunity quickly devolves into a nightmare as Millie uncovers the dark, deeply twisted secrets hidden behind the family's picture-perfect facade—finding herself trapped in a dangerous game of psychological manipulation where nothing is as it seems.",
+    director: "Paul Feig",
+    cast: ["Sydney Sweeney, Amanda Seyfried, Brandon Sklenar, Michele Morrone, Elizabeth Perkins"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
 ]
 // ==========================================
 // 1b. HERO BANNER SETTINGS  (EDIT THIS SECTION)
