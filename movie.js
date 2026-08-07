@@ -5674,6 +5674,60 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
+{
+    id: "m231", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Hotel Transylvania",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2012,
+    rating: 7.1,
+    age: "PG",
+    duration: "1h 31m ",
+    genres: ["Animation", "Comedy", "Family", "Fantasy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/eJGvzGrsfe2sqTUPv5IwLWXjVuR.jpg",
+    backdrop: "https://images4.alphacoders.com/713/thumb-1920-713910.jpg",
+    videoUrl: "76492",
+    overview: "Count Dracula operates a high-end, five-stake resort tucked away from the human world, where monsters like Frankenstein, the Mummy, and the Invisible Man can vacation in peace. Dracula is fiercely protective of his teenage daughter, Mavis, who is celebrating her 118th birthday and longs to explore the world outside. His elaborate plans are thrown into total chaos when Jonathan, a clueless 21-year-old human backpacker, stumbles upon the hotel and immediately sparks a romantic zing with Mavis.",
+    director: "Genndy Tartakovsky",
+    cast: ["Adam Sandler, Selena Gomez, Andy Samberg, Kevin James, Fran Drescher, Steve Buscemi, Molly Shannon, David Spade, CeeLo Green"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
+    id: "m232", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Hotel Transylvania 2",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2015,
+    rating: 6.6,
+    age: "PG",
+    duration: "1h 29m ",
+    genres: ["Animation", "Comedy", "Family", "Fantasy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/3nFnrivNgipSKZ8LZJJbRSlAcTR.jpg",
+    backdrop: "https://wallpapersok.com/images/hd/dracula-with-family-hotel-transylvania-2-poster-c47cbvzgfyz1b7t6.jpg",
+    videoUrl: "159824",
+    overview: "The hotel is now open to human guests, and Mavis and Johnny have a young half-human, half-vampire son named Dennis. Plagued by worry that his adorable grandson isn't showing any signs of becoming a vampire, Count Dracula enlists his closest monster friends to put Dennis through a rigorous monster-in-training boot camp while Mavis is away visiting her human in-laws. Things get even more chaotic when Dracula's old-school, human-hating vampire father, Vlad, pays an unexpected visit to the resort.",
+    director: "Genndy Tartakovsky",
+    cast: ["Adam Sandler, Andy Samberg, Selena Gomez, Kevin James, Steve Buscemi, David Spade, Keegan-Michael Key, Asher Blinkoff, Mel Brooks"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
+    id: "m233", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Hotel Transylvania 3",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2018,
+    rating: 6.3,
+    age: "PG",
+    duration: "1h 37m ",
+    genres: ["Animation", "Comedy", "Family", "Fantasy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lzE5BwGQea1nek7TPXUuC5AZ6rq.jpg",
+    backdrop: "https://assets-in.bmscdn.com/discovery-catalog/events/et00065290-hvvhveuemk-landscape.jpg",
+    videoUrl: "400155",
+    overview: "Mavis surprises Dracula with a family voyage on a luxury Monster Cruise Ship so he can take a vacation from providing everyone else's vacation at the hotel. The rest of the Drac Pack tags along, enjoying all of the shipboard amenities. The cruise goes swimmingly until Dracula falls head-over-heels and zings with Ericka, the mysterious and charming ship captain. Mavis turns into the overprotective parent when she discovers that Ericka is secretly the great-granddaughter of Abraham Van Helsing, Dracula's ancient arch-nemesis who plans to wipe out all monsters.",
+    director: "Genndy Tartakovsky",
+    cast: ["Adam Sandler, Andy Samberg, Selena Gomez, Kevin James, David Spade, Steve Buscemi, Keegan-Michael Key, Kathryn Hahn, Jim Gaffigan, Mel Brooks"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
 
 ]
 // ==========================================
