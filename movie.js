@@ -5321,6 +5321,24 @@ const MOVIES = [
       },
     ],
   },
+{
+    id: "m222", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "The Nun",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2018,
+    rating: 5.4,
+    age: "R",
+    duration: "1h 36m ",
+    genres: ["Horror", "Mystery", "Thriller","Supernatural"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/sFC1ElvoKGdHJIWRpNB3xWJ9lJA.jpg",
+    backdrop: "https://img10.hotstar.com/image/upload/f_auto,q_auto/sources/r1/cms/prod/9174/1776264519174-i",
+    videoUrl: "439079",
+    overview: "A priest with a haunted past and a novice on the threshold of her final vows are sent by the Vatican to investigate the death of a young nun in Romania. Together, they uncover the order's unholy secret and must confront a malevolent demonic force in the form of a nun, risking their lives — and souls — to stop it from escaping the abbey.",
+    director: "Corin Hardy",
+    cast: ["Taissa Farmiga, Demián Bichir, Jonas Bloquet, Bonnie Aarons, Ingrid Bisu, Charlotte Hope"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
 ]
 // ==========================================
 // 1b. HERO BANNER SETTINGS  (EDIT THIS SECTION)
