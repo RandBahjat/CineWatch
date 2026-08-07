@@ -25,7 +25,7 @@
 // 1. MOVIE DATABASE  (EDIT THIS SECTION)
 // ==========================================
 const MOVIES = [
-  {
+ {
     id: "m1",
     title: "SPIDER-MAN BRAND NEW DAY",
     type: "Movie",
@@ -85,7 +85,7 @@ const MOVIES = [
     poster:
       "https://seriesgraph.com/_next/image?url=https://image.tmdb.org/t/p/w400/zCHmmoqtLsIsou866osiWtIWmoA.jpg&w=3840&q=75",
     backdrop:
-      "https://images2.alphacoders.com/137/thumb-1920-1371307.jpg",
+      "https://image.tmdb.org/t/p/original/zwocf2Q0UAcwBJ5Ck6oMxY5sJAR.jpg",
     videoUrl: "125909",
     overview:
       "Welcome to Gotham City, where corruption runs deep and criminals grow bolder by the night. Forged by tragedy, Bruce Wayne becomes the Batman — but his one-man crusade for justice draws unexpected allies, dangerous enemies, and consequences he never anticipated.",
@@ -133,7 +133,7 @@ const MOVIES = [
   //   https://cinesrc.st/embed/tv/1396?s=1&e=1
   // The TMDB ID is 1396 — just put that as cinesrcId below.
   // Episodes are auto-streamed at https://cinesrc.st/embed/tv/1396?s=S&e=E
-  
+
   {
     id: "m4",
     title: "THE ODYSSEY",
@@ -191,9 +191,9 @@ const MOVIES = [
     durationSec: 6480,
     genres: ["Horror", "Drama"],
     poster:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaaWcANTx37WCvfuadfMlQt2iOB5cGdwxKDslkwU99Yw&s=10",
+      "https://www.themoviedb.org/t/p/w1280/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
     backdrop:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR13v9gRIYPilX-izB60gLYCQXGnJwcnNF_m4C_PpWLxA&s=10",
+      "https://image.tmdb.org/t/p/original/oICYZzr1arFtiaPrQfOTYZOOrCy.jpg",
     videoUrl:
       "1339713",
     overview:
@@ -329,9 +329,9 @@ const MOVIES = [
     duration: "2h 7m",
     genres: ["Biography", "Drama", "Music"],
     poster:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCbp24mBrzl30LswkOjTp_aPdiddgRD9yp-kh_7duhA&s=10",
+      "https://www.themoviedb.org/t/p/w1280/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
     backdrop:
-      "https://www.vitalthrills.com/wp-content/uploads/2025/11/michaelteaser1.jpg",
+      "https://image.tmdb.org/t/p/original/jw7AR2SZY1gvSMrs95A3oaaNSSI.jpg",
     videoUrl:
       "936075",
     overview:
@@ -487,7 +487,7 @@ const MOVIES = [
   {
 
     id: "m18", // Keep incrementing this number (m14, m15, m16, etc.)
-    title: "THE AMAZING SPIDER-MAN",
+    title: "The Amazing Spider-Man",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2012,
     rating: 7.4,
@@ -495,8 +495,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 16m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyHzQqm6vzIFadx-DX5Kr96srFrGs6QmUb1lu8o0-ltw&s=10",
-    backdrop: "https://wallpaper.forfun.com/fetch/1a/1ad23ef7674d03ef4b72c841999e656d.jpeg",
+    poster: "https://www.themoviedb.org/t/p/w1280/jexoNYnPd6vVrmygwF6QZmWPFdu.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/HVcza6tJtWFrLriuh3Ano4Vt46.jpg",
     videoUrl: "1930", // cinesrc movie embed: https://cinesrc.st/embed/movie/1084242
     overview: "Peter Parker has always felt like an outsider, still haunted by the unexplained disappearance of his parents years ago. Determined to find answers, he investigates his father's old research and crosses paths with Dr. Curt Connors at Oscorp — an encounter that leaves Peter with astonishing new abilities. As he grapples with the responsibilities of his newfound power, a personal tragedy pushes him to become a masked vigilante, just as a monstrous adversary threatens the city he's sworn to protect.",
     director: "Marc Webb",
@@ -517,8 +517,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 22m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmCI-Ogv5AKylHWEjF3K-6dV3UExdZHHTJSuE73qlAqA&s=10",
-    backdrop: "https://cdn.europosters.eu/image/750/19307.jpg",
+    poster: "https://image.tmdb.org/t/p/original/bU7nTmvmy0h3VUP01v1T2imgH6N.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/hDvqcbZhq9ux0euxYxCP9N6m1Rh.jpg",
     videoUrl: "102382",
     overview: "As Spider-Man, Peter Parker continues protecting the city he loves while struggling to balance his double life with his relationship with Gwen Stacy. When a lonely Oscorp engineer is transformed into the destructive Electro, and Peter's estranged friend Harry Osborn returns to confront his father's dark legacy, Peter must face threats that will test everything he holds dear — and force him to reckon with the cost of being a hero.",
     director: "Marc Webb",
@@ -533,12 +533,11 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2012,
     rating: 8.0,
-    match: 95,
     age: "PG-13",
     duration: "2h 23m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiUWhz9iCsTs_kTWTYkk6FpkjEm3xI6bVa-IY57sPuBA&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5c2JCK8Y9WUjDyiHTEEaASt0yz5lLwWGZLIWkXNMZITuzbx3BYuH6-nI&s=10",
+    poster: "https://www.themoviedb.org/t/p/w1280/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/pGFQCp12a8andfPlpnmXz44IIvY.jpg",
     videoUrl: "24428",
     overview: "Nick Fury and S.H.I.E.L.D. bring together a team of remarkable individuals to form the Avengers, hoping they can work together when the world needs them most. When Loki launches an assault on Earth as part of a scheme to conquer the planet, Iron Man, Captain America, Thor, the Hulk, Black Widow, and Hawkeye must overcome their differences and unite to save the world from disaster.",
     director: "Joss Whedon",
@@ -555,12 +554,11 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2015,
     rating: 7.3,
-    match: 95,
     age: "PG-13",
     duration: "2h 21m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqYozpqOiz-LKBJjpCN8N1o3QQMg1Jtdqt9NHTCTVQw&s",
-    backdrop: "https://images2.alphacoders.com/112/1121829.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/yIJTgThq4ZZHHvn5EM7Y8eqleIy.jpg",
     videoUrl: "99861",
     overview: "Determined to protect the world from future threats, Tony Stark reactivates a dormant peacekeeping program, hoping to give Earth its own shield against alien invasion. But his plan backfires when the artificial intelligence he creates, Ultron, decides that humanity itself is the greatest threat of all. As Ultron sets his sights on global extinction, the Avengers must reunite — and confront new allies, old rivalries, and the true cost of playing god — to save the planet.",
     director: "Joss Whedon",
@@ -578,12 +576,11 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2018,
     rating: 8.4,
-    match: 95,
     age: "PG-13",
     duration: "2h 29m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTugFdcHZV48iT269DwhLx5K0QFTDM0kPQ_Irx8kgC1vw&s=10",
-    backdrop: "https://www.highlandernews.org/wp-content/uploads/landscape-1522924460-avengers-infinity-war-poster.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg",
     videoUrl: "299536",
     overview: "Thanos, the mad titan, arrives on Earth with one goal: to collect all six Infinity Stones and use their combined power to wipe out half of all life in the universe. As his ruthless quest brings him into conflict with the Avengers and the Guardians of the Galaxy, the assembled heroes must set aside their differences and unite like never before — knowing that even their combined might may not be enough to stop him.",
     director: "Anthony Russo, Joe Russo",
@@ -602,12 +599,11 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2019,
     rating: 8.4,
-    match: 95,
     age: "PG-13",
     duration: "3h 1m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_mUlHCrxTASsLEcjR7vi-HtzSDlGTJUy4actszM8FtA&s=10",
-    backdrop: "https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/79265cce-e763-4e59-99d9-1006cfe5875e/compose?format=webp&width=2560",
+    poster: "https://www.themoviedb.org/t/p/w1280/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/h9q0ozwMWy7CK5U7FSZsMVtbsCQ.jpg",
     videoUrl: "299534",
     overview: "Adrift in the wake of Thanos's devastating snap, the remaining Avengers must grapple with loss, grief, and a shattered world as they search for a way to undo the damage. When an unexpected opportunity emerges, the team assembles one final time for a mission that will test their courage, their friendships, and their willingness to sacrifice everything for the universe they've sworn to protect.",
     director: "Anthony Russo, Joe Russo",
@@ -625,7 +621,6 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
     rating: 7.4,
-    match: 95,
     age: "PG-13",
     duration: "2h 13m",
     genres: ["Action", "Adventure", "Sci-Fi"],
@@ -649,7 +644,6 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2019,
     rating: 7.3,
-    match: 95,
     age: "PG-13",
     duration: "2h 9m",
     genres: ["Action", "Adventure", "Sci-Fi"],
@@ -672,12 +666,11 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2011,
     rating: 8.1,
-    match: 95,
     age: "PG-13",
     duration: "2h 28m",
     genres: ["Action", "Adventure", "Sci-Fi", "Fantasy"],
-    poster: "https://cinemalightboxes.com/cdn/shop/files/Spiderman_No_Way_Home_b_2048x.jpg?v=1752689615",
-    backdrop: "https://images.wallpapersden.com/image/download/spider-man-no-way-home-4k-poster_bWtoZWeUmZqaraWkpJRobWllrWdrbW0.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/14QbnygCuTO0vl7CAFmPf1fgZfV.jpg",
     videoUrl: "634649",
     overview: "Peter Parker's life is turned upside down the moment his secret identity is exposed to the world. Desperate to reclaim his normal life, he turns to Doctor Strange for a spell to make everyone forget — but when the spell goes catastrophically wrong, it tears open the fabric of the multiverse, bringing dangerous villains from other realities crashing into Peter's world. Now Peter must confront threats greater than he's ever faced, learning that the greatest responsibility sometimes demands the greatest sacrifice.",
     director: "Jon Watts",
@@ -695,12 +688,11 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2008,
     rating: 7.9,
-    match: 95,
     age: "PG-13",
     duration: "2h 6m",
     genres: ["Action", "Adventure", "Sci-Fi", "Fantasy"],
     poster: "https://cdng.europosters.eu/pod_public/1300/263132.jpg",
-    backdrop: "https://wallpapercave.com/wp/wp3405085.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/xaMKxjUH0UEj3UukJotfKzXj0HH.jpg",
     videoUrl: "1726",
     overview: "Tony Stark, a billionaire industrialist and genius inventor, is captured by terrorists in Afghanistan and forced to build a devastating weapon. Instead, he secretly constructs a powered suit of armor and escapes captivity. Back home, haunted by what he's witnessed, Stark rebuilds and improves his suit, adopting the identity of Iron Man — determined to protect the world from the same kind of weapons his company once manufactured, even as a dangerous betrayal from within threatens everything he's built.",
     director: "Jon Favreau",
@@ -718,7 +710,6 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2010,
     rating: 6.9,
-    match: 95,
     age: "PG-13",
     duration: "2h 4m",
     genres: ["Action", "Adventure", "Sci-Fi"],
@@ -741,7 +732,6 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2010,
     rating: 6.9,
-    match: 95,
     age: "PG-13",
     duration: "2h 4m",
     genres: ["Action", "Adventure", "Sci-Fi"],
@@ -765,7 +755,6 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2011,
     rating: 6.9,
-    match: 95,
     age: "PG-13",
     duration: "2h 4m",
     genres: ["Action", "Adventure", "Sci-Fi"],
@@ -789,12 +778,11 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2014,
     rating: 7.7,
-    match: 95,
     age: "PG-13",
     duration: "2h 16m",
     genres: ["Action", "Adventure", "Sci-Fi", "Thriller"],
-    poster: "https://www.hollywoodreporter.com/wp-content/uploads/2014/01/captain_america_the_winter_soldier.jpg",
-    backdrop: "https://wallpaperaccess.com/full/153837.jpg",
+    poster: "https://image.tmdb.org/t/p/original/l79VoTIPEXwo9zCTPTnpqdASvus.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/yHB0eNR8rvCpn0VdghEwBsXAC0N.jpg",
     videoUrl: "100402",
     overview: "Still adjusting to life in the present day, Steve Rogers finds himself caught in a web of political intrigue when a deadly attack exposes a conspiracy buried deep within S.H.I.E.L.D. Teaming up with Natasha Romanoff and a new ally, Sam Wilson, Steve must uncover the truth behind a shadowy organization pulling the strings from the shadows — all while confronting a lethal assassin from his own past known only as the Winter Soldier.",
     director: "Joe Johnston",
@@ -813,12 +801,11 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2016,
     rating: 7.8,
-    match: 95,
     age: "PG-13",
     duration: "2h 27m",
     genres: ["Action", "Adventure", "Sci-Fi", "Thriller"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZfBGYTKfeQFp1a0ED5Z_VDup8QhvXfFz0-AcmcVm9g&s=10",
-    backdrop: "https://static0.moviewebimages.com/wordpress/wp-content/uploads/article/1TVqC7l9E84aHyhXScJCP48C9RQrFu.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/dLWoJnYXhFeNouon4NmBLAr92rf.jpg",
     videoUrl: "271110",
     overview: "When a mission gone wrong results in tragic collateral damage, the government moves to place the Avengers under strict oversight. The team is split — Tony Stark believes accountability is necessary, while Steve Rogers fears the loss of their autonomy. As old loyalties clash with new convictions, and a hidden threat manipulates the growing tension from the shadows, the Avengers must confront each other before an even greater danger tears them apart for good.",
     director: "Joe Johnston",
@@ -834,12 +821,11 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2011,
     rating: 7.0,
-    match: 95,
     age: "PG-13",
     duration: "1h 55m",
     genres: ["Action", "Adventure", "Fantasy"],
-    poster: "https://m.media-amazon.com/images/M/MV5BNjRhNGZjZjEtYTQzYS00OWUxLThjNGEtMTIwMTE2ZDFlZTZkXkEyXkFqcGc@._V1_.jpg",
-    backdrop: "https://wallpapercave.com/wp/wp6644003.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/prSfAi1xGrhLQNxVSUFh61xQ4Qy.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/fLR1sAH2UMJzeKbGJMd3gp1KWXS.jpg",
     videoUrl: "10195",
     overview: "Thor, the arrogant and headstrong heir to the throne of Asgard, reignites an ancient war through his recklessness. As punishment, his father Odin strips him of his powers and banishes him to Earth. Stranded and mortal, Thor must learn humility and earn back his worthiness — all while his brother Loki schemes for the throne back home, setting in motion a betrayal that threatens both Asgard and Earth alike.",
     director: "Kenneth Branagh",
@@ -855,12 +841,11 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2013,
     rating: 6.7,
-    match: 95,
     age: "PG-13",
     duration: "1h 52m",
     genres: ["Action", "Adventure", "Fantasy"],
-    poster: "https://m.media-amazon.com/images/M/MV5BMTQyNzAwOTUxOF5BMl5BanBnXkFtZTcwMTE0OTc5OQ@@._V1_FMjpg_UX1000_.jpg",
-    backdrop: "https://images2.alphacoders.com/674/thumb-1920-674260.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/wp6OxE4poJ4G7c0U2ZIXasTSMR7.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/4HrSeIXC0Ratx0vhyz2rxIMd65T.jpg",
     videoUrl: "76338",
     overview: "When Jane Foster is exposed to a mysterious, ancient force known as the Aether, she becomes the target of Malekith, the ruthless leader of the Dark Elves, who seeks to use its power to plunge the universe into eternal darkness. As an old evil awakens and threatens the Nine Realms, Thor is forced into an uneasy alliance with his imprisoned brother Loki, the only ally with the knowledge to stop it.",
     director: "Alan Taylor",
@@ -877,7 +862,6 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
     rating: 7.9,
-    match: 95,
     age: "PG-13",
     duration: "2h 10m",
     genres: ["Action", "Adventure", "Fantasy"],
@@ -898,12 +882,11 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
     rating: 7.9,
-    match: 95,
     age: "PG-13",
     duration: "1h 59m",
     genres: ["Action", "Adventure", "Comedy", "Fantasy"],
-    poster: "https://fr.web.img6.acsta.net/pictures/22/05/24/11/16/2411535.jpg",
-    backdrop: "https://images7.alphacoders.com/127/1273849.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/z7SKBU3PhpH5HdMHz2GOzmral0R.jpg",
     videoUrl: "616037",
     overview: "Struggling to find purpose after years of loss and battle, Thor attempts to step back from his life as a warrior in search of peace. That search is cut short when Gorr the God Butcher emerges, wielding a weapon capable of killing gods and vowing to wipe them all from existence. To stop him, Thor must reunite with his ex, Jane Foster — who has taken up his mantle as the Mighty Thor — alongside King Valkyrie and the Guardians of the Galaxy.",
     director: "Taika Waititi",
@@ -919,7 +902,6 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2022,
     rating: 7.8,
-    match: 95,
     age: "PG-13",
     duration: "2h 56m",
     genres: ["Action", "Adventure", "Fantasy"],
@@ -940,7 +922,6 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
     rating: 7.0,
-    match: 95,
     age: "PG-13",
     duration: "2h 9 m",
     genres: ["Action", "Adventure", "Sci-Fi"],
@@ -960,12 +941,11 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2018,
     rating: 6.8,
-    match: 95,
     age: "PG-13",
     duration: "2h 23m",
     genres: ["Action", "Adventure", "Fantasy"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq09qxmX8PRpQ92WMDw0Aqu8Ep679BxLN5Wi5La-3VjA&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWkgje_a4d32o3rDJcgEiJnin5_vfulcpFXuVQvHaYFw&s=10",
+    poster: "https://image.tmdb.org/t/p/original/uCg2HPY7rBCrh1YGpXam9LH1xKZ.jpg",
+    backdrop: "https://media.themoviedb.org/t/p/w1066_and_h600_face/qkOw5IZXESOiRH4wzdIYJlBZiCp.jpg",
     videoUrl: "https://example.com/video.mp4",
     overview: "Half-human, half-Atlantean, Arthur Curry has spent his life torn between two worlds. When his ambitious brother Orm plots to unite the seven undersea kingdoms and wage war on the surface, Arthur is thrust into a journey to reclaim his birthright as the true king of Atlantis — alongside Mera, princess of Xebel — facing mythical creatures, ancient prophecies, and a battle to prove himself as more than just a man caught between two worlds.",
     director: "James Wan",
@@ -981,7 +961,6 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
     rating: 6.0,
-    match: 95,
     age: "PG-13",
     duration: "2h 4m",
     genres: ["Action", "Adventure", "Fantasy"],
@@ -1002,12 +981,11 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2001,
     rating: 7.6,
-    match: 95,
     age: "PG",
     duration: "2h 32m",
     genres: ["Action", "Family", "Fantasy"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlatr5wxRju7BDKEfiDx8nOrpQcVKGSB3FJRVe0RQ1-w&s=10",
-    backdrop: "https://m.media-amazon.com/images/S/pv-target-images/eaaf20c3cfb418c6db5ba742b9166850f499f8ee6c410d0e92197b22b1f13862.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/hwInwXo34ji3QfcNXvFBC3GX2TA.jpg",
     videoUrl: "671",
     overview: "Raised in ignorance of his true heritage by his cruel aunt and uncle, Harry Potter learns on his eleventh birthday that he's actually a famous wizard, orphaned as a baby when a dark wizard tried and failed to kill him. Whisked off to Hogwarts School of Witchcraft and Wizardry, Harry begins to master magic, make lifelong friends, and uncover clues pointing to a hidden, powerful artifact — while a lingering evil stirs once more within the castle's walls.",
     director: "Chris Columbus",
@@ -1022,12 +1000,11 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2002,
     rating: 7.4,
-    match: 95,
     age: "PG",
     duration: "2h 41m",
     genres: ["Adventure", "Family", "Fantasy"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl-phvdYwL3dfvaawWYKyQkl3bDYJ-XQYSGN7jG6Yd2Q&s=10",
-    backdrop: "https://www.pjsgames.com/cdn/shop/files/card-harry-potter-and-the-chamber-of-secrets-blu-ray.jpg?v=1760032824&width=3840",
+    poster: "https://www.themoviedb.org/t/p/w1280/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/7tbeoSTWW2cWPecjQo9fcdf0Hzv.jpg",
     videoUrl: "672",
     overview: "Back at Hogwarts for his second year, Harry finds the school gripped by fear when students start turning up mysteriously petrified, and cryptic warnings reveal that the legendary Chamber of Secrets has been reopened. As whispers point to Harry himself as the culprit, he and his friends must uncover the truth behind an ancient legend before the creature lurking within the chamber claims a life.",
     director: "Chris Columbus",
@@ -1102,8 +1079,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 33m",
     genres: ["Adventure", "Family", "Fantasy", "Mystery"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCmvwmqeFeytXim0Pg-s-VNrUjIFmEwJlqD5OKhzGHEg&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH0X7F-fhzlipupzYDL5DpUdmojGugRboZKcmX5XnXgA&s=10",
+    poster: "https://www.themoviedb.org/t/p/w1280/z7uo9zmQdQwU5ZJHFpv2Upl30i1.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/jwiv3JNEbzph8oC6tSzRRO1oWde.jpg",
     videoUrl: "767",
     overview: "With Voldemort's power growing beyond the wizarding world's control, Dumbledore enlists Harry's help to unlock buried memories held by the reluctant Professor Slughorn — memories that may hold the key to defeating the Dark Lord once and for all. As romantic entanglements complicate life at Hogwarts, a hidden threat within the castle's own walls edges closer to a devastating betrayal that will change everything.",
     director: "David Yates",
@@ -1121,8 +1098,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 26m",
     genres: ["Adventure", "Family", "Fantasy", "Mystery"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThaR3mTBNAF6lpIRVVE8rn0QhBirj4E4Ak6LO1sP4sLg&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ddoz4uSwvsUCH2s9PzIWdUGo1rTH1PPSdlW7-qr3qA&s=10",
+    poster: "https://www.themoviedb.org/t/p/w1280/iGoXIpQb7Pot00EEdwpwPajheZ5.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/p2M4xlipwlqUzglAlF2KDlTqeLV.jpg",
     videoUrl: "12444",
     overview: "With Hogwarts no longer safe and the Ministry of Magic under Voldemort's control, Harry, Ron, and Hermione set out on a dangerous journey to track down and destroy the remaining Horcruxes tethering Voldemort to life. Isolated from the wizarding world and hunted at every turn, the trio must rely on each other more than ever as old friendships are tested and a devastating loss brings the war even closer to home.",
     director: "David Yates",
@@ -1148,7 +1125,7 @@ const MOVIES = [
     cast: ["Daniel Radcliffe, Rupert Grint, Emma Watson, Ralph Fiennes, Helena Bonham Carter, Bill Nighy"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
-
+    
   },
   {
     id: "m49", // Keep incrementing this number (m14, m15, m16, etc.)
@@ -1159,15 +1136,15 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 1m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDQbhuCdh1mhOrKsn5eSzuRBj2Jdktdi8sdNzsWYTk4w&s=10",
-    backdrop: "https://preview.redd.it/in-1998-sony-had-the-chance-to-buy-the-rights-to-almost-v0-qm07ysjf2hba1.jpg?width=1080&crop=smart&auto=webp&s=3e327886775f1154a3c4f58f96e80bd0526ea668",
+    poster: "https://www.themoviedb.org/t/p/w1280/nXdAh5vUwERL4WGVMaee8RoDEAS.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/muth4OYamXf41G2evdrLEg8d3om.jpg",
     videoUrl: "557",
     overview: "Peter Parker has always felt like an outsider — awkward, overlooked, and quietly in love with his childhood friend Mary Jane. Everything changes when a spider bite grants him extraordinary strength, agility, and reflexes. As Peter grapples with the immense responsibility that comes with his new powers, a brilliant scientist's tragic transformation into the villainous Green Goblin forces Peter to step fully into his role as Spider-Man, testing his resolve and the people he loves most.",
     director: "Sam Raimi",
     cast: ["Tobey Maguire, Kirsten Dunst, Willem Dafoe, James Franco, Rosemary Harris, Cliff Robertson"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
-
+    
   },
   {
     id: "m50", // Keep incrementing this number (m14, m15, m16, etc.)
@@ -1178,8 +1155,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 7m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://m.media-amazon.com/images/M/MV5BNGQ0YTQyYTgtNWI2YS00NTE2LWJmNDItNTFlMTUwNmFlZTM0XkEyXkFqcGc@._V1_.jpg",
-    backdrop: "https://images6.alphacoders.com/129/1293547.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/aGuvNAaaZuWXYQQ6N2v7DeuP6mB.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/aqaSgTT6jiAdx9aJ4xUI4G2MEXe.jpg",
     videoUrl: "558",
     overview: "Two years into his life as Spider-Man, Peter Parker is exhausted — his grades are slipping, his relationships are fraying, and Mary Jane seems to be moving on without him. Just as he considers giving up the mask altogether, a failed fusion experiment transforms respected scientist Otto Octavius into the ruthless Doctor Octopus. As Doc Ock's rampage threatens the city, Peter must rediscover what it truly means to carry the responsibility of being a hero.",
     director: "Sam Raimi",
@@ -1197,8 +1174,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 19m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdRbhb7eIuySBh6McUmjHttbavfifZljAcXv0Gt6LM8Q&s=10",
-    backdrop: "https://wallpaper.forfun.com/fetch/1b/1bccb372739fe6677b05bdb370475b8e.jpeg",
+    poster: "https://www.themoviedb.org/t/p/w1280/sJMTTGjtjvrMZ7G0oP9D13wNUum.jpg",
+    backdrop: "https://media.themoviedb.org/t/p/w1000_and_h563_face/9RsLXZ9oy5c1yBCtJ7B43jy0JvD.jpg",
     videoUrl: "559",
     overview: "With fame and confidence going to his head, Peter Parker finds his world spiraling when a strange black substance from space bonds with his Spider-Man suit, amplifying his powers but also corrupting his personality. As his relationships with Mary Jane and Harry Osborn fracture under the strain, Peter must confront both an escaped convict transformed into the sand-manipulating Sandman and the return of an old rival — all while battling the darker version of himself the symbiote is bringing to the surface.",
     director: "Sam Raimi",
@@ -1216,8 +1193,8 @@ const MOVIES = [
     age: "R",
     duration: "1h 48m",
     genres: ["Action", "Adventure", "Comedy"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ8nzrQSeKH_wI4rnnFFyUbL5GItolK-mb5mwS4flyHw&s=10",
-    backdrop: "https://www.tallengestore.com/cdn/shop/products/Movie_Poster_Art_-_Deadpool_-_Sweet_-_Tallenge_Hollywood_Poster_Collection_ad462734-0727-436c-832f-1f292bd68bdb_large.jpg?v=1578045049",
+    poster: "https://www.themoviedb.org/t/p/w1280/3E53WEZJqP6aM84D8CckXx4pIHw.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/bUcmY4GuJRIwQbZ8mYy1lWWDfNI.jpg",
     videoUrl: "293660",
     overview: "Wade Wilson, a former Special Forces operative turned mercenary, is diagnosed with terminal cancer and desperate for any chance at survival. He undergoes an experimental treatment that leaves him disfigured but grants him rapid healing abilities. Rebranding himself as the fourth-wall-breaking antihero Deadpool, Wade sets out on a merciless quest for revenge against the man responsible for his transformation — all while trying to reclaim the woman he loves.",
     director: "Tim Miller",
@@ -1235,8 +1212,8 @@ const MOVIES = [
     age: "R",
     duration: "1h 59m",
     genres: ["Action", "Adventure", "Comedy"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUI5DYI07h7hyUDIVd6egJOVybGY5GImfgeCaK6sjEqQ&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrJcCd0NyyNrW5bLkv553Of_Upu-IT-2AzwfyDRfo1Ow&s=10",
+    poster: "https://www.themoviedb.org/t/p/w1280/to0spRl1CMDvyUbOnbb4fTk3VAd.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/lR83v2CtCtNwdZ7InEzVGjcqf4c.jpg",
     videoUrl: "383498",
     overview: "Reeling from a tragedy that shatters his will to live, Wade Wilson finds new purpose when he crosses paths with Russell, a troubled young mutant on the run. When Cable, a battle-hardened soldier from the future, arrives to eliminate Russell, Wade assembles a ragtag team of mutant misfits — X-Force — to protect the boy and stop Cable's mission, all while wrestling with his own grief and sense of purpose.",
     director: "David Leitch",
@@ -1254,8 +1231,8 @@ const MOVIES = [
     age: "R",
     duration: "2h 8m",
     genres: ["Action", "Adventure", "Comedy", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZr8zRhLkOZTen3rSSw8FJFVWPO6VxLWKAmDVqAVCOw&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV0DGcRdzKZDar4nuBGvDFochTY-uKXVHne80TEmZPvA&s=10",
+    poster: "https://www.themoviedb.org/t/p/w1280/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/tuxt193U1kovduUDK4fuzFoh5Tt.jpg",
     videoUrl: "533535",
     overview: "Living a quiet, unfulfilled life after hanging up his mask, Wade Wilson finds himself pulled back into action when his world faces destruction from a mysterious organization known as the TVA. To save his reality, Wade must convince a battle-weary, reluctant variant of Wolverine to join him — forcing two of the most stubborn antiheroes in the multiverse to work together, whether they like it or not.",
     director: "Shawn Levy",
@@ -1292,8 +1269,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 6m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS07al7kuJjnc4ltPRdl7qZJoCHaHX2I1jGW5d6QjJxEg&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQGUZFJFP9xeKEcGt_hMO3jSWkWeF5UZgTwExSX-h0hA&s=10",
+    poster: "https://media.themoviedb.org/t/p/w440_and_h660_face/sCmwhWMMNStxkKi078eEx1CpyB8.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/bsVrSbbupHT6Xv5em2WtRMOwSsx.jpg",
     videoUrl: "76170",
     overview: "Summoned to Japan by an old friend he once saved, Logan is drawn into a deadly conflict involving the criminal underworld, ancient loyalties, and a mysterious offer that could finally take away his healing power — and his endless pain.",
     director: "James Mangold",
@@ -1311,8 +1288,8 @@ const MOVIES = [
     age: "R",
     duration: "2h 17m",
     genres: ["Action", "Drama", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRETwtoV42okiVbyQ9C81C8kbTdtsLpJ91xvAKC2jsshQ&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoBOvqt89H0J-EbkI_HbPKAN-OTcZcB3adcgMe0PQhxQ&s=10",
+    poster: "https://image.tmdb.org/t/p/original/4PW3f7FLXAoySB8oud3DKgeb8ZP.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/9X7YweCJw3q8Mcf6GadxReFEksM.jpg",
     videoUrl: "263115",
     overview: "In a near-future where mutants are nearly extinct, an aging and weary Logan cares for an ailing Professor X while grappling with his own fading powers. When a young girl with a familiar gift needs his protection, Logan faces one final fight to save what's left of his humanity.",
     director: "James Mangold",
@@ -1330,8 +1307,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "1h 44m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ75E7FJpQF1zgFXmMR-_3FwiX7k28m-6Ylaw6gxJ0-7w&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ys6IQwfYFnSVqoigPkRNk9sL8cJACsfGme7zp0lV3Q&s=10",
+    poster: "https://www.themoviedb.org/t/p/w1280/bRDAc4GogyS9ci3ow7UnInOcriN.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/3QUVzbcNyfGe3ocWkYAT8emK8Co.jpg",
     videoUrl: "36657",
     overview: "In a world where mutants face growing fear and prejudice, Professor Charles Xavier runs a school dedicated to nurturing young mutants and promoting peaceful coexistence with humanity. When Magneto, a powerful mutant with a radically different vision, launches a dangerous plan to even the playing field, Xavier's team — including the newly arrived Wolverine and Rogue — must stop him before it's too late.",
     director: "Bryan Singer",
@@ -1349,8 +1326,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 14m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ3v3PCwjiEKUnJwMYLo4c_h2O_OtcKy-Lwc1NnDcyXQ&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-uzJSHrperICEr3R2mJMGBdzieZr1lAHTbGutdtjjqQ&s=10",
+    poster: "https://www.themoviedb.org/t/p/w1280/bst4alFUXCxISwdRUKSMhhkrX1M.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/loixNIKBURXfPcND4noz7E8FqCS.jpg",
     videoUrl: "36658",
     overview: "When a militant colonel launches an assault on Xavier's school, the X-Men are forced into an uneasy alliance with their old enemy Magneto to survive a threat that endangers mutants and humans alike.",
     director: "Bryan Singer",
@@ -1368,8 +1345,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "1h 44m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqycScgxToWREXApvMos3BliLzS9s31p2NhrebASpA-A&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgDIAwOBI2PELM65aIet0tmNf0H_M_nSYlL0YMSQCcSA&s=10",
+    poster: "https://www.themoviedb.org/t/p/w1280/a2xicU8DpKtRizOHjQLC1JyCSRS.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/sBl1n4Oi2wX81EtXIb8NsPqJf3W.jpg",
     videoUrl: "36668",
     overview: "A scientific breakthrough that can permanently cure mutants of their powers ignites fierce division within the mutant community, while the resurrection of a former ally as a dangerously unstable force pushes Xavier's team to the brink.",
     director: "Brett Ratner",
@@ -1406,8 +1383,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 12m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThPxCba27qhobiG2a05wg90j4kTyi1NedHenukszQfZw&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKNc-jdKkjK0qOSqC03jDiUmnNaP3YzVzL4xv1olPGvw&s=10",
+    poster: "https://www.themoviedb.org/t/p/w1280/tYfijzolzgoMOtegh1Y7j2Enorg.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/yWRpGnKGJGhrwI3Sul8xXz6XD5N.jpg",
     videoUrl: "127585",
     overview: "In a bleak future where mutants and their human allies face near-total extinction at the hands of relentless robotic Sentinels, Wolverine is sent back in time to reunite young Xavier and Magneto and prevent a single, catastrophic act that set the dark future in motion.",
     director: "Bryan Singer",
@@ -1425,8 +1402,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 24m",
     genres: ["Action", "Adventure", "Fantasy"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9iXCYr6p_Uf4l7wqr-OXZebIaqpqZTC8qX-hDPVrm4A&s=10",
-    backdrop: "https://www.movies4kids.co.uk/wp-content/uploads/sites/15/2016/03/x-men-apocalypse-sequel-1990s.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/ikA8UhYdTGpqbatFa93nIf6noSr.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/2ex2beZ4ssMeOduLD0ILzXKCiep.jpg",
     videoUrl: "246655",
     overview: "After lying dormant for thousands of years, En Sabah Nur — the first and most powerful mutant, known as Apocalypse — awakens with a plan to cleanse the world and rebuild it in his image. As he recruits a team of powerful mutants to serve him, Professor Xavier and a new generation of X-Men must unite to stop an enemy unlike anything they've ever faced.",
     director: "Bryan Singer",
@@ -1444,8 +1421,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "1h 54m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ3pafLIGRIMCMKgbBu8IYtpdVSbwvTZ1oI9Lk1HxUEw&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4sneEj3ihfUzQFvxahcNi9F7X_kp2ydeUwljt_WCU6Q&s=10",
+    poster: "https://image.tmdb.org/t/p/original/kNHS4hqzSLoozctYDlpbQ3qW7Xq.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/6H0CfLRcgq0Pcq34wNypC2V3W41.jpg",
     videoUrl: "320288",
     overview: "When a cosmic force during a space rescue mission awakens uncontrollable power within Jean Grey, she begins to lose control, endangering everyone she loves. As the X-Men race to save her from herself, a group of shape-shifting aliens seeks to exploit her power for their own destructive purpose.",
     director: "Simon Kinberg",
@@ -1463,8 +1440,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "1h 34m",
     genres: ["Horror", "Thriller", "Sci-Fi"],
-    poster: "https://m.media-amazon.com/images/M/MV5BZGVlMjBkYmMtZDhmYS00N2QyLWI2YTgtMDU2N2UwOWYzM2MxXkEyXkFqcGc@._V1_.jpg",
-    backdrop: "https://storage.ghost.io/c/ce/e4/cee41318-cfc3-441e-8a96-e50288509fa4/content/images/size/w1200/2022/11/new-mutants.jpeg",
+    poster: "https://www.themoviedb.org/t/p/w1280/xiDGcXJTvu1lazFRYip6g1eLt9c.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/lrNbt21hRirjyTK0SeLA0L4RAVS.jpg",
     videoUrl: "340102",
     overview: "Trapped in a secretive facility, a group of young mutants struggle to control their dangerous new abilities while confronting terrifying visions of their pasts — and a sinister force determined to keep them there.",
     director: "Josh Boone",
@@ -1501,8 +1478,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "1h 52m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Jmrxiy2nmNpWRUbQluDXPejP0bI1tNR-76KguCsKZQ&s=10",
-    backdrop: "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/24715068/114738.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/25glwwmPK6IZlZQQrAG61fzCcNX.jpg",
     videoUrl: "1724",
     overview: "Living in exile and haunted by the uncontrollable creature within him, Bruce Banner is forced back into the crosshairs of General Thaddeus Ross's military hunt when a mission gone wrong exposes him once again. As Ross weaponizes the same experiment that created the Hulk against him, Banner must race to find a cure before his condition — and the enemies chasing him — spiral completely out of control.",
     director: "Louis Leterrier",
@@ -1520,8 +1497,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 1m",
     genres: ["Action", "Adventure", "Comedy", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6Slptol60TMjqsuCsmfch4xvFXFz3FrVlIKAI5SYAQ&s=10",
-    backdrop: "https://wpcdn.us-midwest-1.vip.tn-cloud.net/www.honolulumagazine.com/content/uploads/2021/01/s3-gogposter.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/ko4N6wWp0UYlMmsVyfIfLyRAZtP.jpg",
     videoUrl: "118340",
     overview: "Decades after being abducted from Earth as a child, Peter Quill has built a life as an interstellar thief and self-styled outlaw. When he steals a mysterious orb, he becomes the target of a manhunt led by the fanatical Ronan the Accuser. Forced into an alliance with the deadly assassin Gamora, the vengeful Drax, and the unlikely duo of Rocket and Groot, Peter and his newfound companions must set aside their differences and band together to stop Ronan from unleashing the orb's devastating power on the galaxy.",
     director: "James Gunn",
@@ -1539,8 +1516,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 16m",
     genres: ["Action", "Adventure", "Comedy", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFGEubc2GAr8d4D3yM0IKmu2UzBYLLcXeAjs36KBXE_w&s=10",
-    backdrop: "https://m.media-amazon.com/images/S/pv-target-images/f034707621668b38799d32dc6682b29c2cbb6f134d6e1144b77799ec0af050c6.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/n3gb8oqP9BeRCUsCmZVaT5eltPH.jpg",
     videoUrl: "283995",
     overview: "As the Guardians navigate the vast galaxy, Peter Quill finally comes face to face with his long-absent father, a powerful celestial being whose true intentions may threaten everything Peter's newfound family has built together.",
     director: "James Gunn",
@@ -1577,7 +1554,7 @@ const MOVIES = [
     age: "PG-13",
     duration: "1h 57m",
     genres: ["Action", "Adventure", "Comedy", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeo_MLeJgAFIFR0NoSYeZmOGzZ4EaUKLN1aDKK8IlMrQ&s=10",
+    poster: "https://www.themoviedb.org/t/p/w1280/rQRnQfUl3kfp78nCWq8Ks04vnq1.jpg",
     backdrop: "https://pbs.twimg.com/media/EG2H58YU4AAWJrR.jpg:large",
     videoUrl: "102899",
     overview: "Struggling to rebuild his life and reconnect with his young daughter after his release from prison, small-time thief Scott Lang is unexpectedly recruited by Dr. Hank Pym to become his successor as Ant-Man. Trained to master a suit capable of shrinking him to insect size while amplifying his strength, Scott must team up with Pym's daughter Hope to pull off a high-stakes heist, stopping a former protégé from weaponizing similar technology for catastrophic ends.",
@@ -1615,8 +1592,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 4m",
     genres: ["Action", "Adventure", "Comedy", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZrRTu3JjQ13cU_F1PUndXCX9KwrhV4eCnxUiYj-DFzA&s=10",
-    backdrop: "https://images.wallpapersden.com/image/download/ant-man-and-the-wasp-quantumania-movie-poster-2023_bW1taWyUmZqaraWkpJRmbmdlrWZlbWU.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/qnqGbB22YJ7dSs4o6M7exTpNxPz.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/kcfa5mlL0RtpsG7q1TmXyurdP3r.jpg",
     videoUrl: "640146",
     overview: "When a family experiment accidentally pulls Scott Lang, Hope, and their loved ones into the mysterious and treacherous Quantum Realm, they find themselves face to face with Kang the Conqueror — a being whose knowledge of time itself makes him one of the most dangerous threats the Ant-Man family has ever faced.",
     director: "Peyton Reed",
@@ -1634,8 +1611,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 4m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwXcJBGAU0sdcDT6OpTjWYvCNlcpynYyZLptWeiYFeZQ&s=10",
-    backdrop: "https://www.thechiefstoryteller.com/wp-content/uploads/2018/02/Chief-Storyteller-Blog-2018-0209-black-panther-movie.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/6ELJEzQJ3Y45HczvreC3dg0GV5R.jpg",
     videoUrl: "284054",
     overview: "Following the death of his father, T'Challa returns to Wakanda, a hidden and technologically advanced African nation, to assume the throne as its new king. As he adjusts to his royal duties and role as Black Panther, an old enemy from his father's past resurfaces, threatening to expose Wakanda's secrets and destabilize everything T'Challa has sworn to protect — forcing him to confront powerful questions about legacy, isolation, and responsibility.",
     director: "Ryan Coogler",
@@ -1653,8 +1630,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 41m",
     genres: ["Action", "Adventure", "Drama", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE_69kd7SX_FbShc9qoFs35pGoEbUP5RKCbXpJ89QUdg&s=10",
-    backdrop: "https://wesleyanargus.com/wp-content/uploads/2022/12/c_o-Marvel-Studios.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/6QZmkUIvmBbtkzMWCkx1slCL0Um.jpg",
     videoUrl: "284054",
     overview: "Grieving the loss of their king, Queen Ramonda, Shuri, and the Wakandan people must protect their nation from a powerful new threat rising from the ocean depths — a hidden civilization led by the formidable Namor, determined to defend his own people at any cost.",
     director: "Ryan Coogler",
@@ -1703,15 +1680,15 @@ const MOVIES = [
   },
   {
     id: "m78", // Keep incrementing this number (m14, m15, m16, etc.)
-    title: "Batman v Superman",
+    title: "Batman v Superman: Dawn of Justice",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2016,
     rating: 6.4,
     age: "PG-13",
     duration: "2h 31m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjIZb3M9hywDhSdz6R3bntCldyEwEMPOPXKgD-OWo5mg&s=10",
-    backdrop: "https://m.media-amazon.com/images/S/pv-target-images/cc83ad9a5c76c4af5f6eab1de5f05d75d30fe0d3a14fc715e556fc2e1f5424ca.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/5UsK3grJvtQrtzEgqNlDljJW96w.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/3NduEGX5vu0G4ydWHCeCHK0FI78.jpg",
     videoUrl: "209112",
     overview: "In the aftermath of Superman's catastrophic battle that left Metropolis in ruins, Bruce Wayne grows increasingly wary of the Kryptonian's godlike power, viewing him as a threat that must be stopped. As tensions rise between the two heroes, the manipulative Lex Luthor secretly orchestrates a deadly conflict between them, forcing Batman and Superman into a confrontation that will test their ideals — even as an even greater threat looms on the horizon.",
     director: "Zack Snyder",
@@ -1748,8 +1725,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "1h 54m",
     genres: ["Action", "Fantasy", "Thriller"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZs9l_rDzsmxQD_2gsUyLOjWcj_J5vSbIMYyl6MNMzHA&s=10",
-    backdrop: "https://m.media-amazon.com/images/S/pv-target-images/b7c92a506cedf460b2914df8c92fa02b82acff886f451b43c8db185346fafc9f._UR1920,1080_SX624_FMjpg_.jpg",
+    poster: "https://image.tmdb.org/t/p/original/9dQbO6eEceIaCXC9ZZMdtRT8URM.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/7zS58YPAw002RNejOF1vNB3XHbW.jpg",
     videoUrl: "1250",
     overview: "Desperate to save his dying father, young Johnny Blaze sells his soul to the devil, Mephistopheles, only to lose his father anyway on the very same night. Years later, as a famous motorcycle stunt performer, Johnny is forced to fulfill his end of the bargain, transforming into the Ghost Rider — a flaming-skulled bounty hunter of the damned. When Mephistopheles' own son threatens to seize control of Hell, Johnny must embrace his cursed power to stop him.",
     director: "Mark Steven Johnson",
@@ -1767,8 +1744,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "1h 36m",
     genres: ["Action", "Fantasy", "Thriller"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYq6xTBEVMD3-5xDLHPX8-iIcgF4fUB2uf0LW3NsTa6Q&s=10",
-    backdrop: "https://www.endscuoio.com/wp-content/uploads/2022/11/466882-1140x445.jpg",
+    poster: "https://image.tmdb.org/t/p/original/nLHbf1zN8XtuK7wWJkem9fWeJ9r.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/z7qtrSn5iZrwKFE1sYPr597HweG.jpg",
     videoUrl: "71676",
     overview: "Hiding out in Eastern Europe to escape the curse controlling him, Johnny Blaze is offered a chance at redemption when a secretive sect recruits him to protect a young boy from dark forces seeking to use him for a sinister ritual — a mission that could finally free Johnny from the Ghost Rider's grip.",
     director: "Mark Neveldine,Brian Taylor",
@@ -1805,8 +1782,8 @@ const MOVIES = [
     age: "R",
     duration: "2h 2m",
     genres: ["Action", "Crime", "Thriller"],
-    poster: "https://m.media-amazon.com/images/M/MV5BMjE2NDkxNTY2M15BMl5BanBnXkFtZTgwMDc2NzE0MTI@._V1_.jpg",
-    backdrop: "https://www.indiewire.com/wp-content/uploads/2016/10/john-wick-chapter-2.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/hXWBc0ioZP3cN4zCu6SN3YHXZVO.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/rrdN2FOm35OR8OKphRnzEkKpNXg.jpg",
     videoUrl: "324552",
     overview: "Forced back into action to honor a binding blood debt, John Wick must travel to Rome to complete a dangerous assignment. When his mission ends in betrayal, he finds himself hunted by every assassin in the criminal underworld, with a massive bounty on his head.",
     director: "Chad Stahelski",
@@ -1995,8 +1972,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "1h 52m",
     genres: ["Action", "Adventure", "Sci-fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHsWrnEgEek8Qj8dwppx0DPf_EEFscU7LCTMQVuqwd4w&s=10",
-    backdrop: "https://i.ebayimg.com/images/g/1MsAAOSwq6NkxxVs/s-l1200.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/2uNW4WbgBXL25BAbXGLnLqX71Sw.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/VuukZLgaCrho2Ar8Scl9HtV3yD.jpg",
     videoUrl: "335983",
     overview: "While investigating a shady biotech company run by the ambitious Carlton Drake, journalist Eddie Brock is unknowingly infected with an alien symbiote that bonds directly with his body. As the entity, Venom, begins to take hold — sharing his mind, granting him lethal abilities, and encouraging his darkest impulses — Eddie must find a way to control the chaos within him and stop Drake from unleashing an even greater threat.",
     director: "Ruben Fleischer",
@@ -2014,8 +1991,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "1h 37m",
     genres: ["Action", "Adventure", "Sci-fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxWfUxqRua4K4lWg_9-rIs1Cm8TXUkepdAH8aLUx4pkg&s=10",
-    backdrop: "https://i0.wp.com/www.the-medium-is-not-enough.com/images/2021/10/9oxfim5x2nq71-scaled.jpg?resize=678%2C381&ssl=1",
+    poster: "https://www.themoviedb.org/t/p/w1280/pzKsRuKLFmYrW5Q0q8E8G78Tcgo.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/cxlIj6EMsOyHdpBvGPdjAEdRT51.jpg",
     videoUrl: "580489",
     overview: "As Eddie Brock struggles to coexist with Venom, a serial killer named Cletus Kasady bonds with a symbiote of his own — the ruthless Carnage — forcing Eddie and Venom to overcome their own dysfunction and team up to stop a threat far more dangerous than themselves.",
     director: "Andy Serkis",
@@ -2045,15 +2022,15 @@ const MOVIES = [
   },
   {
     id: "m96", // Keep incrementing this number (m14, m15, m16, etc.)
-    title: "Transformer One",
+    title: "Transformers One",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
     rating: 7.5,
     age: "PG",
     duration: "1h 44m",
     genres: ["Animation", "Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCdjCmykFubyX2lq0DD6caLDHa2ejBLCAqvYCgZ2sONg&s",
-    backdrop: "https://cf-images.us-east-1.prod.boltdns.net/v1/static/6057949425001/5ffa29f6-a2bb-4dc5-a218-029d61632d46/6a527901-c666-4eb0-ae5b-8838f420f27a/1280x720/match/image.jpg",
+    poster: "https://image.tmdb.org/t/p/original/ijhdkyObTGGM3rVjpeaX1JIr5k4.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/cMfokHWle5lfCreoV08cbmkKv6G.jpg",
     videoUrl: "698687",
     overview: "On a Cybertron ruled by a rigid caste system, lowly miners Orion Pax and D-16 dream of something greater than the lives they've been assigned. When a dangerous expedition beneath the planet's surface reveals long-buried truths about their world's history, the two friends are forced to confront a betrayal that fractures their bond forever — setting them on the path to becoming the two iconic rivals who will define the fate of Cybertron for generations: Optimus Prime and Megatron.",
     director: "Josh Cooley",
@@ -2071,8 +2048,8 @@ const MOVIES = [
     age: "PG",
     duration: "1h 39m",
     genres: ["Action", "Adventure", "Comedy", "Family", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcI2hEw2aXFQ8ZYT_L35JaSAPukidQo4mfZfM5V1BWxA&s=10",
-    backdrop: "https://media.themoviedb.org/t/p/w780/stmYfCUGd8Iy6kAMBr6AmWqx8Bq.jpg",
+    poster: "https://www.themoviedb.org/t/p/w1280/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/94f5iTqs610olgYEsg0BA20y2G4.jpg",
     videoUrl: "454626",
     overview: "On the run after his powers make him a target back home, Sonic hides out on Earth, quietly living in a small Montana town. When a moment of panic accidentally causes a massive power outage, he attracts the attention of the U.S. government — and the eccentric, villainous Dr. Robotnik, who's determined to harness Sonic's powers for his own gain. Forced to team up with the town's sheriff, Tom Wachowski, Sonic sets off on a cross-country adventure to protect his newfound home and outsmart Robotnik once and for all.",
     director: "Jeff Fowler",
@@ -2090,8 +2067,8 @@ const MOVIES = [
     age: "PG",
     duration: "2h 2m",
     genres: ["Action", "Adventure", "Comedy", "Family", "Sci-Fi"],
-    poster: "https://m.media-amazon.com/images/M/MV5BMDBiYzk0YTMtNWRiYi00YWY0LWE3NjgtYmJiYTAwZmYzOTM0XkEyXkFqcGc@._V1_QL75_UY281_CR0,0,190,281_.jpg",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMNqH-FG7bYIlTDNcuVANNhaWALcWjXBKPFeGGoNtlpZ4d6iI3OYv3oS0&s=10",
+    poster: "https://image.tmdb.org/t/p/original/8E7mIpEpSATxX5JEuw55GYx9hfk.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/6a7Y7X7P2uTiIHxfhcB3kk9BBI2.jpg",
     videoUrl: "675353",
     overview: "Settling into life on Earth, Sonic faces his greatest challenge yet when Dr. Robotnik returns with a powerful new ally, Knuckles, on a mission to find a mystical emerald capable of unlimited power. To stop them, Sonic teams up with his own new companion, Tails, in a race against time to protect the world.",
     director: "Jeff Fowler",
@@ -2109,8 +2086,8 @@ const MOVIES = [
     age: "PG",
     duration: "1h 50m",
     genres: ["Action", "Adventure", "Comedy", "Family", "Sci-Fi"],
-    poster: "https://www.kinoart.cz/obrazky/1f8b080000000000020315cc4b1342501880e1ff72d61947e746bb264d2c7222849df449632497119afe7bdabef3ccfb4115f4457d431b9442a7ac1957b2be452bf4182c1897ca31039de91a279033ca05074c5243709a0a428c1c2f149e593bbd7af84f4ac01e93f788685d51086107e5e8e9d3b19276f07e0dd2a943ed9ef44d6419a69a3ad783ef8a86ef9ca60ef7e76a32244e8ab8a4948cfa1c95b89d33f512f8ef13c5f9510db707599b6e8cbe3f639b0571b6000000/front.poster.g1.jpg",
-    backdrop: "https://images8.alphacoders.com/138/1383767.jpg",
+    poster: "https://image.tmdb.org/t/p/original/96ULvPXY9ck6Ry1qb2eyCtnOaG9.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/gLklFtWFW7Vg4E5SZgiQ3voYcAy.jpg",
     videoUrl: "939243",
     overview: "When a mysterious and powerful new adversary named Shadow emerges with abilities that rival Sonic's own, Sonic, Knuckles, and Tails must set aside their differences and team up with their old enemy, Dr. Robotnik, to stop a threat capable of destroying the entire world.",
     director: "Jeff Fowler",
@@ -2128,8 +2105,8 @@ const MOVIES = [
     age: "R",
     duration: "3h 9m",
     genres: ["Crime", "Drama", "Fantasy"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZPgefx1K3n1dT8N0cd98-7oUoRbeeQVjcIyGx67B7iA&s=10",
-    backdrop: "https://spoilertown.com/wp-content/uploads/2024/06/green-mile-1999.webp",
+    poster: "https://www.themoviedb.org/t/p/w1280/8VG8fDNiy50H4FedGwdSVUPoaJe.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/hvbWh2aBmBNWEBJIjJF2Km6Pn4i.jpg",
     videoUrl: "497",
     overview: "Paul Edgecomb, a veteran corrections officer on death row during the Depression era, encounters John Coffey, a physically imposing but gentle man convicted of murdering two young girls. As Paul comes to know John, he discovers the condemned man possesses an extraordinary, almost supernatural gift for healing — a revelation that forces Paul to confront painful questions about guilt, mercy, and the true nature of the man he's meant to escort to his execution.",
     director: "Frank Darabont",
@@ -2185,8 +2162,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 6m",
     genres: ["Action", "Adventure", "Fantasy", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEpdxs2poFnYBfM89o6GXoey5o93J0tL9hCKkFy9d9w&s=10",
-    backdrop: "https://static0.colliderimages.com/wordpress/wp-content/uploads/2022/02/doctor-strange-2-poster-social-featured.jpg?w=1200&h=900&fit=crop",
+    poster: "https://www.themoviedb.org/t/p/w1280/ddJcSKbcp4rKZTmuyWaMhuwcfMz.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/gUNRlH66yNDH3NQblYMIwgZXJ2u.jpg",
     videoUrl: "453395",
     overview: "When a young woman with the power to travel across the multiverse becomes the target of a dangerous pursuer, Doctor Strange journeys through terrifying alternate realities alongside Wanda Maximoff, confronting the darkest, most unpredictable version of his own reality.",
     director: "Sam Raimi",
@@ -2394,8 +2371,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 11m",
     genres: ["Action", "Adventure", "Thriller"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkAV8FRHMw_q8-0m6duL934Fve_riw7irDVnE7_yO6fA&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPXGcvF4B_x7_yrESFlnVSb2o4isq-3K6PTfCzOsLc6g&s=10",
+    poster: "https://www.themoviedb.org/t/p/w1280/fRJLXQBHK2wyznK5yZbO7vmsuVK.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/vYIUN5rrCncHFY8WvcuXQlM4hk5.jpg",
     videoUrl: "177677",
     overview: "When the IMF is dissolved and its agents scattered, Ethan Hunt goes rogue to prove the existence of a shadowy international crime organization known as the Syndicate, teaming up with a mysterious operative whose true allegiance remains uncertain.",
     director: "Christopher McQuarrie",
@@ -2413,7 +2390,7 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 27m",
     genres: ["Action", "Adventure", "Thriller"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOO77MPr94ze9lLRvtN_ZtzYRnEhhAmboSUsQIp-2mxQ&s=10",
+    poster: "https://www.themoviedb.org/t/p/w1280/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg",
     backdrop: "https://images.now-tv.com/shares/vod_images/vi_vodproduct_desc_t/201903/en_us/original_horizontal2/201903120746373",
     videoUrl: "353081",
     overview: "When a mission to recover stolen plutonium goes wrong, Ethan Hunt and his team race against time across the globe to prevent a catastrophic act of terrorism, all while confronting the growing distrust between allies and a shadowy enemy determined to see the world burn.",
@@ -2470,7 +2447,7 @@ const MOVIES = [
     age: "PG",
     duration: "1h 57m",
     genres: ["Animation", "Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo1VppUKcW40Nk0jSmXOACJM-a7KFJabQuOa26LEnmWA&s=10",
+    poster: "https://www.themoviedb.org/t/p/w1280/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
     backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0dNHhZu3RZ72D-J6Fx2n0ygv_EJYwoDCYdJed96cDGA&s=10",
     videoUrl: "324857",
     overview: "Miles Morales is a Brooklyn teenager navigating a new school, a complicated relationship with his father, and a sudden spider bite that grants him extraordinary abilities. Before he can fully process his new powers, a rift torn open by the villainous Kingpin brings alternate versions of Spider-Man from other dimensions crashing into his world. Guided by these unlikely mentors, Miles must learn to embrace what makes him uniquely himself and step up as the hero his universe needs.",
@@ -2584,8 +2561,8 @@ const MOVIES = [
     age: "PG",
     duration: "1h 37m",
     genres: ["Animation", "Action", "Adventure", "Comedy", "Family", "Fantasy"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrzgiCVVenyeRWD_ioNWda85pJNsWCJ0LyHu_KJtgDdA&s",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmdsWjGk0Y71j-XXDHl5XCV2PnGGZm-83gNgi8voiXlw&s=10",
+    poster: "https://www.themoviedb.org/t/p/w1280/yfzmfWGjcmyugH6FZ13WcsUGiNj.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/puFbbiJxY0rjJtcvsTeSCQHNchR.jpg",
     videoUrl: "81188",
     overview: "When the evil spirit Pitch Black launches an assault to engulf the world in darkness and fear, the Immortal Guardians—Santa Claus, the Tooth Fairy, the Easter Bunny, and the Sandman—enlist the help of carefree Jack Frost to protect the hopes, beliefs, and imagination of children everywhere.",
     director: "Peter Ramsey",
@@ -4865,7 +4842,7 @@ const MOVIES = [
       },
     ],
   },
-{
+  {
     id: "m213", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Justice League: Crisis on Infinite Earths Part One",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -4883,7 +4860,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m214", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Justice League: Crisis on Infinite Earths – Part Two",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -4901,7 +4878,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m215", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Justice League: Crisis on Infinite Earths – Part Three",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -4919,7 +4896,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m216", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Justice League",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -4937,7 +4914,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m217", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Justice League Dark",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -4945,7 +4922,7 @@ const MOVIES = [
     rating: 7.0,
     age: "R",
     duration: "1h 15m ",
-    genres: ["Animation", "Action", "Fantasy","Horror"],
+    genres: ["Animation", "Action", "Fantasy", "Horror"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gWcTaDFXDrOAPfVzfBFz0Aya5BE.jpg",
     backdrop: "https://wallpapercave.com/wp/wp6631318.jpg",
     videoUrl: "408220",
@@ -4955,7 +4932,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m218",
     title: "The Spectacular Spider-Man",
     type: "TV Show",
@@ -5014,9 +4991,10 @@ const MOVIES = [
 
 
       },
-]
-},
-{
+    ]
+  },
+
+  {
     id: "219",
     title: "Breaking Bad",
     type: "TV Show",
@@ -5124,7 +5102,7 @@ const MOVIES = [
       },
     ],
   },
-{
+  {
     id: "220",
     title: "The Boys",
     type: "TV Show",
@@ -5132,14 +5110,14 @@ const MOVIES = [
     rating: 8.7,
     age: "TV-MA",
     duration: "1h",
-    genres: ["Action", "Drama", "Crime","Comedy"],
+    genres: ["Action", "Drama", "Crime", "Comedy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
     backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMATYOOa3SHrDYlfL0MjcGZPNFN5bWOH-wWAcYiwnV_mYugsFEcXQxlNzb&s=10",
     videoUrl: "",
     overview: "A group of vigilantes set out to expose and take down corrupt superheroes who abuse their superpowers and are controlled by a powerful, profit-driven corporation. When Hughie Campbell's girlfriend is accidentally killed by a member of the Seven, he joins forces with the ruthless Billy Butcher to bring the Supes to justice.",
     director: "Eric Kripke",
     cast: ["Karl Urban, Jack Quaid, Antony Starr, Erin Moriarty, Dominique McElligott, Jessie T. Usher, Laz Alonso, Chace Crawford, Tomer Kapon, Karen Fukuhara"],
-    trending: true,
+    trending: false,
     featured: false,
     cinesrcId: "76479", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
@@ -5210,7 +5188,7 @@ const MOVIES = [
       },
     ],
   },
-{
+  {
     id: "221",
     title: "The Batman",
     type: "TV Show",
@@ -5225,7 +5203,7 @@ const MOVIES = [
     overview: "A young Bruce Wayne fights crime and evil in Gotham City as the mysterious vigilante, the Batman. This animated series follows his early crimefighting years — from a solo detective battling classic villains like the Joker, Penguin, and Mr. Freeze, to eventually building the Bat-Family with Robin and Batgirl, and forming ties with the wider DC Universe.",
     director: "Michael Goguen, Duane Capizzi",
     cast: ["Rino Romano, Alastair Duncan, Evan Sabara, Danielle Judovits, Kevin Michael Richardson, Ming-Na Wen, Mitch Pileggi"],
-    trending: true,
+    trending: false,
     featured: false,
     cinesrcId: "2022", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
@@ -5321,7 +5299,7 @@ const MOVIES = [
       },
     ],
   },
-{
+  {
     id: "m222", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Nun",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -5329,7 +5307,7 @@ const MOVIES = [
     rating: 5.4,
     age: "R",
     duration: "1h 36m ",
-    genres: ["Horror", "Mystery", "Thriller","Supernatural"],
+    genres: ["Horror", "Mystery", "Thriller", "Supernatural"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/sFC1ElvoKGdHJIWRpNB3xWJ9lJA.jpg",
     backdrop: "https://img10.hotstar.com/image/upload/f_auto,q_auto/sources/r1/cms/prod/9174/1776264519174-i",
     videoUrl: "439079",
@@ -5339,7 +5317,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m223", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Puss in Boots",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -5584,7 +5562,9 @@ const MOVIES = [
 
     ],
   },
-{
+
+
+  {
     id: "m226", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Miraculous: Ladybug & Cat Noir, The Movie ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -5674,7 +5654,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m231", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Hotel Transylvania",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -5728,7 +5708,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m234", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Housemaid",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -5746,7 +5726,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m235", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Interstellar",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -5836,7 +5816,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m240", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Jason Bourne",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -5869,6 +5849,114 @@ const MOVIES = [
     overview: "During a manned mission to Mars, astronaut Mark Watney is presumed dead after a fierce storm separates him from his crew and forces them to evacuate the planet. Left stranded alone on the hostile Martian landscape with meager supplies, the ingenious botanist must rely on his scientific wit, engineering skills, and sheer grit to survive. Using his knowledge to grow potatoes inside an artificial habitat and modify old equipment, he manages to broadcast a desperate signal back to Earth, triggering an audacious, high-stakes international rescue mission by NASA and his former crewmates.",
     director: "Ridley Scott",
     cast: ["Matt Damon, Jessica Chastain, Jeff Daniels, Kristen Wiig, Chiwetel Ejiofor, Sean Bean, Kate Mara, Sebastian Stan, Donald Glover, Michael Peña"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
+    id: "m242", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Oppenheimer",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2023,
+    rating: 8.3,
+    age: "R",
+    duration: "3h ",
+    genres: ["Biography", "Drama", "History"],
+    poster: "https://www.themoviedb.org/t/p/w1280/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/ycnO0cjsAROSGJKuMODgRtWsHQw.jpg",
+    videoUrl: "872585",
+    overview: "A sweeping biographical drama that chronicles the life of theoretical physicist J. Robert Oppenheimer, the charismatic director of the Manhattan Project's Los Alamos Laboratory. The film explores his pivotal role in developing the atomic bomb during World War II, the triumphant and horrific reality of the Trinity test, and the severe political and personal fallout he faced years later during a fraught 1954 security clearance hearing amidst the Red Scare.",
+    director: "Christopher Nolan",
+    cast: ["Cillian Murphy, Emily Blunt, Matt Damon, Robert Downey Jr., Florence Pugh, Josh Hartnett, Casey Affleck, Rami Malek, Kenneth Branagh"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
+    id: "m243", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Pulp Fiction",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 1994,
+    rating: 8.8,
+    age: "R",
+    duration: "2h 34m ",
+    genres: [ "Drama", "Crime"],
+    poster: "https://www.themoviedb.org/t/p/w1280/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/w7RDIgQM6bLT7JXtH4iUQd3Iwxm.jpg",
+    videoUrl: "680",
+    overview: "A neo-noir crime film that weaves together three interconnected stories of the Los Angeles underworld. The non-linear narrative follows two philosophical, sharp-dressed hitmen out to retrieve a mysterious stolen briefcase for their mob boss; the boss's glamorous, drug-addled wife who goes out for a wild night with one of the hitmen; a washed-up prizefighter who breaks a deal to throw a match and goes on the run; and a nervous young couple attempting a daylight holdup in a diner.",
+    director: "Quentin Tarantino",
+    cast: ["John Travolta, Samuel L. Jackson, Uma Thurman, Bruce Willis, Ving Rhames, Harvey Keitel, Tim Roth, Amanda Plummer, Christopher Walken"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
+    id: "m244", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Moana",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2016,
+    rating: 7.6,
+    age: "PG",
+    duration: "1h 47m ",
+    genres: [ "Animation", "Adventure","Comedy","Family","Fantasy","Musical"],
+    poster: "https://www.themoviedb.org/t/p/w1280/m5MDZOIFEFlxGiLuAzWzFSsWcye.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/qLVNZFHYUR6Li64He67SWl6BHQe.jpg",
+    videoUrl: "277834",
+    overview: "On the Polynesian island of Motunui, the headstrong Moana, daughter of the chief, responds to the ocean's call to set sail on a daring voyage across the open sea. Her island faces an ecological blight caused by the ancient theft of the heart of Te Fiti, a goddess of creation. To save her people, Moana must navigate the vast ocean, track down the legendary, shapeshifting demigod Maui, and convince him to accompany her across treacherous waters to return the stolen artifact and restore natural balance.",
+    director: "Ron Clements, John Musker",
+    cast: ["Auli'i Cravalho, Dwayne Johnson, Rachel House, Temuera Morrison, Jemaine Clement, Nicole Scherzinger, Alan Tudyk"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
+    id: "m245", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Moana 2",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2024,
+    rating: 6.3,
+    age: "PG",
+    duration: "1h 40m ",
+    genres: [ "Animation", "Adventure","Comedy","Family","Fantasy","Musical"],
+    poster: "https://www.themoviedb.org/t/p/w1280/aLVkiINlIeCkcZIzb7XHzPYgO6L.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/tElnmtQ6yz1PjN1kePNl8yMSb59.jpg",
+    videoUrl: "1241982",
+    overview: "Three years after her first grand voyage, Moana receives an unexpected call from her wayfinding ancestors. This cosmic sign urges her to journey far beyond the shores of Motunui into the dangerous, long-lost waters of the Oceania seas. To break a ancient curse that has kept the people of the ocean separated, she reunites with the legendary demigod Maui and puts together a brand-new crew of unlikely mariners to face off against sinister new entities of the deep.",
+    director: "David Derrick Jr., Jason Hand, Dana Ledoux Miller",
+    cast: ["Auli'i Cravalho, Dwayne Johnson, Hualālai Chung, Rose Matafeo, David Fane, Awhimai Fraser, Gerald Ramsey"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
+    id: "m246", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Moana ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2026,
+    rating: 5.8,
+    age: "PG",
+    duration: "1h 55m ",
+    genres: [ "Action", "Adventure","Family","Fantasy","Musical"],
+    poster: "https://www.themoviedb.org/t/p/w1280/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
+    videoUrl: "1108427",
+    overview: "A live-action reimagining of Disney's hit 2016 animated feature. The film follows the fearless young Pacific Islander wayfinder, Moana, as she answers the ocean's call and sets sail beyond the safety of her home reef. Teaming up with the legendary, larger-than-life demigod Maui, she embarks on an epic, high-seas voyage to confront ancient entities and restore the heart of Te Fiti to save her people.",
+    director: "Thomas Kail",
+    cast: ["Catherine Lagaʻaia, Dwayne Johnson, John Tui, Frankie Adams, Rena Owen"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
+    id: "m247", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Gone Girl ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2014,
+    rating: 8.1,
+    age: "R",
+    duration: "2h 29m ",
+    genres: [ "Drama", "Mystery","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w1280/ts996lKsxvjkO2yiYG0ht4qAicO.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/iWak7wT0j6ycCc8lKr4NBz9c7n5.jpg",
+    videoUrl: "210577",
+    overview: "On the morning of their fifth wedding anniversary, former New York writer Nick Dunne returns home to find his suburban Missouri house in disarray and his beautiful, brilliant wife, Amy, missing. Under intense pressure from both the police and a growing media frenzy, Nick's calm, detached demeanor begins to make him look highly suspicious. As the investigation deepens, Amy’s diary entries reveal a deeply troubled marriage, leaving everyone to wonder: did Nick Dunne kill his wife, or is there a much more calculated game at play?",
+    director: "David Fincher",
+    cast: ["Ben Affleck, Rosamund Pike, Neil Patrick Harris, Tyler Perry, Carrie Coon, Kim Dickens"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
