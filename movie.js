@@ -6402,7 +6402,96 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-
+{
+    id: "m254", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Casino Royal ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2006,
+    rating: 8.0,
+    age: "PG-13",
+    duration: "2h 24m ",
+    genres: ["Action", "Adventure", "Thriller","Spy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lMrxYKKhd4lqRzwUHAy5gcx9PSO.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/klJMCIblHLFwCuGjKz7tyOpekIC.jpg",
+    videoUrl: "36557",
+    overview: "Le Chiffre, a banker to the world's terrorists, is scheduled to participate in a high-stakes poker game in Montenegro, where he intends to use his winnings to rebuild his financial standing after a failed investment. James Bond, newly promoted to 00 status, is sent to bankrupt him at the table — but the mission spirals into a deadly game of trust, betrayal, and survival that will define the agent he becomes.",
+    director: "Martin Campbell",
+    cast: ["Daniel Craig, Eva Green, Mads Mikkelsen, Judi Dench, Jeffrey Wright, Giancarlo Giannini, Caterina Murino"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m255", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Quantum of Solace ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2008,
+    rating: 6.5,
+    age: "PG-13",
+    duration: "1h 46m ",
+    genres: ["Action", "Adventure", "Thriller","Spy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/e3DXXLJHGqMx9yYpXsql1XNljmM.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/3CqMIX3ZlrD0pU3fpBL6DM0Cneb.jpg",
+    videoUrl: "10764",
+    overview: "Continuing directly from Casino Royale, James Bond descends into mystery as he tries to stop a shadowy organization from eliminating a country's most valuable resource. Betrayed by Vesper, the woman he loved, Bond fights the urge to make his mission personal — pursuing the truth alongside M, only to discover the conspiracy runs far deeper and more dangerous than anyone imagined.",
+    director: "Marc Forster",
+    cast: ["Daniel Craig, Olga Kurylenko, Mathieu Amalric, Judi Dench, Jeffrey Wright, Giancarlo Giannini, Gemma Arterton, Jesper Christensen"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m256", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Skyfall ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2012,
+    rating: 7.8,
+    age: "PG-13",
+    duration: "2h 23m ",
+    genres: ["Action", "Adventure", "Thriller","Spy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/d0IVecFQvsGdSbnMAHqiYsNYaJT.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/lnAqZDaP0yejFsuHZqeTGJOeRov.jpg",
+    videoUrl: "37724",
+    overview: "Bond's loyalty to M is tested when her past comes back to haunt her. After a mission in Istanbul goes wrong and he's presumed dead, Bond returns to find MI6 under a devastating cyber attack from a mysterious enemy. As the threat closes in, 007 must track down and destroy it — no matter how personal the cost becomes.",
+    director: "Sam Mendes",
+    cast: ["Daniel Craig, Javier Bardem, Ralph Fiennes, Naomie Harris, Bérénice Marlohe, Albert Finney, Judi Dench"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m257", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Spectre ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2015,
+    rating: 6.8,
+    age: "PG-13",
+    duration: "2h 28m ",
+    genres: ["Action", "Adventure", "Thriller","Spy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/zj8ongFhtWNsVlfjOGo8pSr7PQg.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/daZ7Z8IvbbeHQVQNK8RXr32OHtk.jpg",
+    videoUrl: "37724",
+    overview: "A cryptic message from Bond's past sends him on a trail to uncover a sinister organization known as S.P.E.C.T.R.E. While M battles political forces to keep the secret service alive, Bond covertly enlists Moneypenny and Q to help him track down Dr. Madeleine Swann, daughter of his old nemesis, who may hold the key to unraveling the conspiracy — and to a chilling personal connection between Bond and the enemy he's chasing.",
+    director: "Sam Mendes",
+    cast: ["Daniel Craig, Christoph Waltz, Léa Seydoux, Ben Whishaw, Naomie Harris, Dave Bautista, Monica Bellucci, Ralph Fiennes"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m258", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "No Time to Die ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2021,
+    rating: 7.3,
+    age: "PG-13",
+    duration: "2h 43m ",
+    genres: ["Action", "Adventure", "Thriller","Spy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iUgygt3fscRoKWCV1d0C7FbM9TP.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/jiXWozMk854sAHYpLj2pujAQPp6.jpg",
+    videoUrl: "370172",
+    overview: "Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
+    director: "Cary Joji Fukunaga",
+    cast: ["Daniel Craig, Rami Malek, Léa Seydoux, Lashana Lynch, Ben Whishaw, Naomie Harris, Jeffrey Wright, Christoph Waltz, Ralph Fiennes, Ana de Armas"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
 
 
 ]
