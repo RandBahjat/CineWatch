@@ -7140,7 +7140,114 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-
+{
+    id: "m295", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Madagascar",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2005,
+    rating: 7.0,
+    age: "PG",
+    duration: "1h 26m",
+    genres: ["Animation","Adventure","Comedy","Family"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/zMpJY5CJKUufG9OTw0In4eAFqPX.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/2igcXhXIVUouBPYFZ7kwr3z5qrD.jpg",
+    videoUrl: "953",
+    overview: "At New York's Central Park Zoo, a lion, a zebra, a giraffe, and a hippo are best friends and stars of the show. But when one of the animals goes missing from their cage, the other three break free to find him — and all four end up stranded on the wild island of Madagascar, forced to adjust to a life far from the comforts of captivity.",
+    director: "Eric Darnell, Tom McGrath",
+    cast: ["Ben Stiller, Chris Rock, David Schwimmer, Jada Pinkett Smith, Sacha Baron Cohen, Cedric the Entertainer, Andy Richter"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m296", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Madagascar: Escape 2 Africa ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2008,
+    rating: 6.7,
+    age: "PG",
+    duration: "1h 29m",
+    genres: ["Animation","Adventure","Comedy","Family"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/agRbLOHgN46TQO4YdKR462iR7To.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/r2M9ElkHxEJP7riCFbT5N0uXZTc.jpg",
+    videoUrl: "10527",
+    overview: "Desperate to return to their beloved Central Park Zoo, Alex, Marty, Melman, and Gloria board a decrepit cargo plane repaired by the ever-resourceful penguins. The precariously patched-up craft crash-lands in Africa instead, where the animals encounter members of their own species for the first time — and Alex discovers his royal heritage as a long-lost prince of a lion pride, reuniting with parents he never knew he had.",
+    director: "Eric Darnell, Tom McGrath",
+    cast: ["Ben Stiller, Chris Rock, David Schwimmer, Jada Pinkett Smith, Sacha Baron Cohen, Cedric the Entertainer, Bernie Mac, Alec Baldwin"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m297", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Madagascar 3: Europe's Most Wanted  ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2012,
+    rating: 6.7,
+    age: "PG",
+    duration: "1h 33m",
+    genres: ["Animation","Adventure","Comedy","Family"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ekraj4ksvIKeuvQVEevEJkuybZd.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/hfdds27YL5nTAhiOtjfNNxD3bJe.jpg",
+    videoUrl: "80321",
+    overview: "Animal pals Alex, Marty, Melman, and Gloria are still trying to make it back to New York's Central Park Zoo. They're forced to take a detour to Europe to find the penguins and chimps who broke the bank at a Monte Carlo casino. When ruthless French animal-control officer Captain Chantel DuBois picks up their scent, Alex and company are forced to hide out in a traveling circus — and reinvent themselves to survive.",
+    director: "Eric Darnell, Conrad Vernon, Tom McGrath",
+    cast: ["Ben Stiller, Chris Rock, David Schwimmer, Jada Pinkett Smith, Sacha Baron Cohen, Jessica Chastain, Bryan Cranston, Frances McDormand"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m298", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Edge of Tomorrow",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2014,
+    rating: 7.9,
+    age: "PG-13",
+    duration: "1h 53m",
+    genres: ["Action","Adventure","Science Fiction"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nBM9MMa2WCwvMG4IJ3eiGUdbPe6.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/4V1yIoAKPMRQwGBaSses8Bp2nsi.jpg",
+    videoUrl: "137113",
+    overview: "A military officer with no combat experience is thrust into a suicide mission against an unbeatable alien invasion. When he dies in battle, he finds himself trapped in a time loop, reliving the same brutal day over and over. Partnering with a legendary Special Forces warrior, he uses each cycle to sharpen his skills and uncover a way to finally break the loop — and defeat the extraterrestrial threat once and for all.",
+    director: "Doug Liman",
+    cast: ["Tom Cruise, Emily Blunt, Bill Paxton, Brendan Gleeson"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m299", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Vanilla Sky ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2001,
+    rating: 6.9,
+    age: "R",
+    duration: "2h 16m",
+    genres: ["Fantasy","Mystery","Romance"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cAh2pCiNPftsY3aSqJuIOde7uWr.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/r94MwcvPBidnQh2ASOfPV2wEEnm.jpg",
+    videoUrl: "1903",
+    overview: "David Aames has it all — wealth, good looks, and gorgeous women on his arm. But just as he begins falling for the warmhearted Sofia, his face is horribly disfigured in a car accident caused by a resentful ex-lover. That's only the beginning of his troubles, as the lines between illusion and reality, between life and death, begin to blur beyond recognition.",
+    director: "Cameron Crowe",
+    cast: ["Tom Cruise, Penélope Cruz, Kurt Russell, Cameron Diaz, Jason Lee, Noah Taylor"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m300", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "American Made ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2017,
+    rating: 7.2,
+    age: "R",
+    duration: "1h 55m",
+    genres: ["Action","Comedy","Crime","Drama"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/23ILgoPSO5ShKcTZOuiTVfqFAUB.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/qphzPbr42CaV6cayxOAsUbk8nLV.jpg",
+    videoUrl: "337170",
+    overview: "The story of Barry Seal, an ordinary commercial pilot recruited by the CIA in the 1980s, who juggles surveillance work for the agency, smuggling cocaine for the Medellín Cartel, and running guns for the Contras in Nicaragua — a clandestine web of operations that would eventually spiral out of control and be exposed as the Iran-Contra Affair.",
+    director: "Doug Liman",
+    cast: ["Tom Cruise, Domhnall Gleeson, Sarah Wright, Caleb Landry Jones, Jesse Plemons"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
 
 
 
