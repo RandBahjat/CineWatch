@@ -6762,7 +6762,276 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-
+{
+    id: "m274", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Grown Ups",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2010,
+    rating: 6.0,
+    age: "PG-13",
+    duration: "1h 42m",
+    genres: ["Comedy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cQGM5k1NtU85n4TUlrOrwijSCcm.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/gLrhzo4rQNmaLkVqWBGJF2xYx8G.jpg",
+    videoUrl: "38365",
+    overview: "Five childhood friends and former basketball teammates reunite years later to honor the passing of their beloved childhood coach. With their wives and kids in tow, they spend the Fourth of July holiday weekend together at the lake house where they once celebrated their championship — reminiscing about the past and rediscovering what friendship and family really mean.",
+    director: "Dennis Dugan",
+    cast: ["Adam Sandler, Kevin James, Chris Rock, David Spade, Rob Schneider, Salma Hayek, Maria Bello, Maya Rudolph"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m275", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Grown Ups 2",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2013,
+    rating: 5.4,
+    age: "PG-13",
+    duration: "1h 41m",
+    genres: ["Comedy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/hT6ijOtjtYrnyDhN7VA2QWyGFAm.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/epVPiaRsLhJMinNRWUFWMudZ9ba.jpg",
+    videoUrl: "109418",
+    overview: "Lenny has relocated his family back to the small town where he and his friends grew up. This time around, the grown-ups are the ones learning lessons from their kids on a day notoriously full of chaos — between old bullies, new bullies, a schizo bus driver, drunk cops on skis, and 400 costumed party crashers, sometimes crazy just follows you.",
+    director: "Dennis Dugan",
+    cast: ["Adam Sandler, Kevin James, Chris Rock, David Spade, Salma Hayek, Maria Bello, Maya Rudolph, Nick Swardson"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m276", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Red One",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2024,
+    rating: 6.2,
+    age: "PG-13",
+    duration: "2h 3m",
+    genres: ["Action","Adventure","Comedy","Fantasy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cdqLnri3NEGcmfnqwk2TSIYtddg.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/t2NWApVqG68kzD2ck1mBzaN4Y1Y.jpg",
+    videoUrl: "845781",
+    overview: "After Santa Claus — Code Name: Red One — is kidnapped, the North Pole's Head of Security must team up with the world's most infamous bounty hunter in a globe-trotting, action-packed mission to save Christmas before it's too late.",
+    director: "Jake Kasdan",
+    cast: ["Dwayne Johnson, Chris Evans, Lucy Liu, Kiernan Shipka, Bonnie Hunt, Kristofer Hivju, Nick Kroll, J.K. Simmons"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m277", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "World War Z",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2013,
+    rating: 7.0,
+    age: "PG-13",
+    duration: "1h 56m",
+    genres: ["Action","Adventure","Horror"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/aCnVdvExw6UWSeQfr0tUH3jr4qG.jpg",
+    backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/ieaqdvP8osNeB6q5J4tX5w2SGar.jpg",
+    videoUrl: "72190",
+    overview: "Life for former United Nations investigator Gerry Lane and his family seems content — until the world is suddenly plagued by a mysterious infection turning entire populations into rampaging, mindless zombies. After barely escaping the chaos, Lane is persuaded to travel the globe investigating the disease's origins, braving horrific dangers and long odds to find answers before human civilization falls.",
+    director: "Marc Forster",
+    cast: ["Brad Pitt, Mireille Enos, Daniella Kertesz, James Badge Dale, Matthew Fox, David Morse, Peter Capaldi"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m278", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Shang-Chi and the Legend of the Ten Rings",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2021,
+    rating: 7.3,
+    age: "PG-13",
+    duration: "2h 12m",
+    genres: ["Action","Adventure","Fantasy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9f2Q0U3IOsLgrI2HkvldwSABZy5.jpg",
+    backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg",
+    videoUrl: "566525",
+    overview: "Shang-Chi, the master of weaponry-based Kung Fu, must confront the past he thought he'd left behind when he's drawn into the web of the mysterious Ten Rings organization — forcing him to face his father, the group's dangerous leader, and a legacy he can no longer outrun.",
+    director: "Destin Daniel Cretton",
+    cast: ["Simu Liu, Awkwafina, Tony Leung Chiu-wai, Michelle Yeoh, Meng'er Zhang, Fala Chen, Florian Munteanu, Benedict Wong, Ben Kingsley"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m279", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "La La Land",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2016,
+    rating: 8.0,
+    age: "PG-13",
+    duration: "2h 8m",
+    genres: ["Musical","Romance","Comedy","Drama"],
+    poster: "https://image.tmdb.org/t/p/original/9yguvvrOG8dBVIbxCst0GyzVJu1.jpg",
+    backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/rVRtRE6HJ5xbdo5jd9aTT8tEVaF.jpg",
+    videoUrl: "313369",
+    overview: "Mia, an aspiring actress, serves lattes to movie stars in between auditions, while Sebastian, a jazz musician, scrapes by playing cocktail party gigs in dingy bars. As success mounts for both of them, they're faced with decisions that begin to fray the fragile fabric of their love affair — and the dreams they worked so hard to maintain in each other threaten to tear them apart.",
+    director: "Damien Chazelle",
+    cast: ["Ryan Gosling, Emma Stone, John Legend, Rosemarie DeWitt, J.K. Simmons, Finn Wittrock"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m280", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Scarface ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 1983,
+    rating: 8.3,
+    age: "PG-13",
+    duration: "2h 50m",
+    genres: ["Crime","Drama"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iQ5ztdjvteGeboxtmRdXEChJOHh.jpg",
+    backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/1qM2BYNE11Viby8ImC9LC00DgDr.jpg",
+    videoUrl: "111",
+    overview: "In 1980, Tony Montana, a Cuban refugee, arrives in Miami during the Mariel Boatlift with nothing to his name. His intelligence, guts, and ambition help him skyrocket from dishwasher to the top of a violent criminal empire built on cocaine — but his ruthless greed, paranoia, and self-destructive excess ultimately prove to be his undoing.",
+    director: "Brian De Palma",
+    cast: ["Al Pacino, Steven Bauer, Michelle Pfeiffer, Mary Elizabeth Mastrantonio, Robert Loggia, F. Murray Abraham"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m281", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "The Meg ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2018,
+    rating: 5.7,
+    age: "PG-13",
+    duration: "1h 53m",
+    genres: ["Action","Adventure","Science Fiction","Horror"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/eyWICPcxOuTcDDDbTMOZawoOn8d.jpg",
+    backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/2uSCHUsmzb6KkQPFSxBQ7bgfJLE.jpg",
+    videoUrl: "345940",
+    overview: "A deep-sea submersible is attacked by a massive creature previously thought to be extinct, and now lies disabled at the bottom of the deepest trench in the Pacific with its crew trapped inside. With time running out, expert deep-sea rescue diver Jonas Taylor is recruited by a visionary Chinese oceanographer to save the crew from this prehistoric threat — a 75-foot megalodon shark unlike anything modern science has ever seen.",
+    director: "Jon Turteltaub",
+    cast: ["Jason Statham, Li Bingbing, Rainn Wilson, Ruby Rose, Winston Chao, Cliff Curtis"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m282", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Meg 2: The Trench ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2023,
+    rating: 5.0,
+    age: "PG-13",
+    duration: "1h 56m",
+    genres: ["Action","Adventure","Science Fiction","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4m1Au3YkjqsxF8iwQy0fPYSxE0h.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/zN41DPmPhwmgJjHwezALdrdvD0h.jpg",
+    videoUrl: "615656",
+    overview: "Jonas Taylor leads a daring research team on an exploratory dive into the deepest depths of the ocean. Their voyage spirals into chaos when a malevolent mining operation threatens their mission, forcing them into a high-stakes battle for survival against multiple massive Megalodons — and a threat even more terrifying than they imagined.",
+    director: "Ben Wheatley",
+    cast: ["Jason Statham, Wu Jing, Sophia Cai, Page Kennedy, Sergio Peris-Mencheta, Skyler Samuels, Cliff Curtis"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m283", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "American Psycho",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2000,
+    rating: 7.6,
+    age: "R",
+    duration: "1h 42m",
+    genres: ["Crime","Drama","Horror"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9uGHEgsiUXjCNq8wdq4r49YL8A1.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/262HmU2EgvYIN52g6huHzx30YAU.jpg",
+    videoUrl: "1359",
+    overview: "A wealthy New York City investment banking executive, Patrick Bateman, hides his alternate psychopathic ego from his co-workers and friends as he delves deeper into his violent, hedonistic fantasies — blurring the line between his outwardly polished yuppie life and the depraved killer lurking beneath.",
+    director: "Mary Harron",
+    cast: ["Christian Bale, Justin Theroux, Josh Lucas, Bill Sage, Chloë Sevigny, Reese Witherspoon, Samantha Mathis, Willem Dafoe, Jared Leto"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m284", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Bullet Train",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2022,
+    rating: 7.3,
+    age: "R",
+    duration: "2h 7m",
+    genres: ["Action","Comedy","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/j8szC8OgrejDQjjMKSVXyaAjw3V.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/qbnZOPPUAipuX4erfeP4svARjOi.jpg",
+    videoUrl: "718930",
+    overview: "Unlucky assassin Ladybug is determined to do his job peacefully after one too many gigs gone off the rails. Fate, however, has other plans — his latest mission puts him on a collision course with lethal adversaries from around the globe, all with connected yet conflicting objectives, on the world's fastest train.",
+    director: "David Leitch",
+    cast: ["Brad Pitt, Joey King, Aaron Taylor-Johnson, Brian Tyree Henry, Andrew Koji, Hiroyuki Sanada, Michael Shannon, Sandra Bullock"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m285", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "The Beekeeper",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2024,
+    rating: 6.3,
+    age: "R",
+    duration: "1h 45m",
+    genres: ["Action","Crime","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/A7EByudX0eOzlkQ2FIbogzyazm2.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/f0ACHVpV707zqu4etZrXnWNdSgL.jpg",
+    videoUrl: "866398",
+    overview: "Eloise Parker is a schoolteacher who lives alone, with a quiet tenant renting her garage — Adam Clay, a former operative of a clandestine organization called Beekeepers, now living peacefully as a literal beekeeper. When Eloise falls victim to a phishing scam that wipes out over $2 million, including funds from a charity she manages, Clay is drawn back into the world he left behind — and his brutal campaign for vengeance takes on national stakes.",
+    director: "David Ayer",
+    cast: ["Jason Statham, Emmy Raver-Lampman, Josh Hutcherson, Bobby Naderi, Minnie Driver, Phylicia Rashad, Jeremy Irons"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m286", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Men in Black",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 1997,
+    rating: 7.3,
+    age: "PG-13",
+    duration: "1h 38m",
+    genres: ["Action","Adventure","Comedy","Science Fiction"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uLOmOF5IzWoyrgIF5MfUnh5pa1X.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/rGX4v2DdJvzNWGj3cprnkXsnTIp.jpg",
+    videoUrl: "607",
+    overview: "After a bizarre police chase with an otherworldly being, NYPD detective James Edwards is recruited into a top-secret organization established to monitor and police alien activity on Earth. As the newest member of the Men in Black, Agent J teams up with the seasoned Agent K to stop an intergalactic terrorist from assassinating two ambassadors from opposing galaxies — a plot that could spark a war for the fate of the planet.",
+    director: "Barry Sonnenfeld",
+    cast: ["Tommy Lee Jones, Will Smith, Linda Fiorentino, Vincent D'Onofrio, Rip Torn, Tony Shalhoub"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m287", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Men in Black II",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2002,
+    rating: 6.2,
+    age: "PG-13",
+    duration: "1h 28m",
+    genres: ["Action","Adventure","Comedy","Science Fiction"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/enA22EPyzc2WQ1VVyY7zxresQQr.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/gaObzSfuj8cLw2xpfphDVEs9aof.jpg",
+    videoUrl: "608",
+    overview: "Agent J is sent to find his former partner Agent K, whose memory of his alien-fighting past has long since been erased, after a dangerous case from K's history resurfaces. Kay and Jay reunite to provide the Men in Black's best, last, and only line of defense against a sinister seductress who levels the toughest challenge yet to MIB's untarnished mission of protecting Earth from the scum of the universe.",
+    director: "Barry Sonnenfeld",
+    cast: ["Tommy Lee Jones, Will Smith, Lara Flynn Boyle, Johnny Knoxville, Rosario Dawson, Tony Shalhoub, Rip Torn"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m288", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Men in Black 3",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2012,
+    rating: 6.8,
+    age: "PG-13",
+    duration: "1h 46m",
+    genres: ["Action","Comedy","Science Fiction"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/90DdoEStzeObs96fsYf4GG544iN.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/iCqk02W09UCA7ljxG5XEiX1xJkw.jpg",
+    videoUrl: "41154",
+    overview: "Agents J and K are back... in time. J has seen some inexplicable things in his 15 years with the Men in Black, but nothing perplexes him quite like his wry, reticent partner. When K's life and the fate of the planet are put at stake, Agent J must travel back to 1969 to stop an escaped alien from assassinating his friend and changing history — uncovering secrets about K, and himself, along the way.",
+    director: "Barry Sonnenfeld",
+    cast: ["Will Smith, Tommy Lee Jones, Josh Brolin, Jemaine Clement, Michael Stuhlbarg, Emma Thompson"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
 
 
 
