@@ -6654,6 +6654,119 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
+{
+    id: "m268", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "The Scorpion King",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2002,
+    rating: 5.5,
+    age: "PG-13",
+    duration: "1h 32m ",
+    genres: ["Action", "Adventure","Fantasy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/aITIsX20tACn6jgtyDcCYpRT216.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/eegXMHCYvEc8dFInKtrGlElfwjs.jpg",
+    videoUrl: "9334",
+    overview: "A desert warrior rises up against the evil army that is destroying his homeland. In an ancient time predating the pyramids, the evil king Memnon uses the psychic powers of his sorceress Cassandra to foretell his victories. Hired to kill the sorceress, the assassin Mathayus captures her instead — and, with unlikely allies at his side, prepares for a final showdown that will determine the fate of the free tribes.",
+    director: "Chuck Russell",
+    cast: ["Dwayne Johnson, Steven Brand, Michael Clarke Duncan, Kelly Hu, Bernard Hill, Grant Heslov, Peter Facinelli"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m269", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Rocky",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 1976,
+    rating: 8.1,
+    age: "PG",
+    duration: "2h",
+    genres: ["Drama", "Sport"],
+    poster: "https://image.tmdb.org/t/p/original/raayaQ9WTUGolsYHPWc2bGonu58.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/bacOuUnRBoAO1NjMfsAGX2EKRrS.jpg",
+    videoUrl: "1366",
+    overview: "Rocky Balboa, a small-time boxer from working-class Philadelphia, is arbitrarily chosen to take on the reigning world heavyweight champion, Apollo Creed, when the champion's scheduled opponent is injured. While training with feisty former contender Mickey Goldmill, Rocky tentatively begins a relationship with Adrian, the shy sister of his meat-packer friend Paulie — all while preparing for the one-in-a-million shot that could define his life.",
+    director: "John G. Avildsen",
+    cast: ["Sylvester Stallone, Talia Shire, Burt Young, Carl Weathers, Burgess Meredith"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m270", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Rocky II",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 1979,
+    rating: 7.3,
+    age: "PG",
+    duration: "1h 59m",
+    genres: ["Drama", "Sport"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nMaiiu0CzT77U4JZkUYV7KqdAjK.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/5aZ2PDpNhjTdk77uSAIDzrpsAUr.jpg",
+    videoUrl: "1367",
+    overview: "Although Rocky Balboa lost his high-profile bout with world champion Apollo Creed, his Cinderella story caught the national sports media's attention, and he now has a shot at capitalizing on his sudden fame. Meanwhile, Creed is still smarting from nearly losing to an unknown fighter and arrogantly goads Rocky into a rematch. As Rocky settles into married life with Adrian but struggles to build a future outside the ring, the two rivals find themselves on a collision course for a brutal, unforgettable climactic battle.",
+    director: "Sylvester Stallone",
+    cast: ["Sylvester Stallone, Talia Shire, Burt Young, Carl Weathers, Burgess Meredith"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m271", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Rocky III",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 1982,
+    rating: 6.9,
+    age: "PG",
+    duration: "1h 39m",
+    genres: ["Drama", "Sport"],
+    poster: "https://image.tmdb.org/t/p/original/sqap3JULHZXIGISqeBlgt0rQPFs.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/ljOHSIyTbxdkQFjcJyWKfGm2i2r.jpg",
+    videoUrl: "1371",
+    overview: "Rocky Balboa is at the peak of his success, defending his title through ten consecutive victories and becoming a global superstar surrounded by endorsements and fame. That illusion shatters when Clubber Lang, a ruthless and arrogant new challenger, humiliates him and exposes the cost of his comfortable lifestyle. Having lost the hunger and edge that once made him unstoppable, Rocky joins forces with former rival Apollo Creed to reclaim his fighting spirit before their climactic rematch.",
+    director: "Sylvester Stallone",
+    cast: ["Sylvester Stallone, Talia Shire, Burt Young, Carl Weathers, Burgess Meredith, Mr. T, Hulk Hogan"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m272", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Rocky IV",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 1985,
+    rating: 6.9,
+    age: "PG",
+    duration: "1h 31m",
+    genres: ["Drama", "Sport"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/2MHUit4H6OK5adcOjnCN6suCKOl.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/7Xvz1fjhaGh6AF33R76dwoDrfkH.jpg",
+    videoUrl: "1374",
+    overview: "Rocky Balboa proudly holds the world heavyweight boxing championship, but a new challenger has stepped forward — Ivan Drago, a towering fighter backed by the Soviet Union. When Rocky's close friend and former rival Apollo Creed faces Drago in an exhibition match that ends in tragedy, Rocky is driven by guilt and honor to travel to the Soviet Union and confront Drago on his own turf, training in isolation to avenge his friend and defend his country.",
+    director: "Sylvester Stallone",
+    cast: ["Sylvester Stallone, Dolph Lundgren, Talia Shire, Burt Young, Carl Weathers, Brigitte Nielsen, Tony Burton"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m273", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Rocky V",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 1990,
+    rating: 5.4,
+    age: "PG",
+    duration: "1h 44m",
+    genres: ["Drama", "Sport"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/tevHaVxtrMTaUi8f3YjLWYSSY8A.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/zG8sOSReFKlBVz7k8hOXPjwoPxH.jpg",
+    videoUrl: "1375",
+    overview: "Reluctantly retired from boxing due to brain damage sustained in the ring, Rocky Balboa returns home to South Philadelphia only to discover he's lost his fortune due to a corrupt accountant's mismanagement. Stripped of fame and purpose, Rocky takes charge of his late trainer's gym and trains a hungry young protégé, Tommy Gunn — all while struggling to reconnect with his increasingly resentful son.",
+    director: "John G. Avildsen",
+    cast: ["Sylvester Stallone, Talia Shire, Burt Young, Sage Stallone, Tommy Morrison, Burgess Meredith, Richard Gant"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+
+
+
+
+
 ]
 // ==========================================
 // 1b. HERO BANNER SETTINGS  (EDIT THIS SECTION)
