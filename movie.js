@@ -7248,7 +7248,312 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-
+{
+    id: "m301", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Dune: Part One ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2021,
+    rating: 8.0,
+    age: "PG-13",
+    duration: "2h 35m",
+    genres: ["Action","Adventure","Drama","Science Fiction"],
+    poster: "https://www.themoviedb.org/t/p/w1280/v1tRXZ4JtD2Iv6fjkPvT4GiwslV.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/aHFgoGZ2VQNY45nJWGcBvszaMXz.jpg",
+    videoUrl: "438631",
+    overview: "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence, only those who can conquer their own fear will survive.",
+    director: "Denis Villeneuve",
+    cast: ["Timothée Chalamet, Rebecca Ferguson, Oscar Isaac, Josh Brolin, Stellan Skarsgård, Dave Bautista, Zendaya, Javier Bardem, Jason Momoa, Charlotte Rampling"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m302", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Dune: Part Two ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2024,
+    rating: 8.4,
+    age: "PG-13",
+    duration: "2h 46m",
+    genres: ["Action","Adventure","Drama","Science Fiction"],
+    poster: "https://www.themoviedb.org/t/p/w1280/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/87IVlclAfWL6mdicU1DDuxdwXwe.jpg",
+    videoUrl: "693134",
+    overview: "Follow the mythic journey of Paul Atreides as he unites with Chani and the Fremen while on a path of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, Paul endeavors to prevent a terrible future only he can foresee.",
+    director: "Denis Villeneuve",
+    cast: ["Timothée Chalamet, Zendaya, Rebecca Ferguson, Josh Brolin, Austin Butler, Florence Pugh, Dave Bautista, Christopher Walken, Léa Seydoux, Stellan Skarsgård, Javier Bardem"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m303", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Evil Dead Rise ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2023,
+    rating: 6.5,
+    age: "R",
+    duration: "1h 36m",
+    genres: ["Horror","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w1280/5ik4ATKmNtmJU6AYD0bLm56BCVM.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/sFkXFSXoSr7qVeiy1VlAUq4qhiX.jpg",
+    videoUrl: "713704",
+    overview: "A reunion between two estranged sisters gets cut short by the rise of flesh-possessing demons, thrusting them into a primal battle for survival as they face the most nightmarish version of family imaginable.",
+    director: "Lee Cronin",
+    cast: ["Lily Sullivan, Alyssa Sutherland, Morgan Davies, Gabrielle Echols, Nell Fisher"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m304", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Blade Runner 2049 ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2017,
+    rating: 8.0,
+    age: "R",
+    duration: "2h 44m",
+    genres: ["Action","Drama","Mystery","Science Fiction"],
+    poster: "https://www.themoviedb.org/t/p/w1280/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/ey7N0Sm3FiRm12DC58T8JkSxMBx.jpg",
+    videoUrl: "335984",
+    overview: "Thirty years after the events of Blade Runner (1982), a new Blade Runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard, a former LAPD Blade Runner, who has been missing for thirty years.",
+    director: "Denis Villeneuve",
+    cast: ["Ryan Gosling, Harrison Ford, Ana de Armas, Sylvia Hoeks, Robin Wright, Mackenzie Davis, Dave Bautista, Jared Leto"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m305", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "A Minecraft Movie",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2025,
+    rating: 5.6,
+    age: "PG",
+    duration: "1h 41m",
+    genres: ["Action","Adventure","Comedy","Fantasy"],
+    poster: "https://www.themoviedb.org/t/p/w1280/yFHHfHcUgGAxziP1C3lLt0q2T4s.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/f4WuWdnkXPtThh0P7PRyG0l62V1.jpg",
+    videoUrl: "950387",
+    overview: "Four misfits find themselves struggling with ordinary problems when they are suddenly pulled through a mysterious portal into the Overworld: a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a magical quest with an unexpected, expert crafter, Steve.",
+    director: "Jared Hess",
+    cast: ["Jason Momoa, Jack Black, Emma Myers, Danielle Brooks, Sebastian Eugene Hansen, Jennifer Coolidge"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m306", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Kraven the Hunter",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2024,
+    rating: 5.5,
+    age: "R",
+    duration: "2h 7m",
+    genres: ["Action","Adventure","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w1280/1GvBhRxY6MELDfxFrete6BNhBB5.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/rDa3SfEijeRNCWtHQZCwfbGxYvR.jpg",
+    videoUrl: "539972",
+    overview: "Kraven Kravinoff's complex relationship with his ruthless gangster father, Nikolai, starts him down a path of vengeance with brutal consequences, motivating him to become not only the greatest hunter in the world, but also one of its most feared.",
+    director: "J.C. Chandor",
+    cast: ["Aaron Taylor-Johnson, Russell Crowe, Ariana DeBose, Fred Hechinger, Alessandro Nivola, Christopher Abbott"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m307", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "White Chicks",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2004,
+    rating: 5.9,
+    age: "PG-13",
+    duration: "1h 49m",
+    genres: ["Comedy","Crime"],
+    poster: "https://www.themoviedb.org/t/p/w1280/aHTUpo45qy9QYIOnVITGGqLoVcA.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/lg8grww4YuOrGYsuVeuo0VuNNSU.jpg",
+    videoUrl: "12153",
+    overview: "Two disgraced FBI agent brothers, Marcus and Kevin Copeland, accidentally foil a drug bust. As punishment, they're forced to escort a pair of socialite heiresses to the Hamptons, where they're being used as bait for a kidnapping plot. When the girls refuse to go after realizing the plan, Marcus and Kevin are left with no options — deciding to pose as the sisters themselves, transforming from Black FBI agents into wealthy white women.",
+    director: "Keenen Ivory Wayans",
+    cast: ["Shawn Wayans, Marlon Wayans, Jaime King, Frankie Faison, Lochlyn Munro, John Heard, Terry Crews"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m308", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Rush Hour",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 1998,
+    rating: 7.1,
+    age: "PG-13",
+    duration: "1h 38m",
+    genres: ["Action","Crime","Comedy"],
+    poster: "https://www.themoviedb.org/t/p/w1280/nwPhAsfnb7f46bZkWLG7IRP5HXr.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/2kSgmFpvHaktkNFwf9a5zyFRtLs.jpg",
+    videoUrl: "2109",
+    overview: "A loyal and dedicated Hong Kong Inspector teams up with a reckless and loudmouthed LAPD detective to rescue the Chinese Consul's kidnapped daughter, while trying to arrest a dangerous crime lord along the way.",
+    director: "Brett Ratner",
+    cast: ["Jackie Chan, Chris Tucker, Tom Wilkinson, Ken Leung, Elizabeth Peña"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m309", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Rush Hour 2",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2001,
+    rating: 6.7,
+    age: "PG-13",
+    duration: "1h 30m",
+    genres: ["Action","Crime","Comedy"],
+    poster: "https://www.themoviedb.org/t/p/w1280/aBQf2vMiCINeVC9v6BGVYKXurTh.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/mo1MXdcLSx6EMaGrpjjL8qOSEHE.jpg",
+    videoUrl: "5175",
+    overview: "It's vacation time for Carter as he finds himself alongside Lee in Hong Kong wishing for more excitement. While Carter wants to party and meet the ladies, Lee is out to track down a Triad gang lord — and the two soon become embroiled in a dangerous counterfeit money scam involving murdered U.S. customs agents.",
+    director: "Brett Ratner",
+    cast: ["Jackie Chan, Chris Tucker, John Lone, Ziyi Zhang, Roselyn Sánchez, Alan King"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m310", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Rush Hour 3",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2007,
+    rating: 6.3,
+    age: "PG-13",
+    duration: "1h 30m",
+    genres: ["Action","Crime","Comedy"],
+    poster: "https://www.themoviedb.org/t/p/w1280/mp9CzKxLa2i7yblMXUrzVfGqsCo.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/lNCyknHWbKyuDjZnGKja1tGxpzm.jpg",
+    videoUrl: "5174",
+    overview: "Almost three years after their last adventure, Carter is now working as a Los Angeles traffic officer, while his friend and ace Hong Kong Police inspector, Lee, escorts the Chinese Ambassador Han to the World Criminal Court to disclose crucial information about the Triads. After a botched assassination attempt, the mismatched duo finds themselves in picturesque Paris, struggling to retrieve a precious list of names as the murderous crime syndicate's henchmen try to stop them.",
+    director: "Brett Ratner",
+    cast: ["Jackie Chan, Chris Tucker, Hiroyuki Sanada, Max von Sydow, Youki Kudoh, Tzi Ma"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m311", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "A Working Man",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2025,
+    rating: 5.7,
+    age: "R",
+    duration: "1h 56m",
+    genres: ["Action","Crime","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w1280/6FRFIogh3zFnVWn7Z6zcYnIbRcX.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/AjTclV0hwyIWcy4DTL3iido9bnR.jpg",
+    videoUrl: "1197306",
+    overview: "Levon Cade left behind a decorated military career in the black ops to live a simple life working construction. But when his boss's daughter, who is like family to him, is taken by human traffickers, his search to bring her home uncovers a world of corruption far greater than he ever could have imagined.",
+    director: "David Ayer",
+    cast: ["Jason Statham, Jason Flemyng, Michael Peña, David Harbour, Merab Ninidze, Maximilian Osinski"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m312", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "San Andreas",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2015,
+    rating: 6.1,
+    age: "PG-13",
+    duration: "1h 54m",
+    genres: ["Action","Adventure","Thriller"],
+    poster: "https://image.tmdb.org/t/p/original/vH82hkfbpCJaw4ibSYOTLY0EP6k.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/8tSENimkgE7ecV1Ghee4bogM3CO.jpg",
+    videoUrl: "254128",
+    overview: "In the aftermath of a massive earthquake in California, a rescue-chopper pilot makes a dangerous journey across the state in order to rescue his estranged daughter.",
+    director: "Brad Peyton",
+    cast: ["Dwayne Johnson, Carla Gugino, Alexandra Daddario, Ioan Gruffudd, Archie Panjabi, Paul Giamatti"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m313", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "The Pursuit of Happyness",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2006,
+    rating: 8.0,
+    age: "PG-13",
+    duration: "1h 57m",
+    genres: ["Biography","Drama"],
+    poster: "https://www.themoviedb.org/t/p/w1280/lBYOKAMcxIvuk9s9hMuecB9dPBV.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/nKOQiWjhv6LXXSR3PiIab3LrKtU.jpg",
+    videoUrl: "1402",
+    overview: "A struggling salesman takes custody of his son as he's poised to begin a life-changing professional career. Based on the true story of Chris Gardner's nearly year-long struggle with homelessness in San Francisco, the film follows his relentless determination to build a better life for himself and his son against overwhelming odds.",
+    director: "Gabriele Muccino",
+    cast: ["Will Smith, Thandiwe Newton, Jaden Smith, Brian Howe"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m314", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Babygirl",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2024,
+    rating: 5.7,
+    age: "R",
+    duration: "1h 54m",
+    genres: ["Drama","Romance","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w1280/A8HbTd0FemZyFCh5qvJFpHGiwF8.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/8Y1LWAbNUFe0w06Q7UCQokZxl2E.jpg",
+    videoUrl: "1097549",
+    overview: "A high-powered CEO puts her career and family on the line when she begins a torrid affair with her much-younger intern, upending the usual dynamics of control in both her professional and personal life.",
+    director: "Halina Reijn",
+    cast: ["Nicole Kidman, Harris Dickinson, Antonio Banderas, Sophie Wilde"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m315", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Taken ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2008,
+    rating: 7.7,
+    age: "PG-13",
+    duration: "1h 30m",
+    genres: ["Action","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w1280/ognkaUSNgJe1a2pjB4UNdzEo5jT.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/auLFB4G02tW4SxBqTDeybV0lXVl.jpg",
+    videoUrl: "8681",
+    overview: "When his estranged daughter Kim is kidnapped in Paris, a former CIA operative and special agent, Bryan Mills, sets out to find her at any cost. Relying on the very particular set of skills acquired over a long career, he races against the clock to track down the ruthless human traffickers before it's too late.",
+    director: "Pierre Morel",
+    cast: ["Liam Neeson, Maggie Grace, Famke Janssen, Leland Orser, Katie Cassidy, Holly Valance"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m316", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Taken 2 ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2012,
+    rating: 6.2,
+    age: "PG-13",
+    duration: "1h 30m",
+    genres: ["Action","Crime","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w1280/yzAlcuJhpnxRPjaj7AHBRbNPQCJ.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/wiHwmNKPA7J9GgqCKY2z243HE3S.jpg",
+    videoUrl: "82675",
+    overview: "Two years after using his particular set of skills to rescue his daughter, retired CIA operative Bryan Mills is on a family trip to Istanbul when he, his ex-wife, and his daughter find themselves targeted by the vengeful father of one of the kidnappers Mills killed while saving Kim — turning the hunter into the hunted.",
+    director: "Olivier Megaton",
+    cast: ["Liam Neeson, Maggie Grace, Famke Janssen, Rade Šerbedžija, Leland Orser, Luke Grimes"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m317", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Taken 3 ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2014,
+    rating: 6.0,
+    age: "PG-13",
+    duration: "1h 48m",
+    genres: ["Action","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w1280/vzvMXMypMq7ieDofKThsxjHj9hn.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/Ivj0wsH0RU2IEGc8LdvCr97WL1.jpg",
+    videoUrl: "260346",
+    overview: "Mills is falsely accused of murder, forcing him to use his particular set of skills to track down the real killer while evading a determined police inspector who's convinced of his guilt. As Bryan races to clear his name and protect his family, he uncovers a conspiracy far more personal and dangerous than he ever imagined.",
+    director: "Olivier Megaton",
+    cast: ["Liam Neeson, Forest Whitaker, Maggie Grace, Famke Janssen, Dougray Scott"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
 
 
 ]
