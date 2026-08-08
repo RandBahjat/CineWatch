@@ -39,7 +39,7 @@ const MOVIES = [
     poster:
       "https://www.themoviedb.org/t/p/w600_and_h900_face/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
     backdrop:
-      "spider-man-brand-3840x2160-26473.jpg",
+      "spiderman-at-the-absolute-peak-r2-3840x2160.jpg",
     videoUrl:
       "969681",
     overview:
