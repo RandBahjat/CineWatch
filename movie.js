@@ -7554,6 +7554,60 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
+{
+    id: "m318", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "War of the Worlds ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2005,
+    rating: 6.6,
+    age: "PG-13",
+    duration: "1h 57m",
+    genres: ["Action","Adventure","Science Fiction","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w1280/6Biy7R9LfumYshur3YKhpj56MpB.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/nH6hPhJq3EEv9CnBZgXU3IQnpJo.jpg",
+    videoUrl: "74",
+    overview: "Ray Ferrier is a divorced dockworker and less-than-perfect father. Soon after his ex-wife and her new husband drop off his teenage son and young daughter for a rare weekend visit, a strange and violent storm sweeps through — heralding the arrival of massive alien tripod war machines that begin obliterating everything in their path. Ray must fight to keep his fractured family alive as an all-out invasion threatens the future of humanity.",
+    director: "Steven Spielberg",
+    cast: ["Tom Cruise, Dakota Fanning, Miranda Otto, Tim Robbins, Justin Chatwin"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m319", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "The Mask ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 1994,
+    rating: 7.0,
+    age: "PG-13",
+    duration: "1h 41m",
+    genres: ["Comedy","Fantasy","Crime"],
+    poster: "https://www.themoviedb.org/t/p/w1280/jPC2eYub74zwf2tPGVtzSlBW6Oy.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/7ZvfdaFhqALOAb7pd4YNpucikMK.jpg",
+    videoUrl: "854",
+    overview: "Stanley Ipkiss, an insecure bank clerk who has lost his zest for life, is an incredibly nice man — too nice for his own good, and a pushover when it comes to confrontation. After stumbling upon an ancient, magical mask depicting the Norse god of mischief, he's transformed into a confident, cartoon-like wild man who upsets his ordinary life and draws the attention of the local mob boss.",
+    director: "Chuck Russell",
+    cast: ["Jim Carrey, Cameron Diaz, Peter Riegert, Peter Greene, Amy Yasbeck, Richard Jeni"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m320", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Madame Web ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2024,
+    rating: 4.1,
+    age: "PG-13",
+    duration: "1h 56m",
+    genres: ["Action","Science Fiction","Adventure"],
+    poster: "https://www.themoviedb.org/t/p/w1280/rULWuutDcN5NvtiZi4FRPzRYWSh.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/oU5npfTRR8WiwXnxdUSLXztOzvG.jpg",
+    videoUrl: "634492",
+    overview: "In a switch from the typical genre, Madame Web tells the standalone origin story of one of Marvel publishing's most enigmatic heroines. The suspense-driven thriller stars Cassandra Webb as a paramedic in Manhattan who develops the power to see the future — and realizes she can use that insight to change it. Forced to confront revelations about her past, she forges a relationship with three young women bound for powerful destinies, if they can all survive a deadly present.",
+    director: "S.J. Clarkson",
+    cast: ["Dakota Johnson, Sydney Sweeney, Isabela Merced, Celeste O'Connor, Tahar Rahim, Mike Epps, Emma Roberts, Adam Scott"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
 
 
 ]
