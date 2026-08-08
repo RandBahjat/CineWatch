@@ -6636,7 +6636,24 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-
+{
+    id: "m267", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "The Maze Runner",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2014,
+    rating: 6.8,
+    age: "PG-13",
+    duration: "1h 53m ",
+    genres: ["Action", "Mystery","Science Fiction","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ode14q7WtDugFDp78fo9lCsmay9.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/eTlcNXGv32zkVI7ZDHhfeaKHXKQ.jpg",
+    videoUrl: "198663",
+    overview: "A teen with no memory of the outside world awakens in a gigantic maze guarded by deadly creatures, and plots a daring escape. Thrown into a walled enclosure known as the Glade alongside a group of other boys, Thomas must adapt to their rules and society while uncovering clues that may lead to the truth behind their confinement — and a way out of the ever-changing maze that surrounds them.",
+    director: "Wes Ball",
+    cast: ["Dylan O'Brien, Kaya Scodelario, Thomas Brodie-Sangster, Will Poulter, Ki Hong Lee, Aml Ameen, Patricia Clarkson, Blake Cooper"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
 ]
 // ==========================================
 // 1b. HERO BANNER SETTINGS  (EDIT THIS SECTION)
