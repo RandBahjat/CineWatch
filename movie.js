@@ -6366,6 +6366,45 @@ const MOVIES = [
         
         ],
         },
+{
+    id: "m252", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Jumanji: Welcome to the Jungle ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2017,
+    rating: 6.9,
+    age: "PG-13",
+    duration: "1h 59m ",
+    genres: ["Action", "Adventure", "Comedy","Fantasy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/pSgXKPU5h6U89ipF7HBYajvYt7j.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/rHf6t1BfiaVD18gF2oTZO9kw2pS.jpg",
+    videoUrl: "353486",
+    overview: "Four teenagers in detention discover an old video game console with a game they've never heard of. When they decide to play, they're immediately sucked into the jungle world of Jumanji, taking on the bodies of their adult avatars. To escape and return to the real world, they must complete the most dangerous adventure of their lives — together.",
+    director: "Jake Kasdan",
+    cast: ["Dwayne Johnson, Jack Black, Kevin Hart, Karen Gillan, Nick Jonas, Bobby Cannavale, Rhys Darby, Alex Wolff, Ser'Darius Blain, Madison Iseman, Morgan Turner, Colin Hanks"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m253", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Jumanji: The Next Level ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2019,
+    rating: 6.6,
+    age: "PG-13",
+    duration: "2h 3m ",
+    genres: ["Action", "Adventure", "Comedy","Fantasy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/jyw8VKYEiM1UDzPB7NsisUgBeJ8.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/qgch2rFskIxDMgwrD5lWTaB4nBl.jpg",
+    videoUrl: "512200",
+    overview: "As the gang returns to Jumanji to rescue one of their own, they discover that nothing is as they expect. The game has changed, and the players must brave parts unknown — from arid deserts to snowy mountains — to escape the world's most dangerous game.",
+    director: "Jake Kasdan",
+    cast: ["Dwayne Johnson, Jack Black, Kevin Hart, Karen Gillan, Nick Jonas, Bobby Cannavale, Rhys Darby, Alex Wolff, Ser'Darius Blain, Madison Iseman, Morgan Turner, Colin Hanks"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+
+
+
 ]
 // ==========================================
 // 1b. HERO BANNER SETTINGS  (EDIT THIS SECTION)
