@@ -6492,7 +6492,150 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-
+{
+    id: "m259", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Joker ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2019,
+    rating: 8.3,
+    age: "R",
+    duration: "2h 2m ",
+    genres: ["Crime", "Drama", "Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/gZWl93sf8AxavYpVT1Un6EF3oCj.jpg",
+    videoUrl: "475557",
+    overview: "In Gotham City, mentally troubled comedian Arthur Fleck embarks on a downward spiral of social revolution and bloody crime. A party clown and failed stand-up comedian leading an impoverished life with his ailing mother, Arthur is shunned by society and branded a freak — pushing him to embrace a life of chaos and transform into his infamous alter-ego: the Joker.",
+    director: "Todd Phillips",
+    cast: ["Joaquin Phoenix, Robert De Niro, Zazie Beetz, Frances Conroy, Brett Cullen, Bill Camp, Glenn Fleshler"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m260", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Joker: Folie à Deux ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2024,
+    rating: 5.2,
+    age: "R",
+    duration: "2h 18m ",
+    genres: ["Crime", "Drama", "Thriller","Musical"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/if8QiqCI7WAGImKcJCfzp6VTyKA.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/uGmYqxh8flqkudioyFtD7IJSHxK.jpg",
+    videoUrl: "889737",
+    overview: "While institutionalized at Arkham State Hospital, Arthur Fleck forms a volatile connection with Harleen Lee Quinzel. Their relationship evolves into a shared delusion that unfolds alongside Arthur's trial for the crimes he committed as the Joker — blurring the line between love, madness, and performance.",
+    director: "Todd Phillips",
+    cast: ["Joaquin Phoenix, Lady Gaga, Brendan Gleeson, Catherine Keener, Zazie Beetz, Harry Lawtey"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m261", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "The Truman Show ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 1998,
+    rating: 8.2,
+    age: "PG",
+    duration: "1h 43m ",
+    genres: ["Comedy", "Drama", "Science Fiction"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vuza0WqY239yBXOadKlGwJsZJFE.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/kjWIp6COK4MKF0KSffzUD8l9Kuo.jpg",
+    videoUrl: "37165",
+    overview: "An insurance salesman discovers his entire life is actually a TV show. Truman Burbank has no idea that everything in his world — his family, friends, and hometown — is part of a massive, elaborately constructed television set, with his every move broadcast live to billions around the globe. As he begins to notice cracks in the illusion, Truman must decide whether to uncover the truth and break free.",
+    director: "Peter Weir",
+    cast: ["Jim Carrey, Laura Linney, Noah Emmerich, Natascha McElhone, Holland Taylor, Ed Harris"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m262", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "The Mummy ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 1999,
+    rating: 7.1,
+    age: "PG",
+    duration: "2h 4m ",
+    genres: ["Action", "Adventure", "Fantasy","Horror"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/yhIsVvcUm7QxzLfT6HW2wLf5ajY.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/k6UGKIF7EWHUGvXRVWjlp4YzKUB.jpg",
+    videoUrl: "564",
+    overview: "In the Sahara Desert, adventurer Rick O'Connell teams up with Egyptologist Evelyn Carnahan and her cowardly brother Jonathan on an expedition to Hamunaptra, the legendary City of the Dead. There, they accidentally awaken Imhotep, a cursed high priest condemned to an eternity as one of the living dead 3,000 years ago — unleashing a vengeful, ancient terror upon the modern world.",
+    director: "Stephen Sommers",
+    cast: ["Brendan Fraser, Rachel Weisz, John Hannah, Arnold Vosloo, Jonathan Hyde, Kevin J. O'Connor"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m263", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Skyscraper ",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2019,
+    rating: 5.8,
+    age: "PG-13",
+    duration: "1h 42m ",
+    genres: ["Action", "Adventure", "Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/52ml62vClzrlqvXZq2FEW6UF6c1.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/oMKFQmoVgB69fyXfSMu0lGlHJP2.jpg",
+    videoUrl: "447200",
+    overview: "A security expert must infiltrate a burning skyscraper, 225 stories above ground, when his family is trapped inside by criminals. FBI Hostage Rescue Team veteran Will Sawyer, now assessing security for the world's tallest and safest building, finds it suddenly ablaze and himself framed for the fire. On the run and wanted for a crime he didn't commit, Will must clear his name and rescue his family — trapped above the fire line.",
+    director: "Rawson Marshall Thurber",
+    cast: ["Dwayne Johnson, Neve Campbell, Chin Han, Roland Møller, Noah Taylor, Byron Mann, Pablo Schreiber, Hannah Quinlivan"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m264", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Black Adam",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2022,
+    rating: 6.1,
+    age: "PG-13",
+    duration: "2h 5m ",
+    genres: ["Action", "Adventure", "Fantasy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rCtreCr4xiYEWDQTebybolIh6Xe.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/5sHE4jKJtA9fCkaMeaVUy6KHc2W.jpg",
+    videoUrl: "436270",
+    overview: "Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods — and imprisoned just as quickly — Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world. As his ancient reemergence collides with the heroes of the Justice Society, both sides must decide whether he's a savior or the deadliest threat the world has ever seen.",
+    director: "Jaume Collet-Serra",
+    cast: ["Dwayne Johnson, Aldis Hodge, Noah Centineo, Sarah Shahi, Quintessa Swindell, Marwan Kenzari, Pierce Brosnan, Viola Davis"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m265", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Red Notice",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2021,
+    rating: 6.3,
+    age: "PG-13",
+    duration: "1h 58m ",
+    genres: ["Action", "Comedy", "Thriller","Crime"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lAXONuqg41NwUMuzMiFvicDET9Y.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/dK12GIdhGP6NPGFssK2Fh265jyr.jpg",
+    videoUrl: "512195",
+    overview: "An Interpol agent successfully tracks down the world's most wanted art thief with help from a rival thief. But nothing is as it seems, as a daring heist brings together the FBI's top profiler and two rival criminals — and a series of double-crosses ensues in this globe-trotting hunt for a legendary lost treasure.",
+    director: "Rawson Marshall Thurber",
+    cast: ["Dwayne Johnson, Ryan Reynolds, Gal Gadot, Ritu Arya, Chris Diamantopoulos"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m266", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Baywatch",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2017,
+    rating: 5.5,
+    age: "R",
+    duration: "1h 56m ",
+    genres: ["Action", "Comedy","Crime"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6HE4xd8zloDqmjMZuhUCCw2UcY1.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/t6TL7V9IsT4Ktx6YO8b1UYj3agd.jpg",
+    videoUrl: "339846",
+    overview: "Devoted lifeguard Mitch Buchannon butts heads with a brash new recruit, as they uncover a local criminal plot that threatens the future of the Bay. Together, Mitch and his elite team of beach rescuers must take down a drug lord before he destroys everything they've sworn to protect.",
+    director: "Seth Gordon",
+    cast: ["Dwayne Johnson, Zac Efron, Priyanka Chopra Jonas, Alexandra Daddario, Kelly Rohrbach, Ilfenesh Hadera, Jon Bass, David Hasselhoff"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
 
 ]
 // ==========================================
