@@ -7032,6 +7032,114 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
+{
+    id: "m289", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Road House",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2024,
+    rating: 6.2,
+    age: "R",
+    duration: "2h 1m",
+    genres: ["Action","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fDEdtS4P0gJsxHDIt8dG8TR5dx1.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/39LxWqvQCsbAe0Cm2B7dtBe3Rd4.jpg",
+    videoUrl: "359410",
+    overview: "Troubled former UFC fighter Elwood Dalton makes a living scamming other fighters on the underground circuit. When Frankie, the owner of an unruly roadhouse in the Florida Keys, offers him a job as head bouncer, Dalton reluctantly accepts — only to discover this seemingly laid-back paradise is hiding something far more dangerous beneath the surface.",
+    director: "Doug Liman",
+    cast: ["Jake Gyllenhaal, Daniela Melchior, Billy Magnussen, Conor McGregor, Jessica Williams, Joaquim de Almeida, JD Pardo"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m290", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Raiders of the Lost Ark",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 1981,
+    rating: 8.4,
+    age: "PG",
+    duration: "1h 55m",
+    genres: ["Action","Adventure"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/oxK0OlJ5brTZMLQu5AD1oLDgwt3.jpg",
+    videoUrl: "85",
+    overview: "It is 1936. Dr. Indiana Jones — the tweed-suited professor who just happens to be a celebrated archaeologist — is recruited by the U.S. government to locate the legendary Ark of the Covenant, said to make any army invincible, before it falls into Nazi hands. The globetrotting hunt for the ancient relic pits him against the entire Nazi regime in a race against time to save the world from unimaginable power.",
+    director: "Steven Spielberg",
+    cast: ["Harrison Ford, Karen Allen, Paul Freeman, Ronald Lacey, John Rhys-Davies, Denholm Elliott"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m291", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Indiana Jones and the Temple of Doom",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 1984,
+    rating: 7.5,
+    age: "PG",
+    duration: "1h 58m",
+    genres: ["Action","Adventure"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gpdVNUaa4LhRMLfJOPj1AZdhAZ3.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/a4cX1maHQn5JFQMfYGR72cK8bfH.jpg",
+    videoUrl: "87",
+    overview: "In 1935, after arriving in India, Indiana Jones is asked by a desperate village to help reclaim a sacred stone stolen from them. Agreeing to the mission, Indy — joined by singer Willie Scott and young sidekick Short Round — journeys to Pankot Palace and stumbles upon a secret Thuggee cult, led by the sinister Mola Ram, plotting a terrible plan in the catacombs of an ancient temple.",
+    director: "Steven Spielberg",
+    cast: ["Harrison Ford, Kate Capshaw, Ke Huy Quan, Amrish Puri, Roshan Seth, Philip Stone"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m292", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Indiana Jones and the Last Crusade",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 1989,
+    rating: 8.2,
+    age: "PG-13",
+    duration: "2h 7m",
+    genres: ["Action","Adventure"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/sizg1AU8f8JDZX4QIgE4pjUMBvx.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/267Mdb5i1AXuVN64DhVEOUPmM25.jpg",
+    videoUrl: "89",
+    overview: "When Dr. Henry Jones Sr. suddenly goes missing while pursuing the Holy Grail, eminent archaeologist Indiana Jones must follow in his estranged father's footsteps to find him. Tracking clues in his father's notebook, Indy arrives in Venice, where he enlists the help of a beautiful academic, Dr. Elsa Schneider, along with old allies Marcus Brody and Sallah — racing against the Nazis to stop them from seizing the power of eternal life.",
+    director: "Steven Spielberg",
+    cast: ["Harrison Ford, Sean Connery, Denholm Elliott, Alison Doody, John Rhys-Davies, Julian Glover, River Phoenix"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m293", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Indiana Jones and the Kingdom of the Crystal Skull",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2008,
+    rating: 6.2,
+    age: "PG-13",
+    duration: "2h 2m",
+    genres: ["Action","Adventure"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/56As6XEM1flWvprX4LgkPl8ii4K.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/irBUdQZ25e5kditWYom58cICTTT.jpg",
+    videoUrl: "217",
+    overview: "In 1957, famed archaeologist and adventurer Dr. Henry Indiana Jones is called back into action, becoming entangled in a Soviet plot to uncover the secret behind mysterious artifacts known as the Crystal Skulls. Led by the brilliant and psychically gifted Irina Spalko, the Soviets pursue Jones and a young greaser named Mutt Williams to Peru, where Indy reunites with his long-lost love Marion Ravenwood and confronts dangers spanning the jungle, Russia, and the supernatural.",
+    director: "Steven Spielberg",
+    cast: ["Harrison Ford, Cate Blanchett, Karen Allen, Shia LaBeouf, Ray Winstone, John Hurt, Jim Broadbent"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+{
+    id: "m294", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "Indiana Jones and the Dial of Destiny",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2023,
+    rating: 6.5,
+    age: "PG-13",
+    duration: "2h 34m",
+    genres: ["Action","Adventure"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/Af4bXE63pVsb2FtbW8uYIyPBadD.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/ymZDxJle67EBFTEiBp1WzRuXjZc.jpg",
+    videoUrl: "355977",
+    overview: "Finding himself in a new era, and approaching retirement, Indy wrestles with fitting into a world that seems to have outgrown him. But as the tentacles of an all-too-familiar evil return in the form of an old rival, Indy must don his hat and pick up his whip once more to make sure a legendary artifact capable of changing the course of history doesn't fall into the wrong hands.",
+    director: "James Mangold",
+    cast: ["Harrison Ford, Phoebe Waller-Bridge, Antonio Banderas, John Rhys-Davies, Mads Mikkelsen, Toby Jones, Boyd Holbrook, Karen Allen"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
 
 
 
