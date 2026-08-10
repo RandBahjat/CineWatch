@@ -8585,7 +8585,7 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/rZTn8zwb6fUuN0eRTEV3dodvYx2.jpg",
     videoUrl: "",
     overview: "A live-action superhero series set in an alternate universe within the Sony's Spider-Man Universe (SSU) franchise. The show follows Ben Reilly, a grizzled, down-on-his-luck private investigator grappling with his past life as 1930s New York City's one and only superhero, the Spider. When an exceptional case crosses his desk, the aging, cynical hero is forced to step back into the shadows and become the Spider once more. The series uniquely released in both a standard color version and a stylized, gritty black-and-white version.",
-    director: "David Benioff, D.B. Weiss",
+    director: "Oren Uziel",
     cast: ["Emilia Clarke, Peter Dinklage, Kit Harington, Lena Headey, Sophie Turner, Maisie Williams, Nikolaj Coster-Waldau, Iain Glen"],
     trending: false,
     featured: false,
