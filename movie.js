@@ -224,7 +224,7 @@ const MOVIES = [
   },
   {
     id: "m8",
-    title: "Chronicles of Aethelgard",
+    title: "Evil Dead Burn",
     type: "Movie",
     year: 2024,
     rating: 4.9,
