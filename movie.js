@@ -8613,7 +8613,7 @@ const MOVIES = [
     year: 2026,
     rating: 6.4,
     age: "R",
-    duration: "1h 59m",
+    duration: "1h 50m",
     genres: ["Comedy", "Drama"],
     poster: "https://image.tmdb.org/t/p/original/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/dRoFlUbH1l51ACmx5oPCI3jfvZq.jpg",
