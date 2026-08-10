@@ -239,7 +239,7 @@ const MOVIES = [
       "1212763",
     overview:
       "The sixth installment in the legendary horror franchise, serving as a direct sequel to Evil Dead Rise. The story follows a young woman named Alice who seeks comfort from her in-laws at a secluded country home following the sudden death of her husband. However, the grieving gathering quickly devolves into a grueling family reunion from hell as members of the household are systematically possessed and transformed into bloodthirsty Deadites.",
-    director: "Peter Jackson",
+    director: "Sébastien Vaniček",
     cast: ["Richard Madden", "Dev Patel", "Cate Blanchett"],
     trending: false,
     featured: false,
