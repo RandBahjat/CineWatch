@@ -185,7 +185,6 @@ const MOVIES = [
     rating: 7.4,
     age: "R",
     duration: "1h 49m",
-    durationSec: 6480,
     genres: ["Horror", "Drama"],
     poster:
       "https://www.themoviedb.org/t/p/w1280/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
