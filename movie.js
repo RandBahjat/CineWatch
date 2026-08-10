@@ -232,7 +232,7 @@ const MOVIES = [
     duration: "1h 50m",
     genres: ["Horror", "Supernatural"],
     poster:
-      "https://images.unsplash.com/photo-1514539079130-25950c84af65?auto=format&fit=crop&w=600&q=80",
+      "https://www.themoviedb.org/t/p/w600_and_h900_face/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
     backdrop:
       "https://images.unsplash.com/photo-1514539079130-25950c84af65?auto=format&fit=crop&w=1600&q=80",
     videoUrl:
