@@ -230,7 +230,7 @@ const MOVIES = [
     rating: 6.4,
     age: "R",
     duration: "1h 50m",
-    genres: ["Horror", ""],
+    genres: ["Horror", "Supernatural"],
     poster:
       "https://images.unsplash.com/photo-1514539079130-25950c84af65?auto=format&fit=crop&w=600&q=80",
     backdrop:
