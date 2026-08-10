@@ -234,7 +234,7 @@ const MOVIES = [
     poster:
       "https://www.themoviedb.org/t/p/w600_and_h900_face/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
     backdrop:
-      "https://images.unsplash.com/photo-1514539079130-25950c84af65?auto=format&fit=crop&w=1600&q=80",
+      "https://image.tmdb.org/t/p/original/hkRv7WQYMbccuay0tBZPS8axvjd.jpg",
     videoUrl:
       "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoybacks.mp4",
     overview:
