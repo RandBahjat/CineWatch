@@ -8598,7 +8598,7 @@ const MOVIES = [
           { episode: 2, title: "Tread Lightly" },
           { episode: 3, title: "Double Cross" },
           { episode: 4, title: "A Mistake I'll Never Make Again" },
-          { episode: 5, title: "The Wolf and the Lion" },
+          { episode: 5, title: "Betrayal" },
           { episode: 6, title: "A Golden Crown" },
           { episode: 7, title: "You Win or You Die" },
           { episode: 8, title: "The Pointy End" },
