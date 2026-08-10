@@ -8606,6 +8606,30 @@ const MOVIES = [
       },
     ]
   },
+{
+    id: "m334", // Keep incrementing this number (m14, m15, m16, etc.)
+    title: "The Devil Wears Prada 2",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2026,
+    rating: 6.3,
+    age: "PG-13",
+    duration: "1h 59m",
+    genres: ["Comedy", "Drama"],
+    poster: "https://image.tmdb.org/t/p/original/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/dRoFlUbH1l51ACmx5oPCI3jfvZq.jpg",
+    videoUrl: "1314481",
+    overview: "Two decades after leaving her position as an assistant at Runway magazine, Andrea Andy Sachs has become a respected reporter — until her entire newsroom is abruptly laid off. Meanwhile, her old boss Miranda Priestly faces mounting pressure over Runway's declining relevance in a new media landscape. The two reconnect with Emily Charlton, Miranda's former assistant turned powerful luxury executive, whose funding could be the key to Runway's survival.",
+    director: "David Frankel",
+    cast: ["Meryl Streep, Anne Hathaway, Emily Blunt, Stanley Tucci, Kenneth Branagh, Simone Ashley, Justin Theroux, Lucy Liu, B.J. Novak"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+
+
+
+
+
+
 ]
 // ==========================================
 // 1b. HERO BANNER SETTINGS  (EDIT THIS SECTION)
