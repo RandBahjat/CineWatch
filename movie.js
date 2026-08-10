@@ -8599,7 +8599,7 @@ const MOVIES = [
           { episode: 3, title: "Double Cross" },
           { episode: 4, title: "A Mistake I'll Never Make Again" },
           { episode: 5, title: "Betrayal" },
-          { episode: 6, title: "A Golden Crown" },
+          { episode: 6, title: "Nightmare on a Gurney" },
           { episode: 7, title: "You Win or You Die" },
           { episode: 8, title: "The Pointy End" },
           { episode: 9, title: "Baelor" },
