@@ -8596,7 +8596,7 @@ const MOVIES = [
         episodes: [
           { episode: 1, title: "Step Into My Office" },
           { episode: 2, title: "Tread Lightly" },
-          { episode: 3, title: "Lord Snow" },
+          { episode: 3, title: "Double Cross" },
           { episode: 4, title: "Cripples, Bastards, and Broken Things" },
           { episode: 5, title: "The Wolf and the Lion" },
           { episode: 6, title: "A Golden Crown" },
