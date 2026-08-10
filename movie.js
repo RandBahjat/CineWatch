@@ -8608,7 +8608,7 @@ const MOVIES = [
   },
 {
     id: "m336", // Keep incrementing this number (m14, m15, m16, etc.)
-    title: "The Devil Wears Prada 2",
+    title: "Evil Dead",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2026,
     rating: 6.3,
