@@ -8606,7 +8606,8 @@ const MOVIES = [
           { episode: 10, title: "Fire and Blood" },
         ],
       },
-    }
+    ]
+  },
 ]
 // ==========================================
 // 1b. HERO BANNER SETTINGS  (EDIT THIS SECTION)
