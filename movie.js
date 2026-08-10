@@ -8573,10 +8573,10 @@ const MOVIES = [
     featured: false,
   },
 {
-    id: "m330",
+    id: "m335",
     title: "Spider Noir",
     type: "TV Show",
-    year: 2011,
+    year: 2026,
     rating: 9.2,
     age: "TV-MA",
     duration: "1h",
