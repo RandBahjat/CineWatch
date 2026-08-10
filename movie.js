@@ -8580,7 +8580,7 @@ const MOVIES = [
     rating: 7.7,
     age: "TV-14",
     duration: "45m",
-    genres: ["Fantasy","Drama","Action","Adventure"],
+    genres: ["Action","Crime","Mystery","Noir"],
     poster: "https://image.tmdb.org/t/p/original/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zTjMmLFn2jgsxZwHC5fbsm6HHG4.jpg",
     videoUrl: "",
