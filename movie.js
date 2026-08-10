@@ -8615,7 +8615,7 @@ const MOVIES = [
     age: "R",
     duration: "1h 50m",
     genres: ["Horror", "Supernatural"],
-    poster: "https://image.tmdb.org/t/p/original/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/dRoFlUbH1l51ACmx5oPCI3jfvZq.jpg",
     videoUrl: "1314481",
     overview: "Two decades after leaving her position as an assistant at Runway magazine, Andrea Andy Sachs has become a respected reporter — until her entire newsroom is abruptly laid off. Meanwhile, her old boss Miranda Priestly faces mounting pressure over Runway's declining relevance in a new media landscape. The two reconnect with Emily Charlton, Miranda's former assistant turned powerful luxury executive, whose funding could be the key to Runway's survival.",
