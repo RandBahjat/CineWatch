@@ -8584,7 +8584,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/cRAzL6mmdM6Q6UuQgc335UMgcfd.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rZTn8zwb6fUuN0eRTEV3dodvYx2.jpg",
     videoUrl: "",
-    overview: "Seven noble families fight for control of the mythical land of Westeros. Political and sexual intrigue is pervasive in this fantasy epic, as the Iron Throne is fiercely contested by dynasties whose ancestors ruled for centuries. Meanwhile, a forgotten race, banished to the North, thousands of years ago, returns after being dormant for millennia — as an ancient enemy beyond the Wall threatens the very existence of the Seven Kingdoms.",
+    overview: "A live-action superhero series set in an alternate universe within the Sony's Spider-Man Universe (SSU) franchise. The show follows Ben Reilly, a grizzled, down-on-his-luck private investigator grappling with his past life as 1930s New York City's one and only superhero, the Spider. When an exceptional case crosses his desk, the aging, cynical hero is forced to step back into the shadows and become the Spider once more. The series uniquely released in both a standard color version and a stylized, gritty black-and-white version.",
     director: "David Benioff, D.B. Weiss",
     cast: ["Emilia Clarke, Peter Dinklage, Kit Harington, Lena Headey, Sophie Turner, Maisie Williams, Nikolaj Coster-Waldau, Iain Glen"],
     trending: false,
