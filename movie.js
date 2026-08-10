@@ -8611,8 +8611,8 @@ const MOVIES = [
     title: "Evil Dead Burn",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2026,
-    rating: 6.3,
-    age: "PG-13",
+    rating: 6.4,
+    age: "R",
     duration: "1h 59m",
     genres: ["Comedy", "Drama"],
     poster: "https://image.tmdb.org/t/p/original/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
