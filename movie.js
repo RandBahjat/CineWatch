@@ -228,10 +228,9 @@ const MOVIES = [
     type: "Movie",
     year: 2026,
     rating: 6.4,
-    age: "",
-    duration: "2h 42m",
-    durationSec: 9720,
-    genres: ["Drama", "Action"],
+    age: "R",
+    duration: "1h 50m",
+    genres: ["Horror", ""],
     poster:
       "https://images.unsplash.com/photo-1514539079130-25950c84af65?auto=format&fit=crop&w=600&q=80",
     backdrop:
