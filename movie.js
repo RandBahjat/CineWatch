@@ -8604,24 +8604,7 @@ const MOVIES = [
       },
     ]
   },
-{
-    id: "m336", // Keep incrementing this number (m14, m15, m16, etc.)
-    title: "Evil Dead Burn",
-    type: "Movie", // Use "Movie" or "TV Show"
-    year: 2026,
-    rating: 6.4,
-    age: "R",
-    duration: "1h 50m",
-    genres: ["Horror", "Supernatural"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
-    videoUrl: "1212763",
-    overview: "The sixth installment in the legendary horror franchise, serving as a direct sequel to Evil Dead Rise. The story follows a young woman named Alice who seeks comfort from her in-laws at a secluded country home following the sudden death of her husband. However, the grieving gathering quickly devolves into a grueling family reunion from hell as members of the household are systematically possessed and transformed into bloodthirsty Deadites.",
-    director: "Sébastien Vaniček",
-    cast: ["Souheila Yacoub (as Alice), Hunter Doohan (as Joseph), Luciane Buchanan (as Thya), Tandi Wright (as Susan), Erroll Shand (as Edgar), Maude Davey (as Polly)"],
-    trending: false, // Leave false so it only shows up in the Genres tab
-    featured: false,
-  },
+
 
 
 
