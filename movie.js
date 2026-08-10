@@ -8586,7 +8586,7 @@ const MOVIES = [
     videoUrl: "",
     overview: "A live-action superhero series set in an alternate universe within the Sony's Spider-Man Universe (SSU) franchise. The show follows Ben Reilly, a grizzled, down-on-his-luck private investigator grappling with his past life as 1930s New York City's one and only superhero, the Spider. When an exceptional case crosses his desk, the aging, cynical hero is forced to step back into the shadows and become the Spider once more. The series uniquely released in both a standard color version and a stylized, gritty black-and-white version.",
     director: "Oren Uziel",
-    cast: ["Emilia Clarke, Peter Dinklage, Kit Harington, Lena Headey, Sophie Turner, Maisie Williams, Nikolaj Coster-Waldau, Iain Glen"],
+    cast: ["Nicolas Cage (as Ben Reilly / The Spider), Lamorne Morris, Li Jun Li, Karen Rodriguez, Abraham Popoola, Jack Huston, Brendan Gleeson"],
     trending: false,
     featured: false,
     cinesrcId: "1399", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
