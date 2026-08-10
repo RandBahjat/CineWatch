@@ -8572,8 +8572,41 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-
-  
+{
+    id: "m330",
+    title: "Game of Thrones",
+    type: "TV Show",
+    year: 2011,
+    rating: 9.2,
+    age: "TV-MA",
+    duration: "1h",
+    genres: ["Fantasy","Drama","Action","Adventure"],
+    poster: "https://image.tmdb.org/t/p/original/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/zTjMmLFn2jgsxZwHC5fbsm6HHG4.jpg",
+    videoUrl: "",
+    overview: "Seven noble families fight for control of the mythical land of Westeros. Political and sexual intrigue is pervasive in this fantasy epic, as the Iron Throne is fiercely contested by dynasties whose ancestors ruled for centuries. Meanwhile, a forgotten race, banished to the North, thousands of years ago, returns after being dormant for millennia — as an ancient enemy beyond the Wall threatens the very existence of the Seven Kingdoms.",
+    director: "David Benioff, D.B. Weiss",
+    cast: ["Emilia Clarke, Peter Dinklage, Kit Harington, Lena Headey, Sophie Turner, Maisie Williams, Nikolaj Coster-Waldau, Iain Glen"],
+    trending: false,
+    featured: false,
+    cinesrcId: "1399", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Winter Is Coming" },
+          { episode: 2, title: "The Kingsroad" },
+          { episode: 3, title: "Lord Snow" },
+          { episode: 4, title: "Cripples, Bastards, and Broken Things" },
+          { episode: 5, title: "The Wolf and the Lion" },
+          { episode: 6, title: "A Golden Crown" },
+          { episode: 7, title: "You Win or You Die" },
+          { episode: 8, title: "The Pointy End" },
+          { episode: 9, title: "Baelor" },
+          { episode: 10, title: "Fire and Blood" },
+        ],
+      },
+    }
 ]
 // ==========================================
 // 1b. HERO BANNER SETTINGS  (EDIT THIS SECTION)
