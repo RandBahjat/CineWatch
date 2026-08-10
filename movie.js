@@ -6295,9 +6295,9 @@ const MOVIES = [
           { episode: 8, title: "A Fistful of Brains" },
           { episode: 9, title: "For a Few Brains More" },
           { episode: 10, title: "Max's Monster" },
-            ],
-         },
-        {
+        ],
+      },
+      {
         season: 5,
         episodes: [
           { episode: 1, title: " Something Zombozo This Way Comes" },
@@ -6310,9 +6310,9 @@ const MOVIES = [
           { episode: 8, title: "The Vampire Strikes Back" },
           { episode: 9, title: "Catfight" },
           { episode: 10, title: "Collect This" },
-            ],
-         },
-          {
+        ],
+      },
+      {
         season: 6,
         episodes: [
           { episode: 1, title: "And Then There Were None" },
@@ -6325,9 +6325,9 @@ const MOVIES = [
           { episode: 8, title: "Universe Vs. Tennyson" },
           { episode: 9, title: "Weapon XI, Part 1" },
           { episode: 10, title: "Weapon XI, Part 2" },
-            ],
-         },
-        {
+        ],
+      },
+      {
         season: 7,
         episodes: [
           { episode: 1, title: "Clyde Five" },
@@ -6340,9 +6340,9 @@ const MOVIES = [
           { episode: 8, title: "Vreedlemania" },
           { episode: 9, title: "It's a Mad, Mad, Mad Ben World: Part 1" },
           { episode: 10, title: "It's a Mad, Mad, Mad Ben World: Part 2" },
-            ],
-         },
-        {
+        ],
+      },
+      {
         season: 8,
         episodes: [
           { episode: 1, title: "From Hedorium to Eternity" },
@@ -6355,16 +6355,16 @@ const MOVIES = [
           { episode: 8, title: "The Most Dangerous Game Show" },
           { episode: 9, title: "The End of an Era" },
           { episode: 10, title: "A New Dawn" },
-            ],
-         },
-        
-        
-        
-        
         ],
-        },
-           
-{
+      },
+
+
+
+
+    ],
+  },
+
+  {
     id: "m252", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Jumanji: Welcome to the Jungle ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6372,7 +6372,7 @@ const MOVIES = [
     rating: 6.9,
     age: "PG-13",
     duration: "1h 59m ",
-    genres: ["Action", "Adventure", "Comedy","Fantasy"],
+    genres: ["Action", "Adventure", "Comedy", "Fantasy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/pSgXKPU5h6U89ipF7HBYajvYt7j.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rHf6t1BfiaVD18gF2oTZO9kw2pS.jpg",
     videoUrl: "353486",
@@ -6382,7 +6382,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m253", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Jumanji: The Next Level ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6390,7 +6390,7 @@ const MOVIES = [
     rating: 6.6,
     age: "PG-13",
     duration: "2h 3m ",
-    genres: ["Action", "Adventure", "Comedy","Fantasy"],
+    genres: ["Action", "Adventure", "Comedy", "Fantasy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/jyw8VKYEiM1UDzPB7NsisUgBeJ8.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qgch2rFskIxDMgwrD5lWTaB4nBl.jpg",
     videoUrl: "512200",
@@ -6400,7 +6400,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m254", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Casino Royal ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6408,7 +6408,7 @@ const MOVIES = [
     rating: 8.0,
     age: "PG-13",
     duration: "2h 24m ",
-    genres: ["Action", "Adventure", "Thriller","Spy"],
+    genres: ["Action", "Adventure", "Thriller", "Spy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lMrxYKKhd4lqRzwUHAy5gcx9PSO.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/klJMCIblHLFwCuGjKz7tyOpekIC.jpg",
     videoUrl: "36557",
@@ -6418,7 +6418,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m255", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Quantum of Solace ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6426,7 +6426,7 @@ const MOVIES = [
     rating: 6.5,
     age: "PG-13",
     duration: "1h 46m ",
-    genres: ["Action", "Adventure", "Thriller","Spy"],
+    genres: ["Action", "Adventure", "Thriller", "Spy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/e3DXXLJHGqMx9yYpXsql1XNljmM.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3CqMIX3ZlrD0pU3fpBL6DM0Cneb.jpg",
     videoUrl: "10764",
@@ -6436,7 +6436,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m256", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Skyfall ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6444,7 +6444,7 @@ const MOVIES = [
     rating: 7.8,
     age: "PG-13",
     duration: "2h 23m ",
-    genres: ["Action", "Adventure", "Thriller","Spy"],
+    genres: ["Action", "Adventure", "Thriller", "Spy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/d0IVecFQvsGdSbnMAHqiYsNYaJT.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/lnAqZDaP0yejFsuHZqeTGJOeRov.jpg",
     videoUrl: "37724",
@@ -6454,7 +6454,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m257", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Spectre ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6462,7 +6462,7 @@ const MOVIES = [
     rating: 6.8,
     age: "PG-13",
     duration: "2h 28m ",
-    genres: ["Action", "Adventure", "Thriller","Spy"],
+    genres: ["Action", "Adventure", "Thriller", "Spy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/zj8ongFhtWNsVlfjOGo8pSr7PQg.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/daZ7Z8IvbbeHQVQNK8RXr32OHtk.jpg",
     videoUrl: "37724",
@@ -6472,7 +6472,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m258", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "No Time to Die ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6480,7 +6480,7 @@ const MOVIES = [
     rating: 7.3,
     age: "PG-13",
     duration: "2h 43m ",
-    genres: ["Action", "Adventure", "Thriller","Spy"],
+    genres: ["Action", "Adventure", "Thriller", "Spy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iUgygt3fscRoKWCV1d0C7FbM9TP.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/jiXWozMk854sAHYpLj2pujAQPp6.jpg",
     videoUrl: "370172",
@@ -6490,7 +6490,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m259", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Joker ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6508,7 +6508,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m260", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Joker: Folie à Deux ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6516,7 +6516,7 @@ const MOVIES = [
     rating: 5.2,
     age: "R",
     duration: "2h 18m ",
-    genres: ["Crime", "Drama", "Thriller","Musical"],
+    genres: ["Crime", "Drama", "Thriller", "Musical"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/if8QiqCI7WAGImKcJCfzp6VTyKA.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/uGmYqxh8flqkudioyFtD7IJSHxK.jpg",
     videoUrl: "889737",
@@ -6526,7 +6526,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m261", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Truman Show ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6544,7 +6544,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m262", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Mummy ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6552,7 +6552,7 @@ const MOVIES = [
     rating: 7.1,
     age: "PG",
     duration: "2h 4m ",
-    genres: ["Action", "Adventure", "Fantasy","Horror"],
+    genres: ["Action", "Adventure", "Fantasy", "Horror"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/yhIsVvcUm7QxzLfT6HW2wLf5ajY.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/k6UGKIF7EWHUGvXRVWjlp4YzKUB.jpg",
     videoUrl: "564",
@@ -6562,7 +6562,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m263", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Skyscraper ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6580,7 +6580,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m264", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Black Adam",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6598,7 +6598,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m265", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Red Notice",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6606,7 +6606,7 @@ const MOVIES = [
     rating: 6.3,
     age: "PG-13",
     duration: "1h 58m ",
-    genres: ["Action", "Comedy", "Thriller","Crime"],
+    genres: ["Action", "Comedy", "Thriller", "Crime"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lAXONuqg41NwUMuzMiFvicDET9Y.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/dK12GIdhGP6NPGFssK2Fh265jyr.jpg",
     videoUrl: "512195",
@@ -6616,7 +6616,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m266", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Baywatch",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6624,7 +6624,7 @@ const MOVIES = [
     rating: 5.5,
     age: "R",
     duration: "1h 56m ",
-    genres: ["Action", "Comedy","Crime"],
+    genres: ["Action", "Comedy", "Crime"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6HE4xd8zloDqmjMZuhUCCw2UcY1.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/t6TL7V9IsT4Ktx6YO8b1UYj3agd.jpg",
     videoUrl: "339846",
@@ -6634,7 +6634,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m267", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Maze Runner",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6642,7 +6642,7 @@ const MOVIES = [
     rating: 6.8,
     age: "PG-13",
     duration: "1h 53m ",
-    genres: ["Action", "Mystery","Science Fiction","Thriller"],
+    genres: ["Action", "Mystery", "Science Fiction", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ode14q7WtDugFDp78fo9lCsmay9.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/eTlcNXGv32zkVI7ZDHhfeaKHXKQ.jpg",
     videoUrl: "198663",
@@ -6652,7 +6652,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m268", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Scorpion King",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6660,7 +6660,7 @@ const MOVIES = [
     rating: 5.5,
     age: "PG-13",
     duration: "1h 32m ",
-    genres: ["Action", "Adventure","Fantasy"],
+    genres: ["Action", "Adventure", "Fantasy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/aITIsX20tACn6jgtyDcCYpRT216.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/eegXMHCYvEc8dFInKtrGlElfwjs.jpg",
     videoUrl: "9334",
@@ -6670,7 +6670,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m269", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Rocky",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6688,7 +6688,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m270", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Rocky II",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6706,7 +6706,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m271", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Rocky III",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6724,7 +6724,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m272", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Rocky IV",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6742,7 +6742,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m273", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Rocky V",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6760,7 +6760,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m274", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Grown Ups",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6778,7 +6778,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m275", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Grown Ups 2",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6796,7 +6796,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m276", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Red One",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6804,7 +6804,7 @@ const MOVIES = [
     rating: 6.2,
     age: "PG-13",
     duration: "2h 3m",
-    genres: ["Action","Adventure","Comedy","Fantasy"],
+    genres: ["Action", "Adventure", "Comedy", "Fantasy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cdqLnri3NEGcmfnqwk2TSIYtddg.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/t2NWApVqG68kzD2ck1mBzaN4Y1Y.jpg",
     videoUrl: "845781",
@@ -6814,7 +6814,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m277", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "World War Z",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6822,7 +6822,7 @@ const MOVIES = [
     rating: 7.0,
     age: "PG-13",
     duration: "1h 56m",
-    genres: ["Action","Adventure","Horror"],
+    genres: ["Action", "Adventure", "Horror"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/aCnVdvExw6UWSeQfr0tUH3jr4qG.jpg",
     backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/ieaqdvP8osNeB6q5J4tX5w2SGar.jpg",
     videoUrl: "72190",
@@ -6832,7 +6832,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m278", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Shang-Chi and the Legend of the Ten Rings",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6840,7 +6840,7 @@ const MOVIES = [
     rating: 7.3,
     age: "PG-13",
     duration: "2h 12m",
-    genres: ["Action","Adventure","Fantasy"],
+    genres: ["Action", "Adventure", "Fantasy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9f2Q0U3IOsLgrI2HkvldwSABZy5.jpg",
     backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg",
     videoUrl: "566525",
@@ -6850,7 +6850,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m279", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "La La Land",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6858,7 +6858,7 @@ const MOVIES = [
     rating: 8.0,
     age: "PG-13",
     duration: "2h 8m",
-    genres: ["Musical","Romance","Comedy","Drama"],
+    genres: ["Musical", "Romance", "Comedy", "Drama"],
     poster: "https://image.tmdb.org/t/p/original/9yguvvrOG8dBVIbxCst0GyzVJu1.jpg",
     backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/rVRtRE6HJ5xbdo5jd9aTT8tEVaF.jpg",
     videoUrl: "313369",
@@ -6868,7 +6868,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m280", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Scarface ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6876,7 +6876,7 @@ const MOVIES = [
     rating: 8.3,
     age: "PG-13",
     duration: "2h 50m",
-    genres: ["Crime","Drama"],
+    genres: ["Crime", "Drama"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iQ5ztdjvteGeboxtmRdXEChJOHh.jpg",
     backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/1qM2BYNE11Viby8ImC9LC00DgDr.jpg",
     videoUrl: "111",
@@ -6886,7 +6886,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m281", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Meg ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6894,7 +6894,7 @@ const MOVIES = [
     rating: 5.7,
     age: "PG-13",
     duration: "1h 53m",
-    genres: ["Action","Adventure","Science Fiction","Horror"],
+    genres: ["Action", "Adventure", "Science Fiction", "Horror"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/eyWICPcxOuTcDDDbTMOZawoOn8d.jpg",
     backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/2uSCHUsmzb6KkQPFSxBQ7bgfJLE.jpg",
     videoUrl: "345940",
@@ -6904,7 +6904,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m282", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Meg 2: The Trench ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6912,7 +6912,7 @@ const MOVIES = [
     rating: 5.0,
     age: "PG-13",
     duration: "1h 56m",
-    genres: ["Action","Adventure","Science Fiction","Thriller"],
+    genres: ["Action", "Adventure", "Science Fiction", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4m1Au3YkjqsxF8iwQy0fPYSxE0h.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zN41DPmPhwmgJjHwezALdrdvD0h.jpg",
     videoUrl: "615656",
@@ -6922,7 +6922,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m283", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "American Psycho",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6930,7 +6930,7 @@ const MOVIES = [
     rating: 7.6,
     age: "R",
     duration: "1h 42m",
-    genres: ["Crime","Drama","Horror"],
+    genres: ["Crime", "Drama", "Horror"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9uGHEgsiUXjCNq8wdq4r49YL8A1.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/262HmU2EgvYIN52g6huHzx30YAU.jpg",
     videoUrl: "1359",
@@ -6940,7 +6940,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m284", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Bullet Train",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6948,7 +6948,7 @@ const MOVIES = [
     rating: 7.3,
     age: "R",
     duration: "2h 7m",
-    genres: ["Action","Comedy","Thriller"],
+    genres: ["Action", "Comedy", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/j8szC8OgrejDQjjMKSVXyaAjw3V.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qbnZOPPUAipuX4erfeP4svARjOi.jpg",
     videoUrl: "718930",
@@ -6958,7 +6958,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m285", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Beekeeper",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6966,7 +6966,7 @@ const MOVIES = [
     rating: 6.3,
     age: "R",
     duration: "1h 45m",
-    genres: ["Action","Crime","Thriller"],
+    genres: ["Action", "Crime", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/A7EByudX0eOzlkQ2FIbogzyazm2.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/f0ACHVpV707zqu4etZrXnWNdSgL.jpg",
     videoUrl: "866398",
@@ -6976,7 +6976,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m286", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Men in Black",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -6984,7 +6984,7 @@ const MOVIES = [
     rating: 7.3,
     age: "PG-13",
     duration: "1h 38m",
-    genres: ["Action","Adventure","Comedy","Science Fiction"],
+    genres: ["Action", "Adventure", "Comedy", "Science Fiction"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uLOmOF5IzWoyrgIF5MfUnh5pa1X.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rGX4v2DdJvzNWGj3cprnkXsnTIp.jpg",
     videoUrl: "607",
@@ -6994,7 +6994,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m287", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Men in Black II",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7002,7 +7002,7 @@ const MOVIES = [
     rating: 6.2,
     age: "PG-13",
     duration: "1h 28m",
-    genres: ["Action","Adventure","Comedy","Science Fiction"],
+    genres: ["Action", "Adventure", "Comedy", "Science Fiction"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/enA22EPyzc2WQ1VVyY7zxresQQr.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/gaObzSfuj8cLw2xpfphDVEs9aof.jpg",
     videoUrl: "608",
@@ -7012,7 +7012,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m288", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Men in Black 3",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7020,7 +7020,7 @@ const MOVIES = [
     rating: 6.8,
     age: "PG-13",
     duration: "1h 46m",
-    genres: ["Action","Comedy","Science Fiction"],
+    genres: ["Action", "Comedy", "Science Fiction"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/90DdoEStzeObs96fsYf4GG544iN.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/iCqk02W09UCA7ljxG5XEiX1xJkw.jpg",
     videoUrl: "41154",
@@ -7030,7 +7030,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m289", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Road House",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7038,7 +7038,7 @@ const MOVIES = [
     rating: 6.2,
     age: "R",
     duration: "2h 1m",
-    genres: ["Action","Thriller"],
+    genres: ["Action", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fDEdtS4P0gJsxHDIt8dG8TR5dx1.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/39LxWqvQCsbAe0Cm2B7dtBe3Rd4.jpg",
     videoUrl: "359410",
@@ -7048,7 +7048,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m290", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Raiders of the Lost Ark",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7056,7 +7056,7 @@ const MOVIES = [
     rating: 8.4,
     age: "PG",
     duration: "1h 55m",
-    genres: ["Action","Adventure"],
+    genres: ["Action", "Adventure"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oxK0OlJ5brTZMLQu5AD1oLDgwt3.jpg",
     videoUrl: "85",
@@ -7066,7 +7066,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m291", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Indiana Jones and the Temple of Doom",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7074,7 +7074,7 @@ const MOVIES = [
     rating: 7.5,
     age: "PG",
     duration: "1h 58m",
-    genres: ["Action","Adventure"],
+    genres: ["Action", "Adventure"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gpdVNUaa4LhRMLfJOPj1AZdhAZ3.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/a4cX1maHQn5JFQMfYGR72cK8bfH.jpg",
     videoUrl: "87",
@@ -7084,7 +7084,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m292", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Indiana Jones and the Last Crusade",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7092,7 +7092,7 @@ const MOVIES = [
     rating: 8.2,
     age: "PG-13",
     duration: "2h 7m",
-    genres: ["Action","Adventure"],
+    genres: ["Action", "Adventure"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/sizg1AU8f8JDZX4QIgE4pjUMBvx.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/267Mdb5i1AXuVN64DhVEOUPmM25.jpg",
     videoUrl: "89",
@@ -7102,7 +7102,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m293", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Indiana Jones and the Kingdom of the Crystal Skull",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7110,7 +7110,7 @@ const MOVIES = [
     rating: 6.2,
     age: "PG-13",
     duration: "2h 2m",
-    genres: ["Action","Adventure"],
+    genres: ["Action", "Adventure"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/56As6XEM1flWvprX4LgkPl8ii4K.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/irBUdQZ25e5kditWYom58cICTTT.jpg",
     videoUrl: "217",
@@ -7120,7 +7120,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m294", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Indiana Jones and the Dial of Destiny",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7128,7 +7128,7 @@ const MOVIES = [
     rating: 6.5,
     age: "PG-13",
     duration: "2h 34m",
-    genres: ["Action","Adventure"],
+    genres: ["Action", "Adventure"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/Af4bXE63pVsb2FtbW8uYIyPBadD.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ymZDxJle67EBFTEiBp1WzRuXjZc.jpg",
     videoUrl: "355977",
@@ -7138,7 +7138,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m295", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Madagascar",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7146,7 +7146,7 @@ const MOVIES = [
     rating: 7.0,
     age: "PG",
     duration: "1h 26m",
-    genres: ["Animation","Adventure","Comedy","Family"],
+    genres: ["Animation", "Adventure", "Comedy", "Family"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/zMpJY5CJKUufG9OTw0In4eAFqPX.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/2igcXhXIVUouBPYFZ7kwr3z5qrD.jpg",
     videoUrl: "953",
@@ -7156,7 +7156,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m296", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Madagascar: Escape 2 Africa ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7164,7 +7164,7 @@ const MOVIES = [
     rating: 6.7,
     age: "PG",
     duration: "1h 29m",
-    genres: ["Animation","Adventure","Comedy","Family"],
+    genres: ["Animation", "Adventure", "Comedy", "Family"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/agRbLOHgN46TQO4YdKR462iR7To.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/r2M9ElkHxEJP7riCFbT5N0uXZTc.jpg",
     videoUrl: "10527",
@@ -7174,7 +7174,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m297", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Madagascar 3: Europe's Most Wanted  ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7182,7 +7182,7 @@ const MOVIES = [
     rating: 6.7,
     age: "PG",
     duration: "1h 33m",
-    genres: ["Animation","Adventure","Comedy","Family"],
+    genres: ["Animation", "Adventure", "Comedy", "Family"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ekraj4ksvIKeuvQVEevEJkuybZd.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/hfdds27YL5nTAhiOtjfNNxD3bJe.jpg",
     videoUrl: "80321",
@@ -7192,7 +7192,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m298", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Edge of Tomorrow",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7200,7 +7200,7 @@ const MOVIES = [
     rating: 7.9,
     age: "PG-13",
     duration: "1h 53m",
-    genres: ["Action","Adventure","Science Fiction"],
+    genres: ["Action", "Adventure", "Science Fiction"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nBM9MMa2WCwvMG4IJ3eiGUdbPe6.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/4V1yIoAKPMRQwGBaSses8Bp2nsi.jpg",
     videoUrl: "137113",
@@ -7210,7 +7210,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m299", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Vanilla Sky ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7218,7 +7218,7 @@ const MOVIES = [
     rating: 6.9,
     age: "R",
     duration: "2h 16m",
-    genres: ["Fantasy","Mystery","Romance"],
+    genres: ["Fantasy", "Mystery", "Romance"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cAh2pCiNPftsY3aSqJuIOde7uWr.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/r94MwcvPBidnQh2ASOfPV2wEEnm.jpg",
     videoUrl: "1903",
@@ -7228,7 +7228,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m300", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "American Made ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7236,7 +7236,7 @@ const MOVIES = [
     rating: 7.2,
     age: "R",
     duration: "1h 55m",
-    genres: ["Action","Comedy","Crime","Drama"],
+    genres: ["Action", "Comedy", "Crime", "Drama"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/23ILgoPSO5ShKcTZOuiTVfqFAUB.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qphzPbr42CaV6cayxOAsUbk8nLV.jpg",
     videoUrl: "337170",
@@ -7246,7 +7246,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m301", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Dune: Part One ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7254,7 +7254,7 @@ const MOVIES = [
     rating: 8.0,
     age: "PG-13",
     duration: "2h 35m",
-    genres: ["Action","Adventure","Drama","Science Fiction"],
+    genres: ["Action", "Adventure", "Drama", "Science Fiction"],
     poster: "https://www.themoviedb.org/t/p/w1280/v1tRXZ4JtD2Iv6fjkPvT4GiwslV.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/aHFgoGZ2VQNY45nJWGcBvszaMXz.jpg",
     videoUrl: "438631",
@@ -7264,7 +7264,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m302", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Dune: Part Two ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7272,7 +7272,7 @@ const MOVIES = [
     rating: 8.4,
     age: "PG-13",
     duration: "2h 46m",
-    genres: ["Action","Adventure","Drama","Science Fiction"],
+    genres: ["Action", "Adventure", "Drama", "Science Fiction"],
     poster: "https://www.themoviedb.org/t/p/w1280/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/87IVlclAfWL6mdicU1DDuxdwXwe.jpg",
     videoUrl: "693134",
@@ -7282,7 +7282,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m303", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Evil Dead Rise ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7290,7 +7290,7 @@ const MOVIES = [
     rating: 6.5,
     age: "R",
     duration: "1h 36m",
-    genres: ["Horror","Thriller"],
+    genres: ["Horror", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w1280/5ik4ATKmNtmJU6AYD0bLm56BCVM.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/sFkXFSXoSr7qVeiy1VlAUq4qhiX.jpg",
     videoUrl: "713704",
@@ -7300,7 +7300,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m304", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Blade Runner 2049 ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7308,7 +7308,7 @@ const MOVIES = [
     rating: 8.0,
     age: "R",
     duration: "2h 44m",
-    genres: ["Action","Drama","Mystery","Science Fiction"],
+    genres: ["Action", "Drama", "Mystery", "Science Fiction"],
     poster: "https://www.themoviedb.org/t/p/w1280/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ey7N0Sm3FiRm12DC58T8JkSxMBx.jpg",
     videoUrl: "335984",
@@ -7318,7 +7318,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m305", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "A Minecraft Movie",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7326,7 +7326,7 @@ const MOVIES = [
     rating: 5.6,
     age: "PG",
     duration: "1h 41m",
-    genres: ["Action","Adventure","Comedy","Fantasy"],
+    genres: ["Action", "Adventure", "Comedy", "Fantasy"],
     poster: "https://www.themoviedb.org/t/p/w1280/yFHHfHcUgGAxziP1C3lLt0q2T4s.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/f4WuWdnkXPtThh0P7PRyG0l62V1.jpg",
     videoUrl: "950387",
@@ -7336,7 +7336,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m306", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Kraven the Hunter",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7344,7 +7344,7 @@ const MOVIES = [
     rating: 5.5,
     age: "R",
     duration: "2h 7m",
-    genres: ["Action","Adventure","Thriller"],
+    genres: ["Action", "Adventure", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w1280/1GvBhRxY6MELDfxFrete6BNhBB5.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rDa3SfEijeRNCWtHQZCwfbGxYvR.jpg",
     videoUrl: "539972",
@@ -7354,7 +7354,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m307", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "White Chicks",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7362,7 +7362,7 @@ const MOVIES = [
     rating: 5.9,
     age: "PG-13",
     duration: "1h 49m",
-    genres: ["Comedy","Crime"],
+    genres: ["Comedy", "Crime"],
     poster: "https://www.themoviedb.org/t/p/w1280/aHTUpo45qy9QYIOnVITGGqLoVcA.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/lg8grww4YuOrGYsuVeuo0VuNNSU.jpg",
     videoUrl: "12153",
@@ -7372,7 +7372,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m308", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Rush Hour",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7380,7 +7380,7 @@ const MOVIES = [
     rating: 7.1,
     age: "PG-13",
     duration: "1h 38m",
-    genres: ["Action","Crime","Comedy"],
+    genres: ["Action", "Crime", "Comedy"],
     poster: "https://www.themoviedb.org/t/p/w1280/nwPhAsfnb7f46bZkWLG7IRP5HXr.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/2kSgmFpvHaktkNFwf9a5zyFRtLs.jpg",
     videoUrl: "2109",
@@ -7390,7 +7390,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m309", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Rush Hour 2",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7398,7 +7398,7 @@ const MOVIES = [
     rating: 6.7,
     age: "PG-13",
     duration: "1h 30m",
-    genres: ["Action","Crime","Comedy"],
+    genres: ["Action", "Crime", "Comedy"],
     poster: "https://www.themoviedb.org/t/p/w1280/aBQf2vMiCINeVC9v6BGVYKXurTh.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/mo1MXdcLSx6EMaGrpjjL8qOSEHE.jpg",
     videoUrl: "5175",
@@ -7408,7 +7408,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m310", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Rush Hour 3",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7416,7 +7416,7 @@ const MOVIES = [
     rating: 6.3,
     age: "PG-13",
     duration: "1h 30m",
-    genres: ["Action","Crime","Comedy"],
+    genres: ["Action", "Crime", "Comedy"],
     poster: "https://www.themoviedb.org/t/p/w1280/mp9CzKxLa2i7yblMXUrzVfGqsCo.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/lNCyknHWbKyuDjZnGKja1tGxpzm.jpg",
     videoUrl: "5174",
@@ -7426,7 +7426,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m311", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "A Working Man",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7434,7 +7434,7 @@ const MOVIES = [
     rating: 5.7,
     age: "R",
     duration: "1h 56m",
-    genres: ["Action","Crime","Thriller"],
+    genres: ["Action", "Crime", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w1280/6FRFIogh3zFnVWn7Z6zcYnIbRcX.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/AjTclV0hwyIWcy4DTL3iido9bnR.jpg",
     videoUrl: "1197306",
@@ -7444,7 +7444,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m312", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "San Andreas",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7452,7 +7452,7 @@ const MOVIES = [
     rating: 6.1,
     age: "PG-13",
     duration: "1h 54m",
-    genres: ["Action","Adventure","Thriller"],
+    genres: ["Action", "Adventure", "Thriller"],
     poster: "https://image.tmdb.org/t/p/original/vH82hkfbpCJaw4ibSYOTLY0EP6k.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8tSENimkgE7ecV1Ghee4bogM3CO.jpg",
     videoUrl: "254128",
@@ -7462,7 +7462,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m313", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Pursuit of Happyness",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7470,7 +7470,7 @@ const MOVIES = [
     rating: 8.0,
     age: "PG-13",
     duration: "1h 57m",
-    genres: ["Biography","Drama"],
+    genres: ["Biography", "Drama"],
     poster: "https://www.themoviedb.org/t/p/w1280/lBYOKAMcxIvuk9s9hMuecB9dPBV.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/nKOQiWjhv6LXXSR3PiIab3LrKtU.jpg",
     videoUrl: "1402",
@@ -7480,7 +7480,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m314", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Babygirl",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7488,7 +7488,7 @@ const MOVIES = [
     rating: 5.7,
     age: "R",
     duration: "1h 54m",
-    genres: ["Drama","Romance","Thriller"],
+    genres: ["Drama", "Romance", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w1280/A8HbTd0FemZyFCh5qvJFpHGiwF8.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8Y1LWAbNUFe0w06Q7UCQokZxl2E.jpg",
     videoUrl: "1097549",
@@ -7498,7 +7498,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m315", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Taken ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7506,7 +7506,7 @@ const MOVIES = [
     rating: 7.7,
     age: "PG-13",
     duration: "1h 30m",
-    genres: ["Action","Thriller"],
+    genres: ["Action", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w1280/ognkaUSNgJe1a2pjB4UNdzEo5jT.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/auLFB4G02tW4SxBqTDeybV0lXVl.jpg",
     videoUrl: "8681",
@@ -7516,7 +7516,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m316", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Taken 2 ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7524,7 +7524,7 @@ const MOVIES = [
     rating: 6.2,
     age: "PG-13",
     duration: "1h 30m",
-    genres: ["Action","Crime","Thriller"],
+    genres: ["Action", "Crime", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w1280/yzAlcuJhpnxRPjaj7AHBRbNPQCJ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/wiHwmNKPA7J9GgqCKY2z243HE3S.jpg",
     videoUrl: "82675",
@@ -7534,7 +7534,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m317", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Taken 3 ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7542,7 +7542,7 @@ const MOVIES = [
     rating: 6.0,
     age: "PG-13",
     duration: "1h 48m",
-    genres: ["Action","Thriller"],
+    genres: ["Action", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w1280/vzvMXMypMq7ieDofKThsxjHj9hn.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/Ivj0wsH0RU2IEGc8LdvCr97WL1.jpg",
     videoUrl: "260346",
@@ -7552,7 +7552,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m318", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "War of the Worlds ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7560,7 +7560,7 @@ const MOVIES = [
     rating: 6.6,
     age: "PG-13",
     duration: "1h 57m",
-    genres: ["Action","Adventure","Science Fiction","Thriller"],
+    genres: ["Action", "Adventure", "Science Fiction", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w1280/6Biy7R9LfumYshur3YKhpj56MpB.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/nH6hPhJq3EEv9CnBZgXU3IQnpJo.jpg",
     videoUrl: "74",
@@ -7570,7 +7570,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m319", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Mask ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7578,7 +7578,7 @@ const MOVIES = [
     rating: 7.0,
     age: "PG-13",
     duration: "1h 41m",
-    genres: ["Comedy","Fantasy","Crime"],
+    genres: ["Comedy", "Fantasy", "Crime"],
     poster: "https://www.themoviedb.org/t/p/w1280/jPC2eYub74zwf2tPGVtzSlBW6Oy.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7ZvfdaFhqALOAb7pd4YNpucikMK.jpg",
     videoUrl: "854",
@@ -7588,7 +7588,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m320", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Madame Web ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -7596,7 +7596,7 @@ const MOVIES = [
     rating: 4.1,
     age: "PG-13",
     duration: "1h 56m",
-    genres: ["Action","Science Fiction","Adventure"],
+    genres: ["Action", "Science Fiction", "Adventure"],
     poster: "https://www.themoviedb.org/t/p/w1280/rULWuutDcN5NvtiZi4FRPzRYWSh.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oU5npfTRR8WiwXnxdUSLXztOzvG.jpg",
     videoUrl: "634492",
@@ -7606,7 +7606,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m321",
     title: "The Witcher",
     type: "TV Show",
@@ -7614,7 +7614,7 @@ const MOVIES = [
     rating: 7.8,
     age: "TV-MA",
     duration: "1h",
-    genres: ["Action","Adventure", "Fantasy", "Drama"],
+    genres: ["Action", "Adventure", "Fantasy", "Drama"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/AoGsDM02UVt0npBA8OvpDcZbaMi.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/foGkPxpw9h8zln81j63mix5B7m8.jpg",
     videoUrl: "",
@@ -7680,7 +7680,7 @@ const MOVIES = [
 
     ]
   },
-{
+  {
     id: "m322",
     title: "The Last of Us",
     type: "TV Show",
@@ -7688,7 +7688,7 @@ const MOVIES = [
     rating: 8.4,
     age: "TV-MA",
     duration: "50m",
-    genres: ["Drama","Action", "Horror", "Science Fiction"],
+    genres: ["Drama", "Action", "Horror", "Science Fiction"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/uDgy6hyPd82kOHh6I95FLtLnj6p.jpg",
     videoUrl: "",
@@ -7727,7 +7727,7 @@ const MOVIES = [
       },
     ]
   },
-{
+  {
     id: "m323",
     title: "Loki",
     type: "TV Show",
@@ -7735,7 +7735,7 @@ const MOVIES = [
     rating: 8.2,
     age: "TV-14",
     duration: "50m",
-    genres: ["Action","Adventure","Fantasy","Science Fiction"],
+    genres: ["Action", "Adventure", "Fantasy", "Science Fiction"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rX1wQMTKFqF0gvZyS0DDQqgnQPB.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/vttOoJ9aGKHY05Gsb1lNbOAZgTM.jpg",
     videoUrl: "",
@@ -7770,7 +7770,7 @@ const MOVIES = [
       },
     ]
   },
-{
+  {
     id: "m324",
     title: "Stranger Things",
     type: "TV Show",
@@ -7778,7 +7778,7 @@ const MOVIES = [
     rating: 8.6,
     age: "TV-MA",
     duration: "1h",
-    genres: ["Science Fiction","Horror", "Mystery", "Drama","Supernatural"],
+    genres: ["Science Fiction", "Horror", "Mystery", "Drama", "Supernatural"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uOOtwVbSr4QDjAGIifLDwpb2Pdl.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/2MaumbgBlW1NoPo3ZJO38A6v7OS.jpg",
     videoUrl: "",
@@ -7814,7 +7814,7 @@ const MOVIES = [
           { episode: 7, title: "Chapter Seven: The Lost Sister" },
           { episode: 8, title: "Chapter Eight: The Mind Flayer" },
           { episode: 8, title: "Chapter Nine: The Gate" },
-        
+
         ],
       },
       {
@@ -7860,7 +7860,7 @@ const MOVIES = [
 
     ]
   },
-{
+  {
     id: "m325",
     title: "Money Heist",
     type: "TV Show",
@@ -7868,7 +7868,7 @@ const MOVIES = [
     rating: 8.2,
     age: "TV-MA",
     duration: "1h",
-    genres: ["Heist","Crime", "Drama", "Thriller"],
+    genres: ["Heist", "Crime", "Drama", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/uneEmfKFbyOZsN77JAHXK1cIAmX.jpg",
     videoUrl: "",
@@ -7901,7 +7901,7 @@ const MOVIES = [
           { episode: 3, title: "Cuestión de eficacia" },
           { episode: 4, title: "¿Qué hemos hecho?" },
           { episode: 5, title: "A contrarreloj" },
-          { episode: 6, title: "Bella ciao" },        
+          { episode: 6, title: "Bella ciao" },
         ],
       },
       {
@@ -7948,7 +7948,7 @@ const MOVIES = [
 
     ]
   },
-{
+  {
     id: "m326",
     title: "WandaVision",
     type: "TV Show",
@@ -7956,7 +7956,7 @@ const MOVIES = [
     rating: 7.9,
     age: "TV-PG",
     duration: "40m",
-    genres: ["Drama","Mystery","Romance"],
+    genres: ["Drama", "Mystery", "Romance"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ijWWwINc8h71NQ8j1LTJMFSj5wr.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/z8axGj6DbR1cZZw3fCLNnJE9LIJ.jpg",
     videoUrl: "",
@@ -7983,7 +7983,7 @@ const MOVIES = [
       },
     ],
   },
-{
+  {
     id: "m327",
     title: "The Flash",
     type: "TV Show",
@@ -7991,7 +7991,7 @@ const MOVIES = [
     rating: 7.5,
     age: "TV-PG",
     duration: "43m",
-    genres: ["Drama","Action", "Sci-FI", "Adventure"],
+    genres: ["Drama", "Action", "Sci-FI", "Adventure"],
     poster: "https://image.tmdb.org/t/p/original/sn5T0gm0EMxhKZGUPeAs38HVc6a.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/6ZdQTBy20HzWudZthAV7NkZWfIb.jpg",
     videoUrl: "",
@@ -8038,28 +8038,28 @@ const MOVIES = [
           { episode: 3, title: " Family of Rogues" },
           { episode: 4, title: " The Fury of Firestorm" },
           { episode: 5, title: "The Darkness and the Light" },
-          { episode: 6, title: "Enter Zoom" },        
-          { episode: 7, title: "Gorilla Warfare" },        
-          { episode: 8, title: "Legends of Today" },        
-          { episode: 9, title: "Running to Stand Still" },        
-          { episode: 10, title: "Potential Energy" },        
-          { episode: 11, title: "The Reverse-Flash Returns" },        
-          { episode: 12, title: "Fast Lane" },        
-          { episode: 13, title: "Welcome to Earth-2" },        
-          { episode: 14, title: "Escape from Earth-2" },        
-          { episode: 15, title: "King Shark" },        
-          { episode: 16, title: "Trajectory" },        
-          { episode: 17, title: "Flash Back" },        
-          { episode: 18, title: "Versus Zoom" },        
-          { episode: 19, title: "Back to Normal" },        
-          { episode: 20, title: "Rupture" },        
-          { episode: 21, title: "The Runaway Dinosaur" },        
-          { episode: 22, title: "Invincible" },        
-          { episode: 23, title: "The Race of His Life" },        
-        
-        
-        
-        
+          { episode: 6, title: "Enter Zoom" },
+          { episode: 7, title: "Gorilla Warfare" },
+          { episode: 8, title: "Legends of Today" },
+          { episode: 9, title: "Running to Stand Still" },
+          { episode: 10, title: "Potential Energy" },
+          { episode: 11, title: "The Reverse-Flash Returns" },
+          { episode: 12, title: "Fast Lane" },
+          { episode: 13, title: "Welcome to Earth-2" },
+          { episode: 14, title: "Escape from Earth-2" },
+          { episode: 15, title: "King Shark" },
+          { episode: 16, title: "Trajectory" },
+          { episode: 17, title: "Flash Back" },
+          { episode: 18, title: "Versus Zoom" },
+          { episode: 19, title: "Back to Normal" },
+          { episode: 20, title: "Rupture" },
+          { episode: 21, title: "The Runaway Dinosaur" },
+          { episode: 22, title: "Invincible" },
+          { episode: 23, title: "The Race of His Life" },
+
+
+
+
         ],
       },
       {
@@ -8117,8 +8117,8 @@ const MOVIES = [
           { episode: 22, title: "Think Fast" },
           { episode: 23, title: "We Are the Flash" },
         ],
-     
-     },
+
+      },
       {
         season: 5,
         episodes: [
@@ -8145,8 +8145,8 @@ const MOVIES = [
           { episode: 21, title: "The Girl with the Red Lightning" },
           { episode: 22, title: "Legacy" },
         ],
-     
-     },
+
+      },
       {
         season: 6,
         episodes: [
@@ -8170,8 +8170,8 @@ const MOVIES = [
           { episode: 18, title: "Pay the Piper" },
           { episode: 19, title: "Success Is Assured" },
         ],
-     
-     },
+
+      },
       {
         season: 7,
         episodes: [
@@ -8194,8 +8194,8 @@ const MOVIES = [
           { episode: 17, title: "Heart of the Matter, Part 1" },
           { episode: 18, title: "Heart of the Matter, Part 2" },
         ],
-     
-     },
+
+      },
       {
         season: 8,
         episodes: [
@@ -8220,8 +8220,8 @@ const MOVIES = [
           { episode: 19, title: "Negative, Part One" },
           { episode: 20, title: "Negative, Part Two" },
         ],
-     
-     },
+
+      },
       {
         season: 9,
         episodes: [
@@ -8239,11 +8239,11 @@ const MOVIES = [
           { episode: 12, title: "A New World, Part 3: Changes" },
           { episode: 13, title: "A New World, Part 4: Finale" },
         ],
-     
-     },
+
+      },
     ]
   },
-    {
+  {
     id: "m328",
     title: "Peaky Blinders",
     type: "TV Show",
@@ -8251,7 +8251,7 @@ const MOVIES = [
     rating: 8.7,
     age: "TV-PG",
     duration: "1h",
-    genres: ["Crime","Drama"],
+    genres: ["Crime", "Drama"],
     poster: "https://image.tmdb.org/t/p/original/pE8CScObQURsFZ723PSW1K9EGYp.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/m0GVaV4mgE8aFSHp8kTevHb8feu.jpg",
     videoUrl: "",
@@ -8281,7 +8281,7 @@ const MOVIES = [
           { episode: 3, title: "Episode #2.3" },
           { episode: 4, title: "Episode #2.4" },
           { episode: 5, title: "Episode #2.5" },
-          { episode: 6, title: "Episode #2.6" },        
+          { episode: 6, title: "Episode #2.6" },
         ],
       },
       {
@@ -8305,8 +8305,8 @@ const MOVIES = [
           { episode: 5, title: "The Duel" },
           { episode: 6, title: "The Company" },
         ],
-     
-     },
+
+      },
       {
         season: 5,
         episodes: [
@@ -8317,8 +8317,8 @@ const MOVIES = [
           { episode: 5, title: "The Shock" },
           { episode: 6, title: "Mr. Jones" },
         ],
-     
-     },
+
+      },
       {
         season: 6,
         episodes: [
@@ -8329,11 +8329,11 @@ const MOVIES = [
           { episode: 5, title: " The Road to Hell" },
           { episode: 6, title: "Lock and Key" },
         ],
-     
-     },
+
+      },
     ],
-    },
-{
+  },
+  {
     id: "m329",
     title: "The Queen's Gambit",
     type: "TV Show",
@@ -8341,7 +8341,7 @@ const MOVIES = [
     rating: 8.5,
     age: "TV-MA",
     duration: "1h",
-    genres: ["Drama","Miniseries"],
+    genres: ["Drama", "Miniseries"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/zU0htwkhNvBQdVSIKB9s6hgVeFK.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/5N5dSOrysuquExvn8Gpp5jMEf6u.jpg",
     videoUrl: "",
@@ -8364,9 +8364,9 @@ const MOVIES = [
           { episode: 7, title: "End Game" },
         ],
       },
-    ]  
-    },
-{
+    ]
+  },
+  {
     id: "m330",
     title: "Game of Thrones",
     type: "TV Show",
@@ -8374,7 +8374,7 @@ const MOVIES = [
     rating: 9.2,
     age: "TV-MA",
     duration: "1h",
-    genres: ["Fantasy","Drama","Action","Adventure"],
+    genres: ["Fantasy", "Drama", "Action", "Adventure"],
     poster: "https://image.tmdb.org/t/p/original/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zTjMmLFn2jgsxZwHC5fbsm6HHG4.jpg",
     videoUrl: "",
@@ -8498,9 +8498,9 @@ const MOVIES = [
           { episode: 6, title: "The Iron Throne" },
         ],
       },
-    ]  
-    },
-{
+    ]
+  },
+  {
     id: "m331", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Zootopia ",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -8508,7 +8508,7 @@ const MOVIES = [
     rating: 8.0,
     age: "PG",
     duration: "1h 48m",
-    genres: ["Animation","Adventure","Comedy","Family","Mystery"],
+    genres: ["Animation", "Adventure", "Comedy", "Family", "Mystery"],
     poster: "https://image.tmdb.org/t/p/original/9LRFNLthb0jfWC0HUDUWjYgpP9F.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/hD3OwBSTHIr7CE1UIBYOH6fZHWC.jpg",
     videoUrl: "269149",
@@ -8518,7 +8518,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m332", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Zootopia 2",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -8526,7 +8526,7 @@ const MOVIES = [
     rating: 7.3,
     age: "PG",
     duration: "1h 48m",
-    genres: ["Animation","Action","Adventure","Comedy","Family","Mystery"],
+    genres: ["Animation", "Action", "Adventure", "Comedy", "Family", "Mystery"],
     poster: "https://image.tmdb.org/t/p/original/bjUWGw0Ao0qVWxagN3VCwBJHVo6.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/5BeOSbwt6BR7q2Fax70lF4AIshD.jpg",
     videoUrl: "1084242",
@@ -8536,7 +8536,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m333", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Devil Wears Prada",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -8544,7 +8544,7 @@ const MOVIES = [
     rating: 7.0,
     age: "PG-13",
     duration: "1h 49m",
-    genres: ["Comedy","Drama"],
+    genres: ["Comedy", "Drama"],
     poster: "https://image.tmdb.org/t/p/original/1LwW0W0Zyik00OmQPTnCUjmCh1C.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/gkh6Nt8DtY1XT4gQsyFq9XAVJlJ.jpg",
     videoUrl: "350",
@@ -8554,7 +8554,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m334", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Devil Wears Prada 2",
     type: "Movie", // Use "Movie" or "TV Show"
@@ -8562,7 +8562,7 @@ const MOVIES = [
     rating: 6.3,
     age: "PG-13",
     duration: "1h 59m",
-    genres: ["Comedy","Drama"],
+    genres: ["Comedy", "Drama"],
     poster: "https://image.tmdb.org/t/p/original/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/dRoFlUbH1l51ACmx5oPCI3jfvZq.jpg",
     videoUrl: "1314481",
@@ -8572,7 +8572,7 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
-{
+  {
     id: "m335",
     title: "Spider Noir",
     type: "TV Show",
@@ -8580,7 +8580,7 @@ const MOVIES = [
     rating: 7.7,
     age: "TV-14",
     duration: "45m",
-    genres: ["Action","Crime","Mystery"],
+    genres: ["Action", "Crime", "Mystery"],
     poster: "https://image.tmdb.org/t/p/original/cRAzL6mmdM6Q6UuQgc335UMgcfd.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rZTn8zwb6fUuN0eRTEV3dodvYx2.jpg",
     videoUrl: "",
@@ -8979,7 +8979,7 @@ function startHeroAutoplay() {
   if (state.heroInterval) clearInterval(state.heroInterval);
   const featuredCount = getFeaturedMovies().length;
   if (featuredCount <= 1) return;
-  
+
   state.heroInterval = setInterval(() => {
     state.currentHeroIndex = (state.currentHeroIndex + 1) % featuredCount;
     updateHeroBanner();
@@ -10290,13 +10290,13 @@ function bindEventListeners() {
   }
 
   // ── Search Modal ──
-  const navSearchBtn    = document.getElementById("navSearchBtn");
-  const searchModal     = document.getElementById("searchModal");
+  const navSearchBtn = document.getElementById("navSearchBtn");
+  const searchModal = document.getElementById("searchModal");
   const searchModalClose = document.getElementById("searchModalClose");
   const searchModalBackdrop = document.getElementById("searchModalBackdrop");
-  const searchInput     = document.getElementById("searchInput");
-  const searchClearBtn  = document.getElementById("searchClearBtn");
-  const searchDropdown  = document.getElementById("searchDropdown");
+  const searchInput = document.getElementById("searchInput");
+  const searchClearBtn = document.getElementById("searchClearBtn");
+  const searchDropdown = document.getElementById("searchDropdown");
   const searchRecentSection = document.getElementById("searchRecentSection");
   const searchRecentList = document.getElementById("searchRecentList");
   const clearRecentBtn = document.getElementById("clearRecentBtn");
@@ -10351,8 +10351,8 @@ function bindEventListeners() {
     document.body.style.overflow = "";
   }
 
-  if (navSearchBtn)        navSearchBtn.onclick        = openSearchModal;
-  if (searchModalClose)   searchModalClose.onclick    = closeSearchModal;
+  if (navSearchBtn) navSearchBtn.onclick = openSearchModal;
+  if (searchModalClose) searchModalClose.onclick = closeSearchModal;
   if (searchModalBackdrop) searchModalBackdrop.onclick = closeSearchModal;
 
   // Clear Recents
@@ -10522,7 +10522,7 @@ function bindEventListeners() {
   const signupPasswordField = document.getElementById("signupPassword");
   const strengthBar = document.getElementById("passwordStrengthBar");
   const strengthText = document.getElementById("passwordStrengthText");
-  
+
   const reqLength = document.getElementById("reqLength");
   const reqCapital = document.getElementById("reqCapital");
   const reqNumber = document.getElementById("reqNumber");
@@ -10532,7 +10532,7 @@ function bindEventListeners() {
   if (signupPasswordField && strengthBar && strengthText) {
     signupPasswordField.addEventListener("input", () => {
       const val = signupPasswordField.value;
-      
+
       // Show checklist only if user has entered something
       if (reqContainer) {
         if (val.length > 0) {
@@ -10543,7 +10543,7 @@ function bindEventListeners() {
       }
 
       let strength = 0;
-      
+
       const isLength = val.length >= 8;
       const isCapital = /[A-Z]/.test(val);
       const isNumber = /[0-9]/.test(val);
@@ -10553,7 +10553,7 @@ function bindEventListeners() {
       if (isCapital) strength += 1;
       if (isNumber) strength += 1;
       if (isSymbol) strength += 1;
-      
+
       const updateReq = (el, isValid) => {
         if (!el) return;
         const icon = el.querySelector("ion-icon");
@@ -10574,7 +10574,7 @@ function bindEventListeners() {
       // Reset classes
       strengthBar.className = "password-strength-bar";
       strengthText.className = "strength-text";
-      
+
       if (val.length === 0) {
         strengthText.textContent = "";
       } else if (strength <= 1) {
@@ -10603,7 +10603,7 @@ function bindEventListeners() {
     if (tabLoginBtn.classList.contains("active")) return;
     tabLoginBtn.classList.add("active");
     tabSignupBtn.classList.remove("active");
-    
+
     loginForm.classList.remove("hidden");
     signupForm.classList.add("hidden");
   };
@@ -10612,7 +10612,7 @@ function bindEventListeners() {
     if (tabSignupBtn.classList.contains("active")) return;
     tabSignupBtn.classList.add("active");
     tabLoginBtn.classList.remove("active");
-    
+
     signupForm.classList.remove("hidden");
     loginForm.classList.add("hidden");
   };
@@ -10695,7 +10695,7 @@ function bindEventListeners() {
       emailErr.textContent = "Please enter a valid email address";
       valid = false;
     }
-    
+
     const isLength = pass.length >= 8;
     const isCapital = /[A-Z]/.test(pass);
     const isNumber = /[0-9]/.test(pass);
@@ -10913,19 +10913,19 @@ function updateIframeServer() {
 
   let newUrl = "";
   if (data.type === "tv") {
-    if (server === "cinesrc")     newUrl = `https://cinesrc.st/embed/tv/${data.id}?s=${data.season}&e=${data.episode}`;
-    if (server === "multiembed")  newUrl = `https://multiembed.mov/?video_id=${data.id}&tmdb=1&s=${data.season}&e=${data.episode}`;
-    if (server === "vidsrcxyz")   newUrl = `https://vidsrc.xyz/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}`;
-    if (server === "vidsrcin")    newUrl = `https://vidsrc.in/embed/tv/${data.id}/${data.season}/${data.episode}`;
-    if (server === "vidsrcme")    newUrl = `https://vidsrc.me/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}`;
-    if (server === "embedsu")     newUrl = `https://embed.su/embed/tv/${data.id}/${data.season}/${data.episode}`;
+    if (server === "cinesrc") newUrl = `https://cinesrc.st/embed/tv/${data.id}?s=${data.season}&e=${data.episode}`;
+    if (server === "multiembed") newUrl = `https://multiembed.mov/?video_id=${data.id}&tmdb=1&s=${data.season}&e=${data.episode}`;
+    if (server === "vidsrcxyz") newUrl = `https://vidsrc.xyz/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}`;
+    if (server === "vidsrcin") newUrl = `https://vidsrc.in/embed/tv/${data.id}/${data.season}/${data.episode}`;
+    if (server === "vidsrcme") newUrl = `https://vidsrc.me/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}`;
+    if (server === "embedsu") newUrl = `https://embed.su/embed/tv/${data.id}/${data.season}/${data.episode}`;
   } else {
-    if (server === "cinesrc")     newUrl = `https://cinesrc.st/embed/movie/${data.id}`;
-    if (server === "multiembed")  newUrl = `https://multiembed.mov/?video_id=${data.id}&tmdb=1`;
-    if (server === "vidsrcxyz")   newUrl = `https://vidsrc.xyz/embed/movie/${data.id}`;
-    if (server === "vidsrcin")    newUrl = `https://vidsrc.in/embed/movie/${data.id}`;
-    if (server === "vidsrcme")    newUrl = `https://vidsrc.me/embed/movie?tmdb=${data.id}`;
-    if (server === "embedsu")     newUrl = `https://embed.su/embed/movie/${data.id}`;
+    if (server === "cinesrc") newUrl = `https://cinesrc.st/embed/movie/${data.id}`;
+    if (server === "multiembed") newUrl = `https://multiembed.mov/?video_id=${data.id}&tmdb=1`;
+    if (server === "vidsrcxyz") newUrl = `https://vidsrc.xyz/embed/movie/${data.id}`;
+    if (server === "vidsrcin") newUrl = `https://vidsrc.in/embed/movie/${data.id}`;
+    if (server === "vidsrcme") newUrl = `https://vidsrc.me/embed/movie?tmdb=${data.id}`;
+    if (server === "embedsu") newUrl = `https://embed.su/embed/movie/${data.id}`;
   }
   iframe.src = newUrl;
 }
