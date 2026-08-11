@@ -10356,11 +10356,7 @@ function bindEventListeners() {
       if (item) {
         const query = item.dataset.query;
         searchInput.value = query;
-        // Trigger a search
-        const matches = fuzzySearch(query);
-        closeSearchModal();
-        switchView("search");
-        renderFilteredGrid(matches, `Search Results for "${query}"`);
+        searchInput.dispatchEvent(new Event('input'));
       }
     };
   }
@@ -10434,15 +10430,10 @@ function bindEventListeners() {
       if (item) {
         const movieId = item.dataset.id;
         const movie = MOVIES.find(m => m.id === movieId);
-        if (movie) {
-          saveRecentSearch(movie.title);
-          searchInput.value = movie.title;
-          const matches = fuzzySearch(movie.title);
-          searchDropdown.classList.add("hidden");
-          closeSearchModal();
-          switchView("search");
-          renderFilteredGrid(matches, `Search Results for "${movie.title}"`);
-        }
+        if (movie) saveRecentSearch(movie.title);
+        searchDropdown.classList.add("hidden");
+        closeSearchModal();
+        openDetailsModal(movieId);
       }
     };
   }
