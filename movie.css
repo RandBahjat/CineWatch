@@ -2342,12 +2342,17 @@ select {
   flex-shrink: 0;
 }
 
+.mobile-menu-btn ion-icon {
+  pointer-events: none;
+}
+
+
 .mobile-menu-overlay {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(8px);
-  z-index: 200;
+  z-index: 9999;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
