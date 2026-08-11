@@ -574,7 +574,9 @@
                         <div class="input-with-icon">
                             <ion-icon name="lock-closed-outline"></ion-icon>
                             <input type="password" id="loginPassword" class="form-control" placeholder="••••••••" required>
-                            <ion-icon name="eye-outline" class="password-toggle" id="toggleLoginPassword"></ion-icon>
+                            <button type="button" class="password-toggle-btn" id="toggleLoginPassword" aria-label="Show/hide password">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </button>
                         </div>
                         <div class="form-error" id="loginPasswordError"></div>
                     </div>
@@ -610,7 +612,9 @@
                         <div class="input-with-icon">
                             <ion-icon name="lock-closed-outline"></ion-icon>
                             <input type="password" id="signupPassword" class="form-control" placeholder="Password" required>
-                            <ion-icon name="eye-outline" class="password-toggle" id="toggleSignupPassword"></ion-icon>
+                            <button type="button" class="password-toggle-btn" id="toggleSignupPassword" aria-label="Show/hide password">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </button>
                         </div>
                         <div class="password-strength-bar" id="passwordStrengthBar">
                             <div class="strength-segment" id="strengthWeak"></div>

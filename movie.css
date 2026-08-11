@@ -2222,6 +2222,34 @@ select {
   color: #fff;
 }
 
+/* Button-based password toggle (replaces ion-icon direct click) */
+.password-toggle-btn {
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0.3rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+  z-index: 2;
+}
+
+.password-toggle-btn:hover {
+  color: #fff;
+}
+
+.password-toggle-btn ion-icon {
+  pointer-events: none;
+  font-size: 1.2rem;
+}
+
 .form-control:focus {
   border-color: var(--primary);
   outline: none;

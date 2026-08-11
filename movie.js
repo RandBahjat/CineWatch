@@ -10704,7 +10704,9 @@ function bindEventListeners() {
     toggle.onclick = () => {
       const type = input.getAttribute("type") === "password" ? "text" : "password";
       input.setAttribute("type", type);
-      toggle.setAttribute("name", type === "password" ? "eye-outline" : "eye-off-outline");
+      // The icon is now inside a button — find it inside
+      const icon = toggle.querySelector("ion-icon") || toggle;
+      icon.setAttribute("name", type === "password" ? "eye-outline" : "eye-off-outline");
     };
   };
 
@@ -10854,7 +10856,13 @@ function bindEventListeners() {
         submitBtn.disabled = false;
         return;
       }
-      // onAuthStateChanged will handle saveUser + data sync + reload automatically
+      // onAuthStateChanged will trigger cw:authChanged which will reload the page.
+      // As a fallback, also manually save user and update UI in case the event fires late.
+      if (user) {
+        saveUser(user);
+        renderUserBadge();
+        updateWatchlistBadge();
+      }
       closeAuthModal();
       showToast(`Welcome back! 🎬`);
     }
