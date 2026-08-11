@@ -10248,10 +10248,16 @@ function bindEventListeners() {
 
     // Check individual query words against title words
     const queryWords = q.split(/\s+/).filter(Boolean);
-    const titleWords = title.split(/[\s\-:,.'!?]+/).filter(Boolean);
-    const matchedWords = queryWords.filter(qw =>
-      titleWords.some(tw => norm(tw).includes(norm(qw)) || norm(qw).includes(norm(tw)))
-    );
+    const titleWords = title.split(/[\s\-:,.'!?&]+/).filter(Boolean);
+    const matchedWords = queryWords.filter(qw => {
+      const nw = norm(qw);
+      if (!nw) return false;
+      return titleWords.some(tw => {
+        const nt = norm(tw);
+        if (!nt) return false;
+        return nt.includes(nw) || nw.includes(nt);
+      });
+    });
     if (matchedWords.length === queryWords.length) return 80;
     if (matchedWords.length > 0) return 60 * (matchedWords.length / queryWords.length);
 
