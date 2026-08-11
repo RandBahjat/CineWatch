@@ -38,9 +38,9 @@
     <header class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-left">
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <ion-icon name="menu-outline"></ion-icon>
-                </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="document.getElementById('mobileMenuOverlay').classList.add('active'); document.body.style.overflow='hidden';">
+                <ion-icon name="menu-outline" style="pointer-events: none;"></ion-icon>
+            </button>
                 <!-- Logo: hidden on mobile (shown in slide-out menu instead) -->
                 <a href="#" class="brand-logo" id="logoBtn">
                     <span class="logo-icon">🎬</span>
@@ -122,7 +122,7 @@
                     <span class="logo-icon">🎬</span>
                     <span class="logo-text">Cine<span class="logo-accent">Watch</span></span>
                 </a>
-                <button class="mobile-menu-close" id="mobileMenuCloseBtn">&times;</button>
+                <button class="mobile-menu-close" id="mobileMenuCloseBtn" onclick="document.getElementById('mobileMenuOverlay').classList.remove('active'); document.body.style.overflow='';">&times;</button>
             </div>
 
             <!-- Navigation Links -->
