@@ -348,7 +348,7 @@ const MOVIES = [
     duration: "50m",
     genres: ["Action", "Crime", "Thriller", "Drama"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
-    backdrop: "https://static0.pocketlintimages.com/wordpress/wp-content/uploads/2026/07/reacher-season-4-alan-ritchson-1.jpg?w=1600&h=900&fit=crop",
+    backdrop: "https://image.tmdb.org/t/p/original/JYgqp8g2kI3SEus9XBDSHukfBN.jpg",
     videoUrl: "108978",
     overview: "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. He is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
     director: "Nick Santora",
@@ -1130,8 +1130,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 1m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://www.themoviedb.org/t/p/w1280/nXdAh5vUwERL4WGVMaee8RoDEAS.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/muth4OYamXf41G2evdrLEg8d3om.jpg",
+    poster: "https://image.tmdb.org/t/p/original/ltuwOEAJ4rfGVLdC4YYmCYBVcQV.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/zQ8AxTPiCiS5nnwXpwTBPBHSaa5.jpg",
     videoUrl: "557",
     overview: "Peter Parker has always felt like an outsider — awkward, overlooked, and quietly in love with his childhood friend Mary Jane. Everything changes when a spider bite grants him extraordinary strength, agility, and reflexes. As Peter grapples with the immense responsibility that comes with his new powers, a brilliant scientist's tragic transformation into the villainous Green Goblin forces Peter to step fully into his role as Spider-Man, testing his resolve and the people he loves most.",
     director: "Sam Raimi",
@@ -1149,8 +1149,8 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 7m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://www.themoviedb.org/t/p/w1280/aGuvNAaaZuWXYQQ6N2v7DeuP6mB.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/aqaSgTT6jiAdx9aJ4xUI4G2MEXe.jpg",
+    poster: "https://image.tmdb.org/t/p/original/plvv0gzpYXJTnkaiLboFDc7KfYJ.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/gkINAPOuwUFo2Qphs3OUUbjUKUZ.jpg",
     videoUrl: "558",
     overview: "Two years into his life as Spider-Man, Peter Parker is exhausted — his grades are slipping, his relationships are fraying, and Mary Jane seems to be moving on without him. Just as he considers giving up the mask altogether, a failed fusion experiment transforms respected scientist Otto Octavius into the ruthless Doctor Octopus. As Doc Ock's rampage threatens the city, Peter must rediscover what it truly means to carry the responsibility of being a hero.",
     director: "Sam Raimi",
@@ -1168,7 +1168,7 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 19m",
     genres: ["Action", "Adventure", "Sci-Fi"],
-    poster: "https://www.themoviedb.org/t/p/w1280/sJMTTGjtjvrMZ7G0oP9D13wNUum.jpg",
+    poster: "https://image.tmdb.org/t/p/original/vdMbdIb8kKx29tAOzICO2Zm0lBd.jpg",
     backdrop: "https://media.themoviedb.org/t/p/w1000_and_h563_face/9RsLXZ9oy5c1yBCtJ7B43jy0JvD.jpg",
     videoUrl: "559",
     overview: "With fame and confidence going to his head, Peter Parker finds his world spiraling when a strange black substance from space bonds with his Spider-Man suit, amplifying his powers but also corrupting his personality. As his relationships with Mary Jane and Harry Osborn fracture under the strain, Peter must confront both an escaped convict transformed into the sand-manipulating Sandman and the return of an old rival — all while battling the darker version of himself the symbiote is bringing to the surface.",
@@ -8699,8 +8699,27 @@ window.addEventListener("cw:authChanged", async (e) => {
       }
     }
 
+    // Only reload if the user actively just logged in (flag set by login/signup form).
+    // Do NOT reload on auto-restore (Firebase fires authChanged on every page load
+    // when the session is already active — that would cause an infinite reload loop).
+    if (sessionStorage.getItem("cw_loginPending")) {
+      sessionStorage.removeItem("cw_loginPending");
+      window.location.reload();
+      return;
+    }
+
+    // Auto-restore path: just re-render the UI with loaded data
     updateWatchlistBadge();
+    renderUserBadge();
+    // Un-hide the shelf element first — on page load it still has 'hidden' from HTML
+    // because switchView("home") hasn't been called yet to remove it
+    const shelf = document.getElementById("continueWatchingShelf");
+    if (shelf) shelf.classList.remove("hidden");
+    const wlShelf = document.getElementById("watchlistHomeShelf");
+    if (wlShelf) wlShelf.classList.remove("hidden");
+    
     renderContinueWatchingShelf();
+    if (typeof renderWatchlistHomeShelf === "function") renderWatchlistHomeShelf();
     if (state.activeView === "watchlist") renderWatchlist();
   } else {
     saveUser(null);
@@ -8835,6 +8854,7 @@ function initApp() {
     // Render Shelves
     renderCarousels();
     renderContinueWatchingShelf();
+    if (typeof renderWatchlistHomeShelf === "function") renderWatchlistHomeShelf();
 
     // Event Listeners Setup
     bindEventListeners();
@@ -9019,9 +9039,6 @@ function createMovieCardHTML(movie) {
           </div>
         </div>
         <div class="card-overlay">
-          <button class="card-fav-btn ${fav ? "active" : ""}" data-id="${movie.id}" title="Toggle Watchlist">
-            ${fav ? "♥" : "♡"}
-          </button>
           <button class="card-center-play" data-id="${movie.id}" title="Play Now"></button>
         </div>
       </div>
@@ -9056,6 +9073,13 @@ function renderCarousels() {
 function renderContinueWatchingShelf() {
   const shelf = document.getElementById("continueWatchingShelf");
   const track = document.getElementById("continueTrack");
+
+  // Only show for signed-in users
+  if (!state.user) {
+    shelf.classList.add("hidden");
+    return;
+  }
+
   const items = Object.values(state.continueWatching).sort(
     (a, b) => b.timestamp - a.timestamp,
   );
@@ -9070,14 +9094,13 @@ function renderContinueWatchingShelf() {
     .map((item) => {
       const movie = MOVIES.find((m) => m.id === item.movieId);
       if (!movie) return "";
-      const percent = Math.min(
-        100,
-        Math.round((item.currentTime / item.duration) * 100),
-      );
-      const remMins = Math.max(
-        1,
-        Math.round((item.duration - item.currentTime) / 60),
-      );
+
+      // For iframe-tracked entries we don't have real timestamps — show "In Progress"
+      const isIframe = item.isIframe;
+      const percent = isIframe ? 50 : Math.min(100, Math.round((item.currentTime / item.duration) * 100));
+      const metaLabel = isIframe
+        ? `<span>In Progress</span>`
+        : `<span>${Math.max(1, Math.round((item.duration - item.currentTime) / 60))}m left</span><span>${percent}%</span>`;
 
       return `
       <div class="movie-card continue-card" data-id="${movie.id}">
@@ -9091,8 +9114,7 @@ function renderContinueWatchingShelf() {
             <div class="card-details">
               <h4 class="card-title">${movie.title}</h4>
               <div class="card-meta">
-                <span>${remMins}m left</span>
-                <span>${percent}%</span>
+                ${metaLabel}
               </div>
             </div>
           </div>
@@ -9104,6 +9126,51 @@ function renderContinueWatchingShelf() {
     `;
     })
     .join("");
+}
+
+function renderWatchlistHomeShelf() {
+  const shelf = document.getElementById("watchlistHomeShelf");
+  const track = document.getElementById("watchlistHomeTrack");
+  if (!shelf || !track) return;
+
+  // Only show for signed-in users with saved titles
+  if (!state.user || state.favorites.length === 0) {
+    shelf.classList.add("hidden");
+    return;
+  }
+
+  const favMovies = MOVIES.filter((m) => state.favorites.includes(m.id));
+  if (favMovies.length === 0) {
+    shelf.classList.add("hidden");
+    return;
+  }
+
+  shelf.classList.remove("hidden");
+  track.innerHTML = favMovies.map((movie) => {
+    const fav = isFavorite(movie.id);
+    return `
+      <div class="movie-card continue-card" data-id="${movie.id}" style="cursor:pointer;">
+        <div class="card-poster-wrap continue-poster-wrap">
+          <img src="${movie.backdrop || movie.poster}" alt="${movie.title}" class="card-poster">
+          <div class="card-overlay">
+            <button class="card-center-play" data-id="${movie.id}">▶</button>
+            <div class="card-details">
+              <h4 class="card-title">${movie.title}</h4>
+              <div class="card-meta">
+                <span>${movie.year}</span>
+                <span>${movie.type}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join("");
+
+  // Click opens details modal
+  track.querySelectorAll(".movie-card").forEach((card) => {
+    card.onclick = () => openDetailsModal(card.dataset.id);
+  });
 }
 
 function renderWatchlist() {
@@ -9336,6 +9403,9 @@ function switchView(viewName) {
   const filteredSection = document.getElementById("filteredSection");
   const moviesSection = document.getElementById("moviesSection");
   const seriesSection = document.getElementById("seriesSection");
+  const detailsSection = document.getElementById("detailsSection");
+
+  const watchlistHomeShelf = document.getElementById("watchlistHomeShelf");
 
   // Helper: hide all dynamic sections
   const hideAll = () => {
@@ -9345,8 +9415,19 @@ function switchView(viewName) {
     filteredSection.classList.add("hidden");
     moviesSection.classList.add("hidden");
     seriesSection.classList.add("hidden");
+    if (detailsSection) detailsSection.classList.add("hidden");
     if (continueShelf) continueShelf.classList.add("hidden");
+    if (watchlistHomeShelf) watchlistHomeShelf.classList.add("hidden");
   };
+
+  const navbar = document.getElementById("navbar");
+  if (navbar) {
+    if (viewName === "details") {
+      navbar.classList.add("hidden");
+    } else {
+      navbar.classList.remove("hidden");
+    }
+  }
 
   if (viewName === "home") {
     heroBanner.classList.remove("hidden");
@@ -9355,7 +9436,12 @@ function switchView(viewName) {
     watchlistSection.classList.add("hidden");
     moviesSection.classList.add("hidden");
     seriesSection.classList.add("hidden");
+    if (detailsSection) detailsSection.classList.add("hidden");
+    // Explicitly un-hide the shelves before rendering so they re-appear after navigating away
+    if (continueShelf) continueShelf.classList.remove("hidden");
+    if (watchlistHomeShelf) watchlistHomeShelf.classList.remove("hidden");
     renderContinueWatchingShelf();
+    renderWatchlistHomeShelf();
   } else if (viewName === "movies") {
     hideAll();
     moviesSection.classList.remove("hidden");
@@ -9375,13 +9461,17 @@ function switchView(viewName) {
       .map((i) => MOVIES.find((m) => m.id === i.movieId))
       .filter(Boolean);
     filteredSection.classList.remove("hidden");
-    renderFilteredGrid(items, "⏱️ Continue Watching");
+    renderFilteredGrid(items, "Continue Watching");
   } else if (viewName === "genres") {
     hideAll();
     filteredSection.classList.remove("hidden");
     renderFilteredGrid(MOVIES, "Explore All Titles");
+  } else if (viewName === "details") {
+    hideAll();
+    if (detailsSection) detailsSection.classList.remove("hidden");
   }
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  // Snap instantly to top — the padding-top on .main-content already clears the fixed navbar.
+  window.scrollTo({ top: 0, behavior: "instant" });
 }
 
 function updateWatchlistBadge() {
@@ -9428,105 +9518,111 @@ function renderUserBadge() {
   if (state.user) {
     const userAvatar = state.user.avatar || "🍿";
     const userName = state.user.name || "User";
+    const userEmail = state.user.email || "";
+    const createdAt = state.user.createdAt
+      ? new Date(state.user.createdAt).toLocaleDateString()
+      : "";
 
+    // Render only the avatar icon button in the navbar
     container.innerHTML = `
-      <div class="user-profile-wrapper">
-        <button class="profile-badge-btn" id="profileBadgeToggle" aria-label="User Profile">
-          ${renderAvatarHTML(userAvatar, "badge-avatar")}
-          <span class="user-name-text">${userName}</span>
-          <span class="dropdown-arrow">▾</span>
-        </button>
-        <div class="profile-dropdown-menu" id="profileDropdownMenu">
-          <div class="dropdown-header">
-            <div class="dropdown-avatar-display">${renderAvatarHTML(userAvatar, "header-avatar")}</div>
-            <div class="dropdown-user-details">
-              <div class="dropdown-name">${userName}</div>
-              <div class="dropdown-email">${state.user.email}</div>
-            </div>
-          </div>
-          
-          <div class="dropdown-divider"></div>
-          
-          <div class="avatar-picker-section">
-            <div class="picker-header">
-              <span class="picker-title">Choose Avatar</span>
-              <label for="customAvatarInput" class="upload-avatar-label">
-                📷 Upload Photo
-              </label>
-              <input type="file" id="customAvatarInput" accept="image/*" class="hidden-file-input" style="display:none;">
-            </div>
-            <div class="avatar-grid">
-              <button class="avatar-option ${userAvatar === '🍿' ? 'active' : ''}" data-avatar="🍿">🍿</button>
-              <button class="avatar-option ${userAvatar === '🎬' ? 'active' : ''}" data-avatar="🎬">🎬</button>
-              <button class="avatar-option ${userAvatar === '🦸' ? 'active' : ''}" data-avatar="🦸">🦸</button>
-              <button class="avatar-option ${userAvatar === '🐉' ? 'active' : ''}" data-avatar="🐉">🐉</button>
-              <button class="avatar-option ${userAvatar === '🤖' ? 'active' : ''}" data-avatar="🤖">🤖</button>
-              <button class="avatar-option ${userAvatar === '🕵️' ? 'active' : ''}" data-avatar="🕵️">🕵️</button>
-              <button class="avatar-option ${userAvatar === '👑' ? 'active' : ''}" data-avatar="👑">👑</button>
-              <button class="avatar-option ${userAvatar === '🚀' ? 'active' : ''}" data-avatar="🚀">🚀</button>
-            </div>
-          </div>
+      <button class="profile-icon-btn" id="profileBadgeToggle" aria-label="My Account">
+        ${renderAvatarHTML(userAvatar, "badge-avatar")}
+      </button>
+    `;
 
-          <div class="dropdown-divider"></div>
+    // Create or reuse the side panel
+    let panel = document.getElementById("accountSidePanel");
+    if (!panel) {
+      panel = document.createElement("div");
+      panel.id = "accountSidePanel";
+      panel.className = "account-side-panel";
+      document.body.appendChild(panel);
+    }
 
-          <button class="dropdown-logout-btn" id="dropdownLogoutBtn">
-            <ion-icon name="log-out-outline"></ion-icon> Sign Out
+    panel.innerHTML = `
+      <div class="account-panel-inner">
+        <div class="account-panel-header">
+          <span class="account-panel-title">My Account</span>
+          <button class="account-panel-close" id="accountPanelClose">&times;</button>
+        </div>
+
+        <div class="account-panel-profile">
+          <div class="account-panel-avatar">${renderAvatarHTML(userAvatar, "panel-avatar-img")}</div>
+          <div class="account-panel-name" id="panelUserName">${userName}</div>
+          <div class="account-panel-date"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Member since ${createdAt || "Unknown"}</div>
+        </div>
+
+        <div class="account-panel-section-label">⚙ SETTINGS</div>
+
+        <div class="account-panel-actions">
+          <label for="panelAvatarInput" class="account-panel-action-btn" id="uploadAvatarBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
+            Upload avatar
+          </label>
+          <input type="file" id="panelAvatarInput" accept="image/*" style="display:none;">
+
+          <button class="account-panel-action-btn" id="editUsernameBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            Edit username
           </button>
         </div>
+
+        <button class="account-panel-logout" id="panelLogoutBtn">
+          <ion-icon name="log-out-outline"></ion-icon> Logout
+        </button>
       </div>
     `;
 
-    const toggleBtn = document.getElementById("profileBadgeToggle");
-    const menu = document.getElementById("profileDropdownMenu");
+    // Overlay for closing on outside click
+    let overlay = document.getElementById("accountPanelOverlay");
+    if (!overlay) {
+      overlay = document.createElement("div");
+      overlay.id = "accountPanelOverlay";
+      overlay.className = "account-panel-overlay";
+      document.body.appendChild(overlay);
+    }
 
-    toggleBtn.onclick = (e) => {
+    function openPanel() {
+      panel.classList.add("open");
+      overlay.classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closePanel() {
+      panel.classList.remove("open");
+      overlay.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+
+    document.getElementById("profileBadgeToggle").onclick = (e) => {
       e.stopPropagation();
-      menu.classList.toggle("open");
-      toggleBtn.classList.toggle("active");
+      panel.classList.contains("open") ? closePanel() : openPanel();
     };
 
-    // Preset avatar selector logic
-    menu.querySelectorAll(".avatar-option").forEach((opt) => {
-      opt.onclick = (e) => {
-        e.stopPropagation();
-        const selectedAvatar = opt.dataset.avatar;
-        state.user.avatar = selectedAvatar;
-        saveUser(state.user);
+    document.getElementById("accountPanelClose").onclick = closePanel;
+    overlay.onclick = closePanel;
 
-        if (window.CW_Firebase) {
-          window.CW_Firebase.updateAvatar(selectedAvatar);
-        }
-
-        showToast("Profile avatar updated! ✨");
-        renderUserBadge();
-      };
-    });
-
-    // Custom Device Library Photo Upload
-    const avatarInput = document.getElementById("customAvatarInput");
+    // Avatar upload
+    const avatarInput = document.getElementById("panelAvatarInput");
     if (avatarInput) {
       avatarInput.onchange = (e) => {
         const file = e.target.files[0];
         if (!file) return;
-
         const reader = new FileReader();
         reader.onload = (event) => {
           const img = new Image();
           img.onload = () => {
-            // Resize to 140x140 for crisp display & lightweight storage
             const canvas = document.createElement("canvas");
             const ctx = canvas.getContext("2d");
             canvas.width = 140;
             canvas.height = 140;
             ctx.drawImage(img, 0, 0, 140, 140);
             const dataUrl = canvas.toDataURL("image/jpeg", 0.88);
-
             state.user.avatar = dataUrl;
             saveUser(state.user);
-            if (window.CW_Firebase) {
-              window.CW_Firebase.updateAvatar(dataUrl);
-            }
-            showToast("Custom profile photo uploaded! 📸");
+            if (window.CW_Firebase) window.CW_Firebase.updateAvatar(dataUrl);
+            showToast("Profile photo updated! 📸");
+            closePanel();
             renderUserBadge();
           };
           img.src = event.target.result;
@@ -9535,24 +9631,51 @@ function renderUserBadge() {
       };
     }
 
-    // Logout logic
-    document.getElementById("dropdownLogoutBtn").onclick = (e) => {
-      e.stopPropagation();
-      menu.classList.remove("open");
-      if (window.CW_Firebase) {
-        window.CW_Firebase.signOut();
+    // Edit username
+    document.getElementById("editUsernameBtn").onclick = () => {
+      const nameEl = document.getElementById("panelUserName");
+      const currentName = nameEl ? nameEl.textContent.trim() : (state.user.name || "");
+
+      // Replace name display with inline input
+      if (nameEl) {
+        nameEl.outerHTML = `
+          <div class="edit-username-wrap" id="editUsernameWrap">
+            <input type="text" id="usernameInput" class="edit-username-input" value="${currentName}" maxlength="30" />
+            <button class="save-username-btn" id="saveUsernameBtn">Save</button>
+          </div>
+        `;
       }
+
+      setTimeout(() => {
+        const input = document.getElementById("usernameInput");
+        if (input) { input.focus(); input.select(); }
+
+        const saveBtn = document.getElementById("saveUsernameBtn");
+        if (saveBtn) {
+          saveBtn.onclick = async () => {
+            const newName = document.getElementById("usernameInput")?.value.trim();
+            if (!newName) { showToast("Username cannot be empty."); return; }
+            state.user.name = newName;
+            saveUser(state.user);
+            // Update in Firebase if available
+            if (window.CW_Firebase?.updateProfile) {
+              await window.CW_Firebase.updateProfile({ displayName: newName }).catch(() => {});
+            }
+            renderUserProfile();
+            showToast("✅ Username updated!");
+          };
+        }
+      }, 50);
+    };
+
+    // Logout
+    document.getElementById("panelLogoutBtn").onclick = () => {
+      closePanel();
+      if (window.CW_Firebase) window.CW_Firebase.signOut();
       saveUser(null);
       showToast("Signed out successfully 👋");
     };
 
-    // Close dropdown on outside click
-    document.addEventListener("click", (e) => {
-      if (!container.contains(e.target)) {
-        menu.classList.remove("open");
-        toggleBtn.classList.remove("active");
-      }
-    });
   } else {
     container.innerHTML = `
       <button class="nav-user-icon-btn" id="headerLoginBtn" title="Sign In">
@@ -9566,6 +9689,7 @@ function renderUserBadge() {
   }
 }
 
+
 // ==========================================
 // 4. MODALS (DETAILS, PLAYER, AUTH)
 // ==========================================
@@ -9574,46 +9698,52 @@ function openDetailsModal(movieId) {
   const movie = MOVIES.find((m) => m.id === movieId);
   if (!movie) return;
 
-  const modal = document.getElementById("detailsModal");
-  document.getElementById("detailsBg").style.backgroundImage =
-    `url('${movie.backdrop}')`;
-  document.getElementById("detailsPoster").src = movie.poster;
-  document.getElementById("detailsTitle").textContent = movie.title;
-  if (document.getElementById("detailsType")) {
-    document.getElementById("detailsType").textContent = movie.type || "Movie";
+  // We are entering a new view, so we should keep track of where we came from if we aren't already in details
+  if (state.activeView !== "details") {
+    state.previousView = state.activeView;
   }
+
+  document.getElementById("detailsBg").style.backgroundImage = `url('${movie.backdrop || movie.poster}')`;
+  document.getElementById("detailsTitle").textContent = movie.title;
   document.getElementById("detailsRating").textContent = movie.rating;
   document.getElementById("detailsYear").textContent = movie.year;
-  document.getElementById("detailsAge").textContent = movie.age;
   document.getElementById("detailsDuration").textContent = movie.duration;
+  
+  if (document.getElementById("detailsGenres")) {
+    document.getElementById("detailsGenres").textContent = movie.genres.join(" - ");
+  }
+  
   document.getElementById("detailsOverview").textContent = movie.overview;
-  document.getElementById("detailsDirector").textContent = movie.director;
-  document.getElementById("detailsCast").textContent = movie.cast.join(", ");
 
-  const tags = document.getElementById("detailsTags");
-  tags.innerHTML = movie.genres
-    .map((g) => `<span class="tag">${g}</span>`)
-    .join("");
-
+  const favCheckbox = document.getElementById("detailsFavCheckbox");
   const favBtn = document.getElementById("detailsFavBtn");
-  const favText = document.getElementById("detailsFavText");
   const fav = isFavorite(movie.id);
-  favText.textContent = fav ? "In Watchlist" : "Add to Watchlist";
-  if (fav) favBtn.classList.add("btn-primary");
-  else favBtn.classList.remove("btn-primary");
 
-  favBtn.onclick = () => {
+  // Sync checkbox state with actual favorites state
+  favCheckbox.checked = fav;
+
+  favBtn.onclick = (e) => {
+    e.preventDefault(); // Prevent default label click behavior
     const isNowFav = toggleFavorite(movie.id);
-    favText.textContent = isNowFav ? "In Watchlist" : "Add to Watchlist";
-    if (isNowFav) favBtn.classList.add("btn-primary");
-    else favBtn.classList.remove("btn-primary");
+    favCheckbox.checked = isNowFav;
   };
 
-  const reportBtn = document.getElementById("detailsReportBtn");
-  if (reportBtn) {
-    reportBtn.onclick = () => {
-      openReportModal(`Issue with: ${movie.title}`);
-    };
+  // Generate You May Like Section
+  const similarsGrid = document.getElementById("detailsSimilarsGrid");
+  const similarsSection = document.getElementById("detailsSimilarsSection");
+  if (similarsGrid && similarsSection) {
+    let similarMovies = MOVIES.filter(m => m.id !== movie.id && m.genres.some(g => movie.genres.includes(g)));
+    
+    // Shuffle the array to show random matching movies every time
+    similarMovies = similarMovies.sort(() => 0.5 - Math.random());
+    
+    const limited = similarMovies.slice(0, 12);
+    if (limited.length > 0) {
+      similarsSection.classList.remove("hidden");
+      similarsGrid.innerHTML = limited.map(createBrowseCardHTML).join("");
+    } else {
+      similarsSection.classList.add("hidden");
+    }
   }
 
   // ── TV Show: show season/episode picker ──────────────────────────────────
@@ -9642,39 +9772,64 @@ function openDetailsModal(movieId) {
       return "";
     }
 
-    function renderEpisodes(seasonNum) {
+    function renderEpisodes(seasonNum, filter = "") {
       const seasonData = movie.seasons.find((s) => s.season === parseInt(seasonNum));
       if (!seasonData) return;
 
-      episodeGrid.innerHTML = seasonData.episodes.map((ep) => {
+      const filtered = filter
+        ? seasonData.episodes.filter(ep => ep.title.toLowerCase().includes(filter.toLowerCase()))
+        : seasonData.episodes;
+
+      episodeGrid.innerHTML = filtered.map((ep) => {
         const resolvedUrl = getEpisodeUrl(ep, seasonData);
+        const thumb = ep.thumbnail || movie.backdrop || movie.poster || "";
+        const duration = ep.duration || "";
+        const overview = ep.overview || "";
         return `
-        <div class="episode-card ${resolvedUrl ? "" : "episode-unavailable"}" 
+        <div class="episode-row ${resolvedUrl ? "" : "episode-unavailable"}" 
              data-video="${resolvedUrl}" 
              data-title="${movie.title} — S${seasonData.season}E${ep.episode}: ${ep.title}"
              title="${resolvedUrl ? "Click to watch" : "Not available yet"}">
-          <div class="episode-number">E${ep.episode}</div>
-          <div class="episode-info">
-            <span class="episode-title">${ep.title}</span>
-            ${resolvedUrl ? '<span class="episode-play-icon">▶</span>' : '<span class="episode-soon">Soon</span>'}
+          <div class="episode-row-thumb">
+            ${thumb ? `<img src="${thumb}" alt="${ep.title}" loading="lazy" class="ep-thumb-img">` : ""}
+            <div class="ep-thumb-overlay">
+              <span class="ep-num-badge">${ep.episode}</span>
+              ${resolvedUrl ? '<div class="ep-play-circle">▶</div>' : ""}
+            </div>
           </div>
+          <div class="episode-row-info">
+            <div class="ep-row-top">
+              <span class="ep-row-title">${ep.title}</span>
+              ${duration ? `<span class="ep-row-duration">${duration}</span>` : ""}
+            </div>
+            ${overview ? `<p class="ep-row-overview">${overview}</p>` : ""}
+          </div>
+          ${resolvedUrl ? `` : `<span class="episode-soon">Soon</span>`}
         </div>
       `;
       }).join("");
 
       // Click to play episode
-      episodeGrid.querySelectorAll(".episode-card:not(.episode-unavailable)").forEach((card) => {
+      episodeGrid.querySelectorAll(".episode-row:not(.episode-unavailable)").forEach((card) => {
         card.onclick = () => {
           const videoUrl = card.dataset.video;
           const epTitle = card.dataset.title;
-          modal.classList.add("hidden");
           openVideoPlayerWithUrl(videoUrl, epTitle, movie.id);
         };
       });
+
+
     }
 
     renderEpisodes(seasonSelect.value);
     seasonSelect.onchange = () => renderEpisodes(seasonSelect.value);
+
+    // Search filter
+    const epSearch = document.getElementById("episodeSearch");
+    if (epSearch) {
+      epSearch.value = "";
+      epSearch.oninput = () => renderEpisodes(seasonSelect.value, epSearch.value);
+    }
 
     // Play button plays first available episode of the selected season
     playBtn.onclick = () => {
@@ -9685,7 +9840,6 @@ function openDetailsModal(movieId) {
       const epUrl = getEpisodeUrl(firstEp, seasonData);
       if (epUrl) {
         const epTitle = `${movie.title} — S${seasonData.season}E${firstEp.episode}: ${firstEp.title}`;
-        modal.classList.add("hidden");
         openVideoPlayerWithUrl(epUrl, epTitle, movie.id);
       }
     };
@@ -9695,12 +9849,23 @@ function openDetailsModal(movieId) {
     tvSection.classList.add("hidden");
     playBtn.textContent = "▶ Watch Movie";
     playBtn.onclick = () => {
-      modal.classList.add("hidden");
       openVideoPlayer(movie.id);
     };
   }
 
-  modal.classList.remove("hidden");
+  // Similars Button Logic
+  const similarsBtn = document.getElementById("detailsSimilarsBtn");
+  if (similarsBtn) {
+    similarsBtn.onclick = () => {
+      const section = document.getElementById("detailsSimilarsSection");
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    };
+  }
+
+  // Switch to details page view
+  switchView("details");
 }
 
 // Open the video player with a direct URL (used for TV episodes)
@@ -9929,11 +10094,30 @@ function closeVideoPlayer() {
   video.oncanplay = null;
 
   if (state.currentPlayingMovie && video.currentTime > 0 && !video.classList.contains("hidden")) {
+    // Native <video> player — save real progress
     updateContinueWatching(
       state.currentPlayingMovie.id,
       video.currentTime,
       video.duration,
     );
+  } else if (state.currentPlayingMovie && iframe && !iframe.classList.contains("hidden") && iframe.src) {
+    // Iframe embed (VidKing etc.) — we can't read playback time from the iframe,
+    // so save with a placeholder so the title appears in Continue Watching.
+    const cwId = state.currentPlayingMovie.id;
+    if (cwId && cwId !== "_episode_" && state.user) {
+      state.continueWatching[cwId] = {
+        movieId: cwId,
+        currentTime: 60,   // placeholder — "in progress"
+        duration: 7200,    // placeholder 2h duration
+        isIframe: true,
+        timestamp: Date.now(),
+      };
+      localStorage.setItem(KEYS.CONTINUE, JSON.stringify(state.continueWatching));
+      if (window.CW_Firebase && state.user) {
+        window.CW_Firebase.sync(state.favorites, state.continueWatching);
+      }
+      renderContinueWatchingShelf();
+    }
   }
 
   video.pause();
@@ -9944,6 +10128,11 @@ function closeVideoPlayer() {
   if (iframe) iframe.src = "";
   state.currentPlayingMovie = null;
   modal.classList.add("hidden");
+
+  // Re-open the details modal so the user returns to the movie/show info page
+  if (movieId && movieId !== "_episode_") {
+    openDetailsModal(movieId);
+  }
 }
 
 function setupVideoControls(video) {
@@ -10460,7 +10649,7 @@ function bindEventListeners() {
 
   // Close modals
   document.getElementById("closeDetailsBtn").onclick = () => {
-    document.getElementById("detailsModal").classList.add("hidden");
+    switchView(state.previousView || "home");
   };
   document.getElementById("closePlayerBtn").onclick = closeVideoPlayer;
   document.getElementById("closePlayerX").onclick = closeVideoPlayer;
@@ -10654,15 +10843,18 @@ function bindEventListeners() {
     submitBtn.disabled = true;
 
     if (window.CW_Firebase) {
+      // Mark that this is a real login action so cw:authChanged knows to reload
+      sessionStorage.setItem("cw_loginPending", "1");
       const { user, error } = await window.CW_Firebase.signIn(email, pass);
       if (error) {
+        sessionStorage.removeItem("cw_loginPending"); // clear flag on error
         alertEl.textContent = error;
         alertEl.classList.remove("hidden");
         submitBtn.innerHTML = '<ion-icon name="log-in-outline"></ion-icon> Sign In';
         submitBtn.disabled = false;
         return;
       }
-      // onAuthStateChanged will handle saveUser + data sync automatically
+      // onAuthStateChanged will handle saveUser + data sync + reload automatically
       closeAuthModal();
       showToast(`Welcome back! 🎬`);
     }
@@ -10716,8 +10908,11 @@ function bindEventListeners() {
     submitBtn.disabled = true;
 
     if (window.CW_Firebase) {
+      // Mark that this is a real sign-up action so cw:authChanged knows to reload
+      sessionStorage.setItem("cw_loginPending", "1");
       const { user, error } = await window.CW_Firebase.signUp(name, email, pass);
       if (error) {
+        sessionStorage.removeItem("cw_loginPending"); // clear flag on error
         alertEl.textContent = error;
         alertEl.classList.remove("hidden");
         submitBtn.innerHTML = '<ion-icon name="person-add-outline"></ion-icon> Create Account';
@@ -10911,25 +11106,14 @@ window.currentIframeData = null;
 
 function updateIframeServer() {
   if (!window.currentIframeData) return;
-  const server = document.getElementById("videoServerSelect").value;
   const data = window.currentIframeData;
   const iframe = document.getElementById("iframeElement");
 
   let newUrl = "";
   if (data.type === "tv") {
-    if (server === "cinesrc") newUrl = `https://cinesrc.st/embed/tv/${data.id}?s=${data.season}&e=${data.episode}`;
-    if (server === "multiembed") newUrl = `https://multiembed.mov/?video_id=${data.id}&tmdb=1&s=${data.season}&e=${data.episode}`;
-    if (server === "vidsrcxyz") newUrl = `https://vidsrc.xyz/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}`;
-    if (server === "vidsrcin") newUrl = `https://vidsrc.in/embed/tv/${data.id}/${data.season}/${data.episode}`;
-    if (server === "vidsrcme") newUrl = `https://vidsrc.me/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}`;
-    if (server === "embedsu") newUrl = `https://embed.su/embed/tv/${data.id}/${data.season}/${data.episode}`;
+    newUrl = `https://www.vidking.net/embed/tv/${data.id}/${data.season}/${data.episode}`;
   } else {
-    if (server === "cinesrc") newUrl = `https://cinesrc.st/embed/movie/${data.id}`;
-    if (server === "multiembed") newUrl = `https://multiembed.mov/?video_id=${data.id}&tmdb=1`;
-    if (server === "vidsrcxyz") newUrl = `https://vidsrc.xyz/embed/movie/${data.id}`;
-    if (server === "vidsrcin") newUrl = `https://vidsrc.in/embed/movie/${data.id}`;
-    if (server === "vidsrcme") newUrl = `https://vidsrc.me/embed/movie?tmdb=${data.id}`;
-    if (server === "embedsu") newUrl = `https://embed.su/embed/movie/${data.id}`;
+    newUrl = `https://www.vidking.net/embed/movie/${data.id}`;
   }
   iframe.src = newUrl;
 }
