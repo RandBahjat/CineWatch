@@ -87,8 +87,13 @@
         <div class="search-modal-content">
             <div class="search-modal-header">
                 <h2>Search</h2>
-                <div class="search-header-right">
-                    <button class="search-filter-btn">Movies & TV Shows <ion-icon name="chevron-down-outline"></ion-icon></button>
+                <div class="search-header-right" style="position: relative;">
+                    <button class="search-filter-btn" id="searchFilterBtn">Movies & Series <ion-icon name="chevron-down-outline"></ion-icon></button>
+                    <div class="search-filter-dropdown hidden" id="searchFilterDropdown">
+                        <div class="filter-option active" data-filter="all">Movies & Series</div>
+                        <div class="filter-option" data-filter="movie">Movies Only</div>
+                        <div class="filter-option" data-filter="series">Series Only</div>
+                    </div>
                     <button class="search-modal-close" id="searchModalClose">
                         <ion-icon name="close-outline"></ion-icon>
                     </button>
@@ -332,7 +337,7 @@
         <section class="browse-section hidden" id="seriesSection">
             <div class="browse-section-header">
                 <div class="browse-title-row">
-                    <h1 class="browse-title">📺 Series &amp; TV Shows</h1>
+                    <h1 class="browse-title">📺 Series</h1>
                     <span class="browse-count" id="seriesCount">0 titles</span>
                 </div>
                 <!-- Genre Filter Bar -->

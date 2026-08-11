@@ -8415,6 +8415,7 @@ const state = {
   moviesFilter: "all",
   seriesPage: 1,
   seriesFilter: "all",
+  searchFilter: "all",
 };
 
 // initialHeroState no longer needed since we use a physical DOM track
@@ -10276,7 +10277,12 @@ function bindEventListeners() {
   function fuzzySearch(query) {
     return MOVIES
       .map(m => ({ movie: m, score: searchScore(m, query) }))
-      .filter(({ score }) => score > 0)
+      .filter(({ score, movie }) => {
+        if (score === 0) return false;
+        if (state.searchFilter === 'movie' && movie.type !== 'Movie') return false;
+        if (state.searchFilter === 'series' && movie.type !== 'TV Show') return false;
+        return true;
+      })
       .sort((a, b) => b.score - a.score)
       .map(({ movie }) => movie);
   }
@@ -10292,6 +10298,8 @@ function bindEventListeners() {
   const searchRecentSection = document.getElementById("searchRecentSection");
   const searchRecentList = document.getElementById("searchRecentList");
   const clearRecentBtn = document.getElementById("clearRecentBtn");
+  const searchFilterBtn = document.getElementById("searchFilterBtn");
+  const searchFilterDropdown = document.getElementById("searchFilterDropdown");
 
   // Load Recents
   function getRecentSearches() {
@@ -10346,6 +10354,34 @@ function bindEventListeners() {
   if (navSearchBtn) navSearchBtn.onclick = openSearchModal;
   if (searchModalClose) searchModalClose.onclick = closeSearchModal;
   if (searchModalBackdrop) searchModalBackdrop.onclick = closeSearchModal;
+
+  // Search Filter Dropdown Logic
+  if (searchFilterBtn && searchFilterDropdown) {
+    searchFilterBtn.onclick = () => {
+      searchFilterDropdown.classList.toggle("hidden");
+    };
+    
+    searchFilterDropdown.querySelectorAll(".filter-option").forEach(opt => {
+      opt.onclick = () => {
+        searchFilterDropdown.querySelectorAll(".filter-option").forEach(o => o.classList.remove("active"));
+        opt.classList.add("active");
+        searchFilterBtn.innerHTML = `${opt.textContent} <ion-icon name="chevron-down-outline"></ion-icon>`;
+        searchFilterDropdown.classList.add("hidden");
+        
+        state.searchFilter = opt.dataset.filter;
+        
+        if (searchInput && searchInput.value.trim().length > 0) {
+           searchInput.dispatchEvent(new Event('input'));
+        }
+      };
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!searchFilterBtn.contains(e.target) && !searchFilterDropdown.contains(e.target)) {
+        searchFilterDropdown.classList.add("hidden");
+      }
+    });
+  }
 
   // Clear Recents
   if (clearRecentBtn) {
