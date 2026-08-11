@@ -114,7 +114,7 @@
     </div>
 
     <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay" onclick="if(event.target === this) { this.classList.remove('active'); document.body.style.overflow=''; }">
         <div class="mobile-menu">
             <!-- Logo at top of menu -->
             <div class="mobile-menu-header">
