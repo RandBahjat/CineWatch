@@ -10258,17 +10258,17 @@ function bindEventListeners() {
         return nt.includes(nw) || nw.includes(nt);
       });
     });
+    // REQUIRE all words to match the title to be considered a title match
     if (matchedWords.length === queryWords.length) return 80;
-    if (matchedWords.length > 0) return 60 * (matchedWords.length / queryWords.length);
 
-    // Check genres
-    if (movie.genres && movie.genres.some(g => norm(g).includes(qNorm) || qNorm.includes(norm(g)))) return 50;
+    // Check genres (full query match)
+    if (movie.genres && movie.genres.some(g => norm(g) === qNorm || norm(g).includes(qNorm))) return 50;
 
-    // Check cast
-    if (movie.cast && movie.cast.some(c => norm(c).includes(qNorm) || qNorm.split(' ').some(qw => norm(c).includes(norm(qw))))) return 40;
+    // Check cast (full query match)
+    if (movie.cast && movie.cast.some(c => norm(c).includes(qNorm))) return 40;
 
-    // Check director
-    if (movie.director && (norm(movie.director).includes(qNorm) || qNorm.split(' ').some(qw => norm(movie.director).includes(norm(qw))))) return 30;
+    // Check director (full query match)
+    if (movie.director && norm(movie.director).includes(qNorm)) return 30;
 
     return 0;
   }
