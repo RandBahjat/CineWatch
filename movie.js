@@ -25,7 +25,7 @@
 // 1. HIGHLIGHTS & TRENDING (EDIT THIS SECTION)
 // ==========================================
 // Change these titles to easily swap which movies appear in the top slider and trending row!
-const FEATURED_TITLES = ["House of the Dragon","The Invite","Spider-Man Brand New Day", "The Odyssey", "Obsession", "Supergirl"];
+const FEATURED_TITLES = ["House of the Dragon", "The Invite", "Spider-Man Brand New Day", "The Odyssey", "Obsession", "Supergirl"];
 const TRENDING_TITLES = ["Supergirl", "Avengers: Age of Ultron", "Avengers: Infinity War", "Avengers: Endgame"];
 
 // ==========================================
@@ -8302,7 +8302,7 @@ const MOVIES = [
     rating: 8.3,
     age: "TV-MA",
     duration: "1h",
-    genres: ["Fantasy", "Drama", "Action","Adventure"],
+    genres: ["Fantasy", "Drama", "Action", "Adventure"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8jjTPo8j2dG6eDBYZOxgEpzSGAB.jpg",
     videoUrl: "",
@@ -8488,7 +8488,7 @@ window.addEventListener("cw:authChanged", async (e) => {
     if (shelf) shelf.classList.remove("hidden");
     const wlShelf = document.getElementById("watchlistHomeShelf");
     if (wlShelf) wlShelf.classList.remove("hidden");
-    
+
     renderContinueWatchingShelf();
     if (typeof renderWatchlistHomeShelf === "function") renderWatchlistHomeShelf();
     if (state.activeView === "watchlist") renderWatchlist();
@@ -8809,7 +8809,7 @@ function createMovieCardHTML(movie) {
 
 function renderCarousels() {
   const shelfMap = {
-    trendingTrack: MOVIES.filter((m) => m.trending).sort((a,b) => TRENDING_TITLES.indexOf(a.title) - TRENDING_TITLES.indexOf(b.title)),
+    trendingTrack: MOVIES.filter((m) => m.trending).sort((a, b) => TRENDING_TITLES.indexOf(a.title) - TRENDING_TITLES.indexOf(b.title)),
     scifiTrack: MOVIES.filter((m) => m.genres.includes("Sci-Fi") || m.genres.includes("Science-Fiction")).slice(0, 15),
     actionTrack: MOVIES.filter((m) => m.genres.includes("Action")).slice(0, 15),
     animeTrack: MOVIES.filter((m) => m.genres.includes("Animation") || m.genres.includes("Anime")).slice(0, 15),
@@ -9417,7 +9417,7 @@ function renderUserBadge() {
             saveUser(state.user);
             // Update in Firebase if available
             if (window.CW_Firebase?.updateProfile) {
-              await window.CW_Firebase.updateProfile({ displayName: newName }).catch(() => {});
+              await window.CW_Firebase.updateProfile({ displayName: newName }).catch(() => { });
             }
             renderUserProfile();
             showToast("✅ Username updated!");
@@ -9478,104 +9478,104 @@ function openDetailsModal(movieId) {
   setTimeout(() => {
     const detailsSection = document.getElementById("detailsSection");
     if (detailsSection) detailsSection.scrollTo(0, 0);
-    
+
     document.getElementById("detailsBg").style.backgroundImage = `url('${movie.backdrop || movie.poster}')`;
     document.getElementById("detailsTitle").textContent = movie.title;
     document.getElementById("detailsRating").textContent = movie.rating;
     document.getElementById("detailsYear").textContent = movie.year;
     document.getElementById("detailsDuration").textContent = movie.duration;
-    
+
     if (document.getElementById("detailsGenres")) {
       document.getElementById("detailsGenres").innerHTML = movie.genres.join(" &middot; ");
     }
-    
+
     document.getElementById("detailsOverview").textContent = movie.overview;
 
-  const castContainer = document.getElementById("detailsCastContainer");
-  const castText = document.getElementById("detailsCastText");
-  if (castContainer && castText) {
-    if (movie.cast && movie.cast.length > 0) {
-      castText.textContent = movie.cast.join(", ");
-      castContainer.classList.remove("hidden");
-    } else {
-      castContainer.classList.add("hidden");
-    }
-  }
-
-  const favCheckbox = document.getElementById("detailsFavCheckbox");
-  const favBtn = document.getElementById("detailsFavBtn");
-  const fav = isFavorite(movie.id);
-
-  // Sync checkbox state with actual favorites state
-  favCheckbox.checked = fav;
-
-  favBtn.onclick = (e) => {
-    e.preventDefault(); // Prevent default label click behavior
-    const isNowFav = toggleFavorite(movie.id);
-    favCheckbox.checked = isNowFav;
-  };
-
-  // Generate You May Like Section
-  const similarsGrid = document.getElementById("detailsSimilarsGrid");
-  const similarsSection = document.getElementById("detailsSimilarsSection");
-  if (similarsGrid && similarsSection) {
-    let similarMovies = MOVIES.filter(m => m.id !== movie.id)
-      .map(m => {
-        const matchScore = m.genres.filter(g => movie.genres.includes(g)).length;
-        return { movie: m, matchScore };
-      })
-      .filter(m => m.matchScore > 0)
-      .sort((a, b) => b.matchScore !== a.matchScore ? b.matchScore - a.matchScore : 0.5 - Math.random())
-      .map(m => m.movie);
-    
-    const limited = similarMovies.slice(0, 12);
-    if (limited.length > 0) {
-      similarsSection.classList.remove("hidden");
-      similarsGrid.innerHTML = limited.map(createBrowseCardHTML).join("");
-    } else {
-      similarsSection.classList.add("hidden");
-    }
-  }
-
-  // ── TV Show: show season/episode picker ──────────────────────────────────
-  const tvSection = document.getElementById("tvShowSection");
-  const playBtn = document.getElementById("detailsPlayBtn");
-
-  if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
-    tvSection.classList.remove("hidden");
-
-    const seasonSelect = document.getElementById("seasonSelect");
-    const episodeGrid = document.getElementById("episodeGrid");
-
-    // Populate season dropdown
-    seasonSelect.innerHTML = movie.seasons
-      .map((s) => `<option value="${s.season}">Season ${s.season}</option>`)
-      .join("");
-
-    function getEpisodeUrl(ep, seasonData) {
-      if (ep.videoUrl) return ep.videoUrl;
-      // We return a special template string so openVideoPlayerWithUrl knows it's a TV embed that can be switched
-      const mediaId = movie.cinesrcId || movie.videoUrl;
-      if (mediaId) {
-        return `tv_embed:${mediaId}:${seasonData.season}:${ep.episode}`;
+    const castContainer = document.getElementById("detailsCastContainer");
+    const castText = document.getElementById("detailsCastText");
+    if (castContainer && castText) {
+      if (movie.cast && movie.cast.length > 0) {
+        castText.textContent = movie.cast.join(", ");
+        castContainer.classList.remove("hidden");
+      } else {
+        castContainer.classList.add("hidden");
       }
-      return "";
     }
 
-    function renderEpisodes(seasonNum, filter = "") {
-      const seasonData = movie.seasons.find((s) => s.season === parseInt(seasonNum));
-      if (!seasonData) return;
+    const favCheckbox = document.getElementById("detailsFavCheckbox");
+    const favBtn = document.getElementById("detailsFavBtn");
+    const fav = isFavorite(movie.id);
 
-      const filtered = filter
-        ? seasonData.episodes.filter(ep => ep.title.toLowerCase().includes(filter.toLowerCase()))
-        : seasonData.episodes;
+    // Sync checkbox state with actual favorites state
+    favCheckbox.checked = fav;
 
-      episodeGrid.innerHTML = filtered.map((ep) => {
-        const resolvedUrl = getEpisodeUrl(ep, seasonData);
-        const thumb = ep.thumbnail || movie.backdrop || movie.poster || "";
-        const duration = ep.duration || "";
-        const overview = ep.overview || "";
-        return `
+    favBtn.onclick = (e) => {
+      e.preventDefault(); // Prevent default label click behavior
+      const isNowFav = toggleFavorite(movie.id);
+      favCheckbox.checked = isNowFav;
+    };
+
+    // Generate You May Like Section
+    const similarsGrid = document.getElementById("detailsSimilarsGrid");
+    const similarsSection = document.getElementById("detailsSimilarsSection");
+    if (similarsGrid && similarsSection) {
+      let similarMovies = MOVIES.filter(m => m.id !== movie.id)
+        .map(m => {
+          const matchScore = m.genres.filter(g => movie.genres.includes(g)).length;
+          return { movie: m, matchScore };
+        })
+        .filter(m => m.matchScore > 0)
+        .sort((a, b) => b.matchScore !== a.matchScore ? b.matchScore - a.matchScore : 0.5 - Math.random())
+        .map(m => m.movie);
+
+      const limited = similarMovies.slice(0, 12);
+      if (limited.length > 0) {
+        similarsSection.classList.remove("hidden");
+        similarsGrid.innerHTML = limited.map(createBrowseCardHTML).join("");
+      } else {
+        similarsSection.classList.add("hidden");
+      }
+    }
+
+    // ── TV Show: show season/episode picker ──────────────────────────────────
+    const tvSection = document.getElementById("tvShowSection");
+    const playBtn = document.getElementById("detailsPlayBtn");
+
+    if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
+      tvSection.classList.remove("hidden");
+
+      const seasonSelect = document.getElementById("seasonSelect");
+      const episodeGrid = document.getElementById("episodeGrid");
+
+      // Populate season dropdown
+      seasonSelect.innerHTML = movie.seasons
+        .map((s) => `<option value="${s.season}">Season ${s.season}</option>`)
+        .join("");
+
+      function getEpisodeUrl(ep, seasonData) {
+        if (ep.videoUrl) return ep.videoUrl;
+        // We return a special template string so openVideoPlayerWithUrl knows it's a TV embed that can be switched
+        const mediaId = movie.cinesrcId || movie.videoUrl;
+        if (mediaId) {
+          return `tv_embed:${mediaId}:${seasonData.season}:${ep.episode}`;
+        }
+        return "";
+      }
+
+      function renderEpisodes(seasonNum, filter = "") {
+        const seasonData = movie.seasons.find((s) => s.season === parseInt(seasonNum));
+        if (!seasonData) return;
+
+        const filtered = filter
+          ? seasonData.episodes.filter(ep => ep.title.toLowerCase().includes(filter.toLowerCase()))
+          : seasonData.episodes;
+
+        episodeGrid.innerHTML = filtered.map((ep) => {
+          const resolvedUrl = getEpisodeUrl(ep, seasonData);
+          const thumb = ep.thumbnail || movie.backdrop || movie.poster || "";
+          const duration = ep.duration || "";
+          const overview = ep.overview || "";
+          return `
         <div class="episode-row ${resolvedUrl ? "" : "episode-unavailable"}" 
              data-video="${resolvedUrl}" 
              data-title="${movie.title} — S${seasonData.season}E${ep.episode}: ${ep.title}"
@@ -9597,68 +9597,68 @@ function openDetailsModal(movieId) {
           ${resolvedUrl ? `` : `<span class="episode-soon">Soon</span>`}
         </div>
       `;
-      }).join("");
+        }).join("");
 
-      // Click to play episode
-      episodeGrid.querySelectorAll(".episode-row:not(.episode-unavailable)").forEach((card) => {
-        card.onclick = () => {
-          const videoUrl = card.dataset.video;
-          const epTitle = card.dataset.title;
-          openVideoPlayerWithUrl(videoUrl, epTitle, movie.id);
-        };
-      });
+        // Click to play episode
+        episodeGrid.querySelectorAll(".episode-row:not(.episode-unavailable)").forEach((card) => {
+          card.onclick = () => {
+            const videoUrl = card.dataset.video;
+            const epTitle = card.dataset.title;
+            openVideoPlayerWithUrl(videoUrl, epTitle, movie.id);
+          };
+        });
 
 
+      }
+
+      renderEpisodes(seasonSelect.value);
+      seasonSelect.onchange = () => renderEpisodes(seasonSelect.value);
+
+      // Search filter
+      const epSearch = document.getElementById("episodeSearch");
+      if (epSearch) {
+        epSearch.value = "";
+        epSearch.oninput = () => renderEpisodes(seasonSelect.value, epSearch.value);
+      }
+
+      // Play button plays first available episode of the selected season
+      playBtn.onclick = () => {
+        const seasonData = movie.seasons.find((s) => s.season === parseInt(seasonSelect.value));
+        if (!seasonData) return;
+        const firstEp = seasonData.episodes[0];
+        if (!firstEp) return;
+        const epUrl = getEpisodeUrl(firstEp, seasonData);
+        if (epUrl) {
+          const epTitle = `${movie.title} — S${seasonData.season}E${firstEp.episode}: ${firstEp.title}`;
+          openVideoPlayerWithUrl(epUrl, epTitle, movie.id);
+        }
+      };
+
+    } else {
+      // Movie — hide TV section
+      tvSection.classList.add("hidden");
+      playBtn.onclick = () => {
+        openVideoPlayer(movie.id);
+      };
     }
 
-    renderEpisodes(seasonSelect.value);
-    seasonSelect.onchange = () => renderEpisodes(seasonSelect.value);
-
-    // Search filter
-    const epSearch = document.getElementById("episodeSearch");
-    if (epSearch) {
-      epSearch.value = "";
-      epSearch.oninput = () => renderEpisodes(seasonSelect.value, epSearch.value);
+    // Similars Button Logic
+    const similarsBtn = document.getElementById("detailsSimilarsBtn");
+    if (similarsBtn) {
+      similarsBtn.onclick = () => {
+        const section = document.getElementById("detailsSimilarsSection");
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      };
     }
 
-    // Play button plays first available episode of the selected season
-    playBtn.onclick = () => {
-      const seasonData = movie.seasons.find((s) => s.season === parseInt(seasonSelect.value));
-      if (!seasonData) return;
-      const firstEp = seasonData.episodes[0];
-      if (!firstEp) return;
-      const epUrl = getEpisodeUrl(firstEp, seasonData);
-      if (epUrl) {
-        const epTitle = `${movie.title} — S${seasonData.season}E${firstEp.episode}: ${firstEp.title}`;
-        openVideoPlayerWithUrl(epUrl, epTitle, movie.id);
-      }
-    };
+    // Switch to details page view
+    switchView("details");
 
-  } else {
-    // Movie — hide TV section
-    tvSection.classList.add("hidden");
-    playBtn.onclick = () => {
-      openVideoPlayer(movie.id);
-    };
-  }
-
-  // Similars Button Logic
-  const similarsBtn = document.getElementById("detailsSimilarsBtn");
-  if (similarsBtn) {
-    similarsBtn.onclick = () => {
-      const section = document.getElementById("detailsSimilarsSection");
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    };
-  }
-
-  // Switch to details page view
-  switchView("details");
-
-  // Fade back in
-  fader.style.opacity = "0";
-  setTimeout(() => fader.remove(), 300);
+    // Fade back in
+    fader.style.opacity = "0";
+    setTimeout(() => fader.remove(), 300);
   }, 300); // end of setTimeout
 }
 
@@ -10360,18 +10360,18 @@ function bindEventListeners() {
     searchFilterBtn.onclick = () => {
       searchFilterDropdown.classList.toggle("hidden");
     };
-    
+
     searchFilterDropdown.querySelectorAll(".filter-option").forEach(opt => {
       opt.onclick = () => {
         searchFilterDropdown.querySelectorAll(".filter-option").forEach(o => o.classList.remove("active"));
         opt.classList.add("active");
         searchFilterBtn.innerHTML = `${opt.textContent} <ion-icon name="chevron-down-outline"></ion-icon>`;
         searchFilterDropdown.classList.add("hidden");
-        
+
         state.searchFilter = opt.dataset.filter;
-        
+
         if (searchInput && searchInput.value.trim().length > 0) {
-           searchInput.dispatchEvent(new Event('input'));
+          searchInput.dispatchEvent(new Event('input'));
         }
       };
     });
@@ -10555,13 +10555,13 @@ function bindEventListeners() {
     toggle.addEventListener("click", (e) => {
       e.preventDefault();
       e.stopPropagation();
-      
+
       // Use direct property access for the type
       const currentType = input.type || "password";
       const newType = currentType === "password" ? "text" : "password";
-      
+
       input.type = newType;
-      
+
       const icon = toggle.querySelector("ion-icon");
       if (icon) {
         // ion-icon uses the name property/attribute
