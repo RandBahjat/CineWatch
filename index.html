@@ -147,12 +147,15 @@
 
     <!-- Full Page Details View -->
     <section id="detailsSection" class="hidden">
-        <!-- Back Button (top left) -->
-        <button class="details-back-btn" id="closeDetailsBtn" title="Go Back">
-            <svg viewBox="0 0 24 24" class="go-back-arr-2" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.82843 10.9999L13.1924 5.63589L11.7782 4.22168L4 11.9999L11.7782 19.778L13.1924 18.3638L7.82843 12.9999H20V10.9999H7.82843Z"></path>
-            </svg>
-        </button>
+        <!-- Top bar containing Back and Mute buttons -->
+        <div class="details-top-bar">
+            <!-- Back Button (top left) -->
+            <button class="details-back-btn" id="closeDetailsBtn" title="Go Back">
+                <svg viewBox="0 0 24 24" class="go-back-arr-2" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                </svg>
+            </button>
+        </div>
 
         <!-- Hero Background -->
         <div class="details-hero-bg">
@@ -165,38 +168,47 @@
             <div class="details-content-wrapper">
                 
                 <div class="details-hero-info">
-                <!-- We can use a stylized title or logo here. For now, large text matching the design. -->
+                <!-- Title / Logo area -->
+                <img id="detailsLogo" class="details-logo hidden" src="" alt="Movie Logo" />
                 <h1 class="details-title-large" id="detailsTitle">Movie Title</h1>
                 
                 <div class="details-meta-row">
-                    <span class="meta-rating">♦ <span id="detailsRating">4.8</span></span>
+                    <span class="meta-rating"><ion-icon name="star" style="color: #e50914;"></ion-icon> <span id="detailsRating">4.8</span></span>
+                    <span class="meta-separator">&nbsp;&middot;&nbsp;</span>
                     <span class="meta-year" id="detailsYear">2026</span>
+                    <span class="meta-separator">&nbsp;&middot;&nbsp;</span>
                     <span class="meta-duration" id="detailsDuration">2h 10m</span>
-                    <span class="meta-genres" id="detailsGenres">Action - Adventure - Sci-Fi</span>
+                    <span class="meta-separator">&nbsp;&middot;&nbsp;</span>
+                    <span class="meta-genres" id="detailsGenres">Action &middot; Adventure &middot; Sci-Fi</span>
                 </div>
 
                 <p class="details-overview-large" id="detailsOverview">Synopsis goes here...</p>
 
                 <!-- Actions Row -->
                 <div class="details-action-buttons">
-                    <button class="btn btn-primary btn-play-pill" id="detailsPlayBtn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                        Play
+                    <button class="btn btn-primary btn-play-circle" id="detailsPlayBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                     </button>
 
                     <!-- Watchlist Circular Toggle -->
                     <div class="watchlist-wrapper">
                       <input type="checkbox" id="detailsFavCheckbox" class="hidden-trigger">
-                      <label for="detailsFavCheckbox" class="circle" id="detailsFavBtn">
+                      <label for="detailsFavCheckbox" class="circle outline-circle" id="detailsFavBtn">
                         <ion-icon class="icon-add" name="add-outline"></ion-icon>
                         <ion-icon class="icon-check" name="checkmark-outline"></ion-icon>
                       </label>
                     </div>
                     
                     <button class="btn btn-secondary-pill" id="detailsSimilarsBtn">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
                         Similars
                     </button>
+                </div>
+
+                <!-- Cast List -->
+                <div class="details-cast-list hidden" id="detailsCastContainer">
+                    <span class="cast-label">Cast:</span>
+                    <span id="detailsCastText" class="cast-text"></span>
                 </div>
             </div>
 

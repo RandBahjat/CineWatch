@@ -22,11 +22,39 @@
  */
 
 // ==========================================
-// 1. MOVIE DATABASE  (EDIT THIS SECTION)
+// 1. HIGHLIGHTS & TRENDING (EDIT THIS SECTION)
+// ==========================================
+// Change these titles to easily swap which movies appear in the top slider and trending row!
+const FEATURED_TITLES = ["House of the Dragon","The Invite","Spider-Man Brand New Day", "The Odyssey", "Obsession", "Supergirl"];
+const TRENDING_TITLES = ["Supergirl", "Avengers: Age of Ultron", "Avengers: Infinity War", "Avengers: Endgame"];
+
+// ==========================================
+// 2. MOVIE DATABASE
 // ==========================================
 const MOVIES = [
   {
-    id: "m1",
+    title: "The Invite",
+    type: "Movie",
+    year: 2026,
+    rating: 7.8,
+    age: "R",
+    duration: "1h 47m",
+    genres: ["Comedy", "Drama"],
+    poster:
+      "https://www.themoviedb.org/t/p/w600_and_h900_face/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+    backdrop:
+      "https://image.tmdb.org/t/p/original/3D8inMh5c0L0j7Jc8iinH0NIhTL.jpg",
+    videoUrl:
+      "950028",
+    overview:
+      "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places — testing the fragile boundaries between their relationship, their neighbors, and everything they thought they wanted.",
+    director: "Olivia Wilde",
+    cast: ["Seth Rogen, Olivia Wilde, Penélope Cruz, Edward Norton"],
+    trending: true,
+    featured: true,
+    is4k: false,
+  },
+  {
     title: "Spider-Man Brand New Day",
     type: "Movie",
     year: 2026,
@@ -37,7 +65,7 @@ const MOVIES = [
     poster:
       "https://www.themoviedb.org/t/p/w600_and_h900_face/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
     backdrop:
-      "spiderman-at-the-absolute-peak-r2-3840x2160.jpg",
+      "https://image.tmdb.org/t/p/original/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
     videoUrl:
       "969681",
     overview:
@@ -49,7 +77,6 @@ const MOVIES = [
     is4k: false,
   },
   {
-    id: "m2",
     title: "Supergirl",
     type: "Movie",
     year: 2026,
@@ -71,7 +98,6 @@ const MOVIES = [
     featured: true,
   },
   {
-    id: "m3",
     title: "Batman: Caped Crusader",
     type: "TV Show",
     year: 2024,
@@ -132,8 +158,7 @@ const MOVIES = [
   // Episodes are auto-streamed at https://cinesrc.st/embed/tv/1396?s=S&e=E
 
   {
-    id: "m4",
-    title: "THE ODYSSEY",
+    title: "The Odyssey",
     type: "Movie",
     year: 2026,
     rating: 8.5,
@@ -155,7 +180,6 @@ const MOVIES = [
     featured: true,
   },
   {
-    id: "m5",
     title: "Avatar Aang: The Last Airbender",
     type: "Movie",
     year: 2025,
@@ -178,7 +202,6 @@ const MOVIES = [
     featured: true,
   },
   {
-    id: "m6",
     title: "Obsession",
     type: "Movie",
     year: 2025,
@@ -200,7 +223,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m7",
     title: "Master of the Universe",
     type: "Movie",
     year: 2026,
@@ -222,7 +244,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m8",
     title: "Evil Dead Burn",
     type: "Movie",
     year: 2026,
@@ -244,7 +265,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m9",
     title: "Quantum Breach",
     type: "Movie",
     year: 2025,
@@ -268,7 +288,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m10",
     title: "Midnight Masquerade",
     type: "Movie",
     year: 2026,
@@ -291,7 +310,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m11",
     title: "Haunting at Blackwood",
     type: "Movie",
     year: 2025,
@@ -314,7 +332,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m12",
     title: "Michael",
     type: "Movie",
     year: 2026,
@@ -338,7 +355,6 @@ const MOVIES = [
 
   // ---- ADD NEW MOVIES BELOW THIS LINE ----
   {
-    id: "m13",
     title: "REACHER",
     type: "TV Show",
     year: 2022,
@@ -400,7 +416,6 @@ const MOVIES = [
   },
 
   {
-    id: "m14",
     title: "Backrooms",
     type: "Movie",
     year: 2026,
@@ -420,7 +435,6 @@ const MOVIES = [
   },
 
   {
-    id: "m15", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "BATMAN BEGINS",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2005,
@@ -430,7 +444,7 @@ const MOVIES = [
     duration: "2h 20m",
     genres: ["Action", "Crime"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/sPX89Td70IDDjVr85jdSBb4rWGr.jpg",
-    backdrop: "https://occ-0-8407-2218.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABW1LyLDTX3OIZ1c53CHy_S3HEAq-o-Lyjwe1JkRg-a1XoF4n4H77XQ4FV5pjzj33Oxl_WnII-irLlWmOab3kdn_oFVHSuNv-cUK3.jpg?r=bf6",
+    backdrop: "https://image.tmdb.org/t/p/original/9IIBboV7MCT0bTxzXHmWK1Hq558.jpg",
     videoUrl: "272",
     overview: "Haunted by his parents' death and driven by a need to conquer his own fears, Bruce Wayne disappears from Gotham to train under the mysterious League of Shadows. Returning years later with new skills and resolve, he becomes Batman — a symbol meant to strike fear into criminals while he wages a personal war against the corruption consuming his city, including a mysterious threat orchestrated by the sinister Ra's al Ghul and Scarecrow.",
     director: "Christopher Nolan",
@@ -439,7 +453,6 @@ const MOVIES = [
     featured: false, // Leave false so it doesn't show in the top hero banner
   },
   {
-    id: "m16", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Dark Knight",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2008,
@@ -449,7 +462,7 @@ const MOVIES = [
     duration: "2h 32m",
     genres: ["Action", "Crime", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
-    backdrop: "https://i.pinimg.com/1200x/92/87/55/928755cf7b969f5f42a1184fcf789b7f.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/cfT29Im5VDvjE0RpyKOSdCKZal7.jpg",
     videoUrl: "155",
     overview: "Batman, Lieutenant Gordon, and District Attorney Harvey Dent form an uneasy alliance to bring down organized crime in Gotham City once and for all. Their progress is shattered by the arrival of a brilliant and chaotic criminal known only as the Joker, whose reign of terror pushes Gotham's guardians to their limits — testing Batman's principles, Dent's ideals, and the very soul of the city itself.",
     director: "Christopher Nolan",
@@ -459,7 +472,6 @@ const MOVIES = [
   },
 
   {
-    id: "m17", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Dark Knight Rises",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2012,
@@ -469,7 +481,7 @@ const MOVIES = [
     duration: "2h 44m",
     genres: ["Action", "Crime", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg",
-    backdrop: "https://w0.peakpx.com/wallpaper/315/1012/HD-wallpaper-batman-the-dark-knight-rises-bruce-wayne-christian-bale.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/y2DB71C4nyIdMrANijz8mzvQtk6.jpg",
     videoUrl: "49026",
     overview: "Years after retreating into isolation following the death of Harvey Dent, a crippled and disillusioned Bruce Wayne is forced back into the cowl when a merciless masked revolutionary named Bane threatens to bring Gotham City to its knees. With old allies, new enemies, and a city on the brink of anarchy, Batman must find the strength to rise once more — even if it costs him everything.",
     director: "Christopher Nolan",
@@ -479,8 +491,6 @@ const MOVIES = [
   },
 
   {
-
-    id: "m18", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Amazing Spider-Man",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2012,
@@ -502,7 +512,6 @@ const MOVIES = [
   },
 
   {
-    id: "m19", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "THE AMAZING SPIDER-MAN 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2014,
@@ -522,7 +531,6 @@ const MOVIES = [
   },
 
   {
-    id: "m20", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Avengers",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2012,
@@ -543,7 +551,6 @@ const MOVIES = [
   },
 
   {
-    id: "m21", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Avengers: Age of Ultron",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2015,
@@ -565,7 +572,6 @@ const MOVIES = [
 
   },
   {
-    id: "m22", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Avengers: Infinity War",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2018,
@@ -588,7 +594,6 @@ const MOVIES = [
   },
 
   {
-    id: "m23", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Avengers: Endgame",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2019,
@@ -610,7 +615,6 @@ const MOVIES = [
 
   },
   {
-    id: "m24", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Spider-Man: Homecoming",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
@@ -633,7 +637,6 @@ const MOVIES = [
   },
 
   {
-    id: "m25", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Spider-Man: Far From Home",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2019,
@@ -655,7 +658,6 @@ const MOVIES = [
 
   },
   {
-    id: "m26", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Spider-Man: No Way Home",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2011,
@@ -677,7 +679,6 @@ const MOVIES = [
 
   },
   {
-    id: "m27", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Iron Man",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2008,
@@ -699,7 +700,6 @@ const MOVIES = [
 
   },
   {
-    id: "m28", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Iron Man 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2010,
@@ -721,7 +721,6 @@ const MOVIES = [
 
   },
   {
-    id: "m29", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Iron Man 3",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2010,
@@ -744,7 +743,6 @@ const MOVIES = [
   },
 
   {
-    id: "m30", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Captain America: The First Avenger ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2011,
@@ -767,7 +765,6 @@ const MOVIES = [
   },
 
   {
-    id: "m31", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Captain America: The Winter Soldier ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2014,
@@ -790,7 +787,6 @@ const MOVIES = [
   },
 
   {
-    id: "m32", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Captain America: Civil War ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2016,
@@ -810,7 +806,6 @@ const MOVIES = [
   },
 
   {
-    id: "m33", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Thor ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2011,
@@ -830,7 +825,6 @@ const MOVIES = [
   },
 
   {
-    id: "m34", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Thor: The Dark World ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2013,
@@ -851,7 +845,6 @@ const MOVIES = [
 
 
   {
-    id: "m35", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Thor: Ragnarok ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
@@ -871,7 +864,6 @@ const MOVIES = [
   },
 
   {
-    id: "m36", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Thor: Love and Thunder ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
@@ -891,7 +883,6 @@ const MOVIES = [
   },
 
   {
-    id: "m37", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Batman ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2022,
@@ -911,7 +902,6 @@ const MOVIES = [
   },
 
   {
-    id: "m38", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Superman",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
@@ -930,7 +920,6 @@ const MOVIES = [
 
   },
   {
-    id: "m39", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Aquaman",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2018,
@@ -950,7 +939,6 @@ const MOVIES = [
   },
 
   {
-    id: "m40", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Aquaman: The Lost Kingdom",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
@@ -970,7 +958,6 @@ const MOVIES = [
   },
 
   {
-    id: "m41", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Harry Potter and the Sorcerer's Stone ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2001,
@@ -989,7 +976,6 @@ const MOVIES = [
 
   },
   {
-    id: "m42", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Harry Potter and the Chamber of Secrets  ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2002,
@@ -1008,7 +994,6 @@ const MOVIES = [
 
   },
   {
-    id: "m43", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Harry Potter and the Prisoner of Azkaban ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2004,
@@ -1027,7 +1012,6 @@ const MOVIES = [
 
   },
   {
-    id: "m44", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Harry Potter and the Goblet of Fire ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2005,
@@ -1046,7 +1030,6 @@ const MOVIES = [
 
   },
   {
-    id: "m45", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Harry Potter and the Order of the Phoenix ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2007,
@@ -1065,7 +1048,6 @@ const MOVIES = [
 
   },
   {
-    id: "m46", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Harry Potter and the Half Blood Prince ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2009,
@@ -1084,7 +1066,6 @@ const MOVIES = [
 
   },
   {
-    id: "m47", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Harry Potter and the Deathly Hallows Part 1",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2010,
@@ -1103,7 +1084,6 @@ const MOVIES = [
 
   },
   {
-    id: "m48", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Harry Potter and the Deathly Hallows Part 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2011,
@@ -1122,7 +1102,6 @@ const MOVIES = [
 
   },
   {
-    id: "m49", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Spider-Man",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2002,
@@ -1141,7 +1120,6 @@ const MOVIES = [
 
   },
   {
-    id: "m50", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Spider-Man 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2004,
@@ -1160,7 +1138,6 @@ const MOVIES = [
 
   },
   {
-    id: "m51", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Spider-Man 3",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2007,
@@ -1179,7 +1156,6 @@ const MOVIES = [
 
   },
   {
-    id: "m52", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Deadpool",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2016,
@@ -1198,7 +1174,6 @@ const MOVIES = [
 
   },
   {
-    id: "m53", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Deadpool 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2018,
@@ -1217,7 +1192,6 @@ const MOVIES = [
 
   },
   {
-    id: "m54", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Deadpool & Wolverine ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -1236,7 +1210,6 @@ const MOVIES = [
 
   },
   {
-    id: "m55", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "X-Men Origin: Wolverine ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2009,
@@ -1255,7 +1228,6 @@ const MOVIES = [
 
   },
   {
-    id: "m56", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Wolverine ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2013,
@@ -1274,7 +1246,6 @@ const MOVIES = [
 
   },
   {
-    id: "m57", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Logan ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
@@ -1293,7 +1264,6 @@ const MOVIES = [
 
   },
   {
-    id: "m58", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "X-Men ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2000,
@@ -1312,7 +1282,6 @@ const MOVIES = [
 
   },
   {
-    id: "m59", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "X-Men United",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2003,
@@ -1331,7 +1300,6 @@ const MOVIES = [
 
   },
   {
-    id: "m60", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "X-Men: The Last Stand",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2006,
@@ -1350,7 +1318,6 @@ const MOVIES = [
 
   },
   {
-    id: "m61", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "X-Men: First Class",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2011,
@@ -1369,7 +1336,6 @@ const MOVIES = [
 
   },
   {
-    id: "m62", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "X-Men: Days of Future Past",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2014,
@@ -1388,7 +1354,6 @@ const MOVIES = [
 
   },
   {
-    id: "m63", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "X-Men: Apocalypse",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2016,
@@ -1407,7 +1372,6 @@ const MOVIES = [
 
   },
   {
-    id: "m64", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Dark Phoenix",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2019,
@@ -1426,7 +1390,6 @@ const MOVIES = [
 
   },
   {
-    id: "m65", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The New Mutant ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2020,
@@ -1445,7 +1408,6 @@ const MOVIES = [
 
   },
   {
-    id: "m66", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Thunderbolts ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
@@ -1464,7 +1426,6 @@ const MOVIES = [
 
   },
   {
-    id: "m67", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Incredible Hulk  ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2008,
@@ -1483,7 +1444,6 @@ const MOVIES = [
 
   },
   {
-    id: "m68", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Guardians of the Galaxy  ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2014,
@@ -1502,7 +1462,6 @@ const MOVIES = [
 
   },
   {
-    id: "m69", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Guardians of the Galaxy: Vol.2 ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
@@ -1521,7 +1480,6 @@ const MOVIES = [
 
   },
   {
-    id: "m70", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Guardians of the Galaxy: Vol.3 ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
@@ -1540,7 +1498,6 @@ const MOVIES = [
 
   },
   {
-    id: "m71", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Ant-Man ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2015,
@@ -1559,7 +1516,6 @@ const MOVIES = [
 
   },
   {
-    id: "m72", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Ant-Man and the Wasp ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2018,
@@ -1578,7 +1534,6 @@ const MOVIES = [
 
   },
   {
-    id: "m73", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Ant-Man and the Wasp: Quantumania ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
@@ -1597,7 +1552,6 @@ const MOVIES = [
 
   },
   {
-    id: "m74", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Black Panther",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2018,
@@ -1616,7 +1570,6 @@ const MOVIES = [
 
   },
   {
-    id: "m75", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Black Panther: Wakanda Forever",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2022,
@@ -1635,7 +1588,6 @@ const MOVIES = [
 
   },
   {
-    id: "m76", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Flash",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
@@ -1654,7 +1606,6 @@ const MOVIES = [
 
   },
   {
-    id: "m77", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Man of Steel",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2013,
@@ -1673,7 +1624,6 @@ const MOVIES = [
 
   },
   {
-    id: "m78", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Batman v Superman: Dawn of Justice",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2016,
@@ -1692,7 +1642,6 @@ const MOVIES = [
 
   },
   {
-    id: "m79", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Zack Snyder's Justice League",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2021,
@@ -1711,7 +1660,6 @@ const MOVIES = [
 
   },
   {
-    id: "m80", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Ghost Rider",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2007,
@@ -1730,7 +1678,6 @@ const MOVIES = [
 
   },
   {
-    id: "m81", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Ghost Rider: Spirit of Vengeance",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2011,
@@ -1749,7 +1696,6 @@ const MOVIES = [
 
   },
   {
-    id: "m82", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "John Wick",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2014,
@@ -1768,7 +1714,6 @@ const MOVIES = [
 
   },
   {
-    id: "m83", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "John Wick: Chapter 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
@@ -1787,7 +1732,6 @@ const MOVIES = [
 
   },
   {
-    id: "m84", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "John Wick: Chapter 3",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2019,
@@ -1806,7 +1750,6 @@ const MOVIES = [
 
   },
   {
-    id: "m85", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "John Wick: Chapter 4",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
@@ -1825,7 +1768,6 @@ const MOVIES = [
 
   },
   {
-    id: "m86", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Cars",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2006,
@@ -1844,7 +1786,6 @@ const MOVIES = [
 
   },
   {
-    id: "m87", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Cars 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2011,
@@ -1863,7 +1804,6 @@ const MOVIES = [
 
   },
   {
-    id: "m88", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Cars 3",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
@@ -1882,7 +1822,6 @@ const MOVIES = [
 
   },
   {
-    id: "m89", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Ted",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2012,
@@ -1901,7 +1840,6 @@ const MOVIES = [
 
   },
   {
-    id: "m90", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Ted 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2015,
@@ -1920,7 +1858,6 @@ const MOVIES = [
 
   },
   {
-    id: "m91", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Home Alone",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1990,
@@ -1939,7 +1876,6 @@ const MOVIES = [
 
   },
   {
-    id: "m92", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Home Alone 2: Lost in New York",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1992,
@@ -1958,7 +1894,6 @@ const MOVIES = [
 
   },
   {
-    id: "m93", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Venom",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2018,
@@ -1977,7 +1912,6 @@ const MOVIES = [
 
   },
   {
-    id: "m94", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Venom: Let There Be Carnage",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2021,
@@ -1996,7 +1930,6 @@ const MOVIES = [
 
   },
   {
-    id: "m95", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Venom: The Last Dance",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -2015,7 +1948,6 @@ const MOVIES = [
 
   },
   {
-    id: "m96", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Transformers One",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -2034,7 +1966,6 @@ const MOVIES = [
 
   },
   {
-    id: "m97", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Sonic the Hedgehog",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2020,
@@ -2053,7 +1984,6 @@ const MOVIES = [
 
   },
   {
-    id: "m98", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Sonic the Hedgehog 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2022,
@@ -2072,7 +2002,6 @@ const MOVIES = [
 
   },
   {
-    id: "m99", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Sonic the Hedgehog 3",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -2091,7 +2020,6 @@ const MOVIES = [
 
   },
   {
-    id: "m100", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Green Mile",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1999,
@@ -2110,7 +2038,6 @@ const MOVIES = [
 
   },
   {
-    id: "m101", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Punisher: One Last Kill",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2026,
@@ -2129,7 +2056,6 @@ const MOVIES = [
 
   },
   {
-    id: "m102", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Doctor Strange",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2016,
@@ -2148,7 +2074,6 @@ const MOVIES = [
 
   },
   {
-    id: "m103", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Doctor Strange in the Multiverse of Madness",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2022,
@@ -2167,7 +2092,6 @@ const MOVIES = [
 
   },
   {
-    id: "m104", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Catch Me if You Can",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2002,
@@ -2186,7 +2110,6 @@ const MOVIES = [
 
   },
   {
-    id: "m105", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Top Gun",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1986,
@@ -2205,7 +2128,6 @@ const MOVIES = [
 
   },
   {
-    id: "m106", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Top Gun: Mavrick",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2022,
@@ -2224,7 +2146,6 @@ const MOVIES = [
 
   },
   {
-    id: "m107", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Se7en",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1995,
@@ -2243,7 +2164,6 @@ const MOVIES = [
 
   },
   {
-    id: "m108", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Inception",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2010,
@@ -2262,7 +2182,6 @@ const MOVIES = [
 
   },
   {
-    id: "m109", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Mr. & Mrs. Smith",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2005,
@@ -2281,7 +2200,6 @@ const MOVIES = [
 
   },
   {
-    id: "m110", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Mission: Impossible",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1996,
@@ -2300,7 +2218,6 @@ const MOVIES = [
 
   },
   {
-    id: "m111", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Mission: Impossible II",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2000,
@@ -2319,7 +2236,6 @@ const MOVIES = [
 
   },
   {
-    id: "m112", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Mission: Impossible III",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2006,
@@ -2338,7 +2254,6 @@ const MOVIES = [
 
   },
   {
-    id: "m114", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Mission: Impossible - Ghost Protocol",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2011,
@@ -2357,7 +2272,6 @@ const MOVIES = [
 
   },
   {
-    id: "m115", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Mission: Impossible - Rogue Nation",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2015,
@@ -2376,7 +2290,6 @@ const MOVIES = [
 
   },
   {
-    id: "m115", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Mission: Impossible - Fallout",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2018,
@@ -2395,7 +2308,6 @@ const MOVIES = [
 
   },
   {
-    id: "m116", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Mission: Impossible - Dead Reckoning Part One ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
@@ -2414,7 +2326,6 @@ const MOVIES = [
 
   },
   {
-    id: "m118", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Mission: Impossible - The Final Reckoning ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
@@ -2433,7 +2344,6 @@ const MOVIES = [
 
   },
   {
-    id: "m119", // Keep incrementing this number (m14, m15, m16, etc.)
     title: " Spider-Man: Into the Spider Verse",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2018,
@@ -2452,7 +2362,6 @@ const MOVIES = [
 
   },
   {
-    id: "m120", // Keep incrementing this number (m14, m15, m16, etc.)
     title: " Spider-Man: Across the Spider Verse",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
@@ -2471,7 +2380,6 @@ const MOVIES = [
 
   },
   {
-    id: "m120", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Kung Fu Panda",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2008,
@@ -2490,7 +2398,6 @@ const MOVIES = [
 
   },
   {
-    id: "m121", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Kung Fu Panda 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2011,
@@ -2509,7 +2416,6 @@ const MOVIES = [
 
   },
   {
-    id: "m122", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Kung Fu Panda 3",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2016,
@@ -2528,7 +2434,6 @@ const MOVIES = [
 
   },
   {
-    id: "m123", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Kung Fu Panda 4",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -2547,7 +2452,6 @@ const MOVIES = [
 
   },
   {
-    id: "m124", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Rise of the Guardians",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2012,
@@ -2566,7 +2470,6 @@ const MOVIES = [
 
   },
   {
-    id: "m125", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Shrek",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2001,
@@ -2585,7 +2488,6 @@ const MOVIES = [
 
   },
   {
-    id: "m126", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Shrek 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2004,
@@ -2604,7 +2506,6 @@ const MOVIES = [
 
   },
   {
-    id: "m127", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Shrek the Third",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2007,
@@ -2623,7 +2524,6 @@ const MOVIES = [
 
   },
   {
-    id: "m128", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Shrek Forever After",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2010,
@@ -2642,7 +2542,6 @@ const MOVIES = [
 
   },
   {
-    id: "m129", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Tom and Jerry: Forbidden Compass",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
@@ -2661,7 +2560,6 @@ const MOVIES = [
 
   },
   {
-    id: "m130", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Tom and Jerry Cowboy Up ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2022,
@@ -2680,7 +2578,6 @@ const MOVIES = [
 
   },
   {
-    id: "m131", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Batman: Mask of the Phantasm ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1993,
@@ -2699,7 +2596,6 @@ const MOVIES = [
 
   },
   {
-    id: "m132", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Batman: Hush",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2019,
@@ -2717,7 +2613,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m133", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Batman vs. Robin",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2015,
@@ -2735,7 +2630,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m134", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Batman: The Killing Joke",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2016,
@@ -2753,7 +2647,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m135", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Batman: The Dark Knight Return - Part 1",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2012,
@@ -2771,7 +2664,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m136", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Batman: The Dark Knight Return - Part 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2013,
@@ -2789,7 +2681,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m137", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Batman: The Long Halloween, Part 1",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2021,
@@ -2807,7 +2698,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m138", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Batman: The Long Halloween, Part 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2021,
@@ -2825,7 +2715,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m139", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Son of Batman",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2014,
@@ -2843,7 +2732,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m140", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Batman and Harley Quinn",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
@@ -2861,7 +2749,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m141", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Central Intelligence",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2016,
@@ -2879,7 +2766,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m142", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Wrath of Man",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2021,
@@ -2897,7 +2783,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m143", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Godfather",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1972,
@@ -2915,7 +2800,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m143", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Godfather Part II",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1974,
@@ -2933,7 +2817,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m144", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Godfather Part III",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1990,
@@ -2951,7 +2834,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m145", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Back to the Future",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1985,
@@ -2969,7 +2851,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m146", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Back to the Future II",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1989,
@@ -2987,7 +2868,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m147", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Back to the Future III",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1990,
@@ -3005,7 +2885,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m148", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Toy Story",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1995,
@@ -3023,7 +2902,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m149", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Toy Story 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1999,
@@ -3041,7 +2919,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m150", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Toy Story 3",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2010,
@@ -3059,7 +2936,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m151", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Toy Story 4",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2019,
@@ -3077,7 +2953,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m152", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Toy Story 5",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2026,
@@ -3095,7 +2970,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m153", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Titanic",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1997,
@@ -3113,7 +2987,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m154", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Green Lantern",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2011,
@@ -3131,7 +3004,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m155", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "in the Grey",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2026,
@@ -3149,7 +3021,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m156", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Captain Marvel",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2019,
@@ -3167,7 +3038,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m157", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Marvels",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
@@ -3185,7 +3055,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m158", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Ballerina",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
@@ -3203,7 +3072,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m159", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Wonder Woman",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
@@ -3221,7 +3089,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m160", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "V for Vendetta",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2006,
@@ -3239,7 +3106,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m161", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Transformers",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2007,
@@ -3257,7 +3123,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m162", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Transformers: Revenge of the Fallen",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2009,
@@ -3275,7 +3140,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m163", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Transformers: Dark of the Moon",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 20011,
@@ -3293,7 +3157,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m164", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Transformers: Age of Extinction",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2014,
@@ -3311,7 +3174,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m165", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Transformers: The Last Knight",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
@@ -3329,7 +3191,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m166", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Transformers: Rise of the Beast",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
@@ -3347,7 +3208,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m167", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Fantastic Four",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2005,
@@ -3365,7 +3225,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m168", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Fantastic Four: Rise of the Silver Surfer",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2007,
@@ -3383,7 +3242,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m169", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Fantastic Four",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2015,
@@ -3401,7 +3259,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m170", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Fantastic Four: First Steps",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
@@ -3419,7 +3276,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m171", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Fight Club",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1999,
@@ -3437,7 +3293,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m172", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Jack Reacher",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2012,
@@ -3455,7 +3310,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m173", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Jack Reacher: Never Go Back",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2016,
@@ -3473,7 +3327,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m174",
     title: "Batman: The Animated Series",
     type: "TV Show",
     year: 1992,
@@ -3600,7 +3453,6 @@ const MOVIES = [
   },
 
   {
-    id: "m175",
     title: "The New Batman Adventure",
     type: "TV Show",
     year: 1997,
@@ -3678,7 +3530,6 @@ const MOVIES = [
     ]
   },
   {
-    id: "m176", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "War Machine",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2026,
@@ -3696,7 +3547,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m177", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Shawshank Redemption",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1994,
@@ -3714,7 +3564,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m178", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Big Hero 6",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2014,
@@ -3732,7 +3581,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m179", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "F1",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
@@ -3750,7 +3598,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m180", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Sinners",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
@@ -3768,7 +3615,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m181", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "How to Train Your Dragon",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2010,
@@ -3786,7 +3632,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m182", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "How to Train Your Dragon 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2014,
@@ -3805,7 +3650,6 @@ const MOVIES = [
   },
 
   {
-    id: "m183", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "How to Train Your Dragon: The Hidden World",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2019,
@@ -3824,7 +3668,6 @@ const MOVIES = [
   },
 
   {
-    id: "m184", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "How to Train Your Dragon",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
@@ -3842,7 +3685,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m185", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Hacksaw Ridge",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2016,
@@ -3860,7 +3702,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m186", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Notebook ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2004,
@@ -3878,7 +3719,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m187", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Wolf of Wall Street ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2013,
@@ -3896,7 +3736,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m188", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Black Widow ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2021,
@@ -3914,7 +3753,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m189", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Departed ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2006,
@@ -3932,7 +3770,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m190", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Shutter Island",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2010,
@@ -3950,7 +3787,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m191", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Free Guy",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2021,
@@ -3968,7 +3804,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m192", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "After",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2019,
@@ -3986,7 +3821,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m193", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "After: We Collided",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2020,
@@ -4004,7 +3838,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m194", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "After: We Fell",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2021,
@@ -4022,7 +3855,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m195", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "After Ever Happy",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2022,
@@ -4040,7 +3872,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m196", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "After Everything",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
@@ -4058,7 +3889,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m197", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Forrest Gump",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1997,
@@ -4076,7 +3906,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m198", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Avatar",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2009,
@@ -4094,7 +3923,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m199", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Avatar: The Way of Water",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2022,
@@ -4112,7 +3940,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m200", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Avatar: Fire and Ash",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
@@ -4130,7 +3957,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m201", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Captain America: Brave New World",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
@@ -4148,7 +3974,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m202", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Mad Max: Fury Road",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2015,
@@ -4166,7 +3991,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m203", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Furiosa: A Mad Max Saga",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -4184,7 +4008,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m204",
     title: "Invincible",
     type: "TV Show",
     year: 2021,
@@ -4284,7 +4107,6 @@ const MOVIES = [
     ]
   },
   {
-    id: "m205", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Now You See Me",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2013,
@@ -4302,7 +4124,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m206", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Now You See Me 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2016,
@@ -4320,7 +4141,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m207", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Now You See Me: Now You Don't",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
@@ -4339,7 +4159,6 @@ const MOVIES = [
   },
 
   {
-    id: "m208",
     title: "Daredevil",
     type: "TV Show",
     year: 2015,
@@ -4426,7 +4245,6 @@ const MOVIES = [
   },
 
   {
-    id: "m209",
     title: "Daredevil: Born Again",
     type: "TV Show",
     year: 2025,
@@ -4480,7 +4298,6 @@ const MOVIES = [
   },
 
   {
-    id: "m210",
     title: "From",
     type: "TV Show",
     year: 2022,
@@ -4590,7 +4407,6 @@ const MOVIES = [
   },
 
   {
-    id: "m211",
     title: "Transformers: Prime",
     type: "TV Show",
     year: 2010,
@@ -4707,7 +4523,6 @@ const MOVIES = [
   },
 
   {
-    id: "m212",
     title: "Spider-Man The Animated Series",
     type: "TV Show",
     year: 1994,
@@ -4837,7 +4652,6 @@ const MOVIES = [
     ],
   },
   {
-    id: "m213", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Justice League: Crisis on Infinite Earths Part One",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -4855,7 +4669,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m214", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Justice League: Crisis on Infinite Earths – Part Two",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -4873,7 +4686,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m215", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Justice League: Crisis on Infinite Earths – Part Three",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -4891,7 +4703,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m216", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Justice League",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
@@ -4909,7 +4720,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m217", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Justice League Dark",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
@@ -4927,7 +4737,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m218",
     title: "The Spectacular Spider-Man",
     type: "TV Show",
     year: 2008,
@@ -4989,7 +4798,6 @@ const MOVIES = [
   },
 
   {
-    id: "219",
     title: "Breaking Bad",
     type: "TV Show",
     year: 2008,
@@ -5097,7 +4905,6 @@ const MOVIES = [
     ],
   },
   {
-    id: "220",
     title: "The Boys",
     type: "TV Show",
     year: 2019,
@@ -5183,7 +4990,6 @@ const MOVIES = [
     ],
   },
   {
-    id: "221",
     title: "The Batman",
     type: "TV Show",
     year: 2004,
@@ -5294,7 +5100,6 @@ const MOVIES = [
     ],
   },
   {
-    id: "m222", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Nun",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2018,
@@ -5312,7 +5117,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m223", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Puss in Boots",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2011,
@@ -5330,7 +5134,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m224", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Puss in Boots: The Last Wish",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2022,
@@ -5348,7 +5151,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "225",
     title: "Miraculous: Tales of Ladybug & Cat Noir",
     type: "TV Show",
     year: 2015,
@@ -5559,7 +5361,6 @@ const MOVIES = [
 
 
   {
-    id: "m226", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Miraculous: Ladybug & Cat Noir, The Movie ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
@@ -5577,7 +5378,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m227", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Miraculous World: New York, United HeroeZ  ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2020,
@@ -5595,7 +5395,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m228", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Miraculous World: London, at the Edge of Time  ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -5613,7 +5412,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m229", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Miraculous World: Paris, Tales of Shadybug and Claw Noir  ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
@@ -5631,7 +5429,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m230", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Polar Express",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2004,
@@ -5649,7 +5446,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m231", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Hotel Transylvania",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2012,
@@ -5667,7 +5463,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m232", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Hotel Transylvania 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2015,
@@ -5685,7 +5480,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m233", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Hotel Transylvania 3",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2018,
@@ -5703,7 +5497,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m234", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Housemaid",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
@@ -5721,7 +5514,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m235", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Interstellar",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2015,
@@ -5739,7 +5531,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m236", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Bourne Identity",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2002,
@@ -5757,7 +5548,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m237", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Bourne Supremacy",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2004,
@@ -5775,7 +5565,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m238", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Bourne Ultimatum",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2007,
@@ -5793,7 +5582,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m239", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Bourne Legacy",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2012,
@@ -5811,7 +5599,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m240", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Jason Bourne",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2016,
@@ -5829,7 +5616,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m241", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Martian",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2015,
@@ -5847,7 +5633,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m242", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Oppenheimer",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
@@ -5865,7 +5650,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m243", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Pulp Fiction",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1994,
@@ -5883,7 +5667,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m244", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Moana",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2016,
@@ -5901,7 +5684,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m245", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Moana 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -5919,7 +5701,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m246", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Moana ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2026,
@@ -5937,7 +5718,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m247", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Gone Girl ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2014,
@@ -5955,7 +5735,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m248",
     title: "Ben 10",
     type: "TV Show",
     year: 2005,
@@ -6046,7 +5825,6 @@ const MOVIES = [
     ]
   },
   {
-    id: "m249",
     title: "Ben 10: Alien Force",
     type: "TV Show",
     year: 2008,
@@ -6128,7 +5906,6 @@ const MOVIES = [
     ]
   },
   {
-    id: "m250",
     title: "Ben 10: Ultimate Alien",
     type: "TV Show",
     year: 2010,
@@ -6216,7 +5993,6 @@ const MOVIES = [
     ]
   },
   {
-    id: "m251",
     title: "Ben 10: Omniverse",
     type: "TV Show",
     year: 2012,
@@ -6362,7 +6138,6 @@ const MOVIES = [
   },
 
   {
-    id: "m252", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Jumanji: Welcome to the Jungle ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
@@ -6380,7 +6155,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m253", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Jumanji: The Next Level ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2019,
@@ -6398,7 +6172,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m254", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Casino Royal ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2006,
@@ -6416,7 +6189,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m255", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Quantum of Solace ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2008,
@@ -6434,7 +6206,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m256", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Skyfall ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2012,
@@ -6452,7 +6223,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m257", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Spectre ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2015,
@@ -6470,7 +6240,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m258", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "No Time to Die ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2021,
@@ -6488,7 +6257,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m259", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Joker ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2019,
@@ -6506,7 +6274,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m260", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Joker: Folie à Deux ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -6524,7 +6291,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m261", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Truman Show ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1998,
@@ -6542,7 +6308,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m262", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Mummy ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1999,
@@ -6560,7 +6325,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m263", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Skyscraper ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2019,
@@ -6578,7 +6342,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m264", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Black Adam",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2022,
@@ -6596,7 +6359,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m265", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Red Notice",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2021,
@@ -6614,7 +6376,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m266", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Baywatch",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
@@ -6632,7 +6393,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m267", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Maze Runner",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2014,
@@ -6650,7 +6410,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m268", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Scorpion King",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2002,
@@ -6668,7 +6427,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m269", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Rocky",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1976,
@@ -6686,7 +6444,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m270", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Rocky II",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1979,
@@ -6704,7 +6461,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m271", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Rocky III",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1982,
@@ -6722,7 +6478,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m272", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Rocky IV",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1985,
@@ -6740,7 +6495,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m273", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Rocky V",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1990,
@@ -6758,7 +6512,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m274", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Grown Ups",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2010,
@@ -6776,7 +6529,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m275", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Grown Ups 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2013,
@@ -6794,7 +6546,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m276", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Red One",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -6812,7 +6563,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m277", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "World War Z",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2013,
@@ -6830,7 +6580,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m278", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Shang-Chi and the Legend of the Ten Rings",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2021,
@@ -6848,7 +6597,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m279", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "La La Land",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2016,
@@ -6866,7 +6614,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m280", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Scarface ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1983,
@@ -6884,7 +6631,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m281", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Meg ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2018,
@@ -6902,7 +6648,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m282", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Meg 2: The Trench ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
@@ -6920,7 +6665,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m283", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "American Psycho",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2000,
@@ -6938,7 +6682,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m284", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Bullet Train",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2022,
@@ -6956,7 +6699,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m285", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Beekeeper",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -6974,7 +6716,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m286", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Men in Black",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1997,
@@ -6992,7 +6733,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m287", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Men in Black II",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2002,
@@ -7010,7 +6750,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m288", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Men in Black 3",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2012,
@@ -7028,7 +6767,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m289", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Road House",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -7046,7 +6784,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m290", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Raiders of the Lost Ark",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1981,
@@ -7064,7 +6801,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m291", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Indiana Jones and the Temple of Doom",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1984,
@@ -7082,7 +6818,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m292", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Indiana Jones and the Last Crusade",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1989,
@@ -7100,7 +6835,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m293", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Indiana Jones and the Kingdom of the Crystal Skull",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2008,
@@ -7118,7 +6852,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m294", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Indiana Jones and the Dial of Destiny",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
@@ -7136,7 +6869,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m295", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Madagascar",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2005,
@@ -7154,7 +6886,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m296", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Madagascar: Escape 2 Africa ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2008,
@@ -7172,7 +6903,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m297", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Madagascar 3: Europe's Most Wanted  ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2012,
@@ -7190,7 +6920,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m298", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Edge of Tomorrow",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2014,
@@ -7208,7 +6937,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m299", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Vanilla Sky ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2001,
@@ -7226,7 +6954,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m300", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "American Made ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
@@ -7244,7 +6971,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m301", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Dune: Part One ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2021,
@@ -7262,7 +6988,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m302", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Dune: Part Two ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -7280,7 +7005,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m303", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Evil Dead Rise ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
@@ -7298,7 +7022,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m304", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Blade Runner 2049 ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2017,
@@ -7316,7 +7039,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m305", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "A Minecraft Movie",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
@@ -7334,7 +7056,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m306", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Kraven the Hunter",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -7352,7 +7073,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m307", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "White Chicks",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2004,
@@ -7370,7 +7090,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m308", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Rush Hour",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1998,
@@ -7388,7 +7107,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m309", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Rush Hour 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2001,
@@ -7406,7 +7124,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m310", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Rush Hour 3",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2007,
@@ -7424,7 +7141,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m311", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "A Working Man",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
@@ -7442,7 +7158,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m312", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "San Andreas",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2015,
@@ -7460,7 +7175,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m313", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Pursuit of Happyness",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2006,
@@ -7478,7 +7192,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m314", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Babygirl",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -7496,7 +7209,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m315", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Taken ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2008,
@@ -7514,7 +7226,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m316", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Taken 2 ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2012,
@@ -7532,7 +7243,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m317", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Taken 3 ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2014,
@@ -7550,7 +7260,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m318", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "War of the Worlds ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2005,
@@ -7568,7 +7277,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m319", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Mask ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1994,
@@ -7586,7 +7294,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m320", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Madame Web ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
@@ -7604,7 +7311,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m321",
     title: "The Witcher",
     type: "TV Show",
     year: 2019,
@@ -7678,7 +7384,6 @@ const MOVIES = [
     ]
   },
   {
-    id: "m322",
     title: "The Last of Us",
     type: "TV Show",
     year: 2023,
@@ -7725,7 +7430,6 @@ const MOVIES = [
     ]
   },
   {
-    id: "m323",
     title: "Loki",
     type: "TV Show",
     year: 2021,
@@ -7768,7 +7472,6 @@ const MOVIES = [
     ]
   },
   {
-    id: "m324",
     title: "Stranger Things",
     type: "TV Show",
     year: 2016,
@@ -7858,7 +7561,6 @@ const MOVIES = [
     ]
   },
   {
-    id: "m325",
     title: "Money Heist",
     type: "TV Show",
     year: 2017,
@@ -7946,7 +7648,6 @@ const MOVIES = [
     ]
   },
   {
-    id: "m326",
     title: "WandaVision",
     type: "TV Show",
     year: 2021,
@@ -7981,7 +7682,6 @@ const MOVIES = [
     ],
   },
   {
-    id: "m327",
     title: "The Flash",
     type: "TV Show",
     year: 2014,
@@ -8241,7 +7941,6 @@ const MOVIES = [
     ]
   },
   {
-    id: "m328",
     title: "Peaky Blinders",
     type: "TV Show",
     year: 2013,
@@ -8331,7 +8030,6 @@ const MOVIES = [
     ],
   },
   {
-    id: "m329",
     title: "The Queen's Gambit",
     type: "TV Show",
     year: 2020,
@@ -8364,7 +8062,6 @@ const MOVIES = [
     ]
   },
   {
-    id: "m330",
     title: "Game of Thrones",
     type: "TV Show",
     year: 2011,
@@ -8498,7 +8195,6 @@ const MOVIES = [
     ]
   },
   {
-    id: "m331", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Zootopia ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2016,
@@ -8516,7 +8212,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m332", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "Zootopia 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
@@ -8534,7 +8229,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m333", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Devil Wears Prada",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2006,
@@ -8552,7 +8246,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m334", // Keep incrementing this number (m14, m15, m16, etc.)
     title: "The Devil Wears Prada 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2026,
@@ -8570,7 +8263,6 @@ const MOVIES = [
     featured: false,
   },
   {
-    id: "m335",
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
@@ -8603,6 +8295,67 @@ const MOVIES = [
       },
     ]
   },
+  {
+    title: "House of the Dragon",
+    type: "TV Show",
+    year: 2022,
+    rating: 8.3,
+    age: "TV-MA",
+    duration: "1h",
+    genres: ["Fantasy", "Drama", "Action","Adventure"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/8jjTPo8j2dG6eDBYZOxgEpzSGAB.jpg",
+    videoUrl: "",
+    overview: "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Their totalitarian reign is highlighted through their sigil: a three-headed dragon, representing the union of King Aegon and his sisters, Rhaenys and Visenya. But the seeds of the downfall of House Targaryen have already been planted, as the Dance of the Dragons — a Targaryen civil war — approaches.",
+    director: "Ryan Condal, George R.R. Martin",
+    cast: ["Paddy Considine, Emma D'Arcy, Matt Smith, Olivia Cooke, Rhys Ifans, Steve Toussaint, Eve Best, Sonoya Mizuno, Fabien Frankel"],
+    trending: false,
+    featured: false,
+    cinesrcId: "94997", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "The Heirs of the Dragon" },
+          { episode: 2, title: "The Rogue Prince" },
+          { episode: 3, title: "Second of His Name" },
+          { episode: 4, title: "King of the Narrow Sea" },
+          { episode: 5, title: "We Light the Way" },
+          { episode: 6, title: "The Princess and the Queen" },
+          { episode: 7, title: "Driftmark" },
+          { episode: 8, title: "The Lord of the Tides" },
+          { episode: 9, title: "The Green Council" },
+          { episode: 10, title: "The Black Queen" },
+        ],
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "A Son for a Son" },
+          { episode: 2, title: "Rhaenyra the Cruel" },
+          { episode: 3, title: "The Burning Mill" },
+          { episode: 4, title: "The Red Dragon and the Gold" },
+          { episode: 5, title: "Regent" },
+          { episode: 6, title: "Smallfolk" },
+          { episode: 7, title: "The Red Sowing" },
+          { episode: 8, title: "The Queen Who Ever Was" },
+        ],
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: "Salt and Sea, Fire and Blood" },
+          { episode: 2, title: "Queen's Landing" },
+          { episode: 3, title: "Rhaenyra Triumphant" },
+          { episode: 4, title: "Tumbleton" },
+          { episode: 5, title: "Unbowed and Unbent" },
+          { episode: 6, title: "Faceless Men" },
+          { episode: 7, title: "The Dragon in Winter" },
+          { episode: 8, title: "The Treasons at Tumbleton" },
+        ],
+      },
+    ]
+  },
 
 
 
@@ -8610,7 +8363,24 @@ const MOVIES = [
 
 
 
-]
+];
+
+// Auto-generate a clean ID (slug) for every movie based on its title
+MOVIES.forEach(m => {
+  if (!m.id) {
+    m.id = m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+  }
+});
+
+// Apply Featured & Trending flags dynamically based on the exact titles above
+MOVIES.forEach(m => {
+  if (FEATURED_TITLES.includes(m.title)) m.featured = true;
+  else m.featured = false; // Override any hardcoded ones
+
+  if (TRENDING_TITLES.includes(m.title)) m.trending = true;
+  else m.trending = false; // Override any hardcoded ones
+});
+
 // ==========================================
 // 1b. HERO BANNER SETTINGS  (EDIT THIS SECTION)
 // ==========================================
@@ -8859,15 +8629,7 @@ function initApp() {
     // Event Listeners Setup
     bindEventListeners();
 
-    // Start hero auto slide
-    setInterval(() => {
-      if (state.activeView === "home") {
-        const featured = getFeaturedMovies();
-        if (featured.length === 0) return;
-        state.currentHeroIndex = (state.currentHeroIndex + 1) % featured.length;
-        updateHeroBanner(featured[state.currentHeroIndex], "next");
-      }
-    }, HERO_ROTATE_INTERVAL_MS);
+    // Start hero auto slide (managed by startHeroAutoplay)
   } catch (err) {
     console.error("InitApp error:", err);
   } finally {
@@ -8876,10 +8638,8 @@ function initApp() {
 }
 
 function getFeaturedMovies() {
-  return MOVIES.filter((m) => {
-    const idNum = parseInt(m.id.replace("m", ""), 10);
-    const isHomeEligible = isNaN(idNum) || idNum < 13;
-    return m.featured && isHomeEligible;
+  return MOVIES.filter((m) => m.featured).sort((a, b) => {
+    return FEATURED_TITLES.indexOf(a.title) - FEATURED_TITLES.indexOf(b.title);
   });
 }
 
@@ -9007,7 +8767,7 @@ function startHeroAutoplay() {
   state.heroInterval = setInterval(() => {
     state.currentHeroIndex = (state.currentHeroIndex + 1) % featuredCount;
     updateHeroBanner();
-  }, 6000); // 6 seconds per slide
+  }, HERO_ROTATE_INTERVAL_MS); // 10 seconds per slide
 }
 
 function updateHeroBanner() {
@@ -9047,19 +8807,13 @@ function createMovieCardHTML(movie) {
 }
 
 function renderCarousels() {
-  // Only show movies/shows with ID less than 13 on the homepage shelves
-  const homeMovies = MOVIES.filter((m) => {
-    const idNum = parseInt(m.id.replace("m", ""), 10);
-    return isNaN(idNum) || idNum < 13;
-  });
-
   const shelfMap = {
-    trendingTrack: homeMovies.filter((m) => m.trending),
-    scifiTrack: homeMovies.filter((m) => m.genres.includes("Sci-Fi") || m.genres.includes("Science-Fiction")),
-    actionTrack: homeMovies.filter((m) => m.genres.includes("Action")),
-    animeTrack: homeMovies.filter((m) => m.genres.includes("Animation") || m.genres.includes("Anime")),
-    horrorTrack: homeMovies.filter((m) => m.genres.includes("Horror")),
-    dramaTrack: homeMovies.filter((m) => m.genres.includes("Drama")),
+    trendingTrack: MOVIES.filter((m) => m.trending).sort((a,b) => TRENDING_TITLES.indexOf(a.title) - TRENDING_TITLES.indexOf(b.title)),
+    scifiTrack: MOVIES.filter((m) => m.genres.includes("Sci-Fi") || m.genres.includes("Science-Fiction")).slice(0, 15),
+    actionTrack: MOVIES.filter((m) => m.genres.includes("Action")).slice(0, 15),
+    animeTrack: MOVIES.filter((m) => m.genres.includes("Animation") || m.genres.includes("Anime")).slice(0, 15),
+    horrorTrack: MOVIES.filter((m) => m.genres.includes("Horror")).slice(0, 15),
+    dramaTrack: MOVIES.filter((m) => m.genres.includes("Drama")).slice(0, 15),
   };
 
   Object.keys(shelfMap).forEach((trackId) => {
@@ -9466,6 +9220,9 @@ function switchView(viewName) {
     hideAll();
     filteredSection.classList.remove("hidden");
     renderFilteredGrid(MOVIES, "Explore All Titles");
+  } else if (viewName === "search") {
+    hideAll();
+    filteredSection.classList.remove("hidden");
   } else if (viewName === "details") {
     hideAll();
     if (detailsSection) detailsSection.classList.remove("hidden");
@@ -9703,17 +9460,43 @@ function openDetailsModal(movieId) {
     state.previousView = state.activeView;
   }
 
-  document.getElementById("detailsBg").style.backgroundImage = `url('${movie.backdrop || movie.poster}')`;
-  document.getElementById("detailsTitle").textContent = movie.title;
-  document.getElementById("detailsRating").textContent = movie.rating;
-  document.getElementById("detailsYear").textContent = movie.year;
-  document.getElementById("detailsDuration").textContent = movie.duration;
-  
-  if (document.getElementById("detailsGenres")) {
-    document.getElementById("detailsGenres").textContent = movie.genres.join(" - ");
+  // Create a cinematic fade-to-black transition
+  const fader = document.createElement("div");
+  fader.style.position = "fixed";
+  fader.style.inset = "0";
+  fader.style.backgroundColor = "#0b0c10";
+  fader.style.zIndex = "9999";
+  fader.style.opacity = "0";
+  fader.style.transition = "opacity 0.25s ease-in-out";
+  document.body.appendChild(fader);
+
+  requestAnimationFrame(() => {
+    fader.style.opacity = "1";
+  });
+
+  setTimeout(() => {
+    document.getElementById("detailsBg").style.backgroundImage = `url('${movie.backdrop || movie.poster}')`;
+    document.getElementById("detailsTitle").textContent = movie.title;
+    document.getElementById("detailsRating").textContent = movie.rating;
+    document.getElementById("detailsYear").textContent = movie.year;
+    document.getElementById("detailsDuration").textContent = movie.duration;
+    
+    if (document.getElementById("detailsGenres")) {
+      document.getElementById("detailsGenres").innerHTML = movie.genres.join(" &middot; ");
+    }
+    
+    document.getElementById("detailsOverview").textContent = movie.overview;
+
+  const castContainer = document.getElementById("detailsCastContainer");
+  const castText = document.getElementById("detailsCastText");
+  if (castContainer && castText) {
+    if (movie.cast && movie.cast.length > 0) {
+      castText.textContent = movie.cast.join(", ");
+      castContainer.classList.remove("hidden");
+    } else {
+      castContainer.classList.add("hidden");
+    }
   }
-  
-  document.getElementById("detailsOverview").textContent = movie.overview;
 
   const favCheckbox = document.getElementById("detailsFavCheckbox");
   const favBtn = document.getElementById("detailsFavBtn");
@@ -9732,10 +9515,14 @@ function openDetailsModal(movieId) {
   const similarsGrid = document.getElementById("detailsSimilarsGrid");
   const similarsSection = document.getElementById("detailsSimilarsSection");
   if (similarsGrid && similarsSection) {
-    let similarMovies = MOVIES.filter(m => m.id !== movie.id && m.genres.some(g => movie.genres.includes(g)));
-    
-    // Shuffle the array to show random matching movies every time
-    similarMovies = similarMovies.sort(() => 0.5 - Math.random());
+    let similarMovies = MOVIES.filter(m => m.id !== movie.id)
+      .map(m => {
+        const matchScore = m.genres.filter(g => movie.genres.includes(g)).length;
+        return { movie: m, matchScore };
+      })
+      .filter(m => m.matchScore > 0)
+      .sort((a, b) => b.matchScore !== a.matchScore ? b.matchScore - a.matchScore : 0.5 - Math.random())
+      .map(m => m.movie);
     
     const limited = similarMovies.slice(0, 12);
     if (limited.length > 0) {
@@ -9752,7 +9539,6 @@ function openDetailsModal(movieId) {
 
   if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
     tvSection.classList.remove("hidden");
-    playBtn.textContent = "▶ Watch Show";
 
     const seasonSelect = document.getElementById("seasonSelect");
     const episodeGrid = document.getElementById("episodeGrid");
@@ -9847,7 +9633,6 @@ function openDetailsModal(movieId) {
   } else {
     // Movie — hide TV section
     tvSection.classList.add("hidden");
-    playBtn.textContent = "▶ Watch Movie";
     playBtn.onclick = () => {
       openVideoPlayer(movie.id);
     };
@@ -9866,6 +9651,11 @@ function openDetailsModal(movieId) {
 
   // Switch to details page view
   switchView("details");
+
+  // Fade back in
+  fader.style.opacity = "0";
+  setTimeout(() => fader.remove(), 300);
+  }, 300); // end of setTimeout
 }
 
 // Open the video player with a direct URL (used for TV episodes)
@@ -10566,6 +10356,7 @@ function bindEventListeners() {
         // Trigger a search
         const matches = fuzzySearch(query);
         closeSearchModal();
+        switchView("search");
         renderFilteredGrid(matches, `Search Results for "${query}"`);
       }
     };
@@ -10622,6 +10413,7 @@ function bindEventListeners() {
           const qLower = query.toLowerCase();
           const matches = fuzzySearch(query);
           closeSearchModal();
+          switchView("search");
           renderFilteredGrid(matches, `Search Results for "${query}"`);
         }
       }
@@ -10649,7 +10441,24 @@ function bindEventListeners() {
 
   // Close modals
   if (document.getElementById("closeDetailsBtn")) document.getElementById("closeDetailsBtn").onclick = () => {
-    switchView(state.previousView || "home");
+    const fader = document.createElement("div");
+    fader.style.position = "fixed";
+    fader.style.inset = "0";
+    fader.style.backgroundColor = "#0b0c10";
+    fader.style.zIndex = "9999";
+    fader.style.opacity = "0";
+    fader.style.transition = "opacity 0.25s ease-in-out";
+    document.body.appendChild(fader);
+
+    requestAnimationFrame(() => {
+      fader.style.opacity = "1";
+    });
+
+    setTimeout(() => {
+      switchView(state.previousView || "home");
+      fader.style.opacity = "0";
+      setTimeout(() => fader.remove(), 300);
+    }, 300);
   };
   if (document.getElementById("closePlayerBtn")) document.getElementById("closePlayerBtn").onclick = closeVideoPlayer;
   if (document.getElementById("closePlayerX")) document.getElementById("closePlayerX").onclick = closeVideoPlayer;
