@@ -10269,7 +10269,7 @@ function bindEventListeners() {
     };
   });
 
-  document.getElementById("logoBtn").onclick = (e) => {
+  if (document.getElementById("logoBtn")) document.getElementById("logoBtn").onclick = (e) => {
     e.preventDefault();
     const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
     if (mobileMenuOverlay) mobileMenuOverlay.classList.remove("active");
@@ -10648,12 +10648,12 @@ function bindEventListeners() {
   }
 
   // Close modals
-  document.getElementById("closeDetailsBtn").onclick = () => {
+  if (document.getElementById("closeDetailsBtn")) document.getElementById("closeDetailsBtn").onclick = () => {
     switchView(state.previousView || "home");
   };
-  document.getElementById("closePlayerBtn").onclick = closeVideoPlayer;
-  document.getElementById("closePlayerX").onclick = closeVideoPlayer;
-  document.getElementById("closeAuthBtn").onclick = closeAuthModal;
+  if (document.getElementById("closePlayerBtn")) document.getElementById("closePlayerBtn").onclick = closeVideoPlayer;
+  if (document.getElementById("closePlayerX")) document.getElementById("closePlayerX").onclick = closeVideoPlayer;
+  if (document.getElementById("closeAuthBtn")) document.getElementById("closeAuthBtn").onclick = closeAuthModal;
 
   // Report Modal Handlers
   const headerReportBtn = document.getElementById("headerReportBtn");
@@ -10687,11 +10687,11 @@ function bindEventListeners() {
   }
 
   // Modal Backdrop Clicks
-  document.getElementById("detailsModal").onclick = (e) => {
+  if (document.getElementById("detailsModal")) document.getElementById("detailsModal").onclick = (e) => {
     if (e.target.id === "detailsModal")
       document.getElementById("detailsModal").classList.add("hidden");
   };
-  document.getElementById("authModal").onclick = (e) => {
+  if (document.getElementById("authModal")) document.getElementById("authModal").onclick = (e) => {
     if (e.target.id === "authModal") closeAuthModal();
   };
 
@@ -10701,13 +10701,23 @@ function bindEventListeners() {
     const input = document.getElementById(inputId);
     if (!toggle || !input) return;
 
-    toggle.onclick = () => {
-      const type = input.getAttribute("type") === "password" ? "text" : "password";
-      input.setAttribute("type", type);
-      // The icon is now inside a button — find it inside
-      const icon = toggle.querySelector("ion-icon") || toggle;
-      icon.setAttribute("name", type === "password" ? "eye-outline" : "eye-off-outline");
-    };
+    // Use addEventListener and preventDefault to ensure it works reliably
+    toggle.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      // Use direct property access for the type
+      const currentType = input.type || "password";
+      const newType = currentType === "password" ? "text" : "password";
+      
+      input.type = newType;
+      
+      const icon = toggle.querySelector("ion-icon");
+      if (icon) {
+        // ion-icon uses the name property/attribute
+        icon.setAttribute("name", newType === "password" ? "eye-outline" : "eye-off-outline");
+      }
+    });
   };
 
   togglePasswordVisibility("toggleLoginPassword", "loginPassword");
@@ -10941,7 +10951,7 @@ function bindEventListeners() {
   };
 
   // Explore button in empty state
-  document.getElementById("exploreBtn").onclick = () => {
+  if (document.getElementById("exploreBtn")) document.getElementById("exploreBtn").onclick = () => {
     switchView("home");
   };
 

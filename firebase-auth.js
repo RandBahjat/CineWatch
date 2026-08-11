@@ -4,27 +4,6 @@
  * Exposes window.CW_Firebase for use by the main movie.js script.
  */
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-analytics.js";
-import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  signOut,
-  onAuthStateChanged,
-  updateProfile,
-} from "https://www.gstatic.com/firebasejs/12.17.1/firebase-auth.js";
-import {
-  getFirestore,
-  doc,
-  setDoc,
-  getDoc,
-  collection,
-  onSnapshot,
-} from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
-
-export { db, auth, collection, onSnapshot };
-
 // ── Firebase Config ──────────────────────────────────────────────────────────
 const firebaseConfig = {
   apiKey: "AIzaSyBOUHbud6Qha9Wby_mGnrF5nTskhtRnK1U",
@@ -36,18 +15,17 @@ const firebaseConfig = {
   measurementId: "G-LSJ9W3T69X",
 };
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-const auth = getAuth(app);
-const db = getFirestore(app);
+// Initialize Firebase using compat libraries (loaded in index.html)
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
 /** Save favorites + continue-watching to Firestore for the signed-in user */
 async function syncToFirestore(uid, favorites, continueWatching) {
   try {
-    await setDoc(
-      doc(db, "users", uid),
+    await db.collection("users").doc(uid).set(
       { favorites, continueWatching },
       { merge: true }
     );
@@ -59,8 +37,8 @@ async function syncToFirestore(uid, favorites, continueWatching) {
 /** Load user data from Firestore and merge into local state */
 async function loadFromFirestore(uid) {
   try {
-    const snap = await getDoc(doc(db, "users", uid));
-    if (snap.exists()) {
+    const snap = await db.collection("users").doc(uid).get();
+    if (snap.exists) {
       return snap.data(); // { favorites: [], continueWatching: {} }
     }
   } catch (err) {
@@ -70,7 +48,7 @@ async function loadFromFirestore(uid) {
 }
 
 // ── Real-Time Firestore Movies Listener ──────────────────────────────────────
-onSnapshot(collection(db, "movies"), (snapshot) => {
+db.collection("movies").onSnapshot((snapshot) => {
   const firestoreMovies = [];
   const movieGrid = document.querySelector(".movie-grid");
 
@@ -127,10 +105,10 @@ onSnapshot(collection(db, "movies"), (snapshot) => {
 });
 
 // ── Auth State Observer ──────────────────────────────────────────────────────
-onAuthStateChanged(auth, async (firebaseUser) => {
+auth.onAuthStateChanged(async (firebaseUser) => {
   if (firebaseUser) {
     let name = firebaseUser.displayName;
-    let avatar = "🍿";
+    let avatar = firebaseUser.photoURL || "🍿";
 
     // Check if we have a stored user in localStorage to preserve display name & avatar
     try {
@@ -176,12 +154,12 @@ window.CW_Firebase = {
    */
   async signUp(name, email, password) {
     try {
-      const cred = await createUserWithEmailAndPassword(auth, email, password);
-      await updateProfile(cred.user, { displayName: name });
+      const cred = await auth.createUserWithEmailAndPassword(email, password);
+      await cred.user.updateProfile({ displayName: name });
       
       try {
         // Initialize user doc in Firestore
-        await setDoc(doc(db, "users", cred.user.uid), {
+        await db.collection("users").doc(cred.user.uid).set({
           name: name,
           favorites: [],
           continueWatching: {},
@@ -207,9 +185,16 @@ window.CW_Firebase = {
    */
   async signIn(email, password) {
     try {
-      const cred = await signInWithEmailAndPassword(auth, email, password);
+      const cred = await auth.signInWithEmailAndPassword(email, password);
       const name = cred.user.displayName || cred.user.email.split("@")[0];
-      return { user: { uid: cred.user.uid, name: name, email: cred.user.email, avatar: "🍿" }, error: null };
+      
+      let avatar = cred.user.photoURL || "🍿";
+      const cloudData = await loadFromFirestore(cred.user.uid);
+      if (cloudData && cloudData.avatar && cloudData.avatar !== "🍿") {
+        avatar = cloudData.avatar;
+      }
+      
+      return { user: { uid: cred.user.uid, name: name, email: cred.user.email, avatar }, error: null };
     } catch (err) {
       return { user: null, error: _friendlyError(err.code) };
     }
@@ -220,7 +205,7 @@ window.CW_Firebase = {
    */
   async signOut() {
     try {
-      await signOut(auth);
+      await auth.signOut();
     } catch (err) {
       console.error("Sign-out error:", err);
     }
@@ -233,7 +218,14 @@ window.CW_Firebase = {
     const user = auth.currentUser;
     if (user) {
       try {
-        await setDoc(doc(db, "users", user.uid), { avatar }, { merge: true });
+        // Also update Auth profile as a robust fallback
+        await user.updateProfile({ photoURL: avatar });
+      } catch (authErr) {
+        console.error("Auth profile update error:", authErr);
+      }
+
+      try {
+        await db.collection("users").doc(user.uid).set({ avatar }, { merge: true });
       } catch (err) {
         console.error("Firestore avatar update error:", err);
       }

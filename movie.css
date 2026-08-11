@@ -1476,21 +1476,16 @@ select {
   height: 100%;
   background-size: cover;
   background-position: top center;
-  filter: brightness(0.7);
+  /* Removed brightness filter so the center is fully clear */
 }
 
 .details-bg-gradient-overlay {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(
-      to right,
-      rgba(11, 12, 16, 0.9) 0%,
-      rgba(11, 12, 16, 0.6) 40%,
-      transparent 100%
-    ),
-    linear-gradient(to top, #0b0c10 0%, transparent 35%),
-    linear-gradient(to bottom, rgba(11, 12, 16, 0.8) 0%, transparent 15%);
+  /* Shadow on bottom and left, keeping center fully clear */
+  background: 
+    linear-gradient(to right, rgba(11, 12, 16, 0.95) 0%, rgba(11, 12, 16, 0.7) 20%, transparent 45%),
+    linear-gradient(to top, #0b0c10 0%, transparent 40%);
 }
 
 /* Hide heart/watchlist button on 'You may like' cards */
@@ -1539,7 +1534,6 @@ select {
 .details-back-btn svg {
   width: 24px;
   fill: #fff;
-  transform: rotate(180deg);
 }
 
 .details-back-btn:hover {
@@ -2247,6 +2241,7 @@ select {
 }
 
 .password-toggle-btn ion-icon {
+  position: static !important;
   pointer-events: none;
   font-size: 1.2rem;
 }
@@ -4842,20 +4837,25 @@ select {
   box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.3);
 }
 
-.watchlist-wrapper .circle .svg {
+.watchlist-wrapper .circle ion-icon {
   position: absolute;
   top: 50%;
   left: 50%;
   margin-left: -15px;
   margin-top: -15px;
-  width: 30px;
-  height: 30px;
-  transition: 0.5s;
-  transform: rotate(180deg);
+  font-size: 30px;
+  color: #333;
+  transition: 0.3s;
 }
 
-.watchlist-wrapper .circle svg image {
-  filter: brightness(50%);
+.watchlist-wrapper .circle .icon-check {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.watchlist-wrapper .circle .icon-add {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .hidden-trigger {
@@ -4869,6 +4869,23 @@ select {
   box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
-.hidden-trigger:checked ~ .circle .svg {
-  transform: rotate(45deg);
+.hidden-trigger:checked ~ .circle .icon-add {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.hidden-trigger:checked ~ .circle .icon-check {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+/* Fix Chrome Autofill turning inputs white */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #1f2833 inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
