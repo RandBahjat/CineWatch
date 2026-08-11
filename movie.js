@@ -10256,7 +10256,7 @@ function bindEventListeners() {
       return titleWords.some(tw => {
         const nt = norm(tw);
         if (!nt) return false;
-        return nt.includes(nw) || nw.includes(nt);
+        return nt.includes(nw);
       });
     });
     // REQUIRE all words to match the title to be considered a title match
