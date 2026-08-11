@@ -10844,28 +10844,33 @@ function bindEventListeners() {
     submitBtn.textContent = "Signing in...";
     submitBtn.disabled = true;
 
-    if (window.CW_Firebase) {
-      // Mark that this is a real login action so cw:authChanged knows to reload
-      sessionStorage.setItem("cw_loginPending", "1");
-      const { user, error } = await window.CW_Firebase.signIn(email, pass);
-      if (error) {
-        sessionStorage.removeItem("cw_loginPending"); // clear flag on error
-        alertEl.textContent = error;
-        alertEl.classList.remove("hidden");
-        submitBtn.innerHTML = '<ion-icon name="log-in-outline"></ion-icon> Sign In';
-        submitBtn.disabled = false;
-        return;
-      }
-      // onAuthStateChanged will trigger cw:authChanged which will reload the page.
-      // As a fallback, also manually save user and update UI in case the event fires late.
-      if (user) {
-        saveUser(user);
-        renderUserBadge();
-        updateWatchlistBadge();
-      }
-      closeAuthModal();
-      showToast(`Welcome back! 🎬`);
+    if (!window.CW_Firebase) {
+      alertEl.textContent = "Authentication service not ready. Please refresh the page and try again.";
+      alertEl.classList.remove("hidden");
+      submitBtn.innerHTML = '<ion-icon name="log-in-outline"></ion-icon> Sign In';
+      submitBtn.disabled = false;
+      return;
     }
+
+    // Mark that this is a real login action so cw:authChanged knows to reload
+    sessionStorage.setItem("cw_loginPending", "1");
+    const { user, error } = await window.CW_Firebase.signIn(email, pass);
+    if (error) {
+      sessionStorage.removeItem("cw_loginPending"); // clear flag on error
+      alertEl.textContent = error;
+      alertEl.classList.remove("hidden");
+      submitBtn.innerHTML = '<ion-icon name="log-in-outline"></ion-icon> Sign In';
+      submitBtn.disabled = false;
+      return;
+    }
+    // As a fallback, also manually save user and update UI in case the event fires late.
+    if (user) {
+      saveUser(user);
+      renderUserBadge();
+      updateWatchlistBadge();
+    }
+    closeAuthModal();
+    showToast(`Welcome back! 🎬`);
     submitBtn.innerHTML = '<ion-icon name="log-in-outline"></ion-icon> Sign In';
     submitBtn.disabled = false;
   };
