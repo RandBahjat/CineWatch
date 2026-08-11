@@ -85,7 +85,7 @@ const MOVIES = [
     duration: "2h 5m",
     genres: ["Action", "Sci-Fi", "Adventure"],
     poster:
-      "https://myhotposters.com/cdn/shop/files/Supergirl_1_1024x1024.webp?v=1780958294",
+      "https://image.tmdb.org/t/p/original/1QCWdqzTfh2x9UylVpspIU6QTuM.jpg",
     backdrop:
       "https://images.hdqwalls.com/download/supergirl-team-up-4k-hb-3840x2160.jpg",
     videoUrl:
@@ -2262,7 +2262,7 @@ const MOVIES = [
     duration: "2h 12m",
     genres: ["Action", "Adventure", "Thriller"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkAV8FRHMw_q8-0m6duL934Fve_riw7irDVnE7_yO6fA&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPXGcvF4B_x7_yrESFlnVSb2o4isq-3K6PTfCzOsLc6g&s=10",
+    backdrop: "https://image.tmdb.org/t/p/original/pAgYjgYYEo44T68r1UBpd6Q3k6J.jpg",
     videoUrl: "56292",
     overview: "After the IMF is framed for a deadly bombing attack on the Kremlin and disavowed by the government, Ethan Hunt and his team must operate entirely off the grid to clear their names and stop a nuclear extremist before he can trigger global war.",
     director: "Brad Bird",

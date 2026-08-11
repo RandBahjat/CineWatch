@@ -2210,29 +2210,7 @@ select {
   to { opacity: 1; transform: scale(1); }
 }
 
-.auth-form > *:not(.password-requirements) {
-  opacity: 0;
-  animation: fieldSlideUp 0.35s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-}
 
-/* Ultra-fast subtle stagger */
-.auth-form > *:not(.password-requirements):nth-child(1) { animation-delay: 0.04s; }
-.auth-form > *:not(.password-requirements):nth-child(2) { animation-delay: 0.08s; }
-.auth-form > *:not(.password-requirements):nth-child(3) { animation-delay: 0.12s; }
-.auth-form > *:not(.password-requirements):nth-child(4) { animation-delay: 0.16s; }
-.auth-form > *:not(.password-requirements):nth-child(5) { animation-delay: 0.20s; }
-.auth-form > *:not(.password-requirements):nth-child(6) { animation-delay: 0.24s; }
-
-@keyframes fieldSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 .form-group {
   margin-bottom: 1.2rem;
