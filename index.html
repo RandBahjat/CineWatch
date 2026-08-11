@@ -536,13 +536,12 @@
     </div>
 
     <!-- Authentication (Login / Signup) Modal -->
-    <div class="modal-overlay hidden" id="authModal">
-        <div class="auth-modal-backdrop" onclick="document.getElementById('authModal').classList.add('hidden')"></div>
-        <div class="modal-card auth-modal-card">
+    <div class="modal-overlay hidden" id="authModal" onclick="document.getElementById('authModal').classList.add('hidden')">
+        <div class="modal-card auth-modal-card" onclick="event.stopPropagation()">
             <div class="bg"></div>
             <div class="blob"></div>
             <div class="blob blob2"></div>
-            <button class="modal-close-btn" id="closeAuthBtn">&times;</button>
+            <button class="modal-close-btn" id="closeAuthBtn" onclick="document.getElementById('authModal').classList.add('hidden')">&times;</button>
 
             <div class="auth-modal-body">
                 <div class="auth-header">
@@ -552,10 +551,8 @@
 
                 <!-- Auth Tabs -->
                 <div class="auth-tabs">
-                    <button class="auth-tab active" id="tabLoginBtn"><ion-icon name="log-in-outline"></ion-icon> Sign
-                        In</button>
-                    <button class="auth-tab" id="tabSignupBtn"><ion-icon name="person-add-outline"></ion-icon> Create
-                        Account</button>
+                    <button class="auth-tab active" id="tabLoginBtn" onclick="this.classList.add('active'); document.getElementById('tabSignupBtn').classList.remove('active'); document.getElementById('loginForm').classList.remove('hidden'); document.getElementById('signupForm').classList.add('hidden');"><ion-icon name="log-in-outline"></ion-icon> Sign In</button>
+                    <button class="auth-tab" id="tabSignupBtn" onclick="this.classList.add('active'); document.getElementById('tabLoginBtn').classList.remove('active'); document.getElementById('signupForm').classList.remove('hidden'); document.getElementById('loginForm').classList.add('hidden');"><ion-icon name="person-add-outline"></ion-icon> Create Account</button>
                 </div>
 
                 <!-- Login Form -->
