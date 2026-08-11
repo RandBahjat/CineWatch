@@ -9475,6 +9475,9 @@ function openDetailsModal(movieId) {
   });
 
   setTimeout(() => {
+    const detailsSection = document.getElementById("detailsSection");
+    if (detailsSection) detailsSection.scrollTo(0, 0);
+    
     document.getElementById("detailsBg").style.backgroundImage = `url('${movie.backdrop || movie.poster}')`;
     document.getElementById("detailsTitle").textContent = movie.title;
     document.getElementById("detailsRating").textContent = movie.rating;
@@ -10431,10 +10434,15 @@ function bindEventListeners() {
       if (item) {
         const movieId = item.dataset.id;
         const movie = MOVIES.find(m => m.id === movieId);
-        if (movie) saveRecentSearch(movie.title);
-        searchDropdown.classList.add("hidden");
-        closeSearchModal();
-        openDetailsModal(movieId);
+        if (movie) {
+          saveRecentSearch(movie.title);
+          searchInput.value = movie.title;
+          const matches = fuzzySearch(movie.title);
+          searchDropdown.classList.add("hidden");
+          closeSearchModal();
+          switchView("search");
+          renderFilteredGrid(matches, `Search Results for "${movie.title}"`);
+        }
       }
     };
   }
