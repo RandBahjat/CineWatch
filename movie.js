@@ -937,7 +937,7 @@ const MOVIES = [
     duration: "2h 56m",
     genres: ["Action", "Adventure", "Fantasy"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwBxeWEag4mqr9vQpPlJHtPlb_ZLsGdxZS_3mm67jYjQ&s=10",
-    backdrop: "https://image.tmdb.org/t/p/original/6b62wqCJCG1tHV4mFUwvwmM88vw.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/o6D4dIH8i9qrftUNKfyJehWTOpW.jpg",
     videoUrl: "414906",
     overview: "When a sadistic killer known as the Riddler begins murdering Gotham's elite and leaving behind cryptic clues, Batman is drawn into his most challenging investigation yet. As he follows the trail through the city's underworld, he uncovers a web of corruption that stretches all the way back to his own family's legacy — forcing him to confront painful truths while facing off against the Penguin and Carmine Falcone along the way.",
     director: "Matt Reeves",
@@ -956,7 +956,7 @@ const MOVIES = [
     duration: "2h 9 m",
     genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5mlI9Xiq19VvZESv_r0yRJgb4XIu-Ht0tCR_oMGftFQ&s=10",
-    backdrop: "https://getyourcomicon.co.uk/wp-content/uploads/2024/05/SupermanLegacy-FirstLookSuit-Header.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/bWZwiaJSXwYILxi3bE5Quwy5UXC.jpg",
     videoUrl: "https://example.com/video.mp4",
     overview: "Balancing his Kryptonian origins with the values instilled in him growing up in Kansas, Superman navigates a world increasingly skeptical of his motives and methods as a superhero. When Lex Luthor orchestrates a calculated scheme to expose and destroy him — using both technology and public opinion as weapons — Superman must decide what kind of hero he wants to be, and prove that kindness is still a strength worth fighting for.",
     director: "James Gunn",
@@ -974,7 +974,7 @@ const MOVIES = [
     duration: "2h 23m",
     genres: ["Action", "Adventure", "Fantasy"],
     poster: "https://image.tmdb.org/t/p/original/uCg2HPY7rBCrh1YGpXam9LH1xKZ.jpg",
-    backdrop: "https://media.themoviedb.org/t/p/w1066_and_h600_face/qkOw5IZXESOiRH4wzdIYJlBZiCp.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/qkOw5IZXESOiRH4wzdIYJlBZiCp.jpg",
     videoUrl: "https://example.com/video.mp4",
     overview: "Half-human, half-Atlantean, Arthur Curry has spent his life torn between two worlds. When his ambitious brother Orm plots to unite the seven undersea kingdoms and wage war on the surface, Arthur is thrust into a journey to reclaim his birthright as the true king of Atlantis — alongside Mera, princess of Xebel — facing mythical creatures, ancient prophecies, and a battle to prove himself as more than just a man caught between two worlds.",
     director: "James Wan",
@@ -993,7 +993,7 @@ const MOVIES = [
     duration: "2h 4m",
     genres: ["Action", "Adventure", "Fantasy"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ07y6P5Z1a90Pc3X5d3BLI58uycJQEzsyBng3Xn6zoSQ&s=10",
-    backdrop: "https://dccomicsnews.com/wp-content/uploads/2021/10/Aquaman-and-the-Lost-Kingdom-Title-Explained-SR.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/jXJxMcVoEuXzym3vFnjqDW4ifo6.jpg",
     videoUrl: "https://example.com/video.mp4",
     overview: "Now settling into his role as King of Atlantis while adjusting to fatherhood, Arthur Curry finds himself pulled back into conflict when Black Manta resurfaces, empowered by an ancient and malevolent artifact known as the Black Trident. As Manta's vendetta threatens to unleash irreversible destruction on both Atlantis and the surface world, Arthur is forced to team up with his imprisoned brother Orm — putting aside years of rivalry to defend everything they both hold dear.",
     director: "James Wan",
@@ -1012,7 +1012,7 @@ const MOVIES = [
     duration: "2h 32m",
     genres: ["Action", "Family", "Fantasy"],
     poster: "https://www.themoviedb.org/t/p/w1280/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/hwInwXo34ji3QfcNXvFBC3GX2TA.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/1XAC6RPT01UX9EQGy2JVn5c8pgy.jpg",
     videoUrl: "671",
     overview: "Raised in ignorance of his true heritage by his cruel aunt and uncle, Harry Potter learns on his eleventh birthday that he's actually a famous wizard, orphaned as a baby when a dark wizard tried and failed to kill him. Whisked off to Hogwarts School of Witchcraft and Wizardry, Harry begins to master magic, make lifelong friends, and uncover clues pointing to a hidden, powerful artifact — while a lingering evil stirs once more within the castle's walls.",
     director: "Chris Columbus",
@@ -1048,7 +1048,7 @@ const MOVIES = [
     duration: "2h 21m",
     genres: ["Adventure", "Family", "Fantasy", "Mystery"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLBdnlzLnNeha9UfT__hwGOhY9Vh87Fn7pb4XAh3H17w&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJq1F0WQGbmA4jK-atTMY-L2VGRTxMRGQk1eACO5wMSg&s=10",
+    backdrop: "https://image.tmdb.org/t/p/original/fVgBU3KJAWHS55FPdbsZQ3YQG2Z.jpg",
     videoUrl: "673",
     overview: "As his third year at Hogwarts begins, Harry learns that Sirius Black, a notorious escaped prisoner from Azkaban, may be coming after him. With dementors patrolling the school grounds and new mysteries surrounding his parents' deaths coming to light, Harry must rely on his closest friends — and a mysterious new professor — to uncover the truth behind Black's true intentions before it's too late.",
     director: "Alfonso Cuarón",
@@ -1066,7 +1066,7 @@ const MOVIES = [
     duration: "2h 37m",
     genres: ["Adventure", "Family", "Fantasy", "Mystery"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoco-jf8kEfqokZ8TaGvVLTexLHhBL2C3HPFA9hD4D0Q&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQejaBK_4hJ6Yq4STPOQ6PPR3dK0PNBv-hhOZv_CXaJFg&s=10",
+    backdrop: "https://image.tmdb.org/t/p/original/rJFoaMjn2sYte0w74Pyur9CZg26.jpg",
     videoUrl: "674",
     overview: "As Hogwarts hosts the Triwizard Tournament, a perilous competition between three magic schools, Harry is shocked to find his name emerges from the Goblet of Fire despite being underage and ineligible. Forced to compete in a series of increasingly dangerous trials, Harry senses a growing darkness at play — one tied directly to the return of the wizard responsible for his parents' deaths, culminating in a confrontation that changes the wizarding world forever.",
     director: "Mike Newell",
@@ -1084,7 +1084,7 @@ const MOVIES = [
     duration: "2h 18m",
     genres: ["Adventure", "Family", "Fantasy", "Mystery"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJFs9LPhwKKlDW02S8MrSYBJ1BzUPgPmVhINsuCWbX1g&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0FDgJCX3GW11IPKo9vRUtKCeTYV6k8mOd23QpeXSxsA&s=10",
+    backdrop: "https://image.tmdb.org/t/p/original/jLbpgkxA5PSgzmcszT8yCOyPkgf.jpg",
     videoUrl: "675",
     overview: "Branded a liar by the Ministry of Magic for insisting that the darkest wizard of all time has returned, Harry finds himself isolated and under scrutiny as a new Defense Against the Dark Arts teacher, the tyrannical Dolores Umbridge, seizes control of Hogwarts. Determined to prepare his friends for the fight ahead, Harry secretly forms Dumbledore's Army, training a select group of students in real defensive magic — all while a shadowy prophecy draws him closer to his ultimate confrontation.",
     director: "David Yates",
@@ -1102,7 +1102,7 @@ const MOVIES = [
     duration: "2h 33m",
     genres: ["Adventure", "Family", "Fantasy", "Mystery"],
     poster: "https://www.themoviedb.org/t/p/w1280/z7uo9zmQdQwU5ZJHFpv2Upl30i1.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/jwiv3JNEbzph8oC6tSzRRO1oWde.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/r5xT55Era1XrpAq6XNsrPpozNjM.jpg",
     videoUrl: "767",
     overview: "With Voldemort's power growing beyond the wizarding world's control, Dumbledore enlists Harry's help to unlock buried memories held by the reluctant Professor Slughorn — memories that may hold the key to defeating the Dark Lord once and for all. As romantic entanglements complicate life at Hogwarts, a hidden threat within the castle's own walls edges closer to a devastating betrayal that will change everything.",
     director: "David Yates",
@@ -1120,7 +1120,7 @@ const MOVIES = [
     duration: "2h 26m",
     genres: ["Adventure", "Family", "Fantasy", "Mystery"],
     poster: "https://www.themoviedb.org/t/p/w1280/iGoXIpQb7Pot00EEdwpwPajheZ5.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/p2M4xlipwlqUzglAlF2KDlTqeLV.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/tHabY8eKqTo2iPIdquymOkcG1ah.jpg",
     videoUrl: "12444",
     overview: "With Hogwarts no longer safe and the Ministry of Magic under Voldemort's control, Harry, Ron, and Hermione set out on a dangerous journey to track down and destroy the remaining Horcruxes tethering Voldemort to life. Isolated from the wizarding world and hunted at every turn, the trio must rely on each other more than ever as old friendships are tested and a devastating loss brings the war even closer to home.",
     director: "David Yates",
@@ -1138,7 +1138,7 @@ const MOVIES = [
     duration: "2h 10m",
     genres: ["Adventure", "Family", "Fantasy"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZNQoKyMBKsm85aqBHi2uDKk7HgieiW3fzbPFBWa6qZw&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZarEnWWzHOye9fVlNllQh7mDXBdyFb5x71g8rEjJqmA&s=10",
+    backdrop: "https://image.tmdb.org/t/p/original/mJuhIHQuRgFIoRmKmcPqBdPj8TD.jpg",
     videoUrl: "12445",
     overview: "As Voldemort's forces close in on Hogwarts, Harry, Ron, and Hermione make their final push to destroy the remaining Horcruxes standing between them and the Dark Lord's defeat. With old allies rallying to defend the castle and long-buried secrets finally coming to light, Harry must confront his destiny head-on in a climactic battle that will decide the future of both the wizarding and Muggle worlds.",
     director: "David Yates",
@@ -1696,7 +1696,7 @@ const MOVIES = [
     duration: "4h 2m",
     genres: ["Action", "Adventure", "Fantasy", "Sci-Fi"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzu_N1gQ-M4--wo4Hhb6CwcVO0lSXFzZ26YjPEr1CxFg&s=10",
-    backdrop: "https://images.thedirect.com/media/article_full/newpos_QB7hEyO.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/9WoLTsRgrupkvCgs3bhsl2EjLhs.jpg",
     videoUrl: "791373",
     overview: "Convinced humanity needs greater protection following Superman's death, Bruce Wayne, alongside Diana Prince, sets out to recruit a team of extraordinary individuals to form an unprecedented alliance of heroes. As Steppenwolf, an ancient conqueror, arrives on Earth searching for three long-hidden Mother Boxes capable of ending the world, this newly formed Justice League must overcome deep divisions and personal demons to stand together — and prevent an unstoppable evil from reshaping the planet.",
     director: "Zack Snyder",
@@ -3160,7 +3160,7 @@ const MOVIES = [
     duration: "2h 24m",
     genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lkZ9gqCEjzX85lKR6Jjd1uGAXNp.jpg",
-    backdrop: "https://m.blog.hu/ro/roboraptor/image/optimus%20for%20president%20003_1.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/iCDMBi6WLjUBnt24dNwHqqF81UL.jpg",
     videoUrl: "1858",
     overview: "An ancient intergalactic war between two alien robot factions—the heroic Autobots and the evil Decepticons—comes to Earth. High school student Sam Witwicky unknowingly holds the key to the AllSpark, an ultimate power source, forcing him to team up with Optimus Prime and the Autobots to save humanity from destruction.",
     director: "Michael Bay ",
@@ -3177,7 +3177,7 @@ const MOVIES = [
     duration: "2h 30m",
     genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/pLBb0whOzVDtJvyD4DPeQyQNOqp.jpg",
-    backdrop: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5298bac0-b8bf-4c80-af67-725c1272dbb0/dbrubbt-66c0bbe2-5038-481f-91d8-c9b065b11f16.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi81Mjk4YmFjMC1iOGJmLTRjODAtYWY2Ny03MjVjMTI3MmRiYjAvZGJydWJidC02NmMwYmJlMi01MDM4LTQ4MWYtOTFkOC1jOWIwNjViMTFmMTYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.E4dE6jUFg2B65Ycpz6U74J07w9CBC-4GWxuBP6xGyx4",
+    backdrop: "https://image.tmdb.org/t/p/original/bH1bhjn37uA1zOPvyHbzJSvza7v.jpg",
     videoUrl: "8373",
     overview: "Sam Witwicky tries to leave the Autobots behind for a normal college life, but strange visions of Cybertronian symbols drag him back into the intergalactic war. When the ancient Decepticon known as The Fallen resurfaces to harvest Earth's sun, Sam, Mikaela, and Optimus Prime must race across the globe to stop the destruction of the planet.",
     director: "Michael Bay ",
@@ -3194,7 +3194,7 @@ const MOVIES = [
     duration: "2h 34m",
     genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/28YlCLrFhONteYSs9hKjD1Km0Cj.jpg",
-    backdrop: "https://preview.redd.it/transformers-dark-of-the-moon-2011-is-streaming-for-free-on-v0-fl45teo4815b1.jpg?auto=webp&s=07dc13084dce7d604536dc97d1079848b0b582c0",
+    backdrop: "https://image.tmdb.org/t/p/original/e0P0M8vjCyflqD7noTRmDZfoQHP.jpg",
     videoUrl: "38356",
     overview: "The Autobots learn of a Cybertronian spacecraft hidden on the Moon, containing technology that could save their dying home planet. A race against the Decepticons ensues to reach the ship and awaken its former leader, Sentinel Prime, leading to an all-out battle in Chicago that threatens humanity's survival.",
     director: "Michael Bay ",
@@ -3211,7 +3211,7 @@ const MOVIES = [
     duration: "2h 45m",
     genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/jyzrfx2WaeY60kYZpPYepSjGz4S.jpg",
-    backdrop: "https://10wallpaper.com/wallpaper/1366x768/1405/Transformers_4_Age_of_Extinction_Movie_HD_Wallpaper_1366x768.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/h6wflubjTvlYgFUfcRKmZOPBPzM.jpg",
     videoUrl: "91314",
     overview: "Five years after the battle of Chicago, humanity has turned against all Transformers, hunting them down with the help of a rogue Cybertronian bounty hunter. When a struggling inventor fixes a deactivated Optimus Prime, he and his daughter are thrust into the crossfire, forcing the surviving Autobots to unite with the ancient Dinobots to save Earth.",
     director: "Michael Bay ",
@@ -3228,7 +3228,7 @@ const MOVIES = [
     duration: "2h 29m",
     genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/s5HQf2Gb3lIO2cRcFwNL9sn1o1o.jpg",
-    backdrop: "https://www.scifinow.co.uk/wp-content/uploads/2016/01/Transformers-5.png",
+    backdrop: "https://image.tmdb.org/t/p/original/1n00NlOGRFZVs8coBxyZLm5l4EC.jpg",
     videoUrl: "335988",
     overview: "With Optimus Prime brainwashed by the villainous Quintessa into believing he must destroy Earth to restore Cybertron, humans and Transformers are at war. Cade Yeager forms an unlikely alliance with Bumblebee, an English lord, and an Oxford professor to uncover the hidden history of Transformers on Earth and prevent the end of the world.",
     director: "Michael Bay ",
@@ -3245,7 +3245,7 @@ const MOVIES = [
     duration: "2h 7m",
     genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gPbM0MK8CP8A174rmUwGsADNYKD.jpg",
-    backdrop: "https://thefutureoftheforce.com/wp-content/uploads/2023/04/Roll-Out-The-Transformers-Rise-of-the-Beasts-Global-Tour-Kicks-Off.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/qWQSnedj0LCUjWNp9fLcMtfgadp.jpg",
     videoUrl: "667538",
     overview: "Set in 1994, ex-military electronics expert Noah and artifact researcher Elena get swept into a globetrotting conflict when an ancient artifact is activated. Joining forces with Optimus Prime, the Autobots team up with a mysterious faction of animalistic Transformers known as the Maximals to defend Earth from Scourge and the planet-devouring Unicron.",
     director: "Steven Caple Jr. ",
@@ -9433,15 +9433,15 @@ function renderBrowsePagination(paginationId, currentPage, totalPages, onPageCha
     return;
   }
 
-  const MAX_VISIBLE = 5; // max numbered buttons (excluding prev/next)
+  const MAX_VISIBLE = 7; // max numbered buttons (excluding prev/next)
   let pages = [];
 
   if (totalPages <= MAX_VISIBLE + 2) {
     for (let i = 1; i <= totalPages; i++) pages.push(i);
   } else {
     pages.push(1);
-    const start = Math.max(2, currentPage - 1);
-    const end = Math.min(totalPages - 1, currentPage + 1);
+    const start = Math.max(2, currentPage - 2);
+    const end = Math.min(totalPages - 1, currentPage + 2);
     if (start > 2) pages.push("…");
     for (let i = start; i <= end; i++) pages.push(i);
     if (end < totalPages - 1) pages.push("…");
