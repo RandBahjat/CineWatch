@@ -295,7 +295,6 @@ select {
 
 .brand-logo:hover .logo-icon {
   transform: scale(1.2) rotate(-10deg);
-  filter: drop-shadow(0 0 8px rgba(229, 9, 20, 0.6));
 }
 
 .logo-icon {
@@ -401,7 +400,7 @@ select {
 .nav-action-btn:hover {
   transform: scale(1.1);
   box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.35);
-  color: #fff;
+  color: var(--primary);
 }
 .nav-action-btn:active {
   transform: scale(0.96);
@@ -1204,7 +1203,7 @@ select {
 }
 
 .movie-card:hover .card-overlay {
-  opacity: 1;
+  opacity: 0;
 }
 
 .card-fav-btn {
@@ -4176,7 +4175,7 @@ select {
 .browse-card:hover {
   transform: scale(1.04) translateY(-6px);
   z-index: 20;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.85), 0 0 22px rgba(229, 9, 20, 0.4);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.85);
 }
 
 .browse-poster-wrap {
@@ -4247,7 +4246,7 @@ select {
 }
 
 .browse-card:hover .browse-overlay {
-  opacity: 1;
+  opacity: 0;
 }
 
 .browse-overlay-top {

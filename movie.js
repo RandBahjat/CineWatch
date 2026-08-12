@@ -347,6 +347,27 @@ const MOVIES = [
     trending: false,
     featured: false,
   },
+  {
+    title: "Project Hail Mary",
+    type: "Movie",
+    year: 2026,
+    rating: 8.2,
+    age: "PG-13",
+    duration: "2h 36m",
+    genres: ["Sci-Fi", "Adventure", "Drama"],
+    poster:
+      "https://www.themoviedb.org/t/p/w600_and_h900_face/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+    backdrop:
+      "https://image.tmdb.org/t/p/original/2I1OFQJ0L9T0dpU6FobKFWV2PxX.jpg",
+    videoUrl:
+      "687163",
+    overview:
+      "A gripping sci-fi thriller based on the bestselling novel by Andy Weir. The story follows Ryland Grace, a middle school science teacher turned astronaut, who wakes up from a coma aboard a spaceship with amnesia. As his memories slowly piece themselves back together, he discovers that he is the sole survivor of a desperate, last-chance mission to save Earth from a solar-extinction event. To succeed, he must use his scientific ingenuity and team up with an unexpected alien ally to solve a cosmic catastrophe.",
+    director: "Phil Lord, Christopher Miller",
+    cast: ["Ryan Gosling (as Ryland Grace), Sandra Hüller (as Eva Stratt)"],
+    trending: false,
+    featured: false,
+  },
 
   // ---- ADD NEW MOVIES BELOW THIS LINE ----
   {
@@ -2557,7 +2578,7 @@ const MOVIES = [
     duration: "1h 44m",
     genres: ["Animation", "Adventure", "Comedy", "Family", "Fantasy"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSL-oOGyME0X-AlpNf8g3FOyyUGs6vNApAU7XDOA-Juw&s=10",
-    backdrop: "https://4kwallpapers.com/images/walls/thumbs_2t/23685.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/9VM1KI9sVZETl0d00FK7CnBzxiw.jpg",
     videoUrl: "1497970",
     overview: "During a chaotic chase through a museum, Tom and Jerry accidentally activate a mystical artifact that transports them through time to a realm steeped in Chinese mythology. To find a way back home, the rival cat and mouse must team up with new allies to navigate magical creatures, ancient secrets, and dark forces.",
     director: "Zhang Gang",
@@ -8544,13 +8565,136 @@ const MOVIES = [
     ]
   },
 
+{
+    title: "Spider-Man",
+    type: "TV Show",
+    year: 2017,
+    rating: 6.2,
+    age: "TV-Y7",
+    duration: "44m",
+    genres: ["Animation", "Action", "Adventure","Family","Sci-Fi"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dKdcyyHUR5WTMnrbPdYN5y9xPVp.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/AqvGpSrx9I0ihhzxR8tc1rABvvE.jpg",
+    videoUrl: "",
+    overview: "A animated superhero series that follows a brilliant but socially awkward teenager, Peter Parker, who gets bitten by a genetically modified spider and develops superhuman abilities. Following the tragic death of his Uncle Ben, Peter learns that with great power comes great responsibility and begins fighting crime in New York City as Spider-Man. He manages to balance his chaotic superhero duties with his studies at Horizon High, a prestigious high school for young scientific geniuses.",
+    director: "Kevin Shinick",
+    cast: ["Robbie Daymond (Peter Parker / Spider-Man), Nadji Jeter (Miles Morales), Laura Bailey (Gwen Stacy), Nancy Linari (Aunt May), Fred Tatasciore (Max Modell), Melanie Minichino (Anya Corazon)"],
+    trending: false,
+    featured: false,
+    cinesrcId: "72705", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 0, title: "Origins" },
+          { episode: 1, title: "Horizon High: Part One" },
+          { episode: 2, title: "Horizon High: Part Two" },
+          { episode: 3, title: "Osborn Academy" },
+          { episode: 4, title: "A Day in the Life" },
+          { episode: 5, title: "Party Animals" },
+          { episode: 6, title: "Sandman" },
+          { episode: 7, title: "Symbiotic Relationship" },
+          { episode: 8, title: "Stark Expo" },
+          { episode: 9, title: "Ultimate Spider-Man" },
+          { episode: 10, title: "Kraven's Amazing Hunt" },
+          { episode: 11, title: "Halloween Moon" },
+          { episode: 12, title: "Spider-Man on Ice" },
+          { episode: 13, title: "Venom" },
+          { episode: 14, title: "Screwball Live" },
+          { episode: 15, title: "The Rise of Doc Ock: Part One" },
+          { episode: 16, title: "The Rise of Doc Ock: Part Two" },
+          { episode: 17, title: "The Rise of Doc Ock: Part Three" },
+          { episode: 18, title: "The Rise of Doc Ock: Part Four" },
+          { episode: 19, title: "Spider-Island: Part One" },
+          { episode: 20, title: "Spider-Island: Part Two" },
+          { episode: 21, title: "Spider-Island: Part Three" },
+          { episode: 22, title: "Spider-Island: Part Four" },
+          { episode: 23, title: "Spider-Island: Part Five" },
+          { episode: 24, title: "The Hobgoblin: Part One" },
+          { episode: 25, title: "The Hobgoblin: Part Two" },
+        ],
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "How I Thwipped My Summer Vacation" },
+          { episode: 2, title: "Take Two" },
+          { episode: 3, title: "Between an Ock and a Hard Place" },
+          { episode: 4, title: "Rise Above It All" },
+          { episode: 5, title: "School of Hard Knocks" },
+          { episode: 6, title: "Dead Man's Party" },
+          { episode: 7, title: "Venom Returns" },
+          { episode: 8, title: "Bring on the Bad Guys: Part One" },
+          { episode: 9, title: "Bring on the Bad Guys: Part Two" },
+          { episode: 10, title: "Bring on the Bad Guys: Part Three" },
+          { episode: 11, title: "Bring on the Bad Guys: Part Four" },
+          { episode: 12, title: "Brain Drain" },
+          { episode: 13, title: "The Living Brain" },
+          { episode: 14, title: "The Day Without Spider-Man" },
+          { episode: 15, title: "My Own Worst Enemy" },
+          { episode: 16, title: "Critical Update" },
+          { episode: 17, title: "A Troubled Mind" },
+          { episode: 18, title: "Cloak and Dagger" },
+          { episode: 19, title: "Superior" },
+          { episode: 20, title: "Brand New Day" },
+          { episode: 21, title: "The Cellar" },
+          { episode: 22, title: "The Road to Goblin War" },
+          { episode: 23, title: "Goblin War Part One" },
+          { episode: 24, title: "Goblin War Part Two" },
+          { episode: 25, title: "Goblin War Part Three" },
+          { episode: 26, title: "Goblin War Part Four" },
+        ],
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: "Web of Venom" },
+          { episode: 2, title: "Amazing Friends" },
+          { episode: 3, title: "Vengeance of Venom" },
+          { episode: 4, title: "Spider-Man Unmasked" },
+          { episode: 5, title: "Generations" },
+          { episode: 6, title: "Maximum Venom" },
+        ],
+      },
+    ]
+  },
 
-
-
-
-
-
-];
+{
+    title: "Your Friendly Neighborhood Spider-Man",
+    type: "TV Show",
+    year: 2025,
+    rating: 7.5,
+    age: "TV-PG",
+    duration: "33m",
+    genres: ["Animation", "Action", "Adventure"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/kjcsNeqF52YUQ2rUBGLMHwLkxvR.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/2oFQz1CcRs9zlUuonTB6vLoyB5I.jpg",
+    videoUrl: "",
+    overview: "An animated superhero series that serves as an alternate-universe prequel exploring Peter Parker's early days as Spider-Man. Instead of being mentored by Tony Stark like in the main MCU timeline, 15-year-old Peter finds himself under the wing of corporate billionaire Norman Osborn. The series features a stylized comic-book animation aesthetic and focuses on a chaotic freshman year filled with balancing school, new allies, and classic street-level villains.",
+    director: "Jeff Trammell",
+    cast: ["Hudson Thames (Peter Parker), Colman Domingo (Norman Osborn), Kari Wahlgren (Aunt May), Grace Song (Nico Minoru), Zeno Robinson (Harry Osborn), Hugh Dancy (Otto Octavius), Charlie Cox (Daredevil)"],
+    trending: false,
+    featured: false,
+    cinesrcId: "138503", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Amazing Fantasy" },
+          { episode: 2, title: "The Parker Luck" },
+          { episode: 3, title: "Secret Identity Crisis" },
+          { episode: 4, title: "Hitting the Big Time" },
+          { episode: 5, title: "The Unicorn Unleashed!" },
+          { episode: 6, title: "Duel with the Devil" },
+          { episode: 7, title: "Scorpion Rising" },
+          { episode: 8, title: "Tangled Web" },
+          { episode: 9, title: "Hero or Menace" },
+          { episode: 10, title: "If This Be My Destiny..." },
+        ],
+      },
+    ]
+  },
+]
 
 // Auto-generate a clean ID (slug) for every movie based on its title
 const seenIds = new Set();
