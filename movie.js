@@ -25,7 +25,7 @@
 // 1. HIGHLIGHTS & TRENDING (EDIT THIS SECTION)
 // ==========================================
 // Change these titles to easily swap which movies appear in the top slider and trending row!
-const FEATURED_TITLES = ["House of the Dragon", "The Invite","Reacher", "Spider-Man: Brand New Day", "The Odyssey", "Obsession", "Supergirl"];
+const FEATURED_TITLES = ["Reacher","House of the Dragon", "The Invite", "Spider-Man: Brand New Day", "The Odyssey", "Obsession", "Supergirl"];
 const TRENDING_TITLES = ["Reacher", "Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters","The Invite","Young Washington","The Last House","Ted Lasso"];
 
 // ==========================================
@@ -9115,12 +9115,43 @@ function startHeroAutoplay() {
   }, HERO_ROTATE_INTERVAL_MS); // 10 seconds per slide
 }
 
+let previousHeroIndex = -1;
+
 function updateHeroBanner() {
   const heroTrack = document.getElementById("heroTrack");
   if (!heroTrack) return;
 
-  // Physically slide the track using CSS transform
-  heroTrack.style.transform = `translateX(-${state.currentHeroIndex * 100}%)`;
+  const slides = document.querySelectorAll("#heroDots .dot").length;
+  if (previousHeroIndex === -1) {
+    previousHeroIndex = state.currentHeroIndex;
+  }
+
+  const isWrapAround = (previousHeroIndex === slides - 1 && state.currentHeroIndex === 0);
+
+  if (isWrapAround) {
+    heroTrack.style.transition = "opacity 0.3s ease-in-out";
+    heroTrack.style.opacity = "0";
+
+    setTimeout(() => {
+      heroTrack.style.transition = "none";
+      heroTrack.style.transform = `translateX(0%)`;
+      
+      void heroTrack.offsetWidth; // Force reflow
+      
+      heroTrack.style.transition = "opacity 0.3s ease-in-out";
+      heroTrack.style.opacity = "1";
+      
+      setTimeout(() => {
+        heroTrack.style.transition = "transform 0.5s ease-in-out";
+      }, 300);
+    }, 300);
+  } else {
+    heroTrack.style.transition = "transform 0.5s ease-in-out";
+    heroTrack.style.opacity = "1";
+    heroTrack.style.transform = `translateX(-${state.currentHeroIndex * 100}%)`;
+  }
+
+  previousHeroIndex = state.currentHeroIndex;
 
   // Update dots
   document.querySelectorAll("#heroDots .dot").forEach((dot, i) => {
@@ -9401,9 +9432,17 @@ function renderBrowsePagination(paginationId, currentPage, totalPages, onPageCha
   });
   html += `<button class="page-btn next-btn" ${currentPage === totalPages ? "disabled" : ""} data-page="${currentPage + 1}">Next ›</button>`;
 
+  // Add jump to page input
+  html += `
+    <div class="page-jump">
+      <input type="number" class="page-jump-input" id="${paginationId}-jump-input" min="1" max="${totalPages}" placeholder="Go" title="Jump to page">
+      <button class="page-btn page-jump-btn" id="${paginationId}-jump-btn">Go</button>
+    </div>
+  `;
+
   container.innerHTML = html;
 
-  container.querySelectorAll(".page-btn:not(:disabled)").forEach((btn) => {
+  container.querySelectorAll(".page-btn:not(:disabled):not(.page-jump-btn)").forEach((btn) => {
     btn.onclick = () => {
       const p = parseInt(btn.dataset.page, 10);
       if (!isNaN(p)) {
@@ -9412,6 +9451,23 @@ function renderBrowsePagination(paginationId, currentPage, totalPages, onPageCha
       }
     };
   });
+
+  const jumpInput = document.getElementById(`${paginationId}-jump-input`);
+  const jumpBtn = document.getElementById(`${paginationId}-jump-btn`);
+
+  if (jumpInput && jumpBtn) {
+    const jumpToPage = () => {
+      const p = parseInt(jumpInput.value, 10);
+      if (!isNaN(p) && p >= 1 && p <= totalPages) {
+        onPageChange(p);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    };
+    jumpBtn.onclick = jumpToPage;
+    jumpInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") jumpToPage();
+    });
+  }
 }
 
 /** Get filtered list for movies section */
@@ -9571,6 +9627,16 @@ function switchView(viewName) {
 }
 
 function updateWatchlistBadge() {
+  // Prune invalid/stale IDs from favorites that no longer exist in the database
+  const validFavorites = state.favorites.filter(id => MOVIES.some(m => m.id === id));
+  if (validFavorites.length !== state.favorites.length) {
+    state.favorites = validFavorites;
+    localStorage.setItem(KEYS.FAVORITES, JSON.stringify(state.favorites));
+    if (window.CW_Firebase && state.user) {
+      window.CW_Firebase.sync(state.favorites, state.continueWatching);
+    }
+  }
+
   const count = state.favorites.length;
 
   // Desktop nav badge
@@ -9661,6 +9727,10 @@ function renderUserBadge() {
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
             Edit username
           </button>
+          <button class="account-panel-action-btn" id="changePasswordBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Change password
+          </button>
         </div>
 
         <button class="account-panel-logout" id="panelLogoutBtn">
@@ -9737,7 +9807,10 @@ function renderUserBadge() {
         nameEl.outerHTML = `
           <div class="edit-username-wrap" id="editUsernameWrap">
             <input type="text" id="usernameInput" class="edit-username-input" value="${currentName}" maxlength="30" />
-            <button class="save-username-btn" id="saveUsernameBtn">Save</button>
+            <div class="edit-username-actions">
+              <button class="cancel-username-btn" id="cancelUsernameBtn">Cancel</button>
+              <button class="save-username-btn" id="saveUsernameBtn">Save</button>
+            </div>
           </div>
         `;
       }
@@ -9745,6 +9818,11 @@ function renderUserBadge() {
       setTimeout(() => {
         const input = document.getElementById("usernameInput");
         if (input) { input.focus(); input.select(); }
+
+        const cancelBtn = document.getElementById("cancelUsernameBtn");
+        if (cancelBtn) {
+          cancelBtn.onclick = () => renderUserProfile();
+        }
 
         const saveBtn = document.getElementById("saveUsernameBtn");
         if (saveBtn) {
@@ -9763,6 +9841,43 @@ function renderUserBadge() {
         }
       }, 50);
     };
+
+    // Change password (open modal)
+    const changePwdBtn = document.getElementById("changePasswordBtn");
+    if (changePwdBtn) {
+      changePwdBtn.onclick = () => {
+        closePanel();
+        
+        const authModal = document.getElementById("authModal");
+        if (authModal) authModal.classList.remove("hidden");
+        
+        const authTabs = document.querySelector(".auth-tabs");
+        if (authTabs) authTabs.classList.add("hidden");
+        
+        const loginForm = document.getElementById("loginForm");
+        if (loginForm) loginForm.classList.add("hidden");
+        
+        const signupForm = document.getElementById("signupForm");
+        if (signupForm) signupForm.classList.add("hidden");
+        
+        const resetPasswordForm = document.getElementById("resetPasswordForm");
+        if (resetPasswordForm) resetPasswordForm.classList.add("hidden");
+        
+        const changePasswordForm = document.getElementById("changePasswordForm");
+        if (changePasswordForm) {
+          changePasswordForm.classList.remove("hidden");
+          const cpOld = document.getElementById("cpOldModal");
+          if (cpOld) {
+            cpOld.value = "";
+            cpOld.focus();
+          }
+          document.getElementById("cpNewModal").value = "";
+          document.getElementById("cpConfirmModal").value = "";
+          const alertEl = document.getElementById("cpAlert");
+          if (alertEl) alertEl.classList.add("hidden");
+        }
+      };
+    }
 
     // Logout
     document.getElementById("panelLogoutBtn").onclick = () => {
@@ -9799,22 +9914,24 @@ function openDetailsModal(movieId) {
     state.previousView = state.activeView;
   }
 
-  // Create a cinematic fade-to-black transition
-  const fader = document.createElement("div");
-  fader.style.position = "fixed";
-  fader.style.inset = "0";
-  fader.style.backgroundColor = "#0b0c10";
-  fader.style.zIndex = "9999";
-  fader.style.opacity = "0";
-  fader.style.transition = "opacity 0.25s ease-in-out";
-  document.body.appendChild(fader);
+  const mainContent = document.getElementById("mainContent");
+  const heroBanner = document.getElementById("heroBanner");
+  const detailsSection = document.getElementById("detailsSection");
+  
+  const toFadeOut = [];
+  if (state.activeView === "details") {
+    toFadeOut.push(detailsSection);
+  } else {
+    if (mainContent) toFadeOut.push(mainContent);
+    if (heroBanner && !heroBanner.classList.contains("hidden")) toFadeOut.push(heroBanner);
+  }
 
-  requestAnimationFrame(() => {
-    fader.style.opacity = "1";
+  toFadeOut.forEach(el => {
+    el.style.transition = "opacity 0.3s ease-in-out";
+    el.style.opacity = "0";
   });
 
   setTimeout(() => {
-    const detailsSection = document.getElementById("detailsSection");
     if (detailsSection) detailsSection.scrollTo(0, 0);
 
     document.getElementById("detailsBg").style.backgroundImage = `url('${movie.backdrop || movie.poster}')`;
@@ -10051,8 +10168,11 @@ function openDetailsModal(movieId) {
     switchView("details");
 
     // Fade back in
-    fader.style.opacity = "0";
-    setTimeout(() => fader.remove(), 300);
+    detailsSection.style.opacity = "0";
+    detailsSection.style.transition = "none";
+    void detailsSection.offsetWidth; // Force reflow
+    detailsSection.style.transition = "opacity 0.3s ease-in-out";
+    detailsSection.style.opacity = "1";
   }, 300); // end of setTimeout
 }
 
@@ -10888,23 +11008,32 @@ function bindEventListeners() {
 
   // Close modals
   if (document.getElementById("closeDetailsBtn")) document.getElementById("closeDetailsBtn").onclick = () => {
-    const fader = document.createElement("div");
-    fader.style.position = "fixed";
-    fader.style.inset = "0";
-    fader.style.backgroundColor = "#0b0c10";
-    fader.style.zIndex = "9999";
-    fader.style.opacity = "0";
-    fader.style.transition = "opacity 0.25s ease-in-out";
-    document.body.appendChild(fader);
-
-    requestAnimationFrame(() => {
-      fader.style.opacity = "1";
-    });
+    const detailsSection = document.getElementById("detailsSection");
+    
+    detailsSection.style.transition = "opacity 0.3s ease-in-out";
+    detailsSection.style.opacity = "0";
 
     setTimeout(() => {
       switchView(state.previousView || "home");
-      fader.style.opacity = "0";
-      setTimeout(() => fader.remove(), 300);
+      
+      const mainContent = document.getElementById("mainContent");
+      const heroBanner = document.getElementById("heroBanner");
+      
+      if (mainContent) {
+        mainContent.style.opacity = "0";
+        mainContent.style.transition = "none";
+        void mainContent.offsetWidth;
+        mainContent.style.transition = "opacity 0.3s ease-in-out";
+        mainContent.style.opacity = "1";
+      }
+      
+      if (heroBanner && (state.previousView === "home" || !state.previousView)) {
+        heroBanner.style.opacity = "0";
+        heroBanner.style.transition = "none";
+        void heroBanner.offsetWidth;
+        heroBanner.style.transition = "opacity 0.3s ease-in-out";
+        heroBanner.style.opacity = "1";
+      }
     }, 300);
   };
   if (document.getElementById("closePlayerBtn")) document.getElementById("closePlayerBtn").onclick = closeVideoPlayer;
@@ -11077,6 +11206,179 @@ function bindEventListeners() {
     signupForm.classList.remove("hidden");
     loginForm.classList.add("hidden");
   };
+
+  // Forgot Password UI flow
+  const showResetFormBtn = document.getElementById("showResetFormBtn");
+  const backToLoginBtn = document.getElementById("backToLoginBtn");
+  const resetPasswordForm = document.getElementById("resetPasswordForm");
+  const authTabs = document.querySelector(".auth-tabs");
+
+  if (showResetFormBtn && resetPasswordForm) {
+    showResetFormBtn.onclick = (e) => {
+      e.preventDefault();
+      loginForm.classList.add("hidden");
+      if (authTabs) authTabs.classList.add("hidden");
+      resetPasswordForm.classList.remove("hidden");
+      // Pre-fill email if they already started typing
+      const currentEmail = document.getElementById("loginEmail").value.trim();
+      if (currentEmail) document.getElementById("resetInput").value = currentEmail;
+    };
+  }
+
+  if (backToLoginBtn) {
+    backToLoginBtn.onclick = (e) => {
+      e.preventDefault();
+      resetPasswordForm.classList.add("hidden");
+      if (authTabs) authTabs.classList.remove("hidden");
+      loginForm.classList.remove("hidden");
+    };
+  }
+
+  if (resetPasswordForm) {
+    resetPasswordForm.onsubmit = async (e) => {
+      e.preventDefault();
+      const inputVal = document.getElementById("resetInput").value.trim();
+      const inputErr = document.getElementById("resetError");
+      const alertEl = document.getElementById("resetAlert");
+      const submitBtn = resetPasswordForm.querySelector("button[type='submit']");
+
+      inputErr.textContent = "";
+      alertEl.classList.add("hidden");
+      alertEl.textContent = "";
+      alertEl.style = ""; // reset inline styles
+
+      if (!inputVal) {
+        inputErr.textContent = "Please enter your email or username.";
+        return;
+      }
+
+      if (!window.CW_Firebase) {
+        alertEl.textContent = "Authentication service not ready.";
+        alertEl.classList.remove("hidden");
+        return;
+      }
+
+      // Check if it's an email format
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      let emailToSend = inputVal;
+      
+      const originalHTML = submitBtn.innerHTML;
+      submitBtn.textContent = "Sending...";
+      submitBtn.disabled = true;
+
+      if (!emailRegex.test(inputVal)) {
+        // Not an email format, assume it's a username.
+        // Look up the email by username using our self-healed Firestore records.
+        const fetchedEmail = await window.CW_Firebase.getEmailByUsername(inputVal);
+        if (fetchedEmail) {
+          emailToSend = fetchedEmail;
+        } else {
+          submitBtn.innerHTML = originalHTML;
+          submitBtn.disabled = false;
+          inputErr.textContent = "Could not find an email linked to this username. Please try entering your email address, or log in once to link your account.";
+          return;
+        }
+      }
+
+      const { success, error } = await window.CW_Firebase.resetPassword(emailToSend);
+
+      submitBtn.innerHTML = originalHTML;
+      submitBtn.disabled = false;
+
+      if (error) {
+        alertEl.textContent = error;
+        alertEl.classList.remove("hidden");
+      } else {
+        alertEl.textContent = "Success! Password reset email sent. Check your inbox.";
+        alertEl.classList.remove("hidden");
+        alertEl.style.backgroundColor = "rgba(46, 213, 115, 0.1)";
+        alertEl.style.color = "#2ed573";
+        alertEl.style.borderColor = "rgba(46, 213, 115, 0.3)";
+        setTimeout(() => {
+          // Go back to login automatically
+          resetPasswordForm.classList.add("hidden");
+          if (authTabs) authTabs.classList.remove("hidden");
+          loginForm.classList.remove("hidden");
+          alertEl.classList.add("hidden");
+          alertEl.style = ""; // reset styles
+        }, 3000);
+      }
+    };
+  }
+
+  const changePasswordForm = document.getElementById("changePasswordForm");
+  const cancelCpBtn = document.getElementById("cancelCpBtn");
+
+  if (cancelCpBtn) {
+    cancelCpBtn.onclick = (e) => {
+      e.preventDefault();
+      document.getElementById("authModal").classList.add("hidden");
+    };
+  }
+
+  if (changePasswordForm) {
+    changePasswordForm.onsubmit = async (e) => {
+      e.preventDefault();
+      const oldVal = document.getElementById("cpOldModal").value;
+      const newVal = document.getElementById("cpNewModal").value;
+      const confVal = document.getElementById("cpConfirmModal").value;
+      const alertEl = document.getElementById("cpAlert");
+      const submitBtn = document.getElementById("cpSubmitBtn");
+
+      alertEl.classList.add("hidden");
+      alertEl.textContent = "";
+
+      if (!oldVal || !newVal || !confVal) {
+        alertEl.textContent = "All fields are required.";
+        alertEl.style = "background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); margin-bottom: 1rem;";
+        alertEl.classList.remove("hidden");
+        return;
+      }
+      if (newVal !== confVal) {
+        alertEl.textContent = "New passwords do not match.";
+        alertEl.style = "background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); margin-bottom: 1rem;";
+        alertEl.classList.remove("hidden");
+        return;
+      }
+      if (newVal.length < 6) {
+        alertEl.textContent = "New password must be at least 6 characters.";
+        alertEl.style = "background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); margin-bottom: 1rem;";
+        alertEl.classList.remove("hidden");
+        return;
+      }
+
+      const origText = submitBtn.innerHTML;
+      submitBtn.innerHTML = "<ion-icon name='hourglass-outline'></ion-icon> Updating...";
+      submitBtn.disabled = true;
+
+      if (window.CW_Firebase?.updateUserPassword) {
+        const { success, error } = await window.CW_Firebase.updateUserPassword(oldVal, newVal);
+        if (!success) {
+          alertEl.textContent = error || "Failed to update password.";
+          alertEl.style = "background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); margin-bottom: 1rem;";
+          alertEl.classList.remove("hidden");
+        } else {
+          alertEl.textContent = "Password updated successfully!";
+          alertEl.style = "background: rgba(16, 185, 129, 0.1); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.2); margin-bottom: 1rem;";
+          alertEl.classList.remove("hidden");
+          
+          setTimeout(() => {
+            document.getElementById("authModal").classList.add("hidden");
+            alertEl.classList.add("hidden");
+            changePasswordForm.reset();
+            showToast("✅ Password updated securely!");
+          }, 2000);
+        }
+      } else {
+        alertEl.textContent = "Authentication service unavailable.";
+        alertEl.style = "background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); margin-bottom: 1rem;";
+        alertEl.classList.remove("hidden");
+      }
+      
+      submitBtn.innerHTML = origText;
+      submitBtn.disabled = false;
+    };
+  }
 
   // Login Submit — Firebase Authentication
   loginForm.onsubmit = async (e) => {

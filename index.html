@@ -54,7 +54,7 @@
                     <a href="#" class="nav-link" data-view="movies"><ion-icon name="film-outline"></ion-icon> Movies</a>
                     <a href="#" class="nav-link" data-view="series"><ion-icon name="tv-outline"></ion-icon> Series</a>
                     <a href="#" class="nav-link" data-view="continue"><ion-icon name="play-circle-outline"></ion-icon> Continue Watching</a>
-                    <a href="#" class="nav-link" data-view="watchlist"><ion-icon name="heart-outline"></ion-icon> My Watchlist <span class="badge" id="navWatchlistBadge" style="display: none;">0</span></a>
+                    <a href="#" class="nav-link" data-view="watchlist"><ion-icon name="heart-outline"></ion-icon> My Watchlist</a>
                 </nav>
             </div>
 
@@ -139,7 +139,7 @@
                 <a href="#" class="nav-link" data-view="movies"><ion-icon name="film-outline"></ion-icon> Movies</a>
                 <a href="#" class="nav-link" data-view="series"><ion-icon name="tv-outline"></ion-icon> Series</a>
                 <a href="#" class="nav-link" data-view="continue"><ion-icon name="play-circle-outline"></ion-icon> Continue Watching</a>
-                <a href="#" class="nav-link" data-view="watchlist"><ion-icon name="heart-outline"></ion-icon> My Watchlist <span class="badge" id="mobileNavWatchlistBadge" style="display: none;">0</span></a>
+                <a href="#" class="nav-link" data-view="watchlist"><ion-icon name="heart-outline"></ion-icon> My Watchlist</a>
             </nav>
         </div>
     </div>
@@ -290,8 +290,8 @@
         <!-- My Watchlist View (Dynamic) -->
         <section class="shelf-section hidden" id="watchlistSection">
             <div class="shelf-header">
-                <h2 class="shelf-title">♥ My Watchlist</h2>
-                <span class="shelf-subtitle" id="watchlistCountText">0 saved movies</span>
+                <h2 class="shelf-title">My Watchlist</h2>
+                <span class="shelf-subtitle" id="watchlistCountText" style="display: none;">0 saved movies</span>
             </div>
             <div class="movies-grid" id="watchlistGrid"></div>
             <div class="empty-state hidden" id="emptyWatchlist">
@@ -617,7 +617,7 @@
                         <div class="input-with-icon">
                             <ion-icon name="mail-outline"></ion-icon>
                             <input type="email" id="loginEmail" class="form-control" placeholder="name@example.com"
-                                required>
+                                autocomplete="email" required>
                         </div>
                         <div class="form-error" id="loginEmailError"></div>
                     </div>
@@ -626,12 +626,15 @@
                         <label for="loginPassword">Password</label>
                         <div class="input-with-icon">
                             <ion-icon name="lock-closed-outline"></ion-icon>
-                            <input type="password" id="loginPassword" class="form-control" placeholder="••••••••" required>
+                            <input type="password" id="loginPassword" class="form-control" placeholder="••••••••" autocomplete="current-password" required>
                             <button type="button" class="password-toggle-btn" aria-label="Show/hide password" id="toggleLoginPassword">
                                 <ion-icon name="eye-outline"></ion-icon>
                             </button>
                         </div>
                         <div class="form-error" id="loginPasswordError"></div>
+                        <div style="text-align: right; margin-top: 0.5rem;">
+                            <a href="#" id="showResetFormBtn" style="font-size: 0.95rem; color: var(--primary); text-decoration: none;">Forgot Password?</a>
+                        </div>
                     </div>
 
                     <div class="form-alert hidden" id="loginAlert"></div>
@@ -655,7 +658,7 @@
                         <label for="signupEmail">Email Address</label>
                         <div class="input-with-icon">
                             <ion-icon name="mail-outline"></ion-icon>
-                            <input type="email" id="signupEmail" class="form-control" placeholder="Email" required>
+                            <input type="email" id="signupEmail" class="form-control" placeholder="Email" autocomplete="email" required>
                         </div>
                         <div class="form-error" id="signupEmailError"></div>
                     </div>
@@ -664,7 +667,7 @@
                         <label for="signupPassword">Password</label>
                         <div class="input-with-icon">
                             <ion-icon name="lock-closed-outline"></ion-icon>
-                            <input type="password" id="signupPassword" class="form-control" placeholder="Password" required>
+                            <input type="password" id="signupPassword" class="form-control" placeholder="Password" autocomplete="new-password" required>
                             <button type="button" class="password-toggle-btn" aria-label="Show/hide password" id="toggleSignupPassword">
                                 <ion-icon name="eye-outline"></ion-icon>
                             </button>
@@ -688,6 +691,71 @@
 
                     <button type="submit" class="btn btn-primary btn-block"><ion-icon name="person-add-outline"></ion-icon>
                         Create Account</button>
+                </form>
+
+                <!-- Reset Password Form -->
+                <form id="resetPasswordForm" class="auth-form hidden" novalidate>
+                    <div style="margin-bottom: 1.5rem; text-align: center;">
+                        <h3 style="color: var(--text-light); margin-bottom: 0.5rem;">Reset Password</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Enter your email or username to receive a password reset link.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resetInput">Email or Username</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                            <input type="text" id="resetInput" class="form-control" placeholder="Email or Username" required>
+                        </div>
+                        <div class="form-error" id="resetError"></div>
+                    </div>
+
+                    <div class="form-alert hidden" id="resetAlert"></div>
+
+                    <button type="submit" class="btn btn-primary btn-block"><ion-icon name="paper-plane-outline"></ion-icon> Send Reset Link</button>
+                    
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <a href="#" id="backToLoginBtn" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem; transition: color 0.2s;">Back to Login</a>
+                    </div>
+                </form>
+
+                <!-- Change Password Form -->
+                <form id="changePasswordForm" class="auth-form hidden" novalidate>
+                    <div style="margin-bottom: 1.5rem; text-align: center;">
+                        <h3 style="color: var(--text-light); margin-bottom: 0.5rem;">Change Password</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Securely update your password.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpOldModal">Old Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="cpOldModal" class="form-control" placeholder="Old Password" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpNewModal">New Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="cpNewModal" class="form-control" placeholder="New Password" required minlength="6">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpConfirmModal">Confirm New Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="cpConfirmModal" class="form-control" placeholder="Confirm Password" required>
+                        </div>
+                    </div>
+
+                    <div class="form-alert hidden" id="cpAlert"></div>
+
+                    <button type="submit" class="btn btn-primary btn-block" id="cpSubmitBtn">Update Password</button>
+                    
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <a href="#" id="cancelCpBtn" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem; transition: color 0.2s;">Cancel</a>
+                    </div>
                 </form>
             </div>
         </div>

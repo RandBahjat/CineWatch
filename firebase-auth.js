@@ -124,6 +124,7 @@ auth.onAuthStateChanged(async (firebaseUser) => {
       name: name || firebaseUser.email.split("@")[0],
       email: firebaseUser.email,
       avatar: avatar,
+      createdAt: firebaseUser.metadata.creationTime,
     };
 
     // Load cloud data
@@ -161,6 +162,7 @@ window.CW_Firebase = {
         // Initialize user doc in Firestore
         await db.collection("users").doc(cred.user.uid).set({
           name: name,
+          email: cred.user.email,
           favorites: [],
           continueWatching: {},
           avatar: "🍿",
@@ -170,7 +172,13 @@ window.CW_Firebase = {
       }
       
       return { 
-        user: { uid: cred.user.uid, name: name, email: cred.user.email, avatar: "🍿" }, 
+        user: { 
+          uid: cred.user.uid, 
+          name: name, 
+          email: cred.user.email, 
+          avatar: "🍿",
+          createdAt: cred.user.metadata.creationTime
+        }, 
         error: null 
       };
     } catch (err) {
@@ -190,13 +198,60 @@ window.CW_Firebase = {
       
       let avatar = cred.user.photoURL || "🍿";
       const cloudData = await loadFromFirestore(cred.user.uid);
+      
+      // Self-heal: ensure email is stored for existing accounts
+      if (cloudData && !cloudData.email) {
+        try {
+          await db.collection("users").doc(cred.user.uid).set({ email: cred.user.email }, { merge: true });
+        } catch (e) {
+          console.error("Failed to self-heal email:", e);
+        }
+      }
+
       if (cloudData && cloudData.avatar && cloudData.avatar !== "🍿") {
         avatar = cloudData.avatar;
       }
       
-      return { user: { uid: cred.user.uid, name: name, email: cred.user.email, avatar }, error: null };
+      return { 
+        user: { 
+          uid: cred.user.uid, 
+          name: name, 
+          email: cred.user.email, 
+          avatar,
+          createdAt: cred.user.metadata.creationTime
+        }, 
+        error: null 
+      };
     } catch (err) {
       return { user: null, error: _friendlyError(err.code) };
+    }
+  },
+
+  /**
+   * Send a password reset email.
+   * @returns {Promise<{success, error}>}
+   */
+  async resetPassword(email) {
+    try {
+      await auth.sendPasswordResetEmail(email);
+      return { success: true, error: null };
+    } catch (err) {
+      return { success: false, error: parseAuthError(err.code) };
+    }
+  },
+
+  /**
+   * Look up a user's email by their username.
+   * @returns {Promise<string|null>} The email, or null if not found/error.
+   */
+  async getEmailByUsername(username) {
+    try {
+      const snap = await db.collection("users").where("name", "==", username).limit(1).get();
+      if (snap.empty) return null;
+      return snap.docs[0].data().email || null;
+    } catch (err) {
+      console.error("Error looking up email by username:", err);
+      return null;
     }
   },
 
@@ -208,6 +263,57 @@ window.CW_Firebase = {
       await auth.signOut();
     } catch (err) {
       console.error("Sign-out error:", err);
+    }
+  },
+
+  /**
+   * Update user password securely by re-authenticating first.
+   * @param {string} oldPassword
+   * @param {string} newPassword
+   * @returns {Promise<{success: boolean, error: string|null}>}
+   */
+  async updateUserPassword(oldPassword, newPassword) {
+    const user = auth.currentUser;
+    if (!user) return { success: false, error: "No user signed in." };
+    if (!user.email) return { success: false, error: "No email associated with account." };
+
+    try {
+      const credential = firebase.auth.EmailAuthProvider.credential(user.email, oldPassword);
+      await user.reauthenticateWithCredential(credential);
+    } catch (err) {
+      console.error("Reauth error:", err);
+      return { success: false, error: "Incorrect old password." };
+    }
+
+    try {
+      await user.updatePassword(newPassword);
+      return { success: true, error: null };
+    } catch (err) {
+      console.error("Update password error:", err);
+      return { success: false, error: err.message || "Failed to update password." };
+    }
+  },
+
+  /**
+   * Update user profile information.
+   * @param {Object} updates - e.g. { displayName: "New Name" }
+   */
+  async updateProfile(updates) {
+    const user = auth.currentUser;
+    if (user) {
+      try {
+        await user.updateProfile(updates);
+      } catch (err) {
+        console.error("Auth profile update error:", err);
+      }
+      // Also update Firestore for custom username lookups
+      if (updates.displayName) {
+        try {
+          await db.collection("users").doc(user.uid).set({ name: updates.displayName }, { merge: true });
+        } catch (err) {
+          console.error("Firestore name update error:", err);
+        }
+      }
     }
   },
 
