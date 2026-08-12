@@ -178,7 +178,7 @@
                 <h1 class="details-title-large" id="detailsTitle">Movie Title</h1>
                 
                 <div class="details-meta-row">
-                    <span class="meta-rating"><ion-icon name="star" style="color: #e50914;"></ion-icon> <span id="detailsRating">4.8</span></span>
+                    <span class="meta-rating"><ion-icon name="star" style="color: var(--gold);"></ion-icon> <span id="detailsRating">4.8</span></span>
                     <span class="meta-separator">&nbsp;&middot;&nbsp;</span>
                     <span class="meta-year" id="detailsYear">2026</span>
                     <span class="meta-separator">&nbsp;&middot;&nbsp;</span>
@@ -228,7 +228,14 @@
                 <div class="season-episode-header">
                     <h3 class="shelf-title shelf-title-accent">Episodes</h3>
                     <div class="season-controls">
-                        <select id="seasonSelect" class="season-select-pill"></select>
+                        <div class="custom-select-wrapper" id="customSeasonSelect">
+                            <div class="custom-select-trigger season-select-pill" id="seasonSelectTrigger">
+                                <span>Season 1</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform 0.3s ease;"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                            <div class="custom-select-options" id="seasonSelectOptions"></div>
+                            <input type="hidden" id="seasonSelect" value="1">
+                        </div>
                         <div class="episode-search-wrap">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
                             <input type="text" id="episodeSearch" class="episode-search-input" placeholder="Search episodes..." />

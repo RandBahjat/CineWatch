@@ -25,8 +25,8 @@
 // 1. HIGHLIGHTS & TRENDING (EDIT THIS SECTION)
 // ==========================================
 // Change these titles to easily swap which movies appear in the top slider and trending row!
-const FEATURED_TITLES = ["House of the Dragon", "The Invite", "Spider-Man Brand New Day", "The Odyssey", "Obsession", "Supergirl"];
-const TRENDING_TITLES = ["Supergirl", "Avengers: Age of Ultron", "Avengers: Infinity War", "Avengers: Endgame"];
+const FEATURED_TITLES = ["House of the Dragon", "The Invite", "Spider-Man: Brand New Day", "The Odyssey", "Obsession", "Supergirl"];
+const TRENDING_TITLES = ["Reacher", "Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters","The Invite","Young Washington","The Last House","Ted Lasso"];
 
 // ==========================================
 // 2. MOVIE DATABASE
@@ -43,7 +43,7 @@ const MOVIES = [
     poster:
       "https://www.themoviedb.org/t/p/w600_and_h900_face/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
     backdrop:
-      "https://image.tmdb.org/t/p/original/3D8inMh5c0L0j7Jc8iinH0NIhTL.jpg",
+      "https://image.tmdb.org/t/p/original/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
     videoUrl:
       "950028",
     overview:
@@ -55,7 +55,7 @@ const MOVIES = [
     is4k: false,
   },
   {
-    title: "Spider-Man Brand New Day",
+    title: "Spider-Man: Brand New Day",
     type: "Movie",
     year: 2026,
     rating: 8.2,
@@ -265,69 +265,65 @@ const MOVIES = [
     featured: false,
   },
   {
-    title: "Quantum Breach",
+    title: "Minions & Monsters",
     type: "Movie",
-    year: 2025,
-    rating: 4.5,
-    match: 89,
-    age: "PG-13",
-    duration: "1h 58m",
-    durationSec: 7080,
-    genres: ["Sci-Fi", "Action"],
+    year: 2026,
+    rating: 6.4,
+    age: "PG",
+    duration: "1h 30m",
+    genres: ["Animation","Comedy","Family","Adventure"],
     poster:
-      "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=600&q=80",
+      "https://www.themoviedb.org/t/p/w600_and_h900_face/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
     backdrop:
-      "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=1600&q=80",
+      "https://image.tmdb.org/t/p/original/rLDgW5E5E2XUHSz2QOz9zKrrL28.jpg",
     videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+      "1315772",
     overview:
-      "When a physics experiment opens portal tears in reality, a physicist must travel across parallel dimensions to assemble the pieces of a universe-stabilizing device.",
-    director: "Denis Villeneuve",
-    cast: ["Benedict Cumberbatch", "Zendaya", "Oscar Isaac"],
+      "The rambunctious, ridiculous, and totally true story of how the Minions conquered Hollywood in the 1920s, became movie stars, lost everything, unleashed monsters onto the world, and then banded together to try and save the planet from the mayhem they had just created.",
+    director: "Pierre Coffin",
+    cast: ["Pierre Coffin (voice), Trey Parker, Christoph Waltz, Allison Janney, Jesse Eisenberg, Jeff Bridges, Zoey Deutch, Bobby Moynihan, Phil LaMarr"],
     trending: false,
     featured: false,
   },
   {
-    title: "Midnight Masquerade",
+    title: "Young Washington",
     type: "Movie",
     year: 2026,
-    rating: 4.7,
-    match: 93,
-    age: "R",
-    duration: "2h 08m",
-    genres: ["Drama", "Horror"],
+    rating: 7.3,
+    age: "PG-13",
+    duration: "2h 1m",
+    genres: ["Biography", "Drama","History","War"],
     poster:
-      "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=600&q=80",
+      "https://www.themoviedb.org/t/p/w600_and_h900_face/6CdoTKnRQHJkjRGxTefFGkPQplB.jpg",
     backdrop:
-      "https://images.unsplash.com/photo-1514306191717-452ec28c7814?auto=format&fit=crop&w=1600&q=80",
+      "https://image.tmdb.org/t/p/original/qJbDKWdTQd0IicRKqGoVF7QTmTo.jpg",
     videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "1308767",
     overview:
-      "An exclusive secret society ball in Venice turns into a deadly game of wits when an uninvited phantom guest begins revealing the dark secrets of the high-society attendees.",
-    director: "Park Chan-wook",
-    cast: ["Ana de Armas", "Timothée Chalamet", "Mads Mikkelsen"],
+      "Before he was the Father of a Nation, he was a soldier fighting to survive. A single misstep thrusts young George Washington into the center of a global conflict, testing his honor, loyalty, and courage. As alliances crumble and the frontier erupts into war, he must confront not only his enemies but the man he's becoming.",
+    director: "Jon Erwin",
+    cast: ["William Franklyn-Miller, Mary-Louise Parker, Ben Kingsley, Andy Serkis, Kelsey Grammer, Mia Rodgers, Leo Hanna, Joel Smallbone"],
     trending: true,
     featured: false,
   },
   {
-    title: "Haunting at Blackwood",
+    title: "The Last House",
     type: "Movie",
-    year: 2025,
-    rating: 4.6,
-    match: 90,
-    age: "R",
-    duration: "1h 44m",
-    genres: ["Horror"],
+    year: 2026,
+    rating: 5.5,
+    age: "PG-13",
+    duration: "1h 52m",
+    genres: ["Science Fiction","Horror","Mystery"],
     poster:
-      "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",
+      "https://www.themoviedb.org/t/p/w600_and_h900_face/6JU7E8Vv2M11egkctWVOScxWR75.jpg",
     backdrop:
-      "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1600&q=80",
+      "https://image.tmdb.org/t/p/original/A2SsNDtRcz3qNhFoNNrbomTesBx.jpg",
     videoUrl:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+      "1284041",
     overview:
-      "A family reopens a historic Victorian estate, unaware that the house holds demonic whispers trapped behind the antique mirrors in every room.",
-    director: "James Wan",
-    cast: ["Vera Farmiga", "Patrick Wilson", "Lulu Wilson"],
+      "A family of four is suddenly sealed inside their home with no way out. With every door and window rendered impossible to escape, their safe haven quickly transforms into a prison as supplies dwindle and an unseen force outside refuses to let them leave. As fear, desperation, and suspicion tear the family apart, they must work together to uncover the truth behind the mysterious phenomenon before time runs out.",
+    director: "Louis Leterrier",
+    cast: ["Greta Lee, Wagner Moura, Riley Chung, Emma Ho, Noah Alexander Sosnowski, Gabriel Barbosa, Sam Lerner, Arden Cho"],
     trending: false,
     featured: false,
   },
@@ -412,6 +408,19 @@ const MOVIES = [
           { episode: 8, title: "Pax Deorum" },
         ],
       },
+      {
+        season: 4,
+        episodes: [
+          { episode: 1, title: "City of Brotherly Love" },
+          { episode: 2, title: "Cage Fight" },
+          { episode: 3, title: "One Small Step" },
+          { episode: 4, title: "Karambits and Pieces" },
+          { episode: 5, title: "Bridge" },
+          { episode: 6, title: "Plum Out of Luck" },
+          { episode: 7, title: "Vote for Sampson" },
+          { episode: 8, title: "Cut" },
+        ],
+      },
     ],
   },
 
@@ -424,8 +433,8 @@ const MOVIES = [
     age: "R",
     duration: "1h 50m",
     genres: ["Action", "Horror", "Sci-Fi", "Thriller"],
-    poster: "https://i.ebayimg.com/images/g/lAEAAeSwmeRpz2R9/s-l1200.png",
-    backdrop: "https://i.pinimg.com/1200x/3f/73/e6/3f73e6605dc65879563f7794d4fb75cb.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/wjwMC7u3xWKkrronolBqsIy4L0L.jpg",
     videoUrl: "1083381",
     overview: "A strange doorway appears in the basement of a furniture showroom, leading to an endless labyrinth of eerily familiar office corridors and empty rooms. When a man disappears into this impossible space, the people searching for him must venture into its depths — where the walls never end, and something else calls it home.",
     director: "Kane Parsons",
@@ -435,7 +444,7 @@ const MOVIES = [
   },
 
   {
-    title: "BATMAN BEGINS",
+    title: "Batman Begins",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2005,
     rating: 8.2,
@@ -512,7 +521,7 @@ const MOVIES = [
   },
 
   {
-    title: "THE AMAZING SPIDER-MAN 2",
+    title: "The Amazing Spider-Man 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2014,
     rating: 6.8,
@@ -1596,7 +1605,7 @@ const MOVIES = [
     duration: "2h 24m",
     genres: ["Action", "Adventure", "Fantasy"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQfiVvjpyhjGOv9UDoveRz1LpkP0ZjU4d1NsYaHeqcHQ&s=10",
-    backdrop: "https://wallpapercave.com/wp/wp12358459.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/xGIeqQunSj5dxGZVKzNNr9W4vps.jpg",
     videoUrl: "298618",
     overview: "Struggling with the pain of a past he can never seem to escape, Barry Allen discovers he's able to travel through time by running fast enough. In a moment of desperation, he alters a pivotal event from his childhood — only to find himself trapped in a fractured reality without his powers, working alongside a younger, less experienced version of himself. As the timeline unravels further, Barry must find a way to restore order, uniting with alternate heroes to face a familiar, catastrophic threat before it's too late.",
     director: "Andy Muschietti",
@@ -5833,7 +5842,7 @@ const MOVIES = [
     duration: "22m",
     genres: ["Action", "Animation", "Adventure", "Comedy", "Science Fiction", "Fantasy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/sEocAE3h5iu8CUNhdx1gHan7QJf.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/A9jKFayWuYmuAucMCLKV3CIkLkW.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/dE28FZ6HKbsM8cJxlYk4WL0vuhU.jpg",
     videoUrl: "",
     overview: "Five years after last wearing the Omnitrix, 15-year-old Ben Tennyson straps it back on when Grandpa Max mysteriously goes missing. The device has recalibrated, granting him ten brand-new alien forms. Joined by his now-superpowered cousin Gwen and his reformed former enemy Kevin Levin, Ben must uncover a hidden alien conspiracy threatening Earth.",
     director: "Duncan Rouleau, Joe Casey, Joe Kelly, Steven T. Seagle",
@@ -5914,7 +5923,7 @@ const MOVIES = [
     duration: "22m",
     genres: ["Action", "Animation", "Adventure", "Comedy", "Science Fiction", "Fantasy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/n4KwrlUKO9S4GvOdZzmnz4zOxx7.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/zQ6NRtZk74k0bRcrS7DK5RB3YlF.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/hKxGRAPFHEjNWNLM6yl2WoiXJiJ.jpg",
     videoUrl: "",
     overview: "Five years after last wearing the Omnitrix, 15-year-old Ben Tennyson straps it back on when Grandpa Max mysteriously goes missing. The device has recalibrated, granting him ten brand-new alien forms. Joined by his now-superpowered cousin Gwen and his reformed former enemy Kevin Levin, Ben must uncover a hidden alien conspiracy threatening Earth.",
     director: "Duncan Rouleau, Joe Casey, Joe Kelly, Steven T. Seagle",
@@ -7690,7 +7699,7 @@ const MOVIES = [
     duration: "43m",
     genres: ["Drama", "Action", "Sci-FI", "Adventure"],
     poster: "https://image.tmdb.org/t/p/original/sn5T0gm0EMxhKZGUPeAs38HVc6a.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/6ZdQTBy20HzWudZthAV7NkZWfIb.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/g9iWefLnhAnvbthM0UurqHGhc1s.jpg",
     videoUrl: "",
     overview: "After being struck by lightning, forensic investigator Barry Allen wakes up from his coma to discover he's been given the power of super speed, becoming the Flash and fighting crime in Central City. As he uses his newfound abilities to protect the city from other superpowered threats, Barry must also confront the dark secret behind the very event that gave him his powers.",
     director: "Greg Berlanti, Andrew Kreisberg, Geoff Johns",
@@ -7940,6 +7949,102 @@ const MOVIES = [
       },
     ]
   },
+ {
+    title: "Superman & Lois",
+    type: "TV Show",
+    year: 2021,
+    rating: 7.8,
+    age: "TV-PG",
+    duration: "42m",
+    genres: ["Action","Drama","Family"],
+    poster: "https://image.tmdb.org/t/p/original/vlv1gn98GqMnKHLSh0dNciqGfBl.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/sdKDOUAstJv46rUuBtjHV8ILkcN.jpg",
+    videoUrl: "",
+    overview: "Follows the world's most famous superhero and comic books' most famous journalist as they deal with all the stress, pressure, and complexities that come with being working parents in today's society — all while Superman balances his heroic duties with Lois Lane raising their teenage sons in Smallville.",
+    director: "Todd Helbing, Greg Berlanti",
+    cast: ["Tyler Hoechlin, Elizabeth Tulloch, Jordan Elsass, Alexander Garfin, Erik Valdez, Inde Navarrette, Wolé Parks, Adam Rayner"],
+    trending: false,
+    featured: false,
+    cinesrcId: "95057", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Pilot" },
+          { episode: 2, title: "Heritage" },
+          { episode: 3, title: "The Perks of Not Being a Wallflower" },
+          { episode: 4, title: "Haywire" },
+          { episode: 5, title: "The Best of Smallville" },
+          { episode: 6, title: "Broken Trust" },
+          { episode: 7, title: "Man of Steel" },
+          { episode: 8, title: "Holding the Wrench" },
+          { episode: 9, title: "Loyal Subjekts" },
+          { episode: 10, title: "O Mother, Where Art Thou?" },
+          { episode: 11, title: "A Brief Reminiscence In-Between Cataclysmic Events" },
+          { episode: 12, title: "Through the Valley of Death" },
+          { episode: 13, title: "Fail Safe" },
+          { episode: 14, title: "The Eradicator" },
+          { episode: 15, title: "Last Sons of Krypton" },
+        ],
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "What Lies Beneath" },
+          { episode: 2, title: "The Ties That Bind" },
+          { episode: 3, title: "The Thing in the Mines" },
+          { episode: 4, title: "The Inverse Method" },
+          { episode: 5, title: "Girl... You'll Be a Woman, Soon" },
+          { episode: 6, title: "Tried and True" },
+          { episode: 7, title: "Anti-Hero" },
+          { episode: 8, title: "Into Oblivion" },
+          { episode: 9, title: "30 Days and 30 Nights" },
+          { episode: 10, title: "Bizarros in a Bizarro World" },
+          { episode: 11, title: "Truth and Consequences" },
+          { episode: 12, title: "Lies That Bind" },
+          { episode: 13, title: "All Is Lost" },
+          { episode: 14, title: "Worlds War Bizarre" },
+          { episode: 15, title: "Waiting for Superman" },
+        ],
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: "Closer" },
+          { episode: 2, title: "Uncontrollable Forces" },
+          { episode: 3, title: "In Cold Blood" },
+          { episode: 4, title: "Too Close to Home" },
+          { episode: 5, title: "Head On" },
+          { episode: 6, title: "Of Sound Mind" },
+          { episode: 7, title: "Forever and Always" },
+          { episode: 8, title: "Guess Who's Coming to Dinner" },
+          { episode: 9, title: "The Dress" },
+          { episode: 10, title: "Collision Course" },
+          { episode: 11, title: "Complications" },
+          { episode: 12, title: "Injustice" },
+          { episode: 13, title: "What Kills You Only Makes You Stronger" },
+        ],
+      },
+      {
+        season: 4,
+        episodes: [
+          { episode: 1, title: "The End & the Beginning" },
+          { episode: 2, title: "A World Without" },
+          { episode: 3, title: "Always My Hero" },
+          { episode: 4, title: "A Perfectly Good Wedding" },
+          { episode: 5, title: "Break the Cycle" },
+          { episode: 6, title: "When the Lights Come On" },
+          { episode: 7, title: "A Regular Guy" },
+          { episode: 8, title: "Sharp Dressed Man" },
+          { episode: 9, title: "To Live and Die Again" },
+          { episode: 10, title: "It Went by So Fast" },
+        ],
+      },
+      
+
+    ]
+  },
+ 
   {
     title: "Peaky Blinders",
     type: "TV Show",
@@ -8356,6 +8461,90 @@ const MOVIES = [
       },
     ]
   },
+  {
+    title: "Ted Lasso",
+    type: "TV Show",
+    year: 2020,
+    rating: 8.7,
+    age: "TV-MA",
+    duration: "30m",
+    genres: ["Comedy", "Drama", "Sport"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/3KLmx6nLaiYe07kSwuWdpTEHJgE.jpg",
+    videoUrl: "",
+    overview: "An American football coach, Ted Lasso, is hired to manage AFC Richmond, a British soccer team — despite having no experience coaching soccer at all. His folksy, positive attitude, unwavering optimism, and unique brand of leadership begin to unite a dysfunctional team and a fractured fan base, even as his personal life and marriage crumble behind the scenes.",
+    director: "Bill Lawrence, Jason Sudeikis, Brendan Hunt, Joe Kelly",
+    cast: ["Jason Sudeikis, Hannah Waddingham, Jeremy Swift, Brett Goldstein, Nick Mohammed, Juno Temple, Brendan Hunt, Phil Dunster"],
+    trending: false,
+    featured: false,
+    cinesrcId: "97546", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Pilot" },
+          { episode: 2, title: "Biscuits" },
+          { episode: 3, title: "Trent Crimm: The Independent" },
+          { episode: 4, title: "For the Children" },
+          { episode: 5, title: "Tan Lines" },
+          { episode: 6, title: "Two Aces" },
+          { episode: 7, title: "Make Rebecca Great Again" },
+          { episode: 8, title: "The Diamond Dogs" },
+          { episode: 9, title: "All Apologies" },
+          { episode: 10, title: "The Hope That Kills You" },
+        ],
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "Goodbye Earl" },
+          { episode: 2, title: "Lavender" },
+          { episode: 3, title: "Do the Right-est Thing" },
+          { episode: 4, title: "Carol of the Bells" },
+          { episode: 5, title: "Rainbow" },
+          { episode: 6, title: "The Signal" },
+          { episode: 7, title: "Headspace" },
+          { episode: 8, title: "Man City" },
+          { episode: 9, title: "Beard After Hours" },
+          { episode: 10, title: "No Weddings and a Funeral" },
+          { episode: 11, title: "Midnight Train to Royston" },
+          { episode: 12, title: "Invrting the Pyramid of Success" },
+        ],
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: "Smells Like Mean Spirit" },
+          { episode: 2, title: "(I Don't Want to Go to) Chelsea" },
+          { episode: 3, title: "4-5-1" },
+          { episode: 4, title: "Big Week" },
+          { episode: 5, title: "Signs" },
+          { episode: 6, title: "Sunflowers" },
+          { episode: 7, title: "The Strings That Bind Us" },
+          { episode: 8, title: "We'll Never Have Paris" },
+          { episode: 9, title: "La Locker Room Aux Folles" },
+          { episode: 10, title: "International Break" },
+          { episode: 11, title: "Mom City" },
+          { episode: 12, title: "So Long, Farewell" },
+        ],
+      },
+      {
+        season: 4,
+        episodes: [
+          { episode: 1, title: "Home" },
+          { episode: 2, title: "Curiouser and Curiouser!" },
+          { episode: 3, title: "Episode #4.3" },
+          { episode: 4, title: "Episode #4.4" },
+          { episode: 5, title: "Episode #4.5" },
+          { episode: 6, title: "Episode #4.6" },
+          { episode: 7, title: "Episode #4.7" },
+          { episode: 8, title: "Episode #4.8" },
+          { episode: 9, title: "Episode #4.9" },
+          { episode: 10, title: "Episode #4.10" },
+        ],
+      },
+    ]
+  },
 
 
 
@@ -8366,10 +8555,22 @@ const MOVIES = [
 ];
 
 // Auto-generate a clean ID (slug) for every movie based on its title
+const seenIds = new Set();
 MOVIES.forEach(m => {
   if (!m.id) {
-    m.id = m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+    let baseId = m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+    let finalId = baseId;
+    if (seenIds.has(finalId)) {
+      finalId = `${baseId}-${m.type === 'TV Show' || m.type === 'Series' ? 'tv' : 'movie'}`;
+      let counter = 2;
+      while (seenIds.has(finalId)) {
+        finalId = `${baseId}-${counter}`;
+        counter++;
+      }
+    }
+    m.id = finalId;
   }
+  seenIds.add(m.id);
 });
 
 // Apply Featured & Trending flags dynamically based on the exact titles above
@@ -9546,11 +9747,31 @@ function openDetailsModal(movieId) {
 
       const seasonSelect = document.getElementById("seasonSelect");
       const episodeGrid = document.getElementById("episodeGrid");
+      const customSeasonSelect = document.getElementById("customSeasonSelect");
+      const seasonSelectTrigger = document.getElementById("seasonSelectTrigger");
+      const seasonSelectOptions = document.getElementById("seasonSelectOptions");
 
-      // Populate season dropdown
-      seasonSelect.innerHTML = movie.seasons
-        .map((s) => `<option value="${s.season}">Season ${s.season}</option>`)
+      // Populate custom season dropdown
+      seasonSelectOptions.innerHTML = movie.seasons
+        .map((s) => `<div class="custom-option" data-value="${s.season}">Season ${s.season}</div>`)
         .join("");
+
+      if (movie.seasons.length > 0) {
+        const initialSeason = movie.seasons[0].season;
+        seasonSelect.value = initialSeason;
+        seasonSelectTrigger.querySelector("span").textContent = `Season ${initialSeason}`;
+        seasonSelectOptions.querySelector('.custom-option').classList.add('selected');
+      }
+
+      // Dropdown toggle logic
+      seasonSelectTrigger.onclick = (e) => {
+        e.stopPropagation();
+        customSeasonSelect.classList.toggle("open");
+      };
+
+      document.addEventListener("click", () => {
+        if(customSeasonSelect) customSeasonSelect.classList.remove("open");
+      });
 
       function getEpisodeUrl(ep, seasonData) {
         if (ep.videoUrl) return ep.videoUrl;
@@ -9612,7 +9833,27 @@ function openDetailsModal(movieId) {
       }
 
       renderEpisodes(seasonSelect.value);
-      seasonSelect.onchange = () => renderEpisodes(seasonSelect.value);
+
+      // Handle custom option click
+      seasonSelectOptions.querySelectorAll(".custom-option").forEach((opt) => {
+        opt.onclick = (e) => {
+          e.stopPropagation();
+          const val = opt.getAttribute("data-value");
+          seasonSelect.value = val;
+          seasonSelectTrigger.querySelector("span").textContent = `Season ${val}`;
+          
+          seasonSelectOptions.querySelectorAll(".custom-option").forEach(o => o.classList.remove("selected"));
+          opt.classList.add("selected");
+          
+          customSeasonSelect.classList.remove("open");
+          renderEpisodes(val);
+          
+          const epSearch = document.getElementById("episodeSearch");
+          if(epSearch && epSearch.value) {
+            renderEpisodes(val, epSearch.value);
+          }
+        };
+      });
 
       // Search filter
       const epSearch = document.getElementById("episodeSearch");
