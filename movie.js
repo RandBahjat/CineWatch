@@ -355,7 +355,7 @@ const MOVIES = [
 
   // ---- ADD NEW MOVIES BELOW THIS LINE ----
   {
-    title: "REACHER",
+    title: "Reacher",
     type: "TV Show",
     year: 2022,
     rating: 8.0,
@@ -364,7 +364,7 @@ const MOVIES = [
     duration: "50m",
     genres: ["Action", "Crime", "Thriller", "Drama"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/JYgqp8g2kI3SEus9XBDSHukfBN.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
     videoUrl: "108978",
     overview: "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. He is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
     director: "Nick Santora",
@@ -4016,7 +4016,7 @@ const MOVIES = [
     duration: "50m",
     genres: ["Animation", "Action", "Adventure", "Drama", "Sci-FI"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4tblBrslcKSifMVZ3TmtT2ukMor.jpg",
-    backdrop: "https://i.redd.it/from-s1-to-s4-which-invincible-poster-is-definitely-the-v0-gxorz2y25xgg1.png?width=1080&format=png&auto=webp&s=95c95b4967ae60c80951e06b13bd1b7d17045af5",
+    backdrop: "https://image.tmdb.org/t/p/original/6UH52Fmau8RPsMAbQbjwN3wJSCj.jpg",
     videoUrl: "95557",
     overview: "Mark Grayson is a seemingly normal teenager, except for the fact that his father, Nolan, is Omni-Man, the most powerful superhero on the planet. Shortly after his seventeenth birthday, Mark begins to develop powers of his own and enters into training under his father's guidance. However, as Mark tries to balance his personal life with his new heroic duties, he begins to uncover dark secrets about his father's past and the true nature of their alien heritage",
     director: "Robert Kirkman, Ryan Ottley, Cory Walker",
@@ -5159,7 +5159,7 @@ const MOVIES = [
     duration: "20m",
     genres: ["Action", "Animation", "Adventure", "Comedy", "Family", "Fantasy", "Romance"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/acrtAy8gmxcsEvrDP09MpMSCeDZ.jpg",
-    backdrop: "https://m.media-amazon.com/images/I/61oA64Nm+SS.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/rmRp41yelJG1tCCdoHRiHX8qp7g.jpg",
     videoUrl: "",
     overview: "By daylight, Marinette Dupain-Cheng and Adrien Agreste are ordinary Parisian teenagers. But unbeknownst to their family and friends, the two carry a huge secret — using the powers of magical creatures called Kwamis, they transform into the superheroes Ladybug and Cat Noir. Tasked with protecting Paris from the villain Hawk Moth, they must balance their new responsibilities with ordinary teenage troubles of love, school, and friendship, all while remaining unaware of each other's true identities.",
     director: "Thomas Astruc",
