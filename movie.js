@@ -9126,30 +9126,22 @@ function updateHeroBanner() {
     previousHeroIndex = state.currentHeroIndex;
   }
 
-  const isWrapAround = (previousHeroIndex === slides - 1 && state.currentHeroIndex === 0);
+  heroTrack.style.transition = "opacity 0.3s ease-in-out";
+  heroTrack.style.opacity = "0";
 
-  if (isWrapAround) {
-    heroTrack.style.transition = "opacity 0.3s ease-in-out";
-    heroTrack.style.opacity = "0";
-
-    setTimeout(() => {
-      heroTrack.style.transition = "none";
-      heroTrack.style.transform = `translateX(0%)`;
-      
-      void heroTrack.offsetWidth; // Force reflow
-      
-      heroTrack.style.transition = "opacity 0.3s ease-in-out";
-      heroTrack.style.opacity = "1";
-      
-      setTimeout(() => {
-        heroTrack.style.transition = "transform 0.5s ease-in-out";
-      }, 300);
-    }, 300);
-  } else {
-    heroTrack.style.transition = "transform 0.5s ease-in-out";
-    heroTrack.style.opacity = "1";
+  setTimeout(() => {
+    heroTrack.style.transition = "none";
     heroTrack.style.transform = `translateX(-${state.currentHeroIndex * 100}%)`;
-  }
+    
+    void heroTrack.offsetWidth; // Force reflow
+    
+    heroTrack.style.transition = "opacity 0.3s ease-in-out";
+    heroTrack.style.opacity = "1";
+    
+    setTimeout(() => {
+      heroTrack.style.transition = "transform 0.5s ease-in-out";
+    }, 300);
+  }, 300);
 
   previousHeroIndex = state.currentHeroIndex;
 
@@ -9567,6 +9559,8 @@ function switchView(viewName) {
     if (detailsSection) detailsSection.classList.add("hidden");
     if (continueShelf) continueShelf.classList.add("hidden");
     if (watchlistHomeShelf) watchlistHomeShelf.classList.add("hidden");
+    const homeFooter = document.getElementById("homeFooter");
+    if (homeFooter) homeFooter.classList.add("hidden");
   };
 
   const navbar = document.getElementById("navbar");
@@ -9589,6 +9583,8 @@ function switchView(viewName) {
     // Explicitly un-hide the shelves before rendering so they re-appear after navigating away
     if (continueShelf) continueShelf.classList.remove("hidden");
     if (watchlistHomeShelf) watchlistHomeShelf.classList.remove("hidden");
+    const homeFooter = document.getElementById("homeFooter");
+    if (homeFooter) homeFooter.classList.remove("hidden");
     renderContinueWatchingShelf();
     renderWatchlistHomeShelf();
   } else if (viewName === "movies") {
