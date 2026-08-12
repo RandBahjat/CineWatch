@@ -1153,7 +1153,6 @@ select {
 
 .movie-card:hover {
   z-index: 20;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
 }
 
 .card-poster-wrap {
@@ -4176,9 +4175,7 @@ select {
 }
 
 .browse-card:hover {
-  transform: scale(1.04) translateY(-6px);
   z-index: 20;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.85);
 }
 
 .browse-poster-wrap {
@@ -4199,25 +4196,6 @@ select {
 
 .browse-card:hover .browse-poster {
   transform: scale(1.07);
-}
-
-/* Rating badge — top-left */
-.browse-rating-badge {
-  position: absolute;
-  top: 0.7rem;
-  left: 0.7rem;
-  background: rgba(0,0,0,0.75);
-  backdrop-filter: blur(8px);
-  color: var(--gold);
-  font-size: 0.85rem;
-  font-weight: 700;
-  padding: 0.25rem 0.65rem;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-  z-index: 4;
-  border: 1px solid rgba(255,255,255,0.1);
 }
 
 /* Gradient overlay for text readability */
@@ -4347,24 +4325,15 @@ select {
   position: relative;
 }
 
+.browse-card-rating {
+  color: var(--gold);
+  font-weight: 700;
+}
+
 .browse-card-year {
   font-weight: 600;
   text-shadow: 0 1px 3px rgba(0,0,0,0.8);
   margin-left: auto;
-}
-
-.browse-card-genre {
-  background: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 0.15rem 0.55rem;
-  border-radius: 10px;
-  font-size: 0.72rem;
-  font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 110px;
 }
 
 /* ---- Pagination ---- */

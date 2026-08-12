@@ -517,6 +517,24 @@ const MOVIES = [
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
+  {
+    title: "The Death of Robin Hood",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2026,
+    rating: 6.0,
+    age: "R",
+    duration: "2h 2m",
+    genres: ["Action", "Thriller", "Drama"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/92Tsfx7SFafOqWsotvrlJbHyehd.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/5FJsyRUuLsyt2lZrDHbqFE4tJXN.jpg",
+    videoUrl: "1284465",
+    overview: "A dark, gritty reimagining based on the 17th-century classic ballad. The film follows an aging, battle-worn Robin Hood who has retreated into self-imposed exile, deeply tormented by the violent crimes and killings of his past outlaw life. When he is gravely wounded, he takes refuge in a remote priory. In the hands of a mysterious prioress and an orphaned girl, the cynical legend is offered one final, painful chance at spiritual salvation and redemption.",
+    director: "Michael Sarnoski",
+    cast: ["Hugh Jackman, Jodie Comer, Bill Skarsgård, Murray Bartlett, Noah Jupe"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+
 
   {
     title: "The Amazing Spider-Man",
@@ -8387,6 +8405,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Disclosure Day",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2026,
+    rating: 6.4,
+    age: "PG-13",
+    duration: "2h 25m",
+    genres: ["Sci-Fi", "Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/AnJ8IQJI23hNpYXVNaythu061Ru.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
+    videoUrl: "1275779",
+    overview: "A humanistic sci-fi thriller marking Steven Spielberg's return to the alien genre. Set against the backdrop of a planet on the brink of nuclear war, the story follows a cybersecurity specialist who becomes a whistleblower after stealing classified extraterrestrial data from a secretive government contractor. He crosses paths with a television meteorologist who has unexpectedly begun exhibiting strange psychic abilities and speaking an unknown alien tongue. Together, they go on the run from corporate operatives to broadcast the absolute truth to the world and prove humanity is not alone.",
+    director: "Steven Spielberg",
+    cast: ["Emily Blunt, Josh O'Connor, Colin Firth, Eve Hewson, Colman Domingo, Wyatt Russell"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
@@ -8733,7 +8768,7 @@ MOVIES.forEach(m => {
 const HERO_ROTATE_INTERVAL_MS = 10000;
 
 // How many cards to show per page in the Movies / Series browse views
-const BROWSE_PAGE_SIZE = 15;
+const BROWSE_PAGE_SIZE = 20;
 
 // ==========================================
 // 2. STATE & STORAGE MANAGEMENT
@@ -9357,13 +9392,12 @@ function createBrowseCardHTML(movie) {
     <div class="browse-card" data-id="${movie.id}">
       <div class="browse-poster-wrap">
         <img src="${movie.poster}" alt="${movie.title}" class="browse-poster" loading="lazy">
-        <div class="browse-rating-badge">⭐ ${movie.rating}</div>
         <div class="browse-card-gradient"></div>
         <div class="browse-card-info">
           <div class="browse-card-title">${movie.title}</div>
           <div class="browse-card-meta">
+            <span class="browse-card-rating">⭐ ${movie.rating}</span>
             <span class="browse-card-year">${movie.year}</span>
-            ${primaryGenre ? `<span class="browse-card-genre">${primaryGenre}</span>` : ""}
           </div>
         </div>
         <div class="browse-overlay">
