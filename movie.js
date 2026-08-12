@@ -632,7 +632,7 @@ const MOVIES = [
     duration: "2h 13m",
     genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZRneIxpbeLT6fYO_m4PuvggP6W8o2W0_IMqmbXIMHNA&s=10",
-    backdrop: "https://cdn.prod.website-files.com/6299f2e9711457612f15f77e/62fc6771fdfbe1169862c721_Screenshot%202022-08-17%20115829.png",
+    backdrop: "https://image.tmdb.org/t/p/original/fn4n6uOYcB6Uh89nbNPoU2w80RV.jpg",
     videoUrl: "315635",
     overview: "Still buzzing from his experience with the Avengers, Peter Parker returns home to Queens, eager to prove himself as more than just a friendly neighborhood hero. When the Vulture emerges as a new and dangerous threat, wielding weapons built from stolen alien technology, Peter must juggle his desire to prove himself to Tony Stark with the everyday struggles of being a teenager — before the stakes become too big for him to handle alone.",
     director: "Jon Watts",
@@ -654,7 +654,7 @@ const MOVIES = [
     duration: "2h 9m",
     genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2dtxxSB41PWg_zeX8Tcwzj6VBfE1fOj98brLOpnoqhA&s=10",
-    backdrop: "https://i.redd.it/spiderman-far-from-home-2019-untouched-posters-set-1-v0-271jb9cz8zde1.jpg?width=6152&format=pjpg&auto=webp&s=02b3f9dc9f1b968537f7f2bd65f484fbcf9eda09",
+    backdrop: "https://image.tmdb.org/t/p/original/qY76zJncsFzeE4tx1jRSQFcWS1.jpg",
     videoUrl: "429617",
     overview: "Still reeling from the loss of Tony Stark, Peter Parker just wants a normal summer with his friends in Europe — and maybe finally tell MJ how he feels. But Nick Fury has other plans, pulling Peter into a global threat involving mysterious elemental creatures and a new ally named Mysterio. As expectations mount for him to fill the void left behind, Peter must decide what it really means to be the next hero the world needs.",
     director: "Jon Watts",
@@ -696,7 +696,7 @@ const MOVIES = [
     duration: "2h 6m",
     genres: ["Action", "Adventure", "Sci-Fi", "Fantasy"],
     poster: "https://cdng.europosters.eu/pod_public/1300/263132.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/xaMKxjUH0UEj3UukJotfKzXj0HH.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/cyecB7godJ6kNHGONFjUyVN9OX5.jpg",
     videoUrl: "1726",
     overview: "Tony Stark, a billionaire industrialist and genius inventor, is captured by terrorists in Afghanistan and forced to build a devastating weapon. Instead, he secretly constructs a powered suit of armor and escapes captivity. Back home, haunted by what he's witnessed, Stark rebuilds and improves his suit, adopting the identity of Iron Man — determined to protect the world from the same kind of weapons his company once manufactured, even as a dangerous betrayal from within threatens everything he's built.",
     director: "Jon Favreau",
@@ -738,7 +738,7 @@ const MOVIES = [
     duration: "2h 4m",
     genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://i.ebayimg.com/00/s/MTUwMFgxMDAw/z/WyEAAOSwsxJgBcuf/$_57.JPG?set_id=8800005007",
-    backdrop: "https://images8.alphacoders.com/617/thumb-1920-617427.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/aFTYFqrWp4RS46Twm87l5e0ItYb.jpg",
     videoUrl: "68721",
     overview: "Haunted by the events in New York and increasingly consumed by anxiety, Tony Stark's world is shattered when a mysterious terrorist calling himself the Mandarin launches a devastating attack that hits far too close to home. Stripped of his usual resources and forced to rely on nothing but his intelligence and resourcefulness, Tony must dig deep to uncover the truth behind the Mandarin's identity — and confront a threat far more personal than he ever expected.",
     director: "Jon Favreau",
@@ -760,7 +760,7 @@ const MOVIES = [
     duration: "2h 4m",
     genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://m.media-amazon.com/images/I/81U9EbWexxL._AC_UF894,1000_QL80_.jpg",
-    backdrop: "https://www.gofevo.com/Upload/1487e4ce-8f97-4d7b-9167-a84001017c46/93fdf6ca-8a99-4dd8-8d52-c2d92ba35695.jpeg",
+    backdrop: "https://image.tmdb.org/t/p/original/ryf1UaxSxwKV0gshQOkLgdmcF7M.jpg",
     videoUrl: "1771",
     overview: "Rejected from military service due to his frail body, Steve Rogers is given a chance to serve his country in a different way — as the volunteer subject of an experimental super-soldier program. Transformed into Captain America, Steve becomes a symbol of hope during World War II, leading the fight against the Red Skull, a ruthless Nazi scientist wielding a mysterious and powerful artifact with the potential to change the course of the war — and the world.",
     director: "Joe Johnston",
@@ -782,7 +782,7 @@ const MOVIES = [
     duration: "2h 16m",
     genres: ["Action", "Adventure", "Sci-Fi", "Thriller"],
     poster: "https://image.tmdb.org/t/p/original/l79VoTIPEXwo9zCTPTnpqdASvus.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/yHB0eNR8rvCpn0VdghEwBsXAC0N.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/xOe8nHr5bpPvq4JbGy4vpttDwg2.jpg",
     videoUrl: "100402",
     overview: "Still adjusting to life in the present day, Steve Rogers finds himself caught in a web of political intrigue when a deadly attack exposes a conspiracy buried deep within S.H.I.E.L.D. Teaming up with Natasha Romanoff and a new ally, Sam Wilson, Steve must uncover the truth behind a shadowy organization pulling the strings from the shadows — all while confronting a lethal assassin from his own past known only as the Winter Soldier.",
     director: "Joe Johnston",
@@ -804,7 +804,7 @@ const MOVIES = [
     duration: "2h 27m",
     genres: ["Action", "Adventure", "Sci-Fi", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w1280/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/dLWoJnYXhFeNouon4NmBLAr92rf.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/uXzQDq63nkrRbj2sl0OFJWmOPZg.jpg",
     videoUrl: "271110",
     overview: "When a mission gone wrong results in tragic collateral damage, the government moves to place the Avengers under strict oversight. The team is split — Tony Stark believes accountability is necessary, while Steve Rogers fears the loss of their autonomy. As old loyalties clash with new convictions, and a hidden threat manipulates the growing tension from the shadows, the Avengers must confront each other before an even greater danger tears them apart for good.",
     director: "Joe Johnston",
@@ -900,7 +900,7 @@ const MOVIES = [
     duration: "2h 56m",
     genres: ["Action", "Adventure", "Fantasy"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwBxeWEag4mqr9vQpPlJHtPlb_ZLsGdxZS_3mm67jYjQ&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnAd7dIFGHRqW_ip2YJDP25eNe4jtyERpU6td6I3nEWmqZX75ussadpDmP&s=10",
+    backdrop: "https://image.tmdb.org/t/p/original/6b62wqCJCG1tHV4mFUwvwmM88vw.jpg",
     videoUrl: "414906",
     overview: "When a sadistic killer known as the Riddler begins murdering Gotham's elite and leaving behind cryptic clues, Batman is drawn into his most challenging investigation yet. As he follows the trail through the city's underworld, he uncovers a web of corruption that stretches all the way back to his own family's legacy — forcing him to confront painful truths while facing off against the Penguin and Carmine Falcone along the way.",
     director: "Matt Reeves",
@@ -1785,7 +1785,7 @@ const MOVIES = [
     duration: "1h 57m",
     genres: ["Animation", "Adventure", "Comedy", "Family"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0YJOxxGmQ7S3vmzX553SH02JPHP66qprzDPkXJAvmng&s=10",
-    backdrop: "https://media.s-bol.com/LOkMNGZErVZj/o2WZZjj/1200x808.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/sd4xN5xi8tKRPrJOWwNiZEile7f.jpg",
     videoUrl: "920",
     overview: "Arrogant and single-minded, rookie race car Lightning McQueen has his sights set on nothing but victory and fame. But when a wrong turn strands him in the sleepy, forgotten town of Radiator Springs, he's forced to slow down and get to know its quirky residents. As he grows closer to the town and its inhabitants, Lightning begins to realize that winning isn't everything — and that friendship, community, and character matter far more than any trophy.",
     director: "John Lasseter",
@@ -1803,7 +1803,7 @@ const MOVIES = [
     duration: "1h 46m",
     genres: ["Animation", "Adventure", "Comedy", "Family"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxOy5jlECb51oUMPPDHsIsW6KOz_dlnsiF3eirJlALwg&s=10",
-    backdrop: "https://images.play.tv2.no/v3/image-packs/pfimg_pack_44cmg6kzp99avsdj5z8wd9mn3j?height=630",
+    backdrop: "https://image.tmdb.org/t/p/original/4BS8tgBNWg2jPiDlBwM2iJe1xB7.jpg",
     videoUrl: "49013",
     overview: "Lightning McQueen and his best friend Mater head overseas to compete in the World Grand Prix, only for Mater to become tangled in an international espionage caper involving undercover spies and a plot to sabotage the race",
     director: "John Lasseter, Brad Lewis",
@@ -1821,7 +1821,7 @@ const MOVIES = [
     duration: "1h 42m",
     genres: ["Animation", "Adventure", "Comedy", "Family"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLqiP5EnJq7tf4vhx7ok1lGbcYQGtp88FODIN9XQnTCQ&s=10",
-    backdrop: "https://eatplayrock.com/wp-content/uploads/2017/04/disney-22.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/4mlS1MitcOqdPLhxEFyk9Qwf5rr.jpg",
     videoUrl: "260514",
     overview: "Facing a new generation of faster, more technologically advanced racers, an aging Lightning McQueen must reinvent himself with the help of an ambitious young trainer, discovering what it truly takes to leave a lasting legacy on the sport he loves.",
     director: "Brian Fee",
@@ -2361,7 +2361,7 @@ const MOVIES = [
     duration: "1h 57m",
     genres: ["Animation", "Action", "Adventure", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w1280/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0dNHhZu3RZ72D-J6Fx2n0ygv_EJYwoDCYdJed96cDGA&s=10",
+    backdrop: "https://image.tmdb.org/t/p/original/8mnXR9rey5uQ08rZAvzojKWbDQS.jpg",
     videoUrl: "324857",
     overview: "Miles Morales is a Brooklyn teenager navigating a new school, a complicated relationship with his father, and a sudden spider bite that grants him extraordinary abilities. Before he can fully process his new powers, a rift torn open by the villainous Kingpin brings alternate versions of Spider-Man from other dimensions crashing into his world. Guided by these unlikely mentors, Miles must learn to embrace what makes him uniquely himself and step up as the hero his universe needs.",
     director: "Bob Persichetti,Peter Ramsey,Rodney Rothman",
@@ -2378,8 +2378,8 @@ const MOVIES = [
     age: "PG",
     duration: "2h 10m",
     genres: ["Animation", "Action", "Adventure", "Sci-Fi"],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdnEMwmtBhT7dYYxp0e-iUUh345OXrRGZm_VyzNkXmEQ&s=10",
-    backdrop: "https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABQcQN35jn1_YQ6rgnaO_hSsW4CVqHh5w4nOsWyux5n1vqpJkEPa9t90aPh3e_LEK0PxSIr-8ZZUyfgp_4cXHfBz4Irng4gqVhbGK.jpg?r=7ea",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/hpupV9XuzfuII13thv9Ssz9Escg.jpg",
     videoUrl: "569094",
     overview: "Now more confident in his role as Spider-Man, Miles Morales is pulled into a vast multiversal adventure alongside Gwen Stacy, joining a team of Spider-People from across dimensions. But when Miles clashes with them over their methods, he finds himself hunted across the multiverse by an army of alternate Spider-Man variants.",
     director: "Joaquim Dos Santos, Kemp Powers, Justin K. Thompson",
@@ -2613,7 +2613,7 @@ const MOVIES = [
     duration: "1h 21m",
     genres: ["Animation", "Action", "Crime", "Drama", "Mystery"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHdWSjIgZl8_y1Ude808vtwSiiwIbbJZc_ISMV5N8VgA&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKe3ShGkWRszuWU0tgflmju6jzn9mIDG2acqt2FYQuoQ&s=10",
+    backdrop: "https://image.tmdb.org/t/p/original/pJS6cZBDKkjh9zPno74EmPErdaw.jpg",
     videoUrl: "537056",
     overview: "A enigmatic new villain known only as Hush manipulates Gotham's rogue gallery from behind the scenes to tear down Batman's life. As the Dark Knight pursues the mystery, he forms a complex romantic alliance with Catwoman, but digging into Hush's master plan forces him to re-examine painful memories from his past.",
     director: "Justin Copeland",
@@ -2647,7 +2647,7 @@ const MOVIES = [
     duration: "1h 16m",
     genres: ["Animation", "Action", "Crime", "Mystery", "Drama", "Sci-Fi"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqkDP7tl8z8a7jPvDVuaC38J820L3Ga-uRhfZS0iufIQ&s=10",
-    backdrop: "https://i.ytimg.com/vi/URIOKb8tIgA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAfXGYYmH_wVWt3sr3OuMFAXG7-7g",
+    backdrop: "https://image.tmdb.org/t/p/original/2jApwp78umL4dK9uSBJAngNDiG9.jpg",
     videoUrl: "382322",
     overview: "As the Joker escapes from Arkham Asylum, he targets Commissioner Gordon and his daughter Barbara to prove a point that one bad day can drive any sane man to madness. Meanwhile, Batman races against time to put an end to the Joker's reign of terror before he completely destroys Gotham's top cop.",
     director: "Sam Liu",
@@ -2664,7 +2664,7 @@ const MOVIES = [
     duration: "1h 16m",
     genres: ["Animation", "Action", "Crime", "Drama", "Sci-Fi"],
     poster: "https://m.media-amazon.com/images/M/MV5BMzIxMDkxNDM2M15BMl5BanBnXkFtZTcwMDA5ODY1OQ@@._V1_.jpg",
-    backdrop: "https://preview.redd.it/anniversary-batman-the-dark-knight-returns-part-1-came-out-v0-g3jawsn9dfo11.jpg?width=1080&crop=smart&auto=webp&s=80c9153e60c4d2dbff7e540021ef072ed4e1d833",
+    backdrop: "https://image.tmdb.org/t/p/original/1YaG52CwGY3pKh76OBlwX0ymncg.jpg",
     videoUrl: "123025",
     overview: "A decade after retiring as Batman, an aging 55-year-old Bruce Wayne is forced out of retirement to reclaim Gotham City from a terrifying street gang known as the Mutants. However, returning to vigilante justice draws the dark attention of old enemies and a government determined to rein him in.",
     director: "Jay Oliva",
@@ -2681,7 +2681,7 @@ const MOVIES = [
     duration: "1h 16m",
     genres: ["Animation", "Action", "Crime", "Drama", "Sci-Fi"],
     poster: "https://m.media-amazon.com/images/M/MV5BZDlhMmJiNGUtM2E2MS00ZmMxLWIyNjgtMGQ4NDBlZTliNmE4XkEyXkFqcGc@._V1_.jpg",
-    backdrop: "https://resizing.flixster.com/omzSyCdXo0Fc5bgLfz2v_i4bZmg=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p9678798_i_h10_ab.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/jDGCqdtXe2KzM4QXKli4VTO4pGs.jpg",
     videoUrl: "142061",
     overview: "With Batman back on the streets, his resurgence breaks the Joker out of his catatonic state, sparking a final brutal showdown. As chaos engulfs Gotham, the U.S. government deploys Superman to bring down the Dark Knight, setting the stage for an epic battle between former allies.",
     director: "Jay Oliva",
@@ -2732,7 +2732,7 @@ const MOVIES = [
     duration: "1h 14m",
     genres: ["Animation", "Action", "Adventure"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuKQ9Ub9UUmlZpLb3VfHGyJHoSWuFZvKWBY1MiP4PkrA&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo4wLJ71RWOCwXTG82JZ-_yNZdlPZ1dJ8T10CWpaqZ7Q&s=10",
+    backdrop: "https://image.tmdb.org/t/p/original/djBqGjqojpjnacRsRD2dNnvhQbb.jpg",
     videoUrl: "251519",
     overview: "Batman learns he has a secret, headstrong son named Damian, raised in secret by Talia al Ghul and the League of Assassins. When Deathstroke launches a bloody takeover of the League, Talia sends Damian to Gotham to live with Bruce Wayne, forcing Batman to tame his trained assassin son while stopping Deathstroke's villainous plot.",
     director: "Ethan Spaulding",
@@ -2749,7 +2749,7 @@ const MOVIES = [
     duration: "1h 14m",
     genres: ["Animation", "Action", "Adventure", "Comedy"],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQQJ1N-xMxpLmc5HXakEXFaMaFEXJxYFt-GiQYjECTNw&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4LoyFVjP9uPQomJiZC3vOk8xw8ycoOSUM86yQHrix4g&s=10",
+    backdrop: "https://image.tmdb.org/t/p/original/twCXJuIQxTsor1fZm4QeAfVeiao.jpg",
     videoUrl: "408648",
     overview: "When Poison Ivy and Floronic Man team up to transform humanity into plant hybrids to save the planet, Batman and Nightwing are forced to recruit an unlikely ally: Harley Quinn. Recently released from Arkham, Harley joins the heroes on a road trip to track down her former partner-in-crime before the apocalyptic virus is unleashed.",
     director: "Sam Liu",
@@ -3055,7 +3055,7 @@ const MOVIES = [
     duration: "1h 45m",
     genres: ["Action", "Adventure", "Fantasy", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9GBhzXMFjgcZ3FdR9w3bUMMTps5.jpg",
-    backdrop: "https://static0.colliderimages.com/wordpress/wp-content/uploads/2023/09/f7hwnnjx0aaqrqw.jpeg",
+    backdrop: "https://image.tmdb.org/t/p/original/criPrxkTggCra1jch49jsiSeXo1.jpg",
     videoUrl: "609681",
     overview: "While investigating a wormhole linked to the Kree, Carol Danvers' powers become entangled with those of her estranged niece, S.H.I.E.L.D. astronaut Monica Rambeau, and Jersey City teenage superhero Kamala Khan. The trio must team up and learn to work in sync as they physically swap places every time they use their light-based abilities simultaneously.",
     director: "Nia DaCosta",
@@ -3344,7 +3344,7 @@ const MOVIES = [
     duration: "23m",
     genres: ["Animation", "Action", "Crime", "Mystery", "Sci-FI"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lBomQFW1vlm1yUYMNSbFZ45R4Ox.jpg",
-    backdrop: "https://mondoshop.com/cdn/shop/products/BATMAN_TAS_POSTER_SEPS.JPG?v=1649975884",
+    backdrop: "https://image.tmdb.org/t/p/original/4QnFxk03yAn7U2ZTL5oMCCqxlPc.jpg",
     videoUrl: "2098",
     overview: "Billionaire Bruce Wayne defends Gotham City as the Dark Knight, battling a iconic rogues' gallery including the Joker, Two-Face, Harley Quinn, and Mr. Freeze. Blending a dark 1940s film noir aesthetic with complex storytelling, it redefined superhero animation and set the foundation for the DC Animated Universe.",
     director: "Bruce Timm, Eric Radomski",
@@ -3974,7 +3974,7 @@ const MOVIES = [
     duration: "1h 58m",
     genres: ["Action", "Adventure", "Sci-FI"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg",
-    backdrop: "https://i0.wp.com/lbcommuter.com/wp-content/uploads/2025/02/Captain-America.jpg?fit=1024%2C441&ssl=1",
+    backdrop: "https://image.tmdb.org/t/p/original/8eifdha9GQeZAkexgtD45546XKx.jpg",
     videoUrl: "822119",
     overview: "Following the events of The Falcon and the Winter Soldier, Sam Wilson officially takes up the mantle of Captain America. After meeting with newly elected U.S. President Thaddeus Thunderbolt Ross, Sam finds himself in the middle of an international political incident. He must uncover the conspiracy behind a global plot before the mastermind forces the world into chaos.",
     director: "Julius Onah",
@@ -4424,7 +4424,7 @@ const MOVIES = [
     duration: "30m",
     genres: ["Animation", "Action", "Adventure", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ilOKsGRHYc78R2tSMusAd3xGJWq.jpg",
-    backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/dA4PbgytuOtzvPBJWoqFo9034D.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/dA4PbgytuOtzvPBJWoqFo9034D.jpg",
     videoUrl: "124364",
     overview: "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest — including the terrifying creatures that come out when the sun goes down.",
     director: "Alex Kurtzman, Duane Capizzi, Roberto Orci, Jeff Kline",
@@ -5007,7 +5007,7 @@ const MOVIES = [
     duration: "22m",
     genres: ["Action", "Animation", "Adventure"],
     poster: "https://image.tmdb.org/t/p/original/t5mbrd79o89pYB8OQ4QPFNkIRPm.jpg",
-    backdrop: "https://wallpapercave.com/wp/wp10473904.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/wKXpV8QgNXtJ4OQyzqDy82SsURm.jpg",
     videoUrl: "",
     overview: "A young Bruce Wayne fights crime and evil in Gotham City as the mysterious vigilante, the Batman. This animated series follows his early crimefighting years — from a solo detective battling classic villains like the Joker, Penguin, and Mr. Freeze, to eventually building the Bat-Family with Robin and Batgirl, and forming ties with the wider DC Universe.",
     director: "Michael Goguen, Duane Capizzi",
@@ -8611,6 +8611,7 @@ const state = {
   activeGenre: "all",
   activeView: "home",
   currentPlayingMovie: null,
+  episodeSortOrder: "asc",
   // Browse section pagination & filter state
   moviesPage: 1,
   moviesFilter: "all",
@@ -8878,7 +8879,7 @@ function setupHeroBanner() {
       ? `<img src="${movie.backdrop}" alt="${movie.title}" onerror="this.style.display='none'">`
       : "";
     const matchHtml = movie.match ? `<span class="meta-match">${movie.match}% Match</span>` : "";
-    const badgeHtml = idx === 0 ? `<div class="hero-badge"> TOP TRENDING SPOTLIGHT</div>` : "";
+    const badgeHtml = `<div class="hero-badge"> TOP TRENDING SPOTLIGHT</div>`;
 
     return `
       <div class="hero-slide">
@@ -8904,8 +8905,8 @@ function setupHeroBanner() {
                     <span class="btn-icon">▶</span> Watch Now
                     <span class="button-border"></span>
                 </button>
-                <button class="btn-watchlist-custom ${fav ? 'btn-primary' : ''}" onclick="toggleFavorite('${movie.id}'); this.querySelector('span:last-child').textContent = isFavorite('${movie.id}') ? 'In Watchlist' : 'Add to Watchlist'">
-                    <span class="btn-icon">♥</span> <span>${fav ? 'In Watchlist' : 'Add to Watchlist'}</span>
+                <button class="btn-watchlist-custom ${fav ? 'btn-primary' : ''}" onclick="toggleFavorite('${movie.id}'); this.querySelector('span:last-child').textContent = isFavorite('${movie.id}') ? 'In Watchlist' : 'Add to Watchlist'; this.querySelector('.btn-icon').textContent = isFavorite('${movie.id}') ? '✓' : '+';">
+                    <span class="btn-icon">${fav ? '✓' : '+'}</span> <span>${fav ? 'In Watchlist' : 'Add to Watchlist'}</span>
                 </button>
                 <button class="btn btn-outline" onclick="openDetailsModal('${movie.id}')">
                     <span class="btn-icon">ℹ</span> Details
@@ -9001,7 +9002,7 @@ function createMovieCardHTML(movie) {
           </div>
         </div>
         <div class="card-overlay">
-          <button class="card-center-play" data-id="${movie.id}" title="Play Now"></button>
+
         </div>
       </div>
     </div>
@@ -9064,9 +9065,7 @@ function renderContinueWatchingShelf() {
           <img src="${movie.backdrop || movie.poster}" alt="${movie.title}" class="card-poster">
           <button class="continue-remove-btn" data-remove-id="${movie.id}" title="Remove from list">&times;</button>
           <div class="card-overlay">
-            <button class="card-center-play" data-id="${movie.id}" data-resume-time="${item.currentTime}">
-              ▶
-            </button>
+
             <div class="card-details">
               <h4 class="card-title">${movie.title}</h4>
               <div class="card-meta">
@@ -9109,7 +9108,7 @@ function renderWatchlistHomeShelf() {
         <div class="card-poster-wrap continue-poster-wrap">
           <img src="${movie.backdrop || movie.poster}" alt="${movie.title}" class="card-poster">
           <div class="card-overlay">
-            <button class="card-center-play" data-id="${movie.id}">▶</button>
+
             <div class="card-details">
               <h4 class="card-title">${movie.title}</h4>
               <div class="card-meta">
@@ -9204,9 +9203,9 @@ function createBrowseCardHTML(movie) {
         </div>
         <div class="browse-overlay">
           <button class="browse-fav-btn card-fav-btn ${fav ? "active" : ""}" data-id="${movie.id}" title="Toggle Watchlist">
-            ${fav ? "♥" : "♡"}
+            ${fav ? "✓" : "+"}
           </button>
-          <button class="browse-play-btn card-center-play" data-id="${movie.id}" title="Play Now"></button>
+
         </div>
       </div>
     </div>
@@ -9456,7 +9455,7 @@ function refreshAllFavButtons(movieId, isFav) {
     `.card-fav-btn[data-id="${movieId}"]`,
   );
   favBtns.forEach((btn) => {
-    btn.innerHTML = isFav ? "♥" : "♡";
+    btn.innerHTML = isFav ? "✓" : "+";
     if (isFav) btn.classList.add("active");
     else btn.classList.remove("active");
   });
@@ -9787,9 +9786,13 @@ function openDetailsModal(movieId) {
         const seasonData = movie.seasons.find((s) => s.season === parseInt(seasonNum));
         if (!seasonData) return;
 
-        const filtered = filter
+        let filtered = filter
           ? seasonData.episodes.filter(ep => ep.title.toLowerCase().includes(filter.toLowerCase()))
-          : seasonData.episodes;
+          : [...seasonData.episodes];
+
+        if (state.episodeSortOrder === "desc") {
+          filtered.reverse();
+        }
 
         episodeGrid.innerHTML = filtered.map((ep) => {
           const resolvedUrl = getEpisodeUrl(ep, seasonData);
@@ -9800,6 +9803,7 @@ function openDetailsModal(movieId) {
         <div class="episode-row ${resolvedUrl ? "" : "episode-unavailable"}" 
              data-video="${resolvedUrl}" 
              data-title="${movie.title} — S${seasonData.season}E${ep.episode}: ${ep.title}"
+             data-episode="${ep.episode}"
              title="${resolvedUrl ? "Click to watch" : "Not available yet"}">
           <div class="episode-row-thumb">
             ${thumb ? `<img src="${thumb}" alt="${ep.title}" loading="lazy" class="ep-thumb-img">` : ""}
@@ -9825,7 +9829,8 @@ function openDetailsModal(movieId) {
           card.onclick = () => {
             const videoUrl = card.dataset.video;
             const epTitle = card.dataset.title;
-            openVideoPlayerWithUrl(videoUrl, epTitle, movie.id);
+            const epNum = parseInt(card.dataset.episode);
+            openVideoPlayerWithUrl(videoUrl, epTitle, movie.id, { season: seasonData.season, episode: epNum });
           };
         });
 
@@ -9860,6 +9865,16 @@ function openDetailsModal(movieId) {
       if (epSearch) {
         epSearch.value = "";
         epSearch.oninput = () => renderEpisodes(seasonSelect.value, epSearch.value);
+      }
+
+      // Sort button
+      const sortBtn = document.getElementById("episodeSortBtn");
+      if (sortBtn) {
+        sortBtn.onclick = () => {
+          state.episodeSortOrder = state.episodeSortOrder === "desc" ? "asc" : "desc";
+          sortBtn.querySelector("span").textContent = state.episodeSortOrder === "desc" ? "Z-A" : "A-Z";
+          renderEpisodes(seasonSelect.value, epSearch ? epSearch.value : "");
+        };
       }
 
       // Play button plays first available episode of the selected season
@@ -9904,8 +9919,20 @@ function openDetailsModal(movieId) {
 }
 
 // Open the video player with a direct URL (used for TV episodes)
-function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null) {
-  state.currentPlayingMovie = { id: parentId || "_episode_", title: displayTitle };
+function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, epData = null) {
+  state.currentPlayingMovie = { id: parentId || "_episode_", title: displayTitle, epData };
+
+  const endOverlay = document.getElementById("videoEndOverlay");
+  if (endOverlay) endOverlay.classList.add("hidden");
+
+  const epNav = document.getElementById("playerEpisodeNav");
+  if (epNav) {
+    if (epData) {
+      epNav.classList.remove("hidden");
+    } else {
+      epNav.classList.add("hidden");
+    }
+  }
   const modal = document.getElementById("videoModal");
   const video = document.getElementById("videoElement");
   const iframe = document.getElementById("iframeElement");
@@ -11233,6 +11260,78 @@ function updateIframeServer() {
 }
 
 document.getElementById("videoServerSelect")?.addEventListener("change", updateIframeServer);
+
+// ==========================================
+// EPISODE NAVIGATION
+// ==========================================
+function navigateToEpisode(offset) {
+  const current = state.currentPlayingMovie;
+  if (!current || !current.epData) return;
+
+  const movie = MOVIES.find(m => m.id === current.id);
+  if (!movie || !movie.seasons) return;
+
+  let sIdx = movie.seasons.findIndex(s => s.season === current.epData.season);
+  if (sIdx === -1) return;
+
+  let epIdx = movie.seasons[sIdx].episodes.findIndex(e => e.episode === current.epData.episode);
+  if (epIdx === -1) return;
+
+  epIdx += offset;
+
+  if (epIdx >= movie.seasons[sIdx].episodes.length) {
+    sIdx += 1;
+    epIdx = 0;
+  } else if (epIdx < 0) {
+    sIdx -= 1;
+    if (sIdx >= 0) {
+      epIdx = movie.seasons[sIdx].episodes.length - 1;
+    }
+  }
+
+  if (sIdx >= 0 && sIdx < movie.seasons.length) {
+    const nextSeason = movie.seasons[sIdx];
+    const nextEp = nextSeason.episodes[epIdx];
+    
+    let epUrl = nextEp.videoUrl;
+    if (!epUrl) {
+      const mediaId = movie.cinesrcId || movie.videoUrl;
+      if (mediaId) {
+        epUrl = `tv_embed:${mediaId}:${nextSeason.season}:${nextEp.episode}`;
+      }
+    }
+
+    if (epUrl) {
+      const epTitle = `${movie.title} - S${nextSeason.season}E${nextEp.episode}: ${nextEp.title}`;
+      openVideoPlayerWithUrl(epUrl, epTitle, movie.id, { season: nextSeason.season, episode: nextEp.episode });
+    }
+  } else {
+    showToast(offset > 0 ? "You've reached the end of the series!" : "You are at the very first episode.");
+  }
+}
+
+document.getElementById("playerNextEpBtn")?.addEventListener("click", () => navigateToEpisode(1));
+document.getElementById("playerPrevEpBtn")?.addEventListener("click", () => navigateToEpisode(-1));
+document.getElementById("overlayNextEpBtn")?.addEventListener("click", () => navigateToEpisode(1));
+document.getElementById("overlayPrevEpBtn")?.addEventListener("click", () => navigateToEpisode(-1));
+document.getElementById("overlayReplayBtn")?.addEventListener("click", () => {
+  document.getElementById("videoEndOverlay").classList.add("hidden");
+  const video = document.getElementById("videoElement");
+  if (video) {
+    video.currentTime = 0;
+    video.play();
+  }
+});
+
+const vEl = document.getElementById("videoElement");
+if (vEl) {
+  vEl.addEventListener("ended", () => {
+    if (state.currentPlayingMovie && state.currentPlayingMovie.epData) {
+      const overlay = document.getElementById("videoEndOverlay");
+      if (overlay) overlay.classList.remove("hidden");
+    }
+  });
+}
 
 // ==========================================
 // BACK TO TOP BUTTON

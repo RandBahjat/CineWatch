@@ -1076,15 +1076,6 @@ select {
   font-size: 1.15rem;
 }
 
-.shelf-title-accent::before {
-  content: '';
-  display: inline-block;
-  width: 3.5px;
-  height: 1.1em;
-  background: var(--primary);
-  border-radius: 2px;
-  flex-shrink: 0;
-}
 
 .shelf-subtitle {
   font-size: 0.88rem;
@@ -1121,11 +1112,11 @@ select {
   -webkit-backdrop-filter: blur(8px);
   color: #fff;
   font-size: 2rem;
+  z-index: 30;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  z-index: 10;
   transition: all 0.3s ease;
   opacity: 0;
   border: 1px solid rgba(255,255,255,0.2);
@@ -1143,10 +1134,10 @@ select {
 }
 
 .carousel-nav.prev {
-  left: -1rem;
+  left: -2.5rem;
 }
 .carousel-nav.next {
-  right: -1rem;
+  right: -2.5rem;
 }
 
 /* Movie Cards */
@@ -1162,11 +1153,8 @@ select {
 }
 
 .movie-card:hover {
-  transform: scale(1.06) translateY(-4px);
   z-index: 20;
-  box-shadow:
-    0 20px 45px rgba(0, 0, 0, 0.85),
-    0 0 22px rgba(229, 9, 20, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
 }
 
 .card-poster-wrap {
@@ -1205,7 +1193,7 @@ select {
 .card-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(11, 12, 16, 0.55);
+  background: transparent;
   opacity: 0;
   display: flex;
   flex-direction: column;
@@ -1238,7 +1226,6 @@ select {
 .card-fav-btn:hover,
 .card-fav-btn.active {
   color: var(--primary);
-  background: rgba(255, 255, 255, 0.9);
   transform: scale(1.12);
 }
 
@@ -1250,14 +1237,14 @@ select {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15);
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.75);
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  color: #000; /* Dark icon so it contrasts with the bright frosted background */
   font-size: 1.3rem;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-  transition: all 0.25s ease;
+  transition: all 0.1s ease-out;
   margin: auto;
 }
 
@@ -1268,10 +1255,11 @@ select {
 }
 
 .movie-card:hover .card-center-play:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: #fff;
+  color: #000;
   border-color: #fff;
-  transform: scale(1.1);
-  box-shadow: 0 6px 30px rgba(255,255,255,0.2);
+  transform: scale(1.15);
+  box-shadow: 0 6px 25px rgba(255, 255, 255, 0.6);
 }
 
 .card-details {
@@ -1683,8 +1671,8 @@ select {
 }
 
 .btn-secondary-pill {
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
   color: #fff;
   border-radius: 100px;
   padding: 0.8rem 1.5rem;
@@ -4284,7 +4272,6 @@ select {
 
 .browse-fav-btn:hover,
 .browse-fav-btn.active {
-  background: rgba(255,255,255,0.9);
   color: var(--primary);
   transform: scale(1.12);
 }
@@ -4969,8 +4956,7 @@ select {
 
 .watchlist-wrapper .circle:hover {
   cursor: pointer;
-  background-color: var(--af-white);
-  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .watchlist-wrapper .circle ion-icon {
@@ -5003,6 +4989,10 @@ select {
   cursor: pointer;
   background-color: var(--white);
   box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hidden-trigger:checked ~ label.outline-circle ion-icon {
+  color: #000;
 }
 
 .hidden-trigger:checked ~ .circle .icon-add {

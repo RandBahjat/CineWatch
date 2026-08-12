@@ -191,7 +191,7 @@
 
                 <!-- Actions Row -->
                 <div class="details-action-buttons">
-                    <button class="btn btn-primary btn-play-circle" id="detailsPlayBtn">
+                    <button class="btn btn-play-circle" id="detailsPlayBtn">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
                     </button>
 
@@ -235,6 +235,10 @@
                             </div>
                             <div class="custom-select-options" id="seasonSelectOptions"></div>
                             <input type="hidden" id="seasonSelect" value="1">
+                        </div>
+                        <div class="season-select-pill" id="episodeSortBtn" title="Reverse Sort" style="padding: 0.45rem; min-width: auto; gap: 4px; margin-right: auto; margin-left: 0.5rem;">
+                            <ion-icon name="swap-vertical-outline" style="font-size: 1.1rem;"></ion-icon>
+                            <span style="font-size: 0.75rem;">A-Z</span>
                         </div>
                         <div class="episode-search-wrap">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -379,7 +383,7 @@
             <section class="shelf-section">
                 <div class="shelf-header">
                     <div>
-                        <h2 class="shelf-title">Trending This Week</h2>
+                        <h2 class="shelf-title shelf-title-accent">Trending This Week</h2>
                         <span class="shelf-subtitle">Most watched movies this week</span>
                     </div>
                     <a href="#" class="shelf-explore nav-link" data-view="movies">Explore All <ion-icon name="chevron-forward-outline"></ion-icon></a>
@@ -486,6 +490,15 @@
                       </svg>
                     </button>
                     <h3 id="playerMovieTitle">Movie Title</h3>
+                    
+                    <div id="playerEpisodeNav" class="hidden" style="margin-left: 1.5rem; display: flex; gap: 0.5rem;">
+                        <button class="btn-secondary-pill" id="playerPrevEpBtn" style="padding: 0.35rem 0.8rem; font-size: 0.9rem;" title="Previous Episode">
+                            <ion-icon name="play-skip-back-outline"></ion-icon>
+                        </button>
+                        <button class="btn-secondary-pill" id="playerNextEpBtn" style="padding: 0.35rem 0.8rem; font-size: 0.9rem;" title="Next Episode">
+                            <ion-icon name="play-skip-forward-outline"></ion-icon>
+                        </button>
+                    </div>
                 </div>
                 <div class="server-select-wrap hidden" id="serverSelectWrap">
                     <select id="videoServerSelect" class="season-select" style="display:none;">
@@ -500,6 +513,22 @@
                 <source src="" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
+            
+            <!-- Video End Overlay -->
+            <div id="videoEndOverlay" class="hidden" style="position: absolute; inset: 0; background: rgba(0,0,0,0.85); z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.5rem; backdrop-filter: blur(8px);">
+                <h2 style="color: white; font-size: 2rem; font-weight: 700;">Episode Finished</h2>
+                <div style="display: flex; gap: 1rem; align-items: center;">
+                    <button class="btn-secondary-pill" id="overlayPrevEpBtn" style="font-size: 1rem; padding: 0.7rem 1.4rem;">
+                        <ion-icon name="play-skip-back-outline"></ion-icon> Previous
+                    </button>
+                    <button class="btn btn-primary" id="overlayNextEpBtn" style="border-radius: 100px; padding: 0.8rem 2rem; font-weight: 600; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem; border: none; cursor: pointer; box-shadow: 0 4px 15px rgba(229, 9, 20, 0.4);">
+                        Next Episode <ion-icon name="play-skip-forward-outline"></ion-icon>
+                    </button>
+                </div>
+                <button class="btn-secondary-pill" id="overlayReplayBtn" style="margin-top: 1rem; border: none; background: transparent;">
+                    <ion-icon name="refresh-outline"></ion-icon> Replay
+                </button>
+            </div>
             
             <!-- Iframe Video Player (For External Embeds) -->
             <iframe id="iframeElement" class="video-element hidden" src="" width="100%" height="100%" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen allow="autoplay; fullscreen; encrypted-media; picture-in-picture"></iframe>
