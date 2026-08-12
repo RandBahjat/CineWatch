@@ -25,7 +25,7 @@
 // 1. HIGHLIGHTS & TRENDING (EDIT THIS SECTION)
 // ==========================================
 // Change these titles to easily swap which movies appear in the top slider and trending row!
-const FEATURED_TITLES = ["House of the Dragon", "The Invite", "Spider-Man: Brand New Day", "The Odyssey", "Obsession", "Supergirl"];
+const FEATURED_TITLES = ["House of the Dragon", "The Invite","Reacher", "Spider-Man: Brand New Day", "The Odyssey", "Obsession", "Supergirl"];
 const TRENDING_TITLES = ["Reacher", "Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters","The Invite","Young Washington","The Last House","Ted Lasso"];
 
 // ==========================================
@@ -164,7 +164,6 @@ const MOVIES = [
     rating: 8.5,
     age: "PG-13",
     duration: "2h 52m",
-    durationSec: 9300,
     genres: ["Action", "Adventure", "Fantasy"],
     poster:
       "https://www.themoviedb.org/t/p/w600_and_h900_face/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
@@ -355,7 +354,6 @@ const MOVIES = [
     type: "TV Show",
     year: 2022,
     rating: 8.0,
-    match: 96,
     age: "TV-MA",
     duration: "50m",
     genres: ["Action", "Crime", "Thriller", "Drama"],
@@ -9202,10 +9200,6 @@ function createBrowseCardHTML(movie) {
           </div>
         </div>
         <div class="browse-overlay">
-          <button class="browse-fav-btn card-fav-btn ${fav ? "active" : ""}" data-id="${movie.id}" title="Toggle Watchlist">
-            ${fav ? "✓" : "+"}
-          </button>
-
         </div>
       </div>
     </div>
