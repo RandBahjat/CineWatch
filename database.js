@@ -3,10 +3,7 @@ const mongoose = require('mongoose');
 // The connection string provided by the user
 const MONGO_URI = "mongodb+srv://randbahjat88_db_user:ggiOfXYMs3vqxicp@cluster0.km7xzpk.mongodb.net/cinewatch?retryWrites=true&w=majority&appName=Cluster0";
 
-mongoose.connect(MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-}).then(() => {
+mongoose.connect(MONGO_URI).then(() => {
   console.log('Connected to MongoDB database successfully');
 }).catch((err) => {
   console.error('Error connecting to MongoDB:', err);
