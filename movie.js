@@ -11668,22 +11668,23 @@ function bindEventListeners() {
   // Login Submit — Firebase Authentication
   loginForm.onsubmit = async (e) => {
     e.preventDefault();
-    const username = document.getElementById("loginUsername").value.trim();
+    const email = document.getElementById("loginEmail").value.trim();
     const pass = document.getElementById("loginPassword").value.trim();
-    const usernameErr = document.getElementById("loginUsernameError");
+    const emailErr = document.getElementById("loginEmailError");
     const passErr = document.getElementById("loginPasswordError");
     const alertEl = document.getElementById("loginAlert");
     const submitBtn = loginForm.querySelector("button[type='submit']");
 
-    usernameErr.textContent = "";
+    emailErr.textContent = "";
     passErr.textContent = "";
     alertEl.classList.add("hidden");
     alertEl.textContent = "";
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let valid = true;
 
-    if (username.length < 3) {
-      usernameErr.textContent = "Please enter a valid username";
+    if (!emailRegex.test(email)) {
+      emailErr.textContent = "Please enter a valid email address";
       valid = false;
     }
     if (pass.length < 6) {
@@ -11691,10 +11692,6 @@ function bindEventListeners() {
       valid = false;
     }
     if (!valid) return;
-
-    // If they type an old email, use it directly. Otherwise, format as username
-    const isEmail = username.includes("@");
-    const email = isEmail ? username : username.replace(/[^a-zA-Z0-9_]/g, '').toLowerCase() + "@cinewatch.local";
 
     // Show loading state
     submitBtn.textContent = "Signing in...";

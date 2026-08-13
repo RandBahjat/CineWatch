@@ -354,12 +354,12 @@ window.CW_Firebase = {
 // ── Map Firebase error codes to human-friendly messages ─────────────────────
 function _friendlyError(code) {
   const map = {
-    "auth/email-already-in-use": "An account with this username already exists.",
-    "auth/invalid-email": "Please enter a valid username.",
+    "auth/email-already-in-use": "An account with this email already exists.",
+    "auth/invalid-email": "Please enter a valid email address.",
     "auth/weak-password": "Password must be at least 6 characters.",
-    "auth/user-not-found": "No account found with this username.",
+    "auth/user-not-found": "No account found with this email.",
     "auth/wrong-password": "Incorrect password. Please try again.",
-    "auth/invalid-credential": "Incorrect username or password. Please try again.",
+    "auth/invalid-credential": "Incorrect email or password. Please try again.",
     "auth/too-many-requests": "Too many attempts. Please wait a moment and try again.",
     "auth/network-request-failed": "Network error. Check your internet connection.",
     "auth/operation-not-allowed": "Email/Password accounts are disabled in Firebase Console.",
