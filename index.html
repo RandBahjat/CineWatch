@@ -645,7 +645,7 @@
                         <label for="loginUsername">Username</label>
                         <div class="input-with-icon">
                             <ion-icon name="person-outline"></ion-icon>
-                            <input type="text" id="loginUsername" class="form-control" placeholder="Username"
+                            <input type="text" id="loginUsername" name="username" class="form-control" placeholder="Username"
                                 autocomplete="username" required>
                         </div>
                         <div class="form-error" id="loginUsernameError"></div>
@@ -675,10 +675,10 @@
                 <!-- Signup Form -->
                 <form id="signupForm" class="auth-form hidden" novalidate>
                     <div class="form-group">
-                        <label for="signupName">Full Name</label>
+                        <label for="signupName">Username</label>
                         <div class="input-with-icon">
                             <ion-icon name="person-outline"></ion-icon>
-                            <input type="text" id="signupName" class="form-control" placeholder="Username" required>
+                            <input type="text" id="signupName" name="username" class="form-control" placeholder="Username" required>
                         </div>
                         <div class="form-error" id="signupNameError"></div>
                     </div>
