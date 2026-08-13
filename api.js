@@ -1,5 +1,5 @@
 // API handling for CineWatch Custom Backend
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://cinewatch-m45a.onrender.com/api';
 
 window.CW_API = {
   getToken() {
