@@ -3,29 +3,13 @@ const cors = require('cors');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const nodemailer = require('nodemailer');
-const rateLimit = require('express-rate-limit');
 const db = require('./database');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Setup rate limiters for auth endpoints
-const loginLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 5, // Limit each IP to 5 requests per windowMs
-  message: { error: 'Too many login attempts from this IP, please try again after 15 minutes.' },
-  standardHeaders: true, 
-  legacyHeaders: false, 
-});
-
-const resetLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000, 
-  max: 3, 
-  message: { error: 'Too many password reset requests from this IP, please try again after 15 minutes.' },
-  standardHeaders: true, 
-  legacyHeaders: false, 
-});
+// Rate limiters have been permanently removed as requested
 
 const JWT_SECRET = 'cinewatch_super_secret_key_123'; // In production, use environment variables
 
@@ -175,7 +159,7 @@ app.post('/api/update-password', authenticateToken, async (req, res) => {
 });
 
 // 7. REQUEST PASSWORD RESET
-app.post('/api/reset-password', resetLimiter, (req, res) => {
+app.post('/api/reset-password', (req, res) => {
   const { username } = req.body;
   if (!username) return res.status(400).json({ error: 'Username is required.' });
 
