@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (window.CW_API.getToken()) {
     const data = await window.CW_API.getCurrentUser();
     if (data) {
-      user = { id: data.id, name: data.name, username: data.username, email: data.email, avatar: data.avatar };
+      user = { id: data.id, name: data.name, username: data.username, email: data.email, avatar: data.avatar, createdAt: data.createdAt };
       cloudData = { favorites: data.favorites, continueWatching: data.continueWatching };
     }
   }

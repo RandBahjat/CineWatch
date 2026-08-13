@@ -57,7 +57,7 @@ app.post('/api/signup', async (req, res) => {
           
           // Generate JWT
           const token = jwt.sign({ id: userId, username }, JWT_SECRET, { expiresIn: '7d' });
-          res.status(201).json({ message: 'User created successfully', token, user: { id: userId, name, username, email } });
+          res.status(201).json({ message: 'User created successfully', token, user: { id: userId, name, username, email, createdAt: new Date().toISOString() } });
         });
       }
     );
@@ -81,7 +81,7 @@ app.post('/api/login', async (req, res) => {
     if (!validPassword) return res.status(400).json({ error: 'auth/wrong-password' });
 
     const token = jwt.sign({ id: user.id, username: user.username }, JWT_SECRET, { expiresIn: '7d' });
-    res.json({ message: 'Login successful', token, user: { id: user.id, name: user.name, username: user.username, email: user.email, avatar: user.avatar } });
+    res.json({ message: 'Login successful', token, user: { id: user.id, name: user.name, username: user.username, email: user.email, avatar: user.avatar, createdAt: user.created_at } });
   });
 });
 
@@ -90,7 +90,7 @@ app.get('/api/me', authenticateToken, (req, res) => {
   const userId = req.user.id;
   
   db.get(`
-    SELECT u.id, u.name, u.username, u.email, u.avatar, d.favorites, d.continue_watching 
+    SELECT u.id, u.name, u.username, u.email, u.avatar, u.created_at, d.favorites, d.continue_watching 
     FROM users u 
     LEFT JOIN user_data d ON u.id = d.user_id 
     WHERE u.id = ?
@@ -104,6 +104,7 @@ app.get('/api/me', authenticateToken, (req, res) => {
       username: row.username,
       email: row.email,
       avatar: row.avatar,
+      createdAt: row.created_at,
       favorites: JSON.parse(row.favorites || '[]'),
       continueWatching: JSON.parse(row.continue_watching || '{}')
     });
