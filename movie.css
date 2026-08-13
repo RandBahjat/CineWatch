@@ -1396,7 +1396,8 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 1rem;
+  overflow-y: auto;
   animation: fadeIn 0.3s ease;
 }
 
@@ -2073,17 +2074,30 @@ select {
   position: relative;
   max-width: 440px;
   width: 100%;
+  max-height: 92vh;
   border-radius: 16px;
   z-index: 1111;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: flex-start;
   padding: 0;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 50px rgba(229, 9, 20, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(11, 12, 16, 0.8);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85), 0 0 50px rgba(229, 9, 20, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(11, 12, 16, 0.92);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.auth-modal-card::-webkit-scrollbar {
+  width: 4px;
+}
+
+.auth-modal-card::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
 }
 
 .auth-modal-card .bg {
@@ -2093,12 +2107,13 @@ select {
   right: 5px;
   bottom: 5px;
   z-index: 2;
-  background: rgba(18, 22, 33, 0.88);
+  background: rgba(18, 22, 33, 0.92);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-radius: 12px;
   overflow: hidden;
   outline: 2px solid rgba(255, 255, 255, 0.25);
+  pointer-events: none;
 }
 
 .auth-modal-card .blob {
@@ -2114,13 +2129,15 @@ select {
   filter: blur(8px);
   box-shadow: 0 0 60px #ff0033, 0 0 120px #e50914;
   animation: blob-orbit 5s linear infinite;
+  pointer-events: none;
 }
 
 .auth-modal-body {
   position: relative;
   z-index: 3;
   width: 100%;
-  padding: 2.2rem 2rem;
+  padding: 1.6rem 1.8rem;
+  box-sizing: border-box;
 }
 
 @keyframes blob-orbit {
@@ -2145,22 +2162,22 @@ select {
   background: linear-gradient(135deg, #00e5ff, #00bcd4, #0097a7);
   box-shadow: 0 0 60px #00e5ff, 0 0 120px #00bcd4;
   animation: blob-orbit-reverse 5s linear infinite;
+  pointer-events: none;
 }
-
 
 .auth-header {
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.1rem;
 }
 
 .auth-logo {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 800;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 
 .auth-subtitle {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--text-dim);
 }
 
@@ -2169,15 +2186,15 @@ select {
   background: rgba(0, 0, 0, 0.3);
   padding: 0.25rem;
   border-radius: var(--radius-md);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.1rem;
 }
 
 .auth-tab {
   flex: 1;
-  padding: 0.6rem;
+  padding: 0.55rem;
   text-align: center;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
   border-radius: var(--radius-sm);
   transition: var(--transition-fast);
@@ -2198,29 +2215,27 @@ select {
   to { opacity: 1; transform: scale(1); }
 }
 
-
-
 .form-group {
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.85rem;
 }
 
 .form-group label {
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 500;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
   color: var(--text-muted);
 }
 
 .form-control {
   width: 100%;
-  padding: 0.75rem 1rem;
+  padding: 0.65rem 0.9rem;
   background: rgba(0, 0, 0, 0.4);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   color: #fff;
   caret-color: #fff;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   transition: var(--transition-fast);
 }
 
@@ -2297,13 +2312,13 @@ select {
 }
 
 .form-alert {
-  padding: 0.6rem 0.9rem;
-  background: rgba(229, 9, 20, 0.2);
+  padding: 0.55rem 0.85rem;
+  background: rgba(229, 9, 20, 0.15);
   border: 1px solid var(--primary);
   border-radius: var(--radius-sm);
   color: #ff9999;
-  font-size: 0.85rem;
-  margin-bottom: 1.2rem;
+  font-size: 0.82rem;
+  margin-bottom: 0.85rem;
 }
 
 /* Toast Notification */
@@ -5054,12 +5069,12 @@ input:-webkit-autofill:active {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #222222;
-  border: 1px solid #333;
-  border-radius: 4px;
+  background: #1c1c1e;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
   padding: 0 12px;
-  margin-bottom: 1rem;
-  height: 65px;
+  margin-bottom: 0.85rem;
+  height: 54px;
   box-sizing: border-box;
   width: 100%;
 }
