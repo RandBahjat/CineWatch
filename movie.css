@@ -2309,7 +2309,7 @@ select {
 /* Toast Notification */
 .toast-container {
   position: fixed;
-  bottom: 2rem;
+  top: 5.5rem;
   right: 2rem;
   z-index: 3000;
   display: flex;
