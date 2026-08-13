@@ -11593,7 +11593,7 @@ function bindEventListeners() {
       window.location.href = mailtoUrl;
 
       closeReportModal();
-      showToast("Opening email client to send report to the Founder & Supporters Team");
+      showToast("Thank you! Opening your email app to submit the report.");
     };
   }
 
