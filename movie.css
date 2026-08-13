@@ -1471,11 +1471,10 @@ select {
 .details-bg-gradient-overlay {
   position: absolute;
   inset: 0;
-  /* Shadow on bottom and left, keeping center fully clear */
   background: 
-    linear-gradient(to bottom, rgba(11, 12, 16, 0.85) 0%, transparent 15%),
-    linear-gradient(to right, rgba(11, 12, 16, 0.95) 0%, rgba(11, 12, 16, 0.7) 20%, transparent 45%),
-    linear-gradient(to top, #0b0c10 0%, transparent 40%);
+    linear-gradient(to bottom, rgba(11, 12, 16, 0.85) 0%, transparent 18%),
+    linear-gradient(to right, rgba(11, 12, 16, 0.95) 0%, rgba(11, 12, 16, 0.7) 25%, transparent 55%),
+    linear-gradient(to top, #0b0c10 0%, rgba(11, 12, 16, 0.95) 15%, rgba(11, 12, 16, 0.8) 30%, rgba(11, 12, 16, 0.4) 55%, transparent 80%);
 }
 
 /* Hide heart/watchlist button on 'You may like' cards */
@@ -1493,7 +1492,7 @@ select {
   position: relative;
   z-index: 10;
   padding: 2rem 5% 4rem;
-  background: linear-gradient(to bottom, transparent, var(--bg-main) 10%, var(--bg-main));
+  background: linear-gradient(to bottom, transparent 0%, var(--bg-dark) 8%, var(--bg-dark) 100%);
 }
 
 .details-content-wrapper {
@@ -2699,8 +2698,8 @@ select {
   
   .details-bg-gradient-overlay {
     background: 
-      linear-gradient(to bottom, rgba(11, 12, 16, 0.85) 0%, transparent 15%),
-      linear-gradient(to top, #0b0c10 0%, transparent 60%);
+      linear-gradient(to bottom, rgba(11, 12, 16, 0.85) 0%, transparent 18%),
+      linear-gradient(to top, #0b0c10 0%, rgba(11, 12, 16, 0.95) 25%, rgba(11, 12, 16, 0.7) 50%, transparent 85%);
   }
   
   .details-content-wrapper {
