@@ -83,7 +83,7 @@ app.post('/api/signup', async (req, res) => {
 });
 
 // 2. LOGIN ENDPOINT (Username Only)
-app.post('/api/login', loginLimiter, async (req, res) => {
+app.post('/api/login', async (req, res) => {
   const { username, password } = req.body;
   if (!username || !password) return res.status(400).json({ error: 'Username and password are required.' });
 
