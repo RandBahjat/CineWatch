@@ -11837,7 +11837,7 @@ function bindEventListeners() {
         updateWatchlistBadge();
       }
       closeAuthModal();
-      showToast(`Welcome to CineWatch, ${name}!`);
+      showToast(`Welcome to CineWatch ${name}!`);
     }
     submitBtn.innerHTML = '<ion-icon name="person-add-outline"></ion-icon> Create Account';
     submitBtn.disabled = false;
