@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const { User } = require('./database');
+const { User, mongoose, getDbError } = require('./database');
 
 const app = express();
 
@@ -26,6 +26,19 @@ function authenticateToken(req, res, next) {
     next();
   });
 }
+
+// ----------------------------------------------------
+// 0. DB STATUS ENDPOINT
+// ----------------------------------------------------
+app.get('/api/db-status', (req, res) => {
+  const state = mongoose.connection.readyState;
+  const states = ['disconnected', 'connected', 'connecting', 'disconnecting'];
+  res.json({
+    state: states[state] || state,
+    readyState: state,
+    dbError: getDbError()
+  });
+});
 
 // ----------------------------------------------------
 // 1. SIGNUP ENDPOINT
@@ -74,7 +87,7 @@ app.post('/api/signup', async (req, res) => {
     });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Internal server error.' });
+    res.status(500).json({ error: `Internal server error: ${err.message || err}` });
   }
 });
 

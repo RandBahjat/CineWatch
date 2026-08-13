@@ -3,10 +3,14 @@ const mongoose = require('mongoose');
 // The connection string provided by the user
 const MONGO_URI = "mongodb+srv://randbahjat88_db_user:ggiOfXYMs3vqxicp@cluster0.km7xzpk.mongodb.net/cinewatch?retryWrites=true&w=majority&appName=Cluster0";
 
+let dbError = null;
+
 mongoose.connect(MONGO_URI).then(() => {
   console.log('Connected to MongoDB database successfully');
+  dbError = null;
 }).catch((err) => {
   console.error('Error connecting to MongoDB:', err);
+  dbError = err.message || String(err);
 });
 
 // Define the User schema
@@ -23,4 +27,4 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model('User', userSchema);
 
-module.exports = { User };
+module.exports = { User, mongoose, getDbError: () => dbError };
