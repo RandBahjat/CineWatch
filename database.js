@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // The connection string provided by the user
-const MONGO_URI = "mongodb+srv://randbahjat88_db_user:RIiS8vh91Jqz3sRl3@cluster0.kw7xzpk.mongodb.net/cinewatch?retryWrites=true&w=majority&appName=Cluster0";
+const MONGO_URI = "mongodb+srv://randbahjat88_db_user:ggiOfXYMs3vqxicp@cluster0.km7xzpk.mongodb.net/cinewatch?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose.connect(MONGO_URI, {
   useNewUrlParser: true,
