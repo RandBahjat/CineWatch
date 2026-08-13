@@ -11692,7 +11692,9 @@ function bindEventListeners() {
     }
     if (!valid) return;
 
-    const email = username.replace(/\s+/g, '').toLowerCase() + "@cinewatch.local";
+    // If they type an old email, use it directly. Otherwise, format as username
+    const isEmail = username.includes("@");
+    const email = isEmail ? username : username.replace(/[^a-zA-Z0-9_]/g, '').toLowerCase() + "@cinewatch.local";
 
     // Show loading state
     submitBtn.textContent = "Signing in...";
@@ -11750,8 +11752,12 @@ function bindEventListeners() {
       nameErr.textContent = "Username must be at least 3 characters long";
       valid = false;
     }
+    if (name.includes("@")) {
+      nameErr.textContent = "Username cannot contain an '@' symbol";
+      valid = false;
+    }
 
-    const email = name.replace(/\s+/g, '').toLowerCase() + "@cinewatch.local";
+    const email = name.replace(/[^a-zA-Z0-9_]/g, '').toLowerCase() + "@cinewatch.local";
 
     const isLength = pass.length >= 8;
     const isCapital = /[A-Z]/.test(pass);
