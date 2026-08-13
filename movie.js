@@ -11939,7 +11939,7 @@ function showToast(msg) {
 
   const toast = document.createElement("div");
   toast.className = "toast";
-  toast.innerHTML = `<ion-icon name="information-circle-outline" style="font-size: 1.2rem; color: var(--primary);"></ion-icon> <span>${msg}</span>`;
+  toast.innerHTML = `<ion-icon name="information-circle-outline" style="font-size: 1.2rem; color: white;"></ion-icon> <span>${msg}</span>`;
 
   container.appendChild(toast);
   setTimeout(() => {
