@@ -1,7 +1,11 @@
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
+const fs = require('fs');
 
-const dbPath = path.resolve(__dirname, 'cinewatch.db');
+// Glitch provides a persistent '.data' folder. If it exists, use it to save our database permanently!
+const dataDir = path.resolve(__dirname, '.data');
+const isGlitch = fs.existsSync(dataDir);
+const dbPath = isGlitch ? path.join(dataDir, 'cinewatch.db') : path.resolve(__dirname, 'cinewatch.db');
 const db = new sqlite3.Database(dbPath, (err) => {
   if (err) {
     console.error('Error opening database', err);
