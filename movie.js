@@ -10837,6 +10837,7 @@ function setupVideoControls(video) {
 function openAuthModal() {
   const modal = document.getElementById("authModal");
   modal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
   
   // Reset forms and hide Turnstile widgets
   const loginForm = document.getElementById("loginForm");
@@ -10859,6 +10860,7 @@ function openAuthModal() {
 function closeAuthModal() {
   const modal = document.getElementById("authModal");
   modal.classList.add("hidden");
+  document.body.style.overflow = "";
 }
 
 function openReportModal(defaultSubject = "") {
