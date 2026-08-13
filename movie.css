@@ -910,27 +910,7 @@ select {
 }
 
 .hero-carousel-dots {
-  position: absolute;
-  bottom: 1.5rem;
-  right: 4rem;
-  z-index: 4;
-  display: flex;
-  gap: 0.5rem;
-}
-
-.dot {
-  width: 24px;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.2);
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 2px;
-}
-
-.dot.active {
-  background: var(--primary);
-  width: 40px;
-  box-shadow: 0 0 10px var(--primary);
+  display: none !important;
 }
 
 /* Premium Glass Button for Hero */
