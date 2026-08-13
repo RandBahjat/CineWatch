@@ -221,7 +221,7 @@ app.post('/api/reset-password', async (req, res) => {
 
 // Root Health Check (Render Proxy binding fix)
 app.get('/', (req, res) => {
-  res.send('CineWatch API is running!');
+  res.send('CineWatch API is running! Version 2');
 });
 
 const PORT = process.env.PORT || 3000;
