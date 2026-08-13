@@ -11668,23 +11668,22 @@ function bindEventListeners() {
   // Login Submit — Firebase Authentication
   loginForm.onsubmit = async (e) => {
     e.preventDefault();
-    const email = document.getElementById("loginEmail").value.trim();
+    const username = document.getElementById("loginUsername").value.trim();
     const pass = document.getElementById("loginPassword").value.trim();
-    const emailErr = document.getElementById("loginEmailError");
+    const usernameErr = document.getElementById("loginUsernameError");
     const passErr = document.getElementById("loginPasswordError");
     const alertEl = document.getElementById("loginAlert");
     const submitBtn = loginForm.querySelector("button[type='submit']");
 
-    emailErr.textContent = "";
+    usernameErr.textContent = "";
     passErr.textContent = "";
     alertEl.classList.add("hidden");
     alertEl.textContent = "";
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let valid = true;
 
-    if (!emailRegex.test(email)) {
-      emailErr.textContent = "Please enter a valid email address";
+    if (username.length < 3) {
+      usernameErr.textContent = "Please enter a valid username";
       valid = false;
     }
     if (pass.length < 6) {
@@ -11692,6 +11691,8 @@ function bindEventListeners() {
       valid = false;
     }
     if (!valid) return;
+
+    const email = username.replace(/\s+/g, '').toLowerCase() + "@cinewatch.local";
 
     // Show loading state
     submitBtn.textContent = "Signing in...";
@@ -11732,31 +11733,25 @@ function bindEventListeners() {
   signupForm.onsubmit = async (e) => {
     e.preventDefault();
     const name = document.getElementById("signupName").value.trim();
-    const email = document.getElementById("signupEmail").value.trim();
     const pass = document.getElementById("signupPassword").value.trim();
     const nameErr = document.getElementById("signupNameError");
-    const emailErr = document.getElementById("signupEmailError");
     const passErr = document.getElementById("signupPasswordError");
     const alertEl = document.getElementById("signupAlert");
     const submitBtn = signupForm.querySelector("button[type='submit']");
 
     nameErr.textContent = "";
-    emailErr.textContent = "";
     passErr.textContent = "";
     alertEl.classList.add("hidden");
     alertEl.textContent = "";
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let valid = true;
 
-    if (name.length < 2) {
-      nameErr.textContent = "Please enter your name";
+    if (name.length < 3) {
+      nameErr.textContent = "Username must be at least 3 characters long";
       valid = false;
     }
-    if (!emailRegex.test(email)) {
-      emailErr.textContent = "Please enter a valid email address";
-      valid = false;
-    }
+
+    const email = name.replace(/\s+/g, '').toLowerCase() + "@cinewatch.local";
 
     const isLength = pass.length >= 8;
     const isCapital = /[A-Z]/.test(pass);

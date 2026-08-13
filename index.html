@@ -646,13 +646,13 @@
                 <!-- Login Form -->
                 <form id="loginForm" class="auth-form" novalidate>
                     <div class="form-group">
-                        <label for="loginEmail">Email Address</label>
+                        <label for="loginUsername">Username</label>
                         <div class="input-with-icon">
-                            <ion-icon name="mail-outline"></ion-icon>
-                            <input type="email" id="loginEmail" class="form-control" placeholder="name@example.com"
-                                autocomplete="email" required>
+                            <ion-icon name="person-outline"></ion-icon>
+                            <input type="text" id="loginUsername" class="form-control" placeholder="Username"
+                                autocomplete="username" required>
                         </div>
-                        <div class="form-error" id="loginEmailError"></div>
+                        <div class="form-error" id="loginUsernameError"></div>
                     </div>
 
                     <div class="form-group">
@@ -679,21 +679,12 @@
                 <!-- Signup Form -->
                 <form id="signupForm" class="auth-form hidden" novalidate>
                     <div class="form-group">
-                        <label for="signupName">Full Name</label>
+                        <label for="signupName">Username</label>
                         <div class="input-with-icon">
                             <ion-icon name="person-outline"></ion-icon>
                             <input type="text" id="signupName" class="form-control" placeholder="Username" required>
                         </div>
                         <div class="form-error" id="signupNameError"></div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="signupEmail">Email Address</label>
-                        <div class="input-with-icon">
-                            <ion-icon name="mail-outline"></ion-icon>
-                            <input type="email" id="signupEmail" class="form-control" placeholder="Email" autocomplete="email" required>
-                        </div>
-                        <div class="form-error" id="signupEmailError"></div>
                     </div>
 
                     <div class="form-group">
