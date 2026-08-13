@@ -1,3 +1,11 @@
+const nodeCrypto = require('crypto');
+if (typeof globalThis.crypto === 'undefined') {
+  globalThis.crypto = nodeCrypto;
+}
+if (typeof global.crypto === 'undefined') {
+  global.crypto = nodeCrypto;
+}
+
 const mongoose = require('mongoose');
 
 // The connection string provided by the user

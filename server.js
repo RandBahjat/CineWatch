@@ -1,3 +1,11 @@
+const nodeCrypto = require('crypto');
+if (typeof globalThis.crypto === 'undefined') {
+  globalThis.crypto = nodeCrypto;
+}
+if (typeof global.crypto === 'undefined') {
+  global.crypto = nodeCrypto;
+}
+
 const express = require('express');
 const cors = require('cors');
 const bcrypt = require('bcryptjs');
