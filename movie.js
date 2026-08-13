@@ -11231,7 +11231,7 @@ function bindEventListeners() {
         const matches = fuzzySearch(query);
         if (matches.length > 0) {
           searchDropdown.innerHTML = matches
-            .slice(0, 6)
+            .slice(0, 10)
             .map(
               (m, i) => `
             <div class="search-item" data-id="${m.id}" style="animation-delay: ${i * 60}ms">
