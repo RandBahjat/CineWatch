@@ -47,16 +47,16 @@ window.CW_API = {
     }
   },
 
-  async signUp(name, email, password) {
-    const { data, error } = await this.request('/signup', 'POST', { name, email, password });
+  async signUp(name, email, password, cfToken) {
+    const { data, error } = await this.request('/signup', 'POST', { name, email, password, cfToken });
     if (data && data.token) {
       this.setToken(data.token);
     }
     return { user: data ? data.user : null, error };
   },
 
-  async signIn(username, password) {
-    const { data, error } = await this.request('/login', 'POST', { username, password });
+  async signIn(username, password, cfToken) {
+    const { data, error } = await this.request('/login', 'POST', { username, password, cfToken });
     if (data && data.token) {
       this.setToken(data.token);
     }

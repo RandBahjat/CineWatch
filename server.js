@@ -43,10 +43,35 @@ const authenticateToken = (req, res, next) => {
   });
 };
 
+// Cloudflare Turnstile Verification
+const TURNSTILE_SECRET = '0x4AAAAAAAEO-DDSm2MAcO9qXa3awC5na_sY';
+const verifyTurnstile = async (token) => {
+  if (!token) return false;
+  try {
+    const formData = new URLSearchParams();
+    formData.append('secret', TURNSTILE_SECRET);
+    formData.append('response', token);
+    
+    const result = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      body: formData,
+      method: 'POST',
+    });
+    
+    const outcome = await result.json();
+    return outcome.success;
+  } catch (e) {
+    console.error('Turnstile verification error:', e);
+    return false;
+  }
+};
+
 // 1. SIGNUP ENDPOINT
 app.post('/api/signup', async (req, res) => {
-  const { name, email, password } = req.body;
-  if (!name || !email || !password) return res.status(400).json({ error: 'All fields are required.' });
+  const { name, email, password, cfToken } = req.body;
+  if (!name || !email || !password || !cfToken) return res.status(400).json({ error: 'All fields and security check are required.' });
+
+  const isHuman = await verifyTurnstile(cfToken);
+  if (!isHuman) return res.status(403).json({ error: 'Security check failed. Please try again.' });
 
   // For this implementation, we will use the user's name as their username (lowercase, no spaces)
   // In a real app, you might ask for a separate username field.
@@ -84,8 +109,11 @@ app.post('/api/signup', async (req, res) => {
 
 // 2. LOGIN ENDPOINT (Username Only)
 app.post('/api/login', loginLimiter, async (req, res) => {
-  const { username, password } = req.body;
-  if (!username || !password) return res.status(400).json({ error: 'Username and password are required.' });
+  const { username, password, cfToken } = req.body;
+  if (!username || !password || !cfToken) return res.status(400).json({ error: 'Username, password, and security check are required.' });
+
+  const isHuman = await verifyTurnstile(cfToken);
+  if (!isHuman) return res.status(403).json({ error: 'Security check failed. Please try again.' });
 
   const queryUsername = username.replace(/\s+/g, '').toLowerCase();
 
