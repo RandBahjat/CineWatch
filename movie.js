@@ -10072,7 +10072,7 @@ function renderUserBadge() {
             state.user.avatar = dataUrl;
             saveUser(state.user);
             if (window.CW_API) window.CW_API.updateAvatar(dataUrl);
-            showToast("Profile photo updated! 📸");
+            showToast("Profile photo updated!");
             closePanel();
             renderUserBadge();
           };
@@ -10121,7 +10121,7 @@ function renderUserBadge() {
               await window.CW_API.updateProfile({ displayName: newName }).catch(() => { });
             }
             renderUserProfile();
-            showToast("✅ Username updated!");
+            showToast("Username updated!");
           };
         }
       }, 50);
@@ -10169,7 +10169,7 @@ function renderUserBadge() {
       closePanel();
       if (window.CW_API) window.CW_API.signOut();
       saveUser(null);
-      showToast("Signed out successfully 👋");
+      showToast("Signed out successfully");
     };
 
   } else {
@@ -10657,12 +10657,12 @@ async function loadSubtitleTrack(video, subtitleUrl) {
       if (video.textTracks[0]) {
         video.textTracks[0].mode = "showing";
       }
-      showToast("📝 Subtitles loaded");
+      showToast("Subtitles loaded");
     });
 
   } catch (err) {
     console.warn("Subtitles could not be loaded:", err.message);
-    showToast("⚠️ Subtitles unavailable");
+    showToast("Subtitles unavailable");
   }
 }
 
@@ -11352,7 +11352,7 @@ function bindEventListeners() {
       window.location.href = mailtoUrl;
 
       closeReportModal();
-      showToast("Opening email client to send report to randbahjat14@gmail.com ✉️");
+      showToast("Opening email client to send report to randbahjat14@gmail.com");
     };
   }
 
@@ -11633,7 +11633,7 @@ function bindEventListeners() {
             document.getElementById("authModal").classList.add("hidden");
             alertEl.classList.add("hidden");
             changePasswordForm.reset();
-            showToast("✅ Password updated securely!");
+            showToast("Password updated securely!");
           }, 2000);
         }
       } else {
@@ -11704,7 +11704,7 @@ function bindEventListeners() {
       updateWatchlistBadge();
     }
     closeAuthModal();
-    showToast(`Welcome back! 🎬`);
+    showToast(`Welcome back!`);
     submitBtn.innerHTML = '<ion-icon name="log-in-outline"></ion-icon> Sign In';
     submitBtn.disabled = false;
   };
@@ -11768,7 +11768,7 @@ function bindEventListeners() {
       }
       // onAuthStateChanged will handle saveUser automatically
       closeAuthModal();
-      showToast(`🎉 Welcome to CineWatch, ${name}!`);
+      showToast(`Welcome to CineWatch, ${name}!`);
     }
     submitBtn.innerHTML = '<ion-icon name="person-add-outline"></ion-icon> Create Account';
     submitBtn.disabled = false;
@@ -11939,7 +11939,7 @@ function showToast(msg) {
 
   const toast = document.createElement("div");
   toast.className = "toast";
-  toast.innerHTML = `<span>🍿</span> <span>${msg}</span>`;
+  toast.innerHTML = `<ion-icon name="information-circle-outline" style="font-size: 1.2rem; color: var(--primary);"></ion-icon> <span>${msg}</span>`;
 
   container.appendChild(toast);
   setTimeout(() => {
