@@ -2077,8 +2077,7 @@ select {
   max-height: 92vh;
   border-radius: 16px;
   z-index: 1111;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden !important;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -2087,17 +2086,6 @@ select {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85), 0 0 50px rgba(229, 9, 20, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.14);
   background: rgba(11, 12, 16, 0.92);
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
-}
-
-.auth-modal-card::-webkit-scrollbar {
-  width: 4px;
-}
-
-.auth-modal-card::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 4px;
 }
 
 .auth-modal-card .bg {
@@ -2136,8 +2124,26 @@ select {
   position: relative;
   z-index: 3;
   width: 100%;
+  max-height: 92vh;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 1.6rem 1.8rem;
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.auth-modal-body::-webkit-scrollbar {
+  width: 4px;
+}
+
+.auth-modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.auth-modal-body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
 }
 
 @keyframes blob-orbit {
