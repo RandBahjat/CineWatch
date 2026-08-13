@@ -2115,13 +2115,13 @@ select {
   outline: none;
 }
 
-/* Auth Modal Specifics — Uiverse Animated Card Background */
+/* Auth & Report Modal Card */
 .auth-modal-card {
   position: relative;
   max-width: 440px;
   width: 100%;
   max-height: 92vh;
-  border-radius: 16px;
+  border-radius: var(--radius-xs);
   z-index: 1111;
   overflow: hidden !important;
   display: flex;
@@ -2129,83 +2129,15 @@ select {
   align-items: stretch;
   justify-content: flex-start;
   padding: 0;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85), 0 0 50px rgba(229, 9, 20, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(11, 12, 16, 0.92);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #0c0f16;
 }
 
-.auth-modal-card .bg {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  z-index: 2;
-  background: rgba(18, 22, 33, 0.92);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border-radius: 12px;
-  overflow: hidden;
-  outline: 2px solid rgba(255, 255, 255, 0.25);
-  pointer-events: none;
-}
-
-.auth-modal-card .blob {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  width: 420px;
-  height: 120px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #ff0000, #e50914, #ff3366);
-  opacity: 1;
-  filter: blur(8px);
-  box-shadow: 0 0 60px #ff0033, 0 0 120px #e50914;
-  animation: blob-orbit 5s linear infinite;
-  pointer-events: none;
-}
-
-.auth-modal-body {
-  position: relative;
-  z-index: 3;
-  width: 100%;
-  max-height: 90vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding: 1.6rem 1.8rem;
-  box-sizing: border-box;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.auth-modal-body::-webkit-scrollbar {
-  display: none;
-}
-
-@keyframes blob-orbit {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg) translateY(-120px);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg) translateY(-120px);
-  }
-}
-
-@keyframes blob-orbit-reverse {
-  from {
-    transform: translate(-50%, -50%) rotate(360deg) translateY(-120px);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(0deg) translateY(-120px);
-  }
-}
-
+.auth-modal-card .bg,
+.auth-modal-card .blob,
 .auth-modal-card .blob2 {
-  background: linear-gradient(135deg, #00e5ff, #00bcd4, #0097a7);
-  box-shadow: 0 0 60px #00e5ff, 0 0 120px #00bcd4;
-  animation: blob-orbit-reverse 5s linear infinite;
-  pointer-events: none;
+  display: none !important;
 }
 
 .auth-header {
@@ -2226,10 +2158,11 @@ select {
 
 .auth-tabs {
   display: flex;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.4);
   padding: 0.25rem;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-xs);
   margin-bottom: 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .auth-tab {
@@ -2239,7 +2172,7 @@ select {
   font-weight: 600;
   font-size: 0.88rem;
   color: var(--text-muted);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-xs);
   transition: var(--transition-fast);
 }
 
@@ -2273,13 +2206,21 @@ select {
 .form-control {
   width: 100%;
   padding: 0.65rem 0.9rem;
-  background: rgba(0, 0, 0, 0.4);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-xs);
   color: #fff;
   caret-color: #fff;
   font-size: 0.92rem;
+  font-family: inherit;
   transition: var(--transition-fast);
+}
+
+.form-control:focus {
+  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.05);
 }
 
 .input-with-icon {
