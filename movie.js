@@ -9516,44 +9516,29 @@ function setupHeroBanner() {
 
   // Generate ALL slides dynamically from featured array
   heroTrack.innerHTML = featured.map((movie, idx) => {
-    const fav = isFavorite(movie.id);
     const backdropUrl = movie.backdrop || movie.poster || "";
     const bgStyle = backdropUrl ? `style="background-image: url('${backdropUrl}')"` : "";
-    const imgHtml = (movie.backdrop && !movie.backdrop.startsWith("http"))
-      ? `<img src="${movie.backdrop}" alt="${movie.title}" onerror="this.style.display='none'">`
-      : "";
-    const matchHtml = movie.match ? `<span class="meta-match">${movie.match}% Match</span>` : "";
-    const badgeHtml = `<div class="hero-badge"> TOP TRENDING SPOTLIGHT</div>`;
+    const genresList = (movie.genres || []).slice(0, 3).join(" • ");
 
     return `
       <div class="hero-slide">
-        <div class="hero-bg-image" ${bgStyle}>${imgHtml}</div>
+        <div class="hero-bg-image" ${bgStyle}></div>
         <div class="hero-bg-overlay"></div>
         <div class="hero-content">
-            ${badgeHtml}
             <h1 class="hero-title">${movie.title}</h1>
             <div class="hero-meta">
-                <span class="meta-type" style="background: var(--primary); color: #fff; padding: 0.1rem 0.4rem; border-radius: 4px; font-size: 0.78rem; font-weight: 700;">${movie.type || 'Movie'}</span>
-                <span class="meta-rating">⭐ <span>${movie.rating}</span></span>
-                ${matchHtml}
+                <span class="meta-rating"><span class="star-icon">★</span> ${movie.rating}</span>
+                <span class="meta-dot">•</span>
                 <span class="meta-year">${movie.year}</span>
-                <span class="meta-age">${movie.age}</span>
-                <span class="meta-duration">${movie.duration}</span>
-            </div>
-            <div class="hero-tags">
-                ${movie.genres.map(g => `<span class="tag">${g}</span>`).join("")}
+                ${genresList ? `<span class="meta-dot">•</span><span class="meta-genres-inline">${genresList}</span>` : ""}
             </div>
             <p class="hero-overview">${movie.overview}</p>
             <div class="hero-actions">
-                <button class="button" onclick="openVideoPlayer('${movie.id}')">
-                    <span class="btn-icon">▶</span> Watch Now
-                    <span class="button-border"></span>
+                <button class="btn-hero-play" onclick="openVideoPlayer('${movie.id}')">
+                    <span class="btn-icon">▶</span> Play
                 </button>
-                <button class="btn-watchlist-custom ${fav ? 'btn-primary' : ''}" onclick="toggleFavorite('${movie.id}'); this.querySelector('span:last-child').textContent = isFavorite('${movie.id}') ? 'In Watchlist' : 'Add to Watchlist'; this.querySelector('.btn-icon').textContent = isFavorite('${movie.id}') ? '✓' : '+';">
-                    <span class="btn-icon">${fav ? '✓' : '+'}</span> <span>${fav ? 'In Watchlist' : 'Add to Watchlist'}</span>
-                </button>
-                <button class="btn btn-outline" onclick="openDetailsModal('${movie.id}')">
-                    <span class="btn-icon">ℹ</span> Details
+                <button class="btn-hero-more" onclick="openDetailsModal('${movie.id}')">
+                    <span class="btn-icon">ℹ</span> See More
                 </button>
             </div>
         </div>
@@ -9561,46 +9546,94 @@ function setupHeroBanner() {
     `;
   }).join("");
 
-  // ── Swipe / Drag to change slides ──
+  // ── Real-time Smooth Drag / Swipe to change slides ──
   const heroBanner = document.getElementById("heroBanner");
   let startX = 0;
+  let currentTranslate = 0;
   let isDragging = false;
+  let hasMoved = false;
 
-  const handleDragStart = (e) => {
-    // Only capture left clicks (button 0)
-    if (e.type === "mousedown" && e.button !== 0) return;
+  const onDragStart = (e) => {
+    // Only capture primary mouse button or touch
+    if (e.type.includes("mouse") && e.button !== 0) return;
     isDragging = true;
+    hasMoved = false;
     startX = e.type.includes("mouse") ? e.pageX : e.touches[0].clientX;
+    const bannerWidth = heroBanner.offsetWidth || window.innerWidth;
+    currentTranslate = -state.currentHeroIndex * bannerWidth;
+
+    heroTrack.style.transition = "none";
+    heroBanner.classList.add("is-dragging");
+
+    if (state.heroInterval) clearInterval(state.heroInterval);
   };
 
-  const handleDragEnd = (e) => {
+  const onDragMove = (e) => {
     if (!isDragging) return;
-    isDragging = false;
-    const endX = e.type.includes("mouse") ? e.pageX : e.changedTouches[0].clientX;
-    const diffX = startX - endX;
+    const currentX = e.type.includes("mouse") ? e.pageX : e.touches[0].clientX;
+    const diffX = currentX - startX;
 
-    // Threshold of 50px to trigger slide change
-    if (Math.abs(diffX) > 50) {
-      if (diffX > 0) {
-        // Swiped left -> next slide
-        state.currentHeroIndex = (state.currentHeroIndex + 1) % featured.length;
-      } else {
-        // Swiped right -> previous slide
-        state.currentHeroIndex = (state.currentHeroIndex - 1 + featured.length) % featured.length;
-      }
-      updateHeroBanner();
-      startHeroAutoplay(); // Reset timer on swipe
+    if (Math.abs(diffX) > 6) {
+      hasMoved = true;
+    }
+
+    if (hasMoved) {
+      if (e.cancelable) e.preventDefault(); // Prevent native text/image selection
+      heroTrack.style.transform = `translateX(${currentTranslate + diffX}px)`;
     }
   };
 
-  heroBanner.addEventListener("mousedown", handleDragStart);
-  heroBanner.addEventListener("touchstart", handleDragStart, { passive: true });
+  const onDragEnd = (e) => {
+    if (!isDragging) return;
+    isDragging = false;
+    heroBanner.classList.remove("is-dragging");
 
-  heroBanner.addEventListener("mouseup", handleDragEnd);
-  heroBanner.addEventListener("touchend", handleDragEnd);
-  heroBanner.addEventListener("mouseleave", (e) => {
-    if (isDragging) handleDragEnd(e);
-  });
+    const endX = e.type.includes("mouse")
+      ? e.pageX
+      : (e.changedTouches && e.changedTouches[0] ? e.changedTouches[0].clientX : startX);
+    const diffX = endX - startX;
+    const bannerWidth = heroBanner.offsetWidth || window.innerWidth;
+    const threshold = Math.min(100, bannerWidth * 0.1);
+
+    if (hasMoved && Math.abs(diffX) > threshold) {
+      if (diffX < 0) {
+        // Dragged left -> next slide
+        state.currentHeroIndex = (state.currentHeroIndex + 1) % featured.length;
+      } else {
+        // Dragged right -> previous slide
+        state.currentHeroIndex = (state.currentHeroIndex - 1 + featured.length) % featured.length;
+      }
+    }
+
+    updateHeroBanner();
+    startHeroAutoplay();
+  };
+
+  // Prevent accidental clicks on child links/buttons when a drag was performed
+  heroBanner.addEventListener(
+    "click",
+    (e) => {
+      if (hasMoved) {
+        e.preventDefault();
+        e.stopPropagation();
+        hasMoved = false;
+      }
+    },
+    true
+  );
+
+  // Prevent native HTML5 image drag
+  heroBanner.addEventListener("dragstart", (e) => e.preventDefault());
+
+  // Mouse & Touch events
+  heroBanner.addEventListener("mousedown", onDragStart);
+  window.addEventListener("mousemove", onDragMove);
+  window.addEventListener("mouseup", onDragEnd);
+
+  heroBanner.addEventListener("touchstart", onDragStart, { passive: true });
+  heroBanner.addEventListener("touchmove", onDragMove, { passive: false });
+  heroBanner.addEventListener("touchend", onDragEnd);
+  heroBanner.addEventListener("touchcancel", onDragEnd);
 
   updateHeroBanner();
   startHeroAutoplay();
@@ -9617,35 +9650,12 @@ function startHeroAutoplay() {
   }, HERO_ROTATE_INTERVAL_MS); // 10 seconds per slide
 }
 
-let previousHeroIndex = -1;
-
 function updateHeroBanner() {
   const heroTrack = document.getElementById("heroTrack");
   if (!heroTrack) return;
 
-  const slides = document.querySelectorAll("#heroDots .dot").length;
-  if (previousHeroIndex === -1) {
-    previousHeroIndex = state.currentHeroIndex;
-  }
-
-  heroTrack.style.transition = "opacity 0.3s ease-in-out";
-  heroTrack.style.opacity = "0";
-
-  setTimeout(() => {
-    heroTrack.style.transition = "none";
-    heroTrack.style.transform = `translateX(-${state.currentHeroIndex * 100}%)`;
-    
-    void heroTrack.offsetWidth; // Force reflow
-    
-    heroTrack.style.transition = "opacity 0.3s ease-in-out";
-    heroTrack.style.opacity = "1";
-    
-    setTimeout(() => {
-      heroTrack.style.transition = "transform 0.5s ease-in-out";
-    }, 300);
-  }, 300);
-
-  previousHeroIndex = state.currentHeroIndex;
+  heroTrack.style.transition = "transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)";
+  heroTrack.style.transform = `translateX(-${state.currentHeroIndex * 100}%)`;
 
   // Update dots
   document.querySelectorAll("#heroDots .dot").forEach((dot, i) => {
