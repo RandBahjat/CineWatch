@@ -3,14 +3,18 @@ const API_URL = 'https://cinewatch-maaa.onrender.com/api';
 
 window.CW_API = {
   getToken() {
-    return localStorage.getItem('cw_token');
+    if (localStorage.getItem('cw_token')) {
+      localStorage.removeItem('cw_token');
+    }
+    return sessionStorage.getItem('cw_token');
   },
 
   setToken(token) {
+    localStorage.removeItem('cw_token');
     if (token) {
-      localStorage.setItem('cw_token', token);
+      sessionStorage.setItem('cw_token', token);
     } else {
-      localStorage.removeItem('cw_token');
+      sessionStorage.removeItem('cw_token');
     }
   },
 

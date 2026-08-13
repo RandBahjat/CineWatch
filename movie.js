@@ -9057,27 +9057,35 @@ const state = {
 // Storage Helpers
 function loadState() {
   try {
-    // Load favorites and continue-watching from localStorage as a fast cache.
-    // Firestore cloud data will overwrite this via the cw:authChanged event.
-    const savedFavs = localStorage.getItem(KEYS.FAVORITES);
+    // Clear legacy localStorage user and token so closing tabs requires login
+    localStorage.removeItem(KEYS.USER);
+    localStorage.removeItem("cw_token");
+
+    const savedUser = sessionStorage.getItem(KEYS.USER);
+    if (savedUser) state.user = JSON.parse(savedUser);
+
+    const savedFavs = sessionStorage.getItem(KEYS.FAVORITES) || localStorage.getItem(KEYS.FAVORITES);
     if (savedFavs) state.favorites = JSON.parse(savedFavs);
 
-    const savedContinue = localStorage.getItem(KEYS.CONTINUE);
+    const savedContinue = sessionStorage.getItem(KEYS.CONTINUE) || localStorage.getItem(KEYS.CONTINUE);
     if (savedContinue) state.continueWatching = JSON.parse(savedContinue);
   } catch (e) {
-    console.error("Failed to load state from localStorage", e);
+    console.error("Failed to load state from storage", e);
   }
 }
 
 function saveUser(userObj) {
   state.user = userObj;
+  localStorage.removeItem(KEYS.USER);
   if (userObj) {
-    localStorage.setItem(KEYS.USER, JSON.stringify(userObj));
+    sessionStorage.setItem(KEYS.USER, JSON.stringify(userObj));
   } else {
-    localStorage.removeItem(KEYS.USER);
+    sessionStorage.removeItem(KEYS.USER);
     // Clear local data on sign-out so another user doesn't see it
     state.favorites = [];
     state.continueWatching = {};
+    sessionStorage.removeItem(KEYS.FAVORITES);
+    sessionStorage.removeItem(KEYS.CONTINUE);
     localStorage.removeItem(KEYS.FAVORITES);
     localStorage.removeItem(KEYS.CONTINUE);
   }
