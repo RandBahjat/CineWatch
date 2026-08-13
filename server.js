@@ -15,7 +15,8 @@ const { User, mongoose, getDbError } = require('./database');
 const app = express();
 
 app.use(cors());
-app.use(express.json());
+app.use(express.json({ limit: '15mb' }));
+app.use(express.urlencoded({ limit: '15mb', extended: true }));
 
 const JWT_SECRET = 'cinewatch_super_secret_key_123';
 
@@ -93,6 +94,7 @@ app.post('/api/signup', async (req, res) => {
         name: newUser.name, 
         username: newUser.username, 
         email: newUser.email, 
+        avatar: newUser.avatar || '🎬',
         createdAt: newUser.created_at ? newUser.created_at.toISOString() : new Date().toISOString()
       } 
     });
@@ -152,7 +154,7 @@ app.post('/api/login', async (req, res) => {
 });
 
 // ----------------------------------------------------
-// 3. GET CURRENT USER PROFILE
+// 3. GET CURRENT USER PROFILE & DATA
 // ----------------------------------------------------
 app.get('/api/me', authenticateToken, async (req, res) => {
   try {
@@ -164,8 +166,8 @@ app.get('/api/me', authenticateToken, async (req, res) => {
       name: user.name,
       username: user.username,
       email: user.email,
-      avatar: user.avatar,
-      createdAt: user.created_at.toISOString(),
+      avatar: user.avatar || '🎬',
+      createdAt: user.created_at ? user.created_at.toISOString() : new Date().toISOString(),
       favorites: user.favorites || [],
       continueWatching: user.continueWatching || {}
     });
@@ -176,8 +178,58 @@ app.get('/api/me', authenticateToken, async (req, res) => {
 });
 
 // ----------------------------------------------------
-// 4. SYNC FAVORITES
+// 4. UPDATE PROFILE (Avatar / Display Name)
 // ----------------------------------------------------
+app.post('/api/update-profile', authenticateToken, async (req, res) => {
+  const { name, avatar } = req.body;
+  const updates = {};
+  if (name && typeof name === 'string' && name.trim()) {
+    updates.name = name.trim();
+  }
+  if (avatar && typeof avatar === 'string') {
+    updates.avatar = avatar;
+  }
+
+  try {
+    const user = await User.findByIdAndUpdate(req.user.id, updates, { new: true });
+    if (!user) return res.status(404).json({ error: 'User not found.' });
+
+    res.json({
+      message: 'Profile updated successfully',
+      user: {
+        id: user._id.toString(),
+        name: user.name,
+        username: user.username,
+        email: user.email,
+        avatar: user.avatar || '🎬',
+        createdAt: user.created_at ? user.created_at.toISOString() : new Date().toISOString()
+      }
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Database error.' });
+  }
+});
+
+// ----------------------------------------------------
+// 5. UNIFIED DATA SYNC (Favorites + Continue Watching)
+// ----------------------------------------------------
+app.post('/api/sync', authenticateToken, async (req, res) => {
+  const { favorites, continueWatching } = req.body;
+  const updates = {};
+  if (Array.isArray(favorites)) updates.favorites = favorites;
+  if (continueWatching && typeof continueWatching === 'object') updates.continueWatching = continueWatching;
+
+  try {
+    await User.findByIdAndUpdate(req.user.id, updates);
+    res.json({ message: 'Data synced successfully.' });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Database error.' });
+  }
+});
+
+// Individual sync fallbacks
 app.post('/api/sync/favorites', authenticateToken, async (req, res) => {
   const { favorites } = req.body;
   if (!Array.isArray(favorites)) return res.status(400).json({ error: 'Invalid data format.' });
@@ -191,9 +243,6 @@ app.post('/api/sync/favorites', authenticateToken, async (req, res) => {
   }
 });
 
-// ----------------------------------------------------
-// 5. SYNC CONTINUE WATCHING
-// ----------------------------------------------------
 app.post('/api/sync/continue_watching', authenticateToken, async (req, res) => {
   const { continueWatching } = req.body;
   if (typeof continueWatching !== 'object') return res.status(400).json({ error: 'Invalid data format.' });
@@ -211,7 +260,8 @@ app.post('/api/sync/continue_watching', authenticateToken, async (req, res) => {
 // 6. UPDATE PASSWORD
 // ----------------------------------------------------
 app.post('/api/update-password', authenticateToken, async (req, res) => {
-  const { currentPassword, newPassword } = req.body;
+  const currentPassword = req.body.currentPassword || req.body.oldPassword;
+  const newPassword = req.body.newPassword;
   if (!currentPassword || !newPassword) return res.status(400).json({ error: 'Both fields are required.' });
 
   try {
@@ -238,12 +288,15 @@ app.post('/api/update-password', authenticateToken, async (req, res) => {
 // 7. PASSWORD RESET REQUEST
 // ----------------------------------------------------
 app.post('/api/reset-password', async (req, res) => {
-  const { email } = req.body;
-  if (!email) return res.status(400).json({ error: 'Email is required.' });
+  const { email, username } = req.body;
+  const query = (email || username || '').trim().toLowerCase();
+  if (!query) return res.status(400).json({ error: 'Email or username is required.' });
 
   try {
-    const user = await User.findOne({ email: email.toLowerCase() });
-    if (!user) return res.status(400).json({ error: 'auth/user-not-found' });
+    const user = await User.findOne({
+      $or: [{ email: query }, { username: query }]
+    });
+    if (!user) return res.status(400).json({ error: 'No account found with this email or username.' });
 
     res.json({ message: 'A password reset link has been sent to your email.' });
   } catch (err) {
