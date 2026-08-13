@@ -10837,6 +10837,23 @@ function setupVideoControls(video) {
 function openAuthModal() {
   const modal = document.getElementById("authModal");
   modal.classList.remove("hidden");
+  
+  // Reset forms and hide Turnstile widgets
+  const loginForm = document.getElementById("loginForm");
+  const signupForm = document.getElementById("signupForm");
+  if (loginForm) loginForm.reset();
+  if (signupForm) signupForm.reset();
+  
+  const cfLogin = document.getElementById("cf-turnstile");
+  if (cfLogin) cfLogin.classList.add("hidden");
+  const cfSignup = document.getElementById("cf-turnstile-signup");
+  if (cfSignup) cfSignup.classList.add("hidden");
+  
+  // Clear any leftover error alerts
+  const loginAlert = document.getElementById("loginAlert");
+  if (loginAlert) { loginAlert.classList.add("hidden"); loginAlert.textContent = ""; }
+  const signupAlert = document.getElementById("signupAlert");
+  if (signupAlert) { signupAlert.classList.add("hidden"); signupAlert.textContent = ""; }
 }
 
 function closeAuthModal() {
