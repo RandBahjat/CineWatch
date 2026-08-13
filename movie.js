@@ -11830,7 +11830,12 @@ function bindEventListeners() {
         submitBtn.disabled = false;
         return;
       }
-      // onAuthStateChanged will handle saveUser automatically
+      // Update UI immediately after successful signup
+      if (user) {
+        saveUser(user);
+        renderUserBadge();
+        updateWatchlistBadge();
+      }
       closeAuthModal();
       showToast(`Welcome to CineWatch, ${name}!`);
     }
