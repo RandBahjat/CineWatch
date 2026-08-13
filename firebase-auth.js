@@ -155,6 +155,8 @@ window.CW_Firebase = {
    */
   async signUp(name, email, password) {
     try {
+      // Ensure the user doesn't stay logged in after closing the browser
+      await auth.setPersistence(firebase.auth.Auth.Persistence.SESSION);
       const cred = await auth.createUserWithEmailAndPassword(email, password);
       await cred.user.updateProfile({ displayName: name });
       
@@ -193,6 +195,8 @@ window.CW_Firebase = {
    */
   async signIn(email, password) {
     try {
+      // Ensure the user doesn't stay logged in after closing the browser
+      await auth.setPersistence(firebase.auth.Auth.Persistence.SESSION);
       const cred = await auth.signInWithEmailAndPassword(email, password);
       const name = cred.user.displayName || cred.user.email.split("@")[0];
       
