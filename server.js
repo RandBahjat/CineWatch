@@ -234,7 +234,11 @@ app.post('/api/apply-reset-submit', express.urlencoded({ extended: true }), (req
   });
 });
 
+app.get('/', (req, res) => {
+  res.send('CineWatch API is running!');
+});
+
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`CineWatch custom backend running on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`CineWatch custom backend running on port ${PORT}`);
 });
