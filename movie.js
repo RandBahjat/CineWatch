@@ -11735,29 +11735,31 @@ function bindEventListeners() {
   signupForm.onsubmit = async (e) => {
     e.preventDefault();
     const name = document.getElementById("signupName").value.trim();
+    const email = document.getElementById("signupEmail").value.trim();
     const pass = document.getElementById("signupPassword").value.trim();
     const nameErr = document.getElementById("signupNameError");
+    const emailErr = document.getElementById("signupEmailError");
     const passErr = document.getElementById("signupPasswordError");
     const alertEl = document.getElementById("signupAlert");
     const submitBtn = signupForm.querySelector("button[type='submit']");
 
     nameErr.textContent = "";
+    emailErr.textContent = "";
     passErr.textContent = "";
     alertEl.classList.add("hidden");
     alertEl.textContent = "";
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let valid = true;
 
-    if (name.length < 3) {
-      nameErr.textContent = "Username must be at least 3 characters long";
+    if (name.length < 2) {
+      nameErr.textContent = "Please enter your name";
       valid = false;
     }
-    if (name.includes("@")) {
-      nameErr.textContent = "Username cannot contain an '@' symbol";
+    if (!emailRegex.test(email)) {
+      emailErr.textContent = "Please enter a valid email address";
       valid = false;
     }
-
-    const email = name.replace(/[^a-zA-Z0-9_]/g, '').toLowerCase() + "@cinewatch.local";
 
     const isLength = pass.length >= 8;
     const isCapital = /[A-Z]/.test(pass);
