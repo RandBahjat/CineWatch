@@ -11684,6 +11684,7 @@ function bindEventListeners() {
     const cfText = document.getElementById("cf-text");
     
     if (cfWidget) {
+      cfWidget.classList.remove("hidden");
       cfSpinner.classList.remove("success");
       cfText.textContent = "Verifying...";
       cfText.style.color = "#ccc";
@@ -11782,6 +11783,7 @@ function bindEventListeners() {
     const cfText = document.getElementById("cf-text-signup");
     
     if (cfWidget) {
+      cfWidget.classList.remove("hidden");
       cfSpinner.classList.remove("success");
       cfText.textContent = "Verifying...";
       cfText.style.color = "#ccc";
