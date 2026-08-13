@@ -13,11 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
-    <!-- Firebase SDK (Compat Version for local file:// usage) -->
-    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
-    <script src="firebase-auth.js?v=2" defer></script>
+    <script src="api.js?v=2" defer></script>
     <script src="movie.js?v=2" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -646,13 +642,13 @@
                 <!-- Login Form -->
                 <form id="loginForm" class="auth-form" novalidate>
                     <div class="form-group">
-                        <label for="loginEmail">Email Address</label>
+                        <label for="loginUsername">Username</label>
                         <div class="input-with-icon">
-                            <ion-icon name="mail-outline"></ion-icon>
-                            <input type="email" id="loginEmail" class="form-control" placeholder="name@example.com"
-                                autocomplete="email" required>
+                            <ion-icon name="person-outline"></ion-icon>
+                            <input type="text" id="loginUsername" class="form-control" placeholder="Username"
+                                autocomplete="username" required>
                         </div>
-                        <div class="form-error" id="loginEmailError"></div>
+                        <div class="form-error" id="loginUsernameError"></div>
                     </div>
 
                     <div class="form-group">
@@ -730,14 +726,14 @@
                 <form id="resetPasswordForm" class="auth-form hidden" novalidate>
                     <div style="margin-bottom: 1.5rem; text-align: center;">
                         <h3 style="color: var(--text-light); margin-bottom: 0.5rem;">Reset Password</h3>
-                        <p style="color: var(--text-muted); font-size: 0.9rem;">Enter your email or username to receive a password reset link.</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Enter your username to receive a password reset link.</p>
                     </div>
 
                     <div class="form-group">
-                        <label for="resetInput">Email or Username</label>
+                        <label for="resetInput">Username</label>
                         <div class="input-with-icon">
                             <ion-icon name="person-circle-outline"></ion-icon>
-                            <input type="text" id="resetInput" class="form-control" placeholder="Email or Username" required>
+                            <input type="text" id="resetInput" class="form-control" placeholder="Username" required>
                         </div>
                         <div class="form-error" id="resetError"></div>
                     </div>

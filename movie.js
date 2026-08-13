@@ -9179,8 +9179,8 @@ function toggleFavorite(movieId) {
   }
   localStorage.setItem(KEYS.FAVORITES, JSON.stringify(state.favorites));
   // Sync to Firestore cloud
-  if (window.CW_Firebase && state.user) {
-    window.CW_Firebase.sync(state.favorites, state.continueWatching);
+  if (window.CW_API && state.user) {
+    window.CW_API.syncData(state.favorites, state.continueWatching);
   }
   updateWatchlistBadge();
   refreshAllFavButtons(movieId, added);
@@ -9215,8 +9215,8 @@ function updateContinueWatching(movieId, currentTime, duration) {
   };
   localStorage.setItem(KEYS.CONTINUE, JSON.stringify(state.continueWatching));
   // Sync to Firestore cloud
-  if (window.CW_Firebase && state.user) {
-    window.CW_Firebase.sync(state.favorites, state.continueWatching);
+  if (window.CW_API && state.user) {
+    window.CW_API.syncData(state.favorites, state.continueWatching);
   }
   renderContinueWatchingShelf();
 }
@@ -9225,8 +9225,8 @@ function removeContinueWatching(movieId) {
   delete state.continueWatching[movieId];
   localStorage.setItem(KEYS.CONTINUE, JSON.stringify(state.continueWatching));
   // Sync to Firestore cloud
-  if (window.CW_Firebase && state.user) {
-    window.CW_Firebase.sync(state.favorites, state.continueWatching);
+  if (window.CW_API && state.user) {
+    window.CW_API.syncData(state.favorites, state.continueWatching);
   }
   renderContinueWatchingShelf();
 }
@@ -9917,8 +9917,8 @@ function updateWatchlistBadge() {
   if (validFavorites.length !== state.favorites.length) {
     state.favorites = validFavorites;
     localStorage.setItem(KEYS.FAVORITES, JSON.stringify(state.favorites));
-    if (window.CW_Firebase && state.user) {
-      window.CW_Firebase.sync(state.favorites, state.continueWatching);
+    if (window.CW_API && state.user) {
+      window.CW_API.syncData(state.favorites, state.continueWatching);
     }
   }
 
@@ -10071,7 +10071,7 @@ function renderUserBadge() {
             const dataUrl = canvas.toDataURL("image/jpeg", 0.88);
             state.user.avatar = dataUrl;
             saveUser(state.user);
-            if (window.CW_Firebase) window.CW_Firebase.updateAvatar(dataUrl);
+            if (window.CW_API) window.CW_API.updateAvatar(dataUrl);
             showToast("Profile photo updated! 📸");
             closePanel();
             renderUserBadge();
@@ -10117,8 +10117,8 @@ function renderUserBadge() {
             state.user.name = newName;
             saveUser(state.user);
             // Update in Firebase if available
-            if (window.CW_Firebase?.updateProfile) {
-              await window.CW_Firebase.updateProfile({ displayName: newName }).catch(() => { });
+            if (window.CW_API?.updateProfile) {
+              await window.CW_API.updateProfile({ displayName: newName }).catch(() => { });
             }
             renderUserProfile();
             showToast("✅ Username updated!");
@@ -10167,7 +10167,7 @@ function renderUserBadge() {
     // Logout
     document.getElementById("panelLogoutBtn").onclick = () => {
       closePanel();
-      if (window.CW_Firebase) window.CW_Firebase.signOut();
+      if (window.CW_API) window.CW_API.signOut();
       saveUser(null);
       showToast("Signed out successfully 👋");
     };
@@ -10718,8 +10718,8 @@ function closeVideoPlayer() {
         timestamp: Date.now(),
       };
       localStorage.setItem(KEYS.CONTINUE, JSON.stringify(state.continueWatching));
-      if (window.CW_Firebase && state.user) {
-        window.CW_Firebase.sync(state.favorites, state.continueWatching);
+      if (window.CW_API && state.user) {
+        window.CW_API.syncData(state.favorites, state.continueWatching);
       }
       renderContinueWatchingShelf();
     }
@@ -11533,39 +11533,21 @@ function bindEventListeners() {
       alertEl.style = ""; // reset inline styles
 
       if (!inputVal) {
-        inputErr.textContent = "Please enter your email or username.";
+        inputErr.textContent = "Please enter your username.";
         return;
       }
 
-      if (!window.CW_Firebase) {
+      if (!window.CW_API) {
         alertEl.textContent = "Authentication service not ready.";
         alertEl.classList.remove("hidden");
         return;
       }
 
-      // Check if it's an email format
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      let emailToSend = inputVal;
-      
       const originalHTML = submitBtn.innerHTML;
       submitBtn.textContent = "Sending...";
       submitBtn.disabled = true;
 
-      if (!emailRegex.test(inputVal)) {
-        // Not an email format, assume it's a username.
-        // Look up the email by username using our self-healed Firestore records.
-        const fetchedEmail = await window.CW_Firebase.getEmailByUsername(inputVal);
-        if (fetchedEmail) {
-          emailToSend = fetchedEmail;
-        } else {
-          submitBtn.innerHTML = originalHTML;
-          submitBtn.disabled = false;
-          inputErr.textContent = "Could not find an email linked to this username. Please try entering your email address, or log in once to link your account.";
-          return;
-        }
-      }
-
-      const { success, error } = await window.CW_Firebase.resetPassword(emailToSend);
+      const { data, error } = await window.CW_API.resetPassword(inputVal);
 
       submitBtn.innerHTML = originalHTML;
       submitBtn.disabled = false;
@@ -11636,8 +11618,8 @@ function bindEventListeners() {
       submitBtn.innerHTML = "<ion-icon name='hourglass-outline'></ion-icon> Updating...";
       submitBtn.disabled = true;
 
-      if (window.CW_Firebase?.updateUserPassword) {
-        const { success, error } = await window.CW_Firebase.updateUserPassword(oldVal, newVal);
+      if (window.CW_API?.updateUserPassword) {
+        const { success, error } = await window.CW_API.updateUserPassword(oldVal, newVal);
         if (!success) {
           alertEl.textContent = error || "Failed to update password.";
           alertEl.style = "background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); margin-bottom: 1rem;";
@@ -11665,26 +11647,25 @@ function bindEventListeners() {
     };
   }
 
-  // Login Submit — Firebase Authentication
+  // Login Submit — Custom Backend API
   loginForm.onsubmit = async (e) => {
     e.preventDefault();
-    const email = document.getElementById("loginEmail").value.trim();
+    const username = document.getElementById("loginUsername").value.trim();
     const pass = document.getElementById("loginPassword").value.trim();
-    const emailErr = document.getElementById("loginEmailError");
+    const usernameErr = document.getElementById("loginUsernameError");
     const passErr = document.getElementById("loginPasswordError");
     const alertEl = document.getElementById("loginAlert");
     const submitBtn = loginForm.querySelector("button[type='submit']");
 
-    emailErr.textContent = "";
+    usernameErr.textContent = "";
     passErr.textContent = "";
     alertEl.classList.add("hidden");
     alertEl.textContent = "";
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let valid = true;
 
-    if (!emailRegex.test(email)) {
-      emailErr.textContent = "Please enter a valid email address";
+    if (username.length < 3) {
+      usernameErr.textContent = "Please enter a valid username";
       valid = false;
     }
     if (pass.length < 6) {
@@ -11697,7 +11678,7 @@ function bindEventListeners() {
     submitBtn.textContent = "Signing in...";
     submitBtn.disabled = true;
 
-    if (!window.CW_Firebase) {
+    if (!window.CW_API) {
       alertEl.textContent = "Authentication service not ready. Please refresh the page and try again.";
       alertEl.classList.remove("hidden");
       submitBtn.innerHTML = '<ion-icon name="log-in-outline"></ion-icon> Sign In';
@@ -11707,7 +11688,7 @@ function bindEventListeners() {
 
     // Mark that this is a real login action so cw:authChanged knows to reload
     sessionStorage.setItem("cw_loginPending", "1");
-    const { user, error } = await window.CW_Firebase.signIn(email, pass);
+    const { user, error } = await window.CW_API.signIn(username, pass);
     if (error) {
       sessionStorage.removeItem("cw_loginPending"); // clear flag on error
       alertEl.textContent = error;
@@ -11773,10 +11754,10 @@ function bindEventListeners() {
     submitBtn.textContent = "Creating Account...";
     submitBtn.disabled = true;
 
-    if (window.CW_Firebase) {
+    if (window.CW_API) {
       // Mark that this is a real sign-up action so cw:authChanged knows to reload
       sessionStorage.setItem("cw_loginPending", "1");
-      const { user, error } = await window.CW_Firebase.signUp(name, email, pass);
+      const { user, error } = await window.CW_API.signUp(name, email, pass);
       if (error) {
         sessionStorage.removeItem("cw_loginPending"); // clear flag on error
         alertEl.textContent = error;

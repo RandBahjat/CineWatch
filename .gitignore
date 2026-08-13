@@ -3,3 +3,6 @@ node_modules/
 Thumbs.db
 *.suo
 *.user
+cinewatch.db
+replace.js
+replace.py
