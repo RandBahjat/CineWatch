@@ -55,28 +55,31 @@ app.post('/api/signup', async (req, res) => {
   const { name, email, password } = req.body;
   if (!name || !email || !password) return res.status(400).json({ error: 'All fields are required.' });
 
+  const cleanName = name.trim();
+  const cleanEmail = email.trim().toLowerCase();
+  const emailPrefix = cleanEmail.split('@')[0].toLowerCase();
+  const cleanUsername = cleanName.replace(/\s+/g, '').toLowerCase();
+
   try {
     const existingUser = await User.findOne({
       $or: [
-        { email: email.toLowerCase() },
-        { username: email.split('@')[0].toLowerCase() }
+        { email: cleanEmail },
+        { username: cleanUsername },
+        { username: emailPrefix }
       ]
     });
 
     if (existingUser) {
-      return res.status(400).json({ error: 'Email or username already exists.' });
+      return res.status(400).json({ error: 'An account with this email or username already exists.' });
     }
 
     const salt = await bcrypt.genSalt(10);
     const password_hash = await bcrypt.hash(password, salt);
-    
-    // Use email prefix as username for now
-    const username = email.split('@')[0].toLowerCase();
 
     const newUser = await User.create({
-      name,
-      username,
-      email: email.toLowerCase(),
+      name: cleanName,
+      username: cleanUsername || emailPrefix,
+      email: cleanEmail,
       password_hash
     });
 
@@ -90,7 +93,7 @@ app.post('/api/signup', async (req, res) => {
         name: newUser.name, 
         username: newUser.username, 
         email: newUser.email, 
-        createdAt: newUser.created_at.toISOString() 
+        createdAt: newUser.created_at ? newUser.created_at.toISOString() : new Date().toISOString()
       } 
     });
   } catch (err) {
@@ -104,20 +107,29 @@ app.post('/api/signup', async (req, res) => {
 // ----------------------------------------------------
 app.post('/api/login', async (req, res) => {
   const { username, password } = req.body;
-  if (!username || !password) return res.status(400).json({ error: 'Username and password are required.' });
+  if (!username || !password) return res.status(400).json({ error: 'Username or Email and password are required.' });
 
-  const queryUsername = username.replace(/\s+/g, '').toLowerCase();
+  const rawInput = username.trim();
+  const normalizedInput = rawInput.toLowerCase();
+  const noSpacesInput = rawInput.replace(/\s+/g, '').toLowerCase();
+  const escapedInput = rawInput.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const nameRegex = new RegExp(`^${escapedInput}$`, 'i');
 
   try {
-    // Some users might login with email
+    // Find user by username, email, or display name
     const user = await User.findOne({
-      $or: [{ username: queryUsername }, { email: queryUsername }]
+      $or: [
+        { email: normalizedInput },
+        { username: normalizedInput },
+        { username: noSpacesInput },
+        { name: nameRegex }
+      ]
     });
 
-    if (!user) return res.status(400).json({ error: 'auth/user-not-found' });
+    if (!user) return res.status(400).json({ error: 'No account found with this username or email.' });
 
     const validPassword = await bcrypt.compare(password, user.password_hash);
-    if (!validPassword) return res.status(400).json({ error: 'auth/wrong-password' });
+    if (!validPassword) return res.status(400).json({ error: 'Incorrect password. Please try again.' });
 
     const token = jwt.sign({ id: user._id, username: user.username }, JWT_SECRET, { expiresIn: '7d' });
     
@@ -129,13 +141,13 @@ app.post('/api/login', async (req, res) => {
         name: user.name, 
         username: user.username, 
         email: user.email, 
-        avatar: user.avatar, 
-        createdAt: user.created_at.toISOString() 
+        avatar: user.avatar || '🎬', 
+        createdAt: user.created_at ? user.created_at.toISOString() : new Date().toISOString()
       } 
     });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Database error.' });
+    res.status(500).json({ error: `Database error: ${err.message || err}` });
   }
 });
 
