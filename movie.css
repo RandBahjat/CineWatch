@@ -194,7 +194,7 @@ select {
 
 .spinner-ring:nth-child(2) {
   inset: 8px;
-  border-right-color: rgba(229, 9, 20, 0.5);
+  border-right-color: rgba(255, 255, 255, 0.2);
   animation-duration: 0.9s;
   animation-direction: reverse;
 }
@@ -984,7 +984,7 @@ select {
 
 .btn-hero-play:hover {
   background: #e6e6e6;
-  transform: translateY(-2px);
+  
   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.35);
 }
 
@@ -1009,7 +1009,7 @@ select {
 .btn-hero-more:hover {
   background: rgba(255, 255, 255, 0.28);
   border-color: rgba(255, 255, 255, 0.4);
-  transform: translateY(-2px);
+  
 }
 
 .hero-carousel-dots {
@@ -1879,131 +1879,13 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: opacity 0.3s ease;
 }
 
 .video-element {
   width: 100%;
   height: 100%;
   object-fit: contain;
-}
-
-/* Player Overlay Header */
-.video-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 1.5rem 2rem;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 30;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.video-title-info {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-}
-
-/* Animated Go Back Button */
-.video-go-back-btn {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 10px 28px;
-  border: 3px solid transparent;
-  font-size: 13px;
-  background-color: transparent;
-  border-radius: 100px;
-  font-weight: 700;
-  color: rgb(47, 248, 255);
-  box-shadow: 0 0 0 2px rgb(47, 255, 238);
-  cursor: pointer;
-  overflow: hidden;
-  letter-spacing: 0.05em;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-.video-go-back-btn svg {
-  position: absolute;
-  width: 20px;
-  fill: rgb(47, 255, 255);
-  z-index: 9;
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.video-go-back-btn .go-back-arr-1 {
-  left: 16px;
-}
-
-.video-go-back-btn .go-back-arr-2 {
-  right: -25%;
-}
-
-.video-go-back-btn .go-back-circle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
-  background-color: rgb(47, 224, 255);
-  border-radius: 50%;
-  opacity: 0;
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.video-go-back-btn .go-back-text {
-  position: relative;
-  z-index: 1;
-  transform: translateX(12px);
-  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.video-go-back-btn:hover {
-  box-shadow: 0 0 0 12px transparent;
-  color: #212121;
-  border-radius: 12px;
-}
-
-.video-go-back-btn:hover .go-back-arr-1 {
-  left: -25%;
-}
-
-.video-go-back-btn:hover .go-back-arr-2 {
-  right: 16px;
-}
-
-.video-go-back-btn:hover .go-back-text {
-  transform: translateX(-12px);
-}
-
-.video-go-back-btn:hover svg {
-  fill: #212121;
-}
-
-.video-go-back-btn:active {
-  scale: 0.95;
-  box-shadow: 0 0 0 4px greenyellow;
-}
-
-.video-go-back-btn:hover .go-back-circle {
-  width: 220px;
-  height: 220px;
-  opacity: 1;
-}
-
-
-.video-close-x {
-  color: #fff;
-  font-size: 2rem;
 }
 
 .video-center-overlay {
@@ -2049,6 +1931,49 @@ select {
   transition: opacity 0.3s ease;
 }
 
+/* Mouse Catcher */
+.mouse-catcher {
+  position: absolute;
+  inset: 0;
+  z-index: 45;
+  pointer-events: auto;
+}
+.video-container:not(.idle) .mouse-catcher {
+  pointer-events: none;
+}
+
+/*  Back Button (matching details page)  */
+.player-back-btn {
+  position: absolute;
+  top: 1.8rem;
+  left: 2rem;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 50;
+  padding: 0;
+}
+.player-back-btn svg {
+  width: 20px;
+  fill: #fff;
+  transition: transform 0.3s ease;
+}
+.player-back-btn:hover {
+  background: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.4);
+}
+.player-back-btn:hover svg {
+  transform: translateX(-3px);
+}
+
 /* Inactivity Fading for Video Overlays */
 .video-container.idle .video-header {
   opacity: 0;
@@ -2057,7 +1982,7 @@ select {
      When the mouse hits the top of the screen, it catches the event and wakes up the UI! */
 }
 
-.video-container.idle .player-controls-bar {
+.video-container.idle .player-controls-bar, .video-container.idle .player-back-btn {
   opacity: 0;
   pointer-events: none;
 }
@@ -3669,12 +3594,12 @@ select {
   outline: none;
 
   /* Glassmorphism base */
-  background: linear-gradient(135deg, rgba(229, 9, 20, 0.85), rgba(180, 0, 10, 0.9));
+  background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.12),
-    0 8px 32px rgba(229, 9, 20, 0.45),
+    0 8px 32px rgba(0, 0, 0, 0.45),
     0 2px 8px rgba(0, 0, 0, 0.5);
 
   /* Hidden by default */
@@ -3710,10 +3635,10 @@ select {
 
 /* Hover state */
 .back-to-top:hover {
-  background: linear-gradient(135deg, rgba(255, 30, 39, 0.95), rgba(229, 9, 20, 1));
+  background: rgba(255, 255, 255, 0.15); border-color: rgba(255, 255, 255, 0.3);
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.2),
-    0 12px 40px rgba(229, 9, 20, 0.65),
+    0 12px 40px rgba(0, 0, 0, 0.65),
     0 4px 12px rgba(0, 0, 0, 0.5);
   transform: translateY(-3px) scale(1.07);
 }
@@ -3727,7 +3652,7 @@ select {
   transform: translateY(0) scale(0.96);
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.1),
-    0 4px 16px rgba(229, 9, 20, 0.5);
+    0 4px 16px rgba(255, 255, 255, 0.2);
 }
 
 /* Pulsing ring animation */
@@ -3736,7 +3661,7 @@ select {
   position: absolute;
   inset: -4px;
   border-radius: 50%;
-  border: 2px solid rgba(229, 9, 20, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   animation: btt-pulse 2.2s ease-out infinite;
   opacity: 0;
 }
@@ -4006,7 +3931,7 @@ select {
 
 .logo-globe:hover {
   transform: scale(1.18) rotate(-8deg);
-  box-shadow: inset 0 2px 6px rgba(0,0,0,0.5), 0 6px 24px rgba(229, 9, 20, 0.45);
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.5), 0 6px 24px rgba(0, 0, 0, 0.45);
   border-color: var(--primary);
 }
 
@@ -4262,7 +4187,7 @@ select {
 
 .browse-filter-btn:hover {
   background: rgba(229, 9, 20, 0.15);
-  border-color: rgba(229, 9, 20, 0.5);
+  border-color: rgba(255, 255, 255, 0.2);
   color: #fff;
   transform: translateY(-1px);
 }
@@ -4272,7 +4197,7 @@ select {
   border-color: var(--primary);
   color: #fff;
   font-weight: 700;
-  box-shadow: 0 3px 12px rgba(229, 9, 20, 0.45);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.45);
 }
 
 /* ---- Browse Grid ---- */
@@ -4486,7 +4411,7 @@ select {
 
 .page-btn:hover:not(:disabled) {
   background: rgba(229, 9, 20, 0.18);
-  border-color: rgba(229, 9, 20, 0.5);
+  border-color: rgba(255, 255, 255, 0.2);
   color: #fff;
   transform: translateY(-1px);
 }
@@ -4662,7 +4587,7 @@ select {
   border-color: var(--primary);
   color: #fff;
   transform: scale(1.08);
-  box-shadow: 0 0 12px rgba(229, 9, 20, 0.45);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.45);
 }
 
 .nav-user-icon-btn svg {
@@ -4730,7 +4655,7 @@ select {
 
 .logo-globe:hover {
   transform: scale(1.18) rotate(-8deg);
-  box-shadow: inset 0 2px 6px rgba(0,0,0,0.5), 0 6px 24px rgba(229, 9, 20, 0.45);
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.5), 0 6px 24px rgba(0, 0, 0, 0.45);
   border-color: var(--primary);
 }
 
@@ -5232,3 +5157,7 @@ input:-webkit-autofill:active {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+
+
+

@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script src="api.js?v=2" defer></script>
     <script src="movie.js?v=2" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -147,7 +148,14 @@
         <div class="hero-carousel-dots" id="heroDots"></div>
     </section>
 
-    <!-- Full Page Details View -->
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTopBtn" title="Back to top" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </button>
+
+
     <section id="detailsSection" class="hidden">
         <!-- Top bar containing Back and Mute buttons -->
         <div class="details-top-bar">
@@ -332,6 +340,7 @@
                     <button class="browse-filter-btn" data-genre="Crime" data-section="movies">Crime</button>
                     <button class="browse-filter-btn" data-genre="Drama" data-section="movies">Drama</button>
                     <button class="browse-filter-btn" data-genre="Family" data-section="movies">Family</button>
+                    <button class="browse-filter-btn" data-genre="Kids" data-section="movies">Kids</button>
                     <button class="browse-filter-btn" data-genre="History" data-section="movies">History</button>
                     <button class="browse-filter-btn" data-genre="Fantasy" data-section="movies">Fantasy</button>
                     <button class="browse-filter-btn" data-genre="Horror" data-section="movies">Horror</button>
@@ -366,6 +375,7 @@
                     <button class="browse-filter-btn" data-genre="Crime" data-section="series">Crime</button>
                     <button class="browse-filter-btn" data-genre="Drama" data-section="series">Drama</button>
                     <button class="browse-filter-btn" data-genre="Family" data-section="series">Family</button>
+                    <button class="browse-filter-btn" data-genre="Kids" data-section="series">Kids</button>
                     <button class="browse-filter-btn" data-genre="History" data-section="series">History</button>
                     <button class="browse-filter-btn" data-genre="Fantasy" data-section="series">Fantasy</button>
                     <button class="browse-filter-btn" data-genre="Horror" data-section="series">Horror</button>
@@ -513,43 +523,26 @@
     <!-- Custom Video Player Modal -->
     <div class="video-modal-overlay hidden" id="videoModal">
         <div class="video-container">
-            <div class="video-header">
-                <div class="video-title-info">
-                    <button class="video-go-back-btn" id="closePlayerBtn">
-                      <svg viewBox="0 0 24 24" class="go-back-arr-2" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.82843 10.9999L13.1924 5.63589L11.7782 4.22168L4 11.9999L11.7782 19.778L13.1924 18.3638L7.82843 12.9999H20V10.9999H7.82843Z"></path>
-                      </svg>
-                      <span class="go-back-text">GO BACK</span>
-                      <span class="go-back-circle"></span>
-                      <svg viewBox="0 0 24 24" class="go-back-arr-1" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.82843 10.9999L13.1924 5.63589L11.7782 4.22168L4 11.9999L11.7782 19.778L13.1924 18.3638L7.82843 12.9999H20V10.9999H7.82843Z"></path>
-                      </svg>
-                    </button>
-                    <h3 id="playerMovieTitle">Movie Title</h3>
-                    
-                    <div id="playerEpisodeNav" class="hidden" style="margin-left: 1.5rem; display: flex; gap: 0.5rem;">
-                        <button class="btn-secondary-pill" id="playerPrevEpBtn" style="padding: 0.35rem 0.8rem; font-size: 0.9rem;" title="Previous Episode">
-                            <ion-icon name="play-skip-back-outline"></ion-icon>
-                        </button>
-                        <button class="btn-secondary-pill" id="playerNextEpBtn" style="padding: 0.35rem 0.8rem; font-size: 0.9rem;" title="Next Episode">
-                            <ion-icon name="play-skip-forward-outline"></ion-icon>
-                        </button>
-                    </div>
-                </div>
-                <div class="server-select-wrap hidden" id="serverSelectWrap">
-                    <select id="videoServerSelect" class="season-select" style="display:none;">
-                        <option value="vidking">VidKing</option>
-                    </select>
-                </div>
-                <button class="video-close-x" id="closePlayerX">&times;</button>
-            </div>
+
+            <!-- Mouse Catcher for Iframe Hover -->
+            <div class="mouse-catcher" id="mouseCatcher"></div>
+
+            <!-- Back Button -->
+            <button class="player-back-btn" id="closePlayerBtn" title="Go Back">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                </svg>
+            </button>
 
             <!-- HTML5 Video Player -->
             <video id="videoElement" class="video-element" preload="metadata" playsinline>
                 <source src="" type="video/mp4">
                 Your browser does not support HTML5 video.
             </video>
-            
+
+            <!-- Iframe Video Player (For External Embeds) -->
+            <iframe id="iframeElement" class="video-element hidden" src="" width="100%" height="100%" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen allow="autoplay; fullscreen; encrypted-media; picture-in-picture"></iframe>
+
             <!-- Video End Overlay -->
             <div id="videoEndOverlay" class="hidden" style="position: absolute; inset: 0; background: rgba(0,0,0,0.85); z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.5rem; backdrop-filter: blur(8px);">
                 <h2 style="color: white; font-size: 2rem; font-weight: 700;">Episode Finished</h2>
@@ -565,66 +558,77 @@
                     <ion-icon name="refresh-outline"></ion-icon> Replay
                 </button>
             </div>
-            
-            <!-- Iframe Video Player (For External Embeds) -->
-            <iframe id="iframeElement" class="video-element hidden" src="" width="100%" height="100%" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen allow="autoplay; fullscreen; encrypted-media; picture-in-picture"></iframe>
 
             <!-- Center Play/Pause Overlay Animation -->
             <div class="video-center-overlay hidden" id="videoCenterOverlay">
                 <span class="center-play-icon" id="centerPlayIcon"><ion-icon name="play-outline"></ion-icon></span>
             </div>
 
-            <!-- Custom Player Controls Bar -->
-            <div class="player-controls-bar" id="playerControlsBar">
-                <!-- Seek Progress Bar -->
-                <div class="seek-container">
-                    <div class="seek-progress-bg">
-                        <div class="seek-progress-fill" id="seekFill"></div>
+            <!-- Bottom Controls Gradient Overlay -->
+            <div class="player-bottom-area" id="playerControlsBar">
+
+                <!-- Show Info (bottom-left) -->
+                <div class="player-info-area">
+                    <img class="player-show-poster hidden" id="playerShowPoster" src="" alt="" />
+                    <div class="player-info-text">
+                        <div class="player-meta" id="playerMeta"></div>
+                        <div class="player-ep-title" id="playerMovieTitle">Movie Title</div>
+                        <div class="player-ep-overview hidden" id="playerEpOverview"></div>
                     </div>
-                    <input type="range" id="seekBar" class="seek-slider" min="0" max="100" value="0" step="0.1">
-                    <div class="seek-tooltip" id="seekTooltip">00:00</div>
                 </div>
 
+                <!-- Server Select (hidden, accessible via settings) -->
+                <div class="server-select-wrap hidden" id="serverSelectWrap" style="position: absolute; bottom: 90px; right: 2rem; background: rgba(0,0,0,0.85); border: 1px solid rgba(255,255,255,0.15); border-radius: 12px; padding: 0.75rem 1.2rem; backdrop-filter: blur(12px);">
+                    <select id="videoServerSelect" class="season-select" style="display:none;"></select>
+                </div>
+
+                <!-- Progress Bar Row -->
+                <div class="player-progress-row">
+                    <span class="player-time-left" id="currentTimeText">0:00</span>
+                    <div class="seek-container">
+                        <div class="seek-progress-bg">
+                            <div class="seek-progress-fill" id="seekFill"></div>
+                        </div>
+                        <input type="range" id="seekBar" class="seek-slider" min="0" max="100" value="0" step="0.1">
+                        <div class="seek-tooltip" id="seekTooltip">00:00</div>
+                    </div>
+                    <span class="player-time-right" id="durationText">0:00</span>
+                </div>
+
+                <!-- Controls Row -->
                 <div class="controls-row">
+                    <!-- Left Controls -->
                     <div class="controls-left">
                         <button class="ctrl-btn" id="playPauseBtn" title="Play/Pause (Space)"><ion-icon name="play-outline"></ion-icon></button>
-                        <button class="ctrl-btn" id="rewindBtn" title="Rewind 10s"><ion-icon name="play-back-outline"></ion-icon> 10s</button>
-                        <button class="ctrl-btn" id="forwardBtn" title="Forward 10s"><ion-icon name="play-forward-outline"></ion-icon> 10s</button>
-
-                        <!-- Volume Control -->
+                        <button class="ctrl-btn ctrl-skip" id="rewindBtn" title="Rewind 10s">
+                            <ion-icon name="refresh-outline" style="transform: scaleX(-1); display:block;"></ion-icon>
+                            <span class="skip-label">10</span>
+                        </button>
+                        <button class="ctrl-btn ctrl-skip" id="forwardBtn" title="Forward 10s">
+                            <ion-icon name="refresh-outline" style="display:block;"></ion-icon>
+                            <span class="skip-label">10</span>
+                        </button>
                         <div class="volume-container">
                             <button class="ctrl-btn" id="muteBtn" title="Mute/Unmute"><ion-icon name="volume-medium-outline"></ion-icon></button>
-                            <input type="range" id="volumeBar" class="volume-slider" min="0" max="1" step="0.05"
-                                value="1">
-                        </div>
-
-                        <!-- Time Display -->
-                        <div class="time-display">
-                            <span id="currentTimeText">00:00</span> / <span id="durationText">00:00</span>
+                            <input type="range" id="volumeBar" class="volume-slider" min="0" max="1" step="0.05" value="1">
                         </div>
                     </div>
 
+                    <!-- Right Controls -->
                     <div class="controls-right">
-                        <!-- Speed Selector -->
-                        <div class="speed-container">
-                            <span class="speed-label">Speed:</span>
-                            <select id="speedSelect" class="speed-select">
-                                <option value="0.5">0.5x</option>
-                                <option value="1.0" selected>1.0x</option>
-                                <option value="1.25">1.25x</option>
-                                <option value="1.5">1.5x</option>
-                                <option value="2.0">2.0x</option>
-                            </select>
-                        </div>
-
-                        <!-- Fullscreen Button -->
+                        <button class="ctrl-btn" id="playerNextEpBtn" title="Next Episode"><ion-icon name="play-skip-forward-outline"></ion-icon></button>
+                        <button class="ctrl-btn ctrl-btn-label" id="playerEpisodesBtn" title="Episodes">
+                            <ion-icon name="list-outline"></ion-icon>
+                            <span>Episodes</span>
+                        </button>
                         <button class="ctrl-btn" id="fullscreenBtn" title="Fullscreen (F)"><ion-icon name="expand-outline"></ion-icon></button>
-
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
+
 
     <!-- Authentication (Login / Signup) Modal -->
     <div class="modal-overlay hidden" id="authModal" onclick="document.getElementById('authModal').classList.add('hidden')">
