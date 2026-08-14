@@ -396,79 +396,7 @@ const MOVIES = [
           { episode: 3, title: "Spoonful" },
           { episode: 4, title: "In a Tree" },
           { episode: 5, title: "Spied" },
-            {
-    title: "Sex Education",
-    type: "TV Show",
-    year: 2019,
-    rating: 7.8,
-    age: "TV-MA",
-    duration: "55m",
-    genres: ["Drama","Comedy","Romance"],
-    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/4Bpt0ifB31F7Y7F7q77i1R34D6k.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/tD060r8oXjKqU29QzP2aU90dF3h.jpg",
-    videoUrl: "81356",
-    overview: "Insecure Otis has all the answers when it comes to sex advice, thanks to his therapist mom. So rebel Maeve proposes a school sex-therapy clinic.",
-    director: "Laurie Nunn",
-    cast: ["Asa Butterfield","Gillian Anderson","Ncuti Gatwa","Emma Mackey","Connor Swindells","Kedar Williams-Stirling","Aimee Lou Wood"],
-    trending: false,
-    featured: false,
-    cinesrcId: "81356",
-    seasons: [
-      {
-        season: 1,
-        episodes: [
-          { episode: 1, title: "Episode 1" },
-          { episode: 2, title: "Episode 2" },
-          { episode: 3, title: "Episode 3" },
-          { episode: 4, title: "Episode 4" },
-          { episode: 5, title: "Episode 5" },
-          { episode: 6, title: "Episode 6" },
-          { episode: 7, title: "Episode 7" },
-          { episode: 8, title: "Episode 8" }
-        ],
-      },
-      {
-        season: 2,
-        episodes: [
-          { episode: 1, title: "Episode 1" },
-          { episode: 2, title: "Episode 2" },
-          { episode: 3, title: "Episode 3" },
-          { episode: 4, title: "Episode 4" },
-          { episode: 5, title: "Episode 5" },
-          { episode: 6, title: "Episode 6" },
-          { episode: 7, title: "Episode 7" },
-          { episode: 8, title: "Episode 8" }
-        ],
-      },
-      {
-        season: 3,
-        episodes: [
-          { episode: 1, title: "Episode 1" },
-          { episode: 2, title: "Episode 2" },
-          { episode: 3, title: "Episode 3" },
-          { episode: 4, title: "Episode 4" },
-          { episode: 5, title: "Episode 5" },
-          { episode: 6, title: "Episode 6" },
-          { episode: 7, title: "Episode 7" },
-          { episode: 8, title: "Episode 8" }
-        ],
-      },
-      {
-        season: 4,
-        episodes: [
-          { episode: 1, title: "Episode 1" },
-          { episode: 2, title: "Episode 2" },
-          { episode: 3, title: "Episode 3" },
-          { episode: 4, title: "Episode 4" },
-          { episode: 5, title: "Episode 5" },
-          { episode: 6, title: "Episode 6" },
-          { episode: 7, title: "Episode 7" },
-          { episode: 8, title: "Episode 8" }
-        ],
-      }
-    ]
-  },
-  { episode: 6, title: "Treasure Island" },
+            { episode: 6, title: "Treasure Island" },
           { episode: 7, title: "737" },
           { episode: 8, title: "These Are the Bad Guys" },
         ],
@@ -771,6 +699,78 @@ const MOVIES = [
 
   },
 
+  {
+    title: "Sex Education",
+    type: "TV Show",
+    year: 2019,
+    rating: 7.8,
+    age: "TV-MA",
+    duration: "55m",
+    genres: ["Drama","Comedy","Romance"],
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/4Bpt0ifB31F7Y7F7q77i1R34D6k.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/tD060r8oXjKqU29QzP2aU90dF3h.jpg",
+    videoUrl: "81356",
+    overview: "Insecure Otis has all the answers when it comes to sex advice, thanks to his therapist mom. So rebel Maeve proposes a school sex-therapy clinic.",
+    director: "Laurie Nunn",
+    cast: ["Asa Butterfield","Gillian Anderson","Ncuti Gatwa","Emma Mackey","Connor Swindells","Kedar Williams-Stirling","Aimee Lou Wood"],
+    trending: false,
+    featured: false,
+    cinesrcId: "81356",
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Episode 1" },
+          { episode: 2, title: "Episode 2" },
+          { episode: 3, title: "Episode 3" },
+          { episode: 4, title: "Episode 4" },
+          { episode: 5, title: "Episode 5" },
+          { episode: 6, title: "Episode 6" },
+          { episode: 7, title: "Episode 7" },
+          { episode: 8, title: "Episode 8" }
+        ],
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "Episode 1" },
+          { episode: 2, title: "Episode 2" },
+          { episode: 3, title: "Episode 3" },
+          { episode: 4, title: "Episode 4" },
+          { episode: 5, title: "Episode 5" },
+          { episode: 6, title: "Episode 6" },
+          { episode: 7, title: "Episode 7" },
+          { episode: 8, title: "Episode 8" }
+        ],
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: "Episode 1" },
+          { episode: 2, title: "Episode 2" },
+          { episode: 3, title: "Episode 3" },
+          { episode: 4, title: "Episode 4" },
+          { episode: 5, title: "Episode 5" },
+          { episode: 6, title: "Episode 6" },
+          { episode: 7, title: "Episode 7" },
+          { episode: 8, title: "Episode 8" }
+        ],
+      },
+      {
+        season: 4,
+        episodes: [
+          { episode: 1, title: "Episode 1" },
+          { episode: 2, title: "Episode 2" },
+          { episode: 3, title: "Episode 3" },
+          { episode: 4, title: "Episode 4" },
+          { episode: 5, title: "Episode 5" },
+          { episode: 6, title: "Episode 6" },
+          { episode: 7, title: "Episode 7" },
+          { episode: 8, title: "Episode 8" }
+        ],
+      }
+    ]
+  },,
   {
     title: "Spider-Man: Far From Home",
     type: "Movie", // Use "Movie" or "TV Show"
