@@ -18307,7 +18307,6 @@ const MOVIES = [
       },
     ]
   },
-,
   {
     title: "The Rookie",
     type: "TV Show",
