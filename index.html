@@ -284,17 +284,24 @@
             </div>
         </section>
 
+        <!-- Continue Watching View (Dynamic Full-Page) -->
+        <section class="shelf-section hidden" id="continueSection">
+            <div class="movies-grid" id="continueGrid"></div>
+            <div class="empty-state hidden" id="emptyContinue">
+                <div class="empty-icon"><ion-icon name="play-circle-outline"></ion-icon></div>
+                <h3 id="emptyContinueTitle">No titles in Continue Watching</h3>
+                <p id="emptyContinueText">Movies and series you start watching will appear here so you can easily pick up where you left off.</p>
+                <button class="btn btn-primary mt-4" id="exploreContinueBtn">Explore Movies</button>
+            </div>
+        </section>
+
         <!-- My Watchlist View (Dynamic) -->
         <section class="shelf-section hidden" id="watchlistSection">
-            <div class="shelf-header">
-                <h2 class="shelf-title">My Watchlist</h2>
-                <span class="shelf-subtitle" id="watchlistCountText" style="display: none;">0 saved movies</span>
-            </div>
             <div class="movies-grid" id="watchlistGrid"></div>
             <div class="empty-state hidden" id="emptyWatchlist">
                 <div class="empty-icon"><ion-icon name="heart-dislike-outline"></ion-icon></div>
                 <h3>Your watchlist is empty</h3>
-                <p>Explore titles and tap the heart icon to save your favorite movies here!</p>
+                <p>Explore titles and tap the heart icon to save your favorite movies and series here!</p>
                 <button class="btn btn-primary mt-4" id="exploreBtn">Explore Movies</button>
             </div>
         </section>

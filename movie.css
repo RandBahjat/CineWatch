@@ -1407,29 +1407,52 @@ select {
   gap: 1.6rem;
 }
 
+/* Standalone page views top spacing below fixed/absolute navbar */
+#continueSection,
+#watchlistSection,
+#filteredSection,
+.browse-section {
+  padding-top: 5.5rem;
+}
+
 /* Empty State */
 .empty-state {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 3.5rem 2rem;
   background: var(--bg-card);
   border-radius: var(--radius-lg);
   border: 1px dashed var(--border-color);
-  max-width: 500px;
+  max-width: 520px;
   margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .empty-icon {
   font-size: 3.5rem;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
 }
 
 .empty-state h3 {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
+  color: #fff;
 }
 
 .empty-state p {
   color: var(--text-dim);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.empty-state .btn {
+  margin-top: 1.25rem;
 }
 
 /* Modals General */
@@ -1512,6 +1535,7 @@ select {
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
+  background-color: var(--bg-dark);
 }
 
 #detailsSection::-webkit-scrollbar {
@@ -1525,23 +1549,47 @@ select {
   width: 100%;
   height: 100vh;
   z-index: 0;
+  overflow: hidden;
 }
 
 .details-bg {
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-position: top center;
-  /* Removed brightness filter so the center is fully clear */
+  background-position: center 10%;
+  background-repeat: no-repeat;
 }
 
 .details-bg-gradient-overlay {
   position: absolute;
   inset: 0;
   background: 
-    linear-gradient(to bottom, rgba(11, 12, 16, 0.85) 0%, transparent 18%),
-    linear-gradient(to right, rgba(11, 12, 16, 0.95) 0%, rgba(11, 12, 16, 0.7) 25%, transparent 55%),
-    linear-gradient(to top, #0b0c10 0%, rgba(11, 12, 16, 0.95) 15%, rgba(11, 12, 16, 0.8) 30%, rgba(11, 12, 16, 0.4) 55%, transparent 80%);
+    /* Subtle top vignette for back button */
+    linear-gradient(to bottom, rgba(5, 7, 10, 0.75) 0%, rgba(5, 7, 10, 0.15) 12%, transparent 22%),
+    /* Soft left shadow for text legibility */
+    linear-gradient(to right, rgba(5, 7, 10, 0.92) 0%, rgba(5, 7, 10, 0.7) 30%, rgba(5, 7, 10, 0.15) 55%, transparent 70%),
+    /* Low bottom shadow fade like home hero */
+    linear-gradient(to top, var(--bg-dark) 0%, rgba(5, 7, 10, 0.85) 8%, rgba(5, 7, 10, 0.2) 18%, transparent 28%);
+  pointer-events: none;
+}
+
+.details-hero-bg::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(5, 7, 10, 0.2) 30%,
+    rgba(5, 7, 10, 0.7) 65%,
+    rgba(5, 7, 10, 0.95) 88%,
+    var(--bg-dark) 100%
+  );
+  z-index: 2;
+  pointer-events: none;
 }
 
 /* Hide heart/watchlist button on 'You may like' cards */
@@ -1551,22 +1599,26 @@ select {
 
 .details-hero-container {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 5rem 4.5rem 2.8rem;
+  box-sizing: border-box;
 }
 
 .details-extra-content {
   position: relative;
   z-index: 10;
-  padding: 2rem 5% 4rem;
-  background: linear-gradient(to bottom, transparent 0%, var(--bg-dark) 8%, var(--bg-dark) 100%);
+  padding: 1.5rem 4.5rem 4rem;
+  background: var(--bg-dark);
 }
 
 .details-content-wrapper {
-  position: absolute;
+  position: relative;
   z-index: 10;
-  bottom: 22%;
-  left: 5%;
+  max-width: 680px;
 }
 
 .details-top-bar {
@@ -1604,8 +1656,8 @@ select {
 }
 
 .details-hero-info {
-  max-width: 900px;
-  margin-bottom: 4rem;
+  max-width: 680px;
+  margin-bottom: 0;
 }
 
 .details-title-large {
@@ -2764,30 +2816,26 @@ select {
   }
   
   .details-hero-container {
-    height: auto;
-    min-height: auto;
+    min-height: 70vh;
+    padding: 4.5rem 1.2rem 2rem;
   }
   
   .details-hero-bg {
-    height: 60vh;
+    height: 70vh;
   }
   
   .details-bg {
-    background-position: top center !important;
-  }
-  
-  .details-bg-gradient-overlay {
-    background: 
-      linear-gradient(to bottom, rgba(11, 12, 16, 0.85) 0%, transparent 18%),
-      linear-gradient(to top, #0b0c10 0%, rgba(11, 12, 16, 0.95) 25%, rgba(11, 12, 16, 0.7) 50%, transparent 85%);
+    background-position: center 10% !important;
   }
   
   .details-content-wrapper {
     position: relative;
-    bottom: auto;
-    left: 0;
-    padding: 0 1rem;
-    margin-top: 45vh;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .details-extra-content {
+    padding: 1.5rem 1.2rem 3rem;
   }
   
   /* Details Modal */

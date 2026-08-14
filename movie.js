@@ -7628,7 +7628,7 @@ const MOVIES = [
     duration: "1h",
     genres: ["Science Fiction", "Horror", "Mystery", "Drama", "Supernatural"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uOOtwVbSr4QDjAGIifLDwpb2Pdl.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/2MaumbgBlW1NoPo3ZJO38A6v7OS.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
     videoUrl: "",
     overview: "In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits after a local boy vanishes without a trace. As they search for answers, the children unravel a series of extraordinary mysteries involving a mysterious girl with unusual abilities, a hidden parallel dimension, and terrifying creatures lurking just beyond their small town.",
     director: "The Duffer Brothers (Matt Duffer, Ross Duffer)",
@@ -9188,6 +9188,984 @@ const MOVIES = [
       },
     ]
   },
+{
+    title: "Wednesday",
+    type: "TV Show",
+    year: 2022,
+    rating: 8.0,
+    age: "TV-14",
+    duration: "45m",
+    genres: ["Comedy", "Horror","Mystery","Fantasy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9PFonBhy4cQy7Jz20NpMygczOkv.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/AeJgnEXaFcsGzU5Y4Nrq9WggAQ5.jpg",
+    videoUrl: "",
+    overview: "Wednesday Addams is sent to Nevermore Academy, a bizarre boarding school where she attempts to master her emerging psychic ability, thwart a monstrous killing spree that has terrorized the local town, and solve a supernatural mystery that entangled her parents 25 years ago — all while navigating her new relationships at the school.",
+    director: "Alfred Gough, Miles Millar",
+    cast: ["Jenna Ortega, Gwendoline Christie, Hunter Doohan, Percy Hynes White, Emma Myers, Joy Sunday, Riki Lindhome, Christina Ricci, Catherine Zeta-Jones"],
+    trending: false,
+    featured: false,
+    cinesrcId: "119051", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Wednesday's Child Is Full of Woe" },
+          { episode: 2, title: "Woe Is the Loneliest Number" },
+          { episode: 3, title: "Friend or Woe" },
+          { episode: 4, title: "Woe What a Night" },
+          { episode: 5, title: "You Reap What You Woe" },
+          { episode: 6, title: "Quid Pro Woe" },
+          { episode: 7, title: "If You Don't Woe Me by Now" },
+          { episode: 8, title: "A Murder of Woes" },
+        ],
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "Here We Woe Again" },
+          { episode: 2, title: "The Devil You Woe" },
+          { episode: 3, title: "Call of the Woe" },
+          { episode: 4, title: "If These Woes Could Talk" },
+          { episode: 5, title: "Hyde and Woe Seek" },
+          { episode: 6, title: "Woe Thyself" },
+          { episode: 7, title: "Woe Me the Money" },
+          { episode: 8, title: "This Means Woe" },
+        ],
+      },
+    ]
+  },
+{
+    title: "The Sopranos",
+    type: "TV Show",
+    year: 1999,
+    rating: 9.2,
+    age: "TV-MA",
+    duration: "55m",
+    genres: ["Crime", "Drama"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rTc7ZXdroqjkKivFPvCPX0Ru7uw.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/isJ4POBlbH5kmHVgbdP4gC4nFqO.jpg",
+    videoUrl: "",
+    overview: "New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling. As Tony navigates the pressures of running a criminal empire while raising a family, the series digs deep into the psychology of a modern mafia don caught between two worlds — one of ruthless violence, the other of suburban domesticity.",
+    director: "David Chase",
+    cast: ["James Gandolfini, Lorraine Bracco, Edie Falco, Michael Imperioli, Dominic Chianese, Steven Van Zandt, Tony Sirico, Robert Iler, Jamie-Lynn Sigler, Aida Turturro"],
+    trending: false,
+    featured: false,
+    cinesrcId: "1398", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Pilot" },
+          { episode: 2, title: "46 Long" },
+          { episode: 3, title: "Denial, Anger, Acceptance" },
+          { episode: 4, title: "Meadowlands" },
+          { episode: 5, title: "College" },
+          { episode: 6, title: "Pax Soprana" },
+          { episode: 7, title: "Down Neck" },
+          { episode: 8, title: "The Legend of Tennessee Moltisanti" },
+          { episode: 9, title: "Boca" },
+          { episode: 10, title: "A Hit Is a Hit" },
+          { episode: 11, title: "Nobody Knows Anything" },
+          { episode: 12, title: "Isabella" },
+          { episode: 13, title: "I Dream of Jeannie Cusamano" },
+        ],
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "Guy Walks Into a Psychiatrist's Office" },
+          { episode: 2, title: "Do Not Resuscitate" },
+          { episode: 3, title: "Toodle-Fucking-Oo" },
+          { episode: 4, title: "Commendatori" },
+          { episode: 5, title: "Big Girls Don't Cry" },
+          { episode: 6, title: "The Happy Wanderer" },
+          { episode: 7, title: "D-Girl" },
+          { episode: 8, title: "Full Leather Jacket" },
+          { episode: 9, title: "From Where to Eternity" },
+          { episode: 10, title: "Bust-Out" },
+          { episode: 11, title: "House Arrest" },
+          { episode: 12, title: "The Knight in White Satin Armor" },
+          { episode: 13, title: "Funhouse" },
+        ],
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: "Mr. Ruggerio's Neighborhood" },
+          { episode: 2, title: "Proshai, Livushka" },
+          { episode: 3, title: "Fortunate Son" },
+          { episode: 4, title: "Employee of the Month" },
+          { episode: 5, title: "Another Toothpick" },
+          { episode: 6, title: "University" },
+          { episode: 7, title: "Second Opinion" },
+          { episode: 8, title: "He Is Risen" },
+          { episode: 9, title: "The Telltale Moozadell" },
+          { episode: 10, title: "To Save Us All from Satan's Power" },
+          { episode: 11, title: "Pine Barrens" },
+          { episode: 12, title: "Amour Fou" },
+          { episode: 13, title: "Army of One" },
+        ],
+      },
+      {
+        season: 4,
+        episodes: [
+          { episode: 1, title: "For All Debts Public and Private" },
+          { episode: 2, title: "No Show" },
+          { episode: 3, title: "Christopher" },
+          { episode: 4, title: "The Weight" },
+          { episode: 5, title: "Pie-O-My" },
+          { episode: 6, title: "Everybody Hurts" },
+          { episode: 7, title: "Watching Too Much Television" },
+          { episode: 8, title: "Mergers and Acquisitions" },
+          { episode: 9, title: "Whoever Did This" },
+          { episode: 10, title: "The Strong, Silent Type" },
+          { episode: 11, title: "Calling All Cars" },
+          { episode: 12, title: "Eloise" },
+          { episode: 13, title: "Whitecaps" },
+        ],
+      },
+      {
+        season: 5,
+        episodes: [
+          { episode: 1, title: "Two Tonys" },
+          { episode: 2, title: "Rat Pack" },
+          { episode: 3, title: "Where's Johnny?" },
+          { episode: 4, title: "All Happy Families" },
+          { episode: 5, title: "Irregular Around the Margins" },
+          { episode: 6, title: "Sentimental Education" },
+          { episode: 7, title: "In Camelot" },
+          { episode: 8, title: "Marco Polo" },
+          { episode: 9, title: "Unidentified Black Males" },
+          { episode: 10, title: "Cold Cuts" },
+          { episode: 11, title: "The Test Dream" },
+          { episode: 12, title: "Long Term Parking" },
+          { episode: 13, title: "All Due Respect" },
+        ],
+      },
+      {
+        season: 6,
+        episodes: [
+          { episode: 1, title: "Members Only" },
+          { episode: 2, title: "Join the Club" },
+          { episode: 3, title: "Mayham" },
+          { episode: 4, title: "The Fleshy Part of the Thigh" },
+          { episode: 5, title: "Mr. & Mrs. John Sacrimoni Request" },
+          { episode: 6, title: "Live Free or Die" },
+          { episode: 7, title: "Luxury Lounge" },
+          { episode: 8, title: "Johnny Cakes" },
+          { episode: 9, title: "The Ride" },
+          { episode: 10, title: "Moe n' Joe" },
+          { episode: 11, title: "Cold Stones" },
+          { episode: 12, title: "Kaisha" },
+          { episode: 13, title: "Soprano Home Movies" },
+          { episode: 14, title: "Stage 5" },
+          { episode: 15, title: "Remember When" },
+          { episode: 16, title: "Chasing It" },
+          { episode: 17, title: "Walk Like a Man" },
+          { episode: 18, title: "Kennedy and Heidi" },
+          { episode: 19, title: "The Second Coming" },
+          { episode: 20, title: "The Blue Comet" },
+          { episode: 21, title: "Made in America" },
+        ],
+      },
+    ]
+  },
+  {
+    title: "Lucifer",
+    type: "TV Show",
+    year: 2016,
+    rating: 8.5,
+    age: "TV-14",
+    duration: "45m",
+    genres: ["Crime", "Drama", "Fantasy", "Mystery"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ekZobS8isE6mA53RAiGDG93hBxL.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/h48Dpb7ljv8WQvVdyFWVLz64h4G.jpg",
+    videoUrl: "",
+    overview: "Bored and unhappy as the Lord of Hell, Lucifer Morningstar has abandoned his throne and retired to L.A., where he owns Lux, an upscale nightclub. Charming, charismatic and devilishly handsome, Lucifer is enjoying his retirement until a beautiful pop star is brutally murdered outside his club. When Detective Chloe Decker investigates the crime, Lucifer finds himself drawn to her and begins using his powers of persuasion to help the LAPD punish criminals.",
+    director: "Tom Kapinos",
+    cast: ["Tom Ellis, Lauren German, Kevin Alejandro, D.B. Woodside, Lesley-Ann Brandt, Aimee Garcia, Rachael Harris, Scarlett Estevez"],
+    trending: false,
+    featured: false,
+    cinesrcId: "63174",
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Pilot" },
+          { episode: 2, title: "Lucifer, Stay. Good Devil." },
+          { episode: 3, title: "The Would-Be Prince of Darkness" },
+          { episode: 4, title: "Manly Whatnots" },
+          { episode: 5, title: "Sweet Kicks" },
+          { episode: 6, title: "Favorite Son" },
+          { episode: 7, title: "Wingman" },
+          { episode: 8, title: "Et Tu, Doctor?" },
+          { episode: 9, title: "A Priest Walks Into a Bar" },
+          { episode: 10, title: "Pops" },
+          { episode: 11, title: "St. Lucifer" },
+          { episode: 12, title: "#TeamLucifer" },
+          { episode: 13, title: "Take Me Back to Hell" },
+        ],
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "Everything's Coming Up Lucifer" },
+          { episode: 2, title: "Liar, Liar, Slutty Dress on Fire" },
+          { episode: 3, title: "Sin-Eater" },
+          { episode: 4, title: "Lady Parts" },
+          { episode: 5, title: "Weaponizer" },
+          { episode: 6, title: "Monster" },
+          { episode: 7, title: "My Little Monkey" },
+          { episode: 8, title: "Trip to Stabby Town" },
+          { episode: 9, title: "Homewrecker" },
+          { episode: 10, title: "Quid Pro Ho" },
+          { episode: 11, title: "Stewardess Interruptus" },
+          { episode: 12, title: "Love Handles" },
+          { episode: 13, title: "A Good Day to Die" },
+          { episode: 14, title: "Candy Morningstar" },
+          { episode: 15, title: "Deceptive Little Parasite" },
+          { episode: 16, title: "God Johnson" },
+          { episode: 17, title: "Sympathy for the Goddess" },
+          { episode: 18, title: "The Good, the Bad and the Crispy" },
+        ],
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: "They're Back, Aren't They?" },
+          { episode: 2, title: "The One with the Baby Carrot" },
+          { episode: 3, title: "Mr. and Mrs. Mazikeen Smith" },
+          { episode: 4, title: "What Would Lucifer Do?" },
+          { episode: 5, title: "Welcome Back, Charlotte Richards" },
+          { episode: 6, title: "Vegas With Some Radish" },
+          { episode: 7, title: "Off the Record" },
+          { episode: 8, title: "Chloe Does Lucifer" },
+          { episode: 9, title: "The Sinnerman" },
+          { episode: 10, title: "The Sin Bin" },
+          { episode: 11, title: "City of Angels?" },
+          { episode: 12, title: "All About Her" },
+          { episode: 13, title: "Til Death Do Us Part" },
+          { episode: 14, title: "My Brother's Keeper" },
+          { episode: 15, title: "High School Poppycock" },
+          { episode: 16, title: "Infernal Guinea Pig" },
+          { episode: 17, title: "Let Pinhead Sing" },
+          { episode: 18, title: "The Last Heartbreak" },
+          { episode: 19, title: "Orange Is the New Maze" },
+          { episode: 20, title: "The Angel of San Bernardino" },
+          { episode: 21, title: "Anything Pierce Can Do I Can Do Better" },
+          { episode: 22, title: "All Hands on Decker" },
+          { episode: 23, title: "Quintessential Deckerstar" },
+          { episode: 24, title: "A Devil of My Word" },
+          { episode: 25, title: "BooNormal" },
+          { episode: 26, title: "Once Upon a Time" },
+        ],
+      },
+      {
+        season: 4,
+        episodes: [
+          { episode: 1, title: "Everything's Okay" },
+          { episode: 2, title: "Somebody's Been Reading Dante's Inferno" },
+          { episode: 3, title: "O, Ye of Little Faith, Father" },
+          { episode: 4, title: "All About Eve" },
+          { episode: 5, title: "Expire Erect" },
+          { episode: 6, title: "Orgy Pants to Work" },
+          { episode: 7, title: "Devil Is as Devil Does" },
+          { episode: 8, title: "Super Bad Boyfriend" },
+          { episode: 9, title: "Save Lucifer" },
+          { episode: 10, title: "Who's da New King of Hell?" },
+        ],
+      },
+      {
+        season: 5,
+        episodes: [
+          { episode: 1, title: "Really Sad Devil Guy" },
+          { episode: 2, title: "Lucifer! Lucifer! Lucifer!" },
+          { episode: 3, title: "¡Diablo!" },
+          { episode: 4, title: "It Never Ends Well for the Chicken" },
+          { episode: 5, title: "Detective Amenadiel" },
+          { episode: 6, title: "BluBallz" },
+          { episode: 7, title: "Our Mojo" },
+          { episode: 8, title: "Spoiler Alert" },
+          { episode: 9, title: "Family Dinner" },
+          { episode: 10, title: "Bloody Celestial Karaoke Jam" },
+          { episode: 11, title: "Resting Devil Face" },
+          { episode: 12, title: "Daniel Espinoza: Naked and Afraid" },
+          { episode: 13, title: "A Little Harmless Stalking" },
+          { episode: 14, title: "Nothing Lasts Forever" },
+          { episode: 15, title: "Is This Really How It's Going to End?!" },
+          { episode: 16, title: "A Chance at a Happy Ending" },
+        ],
+      },
+      {
+        season: 6,
+        episodes: [
+          { episode: 1, title: "Nothing Ever Changes Around Here" },
+          { episode: 2, title: "Buckets of Baggage" },
+          { episode: 3, title: "Yabba Dabba Do Me" },
+          { episode: 4, title: "Pin the Tail on the Daddy" },
+          { episode: 5, title: "The Murder of Lucifer Morningstar" },
+          { episode: 6, title: "A Lot Dirtier Than That" },
+          { episode: 7, title: "My Best Fiend's Wedding" },
+          { episode: 8, title: "Save the Devil, Save the World" },
+          { episode: 9, title: "Goodbye, Lucifer" },
+          { episode: 10, title: "Partners 'Til the End" },
+        ],
+      },
+    ]
+  },
+  {
+    title: "The Vampire Diaries",
+    type: "TV Show",
+    year: 2009,
+    rating: 7.7,
+    age: "TV-14",
+    duration: "43m",
+    genres: ["Drama","Fantasy","Horror","Romance","Mystery"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/b3vl6wV1W8PBezFfntKTrhrehCY.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/728TjRh8R1KpHd51dqOvXgmgVtS.jpg",
+    videoUrl: "",
+    overview: "The story of two vampire brothers, Stefan and Damon Salvatore, who have been at war for centuries. When they return to their hometown of Mystic Falls, Virginia, they both become obsessed with Elena Gilbert, a high school girl who bears a striking resemblance to the vampire Katherine Pierce, the woman who turned them both centuries ago.",
+    director: "Julie Plec, Kevin Williamson",
+    cast: ["Nina Dobrev, Paul Wesley, Ian Somerhalder, Kat Graham, Candice King, Zach Roerig, Michael Trevino, Matthew Davis, Steven R. McQueen, Joseph Morgan"],
+    trending: false,
+    featured: false,
+    cinesrcId: "18165",
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Pilot" },
+          { episode: 2, title: "The Night of the Comet" },
+          { episode: 3, title: "Friday Night Bites" },
+          { episode: 4, title: "Family Ties" },
+          { episode: 5, title: "You're Undead to Me" },
+          { episode: 6, title: "Lost Girls" },
+          { episode: 7, title: "Haunted" },
+          { episode: 8, title: "162 Candles" },
+          { episode: 9, title: "History Repeating" },
+          { episode: 10, title: "The Turning Point" },
+          { episode: 11, title: "Bloodlines" },
+          { episode: 12, title: "Unpleasantville" },
+          { episode: 13, title: "Children of the Damned" },
+          { episode: 14, title: "Fool Me Once" },
+          { episode: 15, title: "A Few Good Men" },
+          { episode: 16, title: "There Goes the Neighborhood" },
+          { episode: 17, title: "Let the Right One In" },
+          { episode: 18, title: "Under Control" },
+          { episode: 19, title: "Miss Mystic Falls" },
+          { episode: 20, title: "Blood Brothers" },
+          { episode: 21, title: "Isobel" },
+          { episode: 22, title: "Founder's Day" },
+        ],
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "The Return" },
+          { episode: 2, title: "Brave New World" },
+          { episode: 3, title: "Bad Moon Rising" },
+          { episode: 4, title: "Memory Lane" },
+          { episode: 5, title: "Kill or Be Killed" },
+          { episode: 6, title: "Plan B" },
+          { episode: 7, title: "Masquerade" },
+          { episode: 8, title: "Rose" },
+          { episode: 9, title: "Katerina" },
+          { episode: 10, title: "The Sacrifice" },
+          { episode: 11, title: "By the Light of the Moon" },
+          { episode: 12, title: "The Descent" },
+          { episode: 13, title: "Daddy Issues" },
+          { episode: 14, title: "Crying Wolf" },
+          { episode: 15, title: "The Dinner Party" },
+          { episode: 16, title: "The House Guest" },
+          { episode: 17, title: "Know Thy Enemy" },
+          { episode: 18, title: "The Last Dance" },
+          { episode: 19, title: "Klaus" },
+          { episode: 20, title: "The Last Day" },
+          { episode: 21, title: "The Sun Also Rises" },
+          { episode: 22, title: "As I Lay Dying" },
+        ],
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: "The Birthday" },
+          { episode: 2, title: "The Hybrid" },
+          { episode: 3, title: "The End of the Affair" },
+          { episode: 4, title: "Disturbing Behavior" },
+          { episode: 5, title: "The Reckoning" },
+          { episode: 6, title: "Smells Like Teen Spirit" },
+          { episode: 7, title: "Ghost World" },
+          { episode: 8, title: "Ordinary People" },
+          { episode: 9, title: "Homecoming" },
+          { episode: 10, title: "The New Deal" },
+          { episode: 11, title: "Our Town" },
+          { episode: 12, title: "The Ties That Bind" },
+          { episode: 13, title: "Bringing Out the Dead" },
+          { episode: 14, title: "Dangerous Liaisons" },
+          { episode: 15, title: "All My Children" },
+          { episode: 16, title: "1912" },
+          { episode: 17, title: "Break on Through" },
+          { episode: 18, title: "The Murder of One" },
+          { episode: 19, title: "Heart of Darkness" },
+          { episode: 20, title: "Do Not Go Gentle" },
+          { episode: 21, title: "Before Sunset" },
+          { episode: 22, title: "The Departed" },
+        ],
+      },
+      {
+        season: 4,
+        episodes: [
+          { episode: 1, title: "Growing Pains" },
+          { episode: 2, title: "Memorial" },
+          { episode: 3, title: "The Rager" },
+          { episode: 4, title: "The Five" },
+          { episode: 5, title: "The Killer" },
+          { episode: 6, title: "We All Go a Little Mad Sometimes" },
+          { episode: 7, title: "My Brother's Keeper" },
+          { episode: 8, title: "We'll Always Have Bourbon Street" },
+          { episode: 9, title: "O Come, All Ye Faithful" },
+          { episode: 10, title: "After School Special" },
+          { episode: 11, title: "Catch Me If You Can" },
+          { episode: 12, title: "A View to a Kill" },
+          { episode: 13, title: "Into the Wild" },
+          { episode: 14, title: "Down the Rabbit Hole" },
+          { episode: 15, title: "Stand by Me" },
+          { episode: 16, title: "Bring It On" },
+          { episode: 17, title: "Because the Night" },
+          { episode: 18, title: "American Gothic" },
+          { episode: 19, title: "Pictures of You" },
+          { episode: 20, title: "The Originals" },
+          { episode: 21, title: "She's Come Undone" },
+          { episode: 22, title: "The Walking Dead" },
+          { episode: 23, title: "Graduation" },
+        ],
+      },
+      {
+        season: 5,
+        episodes: [
+          { episode: 1, title: "I Know What You Did Last Summer" },
+          { episode: 2, title: "True Lies" },
+          { episode: 3, title: "Original Sin" },
+          { episode: 4, title: "For Whom the Bell Tolls" },
+          { episode: 5, title: "Monster's Ball" },
+          { episode: 6, title: "Handle with Care" },
+          { episode: 7, title: "Death and the Maiden" },
+          { episode: 8, title: "Dead Man on Campus" },
+          { episode: 9, title: "The Cell" },
+          { episode: 10, title: "Fifty Shades of Grayson" },
+          { episode: 11, title: "500 Years of Solitude" },
+          { episode: 12, title: "The Devil Inside" },
+          { episode: 13, title: "Total Eclipse of the Heart" },
+          { episode: 14, title: "No Exit" },
+          { episode: 15, title: "Gone Girl" },
+          { episode: 16, title: "While You Were Sleeping" },
+          { episode: 17, title: "Rescue Me" },
+          { episode: 18, title: "Resident Evil" },
+          { episode: 19, title: "Man on Fire" },
+          { episode: 20, title: "What Lies Beneath" },
+          { episode: 21, title: "Promised Land" },
+          { episode: 22, title: "Home" },
+        ],
+      },
+      {
+        season: 6,
+        episodes: [
+          { episode: 1, title: "I'll Remember" },
+          { episode: 2, title: "Yellow Ledbetter" },
+          { episode: 3, title: "Welcome to Paradise" },
+          { episode: 4, title: "Black Hole Sun" },
+          { episode: 5, title: "The World Has Turned and Left Me Here" },
+          { episode: 6, title: "The More You Ignore Me, the Closer I Get" },
+          { episode: 7, title: "Do You Remember the First Time?" },
+          { episode: 8, title: "Fade Into You" },
+          { episode: 9, title: "I Alone" },
+          { episode: 10, title: "Christmas Through Your Eyes" },
+          { episode: 11, title: "Woke Up with a Monster" },
+          { episode: 12, title: "Prayer for the Dying" },
+          { episode: 13, title: "The Day I Tried to Live" },
+          { episode: 14, title: "Stay" },
+          { episode: 15, title: "Let Her Go" },
+          { episode: 16, title: "The Downward Spiral" },
+          { episode: 17, title: "A Bird in a Gilded Cage" },
+          { episode: 18, title: "I Could Never Love Like That" },
+          { episode: 19, title: "Because" },
+          { episode: 20, title: "I'd Leave My Happy Home for You" },
+          { episode: 21, title: "I'll Wed You in the Golden Summertime" },
+          { episode: 22, title: "I'm Thinking of You All the While" },
+        ],
+      },
+      {
+        season: 7,
+        episodes: [
+          { episode: 1, title: "Day One of Twenty-Two Thousand, Give or Take" },
+          { episode: 2, title: "Never Let Me Go" },
+          { episode: 3, title: "Age of Innocence" },
+          { episode: 4, title: "I Carry Your Heart with Me" },
+          { episode: 5, title: "Live Through This" },
+          { episode: 6, title: "Best Served Cold" },
+          { episode: 7, title: "Mommie Dearest" },
+          { episode: 8, title: "Hold Me, Thrill Me, Kiss Me, Kill Me" },
+          { episode: 9, title: "Cold as Ice" },
+          { episode: 10, title: "Hell is Other People" },
+          { episode: 11, title: "Things We Lost in the Fire" },
+          { episode: 12, title: "Postcards from the Edge" },
+          { episode: 13, title: "This Woman's Work" },
+          { episode: 14, title: "Moonlight on the Bayou" },
+          { episode: 15, title: "I Would for You" },
+          { episode: 16, title: "Days of Future Past" },
+          { episode: 17, title: "I Went to the Woods" },
+          { episode: 18, title: "One Way or Another" },
+          { episode: 19, title: "Somebody That I Used to Know" },
+          { episode: 20, title: "Kill 'Em All" },
+          { episode: 21, title: "Requiem for a Dream" },
+          { episode: 22, title: "Gods and Monsters" },
+        ],
+      },
+      {
+        season: 8,
+        episodes: [
+          { episode: 1, title: "Hello Brother" },
+          { episode: 2, title: "Today Will Be Different" },
+          { episode: 3, title: "You Decided That I Was Worth Saving" },
+          { episode: 4, title: "An Eternity of Misery" },
+          { episode: 5, title: "Coming Home Was a Mistake" },
+          { episode: 6, title: "Detoured on Some Random Backwoods Path to Hell" },
+          { episode: 7, title: "The Next Time I Hurt Somebody, It Could Be You" },
+          { episode: 8, title: "We Have History Together" },
+          { episode: 9, title: "The Simple Intimacy of the Near Touch" },
+          { episode: 10, title: "Nostalgia's a Bitch" },
+          { episode: 11, title: "You Made a Choice to Be Good" },
+          { episode: 12, title: "What Are You?" },
+          { episode: 13, title: "The Lies Will Catch Up with You" },
+          { episode: 14, title: "It's Been a Hell of a Ride" },
+          { episode: 15, title: "We're Planning a June Wedding" },
+          { episode: 16, title: "I Was Feeling Epic" },
+        ],
+      },
+    ]
+  },
+  {
+    title: "Supernatural",
+    type: "TV Show",
+    year: 2005,
+    rating: 8.4,
+    age: "TV-14",
+    duration: "45m",
+    genres: ["Drama","Mystery","Sci-Fi & Fantasy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8iixmfGx5EIFPdpNvB2JvI3VIqX.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/nVRyd8hlg0ZLxBn9RaI7mUMQLnz.jpg",
+    videoUrl: "",
+    overview: "When they were boys, Sam and Dean Winchester lost their mother to a mysterious and demonic supernatural force. Subsequently, their father raised them to be soldiers. He taught them about the paranormal evil that exists in the dark corners and on the back roads of America... and he taught them how to kill it. Now, the Winchester brothers crisscross the country in their 67 Chevy Impala, battling every kind of supernatural threat they encounter along the way.",
+    director: "Eric Kripke",
+    cast: ["Jared Padalecki, Jensen Ackles, Misha Collins, Mark Sheppard, Alexander Calvert, Jim Beaver, Mark Pellegrino, Ruth Connell"],
+    trending: false,
+    featured: false,
+    cinesrcId: "1622",
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Pilot" },
+          { episode: 2, title: "Wendigo" },
+          { episode: 3, title: "Dead in the Water" },
+          { episode: 4, title: "Phantom Traveler" },
+          { episode: 5, title: "Bloody Mary" },
+          { episode: 6, title: "Skin" },
+          { episode: 7, title: "Hook Man" },
+          { episode: 8, title: "Bugs" },
+          { episode: 9, title: "Home" },
+          { episode: 10, title: "Asylum" },
+          { episode: 11, title: "Scarecrow" },
+          { episode: 12, title: "Faith" },
+          { episode: 13, title: "Route 666" },
+          { episode: 14, title: "Nightmare" },
+          { episode: 15, title: "The Benders" },
+          { episode: 16, title: "Shadow" },
+          { episode: 17, title: "Hell House" },
+          { episode: 18, title: "Something Wicked" },
+          { episode: 19, title: "Provenance" },
+          { episode: 20, title: "Dead Man's Blood" },
+          { episode: 21, title: "Salvation" },
+          { episode: 22, title: "Devil's Trap" },
+        ],
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "In My Time of Dying" },
+          { episode: 2, title: "Everybody Loves a Clown" },
+          { episode: 3, title: "Bloodlust" },
+          { episode: 4, title: "Children Shouldn't Play with Dead Things" },
+          { episode: 5, title: "Simon Said" },
+          { episode: 6, title: "No Exit" },
+          { episode: 7, title: "The Usual Suspects" },
+          { episode: 8, title: "Crossroad Blues" },
+          { episode: 9, title: "Croatoan" },
+          { episode: 10, title: "Hunted" },
+          { episode: 11, title: "Playthings" },
+          { episode: 12, title: "Nightshifter" },
+          { episode: 13, title: "Houses of the Holy" },
+          { episode: 14, title: "Born Under a Bad Sign" },
+          { episode: 15, title: "Tall Tales" },
+          { episode: 16, title: "Roadkill" },
+          { episode: 17, title: "Heart" },
+          { episode: 18, title: "Hollywood Babylon" },
+          { episode: 19, title: "Folsom Prison Blues" },
+          { episode: 20, title: "What Is and What Should Never Be" },
+          { episode: 21, title: "All Hell Breaks Loose (1)" },
+          { episode: 22, title: "All Hell Breaks Loose (2)" },
+        ],
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: "The Magnificent Seven" },
+          { episode: 2, title: "The Kids Are Alright" },
+          { episode: 3, title: "Bad Day at Black Rock" },
+          { episode: 4, title: "Sin City" },
+          { episode: 5, title: "Bedtime Stories" },
+          { episode: 6, title: "Red Sky at Morning" },
+          { episode: 7, title: "Fresh Blood" },
+          { episode: 8, title: "A Very Supernatural Christmas" },
+          { episode: 9, title: "Malleus Maleficarum" },
+          { episode: 10, title: "Dream a Little Dream of Me" },
+          { episode: 11, title: "Mystery Spot" },
+          { episode: 12, title: "Jus in Bello" },
+          { episode: 13, title: "Ghostfacers" },
+          { episode: 14, title: "Long Distance Call" },
+          { episode: 15, title: "Time is on My Side" },
+          { episode: 16, title: "No Rest for the Wicked" },
+        ],
+      },
+      {
+        season: 4,
+        episodes: [
+          { episode: 1, title: "Lazarus Rising" },
+          { episode: 2, title: "Are You There, God? It's Me, Dean Winchester" },
+          { episode: 3, title: "In the Beginning" },
+          { episode: 4, title: "Metamorphosis" },
+          { episode: 5, title: "Monster Movie" },
+          { episode: 6, title: "Yellow Fever" },
+          { episode: 7, title: "It's the Great Pumpkin, Sam Winchester" },
+          { episode: 8, title: "Wishful Thinking" },
+          { episode: 9, title: "I Know What You Did Last Summer" },
+          { episode: 10, title: "Heaven and Hell" },
+          { episode: 11, title: "Family Remains" },
+          { episode: 12, title: "Criss Angel is a Douchebag" },
+          { episode: 13, title: "After School Special" },
+          { episode: 14, title: "Sex and Violence" },
+          { episode: 15, title: "Death Takes a Holiday" },
+          { episode: 16, title: "On the Head of a Pin" },
+          { episode: 17, title: "It's a Terrible Life" },
+          { episode: 18, title: "The Monster at the End of This Book" },
+          { episode: 19, title: "Jump the Shark" },
+          { episode: 20, title: "The Rapture" },
+          { episode: 21, title: "When the Levee Breaks" },
+          { episode: 22, title: "Lucifer Rising" },
+        ],
+      },
+      {
+        season: 5,
+        episodes: [
+          { episode: 1, title: "Sympathy for the Devil" },
+          { episode: 2, title: "Good God, Y'all!" },
+          { episode: 3, title: "Free to Be You and Me" },
+          { episode: 4, title: "The End" },
+          { episode: 5, title: "Fallen Idols" },
+          { episode: 6, title: "I Believe the Children are Our Future" },
+          { episode: 7, title: "The Curious Case of Dean Winchester" },
+          { episode: 8, title: "Changing Channels" },
+          { episode: 9, title: "The Real Ghostbusters" },
+          { episode: 10, title: "Abandon All Hope..." },
+          { episode: 11, title: "Sam, Interrupted" },
+          { episode: 12, title: "Swap Meat" },
+          { episode: 13, title: "The Song Remains the Same" },
+          { episode: 14, title: "My Bloody Valentine" },
+          { episode: 15, title: "Dead Men Don't Wear Plaid" },
+          { episode: 16, title: "Dark Side of the Moon" },
+          { episode: 17, title: "99 Problems" },
+          { episode: 18, title: "Point of No Return" },
+          { episode: 19, title: "Hammer of the Gods" },
+          { episode: 20, title: "The Devil You Know" },
+          { episode: 21, title: "Two Minutes to Midnight" },
+          { episode: 22, title: "Swan Song" },
+        ],
+      },
+      {
+        season: 6,
+        episodes: [
+          { episode: 1, title: "Exile on Main St." },
+          { episode: 2, title: "Two and a Half Men" },
+          { episode: 3, title: "The Third Man" },
+          { episode: 4, title: "Weekend at Bobby's" },
+          { episode: 5, title: "Live Free or Twihard" },
+          { episode: 6, title: "You Can't Handle the Truth" },
+          { episode: 7, title: "Family Matters" },
+          { episode: 8, title: "All Dogs Go to Heaven" },
+          { episode: 9, title: "Clap Your Hands If You Believe" },
+          { episode: 10, title: "Caged Heat" },
+          { episode: 11, title: "Appointment in Samarra" },
+          { episode: 12, title: "Like a Virgin" },
+          { episode: 13, title: "Unforgiven" },
+          { episode: 14, title: "Mannequin 3: The Reckoning" },
+          { episode: 15, title: "The French Mistake" },
+          { episode: 16, title: "And Then There Were None" },
+          { episode: 17, title: "My Heart Will Go On" },
+          { episode: 18, title: "Frontierland" },
+          { episode: 19, title: "Mommy Dearest" },
+          { episode: 20, title: "The Man Who Would Be King" },
+          { episode: 21, title: "Let It Bleed" },
+          { episode: 22, title: "The Man Who Knew Too Much" },
+        ],
+      },
+      {
+        season: 7,
+        episodes: [
+          { episode: 1, title: "Meet the New Boss" },
+          { episode: 2, title: "Hello, Cruel World" },
+          { episode: 3, title: "The Girl Next Door" },
+          { episode: 4, title: "Defending Your Life" },
+          { episode: 5, title: "Shut Up, Dr. Phil" },
+          { episode: 6, title: "Slash Fiction" },
+          { episode: 7, title: "The Mentalists" },
+          { episode: 8, title: "Season 7, Time for a Wedding!" },
+          { episode: 9, title: "How to Win Friends and Influence Monsters" },
+          { episode: 10, title: "Death's Door" },
+          { episode: 11, title: "Adventures in Babysitting" },
+          { episode: 12, title: "Time After Time" },
+          { episode: 13, title: "The Slice Girls" },
+          { episode: 14, title: "Plucky Pennywhistle's Magical Menagerie" },
+          { episode: 15, title: "Repo Man" },
+          { episode: 16, title: "Out with the Old" },
+          { episode: 17, title: "The Born-Again Identity" },
+          { episode: 18, title: "Party On, Garth" },
+          { episode: 19, title: "Of Grave Importance" },
+          { episode: 20, title: "The Girl with the Dungeons and Dragons Tattoo" },
+          { episode: 21, title: "Reading is Fundamental" },
+          { episode: 22, title: "There Will Be Blood" },
+          { episode: 23, title: "Survival of the Fittest" },
+        ],
+      },
+      {
+        season: 8,
+        episodes: [
+          { episode: 1, title: "We Need to Talk About Kevin" },
+          { episode: 2, title: "What's Up, Tiger Mommy?" },
+          { episode: 3, title: "Heartache" },
+          { episode: 4, title: "Bitten" },
+          { episode: 5, title: "Blood Brother" },
+          { episode: 6, title: "Southern Comfort" },
+          { episode: 7, title: "A Little Slice of Kevin" },
+          { episode: 8, title: "Hunteri Heroici" },
+          { episode: 9, title: "Citizen Fang" },
+          { episode: 10, title: "Torn and Frayed" },
+          { episode: 11, title: "LARP and the Real Girl" },
+          { episode: 12, title: "As Time Goes By" },
+          { episode: 13, title: "Everybody Hates Hitler" },
+          { episode: 14, title: "Trial and Error" },
+          { episode: 15, title: "Man's Best Friend with Benefits" },
+          { episode: 16, title: "Remember the Titans" },
+          { episode: 17, title: "Goodbye Stranger" },
+          { episode: 18, title: "Freaks and Geeks" },
+          { episode: 19, title: "Taxi Driver" },
+          { episode: 20, title: "Pac-Man Fever" },
+          { episode: 21, title: "The Great Escapist" },
+          { episode: 22, title: "Clip Show" },
+          { episode: 23, title: "Sacrifice" },
+        ],
+      },
+      {
+        season: 9,
+        episodes: [
+          { episode: 1, title: "I Think I'm Gonna Like It Here" },
+          { episode: 2, title: "Devil May Care" },
+          { episode: 3, title: "I'm No Angel" },
+          { episode: 4, title: "Slumber Party" },
+          { episode: 5, title: "Dog Dean Afternoon" },
+          { episode: 6, title: "Heaven Can't Wait" },
+          { episode: 7, title: "Bad Boys" },
+          { episode: 8, title: "Rock and a Hard Place" },
+          { episode: 9, title: "Holy Terror" },
+          { episode: 10, title: "Road Trip" },
+          { episode: 11, title: "First Born" },
+          { episode: 12, title: "Sharp Teeth" },
+          { episode: 13, title: "The Purge" },
+          { episode: 14, title: "Captives" },
+          { episode: 15, title: "#thinman" },
+          { episode: 16, title: "Blade Runners" },
+          { episode: 17, title: "Mother's Little Helper" },
+          { episode: 18, title: "Meta Fiction" },
+          { episode: 19, title: "Alex Annie Alexis Ann" },
+          { episode: 20, title: "Bloodlines" },
+          { episode: 21, title: "King of the Damned" },
+          { episode: 22, title: "Stairway to Heaven" },
+          { episode: 23, title: "Do You Believe in Miracles?" },
+        ],
+      },
+      {
+        season: 10,
+        episodes: [
+          { episode: 1, title: "Black" },
+          { episode: 2, title: "Reichenbach" },
+          { episode: 3, title: "Soul Survivor" },
+          { episode: 4, title: "Paper Moon" },
+          { episode: 5, title: "Fan Fiction" },
+          { episode: 6, title: "Ask Jeeves" },
+          { episode: 7, title: "Girls, Girls, Girls" },
+          { episode: 8, title: "Hibbing 911" },
+          { episode: 9, title: "The Things We Left Behind" },
+          { episode: 10, title: "The Hunter Games" },
+          { episode: 11, title: "There's No Place Like Home" },
+          { episode: 12, title: "About a Boy" },
+          { episode: 13, title: "Halt & Catch Fire" },
+          { episode: 14, title: "The Executioner's Song" },
+          { episode: 15, title: "The Things They Carried" },
+          { episode: 16, title: "Paint It Black" },
+          { episode: 17, title: "Inside Man" },
+          { episode: 18, title: "Book of the Damned" },
+          { episode: 19, title: "The Werther Project" },
+          { episode: 20, title: "Angel Heart" },
+          { episode: 21, title: "Dark Dynasty" },
+          { episode: 22, title: "The Prisoner" },
+          { episode: 23, title: "Brother's Keeper" },
+        ],
+      },
+      {
+        season: 11,
+        episodes: [
+          { episode: 1, title: "Out of the Darkness, Into the Fire" },
+          { episode: 2, title: "Form and Void" },
+          { episode: 3, title: "The Bad Seed" },
+          { episode: 4, title: "Baby" },
+          { episode: 5, title: "Thin Lizzie" },
+          { episode: 6, title: "Our Little World" },
+          { episode: 7, title: "Plush" },
+          { episode: 8, title: "Just My Imagination" },
+          { episode: 9, title: "O Brother Where Art Thou?" },
+          { episode: 10, title: "The Devil in the Details" },
+          { episode: 11, title: "Into the Mystic" },
+          { episode: 12, title: "Don't You Forget About Me" },
+          { episode: 13, title: "Love Hurts" },
+          { episode: 14, title: "The Vessel" },
+          { episode: 15, title: "Beyond the Mat" },
+          { episode: 16, title: "Safe House" },
+          { episode: 17, title: "Red Meat" },
+          { episode: 18, title: "Hell's Angel" },
+          { episode: 19, title: "The Chitters" },
+          { episode: 20, title: "Don't Call Me Shurley" },
+          { episode: 21, title: "All in the Family" },
+          { episode: 22, title: "We Happy Few" },
+          { episode: 23, title: "Alpha and Omega" },
+        ],
+      },
+      {
+        season: 12,
+        episodes: [
+          { episode: 1, title: "Keep Calm and Carry On" },
+          { episode: 2, title: "Mamma Mia" },
+          { episode: 3, title: "The Foundry" },
+          { episode: 4, title: "American Nightmare" },
+          { episode: 5, title: "The One You've Been Waiting For" },
+          { episode: 6, title: "Celebrating the Life of Asa Fox" },
+          { episode: 7, title: "Rock Never Dies" },
+          { episode: 8, title: "LOTUS" },
+          { episode: 9, title: "First Blood" },
+          { episode: 10, title: "Lily Sunder Has Some Regrets" },
+          { episode: 11, title: "Regarding Dean" },
+          { episode: 12, title: "Stuck in the Middle (With You)" },
+          { episode: 13, title: "Family Feud" },
+          { episode: 14, title: "The Raid" },
+          { episode: 15, title: "Somewhere Between Heaven and Hell" },
+          { episode: 16, title: "Ladies Drink Free" },
+          { episode: 17, title: "The British Invasion" },
+          { episode: 18, title: "The Memory Remains" },
+          { episode: 19, title: "The Future" },
+          { episode: 20, title: "Twigs & Twine & Tasha Banes" },
+          { episode: 21, title: "There's Something About Mary" },
+          { episode: 22, title: "Who We Are" },
+          { episode: 23, title: "All Along the Watchtower" },
+        ],
+      },
+      {
+        season: 13,
+        episodes: [
+          { episode: 1, title: "Lost and Found" },
+          { episode: 2, title: "The Rising Son" },
+          { episode: 3, title: "Patience" },
+          { episode: 4, title: "The Big Empty" },
+          { episode: 5, title: "Advanced Thanatology" },
+          { episode: 6, title: "Tombstone" },
+          { episode: 7, title: "War of the Worlds" },
+          { episode: 8, title: "The Scorpion and the Frog" },
+          { episode: 9, title: "The Bad Place" },
+          { episode: 10, title: "Wayward Sisters" },
+          { episode: 11, title: "Breakdown" },
+          { episode: 12, title: "Various & Sundry Villains" },
+          { episode: 13, title: "Devil's Bargain" },
+          { episode: 14, title: "Good Intentions" },
+          { episode: 15, title: "A Most Holy Man" },
+          { episode: 16, title: "Scoobynatural" },
+          { episode: 17, title: "The Thing" },
+          { episode: 18, title: "Bring 'em Back Alive" },
+          { episode: 19, title: "Funeralia" },
+          { episode: 20, title: "Unfinished Business" },
+          { episode: 21, title: "Beat the Devil" },
+          { episode: 22, title: "Exodus" },
+          { episode: 23, title: "Let the Good Times Roll" },
+        ],
+      },
+      {
+        season: 14,
+        episodes: [
+          { episode: 1, title: "Stranger in a Strange Land" },
+          { episode: 2, title: "Gods and Monsters" },
+          { episode: 3, title: "The Scar" },
+          { episode: 4, title: "Mint Condition" },
+          { episode: 5, title: "Nightmare Logic" },
+          { episode: 6, title: "Optimism" },
+          { episode: 7, title: "Unhuman Nature" },
+          { episode: 8, title: "Byzantium" },
+          { episode: 9, title: "The Spear" },
+          { episode: 10, title: "Nihilism" },
+          { episode: 11, title: "Damaged Goods" },
+          { episode: 12, title: "Prophet and Loss" },
+          { episode: 13, title: "Lebanon" },
+          { episode: 14, title: "Ouroboros" },
+          { episode: 15, title: "Peace of Mind" },
+          { episode: 16, title: "Don't Go in the Woods" },
+          { episode: 17, title: "Game Night" },
+          { episode: 18, title: "Absence" },
+          { episode: 19, title: "Jack in the Box" },
+          { episode: 20, title: "Moriah" },
+        ],
+      },
+      {
+        season: 15,
+        episodes: [
+          { episode: 1, title: "Back and to the Future" },
+          { episode: 2, title: "Raising Hell" },
+          { episode: 3, title: "The Rupture" },
+          { episode: 4, title: "Atomic Monsters" },
+          { episode: 5, title: "Proverbs 17:3" },
+          { episode: 6, title: "Golden Time" },
+          { episode: 7, title: "Last Call" },
+          { episode: 8, title: "Our Father, Who Aren't in Heaven" },
+          { episode: 9, title: "The Trap" },
+          { episode: 10, title: "The Heroes' Journey" },
+          { episode: 11, title: "The Gamblers" },
+          { episode: 12, title: "Galaxy Brain" },
+          { episode: 13, title: "Destiny's Child" },
+          { episode: 14, title: "Last Holiday" },
+          { episode: 15, title: "Gimme Shelter" },
+          { episode: 16, title: "Drag Me Away (From You)" },
+          { episode: 17, title: "Unity" },
+          { episode: 18, title: "Despair" },
+          { episode: 19, title: "Inherit the Earth" },
+          { episode: 20, title: "Carry On" },
+        ],
+      },
+    ]
+  },
 ]
 
 // Auto-generate a clean ID (slug) for every movie based on its title
@@ -9338,10 +10316,12 @@ window.addEventListener("cw:authChanged", async (e) => {
     renderContinueWatchingShelf();
     if (typeof renderWatchlistHomeShelf === "function") renderWatchlistHomeShelf();
     if (state.activeView === "watchlist") renderWatchlist();
+    if (state.activeView === "continue") renderContinueWatchingPage();
   } else {
     saveUser(null);
     renderContinueWatchingShelf();
     if (state.activeView === "watchlist") renderWatchlist();
+    if (state.activeView === "continue") renderContinueWatchingPage();
   }
 });
 
@@ -9366,6 +10346,8 @@ window.addEventListener("cw:firestoreMoviesUpdated", (e) => {
     renderContinueWatchingShelf();
   } else if (state.activeView === "watchlist") {
     renderWatchlist();
+  } else if (state.activeView === "continue") {
+    renderContinueWatchingPage();
   } else if (state.activeView === "genres") {
     renderFilteredGrid(MOVIES, "Explore All Genres");
   }
@@ -9431,6 +10413,9 @@ function updateContinueWatching(movieId, currentTime, duration) {
     window.CW_API.syncData(state.favorites, state.continueWatching);
   }
   renderContinueWatchingShelf();
+  if (state.activeView === "continue") {
+    renderContinueWatchingPage();
+  }
 }
 
 function removeContinueWatching(movieId) {
@@ -9441,6 +10426,9 @@ function removeContinueWatching(movieId) {
     window.CW_API.syncData(state.favorites, state.continueWatching);
   }
   renderContinueWatchingShelf();
+  if (state.activeView === "continue") {
+    renderContinueWatchingPage();
+  }
 }
 
 // ==========================================
@@ -9811,7 +10799,9 @@ function renderWatchlist() {
   const countText = document.getElementById("watchlistCountText");
 
   const favMovies = MOVIES.filter((m) => state.favorites.includes(m.id));
-  countText.textContent = `${favMovies.length} saved ${favMovies.length === 1 ? "title" : "titles"}`;
+  if (countText) {
+    countText.textContent = `${favMovies.length} saved ${favMovies.length === 1 ? "title" : "titles"}`;
+  }
 
   if (favMovies.length === 0) {
     grid.innerHTML = "";
@@ -9823,18 +10813,100 @@ function renderWatchlist() {
   grid.innerHTML = favMovies.map(createMovieCardHTML).join("");
 }
 
+function renderContinueWatchingPage() {
+  const grid = document.getElementById("continueGrid");
+  const emptyState = document.getElementById("emptyContinue");
+  const countText = document.getElementById("continueCountText");
+  const emptyTitle = document.getElementById("emptyContinueTitle");
+  const emptyText = document.getElementById("emptyContinueText");
+  const exploreBtn = document.getElementById("exploreContinueBtn");
+
+  if (!grid || !emptyState) return;
+
+  // Prompt unauthenticated users
+  if (!state.user) {
+    grid.innerHTML = "";
+    if (countText) countText.textContent = "Sign in required";
+    if (emptyTitle) emptyTitle.textContent = "Sign in to view Continue Watching";
+    if (emptyText) emptyText.textContent = "Sign in to track your watch progress across all your devices.";
+    if (exploreBtn) {
+      exploreBtn.textContent = "Sign In";
+      exploreBtn.onclick = () => {
+        if (typeof openAuthModal === "function") openAuthModal();
+      };
+    }
+    emptyState.classList.remove("hidden");
+    return;
+  }
+
+  const items = Object.values(state.continueWatching).sort(
+    (a, b) => b.timestamp - a.timestamp
+  );
+
+  if (countText) {
+    countText.textContent = `${items.length} ${items.length === 1 ? "title" : "titles"} in progress`;
+  }
+
+  if (items.length === 0) {
+    grid.innerHTML = "";
+    if (emptyTitle) emptyTitle.textContent = "No titles in Continue Watching";
+    if (emptyText) emptyText.textContent = "Movies and series you start watching will appear here so you can easily pick up where you left off.";
+    if (exploreBtn) {
+      exploreBtn.textContent = "Explore Movies";
+      exploreBtn.onclick = () => switchView("movies");
+    }
+    emptyState.classList.remove("hidden");
+    return;
+  }
+
+  emptyState.classList.add("hidden");
+  grid.innerHTML = items
+    .map((item) => {
+      const movie = MOVIES.find((m) => m.id === item.movieId);
+      if (!movie) return "";
+
+      const isIframe = item.isIframe;
+      const percent = isIframe ? 50 : Math.min(100, Math.round((item.currentTime / item.duration) * 100));
+      const metaLabel = isIframe
+        ? `<span>In Progress</span>`
+        : `<span>${Math.max(1, Math.round((item.duration - item.currentTime) / 60))}m left</span><span>${percent}%</span>`;
+
+      return `
+      <div class="movie-card continue-card" data-id="${movie.id}">
+        <div class="card-poster-wrap continue-poster-wrap">
+          <img src="${movie.backdrop || movie.poster}" alt="${movie.title}" class="card-poster">
+          <button class="continue-remove-btn" data-remove-id="${movie.id}" title="Remove from list">&times;</button>
+          <div class="card-overlay">
+            <div class="card-details">
+              <h4 class="card-title">${movie.title}</h4>
+              <div class="card-meta">
+                ${metaLabel}
+              </div>
+            </div>
+          </div>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar-fill" style="width: ${percent}%"></div>
+          </div>
+        </div>
+      </div>
+    `;
+    })
+    .join("");
+}
+
 function renderFilteredGrid(movieList, titleText) {
   const filteredSection = document.getElementById("filteredSection");
   const defaultShelves = document.getElementById("defaultShelves");
-  const heroBanner = document.getElementById("heroBanner");
   const watchlistSection = document.getElementById("watchlistSection");
+  const continueSection = document.getElementById("continueSection");
   const filteredGrid = document.getElementById("filteredGrid");
   const filteredTitle = document.getElementById("filteredTitle");
   const filteredCount = document.getElementById("filteredCount");
 
-  // Hide default shelves, watchlist, and browse sections; show filtered section
+  // Hide default shelves, watchlist, continue, and browse sections; show filtered section
   defaultShelves.classList.add("hidden");
-  watchlistSection.classList.add("hidden");
+  if (watchlistSection) watchlistSection.classList.add("hidden");
+  if (continueSection) continueSection.classList.add("hidden");
   const moviesSection = document.getElementById("moviesSection");
   const seriesSection = document.getElementById("seriesSection");
   if (moviesSection) moviesSection.classList.add("hidden");
@@ -9847,9 +10919,10 @@ function renderFilteredGrid(movieList, titleText) {
   if (movieList.length === 0) {
     filteredGrid.innerHTML = `
       <div class="empty-state" style="grid-column: 1 / -1;">
-        <div class="empty-icon">🔍</div>
+        <div class="empty-icon"><ion-icon name="search-outline"></ion-icon></div>
         <h3>No titles found</h3>
         <p>Try searching for a different keyword or genre.</p>
+        <button class="btn btn-primary mt-4" onclick="switchView('movies')">Explore All Titles</button>
       </div>
     `;
   } else {
@@ -10051,6 +11124,7 @@ function switchView(viewName) {
   const heroBanner = document.getElementById("heroBanner");
   const defaultShelves = document.getElementById("defaultShelves");
   const continueShelf = document.getElementById("continueWatchingShelf");
+  const continueSection = document.getElementById("continueSection");
   const watchlistSection = document.getElementById("watchlistSection");
   const filteredSection = document.getElementById("filteredSection");
   const moviesSection = document.getElementById("moviesSection");
@@ -10063,6 +11137,7 @@ function switchView(viewName) {
   const hideAll = () => {
     heroBanner.classList.add("hidden");
     defaultShelves.classList.add("hidden");
+    if (continueSection) continueSection.classList.add("hidden");
     watchlistSection.classList.add("hidden");
     filteredSection.classList.add("hidden");
     moviesSection.classList.add("hidden");
@@ -10088,6 +11163,7 @@ function switchView(viewName) {
     defaultShelves.classList.remove("hidden");
     filteredSection.classList.add("hidden");
     watchlistSection.classList.add("hidden");
+    if (continueSection) continueSection.classList.add("hidden");
     moviesSection.classList.add("hidden");
     seriesSection.classList.add("hidden");
     if (detailsSection) detailsSection.classList.add("hidden");
@@ -10113,11 +11189,8 @@ function switchView(viewName) {
     renderWatchlist();
   } else if (viewName === "continue") {
     hideAll();
-    const items = Object.values(state.continueWatching)
-      .map((i) => MOVIES.find((m) => m.id === i.movieId))
-      .filter(Boolean);
-    filteredSection.classList.remove("hidden");
-    renderFilteredGrid(items, "Continue Watching");
+    if (continueSection) continueSection.classList.remove("hidden");
+    renderContinueWatchingPage();
   } else if (viewName === "genres") {
     hideAll();
     filteredSection.classList.remove("hidden");
@@ -12067,10 +13140,17 @@ function bindEventListeners() {
     submitBtn.disabled = false;
   };
 
-  // Explore button in empty state
-  if (document.getElementById("exploreBtn")) document.getElementById("exploreBtn").onclick = () => {
-    switchView("home");
-  };
+  // Explore buttons in empty states
+  if (document.getElementById("exploreBtn")) {
+    document.getElementById("exploreBtn").onclick = () => {
+      switchView("movies");
+    };
+  }
+  if (document.getElementById("exploreContinueBtn")) {
+    document.getElementById("exploreContinueBtn").onclick = () => {
+      switchView("movies");
+    };
+  }
 
   // ── Mobile Menu ──
   const mobileMenuBtn = document.getElementById("mobileMenuBtn");
