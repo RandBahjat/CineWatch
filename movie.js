@@ -25,7 +25,7 @@
 // 1. HIGHLIGHTS & TRENDING (EDIT THIS SECTION)
 // ==========================================
 // Change these titles to easily swap which movies appear in the top slider and trending row!
-const FEATURED_TITLES = ["Reacher","House of the Dragon", "The Invite", "Spider-Man: Brand New Day", "The Odyssey", "Obsession"];
+const FEATURED_TITLES = ["Reacher","House of the Dragon", "The Invite", "Spider-Man: Brand New Day", "The Odyssey", "Obsession","The Last House"];
 const TRENDING_TITLES = ["Reacher", "Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters","The Invite","Young Washington","The Last House","Ted Lasso"];
 
 // ==========================================
@@ -19658,6 +19658,7 @@ function openDetailsModal(movieId) {
 
   setTimeout(() => {
     window.scrollTo(0, 0);
+    if (detailsSection) detailsSection.scrollTo(0, 0);
 
     document.getElementById("detailsBg").style.backgroundImage = `url('${movie.backdrop || movie.poster}')`;
     document.getElementById("detailsTitle").textContent = movie.title;
@@ -19806,12 +19807,18 @@ function openDetailsModal(movieId) {
 
         // Click to play episode
         episodeGrid.querySelectorAll(".episode-row:not(.episode-unavailable)").forEach((card) => {
-          card.onclick = () => {
-            const videoUrl = card.dataset.video;
-            const epTitle = card.dataset.title;
-            const epNum = parseInt(card.dataset.episode);
-            openVideoPlayerWithUrl(videoUrl, epTitle, movie.id, { season: seasonData.season, episode: epNum });
-          };
+          const thumb = card.querySelector('.episode-row-thumb');
+          if (thumb) {
+            thumb.style.cursor = 'pointer';
+            card.style.cursor = 'default';
+            thumb.onclick = (e) => {
+              e.stopPropagation();
+              const videoUrl = card.dataset.video;
+              const epTitle = card.dataset.title;
+              const epNum = parseInt(card.dataset.episode);
+              openVideoPlayerWithUrl(videoUrl, epTitle, movie.id, { season: seasonData.season, episode: epNum });
+            };
+          }
         });
 
 
