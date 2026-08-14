@@ -378,7 +378,7 @@ const MOVIES = [
     age: "TV-14",
     duration: "60m",
     genres: ["Drama","Comedy","Crime"],
-    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/ts7WtsZt7D9t0Nus817Wn8G7fXj.jpg",
+    poster: "https://image.tmdb.org/t/p/original/bL1mwXDnH5fCxqc4S2n40hoVyoe.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rYjWEMk832O6p2s5W4h7j0gB0iT.jpg",
     videoUrl: "79744",
     overview: "The Rookie is inspired by a true story. John Nolan is the oldest rookie in the LAPD. At an age where most are at the peak of their career, Nolan cast aside his comfortable, small town life and moved to L.A. to pursue his dream of being a cop. Now, surrounded by rookies twenty years his junior, Nolan must navigate the dangerous, humorous and unpredictable world of a \"young\" cop, determined to make his second shot at life count.",
@@ -19940,7 +19940,11 @@ function openDetailsModal(movieId) {
     document.getElementById("detailsTitle").textContent = movie.title;
     document.getElementById("detailsRating").textContent = movie.rating;
     document.getElementById("detailsYear").textContent = movie.year;
-    document.getElementById("detailsDuration").textContent = movie.duration;
+    if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
+      document.getElementById("detailsDuration").textContent = `${movie.seasons.length} Season${movie.seasons.length > 1 ? 's' : ''}`;
+    } else {
+      document.getElementById("detailsDuration").textContent = movie.duration;
+    }
 
     if (document.getElementById("detailsGenres")) {
       document.getElementById("detailsGenres").innerHTML = movie.genres.join(" &middot; ");
