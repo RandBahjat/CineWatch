@@ -2690,11 +2690,13 @@ select {
   }
 
   .hero-banner {
-    height: 60vh;
+    height: 100vh;
+    min-height: 100vh;
+    margin-top: 0;
   }
 
   .hero-banner::after {
-    height: 120px;
+    height: 140px;
   }
   
   .hero-bg-image {
@@ -2702,7 +2704,8 @@ select {
   }
 
   .hero-slide {
-    padding: 2rem;
+    padding: 5rem 2rem 4rem;
+    align-items: flex-end;
   }
 
   .hero-title {
@@ -2894,13 +2897,14 @@ select {
   }
 
   .hero-banner {
-    min-height: 62vh;
-    height: auto;
-    margin-top: 64px;
+    height: 100vh;
+    min-height: 100vh;
+    margin-top: 0;
   }
 
   .hero-slide {
-    padding: 1.2rem 1rem 2rem;
+    padding: 4.5rem 1.2rem 3.5rem;
+    align-items: flex-end;
   }
 
   .hero-badge {
