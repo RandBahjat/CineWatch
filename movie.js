@@ -33,6 +33,42 @@ const TRENDING_TITLES = ["Reacher", "Spider-Man: Brand New Day", "The Odyssey", 
 // ==========================================
 const MOVIES = [
   {
+    title: "Off Campus",
+    type: "TV Show",
+    year: 2026,
+    rating: 8.2,
+    age: "TV-MA",
+    duration: "1 Season",
+    genres: ["Drama", "Romance", "Comedy"],
+    poster:
+      "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=600&h=900&q=80",
+    backdrop:
+      "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=1920&q=80",
+    videoUrl: "273240",
+    cinesrcId: "273240",
+    overview:
+      "At Briar University, witty music major Hannah Wells strikes a fake-dating arrangement with bad-boy hockey captain Garrett Graham. In exchange for tutoring him to keep his NCAA eligibility, Garrett agrees to help Hannah make her crush jealous — but the game quickly turns into real passion.",
+    director: "Louisa Levy",
+    cast: ["Ella Bright", "Belmont Cameli", "Mika Abdalla", "Antonio Cipriano", "Jalen Thomas Brooks", "Stephen Kalyn", "Josh Heuston"],
+    trending: true,
+    featured: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "The Deal", duration: "48m" },
+          { episode: 2, title: "Bribe", duration: "45m" },
+          { episode: 3, title: "Tutor", duration: "50m" },
+          { episode: 4, title: "The Bet", duration: "47m" },
+          { episode: 5, title: "Rules of the Game", duration: "52m" },
+          { episode: 6, title: "Penalty Box", duration: "46m" },
+          { episode: 7, title: "Power Play", duration: "51m" },
+          { episode: 8, title: "Overtime", duration: "55m" },
+        ],
+      },
+    ],
+  },
+  {
     title: "The Invite",
     type: "Movie",
     year: 2026,
