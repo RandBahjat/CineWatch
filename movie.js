@@ -9893,7 +9893,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/chpWmskl3aKm1aTZqUHRCtviwPy.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/pUNfHmVqfwRdILhCkU8TdysVOXo.jpg",
     videoUrl: "146233",
-    overview: "A intense psychological thriller following the desperate search for two young girls who go missing in suburban Pennsylvania on Thanksgiving. When police are forced to release the prime suspect due to a lack of physical evidence, Keller Dover, the father of one of the missing girls, decides to take matters into his own hands. Meanwhile, Detective Loki relentlessly pursues every lead, racing against the clock in a dark web of secrets and moral ambiguity.",
+    overview: "A highly sophisticated program, Ares, is sent from the digital world into the real world on a dangerous mission — marking humankind's first encounter with A.I. beings. The film explores artificial intelligence originating from the Grid crossing into reality, with Kevin Flynn returning to confront the consequences of a world not yet ready for contact.",
     director: "Denis Villeneuve",
     cast: ["Hugh Jackman, Jake Gyllenhaal, Viola Davis, Maria Bello, Terrence Howard, Melissa Leo, Paul Dano"],
     trending: false, // Leave false so it only shows up in the Genres tab
