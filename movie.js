@@ -9895,7 +9895,7 @@ const MOVIES = [
     videoUrl: "146233",
     overview: "A highly sophisticated program, Ares, is sent from the digital world into the real world on a dangerous mission — marking humankind's first encounter with A.I. beings. The film explores artificial intelligence originating from the Grid crossing into reality, with Kevin Flynn returning to confront the consequences of a world not yet ready for contact.",
     director: "Joachim Rønning ",
-    cast: ["Hugh Jackman, Jake Gyllenhaal, Viola Davis, Maria Bello, Terrence Howard, Melissa Leo, Paul Dano"],
+    cast: ["Jared Leto, Greta Lee, Evan Peters, Hasan Minhaj, Jodie Turner-Smith, Arturo Castro, Cameron Monaghan, Gillian Anderson, Jeff Bridges"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
