@@ -10233,7 +10233,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dncJ81z1BahrT3ogLvlxOUC5n4u.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/AvIiUxbIrxwbLAhLgMGIpCEeneP.jpg",
     videoUrl: "4108",
-    overview: "The final installment in the Fifty Shades trilogy finds newly married Anastasia and Christian Grey trying to embrace their luxurious lifestyle and intense bond. However, as Ana steps into a new role at work and Christian adjusts to marital commitment, new threats emerge—including Ana's vengeful former boss, Jack Hyde, who seeks revenge against the couple, testing their trust and endurance.",
+    overview: "A high-octane action thriller following Frank Martin, a quiet, elite mercenary living in the south of France who delivers package deliveries with zero questions asked. Guided by three strict rules—never change the deal, no names, and never look in the package—Frank's life shifts into overdrive when he breaks his own rules and discovers his latest cargo is a bound woman linked to an international human trafficking ring.",
     director: "James Foley",
     cast: ["Dakota Johnson, Jamie Dornan, Eric Johnson, Rita Ora, Luke Grimes, Victor Rasuk, Jennifer Ehle, Marcia Gay Harden"],
     trending: false, // Leave false so it only shows up in the Genres tab
