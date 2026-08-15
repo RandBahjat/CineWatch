@@ -10269,7 +10269,7 @@ const MOVIES = [
     videoUrl: "13387",
     overview: "Frank Martin is pressured into a high-stakes delivery across Europe to transport Valentina, the kidnapped daughter of a Ukrainian government official. Equipped with explosive wristbands programmed to detonate if he strays more than 75 feet from his Audi, Frank must outrun corrupt mercenaries while racing to complete the job and keep them both alive.",
     director: "Olivier Megaton",
-    cast: ["Jason Statham, Alessandro Gassmann, Amber Valletta, Kate Nauta, François Berléand, Keith David, Hunter Clary"],
+    cast: ["Jason Statham, Natalya Rudakova, François Berléand, Robert Knepper, Jeroen Krabbé, Alex Kobold"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
