@@ -10115,7 +10115,7 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/v8DepuF6gizphLzIyNZeQiB0hij.jpg",
     videoUrl: "38575",
     overview: "A classic martial arts drama following Daniel LaRusso, a teenager who moves from New Jersey to Los Angeles with his mother. After becoming the target of a group of bullies led by Johnny Lawrence from the ruthless Cobra Kai dojo, Daniel is taken under the wing of Mr. Miyagi, an unassuming maintenance man and karate master. Through unconventional training methods, Miyagi teaches Daniel not only physical defense but also discipline, life balance, and inner strength to compete in the All-Valley Karate Tournament.",
-    director: "Edgar Wright",
+    director: "John G. Avildsen",
     cast: ["Ansel Elgort, Lily James, Kevin Spacey, Jon Hamm, Eiza González, Jamie Foxx, Jon Bernthal"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
