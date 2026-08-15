@@ -10575,7 +10575,7 @@ const MOVIES = [
     videoUrl: "364",
     overview: "As Gotham City prepares for Christmastime, the bizarre and vengeful Penguin emerges from the sewers, teaming up with corrupt tycoon Max Shreck to run for mayor and frame the Caped Crusader. Meanwhile, shy secretary Selina Kyle transforms into the seductive and lethal Catwoman, launching her own dangerous campaign against Shreck and Batman. Surrounded by new foes and conflicting loyalties, Batman must defend Gotham against total chaos.",
     director: "Tim Burton",
-    cast: ["Brandon Routh, Kate Bosworth, Kevin Spacey, James Marsden, Parker Posey, Frank Langella, Sam Huntington"],
+    cast: ["Michael Keaton, Danny DeVito, Michelle Pfeiffer, Christopher Walken, Michael Gough, Pat Hingle"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
