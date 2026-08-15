@@ -9927,7 +9927,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rwla9vqzrKVVKVKiOuROTIXGsxj.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ifnnW3q4rcxGiqFQf2CLG8Ms4p9.jpg",
     videoUrl: "1035259",
-    overview: "After an amazing first date, Bea and Ben's fiery attraction turns ice cold — until they find themselves unexpectedly reunited at a destination wedding in Australia. To avoid the awkwardness of their failed romance, the sworn enemies pretend to be a couple, but their plan to fake a relationship threatens to become all too real.",
+    overview: "Only one man has the particular set of skills to lead Police Squad and save the world — Lt. Frank Drebin Jr. Following in his father's footsteps, he must solve a murder case to prevent Police Squad from being shut down for good, in this reboot of the beloved spoof comedy franchise.",
     director: "Will Gluck",
     cast: ["Sydney Sweeney, Glen Powell, Alexandra Shipp, GaTa, Michelle Hurd, Bryan Brown, Rachel Griffiths, Dermot Mulroney"],
     trending: false, // Leave false so it only shows up in the Genres tab
