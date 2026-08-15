@@ -10114,7 +10114,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/b1RBy3l297N0c7PHjlz35cClWju.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/v8DepuF6gizphLzIyNZeQiB0hij.jpg",
     videoUrl: "38575",
-    overview: "A stylish, music-driven action thriller following Baby, a talented young getaway driver who relies on a personal soundtrack to drown out a severe case of tinnitus caused by a childhood accident. Hoping to clear his debt with a ruthless crime boss and walk away to start a normal life with a charming waitress, Baby finds himself forced into a doomed, high-stakes heist that threatens his life and freedom.",
+    overview: "A classic martial arts drama following Daniel LaRusso, a teenager who moves from New Jersey to Los Angeles with his mother. After becoming the target of a group of bullies led by Johnny Lawrence from the ruthless Cobra Kai dojo, Daniel is taken under the wing of Mr. Miyagi, an unassuming maintenance man and karate master. Through unconventional training methods, Miyagi teaches Daniel not only physical defense but also discipline, life balance, and inner strength to compete in the All-Valley Karate Tournament.",
     director: "Edgar Wright",
     cast: ["Ansel Elgort, Lily James, Kevin Spacey, Jon Hamm, Eiza González, Jamie Foxx, Jon Bernthal"],
     trending: false, // Leave false so it only shows up in the Genres tab
