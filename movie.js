@@ -10302,7 +10302,7 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/3VqxfyYUD23Q5G11ruSMnSU7zIL.jpg",
     videoUrl: "823625",
     overview: "Travis Block is a shadowy freelance operative working directly for FBI Director Gabriel Robinson, specializing in pulling endangered undercover agents out of dangerous situations. When Block discovers a secret, illegal government operation targeting innocent civilians—and that an insider trying to expose it has been murdered—he finds himself locked in a deadly game of cat and mouse against the very agency he swore to serve.",
-    director: "Nimród Antal",
+    director: "Mark Williams",
     cast: ["Liam Neeson, Noma Dumezweni, Lilly Aspell, Jack Champion, Embeth Davidtz, Matthew Modine"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
