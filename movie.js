@@ -9922,7 +9922,7 @@ const MOVIES = [
     year: 2025,
     rating: 6.3,
     age: "PG-13",
-    duration: "1h 43m",
+    duration: "1h 25m",
     genres: ["Comedy", "Romance"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/5qHoazZiaLe7oFBok7XlUhg96f2.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/kzn2mRzACwANeOrfCUdVaNyTeca.jpg",
