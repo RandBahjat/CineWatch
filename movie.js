@@ -10010,7 +10010,7 @@ const MOVIES = [
     duration: "1h 48m",
     genres: ["Comedy","Romance"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9C09L1U9S13J4Ut029Qhu0oLcTQ.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/p5HKeRbNRTZL2tvFhmXF8oVL1y6.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/rSEfKLHDZKiMQWsyJIfKr9D0CaC.jpg",
     videoUrl: "593643",
     overview: "When Dylan and Jamie meet, they quickly become best friends. Feeling jaded by love, the two agree to be just friends with the added benefit of casual sex — no strings attached. But as their arrangement blurs the line between friendship and romance, they discover that keeping feelings out of it may be harder than they bargained for.",
     director: "Will Gluck",
