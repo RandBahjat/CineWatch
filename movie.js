@@ -10080,7 +10080,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1PXwh3nJzgRkkYnqfWInJNypeL4.jpg",
     videoUrl: "37799",
-    overview: "Cassie, a struggling singer-songwriter, and Luke, a Marine about to be deployed, enter into a marriage of convenience for the practical benefits — health insurance for her, extra pay for him. But as their fake relationship deepens through letters and unexpected visits, their feelings for each other become dangerously real, blurring the line between the arrangement they made and the love they didn't plan for.",
+    overview: "On a fall night in 2003, Harvard undergrad and computer programming genius Mark Zuckerberg sits down at his computer and, fueled by rage and beer, begins to create what would become the social phenomenon known as Facebook. Six years and 500 million friends later, Mark Zuckerberg is the youngest billionaire in history — but for this entrepreneur, success leads to both personal and legal complications as former friends and colleagues turn into rivals.",
     director: "Elizabeth Allen Rosenbaum",
     cast: ["Sofia Carson, Nicholas Galitzine, John Harlan Kim, Chosen Jacobs, Linden Ashby, Nicholas Logan"],
     trending: false, // Leave false so it only shows up in the Genres tab
