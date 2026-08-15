@@ -9919,8 +9919,8 @@ const MOVIES = [
   {
     title: "The Naked Gun",
     type: "Movie", // Use "Movie" or "TV Show"
-    year: 2023,
-    rating: 6.1,
+    year: 2025,
+    rating: 6.3,
     age: "R",
     duration: "1h 43m",
     genres: ["Comedy", "Romance"],
