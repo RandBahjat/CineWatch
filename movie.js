@@ -10488,8 +10488,8 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fZlNXEHZsBp7unqw009MeBbMv87.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/j2Dlhe107BCLpGsZ907pbAutXgE.jpg",
     videoUrl: "1280450",
-    overview: "Samson Gaul is an ex-mercenary and seasoned human-trafficking investigator who retired after his actions inadvertently resulted in the deaths of helpless victims. When Andrew Fayden, a veteran MMA fighter, travels to Moldova with his family and discovers his daughter has been kidnapped by a ruthless trafficking ring, he convinces Gaul to return to the shadows to hunt down the syndicate and rescue her.",
-    director: "Ernie Barbarash",
+    overview: "In 1993, Maureen's life is shattered when her ex-husband sneaks their six-year-old daughter, Amina, out of the United States and takes her to the Middle East. After years of desperate, failed attempts to locate her child, Maureen crosses paths with Robeson, an ex-Marine specializing in recovering internationally abducted children. Teaming up for a dangerous retrieval mission, they navigate covert operations and betrayal across Europe and Beirut to bring Amina home.",
+    director: "James Kent",
     cast: ["Jean-Claude Van Damme, Joe Flanigan, Anna-Louise Plowman, Charlotte Beaumont, Steve Nicolson"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
