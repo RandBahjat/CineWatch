@@ -10251,8 +10251,8 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/ghgogVFRi60o0sVsRWgpG2r4Sy9.jpg",
     videoUrl: "9335",
     overview: "Ex-special forces operative Frank Martin has relocated to Miami, taking a low-profile temporary job driving and protecting the young son of a high-ranking US anti-drug official. When the boy is kidnapped and infected with a deadly, highly contagious airborne virus, Frank is framed for the crime and must go on the run to stop a ruthless cartel plot before time runs out.",
-    director: "Corey Yuen, Louis Leterrier",
-    cast: ["Jason Statham, Shu Qi, François Berléand, Matt Schulze, Ric Young, Doug Rand"],
+    director: "Louis Leterrier",
+    cast: ["Jason Statham, Alessandro Gassmann, Amber Valletta, Kate Nauta, François Berléand, Keith David, Hunter Clary"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
