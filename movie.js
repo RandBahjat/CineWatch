@@ -10308,6 +10308,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "RED",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2010,
+    rating: 4.9,
+    age: "PG-13",
+    duration: "1h 44m",
+    genres: ["Action", "Mystery", "Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bv9dy8mnwftdY2j6gG39gCfSFpV.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/3VqxfyYUD23Q5G11ruSMnSU7zIL.jpg",
+    videoUrl: "823625",
+    overview: "Travis Block is a shadowy freelance operative working directly for FBI Director Gabriel Robinson, specializing in pulling endangered undercover agents out of dangerous situations. When Block discovers a secret, illegal government operation targeting innocent civilians—and that an insider trying to expose it has been murdered—he finds himself locked in a deadly game of cat and mouse against the very agency he swore to serve.",
+    director: "Mark Williams",
+    cast: ["Liam Neeson, Emmy Raver-Lampman, Taylor John Smith, Aidan Quinn, Claire van der Boom, Yael Stone"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
