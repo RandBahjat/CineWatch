@@ -10110,7 +10110,7 @@ const MOVIES = [
     rating: 6.3,
     age: "PG",
     duration: "2h 20m",
-    genres: ["Action","Crime","Drama"],
+    genres: ["Action","Drama","Family","Sport"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/tYzFuYXmT8LOYASlFCkaPiAFAl0.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/q5iixYCuDzDx5IoQXt4kZaLDIbr.jpg",
     videoUrl: "339403",
