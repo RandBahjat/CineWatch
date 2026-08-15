@@ -10325,6 +10325,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Ride Along",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2014,
+    rating: 6.1,
+    age: "PG-13",
+    duration: "1h 39m",
+    genres: ["Action","Comedy", "Crime", "Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8eeK3OB5PeSRQD7BpZcGZKkehG.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/tBI2wrjdKmXGOfVbC6wj1gpZBIH.jpg",
+    videoUrl: "39514",
+    overview: "Inspired by the Warren Ellis comic book series, this action comedy follows Frank Moses, a retired black-ops CIA agent living a quiet suburban life. When an elite high-tech hit squad targets him to cover up a top-secret government conspiracy, Frank reassembles his old team of Retired, Extremely Dangerous operatives for a cross-country mission to stay alive and expose the truth.",
+    director: "Robert Schwentke",
+    cast: ["Bruce Willis, Morgan Freeman, John Malkovich, Helen Mirren, Mary-Louise Parker, Karl Urban, Brian Cox"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
