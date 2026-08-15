@@ -10019,6 +10019,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Easy A",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2010,
+    rating: 7.0,
+    age: "PG-13",
+    duration: "1h 48m",
+    genres: ["Comedy","Romance"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9C09L1U9S13J4Ut029Qhu0oLcTQ.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/rSEfKLHDZKiMQWsyJIfKr9D0CaC.jpg",
+    videoUrl: "41630",
+    overview: "Adam and Emma have known each other since childhood, drifting in and out of one another's lives over the years. When they reconnect as adults, they agree to keep things purely physical — no emotional attachments, no relationship expectations. But as their arrangement continues, they find it increasingly difficult to keep feelings from creeping into the equation.",
+    director: "Ivan Reitman",
+    cast: ["Natalie Portman, Ashton Kutcher, Kevin Kline, Cary Elwes, Greta Gerwig, Lake Bell"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
