@@ -10332,7 +10332,7 @@ const MOVIES = [
     age: "PG-13",
     duration: "1h 39m",
     genres: ["Action","Comedy", "Crime"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8eeK3OB5PeSRQD7BpZcGZKkehG.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qrt65VVaP5DEEBZgB5XYctA82Qv.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/tBI2wrjdKmXGOfVbC6wj1gpZBIH.jpg",
     videoUrl: "39514",
     overview: "Inspired by the Warren Ellis comic book series, this action comedy follows Frank Moses, a retired black-ops CIA agent living a quiet suburban life. When an elite high-tech hit squad targets him to cover up a top-secret government conspiracy, Frank reassembles his old team of Retired, Extremely Dangerous operatives for a cross-country mission to stay alive and expose the truth.",
