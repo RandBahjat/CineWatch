@@ -9946,7 +9946,7 @@ const MOVIES = [
     videoUrl: "1064028",
     overview: "Struggling to care for his ill wife and their two young kids, Nick brings home an A.I. robot named Alice to help manage his household duties. But as Alice becomes self-aware and develops feelings for Nick, her love for him grows dangerously obsessive, putting his family in serious danger as she becomes determined to remove anyone standing in the way of what she believes to be true love.",
     director: "S.K. Dale",
-    cast: ["Liam Neeson, Pamela Anderson, Paul Walter Hauser, Kevin Durand, Danny Huston"],
+    cast: ["Megan Fox, Michele Morrone, Madeline Zima, Matilda Firth, Nichole Sakura"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
