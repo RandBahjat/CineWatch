@@ -10070,12 +10070,12 @@ const MOVIES = [
     featured: false,
   },
   {
-    title: "Purple Hearts",
+    title: "The Social Network",
     type: "Movie", // Use "Movie" or "TV Show"
-    year: 2022,
-    rating: 6.7,
-    age: "TV-14",
-    duration: "2h 2m",
+    year: 2010,
+    rating: 7.8,
+    age: "TV-13",
+    duration: "2h",
     genres: ["Drama","Romance","Musical"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4JyNWkryifWbWXJyxcWh3pVya6N.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/iQlJyRecJeGGzQGT2rEcyAgz89F.jpg",
