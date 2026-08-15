@@ -9934,7 +9934,7 @@ const MOVIES = [
     featured: false,
   },
   {
-    title: "The Naked Gun",
+    title: "Subservience",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
     rating: 6.3,
