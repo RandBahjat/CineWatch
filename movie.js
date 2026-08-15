@@ -10523,8 +10523,8 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/yyG9D9E6xf6HoumerzB9pQJfGEI.jpg",
     videoUrl: "98566",
     overview: "Darkness has settled over New York City as the villainous Shredder and his evil Foot Clan maintain an iron grip on everything from the police to the politicians. When ambitious TV reporter April O'Neil stumbles upon a group of mysterious masked vigilantes, she discovers four mutated, pizza-loving turtle brothers—Leonardo, Raphael, Donatello, and Michelangelo. Teaming up with April and her cameraman Vern, the Ninja Turtles must come out of the sewers to save the city from Shredder's terrifying plot.",
-    director: "Dave Green",
-    cast: ["Megan Fox, Will Arnett, Stephen Amell, Tyler Perry, Brian Tee, Laura Linney, Pete Ploszek, Alan Ritchson, Noel Fisher, Jeremy Howard"],
+    director: "Jonathan Liebesman",
+    cast: ["Megan Fox, Will Arnett, William Fichtner, Alan Ritchson, Noel Fisher, Pete Ploszek, Jeremy Howard, Tohoru Masamune"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
