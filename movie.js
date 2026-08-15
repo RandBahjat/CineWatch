@@ -9958,7 +9958,7 @@ const MOVIES = [
     age: "R",
     duration: "1h 47m",
     genres: ["Thriller", "Horror","Mystery"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gBenxR01Uy0Ev9RTIw6dVBPoyQU.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fPtUgMcLIboqlTlPrq0bQpKK8eq.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/sHkskkd2W90d0OEpO3OYWgv6Q0M.jpg",
     videoUrl: "1064028",
     overview: "Struggling to care for his ill wife and their two young kids, Nick brings home an A.I. robot named Alice to help manage his household duties. But as Alice becomes self-aware and develops feelings for Nick, her love for him grows dangerously obsessive, putting his family in serious danger as she becomes determined to remove anyone standing in the way of what she believes to be true love.",
