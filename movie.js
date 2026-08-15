@@ -10376,6 +10376,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "The Family Plan 2",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2025,
+    rating: 6.3,
+    age: "PG-13",
+    duration: "1h 58m",
+    genres: ["Action","Comedy"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/jLLtx3nTRSLGPAKl4RoIv1FbEBr.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/arNhhBd88bP3Bjoe4HT8MFE1JQA.jpg",
+    videoUrl: "1029575",
+    overview: "Dan Morgan is a devoted husband, loving father of three, and successful car salesman living a quiet suburban life. However, decades earlier, he was an elite government assassin. When enemy ghosts from his past track him down, Dan packs his unsuspecting wife, angst-ridden teen daughter, gamer son, and ten-month-old baby into their minivan for an impromptu road trip to Las Vegas—determined to protect his family while pretending it's just an innocent family vacation.",
+    director: "Simon Cellan Jones",
+    cast: ["Mark Wahlberg, Michelle Monaghan, Zoe Colletti, Van Crosby, Saïd Taghmaoui, Maggie Q"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
