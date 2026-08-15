@@ -10250,7 +10250,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cdm17vK8PxHfTi7ayZf6WKbOgUO.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ghgogVFRi60o0sVsRWgpG2r4Sy9.jpg",
     videoUrl: "9335",
-    overview: "A high-octane action thriller following Frank Martin, a quiet, elite mercenary living in the south of France who delivers package deliveries with zero questions asked. Guided by three strict rules—never change the deal, no names, and never look in the package—Frank's life shifts into overdrive when he breaks his own rules and discovers his latest cargo is a bound woman linked to an international human trafficking ring.",
+    overview: "Ex-special forces operative Frank Martin has relocated to Miami, taking a low-profile temporary job driving and protecting the young son of a high-ranking US anti-drug official. When the boy is kidnapped and infected with a deadly, highly contagious airborne virus, Frank is framed for the crime and must go on the run to stop a ruthless cartel plot before time runs out.",
     director: "Corey Yuen, Louis Leterrier",
     cast: ["Jason Statham, Shu Qi, François Berléand, Matt Schulze, Ric Young, Doug Rand"],
     trending: false, // Leave false so it only shows up in the Genres tab
