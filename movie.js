@@ -10007,7 +10007,7 @@ const MOVIES = [
     year: 2011,
     rating: 6.2,
     age: "R",
-    duration: "1h 49m",
+    duration: "1h 48m",
     genres: ["Comedy","Romance"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nKhhDFCdzxeJ3GUunQ570LDpUkz.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/p5HKeRbNRTZL2tvFhmXF8oVL1y6.jpg",
