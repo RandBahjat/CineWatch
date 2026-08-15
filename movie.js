@@ -9980,7 +9980,7 @@ const MOVIES = [
     videoUrl: "593643",
     overview: "An overachieving high school senior with dreams of an Ivy League future falls for the mysterious new girl who just moved in next door — only to discover she has a secret past as an adult film star. As their relationship deepens, he must decide how far he'll go to protect her from a world determined to expose her history and drag them both down.",
     director: "Luke Greenfield",
-    cast: ["Ralph Fiennes, Anya Taylor-Joy, Nicholas Hoult, Hong Chau, Janet McTeer, Judith Light, John Leguizamo"],
+    cast: ["Emile Hirsch, Elisha Cuthbert, Timothy Olyphant, Chris Marquette, Paul Dano, James Remar"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
