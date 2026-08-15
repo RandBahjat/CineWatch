@@ -10452,7 +10452,7 @@ const MOVIES = [
     duration: "2h 2m",
     genres: ["Action","Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7gKI9hpEMcZUQpNgKrkDzJpbnNS.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/1R6cvRtZgsYCkh8UFuWFN33xBP4.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/3oKSoTLgJFsBUXe0amkKoSlKYNo.jpg",
     videoUrl: "545609",
     overview: "Tyler Rake, a fearless black-market mercenary with nothing left to lose, is hired to rescue the kidnapped son of an imprisoned international crime lord. Dispatched to Dhaka, Bangladesh, Rake executes a daring extraction, but the mission devolves into a deadly fight for survival when local authorities and rival cartels lock down the city to trap them.",
     director: "Sam Hargrave",
