@@ -9978,7 +9978,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/5mVyFHSY2rSsNgD4NfEwV82HigU.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rTBOOAb9BmoqIiNh5mmLPQETWaK.jpg",
     videoUrl: "593643",
-    overview: "A young couple travels to a remote island to eat at an exclusive restaurant helmed by a celebrity chef known for his intense, theatrical culinary style. As the elaborate, meticulously curated tasting menu unfolds course by course, they gradually realize the mysterious chef has prepared a shocking menu for his elite guests — one designed for a sinister purpose that goes far beyond fine dining.",
+    overview: "An overachieving high school senior with dreams of an Ivy League future falls for the mysterious new girl who just moved in next door — only to discover she has a secret past as an adult film star. As their relationship deepens, he must decide how far he'll go to protect her from a world determined to expose her history and drag them both down.",
     director: "Mark Mylod",
     cast: ["Ralph Fiennes, Anya Taylor-Joy, Nicholas Hoult, Hong Chau, Janet McTeer, Judith Light, John Leguizamo"],
     trending: false, // Leave false so it only shows up in the Genres tab
