@@ -10614,6 +10614,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Shelter",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2026,
+    rating: 6.1,
+    age: "R",
+    duration: "2h 1m",
+    genres: ["Action","Adventure","Sci-Fi"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/i0fJS8M5UKoETjjJ0zwUiKaR8tr.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/nFdprMGyrxZmqKsLXmVzS0vLqxE.jpg",
+    videoUrl: "414",
+    overview: "Gotham City faces a dual threat from Two-Face, a disgraced former district attorney obsessed with chance, and the Riddler, a disgruntled former Wayne Enterprises inventor determined to drain the minds of Gotham's citizens using a brain-altering device. As Bruce Wayne wrestles with painful memories of his parents' deaths and romance with psychologist Dr. Chase Meridian, he takes under his wing orphaned acrobat Dick Grayson, who becomes his sidekick, Robin.",
+    director: "Joel Schumacher",
+    cast: ["Val Kilmer, Tommy Lee Jones, Jim Carrey, Nicole Kidman, Chris O'Donnell, Michael Gough, Pat Hingle"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
