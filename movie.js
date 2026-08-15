@@ -10381,7 +10381,7 @@ const MOVIES = [
     year: 2025,
     rating: 5.6,
     age: "PG-13",
-    duration: "1h 58m",
+    duration: "1h 46m",
     genres: ["Action","Comedy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/jLLtx3nTRSLGPAKl4RoIv1FbEBr.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/arNhhBd88bP3Bjoe4HT8MFE1JQA.jpg",
