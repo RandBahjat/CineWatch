@@ -10094,7 +10094,7 @@ const MOVIES = [
     age: "R",
     duration: "1h 53m",
     genres: ["Action","Crime","Drama"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/tYzFuYXmT8LOYASlFCkaPiAFAl0.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1PXwh3nJzgRkkYnqfWInJNypeL4.jpg",
     videoUrl: "37799",
     overview: "On a fall night in 2003, Harvard undergrad and computer programming genius Mark Zuckerberg sits down at his computer and, fueled by rage and beer, begins to create what would become the social phenomenon known as Facebook. Six years and 500 million friends later, Mark Zuckerberg is the youngest billionaire in history — but for this entrepreneur, success leads to both personal and legal complications as former friends and colleagues turn into rivals.",
