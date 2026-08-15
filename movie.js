@@ -9997,7 +9997,7 @@ const MOVIES = [
     videoUrl: "593643",
     overview: "When Dylan and Jamie meet, they quickly become best friends. Feeling jaded by love, the two agree to be just friends with the added benefit of casual sex — no strings attached. But as their arrangement blurs the line between friendship and romance, they discover that keeping feelings out of it may be harder than they bargained for.",
     director: "Will Gluck",
-    cast: ["Emile Hirsch, Elisha Cuthbert, Timothy Olyphant, Chris Marquette, Paul Dano, James Remar"],
+    cast: ["Justin Timberlake, Mila Kunis, Patricia Clarkson, Jenna Elfman, Bryan Greenberg, Woody Harrelson, Richard Jenkins"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
