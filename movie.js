@@ -10386,9 +10386,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/semFxuYx6HcrkZzslgAkBqfJvZk.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7nAVXGHHtaNcdsqvDXmY6R9N0fG.jpg",
     videoUrl: "1363123",
-    overview: "Dan Morgan is a devoted husband, loving father of three, and successful car salesman living a quiet suburban life. However, decades earlier, he was an elite government assassin. When enemy ghosts from his past track him down, Dan packs his unsuspecting wife, angst-ridden teen daughter, gamer son, and ten-month-old baby into their minivan for an impromptu road trip to Las Vegas—determined to protect his family while pretending it's just an innocent family vacation.",
+    overview: "In this holiday-themed sequel, former assassin Dan Morgan plans a European family Christmas trip to London to reconnect with his kids. However, the vacation derails when a mysterious figure from Dan's past—his long-lost half-brother Finn—shows up with unfinished business. To stop Finn and protect his loved ones, Dan and the family are forced into an international game of cat-and-mouse filled with bank heists and car chases across Europe.",
     director: "Simon Cellan Jones",
-    cast: ["Mark Wahlberg, Michelle Monaghan, Zoe Colletti, Van Crosby, Saïd Taghmaoui, Maggie Q"],
+    cast: ["Mark Wahlberg, Michelle Monaghan, Kit Harington, Zoe Colletti, Van Crosby, Sidse Babett Knudsen"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
