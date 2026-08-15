@@ -10025,7 +10025,7 @@ const MOVIES = [
     rating: 7.0,
     age: "PG-13",
     duration: "1h 32m",
-    genres: ["Comedy","Romance"],
+    genres: ["Comedy","Drama","Romance"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9C09L1U9S13J4Ut029Qhu0oLcTQ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rSEfKLHDZKiMQWsyJIfKr9D0CaC.jpg",
     videoUrl: "41630",
