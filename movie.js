@@ -10257,6 +10257,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "The Transporter 3",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2005,
+    rating: 6.3,
+    age: "R",
+    duration: "1h 27m",
+    genres: ["Action", "Crime", "Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cdm17vK8PxHfTi7ayZf6WKbOgUO.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/ghgogVFRi60o0sVsRWgpG2r4Sy9.jpg",
+    videoUrl: "9335",
+    overview: "Ex-special forces operative Frank Martin has relocated to Miami, taking a low-profile temporary job driving and protecting the young son of a high-ranking US anti-drug official. When the boy is kidnapped and infected with a deadly, highly contagious airborne virus, Frank is framed for the crime and must go on the run to stop a ruthless cartel plot before time runs out.",
+    director: "Louis Leterrier",
+    cast: ["Jason Statham, Alessandro Gassmann, Amber Valletta, Kate Nauta, François Berléand, Keith David, Hunter Clary"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
