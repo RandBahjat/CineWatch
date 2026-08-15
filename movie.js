@@ -10471,7 +10471,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7yEbEUrOsAS0d5DW1OqtvSpmRQv.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/yyFPjOavUSNbJZUCEmpdTb4BcMM.jpg",
     videoUrl: "127521",
-    overview: "After barely surviving his grievous wounds from his mission in Dhaka, black-ops mercenary Tyler Rake retires to a remote cabin in Austria. However, his peace is short-lived when he is recruited for another high-stakes extraction: rescuing the battered family of a ruthless Georgian gangster from a high-security prison. When the break-out turns deadly, the gangster's vengeful brother pursues Rake and the family across Vienna.",
+    overview: "Samson Gaul is an ex-mercenary and seasoned human-trafficking investigator who retired after his actions inadvertently resulted in the deaths of helpless victims. When Andrew Fayden, a veteran MMA fighter, travels to Moldova with his family and discovers his daughter has been kidnapped by a ruthless trafficking ring, he convinces Gaul to return to the shadows to hunt down the syndicate and rescue her.",
     director: "Sam Hargrave",
     cast: ["Chris Hemsworth, Golshifteh Farahani, Adam Bessa, Tornike Gogrichiani, Tinatin Dalakishvili, Idris Elba"],
     trending: false, // Leave false so it only shows up in the Genres tab
