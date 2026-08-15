@@ -10177,7 +10177,7 @@ const MOVIES = [
     year: 2011,
     rating: 5.6,
     age: "TV-MA",
-    duration: "1h 55m",
+    duration: "38m",
     genres: ["Drama","Mystery","Psychological Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6yRMyWwjuhKg6IU66uiZIGhaSc8.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3WcshZlV3enIi8IvqlW2PS5GItv.jpg",
