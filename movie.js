@@ -10522,7 +10522,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/azL2ThbJMIkts3ZMt3j1YgBUeDB.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/yyG9D9E6xf6HoumerzB9pQJfGEI.jpg",
     videoUrl: "98566",
-    overview: "After arch-nemesis Shredder escapes custody, he joins forces with mad scientist Baxter Stockman and two mutated henchmen, Bebop and Rocksteady, to launch a sinister plan for world domination. As the Turtles—Leonardo, Raphael, Donatello, and Michelangelo—prepare to battle Shredder and his gang alongside April O'Neil and hockey-masked vigilante Casey Jones, they find themselves facing an even greater alien threat: the formidable Krang from Dimension X.",
+    overview: "Darkness has settled over New York City as the villainous Shredder and his evil Foot Clan maintain an iron grip on everything from the police to the politicians. When ambitious TV reporter April O'Neil stumbles upon a group of mysterious masked vigilantes, she discovers four mutated, pizza-loving turtle brothers—Leonardo, Raphael, Donatello, and Michelangelo. Teaming up with April and her cameraman Vern, the Ninja Turtles must come out of the sewers to save the city from Shredder's terrifying plot.",
     director: "Dave Green",
     cast: ["Megan Fox, Will Arnett, Stephen Amell, Tyler Perry, Brian Tee, Laura Linney, Pete Ploszek, Alan Ritchson, Noel Fisher, Jeremy Howard"],
     trending: false, // Leave false so it only shows up in the Genres tab
