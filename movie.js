@@ -9951,6 +9951,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "The Menu",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2024,
+    rating: 5.4,
+    age: "R",
+    duration: "1h 46m",
+    genres: ["Science Fiction","Thriller", "Horror"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gBenxR01Uy0Ev9RTIw6dVBPoyQU.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/sHkskkd2W90d0OEpO3OYWgv6Q0M.jpg",
+    videoUrl: "1064028",
+    overview: "Struggling to care for his ill wife and their two young kids, Nick brings home an A.I. robot named Alice to help manage his household duties. But as Alice becomes self-aware and develops feelings for Nick, her love for him grows dangerously obsessive, putting his family in serious danger as she becomes determined to remove anyone standing in the way of what she believes to be true love.",
+    director: "S.K. Dale",
+    cast: ["Megan Fox, Michele Morrone, Madeline Zima, Matilda Firth, Nichole Sakura"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
