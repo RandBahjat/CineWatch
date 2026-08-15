@@ -10047,7 +10047,7 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/s1BoBwNB9AgdpTt41duInZYF8Ob.jpg",
     videoUrl: "1327862",
     overview: "Morgan Grant and her teenage daughter Clara explore what's left behind after a devastating accident reveals a shocking betrayal, forcing them to confront long-buried family secrets, redefine love, and rediscover each other. Based on the bestselling novel by Colleen Hoover.",
-    director: "Will Gluck",
+    director: "Josh Boone",
     cast: ["Emma Stone, Amanda Bynes, Penn Badgley, Patricia Clarkson, Thomas Haden Church, Stanley Tucci, Lisa Kudrow"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
