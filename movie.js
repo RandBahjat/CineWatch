@@ -10379,7 +10379,7 @@ const MOVIES = [
     title: "The Family Plan 2",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
-    rating: 6.3,
+    rating: 5.6,
     age: "PG-13",
     duration: "1h 58m",
     genres: ["Action","Comedy"],
