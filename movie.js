@@ -9921,7 +9921,7 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
     rating: 6.3,
-    age: "R",
+    age: "PG-13",
     duration: "1h 43m",
     genres: ["Comedy", "Romance"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/5qHoazZiaLe7oFBok7XlUhg96f2.jpg",
