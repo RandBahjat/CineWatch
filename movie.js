@@ -10575,7 +10575,7 @@ const MOVIES = [
     videoUrl: "268",
     overview: "In crime-ridden Gotham City, billionaire Bruce Wayne operates in secret as the enigmatic vigilante Batman, keeping violent criminals at bay. When mob enforcer Jack Napier is disfigured during a shootout at Axis Chemicals, he transforms into the sadistic, flamboyant Joker and launches a reign of terror over the city. As photojournalist Vicki Vale unravels Bruce's true identity, Batman faces off against the Joker in a dark, decisive battle for Gotham's survival.",
     director: "Tim Burton",
-    cast: ["Michael Keaton, Danny DeVito, Michelle Pfeiffer, Christopher Walken, Michael Gough, Pat Hingle"],
+    cast: ["Michael Keaton, Jack Nicholson, Kim Basinger, Robert Wuhl, Pat Hingle, Billy Dee Williams, Michael Gough"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
