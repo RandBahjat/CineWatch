@@ -10563,6 +10563,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Batman Returns",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2006,
+    rating: 6.1,
+    age: "PG-13",
+    duration: "2h 34m",
+    genres: ["Action", "Adventure","Sci-Fi"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/385XwTQZDpRX2d3kxtnpiLrjBXw.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/exrH1VYR39JhptNawUeSE37R1bL.jpg",
+    videoUrl: "1452",
+    overview: "Following a mysterious five-year absence searching for the remains of Krypton, Superman returns to Earth to find a world that has moved on without him. Lois Lane has built a new life, won a Pulitzer Prize for her essay Why the World Doesn't Need Superman, and started a family. Meanwhile, arch-nemesis Lex Luthor hatches a villainous scheme to create a new Kryptonian landmass that threatens to destroy billions of lives, forcing the Man of Steel to regain the world's trust and save Metropolis once again.",
+    director: "Bryan Singer",
+    cast: ["Brandon Routh, Kate Bosworth, Kevin Spacey, James Marsden, Parker Posey, Frank Langella, Sam Huntington"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
