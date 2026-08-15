@@ -23446,7 +23446,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
 
   const isNumericId = /^\d+$/.test(videoUrl);
   const isTvEmbed = videoUrl.startsWith("tv_embed:");
-  const isEmbedUrl = isTvEmbed || videoUrl.includes("/embed/") || videoUrl.includes("moviepire.co") || videoUrl.includes("cinesrc.st");
+  const isEmbedUrl = isTvEmbed || videoUrl.includes("/embed/") || videoUrl.includes("moviepire.co") || videoUrl.includes("2embed.cc");
 
   let streamUrl = null;
 
@@ -23613,7 +23613,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
 
   // Check if it's an embed ID or URL
   const isNumericId = /^\d+$/.test(movie.videoUrl);
-  const isEmbedUrl = movie.videoUrl.includes("/embed/") || movie.videoUrl.includes("moviepire.co") || movie.videoUrl.includes("cinesrc.st");
+  const isEmbedUrl = movie.videoUrl.includes("/embed/") || movie.videoUrl.includes("moviepire.co") || movie.videoUrl.includes("2embed.cc");
   const serverWrap = document.getElementById("serverSelectWrap");
 
   let streamUrl = null;
