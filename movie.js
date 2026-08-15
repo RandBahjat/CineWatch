@@ -10354,7 +10354,7 @@ const MOVIES = [
     videoUrl: "323675",
     overview: "Fresh out of the police academy and eager to prove himself as a full-fledged officer, Ben Barber joins his soon-to-be brother-in-law James on a trip from Atlanta to Miami. Their mission is to assist local law enforcement in tracking down a skilled hacker who can help dismantle a powerful drug ring led by a charismatic yet ruthless philanthropist.",
     director: "Tim Story",
-    cast: ["Ice Cube, Kevin Hart, John Leguizamo, Bryan Callen, Tika Sumpter, Laurence Fishburne"],
+    cast: ["Ice Cube, Kevin Hart, Ken Jeong, Benjamin Bratt, Olivia Munn, Tika Sumpter, Bruce McGill"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
