@@ -9944,7 +9944,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gBenxR01Uy0Ev9RTIw6dVBPoyQU.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/sHkskkd2W90d0OEpO3OYWgv6Q0M.jpg",
     videoUrl: "1064028",
-    overview: "Only one man has the particular set of skills to lead Police Squad and save the world — Lt. Frank Drebin Jr. Following in his father's footsteps, he must solve a murder case to prevent Police Squad from being shut down for good, in this reboot of the beloved spoof comedy franchise.",
+    overview: "Struggling to care for his ill wife and their two young kids, Nick brings home an A.I. robot named Alice to help manage his household duties. But as Alice becomes self-aware and develops feelings for Nick, her love for him grows dangerously obsessive, putting his family in serious danger as she becomes determined to remove anyone standing in the way of what she believes to be true love.",
     director: "Akiva Schaffer",
     cast: ["Liam Neeson, Pamela Anderson, Paul Walter Hauser, Kevin Durand, Danny Huston"],
     trending: false, // Leave false so it only shows up in the Genres tab
