@@ -10344,10 +10344,10 @@ const MOVIES = [
   {
     title: "Ride Along 2",
     type: "Movie", // Use "Movie" or "TV Show"
-    year: 2015,
-    rating: 6.1,
+    year: 2016,
+    rating: 5.9,
     age: "PG-13",
-    duration: "1h 39m",
+    duration: "1h 42m",
     genres: ["Action","Comedy", "Crime"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qrt65VVaP5DEEBZgB5XYctA82Qv.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/w1M7LydgxFs3gLgYxxNtDODMrYE.jpg",
