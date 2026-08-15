@@ -10501,7 +10501,7 @@ const MOVIES = [
     rating: 5.5,
     age: "R",
     duration: "1h 41m",
-    genres: ["Action","Drama","Thriller"],
+    genres: ["Action","Crime","Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fZlNXEHZsBp7unqw009MeBbMv87.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/j2Dlhe107BCLpGsZ907pbAutXgE.jpg",
     videoUrl: "1280450",
