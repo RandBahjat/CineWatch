@@ -10563,10 +10563,10 @@ const MOVIES = [
     featured: false,
   },
   {
-    title: "Batman Returns",
+    title: "Batman",
     type: "Movie", // Use "Movie" or "TV Show"
-    year: 1992,
-    rating: 7.1,
+    year: 1989,
+    rating: 7.5,
     age: "PG-13",
     duration: "2h 6m",
     genres: ["Action","Crime", "Fantasy","Thriller"],
