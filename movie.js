@@ -9911,7 +9911,7 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/kzn2mRzACwANeOrfCUdVaNyTeca.jpg",
     videoUrl: "1072790",
     overview: "After an amazing first date, Bea and Ben's fiery attraction turns ice cold — until they find themselves unexpectedly reunited at a destination wedding in Australia. To avoid the awkwardness of their failed romance, the sworn enemies pretend to be a couple, but their plan to fake a relationship threatens to become all too real.",
-    director: "Joachim Rønning ",
+    director: "Will Gluck",
     cast: ["Jared Leto, Greta Lee, Evan Peters, Hasan Minhaj, Jodie Turner-Smith, Arturo Castro, Cameron Monaghan, Gillian Anderson, Jeff Bridges"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
