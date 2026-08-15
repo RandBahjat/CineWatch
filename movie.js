@@ -10320,7 +10320,7 @@ const MOVIES = [
     videoUrl: "39514",
     overview: "Inspired by the Warren Ellis comic book series, this action comedy follows Frank Moses, a retired black-ops CIA agent living a quiet suburban life. When an elite high-tech hit squad targets him to cover up a top-secret government conspiracy, Frank reassembles his old team of Retired, Extremely Dangerous operatives for a cross-country mission to stay alive and expose the truth.",
     director: "Robert Schwentke",
-    cast: ["Liam Neeson, Emmy Raver-Lampman, Taylor John Smith, Aidan Quinn, Claire van der Boom, Yael Stone"],
+    cast: ["Bruce Willis, Morgan Freeman, John Malkovich, Helen Mirren, Mary-Louise Parker, Karl Urban, Brian Cox"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
