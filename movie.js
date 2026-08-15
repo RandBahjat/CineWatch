@@ -10351,7 +10351,7 @@ const MOVIES = [
     genres: ["Action","Comedy", "Crime"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qKvVUHdiwqkXdlRsW4fHO7SAZef.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ztWQrpD5LeqypjFKOng5jADTHzP.jpg",
-    videoUrl: "168530",
+    videoUrl: "323675",
     overview: "Ben Barber, a fast-talking high school security guard, aspires to prove himself worthy of marrying Angela, the love of his life. To gain the approval of her tough, veteran LAPD detective brother, James, Ben agrees to a 24-hour shift on the streets of Atlanta. What starts as a series of staged harmless calls escalates into a real-world confrontation with one of the city's most dangerous crime lords.",
     director: "Tim Story",
     cast: ["Ice Cube, Kevin Hart, John Leguizamo, Bryan Callen, Tika Sumpter, Laurence Fishburne"],
