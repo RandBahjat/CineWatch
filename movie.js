@@ -10420,7 +10420,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8cXbitsS6dWQ5gfMTZdorpAAzEH.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/pLOFQLeKQYsCzkYgsw9tg1cPuDG.jpg",
     videoUrl: "725201",
-    overview: "Salt-of-the-earth farmer Cole falls head over heels for the mysterious Sadie after a romantic first date. When she suddenly stops replying to his texts, Cole flies to London as a grand romantic gesture to surprise her—only to discover that Sadie is actually a covert CIA operative. Before they can even decide on a second date, Cole and Sadie are swept into a globe-trotting international adventure to save the world.",
+    overview: "When Court Gentry—a top-tier CIA mercenary operating under the codename Sierra Six—uncovers dark agency secrets during a mission, he becomes the prime target of his rogue superiors. To eliminate him, the CIA unleashes Lloyd Hansen, a sociopathic former agent turned mercenary who launches a relentless, global manhunt across Europe to hunt Six down.",
     director: "Dexter Fletcher",
     cast: ["Chris Evans, Ana de Armas, Adrien Brody, Mike Moh, Amy Sedaris, Tate Donovan, Tim Blake Nelson"],
     trending: false, // Leave false so it only shows up in the Genres tab
