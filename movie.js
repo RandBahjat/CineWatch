@@ -9939,7 +9939,7 @@ const MOVIES = [
     year: 2024,
     rating: 5.4,
     age: "R",
-    duration: "1h 25m",
+    duration: "1h 46m",
     genres: ["Action","Comedy", "Crime"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rwla9vqzrKVVKVKiOuROTIXGsxj.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ifnnW3q4rcxGiqFQf2CLG8Ms4p9.jpg",
@@ -24588,4 +24588,3 @@ if (vEl) {
   // Run once on load in case page starts scrolled
   onScroll();
 })();
-();
