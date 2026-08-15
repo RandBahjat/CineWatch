@@ -10294,7 +10294,7 @@ const MOVIES = [
     title: "Blacklight",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2022,
-    rating: 5.4,
+    rating: 4.9,
     age: "R",
     duration: "1h 31m",
     genres: ["Action", "Crime", "Drama","Thriller"],
