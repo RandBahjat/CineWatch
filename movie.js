@@ -10417,7 +10417,7 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 2m",
     genres: ["Action","Thriller"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/liLN69YgoovHVgmlHJ876PKi5Yi.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8cXbitsS6dWQ5gfMTZdorpAAzEH.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oWCExzaakAyCCpjQSZ7yak4Wi2d.jpg",
     videoUrl: "868759",
     overview: "Salt-of-the-earth farmer Cole falls head over heels for the mysterious Sadie after a romantic first date. When she suddenly stops replying to his texts, Cole flies to London as a grand romantic gesture to surprise her—only to discover that Sadie is actually a covert CIA operative. Before they can even decide on a second date, Cole and Sadie are swept into a globe-trotting international adventure to save the world.",
