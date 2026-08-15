@@ -10342,6 +10342,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Ride Along 2",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2015,
+    rating: 6.1,
+    age: "PG-13",
+    duration: "1h 39m",
+    genres: ["Action","Comedy", "Crime"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qrt65VVaP5DEEBZgB5XYctA82Qv.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/w1M7LydgxFs3gLgYxxNtDODMrYE.jpg",
+    videoUrl: "168530",
+    overview: "Ben Barber, a fast-talking high school security guard, aspires to prove himself worthy of marrying Angela, the love of his life. To gain the approval of her tough, veteran LAPD detective brother, James, Ben agrees to a 24-hour shift on the streets of Atlanta. What starts as a series of staged harmless calls escalates into a real-world confrontation with one of the city's most dangerous crime lords.",
+    director: "Tim Story",
+    cast: ["Ice Cube, Kevin Hart, John Leguizamo, Bryan Callen, Tika Sumpter, Laurence Fishburne"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
