@@ -10012,7 +10012,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9C09L1U9S13J4Ut029Qhu0oLcTQ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rSEfKLHDZKiMQWsyJIfKr9D0CaC.jpg",
     videoUrl: "41630",
-    overview: "When Dylan and Jamie meet, they quickly become best friends. Feeling jaded by love, the two agree to be just friends with the added benefit of casual sex — no strings attached. But as their arrangement blurs the line between friendship and romance, they discover that keeping feelings out of it may be harder than they bargained for.",
+    overview: "Adam and Emma have known each other since childhood, drifting in and out of one another's lives over the years. When they reconnect as adults, they agree to keep things purely physical — no emotional attachments, no relationship expectations. But as their arrangement continues, they find it increasingly difficult to keep feelings from creeping into the equation.",
     director: "Will Gluck",
     cast: ["Justin Timberlake, Mila Kunis, Patricia Clarkson, Jenna Elfman, Bryan Greenberg, Woody Harrelson, Richard Jenkins"],
     trending: false, // Leave false so it only shows up in the Genres tab
