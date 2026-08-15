@@ -23564,7 +23564,7 @@ function bindEventListeners() {
       const message = document.getElementById("reportMessage").value.trim();
       if (!message) return;
 
-      const mailtoUrl = `mailto:support@cinewatch.com?subject=${encodeURIComponent(subject || "CineWatch Report")}&body=${encodeURIComponent(message)}`;
+      const mailtoUrl = `mailto:randbahjat14@gmail.com?subject=${encodeURIComponent(subject || "CineWatch Report")}&body=${encodeURIComponent(message)}`;
       window.location.href = mailtoUrl;
 
       closeReportModal();
