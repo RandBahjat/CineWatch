@@ -10029,7 +10029,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/v5f1qO6NJnxWgONgkYg21TW39DT.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/30rvmoEBqovm723agDJ3QddWXcY.jpg",
     videoUrl: "37735",
-    overview: "Adam and Emma have known each other since childhood, drifting in and out of one another's lives over the years. When they reconnect as adults, they agree to keep things purely physical — no emotional attachments, no relationship expectations. But as their arrangement continues, they find it increasingly difficult to keep feelings from creeping into the equation.",
+    overview: "A clean-cut high schooler's life takes an unexpected turn after a little white lie about losing her virginity spreads through the school's rumor mill. As her reputation spirals wildly out of control, she decides to embrace her new wild child image, cleverly turning gossip into personal gain — all while inadvertently learning what it really means to stand up for herself.",
     director: "Ivan Reitman",
     cast: ["Natalie Portman, Ashton Kutcher, Kevin Kline, Cary Elwes, Greta Gerwig, Lake Bell"],
     trending: false, // Leave false so it only shows up in the Genres tab
