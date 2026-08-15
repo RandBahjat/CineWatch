@@ -10515,7 +10515,7 @@ const MOVIES = [
     title: "Teenage Mutant Ninja Turtles",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2014,
-    rating: 5.9,
+    rating: 5.8,
     age: "PG-13",
     duration: "1h 52m",
     genres: ["Action", "Adventure", "Comedy", "Sci-Fi"],
