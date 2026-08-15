@@ -10179,7 +10179,7 @@ const MOVIES = [
     age: "TV-MA",
     duration: "38m",
     genres: ["Drama","Romance","Short","Erotic"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6yRMyWwjuhKg6IU66uiZIGhaSc8.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/47XRWH95ATv4szxdWHl723guWXP.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3WcshZlV3enIi8IvqlW2PS5GItv.jpg",
     videoUrl: "619979",
     overview: "Based on Patricia Highsmith's 1957 psychological thriller novel, the story follows Vic and Melinda Van Allen, a wealthy married couple in a small Louisiana town whose marriage has fallen apart. To avoid a messy divorce, Vic permits Melinda to take outside lovers as long as she doesn't abandon the family. However, when her lovers start mysteriously disappearing and turning up dead, Vic becomes the primary suspect in a dangerous mind game of jealousy, deception, and obsession.",
