@@ -10081,7 +10081,7 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/1PXwh3nJzgRkkYnqfWInJNypeL4.jpg",
     videoUrl: "37799",
     overview: "On a fall night in 2003, Harvard undergrad and computer programming genius Mark Zuckerberg sits down at his computer and, fueled by rage and beer, begins to create what would become the social phenomenon known as Facebook. Six years and 500 million friends later, Mark Zuckerberg is the youngest billionaire in history — but for this entrepreneur, success leads to both personal and legal complications as former friends and colleagues turn into rivals.",
-    director: "Elizabeth Allen Rosenbaum",
+    director: "David Fincher",
     cast: ["Sofia Carson, Nicholas Galitzine, John Harlan Kim, Chosen Jacobs, Linden Ashby, Nicholas Logan"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
