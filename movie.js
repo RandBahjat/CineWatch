@@ -10311,10 +10311,10 @@ const MOVIES = [
     title: "RED",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2010,
-    rating: 4.9,
+    rating: 7.0,
     age: "PG-13",
-    duration: "1h 44m",
-    genres: ["Action", "Mystery", "Thriller"],
+    duration: "1h 51m",
+    genres: ["Action","Comedy", "Mystery", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bv9dy8mnwftdY2j6gG39gCfSFpV.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3VqxfyYUD23Q5G11ruSMnSU7zIL.jpg",
     videoUrl: "823625",
