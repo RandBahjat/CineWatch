@@ -10259,8 +10259,8 @@ const MOVIES = [
   {
     title: "The Transporter 3",
     type: "Movie", // Use "Movie" or "TV Show"
-    year: 2005,
-    rating: 6.3,
+    year: 2008,
+    rating: 6.1,
     age: "R",
     duration: "1h 27m",
     genres: ["Action", "Crime", "Thriller"],
