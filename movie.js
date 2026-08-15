@@ -10434,7 +10434,7 @@ const MOVIES = [
     age: "R",
     duration: "1h 56m",
     genres: ["Action","Thriller"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8cXbitsS6dWQ5gfMTZdorpAAzEH.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nygOUcBKPHFTbxsYRFZVePqgPK6.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/pLOFQLeKQYsCzkYgsw9tg1cPuDG.jpg",
     videoUrl: "725201",
     overview: "When Court Gentry—a top-tier CIA mercenary operating under the codename Sierra Six—uncovers dark agency secrets during a mission, he becomes the prime target of his rogue superiors. To eliminate him, the CIA unleashes Lloyd Hansen, a sociopathic former agent turned mercenary who launches a relentless, global manhunt across Europe to hunt Six down.",
