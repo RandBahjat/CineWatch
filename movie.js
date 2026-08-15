@@ -10063,7 +10063,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/z4gVnxTaks3anTycwKjDmvQSuWt.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/s1BoBwNB9AgdpTt41duInZYF8Ob.jpg",
     videoUrl: "1327862",
-    overview: "Morgan Grant and her teenage daughter Clara explore what's left behind after a devastating accident reveals a shocking betrayal, forcing them to confront long-buried family secrets, redefine love, and rediscover each other. Based on the bestselling novel by Colleen Hoover.",
+    overview: "Cassie, a struggling singer-songwriter, and Luke, a Marine about to be deployed, enter into a marriage of convenience for the practical benefits — health insurance for her, extra pay for him. But as their fake relationship deepens through letters and unexpected visits, their feelings for each other become dangerously real, blurring the line between the arrangement they made and the love they didn't plan for.",
     director: "Josh Boone",
     cast: ["Allison Williams, McKenna Grace, Dave Franco, Mason Thames, Scott Eastwood, Willa Fitzgerald, Clancy Brown"],
     trending: false, // Leave false so it only shows up in the Genres tab
