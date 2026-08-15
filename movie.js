@@ -9941,7 +9941,7 @@ const MOVIES = [
     age: "R",
     duration: "1h 46m",
     genres: ["Science Fiction","Thriller", "Horror"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rwla9vqzrKVVKVKiOuROTIXGsxj.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gBenxR01Uy0Ev9RTIw6dVBPoyQU.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ifnnW3q4rcxGiqFQf2CLG8Ms4p9.jpg",
     videoUrl: "1035259",
     overview: "Only one man has the particular set of skills to lead Police Squad and save the world — Lt. Frank Drebin Jr. Following in his father's footsteps, he must solve a murder case to prevent Police Squad from being shut down for good, in this reboot of the beloved spoof comedy franchise.",
