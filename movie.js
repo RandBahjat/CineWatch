@@ -10361,10 +10361,10 @@ const MOVIES = [
   {
     title: "The Family Plan",
     type: "Movie", // Use "Movie" or "TV Show"
-    year: 2016,
-    rating: 5.9,
+    year: 2023,
+    rating: 6.3,
     age: "PG-13",
-    duration: "1h 42m",
+    duration: "1h 58m",
     genres: ["Action","Comedy", "Crime"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qKvVUHdiwqkXdlRsW4fHO7SAZef.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ztWQrpD5LeqypjFKOng5jADTHzP.jpg",
