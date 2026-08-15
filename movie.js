@@ -9883,6 +9883,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Prisoners",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2013,
+    rating: 8.2,
+    age: "R",
+    duration: "2h 33m",
+    genres: ["Crime","Drama","Mystery","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uhviyknTT5cEQXbn6vWIqfM4vGm.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/yUIVOMiCwapPE60iB1iC7aOm0wZ.jpg",
+    videoUrl: "146233",
+    overview: "A intense psychological thriller following the desperate search for two young girls who go missing in suburban Pennsylvania on Thanksgiving. When police are forced to release the prime suspect due to a lack of physical evidence, Keller Dover, the father of one of the missing girls, decides to take matters into his own hands. Meanwhile, Detective Loki relentlessly pursues every lead, racing against the clock in a dark web of secrets and moral ambiguity.",
+    director: "Denis Villeneuve",
+    cast: ["Hugh Jackman, Jake Gyllenhaal, Viola Davis, Maria Bello, Terrence Howard, Melissa Leo, Paul Dano"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
