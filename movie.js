@@ -9985,6 +9985,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Friends with Benefits",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2011,
+    rating: 6.5,
+    age: "R",
+    duration: "1h 49m",
+    genres: ["Comedy", "Drama","Romance"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/5mVyFHSY2rSsNgD4NfEwV82HigU.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/rTBOOAb9BmoqIiNh5mmLPQETWaK.jpg",
+    videoUrl: "593643",
+    overview: "An overachieving high school senior with dreams of an Ivy League future falls for the mysterious new girl who just moved in next door — only to discover she has a secret past as an adult film star. As their relationship deepens, he must decide how far he'll go to protect her from a world determined to expose her history and drag them both down.",
+    director: "Luke Greenfield",
+    cast: ["Emile Hirsch, Elisha Cuthbert, Timothy Olyphant, Chris Marquette, Paul Dano, James Remar"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
