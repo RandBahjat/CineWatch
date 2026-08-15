@@ -10331,7 +10331,7 @@ const MOVIES = [
     rating: 6.1,
     age: "PG-13",
     duration: "1h 39m",
-    genres: ["Action","Comedy", "Crime", "Thriller"],
+    genres: ["Action","Comedy", "Crime"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8eeK3OB5PeSRQD7BpZcGZKkehG.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/tBI2wrjdKmXGOfVbC6wj1gpZBIH.jpg",
     videoUrl: "39514",
