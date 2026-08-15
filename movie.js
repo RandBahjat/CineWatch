@@ -19419,9 +19419,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1l7vsAIkqOzrqiPwjO27Cb5QdfJ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7j4ug9B6JXVeh5HhQjjPScrdj4Z.jpg",
     videoUrl: "71789",
-    overview: "Following a violent riot in Los Angeles, a decorated LAPD sergeant, Daniel "Hondo Harrelson, is tasked with leading a new SWAT unit that better represents the diverse community it protects. Straddling two worlds — as both a Black man from his old neighborhood and the leader of the elite tactical squad tasked with keeping the city safe — Hondo must navigate the razor's edge between duty and loyalty.",
+    overview: "Following a violent riot in Los Angeles, a decorated LAPD sergeant, Daniel Hondo Harrelson, is tasked with leading a new SWAT unit that better represents the diverse community it protects. Straddling two worlds — as both a Black man from his old neighborhood and the leader of the elite tactical squad tasked with keeping the city safe — Hondo must navigate the razor's edge between duty and loyalty.",
     director: "Aaron Rahsaan Thomas, Shawn Ryan",
-    cast: ["Shemar Moore","Alex Russell","Jay Harrington","Lina Esco","Kenny Johnson","David Lim","Patrick St. Esprit"],
+    cast: ["Shemar Moore, Alex Russell, Lina Esco, Kenny Johnson, Jay Harrington, David Lim, Anna Enger Ritch"],
     trending: false,
     featured: false,
     cinesrcId: "71789",
@@ -19627,6 +19627,40 @@ const MOVIES = [
           { episode: 20, title: "Devil Dog" },
           { episode: 21, title: "Ride or Die" },
           { episode: 22, title: "Return to Base" }
+        ]
+      }
+    ]
+  }
+,
+  {
+    title: "Marvel's The Defenders",
+    type: "TV Show",
+    year: 2017,
+    rating: 7.2,
+    age: "TV-MA",
+    duration: "50m",
+    genres: ["Drama","Action","Crime"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/49XzINhH4LFsgz7cx6TOPcHUJUL.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/n4XLn0wLCxWSFaQgG6queZlFPKi.jpg",
+    videoUrl: "71591",
+    overview: "Marvel's The Defenders follows Daredevil, Jessica Jones, Luke Cage and Iron Fist. A quartet of singular heroes with one common goal - to save New York City. This is the story of four solitary figures, burdened with their own personal challenges, who realize they just might be stronger when teamed together.",
+    director: "Marco Ramirez",
+    cast: ["Charlie Cox", "Krysten Ritter", "Mike Colter", "Finn Jones", "Sigourney Weaver", "Elodie Yung"],
+    trending: false,
+    featured: false,
+    cinesrcId: "71591",
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "The H Word" },
+          { episode: 2, title: "Mean Right Hook" },
+          { episode: 3, title: "Worst Behavior" },
+          { episode: 4, title: "Royal Dragon" },
+          { episode: 5, title: "Take Shelter" },
+          { episode: 6, title: "Ashes, Ashes" },
+          { episode: 7, title: "Fish in the Jailhouse" },
+          { episode: 8, title: "The Defenders" }
         ]
       }
     ]
