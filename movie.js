@@ -10030,7 +10030,7 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/30rvmoEBqovm723agDJ3QddWXcY.jpg",
     videoUrl: "37735",
     overview: "A clean-cut high schooler's life takes an unexpected turn after a little white lie about losing her virginity spreads through the school's rumor mill. As her reputation spirals wildly out of control, she decides to embrace her new wild child image, cleverly turning gossip into personal gain — all while inadvertently learning what it really means to stand up for herself.",
-    director: "Ivan Reitman",
+    director: "Will Gluck",
     cast: ["Natalie Portman, Ashton Kutcher, Kevin Kline, Cary Elwes, Greta Gerwig, Lake Bell"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
