@@ -10077,7 +10077,7 @@ const MOVIES = [
     age: "TV-13",
     duration: "2h",
     genres: ["Drama","Biography"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4JyNWkryifWbWXJyxcWh3pVya6N.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/iQlJyRecJeGGzQGT2rEcyAgz89F.jpg",
     videoUrl: "762975",
     overview: "Cassie, a struggling singer-songwriter, and Luke, a Marine about to be deployed, enter into a marriage of convenience for the practical benefits — health insurance for her, extra pay for him. But as their fake relationship deepens through letters and unexpected visits, their feelings for each other become dangerously real, blurring the line between the arrangement they made and the love they didn't plan for.",
