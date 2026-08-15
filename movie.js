@@ -10053,6 +10053,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Purple Hearts",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2022,
+    rating: 6.0,
+    age: "PG-13",
+    duration: "1h 56m",
+    genres: ["Drama","Romance"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/z4gVnxTaks3anTycwKjDmvQSuWt.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/s1BoBwNB9AgdpTt41duInZYF8Ob.jpg",
+    videoUrl: "1327862",
+    overview: "Morgan Grant and her teenage daughter Clara explore what's left behind after a devastating accident reveals a shocking betrayal, forcing them to confront long-buried family secrets, redefine love, and rediscover each other. Based on the bestselling novel by Colleen Hoover.",
+    director: "Josh Boone",
+    cast: ["Allison Williams, McKenna Grace, Dave Franco, Mason Thames, Scott Eastwood, Willa Fitzgerald, Clancy Brown"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
