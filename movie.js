@@ -10413,9 +10413,9 @@ const MOVIES = [
     title: "The Gray Man",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2022,
-    rating: 5.8,
+    rating: 6.5,
     age: "PG-13",
-    duration: "1h 57m",
+    duration: "2h 2m",
     genres: ["Action","Adventure","Comedy","Romance"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/liLN69YgoovHVgmlHJ876PKi5Yi.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oWCExzaakAyCCpjQSZ7yak4Wi2d.jpg",
