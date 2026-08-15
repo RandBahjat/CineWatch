@@ -10098,8 +10098,8 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/q5iixYCuDzDx5IoQXt4kZaLDIbr.jpg",
     videoUrl: "339403",
     overview: "A stylish, music-driven action thriller following Baby, a talented young getaway driver who relies on a personal soundtrack to drown out a severe case of tinnitus caused by a childhood accident. Hoping to clear his debt with a ruthless crime boss and walk away to start a normal life with a charming waitress, Baby finds himself forced into a doomed, high-stakes heist that threatens his life and freedom.",
-    director: "David Fincher",
-    cast: ["Jesse Eisenberg, Andrew Garfield, Justin Timberlake, Armie Hammer, Rooney Mara"],
+    director: "Edgar Wright",
+    cast: ["Ansel Elgort, Lily James, Kevin Spacey, Jon Hamm, Eiza González, Jamie Foxx, Jon Bernthal"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
