@@ -9906,7 +9906,7 @@ const MOVIES = [
     rating: 6.1,
     age: "R",
     duration: "1h 43m",
-    genres: ["Action", "Adventure", "Science Fiction"],
+    genres: ["Comedy", "Romance"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/chpWmskl3aKm1aTZqUHRCtviwPy.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/pUNfHmVqfwRdILhCkU8TdysVOXo.jpg",
     videoUrl: "533533",
