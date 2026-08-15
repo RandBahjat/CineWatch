@@ -10472,8 +10472,8 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/yyFPjOavUSNbJZUCEmpdTb4BcMM.jpg",
     videoUrl: "127521",
     overview: "Samson Gaul is an ex-mercenary and seasoned human-trafficking investigator who retired after his actions inadvertently resulted in the deaths of helpless victims. When Andrew Fayden, a veteran MMA fighter, travels to Moldova with his family and discovers his daughter has been kidnapped by a ruthless trafficking ring, he convinces Gaul to return to the shadows to hunt down the syndicate and rescue her.",
-    director: "Sam Hargrave",
-    cast: ["Chris Hemsworth, Golshifteh Farahani, Adam Bessa, Tornike Gogrichiani, Tinatin Dalakishvili, Idris Elba"],
+    director: "Ernie Barbarash",
+    cast: ["Jean-Claude Van Damme, Joe Flanigan, Anna-Louise Plowman, Charlotte Beaumont, Steve Nicolson"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
