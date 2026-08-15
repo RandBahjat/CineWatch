@@ -10444,6 +10444,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Extraction 2",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2023,
+    rating: 7.0,
+    age: "R",
+    duration: "2h 2m",
+    genres: ["Action","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nygOUcBKPHFTbxsYRFZVePqgPK6.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/1R6cvRtZgsYCkh8UFuWFN33xBP4.jpg",
+    videoUrl: "545609",
+    overview: "Tyler Rake, a fearless black-market mercenary with nothing left to lose, is hired to rescue the kidnapped son of an imprisoned international crime lord. Dispatched to Dhaka, Bangladesh, Rake executes a daring extraction, but the mission devolves into a deadly fight for survival when local authorities and rival cartels lock down the city to trap them.",
+    director: "Sam Hargrave",
+    cast: ["Chris Hemsworth, Rudhraksh Jaiswal, Randeep Hooda, Golshifteh Farahani, Pankaj Tripathi, David Harbour"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
