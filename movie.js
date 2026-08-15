@@ -10403,9 +10403,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/liLN69YgoovHVgmlHJ876PKi5Yi.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oWCExzaakAyCCpjQSZ7yak4Wi2d.jpg",
     videoUrl: "868759",
-    overview: "In this holiday-themed sequel, former assassin Dan Morgan plans a European family Christmas trip to London to reconnect with his kids. However, the vacation derails when a mysterious figure from Dan's past—his long-lost half-brother Finn—shows up with unfinished business. To stop Finn and protect his loved ones, Dan and the family are forced into an international game of cat-and-mouse filled with bank heists and car chases across Europe.",
-    director: "Simon Cellan Jones",
-    cast: ["Mark Wahlberg, Michelle Monaghan, Kit Harington, Zoe Colletti, Van Crosby, Sidse Babett Knudsen"],
+    overview: "Salt-of-the-earth farmer Cole falls head over heels for the mysterious Sadie after a romantic first date. When she suddenly stops replying to his texts, Cole flies to London as a grand romantic gesture to surprise her—only to discover that Sadie is actually a covert CIA operative. Before they can even decide on a second date, Cole and Sadie are swept into a globe-trotting international adventure to save the world.",
+    director: "Dexter Fletcher",
+    cast: ["Chris Evans, Ana de Armas, Adrien Brody, Mike Moh, Amy Sedaris, Tate Donovan, Tim Blake Nelson"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
