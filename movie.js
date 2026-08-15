@@ -9907,7 +9907,7 @@ const MOVIES = [
     age: "R",
     duration: "1h 43m",
     genres: ["Comedy", "Romance"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/chpWmskl3aKm1aTZqUHRCtviwPy.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/5qHoazZiaLe7oFBok7XlUhg96f2.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/pUNfHmVqfwRdILhCkU8TdysVOXo.jpg",
     videoUrl: "533533",
     overview: "A highly sophisticated program, Ares, is sent from the digital world into the real world on a dangerous mission — marking humankind's first encounter with A.I. beings. The film explores artificial intelligence originating from the Grid crossing into reality, with Kevin Flynn returning to confront the consequences of a world not yet ready for contact.",
