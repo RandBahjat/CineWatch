@@ -10059,7 +10059,7 @@ const MOVIES = [
     rating: 6.7,
     age: "TV-14",
     duration: "2h 2m",
-    genres: ["Drama","Romance"],
+    genres: ["Drama","Romance","Musical"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/z4gVnxTaks3anTycwKjDmvQSuWt.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/s1BoBwNB9AgdpTt41duInZYF8Ob.jpg",
     videoUrl: "1327862",
