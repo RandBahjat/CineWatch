@@ -10570,7 +10570,7 @@ const MOVIES = [
     age: "PG-13",
     duration: "2h 6m",
     genres: ["Action","Crime", "Fantasy","Thriller"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/385XwTQZDpRX2d3kxtnpiLrjBXw.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/jKBjeXM7iBBV9UkUcOXx3m7FSHY.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/exrH1VYR39JhptNawUeSE37R1bL.jpg",
     videoUrl: "1452",
     overview: "Following a mysterious five-year absence searching for the remains of Krypton, Superman returns to Earth to find a world that has moved on without him. Lois Lane has built a new life, won a Pulitzer Prize for her essay Why the World Doesn't Need Superman, and started a family. Meanwhile, arch-nemesis Lex Luthor hatches a villainous scheme to create a new Kryptonian landmass that threatens to destroy billions of lives, forcing the Man of Steel to regain the world's trust and save Metropolis once again.",
