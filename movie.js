@@ -10057,8 +10057,8 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2022,
     rating: 6.7,
-    age: "PG-13",
-    duration: "1h 56m",
+    age: "TV-14",
+    duration: "2h 2m",
     genres: ["Drama","Romance"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/z4gVnxTaks3anTycwKjDmvQSuWt.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/s1BoBwNB9AgdpTt41duInZYF8Ob.jpg",
