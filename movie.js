@@ -9924,7 +9924,7 @@ const MOVIES = [
     age: "PG-13",
     duration: "1h 25m",
     genres: ["Action","Comedy", "Crime"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/5qHoazZiaLe7oFBok7XlUhg96f2.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rwla9vqzrKVVKVKiOuROTIXGsxj.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/kzn2mRzACwANeOrfCUdVaNyTeca.jpg",
     videoUrl: "1072790",
     overview: "After an amazing first date, Bea and Ben's fiery attraction turns ice cold — until they find themselves unexpectedly reunited at a destination wedding in Australia. To avoid the awkwardness of their failed romance, the sworn enemies pretend to be a couple, but their plan to fake a relationship threatens to become all too real.",
