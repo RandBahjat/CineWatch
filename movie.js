@@ -10506,8 +10506,8 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/t98ZZtgdBC2yi7XBiT9nYBH6BrK.jpg",
     videoUrl: "628847",
     overview: "An undercover DEA agent and his partner embark on a game of cat-and-mouse in El Paso, Texas, when they discover their own teenage children have begun robbing a dangerous cartel. Using their parents' specialized tactical equipment and top-secret intelligence, the teenagers inadvertently trigger an all-out turf war that forces the agents to protect their kids while keeping their secrets hidden from the law and the cartel.",
-    director: "James Kent",
-    cast: ["Kate Beckinsale, Scott Eastwood, Jordan Duvigneau, Matt Craven, Alejandra Howard, Arvin Kananian"],
+    director: "Michael Dowse",
+    cast: ["Dave Bautista, Sophia Lillis, Jack Champion, Kate del Castillo, Tony Dalton, Whitney Peak, Bobby Cannavale"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
