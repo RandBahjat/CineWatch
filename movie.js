@@ -10624,8 +10624,8 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/buPFnHZ3xQy6vZEHxbHgL1Pc6CR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/4ovxVsrV8RM7zzH1RJo5t94iVIC.jpg",
     videoUrl: "1290821",
-    overview: "Gotham City faces a dual threat from Two-Face, a disgraced former district attorney obsessed with chance, and the Riddler, a disgruntled former Wayne Enterprises inventor determined to drain the minds of Gotham's citizens using a brain-altering device. As Bruce Wayne wrestles with painful memories of his parents' deaths and romance with psychologist Dr. Chase Meridian, he takes under his wing orphaned acrobat Dick Grayson, who becomes his sidekick, Robin.",
-    director: "Joel Schumacher",
+    overview: "A reclusive, highly skilled operative living off the grid on a remote island is thrust back into action when a young girl seeking refuge from a ruthless criminal syndicate arrives on his doorstep. Forced to emerge from isolation, he must use his specialized lethal skills to protect her and eliminate the mercenaries hunting them down.",
+    director: "Ric Roman Waugh",
     cast: ["Val Kilmer, Tommy Lee Jones, Jim Carrey, Nicole Kidman, Chris O'Donnell, Michael Gough, Pat Hingle"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
