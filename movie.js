@@ -9894,7 +9894,7 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/pUNfHmVqfwRdILhCkU8TdysVOXo.jpg",
     videoUrl: "146233",
     overview: "A highly sophisticated program, Ares, is sent from the digital world into the real world on a dangerous mission — marking humankind's first encounter with A.I. beings. The film explores artificial intelligence originating from the Grid crossing into reality, with Kevin Flynn returning to confront the consequences of a world not yet ready for contact.",
-    director: "Denis Villeneuve",
+    director: "Joachim Rønning ",
     cast: ["Hugh Jackman, Jake Gyllenhaal, Viola Davis, Maria Bello, Terrence Howard, Melissa Leo, Paul Dano"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
