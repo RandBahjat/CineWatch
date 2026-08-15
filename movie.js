@@ -10274,6 +10274,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Transporter 3",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2008,
+    rating: 6.1,
+    age: "PG-13",
+    duration: "1h 44m",
+    genres: ["Action", "Crime", "Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/o4w9VF3GRZuXe9NHHvZ07pJespl.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/nNbxrSyKUTMVwpnFgnKH9ZV0QZ8.jpg",
+    videoUrl: "13387",
+    overview: "Frank Martin is pressured into a high-stakes delivery across Europe to transport Valentina, the kidnapped daughter of a Ukrainian government official. Equipped with explosive wristbands programmed to detonate if he strays more than 75 feet from his Audi, Frank must outrun corrupt mercenaries while racing to complete the job and keep them both alive.",
+    director: "Olivier Megaton",
+    cast: ["Jason Statham, Natalya Rudakova, François Berléand, Robert Knepper, Jeroen Krabbé, Alex Kobold"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
