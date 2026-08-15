@@ -10400,7 +10400,7 @@ const MOVIES = [
     age: "PG-13",
     duration: "1h 57m",
     genres: ["Action","Adventure","Comedy","Romance"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/semFxuYx6HcrkZzslgAkBqfJvZk.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/liLN69YgoovHVgmlHJ876PKi5Yi.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7nAVXGHHtaNcdsqvDXmY6R9N0fG.jpg",
     videoUrl: "1363123",
     overview: "In this holiday-themed sequel, former assassin Dan Morgan plans a European family Christmas trip to London to reconnect with his kids. However, the vacation derails when a mysterious figure from Dan's past—his long-lost half-brother Finn—shows up with unfinished business. To stop Finn and protect his loved ones, Dan and the family are forced into an international game of cat-and-mouse filled with bank heists and car chases across Europe.",
