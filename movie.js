@@ -10626,7 +10626,7 @@ const MOVIES = [
     videoUrl: "1290821",
     overview: "A reclusive, highly skilled operative living off the grid on a remote island is thrust back into action when a young girl seeking refuge from a ruthless criminal syndicate arrives on his doorstep. Forced to emerge from isolation, he must use his specialized lethal skills to protect her and eliminate the mercenaries hunting them down.",
     director: "Ric Roman Waugh",
-    cast: ["Val Kilmer, Tommy Lee Jones, Jim Carrey, Nicole Kidman, Chris O'Donnell, Michael Gough, Pat Hingle"],
+    cast: ["Jason Statham, Bodhi Sabongui, Naomi Ackie, Bill Nighy"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
