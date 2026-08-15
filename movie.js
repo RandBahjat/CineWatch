@@ -10427,6 +10427,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Extraction",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2020,
+    rating: 6.8,
+    age: "R",
+    duration: "1h 56m",
+    genres: ["Action","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8cXbitsS6dWQ5gfMTZdorpAAzEH.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/pLOFQLeKQYsCzkYgsw9tg1cPuDG.jpg",
+    videoUrl: "725201",
+    overview: "When Court Gentry—a top-tier CIA mercenary operating under the codename Sierra Six—uncovers dark agency secrets during a mission, he becomes the prime target of his rogue superiors. To eliminate him, the CIA unleashes Lloyd Hansen, a sociopathic former agent turned mercenary who launches a relentless, global manhunt across Europe to hunt Six down.",
+    director: "Anthony Russo, Joe Russo",
+    cast: ["Ryan Gosling, Chris Evans, Ana de Armas, Jessica Henwick, Regé-Jean Page, Wagner Moura, Julia Butters, Dhanush, Alfre Woodard, Billy Bob Thornton"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
