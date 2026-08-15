@@ -10621,7 +10621,7 @@ const MOVIES = [
     age: "R",
     duration: "1h 47m",
     genres: ["Action","Sci-Fi"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/i0fJS8M5UKoETjjJ0zwUiKaR8tr.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/buPFnHZ3xQy6vZEHxbHgL1Pc6CR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/nFdprMGyrxZmqKsLXmVzS0vLqxE.jpg",
     videoUrl: "414",
     overview: "Gotham City faces a dual threat from Two-Face, a disgraced former district attorney obsessed with chance, and the Riddler, a disgruntled former Wayne Enterprises inventor determined to drain the minds of Gotham's citizens using a brain-altering device. As Bruce Wayne wrestles with painful memories of his parents' deaths and romance with psychologist Dr. Chase Meridian, he takes under his wing orphaned acrobat Dick Grayson, who becomes his sidekick, Robin.",
