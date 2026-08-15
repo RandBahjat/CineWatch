@@ -9938,7 +9938,7 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
     rating: 5.4,
-    age: "PG-13",
+    age: "R",
     duration: "1h 25m",
     genres: ["Action","Comedy", "Crime"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rwla9vqzrKVVKVKiOuROTIXGsxj.jpg",
@@ -24588,3 +24588,4 @@ if (vEl) {
   // Run once on load in case page starts scrolled
   onScroll();
 })();
+();
