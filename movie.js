@@ -10046,7 +10046,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/z4gVnxTaks3anTycwKjDmvQSuWt.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/s1BoBwNB9AgdpTt41duInZYF8Ob.jpg",
     videoUrl: "1327862",
-    overview: "A clean-cut high schooler's life takes an unexpected turn after a little white lie about losing her virginity spreads through the school's rumor mill. As her reputation spirals wildly out of control, she decides to embrace her new wild child image, cleverly turning gossip into personal gain — all while inadvertently learning what it really means to stand up for herself.",
+    overview: "Morgan Grant and her teenage daughter Clara explore what's left behind after a devastating accident reveals a shocking betrayal, forcing them to confront long-buried family secrets, redefine love, and rediscover each other. Based on the bestselling novel by Colleen Hoover.",
     director: "Will Gluck",
     cast: ["Emma Stone, Amanda Bynes, Penn Badgley, Patricia Clarkson, Thomas Haden Church, Stanley Tucci, Lisa Kudrow"],
     trending: false, // Leave false so it only shows up in the Genres tab
