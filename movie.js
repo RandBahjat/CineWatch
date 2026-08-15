@@ -10523,8 +10523,8 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/8I02462R9MJV4LHnPL5PN4tixyH.jpg",
     videoUrl: "308531",
     overview: "After arch-nemesis Shredder escapes custody, he joins forces with mad scientist Baxter Stockman and two mutated henchmen, Bebop and Rocksteady, to launch a sinister plan for world domination. As the Turtles—Leonardo, Raphael, Donatello, and Michelangelo—prepare to battle Shredder and his gang alongside April O'Neil and hockey-masked vigilante Casey Jones, they find themselves facing an even greater alien threat: the formidable Krang from Dimension X.",
-    director: "Michael Dowse",
-    cast: ["Dave Bautista, Sophia Lillis, Jack Champion, Kate del Castillo, Tony Dalton, Whitney Peak, Bobby Cannavale"],
+    director: "Dave Green",
+    cast: ["Megan Fox, Will Arnett, Stephen Amell, Tyler Perry, Brian Tee, Laura Linney, Pete Ploszek, Alan Ritchson, Noel Fisher, Jeremy Howard"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
