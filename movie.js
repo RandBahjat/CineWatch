@@ -10217,8 +10217,8 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/iuyE1qy9HoTsMg0DHB1KJxM94DJ.jpg",
     videoUrl: "337167",
     overview: "The final installment in the Fifty Shades trilogy finds newly married Anastasia and Christian Grey trying to embrace their luxurious lifestyle and intense bond. However, as Ana steps into a new role at work and Christian adjusts to marital commitment, new threats emerge—including Ana's vengeful former boss, Jack Hyde, who seeks revenge against the couple, testing their trust and endurance.",
-    director: "Sergej Moya",
-    cast: ["Saralisa Volm, Clemens Schick, Jan Gregor Kremp, Herbert Knaup, Frederick Lau, Palina Rojinski"],
+    director: "James Foley",
+    cast: ["Dakota Johnson, Jamie Dornan, Eric Johnson, Rita Ora, Luke Grimes, Victor Rasuk, Jennifer Ehle, Marcia Gay Harden"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
