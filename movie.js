@@ -10318,7 +10318,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8eeK3OB5PeSRQD7BpZcGZKkehG.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/tBI2wrjdKmXGOfVbC6wj1gpZBIH.jpg",
     videoUrl: "39514",
-    overview: "Travis Block is a shadowy freelance operative working directly for FBI Director Gabriel Robinson, specializing in pulling endangered undercover agents out of dangerous situations. When Block discovers a secret, illegal government operation targeting innocent civilians—and that an insider trying to expose it has been murdered—he finds himself locked in a deadly game of cat and mouse against the very agency he swore to serve.",
+    overview: "Inspired by the Warren Ellis comic book series, this action comedy follows Frank Moses, a retired black-ops CIA agent living a quiet suburban life. When an elite high-tech hit squad targets him to cover up a top-secret government conspiracy, Frank reassembles his old team of Retired, Extremely Dangerous operatives for a cross-country mission to stay alive and expose the truth.",
     director: "Mark Williams",
     cast: ["Liam Neeson, Emmy Raver-Lampman, Taylor John Smith, Aidan Quinn, Claire van der Boom, Yael Stone"],
     trending: false, // Leave false so it only shows up in the Genres tab
