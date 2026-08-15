@@ -10609,7 +10609,7 @@ const MOVIES = [
     videoUrl: "414",
     overview: "Gotham City faces a dual threat from Two-Face, a disgraced former district attorney obsessed with chance, and the Riddler, a disgruntled former Wayne Enterprises inventor determined to drain the minds of Gotham's citizens using a brain-altering device. As Bruce Wayne wrestles with painful memories of his parents' deaths and romance with psychologist Dr. Chase Meridian, he takes under his wing orphaned acrobat Dick Grayson, who becomes his sidekick, Robin.",
     director: "Joel Schumacher",
-    cast: ["Michael Keaton, Danny DeVito, Michelle Pfeiffer, Christopher Walken, Michael Gough, Pat Hingle"],
+    cast: ["Val Kilmer, Tommy Lee Jones, Jim Carrey, Nicole Kidman, Chris O'Donnell, Michael Gough, Pat Hingle"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
