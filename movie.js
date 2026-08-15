@@ -20013,6 +20013,77 @@ const MOVIES = [
       }
     ]
   }
+,
+  {
+    title: "The Wonderfully Weird World of Gumball",
+    type: "TV Show",
+    year: 2025,
+    rating: 8.0,
+    age: "TV-Y7",
+    duration: "12m",
+    genres: ["Comedy","Children"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wG6tRzXB8lTE03i7NaqwO04z5Oy.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/gmO3aezFgDcrhcymhNSJLGZ3CT.jpg",
+    videoUrl: "273046",
+    overview: "Welcome back to Elmore, where the laws of reality are a joke, and family life is anything but ordinary. Whether he's battling an evil fast-food empire, facing off against a sentient AI in love with his mom, or trying to stop Banana Joe from wearing pants, Gumball Watterson drags his brother Darwin, sister Anais, and the rest of the town of Elmore along for the ride.",
+    director: "Ben Bocquelet",
+    cast: ["Nicolas Cantu", "Terri Doty", "Dan Russell", "Jeff Bergman"],
+    trending: false,
+    featured: false,
+    cinesrcId: "273046",
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "The Burger" },
+          { episode: 2, title: "The Assistant" },
+          { episode: 3, title: "The Distance" },
+          { episode: 4, title: "The Thing" },
+          { episode: 5, title: "The Butts" },
+          { episode: 6, title: "The Traffic" },
+          { episode: 7, title: "The Astrological" },
+          { episode: 8, title: "The Cheerleader" },
+          { episode: 9, title: "The Boring" },
+          { episode: 10, title: "The Teacher" },
+          { episode: 11, title: "The App" },
+          { episode: 12, title: "The Entrance" },
+          { episode: 13, title: "The Letter" },
+          { episode: 14, title: "The Gut" },
+          { episode: 15, title: "The Wrinkle" },
+          { episode: 16, title: "The Gourmet" },
+          { episode: 17, title: "The Pool" },
+          { episode: 18, title: "The Portrait" },
+          { episode: 19, title: "The Climb" },
+          { episode: 20, title: "The Amadain" }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "The Summoning" },
+          { episode: 2, title: "The Unfollow" },
+          { episode: 3, title: "The Promposal" },
+          { episode: 4, title: "The Trumpet" },
+          { episode: 5, title: "The Synthesis" },
+          { episode: 6, title: "The Cheapmas" },
+          { episode: 7, title: "The Score" },
+          { episode: 8, title: "The Diary" },
+          { episode: 9, title: "The Punishment" },
+          { episode: 10, title: "The Roast" },
+          { episode: 11, title: "The Survivalists" },
+          { episode: 12, title: "The Labels" },
+          { episode: 13, title: "The Fools" },
+          { episode: 14, title: "The Homework" },
+          { episode: 15, title: "The Sonder" },
+          { episode: 16, title: "The Mister" },
+          { episode: 17, title: "The Tracking" },
+          { episode: 18, title: "The Pants" },
+          { episode: 19, title: "The Necroprancer" },
+          { episode: 20, title: "The Rewrite" }
+        ]
+      }
+    ]
+  }
 ]
 
 // Auto-generate a clean ID (slug) for every movie based on its title
