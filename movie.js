@@ -10291,6 +10291,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Blacklight",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2022,
+    rating: 5.4,
+    age: "R",
+    duration: "1h 31m",
+    genres: ["Action", "Crime", "Drama","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/oUmmY7QWWn7OhKlcPOnirHJpP1F.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/yQvjqIvOwpawVZje41Wno365kR.jpg",
+    videoUrl: "762430",
+    overview: "An action thriller following Matt Turner, a Berlin-based American financier who receives a terrifying phone call while driving his kids to school. An anonymous caller informs him that a pressure-activated bomb is hidden beneath his car seat, which will detonate if anyone attempts to exit. Forced to obey a series of increasingly dangerous instructions across the city, Matt must unravel the caller's motive to save his children and clear his own name.",
+    director: "Nimród Antal",
+    cast: ["Liam Neeson, Noma Dumezweni, Lilly Aspell, Jack Champion, Embeth Davidtz, Matthew Modine"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
