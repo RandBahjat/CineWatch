@@ -10230,7 +10230,7 @@ const MOVIES = [
     age: "PG-13",
     duration: "1h 32m",
     genres: ["Action", "Crime", "Thriller"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/jjPJ4s3DWZZvI4vw8Xfi4Vqa1Q8.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dncJ81z1BahrT3ogLvlxOUC5n4u.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/iuyE1qy9HoTsMg0DHB1KJxM94DJ.jpg",
     videoUrl: "337167",
     overview: "The final installment in the Fifty Shades trilogy finds newly married Anastasia and Christian Grey trying to embrace their luxurious lifestyle and intense bond. However, as Ana steps into a new role at work and Christian adjusts to marital commitment, new threats emerge—including Ana's vengeful former boss, Jack Hyde, who seeks revenge against the couple, testing their trust and endurance.",
