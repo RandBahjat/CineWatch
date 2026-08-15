@@ -10056,7 +10056,7 @@ const MOVIES = [
     title: "Purple Hearts",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2022,
-    rating: 6.0,
+    rating: 6.7,
     age: "PG-13",
     duration: "1h 56m",
     genres: ["Drama","Romance"],
