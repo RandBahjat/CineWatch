@@ -10498,9 +10498,9 @@ const MOVIES = [
     title: "Trap House",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
-    rating: 5.4,
+    rating: 5.5,
     age: "R",
-    duration: "1h 45m",
+    duration: "1h 41m",
     genres: ["Action","Drama","Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fZlNXEHZsBp7unqw009MeBbMv87.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/j2Dlhe107BCLpGsZ907pbAutXgE.jpg",
