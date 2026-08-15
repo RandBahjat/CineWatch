@@ -10359,6 +10359,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "The Family Plan",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2016,
+    rating: 5.9,
+    age: "PG-13",
+    duration: "1h 42m",
+    genres: ["Action","Comedy", "Crime"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qKvVUHdiwqkXdlRsW4fHO7SAZef.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/ztWQrpD5LeqypjFKOng5jADTHzP.jpg",
+    videoUrl: "323675",
+    overview: "Fresh out of the police academy and eager to prove himself as a full-fledged officer, Ben Barber joins his soon-to-be brother-in-law James on a trip from Atlanta to Miami. Their mission is to assist local law enforcement in tracking down a skilled hacker who can help dismantle a powerful drug ring led by a charismatic yet ruthless philanthropist.",
+    director: "Tim Story",
+    cast: ["Ice Cube, Kevin Hart, Ken Jeong, Benjamin Bratt, Olivia Munn, Tika Sumpter, Bruce McGill"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
