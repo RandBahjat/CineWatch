@@ -10490,7 +10490,7 @@ const MOVIES = [
     videoUrl: "1280450",
     overview: "In 1993, Maureen's life is shattered when her ex-husband sneaks their six-year-old daughter, Amina, out of the United States and takes her to the Middle East. After years of desperate, failed attempts to locate her child, Maureen crosses paths with Robeson, an ex-Marine specializing in recovering internationally abducted children. Teaming up for a dangerous retrieval mission, they navigate covert operations and betrayal across Europe and Beirut to bring Amina home.",
     director: "James Kent",
-    cast: ["Jean-Claude Van Damme, Joe Flanigan, Anna-Louise Plowman, Charlotte Beaumont, Steve Nicolson"],
+    cast: ["Kate Beckinsale, Scott Eastwood, Jordan Duvigneau, Matt Craven, Alejandra Howard, Arvin Kananian"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
