@@ -3601,7 +3601,7 @@ const MOVIES = [
     duration: "1h 48m",
     genres: ["Action", "Sci-Fi", "Thriller"],
     poster: "https://image.tmdb.org/t/p/original/niPqU1GGEqLoUUa8QnXNsbgGW0D.jpg",
-    backdrop: "https://framerusercontent.com/images/4pNHQEiyCdfmb6ye9u6EFl31UI.webp?width=1000&height=667",
+    backdrop: "https://image.tmdb.org/t/p/original/UaPBEvOJs9b2D2XYVTrHg0ti3F.jpg",
     videoUrl: "1265609",
     overview: "During the final 24 hours of an ultra-tough selection process, an elite team of Army Rangers encounters an unimaginable, deadly threat from beyond this world while deep on a training mission.",
     director: "Patrick Hugh ",
