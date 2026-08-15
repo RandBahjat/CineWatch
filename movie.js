@@ -10512,6 +10512,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Teenage Mutant Ninja Turtles: Out of the Shadows",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2016,
+    rating: 5.5,
+    age: "R",
+    duration: "1h 41m",
+    genres: ["Action","Crime","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6tpAPeuuqbVnYWWPoOLEDLSBU7a.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/t98ZZtgdBC2yi7XBiT9nYBH6BrK.jpg",
+    videoUrl: "628847",
+    overview: "An undercover DEA agent and his partner embark on a game of cat-and-mouse in El Paso, Texas, when they discover their own teenage children have begun robbing a dangerous cartel. Using their parents' specialized tactical equipment and top-secret intelligence, the teenagers inadvertently trigger an all-out turf war that forces the agents to protect their kids while keeping their secrets hidden from the law and the cartel.",
+    director: "Michael Dowse",
+    cast: ["Dave Bautista, Sophia Lillis, Jack Champion, Kate del Castillo, Tony Dalton, Whitney Peak, Bobby Cannavale"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
