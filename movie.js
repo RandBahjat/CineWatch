@@ -10370,8 +10370,8 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/arNhhBd88bP3Bjoe4HT8MFE1JQA.jpg",
     videoUrl: "1029575",
     overview: "Dan Morgan is a devoted husband, loving father of three, and successful car salesman living a quiet suburban life. However, decades earlier, he was an elite government assassin. When enemy ghosts from his past track him down, Dan packs his unsuspecting wife, angst-ridden teen daughter, gamer son, and ten-month-old baby into their minivan for an impromptu road trip to Las Vegas—determined to protect his family while pretending it's just an innocent family vacation.",
-    director: "Tim Story",
-    cast: ["Ice Cube, Kevin Hart, Ken Jeong, Benjamin Bratt, Olivia Munn, Tika Sumpter, Bruce McGill"],
+    director: "Simon Cellan Jones",
+    cast: ["Mark Wahlberg, Michelle Monaghan, Zoe Colletti, Van Crosby, Saïd Taghmaoui, Maggie Q"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
