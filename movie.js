@@ -10261,8 +10261,8 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2008,
     rating: 6.1,
-    age: "R",
-    duration: "1h 27m",
+    age: "PG-13",
+    duration: "1h 44m",
     genres: ["Action", "Crime", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cdm17vK8PxHfTi7ayZf6WKbOgUO.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ghgogVFRi60o0sVsRWgpG2r4Sy9.jpg",
