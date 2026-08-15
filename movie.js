@@ -9885,8 +9885,8 @@ const MOVIES = [
   {
     title: "TRON: Ares",
     type: "Movie", // Use "Movie" or "TV Show"
-    year: 2013,
-    rating: 8.2,
+    year: 2025,
+    rating: ,
     age: "R",
     duration: "2h 33m",
     genres: ["Crime","Drama","Mystery","Thriller"],
