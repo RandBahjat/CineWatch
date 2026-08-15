@@ -19643,8 +19643,8 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/49XzINhH4LFsgz7cx6TOPcHUJUL.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/n4XLn0wLCxWSFaQgG6queZlFPKi.jpg",
     videoUrl: "71591",
-    overview: "Marvel's The Defenders follows Daredevil, Jessica Jones, Luke Cage and Iron Fist. A quartet of singular heroes with one common goal - to save New York City. This is the story of four solitary figures, burdened with their own personal challenges, who realize they just might be stronger when teamed together.",
-    director: "Marco Ramirez",
+    overview: "Daredevil, Jessica Jones, Luke Cage, and Iron Fist team up to face a common enemy and save New York City. When the shadowy criminal organization known as The Hand emerges with a plan that threatens to destroy the city, these four reluctant heroes are forced to set aside their differences and unite — for the first time — as an unlikely team.",
+    director: "Douglas Petrie, Marco Ramirez",
     cast: ["Charlie Cox", "Krysten Ritter", "Mike Colter", "Finn Jones", "Sigourney Weaver", "Elodie Yung"],
     trending: false,
     featured: false,
@@ -19661,6 +19661,63 @@ const MOVIES = [
           { episode: 6, title: "Ashes, Ashes" },
           { episode: 7, title: "Fish in the Jailhouse" },
           { episode: 8, title: "The Defenders" }
+        ]
+      }
+    ]
+  }
+,
+  {
+    title: "Marvel's Luke Cage",
+    type: "TV Show",
+    year: 2016,
+    rating: 7.2,
+    age: "TV-MA",
+    duration: "58m",
+    genres: ["Action","Crime","Science-Fiction"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/yzM1hMB3PUJqbISX0f421b3xOjB.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/7LCKjM0BMWT1GxNFUMZzFCmBMWu.jpg",
+    videoUrl: "62126",
+    overview: "After a sabotaged experiment leaves him with super strength and unbreakable skin, Luke Cage becomes a fugitive trying to rebuild his life in modern day Harlem, New York City. But he is soon pulled out of the shadows and must fight a battle for the heart of his city – forcing him to confront a past he had tried to bury.",
+    director: "Cheo Hodari Coker",
+    cast: ["Mike Colter", "Simone Missick", "Theo Rossi", "Erik LaRay Harvey", "Rosario Dawson", "Alfre Woodard", "Mahershala Ali"],
+    trending: false,
+    featured: false,
+    cinesrcId: "62126",
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Moment of Truth" },
+          { episode: 2, title: "Code of the Streets" },
+          { episode: 3, title: "Who's Gonna Take the Weight?" },
+          { episode: 4, title: "Step in the Arena" },
+          { episode: 5, title: "Just to Get a Rep" },
+          { episode: 6, title: "Suckas Need Bodyguards" },
+          { episode: 7, title: "Manifest" },
+          { episode: 8, title: "Blowin' Up the Spot" },
+          { episode: 9, title: "DWYCK" },
+          { episode: 10, title: "Take It Personal" },
+          { episode: 11, title: "Now You're Mine" },
+          { episode: 12, title: "Soliloquy of Chaos" },
+          { episode: 13, title: "You Know My Steez" }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "Soul Brother #1" },
+          { episode: 2, title: "Straighten It Out" },
+          { episode: 3, title: "Wig Out" },
+          { episode: 4, title: "I Get Physical" },
+          { episode: 5, title: "All Souled Out" },
+          { episode: 6, title: "The Basement" },
+          { episode: 7, title: "On and On" },
+          { episode: 8, title: "If It Ain't Rough, It Ain't Right" },
+          { episode: 9, title: "For Pete's Sake" },
+          { episode: 10, title: "The Main Ingredient" },
+          { episode: 11, title: "The Creator" },
+          { episode: 12, title: "Can't Front on Me" },
+          { episode: 13, title: "They Reminisce Over You" }
         ]
       }
     ]
