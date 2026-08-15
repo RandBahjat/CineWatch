@@ -10565,10 +10565,10 @@ const MOVIES = [
   {
     title: "Batman Returns",
     type: "Movie", // Use "Movie" or "TV Show"
-    year: 2006,
-    rating: 6.1,
+    year: 1992,
+    rating: 7.1,
     age: "PG-13",
-    duration: "2h 34m",
+    duration: "2h 6m",
     genres: ["Action", "Adventure","Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/385XwTQZDpRX2d3kxtnpiLrjBXw.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/exrH1VYR39JhptNawUeSE37R1bL.jpg",
