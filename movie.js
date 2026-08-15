@@ -10286,7 +10286,7 @@ const MOVIES = [
     videoUrl: "762430",
     overview: "An action thriller following Matt Turner, a Berlin-based American financier who receives a terrifying phone call while driving his kids to school. An anonymous caller informs him that a pressure-activated bomb is hidden beneath his car seat, which will detonate if anyone attempts to exit. Forced to obey a series of increasingly dangerous instructions across the city, Matt must unravel the caller's motive to save his children and clear his own name.",
     director: "Nimród Antal",
-    cast: ["Jason Statham, Natalya Rudakova, François Berléand, Robert Knepper, Jeroen Krabbé, Alex Kobold"],
+    cast: ["Liam Neeson, Noma Dumezweni, Lilly Aspell, Jack Champion, Embeth Davidtz, Matthew Modine"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
