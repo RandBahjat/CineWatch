@@ -10369,7 +10369,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/jLLtx3nTRSLGPAKl4RoIv1FbEBr.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/arNhhBd88bP3Bjoe4HT8MFE1JQA.jpg",
     videoUrl: "1029575",
-    overview: "Fresh out of the police academy and eager to prove himself as a full-fledged officer, Ben Barber joins his soon-to-be brother-in-law James on a trip from Atlanta to Miami. Their mission is to assist local law enforcement in tracking down a skilled hacker who can help dismantle a powerful drug ring led by a charismatic yet ruthless philanthropist.",
+    overview: "Dan Morgan is a devoted husband, loving father of three, and successful car salesman living a quiet suburban life. However, decades earlier, he was an elite government assassin. When enemy ghosts from his past track him down, Dan packs his unsuspecting wife, angst-ridden teen daughter, gamer son, and ten-month-old baby into their minivan for an impromptu road trip to Las Vegas—determined to protect his family while pretending it's just an innocent family vacation.",
     director: "Tim Story",
     cast: ["Ice Cube, Kevin Hart, Ken Jeong, Benjamin Bratt, Olivia Munn, Tika Sumpter, Bruce McGill"],
     trending: false, // Leave false so it only shows up in the Genres tab
