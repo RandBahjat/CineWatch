@@ -9976,7 +9976,7 @@ const MOVIES = [
     duration: "1h 49m",
     genres: ["Comedy", "Drama","Romance"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/5mVyFHSY2rSsNgD4NfEwV82HigU.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/4vSBj7BYsyuKCx96EJzGyp20WfY.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/rTBOOAb9BmoqIiNh5mmLPQETWaK.jpg",
     videoUrl: "593643",
     overview: "A young couple travels to a remote island to eat at an exclusive restaurant helmed by a celebrity chef known for his intense, theatrical culinary style. As the elaborate, meticulously curated tasting menu unfolds course by course, they gradually realize the mysterious chef has prepared a shocking menu for his elite guests — one designed for a sinister purpose that goes far beyond fine dining.",
     director: "Mark Mylod",
