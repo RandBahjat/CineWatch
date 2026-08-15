@@ -10002,6 +10002,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "No Strings Attached",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2011,
+    rating: 6.5,
+    age: "R",
+    duration: "1h 49m",
+    genres: ["Comedy","Romance"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nKhhDFCdzxeJ3GUunQ570LDpUkz.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/p5HKeRbNRTZL2tvFhmXF8oVL1y6.jpg",
+    videoUrl: "593643",
+    overview: "When Dylan and Jamie meet, they quickly become best friends. Feeling jaded by love, the two agree to be just friends with the added benefit of casual sex — no strings attached. But as their arrangement blurs the line between friendship and romance, they discover that keeping feelings out of it may be harder than they bargained for.",
+    director: "Will Gluck",
+    cast: ["Justin Timberlake, Mila Kunis, Patricia Clarkson, Jenna Elfman, Bryan Greenberg, Woody Harrelson, Richard Jenkins"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
