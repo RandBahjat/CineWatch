@@ -10093,7 +10093,7 @@ const MOVIES = [
     rating: 7.5,
     age: "R",
     duration: "1h 53m",
-    genres: ["Drama","Biography"],
+    genres: ["Action","Crime","Drama"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1PXwh3nJzgRkkYnqfWInJNypeL4.jpg",
     videoUrl: "37799",
