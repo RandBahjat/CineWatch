@@ -10519,7 +10519,7 @@ const MOVIES = [
     age: "PG-13",
     duration: "1h 52m",
     genres: ["Action","Adventure","Comedy","Sci-Fi"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6tpAPeuuqbVnYWWPoOLEDLSBU7a.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/euVaCiCWz3AALcQXHT6aUqdGUo6.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/t98ZZtgdBC2yi7XBiT9nYBH6BrK.jpg",
     videoUrl: "628847",
     overview: "An undercover DEA agent and his partner embark on a game of cat-and-mouse in El Paso, Texas, when they discover their own teenage children have begun robbing a dangerous cartel. Using their parents' specialized tactical equipment and top-secret intelligence, the teenagers inadvertently trigger an all-out turf war that forces the agents to protect their kids while keeping their secrets hidden from the law and the cartel.",
