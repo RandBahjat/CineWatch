@@ -9929,7 +9929,7 @@ const MOVIES = [
     videoUrl: "1035259",
     overview: "Only one man has the particular set of skills to lead Police Squad and save the world — Lt. Frank Drebin Jr. Following in his father's footsteps, he must solve a murder case to prevent Police Squad from being shut down for good, in this reboot of the beloved spoof comedy franchise.",
     director: "Akiva Schaffer",
-    cast: ["Sydney Sweeney, Glen Powell, Alexandra Shipp, GaTa, Michelle Hurd, Bryan Brown, Rachel Griffiths, Dermot Mulroney"],
+    cast: ["Liam Neeson, Pamela Anderson, Paul Walter Hauser, Kevin Durand, Danny Huston"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
