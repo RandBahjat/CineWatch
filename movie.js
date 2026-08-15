@@ -10517,7 +10517,7 @@ const MOVIES = [
     year: 2014,
     rating: 5.8,
     age: "PG-13",
-    duration: "1h 52m",
+    duration: "1h 41m",
     genres: ["Action", "Adventure", "Comedy", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/euVaCiCWz3AALcQXHT6aUqdGUo6.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8I02462R9MJV4LHnPL5PN4tixyH.jpg",
