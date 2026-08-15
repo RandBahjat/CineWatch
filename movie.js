@@ -10005,7 +10005,7 @@ const MOVIES = [
     title: "No Strings Attached",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2011,
-    rating: 6.5,
+    rating: 6.2,
     age: "R",
     duration: "1h 49m",
     genres: ["Comedy","Romance"],
