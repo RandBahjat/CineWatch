@@ -9900,12 +9900,12 @@ const MOVIES = [
     featured: false,
   },
   {
-    title: "TRON: Ares",
+    title: "Anyone but You",
     type: "Movie", // Use "Movie" or "TV Show"
-    year: 2025,
+    year: 2023,
     rating: 6.1,
-    age: "PG-13",
-    duration: "1h 59m",
+    age: "R",
+    duration: "1h 43m",
     genres: ["Action", "Adventure", "Science Fiction"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/chpWmskl3aKm1aTZqUHRCtviwPy.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/pUNfHmVqfwRdILhCkU8TdysVOXo.jpg",
