@@ -10607,8 +10607,8 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/i0fJS8M5UKoETjjJ0zwUiKaR8tr.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/nFdprMGyrxZmqKsLXmVzS0vLqxE.jpg",
     videoUrl: "414",
-    overview: "As Gotham City prepares for Christmastime, the bizarre and vengeful Penguin emerges from the sewers, teaming up with corrupt tycoon Max Shreck to run for mayor and frame the Caped Crusader. Meanwhile, shy secretary Selina Kyle transforms into the seductive and lethal Catwoman, launching her own dangerous campaign against Shreck and Batman. Surrounded by new foes and conflicting loyalties, Batman must defend Gotham against total chaos.",
-    director: "Tim Burton",
+    overview: "Gotham City faces a dual threat from Two-Face, a disgraced former district attorney obsessed with chance, and the Riddler, a disgruntled former Wayne Enterprises inventor determined to drain the minds of Gotham's citizens using a brain-altering device. As Bruce Wayne wrestles with painful memories of his parents' deaths and romance with psychologist Dr. Chase Meridian, he takes under his wing orphaned acrobat Dick Grayson, who becomes his sidekick, Robin.",
+    director: "Joel Schumacher",
     cast: ["Michael Keaton, Danny DeVito, Michelle Pfeiffer, Christopher Walken, Michael Gough, Pat Hingle"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
