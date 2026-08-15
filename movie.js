@@ -9992,7 +9992,7 @@ const MOVIES = [
     age: "R",
     duration: "1h 49m",
     genres: ["Comedy","Romance"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/5mVyFHSY2rSsNgD4NfEwV82HigU.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nKhhDFCdzxeJ3GUunQ570LDpUkz.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rTBOOAb9BmoqIiNh5mmLPQETWaK.jpg",
     videoUrl: "593643",
     overview: "An overachieving high school senior with dreams of an Ivy League future falls for the mysterious new girl who just moved in next door — only to discover she has a secret past as an adult film star. As their relationship deepens, he must decide how far he'll go to protect her from a world determined to expose her history and drag them both down.",
