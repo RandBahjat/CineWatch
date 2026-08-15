@@ -10336,8 +10336,8 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/w1M7LydgxFs3gLgYxxNtDODMrYE.jpg",
     videoUrl: "168530",
     overview: "Ben Barber, a fast-talking high school security guard, aspires to prove himself worthy of marrying Angela, the love of his life. To gain the approval of her tough, veteran LAPD detective brother, James, Ben agrees to a 24-hour shift on the streets of Atlanta. What starts as a series of staged harmless calls escalates into a real-world confrontation with one of the city's most dangerous crime lords.",
-    director: "Robert Schwentke",
-    cast: ["Bruce Willis, Morgan Freeman, John Malkovich, Helen Mirren, Mary-Louise Parker, Karl Urban, Brian Cox"],
+    director: "Tim Story",
+    cast: ["Ice Cube, Kevin Hart, John Leguizamo, Bryan Callen, Tika Sumpter, Laurence Fishburne"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
