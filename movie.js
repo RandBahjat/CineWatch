@@ -10216,7 +10216,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/jjPJ4s3DWZZvI4vw8Xfi4Vqa1Q8.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/iuyE1qy9HoTsMg0DHB1KJxM94DJ.jpg",
     videoUrl: "337167",
-    overview: "A German erotic short drama following Antonia, a overwhelmed single mother working as a maid in a luxury Berlin hotel. After sending her young son off to visit his father, she rushes to work overwhelmed by routine and isolation. While cleaning an apparently empty guest suite, she unexpectedly encounters Julius, a blind painter. A silent, sensual connection rapidly builds between them, sparking a transformative, passionate encounter that reawakens her long-repressed intimacy and desires.",
+    overview: "The final installment in the Fifty Shades trilogy finds newly married Anastasia and Christian Grey trying to embrace their luxurious lifestyle and intense bond. However, as Ana steps into a new role at work and Christian adjusts to marital commitment, new threats emerge—including Ana's vengeful former boss, Jack Hyde, who seeks revenge against the couple, testing their trust and endurance.",
     director: "Sergej Moya",
     cast: ["Saralisa Volm, Clemens Schick, Jan Gregor Kremp, Herbert Knaup, Frederick Lau, Palina Rojinski"],
     trending: false, // Leave false so it only shows up in the Genres tab
