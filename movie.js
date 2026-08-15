@@ -10087,6 +10087,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Baby Driver",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2017,
+    rating: 7.5,
+    age: "R",
+    duration: "1h 53m",
+    genres: ["Drama","Biography"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/1PXwh3nJzgRkkYnqfWInJNypeL4.jpg",
+    videoUrl: "37799",
+    overview: "On a fall night in 2003, Harvard undergrad and computer programming genius Mark Zuckerberg sits down at his computer and, fueled by rage and beer, begins to create what would become the social phenomenon known as Facebook. Six years and 500 million friends later, Mark Zuckerberg is the youngest billionaire in history — but for this entrepreneur, success leads to both personal and legal complications as former friends and colleagues turn into rivals.",
+    director: "David Fincher",
+    cast: ["Jesse Eisenberg, Andrew Garfield, Justin Timberlake, Armie Hammer, Rooney Mara"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
