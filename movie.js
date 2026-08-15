@@ -10512,9 +10512,9 @@ const MOVIES = [
     featured: false,
   },
   {
-    title: "Teenage Mutant Ninja Turtles: Out of the Shadows",
+    title: "Teenage Mutant Ninja Turtles",
     type: "Movie", // Use "Movie" or "TV Show"
-    year: 2016,
+    year: 2014,
     rating: 5.9,
     age: "PG-13",
     duration: "1h 52m",
