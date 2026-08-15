@@ -9883,7 +9883,7 @@ const MOVIES = [
     featured: false,
   },
   {
-    title: "Prisoners",
+    title: "TRON: Ares",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2013,
     rating: 8.2,
