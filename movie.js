@@ -9917,7 +9917,7 @@ const MOVIES = [
     featured: false,
   },
   {
-    title: "Anyone but You",
+    title: "The Naked Gun",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
     rating: 6.1,
