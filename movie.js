@@ -19201,7 +19201,7 @@ const MOVIES = [
     title: "Rick and Morty",
     type: "TV Show",
     year: 2013,
-    rating: 8.7,
+    rating: 9.0,
     age: "TV-MA",
     duration: "30m",
     genres: ["Comedy","Adventure","Science-Fiction"],
@@ -19349,6 +19349,60 @@ const MOVIES = [
           { episode: 8, title: "Rickuiem Mort a Dream" },
           { episode: 9, title: "Salute Your Morts" },
           { episode: 10, title: "Field of Dreams" }
+        ]
+      }
+    ]
+  }
+,
+  {
+    title: "Marvel's Iron Fist",
+    type: "TV Show",
+    year: 2017,
+    rating: 6.4,
+    age: "TV-MA",
+    duration: "54m",
+    genres: ["Drama","Crime","Science-Fiction"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4l6KD9HhtD6nCDEfg10Lp6C6zah.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/xHCfWGlxwbtMeeOnTvxUCZRGnkk.jpg",
+    videoUrl: "62127",
+    overview: "After his family meets a tragic fate while on expedition in China, a young Rand is adopted by the people of the mystical lost city of K'un-Lun, where he's taught a magical fighting style. Years later, he returns to New York to fight crime.",
+    director: "Scott Buck",
+    cast: ["Finn Jones","Jessica Henwick","Tom Pelphrey","Jessica Stroup","Sacha Dhawan","Alice Eve"],
+    trending: false,
+    featured: false,
+    cinesrcId: "62127",
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Snow Gives Way" },
+          { episode: 2, title: "Shadow Hawk Takes Flight" },
+          { episode: 3, title: "Rolling Thunder Cannon Punch" },
+          { episode: 4, title: "Eight Diagram Dragon Palm" },
+          { episode: 5, title: "Under Leaf Pluck Lotus" },
+          { episode: 6, title: "Immortal Emerges from Cave" },
+          { episode: 7, title: "Felling Tree with Roots" },
+          { episode: 8, title: "The Blessing of Many Fractures" },
+          { episode: 9, title: "The Mistress of All Agonies" },
+          { episode: 10, title: "Black Tiger Steals Heart" },
+          { episode: 11, title: "Lead Horse Back to Stable" },
+          { episode: 12, title: "Bar the Big Boss" },
+          { episode: 13, title: "Dragon Plays with Fire" }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "The Fury of Iron Fist" },
+          { episode: 2, title: "The City's Not for Burning" },
+          { episode: 3, title: "This Deadly Secret..." },
+          { episode: 4, title: "Target: Iron Fist" },
+          { episode: 5, title: "Heart of the Dragon" },
+          { episode: 6, title: "The Dragon Dies at Dawn" },
+          { episode: 7, title: "Morning of the Mindstorm" },
+          { episode: 8, title: "Citadel on the Edge of Vengeance" },
+          { episode: 9, title: "War Without End" },
+          { episode: 10, title: "A Duel of Iron" }
         ]
       }
     ]
