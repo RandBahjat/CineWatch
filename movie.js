@@ -9937,7 +9937,7 @@ const MOVIES = [
     title: "Subservience",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
-    rating: 6.3,
+    rating: 5.4,
     age: "PG-13",
     duration: "1h 25m",
     genres: ["Action","Comedy", "Crime"],
