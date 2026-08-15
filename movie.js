@@ -10298,7 +10298,7 @@ const MOVIES = [
     age: "PG-13",
     duration: "1h 44m",
     genres: ["Action", "Mystery","Thriller"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/oUmmY7QWWn7OhKlcPOnirHJpP1F.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bv9dy8mnwftdY2j6gG39gCfSFpV.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/yQvjqIvOwpawVZje41Wno365kR.jpg",
     videoUrl: "762430",
     overview: "An action thriller following Matt Turner, a Berlin-based American financier who receives a terrifying phone call while driving his kids to school. An anonymous caller informs him that a pressure-activated bomb is hidden beneath his car seat, which will detonate if anyone attempts to exit. Forced to obey a series of increasingly dangerous instructions across the city, Matt must unravel the caller's motive to save his children and clear his own name.",
