@@ -10284,8 +10284,8 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/oUmmY7QWWn7OhKlcPOnirHJpP1F.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/yQvjqIvOwpawVZje41Wno365kR.jpg",
     videoUrl: "762430",
-    overview: "Frank Martin is pressured into a high-stakes delivery across Europe to transport Valentina, the kidnapped daughter of a Ukrainian government official. Equipped with explosive wristbands programmed to detonate if he strays more than 75 feet from his Audi, Frank must outrun corrupt mercenaries while racing to complete the job and keep them both alive.",
-    director: "Olivier Megaton",
+    overview: "An action thriller following Matt Turner, a Berlin-based American financier who receives a terrifying phone call while driving his kids to school. An anonymous caller informs him that a pressure-activated bomb is hidden beneath his car seat, which will detonate if anyone attempts to exit. Forced to obey a series of increasingly dangerous instructions across the city, Matt must unravel the caller's motive to save his children and clear his own name.",
+    director: "Nimród Antal",
     cast: ["Jason Statham, Natalya Rudakova, François Berléand, Robert Knepper, Jeroen Krabbé, Alex Kobold"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
