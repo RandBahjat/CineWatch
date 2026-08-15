@@ -19206,7 +19206,7 @@ const MOVIES = [
     duration: "30m",
     genres: ["Comedy","Adventure","Science-Fiction"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/mSXzI4s5l6wBvXo1tTzD4LhD1wZ.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/wKK5cmKodGSjvNKZXchJnAZxAKt.jpg",
     videoUrl: "60625",
     overview: "Rick is a mentally gifted, but sociopathic and alcoholic scientist and a grandfather to Morty; an awkward, impressionable, and somewhat spineless teenage boy. Rick moves into the family home of Morty, where he immediately becomes a bad influence.",
     director: "Justin Roiland, Dan Harmon",
@@ -19372,6 +19372,10 @@ MOVIES.forEach(m => {
     m.id = finalId;
   }
   seenIds.add(m.id);
+  
+  if ((m.type === 'TV Show' || m.type === 'Series') && m.seasons) {
+    m.duration = `${m.seasons.length} Season${m.seasons.length > 1 ? 's' : ''}`;
+  }
 });
 
 // Apply Featured & Trending flags dynamically based on the exact titles above
