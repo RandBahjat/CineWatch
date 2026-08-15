@@ -9963,7 +9963,7 @@ const MOVIES = [
     videoUrl: "593643",
     overview: "A young couple travels to a remote island to eat at an exclusive restaurant helmed by a celebrity chef known for his intense, theatrical culinary style. As the elaborate, meticulously curated tasting menu unfolds course by course, they gradually realize the mysterious chef has prepared a shocking menu for his elite guests — one designed for a sinister purpose that goes far beyond fine dining.",
     director: "Mark Mylod",
-    cast: ["Megan Fox, Michele Morrone, Madeline Zima, Matilda Firth, Nichole Sakura"],
+    cast: ["Ralph Fiennes, Anya Taylor-Joy, Nicholas Hoult, Hong Chau, Janet McTeer, Judith Light, John Leguizamo"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
