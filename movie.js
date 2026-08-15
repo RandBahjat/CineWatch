@@ -10396,9 +10396,9 @@ const MOVIES = [
     title: "Ghosted",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
-    rating: 5.6,
+    rating: 5.8,
     age: "PG-13",
-    duration: "1h 46m",
+    duration: "1h 57m",
     genres: ["Action","Comedy"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/semFxuYx6HcrkZzslgAkBqfJvZk.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7nAVXGHHtaNcdsqvDXmY6R9N0fG.jpg",
