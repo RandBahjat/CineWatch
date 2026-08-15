@@ -10189,6 +10189,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Fifty Shades of Grey",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2015,
+    rating: 4.2,
+    age: "TV-MA",
+    duration: "38m",
+    genres: ["Drama", "Romance", "Short", "Erotic"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/47XRWH95ATv4szxdWHl723guWXP.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/jOY8IumfE60nUj7cMZhlogrmTdD.jpg",
+    videoUrl: "82023",
+    overview: "A German erotic short drama following Antonia, a overwhelmed single mother working as a maid in a luxury Berlin hotel. After sending her young son off to visit his father, she rushes to work overwhelmed by routine and isolation. While cleaning an apparently empty guest suite, she unexpectedly encounters Julius, a blind painter. A silent, sensual connection rapidly builds between them, sparking a transformative, passionate encounter that reawakens her long-repressed intimacy and desires.",
+    director: "Sergej Moya",
+    cast: ["Saralisa Volm, Clemens Schick, Jan Gregor Kremp, Herbert Knaup, Frederick Lau, Palina Rojinski"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
