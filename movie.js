@@ -19196,6 +19196,163 @@ const MOVIES = [
       }
     ]
   }
+,
+  {
+    title: "Rick and Morty",
+    type: "TV Show",
+    year: 2013,
+    rating: 8.7,
+    age: "TV-MA",
+    duration: "30m",
+    genres: ["Comedy","Adventure","Science-Fiction"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/mSXzI4s5l6wBvXo1tTzD4LhD1wZ.jpg",
+    videoUrl: "60625",
+    overview: "Rick is a mentally gifted, but sociopathic and alcoholic scientist and a grandfather to Morty; an awkward, impressionable, and somewhat spineless teenage boy. Rick moves into the family home of Morty, where he immediately becomes a bad influence.",
+    director: "Justin Roiland, Dan Harmon",
+    cast: ["Justin Roiland","Ian Cardoni","Harry Belden","Chris Parnell","Spencer Grammer","Sarah Chalke"],
+    trending: false,
+    featured: false,
+    cinesrcId: "60625",
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Pilot" },
+          { episode: 2, title: "Lawnmower Dog" },
+          { episode: 3, title: "Anatomy Park" },
+          { episode: 4, title: "M. Night Shaym-Aliens!" },
+          { episode: 5, title: "Meeseeks and Destroy" },
+          { episode: 6, title: "Rick Potion #9" },
+          { episode: 7, title: "Raising Gazorpazorp" },
+          { episode: 8, title: "Rixty Minutes" },
+          { episode: 9, title: "Something Ricked This Way Comes" },
+          { episode: 10, title: "Close Rick-Counters of the Rick Kind" },
+          { episode: 11, title: "Ricksy Business" }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "A Rickle in Time" },
+          { episode: 2, title: "Mortynight Run" },
+          { episode: 3, title: "Auto Erotic Assimilation" },
+          { episode: 4, title: "Total Rickall" },
+          { episode: 5, title: "Get Schwifty" },
+          { episode: 6, title: "The Ricks Must Be Crazy" },
+          { episode: 7, title: "Big Trouble in Little Sanchez" },
+          { episode: 8, title: "Interdimensional Cable 2: Tempting Fate" },
+          { episode: 9, title: "Look Who's Purging Now" },
+          { episode: 10, title: "The Wedding Squanchers" }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: "The Rickshank Rickdemption" },
+          { episode: 2, title: "Rickmancing the Stone" },
+          { episode: 3, title: "Pickle Rick" },
+          { episode: 4, title: "Vindicators 3: The Return of Worldender" },
+          { episode: 5, title: "The Whirly Dirly Conspiracy" },
+          { episode: 6, title: "Rest and Ricklaxation" },
+          { episode: 7, title: "The Ricklantis Mixup" },
+          { episode: 8, title: "Morty's Mind Blowers" },
+          { episode: 9, title: "The ABC's of Beth" },
+          { episode: 10, title: "The Rickchurian Mortydate" }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          { episode: 1, title: "Edge of Tomorty: Rick, Die, Rickpeat" },
+          { episode: 2, title: "The Old Man and the Seat" },
+          { episode: 3, title: "One Crew Over the Crewcoo's Morty" },
+          { episode: 4, title: "Claw and Hoarder: Special Ricktim's Morty" },
+          { episode: 5, title: "Rattlestar Ricklactica" },
+          { episode: 6, title: "Never Ricking Morty" },
+          { episode: 7, title: "Promortyus" },
+          { episode: 8, title: "The Vat of Acid Episode" },
+          { episode: 9, title: "Childrick of Mort" },
+          { episode: 10, title: "Star Mort Rickturn of the Jerri" }
+        ]
+      },
+      {
+        season: 5,
+        episodes: [
+          { episode: 1, title: "Mort Dinner Rick Andre" },
+          { episode: 2, title: "Mortyplicity" },
+          { episode: 3, title: "A Rickconvenient Mort" },
+          { episode: 4, title: "Rickdependence Spray" },
+          { episode: 5, title: "Amortycan Grickfitti" },
+          { episode: 6, title: "Rick & Morty's Thanksploitation Spectacular" },
+          { episode: 7, title: "Gotron Jerrysis Rickvangelion" },
+          { episode: 8, title: "Rickternal Friendshine of the Spotless Mort" },
+          { episode: 9, title: "Forgetting Sarick Mortshall" },
+          { episode: 10, title: "Rickmurai Jack" }
+        ]
+      },
+      {
+        season: 6,
+        episodes: [
+          { episode: 1, title: "Solaricks" },
+          { episode: 2, title: "Rick: A Mort Well Lived" },
+          { episode: 3, title: "Bethic Twinstinct" },
+          { episode: 4, title: "Night Family" },
+          { episode: 5, title: "Final DeSmithation" },
+          { episode: 6, title: "JuRicksic Mort" },
+          { episode: 7, title: "Full Meta Jackrick" },
+          { episode: 8, title: "Analyze Piss" },
+          { episode: 9, title: "A Rick in King Mortur's Mort" },
+          { episode: 10, title: "Ricktional Mortpoon's Rickmas Mortcation" }
+        ]
+      },
+      {
+        season: 7,
+        episodes: [
+          { episode: 1, title: "How Poopy Got His Poop Back" },
+          { episode: 2, title: "The Jerrick Trap" },
+          { episode: 3, title: "Air Force Wong" },
+          { episode: 4, title: "That's Amorte" },
+          { episode: 5, title: "Unmortricken" },
+          { episode: 6, title: "Rickfending Your Mort" },
+          { episode: 7, title: "Wet Kuat Amortican Summer" },
+          { episode: 8, title: "Rise of the Numbericons: The Movie" },
+          { episode: 9, title: "Mort: Ragnarick" },
+          { episode: 10, title: "Fear No Mort" }
+        ]
+      },
+      {
+        season: 8,
+        episodes: [
+          { episode: 1, title: "Summer of All Fears" },
+          { episode: 2, title: "Valkyrick" },
+          { episode: 3, title: "The Rick, The Mort & The Ugly" },
+          { episode: 4, title: "The Last Temptation of Jerry" },
+          { episode: 5, title: "Cryo Mort a Rickver" },
+          { episode: 6, title: "The Curicksous Case of Bethjamin Button" },
+          { episode: 7, title: "Ricker than Fiction" },
+          { episode: 8, title: "Nomortland" },
+          { episode: 9, title: "Morty Daddy" },
+          { episode: 10, title: "Hot Rick" }
+        ]
+      },
+      {
+        season: 9,
+        episodes: [
+          { episode: 1, title: "There's Something About Morty" },
+          { episode: 2, title: "Ricks Days, Seven Nights" },
+          { episode: 3, title: "Rick Fu Hustle" },
+          { episode: 4, title: "A Ricker Runs Through It" },
+          { episode: 5, title: "Jer Bud" },
+          { episode: 6, title: "Erickerhead" },
+          { episode: 7, title: "Mortgully: The Last Rickforest" },
+          { episode: 8, title: "Rickuiem Mort a Dream" },
+          { episode: 9, title: "Salute Your Morts" },
+          { episode: 10, title: "Field of Dreams" }
+        ]
+      }
+    ]
+  }
 ]
 
 // Auto-generate a clean ID (slug) for every movie based on its title
