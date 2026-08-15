@@ -9900,6 +9900,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "TRON: Ares",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2025,
+    rating: 6.1,
+    age: "PG-13",
+    duration: "1h 59m",
+    genres: ["Action", "Adventure", "Science Fiction"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/chpWmskl3aKm1aTZqUHRCtviwPy.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/pUNfHmVqfwRdILhCkU8TdysVOXo.jpg",
+    videoUrl: "533533",
+    overview: "A highly sophisticated program, Ares, is sent from the digital world into the real world on a dangerous mission — marking humankind's first encounter with A.I. beings. The film explores artificial intelligence originating from the Grid crossing into reality, with Kevin Flynn returning to confront the consequences of a world not yet ready for contact.",
+    director: "Joachim Rønning ",
+    cast: ["Jared Leto, Greta Lee, Evan Peters, Hasan Minhaj, Jodie Turner-Smith, Arturo Castro, Cameron Monaghan, Gillian Anderson, Jeff Bridges"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
