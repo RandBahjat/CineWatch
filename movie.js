@@ -9887,8 +9887,8 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
     rating: 6.1,
-    age: "PG",
-    duration: "2h 33m",
+    age: "PG-13",
+    duration: "1h 59m",
     genres: ["Crime", "Drama", "Mystery", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uhviyknTT5cEQXbn6vWIqfM4vGm.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/yUIVOMiCwapPE60iB1iC7aOm0wZ.jpg",
