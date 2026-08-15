@@ -10552,7 +10552,7 @@ const MOVIES = [
     rating: 6.1,
     age: "PG-13",
     duration: "2h 34m",
-    genres: ["Action", "Adventure","Sci-Fi"],
+    genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/385XwTQZDpRX2d3kxtnpiLrjBXw.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/exrH1VYR39JhptNawUeSE37R1bL.jpg",
     videoUrl: "1452",
@@ -10569,7 +10569,7 @@ const MOVIES = [
     rating: 7.5,
     age: "PG-13",
     duration: "2h 6m",
-    genres: ["Action","Crime", "Fantasy","Thriller"],
+    genres: ["Action", "Crime", "Fantasy", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cij4dd21v2Rk2YtUQbV5kW69WB2.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qMsbXoFEzqsCZxA8i4szTPLw64d.jpg",
     videoUrl: "268",
@@ -10586,7 +10586,7 @@ const MOVIES = [
     rating: 7.1,
     age: "PG-13",
     duration: "2h 6m",
-    genres: ["Action","Crime", "Fantasy","Thriller"],
+    genres: ["Action", "Crime", "Fantasy", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/jKBjeXM7iBBV9UkUcOXx3m7FSHY.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zlsaQEE26TS34ziXAiNIAqa0MLX.jpg",
     videoUrl: "364",
@@ -10603,7 +10603,7 @@ const MOVIES = [
     rating: 5.5,
     age: "PG-13",
     duration: "2h 1m",
-    genres: ["Action","Adventure","Sci-Fi"],
+    genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/i0fJS8M5UKoETjjJ0zwUiKaR8tr.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/nFdprMGyrxZmqKsLXmVzS0vLqxE.jpg",
     videoUrl: "414",
@@ -10620,7 +10620,7 @@ const MOVIES = [
     rating: 6.1,
     age: "R",
     duration: "1h 47m",
-    genres: ["Action","Sci-Fi"],
+    genres: ["Action", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/buPFnHZ3xQy6vZEHxbHgL1Pc6CR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/4ovxVsrV8RM7zzH1RJo5t94iVIC.jpg",
     videoUrl: "1290821",
@@ -12926,7 +12926,7 @@ const MOVIES = [
     cast: ["David Kaufman", "Grey DeLisle", "Rickey D'Shon Collins", "Colleen O'Shaughnessey", "Rob Paulsen", "Kath Soucie"],
     trending: false,
     featured: false,
-    cinesrcId: "2030",
+    cinesrcId: "2309",
     seasons: [
       {
         season: 1,
@@ -13362,7 +13362,7 @@ const MOVIES = [
     cast: ["Adrian Petriw", "Daniel Bacon", "Anna Cummer", "Vincent Tong", "Michael Adamthwaite", "Lisa Ann Beley"],
     trending: false,
     featured: false,
-    cinesrcId: "16194",
+    cinesrcId: "7330",
     seasons: [
       {
         season: 1,
@@ -13444,7 +13444,7 @@ const MOVIES = [
     cast: ["Tim Daly", "Dana Delany", "David Kaufman", "Clancy Brown", "Lauren Tom"],
     trending: false,
     featured: false,
-    cinesrcId: "1121",
+    cinesrcId: "4303",
     seasons: [
       {
         season: 1,
@@ -13641,7 +13641,7 @@ const MOVIES = [
     cast: ["Sean Astin", "Greg Cipes", "Rob Paulsen", "Seth Green", "Mae Whitman", "Hoon Lee"],
     trending: false,
     featured: false,
-    cinesrcId: "42260",
+    cinesrcId: "51817",
     seasons: [
       {
         season: 1,
@@ -23791,7 +23791,7 @@ function closeVideoPlayer() {
       video.duration,
     );
   } else if (state.currentPlayingMovie && iframe && !iframe.classList.contains("hidden") && iframe.src) {
-    // Iframe embed (VidKing etc.) — we can't read playback time from the iframe,
+    // Iframe embed (CineSrc etc.) — we can't read playback time from the iframe,
     // so save with a placeholder so the title appears in Continue Watching.
     const cwId = state.currentPlayingMovie.id;
     if (cwId && cwId !== "_episode_" && state.user) {
@@ -25157,9 +25157,9 @@ function updateIframeServer() {
 
   let newUrl = "";
   if (data.type === "tv") {
-    newUrl = `https://www.vidking.net/embed/tv/${data.id}/${data.season}/${data.episode}`;
+    newUrl = `https://www.2embed.cc/embedtv/${data.id}&s=${data.season}&e=${data.episode}`;
   } else {
-    newUrl = `https://www.vidking.net/embed/movie/${data.id}`;
+    newUrl = `https://www.2embed.cc/embed/${data.id}`;
   }
   iframe.src = newUrl;
 }
