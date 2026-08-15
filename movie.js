@@ -9968,6 +9968,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "The Menu",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2022,
+    rating: 7.1,
+    age: "R",
+    duration: "1h 47m",
+    genres: ["Thriller", "Horror","Mystery"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fPtUgMcLIboqlTlPrq0bQpKK8eq.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/4vSBj7BYsyuKCx96EJzGyp20WfY.jpg",
+    videoUrl: "593643",
+    overview: "A young couple travels to a remote island to eat at an exclusive restaurant helmed by a celebrity chef known for his intense, theatrical culinary style. As the elaborate, meticulously curated tasting menu unfolds course by course, they gradually realize the mysterious chef has prepared a shocking menu for his elite guests — one designed for a sinister purpose that goes far beyond fine dining.",
+    director: "Mark Mylod",
+    cast: ["Ralph Fiennes, Anya Taylor-Joy, Nicholas Hoult, Hong Chau, Janet McTeer, Judith Light, John Leguizamo"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
