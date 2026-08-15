@@ -9968,7 +9968,7 @@ const MOVIES = [
     featured: false,
   },
   {
-    title: "The Menu",
+    title: "",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2022,
     rating: 7.1,
