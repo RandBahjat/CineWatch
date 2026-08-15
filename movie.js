@@ -10039,7 +10039,7 @@ const MOVIES = [
     title: "Regretting You",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
-    rating: 7.0,
+    rating: 6.0,
     age: "PG-13",
     duration: "1h 32m",
     genres: ["Comedy","Drama","Romance"],
