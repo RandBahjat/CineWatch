@@ -18636,12 +18636,12 @@ const MOVIES = [
     title: "Modern Family",
     type: "TV Show",
     year: 2009,
-    rating: 7.8,
-    age: "TV-14",
-    duration: "30m",
+    rating: 8.5,
+    age: "TV-PG",
+    duration: "22m",
     genres: ["Comedy","Family"],
-    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/uHldWyZAAZMrHfrptDov9j7l3PZ.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/j1B4zZgYxZ3xHXZO7sA64Z922z9.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/k5Qg5rgPoKdh3yTJJrLtyoyYGwC.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/baz06JeHeGjq45auOFEiw1K7zVj.jpg",
     videoUrl: "1426",
     overview: "Modern Family revolves around three different types of families (nuclear, step- and same-sex) living in the Los Angeles area, who are interrelated through Jay Pritchett and his children, Claire Dunphy (née Pritchett) and Mitchell Pritchett. Patriarch Jay is remarried to a much younger woman, Gloria Delgado Pritchett (née Ramirez), a passionate Colombian with whom he has an infant son, Fulgencio (Joe) Pritchett, and a son from Gloria's previous marriage, Manny Delgado.Jay's daughter Claire was a homemaker, but has returned to the business world. She is now the chief executive of her father's previous business, Pritchett's Closets and Blinds. She is married to Phil Dunphy, a realtor and self-professed \"cool dad\". They have three children: Haley Dunphy, a stereotypical ditzy teenage girl; Alex Dunphy, a nerdy, smart middle child; and Luke Dunphy, the off-beat only son.Jay's lawyer son Mitchell and his husband Cameron Tucker have one daughter, Lily Tucker-Pritchett. As the name suggests, this family represents a modern-day family, and episodes are comically based on situations which many families encounter in real life.",
     director: "Christopher Lloyd, Steven Levitan",
@@ -18953,6 +18953,245 @@ const MOVIES = [
           { episode: 16, title: "I'm Going to Miss This" },
           { episode: 17, title: "Finale Part 1" },
           { episode: 18, title: "Finale Part 2" }
+        ]
+      }
+    ]
+  }
+,
+  {
+    title: "Doctor Who",
+    type: "TV Show",
+    year: 2005,
+    rating: 8.3,
+    age: "TV-14",
+    duration: "48m",
+    genres: ["Drama","Adventure","Science-Fiction"],
+    poster: "https://image.tmdb.org/t/p/original/w8enSKCf6Zm0topeQ2XPccDqsqp.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/m91Aiy3NqW8p0GvXzW1N1r5UuFz.jpg",
+    videoUrl: "57243",
+    overview: "Adventures across time and space with the time travelling alien and companions.",
+    director: "Russell T. Davies",
+    cast: ["David Tennant","Matt Smith","Peter Capaldi","Jodie Whittaker","Christopher Eccleston","Ncuti Gatwa"],
+    trending: false,
+    featured: false,
+    cinesrcId: "57243",
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Rose" },
+          { episode: 2, title: "The End of the World" },
+          { episode: 3, title: "The Unquiet Dead" },
+          { episode: 4, title: "Aliens of London" },
+          { episode: 5, title: "World War Three" },
+          { episode: 6, title: "Dalek" },
+          { episode: 7, title: "The Long Game" },
+          { episode: 8, title: "Father's Day" },
+          { episode: 9, title: "The Empty Child" },
+          { episode: 10, title: "The Doctor Dances" },
+          { episode: 11, title: "Boom Town" },
+          { episode: 12, title: "Bad Wolf" },
+          { episode: 13, title: "The Parting of the Ways" }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "New Earth" },
+          { episode: 2, title: "Tooth and Claw" },
+          { episode: 3, title: "School Reunion" },
+          { episode: 4, title: "The Girl in the Fireplace" },
+          { episode: 5, title: "Rise of the Cybermen" },
+          { episode: 6, title: "The Age of Steel" },
+          { episode: 7, title: "The Idiot's Lantern" },
+          { episode: 8, title: "The Impossible Planet" },
+          { episode: 9, title: "The Satan Pit" },
+          { episode: 10, title: "Love & Monsters" },
+          { episode: 11, title: "Fear Her" },
+          { episode: 12, title: "Army of Ghosts" },
+          { episode: 13, title: "Doomsday" }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: "Smith and Jones" },
+          { episode: 2, title: "The Shakespeare Code" },
+          { episode: 3, title: "Gridlock" },
+          { episode: 4, title: "Daleks in Manhattan" },
+          { episode: 5, title: "Evolution of the Daleks" },
+          { episode: 6, title: "The Lazarus Experiment" },
+          { episode: 7, title: "42" },
+          { episode: 8, title: "Human Nature" },
+          { episode: 9, title: "The Family of Blood" },
+          { episode: 10, title: "Blink" },
+          { episode: 11, title: "Utopia" },
+          { episode: 12, title: "The Sound of Drums" },
+          { episode: 13, title: "Last of the Time Lords" }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          { episode: 1, title: "Partners in Crime" },
+          { episode: 2, title: "The Fires of Pompeii" },
+          { episode: 3, title: "Planet of the Ood" },
+          { episode: 4, title: "The Sontaran Stratagem" },
+          { episode: 5, title: "The Poison Sky" },
+          { episode: 6, title: "The Doctor's Daughter" },
+          { episode: 7, title: "The Unicorn and the Wasp" },
+          { episode: 8, title: "Silence in the Library" },
+          { episode: 9, title: "Forest of the Dead" },
+          { episode: 10, title: "Midnight" },
+          { episode: 11, title: "Turn Left" },
+          { episode: 12, title: "The Stolen Earth" },
+          { episode: 13, title: "Journey's End" }
+        ]
+      },
+      {
+        season: 5,
+        episodes: [
+          { episode: 1, title: "The Eleventh Hour" },
+          { episode: 2, title: "The Beast Below" },
+          { episode: 3, title: "Victory of the Daleks" },
+          { episode: 4, title: "The Time of Angels" },
+          { episode: 5, title: "Flesh and Stone" },
+          { episode: 6, title: "The Vampires of Venice" },
+          { episode: 7, title: "Amy's Choice" },
+          { episode: 8, title: "The Hungry Earth" },
+          { episode: 9, title: "Cold Blood" },
+          { episode: 10, title: "Vincent and the Doctor" },
+          { episode: 11, title: "The Lodger" },
+          { episode: 12, title: "The Pandorica Opens" },
+          { episode: 13, title: "The Big Bang" }
+        ]
+      },
+      {
+        season: 6,
+        episodes: [
+          { episode: 1, title: "The Impossible Astronaut" },
+          { episode: 2, title: "Day of the Moon" },
+          { episode: 3, title: "The Curse of the Black Spot" },
+          { episode: 4, title: "The Doctor's Wife" },
+          { episode: 5, title: "The Rebel Flesh" },
+          { episode: 6, title: "The Almost People" },
+          { episode: 7, title: "A Good Man Goes to War" },
+          { episode: 8, title: "Let's Kill Hitler" },
+          { episode: 9, title: "Night Terrors" },
+          { episode: 10, title: "The Girl Who Waited" },
+          { episode: 11, title: "The God Complex" },
+          { episode: 12, title: "Closing Time" },
+          { episode: 13, title: "The Wedding of River Song" }
+        ]
+      },
+      {
+        season: 7,
+        episodes: [
+          { episode: 1, title: "Asylum of the Daleks" },
+          { episode: 2, title: "Dinosaurs on a Spaceship" },
+          { episode: 3, title: "A Town Called Mercy" },
+          { episode: 4, title: "The Power of Three" },
+          { episode: 5, title: "The Angels Take Manhattan" },
+          { episode: 6, title: "The Bells of Saint John" },
+          { episode: 7, title: "The Rings of Akhaten" },
+          { episode: 8, title: "Cold War" },
+          { episode: 9, title: "Hide" },
+          { episode: 10, title: "Journey to the Centre of the TARDIS" },
+          { episode: 11, title: "The Crimson Horror" },
+          { episode: 12, title: "Nightmare in Silver" },
+          { episode: 13, title: "The Name of the Doctor" }
+        ]
+      },
+      {
+        season: 8,
+        episodes: [
+          { episode: 1, title: "Deep Breath" },
+          { episode: 2, title: "Into the Dalek" },
+          { episode: 3, title: "Robot of Sherwood" },
+          { episode: 4, title: "Listen" },
+          { episode: 5, title: "Time Heist" },
+          { episode: 6, title: "The Caretaker" },
+          { episode: 7, title: "Kill the Moon" },
+          { episode: 8, title: "Mummy on the Orient Express" },
+          { episode: 9, title: "Flatline" },
+          { episode: 10, title: "In the Forest of the Night" },
+          { episode: 11, title: "Dark Water" },
+          { episode: 12, title: "Death in Heaven" }
+        ]
+      },
+      {
+        season: 9,
+        episodes: [
+          { episode: 1, title: "The Magician's Apprentice" },
+          { episode: 2, title: "The Witch's Familiar" },
+          { episode: 3, title: "Under the Lake" },
+          { episode: 4, title: "Before the Flood" },
+          { episode: 5, title: "The Girl Who Died" },
+          { episode: 6, title: "The Woman Who Lived" },
+          { episode: 7, title: "The Zygon Invasion" },
+          { episode: 8, title: "The Zygon Inversion" },
+          { episode: 9, title: "Sleep No More" },
+          { episode: 10, title: "Face The Raven" },
+          { episode: 11, title: "Heaven Sent" },
+          { episode: 12, title: "Hell Bent" }
+        ]
+      },
+      {
+        season: 10,
+        episodes: [
+          { episode: 1, title: "The Pilot" },
+          { episode: 2, title: "Smile" },
+          { episode: 3, title: "Thin Ice" },
+          { episode: 4, title: "Knock Knock" },
+          { episode: 5, title: "Oxygen" },
+          { episode: 6, title: "Extremis" },
+          { episode: 7, title: "The Pyramid at the End of the World" },
+          { episode: 8, title: "The Lie of the Land" },
+          { episode: 9, title: "Empress of Mars" },
+          { episode: 10, title: "The Eaters of Light" },
+          { episode: 11, title: "World Enough and Time" },
+          { episode: 12, title: "The Doctor Falls" }
+        ]
+      },
+      {
+        season: 11,
+        episodes: [
+          { episode: 1, title: "The Woman Who Fell to Earth" },
+          { episode: 2, title: "The Ghost Monument" },
+          { episode: 3, title: "Rosa" },
+          { episode: 4, title: "Arachnids in the UK" },
+          { episode: 5, title: "The Tsuranga Conundrum" },
+          { episode: 6, title: "Demons of the Punjab" },
+          { episode: 7, title: "Kerblam!" },
+          { episode: 8, title: "The Witchfinders" },
+          { episode: 9, title: "It Takes You Away" },
+          { episode: 10, title: "The Battle of Ranskoor Av Kolos" }
+        ]
+      },
+      {
+        season: 12,
+        episodes: [
+          { episode: 1, title: "Spyfall, Part 1" },
+          { episode: 2, title: "Spyfall, Part 2" },
+          { episode: 3, title: "Orphan 55" },
+          { episode: 4, title: "Nikola Tesla's Night of Terror" },
+          { episode: 5, title: "Fugitive of the Judoon" },
+          { episode: 6, title: "Praxeus" },
+          { episode: 7, title: "Can You Hear Me?" },
+          { episode: 8, title: "The Haunting of Villa Diodati" },
+          { episode: 9, title: "Ascension of the Cybermen" },
+          { episode: 10, title: "The Timeless Children" }
+        ]
+      },
+      {
+        season: 13,
+        episodes: [
+          { episode: 1, title: "Chapter One: The Halloween Apocalypse" },
+          { episode: 2, title: "Chapter Two: War of the Sontarans" },
+          { episode: 3, title: "Chapter Three: Once, Upon Time" },
+          { episode: 4, title: "Chapter Four: Village of the Angels" },
+          { episode: 5, title: "Chapter Five: Survivors of the Flux" },
+          { episode: 6, title: "Chapter Six: The Vanquishers" }
         ]
       }
     ]
