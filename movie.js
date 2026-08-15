@@ -10111,7 +10111,7 @@ const MOVIES = [
     age: "PG",
     duration: "2h 20m",
     genres: ["Action","Drama","Family","Sport"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/tYzFuYXmT8LOYASlFCkaPiAFAl0.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/b1RBy3l297N0c7PHjlz35cClWju.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/q5iixYCuDzDx5IoQXt4kZaLDIbr.jpg",
     videoUrl: "339403",
     overview: "A stylish, music-driven action thriller following Baby, a talented young getaway driver who relies on a personal soundtrack to drown out a severe case of tinnitus caused by a childhood accident. Hoping to clear his debt with a ruthless crime boss and walk away to start a normal life with a charming waitress, Baby finds himself forced into a doomed, high-stakes heist that threatens his life and freedom.",
