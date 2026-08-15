@@ -10478,6 +10478,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Stolen Girl",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2025,
+    rating: 5.4,
+    age: "R",
+    duration: "1h 45m",
+    genres: ["Action","Crime","Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7yEbEUrOsAS0d5DW1OqtvSpmRQv.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/yyFPjOavUSNbJZUCEmpdTb4BcMM.jpg",
+    videoUrl: "127521",
+    overview: "Samson Gaul is an ex-mercenary and seasoned human-trafficking investigator who retired after his actions inadvertently resulted in the deaths of helpless victims. When Andrew Fayden, a veteran MMA fighter, travels to Moldova with his family and discovers his daughter has been kidnapped by a ruthless trafficking ring, he convinces Gaul to return to the shadows to hunt down the syndicate and rescue her.",
+    director: "Ernie Barbarash",
+    cast: ["Jean-Claude Van Damme, Joe Flanigan, Anna-Louise Plowman, Charlotte Beaumont, Steve Nicolson"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
