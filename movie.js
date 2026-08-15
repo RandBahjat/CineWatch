@@ -9971,7 +9971,7 @@ const MOVIES = [
     title: "The Girl Next Door",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2004,
-    rating: 7.1,
+    rating: 6.7,
     age: "R",
     duration: "1h 49m",
     genres: ["Comedy", "Drama","Romance"],
