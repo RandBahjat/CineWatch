@@ -10319,7 +10319,7 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/tBI2wrjdKmXGOfVbC6wj1gpZBIH.jpg",
     videoUrl: "39514",
     overview: "Inspired by the Warren Ellis comic book series, this action comedy follows Frank Moses, a retired black-ops CIA agent living a quiet suburban life. When an elite high-tech hit squad targets him to cover up a top-secret government conspiracy, Frank reassembles his old team of Retired, Extremely Dangerous operatives for a cross-country mission to stay alive and expose the truth.",
-    director: "Mark Williams",
+    director: "Robert Schwentke",
     cast: ["Liam Neeson, Emmy Raver-Lampman, Taylor John Smith, Aidan Quinn, Claire van der Boom, Yael Stone"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
