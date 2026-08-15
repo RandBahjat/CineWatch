@@ -10456,7 +10456,7 @@ const MOVIES = [
     videoUrl: "697843",
     overview: "After barely surviving his grievous wounds from his mission in Dhaka, black-ops mercenary Tyler Rake retires to a remote cabin in Austria. However, his peace is short-lived when he is recruited for another high-stakes extraction: rescuing the battered family of a ruthless Georgian gangster from a high-security prison. When the break-out turns deadly, the gangster's vengeful brother pursues Rake and the family across Vienna.",
     director: "Sam Hargrave",
-    cast: ["Chris Hemsworth, Rudhraksh Jaiswal, Randeep Hooda, Golshifteh Farahani, Pankaj Tripathi, David Harbour"],
+    cast: ["Chris Hemsworth, Golshifteh Farahani, Adam Bessa, Tornike Gogrichiani, Tinatin Dalakishvili, Idris Elba"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
