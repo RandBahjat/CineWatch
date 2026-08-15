@@ -10573,8 +10573,8 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/jKBjeXM7iBBV9UkUcOXx3m7FSHY.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zlsaQEE26TS34ziXAiNIAqa0MLX.jpg",
     videoUrl: "364",
-    overview: "Following a mysterious five-year absence searching for the remains of Krypton, Superman returns to Earth to find a world that has moved on without him. Lois Lane has built a new life, won a Pulitzer Prize for her essay Why the World Doesn't Need Superman, and started a family. Meanwhile, arch-nemesis Lex Luthor hatches a villainous scheme to create a new Kryptonian landmass that threatens to destroy billions of lives, forcing the Man of Steel to regain the world's trust and save Metropolis once again.",
-    director: "Bryan Singer",
+    overview: "As Gotham City prepares for Christmastime, the bizarre and vengeful Penguin emerges from the sewers, teaming up with corrupt tycoon Max Shreck to run for mayor and frame the Caped Crusader. Meanwhile, shy secretary Selina Kyle transforms into the seductive and lethal Catwoman, launching her own dangerous campaign against Shreck and Batman. Surrounded by new foes and conflicting loyalties, Batman must defend Gotham against total chaos.",
+    director: "Tim Burton",
     cast: ["Brandon Routh, Kate Bosworth, Kevin Spacey, James Marsden, Parker Posey, Frank Langella, Sam Huntington"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
