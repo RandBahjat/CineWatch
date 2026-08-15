@@ -10505,7 +10505,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6tpAPeuuqbVnYWWPoOLEDLSBU7a.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/t98ZZtgdBC2yi7XBiT9nYBH6BrK.jpg",
     videoUrl: "628847",
-    overview: "In 1993, Maureen's life is shattered when her ex-husband sneaks their six-year-old daughter, Amina, out of the United States and takes her to the Middle East. After years of desperate, failed attempts to locate her child, Maureen crosses paths with Robeson, an ex-Marine specializing in recovering internationally abducted children. Teaming up for a dangerous retrieval mission, they navigate covert operations and betrayal across Europe and Beirut to bring Amina home.",
+    overview: "An undercover DEA agent and his partner embark on a game of cat-and-mouse in El Paso, Texas, when they discover their own teenage children have begun robbing a dangerous cartel. Using their parents' specialized tactical equipment and top-secret intelligence, the teenagers inadvertently trigger an all-out turf war that forces the agents to protect their kids while keeping their secrets hidden from the law and the cartel.",
     director: "James Kent",
     cast: ["Kate Beckinsale, Scott Eastwood, Jordan Duvigneau, Matt Craven, Alejandra Howard, Arvin Kananian"],
     trending: false, // Leave false so it only shows up in the Genres tab
