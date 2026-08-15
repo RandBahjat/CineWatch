@@ -10410,6 +10410,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "The Gray Man",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2022,
+    rating: 5.8,
+    age: "PG-13",
+    duration: "1h 57m",
+    genres: ["Action","Adventure","Comedy","Romance"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/liLN69YgoovHVgmlHJ876PKi5Yi.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/oWCExzaakAyCCpjQSZ7yak4Wi2d.jpg",
+    videoUrl: "868759",
+    overview: "Salt-of-the-earth farmer Cole falls head over heels for the mysterious Sadie after a romantic first date. When she suddenly stops replying to his texts, Cole flies to London as a grand romantic gesture to surprise her—only to discover that Sadie is actually a covert CIA operative. Before they can even decide on a second date, Cole and Sadie are swept into a globe-trotting international adventure to save the world.",
+    director: "Dexter Fletcher",
+    cast: ["Chris Evans, Ana de Armas, Adrien Brody, Mike Moh, Amy Sedaris, Tate Donovan, Tim Blake Nelson"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
