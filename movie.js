@@ -9968,9 +9968,9 @@ const MOVIES = [
     featured: false,
   },
   {
-    title: "",
+    title: "The Girl Next Door",
     type: "Movie", // Use "Movie" or "TV Show"
-    year: 2022,
+    year: 2004,
     rating: 7.1,
     age: "R",
     duration: "1h 47m",
