@@ -10245,7 +10245,7 @@ const MOVIES = [
     year: 2005,
     rating: 6.3,
     age: "R",
-    duration: "1h 32m",
+    duration: "1h 27m",
     genres: ["Action", "Crime", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dncJ81z1BahrT3ogLvlxOUC5n4u.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/AvIiUxbIrxwbLAhLgMGIpCEeneP.jpg",
