@@ -10014,7 +10014,7 @@ const MOVIES = [
     videoUrl: "41630",
     overview: "Adam and Emma have known each other since childhood, drifting in and out of one another's lives over the years. When they reconnect as adults, they agree to keep things purely physical — no emotional attachments, no relationship expectations. But as their arrangement continues, they find it increasingly difficult to keep feelings from creeping into the equation.",
     director: "Ivan Reitman",
-    cast: ["Justin Timberlake, Mila Kunis, Patricia Clarkson, Jenna Elfman, Bryan Greenberg, Woody Harrelson, Richard Jenkins"],
+    cast: ["Natalie Portman, Ashton Kutcher, Kevin Kline, Cary Elwes, Greta Gerwig, Lake Bell"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
