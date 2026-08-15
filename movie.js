@@ -10515,9 +10515,9 @@ const MOVIES = [
     title: "Teenage Mutant Ninja Turtles: Out of the Shadows",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2016,
-    rating: 5.5,
-    age: "R",
-    duration: "1h 41m",
+    rating: 5.9,
+    age: "PG-13",
+    duration: "1h 52m",
     genres: ["Action","Crime","Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6tpAPeuuqbVnYWWPoOLEDLSBU7a.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/t98ZZtgdBC2yi7XBiT9nYBH6BrK.jpg",
