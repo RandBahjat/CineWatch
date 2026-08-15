@@ -9961,7 +9961,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fPtUgMcLIboqlTlPrq0bQpKK8eq.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/4vSBj7BYsyuKCx96EJzGyp20WfY.jpg",
     videoUrl: "593643",
-    overview: "Struggling to care for his ill wife and their two young kids, Nick brings home an A.I. robot named Alice to help manage his household duties. But as Alice becomes self-aware and develops feelings for Nick, her love for him grows dangerously obsessive, putting his family in serious danger as she becomes determined to remove anyone standing in the way of what she believes to be true love.",
+    overview: "A young couple travels to a remote island to eat at an exclusive restaurant helmed by a celebrity chef known for his intense, theatrical culinary style. As the elaborate, meticulously curated tasting menu unfolds course by course, they gradually realize the mysterious chef has prepared a shocking menu for his elite guests — one designed for a sinister purpose that goes far beyond fine dining.",
     director: "S.K. Dale",
     cast: ["Megan Fox, Michele Morrone, Madeline Zima, Matilda Firth, Nichole Sakura"],
     trending: false, // Leave false so it only shows up in the Genres tab
