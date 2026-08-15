@@ -23558,17 +23558,49 @@ function bindEventListeners() {
   }
 
   if (reportForm) {
-    reportForm.onsubmit = (e) => {
+    reportForm.onsubmit = async (e) => {
       e.preventDefault();
+      const submitBtn = reportForm.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerHTML;
+      
       const subject = document.getElementById("reportSubject").value.trim();
       const message = document.getElementById("reportMessage").value.trim();
       if (!message) return;
 
-      const mailtoUrl = `mailto:randbahjat14@gmail.com?subject=${encodeURIComponent(subject || "CineWatch Report")}&body=${encodeURIComponent(message)}`;
-      window.location.href = mailtoUrl;
+      submitBtn.innerHTML = '<ion-icon name="hourglass-outline"></ion-icon> Sending...';
+      submitBtn.disabled = true;
 
-      closeReportModal();
-      showToast("Thank you! Opening your email app to submit the report.");
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            access_key: '965583ff-4601-49f3-8adf-bf0a881b0686',
+            subject: subject || "CineWatch Report",
+            message: message,
+            from_name: "CineWatch User"
+          })
+        });
+
+        const result = await response.json();
+        if (response.status === 200) {
+          closeReportModal();
+          showToast("Thank you! Your report has been sent successfully.");
+          reportForm.reset();
+        } else {
+          showToast("Something went wrong. Please try again.");
+          console.error("Web3Forms Error:", result);
+        }
+      } catch (error) {
+        showToast("Network error. Please check your connection and try again.");
+        console.error("Fetch Error:", error);
+      } finally {
+        submitBtn.innerHTML = originalBtnText;
+        submitBtn.disabled = false;
+      }
     };
   }
 
