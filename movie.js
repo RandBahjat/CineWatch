@@ -9953,8 +9953,8 @@ const MOVIES = [
   {
     title: "The Menu",
     type: "Movie", // Use "Movie" or "TV Show"
-    year: 2024,
-    rating: 5.4,
+    year: 2022,
+    rating: 7.1,
     age: "R",
     duration: "1h 46m",
     genres: ["Science Fiction","Thriller", "Horror"],
