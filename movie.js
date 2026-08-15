@@ -10195,7 +10195,7 @@ const MOVIES = [
     rating: 4.2,
     age: "R",
     duration: "2h 5m",
-    genres: ["Drama", "Romance", "Short", "Erotic"],
+    genres: ["Drama", "Romance", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/47XRWH95ATv4szxdWHl723guWXP.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/jOY8IumfE60nUj7cMZhlogrmTdD.jpg",
     videoUrl: "82023",
