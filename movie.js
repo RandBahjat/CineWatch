@@ -18600,6 +18600,38 @@ const MOVIES = [
       }
     ]
   },
+,
+  {
+    title: "Moon Knight",
+    type: "TV Show",
+    year: 2022,
+    rating: 7.3,
+    age: "TV-14",
+    duration: "50m",
+    genres: ["Action","Adventure","Fantasy"],
+    poster: "https://image.tmdb.org/t/p/original/jsrrz8leKD79YDPvKW4ssDgEwaE.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/64a8imymtJ4WOzIeyUHLtZnJ3wv.jpg",
+    videoUrl: "92749",
+    overview: "When Steven Grant, a mild-mannered gift-shop employee, becomes plagued with blackouts and memories of another life, he discovers he has dissociative identity disorder and shares a body with mercenary Marc Spector. As Steven/Marc's enemies converge upon them, they must navigate their complex identities while thrust into a deadly mystery among the powerful gods of Egypt.",
+    director: "Mohamed Diab",
+    cast: ["Oscar Isaac","Ethan Hawke","May Calamawy","F. Murray Abraham","Gaspard Ulliel"],
+    trending: false,
+    featured: false,
+    cinesrcId: "92749",
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "The Goldfish Problem" },
+          { episode: 2, title: "Summon the Suit" },
+          { episode: 3, title: "The Friendly Type" },
+          { episode: 4, title: "The Tomb" },
+          { episode: 5, title: "Asylum" },
+          { episode: 6, title: "Gods and Monsters" }
+        ]
+      }
+    ]
+  }
 ]
 
 // Auto-generate a clean ID (slug) for every movie based on its title
