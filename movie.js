@@ -9934,6 +9934,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "The Naked Gun",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2025,
+    rating: 6.3,
+    age: "PG-13",
+    duration: "1h 25m",
+    genres: ["Action","Comedy", "Crime"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rwla9vqzrKVVKVKiOuROTIXGsxj.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/ifnnW3q4rcxGiqFQf2CLG8Ms4p9.jpg",
+    videoUrl: "1035259",
+    overview: "Only one man has the particular set of skills to lead Police Squad and save the world — Lt. Frank Drebin Jr. Following in his father's footsteps, he must solve a murder case to prevent Police Squad from being shut down for good, in this reboot of the beloved spoof comedy franchise.",
+    director: "Akiva Schaffer",
+    cast: ["Liam Neeson, Pamela Anderson, Paul Walter Hauser, Kevin Durand, Danny Huston"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
