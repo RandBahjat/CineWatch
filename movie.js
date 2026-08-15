@@ -10043,7 +10043,7 @@ const MOVIES = [
     age: "PG-13",
     duration: "1h 56m",
     genres: ["Drama","Romance"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/v5f1qO6NJnxWgONgkYg21TW39DT.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/z4gVnxTaks3anTycwKjDmvQSuWt.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/30rvmoEBqovm723agDJ3QddWXcY.jpg",
     videoUrl: "37735",
     overview: "A clean-cut high schooler's life takes an unexpected turn after a little white lie about losing her virginity spreads through the school's rumor mill. As her reputation spirals wildly out of control, she decides to embrace her new wild child image, cleverly turning gossip into personal gain — all while inadvertently learning what it really means to stand up for herself.",
