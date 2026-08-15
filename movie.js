@@ -9917,6 +9917,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Anyone but You",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2023,
+    rating: 6.1,
+    age: "R",
+    duration: "1h 43m",
+    genres: ["Comedy", "Romance"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/5qHoazZiaLe7oFBok7XlUhg96f2.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/kzn2mRzACwANeOrfCUdVaNyTeca.jpg",
+    videoUrl: "1072790",
+    overview: "After an amazing first date, Bea and Ben's fiery attraction turns ice cold — until they find themselves unexpectedly reunited at a destination wedding in Australia. To avoid the awkwardness of their failed romance, the sworn enemies pretend to be a couple, but their plan to fake a relationship threatens to become all too real.",
+    director: "Will Gluck",
+    cast: ["Sydney Sweeney, Glen Powell, Alexandra Shipp, GaTa, Michelle Hurd, Bryan Brown, Rachel Griffiths, Dermot Mulroney"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
