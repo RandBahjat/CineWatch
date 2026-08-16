@@ -10896,884 +10896,260 @@ const MOVIES = [
       {
         "season": 1,
         "episodes": [
-          {
-            "episode": 1,
-            "title": "Episode 1"
-          },
-          {
-            "episode": 2,
-            "title": "Episode 2"
-          },
-          {
-            "episode": 3,
-            "title": "Episode 3"
-          },
-          {
-            "episode": 4,
-            "title": "Episode 4"
-          },
-          {
-            "episode": 5,
-            "title": "Episode 5"
-          },
-          {
-            "episode": 6,
-            "title": "Episode 6"
-          },
-          {
-            "episode": 7,
-            "title": "Episode 7"
-          },
-          {
-            "episode": 8,
-            "title": "Episode 8"
-          },
-          {
-            "episode": 9,
-            "title": "Episode 9"
-          },
-          {
-            "episode": 10,
-            "title": "Episode 10"
-          },
-          {
-            "episode": 11,
-            "title": "Episode 11"
-          },
-          {
-            "episode": 12,
-            "title": "Episode 12"
-          },
-          {
-            "episode": 13,
-            "title": "Episode 13"
-          },
-          {
-            "episode": 14,
-            "title": "Episode 14"
-          },
-          {
-            "episode": 15,
-            "title": "Episode 15"
-          },
-          {
-            "episode": 16,
-            "title": "Episode 16"
-          },
-          {
-            "episode": 17,
-            "title": "Episode 17"
-          },
-          {
-            "episode": 18,
-            "title": "Episode 18"
-          },
-          {
-            "episode": 19,
-            "title": "Episode 19"
-          },
-          {
-            "episode": 20,
-            "title": "Episode 20"
-          },
-          {
-            "episode": 21,
-            "title": "Episode 21"
-          },
-          {
-            "episode": 22,
-            "title": "Episode 22"
-          }
-        ]
+          { "episode": 1, "title": "Pilot" },
+          { "episode": 2, "title": "Purple Giraffe" },
+          { "episode": 3, "title": "Sweet Taste of Liberty" },
+          { "episode": 4, "title": "Return of the Shirt" },
+          { "episode": 5, "title": "Okay Awesome" },
+          { "episode": 6, "title": "Slutty Pumpkin" },
+          { "episode": 7, "title": "Matchmaker" },
+          { "episode": 8, "title": "The Duel" },
+          { "episode": 9, "title": "Belly Full of Turkey" },
+          { "episode": 10, "title": "The Pineapple Incident" },
+          { "episode": 11, "title": "The Limo" },
+          { "episode": 12, "title": "The Wedding" },
+          { "episode": 13, "title": "Drumroll, Please" },
+          { "episode": 14, "title": "Zip, Zip, Zip" },
+          { "episode": 15, "title": "Game Night" },
+          { "episode": 16, "title": "Cupcake" },
+          { "episode": 17, "title": "Life Among the Gorillas" },
+          { "episode": 18, "title": "Nothing Good Happens After 2 A.M." },
+          { "episode": 19, "title": "Mary the Paralegal" },
+          { "episode": 20, "title": "Best Prom Ever" },
+          { "episode": 21, "title": "Milk" },
+          { "episode": 22, "title": "Come On" },
+        ],
       },
       {
         "season": 2,
         "episodes": [
-          {
-            "episode": 1,
-            "title": "Episode 1"
-          },
-          {
-            "episode": 2,
-            "title": "Episode 2"
-          },
-          {
-            "episode": 3,
-            "title": "Episode 3"
-          },
-          {
-            "episode": 4,
-            "title": "Episode 4"
-          },
-          {
-            "episode": 5,
-            "title": "Episode 5"
-          },
-          {
-            "episode": 6,
-            "title": "Episode 6"
-          },
-          {
-            "episode": 7,
-            "title": "Episode 7"
-          },
-          {
-            "episode": 8,
-            "title": "Episode 8"
-          },
-          {
-            "episode": 9,
-            "title": "Episode 9"
-          },
-          {
-            "episode": 10,
-            "title": "Episode 10"
-          },
-          {
-            "episode": 11,
-            "title": "Episode 11"
-          },
-          {
-            "episode": 12,
-            "title": "Episode 12"
-          },
-          {
-            "episode": 13,
-            "title": "Episode 13"
-          },
-          {
-            "episode": 14,
-            "title": "Episode 14"
-          },
-          {
-            "episode": 15,
-            "title": "Episode 15"
-          },
-          {
-            "episode": 16,
-            "title": "Episode 16"
-          },
-          {
-            "episode": 17,
-            "title": "Episode 17"
-          },
-          {
-            "episode": 18,
-            "title": "Episode 18"
-          },
-          {
-            "episode": 19,
-            "title": "Episode 19"
-          },
-          {
-            "episode": 20,
-            "title": "Episode 20"
-          },
-          {
-            "episode": 21,
-            "title": "Episode 21"
-          },
-          {
-            "episode": 22,
-            "title": "Episode 22"
-          }
-        ]
+          { "episode": 1, "title": "Where Were We?" },
+          { "episode": 2, "title": "The Scorpion and the Toad" },
+          { "episode": 3, "title": "Brunch" },
+          { "episode": 4, "title": "Ted Mosby: Architect" },
+          { "episode": 5, "title": "World's Greatest Couple" },
+          { "episode": 6, "title": "Aldrin Justice" },
+          { "episode": 7, "title": "Swarley" },
+          { "episode": 8, "title": "Atlantic City" },
+          { "episode": 9, "title": "Slap Bet" },
+          { "episode": 10, "title": "Single Stamina" },
+          { "episode": 11, "title": "How Lily Stole Christmas" },
+          { "episode": 12, "title": "First Time in New York" },
+          { "episode": 13, "title": "Columns" },
+          { "episode": 14, "title": "Monday Night Football" },
+          { "episode": 15, "title": "Lucky Penny" },
+          { "episode": 16, "title": "Stuff" },
+          { "episode": 17, "title": "Arrivederci, Fiero" },
+          { "episode": 18, "title": "Moving Day" },
+          { "episode": 19, "title": "Bachelor Party" },
+          { "episode": 20, "title": "Showdown" },
+          { "episode": 21, "title": "Something Borrowed" },
+          { "episode": 22, "title": "Something Blue" },
+        ],
       },
       {
         "season": 3,
         "episodes": [
-          {
-            "episode": 1,
-            "title": "Episode 1"
-          },
-          {
-            "episode": 2,
-            "title": "Episode 2"
-          },
-          {
-            "episode": 3,
-            "title": "Episode 3"
-          },
-          {
-            "episode": 4,
-            "title": "Episode 4"
-          },
-          {
-            "episode": 5,
-            "title": "Episode 5"
-          },
-          {
-            "episode": 6,
-            "title": "Episode 6"
-          },
-          {
-            "episode": 7,
-            "title": "Episode 7"
-          },
-          {
-            "episode": 8,
-            "title": "Episode 8"
-          },
-          {
-            "episode": 9,
-            "title": "Episode 9"
-          },
-          {
-            "episode": 10,
-            "title": "Episode 10"
-          },
-          {
-            "episode": 11,
-            "title": "Episode 11"
-          },
-          {
-            "episode": 12,
-            "title": "Episode 12"
-          },
-          {
-            "episode": 13,
-            "title": "Episode 13"
-          },
-          {
-            "episode": 14,
-            "title": "Episode 14"
-          },
-          {
-            "episode": 15,
-            "title": "Episode 15"
-          },
-          {
-            "episode": 16,
-            "title": "Episode 16"
-          },
-          {
-            "episode": 17,
-            "title": "Episode 17"
-          },
-          {
-            "episode": 18,
-            "title": "Episode 18"
-          },
-          {
-            "episode": 19,
-            "title": "Episode 19"
-          },
-          {
-            "episode": 20,
-            "title": "Episode 20"
-          }
-        ]
+          { "episode": 1, "title": "Wait for It" },
+          { "episode": 2, "title": "We're Not from Here" },
+          { "episode": 3, "title": "Third Wheel" },
+          { "episode": 4, "title": "Little Boys" },
+          { "episode": 5, "title": "How I Met Everyone Else" },
+          { "episode": 6, "title": "I'm Not That Guy" },
+          { "episode": 7, "title": "Dowisetrepla" },
+          { "episode": 8, "title": "Spoiler Alert" },
+          { "episode": 9, "title": "Slapsgiving" },
+          { "episode": 10, "title": "The Yips" },
+          { "episode": 11, "title": "The Platinum Rule" },
+          { "episode": 12, "title": "No Tomorrow" },
+          { "episode": 13, "title": "Ten Sessions" },
+          { "episode": 14, "title": "The Bracket" },
+          { "episode": 15, "title": "The Chain of Screaming" },
+          { "episode": 16, "title": "Sandcastles in the Sand" },
+          { "episode": 17, "title": "The Goat" },
+          { "episode": 18, "title": "Rebound Bro" },
+          { "episode": 19, "title": "Everything Must Go" },
+          { "episode": 20, "title": "Miracles" },
+        ],
       },
       {
         "season": 4,
         "episodes": [
-          {
-            "episode": 1,
-            "title": "Episode 1"
-          },
-          {
-            "episode": 2,
-            "title": "Episode 2"
-          },
-          {
-            "episode": 3,
-            "title": "Episode 3"
-          },
-          {
-            "episode": 4,
-            "title": "Episode 4"
-          },
-          {
-            "episode": 5,
-            "title": "Episode 5"
-          },
-          {
-            "episode": 6,
-            "title": "Episode 6"
-          },
-          {
-            "episode": 7,
-            "title": "Episode 7"
-          },
-          {
-            "episode": 8,
-            "title": "Episode 8"
-          },
-          {
-            "episode": 9,
-            "title": "Episode 9"
-          },
-          {
-            "episode": 10,
-            "title": "Episode 10"
-          },
-          {
-            "episode": 11,
-            "title": "Episode 11"
-          },
-          {
-            "episode": 12,
-            "title": "Episode 12"
-          },
-          {
-            "episode": 13,
-            "title": "Episode 13"
-          },
-          {
-            "episode": 14,
-            "title": "Episode 14"
-          },
-          {
-            "episode": 15,
-            "title": "Episode 15"
-          },
-          {
-            "episode": 16,
-            "title": "Episode 16"
-          },
-          {
-            "episode": 17,
-            "title": "Episode 17"
-          },
-          {
-            "episode": 18,
-            "title": "Episode 18"
-          },
-          {
-            "episode": 19,
-            "title": "Episode 19"
-          },
-          {
-            "episode": 20,
-            "title": "Episode 20"
-          },
-          {
-            "episode": 21,
-            "title": "Episode 21"
-          },
-          {
-            "episode": 22,
-            "title": "Episode 22"
-          },
-          {
-            "episode": 23,
-            "title": "Episode 23"
-          },
-          {
-            "episode": 24,
-            "title": "Episode 24"
-          }
-        ]
+          { "episode": 1, "title": "Do I Know You?" },
+          { "episode": 2, "title": "The Best Burger in New York" },
+          { "episode": 3, "title": "I Heart NJ" },
+          { "episode": 4, "title": "Intervention" },
+          { "episode": 5, "title": "Shelter Island" },
+          { "episode": 6, "title": "Happily Ever After" },
+          { "episode": 7, "title": "Not a Father's Day" },
+          { "episode": 8, "title": "Woooo!" },
+          { "episode": 9, "title": "The Naked Man" },
+          { "episode": 10, "title": "The Fight" },
+          { "episode": 11, "title": "Little Minnesota" },
+          { "episode": 12, "title": "Benefits" },
+          { "episode": 13, "title": "Three Days of Snow" },
+          { "episode": 14, "title": "The Possimpible" },
+          { "episode": 15, "title": "The Stinsons" },
+          { "episode": 16, "title": "Sorry, Bro" },
+          { "episode": 17, "title": "The Front Porch" },
+          { "episode": 18, "title": "Old King Clancy" },
+          { "episode": 19, "title": "Murtaugh" },
+          { "episode": 20, "title": "Mosbius Designs" },
+          { "episode": 21, "title": "The Three Days Rule" },
+          { "episode": 22, "title": "Right Place, Right Time" },
+          { "episode": 23, "title": "As Fast as She Can" },
+          { "episode": 24, "title": "The Leap" },
+        ],
       },
       {
         "season": 5,
         "episodes": [
-          {
-            "episode": 1,
-            "title": "Episode 1"
-          },
-          {
-            "episode": 2,
-            "title": "Episode 2"
-          },
-          {
-            "episode": 3,
-            "title": "Episode 3"
-          },
-          {
-            "episode": 4,
-            "title": "Episode 4"
-          },
-          {
-            "episode": 5,
-            "title": "Episode 5"
-          },
-          {
-            "episode": 6,
-            "title": "Episode 6"
-          },
-          {
-            "episode": 7,
-            "title": "Episode 7"
-          },
-          {
-            "episode": 8,
-            "title": "Episode 8"
-          },
-          {
-            "episode": 9,
-            "title": "Episode 9"
-          },
-          {
-            "episode": 10,
-            "title": "Episode 10"
-          },
-          {
-            "episode": 11,
-            "title": "Episode 11"
-          },
-          {
-            "episode": 12,
-            "title": "Episode 12"
-          },
-          {
-            "episode": 13,
-            "title": "Episode 13"
-          },
-          {
-            "episode": 14,
-            "title": "Episode 14"
-          },
-          {
-            "episode": 15,
-            "title": "Episode 15"
-          },
-          {
-            "episode": 16,
-            "title": "Episode 16"
-          },
-          {
-            "episode": 17,
-            "title": "Episode 17"
-          },
-          {
-            "episode": 18,
-            "title": "Episode 18"
-          },
-          {
-            "episode": 19,
-            "title": "Episode 19"
-          },
-          {
-            "episode": 20,
-            "title": "Episode 20"
-          },
-          {
-            "episode": 21,
-            "title": "Episode 21"
-          },
-          {
-            "episode": 22,
-            "title": "Episode 22"
-          },
-          {
-            "episode": 23,
-            "title": "Episode 23"
-          },
-          {
-            "episode": 24,
-            "title": "Episode 24"
-          }
-        ]
+          { "episode": 1, "title": "Definitions" },
+          { "episode": 2, "title": "Double Date" },
+          { "episode": 3, "title": "Robin 101" },
+          { "episode": 4, "title": "The Sexless Innkeeper" },
+          { "episode": 5, "title": "Duel Citizenship" },
+          { "episode": 6, "title": "Bagpipes" },
+          { "episode": 7, "title": "The Rough Patch" },
+          { "episode": 8, "title": "The Playbook" },
+          { "episode": 9, "title": "Slapsgiving 2: Revenge of the Slap" },
+          { "episode": 10, "title": "The Window" },
+          { "episode": 11, "title": "Last Cigarette Ever" },
+          { "episode": 12, "title": "Girls vs. Suits" },
+          { "episode": 13, "title": "Jenkins" },
+          { "episode": 14, "title": "Perfect Week" },
+          { "episode": 15, "title": "Rabbit or Duck" },
+          { "episode": 16, "title": "Hooked" },
+          { "episode": 17, "title": "Of Course" },
+          { "episode": 18, "title": "Say Cheese" },
+          { "episode": 19, "title": "Zoo or False" },
+          { "episode": 20, "title": "Home Wreckers" },
+          { "episode": 21, "title": "Twin Beds" },
+          { "episode": 22, "title": "Robots vs. Wrestlers" },
+          { "episode": 23, "title": "The Wedding Bride" },
+          { "episode": 24, "title": "Doppelgangers" },
+        ],
       },
       {
         "season": 6,
         "episodes": [
-          {
-            "episode": 1,
-            "title": "Episode 1"
-          },
-          {
-            "episode": 2,
-            "title": "Episode 2"
-          },
-          {
-            "episode": 3,
-            "title": "Episode 3"
-          },
-          {
-            "episode": 4,
-            "title": "Episode 4"
-          },
-          {
-            "episode": 5,
-            "title": "Episode 5"
-          },
-          {
-            "episode": 6,
-            "title": "Episode 6"
-          },
-          {
-            "episode": 7,
-            "title": "Episode 7"
-          },
-          {
-            "episode": 8,
-            "title": "Episode 8"
-          },
-          {
-            "episode": 9,
-            "title": "Episode 9"
-          },
-          {
-            "episode": 10,
-            "title": "Episode 10"
-          },
-          {
-            "episode": 11,
-            "title": "Episode 11"
-          },
-          {
-            "episode": 12,
-            "title": "Episode 12"
-          },
-          {
-            "episode": 13,
-            "title": "Episode 13"
-          },
-          {
-            "episode": 14,
-            "title": "Episode 14"
-          },
-          {
-            "episode": 15,
-            "title": "Episode 15"
-          },
-          {
-            "episode": 16,
-            "title": "Episode 16"
-          },
-          {
-            "episode": 17,
-            "title": "Episode 17"
-          },
-          {
-            "episode": 18,
-            "title": "Episode 18"
-          },
-          {
-            "episode": 19,
-            "title": "Episode 19"
-          },
-          {
-            "episode": 20,
-            "title": "Episode 20"
-          },
-          {
-            "episode": 21,
-            "title": "Episode 21"
-          },
-          {
-            "episode": 22,
-            "title": "Episode 22"
-          },
-          {
-            "episode": 23,
-            "title": "Episode 23"
-          },
-          {
-            "episode": 24,
-            "title": "Episode 24"
-          }
-        ]
+          { "episode": 1, "title": "Big Days" },
+          { "episode": 2, "title": "Cleaning House" },
+          { "episode": 3, "title": "Unfinished" },
+          { "episode": 4, "title": "Subway Wars" },
+          { "episode": 5, "title": "Architect of Destruction" },
+          { "episode": 6, "title": "Baby Talk" },
+          { "episode": 7, "title": "Canning Randy" },
+          { "episode": 8, "title": "Natural History" },
+          { "episode": 9, "title": "Glitter" },
+          { "episode": 10, "title": "Blitzgiving" },
+          { "episode": 11, "title": "The Mermaid Theory" },
+          { "episode": 12, "title": "False Positive" },
+          { "episode": 13, "title": "Bad News" },
+          { "episode": 14, "title": "Last Words" },
+          { "episode": 15, "title": "Oh Honey" },
+          { "episode": 16, "title": "Desperation Day" },
+          { "episode": 17, "title": "Garbage Island" },
+          { "episode": 18, "title": "A Change of Heart" },
+          { "episode": 19, "title": "Legendaddy" },
+          { "episode": 20, "title": "The Exploding Meatball Sub" },
+          { "episode": 21, "title": "Hopeless" },
+          { "episode": 22, "title": "The Perfect Cocktail" },
+          { "episode": 23, "title": "Landmarks" },
+          { "episode": 24, "title": "Challenge Accepted" },
+        ],
       },
       {
         "season": 7,
         "episodes": [
-          {
-            "episode": 1,
-            "title": "Episode 1"
-          },
-          {
-            "episode": 2,
-            "title": "Episode 2"
-          },
-          {
-            "episode": 3,
-            "title": "Episode 3"
-          },
-          {
-            "episode": 4,
-            "title": "Episode 4"
-          },
-          {
-            "episode": 5,
-            "title": "Episode 5"
-          },
-          {
-            "episode": 6,
-            "title": "Episode 6"
-          },
-          {
-            "episode": 7,
-            "title": "Episode 7"
-          },
-          {
-            "episode": 8,
-            "title": "Episode 8"
-          },
-          {
-            "episode": 9,
-            "title": "Episode 9"
-          },
-          {
-            "episode": 10,
-            "title": "Episode 10"
-          },
-          {
-            "episode": 11,
-            "title": "Episode 11"
-          },
-          {
-            "episode": 12,
-            "title": "Episode 12"
-          },
-          {
-            "episode": 13,
-            "title": "Episode 13"
-          },
-          {
-            "episode": 14,
-            "title": "Episode 14"
-          },
-          {
-            "episode": 15,
-            "title": "Episode 15"
-          },
-          {
-            "episode": 16,
-            "title": "Episode 16"
-          },
-          {
-            "episode": 17,
-            "title": "Episode 17"
-          },
-          {
-            "episode": 18,
-            "title": "Episode 18"
-          },
-          {
-            "episode": 19,
-            "title": "Episode 19"
-          },
-          {
-            "episode": 20,
-            "title": "Episode 20"
-          },
-          {
-            "episode": 21,
-            "title": "Episode 21"
-          },
-          {
-            "episode": 22,
-            "title": "Episode 22"
-          },
-          {
-            "episode": 23,
-            "title": "Episode 23"
-          },
-          {
-            "episode": 24,
-            "title": "Episode 24"
-          }
-        ]
+          { "episode": 1, "title": "The Best Man" },
+          { "episode": 2, "title": "The Naked Truth" },
+          { "episode": 3, "title": "Ducky Tie" },
+          { "episode": 4, "title": "The Stinson Missile Crisis" },
+          { "episode": 5, "title": "Field Trip" },
+          { "episode": 6, "title": "Mystery vs. History" },
+          { "episode": 7, "title": "Noretta" },
+          { "episode": 8, "title": "The Slutty Pumpkin Returns" },
+          { "episode": 9, "title": "Disaster Averted" },
+          { "episode": 10, "title": "Tick Tick Tick..." },
+          { "episode": 11, "title": "The Rebound Girl" },
+          { "episode": 12, "title": "Symphony of Illumination" },
+          { "episode": 13, "title": "Tailgate" },
+          { "episode": 14, "title": "46 Minutes" },
+          { "episode": 15, "title": "The Burning Beekeeper" },
+          { "episode": 16, "title": "The Drunk Train" },
+          { "episode": 17, "title": "No Pressure" },
+          { "episode": 18, "title": "Karma" },
+          { "episode": 19, "title": "The Broath" },
+          { "episode": 20, "title": "Trilogy Time" },
+          { "episode": 21, "title": "Now We're Even" },
+          { "episode": 22, "title": "Good Crazy" },
+          { "episode": 23, "title": "The Magician's Code (1)" },
+          { "episode": 24, "title": "The Magician's Code (2)" },
+        ],
       },
       {
         "season": 8,
         "episodes": [
-          {
-            "episode": 1,
-            "title": "Episode 1"
-          },
-          {
-            "episode": 2,
-            "title": "Episode 2"
-          },
-          {
-            "episode": 3,
-            "title": "Episode 3"
-          },
-          {
-            "episode": 4,
-            "title": "Episode 4"
-          },
-          {
-            "episode": 5,
-            "title": "Episode 5"
-          },
-          {
-            "episode": 6,
-            "title": "Episode 6"
-          },
-          {
-            "episode": 7,
-            "title": "Episode 7"
-          },
-          {
-            "episode": 8,
-            "title": "Episode 8"
-          },
-          {
-            "episode": 9,
-            "title": "Episode 9"
-          },
-          {
-            "episode": 10,
-            "title": "Episode 10"
-          },
-          {
-            "episode": 11,
-            "title": "Episode 11"
-          },
-          {
-            "episode": 12,
-            "title": "Episode 12"
-          },
-          {
-            "episode": 13,
-            "title": "Episode 13"
-          },
-          {
-            "episode": 14,
-            "title": "Episode 14"
-          },
-          {
-            "episode": 15,
-            "title": "Episode 15"
-          },
-          {
-            "episode": 16,
-            "title": "Episode 16"
-          },
-          {
-            "episode": 17,
-            "title": "Episode 17"
-          },
-          {
-            "episode": 18,
-            "title": "Episode 18"
-          },
-          {
-            "episode": 19,
-            "title": "Episode 19"
-          },
-          {
-            "episode": 20,
-            "title": "Episode 20"
-          },
-          {
-            "episode": 21,
-            "title": "Episode 21"
-          },
-          {
-            "episode": 22,
-            "title": "Episode 22"
-          },
-          {
-            "episode": 23,
-            "title": "Episode 23"
-          },
-          {
-            "episode": 24,
-            "title": "Episode 24"
-          }
-        ]
+          { "episode": 1, "title": "Farhampton" },
+          { "episode": 2, "title": "The Pre-Nup" },
+          { "episode": 3, "title": "Nannies" },
+          { "episode": 4, "title": "Who Wants to Be a Godparent?" },
+          { "episode": 5, "title": "The Autumn of Break-Ups" },
+          { "episode": 6, "title": "Splitsville" },
+          { "episode": 7, "title": "The Stamp Tramp" },
+          { "episode": 8, "title": "Twelve Horny Women" },
+          { "episode": 9, "title": "Lobster Crawl" },
+          { "episode": 10, "title": "The Over-Correction" },
+          { "episode": 11, "title": "The Final Page (1)" },
+          { "episode": 12, "title": "The Final Page (2)" },
+          { "episode": 13, "title": "Band or DJ?" },
+          { "episode": 14, "title": "Ring Up!" },
+          { "episode": 15, "title": "P.S. I Love You" },
+          { "episode": 16, "title": "Bad Crazy" },
+          { "episode": 17, "title": "The Ashtray" },
+          { "episode": 18, "title": "Weekend at Barney's" },
+          { "episode": 19, "title": "The Fortress" },
+          { "episode": 20, "title": "The Time Travelers" },
+          { "episode": 21, "title": "Romeward Bound" },
+          { "episode": 22, "title": "The Bro Mitzvah" },
+          { "episode": 23, "title": "Something Old" },
+          { "episode": 24, "title": "Something New" },
+        ],
       },
       {
         "season": 9,
         "episodes": [
-          {
-            "episode": 1,
-            "title": "Episode 1"
-          },
-          {
-            "episode": 2,
-            "title": "Episode 2"
-          },
-          {
-            "episode": 3,
-            "title": "Episode 3"
-          },
-          {
-            "episode": 4,
-            "title": "Episode 4"
-          },
-          {
-            "episode": 5,
-            "title": "Episode 5"
-          },
-          {
-            "episode": 6,
-            "title": "Episode 6"
-          },
-          {
-            "episode": 7,
-            "title": "Episode 7"
-          },
-          {
-            "episode": 8,
-            "title": "Episode 8"
-          },
-          {
-            "episode": 9,
-            "title": "Episode 9"
-          },
-          {
-            "episode": 10,
-            "title": "Episode 10"
-          },
-          {
-            "episode": 11,
-            "title": "Episode 11"
-          },
-          {
-            "episode": 12,
-            "title": "Episode 12"
-          },
-          {
-            "episode": 13,
-            "title": "Episode 13"
-          },
-          {
-            "episode": 14,
-            "title": "Episode 14"
-          },
-          {
-            "episode": 15,
-            "title": "Episode 15"
-          },
-          {
-            "episode": 16,
-            "title": "Episode 16"
-          },
-          {
-            "episode": 17,
-            "title": "Episode 17"
-          },
-          {
-            "episode": 18,
-            "title": "Episode 18"
-          },
-          {
-            "episode": 19,
-            "title": "Episode 19"
-          },
-          {
-            "episode": 20,
-            "title": "Episode 20"
-          },
-          {
-            "episode": 21,
-            "title": "Episode 21"
-          },
-          {
-            "episode": 22,
-            "title": "Episode 22"
-          },
-          {
-            "episode": 23,
-            "title": "Episode 23"
-          },
-          {
-            "episode": 24,
-            "title": "Episode 24"
-          }
-        ]
-      }
+          { "episode": 1, "title": "The Locket" },
+          { "episode": 2, "title": "Coming Back" },
+          { "episode": 3, "title": "Last Time in New York" },
+          { "episode": 4, "title": "The Broken Code" },
+          { "episode": 5, "title": "The Poker Game" },
+          { "episode": 6, "title": "Knight Vision" },
+          { "episode": 7, "title": "No Questions Asked" },
+          { "episode": 8, "title": "The Lighthouse" },
+          { "episode": 9, "title": "Platonish" },
+          { "episode": 10, "title": "Mom and Dad" },
+          { "episode": 11, "title": "Bedtime Stories" },
+          { "episode": 12, "title": "The Rehearsal Dinner" },
+          { "episode": 13, "title": "Bass Player Wanted" },
+          { "episode": 14, "title": "Slapsgiving 3: Slappointment in Slapmarra" },
+          { "episode": 15, "title": "Unpause" },
+          { "episode": 16, "title": "How Your Mother Met Me" },
+          { "episode": 17, "title": "Sunrise" },
+          { "episode": 18, "title": "Rally" },
+          { "episode": 19, "title": "Vesuvius" },
+          { "episode": 20, "title": "Daisy" },
+          { "episode": 21, "title": "Gary Blauman" },
+          { "episode": 22, "title": "The End of the Aisle" },
+          { "episode": 23, "title": "Last Forever (1)" },
+          { "episode": 24, "title": "Last Forever (2)" },
+        ],
+      },
     ]
   },
   {
-    title: "Steven Universe: The Movie",
+    title: "Steven Universe: The Movie",title: "Steven Universe: The Movie",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2019,
     rating: 7.7,
