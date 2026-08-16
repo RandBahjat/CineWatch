@@ -11274,7 +11274,7 @@ const MOVIES = [
     rating: 6.2,
     age: "R",
     duration: "1h 55m",
-    genres: ["Action","Adventure","Biography","Drama","History"],
+    genres: ["Action","Drama","History"],
     poster: "https://image.tmdb.org/t/p/original/jE5o7y9K6pZtWNNMEw3IdpHuncR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8dR0DXJ24BwWXRuMrFH1hbVLC5X.jpg",
     videoUrl: "753342",
