@@ -23518,7 +23518,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     if (centerOverlay) centerOverlay.style.display = "none";
     serverWrap.classList.remove("hidden");
     const fsBtn = document.getElementById("fullscreenBtn");
-    if (fsBtn) fsBtn.onclick = toggleFullscreen;
+    if (fsBtn) fsBtn.onmousedown = (e) => { e.preventDefault(); toggleFullscreen(); };
 
     if (isTvEmbed) {
       const parts = videoUrl.split(":");
@@ -23674,7 +23674,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     if (centerOverlay) centerOverlay.style.display = "none";
     serverWrap.classList.remove("hidden");
     const fsBtn = document.getElementById("fullscreenBtn");
-    if (fsBtn) fsBtn.onclick = toggleFullscreen;
+    if (fsBtn) fsBtn.onmousedown = (e) => { e.preventDefault(); toggleFullscreen(); };
 
     if (isNumericId) {
       window.currentIframeData = { type: "movie", id: movie.videoUrl };
@@ -23891,7 +23891,8 @@ function setupVideoControls(video) {
     video.playbackRate = parseFloat(e.target.value);
   };
 
-  fullscreenBtn.onclick = () => {
+  fullscreenBtn.onmousedown = (e) => {
+    e.preventDefault(); // keep document focus so requestFullscreen() fires reliably on PC
     toggleFullscreen();
   };
 
@@ -25071,7 +25072,10 @@ function bindEventListeners() {
     videoContainer.addEventListener("mouseleave", () => {
       const videoModal = document.getElementById("videoModal");
       if (videoModal && !videoModal.classList.contains("hidden")) {
-        videoContainer.classList.add("idle");
+        // Short delay so clicks near the edge still register before controls disappear
+        idleTimer = setTimeout(() => {
+          videoContainer.classList.add("idle");
+        }, 300);
       }
     });
   }

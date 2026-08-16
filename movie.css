@@ -1917,14 +1917,14 @@ select {
 }
 
 /* Player Controls Bar */
-.player-controls-bar {
+.player-bottom-area {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 1rem 2rem 1.5rem;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
-  z-index: 30;
+  z-index: 50;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -1982,7 +1982,7 @@ select {
      When the mouse hits the top of the screen, it catches the event and wakes up the UI! */
 }
 
-.video-container.idle .player-controls-bar, .video-container.idle .player-back-btn {
+.video-container.idle .player-bottom-area, .video-container.idle .player-back-btn {
   opacity: 0;
   pointer-events: none;
 }
@@ -3043,7 +3043,7 @@ select {
     padding: 1rem;
   }
   
-  .player-controls-bar {
+  .player-bottom-area {
     padding: 0.8rem 1rem 1rem;
   }
 
