@@ -10633,7 +10633,7 @@ const MOVIES = [
   {
     title: "Steven Universe: The Movie",
     type: "Movie", // Use "Movie" or "TV Show"
-    year: 2026,
+    year: 2019,
     rating: 6.1,
     age: "R",
     duration: "1h 47m",
