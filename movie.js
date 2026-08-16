@@ -21584,7 +21584,7 @@ const MOVIES = [
     rating: 7.7,
     age: "TV-PG",
     duration: "11m",
-    genres: ["Animation", "Drama", "Kids"],
+    genres: ["Animation", "Drama", ""],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bIFnNqZGdahoiGnk6MRkXLbZufS.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7zTON5elWsObqmzEchOSUnMdoua.jpg",
     videoUrl: "72693",
