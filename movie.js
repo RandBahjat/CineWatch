@@ -11166,6 +11166,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Steven Universe: The Movie",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2019,
+    rating: 7.7,
+    age: "TV-PG",
+    duration: "1h 22m",
+    genres: ["Action","Animation","Adventure", "Sci-Fi","Musical"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8mRgpubxHqnqvENK4Bei30xMDvy.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/re3ZvlKJg04iLpLRf1xTKHS2wLU.jpg",
+    videoUrl: "537061",
+    overview: "Two years after bringing peace to the galaxy, sixteen-year-old Steven Universe believes his time as a defender of Earth is done, looking forward to enjoying a quiet life with the Crystal Gems. However, a mysterious, vengeful Gem named Spinel arrives in Beach City wielding a giant injector that threatens to poison all organic life on Earth and reset the Gems' memories. Steven must embarking on a quest to help his friends recover their memories and save the planet.",
+    director: "Rebecca Sugar",
+    cast: ["Zach Callison, Estelle, Michaela Dietz, Deedee Magno Hall, Sarah Stiles, Christine Ebersole, Patti LuPone, Lisa Hannigan"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
