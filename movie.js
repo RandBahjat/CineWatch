@@ -11234,6 +11234,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Gladiator",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2000,
+    rating: 8.5,
+    age: "R",
+    duration: "2h 35m",
+    genres: ["Action","Adventure","Drama"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wN2xWp1eIwCKOD0BHTcErTBv1Uq.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/jhk6D8pim3yaByu1801kMoxXFaX.jpg",
+    videoUrl: "98",
+    overview: "A powerful Roman general, Maximus Decimus Meridius, is betrayed when the jealous heir to the throne, Commodus, murders his father Emperor Marcus Aurelius and seizes power. Reduced to slavery and forced into the arena as a gladiator, Maximus rises through the ranks, fighting his way back to Rome to avenge the murder of his family and overthrow the tyrant Emperor.",
+    director: "Ridley Scott",
+    cast: ["Russell Crowe, Joaquin Phoenix, Connie Nielsen, Oliver Reed, Richard Harris, Derek Jacobi, Djimon Hounsou"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
