@@ -26,7 +26,7 @@
 // ==========================================
 // Change these titles to easily swap which movies appear in the top slider and trending row!
 const FEATURED_TITLES = ["Reacher", "House of the Dragon", "The Invite", "Spider-Man: Brand New Day", "The Odyssey", "Obsession", "The Last House"];
-const TRENDING_TITLES = ["Reacher", "Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters", "The Invite", "Young Washington", "The Last House", "Ted Lasso","Project Hail Mary"];
+const TRENDING_TITLES = ["Reacher", "Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters", "The Invite", "Young Washington", "The Last House", "Ted Lasso", "Project Hail Mary"];
 
 // ==========================================
 // 2. MOVIE DATABASE
@@ -21601,7 +21601,7 @@ const MOVIES = [
           { episode: 1, title: "Little Homeschool" },
           { episode: 2, title: "Guidance" },
           { episode: 3, title: "Rose Buds" },
-          { episode: 4, title: "We Messed Up" },
+          { episode: 4, title: "Volleyball" },
           { episode: 5, title: "Jethro's All Yours" },
           { episode: 6, title: "You're Level 100!" },
           { episode: 7, title: "Sibling Rivalry" },
