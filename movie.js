@@ -21600,7 +21600,7 @@ const MOVIES = [
         episodes: [
           { episode: 1, title: "Little Homeschool" },
           { episode: 2, title: "Guidance" },
-          { episode: 3, title: "You're Everybody's Sidekick" },
+          { episode: 3, title: "Rose Buds" },
           { episode: 4, title: "We Messed Up" },
           { episode: 5, title: "Jethro's All Yours" },
           { episode: 6, title: "You're Level 100!" },
