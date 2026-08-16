@@ -1987,6 +1987,35 @@ select {
   pointer-events: none;
 }
 
+/* Floating fullscreen button shown during iframe playback */
+.iframe-fullscreen-btn {
+  position: absolute;
+  top: 1.8rem;
+  right: 2rem;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 60;
+  padding: 0;
+  font-size: 1.3rem;
+}
+.iframe-fullscreen-btn:hover {
+  background: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.4);
+}
+.video-container.idle .iframe-fullscreen-btn {
+  opacity: 0;
+  pointer-events: none;
+}
+
 
 /* Seek Container */
 .seek-container {
