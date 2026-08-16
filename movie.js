@@ -21610,7 +21610,7 @@ const MOVIES = [
           { episode: 10, title: "Prickly Pair" },
           { episode: 11, title: "In Dreams" },
           { episode: 12, title: "Bismuth Casual" },
-          { episode: 13, title: "Just Be a Pebble" },
+          { episode: 13, title: "Together Forever" },
           { episode: 14, title: "Presenting Joe Cuppa" },
           { episode: 15, title: "We've Got Pests" },
           { episode: 16, title: "Legends of Mr. Gar" },
