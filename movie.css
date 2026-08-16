@@ -1307,8 +1307,8 @@ select {
   box-shadow: 0 6px 25px rgba(255, 255, 255, 0.6);
 }
 
-.iframe-fullscreen-hack { position: absolute; bottom: 8px; right: 10px; width: 38px; height: 38px; z-index: 100; opacity: 1; cursor: pointer; border: none; background: rgba(0,0,0,0.85); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; transition: all 0.2s ease; border-radius: 4px; }
-.iframe-fullscreen-hack:hover { transform: scale(1.1); background: rgba(0,0,0,1); }
+.iframe-fullscreen-hack { position: absolute; bottom: 8px; right: 28px; width: 50px; height: 50px; z-index: 100; opacity: 1; cursor: pointer; border: none; background: #000; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; transition: all 0.2s ease; border-radius: 8px; }
+.iframe-fullscreen-hack:hover { transform: scale(1.1); background: #000; }
 .video-container.idle .iframe-fullscreen-hack { opacity: 0; pointer-events: none; }
 @media (max-width: 768px) {
   .iframe-fullscreen-hack { display: none !important; }
