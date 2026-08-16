@@ -25084,7 +25084,7 @@ function bindEventListeners() {
     if (videoModal && !videoModal.classList.contains("hidden")) {
       idleTimer = setTimeout(() => {
         videoContainer.classList.add("idle");
-      }, 10000); // 10 seconds to vastly outlast iframe controls
+      }, 7000); // 7 seconds inactivity
     }
   }
 
