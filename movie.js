@@ -23517,9 +23517,6 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     controlsBar.classList.add("hidden");
     if (centerOverlay) centerOverlay.style.display = "none";
     serverWrap.classList.remove("hidden");
-    const fsBtn = document.getElementById("fullscreenBtn");
-    if (fsBtn) fsBtn.onmousedown = (e) => { e.preventDefault(); toggleFullscreen(); };
-
     if (isTvEmbed) {
       const parts = videoUrl.split(":");
       window.currentIframeData = { type: "tv", id: parts[1], season: parts[2], episode: parts[3] };
@@ -23673,9 +23670,6 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     controlsBar.classList.add("hidden");
     if (centerOverlay) centerOverlay.style.display = "none";
     serverWrap.classList.remove("hidden");
-    const fsBtn = document.getElementById("fullscreenBtn");
-    if (fsBtn) fsBtn.onmousedown = (e) => { e.preventDefault(); toggleFullscreen(); };
-
     if (isNumericId) {
       window.currentIframeData = { type: "movie", id: movie.videoUrl };
     } else {
@@ -23887,14 +23881,11 @@ function setupVideoControls(video) {
     muteBtn.textContent = video.muted ? "🔇" : "🔊";
   };
 
-  speedSelect.onchange = (e) => {
-    video.playbackRate = parseFloat(e.target.value);
-  };
-
-  fullscreenBtn.onmousedown = (e) => {
-    e.preventDefault(); // keep document focus so requestFullscreen() fires reliably on PC
-    toggleFullscreen();
-  };
+  if (speedSelect) {
+    speedSelect.onchange = (e) => {
+      video.playbackRate = parseFloat(e.target.value);
+    };
+  }
 
   // Video time update listener
   let lastSave = 0;
@@ -25029,6 +25020,21 @@ function bindEventListeners() {
     });
   }
 
+  // Fullscreen button — wired once at init so it always works (movies + series)
+  const fullscreenBtn = document.getElementById("fullscreenBtn");
+  if (fullscreenBtn && !fullscreenBtn.dataset.fsBound) {
+    fullscreenBtn.dataset.fsBound = "1";
+    fullscreenBtn.addEventListener("mousedown", (e) => {
+      e.preventDefault(); // keep document focus so requestFullscreen() fires reliably on PC
+      e.stopPropagation();
+      toggleFullscreen();
+    });
+  }
+
+  ["fullscreenchange", "webkitfullscreenchange"].forEach((evt) => {
+    document.addEventListener(evt, updateFullscreenIcon);
+  });
+
   // Keyboard Shortcuts (Space for Play/Pause, F for Fullscreen, ESC to close player)
   document.addEventListener("keydown", (e) => {
     const videoModal = document.getElementById("videoModal");
@@ -25131,10 +25137,9 @@ function updateFullscreenIcon() {
     document.webkitFullscreenElement ||
     document.msFullscreenElement
   );
-  const icon = isFs ? "\u229F" : "\u26F6";
-
   const fsBtn = document.getElementById("fullscreenBtn");
-  if (fsBtn) fsBtn.textContent = icon;
+  if (!fsBtn) return;
+  fsBtn.innerHTML = `<ion-icon name="${isFs ? "contract-outline" : "expand-outline"}"></ion-icon>`;
 }
 
 function formatTime(seconds) {
