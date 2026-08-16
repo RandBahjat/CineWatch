@@ -11203,7 +11203,7 @@ const MOVIES = [
     title: "Django Unchained",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2012,
-    rating: 7.6,
+    rating: 8.5,
     age: "R",
     duration: "2h 41m",
     genres: ["Action","Comedy","Crime", "Thriller"],
