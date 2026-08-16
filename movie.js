@@ -11222,7 +11222,7 @@ const MOVIES = [
     year: 2000,
     rating: 8.5,
     age: "R",
-    duration: "2h 45m",
+    duration: "2h 35m",
     genres: ["Drama","Western"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/s4cJQaj40SwMifUrrdtdOJsjnRO.jpg",
