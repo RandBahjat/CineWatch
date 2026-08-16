@@ -11211,8 +11211,8 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/s4cJQaj40SwMifUrrdtdOJsjnRO.jpg",
     videoUrl: "68718",
     overview: "Two years before the Civil War, an enslaved man named Django is freed by Dr. King Schultz, an eccentric German bounty hunter who needs his help to track down the murderous Brittle brothers. After a successful winter hunting criminals together, Schultz agrees to help Django rescue his wife, Broomhilda, from Calvin Candie, a charming yet brutal Mississippi plantation owner who forces enslaved men to fight to the death.",
-    director: "Paul Thomas Anderson",
-    cast: ["Leonardo DiCaprio, Sean Penn, Benicio del Toro, Regina Hall, Teyana Taylor, Chase Infiniti"],
+    director: "Quentin Tarantino",
+    cast: ["Jamie Foxx, Christoph Waltz, Leonardo DiCaprio, Kerry Washington, Samuel L. Jackson, Walton Goggins, Don Johnson"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
