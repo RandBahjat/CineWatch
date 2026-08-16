@@ -11241,7 +11241,7 @@ const MOVIES = [
     age: "R",
     duration: "2h 28m",
     genres: ["Action","Adventure","Drama"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wN2xWp1eIwCKOD0BHTcErTBv1Uq.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/2cxhvwyEwRlysAmRH4iodkvo0z5.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/jhk6D8pim3yaByu1801kMoxXFaX.jpg",
     videoUrl: "98",
     overview: "A powerful Roman general, Maximus Decimus Meridius, is betrayed when the jealous heir to the throne, Commodus, murders his father Emperor Marcus Aurelius and seizes power. Reduced to slavery and forced into the arena as a gladiator, Maximus rises through the ranks, fighting his way back to Rome to avenge the murder of his family and overthrow the tyrant Emperor.",
