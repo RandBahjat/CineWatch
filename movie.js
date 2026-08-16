@@ -10643,7 +10643,7 @@ const MOVIES = [
     videoUrl: "1408",
     overview: "An antisocial, maverick medical genius, Dr. Gregory House heads a team of diagnosticians at Princeton-Plainsboro Teaching Hospital. Guided by his belief that everybody lies, the cynical, Vicodin-addicted doctor relies on unorthodox methods, sharp deduction, and relentless trial-and-error to solve baffling medical mysteries that leave other doctors stumped.",
     director: "David Shore",
-    cast: ["Hugh Laurie", "Omar Epps", "Robert Sean Leonard", "Jennifer Morrison", "Jesse Spencer", "Lisa Edelstein"],
+    cast: ["Hugh Laurie, Omar Epps, Robert Sean Leonard, Jesse Spencer, Lisa Edelstein, Jennifer Morrison, Olivia Wilde, Peter Jacobson"],
     trending: false,
     featured: false,
     cinesrcId: "1408",
