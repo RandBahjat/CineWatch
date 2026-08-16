@@ -11275,7 +11275,7 @@ const MOVIES = [
     age: "R",
     duration: "1h 55m",
     genres: ["Action","Drama","History"],
-    poster: "https://image.tmdb.org/t/p/original/jE5o7y9K6pZtWNNMEw3IdpHuncR.jpg",
+    poster: "https://image.tmdb.org/t/p/original/uGqlk7Hu8FRLVDcFZ16NxTy09ZE.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8dR0DXJ24BwWXRuMrFH1hbVLC5X.jpg",
     videoUrl: "753342",
     overview: "A sweeping historical epic capturing Napoleon Bonaparte's swift, ruthless rise from army officer to French Emperor. The story traces his tactical genius across famous military campaigns while exploring his volatile, deeply addictive relationship with his wife and one true love, Josephine.",
