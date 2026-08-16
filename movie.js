@@ -11174,7 +11174,7 @@ const MOVIES = [
     duration: "2h 20m",
     genres: ["Crime","Drama","Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/tVvpFIoteRHNnoZMhdnwIVwJpCA.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/re3ZvlKJg04iLpLRf1xTKHS2wLU.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/zvGMwQ1mAFrxSzzMFT9WMEl6hxB.jpg",
     videoUrl: "537061",
     overview: "Two years after bringing peace to the galaxy, sixteen-year-old Steven Universe believes his time as a defender of Earth is done, looking forward to enjoying a quiet life with the Crystal Gems. However, a mysterious, vengeful Gem named Spinel arrives in Beach City wielding a giant injector that threatens to poison all organic life on Earth and reset the Gems' memories. Steven must embarking on a quest to help his friends recover their memories and save the planet.",
     director: "Rebecca Sugar",
