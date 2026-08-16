@@ -11295,7 +11295,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/c90Lt7OQGsOmhv6x4JoFdoHzw5l.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/okDSa60ahO3emo5M6N5lUtkUZmc.jpg",
     videoUrl: "1011477",
-    overview: "A disgraced warrior named Raiden rises up against a corrupt and sadistic minister to avenge his fallen master, Lord Bartok. After Bartok is unjustly executed for defying the empire's bribery and corruption, Raiden and his loyal band of knights launch a daring siege on the minister's heavily fortified stronghold to restore their honor.",
+    overview: "Martial arts prodigy Li Fong leaves Beijing to move to New York City with his mother, struggling to adapt to a new life while navigating local martial arts conflicts. Guided by his wise mentor Mr. Han and legendary Sensei Daniel LaRusso, Li Fong must unite two distinct martial arts philosophies to face a formidable opponent on the ultimate stage.",
     director: "Kazuaki Kiriya",
     cast: ["Clive Owen, Morgan Freeman, Cliff Curtis, Aksel Hennie, Shohreh Aghdashloo, Peyman Maadi, Ayelet Zurer"],
     trending: false, // Leave false so it only shows up in the Genres tab
