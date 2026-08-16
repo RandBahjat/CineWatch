@@ -11268,6 +11268,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Last Knights",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2015,
+    rating: 6.2,
+    age: "R",
+    duration: "1h 55m",
+    genres: ["Action","Adventure","Biography","Drama","History"],
+    poster: "https://image.tmdb.org/t/p/original/jE5o7y9K6pZtWNNMEw3IdpHuncR.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/8dR0DXJ24BwWXRuMrFH1hbVLC5X.jpg",
+    videoUrl: "753342",
+    overview: "A sweeping historical epic capturing Napoleon Bonaparte's swift, ruthless rise from army officer to French Emperor. The story traces his tactical genius across famous military campaigns while exploring his volatile, deeply addictive relationship with his wife and one true love, Josephine.",
+    director: "Ridley Scott",
+    cast: ["Joaquin Phoenix, Vanessa Kirby, Tahar Rahim, Rupert Everett, Mark Bonnar, Paul Rhys"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
