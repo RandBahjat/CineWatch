@@ -11189,7 +11189,7 @@ const MOVIES = [
     rating: 7.6,
     age: "R",
     duration: "2h 41m",
-    genres: ["Action","Comedy","Crime", "Drama", "Thriller"],
+    genres: ["Action","Comedy","Crime", "Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/tVvpFIoteRHNnoZMhdnwIVwJpCA.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zvGMwQ1mAFrxSzzMFT9WMEl6hxB.jpg",
     videoUrl: "1171145",
