@@ -1987,16 +1987,6 @@ select {
   pointer-events: none;
 }
 
-/* In iframe mode: show the controls bar but hide everything except the fullscreen button */
-.video-container.is-iframe #playerControlsBar .player-progress-row,
-.video-container.is-iframe #playerControlsBar .controls-left,
-.video-container.is-iframe #playerControlsBar .player-info-area {
-  display: none !important;
-}
-.video-container.is-iframe #playerControlsBar .controls-right {
-  margin-left: auto;
-}
-
 
 /* Seek Container */
 .seek-container {
