@@ -11258,7 +11258,7 @@ const MOVIES = [
     age: "R",
     duration: "2h 38m",
     genres: ["Action","Adventure","Biography","Drama","History"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/2cxhvwyEwRlysAmRH4iodkvo0z5.jpg",
+    poster: "https://image.tmdb.org/t/p/original/jE5o7y9K6pZtWNNMEw3IdpHuncR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8mjYwWT50GkRrrRdyHzJorfEfcl.jpg",
     videoUrl: "558449",
     overview: "Years after witnessing the death of Maximus at the hands of his uncle, Lucius lives with his wife and child in Numidia. When Roman soldiers led by General Marcus Acacius invade his home and take him captive, Lucius is forced to fight as a gladiator in the Colosseum. Driven by rage and guided by the shadow of his past, he must look to his history to find strength and restore glory to Rome.",
