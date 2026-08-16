@@ -11217,6 +11217,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Gladiator",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2000,
+    rating: 8.5,
+    age: "R",
+    duration: "2h 45m",
+    genres: ["Drama","Western"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/s4cJQaj40SwMifUrrdtdOJsjnRO.jpg",
+    videoUrl: "68718",
+    overview: "Two years before the Civil War, an enslaved man named Django is freed by Dr. King Schultz, an eccentric German bounty hunter who needs his help to track down the murderous Brittle brothers. After a successful winter hunting criminals together, Schultz agrees to help Django rescue his wife, Broomhilda, from Calvin Candie, a charming yet brutal Mississippi plantation owner who forces enslaved men to fight to the death.",
+    director: "Quentin Tarantino",
+    cast: ["Jamie Foxx, Christoph Waltz, Leonardo DiCaprio, Kerry Washington, Samuel L. Jackson, Walton Goggins, Don Johnson"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
