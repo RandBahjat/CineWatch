@@ -11322,7 +11322,7 @@ const MOVIES = [
     title: "Mr. Nice Guy",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 1997,
-    rating: 5.4,
+    rating: 6.3,
     age: "PG-13",
     duration: "1h 38m",
     genres: ["Action","Comedy","Sci-Fi"],
