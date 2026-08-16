@@ -23641,8 +23641,6 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     document.querySelector(".video-container")?.classList.remove("is-iframe");
     video.classList.remove("hidden");
     controlsBar.classList.remove("hidden");
-    const iframeFsBtn = document.getElementById("iframeFullscreenBtn");
-    if (iframeFsBtn) iframeFsBtn.classList.add("hidden");
     if (centerOverlay) centerOverlay.style.display = "";
     video.src = movie.videoUrl;
 
@@ -25036,16 +25034,6 @@ function bindEventListeners() {
     });
   }
 
-  const iframeFullscreenBtn = document.getElementById("iframeFullscreenBtn");
-  if (iframeFullscreenBtn && !iframeFullscreenBtn.dataset.fsBound) {
-    iframeFullscreenBtn.dataset.fsBound = "1";
-    iframeFullscreenBtn.addEventListener("mousedown", (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      toggleFullscreen();
-    });
-  }
-
   ["fullscreenchange", "webkitfullscreenchange"].forEach((evt) => {
     document.addEventListener(evt, updateFullscreenIcon);
   });
@@ -25191,9 +25179,9 @@ function updateIframeServer() {
 
   let newUrl = "";
   if (data.type === "tv") {
-    newUrl = `https://player.videasy.net/tv/${data.id}/${data.season}/${data.episode}?episodeSelector=true&overlay=true`;
+    newUrl = `https://player.videasy.net/tv/${data.id}/${data.season}/${data.episode}?episodeSelector=true`;
   } else {
-    newUrl = `https://player.videasy.net/movie/${data.id}?overlay=true`;
+    newUrl = `https://player.videasy.net/movie/${data.id}`;
   }
   iframe.src = newUrl;
 }
