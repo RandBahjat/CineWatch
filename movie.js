@@ -11328,8 +11328,8 @@ const MOVIES = [
     genres: ["Action","Comedy","Crime"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wAAt2gvbkbeefzjd06GPfkdfUho.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7VwHKpOgVrOwOfHlGzDZYtH7dfP.jpg",
-    videoUrl: "10771",
-    overview: "Jimmy Tong is a humble taxi driver turned chauffeur for a secretive billionaire secret agent. When his employer is hospitalized after an attack, Jimmy accidentally tries on his boss's high-tech, multi-million dollar tuxedo, discovering that it grants its wearer extraordinary martial arts skills, speed, and gadgets. Partnered with a novice CSA agent, Jimmy must step into his boss's shoes to stop a dangerous mastermind from poisoning the global water supply.",
+    videoUrl: "10622",
+    overview: "A celebrity TV chef named Jackie accidentally ends up with a videotape containing evidence of a bloody drug deal involving a ruthless mob boss and a rival street gang. When the mobsters go after the investigative reporter who shot the video, Jackie gets dragged into a frantic game of cat-and-mouse across Melbourne as he uses his incredible martial arts skills to protect his girlfriend and defeat both criminal factions.",
     director: "Kevin Donovan",
     cast: ["Jackie Chan, Jennifer Love Hewitt, Jason Isaacs, Debi Mazar, Ritchie Coster, Peter Stormare"],
     trending: false, // Leave false so it only shows up in the Genres tab
