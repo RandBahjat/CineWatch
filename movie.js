@@ -25083,21 +25083,27 @@ function bindEventListeners() {
  * Works for both the native <video> player and iframe embeds.
  */
 function toggleFullscreen() {
-  const container = document.querySelector(".video-container");
+  // Use the outermost modal overlay so the Fullscreen API works correctly.
+  // Requesting fullscreen on an inner child of a position:fixed element
+  // causes browsers to silently reject the request.
+  const fsTarget =
+    document.getElementById("videoModal") ||
+    document.querySelector(".video-container");
+
   const isFullscreen =
     document.fullscreenElement ||
     document.webkitFullscreenElement ||
     document.msFullscreenElement;
 
   if (!isFullscreen) {
-    if (container.requestFullscreen) {
-      container.requestFullscreen().catch((err) =>
+    if (fsTarget.requestFullscreen) {
+      fsTarget.requestFullscreen().catch((err) =>
         console.error("Fullscreen error:", err)
       );
-    } else if (container.webkitRequestFullscreen) {
-      container.webkitRequestFullscreen();
-    } else if (container.msRequestFullscreen) {
-      container.msRequestFullscreen();
+    } else if (fsTarget.webkitRequestFullscreen) {
+      fsTarget.webkitRequestFullscreen();
+    } else if (fsTarget.msRequestFullscreen) {
+      fsTarget.msRequestFullscreen();
     }
   } else {
     if (document.exitFullscreen) {
