@@ -11228,7 +11228,7 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/jhk6D8pim3yaByu1801kMoxXFaX.jpg",
     videoUrl: "98",
     overview: "A powerful Roman general, Maximus Decimus Meridius, is betrayed when the jealous heir to the throne, Commodus, murders his father Emperor Marcus Aurelius and seizes power. Reduced to slavery and forced into the arena as a gladiator, Maximus rises through the ranks, fighting his way back to Rome to avenge the murder of his family and overthrow the tyrant Emperor.",
-    director: "Quentin Tarantino",
+    director: "Ridley Scott",
     cast: ["Jamie Foxx, Christoph Waltz, Leonardo DiCaprio, Kerry Washington, Samuel L. Jackson, Walton Goggins, Don Johnson"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
