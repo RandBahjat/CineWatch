@@ -25084,7 +25084,7 @@ function bindEventListeners() {
     if (videoModal && !videoModal.classList.contains("hidden")) {
       idleTimer = setTimeout(() => {
         videoContainer.classList.add("idle");
-      }, 2500); // 2.5 seconds inactivity
+      }, 4000); // 4 seconds inactivity to match native player fade out
     }
   }
 
