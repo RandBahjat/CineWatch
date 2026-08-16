@@ -11285,6 +11285,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Karate Kid: Legends",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2025,
+    rating: 6.3,
+    age: "R",
+    duration: "1h 55m",
+    genres: ["Action","Drama","History"],
+    poster: "https://image.tmdb.org/t/p/original/uGqlk7Hu8FRLVDcFZ16NxTy09ZE.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/sZjoT5ModAl6THs3qFbMlHRVbnC.jpg",
+    videoUrl: "308504",
+    overview: "A disgraced warrior named Raiden rises up against a corrupt and sadistic minister to avenge his fallen master, Lord Bartok. After Bartok is unjustly executed for defying the empire's bribery and corruption, Raiden and his loyal band of knights launch a daring siege on the minister's heavily fortified stronghold to restore their honor.",
+    director: "Kazuaki Kiriya",
+    cast: ["Clive Owen, Morgan Freeman, Cliff Curtis, Aksel Hennie, Shohreh Aghdashloo, Peyman Maadi, Ayelet Zurer"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
