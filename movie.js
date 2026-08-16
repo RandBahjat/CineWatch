@@ -21617,7 +21617,7 @@ const MOVIES = [
           { episode: 17, title: "Homeworld Bound" },
           { episode: 18, title: "Everything's Fine" },
           { episode: 19, title: "I Am My Monster" },
-          { episode: 20, title: "Everybody Likes Rad?" },
+          { episode: 20, title: "The Future" },
         ]
       }
     ]
