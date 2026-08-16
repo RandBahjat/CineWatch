@@ -928,7 +928,7 @@ select {
 }
 
 .hero-meta .star-icon {
-  color: var(--primary);
+  color: var(--gold, #f5c518);
   font-size: var(--font-size-sm);
 }
 
