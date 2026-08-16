@@ -23533,6 +23533,8 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     if (iframe) {
       iframe.classList.remove("hidden");
       document.querySelector(".video-container")?.classList.add("is-iframe");
+      const iframeFsBtn = document.getElementById("iframeFullscreenBtn");
+      if (iframeFsBtn) iframeFsBtn.classList.remove("hidden");
       if (window.currentIframeData) {
         updateIframeServer(); // Sets the src based on selected server
       } else {
