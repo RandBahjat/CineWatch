@@ -11302,9 +11302,9 @@ const MOVIES = [
     featured: false,
   },
   {
-    title: "Karate Kid: Legends",
+    title: "The Tuxedo",
     type: "Movie", // Use "Movie" or "TV Show"
-    year: 2025,
+    year: 2002,
     rating: 6.3,
     age: "PG-13",
     duration: "1h 34m",
