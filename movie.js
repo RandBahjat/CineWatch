@@ -25041,11 +25041,13 @@ function bindEventListeners() {
   const iframeFullscreenBtn = document.getElementById("iframeFullscreenBtn");
   if (iframeFullscreenBtn && !iframeFullscreenBtn.dataset.fsBound) {
     iframeFullscreenBtn.dataset.fsBound = "1";
-    iframeFullscreenBtn.addEventListener("mousedown", (e) => {
+    const fsHandler = (e) => {
       e.preventDefault();
       e.stopPropagation();
       toggleFullscreen();
-    });
+    };
+    iframeFullscreenBtn.addEventListener("click", fsHandler);
+    iframeFullscreenBtn.addEventListener("touchend", fsHandler);
   }
 
   ["fullscreenchange", "webkitfullscreenchange"].forEach((evt) => {
