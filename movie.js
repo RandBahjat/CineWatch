@@ -11246,7 +11246,7 @@ const MOVIES = [
     videoUrl: "558449",
     overview: "Years after witnessing the death of Maximus at the hands of his uncle, Lucius lives with his wife and child in Numidia. When Roman soldiers led by General Marcus Acacius invade his home and take him captive, Lucius is forced to fight as a gladiator in the Colosseum. Driven by rage and guided by the shadow of his past, he must look to his history to find strength and restore glory to Rome.",
     director: "Ridley Scott",
-    cast: ["Russell Crowe, Joaquin Phoenix, Connie Nielsen, Oliver Reed, Richard Harris, Derek Jacobi, Djimon Hounsou"],
+    cast: ["Paul Mescal, Pedro Pascal, Denzel Washington, Connie Nielsen, Joseph Quinn, Fred Hechinger"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
