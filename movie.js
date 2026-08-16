@@ -10643,7 +10643,7 @@ const MOVIES = [
     videoUrl: "537061",
     overview: "Two years after bringing peace to the galaxy, sixteen-year-old Steven Universe believes his time as a defender of Earth is done, looking forward to enjoying a quiet life with the Crystal Gems. However, a mysterious, vengeful Gem named Spinel arrives in Beach City wielding a giant injector that threatens to poison all organic life on Earth and reset the Gems' memories. Steven must embarking on a quest to help his friends recover their memories and save the planet.",
     director: "Rebecca Sugar",
-    cast: ["Jason Statham, Bodhi Sabongui, Naomi Ackie, Bill Nighy"],
+    cast: ["Zach Callison, Estelle, Michaela Dietz, Deedee Magno Hall, Sarah Stiles, Christine Ebersole, Patti LuPone, Lisa Hannigan"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
