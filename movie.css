@@ -1307,6 +1307,9 @@ select {
   box-shadow: 0 6px 25px rgba(255, 255, 255, 0.6);
 }
 
+.iframe-fullscreen-hack { position: absolute; bottom: 8px; right: 8px; width: 45px; height: 45px; z-index: 100; opacity: 0; cursor: pointer; border: none; background: transparent; }
+.video-container.idle .iframe-fullscreen-hack { pointer-events: none; }
+
 .card-details {
   position: absolute;
   bottom: 0;
