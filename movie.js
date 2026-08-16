@@ -21589,7 +21589,7 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/e5UakgeJsTBKtjxEURpg6hcohqX.jpg",
     videoUrl: "72693",
     overview: "With the war against Homeworld won and Earth finally safe, Steven Universe should be able to relax into a peaceful new chapter of his life. Instead, unresolved trauma from his years of saving the world begins to surface, forcing him to confront the emotional toll of his upbringing and figure out who he is outside of being everyone's hero — while also dealing with a whole new set of Gem-related crises along the way.",
-    director: "Ian Jones-Quartey",
+    director: "Rebecca Sugar",
     cast: ["Courtenay Taylor", "Ashly Burch", "Ian Jones-Quartey", "David Herman"],
     trending: false,
     featured: false,
