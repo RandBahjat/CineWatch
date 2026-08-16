@@ -11195,7 +11195,7 @@ const MOVIES = [
     videoUrl: "1054867",
     overview: "Washed-up former radical revolutionary Ghetto Pat Calhoun—now living off-grid under the alias Bob Ferguson—spends his days in a state of paranoid, marijuana-fueled isolation alongside his self-reliant teenage daughter, Willa. When his ruthless former nemesis, Colonel Steven J. Lockjaw, resurfaces sixteen years later to hunt them down, Bob is forced back into action, reuniting with his old allies to rescue Willa and confront the ghost of their past.",
     director: "Paul Thomas Anderson",
-    cast: ["Chris Hemsworth, Mark Ruffalo, Halle Berry, Barry Keoghan, Monica Barbaro"],
+    cast: ["Leonardo DiCaprio, Sean Penn, Benicio del Toro, Regina Hall, Teyana Taylor, Chase Infiniti"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
