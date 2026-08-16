@@ -11229,7 +11229,7 @@ const MOVIES = [
     videoUrl: "98",
     overview: "A powerful Roman general, Maximus Decimus Meridius, is betrayed when the jealous heir to the throne, Commodus, murders his father Emperor Marcus Aurelius and seizes power. Reduced to slavery and forced into the arena as a gladiator, Maximus rises through the ranks, fighting his way back to Rome to avenge the murder of his family and overthrow the tyrant Emperor.",
     director: "Ridley Scott",
-    cast: ["Jamie Foxx, Christoph Waltz, Leonardo DiCaprio, Kerry Washington, Samuel L. Jackson, Walton Goggins, Don Johnson"],
+    cast: ["Russell Crowe, Joaquin Phoenix, Connie Nielsen, Oliver Reed, Richard Harris, Derek Jacobi, Djimon Hounsou"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
