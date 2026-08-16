@@ -10639,7 +10639,7 @@ const MOVIES = [
     duration: "44m",
     genres: ["Drama", "Mystery", "Medical"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/3Cz7ySOQJmqiuTdrc6CY0r65yDI.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/9KX4LN4KuQmKALhF1pYSh6BNYGw.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/rr6tcoprk8aDtEyrBRmEX2buk9T.jpg",
     videoUrl: "1408",
     overview: "Dr. Gregory House, a maverick, misanthropic medical genius, leads a team of diagnosticians at Princeton–Plainsboro Teaching Hospital. Brilliant but troubled, House bends rules and minds to crack the most baffling medical mysteries — all while battling his own demons and a chronic pain addiction.",
     director: "David Shore",
