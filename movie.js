@@ -10641,7 +10641,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8mRgpubxHqnqvENK4Bei30xMDvy.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/re3ZvlKJg04iLpLRf1xTKHS2wLU.jpg",
     videoUrl: "537061",
-    overview: "A reclusive, highly skilled operative living off the grid on a remote island is thrust back into action when a young girl seeking refuge from a ruthless criminal syndicate arrives on his doorstep. Forced to emerge from isolation, he must use his specialized lethal skills to protect her and eliminate the mercenaries hunting them down.",
+    overview: "Two years after bringing peace to the galaxy, sixteen-year-old Steven Universe believes his time as a defender of Earth is done, looking forward to enjoying a quiet life with the Crystal Gems. However, a mysterious, vengeful Gem named Spinel arrives in Beach City wielding a giant injector that threatens to poison all organic life on Earth and reset the Gems' memories. Steven must embarking on a quest to help his friends recover their memories and save the planet.",
     director: "Ric Roman Waugh",
     cast: ["Jason Statham, Bodhi Sabongui, Naomi Ackie, Bill Nighy"],
     trending: false, // Leave false so it only shows up in the Genres tab
