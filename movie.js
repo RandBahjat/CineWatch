@@ -21580,7 +21580,7 @@ const MOVIES = [
   {
     title: "Steven Universe Future",
     type: "TV Show",
-    year: 2017,
+    year: 2019,
     rating: 6.9,
     age: "TV-Y7-FV",
     duration: "15m",
