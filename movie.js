@@ -11263,7 +11263,7 @@ const MOVIES = [
     videoUrl: "753342",
     overview: "A sweeping historical epic capturing Napoleon Bonaparte's swift, ruthless rise from army officer to French Emperor. The story traces his tactical genius across famous military campaigns while exploring his volatile, deeply addictive relationship with his wife and one true love, Josephine.",
     director: "Ridley Scott",
-    cast: ["Paul Mescal, Pedro Pascal, Denzel Washington, Connie Nielsen, Joseph Quinn, Fred Hechinger"],
+    cast: ["Joaquin Phoenix, Vanessa Kirby, Tahar Rahim, Rupert Everett, Mark Bonnar, Paul Rhys"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
