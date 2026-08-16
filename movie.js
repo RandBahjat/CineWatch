@@ -11305,9 +11305,9 @@ const MOVIES = [
     title: "The Tuxedo",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2002,
-    rating: 6.3,
+    rating: 5.4,
     age: "PG-13",
-    duration: "1h 34m",
+    duration: "1h 38m",
     genres: ["Action","Drama","Sport"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/c90Lt7OQGsOmhv6x4JoFdoHzw5l.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/okDSa60ahO3emo5M6N5lUtkUZmc.jpg",
