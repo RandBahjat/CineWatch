@@ -23478,6 +23478,8 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     serverWrap.classList.add("hidden");
     video.classList.remove("hidden");
     controlsBar.classList.remove("hidden");
+    const iframeFsBtn = document.getElementById("iframeFullscreenBtn");
+    if (iframeFsBtn) iframeFsBtn.classList.add("hidden");
 
     if (centerOverlay) {
       centerOverlay.innerHTML = '<ion-icon name="play-outline"></ion-icon>';
