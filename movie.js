@@ -11227,7 +11227,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wN2xWp1eIwCKOD0BHTcErTBv1Uq.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/jhk6D8pim3yaByu1801kMoxXFaX.jpg",
     videoUrl: "98",
-    overview: "Two years before the Civil War, an enslaved man named Django is freed by Dr. King Schultz, an eccentric German bounty hunter who needs his help to track down the murderous Brittle brothers. After a successful winter hunting criminals together, Schultz agrees to help Django rescue his wife, Broomhilda, from Calvin Candie, a charming yet brutal Mississippi plantation owner who forces enslaved men to fight to the death.",
+    overview: "A powerful Roman general, Maximus Decimus Meridius, is betrayed when the jealous heir to the throne, Commodus, murders his father Emperor Marcus Aurelius and seizes power. Reduced to slavery and forced into the arena as a gladiator, Maximus rises through the ranks, fighting his way back to Rome to avenge the murder of his family and overthrow the tyrant Emperor.",
     director: "Quentin Tarantino",
     cast: ["Jamie Foxx, Christoph Waltz, Leonardo DiCaprio, Kerry Washington, Samuel L. Jackson, Walton Goggins, Don Johnson"],
     trending: false, // Leave false so it only shows up in the Genres tab
