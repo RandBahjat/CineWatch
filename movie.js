@@ -11234,12 +11234,12 @@ const MOVIES = [
     featured: false,
   },
   {
-    title: "Gladiator",
+    title: "Gladiator II",
     type: "Movie", // Use "Movie" or "TV Show"
-    year: 2000,
-    rating: 8.5,
+    year: 2024,
+    rating: 6.4,
     age: "R",
-    duration: "2h 35m",
+    duration: "2h 28m",
     genres: ["Action","Adventure","Drama"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wN2xWp1eIwCKOD0BHTcErTBv1Uq.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/jhk6D8pim3yaByu1801kMoxXFaX.jpg",
