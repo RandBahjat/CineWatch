@@ -11206,7 +11206,7 @@ const MOVIES = [
     rating: 8.5,
     age: "R",
     duration: "2h 45m",
-    genres: ["Drama","Western","Crime", "Thriller"],
+    genres: ["Drama","Western"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zpEWFNqoN8Qg1SzMMHmaGyOBTdW.jpg",
     videoUrl: "1054867",
