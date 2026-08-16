@@ -25041,9 +25041,7 @@ function bindEventListeners() {
   const iframeFullscreenBtn = document.getElementById("iframeFullscreenBtn");
   if (iframeFullscreenBtn && !iframeFullscreenBtn.dataset.fsBound) {
     iframeFullscreenBtn.dataset.fsBound = "1";
-    const fsHandler = (e) => {
-      e.preventDefault();
-      e.stopPropagation();
+    const fsHandler = () => {
       toggleFullscreen();
     };
     iframeFullscreenBtn.addEventListener("click", fsHandler);
