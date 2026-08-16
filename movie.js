@@ -11254,7 +11254,7 @@ const MOVIES = [
     title: "Napoleon",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2023,
-    rating: 6.4,
+    rating: 6.3,
     age: "R",
     duration: "2h 28m",
     genres: ["Action","Adventure","Drama"],
