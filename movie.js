@@ -11172,7 +11172,7 @@ const MOVIES = [
     rating: 6.8,
     age: "R",
     duration: "2h 20m",
-    genres: ["Crime","Drama","Thriller", "Sci-Fi","Musical"],
+    genres: ["Crime","Drama","Thriller"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8mRgpubxHqnqvENK4Bei30xMDvy.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/re3ZvlKJg04iLpLRf1xTKHS2wLU.jpg",
     videoUrl: "537061",
