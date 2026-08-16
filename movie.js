@@ -11261,7 +11261,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/jE5o7y9K6pZtWNNMEw3IdpHuncR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8dR0DXJ24BwWXRuMrFH1hbVLC5X.jpg",
     videoUrl: "753342",
-    overview: "Years after witnessing the death of Maximus at the hands of his uncle, Lucius lives with his wife and child in Numidia. When Roman soldiers led by General Marcus Acacius invade his home and take him captive, Lucius is forced to fight as a gladiator in the Colosseum. Driven by rage and guided by the shadow of his past, he must look to his history to find strength and restore glory to Rome.",
+    overview: "A sweeping historical epic capturing Napoleon Bonaparte's swift, ruthless rise from army officer to French Emperor. The story traces his tactical genius across famous military campaigns while exploring his volatile, deeply addictive relationship with his wife and one true love, Josephine.",
     director: "Ridley Scott",
     cast: ["Paul Mescal, Pedro Pascal, Denzel Washington, Connie Nielsen, Joseph Quinn, Fred Hechinger"],
     trending: false, // Leave false so it only shows up in the Genres tab
