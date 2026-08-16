@@ -11244,7 +11244,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/2cxhvwyEwRlysAmRH4iodkvo0z5.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8mjYwWT50GkRrrRdyHzJorfEfcl.jpg",
     videoUrl: "558449",
-    overview: "A powerful Roman general, Maximus Decimus Meridius, is betrayed when the jealous heir to the throne, Commodus, murders his father Emperor Marcus Aurelius and seizes power. Reduced to slavery and forced into the arena as a gladiator, Maximus rises through the ranks, fighting his way back to Rome to avenge the murder of his family and overthrow the tyrant Emperor.",
+    overview: "Years after witnessing the death of Maximus at the hands of his uncle, Lucius lives with his wife and child in Numidia. When Roman soldiers led by General Marcus Acacius invade his home and take him captive, Lucius is forced to fight as a gladiator in the Colosseum. Driven by rage and guided by the shadow of his past, he must look to his history to find strength and restore glory to Rome.",
     director: "Ridley Scott",
     cast: ["Russell Crowe, Joaquin Phoenix, Connie Nielsen, Oliver Reed, Richard Harris, Derek Jacobi, Djimon Hounsou"],
     trending: false, // Leave false so it only shows up in the Genres tab
