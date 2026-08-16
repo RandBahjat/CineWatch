@@ -10637,7 +10637,7 @@ const MOVIES = [
     rating: 7.7,
     age: "TV-PG",
     duration: "1h 22m",
-    genres: ["Action","A", "Sci-Fi"],
+    genres: ["Action","Animation","Adventure", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/buPFnHZ3xQy6vZEHxbHgL1Pc6CR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/4ovxVsrV8RM7zzH1RJo5t94iVIC.jpg",
     videoUrl: "1290821",
