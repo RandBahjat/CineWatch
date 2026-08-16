@@ -21581,7 +21581,7 @@ const MOVIES = [
     title: "Steven Universe Future",
     type: "TV Show",
     year: 2019,
-    rating: 6.9,
+    rating: 7.7,
     age: "TV-Y7-FV",
     duration: "15m",
     genres: ["Animation", "Comedy", "Kids"],
