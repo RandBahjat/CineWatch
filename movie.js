@@ -11327,7 +11327,7 @@ const MOVIES = [
     duration: "1h 28m",
     genres: ["Action","Comedy","Crime"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wAAt2gvbkbeefzjd06GPfkdfUho.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/onuK2cUJuTU7xqX9ErdojzBSu7J.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/7VwHKpOgVrOwOfHlGzDZYtH7dfP.jpg",
     videoUrl: "10771",
     overview: "Jimmy Tong is a humble taxi driver turned chauffeur for a secretive billionaire secret agent. When his employer is hospitalized after an attack, Jimmy accidentally tries on his boss's high-tech, multi-million dollar tuxedo, discovering that it grants its wearer extraordinary martial arts skills, speed, and gadgets. Partnered with a novice CSA agent, Jimmy must step into his boss's shoes to stop a dangerous mastermind from poisoning the global water supply.",
     director: "Kevin Donovan",
