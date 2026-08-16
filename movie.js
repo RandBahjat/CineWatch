@@ -11183,6 +11183,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "One Battle After Another",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2025,
+    rating: 7.6,
+    age: "R",
+    duration: "2h 20m",
+    genres: ["Crime", "Drama", "Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/tVvpFIoteRHNnoZMhdnwIVwJpCA.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/zvGMwQ1mAFrxSzzMFT9WMEl6hxB.jpg",
+    videoUrl: "1171145",
+    overview: "Based on Don Winslow's acclaimed novella, a series of high-stakes jewel robberies take place along the Pacific Coast, all linked by a strict personal code known as Crime 101. While local police attribute the elaborate heists to Colombian drug cartels, a relentless detective refuses to follow conventional wisdom and zeroes in on a single, meticulous master thief planning his ultimate final score.",
+    director: "Bart Layton",
+    cast: ["Chris Hemsworth, Mark Ruffalo, Halle Berry, Barry Keoghan, Monica Barbaro"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
