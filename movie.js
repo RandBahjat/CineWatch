@@ -11200,6 +11200,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Django Unchained",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2012,
+    rating: 7.6,
+    age: "R",
+    duration: "2h 41m",
+    genres: ["Action","Comedy","Crime", "Thriller"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/zpEWFNqoN8Qg1SzMMHmaGyOBTdW.jpg",
+    videoUrl: "1054867",
+    overview: "Washed-up former radical revolutionary Ghetto Pat Calhoun—now living off-grid under the alias Bob Ferguson—spends his days in a state of paranoid, marijuana-fueled isolation alongside his self-reliant teenage daughter, Willa. When his ruthless former nemesis, Colonel Steven J. Lockjaw, resurfaces sixteen years later to hunt them down, Bob is forced back into action, reuniting with his old allies to rescue Willa and confront the ghost of their past.",
+    director: "Paul Thomas Anderson",
+    cast: ["Leonardo DiCaprio, Sean Penn, Benicio del Toro, Regina Hall, Teyana Taylor, Chase Infiniti"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
