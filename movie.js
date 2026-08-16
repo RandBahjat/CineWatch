@@ -23515,8 +23515,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   else {
     video.classList.add("hidden");
     controlsBar.classList.add("hidden");
-    const iframeFsBtn = document.getElementById("iframeFullscreenBtn");
-    if (iframeFsBtn) iframeFsBtn.classList.remove("hidden");
+
     if (centerOverlay) centerOverlay.style.display = "none";
     serverWrap.classList.remove("hidden");
     if (isTvEmbed) {
@@ -23670,8 +23669,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     // IFRAME FALLBACK
     video.classList.add("hidden");
     controlsBar.classList.add("hidden");
-    const iframeFsBtn = document.getElementById("iframeFullscreenBtn");
-    if (iframeFsBtn) iframeFsBtn.classList.remove("hidden");
+
     if (centerOverlay) centerOverlay.style.display = "none";
     serverWrap.classList.remove("hidden");
     if (isNumericId) {
