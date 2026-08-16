@@ -10631,6 +10631,23 @@ const MOVIES = [
     featured: false,
   },
   {
+    title: "Steven Universe: The Movie",
+    type: "Movie", // Use "Movie" or "TV Show"
+    year: 2026,
+    rating: 6.1,
+    age: "R",
+    duration: "1h 47m",
+    genres: ["Action", "Sci-Fi"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/buPFnHZ3xQy6vZEHxbHgL1Pc6CR.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/4ovxVsrV8RM7zzH1RJo5t94iVIC.jpg",
+    videoUrl: "1290821",
+    overview: "A reclusive, highly skilled operative living off the grid on a remote island is thrust back into action when a young girl seeking refuge from a ruthless criminal syndicate arrives on his doorstep. Forced to emerge from isolation, he must use his specialized lethal skills to protect her and eliminate the mercenaries hunting them down.",
+    director: "Ric Roman Waugh",
+    cast: ["Jason Statham, Bodhi Sabongui, Naomi Ackie, Bill Nighy"],
+    trending: false, // Leave false so it only shows up in the Genres tab
+    featured: false,
+  },
+  {
     title: "Spider Noir",
     type: "TV Show",
     year: 2026,
