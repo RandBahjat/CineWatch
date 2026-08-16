@@ -1987,6 +1987,10 @@ select {
   pointer-events: none;
 }
 
+.video-container:not(.idle) .player-bottom-area .ctrl-btn {
+  pointer-events: auto;
+}
+
 
 /* Seek Container */
 .seek-container {

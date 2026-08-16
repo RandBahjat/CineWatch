@@ -23838,7 +23838,6 @@ function setupVideoControls(video) {
   const currentTimeText = document.getElementById("currentTimeText");
   const durationText = document.getElementById("durationText");
   const speedSelect = document.getElementById("speedSelect");
-  const fullscreenBtn = document.getElementById("fullscreenBtn");
   const centerOverlay = document.getElementById("videoCenterOverlay");
   const centerPlayIcon = document.getElementById("centerPlayIcon");
 
