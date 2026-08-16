@@ -25175,9 +25175,9 @@ function updateIframeServer() {
 
   let newUrl = "";
   if (data.type === "tv") {
-    newUrl = `https://player.videasy.net/tv/${data.id}/${data.season}/${data.episode}`;
+    newUrl = `https://player.videasy.net/tv/${data.id}/${data.season}/${data.episode}?episodeSelector=true&overlay=true`;
   } else {
-    newUrl = `https://player.videasy.net/movie/${data.id}`;
+    newUrl = `https://player.videasy.net/movie/${data.id}?overlay=true`;
   }
   iframe.src = newUrl;
 }
