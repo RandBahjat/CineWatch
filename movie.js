@@ -21615,8 +21615,8 @@ const MOVIES = [
           { episode: 15, title: "Mr. Universe" },
           { episode: 16, title: "Fragments" },
           { episode: 17, title: "Homeworld Bound" },
-          { episode: 18, title: "We're Captured" },
-          { episode: 19, title: "Face Your Fears" },
+          { episode: 18, title: "Everything's Fine" },
+          { episode: 19, title: "I Am My Monster" },
           { episode: 20, title: "Everybody Likes Rad?" },
         ]
       }
