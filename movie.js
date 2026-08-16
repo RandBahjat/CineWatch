@@ -11292,7 +11292,7 @@ const MOVIES = [
     age: "PG-13",
     duration: "1h 34m",
     genres: ["Action","Drama","Sport"],
-    poster: "https://image.tmdb.org/t/p/original/uGqlk7Hu8FRLVDcFZ16NxTy09ZE.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/c90Lt7OQGsOmhv6x4JoFdoHzw5l.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/sZjoT5ModAl6THs3qFbMlHRVbnC.jpg",
     videoUrl: "308504",
     overview: "A disgraced warrior named Raiden rises up against a corrupt and sadistic minister to avenge his fallen master, Lord Bartok. After Bartok is unjustly executed for defying the empire's bribery and corruption, Raiden and his loyal band of knights launch a daring siege on the minister's heavily fortified stronghold to restore their honor.",
