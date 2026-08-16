@@ -11166,9 +11166,9 @@ const MOVIES = [
     featured: false,
   },
   {
-    title: "Steven Universe: The Movie",
+    title: "Crime 101",
     type: "Movie", // Use "Movie" or "TV Show"
-    year: 2019,
+    year: 2026,
     rating: 7.7,
     age: "TV-PG",
     duration: "1h 22m",
