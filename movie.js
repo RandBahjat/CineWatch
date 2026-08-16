@@ -11289,9 +11289,9 @@ const MOVIES = [
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2025,
     rating: 6.3,
-    age: "R",
-    duration: "1h 55m",
-    genres: ["Action","Drama","History"],
+    age: "PG-13",
+    duration: "1h 34m",
+    genres: ["Action","Drama","Sport"],
     poster: "https://image.tmdb.org/t/p/original/uGqlk7Hu8FRLVDcFZ16NxTy09ZE.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/sZjoT5ModAl6THs3qFbMlHRVbnC.jpg",
     videoUrl: "308504",
