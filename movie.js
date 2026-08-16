@@ -21588,7 +21588,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/WtYiQk6432J0jCi61UQzLFtCCX.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/e5UakgeJsTBKtjxEURpg6hcohqX.jpg",
     videoUrl: "72693",
-    overview: "OK K.O.! Let's Be Heroes is a world of original heroes across the TV and gaming landscape together with the greenlight of this action-packed comedy followed by the console and PC game jointly developed with indie video game studio Capybara games. The knockout series is inspired by creator Ian Jones-Quartey's childhood and follows the heroic feats of K.O., an endlessly optimistic boy attempting to level up to be the best he can be in a dynamic universe of heroes, friends and challenging foes.",
+    overview: "With the war against Homeworld won and Earth finally safe, Steven Universe should be able to relax into a peaceful new chapter of his life. Instead, unresolved trauma from his years of saving the world begins to surface, forcing him to confront the emotional toll of his upbringing and figure out who he is outside of being everyone's hero — while also dealing with a whole new set of Gem-related crises along the way.",
     director: "Ian Jones-Quartey",
     cast: ["Courtenay Taylor", "Ashly Burch", "Ian Jones-Quartey", "David Herman"],
     trending: false,
