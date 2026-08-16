@@ -25098,7 +25098,7 @@ function bindEventListeners() {
         // Short delay so clicks near the edge still register before controls disappear
         idleTimer = setTimeout(() => {
           videoContainer.classList.add("idle");
-        }, 300);
+        }, 2000);
       }
     });
   }
