@@ -23527,9 +23527,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
       serverWrap.classList.add("hidden");
     }
 
-    if (iframe) {
-      const iframeWrapper = document.getElementById("iframeWrapper");
-      if (iframeWrapper) iframeWrapper.classList.remove("hidden");
+      iframe.classList.remove("hidden");
       document.querySelector(".video-container")?.classList.add("is-iframe");
       if (window.currentIframeData) {
         updateIframeServer(); // Sets the src based on selected server
@@ -23678,9 +23676,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
       serverWrap.classList.add("hidden");
     }
 
-    if (iframe) {
-      const iframeWrapper = document.getElementById("iframeWrapper");
-      if (iframeWrapper) iframeWrapper.classList.remove("hidden");
+      iframe.classList.remove("hidden");
       document.querySelector(".video-container")?.classList.add("is-iframe");
       if (window.currentIframeData) {
         updateIframeServer();
