@@ -23527,6 +23527,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
       serverWrap.classList.add("hidden");
     }
 
+    if (iframe) {
       iframe.classList.remove("hidden");
       document.querySelector(".video-container")?.classList.add("is-iframe");
       if (window.currentIframeData) {
@@ -23676,6 +23677,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
       serverWrap.classList.add("hidden");
     }
 
+    if (iframe) {
       iframe.classList.remove("hidden");
       document.querySelector(".video-container")?.classList.add("is-iframe");
       if (window.currentIframeData) {
