@@ -23560,7 +23560,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     const firstEpisode = firstSeason.episodes[0];
     if (firstEpisode) {
       openVideoPlayerWithUrl(
-        firstEpisode.videoUrl || `tv:${movie.id}:${firstSeason.season}:${firstEpisode.episode}`,
+        firstEpisode.videoUrl || `tv_embed:${movie.id}:${firstSeason.season}:${firstEpisode.episode}`,
         `${movie.title} - S${firstSeason.season} E${firstEpisode.episode}`,
         movie.id,
         firstEpisode
