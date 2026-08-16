@@ -21608,7 +21608,7 @@ const MOVIES = [
           { episode: 8, title: "Why So Blue?" },
           { episode: 9, title: "Little Graduation" },
           { episode: 10, title: "Prickly Pair" },
-          { episode: 11, title: "You Get Me" },
+          { episode: 11, title: "In Dreams" },
           { episode: 12, title: "You Are Rad" },
           { episode: 13, title: "Just Be a Pebble" },
           { episode: 14, title: "Presenting Joe Cuppa" },
