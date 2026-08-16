@@ -10639,7 +10639,7 @@ const MOVIES = [
     duration: "1h 22m",
     genres: ["Action","Animation","Adventure", "Sci-Fi","Musical"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8mRgpubxHqnqvENK4Bei30xMDvy.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/4ovxVsrV8RM7zzH1RJo5t94iVIC.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/re3ZvlKJg04iLpLRf1xTKHS2wLU.jpg",
     videoUrl: "1290821",
     overview: "A reclusive, highly skilled operative living off the grid on a remote island is thrust back into action when a young girl seeking refuge from a ruthless criminal syndicate arrives on his doorstep. Forced to emerge from isolation, he must use his specialized lethal skills to protect her and eliminate the mercenaries hunting them down.",
     director: "Ric Roman Waugh",
