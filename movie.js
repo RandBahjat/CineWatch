@@ -23473,9 +23473,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   if (streamUrl || (!isNumericId && !isEmbedUrl)) {
     const finalUrl = streamUrl || videoUrl;
 
-    const iframeWrapper = document.getElementById("iframeWrapper");
-    if (iframeWrapper) { iframeWrapper.classList.add("hidden"); }
-    if (iframe) { iframe.src = ""; }
+    if (iframe) { iframe.classList.add("hidden"); iframe.src = ""; }
     document.querySelector(".video-container")?.classList.remove("is-iframe");
     serverWrap.classList.add("hidden");
     video.classList.remove("hidden");
@@ -23636,8 +23634,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     const finalUrl = streamUrl || movie.videoUrl;
 
     if (iframe) {
-      const iframeWrapper = document.getElementById("iframeWrapper");
-      if (iframeWrapper) iframeWrapper.classList.add("hidden");
+      iframe.classList.add("hidden");
       iframe.src = "";
     }
     document.querySelector(".video-container")?.classList.remove("is-iframe");
@@ -23793,7 +23790,7 @@ function closeVideoPlayer() {
       video.currentTime,
       video.duration,
     );
-  } else if (state.currentPlayingMovie && iframe && document.getElementById("iframeWrapper") && !document.getElementById("iframeWrapper").classList.contains("hidden") && iframe.src) {
+  } else if (state.currentPlayingMovie && iframe && !iframe.classList.contains("hidden") && iframe.src) {
     // Iframe embed (CineSrc etc.) — we can't read playback time from the iframe,
     // so save with a placeholder so the title appears in Continue Watching.
     const cwId = state.currentPlayingMovie.id;
