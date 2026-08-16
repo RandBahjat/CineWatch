@@ -23514,9 +23514,11 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   // 2. We failed to get a stream, fallback to IFRAME embed
   else {
     video.classList.add("hidden");
-    controlsBar.classList.remove("hidden");
+    controlsBar.classList.add("hidden");
     if (centerOverlay) centerOverlay.style.display = "none";
     serverWrap.classList.remove("hidden");
+    const fsBtn = document.getElementById("fullscreenBtn");
+    if (fsBtn) fsBtn.onclick = toggleFullscreen;
 
     if (isTvEmbed) {
       const parts = videoUrl.split(":");
@@ -23972,10 +23974,6 @@ function closeReportModal() {
 // ==========================================
 
 function bindEventListeners() {
-  // ── Fullscreen Button (permanent — works for both native video and iframe modes) ──
-  const _fsBtn = document.getElementById("fullscreenBtn");
-  if (_fsBtn) _fsBtn.onclick = () => toggleFullscreen();
-
   // Navigation Links
   document.querySelectorAll(".nav-link").forEach((link) => {
     link.onclick = (e) => {
