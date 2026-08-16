@@ -23478,8 +23478,6 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     serverWrap.classList.add("hidden");
     video.classList.remove("hidden");
     controlsBar.classList.remove("hidden");
-    const _ifsBtn1 = document.getElementById("iframeFullscreenBtn");
-    if (_ifsBtn1) _ifsBtn1.classList.add("hidden");
 
     if (centerOverlay) {
       centerOverlay.innerHTML = '<ion-icon name="play-outline"></ion-icon>';
@@ -23516,11 +23514,9 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   // 2. We failed to get a stream, fallback to IFRAME embed
   else {
     video.classList.add("hidden");
-    controlsBar.classList.add("hidden");
+    controlsBar.classList.remove("hidden");
     if (centerOverlay) centerOverlay.style.display = "none";
     serverWrap.classList.remove("hidden");
-    const _ifsBtn2 = document.getElementById("iframeFullscreenBtn");
-    if (_ifsBtn2) _ifsBtn2.classList.remove("hidden");
 
     if (isTvEmbed) {
       const parts = videoUrl.split(":");
