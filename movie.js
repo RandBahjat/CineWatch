@@ -21618,6 +21618,10 @@ const MOVIES = [
           { episode: 18, title: "We're Captured" },
           { episode: 19, title: "Face Your Fears" },
           { episode: 20, title: "Everybody Likes Rad?" },
+        ]
+      }
+    ]
+  },
   {
     title: "OK K.O.! Let's Be Heroes",
     type: "TV Show",
