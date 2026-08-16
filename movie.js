@@ -23640,6 +23640,8 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     document.querySelector(".video-container")?.classList.remove("is-iframe");
     video.classList.remove("hidden");
     controlsBar.classList.remove("hidden");
+    const iframeFsBtn = document.getElementById("iframeFullscreenBtn");
+    if (iframeFsBtn) iframeFsBtn.classList.add("hidden");
     if (centerOverlay) centerOverlay.style.display = "";
     video.src = movie.videoUrl;
 
@@ -25032,6 +25034,16 @@ function bindEventListeners() {
     });
   }
 
+  const iframeFullscreenBtn = document.getElementById("iframeFullscreenBtn");
+  if (iframeFullscreenBtn && !iframeFullscreenBtn.dataset.fsBound) {
+    iframeFullscreenBtn.dataset.fsBound = "1";
+    iframeFullscreenBtn.addEventListener("mousedown", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleFullscreen();
+    });
+  }
+
   ["fullscreenchange", "webkitfullscreenchange"].forEach((evt) => {
     document.addEventListener(evt, updateFullscreenIcon);
   });
@@ -25139,8 +25151,13 @@ function updateFullscreenIcon() {
     document.msFullscreenElement
   );
   const fsBtn = document.getElementById("fullscreenBtn");
-  if (!fsBtn) return;
-  fsBtn.innerHTML = `<ion-icon name="${isFs ? "contract-outline" : "expand-outline"}"></ion-icon>`;
+  if (fsBtn) {
+    fsBtn.innerHTML = `<ion-icon name="${isFs ? "contract-outline" : "expand-outline"}"></ion-icon>`;
+  }
+  const iframeFsBtn = document.getElementById("iframeFullscreenBtn");
+  if (iframeFsBtn) {
+    iframeFsBtn.innerHTML = `<ion-icon name="${isFs ? "contract-outline" : "expand-outline"}"></ion-icon>`;
+  }
 }
 
 function formatTime(seconds) {
