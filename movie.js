@@ -11278,7 +11278,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/uGqlk7Hu8FRLVDcFZ16NxTy09ZE.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/sZjoT5ModAl6THs3qFbMlHRVbnC.jpg",
     videoUrl: "308504",
-    overview: "A sweeping historical epic capturing Napoleon Bonaparte's swift, ruthless rise from army officer to French Emperor. The story traces his tactical genius across famous military campaigns while exploring his volatile, deeply addictive relationship with his wife and one true love, Josephine.",
+    overview: "A disgraced warrior named Raiden rises up against a corrupt and sadistic minister to avenge his fallen master, Lord Bartok. After Bartok is unjustly executed for defying the empire's bribery and corruption, Raiden and his loyal band of knights launch a daring siege on the minister's heavily fortified stronghold to restore their honor.",
     director: "Ridley Scott",
     cast: ["Joaquin Phoenix, Vanessa Kirby, Tahar Rahim, Rupert Everett, Mark Bonnar, Paul Rhys"],
     trending: false, // Leave false so it only shows up in the Genres tab
