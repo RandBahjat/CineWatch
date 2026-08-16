@@ -11279,8 +11279,8 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/sZjoT5ModAl6THs3qFbMlHRVbnC.jpg",
     videoUrl: "308504",
     overview: "A disgraced warrior named Raiden rises up against a corrupt and sadistic minister to avenge his fallen master, Lord Bartok. After Bartok is unjustly executed for defying the empire's bribery and corruption, Raiden and his loyal band of knights launch a daring siege on the minister's heavily fortified stronghold to restore their honor.",
-    director: "Ridley Scott",
-    cast: ["Joaquin Phoenix, Vanessa Kirby, Tahar Rahim, Rupert Everett, Mark Bonnar, Paul Rhys"],
+    director: "Kazuaki Kiriya",
+    cast: ["Clive Owen, Morgan Freeman, Cliff Curtis, Aksel Hennie, Shohreh Aghdashloo, Peyman Maadi, Ayelet Zurer"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
