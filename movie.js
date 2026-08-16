@@ -11149,7 +11149,7 @@ const MOVIES = [
     ]
   },
   {
-    title: "Steven Universe: The Movie",title: "Steven Universe: The Movie",
+    title: "Steven Universe: The Movie",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2019,
     rating: 7.7,
