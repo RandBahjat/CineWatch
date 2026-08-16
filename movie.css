@@ -1697,7 +1697,7 @@ select {
 }
 
 .meta-rating {
-  color: var(--primary);
+  color: var(--gold, #f5c518);
   display: flex;
   align-items: center;
   gap: 0.3rem;
