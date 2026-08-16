@@ -23559,11 +23559,12 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     const firstSeason = movie.seasons[0];
     const firstEpisode = firstSeason.episodes[0];
     if (firstEpisode) {
+      const tmdbId = movie.videoUrl || movie.cinesrcId || movie.id;
       openVideoPlayerWithUrl(
-        firstEpisode.videoUrl || `tv_embed:${movie.id}:${firstSeason.season}:${firstEpisode.episode}`,
+        firstEpisode.videoUrl || `tv_embed:${tmdbId}:${firstSeason.season}:${firstEpisode.episode}`,
         `${movie.title} - S${firstSeason.season} E${firstEpisode.episode}`,
-        movie.id,
-        firstEpisode
+        movieId,
+        { ...firstEpisode, season: firstSeason.season }
       );
       return;
     }
