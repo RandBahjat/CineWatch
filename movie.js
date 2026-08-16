@@ -23515,6 +23515,8 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   else {
     video.classList.add("hidden");
     controlsBar.classList.add("hidden");
+    const iframeFsBtn = document.getElementById("iframeFullscreenBtn");
+    if (iframeFsBtn) iframeFsBtn.classList.remove("hidden");
     if (centerOverlay) centerOverlay.style.display = "none";
     serverWrap.classList.remove("hidden");
     if (isTvEmbed) {
@@ -23639,6 +23641,8 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     document.querySelector(".video-container")?.classList.remove("is-iframe");
     video.classList.remove("hidden");
     controlsBar.classList.remove("hidden");
+    const iframeFsBtn = document.getElementById("iframeFullscreenBtn");
+    if (iframeFsBtn) iframeFsBtn.classList.add("hidden");
     if (centerOverlay) centerOverlay.style.display = "";
     video.src = movie.videoUrl;
 
@@ -23668,6 +23672,8 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     // IFRAME FALLBACK
     video.classList.add("hidden");
     controlsBar.classList.add("hidden");
+    const iframeFsBtn = document.getElementById("iframeFullscreenBtn");
+    if (iframeFsBtn) iframeFsBtn.classList.remove("hidden");
     if (centerOverlay) centerOverlay.style.display = "none";
     serverWrap.classList.remove("hidden");
     if (isNumericId) {
@@ -25025,6 +25031,16 @@ function bindEventListeners() {
     fullscreenBtn.dataset.fsBound = "1";
     fullscreenBtn.addEventListener("mousedown", (e) => {
       e.preventDefault(); // keep document focus so requestFullscreen() fires reliably on PC
+      e.stopPropagation();
+      toggleFullscreen();
+    });
+  }
+
+  const iframeFullscreenBtn = document.getElementById("iframeFullscreenBtn");
+  if (iframeFullscreenBtn && !iframeFullscreenBtn.dataset.fsBound) {
+    iframeFullscreenBtn.dataset.fsBound = "1";
+    iframeFullscreenBtn.addEventListener("mousedown", (e) => {
+      e.preventDefault();
       e.stopPropagation();
       toggleFullscreen();
     });
