@@ -11311,7 +11311,7 @@ const MOVIES = [
     genres: ["Action","Comedy","Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lTMnOx7E2zEzIGY0og1KkfgYMhY.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/onuK2cUJuTU7xqX9ErdojzBSu7J.jpg",
-    videoUrl: "",
+    videoUrl: "10771",
     overview: "Martial arts prodigy Li Fong leaves Beijing to move to New York City with his mother, struggling to adapt to a new life while navigating local martial arts conflicts. Guided by his wise mentor Mr. Han and legendary Sensei Daniel LaRusso, Li Fong must unite two distinct martial arts philosophies to face a formidable opponent on the ultimate stage.",
     director: "Jonathan Entwistle",
     cast: ["Jackie Chan, Ralph Macchio, Ben Wang, Joshua Jackson, Sadie Stanley, Ming-Na Wen"],
