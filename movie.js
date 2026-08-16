@@ -11210,7 +11210,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/s4cJQaj40SwMifUrrdtdOJsjnRO.jpg",
     videoUrl: "68718",
-    overview: "Washed-up former radical revolutionary Ghetto Pat Calhoun—now living off-grid under the alias Bob Ferguson—spends his days in a state of paranoid, marijuana-fueled isolation alongside his self-reliant teenage daughter, Willa. When his ruthless former nemesis, Colonel Steven J. Lockjaw, resurfaces sixteen years later to hunt them down, Bob is forced back into action, reuniting with his old allies to rescue Willa and confront the ghost of their past.",
+    overview: "Two years before the Civil War, an enslaved man named Django is freed by Dr. King Schultz, an eccentric German bounty hunter who needs his help to track down the murderous Brittle brothers. After a successful winter hunting criminals together, Schultz agrees to help Django rescue his wife, Broomhilda, from Calvin Candie, a charming yet brutal Mississippi plantation owner who forces enslaved men to fight to the death.",
     director: "Paul Thomas Anderson",
     cast: ["Leonardo DiCaprio, Sean Penn, Benicio del Toro, Regina Hall, Teyana Taylor, Chase Infiniti"],
     trending: false, // Leave false so it only shows up in the Genres tab
