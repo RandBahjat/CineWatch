@@ -11330,8 +11330,8 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/7VwHKpOgVrOwOfHlGzDZYtH7dfP.jpg",
     videoUrl: "10622",
     overview: "A celebrity TV chef named Jackie accidentally ends up with a videotape containing evidence of a bloody drug deal involving a ruthless mob boss and a rival street gang. When the mobsters go after the investigative reporter who shot the video, Jackie gets dragged into a frantic game of cat-and-mouse across Melbourne as he uses his incredible martial arts skills to protect his girlfriend and defeat both criminal factions.",
-    director: "Kevin Donovan",
-    cast: ["Jackie Chan, Jennifer Love Hewitt, Jason Isaacs, Debi Mazar, Ritchie Coster, Peter Stormare"],
+    director: "Sammo Hung",
+    cast: ["Jackie Chan, Richard Norton, Miki Lee, Karen McLymont, Gabrielle Fitzpatrick, Vince Poletto"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
