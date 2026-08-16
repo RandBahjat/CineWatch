@@ -1309,6 +1309,9 @@ select {
 
 .iframe-fullscreen-hack { position: absolute; bottom: 12px; right: 15px; width: 40px; height: 40px; z-index: 100; opacity: 1; cursor: pointer; border: none; background: #000; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; border-radius: 4px; transition: opacity 0.3s ease; }
 .video-container.idle .iframe-fullscreen-hack { opacity: 0; pointer-events: none; }
+@media (max-width: 768px) {
+  .iframe-fullscreen-hack { display: none !important; }
+}
 
 .card-details {
   position: absolute;
