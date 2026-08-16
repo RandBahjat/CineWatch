@@ -23976,9 +23976,6 @@ function bindEventListeners() {
   const _fsBtn = document.getElementById("fullscreenBtn");
   if (_fsBtn) _fsBtn.onclick = () => toggleFullscreen();
 
-  const _ifsBtn = document.getElementById("iframeFullscreenBtn");
-  if (_ifsBtn) _ifsBtn.onclick = () => toggleFullscreen();
-
   // Navigation Links
   document.querySelectorAll(".nav-link").forEach((link) => {
     link.onclick = (e) => {
