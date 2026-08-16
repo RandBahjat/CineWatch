@@ -11296,7 +11296,7 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/okDSa60ahO3emo5M6N5lUtkUZmc.jpg",
     videoUrl: "1011477",
     overview: "Martial arts prodigy Li Fong leaves Beijing to move to New York City with his mother, struggling to adapt to a new life while navigating local martial arts conflicts. Guided by his wise mentor Mr. Han and legendary Sensei Daniel LaRusso, Li Fong must unite two distinct martial arts philosophies to face a formidable opponent on the ultimate stage.",
-    director: "Kazuaki Kiriya",
+    director: "Jonathan Entwistle",
     cast: ["Clive Owen, Morgan Freeman, Cliff Curtis, Aksel Hennie, Shohreh Aghdashloo, Peyman Maadi, Ayelet Zurer"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
