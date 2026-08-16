@@ -23644,6 +23644,8 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     document.querySelector(".video-container")?.classList.remove("is-iframe");
     video.classList.remove("hidden");
     controlsBar.classList.remove("hidden");
+    const _ifsBtn3 = document.getElementById("iframeFullscreenBtn");
+    if (_ifsBtn3) _ifsBtn3.classList.add("hidden");
     if (centerOverlay) centerOverlay.style.display = "";
     video.src = movie.videoUrl;
 
@@ -23675,6 +23677,8 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     controlsBar.classList.add("hidden");
     if (centerOverlay) centerOverlay.style.display = "none";
     serverWrap.classList.remove("hidden");
+    const _ifsBtn4 = document.getElementById("iframeFullscreenBtn");
+    if (_ifsBtn4) _ifsBtn4.classList.remove("hidden");
 
     if (isNumericId) {
       window.currentIframeData = { type: "movie", id: movie.videoUrl };
