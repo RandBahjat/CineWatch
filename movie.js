@@ -23670,9 +23670,11 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
   } else {
     // IFRAME FALLBACK
     video.classList.add("hidden");
-    controlsBar.classList.remove("hidden");
+    controlsBar.classList.add("hidden");
     if (centerOverlay) centerOverlay.style.display = "none";
     serverWrap.classList.remove("hidden");
+    const fsBtn = document.getElementById("fullscreenBtn");
+    if (fsBtn) fsBtn.onclick = toggleFullscreen;
 
     if (isNumericId) {
       window.currentIframeData = { type: "movie", id: movie.videoUrl };
