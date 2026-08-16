@@ -21582,7 +21582,7 @@ const MOVIES = [
     type: "TV Show",
     year: 2019,
     rating: 7.7,
-    age: "TV-Y7-FV",
+    age: "TV-PG",
     duration: "15m",
     genres: ["Animation", "Comedy", "Kids"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bIFnNqZGdahoiGnk6MRkXLbZufS.jpg",
