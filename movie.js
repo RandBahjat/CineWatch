@@ -255,7 +255,7 @@ const MOVIES = [
     backdrop:
       "https://image.tmdb.org/t/p/original/tpRYtzeEl1Vc7vYr5unWs7qBNMW.jpg",
     videoUrl:
-      "1698856",
+      "1493400",
     overview:
       "Separated from his magical Power Sword as a child, Prince Adam leads a quiet life on Earth until the weapon guides him back to his home planet of Eternia. Finding his homeland shattered under the tyrannical rule of Skeletor, Adam must team up with Teela and Duncan to claim his true destiny as He-Man and liberate his world.  ",
     director: "Travis Knight",
