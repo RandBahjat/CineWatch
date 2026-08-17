@@ -131,7 +131,7 @@
 
     // --- ANALYTICS LOGIC ---
     function fetchAnalytics() {
-      fetch('http://localhost:3000/api/stats')
+      fetch('https://cinewatch-maaa.onrender.com/api/stats')
         .then(res => res.json())
         .then(data => {
           document.getElementById('analyticsViews').textContent = data.totalViews || 0;
