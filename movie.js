@@ -22494,7 +22494,7 @@ const MOVIES = [
         episodes: [
           { episode: 1, title: "Episode #1.1" },
           { episode: 2, title: "Episode #1.2" },
-          { episode: 3, title: "You're Everybody's Sidekick" },
+          { episode: 3, title: "Episode #1.3" },
           { episode: 4, title: "We Messed Up" },
           { episode: 5, title: "Jethro's All Yours" },
           { episode: 6, title: "You're Level 100!" },
