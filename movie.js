@@ -257,7 +257,7 @@ const MOVIES = [
     videoUrl:
       "1493400",
     overview:
-      "Connect 3 lose opening act for reunion tour, head back to Camp Rock to find next big thing. Campers vie for spot, sparks rivalries, romances, alliances.",
+      "Veronica Rodriguez",
     director: "Travis Knight",
     cast: ["Nicholas Galitzine, Camila Mendes, Idris Elba, Jared Leto, Alison Brie, Morena Baccarin, James Purefoy"],
     trending: true,
