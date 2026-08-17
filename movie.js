@@ -22478,7 +22478,7 @@ const MOVIES = [
     rating: 8.6,
     age: "TV-MA",
     duration: "1h",
-    genres: ["Crime", "Drama", "Mystery"],
+    genres: ["Crime", "Drama", "Mystery","Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bIFnNqZGdahoiGnk6MRkXLbZufS.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7zTON5elWsObqmzEchOSUnMdoua.jpg",
     videoUrl: "72693",
