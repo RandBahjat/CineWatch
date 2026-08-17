@@ -257,7 +257,7 @@ const MOVIES = [
     videoUrl:
       "1493400",
     overview:
-      "Separated from his magical Power Sword as a child, Prince Adam leads a quiet life on Earth until the weapon guides him back to his home planet of Eternia. Finding his homeland shattered under the tyrannical rule of Skeletor, Adam must team up with Teela and Duncan to claim his true destiny as He-Man and liberate his world.  ",
+      "Connect 3 lose opening act for reunion tour, head back to Camp Rock to find next big thing. Campers vie for spot, sparks rivalries, romances, alliances.",
     director: "Travis Knight",
     cast: ["Nicholas Galitzine, Camila Mendes, Idris Elba, Jared Leto, Alison Brie, Morena Baccarin, James Purefoy"],
     trending: true,
