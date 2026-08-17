@@ -35,4 +35,13 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model('User', userSchema);
 
-module.exports = { User, mongoose, getDbError: () => dbError };
+// Define the SiteStats schema for global site metrics
+const siteStatsSchema = new mongoose.Schema({
+  metricName: { type: String, required: true, unique: true }, // e.g., 'global'
+  totalViews: { type: Number, default: 0 },
+  lastUpdated: { type: Date, default: Date.now }
+});
+
+const SiteStats = mongoose.model('SiteStats', siteStatsSchema);
+
+module.exports = { User, SiteStats, mongoose, getDbError: () => dbError };

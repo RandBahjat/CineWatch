@@ -10,7 +10,7 @@ const express = require('express');
 const cors = require('cors');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const { User, mongoose, getDbError } = require('./database');
+const { User, SiteStats, mongoose, getDbError } = require('./database');
 
 const app = express();
 
@@ -301,6 +301,38 @@ app.post('/api/reset-password', async (req, res) => {
     res.json({ message: 'A password reset link has been sent to your email.' });
   } catch (err) {
     console.error(err);
+    res.status(500).json({ error: 'Database error.' });
+  }
+});
+
+// ----------------------------------------------------
+// 8. ANALYTICS: TRACK VISIT & GET STATS
+// ----------------------------------------------------
+app.post('/api/track-visit', async (req, res) => {
+  try {
+    const stats = await SiteStats.findOneAndUpdate(
+      { metricName: 'global' },
+      { $inc: { totalViews: 1 }, lastUpdated: new Date() },
+      { new: true, upsert: true }
+    );
+    res.json({ success: true, totalViews: stats.totalViews });
+  } catch (err) {
+    console.error('Error tracking visit:', err);
+    res.status(500).json({ error: 'Database error.' });
+  }
+});
+
+app.get('/api/stats', async (req, res) => {
+  try {
+    const stats = await SiteStats.findOne({ metricName: 'global' });
+    const totalViews = stats ? stats.totalViews : 0;
+    
+    // We can also get total users just to show on dashboard
+    const totalUsers = await User.countDocuments();
+
+    res.json({ totalViews, totalUsers });
+  } catch (err) {
+    console.error('Error fetching stats:', err);
     res.status(500).json({ error: 'Database error.' });
   }
 });
