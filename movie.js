@@ -246,8 +246,8 @@ const MOVIES = [
     title: "Camp Rock 3",
     type: "Movie",
     year: 2026,
-    rating: 6.9,
-    age: "PG-13",
+    rating: 5.3,
+    age: "PG-",
     duration: "2h 21m",
     genres: ["Action", "Adventure", "Fantasy", "Sci-Fi"],
     poster:
