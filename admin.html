@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -134,13 +134,7 @@
     let allMedia = [];
 
     document.addEventListener("DOMContentLoaded", () => {
-      const userStr = localStorage.getItem("cinewatch_user");
-      if (userStr) {
-        try {
-          const user = JSON.parse(userStr);
-          if (user.token) token = user.token;
-        } catch(e){}
-      }
+      token = sessionStorage.getItem("cw_token");
       
       if (!token) {
         document.getElementById("authWarning").style.display = "block";
