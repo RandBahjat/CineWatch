@@ -65,7 +65,7 @@ const MOVIES = [
     poster:
       "https://www.themoviedb.org/t/p/w600_and_h900_face/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
     backdrop:
-      "https://image.tmdb.org/t/p/original/dzeCorl61ZdxbzfnciUkrc8JSZj.jpg",
+      "https://image.tmdb.org/t/p/original/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
     videoUrl:
       "969681",
     overview:
