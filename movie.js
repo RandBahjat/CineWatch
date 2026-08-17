@@ -3519,8 +3519,9 @@ function showToast(msg) {
   }, 3000);
 }
 
-// Initialize on DOM ready
-document.addEventListener("DOMContentLoaded", initApp);
+// Initialize on DOM ready — loads data from API then starts app
+document.addEventListener("DOMContentLoaded", () => { initApp(); trackVisit(); });
+
 window.currentIframeData = null;
 
 function updateIframeServer() {
