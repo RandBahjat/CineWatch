@@ -331,7 +331,7 @@ app.post('/api/forgot-password', async (req, res) => {
 
     const { error: emailError } = await resend.emails.send({
       from: 'CineWatch <onboarding@resend.dev>',
-      to: user.email,
+      to: process.env.EMAIL_USER || user.email,
       subject: 'CineWatch Password Reset',
       html: `
         <div style="font-family:sans-serif;max-width:480px;margin:auto;padding:32px;background:#0b0c10;color:#fff;border-radius:8px;">
