@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_2012">
+    <link rel="stylesheet" href="movie.css?v=20260816_2013">
+    <link rel="stylesheet" href="lightrays.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,8 +15,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_2070" defer></script>
-    <script src="movie.js?v=20260816_2070" defer></script>
+    <script src="api.js?v=20260816_2071" defer></script>
+    <script src="movie.js?v=20260816_2071" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -34,6 +35,9 @@
             <p class="loader-text">Loading your cinema...</p>
         </div>
     </div>
+
+    <!-- LightRays Background Container -->
+    <div id="lightRaysContainer" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; pointer-events: none;"></div>
 
     <!-- Fixed Navbar -->
     <header class="navbar" id="navbar">
@@ -887,6 +891,29 @@
 
 
 
+    <script src="https://unpkg.com/ogl"></script>
+    <script src="lightrays.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('lightRaysContainer');
+            if (container) {
+                new LightRays(container, {
+                    raysOrigin: "top-center",
+                    raysColor: "#ffffff",
+                    raysSpeed: 1,
+                    lightSpread: 0.5,
+                    rayLength: 3,
+                    followMouse: true,
+                    mouseInfluence: 0.1,
+                    noiseAmount: 0,
+                    distortion: 0,
+                    pulsating: false,
+                    fadeDistance: 1,
+                    saturation: 1
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
