@@ -4226,8 +4226,22 @@ select {
   gap: 0.55rem;
   align-items: center;
   margin-top: 2rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 1.5rem; /* reduced from 3.5rem to give space to the label */
 }
+
+/* ---- Results Count Label ---- */
+.browse-results-bar {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+.browse-results-bar span {
+  color: #fff;
+  font-weight: 600;
+}
+
 
 .browse-filter-btn {
   padding: 0.45rem 1.1rem;
