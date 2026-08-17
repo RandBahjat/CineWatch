@@ -48,4 +48,28 @@ const siteStatsSchema = new mongoose.Schema({
 
 const SiteStats = mongoose.model('SiteStats', siteStatsSchema);
 
-module.exports = { User, SiteStats, mongoose, getDbError: () => dbError };
+// Define the Media schema for movies and series
+const mediaSchema = new mongoose.Schema({
+  title:     { type: String, required: true },
+  type:      { type: String, default: 'Movie' }, // 'Movie', 'TV Show', 'Series'
+  year:      { type: Number },
+  rating:    { type: Number },
+  age:       { type: String },
+  duration:  { type: String },
+  genres:    { type: [String], default: [] },
+  poster:    { type: String },
+  backdrop:  { type: String },
+  videoUrl:  { type: String },
+  overview:  { type: String },
+  director:  { type: String },
+  cast:      { type: [String], default: [] },
+  trending:  { type: Boolean, default: false },
+  featured:  { type: Boolean, default: false },
+  is4k:      { type: Boolean, default: false },
+  seasons:   { type: Array, default: [] },
+  createdAt: { type: Date, default: Date.now }
+});
+
+const Media = mongoose.model('Media', mediaSchema);
+
+module.exports = { User, SiteStats, Media, mongoose, getDbError: () => dbError };

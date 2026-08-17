@@ -10,7 +10,7 @@ const express = require('express');
 const cors = require('cors');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const { User, SiteStats, mongoose, getDbError } = require('./database');
+const { User, SiteStats, Media, mongoose, getDbError } = require('./database');
 
 const app = express();
 
@@ -337,7 +337,66 @@ app.get('/api/stats', async (req, res) => {
   }
 });
 
-// Root Health Check (Render Proxy binding fix)
+// ----------------------------------------------------
+// 9. MEDIA CRUD (Movies & Series)
+// ----------------------------------------------------
+
+// GET all media (public)
+app.get('/api/media', async (req, res) => {
+  try {
+    const media = await Media.find({}).sort({ createdAt: -1 });
+    res.json(media);
+  } catch (err) {
+    console.error('Error fetching media:', err);
+    res.status(500).json({ error: 'Database error.' });
+  }
+});
+
+// GET single media item
+app.get('/api/media/:id', async (req, res) => {
+  try {
+    const item = await Media.findById(req.params.id);
+    if (!item) return res.status(404).json({ error: 'Not found.' });
+    res.json(item);
+  } catch (err) {
+    res.status(500).json({ error: 'Database error.' });
+  }
+});
+
+// POST new media item (protected)
+app.post('/api/media', authenticateToken, async (req, res) => {
+  try {
+    const item = await Media.create(req.body);
+    res.status(201).json(item);
+  } catch (err) {
+    console.error('Error creating media:', err);
+    res.status(500).json({ error: `Database error: ${err.message}` });
+  }
+});
+
+// PUT update media item (protected)
+app.put('/api/media/:id', authenticateToken, async (req, res) => {
+  try {
+    const item = await Media.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    if (!item) return res.status(404).json({ error: 'Not found.' });
+    res.json(item);
+  } catch (err) {
+    console.error('Error updating media:', err);
+    res.status(500).json({ error: 'Database error.' });
+  }
+});
+
+// DELETE media item (protected)
+app.delete('/api/media/:id', authenticateToken, async (req, res) => {
+  try {
+    const item = await Media.findByIdAndDelete(req.params.id);
+    if (!item) return res.status(404).json({ error: 'Not found.' });
+    res.json({ message: 'Deleted successfully.' });
+  } catch (err) {
+    console.error('Error deleting media:', err);
+    res.status(500).json({ error: 'Database error.' });
+  }
+});
 app.get('/', (req, res) => {
   res.send('CineWatch API is running! Version 2');
 });
