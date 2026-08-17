@@ -1,4 +1,4 @@
-/**
+﻿/**
  * CineWatch — Pure Vanilla JavaScript (ES6+)
  * Feature-rich movie streaming platform logic
  *
@@ -341,7 +341,6 @@ async function initApp() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", initApp);
 
 function getFeaturedMovies() {
   return MOVIES.filter((m) => m.featured).sort((a, b) => {
@@ -3661,13 +3660,3 @@ function trackVisit() {
   })
   .catch(err => console.error("Error tracking visit:", err));
 }
-
-// Setup App on DOM Content Loaded
-document.addEventListener("DOMContentLoaded", () => {
-  initMoviesAndSeries();
-  setupWatchlistToggle();
-  setupApp();
-
-  // Track Visit Analytics
-  trackVisit();
-});
