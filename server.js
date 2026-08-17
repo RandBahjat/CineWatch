@@ -40,6 +40,14 @@ function authenticateToken(req, res, next) {
   });
 }
 
+function isAdmin(req, res, next) {
+  // Check if the authenticated user is RandBahjat (by checking for "rand" in username)
+  if (!req.user || !req.user.username.toLowerCase().includes('rand')) {
+    return res.status(403).json({ error: 'Access denied. This action is restricted to the site administrator.' });
+  }
+  next();
+}
+
 // ----------------------------------------------------
 // 0. DB STATUS ENDPOINT
 // ----------------------------------------------------
@@ -348,7 +356,7 @@ app.get('/api/stats', async (req, res) => {
 // GET all media (public)
 app.get('/api/media', async (req, res) => {
   try {
-    const media = await Media.find({}).sort({ createdAt: -1 });
+    const media = await Media.find({}).sort({ createdAt: 1 });
     res.json(media);
   } catch (err) {
     console.error('Error fetching media:', err);
@@ -367,8 +375,8 @@ app.get('/api/media/:id', async (req, res) => {
   }
 });
 
-// POST new media item (protected)
-app.post('/api/media', authenticateToken, async (req, res) => {
+// POST new media item (protected, admin only)
+app.post('/api/media', authenticateToken, isAdmin, async (req, res) => {
   try {
     const item = await Media.create(req.body);
     res.status(201).json(item);
@@ -378,8 +386,8 @@ app.post('/api/media', authenticateToken, async (req, res) => {
   }
 });
 
-// PUT update media item (protected)
-app.put('/api/media/:id', authenticateToken, async (req, res) => {
+// PUT update media item (protected, admin only)
+app.put('/api/media/:id', authenticateToken, isAdmin, async (req, res) => {
   try {
     const item = await Media.findByIdAndUpdate(req.params.id, req.body, { new: true });
     if (!item) return res.status(404).json({ error: 'Not found.' });
@@ -390,8 +398,8 @@ app.put('/api/media/:id', authenticateToken, async (req, res) => {
   }
 });
 
-// DELETE media item (protected)
-app.delete('/api/media/:id', authenticateToken, async (req, res) => {
+// DELETE media item (protected, admin only)
+app.delete('/api/media/:id', authenticateToken, isAdmin, async (req, res) => {
   try {
     const item = await Media.findByIdAndDelete(req.params.id);
     if (!item) return res.status(404).json({ error: 'Not found.' });

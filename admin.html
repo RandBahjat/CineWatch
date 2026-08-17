@@ -135,8 +135,21 @@
 
     document.addEventListener("DOMContentLoaded", () => {
       token = sessionStorage.getItem("cw_token");
+      let isAdmin = false;
       
-      if (!token) {
+      if (token) {
+        try {
+          const payload = JSON.parse(atob(token.split('.')[1]));
+          if (payload.username && payload.username.toLowerCase().includes('rand')) {
+            isAdmin = true;
+          }
+        } catch(e) {
+          console.error("Error parsing token", e);
+        }
+      }
+      
+      if (!isAdmin) {
+        document.getElementById("authWarning").innerHTML = "<strong>Access Denied:</strong> You must be the site administrator to view this page.<br><br><a href='/' style='color:#66fcf1;'>Go to Home to Login</a>";
         document.getElementById("authWarning").style.display = "block";
       } else {
         document.getElementById("adminContent").style.display = "block";
