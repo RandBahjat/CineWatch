@@ -249,7 +249,7 @@ const MOVIES = [
     rating: 5.3,
     age: "TV-G",
     duration: "1h 32m",
-    genres: ["Action", "Adventure", "Fantasy", "Sci-Fi"],
+    genres: ["Comedy", "Musical", "Kids", "Sci-Fi"],
     poster:
       "https://www.themoviedb.org/t/p/w600_and_h900_face/a77OcLmarwiBJakOPPC36m58t4L.jpg",
     backdrop:
