@@ -253,7 +253,7 @@ const MOVIES = [
     poster:
       "https://www.themoviedb.org/t/p/w600_and_h900_face/rS7byWK9cfPfdLeFNlRIaJxH9mN.jpg",
     backdrop:
-      "https://images3.alphacoders.com/140/thumb-1920-1409079.jpg",
+      "https://image.tmdb.org/t/p/original/tpRYtzeEl1Vc7vYr5unWs7qBNMW.jpg",
     videoUrl:
       "1698856",
     overview:
