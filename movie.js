@@ -259,7 +259,7 @@ const MOVIES = [
     overview:
       "Connect 3 lose opening act for reunion tour, head back to Camp Rock to find next big thing. Campers vie for spot, sparks rivalries, romances, alliances.",
     director: "Veronica Rodriguez",
-    cast: ["Nicholas Galitzine, Camila Mendes, Idris Elba, Jared Leto, Alison Brie, Morena Baccarin, James Purefoy"],
+    cast: ["Joe Jonas, Nick Jonas, Kevin Jonas, Liamani Segura, Malachi Barton, Lumi Pollack, Hudson Stone, Casey Trotter"],
     trending: true,
     featured: false,
   },
