@@ -25212,7 +25212,10 @@ function bindEventListeners() {
       const email = document.getElementById("reportEmail").value.trim();
       const subject = document.getElementById("reportSubject").value.trim();
       const message = document.getElementById("reportMessage").value.trim();
-      if (!message) return;
+      
+      if (!email) { showToast("Please provide your email address."); return; }
+      if (!subject) { showToast("Please provide a title or issue type."); return; }
+      if (!message) { showToast("Please provide the description of the issue."); return; }
 
       submitBtn.innerHTML = '<ion-icon name="hourglass-outline"></ion-icon> Sending...';
       submitBtn.disabled = true;
