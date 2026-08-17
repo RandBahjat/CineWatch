@@ -22477,7 +22477,7 @@ const MOVIES = [
     year: 2026,
     rating: 8.6,
     age: "TV-MA",
-    duration: "15m",
+    duration: "1h",
     genres: ["Animation", "Comedy", "Kids"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bIFnNqZGdahoiGnk6MRkXLbZufS.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7zTON5elWsObqmzEchOSUnMdoua.jpg",
