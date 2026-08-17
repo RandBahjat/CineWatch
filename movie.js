@@ -243,7 +243,7 @@ const MOVIES = [
     featured: false,
   },
   {
-    title: "",
+    title: "Camp Rock 3",
     type: "Movie",
     year: 2026,
     rating: 6.9,
