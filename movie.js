@@ -1,4 +1,4 @@
-﻿/**
+/**
  * CineWatch — Pure Vanilla JavaScript (ES6+)
  * Feature-rich movie streaming platform logic
  *
@@ -301,7 +301,7 @@ function removeContinueWatching(movieId) {
 // 3. UI RENDERERS & CONTROLLERS
 // ==========================================
 
-function initApp() {
+async function initApp() {
   const dismissLoader = () => {
     const loader = document.getElementById("appLoader");
     if (loader) {
@@ -315,6 +315,9 @@ function initApp() {
   };
 
   try {
+    // Load all movies & series from MongoDB first
+    await loadMediaFromAPI();
+
     loadState();
     renderUserBadge();
     updateWatchlistBadge();
@@ -337,6 +340,8 @@ function initApp() {
     dismissLoader();
   }
 }
+
+document.addEventListener("DOMContentLoaded", initApp);
 
 function getFeaturedMovies() {
   return MOVIES.filter((m) => m.featured).sort((a, b) => {
