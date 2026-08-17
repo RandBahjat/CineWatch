@@ -23421,8 +23421,7 @@ function renderMoviesSection() {
   // Update count label (between filters and grid)
   const labelEl = document.getElementById("moviesCountLabel");
   if (labelEl) {
-    const genre = state.moviesFilter && state.moviesFilter !== "all" ? ` ${state.moviesFilter}` : "";
-    labelEl.textContent = `Showing ${filtered.length}${genre} movie${filtered.length !== 1 ? "s" : ""}`;
+    labelEl.textContent = `Titles: ${filtered.length}`;
   }
 
   // Sync active filter button
@@ -23451,8 +23450,7 @@ function renderSeriesSection() {
   // Update count label (between filters and grid)
   const labelEl = document.getElementById("seriesCountLabel");
   if (labelEl) {
-    const genre = state.seriesFilter && state.seriesFilter !== "all" ? ` ${state.seriesFilter}` : "";
-    labelEl.textContent = `Showing ${filtered.length}${genre} series`;
+    labelEl.textContent = `Titles: ${filtered.length}`;
   }
 
   document.querySelectorAll("#seriesFilterBar .browse-filter-btn").forEach((btn) => {
