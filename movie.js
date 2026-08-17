@@ -23414,9 +23414,16 @@ function renderMoviesSection() {
   // Clamp page in case filter change reduced total
   if (state.moviesPage > totalPages) state.moviesPage = totalPages;
 
-  // Update count badge
+  // Update count badge (next to heading)
   const countEl = document.getElementById("moviesCount");
   if (countEl) countEl.textContent = `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`;
+
+  // Update count label (between filters and grid)
+  const labelEl = document.getElementById("moviesCountLabel");
+  if (labelEl) {
+    const genre = state.moviesFilter && state.moviesFilter !== "all" ? ` ${state.moviesFilter}` : "";
+    labelEl.textContent = `Showing ${filtered.length}${genre} movie${filtered.length !== 1 ? "s" : ""}`;
+  }
 
   // Sync active filter button
   document.querySelectorAll("#moviesFilterBar .browse-filter-btn").forEach((btn) => {
@@ -23440,6 +23447,13 @@ function renderSeriesSection() {
 
   const countEl = document.getElementById("seriesCount");
   if (countEl) countEl.textContent = `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`;
+
+  // Update count label (between filters and grid)
+  const labelEl = document.getElementById("seriesCountLabel");
+  if (labelEl) {
+    const genre = state.seriesFilter && state.seriesFilter !== "all" ? ` ${state.seriesFilter}` : "";
+    labelEl.textContent = `Showing ${filtered.length}${genre} series`;
+  }
 
   document.querySelectorAll("#seriesFilterBar .browse-filter-btn").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.genre === state.seriesFilter);
