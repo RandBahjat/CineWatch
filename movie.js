@@ -26135,3 +26135,31 @@ if (vEl) {
   onScroll();
 })();
 
+function trackVisit() {
+  // Only track once per session so refreshing doesn't artificially inflate the count
+  if (sessionStorage.getItem('cinewatch_visit_tracked')) {
+    return;
+  }
+  
+  fetch('http://localhost:3000/api/track-visit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' }
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.success) {
+      sessionStorage.setItem('cinewatch_visit_tracked', 'true');
+    }
+  })
+  .catch(err => console.error("Error tracking visit:", err));
+}
+
+// Setup App on DOM Content Loaded
+document.addEventListener("DOMContentLoaded", () => {
+  initMoviesAndSeries();
+  setupWatchlistToggle();
+  setupApp();
+
+  // Track Visit Analytics
+  trackVisit();
+});
