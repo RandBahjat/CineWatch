@@ -8,8 +8,12 @@ if (typeof global.crypto === 'undefined') {
 
 const mongoose = require('mongoose');
 
-// The connection string provided by the user
-const MONGO_URI = "mongodb+srv://randbahjat88_db_user:ggiOfXYMs3vqxicp@cluster0.km7xzpk.mongodb.net/cinewatch?retryWrites=true&w=majority&appName=Cluster0";
+// Use environment variable for the connection string to keep credentials secret
+const MONGO_URI = process.env.MONGO_URI;
+
+if (!MONGO_URI) {
+  console.warn("WARNING: MONGO_URI environment variable is not set!");
+}
 
 let dbError = null;
 
