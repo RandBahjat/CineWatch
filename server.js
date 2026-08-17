@@ -312,6 +312,7 @@ app.post('/api/forgot-password', async (req, res) => {
       $or: [{ email: query }, { username: query }]
     });
     if (!user) return res.status(400).json({ error: 'No account found with this email or username.' });
+    if (!user.email) return res.status(400).json({ error: 'No email address is associated with this account.' });
 
     // Generate secure token
     const resetToken = crypto.randomBytes(32).toString('hex');
@@ -320,8 +321,14 @@ app.post('/api/forgot-password', async (req, res) => {
     await user.save();
 
     // Configure Nodemailer
+    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+      console.error('EMAIL_USER or EMAIL_PASS not configured on Render.');
+      return res.status(500).json({ error: 'Email service is not configured. Please contact the administrator.' });
+    }
+
     const transporter = nodemailer.createTransport({
       service: 'gmail',
+      connectionTimeout: 5000,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS
