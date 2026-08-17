@@ -67,7 +67,22 @@
 <body>
 
   <h1>🎬 CineWatch Admin Tools</h1>
-  <p>Use this tool to automatically fetch data from TMDB and generate the exact code you need to paste into <code>movie.js</code>.</p>
+  <p>Generate JSON code for `movie.js` instantly using the TMDB API.</p>
+
+  <div class="card" style="border: 2px solid #66fcf1;">
+    <h3>📊 Site Analytics</h3>
+    <div style="display: flex; gap: 2rem;">
+      <div>
+        <label>Total Page Views</label>
+        <h2 id="analyticsViews" style="margin: 0; color: #fff;">Loading...</h2>
+      </div>
+      <div>
+        <label>Total Registered Users</label>
+        <h2 id="analyticsUsers" style="margin: 0; color: #fff;">Loading...</h2>
+      </div>
+    </div>
+    <button onclick="fetchAnalytics()" style="margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.8rem;">Refresh Stats</button>
+  </div>
 
   <div class="card">
     <h3>1. Setup (One Time)</h3>
@@ -114,6 +129,25 @@
       setTimeout(() => msg.style.display = "none", 2000);
     }
 
+    // --- ANALYTICS LOGIC ---
+    function fetchAnalytics() {
+      fetch('http://localhost:3000/api/stats')
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById('analyticsViews').textContent = data.totalViews || 0;
+          document.getElementById('analyticsUsers').textContent = data.totalUsers || 0;
+        })
+        .catch(err => {
+          console.error("Failed to fetch stats", err);
+          document.getElementById('analyticsViews').textContent = "Error";
+          document.getElementById('analyticsUsers').textContent = "Error";
+        });
+    }
+    
+    // Load stats immediately
+    fetchAnalytics();
+
+    // --- TMDB FETCH LOGIC ---
     async function generateCode() {
       const token = document.getElementById("tmdbToken").value.trim();
       const id = document.getElementById("tmdbId").value.trim();
