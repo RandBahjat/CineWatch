@@ -11,7 +11,7 @@ const path = require('path');
 const cors = require('cors');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const nodemailer = require('nodemailer');
+const { Resend } = require('resend');
 const crypto = require('crypto');
 const { User, SiteStats, Media, mongoose, getDbError } = require('./database');
 
@@ -320,39 +320,35 @@ app.post('/api/forgot-password', async (req, res) => {
     user.resetPasswordExpires = Date.now() + 3600000; // 1 hour
     await user.save();
 
-    // Configure Nodemailer
-    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
-      console.error('EMAIL_USER or EMAIL_PASS not configured on Render.');
+    // Send email via Resend API
+    if (!process.env.RESEND_API_KEY) {
+      console.error('RESEND_API_KEY not configured on Render.');
       return res.status(500).json({ error: 'Email service is not configured. Please contact the administrator.' });
     }
 
-    const transporter = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
-      port: 465,
-      secure: true,
-      connectionTimeout: 10000,
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
-      }
-    });
-
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const resetUrl = `https://randbahjat.github.io/CineWatch/reset-password.html?token=${resetToken}`;
 
-    const mailOptions = {
-      from: `"CineWatch Support" <${process.env.EMAIL_USER}>`,
+    const { error: emailError } = await resend.emails.send({
+      from: 'CineWatch <onboarding@resend.dev>',
       to: user.email,
       subject: 'CineWatch Password Reset',
       html: `
-        <h3>Password Reset Request</h3>
-        <p>You requested a password reset for your CineWatch account.</p>
-        <p>Click the link below to set a new password. This link is valid for 1 hour.</p>
-        <a href="${resetUrl}">Reset Password</a>
-        <p>If you did not request this, please ignore this email.</p>
+        <div style="font-family:sans-serif;max-width:480px;margin:auto;padding:32px;background:#0b0c10;color:#fff;border-radius:8px;">
+          <h2 style="color:#66fcf1;">🎬 CineWatch — Password Reset</h2>
+          <p>You requested a password reset for your account <strong>${user.username}</strong>.</p>
+          <p>Click the button below to set a new password. This link is valid for <strong>1 hour</strong>.</p>
+          <a href="${resetUrl}" style="display:inline-block;margin:16px 0;padding:12px 24px;background:#66fcf1;color:#0b0c10;text-decoration:none;border-radius:4px;font-weight:bold;">Reset Password</a>
+          <p style="color:#aaa;font-size:0.85rem;">If you did not request this, please ignore this email. Your password will remain unchanged.</p>
+        </div>
       `
-    };
+    });
 
-    await transporter.sendMail(mailOptions);
+    if (emailError) {
+      console.error('Resend error:', emailError);
+      return res.status(500).json({ error: `Failed to send email: ${emailError.message}` });
+    }
+
     res.json({ message: 'A password reset link has been sent to your email.' });
   } catch (err) {
     console.error('Forgot password error:', err.message || err);
