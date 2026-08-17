@@ -22472,10 +22472,10 @@ const MOVIES = [
   }
 
  {
-    title: "OK K.O.! Let's Be Heroes",
+    title: "Lanterns",
     type: "TV Show",
-    year: 2017,
-    rating: 6.9,
+    year: 2026,
+    rating: ,
     age: "TV-Y7-FV",
     duration: "15m",
     genres: ["Animation", "Comedy", "Kids"],
