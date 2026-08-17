@@ -22469,7 +22469,7 @@ const MOVIES = [
         ]
       }
     ]
-  }
+  },
 
  {
     title: "Lanterns",
