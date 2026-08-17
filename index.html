@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_2021">
+    <link rel="stylesheet" href="movie.css?v=20260816_2022">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,8 +14,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_2079" defer></script>
-    <script src="movie.js?v=20260816_2079" defer></script>
+    <script src="api.js?v=20260816_2080" defer></script>
+    <script src="movie.js?v=20260816_2080" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -328,6 +328,7 @@
             <div class="browse-section-header">
                 <div class="browse-title-row">
                     <h1 class="browse-title"><ion-icon name="film-outline"></ion-icon> Movies</h1>
+                    <span class="browse-count" id="moviesCount">0 titles</span>
                 </div>
                 <!-- Genre Filter Bar -->
                 <div class="browse-filter-bar" id="moviesFilterBar">
@@ -349,7 +350,6 @@
                     <button class="browse-filter-btn" data-genre="Science-Fiction" data-section="movies">Science Fiction</button>
                     <button class="browse-filter-btn" data-genre="Thriller" data-section="movies">Thriller</button>
                     <button class="browse-filter-btn" data-genre="War" data-section="movies">War</button>
-                    <span class="browse-count" id="moviesCount" style="margin-left: auto;">0 titles</span>
                 </div>
             </div>
             <!-- Cards Grid -->
@@ -363,6 +363,7 @@
             <div class="browse-section-header">
                 <div class="browse-title-row">
                     <h1 class="browse-title"><ion-icon name="tv-outline"></ion-icon> Series</h1>
+                    <span class="browse-count" id="seriesCount">0 titles</span>
                 </div>
                 <!-- Genre Filter Bar -->
                 <div class="browse-filter-bar" id="seriesFilterBar">
@@ -384,7 +385,6 @@
                     <button class="browse-filter-btn" data-genre="Science-Fiction" data-section="series">Science Fiction</button>
                     <button class="browse-filter-btn" data-genre="Thriller" data-section="series">Thriller</button>
                     <button class="browse-filter-btn" data-genre="War" data-section="series">War</button>
-                    <span class="browse-count" id="seriesCount" style="margin-left: auto;">0 titles</span>
                 </div>
             </div>
             <!-- Cards Grid -->
