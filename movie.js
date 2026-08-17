@@ -24196,7 +24196,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
 
   const isNumericId = /^\d+$/.test(videoUrl);
   const isTvEmbed = videoUrl.startsWith("tv_embed:");
-  const isEmbedUrl = isTvEmbed || videoUrl.includes("/embed/") || videoUrl.includes("moviepire.co") || videoUrl.includes("videasy.net");
+  const isEmbedUrl = isTvEmbed || videoUrl.includes("/embed/") || videoUrl.includes("moviepire.co") || videoUrl.includes("vaplayer.ru");
 
   let streamUrl = null;
 
@@ -24368,7 +24368,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
 
   // Check if it's an embed ID or URL
   const isNumericId = /^\d+$/.test(movie.videoUrl);
-  const isEmbedUrl = movie.videoUrl.includes("/embed/") || movie.videoUrl.includes("moviepire.co") || movie.videoUrl.includes("videasy.net");
+  const isEmbedUrl = movie.videoUrl.includes("/embed/") || movie.videoUrl.includes("moviepire.co") || movie.videoUrl.includes("vaplayer.ru");
   const serverWrap = document.getElementById("serverSelectWrap");
 
   let streamUrl = null;
@@ -25949,9 +25949,9 @@ function updateIframeServer() {
 
   let newUrl = "";
   if (data.type === "tv") {
-    newUrl = `https://player.videasy.net/tv/${data.id}/${data.season}/${data.episode}?episodeSelector=true`;
+    newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}`;
   } else {
-    newUrl = `https://player.videasy.net/movie/${data.id}`;
+    newUrl = `https://vaplayer.ru/embed/movie/${data.id}`;
   }
   iframe.src = newUrl;
 }
