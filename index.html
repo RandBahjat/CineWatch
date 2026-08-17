@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_1979">
+    <link rel="stylesheet" href="movie.css?v=20260816_1980">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,8 +14,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_2037" defer></script>
-    <script src="movie.js?v=20260816_2037" defer></script>
+    <script src="api.js?v=20260816_2038" defer></script>
+    <script src="movie.js?v=20260816_2038" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -859,6 +859,13 @@
                     <p class="auth-subtitle">Encountered a problem or have feedback? Let us know below.</p>
                 </div>
                 <form id="reportForm" class="auth-form" novalidate>
+                    <div class="form-group">
+                        <label for="reportEmail">Email Address</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" id="reportEmail" class="form-control" placeholder="Your email address" required>
+                        </div>
+                    </div>
                     <div class="form-group">
                         <label for="reportSubject">Title / Issue Type</label>
                         <div class="input-with-icon">
