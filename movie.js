@@ -22497,9 +22497,9 @@ const MOVIES = [
           { episode: 3, title: "Episode #1.3" },
           { episode: 4, title: "Episode #1.4" },
           { episode: 5, title: "Episode #1.5" },
-          { episode: 6, title: "You're Level 100!" },
-          { episode: 7, title: "Sibling Rivalry" },
-          { episode: 8, title: "I Am Dendy" },
+          { episode: 6, title: "Episode #1.6" },
+          { episode: 7, title: "Episode #1.7" },
+          { episode: 8, title: "Episode #1.8" },
         ]
       }
     ]
