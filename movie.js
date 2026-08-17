@@ -25209,6 +25209,7 @@ function bindEventListeners() {
       const submitBtn = reportForm.querySelector('button[type="submit"]');
       const originalBtnText = submitBtn.innerHTML;
 
+      const email = document.getElementById("reportEmail").value.trim();
       const subject = document.getElementById("reportSubject").value.trim();
       const message = document.getElementById("reportMessage").value.trim();
       if (!message) return;
@@ -25226,6 +25227,7 @@ function bindEventListeners() {
           body: JSON.stringify({
             access_key: '965583ff-4601-49f3-8adf-bf0a881b0686',
             subject: subject || "CineWatch Report",
+            email: email,
             message: message,
             from_name: "CineWatch User"
           })
