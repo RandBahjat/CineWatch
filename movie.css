@@ -98,7 +98,7 @@ body {
 }
 
 /* ==========================================================================
-   Moonlit — Aura Background (Home Page)
+   Carbon Glass — Aura Background (Home Page)
    ========================================================================== */
 
 .aura-bg {
@@ -108,39 +108,40 @@ body {
   /* NO background-color — layers blend against body #100e0b */
 }
 
-/* Layer 1 - screen blend: cool blue radial */
+/* Layer 1 - normal blend */
 .aura-layer-1 {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 38% 42% at 76% 30%, rgba(105,135,165,0.26) 0%, rgba(57,79,103,0.12) 45%, transparent 78%);
-  mix-blend-mode: screen;
-  filter: blur(25px);
+  background: linear-gradient(145deg, rgba(9,9,11,0.98) 0%, rgba(39,39,42,0.72) 48%, rgba(24,24,27,0.88) 100%);
+  mix-blend-mode: normal;
   transform: translateZ(0);
   will-change: transform;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Layer 2 - screen blend: soft highlight core */
+/* Layer 2 - difference blend */
 .aura-layer-2 {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 18% 20% at 76% 30%, rgba(180,198,214,0.10) 0%, transparent 70%);
-  mix-blend-mode: screen;
-  filter: blur(38px);
-  opacity: 0.8;
+  background: linear-gradient(120deg, transparent 20%, rgba(255,255,255,0.07) 43%, rgba(161,161,170,0.12) 50%, transparent 67%);
+  mix-blend-mode: difference;
+  filter: blur(55px);
   transform: translateZ(0);
   will-change: transform;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Film-grain overlay — SVG feTurbulence noise, overlay blend */
-.aura-grain {
+/* Layer 3 - screen blend */
+.aura-layer-3 {
   position: absolute;
   inset: 0;
-  mix-blend-mode: overlay;
-  opacity: 0.85;
+  background: radial-gradient(ellipse 42% 35% at 70% 30%, rgba(212,212,216,0.14) 0%, transparent 68%);
+  mix-blend-mode: screen;
+  filter: blur(113px);
+  transform: translateZ(0);
+  will-change: transform;
   pointer-events: none;
   z-index: 0;
 }
@@ -156,8 +157,8 @@ body {
 
 /* Desktop: increase blur radii for richer effect */
 @media (min-width: 1024px) {
-  .aura-layer-1 { filter: blur(36px); }
-  .aura-layer-2 { filter: blur(54px); }
+  .aura-layer-2 { filter: blur(79px); }
+  .aura-layer-3 { filter: blur(162px); }
 }
 
 a {
