@@ -22482,7 +22482,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/rzyXM5uB2Oci6u7aP3ijPxcTmfV.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ruwzidqanSyhhMEk6kCVd9BLui1.jpg",
     videoUrl: "95350",
-    overview: "OK K.O.! Let's Be Heroes is a world of original heroes across the TV and gaming landscape together with the greenlight of this action-packed comedy followed by the console and PC game jointly developed with indie video game studio Capybara games. The knockout series is inspired by creator Ian Jones-Quartey's childhood and follows the heroic feats of K.O., an endlessly optimistic boy attempting to level up to be the best he can be in a dynamic universe of heroes, friends and challenging foes.",
+    overview: "John Stewart, new recruit, and Hal Jordan, veteran Lantern, two space cops dragged into dark earth-based mystery investigating murder in American heartland. Story split across two timelines, 2016 and 2026, buddy-cop energy meets superhero stakes.",
     director: "Ian Jones-Quartey",
     cast: ["Courtenay Taylor", "Ashly Burch", "Ian Jones-Quartey", "David Herman"],
     trending: false,
