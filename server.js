@@ -7,12 +7,16 @@ if (typeof global.crypto === 'undefined') {
 }
 
 const express = require('express');
+const path = require('path');
 const cors = require('cors');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { User, SiteStats, Media, mongoose, getDbError } = require('./database');
 
 const app = express();
+
+// Serve static files (HTML, CSS, JS) from the root directory
+app.use(express.static(__dirname));
 
 app.use(cors());
 app.use(express.json({ limit: '15mb' }));
@@ -397,8 +401,9 @@ app.delete('/api/media/:id', authenticateToken, async (req, res) => {
     res.status(500).json({ error: 'Database error.' });
   }
 });
-app.get('/', (req, res) => {
-  res.send('CineWatch API is running! Version 2');
+// Default route fallback to serve index.html (for SPA routing if needed)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 const PORT = process.env.PORT || 3000;
