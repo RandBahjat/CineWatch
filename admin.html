@@ -140,7 +140,7 @@
       if (token) {
         try {
           const payload = JSON.parse(atob(token.split('.')[1]));
-          if (payload.username && payload.username.toLowerCase().includes('rand')) {
+          if (payload.username && payload.username.toLowerCase() === 'flame-_-2005') {
             isAdmin = true;
           }
         } catch(e) {

@@ -41,8 +41,8 @@ function authenticateToken(req, res, next) {
 }
 
 function isAdmin(req, res, next) {
-  // Check if the authenticated user is RandBahjat (by checking for "rand" in username)
-  if (!req.user || !req.user.username.toLowerCase().includes('rand')) {
+  // Check if the authenticated user is Flame-_-2005
+  if (!req.user || !req.user.username || req.user.username.toLowerCase() !== 'flame-_-2005') {
     return res.status(403).json({ error: 'Access denied. This action is restricted to the site administrator.' });
   }
   next();
