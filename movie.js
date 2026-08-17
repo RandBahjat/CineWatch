@@ -247,8 +247,8 @@ const MOVIES = [
     type: "Movie",
     year: 2026,
     rating: 5.3,
-    age: "PG-",
-    duration: "2h 21m",
+    age: "TV-G",
+    duration: "1h 32m",
     genres: ["Action", "Adventure", "Fantasy", "Sci-Fi"],
     poster:
       "https://www.themoviedb.org/t/p/w600_and_h900_face/a77OcLmarwiBJakOPPC36m58t4L.jpg",
