@@ -34,6 +34,8 @@ const userSchema = new mongoose.Schema({
   avatar: { type: String, default: '??' },
   favorites: { type: Array, default: [] },
   continueWatching: { type: Object, default: {} },
+  resetPasswordToken: { type: String },
+  resetPasswordExpires: { type: Date },
   created_at: { type: Date, default: Date.now }
 });
 

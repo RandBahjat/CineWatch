@@ -83,7 +83,11 @@ window.CW_API = {
   },
 
   async resetPassword(username) {
-    return await this.request('/reset-password', 'POST', { username });
+    return await this.request('/forgot-password', 'POST', { username });
+  },
+
+  async confirmPasswordReset(token, newPassword) {
+    return await this.request('/reset-password-confirm', 'POST', { token, newPassword });
   },
 
   signOut() {

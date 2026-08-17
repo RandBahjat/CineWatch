@@ -11,6 +11,8 @@ const path = require('path');
 const cors = require('cors');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const nodemailer = require('nodemailer');
+const crypto = require('crypto');
 const { User, SiteStats, Media, mongoose, getDbError } = require('./database');
 
 const app = express();
@@ -299,7 +301,8 @@ app.post('/api/update-password', authenticateToken, async (req, res) => {
 // ----------------------------------------------------
 // 7. PASSWORD RESET REQUEST
 // ----------------------------------------------------
-app.post('/api/reset-password', async (req, res) => {
+// POST forgot password (generates token and sends email)
+app.post('/api/forgot-password', async (req, res) => {
   const { email, username } = req.body;
   const query = (email || username || '').trim().toLowerCase();
   if (!query) return res.status(400).json({ error: 'Email or username is required.' });
@@ -310,7 +313,64 @@ app.post('/api/reset-password', async (req, res) => {
     });
     if (!user) return res.status(400).json({ error: 'No account found with this email or username.' });
 
+    // Generate secure token
+    const resetToken = crypto.randomBytes(32).toString('hex');
+    user.resetPasswordToken = resetToken;
+    user.resetPasswordExpires = Date.now() + 3600000; // 1 hour
+    await user.save();
+
+    // Configure Nodemailer
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
+      }
+    });
+
+    const resetUrl = `https://randbahjat.github.io/CineWatch/reset-password.html?token=${resetToken}`;
+
+    const mailOptions = {
+      from: `"CineWatch Support" <${process.env.EMAIL_USER}>`,
+      to: user.email,
+      subject: 'CineWatch Password Reset',
+      html: `
+        <h3>Password Reset Request</h3>
+        <p>You requested a password reset for your CineWatch account.</p>
+        <p>Click the link below to set a new password. This link is valid for 1 hour.</p>
+        <a href="${resetUrl}">Reset Password</a>
+        <p>If you did not request this, please ignore this email.</p>
+      `
+    };
+
+    await transporter.sendMail(mailOptions);
     res.json({ message: 'A password reset link has been sent to your email.' });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Failed to send email. Please ensure EMAIL_USER and EMAIL_PASS are configured on Render.' });
+  }
+});
+
+// POST confirm password reset
+app.post('/api/reset-password-confirm', async (req, res) => {
+  const { token, newPassword } = req.body;
+  if (!token || !newPassword) return res.status(400).json({ error: 'Token and new password are required.' });
+
+  try {
+    const user = await User.findOne({
+      resetPasswordToken: token,
+      resetPasswordExpires: { $gt: Date.now() }
+    });
+
+    if (!user) return res.status(400).json({ error: 'Password reset token is invalid or has expired.' });
+
+    const salt = await bcrypt.genSalt(10);
+    user.password_hash = await bcrypt.hash(newPassword, salt);
+    user.resetPasswordToken = undefined;
+    user.resetPasswordExpires = undefined;
+    await user.save();
+
+    res.json({ message: 'Password has been successfully reset. You may now log in.' });
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Database error.' });
