@@ -26141,7 +26141,7 @@ function trackVisit() {
     return;
   }
   
-  fetch('http://localhost:3000/api/track-visit', {
+  fetch('https://cinewatch-maaa.onrender.com/api/track-visit', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' }
   })
