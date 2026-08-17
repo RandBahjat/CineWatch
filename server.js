@@ -308,7 +308,7 @@ app.post('/api/reset-password', async (req, res) => {
 // ----------------------------------------------------
 // 8. ANALYTICS: TRACK VISIT & GET STATS
 // ----------------------------------------------------
-app.post('/api/track-visit', async (req, res) => {
+app.post('/api/page-load', async (req, res) => {
   try {
     const stats = await SiteStats.findOneAndUpdate(
       { metricName: 'global' },
