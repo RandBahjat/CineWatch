@@ -48,7 +48,10 @@ async function loadMediaFromAPI() {
 
     // Apply post-processing
     MOVIES.forEach(m => {
-      if (!m.id) m.id = m._id || String(Math.random());
+      // Auto-generate a stable id from the title if none exists
+      if (!m.id) {
+        m.id = m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      }
 
       // Apply featured/trending from title lists
       m.featured = FEATURED_TITLES.includes(m.title);

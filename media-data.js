@@ -1,11 +1,9 @@
 // CineWatch Media Data
 // Edit this file to add, remove, or reorder your movies and series.
-// Push to GitHub for changes to go live on your site.
-// To add an entry, copy an existing block, paste it at the top or bottom, and update the fields.
+// Push to GitHub for changes to go live.
 
 window._MEDIA_DATA = [
   {
-    "id": "6a832f82aaba3a457ed93296",
     "title": "The Invite",
     "type": "Movie",
     "year": 2026,
@@ -30,7 +28,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93297",
     "title": "Spider-Man: Brand New Day",
     "type": "Movie",
     "year": 2026,
@@ -58,7 +55,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93298",
     "title": "Supergirl",
     "type": "Movie",
     "year": 2026,
@@ -86,7 +82,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93299",
     "title": "Batman: Caped Crusader",
     "type": "TV Show",
     "year": 2024,
@@ -206,7 +201,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9329a",
     "title": "The Odyssey",
     "type": "Movie",
     "year": 2026,
@@ -236,7 +230,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9329b",
     "title": "Avatar Aang: The Last Airbender",
     "type": "Movie",
     "year": 2025,
@@ -266,7 +259,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9329c",
     "title": "Obsession",
     "type": "Movie",
     "year": 2025,
@@ -291,7 +283,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9329d",
     "title": "Master of the Universe",
     "type": "Movie",
     "year": 2026,
@@ -318,7 +309,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9329e",
     "title": "Camp Rock 3",
     "type": "Movie",
     "year": 2026,
@@ -345,7 +335,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9329f",
     "title": "Evil Dead Burn",
     "type": "Movie",
     "year": 2026,
@@ -370,7 +359,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932aa",
     "title": "The Dark Knight Rises",
     "type": "Movie",
     "year": 2012,
@@ -402,7 +390,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932ab",
     "title": "The Death of Robin Hood",
     "type": "Movie",
     "year": 2026,
@@ -428,7 +415,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932a9",
     "title": "The Dark Knight",
     "type": "Movie",
     "year": 2008,
@@ -460,7 +446,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932a8",
     "title": "Batman Begins",
     "type": "Movie",
     "year": 2005,
@@ -491,7 +476,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932a7",
     "title": "Soulm8te",
     "type": "Movie",
     "year": 2026,
@@ -517,7 +501,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932a6",
     "title": "Backrooms",
     "type": "Movie",
     "year": 2026,
@@ -548,7 +531,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932a4",
     "title": "Project Hail Mary",
     "type": "Movie",
     "year": 2026,
@@ -574,7 +556,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932a3",
     "title": "Michael",
     "type": "Movie",
     "year": 2026,
@@ -600,7 +581,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932a2",
     "title": "The Last House",
     "type": "Movie",
     "year": 2026,
@@ -626,7 +606,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932a0",
     "title": "Minions & Monsters",
     "type": "Movie",
     "year": 2026,
@@ -654,7 +633,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932a1",
     "title": "Young Washington",
     "type": "Movie",
     "year": 2026,
@@ -681,7 +659,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932a5",
     "title": "Reacher",
     "type": "TV Show",
     "year": 2022,
@@ -860,7 +837,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed932b2",
     "title": "Spider-Man: Homecoming",
     "type": "Movie",
     "year": 2017,
@@ -886,7 +862,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932b5",
     "title": "Iron Man",
     "type": "Movie",
     "year": 2008,
@@ -913,7 +888,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932b4",
     "title": "Spider-Man: No Way Home",
     "type": "Movie",
     "year": 2011,
@@ -940,7 +914,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932b3",
     "title": "Spider-Man: Far From Home",
     "type": "Movie",
     "year": 2019,
@@ -966,7 +939,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932b1",
     "title": "Avengers: Endgame",
     "type": "Movie",
     "year": 2019,
@@ -997,7 +969,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932b0",
     "title": "Avengers: Infinity War",
     "type": "Movie",
     "year": 2018,
@@ -1030,7 +1001,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932af",
     "title": "Avengers: Age of Ultron",
     "type": "Movie",
     "year": 2015,
@@ -1064,7 +1034,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932ae",
     "title": "The Avengers",
     "type": "Movie",
     "year": 2012,
@@ -1096,7 +1065,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932ad",
     "title": "The Amazing Spider-Man 2",
     "type": "Movie",
     "year": 2014,
@@ -1127,7 +1095,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932ac",
     "title": "The Amazing Spider-Man",
     "type": "Movie",
     "year": 2012,
@@ -1158,7 +1125,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932b7",
     "title": "Iron Man 3",
     "type": "Movie",
     "year": 2010,
@@ -1184,7 +1150,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932c5",
     "title": "Harry Potter and the Prisoner of Azkaban ",
     "type": "Movie",
     "year": 2004,
@@ -1211,7 +1176,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932c4",
     "title": "Harry Potter and the Chamber of Secrets  ",
     "type": "Movie",
     "year": 2002,
@@ -1237,7 +1201,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932c3",
     "title": "Harry Potter and the Sorcerer's Stone ",
     "type": "Movie",
     "year": 2001,
@@ -1263,7 +1226,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932c2",
     "title": "Aquaman: The Lost Kingdom",
     "type": "Movie",
     "year": 2023,
@@ -1289,7 +1251,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932c1",
     "title": "Aquaman",
     "type": "Movie",
     "year": 2018,
@@ -1315,7 +1276,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932c0",
     "title": "Superman",
     "type": "Movie",
     "year": 2025,
@@ -1341,7 +1301,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932bf",
     "title": "The Batman ",
     "type": "Movie",
     "year": 2022,
@@ -1367,7 +1326,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932bd",
     "title": "Thor: Ragnarok ",
     "type": "Movie",
     "year": 2017,
@@ -1393,7 +1351,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932bc",
     "title": "Thor: The Dark World ",
     "type": "Movie",
     "year": 2013,
@@ -1419,7 +1376,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932bb",
     "title": "Thor ",
     "type": "Movie",
     "year": 2011,
@@ -1445,7 +1401,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932ba",
     "title": "Captain America: Civil War ",
     "type": "Movie",
     "year": 2016,
@@ -1472,7 +1427,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932b9",
     "title": "Captain America: The Winter Soldier ",
     "type": "Movie",
     "year": 2014,
@@ -1499,7 +1453,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932b8",
     "title": "Captain America: The First Avenger ",
     "type": "Movie",
     "year": 2011,
@@ -1525,7 +1478,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932b6",
     "title": "Iron Man 2",
     "type": "Movie",
     "year": 2010,
@@ -1551,7 +1503,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932be",
     "title": "Thor: Love and Thunder ",
     "type": "Movie",
     "year": 2017,
@@ -1578,7 +1529,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932cb",
     "title": "Spider-Man",
     "type": "Movie",
     "year": 2002,
@@ -1604,7 +1554,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932d3",
     "title": "Logan ",
     "type": "Movie",
     "year": 2017,
@@ -1630,7 +1579,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932d2",
     "title": "The Wolverine ",
     "type": "Movie",
     "year": 2013,
@@ -1656,7 +1604,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932d1",
     "title": "X-Men Origin: Wolverine ",
     "type": "Movie",
     "year": 2009,
@@ -1682,7 +1629,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932d0",
     "title": "Deadpool & Wolverine ",
     "type": "Movie",
     "year": 2024,
@@ -1709,7 +1655,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932cf",
     "title": "Deadpool 2",
     "type": "Movie",
     "year": 2018,
@@ -1735,7 +1680,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932ce",
     "title": "Deadpool",
     "type": "Movie",
     "year": 2016,
@@ -1761,7 +1705,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932cd",
     "title": "Spider-Man 3",
     "type": "Movie",
     "year": 2007,
@@ -1787,7 +1730,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932cc",
     "title": "Spider-Man 2",
     "type": "Movie",
     "year": 2004,
@@ -1813,7 +1755,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932ca",
     "title": "Harry Potter and the Deathly Hallows Part 2",
     "type": "Movie",
     "year": 2011,
@@ -1839,7 +1780,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932c9",
     "title": "Harry Potter and the Deathly Hallows Part 1",
     "type": "Movie",
     "year": 2010,
@@ -1866,7 +1806,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932c8",
     "title": "Harry Potter and the Half Blood Prince ",
     "type": "Movie",
     "year": 2009,
@@ -1893,7 +1832,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932c7",
     "title": "Harry Potter and the Order of the Phoenix ",
     "type": "Movie",
     "year": 2007,
@@ -1920,7 +1858,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932c6",
     "title": "Harry Potter and the Goblet of Fire ",
     "type": "Movie",
     "year": 2005,
@@ -1947,7 +1884,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932d8",
     "title": "X-Men: Days of Future Past",
     "type": "Movie",
     "year": 2014,
@@ -1973,7 +1909,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932db",
     "title": "The New Mutant ",
     "type": "Movie",
     "year": 2020,
@@ -1999,7 +1934,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932da",
     "title": "Dark Phoenix",
     "type": "Movie",
     "year": 2019,
@@ -2025,7 +1959,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932d9",
     "title": "X-Men: Apocalypse",
     "type": "Movie",
     "year": 2016,
@@ -2051,7 +1984,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932d7",
     "title": "X-Men: First Class",
     "type": "Movie",
     "year": 2011,
@@ -2077,7 +2009,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932d6",
     "title": "X-Men: The Last Stand",
     "type": "Movie",
     "year": 2006,
@@ -2103,7 +2034,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932d5",
     "title": "X-Men United",
     "type": "Movie",
     "year": 2003,
@@ -2129,7 +2059,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932d4",
     "title": "X-Men ",
     "type": "Movie",
     "year": 2000,
@@ -2155,7 +2084,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932ec",
     "title": "John Wick",
     "type": "Movie",
     "year": 2014,
@@ -2181,7 +2109,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932f4",
     "title": "Ted 2",
     "type": "Movie",
     "year": 2015,
@@ -2206,7 +2133,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932f3",
     "title": "Ted",
     "type": "Movie",
     "year": 2012,
@@ -2231,7 +2157,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932f2",
     "title": "Cars 3",
     "type": "Movie",
     "year": 2017,
@@ -2259,7 +2184,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932f1",
     "title": "Cars 2",
     "type": "Movie",
     "year": 2011,
@@ -2287,7 +2211,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932f0",
     "title": "Cars",
     "type": "Movie",
     "year": 2006,
@@ -2315,7 +2238,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932ef",
     "title": "John Wick: Chapter 4",
     "type": "Movie",
     "year": 2023,
@@ -2341,7 +2263,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932ee",
     "title": "John Wick: Chapter 3",
     "type": "Movie",
     "year": 2019,
@@ -2367,7 +2288,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932ed",
     "title": "John Wick: Chapter 2",
     "type": "Movie",
     "year": 2017,
@@ -2393,7 +2313,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932eb",
     "title": "Ghost Rider: Spirit of Vengeance",
     "type": "Movie",
     "year": 2011,
@@ -2419,7 +2338,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932ea",
     "title": "Ghost Rider",
     "type": "Movie",
     "year": 2007,
@@ -2445,7 +2363,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932e9",
     "title": "Zack Snyder's Justice League",
     "type": "Movie",
     "year": 2021,
@@ -2472,7 +2389,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932e7",
     "title": "Man of Steel",
     "type": "Movie",
     "year": 2013,
@@ -2498,7 +2414,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932dc",
     "title": "Thunderbolts ",
     "type": "Movie",
     "year": 2025,
@@ -2524,7 +2439,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932dd",
     "title": "The Incredible Hulk  ",
     "type": "Movie",
     "year": 2008,
@@ -2550,7 +2464,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932de",
     "title": "Guardians of the Galaxy  ",
     "type": "Movie",
     "year": 2014,
@@ -2577,7 +2490,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932df",
     "title": "Guardians of the Galaxy: Vol.2 ",
     "type": "Movie",
     "year": 2017,
@@ -2604,7 +2516,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932e0",
     "title": "Guardians of the Galaxy: Vol.3 ",
     "type": "Movie",
     "year": 2023,
@@ -2631,7 +2542,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932e1",
     "title": "Ant-Man ",
     "type": "Movie",
     "year": 2015,
@@ -2658,7 +2568,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932e3",
     "title": "Ant-Man and the Wasp: Quantumania ",
     "type": "Movie",
     "year": 2023,
@@ -2685,7 +2594,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932e4",
     "title": "Black Panther",
     "type": "Movie",
     "year": 2018,
@@ -2711,7 +2619,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932e2",
     "title": "Ant-Man and the Wasp ",
     "type": "Movie",
     "year": 2018,
@@ -2738,7 +2645,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932e5",
     "title": "Black Panther: Wakanda Forever",
     "type": "Movie",
     "year": 2022,
@@ -2765,7 +2671,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932e6",
     "title": "The Flash",
     "type": "Movie",
     "year": 2023,
@@ -2791,7 +2696,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932e8",
     "title": "Batman v Superman: Dawn of Justice",
     "type": "Movie",
     "year": 2016,
@@ -2817,7 +2721,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93301",
     "title": "Doctor Strange in the Multiverse of Madness",
     "type": "Movie",
     "year": 2022,
@@ -2844,7 +2747,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93302",
     "title": "Catch Me if You Can",
     "type": "Movie",
     "year": 2002,
@@ -2870,7 +2772,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93303",
     "title": "Top Gun",
     "type": "Movie",
     "year": 1986,
@@ -2895,7 +2796,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93304",
     "title": "Top Gun: Mavrick",
     "type": "Movie",
     "year": 2022,
@@ -2920,7 +2820,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93305",
     "title": "Se7en",
     "type": "Movie",
     "year": 1995,
@@ -2947,7 +2846,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93306",
     "title": "Inception",
     "type": "Movie",
     "year": 2010,
@@ -2974,7 +2872,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93307",
     "title": "Mr. & Mrs. Smith",
     "type": "Movie",
     "year": 2005,
@@ -3001,7 +2898,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93308",
     "title": "Mission: Impossible",
     "type": "Movie",
     "year": 1996,
@@ -3027,7 +2923,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93309",
     "title": "Mission: Impossible II",
     "type": "Movie",
     "year": 2000,
@@ -3053,7 +2948,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9330a",
     "title": "Mission: Impossible III",
     "type": "Movie",
     "year": 2006,
@@ -3079,7 +2973,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932f9",
     "title": "Venom: The Last Dance",
     "type": "Movie",
     "year": 2024,
@@ -3105,7 +2998,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932ff",
     "title": "Punisher: One Last Kill",
     "type": "Movie",
     "year": 2026,
@@ -3130,7 +3022,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932f5",
     "title": "Home Alone",
     "type": "Movie",
     "year": 1990,
@@ -3155,7 +3046,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932f6",
     "title": "Home Alone 2: Lost in New York",
     "type": "Movie",
     "year": 1992,
@@ -3180,7 +3070,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932f7",
     "title": "Venom",
     "type": "Movie",
     "year": 2018,
@@ -3206,7 +3095,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932f8",
     "title": "Venom: Let There Be Carnage",
     "type": "Movie",
     "year": 2021,
@@ -3232,7 +3120,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93300",
     "title": "Doctor Strange",
     "type": "Movie",
     "year": 2016,
@@ -3259,7 +3146,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932fa",
     "title": "Transformers One",
     "type": "Movie",
     "year": 2024,
@@ -3287,7 +3173,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932fb",
     "title": "Sonic the Hedgehog",
     "type": "Movie",
     "year": 2020,
@@ -3315,7 +3200,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932fc",
     "title": "Sonic the Hedgehog 2",
     "type": "Movie",
     "year": 2022,
@@ -3343,7 +3227,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932fd",
     "title": "Sonic the Hedgehog 3",
     "type": "Movie",
     "year": 2024,
@@ -3371,7 +3254,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed932fe",
     "title": "The Green Mile",
     "type": "Movie",
     "year": 1999,
@@ -3397,7 +3279,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9331a",
     "title": "Shrek Forever After",
     "type": "Movie",
     "year": 2010,
@@ -3426,7 +3307,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9331b",
     "title": "Tom and Jerry: Forbidden Compass",
     "type": "Movie",
     "year": 2025,
@@ -3455,7 +3335,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9331c",
     "title": "Tom and Jerry Cowboy Up ",
     "type": "Movie",
     "year": 2022,
@@ -3484,7 +3363,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9331d",
     "title": "Batman: Mask of the Phantasm ",
     "type": "Movie",
     "year": 1993,
@@ -3513,7 +3391,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9331e",
     "title": "Batman: Hush",
     "type": "Movie",
     "year": 2019,
@@ -3542,7 +3419,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9331f",
     "title": "Batman vs. Robin",
     "type": "Movie",
     "year": 2015,
@@ -3571,7 +3447,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93320",
     "title": "Batman: The Killing Joke",
     "type": "Movie",
     "year": 2016,
@@ -3601,7 +3476,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93321",
     "title": "Batman: The Dark Knight Return - Part 1",
     "type": "Movie",
     "year": 2012,
@@ -3630,7 +3504,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93322",
     "title": "Batman: The Dark Knight Return - Part 2",
     "type": "Movie",
     "year": 2013,
@@ -3659,7 +3532,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93323",
     "title": "Batman: The Long Halloween, Part 1",
     "type": "Movie",
     "year": 2021,
@@ -3688,7 +3560,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93324",
     "title": "Batman: The Long Halloween, Part 2",
     "type": "Movie",
     "year": 2021,
@@ -3717,7 +3588,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93325",
     "title": "Son of Batman",
     "type": "Movie",
     "year": 2014,
@@ -3744,7 +3614,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93326",
     "title": "Batman and Harley Quinn",
     "type": "Movie",
     "year": 2017,
@@ -3772,7 +3641,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93327",
     "title": "Central Intelligence",
     "type": "Movie",
     "year": 2016,
@@ -3798,7 +3666,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9330f",
     "title": "Mission: Impossible - The Final Reckoning ",
     "type": "Movie",
     "year": 2025,
@@ -3824,7 +3691,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93318",
     "title": "Shrek 2",
     "type": "Movie",
     "year": 2004,
@@ -3853,7 +3719,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93319",
     "title": "Shrek the Third",
     "type": "Movie",
     "year": 2007,
@@ -3882,7 +3747,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9330c",
     "title": "Mission: Impossible - Rogue Nation",
     "type": "Movie",
     "year": 2015,
@@ -3908,7 +3772,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9330d",
     "title": "Mission: Impossible - Fallout",
     "type": "Movie",
     "year": 2018,
@@ -3934,7 +3797,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9330e",
     "title": "Mission: Impossible - Dead Reckoning Part One ",
     "type": "Movie",
     "year": 2023,
@@ -3960,7 +3822,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9330b",
     "title": "Mission: Impossible - Ghost Protocol",
     "type": "Movie",
     "year": 2011,
@@ -3986,7 +3847,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93310",
     "title": " Spider-Man: Into the Spider Verse",
     "type": "Movie",
     "year": 2018,
@@ -4014,7 +3874,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93311",
     "title": " Spider-Man: Across the Spider Verse",
     "type": "Movie",
     "year": 2023,
@@ -4042,7 +3901,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93313",
     "title": "Kung Fu Panda 2",
     "type": "Movie",
     "year": 2011,
@@ -4070,7 +3928,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93314",
     "title": "Kung Fu Panda 3",
     "type": "Movie",
     "year": 2016,
@@ -4098,7 +3955,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93315",
     "title": "Kung Fu Panda 4",
     "type": "Movie",
     "year": 2024,
@@ -4126,7 +3982,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93316",
     "title": "Rise of the Guardians",
     "type": "Movie",
     "year": 2012,
@@ -4156,7 +4011,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93317",
     "title": "Shrek",
     "type": "Movie",
     "year": 2001,
@@ -4185,7 +4039,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93312",
     "title": "Kung Fu Panda",
     "type": "Movie",
     "year": 2008,
@@ -4213,7 +4066,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93337",
     "title": "Captain Marvel",
     "type": "Movie",
     "year": 2019,
@@ -4239,7 +4091,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93338",
     "title": "The Marvels",
     "type": "Movie",
     "year": 2023,
@@ -4266,7 +4117,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93339",
     "title": "Ballerina",
     "type": "Movie",
     "year": 2025,
@@ -4291,7 +4141,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9333a",
     "title": "Wonder Woman",
     "type": "Movie",
     "year": 2017,
@@ -4318,7 +4167,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9333b",
     "title": "V for Vendetta",
     "type": "Movie",
     "year": 2006,
@@ -4345,7 +4193,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9333c",
     "title": "Transformers",
     "type": "Movie",
     "year": 2007,
@@ -4371,7 +4218,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9333d",
     "title": "Transformers: Revenge of the Fallen",
     "type": "Movie",
     "year": 2009,
@@ -4397,7 +4243,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9333e",
     "title": "Transformers: Dark of the Moon",
     "type": "Movie",
     "year": 20011,
@@ -4423,7 +4268,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9333f",
     "title": "Transformers: Age of Extinction",
     "type": "Movie",
     "year": 2014,
@@ -4449,7 +4293,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93340",
     "title": "Transformers: The Last Knight",
     "type": "Movie",
     "year": 2017,
@@ -4475,7 +4318,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93341",
     "title": "Transformers: Rise of the Beast",
     "type": "Movie",
     "year": 2023,
@@ -4501,7 +4343,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93342",
     "title": "Fantastic Four",
     "type": "Movie",
     "year": 2005,
@@ -4527,7 +4368,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93343",
     "title": "Fantastic Four: Rise of the Silver Surfer",
     "type": "Movie",
     "year": 2007,
@@ -4553,7 +4393,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93344",
     "title": "Fantastic Four",
     "type": "Movie",
     "year": 2015,
@@ -4579,7 +4418,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93336",
     "title": "in the Grey",
     "type": "Movie",
     "year": 2026,
@@ -4604,7 +4442,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93335",
     "title": "Green Lantern",
     "type": "Movie",
     "year": 2011,
@@ -4630,7 +4467,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93328",
     "title": "Wrath of Man",
     "type": "Movie",
     "year": 2021,
@@ -4656,7 +4492,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93329",
     "title": "The Godfather",
     "type": "Movie",
     "year": 1972,
@@ -4681,7 +4516,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9332a",
     "title": "The Godfather Part II",
     "type": "Movie",
     "year": 1974,
@@ -4706,7 +4540,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9332b",
     "title": "The Godfather Part III",
     "type": "Movie",
     "year": 1990,
@@ -4731,7 +4564,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9332c",
     "title": "Back to the Future",
     "type": "Movie",
     "year": 1985,
@@ -4757,7 +4589,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9332d",
     "title": "Back to the Future II",
     "type": "Movie",
     "year": 1989,
@@ -4783,7 +4614,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9332e",
     "title": "Back to the Future III",
     "type": "Movie",
     "year": 1990,
@@ -4810,7 +4640,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9332f",
     "title": "Toy Story",
     "type": "Movie",
     "year": 1995,
@@ -4839,7 +4668,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93330",
     "title": "Toy Story 2",
     "type": "Movie",
     "year": 1999,
@@ -4868,7 +4696,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93331",
     "title": "Toy Story 3",
     "type": "Movie",
     "year": 2010,
@@ -4897,7 +4724,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93332",
     "title": "Toy Story 4",
     "type": "Movie",
     "year": 2019,
@@ -4926,7 +4752,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93333",
     "title": "Toy Story 5",
     "type": "Movie",
     "year": 2026,
@@ -4955,7 +4780,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93334",
     "title": "Titanic",
     "type": "Movie",
     "year": 1997,
@@ -4980,7 +4804,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93351",
     "title": "How to Train Your Dragon 2",
     "type": "Movie",
     "year": 2014,
@@ -5009,7 +4832,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93354",
     "title": "Hacksaw Ridge",
     "type": "Movie",
     "year": 2016,
@@ -5036,7 +4858,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93355",
     "title": "The Notebook ",
     "type": "Movie",
     "year": 2004,
@@ -5061,7 +4882,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93356",
     "title": "The Wolf of Wall Street ",
     "type": "Movie",
     "year": 2013,
@@ -5088,7 +4908,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93357",
     "title": "Black Widow ",
     "type": "Movie",
     "year": 2021,
@@ -5114,7 +4933,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93358",
     "title": "The Departed ",
     "type": "Movie",
     "year": 2006,
@@ -5140,7 +4958,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93359",
     "title": "Shutter Island",
     "type": "Movie",
     "year": 2010,
@@ -5165,7 +4982,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9335a",
     "title": "Free Guy",
     "type": "Movie",
     "year": 2021,
@@ -5192,7 +5008,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9335b",
     "title": "After",
     "type": "Movie",
     "year": 2019,
@@ -5217,7 +5032,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9335c",
     "title": "After: We Collided",
     "type": "Movie",
     "year": 2020,
@@ -5242,7 +5056,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9335d",
     "title": "After: We Fell",
     "type": "Movie",
     "year": 2021,
@@ -5267,7 +5080,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9335e",
     "title": "After Ever Happy",
     "type": "Movie",
     "year": 2022,
@@ -5292,7 +5104,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9335f",
     "title": "After Everything",
     "type": "Movie",
     "year": 2023,
@@ -5317,7 +5128,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93360",
     "title": "Forrest Gump",
     "type": "Movie",
     "year": 1997,
@@ -5342,7 +5152,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93352",
     "title": "How to Train Your Dragon: The Hidden World",
     "type": "Movie",
     "year": 2019,
@@ -5371,7 +5180,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93353",
     "title": "How to Train Your Dragon",
     "type": "Movie",
     "year": 2025,
@@ -5397,7 +5205,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93345",
     "title": "The Fantastic Four: First Steps",
     "type": "Movie",
     "year": 2025,
@@ -5423,7 +5230,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93346",
     "title": "Fight Club",
     "type": "Movie",
     "year": 1999,
@@ -5448,7 +5254,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93347",
     "title": "Jack Reacher",
     "type": "Movie",
     "year": 2012,
@@ -5474,7 +5279,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93348",
     "title": "Jack Reacher: Never Go Back",
     "type": "Movie",
     "year": 2016,
@@ -5500,7 +5304,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93349",
     "title": "Batman: The Animated Series",
     "type": "TV Show",
     "year": 1992,
@@ -5890,7 +5693,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9334a",
     "title": "The New Batman Adventure",
     "type": "TV Show",
     "year": 1997,
@@ -6026,7 +5828,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9334c",
     "title": "The Shawshank Redemption",
     "type": "Movie",
     "year": 1994,
@@ -6050,7 +5851,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9334d",
     "title": "Big Hero 6",
     "type": "Movie",
     "year": 2014,
@@ -6079,7 +5879,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9334e",
     "title": "F1",
     "type": "Movie",
     "year": 2025,
@@ -6105,7 +5904,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9334f",
     "title": "Sinners",
     "type": "Movie",
     "year": 2025,
@@ -6132,7 +5930,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93350",
     "title": "How to Train Your Dragon",
     "type": "Movie",
     "year": 2010,
@@ -6161,7 +5958,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9334b",
     "title": "War Machine",
     "type": "Movie",
     "year": 2026,
@@ -6187,7 +5983,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9336d",
     "title": "From",
     "type": "TV Show",
     "year": 2022,
@@ -6395,7 +6190,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9336e",
     "title": "Transformers: Prime",
     "type": "TV Show",
     "year": 2010,
@@ -6699,7 +6493,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9336f",
     "title": "Spider-Man: The Animated Series",
     "type": "TV Show",
     "year": 1994,
@@ -7012,7 +6805,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93370",
     "title": "Justice League: Crisis on Infinite Earths Part One",
     "type": "Movie",
     "year": 2024,
@@ -7040,7 +6832,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93371",
     "title": "Justice League: Crisis on Infinite Earths – Part Two",
     "type": "Movie",
     "year": 2024,
@@ -7068,7 +6859,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93372",
     "title": "Justice League: Crisis on Infinite Earths – Part Three",
     "type": "Movie",
     "year": 2024,
@@ -7096,7 +6886,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93373",
     "title": "Justice League",
     "type": "Movie",
     "year": 2017,
@@ -7122,7 +6911,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93374",
     "title": "Justice League Dark",
     "type": "Movie",
     "year": 2017,
@@ -7150,7 +6938,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93375",
     "title": "The Spectacular Spider-Man",
     "type": "TV Show",
     "year": 2008,
@@ -7292,7 +7079,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93376",
     "title": "Breaking Bad",
     "type": "TV Show",
     "year": 2008,
@@ -7596,7 +7382,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93377",
     "title": "The Boys",
     "type": "TV Show",
     "year": 2019,
@@ -7809,7 +7594,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93378",
     "title": "The Batman",
     "type": "TV Show",
     "year": 2004,
@@ -8122,7 +7906,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9336b",
     "title": "Daredevil",
     "type": "TV Show",
     "year": 2015,
@@ -8320,7 +8103,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9336c",
     "title": "Daredevil: Born Again",
     "type": "TV Show",
     "year": 2025,
@@ -8429,7 +8211,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93361",
     "title": "Avatar",
     "type": "Movie",
     "year": 2009,
@@ -8456,7 +8237,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93362",
     "title": "Avatar: The Way of Water",
     "type": "Movie",
     "year": 2022,
@@ -8483,7 +8263,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93363",
     "title": "Avatar: Fire and Ash",
     "type": "Movie",
     "year": 2025,
@@ -8510,7 +8289,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93364",
     "title": "Captain America: Brave New World",
     "type": "Movie",
     "year": 2025,
@@ -8536,7 +8314,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93365",
     "title": "Mad Max: Fury Road",
     "type": "Movie",
     "year": 2015,
@@ -8562,7 +8339,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93366",
     "title": "Furiosa: A Mad Max Saga",
     "type": "Movie",
     "year": 2024,
@@ -8588,7 +8364,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93367",
     "title": "Invincible",
     "type": "TV Show",
     "year": 2021,
@@ -8765,7 +8540,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93368",
     "title": "Now You See Me",
     "type": "Movie",
     "year": 2013,
@@ -8791,7 +8565,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93369",
     "title": "Now You See Me 2",
     "type": "Movie",
     "year": 2016,
@@ -8819,7 +8592,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9336a",
     "title": "Now You See Me: Now You Don't",
     "type": "Movie",
     "year": 2025,
@@ -8846,7 +8618,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9338a",
     "title": "The Bourne Legacy",
     "type": "Movie",
     "year": 2012,
@@ -8872,7 +8643,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9338b",
     "title": "Jason Bourne",
     "type": "Movie",
     "year": 2016,
@@ -8898,7 +8668,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9338c",
     "title": "The Martian",
     "type": "Movie",
     "year": 2015,
@@ -8924,7 +8693,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9338d",
     "title": "Oppenheimer",
     "type": "Movie",
     "year": 2023,
@@ -8950,7 +8718,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9338e",
     "title": "Pulp Fiction",
     "type": "Movie",
     "year": 1994,
@@ -8975,7 +8742,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9338f",
     "title": "Moana",
     "type": "Movie",
     "year": 2016,
@@ -9005,7 +8771,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93390",
     "title": "Moana 2",
     "type": "Movie",
     "year": 2024,
@@ -9035,7 +8800,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93391",
     "title": "Moana ",
     "type": "Movie",
     "year": 2026,
@@ -9063,7 +8827,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93392",
     "title": "Pirates of the Caribbean: The Curse of the Black Pearl ",
     "type": "Movie",
     "year": 2003,
@@ -9089,7 +8852,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93393",
     "title": "Gone Girl ",
     "type": "Movie",
     "year": 2014,
@@ -9115,7 +8877,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93394",
     "title": "Ben 10",
     "type": "TV Show",
     "year": 2005,
@@ -9361,7 +9122,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93395",
     "title": "Ben 10: Alien Force",
     "type": "TV Show",
     "year": 2008,
@@ -9591,7 +9351,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93396",
     "title": "Ben 10: Ultimate Alien",
     "type": "TV Show",
     "year": 2010,
@@ -9845,7 +9604,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93397",
     "title": "Ben 10: Omniverse",
     "type": "TV Show",
     "year": 2012,
@@ -10237,7 +9995,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93398",
     "title": "Jumanji: Welcome to the Jungle ",
     "type": "Movie",
     "year": 2017,
@@ -10264,7 +10021,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93399",
     "title": "Jumanji: The Next Level ",
     "type": "Movie",
     "year": 2019,
@@ -10291,7 +10047,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93388",
     "title": "The Bourne Supremacy",
     "type": "Movie",
     "year": 2004,
@@ -10317,7 +10072,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93389",
     "title": "The Bourne Ultimatum",
     "type": "Movie",
     "year": 2007,
@@ -10343,7 +10097,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93379",
     "title": "The Nun",
     "type": "Movie",
     "year": 2018,
@@ -10370,7 +10123,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9337a",
     "title": "Puss in Boots",
     "type": "Movie",
     "year": 2011,
@@ -10398,7 +10150,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9337b",
     "title": "Puss in Boots: The Last Wish",
     "type": "Movie",
     "year": 2022,
@@ -10426,7 +10177,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9337c",
     "title": "Miraculous: Tales of Ladybug & Cat Noir",
     "type": "TV Show",
     "year": 2015,
@@ -11116,7 +10866,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9337d",
     "title": "Miraculous: Ladybug & Cat Noir, The Movie ",
     "type": "Movie",
     "year": 2023,
@@ -11145,7 +10894,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9337e",
     "title": "Miraculous World: New York, United HeroeZ  ",
     "type": "Movie",
     "year": 2020,
@@ -11173,7 +10921,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9337f",
     "title": "Miraculous World: London, at the Edge of Time  ",
     "type": "Movie",
     "year": 2024,
@@ -11202,7 +10949,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93381",
     "title": "The Polar Express",
     "type": "Movie",
     "year": 2004,
@@ -11231,7 +10977,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93382",
     "title": "Hotel Transylvania",
     "type": "Movie",
     "year": 2012,
@@ -11259,7 +11004,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93383",
     "title": "Hotel Transylvania 2",
     "type": "Movie",
     "year": 2015,
@@ -11287,7 +11031,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93384",
     "title": "Hotel Transylvania 3",
     "type": "Movie",
     "year": 2018,
@@ -11315,7 +11058,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93385",
     "title": "The Housemaid",
     "type": "Movie",
     "year": 2025,
@@ -11341,7 +11083,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93386",
     "title": "Interstellar",
     "type": "Movie",
     "year": 2015,
@@ -11367,7 +11108,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93387",
     "title": "The Bourne Identity",
     "type": "Movie",
     "year": 2002,
@@ -11393,7 +11133,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93380",
     "title": "Miraculous World: Paris, Tales of Shadybug and Claw Noir  ",
     "type": "Movie",
     "year": 2023,
@@ -11422,7 +11161,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933a9",
     "title": "The Scorpion King",
     "type": "Movie",
     "year": 2002,
@@ -11448,7 +11186,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933aa",
     "title": "Pirates of the Caribbean: At World's End",
     "type": "Movie",
     "year": 2007,
@@ -11474,7 +11211,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933ab",
     "title": "Rocky",
     "type": "Movie",
     "year": 1976,
@@ -11499,7 +11235,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933ac",
     "title": "Rocky II",
     "type": "Movie",
     "year": 1979,
@@ -11524,7 +11259,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933ad",
     "title": "Rocky III",
     "type": "Movie",
     "year": 1982,
@@ -11549,7 +11283,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933ae",
     "title": "Rocky IV",
     "type": "Movie",
     "year": 1985,
@@ -11574,7 +11307,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933af",
     "title": "Rocky V",
     "type": "Movie",
     "year": 1990,
@@ -11599,7 +11331,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933b0",
     "title": "Grown Ups",
     "type": "Movie",
     "year": 2010,
@@ -11623,7 +11354,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933b1",
     "title": "Grown Ups 2",
     "type": "Movie",
     "year": 2013,
@@ -11647,7 +11377,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933b2",
     "title": "Red One",
     "type": "Movie",
     "year": 2024,
@@ -11674,7 +11403,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933b3",
     "title": "World War Z",
     "type": "Movie",
     "year": 2013,
@@ -11700,7 +11428,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933b4",
     "title": "Shang-Chi and the Legend of the Ten Rings",
     "type": "Movie",
     "year": 2021,
@@ -11726,7 +11453,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933b5",
     "title": "La La Land",
     "type": "Movie",
     "year": 2016,
@@ -11753,7 +11479,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933a7",
     "title": "Baywatch",
     "type": "Movie",
     "year": 2017,
@@ -11779,7 +11504,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933a8",
     "title": "The Maze Runner",
     "type": "Movie",
     "year": 2014,
@@ -11806,7 +11530,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9339a",
     "title": "Casino Royal ",
     "type": "Movie",
     "year": 2006,
@@ -11833,7 +11556,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9339b",
     "title": "Quantum of Solace ",
     "type": "Movie",
     "year": 2008,
@@ -11860,7 +11582,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9339c",
     "title": "Skyfall ",
     "type": "Movie",
     "year": 2012,
@@ -11887,7 +11608,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9339d",
     "title": "Spectre ",
     "type": "Movie",
     "year": 2015,
@@ -11914,7 +11634,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9339e",
     "title": "No Time to Die ",
     "type": "Movie",
     "year": 2021,
@@ -11941,7 +11660,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9339f",
     "title": "Joker ",
     "type": "Movie",
     "year": 2019,
@@ -11967,7 +11685,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933a0",
     "title": "Joker: Folie à Deux ",
     "type": "Movie",
     "year": 2024,
@@ -11994,7 +11711,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933a1",
     "title": "Pirates of the Caribbean: Dead Man's Chest",
     "type": "Movie",
     "year": 2003,
@@ -12020,7 +11736,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933a2",
     "title": "The Truman Show ",
     "type": "Movie",
     "year": 1998,
@@ -12046,7 +11761,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933a3",
     "title": "The Mummy ",
     "type": "Movie",
     "year": 1999,
@@ -12073,7 +11787,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933a4",
     "title": "Skyscraper ",
     "type": "Movie",
     "year": 2019,
@@ -12099,7 +11812,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933a5",
     "title": "Black Adam",
     "type": "Movie",
     "year": 2022,
@@ -12125,7 +11837,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933a6",
     "title": "Red Notice",
     "type": "Movie",
     "year": 2021,
@@ -12152,7 +11863,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933c6",
     "title": "Indiana Jones and the Dial of Destiny",
     "type": "Movie",
     "year": 2023,
@@ -12177,7 +11887,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933c7",
     "title": "Madagascar",
     "type": "Movie",
     "year": 2005,
@@ -12205,7 +11914,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933c8",
     "title": "Madagascar: Escape 2 Africa ",
     "type": "Movie",
     "year": 2008,
@@ -12233,7 +11941,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933c9",
     "title": "Madagascar 3: Europe's Most Wanted  ",
     "type": "Movie",
     "year": 2012,
@@ -12261,7 +11968,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933ca",
     "title": "Edge of Tomorrow",
     "type": "Movie",
     "year": 2014,
@@ -12287,7 +11993,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933cb",
     "title": "Vanilla Sky ",
     "type": "Movie",
     "year": 2001,
@@ -12313,7 +12018,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933cc",
     "title": "American Made ",
     "type": "Movie",
     "year": 2017,
@@ -12340,7 +12044,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933cd",
     "title": "Dune: Part One ",
     "type": "Movie",
     "year": 2021,
@@ -12367,7 +12070,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933ce",
     "title": "Dune: Part Two ",
     "type": "Movie",
     "year": 2024,
@@ -12394,7 +12096,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933cf",
     "title": "Evil Dead Rise ",
     "type": "Movie",
     "year": 2023,
@@ -12419,7 +12120,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933d0",
     "title": "Blade Runner 2049 ",
     "type": "Movie",
     "year": 2017,
@@ -12446,7 +12146,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933d1",
     "title": "A Minecraft Movie",
     "type": "Movie",
     "year": 2025,
@@ -12473,7 +12172,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933d2",
     "title": "Kraven the Hunter",
     "type": "Movie",
     "year": 2024,
@@ -12499,7 +12197,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933d3",
     "title": "White Chicks",
     "type": "Movie",
     "year": 2004,
@@ -12524,7 +12221,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933c4",
     "title": "Indiana Jones and the Last Crusade",
     "type": "Movie",
     "year": 1989,
@@ -12549,7 +12245,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933c5",
     "title": "Indiana Jones and the Kingdom of the Crystal Skull",
     "type": "Movie",
     "year": 2008,
@@ -12574,7 +12269,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933b6",
     "title": "Scarface ",
     "type": "Movie",
     "year": 1983,
@@ -12599,7 +12293,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933b7",
     "title": "Pirates of the Caribbean: On Stranger Tides",
     "type": "Movie",
     "year": 2011,
@@ -12625,7 +12318,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933b8",
     "title": "The Meg ",
     "type": "Movie",
     "year": 2018,
@@ -12652,7 +12344,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933b9",
     "title": "Meg 2: The Trench ",
     "type": "Movie",
     "year": 2023,
@@ -12679,7 +12370,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933ba",
     "title": "American Psycho",
     "type": "Movie",
     "year": 2000,
@@ -12705,7 +12395,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933bb",
     "title": "Bullet Train",
     "type": "Movie",
     "year": 2022,
@@ -12731,7 +12420,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933bc",
     "title": "The Beekeeper",
     "type": "Movie",
     "year": 2024,
@@ -12757,7 +12445,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933be",
     "title": "Men in Black II",
     "type": "Movie",
     "year": 2002,
@@ -12784,7 +12471,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933bf",
     "title": "Men in Black III",
     "type": "Movie",
     "year": 2012,
@@ -12810,7 +12496,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933c0",
     "title": "Road House",
     "type": "Movie",
     "year": 2024,
@@ -12835,7 +12520,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933c1",
     "title": "Raiders of the Lost Ark",
     "type": "Movie",
     "year": 1981,
@@ -12860,7 +12544,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933c2",
     "title": "Pirates of the Caribbean: Dead Men Tell No Tales",
     "type": "Movie",
     "year": 2017,
@@ -12886,7 +12569,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933c3",
     "title": "Indiana Jones and the Temple of Doom",
     "type": "Movie",
     "year": 1984,
@@ -12911,7 +12593,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933bd",
     "title": "Men in Black",
     "type": "Movie",
     "year": 1997,
@@ -12938,7 +12619,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933e3",
     "title": "The Last of Us",
     "type": "TV Show",
     "year": 2023,
@@ -13040,7 +12720,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed933e4",
     "title": "Loki",
     "type": "TV Show",
     "year": 2021,
@@ -13126,7 +12805,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed933e5",
     "title": "Stranger Things",
     "type": "TV Show",
     "year": 2016,
@@ -13348,7 +13026,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed933e6",
     "title": "Money Heist",
     "type": "TV Show",
     "year": 2017,
@@ -13565,7 +13242,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed933e7",
     "title": "WandaVision",
     "type": "TV Show",
     "year": 2021,
@@ -13633,7 +13309,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed933e8",
     "title": "Arrow",
     "type": "TV Show",
     "year": 2012,
@@ -14387,7 +14062,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed933e9",
     "title": "The Flash",
     "type": "TV Show",
     "year": 2014,
@@ -15196,7 +14870,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed933ea",
     "title": "Supergirl",
     "type": "TV Show",
     "year": 2015,
@@ -15762,7 +15435,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed933eb",
     "title": "Superman & Lois",
     "type": "TV Show",
     "year": 2021,
@@ -16021,7 +15693,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed933ec",
     "title": "Peaky Blinders",
     "type": "TV Show",
     "year": 2013,
@@ -16221,7 +15892,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed933ed",
     "title": "The Queen's Gambit",
     "type": "TV Show",
     "year": 2020,
@@ -16280,7 +15950,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed933ee",
     "title": "The Good Doctor",
     "type": "TV Show",
     "year": 2017,
@@ -16851,7 +16520,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed933ef",
     "title": "The Big Bang Theory",
     "type": "TV Show",
     "year": 2007,
@@ -18053,7 +17721,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed933f0",
     "title": "Game of Thrones",
     "type": "TV Show",
     "year": 2011,
@@ -18413,7 +18080,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed933de",
     "title": "War of the Worlds ",
     "type": "Movie",
     "year": 2005,
@@ -18440,7 +18106,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933e1",
     "title": "The Witcher",
     "type": "TV Show",
     "year": 2019,
@@ -18616,7 +18281,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed933d4",
     "title": "Rush Hour",
     "type": "Movie",
     "year": 1998,
@@ -18642,7 +18306,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933d5",
     "title": "Rush Hour 2",
     "type": "Movie",
     "year": 2001,
@@ -18668,7 +18331,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933d6",
     "title": "Rush Hour 3",
     "type": "Movie",
     "year": 2007,
@@ -18694,7 +18356,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933d7",
     "title": "A Working Man",
     "type": "Movie",
     "year": 2025,
@@ -18720,7 +18381,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933d8",
     "title": "San Andreas",
     "type": "Movie",
     "year": 2015,
@@ -18746,7 +18406,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933d9",
     "title": "The Pursuit of Happyness",
     "type": "Movie",
     "year": 2006,
@@ -18771,7 +18430,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933da",
     "title": "Babygirl",
     "type": "Movie",
     "year": 2024,
@@ -18797,7 +18455,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933db",
     "title": "Taken ",
     "type": "Movie",
     "year": 2008,
@@ -18822,7 +18479,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933dc",
     "title": "Taken 2 ",
     "type": "Movie",
     "year": 2012,
@@ -18848,7 +18504,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933dd",
     "title": "Taken 3 ",
     "type": "Movie",
     "year": 2014,
@@ -18873,7 +18528,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933df",
     "title": "The Mask ",
     "type": "Movie",
     "year": 1994,
@@ -18899,7 +18553,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933e0",
     "title": "Madame Web ",
     "type": "Movie",
     "year": 2024,
@@ -18925,7 +18578,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933e2",
     "title": "Off Campus",
     "type": "TV Show",
     "year": 2026,
@@ -19003,7 +18655,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93400",
     "title": "Batman Beyond: Return of the Joker",
     "type": "Movie",
     "year": 2000,
@@ -19030,7 +18681,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93401",
     "title": "Batman: Under the Red Hood",
     "type": "Movie",
     "year": 2010,
@@ -19057,7 +18707,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93402",
     "title": "Batman: Year One",
     "type": "Movie",
     "year": 2011,
@@ -19084,7 +18733,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93403",
     "title": "The Batman vs. Dracula",
     "type": "Movie",
     "year": 2005,
@@ -19112,7 +18760,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93404",
     "title": "Batman: Bad Blood",
     "type": "Movie",
     "year": 2016,
@@ -19139,7 +18786,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93405",
     "title": "Batman: Mystery of the Batwoman",
     "type": "Movie",
     "year": 2003,
@@ -19167,7 +18813,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93406",
     "title": "Batman: Assault on Arkham",
     "type": "Movie",
     "year": 2014,
@@ -19194,7 +18839,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93407",
     "title": "Batman and Superman: Battle of the Super Sons",
     "type": "Movie",
     "year": 2022,
@@ -19221,7 +18865,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93408",
     "title": "Justice League: Doom",
     "type": "Movie",
     "year": 2012,
@@ -19248,7 +18891,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93409",
     "title": "Green Lantern: First Flight ",
     "type": "Movie",
     "year": 2009,
@@ -19275,7 +18917,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9340b",
     "title": "Prisoners",
     "type": "Movie",
     "year": 2013,
@@ -19302,7 +18943,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9340c",
     "title": "TRON: Ares",
     "type": "Movie",
     "year": 2025,
@@ -19328,7 +18968,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9340d",
     "title": "Anyone but You",
     "type": "Movie",
     "year": 2023,
@@ -19353,7 +18992,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9340e",
     "title": "The Naked Gun",
     "type": "Movie",
     "year": 2025,
@@ -19379,7 +19017,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9340a",
     "title": "Green Lantern: Beware My Power",
     "type": "Movie",
     "year": 2022,
@@ -19406,7 +19043,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933fe",
     "title": "The Nun II",
     "type": "Movie",
     "year": 2023,
@@ -19433,7 +19069,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933ff",
     "title": "Batman & Mr. Freeze: SubZero",
     "type": "Movie",
     "year": 1998,
@@ -19460,7 +19095,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933f1",
     "title": "Zootopia ",
     "type": "Movie",
     "year": 2016,
@@ -19489,7 +19123,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933f2",
     "title": "Zootopia 2",
     "type": "Movie",
     "year": 2025,
@@ -19519,7 +19152,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933f3",
     "title": "The Devil Wears Prada",
     "type": "Movie",
     "year": 2006,
@@ -19544,7 +19176,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933f4",
     "title": "The Devil Wears Prada 2",
     "type": "Movie",
     "year": 2026,
@@ -19569,7 +19200,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933f5",
     "title": "Disclosure Day",
     "type": "Movie",
     "year": 2026,
@@ -19594,7 +19224,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933f6",
     "title": "Scary Movie",
     "type": "Movie",
     "year": 2000,
@@ -19619,7 +19248,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933f8",
     "title": "Scary Movie 3",
     "type": "Movie",
     "year": 2003,
@@ -19645,7 +19273,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933f9",
     "title": "Scary Movie 4",
     "type": "Movie",
     "year": 2006,
@@ -19671,7 +19298,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933fa",
     "title": "Scary Movie 5",
     "type": "Movie",
     "year": 2013,
@@ -19696,7 +19322,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933fb",
     "title": "Scary Movie",
     "type": "Movie",
     "year": 2013,
@@ -19721,7 +19346,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933fc",
     "title": "Sinister",
     "type": "Movie",
     "year": 2012,
@@ -19747,7 +19371,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933fd",
     "title": "Sinister 2",
     "type": "Movie",
     "year": 2015,
@@ -19773,7 +19396,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed933f7",
     "title": "Scary Movie 2",
     "type": "Movie",
     "year": 2001,
@@ -19798,7 +19420,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9341a",
     "title": "The Drama",
     "type": "Movie",
     "year": 2026,
@@ -19824,7 +19445,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9341b",
     "title": "Revolutionary Road",
     "type": "Movie",
     "year": 2008,
@@ -19849,7 +19469,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9341c",
     "title": "Deep Water",
     "type": "Movie",
     "year": 2022,
@@ -19875,7 +19494,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9341d",
     "title": "Hotel Desire",
     "type": "Movie",
     "year": 2011,
@@ -19902,7 +19520,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9341e",
     "title": "Fifty Shades of Grey",
     "type": "Movie",
     "year": 2015,
@@ -19928,7 +19545,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9341f",
     "title": "Fifty Shades Freed",
     "type": "Movie",
     "year": 2018,
@@ -19954,7 +19570,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93420",
     "title": "The Transporter",
     "type": "Movie",
     "year": 2002,
@@ -19980,7 +19595,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93421",
     "title": "The Transporter 2",
     "type": "Movie",
     "year": 2005,
@@ -20006,7 +19620,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93422",
     "title": "Transporter 3",
     "type": "Movie",
     "year": 2008,
@@ -20032,7 +19645,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93423",
     "title": "Retribution",
     "type": "Movie",
     "year": 2023,
@@ -20059,7 +19671,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93419",
     "title": "The Karate Kid",
     "type": "Movie",
     "year": 2010,
@@ -20086,7 +19697,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93418",
     "title": "Baby Driver",
     "type": "Movie",
     "year": 2017,
@@ -20112,7 +19722,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9340f",
     "title": "Subservience",
     "type": "Movie",
     "year": 2024,
@@ -20138,7 +19747,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93410",
     "title": "The Menu",
     "type": "Movie",
     "year": 2022,
@@ -20164,7 +19772,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93411",
     "title": "The Girl Next Door",
     "type": "Movie",
     "year": 2004,
@@ -20190,7 +19797,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93412",
     "title": "Friends with Benefits",
     "type": "Movie",
     "year": 2011,
@@ -20215,7 +19821,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93413",
     "title": "No Strings Attached",
     "type": "Movie",
     "year": 2011,
@@ -20240,7 +19845,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93414",
     "title": "Easy A",
     "type": "Movie",
     "year": 2010,
@@ -20266,7 +19870,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93415",
     "title": "Regretting You",
     "type": "Movie",
     "year": 2025,
@@ -20291,7 +19894,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93416",
     "title": "Purple Hearts",
     "type": "Movie",
     "year": 2022,
@@ -20317,7 +19919,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93417",
     "title": "The Social Network",
     "type": "Movie",
     "year": 2010,
@@ -20342,7 +19943,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93432",
     "title": "Teenage Mutant Ninja Turtles: Out of the Shadows",
     "type": "Movie",
     "year": 2016,
@@ -20369,7 +19969,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93426",
     "title": "Ride Along",
     "type": "Movie",
     "year": 2014,
@@ -20395,7 +19994,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93433",
     "title": "Superman Returns",
     "type": "Movie",
     "year": 2006,
@@ -20421,7 +20019,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93434",
     "title": "Batman",
     "type": "Movie",
     "year": 1989,
@@ -20448,7 +20045,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93435",
     "title": "Batman Returns",
     "type": "Movie",
     "year": 1992,
@@ -20475,7 +20071,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93436",
     "title": "Batman Forever",
     "type": "Movie",
     "year": 1995,
@@ -20501,7 +20096,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93437",
     "title": "Shelter",
     "type": "Movie",
     "year": 2026,
@@ -20526,7 +20120,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93438",
     "title": "House M.D.",
     "type": "TV Show",
     "year": 2004,
@@ -21297,7 +20890,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93439",
     "title": "How I Met Your Mother",
     "type": "TV Show",
     "year": 2005,
@@ -22204,7 +21796,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9343a",
     "title": "Steven Universe: The Movie",
     "type": "Movie",
     "year": 2019,
@@ -22232,7 +21823,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9343b",
     "title": "Crime 101",
     "type": "Movie",
     "year": 2026,
@@ -22258,7 +21848,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9343c",
     "title": "One Battle After Another",
     "type": "Movie",
     "year": 2025,
@@ -22285,7 +21874,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9343d",
     "title": "Django Unchained",
     "type": "Movie",
     "year": 2012,
@@ -22310,7 +21898,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9343e",
     "title": "Gladiator",
     "type": "Movie",
     "year": 2000,
@@ -22336,7 +21923,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93427",
     "title": "Ride Along 2",
     "type": "Movie",
     "year": 2016,
@@ -22362,7 +21948,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93424",
     "title": "Blacklight",
     "type": "Movie",
     "year": 2022,
@@ -22388,7 +21973,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93425",
     "title": "RED",
     "type": "Movie",
     "year": 2010,
@@ -22415,7 +21999,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93431",
     "title": "Teenage Mutant Ninja Turtles",
     "type": "Movie",
     "year": 2014,
@@ -22442,7 +22025,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93428",
     "title": "The Family Plan",
     "type": "Movie",
     "year": 2023,
@@ -22467,7 +22049,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93429",
     "title": "The Family Plan 2",
     "type": "Movie",
     "year": 2025,
@@ -22492,7 +22073,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9342a",
     "title": "Ghosted",
     "type": "Movie",
     "year": 2023,
@@ -22519,7 +22099,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9342b",
     "title": "The Gray Man",
     "type": "Movie",
     "year": 2022,
@@ -22544,7 +22123,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9342c",
     "title": "Extraction",
     "type": "Movie",
     "year": 2020,
@@ -22569,7 +22147,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9342d",
     "title": "Extraction 2",
     "type": "Movie",
     "year": 2023,
@@ -22594,7 +22171,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9342e",
     "title": "6 Bullets",
     "type": "Movie",
     "year": 2012,
@@ -22620,7 +22196,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9342f",
     "title": "Stolen Girl",
     "type": "Movie",
     "year": 2025,
@@ -22646,7 +22221,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93430",
     "title": "Trap House",
     "type": "Movie",
     "year": 2025,
@@ -22672,7 +22246,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9344d",
     "title": "Friends",
     "type": "TV Show",
     "year": 1994,
@@ -23697,7 +23270,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9344e",
     "title": "The Walking Dead",
     "type": "TV Show",
     "year": 2010,
@@ -24493,7 +24065,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9344f",
     "title": "Squid Game",
     "type": "TV Show",
     "year": 2021,
@@ -24629,7 +24200,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93450",
     "title": "Prison Break",
     "type": "TV Show",
     "year": 2005,
@@ -25038,7 +24608,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93451",
     "title": "Dexter",
     "type": "TV Show",
     "year": 2006,
@@ -25494,7 +25063,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93452",
     "title": "Smallville",
     "type": "TV Show",
     "year": 2001,
@@ -26444,7 +26012,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93453",
     "title": "Gotham",
     "type": "TV Show",
     "year": 2014,
@@ -26901,7 +26468,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93454",
     "title": "Peacemaker",
     "type": "TV Show",
     "year": 2022,
@@ -27007,7 +26573,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93455",
     "title": "Young Sheldon",
     "type": "TV Show",
     "year": 2017,
@@ -27637,7 +27202,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93456",
     "title": "She-Hulk: Attorney at Law",
     "type": "TV Show",
     "year": 2022,
@@ -27709,7 +27273,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93457",
     "title": "Cyberpunk: Edgerunners",
     "type": "TV Show",
     "year": 2022,
@@ -27786,7 +27349,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93458",
     "title": "Danny Phantom",
     "type": "TV Show",
     "year": 2004,
@@ -28045,7 +27607,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93459",
     "title": "Adventure Time",
     "type": "TV Show",
     "year": 2008,
@@ -29239,7 +28800,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93445",
     "title": "Spider Noir",
     "type": "TV Show",
     "year": 2026,
@@ -29303,7 +28863,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93442",
     "title": "Karate Kid: Legends",
     "type": "Movie",
     "year": 2025,
@@ -29329,7 +28888,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed9344c",
     "title": "Lucifer",
     "type": "TV Show",
     "year": 2016,
@@ -29759,7 +29317,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9343f",
     "title": "Gladiator II",
     "type": "Movie",
     "year": 2024,
@@ -29785,7 +29342,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93440",
     "title": "Napoleon",
     "type": "Movie",
     "year": 2023,
@@ -29813,7 +29369,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93441",
     "title": "Last Knights",
     "type": "Movie",
     "year": 2015,
@@ -29839,7 +29394,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93443",
     "title": "The Tuxedo",
     "type": "Movie",
     "year": 2002,
@@ -29865,7 +29419,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93444",
     "title": "Mr. Nice Guy",
     "type": "Movie",
     "year": 1997,
@@ -29891,7 +29444,6 @@ window._MEDIA_DATA = [
     "seasons": []
   },
   {
-    "id": "6a832f82aaba3a457ed93446",
     "title": "House of the Dragon",
     "type": "TV Show",
     "year": 2022,
@@ -30038,7 +29590,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93447",
     "title": "Ted Lasso",
     "type": "TV Show",
     "year": 2020,
@@ -30261,7 +29812,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93448",
     "title": "Spider-Man",
     "type": "TV Show",
     "year": 2017,
@@ -30538,7 +30088,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93449",
     "title": "Your Friendly Neighborhood Spider-Man",
     "type": "TV Show",
     "year": 2025,
@@ -30611,7 +30160,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9344a",
     "title": "Wednesday",
     "type": "TV Show",
     "year": 2022,
@@ -30713,7 +30261,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9344b",
     "title": "The Sopranos",
     "type": "TV Show",
     "year": 1999,
@@ -31113,7 +30660,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93467",
     "title": "LazyTown",
     "type": "TV Show",
     "year": 2004,
@@ -31478,7 +31024,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9346c",
     "title": "Justice League",
     "type": "TV Show",
     "year": 2001,
@@ -31729,7 +31274,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93468",
     "title": "Static Shock",
     "type": "TV Show",
     "year": 2000,
@@ -31989,7 +31533,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93469",
     "title": "Ninjago: Masters of Spinjitzu",
     "type": "TV Show",
     "year": 2012,
@@ -32936,7 +32479,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9346a",
     "title": "Ninjago: Dragons Rising",
     "type": "TV Show",
     "year": 2023,
@@ -33269,7 +32811,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9346b",
     "title": "Justice League Unlimited",
     "type": "TV Show",
     "year": 2004,
@@ -33473,7 +33014,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9346d",
     "title": "The Fairly OddParents",
     "type": "TV Show",
     "year": 2001,
@@ -34630,7 +34170,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9346e",
     "title": "Regular Show",
     "type": "TV Show",
     "year": 2010,
@@ -35686,7 +35225,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9346f",
     "title": "Suits",
     "type": "TV Show",
     "year": 2011,
@@ -36298,7 +35836,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93470",
     "title": "Family Guy",
     "type": "TV Show",
     "year": 1999,
@@ -38277,7 +37814,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93471",
     "title": "Teen Wolf",
     "type": "TV Show",
     "year": 2011,
@@ -38739,7 +38275,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93472",
     "title": "What If...?",
     "type": "TV Show",
     "year": 2021,
@@ -38891,7 +38426,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93473",
     "title": "The Mentalist",
     "type": "TV Show",
     "year": 2008,
@@ -39562,7 +39096,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93465",
     "title": "T.U.F.F. Puppy",
     "type": "TV Show",
     "year": 2010,
@@ -40068,7 +39601,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93466",
     "title": "Sonic X",
     "type": "TV Show",
     "year": 2003,
@@ -40425,7 +39957,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9345a",
     "title": "Iron Man: Armored Adventures",
     "type": "TV Show",
     "year": 2009,
@@ -40673,7 +40204,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9345b",
     "title": "Superman: The Animated Series",
     "type": "TV Show",
     "year": 1996,
@@ -40935,7 +40465,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9345c",
     "title": "Tom and Jerry Tales",
     "type": "TV Show",
     "year": 2006,
@@ -41288,7 +40817,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9345d",
     "title": "Teenage Mutant Ninja Turtles",
     "type": "TV Show",
     "year": 2012,
@@ -41841,7 +41369,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9345e",
     "title": "The Tom and Jerry Show",
     "type": "TV Show",
     "year": 2014,
@@ -42773,7 +42300,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9345f",
     "title": "Blaze and the Monster Machines",
     "type": "TV Show",
     "year": 2014,
@@ -43554,7 +43080,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93460",
     "title": "Kung Fu Panda: Legends of Awesomeness",
     "type": "TV Show",
     "year": 2011,
@@ -43920,7 +43445,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93461",
     "title": "Kung Fu Panda: The Dragon Knight",
     "type": "TV Show",
     "year": 2022,
@@ -44135,7 +43659,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93462",
     "title": "Justice League Action",
     "type": "TV Show",
     "year": 2016,
@@ -44381,7 +43904,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93463",
     "title": "Sonic Prime",
     "type": "TV Show",
     "year": 2022,
@@ -44520,7 +44042,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93464",
     "title": "Generator Rex",
     "type": "TV Show",
     "year": 2010,
@@ -44808,7 +44329,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93484",
     "title": "We Bare Bears",
     "type": "TV Show",
     "year": 2015,
@@ -45415,7 +44935,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93483",
     "title": "The Wonderfully Weird World of Gumball",
     "type": "TV Show",
     "year": 2025,
@@ -45614,7 +45133,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93482",
     "title": "The Amazing World of Gumball",
     "type": "TV Show",
     "year": 2011,
@@ -46630,7 +46148,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93481",
     "title": "Marvel's Luke Cage",
     "type": "TV Show",
     "year": 2016,
@@ -46771,7 +46288,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93480",
     "title": "Marvel's The Defenders",
     "type": "TV Show",
     "year": 2017,
@@ -46840,7 +46356,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93479",
     "title": "Sex Education",
     "type": "TV Show",
     "year": 2019,
@@ -47021,7 +46536,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9347f",
     "title": "S.W.A.T.",
     "type": "TV Show",
     "year": 2017,
@@ -47740,7 +47254,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9347e",
     "title": "Marvel's Iron Fist",
     "type": "TV Show",
     "year": 2017,
@@ -47874,7 +47387,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9347d",
     "title": "Rick and Morty",
     "type": "TV Show",
     "year": 2013,
@@ -48315,7 +47827,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9347c",
     "title": "Doctor Who",
     "type": "TV Show",
     "year": 2005,
@@ -49019,7 +48530,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9347b",
     "title": "Modern Family",
     "type": "TV Show",
     "year": 2009,
@@ -50110,7 +49620,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9347a",
     "title": "Moon Knight",
     "type": "TV Show",
     "year": 2022,
@@ -50170,7 +49679,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93478",
     "title": "The Rookie",
     "type": "TV Show",
     "year": 2018,
@@ -50819,7 +50327,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93477",
     "title": "Supernatural",
     "type": "TV Show",
     "year": 2005,
@@ -52229,7 +51736,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93476",
     "title": "The Vampire Diaries",
     "type": "TV Show",
     "year": 2009,
@@ -52982,7 +52488,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93475",
     "title": "Law & Order: Special Victims Unit",
     "type": "TV Show",
     "year": 1999,
@@ -55533,7 +55038,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93474",
     "title": "Hawkeye",
     "type": "TV Show",
     "year": 2021,
@@ -55594,7 +55098,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93485",
     "title": "Clarence",
     "type": "TV Show",
     "year": 2014,
@@ -56152,7 +55655,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93486",
     "title": "Uncle Grandpa",
     "type": "TV Show",
     "year": 2013,
@@ -56819,7 +56321,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93487",
     "title": "Steven Universe",
     "type": "TV Show",
     "year": 2013,
@@ -57492,7 +56993,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93488",
     "title": "Steven Universe Future",
     "type": "TV Show",
     "year": 2019,
@@ -57604,7 +57104,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed93489",
     "title": "OK K.O.! Let's Be Heroes",
     "type": "TV Show",
     "year": 2017,
@@ -58081,7 +57580,6 @@ window._MEDIA_DATA = [
     ]
   },
   {
-    "id": "6a832f82aaba3a457ed9348a",
     "title": "Lanterns",
     "type": "TV Show",
     "year": 2026,
