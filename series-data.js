@@ -19497,7 +19497,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3KLmx6nLaiYe07kSwuWdpTEHJgE.jpg",
-    videoUrl: "97",
+    videoUrl: "975",
     overview: "An American football coach, Ted Lasso, is hired to manage AFC Richmond, a British soccer team — despite having no experience coaching soccer at all. His folksy, positive attitude, unwavering optimism, and unique brand of leadership begin to unite a dysfunctional team and a fractured fan base, even as his personal life and marriage crumble behind the scenes.",
     director: "Bill Lawrence, Jason Sudeikis, Brendan Hunt, Joe Kelly",
     cast: [
