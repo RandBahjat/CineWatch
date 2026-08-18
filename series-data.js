@@ -10378,7 +10378,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/AoGsDM02UVt0npBA8OvpDcZbaMi.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/foGkPxpw9h8zln81j63mix5B7m8.jpg",
-    videoUrl: ,
+    videoUrl: 71,
     overview: "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts. As destiny weaves the paths of a mutated monster hunter, a powerful sorceress, and a young princess together across a turbulent, war-torn continent, their fates become inextricably intertwined.",
     director: "Lauren Schmidt Hissrich",
     cast: [
