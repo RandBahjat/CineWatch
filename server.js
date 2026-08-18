@@ -327,7 +327,7 @@ app.post('/api/forgot-password', async (req, res) => {
     }
 
     const resend = new Resend(process.env.RESEND_API_KEY);
-    const resetUrl = `https://randbahjat.github.io/CineWatch/reset-password.html?token=${resetToken}`;
+    const resetUrl = `https://cinewatch.watch/reset-password.html?token=${resetToken}`;
 
     const { error: emailError } = await resend.emails.send({
       from: 'CineWatch <onboarding@resend.dev>',
