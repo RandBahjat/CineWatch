@@ -21440,7 +21440,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://image.tmdb.org/t/p/original/beKgqwruOGmVAvRwRvfuOcXwl2Z.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ptEtIr3rVuAJpmbwaLJJqND6HVq.jpg",
-    videoUrl: "38",
+    videoUrl: "38698",
     overview: "Long before time had a name, Ninjago was created by the First Spinjitzu Master by using the Four Elemental Weapons of Spinjitzu; weapons so powerful, no one can handle all of their power at once. When he passed away, his two sons swore to protect them, but the oldest, Lord Garmadon, was consumed by darkness and wanted to possess them all. A battle between brothers broke out and Lord Garmadon was struck down and banished to the Underworld. Peace returned to Ninjago as the younger brother, Sensei Wu, hid the elemental weapons in the far corners of Ninjago.",
     director: "Tommy Andreasen",
     cast: [
