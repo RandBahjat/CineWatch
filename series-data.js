@@ -32986,7 +32986,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/rkq5Jt7boR5v65bDbELHz3DW7sv.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/abmwQvkZh6yufaodYwnOV15EST0.jpg",
-    videoUrl: "40071",
+    videoUrl: "",
     overview: "Kung Fu Panda: Legends of Awesomeness is based on DreamWorks Animation's hit feature film, Kung Fu Panda which has grossed over $630 million at the worldwide box office and became the studio's most successful original feature film ever. Kung Fu Panda garnered an Oscar nomination for Best Animated Feature Film of the Year and a Golden Globe nomination for Best Animated Feature Film.",
     director: "Peter Hastings",
     cast: [
