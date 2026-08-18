@@ -1,4 +1,4 @@
-﻿/**
+/**
  * CineWatch — Pure Vanilla JavaScript (ES6+)
  * Feature-rich movie streaming platform logic
  *
@@ -31,20 +31,24 @@ const TRENDING_TITLES = ["Reacher","Lanterns", "Spider-Man: Brand New Day", "The
 // 2. MOVIE DATABASE (loaded from MongoDB)
 // ==========================================
 // All 500+ titles are now stored in the database.
-// They are fetched on page load via loadMediaFromAPI().
+// They are loaded from media-data.js (included as a script tag before this file).
 let MOVIES = [];
 
 async function loadMediaFromAPI() {
+  // Load from local media-data.js instead of the API for speed and security.
+  // To add/edit/remove movies or series, edit media-data.js directly.
   try {
-    const response = await fetch('https://cinewatch-maaa.onrender.com/api/media');
-    if (!response.ok) throw new Error('API responded with ' + response.status);
-    const data = await response.json();
-    MOVIES = data;
+    if (typeof window._MEDIA_DATA !== 'undefined') {
+      MOVIES = window._MEDIA_DATA;
+    } else {
+      // Fallback: still works if media-data.js not loaded
+      MOVIES = [];
+      console.warn('CineWatch: media-data.js not loaded.');
+    }
 
-    // Apply post-processing: featured/trending flags & duration for series
+    // Apply post-processing
     MOVIES.forEach(m => {
-      // Use MongoDB _id as fallback id
-      if (!m.id) m.id = m._id;
+      if (!m.id) m.id = m._id || String(Math.random());
 
       // Apply featured/trending from title lists
       m.featured = FEATURED_TITLES.includes(m.title);
@@ -56,8 +60,7 @@ async function loadMediaFromAPI() {
       }
     });
   } catch (err) {
-    console.error('CineWatch: Failed to load media from API:', err);
-    // MOVIES stays empty — the UI will show empty sections gracefully
+    console.error('CineWatch: Failed to load media:', err);
   }
 }
 
