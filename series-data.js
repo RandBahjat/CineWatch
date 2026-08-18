@@ -18923,7 +18923,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ekZobS8isE6mA53RAiGDG93hBxL.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/h48Dpb7ljv8WQvVdyFWVLz64h4G.jpg",
-    videoUrl: null,
+    videoUrl: "631",
     overview: "Bored and unhappy as the Lord of Hell, Lucifer Morningstar has abandoned his throne and retired to L.A., where he owns Lux, an upscale nightclub. Charming, charismatic and devilishly handsome, Lucifer is enjoying his retirement until a beautiful pop star is brutally murdered outside his club. When Detective Chloe Decker investigates the crime, Lucifer finds himself drawn to her and begins using his powers of persuasion to help the LAPD punish criminals.",
     director: "Tom Kapinos",
     cast: [
