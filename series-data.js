@@ -8188,7 +8188,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/zU0htwkhNvBQdVSIKB9s6hgVeFK.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/5N5dSOrysuquExvn8Gpp5jMEf6u.jpg",
-    videoUrl: null,
+    videoUrl: "",
     overview: "In a 1950s orphanage, a young girl named Beth Harmon discovers an astonishing talent for chess while developing a dependency on tranquilizers provided to the children — an addiction that will follow her into adulthood. Grandmaster-level chess is a sport dominated by men, but as Beth rises through the ranks of competitive chess, she must fight to overcome her personal demons and outmaneuver a world that doesn't expect her to win.",
     director: "Scott Frank",
     cast: [
