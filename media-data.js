@@ -1,9 +1,9 @@
 // CineWatch Media Data
 // Edit this file to add, remove, or reorder your movies and series.
-// To add a new movie, copy one of the entries below and update the fields.
-// After editing, push to GitHub for the changes to go live.
+// Push to GitHub for changes to go live on your site.
+// To add an entry, copy an existing block, paste it at the top or bottom, and update the fields.
 
-const MOVIES = [
+window._MEDIA_DATA = [
   {
     "id": "6a832f82aaba3a457ed93296",
     "title": "The Invite",
