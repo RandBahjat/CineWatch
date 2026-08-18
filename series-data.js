@@ -20167,7 +20167,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rTc7ZXdroqjkKivFPvCPX0Ru7uw.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/isJ4POBlbH5kmHVgbdP4gC4nFqO.jpg",
-    videoUrl: "1388",
+    videoUrl: "1398",
     overview: "New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling. As Tony navigates the pressures of running a criminal empire while raising a family, the series digs deep into the psychology of a modern mafia don caught between two worlds — one of ruthless violence, the other of suburban domesticity.",
     director: "David Chase",
     cast: [
