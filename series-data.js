@@ -29002,7 +29002,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/mzJSwX75Gjty8hZIEbqblPbEvkl.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/543bnIip4RaVofoBZoYBvXpGy5F.jpg",
-    videoUrl: "188",
+    videoUrl: "18828",
     overview: "Dudley Puppy works as a spy for an organization called T.U.F.F. (short for Turbo Undercover Fighting Force). His partner is a cat named Kitty Katswell. Other helpers are The Chief and Keswick. The series takes place in a fictional city called Petropolis, which is populated by anthropomorphic animals. As a member of T.U.F.F., Dudley Puppy helps Kitty Katswell protect Petropolis from various villains like Verminious Snaptrap, the Chameleon, and Birdbrain.",
     director: "Butch Hartman",
     cast: [
