@@ -342,6 +342,13 @@ async function initApp() {
     console.error("InitApp error:", err);
   } finally {
     dismissLoader();
+
+    // Check for deep link (e.g., ?v=spider-noir) and open the movie immediately
+    const params = new URLSearchParams(window.location.search);
+    const deepLinkMovie = params.get('v');
+    if (deepLinkMovie) {
+      setTimeout(() => openDetailsModal(deepLinkMovie), 300); // slight delay for smooth UI
+    }
   }
 }
 
@@ -1383,6 +1390,9 @@ function openDetailsModal(movieId) {
   if (state.activeView !== "details") {
     state.previousView = state.activeView;
   }
+
+  // Update URL for deep-linking and sharing
+  window.history.replaceState(null, '', '?v=' + movieId);
 
   const mainContent = document.getElementById("mainContent");
   const heroBanner = document.getElementById("heroBanner");
@@ -2735,8 +2745,10 @@ function bindEventListeners() {
   if (document.getElementById("closeDetailsBtn")) document.getElementById("closeDetailsBtn").onclick = () => {
     const detailsSection = document.getElementById("detailsSection");
 
-    detailsSection.style.transition = "opacity 0.3s ease-in-out";
     detailsSection.style.opacity = "0";
+    
+    // Clear the deep link from the URL
+    window.history.replaceState(null, '', window.location.pathname);
 
     setTimeout(() => {
       switchView(state.previousView || "home");
