@@ -7732,7 +7732,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://image.tmdb.org/t/p/original/vlv1gn98GqMnKHLSh0dNciqGfBl.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/sdKDOUAstJv46rUuBtjHV8ILkcN.jpg",
-    videoUrl: null,
+    videoUrl: "950",
     overview: "Follows the world's most famous superhero and comic books' most famous journalist as they deal with all the stress, pressure, and complexities that come with being working parents in today's society — all while Superman balances his heroic duties with Lois Lane raising their teenage sons in Smallville.",
     director: "Todd Helbing, Greg Berlanti",
     cast: [
