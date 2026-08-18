@@ -45,7 +45,10 @@
     <div class="card" style="border: 1px solid #45a29e;">
       <h3 style="margin-bottom: 1rem;">📊 Site Analytics</h3>
       <div class="analytics-grid">
-        <div class="stat-box"><label>Total Page Views</label><h2 id="analyticsViews">...</h2></div>
+        <div class="stat-box"><label>Today's Views</label><h2 id="analyticsToday">...</h2></div>
+        <div class="stat-box"><label>Yesterday's Views</label><h2 id="analyticsYesterday">...</h2></div>
+        <div class="stat-box"><label>Last 30 Days Views</label><h2 id="analytics30Days">...</h2></div>
+        <div class="stat-box"><label>Total Views (All time)</label><h2 id="analyticsViews">...</h2></div>
         <div class="stat-box"><label>Registered Users</label><h2 id="analyticsUsers">...</h2></div>
       </div>
       <p style="margin-top: 1rem; font-size: 0.85rem; color: #c5c6c7;">
@@ -114,6 +117,9 @@
 
     function fetchAnalytics() {
       fetch(`${API_BASE}/stats`).then(r => r.json()).then(data => {
+        document.getElementById('analyticsToday').textContent = (data.todayViews || 0).toLocaleString();
+        document.getElementById('analyticsYesterday').textContent = (data.yesterdayViews || 0).toLocaleString();
+        document.getElementById('analytics30Days').textContent = (data.last30DaysViews || 0).toLocaleString();
         document.getElementById('analyticsViews').textContent = (data.totalViews || 0).toLocaleString();
         document.getElementById('analyticsUsers').textContent = (data.totalUsers || 0).toLocaleString();
       }).catch(() => {});

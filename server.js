@@ -13,7 +13,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { Resend } = require('resend');
 const crypto = require('crypto');
-const { User, SiteStats, Media, mongoose, getDbError } = require('./database');
+const { User, SiteStats, DailyStats, Media, mongoose, getDbError } = require('./database');
 
 const app = express();
 
@@ -387,11 +387,22 @@ app.post('/api/reset-password-confirm', async (req, res) => {
 // ----------------------------------------------------
 app.post('/api/page-load', async (req, res) => {
   try {
+    const todayStr = new Date().toISOString().split('T')[0];
+
+    // Increment global stats
     const stats = await SiteStats.findOneAndUpdate(
       { metricName: 'global' },
       { $inc: { totalViews: 1 }, lastUpdated: new Date() },
       { new: true, upsert: true }
     );
+
+    // Increment daily stats
+    await DailyStats.findOneAndUpdate(
+      { dateStr: todayStr },
+      { $inc: { views: 1 } },
+      { upsert: true }
+    );
+
     res.json({ success: true, totalViews: stats.totalViews });
   } catch (err) {
     console.error('Error tracking visit:', err);
@@ -407,7 +418,35 @@ app.get('/api/stats', async (req, res) => {
     // We can also get total users just to show on dashboard
     const totalUsers = await User.countDocuments();
 
-    res.json({ totalViews, totalUsers });
+    // Daily stats calculations
+    const todayStr = new Date().toISOString().split('T')[0];
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    const yesterdayStr = yesterday.toISOString().split('T')[0];
+
+    const thirtyDaysAgo = new Date();
+    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+    const thirtyDaysAgoStr = thirtyDaysAgo.toISOString().split('T')[0];
+
+    const todayStats = await DailyStats.findOne({ dateStr: todayStr });
+    const yesterdayStats = await DailyStats.findOne({ dateStr: yesterdayStr });
+    
+    const last30Days = await DailyStats.aggregate([
+      { $match: { dateStr: { $gte: thirtyDaysAgoStr } } },
+      { $group: { _id: null, total: { $sum: '$views' } } }
+    ]);
+
+    const todayViews = todayStats ? todayStats.views : 0;
+    const yesterdayViews = yesterdayStats ? yesterdayStats.views : 0;
+    const last30DaysViews = last30Days.length > 0 ? last30Days[0].total : 0;
+
+    res.json({ 
+      totalViews, 
+      totalUsers,
+      todayViews,
+      yesterdayViews,
+      last30DaysViews
+    });
   } catch (err) {
     console.error('Error fetching stats:', err);
     res.status(500).json({ error: 'Database error.' });

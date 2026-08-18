@@ -50,6 +50,13 @@ const siteStatsSchema = new mongoose.Schema({
 
 const SiteStats = mongoose.model('SiteStats', siteStatsSchema);
 
+// Define the DailyStats schema for tracking views per day
+const dailyStatsSchema = new mongoose.Schema({
+  dateStr: { type: String, required: true, unique: true }, // e.g. "2026-08-18"
+  views: { type: Number, default: 0 }
+});
+const DailyStats = mongoose.model('DailyStats', dailyStatsSchema);
+
 // Define the Media schema for movies and series
 const mediaSchema = new mongoose.Schema({
   order: { type: Number, default: 0 },
@@ -75,4 +82,4 @@ const mediaSchema = new mongoose.Schema({
 
 const Media = mongoose.model('Media', mediaSchema);
 
-module.exports = { User, SiteStats, Media, mongoose, getDbError: () => dbError };
+module.exports = { User, SiteStats, DailyStats, Media, mongoose, getDbError: () => dbError };
