@@ -29516,6 +29516,30 @@ window._MEDIA_DATA = [
     seasons: []
   },
   {
+    title: "The Matrix Resurrections",
+    type: "Movie",
+    year: 2021,
+    rating: 5.6,
+    age: "R",
+    duration: "2h 28m",
+    genres: [
+      "Sci-Fi",
+      "Action",
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8c4a8kE7PizaGQQnditMmI1xbRp.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/pYzh5bVTlPYP0UbTz4ZhsLunHDr.jpg",
+    videoUrl: "624860",
+    overview: "Neo live ordinary life in San Francisco, haunted by strange vision. Pull back into Matrix, must decide fight again or stay in false peace.",
+    director: "Lana Wachowski",
+    cast: [
+      "Keanu Reeves, Carrie-Anne Moss, Yahya Abdul-Mateen II, Jessica Henwick, Jonathan Groff"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "House of the Dragon",
     type: "TV Show",
     year: 2022,
