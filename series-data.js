@@ -20068,7 +20068,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9PFonBhy4cQy7Jz20NpMygczOkv.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/AeJgnEXaFcsGzU5Y4Nrq9WggAQ5.jpg",
-    videoUrl: null,
+    videoUrl: ,
     overview: "Wednesday Addams is sent to Nevermore Academy, a bizarre boarding school where she attempts to master her emerging psychic ability, thwart a monstrous killing spree that has terrorized the local town, and solve a supernatural mystery that entangled her parents 25 years ago — all while navigating her new relationships at the school.",
     director: "Alfred Gough, Miles Millar",
     cast: [
