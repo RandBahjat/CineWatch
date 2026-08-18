@@ -31275,7 +31275,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/41EWXLXTZO4MLb2BL28mWZuydyq.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/km6wy5CpLul51F3eh6fEBQ0UoJE.jpg",
-    videoUrl: "478",
+    videoUrl: "474",
     overview: "The famous cat and mouse duo is back in an all-new series, The Tom and Jerry Show. Premiering Wednesday April 9 at 5:30 p.m. (ET/PT) on Cartoon Network, The Tom and Jerry Show is a fresh take on the iconic frenemies that preserves the look, core characters and sensibilities of the original theatrical shorts. Comprised of two 11-minute elements, each episode will feature Tom the cat and Jerry the mouse plotting against each other-with Tom's determination matched only by Jerry's own cleverness in evading capture. But this time the cartoon mayhem will not be limited to only Tom and Jerry's familiar suburban setting. In The Tom and Jerry Show, the title characters' nonstop game of cat and mouse will expand to also include more fantastic worlds, from a witch's cabin to a mad scientist's lab.",
     director: "Darrell Van Citters",
     cast: [
