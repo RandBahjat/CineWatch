@@ -29862,7 +29862,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/kIJGgBwh37V2nfgnJFaN7zDIjdv.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/y2UmFNOMwNmfdHs7DYWGAQOTIC8.jpg",
-    videoUrl: "16194",
+    videoUrl: "73",
     overview: "Tony, Rhodey, and Pepper star as teenagers in this cartoon. When Tony's father dies, he moves in with Rhodey and also invents his Iron Man armor. Tony has to deal with teenage problems like school and crushes as well as deal with superhero problems like supervillains and stopping plans for world domination.",
     director: "Christopher Yost",
     cast: [
