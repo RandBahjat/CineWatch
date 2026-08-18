@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineWatch Admin Panel</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #0b0c10; color: #fff; padding: 2rem; max-width: 1000px; margin: 0 auto; }
+    h1 { color: #66fcf1; margin-bottom: 1.5rem; }
+    .card { background: #1f2833; padding: 1.5rem; border-radius: 10px; margin-bottom: 2rem; }
+    label { display: block; margin-bottom: 0.4rem; color: #c5c6c7; font-size: 0.85rem; }
+    input, select, textarea { width: 100%; padding: 0.75rem; margin-bottom: 1rem; background: #0b0c10; border: 1px solid #45a29e; color: #fff; border-radius: 6px; font-size: 0.95rem; }
+    button { background: #45a29e; color: #0b0c10; border: none; padding: 0.7rem 1.4rem; font-weight: bold; border-radius: 6px; cursor: pointer; font-size: 0.95rem; transition: background 0.2s; }
+    button:hover { background: #66fcf1; }
+    .hidden { display: none; }
+    .flex-row { display: flex; gap: 1rem; }
+    .flex-row > div { flex: 1; }
+
+    /* Analytics */
+    .analytics-grid { display: flex; gap: 2rem; flex-wrap: wrap; }
+    .stat-box { flex: 1; min-width: 120px; background: #0b0c10; padding: 1rem 1.5rem; border-radius: 8px; border: 1px solid #45a29e; }
+    .stat-box label { color: #c5c6c7; font-size: 0.8rem; margin-bottom: 0.4rem; }
+    .stat-box h2 { color: #66fcf1; font-size: 2rem; }
+
+    /* Code Generator Area */
+    pre { background: #0b0c10; padding: 1rem; border-radius: 6px; border: 1px solid #45a29e; overflow-x: auto; color: #a5d6a7; font-family: monospace; margin-top: 1rem; }
+    .copy-btn { background: #27ae60; color: white; margin-top: 0.5rem; }
+    .copy-btn:hover { background: #2ecc71; }
+  </style>
+</head>
+<body>
+
+  <h1>🎬 CineWatch Admin Panel</h1>
+  
+  <div id="authWarning" class="card" style="border: 2px solid #ff6b6b; display: none;">
+    <h3 style="color: #ff6b6b; margin-bottom: 0.5rem;">Access Denied</h3>
+    <p>You must be logged into CineWatch as the administrator to view this page.</p>
+    <br><a href="/" style="color: #66fcf1;">← Go to Home to Login</a>
+  </div>
+
+  <div id="adminContent" class="hidden">
+
+    <!-- Analytics -->
+    <div class="card" style="border: 1px solid #45a29e;">
+      <h3 style="margin-bottom: 1rem;">📊 Site Analytics</h3>
+      <div class="analytics-grid">
+        <div class="stat-box"><label>Today's Views</label><h2 id="analyticsToday">...</h2></div>
+        <div class="stat-box"><label>Yesterday's Views</label><h2 id="analyticsYesterday">...</h2></div>
+        <div class="stat-box"><label>Last 30 Days Views</label><h2 id="analytics30Days">...</h2></div>
+        <div class="stat-box"><label>Total Views (All time)</label><h2 id="analyticsViews">...</h2></div>
+        <div class="stat-box"><label>Registered Users</label><h2 id="analyticsUsers">...</h2></div>
+      </div>
+      <p style="margin-top: 1rem; font-size: 0.85rem; color: #c5c6c7;">
+        * Note: Page views increase every time anyone (including you) refreshes the page.
+      </p>
+    </div>
+
+    <!-- TMDB Code Generator -->
+    <div class="card">
+      <h3 style="margin-bottom: 0.5rem;">🛠️ TMDB Code Generator</h3>
+      <p style="margin-bottom: 1.5rem; color: #c5c6c7; font-size: 0.9rem;">
+        Generate the exact code block for a movie or series. Copy the result and paste it into your <strong>media-data.js</strong> file!
+      </p>
+
+      <label>TMDB API Read Access Token (v4)</label>
+      <input type="password" id="tmdbToken" placeholder="Paste your long TMDB Bearer Token here..." />
+      
+      <div class="flex-row">
+        <div>
+          <label>TMDB ID</label>
+          <input type="text" id="tmdbId" placeholder="e.g. 533535" />
+        </div>
+        <div>
+          <label>Type</label>
+          <select id="mediaType">
+            <option value="movie">Movie</option>
+            <option value="tv">TV Show / Series</option>
+          </select>
+        </div>
+      </div>
+      
+      <button onclick="generateCode()">Generate Code Block</button>
+      <span id="tmdbMsg" style="margin-left: 1rem;"></span>
+
+      <!-- Output Area -->
+      <div id="outputArea" class="hidden">
+        <pre id="generatedCode"></pre>
+        <button class="copy-btn" onclick="copyCode()">📋 Copy Code to Clipboard</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const API_BASE = "https://cinewatch-maaa.onrender.com/api";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Since this file is now local, we don't need to check for a login token!
+      document.getElementById("adminContent").classList.remove("hidden");
+      
+      const savedTmdb = localStorage.getItem("tmdb_token");
+      if (savedTmdb) document.getElementById("tmdbToken").value = savedTmdb;
+      
+      fetchAnalytics();
+    });
+
+    function fetchAnalytics() {
+      fetch(`${API_BASE}/stats`).then(r => r.json()).then(data => {
+        document.getElementById('analyticsToday').textContent = (data.todayViews || 0).toLocaleString();
+        document.getElementById('analyticsYesterday').textContent = (data.yesterdayViews || 0).toLocaleString();
+        document.getElementById('analytics30Days').textContent = (data.last30DaysViews || 0).toLocaleString();
+        document.getElementById('analyticsViews').textContent = (data.totalViews || 0).toLocaleString();
+        document.getElementById('analyticsUsers').textContent = (data.totalUsers || 0).toLocaleString();
+      }).catch(() => {});
+    }
+
+    async function generateCode() {
+      const tmdbToken = document.getElementById("tmdbToken").value.trim();
+      const id = document.getElementById("tmdbId").value.trim();
+      const type = document.getElementById("mediaType").value;
+      const msg = document.getElementById("tmdbMsg");
+      
+      if (!tmdbToken || !id) { 
+        msg.style.color = "#ff6b6b"; 
+        msg.textContent = "Token and ID are required."; 
+        return; 
+      }
+      
+      localStorage.setItem("tmdb_token", tmdbToken);
+      msg.style.color = "#66fcf1"; 
+      msg.textContent = "⏳ Fetching from TMDB...";
+      document.getElementById("outputArea").classList.add("hidden");
+
+      try {
+        const options = { headers: { accept: 'application/json', Authorization: `Bearer ${tmdbToken}` } };
+        const res = await fetch(`https://api.themoviedb.org/3/${type}/${id}`, options);
+        if (!res.ok) throw new Error("TMDB fetch failed. Check the ID and token.");
+        const data = await res.json();
+        
+        const credRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}/credits`, options);
+        const credData = credRes.ok ? await credRes.json() : { cast: [] };
+        
+        let durationStr = "1h 30m";
+        if (type === 'movie' && data.runtime) durationStr = `${Math.floor(data.runtime / 60)}h ${data.runtime % 60}m`;
+        
+        const payload = {
+          title: type === 'movie' ? data.title : data.name,
+          type: type === 'movie' ? 'Movie' : 'TV Show',
+          year: parseInt((type === 'movie' ? data.release_date : data.first_air_date)?.substring(0, 4) || new Date().getFullYear()),
+          rating: parseFloat((data.vote_average || 0).toFixed(1)),
+          age: "PG-13",
+          duration: durationStr,
+          genres: data.genres ? data.genres.map(g => g.name) : [],
+          poster: data.poster_path ? `https://image.tmdb.org/t/p/w600_and_h900_face${data.poster_path}` : "",
+          backdrop: data.backdrop_path ? `https://image.tmdb.org/t/p/original${data.backdrop_path}` : "",
+          videoUrl: id,
+          overview: data.overview || "",
+          director: "Unknown",
+          cast: credData.cast.slice(0, 3).map(c => c.name),
+          trending: false,
+          featured: false,
+          is4k: false,
+          seasons: type === 'tv' && data.number_of_seasons ? [{ season: 1, episodes: [{ episode: 1, title: "Ep 1" }] }] : []
+        };
+
+        // Format without quotes on keys
+        const jsonStr = JSON.stringify(payload, null, 2);
+        const jsObjectStr = jsonStr.replace(/^\\s*"([a-zA-Z0-9_]+)":/gm, (match, key) => match.replace(`"${key}":`, `${key}:`));
+        
+        document.getElementById("generatedCode").textContent = "  " + jsObjectStr.replace(/\\n/g, '\\n  ') + ",";
+        document.getElementById("outputArea").classList.remove("hidden");
+        msg.textContent = "";
+
+      } catch (err) {
+        msg.style.color = "#ff6b6b"; 
+        msg.textContent = err.message;
+      }
+    }
+
+    function copyCode() {
+      const code = document.getElementById("generatedCode").textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.querySelector(".copy-btn");
+        btn.textContent = "✅ Copied to clipboard!";
+        btn.style.background = "#27ae60";
+        setTimeout(() => {
+          btn.textContent = "📋 Copy Code to Clipboard";
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
