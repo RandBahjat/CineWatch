@@ -2,27 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-width=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CineWatch Admin Panel</title>
   <style>
-    body { font-family: system-ui, -apple-system, sans-serif; background: #0b0c10; color: #fff; padding: 2rem; max-width: 1000px; margin: 0 auto; }
-    h1 { color: #66fcf1; }
-    .card { background: #1f2833; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; }
-    label { display: block; margin-bottom: 0.5rem; color: #c5c6c7; font-size: 0.9rem; }
-    input, select, textarea { width: 100%; padding: 0.8rem; margin-bottom: 1.2rem; background: #0b0c10; border: 1px solid #45a29e; color: #fff; border-radius: 4px; box-sizing: border-box; }
-    button { background: #45a29e; color: #0b0c10; border: none; padding: 0.8rem 1.5rem; font-weight: bold; border-radius: 4px; cursor: pointer; font-size: 1rem; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #0b0c10; color: #fff; padding: 2rem; max-width: 1100px; margin: 0 auto; }
+    h1 { color: #66fcf1; margin-bottom: 1.5rem; }
+    .card { background: #1f2833; padding: 1.5rem; border-radius: 10px; margin-bottom: 2rem; }
+    label { display: block; margin-bottom: 0.4rem; color: #c5c6c7; font-size: 0.85rem; }
+    input, select, textarea { width: 100%; padding: 0.75rem; margin-bottom: 1rem; background: #0b0c10; border: 1px solid #45a29e; color: #fff; border-radius: 6px; font-size: 0.95rem; }
+    textarea { resize: vertical; }
+    button { background: #45a29e; color: #0b0c10; border: none; padding: 0.7rem 1.4rem; font-weight: bold; border-radius: 6px; cursor: pointer; font-size: 0.95rem; transition: background 0.2s; }
     button:hover { background: #66fcf1; }
-    .btn-danger { background: #ff6b6b; color: white; }
-    .btn-danger:hover { background: #ff4c4c; }
-    .success { color: #66fcf1; margin-top: 1rem; }
-    .error { color: #ff6b6b; margin-top: 1rem; }
-    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
-    th, td { padding: 1rem; text-align: left; border-bottom: 1px solid #45a29e; }
-    th { color: #66fcf1; }
-    .actions { display: flex; gap: 0.5rem; }
+    .btn-danger { background: #c0392b; color: white; }
+    .btn-danger:hover { background: #e74c3c; }
+    .btn-sm { padding: 0.35rem 0.75rem; font-size: 0.8rem; }
+    .btn-move { background: #2c3e50; color: #66fcf1; border: 1px solid #45a29e; padding: 0.3rem 0.6rem; font-size: 1rem; }
+    .btn-move:hover { background: #45a29e; color: #0b0c10; }
+    .btn-save-order { background: #27ae60; color: white; }
+    .btn-save-order:hover { background: #2ecc71; color: #0b0c10; }
+    .success { color: #66fcf1; margin-top: 0.5rem; }
+    .error { color: #ff6b6b; margin-top: 0.5rem; }
     .hidden { display: none; }
     .flex-row { display: flex; gap: 1rem; }
     .flex-row > div { flex: 1; }
+
+    /* Tabs */
+    .tabs { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; }
+    .tab-btn { background: #1f2833; color: #c5c6c7; border: 1px solid #45a29e; border-radius: 6px 6px 0 0; padding: 0.7rem 1.5rem; font-weight: bold; cursor: pointer; transition: 0.2s; }
+    .tab-btn.active { background: #45a29e; color: #0b0c10; }
+    .tab-btn:hover { background: #45a29e; color: #0b0c10; }
+
+    /* Table */
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 0.85rem 1rem; text-align: left; border-bottom: 1px solid #2c3e50; font-size: 0.9rem; }
+    th { color: #66fcf1; background: #161b22; position: sticky; top: 0; }
+    tr:hover { background: rgba(102,252,241,0.04); }
+    .actions { display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap; }
+    .poster-thumb { width: 36px; height: 54px; object-fit: cover; border-radius: 4px; vertical-align: middle; }
+
+    /* Analytics */
+    .analytics-grid { display: flex; gap: 2rem; flex-wrap: wrap; }
+    .stat-box { flex: 1; min-width: 120px; background: #0b0c10; padding: 1rem 1.5rem; border-radius: 8px; border: 1px solid #45a29e; }
+    .stat-box label { color: #c5c6c7; font-size: 0.8rem; margin-bottom: 0.4rem; }
+    .stat-box h2 { color: #66fcf1; font-size: 2rem; }
+
+    /* Save order banner */
+    #saveOrderBanner { display: none; position: fixed; bottom: 2rem; right: 2rem; background: #1f2833; border: 1px solid #66fcf1; border-radius: 10px; padding: 1rem 1.5rem; z-index: 999; display: none; align-items: center; gap: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,0.6); }
+
+    /* Edit modal */
+    #editModal { display: none; position: fixed; top: 5%; left: 50%; transform: translateX(-50%); width: 90%; max-width: 700px; max-height: 90vh; overflow-y: auto; z-index: 1000; box-shadow: 0 0 40px rgba(0,0,0,0.9); }
+    #modalOverlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 999; }
   </style>
 </head>
 <body>
@@ -30,25 +61,29 @@
   <h1>🎬 CineWatch Admin Panel</h1>
   
   <div id="authWarning" class="card" style="border: 2px solid #ff6b6b; display: none;">
-    <h3 style="color: #ff6b6b; margin-top: 0;">Not Authenticated</h3>
-    <p>You must be logged into CineWatch to manage titles.</p>
-    <a href="/" style="color: #66fcf1;">Go to Home to Login</a>
+    <h3 style="color: #ff6b6b; margin-bottom: 0.5rem;">Access Denied</h3>
+    <p>You must be logged into CineWatch as the administrator to view this page.</p>
+    <br><a href="/" style="color: #66fcf1;">← Go to Home to Login</a>
   </div>
 
-  <div id="adminContent" style="display: none;">
-    <div class="card" style="border: 2px solid #66fcf1;">
-      <h3>📊 Site Analytics</h3>
-      <div style="display: flex; gap: 2rem;">
-        <div><label>Total Page Views</label><h2 id="analyticsViews" style="margin: 0; color: #fff;">Loading...</h2></div>
-        <div><label>Total Registered Users</label><h2 id="analyticsUsers" style="margin: 0; color: #fff;">Loading...</h2></div>
+  <div id="adminContent" class="hidden">
+
+    <!-- Analytics -->
+    <div class="card" style="border: 1px solid #45a29e;">
+      <h3 style="margin-bottom: 1rem;">📊 Site Analytics</h3>
+      <div class="analytics-grid">
+        <div class="stat-box"><label>Page Views</label><h2 id="analyticsViews">...</h2></div>
+        <div class="stat-box"><label>Registered Users</label><h2 id="analyticsUsers">...</h2></div>
+        <div class="stat-box"><label>Total Movies</label><h2 id="analyticsMovies">...</h2></div>
+        <div class="stat-box"><label>Total Series</label><h2 id="analyticsSeries">...</h2></div>
       </div>
     </div>
 
+    <!-- Add Title -->
     <div class="card">
-      <h3>➕ Add New Title via TMDB</h3>
+      <h3 style="margin-bottom: 1rem;">➕ Add New Title via TMDB</h3>
       <label>TMDB API Read Access Token (v4)</label>
       <input type="password" id="tmdbToken" placeholder="Paste your long TMDB Bearer Token here..." />
-      
       <div class="flex-row">
         <div>
           <label>TMDB ID</label>
@@ -58,151 +93,260 @@
           <label>Type</label>
           <select id="mediaType">
             <option value="movie">Movie</option>
-            <option value="tv">TV Show</option>
+            <option value="tv">TV Show / Series</option>
           </select>
         </div>
       </div>
-      <button onclick="fetchFromTMDB()">Fetch & Save to Database</button>
-      <div id="tmdbMsg"></div>
+      <button onclick="fetchFromTMDB()">Fetch &amp; Save to Database</button>
+      <div id="tmdbMsg" style="margin-top:0.5rem;"></div>
     </div>
 
+    <!-- Manage Titles -->
     <div class="card">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 1rem;">
         <h3>📋 Manage Titles</h3>
-        <input type="text" id="searchInput" placeholder="Search titles..." style="width: 300px; margin-bottom: 0;" onkeyup="filterTitles()">
+        <input type="text" id="searchInput" placeholder="🔍 Search titles..." style="width: 260px; margin-bottom: 0;" oninput="filterTitles()">
       </div>
-      
-      <table>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Type</th>
-            <th>Year</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody id="titlesTable">
-          <tr><td colspan="4">Loading titles...</td></tr>
-        </tbody>
-      </table>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab-btn active" id="tabMovies" onclick="switchTab('movies')">🎬 Movies (<span id="movieCount">0</span>)</button>
+        <button class="tab-btn" id="tabSeries" onclick="switchTab('series')">📺 Series (<span id="seriesCount">0</span>)</button>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:36px;">#</th>
+              <th style="width:50px;"></th>
+              <th>Title</th>
+              <th>Year</th>
+              <th>Rating</th>
+              <th>Move</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="titlesTable">
+            <tr><td colspan="7">Loading...</td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+
+  </div><!-- end adminContent -->
+
+  <!-- Save Order Banner -->
+  <div id="saveOrderBanner">
+    <span style="color:#66fcf1;">📌 You have unsaved position changes</span>
+    <button class="btn-save-order" onclick="saveOrder()">Save Order</button>
+    <button class="btn-danger btn-sm" onclick="cancelOrderChanges()">Cancel</button>
   </div>
 
+  <!-- Modal Overlay -->
+  <div id="modalOverlay" onclick="closeModal()"></div>
+
   <!-- Edit Modal -->
-  <div id="editModal" class="card" style="display: none; position: fixed; top: 5%; left: 50%; transform: translateX(-50%); width: 80%; max-height: 90vh; overflow-y: auto; z-index: 1000; box-shadow: 0 0 20px rgba(0,0,0,0.8);">
-    <h3>✏️ Edit Title</h3>
+  <div id="editModal" class="card">
+    <h3 style="margin-bottom:1rem;">✏️ Edit Title</h3>
     <input type="hidden" id="editId">
-    
     <div class="flex-row">
       <div><label>Title</label><input type="text" id="editTitle"></div>
       <div>
         <label>Type</label>
         <select id="editType">
           <option value="Movie">Movie</option>
-          <option value="TV Show">TV Show</option>
+          <option value="TV Show">TV Show / Series</option>
         </select>
       </div>
     </div>
-    
     <div class="flex-row">
       <div><label>Year</label><input type="number" id="editYear"></div>
-      <div><label>Rating</label><input type="number" step="0.1" id="editRating"></div>
+      <div><label>Rating (0-10)</label><input type="number" step="0.1" id="editRating"></div>
     </div>
-    
-    <label>Poster URL</label>
-    <input type="text" id="editPoster">
-    
-    <label>Backdrop URL</label>
-    <input type="text" id="editBackdrop">
-    
-    <label>Video Embed ID (or URL)</label>
-    <input type="text" id="editVideoUrl">
-    
-    <label>Overview</label>
-    <textarea id="editOverview" style="height: 100px;"></textarea>
-
-    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
-      <button onclick="saveEdit()">Save Changes</button>
-      <button class="btn-danger" onclick="document.getElementById('editModal').style.display='none'">Cancel</button>
+    <label>Poster URL</label><input type="text" id="editPoster">
+    <label>Backdrop URL</label><input type="text" id="editBackdrop">
+    <label>Video Embed ID (or URL)</label><input type="text" id="editVideoUrl">
+    <label>Overview</label><textarea id="editOverview" style="height:100px;"></textarea>
+    <div style="display:flex; gap:1rem; margin-top:1rem;">
+      <button onclick="saveEdit()">💾 Save Changes</button>
+      <button class="btn-danger" onclick="closeModal()">Cancel</button>
     </div>
-    <div id="editMsg"></div>
+    <div id="editMsg" style="margin-top:0.5rem;"></div>
   </div>
 
   <script>
     const API_BASE = "https://cinewatch-maaa.onrender.com/api";
     let token = null;
     let allMedia = [];
+    let currentTab = 'movies';
+    let orderChanged = false;
+    let originalOrder = [];
 
     document.addEventListener("DOMContentLoaded", () => {
       token = sessionStorage.getItem("cw_token");
       let isAdmin = false;
-      
       if (token) {
         try {
           const payload = JSON.parse(atob(token.split('.')[1]));
-          if (payload.username && payload.username.toLowerCase() === 'flame-_-2005') {
-            isAdmin = true;
-          }
-        } catch(e) {
-          console.error("Error parsing token", e);
-        }
+          if (payload.username && payload.username.toLowerCase() === 'flame-_-2005') isAdmin = true;
+        } catch(e) {}
       }
-      
       if (!isAdmin) {
-        document.getElementById("authWarning").innerHTML = "<strong>Access Denied:</strong> You must be the site administrator to view this page.<br><br><a href='/' style='color:#66fcf1;'>Go to Home to Login</a>";
         document.getElementById("authWarning").style.display = "block";
       } else {
-        document.getElementById("adminContent").style.display = "block";
+        document.getElementById("adminContent").classList.remove("hidden");
         const savedTmdb = localStorage.getItem("tmdb_token");
         if (savedTmdb) document.getElementById("tmdbToken").value = savedTmdb;
-        
         fetchAnalytics();
         loadTitles();
       }
     });
 
     function fetchAnalytics() {
-      fetch(`${API_BASE}/stats`)
-        .then(res => res.json())
-        .then(data => {
-          document.getElementById('analyticsViews').textContent = data.totalViews || 0;
-          document.getElementById('analyticsUsers').textContent = data.totalUsers || 0;
-        })
-        .catch(() => {});
+      fetch(`${API_BASE}/stats`).then(r => r.json()).then(data => {
+        document.getElementById('analyticsViews').textContent = (data.totalViews || 0).toLocaleString();
+        document.getElementById('analyticsUsers').textContent = (data.totalUsers || 0).toLocaleString();
+      }).catch(() => {});
     }
 
     async function loadTitles() {
       try {
         const res = await fetch(`${API_BASE}/media`);
         allMedia = await res.json();
-        renderTable(allMedia);
+        originalOrder = allMedia.map(m => m._id);
+        updateCounts();
+        renderTable();
       } catch (err) {
-        document.getElementById("titlesTable").innerHTML = `<tr><td colspan="4" class="error">Failed to load titles</td></tr>`;
+        document.getElementById("titlesTable").innerHTML = `<tr><td colspan="7" class="error">Failed to load titles</td></tr>`;
       }
     }
 
-    function renderTable(data) {
+    function updateCounts() {
+      const movies = allMedia.filter(m => m.type === 'Movie');
+      const series = allMedia.filter(m => m.type !== 'Movie');
+      document.getElementById('movieCount').textContent = movies.length;
+      document.getElementById('seriesCount').textContent = series.length;
+      document.getElementById('analyticsMovies').textContent = movies.length;
+      document.getElementById('analyticsSeries').textContent = series.length;
+    }
+
+    function switchTab(tab) {
+      currentTab = tab;
+      document.getElementById('tabMovies').classList.toggle('active', tab === 'movies');
+      document.getElementById('tabSeries').classList.toggle('active', tab === 'series');
+      renderTable();
+    }
+
+    function filterTitles() {
+      renderTable();
+    }
+
+    function getFilteredData() {
+      const q = document.getElementById("searchInput").value.toLowerCase();
+      return allMedia.filter(m => {
+        const matchesTab = currentTab === 'movies' ? m.type === 'Movie' : m.type !== 'Movie';
+        const matchesSearch = !q || m.title.toLowerCase().includes(q);
+        return matchesTab && matchesSearch;
+      });
+    }
+
+    function renderTable() {
       const tbody = document.getElementById("titlesTable");
+      const data = getFilteredData();
+      if (data.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="7" style="color:#c5c6c7;">No titles found.</td></tr>`;
+        return;
+      }
       tbody.innerHTML = "";
-      data.forEach(m => {
+      data.forEach((m, i) => {
         const tr = document.createElement("tr");
+        tr.dataset.id = m._id;
         tr.innerHTML = `
-          <td>${m.title}</td>
-          <td>${m.type}</td>
-          <td>${m.year || 'N/A'}</td>
-          <td class="actions">
-            <button onclick="openEdit('${m._id}')" style="padding: 0.4rem 0.8rem;">Edit</button>
-            <button class="btn-danger" onclick="deleteTitle('${m._id}')" style="padding: 0.4rem 0.8rem;">Delete</button>
+          <td style="color:#c5c6c7;">${i + 1}</td>
+          <td>${m.poster ? `<img class="poster-thumb" src="${m.poster}" alt="" onerror="this.style.display='none'">` : '—'}</td>
+          <td><strong>${m.title}</strong></td>
+          <td>${m.year || '—'}</td>
+          <td>⭐ ${m.rating || '—'}</td>
+          <td>
+            <div class="actions">
+              <button class="btn-move" title="Move Up" onclick="moveUp('${m._id}')">↑</button>
+              <button class="btn-move" title="Move Down" onclick="moveDown('${m._id}')">↓</button>
+            </div>
+          </td>
+          <td>
+            <div class="actions">
+              <button class="btn-sm" onclick="openEdit('${m._id}')">✏️ Edit</button>
+              <button class="btn-sm btn-danger" onclick="deleteTitle('${m._id}')">🗑️ Delete</button>
+            </div>
           </td>
         `;
         tbody.appendChild(tr);
       });
     }
 
-    function filterTitles() {
-      const q = document.getElementById("searchInput").value.toLowerCase();
-      const filtered = allMedia.filter(m => m.title.toLowerCase().includes(q));
-      renderTable(filtered);
+    function moveUp(id) {
+      const idx = allMedia.findIndex(m => m._id === id);
+      if (idx <= 0) return;
+      // Find prev item of same type
+      const type = allMedia[idx].type;
+      let swapIdx = -1;
+      for (let i = idx - 1; i >= 0; i--) {
+        if ((currentTab === 'movies' && allMedia[i].type === 'Movie') ||
+            (currentTab === 'series' && allMedia[i].type !== 'Movie')) {
+          swapIdx = i; break;
+        }
+      }
+      if (swapIdx === -1) return;
+      [allMedia[idx], allMedia[swapIdx]] = [allMedia[swapIdx], allMedia[idx]];
+      markOrderChanged();
+      renderTable();
+    }
+
+    function moveDown(id) {
+      const idx = allMedia.findIndex(m => m._id === id);
+      if (idx === -1) return;
+      let swapIdx = -1;
+      for (let i = idx + 1; i < allMedia.length; i++) {
+        if ((currentTab === 'movies' && allMedia[i].type === 'Movie') ||
+            (currentTab === 'series' && allMedia[i].type !== 'Movie')) {
+          swapIdx = i; break;
+        }
+      }
+      if (swapIdx === -1) return;
+      [allMedia[idx], allMedia[swapIdx]] = [allMedia[swapIdx], allMedia[idx]];
+      markOrderChanged();
+      renderTable();
+    }
+
+    function markOrderChanged() {
+      orderChanged = true;
+      document.getElementById('saveOrderBanner').style.display = 'flex';
+    }
+
+    async function saveOrder() {
+      const orderedIds = allMedia.map(m => m._id);
+      try {
+        const res = await fetch(`${API_BASE}/media/reorder`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
+          body: JSON.stringify({ orderedIds })
+        });
+        if (!res.ok) throw new Error("Failed to save order.");
+        orderChanged = false;
+        originalOrder = [...orderedIds];
+        document.getElementById('saveOrderBanner').style.display = 'none';
+      } catch (err) {
+        alert("Error saving order: " + err.message);
+      }
+    }
+
+    function cancelOrderChanges() {
+      // Restore original order
+      allMedia.sort((a, b) => originalOrder.indexOf(a._id) - originalOrder.indexOf(b._id));
+      orderChanged = false;
+      document.getElementById('saveOrderBanner').style.display = 'none';
+      renderTable();
     }
 
     async function fetchFromTMDB() {
@@ -210,28 +354,18 @@
       const id = document.getElementById("tmdbId").value.trim();
       const type = document.getElementById("mediaType").value;
       const msg = document.getElementById("tmdbMsg");
-      
-      if (!tmdbToken || !id) {
-        msg.className = "error"; msg.textContent = "Token and ID are required."; return;
-      }
-      
+      if (!tmdbToken || !id) { msg.className = "error"; msg.textContent = "Token and ID are required."; return; }
       localStorage.setItem("tmdb_token", tmdbToken);
-      msg.className = ""; msg.textContent = "Fetching...";
-
+      msg.className = ""; msg.textContent = "⏳ Fetching from TMDB...";
       try {
         const options = { headers: { accept: 'application/json', Authorization: `Bearer ${tmdbToken}` } };
         const res = await fetch(`https://api.themoviedb.org/3/${type}/${id}`, options);
-        if (!res.ok) throw new Error("TMDB fetch failed.");
+        if (!res.ok) throw new Error("TMDB fetch failed. Check the ID and token.");
         const data = await res.json();
-        
         const credRes = await fetch(`https://api.themoviedb.org/3/${type}/${id}/credits`, options);
         const credData = credRes.ok ? await credRes.json() : { cast: [] };
-
         let durationStr = "1h 30m";
-        if (type === 'movie' && data.runtime) {
-          durationStr = `${Math.floor(data.runtime / 60)}h ${data.runtime % 60}m`;
-        }
-
+        if (type === 'movie' && data.runtime) durationStr = `${Math.floor(data.runtime / 60)}h ${data.runtime % 60}m`;
         const payload = {
           title: type === 'movie' ? data.title : data.name,
           type: type === 'movie' ? 'Movie' : 'TV Show',
@@ -246,27 +380,26 @@
           overview: data.overview || "",
           director: "Unknown",
           cast: credData.cast.slice(0, 3).map(c => c.name),
-          seasons: type === 'tv' && data.number_of_seasons ? [{ season: 1, episodes: [{ episode: 1, title: "Ep 1" }] }] : []
+          seasons: type === 'tv' && data.number_of_seasons ? [{ season: 1, episodes: [{ episode: 1, title: "Ep 1" }] }] : [],
+          order: allMedia.length
         };
-
         const saveRes = await fetch(`${API_BASE}/media`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
           body: JSON.stringify(payload)
         });
-
-        if (!saveRes.ok) throw new Error("Failed to save to database. Check if you are an admin.");
-        
-        msg.className = "success"; msg.textContent = "Title saved to database successfully!";
+        if (!saveRes.ok) throw new Error("Failed to save to database.");
+        msg.className = "success"; msg.textContent = `✅ "${payload.title}" saved successfully!`;
         document.getElementById("tmdbId").value = "";
-        loadTitles(); // refresh table
+        loadTitles();
       } catch (err) {
         msg.className = "error"; msg.textContent = err.message;
       }
     }
 
     async function deleteTitle(id) {
-      if (!confirm("Are you sure you want to delete this title?")) return;
+      const item = allMedia.find(m => m._id === id);
+      if (!confirm(`Delete "${item?.title}"? This cannot be undone.`)) return;
       try {
         const res = await fetch(`${API_BASE}/media/${id}`, {
           method: 'DELETE',
@@ -291,15 +424,19 @@
       document.getElementById('editBackdrop').value = m.backdrop || '';
       document.getElementById('editVideoUrl').value = m.videoUrl || '';
       document.getElementById('editOverview').value = m.overview || '';
-      
       document.getElementById('editMsg').textContent = '';
+      document.getElementById('modalOverlay').style.display = 'block';
       document.getElementById('editModal').style.display = 'block';
+    }
+
+    function closeModal() {
+      document.getElementById('editModal').style.display = 'none';
+      document.getElementById('modalOverlay').style.display = 'none';
     }
 
     async function saveEdit() {
       const id = document.getElementById('editId').value;
       const msg = document.getElementById('editMsg');
-      
       const payload = {
         title: document.getElementById('editTitle').value,
         type: document.getElementById('editType').value,
@@ -310,21 +447,15 @@
         videoUrl: document.getElementById('editVideoUrl').value,
         overview: document.getElementById('editOverview').value
       };
-
       try {
         const res = await fetch(`${API_BASE}/media/${id}`, {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
           body: JSON.stringify(payload)
         });
-        
         if (!res.ok) throw new Error("Failed to update.");
-        
-        msg.className = "success"; msg.textContent = "Saved successfully!";
-        setTimeout(() => {
-          document.getElementById('editModal').style.display = 'none';
-          loadTitles();
-        }, 1000);
+        msg.className = "success"; msg.textContent = "✅ Saved!";
+        setTimeout(() => { closeModal(); loadTitles(); }, 800);
       } catch (err) {
         msg.className = "error"; msg.textContent = err.message;
       }

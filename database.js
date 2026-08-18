@@ -52,6 +52,7 @@ const SiteStats = mongoose.model('SiteStats', siteStatsSchema);
 
 // Define the Media schema for movies and series
 const mediaSchema = new mongoose.Schema({
+  order: { type: Number, default: 0 },
   title:     { type: String, required: true },
   type:      { type: String, default: 'Movie' }, // 'Movie', 'TV Show', 'Series'
   year:      { type: Number },

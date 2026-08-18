@@ -421,7 +421,7 @@ app.get('/api/stats', async (req, res) => {
 // GET all media (public)
 app.get('/api/media', async (req, res) => {
   try {
-    const media = await Media.find({}).sort({ createdAt: 1 });
+    const media = await Media.find({}).sort({ order: 1, createdAt: 1 });
     res.json(media);
   } catch (err) {
     console.error('Error fetching media:', err);
@@ -437,6 +437,21 @@ app.get('/api/media/:id', async (req, res) => {
     res.json(item);
   } catch (err) {
     res.status(500).json({ error: 'Database error.' });
+  }
+});
+
+// PUT bulk reorder media (admin only)
+app.put('/api/media/reorder', authenticateToken, isAdmin, async (req, res) => {
+  const { orderedIds } = req.body;
+  if (!Array.isArray(orderedIds)) return res.status(400).json({ error: 'orderedIds must be an array.' });
+  try {
+    const updates = orderedIds.map((id, index) =>
+      Media.findByIdAndUpdate(id, { order: index })
+    );
+    await Promise.all(updates);
+    res.json({ message: 'Order saved.' });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to save order.' });
   }
 });
 
