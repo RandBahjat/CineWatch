@@ -48,7 +48,8 @@ async function loadMediaFromAPI() {
     MOVIES.forEach(m => {
       // Auto-generate a stable id from the title if none exists
       if (!m.id) {
-        m.id = m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        // Append year to make IDs unique (e.g., the-flash-2023 and the-flash-2014)
+        m.id = m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + (m.year ? '-' + m.year : '');
       }
 
       // Apply featured/trending from title lists
@@ -1782,9 +1783,10 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     nextEpBtn.classList.toggle("hidden", !epData);
   }
 
-  const isNumericId = /^\d+$/.test(videoUrl);
-  const isTvEmbed = videoUrl.startsWith("tv_embed:");
-  const isEmbedUrl = isTvEmbed || videoUrl.includes("/embed/") || videoUrl.includes("moviepire.co") || videoUrl.includes("vaplayer.ru");
+  const videoUrlStr = String(videoUrl || "");
+  const isNumericId = /^\d+$/.test(videoUrlStr);
+  const isTvEmbed = videoUrlStr.startsWith("tv_embed:");
+  const isEmbedUrl = isTvEmbed || videoUrlStr.includes("/embed/") || videoUrlStr.includes("moviepire.co") || videoUrlStr.includes("vaplayer.ru");
 
   let streamUrl = null;
 
@@ -1797,9 +1799,9 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     }
 
     // Extract ID and fetch stream
-    let fetchId = isNumericId ? videoUrl : videoUrl.split(":")[1];
-    let season = isTvEmbed ? videoUrl.split(":")[2] : null;
-    let episode = isTvEmbed ? videoUrl.split(":")[3] : null;
+    let fetchId = isNumericId ? videoUrlStr : videoUrlStr.split(":")[1];
+    let season = isTvEmbed ? videoUrlStr.split(":")[2] : null;
+    let episode = isTvEmbed ? videoUrlStr.split(":")[3] : null;
     let type = isTvEmbed ? "TV Show" : "Movie";
 
     streamUrl = await fetchRawStream(fetchId, type, season, episode);
@@ -1955,8 +1957,9 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
 
 
   // Check if it's an embed ID or URL
-  const isNumericId = /^\d+$/.test(movie.videoUrl);
-  const isEmbedUrl = movie.videoUrl.includes("/embed/") || movie.videoUrl.includes("moviepire.co") || movie.videoUrl.includes("vaplayer.ru");
+  const movieVideoUrlStr = String(movie.videoUrl || "");
+  const isNumericId = /^\d+$/.test(movieVideoUrlStr);
+  const isEmbedUrl = movieVideoUrlStr.includes("/embed/") || movieVideoUrlStr.includes("moviepire.co") || movieVideoUrlStr.includes("vaplayer.ru");
   const serverWrap = document.getElementById("serverSelectWrap");
 
   let streamUrl = null;
