@@ -29506,7 +29506,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/1EFqCQv0td8LMogXCpNEAW3uxgL.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/sU0K1sJnjMVQsW4AroVj2jLN56U.jpg",
-    videoUrl: "109",
+    videoUrl: "10926",
     overview: "In true fashion to the many Sonic the Hedgehog games, Sonic X features the Sonic gang racing to collect the powerful Chaos Emeralds before the powerful Dr. Eggman does.",
     director: "Hajime Kamegaki",
     cast: [
