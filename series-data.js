@@ -22387,7 +22387,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/5q3tfPVAcL9AlFcb8HXsOdHEtJR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/29UStAuZFmopfApCWVeeW6YnMs0.jpg",
-    videoUrl: "226922",
+    videoUrl: "212",
     overview: "Many legendary realms have suddenly combined into one, but their union is unstable. A Spinjitzu Ninja Master must train a new generation of heroes to help find Elemental Dragons who can save the planet before the forces of evil use the same dragon energy to destroy this new world.",
     director: "Tommy Andreasen",
     cast: [
