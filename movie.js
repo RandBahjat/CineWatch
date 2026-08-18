@@ -3556,9 +3556,9 @@ function updateIframeServer() {
 
   let newUrl = "";
   if (data.type === "tv") {
-    newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}`;
+    newUrl = `https://vidapi.ru/player/tv/${data.id}/${data.season}/${data.episode}`;
   } else {
-    newUrl = `https://vaplayer.ru/embed/movie/${data.id}`;
+    newUrl = `https://vidapi.ru/player/movie/${data.id}`;
   }
   
   iframe.src = newUrl;
