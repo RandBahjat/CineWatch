@@ -17408,7 +17408,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/pBUOFBmZLaIxzjDjQP7d3QZrd4w.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3h4DWrR6t6bTCrcUabDwPqZhONY.jpg",
-    videoUrl: "",
+    videoUrl: "2309",
     overview: "Danny Fenton was once your typical shy kid--you know, kind of a wallflower. But all that changed one afternoon when Danny accidentally blew up his parents' laboratory and became ghost-hunting superhero Danny Phantom. Now 1/2 ghost, Danny's picked up some prety cool paranormal powers-- but only his best friends Samantha and Tucker know his secret. These days, Danny's busy fighting ghosts, saving the world and hiding his new identity--which is actually a whole lot easier than trying to survive ninth grade.",
     director: "Butch Hartman",
     cast: [
