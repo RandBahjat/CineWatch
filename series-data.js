@@ -21181,7 +21181,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/c4bMyE2SZv9B6rS0Anvlwej14R1.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/xZpwiSsAyYu7F4Yq5LbSQJz8iLV.jpg",
-    videoUrl: "2419",
+    videoUrl: "14",
     overview: "Quick-witted Virgil Hawkins finds himself imbued with electromagnetic superpowers after being exposed to a mutagenic gas and takes on the guise of Static, an urban hero of his own creation. He confronts real problems and issues faced by today's kids, such as peer pressure, gangs and growing up in an ethnically diverse urban neighborhood. Learning to control his powers, figuring out how to patrol the skies at night and still make it home in time to study for his chemistry class, Virgil's greatest discovery becomes the real \"charge\" he gets in helping people and making a positive difference in his community - Dakota City.",
     director: "Dwayne McDuffie",
     cast: [
