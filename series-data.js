@@ -5104,7 +5104,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uOOtwVbSr4QDjAGIifLDwpb2Pdl.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
-    videoUrl: null,
+    videoUrl: "667",
     overview: "In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits after a local boy vanishes without a trace. As they search for answers, the children unravel a series of extraordinary mysteries involving a mysterious girl with unusual abilities, a hidden parallel dimension, and terrifying creatures lurking just beyond their small town.",
     director: "The Duffer Brothers (Matt Duffer, Ross Duffer)",
     cast: [
