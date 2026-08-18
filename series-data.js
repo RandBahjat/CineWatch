@@ -20932,7 +20932,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://image.tmdb.org/t/p/original/b6P4pAoEOHMzK429erFipH4b8kM.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rczT5ka8qDMXeQSBBMU8LX7DLv5.jpg",
-    videoUrl: "2439",
+    videoUrl: "",
     overview: "Justice League is based on the comic book and associated comic book characters published by DC Comics. After its second season, it became Justice League Unlimited, and ran an additional three seasons.",
     director: "Bruce Timm",
     cast: [
