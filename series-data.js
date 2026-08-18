@@ -32207,7 +32207,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/5DzjYIdgoePjMlmS7RCyUYWhpIK.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/46tjvIBAdk9RfsPKwFez2p8Ip3W.jpg",
-    videoUrl: "641",
+    videoUrl: "64198",
     overview: "Blaze and the Monster Machines is a CG interactive preschool series about Blaze, the world's greatest monster truck, and his best buddy and driver, a boy named AJ.",
     director: "Jeff Borkin",
     cast: [
