@@ -30724,7 +30724,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://image.tmdb.org/t/p/original/lmt4hQFs8JspdlTlfD5tl8U5CYM.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/p6MkLTB7PNIwY4v6FOJW5jYUe5k.jpg",
-    videoUrl: "518",
+    videoUrl: "51817",
     overview: "Leo, Donnie, Raph and Mikey are mutant turtles who have been trained in the art of ninjutsu by their rat sensei, Master Splinter. Emerging from their sewer lair, the reptile brothers confront the wondrous world of New York City, facing villains more dangerous and pizza more delicious than anything they could have imagined.Through battles with Shredder, the Kraang and loads of super-powerful mutants, the Turtles learn to rely on themselves and each other as they grow to become the heroes they are destined to be.",
     director: "Ciro Nieli",
     cast: [
