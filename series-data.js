@@ -6360,7 +6360,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://image.tmdb.org/t/p/original/sn5T0gm0EMxhKZGUPeAs38HVc6a.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/g9iWefLnhAnvbthM0UurqHGhc1s.jpg",
-    videoUrl: null,
+    videoUrl: "60",
     overview: "After being struck by lightning, forensic investigator Barry Allen wakes up from his coma to discover he's been given the power of super speed, becoming the Flash and fighting crime in Central City. As he uses his newfound abilities to protect the city from other superpowered threats, Barry must also confront the dark secret behind the very event that gave him his powers.",
     director: "Greg Berlanti, Andrew Kreisberg, Geoff Johns",
     cast: [
