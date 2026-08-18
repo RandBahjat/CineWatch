@@ -19706,7 +19706,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    title: "Spider-Man",
+    title: "Marvel's Spider-Man",
     type: "TV Show",
     year: 2017,
     rating: 6.2,
