@@ -3546,13 +3546,34 @@ function updateIframeServer() {
   if (!window.currentIframeData) return;
   const data = window.currentIframeData;
   const iframe = document.getElementById("iframeElement");
-
-  let newUrl = "";
-  if (data.type === "tv") {
-    newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}`;
-  } else {
-    newUrl = `https://vaplayer.ru/embed/movie/${data.id}`;
+  const serverSelect = document.getElementById("videoServerSelect");
+  
+  // Populate server dropdown if empty
+  if (serverSelect && serverSelect.options.length === 0) {
+    serverSelect.innerHTML = `
+      <option value="vidsrc_me">Server 1 (VidSrc)</option>
+      <option value="vidsrc_pro">Server 2 (VidSrc Pro)</option>
+      <option value="superembed">Server 3 (SuperEmbed)</option>
+      <option value="vaplayer">Server 4 (VA Player)</option>
+    `;
+    serverSelect.style.display = "inline-block";
   }
+
+  const selectedServer = serverSelect ? serverSelect.value : "vidsrc_me";
+  let newUrl = "";
+
+  if (data.type === "tv") {
+    if (selectedServer === "vidsrc_me") newUrl = `https://vidsrc.me/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}`;
+    else if (selectedServer === "vidsrc_pro") newUrl = `https://vidsrc.pro/embed/tv/${data.id}/${data.season}/${data.episode}`;
+    else if (selectedServer === "superembed") newUrl = `https://multiembed.mov/directstream.php?video_id=${data.id}&tmdb=1&s=${data.season}&e=${data.episode}`;
+    else newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}`;
+  } else {
+    if (selectedServer === "vidsrc_me") newUrl = `https://vidsrc.me/embed/movie?tmdb=${data.id}`;
+    else if (selectedServer === "vidsrc_pro") newUrl = `https://vidsrc.pro/embed/movie/${data.id}`;
+    else if (selectedServer === "superembed") newUrl = `https://multiembed.mov/directstream.php?video_id=${data.id}&tmdb=1`;
+    else newUrl = `https://vaplayer.ru/embed/movie/${data.id}`;
+  }
+  
   iframe.src = newUrl;
 }
 
