@@ -838,7 +838,7 @@ window._SERIES_DATA = [
       "Fantasy"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
-    backdrop: "https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/MgXQGyNr1xbI8tJSYiMWv5kXg5g/AAAABd12fwHAGK_7EG-5T6R37hImS0IPa8pGZ8iWSbj6NL9DOwJ7njeXb4ydmeKpRjEcNQx10rprbFsSowbR-Qpp6maCmGGfxFlEwtH2GVSS0g64UgPpQDa1rlSiAg.jpg?r=564",
+    backdrop: "https://image.tmdb.org/t/p/original/q3UGWifvIpdey1T2efX4dSmbZpU.jpg",
     videoUrl: "124364",
     overview: "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest — including the terrifying creatures that come out when the sun goes down.",
     director: "John Griffin",
