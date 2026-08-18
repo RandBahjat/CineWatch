@@ -38,13 +38,11 @@ async function loadMediaFromAPI() {
   // Load from local media-data.js instead of the API for speed and security.
   // To add/edit/remove movies or series, edit media-data.js directly.
   try {
-    if (typeof window._MEDIA_DATA !== 'undefined') {
-      MOVIES = window._MEDIA_DATA;
-    } else {
-      // Fallback: still works if media-data.js not loaded
-      MOVIES = [];
-      console.warn('CineWatch: media-data.js not loaded.');
-    }
+    const moviesData = typeof window._MOVIES_DATA !== 'undefined' ? window._MOVIES_DATA : [];
+    const seriesData = typeof window._SERIES_DATA !== 'undefined' ? window._SERIES_DATA : [];
+    MOVIES = [...moviesData, ...seriesData];
+
+    if (MOVIES.length === 0) console.warn('CineWatch: No media data found. Check movies-data.js and series-data.js.');
 
     // Apply post-processing
     MOVIES.forEach(m => {
