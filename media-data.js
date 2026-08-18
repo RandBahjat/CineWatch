@@ -29444,6 +29444,78 @@ window._MEDIA_DATA = [
     seasons: []
   },
   {
+    title: "The Matrix",
+    type: "Movie",
+    year: 1999,
+    rating: 8.7,
+    age: "R",
+    duration: "2h 16m",
+    genres: [
+      "Sci-Fi",
+      "Action",
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/fNG7i7RqMErkcqhohV2a6cV1Ehy.jpg",
+    videoUrl: "603",
+    overview: "Hacker Neo learn world he know fake, reality run by machines who farm humans for energy. Join rebel Morpheus, band of freedom fighter, fight to free mind of mankind.",
+    director: "Lana Wachowski, Lilly Wachowski",
+    cast: [
+      "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving, Joe Pantoliano"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
+  {
+    title: "The Matrix Reloaded",
+    type: "Movie",
+    year: 2003,
+    rating: 7.2,
+    age: "R",
+    duration: "2h 18m",
+    genres: [
+      "Sci-Fi",
+      "Action",
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/aA5qHS0FbSXO8PxcxUIHbDrJyuh.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/u2IlqBzlGqMwDnQsoskjCohgaPO.jpg",
+    videoUrl: "604",
+    overview: "Neo, Morpheus, Trinity fight on, machine army dig toward Zion, last human city. Neo learn more bout own power, uncover deeper truth bout Matrix itself.",
+    director: "Lana Wachowski, Lilly Wachowski",
+    cast: [
+      "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving, Jada Pinkett Smith"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
+  {
+    title: "The Matrix Revolutions",
+    type: "Movie",
+    year: 2003,
+    rating: 6.7,
+    age: "R",
+    duration: "2h 9m",
+    genres: [
+      "Sci-Fi",
+      "Action",
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bkkS61w94ZVMNVd8KEyyJl2tnY5.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/533xAMhhVyjTy8hwMUFEt5TuDfR.jpg",
+    videoUrl: "605",
+    overview: "War between man, machine reach climax. Neo trapped between two world, must end fight, save Zion, before machine army destroy last human city.",
+    director: "Lana Wachowski, Lilly Wachowski",
+    cast: [
+      "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving, Mary Alice"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "House of the Dragon",
     type: "TV Show",
     year: 2022,
