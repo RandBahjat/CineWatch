@@ -19996,7 +19996,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/kjcsNeqF52YUQ2rUBGLMHwLkxvR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/2oFQz1CcRs9zlUuonTB6vLoyB5I.jpg",
-    videoUrl: 138503,
+    videoUrl: "138",
     overview: "An animated superhero series that serves as an alternate-universe prequel exploring Peter Parker's early days as Spider-Man. Instead of being mentored by Tony Stark like in the main MCU timeline, 15-year-old Peter finds himself under the wing of corporate billionaire Norman Osborn. The series features a stylized comic-book animation aesthetic and focuses on a chaotic freshman year filled with balancing school, new allies, and classic street-level villains.",
     director: "Jeff Trammell",
     cast: [
