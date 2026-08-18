@@ -20568,7 +20568,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/9bkxU7kTMLuhBOPnkAYXtCsqZj3.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/41t0KM9bHGLi49OtS3hLt14vm6l.jpg",
-    videoUrl: "11228",
+    videoUrl: "1894",
     overview: "LazyTown is an Icelandic-American children's television program with a cast and crew from Iceland, the United Kingdom, and the United States. It was created by Magnús Scheving, a gymnastics champion and CEO of LazyTown Entertainment, who also stars in the show. Originally performed in English, the show has been dubbed into more than a dozen languages and aired in over 100 countries.A total of 52 episodes of LazyTown were produced from 2004 to 2007, for the show's first and second seasons. In the US, LazyTown originally aired on Nickelodeon and Nick Jr.; in 2011, PBS Kids Sprout gained the rights to air the series. Turner Broadcasting System Europe acquired the LazyTown Entertainment company in 2011 and commissioned a third season of the series to be delivered at the end of 2012 which premiered on April 6, 2013, in the UK.As of 2012, LazyTown airs on Turner Broadcasting's international preschool network, Cartoonito, and is distributed by Turner Broadcasting System Europe.LazyTown has generated several spin-off projects including stage productions and a TV program for younger children called LazyTown Extra.",
     director: "Magnús Scheving",
     cast: [
