@@ -1047,7 +1047,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ilOKsGRHYc78R2tSMusAd3xGJWq.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/dA4PbgytuOtzvPBJWoqFo9034D.jpg",
-    videoUrl: "124364",
+    videoUrl: "",
     overview: "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest — including the terrifying creatures that come out when the sun goes down.",
     director: "Alex Kurtzman, Duane Capizzi, Roberto Orci, Jeff Kline",
     cast: [
