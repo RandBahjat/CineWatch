@@ -1786,7 +1786,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   const videoUrlStr = String(videoUrl || "");
   const isNumericId = /^\d+$/.test(videoUrlStr);
   const isTvEmbed = videoUrlStr.startsWith("tv_embed:");
-  const isEmbedUrl = isTvEmbed || videoUrlStr.includes("/embed/") || videoUrlStr.includes("moviepire.co") || videoUrlStr.includes("vaplayer.ru");
+  const isEmbedUrl = isTvEmbed || videoUrlStr.includes("/embed/") || videoUrlStr.includes("moviepire.co") || videoUrlStr.includes("vidapi.ru") || videoUrlStr.includes("vaplayer.ru");
 
   let streamUrl = null;
 
@@ -1959,7 +1959,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
   // Check if it's an embed ID or URL
   const movieVideoUrlStr = String(movie.videoUrl || "");
   const isNumericId = /^\d+$/.test(movieVideoUrlStr);
-  const isEmbedUrl = movieVideoUrlStr.includes("/embed/") || movieVideoUrlStr.includes("moviepire.co") || movieVideoUrlStr.includes("vaplayer.ru");
+  const isEmbedUrl = movieVideoUrlStr.includes("/embed/") || movieVideoUrlStr.includes("moviepire.co") || movieVideoUrlStr.includes("vidapi.ru") || movieVideoUrlStr.includes("vaplayer.ru");
   const serverWrap = document.getElementById("serverSelectWrap");
 
   let streamUrl = null;
