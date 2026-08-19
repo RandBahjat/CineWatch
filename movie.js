@@ -1017,10 +1017,8 @@ function renderSeriesSection() {
 
 /** Get all titles that are Anime or Animation */
 function getAnimeList() {
-  return MOVIES.filter(m => 
-    (m.genres && m.genres.includes("Anime")) || 
-    (m.genres && m.genres.includes("Animation"))
-  );
+  // Temporarily empty until populated manually
+  return [];
 }
 
 /** Render (or re-render) the full Anime browse section */
