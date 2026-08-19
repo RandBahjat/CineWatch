@@ -21,7 +21,7 @@ window._SERIES_DATA = [
     overview: "Peter Parker already Spider-Man one year, save lives, fight villain, but still young, still learn how be hero. Nick Fury offer him chance train become real hero, The Ultimate Spider-Man. Peter learn must team up with four other teen hero, fight evil together",
     director: "Stan Lee, Steve Ditko",
     cast: [
-      "Drake Bell, Ogie Banks, Greg Cipes, Caitlyn Taylor Love, Logan Miller"
+      "Drake Bell, Ogie Banks, Chi McBride, Clark Gregg, Tom Kenny, J. K. Simmons"
     ],
     trending: false,
     featured: false,
