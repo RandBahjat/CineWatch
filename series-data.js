@@ -47804,7 +47804,7 @@ window._SERIES_DATA = [
       "Benedict Cumberbatch, Martin Freeman, Una Stubbs, Rupert Graves, Louise Brealey, Mark Gatiss"
     ],
     trending: false,
-    featured: true,
+    featured: false,
     is4k: false,
     seasons: [
       {
