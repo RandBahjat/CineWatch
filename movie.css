@@ -1376,10 +1376,13 @@ select {
 /* Continue Watching Card Specifics */
 .continue-card {
   flex: 0 0 280px;
+  background: transparent;
+  box-shadow: none;
 }
 
 .continue-poster-wrap {
   aspect-ratio: 16 / 9;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
 
 .progress-bar-wrap {
