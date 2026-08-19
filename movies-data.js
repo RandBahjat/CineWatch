@@ -1946,7 +1946,6 @@ window._MOVIES_DATA = [
     seasons: []
   },
 
-  
   {
     title: "John Wick: Chapter 3 - Parabellum",
     type: "Movie",
