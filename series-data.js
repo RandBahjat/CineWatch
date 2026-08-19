@@ -2383,7 +2383,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://image.tmdb.org/t/p/original/t5mbrd79o89pYB8OQ4QPFNkIRPm.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/wKXpV8QgNXtJ4OQyzqDy82SsURm.jpg",
-    videoUrl: null,
+    videoUrl: "",
     overview: "A young Bruce Wayne fights crime and evil in Gotham City as the mysterious vigilante, the Batman. This animated series follows his early crimefighting years — from a solo detective battling classic villains like the Joker, Penguin, and Mr. Freeze, to eventually building the Bat-Family with Robin and Batgirl, and forming ties with the wider DC Universe.",
     director: "Michael Goguen, Duane Capizzi",
     cast: [
