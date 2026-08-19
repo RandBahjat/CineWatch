@@ -1971,6 +1971,8 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+
+  
   
   {
     title: "Ghost Rider: Spirit of Vengeance",
