@@ -540,7 +540,11 @@ function createMovieCardHTML(movie) {
   return `
     <div class="movie-card" data-id="${movie.id}">
       <div class="card-poster-wrap">
-        <img src="${movie.backdrop || movie.poster}" alt="${movie.title}" class="card-poster" loading="lazy">
+        <picture>
+          <source media="(max-width: 768px)" srcset="${movie.poster}">
+          <img src="${movie.backdrop || movie.poster}" alt="${movie.title}" class="card-poster" loading="lazy">
+        </picture>
+        <div class="card-gradient"></div>
         <div class="card-overlay">
 
         </div>
