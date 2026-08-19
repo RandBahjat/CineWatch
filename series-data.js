@@ -47831,7 +47831,6 @@ window._SERIES_DATA = [
           { episode: 1, title: 'The Empty Hearse' },
           { episode: 2, title: 'The Sign of Three' },
           { episode: 3, title: 'Episode 4' }
-          { episode: 4, title: 'His Last Vow' }
         ]
       },
       {
