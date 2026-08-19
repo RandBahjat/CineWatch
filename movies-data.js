@@ -28,7 +28,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "The Invite",
+    title: "",
     type: "Movie",
     year: 2026,
     rating: 7.8,
