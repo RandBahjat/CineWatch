@@ -7446,7 +7446,7 @@ window._MOVIES_DATA = [
       "Horror"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/eyWICPcxOuTcDDDbTMOZawoOn8d.jpg",
-    backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/2uSCHUsmzb6KkQPFSxBQ7bgfJLE.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/anrUGgYG1A0WOMdW5RJauz4I13M.jpg",
     videoUrl: "345940",
     overview: "A deep-sea submersible is attacked by a massive creature previously thought to be extinct, and now lies disabled at the bottom of the deepest trench in the Pacific with its crew trapped inside. With time running out, expert deep-sea rescue diver Jonas Taylor is recruited by a visionary Chinese oceanographer to save the crew from this prehistoric threat — a 75-foot megalodon shark unlike anything modern science has ever seen.",
     director: "Jon Turteltaub",
