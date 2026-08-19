@@ -1469,10 +1469,14 @@ function openDetailsModal(movieId) {
     const reportBtn = document.getElementById("detailsReportBtn");
     if (reportBtn) {
       reportBtn.onclick = () => {
-        const issue = prompt(`What issue would you like to report for "${movie.title}"? (e.g., broken video, bad subtitles)`);
-        if (issue) {
-          console.log(`[REPORT] ${movie.title} (${movie.id}): ${issue}`);
-          alert("Thank you! Your report has been submitted.");
+        const reportModal = document.getElementById("reportModal");
+        if (reportModal) {
+          reportModal.classList.remove("hidden");
+          // Auto-fill the subject line with the current movie/series title
+          const subjectInput = document.getElementById("reportSubject");
+          if (subjectInput) {
+            subjectInput.value = `Issue with: ${movie.title}`;
+          }
         }
       };
     }
