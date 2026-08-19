@@ -47827,7 +47827,7 @@ window._SERIES_DATA = [
       {
         season: 3,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
+          { episode: 1, title: 'Many Happy Returns' },
           { episode: 2, title: 'Episode 2' },
           { episode: 3, title: 'Episode 3' },
           { episode: 4, title: 'Episode 4' }
