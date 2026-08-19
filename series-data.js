@@ -47850,7 +47850,7 @@ window._SERIES_DATA = [
     duration: "22m",
     genres: [
       "Animation",
-      "Action"  "Adventure",
+      "Action",  "Adventure",
       "Sci-Fi" "Fantasy",
       "Kids",
     ],
