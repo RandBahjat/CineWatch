@@ -3886,7 +3886,7 @@ window._MOVIES_DATA = [
   {
     title: "V for Vendetta",
     type: "Movie",
-    year: 2006,
+    year: 2005,
     rating: 8.1,
     age: "R",
     duration: "2h 12m",
