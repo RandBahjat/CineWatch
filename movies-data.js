@@ -3897,7 +3897,7 @@ window._MOVIES_DATA = [
       "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1avD1JeaRiJX5M4ahPdZPypGoGN.jpg",
-    backdrop: "https://c4.wallpaperflare.com/wallpaper/398/962/351/v-for-vendetta-anonymous-movies-wallpaper-preview.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/jFMjSMpTiUU5FYvlORTz7YveNqe.jpg",
     videoUrl: "752",
     overview: "In a futuristic, totalitarian Britain ruled by a fascist regime, a mysterious, mask-wearing freedom fighter known only as V uses terrorist tactics to fight oppression and incite a revolution. After saving a young working-class woman named Evey Hammond, he gains an unexpected ally in his quest to bring down the tyrannical government.",
     director: "James McTeigue ",
