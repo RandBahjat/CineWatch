@@ -1015,6 +1015,42 @@ function renderSeriesSection() {
   });
 }
 
+/** Get all titles that are Anime or Animation */
+function getAnimeList() {
+  return MOVIES.filter(m => 
+    (m.genres && m.genres.includes("Anime")) || 
+    (m.genres && m.genres.includes("Animation"))
+  );
+}
+
+/** Render (or re-render) the full Anime browse section */
+function renderAnimeSection() {
+  const allAnime = getAnimeList();
+  const filtered = applyBrowseFilter(allAnime, state.animeFilter);
+  const totalPages = Math.max(1, Math.ceil(filtered.length / BROWSE_PAGE_SIZE));
+
+  if (state.animePage > totalPages) state.animePage = totalPages;
+
+  const countEl = document.getElementById("animeCount");
+  if (countEl) countEl.textContent = `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`;
+
+  // Update count label (between filters and grid)
+  const labelEl = document.getElementById("animeCountLabel");
+  if (labelEl) {
+    labelEl.textContent = `Titles: ${filtered.length}`;
+  }
+
+  document.querySelectorAll("#animeFilterBar .browse-filter-btn").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.genre === state.animeFilter);
+  });
+
+  renderBrowseGrid(filtered, "animeGrid", state.animePage);
+  renderBrowsePagination("animePagination", state.animePage, totalPages, (p) => {
+    state.animePage = p;
+    renderAnimeSection();
+  });
+}
+
 // ==========================================
 // VIEW SWITCHER
 // ==========================================
