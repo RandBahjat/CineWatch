@@ -3451,7 +3451,7 @@ window._MOVIES_DATA = [
       "Kids"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/n4SexGGQzI26E269tfpa80MZaGV.jpg",
-    backdrop: "https://i.ytimg.com/vi/Z3gcIfWHSpI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBa8FtWTmxEPq3igjNSxnciEMlvNw",
+    backdrop: "https://image.tmdb.org/t/p/original/wvXxKpFGXvQJRB0nvvfURhRD3C0.jpg",
     videoUrl: "810",
     overview: "When King Harold suddenly falls ill, Shrek is unexpectedly next in line to inherit the throne of Far Far Away. Unwilling to give up his beloved swamp, Shrek sets off with Donkey and Puss in Boots to find the only other rightful heir—Fiona's teenage cousin, Arthur—while Prince Charming gathers a legion of fairytale villains to launch a coup.",
     director: "Chris Miller, Raman Hui",
