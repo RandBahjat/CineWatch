@@ -6160,7 +6160,7 @@ window._MOVIES_DATA = [
       "Kids"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lzE5BwGQea1nek7TPXUuC5AZ6rq.jpg",
-    backdrop: "https://assets-in.bmscdn.com/discovery-catalog/events/et00065290-hvvhveuemk-landscape.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/m03jul0YdVEOFXEQVUv6pOVQYGL.jpg",
     videoUrl: "400155",
     overview: "Mavis surprises Dracula with a family voyage on a luxury Monster Cruise Ship so he can take a vacation from providing everyone else's vacation at the hotel. The rest of the Drac Pack tags along, enjoying all of the shipboard amenities. The cruise goes swimmingly until Dracula falls head-over-heels and zings with Ericka, the mysterious and charming ship captain. Mavis turns into the overprotective parent when she discovers that Ericka is secretly the great-granddaughter of Abraham Van Helsing, Dracula's ancient arch-nemesis who plans to wipe out all monsters.",
     director: "Genndy Tartakovsky",
