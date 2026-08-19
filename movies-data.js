@@ -1834,33 +1834,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   
-  {
-    title: "Cars 2",
-    type: "Movie",
-    year: 2011,
-    rating: 6.2,
-    age: "G",
-    duration: "1h 46m",
-    genres: [
-      "Animation",
-      "Adventure",
-      "Comedy",
-      "Family",
-      "Kids"
-    ],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxOy5jlECb51oUMPPDHsIsW6KOz_dlnsiF3eirJlALwg&s=10",
-    backdrop: "https://image.tmdb.org/t/p/original/4BS8tgBNWg2jPiDlBwM2iJe1xB7.jpg",
-    videoUrl: "49013",
-    overview: "Lightning McQueen and his best friend Mater head overseas to compete in the World Grand Prix, only for Mater to become tangled in an international espionage caper involving undercover spies and a plot to sabotage the race",
-    director: "John Lasseter, Brad Lewis",
-    cast: [
-      "Owen Wilson, Larry the Cable Guy, Michael Caine, Emily Mortimer"
-    ],
-    trending: false,
-    featured: false,
-    is4k: false,
-    seasons: []
-  },
+  
   {
     title: "Cars",
     type: "Movie",
