@@ -3423,7 +3423,7 @@ window._MOVIES_DATA = [
       "Kids"
     ],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoI_HGzxFj_SpM0-J-hpQv6sTW9ySqRdJpDIrLvDl25g&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCk-YAUuN24cRI-nz5_fe8XcIJkVg49qfxEQD8SHlhFw&s",
+    backdrop: "https://image.tmdb.org/t/p/original/nzQVmCY6B2BgMtofqlyG7y7YOxl.jpg",
     videoUrl: "809",
     overview: "Newlyweds Shrek and Princess Fiona travel to the Kingdom of Far Far Away to meet Fiona's parents, the King and Queen. However, their arrival causes chaos when the King objects to their marriage, leading the scheming Fairy Godmother and Prince Charming to hatch a plan to tear them apart.",
     director: "Andrew Adamson, Kelly Asbury, Conrad Vernon",
