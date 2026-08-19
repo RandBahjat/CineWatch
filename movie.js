@@ -1825,8 +1825,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     serverWrap.classList.add("hidden");
     video.classList.remove("hidden");
     controlsBar.classList.remove("hidden");
-    const iframeFsBtn = document.getElementById("iframeFullscreenBtn");
-    if (iframeFsBtn) iframeFsBtn.classList.add("hidden");
+
 
     if (centerOverlay) {
       centerOverlay.innerHTML = '<ion-icon name="play-outline"></ion-icon>';
@@ -1880,8 +1879,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     if (iframe) {
       iframe.classList.remove("hidden");
       document.querySelector(".video-container")?.classList.add("is-iframe");
-      const iframeFsBtn = document.getElementById("iframeFullscreenBtn");
-      if (iframeFsBtn) iframeFsBtn.classList.remove("hidden");
+
       if (window.currentIframeData) {
         updateIframeServer(); // Sets the src based on selected server
       } else {
@@ -1993,8 +1991,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     document.querySelector(".video-container")?.classList.remove("is-iframe");
     video.classList.remove("hidden");
     controlsBar.classList.remove("hidden");
-    const iframeFsBtn = document.getElementById("iframeFullscreenBtn");
-    if (iframeFsBtn) iframeFsBtn.classList.add("hidden");
+
     if (centerOverlay) centerOverlay.style.display = "";
     video.src = movie.videoUrl;
 
@@ -3397,16 +3394,6 @@ function bindEventListeners() {
     });
   }
 
-  const iframeFullscreenBtn = document.getElementById("iframeFullscreenBtn");
-  if (iframeFullscreenBtn && !iframeFullscreenBtn.dataset.fsBound) {
-    iframeFullscreenBtn.dataset.fsBound = "1";
-    const fsHandler = () => {
-      toggleFullscreen();
-    };
-    iframeFullscreenBtn.addEventListener("click", fsHandler);
-    iframeFullscreenBtn.addEventListener("touchend", fsHandler);
-  }
-
   ["fullscreenchange", "webkitfullscreenchange"].forEach((evt) => {
     document.addEventListener(evt, updateFullscreenIcon);
   });
@@ -3517,10 +3504,6 @@ function updateFullscreenIcon() {
   const fsBtn = document.getElementById("fullscreenBtn");
   if (fsBtn) {
     fsBtn.innerHTML = `<ion-icon name="${isFs ? "contract-outline" : "expand-outline"}"></ion-icon>`;
-  }
-  const iframeFsBtn = document.getElementById("iframeFullscreenBtn");
-  if (iframeFsBtn) {
-    iframeFsBtn.innerHTML = `<ion-icon name="${isFs ? "contract-outline" : "expand-outline"}"></ion-icon>`;
   }
 }
 
