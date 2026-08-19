@@ -16,7 +16,7 @@ window._SERIES_DATA = [
       "Sci-Fi & Fantasy"
     ],
     poster: "https://image.tmdb.org/t/p/original/p276PkRJ5Wexq91DA5RkbxTYMDn.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/tPofFz8D08OQZ2mI2Yf3wB5YlHq.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/gXeCzYmCRBlpbbhhKrYM1ZpIDAA.jpg",
     videoUrl: "34391",
     overview: "Peter Parker has been Spider-Man for one year. He's saved lives and fought supervillains, but he's still in the process of learning how to be a superhero. Nick Fury of S.H.I.E.L.D. offers Peter the chance to train to be a real superhero and become The Ultimate Spider-Man.",
     director: "Stan Lee, Steve Ditko",
