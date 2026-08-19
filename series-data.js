@@ -33811,7 +33811,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://image.tmdb.org/t/p/original/lMqruIEov5PSA7eu8mF0I4IiKda.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/xVQcsSYgyzYgrBiTY1ofKBUbBFZ.jpg",
-    videoUrl: "115",
+    videoUrl: "115577",
     overview: "Sonic Prime draws upon the keystones of the brand and features the \"Blue Blur\" of video game fame in a high-octane adventure where the fate of a strange new multiverse rests in his gloved hands. Sonic's adventure is about more than a race to save the universe, it's a journey of self-discovery and redemption.",
     director: "Kiran Sangherra",
     cast: [
