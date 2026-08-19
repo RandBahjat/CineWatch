@@ -5504,11 +5504,16 @@ input:-webkit-autofill:active {
   .movie-card:not(.continue-card) .card-title {
     color: var(--color-text-secondary);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-    font-size: 0.9rem;
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    margin-bottom: var(--space-2);
   }
   .movie-card:not(.continue-card) .card-year {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
     margin-left: auto;
+  }
+  .movie-card:not(.continue-card) .card-type {
+    display: none;
   }
 }
 
