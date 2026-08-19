@@ -47819,7 +47819,7 @@ window._SERIES_DATA = [
       {
         season: 2,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
+          { episode: 1, title: 'A Scandal in Belgravia' },
           { episode: 2, title: 'Episode 2' },
           { episode: 3, title: 'Episode 3' }
         ]
