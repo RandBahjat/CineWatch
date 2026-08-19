@@ -3,6 +3,72 @@
 // Push to GitHub (or save — auto-sync will handle it) for changes to go live.
 
 window._SERIES_DATA = [
+   {
+    title: "Lanterns",
+    type: "TV Show",
+    year: 2026,
+    rating: 8.6,
+    age: "TV-MA",
+    duration: "1h",
+    genres: [
+      "Crime",
+      "Drama",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    poster: "https://image.tmdb.org/t/p/original/rzyXM5uB2Oci6u7aP3ijPxcTmfV.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/ruwzidqanSyhhMEk6kCVd9BLui1.jpg",
+    videoUrl: "95350",
+    overview: "John Stewart, new recruit, and Hal Jordan, veteran Lantern, two space cops dragged into dark earth-based mystery investigating murder in American heartland. Story split across two timelines, 2016 and 2026, buddy-cop energy meets superhero stakes.",
+    director: "Chris Mundy",
+    cast: [
+      "Kyle Chandler, Aaron Pierre, Kelly Macdonald, Garret Dillahunt, Poorna Jagannathan, Ulrich Thomsen, Nathan Fillion, Laura Linney"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Episode #1.1"
+          },
+          {
+            episode: 2,
+            title: "Episode #1.2"
+          },
+          {
+            episode: 3,
+            title: "Episode #1.3"
+          },
+          {
+            episode: 4,
+            title: "Episode #1.4"
+          },
+          {
+            episode: 5,
+            title: "Episode #1.5"
+          },
+          {
+            episode: 6,
+            title: "Episode #1.6"
+          },
+          {
+            episode: 7,
+            title: "Episode #1.7"
+          },
+          {
+            episode: 8,
+            title: "Episode #1.8"
+          }
+        ]
+      }
+    ]
+  }
+ 
+ 
   {
     title: "Batman: Caped Crusader",
     type: "TV Show",
