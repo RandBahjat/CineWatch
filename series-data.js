@@ -3,8 +3,8 @@
 // Push to GitHub (or save — auto-sync will handle it) for changes to go live.
 
 window._SERIES_DATA = [
- 
-   {
+
+  {
     title: "Lanterns",
     type: "TV Show",
     year: 2026,
@@ -68,8 +68,8 @@ window._SERIES_DATA = [
       }
     ]
   },
- 
- 
+
+
   {
     title: "Batman: Caped Crusader",
     type: "TV Show",
@@ -47540,7 +47540,87 @@ window._SERIES_DATA = [
       }
     ]
   },
-  
 
-  
+  {
+    title: "Marvel's Jessica Jones",
+    type: "TV Show",
+    year: 2015,
+    rating: 7.8,
+    age: "TV-MA",
+    duration: "50m",
+    genres: [
+      "Action",
+      "Crime",
+      "Drama",
+      "Sci-Fi"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/oxnWofiE9fHOgUfs9NJa6nG6NTR.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/eOZigJ6ZDKpE6ZNx9sqOTHi36Eh.jpg",
+    videoUrl: "38472",
+    overview: "After a tragic ending to her short-lived super hero stint, Jessica Jones is rebuilding her personal life and career as a detective who gets pulled into cases in New York City.",
+    director: "Melissa Rosenberg",
+    cast: [
+      "Krysten Ritter, Rachael Taylor, Mike Colter, Carrie-Anne Moss, David Tennant"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "AKA Ladies Night" },
+          { episode: 2, title: "AKA Crush Syndrome" },
+          { episode: 3, title: "AKA It's Called Whiskey" },
+          { episode: 4, title: "AKA 99 Friends" },
+          { episode: 5, title: "AKA The Sandwich Saved Me" },
+          { episode: 6, title: "AKA You're a Winner!" },
+          { episode: 7, title: "AKA Top Shelf Perverts" },
+          { episode: 8, title: "AKA WWJD?" },
+          { episode: 9, title: "AKA Sin Bin" },
+          { episode: 10, title: "AKA 1,000 Cuts" },
+          { episode: 11, title: "AKA I've Got the Blues" },
+          { episode: 12, title: "AKA Take a Bloody Number" },
+          { episode: 13, title: "AKA Smile" }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "AKA Start at the Beginning" },
+          { episode: 2, title: "AKA Freak Accident" },
+          { episode: 3, title: "AKA Sole Survivor" },
+          { episode: 4, title: "AKA God Help the Hobo" },
+          { episode: 5, title: "AKA The Octopus" },
+          { episode: 6, title: "AKA Facetime" },
+          { episode: 7, title: "AKA I Want Your Cray Cray" },
+          { episode: 8, title: "AKA Ain't We Got Fun" },
+          { episode: 9, title: "AKA Shark in the Bathtub, Monster in the Bed" },
+          { episode: 10, title: "AKA Pork Chop" },
+          { episode: 11, title: "AKA Three Lives and Counting" },
+          { episode: 12, title: "AKA Pray for My Patsy" },
+          { episode: 13, title: "AKA Playland" }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: "A.K.A The Perfect Burger" },
+          { episode: 2, title: "A.K.A You're Welcome" },
+          { episode: 3, title: "A.K.A I Have No Spleen" },
+          { episode: 4, title: "A.K.A Customer Service is Standing By" },
+          { episode: 5, title: "A.K.A I Wish" },
+          { episode: 6, title: "A.K.A Sorry Face" },
+          { episode: 7, title: "A.K.A The Double Half-Wappinger" },
+          { episode: 8, title: "A.K.A Camera Friendly" },
+          { episode: 9, title: "A.K.A I Did Something Today" },
+          { episode: 10, title: "A.K.A Hero Pants" },
+          { episode: 11, title: "A.K.A Hellcat" },
+          { episode: 12, title: "A.K.A A Lotta Worms" },
+          { episode: 13, title: "A.K.A Everything" }
+        ]
+      }
+    ]
+  },
+
 ];
