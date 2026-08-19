@@ -4170,7 +4170,7 @@ window._MOVIES_DATA = [
       "Adventure",
       "Sci-Fi"
     ],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Iv9RiHA1pXqVGKrTMGN6NM_jPN431-SSmF4Ik2Gjhw&s=10",
+    poster: "https://image.tmdb.org/t/p/original/jWqpvhVbFZx6pSwep9v8DlPhxXR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/58r049aVTO1KjAYVuWJr0KgG5nY.jpg",
     videoUrl: "44912",
     overview: "Test pilot Hal Jordan is chosen by a dying alien warrior to join the Green Lantern Corps, an intergalactic police force that uses willpower-powered rings to safeguard the universe. As the first human recruit, Hal must overcome his self-doubt to master the ring's powers and stop Parallax, an ancient cosmic entity fed by fear, from destroying Earth.",
