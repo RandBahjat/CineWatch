@@ -1459,7 +1459,7 @@ function openDetailsModal(movieId) {
     const downloadBtn = document.getElementById("detailsDownloadBtn");
     if (downloadBtn) {
       downloadBtn.onclick = () => {
-        const query = `intitle:"index.of" (mp4|mkv|avi) "${movie.title}"`;
+        const query = `site:drive.google.com "${movie.title}"`;
         const url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
         window.open(url, '_blank');
       };
