@@ -5914,7 +5914,7 @@ window._MOVIES_DATA = [
       "Supernatural"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/sFC1ElvoKGdHJIWRpNB3xWJ9lJA.jpg",
-    backdrop: "https://img10.hotstar.com/image/upload/f_auto,q_auto/sources/r1/cms/prod/9174/1776264519174-i",
+    backdrop: "https://image.tmdb.org/t/p/original/fgsHxz21B27hOOqQBiw9L6yWcM7.jpg",
     videoUrl: "439079",
     overview: "A priest with a haunted past and a novice on the threshold of her final vows are sent by the Vatican to investigate the death of a young nun in Romania. Together, they uncover the order's unholy secret and must confront a malevolent demonic force in the form of a nun, risking their lives — and souls — to stop it from escaping the abbey.",
     director: "Corin Hardy",
