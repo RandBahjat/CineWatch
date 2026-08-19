@@ -34841,7 +34841,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wG6tRzXB8lTE03i7NaqwO04z5Oy.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1osMkFZKoOQNGMgtPtjMvN4K2rS.jpg",
-    videoUrl: "",
+    videoUrl: "291",
     overview: "Welcome back to Elmore, where the laws of reality are a joke, and family life is anything but ordinary. Whether he's battling an evil fast-food empire, facing off against a sentient AI in love with his mom, or trying to stop Banana Joe from wearing pants, Gumball Watterson drags his brother Darwin, sister Anais, and the rest of the town of Elmore along for the ride.",
     director: "Ben Bocquelet",
     cast: [
