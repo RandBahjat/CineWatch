@@ -47803,7 +47803,7 @@ window._SERIES_DATA = [
     cast: [
       "Benedict Cumberbatch, Martin Freeman, Una Stubbs, Rupert Graves, Louise Brealey, Mark Gatiss"
     ],
-    trending: true,
+    trending: false,
     featured: true,
     is4k: false,
     seasons: [
