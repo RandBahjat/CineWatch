@@ -18,7 +18,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/oxnWofiE9fHOgUfs9NJa6nG6NTR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/eOZigJ6ZDKpE6ZNx9sqOTHi36Eh.jpg",
-    videoUrl: "",
+    videoUrl: "38472",
     overview: "After a tragic ending to her short-lived super hero stint, Jessica Jones is rebuilding her personal life and career as a detective who gets pulled into cases in New York City.",
     director: "Melissa Rosenberg",
     cast: [
