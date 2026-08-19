@@ -1998,31 +1998,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
 
-  {
-    title: "Ghost Rider: Spirit of Vengeance",
-    type: "Movie",
-    year: 2011,
-    rating: 4.3,
-    age: "PG-13",
-    duration: "1h 36m",
-    genres: [
-      "Action",
-      "Fantasy",
-      "Thriller"
-    ],
-    poster: "https://image.tmdb.org/t/p/original/nLHbf1zN8XtuK7wWJkem9fWeJ9r.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/z7qtrSn5iZrwKFE1sYPr597HweG.jpg",
-    videoUrl: "71676",
-    overview: "Hiding out in Eastern Europe to escape the curse controlling him, Johnny Blaze is offered a chance at redemption when a secretive sect recruits him to protect a young boy from dark forces seeking to use him for a sinister ritual — a mission that could finally free Johnny from the Ghost Rider's grip.",
-    director: "Mark Neveldine,Brian Taylor",
-    cast: [
-      "Nicolas Cage, Ciarán Hinds, Idris Elba, Violante Placido, Johnny Whitworth"
-    ],
-    trending: false,
-    featured: false,
-    is4k: false,
-    seasons: []
-  },
+  
   {
     title: "Ghost Rider",
     type: "Movie",
