@@ -3052,7 +3052,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Tom and Jerry Cowboy Up ",
+    title: "Tom and Jerry Cowboy Up! ",
     type: "Movie",
     year: 2022,
     rating: 6,
