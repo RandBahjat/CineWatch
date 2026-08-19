@@ -2149,6 +2149,9 @@ function closeVideoPlayer() {
         isIframe: true,
         timestamp: Date.now(),
       };
+      if (state.currentPlayingMovie.epData) {
+        state.continueWatching[cwId].epData = state.currentPlayingMovie.epData;
+      }
       localStorage.setItem(KEYS.CONTINUE, JSON.stringify(state.continueWatching));
       if (window.CW_API && state.user) {
         window.CW_API.syncData(state.favorites, state.continueWatching);
