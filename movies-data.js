@@ -1809,7 +1809,30 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
-  
+  {
+    title: "Ted 2",
+    type: "Movie",
+    year: 2015,
+    rating: 5.9,
+    age: "R",
+    duration: "1h 55m",
+    genres: [
+      "Comedy",
+      "Fantasy"
+    ],
+    poster: "https://image.tmdb.org/t/p/original/qMOt0uy1x49OBW0jzodgRM9waW0.jpg",
+    backdrop: "https://images1.resources.foxtel.com.au/store2/mount1/16/2/639rl.jpg",
+    videoUrl: "214756",
+    overview: "As a lonely child, John Bennett wished for his teddy bear to come to life, and Ted has been his inseparable best friend ever since. Now in his thirties, John is torn between his loyalty to his foul-mouthed, hard-partying bear and his relationship with his girlfriend Lori, who wants him to finally grow up. As their friendship faces new strains — including a bizarre kidnapping plot involving an obsessive fan — John must decide what kind of adult he wants to become.",
+    director: "Seth MacFarlane",
+    cast: [
+      "Mark Wahlberg, Mila Kunis, Seth MacFarlane, Joel McHale, Giovanni Ribisi"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
   {
     title: "Cars 3",
     type: "Movie",
