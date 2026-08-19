@@ -47801,7 +47801,7 @@ window._SERIES_DATA = [
     overview: "A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.",
     director: "Steven Moffat, Mark Gatiss",
     cast: [
-      "Benedict Cumberbatch, Martin Freeman, Una Stubbs, Rupert Graves, Louise Brealey, Mark Gatiss"
+      "Benedict Cumberbatch, Martin Freeman, Una Stubbs, Rupert Graves, Mark Gatiss"
     ],
     trending: false,
     featured: false,
