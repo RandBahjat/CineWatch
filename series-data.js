@@ -45005,7 +45005,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qZkAyOlDAxHtQreQE4ZzGfrSQl8.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/dchy8WxQ8G1aVFcFUqG06H7ptTE.jpg",
-    videoUrl: "60308",
+    videoUrl: "",
     overview: "Clarence Wendle, an eternally optimistic and endlessly imaginative eight-year-old, sees the whole world as one big adventure playground. Alongside his best friends Jeff and Sumo, Clarence navigates elementary school life, family, and neighborhood chaos with a boundless, unshakable enthusiasm that transforms even the most mundane moments into something extraordinary.",
     director: "Skyler Page",
     cast: [
