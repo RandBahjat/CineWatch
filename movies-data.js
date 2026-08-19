@@ -5968,7 +5968,7 @@ window._MOVIES_DATA = [
       "Kids"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
-    backdrop: "https://saintscroll.com/wp-content/uploads/2023/01/Screenshot-2023-01-19-at-1.33.19-PM-900x474.png",
+    backdrop: "https://image.tmdb.org/t/p/original/b1Y8SUb12gPHCSSSNlbX4nB3IKy.jpg",
     videoUrl: "315162",
     overview: "Puss in Boots discovers that his passion for reckless adventure has taken its toll — he's burned through eight of his nine lives, leaving only one remaining. Determined to restore them, he sets out on an epic journey to find the mythical Last Wish, joined by his old flame Kitty Softpaws and an overly optimistic therapy dog, while a host of rivals — including Goldilocks, the Three Bears, and Big Jack Horner — race to reach it first.",
     director: "Joel Crawford (Co-Director: Januel Mercado)",
