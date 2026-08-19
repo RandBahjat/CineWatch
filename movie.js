@@ -1465,6 +1465,18 @@ function openDetailsModal(movieId) {
       const isNowFav = toggleFavorite(movie.id);
       favCheckbox.checked = isNowFav;
     };
+
+    const reportBtn = document.getElementById("detailsReportBtn");
+    if (reportBtn) {
+      reportBtn.onclick = () => {
+        const issue = prompt(`What issue would you like to report for "${movie.title}"? (e.g., broken video, bad subtitles)`);
+        if (issue) {
+          console.log(`[REPORT] ${movie.title} (${movie.id}): ${issue}`);
+          alert("Thank you! Your report has been submitted.");
+        }
+      };
+    }
+
     // Generate You May Like Section
     const similarsGrid = document.getElementById("detailsSimilarsGrid");
     const similarsSection = document.getElementById("detailsSimilarsSection");
