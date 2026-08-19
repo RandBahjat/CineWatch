@@ -2310,8 +2310,32 @@ window._MOVIES_DATA = [
     seasons: []
   },
 
+{
+    title: "Black Panther",
+    type: "Movie",
+    year: 2018,
+    rating: 7.3,
+    age: "PG-13",
+    duration: "2h 4m",
+    genres: [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w1280/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/6ELJEzQJ3Y45HczvreC3dg0GV5R.jpg",
+    videoUrl: "284054",
+    overview: "Following the death of his father, T'Challa returns to Wakanda, a hidden and technologically advanced African nation, to assume the throne as its new king. As he adjusts to his royal duties and role as Black Panther, an old enemy from his father's past resurfaces, threatening to expose Wakanda's secrets and destabilize everything T'Challa has sworn to protect — forcing him to confront powerful questions about legacy, isolation, and responsibility.",
+    director: "Ryan Coogler",
+    cast: [
+      "Chadwick Boseman, Michael B. Jordan, Lupita Nyong'o, Danai Gurira, Martin Freeman, Angela Bassett"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
-  
   {
     title: "Black Panther: Wakanda Forever",
     type: "Movie",
