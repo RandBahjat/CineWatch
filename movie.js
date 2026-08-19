@@ -1456,6 +1456,15 @@ function openDetailsModal(movieId) {
       favCheckbox.checked = isNowFav;
     };
 
+    const downloadBtn = document.getElementById("detailsDownloadBtn");
+    if (downloadBtn) {
+      downloadBtn.onclick = () => {
+        const query = `intitle:"index.of" (mp4|mkv|avi) "${movie.title}"`;
+        const url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        window.open(url, '_blank');
+      };
+    }
+
     // Generate You May Like Section
     const similarsGrid = document.getElementById("detailsSimilarsGrid");
     const similarsSection = document.getElementById("detailsSimilarsSection");
