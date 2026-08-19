@@ -47839,7 +47839,7 @@ window._SERIES_DATA = [
         ]
       }
     ]
-  }
+  },
 
  {
     title: "Marvel's Ultimate Spider-Man",
