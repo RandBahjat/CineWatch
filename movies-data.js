@@ -4909,7 +4909,7 @@ window._MOVIES_DATA = [
       "Fantasy"
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/53dsJ3oEnBhTBVMigWJ9tkA5bzJ.jpg",
-    backdrop: "https://i0.wp.com/nigelip.com/wp-content/uploads/2025/06/18379460.jpg?fit=1200%2C685&ssl=1",
+    backdrop: "https://image.tmdb.org/t/p/original/eP6lrxrtu9A2eiCRBFLUwzixsyk.jpg",
     videoUrl: "1087192",
     overview: "A live-action reimagining of the beloved 2010 animated classic. On the rugged island of Berk, an outcast young Viking named Hiccup defies centuries of tradition by befriending an injured Night Fury dragon named Toothless, forever altering the relationship between humans and dragons.",
     director: "Dean DeBlois ",
