@@ -1759,31 +1759,6 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
-  {
-    title: "John Wick",
-    type: "Movie",
-    year: 2014,
-    rating: 7.4,
-    age: "R",
-    duration: "1h 41m",
-    genres: [
-      "Action",
-      "Crime",
-      "Thriller"
-    ],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAwW5ad5JPtG-R3GP6AzL55lCSPWu5X0_7RVZVPhMUBw&s=10",
-    backdrop: "https://image.tmdb.org/t/p/original/mVf9K23LbBfPrXzefHuVitxdd1x.jpg",
-    videoUrl: "245891",
-    overview: "Still grieving the recent loss of his wife, retired assassin John Wick finds a fragile sense of peace shattered when the son of a Russian crime boss breaks into his home, steals his car, and kills the dog his wife left him as a final act of love. Fueled by grief and rage, John returns to the deadly world he once left behind, unleashing his full lethal skill set on the criminal empire that made the fatal mistake of crossing him.",
-    director: "Chad Stahelski",
-    cast: [
-      "Keanu Reeves, Michael Nyqvist, Alfie Allen, Willem Dafoe, Ian McShane"
-    ],
-    trending: false,
-    featured: false,
-    is4k: false,
-    seasons: []
-  },
   
   {
     title: "Ted",
