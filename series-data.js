@@ -47011,7 +47011,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bIFnNqZGdahoiGnk6MRkXLbZufS.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7zTON5elWsObqmzEchOSUnMdoua.jpg",
-    videoUrl: "72693",
+    videoUrl: "",
     overview: "OK K.O.! Let's Be Heroes is a world of original heroes across the TV and gaming landscape together with the greenlight of this action-packed comedy followed by the console and PC game jointly developed with indie video game studio Capybara games. The knockout series is inspired by creator Ian Jones-Quartey's childhood and follows the heroic feats of K.O., an endlessly optimistic boy attempting to level up to be the best he can be in a dynamic universe of heroes, friends and challenging foes.",
     director: "Ian Jones-Quartey",
     cast: [
