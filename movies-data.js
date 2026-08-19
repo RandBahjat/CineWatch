@@ -6581,7 +6581,7 @@ window._MOVIES_DATA = [
       "Drama"
     ],
     poster: "https://image.tmdb.org/t/p/original/9yguvvrOG8dBVIbxCst0GyzVJu1.jpg",
-    backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/rVRtRE6HJ5xbdo5jd9aTT8tEVaF.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/ik2D3KqxFD0O0Bc3Wv1CZm8sOg8.jpg",
     videoUrl: "313369",
     overview: "Mia, an aspiring actress, serves lattes to movie stars in between auditions, while Sebastian, a jazz musician, scrapes by playing cocktail party gigs in dingy bars. As success mounts for both of them, they're faced with decisions that begin to fray the fragile fabric of their love affair — and the dreams they worked so hard to maintain in each other threaten to tear them apart.",
     director: "Damien Chazelle",
