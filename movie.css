@@ -1336,9 +1336,8 @@ select {
 .card-meta {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
-  font-size: var(--font-size-xs);
-  color: var(--color-text-tertiary);
+  gap: 1rem;
+  font-size: 0.85rem;
   flex-wrap: nowrap;
   position: relative;
 }
