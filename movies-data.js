@@ -4760,7 +4760,7 @@ window._MOVIES_DATA = [
       "Romance"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/kiX7UYfOpYrMFSAGbI6j1pFkLzQ.jpg",
-    backdrop: "https://i.ytimg.com/vi/kVoNt9gHvis/sddefault.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/swAqzdETw5DICcgvIFq3XQGSJJS.jpg",
     videoUrl: "613504",
     overview: "Tessa and Hardin attempt to navigate the aftermath of their stormy breakup. While Tessa starts a promising internship at Vance Publishing and catches the eye of her charming co-worker Trevor, Hardin struggles to control his dark temper and win back her trust amidst secrets from his past.",
     director: "Roger Kumble",
