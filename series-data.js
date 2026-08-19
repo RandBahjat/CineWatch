@@ -35,7 +35,7 @@ window._SERIES_DATA = [
           { episode: 3, title: "Doomed!" },
           { episode: 4, title: "Venom" },
           { episode: 5, title: "Flight of the Iron Spider" },
-          { episode: 6, title: "Why I Hate Gym" },
+          { episode: 6, title: "Why I Hate the Gym" },
           { episode: 7, title: "Exclusive" },
           { episode: 8, title: "Back in Black" },
           { episode: 9, title: "Field Trip" },
