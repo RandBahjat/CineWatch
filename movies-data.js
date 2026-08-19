@@ -4293,7 +4293,7 @@ window._MOVIES_DATA = [
       "Sci-Fi"
     ],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQblAPXom2g-YuRujbSaZxnWmiaL3YV6m11YyJK8CBrWA&s=10",
-    backdrop: "https://image.tmdb.org/t/p/original/2H2YYbn8wDzYXtak83Md6PAwMdp.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/pZCLGHynFPOv8dve6u9waxknLth.jpg",
     videoUrl: "105",
     overview: "High school student Marty McFly is accidentally sent 30 years into the past in a time-traveling DeLorean invented by his eccentric scientist friend, Doc Brown. Trapped in 1955, Marty must ensure his teenage parents fall in love to save his own existence and find a way to get back to the future.",
     director: "Robert Zemeckis",
