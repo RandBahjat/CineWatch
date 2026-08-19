@@ -3178,7 +3178,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/eogRp6oAPK0SEvQmCrQ78LTlSdp.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/2TLURbcJ8fzkP2OhFTnDIPMaeZr.jpg",
-    videoUrl: null,
+    videoUrl: "4686",
     overview: "Ten-year-old Ben Tennyson discovers a mysterious alien watch called the Omnitrix while on a summer road trip with his cousin Gwen and Grandpa Max. The device allows him to transform into ten different powerful alien creatures, which he uses to fight villains, aliens, and evildoers on Earth and beyond.",
     director: "Duncan Rouleau, Joe Casey, Joe Kelly, Steven T. Seagle",
     cast: [
