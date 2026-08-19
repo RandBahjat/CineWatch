@@ -34236,7 +34236,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/3xWzlLZ0kAD6SkVZTekFM9lxZyP.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zFdHbLQqkTgxd2eJyYbufwyE22M.jpg",
-    videoUrl: "",
+    videoUrl: "634",
     overview: "Three bear brothers — Grizzly, Panda, and Ice Bear — navigate the everyday complications of modern life in the Bay Area, all while trying to fit into human society, find friendship, and figure out where they truly belong. Balancing heartfelt sincerity with offbeat comedy, the series follows the bears as they attempt to make sense of technology, social norms, and the search for genuine connection.",
     director: "Daniel Chong",
     cast: [
