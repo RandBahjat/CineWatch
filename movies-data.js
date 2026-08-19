@@ -4934,7 +4934,7 @@ window._MOVIES_DATA = [
       "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nf5qaSEvyYSNeFH0YhSs5EsBLX9.jpg",
-    backdrop: "https://qiibo.com/wp-content/uploads/2025/07/fantastic-four-poster.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/s94NjfKkcSczZ1FembwmQZwsuwY.jpg",
     videoUrl: "617126",
     overview: "Set against the backdrop of a vibrant, retro-futuristic 1960s alternate universe, Marvel's First Family—Reed Richards, Sue Storm, Johnny Storm, and Ben Grimm—face their most daunting challenge yet: defending Earth from the cosmic threat of Galactus and his herald, the Silver Surfer.",
     director: "Matt Shakman ",
