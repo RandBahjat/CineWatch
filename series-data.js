@@ -40234,7 +40234,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8iixmfGx5EIFPdpNvB2JvI3VIqX.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/nVRyd8hlg0ZLxBn9RaI7mUMQLnz.jpg",
-    videoUrl: null,
+    videoUrl: "1622",
     overview: "When they were boys, Sam and Dean Winchester lost their mother to a mysterious and demonic supernatural force. Subsequently, their father raised them to be soldiers. He taught them about the paranormal evil that exists in the dark corners and on the back roads of America... and he taught them how to kill it. Now, the Winchester brothers crisscross the country in their 67 Chevy Impala, battling every kind of supernatural threat they encounter along the way.",
     director: "Eric Kripke",
     cast: [
