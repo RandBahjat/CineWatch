@@ -1672,7 +1672,7 @@ window._MOVIES_DATA = [
       "Sci-Fi"
     ],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnFzqj_Jid5Z1zb7QItaPndJI1-AHb0mQvGyVysZhIMw&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk_YkGeO9IS5OJ-vg5e47xhh50p61o2oYuIuygUf854Q&s=10",
+    backdrop: "https://image.tmdb.org/t/p/original/yhp5Pt4GugkCs5mz63qWz5khHXe.jpg",
     videoUrl: "49538",
     overview: "Set during the Cold War, a young Charles Xavier and Erik Lehnsherr form an unlikely friendship as they recruit a team of gifted mutants to stop a rogue mastermind bent on igniting nuclear war. As their opposing philosophies on humanity's future come to a head, the seeds are planted for the rivalry that will define them both.",
     director: "Matthew Vaughn",
