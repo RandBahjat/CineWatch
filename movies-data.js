@@ -3743,7 +3743,7 @@ window._MOVIES_DATA = [
       "Kids"
     ],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVa9ey0ltVZBSz55OwFM3b4t_IucNDtRWVFlNROrjK1A&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBuP20DaFt1T_kY0w5AnrOgnQA7guzbv1-eKnoA0MgLg&s=10",
+    backdrop: "https://image.tmdb.org/t/p/original/aXFKBfPvZa4NFmqyvG8sno19A0k.jpg",
     videoUrl: "808",
     overview: "An ogre named Shrek finds his peaceful swamp invaded by fairytale creatures banished by the obsessive Lord Farquaad. To regain his privacy, Shrek agrees to rescue Princess Fiona for Farquaad, teaming up with a loud-mouthed Donkey on an unexpected quest where appearances prove deceiving.",
     director: "Andrew Adamson, Vicky Jenson",
