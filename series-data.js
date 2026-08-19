@@ -7,7 +7,7 @@ window._SERIES_DATA = [
     title: "Marvel's Jessica Jones",
     type: "TV Show",
     year: 2015,
-    rating: 7.9,
+    rating: 7.8,
     age: "TV-MA",
     duration: "50m",
     genres: [
