@@ -965,7 +965,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5mlI9Xiq19VvZESv_r0yRJgb4XIu-Ht0tCR_oMGftFQ&s=10",
     backdrop: "https://image.tmdb.org/t/p/original/bWZwiaJSXwYILxi3bE5Quwy5UXC.jpg",
-    videoUrl: "https://example.com/video.mp4",
+    videoUrl: "106",
     overview: "Balancing his Kryptonian origins with the values instilled in him growing up in Kansas, Superman navigates a world increasingly skeptical of his motives and methods as a superhero. When Lex Luthor orchestrates a calculated scheme to expose and destroy him — using both technology and public opinion as weapons — Superman must decide what kind of hero he wants to be, and prove that kindness is still a strength worth fighting for.",
     director: "James Gunn",
     cast: [
