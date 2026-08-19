@@ -5348,7 +5348,7 @@ window._MOVIES_DATA = [
       "Sci-FI"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
-    backdrop: "https://wallpapercave.com/wp/wp11685752.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/4pNlHx6ytdYBDs94PgcS0wQkbc4.jpg",
     videoUrl: "76600",
     overview: "Set more than a decade after the events of the first film, Jake Sully and Neytiri have formed a family on Pandora. However, when an old threat returns to finish what was started, they must leave their forest home and seek refuge with the oceanic Metkayina clan, learning the ways of the water to keep each other safe.",
     director: "James Cameron",
