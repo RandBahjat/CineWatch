@@ -36195,7 +36195,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/49XzINhH4LFsgz7cx6TOPcHUJUL.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/n4XLn0wLCxWSFaQgG6queZlFPKi.jpg",
-    videoUrl: "71591",
+    videoUrl: "",
     overview: "Daredevil, Jessica Jones, Luke Cage, and Iron Fist team up to face a common enemy and save New York City. When the shadowy criminal organization known as The Hand emerges with a plan that threatens to destroy the city, these four reluctant heroes are forced to set aside their differences and unite — for the first time — as an unlikely team.",
     director: "Douglas Petrie, Marco Ramirez",
     cast: [
