@@ -2475,7 +2475,7 @@ window._MOVIES_DATA = [
       "Drama"
     ],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL1WuN2jU4W11K2KgexcA0EAa0UT0jbek895wWTZvboQ&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6UO7XVreFwif88sHI76WhMBpadr2lxlWHwKNW-mHtJA&s=10",
+    backdrop: "https://image.tmdb.org/t/p/original/dBgxEkWe17R0AJDAvAhpeVELQx2.jpg",
     videoUrl: "744",
     overview: "Pete Maverick Mitchell is one of the Navy's most talented and impulsive fighter pilots, earning a coveted spot at the elite Top Gun training program. As he competes fiercely against his fellow aviators — including his rival Iceman — for the title of best pilot, Maverick grapples with the shadow of his father's controversial past and a devastating personal tragedy that forces him to confront his own recklessness and rediscover what it truly means to fly.",
     director: "Tony Scott",
