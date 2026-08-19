@@ -1199,14 +1199,10 @@ select {
 
 /* Movie Cards */
 .movie-card {
-  flex: 0 0 250px;
+  flex: 0 0 280px;
   position: relative;
-  border-radius: var(--radius-xs);
-  overflow: hidden;
-  background: var(--color-surface-muted);
-  transition: transform var(--motion-duration-fast) ease, box-shadow var(--motion-duration-fast) ease;
+  background: transparent;
   cursor: pointer;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
 
 .movie-card:hover {
@@ -1216,9 +1212,11 @@ select {
 .card-poster-wrap {
   position: relative;
   width: 100%;
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-radius: var(--radius-xs);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  transition: transform var(--motion-duration-fast) ease, box-shadow var(--motion-duration-fast) ease;
 }
 
 .card-poster {
@@ -1234,16 +1232,7 @@ select {
 
 /* Card Gradient overlay for text readability */
 .card-gradient {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.95) 0%,
-    rgba(0, 0, 0, 0.6) 30%,
-    transparent 55%
-  );
-  z-index: 2;
-  pointer-events: none;
+  display: none;
 }
 
 /* Card Hover Overlay */
@@ -1261,7 +1250,7 @@ select {
 }
 
 .movie-card:hover .card-overlay {
-  opacity: 0;
+  opacity: 1;
 }
 
 .card-fav-btn {
@@ -1326,22 +1315,19 @@ select {
 }
 
 .card-details {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1.1rem;
+  position: relative;
+  padding: 10px 5px 0;
   z-index: 3;
   pointer-events: none;
   background: transparent;
 }
 
 .card-title {
-  font-size: var(--font-size-md);
-  font-weight: 700;
-  color: var(--color-text-secondary);
-  margin-bottom: var(--space-2);
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-1);
+  text-shadow: none;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1364,8 +1350,7 @@ select {
 
 .card-year {
   font-weight: 600;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-  margin-left: auto;
+  text-shadow: none;
 }
 
 .shelf-title-accent {
