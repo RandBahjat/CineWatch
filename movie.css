@@ -1308,12 +1308,6 @@ select {
   box-shadow: 0 6px 25px rgba(255, 255, 255, 0.6);
 }
 
-.iframe-fullscreen-hack { position: absolute; bottom: 8px; right: 28px; width: 50px; height: 50px; z-index: 100; opacity: 0; cursor: pointer; border: none; background: transparent; }
-.video-container.idle .iframe-fullscreen-hack { pointer-events: none; }
-@media (max-width: 768px) {
-  .iframe-fullscreen-hack { display: none !important; }
-}
-
 .card-details {
   position: relative;
   padding: 10px 5px 0;
