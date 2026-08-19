@@ -1455,16 +1455,6 @@ function openDetailsModal(movieId) {
       const isNowFav = toggleFavorite(movie.id);
       favCheckbox.checked = isNowFav;
     };
-
-    const downloadBtn = document.getElementById("detailsDownloadBtn");
-    if (downloadBtn) {
-      downloadBtn.onclick = () => {
-        const query = `site:drive.google.com "${movie.title}"`;
-        const url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
-        window.open(url, '_blank');
-      };
-    }
-
     // Generate You May Like Section
     const similarsGrid = document.getElementById("detailsSimilarsGrid");
     const similarsSection = document.getElementById("detailsSimilarsSection");
