@@ -22,7 +22,7 @@ window._SERIES_DATA = [
     overview: "After a tragic ending to her short-lived super hero stint, Jessica Jones is rebuilding her personal life and career as a detective who gets pulled into cases in New York City.",
     director: "Melissa Rosenberg",
     cast: [
-      "Krysten Ritter, Rachael Taylor, Eka Darville, Carrie-Anne Moss, David Tennant"
+      "Krysten Ritter, Rachael Taylor, Mike Colter, Carrie-Anne Moss, David Tennant"
     ],
     trending: false,
     featured: false,
