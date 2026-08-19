@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_2577">
+    <link rel="stylesheet" href="movie.css?v=20260816_2579">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_2635" defer></script>
-    <script src="movies-data.js?v=20260818_510"></script>
-    <script src="series-data.js?v=20260818_510"></script>
-    <script src="movie.js?v=20260818_511" defer></script>
+    <script src="api.js?v=20260816_2637" defer></script>
+    <script src="movies-data.js?v=20260818_512"></script>
+    <script src="series-data.js?v=20260818_512"></script>
+    <script src="movie.js?v=20260818_513" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -53,6 +53,7 @@
                     <a href="#" class="nav-link active" data-view="home"><ion-icon name="home-outline"></ion-icon> Home</a>
                     <a href="#" class="nav-link" data-view="movies"><ion-icon name="film-outline"></ion-icon> Movies</a>
                     <a href="#" class="nav-link" data-view="series"><ion-icon name="tv-outline"></ion-icon> Series</a>
+                    <a href="#" class="nav-link" data-view="anime"><ion-icon name="planet-outline"></ion-icon> Anime</a>
                     <a href="#" class="nav-link" data-view="continue"><ion-icon name="play-circle-outline"></ion-icon> Continue Watching</a>
                     <a href="#" class="nav-link" data-view="watchlist"><ion-icon name="heart-outline"></ion-icon> My Watchlist</a>
                 </nav>
@@ -134,6 +135,7 @@
                 <a href="#" class="nav-link active" data-view="home"><ion-icon name="home-outline"></ion-icon> Home</a>
                 <a href="#" class="nav-link" data-view="movies"><ion-icon name="film-outline"></ion-icon> Movies</a>
                 <a href="#" class="nav-link" data-view="series"><ion-icon name="tv-outline"></ion-icon> Series</a>
+                <a href="#" class="nav-link" data-view="anime"><ion-icon name="planet-outline"></ion-icon> Anime</a>
                 <a href="#" class="nav-link" data-view="continue"><ion-icon name="play-circle-outline"></ion-icon> Continue Watching</a>
                 <a href="#" class="nav-link" data-view="watchlist"><ion-icon name="heart-outline"></ion-icon> My Watchlist</a>
             </nav>
@@ -401,6 +403,34 @@
             <div class="browse-grid" id="seriesGrid"></div>
             <!-- Pagination -->
             <div class="browse-pagination" id="seriesPagination"></div>
+        </section>
+
+        <!-- ===== ANIME BROWSE SECTION ===== -->
+        <section class="browse-section hidden" id="animeSection">
+            <div class="browse-header">
+                <div class="browse-header-left">
+                    <h1 class="browse-title"><ion-icon name="planet-outline"></ion-icon> Anime</h1>
+                    <span class="browse-count" id="animeCount">0 titles</span>
+                </div>
+                <div class="browse-filter-bar" id="animeFilterBar">
+                    <button class="browse-filter-btn active" data-genre="all" data-section="anime">All</button>
+                    <button class="browse-filter-btn" data-genre="Action" data-section="anime">Action</button>
+                    <button class="browse-filter-btn" data-genre="Adventure" data-section="anime">Adventure</button>
+                    <button class="browse-filter-btn" data-genre="Comedy" data-section="anime">Comedy</button>
+                    <button class="browse-filter-btn" data-genre="Drama" data-section="anime">Drama</button>
+                    <button class="browse-filter-btn" data-genre="Fantasy" data-section="anime">Fantasy</button>
+                    <button class="browse-filter-btn" data-genre="Sci-Fi" data-section="anime">Sci-Fi</button>
+                </div>
+                <div class="browse-search-wrapper">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <input type="text" class="browse-search-input" id="animeSearchInput" placeholder="Search anime...">
+                </div>
+            </div>
+            <div class="browse-content">
+                <span id="animeCountLabel">Showing all titles</span>
+                <div class="browse-grid" id="animeGrid"></div>
+                <div class="browse-pagination" id="animePagination"></div>
+            </div>
         </section>
 
         <!-- Category Shelves Container -->
