@@ -47634,7 +47634,7 @@ window._SERIES_DATA = [
       "Drama",
       "Action"
     ],
-    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/wcaB6CCRXmZYjuIG0HM1Xw3lOxc.jpg",
+    poster: "https://image.tmdb.org/t/p/original/aAI6McsjhwggmGdZwOylXraoil.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/hTExot1sfn7dHZjGrk0VIdv2R5T.jpg",
     videoUrl: "48866",
     overview: "100 years in the future, when the Earth has been abandoned due to radioactivity, the last surviving humans live on an ark orbiting the planet — but the ark won't last forever. So the repressive regime picks 100 expendable juvenile delinquents to send down to Earth to see if the planet is still habitable.",
