@@ -1889,7 +1889,34 @@ window._MOVIES_DATA = [
     seasons: []
   },
 
-  
+
+  {
+    title: "Cars 3",
+    type: "Movie",
+    year: 2017,
+    rating: 6.7,
+    age: "G",
+    duration: "1h 42m",
+    genres: [
+      "Animation",
+      "Adventure",
+      "Comedy",
+      "Family",
+      "Kids"
+    ],
+    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLqiP5EnJq7tf4vhx7ok1lGbcYQGtp88FODIN9XQnTCQ&s=10",
+    backdrop: "https://image.tmdb.org/t/p/original/4mlS1MitcOqdPLhxEFyk9Qwf5rr.jpg",
+    videoUrl: "260514",
+    overview: "Facing a new generation of faster, more technologically advanced racers, an aging Lightning McQueen must reinvent himself with the help of an ambitious young trainer, discovering what it truly takes to leave a lasting legacy on the sport he loves.",
+    director: "Brian Fee",
+    cast: [
+      "Owen Wilson, Cristela Alonzo, Chris Cooper, Nathan Fillion, Armie Hammer"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
   {
     title: "John Wick: Chapter 4",
     type: "Movie",
