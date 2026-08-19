@@ -31,7 +31,7 @@ window._MOVIES_DATA = [
     title: "Spider-Man: Brand New Day",
     type: "Movie",
     year: 2026,
-    rating: 7.8,
+    rating: 8.1,
     age: "R",
     duration: "1h 47m",
     genres: [
