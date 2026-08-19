@@ -33567,7 +33567,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/AdTh5kAXYwo0dwHONqCFO7y8Jmf.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/tMr7MYjsROIS1UdDOEPXcu6Hn5g.jpg",
-    videoUrl: "68481",
+    videoUrl: "688",
     overview: "Whether defending Earth, facing invaders from space or battling the bizarre forces of magic, the always-rotating team of Justice League heroes, are up to any challenge.",
     director: "Jake Castorena",
     cast: [
