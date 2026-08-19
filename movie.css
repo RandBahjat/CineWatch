@@ -1338,6 +1338,7 @@ select {
   align-items: center;
   gap: 1rem;
   font-size: 0.85rem;
+  color: var(--color-text-tertiary);
   flex-wrap: nowrap;
   position: relative;
 }
