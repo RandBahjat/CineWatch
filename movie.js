@@ -3566,9 +3566,9 @@ function updateIframeServer() {
 
   let newUrl = "";
   if (data.type === "tv") {
-    newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}`;
+    newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}?skin=netflix&color=e50914`;
   } else {
-    newUrl = `https://vaplayer.ru/embed/movie/${data.id}`;
+    newUrl = `https://vaplayer.ru/embed/movie/${data.id}?skin=netflix&color=e50914`;
   }
   
   iframe.src = newUrl;
