@@ -536,20 +536,21 @@ function updateHeroBanner() {
 function createMovieCardHTML(movie) {
   const fav = isFavorite(movie.id);
   const primaryGenre = movie.genres && movie.genres.length > 0 ? movie.genres[0] : "";
+  const displayType = movie.type || (movie.seasons ? "TV Show" : "Movie");
   return `
     <div class="movie-card" data-id="${movie.id}">
       <div class="card-poster-wrap">
-        <img src="${movie.poster}" alt="${movie.title}" class="card-poster" loading="lazy">
-        <div class="card-gradient"></div>
-        <div class="card-details">
-          <h4 class="card-title">${movie.title}</h4>
-          <div class="card-meta">
-            <span class="card-rating">⭐ ${movie.rating}</span>
-            <span class="card-year">${movie.year}</span>
-          </div>
-        </div>
+        <img src="${movie.backdrop || movie.poster}" alt="${movie.title}" class="card-poster" loading="lazy">
         <div class="card-overlay">
 
+        </div>
+      </div>
+      <div class="card-details">
+        <h4 class="card-title">${movie.title}</h4>
+        <div class="card-meta">
+          <span class="card-rating">⭐ ${movie.rating}</span>
+          <span class="card-year">${movie.year}</span>
+          <span class="card-type">${displayType}</span>
         </div>
       </div>
     </div>
