@@ -3907,7 +3907,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://image.tmdb.org/t/p/original/uos1avg8fudMB3t1jYxHkzLDCJC.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/2FCDydVqTYsIO0d16DT32nxm7g8.jpg",
-    videoUrl: null,
+    videoUrl: "",
     overview: "Now sixteen and craving independence, Ben Tennyson sets out to be a solo superhero — until Grandpa Max partners him with Rook Blonko, an alien Plumber recruit from the planet Revonnah. Together, using an evolved Omnitrix with a whole new roster of alien forms, they defend Earth from returning threats and new villains across the galaxy.",
     director: "Duncan Rouleau, Joe Casey, Joe Kelly, Steven T. Seagle",
     cast: [
