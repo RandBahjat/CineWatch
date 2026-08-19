@@ -3067,7 +3067,7 @@ window._MOVIES_DATA = [
       "Kids"
     ],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL_m3wHGqM_PfgV0fmYPkaFHJuJMe-DppVw1sJCwHdTg&s=10",
-    backdrop: "Tom and Jerry Cowboy Uphttps://image.tmdb.org/t/p/original/q1NXVYTqSStNQsnKrCvtU6NPzEk.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/q1NXVYTqSStNQsnKrCvtU6NPzEk.jpg",
     videoUrl: "892153",
     overview: "Out in the Wild West, Tom and Jerry team up to help a cowgirl and her brother save their struggling ranch from a greedy land-grabber. The rival duo must combine forces with Jerry's three prairie-dog nephews to outsmart the villain's henchmen and keep the ranch safe.",
     director: "Darrell Van Citters",
