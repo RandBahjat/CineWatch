@@ -36443,7 +36443,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1l7vsAIkqOzrqiPwjO27Cb5QdfJ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7j4ug9B6JXVeh5HhQjjPScrdj4Z.jpg",
-    videoUrl: "71789",
+    videoUrl: "71790",
     overview: "Following a violent riot in Los Angeles, a decorated LAPD sergeant, Daniel Hondo Harrelson, is tasked with leading a new SWAT unit that better represents the diverse community it protects. Straddling two worlds — as both a Black man from his old neighborhood and the leader of the elite tactical squad tasked with keeping the city safe — Hondo must navigate the razor's edge between duty and loyalty.",
     director: "Aaron Rahsaan Thomas, Shawn Ryan",
     cast: [
