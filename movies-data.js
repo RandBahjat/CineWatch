@@ -1944,7 +1944,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "John Wick: Chapter 3",
+    title: "John Wick: Chapter 3 - Parabellum",
     type: "Movie",
     year: 2019,
     rating: 7.4,
