@@ -5008,7 +5008,7 @@ window._MOVIES_DATA = [
       "Thriller"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cOg3UT2NYWHZxp41vpxAnVCOC4M.jpg",
-    backdrop: "https://spoilertown.com/wp-content/uploads/2025/06/jack-reacher-never-go-back-2016.webp",
+    backdrop: "https://image.tmdb.org/t/p/original/44rsq0x0Z5kTAz2vLitAcqp8r0o.jpg",
     videoUrl: "343611",
     overview: "Jack Reacher returns to his old military base to meet Major Susan Turner, only to discover she has been framed for treason. After breaking her out of custody, Reacher uncovers a massive government conspiracy involving military contractors, all while protecting a teenage girl who may be his biological daughter.",
     director: "Edward Zwick ",
