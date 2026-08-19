@@ -2171,7 +2171,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
     backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMATYOOa3SHrDYlfL0MjcGZPNFN5bWOH-wWAcYiwnV_mYugsFEcXQxlNzb&s=10",
-    videoUrl: "",
+    videoUrl: "76479",
     overview: "A group of vigilantes set out to expose and take down corrupt superheroes who abuse their superpowers and are controlled by a powerful, profit-driven corporation. When Hughie Campbell's girlfriend is accidentally killed by a member of the Seven, he joins forces with the ruthless Billy Butcher to bring the Supes to justice.",
     director: "Eric Kripke",
     cast: [
