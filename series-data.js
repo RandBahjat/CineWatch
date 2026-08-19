@@ -47812,7 +47812,7 @@ window._SERIES_DATA = [
         episodes: [
           { episode: 1, title: 'Unaired Pilot' },
           { episode: 2, title: 'A Study in Pink' },
-          { episode: 3, title: 'Episode 3' }
+          { episode: 3, title: 'The Blind Banker' }
         ]
       },
       {
