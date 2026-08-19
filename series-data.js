@@ -47850,8 +47850,8 @@ window._SERIES_DATA = [
     duration: "22m",
     genres: [
       "Animation",
-      "Action & Adventure",
-      "Sci-Fi & Fantasy",
+      "Action  Adventure",
+      "Sci-Fi Fantasy",
       "Kids"
     ],
     poster: "https://image.tmdb.org/t/p/original/p276PkRJ5Wexq91DA5RkbxTYMDn.jpg",
