@@ -16,7 +16,7 @@ window._SERIES_DATA = [
       "Drama",
       "Sci-Fi"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/tDpkM1A1JbFvT55XkPzO9k4P91r.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/oxnWofiE9fHOgUfs9NJa6nG6NTR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/9r1wI7m3D6Kx0YfL3dM2gZ42Y71.jpg",
     videoUrl: "38472",
     overview: "After a tragic ending to her short-lived super hero stint, Jessica Jones is rebuilding her personal life and career as a detective who gets pulled into cases in New York City.",
