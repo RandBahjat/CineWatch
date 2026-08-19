@@ -33352,7 +33352,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/7C9TKvU5dNyhvoG9kQvRFsg6vlA.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/j7FL6KfjEjrGSXt6peQw7U3VL0R.jpg",
-    videoUrl: "156170",
+    videoUrl: "",
     overview: "In this animated kids series, playful Po pairs with a no-nonsense English knight on an epic quest to find four powerful weapons and save the world.",
     director: "Shaunt Nigoghossian",
     cast: [
