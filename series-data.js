@@ -47852,7 +47852,7 @@ window._SERIES_DATA = [
       "Animation",
       "Action & Adventure",
       "Sci-Fi & Fantasy",
-      
+      "Kids"
     ],
     poster: "https://image.tmdb.org/t/p/original/p276PkRJ5Wexq91DA5RkbxTYMDn.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/gXeCzYmCRBlpbbhhKrYM1ZpIDAA.jpg",
