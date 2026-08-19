@@ -1819,7 +1819,7 @@ window._MOVIES_DATA = [
       "Comedy",
       "Fantasy"
     ],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_nHIBdUUSF-4EN_LqniWD_XsFxoazWSzKzCFx3en69g&s=10",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1QVZXQQHCEIj8lyUhdBYd2qOYtq.jpg",
     backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOqFqvTyokvWt4Hpr5jfkz-s1vaxqphnrPBFotQxWCMNXbpdAneyW60e9y&s=10",
     videoUrl: "72105",
     overview: "As a lonely child, John Bennett wished for his teddy bear to come to life, and Ted has been his inseparable best friend ever since. Now in his thirties, John is torn between his loyalty to his foul-mouthed, hard-partying bear and his relationship with his girlfriend Lori, who wants him to finally grow up. As their friendship faces new strains — including a bizarre kidnapping plot involving an obsessive fan — John must decide what kind of adult he wants to become.",
