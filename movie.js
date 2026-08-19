@@ -3670,6 +3670,10 @@ if (vEl) {
 })();
 
 function trackVisit() {
+  // Check if visitor is likely a bot/crawler
+  const isBot = /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent) || navigator.webdriver;
+  if (isBot) return;
+
   // Only track once per session so refreshing doesn't artificially inflate the count
   if (sessionStorage.getItem('cinewatch_visit_tracked')) {
     return;
