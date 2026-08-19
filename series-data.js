@@ -33950,7 +33950,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/3F93j1Yuu9wtPO06BlPSVbLdxaP.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/jXiKtz7PPWOI4zKl5CdtrKyLUh8.jpg",
-    videoUrl: "321",
+    videoUrl: "32118",
     overview: "Generator Rex is an American science fiction \"nanopunk\" action animated television series created by Man of Action Studios for Cartoon Network. John Fang of Cartoon Network Studios serves as supervising director. It is inspired by the comic M. Rex, published by Image Comics in 1999. The series premiered in the United States on April 23, 2010, on Cartoon Network. Generator Rex is rated TV-PG-V. The last episode of the series had aired on January 3, 2013.",
     director: "Duncan Rouleau",
     cast: [
