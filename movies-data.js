@@ -28,33 +28,6 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Spider-Man: Brand New Day",
-    type: "Movie",
-    year: 2026,
-    rating: 8.2,
-    age: "PG-13",
-    duration: "2h 25m",
-    genres: [
-      "Action",
-      "Adventure",
-      "Science-Fiction"
-    ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
-    videoUrl: "969681",
-    overview: "After his identity is publicly exposed, Peter Parker must navigate the fallout as a powerful corporation and a new adversary threaten both his loved ones and his role as Spider-Man.",
-    director: "Destin Daniel Cretton",
-    cast: [
-      "Tom Holland",
-      "Zendaya",
-      "Jacob Batalon"
-    ],
-    trending: true,
-    featured: true,
-    is4k: false,
-    seasons: []
-  },
-  {
     title: "Supergirl",
     type: "Movie",
     year: 2026,
