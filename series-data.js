@@ -45562,7 +45562,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://image.tmdb.org/t/p/original/9SQaM6Yubh6bpkHBAsbpcvUCfh8.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/cyH8Ni1OSMtBbloEmI9eE69Xi7j.jpg",
-    videoUrl: "470",
+    videoUrl: "47035",
     overview: "Uncle Grandpa is everyone's uncle and grandpa at the same time — a magical, energetic being who travels the world in his living, talking RV to help kids with their everyday problems. Accompanied by an eccentric crew including a giant talking cat named Giant Realistic Flying Tiger and Pizza Steve, Uncle Grandpa's chaotic, surreal solutions rarely go as planned, but somehow always work out in the end.",
     director: "Pete Browngardt",
     cast: [
