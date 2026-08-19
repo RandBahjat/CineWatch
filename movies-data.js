@@ -6530,7 +6530,7 @@ window._MOVIES_DATA = [
       "Horror"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/aCnVdvExw6UWSeQfr0tUH3jr4qG.jpg",
-    backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/ieaqdvP8osNeB6q5J4tX5w2SGar.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/yAdhmuNEvxQt44GzEd5Sg6lPmJF.jpg",
     videoUrl: "72190",
     overview: "Life for former United Nations investigator Gerry Lane and his family seems content — until the world is suddenly plagued by a mysterious infection turning entire populations into rampaging, mindless zombies. After barely escaping the chaos, Lane is persuaded to travel the globe investigating the disease's origins, braving horrific dangers and long odds to find answers before human civilization falls.",
     director: "Marc Forster",
