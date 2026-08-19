@@ -763,21 +763,22 @@ function renderContinueWatchingPage() {
       return `
       <div class="movie-card continue-card" data-id="${movie.id}">
         <div class="card-poster-wrap continue-poster-wrap">
-          <img src="${movie.backdrop || movie.poster}" alt="${movie.title}" class="card-poster">
+          <picture>
+            <source media="(max-width: 768px)" srcset="${movie.poster}">
+            <img src="${movie.backdrop || movie.poster}" alt="${movie.title}" class="card-poster">
+          </picture>
+          <div class="card-gradient"></div>
           <button class="continue-remove-btn" data-remove-id="${movie.id}" title="Remove from list">&times;</button>
-          <div class="card-overlay">
-            <div class="card-details">
-              <div class="card-meta">
-                ${metaLabel}
-              </div>
-            </div>
-          </div>
+          <div class="card-overlay"></div>
           <div class="progress-bar-wrap">
             <div class="progress-bar-fill" style="width: ${percent}%"></div>
           </div>
         </div>
-        <div style="padding: 10px 5px 0;">
-          <h4 class="card-title" style="margin: 0; font-size: 1.05rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 500;">${movie.title}</h4>
+        <div class="card-details">
+          <h4 class="card-title">${movie.title}</h4>
+          <div class="card-meta">
+            ${metaLabel}
+          </div>
         </div>
       </div>
     `;
