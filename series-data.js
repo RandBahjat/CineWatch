@@ -39585,7 +39585,7 @@ window._SERIES_DATA = [
       "Crime"
     ],
     poster: "https://image.tmdb.org/t/p/original/bL1mwXDnH5fCxqc4S2n40hoVyoe.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/rYjWEMk832O6p2s5W4h7j0gB0iT.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/zjtcZVj62ZEYVSXUOeF3McuWqxy.jpg",
     videoUrl: "79744",
     overview: "The Rookie is inspired by a true story. John Nolan is the oldest rookie in the LAPD. At an age where most are at the peak of their career, Nolan cast aside his comfortable, small town life and moved to L.A. to pursue his dream of being a cop. Now, surrounded by rookies twenty years his junior, Nolan must navigate the dangerous, humorous and unpredictable world of a \"young\" cop, determined to make his second shot at life count.",
     director: "Alexi Hawley",
