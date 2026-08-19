@@ -5473,14 +5473,14 @@ input:-webkit-autofill:active {
 }
 
 @media (max-width: 768px) {
-  .movie-card:not(.continue-card) {
+  .movie-card {
     flex: 0 0 160px !important;
     min-width: unset;
   }
-  .movie-card:not(.continue-card) .card-poster-wrap {
+  .movie-card .card-poster-wrap {
     aspect-ratio: 2 / 3;
   }
-  .movie-card:not(.continue-card) .card-gradient {
+  .movie-card .card-gradient {
     display: block;
     position: absolute;
     inset: 0;
@@ -5488,7 +5488,7 @@ input:-webkit-autofill:active {
     z-index: 2;
     pointer-events: none;
   }
-  .movie-card:not(.continue-card) .card-details {
+  .movie-card .card-details {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -5496,18 +5496,18 @@ input:-webkit-autofill:active {
     padding: 1.1rem;
     z-index: 3;
   }
-  .movie-card:not(.continue-card) .card-title {
+  .movie-card .card-title {
     color: var(--color-text-secondary);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
     font-size: var(--font-size-md);
     font-weight: 700;
     margin-bottom: var(--space-2);
   }
-  .movie-card:not(.continue-card) .card-year {
+  .movie-card .card-year {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
     margin-left: auto;
   }
-  .movie-card:not(.continue-card) .card-type {
+  .movie-card .card-type {
     display: none;
   }
 }
