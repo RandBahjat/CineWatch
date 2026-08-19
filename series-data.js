@@ -4983,7 +4983,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/uDgy6hyPd82kOHh6I95FLtLnj6p.jpg",
-    videoUrl: "1000",
+    videoUrl: "100088",
     overview: "Twenty years after a fungal pandemic destroys civilization, a hardened survivor named Joel is hired to smuggle Ellie, a 14-year-old girl, out of an oppressive quarantine zone. What starts as a small job soon becomes a brutal, heartbreaking journey, as they both must traverse the U.S. and depend on each other for survival.",
     director: "Craig Mazin, Neil Druckmann",
     cast: [
