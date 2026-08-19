@@ -47626,7 +47626,7 @@ window._SERIES_DATA = [
     title: "The 100",
     type: "TV Show",
     year: 2014,
-    rating: 7.6,
+    rating: 7.5,
     age: "TV-14",
     duration: "43m",
     genres: [
