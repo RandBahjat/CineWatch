@@ -915,7 +915,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ07y6P5Z1a90Pc3X5d3BLI58uycJQEzsyBng3Xn6zoSQ&s=10",
     backdrop: "https://image.tmdb.org/t/p/original/jXJxMcVoEuXzym3vFnjqDW4ifo6.jpg",
-    videoUrl: "572802",
+    videoUrl: "https://example.com/video.mp4",
     overview: "Now settling into his role as King of Atlantis while adjusting to fatherhood, Arthur Curry finds himself pulled back into conflict when Black Manta resurfaces, empowered by an ancient and malevolent artifact known as the Black Trident. As Manta's vendetta threatens to unleash irreversible destruction on both Atlantis and the surface world, Arthur is forced to team up with his imprisoned brother Orm — putting aside years of rivalry to defend everything they both hold dear.",
     director: "James Wan",
     cast: [
@@ -940,7 +940,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://image.tmdb.org/t/p/original/uCg2HPY7rBCrh1YGpXam9LH1xKZ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qkOw5IZXESOiRH4wzdIYJlBZiCp.jpg",
-    videoUrl: "297802",
+    videoUrl: "https://example.com/video.mp4",
     overview: "Half-human, half-Atlantean, Arthur Curry has spent his life torn between two worlds. When his ambitious brother Orm plots to unite the seven undersea kingdoms and wage war on the surface, Arthur is thrust into a journey to reclaim his birthright as the true king of Atlantis — alongside Mera, princess of Xebel — facing mythical creatures, ancient prophecies, and a battle to prove himself as more than just a man caught between two worlds.",
     director: "James Wan",
     cast: [
