@@ -4983,7 +4983,7 @@ window._MOVIES_DATA = [
       "Thriller"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uQBbjrLVsUibWxNDGA4Czzo8lwz.jpg",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9eI4X8x64vw7tLGhTycptVrSRev9CgPnqZq2Cdhrf5hyaA-vibwdBuELK&s=10",
+    backdrop: "https://image.tmdb.org/t/p/original/gE8Dow9HTVYLQkRRik72o9iv9xw.jpg",
     videoUrl: "75780",
     overview: "A lone military sniper is arrested for the indiscriminate mass shooting of five victims. During interrogation, he writes a single instruction on a notepad: Get Jack Reacher. Jack Reacher, an elusive former U.S. Army Military Police investigator, resurfaces to look into the case, partnering with defense attorney Helen Rodin to uncover a far-reaching, sinister conspiracy hiding behind the killings.",
     director: "Christopher McQuarrie ",
