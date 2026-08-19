@@ -9211,7 +9211,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nKhhDFCdzxeJ3GUunQ570LDpUkz.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/p5HKeRbNRTZL2tvFhmXF8oVL1y6.jpg",
-    videoUrl: "593643",
+    videoUrl: "505",
     overview: "When Dylan and Jamie meet, they quickly become best friends. Feeling jaded by love, the two agree to be just friends with the added benefit of casual sex — no strings attached. But as their arrangement blurs the line between friendship and romance, they discover that keeping feelings out of it may be harder than they bargained for.",
     director: "Will Gluck",
     cast: [
