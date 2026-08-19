@@ -47635,7 +47635,7 @@ window._SERIES_DATA = [
       "Action"
     ],
     poster: "https://image.tmdb.org/t/p/original/aAI6McsjhwggmGdZwOylXraoil.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/hTExot1sfn7dHZjGrk0VIdv2R5T.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/8ZerYKvIaNUJZvAHXYTQu4qTwFw.jpg",
     videoUrl: "48866",
     overview: "100 years in the future, when the Earth has been abandoned due to radioactivity, the last surviving humans live on an ark orbiting the planet — but the ark won't last forever. So the repressive regime picks 100 expendable juvenile delinquents to send down to Earth to see if the planet is still habitable.",
     director: "Jason Rothenberg",
