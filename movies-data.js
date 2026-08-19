@@ -4072,7 +4072,7 @@ window._MOVIES_DATA = [
       "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4YMcYEFS8sFuW3soP1HVmgR3cSm.jpg",
-    backdrop: "https://d32qys9a6wm9no.cloudfront.net/images/movies/backdrop/55/222767f71c906a28d028be82614c9d25_1280x720.jpg?t=1666563727",
+    backdrop: "https://image.tmdb.org/t/p/original/azhhngEdDatterotJqVbTB2O1lH.jpg",
     videoUrl: "9738",
     overview: "Four astronauts gain extraordinary superpowers after being exposed to cosmic radiation during an experimental space mission. As they learn to master their new abilities and adapt to life as public superheroes, they must band together to stop their former benefactor, Victor Von Doom, who has transformed into a dangerous metallic villain.",
     director: "Tim Story ",
