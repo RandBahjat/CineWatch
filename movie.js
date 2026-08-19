@@ -102,6 +102,8 @@ const state = {
   moviesFilter: "all",
   seriesPage: 1,
   seriesFilter: "all",
+  animePage: 1,
+  animeFilter: "all",
   searchFilter: "all",
 };
 
@@ -1034,6 +1036,7 @@ function switchView(viewName) {
   const filteredSection = document.getElementById("filteredSection");
   const moviesSection = document.getElementById("moviesSection");
   const seriesSection = document.getElementById("seriesSection");
+  const animeSection = document.getElementById("animeSection");
   const detailsSection = document.getElementById("detailsSection");
 
   const watchlistHomeShelf = document.getElementById("watchlistHomeShelf");
@@ -1047,6 +1050,7 @@ function switchView(viewName) {
     filteredSection.classList.add("hidden");
     moviesSection.classList.add("hidden");
     seriesSection.classList.add("hidden");
+    if (animeSection) animeSection.classList.add("hidden");
     if (detailsSection) detailsSection.classList.add("hidden");
     if (continueShelf) continueShelf.classList.add("hidden");
     if (watchlistHomeShelf) watchlistHomeShelf.classList.add("hidden");
@@ -1071,6 +1075,7 @@ function switchView(viewName) {
     if (continueSection) continueSection.classList.add("hidden");
     moviesSection.classList.add("hidden");
     seriesSection.classList.add("hidden");
+    if (animeSection) animeSection.classList.add("hidden");
     if (detailsSection) detailsSection.classList.add("hidden");
     // Explicitly un-hide the shelves before rendering so they re-appear after navigating away
     if (continueShelf) continueShelf.classList.remove("hidden");
@@ -1088,6 +1093,10 @@ function switchView(viewName) {
     hideAll();
     seriesSection.classList.remove("hidden");
     renderSeriesSection();
+  } else if (viewName === "anime") {
+    hideAll();
+    if (animeSection) animeSection.classList.remove("hidden");
+    renderAnimeSection();
   } else if (viewName === "watchlist") {
     hideAll();
     watchlistSection.classList.remove("hidden");
@@ -2390,6 +2399,10 @@ function bindEventListeners() {
       state.seriesFilter = genre;
       state.seriesPage = 1;
       renderSeriesSection();
+    } else if (section === "anime") {
+      state.animeFilter = genre;
+      state.animePage = 1;
+      renderAnimeSection();
     }
   });
 
