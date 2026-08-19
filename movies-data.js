@@ -4856,7 +4856,7 @@ window._MOVIES_DATA = [
       "Romance"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/Cw4hIUIAmSYfK9QfaUW5igp9La.jpg",
-    backdrop: "https://c4.wallpaperflare.com/wallpaper/26/591/813/movie-forrest-gump-wallpaper-preview.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/66Kn4XWhkuPkJxOJyPEx4U2CUfN.jpg",
     videoUrl: "13",
     overview: "The history of the United States from the 1950s to the 1970s unfolds from the perspective of an Alabama man with an IQ of 75, who yearns to be reunited with his childhood sweetheart. Along the way, he unwittingly influences some of the defining historical events of the 20th century.",
     director: "Robert Zemeckis",
