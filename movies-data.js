@@ -5474,7 +5474,7 @@ window._MOVIES_DATA = [
       "Thriller"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/tWsNYbrqy1p1w6K9zRk0mSchztT.jpg",
-    backdrop: "https://pastposters.com/cdn/shop/files/now-you-see-me-cinema-quad-movie-poster-_1.jpg?v=1746789717",
+    backdrop: "https://image.tmdb.org/t/p/original/5TX71aicwM9CrSwpex6tyehLo6O.jpg",
     videoUrl: "75656",
     overview: "An FBI agent and an Interpol detective track a team of illusionists known as The Four Horsemen. The group pulls off audacious bank heists during their high-profile stage shows, rewarding their audiences with the stolen money while staying one step ahead of the law using elaborate tricks and misdirection.",
     director: "Louis Leterrier",
