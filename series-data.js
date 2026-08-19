@@ -46900,7 +46900,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/WtYiQk6432J0jCi61UQzLFtCCX.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/e5UakgeJsTBKtjxEURpg6hcohqX.jpg",
-    videoUrl: "72693",
+    videoUrl: "942",
     overview: "With the war against Homeworld won and Earth finally safe, Steven Universe should be able to relax into a peaceful new chapter of his life. Instead, unresolved trauma from his years of saving the world begins to surface, forcing him to confront the emotional toll of his upbringing and figure out who he is outside of being everyone's hero — while also dealing with a whole new set of Gem-related crises along the way.",
     director: "Rebecca Sugar",
     cast: [
