@@ -43,7 +43,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
     videoUrl: "969681",
     overview: "Peter Parker fight crime full-time as Spider-Man in world that no longer remember him, pressure of watching old friend move on without him spark change he not sure he can control. Transformation might be only thing that can stop shocking new threat to city, and those he love — powerful villain no one can even see",
-    director: "Olivia Wilde",
+    director: "Destin Daniel Cretton",
     cast: [
       "Seth Rogen, Olivia Wilde, Penélope Cruz, Edward Norton"
     ],
