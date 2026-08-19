@@ -4536,7 +4536,7 @@ window._MOVIES_DATA = [
       "Kids"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/d13Uj86LdbDLrfDoHR5aDOFYyJC.jpg",
-    backdrop: "https://m.media-amazon.com/images/S/aplus-media/vc/6703f940-8373-4d77-b29b-c20eb05de7b6._CR0,0,970,300_PT0_SX970__.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/dWmJR53sxid5zZ3jhjMoXpxBbpA.jpg",
     videoUrl: "82702",
     overview: "Five years after Vikings and dragons successfully united on the island of Berk, Hiccup and Toothless discover a secret ice cave filled with hundreds of wild dragons and a mysterious dragon rider, who turns out to be Hiccup's long-lost mother. Together, they must protect their peace against the ruthless Drago Bludvist, who plans to build a dragon army to conquer the world.",
     director: "Dean DeBlois ",
