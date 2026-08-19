@@ -55,6 +55,8 @@ window.CW_API = {
     const { data, error } = await this.request('/signup', 'POST', { name, email, password });
     if (data && data.token) {
       this.setToken(data.token);
+      const cloudData = { favorites: data.user?.favorites || [], continueWatching: data.user?.continueWatching || {} };
+      window.dispatchEvent(new CustomEvent('cw:authChanged', { detail: { user: data.user, cloudData } }));
     }
     return { user: data ? data.user : null, error };
   },
@@ -63,6 +65,8 @@ window.CW_API = {
     const { data, error } = await this.request('/login', 'POST', { username, password });
     if (data && data.token) {
       this.setToken(data.token);
+      const cloudData = { favorites: data.user?.favorites || [], continueWatching: data.user?.continueWatching || {} };
+      window.dispatchEvent(new CustomEvent('cw:authChanged', { detail: { user: data.user, cloudData } }));
     }
     return { user: data ? data.user : null, error };
   },
