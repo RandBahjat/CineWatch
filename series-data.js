@@ -47851,7 +47851,7 @@ window._SERIES_DATA = [
     genres: [
       "Animation",
       "Action"  "Adventure",
-      "Sci-Fi Fantasy",
+      "Sci-Fi" "Fantasy",
       "Kids"
     ],
     poster: "https://image.tmdb.org/t/p/original/p276PkRJ5Wexq91DA5RkbxTYMDn.jpg",
