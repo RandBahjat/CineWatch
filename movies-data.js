@@ -6200,7 +6200,7 @@ window._MOVIES_DATA = [
   {
     title: "Interstellar",
     type: "Movie",
-    year: 2015,
+    year: 2014,
     rating: 8,
     age: "PG-13",
     duration: "2h 24m ",
