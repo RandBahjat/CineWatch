@@ -5374,7 +5374,7 @@ window._MOVIES_DATA = [
       "Sci-FI"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bRBeSHfGHwkEpImlhxPmOcUsaeg.jpg",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDoAzKcENSjfv9kLnpqh-zCI4lUtRZV77TffGq5Smmn9tJc4sMZ4cRRndf&s=10",
+    backdrop: "https://image.tmdb.org/t/p/original/Auz9TwKsGrGhqKbR6dKOElyFj9t.jpg",
     videoUrl: "83533",
     overview: "Following the tragic losses of their recent battles, Jake Sully and Neytiri encounter a aggressive and volcanic-dwelling Na'vi tribe known as the Ash People, led by Varang. As grief and tension run high, the Sully family must navigate complex internal conflicts and the dangerous new dynamics on Pandora",
     director: "James Cameron",
