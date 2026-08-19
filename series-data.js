@@ -1867,7 +1867,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://image.tmdb.org/t/p/w400/ggFHVNu6YYI5L9pCfOacjizRGt.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/tsRy63Mu5cu8etL1X7ZLyf7UP1M.jpg",
-    videoUrl: "",
+    videoUrl: "1396",
     overview: "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine to secure his family's future.",
     director: "Vince Gilligan",
     cast: [
