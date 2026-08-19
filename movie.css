@@ -5273,6 +5273,201 @@ input:-webkit-autofill:active {
 
 @media (max-width: 480px) {
   .details-title-large {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  background-color: var(--white);
+  transition: 0.2s;
+  text-align: center;
+}
+
+.watchlist-wrapper .circle:active {
+  transform: scale(0.9);
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.watchlist-wrapper .circle:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.watchlist-wrapper .circle ion-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
+  font-size: 30px;
+  color: #333;
+  transition: 0.3s;
+}
+
+.watchlist-wrapper .circle .icon-check {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.watchlist-wrapper .circle .icon-add {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hidden-trigger {
+  display: none;
+}
+
+.hidden-trigger:checked ~ .circle {
+  transform: scale(0.9);
+  cursor: pointer;
+  background-color: var(--white);
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hidden-trigger:checked ~ label.outline-circle ion-icon {
+  color: #000;
+}
+
+.hidden-trigger:checked ~ .circle .icon-add {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.hidden-trigger:checked ~ .circle .icon-check {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+/* Fix Chrome Autofill turning inputs white */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #1f2833 inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Cloudflare Turnstile Mock */
+.cf-widget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1c1c1e;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  padding: 0 12px;
+  margin-bottom: 0.85rem;
+  height: 54px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.cf-spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid #444;
+  border-top-color: #999;
+  border-radius: 50%;
+  animation: cf-spin 1s linear infinite;
+  margin-right: 14px;
+}
+.cf-spinner.success {
+  border: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2300FF00"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>') no-repeat center;
+  background-size: cover;
+  animation: none;
+}
+.cf-text {
+  flex: 1;
+  color: #e0e0e0;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+.cf-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2px;
+}
+.cf-logo-text {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.cf-logo-text span {
+  color: #fff;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+.cf-links {
+  font-size: 10px;
+  color: #999;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+@keyframes cf-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+/* ==========================================
+   MOBILE DETAILS MODAL REFINEMENTS
+   ========================================== */
+@media (max-width: 768px) {
+  .details-title-large {
+    font-size: 2.6rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.18em !important;
+    font-weight: 800 !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .details-meta-row {
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+    font-size: 0.85rem !important;
+    color: #e5e5e5 !important;
+    margin-bottom: 1.2rem !important;
+  }
+
+  .details-overview-large {
+    font-size: 0.9rem !important;
+    line-height: 1.45 !important;
+    color: #d1d5db !important;
+  }
+
+  .season-controls {
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+  }
+  
+  .custom-select-wrapper {
+    flex: 1 1 calc(50% - 0.4rem) !important;
+    min-width: 120px !important;
+  }
+  
+  .episode-search-wrap {
+    flex: 1 1 calc(50% - 0.4rem) !important;
+    min-width: 140px !important;
+  }
+  
+  #episodeSortBtn {
+    flex: 0 0 auto !important;
+    margin-left: 0 !important;
+    margin-top: 0.2rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .details-title-large {
     font-size: 2rem !important;
     letter-spacing: 0.25em !important;
   }
@@ -5282,5 +5477,39 @@ input:-webkit-autofill:active {
   }
 }
 
-. i f r a m e - f u l l s c r e e n - h a c k   {   p o s i t i o n :   a b s o l u t e ;   b o t t o m :   8 p x ;   r i g h t :   8 p x ;   w i d t h :   4 5 p x ;   h e i g h t :   4 5 p x ;   z - i n d e x :   1 0 0 ;   o p a c i t y :   0 ;   c u r s o r :   p o i n t e r ;   b o r d e r :   n o n e ;   b a c k g r o u n d :   t r a n s p a r e n t ;   }  
- 
+@media (max-width: 768px) {
+  .movie-card {
+    flex: 0 0 160px !important;
+    min-width: unset;
+  }
+  .card-poster-wrap {
+    aspect-ratio: 2 / 3;
+  }
+  .card-gradient {
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.6) 30%, transparent 55%);
+    z-index: 2;
+    pointer-events: none;
+  }
+  .card-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.1rem;
+    z-index: 3;
+  }
+  .card-title {
+    color: var(--color-text-secondary);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    font-size: 0.9rem;
+  }
+  .card-year {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    margin-left: auto;
+  }
+}
+
+. i f r a m e - f u l l s c r e e n - h a c k   {   p o s i t i o n :   a b s o l u t e ;   b o t t o m :   8 p x ;   r i g h t :   8 p x ;   w i d t h :   4 5 p x ;   h e i g h t :   4 5 p x ;   z - i n d e x :   1 0 0 ;   o p a c i t y :   0 ;   c u r s o r :   p o i n t e r ;   b o r d e r :   n o n e ;   b a c k g r o u n d :   t r a n s p a r e n t ;   }  
