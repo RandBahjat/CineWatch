@@ -2351,7 +2351,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/6QZmkUIvmBbtkzMWCkx1slCL0Um.jpg",
-    videoUrl: "284054",
+    videoUrl: "",
     overview: "Grieving the loss of their king, Queen Ramonda, Shuri, and the Wakandan people must protect their nation from a powerful new threat rising from the ocean depths — a hidden civilization led by the formidable Namor, determined to defend his own people at any cost.",
     director: "Ryan Coogler",
     cast: [
