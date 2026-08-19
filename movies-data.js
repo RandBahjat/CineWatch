@@ -4808,7 +4808,7 @@ window._MOVIES_DATA = [
       "Romance"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/moogpu8rNkEjTgFyLXwhPghft5w.jpg",
-    backdrop: "https://m.media-amazon.com/images/M/MV5BMDZmNzliNmUtY2MxMC00NzdkLTg3MmYtNWViNWE5ODA4MGM1XkEyXkFqcGc@._V1_QL75_UX388_.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/c8jT5Rndg3aEGQgg7Y6WNjc5JoO.jpg",
     videoUrl: "744276",
     overview: "A shocking truth about Hardin's family history emerges, sending him into a dark spiral, while Tessa faces her own personal tragedy. As both of them undergo major life struggles, they realize that to survive and build a healthy future, they must first work on themselves individually before deciding if they can truly be together.",
     director: "Castille Landon",
