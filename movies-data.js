@@ -3370,7 +3370,7 @@ window._MOVIES_DATA = [
       "Crime"
     ],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTwpW1LRqeNtbyYdhZoOFkJL9WQ_CqA2Ad7seh8mW7tw&s=10",
-    backdrop: "https://occ-0-8407-2218.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWt3xz81_P-9x0la7qE3mneQgPS7Uxbvs1qFdYUK74QR4MLiCIPAuK1eaQ8qXR92giSu1WBW24AwpXKH1kH4d7sNMTckG3kJxERZ.jpg?r=c98",
+    backdrop: "https://image.tmdb.org/t/p/original/vRksD2SvDWrt3RznzBF0Hxxu6eM.jpg",
     videoUrl: "302699",
     overview: "A mild-mannered accountant connects with a former high school classmate on Facebook, only to discover he has transformed into a lethal CIA agent. Before he realizes what's happening, he is dragged into a high-stakes world of international espionage, shootouts, and undercover ops to foil a rogue terrorist plot.",
     director: "Rawson Marshall Thurber",
