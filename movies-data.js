@@ -940,7 +940,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://image.tmdb.org/t/p/original/uCg2HPY7rBCrh1YGpXam9LH1xKZ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qkOw5IZXESOiRH4wzdIYJlBZiCp.jpg",
-    videoUrl: "297",
+    videoUrl: "297802",
     overview: "Half-human, half-Atlantean, Arthur Curry has spent his life torn between two worlds. When his ambitious brother Orm plots to unite the seven undersea kingdoms and wage war on the surface, Arthur is thrust into a journey to reclaim his birthright as the true king of Atlantis — alongside Mera, princess of Xebel — facing mythical creatures, ancient prophecies, and a battle to prove himself as more than just a man caught between two worlds.",
     director: "James Wan",
     cast: [
