@@ -35039,7 +35039,7 @@ window._SERIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/VYnnyA2hyxi3VUPgCA71mMtt69.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/gmO3aezFgDcrhcymhNSJLGZ3CT.jpg",
-    videoUrl: "376",
+    videoUrl: "37606",
     overview: "The often outrageous adventures of a 12-year-old blue cat named Gumball Watterson, as he navigates the wonderfully weird world of Elmore alongside his goldfish-turned-legged adoptive brother Darwin. Blending traditional animation, live-action, CGI, and puppetry, the series follows Gumball's chaotic misadventures with his sister Anais and his hilariously flawed family, the Wattersons. ",
     director: "Ben Bocquelet",
     cast: [
