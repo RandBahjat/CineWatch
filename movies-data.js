@@ -6990,7 +6990,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/Af4bXE63pVsb2FtbW8uYIyPBadD.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ymZDxJle67EBFTEiBp1WzRuXjZc.jpg",
-    videoUrl: "355977",
+    videoUrl: "",
     overview: "Finding himself in a new era, and approaching retirement, Indy wrestles with fitting into a world that seems to have outgrown him. But as the tentacles of an all-too-familiar evil return in the form of an old rival, Indy must don his hat and pick up his whip once more to make sure a legendary artifact capable of changing the course of history doesn't fall into the wrong hands.",
     director: "James Mangold",
     cast: [
