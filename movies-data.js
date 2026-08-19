@@ -6146,7 +6146,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Hotel Transylvania 3",
+    title: "Hotel Transylvania 3: Summer Vacation",
     type: "Movie",
     year: 2018,
     rating: 6.3,
