@@ -1292,7 +1292,7 @@ window._MOVIES_DATA = [
       "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/yj8LbTju1p7CUJg7US2unSBk33s.jpg",
-    backdrop: "https://i.ytimg.com/vi/Jhg09ewbJvA/sddefault.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/wvqdJLVh0mSblly7UnYFPEk04Wd.jpg",
     videoUrl: "2080",
     overview: "Long before joining the X-Men, Logan endures a violent past marked by loss and betrayal. When a shadowy weapons program threatens everyone he loves, he must confront the people who turned him into a weapon in the first place.",
     director: "Gavin Hood",
