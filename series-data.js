@@ -47821,7 +47821,7 @@ window._SERIES_DATA = [
         episodes: [
           { episode: 1, title: 'A Scandal in Belgravia' },
           { episode: 2, title: 'The Hounds of Baskerville' },
-          { episode: 3, title: 'Episode 3' }
+          { episode: 3, title: 'The Reichenbach Fall' }
         ]
       },
       {
