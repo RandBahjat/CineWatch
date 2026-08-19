@@ -2577,7 +2577,7 @@ window._MOVIES_DATA = [
       "Thriller"
     ],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRiP_OD3okUny5FD2L3SWXKW_CTSVLlmVLaUv9xviEtw&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUQFlyhWI2XXUNgIX5qd1xxKLC02l1JtH_ng7JTUayzA&s=10",
+    backdrop: "https://image.tmdb.org/t/p/original/n86p0tTWxu1EzFxWfhvQeIl40bK.jpg",
     videoUrl: "787",
     overview: "John and Jane Smith appear to be an ordinary suburban couple whose marriage has grown stale and routine. In reality, both are highly skilled assassins, each hiding their true profession from the other for years. When their separate agencies assign them the same target — each other — their carefully guarded secrets collide, forcing them to fight for their lives while rediscovering the passion that first brought them together.",
     director: "Doug Liman",
