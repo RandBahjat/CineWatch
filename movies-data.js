@@ -6555,7 +6555,7 @@ window._MOVIES_DATA = [
       "Fantasy"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9f2Q0U3IOsLgrI2HkvldwSABZy5.jpg",
-    backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg",
     videoUrl: "566525",
     overview: "Shang-Chi, the master of weaponry-based Kung Fu, must confront the past he thought he'd left behind when he's drawn into the web of the mysterious Ten Rings organization — forcing him to face his father, the group's dangerous leader, and a legacy he can no longer outrun.",
     director: "Destin Daniel Cretton",
