@@ -18,7 +18,7 @@ window._SERIES_DATA = [
     poster: "https://image.tmdb.org/t/p/original/p276PkRJ5Wexq91DA5RkbxTYMDn.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/gXeCzYmCRBlpbbhhKrYM1ZpIDAA.jpg",
     videoUrl: "34391",
-    overview: "Peter Parker already Spider-Man one year, save lives, fight villain, but still young, still learn how be hero. Nick Fury offer him chance train become real hero, "The Ultimate Spider-Man." Peter learn must team up with four other teen hero, fight evil together",
+    overview: "Peter Parker already Spider-Man one year, save lives, fight villain, but still young, still learn how be hero. Nick Fury offer him chance train become real hero, "The Ultimate Spider-Man. Peter learn must team up with four other teen hero, fight evil together",
     director: "Stan Lee, Steve Ditko",
     cast: [
       "Drake Bell, Ogie Banks, Greg Cipes, Caitlyn Taylor Love, Logan Miller"
