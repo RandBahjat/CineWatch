@@ -1920,8 +1920,32 @@ window._MOVIES_DATA = [
     seasons: []
   },
   
+{
+    title: "John Wick: Chapter 2",
+    type: "Movie",
+    year: 2017,
+    rating: 7.4,
+    age: "R",
+    duration: "2h 2m",
+    genres: [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w1280/hXWBc0ioZP3cN4zCu6SN3YHXZVO.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/rrdN2FOm35OR8OKphRnzEkKpNXg.jpg",
+    videoUrl: "324552",
+    overview: "Forced back into action to honor a binding blood debt, John Wick must travel to Rome to complete a dangerous assignment. When his mission ends in betrayal, he finds himself hunted by every assassin in the criminal underworld, with a massive bounty on his head.",
+    director: "Chad Stahelski",
+    cast: [
+      "Keanu Reeves, Common, Laurence Fishburne, Riccardo Scamarcio, Ian McShane"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
-  
   {
     title: "John Wick: Chapter 4",
     type: "Movie",
