@@ -2499,7 +2499,7 @@ window._MOVIES_DATA = [
       "Drama"
     ],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEdx3z5R-k3bb6sb2fJutOx97TuH8aeqVABV30oTMl6A&s=10",
-    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSawVA0k1rHCwzjOPgJfpNzLyFNgUg-y-VRiMLPw02jsg&s=10",
+    backdrop: "https://image.tmdb.org/t/p/original/AaV1YIdWKnjAIAOe8UUKBFm327v.jpg",
     videoUrl: "361743",
     overview: "Decades after his Top Gun days, Maverick returns as a flight instructor tasked with training a new generation of elite pilots for a dangerous mission, forcing him to confront his own past — including his complicated relationship with the son of his fallen best friend.",
     director: "Joseph Kosinski",
