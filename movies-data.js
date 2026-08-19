@@ -8176,7 +8176,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ktjbGsGm5GKlHDvvwQajXvDW2BN.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/jLslJietfQJEgOvQHk4fRYFCnTS.jpg",
-    videoUrl: "366",
+    videoUrl: "366924",
     overview: "The Penguin breaks out of Arkham Asylum, and while on the run, he stumbles upon Dracula's coffin in a graveyard, unwittingly resurrecting the ancient vampire. As Dracula begins terrorizing Gotham City and building an army of the undead, Batman must find a way to defeat a foe unlike any he's faced before — one that hunts the night just as he does.",
     director: "Michael Goguen, Tae Ho Han, Sam Liu",
     cast: [
