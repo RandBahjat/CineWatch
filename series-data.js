@@ -19938,7 +19938,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 2,
-            title: 'Amazing Friends'
+            title: 'America My Dream'
           },
           {
             episode: 3,
