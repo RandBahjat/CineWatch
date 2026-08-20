@@ -19904,7 +19904,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 3,
-            title: 'Between an Ock and a Hard Place'
+            title: 'Ruminations: Big and Little Bullys'
           },
           {
             episode: 4,
