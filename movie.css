@@ -4985,10 +4985,10 @@ select {
 .account-panel-logout {
   margin: auto 1.2rem 1.4rem;
   padding: 0.85rem;
-  background: #00bcd4;
+  background: rgba(255, 255, 255, 0.05);
   border: none;
   border-radius: 10px;
-  color: #000;
+  color: var(--text-light);
   font-size: 0.95rem;
   font-weight: 700;
   font-family: inherit;
@@ -4997,11 +4997,12 @@ select {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  transition: background 0.2s, transform 0.15s;
+  transition: background 0.2s, transform 0.15s, color 0.2s;
 }
 
 .account-panel-logout:hover {
-  background: #00e5ff;
+  background: var(--primary);
+  color: #fff;
   transform: translateY(-1px);
 }
 
