@@ -10326,8 +10326,8 @@ window._MOVIES_DATA = [
     title: "All Star Superman",
     type: "Movie",
     year: 2011,
-    rating: 6.5,
-    age: "PG-13",
+    rating: 6.8,
+    age: "PG",
     duration: "1h 26m",
     genres: [
       "Action",
