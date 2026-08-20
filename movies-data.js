@@ -10313,7 +10313,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/gBpxdg0TrDul9O2MzsN7BmNOLyY.jpg",
     videoUrl: "618354",
     overview: "Young Clark Kent arrive Metropolis, work at Daily Planet, learn wield new power, become Superman. Team up with Lois Lane, face early threat Lobo, Parasite, figure out what kind of hero he want be.",
-    director: "Makoto Kamiya",
+    director: "Chris Palmer",
     cast: [
       "Darren Criss (Superman), Alexandra Daddario (Lois Lane), Zachary Quinto (Lex Luthor), Ike Amadi (John Henry Irons), Nyambi Nyambi (J'onn J'onzz)"
     ],
