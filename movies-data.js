@@ -10262,7 +10262,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/1qdwvTg2pgnZkx2RuqlWsw81ISy.jpg",
     videoUrl: "13648",
     overview: "Bioterror attack hit airport, T-Virus outbreak turn passenger, staff into zombie. Claire Redfield, Leon Kennedy trapped inside, must fight way out, uncover who behind attack.",
-    director: "Eiichiro Hasumi",
+    director: "Makoto Kamiya",
     cast: [
       "Nick Apostolides (Leon Kennedy), Stephanie Panisello (Claire Redfield), Erica Mendez (Rebecca Chambers), Matthew Mercer (Chris Redfield), Kate Higgins (Jill Valentine)"
     ],
