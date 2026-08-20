@@ -2114,7 +2114,7 @@ window._MOVIES_DATA = [
       "Adventure",
       "Sci-Fi"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8GFtkImmK0K1VaUChR0n9O61CFU.jpg",
+    poster: "https://image.tmdb.org/t/p/original/AsDFmGZ4BS57xKi94XND8l32NFt.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/16M8zTkadi0nslWjqpzCPzsYjuq.jpg",
     videoUrl: "49521",
     overview: "Sent to Earth as an infant to escape the destruction of Krypton, Clark Kent grows up grappling with immense powers he doesn't fully understand and a life spent hiding who he truly is. When the ruthless General Zod arrives seeking to reshape Earth into a new Krypton, Clark must finally step into his destiny — embracing the legacy of his Kryptonian heritage and the values instilled by his human parents to become the hero the world needs.",
