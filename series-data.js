@@ -48878,7 +48878,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/uWpG7GqfKGQqX4YMAo3nv5OrglV.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/adZ9ldSlkGfLfsHNbh37ZThCcgU.jpg',
     videoUrl: '456',
-    overview: 'Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands.',
+    overview: 'Homer, dumb but loveable dad, wife Marge, three kid — Bart, Lisa, Maggie — live wacky life in Springfield. Satire everyday American life, poke fun at family, work, society, pop culture, still going strong decade after decade.',
     director: 'Matt Groening',
     cast: [
       'Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith, Hank Azaria, Harry Shearer'
