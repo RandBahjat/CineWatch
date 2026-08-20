@@ -2369,7 +2369,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    title: "The Batman",
+    title: "Lucky",
     type: "TV Show",
     year: 2004,
     rating: 7.4,
