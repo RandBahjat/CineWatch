@@ -19840,7 +19840,7 @@ window._SERIES_DATA = [
       'Drama',
       'Phychological Drama',
     ],
-    poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/dKdcyyHUR5WTMnrbPdYN5y9xPVp.jpg',
+    poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/ypmtwojDd751Peszi62DVLytqqC.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/AqvGpSrx9I0ihhzxR8tc1rABvvE.jpg',
     videoUrl: '72705',
     overview: 'A animated superhero series that follows a brilliant but socially awkward teenager, Peter Parker, who gets bitten by a genetically modified spider and develops superhuman abilities. Following the tragic death of his Uncle Ben, Peter learns that with great power comes great responsibility and begins fighting crime in New York City as Spider-Man. He manages to balance his chaotic superhero duties with his studies at Horizon High, a prestigious high school for young scientific geniuses.',
