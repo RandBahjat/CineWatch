@@ -10328,7 +10328,7 @@ window._MOVIES_DATA = [
     year: 2011,
     rating: 6.8,
     age: "PG",
-    duration: "1h 26m",
+    duration: "1h 16m",
     genres: [
       "Action",
       "Animation",
