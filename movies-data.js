@@ -10309,7 +10309,7 @@ window._MOVIES_DATA = [
       "Animation",
       "Sci-Fi"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/zkHSURVCrt7rpvDDgUXO75CV1v4.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/n9GtiJiBETVFayQy7YnVdF9AucU.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/s6mHGoCNXh3CyoEju4dEEDb306y.jpg",
     videoUrl: "133121",
     overview: "Leon Kennedy sent into war-torn Eastern European nation, investigate use of B.O.W. in civil conflict. Uncover conspiracy tied to old enemy, must stop bioweapon before turn tide of war.",
