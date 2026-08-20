@@ -19834,7 +19834,7 @@ window._SERIES_DATA = [
     type: 'TV Show',
     year: 2019,
     rating: 8.1,
-    age: 'TV-Y7',
+    age: 'TV-MA',
     duration: '44m',
     genres: [
       'Animation',
