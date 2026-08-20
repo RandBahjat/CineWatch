@@ -10323,9 +10323,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Superman: Man of Tomorrow",
+    title: "All Star Superman",
     type: "Movie",
-    year: 2020,
+    year: 2011,
     rating: 6.5,
     age: "PG-13",
     duration: "1h 26m",
