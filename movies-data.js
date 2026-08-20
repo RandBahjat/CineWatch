@@ -10290,7 +10290,7 @@ window._MOVIES_DATA = [
     overview: "Leon Kennedy sent into war-torn Eastern European nation, investigate use of B.O.W. in civil conflict. Uncover conspiracy tied to old enemy, must stop bioweapon before turn tide of war.",
     director: "Makoto Kamiya",
     cast: [
-      "Paul Mercier (Leon Kennedy), Alyson Court (Claire Redfield), Laura Bailey (Angela Miller), Crispin Freeman (Frederic Downing)"
+      "Matthew Mercer (Leon Kennedy), Laura Bailey (Ada Wong), Roger Craig Smith (Chris Redfield), Courtenay Taylor (Svetlana Belikova)"
     ],
     trending: false,
     featured: false,
