@@ -10259,7 +10259,7 @@ window._MOVIES_DATA = [
       "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1x5OaFOo38JAwR5yXxeuvQg3VWH.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/vWGU6zCdFo3PfUkfnfMpd6SufKg.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/1qdwvTg2pgnZkx2RuqlWsw81ISy.jpg",
     videoUrl: "1083862",
     overview: "When Umbrella zombie virus outbreak hit downtown San Francisco, world's top B.O.W. expert Rebecca Chambers, Leon Kennedy, Claire Redfield, Jill Valentine, Chris Redfield team up, uncover source of infection, stop threat before spread wider.",
     director: "Eiichiro Hasumi",
