@@ -48002,7 +48002,7 @@ window._SERIES_DATA = [
     genres: [
       "Animation",
       "Action",
-      "Sci-Fi", "Fantasy",
+      "Sci-Fi"
       
     ],
     poster: "https://image.tmdb.org/t/p/original/p276PkRJ5Wexq91DA5RkbxTYMDn.jpg",
