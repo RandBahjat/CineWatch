@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_2601">
+    <link rel="stylesheet" href="movie.css?v=20260816_2602">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_2659" defer></script>
-    <script src="movies-data.js?v=20260818_534"></script>
-    <script src="series-data.js?v=20260818_534"></script>
-    <script src="movie.js?v=20260818_535" defer></script>
+    <script src="api.js?v=20260816_2660" defer></script>
+    <script src="movies-data.js?v=20260818_535"></script>
+    <script src="series-data.js?v=20260818_535"></script>
+    <script src="movie.js?v=20260818_536" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -53,15 +53,6 @@
                     <a href="#" class="nav-link active" data-view="home"><ion-icon name="home-outline"></ion-icon> Home</a>
                     <a href="#" class="nav-link" data-view="movies"><ion-icon name="film-outline"></ion-icon> Movies</a>
                     <a href="#" class="nav-link" data-view="series"><ion-icon name="tv-outline"></ion-icon> Series</a>
-                    <a href="#" class="nav-link" data-view="anime">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" style="margin-right:0.25rem; vertical-align:middle;">
-                            <path d="M 25 40 C 25 5, 75 5, 75 40" />
-                            <path d="M 27 32 Q 50 24 73 32" stroke-width="4" />
-                            <path d="M 10 42 Q 50 30 90 42" />
-                            <path d="M 25 40 A 30 30 0 1 0 75 40" />
-                        </svg>
-                        Anime
-                    </a>
                     <a href="#" class="nav-link" data-view="continue"><ion-icon name="play-circle-outline"></ion-icon> Continue Watching</a>
                     <a href="#" class="nav-link" data-view="watchlist"><ion-icon name="heart-outline"></ion-icon> My Watchlist</a>
                 </nav>
@@ -143,15 +134,6 @@
                 <a href="#" class="nav-link active" data-view="home"><ion-icon name="home-outline"></ion-icon> Home</a>
                 <a href="#" class="nav-link" data-view="movies"><ion-icon name="film-outline"></ion-icon> Movies</a>
                 <a href="#" class="nav-link" data-view="series"><ion-icon name="tv-outline"></ion-icon> Series</a>
-                <a href="#" class="nav-link" data-view="anime">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" style="margin-right:0.25rem; vertical-align:middle;">
-                        <path d="M 25 40 C 25 5, 75 5, 75 40" />
-                        <path d="M 27 32 Q 50 24 73 32" stroke-width="4" />
-                        <path d="M 10 42 Q 50 30 90 42" />
-                        <path d="M 25 40 A 30 30 0 1 0 75 40" />
-                    </svg>
-                    Anime
-                </a>
                 <a href="#" class="nav-link" data-view="continue"><ion-icon name="play-circle-outline"></ion-icon> Continue Watching</a>
                 <a href="#" class="nav-link" data-view="watchlist"><ion-icon name="heart-outline"></ion-icon> My Watchlist</a>
             </nav>
@@ -421,37 +403,6 @@
             <div class="browse-pagination" id="seriesPagination"></div>
         </section>
 
-        <!-- ===== ANIME BROWSE SECTION ===== -->
-        <section class="browse-section hidden" id="animeSection">
-            <div class="browse-header">
-                <div class="browse-header-left">
-                    <h1 class="browse-title">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" style="margin-right:0.5rem;">
-                            <path d="M 25 40 C 25 5, 75 5, 75 40" />
-                            <path d="M 27 32 Q 50 24 73 32" stroke-width="4" />
-                            <path d="M 10 42 Q 50 30 90 42" />
-                            <path d="M 25 40 A 30 30 0 1 0 75 40" />
-                        </svg>
-                        Anime
-                    </h1>
-                    <span class="browse-count" id="animeCount">0 titles</span>
-                </div>
-                <div class="browse-filter-bar" id="animeFilterBar">
-                    <button class="browse-filter-btn active" data-genre="all" data-section="anime">All</button>
-                    <button class="browse-filter-btn" data-genre="Action" data-section="anime">Action</button>
-                    <button class="browse-filter-btn" data-genre="Adventure" data-section="anime">Adventure</button>
-                    <button class="browse-filter-btn" data-genre="Comedy" data-section="anime">Comedy</button>
-                    <button class="browse-filter-btn" data-genre="Drama" data-section="anime">Drama</button>
-                    <button class="browse-filter-btn" data-genre="Fantasy" data-section="anime">Fantasy</button>
-                    <button class="browse-filter-btn" data-genre="Sci-Fi" data-section="anime">Sci-Fi</button>
-                </div>
-            </div>
-            <div class="browse-content">
-                <span id="animeCountLabel">Showing all titles</span>
-                <div class="browse-grid" id="animeGrid"></div>
-                <div class="browse-pagination" id="animePagination"></div>
-            </div>
-        </section>
 
         <!-- Category Shelves Container -->
         <div id="defaultShelves">
@@ -562,7 +513,6 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Movies</a></li>
                         <li><a href="#">Series</a></li>
-                        <li><a href="#">Anime</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
