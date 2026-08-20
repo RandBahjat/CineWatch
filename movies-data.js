@@ -10352,7 +10352,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 2018,
     rating: 7.3,
-    age: "PG",
+    age: "PG-13",
     duration: "1h 16m",
     genres: [
       "Action",
