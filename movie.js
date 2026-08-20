@@ -1861,7 +1861,11 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     video.classList.add("hidden");
     controlsBar.classList.add("hidden");
 
-    if (centerOverlay) centerOverlay.style.display = "none";
+    if (centerOverlay) {
+      centerOverlay.innerHTML = '<ion-icon name="sync-outline" class="spin"></ion-icon>';
+      centerOverlay.style.display = "flex";
+      centerOverlay.style.animation = "none";
+    }
     serverWrap.classList.remove("hidden");
     if (isTvEmbed) {
       const parts = videoUrl.split(":");
@@ -1880,6 +1884,9 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
       if (window.currentIframeData) {
         updateIframeServer(); // Sets the src based on selected server
       } else {
+        iframe.onload = () => {
+          if (centerOverlay) centerOverlay.style.display = "none";
+        };
         iframe.src = videoUrl;
       }
     }
@@ -3551,6 +3558,10 @@ function updateIframeServer() {
     newUrl = `https://vaplayer.ru/embed/movie/${data.id}?skin=netflix&color=e50914`;
   }
   
+  iframe.onload = () => {
+    const centerOverlay = document.getElementById("videoCenterOverlay");
+    if (centerOverlay) centerOverlay.style.display = "none";
+  };
   iframe.src = newUrl;
 }
 
