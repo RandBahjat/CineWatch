@@ -19908,7 +19908,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 4,
-            title: 'You Who Cannot See, Think of Those Who Can
+            title: 'Rise Above It All'
           },
           {
             episode: 5,
