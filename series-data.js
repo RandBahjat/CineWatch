@@ -19926,78 +19926,7 @@ window._SERIES_DATA = [
             episode: 8,
             title: 'All My Life, My Heart Has Yearned for a Thing I Cannot Name'
           },
-          {
-            episode: 9,
-            title: 'Bring on the Bad Guys: Part Two'
-          },
-          {
-            episode: 10,
-            title: 'Bring on the Bad Guys: Part Three'
-          },
-          {
-            episode: 11,
-            title: 'Bring on the Bad Guys: Part Four'
-          },
-          {
-            episode: 12,
-            title: 'Brain Drain'
-          },
-          {
-            episode: 13,
-            title: 'The Living Brain'
-          },
-          {
-            episode: 14,
-            title: 'The Day Without Spider-Man'
-          },
-          {
-            episode: 15,
-            title: 'My Own Worst Enemy'
-          },
-          {
-            episode: 16,
-            title: 'Critical Update'
-          },
-          {
-            episode: 17,
-            title: 'A Troubled Mind'
-          },
-          {
-            episode: 18,
-            title: 'Cloak and Dagger'
-          },
-          {
-            episode: 19,
-            title: 'Superior'
-          },
-          {
-            episode: 20,
-            title: 'Brand New Day'
-          },
-          {
-            episode: 21,
-            title: 'The Cellar'
-          },
-          {
-            episode: 22,
-            title: 'The Road to Goblin War'
-          },
-          {
-            episode: 23,
-            title: 'Goblin War Part One'
-          },
-          {
-            episode: 24,
-            title: 'Goblin War Part Two'
-          },
-          {
-            episode: 25,
-            title: 'Goblin War Part Three'
-          },
-          {
-            episode: 26,
-            title: 'Goblin War Part Four'
-          }
+         
         ]
       },
       {
