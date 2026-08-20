@@ -10274,7 +10274,7 @@ window._MOVIES_DATA = [
   {
     title: "Resident Evil: Damnation",
     type: "Movie",
-    year: 2008,
+    year: 2012,
     rating: 6.4,
     age: "R",
     duration: "1h 38m",
