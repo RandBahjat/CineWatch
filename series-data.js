@@ -19924,7 +19924,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 8,
-            title: 'Bring on the Bad Guys: Part One'
+            title: 'All My Life, My Heart Has Yearned for a Thing I Cannot Name'
           },
           {
             episode: 9,
