@@ -5290,7 +5290,13 @@ input:-webkit-autofill:active {
 }
 
 @media (max-width: 480px) {
-  .details-title-large {
+.watchlist-wrapper .circle {
+  display: block;
+  position: relative;
+  padding: 0;
+  z-index: 98;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   height: 60px;
