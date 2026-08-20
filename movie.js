@@ -1476,7 +1476,7 @@ function openDetailsModal(movieId) {
       const limited = similarMovies.slice(0, 12);
       if (limited.length > 0) {
         similarsSection.classList.remove("hidden");
-        similarsGrid.innerHTML = limited.map(createBrowseCardHTML).join("");
+        similarsGrid.innerHTML = limited.map(createMovieCardHTML).join("");
       } else {
         similarsSection.classList.add("hidden");
       }
