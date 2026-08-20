@@ -1340,6 +1340,11 @@ select {
   color: var(--color-text-tertiary);
   flex-wrap: nowrap;
   position: relative;
+  transition: color 0.3s ease;
+}
+
+.movie-card:hover .card-meta {
+  color: var(--primary);
 }
 
 .card-rating {
