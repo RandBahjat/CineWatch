@@ -19866,7 +19866,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 3,
-            title: 'Osborn Academy'
+            title: 'Made You Look'
           },
           {
             episode: 4,
