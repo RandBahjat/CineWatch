@@ -19844,7 +19844,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/mez2Z3WqlPKNXpi7mWoiiE5guE9.jpg',
     videoUrl: '85552',
     overview: 'Rue, teen fresh out rehab, navigate life in small town, drug, sex, trauma, friendship, identity all tangle mess. Group of teen chase love, self, escape through drug-soak haze of high school life.',
-    director: 'Kevin Shinick',
+    director: 'Sam Levinson',
     cast: [
       'Robbie Daymond (Peter Parker / Spider-Man), Nadji Jeter (Miles Morales), Laura Bailey (Gwen Stacy), Nancy Linari (Aunt May), Fred Tatasciore (Max Modell), Melanie Minichino (Anya Corazon)'
     ],
