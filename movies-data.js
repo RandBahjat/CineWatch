@@ -10340,7 +10340,7 @@ window._MOVIES_DATA = [
     overview: "Superman poisoned with lethal dose of solar radiation while save crew of sun-probe ship, given only short time left live. Face own mortality, tackle final list of heroic task, protect Earth, Lois Lane before power fade for good.",
     director: "Sam Liu",
     cast: [
-      "Darren Criss (Superman), Alexandra Daddario (Lois Lane), Zachary Quinto (Lex Luthor), Ike Amadi (John Henry Irons), Nyambi Nyambi (J'onn J'onzz)"
+      "James Denton (Superman), Christina Hendricks (Lois Lane), Anthony LaPaglia (Lex Luthor), Ed Asner (Perry White), Frances Conroy (Ma Kent)"
     ],
     trending: false,
     featured: false,
