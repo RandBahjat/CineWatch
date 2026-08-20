@@ -19888,74 +19888,7 @@ window._SERIES_DATA = [
             episode: 8,
             title: 'And Salt the Earth Behind You'
           },
-          {
-            episode: 9,
-            title: 'Ultimate Spider-Man'
-          },
-          {
-            episode: 10,
-            title: "Kraven's Amazing Hunt"
-          },
-          {
-            episode: 11,
-            title: 'Halloween Moon'
-          },
-          {
-            episode: 12,
-            title: 'Spider-Man on Ice'
-          },
-          {
-            episode: 13,
-            title: 'Venom'
-          },
-          {
-            episode: 14,
-            title: 'Screwball Live'
-          },
-          {
-            episode: 15,
-            title: 'The Rise of Doc Ock: Part One'
-          },
-          {
-            episode: 16,
-            title: 'The Rise of Doc Ock: Part Two'
-          },
-          {
-            episode: 17,
-            title: 'The Rise of Doc Ock: Part Three'
-          },
-          {
-            episode: 18,
-            title: 'The Rise of Doc Ock: Part Four'
-          },
-          {
-            episode: 19,
-            title: 'Spider-Island: Part One'
-          },
-          {
-            episode: 20,
-            title: 'Spider-Island: Part Two'
-          },
-          {
-            episode: 21,
-            title: 'Spider-Island: Part Three'
-          },
-          {
-            episode: 22,
-            title: 'Spider-Island: Part Four'
-          },
-          {
-            episode: 23,
-            title: 'Spider-Island: Part Five'
-          },
-          {
-            episode: 24,
-            title: 'The Hobgoblin: Part One'
-          },
-          {
-            episode: 25,
-            title: 'The Hobgoblin: Part Two'
-          }
+          
         ]
       },
       {
