@@ -826,28 +826,6 @@ function renderFilteredGrid(movieList, titleText) {
 // BROWSE SECTION RENDERERS (Movies & Series)
 // ==========================================
 
-/** Create HTML for one browse card (large poster with overlay) */
-function createBrowseCardHTML(movie) {
-  const fav = isFavorite(movie.id);
-  const primaryGenre = movie.genres && movie.genres.length > 0 ? movie.genres[0] : "";
-  return `
-    <div class="browse-card" data-id="${movie.id}">
-      <div class="browse-poster-wrap">
-        <img src="${movie.backdrop}" alt="${movie.title}" class="browse-poster" loading="lazy">
-        <div class="browse-card-gradient"></div>
-        <div class="browse-card-info">
-          <div class="browse-card-title">${movie.title}</div>
-          <div class="browse-card-meta">
-            <span class="browse-card-rating">⭐ ${movie.rating}</span>
-            <span class="browse-card-year">${movie.year}</span>
-          </div>
-        </div>
-        <div class="browse-overlay">
-        </div>
-      </div>
-    </div>
-  `;
-}
 
 /** Render paginated cards into a grid container */
 function renderBrowseGrid(items, gridId, page) {
@@ -863,7 +841,7 @@ function renderBrowseGrid(items, gridId, page) {
         <p>Try a different filter.</p>
       </div>`;
   } else {
-    grid.innerHTML = pageItems.map(createBrowseCardHTML).join("");
+    grid.innerHTML = pageItems.map(createMovieCardHTML).join("");
   }
 }
 
