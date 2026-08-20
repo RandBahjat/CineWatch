@@ -47998,7 +47998,7 @@ window._SERIES_DATA = [
     year: 2021,
     rating: 5.8,
     age: "TV-MA",
-    duration: "22m",
+    duration: "26m",
     genres: [
       "Animation",
       "Action",  "Adventure",
