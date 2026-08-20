@@ -19833,7 +19833,7 @@ window._SERIES_DATA = [
     title: "Euphoria",
     type: 'TV Show',
     year: 2019,
-    rating: 6.2,
+    rating: 8.1,
     age: 'TV-Y7',
     duration: '44m',
     genres: [
