@@ -10390,7 +10390,7 @@ window._MOVIES_DATA = [
     overview: "New member Terra join Teen Titans, but hide dark secret, secretly work for villain Deathstroke, aim betray team from inside. Titans face deception, must find way stop Deathstroke's plan before too late.",
     director: "Sam Liu",
     cast: [
-      "Jerry O'Connell (Superman), Rebecca Romijn (Lois Lane), Rainn Wilson (Lex Luthor), Rosario Dawson (Wonder Woman), Matt Lanter (Flash)"
+      "Christina Ricci (Terra), Stuart Allan (Robin), Taissa Farmiga (Raven), Miguel Ferrer (Deathstroke), Kari Wahlgren (Starfire)"
     ],
     trending: false,
     featured: false,
