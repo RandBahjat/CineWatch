@@ -10271,4 +10271,30 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Resident Evil: Degeneration",
+    type: "Movie",
+    year: 2008,
+    rating: 6.4,
+    age: "R",
+    duration: "1h 38m",
+    genres: [
+      "Action",
+      "Animation",
+      "Horror",
+      "Sci-Fi"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1x5OaFOo38JAwR5yXxeuvQg3VWH.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/1qdwvTg2pgnZkx2RuqlWsw81ISy.jpg",
+    videoUrl: "13648",
+    overview: "Bioterror attack hit airport, T-Virus outbreak turn passenger, staff into zombie. Claire Redfield, Leon Kennedy trapped inside, must fight way out, uncover who behind attack.",
+    director: "Makoto Kamiya",
+    cast: [
+      "Paul Mercier (Leon Kennedy), Alyson Court (Claire Redfield), Laura Bailey (Angela Miller), Crispin Freeman (Frederic Downing)"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 ];
