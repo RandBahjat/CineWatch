@@ -19858,7 +19858,7 @@ window._SERIES_DATA = [
           
           {
             episode: 1,
-            title: 'Horizon High: Part One'
+            title: 'Pilot'
           },
           {
             episode: 2,
