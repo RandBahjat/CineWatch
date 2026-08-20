@@ -4459,6 +4459,11 @@ select {
   color: rgba(255, 255, 255, 0.85);
   flex-wrap: nowrap;
   position: relative;
+  transition: color 0.3s ease;
+}
+
+.browse-card:hover .browse-card-meta {
+  color: var(--primary);
 }
 
 .browse-card-rating {
