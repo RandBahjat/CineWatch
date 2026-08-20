@@ -1325,11 +1325,6 @@ select {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: color 0.3s ease;
-}
-
-.movie-card:hover .card-title {
-  color: var(--primary);
 }
 
 .card-meta {
@@ -1340,21 +1335,11 @@ select {
   color: var(--color-text-tertiary);
   flex-wrap: nowrap;
   position: relative;
-  transition: color 0.3s ease;
-}
-
-.movie-card:hover .card-meta {
-  color: var(--primary);
 }
 
 .card-rating {
   color: var(--gold);
   font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.movie-card:hover .card-rating {
-  color: var(--primary);
 }
 
 .card-year {
@@ -4449,11 +4434,6 @@ select {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: color 0.3s ease;
-}
-
-.browse-card:hover .browse-card-title {
-  color: var(--primary);
 }
 
 .browse-card-meta {
@@ -4464,21 +4444,11 @@ select {
   color: rgba(255, 255, 255, 0.85);
   flex-wrap: nowrap;
   position: relative;
-  transition: color 0.3s ease;
-}
-
-.browse-card:hover .browse-card-meta {
-  color: var(--primary);
 }
 
 .browse-card-rating {
   color: var(--gold);
   font-weight: 700;
-  transition: color 0.3s ease;
-}
-
-.browse-card:hover .browse-card-rating {
-  color: var(--primary);
 }
 
 .browse-card-year {
