@@ -5446,8 +5446,6 @@ input:-webkit-autofill:active {
 @media (max-width: 768px) {
   .details-title-large {
     font-size: 1.8rem !important;
-    text-transform: capitalize !important;
-    letter-spacing: 0.05em !important;
     font-weight: 800 !important;
     margin-bottom: 0.5rem !important;
     line-height: 1.1 !important;
