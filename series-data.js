@@ -19838,7 +19838,7 @@ window._SERIES_DATA = [
     duration: '1h',
     genres: [
       'Drama',
-      'Action',
+      'Teen',
       'Adventure',
       'Family',
       'Sci-Fi',
