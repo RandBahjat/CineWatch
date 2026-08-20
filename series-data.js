@@ -19862,7 +19862,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 2,
-            title: 'Horizon High: Part Two'
+            title: 'Stuntin' Like My Daddy'
           },
           {
             episode: 3,
