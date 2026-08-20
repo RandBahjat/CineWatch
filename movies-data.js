@@ -10401,7 +10401,7 @@ window._MOVIES_DATA = [
     title: "Justice League vs. Teen Titans",
     type: "Movie",
     year: 2016,
-    rating: 7.0,
+    rating: 6.9,
     age: "PG-13",
     duration: "1h 24m",
     genres: [
