@@ -4474,6 +4474,11 @@ select {
 .browse-card-rating {
   color: var(--gold);
   font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.browse-card:hover .browse-card-rating {
+  color: var(--primary);
 }
 
 .browse-card-year {
