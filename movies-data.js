@@ -10286,7 +10286,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/zkHSURVCrt7rpvDDgUXO75CV1v4.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/eu5ONL336h9A8kNMqVFrN25iHWw.jpg",
-    videoUrl: "13648",
+    videoUrl: "",
     overview: "Leon Kennedy sent into war-torn Eastern European nation, investigate use of B.O.W. in civil conflict. Uncover conspiracy tied to old enemy, must stop bioweapon before turn tide of war.",
     director: "Makoto Kamiya",
     cast: [
