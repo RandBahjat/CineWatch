@@ -19882,7 +19882,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 7,
-            title: 'Symbiotic Relationship'
+            title: 'The Trials and Tribulations of Trying to Pee While Depressed'
           },
           {
             episode: 8,
