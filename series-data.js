@@ -19870,7 +19870,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 4,
-            title: 'A Day in the Life'
+            title: 'Shook Ones Pt II'
           },
           {
             episode: 5,
