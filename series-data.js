@@ -19946,7 +19946,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 4,
-            title: 'Spider-Man Unmasked'
+            title: 'Kitty Likes to Dance'
           },
           {
             episode: 5,
