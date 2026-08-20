@@ -19838,7 +19838,7 @@ window._SERIES_DATA = [
     duration: '1h',
     genres: [
       'Drama',
-      'Phychological',
+      'Phychological Drama',
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/dKdcyyHUR5WTMnrbPdYN5y9xPVp.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/AqvGpSrx9I0ihhzxR8tc1rABvvE.jpg',
