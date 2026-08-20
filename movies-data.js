@@ -10284,7 +10284,7 @@ window._MOVIES_DATA = [
       "Horror",
       "Sci-Fi"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1x5OaFOo38JAwR5yXxeuvQg3VWH.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/zkHSURVCrt7rpvDDgUXO75CV1v4.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1qdwvTg2pgnZkx2RuqlWsw81ISy.jpg",
     videoUrl: "13648",
     overview: "Bioterror attack hit airport, T-Virus outbreak turn passenger, staff into zombie. Claire Redfield, Leon Kennedy trapped inside, must fight way out, uncover who behind attack.",
