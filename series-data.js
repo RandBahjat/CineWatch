@@ -48876,7 +48876,7 @@ window._SERIES_DATA = [
       'Family'
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/uWpG7GqfKGQqX4YMAo3nv5OrglV.jpg',
-    backdrop: 'https://image.tmdb.org/t/p/original/r0Q6eeN9L1DgQ9pL4HBRXyYc522.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/adZ9ldSlkGfLfsHNbh37ZThCcgU.jpg',
     videoUrl: '456',
     overview: 'Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands.',
     director: 'Matt Groening',
