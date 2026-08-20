@@ -10261,7 +10261,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1x5OaFOo38JAwR5yXxeuvQg3VWH.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1qdwvTg2pgnZkx2RuqlWsw81ISy.jpg",
     videoUrl: "13648",
-    overview: "When Umbrella zombie virus outbreak hit downtown San Francisco, world's top B.O.W. expert Rebecca Chambers, Leon Kennedy, Claire Redfield, Jill Valentine, Chris Redfield team up, uncover source of infection, stop threat before spread wider.",
+    overview: "Bioterror attack hit airport, T-Virus outbreak turn passenger, staff into zombie. Claire Redfield, Leon Kennedy trapped inside, must fight way out, uncover who behind attack.",
     director: "Eiichiro Hasumi",
     cast: [
       "Nick Apostolides (Leon Kennedy), Stephanie Panisello (Claire Redfield), Erica Mendez (Rebecca Chambers), Matthew Mercer (Chris Redfield), Kate Higgins (Jill Valentine)"
