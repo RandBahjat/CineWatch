@@ -10285,7 +10285,7 @@ window._MOVIES_DATA = [
       "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/zkHSURVCrt7rpvDDgUXO75CV1v4.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/1qdwvTg2pgnZkx2RuqlWsw81ISy.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/eu5ONL336h9A8kNMqVFrN25iHWw.jpg",
     videoUrl: "13648",
     overview: "Bioterror attack hit airport, T-Virus outbreak turn passenger, staff into zombie. Claire Redfield, Leon Kennedy trapped inside, must fight way out, uncover who behind attack.",
     director: "Makoto Kamiya",
