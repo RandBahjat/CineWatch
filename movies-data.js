@@ -10335,7 +10335,7 @@ window._MOVIES_DATA = [
       "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cfVEMf0JgFEIG5i4gKHVac0CA2y.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/gBpxdg0TrDul9O2MzsN7BmNOLyY.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/x8jTem2yGI4Ih9cuVr8P07CyZgm.jpg",
     videoUrl: "618354",
     overview: "Young Clark Kent arrive Metropolis, work at Daily Planet, learn wield new power, become Superman. Team up with Lois Lane, face early threat Lobo, Parasite, figure out what kind of hero he want be.",
     director: "Chris Palmer",
