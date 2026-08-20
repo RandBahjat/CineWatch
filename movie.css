@@ -3406,6 +3406,21 @@ select {
   flex-direction: column;
 }
 
+.custom-select-options::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-select-options::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.2);
+  border-radius: 0 12px 12px 0;
+}
+.custom-select-options::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2);
+  border-radius: 4px;
+}
+.custom-select-options::-webkit-scrollbar-thumb:hover {
+  background: var(--primary, #e50914);
+}
+
 .custom-select-wrapper.open .custom-select-options {
   opacity: 1;
   visibility: visible;
