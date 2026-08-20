@@ -1325,6 +1325,11 @@ select {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition: color 0.3s ease;
+}
+
+.movie-card:hover .card-title {
+  color: var(--primary);
 }
 
 .card-meta {
