@@ -10415,7 +10415,7 @@ window._MOVIES_DATA = [
     overview: "Damian Wayne, new Robin, struggle fit in with Teen Titans, sent join team by Batman. Meanwhile demon Trigon threaten possess Justice League, turn them evil, force young hero step up, save world.",
     director: "Sam Liu",
     cast: [
-      "Christina Ricci (Terra), Stuart Allan (Robin), Taissa Farmiga (Raven), Miguel Ferrer (Deathstroke), Kari Wahlgren (Starfire)"
+      "Stuart Allan (Damian Wayne/Robin), Taissa Farmiga (Raven), Kari Wahlgren (Starfire), Jason O'Mara (Batman), Sean Maher (Nightwing)"
     ],
     trending: false,
     featured: false,
