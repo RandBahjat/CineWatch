@@ -2373,7 +2373,7 @@ window._SERIES_DATA = [
     type: "TV Show",
     year: 2026,
     rating: 6.7,
-    age: "TV-Y4",
+    age: "TV-MA",
     duration: "22m",
     genres: [
       "Action",
