@@ -47997,7 +47997,7 @@ window._SERIES_DATA = [
     type: "TV Show",
     year: 2021,
     rating: 5.8,
-    age: "TV-Y7",
+    age: "TV-MA",
     duration: "22m",
     genres: [
       "Animation",
