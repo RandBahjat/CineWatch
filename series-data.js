@@ -20106,6 +20106,282 @@ window._SERIES_DATA = [
     ]
   },
   {
+    title: "Marvel's Spider-Man",
+    type: 'TV Show',
+    year: 2017,
+    rating: 6.2,
+    age: 'TV-Y7',
+    duration: '44m',
+    genres: [
+      'Animation',
+      'Action',
+      'Adventure',
+      'Family',
+      'Sci-Fi',
+      'Kids'
+    ],
+    poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/dKdcyyHUR5WTMnrbPdYN5y9xPVp.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/AqvGpSrx9I0ihhzxR8tc1rABvvE.jpg',
+    videoUrl: '72705',
+    overview: 'A animated superhero series that follows a brilliant but socially awkward teenager, Peter Parker, who gets bitten by a genetically modified spider and develops superhuman abilities. Following the tragic death of his Uncle Ben, Peter learns that with great power comes great responsibility and begins fighting crime in New York City as Spider-Man. He manages to balance his chaotic superhero duties with his studies at Horizon High, a prestigious high school for young scientific geniuses.',
+    director: 'Kevin Shinick',
+    cast: [
+      'Robbie Daymond (Peter Parker / Spider-Man), Nadji Jeter (Miles Morales), Laura Bailey (Gwen Stacy), Nancy Linari (Aunt May), Fred Tatasciore (Max Modell), Melanie Minichino (Anya Corazon)'
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 0,
+            title: 'Origins'
+          },
+          {
+            episode: 1,
+            title: 'Horizon High: Part One'
+          },
+          {
+            episode: 2,
+            title: 'Horizon High: Part Two'
+          },
+          {
+            episode: 3,
+            title: 'Osborn Academy'
+          },
+          {
+            episode: 4,
+            title: 'A Day in the Life'
+          },
+          {
+            episode: 5,
+            title: 'Party Animals'
+          },
+          {
+            episode: 6,
+            title: 'Sandman'
+          },
+          {
+            episode: 7,
+            title: 'Symbiotic Relationship'
+          },
+          {
+            episode: 8,
+            title: 'Stark Expo'
+          },
+          {
+            episode: 9,
+            title: 'Ultimate Spider-Man'
+          },
+          {
+            episode: 10,
+            title: "Kraven's Amazing Hunt"
+          },
+          {
+            episode: 11,
+            title: 'Halloween Moon'
+          },
+          {
+            episode: 12,
+            title: 'Spider-Man on Ice'
+          },
+          {
+            episode: 13,
+            title: 'Venom'
+          },
+          {
+            episode: 14,
+            title: 'Screwball Live'
+          },
+          {
+            episode: 15,
+            title: 'The Rise of Doc Ock: Part One'
+          },
+          {
+            episode: 16,
+            title: 'The Rise of Doc Ock: Part Two'
+          },
+          {
+            episode: 17,
+            title: 'The Rise of Doc Ock: Part Three'
+          },
+          {
+            episode: 18,
+            title: 'The Rise of Doc Ock: Part Four'
+          },
+          {
+            episode: 19,
+            title: 'Spider-Island: Part One'
+          },
+          {
+            episode: 20,
+            title: 'Spider-Island: Part Two'
+          },
+          {
+            episode: 21,
+            title: 'Spider-Island: Part Three'
+          },
+          {
+            episode: 22,
+            title: 'Spider-Island: Part Four'
+          },
+          {
+            episode: 23,
+            title: 'Spider-Island: Part Five'
+          },
+          {
+            episode: 24,
+            title: 'The Hobgoblin: Part One'
+          },
+          {
+            episode: 25,
+            title: 'The Hobgoblin: Part Two'
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: 'How I Thwipped My Summer Vacation'
+          },
+          {
+            episode: 2,
+            title: 'Take Two'
+          },
+          {
+            episode: 3,
+            title: 'Between an Ock and a Hard Place'
+          },
+          {
+            episode: 4,
+            title: 'Rise Above It All'
+          },
+          {
+            episode: 5,
+            title: 'School of Hard Knocks'
+          },
+          {
+            episode: 6,
+            title: "Dead Man's Party"
+          },
+          {
+            episode: 7,
+            title: 'Venom Returns'
+          },
+          {
+            episode: 8,
+            title: 'Bring on the Bad Guys: Part One'
+          },
+          {
+            episode: 9,
+            title: 'Bring on the Bad Guys: Part Two'
+          },
+          {
+            episode: 10,
+            title: 'Bring on the Bad Guys: Part Three'
+          },
+          {
+            episode: 11,
+            title: 'Bring on the Bad Guys: Part Four'
+          },
+          {
+            episode: 12,
+            title: 'Brain Drain'
+          },
+          {
+            episode: 13,
+            title: 'The Living Brain'
+          },
+          {
+            episode: 14,
+            title: 'The Day Without Spider-Man'
+          },
+          {
+            episode: 15,
+            title: 'My Own Worst Enemy'
+          },
+          {
+            episode: 16,
+            title: 'Critical Update'
+          },
+          {
+            episode: 17,
+            title: 'A Troubled Mind'
+          },
+          {
+            episode: 18,
+            title: 'Cloak and Dagger'
+          },
+          {
+            episode: 19,
+            title: 'Superior'
+          },
+          {
+            episode: 20,
+            title: 'Brand New Day'
+          },
+          {
+            episode: 21,
+            title: 'The Cellar'
+          },
+          {
+            episode: 22,
+            title: 'The Road to Goblin War'
+          },
+          {
+            episode: 23,
+            title: 'Goblin War Part One'
+          },
+          {
+            episode: 24,
+            title: 'Goblin War Part Two'
+          },
+          {
+            episode: 25,
+            title: 'Goblin War Part Three'
+          },
+          {
+            episode: 26,
+            title: 'Goblin War Part Four'
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: 'Web of Venom'
+          },
+          {
+            episode: 2,
+            title: 'Amazing Friends'
+          },
+          {
+            episode: 3,
+            title: 'Vengeance of Venom'
+          },
+          {
+            episode: 4,
+            title: 'Spider-Man Unmasked'
+          },
+          {
+            episode: 5,
+            title: 'Generations'
+          },
+          {
+            episode: 6,
+            title: 'Maximum Venom'
+          }
+        ]
+      }
+    ]
+  },
+  {
     title: 'Your Friendly Neighborhood Spider-Man',
     type: 'TV Show',
     year: 2025,
