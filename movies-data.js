@@ -10361,7 +10361,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/y0uxSHaSFmt6XaBJgjkeLqe7aM.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/fsUF7k9oH9HNJx5LfSg5HNhxb2m.jpg",
-    videoUrl: "56590",
+    videoUrl: "",
     overview: "Superman poisoned with lethal dose of solar radiation while save crew of sun-probe ship, given only short time left live. Face own mortality, tackle final list of heroic task, protect Earth, Lois Lane before power fade for good.",
     director: "Sam Liu",
     cast: [
