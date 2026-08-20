@@ -10397,6 +10397,31 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Teen Titans: The Judas Contract",
+    type: "Movie",
+    year: 2017,
+    rating: 7.0,
+    age: "PG-13",
+    duration: "1h 24m",
+    genres: [
+      "Action",
+      "Animation",
+      "Sci-Fi"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nuGIlNAJUati4qEAH1nrYKUA3xa.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/8bUSgDE11dtcQmHLvGGhAQOWMlE.jpg",
+    videoUrl: "408647",
+    overview: "New member Terra join Teen Titans, but hide dark secret, secretly work for villain Deathstroke, aim betray team from inside. Titans face deception, must find way stop Deathstroke's plan before too late.",
+    director: "Sam Liu",
+    cast: [
+      "Christina Ricci (Terra), Stuart Allan (Robin), Taissa Farmiga (Raven), Miguel Ferrer (Deathstroke), Kari Wahlgren (Starfire)"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
