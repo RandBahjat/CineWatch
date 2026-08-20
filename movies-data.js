@@ -10384,7 +10384,7 @@ window._MOVIES_DATA = [
       "Animation",
       "Sci-Fi"
     ],
-    poster: "https://image.tmdb.org/t/p/original/yj990SwsM2MDAqandW9Xeu4B6TW.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nuGIlNAJUati4qEAH1nrYKUA3xa.jpg",
     backdrop: "https://m.media-amazon.com/images/S/pv-target-images/4bc067e6d25b7fc887febafe3c7dbd16f9fbc306936dfaa9fdb818930eda7793.jpg",
     videoUrl: "487670",
     overview: "Monstrous creature call Doomsday wake, tear path of destruction toward Metropolis. Justice League try stop him, fail one by one, leave Superman alone to face final battle, give everything protect city he love.",
