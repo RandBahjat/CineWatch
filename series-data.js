@@ -19837,7 +19837,7 @@ window._SERIES_DATA = [
     age: 'TV-MA',
     duration: '1h',
     genres: [
-      'Animation',
+      '',
       'Action',
       'Adventure',
       'Family',
