@@ -10249,7 +10249,7 @@ window._MOVIES_DATA = [
     title: "Resident Evil: Degeneration",
     type: "Movie",
     year: 2008,
-    rating: 5.7,
+    rating: 6.4,
     age: "R",
     duration: "1h 31m",
     genres: [
