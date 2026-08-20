@@ -10245,4 +10245,30 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Resident Evil: Death Island",
+    type: "Movie",
+    year: 2023,
+    rating: 5.7,
+    age: "R",
+    duration: "1h 31m",
+    genres: [
+      "Action",
+      "Animation",
+      "Horror",
+      "Sci-Fi"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qayga07ICNDswm0cMJ8P3VwklFZ.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/vWGU6zCdFo3PfUkfnfMpd6SufKg.jpg",
+    videoUrl: "1083862",
+    overview: "When Umbrella zombie virus outbreak hit downtown San Francisco, world's top B.O.W. expert Rebecca Chambers, Leon Kennedy, Claire Redfield, Jill Valentine, Chris Redfield team up, uncover source of infection, stop threat before spread wider.",
+    director: "Eiichiro Hasumi",
+    cast: [
+      "Nick Apostolides (Leon Kennedy), Stephanie Panisello (Claire Redfield), Erica Mendez (Rebecca Chambers), Matthew Mercer (Chris Redfield), Kate Higgins (Jill Valentine)"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 ];
