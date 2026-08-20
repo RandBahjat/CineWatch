@@ -2387,7 +2387,7 @@ window._SERIES_DATA = [
     overview: "Anya Taylor-Joy play con artist finally get outsmarted herself. Series follow Luciana Lucky Armstrong after big heist collapse, husband vanish with cash, two dangerous group hunt her down for different reason.",
     director: "Michael Goguen, Duane Capizzi",
     cast: [
-      "Rino Romano, Alastair Duncan, Evan Sabara, Danielle Judovits, Kevin Michael Richardson, Ming-Na Wen, Mitch Pileggi"
+      "Anya Taylor-Joy, Annette Bening, Timothy Olyphant, Aunjanue Ellis-Taylor, Drew Starkey, Clifton Collins Jr., William Fichtner"
     ],
     trending: false,
     featured: false,
