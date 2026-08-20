@@ -19920,7 +19920,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 7,
-            title: 'Venom Returns'
+            title: 'The Theater and Its Double'
           },
           {
             episode: 8,
