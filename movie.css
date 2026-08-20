@@ -1942,6 +1942,10 @@ select {
   pointer-events: none;
 }
 
+.video-container.is-iframe .mouse-catcher {
+  pointer-events: none !important;
+}
+
 /*  Back Button (matching details page)  */
 .player-back-btn {
   position: absolute;
