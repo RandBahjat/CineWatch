@@ -19942,7 +19942,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 3,
-            title: 'Vengeance of Venom'
+            title: 'The Ballad of Paladin'
           },
           {
             episode: 4,
