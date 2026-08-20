@@ -5283,13 +5283,13 @@ input:-webkit-autofill:active {
   
   #episodeSortBtn {
     flex: 0 0 auto !important;
-    margin-left: 0 !important;
-    margin-top: 0.2rem !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .details-title-large {
+.watchlist-wrapper .circle {
+  display: block;
+  position: relative;
+  padding: 0;
+  z-index: 98;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   height: 60px;
@@ -5440,11 +5440,12 @@ input:-webkit-autofill:active {
    ========================================== */
 @media (max-width: 768px) {
   .details-title-large {
-    font-size: 2.6rem !important;
+    font-size: 2rem !important;
     text-transform: uppercase !important;
-    letter-spacing: 0.18em !important;
+    letter-spacing: 0.05em !important;
     font-weight: 800 !important;
     margin-bottom: 0.5rem !important;
+    line-height: 1.1 !important;
   }
   
   .details-meta-row {
