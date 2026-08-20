@@ -19900,7 +19900,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 2,
-            title: 'Take Two'
+            title: 'Out of Touch'
           },
           {
             episode: 3,
