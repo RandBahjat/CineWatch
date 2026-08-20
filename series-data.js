@@ -2382,7 +2382,7 @@ window._SERIES_DATA = [
       "Thriller"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/wKXpV8QgNXtJ4OQyzqDy82SsURm.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/mKrhRPB7rMvy0bIU1l1NYhgh1eI.jpg",
     videoUrl: "2022",
     overview: "A young Bruce Wayne fights crime and evil in Gotham City as the mysterious vigilante, the Batman. This animated series follows his early crimefighting years — from a solo detective battling classic villains like the Joker, Penguin, and Mr. Freeze, to eventually building the Bat-Family with Robin and Batgirl, and forming ties with the wider DC Universe.",
     director: "Michael Goguen, Duane Capizzi",
