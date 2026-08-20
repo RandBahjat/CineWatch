@@ -10372,6 +10372,31 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "The Death of Superman",
+    type: "Movie",
+    year: 2018,
+    rating: 7.3,
+    age: "PG-13",
+    duration: "1h 21m",
+    genres: [
+      "Action",
+      "Animation",
+      "Sci-Fi"
+    ],
+    poster: "https://image.tmdb.org/t/p/original/yj990SwsM2MDAqandW9Xeu4B6TW.jpg",
+    backdrop: "https://m.media-amazon.com/images/S/pv-target-images/4bc067e6d25b7fc887febafe3c7dbd16f9fbc306936dfaa9fdb818930eda7793.jpg",
+    videoUrl: "487670",
+    overview: "Monstrous creature call Doomsday wake, tear path of destruction toward Metropolis. Justice League try stop him, fail one by one, leave Superman alone to face final battle, give everything protect city he love.",
+    director: "Sam Liu, Jake Castorena",
+    cast: [
+      "Jerry O'Connell (Superman), Rebecca Romijn (Lois Lane), Rainn Wilson (Lex Luthor), Rosario Dawson (Wonder Woman), Matt Lanter (Flash)"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
