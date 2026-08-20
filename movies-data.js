@@ -10347,6 +10347,31 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "All Star Superman",
+    type: "Movie",
+    year: 2011,
+    rating: 6.8,
+    age: "PG",
+    duration: "1h 16m",
+    genres: [
+      "Action",
+      "Animation",
+      "Sci-Fi"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cfVEMf0JgFEIG5i4gKHVac0CA2y.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/x8jTem2yGI4Ih9cuVr8P07CyZgm.jpg",
+    videoUrl: "56590",
+    overview: "Superman poisoned with lethal dose of solar radiation while save crew of sun-probe ship, given only short time left live. Face own mortality, tackle final list of heroic task, protect Earth, Lois Lane before power fade for good.",
+    director: "Sam Liu",
+    cast: [
+      "James Denton (Superman), Christina Hendricks (Lois Lane), Anthony LaPaglia (Lex Luthor), Ed Asner (Perry White), Frances Conroy (Ma Kent)"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
