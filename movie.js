@@ -102,8 +102,6 @@ const state = {
   moviesFilter: "all",
   seriesPage: 1,
   seriesFilter: "all",
-  animePage: 1,
-  animeFilter: "all",
   searchFilter: "all",
 };
 
@@ -1015,39 +1013,6 @@ function renderSeriesSection() {
   });
 }
 
-/** Get all titles that are Anime or Animation */
-function getAnimeList() {
-  // Temporarily empty until populated manually
-  return [];
-}
-
-/** Render (or re-render) the full Anime browse section */
-function renderAnimeSection() {
-  const allAnime = getAnimeList();
-  const filtered = applyBrowseFilter(allAnime, state.animeFilter);
-  const totalPages = Math.max(1, Math.ceil(filtered.length / BROWSE_PAGE_SIZE));
-
-  if (state.animePage > totalPages) state.animePage = totalPages;
-
-  const countEl = document.getElementById("animeCount");
-  if (countEl) countEl.textContent = `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`;
-
-  // Update count label (between filters and grid)
-  const labelEl = document.getElementById("animeCountLabel");
-  if (labelEl) {
-    labelEl.textContent = `Titles: ${filtered.length}`;
-  }
-
-  document.querySelectorAll("#animeFilterBar .browse-filter-btn").forEach((btn) => {
-    btn.classList.toggle("active", btn.dataset.genre === state.animeFilter);
-  });
-
-  renderBrowseGrid(filtered, "animeGrid", state.animePage);
-  renderBrowsePagination("animePagination", state.animePage, totalPages, (p) => {
-    state.animePage = p;
-    renderAnimeSection();
-  });
-}
 
 // ==========================================
 // VIEW SWITCHER
@@ -1070,7 +1035,6 @@ function switchView(viewName) {
   const filteredSection = document.getElementById("filteredSection");
   const moviesSection = document.getElementById("moviesSection");
   const seriesSection = document.getElementById("seriesSection");
-  const animeSection = document.getElementById("animeSection");
   const detailsSection = document.getElementById("detailsSection");
 
   const watchlistHomeShelf = document.getElementById("watchlistHomeShelf");
@@ -1127,10 +1091,6 @@ function switchView(viewName) {
     hideAll();
     seriesSection.classList.remove("hidden");
     renderSeriesSection();
-  } else if (viewName === "anime") {
-    hideAll();
-    if (animeSection) animeSection.classList.remove("hidden");
-    renderAnimeSection();
   } else if (viewName === "watchlist") {
     hideAll();
     watchlistSection.classList.remove("hidden");
@@ -2433,10 +2393,6 @@ function bindEventListeners() {
       state.seriesFilter = genre;
       state.seriesPage = 1;
       renderSeriesSection();
-    } else if (section === "anime") {
-      state.animeFilter = genre;
-      state.animePage = 1;
-      renderAnimeSection();
     }
   });
 
