@@ -5246,7 +5246,6 @@ input:-webkit-autofill:active {
 @media (max-width: 768px) {
   .details-title-large {
     font-size: 1.8rem !important;
-    font-weight: 800 !important;
     margin-bottom: 0.5rem !important;
     line-height: 1.1 !important;
   }
