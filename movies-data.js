@@ -10232,7 +10232,7 @@ window._MOVIES_DATA = [
       "Horror",
       "Sci-Fi"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8c4a8kE7PizaGQQnditMmI1xbRp.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qayga07ICNDswm0cMJ8P3VwklFZ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/pYzh5bVTlPYP0UbTz4ZhsLunHDr.jpg",
     videoUrl: "624860",
     overview: "Neo live ordinary life in San Francisco, haunted by strange vision. Pull back into Matrix, must decide fight again or stay in false peace.",
