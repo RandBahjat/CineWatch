@@ -19874,7 +19874,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 5,
-            title: 'Party Animals'
+            title: '03 Bonnie and Clyde'
           },
           {
             episode: 6,
