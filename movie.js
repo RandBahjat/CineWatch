@@ -1420,6 +1420,18 @@ function openDetailsModal(movieId) {
 
     const castContainer = document.getElementById("detailsCastContainer");
     const castText = document.getElementById("detailsCastText");
+    const dirContainer = document.getElementById("detailsDirectorContainer");
+    const dirText = document.getElementById("detailsDirectorText");
+
+    if (dirContainer && dirText) {
+      if (movie.director) {
+        dirText.textContent = movie.director;
+        dirContainer.classList.remove("hidden");
+      } else {
+        dirContainer.classList.add("hidden");
+      }
+    }
+
     if (castContainer && castText) {
       if (movie.cast && movie.cast.length > 0) {
         castText.textContent = movie.cast.join(", ");
