@@ -10230,7 +10230,7 @@ window._MOVIES_DATA = [
       "Action",
       "Horror",
       "Sci-Fi",
-      "Animation"
+      
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8c4a8kE7PizaGQQnditMmI1xbRp.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/pYzh5bVTlPYP0UbTz4ZhsLunHDr.jpg",
