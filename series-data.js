@@ -19959,11 +19959,11 @@ window._SERIES_DATA = [
           {
             episode: 7,
             title: 'Rain or Shine'
-          }
+          },
           {
             episode: 8,
             title: 'In God We Trust'
-          }
+          },
         
         
         ]
