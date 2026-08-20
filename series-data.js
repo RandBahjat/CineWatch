@@ -48010,7 +48010,7 @@ window._SERIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/uPHXbrh9jlq2XgfjjTFlkJfgtOQ.jpg",
     videoUrl: "110642",
     overview: "Leon Kennedy find evidence of cyber-terror plot inside White House, Claire Redfield investigate mysterious outbreak at refugee camp near US-Mexico border. Two thread tangle, expose deep conspiracy tied to bioweapon research.",
-    director: "Stan Lee, Steve Ditko",
+    director: "Eiichirō Hasumi",
     cast: [
       "Drake Bell, Ogie Banks, Chi McBride, Clark Gregg, Tom Kenny, J. K. Simmons"
     ],
