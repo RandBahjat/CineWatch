@@ -19878,7 +19878,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: 'Sandman'
+            title: 'The Next Episode'
           },
           {
             episode: 7,
