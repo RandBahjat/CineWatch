@@ -19896,7 +19896,7 @@ window._SERIES_DATA = [
         episodes: [
           {
             episode: 1,
-            title: 'How I Thwipped My Summer Vacation'
+            title: 'Trying to Get to Heaven Before They Close the Door'
           },
           {
             episode: 2,
