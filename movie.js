@@ -1048,7 +1048,6 @@ function switchView(viewName) {
     filteredSection.classList.add("hidden");
     moviesSection.classList.add("hidden");
     seriesSection.classList.add("hidden");
-    if (animeSection) animeSection.classList.add("hidden");
     if (detailsSection) detailsSection.classList.add("hidden");
     if (continueShelf) continueShelf.classList.add("hidden");
     if (watchlistHomeShelf) watchlistHomeShelf.classList.add("hidden");
@@ -1073,7 +1072,6 @@ function switchView(viewName) {
     if (continueSection) continueSection.classList.add("hidden");
     moviesSection.classList.add("hidden");
     seriesSection.classList.add("hidden");
-    if (animeSection) animeSection.classList.add("hidden");
     if (detailsSection) detailsSection.classList.add("hidden");
     // Explicitly un-hide the shelves before rendering so they re-appear after navigating away
     if (continueShelf) continueShelf.classList.remove("hidden");
