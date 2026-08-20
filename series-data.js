@@ -2378,8 +2378,8 @@ window._SERIES_DATA = [
     genres: [
       "Action",
       "Crime",
-      "Adventure",
-      "Kids"
+      "Drama",
+      ""
     ],
     poster: "https://image.tmdb.org/t/p/original/t5mbrd79o89pYB8OQ4QPFNkIRPm.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/wKXpV8QgNXtJ4OQyzqDy82SsURm.jpg",
