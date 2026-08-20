@@ -19843,7 +19843,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/ypmtwojDd751Peszi62DVLytqqC.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/mez2Z3WqlPKNXpi7mWoiiE5guE9.jpg',
     videoUrl: '85552',
-    overview: 'A animated superhero series that follows a brilliant but socially awkward teenager, Peter Parker, who gets bitten by a genetically modified spider and develops superhuman abilities. Following the tragic death of his Uncle Ben, Peter learns that with great power comes great responsibility and begins fighting crime in New York City as Spider-Man. He manages to balance his chaotic superhero duties with his studies at Horizon High, a prestigious high school for young scientific geniuses.',
+    overview: 'Rue, teen fresh out rehab, navigate life in small town, drug, sex, trauma, friendship, identity all tangle mess. Group of teen chase love, self, escape through drug-soak haze of high school life.',
     director: 'Kevin Shinick',
     cast: [
       'Robbie Daymond (Peter Parker / Spider-Man), Nadji Jeter (Miles Morales), Laura Bailey (Gwen Stacy), Nancy Linari (Aunt May), Fred Tatasciore (Max Modell), Melanie Minichino (Anya Corazon)'
