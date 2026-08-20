@@ -10350,8 +10350,8 @@ window._MOVIES_DATA = [
   {
     title: "The Death of Superman",
     type: "Movie",
-    year: 2011,
-    rating: 6.8,
+    year: 2018,
+    rating: 7.3,
     age: "PG",
     duration: "1h 16m",
     genres: [
