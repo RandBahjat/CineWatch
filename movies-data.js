@@ -10264,7 +10264,7 @@ window._MOVIES_DATA = [
     overview: "Bioterror attack hit airport, T-Virus outbreak turn passenger, staff into zombie. Claire Redfield, Leon Kennedy trapped inside, must fight way out, uncover who behind attack.",
     director: "Makoto Kamiya",
     cast: [
-      "Nick Apostolides (Leon Kennedy), Stephanie Panisello (Claire Redfield), Erica Mendez (Rebecca Chambers), Matthew Mercer (Chris Redfield), Kate Higgins (Jill Valentine)"
+      "Paul Mercier (Leon Kennedy), Alyson Court (Claire Redfield), Laura Bailey (Angela Miller), Crispin Freeman (Frederic Downing)"
     ],
     trending: false,
     featured: false,
