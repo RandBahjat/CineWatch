@@ -19962,7 +19962,7 @@ window._SERIES_DATA = [
           }
           {
             episode: 8,
-            title: 'Stand Still and See'
+            title: 'In God We Trust'
           }
         
         
