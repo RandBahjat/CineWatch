@@ -2384,7 +2384,7 @@ window._SERIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/mKrhRPB7rMvy0bIU1l1NYhgh1eI.jpg",
     videoUrl: "278624",
-    overview: "Anya Taylor-Joy play con artist finally get outsmarted herself. Series follow Luciana "Lucky" Armstrong after big heist collapse, husband vanish with cash, two dangerous group hunt her down for different reason.",
+    overview: "Anya Taylor-Joy play con artist finally get outsmarted herself. Series follow Luciana Lucky Armstrong after big heist collapse, husband vanish with cash, two dangerous group hunt her down for different reason.",
     director: "Michael Goguen, Duane Capizzi",
     cast: [
       "Rino Romano, Alastair Duncan, Evan Sabara, Danielle Judovits, Kevin Michael Richardson, Ming-Na Wen, Mitch Pileggi"
