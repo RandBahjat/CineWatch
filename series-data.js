@@ -47990,7 +47990,7 @@ window._SERIES_DATA = [
         ]
       }
     ]
-  }
+  },
 
  {
     title: "Resident Evil: Infinite Darkness",
