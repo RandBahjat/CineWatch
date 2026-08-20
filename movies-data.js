@@ -10302,7 +10302,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 2020,
     rating: 6.5,
-    age: "R",
+    age: "PG-13",
     duration: "1h 40m",
     genres: [
       "Action",
