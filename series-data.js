@@ -48001,9 +48001,9 @@ window._SERIES_DATA = [
     duration: "26m",
     genres: [
       "Animation",
-      "Action",  "Adventure",
+      "Action",
       "Sci-Fi", "Fantasy",
-      "Kids",
+      
     ],
     poster: "https://image.tmdb.org/t/p/original/p276PkRJ5Wexq91DA5RkbxTYMDn.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/gXeCzYmCRBlpbbhhKrYM1ZpIDAA.jpg",
