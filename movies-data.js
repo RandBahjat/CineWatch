@@ -10228,7 +10228,7 @@ window._MOVIES_DATA = [
     duration: "1h 31m",
     genres: [
       "Action",
-      ""
+      "Horror"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8c4a8kE7PizaGQQnditMmI1xbRp.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/pYzh5bVTlPYP0UbTz4ZhsLunHDr.jpg",
@@ -10242,5 +10242,4 @@ window._MOVIES_DATA = [
     featured: false,
     is4k: false,
     seasons: []
-  }
-];
+  
