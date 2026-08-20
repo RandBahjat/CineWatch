@@ -10246,9 +10246,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Resident Evil: Death Island",
+    title: "Resident Evil: Degeneration",
     type: "Movie",
-    year: 2023,
+    year: 2008,
     rating: 5.7,
     age: "R",
     duration: "1h 31m",
