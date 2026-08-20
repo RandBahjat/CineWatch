@@ -10363,7 +10363,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/fsUF7k9oH9HNJx5LfSg5HNhxb2m.jpg",
     videoUrl: "487670",
     overview: "Monstrous creature call Doomsday wake, tear path of destruction toward Metropolis. Justice League try stop him, fail one by one, leave Superman alone to face final battle, give everything protect city he love.",
-    director: "Sam Liu",
+    director: "Sam Liu, Jake Castorena",
     cast: [
       "James Denton (Superman), Christina Hendricks (Lois Lane), Anthony LaPaglia (Lex Luthor), Ed Asner (Perry White), Frances Conroy (Ma Kent)"
     ],
