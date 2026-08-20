@@ -10287,7 +10287,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/zkHSURVCrt7rpvDDgUXO75CV1v4.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/eu5ONL336h9A8kNMqVFrN25iHWw.jpg",
     videoUrl: "13648",
-    overview: "Bioterror attack hit airport, T-Virus outbreak turn passenger, staff into zombie. Claire Redfield, Leon Kennedy trapped inside, must fight way out, uncover who behind attack.",
+    overview: "Leon Kennedy sent into war-torn Eastern European nation, investigate use of B.O.W. in civil conflict. Uncover conspiracy tied to old enemy, must stop bioweapon before turn tide of war.",
     director: "Makoto Kamiya",
     cast: [
       "Paul Mercier (Leon Kennedy), Alyson Court (Claire Redfield), Laura Bailey (Angela Miller), Crispin Freeman (Frederic Downing)"
