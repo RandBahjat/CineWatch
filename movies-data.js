@@ -10398,9 +10398,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Teen Titans: The Judas Contract",
+    title: "Justice League vs. Teen Titans",
     type: "Movie",
-    year: 2017,
+    year: 2016,
     rating: 7.0,
     age: "PG-13",
     duration: "1h 24m",
