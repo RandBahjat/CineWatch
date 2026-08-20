@@ -10376,7 +10376,7 @@ window._MOVIES_DATA = [
     title: "Teen Titans: The Judas Contract",
     type: "Movie",
     year: 2017,
-    rating: 7.3,
+    rating: 7.0,
     age: "PG-13",
     duration: "1h 21m",
     genres: [
