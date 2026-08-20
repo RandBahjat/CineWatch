@@ -10225,7 +10225,7 @@ window._MOVIES_DATA = [
     year: 2023,
     rating: 5.7,
     age: "R",
-    duration: "2h 28m",
+    duration: "1h 31m",
     genres: [
       "Sci-Fi",
       "Action"
