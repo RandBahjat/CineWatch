@@ -10387,7 +10387,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nuGIlNAJUati4qEAH1nrYKUA3xa.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8bUSgDE11dtcQmHLvGGhAQOWMlE.jpg",
     videoUrl: "408647",
-    overview: "Monstrous creature call Doomsday wake, tear path of destruction toward Metropolis. Justice League try stop him, fail one by one, leave Superman alone to face final battle, give everything protect city he love.",
+    overview: "New member Terra join Teen Titans, but hide dark secret, secretly work for villain Deathstroke, aim betray team from inside. Titans face deception, must find way stop Deathstroke's plan before too late.",
     director: "Sam Liu, Jake Castorena",
     cast: [
       "Jerry O'Connell (Superman), Rebecca Romijn (Lois Lane), Rainn Wilson (Lex Luthor), Rosario Dawson (Wonder Woman), Matt Lanter (Flash)"
