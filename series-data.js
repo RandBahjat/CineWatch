@@ -48881,7 +48881,7 @@ window._SERIES_DATA = [
     overview: 'Homer, dumb but loveable dad, wife Marge, three kid — Bart, Lisa, Maggie — live wacky life in Springfield. Satire everyday American life, poke fun at family, work, society, pop culture, still going strong decade after decade.',
     director: ' James L.Brooks  Matt Groening Sam Simon',
     cast: [
-      'Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith, Hank Azaria, Harry Shearer'
+      'Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith, Hank Azaria'
     ],
     trending: false,
     featured: false,
