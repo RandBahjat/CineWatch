@@ -10337,7 +10337,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cfVEMf0JgFEIG5i4gKHVac0CA2y.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/x8jTem2yGI4Ih9cuVr8P07CyZgm.jpg",
     videoUrl: "56590",
-    overview: "Young Clark Kent arrive Metropolis, work at Daily Planet, learn wield new power, become Superman. Team up with Lois Lane, face early threat Lobo, Parasite, figure out what kind of hero he want be.",
+    overview: "Superman poisoned with lethal dose of solar radiation while save crew of sun-probe ship, given only short time left live. Face own mortality, tackle final list of heroic task, protect Earth, Lois Lane before power fade for good.",
     director: "Chris Palmer",
     cast: [
       "Darren Criss (Superman), Alexandra Daddario (Lois Lane), Zachary Quinto (Lex Luthor), Ike Amadi (John Henry Irons), Nyambi Nyambi (J'onn J'onzz)"
