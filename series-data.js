@@ -19916,7 +19916,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: "Dead Man's Party"
+            title: "A Thousand Little Trees of Blood"
           },
           {
             episode: 7,
