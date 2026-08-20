@@ -10228,6 +10228,7 @@ window._MOVIES_DATA = [
     duration: "1h 31m",
     genres: [
       "Action",
+      "Animation"
       "Horror",
       "Sci-Fi"
     ],
