@@ -10222,7 +10222,7 @@ window._MOVIES_DATA = [
   {
     title: "Resident Evil: Death Island",
     type: "Movie",
-    year: 2021,
+    year: 2023,
     rating: 5.6,
     age: "R",
     duration: "2h 28m",
