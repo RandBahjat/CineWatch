@@ -10251,7 +10251,7 @@ window._MOVIES_DATA = [
     year: 2008,
     rating: 6.4,
     age: "R",
-    duration: "1h 31m",
+    duration: "1h 38m",
     genres: [
       "Action",
       "Animation",
