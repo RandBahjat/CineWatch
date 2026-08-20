@@ -5273,16 +5273,16 @@ input:-webkit-autofill:active {
   
   .custom-select-wrapper {
     flex: 1 1 calc(50% - 0.4rem) !important;
-    min-width: 120px !important;
-  }
-  
-  .episode-search-wrap {
-    flex: 1 1 calc(50% - 0.4rem) !important;
-    min-width: 140px !important;
-  }
-  
-  #episodeSortBtn {
-    flex: 0 0 auto !important;
+.watchlist-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  --white: #ffffff;
+  --af-white: #f3f3f3;
+  vertical-align: middle;
+}
+
 .watchlist-wrapper .circle {
   display: block;
   position: relative;
