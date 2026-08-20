@@ -10348,7 +10348,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "All Star Superman",
+    title: "The Death of Superman",
     type: "Movie",
     year: 2011,
     rating: 6.8,
