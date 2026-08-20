@@ -1350,6 +1350,11 @@ select {
 .card-rating {
   color: var(--gold);
   font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.movie-card:hover .card-rating {
+  color: var(--primary);
 }
 
 .card-year {
