@@ -47996,7 +47996,7 @@ window._SERIES_DATA = [
     title: "Resident Evil: Infinite Darkness",
     type: "TV Show",
     year: 2021,
-    rating: 7.2,
+    rating: 5.8,
     age: "TV-Y7",
     duration: "22m",
     genres: [
