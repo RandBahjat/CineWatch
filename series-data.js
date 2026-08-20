@@ -19958,7 +19958,7 @@ window._SERIES_DATA = [
           }
           {
             episode: 7,
-            title: 'Stand Still and See'
+            title: 'Rain or Shine'
           }
           {
             episode: 8,
