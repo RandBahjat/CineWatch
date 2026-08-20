@@ -833,7 +833,7 @@ function createBrowseCardHTML(movie) {
   return `
     <div class="browse-card" data-id="${movie.id}">
       <div class="browse-poster-wrap">
-        <img src="${movie.poster}" alt="${movie.title}" class="browse-poster" loading="lazy">
+        <img src="${movie.backdrop}" alt="${movie.title}" class="browse-poster" loading="lazy">
         <div class="browse-card-gradient"></div>
         <div class="browse-card-info">
           <div class="browse-card-title">${movie.title}</div>
