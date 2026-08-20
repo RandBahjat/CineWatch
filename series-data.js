@@ -19855,10 +19855,7 @@ window._SERIES_DATA = [
       {
         season: 1,
         episodes: [
-          {
-            episode: 0,
-            title: 'Origins'
-          },
+          
           {
             episode: 1,
             title: 'Horizon High: Part One'
