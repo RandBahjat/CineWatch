@@ -2443,12 +2443,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cinewatch.watch/?v=the-simpsons</loc>
-    <lastmod>2026-08-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://cinewatch.watch/?v=lanterns</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -3122,6 +3116,12 @@
   </url>
   <url>
     <loc>https://cinewatch.watch/?v=resident-evil-infinite-darkness</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cinewatch.watch/?v=the-simpsons</loc>
     <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
