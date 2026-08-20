@@ -2372,7 +2372,7 @@ window._SERIES_DATA = [
     title: "Lucky",
     type: "TV Show",
     year: 2026,
-    rating: 7.4,
+    rating: 6.7,
     age: "TV-Y4",
     duration: "22m",
     genres: [
