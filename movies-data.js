@@ -10272,7 +10272,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Resident Evil: Degeneration",
+    title: "Resident Evil: Damnation",
     type: "Movie",
     year: 2008,
     rating: 6.4,
