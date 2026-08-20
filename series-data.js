@@ -3,6 +3,3430 @@
 // Push to GitHub (or save — auto-sync will handle it) for changes to go live.
 
 window._SERIES_DATA = [
+  {
+    "title": "The Simpsons",
+    "type": "TV Show",
+    "year": 1989,
+    "rating": 8,
+    "age": "TV-14",
+    "duration": "30m",
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Family"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/vHILt9y8YjWkQk0Y620X2e1f06x.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/r0Q6eeN9L1DgQ9pL4HBRXyYc522.jpg",
+    "videoUrl": "456",
+    "overview": "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands.",
+    "director": "Matt Groening",
+    "cast": [
+      "Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith, Hank Azaria, Harry Shearer"
+    ],
+    "trending": false,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Simpsons Roasting on an Open Fire"
+          },
+          {
+            "episode": 2,
+            "title": "Bart the Genius"
+          },
+          {
+            "episode": 3,
+            "title": "Homer's Odyssey"
+          },
+          {
+            "episode": 4,
+            "title": "There's No Disgrace Like Home"
+          },
+          {
+            "episode": 5,
+            "title": "Bart the General"
+          },
+          {
+            "episode": 6,
+            "title": "Moaning Lisa"
+          },
+          {
+            "episode": 7,
+            "title": "The Call of the Simpsons"
+          },
+          {
+            "episode": 8,
+            "title": "The Telltale Head"
+          },
+          {
+            "episode": 9,
+            "title": "Life on the Fast Lane"
+          },
+          {
+            "episode": 10,
+            "title": "Homer's Night Out"
+          },
+          {
+            "episode": 11,
+            "title": "The Crepes of Wrath"
+          },
+          {
+            "episode": 12,
+            "title": "Krusty Gets Busted"
+          },
+          {
+            "episode": 13,
+            "title": "Some Enchanted Evening"
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Bart Gets an F"
+          },
+          {
+            "episode": 2,
+            "title": "Simpson and Delilah"
+          },
+          {
+            "episode": 3,
+            "title": "Treehouse of Horror"
+          },
+          {
+            "episode": 4,
+            "title": "Two Cars in Every Garage and Three Eyes on Every Fish"
+          },
+          {
+            "episode": 5,
+            "title": "Dancin' Homer"
+          },
+          {
+            "episode": 6,
+            "title": "Dead Putting Society"
+          },
+          {
+            "episode": 7,
+            "title": "Bart vs. Thanksgiving"
+          },
+          {
+            "episode": 8,
+            "title": "Bart the Daredevil"
+          },
+          {
+            "episode": 9,
+            "title": "Itchy & Scratchy & Marge"
+          },
+          {
+            "episode": 10,
+            "title": "Bart Gets Hit by a Car"
+          },
+          {
+            "episode": 11,
+            "title": "One Fish, Two Fish, Blowfish, Blue Fish"
+          },
+          {
+            "episode": 12,
+            "title": "The Way We Was"
+          },
+          {
+            "episode": 13,
+            "title": "Homer vs. Lisa and the Eighth Commandment"
+          },
+          {
+            "episode": 14,
+            "title": "Principal Charming"
+          },
+          {
+            "episode": 15,
+            "title": "Oh Brother, Where Art Thou?"
+          },
+          {
+            "episode": 16,
+            "title": "Bart's Dog Gets an F"
+          },
+          {
+            "episode": 17,
+            "title": "Old Money"
+          },
+          {
+            "episode": 18,
+            "title": "Brush with Greatness"
+          },
+          {
+            "episode": 19,
+            "title": "Lisa's Substitute"
+          },
+          {
+            "episode": 20,
+            "title": "The War of the Simpsons"
+          },
+          {
+            "episode": 21,
+            "title": "Three Men and a Comic Book"
+          },
+          {
+            "episode": 22,
+            "title": "Blood Feud"
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Stark Raving Dad"
+          },
+          {
+            "episode": 2,
+            "title": "Mr. Lisa Goes to Washington"
+          },
+          {
+            "episode": 3,
+            "title": "When Flanders Failed"
+          },
+          {
+            "episode": 4,
+            "title": "Bart the Murderer"
+          },
+          {
+            "episode": 5,
+            "title": "Homer Defined"
+          },
+          {
+            "episode": 6,
+            "title": "Like Father Like Clown"
+          },
+          {
+            "episode": 7,
+            "title": "Treehouse of Horror II"
+          },
+          {
+            "episode": 8,
+            "title": "Lisa's Pony"
+          },
+          {
+            "episode": 9,
+            "title": "Saturdays of Thunder"
+          },
+          {
+            "episode": 10,
+            "title": "Flaming Moe's"
+          },
+          {
+            "episode": 11,
+            "title": "Burns Verkaufen der Kraftwerk"
+          },
+          {
+            "episode": 12,
+            "title": "I Married Marge"
+          },
+          {
+            "episode": 13,
+            "title": "Radio Bart"
+          },
+          {
+            "episode": 14,
+            "title": "Lisa the Greek"
+          },
+          {
+            "episode": 15,
+            "title": "Homer Alone"
+          },
+          {
+            "episode": 16,
+            "title": "Bart the Lover"
+          },
+          {
+            "episode": 17,
+            "title": "Homer at the Bat"
+          },
+          {
+            "episode": 18,
+            "title": "Separate Vocations"
+          },
+          {
+            "episode": 19,
+            "title": "Dog of Death"
+          },
+          {
+            "episode": 20,
+            "title": "Colonel Homer"
+          },
+          {
+            "episode": 21,
+            "title": "Black Widower"
+          },
+          {
+            "episode": 22,
+            "title": "The Otto Show"
+          },
+          {
+            "episode": 23,
+            "title": "Bart's Friend Falls in Love"
+          },
+          {
+            "episode": 24,
+            "title": "Brother, Can You Spare Two Dimes?"
+          }
+        ]
+      },
+      {
+        "season": 4,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Kamp Krusty"
+          },
+          {
+            "episode": 2,
+            "title": "A Streetcar Named Marge"
+          },
+          {
+            "episode": 3,
+            "title": "Homer the Heretic"
+          },
+          {
+            "episode": 4,
+            "title": "Lisa the Beauty Queen"
+          },
+          {
+            "episode": 5,
+            "title": "Treehouse of Horror III"
+          },
+          {
+            "episode": 6,
+            "title": "Itchy & Scratchy: The Movie"
+          },
+          {
+            "episode": 7,
+            "title": "Marge Gets a Job"
+          },
+          {
+            "episode": 8,
+            "title": "The New Kid on the Block"
+          },
+          {
+            "episode": 9,
+            "title": "Mr. Plow"
+          },
+          {
+            "episode": 10,
+            "title": "Lisa's First Word"
+          },
+          {
+            "episode": 11,
+            "title": "Homer's Triple Bypass"
+          },
+          {
+            "episode": 12,
+            "title": "Marge vs. the Monorail"
+          },
+          {
+            "episode": 13,
+            "title": "Selma's Choice"
+          },
+          {
+            "episode": 14,
+            "title": "Brother from the Same Planet"
+          },
+          {
+            "episode": 15,
+            "title": "I Love Lisa"
+          },
+          {
+            "episode": 16,
+            "title": "Duffless"
+          },
+          {
+            "episode": 17,
+            "title": "Last Exit to Springfield"
+          },
+          {
+            "episode": 18,
+            "title": "So It's Come to This: A Simpsons Clip Show"
+          },
+          {
+            "episode": 19,
+            "title": "The Front"
+          },
+          {
+            "episode": 20,
+            "title": "Whacking Day"
+          },
+          {
+            "episode": 21,
+            "title": "Marge in Chains"
+          },
+          {
+            "episode": 22,
+            "title": "Krusty Gets Kancelled"
+          }
+        ]
+      },
+      {
+        "season": 5,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Homer's Barbershop Quartet"
+          },
+          {
+            "episode": 2,
+            "title": "Cape Feare"
+          },
+          {
+            "episode": 3,
+            "title": "Homer Goes to College"
+          },
+          {
+            "episode": 4,
+            "title": "Rosebud"
+          },
+          {
+            "episode": 5,
+            "title": "Treehouse of Horror IV"
+          },
+          {
+            "episode": 6,
+            "title": "Marge on the Lam"
+          },
+          {
+            "episode": 7,
+            "title": "Bart's Inner Child"
+          },
+          {
+            "episode": 8,
+            "title": "Boy-Scoutz 'n the Hood"
+          },
+          {
+            "episode": 9,
+            "title": "The Last Temptation of Homer"
+          },
+          {
+            "episode": 10,
+            "title": "$pringfield (or, How I Learned to Stop Worrying and Love Legalized Gambling)"
+          },
+          {
+            "episode": 11,
+            "title": "Homer the Vigilante"
+          },
+          {
+            "episode": 12,
+            "title": "Bart Gets Famous"
+          },
+          {
+            "episode": 13,
+            "title": "Homer and Apu"
+          },
+          {
+            "episode": 14,
+            "title": "Lisa vs. Malibu Stacy"
+          },
+          {
+            "episode": 15,
+            "title": "Deep Space Homer"
+          },
+          {
+            "episode": 16,
+            "title": "Homer Loves Flanders"
+          },
+          {
+            "episode": 17,
+            "title": "Bart Gets an Elephant"
+          },
+          {
+            "episode": 18,
+            "title": "Burns' Heir"
+          },
+          {
+            "episode": 19,
+            "title": "Sweet Seymour Skinner's Baadasssss Song"
+          },
+          {
+            "episode": 20,
+            "title": "The Boy Who Knew Too Much"
+          },
+          {
+            "episode": 21,
+            "title": "Lady Bouvier's Lover"
+          },
+          {
+            "episode": 22,
+            "title": "Secrets of a Successful Marriage"
+          }
+        ]
+      },
+      {
+        "season": 6,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Bart of Darkness"
+          },
+          {
+            "episode": 2,
+            "title": "Lisa's Rival"
+          },
+          {
+            "episode": 3,
+            "title": "Another Simpsons Clip Show"
+          },
+          {
+            "episode": 4,
+            "title": "Itchy & Scratchy Land"
+          },
+          {
+            "episode": 5,
+            "title": "Sideshow Bob Roberts"
+          },
+          {
+            "episode": 6,
+            "title": "Treehouse of Horror V"
+          },
+          {
+            "episode": 7,
+            "title": "Bart's Girlfriend"
+          },
+          {
+            "episode": 8,
+            "title": "Lisa on Ice"
+          },
+          {
+            "episode": 9,
+            "title": "Homer Badman"
+          },
+          {
+            "episode": 10,
+            "title": "Grandpa vs. Sexual Inadequacy"
+          },
+          {
+            "episode": 11,
+            "title": "Fear of Flying"
+          },
+          {
+            "episode": 12,
+            "title": "Homer the Great"
+          },
+          {
+            "episode": 13,
+            "title": "And Maggie Makes Three"
+          },
+          {
+            "episode": 14,
+            "title": "Bart's Comet"
+          },
+          {
+            "episode": 15,
+            "title": "Homie the Clown"
+          },
+          {
+            "episode": 16,
+            "title": "Bart vs. Australia"
+          },
+          {
+            "episode": 17,
+            "title": "Homer vs. Patty and Selma"
+          },
+          {
+            "episode": 18,
+            "title": "A Star is Burns"
+          },
+          {
+            "episode": 19,
+            "title": "Lisa's Wedding"
+          },
+          {
+            "episode": 20,
+            "title": "Two Dozen and One Greyhounds"
+          },
+          {
+            "episode": 21,
+            "title": "The PTA Disbands"
+          },
+          {
+            "episode": 22,
+            "title": "Round Springfield"
+          },
+          {
+            "episode": 23,
+            "title": "The Springfield Connection"
+          },
+          {
+            "episode": 24,
+            "title": "Lemon of Troy"
+          },
+          {
+            "episode": 25,
+            "title": "Who Shot Mr. Burns? (1)"
+          }
+        ]
+      },
+      {
+        "season": 7,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Who Shot Mr. Burns? (2)"
+          },
+          {
+            "episode": 2,
+            "title": "Radioactive Man"
+          },
+          {
+            "episode": 3,
+            "title": "Home Sweet Homediddly-Dum-Doodily"
+          },
+          {
+            "episode": 4,
+            "title": "Bart Sells His Soul"
+          },
+          {
+            "episode": 5,
+            "title": "Lisa the Vegetarian"
+          },
+          {
+            "episode": 6,
+            "title": "Treehouse of Horror VI"
+          },
+          {
+            "episode": 7,
+            "title": "King-Size Homer"
+          },
+          {
+            "episode": 8,
+            "title": "Mother Simpson"
+          },
+          {
+            "episode": 9,
+            "title": "Sideshow Bob's Last Gleaming"
+          },
+          {
+            "episode": 10,
+            "title": "The Simpsons 138th Episode Spectacular"
+          },
+          {
+            "episode": 11,
+            "title": "Marge Be Not Proud"
+          },
+          {
+            "episode": 12,
+            "title": "Team Homer"
+          },
+          {
+            "episode": 13,
+            "title": "Two Bad Neighbors"
+          },
+          {
+            "episode": 14,
+            "title": "Scenes from the Class Struggle in Springfield"
+          },
+          {
+            "episode": 15,
+            "title": "Bart the Fink"
+          },
+          {
+            "episode": 16,
+            "title": "Lisa the Iconoclast"
+          },
+          {
+            "episode": 17,
+            "title": "Homer the Smithers"
+          },
+          {
+            "episode": 18,
+            "title": "The Day the Violence Died"
+          },
+          {
+            "episode": 19,
+            "title": "A Fish Called Selma"
+          },
+          {
+            "episode": 20,
+            "title": "Bart on the Road"
+          },
+          {
+            "episode": 21,
+            "title": "22 Short Films About Springfield"
+          },
+          {
+            "episode": 22,
+            "title": "Raging Abe Simpson and His Grumbling Grandson in 'The Curse of the Flying Hellfish'"
+          },
+          {
+            "episode": 23,
+            "title": "Much Apu About Nothing"
+          },
+          {
+            "episode": 24,
+            "title": "Homerpalooza"
+          },
+          {
+            "episode": 25,
+            "title": "Summer of 4 ft. 2"
+          }
+        ]
+      },
+      {
+        "season": 8,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Treehouse of Horror VII"
+          },
+          {
+            "episode": 2,
+            "title": "You Only Move Twice"
+          },
+          {
+            "episode": 3,
+            "title": "The Homer They Fall"
+          },
+          {
+            "episode": 4,
+            "title": "Burns, Baby Burns"
+          },
+          {
+            "episode": 5,
+            "title": "Bart After Dark"
+          },
+          {
+            "episode": 6,
+            "title": "A Milhouse Divided"
+          },
+          {
+            "episode": 7,
+            "title": "Lisa's Date with Density"
+          },
+          {
+            "episode": 8,
+            "title": "Hurricane Neddy"
+          },
+          {
+            "episode": 9,
+            "title": "El Viaje de Nuestro Jomer (The Mysterious Voyage of Homer)"
+          },
+          {
+            "episode": 10,
+            "title": "The Springfield Files"
+          },
+          {
+            "episode": 11,
+            "title": "The Twisted World of Marge Simpson"
+          },
+          {
+            "episode": 12,
+            "title": "Mountain of Madness"
+          },
+          {
+            "episode": 13,
+            "title": "Simpsoncalifragilisticexpiala (Annoyed Grunt) cious"
+          },
+          {
+            "episode": 14,
+            "title": "The Itchy & Scratchy & Poochie Show"
+          },
+          {
+            "episode": 15,
+            "title": "Homer's Phobia"
+          },
+          {
+            "episode": 16,
+            "title": "Brother from Another Series"
+          },
+          {
+            "episode": 17,
+            "title": "My Sister, My Sitter"
+          },
+          {
+            "episode": 18,
+            "title": "Homer vs. the Eighteenth Amendment"
+          },
+          {
+            "episode": 19,
+            "title": "Grade School Confidential"
+          },
+          {
+            "episode": 20,
+            "title": "The Canine Mutiny"
+          },
+          {
+            "episode": 21,
+            "title": "The Old Man and Lisa"
+          },
+          {
+            "episode": 22,
+            "title": "In Marge We Trust"
+          },
+          {
+            "episode": 23,
+            "title": "Homer's Enemy"
+          },
+          {
+            "episode": 24,
+            "title": "The Simpsons Spin-Off Showcase"
+          },
+          {
+            "episode": 25,
+            "title": "The Secret War of Lisa Simpson"
+          }
+        ]
+      },
+      {
+        "season": 9,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The City of New York vs. Homer Simpson"
+          },
+          {
+            "episode": 2,
+            "title": "The Principal and the Pauper"
+          },
+          {
+            "episode": 3,
+            "title": "Lisa's Sax"
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror VIII"
+          },
+          {
+            "episode": 5,
+            "title": "The Cartridge Family"
+          },
+          {
+            "episode": 6,
+            "title": "Bart Star"
+          },
+          {
+            "episode": 7,
+            "title": "The Two Mrs. Nahasapeemapetilons"
+          },
+          {
+            "episode": 8,
+            "title": "Lisa the Skeptic"
+          },
+          {
+            "episode": 9,
+            "title": "Realty Bites"
+          },
+          {
+            "episode": 10,
+            "title": "Miracle on Evergreen Terrace"
+          },
+          {
+            "episode": 11,
+            "title": "All Singing, All Dancing"
+          },
+          {
+            "episode": 12,
+            "title": "Bart Carny"
+          },
+          {
+            "episode": 13,
+            "title": "The Joy of Sect"
+          },
+          {
+            "episode": 14,
+            "title": "Das Bus"
+          },
+          {
+            "episode": 15,
+            "title": "The Last Temptation of Krusty"
+          },
+          {
+            "episode": 16,
+            "title": "Dumbbell Indemnity"
+          },
+          {
+            "episode": 17,
+            "title": "Lisa the Simpson"
+          },
+          {
+            "episode": 18,
+            "title": "This Little Wiggy"
+          },
+          {
+            "episode": 19,
+            "title": "Simpson Tide"
+          },
+          {
+            "episode": 20,
+            "title": "The Trouble with Trillions"
+          },
+          {
+            "episode": 21,
+            "title": "Girly Edition"
+          },
+          {
+            "episode": 22,
+            "title": "Trash of the Titans"
+          },
+          {
+            "episode": 23,
+            "title": "King of the Hill"
+          },
+          {
+            "episode": 24,
+            "title": "Lost Our Lisa"
+          },
+          {
+            "episode": 25,
+            "title": "Natural Born Kissers"
+          }
+        ]
+      },
+      {
+        "season": 10,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Lard of the Dance"
+          },
+          {
+            "episode": 2,
+            "title": "The Wizard of Evergreen Terrace"
+          },
+          {
+            "episode": 3,
+            "title": "Bart the Mother"
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror IX"
+          },
+          {
+            "episode": 5,
+            "title": "When You Dish Upon a Star"
+          },
+          {
+            "episode": 6,
+            "title": "D'Oh-in' in the Wind"
+          },
+          {
+            "episode": 7,
+            "title": "Lisa Gets an 'A'"
+          },
+          {
+            "episode": 8,
+            "title": "Homer Simpson in: 'Kidney Trouble'"
+          },
+          {
+            "episode": 9,
+            "title": "Mayored to the Mob"
+          },
+          {
+            "episode": 10,
+            "title": "Viva Ned Flanders"
+          },
+          {
+            "episode": 11,
+            "title": "Wild Barts Can't Be Broken"
+          },
+          {
+            "episode": 12,
+            "title": "Sunday, Cruddy Sunday"
+          },
+          {
+            "episode": 13,
+            "title": "Homer to the Max"
+          },
+          {
+            "episode": 14,
+            "title": "I'm with Cupid"
+          },
+          {
+            "episode": 15,
+            "title": "Marge Simpson in: 'Screaming Yellow Honkers'"
+          },
+          {
+            "episode": 16,
+            "title": "Make Room for Lisa"
+          },
+          {
+            "episode": 17,
+            "title": "Maximum Homerdrive"
+          },
+          {
+            "episode": 18,
+            "title": "Simpsons Bible Stories"
+          },
+          {
+            "episode": 19,
+            "title": "Mom and Pop Art"
+          },
+          {
+            "episode": 20,
+            "title": "The Old Man and the 'C' Student"
+          },
+          {
+            "episode": 21,
+            "title": "Monty Can't Buy Me Love"
+          },
+          {
+            "episode": 22,
+            "title": "They Saved Lisa's Brain"
+          },
+          {
+            "episode": 23,
+            "title": "30 Minutes Over Tokyo"
+          }
+        ]
+      },
+      {
+        "season": 11,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Beyond Blunderdome"
+          },
+          {
+            "episode": 2,
+            "title": "Brother's Little Helper"
+          },
+          {
+            "episode": 3,
+            "title": "Guess Who's Coming to Criticize Dinner"
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror X"
+          },
+          {
+            "episode": 5,
+            "title": "E-I-E-I-(Annoyed Grunt)"
+          },
+          {
+            "episode": 6,
+            "title": "Hello Gutter, Hello Fadder"
+          },
+          {
+            "episode": 7,
+            "title": "Eight Misbehavin"
+          },
+          {
+            "episode": 8,
+            "title": "Take My Wife, Sleaze"
+          },
+          {
+            "episode": 9,
+            "title": "Grift of the Magi"
+          },
+          {
+            "episode": 10,
+            "title": "Little Big Mom"
+          },
+          {
+            "episode": 11,
+            "title": "Faith Off"
+          },
+          {
+            "episode": 12,
+            "title": "The Mansion Family"
+          },
+          {
+            "episode": 13,
+            "title": "Saddlesore Galactica"
+          },
+          {
+            "episode": 14,
+            "title": "Alone Again Natura-Diddily"
+          },
+          {
+            "episode": 15,
+            "title": "Missionary Impossible"
+          },
+          {
+            "episode": 16,
+            "title": "Pygmoelian"
+          },
+          {
+            "episode": 17,
+            "title": "Bart to the Future"
+          },
+          {
+            "episode": 18,
+            "title": "Days of Wine and D'Ohses"
+          },
+          {
+            "episode": 19,
+            "title": "Kill the Alligator and Run"
+          },
+          {
+            "episode": 20,
+            "title": "Last Tap Dance in Springfield"
+          },
+          {
+            "episode": 21,
+            "title": "It's a Mad, Mad, Mad, Mad Marge"
+          },
+          {
+            "episode": 22,
+            "title": "Behind the Laughter"
+          }
+        ]
+      },
+      {
+        "season": 12,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Treehouse of Horror XI"
+          },
+          {
+            "episode": 2,
+            "title": "A Tale of Two Springfields"
+          },
+          {
+            "episode": 3,
+            "title": "Insane Clown Poppy"
+          },
+          {
+            "episode": 4,
+            "title": "Lisa the Treehugger"
+          },
+          {
+            "episode": 5,
+            "title": "Homer vs. Dignity"
+          },
+          {
+            "episode": 6,
+            "title": "The Computer Wore Menace Shoes"
+          },
+          {
+            "episode": 7,
+            "title": "The Great Money Caper"
+          },
+          {
+            "episode": 8,
+            "title": "Skinner's Sense of Snow"
+          },
+          {
+            "episode": 9,
+            "title": "HOMR"
+          },
+          {
+            "episode": 10,
+            "title": "Pokey Mom"
+          },
+          {
+            "episode": 11,
+            "title": "Worst Episode Ever"
+          },
+          {
+            "episode": 12,
+            "title": "Tennis the Menace"
+          },
+          {
+            "episode": 13,
+            "title": "Day of the Jackanapes"
+          },
+          {
+            "episode": 14,
+            "title": "New Kids on the Blecch"
+          },
+          {
+            "episode": 15,
+            "title": "Hungry Hungry Homer"
+          },
+          {
+            "episode": 16,
+            "title": "Bye Bye Nerdy"
+          },
+          {
+            "episode": 17,
+            "title": "Simpsons Safari"
+          },
+          {
+            "episode": 18,
+            "title": "Trilogy of Error"
+          },
+          {
+            "episode": 19,
+            "title": "I'm Goin' to Praise Land"
+          },
+          {
+            "episode": 20,
+            "title": "Children of a Lesser Clod"
+          },
+          {
+            "episode": 21,
+            "title": "Simpsons Tall Tales"
+          }
+        ]
+      },
+      {
+        "season": 13,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Treehouse of Horror XII"
+          },
+          {
+            "episode": 2,
+            "title": "The Parent Rap"
+          },
+          {
+            "episode": 3,
+            "title": "Homer the Moe"
+          },
+          {
+            "episode": 4,
+            "title": "Hunka Hunka Burns in Love"
+          },
+          {
+            "episode": 5,
+            "title": "The Blunder Years"
+          },
+          {
+            "episode": 6,
+            "title": "She of Little Faith"
+          },
+          {
+            "episode": 7,
+            "title": "Brawl in the Family"
+          },
+          {
+            "episode": 8,
+            "title": "Sweets and Sour Marge"
+          },
+          {
+            "episode": 9,
+            "title": "Jaws Wired Shut"
+          },
+          {
+            "episode": 10,
+            "title": "Half-Decent Proposal"
+          },
+          {
+            "episode": 11,
+            "title": "The Bart Wants What It Wants"
+          },
+          {
+            "episode": 12,
+            "title": "The Lastest Gun in the West"
+          },
+          {
+            "episode": 13,
+            "title": "The Old Man and the Key"
+          },
+          {
+            "episode": 14,
+            "title": "Tales from the Public Domain"
+          },
+          {
+            "episode": 15,
+            "title": "Blame It on Lisa"
+          },
+          {
+            "episode": 16,
+            "title": "Weekend at Burnsies"
+          },
+          {
+            "episode": 17,
+            "title": "Gump Roast"
+          },
+          {
+            "episode": 18,
+            "title": "I Am Furious Yellow"
+          },
+          {
+            "episode": 19,
+            "title": "The Sweetest Apu"
+          },
+          {
+            "episode": 20,
+            "title": "Little Girl in the Big Ten"
+          },
+          {
+            "episode": 21,
+            "title": "Frying Game"
+          },
+          {
+            "episode": 22,
+            "title": "Papa's Got a Brand New Badge"
+          }
+        ]
+      },
+      {
+        "season": 14,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Treehouse of Horror XIII"
+          },
+          {
+            "episode": 2,
+            "title": "How I Spent My Strummer Vacation"
+          },
+          {
+            "episode": 3,
+            "title": "Bart vs. Lisa vs. 3rd Grade"
+          },
+          {
+            "episode": 4,
+            "title": "Large Marge"
+          },
+          {
+            "episode": 5,
+            "title": "Helter Shelter"
+          },
+          {
+            "episode": 6,
+            "title": "The Great Louse Detective"
+          },
+          {
+            "episode": 7,
+            "title": "Special Edna (a.k.a. Love and Marking)"
+          },
+          {
+            "episode": 8,
+            "title": "The Dad Who Knew Too Little"
+          },
+          {
+            "episode": 9,
+            "title": "The Strong Arms of the Ma"
+          },
+          {
+            "episode": 10,
+            "title": "Pray Anything"
+          },
+          {
+            "episode": 11,
+            "title": "Barting Over"
+          },
+          {
+            "episode": 12,
+            "title": "I'm Spelling As Fast As I Can"
+          },
+          {
+            "episode": 13,
+            "title": "A Star is Born Again"
+          },
+          {
+            "episode": 14,
+            "title": "Mr. Spritz Goes to Washington"
+          },
+          {
+            "episode": 15,
+            "title": "C. E. D'oh"
+          },
+          {
+            "episode": 16,
+            "title": "'Scuse Me While I Miss the Sky"
+          },
+          {
+            "episode": 17,
+            "title": "Three Gays of the Condo"
+          },
+          {
+            "episode": 18,
+            "title": "Dude, Where's My Ranch?"
+          },
+          {
+            "episode": 19,
+            "title": "Old Yeller-Belly"
+          },
+          {
+            "episode": 20,
+            "title": "Brake My Wife, Please"
+          },
+          {
+            "episode": 21,
+            "title": "The Bart of War"
+          },
+          {
+            "episode": 22,
+            "title": "Moe Baby Blues"
+          }
+        ]
+      },
+      {
+        "season": 15,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Treehouse of Horror XIV"
+          },
+          {
+            "episode": 2,
+            "title": "My Mother the Carjacker"
+          },
+          {
+            "episode": 3,
+            "title": "The President Wore Pearls"
+          },
+          {
+            "episode": 4,
+            "title": "The Regina Monologues"
+          },
+          {
+            "episode": 5,
+            "title": "The Fat and the Furriest"
+          },
+          {
+            "episode": 6,
+            "title": "Today I Am a Klown"
+          },
+          {
+            "episode": 7,
+            "title": "'Tis the Fifteenth Season"
+          },
+          {
+            "episode": 8,
+            "title": "Marge vs. Singles, Seniors, Childless Couples and Teens, and Gays"
+          },
+          {
+            "episode": 9,
+            "title": "I, (Annoyed Grunt)-Bot"
+          },
+          {
+            "episode": 10,
+            "title": "Diatribe of a Mad Housewife"
+          },
+          {
+            "episode": 11,
+            "title": "Margical History Tour"
+          },
+          {
+            "episode": 12,
+            "title": "Milhouse Doesn't Live Here Anymore"
+          },
+          {
+            "episode": 13,
+            "title": "Smart & Smarter"
+          },
+          {
+            "episode": 14,
+            "title": "The Ziff Who Came to Dinner"
+          },
+          {
+            "episode": 15,
+            "title": "Co-Dependent's Day"
+          },
+          {
+            "episode": 16,
+            "title": "Wandering Juvie"
+          },
+          {
+            "episode": 17,
+            "title": "My Big Fat Geek Wedding"
+          },
+          {
+            "episode": 18,
+            "title": "Catch 'Em If You Can"
+          },
+          {
+            "episode": 19,
+            "title": "Simple Simpson"
+          },
+          {
+            "episode": 20,
+            "title": "The Way We Weren't"
+          },
+          {
+            "episode": 21,
+            "title": "Bart-Mangled Banner"
+          },
+          {
+            "episode": 22,
+            "title": "Fraudcast News"
+          }
+        ]
+      },
+      {
+        "season": 16,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Treehouse of Horror XV"
+          },
+          {
+            "episode": 2,
+            "title": "All's Fair in Oven War"
+          },
+          {
+            "episode": 3,
+            "title": "Sleeping with the Enemy"
+          },
+          {
+            "episode": 4,
+            "title": "She Used to Be My Girl"
+          },
+          {
+            "episode": 5,
+            "title": "Fat Man and Little Boy"
+          },
+          {
+            "episode": 6,
+            "title": "Midnight Rx"
+          },
+          {
+            "episode": 7,
+            "title": "Mommie Beerest"
+          },
+          {
+            "episode": 8,
+            "title": "Homer and Ned's Hail Mary Pass"
+          },
+          {
+            "episode": 9,
+            "title": "Pranksta Rap"
+          },
+          {
+            "episode": 10,
+            "title": "There's Something About Marrying"
+          },
+          {
+            "episode": 11,
+            "title": "On a Clear Day I Can't See My Sister"
+          },
+          {
+            "episode": 12,
+            "title": "Goo Goo Gai Pan"
+          },
+          {
+            "episode": 13,
+            "title": "Mobile Homer"
+          },
+          {
+            "episode": 14,
+            "title": "The Seven-Beer Snitch"
+          },
+          {
+            "episode": 15,
+            "title": "Future-Drama"
+          },
+          {
+            "episode": 16,
+            "title": "Don't Fear the Roofer"
+          },
+          {
+            "episode": 17,
+            "title": "The Heartbroke Kid"
+          },
+          {
+            "episode": 18,
+            "title": "A Star is Torn"
+          },
+          {
+            "episode": 19,
+            "title": "Thank God It's Doomsday"
+          },
+          {
+            "episode": 20,
+            "title": "Home Away from Homer"
+          },
+          {
+            "episode": 21,
+            "title": "Father, Son and Holy Guest-Star"
+          }
+        ]
+      },
+      {
+        "season": 17,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Bonfire of the Manatees"
+          },
+          {
+            "episode": 2,
+            "title": "The Girl Who Slept Too Little"
+          },
+          {
+            "episode": 3,
+            "title": "Millhouse Of Sand And Fog"
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XVI"
+          },
+          {
+            "episode": 5,
+            "title": "Marge's Son Poisoning"
+          },
+          {
+            "episode": 6,
+            "title": "See Homer Run"
+          },
+          {
+            "episode": 7,
+            "title": "The Last of the Red Hat Mamas"
+          },
+          {
+            "episode": 8,
+            "title": "The Italian Bob"
+          },
+          {
+            "episode": 9,
+            "title": "Simpsons Christmas Stories"
+          },
+          {
+            "episode": 10,
+            "title": "Homer's Paternity Coot"
+          },
+          {
+            "episode": 11,
+            "title": "We're on the Road to D'oh-where"
+          },
+          {
+            "episode": 12,
+            "title": "My Fair Laddy"
+          },
+          {
+            "episode": 13,
+            "title": "The Seemingly Never-Ending Story"
+          },
+          {
+            "episode": 14,
+            "title": "Bart Has Two Mommies"
+          },
+          {
+            "episode": 15,
+            "title": "Homer Simpson, This is Your Wife"
+          },
+          {
+            "episode": 16,
+            "title": "Million Dollar Abie"
+          },
+          {
+            "episode": 17,
+            "title": "Kiss Kiss Bang Bangalore"
+          },
+          {
+            "episode": 18,
+            "title": "The Wettest Stories Ever Told"
+          },
+          {
+            "episode": 19,
+            "title": "Girls Just Want to Have Sums"
+          },
+          {
+            "episode": 20,
+            "title": "Regarding Margie"
+          },
+          {
+            "episode": 21,
+            "title": "The Monkey Suit"
+          },
+          {
+            "episode": 22,
+            "title": "Marge and Homer Turn a Couple Play"
+          }
+        ]
+      },
+      {
+        "season": 18,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Mook, the Chef, the Wife and Her Homer"
+          },
+          {
+            "episode": 2,
+            "title": "Jazzy and the Pussycats"
+          },
+          {
+            "episode": 3,
+            "title": "Please Homer, Don't Hammer 'em"
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XVII"
+          },
+          {
+            "episode": 5,
+            "title": "GI (Annoyed Grunt)"
+          },
+          {
+            "episode": 6,
+            "title": "Moe 'N' a Lisa"
+          },
+          {
+            "episode": 7,
+            "title": "Ice Cream of Margie (With the Light Blue Hair)"
+          },
+          {
+            "episode": 8,
+            "title": "The Haw-Hawed Couple"
+          },
+          {
+            "episode": 9,
+            "title": "Kill Gil (Parts I & II)"
+          },
+          {
+            "episode": 10,
+            "title": "The Wife Aquatic"
+          },
+          {
+            "episode": 11,
+            "title": "Revenge is a Dish Best Served Three Times"
+          },
+          {
+            "episode": 12,
+            "title": "Little Big Girl"
+          },
+          {
+            "episode": 13,
+            "title": "Springfield Up"
+          },
+          {
+            "episode": 14,
+            "title": "Yokel Chords"
+          },
+          {
+            "episode": 15,
+            "title": "Rome-old and Juli-eh"
+          },
+          {
+            "episode": 16,
+            "title": "Homerazzi"
+          },
+          {
+            "episode": 17,
+            "title": "Marge Gamer"
+          },
+          {
+            "episode": 18,
+            "title": "The Boys of Bummer"
+          },
+          {
+            "episode": 19,
+            "title": "Crook and Ladder"
+          },
+          {
+            "episode": 20,
+            "title": "Stop or My Dog Will Shoot"
+          },
+          {
+            "episode": 21,
+            "title": "24 Minutes"
+          },
+          {
+            "episode": 22,
+            "title": "You Kent Always Say What You Want"
+          }
+        ]
+      },
+      {
+        "season": 19,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "He Loves to Fly and He D'ohs"
+          },
+          {
+            "episode": 2,
+            "title": "Homer of Seville"
+          },
+          {
+            "episode": 3,
+            "title": "Midnight Towboy"
+          },
+          {
+            "episode": 4,
+            "title": "I Don't Wanna Know Why the Caged Bird Sings"
+          },
+          {
+            "episode": 5,
+            "title": "Treehouse of Horror XVIII"
+          },
+          {
+            "episode": 6,
+            "title": "Little Orphan Millie"
+          },
+          {
+            "episode": 7,
+            "title": "Husbands and Knives"
+          },
+          {
+            "episode": 8,
+            "title": "Funeral for a Fiend"
+          },
+          {
+            "episode": 9,
+            "title": "Eternal Moonshine of the Simpson Mind"
+          },
+          {
+            "episode": 10,
+            "title": "E Pluribus Wiggum"
+          },
+          {
+            "episode": 11,
+            "title": "That 90's Show"
+          },
+          {
+            "episode": 12,
+            "title": "Love, Springfieldian Style"
+          },
+          {
+            "episode": 13,
+            "title": "The Debarted"
+          },
+          {
+            "episode": 14,
+            "title": "Dial 'N' for Nerder"
+          },
+          {
+            "episode": 15,
+            "title": "Smoke on the Daughter"
+          },
+          {
+            "episode": 16,
+            "title": "Papa Don't Leech"
+          },
+          {
+            "episode": 17,
+            "title": "Apocalypse Cow"
+          },
+          {
+            "episode": 18,
+            "title": "Any Given Sundance"
+          },
+          {
+            "episode": 19,
+            "title": "Mona Leaves-a"
+          },
+          {
+            "episode": 20,
+            "title": "All About Lisa"
+          }
+        ]
+      },
+      {
+        "season": 20,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Sex, Pies and Idiot Scrapes"
+          },
+          {
+            "episode": 2,
+            "title": "Lost Verizon"
+          },
+          {
+            "episode": 3,
+            "title": "Double, Double, Boy in Trouble"
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XIX"
+          },
+          {
+            "episode": 5,
+            "title": "Dangerous Curves"
+          },
+          {
+            "episode": 6,
+            "title": "Homer and Lisa Exchange Cross Words"
+          },
+          {
+            "episode": 7,
+            "title": "Mypods and Boomsticks"
+          },
+          {
+            "episode": 8,
+            "title": "The Burns and the Bees"
+          },
+          {
+            "episode": 9,
+            "title": "Lisa the Drama Queen"
+          },
+          {
+            "episode": 10,
+            "title": "Take My Life, Please"
+          },
+          {
+            "episode": 11,
+            "title": "How the Test Was Won"
+          },
+          {
+            "episode": 12,
+            "title": "No Loan Again, Naturally"
+          },
+          {
+            "episode": 13,
+            "title": "Gone Maggie Gone"
+          },
+          {
+            "episode": 14,
+            "title": "In the Name of the Grandfather"
+          },
+          {
+            "episode": 15,
+            "title": "Wedding for Disaster"
+          },
+          {
+            "episode": 16,
+            "title": "Eeny Teeny Maya Moe"
+          },
+          {
+            "episode": 17,
+            "title": "The Good, the Sad and the Drugly"
+          },
+          {
+            "episode": 18,
+            "title": "Father Knows Worst"
+          },
+          {
+            "episode": 19,
+            "title": "Waverly Hills, 9021-D'Oh"
+          },
+          {
+            "episode": 20,
+            "title": "Four Great Women and a Manicure"
+          },
+          {
+            "episode": 21,
+            "title": "Coming to Homerica"
+          }
+        ]
+      },
+      {
+        "season": 21,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Homer the Whopper"
+          },
+          {
+            "episode": 2,
+            "title": "Bart Gets a 'Z'"
+          },
+          {
+            "episode": 3,
+            "title": "The Great Wife Hope"
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XX"
+          },
+          {
+            "episode": 5,
+            "title": "The Devil Wears Nada"
+          },
+          {
+            "episode": 6,
+            "title": "Pranks and Greens"
+          },
+          {
+            "episode": 7,
+            "title": "Rednecks and Broomsticks"
+          },
+          {
+            "episode": 8,
+            "title": "O Brother, Where Bart Thou?"
+          },
+          {
+            "episode": 9,
+            "title": "Thursdays with Abie"
+          },
+          {
+            "episode": 10,
+            "title": "Once Upon a Time in Springfield"
+          },
+          {
+            "episode": 11,
+            "title": "Million Dollar Maybe"
+          },
+          {
+            "episode": 12,
+            "title": "Boy Meets Curl"
+          },
+          {
+            "episode": 13,
+            "title": "The Color Yellow"
+          },
+          {
+            "episode": 14,
+            "title": "Postcards from the Wedge"
+          },
+          {
+            "episode": 15,
+            "title": "Stealing First Base"
+          },
+          {
+            "episode": 16,
+            "title": "The Greatest Story Ever Doh'd"
+          },
+          {
+            "episode": 17,
+            "title": "American History X-cellent"
+          },
+          {
+            "episode": 18,
+            "title": "Chief of Hearts"
+          },
+          {
+            "episode": 19,
+            "title": "The Squirt and the Whale"
+          },
+          {
+            "episode": 20,
+            "title": "To Surveil with Love"
+          },
+          {
+            "episode": 21,
+            "title": "Moe Letter Blues"
+          },
+          {
+            "episode": 22,
+            "title": "The Bob Next Door"
+          },
+          {
+            "episode": 23,
+            "title": "Judge Me Tender"
+          }
+        ]
+      },
+      {
+        "season": 22,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Elementary School Musical"
+          },
+          {
+            "episode": 2,
+            "title": "Loan-a-Lisa"
+          },
+          {
+            "episode": 3,
+            "title": "Money Bart"
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XXI"
+          },
+          {
+            "episode": 5,
+            "title": "Lisa Simpson, This Isn't Your Life"
+          },
+          {
+            "episode": 6,
+            "title": "The Fool Monty"
+          },
+          {
+            "episode": 7,
+            "title": "How Munched is That Birdie in the Window"
+          },
+          {
+            "episode": 8,
+            "title": "The Fight Before Christmas"
+          },
+          {
+            "episode": 9,
+            "title": "Donnie Fatso"
+          },
+          {
+            "episode": 10,
+            "title": "Moms I'd Like to Forget"
+          },
+          {
+            "episode": 11,
+            "title": "Flaming Moe"
+          },
+          {
+            "episode": 12,
+            "title": "Homer the Father"
+          },
+          {
+            "episode": 13,
+            "title": "The Blue and the Gray"
+          },
+          {
+            "episode": 14,
+            "title": "Angry Dad: The Movie"
+          },
+          {
+            "episode": 15,
+            "title": "The Scorpion's Tale"
+          },
+          {
+            "episode": 16,
+            "title": "A Midsummer's Nice Dream"
+          },
+          {
+            "episode": 17,
+            "title": "Love is a Many Strangled Thing"
+          },
+          {
+            "episode": 18,
+            "title": "The Great Simpsina"
+          },
+          {
+            "episode": 19,
+            "title": "The Real Housewives of Fat Tony"
+          },
+          {
+            "episode": 20,
+            "title": "Homer Scissorhands"
+          },
+          {
+            "episode": 21,
+            "title": "500 Keys"
+          },
+          {
+            "episode": 22,
+            "title": "The Ned-Liest Catch"
+          }
+        ]
+      },
+      {
+        "season": 23,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Falcon and the D'ohman"
+          },
+          {
+            "episode": 2,
+            "title": "Bart Stops to Smell the Roosevelts"
+          },
+          {
+            "episode": 3,
+            "title": "Treehouse of Horror XXII"
+          },
+          {
+            "episode": 4,
+            "title": "Replaceable You"
+          },
+          {
+            "episode": 5,
+            "title": "The Food Wife"
+          },
+          {
+            "episode": 6,
+            "title": "The Book Job"
+          },
+          {
+            "episode": 7,
+            "title": "The Man in the Blue Flannel Pants"
+          },
+          {
+            "episode": 8,
+            "title": "The Ten-Per-Cent Solution"
+          },
+          {
+            "episode": 9,
+            "title": "Holidays of Future Passed"
+          },
+          {
+            "episode": 10,
+            "title": "Politically Inept, with Homer Simpson"
+          },
+          {
+            "episode": 11,
+            "title": "The D'oh-cial Network"
+          },
+          {
+            "episode": 12,
+            "title": "Moe Goes from Rags to Riches"
+          },
+          {
+            "episode": 13,
+            "title": "The Daughter Also Rises"
+          },
+          {
+            "episode": 14,
+            "title": "At Long Last Leave"
+          },
+          {
+            "episode": 15,
+            "title": "Exit Through the Kwik-E-Mart"
+          },
+          {
+            "episode": 16,
+            "title": "How I Wet Your Mother"
+          },
+          {
+            "episode": 17,
+            "title": "Them, Robot"
+          },
+          {
+            "episode": 18,
+            "title": "Beware My Cheating Bart"
+          },
+          {
+            "episode": 19,
+            "title": "A Totally Fun Thing That Bart Will Never Do Again"
+          },
+          {
+            "episode": 20,
+            "title": "The Spy Who Learned Me"
+          },
+          {
+            "episode": 21,
+            "title": "Ned 'n' Edna's Blend"
+          },
+          {
+            "episode": 22,
+            "title": "Lisa Goes Gaga"
+          }
+        ]
+      },
+      {
+        "season": 24,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Moonshine River"
+          },
+          {
+            "episode": 2,
+            "title": "Treehouse of Horror XXIII"
+          },
+          {
+            "episode": 3,
+            "title": "Adventures in Baby-Getting"
+          },
+          {
+            "episode": 4,
+            "title": "Gone Abie Gone"
+          },
+          {
+            "episode": 5,
+            "title": "Penny-Wiseguys"
+          },
+          {
+            "episode": 6,
+            "title": "A Tree Grows in Springfield"
+          },
+          {
+            "episode": 7,
+            "title": "The Day the Earth Stood Cool"
+          },
+          {
+            "episode": 8,
+            "title": "To Cur with Love"
+          },
+          {
+            "episode": 9,
+            "title": "Homer Goes to Prep School"
+          },
+          {
+            "episode": 10,
+            "title": "A Test Before Trying"
+          },
+          {
+            "episode": 11,
+            "title": "The Changing of the Guardian"
+          },
+          {
+            "episode": 12,
+            "title": "Love is a Many-Splintered Thing"
+          },
+          {
+            "episode": 13,
+            "title": "Hardly Kirk-Ing"
+          },
+          {
+            "episode": 14,
+            "title": "Gorgeous Grampa"
+          },
+          {
+            "episode": 15,
+            "title": "Black-eyed, Please"
+          },
+          {
+            "episode": 16,
+            "title": "Dark Knight Court"
+          },
+          {
+            "episode": 17,
+            "title": "What Animated Women Want"
+          },
+          {
+            "episode": 18,
+            "title": "Pulpit Friction"
+          },
+          {
+            "episode": 19,
+            "title": "Whiskey Business"
+          },
+          {
+            "episode": 20,
+            "title": "The Fabulous Faker Boy"
+          },
+          {
+            "episode": 21,
+            "title": "The Saga of Carl"
+          },
+          {
+            "episode": 22,
+            "title": "Dangers on a Train"
+          }
+        ]
+      },
+      {
+        "season": 25,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Homerland"
+          },
+          {
+            "episode": 2,
+            "title": "Treehouse of Horror XXIV"
+          },
+          {
+            "episode": 3,
+            "title": "Four Regrettings and a Funeral"
+          },
+          {
+            "episode": 4,
+            "title": "YOLO"
+          },
+          {
+            "episode": 5,
+            "title": "Labor Pains"
+          },
+          {
+            "episode": 6,
+            "title": "The Kid is All Right"
+          },
+          {
+            "episode": 7,
+            "title": "Yellow Subterfuge"
+          },
+          {
+            "episode": 8,
+            "title": "White Christmas Blues"
+          },
+          {
+            "episode": 9,
+            "title": "Steal This Episode"
+          },
+          {
+            "episode": 10,
+            "title": "Married to the Blob"
+          },
+          {
+            "episode": 11,
+            "title": "Specs and the City"
+          },
+          {
+            "episode": 12,
+            "title": "Diggs"
+          },
+          {
+            "episode": 13,
+            "title": "The Man Who Grew Too Much"
+          },
+          {
+            "episode": 14,
+            "title": "The Winter of His Content"
+          },
+          {
+            "episode": 15,
+            "title": "The War of Art"
+          },
+          {
+            "episode": 16,
+            "title": "You Don't Have to Live Like a Referee"
+          },
+          {
+            "episode": 17,
+            "title": "Luca$"
+          },
+          {
+            "episode": 18,
+            "title": "Days of Future Future"
+          },
+          {
+            "episode": 19,
+            "title": "What to Expect When Bart's Expecting"
+          },
+          {
+            "episode": 20,
+            "title": "Brick Like Me"
+          },
+          {
+            "episode": 21,
+            "title": "Pay Pal"
+          },
+          {
+            "episode": 22,
+            "title": "The Yellow Badge of Cowardge"
+          }
+        ]
+      },
+      {
+        "season": 26,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Clown in the Dumps"
+          },
+          {
+            "episode": 2,
+            "title": "The Wreck of the Relationship"
+          },
+          {
+            "episode": 3,
+            "title": "Super Franchise Me"
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XXV"
+          },
+          {
+            "episode": 5,
+            "title": "Opposites A-frack"
+          },
+          {
+            "episode": 6,
+            "title": "Simpsorama"
+          },
+          {
+            "episode": 7,
+            "title": "Blazed and Confused"
+          },
+          {
+            "episode": 8,
+            "title": "Covercraft"
+          },
+          {
+            "episode": 9,
+            "title": "I Won't Be Home for Christmas"
+          },
+          {
+            "episode": 10,
+            "title": "The Man Who Came to Be Dinner"
+          },
+          {
+            "episode": 11,
+            "title": "Bart's New Friend"
+          },
+          {
+            "episode": 12,
+            "title": "The Musk Who Fell to Earth"
+          },
+          {
+            "episode": 13,
+            "title": "Walking Big & Tall"
+          },
+          {
+            "episode": 14,
+            "title": "My Fare Lady"
+          },
+          {
+            "episode": 15,
+            "title": "The Princess Guide"
+          },
+          {
+            "episode": 16,
+            "title": "Sky Police"
+          },
+          {
+            "episode": 17,
+            "title": "Waiting for Duffman"
+          },
+          {
+            "episode": 18,
+            "title": "Peeping Mom"
+          },
+          {
+            "episode": 19,
+            "title": "The Kids Are All Fight"
+          },
+          {
+            "episode": 20,
+            "title": "Let's Go Fly a Coot"
+          },
+          {
+            "episode": 21,
+            "title": "Bull-E"
+          },
+          {
+            "episode": 22,
+            "title": "Mathlete's Feat"
+          }
+        ]
+      },
+      {
+        "season": 27,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Every Man's Dream"
+          },
+          {
+            "episode": 2,
+            "title": "Cue Detective"
+          },
+          {
+            "episode": 3,
+            "title": "Puffless"
+          },
+          {
+            "episode": 4,
+            "title": "Halloween of Horror"
+          },
+          {
+            "episode": 5,
+            "title": "Treehouse of Horror XXVI"
+          },
+          {
+            "episode": 6,
+            "title": "Friend with Benefit"
+          },
+          {
+            "episode": 7,
+            "title": "Lisa with an 'S'"
+          },
+          {
+            "episode": 8,
+            "title": "Paths of Glory"
+          },
+          {
+            "episode": 9,
+            "title": "Barthood"
+          },
+          {
+            "episode": 10,
+            "title": "The Girl Code"
+          },
+          {
+            "episode": 11,
+            "title": "Teenage Mutant Milk-caused Hurdles"
+          },
+          {
+            "episode": 12,
+            "title": "Much Apu About Something"
+          },
+          {
+            "episode": 13,
+            "title": "Love is in the N2-O2-Ar-CO2-Ne-He-CH4"
+          },
+          {
+            "episode": 14,
+            "title": "Gal of Constant Sorrow"
+          },
+          {
+            "episode": 15,
+            "title": "Lisa the Veterinarian"
+          },
+          {
+            "episode": 16,
+            "title": "The Marge-ian Chronicles"
+          },
+          {
+            "episode": 17,
+            "title": "The Burns Cage"
+          },
+          {
+            "episode": 18,
+            "title": "How Lisa Got Her Marge Back"
+          },
+          {
+            "episode": 19,
+            "title": "Fland Canyon"
+          },
+          {
+            "episode": 20,
+            "title": "To Courier with Love"
+          },
+          {
+            "episode": 21,
+            "title": "Simprovised"
+          },
+          {
+            "episode": 22,
+            "title": "Orange is the New Yellow"
+          }
+        ]
+      },
+      {
+        "season": 28,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Monty Burns' Fleeing Circus"
+          },
+          {
+            "episode": 2,
+            "title": "Friends and Family"
+          },
+          {
+            "episode": 3,
+            "title": "The Town"
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XXVII"
+          },
+          {
+            "episode": 5,
+            "title": "Trust But Clarify"
+          },
+          {
+            "episode": 6,
+            "title": "There Will Be Buds"
+          },
+          {
+            "episode": 7,
+            "title": "Havana Wild Weekend"
+          },
+          {
+            "episode": 8,
+            "title": "Dad Behavior"
+          },
+          {
+            "episode": 9,
+            "title": "The Last Traction Hero"
+          },
+          {
+            "episode": 10,
+            "title": "The Nightmare After Krustmas"
+          },
+          {
+            "episode": 11,
+            "title": "Pork & Burns"
+          },
+          {
+            "episode": 12,
+            "title": "The Great Phatsby, Part One"
+          },
+          {
+            "episode": 13,
+            "title": "The Great Phatsby, Part Two"
+          },
+          {
+            "episode": 14,
+            "title": "Fatzcarraldo"
+          },
+          {
+            "episode": 15,
+            "title": "The Cad and the Hat"
+          },
+          {
+            "episode": 16,
+            "title": "Kamp Krustier"
+          },
+          {
+            "episode": 17,
+            "title": "22 for 30"
+          },
+          {
+            "episode": 18,
+            "title": "A Father's Watch"
+          },
+          {
+            "episode": 19,
+            "title": "Caper Chase"
+          },
+          {
+            "episode": 20,
+            "title": "Looking for Mr. Goodbart"
+          },
+          {
+            "episode": 21,
+            "title": "Moho House"
+          },
+          {
+            "episode": 22,
+            "title": "Dogtown"
+          }
+        ]
+      },
+      {
+        "season": 29,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Serfsons"
+          },
+          {
+            "episode": 2,
+            "title": "Springfield Splendor"
+          },
+          {
+            "episode": 3,
+            "title": "Whistler's Father"
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XXVIII"
+          },
+          {
+            "episode": 5,
+            "title": "Grampy Can Ya Hear Me"
+          },
+          {
+            "episode": 6,
+            "title": "The Old Blue Mayor She Ain't What She Used to Be"
+          },
+          {
+            "episode": 7,
+            "title": "Singin' in the Lane"
+          },
+          {
+            "episode": 8,
+            "title": "Mr. Lisa's Opus"
+          },
+          {
+            "episode": 9,
+            "title": "Gone Boy"
+          },
+          {
+            "episode": 10,
+            "title": "Haw-Haw Land"
+          },
+          {
+            "episode": 11,
+            "title": "Frink Gets Testy"
+          },
+          {
+            "episode": 12,
+            "title": "Homer is Where the Art Isn't"
+          },
+          {
+            "episode": 13,
+            "title": "3 Scenes Plus a Tag from a Marriage"
+          },
+          {
+            "episode": 14,
+            "title": "Fears of a Clown"
+          },
+          {
+            "episode": 15,
+            "title": "No Good Read Goes Unpunished"
+          },
+          {
+            "episode": 16,
+            "title": "King Leer"
+          },
+          {
+            "episode": 17,
+            "title": "Lisa Gets the Blues"
+          },
+          {
+            "episode": 18,
+            "title": "Forgive and Regret"
+          },
+          {
+            "episode": 19,
+            "title": "Left Behind"
+          },
+          {
+            "episode": 20,
+            "title": "Throw Grampa from the Dane"
+          },
+          {
+            "episode": 21,
+            "title": "Flanders' Ladder"
+          }
+        ]
+      },
+      {
+        "season": 30,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Bart's Not Dead"
+          },
+          {
+            "episode": 2,
+            "title": "Heartbreak Hotel"
+          },
+          {
+            "episode": 3,
+            "title": "My Way or the Highway to Heaven"
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XXIX"
+          },
+          {
+            "episode": 5,
+            "title": "Baby You Can't Drive My Car"
+          },
+          {
+            "episode": 6,
+            "title": "From Russia Without Love"
+          },
+          {
+            "episode": 7,
+            "title": "Werking Mom"
+          },
+          {
+            "episode": 8,
+            "title": "Krusty the Clown"
+          },
+          {
+            "episode": 9,
+            "title": "Daddicus Finch"
+          },
+          {
+            "episode": 10,
+            "title": "'Tis the 30th Season"
+          },
+          {
+            "episode": 11,
+            "title": "Mad About the Toy"
+          },
+          {
+            "episode": 12,
+            "title": "The Girl on the Bus"
+          },
+          {
+            "episode": 13,
+            "title": "I'm Dancing as Fat as I Can"
+          },
+          {
+            "episode": 14,
+            "title": "The Clown Stays in the Picture"
+          },
+          {
+            "episode": 15,
+            "title": "101 Mitigations"
+          },
+          {
+            "episode": 16,
+            "title": "I Want You (She's So Heavy)"
+          },
+          {
+            "episode": 17,
+            "title": "E My Sports"
+          },
+          {
+            "episode": 18,
+            "title": "Bart vs. Itchy & Scratchy"
+          },
+          {
+            "episode": 19,
+            "title": "Girl's in the Band"
+          },
+          {
+            "episode": 20,
+            "title": "I'm Just a Girl Who Can't Say D'oh"
+          },
+          {
+            "episode": 21,
+            "title": "D'oh Canada"
+          },
+          {
+            "episode": 22,
+            "title": "Woo-Hoo Dunnit"
+          },
+          {
+            "episode": 23,
+            "title": "Crystal Blue-Haired Persuasion"
+          }
+        ]
+      },
+      {
+        "season": 31,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Winter of Our Monetized Content"
+          },
+          {
+            "episode": 2,
+            "title": "Go Big or Go Homer"
+          },
+          {
+            "episode": 3,
+            "title": "The Fat Blue Line"
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XXX"
+          },
+          {
+            "episode": 5,
+            "title": "Gorillas on the Mast"
+          },
+          {
+            "episode": 6,
+            "title": "Marge the Lumberjill"
+          },
+          {
+            "episode": 7,
+            "title": "Livin La Pura Vida"
+          },
+          {
+            "episode": 8,
+            "title": "Thanksgiving of Horror"
+          },
+          {
+            "episode": 9,
+            "title": "Todd, Todd, Why Hast Thou Forsaken Me?"
+          },
+          {
+            "episode": 10,
+            "title": "Bobby, It's Cold Outside"
+          },
+          {
+            "episode": 11,
+            "title": "Hail to the Teeth"
+          },
+          {
+            "episode": 12,
+            "title": "The Miseducation of Lisa Simpson"
+          },
+          {
+            "episode": 13,
+            "title": "Frinkcoin"
+          },
+          {
+            "episode": 14,
+            "title": "Bart the Bad Guy"
+          },
+          {
+            "episode": 15,
+            "title": "Screenless"
+          },
+          {
+            "episode": 16,
+            "title": "Better Off Ned"
+          },
+          {
+            "episode": 17,
+            "title": "Highway to Well"
+          },
+          {
+            "episode": 18,
+            "title": "The Incredible Lightness of Being a Baby"
+          },
+          {
+            "episode": 19,
+            "title": "Warrin' Priests"
+          },
+          {
+            "episode": 20,
+            "title": "Warrin' Priests Part Two"
+          },
+          {
+            "episode": 21,
+            "title": "The Hateful Eight-Year-Olds"
+          },
+          {
+            "episode": 22,
+            "title": "The Way of the Dog"
+          }
+        ]
+      },
+      {
+        "season": 32,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Undercover Burns"
+          },
+          {
+            "episode": 2,
+            "title": "I, Carumbus"
+          },
+          {
+            "episode": 3,
+            "title": "Now Museum, Now You Don't"
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XXXI"
+          },
+          {
+            "episode": 5,
+            "title": "The 7 Beer Itch"
+          },
+          {
+            "episode": 6,
+            "title": "Podcast News"
+          },
+          {
+            "episode": 7,
+            "title": "Three Dreams Denied"
+          },
+          {
+            "episode": 8,
+            "title": "The Road To Cincinnati"
+          },
+          {
+            "episode": 9,
+            "title": "Sorry Not Sorry"
+          },
+          {
+            "episode": 10,
+            "title": "A Springfield Summer Christmas for Christmas"
+          },
+          {
+            "episode": 11,
+            "title": "The Dad-Feelings Limited"
+          },
+          {
+            "episode": 12,
+            "title": "Diary Queen"
+          },
+          {
+            "episode": 13,
+            "title": "Wad Goals"
+          },
+          {
+            "episode": 14,
+            "title": "Yokel Hero"
+          },
+          {
+            "episode": 15,
+            "title": "Do PizzaBots Dream of Electric Guitars?"
+          },
+          {
+            "episode": 16,
+            "title": "Manger Things"
+          },
+          {
+            "episode": 17,
+            "title": "Uncut Femmes"
+          },
+          {
+            "episode": 18,
+            "title": "Burger Kings"
+          },
+          {
+            "episode": 19,
+            "title": "Panic On The Streets Of Springfield"
+          },
+          {
+            "episode": 20,
+            "title": "Mother and Child Reunion"
+          },
+          {
+            "episode": 21,
+            "title": "The Man from G.R.A.M.P.A."
+          },
+          {
+            "episode": 22,
+            "title": "The Last Barfighter"
+          }
+        ]
+      },
+      {
+        "season": 33,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Star of the Backstage"
+          },
+          {
+            "episode": 2,
+            "title": "Bart's in Jail"
+          },
+          {
+            "episode": 3,
+            "title": "Treehouse of Horror XXXII"
+          },
+          {
+            "episode": 4,
+            "title": "The Wayz We Were"
+          },
+          {
+            "episode": 5,
+            "title": "Lisa's Belly"
+          },
+          {
+            "episode": 6,
+            "title": "A Serious Flanders Part One"
+          },
+          {
+            "episode": 7,
+            "title": "A Serious Flanders Part Two"
+          },
+          {
+            "episode": 8,
+            "title": "Portrait of a Lackey on Fire"
+          },
+          {
+            "episode": 9,
+            "title": "Mothers and Other Strangers"
+          },
+          {
+            "episode": 10,
+            "title": "A Made Maggie"
+          },
+          {
+            "episode": 11,
+            "title": "The Longest Marge"
+          },
+          {
+            "episode": 12,
+            "title": "Pixelated and Afraid"
+          },
+          {
+            "episode": 13,
+            "title": "Boyz N The Highlands"
+          },
+          {
+            "episode": 14,
+            "title": "You Won't Believe What This Episode is About - Act Three Will Shock You!"
+          },
+          {
+            "episode": 15,
+            "title": "Bart the Cool Kid"
+          },
+          {
+            "episode": 16,
+            "title": "Pretty Whittle Liar"
+          },
+          {
+            "episode": 17,
+            "title": "The Sound of Bleeding Gums"
+          },
+          {
+            "episode": 18,
+            "title": "My Octopus and a Teacher"
+          },
+          {
+            "episode": 19,
+            "title": "Girls Just Shauna Have Fun"
+          },
+          {
+            "episode": 20,
+            "title": "Marge the Meanie"
+          },
+          {
+            "episode": 21,
+            "title": "Meat Is Murder"
+          },
+          {
+            "episode": 22,
+            "title": "Poorhouse Rock"
+          }
+        ]
+      },
+      {
+        "season": 34,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Habeas Tortoise"
+          },
+          {
+            "episode": 2,
+            "title": "One Angry Lisa"
+          },
+          {
+            "episode": 3,
+            "title": "Lisa the Boy Scout"
+          },
+          {
+            "episode": 4,
+            "title": "The King of Nice"
+          },
+          {
+            "episode": 5,
+            "title": "Treehouse of Horror Presents Not It"
+          },
+          {
+            "episode": 6,
+            "title": "Treehouse of Horror XXXIII"
+          },
+          {
+            "episode": 7,
+            "title": "From Beer to Paternity"
+          },
+          {
+            "episode": 8,
+            "title": "Step Brother from the Same Planet"
+          },
+          {
+            "episode": 9,
+            "title": "When Nelson Met Lisa"
+          },
+          {
+            "episode": 10,
+            "title": "Game Done Changed"
+          },
+          {
+            "episode": 11,
+            "title": "Top Goon"
+          },
+          {
+            "episode": 12,
+            "title": "My Life as a Vlog"
+          },
+          {
+            "episode": 13,
+            "title": "The Many Saints of Springfield"
+          },
+          {
+            "episode": 14,
+            "title": "Carl Carlson Rides Again"
+          },
+          {
+            "episode": 15,
+            "title": "Bartless"
+          },
+          {
+            "episode": 16,
+            "title": "Hostile Kirk Place"
+          },
+          {
+            "episode": 17,
+            "title": "Pin Gal"
+          },
+          {
+            "episode": 18,
+            "title": "Fan-ily Feud"
+          },
+          {
+            "episode": 19,
+            "title": "Write Off This Episode"
+          },
+          {
+            "episode": 20,
+            "title": "The Very Hungry Caterpillars"
+          },
+          {
+            "episode": 21,
+            "title": "Clown V. Board of Education"
+          },
+          {
+            "episode": 22,
+            "title": "Homer's Adventures Through the Windshield Glass"
+          }
+        ]
+      },
+      {
+        "season": 35,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Homer's Crossing"
+          },
+          {
+            "episode": 2,
+            "title": "A Mid-Childhood Night's Dream"
+          },
+          {
+            "episode": 3,
+            "title": "McMansion & Wife"
+          },
+          {
+            "episode": 4,
+            "title": "Thirst Trap: A Corporate Love Story"
+          },
+          {
+            "episode": 5,
+            "title": "Treehouse of Horror XXXIV"
+          },
+          {
+            "episode": 6,
+            "title": "Iron Marge"
+          },
+          {
+            "episode": 7,
+            "title": "It's a Blunderful Life"
+          },
+          {
+            "episode": 8,
+            "title": "Ae Bonny Romance"
+          },
+          {
+            "episode": 9,
+            "title": "Murder, She Boat"
+          },
+          {
+            "episode": 10,
+            "title": "Do The Wrong Thing"
+          },
+          {
+            "episode": 11,
+            "title": "Frinkenstein's Monster"
+          },
+          {
+            "episode": 12,
+            "title": "Lisa Gets an F1"
+          },
+          {
+            "episode": 13,
+            "title": "Clan of the Cave Mom"
+          },
+          {
+            "episode": 14,
+            "title": "Night of the Living Wage"
+          },
+          {
+            "episode": 15,
+            "title": "Cremains of the Day"
+          },
+          {
+            "episode": 16,
+            "title": "The Tell-Tale Pants"
+          },
+          {
+            "episode": 17,
+            "title": "The Tipping Point"
+          },
+          {
+            "episode": 18,
+            "title": "Bart's Brain"
+          }
+        ]
+      },
+      {
+        "season": 36,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Bart's Birthday"
+          },
+          {
+            "episode": 2,
+            "title": "The Yellow Lotus"
+          },
+          {
+            "episode": 3,
+            "title": "Desperately Seeking Lisa"
+          },
+          {
+            "episode": 4,
+            "title": "Shoddy Heat"
+          },
+          {
+            "episode": 5,
+            "title": "Treehouse of Horror XXXV"
+          },
+          {
+            "episode": 6,
+            "title": "Women in Shorts"
+          },
+          {
+            "episode": 7,
+            "title": "Treehouse of Horror Presents: Simpsons Wicked This Way Comes"
+          },
+          {
+            "episode": 8,
+            "title": "Convenience Airways"
+          },
+          {
+            "episode": 9,
+            "title": "Homer and Her Sisters"
+          },
+          {
+            "episode": 10,
+            "title": "The Man Who Flew Too Much"
+          },
+          {
+            "episode": 11,
+            "title": "Bottle Episode"
+          },
+          {
+            "episode": 12,
+            "title": "The Flandshees of Innersimpson"
+          },
+          {
+            "episode": 13,
+            "title": "The Last Man Expanding"
+          },
+          {
+            "episode": 14,
+            "title": "P.S. I Hate You"
+          },
+          {
+            "episode": 15,
+            "title": "Abe League of Their Moe"
+          },
+          {
+            "episode": 16,
+            "title": "Stew Lies"
+          },
+          {
+            "episode": 17,
+            "title": "Full Heart, Empty Pool"
+          },
+          {
+            "episode": 18,
+            "title": "Estranger Things"
+          }
+        ]
+      },
+      {
+        "season": 37,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Thrifty Ways to Thieve Your Mother"
+          },
+          {
+            "episode": 2,
+            "title": "Keep Chalm and Gary On"
+          },
+          {
+            "episode": 3,
+            "title": "Treehouse of Horror XXXVI"
+          },
+          {
+            "episode": 4,
+            "title": "Men Behaving Manly"
+          },
+          {
+            "episode": 5,
+            "title": "Bad Boys... For Life?"
+          },
+          {
+            "episode": 6,
+            "title": "Bart 'N' Frink"
+          },
+          {
+            "episode": 7,
+            "title": "Sashes to Sashes"
+          },
+          {
+            "episode": 8,
+            "title": "The Day of the Jack-up"
+          },
+          {
+            "episode": 9,
+            "title": "Aunt Misbehavin'"
+          },
+          {
+            "episode": 10,
+            "title": "Guess Who's Coming to Skinner"
+          },
+          {
+            "episode": 11,
+            "title": "Parahormonal Activity"
+          },
+          {
+            "episode": 12,
+            "title": "¡The Fall Guy-Yi-Yi!"
+          },
+          {
+            "episode": 13,
+            "title": "Seperance"
+          },
+          {
+            "episode": 14,
+            "title": "Irrational Treasure"
+          },
+          {
+            "episode": 15,
+            "title": "Homer? A Cracker Bro?"
+          }
+        ]
+      },
+      {
+        "season": 38,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Children's Book Job"
+          }
+        ]
+      }
+    ]
+  },
    {
     title: "Lanterns",
     type: "TV Show",
