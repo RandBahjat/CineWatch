@@ -48002,7 +48002,7 @@ window._SERIES_DATA = [
     genres: [
       "Action",
       "Animation",
-      ""
+      "Horror",
       "Sci-Fi"
       
     ],
