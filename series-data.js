@@ -48009,7 +48009,7 @@ window._SERIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wWwTjKER5a8LRUGHrw86VU0gUy1.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/uPHXbrh9jlq2XgfjjTFlkJfgtOQ.jpg",
     videoUrl: "110642",
-    overview: "Peter Parker already Spider-Man one year, save lives, fight villain, but still young, still learn how be hero. Nick Fury offer him chance train become real hero, The Ultimate Spider-Man. Peter learn must team up with four other teen hero, fight evil together",
+    overview: "Leon Kennedy find evidence of cyber-terror plot inside White House, Claire Redfield investigate mysterious outbreak at refugee camp near US-Mexico border. Two thread tangle, expose deep conspiracy tied to bioweapon research.",
     director: "Stan Lee, Steve Ditko",
     cast: [
       "Drake Bell, Ogie Banks, Chi McBride, Clark Gregg, Tom Kenny, J. K. Simmons"
