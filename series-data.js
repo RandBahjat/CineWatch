@@ -19912,7 +19912,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 5,
-            title: 'School of Hard Knocks'
+            title: 'Stand Still Like the Hummingbird'
           },
           {
             episode: 6,
