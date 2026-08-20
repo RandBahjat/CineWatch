@@ -48023,7 +48023,7 @@ window._SERIES_DATA = [
         episodes: [
           { episode: 1, title: "Episode 1.1" },
           { episode: 2, title: "Episode 1.2" },
-          { episode: 3, title: "Episode " },
+          { episode: 3, title: "Episode 1.3" },
           { episode: 4, title: "Venom" },
 
         ]
