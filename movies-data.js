@@ -10315,7 +10315,7 @@ window._MOVIES_DATA = [
     overview: "Young Clark Kent arrive Metropolis, work at Daily Planet, learn wield new power, become Superman. Team up with Lois Lane, face early threat Lobo, Parasite, figure out what kind of hero he want be.",
     director: "Makoto Kamiya",
     cast: [
-      "Matthew Mercer (Leon Kennedy), Laura Bailey (Ada Wong), Roger Craig Smith (Chris Redfield), Courtenay Taylor (Svetlana Belikova)"
+      "Darren Criss (Superman), Alexandra Daddario (Lois Lane), Zachary Quinto (Lex Luthor), Ike Amadi (John Henry Irons), Nyambi Nyambi (J'onn J'onzz)"
     ],
     trending: false,
     featured: false,
