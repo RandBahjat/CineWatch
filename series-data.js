@@ -2424,6 +2424,62 @@ window._SERIES_DATA = [
             episode: 7,
             title: "The Big Heat"
           },
+  {
+    title: "The Batman",
+    type: "TV Show",
+    year: 2004,
+    rating: 7.4,
+    age: "TV-Y4",
+    duration: "22m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Kids"
+    ],
+    poster: "https://image.tmdb.org/t/p/original/t5mbrd79o89pYB8OQ4QPFNkIRPm.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/wKXpV8QgNXtJ4OQyzqDy82SsURm.jpg",
+    videoUrl: "2022",
+    overview: "A young Bruce Wayne fights crime and evil in Gotham City as the mysterious vigilante, the Batman. This animated series follows his early crimefighting years — from a solo detective battling classic villains like the Joker, Penguin, and Mr. Freeze, to eventually building the Bat-Family with Robin and Batgirl, and forming ties with the wider DC Universe.",
+    director: "Michael Goguen, Duane Capizzi",
+    cast: [
+      "Rino Romano, Alastair Duncan, Evan Sabara, Danielle Judovits, Kevin Michael Richardson, Ming-Na Wen, Mitch Pileggi"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Bat in the Belfry"
+          },
+          {
+            episode: 2,
+            title: "Call of the Cobblepot"
+          },
+          {
+            episode: 3,
+            title: "Traction"
+          },
+          {
+            episode: 4,
+            title: "The Man Who Would Be Bat"
+          },
+          {
+            episode: 5,
+            title: "The Big Chill"
+          },
+          {
+            episode: 6,
+            title: "The Cat and the Bat'"
+          },
+          {
+            episode: 7,
+            title: "The Big Heat"
+          },
           {
             episode: 8,
             title: "Q & A"
