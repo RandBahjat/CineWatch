@@ -10220,7 +10220,7 @@ window._MOVIES_DATA = [
     seasons: []
   }
   {
-    title: "The Matrix Resurrections",
+    title: "Resident Evil: Death Island",
     type: "Movie",
     year: 2021,
     rating: 5.6,
