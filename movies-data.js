@@ -10238,7 +10238,7 @@ window._MOVIES_DATA = [
     overview: "When Umbrella zombie virus outbreak hit downtown San Francisco, world's top B.O.W. expert Rebecca Chambers, Leon Kennedy, Claire Redfield, Jill Valentine, Chris Redfield team up, uncover source of infection, stop threat before spread wider.",
     director: "Eiichiro Hasumi",
     cast: [
-      "Keanu Reeves, Carrie-Anne Moss, Yahya Abdul-Mateen II, Jessica Henwick, Jonathan Groff"
+      "Nick Apostolides (Leon Kennedy), Stephanie Panisello (Claire Redfield), Erica Mendez (Rebecca Chambers), Matthew Mercer (Chris Redfield), Kate Higgins (Jill Valentine)"
     ],
     trending: false,
     featured: false,
