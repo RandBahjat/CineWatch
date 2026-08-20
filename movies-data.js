@@ -10362,7 +10362,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/y0uxSHaSFmt6XaBJgjkeLqe7aM.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/fsUF7k9oH9HNJx5LfSg5HNhxb2m.jpg",
     videoUrl: "487670",
-    overview: "Superman poisoned with lethal dose of solar radiation while save crew of sun-probe ship, given only short time left live. Face own mortality, tackle final list of heroic task, protect Earth, Lois Lane before power fade for good.",
+    overview: "Monstrous creature call Doomsday wake, tear path of destruction toward Metropolis. Justice League try stop him, fail one by one, leave Superman alone to face final battle, give everything protect city he love.",
     director: "Sam Liu",
     cast: [
       "James Denton (Superman), Christina Hendricks (Lois Lane), Anthony LaPaglia (Lex Luthor), Ed Asner (Perry White), Frances Conroy (Ma Kent)"
