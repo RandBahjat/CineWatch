@@ -48000,8 +48000,8 @@ window._SERIES_DATA = [
     age: "TV-MA",
     duration: "26m",
     genres: [
-      "Animation",
       "Action",
+      "Animation",
       "Sci-Fi"
       
     ],
