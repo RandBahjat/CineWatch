@@ -10322,6 +10322,31 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Superman: Man of Tomorrow",
+    type: "Movie",
+    year: 2020,
+    rating: 6.5,
+    age: "PG-13",
+    duration: "1h 26m",
+    genres: [
+      "Action",
+      "Animation",
+      "Sci-Fi"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/n9GtiJiBETVFayQy7YnVdF9AucU.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/gBpxdg0TrDul9O2MzsN7BmNOLyY.jpg",
+    videoUrl: "618354",
+    overview: "Young Clark Kent arrive Metropolis, work at Daily Planet, learn wield new power, become Superman. Team up with Lois Lane, face early threat Lobo, Parasite, figure out what kind of hero he want be.",
+    director: "Chris Palmer",
+    cast: [
+      "Darren Criss (Superman), Alexandra Daddario (Lois Lane), Zachary Quinto (Lex Luthor), Ike Amadi (John Henry Irons), Nyambi Nyambi (J'onn J'onzz)"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
