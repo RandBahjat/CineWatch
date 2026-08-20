@@ -48006,7 +48006,7 @@ window._SERIES_DATA = [
       "Sci-Fi"
       
     ],
-    poster: "https://image.tmdb.org/t/p/original/p276PkRJ5Wexq91DA5RkbxTYMDn.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wWwTjKER5a8LRUGHrw86VU0gUy1.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/gXeCzYmCRBlpbbhhKrYM1ZpIDAA.jpg",
     videoUrl: "34391",
     overview: "Peter Parker already Spider-Man one year, save lives, fight villain, but still young, still learn how be hero. Nick Fury offer him chance train become real hero, The Ultimate Spider-Man. Peter learn must team up with four other teen hero, fight evil together",
