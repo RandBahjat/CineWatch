@@ -10300,7 +10300,7 @@ window._MOVIES_DATA = [
   {
     title: "Superman: Man of Tomorrow",
     type: "Movie",
-    year: 2012,
+    year: 2020,
     rating: 6.4,
     age: "R",
     duration: "1h 40m",
