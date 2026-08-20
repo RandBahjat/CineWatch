@@ -2424,6 +2424,10 @@ window._SERIES_DATA = [
             episode: 7,
             title: "The Big Heat"
           },
+        ]
+      }
+    ]
+  },
   {
     title: "The Batman",
     type: "TV Show",
