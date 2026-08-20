@@ -48875,7 +48875,7 @@ window._SERIES_DATA = [
       'Comedy',
       'Family'
     ],
-    poster: 'https://image.tmdb.org/t/p/w600_and_h900_face/vHILt9y8YjWkQk0Y620X2e1f06x.jpg',
+    poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/uWpG7GqfKGQqX4YMAo3nv5OrglV.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/r0Q6eeN9L1DgQ9pL4HBRXyYc522.jpg',
     videoUrl: '456',
     overview: 'Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands.',
