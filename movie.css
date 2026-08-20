@@ -5263,16 +5263,16 @@ input:-webkit-autofill:active {
   .details-overview-large {
     font-size: 0.9rem !important;
     line-height: 1.45 !important;
-    color: #d1d5db !important;
+@media (max-width: 768px) {
+  .account-side-panel {
+    width: 100%;
+    height: 100dvh;
   }
+}
 
-  .season-controls {
-    flex-wrap: wrap !important;
-    justify-content: flex-start !important;
-  }
-  
-  .custom-select-wrapper {
-    flex: 1 1 calc(50% - 0.4rem) !important;
+/* ==========================================
+   CIRCULAR WATCHLIST BUTTON (Details Modal)
+   ========================================== */
 .watchlist-wrapper {
   position: relative;
   display: inline-block;
