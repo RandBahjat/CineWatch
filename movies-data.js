@@ -10373,9 +10373,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "The Death of Superman",
+    title: "Teen Titans: The Judas Contract",
     type: "Movie",
-    year: 2018,
+    year: 2017,
     rating: 7.3,
     age: "PG-13",
     duration: "1h 21m",
