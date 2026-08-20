@@ -10312,7 +10312,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/n9GtiJiBETVFayQy7YnVdF9AucU.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/gBpxdg0TrDul9O2MzsN7BmNOLyY.jpg",
     videoUrl: "618354",
-    overview: "Leon Kennedy sent into war-torn Eastern European nation, investigate use of B.O.W. in civil conflict. Uncover conspiracy tied to old enemy, must stop bioweapon before turn tide of war.",
+    overview: "Young Clark Kent arrive Metropolis, work at Daily Planet, learn wield new power, become Superman. Team up with Lois Lane, face early threat Lobo, Parasite, figure out what kind of hero he want be.",
     director: "Makoto Kamiya",
     cast: [
       "Matthew Mercer (Leon Kennedy), Laura Bailey (Ada Wong), Roger Craig Smith (Chris Redfield), Courtenay Taylor (Svetlana Belikova)"
