@@ -4263,6 +4263,12 @@ select {
   margin-bottom: 2.5rem;
 }
 
+.browse-grid .movie-card {
+  flex: none;
+  width: 100%;
+  min-width: 0;
+}
+
 .browse-card {
   position: relative;
   border-radius: var(--radius-lg);
