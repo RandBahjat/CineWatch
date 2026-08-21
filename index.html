@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_2974">
+    <link rel="stylesheet" href="movie.css?v=20260816_2975">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_3032" defer></script>
-    <script src="movies-data.js?v=20260818_907"></script>
-    <script src="series-data.js?v=20260818_907"></script>
-    <script src="movie.js?v=20260818_908" defer></script>
+    <script src="api.js?v=20260816_3033" defer></script>
+    <script src="movies-data.js?v=20260818_908"></script>
+    <script src="series-data.js?v=20260818_908"></script>
+    <script src="movie.js?v=20260818_909" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -27,7 +27,7 @@
     <!-- Loading Splash Screen -->
     <div class="app-loader" id="appLoader">
         <div class="loader-content">
-            <div class="loader-logo"><ion-icon name="ticket" style="color: var(--primary); font-size: 1.3em; vertical-align: middle;"></ion-icon> Cine<span>Watch</span></div>
+            <div class="loader-logo notranslate" translate="no"><ion-icon name="ticket" style="color: var(--primary); font-size: 1.3em; vertical-align: middle;"></ion-icon> Cine<span>Watch</span></div>
             <div class="loader-spinner">
                 <div class="spinner-ring"></div>
                 <div class="spinner-ring"></div>
@@ -47,7 +47,7 @@
                 <!-- Logo: hidden on mobile (shown in slide-out menu instead) -->
                 <a href="#" class="brand-logo" id="logoBtn">
                     <span class="logo-icon"><ion-icon name="ticket" style="color: var(--primary); font-size: 1.3em;"></ion-icon></span>
-                    <span class="logo-text">Cine<span class="logo-accent">Watch</span></span>
+                    <span class="logo-text notranslate" translate="no">Cine<span class="logo-accent">Watch</span></span>
                 </a>
                 <nav class="nav-links">
                     <a href="#" class="nav-link active" data-view="home"><ion-icon name="home-outline"></ion-icon> Home</a>
@@ -134,7 +134,7 @@
             <div class="mobile-menu-header">
                 <a href="#" class="brand-logo mobile-menu-logo">
                     <span class="logo-icon"><ion-icon name="ticket" style="color: var(--primary); font-size: 1.3em;"></ion-icon></span>
-                    <span class="logo-text">Cine<span class="logo-accent">Watch</span></span>
+                    <span class="logo-text notranslate" translate="no">Cine<span class="logo-accent">Watch</span></span>
                 </a>
                 <button class="mobile-menu-close" id="mobileMenuCloseBtn" onclick="document.getElementById('mobileMenuOverlay').classList.remove('active'); document.body.style.overflow='';">&times;</button>
             </div>
@@ -500,7 +500,7 @@
     <footer id="homeFooter" class="site-footer" style="margin-top: 4rem; width: 100%;">
         <div class="footer-container">
             <div class="footer-brand">
-                <div class="footer-logo">Cine<span class="text-primary">Watch</span></div>
+                <div class="footer-logo notranslate" translate="no">Cine<span class="text-primary">Watch</span></div>
                 <p class="footer-desc">Your ultimate destination for movies and TV series. Stream anytime, anywhere. 100% safe and secure.</p>
             </div>
             <div class="footer-links">
