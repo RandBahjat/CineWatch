@@ -384,6 +384,22 @@ function setupHeroBanner() {
   const heroTrack = document.getElementById("heroTrack");
   if (!heroTrack) return;
 
+  // Extract current language for manual button translations
+  const cookies = document.cookie.split(';');
+  let currentLang = 'en';
+  for (let c of cookies) {
+      if (c.trim().startsWith('googtrans=')) {
+          const val = c.split('=')[1];
+          const parts = val.split('/');
+          if (parts.length > 2) currentLang = parts[2];
+          break;
+      }
+  }
+  const isSorani = currentLang === 'ckb';
+  const isKurmanji = currentLang === 'ku';
+  const playText = isSorani ? 'لێدان' : (isKurmanji ? 'Lîstin' : 'Play');
+  const moreText = isSorani ? 'زیاتر ببینە' : (isKurmanji ? 'Zêdetir Bibîne' : 'See More');
+
   // Generate ALL slides dynamically from featured array
   heroTrack.innerHTML = featured.map((movie, idx) => {
     const backdropUrl = movie.backdrop || movie.poster || "";
@@ -404,11 +420,11 @@ function setupHeroBanner() {
             </div>
             <p class="hero-overview">${movie.overview}</p>
             <div class="hero-actions">
-                <button class="btn-hero-play" onclick="openVideoPlayer('${movie.id}')">
-                    <ion-icon name="play" style="font-size: 1.15em; vertical-align: -1px; margin-right: 4px;"></ion-icon> Play
+                <button class="btn-hero-play notranslate" translate="no" onclick="openVideoPlayer('${movie.id}')">
+                    <ion-icon name="play" style="font-size: 1.15em; vertical-align: -1px; margin-right: 4px;"></ion-icon> ${playText}
                 </button>
-                <button class="btn-hero-more" onclick="openDetailsModal('${movie.id}')">
-                    <ion-icon name="information-circle-outline" style="font-size: 1.25em; vertical-align: -2px; margin-right: 4px;"></ion-icon> See More
+                <button class="btn-hero-more notranslate" translate="no" onclick="openDetailsModal('${movie.id}')">
+                    <ion-icon name="information-circle-outline" style="font-size: 1.25em; vertical-align: -2px; margin-right: 4px;"></ion-icon> ${moreText}
                 </button>
             </div>
         </div>
