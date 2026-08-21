@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_2993">
+    <link rel="stylesheet" href="movie.css?v=20260816_2994">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_3051" defer></script>
-    <script src="movies-data.js?v=20260818_926"></script>
-    <script src="series-data.js?v=20260818_926"></script>
-    <script src="movie.js?v=20260818_927" defer></script>
+    <script src="api.js?v=20260816_3052" defer></script>
+    <script src="movies-data.js?v=20260818_927"></script>
+    <script src="series-data.js?v=20260818_927"></script>
+    <script src="movie.js?v=20260818_928" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -234,12 +234,12 @@
 
                 <!-- Director List -->
                 <div class="details-cast-list hidden" id="detailsDirectorContainer">
-                    <span class="cast-label">Director:</span>
+                    <span class="cast-label notranslate" translate="no" id="labelDirector">Director:</span>
                     <span id="detailsDirectorText" class="cast-text"></span>
                 </div>
                 <!-- Cast List -->
                 <div class="details-cast-list hidden" id="detailsCastContainer">
-                    <span class="cast-label">Cast:</span>
+                    <span class="cast-label notranslate" translate="no" id="labelCast">Cast:</span>
                     <span id="detailsCastText" class="cast-text"></span>
                 </div>
             </div>
@@ -1065,6 +1065,9 @@
             const signupPwInput = document.getElementById('signupPassword');
             const signupEmailInput = document.getElementById('signupEmail');
             
+            const labelDirector = document.getElementById('labelDirector');
+            const labelCast = document.getElementById('labelCast');
+            
             if (currentLang === 'ckb') {
                 if (loginPwLabel) loginPwLabel.textContent = 'وشەی نهێنی';
                 if (signupPwLabel) signupPwLabel.textContent = 'وشەی نهێنی';
@@ -1074,6 +1077,8 @@
                 if (loginPwInput) loginPwInput.placeholder = 'وشەی نهێنی';
                 if (signupPwInput) signupPwInput.placeholder = 'وشەی نهێنی';
                 if (signupEmailInput) signupEmailInput.placeholder = 'ئیمەیڵ';
+                if (labelDirector) labelDirector.textContent = 'دەرهێنەر:';
+                if (labelCast) labelCast.textContent = 'ئەکتەرەکان:';
             } else if (currentLang === 'ar') {
                 if (loginPwLabel) loginPwLabel.textContent = 'كلمة المرور';
                 if (signupPwLabel) signupPwLabel.textContent = 'كلمة المرور';
@@ -1083,6 +1088,8 @@
                 if (loginPwInput) loginPwInput.placeholder = 'كلمة المرور';
                 if (signupPwInput) signupPwInput.placeholder = 'كلمة المرور';
                 if (signupEmailInput) signupEmailInput.placeholder = 'البريد الإلكتروني';
+                if (labelDirector) labelDirector.textContent = 'المخرج:';
+                if (labelCast) labelCast.textContent = 'طاقم العمل:';
             } else if (currentLang === 'ku') {
                 if (loginPwLabel) loginPwLabel.textContent = 'Şîfre';
                 if (signupPwLabel) signupPwLabel.textContent = 'Şîfre';
@@ -1092,6 +1099,8 @@
                 if (loginPwInput) loginPwInput.placeholder = 'Şîfre';
                 if (signupPwInput) signupPwInput.placeholder = 'Şîfre';
                 if (signupEmailInput) signupEmailInput.placeholder = 'Navnîşana E-nameyê';
+                if (labelDirector) labelDirector.textContent = 'Derhêner:';
+                if (labelCast) labelCast.textContent = 'Lîstikvan:';
             } else {
                 if (loginPwLabel) loginPwLabel.textContent = 'Password';
                 if (signupPwLabel) signupPwLabel.textContent = 'Password';
@@ -1101,6 +1110,8 @@
                 if (loginPwInput) loginPwInput.placeholder = '••••••••';
                 if (signupPwInput) signupPwInput.placeholder = 'Password';
                 if (signupEmailInput) signupEmailInput.placeholder = 'Email';
+                if (labelDirector) labelDirector.textContent = 'Director:';
+                if (labelCast) labelCast.textContent = 'Cast:';
             }
 
             // Setup Custom Dropdown
