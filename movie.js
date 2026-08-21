@@ -1019,6 +1019,23 @@ function renderSeriesSection() {
 // ==========================================
 
 function switchView(viewName) {
+  // Prevent Translation Flicker: hide content briefly while Google Translate parses the new elements
+  const mainContent = document.getElementById("mainContent");
+  if (mainContent) {
+    const cookies = document.cookie;
+    if (cookies.includes('googtrans=') && !cookies.includes('googtrans=/en/en')) {
+      mainContent.style.opacity = '0';
+      mainContent.style.transition = 'none';
+      setTimeout(() => {
+        mainContent.style.transition = 'opacity 0.3s ease';
+        mainContent.style.opacity = '1';
+        setTimeout(() => {
+          mainContent.style.transition = '';
+        }, 300);
+      }, 150); // Give translation engine 150ms to translate before fading back in
+    }
+  }
+
   state.activeView = viewName;
   const navLinks = document.querySelectorAll(".nav-link");
   navLinks.forEach((link) => {
