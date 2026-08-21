@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_2946">
+    <link rel="stylesheet" href="movie.css?v=20260816_2947">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_3004" defer></script>
-    <script src="movies-data.js?v=20260818_879"></script>
-    <script src="series-data.js?v=20260818_879"></script>
-    <script src="movie.js?v=20260818_880" defer></script>
+    <script src="api.js?v=20260816_3005" defer></script>
+    <script src="movies-data.js?v=20260818_880"></script>
+    <script src="series-data.js?v=20260818_880"></script>
+    <script src="movie.js?v=20260818_881" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -340,14 +340,21 @@
                 <!-- Genre Filter Bar -->
                 <div class="browse-filter-bar" id="moviesFilterBar">
                     <button class="browse-filter-btn active" data-genre="all" data-section="movies">All</button>
+                    <button class="browse-filter-btn" data-genre="Action" data-section="movies">Action</button>
+                    <button class="browse-filter-btn" data-genre="Adventure" data-section="movies">Adventure</button>
+                    <button class="browse-filter-btn" data-genre="Animation" data-section="movies">Animation</button>
                     <button class="browse-filter-btn" data-genre="Comedy" data-section="movies">Comedy</button>
                     <button class="browse-filter-btn" data-genre="Crime" data-section="movies">Crime</button>
+                    <button class="browse-filter-btn" data-genre="Drama" data-section="movies">Drama</button>
                     <button class="browse-filter-btn" data-genre="Family" data-section="movies">Family</button>
                     <button class="browse-filter-btn" data-genre="Kids" data-section="movies">Kids</button>
                     <button class="browse-filter-btn" data-genre="History" data-section="movies">History</button>
                     <button class="browse-filter-btn" data-genre="Fantasy" data-section="movies">Fantasy</button>
+                    <button class="browse-filter-btn" data-genre="Horror" data-section="movies">Horror</button>
                     <button class="browse-filter-btn" data-genre="Mystery" data-section="movies">Mystery</button>
                     <button class="browse-filter-btn" data-genre="Romance" data-section="movies">Romance</button>
+                    <button class="browse-filter-btn" data-genre="Sci-Fi" data-section="movies">Sci-Fi</button>
+                    <button class="browse-filter-btn" data-genre="Science-Fiction" data-section="movies">Science Fiction</button>
                     <button class="browse-filter-btn" data-genre="Thriller" data-section="movies">Thriller</button>
                     <button class="browse-filter-btn" data-genre="War" data-section="movies">War</button>
                 </div>
@@ -372,14 +379,21 @@
                 <!-- Genre Filter Bar -->
                 <div class="browse-filter-bar" id="seriesFilterBar">
                     <button class="browse-filter-btn active" data-genre="all" data-section="series">All</button>
+                    <button class="browse-filter-btn" data-genre="Action" data-section="series">Action</button>
+                    <button class="browse-filter-btn" data-genre="Adventure" data-section="series">Adventure</button>
+                    <button class="browse-filter-btn" data-genre="Animation" data-section="series">Animation</button>
                     <button class="browse-filter-btn" data-genre="Comedy" data-section="series">Comedy</button>
                     <button class="browse-filter-btn" data-genre="Crime" data-section="series">Crime</button>
+                    <button class="browse-filter-btn" data-genre="Drama" data-section="series">Drama</button>
                     <button class="browse-filter-btn" data-genre="Family" data-section="series">Family</button>
                     <button class="browse-filter-btn" data-genre="Kids" data-section="series">Kids</button>
                     <button class="browse-filter-btn" data-genre="History" data-section="series">History</button>
                     <button class="browse-filter-btn" data-genre="Fantasy" data-section="series">Fantasy</button>
+                    <button class="browse-filter-btn" data-genre="Horror" data-section="series">Horror</button>
                     <button class="browse-filter-btn" data-genre="Mystery" data-section="series">Mystery</button>
                     <button class="browse-filter-btn" data-genre="Romance" data-section="series">Romance</button>
+                    <button class="browse-filter-btn" data-genre="Sci-Fi" data-section="series">Sci-Fi</button>
+                    <button class="browse-filter-btn" data-genre="Science-Fiction" data-section="series">Science Fiction</button>
                     <button class="browse-filter-btn" data-genre="Thriller" data-section="series">Thriller</button>
                     <button class="browse-filter-btn" data-genre="War" data-section="series">War</button>
                 </div>
