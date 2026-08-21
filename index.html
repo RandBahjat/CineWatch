@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_2987">
+    <link rel="stylesheet" href="movie.css?v=20260816_2988">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_3045" defer></script>
-    <script src="movies-data.js?v=20260818_920"></script>
-    <script src="series-data.js?v=20260818_920"></script>
-    <script src="movie.js?v=20260818_921" defer></script>
+    <script src="api.js?v=20260816_3046" defer></script>
+    <script src="movies-data.js?v=20260818_921"></script>
+    <script src="series-data.js?v=20260818_921"></script>
+    <script src="movie.js?v=20260818_922" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -660,7 +660,7 @@
 
             <div class="auth-modal-body">
                 <div class="auth-header">
-                    <div class="auth-logo"><ion-icon name="ticket" style="color: var(--primary); font-size: 1.3em; vertical-align: middle;"></ion-icon> CineWatch</div>
+                    <div class="auth-logo notranslate" translate="no"><ion-icon name="ticket" style="color: var(--primary); font-size: 1.3em; vertical-align: middle;"></ion-icon> CineWatch</div>
                     <p class="auth-subtitle">Welcome to your personal cinema universe</p>
                 </div>
 
@@ -1059,30 +1059,46 @@
             const textTabSignup = document.getElementById('textTabSignup');
             const textBtnSignup = document.getElementById('textBtnSignup');
             
+            const loginPwInput = document.getElementById('loginPassword');
+            const signupPwInput = document.getElementById('signupPassword');
+            const signupEmailInput = document.getElementById('signupEmail');
+            
             if (currentLang === 'ckb') {
                 if (loginPwLabel) loginPwLabel.textContent = 'وشەی نهێنی';
                 if (signupPwLabel) signupPwLabel.textContent = 'وشەی نهێنی';
                 if (signupEmailLabel) signupEmailLabel.textContent = 'ئیمەیڵ';
                 if (textTabSignup) textTabSignup.textContent = 'دروستکردنی هەژمار';
                 if (textBtnSignup) textBtnSignup.textContent = 'دروستکردنی هەژمار';
+                if (loginPwInput) loginPwInput.placeholder = 'وشەی نهێنی';
+                if (signupPwInput) signupPwInput.placeholder = 'وشەی نهێنی';
+                if (signupEmailInput) signupEmailInput.placeholder = 'ئیمەیڵ';
             } else if (currentLang === 'ar') {
                 if (loginPwLabel) loginPwLabel.textContent = 'كلمة المرور';
                 if (signupPwLabel) signupPwLabel.textContent = 'كلمة المرور';
                 if (signupEmailLabel) signupEmailLabel.textContent = 'البريد الإلكتروني';
                 if (textTabSignup) textTabSignup.textContent = 'إنشاء حساب';
                 if (textBtnSignup) textBtnSignup.textContent = 'إنشاء حساب';
+                if (loginPwInput) loginPwInput.placeholder = 'كلمة المرور';
+                if (signupPwInput) signupPwInput.placeholder = 'كلمة المرور';
+                if (signupEmailInput) signupEmailInput.placeholder = 'البريد الإلكتروني';
             } else if (currentLang === 'ku') {
                 if (loginPwLabel) loginPwLabel.textContent = 'Şîfre';
                 if (signupPwLabel) signupPwLabel.textContent = 'Şîfre';
                 if (signupEmailLabel) signupEmailLabel.textContent = 'Navnîşana E-nameyê';
                 if (textTabSignup) textTabSignup.textContent = 'Hesab Çêbikin';
                 if (textBtnSignup) textBtnSignup.textContent = 'Hesab Çêbikin';
+                if (loginPwInput) loginPwInput.placeholder = 'Şîfre';
+                if (signupPwInput) signupPwInput.placeholder = 'Şîfre';
+                if (signupEmailInput) signupEmailInput.placeholder = 'Navnîşana E-nameyê';
             } else {
                 if (loginPwLabel) loginPwLabel.textContent = 'Password';
                 if (signupPwLabel) signupPwLabel.textContent = 'Password';
                 if (signupEmailLabel) signupEmailLabel.textContent = 'Email Address';
                 if (textTabSignup) textTabSignup.textContent = 'Create Account';
                 if (textBtnSignup) textBtnSignup.textContent = 'Create Account';
+                if (loginPwInput) loginPwInput.placeholder = '••••••••';
+                if (signupPwInput) signupPwInput.placeholder = 'Password';
+                if (signupEmailInput) signupEmailInput.placeholder = 'Email';
             }
 
             // Setup Custom Dropdown
