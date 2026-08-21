@@ -563,6 +563,7 @@ function createMovieCardHTML(movie) {
 
 function renderCarousels() {
   const shelfMap = {
+    trendingTrack: MOVIES.filter((m) => m.trending).sort((a, b) => TRENDING_TITLES.indexOf(a.title) - TRENDING_TITLES.indexOf(b.title)),
     trendingMoviesTrack: MOVIES.filter((m) => m.trending && m.type !== "TV Show").sort((a, b) => TRENDING_TITLES.indexOf(a.title) - TRENDING_TITLES.indexOf(b.title)),
     trendingSeriesTrack: MOVIES.filter((m) => m.trending && m.type === "TV Show").sort((a, b) => TRENDING_TITLES.indexOf(a.title) - TRENDING_TITLES.indexOf(b.title)),
   };
