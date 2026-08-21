@@ -40,7 +40,7 @@ window._MOVIES_DATA = [
       "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/7iwUUcKURMT7aKfCwMy6YnGtchD.jpg",
+    backdrop: "spider-man-brand-7680x4320-26949",
     videoUrl: "969681",
     overview: "Peter Parker fight crime full-time as Spider-Man in world that no longer remember him, pressure of watching old friend move on without him spark change he not sure he can control. Transformation might be only thing that can stop shocking new threat to city, and those he love — powerful villain no one can even see",
     director: "Destin Daniel Cretton",
