@@ -2242,6 +2242,11 @@ select {
   transition: var(--transition-fast);
 }
 
+.auth-tab:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
 .auth-tab.active {
   background: var(--primary);
   color: #fff;
