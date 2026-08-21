@@ -550,7 +550,7 @@ function createMovieCardHTML(movie) {
         </div>
       </div>
       <div class="card-details">
-        <h4 class="card-title">${movie.title}</h4>
+        <h4 class="card-title notranslate" translate="no">${movie.title}</h4>
         <div class="card-meta">
           <span class="card-rating">⭐ ${movie.rating}</span>
           <span class="card-year">${movie.year}</span>
@@ -1565,7 +1565,7 @@ function openDetailsModal(movieId) {
           </div>
           <div class="episode-row-info">
             <div class="ep-row-top">
-              <span class="ep-row-title">${ep.title}</span>
+              <span class="ep-row-title notranslate" translate="no">${ep.title}</span>
               ${duration ? `<span class="ep-row-duration">${duration}</span>` : ""}
             </div>
             ${overview ? `<p class="ep-row-overview">${overview}</p>` : ""}
@@ -2707,7 +2707,7 @@ function bindEventListeners() {
             <div class="search-item" data-id="${m.id}" style="animation-delay: ${i * 60}ms">
               <img src="${m.poster}" alt="${m.title}" style="animation-delay: ${i * 60 + 80}ms">
               <div class="search-item-info">
-                <div class="search-item-title">${m.title}</div>
+                <div class="search-item-title notranslate" translate="no">${m.title}</div>
                 <div class="search-item-meta">⭐ ${m.rating} • ${m.year} • ${m.genres.join(", ")}</div>
               </div>
             </div>
