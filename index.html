@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_2991">
+    <link rel="stylesheet" href="movie.css?v=20260816_2992">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_3049" defer></script>
-    <script src="movies-data.js?v=20260818_924"></script>
-    <script src="series-data.js?v=20260818_924"></script>
-    <script src="movie.js?v=20260818_925" defer></script>
+    <script src="api.js?v=20260816_3050" defer></script>
+    <script src="movies-data.js?v=20260818_925"></script>
+    <script src="series-data.js?v=20260818_925"></script>
+    <script src="movie.js?v=20260818_926" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -941,13 +941,15 @@
             position: absolute;
             top: calc(100% + 8px);
             right: 0;
-            background: var(--surface);
-            border: 1px solid var(--border-color);
+            background: rgba(15, 15, 20, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 12px;
             padding: 6px;
             width: max-content;
             min-width: 120px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.8);
             opacity: 0;
             visibility: hidden;
             transform: translateY(-15px) scale(0.95);
