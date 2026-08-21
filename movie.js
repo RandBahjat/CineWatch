@@ -525,7 +525,11 @@ function updateHeroBanner() {
   if (!heroTrack) return;
 
   heroTrack.style.transition = "transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)";
-  heroTrack.style.transform = `translateX(-${state.currentHeroIndex * 100}%)`;
+  
+  // Handle RTL layout direction for Sorani
+  const isRtl = document.body.style.direction === 'rtl' || document.body.classList.contains('rtl-layout');
+  const directionSign = isRtl ? 1 : -1;
+  heroTrack.style.transform = `translateX(${directionSign * state.currentHeroIndex * 100}%)`;
 
   // Update dots
   document.querySelectorAll("#heroDots .dot").forEach((dot, i) => {
