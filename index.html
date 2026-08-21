@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_2984">
+    <link rel="stylesheet" href="movie.css?v=20260816_2985">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_3042" defer></script>
-    <script src="movies-data.js?v=20260818_917"></script>
-    <script src="series-data.js?v=20260818_917"></script>
-    <script src="movie.js?v=20260818_918" defer></script>
+    <script src="api.js?v=20260816_3043" defer></script>
+    <script src="movies-data.js?v=20260818_918"></script>
+    <script src="series-data.js?v=20260818_918"></script>
+    <script src="movie.js?v=20260818_919" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -683,7 +683,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="loginPassword">Password</label>
+                        <label for="loginPassword" class="notranslate" translate="no">Password</label>
                         <div class="input-with-icon">
                             <ion-icon name="lock-closed-outline"></ion-icon>
                             <input type="password" id="loginPassword" class="form-control" placeholder="••••••••" autocomplete="current-password" required>
@@ -1050,6 +1050,20 @@
                 const style = document.createElement('style');
                 style.innerHTML = 'html, body { direction: ltr !important; }';
                 document.head.appendChild(style);
+            }
+            
+            // Manual translation for Login Password Label
+            const loginPwLabel = document.querySelector('label[for="loginPassword"]');
+            if (loginPwLabel) {
+                if (currentLang === 'ckb') {
+                    loginPwLabel.textContent = 'وشەی نهێنی';
+                } else if (currentLang === 'ar') {
+                    loginPwLabel.textContent = 'كلمة المرور';
+                } else if (currentLang === 'ku') {
+                    loginPwLabel.textContent = 'Şîfre';
+                } else {
+                    loginPwLabel.textContent = 'Password';
+                }
             }
 
             // Setup Custom Dropdown
