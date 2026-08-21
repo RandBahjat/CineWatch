@@ -1335,21 +1335,21 @@ function renderUserBadge() {
 
         const cancelBtn = document.getElementById("cancelUsernameBtn");
         if (cancelBtn) {
-          cancelBtn.onclick = () => renderUserProfile();
+          cancelBtn.onclick = () => renderUserBadge();
         }
 
         const saveBtn = document.getElementById("saveUsernameBtn");
         if (saveBtn) {
           saveBtn.onclick = async () => {
-            const newName = document.getElementById("usernameInput")?.value.trim();
-            if (!newName) { showToast("Username cannot be empty."); return; }
-            state.user.name = newName;
-            saveUser(state.user);
-            // Update in Firebase if available
-            if (window.CW_API?.updateProfile) {
-              await window.CW_API.updateProfile({ displayName: newName }).catch(() => { });
+            const newName = input.value.trim();
+            if (newName && newName !== currentName) {
+              state.user.name = newName;
+              saveUser(state.user);
+              if (window.CW_API) {
+                await window.CW_API.updateProfile({ displayName: newName }).catch(() => { });
+              }
             }
-            renderUserProfile();
+            renderUserBadge();
             showToast("Username updated!");
           };
         }
