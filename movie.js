@@ -564,11 +564,6 @@ function createMovieCardHTML(movie) {
 function renderCarousels() {
   const shelfMap = {
     trendingTrack: MOVIES.filter((m) => m.trending).sort((a, b) => TRENDING_TITLES.indexOf(a.title) - TRENDING_TITLES.indexOf(b.title)),
-    scifiTrack: MOVIES.filter((m) => m.genres.includes("Sci-Fi") || m.genres.includes("Science-Fiction")).slice(0, 15),
-    actionTrack: MOVIES.filter((m) => m.genres.includes("Action")).slice(0, 15),
-    animeTrack: MOVIES.filter((m) => m.genres.includes("Animation") || m.genres.includes("Anime")).slice(0, 15),
-    horrorTrack: MOVIES.filter((m) => m.genres.includes("Horror")).slice(0, 15),
-    dramaTrack: MOVIES.filter((m) => m.genres.includes("Drama")).slice(0, 15),
   };
 
   Object.keys(shelfMap).forEach((trackId) => {
