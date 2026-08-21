@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_2986">
+    <link rel="stylesheet" href="movie.css?v=20260816_2987">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_3044" defer></script>
-    <script src="movies-data.js?v=20260818_919"></script>
-    <script src="series-data.js?v=20260818_919"></script>
-    <script src="movie.js?v=20260818_920" defer></script>
+    <script src="api.js?v=20260816_3045" defer></script>
+    <script src="movies-data.js?v=20260818_920"></script>
+    <script src="series-data.js?v=20260818_920"></script>
+    <script src="movie.js?v=20260818_921" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -728,7 +728,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="signupEmail">Email Address</label>
+                        <label for="signupEmail" class="notranslate" translate="no">Email Address</label>
                         <div class="input-with-icon">
                             <ion-icon name="mail-outline"></ion-icon>
                             <input type="email" id="signupEmail" class="form-control" placeholder="Email" autocomplete="email" required>
@@ -737,7 +737,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="signupPassword">Password</label>
+                        <label for="signupPassword" class="notranslate" translate="no">Password</label>
                         <div class="input-with-icon">
                             <ion-icon name="lock-closed-outline"></ion-icon>
                             <input type="password" id="signupPassword" class="form-control" placeholder="Password" autocomplete="new-password" required>
@@ -1054,23 +1054,33 @@
             
             // Manual translation for Login Password Label
             const loginPwLabel = document.querySelector('label[for="loginPassword"]');
+            const signupPwLabel = document.querySelector('label[for="signupPassword"]');
+            const signupEmailLabel = document.querySelector('label[for="signupEmail"]');
             const textTabSignup = document.getElementById('textTabSignup');
             const textBtnSignup = document.getElementById('textBtnSignup');
             
             if (currentLang === 'ckb') {
                 if (loginPwLabel) loginPwLabel.textContent = 'وشەی نهێنی';
+                if (signupPwLabel) signupPwLabel.textContent = 'وشەی نهێنی';
+                if (signupEmailLabel) signupEmailLabel.textContent = 'ئیمەیڵ';
                 if (textTabSignup) textTabSignup.textContent = 'دروستکردنی هەژمار';
                 if (textBtnSignup) textBtnSignup.textContent = 'دروستکردنی هەژمار';
             } else if (currentLang === 'ar') {
                 if (loginPwLabel) loginPwLabel.textContent = 'كلمة المرور';
+                if (signupPwLabel) signupPwLabel.textContent = 'كلمة المرور';
+                if (signupEmailLabel) signupEmailLabel.textContent = 'البريد الإلكتروني';
                 if (textTabSignup) textTabSignup.textContent = 'إنشاء حساب';
                 if (textBtnSignup) textBtnSignup.textContent = 'إنشاء حساب';
             } else if (currentLang === 'ku') {
                 if (loginPwLabel) loginPwLabel.textContent = 'Şîfre';
+                if (signupPwLabel) signupPwLabel.textContent = 'Şîfre';
+                if (signupEmailLabel) signupEmailLabel.textContent = 'Navnîşana E-nameyê';
                 if (textTabSignup) textTabSignup.textContent = 'Hesab Çêbikin';
                 if (textBtnSignup) textBtnSignup.textContent = 'Hesab Çêbikin';
             } else {
                 if (loginPwLabel) loginPwLabel.textContent = 'Password';
+                if (signupPwLabel) signupPwLabel.textContent = 'Password';
+                if (signupEmailLabel) signupEmailLabel.textContent = 'Email Address';
                 if (textTabSignup) textTabSignup.textContent = 'Create Account';
                 if (textBtnSignup) textBtnSignup.textContent = 'Create Account';
             }
