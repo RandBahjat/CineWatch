@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_2980">
+    <link rel="stylesheet" href="movie.css?v=20260816_2981">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_3038" defer></script>
-    <script src="movies-data.js?v=20260818_913"></script>
-    <script src="series-data.js?v=20260818_913"></script>
-    <script src="movie.js?v=20260818_914" defer></script>
+    <script src="api.js?v=20260816_3039" defer></script>
+    <script src="movies-data.js?v=20260818_914"></script>
+    <script src="series-data.js?v=20260818_914"></script>
+    <script src="movie.js?v=20260818_915" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -68,6 +68,7 @@
                     </div>
                     <div class="lang-dropdown-options" id="langDropdownOptions">
                         <div class="lang-option" data-value="en">English</div>
+                        <div class="lang-option" data-value="ar">Arabic</div>
                         <div class="lang-option" data-value="ckb">Sorani</div>
                         <div class="lang-option" data-value="ku">Kurmanji</div>
                     </div>
@@ -995,6 +996,7 @@
         .custom-lang-dropdown.open .lang-option:nth-child(1) { animation-delay: 0.05s; }
         .custom-lang-dropdown.open .lang-option:nth-child(2) { animation-delay: 0.10s; }
         .custom-lang-dropdown.open .lang-option:nth-child(3) { animation-delay: 0.15s; }
+        .custom-lang-dropdown.open .lang-option:nth-child(4) { animation-delay: 0.20s; }
 
         .lang-option:hover {
             background: rgba(255, 255, 255, 0.08);
@@ -1010,7 +1012,7 @@
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
                 pageLanguage: 'en', 
-                includedLanguages: 'ku,ckb,en',
+                includedLanguages: 'ar,ku,ckb,en',
                 autoDisplay: false
             }, 'google_translate_element');
         }
@@ -1039,8 +1041,8 @@
                 }
             }
             
-            // RTL handling for Kurdish dialects (Sorani and Kurmanji)
-            if (currentLang === 'ckb' || currentLang === 'ku') {
+            // RTL handling for Kurdish dialects (Sorani and Kurmanji) and Arabic
+            if (currentLang === 'ckb' || currentLang === 'ku' || currentLang === 'ar') {
                 document.body.style.direction = 'rtl';
                 document.body.classList.add('rtl-layout');
             } else {
