@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_2968">
+    <link rel="stylesheet" href="movie.css?v=20260816_2969">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_3026" defer></script>
-    <script src="movies-data.js?v=20260818_901"></script>
-    <script src="series-data.js?v=20260818_901"></script>
-    <script src="movie.js?v=20260818_902" defer></script>
+    <script src="api.js?v=20260816_3027" defer></script>
+    <script src="movies-data.js?v=20260818_902"></script>
+    <script src="series-data.js?v=20260818_902"></script>
+    <script src="movie.js?v=20260818_903" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -59,6 +59,16 @@
             </div>
 
             <div class="nav-right">
+                <!-- Language Selector -->
+                <div class="lang-selector-wrapper" style="position: relative; margin-right: 0.5rem; display: flex; align-items: center; border: 1px solid var(--border-color); border-radius: 20px; padding: 2px 10px; background: rgba(255,255,255,0.05);">
+                    <ion-icon name="language-outline" style="font-size: 1.1rem; color: var(--text-muted); margin-right: 5px;"></ion-icon>
+                    <select id="langSelect" onchange="changeLanguage(this.value)" style="background: transparent; border: none; color: white; cursor: pointer; font-family: 'Inter', sans-serif; font-size: 0.85rem; font-weight: 500; outline: none; padding-right: 5px;">
+                        <option value="en" style="color: black;">English</option>
+                        <option value="ckb" style="color: black;">Sorani</option>
+                        <option value="ku" style="color: black;">Kurmanji</option>
+                    </select>
+                </div>
+                
                 <!-- Search Icon Button -->
                 <button class="nav-action-btn" id="navSearchBtn" title="Search">
                     <ion-icon name="search-outline"></ion-icon>
@@ -879,7 +889,60 @@
         </div>
     </div>
 
+    <!-- Google Translate Engine -->
+    <div id="google_translate_element" style="display:none;"></div>
+    <style>
+        /* Hide Google Translate Bar and Tooltips */
+        body { top: 0 !important; }
+        .skiptranslate iframe { display: none !important; }
+        #goog-gt-tt { display: none !important; }
+        .goog-text-highlight { background: none !important; box-shadow: none !important; }
+    </style>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en', 
+                includedLanguages: 'ku,ckb,en',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
 
+        function changeLanguage(langCode) {
+            if (langCode === 'en') {
+                document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+                document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + window.location.hostname;
+            } else {
+                document.cookie = "googtrans=/en/" + langCode + "; path=/;";
+                document.cookie = "googtrans=/en/" + langCode + "; path=/; domain=" + window.location.hostname;
+            }
+            window.location.reload();
+        }
+
+        // Initialize select dropdown based on current language
+        document.addEventListener('DOMContentLoaded', () => {
+            const cookies = document.cookie.split(';');
+            let currentLang = 'en';
+            for (let c of cookies) {
+                if (c.trim().startsWith('googtrans=')) {
+                    const val = c.split('=')[1];
+                    const parts = val.split('/');
+                    if (parts.length > 2) currentLang = parts[2];
+                    break;
+                }
+            }
+            const langSelect = document.getElementById('langSelect');
+            if (langSelect && currentLang) {
+                langSelect.value = currentLang;
+            }
+            
+            // RTL handling for Sorani
+            if (currentLang === 'ckb') {
+                document.body.style.direction = 'rtl';
+                document.body.classList.add('rtl-layout');
+            }
+        });
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 
