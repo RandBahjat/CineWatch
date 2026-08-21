@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_2947">
+    <link rel="stylesheet" href="movie.css?v=20260816_2948">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_3005" defer></script>
-    <script src="movies-data.js?v=20260818_880"></script>
-    <script src="series-data.js?v=20260818_880"></script>
-    <script src="movie.js?v=20260818_881" defer></script>
+    <script src="api.js?v=20260816_3006" defer></script>
+    <script src="movies-data.js?v=20260818_881"></script>
+    <script src="series-data.js?v=20260818_881"></script>
+    <script src="movie.js?v=20260818_882" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -411,19 +411,35 @@
 
         <!-- Category Shelves Container -->
         <div id="defaultShelves">
-            <!-- Shelf 1: Trending Now -->
+            <!-- Shelf 1: Trending Movies -->
             <section class="shelf-section">
                 <div class="shelf-header">
                     <div>
-                        <h2 class="shelf-title shelf-title-accent">Trending This Week</h2>
+                        <h2 class="shelf-title shelf-title-accent">Trending Movies This Week</h2>
                         <span class="shelf-subtitle">Most watched movies this week</span>
                     </div>
                     <a href="#" class="shelf-explore nav-link" data-view="movies">Explore All <ion-icon name="chevron-forward-outline"></ion-icon></a>
                 </div>
                 <div class="carousel-wrapper">
-                    <button class="carousel-nav prev" data-target="trendingTrack">‹</button>
-                    <div class="carousel-track" id="trendingTrack"></div>
-                    <button class="carousel-nav next" data-target="trendingTrack">›</button>
+                    <button class="carousel-nav prev" data-target="trendingMoviesTrack">‹</button>
+                    <div class="carousel-track" id="trendingMoviesTrack"></div>
+                    <button class="carousel-nav next" data-target="trendingMoviesTrack">›</button>
+                </div>
+            </section>
+
+            <!-- Shelf 2: Trending Series -->
+            <section class="shelf-section">
+                <div class="shelf-header">
+                    <div>
+                        <h2 class="shelf-title shelf-title-accent">Trending Series This Week</h2>
+                        <span class="shelf-subtitle">Most watched series this week</span>
+                    </div>
+                    <a href="#" class="shelf-explore nav-link" data-view="series">Explore All <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                </div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev" data-target="trendingSeriesTrack">‹</button>
+                    <div class="carousel-track" id="trendingSeriesTrack"></div>
+                    <button class="carousel-nav next" data-target="trendingSeriesTrack">›</button>
                 </div>
             </section>
 
