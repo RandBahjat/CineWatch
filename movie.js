@@ -395,7 +395,7 @@ function setupHeroBanner() {
         <div class="hero-bg-image" ${bgStyle}></div>
         <div class="hero-bg-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title">${movie.title}</h1>
+            <h1 class="hero-title notranslate" translate="no">${movie.title}</h1>
             <div class="hero-meta">
                 <span class="meta-rating"><span class="star-icon">★</span> ${movie.rating}</span>
                 <span class="meta-dot">•</span>
