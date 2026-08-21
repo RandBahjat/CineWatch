@@ -462,7 +462,7 @@ function setupHeroBanner() {
   const onDragMove = (e) => {
     if (!isDragging) return;
     const currentX = e.type.includes("mouse") ? e.pageX : e.touches[0].clientX;
-    const diffX = currentX - startX;
+    let diffX = currentX - startX;
 
     if (Math.abs(diffX) > 6) {
       hasMoved = true;
@@ -470,7 +470,9 @@ function setupHeroBanner() {
 
     if (hasMoved) {
       if (e.cancelable) e.preventDefault(); // Prevent native text/image selection
-      heroTrack.style.transform = `translateX(${currentTranslate + diffX}px)`;
+      const isRTL = document.body.classList.contains("rtl-layout");
+      const effectiveDiffX = isRTL ? -diffX : diffX;
+      heroTrack.style.transform = `translateX(${currentTranslate + effectiveDiffX}px)`;
     }
   };
 
@@ -483,11 +485,14 @@ function setupHeroBanner() {
       ? e.pageX
       : (e.changedTouches && e.changedTouches[0] ? e.changedTouches[0].clientX : startX);
     const diffX = endX - startX;
+    const isRTL = document.body.classList.contains("rtl-layout");
+    const effectiveDiffX = isRTL ? -diffX : diffX;
+    
     const bannerWidth = heroBanner.offsetWidth || window.innerWidth;
     const threshold = Math.min(100, bannerWidth * 0.1);
 
-    if (hasMoved && Math.abs(diffX) > threshold) {
-      if (diffX < 0) {
+    if (hasMoved && Math.abs(effectiveDiffX) > threshold) {
+      if (effectiveDiffX < 0) {
         // Dragged left -> next slide
         state.currentHeroIndex = (state.currentHeroIndex + 1) % featured.length;
       } else {
@@ -2486,7 +2491,12 @@ function bindEventListeners() {
       if (!isDown) return;
       e.preventDefault();
       const x = e.pageX - track.offsetLeft;
-      const walk = (x - startX) * 1.5; // scroll speed multiplier
+      let walk = (x - startX) * 1.5; // scroll speed multiplier
+      
+      if (document.body.classList.contains("rtl-layout")) {
+        walk = -walk; // Invert drag scroll for RTL layouts
+      }
+      
       track.scrollLeft = scrollLeft - walk;
       if (Math.abs(walk) > 5) hasDragged = true;
     });
@@ -2512,7 +2522,12 @@ function bindEventListeners() {
 
     track.addEventListener("touchmove", (e) => {
       const x = e.touches[0].pageX - track.offsetLeft;
-      const walk = (x - touchStartX) * 1.5;
+      let walk = (x - touchStartX) * 1.5;
+      
+      if (document.body.classList.contains("rtl-layout")) {
+        walk = -walk; // Invert drag scroll for RTL layouts
+      }
+      
       track.scrollLeft = touchScrollLeft - walk;
     }, { passive: true });
 
