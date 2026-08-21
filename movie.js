@@ -430,7 +430,10 @@ function setupHeroBanner() {
     hasMoved = false;
     startX = e.type.includes("mouse") ? e.pageX : e.touches[0].clientX;
     const bannerWidth = heroBanner.offsetWidth || window.innerWidth;
-    currentTranslate = -state.currentHeroIndex * bannerWidth;
+    
+    const isRtl = document.body.style.direction === 'rtl' || document.body.classList.contains('rtl-layout');
+    const directionSign = isRtl ? 1 : -1;
+    currentTranslate = directionSign * state.currentHeroIndex * bannerWidth;
 
     heroTrack.style.transition = "none";
     heroBanner.classList.add("is-dragging");
