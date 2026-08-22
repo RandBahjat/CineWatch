@@ -52446,10 +52446,7 @@ window._SERIES_DATA = [
     overview: 'Joe Goldberg, charming bookstore manager, become obsess with woman, use tech, manipulation, sometimes murder, get close to her. Each season new target, same dark pattern, love twist into obsession, obsession twist into violence.',
     director: 'Greg Berlanti, Sera Gamble',
     cast: [
-      'Penn Badgley',
-      'Victoria Pedretti',
-      'Elizabeth Lail',
-      'Ambyr Childers'
+      'Penn Badgley, Elizabeth Lail, Victoria Pedretti, Ambyr Childers, Tati Gabrielle'
     ],
     trending: false,
     featured: false,
