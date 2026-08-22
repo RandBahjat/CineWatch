@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_2999">
+    <link rel="stylesheet" href="movie.css?v=20260816_3001">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_3057" defer></script>
-    <script src="movies-data.js?v=20260818_932"></script>
-    <script src="series-data.js?v=20260818_932"></script>
-    <script src="movie.js?v=20260818_933" defer></script>
+    <script src="api.js?v=20260816_3059" defer></script>
+    <script src="movies-data.js?v=20260818_934"></script>
+    <script src="series-data.js?v=20260818_934"></script>
+    <script src="movie.js?v=20260818_935" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -99,11 +99,11 @@
             <div class="search-modal-header">
                 <h2>Search</h2>
                 <div class="search-header-right" style="position: relative;">
-                    <button class="search-filter-btn" id="searchFilterBtn">Movies & Series <ion-icon name="chevron-down-outline"></ion-icon></button>
+                    <button class="search-filter-btn" id="searchFilterBtn"><span id="filterBtnText" class="notranslate" translate="no">Movies & Series</span> <ion-icon name="chevron-down-outline"></ion-icon></button>
                     <div class="search-filter-dropdown hidden" id="searchFilterDropdown">
-                        <div class="filter-option active" data-filter="all">Movies & Series</div>
-                        <div class="filter-option" data-filter="movie">Movies Only</div>
-                        <div class="filter-option" data-filter="series">Series Only</div>
+                        <div class="filter-option active" data-filter="all"><span id="filterOptAll" class="notranslate" translate="no">Movies & Series</span></div>
+                        <div class="filter-option" data-filter="movie"><span id="filterOptMovie" class="notranslate" translate="no">Movies Only</span></div>
+                        <div class="filter-option" data-filter="series"><span id="filterOptSeries" class="notranslate" translate="no">Series Only</span></div>
                     </div>
                     <button class="search-modal-close" id="searchModalClose">
                         <ion-icon name="close-outline"></ion-icon>
@@ -1070,6 +1070,12 @@
             const navSeries1 = document.getElementById('navSeries1');
             const navSeries2 = document.getElementById('navSeries2');
             
+            // Search filters
+            const filterBtnText = document.getElementById('filterBtnText');
+            const filterOptAll = document.getElementById('filterOptAll');
+            const filterOptMovie = document.getElementById('filterOptMovie');
+            const filterOptSeries = document.getElementById('filterOptSeries');
+            
             if (currentLang === 'ckb') {
                 if (loginPwLabel) loginPwLabel.textContent = 'وشەی نهێنی';
                 if (signupPwLabel) signupPwLabel.textContent = 'وشەی نهێنی';
@@ -1083,6 +1089,10 @@
                 if (labelCast) labelCast.textContent = 'ئەکتەرەکان:';
                 if (navSeries1) navSeries1.textContent = 'زنجیرەکان';
                 if (navSeries2) navSeries2.textContent = 'زنجیرەکان';
+                if (filterBtnText) filterBtnText.textContent = 'فیلم و زنجیرە';
+                if (filterOptAll) filterOptAll.textContent = 'فیلم و زنجیرە';
+                if (filterOptMovie) filterOptMovie.textContent = 'تەنها فیلم';
+                if (filterOptSeries) filterOptSeries.textContent = 'تەنها زنجیرە';
             } else if (currentLang === 'ar') {
                 if (loginPwLabel) loginPwLabel.textContent = 'كلمة المرور';
                 if (signupPwLabel) signupPwLabel.textContent = 'كلمة المرور';
@@ -1096,6 +1106,10 @@
                 if (labelCast) labelCast.textContent = 'طاقم العمل:';
                 if (navSeries1) navSeries1.textContent = 'مسلسلات';
                 if (navSeries2) navSeries2.textContent = 'مسلسلات';
+                if (filterBtnText) filterBtnText.textContent = 'أفلام ومسلسلات';
+                if (filterOptAll) filterOptAll.textContent = 'أفلام ومسلسلات';
+                if (filterOptMovie) filterOptMovie.textContent = 'أفلام فقط';
+                if (filterOptSeries) filterOptSeries.textContent = 'مسلسلات فقط';
             } else if (currentLang === 'ku') {
                 if (loginPwLabel) loginPwLabel.textContent = 'Şîfre';
                 if (signupPwLabel) signupPwLabel.textContent = 'Şîfre';
@@ -1109,6 +1123,10 @@
                 if (labelCast) labelCast.textContent = 'Lîstikvan:';
                 if (navSeries1) navSeries1.textContent = 'Rêzefîlm';
                 if (navSeries2) navSeries2.textContent = 'Rêzefîlm';
+                if (filterBtnText) filterBtnText.textContent = 'Fîlm û Rêzefîlm';
+                if (filterOptAll) filterOptAll.textContent = 'Fîlm û Rêzefîlm';
+                if (filterOptMovie) filterOptMovie.textContent = 'Tenê Fîlm';
+                if (filterOptSeries) filterOptSeries.textContent = 'Tenê Rêzefîlm';
             } else {
                 if (loginPwLabel) loginPwLabel.textContent = 'Password';
                 if (signupPwLabel) signupPwLabel.textContent = 'Password';
@@ -1122,6 +1140,10 @@
                 if (labelCast) labelCast.textContent = 'Cast:';
                 if (navSeries1) navSeries1.textContent = 'Series';
                 if (navSeries2) navSeries2.textContent = 'Series';
+                if (filterBtnText) filterBtnText.textContent = 'Movies & Series';
+                if (filterOptAll) filterOptAll.textContent = 'Movies & Series';
+                if (filterOptMovie) filterOptMovie.textContent = 'Movies Only';
+                if (filterOptSeries) filterOptSeries.textContent = 'Series Only';
             }
 
             // Setup Custom Dropdown
