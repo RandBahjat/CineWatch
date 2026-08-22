@@ -52847,7 +52847,6 @@ window._SERIES_DATA = [
         ]
       }
     ]
-    ]
   },
 
   {
@@ -52870,15 +52869,15 @@ window._SERIES_DATA = [
       {
         season: 1,
         episodes: [
-          { episode: 1, title: "A New Beginning" },
-          { episode: 2, title: "South Texas Heat" },
-          { episode: 3, title: "Shadows of the Past" },
-          { episode: 4, title: "Rivalries" },
-          { episode: 5, title: "The Long Ride" },
-          { episode: 6, title: "Blood and Dirt" },
-          { episode: 7, title: "No Retreat" },
-          { episode: 8, title: "Lines in the Sand" },
-          { episode: 9, title: "Legacy" }
+          { episode: 1, title: "The Untold Want" },
+          { episode: 2, title: "Earn Another Day" },
+          { episode: 3, title: "Act of God Business" },
+          { episode: 4, title: "Start With a Bullet" },
+          { episode: 5, title: "Peaceful Find Peace" },
+          { episode: 6, title: "A Cowboy Saint" },
+          { episode: 7, title: "Den of Sin" },
+          { episode: 8, title: "Whiskey Limits" },
+          { episode: 9, title: "El Padrino" }
         ]
       }
     ]
