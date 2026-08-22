@@ -30,46 +30,46 @@ window._SERIES_DATA = [
       {
         season: 1,
         episodes: [
-          { episode: 1, title: "Freedom Day", duration: "60m" },
-          { episode: 2, title: "Holston's Pick", duration: "50m" },
-          { episode: 3, title: "Machines", duration: "50m" },
-          { episode: 4, title: "Truth", duration: "50m" },
-          { episode: 5, title: "The Janitor's Boy", duration: "50m" },
-          { episode: 6, title: "The Relic", duration: "50m" },
-          { episode: 7, title: "The Flamekeepers", duration: "50m" },
-          { episode: 8, title: "Hanna", duration: "50m" },
-          { episode: 9, title: "The Getaway", duration: "50m" },
-          { episode: 10, title: "Outside", duration: "50m" }
+          { episode: 1, title: "Freedom Day" },
+          { episode: 2, title: "Holston's Pick" },
+          { episode: 3, title: "Machines" },
+          { episode: 4, title: "Truth" },
+          { episode: 5, title: "The Janitor's Boy" },
+          { episode: 6, title: "The Relic" },
+          { episode: 7, title: "The Flamekeepers" },
+          { episode: 8, title: "Hanna" },
+          { episode: 9, title: "The Getaway" },
+          { episode: 10, title: "Outside" }
         ]
       },
       {
         season: 2,
         episodes: [
-          { episode: 1, title: "The Engineer", duration: "50m" },
-          { episode: 2, title: "Order", duration: "50m" },
-          { episode: 3, title: "Solo", duration: "50m" },
-          { episode: 4, title: "The Harmonium", duration: "50m" },
-          { episode: 5, title: "Descent", duration: "50m" },
-          { episode: 6, title: "Barricades", duration: "50m" },
-          { episode: 7, title: "The Dive", duration: "50m" },
-          { episode: 8, title: "The Book of Quinn", duration: "50m" },
-          { episode: 9, title: "The Last Resort", duration: "50m" },
-          { episode: 10, title: "Episode 10", duration: "50m" }
+          { episode: 1, title: "The Engineer" },
+          { episode: 2, title: "Order" },
+          { episode: 3, title: "Solo" },
+          { episode: 4, title: "The Harmonium" },
+          { episode: 5, title: "Descent" },
+          { episode: 6, title: "Barricades" },
+          { episode: 7, title: "The Dive" },
+          { episode: 8, title: "The Book of Quinn" },
+          { episode: 9, title: "The Last Resort" },
+          { episode: 10, title: "Episode 10" }
         ]
       },
       {
         season: 3,
         episodes: [
-          { episode: 1, title: "Who Are You?", duration: "50m" },
-          { episode: 2, title: "It's All Good", duration: "50m" },
-          { episode: 3, title: "A Dark Web", duration: "50m" },
-          { episode: 4, title: "Whatever You Do, Don't Go Home", duration: "50m" },
-          { episode: 5, title: "Memory", duration: "50m" },
-          { episode: 6, title: "The Drive", duration: "50m" },
-          { episode: 7, title: "Radio", duration: "50m" },
-          { episode: 8, title: "Gray Goo", duration: "50m" },
-          { episode: 9, title: "Farewell", duration: "50m" },
-          { episode: 10, title: "Troy", duration: "50m" }
+          { episode: 1, title: "Who Are You?" },
+          { episode: 2, title: "It's All Good" },
+          { episode: 3, title: "A Dark Web" },
+          { episode: 4, title: "Whatever You Do, Don't Go Home" },
+          { episode: 5, title: "Memory" },
+          { episode: 6, title: "The Drive" },
+          { episode: 7, title: "Radio" },
+          { episode: 8, title: "Gray Goo" },
+          { episode: 9, title: "Farewell" },
+          { episode: 10, title: "Troy" }
         ]
       }
     ]
