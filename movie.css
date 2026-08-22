@@ -2478,7 +2478,7 @@ body.rtl-layout .details-back-btn svg {
 
 /* Footer */
 .site-footer {
-  background: #07080b;
+  background: var(--bg-dark);
   border-top: 1px solid var(--border-color);
   padding: 3rem 2rem;
 }
