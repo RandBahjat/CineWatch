@@ -3754,32 +3754,24 @@ function trackVisit() {
 // ==========================================
 // RATINGS SYSTEM
 // ==========================================
+const STAR_PATH = "M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L1 9.3l7.1-.7z";
+let currentSavedRating = 0;
+let liveAnimFrame = null;
+
 async function initializeRatingSystem(movieId) {
-  const starsContainer = document.getElementById('userRatingStars');
-  if (!starsContainer) return;
-  
-  const stars = starsContainer.querySelectorAll('ion-icon');
-  const tooltip = document.getElementById('ratingTooltip');
-  const ratedFeedback = document.getElementById('ratedFeedback');
+  const starsContainer = document.getElementById('starContainer');
   const badgeRating = document.getElementById('detailsRating');
   
-  // Track user's saved rating so we can revert to it after mouseout
-  let currentSavedRating = 0;
-  // Also track the original IMDB score to fallback if there are 0 community ratings
-  const originalBadgeScore = badgeRating ? badgeRating.textContent : '0.0';
+  if (!starsContainer) return;
+  
+  starsContainer.innerHTML = ''; // Clear container
 
-  // Reset UI
-  stars.forEach(s => {
-    s.name = 'star-outline';
-    s.classList.remove('gold');
-  });
-  if (tooltip) tooltip.classList.remove('visible');
-  if (ratedFeedback) ratedFeedback.classList.remove('visible');
+  // Track original IMDB score to fallback if 0 community ratings
+  const originalBadgeScore = badgeRating ? badgeRating.textContent : '0.0';
 
   try {
     const res = await window.CW_API.request(`/ratings/${movieId}`, 'GET');
     
-    // Update top badge
     if (badgeRating) {
       if (res.average > 0) {
         badgeRating.textContent = `${res.average.toFixed(1)} (${res.totalRatings})`;
@@ -3788,95 +3780,154 @@ async function initializeRatingSystem(movieId) {
       }
     }
     
-    // If user has rated, color the stars
     if (res.userRating) {
       currentSavedRating = res.userRating;
-      fillStars(stars, currentSavedRating);
     }
 
-    // Add event listeners
-    stars.forEach((star, index) => {
-      const newStar = star.cloneNode(true);
-      star.parentNode.replaceChild(newStar, star);
-      
-      const starBase = parseInt(newStar.dataset.rating);
+    // Build the 5 SVG stars
+    for (let i = 1; i <= 5; i++) {
+      starsContainer.appendChild(buildStar(i, movieId, badgeRating));
+    }
 
-      newStar.addEventListener('mousemove', (e) => {
-        // Calculate if we're on the left half or right half of the star
-        const rect = newStar.getBoundingClientRect();
-        const isHalf = (e.clientX - rect.left) < (rect.width / 2);
-        const hoveredRating = isHalf ? starBase - 0.5 : starBase;
-        
-        fillStars(starsContainer.querySelectorAll('ion-icon'), hoveredRating);
-        
-        // Show tooltip
-        if (tooltip) {
-          tooltip.textContent = hoveredRating.toFixed(1);
-          tooltip.classList.add('visible');
-          // Position tooltip above the star
-          tooltip.style.left = `${newStar.offsetLeft + (rect.width / 2)}px`;
-        }
-      });
+    renderStars(currentSavedRating);
 
-      newStar.addEventListener('mouseout', () => {
-        fillStars(starsContainer.querySelectorAll('ion-icon'), currentSavedRating);
-        if (tooltip) tooltip.classList.remove('visible');
-      });
-      
-      newStar.addEventListener('click', async (e) => {
-        if (!window.CW_API.getToken()) {
-          showToast('You must be signed in to rate!', 'error');
-          openAuthModal();
-          return;
-        }
-
-        const rect = newStar.getBoundingClientRect();
-        const isHalf = (e.clientX - rect.left) < (rect.width / 2);
-        const finalRating = isHalf ? starBase - 0.5 : starBase;
-
-        currentSavedRating = finalRating;
-        fillStars(starsContainer.querySelectorAll('ion-icon'), finalRating);
-        
-        // Show "Rated" feedback
-        if (ratedFeedback) {
-          ratedFeedback.classList.add('visible');
-          setTimeout(() => ratedFeedback.classList.remove('visible'), 2000);
-        }
-        
-        try {
-          const rateRes = await window.CW_API.request('/rate', 'POST', { movieId, rating: finalRating });
-          if (rateRes.success) {
-            // Refresh average
-            const fresh = await window.CW_API.request(`/ratings/${movieId}`, 'GET');
-            if (badgeRating) {
-              badgeRating.textContent = `${fresh.average.toFixed(1)} (${fresh.totalRatings})`;
-            }
-          } else {
-            showToast(rateRes.error || 'Failed to save rating', 'error');
-          }
-        } catch (err) {
-          showToast('Failed to save rating', 'error');
-        }
-      });
-    });
   } catch (err) {
     console.error('Failed to fetch ratings', err);
   }
 }
 
-function fillStars(starsNodes, rating) {
-  starsNodes.forEach(s => {
-    const val = parseInt(s.dataset.rating);
-    s.classList.remove('gold');
-    
-    if (rating >= val) {
-      s.name = 'star';
-      s.classList.add('gold');
-    } else if (rating === val - 0.5) {
-      s.name = 'star-half';
-      s.classList.add('gold');
-    } else {
-      s.name = 'star-outline';
+function buildStar(index, movieId, badgeRating) {
+  const wrap = document.createElement('div');
+  wrap.className = 'star';
+  wrap.dataset.index = index;
+
+  wrap.innerHTML = `
+    <svg class="bg-star" viewBox="0 0 24 24"><path d="${STAR_PATH}"/></svg>
+    <div class="fill-star"><svg viewBox="0 0 24 24"><path d="${STAR_PATH}"/></svg></div>
+    <div class="tooltip">0</div>
+  `;
+
+  wrap.addEventListener('mousemove', (e) => {
+    const rect = wrap.getBoundingClientRect();
+    const half = (e.clientX - rect.left) < rect.width / 2;
+    const hoverRating = index - (half ? 0.5 : 0);
+    wrap.querySelector('.tooltip').textContent = hoverRating.toFixed(1);
+    renderStars(hoverRating);
+  });
+
+  wrap.addEventListener('mouseleave', () => {
+    renderStars(currentSavedRating);
+  });
+
+  wrap.addEventListener('click', async (e) => {
+    if (!window.CW_API.getToken()) {
+      showToast('You must be signed in to rate!', 'error');
+      openAuthModal();
+      return;
     }
+
+    const rect = wrap.getBoundingClientRect();
+    const half = (e.clientX - rect.left) < rect.width / 2;
+    currentSavedRating = index - (half ? 0.5 : 0);
+    
+    renderStars(currentSavedRating);
+    showFeedback();
+    triggerPop();
+
+    try {
+      const rateRes = await window.CW_API.request('/rate', 'POST', { movieId, rating: currentSavedRating });
+      if (rateRes.success) {
+        const fresh = await window.CW_API.request(`/ratings/${movieId}`, 'GET');
+        if (badgeRating) {
+          badgeRating.textContent = `${fresh.average.toFixed(1)} (${fresh.totalRatings})`;
+        }
+      } else {
+        showToast(rateRes.error || 'Failed to save rating', 'error');
+      }
+    } catch (err) {
+      showToast('Failed to save rating', 'error');
+    }
+  });
+
+  return wrap;
+}
+
+function getColorBand(rating) {
+  if (rating <= 2) return 'red';
+  if (rating <= 3.5) return 'yellow';
+  return 'green';
+}
+
+function renderStars(rating) {
+  const container = document.getElementById('starContainer');
+  if (!container) return;
+  const band = getColorBand(rating);
+  const stars = container.querySelectorAll('.star');
+  
+  stars.forEach((star, i) => {
+    const starIndex = i + 1;
+    const fill = star.querySelector('.fill-star');
+    let pct = 0;
+
+    if (rating >= starIndex) pct = 100;
+    else if (rating >= starIndex - 0.5) pct = 50;
+    else pct = 0;
+
+    fill.style.width = pct + '%';
+    star.classList.toggle('active', pct > 0);
+
+    star.classList.remove('red', 'yellow', 'green');
+    if (pct > 0) star.classList.add(band);
+  });
+
+  updateScoreColor(rating);
+}
+
+function updateScoreColor(rating) {
+  const band = getColorBand(rating);
+  const colorMap = { red: '#ff6b6b', yellow: '#ffd54a', green: '#5adc6e' };
+  const liveEl = document.getElementById('liveValue');
+  if (!liveEl) return;
+  
+  liveEl.style.color = colorMap[band];
+
+  const start = parseFloat(liveEl.dataset.current || '0');
+  const end = rating;
+  const duration = 300;
+  const startTime = performance.now();
+
+  if (liveAnimFrame) cancelAnimationFrame(liveAnimFrame);
+
+  function step(now) {
+    const t = Math.min((now - startTime) / duration, 1);
+    const eased = 1 - Math.pow(1 - t, 3);
+    const value = start + (end - start) * eased;
+    liveEl.textContent = value.toFixed(1);
+    liveEl.dataset.current = value;
+    if (t < 1) {
+      liveAnimFrame = requestAnimationFrame(step);
+    } else {
+      liveEl.dataset.current = end;
+    }
+  }
+  liveAnimFrame = requestAnimationFrame(step);
+}
+
+function showFeedback() {
+  const feedback = document.getElementById('ratedFeedback');
+  if (feedback) {
+    feedback.classList.add('show');
+    setTimeout(() => feedback.classList.remove('show'), 1500);
+  }
+}
+
+function triggerPop() {
+  const container = document.getElementById('starContainer');
+  if (!container) return;
+  const stars = container.querySelectorAll('.star.active');
+  stars.forEach(star => {
+    star.classList.remove('pop');
+    void star.offsetWidth;
+    star.classList.add('pop');
   });
 }
