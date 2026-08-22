@@ -3769,9 +3769,9 @@ async function initializeRatingSystem(movieId) {
   globalText.textContent = '';
 
   try {
-    const res = await window.CW_API.request(/ratings/, 'GET');
+    const res = await window.CW_API.request(`/ratings/${movieId}`, 'GET');
     if (res.average > 0) {
-      globalText.textContent = | Community: ⭐  ();
+      globalText.textContent = `| Community: ⭐ ${res.average.toFixed(1)} (${res.totalRatings})`;
     }
     
     // If user has rated, color the stars
@@ -3800,8 +3800,8 @@ async function initializeRatingSystem(movieId) {
           if (rateRes.success) {
             showToast('Rating saved successfully!', 'success');
             // Refresh average
-            const fresh = await window.CW_API.request(/ratings/, 'GET');
-            globalText.textContent = | Community: ⭐  ();
+            const fresh = await window.CW_API.request(`/ratings/${movieId}`, 'GET');
+            globalText.textContent = `| Community: ⭐ ${fresh.average.toFixed(1)} (${fresh.totalRatings})`;
           } else {
             showToast(rateRes.error || 'Failed to save rating', 'error');
           }
