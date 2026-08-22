@@ -309,7 +309,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/wnR8pwWtoL3TFwP41mLCt91ReCt.jpg",
     videoUrl: "1101383",
     overview: "Mysterious cosmic event rip Oak Street from suburbia, transport whole neighborhood someplace unknown — turn out to be age of dinosaurs. Platt family must stick together, survive now-unrecognizable surroundings, fight to stay alive.",
-    director: "Michael Sarnoski",
+    director: "David Robert Mitchell",
     cast: [
       "Hugh Jackman, Jodie Comer, Bill Skarsgård, Murray Bartlett, Noah Jupe"
     ],
