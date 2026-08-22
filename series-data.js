@@ -52800,8 +52800,55 @@ window._SERIES_DATA = [
     ]
   },
 
+{
+    title: "X-Men '97",
+    type: "TV Show",
+    year: 2024,
+    rating: 8.9,
+    age: "TV-14",
+    genres: ["Animation", "Action", "Sci-Fi"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/iDnTAeR2WNA62XQG0ivtteDSjd5.jpg",
+    videoUrl: "138502",
+    overview: "X-Men '97 is a revival of the classic animated series, following the iconic mutant team as they navigate high-stakes adventures and emotional challenges in a world that hates and fears them.",
+    director: "Beau DeMayo",
+    cast: ["Ray Chase, Jennifer Hale, Cal Dodd, Alison Sealy-Smith, Lenore Zann, JP Karliak"],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "To Me, My X-Men" },
+          { episode: 2, title: "Mutant Liberation Begins" },
+          { episode: 3, title: "Fire Made Flesh" },
+          { episode: 4, title: "Motendo / Lifedeath – Part 1" },
+          { episode: 5, title: "Remember It" },
+          { episode: 6, title: "Lifedeath – Part 2" },
+          { episode: 7, title: "Bright Eyes" },
+          { episode: 8, title: "Tolerance is Extinction – Part 1" },
+          { episode: 9, title: "Tolerance is Extinction – Part 2" },
+          { episode: 10, title: "Tolerance is Extinction – Part 3" }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "Days of Past Future" },
+          { episode: 2, title: "A Force to be Reckoned With" },
+          { episode: 3, title: "Rise of Apocalypse: Part 1" },
+          { episode: 4, title: "Rise of Apocalypse: Part 2" },
+          { episode: 5, title: "Weapon X, Lies, and DVDs" },
+          { episode: 6, title: "Danger.Exe" },
+          { episode: 7, title: "Strange Land, Savage Heart" },
+          { episode: 8, title: "The Dead Man's Hand" },
+          { episode: 9, title: "Survival of the Fittest" }
+        ]
+      }
+    ]
+  },
 
 
 
-  
 ];
