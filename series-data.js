@@ -52853,7 +52853,7 @@ window._SERIES_DATA = [
     title: "Dutton Ranch",
     type: "TV Show",
     year: 2026,
-    rating: 8.5,
+    rating: 8.2,
     age: "TV-MA",
     genres: ["Drama", "Western"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/peqBjbBngMivD44z448Bms7K5m3.jpg",
