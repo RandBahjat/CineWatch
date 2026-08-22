@@ -57,7 +57,7 @@ async function loadMediaFromAPI() {
 
       // Apply featured/trending from title lists
       m.featured = FEATURED_TITLES.includes(m.title);
-      m.trending = TRENDING_TITLES.includes(m.title);
+      m.trending = TRENDING_THIS_WEEK_MOVIES.includes(m.title) || TRENDING_THIS_WEEK_SERIES.includes(m.title);
 
       // Set duration label for series
       if ((m.type === 'TV Show' || m.type === 'Series') && m.seasons && m.seasons.length) {
