@@ -4,35 +4,6 @@
 
 window._SERIES_DATA = [
   {
-    title: 'You',
-    type: 'TV Show',
-    year: 2018,
-    rating: 8.0,
-    age: 'TV-MA',
-    duration: '45m',
-    genres: ['Mystery', 'Crime', 'Drama'],
-    poster: 'https://image.tmdb.org/t/p/w600_and_h900_face/uXZt12k2f63uSg3n3m4x9Tq66Vd.jpg',
-    backdrop: 'https://image.tmdb.org/t/p/original/mBaXZ95R2OxueZhvQbcEWy2DqyO.jpg',
-    videoUrl: '78191',
-    overview: 'A dangerously charming, obsessive man goes to extreme measures to insert himself into the lives of women who fascinate him.',
-    director: 'Greg Berlanti',
-    cast: ['Penn Badgley', 'Victoria Pedretti', 'Elizabeth Lail', 'Ambyr Childers'],
-    trending: true,
-    featured: true,
-    is4k: false,
-    seasons: [
-      {
-        seasonNumber: 1,
-        episodes: [
-          { episode: 1, title: 'Pilot', duration: '49m' },
-          { episode: 2, title: 'The Last Nice Guy in New York', duration: '46m' },
-          { episode: 3, title: 'Maybe', duration: '43m' },
-          { episode: 4, title: 'The Captain', duration: '43m' }
-        ]
-      }
-    ]
-  },
-  {
     title: 'Lanterns',
     type: 'TV Show',
     year: 2026,
@@ -52453,6 +52424,110 @@ window._SERIES_DATA = [
             episode: 1,
             title: "The Children's Book Job"
           }
+        ]
+      }
+    ]
+  },
+  {
+    title: 'You',
+    type: 'TV Show',
+    year: 2018,
+    rating: 8.0,
+    age: 'TV-MA',
+    duration: '45m',
+    genres: [
+      'Mystery',
+      'Crime',
+      'Drama'
+    ],
+    poster: 'https://image.tmdb.org/t/p/w600_and_h900_face/uXZt12k2f63uSg3n3m4x9Tq66Vd.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/mBaXZ95R2OxueZhvQbcEWy2DqyO.jpg',
+    videoUrl: '78191',
+    overview: 'A dangerously charming, obsessive man goes to extreme measures to insert himself into the lives of women who fascinate him.',
+    director: 'Greg Berlanti',
+    cast: [
+      'Penn Badgley',
+      'Victoria Pedretti',
+      'Elizabeth Lail',
+      'Ambyr Childers'
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: 'Episode 1' },
+          { episode: 2, title: 'Episode 2' },
+          { episode: 3, title: 'Episode 3' },
+          { episode: 4, title: 'Episode 4' },
+          { episode: 5, title: 'Episode 5' },
+          { episode: 6, title: 'Episode 6' },
+          { episode: 7, title: 'Episode 7' },
+          { episode: 8, title: 'Episode 8' },
+          { episode: 9, title: 'Episode 9' },
+          { episode: 10, title: 'Episode 10' }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: 'Episode 1' },
+          { episode: 2, title: 'Episode 2' },
+          { episode: 3, title: 'Episode 3' },
+          { episode: 4, title: 'Episode 4' },
+          { episode: 5, title: 'Episode 5' },
+          { episode: 6, title: 'Episode 6' },
+          { episode: 7, title: 'Episode 7' },
+          { episode: 8, title: 'Episode 8' },
+          { episode: 9, title: 'Episode 9' },
+          { episode: 10, title: 'Episode 10' }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: 'Episode 1' },
+          { episode: 2, title: 'Episode 2' },
+          { episode: 3, title: 'Episode 3' },
+          { episode: 4, title: 'Episode 4' },
+          { episode: 5, title: 'Episode 5' },
+          { episode: 6, title: 'Episode 6' },
+          { episode: 7, title: 'Episode 7' },
+          { episode: 8, title: 'Episode 8' },
+          { episode: 9, title: 'Episode 9' },
+          { episode: 10, title: 'Episode 10' }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          { episode: 1, title: 'Episode 1' },
+          { episode: 2, title: 'Episode 2' },
+          { episode: 3, title: 'Episode 3' },
+          { episode: 4, title: 'Episode 4' },
+          { episode: 5, title: 'Episode 5' },
+          { episode: 6, title: 'Episode 6' },
+          { episode: 7, title: 'Episode 7' },
+          { episode: 8, title: 'Episode 8' },
+          { episode: 9, title: 'Episode 9' },
+          { episode: 10, title: 'Episode 10' }
+        ]
+      },
+      {
+        season: 5,
+        episodes: [
+          { episode: 1, title: 'Episode 1' },
+          { episode: 2, title: 'Episode 2' },
+          { episode: 3, title: 'Episode 3' },
+          { episode: 4, title: 'Episode 4' },
+          { episode: 5, title: 'Episode 5' },
+          { episode: 6, title: 'Episode 6' },
+          { episode: 7, title: 'Episode 7' },
+          { episode: 8, title: 'Episode 8' },
+          { episode: 9, title: 'Episode 9' },
+          { episode: 10, title: 'Episode 10' }
         ]
       }
     ]
