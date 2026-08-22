@@ -303,7 +303,7 @@ window._MOVIES_DATA = [
     genres: [
       "Adventure",
       "Horror",
-      ""
+      "Sci"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/92Tsfx7SFafOqWsotvrlJbHyehd.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/5FJsyRUuLsyt2lZrDHbqFE4tJXN.jpg",
