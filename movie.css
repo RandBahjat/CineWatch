@@ -1851,6 +1851,10 @@ body.rtl-layout .details-back-btn svg {
   padding-bottom: 5px; /* for scrollbar if needed */
 }
 
+.details-action-buttons > * {
+  flex-shrink: 0;
+}
+
 .details-cast-list {
   margin-top: 1.5rem;
   font-size: 0.95rem;
