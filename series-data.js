@@ -52528,5 +52528,206 @@ window._SERIES_DATA = [
         ]
       }
     ]
+  },
+  {
+    title: 'Agents of S.H.I.E.L.D.',
+    type: 'TV Show',
+    year: 2013,
+    rating: 7.5,
+    age: 'TV-14',
+    duration: '45m',
+    genres: [
+      'Action',
+      'Adventure',
+      'Sci-Fi'
+    ],
+    poster: 'https://image.tmdb.org/t/p/w600_and_h900_face/gHUCCMy1vvj58tzE3dZqeC9B19L.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/mBaXZ95R2OxueZhvQbcEWy2DqyO.jpg',
+    videoUrl: '1403',
+    overview: 'Agent Phil Coulson assembles a small group of highly skilled agents from the global law-enforcement organization known as S.H.I.E.L.D. Together, they investigate the new, the strange and the unknown around the globe, protecting the ordinary from the extraordinary.',
+    director: 'Maurissa Tancharoen, Jed Whedon, Joss Whedon',
+    cast: [
+      'Clark Gregg',
+      'Ming-Na Wen',
+      'Chloe Bennet',
+      'Iain De Caestecker',
+      'Elizabeth Henstridge'
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: 'Pilot' },
+          { episode: 2, title: '0-8-4' },
+          { episode: 3, title: 'The Asset' },
+          { episode: 4, title: 'Eye Spy' },
+          { episode: 5, title: 'Girl in the Flower Dress' },
+          { episode: 6, title: 'FZZT' },
+          { episode: 7, title: 'The Hub' },
+          { episode: 8, title: 'The Well' },
+          { episode: 9, title: 'Repairs' },
+          { episode: 10, title: 'The Bridge' },
+          { episode: 11, title: 'The Magical Place' },
+          { episode: 12, title: 'Seeds' },
+          { episode: 13, title: 'T.R.A.C.K.S.' },
+          { episode: 14, title: 'T.A.H.I.T.I.' },
+          { episode: 15, title: 'Yes Men' },
+          { episode: 16, title: 'End of the Beginning' },
+          { episode: 17, title: 'Turn, Turn, Turn' },
+          { episode: 18, title: 'Providence' },
+          { episode: 19, title: 'The Only Light in the Darkness' },
+          { episode: 20, title: 'Nothing Personal' },
+          { episode: 21, title: 'Ragtag' },
+          { episode: 22, title: 'Beginning of the End' }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: 'Shadows' },
+          { episode: 2, title: 'Heavy Is the Head' },
+          { episode: 3, title: 'Making Friends and Influencing People' },
+          { episode: 4, title: 'Face My Enemy' },
+          { episode: 5, title: 'A Hen in the Wolf House' },
+          { episode: 6, title: 'A Fractured House' },
+          { episode: 7, title: 'The Writing on the Wall' },
+          { episode: 8, title: 'The Things We Bury' },
+          { episode: 9, title: '...Ye Who Enter Here' },
+          { episode: 10, title: 'What They Become' },
+          { episode: 11, title: 'Aftershocks' },
+          { episode: 12, title: 'Who You Really Are' },
+          { episode: 13, title: 'One of Us' },
+          { episode: 14, title: 'Love in the Time of HYDRA' },
+          { episode: 15, title: 'One Door Closes' },
+          { episode: 16, title: 'Afterlife' },
+          { episode: 17, title: 'Melinda' },
+          { episode: 18, title: 'The Frenemy of My Enemy' },
+          { episode: 19, title: 'The Dirty Half Dozen' },
+          { episode: 20, title: 'Scars' },
+          { episode: 21, title: 'S.O.S.: Part 1' },
+          { episode: 22, title: 'S.O.S.: Part 2' }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: 'Laws of Nature' },
+          { episode: 2, title: 'Purpose in the Machine' },
+          { episode: 3, title: 'A Wanted (Inhu)man' },
+          { episode: 4, title: 'Devils You Know' },
+          { episode: 5, title: '4,722 Hours' },
+          { episode: 6, title: 'Among Us Hide…' },
+          { episode: 7, title: 'Chaos Theory' },
+          { episode: 8, title: 'Many Heads, One Tale' },
+          { episode: 9, title: 'Closure' },
+          { episode: 10, title: 'Maveth' },
+          { episode: 11, title: 'Bouncing Back' },
+          { episode: 12, title: 'The Inside Man' },
+          { episode: 13, title: 'Parting Shot' },
+          { episode: 14, title: 'Watchdogs' },
+          { episode: 15, title: 'Spacetime' },
+          { episode: 16, title: 'Paradise Lost' },
+          { episode: 17, title: 'The Team' },
+          { episode: 18, title: 'The Singularity' },
+          { episode: 19, title: 'Failed Experiments' },
+          { episode: 20, title: 'Emancipation' },
+          { episode: 21, title: 'Absolution' },
+          { episode: 22, title: 'Ascension' }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          { episode: 1, title: 'The Ghost' },
+          { episode: 2, title: 'Meet the New Boss' },
+          { episode: 3, title: 'Uprising' },
+          { episode: 4, title: 'Let Me Stand Next to Your Fire' },
+          { episode: 5, title: 'Lockup' },
+          { episode: 6, title: 'The Good Samaritan' },
+          { episode: 7, title: 'Deals with Our Devils' },
+          { episode: 8, title: 'The Laws of Inferno Dynamics' },
+          { episode: 9, title: 'Broken Promises' },
+          { episode: 10, title: 'The Patriot' },
+          { episode: 11, title: 'Wake Up' },
+          { episode: 12, title: 'Hot Potato Soup' },
+          { episode: 13, title: 'BOOM' },
+          { episode: 14, title: 'The Man Behind the Shield' },
+          { episode: 15, title: 'Self Control' },
+          { episode: 16, title: 'What If...' },
+          { episode: 17, title: 'Identity and Change' },
+          { episode: 18, title: 'No Regrets' },
+          { episode: 19, title: 'All the Madame\'s Men' },
+          { episode: 20, title: 'Farewell, Cruel World!' },
+          { episode: 21, title: 'The Return' },
+          { episode: 22, title: 'World\'s End' }
+        ]
+      },
+      {
+        season: 5,
+        episodes: [
+          { episode: 1, title: 'Orientation (Part One)' },
+          { episode: 2, title: 'Orientation (Part Two)' },
+          { episode: 3, title: 'A Life Spent' },
+          { episode: 4, title: 'A Life Earned' },
+          { episode: 5, title: 'Rewind' },
+          { episode: 6, title: 'Fun & Games' },
+          { episode: 7, title: 'Together or Not at All' },
+          { episode: 8, title: 'The Last Day' },
+          { episode: 9, title: 'Best Laid Plans' },
+          { episode: 10, title: 'Past Life' },
+          { episode: 11, title: 'All the Comforts of Home' },
+          { episode: 12, title: 'The Real Deal' },
+          { episode: 13, title: 'Principia' },
+          { episode: 14, title: 'The Devil Complex' },
+          { episode: 15, title: 'Rise and Shine' },
+          { episode: 16, title: 'Inside Voices' },
+          { episode: 17, title: 'The Honeymoon' },
+          { episode: 18, title: 'All Roads Lead…' },
+          { episode: 19, title: 'Option Two' },
+          { episode: 20, title: 'The One Who Will Save Us All' },
+          { episode: 21, title: 'The Force of Gravity' },
+          { episode: 22, title: 'The End' }
+        ]
+      },
+      {
+        season: 6,
+        episodes: [
+          { episode: 1, title: 'Missing Pieces' },
+          { episode: 2, title: 'Window of Opportunity' },
+          { episode: 3, title: 'Fear and Loathing on the Planet of Kitson' },
+          { episode: 4, title: 'Code Yellow' },
+          { episode: 5, title: 'The Other Thing' },
+          { episode: 6, title: 'Inescapable' },
+          { episode: 7, title: 'Toldja' },
+          { episode: 8, title: 'Collision Course (Part I)' },
+          { episode: 9, title: 'Collision Course (Part II)' },
+          { episode: 10, title: 'Leap' },
+          { episode: 11, title: 'From the Ashes' },
+          { episode: 12, title: 'The Sign' },
+          { episode: 13, title: 'New Life' }
+        ]
+      },
+      {
+        season: 7,
+        episodes: [
+          { episode: 1, title: 'The New Deal' },
+          { episode: 2, title: 'Know Your Onions' },
+          { episode: 3, title: 'Alien Commies from the Future!' },
+          { episode: 4, title: 'Out of the Past' },
+          { episode: 5, title: 'A Trout in the Milk' },
+          { episode: 6, title: 'Adapt or Die' },
+          { episode: 7, title: 'The Totally Excellent Adventures of Mack and the D' },
+          { episode: 8, title: 'After, Before' },
+          { episode: 9, title: 'As I Have Always Been' },
+          { episode: 10, title: 'Stolen' },
+          { episode: 11, title: 'Brand New Day' },
+          { episode: 12, title: 'The End Is at Hand' },
+          { episode: 13, title: 'What We\'re Fighting For' }
+        ]
+      }
+    ]
   }
 ];
