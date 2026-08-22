@@ -1049,6 +1049,7 @@ function switchView(viewName) {
   });
   window.dispatchEvent(new Event("scroll"));
 
+  const safetyBannerWrapper = document.getElementById("safetyBannerWrapper");
   const heroBanner = document.getElementById("heroBanner");
   const defaultShelves = document.getElementById("defaultShelves");
   const continueShelf = document.getElementById("continueWatchingShelf");
@@ -1063,6 +1064,7 @@ function switchView(viewName) {
 
   // Helper: hide all dynamic sections
   const hideAll = () => {
+    if (safetyBannerWrapper) safetyBannerWrapper.classList.add("hidden");
     heroBanner.classList.add("hidden");
     defaultShelves.classList.add("hidden");
     if (continueSection) continueSection.classList.add("hidden");
@@ -1087,6 +1089,7 @@ function switchView(viewName) {
   }
 
   if (viewName === "home") {
+    if (safetyBannerWrapper) safetyBannerWrapper.classList.remove("hidden");
     heroBanner.classList.remove("hidden");
     defaultShelves.classList.remove("hidden");
     filteredSection.classList.add("hidden");
