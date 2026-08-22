@@ -5678,3 +5678,73 @@ body.rtl-layout .account-side-panel {
 body.rtl-layout .account-side-panel.open {
   transform: translateX(0);
 }
+/* Language Prompt Modal */
+.lang-prompt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.lang-prompt-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.lang-prompt-modal {
+  background: #151821;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+  transform: translateY(20px);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.lang-prompt-overlay.active .lang-prompt-modal {
+  transform: translateY(0);
+}
+.lang-prompt-modal h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.lang-prompt-modal p {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 24px;
+}
+.lang-prompt-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+.lang-prompt-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.lang-prompt-btn:hover {
+  background: #E50914;
+  border-color: #E50914;
+}
