@@ -4,6 +4,38 @@
 
 window._SERIES_DATA = [
   {
+    title: "Silo",
+    type: "TV Show",
+    year: 2023,
+    rating: 8.1,
+    age: "TV-MA",
+    duration: "45m",
+    genres: [
+      "Drama",
+      "Sci-Fi",
+      "Mystery"
+    ],
+    poster: "https://image.tmdb.org/t/p/original/ak7NFISSaROyoWjSOIjamhpt1LB.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/wnR8pwWtoL3TFwP41mLCt91ReCt.jpg",
+    videoUrl: "125988",
+    overview: "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+    director: "Graham Yost",
+    cast: [
+      "Rebecca Ferguson, Common, Tim Robbins, Harriet Walter, Avi Nash"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Freedom Day", duration: "60m" }
+        ]
+      }
+    ]
+  },
+  {
     title: 'Lanterns',
     type: 'TV Show',
     year: 2026,
