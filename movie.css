@@ -1699,8 +1699,6 @@ body.rtl-layout .details-back-btn svg {
 .meta-separator {
   color: #6b7280;
 }
-.user-rating-stars {
-  display: flex;
 /* Custom Premium SVG Rating Styles */
 .rating-block {
   display: flex;
