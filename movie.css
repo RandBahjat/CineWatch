@@ -1705,6 +1705,7 @@ body.rtl-layout .details-back-btn svg {
   align-items: center;
   gap: 16px;
   position: relative;
+  flex-shrink: 0;
 }
 
 .rating-label {
