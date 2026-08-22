@@ -30,19 +30,46 @@ window._SERIES_DATA = [
       {
         season: 1,
         episodes: [
-          { episode: 1, title: "Freedom Day", duration: "60m" }
+          { episode: 1, title: "Freedom Day", duration: "60m" },
+          { episode: 2, title: "Holston's Pick", duration: "50m" },
+          { episode: 3, title: "Machines", duration: "50m" },
+          { episode: 4, title: "Truth", duration: "50m" },
+          { episode: 5, title: "The Janitor's Boy", duration: "50m" },
+          { episode: 6, title: "The Relic", duration: "50m" },
+          { episode: 7, title: "The Flamekeepers", duration: "50m" },
+          { episode: 8, title: "Hanna", duration: "50m" },
+          { episode: 9, title: "The Getaway", duration: "50m" },
+          { episode: 10, title: "Outside", duration: "50m" }
         ]
       },
       {
         season: 2,
         episodes: [
-          { episode: 1, title: "Episode 1", duration: "60m" }
+          { episode: 1, title: "The Engineer", duration: "50m" },
+          { episode: 2, title: "Order", duration: "50m" },
+          { episode: 3, title: "Solo", duration: "50m" },
+          { episode: 4, title: "The Harmonium", duration: "50m" },
+          { episode: 5, title: "Descent", duration: "50m" },
+          { episode: 6, title: "Barricades", duration: "50m" },
+          { episode: 7, title: "The Dive", duration: "50m" },
+          { episode: 8, title: "The Book of Quinn", duration: "50m" },
+          { episode: 9, title: "The Last Resort", duration: "50m" },
+          { episode: 10, title: "Episode 10", duration: "50m" }
         ]
       },
       {
         season: 3,
         episodes: [
-          { episode: 1, title: "Episode 1", duration: "60m" }
+          { episode: 1, title: "Who Are You?", duration: "50m" },
+          { episode: 2, title: "It's All Good", duration: "50m" },
+          { episode: 3, title: "A Dark Web", duration: "50m" },
+          { episode: 4, title: "Whatever You Do, Don't Go Home", duration: "50m" },
+          { episode: 5, title: "Memory", duration: "50m" },
+          { episode: 6, title: "The Drive", duration: "50m" },
+          { episode: 7, title: "Radio", duration: "50m" },
+          { episode: 8, title: "Gray Goo", duration: "50m" },
+          { episode: 9, title: "Farewell", duration: "50m" },
+          { episode: 10, title: "Troy", duration: "50m" }
         ]
       }
     ]
