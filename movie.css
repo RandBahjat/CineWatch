@@ -1701,35 +1701,123 @@ body.rtl-layout .details-back-btn svg {
 }
 .user-rating-stars {
   display: flex;
+/* Custom Premium SVG Rating Styles */
+.rating-block {
+  display: flex;
   align-items: center;
-  gap: 0.2rem;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  color: var(--text-muted);
+  gap: 16px;
   position: relative;
 }
-.user-rating-stars .rating-label {
-  font-size: 0.95rem;
-  font-weight: 500;
-  margin-right: 0.5rem;
-  color: #e5e5e5;
+
+.rating-label {
+  color: #ccc;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
-.user-rating-stars ion-icon {
+
+.stars {
+  display: flex;
+  position: relative;
+  font-size: 34px;
   cursor: pointer;
-  transition: transform 0.2s, color 0.2s;
-  color: var(--text-muted);
 }
-.user-rating-stars ion-icon.gold {
-  color: var(--gold);
+
+.star {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  margin: 0 2px;
 }
-.user-rating-stars ion-icon:hover {
-  transform: scale(1.2);
+
+.star svg {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.3s ease;
 }
-.rating-tooltip {
+
+@keyframes starPop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.4); }
+  100% { transform: scale(1.15); }
+}
+
+.star.pop svg {
+  animation: starPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.star .bg-star path {
+  fill: #333;
+  stroke: #555;
+  stroke-width: 1px;
+}
+
+.star .fill-star {
   position: absolute;
-  top: -30px;
-  background: #111;
-  color: var(--text-muted);
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0%;
+  height: 100%;
+  pointer-events: none;
+  transition: width 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.star .fill-star svg path {
+  fill: url(#yellowGradient);
+  stroke: #e0a800;
+  stroke-width: 1px;
+  transition: fill 0.2s ease, stroke 0.2s ease;
+}
+
+.star.red .fill-star svg path { fill: url(#redGradient); stroke: #c62828; }
+.star.yellow .fill-star svg path { fill: url(#yellowGradient); stroke: #e0a800; }
+.star.green .fill-star svg path { fill: url(#greenGradient); stroke: #1b7d2e; }
+
+.star.active svg,
+.star:hover svg {
+  transform: scale(1.15);
+}
+
+.star.active.red svg, .star.hover-red svg { filter: drop-shadow(0 0 6px rgba(255, 90, 90, 0.6)); }
+.star.active.yellow svg, .star.hover-yellow svg { filter: drop-shadow(0 0 6px rgba(255, 200, 50, 0.6)); }
+.star.active.green svg, .star.hover-green svg { filter: drop-shadow(0 0 6px rgba(90, 220, 110, 0.6)); }
+
+.tooltip {
+  position: absolute;
+  top: -38px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+  background: #1a1a1a;
+  color: #ffd54a;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 9px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  white-space: nowrap;
+}
+
+.star:hover .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+.feedback {
+  color: #4caf50;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  height: 16px;
+  white-space: nowrap;
+}
+
+.feedback.show {
+  opacity: 1;
 }
 
 .meta-rating {
