@@ -297,7 +297,7 @@ window._MOVIES_DATA = [
     title: "The End of Oak Street",
     type: "Movie",
     year: 2026,
-    rating: 6,
+    rating: 6.6,
     age: "R",
     duration: "2h 2m",
     genres: [
