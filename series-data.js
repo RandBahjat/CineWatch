@@ -1,4 +1,4 @@
-// CineWatch — Series Data
+﻿// CineWatch — Series Data
 // Edit this file to add, remove, or reorder TV shows and series.
 // Push to GitHub (or save — auto-sync will handle it) for changes to go live.
 
@@ -3232,7 +3232,7 @@ window._SERIES_DATA = [
       'Animation',
       'Adventure',
       'Comedy',
-      'Science Fiction',
+      'Sci-Fi',
       'Kids'
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/eogRp6oAPK0SEvQmCrQ78LTlSdp.jpg',
@@ -3477,7 +3477,7 @@ window._SERIES_DATA = [
       'Animation',
       'Adventure',
       'Comedy',
-      'Science Fiction',
+      'Sci-Fi',
       'Fantasy',
       'Kids'
     ],
@@ -3706,7 +3706,7 @@ window._SERIES_DATA = [
       'Animation',
       'Adventure',
       'Comedy',
-      'Science Fiction',
+      'Sci-Fi',
       'Fantasy',
       'Kids'
     ],
@@ -3960,7 +3960,7 @@ window._SERIES_DATA = [
       'Adventure',
       'Comedy',
       'Drama',
-      'Science Fiction',
+      'Sci-Fi',
       'Fantasy',
       'Kids'
     ],
@@ -5038,7 +5038,7 @@ window._SERIES_DATA = [
       'Drama',
       'Action',
       'Horror',
-      'Science Fiction'
+      'Sci-Fi'
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/uDgy6hyPd82kOHh6I95FLtLnj6p.jpg',
@@ -5139,7 +5139,7 @@ window._SERIES_DATA = [
       'Action',
       'Adventure',
       'Fantasy',
-      'Science Fiction'
+      'Sci-Fi'
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/rX1wQMTKFqF0gvZyS0DDQqgnQPB.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/vttOoJ9aGKHY05Gsb1lNbOAZgTM.jpg',
@@ -5221,7 +5221,7 @@ window._SERIES_DATA = [
     age: 'TV-MA',
     duration: '1h',
     genres: [
-      'Science Fiction',
+      'Sci-Fi',
       'Horror',
       'Mystery',
       'Drama',

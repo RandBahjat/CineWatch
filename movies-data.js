@@ -1,4 +1,4 @@
-// CineWatch — Movies Data
+﻿// CineWatch — Movies Data
 // Edit this file to add, remove, or reorder movies.
 // Push to GitHub (or save — auto-sync will handle it) for changes to go live.
 
@@ -387,7 +387,7 @@ window._MOVIES_DATA = [
     age: "R",
     duration: "1h 39m",
     genres: [
-      "Science Fiction",
+      "Sci-Fi",
       "Horror",
       "Thriller"
     ],
@@ -492,7 +492,7 @@ window._MOVIES_DATA = [
     age: "PG-13",
     duration: "1h 52m",
     genres: [
-      "Science Fiction",
+      "Sci-Fi",
       "Horror",
       "Mystery"
     ],
@@ -5209,7 +5209,7 @@ window._MOVIES_DATA = [
     duration: "1h 33m",
     genres: [
       "Animation",
-      "Science Fiction",
+      "Sci-Fi",
       "Action",
       "Adventure",
       "Kids"
@@ -5236,7 +5236,7 @@ window._MOVIES_DATA = [
     duration: "1h 35m",
     genres: [
       "Animation",
-      "Science Fiction",
+      "Sci-Fi",
       "Action",
       "Adventure",
       "Kids"
@@ -5263,7 +5263,7 @@ window._MOVIES_DATA = [
     duration: "1h 38m",
     genres: [
       "Animation",
-      "Science Fiction",
+      "Sci-Fi",
       "Action",
       "Adventure",
       "Kids"
@@ -6653,7 +6653,7 @@ window._MOVIES_DATA = [
     genres: [
       "Action",
       "Mystery",
-      "Science Fiction",
+      "Sci-Fi",
       "Thriller"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ode14q7WtDugFDp78fo9lCsmay9.jpg",
@@ -6885,7 +6885,7 @@ window._MOVIES_DATA = [
     genres: [
       "Comedy",
       "Drama",
-      "Science Fiction"
+      "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vuza0WqY239yBXOadKlGwJsZJFE.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/kjWIp6COK4MKF0KSffzUD8l9Kuo.jpg",
@@ -7117,7 +7117,7 @@ window._MOVIES_DATA = [
     genres: [
       "Action",
       "Adventure",
-      "Science Fiction"
+      "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nBM9MMa2WCwvMG4IJ3eiGUdbPe6.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/4V1yIoAKPMRQwGBaSses8Bp2nsi.jpg",
@@ -7194,7 +7194,7 @@ window._MOVIES_DATA = [
       "Action",
       "Adventure",
       "Drama",
-      "Science Fiction"
+      "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/v1tRXZ4JtD2Iv6fjkPvT4GiwslV.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/aHFgoGZ2VQNY45nJWGcBvszaMXz.jpg",
@@ -7220,7 +7220,7 @@ window._MOVIES_DATA = [
       "Action",
       "Adventure",
       "Drama",
-      "Science Fiction"
+      "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/6izwz7rsy95ARzTR3poZ8H6c5pp.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/87IVlclAfWL6mdicU1DDuxdwXwe.jpg",
@@ -7270,7 +7270,7 @@ window._MOVIES_DATA = [
       "Action",
       "Drama",
       "Mystery",
-      "Science Fiction"
+      "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ey7N0Sm3FiRm12DC58T8JkSxMBx.jpg",
@@ -7467,7 +7467,7 @@ window._MOVIES_DATA = [
     genres: [
       "Action",
       "Adventure",
-      "Science Fiction",
+      "Sci-Fi",
       "Horror"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/eyWICPcxOuTcDDDbTMOZawoOn8d.jpg",
@@ -7493,7 +7493,7 @@ window._MOVIES_DATA = [
     genres: [
       "Action",
       "Adventure",
-      "Science Fiction",
+      "Sci-Fi",
       "Thriller"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4m1Au3YkjqsxF8iwQy0fPYSxE0h.jpg",
@@ -7595,7 +7595,7 @@ window._MOVIES_DATA = [
       "Action",
       "Adventure",
       "Comedy",
-      "Science Fiction"
+      "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/enA22EPyzc2WQ1VVyY7zxresQQr.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/gaObzSfuj8cLw2xpfphDVEs9aof.jpg",
@@ -7620,7 +7620,7 @@ window._MOVIES_DATA = [
     genres: [
       "Action",
       "Comedy",
-      "Science Fiction"
+      "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/90DdoEStzeObs96fsYf4GG544iN.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/iCqk02W09UCA7ljxG5XEiX1xJkw.jpg",
@@ -7743,7 +7743,7 @@ window._MOVIES_DATA = [
       "Action",
       "Adventure",
       "Comedy",
-      "Science Fiction"
+      "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uLOmOF5IzWoyrgIF5MfUnh5pa1X.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rGX4v2DdJvzNWGj3cprnkXsnTIp.jpg",
@@ -7768,7 +7768,7 @@ window._MOVIES_DATA = [
     genres: [
       "Action",
       "Adventure",
-      "Science Fiction",
+      "Sci-Fi",
       "Thriller"
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/6Biy7R9LfumYshur3YKhpj56MpB.jpg",
@@ -8065,7 +8065,7 @@ window._MOVIES_DATA = [
     duration: "1h 56m",
     genres: [
       "Action",
-      "Science Fiction",
+      "Sci-Fi",
       "Adventure"
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/rULWuutDcN5NvtiZi4FRPzRYWSh.jpg",
@@ -8379,7 +8379,7 @@ window._MOVIES_DATA = [
     genres: [
       "Action",
       "Adventure",
-      "Science Fiction"
+      "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/chpWmskl3aKm1aTZqUHRCtviwPy.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/pUNfHmVqfwRdILhCkU8TdysVOXo.jpg",
@@ -9156,7 +9156,7 @@ window._MOVIES_DATA = [
     age: "R",
     duration: "1h 46m",
     genres: [
-      "Science Fiction",
+      "Sci-Fi",
       "Thriller",
       "Horror"
     ],
