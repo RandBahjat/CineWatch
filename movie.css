@@ -1654,6 +1654,11 @@ select {
 .details-back-btn svg {
   width: 20px;
   fill: #fff;
+  transition: transform 0.3s ease;
+}
+
+body.rtl-layout .details-back-btn svg {
+  transform: scaleX(-1);
 }
 .details-back-btn:hover {
   background: rgba(255,255,255,0.2);
