@@ -311,7 +311,7 @@ window._MOVIES_DATA = [
     overview: "Mysterious cosmic event rip Oak Street from suburbia, transport whole neighborhood someplace unknown — turn out to be age of dinosaurs. Platt family must stick together, survive now-unrecognizable surroundings, fight to stay alive.",
     director: "David Robert Mitchell",
     cast: [
-      "Hugh Jackman, Jodie Comer, Bill Skarsgård, Murray Bartlett, Noah Jupe"
+      "Anne Hathaway, Ewan McGregor, Maisy Stella, Christian Convery"
     ],
     trending: false,
     featured: false,
