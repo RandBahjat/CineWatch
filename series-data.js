@@ -52547,11 +52547,7 @@ window._SERIES_DATA = [
     overview: 'Agent Phil Coulson lead team of skilled operative, handle strange, dangerous case too big for regular cop, too small for Avengers. Team dig into world of superhuman, alien tech, secret conspiracy tie back to S.H.I.E.L.D. itself.',
     director: 'Maurissa Tancharoen, Jed Whedon, Joss Whedon',
     cast: [
-      'Clark Gregg',
-      'Ming-Na Wen',
-      'Chloe Bennet',
-      'Iain De Caestecker',
-      'Elizabeth Henstridge'
+      'Clark Gregg, Ming-Na Wen, Brett Dalton, Chloe Bennet, Iain De Caestecker, Elizabeth Henstridge'
     ],
     trending: false,
     featured: false,
