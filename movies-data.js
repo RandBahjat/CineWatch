@@ -627,7 +627,7 @@ window._MOVIES_DATA = [
       "Fantasy"
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/14QbnygCuTO0vl7CAFmPf1fgZfV.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/uyrOU4BDm2kbVxFsMiDFIHDhc4d.jpg",
     videoUrl: "634649",
     overview: "Peter Parker's life is turned upside down the moment his secret identity is exposed to the world. Desperate to reclaim his normal life, he turns to Doctor Strange for a spell to make everyone forget — but when the spell goes catastrophically wrong, it tears open the fabric of the multiverse, bringing dangerous villains from other realities crashing into Peter's world. Now Peter must confront threats greater than he's ever faced, learning that the greatest responsibility sometimes demands the greatest sacrifice.",
     director: "Jon Watts",
