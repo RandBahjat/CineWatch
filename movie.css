@@ -1729,36 +1729,6 @@ body.rtl-layout .details-back-btn svg {
   position: absolute;
   top: -30px;
   background: #111;
-  color: #fff;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.2s;
-  white-space: nowrap;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
-  transform: translateX(-50%);
-  z-index: 10;
-}
-.rating-tooltip.visible {
-  opacity: 1;
-}
-.rated-feedback {
-  font-size: 0.85rem;
-  color: #10b981;
-  margin-left: 0.5rem;
-  font-weight: 600;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.rated-feedback.visible {
-  opacity: 1;
-}
-.user-rating-stars .rating-average {
-  font-size: 0.85rem;
-  margin-left: 0.5rem;
   color: var(--text-muted);
 }
 
