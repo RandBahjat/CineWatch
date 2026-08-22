@@ -41,6 +41,18 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model('User', userSchema);
 
+// Define the Rating schema
+const ratingSchema = new mongoose.Schema({
+  movieId: { type: String, required: true },
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+  rating: { type: Number, required: true, min: 1, max: 5 },
+  updated_at: { type: Date, default: Date.now }
+});
+// Ensure a user can only rate a specific movie once
+ratingSchema.index({ movieId: 1, userId: 1 }, { unique: true });
+
+const Rating = mongoose.model('Rating', ratingSchema);
+
 // Define the SiteStats schema for global site metrics
 const siteStatsSchema = new mongoose.Schema({
   metricName: { type: String, required: true, unique: true }, // e.g., 'global'
