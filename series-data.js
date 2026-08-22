@@ -52856,7 +52856,7 @@ window._SERIES_DATA = [
     rating: 8.2,
     age: "TV-MA",
     genres: ["Drama", "Western"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/peqBjbBngMivD44z448Bms7K5m3.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/9gWv6oZcE8R7N3F5H5B0c1S6r6M.jpg",
     videoUrl: "123456",
     overview: "The series follows fan-favorite characters Beth Dutton and Rip Wheeler as they leave Montana and attempt to build a new life in South Texas. Their fresh start is quickly complicated by a ruthless rival ranch and the persistent shadows of their past.",
