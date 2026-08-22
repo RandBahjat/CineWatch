@@ -52530,7 +52530,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    title: 'Marvels Agents of S.H.I.E.L.D.',
+    title: ' Agents of S.H.I.E.L.D.',
     type: 'TV Show',
     year: 2013,
     rating: 7.5,
