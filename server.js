@@ -13,7 +13,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { Resend } = require('resend');
 const crypto = require('crypto');
-const { User, SiteStats, DailyStats, Media, mongoose, getDbError } = require('./database');
+const { User, Rating, SiteStats, DailyStats, Media, mongoose, getDbError } = require('./database');
 
 const app = express();
 
