@@ -308,7 +308,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fYXqpgPmHMphSF2W30GbTeJVIa5.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/wnR8pwWtoL3TFwP41mLCt91ReCt.jpg",
     videoUrl: "1101383",
-    overview: "A dark, gritty reimagining based on the 17th-century classic ballad. The film follows an aging, battle-worn Robin Hood who has retreated into self-imposed exile, deeply tormented by the violent crimes and killings of his past outlaw life. When he is gravely wounded, he takes refuge in a remote priory. In the hands of a mysterious prioress and an orphaned girl, the cynical legend is offered one final, painful chance at spiritual salvation and redemption.",
+    overview: "Mysterious cosmic event rip Oak Street from suburbia, transport whole neighborhood someplace unknown — turn out to be age of dinosaurs. Platt family must stick together, survive now-unrecognizable surroundings, fight to stay alive.",
     director: "Michael Sarnoski",
     cast: [
       "Hugh Jackman, Jodie Comer, Bill Skarsgård, Murray Bartlett, Noah Jupe"
