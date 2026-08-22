@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="movie.css?v=20260816_2997">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Google Fonts: Inter & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="api.js?v=20260816_3055" defer></script>
+    <script src="movies-data.js?v=20260818_930"></script>
+    <script src="series-data.js?v=20260818_930"></script>
+    <script src="movie.js?v=20260818_931" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <!-- Loading Splash Screen -->
+    <div class="app-loader" id="appLoader">
+        <div class="loader-content">
+            <div class="loader-logo notranslate" translate="no"><ion-icon name="ticket" style="color: var(--primary); font-size: 1.3em; vertical-align: middle;"></ion-icon> Cine<span>Watch</span></div>
+            <div class="loader-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+            </div>
+            <p class="loader-text">Loading your cinema...</p>
+        </div>
+    </div>
+
+    <!-- Fixed Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+            <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="document.getElementById('mobileMenuOverlay').classList.add('active'); document.body.style.overflow='hidden';">
+                <ion-icon name="menu-outline" style="pointer-events: none;"></ion-icon>
+            </button>
+                <!-- Logo: hidden on mobile (shown in slide-out menu instead) -->
+                <a href="#" class="brand-logo" id="logoBtn">
+                    <span class="logo-icon"><ion-icon name="ticket" style="color: var(--primary); font-size: 1.3em;"></ion-icon></span>
+                    <span class="logo-text notranslate" translate="no">Cine<span class="logo-accent">Watch</span></span>
+                </a>
+                <nav class="nav-links">
+                    <a href="#" class="nav-link active" data-view="home"><ion-icon name="home-outline"></ion-icon> Home</a>
+                    <a href="#" class="nav-link" data-view="movies"><ion-icon name="film-outline"></ion-icon> Movies</a>
+                    <a href="#" class="nav-link" data-view="series"><ion-icon name="tv-outline"></ion-icon> Series</a>
+                    <a href="#" class="nav-link" data-view="continue"><ion-icon name="play-circle-outline"></ion-icon> Continue Watching</a>
+                    <a href="#" class="nav-link" data-view="watchlist"><ion-icon name="heart-outline"></ion-icon> My Watchlist</a>
+                </nav>
+            </div>
+
+            <div class="nav-right">
+                <!-- Language Selector (Custom Dropdown) -->
+                <div class="custom-lang-dropdown notranslate" translate="no" id="customLangDropdown">
+                    <div class="lang-dropdown-selected" id="langDropdownBtn">
+                        <ion-icon name="language-outline" class="lang-icon"></ion-icon>
+                        <span id="langSelectedText">English</span>
+                        <ion-icon name="chevron-down-outline" class="lang-arrow"></ion-icon>
+                    </div>
+                    <div class="lang-dropdown-options" id="langDropdownOptions">
+                        <div class="lang-option" data-value="en">English</div>
+                        <div class="lang-option" data-value="ckb">Kurdish (Sorani)</div>
+                        <div class="lang-option" data-value="ku">Kurdish (Kurmanji)</div>
+                        <div class="lang-option" data-value="ar">Arabic</div>
+                    </div>
+                </div>
+                
+                <!-- Search Icon Button -->
+                <button class="nav-action-btn" id="navSearchBtn" title="Search">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+
+                <!-- Report Issue Button -->
+                <button class="nav-report-btn" id="headerReportBtn" title="Report an Issue / Send Feedback">
+                    <span class="report-text">Report</span>
+                </button>
+
+                <!-- User Auth Badge / Profile -->
+                <div class="user-profile-container" id="userProfileContainer">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Modal -->
+    <div class="search-modal hidden" id="searchModal">
+        <div class="search-modal-backdrop" id="searchModalBackdrop"></div>
+        <div class="search-modal-content">
+            <div class="search-modal-header">
+                <h2>Search</h2>
+                <div class="search-header-right" style="position: relative;">
+                    <button class="search-filter-btn" id="searchFilterBtn">Movies & Series <ion-icon name="chevron-down-outline"></ion-icon></button>
+                    <div class="search-filter-dropdown hidden" id="searchFilterDropdown">
+                        <div class="filter-option active" data-filter="all">Movies & Series</div>
+                        <div class="filter-option" data-filter="movie">Movies Only</div>
+                        <div class="filter-option" data-filter="series">Series Only</div>
+                    </div>
+                    <button class="search-modal-close" id="searchModalClose">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+            <div class="search-modal-body">
+                <div class="search-modal-input-wrapper">
+                    <ion-icon name="search-outline" class="modal-search-icon"></ion-icon>
+                    <input type="text" id="searchInput" placeholder="Type here to search..." autocomplete="off">
+                    <button class="modal-search-clear hidden" id="searchClearBtn">&times;</button>
+                </div>
+                
+                <div class="search-recent-section" id="searchRecentSection">
+                    <div class="search-recent-header">
+                        <span>RECENT</span>
+                        <button id="clearRecentBtn">Clear</button>
+                    </div>
+                    <div class="search-recent-list" id="searchRecentList">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <div class="search-dropdown hidden" id="searchDropdown"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay" onclick="if(event.target === this) { this.classList.remove('active'); document.body.style.overflow=''; }">
+        <div class="mobile-menu">
+            <!-- Logo at top of menu -->
+            <div class="mobile-menu-header">
+                <a href="#" class="brand-logo mobile-menu-logo">
+                    <span class="logo-icon"><ion-icon name="ticket" style="color: var(--primary); font-size: 1.3em;"></ion-icon></span>
+                    <span class="logo-text notranslate" translate="no">Cine<span class="logo-accent">Watch</span></span>
+                </a>
+                <button class="mobile-menu-close" id="mobileMenuCloseBtn" onclick="document.getElementById('mobileMenuOverlay').classList.remove('active'); document.body.style.overflow='';">&times;</button>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="mobile-nav-links">
+                <a href="#" class="nav-link active" data-view="home"><ion-icon name="home-outline"></ion-icon> Home</a>
+                <a href="#" class="nav-link" data-view="movies"><ion-icon name="film-outline"></ion-icon> Movies</a>
+                <a href="#" class="nav-link" data-view="series"><ion-icon name="tv-outline"></ion-icon> Series</a>
+                <a href="#" class="nav-link" data-view="continue"><ion-icon name="play-circle-outline"></ion-icon> Continue Watching</a>
+                <a href="#" class="nav-link" data-view="watchlist"><ion-icon name="heart-outline"></ion-icon> My Watchlist</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Spotlight Section -->
+    <section class="hero-banner" id="heroBanner">
+        <div class="hero-track" id="heroTrack"></div>
+        <div class="hero-carousel-dots" id="heroDots"></div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTopBtn" title="Back to top" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </button>
+
+
+    <section id="detailsSection" class="hidden">
+        <!-- Top bar containing Back and Mute buttons -->
+        <div class="details-top-bar">
+            <!-- Back Button (top left) -->
+            <button class="details-back-btn" id="closeDetailsBtn" title="Go Back">
+                <svg viewBox="0 0 24 24" class="go-back-arr-2" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Hero Background -->
+        <div class="details-hero-bg">
+            <div class="details-bg" id="detailsBg"></div>
+            <div class="details-bg-gradient-overlay"></div>
+        </div>
+
+        <!-- 1. Hero Content (exactly 100vh) -->
+        <div class="details-hero-container">
+            <div class="details-content-wrapper">
+                
+                <div class="details-hero-info">
+                <!-- Title / Logo area -->
+                <img id="detailsLogo" class="details-logo hidden" src="" alt="Movie Logo" />
+                <h1 class="details-title-large notranslate" translate="no" id="detailsTitle">Movie Title</h1>
+                
+                <div class="details-meta-row">
+                    <span class="meta-rating"><ion-icon name="star" style="color: var(--gold);"></ion-icon> <span id="detailsRating">4.8</span></span>
+                    <span class="meta-separator">&nbsp;&middot;&nbsp;</span>
+                    <span class="meta-year" id="detailsYear">2026</span>
+                    <span class="meta-separator">&nbsp;&middot;&nbsp;</span>
+                    <span class="meta-duration" id="detailsDuration">2h 10m</span>
+                    <span class="meta-separator">&nbsp;&middot;&nbsp;</span>
+                    <span class="meta-genres" id="detailsGenres">Action &middot; Adventure &middot; Sci-Fi</span>
+                </div>
+
+                <p class="details-overview-large" id="detailsOverview">Synopsis goes here...</p>
+
+                <!-- Actions Row -->
+                <div class="details-action-buttons">
+                    <button class="btn btn-play-circle" id="detailsPlayBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+
+                    <!-- Watchlist Circular Toggle -->
+                    <div class="watchlist-wrapper">
+                      <input type="checkbox" id="detailsFavCheckbox" class="hidden-trigger">
+                      <label for="detailsFavCheckbox" class="circle outline-circle" id="detailsFavBtn">
+                        <ion-icon class="icon-add" name="add-outline"></ion-icon>
+                        <ion-icon class="icon-check" name="checkmark-outline"></ion-icon>
+                      </label>
+                    </div>
+                    
+                    <button class="btn btn-secondary-pill" id="detailsReportBtn" title="Report an issue">
+                        Report
+                    </button>
+                    
+                    <button class="btn btn-secondary-pill" id="detailsSimilarsBtn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        Similars
+                    </button>
+                </div>
+
+                <!-- Director List -->
+                <div class="details-cast-list hidden" id="detailsDirectorContainer">
+                    <span class="cast-label notranslate" translate="no" id="labelDirector">Director:</span>
+                    <span id="detailsDirectorText" class="cast-text"></span>
+                </div>
+                <!-- Cast List -->
+                <div class="details-cast-list hidden" id="detailsCastContainer">
+                    <span class="cast-label notranslate" translate="no" id="labelCast">Cast:</span>
+                    <span id="detailsCastText" class="cast-text"></span>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+        <!-- 2. Scrollable Extra Content (below the fold) -->
+        <div class="details-extra-content">
+
+            <!-- TV Show Season/Episode Selector -->
+            <div id="tvShowSection" class="tv-show-section hidden">
+                <div class="season-episode-header">
+                    <h3 class="shelf-title shelf-title-accent">Episodes</h3>
+                    <div class="season-controls">
+                        <div class="custom-select-wrapper" id="customSeasonSelect">
+                            <div class="custom-select-trigger season-select-pill" id="seasonSelectTrigger">
+                                <span>Season 1</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform 0.3s ease;"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                            <div class="custom-select-options" id="seasonSelectOptions"></div>
+                            <input type="hidden" id="seasonSelect" value="1">
+                        </div>
+                        <div class="season-select-pill" id="episodeSortBtn" title="Reverse Sort" style="padding: 0.45rem; min-width: auto; gap: 4px; margin-right: auto; margin-left: 0.5rem;">
+                            <ion-icon name="swap-vertical-outline" style="font-size: 1.1rem;"></ion-icon>
+                            <span style="font-size: 0.75rem;" class="notranslate" translate="no">A-Z</span>
+                        </div>
+                        <div class="episode-search-wrap">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                            <input type="text" id="episodeSearch" class="episode-search-input" placeholder="Search episodes..." />
+                        </div>
+                    </div>
+                </div>
+                <div class="episode-list" id="episodeGrid"></div>
+            </div>
+
+            <!-- You May Like Section -->
+            <div class="details-similars-section" id="detailsSimilarsSection">
+                <h3 class="shelf-title shelf-title-accent">You may like</h3>
+                <div class="browse-grid" id="detailsSimilarsGrid" style="margin-top: 1rem;"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Main Views & Shelves Container -->
+    <main class="main-content" id="mainContent">
+        
+        <!-- Global Safety Banner -->
+        <div class="safety-banner" id="safetyBanner" style="position: relative; background: rgba(74, 222, 128, 0.1); border: 1px solid rgba(74, 222, 128, 0.2); border-radius: 12px; padding: 1rem 3rem 1rem 1.25rem; margin: 2rem 5% 3rem 5%; display: flex; align-items: center; justify-content: flex-start; gap: 12px; color: #4ade80;">
+            <ion-icon name="shield-checkmark" style="font-size: 1.5rem; flex-shrink: 0;"></ion-icon>
+            <span style="font-size: 0.9rem; font-weight: 500; line-height: 1.4;">100% Safe & Secure. Enjoy ad-free, malware-free streaming.</span>
+            <button id="closeSafetyBanner" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); background: none; border: none; color: #4ade80; font-size: 1.5rem; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0;">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+        </div>
+        <script>
+            (function() {
+                const banner = document.getElementById('safetyBanner');
+                const closeBtn = document.getElementById('closeSafetyBanner');
+                const hiddenTime = localStorage.getItem('safetyBannerHiddenTime');
+                const now = new Date().getTime();
+                
+                if (hiddenTime && (now - parseInt(hiddenTime)) < 24 * 60 * 60 * 1000) {
+                    banner.style.display = 'none';
+                }
+                
+                closeBtn.addEventListener('click', () => {
+                    banner.style.display = 'none';
+                    localStorage.setItem('safetyBannerHiddenTime', new Date().getTime().toString());
+                });
+            })();
+        </script>
+        <!-- Continue Watching Shelf -->
+        <section class="shelf-section hidden" id="continueWatchingShelf">
+            <div class="shelf-header">
+                <h2 class="shelf-title shelf-title-accent">Continue Watching</h2>
+                <span class="shelf-subtitle">Pick up right where you left off</span>
+            </div>
+            <div class="carousel-wrapper">
+                <button class="carousel-nav prev" data-target="continueTrack">‹</button>
+                <div class="carousel-track" id="continueTrack"></div>
+                <button class="carousel-nav next" data-target="continueTrack">›</button>
+            </div>
+        </section>
+
+        <!-- Watchlist Home Shelf (shown on Home page) -->
+        <section class="shelf-section hidden" id="watchlistHomeShelf">
+            <div class="shelf-header">
+                <h2 class="shelf-title shelf-title-accent">Watchlist</h2>
+                <a href="#" class="shelf-explore nav-link" data-view="watchlist">See all <ion-icon name="chevron-forward-outline"></ion-icon></a>
+            </div>
+            <div class="carousel-wrapper">
+                <button class="carousel-nav prev" data-target="watchlistHomeTrack">&#8249;</button>
+                <div class="carousel-track" id="watchlistHomeTrack"></div>
+                <button class="carousel-nav next" data-target="watchlistHomeTrack">&#8250;</button>
+            </div>
+        </section>
+
+        <!-- Continue Watching View (Dynamic Full-Page) -->
+        <section class="shelf-section hidden" id="continueSection">
+            <div class="movies-grid" id="continueGrid"></div>
+            <div class="empty-state hidden" id="emptyContinue">
+                <div class="empty-icon"><ion-icon name="play-circle-outline"></ion-icon></div>
+                <h3 id="emptyContinueTitle">No titles in Continue Watching</h3>
+                <p id="emptyContinueText">Movies and series you start watching will appear here so you can easily pick up where you left off.</p>
+                <button class="btn btn-primary mt-4" id="exploreContinueBtn">Explore Movies</button>
+            </div>
+        </section>
+
+        <!-- My Watchlist View (Dynamic) -->
+        <section class="shelf-section hidden" id="watchlistSection">
+            <div class="movies-grid" id="watchlistGrid"></div>
+            <div class="empty-state hidden" id="emptyWatchlist">
+                <div class="empty-icon"><ion-icon name="heart-dislike-outline"></ion-icon></div>
+                <h3>Your watchlist is empty</h3>
+                <p>Explore titles and tap the heart icon to save your favorite movies and series here!</p>
+                <button class="btn btn-primary mt-4" id="exploreBtn">Explore Movies</button>
+            </div>
+        </section>
+
+        <!-- Filtered Grid View (For Search / Genre Tabs) -->
+        <section class="shelf-section hidden" id="filteredSection">
+            <div class="shelf-header">
+                <h2 class="shelf-title" id="filteredTitle">Search Results</h2>
+                <span class="shelf-subtitle" id="filteredCount">0 titles found</span>
+            </div>
+            <div class="movies-grid" id="filteredGrid"></div>
+        </section>
+
+        <!-- ===== MOVIES BROWSE SECTION ===== -->
+        <section class="browse-section hidden" id="moviesSection">
+            <div class="browse-section-header">
+                <div class="browse-title-row">
+                    <h1 class="browse-title"><ion-icon name="film-outline"></ion-icon> Movies</h1>
+                    <span class="browse-count" id="moviesCount">0 titles</span>
+                </div>
+                <!-- Genre Filter Bar -->
+                <div class="browse-filter-bar" id="moviesFilterBar">
+                    <button class="browse-filter-btn active" data-genre="all" data-section="movies">All</button>
+                    <button class="browse-filter-btn" data-genre="Action" data-section="movies">Action</button>
+                    <button class="browse-filter-btn" data-genre="Adventure" data-section="movies">Adventure</button>
+                    <button class="browse-filter-btn" data-genre="Animation" data-section="movies">Animation</button>
+                    <button class="browse-filter-btn" data-genre="Comedy" data-section="movies">Comedy</button>
+                    <button class="browse-filter-btn" data-genre="Crime" data-section="movies">Crime</button>
+                    <button class="browse-filter-btn" data-genre="Drama" data-section="movies">Drama</button>
+                    <button class="browse-filter-btn" data-genre="Family" data-section="movies">Family</button>
+                    <button class="browse-filter-btn" data-genre="Kids" data-section="movies">Kids</button>
+                    <button class="browse-filter-btn" data-genre="History" data-section="movies">History</button>
+                    <button class="browse-filter-btn" data-genre="Fantasy" data-section="movies">Fantasy</button>
+                    <button class="browse-filter-btn" data-genre="Horror" data-section="movies">Horror</button>
+                    <button class="browse-filter-btn" data-genre="Mystery" data-section="movies">Mystery</button>
+                    <button class="browse-filter-btn" data-genre="Romance" data-section="movies">Romance</button>
+                    <button class="browse-filter-btn" data-genre="Sci-Fi" data-section="movies">Sci-Fi</button>
+                    <button class="browse-filter-btn" data-genre="Science-Fiction" data-section="movies">Science Fiction</button>
+                    <button class="browse-filter-btn" data-genre="Thriller" data-section="movies">Thriller</button>
+                    <button class="browse-filter-btn" data-genre="War" data-section="movies">War</button>
+                </div>
+            </div>
+            <!-- Count Label -->
+            <div class="browse-results-bar">
+                <span id="moviesCountLabel">Showing all titles</span>
+            </div>
+            <!-- Cards Grid -->
+            <div class="browse-grid" id="moviesGrid"></div>
+            <!-- Pagination -->
+            <div class="browse-pagination" id="moviesPagination"></div>
+        </section>
+
+        <!-- ===== SERIES BROWSE SECTION ===== -->
+        <section class="browse-section hidden" id="seriesSection">
+            <div class="browse-section-header">
+                <div class="browse-title-row">
+                    <h1 class="browse-title"><ion-icon name="tv-outline"></ion-icon> Series</h1>
+                    <span class="browse-count" id="seriesCount">0 titles</span>
+                </div>
+                <!-- Genre Filter Bar -->
+                <div class="browse-filter-bar" id="seriesFilterBar">
+                    <button class="browse-filter-btn active" data-genre="all" data-section="series">All</button>
+                    <button class="browse-filter-btn" data-genre="Action" data-section="series">Action</button>
+                    <button class="browse-filter-btn" data-genre="Adventure" data-section="series">Adventure</button>
+                    <button class="browse-filter-btn" data-genre="Animation" data-section="series">Animation</button>
+                    <button class="browse-filter-btn" data-genre="Comedy" data-section="series">Comedy</button>
+                    <button class="browse-filter-btn" data-genre="Crime" data-section="series">Crime</button>
+                    <button class="browse-filter-btn" data-genre="Drama" data-section="series">Drama</button>
+                    <button class="browse-filter-btn" data-genre="Family" data-section="series">Family</button>
+                    <button class="browse-filter-btn" data-genre="Kids" data-section="series">Kids</button>
+                    <button class="browse-filter-btn" data-genre="History" data-section="series">History</button>
+                    <button class="browse-filter-btn" data-genre="Fantasy" data-section="series">Fantasy</button>
+                    <button class="browse-filter-btn" data-genre="Horror" data-section="series">Horror</button>
+                    <button class="browse-filter-btn" data-genre="Mystery" data-section="series">Mystery</button>
+                    <button class="browse-filter-btn" data-genre="Romance" data-section="series">Romance</button>
+                    <button class="browse-filter-btn" data-genre="Sci-Fi" data-section="series">Sci-Fi</button>
+                    <button class="browse-filter-btn" data-genre="Science-Fiction" data-section="series">Science Fiction</button>
+                    <button class="browse-filter-btn" data-genre="Thriller" data-section="series">Thriller</button>
+                    <button class="browse-filter-btn" data-genre="War" data-section="series">War</button>
+                </div>
+            </div>
+            <!-- Count Label -->
+            <div class="browse-results-bar">
+                <span id="seriesCountLabel">Showing all titles</span>
+            </div>
+            <!-- Cards Grid -->
+            <div class="browse-grid" id="seriesGrid"></div>
+            <!-- Pagination -->
+            <div class="browse-pagination" id="seriesPagination"></div>
+        </section>
+
+        <!-- Category Shelves Container -->
+        <div id="defaultShelves">
+            <!-- Shelf 1: Trending Now (Mixed) -->
+            <section class="shelf-section">
+                <div class="shelf-header">
+                    <div>
+                        <h2 class="shelf-title shelf-title-accent">Trending This Week</h2>
+                        <span class="shelf-subtitle">Most watched movies and series this week</span>
+                    </div>
+                    <a href="#" class="shelf-explore nav-link" data-view="movies">Explore All <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                </div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev" data-target="trendingTrack">‹</button>
+                    <div class="carousel-track" id="trendingTrack"></div>
+                    <button class="carousel-nav next" data-target="trendingTrack">›</button>
+                </div>
+            </section>
+            <!-- Shelf 1: Trending Movies -->
+            <section class="shelf-section">
+                <div class="shelf-header">
+                    <div>
+                        <h2 class="shelf-title shelf-title-accent">Trending Movies This Week</h2>
+                        <span class="shelf-subtitle">Most watched movies this week</span>
+                    </div>
+                    <a href="#" class="shelf-explore nav-link" data-view="movies">Explore All <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                </div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev" data-target="trendingMoviesTrack">‹</button>
+                    <div class="carousel-track" id="trendingMoviesTrack"></div>
+                    <button class="carousel-nav next" data-target="trendingMoviesTrack">›</button>
+                </div>
+            </section>
+
+            <!-- Shelf 2: Trending Series -->
+            <section class="shelf-section">
+                <div class="shelf-header">
+                    <div>
+                        <h2 class="shelf-title shelf-title-accent">Trending Series This Week</h2>
+                        <span class="shelf-subtitle">Most watched series this week</span>
+                    </div>
+                    <a href="#" class="shelf-explore nav-link" data-view="series">Explore All <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                </div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev" data-target="trendingSeriesTrack">‹</button>
+                    <div class="carousel-track" id="trendingSeriesTrack"></div>
+                    <button class="carousel-nav next" data-target="trendingSeriesTrack">›</button>
+                </div>
+            </section>
+
+
+        </div>
+
+    </main>
+
+    <footer id="homeFooter" class="site-footer" style="margin-top: 4rem; width: 100%;">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo notranslate" translate="no">Cine<span class="text-primary">Watch</span></div>
+                <p class="footer-desc">Your ultimate destination for movies and TV series. Stream anytime, anywhere. 100% safe and secure.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Series</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Report a Problem</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copyright" style="font-size: 0.85rem; color: var(--text-dim); text-align: center; line-height: 1.5; padding: 0 1rem;">
+                &copy; 2026 CineWatch. All rights reserved. <span style="margin: 0 15px;">|</span> Disclaimer: This site does not store any files on its server. All contents are provided by non-affiliated third parties.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Video Player Modal -->
+    <div class="video-modal-overlay hidden" id="videoModal">
+        <div class="video-container">
+
+            <!-- Mouse Catcher for Iframe Hover -->
+            <div class="mouse-catcher" id="mouseCatcher"></div>
+
+            <!-- Video Header (Hover Zone) -->
+            <div class="video-header">
+                <!-- Back Button -->
+                <button class="player-back-btn" id="closePlayerBtn" title="Go Back">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- HTML5 Video Player -->
+            <video id="videoElement" class="video-element" preload="metadata" playsinline>
+                <source src="" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <!-- Iframe Video Player (For External Embeds) -->
+            <iframe id="iframeElement" class="video-element hidden" src="" width="100%" height="100%" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" allow="autoplay; fullscreen; encrypted-media; picture-in-picture"></iframe>
+            
+
+
+            <!-- Video End Overlay -->
+            <div id="videoEndOverlay" class="hidden" style="position: absolute; inset: 0; background: rgba(0,0,0,0.85); z-index: 50; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.5rem; backdrop-filter: blur(8px);">
+                <h2 style="color: white; font-size: 2rem; font-weight: 700;">Episode Finished</h2>
+                <div style="display: flex; gap: 1rem; align-items: center;">
+                    <button class="btn-secondary-pill" id="overlayPrevEpBtn" style="font-size: 1rem; padding: 0.7rem 1.4rem;">
+                        <ion-icon name="play-skip-back-outline"></ion-icon> Previous
+                    </button>
+                    <button class="btn btn-primary" id="overlayNextEpBtn" style="border-radius: 100px; padding: 0.8rem 2rem; font-weight: 600; font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem; border: none; cursor: pointer; box-shadow: 0 4px 15px rgba(229, 9, 20, 0.4);">
+                        Next Episode <ion-icon name="play-skip-forward-outline"></ion-icon>
+                    </button>
+                </div>
+                <button class="btn-secondary-pill" id="overlayReplayBtn" style="margin-top: 1rem; border: none; background: transparent;">
+                    <ion-icon name="refresh-outline"></ion-icon> Replay
+                </button>
+            </div>
+
+            <!-- Center Play/Pause Overlay Animation -->
+            <div class="video-center-overlay hidden" id="videoCenterOverlay">
+                <span class="center-play-icon" id="centerPlayIcon"><ion-icon name="play-outline"></ion-icon></span>
+            </div>
+
+            <!-- Bottom Controls Gradient Overlay -->
+            <div class="player-bottom-area" id="playerControlsBar">
+
+                <!-- Show Info (bottom-left) -->
+                <div class="player-info-area">
+                    <img class="player-show-poster hidden" id="playerShowPoster" src="" alt="" />
+                    <div class="player-info-text">
+                        <div class="player-meta" id="playerMeta"></div>
+                        <div class="player-ep-title" id="playerMovieTitle">Movie Title</div>
+                        <div class="player-ep-overview hidden" id="playerEpOverview"></div>
+                    </div>
+                </div>
+
+                <!-- Server Select (hidden, accessible via settings) -->
+                <div class="server-select-wrap hidden" id="serverSelectWrap" style="position: absolute; bottom: 90px; right: 2rem; background: rgba(0,0,0,0.85); border: 1px solid rgba(255,255,255,0.15); border-radius: 12px; padding: 0.75rem 1.2rem; backdrop-filter: blur(12px);">
+                    <select id="videoServerSelect" class="season-select" style="display:none;"></select>
+                </div>
+
+                <!-- Progress Bar Row -->
+                <div class="player-progress-row">
+                    <span class="player-time-left" id="currentTimeText">0:00</span>
+                    <div class="seek-container">
+                        <div class="seek-progress-bg">
+                            <div class="seek-progress-fill" id="seekFill"></div>
+                        </div>
+                        <input type="range" id="seekBar" class="seek-slider" min="0" max="100" value="0" step="0.1">
+                        <div class="seek-tooltip" id="seekTooltip">00:00</div>
+                    </div>
+                    <span class="player-time-right" id="durationText">0:00</span>
+                </div>
+
+                <!-- Controls Row -->
+                <div class="controls-row">
+                    <!-- Left Controls -->
+                    <div class="controls-left">
+                        <button class="ctrl-btn" id="playPauseBtn" title="Play/Pause (Space)"><ion-icon name="play-outline"></ion-icon></button>
+                        <button class="ctrl-btn ctrl-skip" id="rewindBtn" title="Rewind 10s">
+                            <ion-icon name="refresh-outline" style="transform: scaleX(-1); display:block;"></ion-icon>
+                            <span class="skip-label">10</span>
+                        </button>
+                        <button class="ctrl-btn ctrl-skip" id="forwardBtn" title="Forward 10s">
+                            <ion-icon name="refresh-outline" style="display:block;"></ion-icon>
+                            <span class="skip-label">10</span>
+                        </button>
+                        <div class="volume-container">
+                            <button class="ctrl-btn" id="muteBtn" title="Mute/Unmute"><ion-icon name="volume-medium-outline"></ion-icon></button>
+                            <input type="range" id="volumeBar" class="volume-slider" min="0" max="1" step="0.05" value="1">
+                        </div>
+                    </div>
+
+                    <!-- Right Controls -->
+                    <div class="controls-right">
+                        <button class="ctrl-btn" id="playerNextEpBtn" title="Next Episode"><ion-icon name="play-skip-forward-outline"></ion-icon></button>
+                        <button class="ctrl-btn ctrl-btn-label" id="playerEpisodesBtn" title="Episodes">
+                            <ion-icon name="list-outline"></ion-icon>
+                            <span>Episodes</span>
+                        </button>
+                        <button class="ctrl-btn" id="fullscreenBtn" title="Fullscreen (F)"><ion-icon name="expand-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Authentication (Login / Signup) Modal -->
+    <div class="modal-overlay hidden" id="authModal" onclick="document.getElementById('authModal').classList.add('hidden')">
+        <div class="modal-card auth-modal-card" onclick="event.stopPropagation()">
+            <div class="bg"></div>
+            <div class="blob"></div>
+            <div class="blob blob2"></div>
+            <button class="modal-close-btn" id="closeAuthBtn" onclick="document.getElementById('authModal').classList.add('hidden')">&times;</button>
+
+            <div class="auth-modal-body">
+                <div class="auth-header">
+                    <div class="auth-logo notranslate" translate="no"><ion-icon name="ticket" style="color: var(--primary); font-size: 1.3em; vertical-align: middle;"></ion-icon> CineWatch</div>
+                    <p class="auth-subtitle">Welcome to your personal cinema universe</p>
+                </div>
+
+                <!-- Auth Tabs -->
+                <div class="auth-tabs">
+                    <button class="auth-tab active" id="tabLoginBtn" onclick="this.classList.add('active'); document.getElementById('tabSignupBtn').classList.remove('active'); document.getElementById('loginForm').classList.remove('hidden'); document.getElementById('signupForm').classList.add('hidden');"><ion-icon name="log-in-outline"></ion-icon> Sign In</button>
+                    <button class="auth-tab" id="tabSignupBtn" onclick="this.classList.add('active'); document.getElementById('tabLoginBtn').classList.remove('active'); document.getElementById('signupForm').classList.remove('hidden'); document.getElementById('loginForm').classList.add('hidden');"><ion-icon name="person-add-outline"></ion-icon> <span id="textTabSignup" class="notranslate" translate="no">Create Account</span></button>
+                </div>
+
+                <!-- Login Form -->
+                <form id="loginForm" class="auth-form" novalidate>
+                    <div class="form-group">
+                        <label for="loginUsername">Username</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <input type="text" id="loginUsername" name="username" class="form-control" placeholder="Username"
+                                autocomplete="username" required>
+                        </div>
+                        <div class="form-error" id="loginUsernameError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginPassword" class="notranslate" translate="no">Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="loginPassword" class="form-control" placeholder="••••••••" autocomplete="current-password" required>
+                            <button type="button" class="password-toggle-btn" aria-label="Show/hide password" id="toggleLoginPassword">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </button>
+                        </div>
+                        <div class="form-error" id="loginPasswordError"></div>
+                        <div style="text-align: right; margin-top: 0.5rem;">
+                            <a href="#" id="showResetFormBtn" style="font-size: 0.95rem; color: var(--primary); text-decoration: none;">Forgot Password?</a>
+                        </div>
+                    </div>
+
+                    <div id="cf-turnstile" class="cf-widget hidden">
+                        <div class="cf-spinner" id="cf-spinner"></div>
+                        <div class="cf-text" id="cf-text">Verifying...</div>
+                        <div class="cf-logo-container">
+                            <div class="cf-logo-text">
+                                <svg width="24" height="24" viewBox="0 2 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#F38020" d="M19.1 11.8c-.8-4.2-4.4-7.2-8.7-7.2-3.1 0-5.8 1.5-7.3 3.9-.3-.1-.7-.2-1.1-.2-2.1 0-3.9 1.7-3.9 3.9 0 .4.1.7.2 1 .1-.1.2-.1.3-.2.8-1.5 2.3-2.6 4-3-.6.6-1 1.4-1 2.3 0 1.8 1.5 3.3 3.3 3.3H19c2.2 0 4-1.8 4-4 0-2-1.6-3.7-3.6-3.9z"/>
+                                </svg>
+                                <span>CLOUDFLARE</span>
+                            </div>
+                            <div class="cf-links">Privacy &bull; Terms</div>
+                        </div>
+                    </div>
+
+                    <div class="form-alert hidden" id="loginAlert"></div>
+                    <button type="submit" class="btn btn-primary btn-block"><ion-icon name="log-in-outline"></ion-icon> Sign
+                        In</button>
+                </form>
+
+                <!-- Signup Form -->
+                <form id="signupForm" class="auth-form hidden" novalidate>
+                    <div class="form-group">
+                        <label for="signupName">Username</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <input type="text" id="signupName" name="username" class="form-control" placeholder="Username" required>
+                        </div>
+                        <div class="form-error" id="signupNameError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupEmail" class="notranslate" translate="no">Email Address</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" id="signupEmail" class="form-control" placeholder="Email" autocomplete="email" required>
+                        </div>
+                        <div class="form-error" id="signupEmailError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupPassword" class="notranslate" translate="no">Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="signupPassword" class="form-control" placeholder="Password" autocomplete="new-password" required>
+                            <button type="button" class="password-toggle-btn" aria-label="Show/hide password" id="toggleSignupPassword">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </button>
+                        </div>
+                        <div class="password-strength-bar" id="passwordStrengthBar">
+                            <div class="strength-segment" id="strengthWeak"></div>
+                            <div class="strength-segment" id="strengthMedium"></div>
+                            <div class="strength-segment" id="strengthStrong"></div>
+                        </div>
+                        <div class="strength-text" id="passwordStrengthText"></div>
+                        <ul class="password-requirements" id="passwordReqs">
+                            <li id="reqLength"><ion-icon name="close-circle-outline"></ion-icon> At least 8 characters</li>
+                            <li id="reqCapital"><ion-icon name="close-circle-outline"></ion-icon> Uppercase letter</li>
+                            <li id="reqNumber"><ion-icon name="close-circle-outline"></ion-icon> Number</li>
+                            <li id="reqSymbol"><ion-icon name="close-circle-outline"></ion-icon> Symbol</li>
+                        </ul>
+                        <div class="form-error" id="signupPasswordError"></div>
+                    </div>
+                    
+                    <div id="cf-turnstile-signup" class="cf-widget hidden">
+                        <div class="cf-spinner" id="cf-spinner-signup"></div>
+                        <div class="cf-text" id="cf-text-signup">Verifying...</div>
+                        <div class="cf-logo-container">
+                            <div class="cf-logo-text">
+                                <svg width="24" height="24" viewBox="0 2 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#F38020" d="M19.1 11.8c-.8-4.2-4.4-7.2-8.7-7.2-3.1 0-5.8 1.5-7.3 3.9-.3-.1-.7-.2-1.1-.2-2.1 0-3.9 1.7-3.9 3.9 0 .4.1.7.2 1 .1-.1.2-.1.3-.2.8-1.5 2.3-2.6 4-3-.6.6-1 1.4-1 2.3 0 1.8 1.5 3.3 3.3 3.3H19c2.2 0 4-1.8 4-4 0-2-1.6-3.7-3.6-3.9z"/>
+                                </svg>
+                                <span>CLOUDFLARE</span>
+                            </div>
+                            <div class="cf-links">Privacy &bull; Terms</div>
+                        </div>
+                    </div>
+
+                    <div class="form-alert hidden" id="signupAlert"></div>
+
+                    <button type="submit" class="btn btn-primary btn-block"><ion-icon name="person-add-outline"></ion-icon>
+                        <span id="textBtnSignup" class="notranslate" translate="no">Create Account</span></button>
+                </form>
+
+                <!-- Reset Password Form -->
+                <form id="resetPasswordForm" class="auth-form hidden" novalidate>
+                    <div style="margin-bottom: 1.5rem; text-align: center;">
+                        <h3 style="color: var(--text-light); margin-bottom: 0.5rem;">Reset Password</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Enter your username to receive a password reset link.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resetInput">Username</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                            <input type="text" id="resetInput" class="form-control" placeholder="Username" required>
+                        </div>
+                        <div class="form-error" id="resetError"></div>
+                    </div>
+
+                    <div class="form-alert hidden" id="resetAlert"></div>
+
+                    <button type="submit" class="btn btn-primary btn-block"><ion-icon name="paper-plane-outline"></ion-icon> Send Reset Link</button>
+                    
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <a href="#" id="backToLoginBtn" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem; transition: color 0.2s;">Back to Login</a>
+                    </div>
+                </form>
+
+                <!-- Change Password Form -->
+                <form id="changePasswordForm" class="auth-form hidden" novalidate>
+                    <div style="margin-bottom: 1.5rem; text-align: center;">
+                        <h3 style="color: var(--text-light); margin-bottom: 0.5rem;">Change Password</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Securely update your password.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpOldModal">Old Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="cpOldModal" class="form-control" placeholder="Old Password" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpNewModal">New Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="cpNewModal" class="form-control" placeholder="New Password" required minlength="6">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpConfirmModal">Confirm New Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="cpConfirmModal" class="form-control" placeholder="Confirm Password" required>
+                        </div>
+                    </div>
+
+                    <div class="form-alert hidden" id="cpAlert"></div>
+
+                    <button type="submit" class="btn btn-primary btn-block" id="cpSubmitBtn">Update Password</button>
+                    
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <a href="#" id="cancelCpBtn" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem; transition: color 0.2s;">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+
+    <!-- Report / Contact Issue Modal -->
+    <div class="modal-overlay hidden" id="reportModal">
+        <div class="modal-card auth-modal-card" style="padding-bottom: 2rem;">
+            <div class="bg"></div>
+            <div class="blob"></div>
+            <div class="blob blob2"></div>
+            <button class="modal-close-btn" id="closeReportBtn">&times;</button>
+            
+            <div class="auth-modal-body">
+                <div class="auth-header">
+                    <div class="auth-logo" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                        Report an Issue
+                    </div>
+                    <p class="auth-subtitle">Encountered a problem or have feedback? Let us know below.</p>
+                </div>
+                <form id="reportForm" class="auth-form" novalidate>
+                    <div class="form-group">
+                        <label for="reportEmail">Email Address</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" id="reportEmail" class="form-control" placeholder="Your email address" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reportSubject">Title / Issue Type</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="warning-outline"></ion-icon>
+                            <input type="text" id="reportSubject" class="form-control" placeholder="e.g. Video buffering, Audio sync, Missing subtitles..." required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reportMessage">Description / Details</label>
+                        <textarea id="reportMessage" class="form-control" rows="4" placeholder="Describe the issue or feedback in detail..." style="resize: vertical; padding-left: 1rem;" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" style="margin-top: 1.5rem;">
+                        <ion-icon name="paper-plane-outline"></ion-icon> Submit Report
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Translate Engine -->
+    <div id="google_translate_element" style="display:none;"></div>
+    <style>
+        /* Hide Google Translate Bar and Tooltips */
+        body { top: 0 !important; }
+        .skiptranslate iframe { display: none !important; }
+        #goog-gt-tt { display: none !important; }
+        .goog-text-highlight { background: none !important; box-shadow: none !important; }
+
+        /* Custom Language Dropdown Styles */
+        .custom-lang-dropdown {
+            position: relative;
+            margin-right: 0.5rem;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 500;
+            z-index: 1000;
+            user-select: none;
+        }
+        .lang-dropdown-selected {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .lang-dropdown-selected:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255,255,255,0.3);
+        }
+        .lang-icon { font-size: 1.1rem; color: var(--primary); }
+        .lang-arrow { font-size: 0.9rem; color: var(--text-muted); transition: transform 0.3s ease; }
+        .custom-lang-dropdown.open .lang-arrow { transform: rotate(180deg); }
+        .custom-lang-dropdown.open .lang-dropdown-selected {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--primary);
+        }
+
+        .lang-dropdown-options {
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            background: rgba(15, 15, 20, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 6px;
+            width: max-content;
+            min-width: 120px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-15px) scale(0.95);
+            transform-origin: top right;
+            transition: visibility 0.2s, opacity 0.2s, transform 0.2s;
+        }
+        /* Handle RTL layout for dropdown options positioning */
+        .rtl-layout .lang-dropdown-options { right: auto; left: 0; transform-origin: top left; }
+
+        @keyframes dropdownPop {
+            0% { opacity: 0; transform: translateY(-15px) scale(0.95); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        @keyframes optionFadeIn {
+            0% { opacity: 0; transform: translateX(10px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+        .rtl-layout @keyframes optionFadeIn {
+            0% { opacity: 0; transform: translateX(-10px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        .custom-lang-dropdown.open .lang-dropdown-options {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) scale(1);
+            animation: dropdownPop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        .lang-option {
+            padding: 8px 12px;
+            color: var(--text-muted);
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            opacity: 1; /* Default state when closed */
+        }
+        
+        .custom-lang-dropdown.open .lang-option {
+            opacity: 0;
+            animation: optionFadeIn 0.3s forwards ease-out;
+        }
+        .custom-lang-dropdown.open .lang-option:nth-child(1) { animation-delay: 0.05s; }
+        .custom-lang-dropdown.open .lang-option:nth-child(2) { animation-delay: 0.10s; }
+        .custom-lang-dropdown.open .lang-option:nth-child(3) { animation-delay: 0.15s; }
+        .custom-lang-dropdown.open .lang-option:nth-child(4) { animation-delay: 0.20s; }
+
+        .lang-option:hover {
+            background: rgba(255, 255, 255, 0.08);
+            color: white;
+        }
+        .lang-option.active {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+    </style>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en', 
+                includedLanguages: 'ar,ku,ckb,en',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+
+        function changeLanguage(langCode) {
+            if (langCode === 'en') {
+                document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+                document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + window.location.hostname;
+            } else {
+                document.cookie = "googtrans=/en/" + langCode + "; path=/;";
+                document.cookie = "googtrans=/en/" + langCode + "; path=/; domain=" + window.location.hostname;
+            }
+            window.location.reload();
+        }
+
+        // Custom Dropdown Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const cookies = document.cookie.split(';');
+            let currentLang = 'en';
+            for (let c of cookies) {
+                if (c.trim().startsWith('googtrans=')) {
+                    const val = c.split('=')[1];
+                    const parts = val.split('/');
+                    if (parts.length > 2) currentLang = parts[2];
+                    break;
+                }
+            }
+            
+            // RTL handling for Kurdish dialects (Sorani and Kurmanji) and Arabic
+            if (currentLang === 'ckb' || currentLang === 'ku' || currentLang === 'ar') {
+                document.body.style.direction = 'rtl';
+                document.body.classList.add('rtl-layout');
+            } else {
+                // Force LTR for English
+                const style = document.createElement('style');
+                style.innerHTML = 'html, body { direction: ltr !important; }';
+                document.head.appendChild(style);
+            }
+            
+            // Manual translation for Login Password Label
+            const loginPwLabel = document.querySelector('label[for="loginPassword"]');
+            const signupPwLabel = document.querySelector('label[for="signupPassword"]');
+            const signupEmailLabel = document.querySelector('label[for="signupEmail"]');
+            const textTabSignup = document.getElementById('textTabSignup');
+            const textBtnSignup = document.getElementById('textBtnSignup');
+            
+            const loginPwInput = document.getElementById('loginPassword');
+            const signupPwInput = document.getElementById('signupPassword');
+            const signupEmailInput = document.getElementById('signupEmail');
+            
+            const labelDirector = document.getElementById('labelDirector');
+            const labelCast = document.getElementById('labelCast');
+            
+            if (currentLang === 'ckb') {
+                if (loginPwLabel) loginPwLabel.textContent = 'وشەی نهێنی';
+                if (signupPwLabel) signupPwLabel.textContent = 'وشەی نهێنی';
+                if (signupEmailLabel) signupEmailLabel.textContent = 'ئیمەیڵ';
+                if (textTabSignup) textTabSignup.textContent = 'دروستکردنی هەژمار';
+                if (textBtnSignup) textBtnSignup.textContent = 'دروستکردنی هەژمار';
+                if (loginPwInput) loginPwInput.placeholder = 'وشەی نهێنی';
+                if (signupPwInput) signupPwInput.placeholder = 'وشەی نهێنی';
+                if (signupEmailInput) signupEmailInput.placeholder = 'ئیمەیڵ';
+                if (labelDirector) labelDirector.textContent = 'دەرهێنەر:';
+                if (labelCast) labelCast.textContent = 'ئەکتەرەکان:';
+            } else if (currentLang === 'ar') {
+                if (loginPwLabel) loginPwLabel.textContent = 'كلمة المرور';
+                if (signupPwLabel) signupPwLabel.textContent = 'كلمة المرور';
+                if (signupEmailLabel) signupEmailLabel.textContent = 'البريد الإلكتروني';
+                if (textTabSignup) textTabSignup.textContent = 'إنشاء حساب';
+                if (textBtnSignup) textBtnSignup.textContent = 'إنشاء حساب';
+                if (loginPwInput) loginPwInput.placeholder = 'كلمة المرور';
+                if (signupPwInput) signupPwInput.placeholder = 'كلمة المرور';
+                if (signupEmailInput) signupEmailInput.placeholder = 'البريد الإلكتروني';
+                if (labelDirector) labelDirector.textContent = 'المخرج:';
+                if (labelCast) labelCast.textContent = 'طاقم العمل:';
+            } else if (currentLang === 'ku') {
+                if (loginPwLabel) loginPwLabel.textContent = 'Şîfre';
+                if (signupPwLabel) signupPwLabel.textContent = 'Şîfre';
+                if (signupEmailLabel) signupEmailLabel.textContent = 'Navnîşana E-nameyê';
+                if (textTabSignup) textTabSignup.textContent = 'Hesab Çêbikin';
+                if (textBtnSignup) textBtnSignup.textContent = 'Hesab Çêbikin';
+                if (loginPwInput) loginPwInput.placeholder = 'Şîfre';
+                if (signupPwInput) signupPwInput.placeholder = 'Şîfre';
+                if (signupEmailInput) signupEmailInput.placeholder = 'Navnîşana E-nameyê';
+                if (labelDirector) labelDirector.textContent = 'Derhêner:';
+                if (labelCast) labelCast.textContent = 'Lîstikvan:';
+            } else {
+                if (loginPwLabel) loginPwLabel.textContent = 'Password';
+                if (signupPwLabel) signupPwLabel.textContent = 'Password';
+                if (signupEmailLabel) signupEmailLabel.textContent = 'Email Address';
+                if (textTabSignup) textTabSignup.textContent = 'Create Account';
+                if (textBtnSignup) textBtnSignup.textContent = 'Create Account';
+                if (loginPwInput) loginPwInput.placeholder = '••••••••';
+                if (signupPwInput) signupPwInput.placeholder = 'Password';
+                if (signupEmailInput) signupEmailInput.placeholder = 'Email';
+                if (labelDirector) labelDirector.textContent = 'Director:';
+                if (labelCast) labelCast.textContent = 'Cast:';
+            }
+
+            // Setup Custom Dropdown
+            const dropdown = document.getElementById('customLangDropdown');
+            const dropdownBtn = document.getElementById('langDropdownBtn');
+            const selectedText = document.getElementById('langSelectedText');
+            const options = document.querySelectorAll('.lang-option');
+
+            // Set initial active state
+            options.forEach(opt => {
+                if (opt.dataset.value === currentLang) {
+                    opt.classList.add('active');
+                    selectedText.textContent = opt.textContent;
+                }
+                
+                opt.addEventListener('click', () => {
+                    if (opt.dataset.value !== currentLang) {
+                        changeLanguage(opt.dataset.value);
+                    }
+                });
+            });
+
+            // Toggle dropdown
+            dropdownBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                dropdown.classList.toggle('open');
+            });
+
+            // Close on click outside
+            document.addEventListener('click', (e) => {
+                if (!dropdown.contains(e.target)) {
+                    dropdown.classList.remove('open');
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>
