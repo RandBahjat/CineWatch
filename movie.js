@@ -25,7 +25,8 @@
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
 const FEATURED_TITLES = ["Reacher","Lanterns", "House of the Dragon", "The Invite", "Spider-Man: Brand New Day", "The Odyssey", "Obsession", "The Last House","Silo"];
-const TRENDING_TITLES = ["Reacher", "Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters", "The Invite","Spider-Man: No Way Home", "Young Washington","Disclosure Day", "The Last House", "Ted Lasso","Michael", "Project Hail Mary"];
+const POPULAR_MOVIES = ["Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters", "The Invite", "Spider-Man: No Way Home", "Young Washington", "Disclosure Day", "The Last House", "Michael", "Project Hail Mary"]; // Add titles here for 'Popular Movie'
+const POPULAR_SERIES = ["Reacher", "Ted Lasso"]; // Add titles here for 'Popular Series'
 const TRENDING_THIS_WEEK_MOVIES = ["Spider-Man: Brand New Day","The Odyssey","Obsession","Minions & Monsters","The Last House","Disclosure Day","The Invete","The End of Oak Street","Backrooms","Camp Rock 3","Evil Dead Burn","Project Hail","Supergirl"]; // Add titles here for 'Trending Movies This Week'
 const TRENDING_THIS_WEEK_SERIES = ["Lanterns","Reacher","Lucky","Silo","Ted Lasso","X-Men '97"]; // Add titles here for 'Trending Series This Week'
 
@@ -597,8 +598,8 @@ function renderCarousels() {
   const shelfMap = {
     trendingMoviesTrack: MOVIES.filter((m) => TRENDING_THIS_WEEK_MOVIES.includes(m.title) && m.type !== "TV Show").sort((a, b) => TRENDING_THIS_WEEK_MOVIES.indexOf(a.title) - TRENDING_THIS_WEEK_MOVIES.indexOf(b.title)),
     trendingSeriesTrack: MOVIES.filter((m) => TRENDING_THIS_WEEK_SERIES.includes(m.title) && (m.type === "TV Show" || m.type === "Series")).sort((a, b) => TRENDING_THIS_WEEK_SERIES.indexOf(a.title) - TRENDING_THIS_WEEK_SERIES.indexOf(b.title)),
-    popularMoviesTrack: MOVIES.filter((m) => m.trending && m.type !== "TV Show").sort((a, b) => TRENDING_TITLES.indexOf(a.title) - TRENDING_TITLES.indexOf(b.title)),
-    popularSeriesTrack: MOVIES.filter((m) => m.trending && (m.type === "TV Show" || m.type === "Series")).sort((a, b) => TRENDING_TITLES.indexOf(a.title) - TRENDING_TITLES.indexOf(b.title)),
+    popularMoviesTrack: MOVIES.filter((m) => m.trending && m.type !== "TV Show").sort((a, b) => POPULAR_MOVIES.indexOf(a.title) - POPULAR_MOVIES.indexOf(b.title)),
+    popularSeriesTrack: MOVIES.filter((m) => m.trending && (m.type === "TV Show" || m.type === "Series")).sort((a, b) => POPULAR_SERIES.indexOf(a.title) - POPULAR_SERIES.indexOf(b.title)),
   };
 
   Object.keys(shelfMap).forEach((trackId) => {
