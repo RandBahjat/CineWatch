@@ -5678,73 +5678,57 @@ body.rtl-layout .account-side-panel {
 body.rtl-layout .account-side-panel.open {
   transform: translateX(0);
 }
-/* Language Prompt Modal */
-.lang-prompt-overlay {
+/* Language Toast Banner */
+.lang-toast {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(8px);
-  z-index: 10000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-.lang-prompt-overlay.active {
-  opacity: 1;
-  pointer-events: all;
-}
-.lang-prompt-modal {
+  bottom: 24px;
+  right: 24px;
   background: #151821;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  padding: 32px;
-  text-align: center;
-  width: 90%;
-  max-width: 400px;
-  box-shadow: 0 16px 40px rgba(0,0,0,0.4);
-  transform: translateY(20px);
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.lang-prompt-overlay.active .lang-prompt-modal {
-  transform: translateY(0);
-}
-.lang-prompt-modal h2 {
-  font-size: 24px;
-  margin-bottom: 8px;
-  color: #fff;
-}
-.lang-prompt-modal p {
-  font-size: 14px;
-  color: #aaa;
-  margin-bottom: 24px;
-}
-.lang-prompt-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+  z-index: 10000;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  max-width: 320px;
 }
-.lang-prompt-btn {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 12px 20px;
-  border-radius: 8px;
+.lang-toast.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+.lang-toast p {
+  font-size: 14px;
   color: #fff;
-  font-size: 16px;
+  margin: 0;
+  line-height: 1.4;
+}
+.lang-toast-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+.lang-toast-btn {
+  background: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 13px;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+  transition: color 0.2s;
 }
-.lang-prompt-btn:hover {
-  background: #E50914;
-  border-color: #E50914;
+.lang-toast-btn:hover {
+  color: #fff;
+}
+.lang-toast-btn.primary {
+  color: #E50914;
+}
+.lang-toast-btn.primary:hover {
+  color: #ff3b44;
 }
