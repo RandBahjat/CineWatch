@@ -607,6 +607,11 @@ function renderCarousels() {
     if (!track) return;
     const movieList = shelfMap[trackId];
     track.innerHTML = movieList.map(createMovieCardHTML).join("");
+
+    // Click opens details modal
+    track.querySelectorAll(".movie-card").forEach((card) => {
+      card.onclick = () => openDetailsModal(card.dataset.id);
+    });
   });
 }
 
