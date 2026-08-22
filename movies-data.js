@@ -294,6 +294,31 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
+    title: "The End of Oak Street",
+    type: "Movie",
+    year: 2026,
+    rating: 6,
+    age: "R",
+    duration: "2h 2m",
+    genres: [
+      "Action",
+      "Thriller",
+      "Drama"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/92Tsfx7SFafOqWsotvrlJbHyehd.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/5FJsyRUuLsyt2lZrDHbqFE4tJXN.jpg",
+    videoUrl: "1284465",
+    overview: "A dark, gritty reimagining based on the 17th-century classic ballad. The film follows an aging, battle-worn Robin Hood who has retreated into self-imposed exile, deeply tormented by the violent crimes and killings of his past outlaw life. When he is gravely wounded, he takes refuge in a remote priory. In the hands of a mysterious prioress and an orphaned girl, the cynical legend is offered one final, painful chance at spiritual salvation and redemption.",
+    director: "Michael Sarnoski",
+    cast: [
+      "Hugh Jackman, Jodie Comer, Bill Skarsgård, Murray Bartlett, Noah Jupe"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "The Dark Knight",
     type: "Movie",
     year: 2008,
