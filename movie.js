@@ -417,7 +417,7 @@ function setupHeroBanner() {
   heroTrack.innerHTML = featured.map((movie, idx) => {
     const backdropUrl = movie.backdrop || movie.poster || "";
     const bgStyle = backdropUrl ? `style="background-image: url('${backdropUrl}')"` : "";
-    const genresList = (movie.genres || []).slice(0, 3).join(" • ");
+    const genresList = (movie.genres || []).slice(0, 3).map(translateGenre).join(" • ");
 
     return `
       <div class="hero-slide">
@@ -576,7 +576,7 @@ function updateHeroBanner() {
 
 function createMovieCardHTML(movie) {
   const fav = isFavorite(movie.id);
-  const primaryGenre = movie.genres && movie.genres.length > 0 ? movie.genres[0] : "";
+  const primaryGenre = movie.genres && movie.genres.length > 0 ? translateGenre(movie.genres[0]) : "";
   const displayType = movie.type || (movie.seasons ? "TV Show" : "Movie");
   return `
     <div class="movie-card" data-id="${movie.id}">
@@ -1488,7 +1488,7 @@ function openDetailsModal(movieId) {
     }
 
     if (document.getElementById("detailsGenres")) {
-      document.getElementById("detailsGenres").innerHTML = movie.genres.join(" &middot; ");
+      document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &middot; ");
     }
 
     document.getElementById("detailsOverview").textContent = movie.overview;
@@ -2801,7 +2801,7 @@ function bindEventListeners() {
               <img src="${m.poster}" alt="${m.title}" style="animation-delay: ${i * 60 + 80}ms">
               <div class="search-item-info">
                 <div class="search-item-title notranslate" translate="no">${m.title}</div>
-                <div class="search-item-meta">⭐ ${m.rating} • ${m.year} • ${m.genres.join(", ")}</div>
+                <div class="search-item-meta">⭐ ${m.rating} • ${m.year} • ${m.genres.map(translateGenre).join(", ")}</div>
               </div>
             </div>
           `,
