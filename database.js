@@ -94,4 +94,4 @@ const mediaSchema = new mongoose.Schema({
 
 const Media = mongoose.model('Media', mediaSchema);
 
-module.exports = { User, SiteStats, DailyStats, Media, mongoose, getDbError: () => dbError };
+module.exports = { User, Rating, SiteStats, DailyStats, Media, mongoose, getDbError: () => dbError };
