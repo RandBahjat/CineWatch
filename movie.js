@@ -40,8 +40,6 @@ let MOVIES = [];
 function translateGenre(genre) {
   const cookies = document.cookie || '';
   const isSorani = cookies.includes('googtrans=/en/ckb');
-  const isKurmanji = cookies.includes('googtrans=/en/ku');
-
   if (isSorani) {
     if (genre === 'Fantasy') return 'فانتاسی';
     if (genre === 'Adventure') return 'سەرکێشی';
@@ -49,14 +47,6 @@ function translateGenre(genre) {
     if (genre === 'Sci-Fi') return 'خەیاڵی زانستی';
     if (genre === 'Mystery') return 'نهێنی';
     if (genre === 'Thriller') return 'هەستبزوێن';
-  } else if (isKurmanji) {
-    if (genre === 'Crime') return 'Suc';
-    if (genre === 'Drama') return 'Drama';
-    if (genre === 'Family') return 'Familu';
-    if (genre === 'Kids') return 'Zarok';
-    if (genre === 'Mystery') return 'Nepeni';
-    if (genre === 'Romance') return 'Romantizm';
-    if (genre === 'Sci-Fi') return 'Honaka Zanisti';
   }
   return genre;
 }
