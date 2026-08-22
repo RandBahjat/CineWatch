@@ -52444,7 +52444,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/gzOIymABxmetAECXtazEYCpMmfb.jpg',
     videoUrl: '78191',
     overview: 'Joe Goldberg, charming bookstore manager, become obsess with woman, use tech, manipulation, sometimes murder, get close to her. Each season new target, same dark pattern, love twist into obsession, obsession twist into violence.',
-    director: 'Greg Berlanti',
+    director: 'Greg Berlanti, Sera Gamble',
     cast: [
       'Penn Badgley',
       'Victoria Pedretti',
