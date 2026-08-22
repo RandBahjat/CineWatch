@@ -2714,7 +2714,7 @@ function bindEventListeners() {
       opt.onclick = () => {
         searchFilterDropdown.querySelectorAll(".filter-option").forEach(o => o.classList.remove("active"));
         opt.classList.add("active");
-        searchFilterBtn.innerHTML = `${opt.textContent} <ion-icon name="chevron-down-outline"></ion-icon>`;
+        searchFilterBtn.innerHTML = `<span id="filterBtnText" class="notranslate" translate="no">${opt.textContent}</span> <ion-icon name="chevron-down-outline"></ion-icon>`;
         searchFilterDropdown.classList.add("hidden");
 
         state.searchFilter = opt.dataset.filter;
