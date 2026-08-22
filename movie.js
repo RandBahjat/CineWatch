@@ -37,6 +37,14 @@ const POPULAR_SERIES = ["Reacher","House of the Dragon", "Ted Lasso","The Mental
 // They are loaded from media-data.js (included as a script tag before this file).
 let MOVIES = [];
 
+function translateGenre(genre) {
+  if (document.body.classList.contains('rtl-layout')) {
+    if (genre === 'Fantasy') return 'فانتاسی';
+    if (genre === 'Adventure') return 'سەرکێشی';
+  }
+  return genre;
+}
+
 async function loadMediaFromAPI() {
   // Load from local media-data.js instead of the API for speed and security.
   // To add/edit/remove movies or series, edit media-data.js directly.
