@@ -52443,7 +52443,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/oANi0vEE92nuijiZQgPZ88FSxqQ.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/gzOIymABxmetAECXtazEYCpMmfb.jpg',
     videoUrl: '78191',
-    overview: 'A dangerously charming, obsessive man goes to extreme measures to insert himself into the lives of women who fascinate him.',
+    overview: 'Joe Goldberg, charming bookstore manager, become obsess with woman, use tech, manipulation, sometimes murder, get close to her. Each season new target, same dark pattern, love twist into obsession, obsession twist into violence.',
     director: 'Greg Berlanti',
     cast: [
       'Penn Badgley',
