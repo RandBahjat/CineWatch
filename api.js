@@ -51,8 +51,8 @@ window.CW_API = {
     }
   },
 
-  async signUp(name, email, password) {
-    const { data, error } = await this.request('/signup', 'POST', { name, email, password });
+  async signUp(name, email, password, turnstileToken) {
+    const { data, error } = await this.request('/signup', 'POST', { name, email, password, turnstileToken });
     if (data && data.token) {
       this.setToken(data.token);
       const cloudData = { favorites: data.user?.favorites || [], continueWatching: data.user?.continueWatching || {} };
@@ -61,8 +61,8 @@ window.CW_API = {
     return { user: data ? data.user : null, error };
   },
 
-  async signIn(username, password) {
-    const { data, error } = await this.request('/login', 'POST', { username, password });
+  async signIn(username, password, turnstileToken) {
+    const { data, error } = await this.request('/login', 'POST', { username, password, turnstileToken });
     if (data && data.token) {
       this.setToken(data.token);
       const cloudData = { favorites: data.user?.favorites || [], continueWatching: data.user?.continueWatching || {} };
