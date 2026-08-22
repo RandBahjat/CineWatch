@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_3314">
+    <link rel="stylesheet" href="movie.css?v=20260816_3315">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_3372" defer></script>
-    <script src="movies-data.js?v=20260818_1247"></script>
-    <script src="series-data.js?v=20260818_1247"></script>
-    <script src="movie.js?v=20260818_1248" defer></script>
+    <script src="api.js?v=20260816_3373" defer></script>
+    <script src="movies-data.js?v=20260818_1248"></script>
+    <script src="series-data.js?v=20260818_1248"></script>
+    <script src="movie.js?v=20260818_1249" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -1097,8 +1097,14 @@
                 if (labelCast) labelCast.textContent = 'ئەکتەرەکان:';
                 if (navSeries1) navSeries1.textContent = 'زنجیرە';
                 if (navSeries2) navSeries2.textContent = 'زنجیرە';
-                document.querySelectorAll('.nav-link[data-view="home"]').forEach(el => el.innerHTML = '<ion-icon name="home-outline"></ion-icon> سەرەکی');
-                document.querySelectorAll('.nav-link[data-view="movies"]').forEach(el => el.innerHTML = '<ion-icon name="film-outline"></ion-icon> فلم');
+                const navHome1 = document.getElementById('navHome1');
+                const navHome2 = document.getElementById('navHome2');
+                const navMovies1 = document.getElementById('navMovies1');
+                const navMovies2 = document.getElementById('navMovies2');
+                if (navHome1) navHome1.textContent = 'سەرەکی';
+                if (navHome2) navHome2.textContent = 'سەرەکی';
+                if (navMovies1) navMovies1.textContent = 'فلم';
+                if (navMovies2) navMovies2.textContent = 'فلم';
                 if (filterBtnText) filterBtnText.textContent = 'فیلم و زنجیرە';
                 if (filterOptAll) filterOptAll.textContent = 'فیلم و زنجیرە';
                 if (filterOptMovie) filterOptMovie.textContent = 'تەنها فیلم';
