@@ -52858,7 +52858,7 @@ window._SERIES_DATA = [
     genres: ["Drama", "Western"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/wowtdtDM980GjuxCXJY4seeqP2O.jpg",
-    videoUrl: "299",
+    videoUrl: "299167",
     overview: "The series follows fan-favorite characters Beth Dutton and Rip Wheeler as they leave Montana and attempt to build a new life in South Texas. Their fresh start is quickly complicated by a ruthless rival ranch and the persistent shadows of their past.",
     director: "Taylor Sheridan",
     cast: ["Kelly Reilly, Cole Hauser, Finn Little, Ed Harris, Annette Bening"],
