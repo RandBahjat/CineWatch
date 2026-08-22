@@ -15,7 +15,7 @@ window._SERIES_DATA = [
     videoUrl: "138502",
     overview: "X-Men '97 is a revival of the classic animated series, following the iconic mutant team as they navigate high-stakes adventures and emotional challenges in a world that hates and fears them.",
     director: "Beau DeMayo",
-    cast: ["Ray Chase", "Jennifer Hale", "Alison Sealy-Smith", "Cal Dodd", "J. P. Karliak"],
+    cast: ["Ray Chase, Jennifer Hale, Cal Dodd, Alison Sealy-Smith, Lenore Zann, JP Karliak"],
     trending: false,
     featured: false,
     is4k: false,
