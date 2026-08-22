@@ -34,6 +34,20 @@ window._SERIES_DATA = [
           { episode: 9, title: "Tolerance is Extinction – Part 2" },
           { episode: 10, title: "Tolerance is Extinction – Part 3" }
         ]
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "Days of Past Future" },
+          { episode: 2, title: "A Force to be Reckoned With" },
+          { episode: 3, title: "Rise of Apocalypse: Part 1" },
+          { episode: 4, title: "Rise of Apocalypse: Part 2" },
+          { episode: 5, title: "Weapon X, Lies, and DVDs" },
+          { episode: 6, title: "Danger.Exe" },
+          { episode: 7, title: "Strange Land, Savage Heart" },
+          { episode: 8, title: "The Dead Man's Hand" },
+          { episode: 9, title: "Survival of the Fittest" }
+        ]
       }
     ]
   },
