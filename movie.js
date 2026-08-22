@@ -2629,21 +2629,6 @@ function bindEventListeners() {
       }
     }
 
-    // Check year
-    if (movie.year && String(movie.year) === qNorm) score += 60;
-
-    // Check genres (full query match)
-    if (movie.genres && movie.genres.some(g => norm(g) === qNorm || norm(g).includes(qNorm))) score += 50;
-
-    // Check cast (full query match)
-    if (movie.cast && movie.cast.some(c => norm(c).includes(qNorm))) score += 40;
-
-    // Check director (full query match)
-    if (movie.director && norm(movie.director).includes(qNorm)) score += 30;
-
-    // Check overview
-    if (movie.overview && norm(movie.overview).includes(qNorm)) score += 15;
-
     // Boost score slightly for popularity/rating to break ties and show better results first
     if (score > 0) {
       if (movie.trending) score += 5;
