@@ -1224,13 +1224,11 @@ function renderUserBadge() {
     // Determine current language for manual translations in dynamic sidebar
     const cookies = document.cookie;
     const currentLang = cookies.includes('googtrans=/en/ckb') ? 'ckb' : 
-                        cookies.includes('googtrans=/en/ar') ? 'ar' : 
-                        cookies.includes('googtrans=/en/ku') ? 'ku' : 'en';
+                        cookies.includes('googtrans=/en/ar') ? 'ar' : 'en';
 
     let uploadAvatarText = "Upload avatar";
     if (currentLang === 'ckb') uploadAvatarText = "وێنەی پڕۆفایل";
     else if (currentLang === 'ar') uploadAvatarText = "تغيير الصورة";
-    else if (currentLang === 'ku') uploadAvatarText = "Wêneyê Profîlê";
 
     // Render only the avatar icon button in the navbar
     container.innerHTML = `
