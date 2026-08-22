@@ -200,7 +200,7 @@ window._SERIES_DATA = [
       'Drama'
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg',
-    backdrop: 'https://image.tmdb.org/t/p/original/iAiV87qCLhmZSQGEHv94ZBxCGKF.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg',
     videoUrl: '108978',
     overview: 'Jack Reacher, a veteran military police investigator, has just recently entered civilian life. He is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.',
     director: 'Nick Santora',
