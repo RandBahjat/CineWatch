@@ -64,11 +64,37 @@ app.get('/api/db-status', (req, res) => {
 });
 
 // ----------------------------------------------------
+// MIDDLEWARE/HELPER: Verify Turnstile Token
+// ----------------------------------------------------
+const TURNSTILE_SECRET_KEY = '0x4AAAAAAEYq2DmGKCBoC7Gyro9NQ1FsjGc';
+
+async function verifyTurnstileToken(token) {
+  if (!token) return false;
+  try {
+    const formData = new URLSearchParams();
+    formData.append('secret', TURNSTILE_SECRET_KEY);
+    formData.append('response', token);
+    const result = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      body: formData,
+      method: 'POST',
+    });
+    const outcome = await result.json();
+    return outcome.success;
+  } catch (err) {
+    console.error('Turnstile verification error:', err);
+    return false;
+  }
+}
+
+// ----------------------------------------------------
 // 1. SIGNUP ENDPOINT
 // ----------------------------------------------------
 app.post('/api/signup', async (req, res) => {
-  const { name, email, password } = req.body;
+  const { name, email, password, turnstileToken } = req.body;
   if (!name || !email || !password) return res.status(400).json({ error: 'All fields are required.' });
+
+  const isHuman = await verifyTurnstileToken(turnstileToken);
+  if (!isHuman) return res.status(403).json({ error: 'CAPTCHA verification failed. Please try again.' });
 
   const cleanName = name.trim();
   const cleanEmail = email.trim().toLowerCase();
@@ -122,8 +148,11 @@ app.post('/api/signup', async (req, res) => {
 // 2. LOGIN ENDPOINT
 // ----------------------------------------------------
 app.post('/api/login', async (req, res) => {
-  const { username, password } = req.body;
+  const { username, password, turnstileToken } = req.body;
   if (!username || !password) return res.status(400).json({ error: 'Username or Email and password are required.' });
+
+  const isHuman = await verifyTurnstileToken(turnstileToken);
+  if (!isHuman) return res.status(403).json({ error: 'CAPTCHA verification failed. Please try again.' });
 
   const rawInput = username.trim();
   const normalizedInput = rawInput.toLowerCase();
