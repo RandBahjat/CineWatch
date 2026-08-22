@@ -52847,8 +52847,41 @@ window._SERIES_DATA = [
         ]
       }
     ]
+    ]
   },
 
-
+  {
+    title: "Dutton Ranch",
+    type: "TV Show",
+    year: 2026,
+    rating: 8.5,
+    age: "TV-MA",
+    genres: ["Drama", "Western"],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/peqBjbBngMivD44z448Bms7K5m3.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/9gWv6oZcE8R7N3F5H5B0c1S6r6M.jpg",
+    videoUrl: "123456",
+    overview: "The series follows fan-favorite characters Beth Dutton and Rip Wheeler as they leave Montana and attempt to build a new life in South Texas. Their fresh start is quickly complicated by a ruthless rival ranch and the persistent shadows of their past.",
+    director: "Taylor Sheridan",
+    cast: ["Kelly Reilly, Cole Hauser, Finn Little, Ed Harris, Annette Bening"],
+    trending: false,
+    featured: false,
+    is4k: true,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "A New Beginning" },
+          { episode: 2, title: "South Texas Heat" },
+          { episode: 3, title: "Shadows of the Past" },
+          { episode: 4, title: "Rivalries" },
+          { episode: 5, title: "The Long Ride" },
+          { episode: 6, title: "Blood and Dirt" },
+          { episode: 7, title: "No Retreat" },
+          { episode: 8, title: "Lines in the Sand" },
+          { episode: 9, title: "Legacy" }
+        ]
+      }
+    ]
+  }
 
 ];
