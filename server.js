@@ -417,8 +417,8 @@ app.post('/api/reset-password-confirm', async (req, res) => {
 
 app.post('/api/rate', authenticateToken, async (req, res) => {
   const { movieId, rating } = req.body;
-  if (!movieId || !rating || rating < 1 || rating > 5) {
-    return res.status(400).json({ error: 'Valid movieId and rating (1-5) are required.' });
+  if (!movieId || !rating || rating < 0.5 || rating > 5 || (rating * 2) % 1 !== 0) {
+    return res.status(400).json({ error: 'Valid movieId and rating (0.5-5.0) are required.' });
   }
 
   try {
