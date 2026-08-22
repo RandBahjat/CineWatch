@@ -1699,6 +1699,35 @@ body.rtl-layout .details-back-btn svg {
 .meta-separator {
   color: #6b7280;
 }
+.user-rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+.user-rating-stars .rating-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+  color: #e5e5e5;
+}
+.user-rating-stars ion-icon {
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+.user-rating-stars ion-icon.gold {
+  color: var(--gold);
+}
+.user-rating-stars ion-icon:hover {
+  transform: scale(1.2);
+}
+.user-rating-stars .rating-average {
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+  color: var(--text-muted);
+}
 
 .meta-rating {
   color: var(--gold, #f5c518);
