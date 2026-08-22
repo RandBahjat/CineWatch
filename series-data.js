@@ -13441,6 +13441,45 @@ window._SERIES_DATA = [
     ]
   },
   {
+    title: 'Yellowstone',
+    type: 'TV Show',
+    year: 2018,
+    rating: 8.7,
+    age: 'TV-MA',
+    duration: '1h',
+    genres: [
+      'Drama',
+      'Western'
+    ],
+    poster: 'https://image.tmdb.org/t/p/w600_and_h900_face/peqBjbBngMivD44z448Bms7K5m3.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/9gWv6oZcE8R7N3F5H5B0c1S6r6M.jpg',
+    videoUrl: '73586',
+    overview: "Follow the violent world of the Dutton family, who controls the largest contiguous ranch in the United States. Led by their patriarch John Dutton, the family defends their property against constant attack by land developers, an Indian reservation, and America's first National Park.",
+    director: 'Taylor Sheridan',
+    cast: [
+      'Kevin Costner, Luke Grimes, Kelly Reilly, Wes Bentley, Cole Hauser, Kelsey Asbille'
+    ],
+    trending: false,
+    featured: false,
+    is4k: true,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: 'Daybreak' },
+          { episode: 2, title: 'Kill the Messenger' },
+          { episode: 3, title: 'No Good Horses' },
+          { episode: 4, title: 'The Long Black Train' },
+          { episode: 5, title: 'Coming Home' },
+          { episode: 6, title: 'The Remembering' },
+          { episode: 7, title: 'A Monster Is Among Us' },
+          { episode: 8, title: 'The Unravelling: Pt. 1' },
+          { episode: 9, title: 'The Unravelling: Pt. 2' }
+        ]
+      }
+    ]
+  },
+  {
     title: 'The Walking Dead',
     type: 'TV Show',
     year: 2010,
