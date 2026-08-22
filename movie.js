@@ -3761,10 +3761,13 @@ async function initializeRatingSystem(movieId) {
   const stars = starsContainer.querySelectorAll('ion-icon');
   const globalText = document.getElementById('globalRatingAvg');
   
+  // Track user's saved rating so we can revert to it after mouseout
+  let currentSavedRating = 0;
+
   // Reset UI
   stars.forEach(s => {
     s.name = 'star-outline';
-    s.classList.remove('gold');
+    s.className = '';
   });
   globalText.textContent = '';
 
@@ -3776,14 +3779,25 @@ async function initializeRatingSystem(movieId) {
     
     // If user has rated, color the stars
     if (res.userRating) {
-      fillStars(stars, res.userRating);
+      currentSavedRating = res.userRating;
+      fillStars(stars, currentSavedRating);
     }
 
-    // Add click listeners
+    // Add event listeners
     stars.forEach(star => {
       // Remove old listener if it exists to prevent duplicates
       const newStar = star.cloneNode(true);
       star.parentNode.replaceChild(newStar, star);
+      
+      const starRating = parseInt(newStar.dataset.rating);
+
+      newStar.addEventListener('mouseover', () => {
+        fillStars(starsContainer.querySelectorAll('ion-icon'), starRating);
+      });
+
+      newStar.addEventListener('mouseout', () => {
+        fillStars(starsContainer.querySelectorAll('ion-icon'), currentSavedRating);
+      });
       
       newStar.addEventListener('click', async () => {
         if (!window.CW_API.getToken()) {
@@ -3792,7 +3806,8 @@ async function initializeRatingSystem(movieId) {
           return;
         }
 
-        const rating = parseInt(newStar.dataset.rating);
+        const rating = starRating;
+        currentSavedRating = rating;
         fillStars(starsContainer.querySelectorAll('ion-icon'), rating);
         
         try {
@@ -3815,15 +3830,22 @@ async function initializeRatingSystem(movieId) {
   }
 }
 
+function getStarColorClass(rating) {
+  if (rating <= 2) return 'star-red';
+  if (rating === 3) return 'star-yellow';
+  return 'star-green';
+}
+
 function fillStars(starsNodes, rating) {
+  const colorClass = getStarColorClass(rating);
   starsNodes.forEach(s => {
     const val = parseInt(s.dataset.rating);
+    s.className = ''; // clear classes
     if (val <= rating) {
       s.name = 'star';
-      s.classList.add('gold');
+      s.classList.add(colorClass);
     } else {
       s.name = 'star-outline';
-      s.classList.remove('gold');
     }
   });
 }
