@@ -2932,6 +2932,7 @@ function bindEventListeners() {
       submitBtn.disabled = true;
 
       try {
+        // 1. Web3Forms Email Submission (Existing)
         const response = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
           headers: {
