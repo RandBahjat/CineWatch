@@ -52860,7 +52860,7 @@ window._SERIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/wowtdtDM980GjuxCXJY4seeqP2O.jpg",
     videoUrl: "299167",
     overview: "Beth Dutton, Rip Wheeler gamble everything on new life in South Texas, but promise of building future far from ghost of Yellowstone quickly collide with brutal new reality, rival ranch that stop at nothing protect its empire.",
-    director: "Taylor Sheridan",
+    director: "Taylor Sheridan, John Linson",
     cast: ["Kelly Reilly, Cole Hauser, Finn Little, Ed Harris, Annette Bening"],
     trending: false,
     featured: false,
