@@ -3769,6 +3769,11 @@ async function initializeRatingSystem(movieId) {
   // Track original IMDB score to fallback if 0 community ratings
   const originalBadgeScore = badgeRating ? badgeRating.textContent : '0.0';
 
+  // Build the 5 SVG stars unconditionally so the UI always appears
+  for (let i = 1; i <= 5; i++) {
+    starsContainer.appendChild(buildStar(i, movieId, badgeRating));
+  }
+
   try {
     const res = await window.CW_API.request(`/ratings/${movieId}`, 'GET');
     
@@ -3784,16 +3789,12 @@ async function initializeRatingSystem(movieId) {
       currentSavedRating = res.userRating;
     }
 
-    // Build the 5 SVG stars
-    for (let i = 1; i <= 5; i++) {
-      starsContainer.appendChild(buildStar(i, movieId, badgeRating));
-    }
-
-    renderStars(currentSavedRating);
-
   } catch (err) {
-    console.error('Failed to fetch ratings', err);
+    console.warn('Failed to fetch community ratings (backend might be offline)', err);
   }
+
+  // Render the initial state (either 0 or what was fetched)
+  renderStars(currentSavedRating);
 }
 
 function buildStar(index, movieId, badgeRating) {
