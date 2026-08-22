@@ -3744,3 +3744,81 @@ function trackVisit() {
   })
   .catch(err => console.error("Error tracking visit:", err));
 }
+
+
+// ==========================================
+// RATINGS SYSTEM
+// ==========================================
+async function initializeRatingSystem(movieId) {
+  const starsContainer = document.getElementById('userRatingStars');
+  if (!starsContainer) return;
+  
+  const stars = starsContainer.querySelectorAll('ion-icon');
+  const globalText = document.getElementById('globalRatingAvg');
+  
+  // Reset UI
+  stars.forEach(s => {
+    s.name = 'star-outline';
+    s.classList.remove('gold');
+  });
+  globalText.textContent = '';
+
+  try {
+    const res = await window.CW_API.request(/ratings/, 'GET');
+    if (res.average > 0) {
+      globalText.textContent = | Community: ⭐  ();
+    }
+    
+    // If user has rated, color the stars
+    if (res.userRating) {
+      fillStars(stars, res.userRating);
+    }
+
+    // Add click listeners
+    stars.forEach(star => {
+      // Remove old listener if it exists to prevent duplicates
+      const newStar = star.cloneNode(true);
+      star.parentNode.replaceChild(newStar, star);
+      
+      newStar.addEventListener('click', async () => {
+        if (!window.CW_API.getToken()) {
+          showToast('You must be signed in to rate!', 'error');
+          openAuthModal();
+          return;
+        }
+
+        const rating = parseInt(newStar.dataset.rating);
+        fillStars(starsContainer.querySelectorAll('ion-icon'), rating);
+        
+        try {
+          const rateRes = await window.CW_API.request('/rate', 'POST', { movieId, rating });
+          if (rateRes.success) {
+            showToast('Rating saved successfully!', 'success');
+            // Refresh average
+            const fresh = await window.CW_API.request(/ratings/, 'GET');
+            globalText.textContent = | Community: ⭐  ();
+          } else {
+            showToast(rateRes.error || 'Failed to save rating', 'error');
+          }
+        } catch (e) {
+          showToast('Failed to save rating', 'error');
+        }
+      });
+    });
+  } catch (err) {
+    console.error('Failed to fetch ratings', err);
+  }
+}
+
+function fillStars(starsNodes, rating) {
+  starsNodes.forEach(s => {
+    const val = parseInt(s.dataset.rating);
+    if (val <= rating) {
+      s.name = 'star';
+      s.classList.add('gold');
+    } else {
+      s.name = 'star-outline';
+      s.classList.remove('gold');
+    }
+  });
+}
