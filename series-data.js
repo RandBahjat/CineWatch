@@ -13444,7 +13444,7 @@ window._SERIES_DATA = [
     title: 'Yellowstone',
     type: 'TV Show',
     year: 2018,
-    rating: 8.7,
+    rating: 8.6,
     age: 'TV-MA',
     duration: '1h',
     genres: [
