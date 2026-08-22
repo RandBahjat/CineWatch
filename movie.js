@@ -3759,22 +3759,33 @@ async function initializeRatingSystem(movieId) {
   if (!starsContainer) return;
   
   const stars = starsContainer.querySelectorAll('ion-icon');
-  const globalText = document.getElementById('globalRatingAvg');
+  const tooltip = document.getElementById('ratingTooltip');
+  const ratedFeedback = document.getElementById('ratedFeedback');
+  const badgeRating = document.getElementById('detailsRating');
   
   // Track user's saved rating so we can revert to it after mouseout
   let currentSavedRating = 0;
+  // Also track the original IMDB score to fallback if there are 0 community ratings
+  const originalBadgeScore = badgeRating ? badgeRating.textContent : '0.0';
 
   // Reset UI
   stars.forEach(s => {
     s.name = 'star-outline';
-    s.className = '';
+    s.classList.remove('gold');
   });
-  globalText.textContent = '';
+  if (tooltip) tooltip.classList.remove('visible');
+  if (ratedFeedback) ratedFeedback.classList.remove('visible');
 
   try {
     const res = await window.CW_API.request(`/ratings/${movieId}`, 'GET');
-    if (res.average > 0) {
-      globalText.textContent = `| Community: ⭐ ${res.average.toFixed(1)} (${res.totalRatings})`;
+    
+    // Update top badge
+    if (badgeRating) {
+      if (res.average > 0) {
+        badgeRating.textContent = `${res.average.toFixed(1)} (${res.totalRatings})`;
+      } else {
+        badgeRating.textContent = originalBadgeScore;
+      }
     }
     
     // If user has rated, color the stars
@@ -3784,43 +3795,66 @@ async function initializeRatingSystem(movieId) {
     }
 
     // Add event listeners
-    stars.forEach(star => {
-      // Remove old listener if it exists to prevent duplicates
+    stars.forEach((star, index) => {
       const newStar = star.cloneNode(true);
       star.parentNode.replaceChild(newStar, star);
       
-      const starRating = parseInt(newStar.dataset.rating);
+      const starBase = parseInt(newStar.dataset.rating);
 
-      newStar.addEventListener('mouseover', () => {
-        fillStars(starsContainer.querySelectorAll('ion-icon'), starRating);
+      newStar.addEventListener('mousemove', (e) => {
+        // Calculate if we're on the left half or right half of the star
+        const rect = newStar.getBoundingClientRect();
+        const isHalf = (e.clientX - rect.left) < (rect.width / 2);
+        const hoveredRating = isHalf ? starBase - 0.5 : starBase;
+        
+        fillStars(starsContainer.querySelectorAll('ion-icon'), hoveredRating);
+        
+        // Show tooltip
+        if (tooltip) {
+          tooltip.textContent = hoveredRating.toFixed(1);
+          tooltip.classList.add('visible');
+          // Position tooltip above the star
+          tooltip.style.left = `${newStar.offsetLeft + (rect.width / 2)}px`;
+        }
       });
 
       newStar.addEventListener('mouseout', () => {
         fillStars(starsContainer.querySelectorAll('ion-icon'), currentSavedRating);
+        if (tooltip) tooltip.classList.remove('visible');
       });
       
-      newStar.addEventListener('click', async () => {
+      newStar.addEventListener('click', async (e) => {
         if (!window.CW_API.getToken()) {
           showToast('You must be signed in to rate!', 'error');
           openAuthModal();
           return;
         }
 
-        const rating = starRating;
-        currentSavedRating = rating;
-        fillStars(starsContainer.querySelectorAll('ion-icon'), rating);
+        const rect = newStar.getBoundingClientRect();
+        const isHalf = (e.clientX - rect.left) < (rect.width / 2);
+        const finalRating = isHalf ? starBase - 0.5 : starBase;
+
+        currentSavedRating = finalRating;
+        fillStars(starsContainer.querySelectorAll('ion-icon'), finalRating);
+        
+        // Show "Rated" feedback
+        if (ratedFeedback) {
+          ratedFeedback.classList.add('visible');
+          setTimeout(() => ratedFeedback.classList.remove('visible'), 2000);
+        }
         
         try {
-          const rateRes = await window.CW_API.request('/rate', 'POST', { movieId, rating });
+          const rateRes = await window.CW_API.request('/rate', 'POST', { movieId, rating: finalRating });
           if (rateRes.success) {
-            showToast('Rating saved successfully!', 'success');
             // Refresh average
             const fresh = await window.CW_API.request(`/ratings/${movieId}`, 'GET');
-            globalText.textContent = `| Community: ⭐ ${fresh.average.toFixed(1)} (${fresh.totalRatings})`;
+            if (badgeRating) {
+              badgeRating.textContent = `${fresh.average.toFixed(1)} (${fresh.totalRatings})`;
+            }
           } else {
             showToast(rateRes.error || 'Failed to save rating', 'error');
           }
-        } catch (e) {
+        } catch (err) {
           showToast('Failed to save rating', 'error');
         }
       });
@@ -3830,23 +3864,17 @@ async function initializeRatingSystem(movieId) {
   }
 }
 
-function getStarColorClass(rating) {
-  if (rating <= 2) return 'star-red';
-  if (rating === 3) return 'star-yellow';
-  return 'star-green';
-}
-
 function fillStars(starsNodes, rating) {
-  const colorClass = getStarColorClass(rating);
   starsNodes.forEach(s => {
     const val = parseInt(s.dataset.rating);
+    s.classList.remove('gold');
     
-    // Carefully remove only our color classes to preserve ion-icon base classes
-    s.classList.remove('star-red', 'star-yellow', 'star-green');
-    
-    if (val <= rating) {
+    if (rating >= val) {
       s.name = 'star';
-      s.classList.add(colorClass);
+      s.classList.add('gold');
+    } else if (rating === val - 0.5) {
+      s.name = 'star-half';
+      s.classList.add('gold');
     } else {
       s.name = 'star-outline';
     }
