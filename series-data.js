@@ -4,6 +4,35 @@
 
 window._SERIES_DATA = [
   {
+    title: 'You',
+    type: 'TV Show',
+    year: 2018,
+    rating: 8.0,
+    age: 'TV-MA',
+    duration: '45m',
+    genres: ['Mystery', 'Crime', 'Drama'],
+    poster: 'https://image.tmdb.org/t/p/w600_and_h900_face/uXZt12k2f63uSg3n3m4x9Tq66Vd.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/mBaXZ95R2OxueZhvQbcEWy2DqyO.jpg',
+    videoUrl: '78191',
+    overview: 'A dangerously charming, obsessive man goes to extreme measures to insert himself into the lives of women who fascinate him.',
+    director: 'Greg Berlanti',
+    cast: ['Penn Badgley', 'Victoria Pedretti', 'Elizabeth Lail', 'Ambyr Childers'],
+    trending: true,
+    featured: true,
+    is4k: false,
+    seasons: [
+      {
+        seasonNumber: 1,
+        episodes: [
+          { episode: 1, title: 'Pilot', duration: '49m' },
+          { episode: 2, title: 'The Last Nice Guy in New York', duration: '46m' },
+          { episode: 3, title: 'Maybe', duration: '43m' },
+          { episode: 4, title: 'The Captain', duration: '43m' }
+        ]
+      }
+    ]
+  },
+  {
     title: 'Lanterns',
     type: 'TV Show',
     year: 2026,
