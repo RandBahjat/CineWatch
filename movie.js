@@ -2532,10 +2532,6 @@ function bindEventListeners() {
       const x = e.touches[0].pageX - track.offsetLeft;
       let walk = (x - touchStartX) * 1.5;
       
-      if (document.body.classList.contains("rtl-layout")) {
-        walk = -walk; // Invert drag scroll for RTL layouts
-      }
-      
       track.scrollLeft = touchScrollLeft - walk;
     }, { passive: true });
 
