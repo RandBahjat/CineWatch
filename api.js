@@ -1,7 +1,5 @@
 // API handling for CineWatch Custom Backend
-const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
-  ? 'http://localhost:3000/api' 
-  : 'https://cinewatch-maaa.onrender.com/api';
+const API_URL = 'https://cinewatch-maaa.onrender.com/api';
 
 window.CW_API = {
   getToken() {
