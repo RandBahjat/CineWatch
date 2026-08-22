@@ -1720,6 +1720,9 @@ body.rtl-layout .details-back-btn svg {
 .user-rating-stars ion-icon.gold {
   color: var(--gold);
 }
+.user-rating-stars ion-icon.star-red { color: #ef4444 !important; }
+.user-rating-stars ion-icon.star-yellow { color: #f59e0b !important; }
+.user-rating-stars ion-icon.star-green { color: #10b981 !important; }
 .user-rating-stars ion-icon:hover {
   transform: scale(1.2);
 }
