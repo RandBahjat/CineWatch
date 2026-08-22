@@ -52804,7 +52804,7 @@ window._SERIES_DATA = [
     title: "X-Men '97",
     type: "TV Show",
     year: 2024,
-    rating: 8.9,
+    rating: 8.7,
     age: "TV-14",
     genres: ["Animation", "Action", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
