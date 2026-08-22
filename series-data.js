@@ -52440,7 +52440,7 @@ window._SERIES_DATA = [
       'Crime',
       'Drama'
     ],
-    poster: 'https://image.tmdb.org/t/p/w600_and_h900_face/uXZt12k2f63uSg3n3m4x9Tq66Vd.jpg',
+    poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/oANi0vEE92nuijiZQgPZ88FSxqQ.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/mBaXZ95R2OxueZhvQbcEWy2DqyO.jpg',
     videoUrl: '78191',
     overview: 'A dangerously charming, obsessive man goes to extreme measures to insert himself into the lives of women who fascinate him.',
