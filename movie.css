@@ -3266,7 +3266,7 @@ body.rtl-layout .details-back-btn svg {
    SITE FOOTER
    ========================================= */
 .site-footer {
-  background-color: #0a0a0f;
+  background-color: var(--bg-dark);
   padding: 4rem 2rem 1rem 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
