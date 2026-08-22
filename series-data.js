@@ -52455,61 +52455,61 @@ window._SERIES_DATA = [
       {
         season: 1,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' }
+          { episode: 1, title: 'Pilot' },
+          { episode: 2, title: 'The Last Nice Guy in New York' },
+          { episode: 3, title: 'Maybe' },
+          { episode: 4, title: 'The Captain' },
+          { episode: 5, title: 'Living with the Enemy' },
+          { episode: 6, title: 'Amour Fou' },
+          { episode: 7, title: 'Everythingship' },
+          { episode: 8, title: 'You Got Me, Babe' },
+          { episode: 9, title: 'Candace' },
+          { episode: 10, title: 'Bluebeard\'s Castle' }
         ]
       },
       {
         season: 2,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' }
+          { episode: 1, title: 'A Fresh Start' },
+          { episode: 2, title: 'Just The Tip' },
+          { episode: 3, title: 'What Are Friends For?' },
+          { episode: 4, title: 'The Good, The Bad & The Hendy' },
+          { episode: 5, title: 'Have a Good Wellkend, Joe!' },
+          { episode: 6, title: 'Farewell, My Bunny' },
+          { episode: 7, title: 'Ex-istential Crisis' },
+          { episode: 8, title: 'Fear and Loathing in Beverly Hills' },
+          { episode: 9, title: 'P.I. Joe' },
+          { episode: 10, title: 'Love, Actually' }
         ]
       },
       {
         season: 3,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' }
+          { episode: 1, title: 'And They Lived Happily Ever After' },
+          { episode: 2, title: 'So I Married An Axe Murderer' },
+          { episode: 3, title: 'Missing White Woman Syndrome' },
+          { episode: 4, title: 'Hands Across Madre Linda' },
+          { episode: 5, title: 'Into the Woods' },
+          { episode: 6, title: 'W.O.M.B.' },
+          { episode: 7, title: 'We\'re All Mad Here' },
+          { episode: 8, title: 'Swing and a Miss' },
+          { episode: 9, title: 'Red Flag' },
+          { episode: 10, title: 'What is Love?' }
         ]
       },
       {
         season: 4,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' }
+          { episode: 1, title: 'Joe Takes a Holiday' },
+          { episode: 2, title: 'Portrait of the Artist' },
+          { episode: 3, title: 'Eat the Rich' },
+          { episode: 4, title: 'Hampsie' },
+          { episode: 5, title: 'The Fox and the Hound' },
+          { episode: 6, title: 'Best of Friends' },
+          { episode: 7, title: 'Good Man, Cruel World' },
+          { episode: 8, title: 'Where Are You Going, Where Have You Been?' },
+          { episode: 9, title: 'She\'s Not There' },
+          { episode: 10, title: 'The Death of Jonathan Moore' }
         ]
       },
       {
