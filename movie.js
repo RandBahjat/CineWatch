@@ -2588,39 +2588,70 @@ function bindEventListeners() {
     const qNorm = norm(q);
     if (!qNorm) return 0;
 
+    let score = 0;
     const title = movie.title.toLowerCase();
     const titleNorm = norm(movie.title);
 
+    // Exact match
+    if (titleNorm === qNorm) {
+      score += 200;
+    } 
+    // Starts with match
+    else if (titleNorm.startsWith(qNorm)) {
+      score += 150;
+    }
     // Exact substring match on normalized title (handles "spiderman" → "Spider-Man")
-    if (titleNorm.includes(qNorm)) return 100;
+    else if (titleNorm.includes(qNorm)) {
+      score += 100;
+    }
     // Partial word match on real title
-    if (title.includes(q)) return 90;
+    else if (title.includes(q)) {
+      score += 90;
+    }
 
     // Check individual query words against title words
     const queryWords = q.split(/\s+/).filter(Boolean);
-    const titleWords = title.split(/[\s\-:,.'!?&]+/).filter(Boolean);
-    const matchedWords = queryWords.filter(qw => {
-      const nw = norm(qw);
-      if (!nw) return false;
-      return titleWords.some(tw => {
-        const nt = norm(tw);
-        if (!nt) return false;
-        return nt.includes(nw);
+    if (queryWords.length > 0) {
+      const titleWords = title.split(/[\s\-:,.'!?&]+/).filter(Boolean);
+      let matchedWordCount = 0;
+      queryWords.forEach(qw => {
+        const nw = norm(qw);
+        if (nw && titleWords.some(tw => norm(tw).includes(nw))) {
+          matchedWordCount++;
+        }
       });
-    });
-    // REQUIRE all words to match the title to be considered a title match
-    if (matchedWords.length === queryWords.length) return 80;
+      // REQUIRE all words to match the title to be considered a strong title match
+      if (matchedWordCount === queryWords.length) {
+        score += 80;
+      } else if (matchedWordCount > 0) {
+        // Partial multi-word match (e.g. 2 out of 3 words match)
+        score += (matchedWordCount / queryWords.length) * 60;
+      }
+    }
+
+    // Check year
+    if (movie.year && String(movie.year) === qNorm) score += 60;
 
     // Check genres (full query match)
-    if (movie.genres && movie.genres.some(g => norm(g) === qNorm || norm(g).includes(qNorm))) return 50;
+    if (movie.genres && movie.genres.some(g => norm(g) === qNorm || norm(g).includes(qNorm))) score += 50;
 
     // Check cast (full query match)
-    if (movie.cast && movie.cast.some(c => norm(c).includes(qNorm))) return 40;
+    if (movie.cast && movie.cast.some(c => norm(c).includes(qNorm))) score += 40;
 
     // Check director (full query match)
-    if (movie.director && norm(movie.director).includes(qNorm)) return 30;
+    if (movie.director && norm(movie.director).includes(qNorm)) score += 30;
 
-    return 0;
+    // Check overview
+    if (movie.overview && norm(movie.overview).includes(qNorm)) score += 15;
+
+    // Boost score slightly for popularity/rating to break ties and show better results first
+    if (score > 0) {
+      if (movie.trending) score += 5;
+      if (movie.featured) score += 5;
+      if (movie.rating) score += (movie.rating / 10);
+    }
+
+    return score;
   }
 
   function fuzzySearch(query) {
