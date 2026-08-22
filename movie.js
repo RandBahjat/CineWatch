@@ -1547,6 +1547,11 @@ function openDetailsModal(movieId) {
       };
     }
 
+    // Initialize interactive rating system
+    if (typeof initializeRatingSystem === 'function') {
+      initializeRatingSystem(movie.id);
+    }
+
     // Generate You May Like Section
     const similarsGrid = document.getElementById("detailsSimilarsGrid");
     const similarsSection = document.getElementById("detailsSimilarsSection");
