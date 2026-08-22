@@ -14,7 +14,7 @@ window._SERIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/iDnTAeR2WNA62XQG0ivtteDSjd5.jpg",
     videoUrl: "138502",
     overview: "X-Men '97 is a revival of the classic animated series, following the iconic mutant team as they navigate high-stakes adventures and emotional challenges in a world that hates and fears them.",
-    director: "Jake Castorena",
+    director: "Beau DeMayo",
     cast: ["Ray Chase", "Jennifer Hale", "Alison Sealy-Smith", "Cal Dodd", "J. P. Karliak"],
     trending: false,
     featured: false,
