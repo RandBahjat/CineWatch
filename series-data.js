@@ -13455,7 +13455,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/ynSOcgDLZfdLCZfRSYZGiTgYJVo.jpg',
     videoUrl: '73586',
     overview: "John Dutton run largest contiguous ranch in America, fight to protect land from land developer, real estate mogul, Indian reservation all want piece of it. Family torn by power, legacy, betrayal, blood, as they battle keep control of ranch passed down generation to generation.",
-    director: 'Taylor Sheridan',
+    director: 'Taylor Sheridan, John Linson',
     cast: [
       'Kevin Costner, Luke Grimes, Kelly Reilly, Wes Bentley, Cole Hauser, Kelsey Asbille'
     ],
