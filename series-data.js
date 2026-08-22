@@ -18,7 +18,7 @@ window._SERIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/4XccmjsOmQZw8S2iW1wvlvmb5v1.jpg",
     videoUrl: "125988",
-    overview: "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+    overview: "In ruin future, ten thousand people live in giant underground silo, told outside world poison, deadly. Engineer Juliette Nichols dig into mystery of husband death, uncover dark secret silo elder try hide.",
     director: "Graham Yost",
     cast: [
       "Rebecca Ferguson, Common, Tim Robbins, Harriet Walter, Avi Nash"
