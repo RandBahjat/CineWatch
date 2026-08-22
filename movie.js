@@ -1794,9 +1794,6 @@ async function fetchRawStream(tmdbId, type, season = null, episode = null) {
 async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, epData = null) {
   state.currentPlayingMovie = { id: parentId || "_episode_", title: displayTitle, epData };
 
-  const endOverlay = document.getElementById("videoEndOverlay");
-  if (endOverlay) endOverlay.classList.add("hidden");
-
   const modal = document.getElementById("videoModal");
   const video = document.getElementById("videoElement");
   const iframe = document.getElementById("iframeElement");
