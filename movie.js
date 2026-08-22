@@ -596,8 +596,8 @@ function createMovieCardHTML(movie) {
 function renderCarousels() {
   const shelfMap = {
     trendingTrack: MOVIES.filter((m) => m.trending).sort((a, b) => TRENDING_TITLES.indexOf(a.title) - TRENDING_TITLES.indexOf(b.title)),
-    trendingMoviesTrack: MOVIES.filter((m) => m.trending && m.type !== "TV Show").sort((a, b) => TRENDING_TITLES.indexOf(a.title) - TRENDING_TITLES.indexOf(b.title)),
-    trendingSeriesTrack: MOVIES.filter((m) => m.trending && m.type === "TV Show").sort((a, b) => TRENDING_TITLES.indexOf(a.title) - TRENDING_TITLES.indexOf(b.title)),
+    trendingMoviesTrack: MOVIES.filter((m) => TRENDING_THIS_WEEK_MOVIES.includes(m.title)).sort((a, b) => TRENDING_THIS_WEEK_MOVIES.indexOf(a.title) - TRENDING_THIS_WEEK_MOVIES.indexOf(b.title)),
+    trendingSeriesTrack: MOVIES.filter((m) => TRENDING_THIS_WEEK_SERIES.includes(m.title)).sort((a, b) => TRENDING_THIS_WEEK_SERIES.indexOf(a.title) - TRENDING_THIS_WEEK_SERIES.indexOf(b.title)),
   };
 
   Object.keys(shelfMap).forEach((trackId) => {
