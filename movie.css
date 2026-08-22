@@ -1845,7 +1845,9 @@ body.rtl-layout .details-back-btn svg {
   display: flex;
   align-items: center;
   gap: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 5px; /* for scrollbar if needed */
 }
 
 .details-cast-list {
