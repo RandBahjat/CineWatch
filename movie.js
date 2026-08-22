@@ -24,11 +24,11 @@
 // ==========================================
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
-const FEATURED_TITLES = ["Reacher","Lanterns", "House of the Dragon", "The Invite", "Spider-Man: Brand New Day", "The Odyssey", "Obsession", "The Last House","Silo"];
-const TRENDING_THIS_WEEK_MOVIES = ["Spider-Man: Brand New Day","The Odyssey","Obsession","Minions & Monsters","The Last House","Disclosure Day","The Invete","The End of Oak Street","Backrooms","Camp Rock 3","Evil Dead Burn","Project Hail","Supergirl"]; // Add titles here for 'Trending Movies This Week'
-const TRENDING_THIS_WEEK_SERIES = ["Lanterns","Reacher","Lucky","Silo","Ted Lasso","X-Men '97"]; // Add titles here for 'Trending Series This Week'
-const POPULAR_MOVIES = ["Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters", "The Invite", "Spider-Man: No Way Home","The End of Oak Street", "Disclosure Day","Camp Rock 3", "The Last House", "Michael", "Project Hail Mary"]; // Add titles here for 'Popular Movie'
-const POPULAR_SERIES = ["Reacher","House of the Dragon", "Ted Lasso","The Mentalist","Lucky","Off Campus","Silo","Game of Thrones","The Sopranos","Stranger Things","The Boys"]; // Add titles here for 'Popular Series'
+const FEATURED_TITLES = ["Reacher", "Lanterns", "House of the Dragon", "The Invite", "Spider-Man: Brand New Day", "The Odyssey", "Obsession", "The Last House", "Silo"];
+const TRENDING_THIS_WEEK_MOVIES = ["Spider-Man: Brand New Day", "The Odyssey", "Obsession", "Minions & Monsters", "The Last House", "Disclosure Day", "The Invete", "The End of Oak Street", "Backrooms", "Camp Rock 3", "Evil Dead Burn", "Project Hail", "Supergirl"]; // Add titles here for 'Trending Movies This Week'
+const TRENDING_THIS_WEEK_SERIES = ["Lanterns", "Reacher", "Lucky", "Silo", "Ted Lasso", "X-Men '97"]; // Add titles here for 'Trending Series This Week'
+const POPULAR_MOVIES = ["Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters", "The Invite", "Spider-Man: No Way Home", "The End of Oak Street", "Disclosure Day", "Camp Rock 3", "The Last House", "Michael", "Project Hail Mary"]; // Add titles here for 'Popular Movie'
+const POPULAR_SERIES = ["Reacher", "House of the Dragon", "Ted Lasso", "The Mentalist", "Lucky", "Off Campus", "Silo", "Game of Thrones", "The Sopranos", "Stranger Things", "The Boys"]; // Add titles here for 'Popular Series'
 
 // ==========================================
 // 2. MOVIE DATABASE (loaded from MongoDB)
@@ -405,16 +405,16 @@ function setupHeroBanner() {
   const cookies = document.cookie.split(';');
   let currentLang = 'en';
   for (let c of cookies) {
-      if (c.trim().startsWith('googtrans=')) {
-          const val = c.split('=')[1];
-          const parts = val.split('/');
-          if (parts.length > 2) currentLang = parts[2];
-          break;
-      }
+    if (c.trim().startsWith('googtrans=')) {
+      const val = c.split('=')[1];
+      const parts = val.split('/');
+      if (parts.length > 2) currentLang = parts[2];
+      break;
+    }
   }
   const isSorani = currentLang === 'ckb';
   const isArabic = currentLang === 'ar';
-  
+
   const playText = isSorani ? 'لێدان' : (isArabic ? 'تشغيل' : 'Play');
   const moreText = isSorani ? 'زیاتر ببینە' : (isArabic ? 'عرض المزيد' : 'See More');
 
@@ -464,7 +464,7 @@ function setupHeroBanner() {
     hasMoved = false;
     startX = e.type.includes("mouse") ? e.pageX : e.touches[0].clientX;
     const bannerWidth = heroBanner.offsetWidth || window.innerWidth;
-    
+
     const isRtl = document.body.style.direction === 'rtl' || document.body.classList.contains('rtl-layout');
     const directionSign = isRtl ? 1 : -1;
     currentTranslate = directionSign * state.currentHeroIndex * bannerWidth;
@@ -503,7 +503,7 @@ function setupHeroBanner() {
     const diffX = endX - startX;
     const isRTL = document.body.classList.contains("rtl-layout");
     const effectiveDiffX = isRTL ? -diffX : diffX;
-    
+
     const bannerWidth = heroBanner.offsetWidth || window.innerWidth;
     const threshold = Math.min(100, bannerWidth * 0.1);
 
@@ -567,7 +567,7 @@ function updateHeroBanner() {
   if (!heroTrack) return;
 
   heroTrack.style.transition = "transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)";
-  
+
   // Handle RTL layout direction for Sorani
   const isRtl = document.body.style.direction === 'rtl' || document.body.classList.contains('rtl-layout');
   const directionSign = isRtl ? 1 : -1;
@@ -1223,8 +1223,8 @@ function renderUserBadge() {
 
     // Determine current language for manual translations in dynamic sidebar
     const cookies = document.cookie;
-    const currentLang = cookies.includes('googtrans=/en/ckb') ? 'ckb' : 
-                        cookies.includes('googtrans=/en/ar') ? 'ar' : 'en';
+    const currentLang = cookies.includes('googtrans=/en/ckb') ? 'ckb' :
+      cookies.includes('googtrans=/en/ar') ? 'ar' : 'en';
 
     let uploadAvatarText = "Upload avatar";
     if (currentLang === 'ckb') uploadAvatarText = "وێنەی پڕۆفایل";
@@ -2517,7 +2517,7 @@ function bindEventListeners() {
       e.preventDefault();
       const x = e.pageX - track.offsetLeft;
       let walk = (x - startX) * 1.5; // scroll speed multiplier
-      
+
       track.scrollLeft = scrollLeft - walk;
       if (Math.abs(walk) > 5) hasDragged = true;
     });
@@ -2544,7 +2544,7 @@ function bindEventListeners() {
     track.addEventListener("touchmove", (e) => {
       const x = e.touches[0].pageX - track.offsetLeft;
       let walk = (x - touchStartX) * 1.5;
-      
+
       track.scrollLeft = touchScrollLeft - walk;
     }, { passive: true });
 
@@ -2612,7 +2612,7 @@ function bindEventListeners() {
     // Exact match
     if (titleNorm === qNorm) {
       score += 200;
-    } 
+    }
     // Starts with match
     else if (titleNorm.startsWith(qNorm)) {
       score += 150;
@@ -2867,7 +2867,7 @@ function bindEventListeners() {
     const detailsSection = document.getElementById("detailsSection");
 
     detailsSection.style.opacity = "0";
-    
+
     // Clear the deep link from the URL
     window.history.replaceState(null, '', window.location.pathname);
 
@@ -2923,7 +2923,7 @@ function bindEventListeners() {
       const email = document.getElementById("reportEmail").value.trim();
       const subject = document.getElementById("reportSubject").value.trim();
       const message = document.getElementById("reportMessage").value.trim();
-      
+
       if (!email) { showToast("Please provide your email address."); return; }
       if (!subject) { showToast("Please provide a title or issue type."); return; }
       if (!message) { showToast("Please provide the description of the issue."); return; }
@@ -2951,7 +2951,7 @@ function bindEventListeners() {
         const result = await response.json();
 
         // n8n Automation Webhook
-        const n8nWebhookUrl = 'https://randbahjat18.app.n8n.cloud/webhook/my-webhook'; 
+        const n8nWebhookUrl = 'https://randbahjat18.app.n8n.cloud/webhook/my-webhook';
         if (n8nWebhookUrl) {
           try {
             await fetch(n8nWebhookUrl, {
@@ -3655,7 +3655,7 @@ function updateIframeServer() {
   } else {
     newUrl = `https://vaplayer.ru/embed/movie/${data.id}?skin=netflix&color=e50914`;
   }
-  
+
   iframe.onload = () => {
     const centerOverlay = document.getElementById("videoCenterOverlay");
     if (centerOverlay) centerOverlay.style.display = "none";
@@ -3757,18 +3757,18 @@ function trackVisit() {
   if (sessionStorage.getItem('cinewatch_visit_tracked')) {
     return;
   }
-  
+
   fetch('https://cinewatch-maaa.onrender.com/api/page-load', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' }
   })
-  .then(res => res.json())
-  .then(data => {
-    if (data.success) {
-      sessionStorage.setItem('cinewatch_visit_tracked', 'true');
-    }
-  })
-  .catch(err => console.error("Error tracking visit:", err));
+    .then(res => res.json())
+    .then(data => {
+      if (data.success) {
+        sessionStorage.setItem('cinewatch_visit_tracked', 'true');
+      }
+    })
+    .catch(err => console.error("Error tracking visit:", err));
 }
 
 
@@ -3782,9 +3782,9 @@ let liveAnimFrame = null;
 async function initializeRatingSystem(movieId) {
   const starsContainer = document.getElementById('starContainer');
   const badgeRating = document.getElementById('detailsRating');
-  
+
   if (!starsContainer) return;
-  
+
   starsContainer.innerHTML = ''; // Clear container
 
   // Track original IMDB score to fallback if 0 community ratings
@@ -3797,7 +3797,7 @@ async function initializeRatingSystem(movieId) {
 
   try {
     const res = await window.CW_API.request(`/ratings/${movieId}`, 'GET');
-    
+
     if (badgeRating) {
       if (res.average > 0) {
         badgeRating.textContent = `${res.average.toFixed(1)} (${res.totalRatings})`;
@@ -3805,7 +3805,7 @@ async function initializeRatingSystem(movieId) {
         badgeRating.textContent = originalBadgeScore;
       }
     }
-    
+
     if (res.userRating) {
       currentSavedRating = res.userRating;
     }
@@ -3851,7 +3851,7 @@ function buildStar(index, movieId, badgeRating) {
     const rect = wrap.getBoundingClientRect();
     const half = (e.clientX - rect.left) < rect.width / 2;
     currentSavedRating = index - (half ? 0.5 : 0);
-    
+
     renderStars(currentSavedRating);
     showFeedback();
     triggerPop();
@@ -3885,7 +3885,7 @@ function renderStars(rating) {
   if (!container) return;
   const band = getColorBand(rating);
   const stars = container.querySelectorAll('.star');
-  
+
   stars.forEach((star, i) => {
     const starIndex = i + 1;
     const fill = star.querySelector('.fill-star');
@@ -3910,7 +3910,7 @@ function updateScoreColor(rating) {
   const colorMap = { red: '#ff6b6b', yellow: '#ffd54a', green: '#5adc6e' };
   const liveEl = document.getElementById('liveValue');
   if (!liveEl) return;
-  
+
   liveEl.style.color = colorMap[band];
 
   const start = parseFloat(liveEl.dataset.current || '0');
