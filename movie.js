@@ -598,8 +598,8 @@ function renderCarousels() {
   const shelfMap = {
     trendingMoviesTrack: MOVIES.filter((m) => TRENDING_THIS_WEEK_MOVIES.includes(m.title) && m.type !== "TV Show").sort((a, b) => TRENDING_THIS_WEEK_MOVIES.indexOf(a.title) - TRENDING_THIS_WEEK_MOVIES.indexOf(b.title)),
     trendingSeriesTrack: MOVIES.filter((m) => TRENDING_THIS_WEEK_SERIES.includes(m.title) && (m.type === "TV Show" || m.type === "Series")).sort((a, b) => TRENDING_THIS_WEEK_SERIES.indexOf(a.title) - TRENDING_THIS_WEEK_SERIES.indexOf(b.title)),
-    popularMoviesTrack: MOVIES.filter((m) => m.trending && m.type !== "TV Show").sort((a, b) => POPULAR_MOVIES.indexOf(a.title) - POPULAR_MOVIES.indexOf(b.title)),
-    popularSeriesTrack: MOVIES.filter((m) => m.trending && (m.type === "TV Show" || m.type === "Series")).sort((a, b) => POPULAR_SERIES.indexOf(a.title) - POPULAR_SERIES.indexOf(b.title)),
+    popularMoviesTrack: MOVIES.filter((m) => POPULAR_MOVIES.includes(m.title) && m.type !== "TV Show").sort((a, b) => POPULAR_MOVIES.indexOf(a.title) - POPULAR_MOVIES.indexOf(b.title)),
+    popularSeriesTrack: MOVIES.filter((m) => POPULAR_SERIES.includes(m.title) && (m.type === "TV Show" || m.type === "Series")).sort((a, b) => POPULAR_SERIES.indexOf(a.title) - POPULAR_SERIES.indexOf(b.title)),
   };
 
   Object.keys(shelfMap).forEach((trackId) => {
