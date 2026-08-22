@@ -18982,7 +18982,7 @@ window._SERIES_DATA = [
       'Mystery'
     ],
     poster: 'https://image.tmdb.org/t/p/original/cRAzL6mmdM6Q6UuQgc335UMgcfd.jpg',
-    backdrop: 'https://image.tmdb.org/t/p/original/cBixOkG7fuxDFlagFzfGLnrBAkk.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/6t2FvBr9DS8MOq0m5FAwPBCdAW5.jpg',
     videoUrl: '220102',
     overview: "A live-action superhero series set in an alternate universe within the Sony's Spider-Man Universe (SSU) franchise. The show follows Ben Reilly, a grizzled, down-on-his-luck private investigator grappling with his past life as 1930s New York City's one and only superhero, the Spider. When an exceptional case crosses his desk, the aging, cynical hero is forced to step back into the shadows and become the Spider once more. The series uniquely released in both a standard color version and a stylized, gritty black-and-white version.",
     director: 'Oren Uziel',
