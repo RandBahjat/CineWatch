@@ -3840,7 +3840,10 @@ function fillStars(starsNodes, rating) {
   const colorClass = getStarColorClass(rating);
   starsNodes.forEach(s => {
     const val = parseInt(s.dataset.rating);
-    s.className = ''; // clear classes
+    
+    // Carefully remove only our color classes to preserve ion-icon base classes
+    s.classList.remove('star-red', 'star-yellow', 'star-green');
+    
     if (val <= rating) {
       s.name = 'star';
       s.classList.add(colorClass);
