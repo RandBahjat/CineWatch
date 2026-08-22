@@ -1706,6 +1706,7 @@ body.rtl-layout .details-back-btn svg {
   margin-bottom: 1rem;
   font-size: 1.2rem;
   color: var(--text-muted);
+  position: relative;
 }
 .user-rating-stars .rating-label {
   font-size: 0.95rem;
@@ -1716,15 +1717,44 @@ body.rtl-layout .details-back-btn svg {
 .user-rating-stars ion-icon {
   cursor: pointer;
   transition: transform 0.2s, color 0.2s;
+  color: var(--text-muted);
 }
 .user-rating-stars ion-icon.gold {
   color: var(--gold);
 }
-.user-rating-stars ion-icon.star-red { color: #ef4444 !important; }
-.user-rating-stars ion-icon.star-yellow { color: #f59e0b !important; }
-.user-rating-stars ion-icon.star-green { color: #10b981 !important; }
 .user-rating-stars ion-icon:hover {
   transform: scale(1.2);
+}
+.rating-tooltip {
+  position: absolute;
+  top: -30px;
+  background: #111;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.rating-tooltip.visible {
+  opacity: 1;
+}
+.rated-feedback {
+  font-size: 0.85rem;
+  color: #10b981;
+  margin-left: 0.5rem;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.rated-feedback.visible {
+  opacity: 1;
 }
 .user-rating-stars .rating-average {
   font-size: 0.85rem;
