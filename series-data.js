@@ -13454,7 +13454,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/vOYfRZ0NpUK5hG2CB2dJFnYJlGe.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/ynSOcgDLZfdLCZfRSYZGiTgYJVo.jpg',
     videoUrl: '73586',
-    overview: "Follow the violent world of the Dutton family, who controls the largest contiguous ranch in the United States. Led by their patriarch John Dutton, the family defends their property against constant attack by land developers, an Indian reservation, and America's first National Park.",
+    overview: "John Dutton run largest contiguous ranch in America, fight to protect land from land developer, real estate mogul, Indian reservation all want piece of it. Family torn by power, legacy, betrayal, blood, as they battle keep control of ranch passed down generation to generation.",
     director: 'Taylor Sheridan',
     cast: [
       'Kevin Costner, Luke Grimes, Kelly Reilly, Wes Bentley, Cole Hauser, Kelsey Asbille'
