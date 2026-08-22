@@ -42,6 +42,9 @@ function translateGenre(genre) {
     if (genre === 'Fantasy') return 'فانتاسی';
     if (genre === 'Adventure') return 'سەرکێشی';
     if (genre === 'Action') return 'ئاکشن';
+    if (genre === 'Sci-Fi') return 'خەیاڵی زانستی';
+    if (genre === 'Mystery') return 'نهێنی';
+    if (genre === 'Thriller') return 'هەستبزوێن';
   }
   return genre;
 }
