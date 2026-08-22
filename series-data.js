@@ -21,7 +21,7 @@ window._SERIES_DATA = [
     overview: "In ruin future, ten thousand people live in giant underground silo, told outside world poison, deadly. Engineer Juliette Nichols dig into mystery of husband death, uncover dark secret silo elder try hide.",
     director: "Graham Yost",
     cast: [
-      "Rebecca Ferguson, Common, Tim Robbins, Harriet Walter, Avi Nash"
+      "Rebecca Ferguson, Common, Rashida Jones, David Oyelowo, Tim Robbins"
     ],
     trending: false,
     featured: false,
