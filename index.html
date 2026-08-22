@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260822_2376">
+    <link rel="stylesheet" href="movie.css?v=20260822_2377">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,16 +14,32 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260822_2375" defer></script>
-    <script src="movies-data.js?v=20260818_1344"></script>
-    <script src="series-data.js?v=20260818_1344"></script>
-    <script src="movie.js?v=20260822_2375" defer></script>
+    <script src="api.js?v=20260822_2376" defer></script>
+    <script src="movies-data.js?v=20260818_1345"></script>
+    <script src="series-data.js?v=20260818_1345"></script>
+    <script src="movie.js?v=20260822_2376" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 
 <body>
+    <svg width="0" height="0" style="position: absolute; visibility: hidden;">
+      <defs>
+        <linearGradient id="redGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#ff6b6b"/>
+          <stop offset="100%" stop-color="#e53935"/>
+        </linearGradient>
+        <linearGradient id="yellowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#ffe066"/>
+          <stop offset="100%" stop-color="#ffb300"/>
+        </linearGradient>
+        <linearGradient id="greenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#7ee08a"/>
+          <stop offset="100%" stop-color="#2e9e44"/>
+        </linearGradient>
+      </defs>
+    </svg>
     <!-- Language Toast Banner (Shown on first visit if ambiguous) -->
     <div class="lang-toast" id="langToast">
         <p id="langToastMsg">Would you prefer to browse in another language?</p>
@@ -240,15 +256,11 @@
                         Similars
                     </button>
 
-                    <div class="user-rating-stars" id="userRatingStars" style="margin-bottom: 0; margin-left: 1rem;">
+                    <div class="rating-block" id="userRatingBlock" style="margin-bottom: 0; margin-left: 1rem;">
                         <span class="rating-label">Rate: </span>
-                        <ion-icon name="star-outline" data-rating="1"></ion-icon>
-                        <ion-icon name="star-outline" data-rating="2"></ion-icon>
-                        <ion-icon name="star-outline" data-rating="3"></ion-icon>
-                        <ion-icon name="star-outline" data-rating="4"></ion-icon>
-                        <ion-icon name="star-outline" data-rating="5"></ion-icon>
-                        <span class="rated-feedback" id="ratedFeedback">Rated ✓</span>
-                        <span class="rating-tooltip" id="ratingTooltip"></span>
+                        <div class="stars" id="starContainer"></div>
+                        <span id="liveValue" style="font-size:20px; font-weight:800; min-width:34px; transition: color 0.2s ease;">0.0</span>
+                        <div class="feedback" id="ratedFeedback">Rated ✓</div>
                     </div>
                 </div>
 
