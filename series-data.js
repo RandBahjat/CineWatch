@@ -52541,7 +52541,7 @@ window._SERIES_DATA = [
       'Adventure',
       'Sci-Fi'
     ],
-    poster: 'https://image.tmdb.org/t/p/w600_and_h900_face/gHUCCMy1vvj58tzE3dZqeC9B19L.jpg',
+    poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/gHUCCMy1vvj58tzE3dZqeC9SXus.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/mBaXZ95R2OxueZhvQbcEWy2DqyO.jpg',
     videoUrl: '1403',
     overview: 'Agent Phil Coulson assembles a small group of highly skilled agents from the global law-enforcement organization known as S.H.I.E.L.D. Together, they investigate the new, the strange and the unknown around the globe, protecting the ordinary from the extraordinary.',
