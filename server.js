@@ -412,7 +412,66 @@ app.post('/api/reset-password-confirm', async (req, res) => {
 });
 
 // ----------------------------------------------------
-// 8. ANALYTICS: TRACK VISIT & GET STATS
+// 8. RATINGS API
+// ----------------------------------------------------
+
+app.post('/api/rate', authenticateToken, async (req, res) => {
+  const { movieId, rating } = req.body;
+  if (!movieId || !rating || rating < 1 || rating > 5) {
+    return res.status(400).json({ error: 'Valid movieId and rating (1-5) are required.' });
+  }
+
+  try {
+    const userId = req.user.id;
+    // Upsert the rating
+    await Rating.findOneAndUpdate(
+      { movieId, userId },
+      { rating, updated_at: Date.now() },
+      { upsert: true, new: true, setDefaultsOnInsert: true }
+    );
+    res.json({ success: true, message: 'Rating saved.' });
+  } catch (err) {
+    console.error('Error saving rating:', err);
+    res.status(500).json({ error: 'Failed to save rating.' });
+  }
+});
+
+app.get('/api/ratings/:movieId', async (req, res) => {
+  const { movieId } = req.params;
+  
+  try {
+    const ratings = await Rating.find({ movieId });
+    let average = 0;
+    if (ratings.length > 0) {
+      const sum = ratings.reduce((acc, curr) => acc + curr.rating, 0);
+      average = sum / ratings.length;
+    }
+    
+    // Check if user is logged in (optional token via headers)
+    let userRating = null;
+    const authHeader = req.headers['authorization'];
+    if (authHeader) {
+      const token = authHeader.split(' ')[1];
+      if (token) {
+        try {
+          const decoded = jwt.verify(token, JWT_SECRET);
+          const userObj = await Rating.findOne({ movieId, userId: decoded.id });
+          if (userObj) userRating = userObj.rating;
+        } catch (e) {
+          // invalid token, ignore
+        }
+      }
+    }
+
+    res.json({ average, totalRatings: ratings.length, userRating });
+  } catch (err) {
+    console.error('Error fetching ratings:', err);
+    res.status(500).json({ error: 'Failed to fetch ratings.' });
+  }
+});
+
+// ----------------------------------------------------
+// 9. ANALYTICS: TRACK VISIT & GET STATS
 // ----------------------------------------------------
 app.post('/api/page-load', async (req, res) => {
   try {
