@@ -3,77 +3,7 @@
 // Push to GitHub (or save — auto-sync will handle it) for changes to go live.
 
 window._SERIES_DATA = [
-  {
-    title: "Silo",
-    type: "TV Show",
-    year: 2023,
-    rating: 8.1,
-    age: "TV-MA",
-    duration: "45m",
-    genres: [
-      "Drama",
-      "Sci-Fi",
-      "Mystery"
-    ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/4XccmjsOmQZw8S2iW1wvlvmb5v1.jpg",
-    videoUrl: "125988",
-    overview: "In ruin future, ten thousand people live in giant underground silo, told outside world poison, deadly. Engineer Juliette Nichols dig into mystery of husband death, uncover dark secret silo elder try hide.",
-    director: "Graham Yost",
-    cast: [
-      "Rebecca Ferguson, Common, Rashida Jones, David Oyelowo, Tim Robbins"
-    ],
-    trending: false,
-    featured: false,
-    is4k: false,
-    seasons: [
-      {
-        season: 1,
-        episodes: [
-          { episode: 1, title: "Freedom Day" },
-          { episode: 2, title: "Holston's Pick" },
-          { episode: 3, title: "Machines" },
-          { episode: 4, title: "Truth" },
-          { episode: 5, title: "The Janitor's Boy" },
-          { episode: 6, title: "The Relic" },
-          { episode: 7, title: "The Flamekeepers" },
-          { episode: 8, title: "Hanna" },
-          { episode: 9, title: "The Getaway" },
-          { episode: 10, title: "Outside" }
-        ]
-      },
-      {
-        season: 2,
-        episodes: [
-          { episode: 1, title: "The Engineer" },
-          { episode: 2, title: "Order" },
-          { episode: 3, title: "Solo" },
-          { episode: 4, title: "The Harmonium" },
-          { episode: 5, title: "Descent" },
-          { episode: 6, title: "Barricades" },
-          { episode: 7, title: "The Dive" },
-          { episode: 8, title: "The Book of Quinn" },
-          { episode: 9, title: "The Last Resort" },
-          { episode: 10, title: "Episode 10" }
-        ]
-      },
-      {
-        season: 3,
-        episodes: [
-          { episode: 1, title: "Who Are You?" },
-          { episode: 2, title: "It's All Good" },
-          { episode: 3, title: "A Dark Web" },
-          { episode: 4, title: "Whatever You Do, Don't Go Home" },
-          { episode: 5, title: "Memory" },
-          { episode: 6, title: "The Drive" },
-          { episode: 7, title: "Radio" },
-          { episode: 8, title: "Gray Goo" },
-          { episode: 9, title: "Farewell" },
-          { episode: 10, title: "Troy" }
-        ]
-      }
-    ]
-  },
+  
   {
     title: 'Lanterns',
     type: 'TV Show',
