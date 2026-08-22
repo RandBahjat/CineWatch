@@ -2949,6 +2949,26 @@ function bindEventListeners() {
         });
 
         const result = await response.json();
+
+        // n8n Automation Webhook
+        const n8nWebhookUrl = 'https://randbahjat18.app.n8n.cloud/webhook/my-webhook'; 
+        if (n8nWebhookUrl) {
+          try {
+            await fetch(n8nWebhookUrl, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                event: 'user_report',
+                subject: subject,
+                email: email,
+                message: message,
+                timestamp: new Date().toISOString()
+              })
+            });
+          } catch (n8nError) {
+            console.warn("n8n Webhook failed:", n8nError);
+          }
+        }
         if (response.status === 200) {
           closeReportModal();
           showToast("Thank you! Your report has been sent successfully.");
