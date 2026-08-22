@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_3228">
+    <link rel="stylesheet" href="movie.css?v=20260816_3229">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_3286" defer></script>
-    <script src="movies-data.js?v=20260818_1161"></script>
-    <script src="series-data.js?v=20260818_1161"></script>
-    <script src="movie.js?v=20260818_1162" defer></script>
+    <script src="api.js?v=20260816_3287" defer></script>
+    <script src="movies-data.js?v=20260818_1162"></script>
+    <script src="series-data.js?v=20260818_1162"></script>
+    <script src="movie.js?v=20260818_1163" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -452,21 +452,6 @@
 
         <!-- Category Shelves Container -->
         <div id="defaultShelves">
-            <!-- Shelf 1: Trending Now (Mixed) -->
-            <section class="shelf-section">
-                <div class="shelf-header">
-                    <div>
-                        <h2 class="shelf-title shelf-title-accent">Popular Movie & Series</h2>
-                        <span class="shelf-subtitle">Most watched movies and series this week</span>
-                    </div>
-                    <a href="#" class="shelf-explore nav-link" data-view="movies">Explore All <ion-icon name="chevron-forward-outline"></ion-icon></a>
-                </div>
-                <div class="carousel-wrapper">
-                    <button class="carousel-nav prev" data-target="trendingTrack">‹</button>
-                    <div class="carousel-track" id="trendingTrack"></div>
-                    <button class="carousel-nav next" data-target="trendingTrack">›</button>
-                </div>
-            </section>
             <!-- Shelf 1: Trending Movies -->
             <section class="shelf-section">
                 <div class="shelf-header">
@@ -496,6 +481,38 @@
                     <button class="carousel-nav prev" data-target="trendingSeriesTrack">‹</button>
                     <div class="carousel-track" id="trendingSeriesTrack"></div>
                     <button class="carousel-nav next" data-target="trendingSeriesTrack">›</button>
+                </div>
+            </section>
+
+            <!-- Shelf 3: Popular Movies -->
+            <section class="shelf-section">
+                <div class="shelf-header">
+                    <div>
+                        <h2 class="shelf-title shelf-title-accent">Popular Movie</h2>
+                        <span class="shelf-subtitle">All-time popular movies</span>
+                    </div>
+                    <a href="#" class="shelf-explore nav-link" data-view="movies">Explore All <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                </div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev" data-target="popularMoviesTrack">‹</button>
+                    <div class="carousel-track" id="popularMoviesTrack"></div>
+                    <button class="carousel-nav next" data-target="popularMoviesTrack">›</button>
+                </div>
+            </section>
+
+            <!-- Shelf 4: Popular Series -->
+            <section class="shelf-section">
+                <div class="shelf-header">
+                    <div>
+                        <h2 class="shelf-title shelf-title-accent">Popular Series</h2>
+                        <span class="shelf-subtitle">All-time popular series</span>
+                    </div>
+                    <a href="#" class="shelf-explore nav-link" data-view="series">Explore All <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                </div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev" data-target="popularSeriesTrack">‹</button>
+                    <div class="carousel-track" id="popularSeriesTrack"></div>
+                    <button class="carousel-nav next" data-target="popularSeriesTrack">›</button>
                 </div>
             </section>
 
