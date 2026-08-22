@@ -32,6 +32,18 @@ window._SERIES_DATA = [
         episodes: [
           { episode: 1, title: "Freedom Day", duration: "60m" }
         ]
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "Episode 1", duration: "60m" }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: "Episode 1", duration: "60m" }
+        ]
       }
     ]
   },
