@@ -1849,6 +1849,12 @@ body.rtl-layout .details-back-btn svg {
   flex-wrap: nowrap;
   overflow-x: auto;
   padding-bottom: 5px; /* for scrollbar if needed */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.details-action-buttons::-webkit-scrollbar {
+  display: none;
 }
 
 .details-action-buttons > * {
