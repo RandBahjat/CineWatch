@@ -2505,10 +2505,6 @@ function bindEventListeners() {
       const x = e.pageX - track.offsetLeft;
       let walk = (x - startX) * 1.5; // scroll speed multiplier
       
-      if (document.body.classList.contains("rtl-layout")) {
-        walk = -walk; // Invert drag scroll for RTL layouts
-      }
-      
       track.scrollLeft = scrollLeft - walk;
       if (Math.abs(walk) > 5) hasDragged = true;
     });
