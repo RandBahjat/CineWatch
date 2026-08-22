@@ -5636,3 +5636,24 @@ input:-webkit-autofill:active {
  } 
   
  
+
+/* RTL Adjustments for Sidebars */
+body.rtl-layout .mobile-menu {
+  left: auto;
+  right: -300px;
+}
+body.rtl-layout .mobile-menu-overlay.active .mobile-menu {
+  left: auto;
+  right: 0;
+}
+body.rtl-layout .account-side-panel {
+  right: auto;
+  left: 0;
+  border-left: none;
+  border-right: 1px solid rgba(255,255,255,0.08);
+  transform: translateX(-100%);
+  box-shadow: 8px 0 32px rgba(0,0,0,0.6);
+}
+body.rtl-layout .account-side-panel.open {
+  transform: translateX(0);
+}
