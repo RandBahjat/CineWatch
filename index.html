@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_3317">
+    <link rel="stylesheet" href="movie.css?v=20260816_3318">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_3375" defer></script>
-    <script src="movies-data.js?v=20260818_1250"></script>
-    <script src="series-data.js?v=20260818_1250"></script>
-    <script src="movie.js?v=20260818_1251" defer></script>
+    <script src="api.js?v=20260816_3376" defer></script>
+    <script src="movies-data.js?v=20260818_1251"></script>
+    <script src="series-data.js?v=20260818_1251"></script>
+    <script src="movie.js?v=20260818_1252" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -1077,6 +1077,10 @@
             const labelCast = document.getElementById('labelCast');
             const navSeries1 = document.getElementById('navSeries1');
             const navSeries2 = document.getElementById('navSeries2');
+            const navHome1 = document.getElementById('navHome1');
+            const navHome2 = document.getElementById('navHome2');
+            const navMovies1 = document.getElementById('navMovies1');
+            const navMovies2 = document.getElementById('navMovies2');
             
             // Search filters
             const filterBtnText = document.getElementById('filterBtnText');
@@ -1097,10 +1101,6 @@
                 if (labelCast) labelCast.textContent = 'ئەکتەرەکان:';
                 if (navSeries1) navSeries1.textContent = 'زنجیرە';
                 if (navSeries2) navSeries2.textContent = 'زنجیرە';
-                const navHome1 = document.getElementById('navHome1');
-                const navHome2 = document.getElementById('navHome2');
-                const navMovies1 = document.getElementById('navMovies1');
-                const navMovies2 = document.getElementById('navMovies2');
                 if (navHome1) navHome1.textContent = 'سەرەکی';
                 if (navHome2) navHome2.textContent = 'سەرەکی';
                 if (navMovies1) navMovies1.textContent = 'فلم';
