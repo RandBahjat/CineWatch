@@ -5441,6 +5441,7 @@ input:-webkit-autofill:active {
   opacity: 1;
   transform: scale(1);
 }
+}
 
 
 /* Fix Chrome Autofill turning inputs white */
