@@ -2579,7 +2579,7 @@ function bindEventListeners() {
   // Normalizes a string: lowercase, strip hyphens/special chars/spaces for loose matching
   function norm(str) {
     if (!str) return '';
-    return str.toLowerCase().replace(/[^a-z0-9]/g, '');
+    return String(str).toLowerCase().replace(/[^a-z0-9]/g, '');
   }
 
   // Returns a relevance score — higher = better match
