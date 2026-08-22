@@ -3,7 +3,40 @@
 // Push to GitHub (or save — auto-sync will handle it) for changes to go live.
 
 window._SERIES_DATA = [
-  
+  {
+    title: "X-Men '97",
+    type: "TV Show",
+    year: 2024,
+    rating: 8.9,
+    age: "TV-14",
+    genres: ["Animation", "Action", "Sci-Fi"],
+    poster: "https://image.tmdb.org/t/p/original/9Ycz7glSCWC9OCIXc80RPE3K18O.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/rYc1eK8C843w8670IIfQvF01jWk.jpg",
+    videoUrl: "114472",
+    overview: "X-Men '97 is a revival of the classic animated series, following the iconic mutant team as they navigate high-stakes adventures and emotional challenges in a world that hates and fears them.",
+    director: "Jake Castorena",
+    cast: ["Ray Chase", "Jennifer Hale", "Alison Sealy-Smith", "Cal Dodd", "J. P. Karliak"],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "To Me, My X-Men" },
+          { episode: 2, title: "Mutant Liberation Begins" },
+          { episode: 3, title: "Fire Made Flesh" },
+          { episode: 4, title: "Motendo / Lifedeath – Part 1" },
+          { episode: 5, title: "Remember It" },
+          { episode: 6, title: "Lifedeath – Part 2" },
+          { episode: 7, title: "Bright Eyes" },
+          { episode: 8, title: "Tolerance is Extinction – Part 1" },
+          { episode: 9, title: "Tolerance is Extinction – Part 2" },
+          { episode: 10, title: "Tolerance is Extinction – Part 3" }
+        ]
+      }
+    ]
+  },
   {
     title: 'Lanterns',
     type: 'TV Show',
