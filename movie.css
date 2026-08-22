@@ -5682,22 +5682,24 @@ body.rtl-layout .account-side-panel.open {
 /* Language Toast Banner */
 .lang-toast {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
-  background: #151821;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 16px 20px;
+  top: 72px; /* right under navbar */
+  left: 0;
+  width: 100%;
+  background: rgba(229, 9, 20, 0.95); /* CineWatch Netflix-like red */
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 5%;
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
-  z-index: 10000;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+  z-index: 99; /* slide under navbar (z-index 100) */
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(-100%);
   pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  max-width: 320px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .lang-toast.active {
   opacity: 1;
@@ -5705,31 +5707,44 @@ body.rtl-layout .account-side-panel.open {
   pointer-events: all;
 }
 .lang-toast p {
-  font-size: 14px;
+  font-size: 15px;
   color: #fff;
   margin: 0;
   line-height: 1.4;
+  font-weight: 500;
 }
 .lang-toast-actions {
   display: flex;
   gap: 12px;
-  justify-content: flex-end;
+  align-items: center;
 }
 .lang-toast-btn {
   background: transparent;
-  border: none;
-  color: #aaa;
-  font-size: 13px;
-  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  padding: 8px 16px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
-  transition: color 0.2s;
+  transition: all 0.2s;
+  white-space: nowrap;
 }
 .lang-toast-btn:hover {
-  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
 }
 .lang-toast-btn.primary {
+  background: #fff;
   color: #E50914;
+  border: 1px solid #fff;
 }
 .lang-toast-btn.primary:hover {
-  color: #ff3b44;
+  background: #f0f0f0;
+}
+@media (max-width: 600px) {
+  .lang-toast {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px 5%;
+  }
 }
