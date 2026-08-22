@@ -3283,29 +3283,14 @@ function bindEventListeners() {
     submitBtn.textContent = "Signing in...";
     submitBtn.disabled = true;
 
-    // --- Fake Cloudflare Turnstile Animation ---
-    const cfWidget = document.getElementById("cf-turnstile");
-    const cfSpinner = document.getElementById("cf-spinner");
-    const cfText = document.getElementById("cf-text");
-
-    if (cfWidget) {
-      cfWidget.classList.remove("hidden");
-      cfSpinner.classList.remove("success");
-      cfText.textContent = "Verifying...";
-      cfText.style.color = "#ccc";
-
-      // Wait 1.5 seconds for fake verification
-      await new Promise(r => setTimeout(r, 1500));
-
-      // Success state
-      cfSpinner.classList.add("success");
-      cfText.textContent = "Success!";
-      cfText.style.color = "#00FF00";
-
-      // Wait another 0.5s before proceeding
-      await new Promise(r => setTimeout(r, 500));
+    const turnstileToken = document.querySelector('#loginForm [name="cf-turnstile-response"]')?.value;
+    if (!turnstileToken) {
+      alertEl.textContent = "Please complete the CAPTCHA.";
+      alertEl.classList.remove("hidden");
+      submitBtn.innerHTML = '<ion-icon name="log-in-outline"></ion-icon> Sign In';
+      submitBtn.disabled = false;
+      return;
     }
-    // -------------------------------------------
     if (!window.CW_API) {
       alertEl.textContent = "Authentication service not ready. Please refresh the page and try again.";
       alertEl.classList.remove("hidden");
@@ -3316,7 +3301,7 @@ function bindEventListeners() {
 
     // Mark that this is a real login action so cw:authChanged knows to reload
     sessionStorage.setItem("cw_loginPending", "1");
-    const { user, error } = await window.CW_API.signIn(username, pass);
+    const { user, error } = await window.CW_API.signIn(username, pass, turnstileToken);
     if (error) {
       sessionStorage.removeItem("cw_loginPending"); // clear flag on error
       alertEl.textContent = error;
@@ -3382,34 +3367,19 @@ function bindEventListeners() {
     submitBtn.textContent = "Creating Account...";
     submitBtn.disabled = true;
 
-    // --- Fake Cloudflare Turnstile Animation ---
-    const cfWidget = document.getElementById("cf-turnstile-signup");
-    const cfSpinner = document.getElementById("cf-spinner-signup");
-    const cfText = document.getElementById("cf-text-signup");
-
-    if (cfWidget) {
-      cfWidget.classList.remove("hidden");
-      cfSpinner.classList.remove("success");
-      cfText.textContent = "Verifying...";
-      cfText.style.color = "#ccc";
-
-      // Wait 1.5 seconds for fake verification
-      await new Promise(r => setTimeout(r, 1500));
-
-      // Success state
-      cfSpinner.classList.add("success");
-      cfText.textContent = "Success!";
-      cfText.style.color = "#00FF00";
-
-      // Wait another 0.5s before proceeding
-      await new Promise(r => setTimeout(r, 500));
+    const turnstileToken = document.querySelector('#signupForm [name="cf-turnstile-response"]')?.value;
+    if (!turnstileToken) {
+      alertEl.textContent = "Please complete the CAPTCHA.";
+      alertEl.classList.remove("hidden");
+      submitBtn.innerHTML = '<ion-icon name="person-add-outline"></ion-icon> Create Account';
+      submitBtn.disabled = false;
+      return;
     }
-    // -------------------------------------------
 
     if (window.CW_API) {
       // Mark that this is a real sign-up action so cw:authChanged knows to reload
       sessionStorage.setItem("cw_loginPending", "1");
-      const { user, error } = await window.CW_API.signUp(name, email, pass);
+      const { user, error } = await window.CW_API.signUp(name, email, pass, turnstileToken);
       if (error) {
         sessionStorage.removeItem("cw_loginPending"); // clear flag on error
         alertEl.textContent = error;
