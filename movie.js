@@ -3709,26 +3709,6 @@ function navigateToEpisode(offset) {
 
 document.getElementById("playerNextEpBtn")?.addEventListener("click", () => navigateToEpisode(1));
 document.getElementById("playerPrevEpBtn")?.addEventListener("click", () => navigateToEpisode(-1));
-document.getElementById("overlayNextEpBtn")?.addEventListener("click", () => navigateToEpisode(1));
-document.getElementById("overlayPrevEpBtn")?.addEventListener("click", () => navigateToEpisode(-1));
-document.getElementById("overlayReplayBtn")?.addEventListener("click", () => {
-  document.getElementById("videoEndOverlay").classList.add("hidden");
-  const video = document.getElementById("videoElement");
-  if (video) {
-    video.currentTime = 0;
-    video.play();
-  }
-});
-
-const vEl = document.getElementById("videoElement");
-if (vEl) {
-  vEl.addEventListener("ended", () => {
-    if (state.currentPlayingMovie && state.currentPlayingMovie.epData) {
-      const overlay = document.getElementById("videoEndOverlay");
-      if (overlay) overlay.classList.remove("hidden");
-    }
-  });
-}
 
 // ==========================================
 // BACK TO TOP BUTTON
