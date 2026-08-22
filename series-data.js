@@ -52726,7 +52726,7 @@ window._SERIES_DATA = [
         ]
       }
     ]
-  }
+  },
 
   {
     title: "Silo",
