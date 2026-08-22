@@ -26,7 +26,7 @@
 // ==========================================
 const FEATURED_TITLES = ["Reacher","Lanterns", "House of the Dragon", "The Invite", "Spider-Man: Brand New Day", "The Odyssey", "Obsession", "The Last House"];
 const TRENDING_TITLES = ["Reacher","Lanterns", "Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters", "The Invite", "Young Washington", "The Last House", "Ted Lasso", "Project Hail Mary"];
-const TRENDING_THIS_WEEK_MOVIES = ["Spider-Man: Brand New Day","The Odyssey","Obsession","Minions & Monsters","The Last House","Disclosure","The Invete","Backrooms","Camp Rock 3","Evil Dead Burn","Project Hail","Supergirl"]; // Add titles here for 'Trending Movies This Week'
+const TRENDING_THIS_WEEK_MOVIES = ["Spider-Man: Brand New Day","The Odyssey","Obsession","Minions & Monsters","The Last House","Disclosure Day","The Invete","Backrooms","Camp Rock 3","Evil Dead Burn","Project Hail","Supergirl"]; // Add titles here for 'Trending Movies This Week'
 const TRENDING_THIS_WEEK_SERIES = []; // Add titles here for 'Trending Series This Week'
 
 // ==========================================
