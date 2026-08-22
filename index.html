@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_2997">
+    <link rel="stylesheet" href="movie.css?v=20260816_2999">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_3055" defer></script>
-    <script src="movies-data.js?v=20260818_930"></script>
-    <script src="series-data.js?v=20260818_930"></script>
-    <script src="movie.js?v=20260818_931" defer></script>
+    <script src="api.js?v=20260816_3057" defer></script>
+    <script src="movies-data.js?v=20260818_932"></script>
+    <script src="series-data.js?v=20260818_932"></script>
+    <script src="movie.js?v=20260818_933" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -52,7 +52,7 @@
                 <nav class="nav-links">
                     <a href="#" class="nav-link active" data-view="home"><ion-icon name="home-outline"></ion-icon> Home</a>
                     <a href="#" class="nav-link" data-view="movies"><ion-icon name="film-outline"></ion-icon> Movies</a>
-                    <a href="#" class="nav-link" data-view="series"><ion-icon name="tv-outline"></ion-icon> Series</a>
+                    <a href="#" class="nav-link" data-view="series"><ion-icon name="tv-outline"></ion-icon> <span class="notranslate" translate="no" id="navSeries1">Series</span></a>
                     <a href="#" class="nav-link" data-view="continue"><ion-icon name="play-circle-outline"></ion-icon> Continue Watching</a>
                     <a href="#" class="nav-link" data-view="watchlist"><ion-icon name="heart-outline"></ion-icon> My Watchlist</a>
                 </nav>
@@ -148,7 +148,7 @@
             <nav class="mobile-nav-links">
                 <a href="#" class="nav-link active" data-view="home"><ion-icon name="home-outline"></ion-icon> Home</a>
                 <a href="#" class="nav-link" data-view="movies"><ion-icon name="film-outline"></ion-icon> Movies</a>
-                <a href="#" class="nav-link" data-view="series"><ion-icon name="tv-outline"></ion-icon> Series</a>
+                <a href="#" class="nav-link" data-view="series"><ion-icon name="tv-outline"></ion-icon> <span class="notranslate" translate="no" id="navSeries2">Series</span></a>
                 <a href="#" class="nav-link" data-view="continue"><ion-icon name="play-circle-outline"></ion-icon> Continue Watching</a>
                 <a href="#" class="nav-link" data-view="watchlist"><ion-icon name="heart-outline"></ion-icon> My Watchlist</a>
             </nav>
@@ -1067,6 +1067,8 @@
             
             const labelDirector = document.getElementById('labelDirector');
             const labelCast = document.getElementById('labelCast');
+            const navSeries1 = document.getElementById('navSeries1');
+            const navSeries2 = document.getElementById('navSeries2');
             
             if (currentLang === 'ckb') {
                 if (loginPwLabel) loginPwLabel.textContent = 'وشەی نهێنی';
@@ -1079,6 +1081,8 @@
                 if (signupEmailInput) signupEmailInput.placeholder = 'ئیمەیڵ';
                 if (labelDirector) labelDirector.textContent = 'دەرهێنەر:';
                 if (labelCast) labelCast.textContent = 'ئەکتەرەکان:';
+                if (navSeries1) navSeries1.textContent = 'زنجیرەکان';
+                if (navSeries2) navSeries2.textContent = 'زنجیرەکان';
             } else if (currentLang === 'ar') {
                 if (loginPwLabel) loginPwLabel.textContent = 'كلمة المرور';
                 if (signupPwLabel) signupPwLabel.textContent = 'كلمة المرور';
@@ -1090,6 +1094,8 @@
                 if (signupEmailInput) signupEmailInput.placeholder = 'البريد الإلكتروني';
                 if (labelDirector) labelDirector.textContent = 'المخرج:';
                 if (labelCast) labelCast.textContent = 'طاقم العمل:';
+                if (navSeries1) navSeries1.textContent = 'مسلسلات';
+                if (navSeries2) navSeries2.textContent = 'مسلسلات';
             } else if (currentLang === 'ku') {
                 if (loginPwLabel) loginPwLabel.textContent = 'Şîfre';
                 if (signupPwLabel) signupPwLabel.textContent = 'Şîfre';
@@ -1101,6 +1107,8 @@
                 if (signupEmailInput) signupEmailInput.placeholder = 'Navnîşana E-nameyê';
                 if (labelDirector) labelDirector.textContent = 'Derhêner:';
                 if (labelCast) labelCast.textContent = 'Lîstikvan:';
+                if (navSeries1) navSeries1.textContent = 'Rêzefîlm';
+                if (navSeries2) navSeries2.textContent = 'Rêzefîlm';
             } else {
                 if (loginPwLabel) loginPwLabel.textContent = 'Password';
                 if (signupPwLabel) signupPwLabel.textContent = 'Password';
@@ -1112,6 +1120,8 @@
                 if (signupEmailInput) signupEmailInput.placeholder = 'Email';
                 if (labelDirector) labelDirector.textContent = 'Director:';
                 if (labelCast) labelCast.textContent = 'Cast:';
+                if (navSeries1) navSeries1.textContent = 'Series';
+                if (navSeries2) navSeries2.textContent = 'Series';
             }
 
             // Setup Custom Dropdown
