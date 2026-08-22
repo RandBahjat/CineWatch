@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260822_2366">
+    <link rel="stylesheet" href="movie.css?v=20260822_2367">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260822_2365" defer></script>
-    <script src="movies-data.js?v=20260818_1334"></script>
-    <script src="series-data.js?v=20260818_1334"></script>
-    <script src="movie.js?v=20260822_2365" defer></script>
+    <script src="api.js?v=20260822_2366" defer></script>
+    <script src="movies-data.js?v=20260818_1335"></script>
+    <script src="series-data.js?v=20260818_1335"></script>
+    <script src="movie.js?v=20260822_2366" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
@@ -212,16 +212,7 @@
                     <span class="meta-separator">&nbsp;&middot;&nbsp;</span>
                     <span class="meta-genres" id="detailsGenres">Action &middot; Adventure &middot; Sci-Fi</span>
                 </div>
-                
-                <div class="user-rating-stars" id="userRatingStars">
-                    <span class="rating-label">Rate: </span>
-                    <ion-icon name="star-outline" data-rating="1"></ion-icon>
-                    <ion-icon name="star-outline" data-rating="2"></ion-icon>
-                    <ion-icon name="star-outline" data-rating="3"></ion-icon>
-                    <ion-icon name="star-outline" data-rating="4"></ion-icon>
-                    <ion-icon name="star-outline" data-rating="5"></ion-icon>
-                    <span class="rating-average" id="globalRatingAvg"></span>
-                </div>
+
 
                 <p class="details-overview-large" id="detailsOverview">Synopsis goes here...</p>
 
@@ -248,6 +239,16 @@
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
                         Similars
                     </button>
+
+                    <div class="user-rating-stars" id="userRatingStars" style="margin-bottom: 0; margin-left: 1rem;">
+                        <span class="rating-label">Rate: </span>
+                        <ion-icon name="star-outline" data-rating="1"></ion-icon>
+                        <ion-icon name="star-outline" data-rating="2"></ion-icon>
+                        <ion-icon name="star-outline" data-rating="3"></ion-icon>
+                        <ion-icon name="star-outline" data-rating="4"></ion-icon>
+                        <ion-icon name="star-outline" data-rating="5"></ion-icon>
+                        <span class="rating-average" id="globalRatingAvg"></span>
+                    </div>
                 </div>
 
                 <!-- Director List -->
