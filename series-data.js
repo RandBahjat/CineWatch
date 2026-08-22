@@ -12,7 +12,7 @@ window._SERIES_DATA = [
     genres: ["Animation", "Action", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/iDnTAeR2WNA62XQG0ivtteDSjd5.jpg",
-    videoUrl: "114472",
+    videoUrl: "138",
     overview: "X-Men '97 is a revival of the classic animated series, following the iconic mutant team as they navigate high-stakes adventures and emotional challenges in a world that hates and fears them.",
     director: "Jake Castorena",
     cast: ["Ray Chase", "Jennifer Hale", "Alison Sealy-Smith", "Cal Dodd", "J. P. Karliak"],
