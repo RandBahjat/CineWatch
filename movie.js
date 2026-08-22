@@ -41,6 +41,7 @@ function translateGenre(genre) {
   if (document.body.classList.contains('rtl-layout')) {
     if (genre === 'Fantasy') return 'فانتاسی';
     if (genre === 'Adventure') return 'سەرکێشی';
+    if (genre === 'Action') return 'ئەکشن';
   }
   return genre;
 }
