@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260816_3304">
+    <link rel="stylesheet" href="movie.css?v=20260816_3305">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -14,10 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="api.js?v=20260816_3362" defer></script>
-    <script src="movies-data.js?v=20260818_1237"></script>
-    <script src="series-data.js?v=20260818_1237"></script>
-    <script src="movie.js?v=20260818_1238" defer></script>
+    <script src="api.js?v=20260816_3363" defer></script>
+    <script src="movies-data.js?v=20260818_1238"></script>
+    <script src="series-data.js?v=20260818_1238"></script>
+    <script src="movie.js?v=20260818_1239" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -1147,6 +1147,18 @@
                 if (filterOptAll) filterOptAll.textContent = 'Fîlm û Rêzefîlm';
                 if (filterOptMovie) filterOptMovie.textContent = 'Tenê Fîlm';
                 if (filterOptSeries) filterOptSeries.textContent = 'Tenê Rêzefîlm';
+                document.querySelectorAll('.browse-filter-btn[data-genre="Crime"]').forEach(btn => btn.textContent = 'Suc');
+                document.querySelectorAll('.browse-filter-btn[data-genre="Drama"]').forEach(btn => btn.textContent = 'Drama');
+                document.querySelectorAll('.browse-filter-btn[data-genre="Family"]').forEach(btn => btn.textContent = 'Familu');
+                document.querySelectorAll('.browse-filter-btn[data-genre="Kids"]').forEach(btn => btn.textContent = 'Zarok');
+                document.querySelectorAll('.browse-filter-btn[data-genre="Mystery"]').forEach(btn => btn.textContent = 'Nepeni');
+                document.querySelectorAll('.browse-filter-btn[data-genre="Romance"]').forEach(btn => btn.textContent = 'Romantizm');
+                document.querySelectorAll('.browse-filter-btn[data-genre="Sci-Fi"]').forEach(btn => btn.textContent = 'Honaka Zanisti');
+                document.querySelectorAll('.report-text').forEach(el => el.textContent = 'Rapor');
+                const detailsReportBtn = document.getElementById('detailsReportBtn');
+                if (detailsReportBtn) detailsReportBtn.textContent = 'Rapor';
+                const submitReportText = document.getElementById('submitReportText');
+                if (submitReportText) submitReportText.textContent = 'Rapor';
             } else {
                 if (loginPwLabel) loginPwLabel.textContent = 'Password';
                 if (signupPwLabel) signupPwLabel.textContent = 'Password';
