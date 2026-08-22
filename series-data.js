@@ -52544,7 +52544,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/gHUCCMy1vvj58tzE3dZqeC9SXus.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/3tbKHQEP6BNUC5ZMNqps0rITwO7.jpg',
     videoUrl: '1403',
-    overview: 'Agent Phil Coulson assembles a small group of highly skilled agents from the global law-enforcement organization known as S.H.I.E.L.D. Together, they investigate the new, the strange and the unknown around the globe, protecting the ordinary from the extraordinary.',
+    overview: 'Agent Phil Coulson lead team of skilled operative, handle strange, dangerous case too big for regular cop, too small for Avengers. Team dig into world of superhuman, alien tech, secret conspiracy tie back to S.H.I.E.L.D. itself.',
     director: 'Maurissa Tancharoen, Jed Whedon, Joss Whedon',
     cast: [
       'Clark Gregg',
