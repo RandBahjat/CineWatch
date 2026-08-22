@@ -13451,7 +13451,7 @@ window._SERIES_DATA = [
       'Drama',
       'Western'
     ],
-    poster: 'https://image.tmdb.org/t/p/w600_and_h900_face/peqBjbBngMivD44z448Bms7K5m3.jpg',
+    poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/vOYfRZ0NpUK5hG2CB2dJFnYJlGe.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/9gWv6oZcE8R7N3F5H5B0c1S6r6M.jpg',
     videoUrl: '73586',
     overview: "Follow the violent world of the Dutton family, who controls the largest contiguous ranch in the United States. Led by their patriarch John Dutton, the family defends their property against constant attack by land developers, an Indian reservation, and America's first National Park.",
