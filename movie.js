@@ -413,11 +413,10 @@ function setupHeroBanner() {
       }
   }
   const isSorani = currentLang === 'ckb';
-  const isKurmanji = currentLang === 'ku';
   const isArabic = currentLang === 'ar';
   
-  const playText = isSorani ? 'لێدان' : (isKurmanji ? 'Listik' : (isArabic ? 'تشغيل' : 'Play'));
-  const moreText = isSorani ? 'زیاتر ببینە' : (isKurmanji ? 'Zêdetir Bibîne' : (isArabic ? 'عرض المزيد' : 'See More'));
+  const playText = isSorani ? 'لێدان' : (isArabic ? 'تشغيل' : 'Play');
+  const moreText = isSorani ? 'زیاتر ببینە' : (isArabic ? 'عرض المزيد' : 'See More');
 
   // Generate ALL slides dynamically from featured array
   heroTrack.innerHTML = featured.map((movie, idx) => {
