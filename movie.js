@@ -426,7 +426,7 @@ function setupHeroBanner() {
   const isKurmanji = currentLang === 'ku';
   const isArabic = currentLang === 'ar';
   
-  const playText = isSorani ? 'لێدان' : (isKurmanji ? 'Lîstin' : (isArabic ? 'تشغيل' : 'Play'));
+  const playText = isSorani ? 'لێدان' : (isKurmanji ? 'Listik' : (isArabic ? 'تشغيل' : 'Play'));
   const moreText = isSorani ? 'زیاتر ببینە' : (isKurmanji ? 'Zêdetir Bibîne' : (isArabic ? 'عرض المزيد' : 'See More'));
 
   // Generate ALL slides dynamically from featured array
