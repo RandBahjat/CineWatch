@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260822_2469">
+    <link rel="stylesheet" href="movie.css?v=20260822_2471">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -17,8 +17,8 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_1437"></script>
-    <script src="series-data.js?v=20260818_1437"></script>
+    <script src="movies-data.js?v=20260818_1439"></script>
+    <script src="series-data.js?v=20260818_1439"></script>
     <script src="movie.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -82,19 +82,34 @@
                     <a href="#" class="nav-link" data-view="movies"><ion-icon name="film-outline"></ion-icon> <span id="navMovies1" class="notranslate" translate="no">Movies</span></a>
                     <a href="#" class="nav-link" data-view="series"><ion-icon name="tv-outline"></ion-icon> <span class="notranslate" translate="no" id="navSeries1">Series</span></a>
                     <a href="#" class="nav-link" data-view="anime">
-                        <svg viewBox="0 0 100 100" style="width: 1.5em; height: 1.5em; vertical-align: -0.35em; margin-right: 6px; display: inline-block; fill: none; stroke: currentColor; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round;">
-                          <path d="M 20 20 C 15 17 18 10 23 14 C 28 10 31 17 26 20 L 33 27" />
-                          <path d="M 80 20 C 85 17 82 10 77 14 C 72 10 69 17 74 20 L 67 27" />
-                          <path d="M 20 90 C 15 93 18 100 23 96 C 28 100 31 93 26 90 L 35 81" />
-                          <path d="M 80 90 C 85 93 82 100 77 96 C 72 100 69 93 74 90 L 65 81" />
-                          <path d="M 30 40 C 30 15 70 15 70 40" />
-                          <path d="M 32 32 Q 50 40 68 32" />
-                          <path d="M 10 40 Q 50 55 90 40" />
-                          <path d="M 33 45 C 33 65 38 72 42 72 L 42 85 Q 50 90 58 85 L 58 72 C 62 72 67 65 67 45" />
-                          <circle cx="43" cy="58" r="4.5" fill="currentColor" stroke="none" />
-                          <circle cx="57" cy="58" r="4.5" fill="currentColor" stroke="none" />
-                          <circle cx="50" cy="67" r="1.5" fill="currentColor" stroke="none" />
-                          <path d="M 42 78 L 58 78 M 47 72 L 47 86 M 53 72 L 53 86" stroke-width="3" />
+                        <style>
+                          .jolly-roger-icon .jr-hat {
+                            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                            transform-origin: 50% 40%;
+                          }
+                          .nav-link:hover .jolly-roger-icon .jr-hat {
+                            transform: translateY(-12px) rotate(5deg);
+                          }
+                        </style>
+                        <svg class="jolly-roger-icon" viewBox="0 0 100 100" style="width: 1.5em; height: 1.5em; vertical-align: -0.35em; margin-right: 6px; display: inline-block; fill: none; stroke: currentColor; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round;">
+                          <g class="jr-bones">
+                            <path d="M 20 20 C 15 17 18 10 23 14 C 28 10 31 17 26 20 L 33 27" />
+                            <path d="M 80 20 C 85 17 82 10 77 14 C 72 10 69 17 74 20 L 67 27" />
+                            <path d="M 20 90 C 15 93 18 100 23 96 C 28 100 31 93 26 90 L 35 81" />
+                            <path d="M 80 90 C 85 93 82 100 77 96 C 72 100 69 93 74 90 L 65 81" />
+                          </g>
+                          <g class="jr-hat">
+                            <path d="M 30 40 C 30 15 70 15 70 40" />
+                            <path d="M 32 32 Q 50 40 68 32" />
+                            <path d="M 10 40 Q 50 55 90 40" />
+                          </g>
+                          <g class="jr-face">
+                            <path d="M 33 45 C 33 65 38 72 42 72 L 42 85 Q 50 90 58 85 L 58 72 C 62 72 67 65 67 45" />
+                            <circle cx="43" cy="58" r="4.5" fill="currentColor" stroke="none" />
+                            <circle cx="57" cy="58" r="4.5" fill="currentColor" stroke="none" />
+                            <circle cx="50" cy="67" r="1.5" fill="currentColor" stroke="none" />
+                            <path d="M 42 78 L 58 78 M 47 72 L 47 86 M 53 72 L 53 86" stroke-width="3" />
+                          </g>
                         </svg>
                         <span class="notranslate" translate="no" id="navAnime1">Anime</span>
                     </a>
@@ -194,19 +209,25 @@
                 <a href="#" class="nav-link" data-view="movies"><ion-icon name="film-outline"></ion-icon> <span id="navMovies2" class="notranslate" translate="no">Movies</span></a>
                 <a href="#" class="nav-link" data-view="series"><ion-icon name="tv-outline"></ion-icon> <span class="notranslate" translate="no" id="navSeries2">Series</span></a>
                 <a href="#" class="nav-link" data-view="anime">
-                    <svg viewBox="0 0 100 100" style="width: 1.5em; height: 1.5em; vertical-align: -0.35em; margin-right: 6px; display: inline-block; fill: none; stroke: currentColor; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round;">
-                      <path d="M 20 20 C 15 17 18 10 23 14 C 28 10 31 17 26 20 L 33 27" />
-                      <path d="M 80 20 C 85 17 82 10 77 14 C 72 10 69 17 74 20 L 67 27" />
-                      <path d="M 20 90 C 15 93 18 100 23 96 C 28 100 31 93 26 90 L 35 81" />
-                      <path d="M 80 90 C 85 93 82 100 77 96 C 72 100 69 93 74 90 L 65 81" />
-                      <path d="M 30 40 C 30 15 70 15 70 40" />
-                      <path d="M 32 32 Q 50 40 68 32" />
-                      <path d="M 10 40 Q 50 55 90 40" />
-                      <path d="M 33 45 C 33 65 38 72 42 72 L 42 85 Q 50 90 58 85 L 58 72 C 62 72 67 65 67 45" />
-                      <circle cx="43" cy="58" r="4.5" fill="currentColor" stroke="none" />
-                      <circle cx="57" cy="58" r="4.5" fill="currentColor" stroke="none" />
-                      <circle cx="50" cy="67" r="1.5" fill="currentColor" stroke="none" />
-                      <path d="M 42 78 L 58 78 M 47 72 L 47 86 M 53 72 L 53 86" stroke-width="3" />
+                    <svg class="jolly-roger-icon" viewBox="0 0 100 100" style="width: 1.5em; height: 1.5em; vertical-align: -0.35em; margin-right: 6px; display: inline-block; fill: none; stroke: currentColor; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round;">
+                      <g class="jr-bones">
+                        <path d="M 20 20 C 15 17 18 10 23 14 C 28 10 31 17 26 20 L 33 27" />
+                        <path d="M 80 20 C 85 17 82 10 77 14 C 72 10 69 17 74 20 L 67 27" />
+                        <path d="M 20 90 C 15 93 18 100 23 96 C 28 100 31 93 26 90 L 35 81" />
+                        <path d="M 80 90 C 85 93 82 100 77 96 C 72 100 69 93 74 90 L 65 81" />
+                      </g>
+                      <g class="jr-hat">
+                        <path d="M 30 40 C 30 15 70 15 70 40" />
+                        <path d="M 32 32 Q 50 40 68 32" />
+                        <path d="M 10 40 Q 50 55 90 40" />
+                      </g>
+                      <g class="jr-face">
+                        <path d="M 33 45 C 33 65 38 72 42 72 L 42 85 Q 50 90 58 85 L 58 72 C 62 72 67 65 67 45" />
+                        <circle cx="43" cy="58" r="4.5" fill="currentColor" stroke="none" />
+                        <circle cx="57" cy="58" r="4.5" fill="currentColor" stroke="none" />
+                        <circle cx="50" cy="67" r="1.5" fill="currentColor" stroke="none" />
+                        <path d="M 42 78 L 58 78 M 47 72 L 47 86 M 53 72 L 53 86" stroke-width="3" />
+                      </g>
                     </svg>
                     <span class="notranslate" translate="no" id="navAnime2">Anime</span>
                 </a>
