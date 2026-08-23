@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260822_2483">
+    <link rel="stylesheet" href="movie.css?v=20260822_2485">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -17,8 +17,8 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_1451"></script>
-    <script src="series-data.js?v=20260818_1451"></script>
+    <script src="movies-data.js?v=20260818_1453"></script>
+    <script src="series-data.js?v=20260818_1453"></script>
     <script src="movie.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -81,24 +81,24 @@
                     <a href="#" class="nav-link active" data-view="home"><ion-icon name="home-outline"></ion-icon> <span id="navHome1" class="notranslate" translate="no">Home</span></a>
                     <a href="#" class="nav-link" data-view="movies"><ion-icon name="film-outline"></ion-icon> <span id="navMovies1" class="notranslate" translate="no">Movies</span></a>
                     <a href="#" class="nav-link" data-view="series"><ion-icon name="tv-outline"></ion-icon> <span class="notranslate" translate="no" id="navSeries1">Series</span></a>
-                    <a href="#" class="nav-link" data-view="anime">
                         <style>
                           .anime-goku-icon {
-                            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease;
                           }
                           .nav-link:hover .anime-goku-icon {
-                            transform: translateY(-5px) scale(1.1);
+                            transform: translateY(-3px) scale(1.15);
+                            color: var(--primary);
                           }
                         </style>
-                        <svg class="anime-goku-icon" viewBox="0 0 100 100" style="width: 1.8em; height: 1.8em; vertical-align: -0.4em; margin-right: 6px; display: inline-block; fill: none; stroke: currentColor; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round;">
+                        <svg class="anime-goku-icon" viewBox="0 0 100 100" style="width: 1.8em; height: 1.8em; vertical-align: -0.4em; margin-right: 6px; display: inline-block; fill: none; stroke: currentColor; stroke-width: 5; stroke-linejoin: miter; stroke-linecap: butt; stroke-miterlimit: 4;">
                           <path d="
                             M 50 88 
                             L 40 80 L 35 68 
                             L 20 72 L 28 60 
                             L 12 60 L 25 50 
-                            Q 15 35 10 30 Q 25 35 38 42 
-                            Q 35 20 38 12 Q 45 25 50 35 
-                            Q 55 20 60 15 Q 62 25 65 38 
+                            L 10 30 L 38 42 
+                            L 38 12 L 50 35 
+                            L 60 15 L 65 38 
                             L 85 28 L 75 45 
                             L 95 52 L 78 60 
                             L 85 70 L 65 68 
@@ -209,15 +209,15 @@
                 <a href="#" class="nav-link" data-view="movies"><ion-icon name="film-outline"></ion-icon> <span id="navMovies2" class="notranslate" translate="no">Movies</span></a>
                 <a href="#" class="nav-link" data-view="series"><ion-icon name="tv-outline"></ion-icon> <span class="notranslate" translate="no" id="navSeries2">Series</span></a>
                 <a href="#" class="nav-link" data-view="anime">
-                    <svg class="anime-goku-icon" viewBox="0 0 100 100" style="width: 1.8em; height: 1.8em; vertical-align: -0.4em; margin-right: 6px; display: inline-block; fill: none; stroke: currentColor; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round;">
+                    <svg class="anime-goku-icon" viewBox="0 0 100 100" style="width: 1.8em; height: 1.8em; vertical-align: -0.4em; margin-right: 6px; display: inline-block; fill: none; stroke: currentColor; stroke-width: 5; stroke-linejoin: miter; stroke-linecap: butt; stroke-miterlimit: 4;">
                       <path d="
                         M 50 88 
                         L 40 80 L 35 68 
                         L 20 72 L 28 60 
                         L 12 60 L 25 50 
-                        Q 15 35 10 30 Q 25 35 38 42 
-                        Q 35 20 38 12 Q 45 25 50 35 
-                        Q 55 20 60 15 Q 62 25 65 38 
+                        L 10 30 L 38 42 
+                        L 38 12 L 50 35 
+                        L 60 15 L 65 38 
                         L 85 28 L 75 45 
                         L 95 52 L 78 60 
                         L 85 70 L 65 68 
