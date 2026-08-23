@@ -4,36 +4,6 @@
 
 window._SERIES_DATA = [
   {
-    title: 'One Piece',
-    type: 'Anime',
-    year: 1999,
-    rating: 8.7,
-    age: 'TV-14',
-    duration: '24m',
-    genres: ['Action', 'Adventure', 'Animation', 'Comedy', 'Anime'],
-    poster: 'https://image.tmdb.org/t/p/original/cMD9Ygz11zjJzAovURpO75Qg7rT.jpg',
-    backdrop: 'https://image.tmdb.org/t/p/original/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg',
-    videoUrl: '37854',
-    overview: 'Gol D. Roger was known as the "Pirate King," the strongest and most infamous being to have sailed the Grand Line. His capture and execution by the World Government brought a change throughout the world. His last words before his death revealed the existence of the greatest treasure in the world, One Piece. It was this revelation that brought about the Grand Age of Pirates.',
-    director: 'Eiichiro Oda',
-    cast: [
-      'Mayumi Tanaka, Kazuya Nakai, Akemi Okamura, Kappei Yamaguchi, Hiroaki Hirata, Ikue Otani'
-    ],
-    trending: true,
-    featured: false,
-    is4k: false,
-    seasons: [
-      {
-        season: 1,
-        episodes: [
-          { episode: 1, title: 'I\\'m Luffy! The Man Who\\'s Gonna Be King of the Pirates!' },
-          { episode: 2, title: 'Enter the Great Swordsman! Pirate Hunter Roronoa Zoro!' },
-          { episode: 3, title: 'Morgan versus Luffy! Who\\'s the Mysterious Beautiful Girl?' }
-        ]
-      }
-    ]
-  },
-  {
     title: 'Lanterns',
     type: 'TV Show',
     year: 2026,
