@@ -1274,6 +1274,11 @@ function renderUserBadge() {
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
             Edit username
           </button>
+          
+          <button class="account-panel-action-btn" id="changePasswordPanelBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            Change password
+          </button>
 
         </div>
 
@@ -1411,15 +1416,9 @@ function renderUserBadge() {
         if (changePasswordForm) {
           changePasswordForm.classList.remove("hidden");
           const cpOld = document.getElementById("cpOldModal");
-          if (cpOld) {
-            cpOld.value = "";
-            cpOld.focus();
-          }
-          document.getElementById("cpNewModal").value = "";
-          document.getElementById("cpConfirmModal").value = "";
-          const alertEl = document.getElementById("cpAlert");
-          if (alertEl) alertEl.classList.add("hidden");
-        }
+        openAuthModal();
+        document.querySelectorAll(".auth-form").forEach(f => f.classList.add("hidden"));
+        document.getElementById("changePasswordForm").classList.remove("hidden");
       };
     }
 
@@ -3300,11 +3299,19 @@ function bindEventListeners() {
           alertEl.style = "background: rgba(16, 185, 129, 0.1); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.2); margin-bottom: 1rem;";
           alertEl.classList.remove("hidden");
 
-          setTimeout(() => {
+          setTimeout(async () => {
+            if (window.CW_API) await window.CW_API.signOut();
             document.getElementById("authModal").classList.add("hidden");
             alertEl.classList.add("hidden");
             recoveryPasswordForm.reset();
-            showToast("Password updated securely!");
+            showToast("Password updated! Please log in again.");
+            
+            // Re-open auth modal to login form
+            setTimeout(() => {
+              openAuthModal();
+              document.querySelectorAll(".auth-form").forEach((form) => form.classList.add("hidden"));
+              document.getElementById("loginForm").classList.remove("hidden");
+            }, 300);
           }, 2000);
         }
       } else {
