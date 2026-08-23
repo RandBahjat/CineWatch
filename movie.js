@@ -3236,7 +3236,6 @@ function bindEventListeners() {
   if (changePasswordForm) {
     changePasswordForm.onsubmit = async (e) => {
       e.preventDefault();
-      const oldVal = document.getElementById("cpOldModal").value;
       const newVal = document.getElementById("cpNewModal").value;
       const confVal = document.getElementById("cpConfirmModal").value;
       const alertEl = document.getElementById("cpAlert");
@@ -3245,7 +3244,7 @@ function bindEventListeners() {
       alertEl.classList.add("hidden");
       alertEl.textContent = "";
 
-      if (!oldVal || !newVal || !confVal) {
+      if (!newVal || !confVal) {
         alertEl.textContent = "All fields are required.";
         alertEl.style = "background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); margin-bottom: 1rem;";
         alertEl.classList.remove("hidden");
@@ -3269,7 +3268,7 @@ function bindEventListeners() {
       submitBtn.disabled = true;
 
       if (window.CW_API?.updateUserPassword) {
-        const { success, error } = await window.CW_API.updateUserPassword(oldVal, newVal);
+        const { success, error } = await window.CW_API.updateUserPassword(newVal);
         if (!success) {
           alertEl.textContent = error || "Failed to update password.";
           alertEl.style = "background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); margin-bottom: 1rem;";
