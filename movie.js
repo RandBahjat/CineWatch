@@ -439,7 +439,7 @@ function setupHeroBanner() {
         <div class="hero-content">
             <h1 class="hero-title notranslate" translate="no">${movie.title}</h1>
             <div class="hero-meta">
-                <span class="meta-rating"><span class="star-icon">★</span> ${movie.rating}</span>
+                <span class="meta-rating"><span class="star-icon">★</span> ${parseFloat(movie.rating).toFixed(1)}</span>
                 <span class="meta-dot">•</span>
                 <span class="meta-year">${movie.year}</span>
                 ${genresList ? `<span class="meta-dot">•</span><span class="meta-genres-inline">${genresList}</span>` : ""}
@@ -606,7 +606,7 @@ function createMovieCardHTML(movie) {
       <div class="card-details">
         <h4 class="card-title notranslate" translate="no">${movie.title}</h4>
         <div class="card-meta">
-          <span class="card-rating">⭐ ${movie.rating}</span>
+          <span class="card-rating">⭐ ${parseFloat(movie.rating).toFixed(1)}</span>
           <span class="card-year">${movie.year}</span>
           <span class="card-type">${displayType}</span>
         </div>
@@ -1557,7 +1557,7 @@ function openDetailsModal(movieId) {
 
     document.getElementById("detailsBg").style.backgroundImage = `url('${movie.backdrop || movie.poster}')`;
     document.getElementById("detailsTitle").textContent = movie.title;
-    document.getElementById("detailsRating").textContent = movie.rating;
+    document.getElementById("detailsRating").textContent = parseFloat(movie.rating).toFixed(1);
     document.getElementById("detailsYear").textContent = movie.year;
     if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
       document.getElementById("detailsDuration").textContent = `${movie.seasons.length} Season${movie.seasons.length > 1 ? 's' : ''}`;
@@ -2887,7 +2887,7 @@ function bindEventListeners() {
               <img src="${m.poster}" alt="${m.title}" style="animation-delay: ${i * 60 + 80}ms">
               <div class="search-item-info">
                 <div class="search-item-title notranslate" translate="no">${m.title}</div>
-                <div class="search-item-meta">⭐ ${m.rating} • ${m.year} • ${m.genres.map(translateGenre).join(", ")}</div>
+                <div class="search-item-meta">⭐ ${parseFloat(m.rating).toFixed(1)} • ${m.year} • ${m.genres.map(translateGenre).join(", ")}</div>
               </div>
             </div>
           `,

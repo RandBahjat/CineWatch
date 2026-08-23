@@ -26,7 +26,7 @@ window._ANIME_DATA = [
     "episodes": [
       {
         "episode": 1,
-        "title": "I\\'m Luffy! The Man Who Will Become the Pirate King!"
+        "title": "I\'m Luffy! The Man Who Will Become the Pirate King!"
       },
       {
         "episode": 2,
