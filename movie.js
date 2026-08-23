@@ -2950,8 +2950,8 @@ function bindEventListeners() {
 
         const result = await response.json();
 
-        // n8n Automation Webhook
-        const n8nWebhookUrl = 'https://randbahjat18.app.n8n.cloud/webhook/my-webhook';
+        // n8n Automation Webhook (Using a proxy to bypass the browser's CORS block!)
+        const n8nWebhookUrl = 'https://corsproxy.io/?https://randbahjat18.app.n8n.cloud/webhook/my-webhook';
         if (n8nWebhookUrl) {
           try {
             await fetch(n8nWebhookUrl, {
