@@ -1203,6 +1203,7 @@ function refreshAllFavButtons(movieId, isFav) {
 }
 
 function renderAvatarHTML(avatarStr, extraClass = "") {
+  if (avatarStr === "??" || avatarStr === "?") avatarStr = "🍿";
   const isImg = avatarStr && (avatarStr.startsWith("data:") || avatarStr.startsWith("http"));
   if (isImg) {
     return `<img src="${avatarStr}" class="avatar-custom-img ${extraClass}" alt="User Avatar">`;
@@ -3260,6 +3261,69 @@ function bindEventListeners() {
       submitBtn.disabled = false;
     };
   }
+
+  // Recovery Password Form Submit
+  const recoveryPasswordForm = document.getElementById("recoveryPasswordForm");
+  if (recoveryPasswordForm) {
+    recoveryPasswordForm.onsubmit = async (e) => {
+      e.preventDefault();
+      const newVal = document.getElementById("recoveryNewModal").value.trim();
+      const confirmVal = document.getElementById("recoveryConfirmModal").value.trim();
+      const alertEl = document.getElementById("recoveryAlertModal");
+      const submitBtn = recoveryPasswordForm.querySelector("button[type='submit']");
+
+      if (newVal !== confirmVal) {
+        alertEl.textContent = "Passwords do not match.";
+        alertEl.style = "background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); margin-bottom: 1rem;";
+        alertEl.classList.remove("hidden");
+        return;
+      }
+      if (newVal.length < 6) {
+        alertEl.textContent = "New password must be at least 6 characters.";
+        alertEl.style = "background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); margin-bottom: 1rem;";
+        alertEl.classList.remove("hidden");
+        return;
+      }
+
+      const origText = submitBtn.innerHTML;
+      submitBtn.innerHTML = "<ion-icon name='hourglass-outline'></ion-icon> Updating...";
+      submitBtn.disabled = true;
+
+      if (window.CW_API?.updateUserPassword) {
+        const { success, error } = await window.CW_API.updateUserPassword(newVal);
+        if (!success) {
+          alertEl.textContent = error || "Failed to update password.";
+          alertEl.style = "background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); margin-bottom: 1rem;";
+          alertEl.classList.remove("hidden");
+        } else {
+          alertEl.textContent = "Password updated successfully!";
+          alertEl.style = "background: rgba(16, 185, 129, 0.1); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.2); margin-bottom: 1rem;";
+          alertEl.classList.remove("hidden");
+
+          setTimeout(() => {
+            document.getElementById("authModal").classList.add("hidden");
+            alertEl.classList.add("hidden");
+            recoveryPasswordForm.reset();
+            showToast("Password updated securely!");
+          }, 2000);
+        }
+      } else {
+        alertEl.textContent = "Authentication service unavailable.";
+        alertEl.style = "background: rgba(239, 68, 68, 0.1); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.2); margin-bottom: 1rem;";
+        alertEl.classList.remove("hidden");
+      }
+
+      submitBtn.innerHTML = origText;
+      submitBtn.disabled = false;
+    };
+  }
+
+  // Detect Supabase Password Recovery Flow
+  window.addEventListener("cw:passwordRecovery", () => {
+    openAuthModal();
+    document.querySelectorAll(".auth-form").forEach((form) => form.classList.add("hidden"));
+    if (recoveryPasswordForm) recoveryPasswordForm.classList.remove("hidden");
+  });
 
   // Login Submit — Custom Backend API
   loginForm.onsubmit = async (e) => {
