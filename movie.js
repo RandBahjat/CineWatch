@@ -3181,7 +3181,7 @@ function bindEventListeners() {
       alertEl.style = ""; // reset inline styles
 
       if (!inputVal) {
-        inputErr.textContent = "Please enter your username.";
+        inputErr.textContent = "Please enter your email.";
         return;
       }
 
