@@ -1433,8 +1433,20 @@ function renderUserBadge() {
     if (changePasswordPanelBtn) {
       changePasswordPanelBtn.onclick = () => {
         closePanel();
-        if (changePwdBtn) {
-          changePwdBtn.click();
+        openAuthModal();
+        document.querySelectorAll(".auth-form").forEach(f => f.classList.add("hidden"));
+        const changePasswordForm = document.getElementById("changePasswordForm");
+        if (changePasswordForm) {
+          changePasswordForm.classList.remove("hidden");
+          const cpOld = document.getElementById("cpOldModal");
+          if (cpOld) {
+            cpOld.value = "";
+            cpOld.focus();
+          }
+          document.getElementById("cpNewModal").value = "";
+          document.getElementById("cpConfirmModal").value = "";
+          const alertEl = document.getElementById("cpAlertModal");
+          if (alertEl) alertEl.classList.add("hidden");
         }
       };
     }
@@ -3343,11 +3355,18 @@ function bindEventListeners() {
   }
 
   // Detect Supabase Password Recovery Flow
-  window.addEventListener("cw:passwordRecovery", () => {
+  const handleRecoveryFlow = () => {
     openAuthModal();
     document.querySelectorAll(".auth-form").forEach((form) => form.classList.add("hidden"));
     if (recoveryPasswordForm) recoveryPasswordForm.classList.remove("hidden");
-  });
+  };
+
+  window.addEventListener("cw:passwordRecovery", handleRecoveryFlow);
+  
+  // Check if we missed the event due to race conditions on load
+  if (window.CW_PENDING_RECOVERY) {
+    handleRecoveryFlow();
+  }
 
   // Login Submit — Custom Backend API
   loginForm.onsubmit = async (e) => {
