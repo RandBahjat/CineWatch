@@ -5,6 +5,7 @@ window._ANIME_DATA = [
   {
     title: 'One Piece',
     type: 'TV Show',
+    isAnime: true,
     year: 1999,
     rating: 9.0,
     age: 'TV-14',
