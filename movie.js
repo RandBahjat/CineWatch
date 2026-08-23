@@ -980,11 +980,11 @@ function getMoviesList() {
 
 /** Get filtered list for series section */
 function getSeriesList() {
-  return MOVIES.filter((m) => m.type === "TV Show" || m.type === "Series" || (m.seasons && m.seasons.length > 0));
+  return MOVIES.filter((m) => !m.isAnime && (m.type === "TV Show" || m.type === "Series" || (m.seasons && m.seasons.length > 0)));
 }
 
 function getAnimeList() {
-  return MOVIES.filter((m) => m.type === "Anime" || (m.genres && m.genres.includes("Anime")) || (m.genres && m.genres.includes("Animation") && (m.origin_country && (m.origin_country.includes("JP") || m.origin_country.includes("Japan")))));
+  return MOVIES.filter((m) => m.isAnime || m.type === "Anime" || (m.genres && m.genres.includes("Anime")) || (m.genres && m.genres.includes("Animation") && (m.origin_country && (m.origin_country.includes("JP") || m.origin_country.includes("Japan")))));
 }
 
 /** Apply the active genre filter to a list */
