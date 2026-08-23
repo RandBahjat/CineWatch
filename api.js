@@ -69,7 +69,12 @@ window.CW_API = {
         email,
         password
       });
-      if (authErr) throw authErr;
+      if (authErr) {
+        if (authErr.message === "Invalid login credentials") {
+          throw new Error("Incorrect password or account not found.");
+        }
+        throw authErr;
+      }
 
       const user = await this.getCurrentUser();
       const cloudData = { favorites: user?.favorites || [], continueWatching: user?.continueWatching || {} };
