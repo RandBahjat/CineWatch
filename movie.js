@@ -2525,10 +2525,24 @@ function bindEventListeners() {
       }
     };
   });
-
+  // Browse Section Genre Filter Buttons (Movies / Series / Anime views) — event delegation
+  document.addEventListener("click", (e) => {
+    const filterBtn = e.target.closest(".browse-filter-btn");
+    if (!filterBtn) return;
+    const section = filterBtn.dataset.section; // "movies" or "series" or "anime"
+    const genre = filterBtn.dataset.genre;
+    if (section === "movies") {
+      state.moviesFilter = genre;
+      state.moviesPage = 1; // reset to first page on filter change
+      renderMoviesSection();
+    } else if (section === "series") {
       state.seriesFilter = genre;
       state.seriesPage = 1;
       renderSeriesSection();
+    } else if (section === "anime") {
+      state.animeFilter = genre;
+      state.animePage = 1;
+      renderAnimeSection();
     }
   });
 
