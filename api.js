@@ -175,6 +175,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Listen for Password Recovery events (when user clicks reset link)
   supabaseClient.auth.onAuthStateChange((event, session) => {
     if (event === 'PASSWORD_RECOVERY') {
+      window.CW_PENDING_RECOVERY = true;
       window.dispatchEvent(new CustomEvent('cw:passwordRecovery'));
     }
   });
