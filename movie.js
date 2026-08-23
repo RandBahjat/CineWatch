@@ -3367,8 +3367,8 @@ function bindEventListeners() {
 
   window.addEventListener("cw:passwordRecovery", handleRecoveryFlow);
   
-  // Check if we missed the event due to race conditions on load
-  if (window.CW_PENDING_RECOVERY) {
+  // Check if we missed the event due to race conditions on load, or if Supabase event failed
+  if (window.CW_PENDING_RECOVERY || window.location.hash.includes("type=recovery")) {
     handleRecoveryFlow();
   }
 
