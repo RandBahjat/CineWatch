@@ -3377,22 +3377,22 @@ function bindEventListeners() {
   // Login Submit — Custom Backend API
   loginForm.onsubmit = async (e) => {
     e.preventDefault();
-    const username = document.getElementById("loginUsername").value.trim();
+    const email = document.getElementById("loginEmail").value.trim();
     const pass = document.getElementById("loginPassword").value.trim();
-    const usernameErr = document.getElementById("loginUsernameError");
+    const emailErr = document.getElementById("loginEmailError");
     const passErr = document.getElementById("loginPasswordError");
     const alertEl = document.getElementById("loginAlert");
     const submitBtn = loginForm.querySelector("button[type='submit']");
 
-    usernameErr.textContent = "";
+    emailErr.textContent = "";
     passErr.textContent = "";
     alertEl.classList.add("hidden");
     alertEl.textContent = "";
 
     let valid = true;
 
-    if (username.length < 3) {
-      usernameErr.textContent = "Please enter a valid username";
+    if (!email || !email.includes("@")) {
+      emailErr.textContent = "Please enter a valid email address";
       valid = false;
     }
     if (pass.length < 6) {
@@ -3423,7 +3423,7 @@ function bindEventListeners() {
 
     // Mark that this is a real login action so cw:authChanged knows to reload
     sessionStorage.setItem("cw_loginPending", "1");
-    const { user, error } = await window.CW_API.signIn(username, pass, turnstileToken);
+    const { user, error } = await window.CW_API.signIn(email, pass, turnstileToken);
     if (error) {
       sessionStorage.removeItem("cw_loginPending"); // clear flag on error
       alertEl.textContent = error;
