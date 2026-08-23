@@ -1420,12 +1420,11 @@ function renderUserBadge() {
         const changePasswordForm = document.getElementById("changePasswordForm");
         if (changePasswordForm) {
           changePasswordForm.classList.remove("hidden");
-          const cpOld = document.getElementById("cpOldModal");
-          if (cpOld) {
-            cpOld.value = "";
-            cpOld.focus();
+          const cpNew = document.getElementById("cpNewModal");
+          if (cpNew) {
+            cpNew.value = "";
+            cpNew.focus();
           }
-          document.getElementById("cpNewModal").value = "";
           document.getElementById("cpConfirmModal").value = "";
           const alertEl = document.getElementById("cpAlertModal");
           if (alertEl) alertEl.classList.add("hidden");
@@ -1445,12 +1444,11 @@ function renderUserBadge() {
         const changePasswordForm = document.getElementById("changePasswordForm");
         if (changePasswordForm) {
           changePasswordForm.classList.remove("hidden");
-          const cpOld = document.getElementById("cpOldModal");
-          if (cpOld) {
-            cpOld.value = "";
-            cpOld.focus();
+          const cpNew = document.getElementById("cpNewModal");
+          if (cpNew) {
+            cpNew.value = "";
+            cpNew.focus();
           }
-          document.getElementById("cpNewModal").value = "";
           document.getElementById("cpConfirmModal").value = "";
           const alertEl = document.getElementById("cpAlertModal");
           if (alertEl) alertEl.classList.add("hidden");
