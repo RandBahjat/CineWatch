@@ -13,7 +13,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { Resend } = require('resend');
 const crypto = require('crypto');
-const { User, Rating, SiteStats, DailyStats, Media, mongoose, getDbError } = require('./database');
+const { User, Rating, SiteStats, DailyStats, Media, TrendingData, mongoose, getDbError } = require('./database');
 
 const app = express();
 
@@ -613,6 +613,42 @@ app.delete('/api/media/:id', authenticateToken, isAdmin, async (req, res) => {
     res.json({ message: 'Deleted successfully.' });
   } catch (err) {
     console.error('Error deleting media:', err);
+    res.status(500).json({ error: 'Database error.' });
+  }
+});
+
+// ----------------------------------------------------
+// 10. TRENDING DATA
+// ----------------------------------------------------
+
+// GET trending lists (public)
+app.get('/api/trending', async (req, res) => {
+  try {
+    const data = await TrendingData.findOne({ configId: 'main' });
+    if (!data) return res.json({ trendingMovies: [], trendingSeries: [], featuredTitles: [] });
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ error: 'Database error.' });
+  }
+});
+
+// POST sync trending lists (protected, admin only)
+app.post('/api/admin/sync-trending', authenticateToken, isAdmin, async (req, res) => {
+  try {
+    const { trendingMovies, trendingSeries, featuredTitles } = req.body;
+    const data = await TrendingData.findOneAndUpdate(
+      { configId: 'main' },
+      { 
+        trendingMovies: trendingMovies || [], 
+        trendingSeries: trendingSeries || [], 
+        featuredTitles: featuredTitles || [],
+        lastUpdated: Date.now() 
+      },
+      { upsert: true, new: true }
+    );
+    res.json({ message: 'Trending lists synced successfully.', data });
+  } catch (err) {
+    console.error('Error syncing trending:', err);
     res.status(500).json({ error: 'Database error.' });
   }
 });
