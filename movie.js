@@ -2950,20 +2950,21 @@ function bindEventListeners() {
 
         const result = await response.json();
 
-        // n8n Automation Webhook (Using a proxy to bypass the browser's CORS block!)
-        const n8nWebhookUrl = 'https://corsproxy.io/?https://randbahjat18.app.n8n.cloud/webhook/my-webhook';
+        // n8n Automation Webhook (Ultimate CORS Bypass - no proxies needed!)
+        const n8nWebhookUrl = 'https://randbahjat18.app.n8n.cloud/webhook/my-webhook';
         if (n8nWebhookUrl) {
           try {
+            const formData = new URLSearchParams();
+            formData.append('event', 'user_report');
+            formData.append('subject', subject);
+            formData.append('email', email);
+            formData.append('message', message);
+            formData.append('timestamp', new Date().toISOString());
+
             await fetch(n8nWebhookUrl, {
               method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({
-                event: 'user_report',
-                subject: subject,
-                email: email,
-                message: message,
-                timestamp: new Date().toISOString()
-              })
+              mode: 'no-cors', // Completely bypasses the browser's CORS block
+              body: formData
             });
           } catch (n8nError) {
             console.warn("n8n Webhook failed:", n8nError);
