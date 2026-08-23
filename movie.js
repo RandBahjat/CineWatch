@@ -125,6 +125,8 @@ const state = {
   moviesFilter: "all",
   seriesPage: 1,
   seriesFilter: "all",
+  animePage: 1,
+  animeFilter: "all",
   searchFilter: "all",
 };
 
@@ -981,6 +983,10 @@ function getSeriesList() {
   return MOVIES.filter((m) => m.type === "TV Show" || m.type === "Series" || (m.seasons && m.seasons.length > 0));
 }
 
+function getAnimeList() {
+  return MOVIES.filter((m) => m.type === "Anime" || (m.genres && m.genres.includes("Anime")) || (m.genres && m.genres.includes("Animation") && (m.origin_country && (m.origin_country.includes("JP") || m.origin_country.includes("Japan")))));
+}
+
 /** Apply the active genre filter to a list */
 function applyBrowseFilter(list, genre) {
   if (!genre || genre === "all") return list;
@@ -1046,6 +1052,33 @@ function renderSeriesSection() {
   });
 }
 
+/** Render (or re-render) the full Anime browse section */
+function renderAnimeSection() {
+  const allAnime = getAnimeList();
+  const filtered = applyBrowseFilter(allAnime, state.animeFilter);
+  const totalPages = Math.max(1, Math.ceil(filtered.length / BROWSE_PAGE_SIZE));
+
+  if (state.animePage > totalPages) state.animePage = totalPages;
+
+  const countEl = document.getElementById("animeCount");
+  if (countEl) countEl.textContent = `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`;
+
+  const labelEl = document.getElementById("animeCountLabel");
+  if (labelEl) {
+    labelEl.textContent = `Titles: ${filtered.length}`;
+  }
+
+  document.querySelectorAll("#animeFilterBar .browse-filter-btn").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.genre === state.animeFilter);
+  });
+
+  renderBrowseGrid(filtered, "animeGrid", state.animePage);
+  renderBrowsePagination("animePagination", state.animePage, totalPages, (p) => {
+    state.animePage = p;
+    renderAnimeSection();
+  });
+}
+
 
 // ==========================================
 // VIEW SWITCHER
@@ -1086,6 +1119,7 @@ function switchView(viewName) {
   const filteredSection = document.getElementById("filteredSection");
   const moviesSection = document.getElementById("moviesSection");
   const seriesSection = document.getElementById("seriesSection");
+  const animeSection = document.getElementById("animeSection");
   const detailsSection = document.getElementById("detailsSection");
 
   const watchlistHomeShelf = document.getElementById("watchlistHomeShelf");
@@ -1100,6 +1134,7 @@ function switchView(viewName) {
     filteredSection.classList.add("hidden");
     moviesSection.classList.add("hidden");
     seriesSection.classList.add("hidden");
+    if (animeSection) animeSection.classList.add("hidden");
     if (detailsSection) detailsSection.classList.add("hidden");
     if (continueShelf) continueShelf.classList.add("hidden");
     if (watchlistHomeShelf) watchlistHomeShelf.classList.add("hidden");
@@ -1125,6 +1160,7 @@ function switchView(viewName) {
     if (continueSection) continueSection.classList.add("hidden");
     moviesSection.classList.add("hidden");
     seriesSection.classList.add("hidden");
+    if (animeSection) animeSection.classList.add("hidden");
     if (detailsSection) detailsSection.classList.add("hidden");
     // Explicitly un-hide the shelves before rendering so they re-appear after navigating away
     if (continueShelf) continueShelf.classList.remove("hidden");
@@ -1142,6 +1178,10 @@ function switchView(viewName) {
     hideAll();
     seriesSection.classList.remove("hidden");
     renderSeriesSection();
+  } else if (viewName === "anime") {
+    hideAll();
+    if (animeSection) animeSection.classList.remove("hidden");
+    renderAnimeSection();
   } else if (viewName === "watchlist") {
     hideAll();
     watchlistSection.classList.remove("hidden");
@@ -2486,17 +2526,6 @@ function bindEventListeners() {
     };
   });
 
-  // Browse Section Genre Filter Buttons (Movies / Series views) — event delegation
-  document.addEventListener("click", (e) => {
-    const filterBtn = e.target.closest(".browse-filter-btn");
-    if (!filterBtn) return;
-    const section = filterBtn.dataset.section; // "movies" or "series"
-    const genre = filterBtn.dataset.genre;
-    if (section === "movies") {
-      state.moviesFilter = genre;
-      state.moviesPage = 1; // reset to first page on filter change
-      renderMoviesSection();
-    } else if (section === "series") {
       state.seriesFilter = genre;
       state.seriesPage = 1;
       renderSeriesSection();
