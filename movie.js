@@ -52,39 +52,30 @@ function translateGenre(genre) {
 }
 
 async function loadMediaFromAPI() {
-  // Load from local media-data.js instead of the API for speed and security.
-  // To add/edit/remove movies or series, edit media-data.js directly.
   try {
-    const moviesData = typeof window._MOVIES_DATA !== 'undefined' ? window._MOVIES_DATA : [];
-    const seriesData = typeof window._SERIES_DATA !== 'undefined' ? window._SERIES_DATA : [];
-    MOVIES = [...moviesData, ...seriesData];
-
-    // Fetch dynamic trending lists from the backend
-    try {
-      const trendingRes = await fetch('https://cinewatch-maaa.onrender.com/api/trending');
-      if (trendingRes.ok) {
-        const trendingData = await trendingRes.json();
-        if (trendingData.trendingMovies && trendingData.trendingMovies.length > 0) {
-          TRENDING_THIS_WEEK_MOVIES = trendingData.trendingMovies;
-        }
-        if (trendingData.trendingSeries && trendingData.trendingSeries.length > 0) {
-          TRENDING_THIS_WEEK_SERIES = trendingData.trendingSeries;
-        }
-        if (trendingData.featuredTitles && trendingData.featuredTitles.length > 0) {
-          FEATURED_TITLES = trendingData.featuredTitles;
-        }
-      }
-    } catch (e) {
-      console.warn("Could not load dynamic trending lists, using fallbacks.", e);
+    // 1. Fetch all media from Supabase
+    const { data: mediaData, error: mediaErr } = await window.CW_API.supabase
+      .from('media')
+      .select('*')
+      .order('order', { ascending: true });
+      
+    if (mediaErr) {
+      alert("Supabase Fetch Error: " + JSON.stringify(mediaErr));
+      throw mediaErr;
     }
+    MOVIES = mediaData || [];
 
-    if (MOVIES.length === 0) console.warn('CineWatch: No media data found. Check movies-data.js and series-data.js.');
+    // Removed Supabase dynamic trending list fetch per user preference.
+    // Trending items are now manually controlled via the hardcoded arrays at the top of this file.
+
+    if (MOVIES.length === 0) {
+      console.warn('CineWatch: No media data found in Supabase.');
+    }
 
     // Apply post-processing
     MOVIES.forEach(m => {
       // Auto-generate a stable id from the title if none exists
       if (!m.id) {
-        // Append year to make IDs unique (e.g., the-flash-2023 and the-flash-2014)
         m.id = m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + (m.year ? '-' + m.year : '');
       }
 
@@ -98,7 +89,7 @@ async function loadMediaFromAPI() {
       }
     });
   } catch (err) {
-    console.error('CineWatch: Failed to load media:', err);
+    console.error('CineWatch: Failed to load media from Supabase:', err);
   }
 }
 

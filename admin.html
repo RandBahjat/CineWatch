@@ -28,6 +28,9 @@
     .copy-btn { background: #27ae60; color: white; margin-top: 0.5rem; }
     .copy-btn:hover { background: #2ecc71; }
   </style>
+  <link rel="stylesheet" href="movie.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="api.js"></script>
 </head>
 <body>
 
@@ -197,8 +200,8 @@
       
       try {
         // 1. Fetch our local media to cross-reference
-        const mediaRes = await fetch(`${API_BASE}/media`);
-        const allMedia = await mediaRes.json();
+        const { data: allMedia, error: mediaErr } = await window.CW_API.supabase.from('media').select('title, "videoUrl"');
+        if (mediaErr) throw mediaErr;
         
         // Map of TMDB ID (stored in videoUrl) to our Database Title
         const mediaIdToTitle = {};
@@ -229,22 +232,15 @@
           if (mediaIdToTitle[idStr]) trendingSeries.push(mediaIdToTitle[idStr]);
         });
 
-        // 5. Send to backend
-        const token = window.CW_API.getToken();
-        const syncRes = await fetch(`${API_BASE}/admin/sync-trending`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${token}`
-          },
-          body: JSON.stringify({
-            trendingMovies,
-            trendingSeries,
-            featuredTitles: trendingMovies.slice(0, 8) // Just use top 8 movies for featured
-          })
-        });
+        // 5. Send to Supabase
+        const { error: syncErr } = await window.CW_API.supabase.from('trending_data').upsert({
+          config_id: 'main',
+          trending_movies: trendingMovies,
+          trending_series: trendingSeries,
+          featured_titles: trendingMovies.slice(0, 8) // Just use top 8 movies for featured
+        }, { onConflict: 'config_id' });
 
-        if (!syncRes.ok) throw new Error("Failed to save trending lists to database.");
+        if (syncErr) throw syncErr;
 
         msg.style.color = "#27ae60"; 
         msg.textContent = `✅ Synced! Found ${trendingMovies.length} movies and ${trendingSeries.length} series in our database.`;
