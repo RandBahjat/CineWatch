@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260822_2489">
+    <link rel="stylesheet" href="movie.css?v=20260822_2491">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -17,8 +17,8 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_1457"></script>
-    <script src="series-data.js?v=20260818_1457"></script>
+    <script src="movies-data.js?v=20260818_1459"></script>
+    <script src="series-data.js?v=20260818_1459"></script>
     <script src="movie.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -529,6 +529,43 @@
             <div class="browse-grid" id="seriesGrid"></div>
             <!-- Pagination -->
             <div class="browse-pagination" id="seriesPagination"></div>
+        </section>
+
+        <!-- Anime Section (Browse) -->
+        <section class="browse-section hidden" id="animeSection">
+            <div class="browse-section-header">
+                <div class="browse-title-row">
+                    <h1 class="browse-title">
+                      <svg class="anime-goku-icon" viewBox="0 0 100 100" style="width: 1em; height: 1em; vertical-align: -0.1em; display: inline-block; fill: none; stroke: currentColor; stroke-width: 5; stroke-linejoin: miter; stroke-linecap: butt; stroke-miterlimit: 4;">
+                        <path d="M 50 88 L 40 80 L 35 68 L 20 72 L 28 60 L 12 60 L 25 50 L 10 30 L 38 42 L 38 12 L 50 35 L 60 15 L 65 38 L 85 28 L 75 45 L 95 52 L 78 60 L 85 70 L 65 68 L 60 80 Z" />
+                        <path d="M 35 68 L 40 55 L 44 65 L 50 50 L 54 68 L 60 55 L 65 68" />
+                      </svg> Anime
+                    </h1>
+                    <span class="browse-count" id="animeCount">0 titles</span>
+                </div>
+                <!-- Genre Filter Bar -->
+                <div class="browse-filter-bar" id="animeFilterBar">
+                    <button class="browse-filter-btn active" data-genre="all" data-section="anime">All</button>
+                    <button class="browse-filter-btn" data-genre="Action" data-section="anime">Action</button>
+                    <button class="browse-filter-btn" data-genre="Adventure" data-section="anime">Adventure</button>
+                    <button class="browse-filter-btn" data-genre="Comedy" data-section="anime">Comedy</button>
+                    <button class="browse-filter-btn" data-genre="Drama" data-section="anime">Drama</button>
+                    <button class="browse-filter-btn" data-genre="Fantasy" data-section="anime">Fantasy</button>
+                    <button class="browse-filter-btn" data-genre="Horror" data-section="anime">Horror</button>
+                    <button class="browse-filter-btn" data-genre="Mystery" data-section="anime">Mystery</button>
+                    <button class="browse-filter-btn" data-genre="Romance" data-section="anime">Romance</button>
+                    <button class="browse-filter-btn" data-genre="Sci-Fi" data-section="anime">Sci-Fi</button>
+                    <button class="browse-filter-btn" data-genre="Thriller" data-section="anime">Thriller</button>
+                </div>
+            </div>
+            <!-- Count Label -->
+            <div class="browse-results-bar">
+                <span id="animeCountLabel">Showing all titles</span>
+            </div>
+            <!-- Cards Grid -->
+            <div class="browse-grid" id="animeGrid"></div>
+            <!-- Pagination -->
+            <div class="browse-pagination" id="animePagination"></div>
         </section>
 
         <!-- Category Shelves Container -->
