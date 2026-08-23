@@ -1,4 +1,4 @@
-// CineWatch — Series Data
+﻿// CineWatch — Series Data
 // Edit this file to add, remove, or reorder TV shows and series.
 // Push to GitHub (or save — auto-sync will handle it) for changes to go live.
 
@@ -23,7 +23,7 @@ window._SERIES_DATA = [
     is4k: false,
     seasons: [
   {
-    "season": 1999,
+    "season": 1,
     "episodes": [
       {
         "episode": 1,
@@ -60,7 +60,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2000,
+    "season": 2,
     "episodes": [
       {
         "episode": 1,
@@ -241,7 +241,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2001,
+    "season": 3,
     "episodes": [
       {
         "episode": 1,
@@ -414,7 +414,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2002,
+    "season": 4,
     "episodes": [
       {
         "episode": 1,
@@ -595,7 +595,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2003,
+    "season": 5,
     "episodes": [
       {
         "episode": 1,
@@ -748,7 +748,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2004,
+    "season": 6,
     "episodes": [
       {
         "episode": 1,
@@ -909,7 +909,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2005,
+    "season": 7,
     "episodes": [
       {
         "episode": 1,
@@ -1070,7 +1070,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2006,
+    "season": 8,
     "episodes": [
       {
         "episode": 1,
@@ -1227,7 +1227,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2007,
+    "season": 9,
     "episodes": [
       {
         "episode": 1,
@@ -1412,7 +1412,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2008,
+    "season": 10,
     "episodes": [
       {
         "episode": 1,
@@ -1605,7 +1605,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2009,
+    "season": 11,
     "episodes": [
       {
         "episode": 1,
@@ -1806,7 +1806,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2010,
+    "season": 12,
     "episodes": [
       {
         "episode": 1,
@@ -2007,7 +2007,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2011,
+    "season": 13,
     "episodes": [
       {
         "episode": 1,
@@ -2204,7 +2204,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2012,
+    "season": 14,
     "episodes": [
       {
         "episode": 1,
@@ -2405,7 +2405,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2013,
+    "season": 15,
     "episodes": [
       {
         "episode": 1,
@@ -2602,7 +2602,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2014,
+    "season": 16,
     "episodes": [
       {
         "episode": 1,
@@ -2807,7 +2807,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2015,
+    "season": 17,
     "episodes": [
       {
         "episode": 1,
@@ -3004,7 +3004,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2016,
+    "season": 18,
     "episodes": [
       {
         "episode": 1,
@@ -3193,7 +3193,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2017,
+    "season": 19,
     "episodes": [
       {
         "episode": 1,
@@ -3394,7 +3394,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2018,
+    "season": 20,
     "episodes": [
       {
         "episode": 1,
@@ -3587,7 +3587,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2019,
+    "season": 21,
     "episodes": [
       {
         "episode": 1,
@@ -3788,7 +3788,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2020,
+    "season": 22,
     "episodes": [
       {
         "episode": 1,
@@ -3957,7 +3957,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2021,
+    "season": 23,
     "episodes": [
       {
         "episode": 1,
@@ -4154,7 +4154,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2022,
+    "season": 24,
     "episodes": [
       {
         "episode": 1,
@@ -4323,7 +4323,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2023,
+    "season": 25,
     "episodes": [
       {
         "episode": 1,
@@ -4500,7 +4500,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2024,
+    "season": 26,
     "episodes": [
       {
         "episode": 1,
@@ -4641,7 +4641,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2025,
+    "season": 27,
     "episodes": [
       {
         "episode": 1,
@@ -4778,7 +4778,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    "season": 2026,
+    "season": 28,
     "episodes": [
       {
         "episode": 1,
