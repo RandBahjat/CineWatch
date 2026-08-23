@@ -2950,26 +2950,7 @@ function bindEventListeners() {
 
         const result = await response.json();
 
-        // n8n Automation Webhook (Ultimate CORS Bypass - no proxies needed!)
-        const n8nWebhookUrl = 'https://randbahjat18.app.n8n.cloud/webhook/my-webhook';
-        if (n8nWebhookUrl) {
-          try {
-            const formData = new URLSearchParams();
-            formData.append('event', 'user_report');
-            formData.append('subject', subject);
-            formData.append('email', email);
-            formData.append('message', message);
-            formData.append('timestamp', new Date().toISOString());
 
-            await fetch(n8nWebhookUrl, {
-              method: 'POST',
-              mode: 'no-cors', // Completely bypasses the browser's CORS block
-              body: formData
-            });
-          } catch (n8nError) {
-            console.warn("n8n Webhook failed:", n8nError);
-          }
-        }
         if (response.status === 200) {
           closeReportModal();
           showToast("Thank you! Your report has been sent successfully.");
