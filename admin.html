@@ -80,7 +80,10 @@
         </div>
       </div>
       
-      <button onclick="generateCode()">Generate Code Block</button>
+      <div class="flex-row">
+        <button onclick="generateCode()">Generate Code Block</button>
+        <button onclick="syncTrendingLists()" style="background: #e50914;">🔥 Auto-Sync Trending</button>
+      </div>
       <span id="tmdbMsg" style="margin-left: 1rem;"></span>
 
       <!-- Output Area -->
@@ -172,6 +175,79 @@
         document.getElementById("outputArea").classList.remove("hidden");
         msg.textContent = "";
 
+      } catch (err) {
+        msg.style.color = "#ff6b6b"; 
+        msg.textContent = err.message;
+      }
+    }
+
+    async function syncTrendingLists() {
+      const tmdbToken = document.getElementById("tmdbToken").value.trim();
+      const msg = document.getElementById("tmdbMsg");
+      
+      if (!tmdbToken) { 
+        msg.style.color = "#ff6b6b"; 
+        msg.textContent = "TMDB Token is required to sync trending lists."; 
+        return; 
+      }
+      
+      localStorage.setItem("tmdb_token", tmdbToken);
+      msg.style.color = "#66fcf1"; 
+      msg.textContent = "⏳ Fetching trending data from TMDB and syncing...";
+      
+      try {
+        // 1. Fetch our local media to cross-reference
+        const mediaRes = await fetch(`${API_BASE}/media`);
+        const allMedia = await mediaRes.json();
+        
+        // Map of TMDB ID (stored in videoUrl) to our Database Title
+        const mediaIdToTitle = {};
+        allMedia.forEach(m => {
+          if (m.videoUrl) mediaIdToTitle[m.videoUrl.toString()] = m.title;
+        });
+
+        const options = { headers: { accept: 'application/json', Authorization: `Bearer ${tmdbToken}` } };
+        
+        // 2. Fetch TMDB Trending Movies
+        const moviesRes = await fetch(`https://api.themoviedb.org/3/trending/movie/week`, options);
+        const moviesData = await moviesRes.json();
+        
+        // 3. Fetch TMDB Trending Series
+        const seriesRes = await fetch(`https://api.themoviedb.org/3/trending/tv/week`, options);
+        const seriesData = await seriesRes.json();
+
+        // 4. Cross-reference
+        const trendingMovies = [];
+        moviesData.results.forEach(m => {
+          const idStr = m.id.toString();
+          if (mediaIdToTitle[idStr]) trendingMovies.push(mediaIdToTitle[idStr]);
+        });
+
+        const trendingSeries = [];
+        seriesData.results.forEach(s => {
+          const idStr = s.id.toString();
+          if (mediaIdToTitle[idStr]) trendingSeries.push(mediaIdToTitle[idStr]);
+        });
+
+        // 5. Send to backend
+        const token = window.CW_API.getToken();
+        const syncRes = await fetch(`${API_BASE}/admin/sync-trending`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`
+          },
+          body: JSON.stringify({
+            trendingMovies,
+            trendingSeries,
+            featuredTitles: trendingMovies.slice(0, 8) // Just use top 8 movies for featured
+          })
+        });
+
+        if (!syncRes.ok) throw new Error("Failed to save trending lists to database.");
+
+        msg.style.color = "#27ae60"; 
+        msg.textContent = `✅ Synced! Found ${trendingMovies.length} movies and ${trendingSeries.length} series in our database.`;
       } catch (err) {
         msg.style.color = "#ff6b6b"; 
         msg.textContent = err.message;
