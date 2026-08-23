@@ -1,3 +1,8 @@
+// Capture recovery hash immediately before Supabase clears it
+if (window.location.hash.includes("type=recovery")) {
+  window.CW_PENDING_RECOVERY = true;
+}
+
 /**
  * CineWatch — Pure Vanilla JavaScript (ES6+)
  * Feature-rich movie streaming platform logic
