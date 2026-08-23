@@ -1,0 +1,76 @@
+[
+  {
+    "season": 1,
+    "episodes": [
+      {
+        "episode": 1,
+        "title": "Romance Dawn"
+      },
+      {
+        "episode": 2,
+        "title": "The Man in the Straw Hat"
+      },
+      {
+        "episode": 3,
+        "title": "Tell No Tales"
+      },
+      {
+        "episode": 4,
+        "title": "The Pirates Are Coming"
+      },
+      {
+        "episode": 5,
+        "title": "Eat at Baratie!"
+      },
+      {
+        "episode": 6,
+        "title": "The Chef and the Chore Boy"
+      },
+      {
+        "episode": 7,
+        "title": "The Girl with the Sawfish Tattoo"
+      },
+      {
+        "episode": 8,
+        "title": "Worst in the East"
+      }
+    ]
+  },
+  {
+    "season": 2,
+    "episodes": [
+      {
+        "episode": 1,
+        "title": "The Beginning and the End"
+      },
+      {
+        "episode": 2,
+        "title": "Good Whale Hunting"
+      },
+      {
+        "episode": 3,
+        "title": "Whisky Business"
+      },
+      {
+        "episode": 4,
+        "title": "Big Trouble in Little Garden"
+      },
+      {
+        "episode": 5,
+        "title": "Wax On, Wax Off"
+      },
+      {
+        "episode": 6,
+        "title": "Nami Deerest"
+      },
+      {
+        "episode": 7,
+        "title": "Reindeer Shames"
+      },
+      {
+        "episode": 8,
+        "title": "Deer and Loathing in Drum Kingdom"
+      }
+    ]
+  }
+]
