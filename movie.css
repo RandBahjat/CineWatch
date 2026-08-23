@@ -6081,3 +6081,6 @@ body.rtl-layout .account-side-panel.open {
     padding: 20px;
   }
 }
+
+.anime-goku-icon { transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease; }
+.nav-link:hover .anime-goku-icon { transform: translateY(-3px) scale(1.15); color: var(--primary); }
