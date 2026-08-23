@@ -1416,9 +1416,26 @@ function renderUserBadge() {
         if (changePasswordForm) {
           changePasswordForm.classList.remove("hidden");
           const cpOld = document.getElementById("cpOldModal");
-        openAuthModal();
-        document.querySelectorAll(".auth-form").forEach(f => f.classList.add("hidden"));
-        document.getElementById("changePasswordForm").classList.remove("hidden");
+          if (cpOld) {
+            cpOld.value = "";
+            cpOld.focus();
+          }
+          document.getElementById("cpNewModal").value = "";
+          document.getElementById("cpConfirmModal").value = "";
+          const alertEl = document.getElementById("cpAlertModal");
+          if (alertEl) alertEl.classList.add("hidden");
+        }
+      };
+    }
+
+    // New panel change password button
+    const changePasswordPanelBtn = document.getElementById("changePasswordPanelBtn");
+    if (changePasswordPanelBtn) {
+      changePasswordPanelBtn.onclick = () => {
+        closePanel();
+        if (changePwdBtn) {
+          changePwdBtn.click();
+        }
       };
     }
 
