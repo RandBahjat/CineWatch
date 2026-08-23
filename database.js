@@ -94,4 +94,15 @@ const mediaSchema = new mongoose.Schema({
 
 const Media = mongoose.model('Media', mediaSchema);
 
-module.exports = { User, Rating, SiteStats, DailyStats, Media, mongoose, getDbError: () => dbError };
+// Define the TrendingData schema to store dynamic trending lists
+const trendingDataSchema = new mongoose.Schema({
+  configId: { type: String, default: 'main', unique: true },
+  trendingMovies: { type: [String], default: [] },
+  trendingSeries: { type: [String], default: [] },
+  featuredTitles: { type: [String], default: [] },
+  lastUpdated: { type: Date, default: Date.now }
+});
+
+const TrendingData = mongoose.model('TrendingData', trendingDataSchema);
+
+module.exports = { User, Rating, SiteStats, DailyStats, Media, TrendingData, mongoose, getDbError: () => dbError };
