@@ -99,9 +99,13 @@ window.CW_API = {
   },
 
   async confirmPasswordReset(token, newPassword) {
-    // Supabase handles this via hash in URL, but we can do it here if needed
-    // Usually this requires supabase.auth.updateUser({ password: newPassword }) after they click the email link.
+    // Deprecated for Supabase. Use recovery event listener instead.
     throw new Error("Please click the link in your email to reset your password.");
+  },
+
+  async updateUserPassword(newPassword) {
+    const { data, error } = await supabaseClient.auth.updateUser({ password: newPassword });
+    return { success: !error, error: error ? error.message : null };
   },
 
   async signOut() {
@@ -167,4 +171,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     console.warn("Supabase Auth check failed", e);
   }
   window.dispatchEvent(new CustomEvent('cw:authChanged', { detail: { user, cloudData } }));
+  
+  // Listen for Password Recovery events (when user clicks reset link)
+  supabaseClient.auth.onAuthStateChange((event, session) => {
+    if (event === 'PASSWORD_RECOVERY') {
+      window.dispatchEvent(new CustomEvent('cw:passwordRecovery'));
+    }
+  });
 });
