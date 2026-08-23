@@ -53,23 +53,14 @@ function translateGenre(genre) {
 
 async function loadMediaFromAPI() {
   try {
-    // 1. Fetch all media from Supabase
-    const { data: mediaData, error: mediaErr } = await window.CW_API.supabase
-      .from('media')
-      .select('*')
-      .order('order', { ascending: true });
-      
-    if (mediaErr) {
-      alert("Supabase Fetch Error: " + JSON.stringify(mediaErr));
-      throw mediaErr;
-    }
-    MOVIES = mediaData || [];
-
-    // Removed Supabase dynamic trending list fetch per user preference.
-    // Trending items are now manually controlled via the hardcoded arrays at the top of this file.
+    // 1. Load media from local JS files instead of Supabase per user preference
+    const localMovies = window._MOVIES_DATA || [];
+    const localSeries = window._SERIES_DATA || [];
+    
+    MOVIES = [...localMovies, ...localSeries];
 
     if (MOVIES.length === 0) {
-      console.warn('CineWatch: No media data found in Supabase.');
+      console.warn('CineWatch: No media data found in local files.');
     }
 
     // Apply post-processing
@@ -89,7 +80,7 @@ async function loadMediaFromAPI() {
       }
     });
   } catch (err) {
-    console.error('CineWatch: Failed to load media from Supabase:', err);
+    console.error('CineWatch: Failed to load media from local files:', err);
   }
 }
 
