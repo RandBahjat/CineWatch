@@ -1434,6 +1434,8 @@ function renderUserBadge() {
       changePasswordPanelBtn.onclick = () => {
         closePanel();
         openAuthModal();
+        const authTabs = document.querySelector(".auth-tabs");
+        if (authTabs) authTabs.classList.add("hidden");
         document.querySelectorAll(".auth-form").forEach(f => f.classList.add("hidden"));
         const changePasswordForm = document.getElementById("changePasswordForm");
         if (changePasswordForm) {
@@ -3357,6 +3359,8 @@ function bindEventListeners() {
   // Detect Supabase Password Recovery Flow
   const handleRecoveryFlow = () => {
     openAuthModal();
+    const authTabs = document.querySelector(".auth-tabs");
+    if (authTabs) authTabs.classList.add("hidden");
     document.querySelectorAll(".auth-form").forEach((form) => form.classList.add("hidden"));
     if (recoveryPasswordForm) recoveryPasswordForm.classList.remove("hidden");
   };
