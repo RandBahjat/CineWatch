@@ -10465,7 +10465,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/ixrYaoKtLO6HpciDbb4QGj3D3tT.jpg",
     videoUrl: "900667",
     overview: "Uta, world's most celebrated singer, hide secret — she's Shanks' daughter. She hold concert, gather huge crowd including Straw Hat crew, but her true past + hidden power threaten to unravel everything.",
-    director: "Sam Liu",
+    director: "Goro Taniguchi",
     cast: [
       "Stuart Allan (Damian Wayne/Robin), Taissa Farmiga (Raven), Kari Wahlgren (Starfire), Jason O'Mara (Batman), Sean Maher (Nightwing)"
     ],
