@@ -10474,6 +10474,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "One Piece Film Red",
+    type: "Movie",
+    year: 2022,
+    rating: 6.7,
+    age: "PG-13",
+    duration: "1h 55m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy",
+      "Musical"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8ibfhe4P7rhmn3lrPhOZzIJHA2B.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/ixrYaoKtLO6HpciDbb4QGj3D3tT.jpg",
+    videoUrl: "900667",
+    overview: "Uta, world's most celebrated singer, hide secret — she's Shanks' daughter. She hold concert, gather huge crowd including Straw Hat crew, but her true past + hidden power threaten to unravel everything.",
+    director: "Goro Taniguchi",
+    cast: [
+      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Shuichi Ikeda (Shanks), Kaori Nazuka (Uta)"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
