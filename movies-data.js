@@ -10519,7 +10519,7 @@ window._MOVIES_DATA = [
     overview: "The glittering Gran Tesoro, a floating city of casinos and entertainment beyond government law, draws pirates, Marines, and the ultra-rich alike. Chasing dreams of hitting the jackpot, Luffy and crew sail straight into the city — but behind its gold-plated walls waits Gild Tesoro, a ruthless tycoon whose deep pockets hide even deeper ambitions.",
     director: "Hiroaki Miyamoto",
     cast: [
-      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), Hochu Otsuka (Z)"
+      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), Kazuhiro Yamaji (Gild Tesoro)"
     ],
     trending: false,
     featured: false,
