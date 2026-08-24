@@ -10685,7 +10685,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "One Piece Episode of Alabasta Prologue",
+    title: "One Piece: Clockwork Island Adventure",
     type: "Movie",
     year: 2007,
     rating: 6.7,
