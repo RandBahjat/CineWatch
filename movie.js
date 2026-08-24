@@ -3815,10 +3815,20 @@ document.addEventListener("DOMContentLoaded", () => { initApp(); trackVisit(); }
 
 window.currentIframeData = null;
 
-function buildAnimeEmbedUrl(data, serverMode) {
-  // serverMode: 'vidlink-sub' | 'vidsrc-jp' | 'vidsrc-en' | 'vidsrc-dub'
+function buildAnimeEmbedUrl(data, serverMode, refMovie) {
+  // serverMode: 'miruro-sub' | 'vidlink-sub' | 'vidsrc-jp' | 'vidsrc-en' | 'vidsrc-dub'
 
-  if (serverMode === 'vidlink-sub') {
+  const absEp = data.absoluteEpisode || data.episode;
+  const anilistId = data.anilistId || (refMovie ? refMovie.anilistId : null) || '';
+
+  if (serverMode === 'miruro-sub' && anilistId) {
+    // Uses mediaload.com which we found via Miruro
+    if (data.type === 'tv') {
+      return `https://mediaload.com/embed/${anilistId}/${absEp}`;
+    } else {
+      return `https://mediaload.com/embed/${anilistId}/1`;
+    }
+  } else if (serverMode === 'vidlink-sub') {
     // Beautiful UI
     if (data.type === 'tv') {
       return `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=e50914`;
