@@ -10906,7 +10906,7 @@ window._MOVIES_DATA = [
     year: 2012,
     rating: 7.8,
     age: "TV-PG",
-    duration: "1m",
+    duration: "1h 44m",
     genres: [
       "Action",
       "Animation",
