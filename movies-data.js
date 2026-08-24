@@ -10620,7 +10620,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/whvgyEpPqvKXP0vZE4PMkoUmRqb.jpg",
     backdrop: "https://images2.alphacoders.com/931/thumb-1920-931970.jpg",
     videoUrl: "545742",
-    overview: "The Foxy Pirates challenge Luffy's crew to a rematch in the New World, but it's a trap — the Navy's most brilliant tactician steps in, and the Straw Hats find themselves stranded on Nebulandia, an island known as a death trap for Devil Fruit users. Luffy must team up with old rival Foxy for a rescue mission when Zoro, Sanji, and hostages get trapped.",
+    overview: "The Straw Hats embark on a dangerous trip to the sky, where their destination comes straight out of a fairytale — the island of Skypiea and its grand city of gold await among the clouds. But a clash of winged clans and a man who calls himself God won't make things easy; only Luffy can resist this God's mighty power and light the mysteries of the past.",
     director: "Konosuke Uda",
     cast: [
       "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami)"
