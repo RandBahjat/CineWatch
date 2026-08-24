@@ -10860,7 +10860,7 @@ window._MOVIES_DATA = [
       "Comedy",
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/U2TK7SbUMTOz3bNXgkW9CjqkXi.jpg",
+    poster: "https://static.wikia.nocookie.net/anime-database/images/f/fd/OnePieceSPC3.jpg/revision/latest?cb=20200128103029",
     backdrop: "https://image.tmdb.org/t/p/original/eiiMkub2ySbDqrMnrn5swhSsZNI.jpg",
     videoUrl: "44731",
     overview: "When Nami falls gravely ill, the Straw Hats seek help on Drum Island, where they meet reindeer doctor Tony Tony Chopper and clash with the tyrannical Wapol Pirates. A what-if retelling of how Chopper joined the crew — uniquely set with Franky, Nico Robin, and the Thousand Sunny already part of the story, and an original villain, Musshuru.",
