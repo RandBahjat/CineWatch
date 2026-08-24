@@ -3817,7 +3817,6 @@ window.currentIframeData = null;
 
 function buildAnimeEmbedUrl(data, serverMode) {
   // serverMode: 'vidlink-sub' | 'vidsrc-jp' | 'vidsrc-en' | 'vidsrc-dub'
-  const hasAnilist = data.anilistId && data.absoluteEpisode;
 
   if (serverMode === 'vidlink-sub') {
     // Beautiful UI — may fail for long-running anime (100+ eps)
@@ -3828,9 +3827,6 @@ function buildAnimeEmbedUrl(data, serverMode) {
     }
   } else if (serverMode === 'vidsrc-dub') {
     // English dub — vidsrc.me
-    if (hasAnilist) {
-       return `https://vidsrc.me/embed/anime?anilist=${data.anilistId}&episode=${data.absoluteEpisode}&ds_lang=en`;
-    }
     if (data.type === 'tv') {
       return `https://vidsrc.me/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}&ds_lang=en`;
     } else {
@@ -3838,27 +3834,17 @@ function buildAnimeEmbedUrl(data, serverMode) {
     }
   } else if (serverMode === 'vidsrc-en') {
     // English sub / dub
-    if (hasAnilist) {
-       // We can use autoembed.to or similar for anilist
-       return `https://autoembed.to/anime/anilist/${data.anilistId}/${data.absoluteEpisode}`;
-    }
     if (data.type === 'tv') {
       return `https://vidsrc.to/embed/tv/${data.id}/${data.season}/${data.episode}`;
     } else {
       return `https://vidsrc.to/embed/movie/${data.id}`;
     }
   } else {
-    // Default: 'vidsrc-jp' — Reliable JP Sub Server
-    if (hasAnilist) {
-      // Anilist dedicated mapping, explicitly asking for Japanese language track
-      return `https://vidsrc.me/embed/anime?anilist=${data.anilistId}&episode=${data.absoluteEpisode}&ds_lang=ja`;
-    }
-    
-    // TMDB Fallback
+    // Default: 'vidsrc-jp' — Reliable JP Sub Server (Testing embed.su)
     if (data.type === 'tv') {
-      return `https://vidsrc.to/embed/tv/${data.id}/${data.season}/${data.episode}`;
+      return `https://embed.su/embed/tv/${data.id}/${data.season}/${data.episode}`;
     } else {
-      return `https://vidsrc.to/embed/movie/${data.id}`;
+      return `https://embed.su/embed/movie/${data.id}`;
     }
   }
 }
