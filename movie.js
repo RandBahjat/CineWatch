@@ -3826,8 +3826,8 @@ function updateIframeServer() {
   }
 
   // Find the parent movie to check isAnime — check parentId OR the item itself (for direct-play anime)
-  const parentMovie = data.parentId ? MOVIES.find(m => m.id === data.parentId) : null;
-  const selfMovie = !parentMovie && data.id ? MOVIES.find(m => m.videoUrl == data.id || m.id === data.id) : null;
+  const parentMovie = data.parentId ? MOVIES.find(m => String(m.id) === String(data.parentId)) : null;
+  const selfMovie = !parentMovie && data.id ? MOVIES.find(m => String(m.videoUrl) === String(data.id) || String(m.id) === String(data.id)) : null;
   const refMovie = parentMovie || selfMovie;
   const isAnime = !!(refMovie?.isAnime || refMovie?.type === 'Anime');
 
