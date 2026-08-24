@@ -52882,7 +52882,7 @@ window._SERIES_DATA = [
           { episode: 3, title: "Whisky Business" },
           { episode: 4, title: "Big Trouble in Little Garden" },
           { episode: 5, title: "Wax On, Wax Off" },
-          { episode: 6, title: "The Chef and the Chore Boy" },
+          { episode: 6, title: "Nami Deerest" },
           { episode: 7, title: "The Girl with the Sawfish Tattoo" },
           { episode: 8, title: "Worst in the East" },
         ]
