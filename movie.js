@@ -2042,9 +2042,9 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     serverWrap.classList.remove("hidden");
     if (isTvEmbed) {
       const parts = videoUrl.split(":");
-      window.currentIframeData = { type: "tv", id: parts[1], season: parts[2], episode: parts[3] };
+      window.currentIframeData = { type: "tv", id: parts[1], season: parts[2], episode: parts[3], parentId };
     } else if (isNumericId) {
-      window.currentIframeData = { type: "movie", id: videoUrl };
+      window.currentIframeData = { type: "movie", id: videoUrl, parentId };
     } else {
       window.currentIframeData = null; // direct unsupported url
       serverWrap.classList.add("hidden");
