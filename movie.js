@@ -3810,11 +3810,26 @@ function updateIframeServer() {
     serverSelectWrap.classList.add('hidden');
   }
 
+  // Find the parent movie to check isAnime — check parentId OR the item itself
+  const parentMovie = data.parentId ? MOVIES.find(m => String(m.id) === String(data.parentId) || String(m.videoUrl) === String(data.parentId)) : null;
+  const selfMovie = !parentMovie && data.id ? MOVIES.find(m => String(m.videoUrl) === String(data.id) || String(m.id) === String(data.id)) : null;
+  const refMovie = parentMovie || selfMovie;
+  const isAnime = !!(refMovie?.isAnime || refMovie?.type === 'Anime');
+
   let newUrl = '';
-  if (data.type === 'tv') {
-    newUrl = `https://vidsrc.sbs/embed/tv/${data.id}/${data.season}/${data.episode}`;
+  if (isAnime) {
+    // Keep vidsrc.sbs as the only server for Anime
+    if (data.type === 'tv') {
+      newUrl = `https://vidsrc.sbs/embed/tv/${data.id}/${data.season}/${data.episode}`;
+    } else {
+      newUrl = `https://vidsrc.sbs/embed/movie/${data.id}`;
+    }
+  } else if (data.type === 'tv') {
+    // Restore vaplayer.ru for regular TV series
+    newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}?skin=netflix&color=e50914`;
   } else {
-    newUrl = `https://vidsrc.sbs/embed/movie/${data.id}`;
+    // Restore vaplayer.ru for regular Movies
+    newUrl = `https://vaplayer.ru/embed/movie/${data.id}?skin=netflix&color=e50914`;
   }
 
   iframe.onload = () => {
