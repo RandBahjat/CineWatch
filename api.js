@@ -159,6 +159,43 @@ window.CW_API = {
     } catch (e) {
       return { data: null, error: e.message };
     }
+  },
+
+  async getComments(movieId) {
+    try {
+      const { data, error } = await supabaseClient
+        .from('comments')
+        .select('*')
+        .eq('movie_id', String(movieId))
+        .order('created_at', { ascending: false });
+      
+      if (error) throw error;
+      return { data, error: null };
+    } catch (e) {
+      return { data: [], error: e.message };
+    }
+  },
+
+  async postComment(movieId, content) {
+    try {
+      const user = await this.getCurrentUser();
+      if (!user) return { success: false, error: 'Not logged in' };
+
+      const { data, error } = await supabaseClient
+        .from('comments')
+        .insert({
+          movie_id: String(movieId),
+          user_id: user.id,
+          username: user.username || user.name,
+          avatar: user.avatar || '🎬',
+          content: content
+        });
+
+      if (error) throw error;
+      return { success: true, error: null };
+    } catch (e) {
+      return { success: false, error: e.message };
+    }
   }
 };
 
