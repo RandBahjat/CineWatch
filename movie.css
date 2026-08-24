@@ -6287,6 +6287,7 @@ body.rtl-layout .account-side-panel.open {
    ========================================= */
 .comments-section {
   margin-top: 2rem;
+  margin-bottom: 3rem;
   padding-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   width: 100%;
@@ -6361,6 +6362,28 @@ body.rtl-layout .account-side-panel.open {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  max-height: 480px;
+  overflow-y: auto;
+  padding-right: 8px;
+  scroll-behavior: smooth;
+}
+
+.comments-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.comments-list::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+}
+
+.comments-list::-webkit-scrollbar-thumb {
+  background: rgba(229, 9, 20, 0.5);
+  border-radius: 10px;
+}
+
+.comments-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(229, 9, 20, 0.8);
 }
 
 .comment-item {
