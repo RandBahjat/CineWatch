@@ -10594,7 +10594,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gpHuW2shQwknL5ZaEk3LE8bX1tL.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/aFp8qPEyS9KySE4NNPlpo9Z3sA8.jpg",
     videoUrl: "373879",
-    overview: "Twenty years after breaking out of Impel Down, legendary pirate Shiki the Golden Lion resurfaces with a scheme to bring the World Government to its knees. Impressed by Nami's weather-reading skill, he kidnaps her to force her into his crew — leaving Luffy and the gang to chase him down through a strange land crawling with monstrous beasts.",
+    overview: "The Foxy Pirates challenge Luffy's crew to a rematch in the New World, but it's a trap — the Navy's most brilliant tactician steps in, and the Straw Hats find themselves stranded on Nebulandia, an island known as a death trap for Devil Fruit users. Luffy must team up with old rival Foxy for a rescue mission when Zoro, Sanji, and hostages get trapped.",
     director: "Munehisa Sakai",
     cast: [
       "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), Naoto Takenaka (Shiki)"
