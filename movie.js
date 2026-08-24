@@ -3801,46 +3801,11 @@ document.addEventListener("DOMContentLoaded", () => { initApp(); trackVisit(); }
 window.currentIframeData = null;
 
 function buildAnimeEmbedUrl(data, serverMode, refMovie) {
-  // serverMode: 'vidlink-sub' | 'vidlink-sub' | 'vidsrc-jp' | 'vidsrc-en' | 'vidsrc-dub'
-
-  const absEp = data.absoluteEpisode || data.episode;
-  const anilistId = data.anilistId || (refMovie ? refMovie.anilistId : null) || '';
-
-  if (serverMode === 'vidlink-sub' && anilistId) {
-    // Uses mediaload.com which we found via Miruro
-    if (data.type === 'tv') {
-      return `https://mediaload.com/embed/${anilistId}/${absEp}`;
-    } else {
-      return `https://mediaload.com/embed/${anilistId}/1`;
-    }
-  } else if (serverMode === 'vidlink-sub') {
-    // Beautiful UI
-    if (data.type === 'tv') {
-      return `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=e50914`;
-    } else {
-      return `https://vidlink.pro/movie/${data.id}?primaryColor=e50914`;
-    }
-  } else if (serverMode === 'vidsrc-dub') {
-    // English dub
-    if (data.type === 'tv') {
-      return `https://vidsrc.me/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}&ds_lang=en`;
-    } else {
-      return `https://vidsrc.me/embed/movie?tmdb=${data.id}&ds_lang=en`;
-    }
-  } else if (serverMode === 'vidsrc-en') {
-    // English sub / dub
-    if (data.type === 'tv') {
-      return `https://vidsrc.to/embed/tv/${data.id}/${data.season}/${data.episode}`;
-    } else {
-      return `https://vidsrc.to/embed/movie/${data.id}`;
-    }
+  // Beautiful UI (vidlink) is now the only supported anime server
+  if (data.type === 'tv') {
+    return `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=e50914`;
   } else {
-    // Default: 'vidsrc-jp' 
-    if (data.type === 'tv') {
-      return `https://vidsrc.pm/embed/tv/${data.id}/${data.season}/${data.episode}`;
-    } else {
-      return `https://www.2embed.cc/embed/${data.id}`;
-    }
+    return `https://vidlink.pro/movie/${data.id}?primaryColor=e50914`;
   }
 }
 
