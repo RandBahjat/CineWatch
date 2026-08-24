@@ -1663,24 +1663,7 @@ function openDetailsModal(movieId) {
     const tvSection = document.getElementById("tvShowSection");
     const playBtn = document.getElementById("detailsPlayBtn");
 
-    // ── Anime Server Selector on Detail Page ─────────────────────────────────
-    const animeDetailServerWrap = document.getElementById("animeDetailServerWrap");
-    if (animeDetailServerWrap) {
-      const isAnimeShow = !!(movie.isAnime || movie.type === 'Anime');
-      animeDetailServerWrap.classList.toggle('hidden', !isAnimeShow);
 
-      if (isAnimeShow) {
-        const savedServer = localStorage.getItem('animeServer') || 'vidlink-sub';
-        animeDetailServerWrap.querySelectorAll('.anime-detail-server-btn').forEach(btn => {
-          btn.classList.toggle('active', btn.dataset.server === savedServer);
-          btn.onclick = () => {
-            localStorage.setItem('animeServer', btn.dataset.server);
-            animeDetailServerWrap.querySelectorAll('.anime-detail-server-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-          };
-        });
-      }
-    }
 
     if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
       tvSection.classList.remove("hidden");
@@ -3866,7 +3849,6 @@ function updateIframeServer() {
   const data = window.currentIframeData;
   const iframe = document.getElementById('iframeElement');
   const serverSelectWrap = document.getElementById('serverSelectWrap');
-  const animeServerWrap = document.getElementById('animeServerWrap');
 
   // Always hide the old generic server selector
   if (serverSelectWrap) {
@@ -3891,11 +3873,8 @@ function updateIframeServer() {
 
   let newUrl = '';
   if (isAnime) {
-    // Restore previously selected server from localStorage
-    const savedServer = localStorage.getItem('animeServer') || 'vidlink-sub';
-    const serverSelect = document.getElementById('animeServerSelect');
-    if (serverSelect) serverSelect.value = savedServer;
-    newUrl = buildAnimeEmbedUrl(data, savedServer, refMovie);
+    // Only vidlink-sub is supported for anime
+    newUrl = buildAnimeEmbedUrl(data, 'vidlink-sub', refMovie);
   } else if (data.type === 'tv') {
     newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}?skin=netflix&color=e50914`;
   } else {
@@ -3909,29 +3888,6 @@ function updateIframeServer() {
   iframe.src = newUrl;
 }
 
-// Wire up anime server dropdown
-document.getElementById('animeServerSelect')?.addEventListener('change', () => {
-  const select = document.getElementById('animeServerSelect');
-  const serverMode = select?.value || 'vidlink-sub';
-  // Persist the user's choice
-  localStorage.setItem('animeServer', serverMode);
-  if (!window.currentIframeData) return;
-  // Show loading spinner
-  const centerOverlay = document.getElementById('videoCenterOverlay');
-  if (centerOverlay) {
-    centerOverlay.innerHTML = '<ion-icon name="sync-outline" class="spin"></ion-icon>';
-    centerOverlay.style.display = 'flex';
-    centerOverlay.style.animation = 'none';
-  }
-  // Reload iframe with new server
-  const iframe = document.getElementById('iframeElement');
-  
-  const parentMovie = window.currentIframeData.parentId ? MOVIES.find(m => String(m.id) === String(window.currentIframeData.parentId) || String(m.videoUrl) === String(window.currentIframeData.parentId)) : null;
-  const selfMovie = !parentMovie && window.currentIframeData.id ? MOVIES.find(m => String(m.videoUrl) === String(window.currentIframeData.id) || String(m.id) === String(window.currentIframeData.id)) : null;
-  const refMovie = parentMovie || selfMovie;
-  
-  iframe.src = buildAnimeEmbedUrl(window.currentIframeData, serverMode, refMovie);
-});
 
 document.getElementById("videoServerSelect")?.addEventListener("change", updateIframeServer);
 
