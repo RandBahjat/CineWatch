@@ -1,4 +1,4 @@
-﻿// CineWatch — Series Data
+// CineWatch — Series Data
 // Edit this file to add, remove, or reorder TV shows and series.
 // Push to GitHub (or save — auto-sync will handle it) for changes to go live.
 
@@ -17480,82 +17480,7 @@ window._SERIES_DATA = [
       }
     ]
   },
-  {
-    title: 'Cyberpunk: Edgerunners',
-    type: 'TV Show',
-    year: 2022,
-    rating: 7.6,
-    age: 'TV-MA',
-    duration: '25m',
-    genres: [
-      'Action',
-      'Anime',
-      'Science-Fiction'
-    ],
-    poster: 'https://www.themoviedb.org/t/p/w1280/lqcDVZ8pyk08AVftMBildDR3QUK.jpg',
-    backdrop: 'https://image.tmdb.org/t/p/original/bRE6zX4iOAejLOQCHryoV5WNu8G.jpg',
-    videoUrl: '105248',
-    overview: 'Set in Cyberpunk 2077 universe, Cyberpunk: Edgerunners tells a standalone, 10-episode story about a street kid trying to survive in a technology and body modification-obsessed city of the future. Having everything to lose, he chooses to stay alive by becoming an edgerunner—a mercenary outlaw also known as a cyberpunk.',
-    director: 'Hiroyuki Imaishi',
-    cast: [
-      'Kenn',
-      'Aoi Yuki',
-      'Hiroki Touchi',
-      'Michiko Kaiden',
-      'Takako Honda',
-      'Wataru Takagi'
-    ],
-    trending: false,
-    featured: false,
-    is4k: false,
-    seasons: [
-      {
-        season: 1,
-        episodes: [
-          {
-            episode: 1,
-            title: 'Let You Down'
-          },
-          {
-            episode: 2,
-            title: 'Like a Boy'
-          },
-          {
-            episode: 3,
-            title: 'Smooth Criminal'
-          },
-          {
-            episode: 4,
-            title: 'Lucky You'
-          },
-          {
-            episode: 5,
-            title: 'All Eyez On Me'
-          },
-          {
-            episode: 6,
-            title: 'Girl on Fire'
-          },
-          {
-            episode: 7,
-            title: 'Stronger'
-          },
-          {
-            episode: 8,
-            title: 'Stay'
-          },
-          {
-            episode: 9,
-            title: 'Humanity'
-          },
-          {
-            episode: 10,
-            title: 'My Moon My Man'
-          }
-        ]
-      }
-    ]
-  },
+
   {
     title: 'Danny Phantom',
     type: 'TV Show',
