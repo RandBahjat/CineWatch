@@ -3795,11 +3795,11 @@ function buildAnimeEmbedUrl(data, isDub) {
       return `https://vidsrc.me/embed/movie?tmdb=${data.id}&ds_lang=en`;
     }
   } else {
-    // For SUB, vidlink.pro has a beautiful UI, defaults to Japanese audio, and we can theme it red to match the site
+    // For SUB, vidsrc.me is more reliable for long-running anime like One Piece
     if (data.type === 'tv') {
-      return `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=e50914&autoplay=false`;
+      return `https://vidsrc.me/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}&ds_lang=ja`;
     } else {
-      return `https://vidlink.pro/movie/${data.id}?primaryColor=e50914&autoplay=false`;
+      return `https://vidsrc.me/embed/movie?tmdb=${data.id}&ds_lang=ja`;
     }
   }
 }
