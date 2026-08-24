@@ -70,8 +70,9 @@ async function loadMediaFromAPI() {
     // 1. Load media from local JS files instead of Supabase per user preference
     const localMovies = window._MOVIES_DATA || [];
     const localSeries = window._SERIES_DATA || [];
+    const localAnime = window._ANIME_DATA || [];
     
-    MOVIES = [...localMovies, ...localSeries];
+    MOVIES = [...localMovies, ...localSeries, ...localAnime];
 
     if (MOVIES.length === 0) {
       console.warn('CineWatch: No media data found in local files.');
