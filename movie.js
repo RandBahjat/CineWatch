@@ -1580,19 +1580,40 @@ async function renderCommentsSection(movieId) {
     const avatarContent = comment.avatar && comment.avatar.length > 20 
       ? `<img src="${comment.avatar}" alt="avatar" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">`
       : (comment.avatar || '🎬');
+    
+    const isOwner = state.user && comment.user_id === state.user.id;
+    const deleteBtn = isOwner ? `
+      <button class="comment-delete-btn" onclick="deleteComment('${comment.id}', '${movieId}')" title="Delete comment">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4h6v2"/></svg>
+      </button>` : '';
       
     return `
-    <div class="comment-item">
+    <div class="comment-item" id="comment-${comment.id}">
       <div class="comment-avatar">${avatarContent}</div>
       <div class="comment-content">
         <div class="comment-header">
           <span class="comment-author">${comment.username}</span>
-          <span class="comment-date">${new Date(comment.created_at).toLocaleDateString()}</span>
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <span class="comment-date">${new Date(comment.created_at).toLocaleDateString()}</span>
+            ${deleteBtn}
+          </div>
         </div>
         <div class="comment-text">${comment.content.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</div>
       </div>
     </div>
   `}).join('');
+}
+
+window.deleteComment = async function(commentId, movieId) {
+  if (!confirm('Delete this comment?')) return;
+  
+  const { success, error } = await window.CW_API.deleteComment(commentId);
+  if (success) {
+    await renderCommentsSection(movieId);
+  } else {
+    alert('Failed to delete: ' + (error || 'Unknown error'));
+  }
+};
 }
 
 window.submitComment = async function(movieId) {
