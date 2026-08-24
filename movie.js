@@ -3818,12 +3818,12 @@ document.addEventListener("DOMContentLoaded", () => { initApp(); trackVisit(); }
 window.currentIframeData = null;
 
 function buildAnimeEmbedUrl(data, serverMode, refMovie) {
-  // serverMode: 'miruro-sub' | 'vidlink-sub' | 'vidsrc-jp' | 'vidsrc-en' | 'vidsrc-dub'
+  // serverMode: 'vidlink-sub' | 'vidlink-sub' | 'vidsrc-jp' | 'vidsrc-en' | 'vidsrc-dub'
 
   const absEp = data.absoluteEpisode || data.episode;
   const anilistId = data.anilistId || (refMovie ? refMovie.anilistId : null) || '';
 
-  if (serverMode === 'miruro-sub' && anilistId) {
+  if (serverMode === 'vidlink-sub' && anilistId) {
     // Uses mediaload.com which we found via Miruro
     if (data.type === 'tv') {
       return `https://mediaload.com/embed/${anilistId}/${absEp}`;
@@ -3892,7 +3892,7 @@ function updateIframeServer() {
   let newUrl = '';
   if (isAnime) {
     // Restore previously selected server from localStorage
-    const savedServer = localStorage.getItem('animeServer') || 'miruro-sub';
+    const savedServer = localStorage.getItem('animeServer') || 'vidlink-sub';
     const serverSelect = document.getElementById('animeServerSelect');
     if (serverSelect) serverSelect.value = savedServer;
     newUrl = buildAnimeEmbedUrl(data, savedServer, refMovie);
