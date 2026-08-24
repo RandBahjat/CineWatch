@@ -52873,7 +52873,7 @@ window._SERIES_DATA = [
           { episode: 7, title: "The Girl with the Sawfish Tattoo" },
           { episode: 8, title: "Worst in the East" },
         ]
-      }
+      },
       {
         season: 2,
         episodes: [
