@@ -10752,7 +10752,7 @@ window._MOVIES_DATA = [
       "Fantasy"
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/tEJBIHzaW1IoOVHtgblXy76kj4G.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/e91hSNOwrV9FvC8LyaroK8dYTlZ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/41e5H3UhT7D8VYBh4rdGy5fB0lv.jpg",
     videoUrl: "44727",
     overview: "Broke after Luffy's huge appetite drains the crew's funds, the Straw Hats stumble onto a secret pirate race called the Dead End Competition, with a 300,000,000 Beli prize. Nami signs them up on the spot — but the race pits them against dangerous rivals, including a bounty hunter and the ruthless ex-Marine-turned-pirate Captain Gasparde.",
