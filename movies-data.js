@@ -10806,7 +10806,7 @@ window._MOVIES_DATA = [
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/caUI7YlhVXykFWQ7Ul7RQ2wQRpv.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/xSvFPxS4JR2G6oRmgmeq9oSIJR4.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/AKY0hy1MXApKH8Ediy2axieZ0C.jpg",
     videoUrl: "541867",
     overview: "Experience the inspiring moments that launched Luffy and the first four members of his crew on their grand adventure to find the One Piece — from Shanks giving Luffy the straw hat, to Nami facing the Fish-Men at her hometown. Zoro finds his swordsman's zeal, Usopp pays for his pranks, and Sanji sizzles up the Baratie, all in the waters where it began.",
     director: "Takashi Otsuka",
