@@ -1718,7 +1718,9 @@ function openDetailsModal(movieId) {
         // We return a special template string so openVideoPlayerWithUrl knows it's a TV embed that can be switched
         const mediaId = movie.cinesrcId || movie.videoUrl;
         if (mediaId) {
-          return `tv_embed:${mediaId}:${seasonData.season}:${ep.episode}`;
+          const absEp = ep.absoluteEpisode || "";
+          const aniId = movie.anilistId || "";
+          return `tv_embed:${mediaId}:${seasonData.season}:${ep.episode}:${absEp}:${aniId}`;
         }
         return "";
       }
@@ -2062,7 +2064,15 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     serverWrap.classList.remove("hidden");
     if (isTvEmbed) {
       const parts = videoUrl.split(":");
-      window.currentIframeData = { type: "tv", id: parts[1], season: parts[2], episode: parts[3], parentId };
+      window.currentIframeData = { 
+        type: "tv", 
+        id: parts[1], 
+        season: parts[2], 
+        episode: parts[3], 
+        absoluteEpisode: parts[4] || null,
+        anilistId: parts[5] || null,
+        parentId 
+      };
     } else if (isNumericId) {
       window.currentIframeData = { type: "movie", id: videoUrl, parentId };
     } else {
@@ -3943,7 +3953,9 @@ function navigateToEpisode(offset) {
     if (!epUrl) {
       const mediaId = movie.cinesrcId || movie.videoUrl;
       if (mediaId) {
-        epUrl = `tv_embed:${mediaId}:${nextSeason.season}:${nextEp.episode}`;
+        const absEp = nextEp.absoluteEpisode || "";
+        const aniId = movie.anilistId || "";
+        epUrl = `tv_embed:${mediaId}:${nextSeason.season}:${nextEp.episode}:${absEp}:${aniId}`;
       }
     }
 
