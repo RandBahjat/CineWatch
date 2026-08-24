@@ -10819,7 +10819,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "One Piece 3D2Y: Overcome Ace's Death! Luffy's Vow to his Friends",
+    title: "",
     type: "Movie",
     year: 2014,
     rating: 7.5,
