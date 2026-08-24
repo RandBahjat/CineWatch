@@ -10742,7 +10742,7 @@ window._MOVIES_DATA = [
     title: "One Piece: Heart of Gold",
     type: "Movie",
     year: 2016,
-    rating: 7.1,
+    rating: 6.9,
     age: "TV-14",
     duration: "1h 35m",
     genres: [
