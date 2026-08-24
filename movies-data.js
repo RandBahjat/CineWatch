@@ -10766,7 +10766,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "One Piece: Heart of Gold",
+    title: "",
     type: "Movie",
     year: 2016,
     rating: 6.9,
