@@ -52877,7 +52877,7 @@ window._SERIES_DATA = [
       {
         season: 2,
         episodes: [
-          { episode: 1, title: "Romance Dawn" },
+          { episode: 1, title: "The Beginning and the End" },
           { episode: 2, title: "The Man in the Straw Hat" },
           { episode: 3, title: "Tell No Tales" },
           { episode: 4, title: "The Pirates Are Coming" },
