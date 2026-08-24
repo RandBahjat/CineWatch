@@ -3806,27 +3806,34 @@ document.addEventListener("DOMContentLoaded", () => { initApp(); trackVisit(); }
 window.currentIframeData = null;
 
 function buildAnimeEmbedUrl(data, serverMode) {
-  // serverMode: 'vidlink-sub' | 'vidsrc-sub' | 'vidsrc-dub'
+  // serverMode: 'vidlink-sub' | 'vidsrc-jp' | 'vidsrc-en' | 'vidsrc-dub'
   if (serverMode === 'vidlink-sub') {
-    // Beautiful UI, defaults to Japanese sub — may fail for long-running anime
+    // Beautiful UI — may fail for long-running anime (100+ eps)
     if (data.type === 'tv') {
       return `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=e50914`;
     } else {
       return `https://vidlink.pro/movie/${data.id}?primaryColor=e50914`;
     }
   } else if (serverMode === 'vidsrc-dub') {
-    // Reliable server — English dubbed audio
+    // English dub — vidsrc.me
     if (data.type === 'tv') {
       return `https://vidsrc.me/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}&ds_lang=en`;
     } else {
       return `https://vidsrc.me/embed/movie?tmdb=${data.id}&ds_lang=en`;
     }
-  } else {
-    // Default: 'vidsrc-sub' — Reliable server, Japanese audio + English subs
+  } else if (serverMode === 'vidsrc-en') {
+    // English sub — vidsrc.to (alternative)
     if (data.type === 'tv') {
-      return `https://vidsrc.me/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}&ds_lang=ja`;
+      return `https://vidsrc.to/embed/tv/${data.id}/${data.season}/${data.episode}`;
     } else {
-      return `https://vidsrc.me/embed/movie?tmdb=${data.id}&ds_lang=ja`;
+      return `https://vidsrc.to/embed/movie/${data.id}`;
+    }
+  } else {
+    // Default: 'vidsrc-jp' — vidsrc.to with Japanese audio, works for ALL episodes
+    if (data.type === 'tv') {
+      return `https://vidsrc.to/embed/tv/${data.id}/${data.season}/${data.episode}`;
+    } else {
+      return `https://vidsrc.to/embed/movie/${data.id}`;
     }
   }
 }
