@@ -10532,7 +10532,7 @@ window._MOVIES_DATA = [
     year: 2019,
     rating: 7.5,
     age: "TV-14",
-    duration: "2h 4m",
+    duration: "1h 41m",
     genres: [
       "Action",
       "Animation",
