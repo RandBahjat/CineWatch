@@ -10688,7 +10688,7 @@ window._MOVIES_DATA = [
     title: "One Piece: Clockwork Island Adventure",
     type: "Movie",
     year: 2001,
-    rating: 6.7,
+    rating: 6.6,
     age: "PG-13",
     duration: "1h 30m",
     genres: [
