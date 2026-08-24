@@ -10793,9 +10793,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "One Piece "3D2Y: Overcome Ace's Death! Luffy's Vow to his Friends",
+    title: "One Piece 3D2Y: Overcome Ace's Death! Luffy's Vow to his Friends",
     type: "Movie",
-    year: 2017,
+    year: 2014,
     rating: 7.2,
     age: "TV-14",
     duration: "1h 46m",
