@@ -10822,7 +10822,7 @@ window._MOVIES_DATA = [
     title: "One Piece: Episode of Chopper Plus: Bloom in the Winter, Miracle Cherry Blossom",
     type: "Movie",
     year: 2008,
-    rating: 6.,
+    rating: 6.9,
     age: "TV-PG",
     duration: "1h 48m",
     genres: [
