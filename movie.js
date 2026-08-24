@@ -3893,7 +3893,7 @@ function updateIframeServer() {
     const savedServer = localStorage.getItem('animeServer') || 'vidsrc-jp';
     const serverSelect = document.getElementById('animeServerSelect');
     if (serverSelect) serverSelect.value = savedServer;
-    newUrl = buildAnimeEmbedUrl(data, savedServer);
+    newUrl = buildAnimeEmbedUrl(data, savedServer, refMovie);
   } else if (data.type === 'tv') {
     newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}?skin=netflix&color=e50914`;
   } else {
@@ -3923,7 +3923,12 @@ document.getElementById('animeServerSelect')?.addEventListener('change', () => {
   }
   // Reload iframe with new server
   const iframe = document.getElementById('iframeElement');
-  iframe.src = buildAnimeEmbedUrl(window.currentIframeData, serverMode);
+  
+  const parentMovie = window.currentIframeData.parentId ? MOVIES.find(m => String(m.id) === String(window.currentIframeData.parentId) || String(m.videoUrl) === String(window.currentIframeData.parentId)) : null;
+  const selfMovie = !parentMovie && window.currentIframeData.id ? MOVIES.find(m => String(m.videoUrl) === String(window.currentIframeData.id) || String(m.id) === String(window.currentIframeData.id)) : null;
+  const refMovie = parentMovie || selfMovie;
+  
+  iframe.src = buildAnimeEmbedUrl(window.currentIframeData, serverMode, refMovie);
 });
 
 document.getElementById("videoServerSelect")?.addEventListener("change", updateIframeServer);
