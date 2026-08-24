@@ -1576,9 +1576,14 @@ async function renderCommentsSection(movieId) {
   }
 
   // Render comments
-  commentsList.innerHTML = data.map(comment => `
+  commentsList.innerHTML = data.map(comment => {
+    const avatarContent = comment.avatar && comment.avatar.length > 20 
+      ? `<img src="${comment.avatar}" alt="avatar" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">`
+      : (comment.avatar || '🎬');
+      
+    return `
     <div class="comment-item">
-      <div class="comment-avatar">${comment.avatar || '🎬'}</div>
+      <div class="comment-avatar">${avatarContent}</div>
       <div class="comment-content">
         <div class="comment-header">
           <span class="comment-author">${comment.username}</span>
@@ -1587,7 +1592,7 @@ async function renderCommentsSection(movieId) {
         <div class="comment-text">${comment.content.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</div>
       </div>
     </div>
-  `).join('');
+  `}).join('');
 }
 
 window.submitComment = async function(movieId) {
