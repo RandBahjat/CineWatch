@@ -1,4 +1,4 @@
-﻿const FEATURED_TITLES = ["Reacher","Lanterns", "House of the Dragon", "The Invite", "Spider-Man: Brand New Day", "The Odyssey", "Obsession", "The Last House"];
+const FEATURED_TITLES = ["Reacher","Lanterns", "House of the Dragon", "The Invite", "Spider-Man: Brand New Day", "The Odyssey", "Obsession", "The Last House"];
 const TRENDING_TITLES = ["Reacher","Lanterns", "Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters", "The Invite", "Young Washington", "The Last House", "Ted Lasso", "Project Hail Mary"];
 const MOVIES = [
   {
@@ -13577,7 +13577,7 @@ const MOVIES = [
     rating: 7.6,
     age: "TV-MA",
     duration: "25m",
-    genres: ["Action", "Anime", "Science-Fiction"],
+    genres: ["Action", "Sci-Fi", "Science-Fiction"],
     poster: "https://www.themoviedb.org/t/p/w1280/lqcDVZ8pyk08AVftMBildDR3QUK.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/bRE6zX4iOAejLOQCHryoV5WNu8G.jpg",
     videoUrl: "105248",
