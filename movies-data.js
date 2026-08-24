@@ -10501,7 +10501,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "One Piece Film: Z",
+    title: "One Piece Film: GOLD",
     type: "Movie",
     year: 2012,
     rating: 7.7,
