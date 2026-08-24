@@ -10920,7 +10920,7 @@ window._MOVIES_DATA = [
     overview: "Remake special retelling Arlong Park arc. Navigator Nami leaves Straw Hat crew to return home to Cocoyasi Village. Luffy and friends follow Nami, discovering she works for tyrannical fishman Arlong to buy back village freedom. When Arlong betrays deal, Nami asks Luffy for help, leading to grand battle to liberate village and secure Nami place as crew navigator.",
     director: "Hiroaki Miyamoto",
     cast: [
-      "Mayumi Tanaka, Kazuya Nakai, Akemi Okamura, Kappei Yamaguchi, Hiroaki Hirata, Ikue Otani, Yuriko Yamaguchi, Kazuki Yao, Cho"
+      "Mayumi Tanaka, Kazuya Nakai, Akemi Okamura, Kappei Yamaguchi, Hiroaki Hirata, Jurota Kosugi"
     ],
     trending: false,
     featured: false,
