@@ -52874,6 +52874,19 @@ window._SERIES_DATA = [
           { episode: 8, title: "Worst in the East" },
         ]
       }
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Romance Dawn" },
+          { episode: 2, title: "The Man in the Straw Hat" },
+          { episode: 3, title: "Tell No Tales" },
+          { episode: 4, title: "The Pirates Are Coming" },
+          { episode: 5, title: "Eat at Baratie!" },
+          { episode: 6, title: "The Chef and the Chore Boy" },
+          { episode: 7, title: "The Girl with the Sawfish Tattoo" },
+          { episode: 8, title: "Worst in the East" },
+        ]
+      }
     ]
   },
 
