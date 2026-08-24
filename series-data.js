@@ -52850,7 +52850,7 @@ window._SERIES_DATA = [
     year: 2023,
     rating: 8.3,
     age: "TV-14",
-    genres: ["Drama", "Western"],
+    genres: ["Action", "Western"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/wowtdtDM980GjuxCXJY4seeqP2O.jpg",
     videoUrl: "299167",
