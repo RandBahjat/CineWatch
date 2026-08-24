@@ -10493,7 +10493,7 @@ window._MOVIES_DATA = [
     overview: "Straw Hats sail into the dangerous New World, chasing rumors of the Pirate King's lost treasure. There they clash with Z, a former Marine admiral with an arm made of Seastone, who's stolen a set of world-ending weapons called Dyna Stones — determined to wipe out piracy for good, whatever the cost.",
     director: "Tatsuya Nagamine",
     cast: [
-      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Shuichi Ikeda (Shanks), Kaori Nazuka (Uta)"
+      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), Hochu Otsuka (Z)"
     ],
     trending: false,
     featured: false,
