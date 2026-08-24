@@ -10715,7 +10715,7 @@ window._MOVIES_DATA = [
     title: "One Piece: Dead End Adventure",
     type: "Movie",
     year: 2003,
-    rating: 6.6,
+    rating: 7.1,
     age: "PG-13",
     duration: "55m",
     genres: [
