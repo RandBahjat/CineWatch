@@ -10529,8 +10529,8 @@ window._MOVIES_DATA = [
   {
     title: "One Piece: Stampede",
     type: "Movie",
-    year: 2016,
-    rating: 7.1,
+    year: 2019,
+    rating: 7.5,
     age: "TV-14",
     duration: "2h 4m",
     genres: [
