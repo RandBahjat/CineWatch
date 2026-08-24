@@ -3,8 +3,6 @@
 // Push to GitHub (or save — auto-sync will handle it) for changes to go live.
 
 window._SERIES_DATA = [
-  
-  },
   {
     title: 'Lanterns',
     type: 'TV Show',
