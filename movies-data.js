@@ -10765,6 +10765,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "One Piece: Heart of Gold",
+    type: "Movie",
+    year: 2016,
+    rating: 6.9,
+    age: "TV-14",
+    duration: "1h 44m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/e91hSNOwrV9FvC8LyaroK8dYTlZ.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/8vDtPSj3hsrUSWyqKrtkzGezgoM.jpg",
+    videoUrl: "433157",
+    overview: "A girl named Myskina Olga is pursued by both the World Government and treasure hunter Mad Treasure, as she's the only one who knows the location of Pure Gold — a substance rare enough to buy the entire world. Olga ends up sailing with the Straw Hat Pirates, journeying to the lost island of Alchemi, hidden inside the stomach of a giant footballfish named Bonbori.",
+    director: "Tatsuya Nagamine",
+    cast: [
+      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), guest star Shun Oguri (Mad Treasure)"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
