@@ -10690,7 +10690,7 @@ window._MOVIES_DATA = [
     year: 2001,
     rating: 6.6,
     age: "PG-13",
-    duration: "1h 30m",
+    duration: "55m",
     genres: [
       "Action",
       "Animation",
