@@ -10702,7 +10702,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/qgaVJE4SK2qRtggVyRlISKQ1zBE.jpg",
     videoUrl: "23446",
     overview: "While relaxing on a peaceful beach, the Straw Hat crew's ship, the Going Merry, gets hijacked — along with Luffy's precious straw hat and Nami taken hostage. Teaming up with the mysterious Thief Brothers, Luffy, Zoro, Sanji, and Usopp track the culprits to Clockwork Island, where the tyrannical Bear King plots to conquer the seas with a superweapon.",
-    director: "Takahiro Imamura",
+    director: "Junji Shimizu",
     cast: [
       "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), Kappei Yamaguchi (Usopp), Hiroaki Hirata (Sanji)"
     ],
