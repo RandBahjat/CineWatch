@@ -10489,7 +10489,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dd0HwfxstffjRgbBcQvtw3uqS6O.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/59M1aPwmaVvzZ5KR6dagkC3pUb7.jpg",
-    videoUrl: "176",
+    videoUrl: "176983",
     overview: "Uta, world's most celebrated singer, hide secret — she's Shanks' daughter. She hold concert, gather huge crowd including Straw Hat crew, but her true past + hidden power threaten to unravel everything.",
     director: "Goro Taniguchi",
     cast: [
