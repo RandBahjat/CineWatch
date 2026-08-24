@@ -6032,7 +6032,7 @@ window._ANIME_DATA = [
   }
 
 {
-    "title": "Dragon B",
+    "title": "Dragon Ball Z",
     "type": "TV Show",
     "isAnime": true,
     "year": 1999,
