@@ -6043,7 +6043,7 @@ window._ANIME_DATA = [
       "Animation",
       "Action",
       "Adventure",
-      "Comedy",
+      "Sci-Fi",
       "Fantasy"
     ],
     "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
