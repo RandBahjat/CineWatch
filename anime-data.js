@@ -1,4 +1,4 @@
-// CineWatch — Anime Data
+﻿// CineWatch â€” Anime Data
 // Edit this file to add, remove, or reorder anime shows and movies.
 
 window._ANIME_DATA = [
@@ -33,50 +33,314 @@ window._ANIME_DATA = [
     ],
     "trending": true,
     "featured": true,
-    "is4k": false,
-    "seasons": [
+    "is4k": false,          "seasons": [
       {
         "season": 1,
         "episodes": [
           {
             "episode": 1,
-            "title": "I'm Luffy! The Man Who Will Become the Pirate King!",
+            "title": "I\'m Luffy! The Man Who Will Become the Pirate King!",
             "absoluteEpisode": 1
           },
           {
             "episode": 2,
-            "title": "The Great Swordsman Appears! Pirate Hunter Roronoa Zoro",
+            "title": "The Great Swordsman Appears! Pirate Hunter, Roronoa Zoro",
             "absoluteEpisode": 2
           },
           {
             "episode": 3,
-            "title": "Morgan versus Luffy! Who\\'s the Mysterious Pretty Girl?",
+            "title": "Morgan VS Luffy! Who\'s This Beautiful Young Girl?",
             "absoluteEpisode": 3
           },
           {
             "episode": 4,
-            "title": "Luffy\\'s Past! The Red-Haired Shanks Appears!",
+            "title": "Luffy\'s Past! The Red-haired Shanks appears",
             "absoluteEpisode": 4
           },
           {
             "episode": 5,
-            "title": "A Terrifying Mysterious Power! Captain Buggy, the Clown Pirate!",
+            "title": "Fear, Mysterious Power! Pirate Clown Captain Buggy!",
             "absoluteEpisode": 5
           },
           {
             "episode": 6,
-            "title": "Desperate Situation! Beast Tamer Mohji vs. Luffy!",
+            "title": "Desperate Situation! Beast Tamer Mohji vs Luffy!",
             "absoluteEpisode": 6
           },
           {
             "episode": 7,
-            "title": "Epic Showdown! Swordsman Zoro vs. Acrobat Cabaji!",
+            "title": "Grand Duel! Zoro the Swordsman vs Cabaji the Acrobat!",
             "absoluteEpisode": 7
           },
           {
             "episode": 8,
-            "title": "Who is the Victor? Devil Fruit Power Showdown!",
+            "title": "Who Will Win? Showdown Between the True Powers of the Devil!",
             "absoluteEpisode": 8
+          },
+          {
+            "episode": 9,
+            "title": "The Honorable Liar? Captain Usopp!",
+            "absoluteEpisode": 9
+          },
+          {
+            "episode": 10,
+            "title": "The Weirdest Guy Ever! Jango the Hypnotist!",
+            "absoluteEpisode": 10
+          },
+          {
+            "episode": 11,
+            "title": "Expose the Plot! Pirate Butler, Captain Kuro!",
+            "absoluteEpisode": 11
+          },
+          {
+            "episode": 12,
+            "title": "Clash with the Black Cat Pirates! The Great Battle on the Slope!",
+            "absoluteEpisode": 12
+          },
+          {
+            "episode": 13,
+            "title": "The Terrifying Duo! Meowban Brothers vs. Zoro!",
+            "absoluteEpisode": 13
+          },
+          {
+            "episode": 14,
+            "title": "Luffy Back in Action! Miss Kaya\'s Desperate Resistance!",
+            "absoluteEpisode": 14
+          },
+          {
+            "episode": 15,
+            "title": "Beat Kuro! Usopp the Man\'s Tearful Resolve!",
+            "absoluteEpisode": 15
+          },
+          {
+            "episode": 16,
+            "title": "Protect Kaya! The Usopp Pirates\' Great Efforts!",
+            "absoluteEpisode": 16
+          },
+          {
+            "episode": 17,
+            "title": "Anger Explosion! Kuro vs. Luffy! How it Ends!",
+            "absoluteEpisode": 17
+          },
+          {
+            "episode": 18,
+            "title": "You\'re the Weird Creature! Gaimon and His Strange Friends!",
+            "absoluteEpisode": 18
+          },
+          {
+            "episode": 19,
+            "title": "The Three-Sword Style\'s Past! Zoro and Kuina\'s Vow!",
+            "absoluteEpisode": 19
+          },
+          {
+            "episode": 20,
+            "title": "Famous Cook! Sanji of the Sea Restaurant!",
+            "absoluteEpisode": 20
+          },
+          {
+            "episode": 21,
+            "title": "Unwelcome Customer! Sanji\'s Food and Ghin\'s Debt!",
+            "absoluteEpisode": 21
+          },
+          {
+            "episode": 22,
+            "title": "The Strongest Pirate Fleet! Commodore Don Krieg!",
+            "absoluteEpisode": 22
+          },
+          {
+            "episode": 23,
+            "title": "Protect Baratie! The Great Pirate, Red Foot Zeff!",
+            "absoluteEpisode": 23
+          },
+          {
+            "episode": 24,
+            "title": "Hawk-Eye Mihawk! The Great Swordsman Zoro Falls At Sea!",
+            "absoluteEpisode": 24
+          },
+          {
+            "episode": 25,
+            "title": "The Deadly Foot Technique Bursts Forth! Sanji vs. The Invincible Pearl!",
+            "absoluteEpisode": 25
+          },
+          {
+            "episode": 26,
+            "title": "Zeff and Sanji\'s Dream! The Illusory All Blue!",
+            "absoluteEpisode": 26
+          },
+          {
+            "episode": 27,
+            "title": "Cool-headed, Cold-hearted Demon! Pirate Fleet Chief Commander Ghin!",
+            "absoluteEpisode": 27
+          },
+          {
+            "episode": 28,
+            "title": "I Won\'t Die! Fierce Battle, Luffy vs. Krieg!",
+            "absoluteEpisode": 28
+          },
+          {
+            "episode": 29,
+            "title": "The Conclusion of the Deadly Battle! A Spear of Blind Determination!",
+            "absoluteEpisode": 29
+          },
+          {
+            "episode": 30,
+            "title": "Set Sail! The Seafaring Cook Sets Off With Luffy!",
+            "absoluteEpisode": 30
+          },
+          {
+            "episode": 31,
+            "title": "The Worst Man in the Eastern Seas! Fishman Pirate Arlong!",
+            "absoluteEpisode": 31
+          },
+          {
+            "episode": 32,
+            "title": "Witch of Cocoyashi Village! Arlong\'s Female Leader!",
+            "absoluteEpisode": 32
+          },
+          {
+            "episode": 33,
+            "title": "Usopp Dead?! When is Luffy Going to Make Landfall?!",
+            "absoluteEpisode": 33
+          },
+          {
+            "episode": 34,
+            "title": "Everyone\'s Gathered! Usopp Speaks the Truth About Nami!",
+            "absoluteEpisode": 34
+          },
+          {
+            "episode": 35,
+            "title": "Untold Past! Female Warrior Bellemere!",
+            "absoluteEpisode": 35
+          },
+          {
+            "episode": 36,
+            "title": "Survive! Mother Bellemere and Nami\'s Bond!",
+            "absoluteEpisode": 36
+          },
+          {
+            "episode": 37,
+            "title": "Luffy Rises! Result of the Broken Promise!",
+            "absoluteEpisode": 37
+          },
+          {
+            "episode": 38,
+            "title": "Luffy in Big Trouble! Fishmen vs. The Luffy Pirates!",
+            "absoluteEpisode": 38
+          },
+          {
+            "episode": 39,
+            "title": "Luffy Submerged! Zoro vs. Hatchan the Octopus!",
+            "absoluteEpisode": 39
+          },
+          {
+            "episode": 40,
+            "title": "Proud Warriors! Sanji and Usopp\'s Fierce Battles!",
+            "absoluteEpisode": 40
+          },
+          {
+            "episode": 41,
+            "title": "Luffy at Full Power! Nami\'s Determination and the Straw Hat!",
+            "absoluteEpisode": 41
+          },
+          {
+            "episode": 42,
+            "title": "Explosion! Fishman Arlong\'s Fierce Assault From the Sea!",
+            "absoluteEpisode": 42
+          },
+          {
+            "episode": 43,
+            "title": "End of the Fishman Empire! Nami\'s My Friend!",
+            "absoluteEpisode": 43
+          },
+          {
+            "episode": 44,
+            "title": "Setting Out with a Smile! Farewell, Hometown Cocoyashi Village!",
+            "absoluteEpisode": 44
+          },
+          {
+            "episode": 45,
+            "title": "Bounty! Straw Hat Luffy Becomes Known to the World!",
+            "absoluteEpisode": 45
+          },
+          {
+            "episode": 46,
+            "title": "Chase Straw Hat! Little Buggy\'s Big Adventure!",
+            "absoluteEpisode": 46
+          },
+          {
+            "episode": 47,
+            "title": "The Wait is Over! The Return of Captain Buggy!",
+            "absoluteEpisode": 47
+          },
+          {
+            "episode": 48,
+            "title": "The Town of the Beginning and the End! Landfall at Logue Town!",
+            "absoluteEpisode": 48
+          },
+          {
+            "episode": 49,
+            "title": "Zoro\'s New Swords and the Woman Sergeant Major!",
+            "absoluteEpisode": 49
+          },
+          {
+            "episode": 50,
+            "title": "Usopp vs. Daddy the Parent! Showdown at High!",
+            "absoluteEpisode": 50
+          },
+          {
+            "episode": 51,
+            "title": "Fiery Cooking Battle? Sanji vs. The Beautiful Chef!",
+            "absoluteEpisode": 51
+          },
+          {
+            "episode": 52,
+            "title": "Buggy\'s Revenge! The Man Who Smiles On the Execution Platform!",
+            "absoluteEpisode": 52
+          },
+          {
+            "episode": 53,
+            "title": "The Legend Has Started! Head for the Grand Line!",
+            "absoluteEpisode": 53
+          },
+          {
+            "episode": 54,
+            "title": "Precursor to a New Adventure! Apis, a Mysterious Girl!",
+            "absoluteEpisode": 54
+          },
+          {
+            "episode": 55,
+            "title": "Miraculous Creature! Apis\'s Secret and The Legendary Island!",
+            "absoluteEpisode": 55
+          },
+          {
+            "episode": 56,
+            "title": "Eric Attacks! Great Escape From Warship Island!",
+            "absoluteEpisode": 56
+          },
+          {
+            "episode": 57,
+            "title": "A Solitary Island in the Distant Sea! The Legendary Lost Island!",
+            "absoluteEpisode": 57
+          },
+          {
+            "episode": 58,
+            "title": "Showdown in the Ruins! Tense Zoro vs. Eric!",
+            "absoluteEpisode": 58
+          },
+          {
+            "episode": 59,
+            "title": "Luffy, Completely Surrounded! Commodore Nelson\'s Secret Strategy!",
+            "absoluteEpisode": 59
+          },
+          {
+            "episode": 60,
+            "title": "Through the Sky They Soar! The 1000 Year Legend Lives Again!",
+            "absoluteEpisode": 60
+          },
+          {
+            "episode": 61,
+            "title": "An Angry Showdown! Cross the Red Line!",
+            "absoluteEpisode": 61
           }
         ]
       },
@@ -85,223 +349,83 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "The Honorable Liar? Captain Usopp!",
-            "absoluteEpisode": 9
+            "title": "The First Line of Defense? The Giant Whale Laboon Appears!",
+            "absoluteEpisode": 62
           },
           {
             "episode": 2,
-            "title": "The Weirdest Guy Ever! Jango the Hypnotist!",
-            "absoluteEpisode": 10
+            "title": "A Promise Between Men! Luffy and the Whale Vow to Meet Again!",
+            "absoluteEpisode": 63
           },
           {
             "episode": 3,
-            "title": "Expose the Plot! Pirate Butler, Captain Kuro!",
-            "absoluteEpisode": 11
+            "title": "A Town that Welcomes Pirates? Setting Foot on Whisky Peak!",
+            "absoluteEpisode": 64
           },
           {
             "episode": 4,
-            "title": "Clash with the Black Cat Pirates! The Great Battle on the Slope!",
-            "absoluteEpisode": 12
+            "title": "Explosion! The Three Swords Style! Zoro vs. Baroque Works!",
+            "absoluteEpisode": 65
           },
           {
             "episode": 5,
-            "title": "The Terrifying Duo! Meowban Brothers vs. Zoro!",
-            "absoluteEpisode": 13
+            "title": "All Out Battle! Luffy vs. Zoro, Mysterious Grand Duel!",
+            "absoluteEpisode": 66
           },
           {
             "episode": 6,
-            "title": "Luffy Back in Action! Miss Kaya\\'s Desperate Resistance!",
-            "absoluteEpisode": 14
+            "title": "Deliver Princess Vivi! The Luffy Pirates Set Sail!",
+            "absoluteEpisode": 67
           },
           {
             "episode": 7,
-            "title": "Beat Kuro! Usopp the Man\\'s Tearful Resolve!",
-            "absoluteEpisode": 15
+            "title": "Try Hard, Coby! Coby and Helmeppo\'s Struggles in the Marines!",
+            "absoluteEpisode": 68
           },
           {
             "episode": 8,
-            "title": "Protect Kaya! The Usopp Pirates\\' Great Efforts!",
-            "absoluteEpisode": 16
+            "title": "Coby and Helmeppo\'s Resolve! Vice-Admiral Garp\'s Parental Affection!",
+            "absoluteEpisode": 69
           },
           {
             "episode": 9,
-            "title": "Anger Explosion! Kuro vs. Luffy! How it Ends!",
-            "absoluteEpisode": 17
+            "title": "An Ancient Island! The Shadow Hiding in Little Garden!",
+            "absoluteEpisode": 70
           },
           {
             "episode": 10,
-            "title": "You\\'re the Weird Creature! Gaimon and His Strange Friends!",
-            "absoluteEpisode": 18
+            "title": "Huge Duel! The Giants Dorry and Broggy!",
+            "absoluteEpisode": 71
           },
           {
             "episode": 11,
-            "title": "The Three-Sword Style\\'s Past! Zoro and Kuina\\'s Vow!",
-            "absoluteEpisode": 19
+            "title": "Luffy Gets Angry! A Dirty Trick Violates the Sacred Duel!",
+            "absoluteEpisode": 72
           },
           {
             "episode": 12,
-            "title": "Famous Cook! Sanji of the Sea Restaurant!",
-            "absoluteEpisode": 20
+            "title": "Broggy\'s Bitter Tears of Victory! The Conclusion of Elbaf!",
+            "absoluteEpisode": 73
           },
           {
             "episode": 13,
-            "title": "Unwelcome Customer! Sanji\\'s Food and Ghin\\'s Debt!",
-            "absoluteEpisode": 21
+            "title": "The Devilish Candle! Tears of Regret and Tears of Anger!",
+            "absoluteEpisode": 74
           },
           {
             "episode": 14,
-            "title": "The Strongest Pirate Fleet! Commodore Don Krieg!",
-            "absoluteEpisode": 22
+            "title": "A Hex on Luffy! Colors Trap!",
+            "absoluteEpisode": 75
           },
           {
             "episode": 15,
-            "title": "Protect Baratie! The Great Pirate, Red Foot Zeff!",
-            "absoluteEpisode": 23
+            "title": "Time to Fight Back! Usopp’s Quick Thinking and Fire Star!",
+            "absoluteEpisode": 76
           },
           {
             "episode": 16,
-            "title": "Hawk-Eye Mihawk! The Great Swordsman Zoro Falls At Sea!",
-            "absoluteEpisode": 24
-          },
-          {
-            "episode": 17,
-            "title": "The Deadly Foot Technique Bursts Forth! Sanji vs. The Invincible Pearl!",
-            "absoluteEpisode": 25
-          },
-          {
-            "episode": 18,
-            "title": "Zeff and Sanji\\'s Dream! The Illusory All Blue!",
-            "absoluteEpisode": 26
-          },
-          {
-            "episode": 19,
-            "title": "The Coldhearted Devil-man. Gin, the Pirate Fleet Battle Commander",
-            "absoluteEpisode": 27
-          },
-          {
-            "episode": 20,
-            "title": "I Won\\'t Die! Conclusion: Luffy vs. Krieg",
-            "absoluteEpisode": 28
-          },
-          {
-            "episode": 21,
-            "title": "Outcome of a Deadly Battle! The Spear Inside!",
-            "absoluteEpisode": 29
-          },
-          {
-            "episode": 22,
-            "title": "Departure! Sea Chef and Luffy Travel Together!",
-            "absoluteEpisode": 30
-          },
-          {
-            "episode": 23,
-            "title": "The Most Wicked Man of East Blue, Fishman Pirate Arlong",
-            "absoluteEpisode": 31
-          },
-          {
-            "episode": 24,
-            "title": "The Witch of Cocoyashi Village, Arlong\\'s Female Officer",
-            "absoluteEpisode": 32
-          },
-          {
-            "episode": 25,
-            "title": "Usopp Dead?! When is Luffy Going to Make Landfall?!",
-            "absoluteEpisode": 33
-          },
-          {
-            "episode": 26,
-            "title": "Reunited! Usopp Tells Nami\\'s True Story",
-            "absoluteEpisode": 34
-          },
-          {
-            "episode": 27,
-            "title": "The Hidden Past! Female Fighter Bellemere!",
-            "absoluteEpisode": 35
-          },
-          {
-            "episode": 28,
-            "title": "Survive! The Mother Bellemere and Nami\\'s Family!",
-            "absoluteEpisode": 36
-          },
-          {
-            "episode": 29,
-            "title": "Luffy Stands Up! End of a Broken Promise!",
-            "absoluteEpisode": 37
-          },
-          {
-            "episode": 30,
-            "title": "Luffy in Trouble! Fishmen vs. Luffy Pirates!",
-            "absoluteEpisode": 38
-          },
-          {
-            "episode": 31,
-            "title": "Luffy Drowning! Zoro vs. Octopus Hatchan!",
-            "absoluteEpisode": 39
-          },
-          {
-            "episode": 32,
-            "title": "Proud, Tall Warriors! Dramatic Battle of Sanji and Usopp!",
-            "absoluteEpisode": 40
-          },
-          {
-            "episode": 33,
-            "title": "Luffy\\'s Best! Nami\\'s Courage and the Straw Hat",
-            "absoluteEpisode": 41
-          },
-          {
-            "episode": 34,
-            "title": "Bursting Out! Fishman Arlong, Fearsome Attack From The Sea!",
-            "absoluteEpisode": 42
-          },
-          {
-            "episode": 35,
-            "title": "End of the Fishman Empire! Nami\\'s My Friend!",
-            "absoluteEpisode": 43
-          },
-          {
-            "episode": 36,
-            "title": "Setting Out with a Smile! Farewell, Hometown Cocoyashi Village!",
-            "absoluteEpisode": 44
-          },
-          {
-            "episode": 37,
-            "title": "Bounty! Straw Hat Luffy Becomes World Famous!",
-            "absoluteEpisode": 45
-          },
-          {
-            "episode": 38,
-            "title": "Following the Straw Hat! Little Buggy\\'s Big Adventure",
-            "absoluteEpisode": 46
-          },
-          {
-            "episode": 39,
-            "title": "You\\'ve Been Waiting For It! The Return of Captain Buggy!",
-            "absoluteEpisode": 47
-          },
-          {
-            "episode": 40,
-            "title": "The Town of the Beginning and the End - Arrival at Loguetown",
-            "absoluteEpisode": 48
-          },
-          {
-            "episode": 41,
-            "title": "Sandai Kitetsu and Yubashiri! Zoro\\'s New Swords, and the Female Sergeant Major",
-            "absoluteEpisode": 49
-          },
-          {
-            "episode": 42,
-            "title": "Usopp vs. Daddy The Father! Showdown at High Noon!",
-            "absoluteEpisode": 50
-          },
-          {
-            "episode": 43,
-            "title": "A Burning Culinary Battle? Sanji vs. The Gorgeous Chef",
-            "absoluteEpisode": 51
-          },
-          {
-            "episode": 44,
-            "title": "Buggy\\'s Revenge! The Man who Smiles at the Execution Platform!",
-            "absoluteEpisode": 52
+            "title": "Farewell Giant Island! Head for Alabasta!",
+            "absoluteEpisode": 77
           }
         ]
       },
@@ -310,213 +434,73 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "The Legend has Begun! Head to the Grand Line",
-            "absoluteEpisode": 53
-          },
-          {
-            "episode": 2,
-            "title": "Foreboding of a New Adventure! The Puzzling Girl, Apis",
-            "absoluteEpisode": 54
-          },
-          {
-            "episode": 3,
-            "title": "The Holy Beast! Apis\\' Secret and the Legendary Island",
-            "absoluteEpisode": 55
-          },
-          {
-            "episode": 4,
-            "title": "Erik\\'s Raid! Great Escape from Gunkan Island!",
-            "absoluteEpisode": 56
-          },
-          {
-            "episode": 5,
-            "title": "Lone Island in a Distant Sea! The Legendary Lost Island",
-            "absoluteEpisode": 57
-          },
-          {
-            "episode": 6,
-            "title": "Duel in the Ruins! Strained Zoro vs. Erik",
-            "absoluteEpisode": 58
-          },
-          {
-            "episode": 7,
-            "title": "Luffy, Completely Surrounded! Admiral Nelson\\'s Secret Plan",
-            "absoluteEpisode": 59
-          },
-          {
-            "episode": 8,
-            "title": "Those who Soar in the Open Skies! Revival of the 1000 Year Legend",
-            "absoluteEpisode": 60
-          },
-          {
-            "episode": 9,
-            "title": "Angry Finale! Cross the Red Line!",
-            "absoluteEpisode": 61
-          },
-          {
-            "episode": 10,
-            "title": "The First Obstacle? Giant Whale Laboon Appears",
-            "absoluteEpisode": 62
-          },
-          {
-            "episode": 11,
-            "title": "A Man\\'s Promise, Luffy and the Whale Vow to Meet Again",
-            "absoluteEpisode": 63
-          },
-          {
-            "episode": 12,
-            "title": "A Pirate-Loving Town? Arrival at Whiskey Peak",
-            "absoluteEpisode": 64
-          },
-          {
-            "episode": 13,
-            "title": "Exploding Santouryu! Zoro vs. Baroque Works!",
-            "absoluteEpisode": 65
-          },
-          {
-            "episode": 14,
-            "title": "A Serious Fight! Luffy vs. Zoro: The Unexpected Duel!",
-            "absoluteEpisode": 66
-          },
-          {
-            "episode": 15,
-            "title": "Deliver Princess Vivi! Luffy Pirates Depart",
-            "absoluteEpisode": 67
-          },
-          {
-            "episode": 16,
-            "title": "Try Hard, Koby! Diary of Koby-Meppo\\'s Marine Struggles",
-            "absoluteEpisode": 68
-          },
-          {
-            "episode": 17,
-            "title": "Koby-Meppo\\'s Determination! Vice Admiral Garp\\'s Fatherly Pride",
-            "absoluteEpisode": 69
-          },
-          {
-            "episode": 18,
-            "title": "Prehistoric Island! The Shadow Lurking in Little Garden!",
-            "absoluteEpisode": 70
-          },
-          {
-            "episode": 19,
-            "title": "Humongous Battle! The Giants Dorry and Brogy!",
-            "absoluteEpisode": 71
-          },
-          {
-            "episode": 20,
-            "title": "Luffy\\'s Anger! A Dirty Trick in a Sacred Battle",
-            "absoluteEpisode": 72
-          },
-          {
-            "episode": 21,
-            "title": "Brogy Wails in Victory! Elbaf\\'s Judgement",
-            "absoluteEpisode": 73
-          },
-          {
-            "episode": 22,
-            "title": "The Devil\\'s Candle! Tears of Regret and Tears of Anger",
-            "absoluteEpisode": 74
-          },
-          {
-            "episode": 23,
-            "title": "Luffy Attacked by Magic! Colors Trap",
-            "absoluteEpisode": 75
-          },
-          {
-            "episode": 24,
-            "title": "Critical Counterattack! Usopp\\'s Quick Wit and Kaenboshi!",
-            "absoluteEpisode": 76
-          },
-          {
-            "episode": 25,
-            "title": "Farewell to the Giants\\' Island! On to Alabasta",
-            "absoluteEpisode": 77
-          },
-          {
-            "episode": 26,
-            "title": "Nami Is Sick? Beyond the Snow that Falls on the Ocean!",
+            "title": "Nami\'s Sick? Beyond the Snow Falling on the Sea!",
             "absoluteEpisode": 78
           },
           {
-            "episode": 27,
-            "title": "Ambush! The Bliking and Wapol the Tin-man",
+            "episode": 2,
+            "title": "A Raid! The Tin Tyrant and Tin Plate Wapol!",
             "absoluteEpisode": 79
           },
           {
-            "episode": 28,
-            "title": "A Doctorless Island? Adventure in the Country Without a Name!",
+            "episode": 3,
+            "title": "An Island without Doctors? Adventure in a Nameless Land!",
             "absoluteEpisode": 80
           },
           {
-            "episode": 29,
-            "title": "Ya Happy? The Doctor who is Called a Witch!",
+            "episode": 4,
+            "title": "Are You Happy? The Doctor Called Witch!",
             "absoluteEpisode": 81
           },
           {
-            "episode": 30,
-            "title": "Dalton\\'s Resolve! Wapol\\'s Forces Land",
+            "episode": 5,
+            "title": "Dalton\'s Resolve! Wapol\'s Corps Lands on the Island!",
             "absoluteEpisode": 82
           },
           {
-            "episode": 31,
-            "title": "Island that Lives in Snow! Ascend The Drum Rockies!",
+            "episode": 6,
+            "title": "The Island Where Snow Lives! Climb the Drum Rockies!",
             "absoluteEpisode": 83
           },
           {
-            "episode": 32,
-            "title": "The Blue-Nosed Reindeer! Chopper\\'s Secret",
+            "episode": 7,
+            "title": "Blue-nosed Reindeer! Chopper\'s Secret!",
             "absoluteEpisode": 84
           },
           {
-            "episode": 33,
-            "title": "Dream of the Outcasts! The Quack Doctor Hiruluk",
+            "episode": 8,
+            "title": "An Outcast\'s Dream! Hiriluk the Quack!",
             "absoluteEpisode": 85
           },
           {
-            "episode": 34,
-            "title": "Hiruluk\\'s Cherry Blossoms and Inherited Will",
+            "episode": 9,
+            "title": "Hiriluk\'s Cherry Blossoms and the Will that Gets Carried On!",
             "absoluteEpisode": 86
           },
           {
-            "episode": 35,
-            "title": "VS. Wapol\\'s Army Corps! The Abilities of the Baku Baku Fruit!",
+            "episode": 10,
+            "title": "Fight Wapol\'s Crew! The Power of the Munch Munch Fruit!",
             "absoluteEpisode": 87
           },
           {
-            "episode": 36,
-            "title": "Devil\\'s Fruit of the Zoan Family! Chopper\\'s Seven-Level Transformation",
+            "episode": 11,
+            "title": "Zoan-type Devil Fruit! Chopper\'s Seven-form Transformation!",
             "absoluteEpisode": 88
           },
           {
-            "episode": 37,
-            "title": "When the Kingdom\\'s Rule is Over! The Flag of Conviction Lasts Forever",
+            "episode": 12,
+            "title": "When the Kingdom\'s Rule Ends! The Flag of Faith Flies Forever!",
             "absoluteEpisode": 89
           },
           {
-            "episode": 38,
-            "title": "Hiruluk\\'s Cherry Blossoms! Miracle of the Drum Rockies",
+            "episode": 13,
+            "title": "Hiriluk\'s Cherry Blossoms! Miracle in the Drum Rockies!",
             "absoluteEpisode": 90
           },
           {
-            "episode": 39,
-            "title": "Farewell, Drum Island! I\\'m Going Out to Sea!",
+            "episode": 14,
+            "title": "Goodbye Drum Island! I\'m Going Out to Sea!",
             "absoluteEpisode": 91
-          },
-          {
-            "episode": 40,
-            "title": "The Hero of Alabasta and the Ballerina on Deck",
-            "absoluteEpisode": 92
-          },
-          {
-            "episode": 41,
-            "title": "Coming to the Desert Kingdom! The Rain-Calling Powder and the Rebel Army",
-            "absoluteEpisode": 93
-          },
-          {
-            "episode": 42,
-            "title": "Reunion of the Powerful! His Name Is Fire Fist Ace",
-            "absoluteEpisode": 94
           }
         ]
       },
@@ -525,223 +509,198 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Ace and Luffy! Warm Memories and Brotherly Bonds",
-            "absoluteEpisode": 95
+            "title": "Alabasta\'s Hero and a Ballerina on the Ship!",
+            "absoluteEpisode": 92
           },
           {
             "episode": 2,
-            "title": "The Green City, Erumalu and the Kung Fu Dugongs",
-            "absoluteEpisode": 96
+            "title": "Off to the Desert Kingdom! The Rain-Summing Powder and the Rebel Army!",
+            "absoluteEpisode": 93
           },
           {
             "episode": 3,
-            "title": "Adventure in the Country of Sand! The Demons that Live in the Scorching Earth",
-            "absoluteEpisode": 97
+            "title": "The Heroes Reunion! His Name is Fire Fist Ace!",
+            "absoluteEpisode": 94
           },
           {
             "episode": 4,
-            "title": "Here Come the Desert Pirates! The Men who Live Free",
-            "absoluteEpisode": 98
+            "title": "Ace and Luffy! Hot Emotions and Brotherly Bonds!",
+            "absoluteEpisode": 95
           },
           {
             "episode": 5,
-            "title": "Spirit of the Fakes! Heart of the Rebel Army, Kamyu!",
-            "absoluteEpisode": 99
+            "title": "Erumalu, The City of Green and the Kung Fu Dugongs!!",
+            "absoluteEpisode": 96
           },
           {
             "episode": 6,
-            "title": "Rebel Warrior Kohza! The Dream Sworn to Vivi!",
-            "absoluteEpisode": 100
+            "title": "Adventure in the Country of Sand! The Monsters that Live in the Scorching Land!",
+            "absoluteEpisode": 97
           },
           {
             "episode": 7,
+            "title": "Enter the Desert Pirates! The Men Who Live Freely!",
+            "absoluteEpisode": 98
+          },
+          {
+            "episode": 8,
+            "title": "False Fortitude! Camu, Rebel Soldier at Heart!",
+            "absoluteEpisode": 99
+          },
+          {
+            "episode": 9,
+            "title": "Rebel Warrior Koza! The Dream Vowed to Vivi!",
+            "absoluteEpisode": 100
+          },
+          {
+            "episode": 10,
             "title": "Showdown in a Heat Haze! Ace vs. the Gallant Scorpion!",
             "absoluteEpisode": 101
           },
           {
-            "episode": 8,
-            "title": "Ruins and Lost Ones! Vivi, Comrades, and the Shape of a Country",
+            "episode": 11,
+            "title": "Ruins and Lost Ways! Vivi, Her Friends, and the Country\'s Form!",
             "absoluteEpisode": 102
           },
           {
-            "episode": 9,
-            "title": "At Spiders Cafe: The Enemy Ringleaders Meet at 8 o\\'clock",
+            "episode": 12,
+            "title": "Spiders Café at 8 o\'Clock! The Enemy Leaders Gather!",
             "absoluteEpisode": 103
           },
           {
-            "episode": 10,
-            "title": "Luffy vs. Vivi! A Tearful Vow for Comrades",
+            "episode": 13,
+            "title": "Luffy vs. Vivi! The Tearful Vow to Put Friends on the Line!",
             "absoluteEpisode": 104
           },
           {
-            "episode": 11,
-            "title": "The Alabasta War Front! City of Dreams, Rainbase",
+            "episode": 14,
+            "title": "The Battlefront of Alabasta! Rainbase, the City of Dreams!",
             "absoluteEpisode": 105
           },
           {
-            "episode": 12,
-            "title": "Trap in a Desperate Situation! Breaking Into Rain Dinners",
+            "episode": 15,
+            "title": "The Trap of Certain Defeat! Storming Raindinners!",
             "absoluteEpisode": 106
           },
           {
-            "episode": 13,
-            "title": "Operation Utopia Commences! The Wave of Rebellion Begins to Move",
+            "episode": 16,
+            "title": "Operation Utopia Commences! The Swell of Rebellion Stirs!",
             "absoluteEpisode": 107
           },
           {
-            "episode": 14,
-            "title": "The Fearsome Bananawani and Mr. Prince",
+            "episode": 17,
+            "title": "The Terrifying Banana Gators and Mr. Prince!",
             "absoluteEpisode": 108
           },
           {
-            "episode": 15,
-            "title": "The Key to Turning the Tide and a Great Escape! Doru Doru Ball!",
+            "episode": 18,
+            "title": "The Key to a Great Comeback Escape! The Wax-Wax Ball!",
             "absoluteEpisode": 109
           },
           {
-            "episode": 16,
-            "title": "Merciless Fight to the Death! Luffy vs. Crocodile",
+            "episode": 19,
+            "title": "Merciless Mortal Combat! Luffy vs. Crocodile!",
             "absoluteEpisode": 110
           },
           {
-            "episode": 17,
-            "title": "The Miracle Sprint! Alabasta the Animal Land",
+            "episode": 20,
+            "title": "Dash For a Miracle! Alabasta Animal Land!",
             "absoluteEpisode": 111
           },
           {
-            "episode": 18,
-            "title": "Rebel Army vs. Royal Army! The Battle will be in Alubarna!",
+            "episode": 21,
+            "title": "Rebel Army vs. Royal Army! Showdown at Alubarna!",
             "absoluteEpisode": 112
           },
           {
-            "episode": 19,
+            "episode": 22,
             "title": "Alubarna Grieves! The Fierce Captain Karoo!",
             "absoluteEpisode": 113
           },
           {
-            "episode": 20,
-            "title": "Swear on Your Comrade\\'s Dream! Battle at Molehill 4th Avenue",
+            "episode": 23,
+            "title": "Sworn on a Friend\'s Dream! The Battle of Molehill, Block 4!",
             "absoluteEpisode": 114
           },
           {
-            "episode": 21,
-            "title": "Today\\'s Grand Performance! Mane Mane Montage!",
+            "episode": 24,
+            "title": "Big Opening Day Today! The Copy-Copy Montage!",
             "absoluteEpisode": 115
           },
           {
-            "episode": 22,
-            "title": "Transforming Into Nami! Bon Clay\\'s Hard-Hitting Ballet Kenpo",
+            "episode": 25,
+            "title": "Transformed into Nami! Bon Clay\'s Rapid-Fire Ballet Kenpo!",
             "absoluteEpisode": 116
           },
           {
-            "episode": 23,
-            "title": "Nami\\'s Whirlwind Warning! Clima Tact Explosion",
+            "episode": 26,
+            "title": "Nami\'s Cyclone Advisory! Clima Takt Burst!",
             "absoluteEpisode": 117
           },
           {
-            "episode": 24,
-            "title": "Secret of the Royal Family! The Ancient Weapon, Pluton",
+            "episode": 27,
+            "title": "Secret Passed Down in the Royal Family! The Ancient Weapon Pluton!",
             "absoluteEpisode": 118
           },
           {
-            "episode": 25,
-            "title": "Essence of a Mighty Sword! The Power to Cut Steel and the Breath of All Things",
+            "episode": 28,
+            "title": "Secret of Powerful Swordplay! Ability to Cut Steel and the Rhythm Things Have!",
             "absoluteEpisode": 119
           },
           {
-            "episode": 26,
-            "title": "The Battle is Over! Kohza Flies the White Flag",
+            "episode": 29,
+            "title": "The Battle is Over! Koza Raises the White Flag!",
             "absoluteEpisode": 120
           },
           {
-            "episode": 27,
-            "title": "Vivi\\'s Voice Goes Unheard! A Hero Descends!",
+            "episode": 30,
+            "title": "Where Vivi\'s Voice Gets Heard! The Hero Descends!",
             "absoluteEpisode": 121
           },
           {
-            "episode": 28,
-            "title": "Sand Crocodile and Water Luffy! Death Match: Round 2",
+            "episode": 31,
+            "title": "Sand Croc and Water Luffy! The Second Round of the Duel",
             "absoluteEpisode": 122
           },
           {
-            "episode": 29,
-            "title": "Smells Like Croc! Run to the Tomb of the Royal Family, Luffy!",
+            "episode": 32,
+            "title": "That Looks Croc-ish! Luffy, Run to the Royal Tomb!",
             "absoluteEpisode": 123
           },
           {
-            "episode": 30,
-            "title": "The Nightmare Draws Near! Secret Base of the Sand Sand Clan",
+            "episode": 33,
+            "title": "The Nightmare Draws Near! This is the Sand-Sand Clan\'s Secret Base!",
             "absoluteEpisode": 124
           },
           {
-            "episode": 31,
-            "title": "Magnificent Wings! My Name is Pell, Guardian Spirit of the Kingdom",
+            "episode": 34,
+            "title": "Magnificent Wings! My Name is Pell, Guardian Deity of the Country!",
             "absoluteEpisode": 125
           },
           {
-            "episode": 32,
-            "title": "I Will Surpass You! Rain Falls on Alabasta!",
+            "episode": 35,
+            "title": "I Will Surpass You! Rain Falls in Alabasta!",
             "absoluteEpisode": 126
           },
           {
-            "episode": 33,
-            "title": "A Farewell to Arms! Pirates and a Little Justice",
+            "episode": 36,
+            "title": "A Farewell to Arms! Pirates and Different Ideas of Justice!",
             "absoluteEpisode": 127
           },
           {
-            "episode": 34,
-            "title": "The Pirates\\' Banquet and Operation Escape Alabasta!",
+            "episode": 37,
+            "title": "The Pirates\' Banquet and Operation Escape from Alabasta!",
             "absoluteEpisode": 128
           },
           {
-            "episode": 35,
-            "title": "Everything Began that Day! Vivi Tells of her Adventures!",
+            "episode": 38,
+            "title": "It All Started On That Day! Vivi Tells the Story of Her Adventure!",
             "absoluteEpisode": 129
           },
           {
-            "episode": 36,
-            "title": "Beware her Scent! The Seventh One is Nico Robin!",
-            "absoluteEpisode": 130
-          },
-          {
-            "episode": 37,
-            "title": "The First Patient! Anecdote of the Rumble Ball",
-            "absoluteEpisode": 131
-          },
-          {
-            "episode": 38,
-            "title": "The Navigator\\'s Mutiny! For an Unwavering Dream!",
-            "absoluteEpisode": 132
-          },
-          {
             "episode": 39,
-            "title": "Inherited Recipe! Sanji the Curry Expert",
-            "absoluteEpisode": 133
-          },
-          {
-            "episode": 40,
-            "title": "I\\'ll Make it Bloom! Manly Usopp\\'s Eight-Shaku Ball",
-            "absoluteEpisode": 134
-          },
-          {
-            "episode": 41,
-            "title": "Infamous Pirate Hunter! The Wandering Swordsman, Zoro",
-            "absoluteEpisode": 135
-          },
-          {
-            "episode": 42,
-            "title": "Zenny Lives on Goat Island and There\\'s a Pirate Ship on his Mountain!",
-            "absoluteEpisode": 136
-          },
-          {
-            "episode": 43,
-            "title": "How\\'s That for Profit? Money Lender Zenny\\'s Ambition!",
-            "absoluteEpisode": 137
-          },
-          {
-            "episode": 44,
-            "title": "Where the Island\\'s Treasure Lies! Zenny Pirates Full Charge!",
-            "absoluteEpisode": 138
+            "title": "Scent of Danger! The Seventh Member is Nico Robin!",
+            "absoluteEpisode": 130
           }
         ]
       },
@@ -750,188 +709,68 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Legend of the Rainbow Mist! Ruluka Island and the Old Man Henzo",
-            "absoluteEpisode": 139
+            "title": "The First Patient! The Untold Story of the Rumble Ball!",
+            "absoluteEpisode": 131
           },
           {
             "episode": 2,
-            "title": "Inhabitants of Neverland! The Pumpkin Pirates!",
-            "absoluteEpisode": 140
+            "title": "Uprising of the Navigator! For the Unyielding Dream!",
+            "absoluteEpisode": 132
           },
           {
             "episode": 3,
-            "title": "A Longing for Home! The Inescapable Pirate Graveyard!",
-            "absoluteEpisode": 141
+            "title": "A Recipe Handed Down! Sanji, the Iron Man of Curry!",
+            "absoluteEpisode": 133
           },
           {
             "episode": 4,
-            "title": "Frantic Struggle! Whetton\\'s Plans and the Rainbow Tower",
-            "absoluteEpisode": 142
+            "title": "I Will Make it Bloom! Usopp, the Man, and the Eight-Foot Shell!",
+            "absoluteEpisode": 134
           },
           {
             "episode": 5,
-            "title": "And Then the Legend Begins! To the End of the Rainbow",
-            "absoluteEpisode": 143
+            "title": "The Fabled Pirate Hunter! Zoro, the Wandering Swordsman!",
+            "absoluteEpisode": 135
           },
           {
             "episode": 6,
-            "title": "The Log is Taken! Salvage King, Masira!",
-            "absoluteEpisode": 144
+            "title": "Zenny of the Island of Goats and the Pirate Ship in the Mountains!",
+            "absoluteEpisode": 136
           },
           {
             "episode": 7,
-            "title": "Monsters Appear! Don\\'t Touch the Whitebeard Pirates",
-            "absoluteEpisode": 145
+            "title": "How\'s Tricks? The Designs of Zenny the Moneylender!",
+            "absoluteEpisode": 137
           },
           {
             "episode": 8,
-            "title": "Stop Dreaming! The City of Ridicule, Mock Town!",
-            "absoluteEpisode": 146
+            "title": "Whereabouts of the Island Treasure! Attack of the Zenny Pirates!",
+            "absoluteEpisode": 138
           },
           {
             "episode": 9,
-            "title": "A Pirate\\'s Height! The Man who Talks of Dreams and the King of Underwater Exploration",
-            "absoluteEpisode": 147
+            "title": "Legend of the Rainbow Mist! Old Man Henzo of Luluka Island!",
+            "absoluteEpisode": 139
           },
           {
             "episode": 10,
-            "title": "The Legendary Family! \\'Liar Norland\\'",
-            "absoluteEpisode": 148
+            "title": "Residents of the Land of Eternity! The Pumpkin Pirates!",
+            "absoluteEpisode": 140
           },
           {
             "episode": 11,
-            "title": "Hard Turn to the Clouds! Find the Southbird!",
-            "absoluteEpisode": 149
+            "title": "Thoughts of Home! The Pirate Graveyard of No Escape!",
+            "absoluteEpisode": 141
           },
           {
             "episode": 12,
-            "title": "Dreams Don\\'t Come True!? Bellamy vs. The Saruyama Alliance",
-            "absoluteEpisode": 150
+            "title": "An Inevitable Melee! Wetton\'s Schemes and the Rainbow Tower!",
+            "absoluteEpisode": 142
           },
           {
             "episode": 13,
-            "title": "The 100 Million Man! The World\\'s Greatest Authority and the Pirate Blackbeard",
-            "absoluteEpisode": 151
-          },
-          {
-            "episode": 14,
-            "title": "Sail into the Sky! Ride the Knock-Up Stream",
-            "absoluteEpisode": 152
-          },
-          {
-            "episode": 15,
-            "title": "This is the Sea of the Sky! The Knight of the Sky and Heaven\\'s Gate",
-            "absoluteEpisode": 153
-          },
-          {
-            "episode": 16,
-            "title": "Godland Skypiea! The Angels Of the Cloud Beach",
-            "absoluteEpisode": 154
-          },
-          {
-            "episode": 17,
-            "title": "Forbidden Sacred Ground! The Island Where God Resides and Heaven\\'s Judgement!",
-            "absoluteEpisode": 155
-          },
-          {
-            "episode": 18,
-            "title": "Already Criminals?! Skypiea\\'s Upholder of the Law!",
-            "absoluteEpisode": 156
-          },
-          {
-            "episode": 19,
-            "title": "Is Escape Possible?!? God\\'s Challenge is Set in Motion",
-            "absoluteEpisode": 157
-          },
-          {
-            "episode": 20,
-            "title": "Trap on Lovely Street! Almighty God Enel",
-            "absoluteEpisode": 158
-          },
-          {
-            "episode": 21,
-            "title": "Go Forth, Little Crow! To the Sacrificial Altar",
-            "absoluteEpisode": 159
-          },
-          {
-            "episode": 22,
-            "title": "10 Percent Survival Rate! Satori, the Mantra Master!",
-            "absoluteEpisode": 160
-          },
-          {
-            "episode": 23,
-            "title": "Peril of the Ordeal of Balls! Fight to the Death in the Lost Forest",
-            "absoluteEpisode": 161
-          },
-          {
-            "episode": 24,
-            "title": "Chopper\\'s in Danger! Former God vs. Shinto priest Shura",
-            "absoluteEpisode": 162
-          },
-          {
-            "episode": 25,
-            "title": "Ever Mysterious! Ordeal of String and Ordeal of Love!?",
-            "absoluteEpisode": 163
-          },
-          {
-            "episode": 26,
-            "title": "Light the Fire of Shandora! Wyper the Warrior",
-            "absoluteEpisode": 164
-          },
-          {
-            "episode": 27,
-            "title": "Floating Land of Gold, Jaya! To God\\'s Shrine!",
-            "absoluteEpisode": 165
-          },
-          {
-            "episode": 28,
-            "title": "Eve of Gold Festival! Feelings Toward \\'Vearth\\'!",
-            "absoluteEpisode": 166
-          },
-          {
-            "episode": 29,
-            "title": "God Enel Appears! Aubade to the Survivors",
-            "absoluteEpisode": 167
-          },
-          {
-            "episode": 30,
-            "title": "The Python Strikes! The Survival Game Begins",
-            "absoluteEpisode": 168
-          },
-          {
-            "episode": 31,
-            "title": "The Life-Threatening Reject! War Demon Wiper\\'s Resolve",
-            "absoluteEpisode": 169
-          },
-          {
-            "episode": 32,
-            "title": "Fierce Sky Battle! Pirate Zoro vs. Fighter Braham",
-            "absoluteEpisode": 170
-          },
-          {
-            "episode": 33,
-            "title": "The Roaring Burn Bazooka! Luffy vs. War Demon Wyper!",
-            "absoluteEpisode": 171
-          },
-          {
-            "episode": 34,
-            "title": "Ordeal of Swamp! Pirate Chopper vs Gedatsu!!",
-            "absoluteEpisode": 172
-          },
-          {
-            "episode": 35,
-            "title": "The Invincible Ability! Enel\\'s True Nature Revealed",
-            "absoluteEpisode": 173
-          },
-          {
-            "episode": 36,
-            "title": "The Vanished City! The Magnificent Ruins of Shandora!!",
-            "absoluteEpisode": 174
-          },
-          {
-            "episode": 37,
-            "title": "Chance of Survival: 0%!! Pirate Chopper vs. Shinto Priest Ohm",
-            "absoluteEpisode": 175
+            "title": "And so, the Legend Begins! To the Other Side of the Rainbow!",
+            "absoluteEpisode": 143
           }
         ]
       },
@@ -940,198 +779,263 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Climb Giant Jack! Deadly Combat in the Upper Ruins",
-            "absoluteEpisode": 176
+            "title": "The Log is Taken! Salvage King, Masira!",
+            "absoluteEpisode": 144
           },
           {
             "episode": 2,
-            "title": "Ultimate Test of the Ordeal of Iron! The White-Barbed Death Match!!",
-            "absoluteEpisode": 177
+            "title": "Monsters Appear! Don\'t Mess with the Whitebeard Pirates!",
+            "absoluteEpisode": 145
           },
           {
             "episode": 3,
-            "title": "Gushing Blade Attack! Pirate Zoro vs Shinto Priest Ohm!!",
-            "absoluteEpisode": 178
+            "title": "Quit Dreaming! Mock Town, the Town of Ridicule!",
+            "absoluteEpisode": 146
           },
           {
             "episode": 4,
-            "title": "The Upper Ruins Crumble! The Quintet Finale!!",
-            "absoluteEpisode": 179
+            "title": "Distinguished Pirates! A Man Who Talks of Dreams and the King of Undersea Search!",
+            "absoluteEpisode": 147
           },
           {
             "episode": 5,
-            "title": "Battle in the Ancient Ruins! God Enel\\'s Desire!!",
-            "absoluteEpisode": 180
+            "title": "Legendary Family! Noland, the Liar!",
+            "absoluteEpisode": 148
           },
           {
             "episode": 6,
-            "title": "Ambitions of Fairy Vearth - The Ark, Maxim!!",
-            "absoluteEpisode": 181
+            "title": "Steer for the Clouds! Capture the South Bird!",
+            "absoluteEpisode": 149
           },
           {
             "episode": 7,
-            "title": "Finally Clashing! Pirate Luffy vs God Enel!!",
-            "absoluteEpisode": 182
+            "title": "Dreams Don\'t Come True?! Bellamy Versus the Saruyama Alliance!",
+            "absoluteEpisode": 150
           },
           {
             "episode": 8,
-            "title": "Maxim Rises! The Start of Deathpiea!!",
-            "absoluteEpisode": 183
+            "title": "100 Million Man! World\'s Greatest Power and Pirate Black Beard!",
+            "absoluteEpisode": 151
           },
           {
             "episode": 9,
-            "title": "Luffy\\'s Fall! God\\'s Judgement and Nami\\'s Desire!!",
-            "absoluteEpisode": 184
+            "title": "Take to the Sky! Ride the Knockup Stream!",
+            "absoluteEpisode": 152
           },
           {
             "episode": 10,
-            "title": "Two People Awaken! A Rescue in Front of Burning Love!!",
-            "absoluteEpisode": 185
+            "title": "Sail the White Sea! The Sky Knight and the Gate in the Clouds!",
+            "absoluteEpisode": 153
           },
           {
             "episode": 11,
-            "title": "Capriccio to Destruction! The Impending Doom of Sky Island!!",
-            "absoluteEpisode": 186
+            "title": "Godland, Skypiea! Angels on a Beach of Clouds!",
+            "absoluteEpisode": 154
           },
           {
             "episode": 12,
-            "title": "Guidance from the Sound of a Bell! The Great Warrior and Tales of an Explorer",
-            "absoluteEpisode": 187
+            "title": "The Forbidden Sacred Ground! The Island Where God Lives and Heaven\'s Judgement!",
+            "absoluteEpisode": 155
           },
           {
             "episode": 13,
-            "title": "Released from Disgrace! The Tears of the Great Warrior!!",
-            "absoluteEpisode": 188
+            "title": "Already Criminals?! Skypiea\'s Upholder of the Law!",
+            "absoluteEpisode": 156
           },
           {
             "episode": 14,
-            "title": "Eternal Friendship! The Bell of Oath Echoes Throughout the Giant Ocean!!",
-            "absoluteEpisode": 189
+            "title": "Is Escape Possible?!? God\'s Challenge is Set in Motion",
+            "absoluteEpisode": 157
           },
           {
             "episode": 15,
-            "title": "The Destruction of Angel Island! Terror of The Descending Raigou!!",
-            "absoluteEpisode": 190
+            "title": "A Trap on Lovely Street! The Almighty Eneru",
+            "absoluteEpisode": 158
           },
           {
             "episode": 16,
-            "title": "Chop Down Giant Jack! The Last Hope of Escaping",
-            "absoluteEpisode": 191
+            "title": "Onward Little Crow! To the Sacrificial Altar!",
+            "absoluteEpisode": 159
           },
           {
             "episode": 17,
-            "title": "The Miracle in God\\'s Country! A Love Song Heard by Angels",
-            "absoluteEpisode": 192
+            "title": "10% Survival Rate! Satori, the Mantra Master!",
+            "absoluteEpisode": 160
           },
           {
             "episode": 18,
+            "title": "The Ordeal of Spheres! Desperate Struggle in the Lost Forest!",
+            "absoluteEpisode": 161
+          },
+          {
+            "episode": 19,
+            "title": "Chopper in Danger! Former God vs. Priest Shura!",
+            "absoluteEpisode": 162
+          },
+          {
+            "episode": 20,
+            "title": "Profound Mystery! Ordeal of String and Ordeal of Love?!?",
+            "absoluteEpisode": 163
+          },
+          {
+            "episode": 21,
+            "title": "Light the Fire of Shandora! Wyper the Warrior!",
+            "absoluteEpisode": 164
+          },
+          {
+            "episode": 22,
+            "title": "Jaya, City of Gold in the Sky! Head for God\'s Shrine!",
+            "absoluteEpisode": 165
+          },
+          {
+            "episode": 23,
+            "title": "Festival on the Night Before Gold-Hunting! Feelings for \"Vearth!\"",
+            "absoluteEpisode": 166
+          },
+          {
+            "episode": 24,
+            "title": "Enter God Eneru! Farewell to the Survivors!",
+            "absoluteEpisode": 167
+          },
+          {
+            "episode": 25,
+            "title": "A Giant Snake Bares Its Fangs! The Survival Game Begins!",
+            "absoluteEpisode": 168
+          },
+          {
+            "episode": 26,
+            "title": "The Deadly Reject! War Demon Wyper\'s Resolve!",
+            "absoluteEpisode": 169
+          },
+          {
+            "episode": 27,
+            "title": "Fierce Mid-Air Battle! Pirate Zoro vs. Warrior Braham!",
+            "absoluteEpisode": 170
+          },
+          {
+            "episode": 28,
+            "title": "The Roaring Burn Bazooka!! Pirate Luffy vs. War Demon Wyper!",
+            "absoluteEpisode": 171
+          },
+          {
+            "episode": 29,
+            "title": "The Ordeal of Swamp! Chopper vs Priest Gedatsu!",
+            "absoluteEpisode": 172
+          },
+          {
+            "episode": 30,
+            "title": "Unbeatable Powers! Eneru\'s True Form is Revealed!",
+            "absoluteEpisode": 173
+          },
+          {
+            "episode": 31,
+            "title": "A Mystical City! The Grand Ruins of Shandora!",
+            "absoluteEpisode": 174
+          },
+          {
+            "episode": 32,
+            "title": "0% Survival Rate! Chopper vs. Ohm, the Sword Wielding Priest!",
+            "absoluteEpisode": 175
+          },
+          {
+            "episode": 33,
+            "title": "Climb Giant Jack! Deadly Combat in the Upper Ruins!",
+            "absoluteEpisode": 176
+          },
+          {
+            "episode": 34,
+            "title": "The Ordeal of Iron! White Barbed Death Match!",
+            "absoluteEpisode": 177
+          },
+          {
+            "episode": 35,
+            "title": "Bursting Slash! Zoro vs Ohm!",
+            "absoluteEpisode": 178
+          },
+          {
+            "episode": 36,
+            "title": "Collapsing Upper Ruins! The Quintet for the Finale!",
+            "absoluteEpisode": 179
+          },
+          {
+            "episode": 37,
+            "title": "Showdown in the Ancient Ruins! Sky God Eneru\'s Goal!",
+            "absoluteEpisode": 180
+          },
+          {
+            "episode": 38,
+            "title": "Ambition Towards the Endless Vearth! The Ark Maxim!",
+            "absoluteEpisode": 181
+          },
+          {
+            "episode": 39,
+            "title": "They Finally Clash! Pirate Luffy vs God Eneru!",
+            "absoluteEpisode": 182
+          },
+          {
+            "episode": 40,
+            "title": "Maxim Surfaces! Deathpiea is Activated!",
+            "absoluteEpisode": 183
+          },
+          {
+            "episode": 41,
+            "title": "Luffy Falls! Eneru\'s Judgement and Nami\'s Wish!",
+            "absoluteEpisode": 184
+          },
+          {
+            "episode": 42,
+            "title": "The Two Awaken! On the Front Lines of the Burning Love Rescue!",
+            "absoluteEpisode": 185
+          },
+          {
+            "episode": 43,
+            "title": "Capriccio for Despair! The Impending Doom of Sky Island!",
+            "absoluteEpisode": 186
+          },
+          {
+            "episode": 44,
+            "title": "Lead by a Bell\'s Sound! Tale of the Great Warrior and the Explorer!",
+            "absoluteEpisode": 187
+          },
+          {
+            "episode": 45,
+            "title": "Free From the Spell! The Great Warrior Sheads Tears!",
+            "absoluteEpisode": 188
+          },
+          {
+            "episode": 46,
+            "title": "Eternal Friends! The Vowed Bell Echoes Across the Mighty Seas!",
+            "absoluteEpisode": 189
+          },
+          {
+            "episode": 47,
+            "title": "Angel Island, Obliterated! The Horror of The Raigo\'s Advent!!",
+            "absoluteEpisode": 190
+          },
+          {
+            "episode": 48,
+            "title": "Knock Over Giant Jack! Last Hope for Escape!",
+            "absoluteEpisode": 191
+          },
+          {
+            "episode": 49,
+            "title": "Miracle on Skypiea! The Love Song Heard in the Clouds!",
+            "absoluteEpisode": 192
+          },
+          {
+            "episode": 50,
             "title": "The Battle Ends! Proud Fantasia Echoes Far!",
             "absoluteEpisode": 193
           },
           {
-            "episode": 19,
-            "title": "I Have Come Here! The Weaving of the Poneglyphs",
+            "episode": 51,
+            "title": "I Made it here! The Yarn the Poneglyphs Spin!",
             "absoluteEpisode": 194
           },
           {
-            "episode": 20,
-            "title": "Now Heading Towards the Blue Sea! Memories of an Interwoven Finale",
+            "episode": 52,
+            "title": "Off to the Blue Sea!! A Heartfelt Finale!!",
             "absoluteEpisode": 195
-          },
-          {
-            "episode": 21,
-            "title": "Emergency Announcement! An Infamous Pirate Ship has Invaded!",
-            "absoluteEpisode": 196
-          },
-          {
-            "episode": 22,
-            "title": "Sanji the Chef! Demonstrating True Pride at the Marine Mess Hall!",
-            "absoluteEpisode": 197
-          },
-          {
-            "episode": 23,
-            "title": "Zoro\\'s Imprisonment and Chopper\\'s Emergency Operation!",
-            "absoluteEpisode": 198
-          },
-          {
-            "episode": 24,
-            "title": "The Marine Search Party Draws Near! Another of the Crew is Captured!",
-            "absoluteEpisode": 199
-          },
-          {
-            "episode": 25,
-            "title": "Luffy and Sanji\\'s Determination! The Great Escape Plan!",
-            "absoluteEpisode": 200
-          },
-          {
-            "episode": 26,
-            "title": "The Squadron of Burning Souls Attack! Battle on the Bridge!",
-            "absoluteEpisode": 201
-          },
-          {
-            "episode": 27,
-            "title": "Breaking Through Enemy Lines! The Rescue of the Going Merry!",
-            "absoluteEpisode": 202
-          },
-          {
-            "episode": 28,
-            "title": "The Pirate Ship Disappears! Stronghold Battle, Round 2",
-            "absoluteEpisode": 203
-          },
-          {
-            "episode": 29,
-            "title": "Operation Gold Recovery and Operation Waver Retrieval!",
-            "absoluteEpisode": 204
-          },
-          {
-            "episode": 30,
-            "title": "The Pirate Round-Up Plan! Jonathon\\'s Secret Winning Strategy!",
-            "absoluteEpisode": 205
-          },
-          {
-            "episode": 31,
-            "title": "So Long, Marine Base! The Final Battle for Freedom",
-            "absoluteEpisode": 206
-          },
-          {
-            "episode": 32,
-            "title": "Big Adventure in Long Ring Long Land",
-            "absoluteEpisode": 207
-          },
-          {
-            "episode": 33,
-            "title": "The Foxy Pirate Crew and the Davy Back!",
-            "absoluteEpisode": 208
-          },
-          {
-            "episode": 34,
-            "title": "Round 1! One Lap of the Donut Race",
-            "absoluteEpisode": 209
-          },
-          {
-            "episode": 35,
-            "title": "Foxy the Silver Fox! A Violent Interference",
-            "absoluteEpisode": 210
-          },
-          {
-            "episode": 36,
-            "title": "Round 2! Shoot into the Groggy Ring!",
-            "absoluteEpisode": 211
-          },
-          {
-            "episode": 37,
-            "title": "Rapid-Fire Red Cards! Groggy Ring",
-            "absoluteEpisode": 212
-          },
-          {
-            "episode": 38,
-            "title": "Round 3! Round and Round Roller Race!",
-            "absoluteEpisode": 213
-          },
-          {
-            "episode": 39,
-            "title": "Burning Roller Race! Dash into the Final Round!",
-            "absoluteEpisode": 214
           }
         ]
       },
@@ -1140,198 +1044,168 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "The Screaming Speed Serve! Pirate Dodgeball!",
-            "absoluteEpisode": 215
+            "title": "A State of Emergency is Issued! A Notorious Pirate Ship has Infiltrated!",
+            "absoluteEpisode": 196
           },
           {
             "episode": 2,
-            "title": "Final Match on the Edge! Dharma has Fallen!",
-            "absoluteEpisode": 216
+            "title": "Sanji the Cook! Proving His Merit at the Marine Dining Hall!",
+            "absoluteEpisode": 197
           },
           {
             "episode": 3,
-            "title": "Captain Confrontation! The Last Fight: Combat!",
-            "absoluteEpisode": 217
+            "title": "Captured Zoro! Chopper\'s Emergency Operations!",
+            "absoluteEpisode": 198
           },
           {
             "episode": 4,
-            "title": "Full Power Noro Noro Beam vs The Invulnerable Luffy",
-            "absoluteEpisode": 218
+            "title": "The Marines Dragnet Closes In! The Second Member Captured!",
+            "absoluteEpisode": 199
           },
           {
             "episode": 5,
-            "title": "Heroic Fierce Combat! The Fateful Last Battle",
-            "absoluteEpisode": 219
+            "title": "Luffy and Sanji\'s Daring Rescue Mission!",
+            "absoluteEpisode": 200
           },
           {
             "episode": 6,
-            "title": "Lost? Stolen? Who are You?",
-            "absoluteEpisode": 220
+            "title": "Enter the Hot-Blooded Special Forces! Battle on the Bridge!",
+            "absoluteEpisode": 201
           },
           {
             "episode": 7,
-            "title": "The Mysterious Boy with the Whistle and Robin\\'s Guess",
-            "absoluteEpisode": 221
+            "title": "Breaking Through the Seige! The Going Merry is Recovered!",
+            "absoluteEpisode": 202
           },
           {
             "episode": 8,
-            "title": "Get Back the Memories! The Pirates Land",
-            "absoluteEpisode": 222
+            "title": "The Pirate Ship Disappears! Fortress Battle, Round #2!",
+            "absoluteEpisode": 203
           },
           {
             "episode": 9,
-            "title": "Zoro Sharpens His Fangs! A Fight with a Wild Animal",
-            "absoluteEpisode": 223
+            "title": "The Gold and Waver Recovery Operations!",
+            "absoluteEpisode": 204
           },
           {
             "episode": 10,
-            "title": "The Real Memory Thief\\'s Final Counterattack!",
-            "absoluteEpisode": 224
+            "title": "The One Fell Swoop Plan! Jonathan\'s Surefire Secret Tactic!",
+            "absoluteEpisode": 205
           },
           {
             "episode": 11,
-            "title": "The Man of Pride! Foxy the Silver Fox",
-            "absoluteEpisode": 225
+            "title": "Farewell, Marine Fortress! The Last Battle for Escape!",
+            "absoluteEpisode": 206
           },
           {
             "episode": 12,
-            "title": "The Unbeatable Power Draws Near? A Very Dangerous Man!",
-            "absoluteEpisode": 226
+            "title": "Great Adventure at Long Ring Long Land!",
+            "absoluteEpisode": 207
           },
           {
             "episode": 13,
-            "title": "Marine High Admiral Aokiji! The Threat of the Greatest Power",
-            "absoluteEpisode": 227
+            "title": "A Davy Back with the Foxy Pirates!",
+            "absoluteEpisode": 208
           },
           {
             "episode": 14,
-            "title": "Rubber and Ice One-On-One Fight! Luffy vs Aokiji!",
-            "absoluteEpisode": 228
+            "title": "Round 1! One Lap of the Donut Race!",
+            "absoluteEpisode": 209
           },
           {
             "episode": 15,
-            "title": "Running Sea Train! The City of Water, Water 7",
-            "absoluteEpisode": 229
+            "title": "Silver Fox Foxy! The Merciless Interference!",
+            "absoluteEpisode": 210
           },
           {
             "episode": 16,
-            "title": "The Adventure in the City of Water! Aim for the Giant Shipyard",
-            "absoluteEpisode": 230
+            "title": "Round 2! Shoot it into the Groggy Ring!",
+            "absoluteEpisode": 211
           },
           {
             "episode": 17,
-            "title": "The Franky Family and Iceburg!",
-            "absoluteEpisode": 231
+            "title": "A Barrage of Red Cards in Groggy Ring!",
+            "absoluteEpisode": 212
           },
           {
             "episode": 18,
-            "title": "Galley-La Company! The Magnificent Dock #1",
-            "absoluteEpisode": 232
+            "title": "Round 3! The Round-and-Round Roller Race!",
+            "absoluteEpisode": 213
           },
           {
             "episode": 19,
-            "title": "The Pirate Kidnapping Incident and the Pirate Ship Waits for Death!",
-            "absoluteEpisode": 233
+            "title": "A Seriously Heated Race! Into The Final Round!",
+            "absoluteEpisode": 214
           },
           {
             "episode": 20,
-            "title": "Rescuing a Friend! The Raid on the Franky House",
-            "absoluteEpisode": 234
+            "title": "Screaming-Hot Bombardment! Pirate Dodgeball!",
+            "absoluteEpisode": 215
           },
           {
             "episode": 21,
-            "title": "Quarrel in the Moonlight! The Pirate Ship Trembles in Sadness",
-            "absoluteEpisode": 235
+            "title": "Showdown on the Cliff! Red Light, Green Light!",
+            "absoluteEpisode": 216
           },
           {
             "episode": 22,
-            "title": "Luffy vs Usopp! The Spirit of the Clashing Men",
-            "absoluteEpisode": 236
+            "title": "The Captains Square Off! The Final Combat Round!",
+            "absoluteEpisode": 217
           },
           {
             "episode": 23,
-            "title": "The City of Water is Shaking! Iceburg was Targeted!",
-            "absoluteEpisode": 237
+            "title": "Full-Blast Slow-Slow Onslaught Vs. Invulnerable Luffy!",
+            "absoluteEpisode": 218
           },
           {
             "episode": 24,
-            "title": "Rubberman vs Fire-Breathing Cyborg",
-            "absoluteEpisode": 238
+            "title": "Epic, Heated Combat! The Fateful Final Conclusion!",
+            "absoluteEpisode": 219
           },
           {
             "episode": 25,
-            "title": "The Criminals are the Straw Hat Pirates? The Bodyguards of Water 7",
-            "absoluteEpisode": 239
+            "title": "Was It Lost? Stolen? Who Are You?",
+            "absoluteEpisode": 220
           },
           {
             "episode": 26,
-            "title": "An Eternal Farewell? Nico Robin, The Woman Who Bears Darkness",
-            "absoluteEpisode": 240
+            "title": "A Mysterious Boy with a Horn and Robin\'s Deduction!",
+            "absoluteEpisode": 221
           },
           {
             "episode": 27,
-            "title": "Catch Robin! The Determination of the Straw Hat Pirates",
-            "absoluteEpisode": 241
+            "title": "Now, Let\'s Get Back Our Memories! The Pirate Crew Lands on the Island!",
+            "absoluteEpisode": 222
           },
           {
             "episode": 28,
-            "title": "The Signal is the Explosion! CP9 Starts to Move",
-            "absoluteEpisode": 242
+            "title": "Zoro Bares His Fangs! A Savage Animal Stands in the Way!",
+            "absoluteEpisode": 223
           },
           {
             "episode": 29,
-            "title": "CP9 Unmasked! Their Shocking True Faces",
-            "absoluteEpisode": 243
+            "title": "The Last Counterattack by the Memory Thief Who Reveals His True Colors!",
+            "absoluteEpisode": 224
           },
           {
             "episode": 30,
-            "title": "The Secret Bond! Franky and Iceburg",
-            "absoluteEpisode": 244
+            "title": "Proud Man! Silver Fox Foxy!",
+            "absoluteEpisode": 225
           },
           {
             "episode": 31,
-            "title": "Come Back, Robin! The Confrontation with CP9",
-            "absoluteEpisode": 245
+            "title": "The Guy Who\'s The Closest To Invincible? And the Most Dangerous Man!",
+            "absoluteEpisode": 226
           },
           {
             "episode": 32,
-            "title": "Destruction of the Straw Hat Pirates? The Terror of the Model Leopard!",
-            "absoluteEpisode": 246
+            "title": "Marine Headquarters Admiral Aokiji! The Ferocity of an Ultimate Powerhouse!",
+            "absoluteEpisode": 227
           },
           {
             "episode": 33,
-            "title": "The Man who is Loved by his Ship! Usopp\\'s Tears!",
-            "absoluteEpisode": 247
-          },
-          {
-            "episode": 34,
-            "title": "Franky\\'s Past! The Day the Sea Train Ran",
-            "absoluteEpisode": 248
-          },
-          {
-            "episode": 35,
-            "title": "Spandam\\'s Conspiracy! The Day the Sea Train Shook",
-            "absoluteEpisode": 249
-          },
-          {
-            "episode": 36,
-            "title": "The End of the Legendary Man! The Day the Sea Train Cried",
-            "absoluteEpisode": 250
-          },
-          {
-            "episode": 37,
-            "title": "The Truth Behind the Betrayal! Robin\\'s Sorrowful Decision!",
-            "absoluteEpisode": 251
-          },
-          {
-            "episode": 38,
-            "title": "The Steam Whistle Separates the Group! The Sea Train Begins to Run",
-            "absoluteEpisode": 252
-          },
-          {
-            "episode": 39,
-            "title": "Sanji Breaks In! The Sea Train Battle in the Storm!",
-            "absoluteEpisode": 253
+            "title": "Duel Between Rubber and Ice! Luffy vs. Aokiji!",
+            "absoluteEpisode": 228
           }
         ]
       },
@@ -1340,193 +1214,178 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "The Shout of Nami\\'s Soul! The Return of the Straw Hat!",
-            "absoluteEpisode": 254
+            "title": "The Dashing Sea Train and the City of Water: Water Seven!",
+            "absoluteEpisode": 229
           },
           {
             "episode": 2,
-            "title": "Another Sea Train! Rocket Man Sortie",
-            "absoluteEpisode": 255
+            "title": "Adventure in the City On the Water! Head to the Mammoth Shipbuilding Plant!",
+            "absoluteEpisode": 230
           },
           {
             "episode": 3,
-            "title": "Rescue our Friends! The Oath that Links the Enemies",
-            "absoluteEpisode": 256
+            "title": "The Franky Family and Iceberg!",
+            "absoluteEpisode": 231
           },
           {
             "episode": 4,
-            "title": "Smash the Wave! Luffy and Zoro, The Strongest Combo!",
-            "absoluteEpisode": 257
+            "title": "Galley-La Company! A Grand Sight: Dock #1!",
+            "absoluteEpisode": 232
           },
           {
             "episode": 5,
+            "title": "Pirate Abduction Incident! A Pirate Ship That Can Only Await Her End!",
+            "absoluteEpisode": 233
+          },
+          {
+            "episode": 6,
+            "title": "Rescuing Our Friend! Raid on the Franky House!",
+            "absoluteEpisode": 234
+          },
+          {
+            "episode": 7,
+            "title": "Big Fight under the Moon! The Pirate Flag Flutters with Sorrow!",
+            "absoluteEpisode": 235
+          },
+          {
+            "episode": 8,
+            "title": "Luffy vs. Usopp! Collision of Two Men\'s Pride!",
+            "absoluteEpisode": 236
+          },
+          {
+            "episode": 9,
+            "title": "Severe Shock Hits the City of Water! Iceberg Targeted!",
+            "absoluteEpisode": 237
+          },
+          {
+            "episode": 10,
+            "title": "Gum-Gum Human Vs. Fire-Breathing Cyborg!",
+            "absoluteEpisode": 238
+          },
+          {
+            "episode": 11,
+            "title": "The Straw Hat Pirates are the Culprits? The Protectors of the City of Water!",
+            "absoluteEpisode": 239
+          },
+          {
+            "episode": 12,
+            "title": "Eternal Farewell? Nico Robin, the Woman Who Draws Darkness!",
+            "absoluteEpisode": 240
+          },
+          {
+            "episode": 13,
+            "title": "Capture Robin! The Determination of the Straw Hats!",
+            "absoluteEpisode": 241
+          },
+          {
+            "episode": 14,
+            "title": "Cannon Fire Is the Signal! CP9 Goes Into Action!",
+            "absoluteEpisode": 242
+          },
+          {
+            "episode": 15,
+            "title": "CP9 Takes Off Their Masks! Their Shocking True Faces!",
+            "absoluteEpisode": 243
+          },
+          {
+            "episode": 16,
+            "title": "Secret Bond! Iceberg and Franky!",
+            "absoluteEpisode": 244
+          },
+          {
+            "episode": 17,
+            "title": "Come Back, Robin! Showdown with CP9!",
+            "absoluteEpisode": 245
+          },
+          {
+            "episode": 18,
+            "title": "The Straw Hat Pirates Annihilated? The Menace of the Leopard Model!",
+            "absoluteEpisode": 246
+          },
+          {
+            "episode": 19,
+            "title": "The Man Who Is Loved Even by His Ship! Usopp\'s Tears!",
+            "absoluteEpisode": 247
+          },
+          {
+            "episode": 20,
+            "title": "Franky\'s Past! The Day the Sea Train First Ran!",
+            "absoluteEpisode": 248
+          },
+          {
+            "episode": 21,
+            "title": "Spandam\'s Scheme! The Day the Sea Train Shook!",
+            "absoluteEpisode": 249
+          },
+          {
+            "episode": 22,
+            "title": "The End of the Legendary Man! The Day the Sea Train Cried!",
+            "absoluteEpisode": 250
+          },
+          {
+            "episode": 23,
+            "title": "The Truth Behind Her Betrayal! Robin’s Sorrowful Decision!",
+            "absoluteEpisode": 251
+          },
+          {
+            "episode": 24,
+            "title": "The Steam Whistle Forces Friends Apart! The Sea Train Starts to Run!",
+            "absoluteEpisode": 252
+          },
+          {
+            "episode": 25,
+            "title": "Sanji Barges In! Sea Train Battle in the Storm!",
+            "absoluteEpisode": 253
+          },
+          {
+            "episode": 26,
+            "title": "Nami\'s Soul Cries Out! Straw Hat Luffy Makes a Comeback!",
+            "absoluteEpisode": 254
+          },
+          {
+            "episode": 27,
+            "title": "Another Sea Train? Rocketman Charges Forth!",
+            "absoluteEpisode": 255
+          },
+          {
+            "episode": 28,
+            "title": "Rescue Our Friends! A Bond Among Foes Sworn with Fists!",
+            "absoluteEpisode": 256
+          },
+          {
+            "episode": 29,
+            "title": "Smash the Wave! Luffy and Zoro Use the Strongest Combo!",
+            "absoluteEpisode": 257
+          },
+          {
+            "episode": 30,
             "title": "A Mysterious Man Appears?! His Name Is Sogeking!",
             "absoluteEpisode": 258
           },
           {
-            "episode": 6,
-            "title": "Cook Confrontation! Sanji vs Ramen Kenpo",
+            "episode": 31,
+            "title": "Showdown Between Cooks! Sanji vs. Ramen Kenpo",
             "absoluteEpisode": 259
           },
           {
-            "episode": 7,
-            "title": "Duel on the Roof! Franky vs Nero!",
+            "episode": 32,
+            "title": "Rooftop Duel! Franky vs. Nero",
             "absoluteEpisode": 260
           },
           {
-            "episode": 8,
-            "title": "Crash! Demon-Cutting Zoro vs Ship-Cutting T-Bone!",
+            "episode": 33,
+            "title": "Clash! Demon-Slasher Zoro vs. Ship-Slasher T-Bone!",
             "absoluteEpisode": 261
           },
           {
-            "episode": 9,
-            "title": "Robin Struggles! Sogeking\\'s Clever Scheme!!",
+            "episode": 34,
+            "title": "Scramble over Robin! A Cunning Plan by Sogeking!!",
             "absoluteEpisode": 262
           },
           {
-            "episode": 10,
-            "title": "The Judiciary Island! The Full Picture of Enies Lobby!",
-            "absoluteEpisode": 263
-          },
-          {
-            "episode": 11,
-            "title": "Operation Disembarkation Commences! The Straw Hat Crew Rushes In!",
-            "absoluteEpisode": 264
-          },
-          {
-            "episode": 12,
-            "title": "Luffy Charges In! Great Decisive Battle on the Judiciary Island!",
-            "absoluteEpisode": 265
-          },
-          {
-            "episode": 13,
-            "title": "Battle with the Giants! Open the Second Door!",
-            "absoluteEpisode": 266
-          },
-          {
-            "episode": 14,
-            "title": "The Means of Escaping is Opened! Fly through the Sky, Rocketman!",
-            "absoluteEpisode": 267
-          },
-          {
-            "episode": 15,
-            "title": "Catch Up with Luffy! The Straw Hat Pirates\\' All-Out War",
-            "absoluteEpisode": 268
-          },
-          {
-            "episode": 16,
-            "title": "Robin was Betrayed! The Expectations of the World Government!",
-            "absoluteEpisode": 269
-          },
-          {
-            "episode": 17,
-            "title": "Give Robin Back! Luffy vs. Blueno!",
-            "absoluteEpisode": 270
-          },
-          {
-            "episode": 18,
-            "title": "Don\\'t Stop! Raise the Signal Fire of a Counterattack!",
-            "absoluteEpisode": 271
-          },
-          {
-            "episode": 19,
-            "title": "Luffy is in Sight! Gather at the Courthouse Plaza",
-            "absoluteEpisode": 272
-          },
-          {
-            "episode": 20,
-            "title": "All for the Sake of Protecting My Friends! Gear Second in Motion",
-            "absoluteEpisode": 273
-          },
-          {
-            "episode": 21,
-            "title": "Answer Us, Robin! The Outcries of the Straw Hat Crew!!",
-            "absoluteEpisode": 274
-          },
-          {
-            "episode": 22,
-            "title": "Robin\\'s Past! The Girl who was Called a Demon!",
-            "absoluteEpisode": 275
-          },
-          {
-            "episode": 23,
-            "title": "The Fated Parent and Child! The Mother\\'s Name is Olvia!",
-            "absoluteEpisode": 276
-          },
-          {
-            "episode": 24,
-            "title": "Tragedy of Ohara! Fear of Buster Call!",
-            "absoluteEpisode": 277
-          },
-          {
-            "episode": 25,
-            "title": "Say You Want to Live! We are Friends!!",
-            "absoluteEpisode": 278
-          },
-          {
-            "episode": 26,
-            "title": "Jump Into the Falls! Luffy\\'s Feelings!!",
-            "absoluteEpisode": 279
-          },
-          {
-            "episode": 27,
-            "title": "A Man\\'s Way of Life! Zoro\\'s Techniques, Usopp\\'s Dream",
-            "absoluteEpisode": 280
-          },
-          {
-            "episode": 28,
-            "title": "Tears Which Weaved the Bond of Comrades! Nami\\'s World Map",
-            "absoluteEpisode": 281
-          },
-          {
-            "episode": 29,
-            "title": "Separation Refines a Man! Sanji and Chopper",
-            "absoluteEpisode": 282
-          },
-          {
-            "episode": 30,
-            "title": "All for my Comrades\\' Sake! The Darkness Within Robin!",
-            "absoluteEpisode": 283
-          },
-          {
-            "episode": 31,
-            "title": "The Blueprints Aren\\'t Passed! Franky\\'s Decision",
-            "absoluteEpisode": 284
-          },
-          {
-            "episode": 32,
-            "title": "Retrieve the 5 Keys! The Straw Hat Crew vs CP9",
-            "absoluteEpisode": 285
-          },
-          {
-            "episode": 33,
-            "title": "Power of the Devil Fruit! Kaku and Jyabura Transform",
-            "absoluteEpisode": 286
-          },
-          {
-            "episode": 34,
-            "title": "Even if I Die, I Won\\'t Kick You! Sanji\\'s Manly Chivalry",
-            "absoluteEpisode": 287
-          },
-          {
             "episode": 35,
-            "title": "Fukurou\\'s Miscalculation - My Cola is the Water of Life!",
-            "absoluteEpisode": 288
-          },
-          {
-            "episode": 36,
-            "title": "Zoro\\'s New Technique Explodes! The Katana\\'s Name is Sogeking?",
-            "absoluteEpisode": 289
-          },
-          {
-            "episode": 37,
-            "title": "Uncontrollable! Chopper\\'s Forbidden Rumble",
-            "absoluteEpisode": 290
-          },
-          {
-            "episode": 38,
-            "title": "Boss Luffy Returns! A Dream or Reality Lottery Trouble",
-            "absoluteEpisode": 291
+            "title": "The Judicial Island! Full View of Enies Lobby!",
+            "absoluteEpisode": 263
           }
         ]
       },
@@ -1535,227 +1394,367 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "The Great Mochimaki Race to the Castle! Conspiracy of the Red Nose",
-            "absoluteEpisode": 292
+            "title": "Landing Operations Start! Charge in, Straw Hats!",
+            "absoluteEpisode": 264
           },
           {
             "episode": 2,
-            "title": "Bubble User Kalifa! Nami Draws Near to the Soap\\'s Trap",
-            "absoluteEpisode": 293
+            "title": "Luffy Cuts Through! Big Showdown on the Judicial Island!",
+            "absoluteEpisode": 265
           },
           {
             "episode": 3,
-            "title": "The Resounding Bad News! The Buster Call is Invoked",
-            "absoluteEpisode": 294
+            "title": "Battle Against Giants! Open the Second Gate!",
+            "absoluteEpisode": 266
           },
           {
             "episode": 4,
-            "title": "5 Namis? Counterattack with the Mirage!",
-            "absoluteEpisode": 295
+            "title": "Find a Way Out! Rocketman Takes Flight!",
+            "absoluteEpisode": 267
           },
           {
             "episode": 5,
-            "title": "Nami\\'s Determination! Shoot the Rampaging Chopper!",
-            "absoluteEpisode": 296
+            "title": "Catch Up with Luffy! The Straw Hats\' All-Out Battle",
+            "absoluteEpisode": 268
           },
           {
             "episode": 6,
-            "title": "Hunter Sanji Appears? Elegy to the Lying Wolf",
-            "absoluteEpisode": 297
+            "title": "Robin Betrayed! The Motive of the World Government!",
+            "absoluteEpisode": 269
           },
           {
             "episode": 7,
-            "title": "Kick! Full Course of Sanji\\'s Footwork",
-            "absoluteEpisode": 298
+            "title": "Give Robin Back! Luffy vs. Blueno!",
+            "absoluteEpisode": 270
           },
           {
             "episode": 8,
-            "title": "The Drawn Sword\\'s Fierce Attack! Zoro vs. Kaku Powerful Slash Showdown",
-            "absoluteEpisode": 299
+            "title": "Don’t Stop! Hoist the Counterattack Signal!",
+            "absoluteEpisode": 271
           },
           {
             "episode": 9,
-            "title": "Zoro the Fierce God! The Incarnation of Asura Revealed by His Soul",
-            "absoluteEpisode": 300
+            "title": "Almost to Luffy! Gather at the Courthouse Plaza!",
+            "absoluteEpisode": 272
           },
           {
             "episode": 10,
-            "title": "Spandam\\'s Shock! A Hero Stands on the Tower of Justice",
-            "absoluteEpisode": 301
+            "title": "Everything Is to Protect My Friends! Second Gear Activated!",
+            "absoluteEpisode": 273
           },
           {
             "episode": 11,
-            "title": "Robin\\'s Liberation! Luffy vs. Lucci: Peak of the Decisive Battle",
-            "absoluteEpisode": 302
+            "title": "Give Us Your Answer, Robin! The Straw Hats\' Outcry!",
+            "absoluteEpisode": 274
           },
           {
             "episode": 12,
-            "title": "The Criminal is Boss Luffy? Chase the Vanished Great Sakura Tree",
-            "absoluteEpisode": 303
+            "title": "Robin\'s Past! The Girl was Called a Devil!",
+            "absoluteEpisode": 275
           },
           {
             "episode": 13,
-            "title": "If I Can\\'t Win, I Can\\'t Protect Anyone! Gear Third Activates",
-            "absoluteEpisode": 304
+            "title": "Fated Mother and Daughter! The Mother\'s Name is Olvia!",
+            "absoluteEpisode": 276
           },
           {
             "episode": 14,
+            "title": "The Tragedy of Ohara! The Terror of the Buster Call!",
+            "absoluteEpisode": 277
+          },
+          {
+            "episode": 15,
+            "title": "Say You Want to Live! We Are Your Friends!!",
+            "absoluteEpisode": 278
+          },
+          {
+            "episode": 16,
+            "title": "Jump Towards the Falls! Luffy’s Feelings!",
+            "absoluteEpisode": 279
+          },
+          {
+            "episode": 17,
+            "title": "The Ways of Men! Zoro\'s Techniques, Usopp\'s Dream!",
+            "absoluteEpisode": 280
+          },
+          {
+            "episode": 18,
+            "title": "A Bond of Friendship Woven by Tears! Nami\'s World Map!",
+            "absoluteEpisode": 281
+          },
+          {
+            "episode": 19,
+            "title": "Parting Builds a Man\'s Character! Sanji and Chopper!",
+            "absoluteEpisode": 282
+          },
+          {
+            "episode": 20,
+            "title": "Everything Is for Her Friends! Robin in the Darkness!",
+            "absoluteEpisode": 283
+          },
+          {
+            "episode": 21,
+            "title": "I\'m Not Gonna Hand Over the Blueprints! Franky\'s Decision!",
+            "absoluteEpisode": 284
+          },
+          {
+            "episode": 22,
+            "title": "Retrieve the 5 Keys! The Straw Hat Crew VS CP9",
+            "absoluteEpisode": 285
+          },
+          {
+            "episode": 23,
+            "title": "Power of the Devil Fruit! Kaku and Jabura Transform",
+            "absoluteEpisode": 286
+          },
+          {
+            "episode": 24,
+            "title": "I Won\'t Kick Even If It Costs Me My Life! Sanji\'s Chivalry!",
+            "absoluteEpisode": 287
+          },
+          {
+            "episode": 25,
+            "title": "Fukurou\'s Miscalculation! My Cola is the Water of Life!",
+            "absoluteEpisode": 288
+          },
+          {
+            "episode": 26,
+            "title": "Zoro Busts Out a New Technique! The Sword\'s Name is Sniperking?",
+            "absoluteEpisode": 289
+          },
+          {
+            "episode": 27,
+            "title": "Uncontrollable! Chopper\'s Forbidden Rumble!",
+            "absoluteEpisode": 290
+          },
+          {
+            "episode": 28,
+            "title": "Boss Luffy Returns! Is It a Dream or Reality? Lottery Ruckus!",
+            "absoluteEpisode": 291
+          },
+          {
+            "episode": 29,
+            "title": "A Big Rice Cake Tossing Race at the Castle! Red Nose\'s Plot!",
+            "absoluteEpisode": 292
+          },
+          {
+            "episode": 30,
+            "title": "Bubble Master Kalifa! The Soap Trap Closes in on Nami!",
+            "absoluteEpisode": 293
+          },
+          {
+            "episode": 31,
+            "title": "Resounding Bad News! The Buster Call Invoked!",
+            "absoluteEpisode": 294
+          },
+          {
+            "episode": 32,
+            "title": "Five Namis? Nami Strikes Back With Mirages",
+            "absoluteEpisode": 295
+          },
+          {
+            "episode": 33,
+            "title": "Nami\'s Decision! Fire at the Out-Of-Control Chopper!",
+            "absoluteEpisode": 296
+          },
+          {
+            "episode": 34,
+            "title": "Hunter Sanji Makes An Entrence? Elegy for a Lying Wolf!",
+            "absoluteEpisode": 297
+          },
+          {
+            "episode": 35,
+            "title": "Fiery Kicks! Sanji\'s Full Course of Foot Techniques!",
+            "absoluteEpisode": 298
+          },
+          {
+            "episode": 36,
+            "title": "Fierce Sword Attacks! Zoro vs. Kaku, Powerful Sword Fighting Showdown!",
+            "absoluteEpisode": 299
+          },
+          {
+            "episode": 37,
+            "title": "Demon God Zoro! An Incarnation Of Asura Born From Fighting Spirit!",
+            "absoluteEpisode": 300
+          },
+          {
+            "episode": 38,
+            "title": "Spandam Frightened! The Hero on the Tower of Law!",
+            "absoluteEpisode": 301
+          },
+          {
+            "episode": 39,
+            "title": "Robin Freed! Luffy vs. Lucci, Showdown Between Leaders!",
+            "absoluteEpisode": 302
+          },
+          {
+            "episode": 40,
+            "title": "Boss Luffy is the Culprit? Track Down the Missing Great Cherry Tree!",
+            "absoluteEpisode": 303
+          },
+          {
+            "episode": 41,
+            "title": "I Can\'t Protect Anyone Unless I Win! Third Gear Activated",
+            "absoluteEpisode": 304
+          },
+          {
+            "episode": 42,
             "title": "The Terrifying Past! Dark Justice and Rob Lucci",
             "absoluteEpisode": 305
           },
           {
-            "episode": 15,
-            "title": "A Phantom Mermaid is Here? Within Fading Consciousness",
+            "episode": 43,
+            "title": "A Mysterious Mermaid Appears? As Consciousness Fades Away...",
             "absoluteEpisode": 306
           },
           {
-            "episode": 16,
-            "title": "The Island Sinking in Gunfire! Franky\\'s Outcry of Regret",
+            "episode": 44,
+            "title": "Cannon Fire Sinks the Island! Franky\'s Lamentation!",
             "absoluteEpisode": 307
           },
           {
-            "episode": 17,
-            "title": "Wait for Luffy! Fight to the Death on the Bridge of Hesitation!",
+            "episode": 45,
+            "title": "Wait for Luffy! Mortal Combat on the Bridge of Hesitation!",
             "absoluteEpisode": 308
           },
           {
-            "episode": 18,
-            "title": "Feelings Put Into Fists! Luffy\\'s Full-Power Gatling",
+            "episode": 46,
+            "title": "Fists Full of Emotion! Luffy Unleashes Gatling with All His Might!",
             "absoluteEpisode": 309
           },
           {
-            "episode": 19,
-            "title": "A Friend Approaches from the Sea! The Straw Hat Crew\\'s Strongest Bonds",
+            "episode": 47,
+            "title": "From the Sea, a Friend Arrives! The Straw Hats Share the Strongest Bond!",
             "absoluteEpisode": 310
           },
           {
-            "episode": 20,
-            "title": "The Crew\\'s Great Escape! The Victor\\'s Path is for the Pirates",
+            "episode": 48,
+            "title": "Everyone Makes a Great Escape! The Road to Victory is for the Pirates!",
             "absoluteEpisode": 311
           },
           {
-            "episode": 21,
-            "title": "Thank You Merry! The Sea of Separation in the Snow",
+            "episode": 49,
+            "title": "Thank You, Merry! Snow Falls Over the Parting Sea!",
             "absoluteEpisode": 312
           },
           {
-            "episode": 22,
-            "title": "The Disturbance of Peace! The Vice-Admiral with the Fist of Love",
+            "episode": 50,
+            "title": "Peace Interrupted! A Navy Vice Admiral with a Fist of Love!",
             "absoluteEpisode": 313
           },
           {
-            "episode": 23,
-            "title": "The Strongest Family Line? Luffy\\'s Father Revealed!",
+            "episode": 51,
+            "title": "The Strongest Family? Luffy\'s Father Revealed!",
             "absoluteEpisode": 314
           },
           {
-            "episode": 24,
-            "title": "Its Name is The New World! The Whereabouts of the Great Grand Line!",
+            "episode": 52,
+            "title": "Its Name Is The New World! The Fate of the Grand Line!",
             "absoluteEpisode": 315
           },
           {
-            "episode": 25,
-            "title": "Shanks Moves! Ceremony to the Rampaging Age",
+            "episode": 53,
+            "title": "Shanks Makes a Move! The Linchpin to the Reckless Era!",
             "absoluteEpisode": 316
           },
           {
-            "episode": 26,
-            "title": "The Girl Searching for the Yagara! Great Investigation in the Water Metropolis!",
+            "episode": 54,
+            "title": "A Girl in Search of Her Yagara! Great Search in the City of Water!",
             "absoluteEpisode": 317
           },
           {
-            "episode": 27,
-            "title": "The Mother is Strong! Zoro\\'s Slapstick Housework Help",
+            "episode": 55,
+            "title": "Mothers are Strong! Zoro\'s Hectic Household Chores!",
             "absoluteEpisode": 318
           },
           {
-            "episode": 28,
-            "title": "Sanji Crashes! The Mysterious Old Man and Intense Cooking",
+            "episode": 56,
+            "title": "Sanji\'s Shock! Mysterious Old Man and His Super Yummy Cooking!",
             "absoluteEpisode": 319
           },
           {
-            "episode": 29,
-            "title": "Everyone\\'s Finally Wanted! The Crew of Over Six Hundred Million!",
+            "episode": 57,
+            "title": "Everyone Finally Has A Bounty! A Pirate Group Worth Over Six Hundred Million!",
             "absoluteEpisode": 320
           },
           {
-            "episode": 30,
-            "title": "The King of Beasts that will Cross the Ocean! The Dream Ship\\'s Magnificent Completion!",
+            "episode": 58,
+            "title": "The King of Animals that Overlooks the Sea! The Dream Ship Magnificently Completed!",
             "absoluteEpisode": 321
           },
           {
-            "episode": 31,
-            "title": "Goodbye my Lovable Followers! Franky Departs",
+            "episode": 59,
+            "title": "Goodbye My Dear Underlings! Franky Departs!",
             "absoluteEpisode": 322
           },
           {
-            "episode": 32,
-            "title": "Departing the Water Metropolis! Distinction of the Manly Usopp\\'s Duel",
+            "episode": 60,
+            "title": "Departing the City of Water! Usopp Mans Up and Brings Closure to the Duel!",
             "absoluteEpisode": 323
           },
           {
-            "episode": 33,
-            "title": "The World-Wide Bounties! The Hometowns Dance as the Ship Sails Forward!",
+            "episode": 61,
+            "title": "Wanted Posters Make It Around the World! Celebrations in Their Hometowns as the Ship Moves Forward!",
             "absoluteEpisode": 324
           },
           {
-            "episode": 34,
-            "title": "The Most Evil Ability! Blackbeard\\'s Darkness Attacks Ace",
+            "episode": 62,
+            "title": "The Most Heinous Power! Blackbeard\'s Darkness Attacks Ace!",
             "absoluteEpisode": 325
           },
           {
-            "episode": 35,
-            "title": "Mysterious Party of Pirates! The Sunny and a Dangerous Trap",
+            "episode": 63,
+            "title": "The Mysterious Band of Pirates! Sunny and the Dangerous Trap!",
             "absoluteEpisode": 326
           },
           {
-            "episode": 36,
-            "title": "Sunny in a Pinch! Roar, Secret Superspeed Mecha",
+            "episode": 64,
+            "title": "Sunny in a Pinch! Roar, Secret Superspeed Mecha!",
             "absoluteEpisode": 327
           },
           {
-            "episode": 37,
-            "title": "The Dream Sinking in the New World! The Pirate of Despair, Puzzle",
+            "episode": 65,
+            "title": "The Dream Sinking in the New World! The Disillusioned Pirate, Puzzle!",
             "absoluteEpisode": 328
           },
           {
-            "episode": 38,
-            "title": "The Assassins Attack! The Great Battle Above the Ice Begins",
+            "episode": 66,
+            "title": "The Assassins Attack! The Great Battle on Ice Begins!",
             "absoluteEpisode": 329
           },
           {
-            "episode": 39,
-            "title": "The Hard Fights of the Straw Hat Crew! The Pirate Soul Banking it All on the Flag!",
+            "episode": 67,
+            "title": "The Staw Hat’s Hard Battles! A Pirate Soul Risking It All for the Flag!",
             "absoluteEpisode": 330
           },
           {
-            "episode": 40,
-            "title": "Hot Full Throttle! The Twins\\' Magnetic Power Draws Near",
+            "episode": 68,
+            "title": "Hot Full Throttle! The Twin’s Magnetic Power Drawing Near!",
             "absoluteEpisode": 331
           },
           {
-            "episode": 41,
-            "title": "The Great Chaos Mansion! The Angry Don and the Imprisoned Crew",
+            "episode": 69,
+            "title": "Mansion of Great Chaos! The Enraged Don and the Captured Crew!",
             "absoluteEpisode": 332
           },
           {
-            "episode": 42,
-            "title": "The Phoenix Returns! The Dream of the Pirate Flag Sworn to a Friend",
+            "episode": 70,
+            "title": "The Return of the Phoenix! The Dream of the Pirate Flag Sworn to a Friend!",
             "absoluteEpisode": 333
           },
           {
-            "episode": 43,
-            "title": "The Red Hot Decisive Battle! Luffy vs. the Scorching Don",
+            "episode": 71,
+            "title": "The Red Hot Decisive Battle! Luffy vs. The Scorching Don!",
             "absoluteEpisode": 334
           },
           {
-            "episode": 44,
-            "title": "Waiting in the New World! Farewell to the Courageous Pirates",
+            "episode": 72,
+            "title": "Waiting in the New World! Farewell to the Brave Pirates!",
             "absoluteEpisode": 335
           },
           {
-            "episode": 45,
-            "title": "Chopperman Departs! Protect the TV Station by the Shore",
+            "episode": 73,
+            "title": "Chopperman to the Rescue! Protect the TV Station by the Shore!",
             "absoluteEpisode": 336
           }
         ]
@@ -1765,72 +1764,72 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Venture Into the Devil\\'s Sea! The Mysterious Skeleton Floating Through the Fog",
+            "title": "Plunging into the Devil’s Sea! The Mysterious Skeleton Floating in the Fog!",
             "absoluteEpisode": 337
           },
           {
             "episode": 2,
-            "title": "The Delight of Having Met People! The Gentleman Skeleton\\'s True Colors",
+            "title": "The Joy of Seeing People! The Gentleman Skeleton’s True Identity!",
             "absoluteEpisode": 338
           },
           {
             "episode": 3,
-            "title": "One Phenomenon After Another! Disembarking at Thriller Bark",
+            "title": "One Unnatural Phenomenon After the Next! Disembarking on Thriller Bark!",
             "absoluteEpisode": 339
           },
           {
             "episode": 4,
-            "title": "The Man Called a Genius! Hogback Appears!",
+            "title": "The Man Called a Genius! Hogback Makes His Appearance!",
             "absoluteEpisode": 340
           },
           {
             "episode": 5,
-            "title": "Nami in Big Trouble! The Zombie Mansion and the Invisible Man",
+            "title": "Nami’s in a Major Pinch! The Zombie Mansion and the Invisible Man!",
             "absoluteEpisode": 341
           },
           {
             "episode": 6,
-            "title": "Mystery of the Zombies! Hogback\\'s Nightmarish Research Laboratory",
+            "title": "The Zombie’s Secret! Hogback’s Nightmarish Laboratory!",
             "absoluteEpisode": 342
           },
           {
             "episode": 7,
-            "title": "His Name is Moria! Trap of the Great Shadow-Stealing Pirate",
+            "title": "His Name is Moria! The Great Shadow-Seizing Pirate\'s Trap!",
             "absoluteEpisode": 343
           },
           {
             "episode": 8,
-            "title": "Feast of the Zombie Song! The Bell of the Night Raid is a Sound of Darkness",
+            "title": "Feast of the Zombie Song! The Night Raid\'s Bell is the Sound of Darkness!",
             "absoluteEpisode": 344
           },
           {
             "episode": 9,
-            "title": "A Bunch of Animals? Perona\\'s Wonder Garden!",
+            "title": "A Bunch of Animals? Perona\'s Wonder Garden!",
             "absoluteEpisode": 345
           },
           {
             "episode": 10,
-            "title": "Disappearing Strawhat Crew! The Mysterious Swordsman Appears!",
+            "title": "The Vanishing Straw Hat Crew! A Mysterious Swordsman Appears!",
             "absoluteEpisode": 346
           },
           {
             "episode": 11,
-            "title": "Leftover Chivalry! The Traitorous Zombie who Protects Nami",
+            "title": "Chivalry Remains! The Traitorous Zombie Protects Nami!",
             "absoluteEpisode": 347
           },
           {
             "episode": 12,
-            "title": "Coming from the Sky! That Man is the Humming Swordsman",
+            "title": "Appearing from the Sky! That Man Is the Humming Swordsman!",
             "absoluteEpisode": 348
           },
           {
             "episode": 13,
-            "title": "Luffy in an Emergency! The Living Place of the Strongest Shadow!",
+            "title": "Luffy\'s Emergency Situation! The Ultimate Shadow\'s Destination!",
             "absoluteEpisode": 349
           },
           {
             "episode": 14,
-            "title": "The Warrior Known as the Devil!! The Moment of Oars\\' Revival!",
+            "title": "The Warrior Known As the \"Devil\"!! The Moment of Oars\' Revival",
             "absoluteEpisode": 350
           },
           {
@@ -1840,163 +1839,153 @@ window._ANIME_DATA = [
           },
           {
             "episode": 16,
-            "title": "Conviction Strong Enough to Beg for One\\'s Life!! Brook Protects his Afro",
+            "title": "A Belief Worth Begging to Live for!! Brook Defends His Afro",
             "absoluteEpisode": 352
           },
           {
             "episode": 17,
-            "title": "A Man\\'s Oath will Never Die! From Far Memories to the Waiting Friend",
+            "title": "A Man\'s Promise Never Dies!! To the Friend Waiting Under the Distant Sky",
             "absoluteEpisode": 353
           },
           {
             "episode": 18,
-            "title": "We will Definately Meet Again! Brook and the Promise of the Cape",
+            "title": "I Swear to Go See Him! Brook and the Cape of Promise",
             "absoluteEpisode": 354
           },
           {
             "episode": 19,
-            "title": "Food, Nami, and Shadows!! Luffy\\'s Enraged Counterattack",
+            "title": "Food, Nami and Shadows!! Luffy\'s Enraged Counterattack",
             "absoluteEpisode": 355
           },
           {
             "episode": 20,
-            "title": "Usopp the Strongest? Leave the Negatives to Me",
+            "title": "Usopp\'s the Strongest? Leave Anything Negative to Him",
             "absoluteEpisode": 356
           },
           {
             "episode": 21,
-            "title": "The General Zombies Are Down In A Flash!! Oars Feels Like An Adventure!!",
+            "title": "The General Zombies Are Down in a Flash!! Oars Feels Like an Adventure!!",
             "absoluteEpisode": 357
           },
           {
             "episode": 22,
-            "title": "Blazing Knight Sanji!! Kick Down The Fake Wedding",
+            "title": "Blazing Knight Sanji!! Kick Down the Fake Wedding",
             "absoluteEpisode": 358
           },
           {
             "episode": 23,
-            "title": "Invisibility Connection? Sanji\\'s Stolen Dream",
+            "title": "A Clear-Clear History? Sanji\'s Stolen Dream",
             "absoluteEpisode": 359
           },
           {
             "episode": 24,
-            "title": "Saving Hero!! The Enemy is the Invincible Princess",
+            "title": "Save Me, Hero!! My Enemy Is the Immortal Princess",
             "absoluteEpisode": 360
           },
           {
             "episode": 25,
-            "title": "Perona\\'s Terror!! The U in Uso is the U in Usopp",
+            "title": "Perona Is Terrified!! Usopp and Untruthful Share the Same \"U\"",
             "absoluteEpisode": 361
           },
           {
             "episode": 26,
-            "title": "Slashes Dancing on the Roof!! Finale - Zoro vs. Ryuma",
+            "title": "Slashes Dancing On the Rooftop!! Zoro vs. Ryuma\'s Showdown",
             "absoluteEpisode": 362
           },
           {
             "episode": 27,
-            "title": "Chopper is Furious!! Hogback\\'s Evil Medical Practices",
+            "title": "Chopper Is Furious!! Hogback\'s Evil Medical Practices",
             "absoluteEpisode": 363
           },
           {
             "episode": 28,
-            "title": "Oars Roars!! Come Out Straw Hat Crew",
+            "title": "Oars Roars! Come Out, Straw Hat Crew",
             "absoluteEpisode": 364
           },
           {
             "episode": 29,
-            "title": "The Enemy is Luffy!! The Strongest Zombie vs. the Straw Hat Crew",
+            "title": "Luffy Is the Enemy! The Ultimate Zombie vs. The Straw Hat Crew",
             "absoluteEpisode": 365
           },
           {
             "episode": 30,
-            "title": "You\\'re Going Down, Absalom!! Nami\\'s Lightning Attack of Friendship!!",
+            "title": "You\'re Going Down, Absalom!! Nami\'s Lightning Attack of Friendship!!",
             "absoluteEpisode": 366
           },
           {
             "episode": 31,
-            "title": "One Down!! Sure Kill Straw Hat Docking?",
+            "title": "Knock Him Down!! Special Attack: Straw Hat Docking",
             "absoluteEpisode": 367
           },
           {
             "episode": 32,
-            "title": "Soundless Invasion!! The Mysterious Visitor: Kuma the Tyrant",
+            "title": "The Silent Assault!! The Mysterious Visitor, Tyrant Kuma",
             "absoluteEpisode": 368
           },
           {
             "episode": 33,
-            "title": "Oars + Moria - The Greatest Combination of Brains and Brawn",
+            "title": "Oars + Moria! The Most Heinous Combination of Brains and Brawn",
             "absoluteEpisode": 369
           },
           {
             "episode": 34,
-            "title": "A Crazy Strategy to Turn the Tables - The Creation of Nightmare Luffy",
+            "title": "The Secret Plan to Turn the Tables! Nightmare Luffy Makes His Appearance",
             "absoluteEpisode": 370
           },
           {
             "episode": 35,
-            "title": "The Straw Hat Crew annihilated! Full-throttle Kage Kage abilities!",
+            "title": "The Straw Hat Crew Gets Wiped Out! The Shadow-Shadow\'s Powers in Full Swing",
             "absoluteEpisode": 371
           },
           {
             "episode": 36,
-            "title": "The Battle for Superiority Starts! Luffy vs. Luffy",
+            "title": "The Incredible Battle Starts! Luffy vs Luffy",
             "absoluteEpisode": 372
           },
           {
             "episode": 37,
-            "title": "The Conclusion Arrives! Deliver the Finishing Blow",
+            "title": "The End of the Battle Is Nigh! Pound in the Finishing Move",
             "absoluteEpisode": 373
           },
           {
             "episode": 38,
-            "title": "The Bodies Vanish! The Morning Sun Pierces Through the Nightmare Island!",
+            "title": "Our Bodies Vanish! The Morning Sun Shines On the Nightmarish Island!",
             "absoluteEpisode": 374
           },
           {
             "episode": 39,
-            "title": "The Endless Crisis! Orders to Obliterate the Straw Hat Crew",
+            "title": "Not Out of Danger Yet! Orders to Annihilate the Straw Hat Crew",
             "absoluteEpisode": 375
           },
           {
             "episode": 40,
-            "title": "It Repels Everything! Kuma\\'s Paw-Paw Power!",
+            "title": "It Repels Everything! Kuma’s Paw-Paw Power!",
             "absoluteEpisode": 376
           },
           {
             "episode": 41,
-            "title": "My Companions\\' Pain is My Pain - Zoro Prepares to Die",
+            "title": "The Pain of My Crewmates Is My Pain! Zoro\'s Desperate Fight!",
             "absoluteEpisode": 377
           },
           {
             "episode": 42,
-            "title": "The Promise on that Distant Day - The Song of Pirates and a Small Whale",
+            "title": "The Promise from a Distant Day! The Pirates\' Song and a Small Whale!",
             "absoluteEpisode": 378
           },
           {
             "episode": 43,
-            "title": "Brook\\'s Past - Sad Farewell to the Cheerful Crew",
+            "title": "Brook\'s Past! A Sad Farewell with His Cheerful Comrade!",
             "absoluteEpisode": 379
           },
           {
             "episode": 44,
-            "title": "Binks\\' Sake - The Song that Connects the Past and Present",
+            "title": "Bink\'s Booze! The Song that Connects the Past with the Present!",
             "absoluteEpisode": 380
           },
           {
             "episode": 45,
-            "title": "A New Crewmate! Musician - The Hummer Brook",
+            "title": "A New Crewmate! The Musician, Humming Brook!",
             "absoluteEpisode": 381
-          },
-          {
-            "episode": 46,
-            "title": "Noro Noro Menace - Return of Foxy the Silver Fox",
-            "absoluteEpisode": 382
-          },
-          {
-            "episode": 47,
-            "title": "The Great Treasure Contest! Collapse! Spa Island",
-            "absoluteEpisode": 383
           }
         ]
       },
@@ -2005,248 +1994,133 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Brook\\'s Hard Struggle - The Difficult Path to Becoming a True Nakama",
-            "absoluteEpisode": 384
+            "title": "The Slow-Slow Menace! \'Silver Fox\' Foxy Returns!",
+            "absoluteEpisode": 382
           },
           {
             "episode": 2,
+            "title": "The Great Scramble for Treasure! Collapse! Spa Island!",
+            "absoluteEpisode": 383
+          },
+          {
+            "episode": 3,
+            "title": "Brook\'s Great Struggle! Is the Path to Becoming a True Comrade Rigorous?",
+            "absoluteEpisode": 384
+          },
+          {
+            "episode": 4,
             "title": "Arriving at Halfway Through the Grand Line! The Red Line",
             "absoluteEpisode": 385
           },
           {
-            "episode": 3,
-            "title": "Hatred of the Straw Hat Crew - Enter Iron Mask Duval",
+            "episode": 5,
+            "title": "Hatred for the Straw Hats! Iron Mask Duval Appears!",
             "absoluteEpisode": 386
           },
           {
-            "episode": 4,
-            "title": "The Fated Reunion! Save the Imprisoned Fishman",
+            "episode": 6,
+            "title": "The Fated Reunion! Save the Imprisoned Fish-man",
             "absoluteEpisode": 387
           },
           {
-            "episode": 5,
+            "episode": 7,
             "title": "Tragedy! The Truth of the Unmasked Duval",
             "absoluteEpisode": 388
           },
           {
-            "episode": 6,
-            "title": "Explosion! The Sunny\\'s Super Secret Weapon: Gaon Cannon",
+            "episode": 8,
+            "title": "Explosion! The Sunny\'s Super Secret Weapon: Gaon Cannon",
             "absoluteEpisode": 389
           },
           {
-            "episode": 7,
-            "title": "Landing to Get to Fishman Island - The Sabaody Archipelago",
+            "episode": 9,
+            "title": "Landing to Get to Fish-man Island – The Sabaody Archipelago",
             "absoluteEpisode": 390
           },
           {
-            "episode": 8,
+            "episode": 10,
             "title": "Tyranny! The Rulers of Sabaody, the Celestial Dragons",
             "absoluteEpisode": 391
           },
           {
-            "episode": 9,
+            "episode": 11,
             "title": "New Rivals Gather! The 11 Supernovas",
             "absoluteEpisode": 392
           },
           {
-            "episode": 10,
-            "title": "The Target Is Camie!! The Looming Clutches Of A Professional Kidnapper",
+            "episode": 12,
+            "title": "The Target is Camie! The Looming Clutches of a Professional Kidnapper",
             "absoluteEpisode": 393
           },
           {
-            "episode": 11,
-            "title": "Rescue Caimie - The Dark History of the Archipelago",
+            "episode": 13,
+            "title": "Rescue Camie! The Archipelago’s Lingering Dark History",
             "absoluteEpisode": 394
           },
           {
-            "episode": 12,
-            "title": "Time Limit - The Human Auction Begins",
+            "episode": 14,
+            "title": "Time Limit – The Human Auction Begins",
             "absoluteEpisode": 395
           },
           {
-            "episode": 13,
-            "title": "The Exploding Fist! Destroy the Auction",
+            "episode": 15,
+            "title": "The Fist Explodes! Destroy the Auction",
             "absoluteEpisode": 396
           },
           {
-            "episode": 14,
-            "title": "Huge Panic! Struggle in the Auction Hall",
+            "episode": 16,
+            "title": "Major Panic! Desperate Struggle at the Auction House",
             "absoluteEpisode": 397
           },
           {
-            "episode": 15,
-            "title": "Admiral Kizaru Moves! The Sabaody Archipelago in Chaos",
+            "episode": 17,
+            "title": "Admiral Kizaru Takes Action! Sabaody Archipelago Thrown into Chaos",
             "absoluteEpisode": 398
           },
           {
-            "episode": 16,
-            "title": "Break Through the Encirclement! Marines vs. Three Captains",
+            "episode": 18,
+            "title": "Break Through the Siege! The Navy vs. the Three Captains",
             "absoluteEpisode": 399
           },
           {
-            "episode": 17,
-            "title": "Roger and Rayleigh - The Pirate King and His Right Hand",
+            "episode": 19,
+            "title": "Roger and Rayleigh – the King of the Pirates and His Right Hand Man",
             "absoluteEpisode": 400
           },
           {
-            "episode": 18,
-            "title": "No Escape!? Admiral Kizaru\\'s Light Speed Kick!!",
+            "episode": 20,
+            "title": "No Escape!? Admiral Kizaru’s Light Speed Kick!!",
             "absoluteEpisode": 401
           },
           {
-            "episode": 19,
-            "title": "Overwhelming! The Marine Combat Weapon Pacifista",
+            "episode": 21,
+            "title": "Overwhelming! The Navy’s Fighting Weapons, the Pacifistas",
             "absoluteEpisode": 402
           },
           {
-            "episode": 20,
-            "title": "Another Strong Enemy Appears! Broadaxe-Wielding Sentomaru",
+            "episode": 22,
+            "title": "An Even Stronger Enemy Appears! The Battle Axe-Carrying Sentomaru",
             "absoluteEpisode": 403
           },
           {
-            "episode": 21,
-            "title": "Admiral Kizaru\\'s Fierce Attack. The Straw Hat Crew\\'s Desperate Situation!",
+            "episode": 23,
+            "title": "Admiral Kizaru\'s Fierce Assault! The Straw Hats Face Certain Death!",
             "absoluteEpisode": 404
           },
           {
-            "episode": 22,
-            "title": "Disappearing Crewmates - The Final Day of the Straw Hat Crew",
+            "episode": 24,
+            "title": "Eliminated Friends – The Final Day of the Straw Hat Crew",
             "absoluteEpisode": 405
           },
           {
-            "episode": 23,
-            "title": "Special Historical Arc - Boss Luffy Appears Again",
+            "episode": 25,
+            "title": "Feudal Era Side Story – Boss Luffy Appears Again",
             "absoluteEpisode": 406
           },
           {
-            "episode": 24,
-            "title": "Special Historical Arc - Destroy! Thriller Company\\'s Trap",
-            "absoluteEpisode": 407
-          },
-          {
-            "episode": 25,
-            "title": "Landing! Young Men Forbidden Island Amazon Lily",
-            "absoluteEpisode": 408
-          },
-          {
             "episode": 26,
-            "title": "Hurry! Get back to your friends. Adventure on the Island of Women.",
-            "absoluteEpisode": 409
-          },
-          {
-            "episode": 27,
-            "title": "Everyone is Lovestruck! Pirate Empress Hancock",
-            "absoluteEpisode": 410
-          },
-          {
-            "episode": 28,
-            "title": "The Secret Hidden on Their Backs, Luffy Encounters The Princess",
-            "absoluteEpisode": 411
-          },
-          {
-            "episode": 29,
-            "title": "The Heartless Judgment! Margaret Turned to Stone!!",
-            "absoluteEpisode": 412
-          },
-          {
-            "episode": 30,
-            "title": "Luffy\\'s Hard Trial! The Power of the Snake Sisters\\' Willpower!",
-            "absoluteEpisode": 413
-          },
-          {
-            "episode": 31,
-            "title": "Battle with Full-Powered Abilities! Gomu Gomu vs. Hebi Hebi",
-            "absoluteEpisode": 414
-          },
-          {
-            "episode": 32,
-            "title": "Hancock\\'s Confession - The Sisters\\' Disgusting Past",
-            "absoluteEpisode": 415
-          },
-          {
-            "episode": 33,
-            "title": "Rescue Ace! The New Destination is the Great Prison",
-            "absoluteEpisode": 416
-          },
-          {
-            "episode": 34,
-            "title": "Love is a Hurricane! Hancock Madly in Love",
-            "absoluteEpisode": 417
-          },
-          {
-            "episode": 35,
-            "title": "The Crew\\'s Whereabouts - Weather Science and Karakuri Island",
-            "absoluteEpisode": 418
-          },
-          {
-            "episode": 36,
-            "title": "The Crew\\'s Whereabouts - The Island of Giant Birds and the Pink Paradise!",
-            "absoluteEpisode": 419
-          },
-          {
-            "episode": 37,
-            "title": "The Crew\\'s Whereabouts - The Bridge that Connects Islands and Man-Eating Plants",
-            "absoluteEpisode": 420
-          },
-          {
-            "episode": 38,
-            "title": "The Crew\\'s Whereabouts - The Negative Princess and the Devil King!",
-            "absoluteEpisode": 421
-          },
-          {
-            "episode": 39,
-            "title": "A Life-threatening Break-in! The Underwater Prison Impel Down!",
-            "absoluteEpisode": 422
-          },
-          {
-            "episode": 40,
-            "title": "A Reunion in Hell?! The Man Who Ate the Chop-Chop Fruit!",
-            "absoluteEpisode": 423
-          },
-          {
-            "episode": 41,
-            "title": "Break through Crimson Hell! Buggys great Uproar Plan",
-            "absoluteEpisode": 424
-          },
-          {
-            "episode": 42,
-            "title": "The Prison\\'s strongest Man! Introduction of the Poison-Man Magellan",
-            "absoluteEpisode": 425
-          },
-          {
-            "episode": 43,
-            "title": "A Special Presentation Related to the Movie! A Gold Lion\\'s Ambition on the Move!",
-            "absoluteEpisode": 426
-          },
-          {
-            "episode": 44,
-            "title": "A Special Presentation Related to the Movie! Little East Blue in Danger!",
-            "absoluteEpisode": 427
-          },
-          {
-            "episode": 45,
-            "title": "A Special Presentation Related to the Movie! The Fierce Onslaught of the Amigo Pirates!",
-            "absoluteEpisode": 428
-          },
-          {
-            "episode": 46,
-            "title": "A Special Presentation Related to the Movie! Luffy vs. Largo - The Battle is On!",
-            "absoluteEpisode": 429
-          },
-          {
-            "episode": 47,
-            "title": "The Imprisoned Royal Shichibukai! Jinbei, Knight of the Sea",
-            "absoluteEpisode": 430
-          },
-          {
-            "episode": 48,
-            "title": "The Trap of Chief Guard Saldeath - Level 3 Starvation Hell",
-            "absoluteEpisode": 431
-          },
-          {
-            "episode": 49,
-            "title": "The Liberated Swan! Reunion! Bon Kurei",
-            "absoluteEpisode": 432
+            "title": "Feudal Era Side Story – Defeat Thriller Company\'s Trap",
+            "absoluteEpisode": 407
           }
         ]
       },
@@ -2255,248 +2129,73 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Chief Warden Magellan Moves - The Net to Trap Straw Hat Is Complete!",
-            "absoluteEpisode": 433
+            "title": "Landing! The All-Female Island, Amazon Lily",
+            "absoluteEpisode": 408
           },
           {
             "episode": 2,
-            "title": "Preparations for War! A Decisive Battle in Level 4 - Inferno Hell",
-            "absoluteEpisode": 434
+            "title": "Hurry Back to Your Friends! The Maiden Island Adventure",
+            "absoluteEpisode": 409
           },
           {
             "episode": 3,
-            "title": "Magellan\\'s Strength! Bon Kurei Flees Before His Enemy Out!",
-            "absoluteEpisode": 435
+            "title": "Everyone Falls in Love! Pirate Empress Hancock",
+            "absoluteEpisode": 410
           },
           {
             "episode": 4,
-            "title": "The Fight Finished! Luffy\\'s Final Life-Risking Attack",
-            "absoluteEpisode": 436
+            "title": "The Secret Hidden on the Backs – Luffy and the Snake Princess Meet",
+            "absoluteEpisode": 411
           },
           {
             "episode": 5,
-            "title": "Because He\\'s Our Friend - Bon Kurei\\'s Do-or-Die Rescue",
-            "absoluteEpisode": 437
+            "title": "Heartless Judgment! Margaret is Turned to Stone!!",
+            "absoluteEpisode": 412
           },
           {
             "episode": 6,
-            "title": "A Paradise in Hell! Impel Down - Level 5.5!",
-            "absoluteEpisode": 438
+            "title": "A Difficult Fight for Luffy! The Snake Sisters\' Haki Power!!",
+            "absoluteEpisode": 413
           },
           {
             "episode": 7,
-            "title": "Luffy\\'s Treatment Begins! Ivan-san\\'s Miraculous Power!",
-            "absoluteEpisode": 439
+            "title": "All-Out Special Power Battle!! Gum-Gum vs. Snake-Snake",
+            "absoluteEpisode": 414
           },
           {
             "episode": 8,
-            "title": "Believe in Miracles! Bon Clay\\'s Cries From the Heart!",
-            "absoluteEpisode": 440
+            "title": "Hancock\'s Confession – The Sisters\' Abhorrent Past",
+            "absoluteEpisode": 415
           },
           {
             "episode": 9,
-            "title": "Luffy\\'s Back! Ivan-san Begins the Breakout Plan!",
-            "absoluteEpisode": 441
+            "title": "Saving Ace! The Next Stop: the Great Prison!",
+            "absoluteEpisode": 416
           },
           {
             "episode": 10,
-            "title": "Ace\\'s Convoy Begins! Battle on the Lowest Floor - Level 6!",
-            "absoluteEpisode": 442
+            "title": "Love is a Hurricane! Hancock Madly in Love!",
+            "absoluteEpisode": 417
           },
           {
             "episode": 11,
-            "title": "The Ultimate Team Has Formed! Shaking Impel Down!",
-            "absoluteEpisode": 443
+            "title": "The Friends\' Whereabouts – The Science of Weather and the Mechanical Island",
+            "absoluteEpisode": 418
           },
           {
             "episode": 12,
-            "title": "Even More Chaos! Blackbeard Teach Invades!",
-            "absoluteEpisode": 444
+            "title": "The Friends\' Whereabouts! An Island of Giant Birds and a Pink Paradise!",
+            "absoluteEpisode": 419
           },
           {
             "episode": 13,
-            "title": "A Dangerous Meeting! Blackbeard and Shiryu of the Rain",
-            "absoluteEpisode": 445
+            "title": "The Friends\' Whereabouts – Bridging the Islands and Vicious Vegetations!",
+            "absoluteEpisode": 420
           },
           {
             "episode": 14,
-            "title": "His Spirit Won\\'t Break! Hannyabal Goes All Out",
-            "absoluteEpisode": 446
-          },
-          {
-            "episode": 15,
-            "title": "The Jet Pistol of Rage - Luffy vs. Blackbeard",
-            "absoluteEpisode": 447
-          },
-          {
-            "episode": 16,
-            "title": "Stop Magellan! Ivan-san Unleashes His Secret Attack",
-            "absoluteEpisode": 448
-          },
-          {
-            "episode": 17,
-            "title": "Magellan\\'s Scheme! The Jailbreak is Obstructed",
-            "absoluteEpisode": 449
-          },
-          {
-            "episode": 18,
-            "title": "The Jailbreak Team Driven Into a Corner - Forbidden Move \\'Venom Demon\\'",
-            "absoluteEpisode": 450
-          },
-          {
-            "episode": 19,
-            "title": "Create the Final Miracle - Break Through the Gate of Justice",
-            "absoluteEpisode": 451
-          },
-          {
-            "episode": 20,
-            "title": "The Destination is Marine Headquarters - The Ship Sets Out to Rescue Ace!",
-            "absoluteEpisode": 452
-          },
-          {
-            "episode": 21,
-            "title": "The Friends\\' Whereabouts! Weatheria Report and Cyborg Animals",
-            "absoluteEpisode": 453
-          },
-          {
-            "episode": 22,
-            "title": "The Friends\\' Whereabouts! A Cheeper of Giant Birds and a Pink Showdown!",
-            "absoluteEpisode": 454
-          },
-          {
-            "episode": 23,
-            "title": "The Friends\\' Whereabouts! The Revolutionary Army and the Trap of the Forest of Gluttony!",
-            "absoluteEpisode": 455
-          },
-          {
-            "episode": 24,
-            "title": "The Friends\\' Whereabouts! The Giant Gravestone and Panties of Gratitude",
-            "absoluteEpisode": 456
-          },
-          {
-            "episode": 25,
-            "title": "Flashback Special Before Marineford - The Brothers\\' Oath!",
-            "absoluteEpisode": 457
-          },
-          {
-            "episode": 26,
-            "title": "Flashback Special Before Marineford - The Three Admirals",
-            "absoluteEpisode": 458
-          },
-          {
-            "episode": 27,
-            "title": "Ticking Down to the Time of Battle! The Navy\\'s Strongest Lineup in Position!",
-            "absoluteEpisode": 459
-          },
-          {
-            "episode": 28,
-            "title": "An Enormous Fleet Appears - The Whitebeard Pirates Invade",
-            "absoluteEpisode": 460
-          },
-          {
-            "episode": 29,
-            "title": "The Beginning of the War - Ace and Whitebeard\\'s Past!",
-            "absoluteEpisode": 461
-          },
-          {
-            "episode": 30,
-            "title": "The Force That Could Destroy The World! The Power of the Tremor-Tremor Fruit!",
-            "absoluteEpisode": 462
-          },
-          {
-            "episode": 31,
-            "title": "An All-Consuming Inferno!! Admiral Akainu\\'s Power!",
-            "absoluteEpisode": 463
-          },
-          {
-            "episode": 32,
-            "title": "Descendant of the Devil! Little Oars Jr. Rushes!",
-            "absoluteEpisode": 464
-          },
-          {
-            "episode": 33,
-            "title": "The Winner Will Be Justice - Sengoku\\'s Strategy Is Put Into Action!",
-            "absoluteEpisode": 465
-          },
-          {
-            "episode": 34,
-            "title": "The Straw Hat Team Arrives - Tensions Grows on the Battlefield!",
-            "absoluteEpisode": 466
-          },
-          {
-            "episode": 35,
-            "title": "Even If It Means Death! Luffy Vs. The Navy - The Battle Starts!",
-            "absoluteEpisode": 467
-          },
-          {
-            "episode": 36,
-            "title": "Hard Battles, One After Another! Devil\\'s Fruit Eaters vs. Devil\\'s Fruit Eaters!",
-            "absoluteEpisode": 468
-          },
-          {
-            "episode": 37,
-            "title": "Kuma\\'s Transformation! Ivan\\'s Attack of Anger!",
-            "absoluteEpisode": 469
-          },
-          {
-            "episode": 38,
-            "title": "The Great Swordsman Mihawk! Luffy Comes Under the Attack of the Black Sword!",
-            "absoluteEpisode": 470
-          },
-          {
-            "episode": 39,
-            "title": "The Extermination Strategy in Action! The Power of the Pacifistas!",
-            "absoluteEpisode": 471
-          },
-          {
-            "episode": 40,
-            "title": "Akainu\\'s Plot! Whitebeard Trapped!",
-            "absoluteEpisode": 472
-          },
-          {
-            "episode": 41,
-            "title": "The Encircling Walls Activated! The Whitebeard Pirates Backed into a Corner!!",
-            "absoluteEpisode": 473
-          },
-          {
-            "episode": 42,
-            "title": "The Order to Perform the Execution is Given - Break Through the Encircling Wall!",
-            "absoluteEpisode": 474
-          },
-          {
-            "episode": 43,
-            "title": "Moving Into the Final Phase! Whitebeard\\'s Trump Card for Recovery!",
-            "absoluteEpisode": 475
-          },
-          {
-            "episode": 44,
-            "title": "Luffy\\'s Strength is Exhausted! All-Out War in the Oris Plaza!",
-            "absoluteEpisode": 476
-          },
-          {
-            "episode": 45,
-            "title": "Power that Reduces One\\'s Life - Tension Hormones Return",
-            "absoluteEpisode": 477
-          },
-          {
-            "episode": 46,
-            "title": "For a Promise!! Luffy and Coby Clash!",
-            "absoluteEpisode": 478
-          },
-          {
-            "episode": 47,
-            "title": "The Scaffold At Last! The Way To Ace Has Opened!",
-            "absoluteEpisode": 479
-          },
-          {
-            "episode": 48,
-            "title": "Each On Different Paths! Luffy vs. Garp!",
-            "absoluteEpisode": 480
-          },
-          {
-            "episode": 49,
-            "title": "Ace is Rescued! Whitebeard\\'s Final Captain\\'s Orders!",
-            "absoluteEpisode": 481
+            "title": "The Friends\' Whereabouts! A Princess Negativity and the King of Demons!",
+            "absoluteEpisode": 421
           }
         ]
       },
@@ -2505,243 +2204,508 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "The Power that Burns Fire - Akainu\\'s Final Move",
-            "absoluteEpisode": 482
+            "title": "A Deadly Infiltration! The Underwater Prison Impel Down",
+            "absoluteEpisode": 422
           },
           {
             "episode": 2,
-            "title": "Looking for the Answer! Fire Fist Ace Dies on the Battlefield!",
-            "absoluteEpisode": 483
+            "title": "A Reunion in Hell?! The Man Who Ate the Chop-Chop Fruit!",
+            "absoluteEpisode": 423
           },
           {
             "episode": 3,
-            "title": "Marine Headquarters Crumbles! Whitebeard\\'s Silent Rage!",
-            "absoluteEpisode": 484
+            "title": "Break Through the Crimson Hell! Buggy\'s Chaos-Inducing Plan",
+            "absoluteEpisode": 424
           },
           {
             "episode": 4,
-            "title": "Settling the Score - Whitebeard vs. The Blackbeard Pirates",
-            "absoluteEpisode": 485
+            "title": "The Strongest Man in the Prison! Poison Man Magellan Appears",
+            "absoluteEpisode": 425
           },
           {
             "episode": 5,
-            "title": "The Start of the Show - Blackbeard\\'s Plot Revealed",
-            "absoluteEpisode": 486
+            "title": "A Special Presentation Related to the Movie! A Gold Lion\'s Ambition on the Move",
+            "absoluteEpisode": 426
           },
           {
             "episode": 6,
-            "title": "The Insatiable Akainu! Lava Fists Pummel Luffy!",
-            "absoluteEpisode": 487
+            "title": "A Special Presentation Related to the Movie! Little East Blue in Danger",
+            "absoluteEpisode": 427
           },
           {
             "episode": 7,
-            "title": "A Desperate Cry - Seconds of Valor that Change Destiny",
-            "absoluteEpisode": 488
+            "title": "A Special Presentation Related to the Movie! The Fierce Onslaught of the Amigo Pirates",
+            "absoluteEpisode": 428
           },
           {
             "episode": 8,
-            "title": "Enter Shanks! The Ultimate War Ends at Last",
-            "absoluteEpisode": 489
+            "title": "A Special Presentation Related to the Movie! The Battle Is On! Luffy vs. Largo",
+            "absoluteEpisode": 429
           },
           {
             "episode": 9,
-            "title": "Powerful Independent Rivals! The Beginning of the \\'New Era\\'",
-            "absoluteEpisode": 490
+            "title": "A Warlord in Prison! Jimbei, the Honorable Pirate",
+            "absoluteEpisode": 430
           },
           {
             "episode": 10,
-            "title": "Arrival at the Island of Women - Cruel Reality Tortures Luffy",
-            "absoluteEpisode": 491
+            "title": "Chief Guard Saldeath\'s Trap! Level 3 - Starvation Hell",
+            "absoluteEpisode": 431
           },
           {
             "episode": 11,
-            "title": "The Strongest Tag-Team! Luffy and Toriko\\'s Hard Struggle!",
-            "absoluteEpisode": 492
+            "title": "The Unleashed Swan! A Reunion with Bon Clay",
+            "absoluteEpisode": 432
           },
           {
             "episode": 12,
-            "title": "Luffy and Ace - The Story of the Brothers\\' Meeting!",
-            "absoluteEpisode": 493
+            "title": "Warden Magellan\'s Strategy! Straw Hat Entrapment Completed!",
+            "absoluteEpisode": 433
           },
           {
             "episode": 13,
-            "title": "Enter Sabo! The Boy From the Grey Terminal",
-            "absoluteEpisode": 494
+            "title": "All Forces Have Gathered! The Battle on Level 4, the Burning Heat Hell!",
+            "absoluteEpisode": 434
           },
           {
             "episode": 14,
-            "title": "I Won\\'t Run! Ace\\'s Desperate Rescue Operation!",
-            "absoluteEpisode": 495
+            "title": "Mighty Magellan! Bon Clay Bugs Out",
+            "absoluteEpisode": 435
           },
           {
             "episode": 15,
-            "title": "One Day We\\'ll Go Out to Sea! The Oath Cups of the Three Brats!",
-            "absoluteEpisode": 496
+            "title": "The Showdown Has Come! Luffy\'s Desperate Last Attack!",
+            "absoluteEpisode": 436
           },
           {
             "episode": 16,
-            "title": "Leaving the Dadan Family!? The Secret Base is Complete!",
-            "absoluteEpisode": 497
+            "title": "For His Friend! Bon Clay Goes to the Deadly Rescue!",
+            "absoluteEpisode": 437
           },
           {
             "episode": 17,
+            "title": "A Paradise in Hell! Impel Down Level 5.5!",
+            "absoluteEpisode": 438
+          },
+          {
+            "episode": 18,
+            "title": "Luffy\'s Treatment Begins! Ivan-san\'s Miraculous Power!",
+            "absoluteEpisode": 439
+          },
+          {
+            "episode": 19,
+            "title": "Believe in Miracles! Bon Clay\'s Cries from the Heart",
+            "absoluteEpisode": 440
+          },
+          {
+            "episode": 20,
+            "title": "Luffy\'s Back! Ivan-san Begins the Breakout Plan!",
+            "absoluteEpisode": 441
+          },
+          {
+            "episode": 21,
+            "title": "Ace\'s Convoy Begins! Battle on the Lowest Floor, Level 6!",
+            "absoluteEpisode": 442
+          },
+          {
+            "episode": 22,
+            "title": "The Ultimate Team Has Formed! Shaking Impel Down!",
+            "absoluteEpisode": 443
+          },
+          {
+            "episode": 23,
+            "title": "Even More Chaos! Here Comes Blackbeard Teech!",
+            "absoluteEpisode": 444
+          },
+          {
+            "episode": 24,
+            "title": "The Dangerous Encounter! Blackbeard and Shiryu of the Rain!",
+            "absoluteEpisode": 445
+          },
+          {
+            "episode": 25,
+            "title": "No Price Too High! Serious Hannyabal!",
+            "absoluteEpisode": 446
+          },
+          {
+            "episode": 26,
+            "title": "Jet Pistol of Anger! Luffy vs. Blackbeard!",
+            "absoluteEpisode": 447
+          },
+          {
+            "episode": 27,
+            "title": "Stop Magellan! Ivan-san\'s Esoteric Technique Explodes",
+            "absoluteEpisode": 448
+          },
+          {
+            "episode": 28,
+            "title": "Magellan\'s Tricky Move! A Foiled Escape Plan!",
+            "absoluteEpisode": 449
+          },
+          {
+            "episode": 29,
+            "title": "The Escapee Team in Trouble! The Forbidden Move: Venom Demon!",
+            "absoluteEpisode": 450
+          },
+          {
+            "episode": 30,
+            "title": "Come, Final Miracle! Break Through the Gate of Justice!",
+            "absoluteEpisode": 451
+          },
+          {
+            "episode": 31,
+            "title": "To the Navy Headquarters! Off to Rescue Ace!",
+            "absoluteEpisode": 452
+          },
+          {
+            "episode": 32,
+            "title": "The Friends\' Whereabouts! The Weatheria Report and the Cyborg Animals!",
+            "absoluteEpisode": 453
+          },
+          {
+            "episode": 33,
+            "title": "The Friends\' Whereabouts! A Cheeper of Giant Birds and a Pink Showdown!",
+            "absoluteEpisode": 454
+          },
+          {
+            "episode": 34,
+            "title": "The Friends\' Whereabouts! Revolutionaries and the Gorging Forest\'s Trap!",
+            "absoluteEpisode": 455
+          },
+          {
+            "episode": 35,
+            "title": "The Friends\' Whereabouts! A Huge Tomb and the Panty Debt!",
+            "absoluteEpisode": 456
+          },
+          {
+            "episode": 36,
+            "title": "A Special Retrospective Before Marineford! The Vow of the Brotherhood!",
+            "absoluteEpisode": 457
+          },
+          {
+            "episode": 37,
+            "title": "A Special Retrospective Before Marineford! The Three Navy Admirals Come Together!",
+            "absoluteEpisode": 458
+          },
+          {
+            "episode": 38,
+            "title": "Ticking Down to the Time of Battle! The Navy\'s Strongest Lineup in Position!",
+            "absoluteEpisode": 459
+          },
+          {
+            "episode": 39,
+            "title": "A Vast Fleet Appears! Here Come the Whitebeard Pirates!",
+            "absoluteEpisode": 460
+          },
+          {
+            "episode": 40,
+            "title": "The Beginning of the War! Ace and Whitebeard\'s Past!",
+            "absoluteEpisode": 461
+          },
+          {
+            "episode": 41,
+            "title": "The Force That Could Destroy the World! The Power of the Tremor-Tremor Fruit!",
+            "absoluteEpisode": 462
+          },
+          {
+            "episode": 42,
+            "title": "An All-Consuming Inferno!! Admiral Akainu\'s Power!",
+            "absoluteEpisode": 463
+          },
+          {
+            "episode": 43,
+            "title": "A Descendent of the Beast! Little Oars Jr. - Full Speed Ahead!",
+            "absoluteEpisode": 464
+          },
+          {
+            "episode": 44,
+            "title": "Justice for the Winners! Sengoku\'s Strategy in Action!",
+            "absoluteEpisode": 465
+          },
+          {
+            "episode": 45,
+            "title": "Straw Hat Team Arrives! Tension Grows at the Battlefield",
+            "absoluteEpisode": 466
+          },
+          {
+            "episode": 46,
+            "title": "Even If It Means Death! Luffy vs. the Navy; The Battle Starts!",
+            "absoluteEpisode": 467
+          },
+          {
+            "episode": 47,
+            "title": "Hard Battles, One After Another! Devil Fruit Eaters vs. Devil Fruit Eaters!",
+            "absoluteEpisode": 468
+          },
+          {
+            "episode": 48,
+            "title": "Kuma\'s Transformation! Ivan-san\'s Blow of Anger!",
+            "absoluteEpisode": 469
+          },
+          {
+            "episode": 49,
+            "title": "The Great Swordsman Mihawk! Luffy Comes Under the Attack of the Black Sword!",
+            "absoluteEpisode": 470
+          },
+          {
+            "episode": 50,
+            "title": "The Extermination Strategy in Action! The Power of the Pacifistas!",
+            "absoluteEpisode": 471
+          },
+          {
+            "episode": 51,
+            "title": "Akainu\'s Plot! Whitebeard Entrapped!",
+            "absoluteEpisode": 472
+          },
+          {
+            "episode": 52,
+            "title": "The Encircling Walls Activated! The Whitebeard Pirates backed into a corner!",
+            "absoluteEpisode": 473
+          },
+          {
+            "episode": 53,
+            "title": "Execution Order Issued! Break Through the Encircling Walls!",
+            "absoluteEpisode": 474
+          },
+          {
+            "episode": 54,
+            "title": "Moving into the Final Phase! Whitebeard\'s Trump Card for Recovery!",
+            "absoluteEpisode": 475
+          },
+          {
+            "episode": 55,
+            "title": "Luffy at the End of His Tether! An All-out Battle at the Oris Plaza!",
+            "absoluteEpisode": 476
+          },
+          {
+            "episode": 56,
+            "title": "The Power That Will Shorten One\'s Life! Energy Hormone, Redux!",
+            "absoluteEpisode": 477
+          },
+          {
+            "episode": 57,
+            "title": "To Live Up to a Promise! Luffy and Coby Collide!",
+            "absoluteEpisode": 478
+          },
+          {
+            "episode": 58,
+            "title": "The Scaffold at Last! The Way to Ace Has Opened!",
+            "absoluteEpisode": 479
+          },
+          {
+            "episode": 59,
+            "title": "Each on Different Paths! Luffy vs. Garp!",
+            "absoluteEpisode": 480
+          },
+          {
+            "episode": 60,
+            "title": "Ace Rescued! Whitebeard\'s Final Order!",
+            "absoluteEpisode": 481
+          },
+          {
+            "episode": 61,
+            "title": "The Power That Can Burn Even Fire! Akainu\'s Ruthless Pursuit!",
+            "absoluteEpisode": 482
+          },
+          {
+            "episode": 62,
+            "title": "Looking for the Answer!",
+            "absoluteEpisode": 483
+          },
+          {
+            "episode": 63,
+            "title": "The Navy Headquarters Falls! Whitebeard\'s Unspeakable Wrath!",
+            "absoluteEpisode": 484
+          },
+          {
+            "episode": 64,
+            "title": "Ending the Matter! Whitebeard vs. The Blackbeard Pirates!",
+            "absoluteEpisode": 485
+          },
+          {
+            "episode": 65,
+            "title": "The Show Begins! Blackbeard\'s Plot is Revealed!",
+            "absoluteEpisode": 486
+          },
+          {
+            "episode": 66,
+            "title": "Akainu\'s Tenacity! The Fist of Magma Attacks Luffy",
+            "absoluteEpisode": 487
+          },
+          {
+            "episode": 67,
+            "title": "The Desperate Scream! Courageous Moments that Will Change the Future",
+            "absoluteEpisode": 488
+          },
+          {
+            "episode": 68,
+            "title": "Here Comes Shanks! The War of the Best is Finally Over!",
+            "absoluteEpisode": 489
+          },
+          {
+            "episode": 69,
+            "title": "Mighty Leaders Face Each Other Down! Heralding the \'New Era\'!",
+            "absoluteEpisode": 490
+          },
+          {
+            "episode": 70,
+            "title": "Landing at the Maiden Island! The Harsh Reality Falls upon Luffy!",
+            "absoluteEpisode": 491
+          },
+          {
+            "episode": 71,
+            "title": "The Strongest Tag-Team! Luffy and Toriko\'s Hard Struggle! (II)",
+            "absoluteEpisode": 492
+          },
+          {
+            "episode": 72,
+            "title": "Luffy and Ace! The Story of How the Brothers Met!",
+            "absoluteEpisode": 493
+          },
+          {
+            "episode": 73,
+            "title": "Here Comes Sabo! The Boy at the Gray Terminal!",
+            "absoluteEpisode": 494
+          },
+          {
+            "episode": 74,
+            "title": "I Won\'t Run! Ace\'s Desperate Rescue Operation!",
+            "absoluteEpisode": 495
+          },
+          {
+            "episode": 75,
+            "title": "To The Sea Someday! The Pledge of the Three Brats!",
+            "absoluteEpisode": 496
+          },
+          {
+            "episode": 76,
+            "title": "Leaving the Dadan Family for Good?! The Kids\' Hideout Has Been Built!",
+            "absoluteEpisode": 497
+          },
+          {
+            "episode": 77,
             "title": "Luffy Becoming an Apprentice?! A Man Who Fought Against the King of the Pirates!",
             "absoluteEpisode": 498
           },
           {
-            "episode": 18,
-            "title": "The Battle Against the Big Tiger! Who Will Be the Captain?!",
+            "episode": 78,
+            "title": "The Battle against the Big Tiger! Who is Going to be Captain?!",
             "absoluteEpisode": 499
           },
           {
-            "episode": 19,
-            "title": "Stolen Freedom! The Nobles\\' Trap Draws Near the Three Brothers",
+            "episode": 79,
+            "title": "Freedom Taken Away! The Nobles\' Plot Closing in on the Brothers!",
             "absoluteEpisode": 500
           },
           {
-            "episode": 20,
-            "title": "The Flames Are Lit - The Gray Terminal\\'s Crisis",
+            "episode": 80,
+            "title": "The Fire Has Been Set! The Gray Terminal in Crisis!",
             "absoluteEpisode": 501
           },
           {
-            "episode": 21,
-            "title": "Where Is Freedom? The Boy\\'s Sad Departure",
+            "episode": 81,
+            "title": "Where can freedom be found? A Sad Departure of a Boy!",
             "absoluteEpisode": 502
           },
           {
-            "episode": 22,
-            "title": "I\\'m Counting On You! A Letter From a Brother!",
+            "episode": 82,
+            "title": "Take Good Care of Him! A Letter from the Brother!",
             "absoluteEpisode": 503
           },
           {
-            "episode": 23,
-            "title": "To Fulfill the Promise - Separate Departures!",
+            "episode": 83,
+            "title": "To Live Up to the Promise! Departures of Their Own!",
             "absoluteEpisode": 504
           },
           {
-            "episode": 24,
-            "title": "I Want to See Them! Luffy\\'s Tearful Scream",
+            "episode": 84,
+            "title": "I Want to See Them! Luffy\'s Mournful Cry!",
             "absoluteEpisode": 505
           },
           {
-            "episode": 25,
-            "title": "Straw Hats In Shock! The Bad News Has Reached Them!",
+            "episode": 85,
+            "title": "Straw Hats in Shock! The Bad News Has Reached Them!",
             "absoluteEpisode": 506
           },
           {
-            "episode": 26,
-            "title": "Reunited with Dark King Rayleigh! Decision Time For Luffy!",
+            "episode": 86,
+            "title": "Reunited with Dark King Rayleigh! Decision Time for Luffy!",
             "absoluteEpisode": 507
           },
           {
-            "episode": 27,
+            "episode": 87,
             "title": "Back to Our Captain! A Jail Break at the Sky Island and the Incident on the Winter Island!",
             "absoluteEpisode": 508
           },
           {
-            "episode": 28,
-            "title": "Encounter! The Great Swordsman Mihawk! Zoro\\'s Self-Willed Deadly Struggle!",
+            "episode": 88,
+            "title": "Encounter! The Great Swordsman Mihawk! Zoro\'s Self-Willed Deadly Struggle!",
             "absoluteEpisode": 509
           },
           {
-            "episode": 29,
-            "title": "Sanji\\'s Suffering - The Queen Returns to His Kingdom",
+            "episode": 89,
+            "title": "A Disaster for Sanji! The Queen\'s Return to the Kingdom!",
             "absoluteEpisode": 510
           },
           {
-            "episode": 30,
-            "title": "An Unbelievable Return! Luffy at the Marine Headquarters!",
+            "episode": 90,
+            "title": "Unexpected Relanding! Luffy, to Marineford!",
             "absoluteEpisode": 511
           },
           {
-            "episode": 31,
-            "title": "Delivered to Friends - The Big News Comes Through!",
+            "episode": 91,
+            "title": "With Hopes It Will Reach My Friends! Big News Spreading Fast!",
             "absoluteEpisode": 512
           },
           {
-            "episode": 32,
-            "title": "The Pirates Move Out! The Earth Shattering New World",
+            "episode": 92,
+            "title": "Pirates Get on the Move! Astounding New World!",
             "absoluteEpisode": 513
           },
           {
-            "episode": 33,
-            "title": "Live Through Hell - Sanji\\'s Fight with Men at Stake",
+            "episode": 93,
+            "title": "Living through Hell! Sanji\'s Fight for His Manhood!",
             "absoluteEpisode": 514
           },
           {
-            "episode": 34,
-            "title": "I Will Get Much, Much Stronger! Zoro\\'s Pledge to his Captain!",
+            "episode": 94,
+            "title": "I Will Get Much, Much Stronger! Zoro\'s Pledge to His Captain!",
             "absoluteEpisode": 515
           },
           {
-            "episode": 35,
-            "title": "Luffy\\'s Training Begins - Meet Up at the Promised Place in Two Years",
+            "episode": 95,
+            "title": "Luffy\'s Training Begins! To the Place We Promised in 2 Years!",
             "absoluteEpisode": 516
           },
           {
-            "episode": 36,
-            "title": "A New Chapter Opens: The Straw Hat Pirates Regather!",
+            "episode": 96,
+            "title": "The Beginning of The New Chapter! The Straw Hats Reunited!",
             "absoluteEpisode": 517
           },
           {
-            "episode": 37,
-            "title": "An Explosive Situation! Luffy vs Fake Luffy",
+            "episode": 97,
+            "title": "An Explosive Situation! Luffy vs. Fake Luffy!",
             "absoluteEpisode": 518
           },
           {
-            "episode": 38,
-            "title": "The Navy Has Set Out! The Straw Hats In Danger!",
+            "episode": 98,
+            "title": "The Navy Has Set Out! The Straw Hats in Danger!",
             "absoluteEpisode": 519
           },
           {
-            "episode": 39,
-            "title": "Big Guns Assembled! The Danger Of The Fake Straw Hats!",
+            "episode": 99,
+            "title": "Big Guns Assembled! The Danger of the Fake Straw Hats!",
             "absoluteEpisode": 520
           },
           {
-            "episode": 40,
-            "title": "The Battle Is On! Show Them What You Got From Training!",
+            "episode": 100,
+            "title": "The Battle is on! Show Them What You Got From Training!",
             "absoluteEpisode": 521
           },
           {
-            "episode": 41,
-            "title": "Everyone Together! Luffy, Setting Out For The New World!",
+            "episode": 101,
+            "title": "Everyone Together! Luffy, Setting Out for the New World!",
             "absoluteEpisode": 522
-          },
-          {
-            "episode": 42,
-            "title": "A Suprising Fact! The Man Who Guarded The Sunny!",
-            "absoluteEpisode": 523
-          },
-          {
-            "episode": 43,
-            "title": "Deadly Combat Under The Sea! The Demon Of The Ocean Strikes!",
-            "absoluteEpisode": 524
-          },
-          {
-            "episode": 44,
-            "title": "Lost In The Deep Sea! The Straw Hats Get Seperated!",
-            "absoluteEpisode": 525
-          },
-          {
-            "episode": 45,
-            "title": "Undersea Volcanic Eruption! Drifting To The Fishman Island!",
-            "absoluteEpisode": 526
-          },
-          {
-            "episode": 46,
-            "title": "Landing at The Fishman Island! Beautiful Mermaids!",
-            "absoluteEpisode": 527
-          },
-          {
-            "episode": 47,
-            "title": "Excitement Blow-Out! Sanji\\'s Life Under Threat!",
-            "absoluteEpisode": 528
-          },
-          {
-            "episode": 48,
-            "title": "Fish-Man Island Collapses?! Shyarly\\'s Prediction",
-            "absoluteEpisode": 529
           }
         ]
       },
@@ -2750,248 +2714,293 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "The King of The Fishman Island!, Neptune, The God Of The Sea!",
-            "absoluteEpisode": 530
+            "title": "A Surprising Fact! The Man Who Guarded the Sunny!",
+            "absoluteEpisode": 523
           },
           {
             "episode": 2,
-            "title": "The Ryugu Palace! Taken By The Shark That They Saved!",
-            "absoluteEpisode": 531
+            "title": "Deadly Combat under the Sea! The Demon of the Ocean Strikes!",
+            "absoluteEpisode": 524
           },
           {
             "episode": 3,
-            "title": "A Coward and a Crybaby! The Princess in the Hard Shell Tower",
-            "absoluteEpisode": 532
+            "title": "Lost in the Deep Sea! The Straw Hats Get Separated!",
+            "absoluteEpisode": 525
           },
           {
             "episode": 4,
-            "title": "It\\'s An Emergency! The Ryugu Palace Is Occupied!",
-            "absoluteEpisode": 533
+            "title": "Undersea Volcanic Eruption! Drifting to the Fish-Man Island!",
+            "absoluteEpisode": 526
           },
           {
             "episode": 5,
-            "title": "The Ryugu Palace In Shock! The Kidnapping Of Shirahoshi!",
-            "absoluteEpisode": 534
+            "title": "Landing at the Fish-Man Island! Beautiful Mermaids!",
+            "absoluteEpisode": 527
           },
           {
             "episode": 6,
-            "title": "Hordy\\'s Onslaught! The Retaliatory Plan Set into Motion!",
-            "absoluteEpisode": 535
+            "title": "Excitement Blow-out! Sanji\'s Life Under Threat!",
+            "absoluteEpisode": 528
           },
           {
             "episode": 7,
-            "title": "The Battle In The Ryugu Palace! Zoro Vs. Hordy!",
-            "absoluteEpisode": 536
+            "title": "The Fish-Man Island Will Be Annihilated?! Sharley\'s Prophecy!",
+            "absoluteEpisode": 529
           },
           {
             "episode": 8,
+            "title": "The King of the Fish-Man Island! Neptune, the God of the Sea!",
+            "absoluteEpisode": 530
+          },
+          {
+            "episode": 9,
+            "title": "Ryugu Palace! Taken by the Shark that They Saved!",
+            "absoluteEpisode": 531
+          },
+          {
+            "episode": 10,
+            "title": "A Coward and a Crybaby! The Princess in the Hard Shell Tower!",
+            "absoluteEpisode": 532
+          },
+          {
+            "episode": 11,
+            "title": "It\'s An Emergency! The Ryugu Palace Is Occupied!",
+            "absoluteEpisode": 533
+          },
+          {
+            "episode": 12,
+            "title": "The Ryugu Palace in Shock! the Kidnapping of Shirahoshi!",
+            "absoluteEpisode": 534
+          },
+          {
+            "episode": 13,
+            "title": "Hordy\'s Onslaught! The Retaliatory Plan Set Into Motion!",
+            "absoluteEpisode": 535
+          },
+          {
+            "episode": 14,
+            "title": "The Ryugu Palace Fight! Zoro vs. Hordy!",
+            "absoluteEpisode": 536
+          },
+          {
+            "episode": 15,
             "title": "Keep Shirahoshi Safe! Decken Close Behind!",
             "absoluteEpisode": 537
           },
           {
-            "episode": 9,
-            "title": "The Crew Falls?! Hody Conquers Ryuuguu Palace",
+            "episode": 16,
+            "title": "The Straw Hats Defeated!? Hordy Gains Control of the Ryugu Palace!",
             "absoluteEpisode": 538
           },
           {
-            "episode": 10,
-            "title": "The Haunting Ties! Nami And The Fishmen Pirates!",
+            "episode": 17,
+            "title": "The Haunting Ties! Nami And The Fish-Man Pirates! The Resurrected Destiny! Nami and the Fishman Pirate Crew!",
             "absoluteEpisode": 539
           },
           {
-            "episode": 11,
+            "episode": 18,
             "title": "A Hero Who Freed The Slaves! An Adventurer Tiger!",
             "absoluteEpisode": 540
           },
           {
-            "episode": 12,
+            "episode": 19,
             "title": "Kizaru Appears! A Trap To Catch Tiger!",
             "absoluteEpisode": 541
           },
           {
-            "episode": 13,
-            "title": "Toriko x One Piece Special: Team Formation! Save Chopper!",
+            "episode": 20,
+            "title": "A Team Is Formed! Save Chopper (II)",
             "absoluteEpisode": 542
           },
           {
-            "episode": 14,
-            "title": "The Death Of The Hero! A Shocking Truth Of Tiger!",
+            "episode": 21,
+            "title": "The Death of the Hero! A Shocking Truth of Tiger!",
             "absoluteEpisode": 543
           },
           {
-            "episode": 15,
-            "title": "The Sun Pirates Split! Jimbe Vs. Arlong!",
+            "episode": 22,
+            "title": "The Sun Pirates Split! Jimbei vs. Arlong!",
             "absoluteEpisode": 544
           },
           {
-            "episode": 16,
-            "title": "Shaking Fishman Island! A Celestial Dragon Drifts In!",
+            "episode": 23,
+            "title": "Shaking Fish-Man Island! A Celestial Dragon Drifts In!",
             "absoluteEpisode": 545
           },
           {
-            "episode": 17,
-            "title": "A Sudden Tragedy! A Gunshot Shuts Down The Future!",
+            "episode": 24,
+            "title": "A Sudden Tragedy! A Gunshot Shuts Down the Future!",
             "absoluteEpisode": 546
           },
           {
-            "episode": 18,
-            "title": "Back To The Present! Hordy Makes A Move!",
+            "episode": 25,
+            "title": "Back to the Present! Hordy Makes a Move!",
             "absoluteEpisode": 547
           },
           {
-            "episode": 19,
-            "title": "The Kingdom In Shock! An Order to Execute Neptune Issued!",
+            "episode": 26,
+            "title": "The Kingdom in Shock! An Order to Execute Neptune Issued!",
             "absoluteEpisode": 548
           },
           {
-            "episode": 20,
-            "title": "A Rift Opens Up! Luffy Vs. Jimbei!",
+            "episode": 27,
+            "title": "A Rift Opens Up! Luffy vs. Jimbei!",
             "absoluteEpisode": 549
           },
           {
-            "episode": 21,
-            "title": "Something Has Happened To Hordy! The True Power Of The Evil Drug!",
+            "episode": 28,
+            "title": "Something Has Happened to Hordy! The True Power of the Evil Drug!",
             "absoluteEpisode": 550
           },
           {
-            "episode": 22,
-            "title": "The Battle Is On! At Conchcorde Plaza!",
+            "episode": 29,
+            "title": "The Battle is on! At Conchcorde Plaza!",
             "absoluteEpisode": 551
           },
           {
-            "episode": 23,
-            "title": "A Surprising Confession! The Truth Behind The Assassination Of Otohime!",
+            "episode": 30,
+            "title": "Surprising Confession! The Truth Behind the Assassination of Otohime!",
             "absoluteEpisode": 552
           },
           {
-            "episode": 24,
-            "title": "Shirahoshi\\'s Tears! Luffy Finally Shows Up!",
+            "episode": 31,
+            "title": "Shirahoshi\'s Tears! Luffy Finally Shows Up!",
             "absoluteEpisode": 553
           },
           {
-            "episode": 25,
-            "title": "A Big Clash! The Straw Hats Vs. A Hundered Thousand Enemies!",
+            "episode": 32,
+            "title": "A Great Clash! The Straw Hat Crew vs. 100,000 Enemies",
             "absoluteEpisode": 554
           },
           {
-            "episode": 26,
-            "title": "Deadly Attacks! Zoro And Sanji Join The Battle!",
+            "episode": 33,
+            "title": "Deadly Attacks One After Another! Zoro and Sanji Join The Battle!",
             "absoluteEpisode": 555
           },
           {
-            "episode": 27,
-            "title": "Unveiled! The Secret Weapons Of The Sunny!",
+            "episode": 34,
+            "title": "Unveiled! The Secret Weapons of the Sunny!",
             "absoluteEpisode": 556
           },
           {
-            "episode": 28,
-            "title": "Iron Pirate! Here Comes General Franky!",
+            "episode": 35,
+            "title": "Iron Pirates! General Franky Appears",
             "absoluteEpisode": 557
           },
           {
-            "episode": 29,
-            "title": "The Noah Closing In! The Fishman Island Facing Destruction!",
+            "episode": 36,
+            "title": "Noah Approaches! The Crisis of Fishman Island\'s Destruction!",
             "absoluteEpisode": 558
           },
           {
-            "episode": 30,
-            "title": "Hurry Up Luffy! Shirahoshi\\'s Life In Jeopardy!",
+            "episode": 37,
+            "title": "Hurry Up, Luffy! Shirahoshi\'s Desperate Situation",
             "absoluteEpisode": 559
           },
           {
-            "episode": 31,
-            "title": "The Fierce Fight Begins! Luffy Vs. Hordy!",
+            "episode": 38,
+            "title": "The Battle Begins! Luffy Vs. Hordy!",
             "absoluteEpisode": 560
           },
           {
-            "episode": 32,
-            "title": "A Massive Confused Fight! The Straw Hats Vs. The New Fishmen Pirates!",
+            "episode": 39,
+            "title": "A Massive Confused Fight! The Straw Hats vs. The New Fish-Man Pirates!",
             "absoluteEpisode": 561
           },
           {
-            "episode": 33,
-            "title": "Luffy Loses The Fight! Hordy\\'s Long-Awaited Revenge!",
+            "episode": 40,
+            "title": "Luffy Loses the Fight?! Hordy\'s Long Awaited Revenge!",
             "absoluteEpisode": 562
           },
           {
-            "episode": 34,
-            "title": "A Shocking Fact! The True Identity Of Hordy!",
+            "episode": 41,
+            "title": "A Shocking Fact! The True Identity of Hordy!",
             "absoluteEpisode": 563
           },
           {
-            "episode": 35,
-            "title": "Back To Zero! Ernest Wishes For Luffy!",
+            "episode": 42,
+            "title": "Back to Zero! Ernest Wishes for Luffy!",
             "absoluteEpisode": 564
           },
           {
-            "episode": 36,
-            "title": "Luffy\\'s All Out Attack! Red Hawk Blasts!",
+            "episode": 43,
+            "title": "Luffy\'s All-out Attack! Red Hawk Blasts!",
             "absoluteEpisode": 565
           },
           {
-            "episode": 37,
-            "title": "Coming To An End! The Final Decisive Battle Against Hordy!",
+            "episode": 44,
+            "title": "Coming to an End! The Final Decisive Battle Against Hordy",
             "absoluteEpisode": 566
           },
           {
-            "episode": 38,
-            "title": "Stop Noah! Desperate Elephant Gatling!",
+            "episode": 45,
+            "title": "Stop, Noah! Desperate Elephant Gantling!",
             "absoluteEpisode": 567
           },
           {
-            "episode": 39,
-            "title": "To The Future! The Path To The Sun!",
+            "episode": 46,
+            "title": "To the Future! The Path to the Sun!",
             "absoluteEpisode": 568
           },
           {
-            "episode": 40,
-            "title": "The Secret Revealed! The Truth About The Ancient Weapon!",
+            "episode": 47,
+            "title": "The Secret Revealed! The Truth About the Ancient Weapon!",
             "absoluteEpisode": 569
           },
           {
-            "episode": 41,
-            "title": "The Straw Hat\\'s Stunned! The New Fleet Admiral Of The Navy!",
+            "episode": 48,
+            "title": "The Straw Hats Stunned! The New Fleet Admiral of the Navy!",
             "absoluteEpisode": 570
           },
           {
-            "episode": 42,
-            "title": "She Loves Sweets! Big Mom Of The Four Emporers!",
+            "episode": 49,
+            "title": "She Loves Sweets! Big Mom of the Four Emperors!",
             "absoluteEpisode": 571
           },
           {
-            "episode": 43,
-            "title": "Many Problems Lie Ahead! A Trap Awaiting In The New World!",
+            "episode": 50,
+            "title": "Many Problems Lie Ahead! A Trap Awaiting in the New World!",
             "absoluteEpisode": 572
           },
           {
-            "episode": 44,
-            "title": "Finally Time To Go! Goodbye Fishman Island!",
+            "episode": 51,
+            "title": "Finally Time to Go! Goodbye, Fish-Man Island!",
             "absoluteEpisode": 573
           },
           {
-            "episode": 45,
-            "title": "To the New World! Heading For The Ultimate Sea!",
+            "episode": 52,
+            "title": "To the New World! Heading for the Ultimate Sea!",
             "absoluteEpisode": 574
           },
           {
-            "episode": 46,
-            "title": "Z\\'s Ambition Arc - The Little Giant Lily!",
+            "episode": 53,
+            "title": "Z\'s Ambition! Lily the Little Giant!",
             "absoluteEpisode": 575
           },
           {
-            "episode": 47,
-            "title": "Z\\'s Ambition Arc - Introduction of the Mystery of the Strongest Army Corps!",
+            "episode": 54,
+            "title": "Z\'s Ambition! A Dark and Powerful Army!",
             "absoluteEpisode": 576
           },
           {
-            "episode": 48,
-            "title": "Z\\'s Ambition Arc - A Desperate Big Escape Strategy!",
+            "episode": 55,
+            "title": "Z\'s Ambition! A Great and Desperate Escape Plan!",
             "absoluteEpisode": 577
           },
           {
-            "episode": 49,
-            "title": "Z\\'s Ambition Arc - Luffy vs. Shuzo!",
+            "episode": 56,
+            "title": "Z\'s Ambition! Luffy vs. Shuzo!",
             "absoluteEpisode": 578
+          },
+          {
+            "episode": 57,
+            "title": "Arriving! A Burning Island - Punk Hazard!",
+            "absoluteEpisode": 579
+          },
+          {
+            "episode": 58,
+            "title": "A Battle in the Heat! Luffy vs. The Giant Dragon!",
+            "absoluteEpisode": 580
           }
         ]
       },
@@ -3000,243 +3009,313 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Arriving! A Burning Island - Punk Hazard!",
-            "absoluteEpisode": 579
-          },
-          {
-            "episode": 2,
-            "title": "A Battle In The Heat! Luffy Vs. The Giant Dragon!",
-            "absoluteEpisode": 580
-          },
-          {
-            "episode": 3,
-            "title": "The Straw Hats Stunned! Enter: A Samaura\\'s Horrifying Severed Head!",
+            "title": "The Straw Hats Stunned! Enter: A Samurai\'s Horrifying Severed Head!",
             "absoluteEpisode": 581
           },
           {
-            "episode": 4,
-            "title": "Startling! The Secret of the Island is Finally Revealed!",
+            "episode": 2,
+            "title": "Startling! The Secret of the Island Is Finally Revealed",
             "absoluteEpisode": 582
           },
           {
-            "episode": 5,
-            "title": "Save the Children! The Straw Hats Start To Fight!",
+            "episode": 3,
+            "title": "Save the Children! The Straw Hats Start to Fight!",
             "absoluteEpisode": 583
           },
           {
-            "episode": 6,
+            "episode": 4,
             "title": "A Swordplay Showdown! Brook Vs. The Mysterious Torso Samurai!",
             "absoluteEpisode": 584
           },
           {
-            "episode": 7,
-            "title": "The Warlord! Trafalgar Law!",
+            "episode": 5,
+            "title": "The Warlord! Trafalgar Law",
             "absoluteEpisode": 585
           },
           {
-            "episode": 8,
-            "title": "In A Real Pinch! Luffy Sinks Into The Ice-Cold Lake!",
+            "episode": 6,
+            "title": "In a Real Pinch! Luffy Sinks into the Ice-cold Lake!",
             "absoluteEpisode": 586
           },
           {
-            "episode": 9,
+            "episode": 7,
             "title": "A Collision! Law vs. Vice Admiral Smoker!",
             "absoluteEpisode": 587
           },
           {
-            "episode": 10,
+            "episode": 8,
             "title": "Meeting Again After Two Years! Luffy and Law!",
             "absoluteEpisode": 588
           },
           {
-            "episode": 11,
-            "title": "The Worst In The World! A Scientist Of Terror - Caesar!",
+            "episode": 9,
+            "title": "The Worst in the World! A Scientist of Terror - Caesar!",
             "absoluteEpisode": 589
           },
           {
-            "episode": 12,
-            "title": "History\\'s Strongest Collaboration! Vs. Glutton of the Sea!",
+            "episode": 10,
+            "title": "History\'s Strongest Collaboration vs. Glutton of the Sea (II)",
             "absoluteEpisode": 590
           },
           {
-            "episode": 13,
-            "title": "Chopper\\'s Fury! The Master\\'s Inhumane Experiment!",
+            "episode": 11,
+            "title": "Chopper\'s Fury! The Master\'s Inhumane Experiment!",
             "absoluteEpisode": 591
           },
           {
-            "episode": 14,
-            "title": "To Annihlate The Straw Hats! Legendary Assassins Descend!",
+            "episode": 12,
+            "title": "To Annihilate the Straw Hats! Legendary Assassins Descend!",
             "absoluteEpisode": 592
           },
           {
-            "episode": 15,
-            "title": "Save Nami! Luffy\\'s Fight On The Snow-Capped Mountains!",
+            "episode": 13,
+            "title": "Save Nami! Luffy\'s Fight on the Snow-Capped Mountains!",
             "absoluteEpisode": 593
           },
           {
-            "episode": 16,
-            "title": "Formation! The Pirate Alliance Luffy-Law!",
+            "episode": 14,
+            "title": "Formed! Luffy and Law\'s Pirate Alliance!",
             "absoluteEpisode": 594
           },
           {
-            "episode": 17,
-            "title": "Capture M! The Pirate Alliances\\'s Operation Launches!",
+            "episode": 15,
+            "title": "Capture M! The Pirate Alliance\'s Operation Launches!",
             "absoluteEpisode": 595
           },
           {
-            "episode": 18,
-            "title": "On The Verge Of Annihilation! A Deadly Monster Comes Flying In!",
+            "episode": 16,
+            "title": "On the Verge of Annihilation! A Deadly Monster Comes Flying In!",
             "absoluteEpisode": 596
           },
           {
-            "episode": 19,
+            "episode": 17,
             "title": "An Intense Battle! Caesar Exercises His True Power!",
             "absoluteEpisode": 597
           },
           {
-            "episode": 20,
-            "title": "A Samurai Who Can Cut Fire! Foxfire Kin\\'Emon!",
+            "episode": 18,
+            "title": "The Samurai that Cuts the Fire! Kin\'emon of Foxfire!",
             "absoluteEpisode": 598
           },
           {
-            "episode": 21,
-            "title": "Shock! Identity of Vergo, the Mysterious Man",
+            "episode": 19,
+            "title": "Shocking! The True Identity of the Mystery Man Vergo!",
             "absoluteEpisode": 599
           },
           {
-            "episode": 22,
-            "title": "Save The Children! The Master\\'s Evil Hands Close In!",
+            "episode": 20,
+            "title": "Save the Children! The Master\'s Evil Hands Close in!",
             "absoluteEpisode": 600
           },
           {
-            "episode": 23,
-            "title": "Shaking Up The New World! Caesar\\'s Horrendous Experiment!",
+            "episode": 21,
+            "title": "Shaking Up the New World! Caesar\'s Horrendous Experiment!",
             "absoluteEpisode": 601
           },
           {
-            "episode": 24,
-            "title": "The Deadliest Weapon of Mass Destruction in History! Land Of The Dead!",
+            "episode": 22,
+            "title": "The Deadliest Weapon of Mass Destruction in History! Shinokuni!",
             "absoluteEpisode": 602
           },
           {
-            "episode": 25,
-            "title": "The Counterattack Begins! Luffy and Law\\'s Great Escape",
+            "episode": 23,
+            "title": "Launching the Counter Attack! Luffy and Law\'s Great Escape!",
             "absoluteEpisode": 603
           },
           {
-            "episode": 26,
-            "title": "Get To Building R! The Pirate Alliance\\'s Great Advance!",
+            "episode": 24,
+            "title": "Get to Building R! The Pirate Alliance\'s Great Advance!",
             "absoluteEpisode": 604
           },
           {
-            "episode": 27,
-            "title": "Tashigi\\'s Tears! G5\\'s Desperate Breakthrough Plan!",
+            "episode": 25,
+            "title": "Tashigi\'s Tears! G-5\'s Desperate Breakthrough Plan!",
             "absoluteEpisode": 605
           },
           {
-            "episode": 28,
+            "episode": 26,
             "title": "The Treacherous Vice Admiral! Demon Bamboo Vergo!",
             "absoluteEpisode": 606
           },
           {
-            "episode": 29,
+            "episode": 27,
             "title": "A Fierce Battle Gets Heated! Luffy vs. Caesar!",
             "absoluteEpisode": 607
           },
           {
-            "episode": 30,
-            "title": "The Mastermind in the Shadows! Doflamingo Moves!",
+            "episode": 28,
+            "title": "A Mastermind Underground! Doflamingo Makes His Move!",
             "absoluteEpisode": 608
           },
           {
-            "episode": 31,
+            "episode": 29,
             "title": "Luffy Dies from Exposure?! The Spine-chilling Snow Woman Monet!",
             "absoluteEpisode": 609
           },
           {
-            "episode": 32,
-            "title": "Fist Fight! Two Vice Admirals Fight",
+            "episode": 30,
+            "title": "Fists Collide! A Battle of the Two Vice Admirals!",
             "absoluteEpisode": 610
           },
           {
-            "episode": 33,
-            "title": "The Small Dragon! Momonosuke Appears",
+            "episode": 31,
+            "title": "A Small Dragon! Momonosuke Appears!",
             "absoluteEpisode": 611
           },
           {
-            "episode": 34,
-            "title": "Deadly Combat in Snowstorm The Straw Hats vs. the Snow Woman",
+            "episode": 32,
+            "title": "A Deadly Fight in a Blizzard! The Straw Hats vs. the Snow Woman!",
             "absoluteEpisode": 612
           },
           {
-            "episode": 35,
-            "title": "Showing Off His Techniques! Zoro\\'s Formidable One-Sword Style!",
+            "episode": 33,
+            "title": "Showing Off His Techniques! Zoro\'s Formidable One-Sword Style!",
             "absoluteEpisode": 613
           },
           {
-            "episode": 36,
-            "title": "I\\'ll Protect My Friends! Mocha\\'s Desperate Escape",
+            "episode": 34,
+            "title": "To Save Her Friends! Mocha Runs at the Risk of Her Life!",
             "absoluteEpisode": 614
           },
           {
-            "episode": 37,
-            "title": "Brownbeard\\'s In Grief! Luffy Lands A Furious Blow!",
+            "episode": 35,
+            "title": "Brownbeard in Grief! Luffy Lands a Furious Blow!",
             "absoluteEpisode": 615
           },
           {
-            "episode": 38,
-            "title": "A Surprising Outcome! White Hunter vs. Vergo!",
+            "episode": 36,
+            "title": "A Surprising Outcome! White Chase vs. Vergo!",
             "absoluteEpisode": 616
           },
           {
-            "episode": 39,
-            "title": "Caesar Defeat! The Powerful Grizzly Magnum!",
+            "episode": 37,
+            "title": "Caesar\'s Defeat! The Powerful Grizzly Magnum!",
             "absoluteEpisode": 617
           },
           {
-            "episode": 40,
-            "title": "Raid! An Assassin From Dressrosa!",
+            "episode": 38,
+            "title": "Raid! An Assassin from Dressrosa!",
             "absoluteEpisode": 618
           },
           {
-            "episode": 41,
-            "title": "Runninng Wild! Invincible General Franky!",
+            "episode": 39,
+            "title": "Running Wild! Invincible General Franky!",
             "absoluteEpisode": 619
           },
           {
-            "episode": 42,
+            "episode": 40,
             "title": "A Critical Situation! Punk Hazard Explodes!",
             "absoluteEpisode": 620
           },
           {
-            "episode": 43,
-            "title": "Capture Caesar! General Cannon Blast\\'s!",
+            "episode": 41,
+            "title": "Capture Caesar! General Cannon Blast!",
             "absoluteEpisode": 621
           },
           {
-            "episode": 44,
-            "title": "A Touching Reunion! Momonosuke and Kin\\'emon!",
+            "episode": 42,
+            "title": "A Touching Reunion! Momonosuke and Kin\'emon!",
             "absoluteEpisode": 622
           },
           {
-            "episode": 45,
-            "title": "It\\'s Time To Say Goodbye! Leaving Punk Hazard!",
+            "episode": 43,
+            "title": "It\'s Time to Say Goodbye! Leaving Punk Hazard!",
             "absoluteEpisode": 623
           },
           {
-            "episode": 46,
-            "title": "The G-5 Wiped Out! Doflamingo\\'s Sudden Attack!",
+            "episode": 44,
+            "title": "The G-5 Wiped Out! Doflamingo\'s Sudden Attack!",
             "absoluteEpisode": 624
           },
           {
-            "episode": 47,
-            "title": "Intense! Aokiji Vs. Doflamingo!",
+            "episode": 45,
+            "title": "Intense! Aokiji vs. Doflamingo!",
             "absoluteEpisode": 625
           },
           {
-            "episode": 48,
-            "title": "Caesar Goes Missing! The Pirate Alliance Makes A Sortie!",
+            "episode": 46,
+            "title": "Caesar Goes Missing! The Pirate Alliance Makes a Sortie!",
             "absoluteEpisode": 626
+          },
+          {
+            "episode": 47,
+            "title": "Luffy Dies at Sea?! The Pirate Alliance Comes Apart!",
+            "absoluteEpisode": 627
+          },
+          {
+            "episode": 48,
+            "title": "A Major Turnaround! Luffy\'s Angry Iron Fist Strikes!",
+            "absoluteEpisode": 628
+          },
+          {
+            "episode": 49,
+            "title": "Startling! The Big News Shakes Up the New World!",
+            "absoluteEpisode": 629
+          },
+          {
+            "episode": 50,
+            "title": "Explore! A Kingdom of Love and Passion: Dressrosa!",
+            "absoluteEpisode": 630
+          },
+          {
+            "episode": 51,
+            "title": "Full of Enthusiasm! The Corrida Colosseum!",
+            "absoluteEpisode": 631
+          },
+          {
+            "episode": 52,
+            "title": "A Dangerous Love! The Dancer Girl: Violet!",
+            "absoluteEpisode": 632
+          },
+          {
+            "episode": 53,
+            "title": "A Formidable, Unknown Warrior! Here Comes Lucy!",
+            "absoluteEpisode": 633
+          },
+          {
+            "episode": 54,
+            "title": "A Pirate Noble! Cavendish!",
+            "absoluteEpisode": 634
+          },
+          {
+            "episode": 55,
+            "title": "The Fateful Reunion! Bellamy the Hyena!",
+            "absoluteEpisode": 635
+          },
+          {
+            "episode": 56,
+            "title": "A Super Rookie! Bartolomeo the Cannibal!",
+            "absoluteEpisode": 636
+          },
+          {
+            "episode": 57,
+            "title": "Big Names Duke It Out! The Heated Block B Battle!",
+            "absoluteEpisode": 637
+          },
+          {
+            "episode": 58,
+            "title": "A Deadly Blow! The Astonishing King Punch!",
+            "absoluteEpisode": 638
+          },
+          {
+            "episode": 59,
+            "title": "The Fishing Fish Strike! Across the Deadly Iron Bridge!",
+            "absoluteEpisode": 639
+          },
+          {
+            "episode": 60,
+            "title": "Explore! Fairies\' Island - Green Bit!",
+            "absoluteEpisode": 640
+          },
+          {
+            "episode": 61,
+            "title": "The Unknown World! The Tontatta Kingdom!",
+            "absoluteEpisode": 641
+          },
+          {
+            "episode": 62,
+            "title": "The Stratagem of the Century! Doflamingo Makes His Move!",
+            "absoluteEpisode": 642
           }
         ]
       },
@@ -3245,253 +3324,253 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Luffy Dies At Sea! The Pirate Alliance Comes Apart!",
-            "absoluteEpisode": 627
-          },
-          {
-            "episode": 2,
-            "title": "A Major Turnaround! Luffy\\'s Angry Iron Fist Strikes!",
-            "absoluteEpisode": 628
-          },
-          {
-            "episode": 3,
-            "title": "Startling! The Big News Shakes Up The New World!",
-            "absoluteEpisode": 629
-          },
-          {
-            "episode": 4,
-            "title": "Explore! A Kingdom Of Love And Passion - Dresrosa!",
-            "absoluteEpisode": 630
-          },
-          {
-            "episode": 5,
-            "title": "Full Of Enthusiasm! The Corrida Colosseum!",
-            "absoluteEpisode": 631
-          },
-          {
-            "episode": 6,
-            "title": "A Dangerous Love! The Dancer Girl - Violet!",
-            "absoluteEpisode": 632
-          },
-          {
-            "episode": 7,
-            "title": "A Formidable, Unknown Warrior! Here Comes Lucy!",
-            "absoluteEpisode": 633
-          },
-          {
-            "episode": 8,
-            "title": "A Pirate Noble! Cavendish!",
-            "absoluteEpisode": 634
-          },
-          {
-            "episode": 9,
-            "title": "The Fatefull Reunion! Bellamy the Hyena!",
-            "absoluteEpisode": 635
-          },
-          {
-            "episode": 10,
-            "title": "A Super Rookie! Bartolomeo the Cannibal!",
-            "absoluteEpisode": 636
-          },
-          {
-            "episode": 11,
-            "title": "Big Names Duke It Out! The Heated Block B Battle!",
-            "absoluteEpisode": 637
-          },
-          {
-            "episode": 12,
-            "title": "A Deadly Blow! The Astonishing King Punch!",
-            "absoluteEpisode": 638
-          },
-          {
-            "episode": 13,
-            "title": "The Fighting Fish Strike! Across The Deadly Iron Bridge!",
-            "absoluteEpisode": 639
-          },
-          {
-            "episode": 14,
-            "title": "Explore! Fairies\\' Island - Green Bit!",
-            "absoluteEpisode": 640
-          },
-          {
-            "episode": 15,
-            "title": "The Unknown World! The Tontatta Kingdom!",
-            "absoluteEpisode": 641
-          },
-          {
-            "episode": 16,
-            "title": "The Stratagem Of The Century! Doflamingo Makes His Move!",
-            "absoluteEpisode": 642
-          },
-          {
-            "episode": 17,
-            "title": "Shaking Heaven And Earth! Admiral Fujitora\\'s Power!",
+            "title": "Shaking Heaven and Earth! Admiral Fujitora\'s Power!",
             "absoluteEpisode": 643
           },
           {
-            "episode": 18,
+            "episode": 2,
             "title": "A Blow of Anger! A Giant vs. Lucy!",
             "absoluteEpisode": 644
           },
           {
-            "episode": 19,
-            "title": "Destruction Cannon Blasts! Lucy In Trouble!",
+            "episode": 3,
+            "title": "Destruction Cannon Blasts! Lucy in Trouble!",
             "absoluteEpisode": 645
           },
           {
-            "episode": 20,
-            "title": "The Legendary Pirate! Don Chin Jao!",
+            "episode": 4,
+            "title": "The Legendary Pirate! Don Chinjao!",
             "absoluteEpisode": 646
           },
           {
-            "episode": 21,
-            "title": "Light and Shadow! Darkness Behind Dressrosa!",
+            "episode": 5,
+            "title": "Light and Shadow! Darkness behind Dressrosa!",
             "absoluteEpisode": 647
           },
           {
-            "episode": 22,
-            "title": "Making A Sortie! The Legendary Hero Usoland",
+            "episode": 6,
+            "title": "Making a Sortie! The Legendary Hero Usoland!",
             "absoluteEpisode": 648
           },
           {
-            "episode": 23,
-            "title": "The Fierce Battle Coming To The End! Lucy vs. Chin Jao!",
+            "episode": 7,
+            "title": "The Fierce Battle Coming to the End! Lucy vs. Chinjao!",
             "absoluteEpisode": 649
           },
           {
-            "episode": 24,
-            "title": "Luffy And The Gladiator Of Fate! Rebecca!",
+            "episode": 8,
+            "title": "Luffy and the Gladiator of Fate - Rebecca!",
             "absoluteEpisode": 650
           },
           {
-            "episode": 25,
-            "title": "Protect You To the End! Rebecca And The Toy Soldier!",
+            "episode": 9,
+            "title": "Protect You to the End! Rebecca and the Toy Soldier!",
             "absoluteEpisode": 651
           },
           {
-            "episode": 26,
-            "title": "The Last - And Bloodiest - Block! Block D Battle Begins!",
+            "episode": 10,
+            "title": "The Last - and Bloodiest - Block! Block D Battle Begins!",
             "absoluteEpisode": 652
           },
           {
-            "episode": 27,
-            "title": "A Decisive Battle! Giolla vs. The Straw Hats!",
+            "episode": 11,
+            "title": "A Decisive Battle! Giolla vs. the Straw Hats!",
             "absoluteEpisode": 653
           },
           {
-            "episode": 28,
-            "title": "Beautiful Sword! Cavendish Of The White Horse!",
+            "episode": 12,
+            "title": "Beautiful Sword! Cavendish of the White Horse!",
             "absoluteEpisode": 654
           },
           {
-            "episode": 29,
-            "title": "A Big Clash! Sanji vs. Doflamingo!",
+            "episode": 13,
+            "title": "The Great Clash! Sanji vs. Doflamingo!",
             "absoluteEpisode": 655
           },
           {
-            "episode": 30,
-            "title": "Rebecca\\'s Special Attack! Back - To - The Water Dance!",
+            "episode": 14,
+            "title": "Rebeccca’s Sword of Death! Backwater Sword Dance!",
             "absoluteEpisode": 656
           },
           {
-            "episode": 31,
+            "episode": 15,
             "title": "The Most Violent Fighter! Logan vs. Rebecca!",
             "absoluteEpisode": 657
           },
           {
-            "episode": 32,
-            "title": "A Big Surprise! A True Identity Of The Toy Soldier!",
+            "episode": 16,
+            "title": "A Big Surprise! A True Identity of the Toy Soldier!",
             "absoluteEpisode": 658
           },
           {
-            "episode": 33,
-            "title": "A Horrible Past! The Secret Of Dressrosa!",
+            "episode": 17,
+            "title": "A Horrible Past! The Secret of Dressrosa!",
             "absoluteEpisode": 659
           },
           {
-            "episode": 34,
-            "title": "A Nightmare! The Tragic Night Of Dressrosa!",
+            "episode": 18,
+            "title": "A Nightmare! The Tragic Night of Dressrosa!",
             "absoluteEpisode": 660
           },
           {
-            "episode": 35,
+            "episode": 19,
             "title": "A Showdown Between the Warlords! Law vs. Doflamingo!",
             "absoluteEpisode": 661
           },
           {
-            "episode": 36,
+            "episode": 20,
             "title": "Two Great Rivals Meet Each Other! Straw Hat and Heavenly Demon!",
             "absoluteEpisode": 662
           },
           {
-            "episode": 37,
-            "title": "Luffy Astonished! The Man Who Inherit\\'s Ace\\'s Will!",
+            "episode": 21,
+            "title": "Luffy Astonished! The Man Who Inherits Ace\'s Will!",
             "absoluteEpisode": 663
           },
           {
-            "episode": 38,
-            "title": "Operation SOP Starts - Usoland Charges Forth",
+            "episode": 22,
+            "title": "Operation SOP Starts! Usoland Charges Forth!",
             "absoluteEpisode": 664
           },
           {
-            "episode": 39,
+            "episode": 23,
             "title": "A Burning Passion! Rebecca vs. Suleiman!",
             "absoluteEpisode": 665
           },
           {
-            "episode": 40,
-            "title": "The End Of The Match?! A Surprising Result Of Block D!",
+            "episode": 24,
+            "title": "The End of the Match?! A Surprising Result of Block D!",
             "absoluteEpisode": 666
           },
           {
-            "episode": 41,
-            "title": "The Admiral\\'s Decision! Fujitora vs. Doflamingo!",
+            "episode": 25,
+            "title": "The Admiral\'s Decision! Fujitora vs. Doflamingo!",
             "absoluteEpisode": 667
           },
           {
-            "episode": 42,
-            "title": "The Final Round Starts - Diamante the Hero Shows Up",
+            "episode": 26,
+            "title": "The Final Round Starts! Diamante The Hero Shows Up!",
             "absoluteEpisode": 668
           },
           {
-            "episode": 43,
-            "title": "The Castle Moves! Elite Officer Pica Emerges",
+            "episode": 27,
+            "title": "A Moving Castle! The Top Executive Pica Rises up!",
             "absoluteEpisode": 669
           },
           {
-            "episode": 44,
-            "title": "Dragon Claw Strikes! Lucy\\'s Intimidating Attack!",
+            "episode": 28,
+            "title": "Dragon Claw Strikes! Lucy\'s Intimidating Attack!",
             "absoluteEpisode": 670
           },
           {
-            "episode": 45,
-            "title": "Defeat Sugar! The Army Of The Little People Charges!",
+            "episode": 29,
+            "title": "Defeat Sugar! The Army of the Little People Charges!",
             "absoluteEpisode": 671
           },
           {
-            "episode": 46,
-            "title": "The Last Light Of Hope! The Secret Of Our Commander!",
+            "episode": 30,
+            "title": "The Last Light of Hope! The Secret of Our Commander!",
             "absoluteEpisode": 672
           },
           {
-            "episode": 47,
-            "title": "The Rupture Man! Gladius Blows Up Big Time!",
+            "episode": 31,
+            "title": "The Rupture Human! Gladius Blows Up Big Time!",
             "absoluteEpisode": 673
           },
           {
-            "episode": 48,
+            "episode": 32,
             "title": "A Liar! Usoland on the Run!",
             "absoluteEpisode": 674
           },
           {
-            "episode": 49,
-            "title": "A Fateful Encounter! Kyros And King Riku!",
+            "episode": 33,
+            "title": "A Fateful Encounter! Kyros and King Riku!",
             "absoluteEpisode": 675
           },
           {
-            "episode": 50,
-            "title": "Operation Failed! Hero Usoland Dies!?",
+            "episode": 34,
+            "title": "Operation Failed! Usoland the Hero Dies!?",
             "absoluteEpisode": 676
+          },
+          {
+            "episode": 35,
+            "title": "The Legend is Back! Kyros\' All-Out Attack!",
+            "absoluteEpisode": 677
+          },
+          {
+            "episode": 36,
+            "title": "The Fire Fist Strikes! The Flare-Flare Fruit Power Returns!",
+            "absoluteEpisode": 678
+          },
+          {
+            "episode": 37,
+            "title": "Dashing onto the Scene! The Chief of Staff of the Revolutionary Army - Sabo!",
+            "absoluteEpisode": 679
+          },
+          {
+            "episode": 38,
+            "title": "The Devil\'s Trap! A Dressrosa Extermination Plan!",
+            "absoluteEpisode": 680
+          },
+          {
+            "episode": 39,
+            "title": "The 500 Million Berry Man! Target: Usoland!",
+            "absoluteEpisode": 681
+          },
+          {
+            "episode": 40,
+            "title": "Breaking through Enemy Lines! Luffy and Zoro Launch the Counter-Attack!",
+            "absoluteEpisode": 682
+          },
+          {
+            "episode": 41,
+            "title": "With a Rumbling of the Ground! The God of Destruction - Giant Pica Descends!",
+            "absoluteEpisode": 683
+          },
+          {
+            "episode": 42,
+            "title": "Gathering into a Powerful Front! Luffy and a Group of Brutal Warriors!",
+            "absoluteEpisode": 684
+          },
+          {
+            "episode": 43,
+            "title": "Steady Progress! Luffy\'s Army vs. Pica!",
+            "absoluteEpisode": 685
+          },
+          {
+            "episode": 44,
+            "title": "A Shocking Confession! Law\'s Soulful Vow!",
+            "absoluteEpisode": 686
+          },
+          {
+            "episode": 45,
+            "title": "A Big Collision! Chief of Staff - Sabo vs. Admiral Fujitora!",
+            "absoluteEpisode": 687
+          },
+          {
+            "episode": 46,
+            "title": "A Desperate Situation! Luffy Gets Caught in a Trap!",
+            "absoluteEpisode": 688
+          },
+          {
+            "episode": 47,
+            "title": "A Great Escape! Luffy\'s Tide-turning Elephant Gun!",
+            "absoluteEpisode": 689
+          },
+          {
+            "episode": 48,
+            "title": "A United Front - Luffy\'s Breakthrough Towards Victory!",
+            "absoluteEpisode": 690
+          },
+          {
+            "episode": 49,
+            "title": "The Second Samurai - Evening Shower Kanjuro Appears",
+            "absoluteEpisode": 691
+          },
+          {
+            "episode": 50,
+            "title": "A Hard-Fought Battle Against Pica! Zoro\'s Deadly Attack!",
+            "absoluteEpisode": 692
           }
         ]
       },
@@ -3500,243 +3579,283 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "The Legend is Back! Kyros\\' All-Out Attack!",
-            "absoluteEpisode": 677
-          },
-          {
-            "episode": 2,
-            "title": "The Fire Fist Strikes! - The Flare Flare Fruit Power Returns!",
-            "absoluteEpisode": 678
-          },
-          {
-            "episode": 3,
-            "title": "Dashing onto the Scene - The Chief of Staff of the Revolutionary Army, Sabo!",
-            "absoluteEpisode": 679
-          },
-          {
-            "episode": 4,
-            "title": "The Devil\\'s Trap - Dressrosa Annihilation Plan",
-            "absoluteEpisode": 680
-          },
-          {
-            "episode": 5,
-            "title": "The 500 Million Berry Man! Target: Usoland!",
-            "absoluteEpisode": 681
-          },
-          {
-            "episode": 6,
-            "title": "Breakthrough the Enemy Lines - Luffy and Zoro\\'s Counterattack!",
-            "absoluteEpisode": 682
-          },
-          {
-            "episode": 7,
-            "title": "With a Rumbling of the Ground! The God of Destruction - Giant Pica Descends!",
-            "absoluteEpisode": 683
-          },
-          {
-            "episode": 8,
-            "title": "Gathering into a Powerful Front! Luffy and a Group of Brutal Warriors!",
-            "absoluteEpisode": 684
-          },
-          {
-            "episode": 9,
-            "title": "Steady Progress! Luffy\\'s Army vs. Pica!",
-            "absoluteEpisode": 685
-          },
-          {
-            "episode": 10,
-            "title": "A Shocking Confession! Law\\'s Soulful Vow!",
-            "absoluteEpisode": 686
-          },
-          {
-            "episode": 11,
-            "title": "A Big Collision! Chief of Staff Sabo vs. Admiral Fujitora",
-            "absoluteEpisode": 687
-          },
-          {
-            "episode": 12,
-            "title": "A Desperate Situation - Luffy Gets Caught in a Trap!",
-            "absoluteEpisode": 688
-          },
-          {
-            "episode": 13,
-            "title": "Great Escape! Luffy\\'s Miraculous Elephant Gun!",
-            "absoluteEpisode": 689
-          },
-          {
-            "episode": 14,
-            "title": "A United Front – Luffy\\'s Breakthrough to Victory",
-            "absoluteEpisode": 690
-          },
-          {
-            "episode": 15,
-            "title": "The Second Samurai – Evening Shower Kanjuro Appears",
-            "absoluteEpisode": 691
-          },
-          {
-            "episode": 16,
-            "title": "The Struggle with Pica – Zoro\\'s One Finishing Move",
-            "absoluteEpisode": 692
-          },
-          {
-            "episode": 17,
-            "title": "The Little People\\'s Princess - Captive Mansherry",
+            "title": "The Little People\'s Princess! Captive Mansherry!",
             "absoluteEpisode": 693
           },
           {
-            "episode": 18,
-            "title": "Invulnerable! The Terrifying Headcracker Doll Army",
+            "episode": 2,
+            "title": "Invincible! A Gruesome Army of Headcracker Dolls!",
             "absoluteEpisode": 694
           },
           {
-            "episode": 19,
-            "title": "Life-Risking! Luffy is the Trump Card to Victory",
+            "episode": 3,
+            "title": "Risking Their Lives! Luffy is the Trump Card for Victory!",
             "absoluteEpisode": 695
           },
           {
-            "episode": 20,
-            "title": "A Tearful Reunion – Rebecca and Kyros!",
+            "episode": 4,
+            "title": "A Tearful Reunion! Rebecca and Kyros!",
             "absoluteEpisode": 696
           },
           {
-            "episode": 21,
-            "title": "One Shot One Kill - The Man Who Will Save Dressrosa",
+            "episode": 5,
+            "title": "One Shot One Kill! The Man Who Will Save Dressrosa!",
             "absoluteEpisode": 697
           },
           {
-            "episode": 22,
-            "title": "Anger Explosion - Luffy and Laws\\'s Ultimate Secret Plan",
+            "episode": 6,
+            "title": "Anger Erupts! Luffy and Law\'s Ultimate Stratagem!",
             "absoluteEpisode": 698
           },
           {
-            "episode": 23,
-            "title": "Noble Family - Doflamingo\\'s True Identity!",
+            "episode": 7,
+            "title": "A Noble Family! The True Identity of Doflamingo!",
             "absoluteEpisode": 699
           },
           {
-            "episode": 24,
-            "title": "Ultimate Power - The Secret of the Ope Ope no Mi!",
+            "episode": 8,
+            "title": "The Ultimate Power! The Secret of the Op-Op Fruit!",
             "absoluteEpisode": 700
           },
           {
-            "episode": 25,
-            "title": "Sad Memories - Law the Boy from the White City!",
+            "episode": 9,
+            "title": "Sad Memories! Law the Boy from the White Town!",
             "absoluteEpisode": 701
           },
           {
-            "episode": 26,
-            "title": "Celestial Dragon! Doffy\\'s Stormy Past!",
+            "episode": 10,
+            "title": "A Celestial Dragon! Doffy\'s Stormy Past",
             "absoluteEpisode": 702
           },
           {
-            "episode": 27,
-            "title": "A Rocky Road! – Law and Corazon\\'s Journey of Life!",
+            "episode": 11,
+            "title": "A Rocky Road! Law and Corazon\'s Journey of Life!",
             "absoluteEpisode": 703
           },
           {
-            "episode": 28,
+            "episode": 12,
             "title": "The Time is Ticking Down! Seize the Op-Op Fruit!",
             "absoluteEpisode": 704
           },
           {
-            "episode": 29,
-            "title": "The Moment of Resolution: Corazon\\'s Farewell Smile!",
+            "episode": 13,
+            "title": "The Moment of Resolution! Corazon\'s Farewell Smile!",
             "absoluteEpisode": 705
           },
           {
-            "episode": 30,
-            "title": "Advance, Law! The Kindhearted Man\\'s Final Fight!",
+            "episode": 14,
+            "title": "Advance, Law! The Kindhearted Man\'s Final Fight!",
             "absoluteEpisode": 706
           },
           {
-            "episode": 31,
-            "title": "To Be Free! Law\\'s Injection Shot Blasts!",
+            "episode": 15,
+            "title": "To Be Free! Law\'s Injection Shot Blasts!",
             "absoluteEpisode": 707
           },
           {
-            "episode": 32,
+            "episode": 16,
             "title": "An Intense Battle! Law vs. Doflamingo!",
             "absoluteEpisode": 708
           },
           {
-            "episode": 33,
+            "episode": 17,
             "title": "A Decisive Battle Against the Executives! Proud Hajrudin!",
             "absoluteEpisode": 709
           },
           {
-            "episode": 34,
+            "episode": 18,
             "title": "The Battle of Love! The New Leader Sai vs. Baby 5!",
             "absoluteEpisode": 710
           },
           {
-            "episode": 35,
-            "title": "The Man\\'s Pride - Bellamy\\'s Last Charge!",
+            "episode": 19,
+            "title": "The Man\'s Pride! Bellamy\'s Last Charge!",
             "absoluteEpisode": 711
           },
           {
-            "episode": 36,
-            "title": "Storm and Stress! Hakuba vs. Dellinger!",
+            "episode": 20,
+            "title": "A Strong Wind and a Surge! Hakuba vs. Dellinger!",
             "absoluteEpisode": 712
           },
           {
-            "episode": 37,
+            "episode": 21,
             "title": "Barrier-Barrier! Homage God Fist Strikes!",
             "absoluteEpisode": 713
           },
           {
-            "episode": 38,
-            "title": "The Healing Princess! Save Mansherry",
+            "episode": 22,
+            "title": "The Healing Princess! Save Mansherry!",
             "absoluteEpisode": 714
           },
           {
-            "episode": 39,
-            "title": "The Manly Duel! Señor\\'s Elegy of Love!",
+            "episode": 23,
+            "title": "The Manly Duel! Señor\'s Elegy of Love!",
             "absoluteEpisode": 715
           },
           {
-            "episode": 40,
-            "title": "Stardust of Death! Diamante\\'s Storm of Vicious Attacks!",
+            "episode": 24,
+            "title": "Stardust of Death! Diamante\'s Storm of Vicious Attacks!",
             "absoluteEpisode": 716
           },
           {
-            "episode": 41,
-            "title": "Trueno Bastardo! Kyros\\' Furious Strike!",
+            "episode": 25,
+            "title": "Trueno Bastardo! Kyros\' Furious Strike!",
             "absoluteEpisode": 717
           },
           {
-            "episode": 42,
-            "title": "Moving Across the Ground! The Giant Statue Pica\\'s Surprise Maneuver!",
+            "episode": 26,
+            "title": "Moving Across the Ground! The Giant Statue Pica\'s Surprise Maneuver!",
             "absoluteEpisode": 718
           },
           {
-            "episode": 43,
-            "title": "A Decisive Battle in Midair! Zoro\\'s New Special Secret Technique Blasts!",
+            "episode": 27,
+            "title": "A Decisive Battle in Midair! Zoro\'s New Special Secret Technique Blasts!",
             "absoluteEpisode": 719
           },
           {
-            "episode": 44,
-            "title": "So Long! Bellamy\\'s Farewell Blow!",
+            "episode": 28,
+            "title": "So Long! Bellamy\'s Farewell Blow!",
             "absoluteEpisode": 720
           },
           {
-            "episode": 45,
-            "title": "Law Dies - Luffy\\'s Raging Onslaught!",
+            "episode": 29,
+            "title": "Law Dies! Luffy\'s Raging Onslaught!",
             "absoluteEpisode": 721
           },
           {
-            "episode": 46,
+            "episode": 30,
             "title": "A Blade of Tenacity! The Gamma Knife Counterattack!",
             "absoluteEpisode": 722
           },
           {
-            "episode": 47,
+            "episode": 31,
             "title": "A Collision of Haki! Luffy vs. Doflamingo!",
             "absoluteEpisode": 723
           },
           {
-            "episode": 48,
-            "title": "Unassailable! The Stunning Secret of Trebol",
+            "episode": 32,
+            "title": "Unassailable! The Stunning Secret of Trebol!",
             "absoluteEpisode": 724
+          },
+          {
+            "episode": 33,
+            "title": "Anger Erupts - I\'m Going to Take it All on!",
+            "absoluteEpisode": 725
+          },
+          {
+            "episode": 34,
+            "title": "Fourth Gear! The Phenomenal Bounce-man!",
+            "absoluteEpisode": 726
+          },
+          {
+            "episode": 35,
+            "title": "A Massive Counterattack! Doflamingo\'s Awakening!",
+            "absoluteEpisode": 727
+          },
+          {
+            "episode": 36,
+            "title": "Luffy! An All-Out Leo Bazooka!",
+            "absoluteEpisode": 728
+          },
+          {
+            "episode": 37,
+            "title": "Flame Dragon King! Protect Luffy\'s Life!",
+            "absoluteEpisode": 729
+          },
+          {
+            "episode": 38,
+            "title": "Tears of Miracles! Mansherry\'s Fight!",
+            "absoluteEpisode": 730
+          },
+          {
+            "episode": 39,
+            "title": "As Long as We Breathe! Stop the Deadly Birdcage!",
+            "absoluteEpisode": 731
+          },
+          {
+            "episode": 40,
+            "title": "Dead or Alive! A Fateful Countdown!",
+            "absoluteEpisode": 732
+          },
+          {
+            "episode": 41,
+            "title": "Attack on a Celestial! Luffy\'s King Kong Gun of Anger!",
+            "absoluteEpisode": 733
+          },
+          {
+            "episode": 42,
+            "title": "To Be Free! Dressrosa\'s Delight!",
+            "absoluteEpisode": 734
+          },
+          {
+            "episode": 43,
+            "title": "The Unheard-of! Admiral Fujitora\'s Surprising Decision!",
+            "absoluteEpisode": 735
+          },
+          {
+            "episode": 44,
+            "title": "Sending a Shock Wave! The Worst Generation Goes Into Action!",
+            "absoluteEpisode": 736
+          },
+          {
+            "episode": 45,
+            "title": "The Birth of the Legend! The Adventures of the Revolutionary Warrior Sabo!",
+            "absoluteEpisode": 737
+          },
+          {
+            "episode": 46,
+            "title": "The Brothers\' Bond! The Untold Story Behind Luffy and Sabo\'s Reunion!",
+            "absoluteEpisode": 738
+          },
+          {
+            "episode": 47,
+            "title": "The Strongest Creature! One of the Four Emperors - Kaido, King of the Beasts!",
+            "absoluteEpisode": 739
+          },
+          {
+            "episode": 48,
+            "title": "Fujitora Takes Action! The Complete Siege of the Straw Hats!",
+            "absoluteEpisode": 740
+          },
+          {
+            "episode": 49,
+            "title": "A State of Emergency! Rebecca Is Kidnapped!",
+            "absoluteEpisode": 741
+          },
+          {
+            "episode": 50,
+            "title": "The Bond Between Father and Daughter! Kyros and Rebecca!",
+            "absoluteEpisode": 742
+          },
+          {
+            "episode": 51,
+            "title": "Men\'s Pride! Luffy vs. Fujitora, Head-to-Head!",
+            "absoluteEpisode": 743
+          },
+          {
+            "episode": 52,
+            "title": "No Way Out! Admiral Fujitora\'s Ruthless Pursuit!",
+            "absoluteEpisode": 744
+          },
+          {
+            "episode": 53,
+            "title": "Sons\' Cups! Straw Hat Fleet is Formed!",
+            "absoluteEpisode": 745
+          },
+          {
+            "episode": 54,
+            "title": "The Numerous Rivals Struggle Amongst Themselves! The Raging Monsters of the New World",
+            "absoluteEpisode": 746
+          },
+          {
+            "episode": 55,
+            "title": "The Silver Fortress – The Great Adventures of Luffy and Bart",
+            "absoluteEpisode": 747
+          },
+          {
+            "episode": 56,
+            "title": "An Underground Labyrinth – Luffy vs. Mine Cart Man",
+            "absoluteEpisode": 748
           }
         ]
       },
@@ -3745,233 +3864,278 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Anger Erupts! I Will Take Everything upon Myself!",
-            "absoluteEpisode": 725
-          },
-          {
-            "episode": 2,
-            "title": "Fourth Gear! The Phenomenal Bounce-man!",
-            "absoluteEpisode": 726
-          },
-          {
-            "episode": 3,
-            "title": "A Massive Counterattack! Doflamingo\\'s Awakening!",
-            "absoluteEpisode": 727
-          },
-          {
-            "episode": 4,
-            "title": "Luffy! An All-Out Leo Bazooka!",
-            "absoluteEpisode": 728
-          },
-          {
-            "episode": 5,
-            "title": "Flame Dragon King! Protect Luffy\\'s Life!",
-            "absoluteEpisode": 729
-          },
-          {
-            "episode": 6,
-            "title": "Tears of Miracles! Mansherry\\'s Fight!",
-            "absoluteEpisode": 730
-          },
-          {
-            "episode": 7,
-            "title": "As Long as We Breathe! Stop the Deadly Birdcage",
-            "absoluteEpisode": 731
-          },
-          {
-            "episode": 8,
-            "title": "Dead or Alive! A Fateful Countdown",
-            "absoluteEpisode": 732
-          },
-          {
-            "episode": 9,
-            "title": "Strike the Heavens - Luffy\\'s King Kong Gun of Rage",
-            "absoluteEpisode": 733
-          },
-          {
-            "episode": 10,
-            "title": "To Freedom! Dressrosa Overjoyed!",
-            "absoluteEpisode": 734
-          },
-          {
-            "episode": 11,
-            "title": "Unprecedented - The Shocking Decision of Admiral Fujitora!",
-            "absoluteEpisode": 735
-          },
-          {
-            "episode": 12,
-            "title": "The World Trembles - The Worst Generation Advances!",
-            "absoluteEpisode": 736
-          },
-          {
-            "episode": 13,
-            "title": "The Birth of a Legend - The Adventure of Sabo the Revolutionary!",
-            "absoluteEpisode": 737
-          },
-          {
-            "episode": 14,
-            "title": "The Brother\\'s Bond - The Story of Luffy and Sabo\\'s Reunion",
-            "absoluteEpisode": 738
-          },
-          {
-            "episode": 15,
-            "title": "The Strongest Creature - Kaido of the Beasts",
-            "absoluteEpisode": 739
-          },
-          {
-            "episode": 16,
-            "title": "Fujitora on the Move - The Straw Hats Completely Surrounded",
-            "absoluteEpisode": 740
-          },
-          {
-            "episode": 17,
-            "title": "A State of Emergency! Rebecca Is Kidnapped!",
-            "absoluteEpisode": 741
-          },
-          {
-            "episode": 18,
-            "title": "The Bond Between Father and Daughter! Kyros and Rebecca!",
-            "absoluteEpisode": 742
-          },
-          {
-            "episode": 19,
-            "title": "Manly Spirit - Luffy vs. Fujitora in a Head-to-Head Clash",
-            "absoluteEpisode": 743
-          },
-          {
-            "episode": 20,
-            "title": "No Way Out! Admiral Fujitora\\'s Ruthless Pursuit!",
-            "absoluteEpisode": 744
-          },
-          {
-            "episode": 21,
-            "title": "Sons\\' Cups - Straw Hat Fleet is Formed!",
-            "absoluteEpisode": 745
-          },
-          {
-            "episode": 22,
-            "title": "The Numerous Rivals Struggle Amongst Themselves - The Raging Monsters of the New World",
-            "absoluteEpisode": 746
-          },
-          {
-            "episode": 23,
-            "title": "The Silver Fortress – The Great Adventures of Luffy and Bart",
-            "absoluteEpisode": 747
-          },
-          {
-            "episode": 24,
-            "title": "An Underground Labyrinth – Luffy vs Mine Cart Man",
-            "absoluteEpisode": 748
-          },
-          {
-            "episode": 25,
             "title": "The Sword Technique Heats Up! Law and Zoro Finally Appear!",
             "absoluteEpisode": 749
           },
           {
-            "episode": 26,
-            "title": "A Desperate Situation! Luffy Fights a Battle in Extreme Heat!",
+            "episode": 2,
+            "title": "A Desperate Situation - Luffy Fights a Battle in Extreme Heat",
             "absoluteEpisode": 750
           },
           {
-            "episode": 27,
-            "title": "The Start of a New Adventure - Arrival at the Mysterious Island, \\'Zou\\'!",
+            "episode": 3,
+            "title": "The Start of a New Adventure - Arrival at the Mysterious Island, \'Zou\'!",
             "absoluteEpisode": 751
           },
           {
-            "episode": 28,
+            "episode": 4,
             "title": "The New Shichibukai - Son of the Legendary Whitebeard Arrives",
             "absoluteEpisode": 752
           },
           {
-            "episode": 29,
+            "episode": 5,
             "title": "A Deadly Elephant Climb - A Great Adventure on the Back of the Giant Elephant!",
             "absoluteEpisode": 753
           },
           {
-            "episode": 30,
+            "episode": 6,
             "title": "Battle Starts! Luffy vs. the Mink Tribe!",
             "absoluteEpisode": 754
           },
           {
-            "episode": 31,
+            "episode": 7,
             "title": "Garchu! The Straw Hat Crew Reunites",
             "absoluteEpisode": 755
           },
           {
-            "episode": 32,
-            "title": "The Counterattack Begins! The Curly Hat Pirates moves out!",
+            "episode": 8,
+            "title": "The Counterattack Begins! The Curly Hat Pirates Move Out!",
             "absoluteEpisode": 756
           },
           {
-            "episode": 33,
+            "episode": 9,
             "title": "An Incoming Threat - Jack of the Beasts Pirates!",
             "absoluteEpisode": 757
           },
           {
-            "episode": 34,
-            "title": "Ruler of Day - Enter Duke Inuarashi!",
+            "episode": 10,
+            "title": "The King of the Day! Duke Dogstorm Appears!",
             "absoluteEpisode": 758
           },
           {
-            "episode": 35,
-            "title": "Ruler of Night - Nekomamushi Appears",
+            "episode": 11,
+            "title": "The King of the Night! Master Cat Viper Emerges!",
             "absoluteEpisode": 759
           },
           {
-            "episode": 36,
-            "title": "The Exterminated Capital! The Twirly Hat Crew Arrive!",
+            "episode": 12,
+            "title": "Destruction of the Capital - Curly Hat Pirates Arrive on Land!",
             "absoluteEpisode": 760
           },
           {
-            "episode": 37,
-            "title": "The Time Limit Closes in! The Bond Between the Mink Tribe and the Crew!",
+            "episode": 13,
+            "title": "Race Against Time - The Bond of the Minks and the Crew!",
             "absoluteEpisode": 761
           },
           {
-            "episode": 38,
-            "title": "The Delinquent Comes Home! Emperor Big Mom\\'s Assassins!",
+            "episode": 14,
+            "title": "The Rascal Returns Home - Yonko Big Mom\'s Assassin",
             "absoluteEpisode": 762
           },
           {
-            "episode": 39,
-            "title": "The Truth Behind His Disappearance – Sanji\\'s Shocking Invitation",
+            "episode": 15,
+            "title": "The Truth Behind His Disappearance - Sanji\'s Shocking Invitation",
             "absoluteEpisode": 763
           },
           {
-            "episode": 40,
-            "title": "To My Buds! Sanji\\'s Farewell Note!",
+            "episode": 16,
+            "title": "To My Buds! Sanji\'s Farewell Note!",
             "absoluteEpisode": 764
           },
           {
-            "episode": 41,
-            "title": "Let\\'s Go See Master Nekomamushi",
+            "episode": 17,
+            "title": "Let\'s Go See Master Nekomamushi",
             "absoluteEpisode": 765
           },
           {
-            "episode": 42,
-            "title": "Luffy\\'s Decision - The Sanji Abdication Crisis!",
+            "episode": 18,
+            "title": "Luffy\'s Decision - Sanji on the Brink of Quitting!",
             "absoluteEpisode": 766
           },
           {
-            "episode": 43,
-            "title": "An Explosive Situation – Dog, Cat, and Samurai!",
+            "episode": 19,
+            "title": "A Volatile Situation! The Dog and the Cat and the Samurai!",
             "absoluteEpisode": 767
           },
           {
-            "episode": 44,
-            "title": "The Third One! Raizo of the Mist, the Ninja, Appears!",
+            "episode": 20,
+            "title": "The Third One! Raizo of the Mist, the Ninja, Appears",
             "absoluteEpisode": 768
           },
           {
-            "episode": 45,
-            "title": "A Red Stone! A Guide to the One Piece!",
+            "episode": 21,
+            "title": "A Red Stone! A Guide to the One Piece",
             "absoluteEpisode": 769
           },
           {
-            "episode": 46,
-            "title": "The Secret of the Land of Wano! The Kozuki Family and the Ponegliffs!",
+            "episode": 22,
+            "title": "The Secret of the Wano Country - The Kozuki Family and the Poneglyphs",
             "absoluteEpisode": 770
+          },
+          {
+            "episode": 23,
+            "title": "A Vow Between Two Men - Luffy and Kozuki Momonosuke",
+            "absoluteEpisode": 771
+          },
+          {
+            "episode": 24,
+            "title": "The Legendary Journey - The Dog and the Cat and the Pirate King!",
+            "absoluteEpisode": 772
+          },
+          {
+            "episode": 25,
+            "title": "The Nightmare Returns - The Invincible Jack\'s Fierce Attack",
+            "absoluteEpisode": 773
+          },
+          {
+            "episode": 26,
+            "title": "A Battle to Defend Zou - Luffy and Zunisha!",
+            "absoluteEpisode": 774
+          },
+          {
+            "episode": 27,
+            "title": "Save Zunisha - The Straw Hat\'s Rescue Operation!",
+            "absoluteEpisode": 775
+          },
+          {
+            "episode": 28,
+            "title": "Saying Goodbye and Descending from the Elephant - Setting Out to Take Back Sanji!",
+            "absoluteEpisode": 776
+          },
+          {
+            "episode": 29,
+            "title": "To the Reverie - Princess Vivi and Princess Shirahoshi",
+            "absoluteEpisode": 777
+          },
+          {
+            "episode": 30,
+            "title": "To the Reverie - Rebecca and the Sakura Kingdom",
+            "absoluteEpisode": 778
+          },
+          {
+            "episode": 31,
+            "title": "Kaido Returns - An Imminent Threat to the Worst Generation!",
+            "absoluteEpisode": 779
+          },
+          {
+            "episode": 32,
+            "title": "A Hungry Front - Luffy and the Marine Rookies!",
+            "absoluteEpisode": 780
+          },
+          {
+            "episode": 33,
+            "title": "The Implacable Three - A Big Chase After the Straw Hats!",
+            "absoluteEpisode": 781
+          },
+          {
+            "episode": 34,
+            "title": "The Devil\'s Fist - A Show Down! Luffy vs. Grount",
+            "absoluteEpisode": 782
+          },
+          {
+            "episode": 35,
+            "title": "Sanji\'s Homecoming! Into Big Mom\'s Territory!",
+            "absoluteEpisode": 783
+          },
+          {
+            "episode": 36,
+            "title": "Zero and Four! Encountering Germa 66!",
+            "absoluteEpisode": 784
+          },
+          {
+            "episode": 37,
+            "title": "A Deadly Poison Crisis! Luffy and Reiju!",
+            "absoluteEpisode": 785
+          },
+          {
+            "episode": 38,
+            "title": "Totto Land! Emperor Big Mom Appears!",
+            "absoluteEpisode": 786
+          },
+          {
+            "episode": 39,
+            "title": "The Emperor\'s Daughter! Sanji\'s Fiancée - Pudding!",
+            "absoluteEpisode": 787
+          },
+          {
+            "episode": 40,
+            "title": "A Massive Attack! Mom\'s Hunger Pangs!",
+            "absoluteEpisode": 788
+          },
+          {
+            "episode": 41,
+            "title": "The Capital City Falls?! Big Mom and Jimbei!",
+            "absoluteEpisode": 789
+          },
+          {
+            "episode": 42,
+            "title": "The Emperor\'s Castle! Arriving at the Whole Cake Island!",
+            "absoluteEpisode": 790
+          },
+          {
+            "episode": 43,
+            "title": "A Mysterious Forest Full of Candies! Luffy vs. Luffy?!",
+            "absoluteEpisode": 791
+          },
+          {
+            "episode": 44,
+            "title": "Mom\'s Assassin! Luffy and the Seducing Woods!",
+            "absoluteEpisode": 792
+          },
+          {
+            "episode": 45,
+            "title": "A Seafaring Kingdom! Germa\'s King Judge!",
+            "absoluteEpisode": 793
+          },
+          {
+            "episode": 46,
+            "title": "A Battle Between Father and Son! Judge vs. Sanji!",
+            "absoluteEpisode": 794
+          },
+          {
+            "episode": 47,
+            "title": "A Giant Ambition! Big Mom and Caesar!",
+            "absoluteEpisode": 795
+          },
+          {
+            "episode": 48,
+            "title": "The Land of Souls! Mom\'s Fatal Ability!",
+            "absoluteEpisode": 796
+          },
+          {
+            "episode": 49,
+            "title": "A Top Officer! The Sweet 3 General Cracker Appears!",
+            "absoluteEpisode": 797
+          },
+          {
+            "episode": 50,
+            "title": "An Enemy Worth 800 Million! Luffy vs. Thousand Armed Cracker!",
+            "absoluteEpisode": 798
+          },
+          {
+            "episode": 51,
+            "title": "An All-out Duel! Gear Four vs. the Bis-Bis Ability",
+            "absoluteEpisode": 799
+          },
+          {
+            "episode": 52,
+            "title": "The First and the Second Join! The Vinsmoke Family!",
+            "absoluteEpisode": 800
+          },
+          {
+            "episode": 53,
+            "title": "The Benefactor\'s Life! Sanji and Owner Zeff!",
+            "absoluteEpisode": 801
+          },
+          {
+            "episode": 54,
+            "title": "An Angry Sanji! The Secret of Germa 66!",
+            "absoluteEpisode": 802
+          },
+          {
+            "episode": 55,
+            "title": "The Past that He Let Go of! Vinsmoke Sanji!",
+            "absoluteEpisode": 803
           }
         ]
       },
@@ -3980,248 +4144,373 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "A Vow Between Two Men - Luffy and Kozuki Momonosuke",
-            "absoluteEpisode": 771
-          },
-          {
-            "episode": 2,
-            "title": "The Legendary Journey! The Dog and the Cat and the Pirate King!",
-            "absoluteEpisode": 772
-          },
-          {
-            "episode": 3,
-            "title": "Returning Nightmare - Assault of the Invulnerable Jack",
-            "absoluteEpisode": 773
-          },
-          {
-            "episode": 4,
-            "title": "Defensive Battle of Zou - Luffy and Zunisha!",
-            "absoluteEpisode": 774
-          },
-          {
-            "episode": 5,
-            "title": "Save Zunesha! The Straw Hat\\'s Rescue Operation!",
-            "absoluteEpisode": 775
-          },
-          {
-            "episode": 6,
-            "title": "Saying Goodbye and Descending from the Elephant! Setting Out to Take Back Sanji!",
-            "absoluteEpisode": 776
-          },
-          {
-            "episode": 7,
-            "title": "To the Reverie - Princess Vivi and Princess Shirahoshi",
-            "absoluteEpisode": 777
-          },
-          {
-            "episode": 8,
-            "title": "To the Reverie - Rebecca and the Sakura Kingdom",
-            "absoluteEpisode": 778
-          },
-          {
-            "episode": 9,
-            "title": "Kaido Returns - The Worst Generation Threatened!",
-            "absoluteEpisode": 779
-          },
-          {
-            "episode": 10,
-            "title": "A Hungry Front - Luffy and the Marine Rookies!",
-            "absoluteEpisode": 780
-          },
-          {
-            "episode": 11,
-            "title": "The Persistent Trio – The Great Pursuit for the Straw Hats!",
-            "absoluteEpisode": 781
-          },
-          {
-            "episode": 12,
-            "title": "Fist of the Devil – Showdown! Luffy vs. Grant",
-            "absoluteEpisode": 782
-          },
-          {
-            "episode": 13,
-            "title": "Sanji\\'s Homecoming! Into Big Mom\\'s Territory!",
-            "absoluteEpisode": 783
-          },
-          {
-            "episode": 14,
-            "title": "Zero and Four! Encountering Germa 66!",
-            "absoluteEpisode": 784
-          },
-          {
-            "episode": 15,
-            "title": "A Deadly Poison Crisis - Luffy and Reiju!",
-            "absoluteEpisode": 785
-          },
-          {
-            "episode": 16,
-            "title": "Totto Land! Emperor Big Mom Appears",
-            "absoluteEpisode": 786
-          },
-          {
-            "episode": 17,
-            "title": "The Yonko\\'s Daughter – Sanji\\'s Fiancée \"Pudding\"",
-            "absoluteEpisode": 787
-          },
-          {
-            "episode": 18,
-            "title": "A Massive Attack! Mom\\'s Hunger Pangs",
-            "absoluteEpisode": 788
-          },
-          {
-            "episode": 19,
-            "title": "The Capital City Falls?! Big Mom and Jimbei",
-            "absoluteEpisode": 789
-          },
-          {
-            "episode": 20,
-            "title": "The Yonko\\'s Castle – Arrival on Whole Cake Island",
-            "absoluteEpisode": 790
-          },
-          {
-            "episode": 21,
-            "title": "A Mysterious Forest Full of Candies - Luffy vs. Luffy?!",
-            "absoluteEpisode": 791
-          },
-          {
-            "episode": 22,
-            "title": "Mom\\'s Assassin! Luffy and the Seducing Woods!",
-            "absoluteEpisode": 792
-          },
-          {
-            "episode": 23,
-            "title": "A Seafaring Kingdom! Germa\\'s King Judge!",
-            "absoluteEpisode": 793
-          },
-          {
-            "episode": 24,
-            "title": "A Battle Between Father and Son - Judge vs. Sanji!",
-            "absoluteEpisode": 794
-          },
-          {
-            "episode": 25,
-            "title": "A Giant Ambition - Big Mom and Caesar",
-            "absoluteEpisode": 795
-          },
-          {
-            "episode": 26,
-            "title": "The Land of Souls! Mom\\'s Fatal Ability!",
-            "absoluteEpisode": 796
-          },
-          {
-            "episode": 27,
-            "title": "A Top Executive! One of the Three Commanders \"Cracker\" Appears",
-            "absoluteEpisode": 797
-          },
-          {
-            "episode": 28,
-            "title": "An Enemy With 800 Million Bounty – Luffy vs. Thousand Arms Cracker",
-            "absoluteEpisode": 798
-          },
-          {
-            "episode": 29,
-            "title": "Full Force Showdown – Gear Fourth vs. Bisu Bisu Ability",
-            "absoluteEpisode": 799
-          },
-          {
-            "episode": 30,
-            "title": "The First and the Second Join! The Vinsmoke Family",
-            "absoluteEpisode": 800
-          },
-          {
-            "episode": 31,
-            "title": "The Benefactor\\'s Life! Sanji and Owner Zeff!",
-            "absoluteEpisode": 801
-          },
-          {
-            "episode": 32,
-            "title": "An Angry Sanji! The Secret of Germa 66!",
-            "absoluteEpisode": 802
-          },
-          {
-            "episode": 33,
-            "title": "The Past that He Let Go of! Vinsmoke Sanji!",
-            "absoluteEpisode": 803
-          },
-          {
-            "episode": 34,
-            "title": "To the East Blue! Sanji\\'s Resolute Departure!",
+            "title": "To the East Blue! Sanji\'s Resolute Departure!",
             "absoluteEpisode": 804
           },
           {
-            "episode": 35,
+            "episode": 2,
             "title": "A Battle of Limits! Luffy and the Infinite Biscuits!",
             "absoluteEpisode": 805
           },
           {
-            "episode": 36,
-            "title": "Power of Fullness - New Gear Fourth Tankman!",
+            "episode": 3,
+            "title": "The Power of Satiety! A New Gear Four Form - Tank Man!",
             "absoluteEpisode": 806
           },
           {
-            "episode": 37,
-            "title": "A Heartbreaking Duel! Luffy vs Sanji! - Part 1",
+            "episode": 4,
+            "title": "A Heartbreaking Duel! Luffy vs Sanji! (1)",
             "absoluteEpisode": 807
           },
           {
-            "episode": 38,
-            "title": "A Heartbreaking Duel! Luffy vs Sanji! - Part 2",
+            "episode": 5,
+            "title": "A Heartbreaking Duel! Luffy vs Sanji! (2)",
             "absoluteEpisode": 808
           },
           {
-            "episode": 39,
+            "episode": 6,
             "title": "A Storm of Revenge! An Enraged Army Comes to Attack!",
             "absoluteEpisode": 809
           },
           {
-            "episode": 40,
-            "title": "The End of the Adventure - Sanji\\'s Resolute Proposal",
+            "episode": 7,
+            "title": "The End of the Adventure! Sanji\'s Resolute Proposal!",
             "absoluteEpisode": 810
           },
           {
-            "episode": 41,
-            "title": "I\\'ll Wait Here - Luffy vs. the Enraged Army",
+            "episode": 8,
+            "title": "I\'ll Wait Here! Luffy vs. the Enraged Army!",
             "absoluteEpisode": 811
           },
           {
-            "episode": 42,
-            "title": "Infiltration Inside the Castle - Steal the Road Poneglyph",
+            "episode": 9,
+            "title": "Invading the Chateau! Reach the Road Ponegliff!",
             "absoluteEpisode": 812
           },
           {
-            "episode": 43,
-            "title": "A Fateful Confrontation - Luffy and Big Mom",
+            "episode": 10,
+            "title": "A Fateful Confrontation! Luffy and Big Mom!",
             "absoluteEpisode": 813
           },
           {
-            "episode": 44,
-            "title": "Shout of the Soul - Brook and Pedro\\'s Lightning Operation",
+            "episode": 11,
+            "title": "Shout of the Soul! Brook and Pedro\'s Lightning Operation!",
             "absoluteEpisode": 814
           },
           {
-            "episode": 45,
-            "title": "Goodbye! Pudding\\'s Tearful Determination!",
+            "episode": 12,
+            "title": "Goodbye! Pudding\'s Tearful Determination!",
             "absoluteEpisode": 815
           },
           {
-            "episode": 46,
-            "title": "Fate of the Left Eye – Pedro vs Baron Tamago",
+            "episode": 13,
+            "title": "The History of the Left Eye! Pedro vs. Baron Tamago!",
             "absoluteEpisode": 816
           },
           {
-            "episode": 47,
-            "title": "Moist Cigarette! The Night Before Sanji\\'s Wedding!",
+            "episode": 14,
+            "title": "Moist Cigarette! The Night Before Sanji\'s Wedding!",
             "absoluteEpisode": 817
           },
           {
-            "episode": 48,
-            "title": "The Undaunted Soul - Brook vs. Big Mom",
+            "episode": 15,
+            "title": "The Undaunted Soul! Brook vs. Big Mom!",
             "absoluteEpisode": 818
           },
           {
-            "episode": 49,
-            "title": "Sora\\'s Wish! Germa\\'s Failure - Sanji!",
+            "episode": 16,
+            "title": "Sora\'s Wish! Germa\'s Failure - Sanji!",
             "absoluteEpisode": 819
+          },
+          {
+            "episode": 17,
+            "title": "To Reach Sanji! Luffy\'s Vengeful Hell-bent Dash!",
+            "absoluteEpisode": 820
+          },
+          {
+            "episode": 18,
+            "title": "The Chateau in Turmoil! Luffy, to the Rendezvous!",
+            "absoluteEpisode": 821
+          },
+          {
+            "episode": 19,
+            "title": "Deciding to Say Goodbye! Sanji and his Straw-Hat Bento!",
+            "absoluteEpisode": 822
+          },
+          {
+            "episode": 20,
+            "title": "The Emperor Rolls Over! Rescue Brook Mission!",
+            "absoluteEpisode": 823
+          },
+          {
+            "episode": 21,
+            "title": "The Rendezvous! Luffy, a One-on-One at His Limit!",
+            "absoluteEpisode": 824
+          },
+          {
+            "episode": 22,
+            "title": "A Liar! Luffy and Sanji!",
+            "absoluteEpisode": 825
+          },
+          {
+            "episode": 23,
+            "title": "Sanji Comes Back! Crash! The Tea Party from Hell!",
+            "absoluteEpisode": 826
+          },
+          {
+            "episode": 24,
+            "title": "A Secret Meeting! Luffy vs. the Fire Tank Pirates!",
+            "absoluteEpisode": 827
+          },
+          {
+            "episode": 25,
+            "title": "The Deadly Pact! Luffy & Bege\'s Allied Forces!",
+            "absoluteEpisode": 828
+          },
+          {
+            "episode": 26,
+            "title": "Luffy Engages in a Secret Maneuver! The Wedding Full of Conspiracies Starts Soon!",
+            "absoluteEpisode": 829
+          },
+          {
+            "episode": 27,
+            "title": "The Family Gets Together! The Hellish Tea Party Starts!",
+            "absoluteEpisode": 830
+          },
+          {
+            "episode": 28,
+            "title": "The Broken Couple! Sanji and Pudding Enter!",
+            "absoluteEpisode": 831
+          },
+          {
+            "episode": 29,
+            "title": "A Deadly Kiss! The Mission to Assassinate the Emperor Kicks Off!",
+            "absoluteEpisode": 832
+          },
+          {
+            "episode": 30,
+            "title": "Returning the Sake Cup! The Manly Jimbei Pays His Debt!",
+            "absoluteEpisode": 833
+          },
+          {
+            "episode": 31,
+            "title": "The Mission Failed?! The Big Mom Pirates Strike Back!",
+            "absoluteEpisode": 834
+          },
+          {
+            "episode": 32,
+            "title": "Run, Sanji! SOS! Germa 66!",
+            "absoluteEpisode": 835
+          },
+          {
+            "episode": 33,
+            "title": "Mom\'s Secret! The Giant\'s Island Elbaph and a Little Monster!",
+            "absoluteEpisode": 836
+          },
+          {
+            "episode": 34,
+            "title": "The Birth of Mom! The Day That Carmel Vanished!",
+            "absoluteEpisode": 837
+          },
+          {
+            "episode": 35,
+            "title": "The Launcher Blasts! The Moment of Big Mom\'s Assassination!",
+            "absoluteEpisode": 838
+          },
+          {
+            "episode": 36,
+            "title": "The Evil Army! Transform! Germa 66!",
+            "absoluteEpisode": 839
+          },
+          {
+            "episode": 37,
+            "title": "Cutting the Father-Son Relationship! Sanji and Judge!",
+            "absoluteEpisode": 840
+          },
+          {
+            "episode": 38,
+            "title": "Escape From the Tea Party! Luffy vs. Big Mom!",
+            "absoluteEpisode": 841
+          },
+          {
+            "episode": 39,
+            "title": "The Execution Begins! Luffy\'s Allied Forces Are Annihilated?!",
+            "absoluteEpisode": 842
+          },
+          {
+            "episode": 40,
+            "title": "The Castle Collapses! The Straw Hat’s Great Escape Begins!",
+            "absoluteEpisode": 843
+          },
+          {
+            "episode": 41,
+            "title": "The Spear of Elbaph! Onslaught! The Flying Big Mom!",
+            "absoluteEpisode": 844
+          },
+          {
+            "episode": 42,
+            "title": "Pudding\'s Determination! Ablaze! The Seducing Woods!",
+            "absoluteEpisode": 845
+          },
+          {
+            "episode": 43,
+            "title": "A Lightning Counterattack! Nami and Zeus the Thundercloud!",
+            "absoluteEpisode": 846
+          },
+          {
+            "episode": 44,
+            "title": "A Coincidental Reunion! Sanji and the Lovestruck Evil Pudding!",
+            "absoluteEpisode": 847
+          },
+          {
+            "episode": 45,
+            "title": "Save the Sunny! Fighting Bravely! Chopper and Brook!",
+            "absoluteEpisode": 848
+          },
+          {
+            "episode": 46,
+            "title": "Before the Dawn! Pedro, the Captain of the Guardians!",
+            "absoluteEpisode": 849
+          },
+          {
+            "episode": 47,
+            "title": "I\'ll Be Back! Luffy, Deadly Departure",
+            "absoluteEpisode": 850
+          },
+          {
+            "episode": 48,
+            "title": "The Man with a Bounty of Billion! The Strongest Sweet General, Katakuri!",
+            "absoluteEpisode": 851
+          },
+          {
+            "episode": 49,
+            "title": "A Hard Battle Starts! Luffy vs. Katakuri!",
+            "absoluteEpisode": 852
+          },
+          {
+            "episode": 50,
+            "title": "The Green Room! An Invincible Helmsman, Jimbei!",
+            "absoluteEpisode": 853
+          },
+          {
+            "episode": 51,
+            "title": "The Threat of the Mole! Luffy’s Silent Fight!",
+            "absoluteEpisode": 854
+          },
+          {
+            "episode": 52,
+            "title": "The End of the Deadly Battle?! Katakuri\'s Awakening in Anger!",
+            "absoluteEpisode": 855
+          },
+          {
+            "episode": 53,
+            "title": "The Forbidden Secret! Katakuri’s Merienda!",
+            "absoluteEpisode": 856
+          },
+          {
+            "episode": 54,
+            "title": "Luffy Fights Back! The Invincible Katakuri\'s Weak Point!",
+            "absoluteEpisode": 857
+          },
+          {
+            "episode": 55,
+            "title": "Another Crisis! Gear Four vs. Unstoppable Donuts!",
+            "absoluteEpisode": 858
+          },
+          {
+            "episode": 56,
+            "title": "The Rebellious Daughter, Chiffon! Sanji\'s Big Plan for Transporting the Cake!",
+            "absoluteEpisode": 859
+          },
+          {
+            "episode": 57,
+            "title": "A Man\'s Way of Life! Bege and Luffy\'s Determination as Captains!",
+            "absoluteEpisode": 860
+          },
+          {
+            "episode": 58,
+            "title": "The Cake Sank?! Sanji and Bege\'s Getaway Battle!",
+            "absoluteEpisode": 861
+          },
+          {
+            "episode": 59,
+            "title": "Sulong! Carrot\'s Big Mystic Transformation!",
+            "absoluteEpisode": 862
+          },
+          {
+            "episode": 60,
+            "title": "Break Through! The Straw Hat\'s Mighty Sea Battle!",
+            "absoluteEpisode": 863
+          },
+          {
+            "episode": 61,
+            "title": "Finally, They Clash! The Emperor of the Sea vs. the Straw Hats!",
+            "absoluteEpisode": 864
+          },
+          {
+            "episode": 62,
+            "title": "Dark King\'s Direct Precepts! The Battle Against Katakuri Turns Around!",
+            "absoluteEpisode": 865
+          },
+          {
+            "episode": 63,
+            "title": "Finally He Returns! Sanji, the Man Who\'ll Stop the Emperor of the Sea!",
+            "absoluteEpisode": 866
+          },
+          {
+            "episode": 64,
+            "title": "Lurking in the Darkness! An Assassin Targeting Luffy!",
+            "absoluteEpisode": 867
+          },
+          {
+            "episode": 65,
+            "title": "One Man\'s Determination! Katakuri\'s Deadly Big Fight!",
+            "absoluteEpisode": 868
+          },
+          {
+            "episode": 66,
+            "title": "Wake Up! The Power of Observation Able to Top the Strongest!",
+            "absoluteEpisode": 869
+          },
+          {
+            "episode": 67,
+            "title": "A Fist of Divine Speed! Another Fourth Gear Application Activated!",
+            "absoluteEpisode": 870
+          },
+          {
+            "episode": 68,
+            "title": "Finally, It\'s Over! The Climax of the Intense Fight against Katakuri!",
+            "absoluteEpisode": 871
+          },
+          {
+            "episode": 69,
+            "title": "A Desperate Situation! The Iron-Tight Entrapment of Luffy!",
+            "absoluteEpisode": 872
+          },
+          {
+            "episode": 70,
+            "title": "Pulling Back from the Brink! The Formidable Reinforcements – Germa!",
+            "absoluteEpisode": 873
+          },
+          {
+            "episode": 71,
+            "title": "The Last Hope! The Sun Pirates Emerge!",
+            "absoluteEpisode": 874
+          },
+          {
+            "episode": 72,
+            "title": "A Captivating Flavor! Sanji\'s Cake of Happiness!",
+            "absoluteEpisode": 875
+          },
+          {
+            "episode": 73,
+            "title": "The Man of Humanity and Justice! Jimbei, a Desperate Massive Ocean Current!",
+            "absoluteEpisode": 876
+          },
+          {
+            "episode": 74,
+            "title": "The Parting Time! Pudding\'s Last Wish!",
+            "absoluteEpisode": 877
           }
         ]
       },
@@ -4230,238 +4519,73 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "To Reach Sanji! Luffy\\'s Vengeful Hell-bent Dash!",
-            "absoluteEpisode": 820
+            "title": "The World is Stunned! The Fifth Emperor of the Sea Emerges!",
+            "absoluteEpisode": 878
           },
           {
             "episode": 2,
-            "title": "The Chateau in Turmoil! Luffy, to the Rendezvous!",
-            "absoluteEpisode": 821
+            "title": "To the Reverie! The Straw Hats\' Sworn Allies Come Together!",
+            "absoluteEpisode": 879
           },
           {
             "episode": 3,
-            "title": "Deciding to Say Goodbye! Sanji and his Straw-Hat Bento!",
-            "absoluteEpisode": 822
+            "title": "Sabo Goes into Action! All the Captains of the Revolutionary Army Appear!",
+            "absoluteEpisode": 880
           },
           {
             "episode": 4,
-            "title": "Betraying One of the Four Emperors! The Great Brook Rescue Plan!",
-            "absoluteEpisode": 823
+            "title": "Going into Action! The Implacable New Admiral of the Fleet - Sakazuki!",
+            "absoluteEpisode": 881
           },
           {
             "episode": 5,
-            "title": "The Rendezvous! Luffy, a One-on-One at His Limit!",
-            "absoluteEpisode": 824
+            "title": "The War of the Best! The Inherited Will of the King of the Pirates!",
+            "absoluteEpisode": 882
           },
           {
             "episode": 6,
-            "title": "A Liar! Luffy and Sanji!!",
-            "absoluteEpisode": 825
+            "title": "One Step Forward for Her Dream! Shirahoshi Goes Out in the Sun!",
+            "absoluteEpisode": 883
           },
           {
             "episode": 7,
-            "title": "Sanji Comes Back! Crash! The Tea Party from Hell!",
-            "absoluteEpisode": 826
+            "title": "I Miss Him! Vivi and Rebecca\'s Sentiments!",
+            "absoluteEpisode": 884
           },
           {
             "episode": 8,
-            "title": "A Secret Meeting! Luffy vs. The Fire Tank Pirates",
-            "absoluteEpisode": 827
+            "title": "In the Dark Recesses of the Holyland! A Mysterious Giant Straw Hat!",
+            "absoluteEpisode": 885
           },
           {
             "episode": 9,
-            "title": "The Deadly Pact! Luffy & Bege\\'s Allied Forces",
-            "absoluteEpisode": 828
+            "title": "The Holyland in Tumult! The Targeted Princess Shirahoshi!",
+            "absoluteEpisode": 886
           },
           {
             "episode": 10,
-            "title": "Luffy Engages in a Secret Maneuver! The Wedding Full of Conspiracies Starts Soon!",
-            "absoluteEpisode": 829
+            "title": "An Explosive Situation! Two Emperors of the Sea Going After Luffy!",
+            "absoluteEpisode": 887
           },
           {
             "episode": 11,
-            "title": "The Family Gets Together! The Hellish Tea Party Starts!",
-            "absoluteEpisode": 830
+            "title": "Sabo Enraged! The Tragedy of the Revolutionary Army Officer Kuma!",
+            "absoluteEpisode": 888
           },
           {
             "episode": 12,
-            "title": "The Broken Couple! Sanji and Pudding Enter!",
-            "absoluteEpisode": 831
+            "title": "Finally, It Starts! The Conspiracy-filled Reverie!",
+            "absoluteEpisode": 889
           },
           {
             "episode": 13,
-            "title": "A Deadly Kiss! The Mission to Assassinate the Emperor Kicks Off!",
-            "absoluteEpisode": 832
+            "title": "Marco! The Keeper of Whitebeard\'s Last Memento!",
+            "absoluteEpisode": 890
           },
           {
             "episode": 14,
-            "title": "Returning the Sake Cup! The Manly Jimbei Pays His Debt!",
-            "absoluteEpisode": 833
-          },
-          {
-            "episode": 15,
-            "title": "The Mission Failed?! The Big Mom Pirates Strike Back!",
-            "absoluteEpisode": 834
-          },
-          {
-            "episode": 16,
-            "title": "Run Sanji! SOS Germa 66!",
-            "absoluteEpisode": 835
-          },
-          {
-            "episode": 17,
-            "title": "Mom\\'s Secret! The Giant\\'s Island Elbaph and a Little Monster!",
-            "absoluteEpisode": 836
-          },
-          {
-            "episode": 18,
-            "title": "The Birth of Mom - The Day That Carmel Vanished",
-            "absoluteEpisode": 837
-          },
-          {
-            "episode": 19,
-            "title": "The Launcher Blasts! The Moment of Big Mom\\'s Assassination!",
-            "absoluteEpisode": 838
-          },
-          {
-            "episode": 20,
-            "title": "The Evil Army! Transform! Germa 66!",
-            "absoluteEpisode": 839
-          },
-          {
-            "episode": 21,
-            "title": "Cutting the Father-Son Relationship! Sanji and Judge!",
-            "absoluteEpisode": 840
-          },
-          {
-            "episode": 22,
-            "title": "Escape From the Tea Party! Luffy vs. Big Mom!",
-            "absoluteEpisode": 841
-          },
-          {
-            "episode": 23,
-            "title": "The Execution Begins! Luffy\\'s Allied Forces Are Annihilated?!",
-            "absoluteEpisode": 842
-          },
-          {
-            "episode": 24,
-            "title": "The Chateau Collapses! The Straw Hat\\'s Great Escape Begins!",
-            "absoluteEpisode": 843
-          },
-          {
-            "episode": 25,
-            "title": "The Spear of Elbaph! Onslaught! The Flying Big Mom!",
-            "absoluteEpisode": 844
-          },
-          {
-            "episode": 26,
-            "title": "Pudding\\'s Determination - Ablaze! The Seducing Woods",
-            "absoluteEpisode": 845
-          },
-          {
-            "episode": 27,
-            "title": "A Lightning Counterattack! Nami and Zeus the Thundercloud!",
-            "absoluteEpisode": 846
-          },
-          {
-            "episode": 28,
-            "title": "A Coincidental Reunion - Sanji and the Lovestruck Evil Pudding",
-            "absoluteEpisode": 847
-          },
-          {
-            "episode": 29,
-            "title": "Save the Sunny! Fighting Bravely! Chopper and Brook!",
-            "absoluteEpisode": 848
-          },
-          {
-            "episode": 30,
-            "title": "Before the Dawn! Pedro, the Captain of the Guardians!",
-            "absoluteEpisode": 849
-          },
-          {
-            "episode": 31,
-            "title": "I\\'ll Be Back! Luffy, Deadly Departure!",
-            "absoluteEpisode": 850
-          },
-          {
-            "episode": 32,
-            "title": "The Man with a Bounty of Billion! The Strongest Sweet General, Katakuri!",
-            "absoluteEpisode": 851
-          },
-          {
-            "episode": 33,
-            "title": "A Hard Battle Starts! Luffy vs. Katakuri!",
-            "absoluteEpisode": 852
-          },
-          {
-            "episode": 34,
-            "title": "The Green Room! An Invincible Helmsman, Jimbei!",
-            "absoluteEpisode": 853
-          },
-          {
-            "episode": 35,
-            "title": "The Threat of the Mole! Luffy\\'s Silent Fight!",
-            "absoluteEpisode": 854
-          },
-          {
-            "episode": 36,
-            "title": "The End of the Deadly Battle?! Katakuri\\'s Awakening in Anger!",
-            "absoluteEpisode": 855
-          },
-          {
-            "episode": 37,
-            "title": "The Forbidden Secret! Katakuri\\'s Merienda!",
-            "absoluteEpisode": 856
-          },
-          {
-            "episode": 38,
-            "title": "Luffy Fights Back! The Invincible Katakuri\\'s Weak Point!",
-            "absoluteEpisode": 857
-          },
-          {
-            "episode": 39,
-            "title": "Another Crisis! Gear 4 vs Unstoppable Donuts",
-            "absoluteEpisode": 858
-          },
-          {
-            "episode": 40,
-            "title": "The Rebellious Daughter, Chiffon! Sanji\\'s Big Plan for Transporting the Cake!",
-            "absoluteEpisode": 859
-          },
-          {
-            "episode": 41,
-            "title": "A Man\\'s Way of Life - Bege and Luffy\\'s Determination as Captains",
-            "absoluteEpisode": 860
-          },
-          {
-            "episode": 42,
-            "title": "The Cake Sank?! Sanji and Bege\\'s Getaway Battle!",
-            "absoluteEpisode": 861
-          },
-          {
-            "episode": 43,
-            "title": "Sulong! Carrot\\'s Big Mystic Transformation!",
-            "absoluteEpisode": 862
-          },
-          {
-            "episode": 44,
-            "title": "Break Through! The Straw Hat\\'s Mighty Sea Battle!",
-            "absoluteEpisode": 863
-          },
-          {
-            "episode": 45,
-            "title": "Finally, The Clash! The Emperor of the Sea vs. the Straw Hats!",
-            "absoluteEpisode": 864
-          },
-          {
-            "episode": 46,
-            "title": "Dark King\\'s Direct Precepts! The Battle Against Katakuri Turns Around!",
-            "absoluteEpisode": 865
-          },
-          {
-            "episode": 47,
-            "title": "He Finally Returns - Sanji, the Man Who Stops the Yonko",
-            "absoluteEpisode": 866
+            "title": "Climbing Up a Waterfall! A Great Journey Through the Land of Wano\'s Sea Zone!",
+            "absoluteEpisode": 891
           }
         ]
       },
@@ -4470,248 +4594,988 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Lurking in the Darkness! An Assassin Targeting Luffy!",
-            "absoluteEpisode": 867
-          },
-          {
-            "episode": 2,
-            "title": "A Man\\'s Resolution - Katakuri\\'s Life Risking Great Match",
-            "absoluteEpisode": 868
-          },
-          {
-            "episode": 3,
-            "title": "Wake Up - To Cross Over the Strongest Kenbunshoku",
-            "absoluteEpisode": 869
-          },
-          {
-            "episode": 4,
-            "title": "A Fist of Divine Speed! Another Gear Four Application Activated!",
-            "absoluteEpisode": 870
-          },
-          {
-            "episode": 5,
-            "title": "Finally, It\\'s Over! The Climax of the Intense Fight against Katakuri!",
-            "absoluteEpisode": 871
-          },
-          {
-            "episode": 6,
-            "title": "A Desperate Situation - The Iron-Tight Entrapment of Luffy!",
-            "absoluteEpisode": 872
-          },
-          {
-            "episode": 7,
-            "title": "Pulling Back from the Brink! The Formidable Reinforcements - Germa!",
-            "absoluteEpisode": 873
-          },
-          {
-            "episode": 8,
-            "title": "The Last Hope! The Sun Pirates Emerge!",
-            "absoluteEpisode": 874
-          },
-          {
-            "episode": 9,
-            "title": "A Captivating Flavor! Sanji\\'s Cake of Happiness!",
-            "absoluteEpisode": 875
-          },
-          {
-            "episode": 10,
-            "title": "The Man of Humanity and Justice! Jimbei, a Desperate Massive Ocean Current",
-            "absoluteEpisode": 876
-          },
-          {
-            "episode": 11,
-            "title": "The Parting Time! Pudding\\'s Last Wish!",
-            "absoluteEpisode": 877
-          },
-          {
-            "episode": 12,
-            "title": "The World is Stunned! The Fifth Emperor of the Sea Emerges!",
-            "absoluteEpisode": 878
-          },
-          {
-            "episode": 13,
-            "title": "To the Reverie! The Straw Hats\\' Sworn Allies Come Together!",
-            "absoluteEpisode": 879
-          },
-          {
-            "episode": 14,
-            "title": "Sabo Goes into Action! All the Captains of the Revolutionary Army Appear!",
-            "absoluteEpisode": 880
-          },
-          {
-            "episode": 15,
-            "title": "Going into Action! The Implacable New Admiral of the Fleet - Sakazuki!",
-            "absoluteEpisode": 881
-          },
-          {
-            "episode": 16,
-            "title": "The Summit War - Pirate King\\'s Inherited Will",
-            "absoluteEpisode": 882
-          },
-          {
-            "episode": 17,
-            "title": "One Step Ahead of the Dream - Shirahoshi\\'s Path to the Sun!",
-            "absoluteEpisode": 883
-          },
-          {
-            "episode": 18,
-            "title": "I Miss Him! Vivi and Rebecca\\'s Sentiments!",
-            "absoluteEpisode": 884
-          },
-          {
-            "episode": 19,
-            "title": "In the Dark Recesses of the Holyland! A Mysterious Giant Straw Hat!",
-            "absoluteEpisode": 885
-          },
-          {
-            "episode": 20,
-            "title": "The Holyland in Tumult! The Targeted Princess Shirahoshi!",
-            "absoluteEpisode": 886
-          },
-          {
-            "episode": 21,
-            "title": "An Explosive Situation! Two Emperors of the Sea Going After Luffy!",
-            "absoluteEpisode": 887
-          },
-          {
-            "episode": 22,
-            "title": "Sabo Enraged! The Tragedy of the Revolutionary Army Officer Kuma!",
-            "absoluteEpisode": 888
-          },
-          {
-            "episode": 23,
-            "title": "Finally, It Starts! The Conspiracy-filled Reverie!",
-            "absoluteEpisode": 889
-          },
-          {
-            "episode": 24,
-            "title": "Marco! The Keeper of Whitebeard\\'s Last Memento!",
-            "absoluteEpisode": 890
-          },
-          {
-            "episode": 25,
-            "title": "Climbing Up a Waterfall! A Great Journey Through the Land of Wano\\'s Sea Zone!",
-            "absoluteEpisode": 891
-          },
-          {
-            "episode": 26,
             "title": "The Land of Wano! To the Samurai Country where Cherry Blossoms Flutter!",
             "absoluteEpisode": 892
           },
           {
-            "episode": 27,
-            "title": "Otama Appears! Luffy vs. Kaido\\'s Army!",
+            "episode": 2,
+            "title": "Otama Appears! Luffy vs. Kaido\'s Army!",
             "absoluteEpisode": 893
           },
           {
-            "episode": 28,
-            "title": "He\\'ll Come! The Legend of Ace in the Land of Wano!",
+            "episode": 3,
+            "title": "He\'ll Come! The Legend of Ace in the Land of Wano!",
             "absoluteEpisode": 894
           },
           {
-            "episode": 29,
-            "title": "Side Story! The World\\'s Greatest Bounty Hunter, Cidre!",
+            "episode": 4,
+            "title": "Side Story! The World\'s Greatest Bounty Hunter, Cidre!",
             "absoluteEpisode": 895
           },
           {
-            "episode": 30,
+            "episode": 5,
             "title": "Side Story! Clash! Luffy vs. the King of Carbonation!",
             "absoluteEpisode": 896
           },
           {
-            "episode": 31,
+            "episode": 6,
             "title": "Save Otama! Straw Hat, Bounding through the Wasteland!",
             "absoluteEpisode": 897
           },
           {
-            "episode": 32,
-            "title": "The Headliner! Hawkings the Magician Appears!",
+            "episode": 7,
+            "title": "The Headliner! Hawkins the Magician Appears!",
             "absoluteEpisode": 898
           },
           {
-            "episode": 33,
-            "title": "Defeat is Inevitable! The Strawman\\'s Fierce Attack!",
+            "episode": 8,
+            "title": "Defeat is Inevitable! The Strawman\'s Fierce Attack!",
             "absoluteEpisode": 899
           },
           {
-            "episode": 34,
+            "episode": 9,
             "title": "The Greatest Day of My Life! Otama and Her Sweet Red-bean Soup!",
             "absoluteEpisode": 900
           },
           {
-            "episode": 35,
-            "title": "Charging into the Enemy\\'s Territory! Bakura Town - Where Officials Thrive!",
+            "episode": 10,
+            "title": "Charging into the Enemy\'s Territory! Bakura Town - Where Officials Thrive!",
             "absoluteEpisode": 901
           },
           {
-            "episode": 36,
+            "episode": 11,
             "title": "The Yokozuna Appears! The Invincible Urashima Goes After Okiku!",
             "absoluteEpisode": 902
           },
           {
-            "episode": 37,
-            "title": "A Climatic Sumo Battle! Straw Hat vs. the Strongest Ever Yokozuna!",
+            "episode": 12,
+            "title": "A Climactic Sumo Battle! Straw Hat vs. the Strongest Ever Yokozuna!",
             "absoluteEpisode": 903
           },
           {
-            "episode": 38,
+            "episode": 13,
             "title": "Luffy Rages! Rescue Otama from Danger!",
             "absoluteEpisode": 904
           },
           {
-            "episode": 39,
+            "episode": 14,
             "title": "Taking Back Otama! A Fierce Fight Against Holdem!",
             "absoluteEpisode": 905
           },
           {
-            "episode": 40,
+            "episode": 15,
             "title": "Duel! The Magician and the Surgeon of Death!",
             "absoluteEpisode": 906
           },
           {
-            "episode": 41,
+            "episode": 16,
             "title": "Romance Dawn",
             "absoluteEpisode": 907
           },
           {
-            "episode": 42,
+            "episode": 17,
             "title": "The Coming of the Treasure Ship! Luffytaro Returns the Favor!",
             "absoluteEpisode": 908
           },
           {
-            "episode": 43,
+            "episode": 18,
             "title": "Mysterious Grave Markers! A Reunion at the Ruins of Oden Castle!",
             "absoluteEpisode": 909
           },
           {
-            "episode": 44,
+            "episode": 19,
             "title": "A Legendary Samurai! The Man Who Roger Admired!",
             "absoluteEpisode": 910
           },
           {
-            "episode": 45,
+            "episode": 20,
             "title": "Bringing Down the Emperor of the Sea! A Secret Raid Operation Begins!",
             "absoluteEpisode": 911
           },
           {
-            "episode": 46,
+            "episode": 21,
             "title": "The Strongest Man in the World! Shutenmaru, the Thieves Brigade Chief!",
             "absoluteEpisode": 912
           },
           {
-            "episode": 47,
-            "title": "Everyone is Annihilated! Kaido\\'s Furious Blast Breath!",
+            "episode": 22,
+            "title": "Everyone is Annihilated! Kaido\'s Furious Blast Breath!",
             "absoluteEpisode": 913
           },
           {
-            "episode": 48,
+            "episode": 23,
             "title": "Finally Clashing! The Ferocious Luffy vs. Kaido!",
             "absoluteEpisode": 914
           },
           {
-            "episode": 49,
-            "title": "Destructive! One Shot, One Kill - Thunder Bagua!",
+            "episode": 24,
+            "title": "Destructive! One Shot, One Kill – Thunder Bagua!",
             "absoluteEpisode": 915
+          },
+          {
+            "episode": 25,
+            "title": "A Living Hell! Luffy, Humiliated in the Great Mine!",
+            "absoluteEpisode": 916
+          },
+          {
+            "episode": 26,
+            "title": "The Holyland in Tumult! Emperor of the Sea Blackbeard Cackles!",
+            "absoluteEpisode": 917
+          },
+          {
+            "episode": 27,
+            "title": "It\'s On! The Special Operation to Bring Down Kaido!",
+            "absoluteEpisode": 918
+          },
+          {
+            "episode": 28,
+            "title": "Rampage! The Prisoners – Luffy and Kid!",
+            "absoluteEpisode": 919
+          },
+          {
+            "episode": 29,
+            "title": "A Great Sensation! Sanji\'s Special Soba!",
+            "absoluteEpisode": 920
+          },
+          {
+            "episode": 30,
+            "title": "Luxurious and Gorgeous! Wano\'s Most Beautiful Woman – Komurasaki!",
+            "absoluteEpisode": 921
+          },
+          {
+            "episode": 31,
+            "title": "A Tale of Chivalry! Zoro and Tonoyasu\'s Little Trip!",
+            "absoluteEpisode": 922
+          },
+          {
+            "episode": 32,
+            "title": "A State of Emergency! Big Mom Closes in!",
+            "absoluteEpisode": 923
+          },
+          {
+            "episode": 33,
+            "title": "The Capital in an Uproar! Another Assassin Targets Sanji!",
+            "absoluteEpisode": 924
+          },
+          {
+            "episode": 34,
+            "title": "Dashing! The Righteous Soba Mask!",
+            "absoluteEpisode": 925
+          },
+          {
+            "episode": 35,
+            "title": "A Desperate Situation! Orochi\'s Menacing Oniwabanshu!",
+            "absoluteEpisode": 926
+          },
+          {
+            "episode": 36,
+            "title": "Pandemonium! The Monster Snake, Shogun Orochi!",
+            "absoluteEpisode": 927
+          },
+          {
+            "episode": 37,
+            "title": "The Flower Falls! The Final Moment of the Most Beautiful Woman in the Land of Wano!",
+            "absoluteEpisode": 928
+          },
+          {
+            "episode": 38,
+            "title": "The Bond Between Prisoners! Luffy and Old Man Hyo!",
+            "absoluteEpisode": 929
+          },
+          {
+            "episode": 39,
+            "title": "A Lead Performer! Queen the Plague Emerges!",
+            "absoluteEpisode": 930
+          },
+          {
+            "episode": 40,
+            "title": "Climb Up! Luffy\'s Desperate Escape!",
+            "absoluteEpisode": 931
+          },
+          {
+            "episode": 41,
+            "title": "Dead or Alive! Queen\'s Sumo Inferno!",
+            "absoluteEpisode": 932
+          },
+          {
+            "episode": 42,
+            "title": "Gyukimaru! Zoro Fights a Duel on Bandit\'s Bridge!",
+            "absoluteEpisode": 933
+          },
+          {
+            "episode": 43,
+            "title": "A Big Turnover! The Three-Sword Style Overcomes Danger!",
+            "absoluteEpisode": 934
+          },
+          {
+            "episode": 44,
+            "title": "Zoro, Stunned! The Shocking Identity of the Mysterious Woman!",
+            "absoluteEpisode": 935
+          },
+          {
+            "episode": 45,
+            "title": "Get the Hang of It! The Land of Wano\'s Haki - Ryuo!",
+            "absoluteEpisode": 936
+          },
+          {
+            "episode": 46,
+            "title": "Tonoyasu! Ebisu Town\'s Most Loved!",
+            "absoluteEpisode": 937
+          },
+          {
+            "episode": 47,
+            "title": "Shaking the Nation! The Identity of Ushimitsu Kozo The Chivalrous Thief!",
+            "absoluteEpisode": 938
+          },
+          {
+            "episode": 48,
+            "title": "The Straw Hats Run! Save the Captive Tonoyasu!",
+            "absoluteEpisode": 939
+          },
+          {
+            "episode": 49,
+            "title": "Zoro\'s Fury! The Truth About the Smile!",
+            "absoluteEpisode": 940
+          },
+          {
+            "episode": 50,
+            "title": "Toko\'s Tears! Orochi\'s Pitiless Bullets!",
+            "absoluteEpisode": 941
+          },
+          {
+            "episode": 51,
+            "title": "The Straw Hats Step In! An Uproarious Deadly Battle at the Execution Ground!",
+            "absoluteEpisode": 942
+          },
+          {
+            "episode": 52,
+            "title": "Luffy\'s Determination! Win Through the Sumo Inferno!",
+            "absoluteEpisode": 943
+          },
+          {
+            "episode": 53,
+            "title": "The Storm Has Come! A Raging Big Mom!",
+            "absoluteEpisode": 944
+          },
+          {
+            "episode": 54,
+            "title": "A Grudge Over Red-bean Soup! Luffy Gets into a Desperate Situation!",
+            "absoluteEpisode": 945
+          },
+          {
+            "episode": 55,
+            "title": "Stop the Emperor of the Sea! Queen\'s Secret Plan!",
+            "absoluteEpisode": 946
+          },
+          {
+            "episode": 56,
+            "title": "Brutal Ammunition! The Plague Rounds Aim at Luffy!",
+            "absoluteEpisode": 947
+          },
+          {
+            "episode": 57,
+            "title": "Start Fighting Back! Luffy and the Akazaya Samurai!",
+            "absoluteEpisode": 948
+          },
+          {
+            "episode": 58,
+            "title": "We’re Here to Win! Luffy\'s Desperate Scream!",
+            "absoluteEpisode": 949
+          },
+          {
+            "episode": 59,
+            "title": "Warriors\' Dream! Luffy\'s Conquer of Udon!",
+            "absoluteEpisode": 950
+          },
+          {
+            "episode": 60,
+            "title": "Orochi\'s Hunting Party! The Ninja Group vs. Zoro!",
+            "absoluteEpisode": 951
+          },
+          {
+            "episode": 61,
+            "title": "Tension Rises in Onigashima! Two Emperors of the Sea Meet?!",
+            "absoluteEpisode": 952
+          },
+          {
+            "episode": 62,
+            "title": "Hiyori\'s Confession! A Reunion at Bandit\'s Bridge!",
+            "absoluteEpisode": 953
+          },
+          {
+            "episode": 63,
+            "title": "Its Name is Enma! Oden\'s Great Swords!",
+            "absoluteEpisode": 954
+          },
+          {
+            "episode": 64,
+            "title": "A New Alliance?! Kaido’s Army Gathers!",
+            "absoluteEpisode": 955
+          },
+          {
+            "episode": 65,
+            "title": "Ticking Down to the Great Battle! The Straw Hats Go into Combat Mode!",
+            "absoluteEpisode": 956
+          },
+          {
+            "episode": 66,
+            "title": "Big News! An Incident That Will Affect the Seven Warlords!",
+            "absoluteEpisode": 957
+          },
+          {
+            "episode": 67,
+            "title": "A Legendary Battle! Garp and Roger!",
+            "absoluteEpisode": 958
+          },
+          {
+            "episode": 68,
+            "title": "The Rendezvous Port! The Land of Wano Act Three Begins!",
+            "absoluteEpisode": 959
+          },
+          {
+            "episode": 69,
+            "title": "The Number-One Samurai in the Land of Wano! Here comes Kozuki Oden!",
+            "absoluteEpisode": 960
+          },
+          {
+            "episode": 70,
+            "title": "Tearfully Swearing Allegiance! Oden and Kin\'emon!",
+            "absoluteEpisode": 961
+          },
+          {
+            "episode": 71,
+            "title": "Changing Destiny! The Whitebeard Pirates Cast Ashore!",
+            "absoluteEpisode": 962
+          },
+          {
+            "episode": 72,
+            "title": "Oden\'s Determination! Whitebeard\'s Test!",
+            "absoluteEpisode": 963
+          },
+          {
+            "episode": 73,
+            "title": "Whitebeard\'s Little Brother! Oden\'s Great Adventure!",
+            "absoluteEpisode": 964
+          },
+          {
+            "episode": 74,
+            "title": "Crossing Swords! Roger and Whitebeard!",
+            "absoluteEpisode": 965
+          },
+          {
+            "episode": 75,
+            "title": "Roger\'s Wish! A New Journey!",
+            "absoluteEpisode": 966
+          },
+          {
+            "episode": 76,
+            "title": "Devoting His Life! Roger\'s Adventure!",
+            "absoluteEpisode": 967
+          },
+          {
+            "episode": 77,
+            "title": "The King of the Pirates is Born! Arriving at the Last Island!",
+            "absoluteEpisode": 968
+          },
+          {
+            "episode": 78,
+            "title": "To the Land of Wano! The Roger Pirates Disband!",
+            "absoluteEpisode": 969
+          },
+          {
+            "episode": 79,
+            "title": "Sad News! The Opening of the Great Pirate Era!",
+            "absoluteEpisode": 970
+          },
+          {
+            "episode": 80,
+            "title": "Raid! Oden and the Akazaya Nine!",
+            "absoluteEpisode": 971
+          },
+          {
+            "episode": 81,
+            "title": "The End of the Battle! Oden vs. Kaido!",
+            "absoluteEpisode": 972
+          },
+          {
+            "episode": 82,
+            "title": "Boiled to Death! Oden\'s One-hour Struggle!",
+            "absoluteEpisode": 973
+          },
+          {
+            "episode": 83,
+            "title": "Oden Wouldn\'t Be Oden If It Wasn\'t Boiled!",
+            "absoluteEpisode": 974
+          },
+          {
+            "episode": 84,
+            "title": "The Castle on Fire! The Fate of the Kozuki Clan!",
+            "absoluteEpisode": 975
+          },
+          {
+            "episode": 85,
+            "title": "Back to the Present Day! 20 Years Later!",
+            "absoluteEpisode": 976
+          },
+          {
+            "episode": 86,
+            "title": "The Sea Is For Pirates! Raid! To Onigashima!",
+            "absoluteEpisode": 977
+          },
+          {
+            "episode": 87,
+            "title": "The Worst Generation Charges in! The Battle of the Stormy Sea!",
+            "absoluteEpisode": 978
+          },
+          {
+            "episode": 88,
+            "title": "Good Luck?! Leader Kin’emon’s Plot!",
+            "absoluteEpisode": 979
+          },
+          {
+            "episode": 89,
+            "title": "A Tearful Promise! The Kidnapped Momonosuke!",
+            "absoluteEpisode": 980
+          },
+          {
+            "episode": 90,
+            "title": "A New Member! \'First Son of the Sea\' Jimbei!",
+            "absoluteEpisode": 981
+          },
+          {
+            "episode": 91,
+            "title": "Kaido’s Trump Card! The Tobi Roppo Appear!",
+            "absoluteEpisode": 982
+          },
+          {
+            "episode": 92,
+            "title": "The Samurai Warriors’ Earnestness! The Straw Hats Land at Onigashima!",
+            "absoluteEpisode": 983
+          },
+          {
+            "episode": 93,
+            "title": "Luffy Goes Out of Control?! Sneaking into Kaido’s Banquet!",
+            "absoluteEpisode": 984
+          },
+          {
+            "episode": 94,
+            "title": "Thinking of Otama! Luffy’s Furious Strike!",
+            "absoluteEpisode": 985
+          },
+          {
+            "episode": 95,
+            "title": "Fighting Music! An Ability That Harms Luffy!",
+            "absoluteEpisode": 986
+          },
+          {
+            "episode": 96,
+            "title": "His Dream Broken?! The Trap That Lures Sanji!",
+            "absoluteEpisode": 987
+          },
+          {
+            "episode": 97,
+            "title": "Reinforcements Arrive! The Commander of the Whitebeard Pirates!",
+            "absoluteEpisode": 988
+          },
+          {
+            "episode": 98,
+            "title": "The Pact Between Men! The Fierce Fighting of Brachio Tank!",
+            "absoluteEpisode": 989
+          },
+          {
+            "episode": 99,
+            "title": "Thunder Bagua! Here Comes Kaido’s Son!",
+            "absoluteEpisode": 990
+          },
+          {
+            "episode": 100,
+            "title": "Enemy or Ally? Luffy and Yamato!",
+            "absoluteEpisode": 991
+          },
+          {
+            "episode": 101,
+            "title": "Desire to be Oden! Yamato’s Dream!",
+            "absoluteEpisode": 992
+          },
+          {
+            "episode": 102,
+            "title": "Explosive?! The Handcuffs that Shackle Yamato’s Freedom!",
+            "absoluteEpisode": 993
+          },
+          {
+            "episode": 103,
+            "title": "The Akazaya Face-off! Kikunojo vs. Kanjuro!",
+            "absoluteEpisode": 994
+          },
+          {
+            "episode": 104,
+            "title": "Raid! Inheriting Oden\'s Will!",
+            "absoluteEpisode": 995
+          },
+          {
+            "episode": 105,
+            "title": "Onigashima in Tumult! Luffy’s All-Out War Begins!",
+            "absoluteEpisode": 996
+          },
+          {
+            "episode": 106,
+            "title": "The Battle Under the Moon! The Berserker, Sulong the Moon Lion!",
+            "absoluteEpisode": 997
+          },
+          {
+            "episode": 107,
+            "title": "Zeus’ Treason?! The Cornered Nami!",
+            "absoluteEpisode": 998
+          },
+          {
+            "episode": 108,
+            "title": "I’ll Protect You! Yamato Meets Momonosuke!",
+            "absoluteEpisode": 999
+          },
+          {
+            "episode": 109,
+            "title": "Overwhelming Strength! The Straw Hats Come Together!",
+            "absoluteEpisode": 1000
+          },
+          {
+            "episode": 110,
+            "title": "A Risky Invitation! A Plot to Eliminate Queen!",
+            "absoluteEpisode": 1001
+          },
+          {
+            "episode": 111,
+            "title": "A New Rivalry! Nami and Ulti!",
+            "absoluteEpisode": 1002
+          },
+          {
+            "episode": 112,
+            "title": "A Heroic Blade! Akazaya vs. Kaido, Again Once More!",
+            "absoluteEpisode": 1003
+          },
+          {
+            "episode": 113,
+            "title": "An Inherited Technique! Unleashing Oden’s Secret Swordplay!",
+            "absoluteEpisode": 1004
+          },
+          {
+            "episode": 114,
+            "title": "The Power of Ice Oni! A New Version of the Plague Rounds!",
+            "absoluteEpisode": 1005
+          },
+          {
+            "episode": 115,
+            "title": "I Won’t Forgive Him! Chopper’s Determination!",
+            "absoluteEpisode": 1006
+          },
+          {
+            "episode": 116,
+            "title": "Zoro’s Pursuit! Ice Oni Tag!",
+            "absoluteEpisode": 1007
+          },
+          {
+            "episode": 117,
+            "title": "Nami Surrenders?! Ulti’s Fierce Headbutt!",
+            "absoluteEpisode": 1008
+          },
+          {
+            "episode": 118,
+            "title": "Sasaki’s Onslaught! Armored Division vs. Yamato!",
+            "absoluteEpisode": 1009
+          },
+          {
+            "episode": 119,
+            "title": "Eliminate the Ice Oni! Chopper’s Fire Trick!",
+            "absoluteEpisode": 1010
+          },
+          {
+            "episode": 120,
+            "title": "It’s Not Okay! The Spider Lures Sanji!",
+            "absoluteEpisode": 1011
+          },
+          {
+            "episode": 121,
+            "title": "A Turnaround Move! The Flames of Marco the Phoenix!",
+            "absoluteEpisode": 1012
+          },
+          {
+            "episode": 122,
+            "title": "Yamato’s Past! The Man Who Came for an Emperor of the Sea!",
+            "absoluteEpisode": 1013
+          },
+          {
+            "episode": 123,
+            "title": "Marco’s Tears! The Bond of the Whitebeard Pirates!",
+            "absoluteEpisode": 1014
+          },
+          {
+            "episode": 124,
+            "title": "Straw Hat Luffy! The Man Who Will Become the King of the Pirates!",
+            "absoluteEpisode": 1015
+          },
+          {
+            "episode": 125,
+            "title": "The Battle of the Monsters! The Three Stubborn Captains!",
+            "absoluteEpisode": 1016
+          },
+          {
+            "episode": 126,
+            "title": "Barrage of Powerful Techniques! The Fierce Attacks of the Worst Generation!",
+            "absoluteEpisode": 1017
+          },
+          {
+            "episode": 127,
+            "title": "Kaido Laughs! The Emperors of the Sea vs. the New Generation!",
+            "absoluteEpisode": 1018
+          },
+          {
+            "episode": 128,
+            "title": "Otama’s Secret Plan! Operation Kibi Dango!",
+            "absoluteEpisode": 1019
+          },
+          {
+            "episode": 129,
+            "title": "Sanji’s Scream! An SOS Echoes Over the Island!",
+            "absoluteEpisode": 1020
+          },
+          {
+            "episode": 130,
+            "title": "Spank Strikes! Sanji\'s Woman-trouble!",
+            "absoluteEpisode": 1021
+          },
+          {
+            "episode": 131,
+            "title": "No Regrets! Luffy and Boss, a Master-Disciple Bond!",
+            "absoluteEpisode": 1022
+          },
+          {
+            "episode": 132,
+            "title": "All Set! Chopperphage Nebulizer!",
+            "absoluteEpisode": 1023
+          },
+          {
+            "episode": 133,
+            "title": "Oden Appears! The Confused Hearts of the Akazaya Members!",
+            "absoluteEpisode": 1024
+          },
+          {
+            "episode": 134,
+            "title": "The Worst Generation Gets Wiped Out?! The Emperors’ Deadly Attack!",
+            "absoluteEpisode": 1025
+          },
+          {
+            "episode": 135,
+            "title": "The Supernovas Strike Back! The Mission to Tear Apart the Emperors!",
+            "absoluteEpisode": 1026
+          },
+          {
+            "episode": 136,
+            "title": "Defend Luffy! Zoro and Law’s Sword Technique!",
+            "absoluteEpisode": 1027
+          },
+          {
+            "episode": 137,
+            "title": "Surpass the Emperor of the Sea! Luffy Strikes Back with an Iron Fist!",
+            "absoluteEpisode": 1028
+          },
+          {
+            "episode": 138,
+            "title": "A Faint Memory! Luffy and Red-Haired’s Daughter Uta!",
+            "absoluteEpisode": 1029
+          },
+          {
+            "episode": 139,
+            "title": "A Pledge for the New Genesis! Luffy and Uta!",
+            "absoluteEpisode": 1030
+          },
+          {
+            "episode": 140,
+            "title": "Nami Screams - A Deadly Death Race!",
+            "absoluteEpisode": 1031
+          },
+          {
+            "episode": 141,
+            "title": "The Dawn of the Land of Wano! The All-Out Battle Heats Up!",
+            "absoluteEpisode": 1032
+          },
+          {
+            "episode": 142,
+            "title": "The Conclusion! Luffy, Accelerating Fist of the Supreme King",
+            "absoluteEpisode": 1033
+          },
+          {
+            "episode": 143,
+            "title": "Luffy, Defeated! The Straw Hats in Jeopardy?!",
+            "absoluteEpisode": 1034
+          },
+          {
+            "episode": 144,
+            "title": "The Animal Kingdom Pirates Trample Down! The End of the Kozuki Clan!",
+            "absoluteEpisode": 1035
+          },
+          {
+            "episode": 145,
+            "title": "Fight Against the Dark Night! The Commander-in-chief of the Land of Wano Sounds Off!",
+            "absoluteEpisode": 1036
+          },
+          {
+            "episode": 146,
+            "title": "Believe in Luffy! The Alliance’s Counterattack Begins!",
+            "absoluteEpisode": 1037
+          },
+          {
+            "episode": 147,
+            "title": "Nami’s Lethal Attack! Otama’s Desperate Challenge!",
+            "absoluteEpisode": 1038
+          },
+          {
+            "episode": 148,
+            "title": "A Dramatic Increase of Allies! Straw Hats Fight Back!",
+            "absoluteEpisode": 1039
+          },
+          {
+            "episode": 149,
+            "title": "The Pride of a Helmsman! The Enraged Jimbei!",
+            "absoluteEpisode": 1040
+          },
+          {
+            "episode": 150,
+            "title": "Showdown Battles of the Monsters! Yamato and Franky",
+            "absoluteEpisode": 1041
+          },
+          {
+            "episode": 151,
+            "title": "The Predator’s Trap - Black Maria’s Temptation!",
+            "absoluteEpisode": 1042
+          },
+          {
+            "episode": 152,
+            "title": "Slash the Nightmare! Brook Draws His Freezing Sword!",
+            "absoluteEpisode": 1043
+          },
+          {
+            "episode": 153,
+            "title": "Clutch! A Demon Incarnate, Robin!",
+            "absoluteEpisode": 1044
+          },
+          {
+            "episode": 154,
+            "title": "A Spell! Kid and Zoro Facing Threats!",
+            "absoluteEpisode": 1045
+          },
+          {
+            "episode": 155,
+            "title": "Taking a Chance! The Two Arms Go into Battle!",
+            "absoluteEpisode": 1046
+          },
+          {
+            "episode": 156,
+            "title": "Ascend to the Dawn! A Pink Dragon Gets Agitated",
+            "absoluteEpisode": 1047
+          },
+          {
+            "episode": 157,
+            "title": "For the Future! Yamato and the Great Swordsmen’s Pledge",
+            "absoluteEpisode": 1048
+          },
+          {
+            "episode": 158,
+            "title": "Luffy Soars! Revenge Against the King of the Beasts",
+            "absoluteEpisode": 1049
+          },
+          {
+            "episode": 159,
+            "title": "Two Dragons Face Off! Momonosuke’s Determination!",
+            "absoluteEpisode": 1050
+          },
+          {
+            "episode": 160,
+            "title": "A Legend All Over Again! Luffy’s Fist Roars in the Sky",
+            "absoluteEpisode": 1051
+          },
+          {
+            "episode": 161,
+            "title": "The Situation Has Grown Tense! The End of Onigashima!",
+            "absoluteEpisode": 1052
+          },
+          {
+            "episode": 162,
+            "title": "Sanji\'s Mutation - The Two Arms in Crisis!",
+            "absoluteEpisode": 1053
+          },
+          {
+            "episode": 163,
+            "title": "Death to Your Partner! Killer\'s Deadly Gamble!",
+            "absoluteEpisode": 1054
+          },
+          {
+            "episode": 164,
+            "title": "A Shadowy Figure Pulls the Strings! Onigashima in Flames",
+            "absoluteEpisode": 1055
+          },
+          {
+            "episode": 165,
+            "title": "Strike Back! Law and Kid\'s Counterattack Alliance",
+            "absoluteEpisode": 1056
+          },
+          {
+            "episode": 166,
+            "title": "For Luffy - Sanji and Zoro\'s Oath",
+            "absoluteEpisode": 1057
+          },
+          {
+            "episode": 167,
+            "title": "The Onslaught of Kazenbo - Orochi\'s Evil Clutches Close in",
+            "absoluteEpisode": 1058
+          },
+          {
+            "episode": 168,
+            "title": "Zoro\'s Hardship - A Monster! King the Wildfire",
+            "absoluteEpisode": 1059
+          },
+          {
+            "episode": 169,
+            "title": "Secrets of Enma! The Cursed Sword Entrusted to Zoro",
+            "absoluteEpisode": 1060
+          },
+          {
+            "episode": 170,
+            "title": "The Strike of an Ifrit! Sanji vs. Queen",
+            "absoluteEpisode": 1061
+          },
+          {
+            "episode": 171,
+            "title": "The Three-Sword Style of the Supreme King! Zoro vs. King",
+            "absoluteEpisode": 1062
+          },
+          {
+            "episode": 172,
+            "title": "Luffy is on the Move! A Turning Point of a New Era!",
+            "absoluteEpisode": 1063
+          },
+          {
+            "episode": 173,
+            "title": "Drunken Dragon Bagua! The Lawless Dragon Closing in on Luffy",
+            "absoluteEpisode": 1064
+          },
+          {
+            "episode": 174,
+            "title": "The Destruction of the Alliance?! Fire up, the Will of the New Generation!",
+            "absoluteEpisode": 1065
+          },
+          {
+            "episode": 175,
+            "title": "Here Comes the Main Act! Powerful Techniques of Shockwave and Magnetism!",
+            "absoluteEpisode": 1066
+          },
+          {
+            "episode": 176,
+            "title": "To the New Era! Settled! The Determination of the Brats",
+            "absoluteEpisode": 1067
+          },
+          {
+            "episode": 177,
+            "title": "Moon Princess Echoes! The Final Phase of the Land of Wano!",
+            "absoluteEpisode": 1068
+          },
+          {
+            "episode": 178,
+            "title": "There is Only One Winner - Luffy vs. Kaido",
+            "absoluteEpisode": 1069
+          },
+          {
+            "episode": 179,
+            "title": "Luffy Is Defeated?! The Determination of Those Left Behind",
+            "absoluteEpisode": 1070
+          },
+          {
+            "episode": 180,
+            "title": "Luffy\'s Peak - Attained! Gear Five",
+            "absoluteEpisode": 1071
+          },
+          {
+            "episode": 181,
+            "title": "The Ridiculous Power! Gear Five in Full Play",
+            "absoluteEpisode": 1072
+          },
+          {
+            "episode": 182,
+            "title": "No Way Out! A Hellish Scene on Onigashima",
+            "absoluteEpisode": 1073
+          },
+          {
+            "episode": 183,
+            "title": "I Trust Momo - Luffy\'s Final Powerful Technique!",
+            "absoluteEpisode": 1074
+          },
+          {
+            "episode": 184,
+            "title": "20 Years\' Worth of Prayers! Take Back the Land of Wano!",
+            "absoluteEpisode": 1075
+          },
+          {
+            "episode": 185,
+            "title": "The World That Luffy Wants!",
+            "absoluteEpisode": 1076
+          },
+          {
+            "episode": 186,
+            "title": "The Curtain Falls! The Winner, Straw Hat Luffy!",
+            "absoluteEpisode": 1077
+          },
+          {
+            "episode": 187,
+            "title": "He Returns! The Shogun of the Land of Wano, Kozuki Momonosuke",
+            "absoluteEpisode": 1078
+          },
+          {
+            "episode": 188,
+            "title": "The Morning Comes! Luffy and the Others Rest!",
+            "absoluteEpisode": 1079
+          },
+          {
+            "episode": 189,
+            "title": "A Celebration Banquet! The New Emperors of the Sea!",
+            "absoluteEpisode": 1080
+          },
+          {
+            "episode": 190,
+            "title": "The World Will Burn! The Onslaught of a Navy Admiral!",
+            "absoluteEpisode": 1081
+          },
+          {
+            "episode": 191,
+            "title": "The Coming of the New Era! The Red-Haired\'s Imperial Rage",
+            "absoluteEpisode": 1082
+          },
+          {
+            "episode": 192,
+            "title": "The World That Moves On! A New Organization, Cross Guild",
+            "absoluteEpisode": 1083
+          },
+          {
+            "episode": 193,
+            "title": "Time to Depart - The Land of Wano and the Straw Hats",
+            "absoluteEpisode": 1084
+          },
+          {
+            "episode": 194,
+            "title": "The Last Curtain! Luffy and Momonosuke\'s Vow",
+            "absoluteEpisode": 1085
+          },
+          {
+            "episode": 195,
+            "title": "A New Emperor! Buggy the Genius Jester!",
+            "absoluteEpisode": 1086
+          },
+          {
+            "episode": 196,
+            "title": "The War on the Island of Women! A Case Involving Koby the Hero",
+            "absoluteEpisode": 1087
+          },
+          {
+            "episode": 197,
+            "title": "Luffy\'s Dream",
+            "absoluteEpisode": 1088
           }
         ]
       },
@@ -4720,892 +5584,7 @@ window._ANIME_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "A Living Hell! Luffy, Humiliated in the Great Mine!",
-            "absoluteEpisode": 916
-          },
-          {
-            "episode": 2,
-            "title": "The Holyland in Tumult! Emperor of the Sea Blackbeard Cackles!",
-            "absoluteEpisode": 917
-          },
-          {
-            "episode": 3,
-            "title": "It\\'s On! The Special Operation to Bring Down Kaido!",
-            "absoluteEpisode": 918
-          },
-          {
-            "episode": 4,
-            "title": "Rampage! The Prisoners - Luffy and Kid!",
-            "absoluteEpisode": 919
-          },
-          {
-            "episode": 5,
-            "title": "A Great Sensation! Sanji\\'s Special Soba!",
-            "absoluteEpisode": 920
-          },
-          {
-            "episode": 6,
-            "title": "Luxurious and Gorgeous! Wano\\'s Most Beautiful Woman - Komurasaki!",
-            "absoluteEpisode": 921
-          },
-          {
-            "episode": 7,
-            "title": "A Tale of Chivalry! Zoro and Tonoyasu\\'s Little Trip!",
-            "absoluteEpisode": 922
-          },
-          {
-            "episode": 8,
-            "title": "A State of Emergency! Big Mom Closes in!",
-            "absoluteEpisode": 923
-          },
-          {
-            "episode": 9,
-            "title": "The Capital in an Uproar! Another Assassin Targets Sanji!",
-            "absoluteEpisode": 924
-          },
-          {
-            "episode": 10,
-            "title": "Dashing! The Righteous Soba Mask!",
-            "absoluteEpisode": 925
-          },
-          {
-            "episode": 11,
-            "title": "A Desperate Situation! Orochi\\'s Menacing Oniwabanshu!",
-            "absoluteEpisode": 926
-          },
-          {
-            "episode": 12,
-            "title": "Pandemonium! The Monster Snake, Shogun Orochi!",
-            "absoluteEpisode": 927
-          },
-          {
-            "episode": 13,
-            "title": "The Flower Falls! The Final Moment of the Most Beautiful Woman in the Land of Wano!",
-            "absoluteEpisode": 928
-          },
-          {
-            "episode": 14,
-            "title": "The Bond Between Prisoners! Luffy and Old Man Hyo!",
-            "absoluteEpisode": 929
-          },
-          {
-            "episode": 15,
-            "title": "A Lead Performer! Queen the Plague Emerges!",
-            "absoluteEpisode": 930
-          },
-          {
-            "episode": 16,
-            "title": "Climb Up! Luffy\\'s Desperate Escape!",
-            "absoluteEpisode": 931
-          },
-          {
-            "episode": 17,
-            "title": "Dead or Alive! Queen\\'s Sumo Inferno!",
-            "absoluteEpisode": 932
-          },
-          {
-            "episode": 18,
-            "title": "Gyukimaru! Zoro Fights a Duel on Bandit\\'s Bridge",
-            "absoluteEpisode": 933
-          },
-          {
-            "episode": 19,
-            "title": "A Big Turnover! The Three-Sword Style Overcomes Danger!",
-            "absoluteEpisode": 934
-          },
-          {
-            "episode": 20,
-            "title": "Zoro, Stunned! The Shocking Identity of the Mysterious Woman!",
-            "absoluteEpisode": 935
-          },
-          {
-            "episode": 21,
-            "title": "Get the Hang of It! The Land of Wano\\'s Haki - Ryuo!",
-            "absoluteEpisode": 936
-          },
-          {
-            "episode": 22,
-            "title": "Tonoyasu! Ebisu Town\\'s Most Loved!",
-            "absoluteEpisode": 937
-          },
-          {
-            "episode": 23,
-            "title": "Shaking the Nation! The Identity of Ushimitsu Kozo The Chivalrous Thief!",
-            "absoluteEpisode": 938
-          },
-          {
-            "episode": 24,
-            "title": "The Straw Hats Run! Save the Captive Tonoyasu!",
-            "absoluteEpisode": 939
-          },
-          {
-            "episode": 25,
-            "title": "Zoro\\'s Fury! The Truth About the Smile!",
-            "absoluteEpisode": 940
-          },
-          {
-            "episode": 26,
-            "title": "Toko\\'s Tears! Orochi\\'s Pitiless Bullets!",
-            "absoluteEpisode": 941
-          },
-          {
-            "episode": 27,
-            "title": "The Straw Hats Step In! An Uproarious Deadly Battle at the Execution Ground!",
-            "absoluteEpisode": 942
-          },
-          {
-            "episode": 28,
-            "title": "Luffy\\'s Determination! Win Through the Sumo Inferno!",
-            "absoluteEpisode": 943
-          },
-          {
-            "episode": 29,
-            "title": "The Storm Has Come! A Raging Big Mom!",
-            "absoluteEpisode": 944
-          },
-          {
-            "episode": 30,
-            "title": "A Grudge Over Red-bean Soup! Luffy Gets into a Desperate Situation!",
-            "absoluteEpisode": 945
-          },
-          {
-            "episode": 31,
-            "title": "Stop the Emperor of the Sea! Queen\\'s Secret Plan!",
-            "absoluteEpisode": 946
-          },
-          {
-            "episode": 32,
-            "title": "Brutal Ammunition! The Plague Rounds Aim at Luffy!",
-            "absoluteEpisode": 947
-          },
-          {
-            "episode": 33,
-            "title": "Start Fighting Back! Luffy and the Akazaya Samurai!",
-            "absoluteEpisode": 948
-          },
-          {
-            "episode": 34,
-            "title": "We\\'re Here to Win! Luffy\\'s Desperate Scream",
-            "absoluteEpisode": 949
-          },
-          {
-            "episode": 35,
-            "title": "Warriors\\' Dream! Luffy\\'s Conquer of Udon!",
-            "absoluteEpisode": 950
-          },
-          {
-            "episode": 36,
-            "title": "Orochi\\'s Hunting Party! The Ninja Group vs. Zoro!",
-            "absoluteEpisode": 951
-          },
-          {
-            "episode": 37,
-            "title": "Tension Rises in Onigashima! Two Emperors of the Sea Meet?!",
-            "absoluteEpisode": 952
-          },
-          {
-            "episode": 38,
-            "title": "Hiyori\\'s Confession! A Reunion at Bandit\\'s Bridge!",
-            "absoluteEpisode": 953
-          },
-          {
-            "episode": 39,
-            "title": "Its Name is Enma! Oden\\'s Great Swords!",
-            "absoluteEpisode": 954
-          },
-          {
-            "episode": 40,
-            "title": "A New Alliance?! Kaido\\'s Army Gathers!",
-            "absoluteEpisode": 955
-          },
-          {
-            "episode": 41,
-            "title": "Ticking Down to the Great Battle! The Straw Hats Go into Combat Mode!",
-            "absoluteEpisode": 956
-          }
-        ]
-      },
-      {
-        "season": 23,
-        "episodes": [
-          {
-            "episode": 1,
-            "title": "Big News! An Incident That Will Affect the Seven Warlords!",
-            "absoluteEpisode": 957
-          },
-          {
-            "episode": 2,
-            "title": "A Legendary Battle! Garp and Roger!",
-            "absoluteEpisode": 958
-          },
-          {
-            "episode": 3,
-            "title": "The Rendezvous Port! The Land of Wano Act Three Begins!",
-            "absoluteEpisode": 959
-          },
-          {
-            "episode": 4,
-            "title": "The Number-One Samurai in the Land of Wano! Here comes Kozuki Oden!",
-            "absoluteEpisode": 960
-          },
-          {
-            "episode": 5,
-            "title": "Tearfully Swearing Allegiance! Oden and Kin\\'emon!",
-            "absoluteEpisode": 961
-          },
-          {
-            "episode": 6,
-            "title": "Changing Destiny - The Whitebeard Pirates Cast Ashore!",
-            "absoluteEpisode": 962
-          },
-          {
-            "episode": 7,
-            "title": "Oden\\'s Determination! Whitebeard\\'s Test!",
-            "absoluteEpisode": 963
-          },
-          {
-            "episode": 8,
-            "title": "Whitebeard\\'s Little Brother! Oden\\'s Great Adventure!",
-            "absoluteEpisode": 964
-          },
-          {
-            "episode": 9,
-            "title": "Blades Crossed! Roger and Whitebeard!",
-            "absoluteEpisode": 965
-          },
-          {
-            "episode": 10,
-            "title": "Roger\\'s Wish! A New Journey!",
-            "absoluteEpisode": 966
-          },
-          {
-            "episode": 11,
-            "title": "Devoting His Life! Roger\\'s Adventure!",
-            "absoluteEpisode": 967
-          },
-          {
-            "episode": 12,
-            "title": "The King of the Pirates is Born! Arriving at the Last Island!",
-            "absoluteEpisode": 968
-          },
-          {
-            "episode": 13,
-            "title": "To the Land of Wano! The Roger Pirates Disband!",
-            "absoluteEpisode": 969
-          },
-          {
-            "episode": 14,
-            "title": "Sad News! The Opening of the Great Pirate Era!",
-            "absoluteEpisode": 970
-          },
-          {
-            "episode": 15,
-            "title": "Raid! Oden and the Akazaya Nine",
-            "absoluteEpisode": 971
-          },
-          {
-            "episode": 16,
-            "title": "The End of the Battle! Oden vs. Kaido!",
-            "absoluteEpisode": 972
-          },
-          {
-            "episode": 17,
-            "title": "Boiled to Death! Oden\\'s One-hour Struggle!",
-            "absoluteEpisode": 973
-          },
-          {
-            "episode": 18,
-            "title": "Oden Wouldn\\'t Be Oden If It Wasn\\'t Boiled!",
-            "absoluteEpisode": 974
-          },
-          {
-            "episode": 19,
-            "title": "The Castle on Fire! The Fate of the Kozuki Clan!",
-            "absoluteEpisode": 975
-          },
-          {
-            "episode": 20,
-            "title": "Back to the Present Day! 20 Years Later",
-            "absoluteEpisode": 976
-          },
-          {
-            "episode": 21,
-            "title": "Pirates at Sea! Raid! Onward to Onigashima",
-            "absoluteEpisode": 977
-          },
-          {
-            "episode": 22,
-            "title": "The Worst Generation Charges in! The Battle of the Stormy Sea!",
-            "absoluteEpisode": 978
-          },
-          {
-            "episode": 23,
-            "title": "Good Luck?! Leader Kin\\'emon\\'s Plot!",
-            "absoluteEpisode": 979
-          },
-          {
-            "episode": 24,
-            "title": "A Tearful Promise! The Kidnapped Momonosuke!",
-            "absoluteEpisode": 980
-          },
-          {
-            "episode": 25,
-            "title": "A New Member! \\'First Son of the Sea\\' Jimbei!",
-            "absoluteEpisode": 981
-          },
-          {
-            "episode": 26,
-            "title": "Kaido\\'s Trump Card! The Tobi Roppo Appear!",
-            "absoluteEpisode": 982
-          },
-          {
-            "episode": 27,
-            "title": "The Samurai Warriors\\' Earnestness! The Straw Hats Land at Onigashima",
-            "absoluteEpisode": 983
-          },
-          {
-            "episode": 28,
-            "title": "Luffy Goes Out of Control?! Sneaking into Kaido\\'s Banquet",
-            "absoluteEpisode": 984
-          },
-          {
-            "episode": 29,
-            "title": "Thinking of Otama! Luffy\\'s Furious Strike!",
-            "absoluteEpisode": 985
-          },
-          {
-            "episode": 30,
-            "title": "Fighting Music! An Ability That Harms Luffy!",
-            "absoluteEpisode": 986
-          },
-          {
-            "episode": 31,
-            "title": "His Dream Broken?! The Trap That Lures Sanji!",
-            "absoluteEpisode": 987
-          },
-          {
-            "episode": 32,
-            "title": "Reinforcements Arrive! The Commander of the Whitebeard Pirates!",
-            "absoluteEpisode": 988
-          },
-          {
-            "episode": 33,
-            "title": "Oath of Man! Fierce Battle of the Brachio-Tank",
-            "absoluteEpisode": 989
-          },
-          {
-            "episode": 34,
-            "title": "Thunder Bagua! Here Comes Kaido\\'s Son!",
-            "absoluteEpisode": 990
-          },
-          {
-            "episode": 35,
-            "title": "Enemy or Ally? Luffy and Yamato!",
-            "absoluteEpisode": 991
-          },
-          {
-            "episode": 36,
-            "title": "Desire to be Oden! Yamato\\'s Dream!",
-            "absoluteEpisode": 992
-          },
-          {
-            "episode": 37,
-            "title": "Explosive?! The Handcuffs that Shackle Yamato\\'s Freedom!",
-            "absoluteEpisode": 993
-          },
-          {
-            "episode": 38,
-            "title": "The Akazaya Face-off! Kikunojo vs. Kanjuro!",
-            "absoluteEpisode": 994
-          },
-          {
-            "episode": 39,
-            "title": "Raid! Inheriting Oden\\'s Will",
-            "absoluteEpisode": 995
-          },
-          {
-            "episode": 40,
-            "title": "Onigashima in Tumult! Luffy\\'s All-Out War Begins!",
-            "absoluteEpisode": 996
-          },
-          {
-            "episode": 41,
-            "title": "The Battle Under the Moon! The Berserker, Sulong the Moon Lion!",
-            "absoluteEpisode": 997
-          },
-          {
-            "episode": 42,
-            "title": "Zeus\\' Treason?! The Cornered Nami!",
-            "absoluteEpisode": 998
-          },
-          {
-            "episode": 43,
-            "title": "The Fate That Protects You - Yamato and Momonosuke",
-            "absoluteEpisode": 999
-          },
-          {
-            "episode": 44,
-            "title": "Overwhelming Strength! The Straw Hats Come Together!",
-            "absoluteEpisode": 1000
-          },
-          {
-            "episode": 45,
-            "title": "A Risky Invitation! A Plot to Eliminate Queen",
-            "absoluteEpisode": 1001
-          },
-          {
-            "episode": 46,
-            "title": "A New Rivalry! Nami and Ulti!",
-            "absoluteEpisode": 1002
-          },
-          {
-            "episode": 47,
-            "title": "A Heroic Blade! Akazaya vs. Kaido, Again Once More!",
-            "absoluteEpisode": 1003
-          },
-          {
-            "episode": 48,
-            "title": "An Inherited Technique! Unleashing Oden\\'s Secret Swordplay!",
-            "absoluteEpisode": 1004
-          }
-        ]
-      },
-      {
-        "season": 24,
-        "episodes": [
-          {
-            "episode": 1,
-            "title": "The Power of Ice Oni! A New Version of the Plague Rounds!",
-            "absoluteEpisode": 1005
-          },
-          {
-            "episode": 2,
-            "title": "I Won\\'t Forgive Him! Chopper\\'s Determination!",
-            "absoluteEpisode": 1006
-          },
-          {
-            "episode": 3,
-            "title": "Zoro\\'s Pursuit! Ice Oni Tag",
-            "absoluteEpisode": 1007
-          },
-          {
-            "episode": 4,
-            "title": "Nami Surrenders?! Ulti\\'s Fierce Headbutt!",
-            "absoluteEpisode": 1008
-          },
-          {
-            "episode": 5,
-            "title": "Sasaki\\'s Onslaught - Armored Division vs. Yamato",
-            "absoluteEpisode": 1009
-          },
-          {
-            "episode": 6,
-            "title": "Eliminate the Ice Oni! Chopper\\'s Fire Trick!",
-            "absoluteEpisode": 1010
-          },
-          {
-            "episode": 7,
-            "title": "It\\'s Not Okay! The Spider lures Sanji!",
-            "absoluteEpisode": 1011
-          },
-          {
-            "episode": 8,
-            "title": "A Turnaround Move! The Flames of Marco the Phoenix!",
-            "absoluteEpisode": 1012
-          },
-          {
-            "episode": 9,
-            "title": "Yamato\\'s Past - The Man Who Came for an Emperor of the Sea",
-            "absoluteEpisode": 1013
-          },
-          {
-            "episode": 10,
-            "title": "Marco\\'s Tears! The Bond of the Whitebeard Pirates!",
-            "absoluteEpisode": 1014
-          },
-          {
-            "episode": 11,
-            "title": "Straw Hat Luffy! The Man Who Will Become the King of the Pirates!",
-            "absoluteEpisode": 1015
-          },
-          {
-            "episode": 12,
-            "title": "The Battle of the Monsters! The Three Stubborn Captains",
-            "absoluteEpisode": 1016
-          },
-          {
-            "episode": 13,
-            "title": "A Barrage of Powerful Techniques! The Fierce Attacks of the Worst Generation!",
-            "absoluteEpisode": 1017
-          },
-          {
-            "episode": 14,
-            "title": "Kaido Laughs! The Emperors of the Sea vs. the New Generation!",
-            "absoluteEpisode": 1018
-          },
-          {
-            "episode": 15,
-            "title": "Otama\\'s Secret Plan! Operation Kibi Dango!",
-            "absoluteEpisode": 1019
-          },
-          {
-            "episode": 16,
-            "title": "Sanji\\'s Scream! An SOS Echoes Over the Island!",
-            "absoluteEpisode": 1020
-          },
-          {
-            "episode": 17,
-            "title": "Spank Strikes! Sanji\\'s Woman-trouble!",
-            "absoluteEpisode": 1021
-          },
-          {
-            "episode": 18,
-            "title": "No Regrets! Luffy and Boss, a Master-Disciple Bond!",
-            "absoluteEpisode": 1022
-          },
-          {
-            "episode": 19,
-            "title": "All Set! Chopperphage Nebulizer!",
-            "absoluteEpisode": 1023
-          },
-          {
-            "episode": 20,
-            "title": "Oden Appears! The Confused Hearts of the Akazaya Members!",
-            "absoluteEpisode": 1024
-          },
-          {
-            "episode": 21,
-            "title": "The Worst Generation Gets Wiped Out?! The Emperors\\' Deadly Attack!",
-            "absoluteEpisode": 1025
-          },
-          {
-            "episode": 22,
-            "title": "The Supernovas Strike Back! The Mission to Tear Apart the Emperors!",
-            "absoluteEpisode": 1026
-          },
-          {
-            "episode": 23,
-            "title": "Protect Luffy! Zoro and Law\\'s Sword Technique",
-            "absoluteEpisode": 1027
-          },
-          {
-            "episode": 24,
-            "title": "Surpass the Emperor of the Sea! Luffy Strikes Back with an Iron Fist!",
-            "absoluteEpisode": 1028
-          },
-          {
-            "episode": 25,
-            "title": "A Faint Memory - Luffy and Red-Haired\\'s Daughter Uta!",
-            "absoluteEpisode": 1029
-          },
-          {
-            "episode": 26,
-            "title": "A Pledge for the Next Genesis! Luffy and Uta!",
-            "absoluteEpisode": 1030
-          },
-          {
-            "episode": 27,
-            "title": "Nami Screams - A Deadly Death Race!",
-            "absoluteEpisode": 1031
-          },
-          {
-            "episode": 28,
-            "title": "The Dawn of the Land of Wano - The All-Out Battle Heats Up!",
-            "absoluteEpisode": 1032
-          },
-          {
-            "episode": 29,
-            "title": "The Conclusion! Luffy, Accelerating Fist of the Supreme King",
-            "absoluteEpisode": 1033
-          },
-          {
-            "episode": 30,
-            "title": "Luffy Defeated! The Straw Hats in Jeopardy?!",
-            "absoluteEpisode": 1034
-          },
-          {
-            "episode": 31,
-            "title": "The Animal Kingdom Pirates Trample Down! The End of the Kozuki Clan!",
-            "absoluteEpisode": 1035
-          },
-          {
-            "episode": 32,
-            "title": "Fight Against the Dark Night – The Commander-in-chief of the Land of Wano Sounds Off",
-            "absoluteEpisode": 1036
-          },
-          {
-            "episode": 33,
-            "title": "Believe in Luffy! The Alliance\\'s Counterattack Begins!",
-            "absoluteEpisode": 1037
-          },
-          {
-            "episode": 34,
-            "title": "Nami\\'s Lethal Attack! Otama\\'s Desperate Challenge!",
-            "absoluteEpisode": 1038
-          },
-          {
-            "episode": 35,
-            "title": "A Dramatic Increase of Allies! Straw Hats Fight Back!",
-            "absoluteEpisode": 1039
-          },
-          {
-            "episode": 36,
-            "title": "The Pride of a Helmsman – The Enraged Jimbei!",
-            "absoluteEpisode": 1040
-          },
-          {
-            "episode": 37,
-            "title": "Showdown Battles of the Monsters! Yamato and Franky",
-            "absoluteEpisode": 1041
-          },
-          {
-            "episode": 38,
-            "title": "The Predator\\'s Trap - Black Maria\\'s Temptation",
-            "absoluteEpisode": 1042
-          },
-          {
-            "episode": 39,
-            "title": "Slash the Nightmare - Brook Draws His Freezing Sword!",
-            "absoluteEpisode": 1043
-          },
-          {
-            "episode": 40,
-            "title": "Clutch! A Demon Incarnate, Robin!",
-            "absoluteEpisode": 1044
-          },
-          {
-            "episode": 41,
-            "title": "A Spell! Kid and Zoro Facing Threats!",
-            "absoluteEpisode": 1045
-          }
-        ]
-      },
-      {
-        "season": 25,
-        "episodes": [
-          {
-            "episode": 1,
-            "title": "Taking a Chance! The Two Arms Go into Battle!",
-            "absoluteEpisode": 1046
-          },
-          {
-            "episode": 2,
-            "title": "Ascend to the Dawn! A Pink Dragon Gets Agitated",
-            "absoluteEpisode": 1047
-          },
-          {
-            "episode": 3,
-            "title": "For the Future! Yamato and the Great Swordsmen\\'s Pledge",
-            "absoluteEpisode": 1048
-          },
-          {
-            "episode": 4,
-            "title": "Luffy Soars! Revenge Against the King of the Beasts",
-            "absoluteEpisode": 1049
-          },
-          {
-            "episode": 5,
-            "title": "Two Dragons Face Off! Momonosuke\\'s Determination!",
-            "absoluteEpisode": 1050
-          },
-          {
-            "episode": 6,
-            "title": "A Legend All Over Again! Luffy\\'s Fist Roars in the Sky",
-            "absoluteEpisode": 1051
-          },
-          {
-            "episode": 7,
-            "title": "The Situation Has Grown Tense! The End of Onigashima!",
-            "absoluteEpisode": 1052
-          },
-          {
-            "episode": 8,
-            "title": "Sanji\\'s Mutation - The Two Arms in Crisis!",
-            "absoluteEpisode": 1053
-          },
-          {
-            "episode": 9,
-            "title": "Death to Your Partner! Killer\\'s Deadly Gamble!",
-            "absoluteEpisode": 1054
-          },
-          {
-            "episode": 10,
-            "title": "A Shadowy Figure Pulls the Strings! Onigashima in Flames",
-            "absoluteEpisode": 1055
-          },
-          {
-            "episode": 11,
-            "title": "Strike Back! Law and Kid\\'s Counterattack Alliance",
-            "absoluteEpisode": 1056
-          },
-          {
-            "episode": 12,
-            "title": "For Luffy - Sanji and Zoro\\'s Oath",
-            "absoluteEpisode": 1057
-          },
-          {
-            "episode": 13,
-            "title": "The Onslaught of Kazenbo - Orochi\\'s Evil Clutches Close in",
-            "absoluteEpisode": 1058
-          },
-          {
-            "episode": 14,
-            "title": "Zoro\\'s Hardship - A Monster! King the Wildfire",
-            "absoluteEpisode": 1059
-          },
-          {
-            "episode": 15,
-            "title": "Secrets of Enma! The Cursed Sword Entrusted to Zoro",
-            "absoluteEpisode": 1060
-          },
-          {
-            "episode": 16,
-            "title": "Attack of the Devil! Sanji vs. Queen",
-            "absoluteEpisode": 1061
-          },
-          {
-            "episode": 17,
-            "title": "King of Hell Three Sword Style - Zoro vs. King",
-            "absoluteEpisode": 1062
-          },
-          {
-            "episode": 18,
-            "title": "Luffy Accelerates! The Turning Point of a New Era!",
-            "absoluteEpisode": 1063
-          },
-          {
-            "episode": 19,
-            "title": "Shuron Hakke! A Lawless Dragon Approaches Luffy!",
-            "absoluteEpisode": 1064
-          },
-          {
-            "episode": 20,
-            "title": "The Destruction of the Alliance?! Fire up, the Will of the New Generation!",
-            "absoluteEpisode": 1065
-          },
-          {
-            "episode": 21,
-            "title": "The Main Attraction is Coming! Ultimate Attack of Shockwave and Magnetism",
-            "absoluteEpisode": 1066
-          },
-          {
-            "episode": 22,
-            "title": "To the New Era! Settled! The Determination of the Brats",
-            "absoluteEpisode": 1067
-          },
-          {
-            "episode": 23,
-            "title": "Moon Princess Echoes! Wano Country\\'s Final Phase!",
-            "absoluteEpisode": 1068
-          },
-          {
-            "episode": 24,
-            "title": "There is Only One Winner - Luffy vs. Kaido",
-            "absoluteEpisode": 1069
-          },
-          {
-            "episode": 25,
-            "title": "Luffy is Defeated?! The Determination of Those Left Behind",
-            "absoluteEpisode": 1070
-          },
-          {
-            "episode": 26,
-            "title": "Luffy\\'s Peak Attained! Gear 5",
-            "absoluteEpisode": 1071
-          },
-          {
-            "episode": 27,
-            "title": "The Ridiculous Power! Gear Five in Full Play",
-            "absoluteEpisode": 1072
-          },
-          {
-            "episode": 28,
-            "title": "Nowhere to Run! Hell on Onigashima!",
-            "absoluteEpisode": 1073
-          },
-          {
-            "episode": 29,
-            "title": "Believe in Momo - Luffy\\'s Final Powerful Technique!",
-            "absoluteEpisode": 1074
-          },
-          {
-            "episode": 30,
-            "title": "Twenty Years of Prayer! Reclaim Wano Country",
-            "absoluteEpisode": 1075
-          },
-          {
-            "episode": 31,
-            "title": "The World That Luffy Wants!",
-            "absoluteEpisode": 1076
-          },
-          {
-            "episode": 32,
-            "title": "Closing the Curtain! Winner - Straw Hat Luffy!",
-            "absoluteEpisode": 1077
-          },
-          {
-            "episode": 33,
-            "title": "Return! Shogun of Wano Country - Kozuki Momonosuke",
-            "absoluteEpisode": 1078
-          },
-          {
-            "episode": 34,
-            "title": "Dawn Has Come! Luffy and Friends Rest",
-            "absoluteEpisode": 1079
-          },
-          {
-            "episode": 35,
-            "title": "The Festival Banquet! New Emperors of the Sea",
-            "absoluteEpisode": 1080
-          },
-          {
-            "episode": 36,
-            "title": "The World in Flames! The Navy Admiral\\'s Attack!",
-            "absoluteEpisode": 1081
-          },
-          {
-            "episode": 37,
-            "title": "A New Era Arrives! The Fury of Red-Haired Yonko",
-            "absoluteEpisode": 1082
-          },
-          {
-            "episode": 38,
-            "title": "The World That Moves On! A New Organization, Cross Guild!",
-            "absoluteEpisode": 1083
-          },
-          {
-            "episode": 39,
-            "title": "The Time of Departure - The Land of Wano and the Straw Hat Pirates!",
-            "absoluteEpisode": 1084
-          },
-          {
-            "episode": 40,
-            "title": "The Last Curtain! Luffy and Momonosuke\\'s Vow",
-            "absoluteEpisode": 1085
-          },
-          {
-            "episode": 41,
-            "title": "A New Emperor! Buggy the Genius Jester!",
-            "absoluteEpisode": 1086
-          },
-          {
-            "episode": 42,
-            "title": "The War on the Island of Women! A Case Involving Koby the Hero",
-            "absoluteEpisode": 1087
-          },
-          {
-            "episode": 43,
-            "title": "Luffy\\'s Dream",
-            "absoluteEpisode": 1088
-          }
-        ]
-      },
-      {
-        "season": 26,
-        "episodes": [
-          {
-            "episode": 1,
-            "title": "Entering a New Chapter! Luffy and Sabo\\'s Paths!",
+            "title": "Entering a New Chapter! Luffy and Sabo\'s Paths!",
             "absoluteEpisode": 1089
           },
           {
@@ -5620,7 +5599,7 @@ window._ANIME_DATA = [
           },
           {
             "episode": 4,
-            "title": "Bonney\\'s Lamentation! Darkness Lurking on the Future Island",
+            "title": "Bonney\'s Lamentation! Darkness Lurking on the Future Island",
             "absoluteEpisode": 1092
           },
           {
@@ -5665,7 +5644,7 @@ window._ANIME_DATA = [
           },
           {
             "episode": 13,
-            "title": "The Strongest Form of Humanity! The Seraphim\\'s Powers!",
+            "title": "The Strongest Form of Humanity! The Seraphim\'s Powers!",
             "absoluteEpisode": 1101
           },
           {
@@ -5675,12 +5654,12 @@ window._ANIME_DATA = [
           },
           {
             "episode": 15,
-            "title": "Turn Back My Father! Bonney\\'s Futile Wish!",
+            "title": "Turn Back My Father! Bonney\'s Futile Wish!",
             "absoluteEpisode": 1103
           },
           {
             "episode": 16,
-            "title": "A Desperate Situation! The Seraphim\\'s All-out Attack!",
+            "title": "A Desperate Situation! The Seraphim\'s All-out Attack!",
             "absoluteEpisode": 1104
           },
           {
@@ -5695,12 +5674,12 @@ window._ANIME_DATA = [
           },
           {
             "episode": 19,
-            "title": "A Shudder! The Evil Hand Creeping Up on the Laboratory!",
+            "title": "A Shudder! The Evil Hand Creeping Up on the Laboratory",
             "absoluteEpisode": 1107
           },
           {
             "episode": 20,
-            "title": "Incomprehensible! The Seraphim\\'s Rebellion!",
+            "title": "Incomprehensible! The Seraphim\'s Rebellion!",
             "absoluteEpisode": 1108
           },
           {
@@ -5715,7 +5694,7 @@ window._ANIME_DATA = [
           },
           {
             "episode": 23,
-            "title": "The Second Ohara! The Mastermind\\'s Ambition!",
+            "title": "The Second Ohara! The Mastermind\'s Ambition!",
             "absoluteEpisode": 1111
           },
           {
@@ -5735,12 +5714,12 @@ window._ANIME_DATA = [
           },
           {
             "episode": 27,
-            "title": "The Navy Surprised! The Navy Headquarters\\' Former Admiral, Kuzan",
+            "title": "The Navy Surprised! The Navy Headquarters\' Former Admiral, Kuzan",
             "absoluteEpisode": 1115
           },
           {
             "episode": 28,
-            "title": "Let\\'s Go Get It! Buggy\\'s Big Declaration",
+            "title": "Let\'s Go Get It! Buggy\'s Big Declaration",
             "absoluteEpisode": 1116
           },
           {
@@ -5750,203 +5729,198 @@ window._ANIME_DATA = [
           },
           {
             "episode": 30,
-            "title": "The Holy Land in Tumult! Sai and Leo\\'s Full-Power Blow!",
+            "title": "The Holy Land in Tumult! Sai and Leo\'s Full-Power Blow!",
             "absoluteEpisode": 1118
           },
           {
             "episode": 31,
-            "title": "The Entrusted Message! King Cobra\\'s Resolve",
+            "title": "The Entrusted Message! King Cobra’s Resolve",
             "absoluteEpisode": 1119
           },
           {
             "episode": 32,
-            "title": "The World Is Shaken! The Ruler\\'s Judgment and the Five Elders\\' Actions!",
+            "title": "The World Is Shaken! The Ruler\'s Judgment and the Five Elders\' Actions!",
             "absoluteEpisode": 1120
           },
           {
             "episode": 33,
-            "title": "Garp and Kuzan - A Master and a Pupil\\'s Beliefs Clash",
+            "title": "Garp and Kuzan - A Master and a Pupil\'s Beliefs Clash",
             "absoluteEpisode": 1121
           },
           {
             "episode": 34,
             "title": "The Last Lesson! Impact Inherited",
             "absoluteEpisode": 1122
-          }
-        ]
-      },
-      {
-        "season": 27,
-        "episodes": [
+          },
           {
-            "episode": 1,
-            "title": "The World Shakes! The Straw Hats\\' Hostage Situation",
+            "episode": 35,
+            "title": "The World Shakes! The Straw Hats\' Hostage Situation",
             "absoluteEpisode": 1123
           },
           {
-            "episode": 2,
+            "episode": 36,
             "title": "Completely Surrounded! The Operation to Escape Egghead",
             "absoluteEpisode": 1124
           },
           {
-            "episode": 3,
-            "title": "A Clash of Two Men\\'s Determination! Kizaru and Sentomaru",
+            "episode": 37,
+            "title": "A Clash of Two Men\'s Determination! Kizaru and Sentomaru",
             "absoluteEpisode": 1125
           },
           {
-            "episode": 4,
-            "title": "Looming Despair! Admiral Kizaru\\'s Depressing Mission",
+            "episode": 38,
+            "title": "Looming Despair! Admiral Kizaru\'s Depressing Mission",
             "absoluteEpisode": 1126
           },
           {
-            "episode": 5,
-            "title": "Luffy vs. Kizaru! A Fierce Kaleidoscopic Battle",
+            "episode": 39,
+            "title": "Luffy vs. Kizaru!  A Fierce Kaleidoscopic Battle",
             "absoluteEpisode": 1127
           },
           {
-            "episode": 6,
+            "episode": 40,
             "title": "The Nightmare Strikes - Godhead of Science & Defense, St. Saturn",
             "absoluteEpisode": 1128
           },
           {
-            "episode": 7,
-            "title": "Kuma\\'s Past - Better Off Dead in This World",
+            "episode": 41,
+            "title": "Kuma\'s Past - Better Off Dead in This World",
             "absoluteEpisode": 1129
           },
           {
-            "episode": 8,
+            "episode": 42,
             "title": "A History Erased! God Valley of Despair",
             "absoluteEpisode": 1130
           },
           {
-            "episode": 9,
+            "episode": 43,
             "title": "A Fleeting Moment of Happiness - Kumachi and Ginny",
             "absoluteEpisode": 1131
           },
           {
-            "episode": 10,
+            "episode": 44,
             "title": "A Pledge to Ginny - Kuma Becomes a Father",
             "absoluteEpisode": 1132
           },
           {
-            "episode": 11,
+            "episode": 45,
             "title": "To Save His Daughter - Kuma the Timid Pacifist",
             "absoluteEpisode": 1133
           },
           {
-            "episode": 12,
-            "title": "Cruel Fate - Kuma\\'s Decision as a Father",
+            "episode": 46,
+            "title": "Cruel Fate - Kuma\'s Decision as a Father",
             "absoluteEpisode": 1134
           },
           {
-            "episode": 13,
-            "title": "To the Sea Where My Father is! The Future Bonney Chooses",
+            "episode": 47,
+            "title": "To the Sea Where My Father Is! The Future Bonney Chooses",
             "absoluteEpisode": 1135
           },
           {
-            "episode": 14,
-            "title": "Kuma\\'s Life",
+            "episode": 48,
+            "title": "Kuma\'s Life",
             "absoluteEpisode": 1136
           },
           {
-            "episode": 15,
-            "title": "I\\'m Sorry, Dad - Bonney\\'s Tears and Kuma\\'s Fist",
+            "episode": 49,
+            "title": "I\'m Sorry, Dad - Bonney\'s Tears and Kuma\'s Fist",
             "absoluteEpisode": 1137
           },
           {
-            "episode": 16,
-            "title": "Thank You, Dad - Bonney and Kuma\\'s Warm Embrace",
+            "episode": 50,
+            "title": "Thank You, Dad - Bonney and Kuma\'s Warm Embrace",
             "absoluteEpisode": 1138
           },
           {
-            "episode": 17,
-            "title": "Destroy Egghead - The Buster Call is Invoked",
+            "episode": 51,
+            "title": "Destroy Egghead - The Buster Call Is Invoked",
             "absoluteEpisode": 1139
           },
           {
-            "episode": 18,
+            "episode": 52,
             "title": "An Admired Hero - The Warrior of Liberation Who Saves Bonney",
             "absoluteEpisode": 1140
           },
           {
-            "episode": 19,
+            "episode": 53,
             "title": "Reliable Reinforcements! Dorry and Brogy Arrive!",
             "absoluteEpisode": 1141
           },
           {
-            "episode": 20,
-            "title": "Come In, World - Vegapunk\\'s Message",
+            "episode": 54,
+            "title": "Come In, World - Vegapunk\'s Message",
             "absoluteEpisode": 1142
           },
           {
-            "episode": 21,
-            "title": "Vegapunk\\'s Secret Plan - A Tense Worldwide Broadcast",
+            "episode": 55,
+            "title": "Vegapunk\'s Secret Plan - A Tense Worldwide Broadcast",
             "absoluteEpisode": 1143
           },
           {
-            "episode": 22,
+            "episode": 56,
             "title": "The Worst Nightmare - The Five Elders Come Together",
             "absoluteEpisode": 1144
           },
           {
-            "episode": 23,
+            "episode": 57,
             "title": "Friends Fight Together! Luffy and the Warriors of Elbaph",
             "absoluteEpisode": 1145
           },
           {
-            "episode": 24,
-            "title": "An Imminent Threat - Stussy and Edison\\'s Resolve",
+            "episode": 58,
+            "title": "An Imminent Threat - Stussy and Edison\'s Resolve",
             "absoluteEpisode": 1146
           },
           {
-            "episode": 25,
-            "title": "A Stunning Conclusion - Vegapunk\\'s Great Prediction",
+            "episode": 59,
+            "title": "A Stunning Conclusion - Vegapunk\'s Great Prediction",
             "absoluteEpisode": 1147
           },
           {
-            "episode": 26,
+            "episode": 60,
             "title": "The Lost History - Joyboy, the First Pirate",
             "absoluteEpisode": 1148
           },
           {
-            "episode": 27,
+            "episode": 61,
             "title": "The Void Century - A Revelation About a Sinking World",
             "absoluteEpisode": 1149
           },
           {
-            "episode": 28,
+            "episode": 62,
             "title": "Get the Ship Moving! The Iron Giant Activates",
             "absoluteEpisode": 1150
           },
           {
-            "episode": 29,
-            "title": "Her and Her Father\\'s Dream! Bonney\\'s Free Future",
+            "episode": 63,
+            "title": "Her and Her Father\'s Dream! Bonney\'s Free Future",
             "absoluteEpisode": 1151
           },
           {
-            "episode": 30,
-            "title": "Her Father and Mother\\'s Legacy! Bonney\\'s Nika Punch",
+            "episode": 64,
+            "title": "Her Father and Mother\'s Legacy! Bonney\'s Nika Punch",
             "absoluteEpisode": 1152
           },
           {
-            "episode": 31,
+            "episode": 65,
             "title": "The Upheaval of an Era! The Color of the Supreme King That Leads Luffy",
             "absoluteEpisode": 1153
           },
           {
-            "episode": 32,
+            "episode": 66,
             "title": "The Truth Behind the Secret Plan - Vegapunk Claims Victory",
             "absoluteEpisode": 1154
           },
           {
-            "episode": 33,
-            "title": "The Promised Horizon - Off to the Long-Awaited Elbaph",
+            "episode": 67,
+            "title": "The Promised Horizon - Off to the Long-Awaited Elbaph!",
             "absoluteEpisode": 1155
           }
         ]
       },
       {
-        "season": 28,
+        "season": 23,
         "episodes": [
           {
             "episode": 1,
@@ -5990,12 +5964,12 @@ window._ANIME_DATA = [
           },
           {
             "episode": 9,
-            "title": "Saul\\'s Resolve - The Inherited Will of Ohara",
+            "title": "Saul\'s Resolve - The Inherited Will of Ohara",
             "absoluteEpisode": 1164
           },
           {
             "episode": 10,
-            "title": "A Welcome with Friends\\' Cups and Intruders Seeking Loki",
+            "title": "A Welcome with Friends\' Cups and Intruders Seeking Loki",
             "absoluteEpisode": 1165
           },
           {
@@ -6030,7 +6004,7 @@ window._ANIME_DATA = [
           },
           {
             "episode": 17,
-            "title": "What I Fear Most",
+            "title": "Monsters Appear in Elbaph - \"What I Fear Most\"",
             "absoluteEpisode": 1172
           },
           {
@@ -6045,42 +6019,17 @@ window._ANIME_DATA = [
           },
           {
             "episode": 20,
-            "title": "Elbaph in Flames! Jinbe\\'s Shoulder Throw Explodes!",
+            "title": "Elbaph in Flames! Jinbe\'s Shoulder Throw Explodes!",
             "absoluteEpisode": 1175
           },
           {
             "episode": 21,
-            "title": "Episode 1176",
+            "title": "The Threat of the Arrow-Arrow Fruit - Gunko vs. the Straw Hats",
             "absoluteEpisode": 1176
-          },
-          {
-            "episode": 22,
-            "title": "Episode 1177",
-            "absoluteEpisode": 1177
-          },
-          {
-            "episode": 23,
-            "title": "Episode 1178",
-            "absoluteEpisode": 1178
-          },
-          {
-            "episode": 24,
-            "title": "Episode 1179",
-            "absoluteEpisode": 1179
-          },
-          {
-            "episode": 25,
-            "title": "Episode 1180",
-            "absoluteEpisode": 1180
-          },
-          {
-            "episode": 26,
-            "title": "Episode 1181",
-            "absoluteEpisode": 1181
           }
         ]
       }
-    ],
+      ],
     "anilistId": 21
   }
 ];
