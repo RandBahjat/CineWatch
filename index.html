@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260822_2518">
+    <link rel="stylesheet" href="movie.css?v=20260822_2519">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -17,8 +17,8 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_1486"></script>
-    <script src="series-data.js?v=20260818_1486"></script>
+    <script src="movies-data.js?v=20260818_1487"></script>
+    <script src="series-data.js?v=20260818_1487"></script>
     <script src="movie.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1181,29 +1181,23 @@
                 const detected    = LANG_MAP[browserLang] || LANG_MAP['en'];
                 const isEnglish   = browserLang === 'en' || !LANG_MAP[browserLang];
 
-                // If already in that language — silent set & done
-                if (!isEnglish && !document.cookie.includes('googtrans=')) {
-                    document.cookie = detected.cookie + '; path=/';
-                    localStorage.setItem('langPromptShown', 'true');
-                    window.location.reload();
-                    return;
-                }
-
-                // Build the tab labels: [detected lang]  [English]
+                // Build tabs — English is always default selected
                 const tabsEl  = document.getElementById('langToastTabs');
                 const msgEl   = document.getElementById('langToastMsg');
                 const toast   = document.getElementById('langToast');
                 if (!toast || !tabsEl) return;
 
-                const languages = isEnglish
-                    ? [{ label: 'English', active: true }, { label: 'کوردی', cookie: 'googtrans=/en/ckb' }, { label: 'العربية', cookie: 'googtrans=/en/ar' }]
-                    : [{ label: detected.label, active: true }, { label: 'English', cookie: '' }];
+                const languages = [
+                    { label: 'English',   cookie: '',                    active: true },
+                    { label: 'کوردی',     cookie: 'googtrans=/en/ckb'               },
+                    { label: 'العربية',   cookie: 'googtrans=/en/ar'                },
+                ];
 
                 tabsEl.innerHTML = languages.map((l, i) =>
                     `<button class="lang-toast-tab${l.active ? ' active-tab' : ''}" data-idx="${i}">${l.label}</button>`
                 ).join('');
 
-                msgEl.textContent = isEnglish ? 'Choose your language' : `Translate to ${detected.label}?`;
+                msgEl.textContent = 'Choose your language';
 
                 // Tab switching
                 tabsEl.addEventListener('click', e => {
