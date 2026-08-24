@@ -10659,7 +10659,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Dream 9 Toriko x One Piece x Dragon Ball Z Super Collaboration Special!!",
+    title: "One Piece Episode of Alabasta Prologue",
     type: "Movie",
     year: 2013,
     rating: 6.3,
