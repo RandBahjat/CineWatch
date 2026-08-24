@@ -10879,7 +10879,7 @@ window._MOVIES_DATA = [
     year: 2016,
     rating: 7.2,
     age: "TV-PG",
-    duration: "46m",
+    duration: "10m",
     genres: [
       "Action",
       "Animation",
