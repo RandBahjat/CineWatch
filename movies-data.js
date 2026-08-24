@@ -10755,7 +10755,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/e91hSNOwrV9FvC8LyaroK8dYTlZ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8vDtPSj3hsrUSWyqKrtkzGezgoM.jpg",
     videoUrl: "433157",
-    overview: "Broke after Luffy's huge appetite drains the crew's funds, the Straw Hats stumble onto a secret pirate race called the Dead End Competition, with a 300,000,000 Beli prize. Nami signs them up on the spot — but the race pits them against dangerous rivals, including a bounty hunter and the ruthless ex-Marine-turned-pirate Captain Gasparde.",
+    overview: "A girl named Myskina Olga is pursued by both the World Government and treasure hunter Mad Treasure, as she's the only one who knows the location of Pure Gold — a substance rare enough to buy the entire world. Olga ends up sailing with the Straw Hat Pirates, journeying to the lost island of Alchemi, hidden inside the stomach of a giant footballfish named Bonbori.",
     director: "Konosuke Uda",
     cast: [
       "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), Kappei Yamaguchi (Usopp), Hiroaki Hirata (Sanji)"
