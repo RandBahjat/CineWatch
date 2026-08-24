@@ -10837,7 +10837,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/eiiMkub2ySbDqrMnrn5swhSsZNI.jpg",
     videoUrl: "44731",
     overview: "When Nami falls gravely ill, the Straw Hats seek help on Drum Island, where they meet reindeer doctor Tony Tony Chopper and clash with the tyrannical Wapol Pirates. A what-if retelling of how Chopper joined the crew — uniquely set with Franky, Nico Robin, and the Thousand Sunny already part of the story, and an original villain, Musshuru.",
-    director: "Naoyuki Ito",
+    director: "Junji Shimizu",
     cast: [
       "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), Toshio Furukawa (Ace)"
     ],
