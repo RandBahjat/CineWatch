@@ -3876,16 +3876,6 @@ document.getElementById('animeServerSelect')?.addEventListener('change', () => {
   const iframe = document.getElementById('iframeElement');
   iframe.src = buildAnimeEmbedUrl(window.currentIframeData, serverMode);
 });
-  const centerOverlay = document.getElementById('videoCenterOverlay');
-  if (centerOverlay) {
-    centerOverlay.innerHTML = '<ion-icon name="sync-outline" class="spin"></ion-icon>';
-    centerOverlay.style.display = 'flex';
-    centerOverlay.style.animation = 'none';
-  }
-  // Rebuild the embed URL
-  const iframe = document.getElementById('iframeElement');
-  iframe.src = buildAnimeEmbedUrl(window.currentIframeData, isDub);
-});
 
 document.getElementById("videoServerSelect")?.addEventListener("change", updateIframeServer);
 
