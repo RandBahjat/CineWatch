@@ -10595,7 +10595,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/aFp8qPEyS9KySE4NNPlpo9Z3sA8.jpg",
     videoUrl: "373879",
     overview: "The Foxy Pirates challenge Luffy's crew to a rematch in the New World, but it's a trap — the Navy's most brilliant tactician steps in, and the Straw Hats find themselves stranded on Nebulandia, an island known as a death trap for Devil Fruit users. Luffy must team up with old rival Foxy for a rescue mission when Zoro, Sanji, and hostages get trapped.",
-    director: "Munehisa Sakai",
+    director: "Konosuke Uda",
     cast: [
       "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), Naoto Takenaka (Shiki)"
     ],
