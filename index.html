@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260822_2507">
+    <link rel="stylesheet" href="movie.css?v=20260822_2508">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -17,8 +17,8 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_1475"></script>
-    <script src="series-data.js?v=20260818_1475"></script>
+    <script src="movies-data.js?v=20260818_1476"></script>
+    <script src="series-data.js?v=20260818_1476"></script>
     <script src="movie.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1233,6 +1233,8 @@
             const navHome2 = document.getElementById('navHome2');
             const navMovies1 = document.getElementById('navMovies1');
             const navMovies2 = document.getElementById('navMovies2');
+            const navAnime1 = document.getElementById('navAnime1');
+            const navAnime2 = document.getElementById('navAnime2');
             
             // Search filters
             const filterBtnText = document.getElementById('filterBtnText');
@@ -1251,12 +1253,14 @@
                 if (signupEmailInput) signupEmailInput.placeholder = 'ئیمەیڵ';
                 if (labelDirector) labelDirector.textContent = 'دەرهێنەر:';
                 if (labelCast) labelCast.textContent = 'ئەکتەرەکان:';
-                if (navSeries1) navSeries1.textContent = 'زنجیرە';
-                if (navSeries2) navSeries2.textContent = 'زنجیرە';
+                if (navSeries1) navSeries1.textContent = 'زجیرەکان';
+                if (navSeries2) navSeries2.textContent = 'زجیرەکان';
                 if (navHome1) navHome1.textContent = 'سەرەکی';
                 if (navHome2) navHome2.textContent = 'سەرەکی';
-                if (navMovies1) navMovies1.textContent = 'فلم';
-                if (navMovies2) navMovies2.textContent = 'فلم';
+                if (navMovies1) navMovies1.textContent = 'فیلمەکان';
+                if (navMovies2) navMovies2.textContent = 'فیلمەکان';
+                if (navAnime1) navAnime1.textContent = 'ئەنیمی';
+                if (navAnime2) navAnime2.textContent = 'ئەنیمی';
                 if (filterBtnText) filterBtnText.textContent = 'فیلم و زنجیرە';
                 if (filterOptAll) filterOptAll.textContent = 'فیلم و زنجیرە';
                 if (filterOptMovie) filterOptMovie.textContent = 'تەنها فیلم';
