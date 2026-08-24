@@ -52880,7 +52880,7 @@ window._SERIES_DATA = [
           { episode: 1, title: "The Beginning and the End" },
           { episode: 2, title: "Good Whale Hunting" },
           { episode: 3, title: "Whisky Business" },
-          { episode: 4, title: "The Pirates Are Coming" },
+          { episode: 4, title: "Big Trouble in Little Garden" },
           { episode: 5, title: "Eat at Baratie!" },
           { episode: 6, title: "The Chef and the Chore Boy" },
           { episode: 7, title: "The Girl with the Sawfish Tattoo" },
