@@ -52855,7 +52855,7 @@ window._SERIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/qD211Hb5XwFxrszzBBe5EUYJerh.jpg",
     videoUrl: "111110",
     overview: "Live action show based on legendary manga. Young stretchy boy Monkey D. Luffy set sail to assemble pirate crew. Together Straw Hat crew search dangerous ocean for grand treasure left by Gold Roger so Luffy become King of Pirates.",
-    director: "Chad Feehan",
+    director: "Matt Owens, Steven Maeda",
     cast: ["Kelly Reilly, Cole Hauser, Ed Harris, Annette Bening, Finn Little, Jai Courtney"],
     trending: false,
     featured: false,
