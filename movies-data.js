@@ -10850,7 +10850,7 @@ window._MOVIES_DATA = [
     title: "One Piece Special: Protect! The Last Great Stage",
     type: "Movie",
     year: 2003,
-    rating: 6.9,
+    rating: 6.8,
     age: "TV-PG",
     duration: "1h 53m",
     genres: [
