@@ -10558,7 +10558,7 @@ window._MOVIES_DATA = [
     year: 2009,
     rating: 7.4,
     age: "TV-14",
-    duration: "1h 41m",
+    duration: "1h 53m",
     genres: [
       "Action",
       "Animation",
