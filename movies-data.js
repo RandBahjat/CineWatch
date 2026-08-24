@@ -10647,7 +10647,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nyXB28bVUcdWQ3CG8z4cy6BWhJs.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qLfL9tLekOvDNLvWrnJ6jTlsugt.jpg",
-    videoUrl: "",
+    videoUrl: "188",
     overview: "The Straw Hats embark on a dangerous trip to the sky, where their destination comes straight out of a fairytale — the island of Skypiea and its grand city of gold await among the clouds. But a clash of winged clans and a man who calls himself God won't make things easy; only Luffy can resist this God's mighty power and light the mysteries of the past.",
     director: "Tetsuya Endo",
     cast: [
