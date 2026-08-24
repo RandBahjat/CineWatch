@@ -10808,7 +10808,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/caUI7YlhVXykFWQ7Ul7RQ2wQRpv.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/AKY0hy1MXApKH8Ediy2axieZ0C.jpg",
     videoUrl: "290271",
-    overview: "Experience the inspiring moments that launched Luffy and the first four members of his crew on their grand adventure to find the One Piece — from Shanks giving Luffy the straw hat, to Nami facing the Fish-Men at her hometown. Zoro finds his swordsman's zeal, Usopp pays for his pranks, and Sanji sizzles up the Baratie, all in the waters where it began.",
+    overview: "Set during the two-year gap before the Straw Hats reunite at Sabaody, Luffy trains in Rusukaina to grow strong enough for the New World — but the training gets interrupted when Boa Hancock's sisters are kidnapped by Byrnndi World, an escaped Impel Down prisoner using them as bait to trap Hancock and strike at the World Government. Luffy and Hancock set out together to save them.",
     director: "Takashi Otsuka",
     cast: [
       "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami)"
