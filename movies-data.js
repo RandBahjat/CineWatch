@@ -10631,7 +10631,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "One Piece: Episode of Skypiea",
+    title: "Dream 9 Toriko x One Piece x Dragon Ball Z Super Collaboration Special!!",
     type: "Movie",
     year: 2018,
     rating: 6.7,
