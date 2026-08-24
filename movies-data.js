@@ -10890,7 +10890,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wPBFqO9zeSjX3bK9NMvhm9xL1Le.jpg",
     backdrop: "https://m.media-amazon.com/images/M/MV5BMDg3ZTIzNDItOWYxMC00ZDM0LTg2OWYtODg2ZjkwNWZmNzUxXkEyXkFqcGc@._V1_.jpg",
     videoUrl: "779813",
-    overview: "Straw Hat Pirates visit famous floating theater ship Randolph to watch final play of beloved aging actor. Before curtain fall, corrupt marine officer Randolph once served interrupts performance to arrest old actor on fake charges. Luffy and crew step in to defend theater ship, defeat corrupt marines, and make sure final bow goes on as planned.",
+    overview: "Short prologue special set before events of Film Gold. Straw Hat Pirates relax on ship doing fun activities like sumo wrestling and eating meat. Crew gets dynamic invite to massive entertainment ship Gran Tesoro ruled by Gild Tesoro, setting stage for big casino adventure.",
     director: "Junji Shimizu",
     cast: [
       "Mayumi Tanaka, Kazuya Nakai, Akemi Okamura, Kappei Yamaguchi, Hiroaki Hirata, Ikue Otani, Yuriko Yamaguchi"
