@@ -3801,11 +3801,31 @@ document.addEventListener("DOMContentLoaded", () => { initApp(); trackVisit(); }
 window.currentIframeData = null;
 
 function buildAnimeEmbedUrl(data, serverMode, refMovie) {
-  // Beautiful UI (vidlink) is now the only supported anime server
-  if (data.type === 'tv') {
-    return `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=e50914`;
+  if (serverMode === 'vidlink-sub') {
+    if (data.type === 'tv') {
+      return `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=e50914`;
+    } else {
+      return `https://vidlink.pro/movie/${data.id}?primaryColor=e50914`;
+    }
+  } else if (serverMode === 'vidsrc-dub') {
+    if (data.type === 'tv') {
+      return `https://vidsrc.me/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}&ds_lang=en`;
+    } else {
+      return `https://vidsrc.me/embed/movie?tmdb=${data.id}&ds_lang=en`;
+    }
+  } else if (serverMode === 'vidsrc-en') {
+    if (data.type === 'tv') {
+      return `https://vidsrc.to/embed/tv/${data.id}/${data.season}/${data.episode}`;
+    } else {
+      return `https://vidsrc.to/embed/movie/${data.id}`;
+    }
   } else {
-    return `https://vidlink.pro/movie/${data.id}?primaryColor=e50914`;
+    // Default: 'vidsrc-jp' 
+    if (data.type === 'tv') {
+      return `https://vidsrc.pm/embed/tv/${data.id}/${data.season}/${data.episode}`;
+    } else {
+      return `https://www.2embed.cc/embed/${data.id}`;
+    }
   }
 }
 
@@ -3814,6 +3834,7 @@ function updateIframeServer() {
   const data = window.currentIframeData;
   const iframe = document.getElementById('iframeElement');
   const serverSelectWrap = document.getElementById('serverSelectWrap');
+  const animeServerWrap = document.getElementById('animeServerWrap');
 
   // Always hide the old generic server selector
   if (serverSelectWrap) {
@@ -3827,11 +3848,21 @@ function updateIframeServer() {
   const refMovie = parentMovie || selfMovie;
   const isAnime = !!(refMovie?.isAnime || refMovie?.type === 'Anime');
 
+  // Show/hide anime server dropdown
+  if (animeServerWrap) {
+    if (isAnime) {
+      animeServerWrap.classList.remove('hidden');
+    } else {
+      animeServerWrap.classList.add('hidden');
+    }
+  }
 
   let newUrl = '';
   if (isAnime) {
-    // Only vidlink-sub is supported for anime
-    newUrl = buildAnimeEmbedUrl(data, 'vidlink-sub', refMovie);
+    const savedServer = localStorage.getItem('animeServer') || 'vidlink-sub';
+    const serverSelect = document.getElementById('animeServerSelect');
+    if (serverSelect) serverSelect.value = savedServer;
+    newUrl = buildAnimeEmbedUrl(data, savedServer, refMovie);
   } else if (data.type === 'tv') {
     newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}?skin=netflix&color=e50914`;
   } else {
@@ -3847,6 +3878,30 @@ function updateIframeServer() {
 
 
 document.getElementById("videoServerSelect")?.addEventListener("change", updateIframeServer);
+
+// Wire up anime server dropdown
+document.getElementById('animeServerSelect')?.addEventListener('change', () => {
+  const select = document.getElementById('animeServerSelect');
+  const serverMode = select?.value || 'vidlink-sub';
+  // Persist the user's choice
+  localStorage.setItem('animeServer', serverMode);
+  if (!window.currentIframeData) return;
+  // Show loading spinner
+  const centerOverlay = document.getElementById('videoCenterOverlay');
+  if (centerOverlay) {
+    centerOverlay.innerHTML = '<ion-icon name="sync-outline" class="spin"></ion-icon>';
+    centerOverlay.style.display = 'flex';
+    centerOverlay.style.animation = 'none';
+  }
+  // Reload iframe with new server
+  const iframe = document.getElementById('iframeElement');
+  
+  const parentMovie = window.currentIframeData.parentId ? MOVIES.find(m => String(m.id) === String(window.currentIframeData.parentId) || String(m.videoUrl) === String(window.currentIframeData.parentId)) : null;
+  const selfMovie = !parentMovie && window.currentIframeData.id ? MOVIES.find(m => String(m.videoUrl) === String(window.currentIframeData.id) || String(m.id) === String(window.currentIframeData.id)) : null;
+  const refMovie = parentMovie || selfMovie;
+  
+  iframe.src = buildAnimeEmbedUrl(window.currentIframeData, serverMode, refMovie);
+});
 
 // ==========================================
 // EPISODE NAVIGATION
