@@ -196,6 +196,24 @@ window.CW_API = {
     } catch (e) {
       return { success: false, error: e.message };
     }
+  },
+
+  async deleteComment(commentId) {
+    try {
+      const user = await this.getCurrentUser();
+      if (!user) return { success: false, error: 'Not logged in' };
+
+      const { error } = await supabaseClient
+        .from('comments')
+        .delete()
+        .eq('id', commentId)
+        .eq('user_id', user.id); // Extra safety: only delete if it belongs to user
+
+      if (error) throw error;
+      return { success: true, error: null };
+    } catch (e) {
+      return { success: false, error: e.message };
+    }
   }
 };
 
