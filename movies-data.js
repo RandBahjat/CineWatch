@@ -10818,6 +10818,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "One Piece 3D2Y: Overcome Ace's Death! Luffy's Vow to his Friends",
+    type: "Movie",
+    year: 2014,
+    rating: 7.5,
+    age: "TV-PG",
+    duration: "1h 48m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/caUI7YlhVXykFWQ7Ul7RQ2wQRpv.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/AKY0hy1MXApKH8Ediy2axieZ0C.jpg",
+    videoUrl: "290271",
+    overview: "Set during the two-year gap before the Straw Hats reunite at Sabaody, Luffy trains in Rusukaina to grow strong enough for the New World — but the training gets interrupted when Boa Hancock's sisters are kidnapped by Byrnndi World, an escaped Impel Down prisoner using them as bait to trap Hancock and strike at the World Government. Luffy and Hancock set out together to save them.",
+    director: "Naoyuki Ito",
+    cast: [
+      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), Toshio Furukawa (Ace)"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
