@@ -10739,7 +10739,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "One Piece: Dead End Adventure",
+    title: "One Piece: Heart of Gold",
     type: "Movie",
     year: 2003,
     rating: 7.1,
