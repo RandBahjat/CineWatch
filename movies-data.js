@@ -10579,7 +10579,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "One Piece Film: Strong World",
+    title: "One Piece: Adventure of Nebulandia ",
     type: "Movie",
     year: 2009,
     rating: 7.4,
