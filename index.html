@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260822_2550">
+    <link rel="stylesheet" href="movie.css?v=20260822_2551">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -17,9 +17,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_1518"></script>
-    <script src="series-data.js?v=20260818_1518"></script>
-    <script src="anime-data.js?v=20260818_1518"></script>
+    <script src="movies-data.js?v=20260818_1519"></script>
+    <script src="series-data.js?v=20260818_1519"></script>
+    <script src="anime-data.js?v=20260818_1519"></script>
     <script src="movie.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -738,6 +738,19 @@
                     <select id="videoServerSelect" class="season-select" style="display:none;"></select>
                 </div>
 
+                <!-- Anime Server Selector — Floats over video/iframe -->
+                <div class="anime-server-wrap hidden" id="animeServerWrap" style="position: absolute; top: 1.5rem; right: 1.5rem; z-index: 50; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+                    <div class="anime-server-label">
+                        <ion-icon name="globe-outline"></ion-icon>
+                        Server
+                    </div>
+                    <select class="anime-server-select" id="animeServerSelect">
+                        <option value="vidlink-sub">✨ Beautiful (JP Sub)</option>
+                        <option value="vidsrc-sub">🎌 Reliable (JP Sub)</option>
+                        <option value="vidsrc-dub">🇬🇧 Reliable (EN Dub)</option>
+                    </select>
+                </div>
+
                 <!-- Progress Bar Row -->
                 <div class="player-progress-row">
                     <span class="player-time-left" id="currentTimeText">0:00</span>
@@ -777,18 +790,6 @@
                             <ion-icon name="list-outline"></ion-icon>
                             <span>Episodes</span>
                         </button>
-                        <!-- Anime Server Selector — only shown for anime -->
-                        <div class="anime-server-wrap hidden" id="animeServerWrap">
-                            <div class="anime-server-label">
-                                <ion-icon name="globe-outline"></ion-icon>
-                                Server
-                            </div>
-                            <select class="anime-server-select" id="animeServerSelect">
-                                <option value="vidlink-sub">✨ Beautiful (JP Sub)</option>
-                                <option value="vidsrc-sub">🎌 Reliable (JP Sub)</option>
-                                <option value="vidsrc-dub">🇬🇧 Reliable (EN Dub)</option>
-                            </select>
-                        </div>
                         <button class="ctrl-btn" id="fullscreenBtn" title="Fullscreen (F)"><ion-icon name="expand-outline"></ion-icon></button>
                     </div>
                 </div>
