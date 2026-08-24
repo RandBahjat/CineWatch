@@ -10527,7 +10527,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "One Piece Film: GOLD",
+    title: "One Piece: Stampede",
     type: "Movie",
     year: 2016,
     rating: 7.1,
