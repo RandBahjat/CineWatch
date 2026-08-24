@@ -10543,7 +10543,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/4yP7vqbPwB2RVCuyXs5P0Cl2owZ.jpg",
     videoUrl: "568012",
     overview: "Made to celebrate the anime's 20th anniversary — pirates from all across the world gather at the massive Pirate Expo, racing to find Gol D. Roger's legendary lost treasure. But among the infamous captains and crews, an old member of Roger's own crew has a dark grudge to settle, and the whole festival explodes into chaos.",
-    director: "Hiroaki Miyamoto",
+    director: "Takashi Otsuka",
     cast: [
       "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), Kazuhiro Yamaji (Gild Tesoro)"
     ],
