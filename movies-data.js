@@ -10947,7 +10947,7 @@ window._MOVIES_DATA = [
     overview: "Retelling of Dressrosa arc focusing on perspective of Revolutionary Army chief of staff Sabo. Explores childhood backstory of three sworn brothers Luffy, Ace, and Sabo in Goa Kingdom. Shows Sabo arrival at Corrida Colosseum, emotional reunion with Luffy, and claim of fallen brother Ace Flame-Flame Fruit to inherit his will.",
     director: "Gō Koga",
     cast: [
-      "Mayumi Tanaka, Kazuya Nakai, Akemi Okamura, Kappei Yamaguchi, Hiroaki Hirata, Jurota Kosugi"
+      "Tōru Furuya, Mayumi Tanaka, Toshio Furukawa, Hiroshi Kamiya, Megumi Han, Akemi Okamura"
     ],
     trending: false,
     featured: false,
