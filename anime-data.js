@@ -1,4 +1,4 @@
-﻿// CineWatch â€” Anime Data
+// CineWatch â€” Anime Data
 // Edit this file to add, remove, or reorder anime shows and movies.
 
 window._ANIME_DATA = [
@@ -33,7 +33,8 @@ window._ANIME_DATA = [
     ],
     "trending": true,
     "featured": true,
-    "is4k": false,          "seasons": [
+    "is4k": false,
+    "seasons": [
       {
         "season": 1,
         "episodes": [
