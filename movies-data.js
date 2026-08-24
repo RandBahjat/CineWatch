@@ -10943,7 +10943,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/yS5z6jMr5reJN6WwtBQcnKQ8b75.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/jzR5ZybOg22zpuOcOz5TxrJWXIc.jpg",
-    videoUrl: "",
+    videoUrl: "373",
     overview: "Remake special retelling Arlong Park arc. Navigator Nami leaves Straw Hat crew to return home to Cocoyasi Village. Luffy and friends follow Nami, discovering she works for tyrannical fishman Arlong to buy back village freedom. When Arlong betrays deal, Nami asks Luffy for help, leading to grand battle to liberate village and secure Nami place as crew navigator.",
     director: "Katsumi Tokoro",
     cast: [
