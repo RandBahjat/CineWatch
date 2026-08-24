@@ -10568,7 +10568,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/z9S39hH4IOX9Hmtn3zho3Wdqem8.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/fgcSkuv3otR5iz2VzzFnh3QOI49.jpg",
     videoUrl: "41498",
-    overview: "Made to celebrate the anime's 20th anniversary — pirates from all across the world gather at the massive Pirate Expo, racing to find Gol D. Roger's legendary lost treasure. But among the infamous captains and crews, an old member of Roger's own crew has a dark grudge to settle, and the whole festival explodes into chaos.",
+    overview: "Twenty years after breaking out of Impel Down, legendary pirate Shiki the Golden Lion resurfaces with a scheme to bring the World Government to its knees. Impressed by Nami's weather-reading skill, he kidnaps her to force her into his crew — leaving Luffy and the gang to chase him down through a strange land crawling with monstrous beasts.",
     director: "Takashi Otsuka",
     cast: [
       "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), Hiroaki Hirata (Sanji)"
