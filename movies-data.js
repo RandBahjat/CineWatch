@@ -10504,7 +10504,7 @@ window._MOVIES_DATA = [
     title: "One Piece Film: GOLD",
     type: "Movie",
     year: 2016,
-    rating: 7.7,
+    rating: 7.1,
     age: "TV-14",
     duration: "1h 48m",
     genres: [
