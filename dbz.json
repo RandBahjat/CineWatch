@@ -1,0 +1,1535 @@
+{
+  "title": "Dragon Ball Z",
+  "type": "TV Show",
+  "isAnime": true,
+  "year": 1989,
+  "rating": 8.8,
+  "age": "TV-14",
+  "duration": "24m",
+  "genres": [
+    "Animation",
+    "Action",
+    "Adventure",
+    "Sci-Fi",
+    "Fantasy"
+  ],
+  "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/jZqOqD6bteT9v5g4b9zH9q6f7D9.jpg",
+  "videoUrl": "12971",
+  "anilistId": 813,
+  "animeSlug": "dragon-ball-z",
+  "overview": "After learning that he is from another planet, a warrior named Goku and his friends are prompted to defend it from an onslaught of extraterrestrial enemies.",
+  "director": "Akira Toriyama",
+  "cast": [
+    "Masako Nozawa",
+    "Ryo Horikawa",
+    "Toshio Furukawa",
+    "Mayumi Tanaka",
+    "Hiromi Tsuru"
+  ],
+  "trending": false,
+  "featured": false,
+  "is4k": false,
+  "seasons": [
+    {
+      "season": 1,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "The New Threat",
+          "absoluteEpisode": 1
+        },
+        {
+          "episode": 2,
+          "title": "Reunions",
+          "absoluteEpisode": 2
+        },
+        {
+          "episode": 3,
+          "title": "Unlikely Alliance",
+          "absoluteEpisode": 3
+        },
+        {
+          "episode": 4,
+          "title": "Piccolo's Plan",
+          "absoluteEpisode": 4
+        },
+        {
+          "episode": 5,
+          "title": "Gohan's Rage",
+          "absoluteEpisode": 5
+        },
+        {
+          "episode": 6,
+          "title": "No Time Like the Present",
+          "absoluteEpisode": 6
+        },
+        {
+          "episode": 7,
+          "title": "Day 1",
+          "absoluteEpisode": 7
+        },
+        {
+          "episode": 8,
+          "title": "Gohan Goes Bananas!",
+          "absoluteEpisode": 8
+        },
+        {
+          "episode": 9,
+          "title": "The Strangest Robot",
+          "absoluteEpisode": 9
+        },
+        {
+          "episode": 10,
+          "title": "A New Friend",
+          "absoluteEpisode": 10
+        },
+        {
+          "episode": 11,
+          "title": "Terror on Arlia",
+          "absoluteEpisode": 11
+        },
+        {
+          "episode": 12,
+          "title": "Global Training",
+          "absoluteEpisode": 12
+        },
+        {
+          "episode": 13,
+          "title": "Goz and Mez",
+          "absoluteEpisode": 13
+        },
+        {
+          "episode": 14,
+          "title": "Princess Snake",
+          "absoluteEpisode": 14
+        },
+        {
+          "episode": 15,
+          "title": "Dueling Piccolos",
+          "absoluteEpisode": 15
+        },
+        {
+          "episode": 16,
+          "title": "Plight of the Children",
+          "absoluteEpisode": 16
+        },
+        {
+          "episode": 17,
+          "title": "Pendulum Room Peril",
+          "absoluteEpisode": 17
+        },
+        {
+          "episode": 18,
+          "title": "The End of Snake Way",
+          "absoluteEpisode": 18
+        },
+        {
+          "episode": 19,
+          "title": "Defying Gravity",
+          "absoluteEpisode": 19
+        },
+        {
+          "episode": 20,
+          "title": "Goku's Ancestors",
+          "absoluteEpisode": 20
+        },
+        {
+          "episode": 21,
+          "title": "Counting Down",
+          "absoluteEpisode": 21
+        },
+        {
+          "episode": 22,
+          "title": "The Darkest Day",
+          "absoluteEpisode": 22
+        },
+        {
+          "episode": 23,
+          "title": "Saibamen Attack!",
+          "absoluteEpisode": 23
+        },
+        {
+          "episode": 24,
+          "title": "The Power of Nappa",
+          "absoluteEpisode": 24
+        },
+        {
+          "episode": 25,
+          "title": "Sacrifice",
+          "absoluteEpisode": 25
+        },
+        {
+          "episode": 26,
+          "title": "Nappa's Rampage",
+          "absoluteEpisode": 26
+        },
+        {
+          "episode": 27,
+          "title": "Nimbus Speed",
+          "absoluteEpisode": 27
+        },
+        {
+          "episode": 28,
+          "title": "Goku's Arrival",
+          "absoluteEpisode": 28
+        },
+        {
+          "episode": 29,
+          "title": "Lesson Number One",
+          "absoluteEpisode": 29
+        },
+        {
+          "episode": 30,
+          "title": "Goku vs. Vegeta",
+          "absoluteEpisode": 30
+        },
+        {
+          "episode": 31,
+          "title": "Saiyan Sized Secret",
+          "absoluteEpisode": 31
+        },
+        {
+          "episode": 32,
+          "title": "Spirit Bomb Away!",
+          "absoluteEpisode": 32
+        },
+        {
+          "episode": 33,
+          "title": "Hero in the Shadows",
+          "absoluteEpisode": 33
+        },
+        {
+          "episode": 34,
+          "title": "Krillin's Offensive",
+          "absoluteEpisode": 34
+        },
+        {
+          "episode": 35,
+          "title": "Mercy",
+          "absoluteEpisode": 35
+        },
+        {
+          "episode": 36,
+          "title": "Picking Up the Pieces",
+          "absoluteEpisode": 36
+        },
+        {
+          "episode": 37,
+          "title": "Plans for Departure",
+          "absoluteEpisode": 37
+        },
+        {
+          "episode": 38,
+          "title": "Nursing Wounds",
+          "absoluteEpisode": 38
+        },
+        {
+          "episode": 39,
+          "title": "Friends or Foes?",
+          "absoluteEpisode": 39
+        }
+      ]
+    },
+    {
+      "season": 2,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Held Captive",
+          "absoluteEpisode": 40
+        },
+        {
+          "episode": 2,
+          "title": "Look Out Below",
+          "absoluteEpisode": 41
+        },
+        {
+          "episode": 3,
+          "title": "The Search Continues",
+          "absoluteEpisode": 42
+        },
+        {
+          "episode": 4,
+          "title": "A Friendly Surprise",
+          "absoluteEpisode": 43
+        },
+        {
+          "episode": 5,
+          "title": "Brood of Evil",
+          "absoluteEpisode": 44
+        },
+        {
+          "episode": 6,
+          "title": "Frieza Strikes!",
+          "absoluteEpisode": 45
+        },
+        {
+          "episode": 7,
+          "title": "Defying Orders",
+          "absoluteEpisode": 46
+        },
+        {
+          "episode": 8,
+          "title": "Namek's Defense",
+          "absoluteEpisode": 47
+        },
+        {
+          "episode": 9,
+          "title": "The Hunted",
+          "absoluteEpisode": 48
+        },
+        {
+          "episode": 10,
+          "title": "The Prince Fights Back",
+          "absoluteEpisode": 49
+        },
+        {
+          "episode": 11,
+          "title": "Unexpected Problem",
+          "absoluteEpisode": 50
+        },
+        {
+          "episode": 12,
+          "title": "Vegeta has a Ball",
+          "absoluteEpisode": 51
+        },
+        {
+          "episode": 13,
+          "title": "The Past and the Future",
+          "absoluteEpisode": 52
+        },
+        {
+          "episode": 14,
+          "title": "Zarbon's Special Surprise",
+          "absoluteEpisode": 53
+        },
+        {
+          "episode": 15,
+          "title": "Guru's Gift",
+          "absoluteEpisode": 54
+        },
+        {
+          "episode": 16,
+          "title": "Piccolo vs. Everyone",
+          "absoluteEpisode": 55
+        },
+        {
+          "episode": 17,
+          "title": "Zarbon's Mission",
+          "absoluteEpisode": 56
+        },
+        {
+          "episode": 18,
+          "title": "Gohan, the Hunted",
+          "absoluteEpisode": 57
+        },
+        {
+          "episode": 19,
+          "title": "Unknown Enemies",
+          "absoluteEpisode": 58
+        },
+        {
+          "episode": 20,
+          "title": "Destination: Guru",
+          "absoluteEpisode": 59
+        },
+        {
+          "episode": 21,
+          "title": "Bulma's Big Day",
+          "absoluteEpisode": 60
+        },
+        {
+          "episode": 22,
+          "title": "Hidden Power",
+          "absoluteEpisode": 61
+        },
+        {
+          "episode": 23,
+          "title": "New Ally, New Problem",
+          "absoluteEpisode": 62
+        },
+        {
+          "episode": 24,
+          "title": "Guldo's Mind Binds",
+          "absoluteEpisode": 63
+        },
+        {
+          "episode": 25,
+          "title": "Recoome Unleashed",
+          "absoluteEpisode": 64
+        },
+        {
+          "episode": 26,
+          "title": "Let the Battle Begin",
+          "absoluteEpisode": 65
+        },
+        {
+          "episode": 27,
+          "title": "Goku's New Power",
+          "absoluteEpisode": 66
+        },
+        {
+          "episode": 28,
+          "title": "A Legend Revealed",
+          "absoluteEpisode": 67
+        },
+        {
+          "episode": 29,
+          "title": "Ginyu Assault",
+          "absoluteEpisode": 68
+        },
+        {
+          "episode": 30,
+          "title": "Incredible Force!",
+          "absoluteEpisode": 69
+        },
+        {
+          "episode": 31,
+          "title": "Frieza Approaches",
+          "absoluteEpisode": 70
+        },
+        {
+          "episode": 32,
+          "title": "Goku is Ginyu and Ginyu is Goku",
+          "absoluteEpisode": 71
+        },
+        {
+          "episode": 33,
+          "title": "Calling the Eternal Dragon",
+          "absoluteEpisode": 72
+        },
+        {
+          "episode": 34,
+          "title": "Gohan, Defeat Your Dad!!",
+          "absoluteEpisode": 73
+        },
+        {
+          "episode": 35,
+          "title": "Captain Ginyu...The Frog",
+          "absoluteEpisode": 74
+        }
+      ]
+    },
+    {
+      "season": 3,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Password is Porunga",
+          "absoluteEpisode": 75
+        },
+        {
+          "episode": 2,
+          "title": "Piccolo's Return",
+          "absoluteEpisode": 76
+        },
+        {
+          "episode": 3,
+          "title": "The Fusion",
+          "absoluteEpisode": 77
+        },
+        {
+          "episode": 4,
+          "title": "Fighting Power: One Million??",
+          "absoluteEpisode": 78
+        },
+        {
+          "episode": 5,
+          "title": "Gohan Attacks",
+          "absoluteEpisode": 79
+        },
+        {
+          "episode": 6,
+          "title": "Piccolo the Super-Namek",
+          "absoluteEpisode": 80
+        },
+        {
+          "episode": 7,
+          "title": "Déjà vu",
+          "absoluteEpisode": 81
+        },
+        {
+          "episode": 8,
+          "title": "Freeza's Second Transformation?",
+          "absoluteEpisode": 82
+        },
+        {
+          "episode": 9,
+          "title": "Another Transformation?",
+          "absoluteEpisode": 83
+        },
+        {
+          "episode": 10,
+          "title": "Dende's Demise",
+          "absoluteEpisode": 84
+        },
+        {
+          "episode": 11,
+          "title": "The Renewed Goku",
+          "absoluteEpisode": 85
+        },
+        {
+          "episode": 12,
+          "title": "The End of Vegeta",
+          "absoluteEpisode": 86
+        },
+        {
+          "episode": 13,
+          "title": "The Ultimate Battle",
+          "absoluteEpisode": 87
+        },
+        {
+          "episode": 14,
+          "title": "Clash of the Super Powers",
+          "absoluteEpisode": 88
+        },
+        {
+          "episode": 15,
+          "title": "Freeza's Boast",
+          "absoluteEpisode": 89
+        },
+        {
+          "episode": 16,
+          "title": "Bold and Fearless",
+          "absoluteEpisode": 90
+        },
+        {
+          "episode": 17,
+          "title": "Embodiment of Fire",
+          "absoluteEpisode": 91
+        },
+        {
+          "episode": 18,
+          "title": "Trump Card",
+          "absoluteEpisode": 92
+        },
+        {
+          "episode": 19,
+          "title": "Keep the Chance Alive",
+          "absoluteEpisode": 93
+        },
+        {
+          "episode": 20,
+          "title": "Power of the Spirit",
+          "absoluteEpisode": 94
+        },
+        {
+          "episode": 21,
+          "title": "Transformed At Last",
+          "absoluteEpisode": 95
+        },
+        {
+          "episode": 22,
+          "title": "Explosion of Anger",
+          "absoluteEpisode": 96
+        },
+        {
+          "episode": 23,
+          "title": "Namek's Destruction",
+          "absoluteEpisode": 97
+        },
+        {
+          "episode": 24,
+          "title": "A Final Attack",
+          "absoluteEpisode": 98
+        },
+        {
+          "episode": 25,
+          "title": "Approaching Destruction",
+          "absoluteEpisode": 99
+        },
+        {
+          "episode": 26,
+          "title": "Gohan Returns",
+          "absoluteEpisode": 100
+        },
+        {
+          "episode": 27,
+          "title": "The Last Wish",
+          "absoluteEpisode": 101
+        },
+        {
+          "episode": 28,
+          "title": "Duel On A Vanishing Planet",
+          "absoluteEpisode": 102
+        },
+        {
+          "episode": 29,
+          "title": "Pathos Of Frieza",
+          "absoluteEpisode": 103
+        },
+        {
+          "episode": 30,
+          "title": "Frieza Defeated!",
+          "absoluteEpisode": 104
+        },
+        {
+          "episode": 31,
+          "title": "Mighty Blast of Rage",
+          "absoluteEpisode": 105
+        },
+        {
+          "episode": 32,
+          "title": "Namek's Explosion... Goku's End?",
+          "absoluteEpisode": 106
+        },
+        {
+          "episode": 33,
+          "title": "Goku's Alive!!",
+          "absoluteEpisode": 107
+        }
+      ]
+    },
+    {
+      "season": 4,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "The Heavens Tremble",
+          "absoluteEpisode": 108
+        },
+        {
+          "episode": 2,
+          "title": "Black Fog of Terror",
+          "absoluteEpisode": 109
+        },
+        {
+          "episode": 3,
+          "title": "Battle in Kami's Lookout",
+          "absoluteEpisode": 110
+        },
+        {
+          "episode": 4,
+          "title": "Fight With Piccolo",
+          "absoluteEpisode": 111
+        },
+        {
+          "episode": 5,
+          "title": "Call For Restoration",
+          "absoluteEpisode": 112
+        },
+        {
+          "episode": 6,
+          "title": "Suicidal Course",
+          "absoluteEpisode": 113
+        },
+        {
+          "episode": 7,
+          "title": "Extreme Measures",
+          "absoluteEpisode": 114
+        },
+        {
+          "episode": 8,
+          "title": "The World Awakens",
+          "absoluteEpisode": 115
+        },
+        {
+          "episode": 9,
+          "title": "Brief Chance for Victory",
+          "absoluteEpisode": 116
+        },
+        {
+          "episode": 10,
+          "title": "Krillin's Proposal",
+          "absoluteEpisode": 117
+        },
+        {
+          "episode": 11,
+          "title": "Frieza's Counterattack",
+          "absoluteEpisode": 118
+        },
+        {
+          "episode": 12,
+          "title": "The Mysterious Youth",
+          "absoluteEpisode": 119
+        },
+        {
+          "episode": 13,
+          "title": "Another Super Saiyan?",
+          "absoluteEpisode": 120
+        },
+        {
+          "episode": 14,
+          "title": "Welcome Back Goku",
+          "absoluteEpisode": 121
+        },
+        {
+          "episode": 15,
+          "title": "Mystery Revealed",
+          "absoluteEpisode": 122
+        },
+        {
+          "episode": 16,
+          "title": "Goku's Special Technique",
+          "absoluteEpisode": 123
+        },
+        {
+          "episode": 17,
+          "title": "Z Warriors Prepare",
+          "absoluteEpisode": 124
+        },
+        {
+          "episode": 18,
+          "title": "Goku's Ordeal",
+          "absoluteEpisode": 125
+        },
+        {
+          "episode": 19,
+          "title": "The Androids Appear",
+          "absoluteEpisode": 126
+        },
+        {
+          "episode": 20,
+          "title": "A Handy Trick",
+          "absoluteEpisode": 127
+        },
+        {
+          "episode": 21,
+          "title": "Double Trouble for Goku",
+          "absoluteEpisode": 128
+        },
+        {
+          "episode": 22,
+          "title": "Upgrade to Super Saiyan",
+          "absoluteEpisode": 129
+        },
+        {
+          "episode": 23,
+          "title": "The Secret of Doctor Gero",
+          "absoluteEpisode": 130
+        },
+        {
+          "episode": 24,
+          "title": "More Androids?!",
+          "absoluteEpisode": 131
+        },
+        {
+          "episode": 25,
+          "title": "Follow Dr. Gero",
+          "absoluteEpisode": 132
+        },
+        {
+          "episode": 26,
+          "title": "Nightmare Comes True",
+          "absoluteEpisode": 133
+        },
+        {
+          "episode": 27,
+          "title": "Goku's Assassin",
+          "absoluteEpisode": 134
+        },
+        {
+          "episode": 28,
+          "title": "Deadly Beauty",
+          "absoluteEpisode": 135
+        },
+        {
+          "episode": 29,
+          "title": "No Match for the Androids",
+          "absoluteEpisode": 136
+        },
+        {
+          "episode": 30,
+          "title": "Last Ditch Effort",
+          "absoluteEpisode": 137
+        },
+        {
+          "episode": 31,
+          "title": "Closing In",
+          "absoluteEpisode": 138
+        },
+        {
+          "episode": 32,
+          "title": "Unwelcome Discovery",
+          "absoluteEpisode": 139
+        }
+      ]
+    },
+    {
+      "season": 5,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Seized with Fear",
+          "absoluteEpisode": 140
+        },
+        {
+          "episode": 2,
+          "title": "The Reunion",
+          "absoluteEpisode": 141
+        },
+        {
+          "episode": 3,
+          "title": "Borrowed Powers",
+          "absoluteEpisode": 142
+        },
+        {
+          "episode": 4,
+          "title": "His Name Is Cell",
+          "absoluteEpisode": 143
+        },
+        {
+          "episode": 5,
+          "title": "Piccolo's Folly",
+          "absoluteEpisode": 144
+        },
+        {
+          "episode": 6,
+          "title": "Laboratory Basement",
+          "absoluteEpisode": 145
+        },
+        {
+          "episode": 7,
+          "title": "Our Hero Awakes",
+          "absoluteEpisode": 146
+        },
+        {
+          "episode": 8,
+          "title": "Time Chamber",
+          "absoluteEpisode": 147
+        },
+        {
+          "episode": 9,
+          "title": "The Monster is Coming",
+          "absoluteEpisode": 148
+        },
+        {
+          "episode": 10,
+          "title": "He's Here",
+          "absoluteEpisode": 149
+        },
+        {
+          "episode": 11,
+          "title": "Up to Piccolo",
+          "absoluteEpisode": 150
+        },
+        {
+          "episode": 12,
+          "title": "Silent Warrior",
+          "absoluteEpisode": 151
+        },
+        {
+          "episode": 13,
+          "title": "Say Goodbye, 17",
+          "absoluteEpisode": 152
+        },
+        {
+          "episode": 14,
+          "title": "Sacrifice",
+          "absoluteEpisode": 153
+        },
+        {
+          "episode": 15,
+          "title": "Saiyans Emerge",
+          "absoluteEpisode": 154
+        },
+        {
+          "episode": 16,
+          "title": "Super Vegeta",
+          "absoluteEpisode": 155
+        },
+        {
+          "episode": 17,
+          "title": "Bow to the Prince",
+          "absoluteEpisode": 156
+        },
+        {
+          "episode": 18,
+          "title": "Hour of Temptation",
+          "absoluteEpisode": 157
+        },
+        {
+          "episode": 19,
+          "title": "Krillin's Decision",
+          "absoluteEpisode": 158
+        },
+        {
+          "episode": 20,
+          "title": "The Last Defense",
+          "absoluteEpisode": 159
+        },
+        {
+          "episode": 21,
+          "title": "Cell is Complete",
+          "absoluteEpisode": 160
+        },
+        {
+          "episode": 22,
+          "title": "Vegeta Must Pay",
+          "absoluteEpisode": 161
+        },
+        {
+          "episode": 23,
+          "title": "Trunks Ascends",
+          "absoluteEpisode": 162
+        },
+        {
+          "episode": 24,
+          "title": "Saving Throw",
+          "absoluteEpisode": 163
+        },
+        {
+          "episode": 25,
+          "title": "Ghosts from Tomorrow",
+          "absoluteEpisode": 164
+        },
+        {
+          "episode": 26,
+          "title": "The Cell Games",
+          "absoluteEpisode": 165
+        }
+      ]
+    },
+    {
+      "season": 6,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "What is the Tournament?",
+          "absoluteEpisode": 166
+        },
+        {
+          "episode": 2,
+          "title": "The Doomsday Broadcast",
+          "absoluteEpisode": 167
+        },
+        {
+          "episode": 3,
+          "title": "Meet Me in the Ring",
+          "absoluteEpisode": 168
+        },
+        {
+          "episode": 4,
+          "title": "No Worries Here",
+          "absoluteEpisode": 169
+        },
+        {
+          "episode": 5,
+          "title": "A Girl Named Lime",
+          "absoluteEpisode": 170
+        },
+        {
+          "episode": 6,
+          "title": "Memories of Gohan",
+          "absoluteEpisode": 171
+        },
+        {
+          "episode": 7,
+          "title": "A New Guardian",
+          "absoluteEpisode": 172
+        },
+        {
+          "episode": 8,
+          "title": "Dende's Dragon",
+          "absoluteEpisode": 173
+        },
+        {
+          "episode": 9,
+          "title": "The Puzzle of General Tao",
+          "absoluteEpisode": 174
+        },
+        {
+          "episode": 10,
+          "title": "The Games Begin",
+          "absoluteEpisode": 175
+        },
+        {
+          "episode": 11,
+          "title": "Losers Fight First",
+          "absoluteEpisode": 176
+        },
+        {
+          "episode": 12,
+          "title": "Goku vs. Cell",
+          "absoluteEpisode": 177
+        },
+        {
+          "episode": 13,
+          "title": "Cell's Bag of Tricks",
+          "absoluteEpisode": 178
+        },
+        {
+          "episode": 14,
+          "title": "No More Rules",
+          "absoluteEpisode": 179
+        },
+        {
+          "episode": 15,
+          "title": "The Fight is Over",
+          "absoluteEpisode": 180
+        },
+        {
+          "episode": 16,
+          "title": "Faith in a Boy",
+          "absoluteEpisode": 181
+        },
+        {
+          "episode": 17,
+          "title": "Gohan's Plea",
+          "absoluteEpisode": 182
+        },
+        {
+          "episode": 18,
+          "title": "Android Explosion",
+          "absoluteEpisode": 183
+        },
+        {
+          "episode": 19,
+          "title": "Cell Juniors Attack!",
+          "absoluteEpisode": 184
+        },
+        {
+          "episode": 20,
+          "title": "Awakening",
+          "absoluteEpisode": 185
+        },
+        {
+          "episode": 21,
+          "title": "The Unstoppable Gohan",
+          "absoluteEpisode": 186
+        },
+        {
+          "episode": 22,
+          "title": "Cell's Break Down",
+          "absoluteEpisode": 187
+        },
+        {
+          "episode": 23,
+          "title": "A Hero's Farewell",
+          "absoluteEpisode": 188
+        },
+        {
+          "episode": 24,
+          "title": "Cell Returns!",
+          "absoluteEpisode": 189
+        },
+        {
+          "episode": 25,
+          "title": "The Horror Won't End",
+          "absoluteEpisode": 190
+        },
+        {
+          "episode": 26,
+          "title": "Save the World",
+          "absoluteEpisode": 191
+        },
+        {
+          "episode": 27,
+          "title": "Goku's Decision",
+          "absoluteEpisode": 192
+        },
+        {
+          "episode": 28,
+          "title": "One More Wish",
+          "absoluteEpisode": 193
+        },
+        {
+          "episode": 29,
+          "title": "Free the Future",
+          "absoluteEpisode": 194
+        }
+      ]
+    },
+    {
+      "season": 7,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Warriors of the Dead",
+          "absoluteEpisode": 195
+        },
+        {
+          "episode": 2,
+          "title": "Tournament Begins",
+          "absoluteEpisode": 196
+        },
+        {
+          "episode": 3,
+          "title": "Water Fight",
+          "absoluteEpisode": 197
+        },
+        {
+          "episode": 4,
+          "title": "Final Round",
+          "absoluteEpisode": 198
+        },
+        {
+          "episode": 5,
+          "title": "Goku vs.Pikkon",
+          "absoluteEpisode": 199
+        },
+        {
+          "episode": 6,
+          "title": "Gohan Goes to High School",
+          "absoluteEpisode": 200
+        },
+        {
+          "episode": 7,
+          "title": "I am Saiyaman!",
+          "absoluteEpisode": 201
+        },
+        {
+          "episode": 8,
+          "title": "Gohan's First Date",
+          "absoluteEpisode": 202
+        },
+        {
+          "episode": 9,
+          "title": "Rescue Videl",
+          "absoluteEpisode": 203
+        },
+        {
+          "episode": 10,
+          "title": "Blackmail",
+          "absoluteEpisode": 204
+        },
+        {
+          "episode": 11,
+          "title": "I'll Fight Too",
+          "absoluteEpisode": 205
+        },
+        {
+          "episode": 12,
+          "title": "The Newest Super Saiyan",
+          "absoluteEpisode": 206
+        },
+        {
+          "episode": 13,
+          "title": "Take Flight, Videl",
+          "absoluteEpisode": 207
+        },
+        {
+          "episode": 14,
+          "title": "Gather for the Tournament",
+          "absoluteEpisode": 208
+        },
+        {
+          "episode": 15,
+          "title": "Camera Shy",
+          "absoluteEpisode": 209
+        },
+        {
+          "episode": 16,
+          "title": "The World Tournament",
+          "absoluteEpisode": 210
+        },
+        {
+          "episode": 17,
+          "title": "Trunks vs. Goten",
+          "absoluteEpisode": 211
+        },
+        {
+          "episode": 18,
+          "title": "Best of the Boys",
+          "absoluteEpisode": 212
+        },
+        {
+          "episode": 19,
+          "title": "Big Trouble, Little Trunks",
+          "absoluteEpisode": 213
+        },
+        {
+          "episode": 20,
+          "title": "Who Will Fight Who?",
+          "absoluteEpisode": 214
+        },
+        {
+          "episode": 21,
+          "title": "Forfeit of Piccolo",
+          "absoluteEpisode": 215
+        },
+        {
+          "episode": 22,
+          "title": "A Dark and Secret Power",
+          "absoluteEpisode": 216
+        },
+        {
+          "episode": 23,
+          "title": "Videl is Crushed",
+          "absoluteEpisode": 217
+        },
+        {
+          "episode": 24,
+          "title": "Identities Revealed",
+          "absoluteEpisode": 218
+        },
+        {
+          "episode": 25,
+          "title": "Energy Drain",
+          "absoluteEpisode": 219
+        }
+      ]
+    },
+    {
+      "season": 8,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "The Wizard's Curse",
+          "absoluteEpisode": 220
+        },
+        {
+          "episode": 2,
+          "title": "King of the Demons",
+          "absoluteEpisode": 221
+        },
+        {
+          "episode": 3,
+          "title": "Vegeta Attacks",
+          "absoluteEpisode": 222
+        },
+        {
+          "episode": 4,
+          "title": "Next Up, Goku",
+          "absoluteEpisode": 223
+        },
+        {
+          "episode": 5,
+          "title": "Battle Supreme",
+          "absoluteEpisode": 224
+        },
+        {
+          "episode": 6,
+          "title": "Eighteen Unmasks",
+          "absoluteEpisode": 225
+        },
+        {
+          "episode": 7,
+          "title": "Pay to Win",
+          "absoluteEpisode": 226
+        },
+        {
+          "episode": 8,
+          "title": "Heart of a Villain",
+          "absoluteEpisode": 227
+        },
+        {
+          "episode": 9,
+          "title": "The Dark Prince Returns",
+          "absoluteEpisode": 228
+        },
+        {
+          "episode": 10,
+          "title": "Vegeta's Pride",
+          "absoluteEpisode": 229
+        },
+        {
+          "episode": 11,
+          "title": "The Long Awaited Fight",
+          "absoluteEpisode": 230
+        },
+        {
+          "episode": 12,
+          "title": "Magic Ball of Buu",
+          "absoluteEpisode": 231
+        },
+        {
+          "episode": 13,
+          "title": "Buu is Hatched",
+          "absoluteEpisode": 232
+        },
+        {
+          "episode": 14,
+          "title": "The Losses Begin",
+          "absoluteEpisode": 233
+        },
+        {
+          "episode": 15,
+          "title": "The Terror of Majin Buu",
+          "absoluteEpisode": 234
+        },
+        {
+          "episode": 16,
+          "title": "Meal Time",
+          "absoluteEpisode": 235
+        },
+        {
+          "episode": 17,
+          "title": "The Warrior's Decision",
+          "absoluteEpisode": 236
+        },
+        {
+          "episode": 18,
+          "title": "Final Atonement",
+          "absoluteEpisode": 237
+        },
+        {
+          "episode": 19,
+          "title": "Evil Lives On",
+          "absoluteEpisode": 238
+        },
+        {
+          "episode": 20,
+          "title": "Find the Dragonballs",
+          "absoluteEpisode": 239
+        },
+        {
+          "episode": 21,
+          "title": "Revival",
+          "absoluteEpisode": 240
+        },
+        {
+          "episode": 22,
+          "title": "Global Announcement",
+          "absoluteEpisode": 241
+        },
+        {
+          "episode": 23,
+          "title": "Learn to Fuse!",
+          "absoluteEpisode": 242
+        },
+        {
+          "episode": 24,
+          "title": "The Z Sword",
+          "absoluteEpisode": 243
+        },
+        {
+          "episode": 25,
+          "title": "Race to Capsule Corp.",
+          "absoluteEpisode": 244
+        },
+        {
+          "episode": 26,
+          "title": "Super Saiyan 3",
+          "absoluteEpisode": 245
+        },
+        {
+          "episode": 27,
+          "title": "Buu's Mutiny",
+          "absoluteEpisode": 246
+        },
+        {
+          "episode": 28,
+          "title": "The Fusion Dance",
+          "absoluteEpisode": 247
+        },
+        {
+          "episode": 29,
+          "title": "Goku's Time Is Up",
+          "absoluteEpisode": 248
+        },
+        {
+          "episode": 30,
+          "title": "Return to Other World",
+          "absoluteEpisode": 249
+        },
+        {
+          "episode": 31,
+          "title": "Out from the Broken Sword",
+          "absoluteEpisode": 250
+        },
+        {
+          "episode": 32,
+          "title": "Gotenks is Born",
+          "absoluteEpisode": 251
+        },
+        {
+          "episode": 33,
+          "title": "Unlikely Friendship",
+          "absoluteEpisode": 252
+        },
+        {
+          "episode": 34,
+          "title": "I Kill No More",
+          "absoluteEpisode": 253
+        }
+      ]
+    },
+    {
+      "season": 9,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "The Evil of Men",
+          "absoluteEpisode": 254
+        },
+        {
+          "episode": 2,
+          "title": "Buu Against Buu",
+          "absoluteEpisode": 255
+        },
+        {
+          "episode": 3,
+          "title": "Empty Planet",
+          "absoluteEpisode": 256
+        },
+        {
+          "episode": 4,
+          "title": "Time Struggle",
+          "absoluteEpisode": 257
+        },
+        {
+          "episode": 5,
+          "title": "Super Moves of Gotenks",
+          "absoluteEpisode": 258
+        },
+        {
+          "episode": 6,
+          "title": "Trapped In Forever",
+          "absoluteEpisode": 259
+        },
+        {
+          "episode": 7,
+          "title": "Feeding Frenzy",
+          "absoluteEpisode": 260
+        },
+        {
+          "episode": 8,
+          "title": "Gotenks Is Awesome",
+          "absoluteEpisode": 261
+        },
+        {
+          "episode": 9,
+          "title": "Unlucky Break",
+          "absoluteEpisode": 262
+        },
+        {
+          "episode": 10,
+          "title": "A Whole New Gohan",
+          "absoluteEpisode": 263
+        },
+        {
+          "episode": 11,
+          "title": "Search for Survivors",
+          "absoluteEpisode": 264
+        },
+        {
+          "episode": 12,
+          "title": "Majin Buu Transforms",
+          "absoluteEpisode": 265
+        },
+        {
+          "episode": 13,
+          "title": "The Old Kai's Weapon",
+          "absoluteEpisode": 266
+        },
+        {
+          "episode": 14,
+          "title": "Ready to Fuse",
+          "absoluteEpisode": 267
+        },
+        {
+          "episode": 15,
+          "title": "Union of Rivals",
+          "absoluteEpisode": 268
+        },
+        {
+          "episode": 16,
+          "title": "Meet Vegito",
+          "absoluteEpisode": 269
+        },
+        {
+          "episode": 17,
+          "title": "Rip in the Universe",
+          "absoluteEpisode": 270
+        },
+        {
+          "episode": 18,
+          "title": "Vegito Downsized",
+          "absoluteEpisode": 271
+        },
+        {
+          "episode": 19,
+          "title": "The Incredible Fighting Candy",
+          "absoluteEpisode": 272
+        },
+        {
+          "episode": 20,
+          "title": "The Innards of Buu",
+          "absoluteEpisode": 273
+        },
+        {
+          "episode": 21,
+          "title": "Mind Trap",
+          "absoluteEpisode": 274
+        },
+        {
+          "episode": 22,
+          "title": "Deadly Vision",
+          "absoluteEpisode": 275
+        },
+        {
+          "episode": 23,
+          "title": "Evil Kid Buu",
+          "absoluteEpisode": 276
+        },
+        {
+          "episode": 24,
+          "title": "End of Earth",
+          "absoluteEpisode": 277
+        },
+        {
+          "episode": 25,
+          "title": "True Saiyans Fight Alone",
+          "absoluteEpisode": 278
+        },
+        {
+          "episode": 26,
+          "title": "Battle for the Universe Begins",
+          "absoluteEpisode": 279
+        },
+        {
+          "episode": 27,
+          "title": "Vegeta's Respect",
+          "absoluteEpisode": 280
+        },
+        {
+          "episode": 28,
+          "title": "Minute of Desperation",
+          "absoluteEpisode": 281
+        },
+        {
+          "episode": 29,
+          "title": "Old Buu Emerges",
+          "absoluteEpisode": 282
+        },
+        {
+          "episode": 30,
+          "title": "Earth Reborn",
+          "absoluteEpisode": 283
+        },
+        {
+          "episode": 31,
+          "title": "Call to Action",
+          "absoluteEpisode": 284
+        },
+        {
+          "episode": 32,
+          "title": "People of Earth Unite",
+          "absoluteEpisode": 285
+        },
+        {
+          "episode": 33,
+          "title": "Spirit Bomb Triumphant",
+          "absoluteEpisode": 286
+        },
+        {
+          "episode": 34,
+          "title": "Celebrations with Majin Buu",
+          "absoluteEpisode": 287
+        },
+        {
+          "episode": 35,
+          "title": "He's Always Late",
+          "absoluteEpisode": 288
+        },
+        {
+          "episode": 36,
+          "title": "Granddaughter Pan",
+          "absoluteEpisode": 289
+        },
+        {
+          "episode": 37,
+          "title": "Buu's Reincarnation",
+          "absoluteEpisode": 290
+        },
+        {
+          "episode": 38,
+          "title": "Goku's Next Journey",
+          "absoluteEpisode": 291
+        }
+      ]
+    }
+  ]
+}
