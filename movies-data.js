@@ -10782,7 +10782,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/mRy1D3wVL1AjR1Czp2WY90CCzPY.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/xSvFPxS4JR2G6oRmgmeq9oSIJR4.jpg",
     videoUrl: "541867",
-    overview: "A girl named Myskina Olga is pursued by both the World Government and treasure hunter Mad Treasure, as she's the only one who knows the location of Pure Gold — a substance rare enough to buy the entire world. Olga ends up sailing with the Straw Hat Pirates, journeying to the lost island of Alchemi, hidden inside the stomach of a giant footballfish named Bonbori.",
+    overview: "Experience the inspiring moments that launched Luffy and the first four members of his crew on their grand adventure to find the One Piece — from Shanks giving Luffy the straw hat, to Nami facing the Fish-Men at her hometown. Zoro finds his swordsman's zeal, Usopp pays for his pranks, and Sanji sizzles up the Baratie, all in the waters where it began.",
     director: "Tatsuya Nagamine",
     cast: [
       "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), guest star Shun Oguri (Mad Treasure)"
