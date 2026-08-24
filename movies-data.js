@@ -10694,7 +10694,8 @@ window._MOVIES_DATA = [
     genres: [
       "Action",
       "Animation",
-      "Adventure"
+      "Adventure",
+      "Comedy"
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8tqXFF48K3AB089yAmMA4ENzyor.jpg",
