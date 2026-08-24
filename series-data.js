@@ -52845,9 +52845,9 @@ window._SERIES_DATA = [
     ]
   },
   {
-    title: "Dutton Ranch",
+    title: "ONE PIECE",
     type: "TV Show",
-    year: 2026,
+    year: 2023,
     rating: 8.2,
     age: "TV-MA",
     genres: ["Drama", "Western"],
