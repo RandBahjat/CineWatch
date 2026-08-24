@@ -6423,3 +6423,23 @@ body.rtl-layout .account-side-panel.open {
   font-style: italic;
 }
 
+.comment-delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(255, 80, 80, 0.6);
+  padding: 4px 6px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease, background 0.2s ease;
+  flex-shrink: 0;
+}
+
+.comment-delete-btn:hover {
+  color: #ff4444;
+  background: rgba(255, 68, 68, 0.15);
+}
+
+
