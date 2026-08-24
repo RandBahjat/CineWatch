@@ -3840,11 +3840,11 @@ function buildAnimeEmbedUrl(data, serverMode) {
       return `https://vidsrc.to/embed/movie/${data.id}`;
     }
   } else {
-    // Default: 'vidsrc-jp' — Reliable JP Sub Server (Testing embed.su)
+    // Default: 'vidsrc-jp' — Reliable Server (Testing 2embed)
     if (data.type === 'tv') {
-      return `https://embed.su/embed/tv/${data.id}/${data.season}/${data.episode}`;
+      return `https://www.2embed.cc/embedtv/${data.id}&s=${data.season}&e=${data.episode}`;
     } else {
-      return `https://embed.su/embed/movie/${data.id}`;
+      return `https://www.2embed.cc/embed/${data.id}`;
     }
   }
 }
