@@ -10866,7 +10866,7 @@ window._MOVIES_DATA = [
     overview: "Straw Hat Pirates visit famous floating theater ship Randolph to watch final play of beloved aging actor. Before curtain fall, corrupt marine officer Randolph once served interrupts performance to arrest old actor on fake charges. Luffy and crew step in to defend theater ship, defeat corrupt marines, and make sure final bow goes on as planned.",
     director: "Junji Shimizu",
     cast: [
-      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), Ikue Otani (Chopper), Kazuki Yao (Franky)"
+      "Mayumi Tanaka, Kazuya Nakai, Akemi Okamura, Kappei Yamaguchi, Hiroaki Hirata, Ikue Otani, Yuriko Yamaguchi"
     ],
     trending: false,
     featured: false,
