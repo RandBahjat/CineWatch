@@ -10928,9 +10928,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "One Piece Episode of Nami: Tears of a Navigator and the Bonds of Friends ",
+    title: "One Piece Episode of Sabo: The Three Brothers' Bond - The Miraculous Reunion and the Inherited Will",
     type: "Movie",
-    year: 2012,
+    year: 2015,
     rating: 7.8,
     age: "TV-PG",
     duration: "1h 44m",
