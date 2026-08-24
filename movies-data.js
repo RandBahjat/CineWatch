@@ -10847,7 +10847,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "One Piece: Episode of Chopper Plus: Bloom in the Winter, Miracle Cherry Blossom",
+    title: "One Piece Special: Protect! The Last Great Stage",
     type: "Movie",
     year: 2008,
     rating: 6.9,
