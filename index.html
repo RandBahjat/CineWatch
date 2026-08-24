@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260822_2911">
+    <link rel="stylesheet" href="movie.css?v=20260822_2912">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows ΓÇö all in one simple, easy-to-use site.</title>
@@ -17,9 +17,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_1879"></script>
-    <script src="series-data.js?v=20260818_1879"></script>
-    <script src="anime-data.js?v=20260818_1879"></script>
+    <script src="movies-data.js?v=20260818_1880"></script>
+    <script src="series-data.js?v=20260818_1880"></script>
+    <script src="anime-data.js?v=20260818_1880"></script>
     <script src="movie.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -372,6 +372,22 @@
                     </div>
                 </div>
                 <div class="episode-list" id="episodeGrid"></div>
+            </div>
+
+            <!-- Comments Section -->
+            <div class="comments-section" id="commentsSection" style="display: none;">
+                <h3 class="shelf-title shelf-title-accent">Comments</h3>
+                
+                <!-- Comment Input Area -->
+                <div class="comment-input-area" id="commentInputArea">
+                    <!-- Will be populated dynamically based on auth state -->
+                </div>
+
+                <!-- Comments List -->
+                <div class="comments-list" id="commentsList">
+                    <!-- Comments will load here -->
+                    <div class="loading-spinner" style="margin: 2rem auto;"></div>
+                </div>
             </div>
 
             <!-- You May Like Section -->
