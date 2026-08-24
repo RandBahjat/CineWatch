@@ -52864,7 +52864,7 @@ window._SERIES_DATA = [
       {
         season: 1,
         episodes: [
-          { episode: 1, title: "The Untold Want" },
+          { episode: 1, title: "Romance Dawn" },
           { episode: 2, title: "Earn Another Day" },
           { episode: 3, title: "Act of God Business" },
           { episode: 4, title: "Start With a Bullet" },
