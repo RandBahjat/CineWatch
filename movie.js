@@ -3785,31 +3785,78 @@ document.addEventListener("DOMContentLoaded", () => { initApp(); trackVisit(); }
 
 window.currentIframeData = null;
 
+function buildAnimeEmbedUrl(data, isDub) {
+  const lang = isDub ? 'dub' : 'sub';
+  if (data.type === 'tv') {
+    return `https://vidsrc.me/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}&ds_lang=${isDub ? 'en' : 'ja'}`;
+  } else {
+    return `https://vidsrc.me/embed/movie?tmdb=${data.id}&ds_lang=${isDub ? 'en' : 'ja'}`;
+  }
+}
+
 function updateIframeServer() {
   if (!window.currentIframeData) return;
   const data = window.currentIframeData;
-  const iframe = document.getElementById("iframeElement");
-  const serverSelectWrap = document.getElementById("serverSelectWrap");
+  const iframe = document.getElementById('iframeElement');
+  const serverSelectWrap = document.getElementById('serverSelectWrap');
+  const subDubToggle = document.getElementById('subDubToggle');
 
-  // Force hide the server select UI since the user only wants VidAPI
+  // Always hide the old server selector
   if (serverSelectWrap) {
-    serverSelectWrap.style.display = "none";
-    serverSelectWrap.classList.add("hidden");
+    serverSelectWrap.style.display = 'none';
+    serverSelectWrap.classList.add('hidden');
   }
 
-  let newUrl = "";
-  if (data.type === "tv") {
+  // Find the parent movie to check isAnime
+  const parentMovie = data.parentId ? MOVIES.find(m => m.id === data.parentId) : null;
+  const isAnime = !!(parentMovie?.isAnime || parentMovie?.type === 'Anime');
+
+  // Show/hide Sub-Dub toggle
+  if (subDubToggle) {
+    if (isAnime) {
+      subDubToggle.classList.remove('hidden');
+    } else {
+      subDubToggle.classList.add('hidden');
+    }
+  }
+
+  let newUrl = '';
+  if (isAnime) {
+    const isDub = data.isDub || false;
+    newUrl = buildAnimeEmbedUrl(data, isDub);
+  } else if (data.type === 'tv') {
     newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}?skin=netflix&color=e50914`;
   } else {
     newUrl = `https://vaplayer.ru/embed/movie/${data.id}?skin=netflix&color=e50914`;
   }
 
   iframe.onload = () => {
-    const centerOverlay = document.getElementById("videoCenterOverlay");
-    if (centerOverlay) centerOverlay.style.display = "none";
+    const centerOverlay = document.getElementById('videoCenterOverlay');
+    if (centerOverlay) centerOverlay.style.display = 'none';
   };
   iframe.src = newUrl;
 }
+
+// Wire up Sub/Dub toggle buttons
+document.getElementById('subDubToggle')?.addEventListener('click', e => {
+  const btn = e.target.closest('.sub-dub-btn');
+  if (!btn || !window.currentIframeData) return;
+  const isDub = btn.dataset.mode === 'dub';
+  window.currentIframeData.isDub = isDub;
+  // Update active state
+  document.querySelectorAll('.sub-dub-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  // Show loading
+  const centerOverlay = document.getElementById('videoCenterOverlay');
+  if (centerOverlay) {
+    centerOverlay.innerHTML = '<ion-icon name="sync-outline" class="spin"></ion-icon>';
+    centerOverlay.style.display = 'flex';
+    centerOverlay.style.animation = 'none';
+  }
+  // Rebuild the embed URL
+  const iframe = document.getElementById('iframeElement');
+  iframe.src = buildAnimeEmbedUrl(window.currentIframeData, isDub);
+});
 
 document.getElementById("videoServerSelect")?.addEventListener("change", updateIframeServer);
 
