@@ -10769,7 +10769,7 @@ window._MOVIES_DATA = [
     title: "One Piece Episode of East Blue",
     type: "Movie",
     year: 2017,
-    rating: 6.9,
+    rating: 7.2,
     age: "TV-14",
     duration: "1h 44m",
     genres: [
