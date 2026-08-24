@@ -10876,8 +10876,8 @@ window._MOVIES_DATA = [
   {
     title: "One Piece Film Gold: Episode 0",
     type: "Movie",
-    year: 2003,
-    rating: 6.8,
+    year: 2016,
+    rating: 7.2,
     age: "TV-PG",
     duration: "46m",
     genres: [
