@@ -6036,7 +6036,7 @@ window._ANIME_DATA = [
     "type": "TV Show",
     "isAnime": true,
     "year": 1996,
-    "rating": 9,
+    "rating": 8.8,
     "age": "TV-14",
     "duration": "24m",
     "genres": [
