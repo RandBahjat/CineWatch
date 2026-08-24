@@ -52879,7 +52879,7 @@ window._SERIES_DATA = [
         episodes: [
           { episode: 1, title: "The Beginning and the End" },
           { episode: 2, title: "Good Whale Hunting" },
-          { episode: 3, title: "Tell No Tales" },
+          { episode: 3, title: "Whisky Business" },
           { episode: 4, title: "The Pirates Are Coming" },
           { episode: 5, title: "Eat at Baratie!" },
           { episode: 6, title: "The Chef and the Chore Boy" },
