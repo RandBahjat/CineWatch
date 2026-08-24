@@ -52853,7 +52853,7 @@ window._SERIES_DATA = [
     genres: ["Action", "Adventure","Comedy","Fantasy"],
     poster: "https://image.tmdb.org/t/p/original/yEtSBgugED8XyhqjcKgF6j2zDMf.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qD211Hb5XwFxrszzBBe5EUYJerh.jpg",
-    videoUrl: "111",
+    videoUrl: "111110",
     overview: "Beth Dutton, Rip Wheeler gamble everything on new life in South Texas, but promise of building future far from ghost of Yellowstone quickly collide with brutal new reality, rival ranch that stop at nothing protect its empire.",
     director: "Chad Feehan",
     cast: ["Kelly Reilly, Cole Hauser, Ed Harris, Annette Bening, Finn Little, Jai Courtney"],
