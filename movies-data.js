@@ -10642,6 +10642,7 @@ window._MOVIES_DATA = [
       "Animation",
       "Adventure",
       "Comedy"
+      
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/whvgyEpPqvKXP0vZE4PMkoUmRqb.jpg",
     backdrop: "https://images2.alphacoders.com/931/thumb-1920-931970.jpg",
