@@ -10793,7 +10793,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "One Piece Episode of East Blue",
+    title: "One Piece "3D2Y: Overcome Ace's Death! Luffy's Vow to his Friends",
     type: "Movie",
     year: 2017,
     rating: 7.2,
