@@ -10661,8 +10661,8 @@ window._MOVIES_DATA = [
   {
     title: "One Piece Episode of Alabasta Prologue",
     type: "Movie",
-    year: 2013,
-    rating: 6.3,
+    year: 2007,
+    rating: 6.7,
     age: "TV-PG",
     duration: "43m",
     genres: [
