@@ -6037,7 +6037,7 @@ window._ANIME_DATA = [
     "isAnime": true,
     "year": 1996,
     "rating": 8.8,
-    "age": "TV-14",
+    "age": "TV-PG",
     "duration": "24m",
     "genres": [
       "Animation",
