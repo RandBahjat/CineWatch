@@ -10901,7 +10901,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "One Piece Film Gold: Episode 0",
+    title: "One Piece Episode of Nami: Tears of a Navigator and the Bonds of Friends ",
     type: "Movie",
     year: 2016,
     rating: 7.2,
