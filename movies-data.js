@@ -10873,6 +10873,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "One Piece Special: Protect! The Last Great Stage",
+    type: "Movie",
+    year: 2003,
+    rating: 6.8,
+    age: "TV-PG",
+    duration: "46m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Comedy",
+
+    ],
+    poster: "https://static.wikia.nocookie.net/anime-database/images/f/fd/OnePieceSPC3.jpg/revision/latest?cb=20200128103029",
+    backdrop: "https://images.plex.tv/photo?size=large-1920&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F6Sa3iAcZcPW1mM35112m9hXHHLh.jpg",
+    videoUrl: "364728",
+    overview: "Straw Hat Pirates visit famous floating theater ship Randolph to watch final play of beloved aging actor. Before curtain fall, corrupt marine officer Randolph once served interrupts performance to arrest old actor on fake charges. Luffy and crew step in to defend theater ship, defeat corrupt marines, and make sure final bow goes on as planned.",
+    director: "Junji Shimizu",
+    cast: [
+      "Mayumi Tanaka, Kazuya Nakai, Akemi Okamura, Kappei Yamaguchi, Hiroaki Hirata, Ikue Otani, Yuriko Yamaguchi"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
