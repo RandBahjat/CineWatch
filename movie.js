@@ -2203,7 +2203,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     if (centerOverlay) centerOverlay.style.display = "none";
     serverWrap.classList.remove("hidden");
     if (isNumericId) {
-      window.currentIframeData = { type: "movie", id: movie.videoUrl };
+      window.currentIframeData = { type: "movie", id: movie.videoUrl, parentId: movie.id };
     } else {
       window.currentIframeData = null;
       serverWrap.classList.add("hidden");
@@ -3825,9 +3825,11 @@ function updateIframeServer() {
     serverSelectWrap.classList.add('hidden');
   }
 
-  // Find the parent movie to check isAnime
+  // Find the parent movie to check isAnime — check parentId OR the item itself (for direct-play anime)
   const parentMovie = data.parentId ? MOVIES.find(m => m.id === data.parentId) : null;
-  const isAnime = !!(parentMovie?.isAnime || parentMovie?.type === 'Anime');
+  const selfMovie = !parentMovie && data.id ? MOVIES.find(m => m.videoUrl == data.id || m.id === data.id) : null;
+  const refMovie = parentMovie || selfMovie;
+  const isAnime = !!(refMovie?.isAnime || refMovie?.type === 'Anime');
 
   // Show/hide anime server dropdown
   if (animeServerWrap) {
