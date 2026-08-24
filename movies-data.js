@@ -10578,6 +10578,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "One Piece Film: Strong World",
+    type: "Movie",
+    year: 2009,
+    rating: 7.4,
+    age: "TV-14",
+    duration: "1h 53m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/z9S39hH4IOX9Hmtn3zho3Wdqem8.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/fgcSkuv3otR5iz2VzzFnh3QOI49.jpg",
+    videoUrl: "41498",
+    overview: "Twenty years after breaking out of Impel Down, legendary pirate Shiki the Golden Lion resurfaces with a scheme to bring the World Government to its knees. Impressed by Nami's weather-reading skill, he kidnaps her to force her into his crew — leaving Luffy and the gang to chase him down through a strange land crawling with monstrous beasts.",
+    director: "Munehisa Sakai",
+    cast: [
+      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), Naoto Takenaka (Shiki)"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
