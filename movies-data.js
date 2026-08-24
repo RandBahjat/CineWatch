@@ -10571,7 +10571,7 @@ window._MOVIES_DATA = [
     overview: "Twenty years after breaking out of Impel Down, legendary pirate Shiki the Golden Lion resurfaces with a scheme to bring the World Government to its knees. Impressed by Nami's weather-reading skill, he kidnaps her to force her into his crew — leaving Luffy and the gang to chase him down through a strange land crawling with monstrous beasts.",
     director: "Munehisa Sakai",
     cast: [
-      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), Hiroaki Hirata (Sanji)"
+      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), Naoto Takenaka (Shiki)"
     ],
     trending: false,
     featured: false,
