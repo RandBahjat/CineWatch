@@ -52868,7 +52868,7 @@ window._SERIES_DATA = [
           { episode: 2, title: "The Man in the Straw Hat" },
           { episode: 3, title: "Tell No Tales" },
           { episode: 4, title: "The Pirates Are Coming" },
-          { episode: 5, title: "Peaceful Find Peace" },
+          { episode: 5, title: "Eat at Baratie!" },
           { episode: 6, title: "A Cowboy Saint" },
           { episode: 7, title: "Den of Sin" },
           { episode: 8, title: "Whiskey Limits" },
