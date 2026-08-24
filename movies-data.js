@@ -10584,7 +10584,7 @@ window._MOVIES_DATA = [
     year: 2015,
     rating: 6.6,
     age: "TV Movie",
-    duration: "1h 53m",
+    duration: "1h 46m",
     genres: [
       "Action",
       "Animation",
