@@ -10565,7 +10565,7 @@ window._MOVIES_DATA = [
       "Adventure",
       "Fantasy"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4E2lyUGLEr3yH4q6kJxPkQUhX7n.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/z9S39hH4IOX9Hmtn3zho3Wdqem8.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/4yP7vqbPwB2RVCuyXs5P0Cl2owZ.jpg",
     videoUrl: "568012",
     overview: "Made to celebrate the anime's 20th anniversary — pirates from all across the world gather at the massive Pirate Expo, racing to find Gol D. Roger's legendary lost treasure. But among the infamous captains and crews, an old member of Roger's own crew has a dark grudge to settle, and the whole festival explodes into chaos.",
