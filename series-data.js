@@ -52870,7 +52870,7 @@ window._SERIES_DATA = [
           { episode: 4, title: "The Pirates Are Coming" },
           { episode: 5, title: "Eat at Baratie!" },
           { episode: 6, title: "The Chef and the Chore Boy" },
-          { episode: 7, title: "Den of Sin" },
+          { episode: 7, title: "The Girl with the Sawfish Tattoo" },
           { episode: 8, title: "Whiskey Limits" },
           { episode: 9, title: "El Padrino" }
         ]
