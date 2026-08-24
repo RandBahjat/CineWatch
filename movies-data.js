@@ -10663,7 +10663,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 2007,
     rating: 6.7,
-    age: "TV-13",
+    age: "PG-13",
     duration: "43m",
     genres: [
       "Action",
