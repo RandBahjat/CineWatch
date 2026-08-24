@@ -10796,8 +10796,8 @@ window._MOVIES_DATA = [
     title: "One Piece 3D2Y: Overcome Ace's Death! Luffy's Vow to his Friends",
     type: "Movie",
     year: 2014,
-    rating: 7.2,
-    age: "TV-14",
+    rating: 7.5,
+    age: "TV-PG",
     duration: "1h 46m",
     genres: [
       "Action",
