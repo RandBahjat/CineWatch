@@ -10916,7 +10916,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wPBFqO9zeSjX3bK9NMvhm9xL1Le.jpg",
     backdrop: "https://m.media-amazon.com/images/M/MV5BMDg3ZTIzNDItOWYxMC00ZDM0LTg2OWYtODg2ZjkwNWZmNzUxXkEyXkFqcGc@._V1_.jpg",
-    videoUrl: "779813",
+    videoUrl: "",
     overview: "Short prologue special set before events of Film Gold. Straw Hat Pirates relax on ship doing fun activities like sumo wrestling and eating meat. Crew gets dynamic invite to massive entertainment ship Gran Tesoro ruled by Gild Tesoro, setting stage for big casino adventure.",
     director: "Hiroaki Miyamoto",
     cast: [
