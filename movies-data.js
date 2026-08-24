@@ -10610,7 +10610,7 @@ window._MOVIES_DATA = [
     year: 2018,
     rating: 6.7,
     age: "TV-14",
-    duration: "1h 46m",
+    duration: "1h 47m",
     genres: [
       "Action",
       "Animation",
