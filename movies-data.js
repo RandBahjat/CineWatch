@@ -10893,7 +10893,7 @@ window._MOVIES_DATA = [
     overview: "Short prologue special set before events of Film Gold. Straw Hat Pirates relax on ship doing fun activities like sumo wrestling and eating meat. Crew gets dynamic invite to massive entertainment ship Gran Tesoro ruled by Gild Tesoro, setting stage for big casino adventure.",
     director: "Hiroaki Miyamoto",
     cast: [
-      "Mayumi Tanaka, Kazuya Nakai, Akemi Okamura, Kappei Yamaguchi, Hiroaki Hirata, Ikue Otani, Yuriko Yamaguchi"
+      "Mayumi Tanaka, Kazuya Nakai, Akemi Okamura, Kappei Yamaguchi, Hiroaki Hirata, Ikue Otani, Yuriko Yamaguchi, Kazuki Yao, Cho"
     ],
     trending: false,
     featured: false,
