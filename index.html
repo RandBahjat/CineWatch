@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260822_2511">
+    <link rel="stylesheet" href="movie.css?v=20260822_2512">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -17,8 +17,8 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_1479"></script>
-    <script src="series-data.js?v=20260818_1479"></script>
+    <script src="movies-data.js?v=20260818_1480"></script>
+    <script src="series-data.js?v=20260818_1480"></script>
     <script src="movie.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -43,14 +43,26 @@
         </linearGradient>
       </defs>
     </svg>
-    <!-- Language Toast Banner (Shown on first visit if ambiguous) -->
-    <div class="lang-toast" id="langToast">
-        <p id="langToastMsg">Would you prefer to browse in another language?</p>
-        <div class="lang-toast-actions">
-            <button class="lang-toast-btn" id="langToastDismiss">Dismiss</button>
-            <button class="lang-toast-btn primary" id="langToastChange">Change Language</button>
+    <!-- Language Toast — Chrome-style compact popup (top-right) -->
+    <div class="lang-toast" id="langToast" role="dialog" aria-label="Language suggestion">
+        <div class="lang-toast-header">
+            <svg class="lang-toast-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <div class="lang-toast-tabs" id="langToastTabs">
+                <!-- filled dynamically -->
+            </div>
+            <button class="lang-toast-close" id="langToastClose" aria-label="Dismiss">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <div class="lang-toast-body">
+            <span id="langToastMsg">Translate this page?</span>
+            <button class="lang-toast-translate-btn" id="langToastChange">Translate</button>
         </div>
     </div>
+
 
     <!-- Loading Splash Screen -->
     <div class="app-loader" id="appLoader">
