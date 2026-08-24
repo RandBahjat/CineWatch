@@ -52875,7 +52875,7 @@ window._SERIES_DATA = [
         ]
       }
       {
-        season: 1,
+        season: 2,
         episodes: [
           { episode: 1, title: "Romance Dawn" },
           { episode: 2, title: "The Man in the Straw Hat" },
