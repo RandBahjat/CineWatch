@@ -10593,7 +10593,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gpHuW2shQwknL5ZaEk3LE8bX1tL.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/aFp8qPEyS9KySE4NNPlpo9Z3sA8.jpg",
-    videoUrl: "",
+    videoUrl: "373",
     overview: "Twenty years after breaking out of Impel Down, legendary pirate Shiki the Golden Lion resurfaces with a scheme to bring the World Government to its knees. Impressed by Nami's weather-reading skill, he kidnaps her to force her into his crew — leaving Luffy and the gang to chase him down through a strange land crawling with monstrous beasts.",
     director: "Munehisa Sakai",
     cast: [
