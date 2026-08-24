@@ -6029,7 +6029,7 @@ window._ANIME_DATA = [
         ]
       }
     ]
-  }
+  },
 
 {
     "title": "Dragon Ball Z",
