@@ -3795,11 +3795,11 @@ function buildAnimeEmbedUrl(data, isDub) {
       return `https://vidsrc.me/embed/movie?tmdb=${data.id}&ds_lang=en`;
     }
   } else {
-    // For SUB, embed.su is highly reliable and defaults to Japanese audio with English subs
+    // For SUB, vidlink.pro has a beautiful UI, defaults to Japanese audio, and we can theme it red to match the site
     if (data.type === 'tv') {
-      return `https://embed.su/embed/tv/${data.id}/${data.season}/${data.episode}`;
+      return `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=e50914&autoplay=false`;
     } else {
-      return `https://embed.su/embed/movie/${data.id}`;
+      return `https://vidlink.pro/movie/${data.id}?primaryColor=e50914&autoplay=false`;
     }
   }
 }
