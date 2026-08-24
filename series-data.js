@@ -52866,7 +52866,7 @@ window._SERIES_DATA = [
         episodes: [
           { episode: 1, title: "Romance Dawn" },
           { episode: 2, title: "The Man in the Straw Hat" },
-          { episode: 3, title: "Act of God Business" },
+          { episode: 3, title: "Tell No Tales" },
           { episode: 4, title: "Start With a Bullet" },
           { episode: 5, title: "Peaceful Find Peace" },
           { episode: 6, title: "A Cowboy Saint" },
