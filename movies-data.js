@@ -10630,6 +10630,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "One Piece: Episode of Skypiea",
+    type: "Movie",
+    year: 2018,
+    rating: 6.7,
+    age: "TV-14",
+    duration: "1h 47m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/whvgyEpPqvKXP0vZE4PMkoUmRqb.jpg",
+    backdrop: "https://images2.alphacoders.com/931/thumb-1920-931970.jpg",
+    videoUrl: "545742",
+    overview: "The Straw Hats embark on a dangerous trip to the sky, where their destination comes straight out of a fairytale — the island of Skypiea and its grand city of gold await among the clouds. But a clash of winged clans and a man who calls himself God won't make things easy; only Luffy can resist this God's mighty power and light the mysteries of the past.",
+    director: "Tetsuya Endo",
+    cast: [
+      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami)"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
