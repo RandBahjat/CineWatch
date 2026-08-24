@@ -10798,7 +10798,7 @@ window._MOVIES_DATA = [
     year: 2014,
     rating: 7.5,
     age: "TV-PG",
-    duration: "1h 46m",
+    duration: "1h 48m",
     genres: [
       "Action",
       "Animation",
