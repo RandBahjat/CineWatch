@@ -1663,7 +1663,24 @@ function openDetailsModal(movieId) {
     const tvSection = document.getElementById("tvShowSection");
     const playBtn = document.getElementById("detailsPlayBtn");
 
+    // ── Anime Server Selector on Detail Page ─────────────────────────────────
+    const animeDetailServerWrap = document.getElementById("animeDetailServerWrap");
+    if (animeDetailServerWrap) {
+      const isAnimeShow = !!(movie.isAnime || movie.type === 'Anime');
+      animeDetailServerWrap.classList.toggle('hidden', !isAnimeShow);
 
+      if (isAnimeShow) {
+        const savedServer = localStorage.getItem('animeServer') || 'vidlink-sub';
+        animeDetailServerWrap.querySelectorAll('.anime-detail-server-btn').forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.server === savedServer);
+          btn.onclick = () => {
+            localStorage.setItem('animeServer', btn.dataset.server);
+            animeDetailServerWrap.querySelectorAll('.anime-detail-server-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+          };
+        });
+      }
+    }
 
     if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
       tvSection.classList.remove("hidden");
