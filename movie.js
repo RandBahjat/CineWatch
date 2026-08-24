@@ -56,6 +56,15 @@ function translateGenre(genre) {
   return genre;
 }
 
+function formatRating(rating) {
+  const num = parseFloat(rating).toFixed(1);
+  const cookies = document.cookie || '';
+  const isSorani = cookies.includes('googtrans=/en/ckb');
+  if (!isSorani) return num;
+  // Convert to Kurdish / Eastern-Arabic numerals: ٠١٢٣٤٥٦٧٨٩
+  return num.replace(/[0-9]/g, d => '٠١٢٣٤٥٦٧٨٩'[d]);
+}
+
 async function loadMediaFromAPI() {
   try {
     // 1. Load media from local JS files instead of Supabase per user preference
