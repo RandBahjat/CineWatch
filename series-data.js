@@ -52851,7 +52851,7 @@ window._SERIES_DATA = [
     rating: 8.3,
     age: "TV-14",
     genres: ["Action", "Adventure","Comedy","Fantasy"],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
+    poster: "https://image.tmdb.org/t/p/original/yEtSBgugED8XyhqjcKgF6j2zDMf.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/wowtdtDM980GjuxCXJY4seeqP2O.jpg",
     videoUrl: "299167",
     overview: "Beth Dutton, Rip Wheeler gamble everything on new life in South Texas, but promise of building future far from ghost of Yellowstone quickly collide with brutal new reality, rival ranch that stop at nothing protect its empire.",
