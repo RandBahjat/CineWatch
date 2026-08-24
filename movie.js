@@ -1614,7 +1614,6 @@ window.deleteComment = async function(commentId, movieId) {
     alert('Failed to delete: ' + (error || 'Unknown error'));
   }
 };
-}
 
 window.submitComment = async function(movieId) {
   const textInput = document.getElementById('newCommentText');
