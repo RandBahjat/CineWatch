@@ -10792,6 +10792,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "One Piece Episode of East Blue",
+    type: "Movie",
+    year: 2017,
+    rating: 7.2,
+    age: "TV-14",
+    duration: "1h 46m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Comedy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/mRy1D3wVL1AjR1Czp2WY90CCzPY.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/xSvFPxS4JR2G6oRmgmeq9oSIJR4.jpg",
+    videoUrl: "541867",
+    overview: "Experience the inspiring moments that launched Luffy and the first four members of his crew on their grand adventure to find the One Piece — from Shanks giving Luffy the straw hat, to Nami facing the Fish-Men at her hometown. Zoro finds his swordsman's zeal, Usopp pays for his pranks, and Sanji sizzles up the Baratie, all in the waters where it began.",
+    director: "Takashi Otsuka",
+    cast: [
+      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami)"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
