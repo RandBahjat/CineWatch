@@ -10674,7 +10674,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8tqXFF48K3AB089yAmMA4ENzyor.jpg",
     backdrop: "https://occ-0-2219-2218.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABb5euxszRm0NUiAX9ys35taWOTzzU1SjEbkCGg0dNr8N5zB1rggPyBqsAgzlbspbWA2BO_Z_Bcl761DKOe0CEvMhVfJ1IB9pBS3A.jpg?r=2ba",
     videoUrl: "760048",
-    overview: "The International Gourmet Organization hosts a no-rules eating tournament, with rare Carat Sizzled Cattle as the prize. Toriko, Luffy and his Straw Hat crew, and Goku all enter the race — and when the competition turns to combat, Luffy activates Gear Third, Goku transforms Super Saiyan 2, and Toriko unleashes a monstrous new technique, in the first-ever team-up of these three worlds.",
+    overview: "The Straw Hat Pirates are on a quest to save the desert kingdom of Alabasta. A civil war brews among the sands, one started and stirred by Crocodile and his corrupted Baroque Works gang. The stakes run ever higher as Princess Vivi's homeland threatens to tear itself apart.",
     director: "Hiroaki Miyamoto, Akifumi Zako",
     cast: [
       "Mayumi Tanaka (Luffy), Masako Nozawa (Goku), Ryotaro Okiayu (Toriko)"
