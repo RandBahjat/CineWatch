@@ -10852,7 +10852,7 @@ window._MOVIES_DATA = [
     year: 2003,
     rating: 6.8,
     age: "TV-PG",
-    duration: "1h 53m",
+    duration: "46m",
     genres: [
       "Action",
       "Animation",
