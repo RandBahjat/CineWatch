@@ -10874,7 +10874,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "One Piece Special: Protect! The Last Great Stage",
+    title: "One Piece Film Gold: Episode 0",
     type: "Movie",
     year: 2003,
     rating: 6.8,
