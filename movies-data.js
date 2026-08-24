@@ -10608,7 +10608,7 @@ window._MOVIES_DATA = [
     title: "One Piece: Episode of Skypiea",
     type: "Movie",
     year: 2018,
-    rating: 6.6,
+    rating: 6.7,
     age: "TV Movie",
     duration: "1h 46m",
     genres: [
