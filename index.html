@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260822_2942">
+    <link rel="stylesheet" href="movie.css?v=20260822_2943">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows ΓÇö all in one simple, easy-to-use site.</title>
@@ -17,9 +17,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_1910"></script>
-    <script src="series-data.js?v=20260818_1910"></script>
-    <script src="anime-data.js?v=20260818_1910"></script>
+    <script src="movies-data.js?v=20260818_1911"></script>
+    <script src="series-data.js?v=20260818_1911"></script>
+    <script src="anime-data.js?v=20260818_1911"></script>
     <script src="movie.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1377,6 +1377,35 @@
                 if (filterOptAll) filterOptAll.textContent = 'أفلام ومسلسلات';
                 if (filterOptMovie) filterOptMovie.textContent = 'أفلام فقط';
                 if (filterOptSeries) filterOptSeries.textContent = 'مسلسلات فقط';
+            } else {
+                if (loginPwLabel) loginPwLabel.textContent = 'Password';
+                if (signupPwLabel) signupPwLabel.textContent = 'Password';
+                if (loginPwInput) loginPwInput.placeholder = '••••••••';
+                if (signupPwInput) signupPwInput.placeholder = '••••••••';
+                if (signupEmailLabel) signupEmailLabel.textContent = 'Email Address';
+                if (textTabSignup) textTabSignup.textContent = 'Create Account';
+                if (textBtnSignup) textBtnSignup.textContent = 'Create Account';
+                if (signupEmailInput) signupEmailInput.placeholder = 'Email';
+                if (labelDirector) labelDirector.textContent = 'Director:';
+                if (labelCast) labelCast.textContent = 'Cast:';
+                if (navSeries1) navSeries1.textContent = 'Series';
+                if (navSeries2) navSeries2.textContent = 'Series';
+                if (navHome1) navHome1.textContent = 'Home';
+                if (navHome2) navHome2.textContent = 'Home';
+                if (navMovies1) navMovies1.textContent = 'Movies';
+                if (navMovies2) navMovies2.textContent = 'Movies';
+                if (navAnime1) navAnime1.textContent = 'Anime';
+                if (navAnime2) navAnime2.textContent = 'Anime';
+                if (filterBtnText) filterBtnText.textContent = 'Movies & Series';
+                if (filterOptAll) filterOptAll.textContent = 'Movies & Series';
+                if (filterOptMovie) filterOptMovie.textContent = 'Movies Only';
+                if (filterOptSeries) filterOptSeries.textContent = 'Series Only';
+                document.querySelectorAll('.browse-filter-btn[data-genre="Fantasy"]').forEach(btn => btn.textContent = 'Fantasy');
+                document.querySelectorAll('.report-text').forEach(el => el.textContent = 'Report');
+                const detailsReportBtn = document.getElementById('detailsReportBtn');
+                if (detailsReportBtn) detailsReportBtn.textContent = 'Report';
+                const submitReportText = document.getElementById('submitReportText');
+                if (submitReportText) submitReportText.textContent = 'Submit Report';
             }
 
             // Setup Custom Dropdown
