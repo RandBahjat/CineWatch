@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260822_2513">
+    <link rel="stylesheet" href="movie.css?v=20260822_2514">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -17,8 +17,8 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_1481"></script>
-    <script src="series-data.js?v=20260818_1481"></script>
+    <script src="movies-data.js?v=20260818_1482"></script>
+    <script src="series-data.js?v=20260818_1482"></script>
     <script src="movie.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1165,44 +1165,78 @@
 
         // Custom Dropdown Logic
         document.addEventListener('DOMContentLoaded', () => {
-            // Language Auto-Detect & Toast Logic
-            if (!document.cookie.includes('googtrans=') && !localStorage.getItem('langPromptShown')) {
-                const userLang = navigator.language || navigator.userLanguage || '';
-                
-                // If confident, set silently and reload
-                if (userLang.startsWith('ar')) {
-                    document.cookie = 'googtrans=/en/ar; path=/';
+            // ── Language Toast (Chrome-style) ──────────────────────────
+            (function() {
+                // Only show once per user
+                if (localStorage.getItem('langPromptShown')) return;
+
+                const LANG_MAP = {
+                    ckb: { label: 'Central Kurdish', cookie: 'googtrans=/en/ckb' },
+                    ku:  { label: 'Central Kurdish', cookie: 'googtrans=/en/ckb' },
+                    ar:  { label: 'Arabic',          cookie: 'googtrans=/en/ar'  },
+                    en:  { label: 'English',         cookie: ''                  },
+                };
+
+                const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase().split('-')[0];
+                const detected    = LANG_MAP[browserLang] || LANG_MAP['en'];
+                const isEnglish   = browserLang === 'en' || !LANG_MAP[browserLang];
+
+                // If already in that language — silent set & done
+                if (!isEnglish && !document.cookie.includes('googtrans=')) {
+                    document.cookie = detected.cookie + '; path=/';
                     localStorage.setItem('langPromptShown', 'true');
                     window.location.reload();
-                } else if (userLang.startsWith('ku') || userLang.startsWith('ckb')) {
-                    document.cookie = 'googtrans=/en/ckb; path=/';
-                    localStorage.setItem('langPromptShown', 'true');
-                    window.location.reload();
-                } else {
-                    // Ambiguous or English default -> show non-blocking toast
-                    const langToast = document.getElementById('langToast');
-                    setTimeout(() => {
-                        if (langToast) langToast.classList.add('active');
-                    }, 1000);
-                    
-                    document.getElementById('langToastDismiss')?.addEventListener('click', () => {
-                        langToast.classList.remove('active');
-                        localStorage.setItem('langPromptShown', 'true');
-                    });
-                    
-                    document.getElementById('langToastChange')?.addEventListener('click', (e) => {
-                        e.stopPropagation();
-                        langToast.classList.remove('active');
-                        localStorage.setItem('langPromptShown', 'true');
-                        // Scroll to top to ensure dropdown is visible
-                        window.scrollTo({ top: 0, behavior: 'smooth' });
-                        // Open the manual language dropdown with a slight delay
-                        setTimeout(() => {
-                            document.getElementById('customLangDropdown')?.classList.add('open');
-                        }, 300);
-                    });
+                    return;
                 }
-            }
+
+                // Build the tab labels: [detected lang]  [English]
+                const tabsEl  = document.getElementById('langToastTabs');
+                const msgEl   = document.getElementById('langToastMsg');
+                const toast   = document.getElementById('langToast');
+                if (!toast || !tabsEl) return;
+
+                const languages = isEnglish
+                    ? [{ label: 'English', active: true }, { label: 'Central Kurdish', cookie: 'googtrans=/en/ckb' }, { label: 'Arabic', cookie: 'googtrans=/en/ar' }]
+                    : [{ label: detected.label, active: true }, { label: 'English', cookie: '' }];
+
+                tabsEl.innerHTML = languages.map((l, i) =>
+                    `<button class="lang-toast-tab${l.active ? ' active-tab' : ''}" data-idx="${i}">${l.label}</button>`
+                ).join('');
+
+                msgEl.textContent = isEnglish ? 'Choose your language' : `Translate to ${detected.label}?`;
+
+                // Tab switching
+                tabsEl.addEventListener('click', e => {
+                    const btn = e.target.closest('.lang-toast-tab');
+                    if (!btn) return;
+                    tabsEl.querySelectorAll('.lang-toast-tab').forEach(b => b.classList.remove('active-tab'));
+                    btn.classList.add('active-tab');
+                    const idx = parseInt(btn.dataset.idx);
+                    const chosen = languages[idx];
+                    msgEl.textContent = chosen.active ? 'Choose your language' : `Translate to ${chosen.label}?`;
+                    document.getElementById('langToastChange')._chosenCookie = chosen.cookie || '';
+                });
+
+                // Translate button
+                document.getElementById('langToastChange').addEventListener('click', () => {
+                    const cookie = document.getElementById('langToastChange')._chosenCookie
+                        ?? (isEnglish ? '' : detected.cookie);
+                    if (cookie) document.cookie = cookie + '; path=/';
+                    localStorage.setItem('langPromptShown', 'true');
+                    toast.classList.remove('active');
+                    if (cookie) setTimeout(() => window.location.reload(), 200);
+                });
+
+                // Close button
+                document.getElementById('langToastClose')?.addEventListener('click', () => {
+                    toast.classList.remove('active');
+                    localStorage.setItem('langPromptShown', 'true');
+                });
+
+                // Show after short delay
+                setTimeout(() => toast.classList.add('active'), 800);
+            })();
+
 
             const cookies = document.cookie.split(';');
             let currentLang = 'en';
