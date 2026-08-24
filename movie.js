@@ -1532,6 +1532,92 @@ function renderUserBadge() {
 // 4. MODALS (DETAILS, PLAYER, AUTH)
 // ==========================================
 
+async function renderCommentsSection(movieId) {
+  const commentsSection = document.getElementById('commentsSection');
+  const commentInputArea = document.getElementById('commentInputArea');
+  const commentsList = document.getElementById('commentsList');
+  
+  if (!commentsSection || !commentInputArea || !commentsList) return;
+  
+  // Show section
+  commentsSection.style.display = 'block';
+  
+  // Render Input Area based on Auth State
+  if (state.user) {
+    commentInputArea.classList.remove('locked');
+    commentInputArea.innerHTML = `
+      <textarea id="newCommentText" placeholder="Write a comment..." rows="3"></textarea>
+      <button class="post-comment-btn" id="postCommentBtn" onclick="submitComment('${movieId}')">
+        Post Comment
+      </button>
+    `;
+  } else {
+    commentInputArea.classList.add('locked');
+    commentInputArea.innerHTML = `
+      <div style="color: rgba(255,255,255,0.7); margin-bottom: 1rem;">You must be logged in to post a comment.</div>
+      <button class="post-comment-btn" onclick="openAuthModal()" style="align-self: center;">Log In or Sign Up</button>
+    `;
+  }
+
+  // Show loading state
+  commentsList.innerHTML = `<div class="loading-spinner" style="margin: 2rem auto;"></div>`;
+
+  // Fetch comments
+  const { data, error } = await window.CW_API.getComments(movieId);
+  
+  if (error) {
+    commentsList.innerHTML = `<div class="no-comments">Failed to load comments.</div>`;
+    return;
+  }
+
+  if (!data || data.length === 0) {
+    commentsList.innerHTML = `<div class="no-comments">No comments yet. Be the first!</div>`;
+    return;
+  }
+
+  // Render comments
+  commentsList.innerHTML = data.map(comment => `
+    <div class="comment-item">
+      <div class="comment-avatar">${comment.avatar || '🎬'}</div>
+      <div class="comment-content">
+        <div class="comment-header">
+          <span class="comment-author">${comment.username}</span>
+          <span class="comment-date">${new Date(comment.created_at).toLocaleDateString()}</span>
+        </div>
+        <div class="comment-text">${comment.content.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+window.submitComment = async function(movieId) {
+  const textInput = document.getElementById('newCommentText');
+  const postBtn = document.getElementById('postCommentBtn');
+  const content = textInput ? textInput.value.trim() : '';
+  
+  if (!content) return;
+  
+  if (postBtn) {
+    postBtn.disabled = true;
+    postBtn.innerHTML = 'Posting...';
+  }
+  
+  const { success, error } = await window.CW_API.postComment(movieId, content);
+  
+  if (success) {
+    if (textInput) textInput.value = '';
+    // Re-render to show the new comment
+    await renderCommentsSection(movieId);
+  } else {
+    alert('Failed to post comment: ' + (error || 'Unknown error'));
+  }
+  
+  if (postBtn) {
+    postBtn.disabled = false;
+    postBtn.innerHTML = 'Post Comment';
+  }
+};
+
 function openDetailsModal(movieId) {
   const movie = MOVIES.find((m) => m.id === movieId);
   if (!movie) return;
@@ -1636,6 +1722,9 @@ function openDetailsModal(movieId) {
     if (typeof initializeRatingSystem === 'function') {
       initializeRatingSystem(movie.id);
     }
+
+    // Render Comments Section
+    renderCommentsSection(movie.id);
 
     // Generate You May Like Section
     const similarsGrid = document.getElementById("detailsSimilarsGrid");
