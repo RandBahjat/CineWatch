@@ -10515,7 +10515,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9PgiOFTLZXP7emlwcIt0yRasJ9h.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/9EfmaA6S9p33rqt3RybcLRfOUMr.jpg",
-    videoUrl: "374",
+    videoUrl: "374205",
     overview: "Straw Hats sail into the dangerous New World, chasing rumors of the Pirate King's lost treasure. There they clash with Z, a former Marine admiral with an arm made of Seastone, who's stolen a set of world-ending weapons called Dyna Stones — determined to wipe out piracy for good, whatever the cost.",
     director: "Tatsuya Nagamine",
     cast: [
