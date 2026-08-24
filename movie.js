@@ -3787,12 +3787,20 @@ document.addEventListener("DOMContentLoaded", () => { initApp(); trackVisit(); }
 window.currentIframeData = null;
 
 function buildAnimeEmbedUrl(data, isDub) {
-  // embed.su usually defaults to Japanese with english subs for anime.
-  // We can pass different servers or parameters if needed, but the base URL works well.
-  if (data.type === 'tv') {
-    return `https://embed.su/embed/tv/${data.id}/${data.season}/${data.episode}`;
+  if (isDub) {
+    // For DUB, vidsrc.me with ds_lang=en is reliable for English audio
+    if (data.type === 'tv') {
+      return `https://vidsrc.me/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}&ds_lang=en`;
+    } else {
+      return `https://vidsrc.me/embed/movie?tmdb=${data.id}&ds_lang=en`;
+    }
   } else {
-    return `https://embed.su/embed/movie/${data.id}`;
+    // For SUB, embed.su is highly reliable and defaults to Japanese audio with English subs
+    if (data.type === 'tv') {
+      return `https://embed.su/embed/tv/${data.id}/${data.season}/${data.episode}`;
+    } else {
+      return `https://embed.su/embed/movie/${data.id}`;
+    }
   }
 }
 
