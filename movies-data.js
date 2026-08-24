@@ -10459,7 +10459,7 @@ window._MOVIES_DATA = [
       "Animation",
       "Adventure",
       "Fantasy",
-      
+      "Musical"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/mrphHnLo1ywe7yGcA5WhYlx9v3n.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rNYhGQ9O4a3DJsbjfBO3DNfdHv6.jpg",
