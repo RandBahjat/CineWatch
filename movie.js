@@ -3787,11 +3787,12 @@ document.addEventListener("DOMContentLoaded", () => { initApp(); trackVisit(); }
 window.currentIframeData = null;
 
 function buildAnimeEmbedUrl(data, isDub) {
-  const lang = isDub ? 'dub' : 'sub';
+  // embed.su usually defaults to Japanese with english subs for anime.
+  // We can pass different servers or parameters if needed, but the base URL works well.
   if (data.type === 'tv') {
-    return `https://vidsrc.me/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}&ds_lang=${isDub ? 'en' : 'ja'}`;
+    return `https://embed.su/embed/tv/${data.id}/${data.season}/${data.episode}`;
   } else {
-    return `https://vidsrc.me/embed/movie?tmdb=${data.id}&ds_lang=${isDub ? 'en' : 'ja'}`;
+    return `https://embed.su/embed/movie/${data.id}`;
   }
 }
 
