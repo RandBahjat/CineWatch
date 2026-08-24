@@ -10500,6 +10500,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "One Piece Film: Z",
+    type: "Movie",
+    year: 2012,
+    rating: 7.7,
+    age: "TV-14",
+    duration: "1h 48m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dd0HwfxstffjRgbBcQvtw3uqS6O.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/59M1aPwmaVvzZ5KR6dagkC3pUb7.jpg",
+    videoUrl: "176983",
+    overview: "Straw Hats sail into the dangerous New World, chasing rumors of the Pirate King's lost treasure. There they clash with Z, a former Marine admiral with an arm made of Seastone, who's stolen a set of world-ending weapons called Dyna Stones — determined to wipe out piracy for good, whatever the cost.",
+    director: "Tatsuya Nagamine",
+    cast: [
+      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), Hochu Otsuka (Z)"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
