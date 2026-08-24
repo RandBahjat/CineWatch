@@ -3817,19 +3817,10 @@ function updateIframeServer() {
   const isAnime = !!(refMovie?.isAnime || refMovie?.type === 'Anime');
 
   let newUrl = '';
-  if (isAnime) {
-    // Keep vidsrc.sbs as the only server for Anime
-    if (data.type === 'tv') {
-      newUrl = `https://vidsrc.sbs/embed/tv/${data.id}/${data.season}/${data.episode}`;
-    } else {
-      newUrl = `https://vidsrc.sbs/embed/movie/${data.id}`;
-    }
-  } else if (data.type === 'tv') {
-    // Restore vaplayer.ru for regular TV series
-    newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}?skin=netflix&color=e50914`;
+  if (data.type === 'tv') {
+    newUrl = `https://vidsrc.sbs/embed/tv/${data.id}/${data.season}/${data.episode}`;
   } else {
-    // Restore vaplayer.ru for regular Movies
-    newUrl = `https://vaplayer.ru/embed/movie/${data.id}?skin=netflix&color=e50914`;
+    newUrl = `https://vidsrc.sbs/embed/movie/${data.id}`;
   }
 
   iframe.onload = () => {
