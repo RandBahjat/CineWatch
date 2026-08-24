@@ -10658,6 +10658,34 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Dream 9 Toriko x One Piece x Dragon Ball Z Super Collaboration Special!!",
+    type: "Movie",
+    year: 2013,
+    rating: 6.3,
+    age: "TV-PG",
+    duration: "43m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Comedy",
+      "Crossover"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nyXB28bVUcdWQ3CG8z4cy6BWhJs.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/qLfL9tLekOvDNLvWrnJ6jTlsugt.jpg",
+    videoUrl: "188070",
+    overview: "The International Gourmet Organization hosts a no-rules eating tournament, with rare Carat Sizzled Cattle as the prize. Toriko, Luffy and his Straw Hat crew, and Goku all enter the race — and when the competition turns to combat, Luffy activates Gear Third, Goku transforms Super Saiyan 2, and Toriko unleashes a monstrous new technique, in the first-ever team-up of these three worlds.",
+    director: "Hiroaki Miyamoto, Akifumi Zako",
+    cast: [
+      "Mayumi Tanaka (Luffy), Masako Nozawa (Goku), Ryotaro Okiayu (Toriko)"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
