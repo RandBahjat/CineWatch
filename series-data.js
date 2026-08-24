@@ -52884,7 +52884,7 @@ window._SERIES_DATA = [
           { episode: 5, title: "Wax On, Wax Off" },
           { episode: 6, title: "Nami Deerest" },
           { episode: 7, title: "Reindeer Shames" },
-          { episode: 8, title: "Worst in the East" },
+          { episode: 8, title: "Deer and Loathing in Drum Kingdom" },
         ]
       }
     ]
