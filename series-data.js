@@ -52854,7 +52854,7 @@ window._SERIES_DATA = [
     poster: "https://image.tmdb.org/t/p/original/yEtSBgugED8XyhqjcKgF6j2zDMf.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qD211Hb5XwFxrszzBBe5EUYJerh.jpg",
     videoUrl: "111110",
-    overview: "Beth Dutton, Rip Wheeler gamble everything on new life in South Texas, but promise of building future far from ghost of Yellowstone quickly collide with brutal new reality, rival ranch that stop at nothing protect its empire.",
+    overview: "Live action show based on legendary manga. Young stretchy boy Monkey D. Luffy set sail to assemble pirate crew. Together Straw Hat crew search dangerous ocean for grand treasure left by Gold Roger so Luffy become King of Pirates.",
     director: "Chad Feehan",
     cast: ["Kelly Reilly, Cole Hauser, Ed Harris, Annette Bening, Finn Little, Jai Courtney"],
     trending: false,
