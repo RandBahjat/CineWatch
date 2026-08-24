@@ -10931,7 +10931,7 @@ window._MOVIES_DATA = [
     title: "One Piece Episode of Sabo: The Three Brothers' Bond - The Miraculous Reunion and the Inherited Will",
     type: "Movie",
     year: 2015,
-    rating: 7.8,
+    rating: 7.3,
     age: "TV-PG",
     duration: "1h 44m",
     genres: [
