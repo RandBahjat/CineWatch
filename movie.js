@@ -1670,7 +1670,7 @@ function openDetailsModal(movieId) {
       animeDetailServerWrap.classList.toggle('hidden', !isAnimeShow);
 
       if (isAnimeShow) {
-        const savedServer = localStorage.getItem('animeServer') || 'miruro-sub';
+        const savedServer = localStorage.getItem('animeServer') || 'vidlink-sub';
         animeDetailServerWrap.querySelectorAll('.anime-detail-server-btn').forEach(btn => {
           btn.classList.toggle('active', btn.dataset.server === savedServer);
           btn.onclick = () => {
@@ -3912,7 +3912,7 @@ function updateIframeServer() {
 // Wire up anime server dropdown
 document.getElementById('animeServerSelect')?.addEventListener('change', () => {
   const select = document.getElementById('animeServerSelect');
-  const serverMode = select?.value || 'miruro-sub';
+  const serverMode = select?.value || 'vidlink-sub';
   // Persist the user's choice
   localStorage.setItem('animeServer', serverMode);
   if (!window.currentIframeData) return;
