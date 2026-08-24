@@ -10478,7 +10478,7 @@ window._MOVIES_DATA = [
     title: "One Piece Film: Z",
     type: "Movie",
     year: 2012,
-    rating: 6.7,
+    rating: 7.7,
     age: "PG-13",
     duration: "1h 55m",
     genres: [
