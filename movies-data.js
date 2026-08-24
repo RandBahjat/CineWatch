@@ -10487,7 +10487,7 @@ window._MOVIES_DATA = [
       "Adventure",
       "Fantasy"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8ibfhe4P7rhmn3lrPhOZzIJHA2B.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dd0HwfxstffjRgbBcQvtw3uqS6O.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ixrYaoKtLO6HpciDbb4QGj3D3tT.jpg",
     videoUrl: "900667",
     overview: "Uta, world's most celebrated singer, hide secret — she's Shanks' daughter. She hold concert, gather huge crowd including Straw Hat crew, but her true past + hidden power threaten to unravel everything.",
