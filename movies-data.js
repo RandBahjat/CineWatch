@@ -10621,7 +10621,7 @@ window._MOVIES_DATA = [
     backdrop: "https://images2.alphacoders.com/931/thumb-1920-931970.jpg",
     videoUrl: "545742",
     overview: "The Straw Hats embark on a dangerous trip to the sky, where their destination comes straight out of a fairytale — the island of Skypiea and its grand city of gold await among the clouds. But a clash of winged clans and a man who calls himself God won't make things easy; only Luffy can resist this God's mighty power and light the mysteries of the past.",
-    director: "Konosuke Uda",
+    director: "Tetsuya Endo",
     cast: [
       "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami)"
     ],
