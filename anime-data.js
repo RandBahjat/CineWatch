@@ -30,7 +30,7 @@ window._ANIME_DATA = [
       "Hiroaki Hirata"
     ],
     "trending": true,
-    "featured": true,
+    "featured": false,
     "is4k": false,
     "seasons": [
       {
