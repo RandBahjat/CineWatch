@@ -10888,7 +10888,7 @@ window._MOVIES_DATA = [
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wPBFqO9zeSjX3bK9NMvhm9xL1Le.jpg",
-    backdrop: "https://images.plex.tv/photo?size=large-1920&scale=1&url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2F6Sa3iAcZcPW1mM35112m9hXHHLh.jpg",
+    backdrop: "https://m.media-amazon.com/images/M/MV5BMDg3ZTIzNDItOWYxMC00ZDM0LTg2OWYtODg2ZjkwNWZmNzUxXkEyXkFqcGc@._V1_.jpg",
     videoUrl: "364728",
     overview: "Straw Hat Pirates visit famous floating theater ship Randolph to watch final play of beloved aging actor. Before curtain fall, corrupt marine officer Randolph once served interrupts performance to arrest old actor on fake charges. Luffy and crew step in to defend theater ship, defeat corrupt marines, and make sure final bow goes on as planned.",
     director: "Junji Shimizu",
