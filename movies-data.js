@@ -10633,8 +10633,8 @@ window._MOVIES_DATA = [
   {
     title: "Dream 9 Toriko x One Piece x Dragon Ball Z Super Collaboration Special!!",
     type: "Movie",
-    year: 2018,
-    rating: 6.7,
+    year: 2013,
+    rating: 6.3,
     age: "TV-14",
     duration: "1h 47m",
     genres: [
