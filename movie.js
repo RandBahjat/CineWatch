@@ -2112,8 +2112,10 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     const firstEpisode = firstSeason.episodes[0];
     if (firstEpisode) {
       const tmdbId = movie.videoUrl || movie.cinesrcId || movie.id;
+      const absEp = firstEpisode.absoluteEpisode || '';
+      const aniId = movie.anilistId || '';
       openVideoPlayerWithUrl(
-        firstEpisode.videoUrl || `tv_embed:${tmdbId}:${firstSeason.season}:${firstEpisode.episode}`,
+        firstEpisode.videoUrl || `tv_embed:${tmdbId}:${firstSeason.season}:${firstEpisode.episode}:${absEp}:${aniId}`,
         `${movie.title} - S${firstSeason.season} E${firstEpisode.episode}`,
         movieId,
         { ...firstEpisode, season: firstSeason.season }
