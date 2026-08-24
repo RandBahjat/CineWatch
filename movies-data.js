@@ -10675,7 +10675,7 @@ window._MOVIES_DATA = [
     backdrop: "https://occ-0-2219-2218.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABb5euxszRm0NUiAX9ys35taWOTzzU1SjEbkCGg0dNr8N5zB1rggPyBqsAgzlbspbWA2BO_Z_Bcl761DKOe0CEvMhVfJ1IB9pBS3A.jpg?r=2ba",
     videoUrl: "760048",
     overview: "The Straw Hat Pirates are on a quest to save the desert kingdom of Alabasta. A civil war brews among the sands, one started and stirred by Crocodile and his corrupted Baroque Works gang. The stakes run ever higher as Princess Vivi's homeland threatens to tear itself apart.",
-    director: "Hiroaki Miyamoto, Akifumi Zako",
+    director: "Takahiro Imamura",
     cast: [
       "Mayumi Tanaka (Luffy), Masako Nozawa (Goku), Ryotaro Okiayu (Toriko)"
     ],
