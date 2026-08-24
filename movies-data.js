@@ -10927,6 +10927,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "One Piece Episode of Nami: Tears of a Navigator and the Bonds of Friends ",
+    type: "Movie",
+    year: 2012,
+    rating: 7.8,
+    age: "TV-PG",
+    duration: "1h 44m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy",
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wPBFqO9zeSjX3bK9NMvhm9xL1Le.jpg",
+    backdrop: "https://m.media-amazon.com/images/M/MV5BMDg3ZTIzNDItOWYxMC00ZDM0LTg2OWYtODg2ZjkwNWZmNzUxXkEyXkFqcGc@._V1_.jpg",
+    videoUrl: "215180",
+    overview: "Remake special retelling Arlong Park arc. Navigator Nami leaves Straw Hat crew to return home to Cocoyasi Village. Luffy and friends follow Nami, discovering she works for tyrannical fishman Arlong to buy back village freedom. When Arlong betrays deal, Nami asks Luffy for help, leading to grand battle to liberate village and secure Nami place as crew navigator.",
+    director: "Katsumi Tokoro",
+    cast: [
+      "Mayumi Tanaka, Kazuya Nakai, Akemi Okamura, Kappei Yamaguchi, Hiroaki Hirata, Jurota Kosugi"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
