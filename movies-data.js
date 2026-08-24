@@ -10506,7 +10506,7 @@ window._MOVIES_DATA = [
     year: 2016,
     rating: 7.1,
     age: "TV-14",
-    duration: "1h 48m",
+    duration: "2h 4m",
     genres: [
       "Action",
       "Animation",
