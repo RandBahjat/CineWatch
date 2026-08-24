@@ -6366,6 +6366,7 @@ body.rtl-layout .account-side-panel.open {
   overflow-y: auto;
   padding-right: 8px;
   scroll-behavior: smooth;
+  margin-top: 1.5rem;
 }
 
 .comments-list::-webkit-scrollbar {
@@ -6411,6 +6412,7 @@ body.rtl-layout .account-side-panel.open {
   padding: 1rem;
   border-radius: 0 12px 12px 12px;
   border: 1px solid rgba(255,255,255,0.05);
+  border-left: 3px solid rgba(229, 9, 20, 0.7);
 }
 
 .comment-header {
