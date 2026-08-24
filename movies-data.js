@@ -10677,7 +10677,7 @@ window._MOVIES_DATA = [
     overview: "The Straw Hat Pirates are on a quest to save the desert kingdom of Alabasta. A civil war brews among the sands, one started and stirred by Crocodile and his corrupted Baroque Works gang. The stakes run ever higher as Princess Vivi's homeland threatens to tear itself apart.",
     director: "Takahiro Imamura",
     cast: [
-      "Mayumi Tanaka (Luffy), Masako Nozawa (Goku), Ryotaro Okiayu (Toriko)"
+      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), Kappei Yamaguchi (Usopp), Hiroaki Hirata (Sanji)"
     ],
     trending: false,
     featured: false,
