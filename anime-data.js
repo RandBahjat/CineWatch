@@ -6035,7 +6035,7 @@ window._ANIME_DATA = [
     "title": "Dragon Ball Z",
     "type": "TV Show",
     "isAnime": true,
-    "year": 1999,
+    "year": 1996,
     "rating": 9,
     "age": "TV-14",
     "duration": "24m",
