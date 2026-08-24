@@ -10811,7 +10811,7 @@ window._MOVIES_DATA = [
     overview: "Set during the two-year gap before the Straw Hats reunite at Sabaody, Luffy trains in Rusukaina to grow strong enough for the New World — but the training gets interrupted when Boa Hancock's sisters are kidnapped by Byrnndi World, an escaped Impel Down prisoner using them as bait to trap Hancock and strike at the World Government. Luffy and Hancock set out together to save them.",
     director: "Naoyuki Ito",
     cast: [
-      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami)"
+      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami), Toshio Furukawa (Ace)"
     ],
     trending: false,
     featured: false,
