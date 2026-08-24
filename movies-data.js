@@ -10779,7 +10779,7 @@ window._MOVIES_DATA = [
       "Comedy"
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/e91hSNOwrV9FvC8LyaroK8dYTlZ.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/mRy1D3wVL1AjR1Czp2WY90CCzPY.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8vDtPSj3hsrUSWyqKrtkzGezgoM.jpg",
     videoUrl: "433157",
     overview: "A girl named Myskina Olga is pursued by both the World Government and treasure hunter Mad Treasure, as she's the only one who knows the location of Pure Gold — a substance rare enough to buy the entire world. Olga ends up sailing with the Straw Hat Pirates, journeying to the lost island of Alchemi, hidden inside the stomach of a giant footballfish named Bonbori.",
