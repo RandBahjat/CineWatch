@@ -10944,7 +10944,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/yS5z6jMr5reJN6WwtBQcnKQ8b75.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/jzR5ZybOg22zpuOcOz5TxrJWXIc.jpg",
     videoUrl: "373877",
-    overview: "Remake special retelling Arlong Park arc. Navigator Nami leaves Straw Hat crew to return home to Cocoyasi Village. Luffy and friends follow Nami, discovering she works for tyrannical fishman Arlong to buy back village freedom. When Arlong betrays deal, Nami asks Luffy for help, leading to grand battle to liberate village and secure Nami place as crew navigator.",
+    overview: "Retelling of Dressrosa arc focusing on perspective of Revolutionary Army chief of staff Sabo. Explores childhood backstory of three sworn brothers Luffy, Ace, and Sabo in Goa Kingdom. Shows Sabo arrival at Corrida Colosseum, emotional reunion with Luffy, and claim of fallen brother Ace Flame-Flame Fruit to inherit his will.",
     director: "Katsumi Tokoro",
     cast: [
       "Mayumi Tanaka, Kazuya Nakai, Akemi Okamura, Kappei Yamaguchi, Hiroaki Hirata, Jurota Kosugi"
