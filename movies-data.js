@@ -10604,6 +10604,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "One Piece: Adventure of Nebulandia ",
+    type: "Movie",
+    year: 2015,
+    rating: 6.6,
+    age: "TV Movie",
+    duration: "1h 46m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Comedy"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gpHuW2shQwknL5ZaEk3LE8bX1tL.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/aFp8qPEyS9KySE4NNPlpo9Z3sA8.jpg",
+    videoUrl: "373879",
+    overview: "The Foxy Pirates challenge Luffy's crew to a rematch in the New World, but it's a trap — the Navy's most brilliant tactician steps in, and the Straw Hats find themselves stranded on Nebulandia, an island known as a death trap for Devil Fruit users. Luffy must team up with old rival Foxy for a rescue mission when Zoro, Sanji, and hostages get trapped.",
+    director: "Konosuke Uda",
+    cast: [
+      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami)"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
