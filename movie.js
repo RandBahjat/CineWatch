@@ -3818,12 +3818,9 @@ window.currentIframeData = null;
 function buildAnimeEmbedUrl(data, serverMode) {
   // serverMode: 'vidlink-sub' | 'vidsrc-jp' | 'vidsrc-en' | 'vidsrc-dub'
 
-  const absEp = data.absoluteEpisode || data.episode;
-
   if (serverMode === 'vidlink-sub') {
     // Beautiful UI
     if (data.type === 'tv') {
-      // Note: vidlink relies on TMDB, so if data.id is MAL, this may not work. 
       return `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=e50914`;
     } else {
       return `https://vidlink.pro/movie/${data.id}?primaryColor=e50914`;
@@ -3831,21 +3828,21 @@ function buildAnimeEmbedUrl(data, serverMode) {
   } else if (serverMode === 'vidsrc-dub') {
     // English dub
     if (data.type === 'tv') {
-      return `https://vidsrc.me/embed/anime?mal=${data.id}&episode=${absEp}&ds_lang=en`;
+      return `https://vidsrc.me/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}&ds_lang=en`;
     } else {
       return `https://vidsrc.me/embed/movie?tmdb=${data.id}&ds_lang=en`;
     }
   } else if (serverMode === 'vidsrc-en') {
     // English sub / dub
     if (data.type === 'tv') {
-      return `https://vidsrc.to/embed/anime?mal=${data.id}&episode=${absEp}`;
+      return `https://vidsrc.to/embed/tv/${data.id}/${data.season}/${data.episode}`;
     } else {
       return `https://vidsrc.to/embed/movie/${data.id}`;
     }
   } else {
     // Default: 'vidsrc-jp' 
     if (data.type === 'tv') {
-      return `https://vidsrc.pm/embed/anime/${data.id}/${absEp}`;
+      return `https://vidsrc.pm/embed/tv/${data.id}/${data.season}/${data.episode}`;
     } else {
       return `https://www.2embed.cc/embed/${data.id}`;
     }
