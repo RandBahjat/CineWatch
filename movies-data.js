@@ -10605,7 +10605,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "One Piece: Adventure of Nebulandia ",
+    title: "One Piece: Episode of Skypiea",
     type: "Movie",
     year: 2015,
     rating: 6.6,
