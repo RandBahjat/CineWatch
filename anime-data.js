@@ -6047,7 +6047,7 @@ window._ANIME_DATA = [
       "Fantasy"
     ],
     "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/oQ5CnVj3TRifXl2bIOri6H6rfNe.jpg",
-    "backdrop": "https://netflixjunkie-media.b-cdn.net/media/image/image_1742647488887.jpeg",
+    "backdrop": "https://image.tmdb.org/t/p/original/zOz6DeXeOhKRVGUuiK3WufLXQIB.jpg",
     "videoUrl": "12971",
     "anilistId": 21,
     "animeSlug": "one-piece",
