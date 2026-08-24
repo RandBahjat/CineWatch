@@ -10539,7 +10539,7 @@ window._MOVIES_DATA = [
       "Adventure",
       "Fantasy"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9PgiOFTLZXP7emlwcIt0yRasJ9h.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4E2lyUGLEr3yH4q6kJxPkQUhX7n.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/9EfmaA6S9p33rqt3RybcLRfOUMr.jpg",
     videoUrl: "374205",
     overview: "The glittering Gran Tesoro, a floating city of casinos and entertainment beyond government law, draws pirates, Marines, and the ultra-rich alike. Chasing dreams of hitting the jackpot, Luffy and crew sail straight into the city — but behind its gold-plated walls waits Gild Tesoro, a ruthless tycoon whose deep pockets hide even deeper ambitions.",
