@@ -10617,7 +10617,7 @@ window._MOVIES_DATA = [
       "Adventure",
       "Comedy"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gpHuW2shQwknL5ZaEk3LE8bX1tL.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/whvgyEpPqvKXP0vZE4PMkoUmRqb.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/aFp8qPEyS9KySE4NNPlpo9Z3sA8.jpg",
     videoUrl: "373879",
     overview: "The Foxy Pirates challenge Luffy's crew to a rematch in the New World, but it's a trap — the Navy's most brilliant tactician steps in, and the Straw Hats find themselves stranded on Nebulandia, an island known as a death trap for Devil Fruit users. Luffy must team up with old rival Foxy for a rescue mission when Zoro, Sanji, and hostages get trapped.",
