@@ -10671,7 +10671,7 @@ window._MOVIES_DATA = [
       "Adventure"
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nyXB28bVUcdWQ3CG8z4cy6BWhJs.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8tqXFF48K3AB089yAmMA4ENzyor.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qLfL9tLekOvDNLvWrnJ6jTlsugt.jpg",
     videoUrl: "188070",
     overview: "The International Gourmet Organization hosts a no-rules eating tournament, with rare Carat Sizzled Cattle as the prize. Toriko, Luffy and his Straw Hat crew, and Goku all enter the race — and when the competition turns to combat, Luffy activates Gear Third, Goku transforms Super Saiyan 2, and Toriko unleashes a monstrous new technique, in the first-ever team-up of these three worlds.",
