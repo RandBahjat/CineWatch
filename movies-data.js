@@ -10651,7 +10651,7 @@ window._MOVIES_DATA = [
     overview: "The International Gourmet Organization hosts a no-rules eating tournament, with rare Carat Sizzled Cattle as the prize. Toriko, Luffy and his Straw Hat crew, and Goku all enter the race — and when the competition turns to combat, Luffy activates Gear Third, Goku transforms Super Saiyan 2, and Toriko unleashes a monstrous new technique, in the first-ever team-up of these three worlds.",
     director: "Hiroaki Miyamoto, Akifumi Zako",
     cast: [
-      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Akemi Okamura (Nami)"
+      "Mayumi Tanaka (Luffy), Masako Nozawa (Goku), Ryotaro Okiayu (Toriko)"
     ],
     trending: false,
     featured: false,
