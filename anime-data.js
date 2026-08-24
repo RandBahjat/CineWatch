@@ -6047,7 +6047,7 @@ window._ANIME_DATA = [
         "Fantasy"
     ],
     "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/jZqOqD6bteT9v5g4b9zH9q6f7D9.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/zOz6DeXeOhKRVGUuiK3WufLXQIB.jpg",
     "videoUrl": "12971",
     "anilistId": 813,
     "animeSlug": "dragon-ball-z",
