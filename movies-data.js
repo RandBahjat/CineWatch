@@ -10467,7 +10467,7 @@ window._MOVIES_DATA = [
     overview: "Uta, world's most celebrated singer, hide secret — she's Shanks' daughter. She hold concert, gather huge crowd including Straw Hat crew, but her true past + hidden power threaten to unravel everything.",
     director: "Goro Taniguchi",
     cast: [
-      "Mayumi Tanaka (Luffy), Ado (singing voice Uta)"
+      "Mayumi Tanaka (Luffy), Kazuya Nakai (Zoro), Shuichi Ikeda (Shanks), Kaori Nazuka (Uta)"
     ],
     trending: false,
     featured: false,
