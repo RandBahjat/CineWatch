@@ -3845,7 +3845,7 @@ function buildAnimeEmbedUrl(data, serverMode) {
   } else {
     // Default: 'vidsrc-jp' 
     if (data.type === 'tv') {
-      return `https://vidsrc.me/embed/anime?mal=${data.id}&episode=${absEp}&ds_lang=ja`;
+      return `https://anime-z.com/embed/mal/${data.id}/${absEp}`;
     } else {
       return `https://www.2embed.cc/embed/${data.id}`;
     }
