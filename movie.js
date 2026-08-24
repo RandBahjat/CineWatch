@@ -1670,7 +1670,7 @@ function openDetailsModal(movieId) {
       animeDetailServerWrap.classList.toggle('hidden', !isAnimeShow);
 
       if (isAnimeShow) {
-        const savedServer = localStorage.getItem('animeServer') || 'vidsrc-jp';
+        const savedServer = localStorage.getItem('animeServer') || 'miruro-sub';
         animeDetailServerWrap.querySelectorAll('.anime-detail-server-btn').forEach(btn => {
           btn.classList.toggle('active', btn.dataset.server === savedServer);
           btn.onclick = () => {
@@ -3890,7 +3890,7 @@ function updateIframeServer() {
   let newUrl = '';
   if (isAnime) {
     // Restore previously selected server from localStorage
-    const savedServer = localStorage.getItem('animeServer') || 'vidsrc-jp';
+    const savedServer = localStorage.getItem('animeServer') || 'miruro-sub';
     const serverSelect = document.getElementById('animeServerSelect');
     if (serverSelect) serverSelect.value = savedServer;
     newUrl = buildAnimeEmbedUrl(data, savedServer, refMovie);
@@ -3910,7 +3910,7 @@ function updateIframeServer() {
 // Wire up anime server dropdown
 document.getElementById('animeServerSelect')?.addEventListener('change', () => {
   const select = document.getElementById('animeServerSelect');
-  const serverMode = select?.value || 'vidsrc-jp';
+  const serverMode = select?.value || 'miruro-sub';
   // Persist the user's choice
   localStorage.setItem('animeServer', serverMode);
   if (!window.currentIframeData) return;
