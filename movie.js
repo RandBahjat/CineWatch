@@ -3827,14 +3827,6 @@ function updateIframeServer() {
   const refMovie = parentMovie || selfMovie;
   const isAnime = !!(refMovie?.isAnime || refMovie?.type === 'Anime');
 
-  // Show/hide anime server dropdown
-  if (animeServerWrap) {
-    if (isAnime) {
-      animeServerWrap.classList.remove('hidden');
-    } else {
-      animeServerWrap.classList.add('hidden');
-    }
-  }
 
   let newUrl = '';
   if (isAnime) {
