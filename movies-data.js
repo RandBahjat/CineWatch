@@ -10556,7 +10556,7 @@ window._MOVIES_DATA = [
     title: "One Piece Film: Strong World",
     type: "Movie",
     year: 2009,
-    rating: 7.5,
+    rating: 7.4,
     age: "TV-14",
     duration: "1h 41m",
     genres: [
