@@ -11270,9 +11270,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Naruto Shippuden the Movie: The Will of Fire",
+    title: "Naruto the Movie: Legend of the Stone of Gelel",
     type: "Movie",
-    year: 2009,
+    year: 2005,
     rating: 7.0,
     age: "PG-13",
     duration: "1h 35m",
