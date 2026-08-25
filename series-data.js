@@ -2552,7 +2552,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 7,
-            title: 'The Devil Has Aces'
+            title: 'Episode #3.7'
           },
           {
             episode: 8,
