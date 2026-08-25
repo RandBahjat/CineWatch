@@ -11053,6 +11053,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "One Piece Episode of Sabo: The Three Brothers' Bond - The Miraculous Reunion and the Inherited Will",
+    type: "Movie",
+    year: 2015,
+    rating: 7.3,
+    age: "TV-PG",
+    duration: "1h 47m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy",
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/yS5z6jMr5reJN6WwtBQcnKQ8b75.jpg",
+    backdrop: "https://fictionhorizon.com/wp-content/uploads/2023/06/OPLuffy.jpg",
+    videoUrl: "373877",
+    overview: "Retelling of Dressrosa arc focusing on perspective of Revolutionary Army chief of staff Sabo. Explores childhood backstory of three sworn brothers Luffy, Ace, and Sabo in Goa Kingdom. Shows Sabo arrival at Corrida Colosseum, emotional reunion with Luffy, and claim of fallen brother Ace Flame-Flame Fruit to inherit his will.",
+    director: "Gō Koga",
+    cast: [
+      "Tōru Furuya, Mayumi Tanaka, Toshio Furukawa, Hiroshi Kamiya, Megumi Han, Akemi Okamura"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
