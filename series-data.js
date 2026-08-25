@@ -8623,19 +8623,19 @@ window._SERIES_DATA = [
           {
             episode: 6,
             title: 'The Town Council'
-          }
+          },
           {
             episode: 7,
             title: 'Mothers and Fathers'
-          }
+          },
           {
             episode: 8,
             title: 'Family Plot'
-          }
+          },
           {
             episode: 9,
             title: 'The Storm'
-          }
+          },
           {
             episode: 10,
             title: 'The Blue Crown'
