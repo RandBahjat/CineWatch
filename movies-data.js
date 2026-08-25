@@ -262,7 +262,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Evil Dead Burn",
+    title: "Motor City",
     type: "Movie",
     year: 2026,
     rating: 6.4,
