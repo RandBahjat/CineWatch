@@ -8581,7 +8581,7 @@ window._SERIES_DATA = [
           }
           {
             episode: 7,
-            title: 'The Dark Forest'
+            title: 'Happy Anniversary'
           }
           {
             episode: 8,
