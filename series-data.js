@@ -2487,7 +2487,7 @@ window._SERIES_DATA = [
         ]
       }
       {
-        season: 1,
+        season: 2,
         episodes: [
           {
             episode: 1,
