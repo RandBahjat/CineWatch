@@ -3931,11 +3931,11 @@ function updateIframeServer() {
 
   let newUrl = '';
   if (isAnime) {
-    // vidsrc.sbs — supports TMDB IDs natively for anime
+    // vidsrc.cc — supports TMDB IDs natively and often has Sub/Dub options
     if (data.type === 'tv') {
-      newUrl = `https://vidsrc.sbs/embed/tv/${data.id}/${data.season}/${data.episode}`;
+      newUrl = `https://vidsrc.cc/v2/embed/tv/${data.id}/${data.season}/${data.episode}`;
     } else {
-      newUrl = `https://vidsrc.sbs/embed/movie/${data.id}`;
+      newUrl = `https://vidsrc.cc/v2/embed/movie/${data.id}`;
     }
   } else if (data.type === 'tv') {
     // Restore vaplayer.ru for regular TV series
