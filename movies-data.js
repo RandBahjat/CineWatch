@@ -11350,6 +11350,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Naruto the Movie: Guardians of the Crescent Moon Kingdom",
+    type: "Movie",
+    year: 2006,
+    rating: 6.3,
+    age: "TV-14",
+    duration: "1h 35m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy",
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/mmKiJ93x6uhTwJlrxCoY38R4qo6.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/w1JPid4Wx9awVpAxcgXFlNcCrUA.jpg",
+    videoUrl: "18861",
+    overview: "Naruto team assign guard spoiled young prince of Crescent Moon Kingdom, must escort him safely home through danger-fill journey. Face group of ninja hire kill prince, learn true meaning of courage along way.",
+    director: "Toshiyuki Tsuru",
+    cast: [
+      "Junko Takeuchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue, Hidekatsu Shibata"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
