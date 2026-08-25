@@ -2503,7 +2503,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 4,
-            title: 'The Choice of Failure'
+            title: 'Five Hundred Children'
           },
           {
             episode: 5,
