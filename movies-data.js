@@ -11326,7 +11326,7 @@ window._MOVIES_DATA = [
   {
     title: "Naruto the Movie: Guardians of the Crescent Moon Kingdom",
     type: "Movie",
-    year: 2004,
+    year: 2006,
     rating: 6.6,
     age: "TV-14",
     duration: "1h 22m",
