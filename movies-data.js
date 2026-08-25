@@ -11433,7 +11433,7 @@ window._MOVIES_DATA = [
     year: 2019,
     rating: 6.6,
     age: "R",
-    duration: "1h 54m",
+    duration: "1h 53m",
     genres: [
       "Crime",
       "Thriller",
