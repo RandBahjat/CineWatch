@@ -8488,19 +8488,19 @@ window._SERIES_DATA = [
           {
             episode: 6,
             title: 'Parcel 9'
-          }
+          },
           {
             episode: 7,
             title: 'Dead Calm'
-          }
+          },
           {
             episode: 8,
             title: 'The Runway'
-          }
+          },
           {
             episode: 9,
             title: 'The Bell Tower'
-          }
+          },
           {
             episode: 10,
             title: 'The Phantom'
