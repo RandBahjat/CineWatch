@@ -8670,15 +8670,15 @@ window._SERIES_DATA = [
             title: 'The Big Easy'
           }
           {
-            episode: 6,
+            episode: 7,
+            title: 'Bal des Sauvages'
+          }
+          {
+            episode: 8,
             title: 'The Big Easy'
           }
           {
-            episode: 6,
-            title: 'The Big Easy'
-          }
-          {
-            episode: 6,
+            episode: 9,
             title: 'The Big Easy'
           }
           {
