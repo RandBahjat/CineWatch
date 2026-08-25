@@ -8408,7 +8408,7 @@ window._ANIME_DATA = [
       "Fantasy"
     ],
     poster: "https://image.tmdb.org/t/p/w600_and_h900_face/1E6gE9dE4E3oWdK1FzMhNf0c6fJ.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/9r1wUoGqM4Y14v170uN25N7hF6D.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/8lZPuGblM5Qq2W12anr53Xzn6vf.jpg",
     overview: "Ten years have passed since Goku left Earth to train Uub. However, Pilaf has returned, and this time he's stolen the Black Star Dragon Balls...",
     director: "Osamu Kasai",
     cast: [
