@@ -2544,7 +2544,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 5,
-            title: 'Shatter the Moon'
+            title: 'The Idiot Army'
           },
           {
             episode: 6,
