@@ -2478,7 +2478,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 7,
-            title: 'The Big Heat'
+            title: 'Wish the Fight Away'
           }
         ]
       }
