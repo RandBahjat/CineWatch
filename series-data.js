@@ -8528,7 +8528,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 5,
-            title: 'Episode #2.5'
+            title: 'The Darkest Hour'
           },
           {
             episode: 6,
