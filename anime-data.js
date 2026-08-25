@@ -14315,7 +14315,7 @@ window._ANIME_DATA = [
           "Fantasy"
         ],
         poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/e0B6i48kxdRkMcK4tR4YNfXGWOc.jpg",
-        backdrop: "https://image.tmdb.org/t/p/original/9JmdCGHQamcmO0mPqj8fQjZ6eQv.jpg",
+        backdrop: "https://image.tmdb.org/t/p/original/fA2ZkasP7MWEUgJelvzkjlXSoqu.jpg",
         videoUrl: "70881",
         anilistId: 97938,
         animeSlug: "boruto",
