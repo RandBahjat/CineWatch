@@ -11248,7 +11248,7 @@ window._MOVIES_DATA = [
     year: 2009,
     rating: 7.0,
     age: "PG-13",
-    duration: "1h 25m",
+    duration: "1h 35m",
     genres: [
       "Action",
       "Animation",
