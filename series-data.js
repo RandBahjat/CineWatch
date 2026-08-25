@@ -81,7 +81,7 @@ window._SERIES_DATA = [
       'Kids'
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/zCHmmoqtLsIsou866osiWtIWmoA.jpg',
-    backdrop: 'https://image.tmdb.org/t/p/original/zwocf2Q0UAcwBJ5Ck6oMxY5sJAR.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/xZs15f429HpnrlTCZyjEaqhUYyN.jpg',
     videoUrl: '125909',
     overview: 'Welcome to Gotham City, where corruption runs deep and criminals grow bolder by the night. Forged by tragedy, Bruce Wayne becomes the Batman — but his one-man crusade for justice draws unexpected allies, dangerous enemies, and consequences he never anticipated.',
     director: 'Sacha Goedegebure',
