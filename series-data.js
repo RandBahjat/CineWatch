@@ -2536,7 +2536,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 3,
-            title: 'Along Came a Spider'
+            title: 'The Bear Is Infected'
           },
           {
             episode: 4,
