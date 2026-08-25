@@ -11179,7 +11179,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/853Hj8f2d9nCSzIpYzPIxIv5uNK.jpg",
     videoUrl: "75624",
     overview: "Naruto frame for attack on Raikage, lock up in Hōzuki Castle, secret prison ran by mysterious warden. Must clear name, uncover real plot, escape before execution.",
-    director: "Hajime Kamegaki",
+    director: "Masahiko Murata",
     cast: [
       "Junko Takeuchi, Nana Mizuki, Noriaki Sugiyama, Chie Nakamura, Kazuhiko Inoue"
     ],
