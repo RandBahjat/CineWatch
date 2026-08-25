@@ -8607,7 +8607,8 @@ window._SERIES_DATA = [
           }
         ]
       },
-
+    ]
+  },
   {
     title: "The Queen's Gambit",
     type: 'TV Show',
