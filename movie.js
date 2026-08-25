@@ -1692,6 +1692,29 @@ function openDetailsModal(movieId) {
 
     document.getElementById("detailsOverview").textContent = movie.overview;
 
+    // Populate star rating display (convert 10-point to 5-star)
+    const starContainer = document.getElementById("detailsStarIcons");
+    const starValue = document.getElementById("detailsStarValue");
+    if (starContainer && starValue) {
+      const rating10 = parseFloat(movie.rating) || 0;
+      const rating5 = rating10 / 2; // Convert to 5-star scale
+      const fullStars = Math.floor(rating5);
+      const hasHalf = (rating5 - fullStars) >= 0.25 && (rating5 - fullStars) < 0.75;
+      const adjustedFull = (rating5 - fullStars) >= 0.75 ? fullStars + 1 : fullStars;
+      let starsHTML = '';
+      for (let i = 0; i < 5; i++) {
+        if (i < adjustedFull) {
+          starsHTML += '<ion-icon name="star" class="star-filled"></ion-icon>';
+        } else if (i === adjustedFull && hasHalf) {
+          starsHTML += '<ion-icon name="star-half" class="star-filled"></ion-icon>';
+        } else {
+          starsHTML += '<ion-icon name="star-outline" class="star-empty"></ion-icon>';
+        }
+      }
+      starContainer.innerHTML = starsHTML;
+      starValue.textContent = formatRating(movie.rating) + '/10';
+    }
+
     const castContainer = document.getElementById("detailsCastContainer");
     const castText = document.getElementById("detailsCastText");
     const dirContainer = document.getElementById("detailsDirectorContainer");
