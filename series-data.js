@@ -8618,7 +8618,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 5,
-            title: 'The Duel'
+            title: 'Albatross'
           },
           {
             episode: 6,
