@@ -11181,7 +11181,7 @@ window._MOVIES_DATA = [
     overview: "Naruto frame for attack on Raikage, lock up in Hōzuki Castle, secret prison ran by mysterious warden. Must clear name, uncover real plot, escape before execution.",
     director: "Masahiko Murata",
     cast: [
-      "Junko Takeuchi, Nana Mizuki, Noriaki Sugiyama, Chie Nakamura, Kazuhiko Inoue"
+      "Junko Takeuchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue, Hidekatsu Shibata"
     ],
     trending: false,
     featured: false,
