@@ -8663,7 +8663,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 5,
-            title: 'The Shock'
+            title: 'The Scytale'
           },
           {
             episode: 6,
