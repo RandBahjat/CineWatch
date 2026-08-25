@@ -11392,7 +11392,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/x1Ohy5LGhy67rRjbXUM1DNDAICA.jpg",
     videoUrl: "769",
     overview: "Henry Hill rise through ranks of mob from young age, live fast life of money, power, violence alongside Jimmy Conway, Tommy DeVito. Loyalty, greed, paranoia eat away at friendship, world start crumble around him.",
-    director: "Sergio Leone",
+    director: "Martin Scorsese",
     cast: [
       "Clint Eastwood, Eli Wallach, Lee Van Cleef, Aldo Giuffrè, Luigi Pistilli"
     ],
