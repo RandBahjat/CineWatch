@@ -11360,7 +11360,7 @@ window._MOVIES_DATA = [
     genres: [
       "Action",
       "Adventure",
-      "Fantasy",
+      "Western",
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/mmKiJ93x6uhTwJlrxCoY38R4qo6.jpg",
