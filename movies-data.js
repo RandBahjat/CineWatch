@@ -11194,7 +11194,7 @@ window._MOVIES_DATA = [
     year: 2008,
     rating: 6.8,
     age: "TV-14",
-    duration: "1h 48m",
+    duration: "1h 38m",
     genres: [
       "Action",
       "Animation",
