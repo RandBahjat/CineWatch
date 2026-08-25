@@ -7,7 +7,7 @@ window._MOVIES_DATA = [
     title: "Mutiny",
     type: "Movie",
     year: 2026,
-    rating: 7.8,
+    rating: 5.7,
     age: "R",
     duration: "1h 47m",
     genres: [
