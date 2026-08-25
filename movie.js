@@ -1605,7 +1605,6 @@ async function renderCommentsSection(movieId) {
 }
 
 window.deleteComment = async function(commentId, movieId) {
-  if (!confirm('Delete this comment?')) return;
   
   const { success, error } = await window.CW_API.deleteComment(commentId);
   if (success) {
