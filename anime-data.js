@@ -11175,7 +11175,7 @@ window._ANIME_DATA = [
         isAnime: true,
         year: 2007,
         rating: 8.7,
-        age: "TV-14",
+        age: "TV-PG",
         duration: "24m",
         genres: [
           "Animation",
