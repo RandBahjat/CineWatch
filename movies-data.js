@@ -11367,7 +11367,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/mVl1EvEnYJnTQv71nksfneyF0Yd.jpg",
     videoUrl: "429",
     overview: "Three gunslinger — one good, one bad, one just plain ugly — chase after buried Confederate gold during Civil War. Alliance shift, betrayal pile up, all lead to legendary three-way standoff.",
-    director: "Toshiyuki Tsuru",
+    director: "Sergio Leone",
     cast: [
       "Junko Takeuchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue, Hidekatsu Shibata"
     ],
