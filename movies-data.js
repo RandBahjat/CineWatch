@@ -11243,9 +11243,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Naruto Shippuden the Movie: The Lost Tower",
+    title: "Naruto Shippuden the Movie: The Will of Fire",
     type: "Movie",
-    year: 2010,
+    year: 2009,
     rating: 6.8,
     age: "TV-PG",
     duration: "1h 25m",
