@@ -11302,7 +11302,7 @@ window._MOVIES_DATA = [
     year: 2004,
     rating: 6.6,
     age: "TV-14",
-    duration: "1h 37m",
+    duration: "1h 22m",
     genres: [
       "Action",
       "Animation",
