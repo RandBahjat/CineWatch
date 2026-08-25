@@ -11262,7 +11262,7 @@ window._MOVIES_DATA = [
     overview: "Ninja with rare bloodline power start vanish from villages guard Cloud, Stone, Mist, Sand, spark suspicion, threat of new ninja war. Kakashi vanish too, chase real culprit, Naruto fight to save him, stop war before break out.",
     director: "Masahiko Murata",
     cast: [
-      "Junko Takeuchi, Kappei Yamaguchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue"
+      "Junko Takeuchi, Chie Nakamura, Kazuhiko Inoue, Noriaki Sugiyama, Nana Mizuki"
     ],
     trending: false,
     featured: false,
