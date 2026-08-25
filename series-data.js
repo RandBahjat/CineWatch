@@ -2507,7 +2507,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 5,
-            title: 'Truth Is the Shrewdest Lie'
+            title: 'Shatter the Moon'
           },
           {
             episode: 6,
