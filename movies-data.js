@@ -11233,7 +11233,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/hXTAuNHRfznJUY436DUemMmDZJX.jpg",
     videoUrl: "50723",
     overview: "Naruto get swept back in time twenty year, land in war torn era. Team up with young Minato, his future father, though not know it yet, must stop rogue ninja from changing history.",
-    director: "Hajime Kamegaki",
+    director: "Masahiko Murata",
     cast: [
       "Junko Takeuchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue, Hidekatsu Shibata"
     ],
