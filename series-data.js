@@ -8512,7 +8512,7 @@ window._SERIES_DATA = [
         episodes: [
           {
             episode: 1,
-            title: 'Episode #2.1'
+            title: 'The Gold'
           },
           {
             episode: 2,
