@@ -9812,7 +9812,7 @@ window._ANIME_DATA = [
           "Adventure",
           "Sci-Fi & Fantasy"
         ],
-        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/xCx9hW3gNfLqJheJ5nLhP8B1lO8.jpg",
+        poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xppeysfvDKVx775MFuH8Z9BlpMk.jpg",
         backdrop: "https://image.tmdb.org/t/p/original/mpsYIytXhDXjI9yYC1Fp1S3PxsS.jpg",
         videoUrl: "46260",
         anilistId: 20,
