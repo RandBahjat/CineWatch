@@ -11134,6 +11134,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Road to Ninja: Naruto the Movie",
+    type: "Movie",
+    year: 2012,
+    rating: 7.6,
+    age: "TV-14",
+    duration: "1h 49m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy",
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xLal6fXNtiJN6Zw6qk21xAtdOeN.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/sgg7xDeobzw2hrJdVNX6JOaM5zj.jpg",
+    videoUrl: "118406",
+    overview: "Alternate world jutsu send Naruto, Sakura into parallel dimension where their life gone totally different — Naruto's parent alive, Sakura's dead. Both face masked villain, Tobi, learn appreciate world, family they actually have.",
+    director: "Hayato Date",
+    cast: [
+      "Junko Takeuchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue, Hidekatsu Shibata"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
