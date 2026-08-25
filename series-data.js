@@ -8540,7 +8540,7 @@ window._SERIES_DATA = [
           }
           {
             episode: 8,
-            title: 'My Druthers'
+            title: 'The Cross'
           }
           {
             episode: 9,
