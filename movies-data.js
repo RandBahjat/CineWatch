@@ -11338,7 +11338,7 @@ window._MOVIES_DATA = [
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/mmKiJ93x6uhTwJlrxCoY38R4qo6.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/bW0Hr19Xo7LDnMmywXuH5YoTMY5.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/w1JPid4Wx9awVpAxcgXFlNcCrUA.jpg",
     videoUrl: "16907",
     overview: "Naruto team hire guard actress on movie shoot, discover she secretly princess of Land of Snow. Must protect her from evil warlord try seize throne, control land's power source.",
     director: "Tensai Okamura",
