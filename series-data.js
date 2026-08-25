@@ -2443,7 +2443,7 @@ window._SERIES_DATA = [
     overview: 'CIA operative Joe lead special military program called Lioness. Train rough young female Marine named Cruz to go undercover deep inside terrorist organizations. Team must stop dangerous high-level threats to nation while Joe struggle to balance brutal job with family life at home.',
     director: 'Taylor Sheridan',
     cast: [
-      'Anya Taylor-Joy, Annette Bening, Timothy Olyphant, Aunjanue Ellis-Taylor, Drew Starkey, Clifton Collins Jr., William Fichtner'
+      'Zoe Saldaña, Laysla De Oliveira, Nicole Kidman, Michael Kelly, Morgan Freeman, Dave Annable, Jill Wagner'
     ],
     trending: false,
     featured: false,
