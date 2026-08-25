@@ -11097,7 +11097,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1k6iwC4KaPvTBt1JuaqXy3noZRY.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/vEiDUw5a1wDZVR3PjZaq8AXhF3r.jpg",
     videoUrl: "347201",
-    overview: "Moon bout crash into Earth, ancient enemy Toneri Ōtsutsuki plan use its power take over world, kidnap Hinata to do it. Naruto race stop him, finally see true feeling he hold for Hinata all along.",
+    overview: "Boruto, Naruto's son, resent father for always busy being Hokage, never around. When new enemy attack during ninja tournament, Boruto must fight alongside father, learn what it really mean carry ninja legacy.",
     director: "Tsuneo Kobayashi",
     cast: [
       "Junko Takeuchi, Nana Mizuki, Noriaki Sugiyama, Chie Nakamura, Kate Higgins"
