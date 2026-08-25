@@ -2441,7 +2441,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/r0Zg70jpcDAD7IMDhVqajSnG9vb.jpg',
     videoUrl: '113962',
     overview: 'CIA operative Joe lead special military program called Lioness. Train rough young female Marine named Cruz to go undercover deep inside terrorist organizations. Team must stop dangerous high-level threats to nation while Joe struggle to balance brutal job with family life at home.',
-    director: 'Jonathan Tropper',
+    director: 'Taylor Sheridan',
     cast: [
       'Anya Taylor-Joy, Annette Bening, Timothy Olyphant, Aunjanue Ellis-Taylor, Drew Starkey, Clifton Collins Jr., William Fichtner'
     ],
