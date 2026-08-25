@@ -11324,7 +11324,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Naruto the Movie: Ninja Clash in the Land of Snow",
+    title: "Naruto the Movie: Guardians of the Crescent Moon Kingdom",
     type: "Movie",
     year: 2004,
     rating: 6.6,
