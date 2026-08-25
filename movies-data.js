@@ -11444,7 +11444,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/y9LrSzPDFubfzs03w8OzhqWgFiQ.jpg",
     videoUrl: "466081",
     overview: "Ex-con, ex-Special Forces Pete Koslow work as informant for FBI, go undercover infiltrate mob run drug operation inside prison. Deal go bad, Koslow frame for murder, must escape prison, clear name, protect family.",
-    director: "Scott Frank",
+    director: "Andrea Di Stefano",
     cast: [
       "Joel Kinnaman, Rosamund Pike, Common, Ana de Armas, Clive Owen"
     ],
