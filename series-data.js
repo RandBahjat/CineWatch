@@ -8475,7 +8475,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 3,
-            title: 'Episode #1.3'
+            title: 'The Forbidden Zone'
           },
           {
             episode: 4,
