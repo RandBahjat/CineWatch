@@ -8557,7 +8557,7 @@ window._SERIES_DATA = [
         episodes: [
           {
             episode: 1,
-            title: 'Episode #3.1'
+            title: 'Poguelandia'
           },
           {
             episode: 2,
