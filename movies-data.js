@@ -11137,8 +11137,8 @@ window._MOVIES_DATA = [
   {
     title: "Naruto Shippuden the Movie",
     type: "Movie",
-    year: 2012,
-    rating: 7.6,
+    year: 2007,
+    rating: 6.7,
     age: "TV-14",
     duration: "1h 49m",
     genres: [
