@@ -2528,7 +2528,7 @@ window._SERIES_DATA = [
         episodes: [
           {
             episode: 1,
-            title: 'Beware the Old Soldier'
+            title: 'The Spider and the Fly'
           },
           {
             episode: 2,
