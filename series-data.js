@@ -8577,7 +8577,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: 'Episode #3.6'
+            title: 'The Dark Forest'
           }
         ]
       },
