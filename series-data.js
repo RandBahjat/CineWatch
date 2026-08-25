@@ -2515,7 +2515,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 7,
-            title: 'Wish the Fight Away'
+            title: 'The Devil Has Aces'
           },
           {
             episode: 8,
