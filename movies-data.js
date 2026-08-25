@@ -11094,7 +11094,7 @@ window._MOVIES_DATA = [
       "Fantasy",
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bAQ8O5Uw6FedtlCbJTutenzPVKd.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1k6iwC4KaPvTBt1JuaqXy3noZRY.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ph61Svj7Bmo15f24XWgevdHLxym.jpg",
     videoUrl: "317442",
     overview: "Moon bout crash into Earth, ancient enemy Toneri Ōtsutsuki plan use its power take over world, kidnap Hinata to do it. Naruto race stop him, finally see true feeling he hold for Hinata all along.",
