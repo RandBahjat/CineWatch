@@ -203,13 +203,20 @@ window.CW_API = {
       const user = await this.getCurrentUser();
       if (!user) return { success: false, error: 'Not logged in' };
 
-      const { error } = await supabaseClient
+      const { data, error } = await supabaseClient
         .from('comments')
         .delete()
         .eq('id', commentId)
-        .eq('user_id', user.id); // Extra safety: only delete if it belongs to user
+        .eq('user_id', user.id)
+        .select(); // Ask Supabase to return the deleted rows
 
       if (error) throw error;
+      
+      // If no rows were returned, nothing was deleted
+      if (!data || data.length === 0) {
+        return { success: false, error: 'Comment not found or could not be deleted (Check RLS policy).' };
+      }
+
       return { success: true, error: null };
     } catch (e) {
       return { success: false, error: e.message };
