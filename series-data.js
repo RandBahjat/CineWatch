@@ -8584,11 +8584,11 @@ window._SERIES_DATA = [
             title: 'The Dark Forest'
           }
           {
-            episode: 6,
+            episode: 8,
             title: 'The Dark Forest'
           }
           {
-            episode: 6,
+            episode: 9,
             title: 'The Dark Forest'
           }
           {
