@@ -11247,7 +11247,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 2009,
     rating: 7.0,
-    age: "TV-PG",
+    age: "PG-13",
     duration: "1h 25m",
     genres: [
       "Action",
