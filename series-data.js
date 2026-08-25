@@ -8675,7 +8675,7 @@ window._SERIES_DATA = [
           }
           {
             episode: 8,
-            title: 'The Big Easy'
+            title: 'The Runway Part 2'
           }
           {
             episode: 9,
