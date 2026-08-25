@@ -8453,7 +8453,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/ovDgO2LPfwdVRfvScAqo9aMiIW.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/fjJ0aqDeDXFzmFXXJ4CF3ryB19b.jpg',
     videoUrl: '100757',
-    overview: 'A gangster family epic set in 1919 Birmingham, England, centered on the Shelby crime family, led by ambitious and ruthless Thomas Shelby. Fresh from the horrors of World War I, Tommy schemes his way up from the poverty of Small Heath, seeking to move the family beyond their bookmaking business into legitimate — and not-so-legitimate — enterprises, clashing along the way with rival gangs, the police, and the IRA.',
+    overview: 'Group of working-class teens called "Pogues" live in coastal North Carolina town. Lead kid John B search for missing father and stumble on clue to legendary $400 million hidden gold treasure. Pogues fight rich snob rivals "Kooks", corrupt law, and dangerous criminals while chasing legendary lost artifacts across world.',
     director: 'Steven Knight',
     cast: [
       'Cillian Murphy, Paul Anderson, Sophie Rundle, Sam Neill, Helen McCrory, Tom Hardy, Steven Knight'
