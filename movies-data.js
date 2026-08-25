@@ -11161,6 +11161,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Naruto Shippuden the Movie",
+    type: "Movie",
+    year: 2007,
+    rating: 6.7,
+    age: "PG-13",
+    duration: "1h 34m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy",
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vDkct38sSFSWJIATlfJw0l3QOIR.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/fJRbm6m2DDbSSyD8jTeB8evZ3Hq.jpg",
+    videoUrl: "20982",
+    overview: "Ancient demon seal inside young priestess start break free, threaten unleash havoc on world. Naruto team up protect her, uncover secret tie back to First Hokage, battle demon before too late.",
+    director: "Hajime Kamegaki",
+    cast: [
+      "Junko Takeuchi, Nana Mizuki, Noriaki Sugiyama, Chie Nakamura, Kazuhiko Inoue"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
