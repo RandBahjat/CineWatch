@@ -2428,7 +2428,7 @@ window._SERIES_DATA = [
   {
     title: 'Lioness',
     type: 'TV Show',
-    year: 2026,
+    year: 2023,
     rating: 6.7,
     age: 'TV-MA',
     duration: '22m',
