@@ -148,7 +148,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/caBIySpwuFi2i7ynvHIlnxJLOdN.jpg",
     videoUrl: "1560520",
     overview: "Monster villain Bane destroy Arkham Asylum walls and release all dangerous criminals into Gotham. Exhausted Batman force himself past mental and physical limits to catch every escaped villain, leading to legendary brutal confrontation with Bane!",
-    director: "Christopher Nolan",
+    director: "Jeff Wamester",
     cast: [
       "Matt Damon",
       "Anne Hathaway",
