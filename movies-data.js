@@ -545,7 +545,7 @@ window._MOVIES_DATA = [
       "Mystery",
       "Thriller"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6JU7E8Vv2M11egkctWVOScxWR75.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/A2SsNDtRcz3qNhFoNNrbomTesBx.jpg",
     videoUrl: "1284041",
     overview: "A family of four is suddenly sealed inside their home with no way out. With every door and window rendered impossible to escape, their safe haven quickly transforms into a prison as supplies dwindle and an unseen force outside refuses to let them leave. As fear, desperation, and suspicion tear the family apart, they must work together to uncover the truth behind the mysterious phenomenon before time runs out.",
