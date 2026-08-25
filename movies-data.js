@@ -11070,7 +11070,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bAQ8O5Uw6FedtlCbJTutenzPVKd.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ph61Svj7Bmo15f24XWgevdHLxym.jpg",
     videoUrl: "317442",
-    overview: "Retelling of Dressrosa arc focusing on perspective of Revolutionary Army chief of staff Sabo. Explores childhood backstory of three sworn brothers Luffy, Ace, and Sabo in Goa Kingdom. Shows Sabo arrival at Corrida Colosseum, emotional reunion with Luffy, and claim of fallen brother Ace Flame-Flame Fruit to inherit his will.",
+    overview: "Moon bout crash into Earth, ancient enemy Toneri Ōtsutsuki plan use its power take over world, kidnap Hinata to do it. Naruto race stop him, finally see true feeling he hold for Hinata all along.",
     director: "Gō Koga",
     cast: [
       "Tōru Furuya, Mayumi Tanaka, Toshio Furukawa, Hiroshi Kamiya, Megumi Han, Akemi Okamura"
