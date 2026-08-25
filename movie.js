@@ -46,7 +46,7 @@ function translateGenre(genre) {
   const cookies = document.cookie || '';
   const isSorani = cookies.includes('googtrans=/en/ckb');
   if (isSorani) {
-    if (genre === 'Fantasy') return 'فانتسی';
+    if (genre === 'Fantasy') return 'فانت سی';
     if (genre === 'Adventure') return 'سەرکێشی';
     if (genre === 'Action') return 'ئاکشن';
     if (genre === 'Sci-Fi') return 'خەیاڵی زانستی';
