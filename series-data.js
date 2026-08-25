@@ -8548,7 +8548,7 @@ window._SERIES_DATA = [
           }
           {
             episode: 10,
-            title: 'My Druthers'
+            title: 'The Coastal Venture'
           }
         ]
       },
