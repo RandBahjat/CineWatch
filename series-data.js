@@ -8439,8 +8439,8 @@ window._SERIES_DATA = [
 {
     title: 'Peaky Blinders',
     type: 'TV Show',
-    year: 2013,
-    rating: 8.7,
+    year: 2020,
+    rating: 7.5,
     age: 'TV-PG',
     duration: '1h',
     genres: [
