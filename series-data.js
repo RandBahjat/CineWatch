@@ -8667,7 +8667,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: 'Mr. Jones'
+            title: 'The Big Easy'
           }
         ]
       },
