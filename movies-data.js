@@ -274,7 +274,7 @@ window._MOVIES_DATA = [
       "Crime"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lGovcOtxugJPhfJjFKud9EbWtOA.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/hkRv7WQYMbccuay0tBZPS8axvjd.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/fS6UxLQ1MdAIegoSm21rq0t8D4b.jpg",
     videoUrl: "1212763",
     overview: "The sixth installment in the legendary horror franchise, serving as a direct sequel to Evil Dead Rise. The story follows a young woman named Alice who seeks comfort from her in-laws at a secluded country home following the sudden death of her husband. However, the grieving gathering quickly devolves into a grueling family reunion from hell as members of the household are systematically possessed and transformed into bloodthirsty Deadites.",
     director: "Sébastien Vaniček",
