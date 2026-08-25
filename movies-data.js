@@ -11407,7 +11407,7 @@ window._MOVIES_DATA = [
     year: 2014,
     rating: 6.5,
     age: "R",
-    duration: "1h 25m",
+    duration: "1h 54m",
     genres: [
       "Crime",
       "Drama"
