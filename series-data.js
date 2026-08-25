@@ -2431,7 +2431,7 @@ window._SERIES_DATA = [
     year: 2023,
     rating: 6.7,
     age: 'TV-MA',
-    duration: '22m',
+    duration: '42m',
     genres: [
       'Action',
       'Crime',
