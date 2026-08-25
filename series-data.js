@@ -8655,7 +8655,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 3,
-            title: 'Strategy'
+            title: 'The Square Grouper'
           },
           {
             episode: 4,
