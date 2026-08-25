@@ -2440,7 +2440,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/r0Zg70jpcDAD7IMDhVqajSnG9vb.jpg',
     videoUrl: '113962',
-    overview: 'Anya Taylor-Joy play con artist finally get outsmarted herself. Series follow Luciana Lucky Armstrong after big heist collapse, husband vanish with cash, two dangerous group hunt her down for different reason.',
+    overview: 'CIA operative Joe lead special military program called Lioness. Train rough young female Marine named Cruz to go undercover deep inside terrorist organizations. Team must stop dangerous high-level threats to nation while Joe struggle to balance brutal job with family life at home.',
     director: 'Jonathan Tropper',
     cast: [
       'Anya Taylor-Joy, Annette Bening, Timothy Olyphant, Aunjanue Ellis-Taylor, Drew Starkey, Clifton Collins Jr., William Fichtner'
