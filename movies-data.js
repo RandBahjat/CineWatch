@@ -11096,7 +11096,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1k6iwC4KaPvTBt1JuaqXy3noZRY.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/vEiDUw5a1wDZVR3PjZaq8AXhF3r.jpg",
-    videoUrl: "317442",
+    videoUrl: "34",
     overview: "Moon bout crash into Earth, ancient enemy Toneri Ōtsutsuki plan use its power take over world, kidnap Hinata to do it. Naruto race stop him, finally see true feeling he hold for Hinata all along.",
     director: "Tsuneo Kobayashi",
     cast: [
