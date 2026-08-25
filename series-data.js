@@ -2499,7 +2499,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 3,
-            title: 'Bruise Like a Fist'
+            title: 'Along Came a Spider'
           },
           {
             episode: 4,
