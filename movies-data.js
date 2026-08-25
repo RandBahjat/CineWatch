@@ -11366,7 +11366,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/mVl1EvEnYJnTQv71nksfneyF0Yd.jpg",
     videoUrl: "429",
-    overview: "Naruto team assign guard spoiled young prince of Crescent Moon Kingdom, must escort him safely home through danger-fill journey. Face group of ninja hire kill prince, learn true meaning of courage along way.",
+    overview: "Three gunslinger — one good, one bad, one just plain ugly — chase after buried Confederate gold during Civil War. Alliance shift, betrayal pile up, all lead to legendary three-way standoff.",
     director: "Toshiyuki Tsuru",
     cast: [
       "Junko Takeuchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue, Hidekatsu Shibata"
