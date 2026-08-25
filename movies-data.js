@@ -11056,8 +11056,8 @@ window._MOVIES_DATA = [
   {
     title: "The Last: Naruto the Movie",
     type: "Movie",
-    year: 2015,
-    rating: 7.3,
+    year: 2014,
+    rating: 7.6,
     age: "TV-PG",
     duration: "1h 47m",
     genres: [
