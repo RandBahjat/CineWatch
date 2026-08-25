@@ -7729,8 +7729,8 @@ window._ANIME_DATA = [
     tags: [
       "Animation",
       "Action",
-      "alien",
-      "combat"
+      "Adventure",
+      "Fantasy"
     ],
     videoUrl: "62715",
     seasons: [
