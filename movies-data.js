@@ -18,7 +18,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/e2QAGrEmbpmZpMymDRkDisJkvg9.jpg",
     videoUrl: "1288445",
     overview: "Ex-Special Forces agent Cole Reed see billionaire industrialist boss framed and murdered in front of him. Forced on run as chief suspect, Reed uncover massive international conspiracy while hunted by corrupt government operatives and dangerous mercenaries. Must fight to survive and expose real killer.",
-    director: "Olivia Wilde",
+    director: "Jean-François Richet",
     cast: [
       "Seth Rogen, Olivia Wilde, Penélope Cruz, Edward Norton"
     ],
