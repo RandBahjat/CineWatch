@@ -546,7 +546,7 @@ window._MOVIES_DATA = [
       "Thriller"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/w2xDGa1252imRPgCbiY48AbkRBn.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/xktdBsGfPQWl4DG3QLXpOB1Xd8u.jpg",
     videoUrl: "1284041",
     overview: "A family of four is suddenly sealed inside their home with no way out. With every door and window rendered impossible to escape, their safe haven quickly transforms into a prison as supplies dwindle and an unseen force outside refuses to let them leave. As fear, desperation, and suspicion tear the family apart, they must work together to uncover the truth behind the mysterious phenomenon before time runs out.",
     director: "Louis Leterrier",
