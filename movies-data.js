@@ -11080,6 +11080,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "The Last: Naruto the Movie",
+    type: "Movie",
+    year: 2014,
+    rating: 7.6,
+    age: "TV-14",
+    duration: "1h 52m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Romance",
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bAQ8O5Uw6FedtlCbJTutenzPVKd.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/ph61Svj7Bmo15f24XWgevdHLxym.jpg",
+    videoUrl: "317442",
+    overview: "Moon bout crash into Earth, ancient enemy Toneri Ōtsutsuki plan use its power take over world, kidnap Hinata to do it. Naruto race stop him, finally see true feeling he hold for Hinata all along.",
+    director: "Tsuneo Kobayashi",
+    cast: [
+      "Junko Takeuchi, Nana Mizuki, Noriaki Sugiyama, Chie Nakamura, Kate Higgins"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
