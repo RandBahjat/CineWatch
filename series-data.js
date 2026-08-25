@@ -2548,7 +2548,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: "2381"
+            title: "Sugar Land"
           },
           {
             episode: 7,
