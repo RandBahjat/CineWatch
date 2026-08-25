@@ -7586,7 +7586,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/oUmWLyeko3kYdUr8DBLIsxwcugl.jpg",
     videoUrl: "236994",
     animeSlug: "dragon-ball-daima",
-    overview: "Goku and company were living peaceful lives when they suddenly turned small due to a conspiracy! When they discover that the reason for this may lie in a world known as the Demon Realm, a mysterious young Majin named Glorio appears before them.",
+    overview: "Goku and company were living peaceful lives when they suddenly turned small due to a conspiracy When they discover that the reason for this may lie in a world known as the Demon Realm, a mysterious young Majin named Glorio appears before them.",
     director: "Akira Toriyama",
     cast: [
       "Masako Nozawa",
