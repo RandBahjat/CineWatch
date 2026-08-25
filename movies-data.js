@@ -11246,7 +11246,7 @@ window._MOVIES_DATA = [
     title: "Naruto Shippuden the Movie: The Will of Fire",
     type: "Movie",
     year: 2009,
-    rating: 6.8,
+    rating: 7.0,
     age: "TV-PG",
     duration: "1h 25m",
     genres: [
