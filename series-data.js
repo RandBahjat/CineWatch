@@ -2522,7 +2522,7 @@ window._SERIES_DATA = [
             title: 'The Compass Points Home'
           }
         ]
-      }
+      },
     ]
   },
   {
