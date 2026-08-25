@@ -14299,4 +14299,1798 @@ window._ANIME_DATA = [
           }
         ]
       }
+  ,
+  {
+        title: "Boruto: Naruto Next Generations",
+        type: "TV Show",
+        isAnime: true,
+        year: 2017,
+        rating: 8,
+        age: "TV-14",
+        duration: "24m",
+        genres: [
+          "Animation",
+          "Action",
+          "Adventure",
+          "Fantasy"
+        ],
+        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/3kMOl8hL1S0PebxN18E26XbA6Jk.jpg",
+        backdrop: "https://image.tmdb.org/t/p/original/9JmdCGHQamcmO0mPqj8fQjZ6eQv.jpg",
+        videoUrl: "70881",
+        anilistId: 97938,
+        animeSlug: "boruto",
+        overview: "The life of the shinobi is beginning to change. Boruto Uzumaki, son of Seventh Hokage Naruto Uzumaki, has enrolled in the Ninja Academy to learn the ways of the ninja. Now, as a series of mysterious events unfolds, Boruto's story is about to begin!",
+        director: "Masashi Kishimoto",
+        cast: [
+          "Yuko Sanpei, Kokoro Kikuchi, Ryuichi Kijima, Kensho Ono, Atsushi Abe"
+        ],
+        trending: false,
+        featured: false,
+        is4k: false,
+        seasons: [
+          {
+            season: 1,
+            episodes: [
+              {
+                episode: 1,
+                title: "Boruto Uzumaki!",
+                duration: "30m",
+                absoluteEpisode: 1
+              },
+              {
+                episode: 2,
+                title: "The Hokage's Son!",
+                duration: "30m",
+                absoluteEpisode: 2
+              },
+              {
+                episode: 3,
+                title: "Metal Lee Goes Wild!",
+                duration: "30m",
+                absoluteEpisode: 3
+              },
+              {
+                episode: 4,
+                title: "A Ninjutsu Battle of the Sexes!",
+                duration: "30m",
+                absoluteEpisode: 4
+              },
+              {
+                episode: 5,
+                title: "The Mysterious Transfer Student!",
+                duration: "30m",
+                absoluteEpisode: 5
+              },
+              {
+                episode: 6,
+                title: "The Final Lesson!",
+                duration: "30m",
+                absoluteEpisode: 6
+              },
+              {
+                episode: 7,
+                title: "Love and Potato Chips!",
+                duration: "30m",
+                absoluteEpisode: 7
+              },
+              {
+                episode: 8,
+                title: "The Dream's Revelation!",
+                duration: "30m",
+                absoluteEpisode: 8
+              },
+              {
+                episode: 9,
+                title: "Proof of Oneself!",
+                duration: "24m",
+                absoluteEpisode: 9
+              },
+              {
+                episode: 10,
+                title: "The Ghost Incident: The Investigation Begins!",
+                duration: "30m",
+                absoluteEpisode: 10
+              },
+              {
+                episode: 11,
+                title: "The Shadow of the Mastermind",
+                duration: "30m",
+                absoluteEpisode: 11
+              },
+              {
+                episode: 12,
+                title: "Boruto and Mitsuki",
+                duration: "30m",
+                absoluteEpisode: 12
+              },
+              {
+                episode: 13,
+                title: "The Demon Beast Appears!",
+                duration: "30m",
+                absoluteEpisode: 13
+              },
+              {
+                episode: 14,
+                title: "The Path That Boruto Can See",
+                duration: "30m",
+                absoluteEpisode: 14
+              },
+              {
+                episode: 15,
+                title: "A New Path",
+                duration: "30m",
+                absoluteEpisode: 15
+              },
+              {
+                episode: 16,
+                title: "Crisis: The Threat of Failing!",
+                duration: "30m",
+                absoluteEpisode: 16
+              },
+              {
+                episode: 17,
+                title: "Run, Sarada!",
+                duration: "30m",
+                absoluteEpisode: 17
+              },
+              {
+                episode: 18,
+                title: "A Day in the Life of the Uzumaki Family",
+                duration: "30m",
+                absoluteEpisode: 18
+              },
+              {
+                episode: 19,
+                title: "Sarada Uchiha",
+                duration: "30m",
+                absoluteEpisode: 19
+              },
+              {
+                episode: 20,
+                title: "The Boy with the Sharingan",
+                duration: "30m",
+                absoluteEpisode: 20
+              },
+              {
+                episode: 21,
+                title: "Sasuke and Sarada",
+                duration: "30m",
+                absoluteEpisode: 21
+              },
+              {
+                episode: 22,
+                title: "Connected Feelings",
+                duration: "30m",
+                absoluteEpisode: 22
+              },
+              {
+                episode: 23,
+                title: "Bonds Come in All Shapes",
+                duration: "30m",
+                absoluteEpisode: 23
+              },
+              {
+                episode: 24,
+                title: "Boruto and Sarada",
+                duration: "30m",
+                absoluteEpisode: 24
+              },
+              {
+                episode: 25,
+                title: "The Turbulent Field Trip!!",
+                duration: "30m",
+                absoluteEpisode: 25
+              },
+              {
+                episode: 26,
+                title: "The Mizukage's Successor",
+                duration: "30m",
+                absoluteEpisode: 26
+              },
+              {
+                episode: 27,
+                title: "A Shinobi Bout of Friendship",
+                duration: "30m",
+                absoluteEpisode: 27
+              },
+              {
+                episode: 28,
+                title: "A Declaration of War",
+                duration: "30m",
+                absoluteEpisode: 28
+              },
+              {
+                episode: 29,
+                title: "The New Seven Ninja Swordsmen!!",
+                duration: "30m",
+                absoluteEpisode: 29
+              },
+              {
+                episode: 30,
+                title: "The Sharingan VS The Lighting Blade, Kiba the Fang!",
+                duration: "30m",
+                absoluteEpisode: 30
+              },
+              {
+                episode: 31,
+                title: "Boruto and Kagura",
+                duration: "30m",
+                absoluteEpisode: 31
+              },
+              {
+                episode: 32,
+                title: "The Quest for Souvenirs!",
+                duration: "30m",
+                absoluteEpisode: 32
+              },
+              {
+                episode: 33,
+                title: "The Super Beast Scroll Slump!!",
+                duration: "30m",
+                absoluteEpisode: 33
+              },
+              {
+                episode: 34,
+                title: "The Night of the Shooting Stars",
+                duration: "30m",
+                absoluteEpisode: 34
+              },
+              {
+                episode: 35,
+                title: "The Parent-Teacher Conference!!",
+                duration: "30m",
+                absoluteEpisode: 35
+              },
+              {
+                episode: 36,
+                title: "The Graduation Exam Begins!",
+                duration: "30m",
+                absoluteEpisode: 36
+              },
+              {
+                episode: 37,
+                title: "A Shinobi's Resolve!",
+                duration: "30m",
+                absoluteEpisode: 37
+              },
+              {
+                episode: 38,
+                title: "Formation of the Three Man Squad?",
+                duration: "30m",
+                absoluteEpisode: 38
+              },
+              {
+                episode: 39,
+                title: "The Path Lit by the Full Moon",
+                duration: "30m",
+                absoluteEpisode: 39
+              },
+              {
+                episode: 40,
+                title: "Team 7: The First Mission!!",
+                duration: "30m",
+                absoluteEpisode: 40
+              },
+              {
+                episode: 41,
+                title: "Strength in Unity",
+                duration: "30m",
+                absoluteEpisode: 41
+              },
+              {
+                episode: 42,
+                title: "A Ninja's Job!",
+                duration: "30m",
+                absoluteEpisode: 42
+              },
+              {
+                episode: 43,
+                title: "The Byakuya Gang Surfaces!!",
+                duration: "30m",
+                absoluteEpisode: 43
+              },
+              {
+                episode: 44,
+                title: "Shikadai's Doubts",
+                duration: "30m",
+                absoluteEpisode: 44
+              },
+              {
+                episode: 45,
+                title: "Memories from the Day of Snow",
+                duration: "30m",
+                absoluteEpisode: 45
+              },
+              {
+                episode: 46,
+                title: "Go! The Crest of Night Strategy",
+                duration: "30m",
+                absoluteEpisode: 46
+              },
+              {
+                episode: 47,
+                title: "The Figure I Want to Be",
+                duration: "30m",
+                absoluteEpisode: 47
+              },
+              {
+                episode: 48,
+                title: "The Genin Documentary!",
+                duration: "30m",
+                absoluteEpisode: 48
+              },
+              {
+                episode: 49,
+                title: "Wasabi and Namida",
+                duration: "30m",
+                absoluteEpisode: 49
+              },
+              {
+                episode: 50,
+                title: "The Chunin Exams: The Recommendation Meeting",
+                duration: "30m",
+                absoluteEpisode: 50
+              },
+              {
+                episode: 51,
+                title: "Boruto's Birthday",
+                duration: "30m",
+                absoluteEpisode: 51
+              },
+              {
+                episode: 52,
+                title: "Sasuke's Shadow",
+                duration: "30m",
+                absoluteEpisode: 52
+              },
+              {
+                episode: 53,
+                title: "Himawari's Birthday",
+                duration: "30m",
+                absoluteEpisode: 53
+              },
+              {
+                episode: 54,
+                title: "Sasuke and Boruto",
+                duration: "30m",
+                absoluteEpisode: 54
+              },
+              {
+                episode: 55,
+                title: "The Scientific Ninja Tool!",
+                duration: "30m",
+                absoluteEpisode: 55
+              },
+              {
+                episode: 56,
+                title: "Rivals, Gather!!",
+                duration: "30m",
+                absoluteEpisode: 56
+              },
+              {
+                episode: 57,
+                title: "The Reason I Can't Lose",
+                duration: "30m",
+                absoluteEpisode: 57
+              },
+              {
+                episode: 58,
+                title: "The Tournament Begins!!",
+                duration: "30m",
+                absoluteEpisode: 58
+              },
+              {
+                episode: 59,
+                title: "Boruto VS Shikadai",
+                duration: "30m",
+                absoluteEpisode: 59
+              },
+              {
+                episode: 60,
+                title: "The Hidden Leaf VS The Hidden Sand",
+                duration: "30m",
+                absoluteEpisode: 60
+              },
+              {
+                episode: 61,
+                title: "The Iron Sand User: Shinki",
+                duration: "30m",
+                absoluteEpisode: 61
+              },
+              {
+                episode: 62,
+                title: "The Otsutsuki Invasion",
+                duration: "30m",
+                absoluteEpisode: 62
+              },
+              {
+                episode: 63,
+                title: "Sasuke's Secret Weapon",
+                duration: "30m",
+                absoluteEpisode: 63
+              },
+              {
+                episode: 64,
+                title: "Rescuing Naruto!",
+                duration: "30m",
+                absoluteEpisode: 64
+              },
+              {
+                episode: 65,
+                title: "Father and Child",
+                duration: "30m",
+                absoluteEpisode: 65
+              },
+              {
+                episode: 66,
+                title: "My Story...!!",
+                duration: "30m",
+                absoluteEpisode: 66
+              },
+              {
+                episode: 67,
+                title: "Super Chocho Butterfly Mode!!",
+                duration: "30m",
+                absoluteEpisode: 67
+              },
+              {
+                episode: 68,
+                title: "Super Chocho Kiss Mode!!",
+                duration: "30m",
+                absoluteEpisode: 68
+              },
+              {
+                episode: 69,
+                title: "Super Chocho Love Upheaval!!",
+                duration: "30m",
+                absoluteEpisode: 69
+              },
+              {
+                episode: 70,
+                title: "The Other Side of Anxiety",
+                duration: "30m",
+                absoluteEpisode: 70
+              },
+              {
+                episode: 71,
+                title: "The Hardest Rock in the World",
+                duration: "30m",
+                absoluteEpisode: 71
+              },
+              {
+                episode: 72,
+                title: "Mitsuki's Will",
+                duration: "30m",
+                absoluteEpisode: 72
+              },
+              {
+                episode: 73,
+                title: "The Other Side of the Moon",
+                duration: "30m",
+                absoluteEpisode: 73
+              },
+              {
+                episode: 74,
+                title: "The Enemy, Ino-Shika-Cho!",
+                duration: "30m",
+                absoluteEpisode: 74
+              },
+              {
+                episode: 75,
+                title: "The Trials of Ryuchi Cave",
+                duration: "30m",
+                absoluteEpisode: 75
+              },
+              {
+                episode: 76,
+                title: "Incurring Wrath",
+                duration: "30m",
+                absoluteEpisode: 76
+              },
+              {
+                episode: 77,
+                title: "A Fierce Enemy, Garaga's Ferocious Attack!",
+                duration: "30m",
+                absoluteEpisode: 77
+              },
+              {
+                episode: 78,
+                title: "Everyone's Motives",
+                duration: "30m",
+                absoluteEpisode: 78
+              },
+              {
+                episode: 79,
+                title: "Reunion with Mitsuki",
+                duration: "30m",
+                absoluteEpisode: 79
+              },
+              {
+                episode: 80,
+                title: "Mitsuki's Friend",
+                duration: "30m",
+                absoluteEpisode: 80
+              },
+              {
+                episode: 81,
+                title: "Boruto's Wish",
+                duration: "30m",
+                absoluteEpisode: 81
+              },
+              {
+                episode: 82,
+                title: "Infiltrating the Hidden Stone Village!!",
+                duration: "30m",
+                absoluteEpisode: 82
+              },
+              {
+                episode: 83,
+                title: "Ohnoki's Justice",
+                duration: "30m",
+                absoluteEpisode: 83
+              },
+              {
+                episode: 84,
+                title: "Ohnoki's Thoughts, Ku's Thoughts",
+                duration: "30m",
+                absoluteEpisode: 84
+              },
+              {
+                episode: 85,
+                title: "The Heart Stone",
+                duration: "30m",
+                absoluteEpisode: 85
+              },
+              {
+                episode: 86,
+                title: "Kozuchi's Will",
+                duration: "30m",
+                absoluteEpisode: 86
+              },
+              {
+                episode: 87,
+                title: "The Sensation of Living",
+                duration: "30m",
+                absoluteEpisode: 87
+              },
+              {
+                episode: 88,
+                title: "Clash, Kokuyou!!",
+                duration: "30m",
+                absoluteEpisode: 88
+              },
+              {
+                episode: 89,
+                title: "A Piercing Heart",
+                duration: "30m",
+                absoluteEpisode: 89
+              },
+              {
+                episode: 90,
+                title: "Mitsuki and Sekiei",
+                duration: "30m",
+                absoluteEpisode: 90
+              },
+              {
+                episode: 91,
+                title: "Ohnoki's Will",
+                duration: "30m",
+                absoluteEpisode: 91
+              },
+              {
+                episode: 92,
+                title: "A New Ordinary",
+                duration: "30m",
+                absoluteEpisode: 92
+              },
+              {
+                episode: 93,
+                title: "Parent and Child Day",
+                duration: "30m",
+                absoluteEpisode: 93
+              },
+              {
+                episode: 94,
+                title: "A Heaping Helping! The Eating Contest!",
+                duration: "30m",
+                absoluteEpisode: 94
+              },
+              {
+                episode: 95,
+                title: "Tactics for Getting Along with Your Daughter",
+                duration: "30m",
+                absoluteEpisode: 95
+              },
+              {
+                episode: 96,
+                title: "Blood, Sweat and Namida",
+                duration: "30m",
+                absoluteEpisode: 96
+              },
+              {
+                episode: 97,
+                title: "Shikadai's Decision",
+                duration: "30m",
+                absoluteEpisode: 97
+              },
+              {
+                episode: 98,
+                title: "The Cursed Forest",
+                duration: "30m",
+                absoluteEpisode: 98
+              },
+              {
+                episode: 99,
+                title: "Jugo and the Cursed Mark",
+                duration: "30m",
+                absoluteEpisode: 99
+              },
+              {
+                episode: 100,
+                title: "The Predestined Path",
+                duration: "30m",
+                absoluteEpisode: 100
+              },
+              {
+                episode: 101,
+                title: "Jugo's Reinforcements",
+                duration: "30m",
+                absoluteEpisode: 101
+              },
+              {
+                episode: 102,
+                title: "Melee!",
+                duration: "30m",
+                absoluteEpisode: 102
+              },
+              {
+                episode: 103,
+                title: "Migration Season",
+                duration: "30m",
+                absoluteEpisode: 103
+              },
+              {
+                episode: 104,
+                title: "The Little Roommate",
+                duration: "30m",
+                absoluteEpisode: 104
+              },
+              {
+                episode: 105,
+                title: "A Wound on the Heart",
+                duration: "30m",
+                absoluteEpisode: 105
+              },
+              {
+                episode: 106,
+                title: "The Steam Ninja Scrolls: The S-Rank Mission!!",
+                duration: "30m",
+                absoluteEpisode: 106
+              },
+              {
+                episode: 107,
+                title: "The Steam Ninja Scrolls: The Dog and Cat War!",
+                duration: "30m",
+                absoluteEpisode: 107
+              },
+              {
+                episode: 108,
+                title: "The Steam Ninja Scrolls: The Haunted Inn!!",
+                duration: "30m",
+                absoluteEpisode: 108
+              },
+              {
+                episode: 109,
+                title: "The Steam Ninja Scrolls: Potato Chips and the Giant Boulder!!",
+                duration: "30m",
+                absoluteEpisode: 109
+              },
+              {
+                episode: 110,
+                title: "The Steam Ninja Scrolls: The Resurrection Hot Springs!!",
+                duration: "30m",
+                absoluteEpisode: 110
+              },
+              {
+                episode: 111,
+                title: "The Steam Ninja Scrolls: Mirai's King!",
+                duration: "30m",
+                absoluteEpisode: 111
+              },
+              {
+                episode: 112,
+                title: "The Chuunin Selection Conference",
+                duration: "30m",
+                absoluteEpisode: 112
+              },
+              {
+                episode: 113,
+                title: "The Qualities of a Captain",
+                duration: "30m",
+                absoluteEpisode: 113
+              },
+              {
+                episode: 114,
+                title: "Cards Proxy War!!",
+                duration: "30m",
+                absoluteEpisode: 114
+              },
+              {
+                episode: 115,
+                title: "Team 25",
+                duration: "30m",
+                absoluteEpisode: 115
+              },
+              {
+                episode: 116,
+                title: "Konohamaru and Remon",
+                duration: "30m",
+                absoluteEpisode: 116
+              },
+              {
+                episode: 117,
+                title: "Remon's Secret",
+                duration: "30m",
+                absoluteEpisode: 117
+              },
+              {
+                episode: 118,
+                title: "Something That Steals Memories",
+                duration: "30m",
+                absoluteEpisode: 118
+              },
+              {
+                episode: 119,
+                title: "Konohamaru's Ninja Way",
+                duration: "30m",
+                absoluteEpisode: 119
+              },
+              {
+                episode: 120,
+                title: "With Sasuke as the Goal",
+                duration: "30m",
+                absoluteEpisode: 120
+              },
+              {
+                episode: 121,
+                title: "The Entrusted Mission: Protect the One Tails!",
+                duration: "30m",
+                absoluteEpisode: 121
+              },
+              {
+                episode: 122,
+                title: "The Puppet Battle!!",
+                duration: "30m",
+                absoluteEpisode: 122
+              },
+              {
+                episode: 123,
+                title: "Urashiki Returns!!",
+                duration: "30m",
+                absoluteEpisode: 123
+              },
+              {
+                episode: 124,
+                title: "Decision Time",
+                duration: "30m",
+                absoluteEpisode: 124
+              },
+              {
+                episode: 125,
+                title: "Boruto and Shinki",
+                duration: "30m",
+                absoluteEpisode: 125
+              },
+              {
+                episode: 126,
+                title: "Shukaku's Trick",
+                duration: "30m",
+                absoluteEpisode: 126
+              },
+              {
+                episode: 127,
+                title: "Make-out Tactics!",
+                duration: "30m",
+                absoluteEpisode: 127
+              },
+              {
+                episode: 128,
+                title: "Urashiki's Target!",
+                duration: "30m",
+                absoluteEpisode: 128
+              },
+              {
+                episode: 129,
+                title: "The Village Hidden in the Leaves",
+                duration: "30m",
+                absoluteEpisode: 129
+              },
+              {
+                episode: 130,
+                title: "Genin, Assemble!!",
+                duration: "30m",
+                absoluteEpisode: 130
+              },
+              {
+                episode: 131,
+                title: "The Power of the Nine Tails",
+                duration: "30m",
+                absoluteEpisode: 131
+              },
+              {
+                episode: 132,
+                title: "Jiraiya's Assignment",
+                duration: "30m",
+                absoluteEpisode: 132
+              },
+              {
+                episode: 133,
+                title: "A Village Without Sasuke",
+                duration: "30m",
+                absoluteEpisode: 133
+              },
+              {
+                episode: 134,
+                title: "The Power to See the Future",
+                duration: "30m",
+                absoluteEpisode: 134
+              },
+              {
+                episode: 135,
+                title: "The Last Battle: Urashiki",
+                duration: "30m",
+                absoluteEpisode: 135
+              },
+              {
+                episode: 136,
+                title: "Crossing Time!",
+                duration: "30m",
+                absoluteEpisode: 136
+              },
+              {
+                episode: 137,
+                title: "The Samurai Exchange Student",
+                duration: "30m",
+                absoluteEpisode: 137
+              },
+              {
+                episode: 138,
+                title: "Hiashi's Birthday",
+                duration: "30m",
+                absoluteEpisode: 138
+              },
+              {
+                episode: 139,
+                title: "The Terror! Enko Onikuma!",
+                duration: "30m",
+                absoluteEpisode: 139
+              },
+              {
+                episode: 140,
+                title: "The Mind Jutsu That Lost to Potato Chips",
+                duration: "30m",
+                absoluteEpisode: 140
+              },
+              {
+                episode: 141,
+                title: "The Shinobi Prison: Hozuki Castle",
+                duration: "30m",
+                absoluteEpisode: 141
+              },
+              {
+                episode: 142,
+                title: "A Test of Willpower",
+                duration: "30m",
+                absoluteEpisode: 142
+              },
+              {
+                episode: 143,
+                title: "The Criminal Targeting Kokuri",
+                duration: "30m",
+                absoluteEpisode: 143
+              },
+              {
+                episode: 144,
+                title: "Kokuri's Secret",
+                duration: "30m",
+                absoluteEpisode: 144
+              },
+              {
+                episode: 145,
+                title: "Breaking Out of Hozuki Castle",
+                duration: "30m",
+                absoluteEpisode: 145
+              },
+              {
+                episode: 146,
+                title: "Executing the Prison Break",
+                duration: "30m",
+                absoluteEpisode: 146
+              },
+              {
+                episode: 147,
+                title: "The Fateful Moonlit Battle",
+                duration: "30m",
+                absoluteEpisode: 147
+              },
+              {
+                episode: 148,
+                title: "A New Mission!!",
+                duration: "30m",
+                absoluteEpisode: 148
+              },
+              {
+                episode: 149,
+                title: "Friends!!",
+                duration: "30m",
+                absoluteEpisode: 149
+              },
+              {
+                episode: 150,
+                title: "The Value of a Hidden Ace",
+                duration: "30m",
+                absoluteEpisode: 150
+              },
+              {
+                episode: 151,
+                title: "Boruto and Tento",
+                duration: "30m",
+                absoluteEpisode: 151
+              },
+              {
+                episode: 152,
+                title: "Developing One's Medical Ninjutsu",
+                duration: "30m",
+                absoluteEpisode: 152
+              },
+              {
+                episode: 153,
+                title: "Harmony in Gold",
+                duration: "30m",
+                absoluteEpisode: 153
+              },
+              {
+                episode: 154,
+                title: "Himawari's Ninja Trial Session!!",
+                duration: "30m",
+                absoluteEpisode: 154
+              },
+              {
+                episode: 155,
+                title: "Mitsuki's Rainy Day",
+                duration: "30m",
+                absoluteEpisode: 155
+              },
+              {
+                episode: 156,
+                title: "I Can't Stay in My Slim Form",
+                duration: "30m",
+                absoluteEpisode: 156
+              },
+              {
+                episode: 157,
+                title: "Kara's Footprints",
+                duration: "30m",
+                absoluteEpisode: 157
+              },
+              {
+                episode: 158,
+                title: "The Man Who Disappeared",
+                duration: "30m",
+                absoluteEpisode: 158
+              },
+              {
+                episode: 159,
+                title: "The Hashirama Cell",
+                duration: "30m",
+                absoluteEpisode: 159
+              },
+              {
+                episode: 160,
+                title: "To The Land of Silence",
+                duration: "30m",
+                absoluteEpisode: 160
+              },
+              {
+                episode: 161,
+                title: "The Castle of Nightmares",
+                duration: "30m",
+                absoluteEpisode: 161
+              },
+              {
+                episode: 162,
+                title: "Escaping the Tightening Net",
+                duration: "30m",
+                absoluteEpisode: 162
+              },
+              {
+                episode: 163,
+                title: "The Pursuers",
+                duration: "30m",
+                absoluteEpisode: 163
+              },
+              {
+                episode: 164,
+                title: "The Forbidden Jutsu of Death",
+                duration: "30m",
+                absoluteEpisode: 164
+              },
+              {
+                episode: 165,
+                title: "The Quadruplets' Duty",
+                duration: "30m",
+                absoluteEpisode: 165
+              },
+              {
+                episode: 166,
+                title: "Death Match",
+                duration: "30m",
+                absoluteEpisode: 166
+              },
+              {
+                episode: 167,
+                title: "Their Decision",
+                duration: "30m",
+                absoluteEpisode: 167
+              },
+              {
+                episode: 168,
+                title: "Training Begins!",
+                duration: "30m",
+                absoluteEpisode: 168
+              },
+              {
+                episode: 169,
+                title: "A Joint Mission with the Sand",
+                duration: "30m",
+                absoluteEpisode: 169
+              },
+              {
+                episode: 170,
+                title: "A New Rasengan",
+                duration: "30m",
+                absoluteEpisode: 170
+              },
+              {
+                episode: 171,
+                title: "The Results of Training",
+                duration: "30m",
+                absoluteEpisode: 171
+              },
+              {
+                episode: 172,
+                title: "A Signature of Fear",
+                duration: "30m",
+                absoluteEpisode: 172
+              },
+              {
+                episode: 173,
+                title: "The Secret Behind the Underground Room",
+                duration: "30m",
+                absoluteEpisode: 173
+              },
+              {
+                episode: 174,
+                title: "The Revival of the Divine Tree",
+                duration: "30m",
+                absoluteEpisode: 174
+              },
+              {
+                episode: 175,
+                title: "Beyond the Limits!",
+                duration: "30m",
+                absoluteEpisode: 175
+              },
+              {
+                episode: 176,
+                title: "Blockade the A-Un Gate!",
+                duration: "30m",
+                absoluteEpisode: 176
+              },
+              {
+                episode: 177,
+                title: "The Iron Wall's Sensing System",
+                duration: "30m",
+                absoluteEpisode: 177
+              },
+              {
+                episode: 178,
+                title: "Our Fathers' Example",
+                duration: "30m",
+                absoluteEpisode: 178
+              },
+              {
+                episode: 179,
+                title: "Victor's Scheme",
+                duration: "30m",
+                absoluteEpisode: 179
+              },
+              {
+                episode: 180,
+                title: "The Assassin, Mugino",
+                duration: "30m",
+                absoluteEpisode: 180
+              },
+              {
+                episode: 181,
+                title: "The Vessel",
+                duration: "30m",
+                absoluteEpisode: 181
+              },
+              {
+                episode: 182,
+                title: "Ao",
+                duration: "30m",
+                absoluteEpisode: 182
+              },
+              {
+                episode: 183,
+                title: "The Hand",
+                duration: "30m",
+                absoluteEpisode: 183
+              },
+              {
+                episode: 184,
+                title: "Puppets",
+                duration: "30m",
+                absoluteEpisode: 184
+              },
+              {
+                episode: 185,
+                title: "Tools",
+                duration: "30m",
+                absoluteEpisode: 185
+              },
+              {
+                episode: 186,
+                title: "How You Use It",
+                duration: "30m",
+                absoluteEpisode: 186
+              },
+              {
+                episode: 187,
+                title: "Karma",
+                duration: "30m",
+                absoluteEpisode: 187
+              },
+              {
+                episode: 188,
+                title: "The Awakening",
+                duration: "30m",
+                absoluteEpisode: 188
+              },
+              {
+                episode: 189,
+                title: "Resonance",
+                duration: "30m",
+                absoluteEpisode: 189
+              },
+              {
+                episode: 190,
+                title: "Escape",
+                duration: "30m",
+                absoluteEpisode: 190
+              },
+              {
+                episode: 191,
+                title: "A Stray Dog",
+                duration: "30m",
+                absoluteEpisode: 191
+              },
+              {
+                episode: 192,
+                title: "The Past",
+                duration: "30m",
+                absoluteEpisode: 192
+              },
+              {
+                episode: 193,
+                title: "Coexistence",
+                duration: "30m",
+                absoluteEpisode: 193
+              },
+              {
+                episode: 194,
+                title: "The Uzumaki Household",
+                duration: "30m",
+                absoluteEpisode: 194
+              },
+              {
+                episode: 195,
+                title: "A Vase",
+                duration: "30m",
+                absoluteEpisode: 195
+              },
+              {
+                episode: 196,
+                title: "A Binding Force",
+                duration: "30m",
+                absoluteEpisode: 196
+              },
+              {
+                episode: 197,
+                title: "Delta",
+                duration: "30m",
+                absoluteEpisode: 197
+              },
+              {
+                episode: 198,
+                title: "Monsters",
+                duration: "30m",
+                absoluteEpisode: 198
+              },
+              {
+                episode: 199,
+                title: "Overload",
+                duration: "30m",
+                absoluteEpisode: 199
+              },
+              {
+                episode: 200,
+                title: "Apprentice",
+                duration: "30m",
+                absoluteEpisode: 200
+              },
+              {
+                episode: 201,
+                title: "Empty Tears",
+                duration: "30m",
+                absoluteEpisode: 201
+              },
+              {
+                episode: 202,
+                title: "The Cult",
+                duration: "30m",
+                absoluteEpisode: 202
+              },
+              {
+                episode: 203,
+                title: "Surprise Attack...!!",
+                duration: "30m",
+                absoluteEpisode: 203
+              },
+              {
+                episode: 204,
+                title: "He's Bad News",
+                duration: "30m",
+                absoluteEpisode: 204
+              },
+              {
+                episode: 205,
+                title: "Proof",
+                duration: "30m",
+                absoluteEpisode: 205
+              },
+              {
+                episode: 206,
+                title: "The New Team Seven",
+                duration: "30m",
+                absoluteEpisode: 206
+              },
+              {
+                episode: 207,
+                title: "Regeneration",
+                duration: "30m",
+                absoluteEpisode: 207
+              },
+              {
+                episode: 208,
+                title: "Momoshiki Manifestation",
+                duration: "30m",
+                absoluteEpisode: 208
+              },
+              {
+                episode: 209,
+                title: "The Outcast",
+                duration: "30m",
+                absoluteEpisode: 209
+              },
+              {
+                episode: 210,
+                title: "Clues to Kara",
+                duration: "30m",
+                absoluteEpisode: 210
+              },
+              {
+                episode: 211,
+                title: "The Chase",
+                duration: "30m",
+                absoluteEpisode: 211
+              },
+              {
+                episode: 212,
+                title: "Amado's Defection",
+                duration: "30m",
+                absoluteEpisode: 212
+              },
+              {
+                episode: 213,
+                title: "True Identity",
+                duration: "30m",
+                absoluteEpisode: 213
+              },
+              {
+                episode: 214,
+                title: "Predestined Fate",
+                duration: "30m",
+                absoluteEpisode: 214
+              },
+              {
+                episode: 215,
+                title: "Prepared",
+                duration: "30m",
+                absoluteEpisode: 215
+              },
+              {
+                episode: 216,
+                title: "Sacrifice",
+                duration: "30m",
+                absoluteEpisode: 216
+              },
+              {
+                episode: 217,
+                title: "Decision",
+                duration: "30m",
+                absoluteEpisode: 217
+              },
+              {
+                episode: 218,
+                title: "Partner",
+                duration: "30m",
+                absoluteEpisode: 218
+              },
+              {
+                episode: 219,
+                title: "Return",
+                duration: "30m",
+                absoluteEpisode: 219
+              },
+              {
+                episode: 220,
+                title: "Remaining Time",
+                duration: "30m",
+                absoluteEpisode: 220
+              },
+              {
+                episode: 221,
+                title: "The Chunin Exams Resume",
+                duration: "30m",
+                absoluteEpisode: 221
+              },
+              {
+                episode: 222,
+                title: "The Night Before The Final Round",
+                duration: "30m",
+                absoluteEpisode: 222
+              },
+              {
+                episode: 223,
+                title: "Inojin vs. Houki",
+                duration: "30m",
+                absoluteEpisode: 223
+              },
+              {
+                episode: 224,
+                title: "The Legend of the Monster Cat",
+                duration: "30m",
+                absoluteEpisode: 224
+              },
+              {
+                episode: 225,
+                title: "Showdown Between Best Friends",
+                duration: "30m",
+                absoluteEpisode: 225
+              },
+              {
+                episode: 226,
+                title: "Samurai vs. Science",
+                duration: "30m",
+                absoluteEpisode: 226
+              },
+              {
+                episode: 227,
+                title: "Team 7's Last Mission?!",
+                duration: "30m",
+                absoluteEpisode: 227
+              },
+              {
+                episode: 228,
+                title: "Kawaki, the Path to Shinobi",
+                duration: "30m",
+                absoluteEpisode: 228
+              },
+              {
+                episode: 229,
+                title: "Order Violation",
+                duration: "30m",
+                absoluteEpisode: 229
+              },
+              {
+                episode: 230,
+                title: "A Wish",
+                duration: "30m",
+                absoluteEpisode: 230
+              },
+              {
+                episode: 231,
+                title: "The Rusty Sword",
+                duration: "30m",
+                absoluteEpisode: 231
+              },
+              {
+                episode: 232,
+                title: "Captain Denki's First Mission",
+                duration: "30m",
+                absoluteEpisode: 232
+              },
+              {
+                episode: 233,
+                title: "The New Team 7 Jumps Into Action",
+                duration: "30m",
+                absoluteEpisode: 233
+              },
+              {
+                episode: 234,
+                title: "The Unleashed Villain",
+                duration: "30m",
+                absoluteEpisode: 234
+              },
+              {
+                episode: 235,
+                title: "Infiltrating Dotou Island",
+                duration: "30m",
+                absoluteEpisode: 235
+              },
+              {
+                episode: 236,
+                title: "Cut and Run",
+                duration: "30m",
+                absoluteEpisode: 236
+              },
+              {
+                episode: 237,
+                title: "The Mobile Fortress",
+                duration: "30m",
+                absoluteEpisode: 237
+              },
+              {
+                episode: 238,
+                title: "A Killer on the Ship",
+                duration: "30m",
+                absoluteEpisode: 238
+              },
+              {
+                episode: 239,
+                title: "The Boy from the Isle of Shipbuilders",
+                duration: "30m",
+                absoluteEpisode: 239
+              },
+              {
+                episode: 240,
+                title: "Ikada's Dream",
+                duration: "30m",
+                absoluteEpisode: 240
+              },
+              {
+                episode: 241,
+                title: "Ikada's Secret",
+                duration: "30m",
+                absoluteEpisode: 241
+              },
+              {
+                episode: 242,
+                title: "Seiren",
+                duration: "30m",
+                absoluteEpisode: 242
+              },
+              {
+                episode: 243,
+                title: "Where I Belong",
+                duration: "30m",
+                absoluteEpisode: 243
+              },
+              {
+                episode: 244,
+                title: "Rift",
+                duration: "30m",
+                absoluteEpisode: 244
+              },
+              {
+                episode: 245,
+                title: "Funamushi's Tenacity",
+                duration: "30m",
+                absoluteEpisode: 245
+              },
+              {
+                episode: 246,
+                title: "A Heavy Loss",
+                duration: "30m",
+                absoluteEpisode: 246
+              },
+              {
+                episode: 247,
+                title: "For Kagura",
+                duration: "30m",
+                absoluteEpisode: 247
+              },
+              {
+                episode: 248,
+                title: "Another Fierce Battle",
+                duration: "30m",
+                absoluteEpisode: 248
+              },
+              {
+                episode: 249,
+                title: "Burgeoning Hatred",
+                duration: "30m",
+                absoluteEpisode: 249
+              },
+              {
+                episode: 250,
+                title: "The Blood of the Funato",
+                duration: "30m",
+                absoluteEpisode: 250
+              },
+              {
+                episode: 251,
+                title: "Their Resolve",
+                duration: "30m",
+                absoluteEpisode: 251
+              },
+              {
+                episode: 252,
+                title: "The Desire to Believe",
+                duration: "30m",
+                absoluteEpisode: 252
+              },
+              {
+                episode: 253,
+                title: "Conflicting Feelings",
+                duration: "30m",
+                absoluteEpisode: 253
+              },
+              {
+                episode: 254,
+                title: "The Spiral of Revenge",
+                duration: "30m",
+                absoluteEpisode: 254
+              },
+              {
+                episode: 255,
+                title: "A Tricky Assignment",
+                duration: "30m",
+                absoluteEpisode: 255
+              },
+              {
+                episode: 256,
+                title: "The Ultimate Recipe",
+                duration: "30m",
+                absoluteEpisode: 256
+              },
+              {
+                episode: 257,
+                title: "Konohamaru Becomes the Hokage?!",
+                duration: "30m",
+                absoluteEpisode: 257
+              },
+              {
+                episode: 258,
+                title: "The Uzumaki Family's Hot Springs Vacation",
+                duration: "30m",
+                absoluteEpisode: 258
+              },
+              {
+                episode: 259,
+                title: "Unhealing Wounds",
+                duration: "30m",
+                absoluteEpisode: 259
+              },
+              {
+                episode: 260,
+                title: "Fireworks of Love",
+                duration: "30m",
+                absoluteEpisode: 260
+              },
+              {
+                episode: 261,
+                title: "Kawaki Enters the Ninja Academy",
+                duration: "30m",
+                absoluteEpisode: 261
+              },
+              {
+                episode: 262,
+                title: "The Princess's Tea Party",
+                duration: "30m",
+                absoluteEpisode: 262
+              },
+              {
+                episode: 263,
+                title: "Bloom, Hana! The Teacher's Gifts",
+                duration: "30m",
+                absoluteEpisode: 263
+              },
+              {
+                episode: 264,
+                title: "The Seven Mysteries Investigative Team Forms!",
+                duration: "30m",
+                absoluteEpisode: 264
+              },
+              {
+                episode: 265,
+                title: "Team Rivalry: Practical Skills Training!",
+                duration: "30m",
+                absoluteEpisode: 265
+              },
+              {
+                episode: 266,
+                title: "Himawari Kidnapped!",
+                duration: "30m",
+                absoluteEpisode: 266
+              },
+              {
+                episode: 267,
+                title: "Kawaki's Cover Blown?!",
+                duration: "30m",
+                absoluteEpisode: 267
+              },
+              {
+                episode: 268,
+                title: "Target: The School Festival",
+                duration: "30m",
+                absoluteEpisode: 268
+              },
+              {
+                episode: 269,
+                title: "The Sneaking Shadow",
+                duration: "30m",
+                absoluteEpisode: 269
+              },
+              {
+                episode: 270,
+                title: "Two Sides of the Same Coin",
+                duration: "30m",
+                absoluteEpisode: 270
+              },
+              {
+                episode: 271,
+                title: "The Island of Treachery",
+                duration: "30m",
+                absoluteEpisode: 271
+              },
+              {
+                episode: 272,
+                title: "Students Unite!",
+                duration: "30m",
+                absoluteEpisode: 272
+              },
+              {
+                episode: 273,
+                title: "Farewell, Academy!",
+                duration: "30m",
+                absoluteEpisode: 273
+              },
+              {
+                episode: 274,
+                title: "A Flightless Hawk",
+                duration: "30m",
+                absoluteEpisode: 274
+              },
+              {
+                episode: 275,
+                title: "Into the Sky Again",
+                duration: "30m",
+                absoluteEpisode: 275
+              },
+              {
+                episode: 276,
+                title: "Welcome to the Maze",
+                duration: "30m",
+                absoluteEpisode: 276
+              },
+              {
+                episode: 277,
+                title: "Disappearing Lives",
+                duration: "30m",
+                absoluteEpisode: 277
+              },
+              {
+                episode: 278,
+                title: "Musical Chairs",
+                duration: "30m",
+                absoluteEpisode: 278
+              },
+              {
+                episode: 279,
+                title: "The Obstacle: Seven",
+                duration: "30m",
+                absoluteEpisode: 279
+              },
+              {
+                episode: 280,
+                title: "Breakthrough",
+                duration: "30m",
+                absoluteEpisode: 280
+              },
+              {
+                episode: 281,
+                title: "The Eighth Truth",
+                duration: "30m",
+                absoluteEpisode: 281
+              },
+              {
+                episode: 282,
+                title: "Sasuke's Story: Infiltration",
+                duration: "30m",
+                absoluteEpisode: 282
+              },
+              {
+                episode: 283,
+                title: "Sasuke's Story: Star Lines",
+                duration: "30m",
+                absoluteEpisode: 283
+              },
+              {
+                episode: 284,
+                title: "Sasuke's Story: The Secret in the Cellar",
+                duration: "30m",
+                absoluteEpisode: 284
+              },
+              {
+                episode: 285,
+                title: "Sasuke's Story: The Sky that Fell to the Earth",
+                duration: "30m",
+                absoluteEpisode: 285
+              },
+              {
+                episode: 286,
+                title: "Sasuke's Story: The Ring",
+                duration: "30m",
+                absoluteEpisode: 286
+              },
+              {
+                episode: 287,
+                title: "Claw Marks",
+                duration: "30m",
+                absoluteEpisode: 287
+              },
+              {
+                episode: 288,
+                title: "Captives",
+                duration: "30m",
+                absoluteEpisode: 288
+              },
+              {
+                episode: 289,
+                title: "Qualifications",
+                duration: "30m",
+                absoluteEpisode: 289
+              },
+              {
+                episode: 290,
+                title: "Presence",
+                duration: "30m",
+                absoluteEpisode: 290
+              },
+              {
+                episode: 291,
+                title: "Control",
+                duration: "30m",
+                absoluteEpisode: 291
+              },
+              {
+                episode: 292,
+                title: "Hunger",
+                duration: "30m",
+                absoluteEpisode: 292
+              },
+              {
+                episode: 293,
+                title: "Farewell",
+                duration: "30m",
+                absoluteEpisode: 293
+              }
+            ]
+          }
+        ]
+      }
 ]
