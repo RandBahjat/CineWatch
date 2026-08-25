@@ -548,7 +548,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/xktdBsGfPQWl4DG3QLXpOB1Xd8u.jpg",
     videoUrl: "1291595",
-    overview: "A family of four is suddenly sealed inside their home with no way out. With every door and window rendered impossible to escape, their safe haven quickly transforms into a prison as supplies dwindle and an unseen force outside refuses to let them leave. As fear, desperation, and suspicion tear the family apart, they must work together to uncover the truth behind the mysterious phenomenon before time runs out.",
+    overview: "Sixth entry in horror franchise. Gemma, young mother, got dangerous ability to travel into spirit realm called The Further. Worse part—demons follow her back to living world! Gemma must protect young daughter Maya and team up with iconic medium Elise Rainier to stop evil dark forces.",
     director: "Louis Leterrier",
     cast: [
       "Greta Lee, Wagner Moura, Riley Chung, Emma Ho, Noah Alexander Sosnowski, Gabriel Barbosa, Sam Lerner, Arden Cho"
