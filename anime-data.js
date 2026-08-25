@@ -9804,7 +9804,7 @@ window._ANIME_DATA = [
         isAnime: true,
         year: 2002,
         rating: 8.4,
-        age: "TV-14",
+        age: "TV-PG",
         duration: "24m",
         genres: [
           "Animation",
