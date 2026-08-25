@@ -8638,7 +8638,7 @@ window._SERIES_DATA = [
           }
           {
             episode: 10,
-            title: 'The Town Council'
+            title: 'The Blue Crown'
           }
         ]
       },
