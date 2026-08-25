@@ -11430,8 +11430,8 @@ window._MOVIES_DATA = [
   {
     title: "The Informer",
     type: "Movie",
-    year: 2014,
-    rating: 6.5,
+    year: 2019,
+    rating: 6.6,
     age: "R",
     duration: "1h 54m",
     genres: [
