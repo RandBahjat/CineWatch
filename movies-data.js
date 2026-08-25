@@ -11086,7 +11086,7 @@ window._MOVIES_DATA = [
     year: 2015,
     rating: 7.7,
     age: "PG",
-    duration: "1h 52m",
+    duration: "1h 35m",
     genres: [
       "Action",
       "Animation",
