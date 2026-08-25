@@ -8533,19 +8533,19 @@ window._SERIES_DATA = [
           {
             episode: 6,
             title: 'My Druthers'
-          }
+          },
           {
             episode: 7,
             title: 'The Bonfire'
-          }
+          },
           {
             episode: 8,
             title: 'The Cross'
-          }
+          },
           {
             episode: 9,
             title: 'Trapped'
-          }
+          },
           {
             episode: 10,
             title: 'The Coastal Venture'
