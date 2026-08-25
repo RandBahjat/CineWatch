@@ -11083,7 +11083,7 @@ window._MOVIES_DATA = [
   {
     title: "Boruto: Naruto the Movie",
     type: "Movie",
-    year: 2014,
+    year: 2015,
     rating: 7.6,
     age: "TV-14",
     duration: "1h 52m",
