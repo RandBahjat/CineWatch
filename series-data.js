@@ -2523,6 +2523,43 @@ window._SERIES_DATA = [
           }
         ]
       },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: 'Beware the Old Soldier'
+          },
+          {
+            episode: 2,
+            title: 'I Love My Country'
+          },
+          {
+            episode: 3,
+            title: 'Along Came a Spider'
+          },
+          {
+            episode: 4,
+            title: 'Five Hundred Children'
+          },
+          {
+            episode: 5,
+            title: 'Shatter the Moon'
+          },
+          {
+            episode: 6,
+            title: "2381"
+          },
+          {
+            episode: 7,
+            title: 'The Devil Has Aces'
+          },
+          {
+            episode: 8,
+            title: 'The Compass Points Home'
+          }
+        ]
+      },
     ]
   },
   {
