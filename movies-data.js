@@ -11205,7 +11205,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bBqEiQbbfyt4MWR3NhDZMbS4Wp8.jpg",
     backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/dWJODZjSkCwyGcp1WFZJdonZ6hP.jpg",
     videoUrl: "17581",
-    overview: "Naruto frame for attack on Raikage, lock up in Hōzuki Castle, secret prison ran by mysterious warden. Must clear name, uncover real plot, escape before execution.",
+    overview: "Hidden Sky Village launch surprise attack on Leaf Village using ancient flying fortress, force Naruto team confront enemy connected to Neji's past. Team must protect village, uncover truth behind old grudge.",
     director: "Masahiko Murata",
     cast: [
       "Junko Takeuchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue, Hidekatsu Shibata"
