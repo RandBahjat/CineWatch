@@ -2458,7 +2458,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 2,
-            title: 'Call of the Cobblepot'
+            title: 'The Beating'
           },
           {
             episode: 3,
