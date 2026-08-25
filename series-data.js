@@ -2474,7 +2474,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: "The Cat and the Bat'"
+            title: "The Lie Is the Truth'"
           },
           {
             episode: 7,
