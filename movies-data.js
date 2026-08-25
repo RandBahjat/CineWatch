@@ -11139,7 +11139,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 2007,
     rating: 6.7,
-    age: "TV-14",
+    age: "",
     duration: "1h 49m",
     genres: [
       "Action",
