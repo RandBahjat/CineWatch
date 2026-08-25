@@ -8682,7 +8682,7 @@ window._SERIES_DATA = [
             title: 'The Big Easy'
           }
           {
-            episode: 6,
+            episode: 10,
             title: 'The Big Easy'
           }
         ]
