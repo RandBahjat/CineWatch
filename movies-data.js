@@ -11216,7 +11216,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Naruto Shippuden the Movie: Bonds",
+    title: "Naruto Shippuden the Movie: The Lost Tower",
     type: "Movie",
     year: 2008,
     rating: 6.8,
