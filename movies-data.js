@@ -11285,7 +11285,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/itKMldwL6uhUZYO3X78NOFU4zzO.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ldwWnaWoW8ziEFflimoraZouyvB.jpg",
-    videoUrl: "169",
+    videoUrl: "16910",
     overview: "Ninja with rare bloodline power start vanish from villages guard Cloud, Stone, Mist, Sand, spark suspicion, threat of new ninja war. Kakashi vanish too, chase real culprit, Naruto fight to save him, stop war before break out.",
     director: "Masahiko Murata",
     cast: [
