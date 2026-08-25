@@ -11410,7 +11410,8 @@ window._MOVIES_DATA = [
     duration: "1h 54m",
     genres: [
       "Crime",
-      "Drama"
+      "Thriller",
+      ""
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9OkCLM73MIU2CrKZbqiT8Ln1wY2.jpg",
