@@ -8535,11 +8535,11 @@ window._SERIES_DATA = [
             title: 'My Druthers'
           }
           {
-            episode: 6,
+            episode: 7,
             title: 'My Druthers'
           }
           {
-            episode: 6,
+            episode: 8,
             title: 'My Druthers'
           }
           {
