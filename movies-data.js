@@ -11435,7 +11435,7 @@ window._MOVIES_DATA = [
     age: "R",
     duration: "1h 53m",
     genres: [
-      ""
+      "Action",
       "Crime",
       "Thriller",
 
