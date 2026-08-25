@@ -11351,9 +11351,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Naruto the Movie: Guardians of the Crescent Moon Kingdom",
+    title: "The Good, the Bad and the Ugly",
     type: "Movie",
-    year: 2006,
+    year: 1966,
     rating: 6.3,
     age: "TV-14",
     duration: "1h 35m",
