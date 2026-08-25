@@ -20,7 +20,7 @@ window._MOVIES_DATA = [
     overview: "Ex-Special Forces agent Cole Reed see billionaire industrialist boss framed and murdered in front of him. Forced on run as chief suspect, Reed uncover massive international conspiracy while hunted by corrupt government operatives and dangerous mercenaries. Must fight to survive and expose real killer.",
     director: "Jean-François Richet",
     cast: [
-      "Seth Rogen, Olivia Wilde, Penélope Cruz, Edward Norton"
+      "Jason Statham, Annabelle Wallis, Jason Wong"
     ],
     trending: true,
     featured: true,
