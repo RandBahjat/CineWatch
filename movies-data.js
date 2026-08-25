@@ -11242,6 +11242,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Naruto Shippuden the Movie: The Lost Tower",
+    type: "Movie",
+    year: 2010,
+    rating: 6.8,
+    age: "TV-PG",
+    duration: "1h 25m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy",
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6e2YvN1tQK4xQHlmy7GJTuXOt2u.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/hXTAuNHRfznJUY436DUemMmDZJX.jpg",
+    videoUrl: "50723",
+    overview: "Naruto get swept back in time twenty year, land in war torn era. Team up with young Minato, his future father, though not know it yet, must stop rogue ninja from changing history.",
+    director: "Masahiko Murata",
+    cast: [
+      "Junko Takeuchi, Kappei Yamaguchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
