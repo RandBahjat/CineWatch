@@ -9817,7 +9817,7 @@ window._ANIME_DATA = [
         videoUrl: "46260",
         anilistId: 20,
         animeSlug: "naruto",
-        overview: "In another world, ninja are the ultimate power, and in the Village Hidden in the Leaves live the stealthiest ninja in the land. Twelve years earlier, the fearsome Nine-Tailed Fox terrorized the village and claimed many lives before it was subdued and its spirit sealed within the body of a baby boy. That boy, Naruto Uzumaki, has grown up to become a ninja-in-training who's more interested in pranks than in studying ninjutsu.. but Naruto is determined to become the greatest ninja ever!",
+        overview: "Naruto Uzumaki, young ninja with sealed nine-tailed fox spirit inside him, dream become strongest ninja, earn respect as Hokage, leader of his village. Chase acceptance, fight rival, grow strong through many battle, deep bond of friendship.",
         director: "Masashi Kishimoto",
         cast: [
           "Junko Takeuchi",
