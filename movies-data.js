@@ -11380,7 +11380,7 @@ window._MOVIES_DATA = [
     title: "GoodFellas",
     type: "Movie",
     year: 1990,
-    rating: 8.8,
+    rating: 8.7,
     age: "R",
     duration: "2h 58m",
     genres: [
