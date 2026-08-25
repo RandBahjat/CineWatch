@@ -7720,7 +7720,7 @@ window._ANIME_DATA = [
       "Fantasy"
     ],
     "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/qEUrbXJ2qt4Rg84Btlx4STOhgte.jpg",
-    "backdrop": "https://www.themoviedb.org/t/p/original/j1VBLrS2806qW3lV8G6u19KAnQk.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/j6RVYpovoPsk269DANJkAerHpzg.jpg",
     "description": "Dragon Ball Super, a brand new television anime inspired by Akira Toriyama's Dragon Ball manga, will premiere on Fuji TV and other channels in July on Sundays at 9:00 a.m. This will be the first new Dragon Ball television series since Dragon Ball GT, which aired from 1996 to 1997.The story of the anime is set a few years after the defeat of Majin Buu, when the Earth has become peaceful once again. The voice of Goku, Gohan, and Goten, Masako Nozawa commented on the new anime, saying, \"We've always used the word 'chō' (Super) with Dragon Ball in commercials, games and the like, but the fact that the series titled Dragon Ball Super is beginning is the best thing ever.\"",
     "director": "Kimitoshi Chioka",
     "cast": [
