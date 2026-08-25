@@ -11073,7 +11073,7 @@ window._MOVIES_DATA = [
     overview: "Moon bout crash into Earth, ancient enemy Toneri Ōtsutsuki plan use its power take over world, kidnap Hinata to do it. Naruto race stop him, finally see true feeling he hold for Hinata all along.",
     director: "Tsuneo Kobayashi",
     cast: [
-      "Tōru Furuya, Mayumi Tanaka, Toshio Furukawa, Hiroshi Kamiya, Megumi Han, Akemi Okamura"
+      "Junko Takeuchi, Nana Mizuki, Noriaki Sugiyama, Chie Nakamura, Kate Higgins"
     ],
     trending: false,
     featured: false,
