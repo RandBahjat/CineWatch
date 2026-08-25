@@ -2438,7 +2438,7 @@ window._SERIES_DATA = [
       'Thriller'
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg',
-    backdrop: 'https://image.tmdb.org/t/p/original/mKrhRPB7rMvy0bIU1l1NYhgh1eI.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/r0Zg70jpcDAD7IMDhVqajSnG9vb.jpg',
     videoUrl: '278624',
     overview: 'Anya Taylor-Joy play con artist finally get outsmarted herself. Series follow Luciana Lucky Armstrong after big heist collapse, husband vanish with cash, two dangerous group hunt her down for different reason.',
     director: 'Jonathan Tropper',
