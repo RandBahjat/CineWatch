@@ -11152,7 +11152,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/fJRbm6m2DDbSSyD8jTeB8evZ3Hq.jpg",
     videoUrl: "20982",
     overview: "Ancient demon seal inside young priestess start break free, threaten unleash havoc on world. Naruto team up protect her, uncover secret tie back to First Hokage, battle demon before too late.",
-    director: "Hayato Date",
+    director: "Hajime Kamegaki",
     cast: [
       "Junko Takeuchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue, Hidekatsu Shibata"
     ],
