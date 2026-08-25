@@ -1861,6 +1861,47 @@ body.rtl-layout .details-back-btn svg {
   flex-shrink: 0;
 }
 
+/* Star Rating Display in Details */
+.details-star-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.star-rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star-rating-stars ion-icon {
+  font-size: 1.25rem;
+  transition: transform 0.2s ease;
+}
+
+.star-rating-stars ion-icon:hover {
+  transform: scale(1.15);
+}
+
+.star-rating-stars .star-filled {
+  color: #f59e0b;
+  filter: drop-shadow(0 0 4px rgba(245, 158, 11, 0.4));
+}
+
+.star-rating-stars .star-empty {
+  color: #4b5563;
+}
+
+.star-rating-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #f59e0b;
+  margin-left: 0.25rem;
+  letter-spacing: 0.02em;
+}
+
 .details-cast-list {
   margin-top: 1.5rem;
   font-size: 0.95rem;
