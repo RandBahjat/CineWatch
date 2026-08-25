@@ -11183,7 +11183,7 @@ window._ANIME_DATA = [
           "Adventure",
           "Fantasy"
         ],
-        poster: "https://image.tmdb.org/t/p/w600_and_h900_face/zAYRe2bJxpWTVrwwmBc00VFkAfV.jpg",
+        poster: "https://image.tmdb.org/t/p/original/3V7kzJX7hvF0H9CDJsgcWKXTSsR.jpg",
         backdrop: "https://image.tmdb.org/t/p/original/7uHujbHkYBFwaRNiBeJ07mDdmyl.jpg",
         videoUrl: "31910",
         anilistId: 114,
