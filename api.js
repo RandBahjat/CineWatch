@@ -221,6 +221,69 @@ window.CW_API = {
     } catch (e) {
       return { success: false, error: e.message };
     }
+  },
+
+  async getRatingsStats(movieId) {
+    try {
+      const { data, error } = await supabaseClient
+        .from('ratings')
+        .select('rating')
+        .eq('movie_id', movieId);
+      
+      if (error) throw error;
+      
+      if (!data || data.length === 0) {
+        return { average: 0, totalRatings: 0 };
+      }
+      
+      const total = data.reduce((sum, item) => sum + Number(item.rating), 0);
+      return {
+        average: total / data.length,
+        totalRatings: data.length
+      };
+    } catch (e) {
+      console.warn("Failed to get ratings stats:", e);
+      return { average: 0, totalRatings: 0 };
+    }
+  },
+
+  async getUserRating(movieId) {
+    try {
+      const user = await this.getCurrentUser();
+      if (!user) return null;
+
+      const { data, error } = await supabaseClient
+        .from('ratings')
+        .select('rating')
+        .eq('movie_id', movieId)
+        .eq('user_id', user.id)
+        .maybeSingle();
+
+      if (error) throw error;
+      return data ? data.rating : null;
+    } catch (e) {
+      return null;
+    }
+  },
+
+  async postRating(movieId, rating) {
+    try {
+      const user = await this.getCurrentUser();
+      if (!user) return { success: false, error: 'Not logged in' };
+
+      const { error } = await supabaseClient
+        .from('ratings')
+        .upsert({
+          movie_id: movieId,
+          user_id: user.id,
+          rating: rating
+        }, { onConflict: 'movie_id,user_id' });
+
+      if (error) throw error;
+      return { success: true };
+    } catch (e) {
+      return { success: false, error: e.message };
+    }
   }
 };
 
