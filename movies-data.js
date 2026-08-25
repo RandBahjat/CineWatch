@@ -15,7 +15,7 @@ window._MOVIES_DATA = [
       "Thriller"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/aAnTt6KpmbbHbd6xH3FQFlppZjc.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/e2QAGrEmbpmZpMymDRkDisJkvg9.jpg",
     videoUrl: "950028",
     overview: "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places — testing the fragile boundaries between their relationship, their neighbors, and everything they thought they wanted.",
     director: "Olivia Wilde",
