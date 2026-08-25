@@ -2479,10 +2479,10 @@ window._SERIES_DATA = [
           {
             episode: 7,
             title: 'Wish the Fight Away'
-          }
+          },
           {
             episode: 8,
-            title: 'Wish the Fight Away'
+            title: 'Gone Is the Illusion of Order'
           }
         ]
       }
