@@ -11095,7 +11095,7 @@ window._MOVIES_DATA = [
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1k6iwC4KaPvTBt1JuaqXy3noZRY.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/vEiDUw5a1wDZVR3PjZaq8AXhF3r.jpg",
+    backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/niG1LY5qQwDG4S8l5CBAaFl2XjL.jpg",
     videoUrl: "347201",
     overview: "Boruto, Naruto's son, resent father for always busy being Hokage, never around. When new enemy attack during ninja tournament, Boruto must fight alongside father, learn what it really mean carry ninja legacy.",
     director: "Hiroyuki Yamashita",
