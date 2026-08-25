@@ -8606,7 +8606,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 2,
-            title: 'Heathens'
+            title: 'Blackbeard'
           },
           {
             episode: 3,
