@@ -8625,15 +8625,15 @@ window._SERIES_DATA = [
             title: 'The Town Council'
           }
           {
-            episode: 6,
+            episode: 7,
             title: 'The Town Council'
           }
           {
-            episode: 6,
+            episode: 8,
             title: 'The Town Council'
           }
           {
-            episode: 6,
+            episode: 9,
             title: 'The Town Council'
           }
           {
