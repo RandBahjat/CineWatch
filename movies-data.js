@@ -11391,7 +11391,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9OkCLM73MIU2CrKZbqiT8Ln1wY2.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/x1Ohy5LGhy67rRjbXUM1DNDAICA.jpg",
     videoUrl: "769",
-    overview: "Three gunslinger — one good, one bad, one just plain ugly — chase after buried Confederate gold during Civil War. Alliance shift, betrayal pile up, all lead to legendary three-way standoff.",
+    overview: "Henry Hill rise through ranks of mob from young age, live fast life of money, power, violence alongside Jimmy Conway, Tommy DeVito. Loyalty, greed, paranoia eat away at friendship, world start crumble around him.",
     director: "Sergio Leone",
     cast: [
       "Clint Eastwood, Eli Wallach, Lee Van Cleef, Aldo Giuffrè, Luigi Pistilli"
