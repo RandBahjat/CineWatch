@@ -11440,7 +11440,7 @@ window._MOVIES_DATA = [
       "Thriller"
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/euPgyPsiNFp6gOBB7nUFxvN5ZaY.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/pbGveUC8mk0QRkdXpERPLbMFnrg.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/isrro0soStk2tSWMsI50lPPhUsU.jpg",
     videoUrl: "169917",
     overview: "Ex-cop turn unlicensed private eye, Matt Scudder, hire by drug trafficker track down men who kidnap, kill his wife. Dig deep into dark case, uncover twisted pair of killer target family of criminal.",
