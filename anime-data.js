@@ -1,4 +1,4 @@
-// CineWatch - Anime Data
+﻿// CineWatch - Anime Data
 window._ANIME_DATA = [
   {
     "title": "Dragon Ball DAIMA",
@@ -14,7 +14,7 @@ window._ANIME_DATA = [
       "Adventure",
       "Fantasy"
     ],
-    "poster": "https://image.tmdb.org/t/p/w600_and_h900_face/1EULhO08Xm7kGf5Sg0jQjZAYZgT.jpg",
+    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/lMULbSFZNXUC87MqOZQ4SSV9DXI.jpg",
     "backdrop": "https://image.tmdb.org/t/p/original/8OQyL2g90Gz0o2X1QfFp9b4XQv0.jpg",
     "videoUrl": "236994",
     "animeSlug": "dragon-ball-daima",
