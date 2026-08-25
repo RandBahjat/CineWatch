@@ -11273,7 +11273,7 @@ window._MOVIES_DATA = [
     title: "Naruto the Movie: Legend of the Stone of Gelel",
     type: "Movie",
     year: 2005,
-    rating: 7.0,
+    rating: 6.3,
     age: "PG-13",
     duration: "1h 35m",
     genres: [
