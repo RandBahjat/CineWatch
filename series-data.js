@@ -8622,7 +8622,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: 'The Company'
+            title: 'The Town Council'
           }
         ]
       },
