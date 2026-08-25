@@ -11059,7 +11059,7 @@ window._MOVIES_DATA = [
     year: 2014,
     rating: 7.6,
     age: "TV-14",
-    duration: "1h 47m",
+    duration: "1h 52m",
     genres: [
       "Action",
       "Animation",
