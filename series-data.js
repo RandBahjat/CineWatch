@@ -8672,11 +8672,11 @@ window._SERIES_DATA = [
           {
             episode: 7,
             title: 'Bal des Sauvages'
-          }
+          },
           {
             episode: 8,
-            title: 'Th,e Runway Part 2'
-          }
+            title: 'The Runway Part 2'
+          },
           {
             episode: 9,
             title: 'Arise, Arise'
