@@ -11289,7 +11289,7 @@ window._MOVIES_DATA = [
     overview: "Naruto, team find ancient meteorite call Stone of Gelel, source of great power warlord want use conquer land, cheat death itself. Must stop him, protect young prince, prevent stone fall into wrong hand.",
     director: "Toshiyuki Tsuru",
     cast: [
-      "Junko Takeuchi, Chie Nakamura, Kazuhiko Inoue, Noriaki Sugiyama, Nana Mizuki"
+      "Junko Takeuchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue, Hidekatsu Shibata"
     ],
     trending: false,
     featured: false,
