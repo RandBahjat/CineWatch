@@ -11151,7 +11151,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vDkct38sSFSWJIATlfJw0l3QOIR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/fJRbm6m2DDbSSyD8jTeB8evZ3Hq.jpg",
     videoUrl: "20982",
-    overview: "Alternate world jutsu send Naruto, Sakura into parallel dimension where their life gone totally different — Naruto's parent alive, Sakura's dead. Both face masked villain, Tobi, learn appreciate world, family they actually have.",
+    overview: "Ancient demon seal inside young priestess start break free, threaten unleash havoc on world. Naruto team up protect her, uncover secret tie back to First Hokage, battle demon before too late.",
     director: "Hayato Date",
     cast: [
       "Junko Takeuchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue, Hidekatsu Shibata"
