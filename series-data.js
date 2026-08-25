@@ -8471,7 +8471,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 2,
-            title: 'Episode #1.2'
+            title: 'The Lucky Compass'
           },
           {
             episode: 3,
