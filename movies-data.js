@@ -11355,7 +11355,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 1966,
     rating: 8.8,
-    age: "TV-14",
+    age: "R",
     duration: "1h 35m",
     genres: [
       "Action",
