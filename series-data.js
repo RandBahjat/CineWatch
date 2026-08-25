@@ -2434,7 +2434,6 @@ window._SERIES_DATA = [
     duration: '42m',
     genres: [
       'Action',
-      'Crime',
       'Drama',
       'Thriller'
     ],
