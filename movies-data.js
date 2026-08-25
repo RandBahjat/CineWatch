@@ -534,7 +534,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "The Last House",
+    title: "Insidious: Out of the Further",
     type: "Movie",
     year: 2026,
     rating: 5.5,
