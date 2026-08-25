@@ -11329,7 +11329,7 @@ window._MOVIES_DATA = [
     year: 2006,
     rating: 6.3,
     age: "TV-14",
-    duration: "1h 22m",
+    duration: "1h 35m",
     genres: [
       "Action",
       "Animation",
