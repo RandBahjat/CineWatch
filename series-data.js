@@ -8647,7 +8647,7 @@ window._SERIES_DATA = [
         episodes: [
           {
             episode: 1,
-            title: 'Black Tuesday'
+            title: 'The Crossing'
           },
           {
             episode: 2,
