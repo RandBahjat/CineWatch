@@ -8392,5 +8392,361 @@ window._ANIME_DATA = [
         ]
       }
     ]
+  },
+  {
+    title: "Dragon Ball GT",
+    type: "TV Show",
+    isAnime: true,
+    year: 1996,
+    rating: 7.5,
+    age: "TV-14",
+    duration: "24m",
+    genres: [
+      "Animation",
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/1E6gE9dE4E3oWdK1FzMhNf0c6fJ.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/9r1wUoGqM4Y14v170uN25N7hF6D.jpg",
+    overview: "Ten years have passed since Goku left Earth to train Uub. However, Pilaf has returned, and this time he's stolen the Black Star Dragon Balls...",
+    director: "Osamu Kasai",
+    cast: [
+      "Masako Nozawa, Yūko Minaguchi, Takeshi Kusao"
+    ],
+    tags: [
+      "Animation",
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    videoUrl: "12697",
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "A Devastating Wish",
+            duration: "24m"
+          },
+          {
+            episode: 2,
+            title: "Pan Blasts Off",
+            duration: "24m"
+          },
+          {
+            episode: 3,
+            title: "Terror on Imecka",
+            duration: "24m"
+          },
+          {
+            episode: 4,
+            title: "The Most Wanted List",
+            duration: "24m"
+          },
+          {
+            episode: 5,
+            title: "Goku vs. Ledgic",
+            duration: "24m"
+          },
+          {
+            episode: 6,
+            title: "Like Pulling Teeth",
+            duration: "24m"
+          },
+          {
+            episode: 7,
+            title: "Trunks, The Bride",
+            duration: "24m"
+          },
+          {
+            episode: 8,
+            title: "Whisker Power",
+            duration: "24m"
+          },
+          {
+            episode: 9,
+            title: "Lord Luud",
+            duration: "24m"
+          },
+          {
+            episode: 10,
+            title: "Dance and Attack",
+            duration: "24m"
+          },
+          {
+            episode: 11,
+            title: "Lord Luud's Curse",
+            duration: "24m"
+          },
+          {
+            episode: 12,
+            title: "The Last Oracle of Luud",
+            duration: "24m"
+          },
+          {
+            episode: 13,
+            title: "The Man Behind the Curtain",
+            duration: "24m"
+          },
+          {
+            episode: 14,
+            title: "The Battle Within",
+            duration: "24m"
+          },
+          {
+            episode: 15,
+            title: "Beginning of the End",
+            duration: "24m"
+          },
+          {
+            episode: 16,
+            title: "Giru's Checkered Past",
+            duration: "24m"
+          },
+          {
+            episode: 17,
+            title: "Pan's Gambit",
+            duration: "24m"
+          },
+          {
+            episode: 18,
+            title: "Unexpected Power",
+            duration: "24m"
+          },
+          {
+            episode: 19,
+            title: "A General Uprising",
+            duration: "24m"
+          },
+          {
+            episode: 20,
+            title: "The Source of Rilldo's power",
+            duration: "24m"
+          },
+          {
+            episode: 21,
+            title: "A Secret Revealed",
+            duration: "24m"
+          },
+          {
+            episode: 22,
+            title: "The Baby Secret",
+            duration: "24m"
+          },
+          {
+            episode: 23,
+            title: "Hidden Danger",
+            duration: "24m"
+          },
+          {
+            episode: 24,
+            title: "Discovering the Truth",
+            duration: "24m"
+          },
+          {
+            episode: 25,
+            title: "Baby's Arrival",
+            duration: "24m"
+          },
+          {
+            episode: 26,
+            title: "Saiyan Hunting",
+            duration: "24m"
+          },
+          {
+            episode: 27,
+            title: "The Attack on Vegeta",
+            duration: "24m"
+          },
+          {
+            episode: 28,
+            title: "A Worldwide Problem",
+            duration: "24m"
+          },
+          {
+            episode: 29,
+            title: "The Fall of the Saiyans",
+            duration: "24m"
+          },
+          {
+            episode: 30,
+            title: "The Game after Life",
+            duration: "24m"
+          },
+          {
+            episode: 31,
+            title: "Collapse from Within",
+            duration: "24m"
+          },
+          {
+            episode: 32,
+            title: "The Return of Uub",
+            duration: "24m"
+          },
+          {
+            episode: 33,
+            title: "The Tail's Tale",
+            duration: "24m"
+          },
+          {
+            episode: 34,
+            title: "Back in the Game",
+            duration: "24m"
+          },
+          {
+            episode: 35,
+            title: "Goku's Ascension",
+            duration: "24m"
+          },
+          {
+            episode: 36,
+            title: "The Tuffle Gorilla Attacks",
+            duration: "24m"
+          },
+          {
+            episode: 37,
+            title: "Old Kai's Last Stand",
+            duration: "24m"
+          },
+          {
+            episode: 38,
+            title: "Family Bonds",
+            duration: "24m"
+          },
+          {
+            episode: 39,
+            title: "Baby Put to Rest",
+            duration: "24m"
+          },
+          {
+            episode: 40,
+            title: "Piccolo's Decision",
+            duration: "24m"
+          },
+          {
+            episode: 41,
+            title: "Curtain Call",
+            duration: "24m"
+          },
+          {
+            episode: 42,
+            title: "A Dangerous Union",
+            duration: "24m"
+          },
+          {
+            episode: 43,
+            title: "The Resurrection of Cell and Frieza",
+            duration: "24m"
+          },
+          {
+            episode: 44,
+            title: "17 Times 2",
+            duration: "24m"
+          },
+          {
+            episode: 45,
+            title: "Piccolo's Best Bet",
+            duration: "24m"
+          },
+          {
+            episode: 46,
+            title: "Raising the Stakes",
+            duration: "24m"
+          },
+          {
+            episode: 47,
+            title: "The Greatest Surprise",
+            duration: "24m"
+          },
+          {
+            episode: 48,
+            title: "The Shadow Dragons",
+            duration: "24m"
+          },
+          {
+            episode: 49,
+            title: "The Two-Star Dragon",
+            duration: "24m"
+          },
+          {
+            episode: 50,
+            title: "The Five-Star Dragon",
+            duration: "24m"
+          },
+          {
+            episode: 51,
+            title: "The Six-Star Dragon",
+            duration: "24m"
+          },
+          {
+            episode: 52,
+            title: "The Seven-Star Dragon",
+            duration: "24m"
+          },
+          {
+            episode: 53,
+            title: "Saying Goodbye",
+            duration: "24m"
+          },
+          {
+            episode: 54,
+            title: "The Four-Star Dragon",
+            duration: "24m"
+          },
+          {
+            episode: 55,
+            title: "The Heart of the Prince",
+            duration: "24m"
+          },
+          {
+            episode: 56,
+            title: "The Three-Star Dragon",
+            duration: "24m"
+          },
+          {
+            episode: 57,
+            title: "The One-Star Dragon",
+            duration: "24m"
+          },
+          {
+            episode: 58,
+            title: "Shadow Dragons Unite",
+            duration: "24m"
+          },
+          {
+            episode: 59,
+            title: "Super Saiyan 4 Vegeta",
+            duration: "24m"
+          },
+          {
+            episode: 60,
+            title: "Super Saiyan 4 Fusion",
+            duration: "24m"
+          },
+          {
+            episode: 61,
+            title: "The Limits of Power",
+            duration: "24m"
+          },
+          {
+            episode: 62,
+            title: "Rescue Goku",
+            duration: "24m"
+          },
+          {
+            episode: 63,
+            title: "Universal Allies",
+            duration: "24m"
+          },
+          {
+            episode: 64,
+            title: "Until We Meet Again . . .",
+            duration: "24m"
+          }
+        ]
+      }
+    ]
   }
 ]
