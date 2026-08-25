@@ -11376,6 +11376,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "The Good, the Bad and the Ugly",
+    type: "Movie",
+    year: 1966,
+    rating: 8.8,
+    age: "R",
+    duration: "2h 58m",
+    genres: [
+      "Action",
+      "Adventure",
+      "Western",
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/mVl1EvEnYJnTQv71nksfneyF0Yd.jpg",
+    videoUrl: "429",
+    overview: "Three gunslinger — one good, one bad, one just plain ugly — chase after buried Confederate gold during Civil War. Alliance shift, betrayal pile up, all lead to legendary three-way standoff.",
+    director: "Sergio Leone",
+    cast: [
+      "Clint Eastwood, Eli Wallach, Lee Van Cleef, Aldo Giuffrè, Luigi Pistilli"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
