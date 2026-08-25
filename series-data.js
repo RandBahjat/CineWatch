@@ -2454,7 +2454,7 @@ window._SERIES_DATA = [
         episodes: [
           {
             episode: 1,
-            title: 'The Bat in the Belfry'
+            title: 'Sacrificial Soldiers'
           },
           {
             episode: 2,
