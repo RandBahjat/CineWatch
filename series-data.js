@@ -8435,6 +8435,176 @@ window._SERIES_DATA = [
       }
     ]
   },
+
+{
+    title: 'Peaky Blinders',
+    type: 'TV Show',
+    year: 2013,
+    rating: 8.7,
+    age: 'TV-PG',
+    duration: '1h',
+    genres: [
+      'Crime',
+      'Drama'
+    ],
+    poster: 'https://image.tmdb.org/t/p/original/pE8CScObQURsFZ723PSW1K9EGYp.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/m0GVaV4mgE8aFSHp8kTevHb8feu.jpg',
+    videoUrl: '60574',
+    overview: 'A gangster family epic set in 1919 Birmingham, England, centered on the Shelby crime family, led by ambitious and ruthless Thomas Shelby. Fresh from the horrors of World War I, Tommy schemes his way up from the poverty of Small Heath, seeking to move the family beyond their bookmaking business into legitimate — and not-so-legitimate — enterprises, clashing along the way with rival gangs, the police, and the IRA.',
+    director: 'Steven Knight',
+    cast: [
+      'Cillian Murphy, Paul Anderson, Sophie Rundle, Sam Neill, Helen McCrory, Tom Hardy, Steven Knight'
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: 'Episode #1.1'
+          },
+          {
+            episode: 2,
+            title: 'Episode #1.2'
+          },
+          {
+            episode: 3,
+            title: 'Episode #1.3'
+          },
+          {
+            episode: 4,
+            title: 'Episode #1.4'
+          },
+          {
+            episode: 5,
+            title: 'Episode #1.5'
+          },
+          {
+            episode: 6,
+            title: 'Episode #1.6'
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: 'Episode #2.1'
+          },
+          {
+            episode: 2,
+            title: ' Episode #2.2'
+          },
+          {
+            episode: 3,
+            title: 'Episode #2.3'
+          },
+          {
+            episode: 4,
+            title: 'Episode #2.4'
+          },
+          {
+            episode: 5,
+            title: 'Episode #2.5'
+          },
+          {
+            episode: 6,
+            title: 'Episode #2.6'
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: 'Episode #3.1'
+          },
+          {
+            episode: 2,
+            title: 'Episode #3.2'
+          },
+          {
+            episode: 3,
+            title: 'Episode #3.3'
+          },
+          {
+            episode: 4,
+            title: 'Episode #3.4'
+          },
+          {
+            episode: 5,
+            title: 'Episode #3.5'
+          },
+          {
+            episode: 6,
+            title: 'Episode #3.6'
+          }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          {
+            episode: 1,
+            title: 'The Noose'
+          },
+          {
+            episode: 2,
+            title: 'Heathens'
+          },
+          {
+            episode: 3,
+            title: 'Blackbird'
+          },
+          {
+            episode: 4,
+            title: 'Dangerous'
+          },
+          {
+            episode: 5,
+            title: 'The Duel'
+          },
+          {
+            episode: 6,
+            title: 'The Company'
+          }
+        ]
+      },
+      {
+        season: 5,
+        episodes: [
+          {
+            episode: 1,
+            title: 'Black Tuesday'
+          },
+          {
+            episode: 2,
+            title: 'Black Cats'
+          },
+          {
+            episode: 3,
+            title: 'Strategy'
+          },
+          {
+            episode: 4,
+            title: 'The Loop'
+          },
+          {
+            episode: 5,
+            title: 'The Shock'
+          },
+          {
+            episode: 6,
+            title: 'Mr. Jones'
+          }
+        ]
+      },
+
   {
     title: "The Queen's Gambit",
     type: 'TV Show',
