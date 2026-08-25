@@ -551,7 +551,7 @@ window._MOVIES_DATA = [
     overview: "Sixth entry in horror franchise. Gemma, young mother, got dangerous ability to travel into spirit realm called The Further. Worse part—demons follow her back to living world! Gemma must protect young daughter Maya and team up with iconic medium Elise Rainier to stop evil dark forces.",
     director: "Jacob Chase",
     cast: [
-      "Greta Lee, Wagner Moura, Riley Chung, Emma Ho, Noah Alexander Sosnowski, Gabriel Barbosa, Sam Lerner, Arden Cho"
+      "Amelia Eve, Brandon Perea, Lin Shaye, Maisie Richardson-Sellers"
     ],
     trending: false,
     featured: false,
