@@ -11269,6 +11269,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Naruto Shippuden the Movie: The Will of Fire",
+    type: "Movie",
+    year: 2009,
+    rating: 7.0,
+    age: "PG-13",
+    duration: "1h 35m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy",
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/pZzdFmztwmg0FUOVCMa7vReHhQN.jpg",
+    backdrop: "https://wallpaper.forfun.com/fetch/02/0248d0fed13a8d6d62311f91e9a01429.jpeg?w=1200&r=0.5625&f=webp",
+    videoUrl: "36728",
+    overview: "Ninja with rare bloodline power start vanish from villages guard Cloud, Stone, Mist, Sand, spark suspicion, threat of new ninja war. Kakashi vanish too, chase real culprit, Naruto fight to save him, stop war before break out.",
+    director: "Masahiko Murata",
+    cast: [
+      "Junko Takeuchi, Chie Nakamura, Kazuhiko Inoue, Noriaki Sugiyama, Nana Mizuki"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
