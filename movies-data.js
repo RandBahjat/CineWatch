@@ -11167,7 +11167,7 @@ window._MOVIES_DATA = [
     year: 2011,
     rating: 7.1,
     age: "TV-14",
-    duration: "1h 34m",
+    duration: "1h 48m",
     genres: [
       "Action",
       "Animation",
