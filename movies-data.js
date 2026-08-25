@@ -11098,7 +11098,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/vEiDUw5a1wDZVR3PjZaq8AXhF3r.jpg",
     videoUrl: "347201",
     overview: "Boruto, Naruto's son, resent father for always busy being Hokage, never around. When new enemy attack during ninja tournament, Boruto must fight alongside father, learn what it really mean carry ninja legacy.",
-    director: "Tsuneo Kobayashi",
+    director: "Hiroyuki Yamashita",
     cast: [
       "Junko Takeuchi, Nana Mizuki, Noriaki Sugiyama, Chie Nakamura, Kate Higgins"
     ],
