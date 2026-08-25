@@ -6450,6 +6450,24 @@ body.rtl-layout .account-side-panel.open {
 }
 
 .comment-delete-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.comment-delete-btn:hover {
+  color: #e50914;
+  background: rgba(229, 9, 20, 0.1);
+}
+
+.comment-delete-btn {
   background: none;
   border: none;
   cursor: pointer;
