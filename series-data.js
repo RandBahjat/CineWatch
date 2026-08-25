@@ -2470,7 +2470,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 5,
-            title: 'The Big Chill'
+            title: 'Truth Is the Shrewdest Lie'
           },
           {
             episode: 6,
