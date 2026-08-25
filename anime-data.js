@@ -1,6 +1,5 @@
 ﻿// CineWatch - Anime Data
 window._ANIME_DATA = [
-  
   {
     title: "One Piece",
     type: "TV Show",
@@ -39,7 +38,7 @@ window._ANIME_DATA = [
         episodes: [
           {
             episode: 1,
-            title: "I\'m Luffy! The Man Who Will Become the Pirate King!",
+            title: "I'm Luffy! The Man Who Will Become the Pirate King!",
             absoluteEpisode: 1
           },
           {
@@ -49,12 +48,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 3,
-            title: "Morgan VS Luffy! Who\'s This Beautiful Young Girl?",
+            title: "Morgan VS Luffy! Who's This Beautiful Young Girl?",
             absoluteEpisode: 3
           },
           {
             episode: 4,
-            title: "Luffy\'s Past! The Red-haired Shanks appears",
+            title: "Luffy's Past! The Red-haired Shanks appears",
             absoluteEpisode: 4
           },
           {
@@ -104,17 +103,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 14,
-            title: "Luffy Back in Action! Miss Kaya\'s Desperate Resistance!",
+            title: "Luffy Back in Action! Miss Kaya's Desperate Resistance!",
             absoluteEpisode: 14
           },
           {
             episode: 15,
-            title: "Beat Kuro! Usopp the Man\'s Tearful Resolve!",
+            title: "Beat Kuro! Usopp the Man's Tearful Resolve!",
             absoluteEpisode: 15
           },
           {
             episode: 16,
-            title: "Protect Kaya! The Usopp Pirates\' Great Efforts!",
+            title: "Protect Kaya! The Usopp Pirates' Great Efforts!",
             absoluteEpisode: 16
           },
           {
@@ -124,12 +123,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 18,
-            title: "You\'re the Weird Creature! Gaimon and His Strange Friends!",
+            title: "You're the Weird Creature! Gaimon and His Strange Friends!",
             absoluteEpisode: 18
           },
           {
             episode: 19,
-            title: "The Three-Sword Style\'s Past! Zoro and Kuina\'s Vow!",
+            title: "The Three-Sword Style's Past! Zoro and Kuina's Vow!",
             absoluteEpisode: 19
           },
           {
@@ -139,7 +138,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 21,
-            title: "Unwelcome Customer! Sanji\'s Food and Ghin\'s Debt!",
+            title: "Unwelcome Customer! Sanji's Food and Ghin's Debt!",
             absoluteEpisode: 21
           },
           {
@@ -164,7 +163,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 26,
-            title: "Zeff and Sanji\'s Dream! The Illusory All Blue!",
+            title: "Zeff and Sanji's Dream! The Illusory All Blue!",
             absoluteEpisode: 26
           },
           {
@@ -174,7 +173,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 28,
-            title: "I Won\'t Die! Fierce Battle, Luffy vs. Krieg!",
+            title: "I Won't Die! Fierce Battle, Luffy vs. Krieg!",
             absoluteEpisode: 28
           },
           {
@@ -194,7 +193,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 32,
-            title: "Witch of Cocoyashi Village! Arlong\'s Female Leader!",
+            title: "Witch of Cocoyashi Village! Arlong's Female Leader!",
             absoluteEpisode: 32
           },
           {
@@ -204,7 +203,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 34,
-            title: "Everyone\'s Gathered! Usopp Speaks the Truth About Nami!",
+            title: "Everyone's Gathered! Usopp Speaks the Truth About Nami!",
             absoluteEpisode: 34
           },
           {
@@ -214,7 +213,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 36,
-            title: "Survive! Mother Bellemere and Nami\'s Bond!",
+            title: "Survive! Mother Bellemere and Nami's Bond!",
             absoluteEpisode: 36
           },
           {
@@ -234,22 +233,22 @@ window._ANIME_DATA = [
           },
           {
             episode: 40,
-            title: "Proud Warriors! Sanji and Usopp\'s Fierce Battles!",
+            title: "Proud Warriors! Sanji and Usopp's Fierce Battles!",
             absoluteEpisode: 40
           },
           {
             episode: 41,
-            title: "Luffy at Full Power! Nami\'s Determination and the Straw Hat!",
+            title: "Luffy at Full Power! Nami's Determination and the Straw Hat!",
             absoluteEpisode: 41
           },
           {
             episode: 42,
-            title: "Explosion! Fishman Arlong\'s Fierce Assault From the Sea!",
+            title: "Explosion! Fishman Arlong's Fierce Assault From the Sea!",
             absoluteEpisode: 42
           },
           {
             episode: 43,
-            title: "End of the Fishman Empire! Nami\'s My Friend!",
+            title: "End of the Fishman Empire! Nami's My Friend!",
             absoluteEpisode: 43
           },
           {
@@ -264,7 +263,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 46,
-            title: "Chase Straw Hat! Little Buggy\'s Big Adventure!",
+            title: "Chase Straw Hat! Little Buggy's Big Adventure!",
             absoluteEpisode: 46
           },
           {
@@ -279,7 +278,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 49,
-            title: "Zoro\'s New Swords and the Woman Sergeant Major!",
+            title: "Zoro's New Swords and the Woman Sergeant Major!",
             absoluteEpisode: 49
           },
           {
@@ -294,7 +293,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 52,
-            title: "Buggy\'s Revenge! The Man Who Smiles On the Execution Platform!",
+            title: "Buggy's Revenge! The Man Who Smiles On the Execution Platform!",
             absoluteEpisode: 52
           },
           {
@@ -309,7 +308,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 55,
-            title: "Miraculous Creature! Apis\'s Secret and The Legendary Island!",
+            title: "Miraculous Creature! Apis's Secret and The Legendary Island!",
             absoluteEpisode: 55
           },
           {
@@ -329,7 +328,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 59,
-            title: "Luffy, Completely Surrounded! Commodore Nelson\'s Secret Strategy!",
+            title: "Luffy, Completely Surrounded! Commodore Nelson's Secret Strategy!",
             absoluteEpisode: 59
           },
           {
@@ -379,12 +378,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 68,
-            title: "Try Hard, Coby! Coby and Helmeppo\'s Struggles in the Marines!",
+            title: "Try Hard, Coby! Coby and Helmeppo's Struggles in the Marines!",
             absoluteEpisode: 68
           },
           {
             episode: 69,
-            title: "Coby and Helmeppo\'s Resolve! Vice-Admiral Garp\'s Parental Affection!",
+            title: "Coby and Helmeppo's Resolve! Vice-Admiral Garp's Parental Affection!",
             absoluteEpisode: 69
           },
           {
@@ -404,7 +403,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 73,
-            title: "Broggy\'s Bitter Tears of Victory! The Conclusion of Elbaf!",
+            title: "Broggy's Bitter Tears of Victory! The Conclusion of Elbaf!",
             absoluteEpisode: 73
           },
           {
@@ -434,7 +433,7 @@ window._ANIME_DATA = [
         episodes: [
           {
             episode: 78,
-            title: "Nami\'s Sick? Beyond the Snow Falling on the Sea!",
+            title: "Nami's Sick? Beyond the Snow Falling on the Sea!",
             absoluteEpisode: 78
           },
           {
@@ -454,7 +453,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 82,
-            title: "Dalton\'s Resolve! Wapol\'s Corps Lands on the Island!",
+            title: "Dalton's Resolve! Wapol's Corps Lands on the Island!",
             absoluteEpisode: 82
           },
           {
@@ -464,42 +463,42 @@ window._ANIME_DATA = [
           },
           {
             episode: 84,
-            title: "Blue-nosed Reindeer! Chopper\'s Secret!",
+            title: "Blue-nosed Reindeer! Chopper's Secret!",
             absoluteEpisode: 84
           },
           {
             episode: 85,
-            title: "An Outcast\'s Dream! Hiriluk the Quack!",
+            title: "An Outcast's Dream! Hiriluk the Quack!",
             absoluteEpisode: 85
           },
           {
             episode: 86,
-            title: "Hiriluk\'s Cherry Blossoms and the Will that Gets Carried On!",
+            title: "Hiriluk's Cherry Blossoms and the Will that Gets Carried On!",
             absoluteEpisode: 86
           },
           {
             episode: 87,
-            title: "Fight Wapol\'s Crew! The Power of the Munch Munch Fruit!",
+            title: "Fight Wapol's Crew! The Power of the Munch Munch Fruit!",
             absoluteEpisode: 87
           },
           {
             episode: 88,
-            title: "Zoan-type Devil Fruit! Chopper\'s Seven-form Transformation!",
+            title: "Zoan-type Devil Fruit! Chopper's Seven-form Transformation!",
             absoluteEpisode: 88
           },
           {
             episode: 89,
-            title: "When the Kingdom\'s Rule Ends! The Flag of Faith Flies Forever!",
+            title: "When the Kingdom's Rule Ends! The Flag of Faith Flies Forever!",
             absoluteEpisode: 89
           },
           {
             episode: 90,
-            title: "Hiriluk\'s Cherry Blossoms! Miracle in the Drum Rockies!",
+            title: "Hiriluk's Cherry Blossoms! Miracle in the Drum Rockies!",
             absoluteEpisode: 90
           },
           {
             episode: 91,
-            title: "Goodbye Drum Island! I\'m Going Out to Sea!",
+            title: "Goodbye Drum Island! I'm Going Out to Sea!",
             absoluteEpisode: 91
           }
         ]
@@ -509,7 +508,7 @@ window._ANIME_DATA = [
         episodes: [
           {
             episode: 92,
-            title: "Alabasta\'s Hero and a Ballerina on the Ship!",
+            title: "Alabasta's Hero and a Ballerina on the Ship!",
             absoluteEpisode: 92
           },
           {
@@ -559,12 +558,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 102,
-            title: "Ruins and Lost Ways! Vivi, Her Friends, and the Country\'s Form!",
+            title: "Ruins and Lost Ways! Vivi, Her Friends, and the Country's Form!",
             absoluteEpisode: 102
           },
           {
             episode: 103,
-            title: "Spiders Café at 8 o\'Clock! The Enemy Leaders Gather!",
+            title: "Spiders Café at 8 o'Clock! The Enemy Leaders Gather!",
             absoluteEpisode: 103
           },
           {
@@ -619,7 +618,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 114,
-            title: "Sworn on a Friend\'s Dream! The Battle of Molehill, Block 4!",
+            title: "Sworn on a Friend's Dream! The Battle of Molehill, Block 4!",
             absoluteEpisode: 114
           },
           {
@@ -629,12 +628,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 116,
-            title: "Transformed into Nami! Bon Clay\'s Rapid-Fire Ballet Kenpo!",
+            title: "Transformed into Nami! Bon Clay's Rapid-Fire Ballet Kenpo!",
             absoluteEpisode: 116
           },
           {
             episode: 117,
-            title: "Nami\'s Cyclone Advisory! Clima Takt Burst!",
+            title: "Nami's Cyclone Advisory! Clima Takt Burst!",
             absoluteEpisode: 117
           },
           {
@@ -654,7 +653,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 121,
-            title: "Where Vivi\'s Voice Gets Heard! The Hero Descends!",
+            title: "Where Vivi's Voice Gets Heard! The Hero Descends!",
             absoluteEpisode: 121
           },
           {
@@ -669,7 +668,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 124,
-            title: "The Nightmare Draws Near! This is the Sand-Sand Clan\'s Secret Base!",
+            title: "The Nightmare Draws Near! This is the Sand-Sand Clan's Secret Base!",
             absoluteEpisode: 124
           },
           {
@@ -689,7 +688,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 128,
-            title: "The Pirates\' Banquet and Operation Escape from Alabasta!",
+            title: "The Pirates' Banquet and Operation Escape from Alabasta!",
             absoluteEpisode: 128
           },
           {
@@ -739,7 +738,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 137,
-            title: "How\'s Tricks? The Designs of Zenny the Moneylender!",
+            title: "How's Tricks? The Designs of Zenny the Moneylender!",
             absoluteEpisode: 137
           },
           {
@@ -764,7 +763,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 142,
-            title: "An Inevitable Melee! Wetton\'s Schemes and the Rainbow Tower!",
+            title: "An Inevitable Melee! Wetton's Schemes and the Rainbow Tower!",
             absoluteEpisode: 142
           },
           {
@@ -784,7 +783,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 145,
-            title: "Monsters Appear! Don\'t Mess with the Whitebeard Pirates!",
+            title: "Monsters Appear! Don't Mess with the Whitebeard Pirates!",
             absoluteEpisode: 145
           },
           {
@@ -809,12 +808,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 150,
-            title: "Dreams Don\'t Come True?! Bellamy Versus the Saruyama Alliance!",
+            title: "Dreams Don't Come True?! Bellamy Versus the Saruyama Alliance!",
             absoluteEpisode: 150
           },
           {
             episode: 151,
-            title: "100 Million Man! World\'s Greatest Power and Pirate Black Beard!",
+            title: "100 Million Man! World's Greatest Power and Pirate Black Beard!",
             absoluteEpisode: 151
           },
           {
@@ -834,17 +833,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 155,
-            title: "The Forbidden Sacred Ground! The Island Where God Lives and Heaven\'s Judgement!",
+            title: "The Forbidden Sacred Ground! The Island Where God Lives and Heaven's Judgement!",
             absoluteEpisode: 155
           },
           {
             episode: 156,
-            title: "Already Criminals?! Skypiea\'s Upholder of the Law!",
+            title: "Already Criminals?! Skypiea's Upholder of the Law!",
             absoluteEpisode: 156
           },
           {
             episode: 157,
-            title: "Is Escape Possible?!? God\'s Challenge is Set in Motion",
+            title: "Is Escape Possible?!? God's Challenge is Set in Motion",
             absoluteEpisode: 157
           },
           {
@@ -884,7 +883,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 165,
-            title: "Jaya, City of Gold in the Sky! Head for God\'s Shrine!",
+            title: "Jaya, City of Gold in the Sky! Head for God's Shrine!",
             absoluteEpisode: 165
           },
           {
@@ -904,7 +903,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 169,
-            title: "The Deadly Reject! War Demon Wyper\'s Resolve!",
+            title: "The Deadly Reject! War Demon Wyper's Resolve!",
             absoluteEpisode: 169
           },
           {
@@ -924,7 +923,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 173,
-            title: "Unbeatable Powers! Eneru\'s True Form is Revealed!",
+            title: "Unbeatable Powers! Eneru's True Form is Revealed!",
             absoluteEpisode: 173
           },
           {
@@ -959,7 +958,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 180,
-            title: "Showdown in the Ancient Ruins! Sky God Eneru\'s Goal!",
+            title: "Showdown in the Ancient Ruins! Sky God Eneru's Goal!",
             absoluteEpisode: 180
           },
           {
@@ -979,7 +978,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 184,
-            title: "Luffy Falls! Eneru\'s Judgement and Nami\'s Wish!",
+            title: "Luffy Falls! Eneru's Judgement and Nami's Wish!",
             absoluteEpisode: 184
           },
           {
@@ -994,7 +993,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 187,
-            title: "Lead by a Bell\'s Sound! Tale of the Great Warrior and the Explorer!",
+            title: "Lead by a Bell's Sound! Tale of the Great Warrior and the Explorer!",
             absoluteEpisode: 187
           },
           {
@@ -1009,7 +1008,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 190,
-            title: "Angel Island, Obliterated! The Horror of The Raigo\'s Advent!!",
+            title: "Angel Island, Obliterated! The Horror of The Raigo's Advent!!",
             absoluteEpisode: 190
           },
           {
@@ -1054,7 +1053,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 198,
-            title: "Captured Zoro! Chopper\'s Emergency Operations!",
+            title: "Captured Zoro! Chopper's Emergency Operations!",
             absoluteEpisode: 198
           },
           {
@@ -1064,7 +1063,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 200,
-            title: "Luffy and Sanji\'s Daring Rescue Mission!",
+            title: "Luffy and Sanji's Daring Rescue Mission!",
             absoluteEpisode: 200
           },
           {
@@ -1089,7 +1088,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 205,
-            title: "The One Fell Swoop Plan! Jonathan\'s Surefire Secret Tactic!",
+            title: "The One Fell Swoop Plan! Jonathan's Surefire Secret Tactic!",
             absoluteEpisode: 205
           },
           {
@@ -1169,12 +1168,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 221,
-            title: "A Mysterious Boy with a Horn and Robin\'s Deduction!",
+            title: "A Mysterious Boy with a Horn and Robin's Deduction!",
             absoluteEpisode: 221
           },
           {
             episode: 222,
-            title: "Now, Let\'s Get Back Our Memories! The Pirate Crew Lands on the Island!",
+            title: "Now, Let's Get Back Our Memories! The Pirate Crew Lands on the Island!",
             absoluteEpisode: 222
           },
           {
@@ -1194,7 +1193,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 226,
-            title: "The Guy Who\'s The Closest To Invincible? And the Most Dangerous Man!",
+            title: "The Guy Who's The Closest To Invincible? And the Most Dangerous Man!",
             absoluteEpisode: 226
           },
           {
@@ -1249,7 +1248,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 236,
-            title: "Luffy vs. Usopp! Collision of Two Men\'s Pride!",
+            title: "Luffy vs. Usopp! Collision of Two Men's Pride!",
             absoluteEpisode: 236
           },
           {
@@ -1304,17 +1303,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 247,
-            title: "The Man Who Is Loved Even by His Ship! Usopp\'s Tears!",
+            title: "The Man Who Is Loved Even by His Ship! Usopp's Tears!",
             absoluteEpisode: 247
           },
           {
             episode: 248,
-            title: "Franky\'s Past! The Day the Sea Train First Ran!",
+            title: "Franky's Past! The Day the Sea Train First Ran!",
             absoluteEpisode: 248
           },
           {
             episode: 249,
-            title: "Spandam\'s Scheme! The Day the Sea Train Shook!",
+            title: "Spandam's Scheme! The Day the Sea Train Shook!",
             absoluteEpisode: 249
           },
           {
@@ -1339,7 +1338,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 254,
-            title: "Nami\'s Soul Cries Out! Straw Hat Luffy Makes a Comeback!",
+            title: "Nami's Soul Cries Out! Straw Hat Luffy Makes a Comeback!",
             absoluteEpisode: 254
           },
           {
@@ -1414,7 +1413,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 268,
-            title: "Catch Up with Luffy! The Straw Hats\' All-Out Battle",
+            title: "Catch Up with Luffy! The Straw Hats' All-Out Battle",
             absoluteEpisode: 268
           },
           {
@@ -1444,17 +1443,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 274,
-            title: "Give Us Your Answer, Robin! The Straw Hats\' Outcry!",
+            title: "Give Us Your Answer, Robin! The Straw Hats' Outcry!",
             absoluteEpisode: 274
           },
           {
             episode: 275,
-            title: "Robin\'s Past! The Girl was Called a Devil!",
+            title: "Robin's Past! The Girl was Called a Devil!",
             absoluteEpisode: 275
           },
           {
             episode: 276,
-            title: "Fated Mother and Daughter! The Mother\'s Name is Olvia!",
+            title: "Fated Mother and Daughter! The Mother's Name is Olvia!",
             absoluteEpisode: 276
           },
           {
@@ -1474,17 +1473,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 280,
-            title: "The Ways of Men! Zoro\'s Techniques, Usopp\'s Dream!",
+            title: "The Ways of Men! Zoro's Techniques, Usopp's Dream!",
             absoluteEpisode: 280
           },
           {
             episode: 281,
-            title: "A Bond of Friendship Woven by Tears! Nami\'s World Map!",
+            title: "A Bond of Friendship Woven by Tears! Nami's World Map!",
             absoluteEpisode: 281
           },
           {
             episode: 282,
-            title: "Parting Builds a Man\'s Character! Sanji and Chopper!",
+            title: "Parting Builds a Man's Character! Sanji and Chopper!",
             absoluteEpisode: 282
           },
           {
@@ -1494,7 +1493,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 284,
-            title: "I\'m Not Gonna Hand Over the Blueprints! Franky\'s Decision!",
+            title: "I'm Not Gonna Hand Over the Blueprints! Franky's Decision!",
             absoluteEpisode: 284
           },
           {
@@ -1509,22 +1508,22 @@ window._ANIME_DATA = [
           },
           {
             episode: 287,
-            title: "I Won\'t Kick Even If It Costs Me My Life! Sanji\'s Chivalry!",
+            title: "I Won't Kick Even If It Costs Me My Life! Sanji's Chivalry!",
             absoluteEpisode: 287
           },
           {
             episode: 288,
-            title: "Fukurou\'s Miscalculation! My Cola is the Water of Life!",
+            title: "Fukurou's Miscalculation! My Cola is the Water of Life!",
             absoluteEpisode: 288
           },
           {
             episode: 289,
-            title: "Zoro Busts Out a New Technique! The Sword\'s Name is Sniperking?",
+            title: "Zoro Busts Out a New Technique! The Sword's Name is Sniperking?",
             absoluteEpisode: 289
           },
           {
             episode: 290,
-            title: "Uncontrollable! Chopper\'s Forbidden Rumble!",
+            title: "Uncontrollable! Chopper's Forbidden Rumble!",
             absoluteEpisode: 290
           },
           {
@@ -1534,7 +1533,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 292,
-            title: "A Big Rice Cake Tossing Race at the Castle! Red Nose\'s Plot!",
+            title: "A Big Rice Cake Tossing Race at the Castle! Red Nose's Plot!",
             absoluteEpisode: 292
           },
           {
@@ -1554,7 +1553,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 296,
-            title: "Nami\'s Decision! Fire at the Out-Of-Control Chopper!",
+            title: "Nami's Decision! Fire at the Out-Of-Control Chopper!",
             absoluteEpisode: 296
           },
           {
@@ -1564,7 +1563,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 298,
-            title: "Fiery Kicks! Sanji\'s Full Course of Foot Techniques!",
+            title: "Fiery Kicks! Sanji's Full Course of Foot Techniques!",
             absoluteEpisode: 298
           },
           {
@@ -1594,7 +1593,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 304,
-            title: "I Can\'t Protect Anyone Unless I Win! Third Gear Activated",
+            title: "I Can't Protect Anyone Unless I Win! Third Gear Activated",
             absoluteEpisode: 304
           },
           {
@@ -1609,7 +1608,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 307,
-            title: "Cannon Fire Sinks the Island! Franky\'s Lamentation!",
+            title: "Cannon Fire Sinks the Island! Franky's Lamentation!",
             absoluteEpisode: 307
           },
           {
@@ -1644,7 +1643,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 314,
-            title: "The Strongest Family? Luffy\'s Father Revealed!",
+            title: "The Strongest Family? Luffy's Father Revealed!",
             absoluteEpisode: 314
           },
           {
@@ -1664,12 +1663,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 318,
-            title: "Mothers are Strong! Zoro\'s Hectic Household Chores!",
+            title: "Mothers are Strong! Zoro's Hectic Household Chores!",
             absoluteEpisode: 318
           },
           {
             episode: 319,
-            title: "Sanji\'s Shock! Mysterious Old Man and His Super Yummy Cooking!",
+            title: "Sanji's Shock! Mysterious Old Man and His Super Yummy Cooking!",
             absoluteEpisode: 319
           },
           {
@@ -1699,7 +1698,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 325,
-            title: "The Most Heinous Power! Blackbeard\'s Darkness Attacks Ace!",
+            title: "The Most Heinous Power! Blackbeard's Darkness Attacks Ace!",
             absoluteEpisode: 325
           },
           {
@@ -1794,17 +1793,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 343,
-            title: "His Name is Moria! The Great Shadow-Seizing Pirate\'s Trap!",
+            title: "His Name is Moria! The Great Shadow-Seizing Pirate's Trap!",
             absoluteEpisode: 343
           },
           {
             episode: 344,
-            title: "Feast of the Zombie Song! The Night Raid\'s Bell is the Sound of Darkness!",
+            title: "Feast of the Zombie Song! The Night Raid's Bell is the Sound of Darkness!",
             absoluteEpisode: 344
           },
           {
             episode: 345,
-            title: "A Bunch of Animals? Perona\'s Wonder Garden!",
+            title: "A Bunch of Animals? Perona's Wonder Garden!",
             absoluteEpisode: 345
           },
           {
@@ -1824,12 +1823,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 349,
-            title: "Luffy\'s Emergency Situation! The Ultimate Shadow\'s Destination!",
+            title: "Luffy's Emergency Situation! The Ultimate Shadow's Destination!",
             absoluteEpisode: 349
           },
           {
             episode: 350,
-            title: "The Warrior Known As the \"Devil\"!! The Moment of Oars\' Revival",
+            title: "The Warrior Known As the \"Devil\"!! The Moment of Oars' Revival",
             absoluteEpisode: 350
           },
           {
@@ -1844,7 +1843,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 353,
-            title: "A Man\'s Promise Never Dies!! To the Friend Waiting Under the Distant Sky",
+            title: "A Man's Promise Never Dies!! To the Friend Waiting Under the Distant Sky",
             absoluteEpisode: 353
           },
           {
@@ -1854,12 +1853,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 355,
-            title: "Food, Nami and Shadows!! Luffy\'s Enraged Counterattack",
+            title: "Food, Nami and Shadows!! Luffy's Enraged Counterattack",
             absoluteEpisode: 355
           },
           {
             episode: 356,
-            title: "Usopp\'s the Strongest? Leave Anything Negative to Him",
+            title: "Usopp's the Strongest? Leave Anything Negative to Him",
             absoluteEpisode: 356
           },
           {
@@ -1874,7 +1873,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 359,
-            title: "A Clear-Clear History? Sanji\'s Stolen Dream",
+            title: "A Clear-Clear History? Sanji's Stolen Dream",
             absoluteEpisode: 359
           },
           {
@@ -1889,12 +1888,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 362,
-            title: "Slashes Dancing On the Rooftop!! Zoro vs. Ryuma\'s Showdown",
+            title: "Slashes Dancing On the Rooftop!! Zoro vs. Ryuma's Showdown",
             absoluteEpisode: 362
           },
           {
             episode: 363,
-            title: "Chopper Is Furious!! Hogback\'s Evil Medical Practices",
+            title: "Chopper Is Furious!! Hogback's Evil Medical Practices",
             absoluteEpisode: 363
           },
           {
@@ -1909,7 +1908,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 366,
-            title: "You\'re Going Down, Absalom!! Nami\'s Lightning Attack of Friendship!!",
+            title: "You're Going Down, Absalom!! Nami's Lightning Attack of Friendship!!",
             absoluteEpisode: 366
           },
           {
@@ -1934,7 +1933,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 371,
-            title: "The Straw Hat Crew Gets Wiped Out! The Shadow-Shadow\'s Powers in Full Swing",
+            title: "The Straw Hat Crew Gets Wiped Out! The Shadow-Shadow's Powers in Full Swing",
             absoluteEpisode: 371
           },
           {
@@ -1964,22 +1963,22 @@ window._ANIME_DATA = [
           },
           {
             episode: 377,
-            title: "The Pain of My Crewmates Is My Pain! Zoro\'s Desperate Fight!",
+            title: "The Pain of My Crewmates Is My Pain! Zoro's Desperate Fight!",
             absoluteEpisode: 377
           },
           {
             episode: 378,
-            title: "The Promise from a Distant Day! The Pirates\' Song and a Small Whale!",
+            title: "The Promise from a Distant Day! The Pirates' Song and a Small Whale!",
             absoluteEpisode: 378
           },
           {
             episode: 379,
-            title: "Brook\'s Past! A Sad Farewell with His Cheerful Comrade!",
+            title: "Brook's Past! A Sad Farewell with His Cheerful Comrade!",
             absoluteEpisode: 379
           },
           {
             episode: 380,
-            title: "Bink\'s Booze! The Song that Connects the Past with the Present!",
+            title: "Bink's Booze! The Song that Connects the Past with the Present!",
             absoluteEpisode: 380
           },
           {
@@ -1994,7 +1993,7 @@ window._ANIME_DATA = [
         episodes: [
           {
             episode: 382,
-            title: "The Slow-Slow Menace! \'Silver Fox\' Foxy Returns!",
+            title: "The Slow-Slow Menace! 'Silver Fox' Foxy Returns!",
             absoluteEpisode: 382
           },
           {
@@ -2004,7 +2003,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 384,
-            title: "Brook\'s Great Struggle! Is the Path to Becoming a True Comrade Rigorous?",
+            title: "Brook's Great Struggle! Is the Path to Becoming a True Comrade Rigorous?",
             absoluteEpisode: 384
           },
           {
@@ -2029,7 +2028,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 389,
-            title: "Explosion! The Sunny\'s Super Secret Weapon: Gaon Cannon",
+            title: "Explosion! The Sunny's Super Secret Weapon: Gaon Cannon",
             absoluteEpisode: 389
           },
           {
@@ -2104,7 +2103,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 404,
-            title: "Admiral Kizaru\'s Fierce Assault! The Straw Hats Face Certain Death!",
+            title: "Admiral Kizaru's Fierce Assault! The Straw Hats Face Certain Death!",
             absoluteEpisode: 404
           },
           {
@@ -2119,7 +2118,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 407,
-            title: "Feudal Era Side Story – Defeat Thriller Company\'s Trap",
+            title: "Feudal Era Side Story – Defeat Thriller Company's Trap",
             absoluteEpisode: 407
           }
         ]
@@ -2154,7 +2153,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 413,
-            title: "A Difficult Fight for Luffy! The Snake Sisters\' Haki Power!!",
+            title: "A Difficult Fight for Luffy! The Snake Sisters' Haki Power!!",
             absoluteEpisode: 413
           },
           {
@@ -2164,7 +2163,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 415,
-            title: "Hancock\'s Confession – The Sisters\' Abhorrent Past",
+            title: "Hancock's Confession – The Sisters' Abhorrent Past",
             absoluteEpisode: 415
           },
           {
@@ -2179,22 +2178,22 @@ window._ANIME_DATA = [
           },
           {
             episode: 418,
-            title: "The Friends\' Whereabouts – The Science of Weather and the Mechanical Island",
+            title: "The Friends' Whereabouts – The Science of Weather and the Mechanical Island",
             absoluteEpisode: 418
           },
           {
             episode: 419,
-            title: "The Friends\' Whereabouts! An Island of Giant Birds and a Pink Paradise!",
+            title: "The Friends' Whereabouts! An Island of Giant Birds and a Pink Paradise!",
             absoluteEpisode: 419
           },
           {
             episode: 420,
-            title: "The Friends\' Whereabouts – Bridging the Islands and Vicious Vegetations!",
+            title: "The Friends' Whereabouts – Bridging the Islands and Vicious Vegetations!",
             absoluteEpisode: 420
           },
           {
             episode: 421,
-            title: "The Friends\' Whereabouts! A Princess Negativity and the King of Demons!",
+            title: "The Friends' Whereabouts! A Princess Negativity and the King of Demons!",
             absoluteEpisode: 421
           }
         ]
@@ -2214,7 +2213,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 424,
-            title: "Break Through the Crimson Hell! Buggy\'s Chaos-Inducing Plan",
+            title: "Break Through the Crimson Hell! Buggy's Chaos-Inducing Plan",
             absoluteEpisode: 424
           },
           {
@@ -2224,7 +2223,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 426,
-            title: "A Special Presentation Related to the Movie! A Gold Lion\'s Ambition on the Move",
+            title: "A Special Presentation Related to the Movie! A Gold Lion's Ambition on the Move",
             absoluteEpisode: 426
           },
           {
@@ -2249,7 +2248,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 431,
-            title: "Chief Guard Saldeath\'s Trap! Level 3 - Starvation Hell",
+            title: "Chief Guard Saldeath's Trap! Level 3 - Starvation Hell",
             absoluteEpisode: 431
           },
           {
@@ -2259,7 +2258,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 433,
-            title: "Warden Magellan\'s Strategy! Straw Hat Entrapment Completed!",
+            title: "Warden Magellan's Strategy! Straw Hat Entrapment Completed!",
             absoluteEpisode: 433
           },
           {
@@ -2274,7 +2273,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 436,
-            title: "The Showdown Has Come! Luffy\'s Desperate Last Attack!",
+            title: "The Showdown Has Come! Luffy's Desperate Last Attack!",
             absoluteEpisode: 436
           },
           {
@@ -2289,22 +2288,22 @@ window._ANIME_DATA = [
           },
           {
             episode: 439,
-            title: "Luffy\'s Treatment Begins! Ivan-san\'s Miraculous Power!",
+            title: "Luffy's Treatment Begins! Ivan-san's Miraculous Power!",
             absoluteEpisode: 439
           },
           {
             episode: 440,
-            title: "Believe in Miracles! Bon Clay\'s Cries from the Heart",
+            title: "Believe in Miracles! Bon Clay's Cries from the Heart",
             absoluteEpisode: 440
           },
           {
             episode: 441,
-            title: "Luffy\'s Back! Ivan-san Begins the Breakout Plan!",
+            title: "Luffy's Back! Ivan-san Begins the Breakout Plan!",
             absoluteEpisode: 441
           },
           {
             episode: 442,
-            title: "Ace\'s Convoy Begins! Battle on the Lowest Floor, Level 6!",
+            title: "Ace's Convoy Begins! Battle on the Lowest Floor, Level 6!",
             absoluteEpisode: 442
           },
           {
@@ -2334,12 +2333,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 448,
-            title: "Stop Magellan! Ivan-san\'s Esoteric Technique Explodes",
+            title: "Stop Magellan! Ivan-san's Esoteric Technique Explodes",
             absoluteEpisode: 448
           },
           {
             episode: 449,
-            title: "Magellan\'s Tricky Move! A Foiled Escape Plan!",
+            title: "Magellan's Tricky Move! A Foiled Escape Plan!",
             absoluteEpisode: 449
           },
           {
@@ -2359,22 +2358,22 @@ window._ANIME_DATA = [
           },
           {
             episode: 453,
-            title: "The Friends\' Whereabouts! The Weatheria Report and the Cyborg Animals!",
+            title: "The Friends' Whereabouts! The Weatheria Report and the Cyborg Animals!",
             absoluteEpisode: 453
           },
           {
             episode: 454,
-            title: "The Friends\' Whereabouts! A Cheeper of Giant Birds and a Pink Showdown!",
+            title: "The Friends' Whereabouts! A Cheeper of Giant Birds and a Pink Showdown!",
             absoluteEpisode: 454
           },
           {
             episode: 455,
-            title: "The Friends\' Whereabouts! Revolutionaries and the Gorging Forest\'s Trap!",
+            title: "The Friends' Whereabouts! Revolutionaries and the Gorging Forest's Trap!",
             absoluteEpisode: 455
           },
           {
             episode: 456,
-            title: "The Friends\' Whereabouts! A Huge Tomb and the Panty Debt!",
+            title: "The Friends' Whereabouts! A Huge Tomb and the Panty Debt!",
             absoluteEpisode: 456
           },
           {
@@ -2389,7 +2388,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 459,
-            title: "Ticking Down to the Time of Battle! The Navy\'s Strongest Lineup in Position!",
+            title: "Ticking Down to the Time of Battle! The Navy's Strongest Lineup in Position!",
             absoluteEpisode: 459
           },
           {
@@ -2399,7 +2398,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 461,
-            title: "The Beginning of the War! Ace and Whitebeard\'s Past!",
+            title: "The Beginning of the War! Ace and Whitebeard's Past!",
             absoluteEpisode: 461
           },
           {
@@ -2409,7 +2408,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 463,
-            title: "An All-Consuming Inferno!! Admiral Akainu\'s Power!",
+            title: "An All-Consuming Inferno!! Admiral Akainu's Power!",
             absoluteEpisode: 463
           },
           {
@@ -2419,7 +2418,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 465,
-            title: "Justice for the Winners! Sengoku\'s Strategy in Action!",
+            title: "Justice for the Winners! Sengoku's Strategy in Action!",
             absoluteEpisode: 465
           },
           {
@@ -2439,7 +2438,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 469,
-            title: "Kuma\'s Transformation! Ivan-san\'s Blow of Anger!",
+            title: "Kuma's Transformation! Ivan-san's Blow of Anger!",
             absoluteEpisode: 469
           },
           {
@@ -2454,7 +2453,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 472,
-            title: "Akainu\'s Plot! Whitebeard Entrapped!",
+            title: "Akainu's Plot! Whitebeard Entrapped!",
             absoluteEpisode: 472
           },
           {
@@ -2469,7 +2468,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 475,
-            title: "Moving into the Final Phase! Whitebeard\'s Trump Card for Recovery!",
+            title: "Moving into the Final Phase! Whitebeard's Trump Card for Recovery!",
             absoluteEpisode: 475
           },
           {
@@ -2479,7 +2478,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 477,
-            title: "The Power That Will Shorten One\'s Life! Energy Hormone, Redux!",
+            title: "The Power That Will Shorten One's Life! Energy Hormone, Redux!",
             absoluteEpisode: 477
           },
           {
@@ -2499,12 +2498,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 481,
-            title: "Ace Rescued! Whitebeard\'s Final Order!",
+            title: "Ace Rescued! Whitebeard's Final Order!",
             absoluteEpisode: 481
           },
           {
             episode: 482,
-            title: "The Power That Can Burn Even Fire! Akainu\'s Ruthless Pursuit!",
+            title: "The Power That Can Burn Even Fire! Akainu's Ruthless Pursuit!",
             absoluteEpisode: 482
           },
           {
@@ -2514,7 +2513,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 484,
-            title: "The Navy Headquarters Falls! Whitebeard\'s Unspeakable Wrath!",
+            title: "The Navy Headquarters Falls! Whitebeard's Unspeakable Wrath!",
             absoluteEpisode: 484
           },
           {
@@ -2524,12 +2523,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 486,
-            title: "The Show Begins! Blackbeard\'s Plot is Revealed!",
+            title: "The Show Begins! Blackbeard's Plot is Revealed!",
             absoluteEpisode: 486
           },
           {
             episode: 487,
-            title: "Akainu\'s Tenacity! The Fist of Magma Attacks Luffy",
+            title: "Akainu's Tenacity! The Fist of Magma Attacks Luffy",
             absoluteEpisode: 487
           },
           {
@@ -2544,7 +2543,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 490,
-            title: "Mighty Leaders Face Each Other Down! Heralding the \'New Era\'!",
+            title: "Mighty Leaders Face Each Other Down! Heralding the 'New Era'!",
             absoluteEpisode: 490
           },
           {
@@ -2554,7 +2553,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 492,
-            title: "The Strongest Tag-Team! Luffy and Toriko\'s Hard Struggle! (II)",
+            title: "The Strongest Tag-Team! Luffy and Toriko's Hard Struggle! (II)",
             absoluteEpisode: 492
           },
           {
@@ -2569,7 +2568,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 495,
-            title: "I Won\'t Run! Ace\'s Desperate Rescue Operation!",
+            title: "I Won't Run! Ace's Desperate Rescue Operation!",
             absoluteEpisode: 495
           },
           {
@@ -2579,7 +2578,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 497,
-            title: "Leaving the Dadan Family for Good?! The Kids\' Hideout Has Been Built!",
+            title: "Leaving the Dadan Family for Good?! The Kids' Hideout Has Been Built!",
             absoluteEpisode: 497
           },
           {
@@ -2594,7 +2593,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 500,
-            title: "Freedom Taken Away! The Nobles\' Plot Closing in on the Brothers!",
+            title: "Freedom Taken Away! The Nobles' Plot Closing in on the Brothers!",
             absoluteEpisode: 500
           },
           {
@@ -2619,7 +2618,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 505,
-            title: "I Want to See Them! Luffy\'s Mournful Cry!",
+            title: "I Want to See Them! Luffy's Mournful Cry!",
             absoluteEpisode: 505
           },
           {
@@ -2639,12 +2638,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 509,
-            title: "Encounter! The Great Swordsman Mihawk! Zoro\'s Self-Willed Deadly Struggle!",
+            title: "Encounter! The Great Swordsman Mihawk! Zoro's Self-Willed Deadly Struggle!",
             absoluteEpisode: 509
           },
           {
             episode: 510,
-            title: "A Disaster for Sanji! The Queen\'s Return to the Kingdom!",
+            title: "A Disaster for Sanji! The Queen's Return to the Kingdom!",
             absoluteEpisode: 510
           },
           {
@@ -2664,17 +2663,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 514,
-            title: "Living through Hell! Sanji\'s Fight for His Manhood!",
+            title: "Living through Hell! Sanji's Fight for His Manhood!",
             absoluteEpisode: 514
           },
           {
             episode: 515,
-            title: "I Will Get Much, Much Stronger! Zoro\'s Pledge to His Captain!",
+            title: "I Will Get Much, Much Stronger! Zoro's Pledge to His Captain!",
             absoluteEpisode: 515
           },
           {
             episode: 516,
-            title: "Luffy\'s Training Begins! To the Place We Promised in 2 Years!",
+            title: "Luffy's Training Begins! To the Place We Promised in 2 Years!",
             absoluteEpisode: 516
           },
           {
@@ -2739,12 +2738,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 528,
-            title: "Excitement Blow-out! Sanji\'s Life Under Threat!",
+            title: "Excitement Blow-out! Sanji's Life Under Threat!",
             absoluteEpisode: 528
           },
           {
             episode: 529,
-            title: "The Fish-Man Island Will Be Annihilated?! Sharley\'s Prophecy!",
+            title: "The Fish-Man Island Will Be Annihilated?! Sharley's Prophecy!",
             absoluteEpisode: 529
           },
           {
@@ -2764,7 +2763,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 533,
-            title: "It\'s An Emergency! The Ryugu Palace Is Occupied!",
+            title: "It's An Emergency! The Ryugu Palace Is Occupied!",
             absoluteEpisode: 533
           },
           {
@@ -2774,7 +2773,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 535,
-            title: "Hordy\'s Onslaught! The Retaliatory Plan Set Into Motion!",
+            title: "Hordy's Onslaught! The Retaliatory Plan Set Into Motion!",
             absoluteEpisode: 535
           },
           {
@@ -2864,7 +2863,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 553,
-            title: "Shirahoshi\'s Tears! Luffy Finally Shows Up!",
+            title: "Shirahoshi's Tears! Luffy Finally Shows Up!",
             absoluteEpisode: 553
           },
           {
@@ -2889,12 +2888,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 558,
-            title: "Noah Approaches! The Crisis of Fishman Island\'s Destruction!",
+            title: "Noah Approaches! The Crisis of Fishman Island's Destruction!",
             absoluteEpisode: 558
           },
           {
             episode: 559,
-            title: "Hurry Up, Luffy! Shirahoshi\'s Desperate Situation",
+            title: "Hurry Up, Luffy! Shirahoshi's Desperate Situation",
             absoluteEpisode: 559
           },
           {
@@ -2909,7 +2908,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 562,
-            title: "Luffy Loses the Fight?! Hordy\'s Long Awaited Revenge!",
+            title: "Luffy Loses the Fight?! Hordy's Long Awaited Revenge!",
             absoluteEpisode: 562
           },
           {
@@ -2924,7 +2923,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 565,
-            title: "Luffy\'s All-out Attack! Red Hawk Blasts!",
+            title: "Luffy's All-out Attack! Red Hawk Blasts!",
             absoluteEpisode: 565
           },
           {
@@ -2974,22 +2973,22 @@ window._ANIME_DATA = [
           },
           {
             episode: 575,
-            title: "Z\'s Ambition! Lily the Little Giant!",
+            title: "Z's Ambition! Lily the Little Giant!",
             absoluteEpisode: 575
           },
           {
             episode: 576,
-            title: "Z\'s Ambition! A Dark and Powerful Army!",
+            title: "Z's Ambition! A Dark and Powerful Army!",
             absoluteEpisode: 576
           },
           {
             episode: 577,
-            title: "Z\'s Ambition! A Great and Desperate Escape Plan!",
+            title: "Z's Ambition! A Great and Desperate Escape Plan!",
             absoluteEpisode: 577
           },
           {
             episode: 578,
-            title: "Z\'s Ambition! Luffy vs. Shuzo!",
+            title: "Z's Ambition! Luffy vs. Shuzo!",
             absoluteEpisode: 578
           },
           {
@@ -3009,7 +3008,7 @@ window._ANIME_DATA = [
         episodes: [
           {
             episode: 581,
-            title: "The Straw Hats Stunned! Enter: A Samurai\'s Horrifying Severed Head!",
+            title: "The Straw Hats Stunned! Enter: A Samurai's Horrifying Severed Head!",
             absoluteEpisode: 581
           },
           {
@@ -3054,12 +3053,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 590,
-            title: "History\'s Strongest Collaboration vs. Glutton of the Sea (II)",
+            title: "History's Strongest Collaboration vs. Glutton of the Sea (II)",
             absoluteEpisode: 590
           },
           {
             episode: 591,
-            title: "Chopper\'s Fury! The Master\'s Inhumane Experiment!",
+            title: "Chopper's Fury! The Master's Inhumane Experiment!",
             absoluteEpisode: 591
           },
           {
@@ -3069,17 +3068,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 593,
-            title: "Save Nami! Luffy\'s Fight on the Snow-Capped Mountains!",
+            title: "Save Nami! Luffy's Fight on the Snow-Capped Mountains!",
             absoluteEpisode: 593
           },
           {
             episode: 594,
-            title: "Formed! Luffy and Law\'s Pirate Alliance!",
+            title: "Formed! Luffy and Law's Pirate Alliance!",
             absoluteEpisode: 594
           },
           {
             episode: 595,
-            title: "Capture M! The Pirate Alliance\'s Operation Launches!",
+            title: "Capture M! The Pirate Alliance's Operation Launches!",
             absoluteEpisode: 595
           },
           {
@@ -3094,7 +3093,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 598,
-            title: "The Samurai that Cuts the Fire! Kin\'emon of Foxfire!",
+            title: "The Samurai that Cuts the Fire! Kin'emon of Foxfire!",
             absoluteEpisode: 598
           },
           {
@@ -3104,12 +3103,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 600,
-            title: "Save the Children! The Master\'s Evil Hands Close in!",
+            title: "Save the Children! The Master's Evil Hands Close in!",
             absoluteEpisode: 600
           },
           {
             episode: 601,
-            title: "Shaking Up the New World! Caesar\'s Horrendous Experiment!",
+            title: "Shaking Up the New World! Caesar's Horrendous Experiment!",
             absoluteEpisode: 601
           },
           {
@@ -3119,17 +3118,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 603,
-            title: "Launching the Counter Attack! Luffy and Law\'s Great Escape!",
+            title: "Launching the Counter Attack! Luffy and Law's Great Escape!",
             absoluteEpisode: 603
           },
           {
             episode: 604,
-            title: "Get to Building R! The Pirate Alliance\'s Great Advance!",
+            title: "Get to Building R! The Pirate Alliance's Great Advance!",
             absoluteEpisode: 604
           },
           {
             episode: 605,
-            title: "Tashigi\'s Tears! G-5\'s Desperate Breakthrough Plan!",
+            title: "Tashigi's Tears! G-5's Desperate Breakthrough Plan!",
             absoluteEpisode: 605
           },
           {
@@ -3169,7 +3168,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 613,
-            title: "Showing Off His Techniques! Zoro\'s Formidable One-Sword Style!",
+            title: "Showing Off His Techniques! Zoro's Formidable One-Sword Style!",
             absoluteEpisode: 613
           },
           {
@@ -3189,7 +3188,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 617,
-            title: "Caesar\'s Defeat! The Powerful Grizzly Magnum!",
+            title: "Caesar's Defeat! The Powerful Grizzly Magnum!",
             absoluteEpisode: 617
           },
           {
@@ -3214,17 +3213,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 622,
-            title: "A Touching Reunion! Momonosuke and Kin\'emon!",
+            title: "A Touching Reunion! Momonosuke and Kin'emon!",
             absoluteEpisode: 622
           },
           {
             episode: 623,
-            title: "It\'s Time to Say Goodbye! Leaving Punk Hazard!",
+            title: "It's Time to Say Goodbye! Leaving Punk Hazard!",
             absoluteEpisode: 623
           },
           {
             episode: 624,
-            title: "The G-5 Wiped Out! Doflamingo\'s Sudden Attack!",
+            title: "The G-5 Wiped Out! Doflamingo's Sudden Attack!",
             absoluteEpisode: 624
           },
           {
@@ -3244,7 +3243,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 628,
-            title: "A Major Turnaround! Luffy\'s Angry Iron Fist Strikes!",
+            title: "A Major Turnaround! Luffy's Angry Iron Fist Strikes!",
             absoluteEpisode: 628
           },
           {
@@ -3304,7 +3303,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 640,
-            title: "Explore! Fairies\' Island - Green Bit!",
+            title: "Explore! Fairies' Island - Green Bit!",
             absoluteEpisode: 640
           },
           {
@@ -3324,7 +3323,7 @@ window._ANIME_DATA = [
         episodes: [
           {
             episode: 643,
-            title: "Shaking Heaven and Earth! Admiral Fujitora\'s Power!",
+            title: "Shaking Heaven and Earth! Admiral Fujitora's Power!",
             absoluteEpisode: 643
           },
           {
@@ -3424,7 +3423,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 663,
-            title: "Luffy Astonished! The Man Who Inherits Ace\'s Will!",
+            title: "Luffy Astonished! The Man Who Inherits Ace's Will!",
             absoluteEpisode: 663
           },
           {
@@ -3444,7 +3443,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 667,
-            title: "The Admiral\'s Decision! Fujitora vs. Doflamingo!",
+            title: "The Admiral's Decision! Fujitora vs. Doflamingo!",
             absoluteEpisode: 667
           },
           {
@@ -3459,7 +3458,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 670,
-            title: "Dragon Claw Strikes! Lucy\'s Intimidating Attack!",
+            title: "Dragon Claw Strikes! Lucy's Intimidating Attack!",
             absoluteEpisode: 670
           },
           {
@@ -3494,7 +3493,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 677,
-            title: "The Legend is Back! Kyros\' All-Out Attack!",
+            title: "The Legend is Back! Kyros' All-Out Attack!",
             absoluteEpisode: 677
           },
           {
@@ -3509,7 +3508,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 680,
-            title: "The Devil\'s Trap! A Dressrosa Extermination Plan!",
+            title: "The Devil's Trap! A Dressrosa Extermination Plan!",
             absoluteEpisode: 680
           },
           {
@@ -3534,12 +3533,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 685,
-            title: "Steady Progress! Luffy\'s Army vs. Pica!",
+            title: "Steady Progress! Luffy's Army vs. Pica!",
             absoluteEpisode: 685
           },
           {
             episode: 686,
-            title: "A Shocking Confession! Law\'s Soulful Vow!",
+            title: "A Shocking Confession! Law's Soulful Vow!",
             absoluteEpisode: 686
           },
           {
@@ -3554,12 +3553,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 689,
-            title: "A Great Escape! Luffy\'s Tide-turning Elephant Gun!",
+            title: "A Great Escape! Luffy's Tide-turning Elephant Gun!",
             absoluteEpisode: 689
           },
           {
             episode: 690,
-            title: "A United Front - Luffy\'s Breakthrough Towards Victory!",
+            title: "A United Front - Luffy's Breakthrough Towards Victory!",
             absoluteEpisode: 690
           },
           {
@@ -3569,7 +3568,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 692,
-            title: "A Hard-Fought Battle Against Pica! Zoro\'s Deadly Attack!",
+            title: "A Hard-Fought Battle Against Pica! Zoro's Deadly Attack!",
             absoluteEpisode: 692
           }
         ]
@@ -3579,7 +3578,7 @@ window._ANIME_DATA = [
         episodes: [
           {
             episode: 693,
-            title: "The Little People\'s Princess! Captive Mansherry!",
+            title: "The Little People's Princess! Captive Mansherry!",
             absoluteEpisode: 693
           },
           {
@@ -3604,7 +3603,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 698,
-            title: "Anger Erupts! Luffy and Law\'s Ultimate Stratagem!",
+            title: "Anger Erupts! Luffy and Law's Ultimate Stratagem!",
             absoluteEpisode: 698
           },
           {
@@ -3624,12 +3623,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 702,
-            title: "A Celestial Dragon! Doffy\'s Stormy Past",
+            title: "A Celestial Dragon! Doffy's Stormy Past",
             absoluteEpisode: 702
           },
           {
             episode: 703,
-            title: "A Rocky Road! Law and Corazon\'s Journey of Life!",
+            title: "A Rocky Road! Law and Corazon's Journey of Life!",
             absoluteEpisode: 703
           },
           {
@@ -3639,17 +3638,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 705,
-            title: "The Moment of Resolution! Corazon\'s Farewell Smile!",
+            title: "The Moment of Resolution! Corazon's Farewell Smile!",
             absoluteEpisode: 705
           },
           {
             episode: 706,
-            title: "Advance, Law! The Kindhearted Man\'s Final Fight!",
+            title: "Advance, Law! The Kindhearted Man's Final Fight!",
             absoluteEpisode: 706
           },
           {
             episode: 707,
-            title: "To Be Free! Law\'s Injection Shot Blasts!",
+            title: "To Be Free! Law's Injection Shot Blasts!",
             absoluteEpisode: 707
           },
           {
@@ -3669,7 +3668,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 711,
-            title: "The Man\'s Pride! Bellamy\'s Last Charge!",
+            title: "The Man's Pride! Bellamy's Last Charge!",
             absoluteEpisode: 711
           },
           {
@@ -3689,37 +3688,37 @@ window._ANIME_DATA = [
           },
           {
             episode: 715,
-            title: "The Manly Duel! Señor\'s Elegy of Love!",
+            title: "The Manly Duel! Señor's Elegy of Love!",
             absoluteEpisode: 715
           },
           {
             episode: 716,
-            title: "Stardust of Death! Diamante\'s Storm of Vicious Attacks!",
+            title: "Stardust of Death! Diamante's Storm of Vicious Attacks!",
             absoluteEpisode: 716
           },
           {
             episode: 717,
-            title: "Trueno Bastardo! Kyros\' Furious Strike!",
+            title: "Trueno Bastardo! Kyros' Furious Strike!",
             absoluteEpisode: 717
           },
           {
             episode: 718,
-            title: "Moving Across the Ground! The Giant Statue Pica\'s Surprise Maneuver!",
+            title: "Moving Across the Ground! The Giant Statue Pica's Surprise Maneuver!",
             absoluteEpisode: 718
           },
           {
             episode: 719,
-            title: "A Decisive Battle in Midair! Zoro\'s New Special Secret Technique Blasts!",
+            title: "A Decisive Battle in Midair! Zoro's New Special Secret Technique Blasts!",
             absoluteEpisode: 719
           },
           {
             episode: 720,
-            title: "So Long! Bellamy\'s Farewell Blow!",
+            title: "So Long! Bellamy's Farewell Blow!",
             absoluteEpisode: 720
           },
           {
             episode: 721,
-            title: "Law Dies! Luffy\'s Raging Onslaught!",
+            title: "Law Dies! Luffy's Raging Onslaught!",
             absoluteEpisode: 721
           },
           {
@@ -3739,7 +3738,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 725,
-            title: "Anger Erupts - I\'m Going to Take it All on!",
+            title: "Anger Erupts - I'm Going to Take it All on!",
             absoluteEpisode: 725
           },
           {
@@ -3749,7 +3748,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 727,
-            title: "A Massive Counterattack! Doflamingo\'s Awakening!",
+            title: "A Massive Counterattack! Doflamingo's Awakening!",
             absoluteEpisode: 727
           },
           {
@@ -3759,12 +3758,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 729,
-            title: "Flame Dragon King! Protect Luffy\'s Life!",
+            title: "Flame Dragon King! Protect Luffy's Life!",
             absoluteEpisode: 729
           },
           {
             episode: 730,
-            title: "Tears of Miracles! Mansherry\'s Fight!",
+            title: "Tears of Miracles! Mansherry's Fight!",
             absoluteEpisode: 730
           },
           {
@@ -3779,17 +3778,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 733,
-            title: "Attack on a Celestial! Luffy\'s King Kong Gun of Anger!",
+            title: "Attack on a Celestial! Luffy's King Kong Gun of Anger!",
             absoluteEpisode: 733
           },
           {
             episode: 734,
-            title: "To Be Free! Dressrosa\'s Delight!",
+            title: "To Be Free! Dressrosa's Delight!",
             absoluteEpisode: 734
           },
           {
             episode: 735,
-            title: "The Unheard-of! Admiral Fujitora\'s Surprising Decision!",
+            title: "The Unheard-of! Admiral Fujitora's Surprising Decision!",
             absoluteEpisode: 735
           },
           {
@@ -3804,7 +3803,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 738,
-            title: "The Brothers\' Bond! The Untold Story Behind Luffy and Sabo\'s Reunion!",
+            title: "The Brothers' Bond! The Untold Story Behind Luffy and Sabo's Reunion!",
             absoluteEpisode: 738
           },
           {
@@ -3829,17 +3828,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 743,
-            title: "Men\'s Pride! Luffy vs. Fujitora, Head-to-Head!",
+            title: "Men's Pride! Luffy vs. Fujitora, Head-to-Head!",
             absoluteEpisode: 743
           },
           {
             episode: 744,
-            title: "No Way Out! Admiral Fujitora\'s Ruthless Pursuit!",
+            title: "No Way Out! Admiral Fujitora's Ruthless Pursuit!",
             absoluteEpisode: 744
           },
           {
             episode: 745,
-            title: "Sons\' Cups! Straw Hat Fleet is Formed!",
+            title: "Sons' Cups! Straw Hat Fleet is Formed!",
             absoluteEpisode: 745
           },
           {
@@ -3874,7 +3873,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 751,
-            title: "The Start of a New Adventure - Arrival at the Mysterious Island, \'Zou\'!",
+            title: "The Start of a New Adventure - Arrival at the Mysterious Island, 'Zou'!",
             absoluteEpisode: 751
           },
           {
@@ -3929,27 +3928,27 @@ window._ANIME_DATA = [
           },
           {
             episode: 762,
-            title: "The Rascal Returns Home - Yonko Big Mom\'s Assassin",
+            title: "The Rascal Returns Home - Yonko Big Mom's Assassin",
             absoluteEpisode: 762
           },
           {
             episode: 763,
-            title: "The Truth Behind His Disappearance - Sanji\'s Shocking Invitation",
+            title: "The Truth Behind His Disappearance - Sanji's Shocking Invitation",
             absoluteEpisode: 763
           },
           {
             episode: 764,
-            title: "To My Buds! Sanji\'s Farewell Note!",
+            title: "To My Buds! Sanji's Farewell Note!",
             absoluteEpisode: 764
           },
           {
             episode: 765,
-            title: "Let\'s Go See Master Nekomamushi",
+            title: "Let's Go See Master Nekomamushi",
             absoluteEpisode: 765
           },
           {
             episode: 766,
-            title: "Luffy\'s Decision - Sanji on the Brink of Quitting!",
+            title: "Luffy's Decision - Sanji on the Brink of Quitting!",
             absoluteEpisode: 766
           },
           {
@@ -3984,7 +3983,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 773,
-            title: "The Nightmare Returns - The Invincible Jack\'s Fierce Attack",
+            title: "The Nightmare Returns - The Invincible Jack's Fierce Attack",
             absoluteEpisode: 773
           },
           {
@@ -3994,7 +3993,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 775,
-            title: "Save Zunisha - The Straw Hat\'s Rescue Operation!",
+            title: "Save Zunisha - The Straw Hat's Rescue Operation!",
             absoluteEpisode: 775
           },
           {
@@ -4029,12 +4028,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 782,
-            title: "The Devil\'s Fist - A Show Down! Luffy vs. Grount",
+            title: "The Devil's Fist - A Show Down! Luffy vs. Grount",
             absoluteEpisode: 782
           },
           {
             episode: 783,
-            title: "Sanji\'s Homecoming! Into Big Mom\'s Territory!",
+            title: "Sanji's Homecoming! Into Big Mom's Territory!",
             absoluteEpisode: 783
           },
           {
@@ -4054,12 +4053,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 787,
-            title: "The Emperor\'s Daughter! Sanji\'s Fiancée - Pudding!",
+            title: "The Emperor's Daughter! Sanji's Fiancée - Pudding!",
             absoluteEpisode: 787
           },
           {
             episode: 788,
-            title: "A Massive Attack! Mom\'s Hunger Pangs!",
+            title: "A Massive Attack! Mom's Hunger Pangs!",
             absoluteEpisode: 788
           },
           {
@@ -4069,7 +4068,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 790,
-            title: "The Emperor\'s Castle! Arriving at the Whole Cake Island!",
+            title: "The Emperor's Castle! Arriving at the Whole Cake Island!",
             absoluteEpisode: 790
           },
           {
@@ -4079,12 +4078,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 792,
-            title: "Mom\'s Assassin! Luffy and the Seducing Woods!",
+            title: "Mom's Assassin! Luffy and the Seducing Woods!",
             absoluteEpisode: 792
           },
           {
             episode: 793,
-            title: "A Seafaring Kingdom! Germa\'s King Judge!",
+            title: "A Seafaring Kingdom! Germa's King Judge!",
             absoluteEpisode: 793
           },
           {
@@ -4099,7 +4098,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 796,
-            title: "The Land of Souls! Mom\'s Fatal Ability!",
+            title: "The Land of Souls! Mom's Fatal Ability!",
             absoluteEpisode: 796
           },
           {
@@ -4124,7 +4123,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 801,
-            title: "The Benefactor\'s Life! Sanji and Owner Zeff!",
+            title: "The Benefactor's Life! Sanji and Owner Zeff!",
             absoluteEpisode: 801
           },
           {
@@ -4144,7 +4143,7 @@ window._ANIME_DATA = [
         episodes: [
           {
             episode: 804,
-            title: "To the East Blue! Sanji\'s Resolute Departure!",
+            title: "To the East Blue! Sanji's Resolute Departure!",
             absoluteEpisode: 804
           },
           {
@@ -4174,12 +4173,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 810,
-            title: "The End of the Adventure! Sanji\'s Resolute Proposal!",
+            title: "The End of the Adventure! Sanji's Resolute Proposal!",
             absoluteEpisode: 810
           },
           {
             episode: 811,
-            title: "I\'ll Wait Here! Luffy vs. the Enraged Army!",
+            title: "I'll Wait Here! Luffy vs. the Enraged Army!",
             absoluteEpisode: 811
           },
           {
@@ -4194,12 +4193,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 814,
-            title: "Shout of the Soul! Brook and Pedro\'s Lightning Operation!",
+            title: "Shout of the Soul! Brook and Pedro's Lightning Operation!",
             absoluteEpisode: 814
           },
           {
             episode: 815,
-            title: "Goodbye! Pudding\'s Tearful Determination!",
+            title: "Goodbye! Pudding's Tearful Determination!",
             absoluteEpisode: 815
           },
           {
@@ -4209,7 +4208,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 817,
-            title: "Moist Cigarette! The Night Before Sanji\'s Wedding!",
+            title: "Moist Cigarette! The Night Before Sanji's Wedding!",
             absoluteEpisode: 817
           },
           {
@@ -4219,12 +4218,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 819,
-            title: "Sora\'s Wish! Germa\'s Failure - Sanji!",
+            title: "Sora's Wish! Germa's Failure - Sanji!",
             absoluteEpisode: 819
           },
           {
             episode: 820,
-            title: "To Reach Sanji! Luffy\'s Vengeful Hell-bent Dash!",
+            title: "To Reach Sanji! Luffy's Vengeful Hell-bent Dash!",
             absoluteEpisode: 820
           },
           {
@@ -4264,7 +4263,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 828,
-            title: "The Deadly Pact! Luffy & Bege\'s Allied Forces!",
+            title: "The Deadly Pact! Luffy & Bege's Allied Forces!",
             absoluteEpisode: 828
           },
           {
@@ -4304,7 +4303,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 836,
-            title: "Mom\'s Secret! The Giant\'s Island Elbaph and a Little Monster!",
+            title: "Mom's Secret! The Giant's Island Elbaph and a Little Monster!",
             absoluteEpisode: 836
           },
           {
@@ -4314,7 +4313,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 838,
-            title: "The Launcher Blasts! The Moment of Big Mom\'s Assassination!",
+            title: "The Launcher Blasts! The Moment of Big Mom's Assassination!",
             absoluteEpisode: 838
           },
           {
@@ -4334,7 +4333,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 842,
-            title: "The Execution Begins! Luffy\'s Allied Forces Are Annihilated?!",
+            title: "The Execution Begins! Luffy's Allied Forces Are Annihilated?!",
             absoluteEpisode: 842
           },
           {
@@ -4349,7 +4348,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 845,
-            title: "Pudding\'s Determination! Ablaze! The Seducing Woods!",
+            title: "Pudding's Determination! Ablaze! The Seducing Woods!",
             absoluteEpisode: 845
           },
           {
@@ -4374,7 +4373,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 850,
-            title: "I\'ll Be Back! Luffy, Deadly Departure",
+            title: "I'll Be Back! Luffy, Deadly Departure",
             absoluteEpisode: 850
           },
           {
@@ -4399,7 +4398,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 855,
-            title: "The End of the Deadly Battle?! Katakuri\'s Awakening in Anger!",
+            title: "The End of the Deadly Battle?! Katakuri's Awakening in Anger!",
             absoluteEpisode: 855
           },
           {
@@ -4409,7 +4408,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 857,
-            title: "Luffy Fights Back! The Invincible Katakuri\'s Weak Point!",
+            title: "Luffy Fights Back! The Invincible Katakuri's Weak Point!",
             absoluteEpisode: 857
           },
           {
@@ -4419,27 +4418,27 @@ window._ANIME_DATA = [
           },
           {
             episode: 859,
-            title: "The Rebellious Daughter, Chiffon! Sanji\'s Big Plan for Transporting the Cake!",
+            title: "The Rebellious Daughter, Chiffon! Sanji's Big Plan for Transporting the Cake!",
             absoluteEpisode: 859
           },
           {
             episode: 860,
-            title: "A Man\'s Way of Life! Bege and Luffy\'s Determination as Captains!",
+            title: "A Man's Way of Life! Bege and Luffy's Determination as Captains!",
             absoluteEpisode: 860
           },
           {
             episode: 861,
-            title: "The Cake Sank?! Sanji and Bege\'s Getaway Battle!",
+            title: "The Cake Sank?! Sanji and Bege's Getaway Battle!",
             absoluteEpisode: 861
           },
           {
             episode: 862,
-            title: "Sulong! Carrot\'s Big Mystic Transformation!",
+            title: "Sulong! Carrot's Big Mystic Transformation!",
             absoluteEpisode: 862
           },
           {
             episode: 863,
-            title: "Break Through! The Straw Hat\'s Mighty Sea Battle!",
+            title: "Break Through! The Straw Hat's Mighty Sea Battle!",
             absoluteEpisode: 863
           },
           {
@@ -4449,12 +4448,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 865,
-            title: "Dark King\'s Direct Precepts! The Battle Against Katakuri Turns Around!",
+            title: "Dark King's Direct Precepts! The Battle Against Katakuri Turns Around!",
             absoluteEpisode: 865
           },
           {
             episode: 866,
-            title: "Finally He Returns! Sanji, the Man Who\'ll Stop the Emperor of the Sea!",
+            title: "Finally He Returns! Sanji, the Man Who'll Stop the Emperor of the Sea!",
             absoluteEpisode: 866
           },
           {
@@ -4464,7 +4463,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 868,
-            title: "One Man\'s Determination! Katakuri\'s Deadly Big Fight!",
+            title: "One Man's Determination! Katakuri's Deadly Big Fight!",
             absoluteEpisode: 868
           },
           {
@@ -4479,7 +4478,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 871,
-            title: "Finally, It\'s Over! The Climax of the Intense Fight against Katakuri!",
+            title: "Finally, It's Over! The Climax of the Intense Fight against Katakuri!",
             absoluteEpisode: 871
           },
           {
@@ -4499,7 +4498,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 875,
-            title: "A Captivating Flavor! Sanji\'s Cake of Happiness!",
+            title: "A Captivating Flavor! Sanji's Cake of Happiness!",
             absoluteEpisode: 875
           },
           {
@@ -4509,7 +4508,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 877,
-            title: "The Parting Time! Pudding\'s Last Wish!",
+            title: "The Parting Time! Pudding's Last Wish!",
             absoluteEpisode: 877
           }
         ]
@@ -4524,7 +4523,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 879,
-            title: "To the Reverie! The Straw Hats\' Sworn Allies Come Together!",
+            title: "To the Reverie! The Straw Hats' Sworn Allies Come Together!",
             absoluteEpisode: 879
           },
           {
@@ -4549,7 +4548,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 884,
-            title: "I Miss Him! Vivi and Rebecca\'s Sentiments!",
+            title: "I Miss Him! Vivi and Rebecca's Sentiments!",
             absoluteEpisode: 884
           },
           {
@@ -4579,12 +4578,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 890,
-            title: "Marco! The Keeper of Whitebeard\'s Last Memento!",
+            title: "Marco! The Keeper of Whitebeard's Last Memento!",
             absoluteEpisode: 890
           },
           {
             episode: 891,
-            title: "Climbing Up a Waterfall! A Great Journey Through the Land of Wano\'s Sea Zone!",
+            title: "Climbing Up a Waterfall! A Great Journey Through the Land of Wano's Sea Zone!",
             absoluteEpisode: 891
           }
         ]
@@ -4599,17 +4598,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 893,
-            title: "Otama Appears! Luffy vs. Kaido\'s Army!",
+            title: "Otama Appears! Luffy vs. Kaido's Army!",
             absoluteEpisode: 893
           },
           {
             episode: 894,
-            title: "He\'ll Come! The Legend of Ace in the Land of Wano!",
+            title: "He'll Come! The Legend of Ace in the Land of Wano!",
             absoluteEpisode: 894
           },
           {
             episode: 895,
-            title: "Side Story! The World\'s Greatest Bounty Hunter, Cidre!",
+            title: "Side Story! The World's Greatest Bounty Hunter, Cidre!",
             absoluteEpisode: 895
           },
           {
@@ -4629,7 +4628,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 899,
-            title: "Defeat is Inevitable! The Strawman\'s Fierce Attack!",
+            title: "Defeat is Inevitable! The Strawman's Fierce Attack!",
             absoluteEpisode: 899
           },
           {
@@ -4639,7 +4638,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 901,
-            title: "Charging into the Enemy\'s Territory! Bakura Town - Where Officials Thrive!",
+            title: "Charging into the Enemy's Territory! Bakura Town - Where Officials Thrive!",
             absoluteEpisode: 901
           },
           {
@@ -4699,7 +4698,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 913,
-            title: "Everyone is Annihilated! Kaido\'s Furious Blast Breath!",
+            title: "Everyone is Annihilated! Kaido's Furious Blast Breath!",
             absoluteEpisode: 913
           },
           {
@@ -4724,7 +4723,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 918,
-            title: "It\'s On! The Special Operation to Bring Down Kaido!",
+            title: "It's On! The Special Operation to Bring Down Kaido!",
             absoluteEpisode: 918
           },
           {
@@ -4734,17 +4733,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 920,
-            title: "A Great Sensation! Sanji\'s Special Soba!",
+            title: "A Great Sensation! Sanji's Special Soba!",
             absoluteEpisode: 920
           },
           {
             episode: 921,
-            title: "Luxurious and Gorgeous! Wano\'s Most Beautiful Woman – Komurasaki!",
+            title: "Luxurious and Gorgeous! Wano's Most Beautiful Woman – Komurasaki!",
             absoluteEpisode: 921
           },
           {
             episode: 922,
-            title: "A Tale of Chivalry! Zoro and Tonoyasu\'s Little Trip!",
+            title: "A Tale of Chivalry! Zoro and Tonoyasu's Little Trip!",
             absoluteEpisode: 922
           },
           {
@@ -4764,7 +4763,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 926,
-            title: "A Desperate Situation! Orochi\'s Menacing Oniwabanshu!",
+            title: "A Desperate Situation! Orochi's Menacing Oniwabanshu!",
             absoluteEpisode: 926
           },
           {
@@ -4789,17 +4788,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 931,
-            title: "Climb Up! Luffy\'s Desperate Escape!",
+            title: "Climb Up! Luffy's Desperate Escape!",
             absoluteEpisode: 931
           },
           {
             episode: 932,
-            title: "Dead or Alive! Queen\'s Sumo Inferno!",
+            title: "Dead or Alive! Queen's Sumo Inferno!",
             absoluteEpisode: 932
           },
           {
             episode: 933,
-            title: "Gyukimaru! Zoro Fights a Duel on Bandit\'s Bridge!",
+            title: "Gyukimaru! Zoro Fights a Duel on Bandit's Bridge!",
             absoluteEpisode: 933
           },
           {
@@ -4814,12 +4813,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 936,
-            title: "Get the Hang of It! The Land of Wano\'s Haki - Ryuo!",
+            title: "Get the Hang of It! The Land of Wano's Haki - Ryuo!",
             absoluteEpisode: 936
           },
           {
             episode: 937,
-            title: "Tonoyasu! Ebisu Town\'s Most Loved!",
+            title: "Tonoyasu! Ebisu Town's Most Loved!",
             absoluteEpisode: 937
           },
           {
@@ -4834,12 +4833,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 940,
-            title: "Zoro\'s Fury! The Truth About the Smile!",
+            title: "Zoro's Fury! The Truth About the Smile!",
             absoluteEpisode: 940
           },
           {
             episode: 941,
-            title: "Toko\'s Tears! Orochi\'s Pitiless Bullets!",
+            title: "Toko's Tears! Orochi's Pitiless Bullets!",
             absoluteEpisode: 941
           },
           {
@@ -4849,7 +4848,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 943,
-            title: "Luffy\'s Determination! Win Through the Sumo Inferno!",
+            title: "Luffy's Determination! Win Through the Sumo Inferno!",
             absoluteEpisode: 943
           },
           {
@@ -4864,7 +4863,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 946,
-            title: "Stop the Emperor of the Sea! Queen\'s Secret Plan!",
+            title: "Stop the Emperor of the Sea! Queen's Secret Plan!",
             absoluteEpisode: 946
           },
           {
@@ -4879,17 +4878,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 949,
-            title: "We’re Here to Win! Luffy\'s Desperate Scream!",
+            title: "We’re Here to Win! Luffy's Desperate Scream!",
             absoluteEpisode: 949
           },
           {
             episode: 950,
-            title: "Warriors\' Dream! Luffy\'s Conquer of Udon!",
+            title: "Warriors' Dream! Luffy's Conquer of Udon!",
             absoluteEpisode: 950
           },
           {
             episode: 951,
-            title: "Orochi\'s Hunting Party! The Ninja Group vs. Zoro!",
+            title: "Orochi's Hunting Party! The Ninja Group vs. Zoro!",
             absoluteEpisode: 951
           },
           {
@@ -4899,12 +4898,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 953,
-            title: "Hiyori\'s Confession! A Reunion at Bandit\'s Bridge!",
+            title: "Hiyori's Confession! A Reunion at Bandit's Bridge!",
             absoluteEpisode: 953
           },
           {
             episode: 954,
-            title: "Its Name is Enma! Oden\'s Great Swords!",
+            title: "Its Name is Enma! Oden's Great Swords!",
             absoluteEpisode: 954
           },
           {
@@ -4939,7 +4938,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 961,
-            title: "Tearfully Swearing Allegiance! Oden and Kin\'emon!",
+            title: "Tearfully Swearing Allegiance! Oden and Kin'emon!",
             absoluteEpisode: 961
           },
           {
@@ -4949,12 +4948,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 963,
-            title: "Oden\'s Determination! Whitebeard\'s Test!",
+            title: "Oden's Determination! Whitebeard's Test!",
             absoluteEpisode: 963
           },
           {
             episode: 964,
-            title: "Whitebeard\'s Little Brother! Oden\'s Great Adventure!",
+            title: "Whitebeard's Little Brother! Oden's Great Adventure!",
             absoluteEpisode: 964
           },
           {
@@ -4964,12 +4963,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 966,
-            title: "Roger\'s Wish! A New Journey!",
+            title: "Roger's Wish! A New Journey!",
             absoluteEpisode: 966
           },
           {
             episode: 967,
-            title: "Devoting His Life! Roger\'s Adventure!",
+            title: "Devoting His Life! Roger's Adventure!",
             absoluteEpisode: 967
           },
           {
@@ -4999,12 +4998,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 973,
-            title: "Boiled to Death! Oden\'s One-hour Struggle!",
+            title: "Boiled to Death! Oden's One-hour Struggle!",
             absoluteEpisode: 973
           },
           {
             episode: 974,
-            title: "Oden Wouldn\'t Be Oden If It Wasn\'t Boiled!",
+            title: "Oden Wouldn't Be Oden If It Wasn't Boiled!",
             absoluteEpisode: 974
           },
           {
@@ -5039,7 +5038,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 981,
-            title: "A New Member! \'First Son of the Sea\' Jimbei!",
+            title: "A New Member! 'First Son of the Sea' Jimbei!",
             absoluteEpisode: 981
           },
           {
@@ -5109,7 +5108,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 995,
-            title: "Raid! Inheriting Oden\'s Will!",
+            title: "Raid! Inheriting Oden's Will!",
             absoluteEpisode: 995
           },
           {
@@ -5239,7 +5238,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1021,
-            title: "Spank Strikes! Sanji\'s Woman-trouble!",
+            title: "Spank Strikes! Sanji's Woman-trouble!",
             absoluteEpisode: 1021
           },
           {
@@ -5399,12 +5398,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 1053,
-            title: "Sanji\'s Mutation - The Two Arms in Crisis!",
+            title: "Sanji's Mutation - The Two Arms in Crisis!",
             absoluteEpisode: 1053
           },
           {
             episode: 1054,
-            title: "Death to Your Partner! Killer\'s Deadly Gamble!",
+            title: "Death to Your Partner! Killer's Deadly Gamble!",
             absoluteEpisode: 1054
           },
           {
@@ -5414,22 +5413,22 @@ window._ANIME_DATA = [
           },
           {
             episode: 1056,
-            title: "Strike Back! Law and Kid\'s Counterattack Alliance",
+            title: "Strike Back! Law and Kid's Counterattack Alliance",
             absoluteEpisode: 1056
           },
           {
             episode: 1057,
-            title: "For Luffy - Sanji and Zoro\'s Oath",
+            title: "For Luffy - Sanji and Zoro's Oath",
             absoluteEpisode: 1057
           },
           {
             episode: 1058,
-            title: "The Onslaught of Kazenbo - Orochi\'s Evil Clutches Close in",
+            title: "The Onslaught of Kazenbo - Orochi's Evil Clutches Close in",
             absoluteEpisode: 1058
           },
           {
             episode: 1059,
-            title: "Zoro\'s Hardship - A Monster! King the Wildfire",
+            title: "Zoro's Hardship - A Monster! King the Wildfire",
             absoluteEpisode: 1059
           },
           {
@@ -5489,7 +5488,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1071,
-            title: "Luffy\'s Peak - Attained! Gear Five",
+            title: "Luffy's Peak - Attained! Gear Five",
             absoluteEpisode: 1071
           },
           {
@@ -5504,12 +5503,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 1074,
-            title: "I Trust Momo - Luffy\'s Final Powerful Technique!",
+            title: "I Trust Momo - Luffy's Final Powerful Technique!",
             absoluteEpisode: 1074
           },
           {
             episode: 1075,
-            title: "20 Years\' Worth of Prayers! Take Back the Land of Wano!",
+            title: "20 Years' Worth of Prayers! Take Back the Land of Wano!",
             absoluteEpisode: 1075
           },
           {
@@ -5544,7 +5543,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1082,
-            title: "The Coming of the New Era! The Red-Haired\'s Imperial Rage",
+            title: "The Coming of the New Era! The Red-Haired's Imperial Rage",
             absoluteEpisode: 1082
           },
           {
@@ -5559,7 +5558,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1085,
-            title: "The Last Curtain! Luffy and Momonosuke\'s Vow",
+            title: "The Last Curtain! Luffy and Momonosuke's Vow",
             absoluteEpisode: 1085
           },
           {
@@ -5574,7 +5573,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1088,
-            title: "Luffy\'s Dream",
+            title: "Luffy's Dream",
             absoluteEpisode: 1088
           }
         ]
@@ -5584,7 +5583,7 @@ window._ANIME_DATA = [
         episodes: [
           {
             episode: 1089,
-            title: "Entering a New Chapter! Luffy and Sabo\'s Paths!",
+            title: "Entering a New Chapter! Luffy and Sabo's Paths!",
             absoluteEpisode: 1089
           },
           {
@@ -5599,7 +5598,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1092,
-            title: "Bonney\'s Lamentation! Darkness Lurking on the Future Island",
+            title: "Bonney's Lamentation! Darkness Lurking on the Future Island",
             absoluteEpisode: 1092
           },
           {
@@ -5644,7 +5643,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1101,
-            title: "The Strongest Form of Humanity! The Seraphim\'s Powers!",
+            title: "The Strongest Form of Humanity! The Seraphim's Powers!",
             absoluteEpisode: 1101
           },
           {
@@ -5654,12 +5653,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 1103,
-            title: "Turn Back My Father! Bonney\'s Futile Wish!",
+            title: "Turn Back My Father! Bonney's Futile Wish!",
             absoluteEpisode: 1103
           },
           {
             episode: 1104,
-            title: "A Desperate Situation! The Seraphim\'s All-out Attack!",
+            title: "A Desperate Situation! The Seraphim's All-out Attack!",
             absoluteEpisode: 1104
           },
           {
@@ -5679,7 +5678,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1108,
-            title: "Incomprehensible! The Seraphim\'s Rebellion!",
+            title: "Incomprehensible! The Seraphim's Rebellion!",
             absoluteEpisode: 1108
           },
           {
@@ -5694,7 +5693,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1111,
-            title: "The Second Ohara! The Mastermind\'s Ambition!",
+            title: "The Second Ohara! The Mastermind's Ambition!",
             absoluteEpisode: 1111
           },
           {
@@ -5714,12 +5713,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 1115,
-            title: "The Navy Surprised! The Navy Headquarters\' Former Admiral, Kuzan",
+            title: "The Navy Surprised! The Navy Headquarters' Former Admiral, Kuzan",
             absoluteEpisode: 1115
           },
           {
             episode: 1116,
-            title: "Let\'s Go Get It! Buggy\'s Big Declaration",
+            title: "Let's Go Get It! Buggy's Big Declaration",
             absoluteEpisode: 1116
           },
           {
@@ -5729,7 +5728,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1118,
-            title: "The Holy Land in Tumult! Sai and Leo\'s Full-Power Blow!",
+            title: "The Holy Land in Tumult! Sai and Leo's Full-Power Blow!",
             absoluteEpisode: 1118
           },
           {
@@ -5739,12 +5738,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 1120,
-            title: "The World Is Shaken! The Ruler\'s Judgment and the Five Elders\' Actions!",
+            title: "The World Is Shaken! The Ruler's Judgment and the Five Elders' Actions!",
             absoluteEpisode: 1120
           },
           {
             episode: 1121,
-            title: "Garp and Kuzan - A Master and a Pupil\'s Beliefs Clash",
+            title: "Garp and Kuzan - A Master and a Pupil's Beliefs Clash",
             absoluteEpisode: 1121
           },
           {
@@ -5754,7 +5753,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1123,
-            title: "The World Shakes! The Straw Hats\' Hostage Situation",
+            title: "The World Shakes! The Straw Hats' Hostage Situation",
             absoluteEpisode: 1123
           },
           {
@@ -5764,12 +5763,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 1125,
-            title: "A Clash of Two Men\'s Determination! Kizaru and Sentomaru",
+            title: "A Clash of Two Men's Determination! Kizaru and Sentomaru",
             absoluteEpisode: 1125
           },
           {
             episode: 1126,
-            title: "Looming Despair! Admiral Kizaru\'s Depressing Mission",
+            title: "Looming Despair! Admiral Kizaru's Depressing Mission",
             absoluteEpisode: 1126
           },
           {
@@ -5784,7 +5783,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1129,
-            title: "Kuma\'s Past - Better Off Dead in This World",
+            title: "Kuma's Past - Better Off Dead in This World",
             absoluteEpisode: 1129
           },
           {
@@ -5809,7 +5808,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1134,
-            title: "Cruel Fate - Kuma\'s Decision as a Father",
+            title: "Cruel Fate - Kuma's Decision as a Father",
             absoluteEpisode: 1134
           },
           {
@@ -5819,17 +5818,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 1136,
-            title: "Kuma\'s Life",
+            title: "Kuma's Life",
             absoluteEpisode: 1136
           },
           {
             episode: 1137,
-            title: "I\'m Sorry, Dad - Bonney\'s Tears and Kuma\'s Fist",
+            title: "I'm Sorry, Dad - Bonney's Tears and Kuma's Fist",
             absoluteEpisode: 1137
           },
           {
             episode: 1138,
-            title: "Thank You, Dad - Bonney and Kuma\'s Warm Embrace",
+            title: "Thank You, Dad - Bonney and Kuma's Warm Embrace",
             absoluteEpisode: 1138
           },
           {
@@ -5849,12 +5848,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 1142,
-            title: "Come In, World - Vegapunk\'s Message",
+            title: "Come In, World - Vegapunk's Message",
             absoluteEpisode: 1142
           },
           {
             episode: 1143,
-            title: "Vegapunk\'s Secret Plan - A Tense Worldwide Broadcast",
+            title: "Vegapunk's Secret Plan - A Tense Worldwide Broadcast",
             absoluteEpisode: 1143
           },
           {
@@ -5869,12 +5868,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 1146,
-            title: "An Imminent Threat - Stussy and Edison\'s Resolve",
+            title: "An Imminent Threat - Stussy and Edison's Resolve",
             absoluteEpisode: 1146
           },
           {
             episode: 1147,
-            title: "A Stunning Conclusion - Vegapunk\'s Great Prediction",
+            title: "A Stunning Conclusion - Vegapunk's Great Prediction",
             absoluteEpisode: 1147
           },
           {
@@ -5894,12 +5893,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 1151,
-            title: "Her and Her Father\'s Dream! Bonney\'s Free Future",
+            title: "Her and Her Father's Dream! Bonney's Free Future",
             absoluteEpisode: 1151
           },
           {
             episode: 1152,
-            title: "Her Father and Mother\'s Legacy! Bonney\'s Nika Punch",
+            title: "Her Father and Mother's Legacy! Bonney's Nika Punch",
             absoluteEpisode: 1152
           },
           {
@@ -5964,12 +5963,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 1164,
-            title: "Saul\'s Resolve - The Inherited Will of Ohara",
+            title: "Saul's Resolve - The Inherited Will of Ohara",
             absoluteEpisode: 1164
           },
           {
             episode: 1165,
-            title: "A Welcome with Friends\' Cups and Intruders Seeking Loki",
+            title: "A Welcome with Friends' Cups and Intruders Seeking Loki",
             absoluteEpisode: 1165
           },
           {
@@ -6019,7 +6018,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1175,
-            title: "Elbaph in Flames! Jinbe\'s Shoulder Throw Explodes!",
+            title: "Elbaph in Flames! Jinbe's Shoulder Throw Explodes!",
             absoluteEpisode: 1175
           },
           {
@@ -6031,8 +6030,7 @@ window._ANIME_DATA = [
       }
     ]
   },
-
-{
+  {
     title: "Dragon Ball Z",
     type: "TV Show",
     isAnime: true,
@@ -6041,11 +6039,11 @@ window._ANIME_DATA = [
     age: "TV-14",
     duration: "24m",
     genres: [
-        "Animation",
-        "Action",
-        "Adventure",
-        "Sci-Fi",
-        "Fantasy"
+      "Animation",
+      "Action",
+      "Adventure",
+      "Sci-Fi",
+      "Fantasy"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/oQ5CnVj3TRifXl2bIOri6H6rfNe.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zOz6DeXeOhKRVGUuiK3WufLXQIB.jpg",
@@ -6055,1520 +6053,1519 @@ window._ANIME_DATA = [
     overview: "After learning that he is from another planet, a warrior named Goku and his friends are prompted to defend it from an onslaught of extraterrestrial enemies.",
     director: "Akira Toriyama",
     cast: [
-        "Masako Nozawa",
-        "Ryo Horikawa",
-        "Toshio Furukawa",
-        "Mayumi Tanaka",
-        "Hiromi Tsuru"
+      "Masako Nozawa",
+      "Ryo Horikawa",
+      "Toshio Furukawa",
+      "Mayumi Tanaka",
+      "Hiromi Tsuru"
     ],
     trending: false,
     featured: false,
     is4k: false,
     seasons: [
-        {
-            season: 1,
-            episodes: [
-                {
-                    episode: 1,
-                    title: "The New Threat",
-                    absoluteEpisode: 1
-                },
-                {
-                    episode: 2,
-                    title: "Reunions",
-                    absoluteEpisode: 2
-                },
-                {
-                    episode: 3,
-                    title: "Unlikely Alliance",
-                    absoluteEpisode: 3
-                },
-                {
-                    episode: 4,
-                    title: "Piccolo's Plan",
-                    absoluteEpisode: 4
-                },
-                {
-                    episode: 5,
-                    title: "Gohan's Rage",
-                    absoluteEpisode: 5
-                },
-                {
-                    episode: 6,
-                    title: "No Time Like the Present",
-                    absoluteEpisode: 6
-                },
-                {
-                    episode: 7,
-                    title: "Day 1",
-                    absoluteEpisode: 7
-                },
-                {
-                    episode: 8,
-                    title: "Gohan Goes Bananas!",
-                    absoluteEpisode: 8
-                },
-                {
-                    episode: 9,
-                    title: "The Strangest Robot",
-                    absoluteEpisode: 9
-                },
-                {
-                    episode: 10,
-                    title: "A New Friend",
-                    absoluteEpisode: 10
-                },
-                {
-                    episode: 11,
-                    title: "Terror on Arlia",
-                    absoluteEpisode: 11
-                },
-                {
-                    episode: 12,
-                    title: "Global Training",
-                    absoluteEpisode: 12
-                },
-                {
-                    episode: 13,
-                    title: "Goz and Mez",
-                    absoluteEpisode: 13
-                },
-                {
-                    episode: 14,
-                    title: "Princess Snake",
-                    absoluteEpisode: 14
-                },
-                {
-                    episode: 15,
-                    title: "Dueling Piccolos",
-                    absoluteEpisode: 15
-                },
-                {
-                    episode: 16,
-                    title: "Plight of the Children",
-                    absoluteEpisode: 16
-                },
-                {
-                    episode: 17,
-                    title: "Pendulum Room Peril",
-                    absoluteEpisode: 17
-                },
-                {
-                    episode: 18,
-                    title: "The End of Snake Way",
-                    absoluteEpisode: 18
-                },
-                {
-                    episode: 19,
-                    title: "Defying Gravity",
-                    absoluteEpisode: 19
-                },
-                {
-                    episode: 20,
-                    title: "Goku's Ancestors",
-                    absoluteEpisode: 20
-                },
-                {
-                    episode: 21,
-                    title: "Counting Down",
-                    absoluteEpisode: 21
-                },
-                {
-                    episode: 22,
-                    title: "The Darkest Day",
-                    absoluteEpisode: 22
-                },
-                {
-                    episode: 23,
-                    title: "Saibamen Attack!",
-                    absoluteEpisode: 23
-                },
-                {
-                    episode: 24,
-                    title: "The Power of Nappa",
-                    absoluteEpisode: 24
-                },
-                {
-                    episode: 25,
-                    title: "Sacrifice",
-                    absoluteEpisode: 25
-                },
-                {
-                    episode: 26,
-                    title: "Nappa's Rampage",
-                    absoluteEpisode: 26
-                },
-                {
-                    episode: 27,
-                    title: "Nimbus Speed",
-                    absoluteEpisode: 27
-                },
-                {
-                    episode: 28,
-                    title: "Goku's Arrival",
-                    absoluteEpisode: 28
-                },
-                {
-                    episode: 29,
-                    title: "Lesson Number One",
-                    absoluteEpisode: 29
-                },
-                {
-                    episode: 30,
-                    title: "Goku vs. Vegeta",
-                    absoluteEpisode: 30
-                },
-                {
-                    episode: 31,
-                    title: "Saiyan Sized Secret",
-                    absoluteEpisode: 31
-                },
-                {
-                    episode: 32,
-                    title: "Spirit Bomb Away!",
-                    absoluteEpisode: 32
-                },
-                {
-                    episode: 33,
-                    title: "Hero in the Shadows",
-                    absoluteEpisode: 33
-                },
-                {
-                    episode: 34,
-                    title: "Krillin's Offensive",
-                    absoluteEpisode: 34
-                },
-                {
-                    episode: 35,
-                    title: "Mercy",
-                    absoluteEpisode: 35
-                },
-                {
-                    episode: 36,
-                    title: "Picking Up the Pieces",
-                    absoluteEpisode: 36
-                },
-                {
-                    episode: 37,
-                    title: "Plans for Departure",
-                    absoluteEpisode: 37
-                },
-                {
-                    episode: 38,
-                    title: "Nursing Wounds",
-                    absoluteEpisode: 38
-                },
-                {
-                    episode: 39,
-                    title: "Friends or Foes?",
-                    absoluteEpisode: 39
-                }
-            ]
-        },
-        {
-            season: 2,
-            episodes: [
-                {
-                    episode: 1,
-                    title: "Held Captive",
-                    absoluteEpisode: 40
-                },
-                {
-                    episode: 2,
-                    title: "Look Out Below",
-                    absoluteEpisode: 41
-                },
-                {
-                    episode: 3,
-                    title: "The Search Continues",
-                    absoluteEpisode: 42
-                },
-                {
-                    episode: 4,
-                    title: "A Friendly Surprise",
-                    absoluteEpisode: 43
-                },
-                {
-                    episode: 5,
-                    title: "Brood of Evil",
-                    absoluteEpisode: 44
-                },
-                {
-                    episode: 6,
-                    title: "Frieza Strikes!",
-                    absoluteEpisode: 45
-                },
-                {
-                    episode: 7,
-                    title: "Defying Orders",
-                    absoluteEpisode: 46
-                },
-                {
-                    episode: 8,
-                    title: "Namek's Defense",
-                    absoluteEpisode: 47
-                },
-                {
-                    episode: 9,
-                    title: "The Hunted",
-                    absoluteEpisode: 48
-                },
-                {
-                    episode: 10,
-                    title: "The Prince Fights Back",
-                    absoluteEpisode: 49
-                },
-                {
-                    episode: 11,
-                    title: "Unexpected Problem",
-                    absoluteEpisode: 50
-                },
-                {
-                    episode: 12,
-                    title: "Vegeta has a Ball",
-                    absoluteEpisode: 51
-                },
-                {
-                    episode: 13,
-                    title: "The Past and the Future",
-                    absoluteEpisode: 52
-                },
-                {
-                    episode: 14,
-                    title: "Zarbon's Special Surprise",
-                    absoluteEpisode: 53
-                },
-                {
-                    episode: 15,
-                    title: "Guru's Gift",
-                    absoluteEpisode: 54
-                },
-                {
-                    episode: 16,
-                    title: "Piccolo vs. Everyone",
-                    absoluteEpisode: 55
-                },
-                {
-                    episode: 17,
-                    title: "Zarbon's Mission",
-                    absoluteEpisode: 56
-                },
-                {
-                    episode: 18,
-                    title: "Gohan, the Hunted",
-                    absoluteEpisode: 57
-                },
-                {
-                    episode: 19,
-                    title: "Unknown Enemies",
-                    absoluteEpisode: 58
-                },
-                {
-                    episode: 20,
-                    title: "Destination: Guru",
-                    absoluteEpisode: 59
-                },
-                {
-                    episode: 21,
-                    title: "Bulma's Big Day",
-                    absoluteEpisode: 60
-                },
-                {
-                    episode: 22,
-                    title: "Hidden Power",
-                    absoluteEpisode: 61
-                },
-                {
-                    episode: 23,
-                    title: "New Ally, New Problem",
-                    absoluteEpisode: 62
-                },
-                {
-                    episode: 24,
-                    title: "Guldo's Mind Binds",
-                    absoluteEpisode: 63
-                },
-                {
-                    episode: 25,
-                    title: "Recoome Unleashed",
-                    absoluteEpisode: 64
-                },
-                {
-                    episode: 26,
-                    title: "Let the Battle Begin",
-                    absoluteEpisode: 65
-                },
-                {
-                    episode: 27,
-                    title: "Goku's New Power",
-                    absoluteEpisode: 66
-                },
-                {
-                    episode: 28,
-                    title: "A Legend Revealed",
-                    absoluteEpisode: 67
-                },
-                {
-                    episode: 29,
-                    title: "Ginyu Assault",
-                    absoluteEpisode: 68
-                },
-                {
-                    episode: 30,
-                    title: "Incredible Force!",
-                    absoluteEpisode: 69
-                },
-                {
-                    episode: 31,
-                    title: "Frieza Approaches",
-                    absoluteEpisode: 70
-                },
-                {
-                    episode: 32,
-                    title: "Goku is Ginyu and Ginyu is Goku",
-                    absoluteEpisode: 71
-                },
-                {
-                    episode: 33,
-                    title: "Calling the Eternal Dragon",
-                    absoluteEpisode: 72
-                },
-                {
-                    episode: 34,
-                    title: "Gohan, Defeat Your Dad!!",
-                    absoluteEpisode: 73
-                },
-                {
-                    episode: 35,
-                    title: "Captain Ginyu...The Frog",
-                    absoluteEpisode: 74
-                }
-            ]
-        },
-        {
-            season: 3,
-            episodes: [
-                {
-                    episode: 1,
-                    title: "Password is Porunga",
-                    absoluteEpisode: 75
-                },
-                {
-                    episode: 2,
-                    title: "Piccolo's Return",
-                    absoluteEpisode: 76
-                },
-                {
-                    episode: 3,
-                    title: "The Fusion",
-                    absoluteEpisode: 77
-                },
-                {
-                    episode: 4,
-                    title: "Fighting Power: One Million??",
-                    absoluteEpisode: 78
-                },
-                {
-                    episode: 5,
-                    title: "Gohan Attacks",
-                    absoluteEpisode: 79
-                },
-                {
-                    episode: 6,
-                    title: "Piccolo the Super-Namek",
-                    absoluteEpisode: 80
-                },
-                {
-                    episode: 7,
-                    title: "Déjà vu",
-                    absoluteEpisode: 81
-                },
-                {
-                    episode: 8,
-                    title: "Freeza's Second Transformation?",
-                    absoluteEpisode: 82
-                },
-                {
-                    episode: 9,
-                    title: "Another Transformation?",
-                    absoluteEpisode: 83
-                },
-                {
-                    episode: 10,
-                    title: "Dende's Demise",
-                    absoluteEpisode: 84
-                },
-                {
-                    episode: 11,
-                    title: "The Renewed Goku",
-                    absoluteEpisode: 85
-                },
-                {
-                    episode: 12,
-                    title: "The End of Vegeta",
-                    absoluteEpisode: 86
-                },
-                {
-                    episode: 13,
-                    title: "The Ultimate Battle",
-                    absoluteEpisode: 87
-                },
-                {
-                    episode: 14,
-                    title: "Clash of the Super Powers",
-                    absoluteEpisode: 88
-                },
-                {
-                    episode: 15,
-                    title: "Freeza's Boast",
-                    absoluteEpisode: 89
-                },
-                {
-                    episode: 16,
-                    title: "Bold and Fearless",
-                    absoluteEpisode: 90
-                },
-                {
-                    episode: 17,
-                    title: "Embodiment of Fire",
-                    absoluteEpisode: 91
-                },
-                {
-                    episode: 18,
-                    title: "Trump Card",
-                    absoluteEpisode: 92
-                },
-                {
-                    episode: 19,
-                    title: "Keep the Chance Alive",
-                    absoluteEpisode: 93
-                },
-                {
-                    episode: 20,
-                    title: "Power of the Spirit",
-                    absoluteEpisode: 94
-                },
-                {
-                    episode: 21,
-                    title: "Transformed At Last",
-                    absoluteEpisode: 95
-                },
-                {
-                    episode: 22,
-                    title: "Explosion of Anger",
-                    absoluteEpisode: 96
-                },
-                {
-                    episode: 23,
-                    title: "Namek's Destruction",
-                    absoluteEpisode: 97
-                },
-                {
-                    episode: 24,
-                    title: "A Final Attack",
-                    absoluteEpisode: 98
-                },
-                {
-                    episode: 25,
-                    title: "Approaching Destruction",
-                    absoluteEpisode: 99
-                },
-                {
-                    episode: 26,
-                    title: "Gohan Returns",
-                    absoluteEpisode: 100
-                },
-                {
-                    episode: 27,
-                    title: "The Last Wish",
-                    absoluteEpisode: 101
-                },
-                {
-                    episode: 28,
-                    title: "Duel On A Vanishing Planet",
-                    absoluteEpisode: 102
-                },
-                {
-                    episode: 29,
-                    title: "Pathos Of Frieza",
-                    absoluteEpisode: 103
-                },
-                {
-                    episode: 30,
-                    title: "Frieza Defeated!",
-                    absoluteEpisode: 104
-                },
-                {
-                    episode: 31,
-                    title: "Mighty Blast of Rage",
-                    absoluteEpisode: 105
-                },
-                {
-                    episode: 32,
-                    title: "Namek's Explosion... Goku's End?",
-                    absoluteEpisode: 106
-                },
-                {
-                    episode: 33,
-                    title: "Goku's Alive!!",
-                    absoluteEpisode: 107
-                }
-            ]
-        },
-        {
-            season: 4,
-            episodes: [
-                {
-                    episode: 1,
-                    title: "The Heavens Tremble",
-                    absoluteEpisode: 108
-                },
-                {
-                    episode: 2,
-                    title: "Black Fog of Terror",
-                    absoluteEpisode: 109
-                },
-                {
-                    episode: 3,
-                    title: "Battle in Kami's Lookout",
-                    absoluteEpisode: 110
-                },
-                {
-                    episode: 4,
-                    title: "Fight With Piccolo",
-                    absoluteEpisode: 111
-                },
-                {
-                    episode: 5,
-                    title: "Call For Restoration",
-                    absoluteEpisode: 112
-                },
-                {
-                    episode: 6,
-                    title: "Suicidal Course",
-                    absoluteEpisode: 113
-                },
-                {
-                    episode: 7,
-                    title: "Extreme Measures",
-                    absoluteEpisode: 114
-                },
-                {
-                    episode: 8,
-                    title: "The World Awakens",
-                    absoluteEpisode: 115
-                },
-                {
-                    episode: 9,
-                    title: "Brief Chance for Victory",
-                    absoluteEpisode: 116
-                },
-                {
-                    episode: 10,
-                    title: "Krillin's Proposal",
-                    absoluteEpisode: 117
-                },
-                {
-                    episode: 11,
-                    title: "Frieza's Counterattack",
-                    absoluteEpisode: 118
-                },
-                {
-                    episode: 12,
-                    title: "The Mysterious Youth",
-                    absoluteEpisode: 119
-                },
-                {
-                    episode: 13,
-                    title: "Another Super Saiyan?",
-                    absoluteEpisode: 120
-                },
-                {
-                    episode: 14,
-                    title: "Welcome Back Goku",
-                    absoluteEpisode: 121
-                },
-                {
-                    episode: 15,
-                    title: "Mystery Revealed",
-                    absoluteEpisode: 122
-                },
-                {
-                    episode: 16,
-                    title: "Goku's Special Technique",
-                    absoluteEpisode: 123
-                },
-                {
-                    episode: 17,
-                    title: "Z Warriors Prepare",
-                    absoluteEpisode: 124
-                },
-                {
-                    episode: 18,
-                    title: "Goku's Ordeal",
-                    absoluteEpisode: 125
-                },
-                {
-                    episode: 19,
-                    title: "The Androids Appear",
-                    absoluteEpisode: 126
-                },
-                {
-                    episode: 20,
-                    title: "A Handy Trick",
-                    absoluteEpisode: 127
-                },
-                {
-                    episode: 21,
-                    title: "Double Trouble for Goku",
-                    absoluteEpisode: 128
-                },
-                {
-                    episode: 22,
-                    title: "Upgrade to Super Saiyan",
-                    absoluteEpisode: 129
-                },
-                {
-                    episode: 23,
-                    title: "The Secret of Doctor Gero",
-                    absoluteEpisode: 130
-                },
-                {
-                    episode: 24,
-                    title: "More Androids?!",
-                    absoluteEpisode: 131
-                },
-                {
-                    episode: 25,
-                    title: "Follow Dr. Gero",
-                    absoluteEpisode: 132
-                },
-                {
-                    episode: 26,
-                    title: "Nightmare Comes True",
-                    absoluteEpisode: 133
-                },
-                {
-                    episode: 27,
-                    title: "Goku's Assassin",
-                    absoluteEpisode: 134
-                },
-                {
-                    episode: 28,
-                    title: "Deadly Beauty",
-                    absoluteEpisode: 135
-                },
-                {
-                    episode: 29,
-                    title: "No Match for the Androids",
-                    absoluteEpisode: 136
-                },
-                {
-                    episode: 30,
-                    title: "Last Ditch Effort",
-                    absoluteEpisode: 137
-                },
-                {
-                    episode: 31,
-                    title: "Closing In",
-                    absoluteEpisode: 138
-                },
-                {
-                    episode: 32,
-                    title: "Unwelcome Discovery",
-                    absoluteEpisode: 139
-                }
-            ]
-        },
-        {
-            season: 5,
-            episodes: [
-                {
-                    episode: 1,
-                    title: "Seized with Fear",
-                    absoluteEpisode: 140
-                },
-                {
-                    episode: 2,
-                    title: "The Reunion",
-                    absoluteEpisode: 141
-                },
-                {
-                    episode: 3,
-                    title: "Borrowed Powers",
-                    absoluteEpisode: 142
-                },
-                {
-                    episode: 4,
-                    title: "His Name Is Cell",
-                    absoluteEpisode: 143
-                },
-                {
-                    episode: 5,
-                    title: "Piccolo's Folly",
-                    absoluteEpisode: 144
-                },
-                {
-                    episode: 6,
-                    title: "Laboratory Basement",
-                    absoluteEpisode: 145
-                },
-                {
-                    episode: 7,
-                    title: "Our Hero Awakes",
-                    absoluteEpisode: 146
-                },
-                {
-                    episode: 8,
-                    title: "Time Chamber",
-                    absoluteEpisode: 147
-                },
-                {
-                    episode: 9,
-                    title: "The Monster is Coming",
-                    absoluteEpisode: 148
-                },
-                {
-                    episode: 10,
-                    title: "He's Here",
-                    absoluteEpisode: 149
-                },
-                {
-                    episode: 11,
-                    title: "Up to Piccolo",
-                    absoluteEpisode: 150
-                },
-                {
-                    episode: 12,
-                    title: "Silent Warrior",
-                    absoluteEpisode: 151
-                },
-                {
-                    episode: 13,
-                    title: "Say Goodbye, 17",
-                    absoluteEpisode: 152
-                },
-                {
-                    episode: 14,
-                    title: "Sacrifice",
-                    absoluteEpisode: 153
-                },
-                {
-                    episode: 15,
-                    title: "Saiyans Emerge",
-                    absoluteEpisode: 154
-                },
-                {
-                    episode: 16,
-                    title: "Super Vegeta",
-                    absoluteEpisode: 155
-                },
-                {
-                    episode: 17,
-                    title: "Bow to the Prince",
-                    absoluteEpisode: 156
-                },
-                {
-                    episode: 18,
-                    title: "Hour of Temptation",
-                    absoluteEpisode: 157
-                },
-                {
-                    episode: 19,
-                    title: "Krillin's Decision",
-                    absoluteEpisode: 158
-                },
-                {
-                    episode: 20,
-                    title: "The Last Defense",
-                    absoluteEpisode: 159
-                },
-                {
-                    episode: 21,
-                    title: "Cell is Complete",
-                    absoluteEpisode: 160
-                },
-                {
-                    episode: 22,
-                    title: "Vegeta Must Pay",
-                    absoluteEpisode: 161
-                },
-                {
-                    episode: 23,
-                    title: "Trunks Ascends",
-                    absoluteEpisode: 162
-                },
-                {
-                    episode: 24,
-                    title: "Saving Throw",
-                    absoluteEpisode: 163
-                },
-                {
-                    episode: 25,
-                    title: "Ghosts from Tomorrow",
-                    absoluteEpisode: 164
-                },
-                {
-                    episode: 26,
-                    title: "The Cell Games",
-                    absoluteEpisode: 165
-                }
-            ]
-        },
-        {
-            season: 6,
-            episodes: [
-                {
-                    episode: 1,
-                    title: "What is the Tournament?",
-                    absoluteEpisode: 166
-                },
-                {
-                    episode: 2,
-                    title: "The Doomsday Broadcast",
-                    absoluteEpisode: 167
-                },
-                {
-                    episode: 3,
-                    title: "Meet Me in the Ring",
-                    absoluteEpisode: 168
-                },
-                {
-                    episode: 4,
-                    title: "No Worries Here",
-                    absoluteEpisode: 169
-                },
-                {
-                    episode: 5,
-                    title: "A Girl Named Lime",
-                    absoluteEpisode: 170
-                },
-                {
-                    episode: 6,
-                    title: "Memories of Gohan",
-                    absoluteEpisode: 171
-                },
-                {
-                    episode: 7,
-                    title: "A New Guardian",
-                    absoluteEpisode: 172
-                },
-                {
-                    episode: 8,
-                    title: "Dende's Dragon",
-                    absoluteEpisode: 173
-                },
-                {
-                    episode: 9,
-                    title: "The Puzzle of General Tao",
-                    absoluteEpisode: 174
-                },
-                {
-                    episode: 10,
-                    title: "The Games Begin",
-                    absoluteEpisode: 175
-                },
-                {
-                    episode: 11,
-                    title: "Losers Fight First",
-                    absoluteEpisode: 176
-                },
-                {
-                    episode: 12,
-                    title: "Goku vs. Cell",
-                    absoluteEpisode: 177
-                },
-                {
-                    episode: 13,
-                    title: "Cell's Bag of Tricks",
-                    absoluteEpisode: 178
-                },
-                {
-                    episode: 14,
-                    title: "No More Rules",
-                    absoluteEpisode: 179
-                },
-                {
-                    episode: 15,
-                    title: "The Fight is Over",
-                    absoluteEpisode: 180
-                },
-                {
-                    episode: 16,
-                    title: "Faith in a Boy",
-                    absoluteEpisode: 181
-                },
-                {
-                    episode: 17,
-                    title: "Gohan's Plea",
-                    absoluteEpisode: 182
-                },
-                {
-                    episode: 18,
-                    title: "Android Explosion",
-                    absoluteEpisode: 183
-                },
-                {
-                    episode: 19,
-                    title: "Cell Juniors Attack!",
-                    absoluteEpisode: 184
-                },
-                {
-                    episode: 20,
-                    title: "Awakening",
-                    absoluteEpisode: 185
-                },
-                {
-                    episode: 21,
-                    title: "The Unstoppable Gohan",
-                    absoluteEpisode: 186
-                },
-                {
-                    episode: 22,
-                    title: "Cell's Break Down",
-                    absoluteEpisode: 187
-                },
-                {
-                    episode: 23,
-                    title: "A Hero's Farewell",
-                    absoluteEpisode: 188
-                },
-                {
-                    episode: 24,
-                    title: "Cell Returns!",
-                    absoluteEpisode: 189
-                },
-                {
-                    episode: 25,
-                    title: "The Horror Won't End",
-                    absoluteEpisode: 190
-                },
-                {
-                    episode: 26,
-                    title: "Save the World",
-                    absoluteEpisode: 191
-                },
-                {
-                    episode: 27,
-                    title: "Goku's Decision",
-                    absoluteEpisode: 192
-                },
-                {
-                    episode: 28,
-                    title: "One More Wish",
-                    absoluteEpisode: 193
-                },
-                {
-                    episode: 29,
-                    title: "Free the Future",
-                    absoluteEpisode: 194
-                }
-            ]
-        },
-        {
-            season: 7,
-            episodes: [
-                {
-                    episode: 1,
-                    title: "Warriors of the Dead",
-                    absoluteEpisode: 195
-                },
-                {
-                    episode: 2,
-                    title: "Tournament Begins",
-                    absoluteEpisode: 196
-                },
-                {
-                    episode: 3,
-                    title: "Water Fight",
-                    absoluteEpisode: 197
-                },
-                {
-                    episode: 4,
-                    title: "Final Round",
-                    absoluteEpisode: 198
-                },
-                {
-                    episode: 5,
-                    title: "Goku vs.Pikkon",
-                    absoluteEpisode: 199
-                },
-                {
-                    episode: 6,
-                    title: "Gohan Goes to High School",
-                    absoluteEpisode: 200
-                },
-                {
-                    episode: 7,
-                    title: "I am Saiyaman!",
-                    absoluteEpisode: 201
-                },
-                {
-                    episode: 8,
-                    title: "Gohan's First Date",
-                    absoluteEpisode: 202
-                },
-                {
-                    episode: 9,
-                    title: "Rescue Videl",
-                    absoluteEpisode: 203
-                },
-                {
-                    episode: 10,
-                    title: "Blackmail",
-                    absoluteEpisode: 204
-                },
-                {
-                    episode: 11,
-                    title: "I'll Fight Too",
-                    absoluteEpisode: 205
-                },
-                {
-                    episode: 12,
-                    title: "The Newest Super Saiyan",
-                    absoluteEpisode: 206
-                },
-                {
-                    episode: 13,
-                    title: "Take Flight, Videl",
-                    absoluteEpisode: 207
-                },
-                {
-                    episode: 14,
-                    title: "Gather for the Tournament",
-                    absoluteEpisode: 208
-                },
-                {
-                    episode: 15,
-                    title: "Camera Shy",
-                    absoluteEpisode: 209
-                },
-                {
-                    episode: 16,
-                    title: "The World Tournament",
-                    absoluteEpisode: 210
-                },
-                {
-                    episode: 17,
-                    title: "Trunks vs. Goten",
-                    absoluteEpisode: 211
-                },
-                {
-                    episode: 18,
-                    title: "Best of the Boys",
-                    absoluteEpisode: 212
-                },
-                {
-                    episode: 19,
-                    title: "Big Trouble, Little Trunks",
-                    absoluteEpisode: 213
-                },
-                {
-                    episode: 20,
-                    title: "Who Will Fight Who?",
-                    absoluteEpisode: 214
-                },
-                {
-                    episode: 21,
-                    title: "Forfeit of Piccolo",
-                    absoluteEpisode: 215
-                },
-                {
-                    episode: 22,
-                    title: "A Dark and Secret Power",
-                    absoluteEpisode: 216
-                },
-                {
-                    episode: 23,
-                    title: "Videl is Crushed",
-                    absoluteEpisode: 217
-                },
-                {
-                    episode: 24,
-                    title: "Identities Revealed",
-                    absoluteEpisode: 218
-                },
-                {
-                    episode: 25,
-                    title: "Energy Drain",
-                    absoluteEpisode: 219
-                }
-            ]
-        },
-        {
-            season: 8,
-            episodes: [
-                {
-                    episode: 1,
-                    title: "The Wizard's Curse",
-                    absoluteEpisode: 220
-                },
-                {
-                    episode: 2,
-                    title: "King of the Demons",
-                    absoluteEpisode: 221
-                },
-                {
-                    episode: 3,
-                    title: "Vegeta Attacks",
-                    absoluteEpisode: 222
-                },
-                {
-                    episode: 4,
-                    title: "Next Up, Goku",
-                    absoluteEpisode: 223
-                },
-                {
-                    episode: 5,
-                    title: "Battle Supreme",
-                    absoluteEpisode: 224
-                },
-                {
-                    episode: 6,
-                    title: "Eighteen Unmasks",
-                    absoluteEpisode: 225
-                },
-                {
-                    episode: 7,
-                    title: "Pay to Win",
-                    absoluteEpisode: 226
-                },
-                {
-                    episode: 8,
-                    title: "Heart of a Villain",
-                    absoluteEpisode: 227
-                },
-                {
-                    episode: 9,
-                    title: "The Dark Prince Returns",
-                    absoluteEpisode: 228
-                },
-                {
-                    episode: 10,
-                    title: "Vegeta's Pride",
-                    absoluteEpisode: 229
-                },
-                {
-                    episode: 11,
-                    title: "The Long Awaited Fight",
-                    absoluteEpisode: 230
-                },
-                {
-                    episode: 12,
-                    title: "Magic Ball of Buu",
-                    absoluteEpisode: 231
-                },
-                {
-                    episode: 13,
-                    title: "Buu is Hatched",
-                    absoluteEpisode: 232
-                },
-                {
-                    episode: 14,
-                    title: "The Losses Begin",
-                    absoluteEpisode: 233
-                },
-                {
-                    episode: 15,
-                    title: "The Terror of Majin Buu",
-                    absoluteEpisode: 234
-                },
-                {
-                    episode: 16,
-                    title: "Meal Time",
-                    absoluteEpisode: 235
-                },
-                {
-                    episode: 17,
-                    title: "The Warrior's Decision",
-                    absoluteEpisode: 236
-                },
-                {
-                    episode: 18,
-                    title: "Final Atonement",
-                    absoluteEpisode: 237
-                },
-                {
-                    episode: 19,
-                    title: "Evil Lives On",
-                    absoluteEpisode: 238
-                },
-                {
-                    episode: 20,
-                    title: "Find the Dragonballs",
-                    absoluteEpisode: 239
-                },
-                {
-                    episode: 21,
-                    title: "Revival",
-                    absoluteEpisode: 240
-                },
-                {
-                    episode: 22,
-                    title: "Global Announcement",
-                    absoluteEpisode: 241
-                },
-                {
-                    episode: 23,
-                    title: "Learn to Fuse!",
-                    absoluteEpisode: 242
-                },
-                {
-                    episode: 24,
-                    title: "The Z Sword",
-                    absoluteEpisode: 243
-                },
-                {
-                    episode: 25,
-                    title: "Race to Capsule Corp.",
-                    absoluteEpisode: 244
-                },
-                {
-                    episode: 26,
-                    title: "Super Saiyan 3",
-                    absoluteEpisode: 245
-                },
-                {
-                    episode: 27,
-                    title: "Buu's Mutiny",
-                    absoluteEpisode: 246
-                },
-                {
-                    episode: 28,
-                    title: "The Fusion Dance",
-                    absoluteEpisode: 247
-                },
-                {
-                    episode: 29,
-                    title: "Goku's Time Is Up",
-                    absoluteEpisode: 248
-                },
-                {
-                    episode: 30,
-                    title: "Return to Other World",
-                    absoluteEpisode: 249
-                },
-                {
-                    episode: 31,
-                    title: "Out from the Broken Sword",
-                    absoluteEpisode: 250
-                },
-                {
-                    episode: 32,
-                    title: "Gotenks is Born",
-                    absoluteEpisode: 251
-                },
-                {
-                    episode: 33,
-                    title: "Unlikely Friendship",
-                    absoluteEpisode: 252
-                },
-                {
-                    episode: 34,
-                    title: "I Kill No More",
-                    absoluteEpisode: 253
-                }
-            ]
-        },
-        {
-            season: 9,
-            episodes: [
-                {
-                    episode: 1,
-                    title: "The Evil of Men",
-                    absoluteEpisode: 254
-                },
-                {
-                    episode: 2,
-                    title: "Buu Against Buu",
-                    absoluteEpisode: 255
-                },
-                {
-                    episode: 3,
-                    title: "Empty Planet",
-                    absoluteEpisode: 256
-                },
-                {
-                    episode: 4,
-                    title: "Time Struggle",
-                    absoluteEpisode: 257
-                },
-                {
-                    episode: 5,
-                    title: "Super Moves of Gotenks",
-                    absoluteEpisode: 258
-                },
-                {
-                    episode: 6,
-                    title: "Trapped In Forever",
-                    absoluteEpisode: 259
-                },
-                {
-                    episode: 7,
-                    title: "Feeding Frenzy",
-                    absoluteEpisode: 260
-                },
-                {
-                    episode: 8,
-                    title: "Gotenks Is Awesome",
-                    absoluteEpisode: 261
-                },
-                {
-                    episode: 9,
-                    title: "Unlucky Break",
-                    absoluteEpisode: 262
-                },
-                {
-                    episode: 10,
-                    title: "A Whole New Gohan",
-                    absoluteEpisode: 263
-                },
-                {
-                    episode: 11,
-                    title: "Search for Survivors",
-                    absoluteEpisode: 264
-                },
-                {
-                    episode: 12,
-                    title: "Majin Buu Transforms",
-                    absoluteEpisode: 265
-                },
-                {
-                    episode: 13,
-                    title: "The Old Kai's Weapon",
-                    absoluteEpisode: 266
-                },
-                {
-                    episode: 14,
-                    title: "Ready to Fuse",
-                    absoluteEpisode: 267
-                },
-                {
-                    episode: 15,
-                    title: "Union of Rivals",
-                    absoluteEpisode: 268
-                },
-                {
-                    episode: 16,
-                    title: "Meet Vegito",
-                    absoluteEpisode: 269
-                },
-                {
-                    episode: 17,
-                    title: "Rip in the Universe",
-                    absoluteEpisode: 270
-                },
-                {
-                    episode: 18,
-                    title: "Vegito Downsized",
-                    absoluteEpisode: 271
-                },
-                {
-                    episode: 19,
-                    title: "The Incredible Fighting Candy",
-                    absoluteEpisode: 272
-                },
-                {
-                    episode: 20,
-                    title: "The Innards of Buu",
-                    absoluteEpisode: 273
-                },
-                {
-                    episode: 21,
-                    title: "Mind Trap",
-                    absoluteEpisode: 274
-                },
-                {
-                    episode: 22,
-                    title: "Deadly Vision",
-                    absoluteEpisode: 275
-                },
-                {
-                    episode: 23,
-                    title: "Evil Kid Buu",
-                    absoluteEpisode: 276
-                },
-                {
-                    episode: 24,
-                    title: "End of Earth",
-                    absoluteEpisode: 277
-                },
-                {
-                    episode: 25,
-                    title: "True Saiyans Fight Alone",
-                    absoluteEpisode: 278
-                },
-                {
-                    episode: 26,
-                    title: "Battle for the Universe Begins",
-                    absoluteEpisode: 279
-                },
-                {
-                    episode: 27,
-                    title: "Vegeta's Respect",
-                    absoluteEpisode: 280
-                },
-                {
-                    episode: 28,
-                    title: "Minute of Desperation",
-                    absoluteEpisode: 281
-                },
-                {
-                    episode: 29,
-                    title: "Old Buu Emerges",
-                    absoluteEpisode: 282
-                },
-                {
-                    episode: 30,
-                    title: "Earth Reborn",
-                    absoluteEpisode: 283
-                },
-                {
-                    episode: 31,
-                    title: "Call to Action",
-                    absoluteEpisode: 284
-                },
-                {
-                    episode: 32,
-                    title: "People of Earth Unite",
-                    absoluteEpisode: 285
-                },
-                {
-                    episode: 33,
-                    title: "Spirit Bomb Triumphant",
-                    absoluteEpisode: 286
-                },
-                {
-                    episode: 34,
-                    title: "Celebrations with Majin Buu",
-                    absoluteEpisode: 287
-                },
-                {
-                    episode: 35,
-                    title: "He's Always Late",
-                    absoluteEpisode: 288
-                },
-                {
-                    episode: 36,
-                    title: "Granddaughter Pan",
-                    absoluteEpisode: 289
-                },
-                {
-                    episode: 37,
-                    title: "Buu's Reincarnation",
-                    absoluteEpisode: 290
-                },
-                {
-                    episode: 38,
-                    title: "Goku's Next Journey",
-                    absoluteEpisode: 291
-                }
-            ]
-        }
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "The New Threat",
+            absoluteEpisode: 1
+          },
+          {
+            episode: 2,
+            title: "Reunions",
+            absoluteEpisode: 2
+          },
+          {
+            episode: 3,
+            title: "Unlikely Alliance",
+            absoluteEpisode: 3
+          },
+          {
+            episode: 4,
+            title: "Piccolo's Plan",
+            absoluteEpisode: 4
+          },
+          {
+            episode: 5,
+            title: "Gohan's Rage",
+            absoluteEpisode: 5
+          },
+          {
+            episode: 6,
+            title: "No Time Like the Present",
+            absoluteEpisode: 6
+          },
+          {
+            episode: 7,
+            title: "Day 1",
+            absoluteEpisode: 7
+          },
+          {
+            episode: 8,
+            title: "Gohan Goes Bananas!",
+            absoluteEpisode: 8
+          },
+          {
+            episode: 9,
+            title: "The Strangest Robot",
+            absoluteEpisode: 9
+          },
+          {
+            episode: 10,
+            title: "A New Friend",
+            absoluteEpisode: 10
+          },
+          {
+            episode: 11,
+            title: "Terror on Arlia",
+            absoluteEpisode: 11
+          },
+          {
+            episode: 12,
+            title: "Global Training",
+            absoluteEpisode: 12
+          },
+          {
+            episode: 13,
+            title: "Goz and Mez",
+            absoluteEpisode: 13
+          },
+          {
+            episode: 14,
+            title: "Princess Snake",
+            absoluteEpisode: 14
+          },
+          {
+            episode: 15,
+            title: "Dueling Piccolos",
+            absoluteEpisode: 15
+          },
+          {
+            episode: 16,
+            title: "Plight of the Children",
+            absoluteEpisode: 16
+          },
+          {
+            episode: 17,
+            title: "Pendulum Room Peril",
+            absoluteEpisode: 17
+          },
+          {
+            episode: 18,
+            title: "The End of Snake Way",
+            absoluteEpisode: 18
+          },
+          {
+            episode: 19,
+            title: "Defying Gravity",
+            absoluteEpisode: 19
+          },
+          {
+            episode: 20,
+            title: "Goku's Ancestors",
+            absoluteEpisode: 20
+          },
+          {
+            episode: 21,
+            title: "Counting Down",
+            absoluteEpisode: 21
+          },
+          {
+            episode: 22,
+            title: "The Darkest Day",
+            absoluteEpisode: 22
+          },
+          {
+            episode: 23,
+            title: "Saibamen Attack!",
+            absoluteEpisode: 23
+          },
+          {
+            episode: 24,
+            title: "The Power of Nappa",
+            absoluteEpisode: 24
+          },
+          {
+            episode: 25,
+            title: "Sacrifice",
+            absoluteEpisode: 25
+          },
+          {
+            episode: 26,
+            title: "Nappa's Rampage",
+            absoluteEpisode: 26
+          },
+          {
+            episode: 27,
+            title: "Nimbus Speed",
+            absoluteEpisode: 27
+          },
+          {
+            episode: 28,
+            title: "Goku's Arrival",
+            absoluteEpisode: 28
+          },
+          {
+            episode: 29,
+            title: "Lesson Number One",
+            absoluteEpisode: 29
+          },
+          {
+            episode: 30,
+            title: "Goku vs. Vegeta",
+            absoluteEpisode: 30
+          },
+          {
+            episode: 31,
+            title: "Saiyan Sized Secret",
+            absoluteEpisode: 31
+          },
+          {
+            episode: 32,
+            title: "Spirit Bomb Away!",
+            absoluteEpisode: 32
+          },
+          {
+            episode: 33,
+            title: "Hero in the Shadows",
+            absoluteEpisode: 33
+          },
+          {
+            episode: 34,
+            title: "Krillin's Offensive",
+            absoluteEpisode: 34
+          },
+          {
+            episode: 35,
+            title: "Mercy",
+            absoluteEpisode: 35
+          },
+          {
+            episode: 36,
+            title: "Picking Up the Pieces",
+            absoluteEpisode: 36
+          },
+          {
+            episode: 37,
+            title: "Plans for Departure",
+            absoluteEpisode: 37
+          },
+          {
+            episode: 38,
+            title: "Nursing Wounds",
+            absoluteEpisode: 38
+          },
+          {
+            episode: 39,
+            title: "Friends or Foes?",
+            absoluteEpisode: 39
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "Held Captive",
+            absoluteEpisode: 40
+          },
+          {
+            episode: 2,
+            title: "Look Out Below",
+            absoluteEpisode: 41
+          },
+          {
+            episode: 3,
+            title: "The Search Continues",
+            absoluteEpisode: 42
+          },
+          {
+            episode: 4,
+            title: "A Friendly Surprise",
+            absoluteEpisode: 43
+          },
+          {
+            episode: 5,
+            title: "Brood of Evil",
+            absoluteEpisode: 44
+          },
+          {
+            episode: 6,
+            title: "Frieza Strikes!",
+            absoluteEpisode: 45
+          },
+          {
+            episode: 7,
+            title: "Defying Orders",
+            absoluteEpisode: 46
+          },
+          {
+            episode: 8,
+            title: "Namek's Defense",
+            absoluteEpisode: 47
+          },
+          {
+            episode: 9,
+            title: "The Hunted",
+            absoluteEpisode: 48
+          },
+          {
+            episode: 10,
+            title: "The Prince Fights Back",
+            absoluteEpisode: 49
+          },
+          {
+            episode: 11,
+            title: "Unexpected Problem",
+            absoluteEpisode: 50
+          },
+          {
+            episode: 12,
+            title: "Vegeta has a Ball",
+            absoluteEpisode: 51
+          },
+          {
+            episode: 13,
+            title: "The Past and the Future",
+            absoluteEpisode: 52
+          },
+          {
+            episode: 14,
+            title: "Zarbon's Special Surprise",
+            absoluteEpisode: 53
+          },
+          {
+            episode: 15,
+            title: "Guru's Gift",
+            absoluteEpisode: 54
+          },
+          {
+            episode: 16,
+            title: "Piccolo vs. Everyone",
+            absoluteEpisode: 55
+          },
+          {
+            episode: 17,
+            title: "Zarbon's Mission",
+            absoluteEpisode: 56
+          },
+          {
+            episode: 18,
+            title: "Gohan, the Hunted",
+            absoluteEpisode: 57
+          },
+          {
+            episode: 19,
+            title: "Unknown Enemies",
+            absoluteEpisode: 58
+          },
+          {
+            episode: 20,
+            title: "Destination: Guru",
+            absoluteEpisode: 59
+          },
+          {
+            episode: 21,
+            title: "Bulma's Big Day",
+            absoluteEpisode: 60
+          },
+          {
+            episode: 22,
+            title: "Hidden Power",
+            absoluteEpisode: 61
+          },
+          {
+            episode: 23,
+            title: "New Ally, New Problem",
+            absoluteEpisode: 62
+          },
+          {
+            episode: 24,
+            title: "Guldo's Mind Binds",
+            absoluteEpisode: 63
+          },
+          {
+            episode: 25,
+            title: "Recoome Unleashed",
+            absoluteEpisode: 64
+          },
+          {
+            episode: 26,
+            title: "Let the Battle Begin",
+            absoluteEpisode: 65
+          },
+          {
+            episode: 27,
+            title: "Goku's New Power",
+            absoluteEpisode: 66
+          },
+          {
+            episode: 28,
+            title: "A Legend Revealed",
+            absoluteEpisode: 67
+          },
+          {
+            episode: 29,
+            title: "Ginyu Assault",
+            absoluteEpisode: 68
+          },
+          {
+            episode: 30,
+            title: "Incredible Force!",
+            absoluteEpisode: 69
+          },
+          {
+            episode: 31,
+            title: "Frieza Approaches",
+            absoluteEpisode: 70
+          },
+          {
+            episode: 32,
+            title: "Goku is Ginyu and Ginyu is Goku",
+            absoluteEpisode: 71
+          },
+          {
+            episode: 33,
+            title: "Calling the Eternal Dragon",
+            absoluteEpisode: 72
+          },
+          {
+            episode: 34,
+            title: "Gohan, Defeat Your Dad!!",
+            absoluteEpisode: 73
+          },
+          {
+            episode: 35,
+            title: "Captain Ginyu...The Frog",
+            absoluteEpisode: 74
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "Password is Porunga",
+            absoluteEpisode: 75
+          },
+          {
+            episode: 2,
+            title: "Piccolo's Return",
+            absoluteEpisode: 76
+          },
+          {
+            episode: 3,
+            title: "The Fusion",
+            absoluteEpisode: 77
+          },
+          {
+            episode: 4,
+            title: "Fighting Power: One Million??",
+            absoluteEpisode: 78
+          },
+          {
+            episode: 5,
+            title: "Gohan Attacks",
+            absoluteEpisode: 79
+          },
+          {
+            episode: 6,
+            title: "Piccolo the Super-Namek",
+            absoluteEpisode: 80
+          },
+          {
+            episode: 7,
+            title: "Déjà vu",
+            absoluteEpisode: 81
+          },
+          {
+            episode: 8,
+            title: "Freeza's Second Transformation?",
+            absoluteEpisode: 82
+          },
+          {
+            episode: 9,
+            title: "Another Transformation?",
+            absoluteEpisode: 83
+          },
+          {
+            episode: 10,
+            title: "Dende's Demise",
+            absoluteEpisode: 84
+          },
+          {
+            episode: 11,
+            title: "The Renewed Goku",
+            absoluteEpisode: 85
+          },
+          {
+            episode: 12,
+            title: "The End of Vegeta",
+            absoluteEpisode: 86
+          },
+          {
+            episode: 13,
+            title: "The Ultimate Battle",
+            absoluteEpisode: 87
+          },
+          {
+            episode: 14,
+            title: "Clash of the Super Powers",
+            absoluteEpisode: 88
+          },
+          {
+            episode: 15,
+            title: "Freeza's Boast",
+            absoluteEpisode: 89
+          },
+          {
+            episode: 16,
+            title: "Bold and Fearless",
+            absoluteEpisode: 90
+          },
+          {
+            episode: 17,
+            title: "Embodiment of Fire",
+            absoluteEpisode: 91
+          },
+          {
+            episode: 18,
+            title: "Trump Card",
+            absoluteEpisode: 92
+          },
+          {
+            episode: 19,
+            title: "Keep the Chance Alive",
+            absoluteEpisode: 93
+          },
+          {
+            episode: 20,
+            title: "Power of the Spirit",
+            absoluteEpisode: 94
+          },
+          {
+            episode: 21,
+            title: "Transformed At Last",
+            absoluteEpisode: 95
+          },
+          {
+            episode: 22,
+            title: "Explosion of Anger",
+            absoluteEpisode: 96
+          },
+          {
+            episode: 23,
+            title: "Namek's Destruction",
+            absoluteEpisode: 97
+          },
+          {
+            episode: 24,
+            title: "A Final Attack",
+            absoluteEpisode: 98
+          },
+          {
+            episode: 25,
+            title: "Approaching Destruction",
+            absoluteEpisode: 99
+          },
+          {
+            episode: 26,
+            title: "Gohan Returns",
+            absoluteEpisode: 100
+          },
+          {
+            episode: 27,
+            title: "The Last Wish",
+            absoluteEpisode: 101
+          },
+          {
+            episode: 28,
+            title: "Duel On A Vanishing Planet",
+            absoluteEpisode: 102
+          },
+          {
+            episode: 29,
+            title: "Pathos Of Frieza",
+            absoluteEpisode: 103
+          },
+          {
+            episode: 30,
+            title: "Frieza Defeated!",
+            absoluteEpisode: 104
+          },
+          {
+            episode: 31,
+            title: "Mighty Blast of Rage",
+            absoluteEpisode: 105
+          },
+          {
+            episode: 32,
+            title: "Namek's Explosion... Goku's End?",
+            absoluteEpisode: 106
+          },
+          {
+            episode: 33,
+            title: "Goku's Alive!!",
+            absoluteEpisode: 107
+          }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Heavens Tremble",
+            absoluteEpisode: 108
+          },
+          {
+            episode: 2,
+            title: "Black Fog of Terror",
+            absoluteEpisode: 109
+          },
+          {
+            episode: 3,
+            title: "Battle in Kami's Lookout",
+            absoluteEpisode: 110
+          },
+          {
+            episode: 4,
+            title: "Fight With Piccolo",
+            absoluteEpisode: 111
+          },
+          {
+            episode: 5,
+            title: "Call For Restoration",
+            absoluteEpisode: 112
+          },
+          {
+            episode: 6,
+            title: "Suicidal Course",
+            absoluteEpisode: 113
+          },
+          {
+            episode: 7,
+            title: "Extreme Measures",
+            absoluteEpisode: 114
+          },
+          {
+            episode: 8,
+            title: "The World Awakens",
+            absoluteEpisode: 115
+          },
+          {
+            episode: 9,
+            title: "Brief Chance for Victory",
+            absoluteEpisode: 116
+          },
+          {
+            episode: 10,
+            title: "Krillin's Proposal",
+            absoluteEpisode: 117
+          },
+          {
+            episode: 11,
+            title: "Frieza's Counterattack",
+            absoluteEpisode: 118
+          },
+          {
+            episode: 12,
+            title: "The Mysterious Youth",
+            absoluteEpisode: 119
+          },
+          {
+            episode: 13,
+            title: "Another Super Saiyan?",
+            absoluteEpisode: 120
+          },
+          {
+            episode: 14,
+            title: "Welcome Back Goku",
+            absoluteEpisode: 121
+          },
+          {
+            episode: 15,
+            title: "Mystery Revealed",
+            absoluteEpisode: 122
+          },
+          {
+            episode: 16,
+            title: "Goku's Special Technique",
+            absoluteEpisode: 123
+          },
+          {
+            episode: 17,
+            title: "Z Warriors Prepare",
+            absoluteEpisode: 124
+          },
+          {
+            episode: 18,
+            title: "Goku's Ordeal",
+            absoluteEpisode: 125
+          },
+          {
+            episode: 19,
+            title: "The Androids Appear",
+            absoluteEpisode: 126
+          },
+          {
+            episode: 20,
+            title: "A Handy Trick",
+            absoluteEpisode: 127
+          },
+          {
+            episode: 21,
+            title: "Double Trouble for Goku",
+            absoluteEpisode: 128
+          },
+          {
+            episode: 22,
+            title: "Upgrade to Super Saiyan",
+            absoluteEpisode: 129
+          },
+          {
+            episode: 23,
+            title: "The Secret of Doctor Gero",
+            absoluteEpisode: 130
+          },
+          {
+            episode: 24,
+            title: "More Androids?!",
+            absoluteEpisode: 131
+          },
+          {
+            episode: 25,
+            title: "Follow Dr. Gero",
+            absoluteEpisode: 132
+          },
+          {
+            episode: 26,
+            title: "Nightmare Comes True",
+            absoluteEpisode: 133
+          },
+          {
+            episode: 27,
+            title: "Goku's Assassin",
+            absoluteEpisode: 134
+          },
+          {
+            episode: 28,
+            title: "Deadly Beauty",
+            absoluteEpisode: 135
+          },
+          {
+            episode: 29,
+            title: "No Match for the Androids",
+            absoluteEpisode: 136
+          },
+          {
+            episode: 30,
+            title: "Last Ditch Effort",
+            absoluteEpisode: 137
+          },
+          {
+            episode: 31,
+            title: "Closing In",
+            absoluteEpisode: 138
+          },
+          {
+            episode: 32,
+            title: "Unwelcome Discovery",
+            absoluteEpisode: 139
+          }
+        ]
+      },
+      {
+        season: 5,
+        episodes: [
+          {
+            episode: 1,
+            title: "Seized with Fear",
+            absoluteEpisode: 140
+          },
+          {
+            episode: 2,
+            title: "The Reunion",
+            absoluteEpisode: 141
+          },
+          {
+            episode: 3,
+            title: "Borrowed Powers",
+            absoluteEpisode: 142
+          },
+          {
+            episode: 4,
+            title: "His Name Is Cell",
+            absoluteEpisode: 143
+          },
+          {
+            episode: 5,
+            title: "Piccolo's Folly",
+            absoluteEpisode: 144
+          },
+          {
+            episode: 6,
+            title: "Laboratory Basement",
+            absoluteEpisode: 145
+          },
+          {
+            episode: 7,
+            title: "Our Hero Awakes",
+            absoluteEpisode: 146
+          },
+          {
+            episode: 8,
+            title: "Time Chamber",
+            absoluteEpisode: 147
+          },
+          {
+            episode: 9,
+            title: "The Monster is Coming",
+            absoluteEpisode: 148
+          },
+          {
+            episode: 10,
+            title: "He's Here",
+            absoluteEpisode: 149
+          },
+          {
+            episode: 11,
+            title: "Up to Piccolo",
+            absoluteEpisode: 150
+          },
+          {
+            episode: 12,
+            title: "Silent Warrior",
+            absoluteEpisode: 151
+          },
+          {
+            episode: 13,
+            title: "Say Goodbye, 17",
+            absoluteEpisode: 152
+          },
+          {
+            episode: 14,
+            title: "Sacrifice",
+            absoluteEpisode: 153
+          },
+          {
+            episode: 15,
+            title: "Saiyans Emerge",
+            absoluteEpisode: 154
+          },
+          {
+            episode: 16,
+            title: "Super Vegeta",
+            absoluteEpisode: 155
+          },
+          {
+            episode: 17,
+            title: "Bow to the Prince",
+            absoluteEpisode: 156
+          },
+          {
+            episode: 18,
+            title: "Hour of Temptation",
+            absoluteEpisode: 157
+          },
+          {
+            episode: 19,
+            title: "Krillin's Decision",
+            absoluteEpisode: 158
+          },
+          {
+            episode: 20,
+            title: "The Last Defense",
+            absoluteEpisode: 159
+          },
+          {
+            episode: 21,
+            title: "Cell is Complete",
+            absoluteEpisode: 160
+          },
+          {
+            episode: 22,
+            title: "Vegeta Must Pay",
+            absoluteEpisode: 161
+          },
+          {
+            episode: 23,
+            title: "Trunks Ascends",
+            absoluteEpisode: 162
+          },
+          {
+            episode: 24,
+            title: "Saving Throw",
+            absoluteEpisode: 163
+          },
+          {
+            episode: 25,
+            title: "Ghosts from Tomorrow",
+            absoluteEpisode: 164
+          },
+          {
+            episode: 26,
+            title: "The Cell Games",
+            absoluteEpisode: 165
+          }
+        ]
+      },
+      {
+        season: 6,
+        episodes: [
+          {
+            episode: 1,
+            title: "What is the Tournament?",
+            absoluteEpisode: 166
+          },
+          {
+            episode: 2,
+            title: "The Doomsday Broadcast",
+            absoluteEpisode: 167
+          },
+          {
+            episode: 3,
+            title: "Meet Me in the Ring",
+            absoluteEpisode: 168
+          },
+          {
+            episode: 4,
+            title: "No Worries Here",
+            absoluteEpisode: 169
+          },
+          {
+            episode: 5,
+            title: "A Girl Named Lime",
+            absoluteEpisode: 170
+          },
+          {
+            episode: 6,
+            title: "Memories of Gohan",
+            absoluteEpisode: 171
+          },
+          {
+            episode: 7,
+            title: "A New Guardian",
+            absoluteEpisode: 172
+          },
+          {
+            episode: 8,
+            title: "Dende's Dragon",
+            absoluteEpisode: 173
+          },
+          {
+            episode: 9,
+            title: "The Puzzle of General Tao",
+            absoluteEpisode: 174
+          },
+          {
+            episode: 10,
+            title: "The Games Begin",
+            absoluteEpisode: 175
+          },
+          {
+            episode: 11,
+            title: "Losers Fight First",
+            absoluteEpisode: 176
+          },
+          {
+            episode: 12,
+            title: "Goku vs. Cell",
+            absoluteEpisode: 177
+          },
+          {
+            episode: 13,
+            title: "Cell's Bag of Tricks",
+            absoluteEpisode: 178
+          },
+          {
+            episode: 14,
+            title: "No More Rules",
+            absoluteEpisode: 179
+          },
+          {
+            episode: 15,
+            title: "The Fight is Over",
+            absoluteEpisode: 180
+          },
+          {
+            episode: 16,
+            title: "Faith in a Boy",
+            absoluteEpisode: 181
+          },
+          {
+            episode: 17,
+            title: "Gohan's Plea",
+            absoluteEpisode: 182
+          },
+          {
+            episode: 18,
+            title: "Android Explosion",
+            absoluteEpisode: 183
+          },
+          {
+            episode: 19,
+            title: "Cell Juniors Attack!",
+            absoluteEpisode: 184
+          },
+          {
+            episode: 20,
+            title: "Awakening",
+            absoluteEpisode: 185
+          },
+          {
+            episode: 21,
+            title: "The Unstoppable Gohan",
+            absoluteEpisode: 186
+          },
+          {
+            episode: 22,
+            title: "Cell's Break Down",
+            absoluteEpisode: 187
+          },
+          {
+            episode: 23,
+            title: "A Hero's Farewell",
+            absoluteEpisode: 188
+          },
+          {
+            episode: 24,
+            title: "Cell Returns!",
+            absoluteEpisode: 189
+          },
+          {
+            episode: 25,
+            title: "The Horror Won't End",
+            absoluteEpisode: 190
+          },
+          {
+            episode: 26,
+            title: "Save the World",
+            absoluteEpisode: 191
+          },
+          {
+            episode: 27,
+            title: "Goku's Decision",
+            absoluteEpisode: 192
+          },
+          {
+            episode: 28,
+            title: "One More Wish",
+            absoluteEpisode: 193
+          },
+          {
+            episode: 29,
+            title: "Free the Future",
+            absoluteEpisode: 194
+          }
+        ]
+      },
+      {
+        season: 7,
+        episodes: [
+          {
+            episode: 1,
+            title: "Warriors of the Dead",
+            absoluteEpisode: 195
+          },
+          {
+            episode: 2,
+            title: "Tournament Begins",
+            absoluteEpisode: 196
+          },
+          {
+            episode: 3,
+            title: "Water Fight",
+            absoluteEpisode: 197
+          },
+          {
+            episode: 4,
+            title: "Final Round",
+            absoluteEpisode: 198
+          },
+          {
+            episode: 5,
+            title: "Goku vs.Pikkon",
+            absoluteEpisode: 199
+          },
+          {
+            episode: 6,
+            title: "Gohan Goes to High School",
+            absoluteEpisode: 200
+          },
+          {
+            episode: 7,
+            title: "I am Saiyaman!",
+            absoluteEpisode: 201
+          },
+          {
+            episode: 8,
+            title: "Gohan's First Date",
+            absoluteEpisode: 202
+          },
+          {
+            episode: 9,
+            title: "Rescue Videl",
+            absoluteEpisode: 203
+          },
+          {
+            episode: 10,
+            title: "Blackmail",
+            absoluteEpisode: 204
+          },
+          {
+            episode: 11,
+            title: "I'll Fight Too",
+            absoluteEpisode: 205
+          },
+          {
+            episode: 12,
+            title: "The Newest Super Saiyan",
+            absoluteEpisode: 206
+          },
+          {
+            episode: 13,
+            title: "Take Flight, Videl",
+            absoluteEpisode: 207
+          },
+          {
+            episode: 14,
+            title: "Gather for the Tournament",
+            absoluteEpisode: 208
+          },
+          {
+            episode: 15,
+            title: "Camera Shy",
+            absoluteEpisode: 209
+          },
+          {
+            episode: 16,
+            title: "The World Tournament",
+            absoluteEpisode: 210
+          },
+          {
+            episode: 17,
+            title: "Trunks vs. Goten",
+            absoluteEpisode: 211
+          },
+          {
+            episode: 18,
+            title: "Best of the Boys",
+            absoluteEpisode: 212
+          },
+          {
+            episode: 19,
+            title: "Big Trouble, Little Trunks",
+            absoluteEpisode: 213
+          },
+          {
+            episode: 20,
+            title: "Who Will Fight Who?",
+            absoluteEpisode: 214
+          },
+          {
+            episode: 21,
+            title: "Forfeit of Piccolo",
+            absoluteEpisode: 215
+          },
+          {
+            episode: 22,
+            title: "A Dark and Secret Power",
+            absoluteEpisode: 216
+          },
+          {
+            episode: 23,
+            title: "Videl is Crushed",
+            absoluteEpisode: 217
+          },
+          {
+            episode: 24,
+            title: "Identities Revealed",
+            absoluteEpisode: 218
+          },
+          {
+            episode: 25,
+            title: "Energy Drain",
+            absoluteEpisode: 219
+          }
+        ]
+      },
+      {
+        season: 8,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Wizard's Curse",
+            absoluteEpisode: 220
+          },
+          {
+            episode: 2,
+            title: "King of the Demons",
+            absoluteEpisode: 221
+          },
+          {
+            episode: 3,
+            title: "Vegeta Attacks",
+            absoluteEpisode: 222
+          },
+          {
+            episode: 4,
+            title: "Next Up, Goku",
+            absoluteEpisode: 223
+          },
+          {
+            episode: 5,
+            title: "Battle Supreme",
+            absoluteEpisode: 224
+          },
+          {
+            episode: 6,
+            title: "Eighteen Unmasks",
+            absoluteEpisode: 225
+          },
+          {
+            episode: 7,
+            title: "Pay to Win",
+            absoluteEpisode: 226
+          },
+          {
+            episode: 8,
+            title: "Heart of a Villain",
+            absoluteEpisode: 227
+          },
+          {
+            episode: 9,
+            title: "The Dark Prince Returns",
+            absoluteEpisode: 228
+          },
+          {
+            episode: 10,
+            title: "Vegeta's Pride",
+            absoluteEpisode: 229
+          },
+          {
+            episode: 11,
+            title: "The Long Awaited Fight",
+            absoluteEpisode: 230
+          },
+          {
+            episode: 12,
+            title: "Magic Ball of Buu",
+            absoluteEpisode: 231
+          },
+          {
+            episode: 13,
+            title: "Buu is Hatched",
+            absoluteEpisode: 232
+          },
+          {
+            episode: 14,
+            title: "The Losses Begin",
+            absoluteEpisode: 233
+          },
+          {
+            episode: 15,
+            title: "The Terror of Majin Buu",
+            absoluteEpisode: 234
+          },
+          {
+            episode: 16,
+            title: "Meal Time",
+            absoluteEpisode: 235
+          },
+          {
+            episode: 17,
+            title: "The Warrior's Decision",
+            absoluteEpisode: 236
+          },
+          {
+            episode: 18,
+            title: "Final Atonement",
+            absoluteEpisode: 237
+          },
+          {
+            episode: 19,
+            title: "Evil Lives On",
+            absoluteEpisode: 238
+          },
+          {
+            episode: 20,
+            title: "Find the Dragonballs",
+            absoluteEpisode: 239
+          },
+          {
+            episode: 21,
+            title: "Revival",
+            absoluteEpisode: 240
+          },
+          {
+            episode: 22,
+            title: "Global Announcement",
+            absoluteEpisode: 241
+          },
+          {
+            episode: 23,
+            title: "Learn to Fuse!",
+            absoluteEpisode: 242
+          },
+          {
+            episode: 24,
+            title: "The Z Sword",
+            absoluteEpisode: 243
+          },
+          {
+            episode: 25,
+            title: "Race to Capsule Corp.",
+            absoluteEpisode: 244
+          },
+          {
+            episode: 26,
+            title: "Super Saiyan 3",
+            absoluteEpisode: 245
+          },
+          {
+            episode: 27,
+            title: "Buu's Mutiny",
+            absoluteEpisode: 246
+          },
+          {
+            episode: 28,
+            title: "The Fusion Dance",
+            absoluteEpisode: 247
+          },
+          {
+            episode: 29,
+            title: "Goku's Time Is Up",
+            absoluteEpisode: 248
+          },
+          {
+            episode: 30,
+            title: "Return to Other World",
+            absoluteEpisode: 249
+          },
+          {
+            episode: 31,
+            title: "Out from the Broken Sword",
+            absoluteEpisode: 250
+          },
+          {
+            episode: 32,
+            title: "Gotenks is Born",
+            absoluteEpisode: 251
+          },
+          {
+            episode: 33,
+            title: "Unlikely Friendship",
+            absoluteEpisode: 252
+          },
+          {
+            episode: 34,
+            title: "I Kill No More",
+            absoluteEpisode: 253
+          }
+        ]
+      },
+      {
+        season: 9,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Evil of Men",
+            absoluteEpisode: 254
+          },
+          {
+            episode: 2,
+            title: "Buu Against Buu",
+            absoluteEpisode: 255
+          },
+          {
+            episode: 3,
+            title: "Empty Planet",
+            absoluteEpisode: 256
+          },
+          {
+            episode: 4,
+            title: "Time Struggle",
+            absoluteEpisode: 257
+          },
+          {
+            episode: 5,
+            title: "Super Moves of Gotenks",
+            absoluteEpisode: 258
+          },
+          {
+            episode: 6,
+            title: "Trapped In Forever",
+            absoluteEpisode: 259
+          },
+          {
+            episode: 7,
+            title: "Feeding Frenzy",
+            absoluteEpisode: 260
+          },
+          {
+            episode: 8,
+            title: "Gotenks Is Awesome",
+            absoluteEpisode: 261
+          },
+          {
+            episode: 9,
+            title: "Unlucky Break",
+            absoluteEpisode: 262
+          },
+          {
+            episode: 10,
+            title: "A Whole New Gohan",
+            absoluteEpisode: 263
+          },
+          {
+            episode: 11,
+            title: "Search for Survivors",
+            absoluteEpisode: 264
+          },
+          {
+            episode: 12,
+            title: "Majin Buu Transforms",
+            absoluteEpisode: 265
+          },
+          {
+            episode: 13,
+            title: "The Old Kai's Weapon",
+            absoluteEpisode: 266
+          },
+          {
+            episode: 14,
+            title: "Ready to Fuse",
+            absoluteEpisode: 267
+          },
+          {
+            episode: 15,
+            title: "Union of Rivals",
+            absoluteEpisode: 268
+          },
+          {
+            episode: 16,
+            title: "Meet Vegito",
+            absoluteEpisode: 269
+          },
+          {
+            episode: 17,
+            title: "Rip in the Universe",
+            absoluteEpisode: 270
+          },
+          {
+            episode: 18,
+            title: "Vegito Downsized",
+            absoluteEpisode: 271
+          },
+          {
+            episode: 19,
+            title: "The Incredible Fighting Candy",
+            absoluteEpisode: 272
+          },
+          {
+            episode: 20,
+            title: "The Innards of Buu",
+            absoluteEpisode: 273
+          },
+          {
+            episode: 21,
+            title: "Mind Trap",
+            absoluteEpisode: 274
+          },
+          {
+            episode: 22,
+            title: "Deadly Vision",
+            absoluteEpisode: 275
+          },
+          {
+            episode: 23,
+            title: "Evil Kid Buu",
+            absoluteEpisode: 276
+          },
+          {
+            episode: 24,
+            title: "End of Earth",
+            absoluteEpisode: 277
+          },
+          {
+            episode: 25,
+            title: "True Saiyans Fight Alone",
+            absoluteEpisode: 278
+          },
+          {
+            episode: 26,
+            title: "Battle for the Universe Begins",
+            absoluteEpisode: 279
+          },
+          {
+            episode: 27,
+            title: "Vegeta's Respect",
+            absoluteEpisode: 280
+          },
+          {
+            episode: 28,
+            title: "Minute of Desperation",
+            absoluteEpisode: 281
+          },
+          {
+            episode: 29,
+            title: "Old Buu Emerges",
+            absoluteEpisode: 282
+          },
+          {
+            episode: 30,
+            title: "Earth Reborn",
+            absoluteEpisode: 283
+          },
+          {
+            episode: 31,
+            title: "Call to Action",
+            absoluteEpisode: 284
+          },
+          {
+            episode: 32,
+            title: "People of Earth Unite",
+            absoluteEpisode: 285
+          },
+          {
+            episode: 33,
+            title: "Spirit Bomb Triumphant",
+            absoluteEpisode: 286
+          },
+          {
+            episode: 34,
+            title: "Celebrations with Majin Buu",
+            absoluteEpisode: 287
+          },
+          {
+            episode: 35,
+            title: "He's Always Late",
+            absoluteEpisode: 288
+          },
+          {
+            episode: 36,
+            title: "Granddaughter Pan",
+            absoluteEpisode: 289
+          },
+          {
+            episode: 37,
+            title: "Buu's Reincarnation",
+            absoluteEpisode: 290
+          },
+          {
+            episode: 38,
+            title: "Goku's Next Journey",
+            absoluteEpisode: 291
+          }
+        ]
+      }
     ]
-},
-
-{
+  },
+  {
     title: "Dragon Ball DAIMA",
     type: "TV Show",
     isAnime: true,
@@ -7806,609 +7803,589 @@ window._ANIME_DATA = [
             episode: 14,
             title: "This is Every Last Bit of My Power! The Battle of Gods Concludes!",
             duration: "23m"
-          }
-        ]
-      },
-      {
-        season: 2,
-        episodes: [
+          },
           {
-            episode: 1,
+            episode: 15,
             title: "Heroic Satan, Cause a Miracle! A Challenge From Outer Space!!",
             duration: "23m"
           },
           {
-            episode: 2,
+            episode: 16,
             title: "Vegeta Becomes a Pupil?! Take Down Whis!",
             duration: "23m"
           },
           {
-            episode: 3,
+            episode: 17,
             title: "Pan is Born! And Goku Goes Off on a Training Journey!?",
             duration: "23m"
           },
           {
-            episode: 4,
+            episode: 18,
             title: "I've Come Too! Training Begins on Beerus' Planet!",
             duration: "23m"
           },
           {
-            episode: 5,
+            episode: 19,
             title: "Despair Once More! Revival of the Evil Emperor, Freeza!",
             duration: "23m"
           },
           {
-            episode: 6,
+            episode: 20,
             title: "Warning from Jaco! Freeza and 1,000 Soldiers are Fast Approaching!",
             duration: "23m"
           },
           {
-            episode: 7,
+            episode: 21,
             title: "The Revenge Begins! The Freeza Army's Malice Strikes Gohan!",
             duration: "23m"
           },
           {
-            episode: 8,
+            episode: 22,
             title: "Change! An Impossible Revival! The Name's Ginyu!!",
             duration: "23m"
           },
           {
-            episode: 9,
+            episode: 23,
             title: "The Earth and Gohan in Dire Peril! Come Quick, Son Goku!",
             duration: "23m"
           },
           {
-            episode: 10,
+            episode: 24,
             title: "Clash! Freeza vs. Son Goku! This is the Fruit of My Training!",
             duration: "23m"
           },
           {
-            episode: 11,
+            episode: 25,
             title: "An All-Out Battle! The Vengeful Golden Freeza",
             duration: "23m"
           },
           {
-            episode: 12,
+            episode: 26,
             title: "Amidst the Crisis, a Shot at Victory Appears! Son Goku's Counterattack Begins!",
             duration: "23m"
           },
           {
-            episode: 13,
+            episode: 27,
             title: "The Earth Explodes?! A Climatic Kamehameha",
             duration: "23m"
-          }
-        ]
-      },
-      {
-        season: 3,
-        episodes: [
+          },
           {
-            episode: 1,
+            episode: 28,
             title: "The 6th Universe's God of Destruction — His Name's Champa",
             duration: "23m"
           },
           {
-            episode: 2,
+            episode: 29,
             title: "It's Settled: We're Holding a Martial Arts Match! The Team Captain's Even Stronger Than Goku",
             duration: "23m"
           },
           {
-            episode: 3,
+            episode: 30,
             title: "Rehearsing for the \\\"Martial Arts Tournament\\\" Who Are the Two Remaining Members?!",
             duration: "23m"
           },
           {
-            episode: 4,
+            episode: 31,
             title: "To Lord Zuno! Ask About the Location of the Super Dragon Balls!",
             duration: "23m"
           },
           {
-            episode: 5,
+            episode: 32,
             title: "The Match Begins! Everyone Head to the \\\"Nameless Planet\\\"!",
             duration: "23m"
           },
           {
-            episode: 6,
+            episode: 33,
             title: "Be Surprised, Universe 6! This is Super Saiyan Son Goku!",
             duration: "23m"
           },
           {
-            episode: 7,
+            episode: 34,
             title: "Piccolo vs Frost — Bet Everything on the Makankosappo!",
             duration: "23m"
           },
           {
-            episode: 8,
+            episode: 35,
             title: "Turn Anger into Power! Vegeta's All-Out Battle",
             duration: "23m"
           },
           {
-            episode: 9,
+            episode: 36,
             title: "An Unexpectedly Tough Foe! Vegeta's Explosion of Rage!",
             duration: "23m"
           },
           {
-            episode: 10,
+            episode: 37,
             title: "Don't Forget your Saiyan Pride! Vegeta vs the Saiyan of Universe 6",
             duration: "23m"
           },
           {
-            episode: 11,
+            episode: 38,
             title: "The Last of Universe 6's Warriors! Meet the Strongest Man, Hit!",
             duration: "23m"
           },
           {
-            episode: 12,
+            episode: 39,
             title: "A Fully-Developed 'Time-Skip' Counterattack?! Is It Coming?! Goku's New Technique!",
             duration: "23m"
           },
           {
-            episode: 13,
+            episode: 40,
             title: "Conclusion at Last! Is Beerus the Winner? Or is it Champa?",
             duration: "23m"
           },
           {
-            episode: 14,
+            episode: 41,
             title: "Come Forth, Dragon of the Gods, and Grant My Wish Pretty Peas!",
             duration: "23m"
           },
           {
-            episode: 15,
+            episode: 42,
             title: "The Tumultuous Victory Feast! A Showdown At Last?! Monaka vs Son Goku",
             duration: "23m"
           },
           {
-            episode: 16,
+            episode: 43,
             title: "Struggling to Take Care of Pan",
             duration: "23m"
           },
           {
-            episode: 17,
+            episode: 44,
             title: "Secret of the Unleashed Superhuman Water",
             duration: "23m"
           },
           {
-            episode: 18,
+            episode: 45,
             title: "The Amazing Copy-Vegeta!",
             duration: "23m"
           },
           {
-            episode: 19,
-            title: "Goku vs. Copy-Vegeta! Who will Prevail!?",
-            duration: "23m"
-          }
-        ]
-      },
-      {
-        season: 4,
-        episodes: [
-          {
-            episode: 1,
-            title: "An SOS from the Future! A Dark New Enemy Emerges!!",
-            duration: "23m"
-          },
-          {
-            episode: 2,
-            title: "Hope Again!! Trunks Wakes Up in the Present!",
-            duration: "23m"
-          },
-          {
-            episode: 3,
-            title: "A Message from the Future Goku Black Invades!",
-            duration: "23m"
-          },
-          {
-            episode: 4,
-            title: "Goku VS Black! The Road Towards The Sealed Future",
-            duration: "23m"
-          },
-          {
-            episode: 5,
-            title: "The Feelings that Surpass Time Trunks and Mai",
-            duration: "23m"
-          },
-          {
-            episode: 6,
-            title: "Master and Student Reunited Son Gohan and \\\"Future\\\" Trunks",
-            duration: "23m"
-          },
-          {
-            episode: 7,
-            title: "Expose Black's True Identity! To the Kaioshin Realm of Universe 10",
-            duration: "23m"
-          },
-          {
-            episode: 8,
-            title: "He Who Carries Saiyan Blood Trunks' Determination",
-            duration: "23m"
-          },
-          {
-            episode: 9,
-            title: "I Want to Meet Son Goku - A Call from Zenō-sama",
-            duration: "23m"
-          },
-          {
-            episode: 10,
-            title: "Goku Black Rematch! The Appearance of Super Saiyan Rose!!",
-            duration: "23m"
-          },
-          {
-            episode: 11,
-            title: "God with Invulnerable Body Zamasu's Advent",
-            duration: "23m"
-          },
-          {
-            episode: 12,
-            title: "Zamasu and Black The Mystery of the Two Deepens",
-            duration: "23m"
-          },
-          {
-            episode: 13,
-            title: "Protect the Kaioshin Gowasu Destroy Zamasu!",
-            duration: "23m"
-          },
-          {
-            episode: 14,
-            title: "To The Future Once Again Goku Black's Identity Revealed",
-            duration: "23m"
-          },
-          {
-            episode: 15,
-            title: "Zamasu's Ambition The 'Human Elimination Plan' is Divulged",
-            duration: "23m"
-          },
-          {
-            episode: 16,
-            title: "I Will Protect The World! Trunks Angry Super Power Explosion!!",
-            duration: "23m"
-          },
-          {
-            episode: 17,
-            title: "Don't Defile the Saiyan Cells! The Curtain Rises on Vegeta's Battle!!",
-            duration: "23m"
-          },
-          {
-            episode: 18,
-            title: "Praise and Adore Him! The Explosive Birth of Merged Zamasu!!",
-            duration: "23m"
-          },
-          {
-            episode: 19,
-            title: "Final Judgment?! The Supreme God's Ultimate Power",
-            duration: "23m"
-          },
-          {
-            episode: 20,
-            title: "One Last, Great Comeback! Here's Vegetto!",
-            duration: "23m"
-          },
-          {
-            episode: 21,
-            title: "A Visit from the Omni-King! Bye-Bye Zamasu!",
-            duration: "23m"
-          },
-          {
-            episode: 22,
-            title: "Come Forth, Shenlong! Whose Wish Shall Be Granted?!",
-            duration: "23m"
-          },
-          {
-            episode: 23,
-            title: "Goku vs Arale! The Earth Comes to an End Due to their Battle?",
-            duration: "23m"
-          },
-          {
-            episode: 24,
-            title: "Challenge from Champa! Let's Fight in Baseball!",
-            duration: "23m"
-          },
-          {
-            episode: 25,
-            title: "Kill Goku! Assassination Order That Must Be Performed",
-            duration: "23m"
-          },
-          {
-            episode: 26,
-            title: "\\\"Will There Be a Counterattack?! The Invisible Killing Strike!!\\\"",
-            duration: "23m"
-          },
-          {
-            episode: 27,
-            title: "Gohan Gets Made Into a Movie?!",
-            duration: "23m"
-          },
-          {
-            episode: 28,
-            title: "For The Sake of Which He Loves!",
-            duration: "23m"
-          },
-          {
-            episode: 29,
-            title: "Goku And Krillin Back To The Old Training Grounds",
-            duration: "23m"
-          },
-          {
-            episode: 30,
-            title: "Beat The Fearsome Foes! Krillin's Fighting Spirit Returns!",
-            duration: "23m"
-          }
-        ]
-      },
-      {
-        season: 5,
-        episodes: [
-          {
-            episode: 1,
-            title: "Let's Do It, Omni-King! The Universe's Greatest Martial Arts Tournament!!",
-            duration: "23m"
-          },
-          {
-            episode: 2,
-            title: "The Gods of Every Universe in Shock?! Losers Erased in the Tournament of Power",
-            duration: "23m"
-          },
-          {
-            episode: 3,
-            title: "Universe 9's Kicker Basil vs Universe 7's Majin Buu!!",
-            duration: "23m"
-          },
-          {
-            episode: 4,
-            title: "Awaken Your Sleeping Battle Spirit! Son Gohan's Fight!!",
-            duration: "23m"
-          },
-          {
-            episode: 5,
-            title: "Crusher Bergamo vs. Son Goku! Which Has Sky-High Strength?!",
-            duration: "23m"
-          },
-          {
-            episode: 6,
-            title: "The Righteous Warrior Toppo Bursts In",
-            duration: "23m"
-          },
-          {
-            episode: 7,
-            title: "Forming the Universe 7 Representative Team",
-            duration: "23m"
-          },
-          {
-            episode: 8,
-            title: "Son Goku the Talent Scout — Inviting Kuririn and No. 18",
-            duration: "23m"
-          },
-          {
-            episode: 9,
-            title: "The Universes Begin to Make Their Moves: Their Individual Motives",
-            duration: "23m"
-          },
-          {
-            episode: 10,
-            title: "Trading Blows for the First Time! Android N.17 vs Son Goku!",
-            duration: "23m"
-          },
-          {
-            episode: 11,
-            title: "Hunt the Poachers! Goku and N.17's Joint Battle!",
-            duration: "23m"
-          },
-          {
-            episode: 12,
-            title: "Gohan and Piccolo: The Master and Disciple's Intense Training to the Limit!",
-            duration: "23m"
-          },
-          {
-            episode: 13,
-            title: "A Mysterious Beauty Appears! Mistery of the Tenshin-Style Dojo?!",
-            duration: "23m"
-          },
-          {
-            episode: 14,
-            title: "Facing the Wall that Must be Overcome! Goku vs Gohan",
-            duration: "23m"
-          },
-          {
-            episode: 15,
-            title: "Which Universe Will Survive?! The Strongest Warriors Are Gathering!!",
-            duration: "23m"
-          },
-          {
-            episode: 16,
-            title: "Emergency Development! The Incomplete Ten Members!!",
-            duration: "23m"
-          },
-          {
-            episode: 17,
-            title: "You're the 10th Warrior! Goku Visits Freeza!",
-            duration: "23m"
-          },
-          {
-            episode: 18,
-            title: "The Emperor of Evil Returns! A Reception of Mysterious Assassins?!",
-            duration: "23m"
-          },
-          {
-            episode: 19,
-            title: "The Worst! The Most Evil! Frieza's Rampage!!",
-            duration: "23m"
-          },
-          {
-            episode: 20,
-            title: "The Time Is Here! To The World Of Void For The Fate Of The Universe!!",
-            duration: "23m"
-          },
-          {
-            episode: 21,
-            title: "Survive! The Tournament of Power Begins at Last!!",
-            duration: "23m"
-          },
-          {
-            episode: 22,
-            title: "Oh, Uncertainty! A Universe Despairs!!",
-            duration: "23m"
-          },
-          {
-            episode: 23,
-            title: "Show Them! Krillin's True Power!!",
-            duration: "23m"
-          },
-          {
-            episode: 24,
-            title: "The Berserker Awakens!",
-            duration: "23m"
-          },
-          {
-            episode: 25,
-            title: "The Warrior of Justice Closes In!",
-            duration: "23m"
-          },
-          {
-            episode: 26,
-            title: "The Power of Love Explodes?! Universe 2's Little Witch Warriors!!",
-            duration: "23m"
-          },
-          {
-            episode: 27,
-            title: "Gohan be Ruthless! The Showdown with Universe 10",
-            duration: "23m"
-          },
-          {
-            episode: 28,
-            title: "A Faster-Than-Light Battle Begins! Goku and Hit's Joint Front!",
-            duration: "23m"
-          },
-          {
-            episode: 29,
-            title: "Brave Fight! Muten Roshi Stakes his Life!!",
-            duration: "23m"
-          },
-          {
-            episode: 30,
-            title: "Find Him! Death Match with an Invisible Attacker!!",
-            duration: "23m"
-          },
-          {
-            episode: 31,
-            title: "Revenge ‘F'! The Cunning Trap?!",
-            duration: "23m"
-          },
-          {
-            episode: 32,
-            title: "Frieza and Frost!! Intersecting Evil?!",
-            duration: "23m"
-          },
-          {
-            episode: 33,
-            title: "The Ultimate Enemy Approaches Goku! Now, Let Loose! The Killer Spirit Bomb!",
-            duration: "23m"
-          },
-          {
-            episode: 34,
-            title: "Son Goku Wakes! New Level of the Awakened!",
-            duration: "23m"
-          },
-          {
-            episode: 35,
-            title: "Hit vs Jiren!!",
-            duration: "23m"
-          },
-          {
-            episode: 36,
-            title: "Vegeta's Resolve!!",
-            duration: "23m"
-          },
-          {
-            episode: 37,
-            title: "Fighting Maniac Saiyan",
-            duration: "23m"
-          },
-          {
-            episode: 38,
-            title: "Ghastly! Explosive Birth of a New Super Warrior!!",
-            duration: "23m"
-          },
-          {
-            episode: 39,
-            title: "Goku vs Kafla!!",
-            duration: "23m"
-          },
-          {
-            episode: 40,
-            title: "The Comeback Omen! Ultra Istinct's Great Explosion!!",
-            duration: "23m"
-          },
-          {
-            episode: 41,
-            title: "Grand Love Shodown! Androids vs Universe 2",
-            duration: "23m"
-          },
-          {
-            episode: 42,
-            title: "Accelerating Drama: A Universe Disappears...!",
-            duration: "23m"
-          },
-          {
-            episode: 43,
-            title: "A New Victim from Universe 7! Universe 4 Gets Serious!!",
-            duration: "23m"
-          },
-          {
-            episode: 44,
-            title: "A Perfect Survival Strategy! Universe 3's Menacing Assassins!!",
-            duration: "23m"
-          },
-          {
-            episode: 45,
-            title: "All-Out War! The Ultimate 4-Way Combination vs Universe 7's Total Offensive!!",
-            duration: "23m"
-          },
-          {
             episode: 46,
-            title: "For One's Own Pride! Vegeta's Challenge to Be The Strongest!!",
+            title: "Goku vs. Copy-Vegeta! Who will Prevail!?",
             duration: "23m"
           },
           {
             episode: 47,
-            title: "Full Body, Spirit, and Power Unleashed!",
+            title: "An SOS from the Future! A Dark New Enemy Emerges!!",
             duration: "23m"
           },
           {
             episode: 48,
-            title: "A Stormy, Fierce Attack! Gohan Fights with his Back to the Wall!!",
+            title: "Hope Again!! Trunks Wakes Up in the Present!",
             duration: "23m"
           },
           {
             episode: 49,
-            title: "Advent of the God of Destruction, Toppo! There is Only Overwhelming Power!!",
+            title: "A Message from the Future Goku Black Invades!",
             duration: "23m"
           },
           {
             episode: 50,
-            title: "Surpass Even a God! Vegeta's Life-Risking Blow",
+            title: "Goku VS Black! The Road Towards The Sealed Future",
             duration: "23m"
           },
           {
             episode: 51,
-            title: "The approaching wall! The final barrier of hope!!",
+            title: "The Feelings that Surpass Time Trunks and Mai",
             duration: "23m"
           },
           {
             episode: 52,
-            title: "With Noble Pride to the End! Vegeta Falls!",
+            title: "Master and Student Reunited Son Gohan and \\\"Future\\\" Trunks",
             duration: "23m"
           },
           {
             episode: 53,
-            title: "Trascending the Limit! Mastering Ultra Istinct!!",
+            title: "Expose Black's True Identity! To the Kaioshin Realm of Universe 10",
             duration: "23m"
           },
           {
             episode: 54,
-            title: "An Unprecedented Super Showdown!!",
+            title: "He Who Carries Saiyan Blood Trunks' Determination",
             duration: "23m"
           },
           {
             episode: 55,
+            title: "I Want to Meet Son Goku - A Call from Zenō-sama",
+            duration: "23m"
+          },
+          {
+            episode: 56,
+            title: "Goku Black Rematch! The Appearance of Super Saiyan Rose!!",
+            duration: "23m"
+          },
+          {
+            episode: 57,
+            title: "God with Invulnerable Body Zamasu's Advent",
+            duration: "23m"
+          },
+          {
+            episode: 58,
+            title: "Zamasu and Black The Mystery of the Two Deepens",
+            duration: "23m"
+          },
+          {
+            episode: 59,
+            title: "Protect the Kaioshin Gowasu Destroy Zamasu!",
+            duration: "23m"
+          },
+          {
+            episode: 60,
+            title: "To The Future Once Again Goku Black's Identity Revealed",
+            duration: "23m"
+          },
+          {
+            episode: 61,
+            title: "Zamasu's Ambition The 'Human Elimination Plan' is Divulged",
+            duration: "23m"
+          },
+          {
+            episode: 62,
+            title: "I Will Protect The World! Trunks Angry Super Power Explosion!!",
+            duration: "23m"
+          },
+          {
+            episode: 63,
+            title: "Don't Defile the Saiyan Cells! The Curtain Rises on Vegeta's Battle!!",
+            duration: "23m"
+          },
+          {
+            episode: 64,
+            title: "Praise and Adore Him! The Explosive Birth of Merged Zamasu!!",
+            duration: "23m"
+          },
+          {
+            episode: 65,
+            title: "Final Judgment?! The Supreme God's Ultimate Power",
+            duration: "23m"
+          },
+          {
+            episode: 66,
+            title: "One Last, Great Comeback! Here's Vegetto!",
+            duration: "23m"
+          },
+          {
+            episode: 67,
+            title: "A Visit from the Omni-King! Bye-Bye Zamasu!",
+            duration: "23m"
+          },
+          {
+            episode: 68,
+            title: "Come Forth, Shenlong! Whose Wish Shall Be Granted?!",
+            duration: "23m"
+          },
+          {
+            episode: 69,
+            title: "Goku vs Arale! The Earth Comes to an End Due to their Battle?",
+            duration: "23m"
+          },
+          {
+            episode: 70,
+            title: "Challenge from Champa! Let's Fight in Baseball!",
+            duration: "23m"
+          },
+          {
+            episode: 71,
+            title: "Kill Goku! Assassination Order That Must Be Performed",
+            duration: "23m"
+          },
+          {
+            episode: 72,
+            title: "\\\"Will There Be a Counterattack?! The Invisible Killing Strike!!\\\"",
+            duration: "23m"
+          },
+          {
+            episode: 73,
+            title: "Gohan Gets Made Into a Movie?!",
+            duration: "23m"
+          },
+          {
+            episode: 74,
+            title: "For The Sake of Which He Loves!",
+            duration: "23m"
+          },
+          {
+            episode: 75,
+            title: "Goku And Krillin Back To The Old Training Grounds",
+            duration: "23m"
+          },
+          {
+            episode: 76,
+            title: "Beat The Fearsome Foes! Krillin's Fighting Spirit Returns!",
+            duration: "23m"
+          },
+          {
+            episode: 77,
+            title: "Let's Do It, Omni-King! The Universe's Greatest Martial Arts Tournament!!",
+            duration: "23m"
+          },
+          {
+            episode: 78,
+            title: "The Gods of Every Universe in Shock?! Losers Erased in the Tournament of Power",
+            duration: "23m"
+          },
+          {
+            episode: 79,
+            title: "Universe 9's Kicker Basil vs Universe 7's Majin Buu!!",
+            duration: "23m"
+          },
+          {
+            episode: 80,
+            title: "Awaken Your Sleeping Battle Spirit! Son Gohan's Fight!!",
+            duration: "23m"
+          },
+          {
+            episode: 81,
+            title: "Crusher Bergamo vs. Son Goku! Which Has Sky-High Strength?!",
+            duration: "23m"
+          },
+          {
+            episode: 82,
+            title: "The Righteous Warrior Toppo Bursts In",
+            duration: "23m"
+          },
+          {
+            episode: 83,
+            title: "Forming the Universe 7 Representative Team",
+            duration: "23m"
+          },
+          {
+            episode: 84,
+            title: "Son Goku the Talent Scout — Inviting Kuririn and No. 18",
+            duration: "23m"
+          },
+          {
+            episode: 85,
+            title: "The Universes Begin to Make Their Moves: Their Individual Motives",
+            duration: "23m"
+          },
+          {
+            episode: 86,
+            title: "Trading Blows for the First Time! Android N.17 vs Son Goku!",
+            duration: "23m"
+          },
+          {
+            episode: 87,
+            title: "Hunt the Poachers! Goku and N.17's Joint Battle!",
+            duration: "23m"
+          },
+          {
+            episode: 88,
+            title: "Gohan and Piccolo: The Master and Disciple's Intense Training to the Limit!",
+            duration: "23m"
+          },
+          {
+            episode: 89,
+            title: "A Mysterious Beauty Appears! Mistery of the Tenshin-Style Dojo?!",
+            duration: "23m"
+          },
+          {
+            episode: 90,
+            title: "Facing the Wall that Must be Overcome! Goku vs Gohan",
+            duration: "23m"
+          },
+          {
+            episode: 91,
+            title: "Which Universe Will Survive?! The Strongest Warriors Are Gathering!!",
+            duration: "23m"
+          },
+          {
+            episode: 92,
+            title: "Emergency Development! The Incomplete Ten Members!!",
+            duration: "23m"
+          },
+          {
+            episode: 93,
+            title: "You're the 10th Warrior! Goku Visits Freeza!",
+            duration: "23m"
+          },
+          {
+            episode: 94,
+            title: "The Emperor of Evil Returns! A Reception of Mysterious Assassins?!",
+            duration: "23m"
+          },
+          {
+            episode: 95,
+            title: "The Worst! The Most Evil! Frieza's Rampage!!",
+            duration: "23m"
+          },
+          {
+            episode: 96,
+            title: "The Time Is Here! To The World Of Void For The Fate Of The Universe!!",
+            duration: "23m"
+          },
+          {
+            episode: 97,
+            title: "Survive! The Tournament of Power Begins at Last!!",
+            duration: "23m"
+          },
+          {
+            episode: 98,
+            title: "Oh, Uncertainty! A Universe Despairs!!",
+            duration: "23m"
+          },
+          {
+            episode: 99,
+            title: "Show Them! Krillin's True Power!!",
+            duration: "23m"
+          },
+          {
+            episode: 100,
+            title: "The Berserker Awakens!",
+            duration: "23m"
+          },
+          {
+            episode: 101,
+            title: "The Warrior of Justice Closes In!",
+            duration: "23m"
+          },
+          {
+            episode: 102,
+            title: "The Power of Love Explodes?! Universe 2's Little Witch Warriors!!",
+            duration: "23m"
+          },
+          {
+            episode: 103,
+            title: "Gohan be Ruthless! The Showdown with Universe 10",
+            duration: "23m"
+          },
+          {
+            episode: 104,
+            title: "A Faster-Than-Light Battle Begins! Goku and Hit's Joint Front!",
+            duration: "23m"
+          },
+          {
+            episode: 105,
+            title: "Brave Fight! Muten Roshi Stakes his Life!!",
+            duration: "23m"
+          },
+          {
+            episode: 106,
+            title: "Find Him! Death Match with an Invisible Attacker!!",
+            duration: "23m"
+          },
+          {
+            episode: 107,
+            title: "Revenge ‘F'! The Cunning Trap?!",
+            duration: "23m"
+          },
+          {
+            episode: 108,
+            title: "Frieza and Frost!! Intersecting Evil?!",
+            duration: "23m"
+          },
+          {
+            episode: 109,
+            title: "The Ultimate Enemy Approaches Goku! Now, Let Loose! The Killer Spirit Bomb!",
+            duration: "23m"
+          },
+          {
+            episode: 110,
+            title: "Son Goku Wakes! New Level of the Awakened!",
+            duration: "23m"
+          },
+          {
+            episode: 111,
+            title: "Hit vs Jiren!!",
+            duration: "23m"
+          },
+          {
+            episode: 112,
+            title: "Vegeta's Resolve!!",
+            duration: "23m"
+          },
+          {
+            episode: 113,
+            title: "Fighting Maniac Saiyan",
+            duration: "23m"
+          },
+          {
+            episode: 114,
+            title: "Ghastly! Explosive Birth of a New Super Warrior!!",
+            duration: "23m"
+          },
+          {
+            episode: 115,
+            title: "Goku vs Kafla!!",
+            duration: "23m"
+          },
+          {
+            episode: 116,
+            title: "The Comeback Omen! Ultra Istinct's Great Explosion!!",
+            duration: "23m"
+          },
+          {
+            episode: 117,
+            title: "Grand Love Shodown! Androids vs Universe 2",
+            duration: "23m"
+          },
+          {
+            episode: 118,
+            title: "Accelerating Drama: A Universe Disappears...!",
+            duration: "23m"
+          },
+          {
+            episode: 119,
+            title: "A New Victim from Universe 7! Universe 4 Gets Serious!!",
+            duration: "23m"
+          },
+          {
+            episode: 120,
+            title: "A Perfect Survival Strategy! Universe 3's Menacing Assassins!!",
+            duration: "23m"
+          },
+          {
+            episode: 121,
+            title: "All-Out War! The Ultimate 4-Way Combination vs Universe 7's Total Offensive!!",
+            duration: "23m"
+          },
+          {
+            episode: 122,
+            title: "For One's Own Pride! Vegeta's Challenge to Be The Strongest!!",
+            duration: "23m"
+          },
+          {
+            episode: 123,
+            title: "Full Body, Spirit, and Power Unleashed!",
+            duration: "23m"
+          },
+          {
+            episode: 124,
+            title: "A Stormy, Fierce Attack! Gohan Fights with his Back to the Wall!!",
+            duration: "23m"
+          },
+          {
+            episode: 125,
+            title: "Advent of the God of Destruction, Toppo! There is Only Overwhelming Power!!",
+            duration: "23m"
+          },
+          {
+            episode: 126,
+            title: "Surpass Even a God! Vegeta's Life-Risking Blow",
+            duration: "23m"
+          },
+          {
+            episode: 127,
+            title: "The approaching wall! The final barrier of hope!!",
+            duration: "23m"
+          },
+          {
+            episode: 128,
+            title: "With Noble Pride to the End! Vegeta Falls!",
+            duration: "23m"
+          },
+          {
+            episode: 129,
+            title: "Trascending the Limit! Mastering Ultra Istinct!!",
+            duration: "23m"
+          },
+          {
+            episode: 130,
+            title: "An Unprecedented Super Showdown!!",
+            duration: "23m"
+          },
+          {
+            episode: 131,
             title: "Goku, Until the Day We Meet Again",
             duration: "23m"
           }
