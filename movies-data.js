@@ -11435,9 +11435,9 @@ window._MOVIES_DATA = [
     age: "R",
     duration: "1h 53m",
     genres: [
+      ""
       "Crime",
       "Thriller",
-      "Mystery"
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/euPgyPsiNFp6gOBB7nUFxvN5ZaY.jpg",
