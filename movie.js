@@ -3931,11 +3931,11 @@ function updateIframeServer() {
 
   let newUrl = '';
   if (isAnime) {
-    // player.zxcstream.xyz — supports TMDB IDs and defaults to Sub
+    // vidsrc.me — supports TMDB IDs and generally has both sub and dub embedded servers
     if (data.type === 'tv') {
-      newUrl = `https://player.zxcstream.xyz/embed/tv/${data.id}/${data.season}/${data.episode}`;
+      newUrl = `https://vidsrc.me/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}`;
     } else {
-      newUrl = `https://player.zxcstream.xyz/embed/movie/${data.id}`;
+      newUrl = `https://vidsrc.me/embed/movie?tmdb=${data.id}`;
     }
   } else if (data.type === 'tv') {
     // Restore vaplayer.ru for regular TV series
