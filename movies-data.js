@@ -136,8 +136,8 @@ window._MOVIES_DATA = [
     title: "Batman: Knightfall Part 1: Knightfall",
     type: "Movie",
     year: 2026,
-    rating: 8.5,
-    age: "PG-13",
+    rating: 8.0,
+    age: "R",
     duration: "2h 52m",
     genres: [
       "Action",
