@@ -11081,7 +11081,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "The Last: Naruto the Movie",
+    title: "Boruto: Naruto the Movie",
     type: "Movie",
     year: 2014,
     rating: 7.6,
