@@ -2524,7 +2524,7 @@ window._SERIES_DATA = [
         ]
       },
       {
-        season: 2,
+        season: 3,
         episodes: [
           {
             episode: 1,
