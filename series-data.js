@@ -8561,7 +8561,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 2,
-            title: 'Episode #3.2'
+            title: 'The Bells'
           },
           {
             episode: 3,
