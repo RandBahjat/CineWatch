@@ -7568,5 +7568,141 @@ window._ANIME_DATA = [
     ]
 },
 
-
+{
+    title: "Dragon Ball DAIMA",
+    type: "TV Show",
+    isAnime: true,
+    year: 2024,
+    rating: 8.5,
+    age: "TV-14",
+    duration: "30m",
+    genres: [
+      "Animation",
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lMULbSFZNXUC87MqOZQ4SSV9DXI.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/oUmWLyeko3kYdUr8DBLIsxwcugl.jpg",
+    videoUrl: "236994",
+    animeSlug: "dragon-ball-daima",
+    overview: "Goku and company were living peaceful lives when they suddenly turned small due to a conspiracy! When they discover that the reason for this may lie in a world known as the \"Demon Realm,\" a mysterious young Majin named Glorio appears before them.",
+    director: "Akira Toriyama",
+    cast: [
+      "Masako Nozawa",
+      "Yumiko Kobayashi",
+      "Kouki Uchiyama",
+      "Fairouz Ai"
+    ],
+    trending: true,
+    featured: false,
+    is4k: true,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Conspiracy",
+            absoluteEpisode: 1
+          },
+          {
+            episode: 2,
+            title: "Glorio",
+            absoluteEpisode: 2
+          },
+          {
+            episode: 3,
+            title: "Daima",
+            absoluteEpisode: 3
+          },
+          {
+            episode: 4,
+            title: "Chatty",
+            absoluteEpisode: 4
+          },
+          {
+            episode: 5,
+            title: "Panzy",
+            absoluteEpisode: 5
+          },
+          {
+            episode: 6,
+            title: "Lightning",
+            absoluteEpisode: 6
+          },
+          {
+            episode: 7,
+            title: "Collar",
+            absoluteEpisode: 7
+          },
+          {
+            episode: 8,
+            title: "Tamagami",
+            absoluteEpisode: 8
+          },
+          {
+            episode: 9,
+            title: "Thieves",
+            absoluteEpisode: 9
+          },
+          {
+            episode: 10,
+            title: "Ocean",
+            absoluteEpisode: 10
+          },
+          {
+            episode: 11,
+            title: "Legend",
+            absoluteEpisode: 11
+          },
+          {
+            episode: 12,
+            title: "True Strength",
+            absoluteEpisode: 12
+          },
+          {
+            episode: 13,
+            title: "Surprise",
+            absoluteEpisode: 13
+          },
+          {
+            episode: 14,
+            title: "Taboo",
+            absoluteEpisode: 14
+          },
+          {
+            episode: 15,
+            title: "Third Eye",
+            absoluteEpisode: 15
+          },
+          {
+            episode: 16,
+            title: "Degesu",
+            absoluteEpisode: 16
+          },
+          {
+            episode: 17,
+            title: "Gomah",
+            absoluteEpisode: 17
+          },
+          {
+            episode: 18,
+            title: "Awakening",
+            absoluteEpisode: 18
+          },
+          {
+            episode: 19,
+            title: "Betrayal",
+            absoluteEpisode: 19
+          },
+          {
+            episode: 20,
+            title: "Maximum",
+            absoluteEpisode: 20
+          }
+        ]
+      }
+    ]
+  },
 ]
