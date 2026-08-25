@@ -11220,7 +11220,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 2010,
     rating: 6.8,
-    age: "TV-14",
+    age: "TV-PG",
     duration: "1h 38m",
     genres: [
       "Action",
