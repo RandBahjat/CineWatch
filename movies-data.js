@@ -11394,7 +11394,7 @@ window._MOVIES_DATA = [
     overview: "Henry Hill rise through ranks of mob from young age, live fast life of money, power, violence alongside Jimmy Conway, Tommy DeVito. Loyalty, greed, paranoia eat away at friendship, world start crumble around him.",
     director: "Martin Scorsese",
     cast: [
-      "Clint Eastwood, Eli Wallach, Lee Van Cleef, Aldo Giuffrè, Luigi Pistilli"
+      "Robert De Niro, Ray Liotta, Joe Pesci, Lorraine Bracco, Paul Sorvino"
     ],
     trending: false,
     featured: false,
