@@ -11149,7 +11149,7 @@ window._MOVIES_DATA = [
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vDkct38sSFSWJIATlfJw0l3QOIR.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/sgg7xDeobzw2hrJdVNX6JOaM5zj.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/fJRbm6m2DDbSSyD8jTeB8evZ3Hq.jpg",
     videoUrl: "118406",
     overview: "Alternate world jutsu send Naruto, Sakura into parallel dimension where their life gone totally different — Naruto's parent alive, Sakura's dead. Both face masked villain, Tobi, learn appreciate world, family they actually have.",
     director: "Hayato Date",
