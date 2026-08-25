@@ -11112,7 +11112,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 2012,
     rating: 7.6,
-    age: "PG",
+    age: "TV-14",
     duration: "1h 35m",
     genres: [
       "Action",
