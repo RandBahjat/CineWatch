@@ -2426,6 +2426,66 @@ window._SERIES_DATA = [
     ]
   },
   {
+    title: 'Lucky',
+    type: 'TV Show',
+    year: 2026,
+    rating: 6.7,
+    age: 'TV-MA',
+    duration: '22m',
+    genres: [
+      'Action',
+      'Crime',
+      'Drama',
+      'Thriller'
+    ],
+    poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/mKrhRPB7rMvy0bIU1l1NYhgh1eI.jpg',
+    videoUrl: '278624',
+    overview: 'Anya Taylor-Joy play con artist finally get outsmarted herself. Series follow Luciana Lucky Armstrong after big heist collapse, husband vanish with cash, two dangerous group hunt her down for different reason.',
+    director: 'Jonathan Tropper',
+    cast: [
+      'Anya Taylor-Joy, Annette Bening, Timothy Olyphant, Aunjanue Ellis-Taylor, Drew Starkey, Clifton Collins Jr., William Fichtner'
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: 'The Bat in the Belfry'
+          },
+          {
+            episode: 2,
+            title: 'Call of the Cobblepot'
+          },
+          {
+            episode: 3,
+            title: 'Traction'
+          },
+          {
+            episode: 4,
+            title: 'The Man Who Would Be Bat'
+          },
+          {
+            episode: 5,
+            title: 'The Big Chill'
+          },
+          {
+            episode: 6,
+            title: "The Cat and the Bat'"
+          },
+          {
+            episode: 7,
+            title: 'The Big Heat'
+          }
+        ]
+      }
+    ]
+  },
+  {
     title: 'The Batman',
     type: 'TV Show',
     year: 2004,
