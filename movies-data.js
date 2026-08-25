@@ -11206,7 +11206,7 @@ window._MOVIES_DATA = [
     backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/dWJODZjSkCwyGcp1WFZJdonZ6hP.jpg",
     videoUrl: "17581",
     overview: "Hidden Sky Village launch surprise attack on Leaf Village using ancient flying fortress, force Naruto team confront enemy connected to Neji's past. Team must protect village, uncover truth behind old grudge.",
-    director: "Masahiko Murata",
+    director: "Hajime Kamegaki",
     cast: [
       "Junko Takeuchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue, Hidekatsu Shibata"
     ],
