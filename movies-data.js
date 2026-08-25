@@ -145,7 +145,7 @@ window._MOVIES_DATA = [
       "Crime"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9pKPTugulAt0EtH0g4gvJGffPSg.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/caBIySpwuFi2i7ynvHIlnxJLOdN.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/6c78xuvSoFLJkwlmx8Z2FGmMtzr.jpg",
     videoUrl: "1560520",
     overview: "Monster villain Bane destroy Arkham Asylum walls and release all dangerous criminals into Gotham. Exhausted Batman force himself past mental and physical limits to catch every escaped villain, leading to legendary brutal confrontation with Bane!",
     director: "Jeff Wamester",
