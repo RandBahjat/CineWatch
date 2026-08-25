@@ -11100,7 +11100,7 @@ window._MOVIES_DATA = [
     overview: "Boruto, Naruto's son, resent father for always busy being Hokage, never around. When new enemy attack during ninja tournament, Boruto must fight alongside father, learn what it really mean carry ninja legacy.",
     director: "Hiroyuki Yamashita",
     cast: [
-      "Junko Takeuchi, Nana Mizuki, Noriaki Sugiyama, Chie Nakamura, Kate Higgins"
+      "Yuko Sanpei, Junko Takeuchi, Kokoro Kikuchi, Noriaki Sugiyama, Chie Nakamura"
     ],
     trending: false,
     featured: false,
