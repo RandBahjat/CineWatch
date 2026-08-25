@@ -9810,7 +9810,7 @@ window._ANIME_DATA = [
           "Animation",
           "Action",
           "Adventure",
-          "Sci-Fi & Fantasy"
+          "Fantasy"
         ],
         poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xppeysfvDKVx775MFuH8Z9BlpMk.jpg",
         backdrop: "https://image.tmdb.org/t/p/original/mpsYIytXhDXjI9yYC1Fp1S3PxsS.jpg",
