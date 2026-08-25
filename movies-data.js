@@ -11113,7 +11113,7 @@ window._MOVIES_DATA = [
     year: 2012,
     rating: 7.6,
     age: "TV-14",
-    duration: "1h 35m",
+    duration: "1h 49m",
     genres: [
       "Action",
       "Animation",
