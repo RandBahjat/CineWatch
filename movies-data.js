@@ -11369,7 +11369,7 @@ window._MOVIES_DATA = [
     overview: "Three gunslinger — one good, one bad, one just plain ugly — chase after buried Confederate gold during Civil War. Alliance shift, betrayal pile up, all lead to legendary three-way standoff.",
     director: "Sergio Leone",
     cast: [
-      "Junko Takeuchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue, Hidekatsu Shibata"
+      "Clint Eastwood, Eli Wallach, Lee Van Cleef, Aldo Giuffrè, Luigi Pistilli"
     ],
     trending: false,
     featured: false,
