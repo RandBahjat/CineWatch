@@ -2485,7 +2485,7 @@ window._SERIES_DATA = [
             title: 'Gone Is the Illusion of Order'
           }
         ]
-      }
+      },
       {
         season: 2,
         episodes: [
