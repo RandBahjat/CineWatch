@@ -11162,7 +11162,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Naruto Shippuden the Movie",
+    title: "Naruto Shippuden the Movie: Blood Prison",
     type: "Movie",
     year: 2007,
     rating: 6.7,
