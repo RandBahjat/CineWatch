@@ -11356,7 +11356,7 @@ window._MOVIES_DATA = [
     year: 1966,
     rating: 8.8,
     age: "R",
-    duration: "1h 35m",
+    duration: "2h m",
     genres: [
       "Action",
       "Animation",
