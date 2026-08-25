@@ -11405,7 +11405,7 @@ window._MOVIES_DATA = [
     title: "A Walk Among the Tombstones",
     type: "Movie",
     year: 2014,
-    rating: 8.7,
+    rating: 6.5,
     age: "R",
     duration: "2h 25m",
     genres: [
