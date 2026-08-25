@@ -11341,7 +11341,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/w1JPid4Wx9awVpAxcgXFlNcCrUA.jpg",
     videoUrl: "18861",
     overview: "Naruto team assign guard spoiled young prince of Crescent Moon Kingdom, must escort him safely home through danger-fill journey. Face group of ninja hire kill prince, learn true meaning of courage along way.",
-    director: "Tensai Okamura",
+    director: "Toshiyuki Tsuru",
     cast: [
       "Junko Takeuchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue, Hidekatsu Shibata"
     ],
