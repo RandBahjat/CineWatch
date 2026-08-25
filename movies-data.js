@@ -279,7 +279,7 @@ window._MOVIES_DATA = [
     overview: "In 1970s Detroit, hard-working man John Miller fall in love with local gangster girl. Jealous mob boss framing John, sending him to prison for crime he no do. John break out of jail and hunt down criminals on brutal silent quest for absolute revenge. Movie got almost no spoken words, using rock music and raw action to tell story!",
     director: "Potsy Ponciroli",
     cast: [
-      "Souheila Yacoub (as Alice), Hunter Doohan (as Joseph), Luciane Buchanan (as Thya), Tandi Wright (as Susan), Erroll Shand (as Edgar), Maude Davey (as Polly)"
+      "Alan Ritchson, Shailene Woodley, Ben Foster, Pablo Schreiber, Ben McKenzie, Lionel Boyce"
     ],
     trending: false,
     featured: false,
