@@ -8578,22 +8578,22 @@ window._SERIES_DATA = [
           {
             episode: 6,
             title: 'The Dark Forest'
-          }
+          },
           {
             episode: 7,
             title: 'Happy Anniversary'
-          }
+          },
           {
             episode: 8,
             title: 'Tapping the Rudder'
-          }
+          },
           {
             episode: 9,
             title: 'Welcome to Kitty Hawk'
-          }
+          },
           {
             episode: 10,
-            title: 'The Dark Forest'
+            title: 'Secret of the Gnomon'
           }
         ]
       },
