@@ -11354,7 +11354,7 @@ window._MOVIES_DATA = [
     title: "The Good, the Bad and the Ugly",
     type: "Movie",
     year: 1966,
-    rating: 6.3,
+    rating: 8.8,
     age: "TV-14",
     duration: "1h 35m",
     genres: [
