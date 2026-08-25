@@ -2466,7 +2466,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 4,
-            title: 'The Man Who Would Be Bat'
+            title: 'The Choice of Failure'
           },
           {
             episode: 5,
