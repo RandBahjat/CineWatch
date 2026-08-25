@@ -11125,7 +11125,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/sgg7xDeobzw2hrJdVNX6JOaM5zj.jpg",
     videoUrl: "118406",
     overview: "Alternate world jutsu send Naruto, Sakura into parallel dimension where their life gone totally different — Naruto's parent alive, Sakura's dead. Both face masked villain, Tobi, learn appreciate world, family they actually have.",
-    director: "Hiroyuki Yamashita",
+    director: "Hayato Date",
     cast: [
       "Yuko Sanpei, Junko Takeuchi, Kokoro Kikuchi, Noriaki Sugiyama, Chie Nakamura"
     ],
