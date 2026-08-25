@@ -8437,7 +8437,7 @@ window._SERIES_DATA = [
   },
 
 {
-    title: 'Peaky Blinders',
+    title: 'Outer Banks',
     type: 'TV Show',
     year: 2020,
     rating: 7.5,
