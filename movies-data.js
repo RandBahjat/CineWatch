@@ -11382,7 +11382,7 @@ window._MOVIES_DATA = [
     year: 1990,
     rating: 8.7,
     age: "R",
-    duration: "2h 58m",
+    duration: "2h 25m",
     genres: [
       "Action",
       "Adventure",
