@@ -11390,7 +11390,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9OkCLM73MIU2CrKZbqiT8Ln1wY2.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/x1Ohy5LGhy67rRjbXUM1DNDAICA.jpg",
-    videoUrl: "429",
+    videoUrl: "769",
     overview: "Three gunslinger — one good, one bad, one just plain ugly — chase after buried Confederate gold during Civil War. Alliance shift, betrayal pile up, all lead to legendary three-way standoff.",
     director: "Sergio Leone",
     cast: [
