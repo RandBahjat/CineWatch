@@ -11377,9 +11377,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "The Good, the Bad and the Ugly",
+    title: "GoodFellas",
     type: "Movie",
-    year: 1966,
+    year: 1990,
     rating: 8.8,
     age: "R",
     duration: "2h 58m",
