@@ -11218,7 +11218,7 @@ window._MOVIES_DATA = [
   {
     title: "Naruto Shippuden the Movie: The Lost Tower",
     type: "Movie",
-    year: 2008,
+    year: 2010,
     rating: 6.8,
     age: "TV-14",
     duration: "1h 38m",
