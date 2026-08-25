@@ -4088,22 +4088,24 @@ async function initializeRatingSystem(movieId) {
   }
 
   try {
-    const res = await window.CW_API.request(`/ratings/${movieId}`, 'GET');
-
+    const stats = await window.CW_API.getRatingsStats(movieId);
+    
     if (badgeRating) {
-      if (res.average > 0) {
-        badgeRating.textContent = `${res.average.toFixed(1)} (${res.totalRatings})`;
+      if (stats.average > 0) {
+        badgeRating.textContent = `${stats.average.toFixed(1)} (${stats.totalRatings})`;
       } else {
         badgeRating.textContent = originalBadgeScore;
       }
     }
 
-    if (res.userRating) {
-      currentSavedRating = res.userRating;
+    const userRating = await window.CW_API.getUserRating(movieId);
+    if (userRating !== null) {
+      currentSavedRating = userRating;
+    } else {
+      currentSavedRating = 0;
     }
-
   } catch (err) {
-    console.warn('Failed to fetch community ratings (backend might be offline)', err);
+    console.warn('Failed to fetch ratings from Supabase:', err);
   }
 
   // Render the initial state (either 0 or what was fetched)
@@ -4134,7 +4136,8 @@ function buildStar(index, movieId, badgeRating) {
   });
 
   wrap.addEventListener('click', async (e) => {
-    if (!window.CW_API.getToken()) {
+    const user = await window.CW_API.getCurrentUser();
+    if (!user) {
       showToast('You must be signed in to rate!', 'error');
       openAuthModal();
       return;
@@ -4149,9 +4152,9 @@ function buildStar(index, movieId, badgeRating) {
     triggerPop();
 
     try {
-      const rateRes = await window.CW_API.request('/rate', 'POST', { movieId, rating: currentSavedRating });
+      const rateRes = await window.CW_API.postRating(movieId, currentSavedRating);
       if (rateRes.success) {
-        const fresh = await window.CW_API.request(`/ratings/${movieId}`, 'GET');
+        const fresh = await window.CW_API.getRatingsStats(movieId);
         if (badgeRating) {
           badgeRating.textContent = `${fresh.average.toFixed(1)} (${fresh.totalRatings})`;
         }
