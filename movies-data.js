@@ -11140,7 +11140,7 @@ window._MOVIES_DATA = [
     year: 2007,
     rating: 6.7,
     age: "PG-13",
-    duration: "1h 49m",
+    duration: "1h 34m",
     genres: [
       "Action",
       "Animation",
