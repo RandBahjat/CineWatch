@@ -11443,7 +11443,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/pbGveUC8mk0QRkdXpERPLbMFnrg.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/y9LrSzPDFubfzs03w8OzhqWgFiQ.jpg",
     videoUrl: "466081",
-    overview: "Ex-cop turn unlicensed private eye, Matt Scudder, hire by drug trafficker track down men who kidnap, kill his wife. Dig deep into dark case, uncover twisted pair of killer target family of criminal.",
+    overview: "Ex-con, ex-Special Forces Pete Koslow work as informant for FBI, go undercover infiltrate mob run drug operation inside prison. Deal go bad, Koslow frame for murder, must escape prison, clear name, protect family.",
     director: "Scott Frank",
     cast: [
       "Liam Neeson, Dan Stevens, David Harbour, Boyd Holbrook, Sebastian Roché"
