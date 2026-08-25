@@ -11300,7 +11300,7 @@ window._MOVIES_DATA = [
     title: "Naruto the Movie: Ninja Clash in the Land of Snow",
     type: "Movie",
     year: 2004,
-    rating: 6.3,
+    rating: 6.6,
     age: "TV-14",
     duration: "1h 37m",
     genres: [
