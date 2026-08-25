@@ -8602,7 +8602,7 @@ window._SERIES_DATA = [
         episodes: [
           {
             episode: 1,
-            title: 'The Noose'
+            title: 'The Enduro'
           },
           {
             episode: 2,
