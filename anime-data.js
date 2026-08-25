@@ -15,7 +15,7 @@ window._ANIME_DATA = [
       "Fantasy"
     ],
     "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/lMULbSFZNXUC87MqOZQ4SSV9DXI.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/8OQyL2g90Gz0o2X1QfFp9b4XQv0.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/oUmWLyeko3kYdUr8DBLIsxwcugl.jpg",
     "videoUrl": "236994",
     "animeSlug": "dragon-ball-daima",
     "overview": "Goku and company were living peaceful lives when they suddenly turned small due to a conspiracy! When they discover that the reason for this may lie in a world known as the \"Demon Realm,\" a mysterious young Majin named Glorio appears before them.",
