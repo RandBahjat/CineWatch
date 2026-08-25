@@ -11296,6 +11296,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Naruto the Movie: Legend of the Stone of Gelel",
+    type: "Movie",
+    year: 2005,
+    rating: 6.3,
+    age: "TV-14",
+    duration: "1h 37m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy",
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/itKMldwL6uhUZYO3X78NOFU4zzO.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/ldwWnaWoW8ziEFflimoraZouyvB.jpg",
+    videoUrl: "16910",
+    overview: "Naruto, team find ancient meteorite call Stone of Gelel, source of great power warlord want use conquer land, cheat death itself. Must stop him, protect young prince, prevent stone fall into wrong hand.",
+    director: "Toshiyuki Tsuru",
+    cast: [
+      "Junko Takeuchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue, Hidekatsu Shibata"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
