@@ -11311,7 +11311,7 @@ window._MOVIES_DATA = [
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/eUNRUeSNzm8LktH4HRaYiAReB6R.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/ldwWnaWoW8ziEFflimoraZouyvB.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/bW0Hr19Xo7LDnMmywXuH5YoTMY5.jpg",
     videoUrl: "16910",
     overview: "Naruto, team find ancient meteorite call Stone of Gelel, source of great power warlord want use conquer land, cheat death itself. Must stop him, protect young prince, prevent stone fall into wrong hand.",
     director: "Toshiyuki Tsuru",
