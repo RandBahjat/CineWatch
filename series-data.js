@@ -2556,7 +2556,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 8,
-            title: 'The Compass Points Home'
+            title: 'The Unraveling'
           }
         ]
       },
