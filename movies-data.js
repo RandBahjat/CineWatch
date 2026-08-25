@@ -11110,8 +11110,8 @@ window._MOVIES_DATA = [
   {
     title: "Road to Ninja: Naruto the Movie",
     type: "Movie",
-    year: 2015,
-    rating: 7.7,
+    year: 2012,
+    rating: 7.6,
     age: "PG",
     duration: "1h 35m",
     genres: [
