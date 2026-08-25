@@ -11054,7 +11054,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "One Piece Episode of Sabo: The Three Brothers' Bond - The Miraculous Reunion and the Inherited Will",
+    title: "The Last: Naruto the Movie",
     type: "Movie",
     year: 2015,
     rating: 7.3,
