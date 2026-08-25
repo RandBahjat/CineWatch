@@ -8610,7 +8610,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 3,
-            title: 'Blackbird'
+            title: 'The Lupine Corsairs'
           },
           {
             episode: 4,
