@@ -8441,7 +8441,7 @@ window._SERIES_DATA = [
     type: 'TV Show',
     year: 2020,
     rating: 7.5,
-    age: 'TV-PG',
+    age: 'TV-MA',
     duration: '1h',
     genres: [
       'Crime',
