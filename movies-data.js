@@ -11358,8 +11358,7 @@ window._MOVIES_DATA = [
     age: "R",
     duration: "2h 58m",
     genres: [
-      "",
-      "Animation",
+      "Action",
       "Adventure",
       "Fantasy",
 
