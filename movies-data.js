@@ -142,7 +142,7 @@ window._MOVIES_DATA = [
     genres: [
       "Action",
       "Animation",
-      "Fantasy"
+      "Crime"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
     backdrop: "odysseus-matt-damon-3840x2160-26432.jpg",
