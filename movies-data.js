@@ -11256,7 +11256,7 @@ window._MOVIES_DATA = [
       "Fantasy",
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6e2YvN1tQK4xQHlmy7GJTuXOt2u.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/pZzdFmztwmg0FUOVCMa7vReHhQN.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/hXTAuNHRfznJUY436DUemMmDZJX.jpg",
     videoUrl: "50723",
     overview: "Naruto get swept back in time twenty year, land in war torn era. Team up with young Minato, his future father, though not know it yet, must stop rogue ninja from changing history.",
