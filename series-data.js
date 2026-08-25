@@ -2559,7 +2559,7 @@ window._SERIES_DATA = [
             title: 'The Unraveling'
           }
         ]
-      },
+      }
     ]
   },
   {
