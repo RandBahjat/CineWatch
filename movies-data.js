@@ -11135,7 +11135,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Road to Ninja: Naruto the Movie",
+    title: "Naruto Shippuden the Movie",
     type: "Movie",
     year: 2012,
     rating: 7.6,
