@@ -2462,7 +2462,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 3,
-            title: 'Traction'
+            title: 'Bruise Like a Fist'
           },
           {
             episode: 4,
