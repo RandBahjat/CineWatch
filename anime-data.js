@@ -11184,7 +11184,7 @@ window._ANIME_DATA = [
           "Fantasy"
         ],
         poster: "https://image.tmdb.org/t/p/w600_and_h900_face/zAYRe2bJxpWTVrwwmBc00VFkAfV.jpg",
-        backdrop: "https://image.tmdb.org/t/p/original/2wETBntRtyMvA1333YyC2t6B0K4.jpg",
+        backdrop: "https://image.tmdb.org/t/p/original/7uHujbHkYBFwaRNiBeJ07mDdmyl.jpg",
         videoUrl: "31910",
         anilistId: 114,
         animeSlug: "naruto-shippuden",
