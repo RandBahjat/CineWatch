@@ -7727,8 +7727,8 @@ window._ANIME_DATA = [
       "Masako Nozawa, Ryō Horikawa, Yūko Minaguchi, Bin Shimada, Naoko Watanabe"
     ],
     tags: [
-      "martial arts",
-      "superhero",
+      "Animation",
+      "",
       "alien",
       "combat"
     ],
