@@ -2495,7 +2495,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 2,
-            title: 'The Beating'
+            title: 'I Love My Country'
           },
           {
             episode: 3,
