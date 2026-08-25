@@ -150,11 +150,7 @@ window._MOVIES_DATA = [
     overview: "Monster villain Bane destroy Arkham Asylum walls and release all dangerous criminals into Gotham. Exhausted Batman force himself past mental and physical limits to catch every escaped villain, leading to legendary brutal confrontation with Bane!",
     director: "Jeff Wamester",
     cast: [
-      "Matt Damon",
-      "Anne Hathaway",
-      "Tom Holland",
-      "Robert Pattinson",
-      "Charlize Theron"
+      Anson Mount, Michael Mando, Pablo Schreiber, Jack Giffin, Bruce Boxleitner, David Dastmalchian, Simon Templeman
     ],
     trending: true,
     featured: true,
