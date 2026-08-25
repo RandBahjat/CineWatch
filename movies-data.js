@@ -11420,7 +11420,7 @@ window._MOVIES_DATA = [
     overview: "Ex-cop turn unlicensed private eye, Matt Scudder, hire by drug trafficker track down men who kidnap, kill his wife. Dig deep into dark case, uncover twisted pair of killer target family of criminal.",
     director: "Scott Frank",
     cast: [
-      "Robert De Niro, Ray Liotta, Joe Pesci, Lorraine Bracco, Paul Sorvino"
+      "Liam Neeson, Dan Stevens, David Harbour, Boyd Holbrook, Sebastian Roché"
     ],
     trending: false,
     featured: false,
