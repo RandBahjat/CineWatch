@@ -11313,7 +11313,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/eUNRUeSNzm8LktH4HRaYiAReB6R.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/bW0Hr19Xo7LDnMmywXuH5YoTMY5.jpg",
     videoUrl: "16907",
-    overview: "Naruto, team find ancient meteorite call Stone of Gelel, source of great power warlord want use conquer land, cheat death itself. Must stop him, protect young prince, prevent stone fall into wrong hand.",
+    overview: "Naruto team hire guard actress on movie shoot, discover she secretly princess of Land of Snow. Must protect her from evil warlord try seize throne, control land's power source.",
     director: "Toshiyuki Tsuru",
     cast: [
       "Junko Takeuchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue, Hidekatsu Shibata"
