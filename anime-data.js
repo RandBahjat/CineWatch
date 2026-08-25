@@ -9820,11 +9820,7 @@ window._ANIME_DATA = [
         overview: "Naruto Uzumaki, young ninja with sealed nine-tailed fox spirit inside him, dream become strongest ninja, earn respect as Hokage, leader of his village. Chase acceptance, fight rival, grow strong through many battle, deep bond of friendship.",
         director: "Masashi Kishimoto",
         cast: [
-          "Junko Takeuchi",
-          "Chie Nakamura",
-          "Noriaki Sugiyama",
-          "Kazuhiko Inoue",
-          "Nana Mizuki"
+          Junko Takeuchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue, Hidekatsu Shibata
         ],
         trending: false,
         featured: false,
