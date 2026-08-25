@@ -11191,7 +11191,7 @@ window._MOVIES_DATA = [
   {
     title: "Naruto Shippuden the Movie: Bonds",
     type: "Movie",
-    year: 2011,
+    year: 2008,
     rating: 7.1,
     age: "TV-14",
     duration: "1h 48m",
