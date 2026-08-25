@@ -11364,7 +11364,7 @@ window._MOVIES_DATA = [
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/w1JPid4Wx9awVpAxcgXFlNcCrUA.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/mVl1EvEnYJnTQv71nksfneyF0Yd.jpg",
     videoUrl: "18861",
     overview: "Naruto team assign guard spoiled young prince of Crescent Moon Kingdom, must escort him safely home through danger-fill journey. Face group of ninja hire kill prince, learn true meaning of courage along way.",
     director: "Toshiyuki Tsuru",
