@@ -8456,7 +8456,7 @@ window._SERIES_DATA = [
     overview: 'Group of working-class teens called "Pogues" live in coastal North Carolina town. Lead kid John B search for missing father and stumble on clue to legendary $400 million hidden gold treasure. Pogues fight rich snob rivals "Kooks", corrupt law, and dangerous criminals while chasing legendary lost artifacts across world.',
     director: 'Josh Pate, Jonas Pate, Shannon Burke',
     cast: [
-      'Cillian Murphy, Paul Anderson, Sophie Rundle, Sam Neill, Helen McCrory, Tom Hardy, Steven Knight'
+      'Chase Stokes, Madelyn Cline, Madison Bailey, Jonathan Daviss, Rudy Pankow, Austin North, Drew Starkey, Carlacia Grant'
     ],
     trending: false,
     featured: false,
