@@ -7724,11 +7724,7 @@ window._ANIME_DATA = [
     "description": "After Majin Buu defeat, Goku, friend enjoy peace, but new threat emerge from beyond stars — god of destruction, powerful warrior from other universe, force Goku push past Super Saiyan into whole new level of power.",
     "director": "Kimitoshi Chioka",
     "cast": [
-      "Masako Nozawa",
-      "Ryou Horikawa",
-      "Hiromi Tsuru",
-      "Masakazu Morita",
-      "Naoko Watanabe"
+      Masako Nozawa, Ryō Horikawa, Yūko Minaguchi, Bin Shimada, Naoko Watanabe"
     ],
     "tags": [
       "martial arts",
