@@ -1908,7 +1908,7 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
-  
+
   {
     title: "Ted",
     type: "Movie",
@@ -1957,8 +1957,8 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
-  
-  
+
+
   {
     title: "Cars",
     type: "Movie",
@@ -2042,7 +2042,7 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
-  
+
   {
     title: "John Wick",
     type: "Movie",
@@ -2068,8 +2068,8 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
-  
-{
+
+  {
     title: "John Wick: Chapter 2",
     type: "Movie",
     year: 2017,
@@ -2147,7 +2147,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
 
-  
+
   {
     title: "Ghost Rider",
     type: "Movie",
@@ -2174,7 +2174,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
 
-{
+  {
     title: "Ghost Rider: Spirit of Vengeance",
     type: "Movie",
     year: 2011,
@@ -2431,7 +2431,7 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
-  
+
   {
     title: "Ant-Man and the Wasp ",
     type: "Movie",
@@ -2459,7 +2459,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
 
-{
+  {
     title: "Black Panther",
     type: "Movie",
     year: 2018,
@@ -11164,8 +11164,8 @@ window._MOVIES_DATA = [
   {
     title: "Naruto Shippuden the Movie: Blood Prison",
     type: "Movie",
-    year: 2007,
-    rating: 6.7,
+    year: 2011,
+    rating: 7.1,
     age: "PG-13",
     duration: "1h 34m",
     genres: [
