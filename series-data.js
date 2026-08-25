@@ -2486,6 +2486,43 @@ window._SERIES_DATA = [
           }
         ]
       }
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: 'Sacrificial Soldiers'
+          },
+          {
+            episode: 2,
+            title: 'The Beating'
+          },
+          {
+            episode: 3,
+            title: 'Bruise Like a Fist'
+          },
+          {
+            episode: 4,
+            title: 'The Choice of Failure'
+          },
+          {
+            episode: 5,
+            title: 'Truth Is the Shrewdest Lie'
+          },
+          {
+            episode: 6,
+            title: "The Lie Is the Truth"
+          },
+          {
+            episode: 7,
+            title: 'Wish the Fight Away'
+          },
+          {
+            episode: 8,
+            title: 'Gone Is the Illusion of Order'
+          }
+        ]
+      }
     ]
   },
   {
