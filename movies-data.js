@@ -11297,7 +11297,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Naruto the Movie: Legend of the Stone of Gelel",
+    title: "Naruto the Movie: Ninja Clash in the Land of Snow",
     type: "Movie",
     year: 2005,
     rating: 6.3,
