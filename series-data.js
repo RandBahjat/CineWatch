@@ -2426,7 +2426,7 @@ window._SERIES_DATA = [
     ]
   },
   {
-    title: 'Lucky',
+    title: 'Lioness',
     type: 'TV Show',
     year: 2026,
     rating: 6.7,
