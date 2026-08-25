@@ -4,7 +4,7 @@
 
 window._MOVIES_DATA = [
   {
-    title: "The Invite",
+    title: "Mutiny",
     type: "Movie",
     year: 2026,
     rating: 7.8,
