@@ -11275,7 +11275,7 @@ window._MOVIES_DATA = [
     year: 2005,
     rating: 6.3,
     age: "TV-14",
-    duration: "1h 35m",
+    duration: "1h 37m",
     genres: [
       "Action",
       "Animation",
