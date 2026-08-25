@@ -2540,7 +2540,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 4,
-            title: 'Five Hundred Children'
+            title: 'Murder Hornets'
           },
           {
             episode: 5,
