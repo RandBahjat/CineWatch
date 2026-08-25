@@ -8675,12 +8675,12 @@ window._SERIES_DATA = [
           }
           {
             episode: 8,
-            title: 'The Runway Part 2'
+            title: 'Th,e Runway Part 2'
           }
           {
             episode: 9,
             title: 'Arise, Arise'
-          }
+          },
           {
             episode: 10,
             title: 'The Storm and What Came After
