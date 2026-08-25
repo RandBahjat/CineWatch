@@ -2519,7 +2519,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 8,
-            title: 'Gone Is the Illusion of Order'
+            title: 'The Compass Points Home'
           }
         ]
       }
