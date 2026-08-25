@@ -3932,11 +3932,11 @@ function updateIframeServer() {
 
   let newUrl = '';
   if (isAnime) {
-    // Cineby server for Anime
+    // ZXCStream server for Anime
     if (data.type === 'tv') {
-      newUrl = `https://cineby.in/player/tv/${data.id}/${data.season}/${data.episode}`;
+      newUrl = `https://player.zxcstream.xyz/embed/tv/${data.id}/${data.season}/${data.episode}`;
     } else {
-      newUrl = `https://cineby.in/player/movie/${data.id}`;
+      newUrl = `https://player.zxcstream.xyz/embed/movie/${data.id}`;
     }
   } else if (data.type === 'tv') {
     // Restore vaplayer.ru for regular TV series
