@@ -7706,711 +7706,711 @@ window._ANIME_DATA = [
     ]
   },
   {
-    "title": "Dragon Ball Super",
-    "type": "TV Show",
-    "isAnime": true,
-    "year": 2015,
-    "rating": 7.8,
-    "age": "TV-14",
-    "duration": "24m",
-    "genres": [
+    title: "Dragon Ball Super",
+    type: "TV Show",
+    isAnime: true,
+    year: 2015,
+    rating: 7.8,
+    age: "TV-14",
+    duration: "24m",
+    genres: [
       "Animation",
       "Action",
       "Adventure",
       "Fantasy"
     ],
-    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/qEUrbXJ2qt4Rg84Btlx4STOhgte.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/j6RVYpovoPsk269DANJkAerHpzg.jpg",
-    "description": "After Majin Buu defeat, Goku, friend enjoy peace, but new threat emerge from beyond stars — god of destruction, powerful warrior from other universe, force Goku push past Super Saiyan into whole new level of power.",
-    "director": "Kimitoshi Chioka",
-    "cast": [
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qEUrbXJ2qt4Rg84Btlx4STOhgte.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/j6RVYpovoPsk269DANJkAerHpzg.jpg",
+    overview: "After Majin Buu defeat, Goku, friend enjoy peace, but new threat emerge from beyond stars — god of destruction, powerful warrior from other universe, force Goku push past Super Saiyan into whole new level of power.",
+    director: "Kimitoshi Chioka",
+    cast: [
       "Masako Nozawa, Ryō Horikawa, Yūko Minaguchi, Bin Shimada, Naoko Watanabe"
     ],
-    "tags": [
+    tags: [
       "martial arts",
       "superhero",
       "alien",
       "combat"
     ],
-    "id": "62715",
-    "seasons": [
+    videoUrl: "62715",
+    seasons: [
       {
-        "season": 1,
-        "episodes": [
+        season: 1,
+        episodes: [
           {
-            "episode": 1,
-            "title": "The Peace Prize. Who'll Get the 100 Million Zeny!",
-            "duration": "23m"
+            episode: 1,
+            title: "The Peace Prize. Who'll Get the 100 Million Zeny!",
+            duration: "23m"
           },
           {
-            "episode": 2,
-            "title": "To the Promised Resort! Vegeta's Family Vacation?!",
-            "duration": "23m"
+            episode: 2,
+            title: "To the Promised Resort! Vegeta's Family Vacation?!",
+            duration: "23m"
           },
           {
-            "episode": 3,
-            "title": "Where's the Rest of My Dream?! Find the Super Saiyan God!",
-            "duration": "23m"
+            episode: 3,
+            title: "Where's the Rest of My Dream?! Find the Super Saiyan God!",
+            duration: "23m"
           },
           {
-            "episode": 4,
-            "title": "Aim for the Dragon Balls! The Pilaf Gang's Master Plan!",
-            "duration": "23m"
+            episode: 4,
+            title: "Aim for the Dragon Balls! The Pilaf Gang's Master Plan!",
+            duration: "23m"
           },
           {
-            "episode": 5,
-            "title": "A Battle on Kaio's Planet! Goku vs God of Destruction Beerus",
-            "duration": "23m"
+            episode: 5,
+            title: "A Battle on Kaio's Planet! Goku vs God of Destruction Beerus",
+            duration: "23m"
           },
           {
-            "episode": 6,
-            "title": "Don't Anger the God of Destruction! A Tense Birthday Party",
-            "duration": "23m"
+            episode: 6,
+            title: "Don't Anger the God of Destruction! A Tense Birthday Party",
+            duration: "23m"
           },
           {
-            "episode": 7,
-            "title": "How Dare You Hurt My Bulma?! Vegeta's Total, Furious Change?!",
-            "duration": "23m"
+            episode: 7,
+            title: "How Dare You Hurt My Bulma?! Vegeta's Total, Furious Change?!",
+            duration: "23m"
           },
           {
-            "episode": 8,
-            "title": "Goku Arrives! A Last Chance From Beerus-sama?!",
-            "duration": "23m"
+            episode: 8,
+            title: "Goku Arrives! A Last Chance From Beerus-sama?!",
+            duration: "23m"
           },
           {
-            "episode": 9,
-            "title": "Sorry for the Wait, Beerus-sama. The Super Saiyan God Is Finally Born!",
-            "duration": "23m"
+            episode: 9,
+            title: "Sorry for the Wait, Beerus-sama. The Super Saiyan God Is Finally Born!",
+            duration: "23m"
           },
           {
-            "episode": 10,
-            "title": "Show Me, Goku! The Power of Super Saiyan God!!",
-            "duration": "23m"
+            episode: 10,
+            title: "Show Me, Goku! The Power of Super Saiyan God!!",
+            duration: "23m"
           },
           {
-            "episode": 11,
-            "title": "Let's Keep Going Beerus-Sama! The Battle Of Gods Continues!",
-            "duration": "23m"
+            episode: 11,
+            title: "Let's Keep Going Beerus-Sama! The Battle Of Gods Continues!",
+            duration: "23m"
           },
           {
-            "episode": 12,
-            "title": "The Universe Crumbles?! Clash! The God of Destruction vs. Super Saiyan God!",
-            "duration": "23m"
+            episode: 12,
+            title: "The Universe Crumbles?! Clash! The God of Destruction vs. Super Saiyan God!",
+            duration: "23m"
           },
           {
-            "episode": 13,
-            "title": "Goku, Go Surpass Super Saiyan God!",
-            "duration": "23m"
+            episode: 13,
+            title: "Goku, Go Surpass Super Saiyan God!",
+            duration: "23m"
           },
           {
-            "episode": 14,
-            "title": "This is Every Last Bit of My Power! The Battle of Gods Concludes!",
-            "duration": "23m"
+            episode: 14,
+            title: "This is Every Last Bit of My Power! The Battle of Gods Concludes!",
+            duration: "23m"
           }
         ]
       },
       {
-        "season": 2,
-        "episodes": [
+        season: 2,
+        episodes: [
           {
-            "episode": 1,
-            "title": "Heroic Satan, Cause a Miracle! A Challenge From Outer Space!!",
-            "duration": "23m"
+            episode: 1,
+            title: "Heroic Satan, Cause a Miracle! A Challenge From Outer Space!!",
+            duration: "23m"
           },
           {
-            "episode": 2,
-            "title": "Vegeta Becomes a Pupil?! Take Down Whis!",
-            "duration": "23m"
+            episode: 2,
+            title: "Vegeta Becomes a Pupil?! Take Down Whis!",
+            duration: "23m"
           },
           {
-            "episode": 3,
-            "title": "Pan is Born! And Goku Goes Off on a Training Journey!?",
-            "duration": "23m"
+            episode: 3,
+            title: "Pan is Born! And Goku Goes Off on a Training Journey!?",
+            duration: "23m"
           },
           {
-            "episode": 4,
-            "title": "I've Come Too! Training Begins on Beerus' Planet!",
-            "duration": "23m"
+            episode: 4,
+            title: "I've Come Too! Training Begins on Beerus' Planet!",
+            duration: "23m"
           },
           {
-            "episode": 5,
-            "title": "Despair Once More! Revival of the Evil Emperor, Freeza!",
-            "duration": "23m"
+            episode: 5,
+            title: "Despair Once More! Revival of the Evil Emperor, Freeza!",
+            duration: "23m"
           },
           {
-            "episode": 6,
-            "title": "Warning from Jaco! Freeza and 1,000 Soldiers are Fast Approaching!",
-            "duration": "23m"
+            episode: 6,
+            title: "Warning from Jaco! Freeza and 1,000 Soldiers are Fast Approaching!",
+            duration: "23m"
           },
           {
-            "episode": 7,
-            "title": "The Revenge Begins! The Freeza Army's Malice Strikes Gohan!",
-            "duration": "23m"
+            episode: 7,
+            title: "The Revenge Begins! The Freeza Army's Malice Strikes Gohan!",
+            duration: "23m"
           },
           {
-            "episode": 8,
-            "title": "Change! An Impossible Revival! The Name's Ginyu!!",
-            "duration": "23m"
+            episode: 8,
+            title: "Change! An Impossible Revival! The Name's Ginyu!!",
+            duration: "23m"
           },
           {
-            "episode": 9,
-            "title": "The Earth and Gohan in Dire Peril! Come Quick, Son Goku!",
-            "duration": "23m"
+            episode: 9,
+            title: "The Earth and Gohan in Dire Peril! Come Quick, Son Goku!",
+            duration: "23m"
           },
           {
-            "episode": 10,
-            "title": "Clash! Freeza vs. Son Goku! This is the Fruit of My Training!",
-            "duration": "23m"
+            episode: 10,
+            title: "Clash! Freeza vs. Son Goku! This is the Fruit of My Training!",
+            duration: "23m"
           },
           {
-            "episode": 11,
-            "title": "An All-Out Battle! The Vengeful Golden Freeza",
-            "duration": "23m"
+            episode: 11,
+            title: "An All-Out Battle! The Vengeful Golden Freeza",
+            duration: "23m"
           },
           {
-            "episode": 12,
-            "title": "Amidst the Crisis, a Shot at Victory Appears! Son Goku's Counterattack Begins!",
-            "duration": "23m"
+            episode: 12,
+            title: "Amidst the Crisis, a Shot at Victory Appears! Son Goku's Counterattack Begins!",
+            duration: "23m"
           },
           {
-            "episode": 13,
-            "title": "The Earth Explodes?! A Climatic Kamehameha",
-            "duration": "23m"
+            episode: 13,
+            title: "The Earth Explodes?! A Climatic Kamehameha",
+            duration: "23m"
           }
         ]
       },
       {
-        "season": 3,
-        "episodes": [
+        season: 3,
+        episodes: [
           {
-            "episode": 1,
-            "title": "The 6th Universe's God of Destruction — His Name's Champa",
-            "duration": "23m"
+            episode: 1,
+            title: "The 6th Universe's God of Destruction — His Name's Champa",
+            duration: "23m"
           },
           {
-            "episode": 2,
-            "title": "It's Settled: We're Holding a Martial Arts Match! The Team Captain's Even Stronger Than Goku",
-            "duration": "23m"
+            episode: 2,
+            title: "It's Settled: We're Holding a Martial Arts Match! The Team Captain's Even Stronger Than Goku",
+            duration: "23m"
           },
           {
-            "episode": 3,
-            "title": "Rehearsing for the \\\"Martial Arts Tournament\\\" Who Are the Two Remaining Members?!",
-            "duration": "23m"
+            episode: 3,
+            title: "Rehearsing for the \\\"Martial Arts Tournament\\\" Who Are the Two Remaining Members?!",
+            duration: "23m"
           },
           {
-            "episode": 4,
-            "title": "To Lord Zuno! Ask About the Location of the Super Dragon Balls!",
-            "duration": "23m"
+            episode: 4,
+            title: "To Lord Zuno! Ask About the Location of the Super Dragon Balls!",
+            duration: "23m"
           },
           {
-            "episode": 5,
-            "title": "The Match Begins! Everyone Head to the \\\"Nameless Planet\\\"!",
-            "duration": "23m"
+            episode: 5,
+            title: "The Match Begins! Everyone Head to the \\\"Nameless Planet\\\"!",
+            duration: "23m"
           },
           {
-            "episode": 6,
-            "title": "Be Surprised, Universe 6! This is Super Saiyan Son Goku!",
-            "duration": "23m"
+            episode: 6,
+            title: "Be Surprised, Universe 6! This is Super Saiyan Son Goku!",
+            duration: "23m"
           },
           {
-            "episode": 7,
-            "title": "Piccolo vs Frost — Bet Everything on the Makankosappo!",
-            "duration": "23m"
+            episode: 7,
+            title: "Piccolo vs Frost — Bet Everything on the Makankosappo!",
+            duration: "23m"
           },
           {
-            "episode": 8,
-            "title": "Turn Anger into Power! Vegeta's All-Out Battle",
-            "duration": "23m"
+            episode: 8,
+            title: "Turn Anger into Power! Vegeta's All-Out Battle",
+            duration: "23m"
           },
           {
-            "episode": 9,
-            "title": "An Unexpectedly Tough Foe! Vegeta's Explosion of Rage!",
-            "duration": "23m"
+            episode: 9,
+            title: "An Unexpectedly Tough Foe! Vegeta's Explosion of Rage!",
+            duration: "23m"
           },
           {
-            "episode": 10,
-            "title": "Don't Forget your Saiyan Pride! Vegeta vs the Saiyan of Universe 6",
-            "duration": "23m"
+            episode: 10,
+            title: "Don't Forget your Saiyan Pride! Vegeta vs the Saiyan of Universe 6",
+            duration: "23m"
           },
           {
-            "episode": 11,
-            "title": "The Last of Universe 6's Warriors! Meet the Strongest Man, Hit!",
-            "duration": "23m"
+            episode: 11,
+            title: "The Last of Universe 6's Warriors! Meet the Strongest Man, Hit!",
+            duration: "23m"
           },
           {
-            "episode": 12,
-            "title": "A Fully-Developed 'Time-Skip' Counterattack?! Is It Coming?! Goku's New Technique!",
-            "duration": "23m"
+            episode: 12,
+            title: "A Fully-Developed 'Time-Skip' Counterattack?! Is It Coming?! Goku's New Technique!",
+            duration: "23m"
           },
           {
-            "episode": 13,
-            "title": "Conclusion at Last! Is Beerus the Winner? Or is it Champa?",
-            "duration": "23m"
+            episode: 13,
+            title: "Conclusion at Last! Is Beerus the Winner? Or is it Champa?",
+            duration: "23m"
           },
           {
-            "episode": 14,
-            "title": "Come Forth, Dragon of the Gods, and Grant My Wish Pretty Peas!",
-            "duration": "23m"
+            episode: 14,
+            title: "Come Forth, Dragon of the Gods, and Grant My Wish Pretty Peas!",
+            duration: "23m"
           },
           {
-            "episode": 15,
-            "title": "The Tumultuous Victory Feast! A Showdown At Last?! Monaka vs Son Goku",
-            "duration": "23m"
+            episode: 15,
+            title: "The Tumultuous Victory Feast! A Showdown At Last?! Monaka vs Son Goku",
+            duration: "23m"
           },
           {
-            "episode": 16,
-            "title": "Struggling to Take Care of Pan",
-            "duration": "23m"
+            episode: 16,
+            title: "Struggling to Take Care of Pan",
+            duration: "23m"
           },
           {
-            "episode": 17,
-            "title": "Secret of the Unleashed Superhuman Water",
-            "duration": "23m"
+            episode: 17,
+            title: "Secret of the Unleashed Superhuman Water",
+            duration: "23m"
           },
           {
-            "episode": 18,
-            "title": "The Amazing Copy-Vegeta!",
-            "duration": "23m"
+            episode: 18,
+            title: "The Amazing Copy-Vegeta!",
+            duration: "23m"
           },
           {
-            "episode": 19,
-            "title": "Goku vs. Copy-Vegeta! Who will Prevail!?",
-            "duration": "23m"
+            episode: 19,
+            title: "Goku vs. Copy-Vegeta! Who will Prevail!?",
+            duration: "23m"
           }
         ]
       },
       {
-        "season": 4,
-        "episodes": [
+        season: 4,
+        episodes: [
           {
-            "episode": 1,
-            "title": "An SOS from the Future! A Dark New Enemy Emerges!!",
-            "duration": "23m"
+            episode: 1,
+            title: "An SOS from the Future! A Dark New Enemy Emerges!!",
+            duration: "23m"
           },
           {
-            "episode": 2,
-            "title": "Hope Again!! Trunks Wakes Up in the Present!",
-            "duration": "23m"
+            episode: 2,
+            title: "Hope Again!! Trunks Wakes Up in the Present!",
+            duration: "23m"
           },
           {
-            "episode": 3,
-            "title": "A Message from the Future Goku Black Invades!",
-            "duration": "23m"
+            episode: 3,
+            title: "A Message from the Future Goku Black Invades!",
+            duration: "23m"
           },
           {
-            "episode": 4,
-            "title": "Goku VS Black! The Road Towards The Sealed Future",
-            "duration": "23m"
+            episode: 4,
+            title: "Goku VS Black! The Road Towards The Sealed Future",
+            duration: "23m"
           },
           {
-            "episode": 5,
-            "title": "The Feelings that Surpass Time Trunks and Mai",
-            "duration": "23m"
+            episode: 5,
+            title: "The Feelings that Surpass Time Trunks and Mai",
+            duration: "23m"
           },
           {
-            "episode": 6,
-            "title": "Master and Student Reunited Son Gohan and \\\"Future\\\" Trunks",
-            "duration": "23m"
+            episode: 6,
+            title: "Master and Student Reunited Son Gohan and \\\"Future\\\" Trunks",
+            duration: "23m"
           },
           {
-            "episode": 7,
-            "title": "Expose Black's True Identity! To the Kaioshin Realm of Universe 10",
-            "duration": "23m"
+            episode: 7,
+            title: "Expose Black's True Identity! To the Kaioshin Realm of Universe 10",
+            duration: "23m"
           },
           {
-            "episode": 8,
-            "title": "He Who Carries Saiyan Blood Trunks' Determination",
-            "duration": "23m"
+            episode: 8,
+            title: "He Who Carries Saiyan Blood Trunks' Determination",
+            duration: "23m"
           },
           {
-            "episode": 9,
-            "title": "I Want to Meet Son Goku - A Call from Zenō-sama",
-            "duration": "23m"
+            episode: 9,
+            title: "I Want to Meet Son Goku - A Call from Zenō-sama",
+            duration: "23m"
           },
           {
-            "episode": 10,
-            "title": "Goku Black Rematch! The Appearance of Super Saiyan Rose!!",
-            "duration": "23m"
+            episode: 10,
+            title: "Goku Black Rematch! The Appearance of Super Saiyan Rose!!",
+            duration: "23m"
           },
           {
-            "episode": 11,
-            "title": "God with Invulnerable Body Zamasu's Advent",
-            "duration": "23m"
+            episode: 11,
+            title: "God with Invulnerable Body Zamasu's Advent",
+            duration: "23m"
           },
           {
-            "episode": 12,
-            "title": "Zamasu and Black The Mystery of the Two Deepens",
-            "duration": "23m"
+            episode: 12,
+            title: "Zamasu and Black The Mystery of the Two Deepens",
+            duration: "23m"
           },
           {
-            "episode": 13,
-            "title": "Protect the Kaioshin Gowasu Destroy Zamasu!",
-            "duration": "23m"
+            episode: 13,
+            title: "Protect the Kaioshin Gowasu Destroy Zamasu!",
+            duration: "23m"
           },
           {
-            "episode": 14,
-            "title": "To The Future Once Again Goku Black's Identity Revealed",
-            "duration": "23m"
+            episode: 14,
+            title: "To The Future Once Again Goku Black's Identity Revealed",
+            duration: "23m"
           },
           {
-            "episode": 15,
-            "title": "Zamasu's Ambition The 'Human Elimination Plan' is Divulged",
-            "duration": "23m"
+            episode: 15,
+            title: "Zamasu's Ambition The 'Human Elimination Plan' is Divulged",
+            duration: "23m"
           },
           {
-            "episode": 16,
-            "title": "I Will Protect The World! Trunks Angry Super Power Explosion!!",
-            "duration": "23m"
+            episode: 16,
+            title: "I Will Protect The World! Trunks Angry Super Power Explosion!!",
+            duration: "23m"
           },
           {
-            "episode": 17,
-            "title": "Don't Defile the Saiyan Cells! The Curtain Rises on Vegeta's Battle!!",
-            "duration": "23m"
+            episode: 17,
+            title: "Don't Defile the Saiyan Cells! The Curtain Rises on Vegeta's Battle!!",
+            duration: "23m"
           },
           {
-            "episode": 18,
-            "title": "Praise and Adore Him! The Explosive Birth of Merged Zamasu!!",
-            "duration": "23m"
+            episode: 18,
+            title: "Praise and Adore Him! The Explosive Birth of Merged Zamasu!!",
+            duration: "23m"
           },
           {
-            "episode": 19,
-            "title": "Final Judgment?! The Supreme God's Ultimate Power",
-            "duration": "23m"
+            episode: 19,
+            title: "Final Judgment?! The Supreme God's Ultimate Power",
+            duration: "23m"
           },
           {
-            "episode": 20,
-            "title": "One Last, Great Comeback! Here's Vegetto!",
-            "duration": "23m"
+            episode: 20,
+            title: "One Last, Great Comeback! Here's Vegetto!",
+            duration: "23m"
           },
           {
-            "episode": 21,
-            "title": "A Visit from the Omni-King! Bye-Bye Zamasu!",
-            "duration": "23m"
+            episode: 21,
+            title: "A Visit from the Omni-King! Bye-Bye Zamasu!",
+            duration: "23m"
           },
           {
-            "episode": 22,
-            "title": "Come Forth, Shenlong! Whose Wish Shall Be Granted?!",
-            "duration": "23m"
+            episode: 22,
+            title: "Come Forth, Shenlong! Whose Wish Shall Be Granted?!",
+            duration: "23m"
           },
           {
-            "episode": 23,
-            "title": "Goku vs Arale! The Earth Comes to an End Due to their Battle?",
-            "duration": "23m"
+            episode: 23,
+            title: "Goku vs Arale! The Earth Comes to an End Due to their Battle?",
+            duration: "23m"
           },
           {
-            "episode": 24,
-            "title": "Challenge from Champa! Let's Fight in Baseball!",
-            "duration": "23m"
+            episode: 24,
+            title: "Challenge from Champa! Let's Fight in Baseball!",
+            duration: "23m"
           },
           {
-            "episode": 25,
-            "title": "Kill Goku! Assassination Order That Must Be Performed",
-            "duration": "23m"
+            episode: 25,
+            title: "Kill Goku! Assassination Order That Must Be Performed",
+            duration: "23m"
           },
           {
-            "episode": 26,
-            "title": "\\\"Will There Be a Counterattack?! The Invisible Killing Strike!!\\\"",
-            "duration": "23m"
+            episode: 26,
+            title: "\\\"Will There Be a Counterattack?! The Invisible Killing Strike!!\\\"",
+            duration: "23m"
           },
           {
-            "episode": 27,
-            "title": "Gohan Gets Made Into a Movie?!",
-            "duration": "23m"
+            episode: 27,
+            title: "Gohan Gets Made Into a Movie?!",
+            duration: "23m"
           },
           {
-            "episode": 28,
-            "title": "For The Sake of Which He Loves!",
-            "duration": "23m"
+            episode: 28,
+            title: "For The Sake of Which He Loves!",
+            duration: "23m"
           },
           {
-            "episode": 29,
-            "title": "Goku And Krillin Back To The Old Training Grounds",
-            "duration": "23m"
+            episode: 29,
+            title: "Goku And Krillin Back To The Old Training Grounds",
+            duration: "23m"
           },
           {
-            "episode": 30,
-            "title": "Beat The Fearsome Foes! Krillin's Fighting Spirit Returns!",
-            "duration": "23m"
+            episode: 30,
+            title: "Beat The Fearsome Foes! Krillin's Fighting Spirit Returns!",
+            duration: "23m"
           }
         ]
       },
       {
-        "season": 5,
-        "episodes": [
+        season: 5,
+        episodes: [
           {
-            "episode": 1,
-            "title": "Let's Do It, Omni-King! The Universe's Greatest Martial Arts Tournament!!",
-            "duration": "23m"
+            episode: 1,
+            title: "Let's Do It, Omni-King! The Universe's Greatest Martial Arts Tournament!!",
+            duration: "23m"
           },
           {
-            "episode": 2,
-            "title": "The Gods of Every Universe in Shock?! Losers Erased in the Tournament of Power",
-            "duration": "23m"
+            episode: 2,
+            title: "The Gods of Every Universe in Shock?! Losers Erased in the Tournament of Power",
+            duration: "23m"
           },
           {
-            "episode": 3,
-            "title": "Universe 9's Kicker Basil vs Universe 7's Majin Buu!!",
-            "duration": "23m"
+            episode: 3,
+            title: "Universe 9's Kicker Basil vs Universe 7's Majin Buu!!",
+            duration: "23m"
           },
           {
-            "episode": 4,
-            "title": "Awaken Your Sleeping Battle Spirit! Son Gohan's Fight!!",
-            "duration": "23m"
+            episode: 4,
+            title: "Awaken Your Sleeping Battle Spirit! Son Gohan's Fight!!",
+            duration: "23m"
           },
           {
-            "episode": 5,
-            "title": "Crusher Bergamo vs. Son Goku! Which Has Sky-High Strength?!",
-            "duration": "23m"
+            episode: 5,
+            title: "Crusher Bergamo vs. Son Goku! Which Has Sky-High Strength?!",
+            duration: "23m"
           },
           {
-            "episode": 6,
-            "title": "The Righteous Warrior Toppo Bursts In",
-            "duration": "23m"
+            episode: 6,
+            title: "The Righteous Warrior Toppo Bursts In",
+            duration: "23m"
           },
           {
-            "episode": 7,
-            "title": "Forming the Universe 7 Representative Team",
-            "duration": "23m"
+            episode: 7,
+            title: "Forming the Universe 7 Representative Team",
+            duration: "23m"
           },
           {
-            "episode": 8,
-            "title": "Son Goku the Talent Scout — Inviting Kuririn and No. 18",
-            "duration": "23m"
+            episode: 8,
+            title: "Son Goku the Talent Scout — Inviting Kuririn and No. 18",
+            duration: "23m"
           },
           {
-            "episode": 9,
-            "title": "The Universes Begin to Make Their Moves: Their Individual Motives",
-            "duration": "23m"
+            episode: 9,
+            title: "The Universes Begin to Make Their Moves: Their Individual Motives",
+            duration: "23m"
           },
           {
-            "episode": 10,
-            "title": "Trading Blows for the First Time! Android N.17 vs Son Goku!",
-            "duration": "23m"
+            episode: 10,
+            title: "Trading Blows for the First Time! Android N.17 vs Son Goku!",
+            duration: "23m"
           },
           {
-            "episode": 11,
-            "title": "Hunt the Poachers! Goku and N.17's Joint Battle!",
-            "duration": "23m"
+            episode: 11,
+            title: "Hunt the Poachers! Goku and N.17's Joint Battle!",
+            duration: "23m"
           },
           {
-            "episode": 12,
-            "title": "Gohan and Piccolo: The Master and Disciple's Intense Training to the Limit!",
-            "duration": "23m"
+            episode: 12,
+            title: "Gohan and Piccolo: The Master and Disciple's Intense Training to the Limit!",
+            duration: "23m"
           },
           {
-            "episode": 13,
-            "title": "A Mysterious Beauty Appears! Mistery of the Tenshin-Style Dojo?!",
-            "duration": "23m"
+            episode: 13,
+            title: "A Mysterious Beauty Appears! Mistery of the Tenshin-Style Dojo?!",
+            duration: "23m"
           },
           {
-            "episode": 14,
-            "title": "Facing the Wall that Must be Overcome! Goku vs Gohan",
-            "duration": "23m"
+            episode: 14,
+            title: "Facing the Wall that Must be Overcome! Goku vs Gohan",
+            duration: "23m"
           },
           {
-            "episode": 15,
-            "title": "Which Universe Will Survive?! The Strongest Warriors Are Gathering!!",
-            "duration": "23m"
+            episode: 15,
+            title: "Which Universe Will Survive?! The Strongest Warriors Are Gathering!!",
+            duration: "23m"
           },
           {
-            "episode": 16,
-            "title": "Emergency Development! The Incomplete Ten Members!!",
-            "duration": "23m"
+            episode: 16,
+            title: "Emergency Development! The Incomplete Ten Members!!",
+            duration: "23m"
           },
           {
-            "episode": 17,
-            "title": "You're the 10th Warrior! Goku Visits Freeza!",
-            "duration": "23m"
+            episode: 17,
+            title: "You're the 10th Warrior! Goku Visits Freeza!",
+            duration: "23m"
           },
           {
-            "episode": 18,
-            "title": "The Emperor of Evil Returns! A Reception of Mysterious Assassins?!",
-            "duration": "23m"
+            episode: 18,
+            title: "The Emperor of Evil Returns! A Reception of Mysterious Assassins?!",
+            duration: "23m"
           },
           {
-            "episode": 19,
-            "title": "The Worst! The Most Evil! Frieza's Rampage!!",
-            "duration": "23m"
+            episode: 19,
+            title: "The Worst! The Most Evil! Frieza's Rampage!!",
+            duration: "23m"
           },
           {
-            "episode": 20,
-            "title": "The Time Is Here! To The World Of Void For The Fate Of The Universe!!",
-            "duration": "23m"
+            episode: 20,
+            title: "The Time Is Here! To The World Of Void For The Fate Of The Universe!!",
+            duration: "23m"
           },
           {
-            "episode": 21,
-            "title": "Survive! The Tournament of Power Begins at Last!!",
-            "duration": "23m"
+            episode: 21,
+            title: "Survive! The Tournament of Power Begins at Last!!",
+            duration: "23m"
           },
           {
-            "episode": 22,
-            "title": "Oh, Uncertainty! A Universe Despairs!!",
-            "duration": "23m"
+            episode: 22,
+            title: "Oh, Uncertainty! A Universe Despairs!!",
+            duration: "23m"
           },
           {
-            "episode": 23,
-            "title": "Show Them! Krillin's True Power!!",
-            "duration": "23m"
+            episode: 23,
+            title: "Show Them! Krillin's True Power!!",
+            duration: "23m"
           },
           {
-            "episode": 24,
-            "title": "The Berserker Awakens!",
-            "duration": "23m"
+            episode: 24,
+            title: "The Berserker Awakens!",
+            duration: "23m"
           },
           {
-            "episode": 25,
-            "title": "The Warrior of Justice Closes In!",
-            "duration": "23m"
+            episode: 25,
+            title: "The Warrior of Justice Closes In!",
+            duration: "23m"
           },
           {
-            "episode": 26,
-            "title": "The Power of Love Explodes?! Universe 2's Little Witch Warriors!!",
-            "duration": "23m"
+            episode: 26,
+            title: "The Power of Love Explodes?! Universe 2's Little Witch Warriors!!",
+            duration: "23m"
           },
           {
-            "episode": 27,
-            "title": "Gohan be Ruthless! The Showdown with Universe 10",
-            "duration": "23m"
+            episode: 27,
+            title: "Gohan be Ruthless! The Showdown with Universe 10",
+            duration: "23m"
           },
           {
-            "episode": 28,
-            "title": "A Faster-Than-Light Battle Begins! Goku and Hit's Joint Front!",
-            "duration": "23m"
+            episode: 28,
+            title: "A Faster-Than-Light Battle Begins! Goku and Hit's Joint Front!",
+            duration: "23m"
           },
           {
-            "episode": 29,
-            "title": "Brave Fight! Muten Roshi Stakes his Life!!",
-            "duration": "23m"
+            episode: 29,
+            title: "Brave Fight! Muten Roshi Stakes his Life!!",
+            duration: "23m"
           },
           {
-            "episode": 30,
-            "title": "Find Him! Death Match with an Invisible Attacker!!",
-            "duration": "23m"
+            episode: 30,
+            title: "Find Him! Death Match with an Invisible Attacker!!",
+            duration: "23m"
           },
           {
-            "episode": 31,
-            "title": "Revenge ‘F'! The Cunning Trap?!",
-            "duration": "23m"
+            episode: 31,
+            title: "Revenge ‘F'! The Cunning Trap?!",
+            duration: "23m"
           },
           {
-            "episode": 32,
-            "title": "Frieza and Frost!! Intersecting Evil?!",
-            "duration": "23m"
+            episode: 32,
+            title: "Frieza and Frost!! Intersecting Evil?!",
+            duration: "23m"
           },
           {
-            "episode": 33,
-            "title": "The Ultimate Enemy Approaches Goku! Now, Let Loose! The Killer Spirit Bomb!",
-            "duration": "23m"
+            episode: 33,
+            title: "The Ultimate Enemy Approaches Goku! Now, Let Loose! The Killer Spirit Bomb!",
+            duration: "23m"
           },
           {
-            "episode": 34,
-            "title": "Son Goku Wakes! New Level of the Awakened!",
-            "duration": "23m"
+            episode: 34,
+            title: "Son Goku Wakes! New Level of the Awakened!",
+            duration: "23m"
           },
           {
-            "episode": 35,
-            "title": "Hit vs Jiren!!",
-            "duration": "23m"
+            episode: 35,
+            title: "Hit vs Jiren!!",
+            duration: "23m"
           },
           {
-            "episode": 36,
-            "title": "Vegeta's Resolve!!",
-            "duration": "23m"
+            episode: 36,
+            title: "Vegeta's Resolve!!",
+            duration: "23m"
           },
           {
-            "episode": 37,
-            "title": "Fighting Maniac Saiyan",
-            "duration": "23m"
+            episode: 37,
+            title: "Fighting Maniac Saiyan",
+            duration: "23m"
           },
           {
-            "episode": 38,
-            "title": "Ghastly! Explosive Birth of a New Super Warrior!!",
-            "duration": "23m"
+            episode: 38,
+            title: "Ghastly! Explosive Birth of a New Super Warrior!!",
+            duration: "23m"
           },
           {
-            "episode": 39,
-            "title": "Goku vs Kafla!!",
-            "duration": "23m"
+            episode: 39,
+            title: "Goku vs Kafla!!",
+            duration: "23m"
           },
           {
-            "episode": 40,
-            "title": "The Comeback Omen! Ultra Istinct's Great Explosion!!",
-            "duration": "23m"
+            episode: 40,
+            title: "The Comeback Omen! Ultra Istinct's Great Explosion!!",
+            duration: "23m"
           },
           {
-            "episode": 41,
-            "title": "Grand Love Shodown! Androids vs Universe 2",
-            "duration": "23m"
+            episode: 41,
+            title: "Grand Love Shodown! Androids vs Universe 2",
+            duration: "23m"
           },
           {
-            "episode": 42,
-            "title": "Accelerating Drama: A Universe Disappears...!",
-            "duration": "23m"
+            episode: 42,
+            title: "Accelerating Drama: A Universe Disappears...!",
+            duration: "23m"
           },
           {
-            "episode": 43,
-            "title": "A New Victim from Universe 7! Universe 4 Gets Serious!!",
-            "duration": "23m"
+            episode: 43,
+            title: "A New Victim from Universe 7! Universe 4 Gets Serious!!",
+            duration: "23m"
           },
           {
-            "episode": 44,
-            "title": "A Perfect Survival Strategy! Universe 3's Menacing Assassins!!",
-            "duration": "23m"
+            episode: 44,
+            title: "A Perfect Survival Strategy! Universe 3's Menacing Assassins!!",
+            duration: "23m"
           },
           {
-            "episode": 45,
-            "title": "All-Out War! The Ultimate 4-Way Combination vs Universe 7's Total Offensive!!",
-            "duration": "23m"
+            episode: 45,
+            title: "All-Out War! The Ultimate 4-Way Combination vs Universe 7's Total Offensive!!",
+            duration: "23m"
           },
           {
-            "episode": 46,
-            "title": "For One's Own Pride! Vegeta's Challenge to Be The Strongest!!",
-            "duration": "23m"
+            episode: 46,
+            title: "For One's Own Pride! Vegeta's Challenge to Be The Strongest!!",
+            duration: "23m"
           },
           {
-            "episode": 47,
-            "title": "Full Body, Spirit, and Power Unleashed!",
-            "duration": "23m"
+            episode: 47,
+            title: "Full Body, Spirit, and Power Unleashed!",
+            duration: "23m"
           },
           {
-            "episode": 48,
-            "title": "A Stormy, Fierce Attack! Gohan Fights with his Back to the Wall!!",
-            "duration": "23m"
+            episode: 48,
+            title: "A Stormy, Fierce Attack! Gohan Fights with his Back to the Wall!!",
+            duration: "23m"
           },
           {
-            "episode": 49,
-            "title": "Advent of the God of Destruction, Toppo! There is Only Overwhelming Power!!",
-            "duration": "23m"
+            episode: 49,
+            title: "Advent of the God of Destruction, Toppo! There is Only Overwhelming Power!!",
+            duration: "23m"
           },
           {
-            "episode": 50,
-            "title": "Surpass Even a God! Vegeta's Life-Risking Blow",
-            "duration": "23m"
+            episode: 50,
+            title: "Surpass Even a God! Vegeta's Life-Risking Blow",
+            duration: "23m"
           },
           {
-            "episode": 51,
-            "title": "The approaching wall! The final barrier of hope!!",
-            "duration": "23m"
+            episode: 51,
+            title: "The approaching wall! The final barrier of hope!!",
+            duration: "23m"
           },
           {
-            "episode": 52,
-            "title": "With Noble Pride to the End! Vegeta Falls!",
-            "duration": "23m"
+            episode: 52,
+            title: "With Noble Pride to the End! Vegeta Falls!",
+            duration: "23m"
           },
           {
-            "episode": 53,
-            "title": "Trascending the Limit! Mastering Ultra Istinct!!",
-            "duration": "23m"
+            episode: 53,
+            title: "Trascending the Limit! Mastering Ultra Istinct!!",
+            duration: "23m"
           },
           {
-            "episode": 54,
-            "title": "An Unprecedented Super Showdown!!",
-            "duration": "23m"
+            episode: 54,
+            title: "An Unprecedented Super Showdown!!",
+            duration: "23m"
           },
           {
-            "episode": 55,
-            "title": "Goku, Until the Day We Meet Again",
-            "duration": "23m"
+            episode: 55,
+            title: "Goku, Until the Day We Meet Again",
+            duration: "23m"
           }
         ]
       }
