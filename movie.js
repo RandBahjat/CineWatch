@@ -3916,12 +3916,7 @@ function updateIframeServer() {
   const data = window.currentIframeData;
   const iframe = document.getElementById('iframeElement');
   const serverSelectWrap = document.getElementById('serverSelectWrap');
-
-  // Always hide the old generic server selector
-  if (serverSelectWrap) {
-    serverSelectWrap.style.display = 'none';
-    serverSelectWrap.classList.add('hidden');
-  }
+  const serverSelect = document.getElementById('videoServerSelect');
 
   // Find the parent movie to check isAnime — check parentId OR the item itself
   const parentMovie = data.parentId ? MOVIES.find(m => String(m.id) === String(data.parentId) || String(m.videoUrl) === String(data.parentId)) : null;
@@ -3930,19 +3925,43 @@ function updateIframeServer() {
   const isAnime = !!(refMovie?.isAnime || refMovie?.type === 'Anime');
 
   let newUrl = '';
+
   if (isAnime) {
-    // vidsrc.me — supports TMDB IDs and generally has both sub and dub embedded servers
-    if (data.type === 'tv') {
-      newUrl = `https://vidsrc.me/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}`;
+    if (serverSelectWrap && serverSelect) {
+      serverSelectWrap.style.display = 'block';
+      serverSelectWrap.classList.remove('hidden');
+      
+      if (!serverSelect.dataset.animeServersPopulated) {
+        serverSelect.innerHTML = `
+          <option value="vidsrc-sbs">VidSrc (Reliable / Fast)</option>
+          <option value="vidsrc-me">VidSrc ME (Multi-Language)</option>
+          <option value="zxcstream">ZXC Stream (Japanese Sub)</option>
+        `;
+        serverSelect.dataset.animeServersPopulated = "true";
+      }
+
+      const selected = serverSelect.value;
+      if (selected === 'zxcstream') {
+        newUrl = data.type === 'tv' ? `https://player.zxcstream.xyz/embed/tv/${data.id}/${data.season}/${data.episode}` : `https://player.zxcstream.xyz/embed/movie/${data.id}`;
+      } else if (selected === 'vidsrc-me') {
+        newUrl = data.type === 'tv' ? `https://vidsrc.me/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}` : `https://vidsrc.me/embed/movie?tmdb=${data.id}`;
+      } else {
+        newUrl = data.type === 'tv' ? `https://vidsrc.sbs/embed/tv/${data.id}/${data.season}/${data.episode}` : `https://vidsrc.sbs/embed/movie/${data.id}`;
+      }
     } else {
-      newUrl = `https://vidsrc.me/embed/movie?tmdb=${data.id}`;
+      newUrl = data.type === 'tv' ? `https://vidsrc.sbs/embed/tv/${data.id}/${data.season}/${data.episode}` : `https://vidsrc.sbs/embed/movie/${data.id}`;
     }
-  } else if (data.type === 'tv') {
-    // Restore vaplayer.ru for regular TV series
-    newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}?skin=netflix&color=e50914`;
   } else {
-    // Restore vaplayer.ru for regular Movies
-    newUrl = `https://vaplayer.ru/embed/movie/${data.id}?skin=netflix&color=e50914`;
+    if (serverSelectWrap) {
+      serverSelectWrap.style.display = 'none';
+      serverSelectWrap.classList.add('hidden');
+      if (serverSelect) serverSelect.dataset.animeServersPopulated = "";
+    }
+    if (data.type === 'tv') {
+      newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}?skin=netflix&color=e50914`;
+    } else {
+      newUrl = `https://vaplayer.ru/embed/movie/${data.id}?skin=netflix&color=e50914`;
+    }
   }
 
   iframe.onload = () => {
