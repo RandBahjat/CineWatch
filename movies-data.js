@@ -12395,7 +12395,7 @@ window._MOVIES_DATA = [
     overview: "Ancient Legendary Super Saiyan Broly, thought myth, real, awaken by chance encounter with Goku, unleash near-limitless power fuel by deep-root childhood rage. Goku, Vegeta, Piccolo, Gohan must find way stop force stronger than anything they face before.",
     director: "Mitsuo Hashimoto",
     cast: [
-      "Masako Nozawa, Ryō Horikawa, Takeshi Kusao, Yūko Minaguchi, Kōji Yada"
+      "Masako Nozawa, Ryō Horikawa, Takeshi Kusao, Shigeru Chiba, Toshio Furukawa"
     ],
     trending: false,
     featured: false,
