@@ -11749,7 +11749,7 @@ window._MOVIES_DATA = [
       "Sci-Fi"
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/th4E1yqsE8DGpAseLiUrI60Hf8V.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/kRbpUTRNm6QbLQFPFWUcNC4czEm.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/nvxrQQspxmSblCYDtvDAbVFX8Jt.jpg",
     videoUrl: "646380",
     overview: "Two low-level astronomer discover comet head straight for Earth, go on media tour warn world of coming doom. Nobody take them seriously, satire of media, politics, society ignore science, chase distraction instead.",
