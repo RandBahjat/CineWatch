@@ -11832,7 +11832,7 @@ window._MOVIES_DATA = [
     overview: "World leader gather London for state funeral, terrorist group launch coordinated attack, turn city into war zone. Secret Service agent Mike Banning must protect President, get him out alive before city fall completely.",
     director: "Babak Najafi",
     cast: [
-      "James McAvoy, Angelina Jolie, Morgan Freeman, Terence Stamp, Thomas Kretschmann"
+      "Gerard Butler, Aaron Eckhart, Morgan Freeman, Angela Bassett, Alon Aboutboul"
     ],
     trending: false,
     featured: false,
