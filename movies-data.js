@@ -12286,7 +12286,7 @@ window._MOVIES_DATA = [
     overview: "Dr. Raichi, last of Tuffle race wipe out by Saiyan long ago, seek bloody revenge, hunt down surviving Saiyan, threaten Earth itself. Goku, Gohan, Piccolo, Trunks, Vegeta must join force, stop his vengeful rampage.",
     director: "Shigeyasu Yamauchi",
     cast: [
-      "Masako Nozawa, Ryō Horikawa, Shigeru Chiba, Toshio Furukawa, Naoko Watanabe"
+      "Toku Nishio, Shinji Ogawa, Hisao Egawa"
     ],
     trending: false,
     featured: false,
