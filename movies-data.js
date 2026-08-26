@@ -12040,7 +12040,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rCU5ddP3FVSDJy81UldUsBuf3ag.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/xeYKMrkcug0A6Igp0UGial69FVU.jpg",
     videoUrl: "39107",
-    overview: "Remnant of Frieza's army use magic ball resurrect fallen tyrant, train hard prepare revenge. Frieza return stronger than ever, attack Earth, force Goku, Vegeta race back save planet, friends.",
+    overview: "Evil demon Janemba born from imbalance in Other World, warp reality, break law of life, death itself. Goku, newly fuse Gogeta must stop him before chaos destroy both living, dead world.",
     director: "Tadayoshi Yamamuro",
     cast: [
       "Masako Nozawa, Ryō Horikawa, Ryūsei Nakao, Sōichirō Hoshi, Toshio Furukawa"
