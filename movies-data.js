@@ -12311,7 +12311,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/b3q3CZx1gf5CUWZCPjQm7OJz0B1.jpg",
     videoUrl: "39106",
     overview: "Evil scientist clone Broly, create bio-engineer monster call Bio-Broly, unleash him at big tournament. Broly's berserk rage grow harder, harder to contain, threaten kill everyone trap inside island facility.",
-    director: "Shigeyasu Yamauchi",
+    director: "Yoshihiro Ueda",
     cast: [
       "Toku Nishio, Shinji Ogawa, Hisao Egawa"
     ],
