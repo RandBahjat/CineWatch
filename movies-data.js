@@ -11742,7 +11742,7 @@ window._MOVIES_DATA = [
     year: 2014,
     rating: 6.4,
     age: "R",
-    duration: "2h 18m",
+    duration: "1h 29m",
     genres: [
       "Comedy",
       "Drama",
