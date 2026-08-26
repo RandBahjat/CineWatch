@@ -11768,7 +11768,7 @@ window._MOVIES_DATA = [
     year: 2003,
     rating: 6.8,
     age: "PG-13",
-    duration: "1h 29m",
+    duration: "1h 41m",
     genres: [
       "Action",
       "Thriller",
