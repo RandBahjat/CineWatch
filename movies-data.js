@@ -11830,7 +11830,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/2aXAK6WNg9ihJm8qRSrguKzgaB7.jpg",
     videoUrl: "267860",
     overview: "World leader gather London for state funeral, terrorist group launch coordinated attack, turn city into war zone. Secret Service agent Mike Banning must protect President, get him out alive before city fall completely.",
-    director: "Timur Bekmambetov",
+    director: "Babak Najafi",
     cast: [
       "James McAvoy, Angelina Jolie, Morgan Freeman, Terence Stamp, Thomas Kretschmann"
     ],
