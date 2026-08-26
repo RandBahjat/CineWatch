@@ -11497,7 +11497,7 @@ window._MOVIES_DATA = [
     overview: "Family man home alone for weekend, two young woman show up his door, claim stuck in storm, need help. Let them in start chain of manipulation, seduction, terror he never see coming.",
     director: "Eli Roth",
     cast: [
-      "Daniel Craig, Chris Evans, Ana de Armas, Jamie Lee Curtis, Michael Shannon, Toni Collette"
+      "Keanu Reeves, Lorenza Izzo, Ana de Armas, Ignacia Allamand"
     ],
     trending: false,
     featured: false,
