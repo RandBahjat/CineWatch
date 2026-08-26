@@ -12353,7 +12353,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 1994,
     rating: 6.5,
-    age: "PG",
+    age: "TV-PG",
     duration: "50m",
     genres: [
       "Action",
