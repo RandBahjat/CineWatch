@@ -11943,6 +11943,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Get Smart",
+    type: "Movie",
+    year: 2008,
+    rating: 6.5,
+    age: "PG-13",
+    duration: "1h 50m",
+    genres: [
+      "Action",
+      "Adventure",
+      "Comedy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/sZUjbtUS8qxXp4mj90evnqPJqX7.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/AfqYmTA3JUsyrFAVHoFyjyjG3Vl.jpg",
+    videoUrl: "11665",
+    overview: "Bumbling analyst Maxwell Smart finally promote field agent, partner with skilled Agent 99 stop terrorist organization threaten steal nuclear weapon. Clumsy charm, gadget, spy antic clash with real danger of mission.",
+    director: "Peter Segal",
+    cast: [
+      "Steve Carell, Anne Hathaway, Dwayne Johnson, Alan Arkin, Terence Stamp"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
