@@ -11569,8 +11569,7 @@ window._MOVIES_DATA = [
     genres: [
       "Crime",
       "Thriller",
-      "Mystery",
-      "War"
+      "Mystery"
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/mDcPRjZC1bb6LavFU3gwsWdVfCM.jpg",
