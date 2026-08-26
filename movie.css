@@ -6545,15 +6545,15 @@ body.rtl-layout .account-side-panel.open {
 
 .top10-rank-badge {
   position: absolute;
-  bottom: -15px;
-  right: 85%; /* Aligns the right side of the number slightly past the left edge */
+  top: 115px; /* Positioned near bottom left of the 255px tall poster */
+  left: -35px;
   font-size: 140px;
   font-weight: 900;
   color: #000;
   -webkit-text-stroke: 4px #e50914;
   text-shadow: 4px 4px 10px rgba(0,0,0,0.8);
   line-height: 1;
-  z-index: 2;
+  z-index: 5; /* Above the poster wrap */
   font-family: 'Inter', sans-serif;
   pointer-events: none;
   letter-spacing: -5px;
