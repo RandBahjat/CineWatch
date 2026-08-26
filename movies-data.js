@@ -12407,7 +12407,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 1990,
     rating: 6.7,
-    age: "TV-PG",
+    age: "PG",
     duration: "1h 12m",
     genres: [
       "Action",
