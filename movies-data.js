@@ -12092,7 +12092,7 @@ window._MOVIES_DATA = [
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uMEgkyiPznZP5AiMSWAk2jsj5gC.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/61t00k4ta1nNqKI2qPLKgoW6EoP.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/Dnk4iSqqNkZBJBPeFdAegTaxD5.jpg",
     videoUrl: "126963",
     overview: "God of Destruction Beerus wake from long slumber, hunt for legendary Super Saiyan God he dream about. Goku, friend must find way awaken this new form before Beerus destroy Earth out boredom, rage.",
     director: "Masahiro Hosoda",
