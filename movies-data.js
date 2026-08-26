@@ -11691,7 +11691,7 @@ window._MOVIES_DATA = [
     year: 2013,
     rating: 7.2,
     age: "PG-13",
-    duration: "1h 58m",
+    duration: "2h 23m",
     genres: [
       "Comedy",
       "Drama",
