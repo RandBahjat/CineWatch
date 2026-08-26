@@ -12338,7 +12338,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dZCWRFJnwyxYOhzAhf7Xyru4moB.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1hiaeEgYcVU3gA3nrPpcqJDZ4SV.jpg",
     videoUrl: "39144",
-    overview: "Evil scientist clone Broly, create bio-engineer monster call Bio-Broly, unleash him at big tournament. Broly's berserk rage grow harder, harder to contain, threaten kill everyone trap inside island facility.",
+    overview: "Young Goku, monk Bulma go on quest gather magic Dragon Balls, run into evil King Gurumes who want use them for own selfish wish. Adventure, martial art, comedy fill quest to stop tyrant's greedy plan.",
     director: "Yoshihiro Ueda",
     cast: [
       "Masako Nozawa, Ryō Horikawa, Takeshi Kusao, Naoko Watanabe, Hiromi Tsuru"
