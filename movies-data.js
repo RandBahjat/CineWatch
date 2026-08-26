@@ -11752,7 +11752,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/kRbpUTRNm6QbLQFPFWUcNC4czEm.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1hzH1Wu2xhXBNOWzw3RMwNTJX5q.jpg",
     videoUrl: "240832",
-    overview: "Two low-level astronomer discover comet head straight for Earth, go on media tour warn world of coming doom. Nobody take them seriously, satire of media, politics, society ignore science, chase distraction instead.",
+    overview: "Woman accidentally expose to powerful drug that unlock full potential of human brain, gain extraordinary power grow more intense as brain capacity keep expand. Race against time, before power consume her completely, evade dangerous gang chase her down.",
     director: "Adam McKay",
     cast: [
       "Leonardo DiCaprio, Jennifer Lawrence, Meryl Streep, Cate Blanchett, Timothée Chalamet, Jonah Hill"
