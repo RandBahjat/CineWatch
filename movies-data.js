@@ -11740,7 +11740,7 @@ window._MOVIES_DATA = [
     title: "Lucy",
     type: "Movie",
     year: 2014,
-    rating: 7.1,
+    rating: 6.4,
     age: "R",
     duration: "2h 18m",
     genres: [
