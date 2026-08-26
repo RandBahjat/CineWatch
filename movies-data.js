@@ -12335,7 +12335,7 @@ window._MOVIES_DATA = [
       "Comedy"
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/A0VKJ6eRIubW6wH4eAwcpQfjoRD.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dZCWRFJnwyxYOhzAhf7Xyru4moB.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/b3q3CZx1gf5CUWZCPjQm7OJz0B1.jpg",
     videoUrl: "39106",
     overview: "Evil scientist clone Broly, create bio-engineer monster call Bio-Broly, unleash him at big tournament. Broly's berserk rage grow harder, harder to contain, threaten kill everyone trap inside island facility.",
