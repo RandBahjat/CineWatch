@@ -124,6 +124,8 @@ const state = {
   user: null,
   favorites: [],
   continueWatching: {},
+  isCwSelectionMode: false,
+  cwSelectedItems: new Set(),
   currentHeroIndex: 0,
   heroInterval: null,
   activeGenre: "all",
