@@ -11459,7 +11459,7 @@ window._MOVIES_DATA = [
     year: 2019,
     rating: 7.9,
     age: "PG-13",
-    duration: "1h 53m",
+    duration: "2h 10m",
     genres: [
       "Action",
       "Crime",
