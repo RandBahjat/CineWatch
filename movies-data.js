@@ -11910,7 +11910,7 @@ window._MOVIES_DATA = [
     overview: "Trio of dim-witted bodybuilder hatch scheme kidnap, extort wealthy client, live out twisted version American dream. Plan spiral out control, greed, violence, incompetence turn get-rich scheme into bloody disaster.",
     director: "Michael Bay",
     cast: [
-      "Ashley Judd, Morgan Freeman, Jim Caviezel, Adam Scott, Amanda Peet"
+      "Mark Wahlberg, Dwayne Johnson, Anthony Mackie, Tony Shalhoub, Ed Harris"
     ],
     trending: false,
     featured: false,
