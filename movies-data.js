@@ -11878,7 +11878,7 @@ window._MOVIES_DATA = [
       "Thriller"
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/25h5I3E3ydhazsPDnscWHivq5pn.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/hywuHoNTiDXp0M32LUa228EQ2br.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/y319VH0gIFie6KEO5L4nHhxxQUw.jpg",
     videoUrl: "9437",
     overview: "Detective, psychologist Alex Cross join force with escape victim track down serial kidnapper hold group of women captive. Race against time uncover killer identity before he strike again, claim another life.",
