@@ -12056,7 +12056,7 @@ window._MOVIES_DATA = [
     year: 2013,
     rating: 7.1,
     age: "TV-PG",
-    duration: "51m",
+    duration: "1h 51m",
     genres: [
       "Action",
       "Animation",
