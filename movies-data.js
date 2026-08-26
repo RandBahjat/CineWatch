@@ -12321,7 +12321,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Dragon Ball Z: Bio-Broly",
+    title: "Dragon Ball: Curse of the Blood Rubies",
     type: "Movie",
     year: 1994,
     rating: 5.8,
