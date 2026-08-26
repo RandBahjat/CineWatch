@@ -12294,7 +12294,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Dragon Ball Z Side Story: Plan to Eradicate the Saiyans",
+    title: "Dragon Ball Z: Bio-Broly",
     type: "Movie",
     year: 1993,
     rating: 6.7,
