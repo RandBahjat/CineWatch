@@ -818,6 +818,25 @@ function renderContinueWatchingPage() {
   }
 
   emptyState.classList.add("hidden");
+  
+  // Update Action Bar UI
+  const selectBtn = document.getElementById("cwSelectBtn");
+  const removeBtn = document.getElementById("cwRemoveSelectedBtn");
+  const cancelBtn = document.getElementById("cwCancelSelectBtn");
+  
+  if (selectBtn && removeBtn && cancelBtn) {
+    if (state.isCwSelectionMode) {
+      selectBtn.classList.add("hidden");
+      removeBtn.classList.remove("hidden");
+      cancelBtn.classList.remove("hidden");
+      removeBtn.textContent = `Remove Selected (${state.cwSelectedItems.size})`;
+    } else {
+      selectBtn.classList.remove("hidden");
+      removeBtn.classList.add("hidden");
+      cancelBtn.classList.add("hidden");
+    }
+  }
+
   grid.innerHTML = items
     .map((item) => {
       const movie = MOVIES.find((m) => m.id === item.movieId);
