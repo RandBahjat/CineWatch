@@ -6561,14 +6561,19 @@ body.rtl-layout .account-side-panel.open {
 
 @media (max-width: 768px) {
   .top10-track {
-    padding-left: 20px;
+    padding-left: 10px;
   }
   .top10-track .movie-card {
     flex: 0 0 120px;
+    width: 120px;
+    max-width: 120px;
+  }
+  .top10-track .movie-card:first-child {
+    margin-left: 30px;
   }
   .top10-rank-badge {
     font-size: 90px;
-    left: -20px;
+    right: 80%;
     -webkit-text-stroke: 3px #e50914;
   }
 }
