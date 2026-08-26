@@ -19,7 +19,7 @@
       "icon": "icon.png"
     }
   },
-  "dependencies": {
+  "devDependencies": {
     "electron-builder": "^24.13.3",
     "electron": "^29.1.5"
   }
