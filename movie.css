@@ -6469,3 +6469,54 @@ body.rtl-layout .account-side-panel.open {
 }
 
 
+
+/* --- Continue Watching Selection Mode Styles --- */
+.cw-selection-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.cw-selection-overlay.active {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+}
+
+.cw-selection-overlay ion-icon {
+  font-size: 48px;
+  color: transparent;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  background: rgba(0,0,0,0.5);
+}
+
+.cw-selection-overlay.active ion-icon {
+  color: #4ade80;
+  border-color: #4ade80;
+  background: transparent;
+}
+
+.movie-card.cw-selected {
+  transform: scale(0.95);
+  border: 2px solid #4ade80;
+  border-radius: 12px;
+}
+
+.movie-card.continue-card {
+  transition: transform 0.2s ease, border 0.2s ease;
+}
+
+.cw-action-bar button {
+  transition: all 0.2s ease;
+}
