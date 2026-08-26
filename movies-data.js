@@ -11504,6 +11504,31 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "DC League of Super-Pets",
+    type: "Movie",
+    year: 2015,
+    rating: 4.9,
+    age: "R",
+    duration: "1h 39m",
+    genres: [
+      "Thriller",
+      "Horror"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cUC4rUb1Cs2KMaZ6RD4uYUEEwls.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/uumksY17NYEONUHfSc9D1rzQ3zI.jpg",
+    videoUrl: "263472",
+    overview: "Family man home alone for weekend, two young woman show up his door, claim stuck in storm, need help. Let them in start chain of manipulation, seduction, terror he never see coming.",
+    director: "Eli Roth",
+    cast: [
+      "Keanu Reeves, Lorenza Izzo, Ana de Armas, Ignacia Allamand"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
