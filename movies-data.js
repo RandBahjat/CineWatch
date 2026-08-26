@@ -11840,9 +11840,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "London Has Fallen",
+    title: "Kiss the Girls",
     type: "Movie",
-    year: 2016,
+    year: 1996,
     rating: 5.9,
     age: "R",
     duration: "1h 39m",
