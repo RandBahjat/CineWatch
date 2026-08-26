@@ -12381,7 +12381,7 @@ window._MOVIES_DATA = [
     year: 1993,
     rating: 7.3,
     age: "TV-PG",
-    duration: "1h 48m",
+    duration: "1h 12m",
     genres: [
       "Action",
       "Animation",
