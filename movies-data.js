@@ -11470,7 +11470,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/1Ld1OTmrocP7h5px8k16ymaxIvS.jpg",
     videoUrl: "546554",
     overview: "Wealthy crime novelist found dead night of his 85th birthday, detective Benoit Blanc call in investigate. Family full of secret, greed, lie, each one suspect, all point finger, truth harder to find than expect.",
-    director: "Andrea Di Stefano",
+    director: "Rian Johnson",
     cast: [
       "Joel Kinnaman, Rosamund Pike, Common, Ana de Armas, Clive Owen"
     ],
