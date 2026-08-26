@@ -12349,7 +12349,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Dragon Ball: Curse of the Blood Rubies",
+    title: "Dragon Ball Z: Broly - Second Coming",
     type: "Movie",
     year: 1986,
     rating: 6.6,
