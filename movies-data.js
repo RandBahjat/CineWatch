@@ -11789,9 +11789,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Bruce Almighty",
+    title: "Wanted",
     type: "Movie",
-    year: 2003,
+    year: 2008,
     rating: 6.8,
     age: "PG-13",
     duration: "1h 41m",
