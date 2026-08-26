@@ -11807,7 +11807,7 @@ window._MOVIES_DATA = [
     overview: "Ordinary, unhappy office worker discover he descend from line of legendary assassin, recruit into secret society of killer. Trained sharpen deadly skill, uncover conspiracy tie back to own father's death.",
     director: "Timur Bekmambetov",
     cast: [
-      "Jim Carrey, Morgan Freeman, Jennifer Aniston, Philip Baker Hall, Catherine Bell"
+      "James McAvoy, Angelina Jolie, Morgan Freeman, Terence Stamp, Thomas Kretschmann"
     ],
     trending: false,
     featured: false,
