@@ -11736,6 +11736,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Don't Look Up",
+    type: "Movie",
+    year: 2021,
+    rating: 7.1,
+    age: "R",
+    duration: "2h 18m",
+    genres: [
+      "Comedy",
+      "Drama",
+      "Sci-Fi"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/th4E1yqsE8DGpAseLiUrI60Hf8V.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/nvxrQQspxmSblCYDtvDAbVFX8Jt.jpg",
+    videoUrl: "646380",
+    overview: "Two low-level astronomer discover comet head straight for Earth, go on media tour warn world of coming doom. Nobody take them seriously, satire of media, politics, society ignore science, chase distraction instead.",
+    director: "Adam McKay",
+    cast: [
+      "Leonardo DiCaprio, Jennifer Lawrence, Meryl Streep, Cate Blanchett, Timothée Chalamet, Jonah Hill"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
