@@ -11989,7 +11989,7 @@ window._MOVIES_DATA = [
     overview: "Red Ribbon Army secretly rebuild, create powerful new android warrior Gamma 1, Gamma 2 call Super Hero. Piccolo, Gohan must step up, protect Earth, family as new threat push them past old limit.",
     director: "Tetsuro Kodama",
     cast: [
-      "Will Ferrell, Mark Wahlberg, Eva Mendes, Samuel L. Jackson, Dwayne Johnson, Michael Keaton"
+      "Masako Nozawa, Kōichi Yamadera, Ryō Horikawa, Aya Hisakawa, Hiroshi Kamiya"
     ],
     trending: false,
     featured: false,
