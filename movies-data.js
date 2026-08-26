@@ -12095,7 +12095,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/Dnk4iSqqNkZBJBPeFdAegTaxD5.jpg",
     videoUrl: "503314",
     overview: "Ancient legend of Saiyan monster Broly turn real, awaken on remote planet by Frieza's scheme. Goku, Vegeta must team up face Broly's near-limitless power, uncover truth of Saiyan history long buried.",
-    director: "Masahiro Hosoda",
+    director: "Tatsuya Nagamine",
     cast: [
       "Masako Nozawa, Ryō Horikawa, Kōichi Yamadera, Kenji Nojima, Aya Hisakawa"
     ],
