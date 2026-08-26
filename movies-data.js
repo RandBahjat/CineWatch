@@ -12418,7 +12418,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fDX4Dp8IKvjBAaEb5MOJrGkxWX0.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/9mZGGJJP04RBmrzh9XVSfqRXl0d.jpg",
-    videoUrl: "",
+    videoUrl: "39101",
     overview: "Ancient Legendary Super Saiyan Broly, thought myth, real, awaken by chance encounter with Goku, unleash near-limitless power fuel by deep-root childhood rage. Goku, Vegeta, Piccolo, Gohan must find way stop force stronger than anything they face before.",
     director: "Mitsuo Hashimoto",
     cast: [
