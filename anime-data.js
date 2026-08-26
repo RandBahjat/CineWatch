@@ -1,4 +1,4 @@
-// CineWatch - Anime Data
+ï»¿// CineWatch - Anime Data
 window._ANIME_DATA = [
   {
     title: "One Piece",
@@ -418,7 +418,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 76,
-            title: "Time to Fight Back! Usopp’s Quick Thinking and Fire Star!",
+            title: "Time to Fight Back! Usoppï¿½s Quick Thinking and Fire Star!",
             absoluteEpisode: 76
           },
           {
@@ -563,7 +563,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 103,
-            title: "Spiders Café at 8 o'Clock! The Enemy Leaders Gather!",
+            title: "Spiders Cafï¿½ at 8 o'Clock! The Enemy Leaders Gather!",
             absoluteEpisode: 103
           },
           {
@@ -1323,7 +1323,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 251,
-            title: "The Truth Behind Her Betrayal! Robin’s Sorrowful Decision!",
+            title: "The Truth Behind Her Betrayal! Robinï¿½s Sorrowful Decision!",
             absoluteEpisode: 251
           },
           {
@@ -1428,7 +1428,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 271,
-            title: "Don’t Stop! Hoist the Counterattack Signal!",
+            title: "Donï¿½t Stop! Hoist the Counterattack Signal!",
             absoluteEpisode: 271
           },
           {
@@ -1468,7 +1468,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 279,
-            title: "Jump Towards the Falls! Luffy’s Feelings!",
+            title: "Jump Towards the Falls! Luffyï¿½s Feelings!",
             absoluteEpisode: 279
           },
           {
@@ -1723,12 +1723,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 330,
-            title: "The Staw Hat’s Hard Battles! A Pirate Soul Risking It All for the Flag!",
+            title: "The Staw Hatï¿½s Hard Battles! A Pirate Soul Risking It All for the Flag!",
             absoluteEpisode: 330
           },
           {
             episode: 331,
-            title: "Hot Full Throttle! The Twin’s Magnetic Power Drawing Near!",
+            title: "Hot Full Throttle! The Twinï¿½s Magnetic Power Drawing Near!",
             absoluteEpisode: 331
           },
           {
@@ -1763,12 +1763,12 @@ window._ANIME_DATA = [
         episodes: [
           {
             episode: 337,
-            title: "Plunging into the Devil’s Sea! The Mysterious Skeleton Floating in the Fog!",
+            title: "Plunging into the Devilï¿½s Sea! The Mysterious Skeleton Floating in the Fog!",
             absoluteEpisode: 337
           },
           {
             episode: 338,
-            title: "The Joy of Seeing People! The Gentleman Skeleton’s True Identity!",
+            title: "The Joy of Seeing People! The Gentleman Skeletonï¿½s True Identity!",
             absoluteEpisode: 338
           },
           {
@@ -1783,12 +1783,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 341,
-            title: "Nami’s in a Major Pinch! The Zombie Mansion and the Invisible Man!",
+            title: "Namiï¿½s in a Major Pinch! The Zombie Mansion and the Invisible Man!",
             absoluteEpisode: 341
           },
           {
             episode: 342,
-            title: "The Zombie’s Secret! Hogback’s Nightmarish Laboratory!",
+            title: "The Zombieï¿½s Secret! Hogbackï¿½s Nightmarish Laboratory!",
             absoluteEpisode: 342
           },
           {
@@ -1958,7 +1958,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 376,
-            title: "It Repels Everything! Kuma’s Paw-Paw Power!",
+            title: "It Repels Everything! Kumaï¿½s Paw-Paw Power!",
             absoluteEpisode: 376
           },
           {
@@ -2033,7 +2033,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 390,
-            title: "Landing to Get to Fish-man Island – The Sabaody Archipelago",
+            title: "Landing to Get to Fish-man Island ï¿½ The Sabaody Archipelago",
             absoluteEpisode: 390
           },
           {
@@ -2053,12 +2053,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 394,
-            title: "Rescue Camie! The Archipelago’s Lingering Dark History",
+            title: "Rescue Camie! The Archipelagoï¿½s Lingering Dark History",
             absoluteEpisode: 394
           },
           {
             episode: 395,
-            title: "Time Limit – The Human Auction Begins",
+            title: "Time Limit ï¿½ The Human Auction Begins",
             absoluteEpisode: 395
           },
           {
@@ -2083,17 +2083,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 400,
-            title: "Roger and Rayleigh – the King of the Pirates and His Right Hand Man",
+            title: "Roger and Rayleigh ï¿½ the King of the Pirates and His Right Hand Man",
             absoluteEpisode: 400
           },
           {
             episode: 401,
-            title: "No Escape!? Admiral Kizaru’s Light Speed Kick!!",
+            title: "No Escape!? Admiral Kizaruï¿½s Light Speed Kick!!",
             absoluteEpisode: 401
           },
           {
             episode: 402,
-            title: "Overwhelming! The Navy’s Fighting Weapons, the Pacifistas",
+            title: "Overwhelming! The Navyï¿½s Fighting Weapons, the Pacifistas",
             absoluteEpisode: 402
           },
           {
@@ -2108,17 +2108,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 405,
-            title: "Eliminated Friends – The Final Day of the Straw Hat Crew",
+            title: "Eliminated Friends ï¿½ The Final Day of the Straw Hat Crew",
             absoluteEpisode: 405
           },
           {
             episode: 406,
-            title: "Feudal Era Side Story – Boss Luffy Appears Again",
+            title: "Feudal Era Side Story ï¿½ Boss Luffy Appears Again",
             absoluteEpisode: 406
           },
           {
             episode: 407,
-            title: "Feudal Era Side Story – Defeat Thriller Company's Trap",
+            title: "Feudal Era Side Story ï¿½ Defeat Thriller Company's Trap",
             absoluteEpisode: 407
           }
         ]
@@ -2143,7 +2143,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 411,
-            title: "The Secret Hidden on the Backs – Luffy and the Snake Princess Meet",
+            title: "The Secret Hidden on the Backs ï¿½ Luffy and the Snake Princess Meet",
             absoluteEpisode: 411
           },
           {
@@ -2163,7 +2163,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 415,
-            title: "Hancock's Confession – The Sisters' Abhorrent Past",
+            title: "Hancock's Confession ï¿½ The Sisters' Abhorrent Past",
             absoluteEpisode: 415
           },
           {
@@ -2178,7 +2178,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 418,
-            title: "The Friends' Whereabouts – The Science of Weather and the Mechanical Island",
+            title: "The Friends' Whereabouts ï¿½ The Science of Weather and the Mechanical Island",
             absoluteEpisode: 418
           },
           {
@@ -2188,7 +2188,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 420,
-            title: "The Friends' Whereabouts – Bridging the Islands and Vicious Vegetations!",
+            title: "The Friends' Whereabouts ï¿½ Bridging the Islands and Vicious Vegetations!",
             absoluteEpisode: 420
           },
           {
@@ -3388,7 +3388,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 656,
-            title: "Rebeccca’s Sword of Death! Backwater Sword Dance!",
+            title: "Rebecccaï¿½s Sword of Death! Backwater Sword Dance!",
             absoluteEpisode: 656
           },
           {
@@ -3688,7 +3688,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 715,
-            title: "The Manly Duel! Señor's Elegy of Love!",
+            title: "The Manly Duel! Seï¿½or's Elegy of Love!",
             absoluteEpisode: 715
           },
           {
@@ -3848,12 +3848,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 747,
-            title: "The Silver Fortress – The Great Adventures of Luffy and Bart",
+            title: "The Silver Fortress ï¿½ The Great Adventures of Luffy and Bart",
             absoluteEpisode: 747
           },
           {
             episode: 748,
-            title: "An Underground Labyrinth – Luffy vs. Mine Cart Man",
+            title: "An Underground Labyrinth ï¿½ Luffy vs. Mine Cart Man",
             absoluteEpisode: 748
           }
         ]
@@ -4053,7 +4053,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 787,
-            title: "The Emperor's Daughter! Sanji's Fiancée - Pudding!",
+            title: "The Emperor's Daughter! Sanji's Fiancï¿½e - Pudding!",
             absoluteEpisode: 787
           },
           {
@@ -4338,7 +4338,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 843,
-            title: "The Castle Collapses! The Straw Hat’s Great Escape Begins!",
+            title: "The Castle Collapses! The Straw Hatï¿½s Great Escape Begins!",
             absoluteEpisode: 843
           },
           {
@@ -4393,7 +4393,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 854,
-            title: "The Threat of the Mole! Luffy’s Silent Fight!",
+            title: "The Threat of the Mole! Luffyï¿½s Silent Fight!",
             absoluteEpisode: 854
           },
           {
@@ -4403,7 +4403,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 856,
-            title: "The Forbidden Secret! Katakuri’s Merienda!",
+            title: "The Forbidden Secret! Katakuriï¿½s Merienda!",
             absoluteEpisode: 856
           },
           {
@@ -4488,7 +4488,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 873,
-            title: "Pulling Back from the Brink! The Formidable Reinforcements – Germa!",
+            title: "Pulling Back from the Brink! The Formidable Reinforcements ï¿½ Germa!",
             absoluteEpisode: 873
           },
           {
@@ -4708,7 +4708,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 915,
-            title: "Destructive! One Shot, One Kill – Thunder Bagua!",
+            title: "Destructive! One Shot, One Kill ï¿½ Thunder Bagua!",
             absoluteEpisode: 915
           },
           {
@@ -4728,7 +4728,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 919,
-            title: "Rampage! The Prisoners – Luffy and Kid!",
+            title: "Rampage! The Prisoners ï¿½ Luffy and Kid!",
             absoluteEpisode: 919
           },
           {
@@ -4738,7 +4738,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 921,
-            title: "Luxurious and Gorgeous! Wano's Most Beautiful Woman – Komurasaki!",
+            title: "Luxurious and Gorgeous! Wano's Most Beautiful Woman ï¿½ Komurasaki!",
             absoluteEpisode: 921
           },
           {
@@ -4878,7 +4878,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 949,
-            title: "We’re Here to Win! Luffy's Desperate Scream!",
+            title: "Weï¿½re Here to Win! Luffy's Desperate Scream!",
             absoluteEpisode: 949
           },
           {
@@ -4908,7 +4908,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 955,
-            title: "A New Alliance?! Kaido’s Army Gathers!",
+            title: "A New Alliance?! Kaidoï¿½s Army Gathers!",
             absoluteEpisode: 955
           },
           {
@@ -5028,7 +5028,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 979,
-            title: "Good Luck?! Leader Kin’emon’s Plot!",
+            title: "Good Luck?! Leader Kinï¿½emonï¿½s Plot!",
             absoluteEpisode: 979
           },
           {
@@ -5043,22 +5043,22 @@ window._ANIME_DATA = [
           },
           {
             episode: 982,
-            title: "Kaido’s Trump Card! The Tobi Roppo Appear!",
+            title: "Kaidoï¿½s Trump Card! The Tobi Roppo Appear!",
             absoluteEpisode: 982
           },
           {
             episode: 983,
-            title: "The Samurai Warriors’ Earnestness! The Straw Hats Land at Onigashima!",
+            title: "The Samurai Warriorsï¿½ Earnestness! The Straw Hats Land at Onigashima!",
             absoluteEpisode: 983
           },
           {
             episode: 984,
-            title: "Luffy Goes Out of Control?! Sneaking into Kaido’s Banquet!",
+            title: "Luffy Goes Out of Control?! Sneaking into Kaidoï¿½s Banquet!",
             absoluteEpisode: 984
           },
           {
             episode: 985,
-            title: "Thinking of Otama! Luffy’s Furious Strike!",
+            title: "Thinking of Otama! Luffyï¿½s Furious Strike!",
             absoluteEpisode: 985
           },
           {
@@ -5083,7 +5083,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 990,
-            title: "Thunder Bagua! Here Comes Kaido’s Son!",
+            title: "Thunder Bagua! Here Comes Kaidoï¿½s Son!",
             absoluteEpisode: 990
           },
           {
@@ -5093,12 +5093,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 992,
-            title: "Desire to be Oden! Yamato’s Dream!",
+            title: "Desire to be Oden! Yamatoï¿½s Dream!",
             absoluteEpisode: 992
           },
           {
             episode: 993,
-            title: "Explosive?! The Handcuffs that Shackle Yamato’s Freedom!",
+            title: "Explosive?! The Handcuffs that Shackle Yamatoï¿½s Freedom!",
             absoluteEpisode: 993
           },
           {
@@ -5113,7 +5113,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 996,
-            title: "Onigashima in Tumult! Luffy’s All-Out War Begins!",
+            title: "Onigashima in Tumult! Luffyï¿½s All-Out War Begins!",
             absoluteEpisode: 996
           },
           {
@@ -5123,12 +5123,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 998,
-            title: "Zeus’ Treason?! The Cornered Nami!",
+            title: "Zeusï¿½ Treason?! The Cornered Nami!",
             absoluteEpisode: 998
           },
           {
             episode: 999,
-            title: "I’ll Protect You! Yamato Meets Momonosuke!",
+            title: "Iï¿½ll Protect You! Yamato Meets Momonosuke!",
             absoluteEpisode: 999
           },
           {
@@ -5153,7 +5153,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1004,
-            title: "An Inherited Technique! Unleashing Oden’s Secret Swordplay!",
+            title: "An Inherited Technique! Unleashing Odenï¿½s Secret Swordplay!",
             absoluteEpisode: 1004
           },
           {
@@ -5163,32 +5163,32 @@ window._ANIME_DATA = [
           },
           {
             episode: 1006,
-            title: "I Won’t Forgive Him! Chopper’s Determination!",
+            title: "I Wonï¿½t Forgive Him! Chopperï¿½s Determination!",
             absoluteEpisode: 1006
           },
           {
             episode: 1007,
-            title: "Zoro’s Pursuit! Ice Oni Tag!",
+            title: "Zoroï¿½s Pursuit! Ice Oni Tag!",
             absoluteEpisode: 1007
           },
           {
             episode: 1008,
-            title: "Nami Surrenders?! Ulti’s Fierce Headbutt!",
+            title: "Nami Surrenders?! Ultiï¿½s Fierce Headbutt!",
             absoluteEpisode: 1008
           },
           {
             episode: 1009,
-            title: "Sasaki’s Onslaught! Armored Division vs. Yamato!",
+            title: "Sasakiï¿½s Onslaught! Armored Division vs. Yamato!",
             absoluteEpisode: 1009
           },
           {
             episode: 1010,
-            title: "Eliminate the Ice Oni! Chopper’s Fire Trick!",
+            title: "Eliminate the Ice Oni! Chopperï¿½s Fire Trick!",
             absoluteEpisode: 1010
           },
           {
             episode: 1011,
-            title: "It’s Not Okay! The Spider Lures Sanji!",
+            title: "Itï¿½s Not Okay! The Spider Lures Sanji!",
             absoluteEpisode: 1011
           },
           {
@@ -5198,12 +5198,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 1013,
-            title: "Yamato’s Past! The Man Who Came for an Emperor of the Sea!",
+            title: "Yamatoï¿½s Past! The Man Who Came for an Emperor of the Sea!",
             absoluteEpisode: 1013
           },
           {
             episode: 1014,
-            title: "Marco’s Tears! The Bond of the Whitebeard Pirates!",
+            title: "Marcoï¿½s Tears! The Bond of the Whitebeard Pirates!",
             absoluteEpisode: 1014
           },
           {
@@ -5228,12 +5228,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 1019,
-            title: "Otama’s Secret Plan! Operation Kibi Dango!",
+            title: "Otamaï¿½s Secret Plan! Operation Kibi Dango!",
             absoluteEpisode: 1019
           },
           {
             episode: 1020,
-            title: "Sanji’s Scream! An SOS Echoes Over the Island!",
+            title: "Sanjiï¿½s Scream! An SOS Echoes Over the Island!",
             absoluteEpisode: 1020
           },
           {
@@ -5258,7 +5258,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1025,
-            title: "The Worst Generation Gets Wiped Out?! The Emperors’ Deadly Attack!",
+            title: "The Worst Generation Gets Wiped Out?! The Emperorsï¿½ Deadly Attack!",
             absoluteEpisode: 1025
           },
           {
@@ -5268,7 +5268,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1027,
-            title: "Defend Luffy! Zoro and Law’s Sword Technique!",
+            title: "Defend Luffy! Zoro and Lawï¿½s Sword Technique!",
             absoluteEpisode: 1027
           },
           {
@@ -5278,7 +5278,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1029,
-            title: "A Faint Memory! Luffy and Red-Haired’s Daughter Uta!",
+            title: "A Faint Memory! Luffy and Red-Hairedï¿½s Daughter Uta!",
             absoluteEpisode: 1029
           },
           {
@@ -5318,12 +5318,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 1037,
-            title: "Believe in Luffy! The Alliance’s Counterattack Begins!",
+            title: "Believe in Luffy! The Allianceï¿½s Counterattack Begins!",
             absoluteEpisode: 1037
           },
           {
             episode: 1038,
-            title: "Nami’s Lethal Attack! Otama’s Desperate Challenge!",
+            title: "Namiï¿½s Lethal Attack! Otamaï¿½s Desperate Challenge!",
             absoluteEpisode: 1038
           },
           {
@@ -5343,7 +5343,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1042,
-            title: "The Predator’s Trap - Black Maria’s Temptation!",
+            title: "The Predatorï¿½s Trap - Black Mariaï¿½s Temptation!",
             absoluteEpisode: 1042
           },
           {
@@ -5373,7 +5373,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1048,
-            title: "For the Future! Yamato and the Great Swordsmen’s Pledge",
+            title: "For the Future! Yamato and the Great Swordsmenï¿½s Pledge",
             absoluteEpisode: 1048
           },
           {
@@ -5383,12 +5383,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 1050,
-            title: "Two Dragons Face Off! Momonosuke’s Determination!",
+            title: "Two Dragons Face Off! Momonosukeï¿½s Determination!",
             absoluteEpisode: 1050
           },
           {
             episode: 1051,
-            title: "A Legend All Over Again! Luffy’s Fist Roars in the Sky",
+            title: "A Legend All Over Again! Luffyï¿½s Fist Roars in the Sky",
             absoluteEpisode: 1051
           },
           {
@@ -5733,7 +5733,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1119,
-            title: "The Entrusted Message! King Cobra’s Resolve",
+            title: "The Entrusted Message! King Cobraï¿½s Resolve",
             absoluteEpisode: 1119
           },
           {
@@ -6478,7 +6478,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 7,
-            title: "Déjà vu",
+            title: "Dï¿½jï¿½ vu",
             absoluteEpisode: 81
           },
           {
@@ -7718,7 +7718,7 @@ window._ANIME_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qEUrbXJ2qt4Rg84Btlx4STOhgte.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/j6RVYpovoPsk269DANJkAerHpzg.jpg",
-    overview: "After Majin Buu defeat, Goku, friend enjoy peace, but new threat emerge from beyond stars — god of destruction, powerful warrior from other universe, force Goku push past Super Saiyan into whole new level of power.",
+    overview: "After Majin Buu defeat, Goku, friend enjoy peace, but new threat emerge from beyond stars ï¿½ god of destruction, powerful warrior from other universe, force Goku push past Super Saiyan into whole new level of power.",
     director: "Kimitoshi Chioka",
     cast: [
       "Masako Nozawa, Ryo Horikawa, Yuko Minaguchi, Bin Shimada, Naoko Watanabe"
@@ -7871,7 +7871,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 28,
-            title: "The 6th Universe's God of Destruction — His Name's Champa",
+            title: "The 6th Universe's God of Destruction ï¿½ His Name's Champa",
             duration: "23m"
           },
           {
@@ -7901,7 +7901,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 34,
-            title: "Piccolo vs Frost — Bet Everything on the Makankosappo!",
+            title: "Piccolo vs Frost ï¿½ Bet Everything on the Makankosappo!",
             duration: "23m"
           },
           {
@@ -8151,7 +8151,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 84,
-            title: "Son Goku the Talent Scout — Inviting Kuririn and No. 18",
+            title: "Son Goku the Talent Scout ï¿½ Inviting Kuririn and No. 18",
             duration: "23m"
           },
           {
@@ -8266,7 +8266,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 107,
-            title: "Revenge ‘F'! The Cunning Trap?!",
+            title: "Revenge ï¿½F'! The Cunning Trap?!",
             duration: "23m"
           },
           {
@@ -9112,7 +9112,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 55,
-            title: "That's Earth Papa… The Counterattack of Freeza Father and Son",
+            title: "That's Earth Papaï¿½ The Counterattack of Freeza Father and Son",
             duration: "25m",
             absoluteEpisode: 55
           },
@@ -9178,7 +9178,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 66,
-            title: "The Time has Come to Become One Again… Piccolo's Decision for Ultimate Power!",
+            title: "The Time has Come to Become One Againï¿½ Piccolo's Decision for Ultimate Power!",
             duration: "25m",
             absoluteEpisode: 66
           },
@@ -9657,7 +9657,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 47,
-            title: "One Time Only Miracle… Will the Super Combination With That Guy Come About?",
+            title: "One Time Only Miracleï¿½ Will the Super Combination With That Guy Come About?",
             duration: "25m",
             absoluteEpisode: 145
           },
@@ -11286,7 +11286,7 @@ window._ANIME_DATA = [
               },
               {
                 episode: 15,
-                title: "The Secret Weapon Is Called…",
+                title: "The Secret Weapon Is Calledï¿½",
                 duration: "30m",
                 absoluteEpisode: 15
               },
@@ -11495,7 +11495,7 @@ window._ANIME_DATA = [
               },
               {
                 episode: 17,
-                title: "Something Important…",
+                title: "Something Importantï¿½",
                 duration: "30m",
                 absoluteEpisode: 49
               },
@@ -12680,7 +12680,7 @@ window._ANIME_DATA = [
               },
               {
                 episode: 18,
-                title: "The Legendary Ino–Shika–Cho",
+                title: "The Legendary Inoï¿½Shikaï¿½Cho",
                 duration: "30m",
                 absoluteEpisode: 239
               },
@@ -13419,7 +13419,7 @@ window._ANIME_DATA = [
               },
               {
                 episode: 10,
-                title: "Coup d'État",
+                title: "Coup d'ï¿½tat",
                 duration: "30m",
                 absoluteEpisode: 358
               },
@@ -14117,7 +14117,7 @@ window._ANIME_DATA = [
               },
               {
                 episode: 58,
-                title: "The Two of Them… Always",
+                title: "The Two of Themï¿½ Always",
                 duration: "30m",
                 absoluteEpisode: 471
               },
@@ -14171,25 +14171,25 @@ window._ANIME_DATA = [
               },
               {
                 episode: 67,
-                title: "Naruto · Hinata",
+                title: "Naruto ï¿½ Hinata",
                 duration: "30m",
                 absoluteEpisode: 480
               },
               {
                 episode: 68,
-                title: "Sasuke · Sakura",
+                title: "Sasuke ï¿½ Sakura",
                 duration: "30m",
                 absoluteEpisode: 481
               },
               {
                 episode: 69,
-                title: "Gaara · Shikamaru",
+                title: "Gaara ï¿½ Shikamaru",
                 duration: "30m",
                 absoluteEpisode: 482
               },
               {
                 episode: 70,
-                title: "Jiraiya · Kakashi",
+                title: "Jiraiya ï¿½ Kakashi",
                 duration: "30m",
                 absoluteEpisode: 483
               },
@@ -16095,7 +16095,7 @@ window._ANIME_DATA = [
       }
 ,
 {
-  "id": "bleach_1905",
+  "id": "Bleach",
   "title": "Bleach",
   "type": "TV Show",
   "year": 2004,
