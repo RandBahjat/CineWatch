@@ -12161,8 +12161,8 @@ window._MOVIES_DATA = [
   {
     title: "Dragon Ball Z: Wrath of the Dragon",
     type: "Movie",
-    year: 1991,
-    rating: 6.5,
+    year: 1995,
+    rating: 7.4,
     age: "PG",
     duration: "43m",
     genres: [
