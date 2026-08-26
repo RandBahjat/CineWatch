@@ -12104,6 +12104,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Dragon Ball Super: Broly",
+    type: "Movie",
+    year: 2018,
+    rating: 7.7,
+    age: "PG",
+    duration: "1h 40m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uMEgkyiPznZP5AiMSWAk2jsj5gC.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/Dnk4iSqqNkZBJBPeFdAegTaxD5.jpg",
+    videoUrl: "503314",
+    overview: "Ancient legend of Saiyan monster Broly turn real, awaken on remote planet by Frieza's scheme. Goku, Vegeta must team up face Broly's near-limitless power, uncover truth of Saiyan history long buried.",
+    director: "Tatsuya Nagamine",
+    cast: [
+      "Masako Nozawa, Ryō Horikawa, Bin Shimada, Kōichi Yamadera, Aya Hisakawa"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
