@@ -11858,7 +11858,7 @@ window._MOVIES_DATA = [
     overview: "Detective, psychologist Alex Cross join force with escape victim track down serial kidnapper hold group of women captive. Race against time uncover killer identity before he strike again, claim another life.",
     director: "Gary Fleder",
     cast: [
-      "Gerard Butler, Aaron Eckhart, Morgan Freeman, Angela Bassett, Alon Aboutboul"
+      "Morgan Freeman, Ashley Judd, Cary Elwes, Tony Goldwyn, Bill Nunn"
     ],
     trending: false,
     featured: false,
