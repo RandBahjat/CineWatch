@@ -11578,7 +11578,7 @@ window._MOVIES_DATA = [
     overview: "NYPD detective investigate partner's death, uncover dark secret while immigrant woman haunt by mysterious event she can't explain. Two story collide, reveal shocking truth tie both together.",
     director: "Declan Dale",
     cast: [
-      "Jonah Hill, Miles Teller, Ana de Armas, Bradley Cooper, Kevin Pollak"
+      "Keanu Reeves, Ana de Armas, Christopher McDonald, Big Daddy Kane, Mira Sorvino"
     ],
     trending: false,
     featured: false,
