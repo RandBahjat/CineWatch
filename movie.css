@@ -6532,20 +6532,37 @@ body.rtl-layout .account-side-panel.open {
   padding-left: 20px;
 }
 
+.top10-track {
+  padding-left: 20px;
+}
+
 .top10-track .movie-card {
-  flex: 0 0 160px;
+  flex: 0 0 210px;
+  width: 210px;
+  max-width: 210px;
+  display: flex;
+  flex-direction: column;
 }
 
 .top10-track .movie-card:first-child {
-  margin-left: 30px; 
+  margin-left: 0px; 
 }
 
 .top10-track .card-poster-wrap {
-  overflow: visible; /* Prevent clipping the number */
+  width: 140px;
+  margin-left: auto;
+  overflow: hidden; /* Prevent zoom bleeding */
+  z-index: 2; /* Poster above number */
+}
+
+.top10-track .card-details {
+  width: 140px;
+  margin-left: auto; /* Push text to right to align with poster */
+  padding-top: 8px;
 }
 
 .top10-track .card-poster {
-  border-radius: var(--radius-xs); /* Keep image corners rounded */
+  border-radius: var(--radius-xs); 
 }
 
 .force-poster-wrap {
@@ -6554,15 +6571,15 @@ body.rtl-layout .account-side-panel.open {
 
 .top10-rank-badge {
   position: absolute;
-  bottom: -15px; 
-  left: -25px; 
-  font-size: 140px;
+  bottom: 50px; /* Sits above the text area safely */
+  left: 0px; /* Sits in the 70px empty pocket on the left */
+  font-size: 160px;
   font-weight: 900;
   color: #000;
   -webkit-text-stroke: 4px #e50914;
   text-shadow: 4px 4px 10px rgba(0,0,0,0.8);
   line-height: 1;
-  z-index: 10;
+  z-index: 1; /* Behind the poster */
   font-family: 'Inter', sans-serif;
   pointer-events: none;
   letter-spacing: -5px;
@@ -6578,15 +6595,21 @@ body.rtl-layout .account-side-panel.open {
     padding-left: 10px;
   }
   .top10-track .movie-card {
-    flex: 0 0 120px;
+    flex: 0 0 160px;
+    width: 160px;
+    max-width: 160px;
+  }
+  .top10-track .card-poster-wrap,
+  .top10-track .card-details {
+    width: 110px;
   }
   .top10-track .movie-card:first-child {
-    margin-left: 25px;
+    margin-left: 0px;
   }
   .top10-rank-badge {
-    font-size: 100px;
-    bottom: -10px;
-    left: -15px;
+    font-size: 110px;
+    bottom: 50px;
+    left: 0px;
     -webkit-text-stroke: 3px #e50914;
   }
 }
