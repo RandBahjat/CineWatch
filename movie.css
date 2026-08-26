@@ -6539,6 +6539,8 @@ body.rtl-layout .account-side-panel.open {
 
 .top10-track .movie-card {
   flex: 0 0 160px;
+  width: 160px; /* Strictly enforce width to prevent exploding posters */
+  max-width: 160px;
 }
 
 /* Force poster layout for Trending Today */
@@ -6553,14 +6555,12 @@ body.rtl-layout .account-side-panel.open {
   left: 0;
   background-color: #e50914;
   color: white;
-  padding: 6px 4px;
+  padding: 5px 3px; /* Slightly thinner padding to match Cineby */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom-right-radius: 8px;
   z-index: 10;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
   pointer-events: none;
   width: 32px;
 }
@@ -6569,12 +6569,12 @@ body.rtl-layout .account-side-panel.open {
   font-size: 0.55rem;
   font-weight: 700;
   line-height: 1;
-  margin-bottom: 2px;
   text-transform: uppercase;
+  margin-bottom: 0; /* Remove gap to match Cineby tightly grouped text */
 }
 
 .top10-rank-num {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 900;
   line-height: 1;
   letter-spacing: -0.5px;
