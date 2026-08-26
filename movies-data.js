@@ -12226,7 +12226,7 @@ window._MOVIES_DATA = [
       "Fantasy"
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ipfeRIqcBj5NfCLkTtg39enfJV2.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uVJqC187rKxQ1sJsWlKjNfAzeTk.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oYREex6JaANz1aVPYLcXvdpuTnY.jpg",
     videoUrl: "39103",
     overview: "Cooler, Frieza's brother, return seek revenge for past defeat, ally with race of mechanical being take over peaceful planet. Goku, friend get pull into fight protect innocent world from Cooler's cybernetic army.",
