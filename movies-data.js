@@ -11686,7 +11686,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Crazy, Stupid, Love.",
+    title: "The Great Gatsby",
     type: "Movie",
     year: 2011,
     rating: 7.4,
