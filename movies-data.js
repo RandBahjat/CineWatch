@@ -12108,7 +12108,7 @@ window._MOVIES_DATA = [
     title: "Dragon Ball Z: Bojack Unbound",
     type: "Movie",
     year: 1993,
-    rating: 7.7,
+    rating: 7.1,
     age: "PG",
     duration: "1h 40m",
     genres: [
