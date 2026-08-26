@@ -11612,7 +11612,7 @@ window._MOVIES_DATA = [
   {
     title: "In Time",
     type: "Movie",
-    year: 2025,
+    year: 2011,
     rating: 6.4,
     age: "R",
     duration: "1h 33m",
