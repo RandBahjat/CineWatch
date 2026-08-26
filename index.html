@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="movie.css?v=20260822_4185">
+    <link rel="stylesheet" href="movie.css?v=20260822_4186">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows ΓÇö all in one simple, easy-to-use site.</title>
@@ -17,9 +17,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_3153"></script>
-    <script src="series-data.js?v=20260818_3153"></script>
-    <script src="anime-data.js?v=20260818_3153"></script>
+    <script src="movies-data.js?v=20260818_3154"></script>
+    <script src="series-data.js?v=20260818_3154"></script>
+    <script src="anime-data.js?v=20260818_3154"></script>
     <script src="movie.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -459,6 +459,14 @@
 
         <!-- Continue Watching View (Dynamic Full-Page) -->
         <section class="shelf-section hidden" id="continueSection">
+            <div class="shelf-header" style="justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2 class="shelf-title shelf-title-accent">Continue Watching</h2>
+                <div class="cw-action-bar" id="cwActionBar" style="display: flex; gap: 10px;">
+                    <button id="cwSelectBtn" class="btn btn-secondary" style="padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 500;">Select</button>
+                    <button id="cwRemoveSelectedBtn" class="btn btn-primary hidden" style="padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 500; background-color: #ef4444; border-color: #ef4444; color: white;">Remove Selected (0)</button>
+                    <button id="cwCancelSelectBtn" class="btn btn-secondary hidden" style="padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 500;">Cancel</button>
+                </div>
+            </div>
             <div class="movies-grid" id="continueGrid"></div>
             <div class="empty-state hidden" id="emptyContinue">
                 <div class="empty-icon"><ion-icon name="play-circle-outline"></ion-icon></div>
