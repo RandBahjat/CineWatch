@@ -30,7 +30,7 @@ if (window.location.hash.includes("type=recovery")) {
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
 let FEATURED_TITLES = ["Batman: Knightfall Part 1: Knightfall","Mutiny","Reacher", "Lanterns", "Lioness", "The Invite", "Spider-Man: Brand New Day", "The Odyssey", "Obsession", "The Last House", "Silo"];
-let TOP_10_TRENDING_TODAY = ["Motor"Batman: Knightfall Part 1: Knightfall", "Naruto Shippūden", "One Piece", "Dragon Ball Z", "Spider-Man: Brand New Day", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Reacher"];
+let TOP_10_TRENDING_TODAY = ["Motor City",Batman: Knightfall Part 1: Knightfall", "Naruto Shippūden", "One Piece", "Dragon Ball Z", "Spider-Man: Brand New Day", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Reacher"];
 let TRENDING_THIS_WEEK_MOVIES = ["Batman: Knightfall Part 1: Knightfall","Mutiny","Spider-Man: Brand New Day", "The Odyssey", "Motor City","Toy Story 5","Obsession", "Minions & Monsters", "The Last House", "Disclosure Day", "The Invite", "The End of Oak Street", "Backrooms", "Camp Rock 3", "Evil Dead Burn", "Project Hail Mary", "Supergirl"]; // Add titles here for 'Trending Movies This Week'
 let TRENDING_THIS_WEEK_SERIES = ["Lanterns", "Reacher", "Lucky", "Silo","One Piece", "Ted Lasso", "X-Men '97","Lioness","Outer Banks"]; // Add titles here for 'Trending Series This Week'
 const POPULAR_MOVIES = ["Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters", "The Invite", "Spider-Man: No Way Home", "The End of Oak Street", "Disclosure Day", "Camp Rock 3", "The Last House", "Michael", "Project Hail Mary"]; // Add titles here for 'Popular Movie'
