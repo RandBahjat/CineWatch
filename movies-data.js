@@ -11591,7 +11591,7 @@ window._MOVIES_DATA = [
     year: 2025,
     rating: 6.4,
     age: "R",
-    duration: "1h 42m",
+    duration: "1h 33m",
     genres: [
       "Crime",
       "Thriller",
