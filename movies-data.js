@@ -12403,7 +12403,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Dragon Ball Z: Broly - The Legendary Super Saiyan",
+    title: "Dragon Ball Z: The Tree of Might ",
     type: "Movie",
     year: 1993,
     rating: 7.3,
