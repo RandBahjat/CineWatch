@@ -6530,13 +6530,22 @@ body.rtl-layout .account-side-panel.open {
 
 .top10-track .movie-card {
   overflow: visible;
-  flex: 0 0 170px; 
-  width: 170px;
-  max-width: 170px;
+  flex: 0 0 220px; /* Wider card to hold number and poster */
+  width: 220px;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .top10-track .movie-card:first-child {
-  margin-left: 40px; /* Space so the #1 doesn't get cut off on the left edge */
+  margin-left: 0px; 
+}
+
+.top10-track .card-poster-wrap {
+  width: 150px;
+  margin-left: auto; /* Push poster to the right side of the card */
+  aspect-ratio: 2 / 3 !important; /* Force poster aspect ratio */
 }
 
 .force-poster-wrap {
@@ -6545,18 +6554,23 @@ body.rtl-layout .account-side-panel.open {
 
 .top10-rank-badge {
   position: absolute;
-  top: 115px; /* Positioned near bottom left of the 255px tall poster */
-  left: -35px;
-  font-size: 140px;
+  bottom: 60px; /* Position above the text details */
+  left: 0px; /* Sit on the far left of the wider card */
+  font-size: 160px;
   font-weight: 900;
   color: #000;
   -webkit-text-stroke: 4px #e50914;
   text-shadow: 4px 4px 10px rgba(0,0,0,0.8);
   line-height: 1;
-  z-index: 5; /* Above the poster wrap */
+  z-index: 10;
   font-family: 'Inter', sans-serif;
   pointer-events: none;
-  letter-spacing: -5px;
+  letter-spacing: -10px;
+}
+
+.top10-track .movie-card:hover .top10-rank-badge {
+  color: #e50914;
+  transition: color 0.3s ease;
 }
 
 @media (max-width: 768px) {
@@ -6564,22 +6578,17 @@ body.rtl-layout .account-side-panel.open {
     padding-left: 10px;
   }
   .top10-track .movie-card {
-    flex: 0 0 120px;
-    width: 120px;
-    max-width: 120px;
+    flex: 0 0 160px;
+    width: 160px;
+    max-width: 160px;
   }
-  .top10-track .movie-card:first-child {
-    margin-left: 30px;
+  .top10-track .card-poster-wrap {
+    width: 110px;
   }
   .top10-rank-badge {
-    font-size: 90px;
-    top: 80px; /* Adjusted for shorter mobile posters */
-    left: -20px;
+    font-size: 110px;
+    bottom: 50px;
+    left: -10px;
     -webkit-text-stroke: 3px #e50914;
   }
-}
-
-.top10-track .movie-card:hover .top10-rank-badge {
-  color: #e50914;
-  transition: color 0.3s ease;
 }
