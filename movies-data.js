@@ -11778,7 +11778,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wqkWrOFtYnZSvIMu8Lsmz7WIvKC.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rLPk1hXHV9KDH89Jcx5ms4q4AjE.jpg",
     videoUrl: "310",
-    overview: "Woman accidentally expose to powerful drug that unlock full potential of human brain, gain extraordinary power grow more intense as brain capacity keep expand. Race against time, before power consume her completely, evade dangerous gang chase her down.",
+    overview: "Frustrated TV reporter complain God not doing his job right, get granted all of God's power himself, see if he do better. Chaos, comedy, humility follow as he learn real weight of power, responsibility.",
     director: "Luc Besson",
     cast: [
       "Scarlett Johansson, Morgan Freeman, Choi Min-sik, Amr Waked"
