@@ -11663,7 +11663,7 @@ window._MOVIES_DATA = [
     title: "Crazy, Stupid, Love.",
     type: "Movie",
     year: 2011,
-    rating: 7.6,
+    rating: 7.4,
     age: "R",
     duration: "1h 53m",
     genres: [
