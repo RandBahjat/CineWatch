@@ -12257,7 +12257,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/8bBwrxTwj4MVoy2ivYCqNLCxRcf.jpg",
     videoUrl: "24752",
     overview: "Cooler, Frieza's older, more powerful brother, seek vengeance for kin's defeat, hunt Goku down on New Namek. Goku must survive brutal onslaught, tap into new strength stop Cooler once, for all.",
-    director: "Daisuke Nishio",
+    director: "Yoshihiro Ueda",
     cast: [
       "Masako Nozawa, Ryō Horikawa, Takeshi Kusao, Shigeru Chiba, Toshio Furukawa"
     ],
