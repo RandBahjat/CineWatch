@@ -11537,8 +11537,8 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 2016,
     rating: 7.1,
-    age: "PG",
-    duration: "1h 45m",
+    age: "R",
+    duration: "1h 54m",
     genres: [
       "Action",
       "Animation",
