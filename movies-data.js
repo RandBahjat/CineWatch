@@ -12366,7 +12366,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/2WTjYoswcKZTQrokeUOhY3Xb3mZ.jpg",
     videoUrl: "44251",
     overview: "Broly, Legendary Super Saiyan, survive first defeat, revive by fanatic follower, unleash unstoppable rage once more. Gohan, Goten, Trunks, Videl trap in his path, must fight for survival against near god-like power.",
-    director: "Daisuke Nishio",
+    director: "Mitsuo Hashimoto",
     cast: [
       "Masako Nozawa, Hiromi Tsuru, Mami Koyama, Naoki Tatsuta, Shigeru Chiba"
     ],
