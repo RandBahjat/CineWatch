@@ -12185,6 +12185,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Dragon Ball Z: Wrath of the Dragon",
+    type: "Movie",
+    year: 1995,
+    rating: 7.4,
+    age: "E10+",
+    duration: "52m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7uRu9EA3nie0n2mlVDDLlTI3IzC.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/orROcqUdNe3rdepse6nskbxovXJ.jpg",
+    videoUrl: "39108",
+    overview: "Ancient evil warrior Tapion seal inside music box, wake up alongside monstrous beast Hirudegarn once he free. Trunks, Goten must earn Tapion's trust, work together stop Hirudegarn before it destroy world twice over.",
+    director: "Mitsuo Hashimoto",
+    cast: [
+      "Masako Nozawa, Ryō Horikawa, Takeshi Kusao, Yūko Minaguchi, Kōji Yada"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
