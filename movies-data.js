@@ -11793,7 +11793,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 2008,
     rating: 6.7,
-    age: "PG-13",
+    age: "R",
     duration: "1h 41m",
     genres: [
       "Comedy",
