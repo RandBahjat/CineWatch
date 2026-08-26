@@ -690,7 +690,6 @@ function renderContinueWatchingShelf() {
             <img src="${movie.backdrop || movie.poster}" alt="${movie.title}" class="card-poster">
           </picture>
           <div class="card-gradient"></div>
-          <button class="continue-remove-btn" data-remove-id="${movie.id}" title="Remove from list">&times;</button>
           <div class="card-overlay"></div>
           <div class="progress-bar-wrap">
             <div class="progress-bar-fill" style="width: ${percent}%"></div>
