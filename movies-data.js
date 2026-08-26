@@ -12011,7 +12011,7 @@ window._MOVIES_DATA = [
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/soq3AxjALdBfdPAm8H7yuMmNL5Y.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/9bbxqz1iPEfZN9Xi2ZjJhkp5JRo.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/xXuVZCvWBjeDNcdSezBb6m3Qkpx.jpg",
     videoUrl: "610150",
     overview: "Red Ribbon Army secretly rebuild, create powerful new android warrior Gamma 1, Gamma 2 call Super Hero. Piccolo, Gohan must step up, protect Earth, family as new threat push them past old limit.",
     director: "Tetsuro Kodama",
