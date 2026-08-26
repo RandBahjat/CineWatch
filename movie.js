@@ -4015,21 +4015,39 @@ function updateIframeServer() {
 
       if (!serverSelect.dataset.animeServersPopulated) {
         serverSelect.innerHTML = `
-          <option value="vidsrc-me">VidSrc ME (Multi-Language)</option>
           <option value="vidsrc-sbs">VidSrc (Reliable / Fast)</option>
+          <option value="vidsrc-me">VidSrc ME (Multi-Language)</option>
           <option value="zxcstream">ZXC Stream (Japanese Sub)</option>
         `;
         serverSelect.dataset.animeServersPopulated = "true";
       }
 
       const selected = serverSelect.value;
+      
+      let mappedSeason = data.season;
+      let mappedEpisode = data.episode;
+      
+      // Fix Bleach episode mapping for TMDB-based servers
+      if (String(data.id) === "30984" || String(data.id) === "tt0436992" || String(data.parentId) === "Bleach") {
+        const bleachSeasons = [20, 21, 22, 28, 18, 22, 20, 16, 22, 16, 7, 17, 36, 51, 26, 24];
+        let ep = parseInt(data.episode) || 1;
+        for (let s = 0; s < bleachSeasons.length; s++) {
+          if (ep <= bleachSeasons[s]) {
+            mappedSeason = s + 1;
+            mappedEpisode = ep;
+            break;
+          }
+          ep -= bleachSeasons[s];
+        }
+      }
+
       if (selected === 'zxcstream') {
-        newUrl = data.type === 'tv' ? `https://player.zxcstream.xyz/embed/tv/${data.id}/${data.season}/${data.episode}` : `https://player.zxcstream.xyz/embed/movie/${data.id}`;
+        newUrl = data.type === 'tv' ? `https://player.zxcstream.xyz/embed/tv/${data.id}/${mappedSeason}/${mappedEpisode}` : `https://player.zxcstream.xyz/embed/movie/${data.id}`;
       } else if (selected === 'vidsrc-me') {
         const idParam = String(data.id).startsWith('tt') ? `imdb=${data.id}` : `tmdb=${data.id}`;
-        newUrl = data.type === 'tv' ? `https://vidsrc.me/embed/tv?${idParam}&season=${data.season}&episode=${data.episode}` : `https://vidsrc.me/embed/movie?${idParam}`;
+        newUrl = data.type === 'tv' ? `https://vidsrc.me/embed/tv?${idParam}&season=${mappedSeason}&episode=${mappedEpisode}` : `https://vidsrc.me/embed/movie?${idParam}`;
       } else {
-        newUrl = data.type === 'tv' ? `https://vidsrc.sbs/embed/tv/${data.id}/${data.season}/${data.episode}` : `https://vidsrc.sbs/embed/movie/${data.id}`;
+        newUrl = data.type === 'tv' ? `https://vidsrc.sbs/embed/tv/${data.id}/${mappedSeason}/${mappedEpisode}` : `https://vidsrc.sbs/embed/movie/${data.id}`;
       }
     } else {
       newUrl = data.type === 'tv' ? `https://vidsrc.sbs/embed/tv/${data.id}/${data.season}/${data.episode}` : `https://vidsrc.sbs/embed/movie/${data.id}`;
