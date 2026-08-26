@@ -11549,7 +11549,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/mDcPRjZC1bb6LavFU3gwsWdVfCM.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oNoprEND25zXR6Fns8cIZUkuoMc.jpg",
     videoUrl: "308266",
-    overview: "Krypto, Superman's loyal dog, team up with ragtag group of shelter pet after Justice League get kidnap. Must learn work together, tap into own super power, save owner, world from villainous guinea pig plan.",
+    overview: "Two young guy stumble into arm dealing business, land massive three hundred million dollar contract supply US military in Afghanistan war. Greed, ambition push them deeper into shady, dangerous world of international arms trade.",
     director: "Jared Stern",
     cast: [
       "Dwayne Johnson, Kevin Hart, Kate McKinnon, John Krasinski, Vanessa Bayer, Marc Maron"
