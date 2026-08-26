@@ -12050,6 +12050,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Dragon Ball Z: Fusion Reborn",
+    type: "Movie",
+    year: 1995,
+    rating: 7.6,
+    age: "PG",
+    duration: "51m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rCU5ddP3FVSDJy81UldUsBuf3ag.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/xeYKMrkcug0A6Igp0UGial69FVU.jpg",
+    videoUrl: "39107",
+    overview: "Evil demon Janemba born from imbalance in Other World, warp reality, break law of life, death itself. Goku, newly fuse Gogeta must stop him before chaos destroy both living, dead world.",
+    director: "Osamu Kasai",
+    cast: [
+      "Masako Nozawa, Ryō Horikawa, Shigeru Chiba, Toshio Furukawa, Bin Shimada"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
