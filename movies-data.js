@@ -12078,9 +12078,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Dragon Ball Z: Battle of Gods",
+    title: "Dragon Ball Super: Broly",
     type: "Movie",
-    year: 2013,
+    year: 2018,
     rating: 7.1,
     age: "TV-PG",
     duration: "1h 25m",
