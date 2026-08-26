@@ -11944,10 +11944,10 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Get Smart",
+    title: "The Other Guys",
     type: "Movie",
-    year: 2008,
-    rating: 6.5,
+    year: 2010,
+    rating: 6.7,
     age: "PG-13",
     duration: "1h 50m",
     genres: [
