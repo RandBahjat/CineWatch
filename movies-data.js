@@ -11881,7 +11881,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/hywuHoNTiDXp0M32LUa228EQ2br.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/l6VxsJ3eZ9l99T8ayLs4CQJXZUR.jpg",
     videoUrl: "11560",
-    overview: "Detective, psychologist Alex Cross join force with escape victim track down serial kidnapper hold group of women captive. Race against time uncover killer identity before he strike again, claim another life.",
+    overview: "Successful lawyer discover husband hide dark secret, deserter accuse of war crime long ago. Team with disgrace military lawyer defend him, dig up buried truth put both their life at risk.",
     director: "Gary Fleder",
     cast: [
       "Morgan Freeman, Ashley Judd, Cary Elwes, Tony Goldwyn, Bill Nunn"
