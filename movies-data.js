@@ -12136,7 +12136,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 1991,
     rating: 6.5,
-    age: "",
+    age: "PG",
     duration: "50m",
     genres: [
       "Action",
