@@ -11917,6 +11917,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Pain & Gain",
+    type: "Movie",
+    year: 2013,
+    rating: 6.4,
+    age: "R",
+    duration: "2h 9m",
+    genres: [
+      "Action",
+      "Crime",
+      "Comedy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9WqA0Ry9wmTzFvom8mNbcyKZQgP.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/86rDAqR5oDu29qZTGyk88VdB2lI.jpg",
+    videoUrl: "134374",
+    overview: "Trio of dim-witted bodybuilder hatch scheme kidnap, extort wealthy client, live out twisted version American dream. Plan spiral out control, greed, violence, incompetence turn get-rich scheme into bloody disaster.",
+    director: "Michael Bay",
+    cast: [
+      "Mark Wahlberg, Dwayne Johnson, Anthony Mackie, Tony Shalhoub, Ed Harris"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
