@@ -12188,8 +12188,8 @@ window._MOVIES_DATA = [
   {
     title: "Dragon Ball Z: The Return of Cooler",
     type: "Movie",
-    year: 1995,
-    rating: 7.4,
+    year: 1992,
+    rating: 6.9,
     age: "E10+",
     duration: "52m",
     genres: [
