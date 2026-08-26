@@ -11894,7 +11894,7 @@ window._MOVIES_DATA = [
   {
     title: "Pain & Gain",
     type: "Movie",
-    year: 20,
+    year: 2013,
     rating: 6.4,
     age: "PG-13",
     duration: "1h 55m",
