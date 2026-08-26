@@ -6525,11 +6525,16 @@ body.rtl-layout .account-side-panel.open {
 
 /* --- Top 10 Rank Badge Styles (Netflix Style) --- */
 .top10-track {
-  padding-left: 30px;
+  padding-left: 35px;
 }
 
 .top10-track .movie-card {
   overflow: visible;
+  flex: 0 0 170px; /* Narrower width for posters */
+}
+
+.force-poster-wrap {
+  aspect-ratio: 2 / 3 !important;
 }
 
 .top10-rank-badge {
