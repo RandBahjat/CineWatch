@@ -11781,7 +11781,7 @@ window._MOVIES_DATA = [
     overview: "Frustrated TV reporter complain God not doing his job right, get granted all of God's power himself, see if he do better. Chaos, comedy, humility follow as he learn real weight of power, responsibility.",
     director: "Tom Shadyac",
     cast: [
-      "Scarlett Johansson, Morgan Freeman, Choi Min-sik, Amr Waked"
+      "Jim Carrey, Morgan Freeman, Jennifer Aniston, Philip Baker Hall, Catherine Bell"
     ],
     trending: false,
     featured: false,
