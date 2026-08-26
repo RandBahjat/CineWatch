@@ -11882,7 +11882,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/l6VxsJ3eZ9l99T8ayLs4CQJXZUR.jpg",
     videoUrl: "11560",
     overview: "Successful lawyer discover husband hide dark secret, deserter accuse of war crime long ago. Team with disgrace military lawyer defend him, dig up buried truth put both their life at risk.",
-    director: "Gary Fleder",
+    director: "Carl Franklin",
     cast: [
       "Morgan Freeman, Ashley Judd, Cary Elwes, Tony Goldwyn, Bill Nunn"
     ],
