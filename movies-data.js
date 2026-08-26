@@ -11724,7 +11724,7 @@ window._MOVIES_DATA = [
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/th4E1yqsE8DGpAseLiUrI60Hf8V.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/7F5OIBVD2ZXKQrfPQq6azMZQGAK.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/nvxrQQspxmSblCYDtvDAbVFX8Jt.jpg",
     videoUrl: "64682",
     overview: "Young writer Nick Carraway move next door to mysterious, wealthy Jay Gatsby, drawn into his lavish world of party, wealth, obsession. Gatsby's endless pursuit of lost love Daisy expose dark side of American dream.",
     director: "Baz Luhrmann",
