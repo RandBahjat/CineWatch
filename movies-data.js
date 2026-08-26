@@ -12351,8 +12351,8 @@ window._MOVIES_DATA = [
   {
     title: "Dragon Ball Z: Broly - Second Coming",
     type: "Movie",
-    year: 1986,
-    rating: 6.6,
+    year: 1994,
+    rating: 6.5,
     age: "PG",
     duration: "50m",
     genres: [
