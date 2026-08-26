@@ -12094,7 +12094,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uMEgkyiPznZP5AiMSWAk2jsj5gC.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/Dnk4iSqqNkZBJBPeFdAegTaxD5.jpg",
     videoUrl: "503314",
-    overview: "God of Destruction Beerus wake from long slumber, hunt for legendary Super Saiyan God he dream about. Goku, friend must find way awaken this new form before Beerus destroy Earth out boredom, rage.",
+    overview: "Ancient legend of Saiyan monster Broly turn real, awaken on remote planet by Frieza's scheme. Goku, Vegeta must team up face Broly's near-limitless power, uncover truth of Saiyan history long buried.",
     director: "Masahiro Hosoda",
     cast: [
       "Masako Nozawa, Ryō Horikawa, Kōichi Yamadera, Kenji Nojima, Aya Hisakawa"
