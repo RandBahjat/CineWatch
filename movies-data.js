@@ -11897,9 +11897,9 @@ window._MOVIES_DATA = [
     year: 2013,
     rating: 6.4,
     age: "R",
-    duration: "1h 55m",
+    duration: "2h 9m",
     genres: [
-      "Crime",
+      "",
       "Drama",
       "Thriller"
 
