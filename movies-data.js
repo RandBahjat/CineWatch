@@ -11565,7 +11565,7 @@ window._MOVIES_DATA = [
     year: 2016,
     rating: 4.4,
     age: "R",
-    duration: "1h 54m",
+    duration: "1h 42m",
     genres: [
       "Crime",
       "Comedy",
