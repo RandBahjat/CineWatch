@@ -11609,6 +11609,30 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "In Time",
+    type: "Movie",
+    year: 2025,
+    rating: 6.4,
+    age: "R",
+    duration: "1h 33m",
+    genres: [
+      "Drama",
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wmLoMyofbseLfxiGgk1Iz5H97c3.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/n9W9bX3NKPKkvsHpftf56AZF1G4.jpg",
+    videoUrl: "1242404",
+    overview: "One day in life of headteacher run struggling reform school for troubled teenage boy. Steve fight hold school, students together, while own life quietly unravel under weight of it all.",
+    director: "Tim Mielants",
+    cast: [
+      "Cillian Murphy, Tracey Ullman, Simbi Ajikawo (Little Simz), Jay Lycurgo, Emily Watson"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
