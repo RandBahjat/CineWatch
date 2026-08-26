@@ -11766,7 +11766,7 @@ window._MOVIES_DATA = [
     title: "Bruce Almighty",
     type: "Movie",
     year: 2003,
-    rating: 6.4,
+    rating: 6.8,
     age: "R",
     duration: "1h 29m",
     genres: [
