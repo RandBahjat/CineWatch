@@ -12109,7 +12109,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 1993,
     rating: 7.1,
-    age: "PG",
+    age: "E10+",
     duration: "1h 40m",
     genres: [
       "Action",
