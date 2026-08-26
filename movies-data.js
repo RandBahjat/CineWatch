@@ -12348,6 +12348,34 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Dragon Ball: Curse of the Blood Rubies",
+    type: "Movie",
+    year: 1986,
+    rating: 6.6,
+    age: "PG",
+    duration: "50m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy",
+      "Comedy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dZCWRFJnwyxYOhzAhf7Xyru4moB.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/1hiaeEgYcVU3gA3nrPpcqJDZ4SV.jpg",
+    videoUrl: "39144",
+    overview: "Young Goku, monk Bulma go on quest gather magic Dragon Balls, run into evil King Gurumes who want use them for own selfish wish. Adventure, martial art, comedy fill quest to stop tyrant's greedy plan.",
+    director: "Daisuke Nishio",
+    cast: [
+      "Masako Nozawa, Hiromi Tsuru, Mami Koyama, Naoki Tatsuta, Shigeru Chiba"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
