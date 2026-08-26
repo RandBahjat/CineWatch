@@ -604,7 +604,7 @@ function createMovieCardHTML(movie, rank = null) {
   const fav = isFavorite(movie.id);
   const primaryGenre = movie.genres && movie.genres.length > 0 ? translateGenre(movie.genres[0]) : "";
   const displayType = movie.type || (movie.seasons ? "TV Show" : "Movie");
-  const rankHtml = rank !== null ? `<div class="top10-rank-badge"><ion-icon name="trophy"></ion-icon><span>#${rank}</span></div>` : "";
+  const rankHtml = rank !== null ? `<div class="top10-rank-badge">${rank}</div>` : "";
   
   return `
     <div class="movie-card" data-id="${movie.id}">
