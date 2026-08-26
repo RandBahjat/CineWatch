@@ -11532,6 +11532,34 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "DC League of Super-Pets",
+    type: "Movie",
+    year: 2022,
+    rating: 6.8,
+    age: "PG",
+    duration: "1h 45m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Comedy",
+      "Family"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qpPMewlugFaejXjz4YNDnpTniFX.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/mzFlwK2WN5KGCgEc4ExJmooJy97.jpg",
+    videoUrl: "539681",
+    overview: "Krypto, Superman's loyal dog, team up with ragtag group of shelter pet after Justice League get kidnap. Must learn work together, tap into own super power, save owner, world from villainous guinea pig plan.",
+    director: "Jared Stern",
+    cast: [
+      "Dwayne Johnson, Kevin Hart, Kate McKinnon, John Krasinski, Vanessa Bayer, Marc Maron"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
