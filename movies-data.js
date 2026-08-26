@@ -12174,7 +12174,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7uRu9EA3nie0n2mlVDDLlTI3IzC.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/orROcqUdNe3rdepse6nskbxovXJ.jpg",
-    videoUrl: "39102",
+    videoUrl: "391",
     overview: "Powerful Namekian warlord Lord Slug arrive Earth, drain planet of energy, plan reshape it his own dark image. Goku must push past limit, tap into hidden power to stop him before Earth wither, die.",
     director: "Mitsuo Hashimoto",
     cast: [
