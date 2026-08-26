@@ -848,15 +848,24 @@ function renderContinueWatchingPage() {
         ? `<span>In Progress</span>`
         : `<span>${Math.max(1, Math.round((item.duration - item.currentTime) / 60))}m left</span><span>${percent}%</span>`;
 
+      const isSelected = state.isCwSelectionMode && state.cwSelectedItems.has(movie.id);
+      const selectedClass = isSelected ? 'cw-selected' : '';
+      const selectionOverlay = state.isCwSelectionMode ? 
+        `<div class="cw-selection-overlay ${isSelected ? 'active' : ''}">
+           <ion-icon name="checkmark-circle"></ion-icon>
+         </div>` : '';
+      const removeBtnHtml = state.isCwSelectionMode ? '' : `<button class="continue-remove-btn" data-remove-id="${movie.id}" title="Remove from list">&times;</button>`;
+
       return `
-      <div class="movie-card continue-card" data-id="${movie.id}">
+      <div class="movie-card continue-card ${selectedClass}" data-id="${movie.id}">
         <div class="card-poster-wrap continue-poster-wrap">
           <picture>
             <source media="(max-width: 768px)" srcset="${movie.poster}">
             <img src="${movie.backdrop || movie.poster}" alt="${movie.title}" class="card-poster">
           </picture>
           <div class="card-gradient"></div>
-          <button class="continue-remove-btn" data-remove-id="${movie.id}" title="Remove from list">&times;</button>
+          ${removeBtnHtml}
+          ${selectionOverlay}
           <div class="card-overlay"></div>
           <div class="progress-bar-wrap">
             <div class="progress-bar-fill" style="width: ${percent}%"></div>
