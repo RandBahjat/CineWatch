@@ -11599,7 +11599,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wmLoMyofbseLfxiGgk1Iz5H97c3.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/n9W9bX3NKPKkvsHpftf56AZF1G4.jpg",
     videoUrl: "1242404",
-    overview: "NYPD detective investigate partner's death, uncover dark secret while immigrant woman haunt by mysterious event she can't explain. Two story collide, reveal shocking truth tie both together.",
+    overview: "One day in life of headteacher run struggling reform school for troubled teenage boy. Steve fight hold school, students together, while own life quietly unravel under weight of it all.",
     director: "Declan Dale",
     cast: [
       "Keanu Reeves, Ana de Armas, Christopher McDonald, Big Daddy Kane, Mira Sorvino"
