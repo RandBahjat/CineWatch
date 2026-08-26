@@ -12146,7 +12146,7 @@ window._MOVIES_DATA = [
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1lmwZTsqwTtvd3m60pyQfhGM2Ut.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/h5Rvh7TUOLqmY2AOebwSEnHolwB.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/vsmlvr8FX2bfGlimucXTw8XArFB.jpg",
     videoUrl: "39105",
     overview: "Vicious space pirate Bojack, freed after long imprisonment, seek revenge, wreak havoc during World Martial Arts Tournament. Young Gohan must step up, protect friend, fight fierce battle while Goku stuck away in Other World.",
     director: "Yoshihiro Ueda",
