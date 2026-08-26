@@ -12083,7 +12083,7 @@ window._MOVIES_DATA = [
     year: 2018,
     rating: 7.7,
     age: "PG",
-    duration: "1h 25m",
+    duration: "1h 40m",
     genres: [
       "Action",
       "Animation",
