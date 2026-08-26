@@ -11672,7 +11672,7 @@ window._MOVIES_DATA = [
       "Romance"
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ek8e8txUyUwd2BNqj6lFEerJfbq.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/p4RafgAPk558muOjnBMHhMArjS2.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/z2cjtcPIssilQfVaO2LrUyLjapC.jpg",
     videoUrl: "8363",
     overview: "Two awkward teen best friend try score alcohol for party before head off separate college, hoping night lead to popularity, girl, one last wild adventure together. Chaos, cop, misadventure test friendship before life pull them apart.",
