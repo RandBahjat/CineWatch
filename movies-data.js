@@ -11891,6 +11891,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "High Crimes",
+    type: "Movie",
+    year: 2002,
+    rating: 6.4,
+    age: "PG-13",
+    duration: "1h 55m",
+    genres: [
+      "Crime",
+      "Drama",
+      "Thriller"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/hywuHoNTiDXp0M32LUa228EQ2br.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/l6VxsJ3eZ9l99T8ayLs4CQJXZUR.jpg",
+    videoUrl: "11560",
+    overview: "Successful lawyer discover husband hide dark secret, deserter accuse of war crime long ago. Team with disgrace military lawyer defend him, dig up buried truth put both their life at risk.",
+    director: "Carl Franklin",
+    cast: [
+      "Ashley Judd, Morgan Freeman, Jim Caviezel, Adam Scott, Amanda Peet"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
