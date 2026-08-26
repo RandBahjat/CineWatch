@@ -11688,8 +11688,8 @@ window._MOVIES_DATA = [
   {
     title: "The Great Gatsby",
     type: "Movie",
-    year: 2011,
-    rating: 7.4,
+    year: 2013,
+    rating: 7.2,
     age: "PG-13",
     duration: "1h 58m",
     genres: [
