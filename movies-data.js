@@ -11719,6 +11719,7 @@ window._MOVIES_DATA = [
     duration: "2h 18m",
     genres: [
       "Drama",
+      "comedy"
       "Romance"
 
     ],
