@@ -12051,9 +12051,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Dragon Ball Z: Fusion Reborn",
+    title: "Dragon Ball Z: Battle of Gods",
     type: "Movie",
-    year: 1995,
+    year: ,
     rating: 7.6,
     age: "PG",
     duration: "51m",
