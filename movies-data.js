@@ -11576,7 +11576,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/rT40yt2rTZlAELcjPr8N5eqhZTN.jpg",
     videoUrl: "331962",
     overview: "NYPD detective investigate partner's death, uncover dark secret while immigrant woman haunt by mysterious event she can't explain. Two story collide, reveal shocking truth tie both together.",
-    director: "Todd Phillips",
+    director: "Declan Dale",
     cast: [
       "Jonah Hill, Miles Teller, Ana de Armas, Bradley Cooper, Kevin Pollak"
     ],
