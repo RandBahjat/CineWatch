@@ -12027,7 +12027,7 @@ window._MOVIES_DATA = [
     title: "Dragon Ball Z: Fusion Reborn",
     type: "Movie",
     year: 1995,
-    rating: 7.1,
+    rating: 7.6,
     age: "PG-13",
     duration: "1h 34m",
     genres: [
