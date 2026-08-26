@@ -12081,8 +12081,8 @@ window._MOVIES_DATA = [
     title: "Dragon Ball Super: Broly",
     type: "Movie",
     year: 2018,
-    rating: 7.1,
-    age: "TV-PG",
+    rating: 7.7,
+    age: "PG",
     duration: "1h 25m",
     genres: [
       "Action",
