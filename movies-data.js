@@ -11936,7 +11936,7 @@ window._MOVIES_DATA = [
     overview: "Bumbling analyst Maxwell Smart finally promote field agent, partner with skilled Agent 99 stop terrorist organization threaten steal nuclear weapon. Clumsy charm, gadget, spy antic clash with real danger of mission.",
     director: "Peter Segal",
     cast: [
-      "Mark Wahlberg, Dwayne Johnson, Anthony Mackie, Tony Shalhoub, Ed Harris"
+      "Steve Carell, Anne Hathaway, Dwayne Johnson, Alan Arkin, Terence Stamp"
     ],
     trending: false,
     featured: false,
