@@ -12202,7 +12202,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ipfeRIqcBj5NfCLkTtg39enfJV2.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oYREex6JaANz1aVPYLcXvdpuTnY.jpg",
     videoUrl: "39103",
-    overview: "Ancient evil warrior Tapion seal inside music box, wake up alongside monstrous beast Hirudegarn once he free. Trunks, Goten must earn Tapion's trust, work together stop Hirudegarn before it destroy world twice over.",
+    overview: "Cooler, Frieza's brother, return seek revenge for past defeat, ally with race of mechanical being take over peaceful planet. Goku, friend get pull into fight protect innocent world from Cooler's cybernetic army.",
     director: "Mitsuo Hashimoto",
     cast: [
       "Masako Nozawa, Ryō Horikawa, Takeshi Kusao, Yūko Minaguchi, Kōji Yada"
