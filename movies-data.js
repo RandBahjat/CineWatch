@@ -11996,6 +11996,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Dragon Ball Super: Super Hero",
+    type: "Movie",
+    year: 2022,
+    rating: 7.1,
+    age: "PG-13",
+    duration: "1h 40m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/pi0iZOEHeA3ih4p1IwAG4x2DZNH.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/9bbxqz1iPEfZN9Xi2ZjJhkp5JRo.jpg",
+    videoUrl: "610150",
+    overview: "Red Ribbon Army secretly rebuild, create powerful new android warrior Gamma 1, Gamma 2 call Super Hero. Piccolo, Gohan must step up, protect Earth, family as new threat push them past old limit.",
+    director: "Tetsuro Kodama",
+    cast: [
+      "Masako Nozawa, Kōichi Yamadera, Ryō Horikawa, Aya Hisakawa, Hiroshi Kamiya"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
