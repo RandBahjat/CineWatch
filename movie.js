@@ -1737,7 +1737,7 @@ function openDetailsModal(movieId) {
       document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &middot; ");
     }
 
-    document.getElementById("detailsOverview").textContent = movie.overview;
+    document.getElementById("detailsOverview").innerHTML = movie.overview;
 
     const castContainer = document.getElementById("detailsCastContainer");
     const castText = document.getElementById("detailsCastText");
@@ -2102,7 +2102,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     })() : null;
     const overview = epObj?.overview || (parentMovie?.overview ?? "");
     if (overview) {
-      overviewEl.textContent = overview;
+      overviewEl.innerHTML = overview;
       overviewEl.classList.remove("hidden");
     } else {
       overviewEl.classList.add("hidden");
@@ -2297,7 +2297,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
 
   if (overviewEl) {
     if (movie.overview) {
-      overviewEl.textContent = movie.overview;
+      overviewEl.innerHTML = movie.overview;
       overviewEl.classList.remove("hidden");
     } else {
       overviewEl.classList.add("hidden");
