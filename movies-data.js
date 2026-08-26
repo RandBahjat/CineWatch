@@ -12406,7 +12406,7 @@ window._MOVIES_DATA = [
     title: "Dragon Ball Z: The Tree of Might ",
     type: "Movie",
     year: 1990,
-    rating: 7.3,
+    rating: 6.7,
     age: "TV-PG",
     duration: "1h 12m",
     genres: [
