@@ -11525,7 +11525,7 @@ window._MOVIES_DATA = [
     overview: "Krypto, Superman's loyal dog, team up with ragtag group of shelter pet after Justice League get kidnap. Must learn work together, tap into own super power, save owner, world from villainous guinea pig plan.",
     director: "Jared Stern",
     cast: [
-      "Keanu Reeves, Lorenza Izzo, Ana de Armas, Ignacia Allamand"
+      "Dwayne Johnson, Kevin Hart, Kate McKinnon, John Krasinski, Vanessa Bayer, Marc Maron"
     ],
     trending: false,
     featured: false,
