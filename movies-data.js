@@ -11550,7 +11550,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/oNoprEND25zXR6Fns8cIZUkuoMc.jpg",
     videoUrl: "308266",
     overview: "Two young guy stumble into arm dealing business, land massive three hundred million dollar contract supply US military in Afghanistan war. Greed, ambition push them deeper into shady, dangerous world of international arms trade.",
-    director: "Jared Stern",
+    director: "Todd Phillips",
     cast: [
       "Dwayne Johnson, Kevin Hart, Kate McKinnon, John Krasinski, Vanessa Bayer, Marc Maron"
     ],
