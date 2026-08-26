@@ -11483,7 +11483,7 @@ window._MOVIES_DATA = [
     title: "Knock Knock",
     type: "Movie",
     year: 2015,
-    rating: 7.9,
+    rating: 4.9,
     age: "PG-13",
     duration: "2h 10m",
     genres: [
