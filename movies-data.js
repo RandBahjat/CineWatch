@@ -11792,7 +11792,7 @@ window._MOVIES_DATA = [
     title: "Wanted",
     type: "Movie",
     year: 2008,
-    rating: 6.8,
+    rating: 6.7,
     age: "PG-13",
     duration: "1h 41m",
     genres: [
