@@ -12043,7 +12043,7 @@ window._MOVIES_DATA = [
     overview: "Evil demon Janemba born from imbalance in Other World, warp reality, break law of life, death itself. Goku, newly fuse Gogeta must stop him before chaos destroy both living, dead world.",
     director: "Osamu Kasai",
     cast: [
-      "Masako Nozawa, Ryō Horikawa, Ryūsei Nakao, Sōichirō Hoshi, Toshio Furukawa"
+      "Masako Nozawa, Ryō Horikawa, Shigeru Chiba, Toshio Furukawa, Bin Shimada"
     ],
     trending: false,
     featured: false,
