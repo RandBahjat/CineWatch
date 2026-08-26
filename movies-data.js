@@ -11569,7 +11569,7 @@ window._MOVIES_DATA = [
     genres: [
       "Crime",
       "Thriller",
-      "Drama",
+      "Mystery",
       "War"
 
     ],
