@@ -12024,9 +12024,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Dragon Ball Z: Resurrection 'F'",
+    title: "Dragon Ball Z: Fusion Reborn",
     type: "Movie",
-    year: 2015,
+    year: 1995,
     rating: 7.1,
     age: "PG-13",
     duration: "1h 34m",
