@@ -11600,7 +11600,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/n9W9bX3NKPKkvsHpftf56AZF1G4.jpg",
     videoUrl: "1242404",
     overview: "One day in life of headteacher run struggling reform school for troubled teenage boy. Steve fight hold school, students together, while own life quietly unravel under weight of it all.",
-    director: "Declan Dale",
+    director: "Tim Mielants",
     cast: [
       "Keanu Reeves, Ana de Armas, Christopher McDonald, Big Daddy Kane, Mira Sorvino"
     ],
