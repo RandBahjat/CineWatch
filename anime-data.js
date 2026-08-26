@@ -16092,8 +16092,8 @@ window._ANIME_DATA = [
             ]
           }
         ]
-      }
-,
+      },
+
 {
   id: "Bleach",
   title: "Bleach",
