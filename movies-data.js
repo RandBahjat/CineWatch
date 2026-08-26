@@ -11639,7 +11639,7 @@ window._MOVIES_DATA = [
     title: "Superbad",
     type: "Movie",
     year: 2007,
-    rating: 6.7,
+    rating: 7.6,
     age: "PG-13",
     duration: "1h 49m",
     genres: [
