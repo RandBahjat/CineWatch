@@ -6537,57 +6537,46 @@ body.rtl-layout .account-side-panel.open {
 }
 
 .top10-track .movie-card {
-  flex: 0 0 210px;
-  width: 210px;
-  max-width: 210px;
-  display: flex;
-  flex-direction: column;
+  flex: 0 0 160px;
 }
 
-.top10-track .movie-card:first-child {
-  margin-left: 0px; 
-}
-
-.top10-track .card-poster-wrap {
-  width: 140px;
-  margin-left: auto;
-  overflow: hidden; /* Prevent zoom bleeding */
-  z-index: 2; /* Poster above number */
-}
-
-.top10-track .card-details {
-  width: 140px;
-  margin-left: auto; /* Push text to right to align with poster */
-  padding-top: 8px;
-}
-
-.top10-track .card-poster {
-  border-radius: var(--radius-xs); 
-}
-
+/* Force poster layout for Trending Today */
 .force-poster-wrap {
   aspect-ratio: 2 / 3 !important;
 }
 
+/* Top 10 Ribbon Badge (Reference Site Style) */
 .top10-rank-badge {
   position: absolute;
-  bottom: 50px; /* Sits above the text area safely */
-  left: 0px; /* Sits in the 70px empty pocket on the left */
-  font-size: 160px;
-  font-weight: 900;
-  color: #000;
-  -webkit-text-stroke: 4px #e50914;
-  text-shadow: 4px 4px 10px rgba(0,0,0,0.8);
-  line-height: 1;
-  z-index: 1; /* Behind the poster */
-  font-family: 'Inter', sans-serif;
+  top: 0;
+  left: 0;
+  background-color: #e50914;
+  color: white;
+  padding: 6px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom-right-radius: 8px;
+  z-index: 10;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
   pointer-events: none;
-  letter-spacing: -5px;
+  width: 32px;
 }
 
-.top10-track .movie-card:hover .top10-rank-badge {
-  color: #e50914;
-  transition: color 0.3s ease;
+.top10-rank-text {
+  font-size: 0.55rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+}
+
+.top10-rank-num {
+  font-size: 1.1rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.5px;
 }
 
 @media (max-width: 768px) {
@@ -6595,21 +6584,16 @@ body.rtl-layout .account-side-panel.open {
     padding-left: 10px;
   }
   .top10-track .movie-card {
-    flex: 0 0 160px;
-    width: 160px;
-    max-width: 160px;
-  }
-  .top10-track .card-poster-wrap,
-  .top10-track .card-details {
-    width: 110px;
-  }
-  .top10-track .movie-card:first-child {
-    margin-left: 0px;
+    flex: 0 0 130px;
   }
   .top10-rank-badge {
-    font-size: 110px;
-    bottom: 50px;
-    left: 0px;
-    -webkit-text-stroke: 3px #e50914;
+    width: 28px;
+    padding: 5px 3px;
+  }
+  .top10-rank-text {
+    font-size: 0.5rem;
+  }
+  .top10-rank-num {
+    font-size: 1rem;
   }
 }
