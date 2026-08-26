@@ -29,10 +29,10 @@ if (window.location.hash.includes("type=recovery")) {
 // ==========================================
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
-let FEATURED_TITLES = ["Batman: Knightfall Part 1: Knightfall","Mutiny","Reacher", "Lanterns", "Lioness", "The Invite", "Spider-Man: Brand New Day", "The Odyssey", "Obsession", "The Last House", "Silo"];
-let TOP_10_TRENDING_TODAY = ["Motor City","Reacher","Batman: Knightfall Part 1: Knightfall", "Lanterns", "Spider-Man: Brand New Day", "The Odyssey", "Mutiny", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Evil Dead Burn"];
-let TRENDING_THIS_WEEK_MOVIES = ["Batman: Knightfall Part 1: Knightfall","Mutiny","Spider-Man: Brand New Day", "The Odyssey", "Motor City","Toy Story 5","Obsession", "Minions & Monsters", "The Last House", "Disclosure Day", "The Invite", "The End of Oak Street", "Backrooms", "Camp Rock 3", "Evil Dead Burn", "Project Hail Mary", "Supergirl"]; // Add titles here for 'Trending Movies This Week'
-let TRENDING_THIS_WEEK_SERIES = ["Lanterns", "Reacher", "Lucky", "Silo","One Piece", "Ted Lasso", "X-Men '97","Lioness","Outer Banks"]; // Add titles here for 'Trending Series This Week'
+let FEATURED_TITLES = ["Batman: Knightfall Part 1: Knightfall", "Mutiny", "Reacher", "Lanterns", "Lioness", "The Invite", "Spider-Man: Brand New Day", "The Odyssey", "Obsession", "The Last House", "Silo"];
+let TOP_10_TRENDING_TODAY = ["Motor City", "Reacher", "Batman: Knightfall Part 1: Knightfall", "Lanterns", "Spider-Man: Brand New Day", "The Odyssey", "Mutiny", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Evil Dead Burn"];
+let TRENDING_THIS_WEEK_MOVIES = ["Batman: Knightfall Part 1: Knightfall", "Mutiny", "Spider-Man: Brand New Day", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Minions & Monsters", "The Last House", "Disclosure Day", "The Invite", "The End of Oak Street", "Backrooms", "Camp Rock 3", "Evil Dead Burn", "Project Hail Mary", "Supergirl"]; // Add titles here for 'Trending Movies This Week'
+let TRENDING_THIS_WEEK_SERIES = ["Lanterns", "Reacher", "Lucky", "Silo", "One Piece", "Ted Lasso", "X-Men '97", "Lioness", "Outer Banks"]; // Add titles here for 'Trending Series This Week'
 const POPULAR_MOVIES = ["Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters", "The Invite", "Spider-Man: No Way Home", "The End of Oak Street", "Disclosure Day", "Camp Rock 3", "The Last House", "Michael", "Project Hail Mary"]; // Add titles here for 'Popular Movie'
 const POPULAR_SERIES = ["Reacher", "House of the Dragon", "Ted Lasso", "The Mentalist", "Lucky", "Off Campus", "Silo", "Game of Thrones", "The Sopranos", "Stranger Things", "The Boys"]; // Add titles here for 'Popular Series'
 
@@ -72,7 +72,7 @@ async function loadMediaFromAPI() {
     const localMovies = window._MOVIES_DATA || [];
     const localSeries = window._SERIES_DATA || [];
     const localAnime = window._ANIME_DATA || [];
-    
+
     MOVIES = [...localMovies, ...localSeries, ...localAnime];
 
     if (MOVIES.length === 0) {
@@ -610,7 +610,7 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
       <span class="top10-rank-num">${rank.toString().padStart(2, '0')}</span>
     </div>
   ` : "";
-  
+
   const imgSrc = forcePoster ? movie.poster : (movie.backdrop || movie.poster);
   const sourceTag = forcePoster ? "" : `<source media="(max-width: 768px)" srcset="${movie.poster}">`;
 
@@ -838,12 +838,12 @@ function renderContinueWatchingPage() {
   }
 
   emptyState.classList.add("hidden");
-  
+
   // Update Action Bar UI
   const selectBtn = document.getElementById("cwSelectBtn");
   const removeBtn = document.getElementById("cwRemoveSelectedBtn");
   const cancelBtn = document.getElementById("cwCancelSelectBtn");
-  
+
   if (selectBtn && removeBtn && cancelBtn) {
     if (state.isCwSelectionMode) {
       selectBtn.classList.add("hidden");
@@ -870,7 +870,7 @@ function renderContinueWatchingPage() {
 
       const isSelected = state.isCwSelectionMode && state.cwSelectedItems.has(movie.id);
       const selectedClass = isSelected ? 'cw-selected' : '';
-      const selectionOverlay = state.isCwSelectionMode ? 
+      const selectionOverlay = state.isCwSelectionMode ?
         `<div class="cw-selection-overlay ${isSelected ? 'active' : ''}">
            <ion-icon name="checkmark-circle"></ion-icon>
          </div>` : '';
@@ -1584,12 +1584,12 @@ async function renderCommentsSection(movieId) {
   const commentsSection = document.getElementById('commentsSection');
   const commentInputArea = document.getElementById('commentInputArea');
   const commentsList = document.getElementById('commentsList');
-  
+
   if (!commentsSection || !commentInputArea || !commentsList) return;
-  
+
   // Show section
   commentsSection.style.display = 'block';
-  
+
   // Render Input Area based on Auth State
   if (state.user) {
     commentInputArea.classList.remove('locked');
@@ -1612,7 +1612,7 @@ async function renderCommentsSection(movieId) {
 
   // Fetch comments
   const { data, error } = await window.CW_API.getComments(movieId);
-  
+
   if (error) {
     commentsList.innerHTML = `<div class="no-comments">Failed to load comments.</div>`;
     return;
@@ -1625,16 +1625,16 @@ async function renderCommentsSection(movieId) {
 
   // Render comments
   commentsList.innerHTML = data.map(comment => {
-    const avatarContent = comment.avatar && comment.avatar.length > 20 
+    const avatarContent = comment.avatar && comment.avatar.length > 20
       ? `<img src="${comment.avatar}" alt="avatar" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">`
       : (comment.avatar || '🎬');
-    
+
     const isOwner = state.user && comment.user_id === state.user.id;
     const deleteBtn = isOwner ? `
       <button class="comment-delete-btn" onclick="deleteComment('${comment.id}', '${movieId}')" title="Delete comment">
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4h6v2"/></svg>
       </button>` : '';
-      
+
     return `
     <div class="comment-item" id="comment-${comment.id}">
       <div class="comment-avatar">${avatarContent}</div>
@@ -1652,8 +1652,8 @@ async function renderCommentsSection(movieId) {
   `}).join('');
 }
 
-window.deleteComment = async function(commentId, movieId) {
-  
+window.deleteComment = async function (commentId, movieId) {
+
   const { success, error } = await window.CW_API.deleteComment(commentId);
   if (success) {
     await renderCommentsSection(movieId);
@@ -1662,20 +1662,20 @@ window.deleteComment = async function(commentId, movieId) {
   }
 };
 
-window.submitComment = async function(movieId) {
+window.submitComment = async function (movieId) {
   const textInput = document.getElementById('newCommentText');
   const postBtn = document.getElementById('postCommentBtn');
   const content = textInput ? textInput.value.trim() : '';
-  
+
   if (!content) return;
-  
+
   if (postBtn) {
     postBtn.disabled = true;
     postBtn.innerHTML = 'Posting...';
   }
-  
+
   const { success, error } = await window.CW_API.postComment(movieId, content);
-  
+
   if (success) {
     if (textInput) textInput.value = '';
     // Re-render to show the new comment
@@ -1683,7 +1683,7 @@ window.submitComment = async function(movieId) {
   } else {
     alert('Failed to post comment: ' + (error || 'Unknown error'));
   }
-  
+
   if (postBtn) {
     postBtn.disabled = false;
     postBtn.innerHTML = 'Post Comment';
@@ -1737,7 +1737,7 @@ function openDetailsModal(movieId) {
       document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &middot; ");
     }
 
-    document.getElementById("detailsOverview").innerHTML = movie.overview;
+    document.getElementById("detailsOverview").textContent = movie.overview;
 
     const castContainer = document.getElementById("detailsCastContainer");
     const castText = document.getElementById("detailsCastText");
@@ -2102,7 +2102,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     })() : null;
     const overview = epObj?.overview || (parentMovie?.overview ?? "");
     if (overview) {
-      overviewEl.innerHTML = overview;
+      overviewEl.textContent = overview;
       overviewEl.classList.remove("hidden");
     } else {
       overviewEl.classList.add("hidden");
@@ -2206,14 +2206,14 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     serverWrap.classList.remove("hidden");
     if (isTvEmbed) {
       const parts = videoUrl.split(":");
-      window.currentIframeData = { 
-        type: "tv", 
-        id: parts[1], 
-        season: parts[2], 
-        episode: parts[3], 
+      window.currentIframeData = {
+        type: "tv",
+        id: parts[1],
+        season: parts[2],
+        episode: parts[3],
         absoluteEpisode: parts[4] || null,
         anilistId: parts[5] || null,
-        parentId 
+        parentId
       };
     } else if (isNumericId) {
       window.currentIframeData = { type: "movie", id: videoUrl, parentId };
@@ -2297,7 +2297,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
 
   if (overviewEl) {
     if (movie.overview) {
-      overviewEl.innerHTML = movie.overview;
+      overviewEl.textContent = movie.overview;
       overviewEl.classList.remove("hidden");
     } else {
       overviewEl.classList.add("hidden");
@@ -2840,7 +2840,7 @@ function bindEventListeners() {
     const card = e.target.closest(".movie-card") || e.target.closest(".browse-card");
     if (card) {
       const movieId = card.dataset.id;
-      
+
       // Intercept click if in Continue Watching selection mode
       if (state.isCwSelectionMode && card.classList.contains("continue-card") && state.activeView === "continue") {
         if (state.cwSelectedItems.has(movieId)) {
@@ -2851,7 +2851,7 @@ function bindEventListeners() {
         renderContinueWatchingPage();
         return;
       }
-      
+
       openDetailsModal(movieId);
     }
   });
@@ -3567,7 +3567,7 @@ function bindEventListeners() {
             alertEl.classList.add("hidden");
             recoveryPasswordForm.reset();
             showToast("Password updated! Please log in again.");
-            
+
             // Re-open auth modal to login form
             setTimeout(() => {
               openAuthModal();
@@ -3597,7 +3597,7 @@ function bindEventListeners() {
   };
 
   window.addEventListener("cw:passwordRecovery", handleRecoveryFlow);
-  
+
   // Check if we missed the event due to race conditions on load, or if Supabase event failed
   if (window.CW_PENDING_RECOVERY || window.location.hash.includes("type=recovery")) {
     handleRecoveryFlow();
@@ -4012,7 +4012,7 @@ function updateIframeServer() {
     if (serverSelectWrap && serverSelect) {
       serverSelectWrap.style.display = 'block';
       serverSelectWrap.classList.remove('hidden');
-      
+
       if (!serverSelect.dataset.animeServersPopulated) {
         serverSelect.innerHTML = `
           <option value="vidsrc-sbs">VidSrc (Reliable / Fast)</option>
@@ -4190,7 +4190,7 @@ async function initializeRatingSystem(movieId) {
 
   try {
     const stats = await window.CW_API.getRatingsStats(movieId);
-    
+
     if (badgeRating) {
       if (stats.average > 0) {
         badgeRating.textContent = `${stats.average.toFixed(1)} (${stats.totalRatings})`;

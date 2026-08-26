@@ -1,4 +1,4 @@
-// CineWatch — Movies Data
+﻿// CineWatch — Movies Data
 // Edit this file to add, remove, or reorder movies.
 // Push to GitHub (or save — auto-sync will handle it) for changes to go live.
 
@@ -147,7 +147,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9pKPTugulAt0EtH0g4gvJGffPSg.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/caBIySpwuFi2i7ynvHIlnxJLOdN.jpg",
     videoUrl: "1560520",
-    overview: "Monster villain Bane destroy <span class='en-only'>Arkham</span><span class='ku-only' style='display:none;' translate='no'>ئارکهام</span> Asylum walls and release all dangerous criminals into Gotham. Exhausted Batman force himself past mental and physical limits to catch every escaped villain, leading to legendary brutal confrontation with Bane!",
+    overview: "Monster villain Bane destroy Arkham Asylum walls and release all dangerous criminals into Gotham. Exhausted Batman force himself past mental and physical limits to catch every escaped villain, leading to legendary brutal confrontation with Bane!",
     director: "Jeff Wamester",
     cast: [
       "Anson Mount, Michael Mando, Pablo Schreiber, Jack Giffin, Bruce Boxleitner, David Dastmalchian, Simon Templeman"
