@@ -11635,6 +11635,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "In Time",
+    type: "Movie",
+    year: 2011,
+    rating: 6.7,
+    age: "PG-13",
+    duration: "1h 49m",
+    genres: [
+      "Action",
+      "Thriller",
+      "Sci-Fi"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/3Mwj2sIONQckOZP3YwsUXF7U5I4.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/kx2YVkcsnTnmF9XGTAj2NqEcHFG.jpg",
+    videoUrl: "49530",
+    overview: "In future world, time literally money, people stop aging at twenty-five, must earn more time live longer. Poor man frame for murder, team up with rich hostage, fight corrupt system control life span of everyone.",
+    director: "Andrew Niccol",
+    cast: [
+      "Justin Timberlake, Amanda Seyfried, Cillian Murphy, Vincent Kartheiser, Olivia Wilde"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
