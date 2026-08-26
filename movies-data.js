@@ -12064,7 +12064,7 @@ window._MOVIES_DATA = [
       "Fantasy"
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rCU5ddP3FVSDJy81UldUsBuf3ag.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nxZEdYcHMuD8SSuwusDnK9CD2H1.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/xeYKMrkcug0A6Igp0UGial69FVU.jpg",
     videoUrl: "39107",
     overview: "Evil demon Janemba born from imbalance in Other World, warp reality, break law of life, death itself. Goku, newly fuse Gogeta must stop him before chaos destroy both living, dead world.",
