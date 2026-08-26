@@ -11962,7 +11962,7 @@ window._MOVIES_DATA = [
     overview: "Two mismatched desk-bound NYPD cop, overshadow by department's star detective duo, get chance step up when big case fall into their lap. Bumbling investigation lead uncover massive financial fraud far bigger than expect.",
     director: "Adam McKay",
     cast: [
-      "Steve Carell, Anne Hathaway, Dwayne Johnson, Alan Arkin, Terence Stamp"
+      "Will Ferrell, Mark Wahlberg, Eva Mendes, Samuel L. Jackson, Dwayne Johnson, Michael Keaton"
     ],
     trending: false,
     featured: false,
