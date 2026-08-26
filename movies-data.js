@@ -12354,7 +12354,7 @@ window._MOVIES_DATA = [
     year: 1994,
     rating: 6.5,
     age: "TV-PG",
-    duration: "50m",
+    duration: "48m",
     genres: [
       "Action",
       "Animation",
