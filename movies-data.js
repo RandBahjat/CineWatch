@@ -12239,6 +12239,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Dragon Ball Z: Super Android 13!",
+    type: "Movie",
+    year: 1992,
+    rating: 6.9,
+    age: "TV-PG",
+    duration: "46m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uVJqC187rKxQ1sJsWlKjNfAzeTk.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/br9p5Liij0JVXUtrvZPUZQTy9Tt.jpg",
+    videoUrl: "39104",
+    overview: "Remnant of Red Ribbon Army activate three deadly android built destroy Goku for good. Battle push Goku, Vegeta, Trunks to limit as android fuse together become near unstoppable force.",
+    director: "Daisuke Nishio",
+    cast: [
+      "Masako Nozawa, Ryō Horikawa, Takeshi Kusao, Shigeru Chiba, Toshio Furukawa"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
