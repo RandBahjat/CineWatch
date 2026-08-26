@@ -6605,3 +6605,6 @@ body.rtl-layout .account-side-panel.open {
 /* Language Overrides */
 html[lang="ku"] .en-only { display: none !important; }
 html[lang="ku"] .ku-only { display: inline !important; }
+
+body.rtl-layout .progress-bar-fill { float: right; border-radius: 2px 0 0 2px; }
+body.rtl-layout .progress-bar-container { direction: rtl; }
