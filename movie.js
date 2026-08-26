@@ -644,7 +644,11 @@ function renderCarousels() {
     const track = document.getElementById(trackId);
     if (!track) return;
     const movieList = shelfMap[trackId];
-    track.innerHTML = movieList.map(createMovieCardHTML).join("");
+    if (trackId === "top10Track") {
+      track.innerHTML = movieList.map((movie, index) => createMovieCardHTML(movie, index + 1)).join("");
+    } else {
+      track.innerHTML = movieList.map((movie) => createMovieCardHTML(movie)).join("");
+    }
 
     // Click opens details modal
     track.querySelectorAll(".movie-card").forEach((card) => {
