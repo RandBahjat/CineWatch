@@ -11718,8 +11718,8 @@ window._MOVIES_DATA = [
     age: "R",
     duration: "2h 18m",
     genres: [
-      "Drama",
       "Comedy",
+      "Drama",
       "Sci-Fi"
 
     ],
