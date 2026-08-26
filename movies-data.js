@@ -11973,7 +11973,7 @@ window._MOVIES_DATA = [
     title: "Dragon Ball Super: Super Hero",
     type: "Movie",
     year: 2022,
-    rating: 6.7,
+    rating: 7.1,
     age: "PG-13",
     duration: "1h 47m",
     genres: [
