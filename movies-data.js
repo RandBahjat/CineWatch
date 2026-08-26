@@ -12077,6 +12077,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Dragon Ball Z: Battle of Gods",
+    type: "Movie",
+    year: 2013,
+    rating: 7.1,
+    age: "TV-PG",
+    duration: "1h 25m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nxZEdYcHMuD8SSuwusDnK9CD2H1.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/61t00k4ta1nNqKI2qPLKgoW6EoP.jpg",
+    videoUrl: "126963",
+    overview: "God of Destruction Beerus wake from long slumber, hunt for legendary Super Saiyan God he dream about. Goku, friend must find way awaken this new form before Beerus destroy Earth out boredom, rage.",
+    director: "Masahiro Hosoda",
+    cast: [
+      "Masako Nozawa, Ryō Horikawa, Kōichi Yamadera, Kenji Nojima, Aya Hisakawa"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
