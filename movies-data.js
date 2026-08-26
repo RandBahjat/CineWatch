@@ -12132,9 +12132,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Dragon Ball Z: Bojack Unbound",
+    title: "Dragon Ball Z: Lord Slug",
     type: "Movie",
-    year: 1993,
+    year: 1991,
     rating: 7.1,
     age: "E10+",
     duration: "50m",
