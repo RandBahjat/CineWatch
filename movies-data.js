@@ -12402,6 +12402,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Dragon Ball Z: Broly - The Legendary Super Saiyan",
+    type: "Movie",
+    year: 1993,
+    rating: 7.3,
+    age: "TV-PG",
+    duration: "1h 12m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6iO8TJCyLI4BiPYOvdwzPV2bhoV.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/xrg1pYVPK1yN0UREAzd1ywoVM6m.jpg",
+    videoUrl: "34433",
+    overview: "Ancient Legendary Super Saiyan Broly, thought myth, real, awaken by chance encounter with Goku, unleash near-limitless power fuel by deep-root childhood rage. Goku, Vegeta, Piccolo, Gohan must find way stop force stronger than anything they face before.",
+    director: "Mitsuo Hashimoto",
+    cast: [
+      "Masako Nozawa, Ryō Horikawa, Takeshi Kusao, Shigeru Chiba, Toshio Furukawa"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
