@@ -11804,7 +11804,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/njy7Pz7ZHZceO7lNfGIHKphY8Hd.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/vjwuT8EzWY96W6nrJKZNI2WJU87.jpg",
     videoUrl: "8909",
-    overview: "Frustrated TV reporter complain God not doing his job right, get granted all of God's power himself, see if he do better. Chaos, comedy, humility follow as he learn real weight of power, responsibility.",
+    overview: "Ordinary, unhappy office worker discover he descend from line of legendary assassin, recruit into secret society of killer. Trained sharpen deadly skill, uncover conspiracy tie back to own father's death.",
     director: "Tom Shadyac",
     cast: [
       "Jim Carrey, Morgan Freeman, Jennifer Aniston, Philip Baker Hall, Catherine Bell"
