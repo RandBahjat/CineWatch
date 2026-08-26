@@ -12119,8 +12119,8 @@ window._MOVIES_DATA = [
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iihTK9Af8G1ZzBjkIIAV4qQMkzF.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/Dnk4iSqqNkZBJBPeFdAegTaxD5.jpg",
-    videoUrl: "503314",
+    backdrop: "https://image.tmdb.org/t/p/original/h5Rvh7TUOLqmY2AOebwSEnHolwB.jpg",
+    videoUrl: "",
     overview: "Ancient legend of Saiyan monster Broly turn real, awaken on remote planet by Frieza's scheme. Goku, Vegeta must team up face Broly's near-limitless power, uncover truth of Saiyan history long buried.",
     director: "Tatsuya Nagamine",
     cast: [
@@ -12140,3 +12140,4 @@ window._MOVIES_DATA = [
 
 
 ];
+      
