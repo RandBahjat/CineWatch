@@ -11767,7 +11767,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 2003,
     rating: 6.8,
-    age: "R",
+    age: "PG-13",
     duration: "1h 29m",
     genres: [
       "Action",
