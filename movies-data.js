@@ -12266,6 +12266,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Dragon Ball Z: Cooler's Revenge",
+    type: "Movie",
+    year: 1991,
+    rating: 7.0,
+    age: "E10+",
+    duration: "47m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uqTSXqjaSgSAT2lCv3GyZeodQPG.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/8bBwrxTwj4MVoy2ivYCqNLCxRcf.jpg",
+    videoUrl: "24752",
+    overview: "Cooler, Frieza's older, more powerful brother, seek vengeance for kin's defeat, hunt Goku down on New Namek. Goku must survive brutal onslaught, tap into new strength stop Cooler once, for all.",
+    director: "Yoshihiro Ueda",
+    cast: [
+      "Masako Nozawa, Ryō Horikawa, Shigeru Chiba, Toshio Furukawa, Naoko Watanabe"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
