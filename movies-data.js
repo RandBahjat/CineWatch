@@ -11685,6 +11685,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Crazy, Stupid, Love.",
+    type: "Movie",
+    year: 2011,
+    rating: 7.4,
+    age: "PG-13",
+    duration: "1h 58m",
+    genres: [
+      "Comedy",
+      "Drama",
+      "Romance"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/p4RafgAPk558muOjnBMHhMArjS2.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/izxt0tTNWr5DWoTiKzvvd4Hu0pR.jpg",
+    videoUrl: "50646",
+    overview: "Middle-age man's marriage fall apart, get taken under wing by young slick bachelor teach him how date again. Multiple tangle love story collide, reveal how messy, funny, unexpected love really is.",
+    director: "Glenn Ficarra, John Requa",
+    cast: [
+      "Steve Carell, Ryan Gosling, Julianne Moore, Emma Stone, Marisa Tomei, Kevin Bacon"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
