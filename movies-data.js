@@ -11729,7 +11729,7 @@ window._MOVIES_DATA = [
     overview: "Two low-level astronomer discover comet head straight for Earth, go on media tour warn world of coming doom. Nobody take them seriously, satire of media, politics, society ignore science, chase distraction instead.",
     director: "Adam McKay",
     cast: [
-      "Leonardo DiCaprio, Carey Mulligan, Tobey Maguire, Joel Edgerton, Isla Fisher"
+      "Leonardo DiCaprio, Jennifer Lawrence, Meryl Streep, Cate Blanchett, Timothée Chalamet, Jonah Hill"
     ],
     trending: false,
     featured: false,
