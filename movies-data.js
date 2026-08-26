@@ -11856,7 +11856,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/y319VH0gIFie6KEO5L4nHhxxQUw.jpg",
     videoUrl: "9437",
     overview: "Detective, psychologist Alex Cross join force with escape victim track down serial kidnapper hold group of women captive. Race against time uncover killer identity before he strike again, claim another life.",
-    director: "Babak Najafi",
+    director: "Gary Fleder",
     cast: [
       "Gerard Butler, Aaron Eckhart, Morgan Freeman, Angela Bassett, Alon Aboutboul"
     ],
