@@ -12028,7 +12028,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 1995,
     rating: 7.6,
-    age: "PG-13",
+    age: "PG",
     duration: "1h 34m",
     genres: [
       "Action",
