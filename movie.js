@@ -600,19 +600,22 @@ function updateHeroBanner() {
   });
 }
 
-function createMovieCardHTML(movie, rank = null) {
+function createMovieCardHTML(movie, rank = null, forcePoster = false) {
   const fav = isFavorite(movie.id);
   const primaryGenre = movie.genres && movie.genres.length > 0 ? translateGenre(movie.genres[0]) : "";
   const displayType = movie.type || (movie.seasons ? "TV Show" : "Movie");
   const rankHtml = rank !== null ? `<div class="top10-rank-badge">${rank}</div>` : "";
   
+  const imgSrc = forcePoster ? movie.poster : (movie.backdrop || movie.poster);
+  const sourceTag = forcePoster ? "" : `<source media="(max-width: 768px)" srcset="${movie.poster}">`;
+
   return `
     <div class="movie-card" data-id="${movie.id}">
-      <div class="card-poster-wrap">
+      <div class="card-poster-wrap ${forcePoster ? 'force-poster-wrap' : ''}">
         ${rankHtml}
         <picture>
-          <source media="(max-width: 768px)" srcset="${movie.poster}">
-          <img src="${movie.backdrop || movie.poster}" alt="${movie.title}" class="card-poster" loading="lazy">
+          ${sourceTag}
+          <img src="${imgSrc}" alt="${movie.title}" class="card-poster ${forcePoster ? 'force-poster-img' : ''}" loading="lazy">
         </picture>
         <div class="card-gradient"></div>
         <div class="card-overlay">
