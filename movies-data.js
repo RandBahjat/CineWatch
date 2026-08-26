@@ -11614,7 +11614,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 2011,
     rating: 6.7,
-    age: "R",
+    age: "PG-13",
     duration: "1h 33m",
     genres: [
       "Drama",
