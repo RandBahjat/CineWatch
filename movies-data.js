@@ -11625,7 +11625,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/3Mwj2sIONQckOZP3YwsUXF7U5I4.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/kx2YVkcsnTnmF9XGTAj2NqEcHFG.jpg",
     videoUrl: "49530",
-    overview: "One day in life of headteacher run struggling reform school for troubled teenage boy. Steve fight hold school, students together, while own life quietly unravel under weight of it all.",
+    overview: "In future world, time literally money, people stop aging at twenty-five, must earn more time live longer. Poor man frame for murder, team up with rich hostage, fight corrupt system control life span of everyone.",
     director: "Tim Mielants",
     cast: [
       "Cillian Murphy, Tracey Ullman, Simbi Ajikawo (Little Simz), Jay Lycurgo, Emily Watson"
