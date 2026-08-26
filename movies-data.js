@@ -11715,7 +11715,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 2021,
     rating: 7.1,
-    age: "PG-13",
+    age: "R",
     duration: "2h 23m",
     genres: [
       "Drama",
