@@ -11602,7 +11602,7 @@ window._MOVIES_DATA = [
     overview: "One day in life of headteacher run struggling reform school for troubled teenage boy. Steve fight hold school, students together, while own life quietly unravel under weight of it all.",
     director: "Tim Mielants",
     cast: [
-      "Keanu Reeves, Ana de Armas, Christopher McDonald, Big Daddy Kane, Mira Sorvino"
+      "Cillian Murphy, Tracey Ullman, Simbi Ajikawo (Little Simz), Jay Lycurgo, Emily Watson"
     ],
     trending: false,
     featured: false,
