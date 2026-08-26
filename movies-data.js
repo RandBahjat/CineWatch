@@ -11817,8 +11817,8 @@ window._MOVIES_DATA = [
   {
     title: "London Has Fallen",
     type: "Movie",
-    year: 2008,
-    rating: 6.7,
+    year: 2016,
+    rating: 5.9,
     age: "R",
     duration: "1h 50m",
     genres: [
