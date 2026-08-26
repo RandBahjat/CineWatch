@@ -11469,7 +11469,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/pThyQovXQrw2m0s9x82twj48Jq4.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1Ld1OTmrocP7h5px8k16ymaxIvS.jpg",
     videoUrl: "546554",
-    overview: "Ex-con, ex-Special Forces Pete Koslow work as informant for FBI, go undercover infiltrate mob run drug operation inside prison. Deal go bad, Koslow frame for murder, must escape prison, clear name, protect family.",
+    overview: "Wealthy crime novelist found dead night of his 85th birthday, detective Benoit Blanc call in investigate. Family full of secret, greed, lie, each one suspect, all point finger, truth harder to find than expect.",
     director: "Andrea Di Stefano",
     cast: [
       "Joel Kinnaman, Rosamund Pike, Common, Ana de Armas, Clive Owen"
