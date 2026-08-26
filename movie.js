@@ -725,7 +725,9 @@ function renderWatchlistHomeShelf() {
     return;
   }
 
-  shelf.classList.remove("hidden");
+  if (state.activeView === "home") {
+    shelf.classList.remove("hidden");
+  }
   track.innerHTML = favMovies.map((movie) => {
     const fav = isFavorite(movie.id);
     return `
