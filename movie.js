@@ -657,43 +657,6 @@ function renderContinueWatchingShelf() {
     shelf.classList.add("hidden");
     return;
   }
-
-  const items = Object.values(state.continueWatching).sort(
-    (a, b) => b.timestamp - a.timestamp,
-  );
-
-  if (items.length === 0) {
-    shelf.classList.add("hidden");
-    return;
-  }
-
-  shelf.classList.remove("hidden");
-  track.innerHTML = items
-    .map((item) => {
-      const movie = MOVIES.find((m) => m.id === item.movieId);
-      if (!movie) return "";
-
-      // For iframe-tracked entries we don't have real timestamps — show "In Progress"
-      const isIframe = item.isIframe;
-      const percent = isIframe ? 50 : Math.min(100, Math.round((item.currentTime / item.duration) * 100));
-      const metaLabel = isIframe
-        ? `<span>In Progress</span>`
-        : `<span>${Math.max(1, Math.round((item.duration - item.currentTime) / 60))}m left</span><span>${percent}%</span>`;
-
-      return `
-      <div class="movie-card continue-card" data-id="${movie.id}">
-        <div class="card-poster-wrap continue-poster-wrap">
-          <picture>
-            <source media="(max-width: 768px)" srcset="${movie.poster}">
-            <img src="${movie.backdrop || movie.poster}" alt="${movie.title}" class="card-poster">
-          </picture>
-          <div class="card-gradient"></div>
-          <button class="continue-remove-btn" data-remove-id="${movie.id}" title="Remove from list">&times;</button>
-          <div class="card-overlay"></div>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar-fill" style="width: ${percent}%"></div>
-          </div>
-        </div>
         <div class="card-details">
           <h4 class="card-title">${movie.title}</h4>
           <div class="card-meta">
