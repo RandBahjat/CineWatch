@@ -2749,6 +2749,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://cinewatch.watch/?v=lucy</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://cinewatch.watch/?v=lanterns</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>weekly</changefreq>

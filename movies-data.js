@@ -11762,6 +11762,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Lucy",
+    type: "Movie",
+    year: 2014,
+    rating: 6.4,
+    age: "R",
+    duration: "1h 29m",
+    genres: [
+      "Action",
+      "Thriller",
+      "Sci-Fi"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/kRbpUTRNm6QbLQFPFWUcNC4czEm.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/1hzH1Wu2xhXBNOWzw3RMwNTJX5q.jpg",
+    videoUrl: "240832",
+    overview: "Woman accidentally expose to powerful drug that unlock full potential of human brain, gain extraordinary power grow more intense as brain capacity keep expand. Race against time, before power consume her completely, evade dangerous gang chase her down.",
+    director: "Luc Besson",
+    cast: [
+      "Scarlett Johansson, Morgan Freeman, Choi Min-sik, Amr Waked"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
