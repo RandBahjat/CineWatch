@@ -11523,7 +11523,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/mzFlwK2WN5KGCgEc4ExJmooJy97.jpg",
     videoUrl: "539681",
     overview: "Krypto, Superman's loyal dog, team up with ragtag group of shelter pet after Justice League get kidnap. Must learn work together, tap into own super power, save owner, world from villainous guinea pig plan.",
-    director: "Eli Roth",
+    director: "Jared Stern",
     cast: [
       "Keanu Reeves, Lorenza Izzo, Ana de Armas, Ignacia Allamand"
     ],
