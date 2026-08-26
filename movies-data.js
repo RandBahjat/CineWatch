@@ -11921,8 +11921,8 @@ window._MOVIES_DATA = [
     title: "Get Smart",
     type: "Movie",
     year: 2008,
-    rating: 6.4,
-    age: "R",
+    rating: 6.5,
+    age: "PG-13",
     duration: "2h 9m",
     genres: [
       "Action",
