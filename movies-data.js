@@ -11713,8 +11713,8 @@ window._MOVIES_DATA = [
   {
     title: "Don't Look Up",
     type: "Movie",
-    year: 2013,
-    rating: 7.2,
+    year: 2021,
+    rating: 7.1,
     age: "PG-13",
     duration: "2h 23m",
     genres: [
