@@ -11659,6 +11659,30 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Superbad",
+    type: "Movie",
+    year: 2007,
+    rating: 7.6,
+    age: "R",
+    duration: "1h 53m",
+    genres: [
+      "Comedy",
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ek8e8txUyUwd2BNqj6lFEerJfbq.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/z2cjtcPIssilQfVaO2LrUyLjapC.jpg",
+    videoUrl: "8363",
+    overview: "Two awkward teen best friend try score alcohol for party before head off separate college, hoping night lead to popularity, girl, one last wild adventure together. Chaos, cop, misadventure test friendship before life pull them apart.",
+    director: "Greg Mottola",
+    cast: [
+      "Jonah Hill, Michael Cera, Christopher Mintz-Plasse, Bill Hader, Seth Rogen, Emma Stone"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
