@@ -11820,7 +11820,7 @@ window._MOVIES_DATA = [
     year: 2016,
     rating: 5.9,
     age: "R",
-    duration: "1h 50m",
+    duration: "1h 39m",
     genres: [
       "Action",
       "Thriller",
