@@ -648,7 +648,7 @@ function renderCarousels() {
     if (!track) return;
     const movieList = shelfMap[trackId];
     if (trackId === "top10Track") {
-      track.innerHTML = movieList.map((movie, index) => createMovieCardHTML(movie, index + 1)).join("");
+      track.innerHTML = movieList.map((movie, index) => createMovieCardHTML(movie, index + 1, true)).join("");
     } else {
       track.innerHTML = movieList.map((movie) => createMovieCardHTML(movie)).join("");
     }
