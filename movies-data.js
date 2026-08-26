@@ -11870,7 +11870,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 2002,
     rating: 6.4,
-    age: "R",
+    age: "PG-13",
     duration: "1h 55m",
     genres: [
       "Crime",
