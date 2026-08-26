@@ -11865,6 +11865,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "High Crimes",
+    type: "Movie",
+    year: 1997,
+    rating: 6.6,
+    age: "R",
+    duration: "1h 55m",
+    genres: [
+      "Crime",
+      "Thriller",
+      "Mystery"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/25h5I3E3ydhazsPDnscWHivq5pn.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/y319VH0gIFie6KEO5L4nHhxxQUw.jpg",
+    videoUrl: "9437",
+    overview: "Detective, psychologist Alex Cross join force with escape victim track down serial kidnapper hold group of women captive. Race against time uncover killer identity before he strike again, claim another life.",
+    director: "Gary Fleder",
+    cast: [
+      "Morgan Freeman, Ashley Judd, Cary Elwes, Tony Goldwyn, Bill Nunn"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
