@@ -12105,9 +12105,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Dragon Ball Super: Broly",
+    title: "Dragon Ball Z: Bojack Unbound",
     type: "Movie",
-    year: 2018,
+    year: 1993,
     rating: 7.7,
     age: "PG",
     duration: "1h 40m",
