@@ -11805,7 +11805,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/vjwuT8EzWY96W6nrJKZNI2WJU87.jpg",
     videoUrl: "8909",
     overview: "Ordinary, unhappy office worker discover he descend from line of legendary assassin, recruit into secret society of killer. Trained sharpen deadly skill, uncover conspiracy tie back to own father's death.",
-    director: "Tom Shadyac",
+    director: "Timur Bekmambetov",
     cast: [
       "Jim Carrey, Morgan Freeman, Jennifer Aniston, Philip Baker Hall, Catherine Bell"
     ],
