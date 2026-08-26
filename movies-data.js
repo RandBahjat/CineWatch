@@ -11884,7 +11884,7 @@ window._MOVIES_DATA = [
     overview: "Successful lawyer discover husband hide dark secret, deserter accuse of war crime long ago. Team with disgrace military lawyer defend him, dig up buried truth put both their life at risk.",
     director: "Carl Franklin",
     cast: [
-      "Morgan Freeman, Ashley Judd, Cary Elwes, Tony Goldwyn, Bill Nunn"
+      "Ashley Judd, Morgan Freeman, Jim Caviezel, Adam Scott, Amanda Peet"
     ],
     trending: false,
     featured: false,
