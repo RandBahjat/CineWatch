@@ -11494,7 +11494,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cUC4rUb1Cs2KMaZ6RD4uYUEEwls.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/uumksY17NYEONUHfSc9D1rzQ3zI.jpg",
     videoUrl: "263472",
-    overview: "Wealthy crime novelist found dead night of his 85th birthday, detective Benoit Blanc call in investigate. Family full of secret, greed, lie, each one suspect, all point finger, truth harder to find than expect.",
+    overview: "Family man home alone for weekend, two young woman show up his door, claim stuck in storm, need help. Let them in start chain of manipulation, seduction, terror he never see coming.",
     director: "Rian Johnson",
     cast: [
       "Daniel Craig, Chris Evans, Ana de Armas, Jamie Lee Curtis, Michael Shannon, Toni Collette"
