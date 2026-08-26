@@ -12037,7 +12037,7 @@ window._MOVIES_DATA = [
       "Fantasy"
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/soq3AxjALdBfdPAm8H7yuMmNL5Y.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rCU5ddP3FVSDJy81UldUsBuf3ag.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/xXuVZCvWBjeDNcdSezBb6m3Qkpx.jpg",
     videoUrl: "303857",
     overview: "Remnant of Frieza's army use magic ball resurrect fallen tyrant, train hard prepare revenge. Frieza return stronger than ever, attack Earth, force Goku, Vegeta race back save planet, friends.",
