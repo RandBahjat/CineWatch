@@ -11918,9 +11918,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Pain & Gain",
+    title: "Get Smart",
     type: "Movie",
-    year: 2013,
+    year: 2008,
     rating: 6.4,
     age: "R",
     duration: "2h 9m",
