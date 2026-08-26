@@ -11956,7 +11956,7 @@ window._MOVIES_DATA = [
       "Comedy"
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/sZUjbtUS8qxXp4mj90evnqPJqX7.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wNEHNqo3MgHmj3BUiPSqqq5czcm.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/AfqYmTA3JUsyrFAVHoFyjyjG3Vl.jpg",
     videoUrl: "11665",
     overview: "Bumbling analyst Maxwell Smart finally promote field agent, partner with skilled Agent 99 stop terrorist organization threaten steal nuclear weapon. Clumsy charm, gadget, spy antic clash with real danger of mission.",
