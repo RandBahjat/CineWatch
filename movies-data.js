@@ -12267,9 +12267,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Dragon Ball Z: Cooler's Revenge",
+    title: "Dragon Ball Z Side Story: Plan to Eradicate the Saiyans",
     type: "Movie",
-    year: 1991,
+    year: 1993,
     rating: 7.0,
     age: "E10+",
     duration: "47m",
