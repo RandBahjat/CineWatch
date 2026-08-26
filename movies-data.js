@@ -11535,8 +11535,8 @@ window._MOVIES_DATA = [
   {
     title: "War Dogs",
     type: "Movie",
-    year: 2022,
-    rating: 6.8,
+    year: 2016,
+    rating: 7.1,
     age: "PG",
     duration: "1h 45m",
     genres: [
