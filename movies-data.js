@@ -11999,7 +11999,7 @@ window._MOVIES_DATA = [
   {
     title: "Dragon Ball Z: Resurrection 'F'",
     type: "Movie",
-    year: 2022,
+    year: 2015,
     rating: 7.1,
     age: "PG-13",
     duration: "1h 40m",
