@@ -12365,7 +12365,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/Apnw8FWoPOIsu14d5dvaNZzFSJE.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/2WTjYoswcKZTQrokeUOhY3Xb3mZ.jpg",
     videoUrl: "44251",
-    overview: "Young Goku, monk Bulma go on quest gather magic Dragon Balls, run into evil King Gurumes who want use them for own selfish wish. Adventure, martial art, comedy fill quest to stop tyrant's greedy plan.",
+    overview: "Broly, Legendary Super Saiyan, survive first defeat, revive by fanatic follower, unleash unstoppable rage once more. Gohan, Goten, Trunks, Videl trap in his path, must fight for survival against near god-like power.",
     director: "Daisuke Nishio",
     cast: [
       "Masako Nozawa, Hiromi Tsuru, Mami Koyama, Naoki Tatsuta, Shigeru Chiba"
