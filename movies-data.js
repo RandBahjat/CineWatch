@@ -12254,7 +12254,7 @@ window._MOVIES_DATA = [
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uqTSXqjaSgSAT2lCv3GyZeodQPG.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/br9p5Liij0JVXUtrvZPUZQTy9Tt.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/8bBwrxTwj4MVoy2ivYCqNLCxRcf.jpg",
     videoUrl: "39104",
     overview: "Remnant of Red Ribbon Army activate three deadly android built destroy Goku for good. Battle push Goku, Vegeta, Trunks to limit as android fuse together become near unstoppable force.",
     director: "Daisuke Nishio",
