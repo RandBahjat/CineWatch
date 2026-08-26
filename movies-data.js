@@ -12360,7 +12360,6 @@ window._MOVIES_DATA = [
       "Animation",
       "Adventure",
       "Fantasy",
-      "Comedy"
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dZCWRFJnwyxYOhzAhf7Xyru4moB.jpg",
