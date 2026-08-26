@@ -11751,7 +11751,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/kRbpUTRNm6QbLQFPFWUcNC4czEm.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1hzH1Wu2xhXBNOWzw3RMwNTJX5q.jpg",
-    videoUrl: "",
+    videoUrl: "240",
     overview: "Two low-level astronomer discover comet head straight for Earth, go on media tour warn world of coming doom. Nobody take them seriously, satire of media, politics, society ignore science, chase distraction instead.",
     director: "Adam McKay",
     cast: [
