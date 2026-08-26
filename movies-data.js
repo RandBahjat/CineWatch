@@ -11485,7 +11485,7 @@ window._MOVIES_DATA = [
     year: 2015,
     rating: 4.9,
     age: "R",
-    duration: "2h 10m",
+    duration: "1h 39m",
     genres: [
       "Crime",
       "Mystery",
