@@ -12339,7 +12339,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/1hiaeEgYcVU3gA3nrPpcqJDZ4SV.jpg",
     videoUrl: "39144",
     overview: "Young Goku, monk Bulma go on quest gather magic Dragon Balls, run into evil King Gurumes who want use them for own selfish wish. Adventure, martial art, comedy fill quest to stop tyrant's greedy plan.",
-    director: "Yoshihiro Ueda",
+    director: "Daisuke Nishio",
     cast: [
       "Masako Nozawa, Ryō Horikawa, Takeshi Kusao, Naoko Watanabe, Hiromi Tsuru"
     ],
