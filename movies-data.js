@@ -12205,7 +12205,7 @@ window._MOVIES_DATA = [
     overview: "Cooler, Frieza's brother, return seek revenge for past defeat, ally with race of mechanical being take over peaceful planet. Goku, friend get pull into fight protect innocent world from Cooler's cybernetic army.",
     director: "Yoshihiro Ueda",
     cast: [
-      "Masako Nozawa, Ryō Horikawa, Takeshi Kusao, Yūko Minaguchi, Kōji Yada"
+      "Masako Nozawa, Ryō Horikawa, Shigeru Chiba, Toshio Furukawa, Naoko Watanabe"
     ],
     trending: false,
     featured: false,
