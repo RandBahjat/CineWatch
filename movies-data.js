@@ -12243,7 +12243,7 @@ window._MOVIES_DATA = [
     title: "Dragon Ball Z: Cooler's Revenge",
     type: "Movie",
     year: 1991,
-    rating: 6.9,
+    rating: 7.0,
     age: "TV-PG",
     duration: "46m",
     genres: [
