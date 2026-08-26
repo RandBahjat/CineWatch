@@ -611,8 +611,8 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
 
   return `
     <div class="movie-card" data-id="${movie.id}">
-      ${rankHtml}
       <div class="card-poster-wrap ${forcePoster ? 'force-poster-wrap' : ''}">
+        ${rankHtml}
         <picture>
           ${sourceTag}
           <img src="${imgSrc}" alt="${movie.title}" class="card-poster ${forcePoster ? 'force-poster-img' : ''}" loading="lazy">
