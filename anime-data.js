@@ -1,4 +1,4 @@
-﻿// CineWatch - Anime Data
+// CineWatch - Anime Data
 window._ANIME_DATA = [
   {
     title: "One Piece",
@@ -16098,6 +16098,7 @@ window._ANIME_DATA = [
   id: "Bleach",
   title: "Bleach",
   type: "TV Show",
+  isAnime: true,
   year: 2004,
   rating: 8.4,
   age: "TV-14",
