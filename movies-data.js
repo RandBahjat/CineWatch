@@ -11727,7 +11727,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/nvxrQQspxmSblCYDtvDAbVFX8Jt.jpg",
     videoUrl: "646380",
     overview: "Two low-level astronomer discover comet head straight for Earth, go on media tour warn world of coming doom. Nobody take them seriously, satire of media, politics, society ignore science, chase distraction instead.",
-    director: "Baz Luhrmann",
+    director: "Adam McKay",
     cast: [
       "Leonardo DiCaprio, Carey Mulligan, Tobey Maguire, Joel Edgerton, Isla Fisher"
     ],
