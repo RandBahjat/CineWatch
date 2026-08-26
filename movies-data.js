@@ -11563,7 +11563,7 @@ window._MOVIES_DATA = [
     title: "Exposed",
     type: "Movie",
     year: 2016,
-    rating: 7.1,
+    rating: 4.4,
     age: "R",
     duration: "1h 54m",
     genres: [
