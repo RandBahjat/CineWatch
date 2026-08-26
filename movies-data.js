@@ -12270,7 +12270,7 @@ window._MOVIES_DATA = [
     title: "Dragon Ball Z Side Story: Plan to Eradicate the Saiyans",
     type: "Movie",
     year: 1993,
-    rating: 7.0,
+    rating: 6.7,
     age: "E10+",
     duration: "47m",
     genres: [
