@@ -11842,8 +11842,8 @@ window._MOVIES_DATA = [
   {
     title: "Kiss the Girls",
     type: "Movie",
-    year: 1996,
-    rating: 5.9,
+    year: 1997,
+    rating: 6.6,
     age: "R",
     duration: "1h 39m",
     genres: [
