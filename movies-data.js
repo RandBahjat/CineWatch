@@ -11533,7 +11533,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "DC League of Super-Pets",
+    title: "War Dogs",
     type: "Movie",
     year: 2022,
     rating: 6.8,
