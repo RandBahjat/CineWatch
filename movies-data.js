@@ -11753,7 +11753,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/1hzH1Wu2xhXBNOWzw3RMwNTJX5q.jpg",
     videoUrl: "240832",
     overview: "Woman accidentally expose to powerful drug that unlock full potential of human brain, gain extraordinary power grow more intense as brain capacity keep expand. Race against time, before power consume her completely, evade dangerous gang chase her down.",
-    director: "Adam McKay",
+    director: "Luc Besson",
     cast: [
       "Leonardo DiCaprio, Jennifer Lawrence, Meryl Streep, Cate Blanchett, Timothée Chalamet, Jonah Hill"
     ],
