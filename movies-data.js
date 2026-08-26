@@ -12135,8 +12135,8 @@ window._MOVIES_DATA = [
     title: "Dragon Ball Z: Lord Slug",
     type: "Movie",
     year: 1991,
-    rating: 7.1,
-    age: "E10+",
+    rating: 6.5,
+    age: "",
     duration: "50m",
     genres: [
       "Action",
