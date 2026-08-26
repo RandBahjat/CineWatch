@@ -12326,7 +12326,7 @@ window._MOVIES_DATA = [
     year: 1986,
     rating: 6.6,
     age: "PG",
-    duration: "47m",
+    duration: "50m",
     genres: [
       "Action",
       "Animation",
