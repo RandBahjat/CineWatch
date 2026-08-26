@@ -11845,7 +11845,7 @@ window._MOVIES_DATA = [
     year: 1997,
     rating: 6.6,
     age: "R",
-    duration: "1h 39m",
+    duration: "1h 55m",
     genres: [
       "Action",
       "Thriller",
