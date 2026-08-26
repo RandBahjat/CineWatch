@@ -11512,7 +11512,7 @@ window._MOVIES_DATA = [
     age: "PG",
     duration: "1h 45m",
     genres: [
-      "Thriller",
+      "Action",
       "Horror"
 
     ],
