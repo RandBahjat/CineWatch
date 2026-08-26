@@ -11737,7 +11737,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Don't Look Up",
+    title: "Lucy",
     type: "Movie",
     year: 2021,
     rating: 7.1,
