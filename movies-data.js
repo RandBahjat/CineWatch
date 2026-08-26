@@ -12375,6 +12375,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Dragon Ball Z: Broly - Second Coming",
+    type: "Movie",
+    year: 1994,
+    rating: 6.5,
+    age: "TV-PG",
+    duration: "48m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/Apnw8FWoPOIsu14d5dvaNZzFSJE.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/2WTjYoswcKZTQrokeUOhY3Xb3mZ.jpg",
+    videoUrl: "44251",
+    overview: "Broly, Legendary Super Saiyan, survive first defeat, revive by fanatic follower, unleash unstoppable rage once more. Gohan, Goten, Trunks, Videl trap in his path, must fight for survival against near god-like power.",
+    director: "Mitsuo Hashimoto",
+    cast: [
+      "Masako Nozawa, Ryō Horikawa, Takeshi Kusao, Yūko Minaguchi, Kōji Yada"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
