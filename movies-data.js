@@ -12240,9 +12240,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Dragon Ball Z: Super Android 13!",
+    title: "Dragon Ball Z: Cooler's Revenge",
     type: "Movie",
-    year: 1992,
+    year: 1991,
     rating: 6.9,
     age: "TV-PG",
     duration: "46m",
