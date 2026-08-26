@@ -788,7 +788,7 @@ function renderWatchlist() {
   }
 
   emptyState.classList.add("hidden");
-  grid.innerHTML = favMovies.map(createMovieCardHTML).join("");
+  grid.innerHTML = favMovies.map(m => createMovieCardHTML(m)).join("");
 }
 
 function renderContinueWatchingPage() {
@@ -933,7 +933,7 @@ function renderFilteredGrid(movieList, titleText) {
       </div>
     `;
   } else {
-    filteredGrid.innerHTML = movieList.map(createMovieCardHTML).join("");
+    filteredGrid.innerHTML = movieList.map(m => createMovieCardHTML(m)).join("");
   }
 }
 
@@ -956,7 +956,7 @@ function renderBrowseGrid(items, gridId, page) {
         <p>Try a different filter.</p>
       </div>`;
   } else {
-    grid.innerHTML = pageItems.map(createMovieCardHTML).join("");
+    grid.innerHTML = pageItems.map(m => createMovieCardHTML(m)).join("");
   }
 }
 
@@ -1814,7 +1814,7 @@ function openDetailsModal(movieId) {
       const limited = similarMovies.slice(0, 12);
       if (limited.length > 0) {
         similarsSection.classList.remove("hidden");
-        similarsGrid.innerHTML = limited.map(createMovieCardHTML).join("");
+        similarsGrid.innerHTML = limited.map(m => createMovieCardHTML(m)).join("");
       } else {
         similarsSection.classList.add("hidden");
       }
