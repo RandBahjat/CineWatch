@@ -12016,7 +12016,7 @@ window._MOVIES_DATA = [
     overview: "Remnant of Frieza's army use magic ball resurrect fallen tyrant, train hard prepare revenge. Frieza return stronger than ever, attack Earth, force Goku, Vegeta race back save planet, friends.",
     director: "Tadayoshi Yamamuro",
     cast: [
-      "Masako Nozawa, Kōichi Yamadera, Ryō Horikawa, Aya Hisakawa, Hiroshi Kamiya"
+      "Masako Nozawa, Ryō Horikawa, Ryūsei Nakao, Sōichirō Hoshi, Toshio Furukawa"
     ],
     trending: false,
     featured: false,
