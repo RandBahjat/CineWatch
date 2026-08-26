@@ -12364,7 +12364,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/Apnw8FWoPOIsu14d5dvaNZzFSJE.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/2WTjYoswcKZTQrokeUOhY3Xb3mZ.jpg",
-    videoUrl: "44",
+    videoUrl: "44251",
     overview: "Young Goku, monk Bulma go on quest gather magic Dragon Balls, run into evil King Gurumes who want use them for own selfish wish. Adventure, martial art, comedy fill quest to stop tyrant's greedy plan.",
     director: "Daisuke Nishio",
     cast: [
