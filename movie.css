@@ -6530,22 +6530,22 @@ body.rtl-layout .account-side-panel.open {
 
 .top10-track .movie-card {
   overflow: visible;
-  flex: 0 0 220px; /* Wider card to hold number and poster */
-  width: 220px;
-  max-width: 220px;
+  flex: 0 0 170px; 
+  width: 170px;
+  max-width: 170px;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
 .top10-track .movie-card:first-child {
-  margin-left: 0px; 
+  margin-left: 40px; 
 }
 
 .top10-track .card-poster-wrap {
-  width: 150px;
-  margin-left: auto; /* Push poster to the right side of the card */
-  aspect-ratio: 2 / 3 !important; /* Force poster aspect ratio */
+  width: 100%;
+  margin-left: 0; 
+  aspect-ratio: 2 / 3 !important; 
 }
 
 .force-poster-wrap {
@@ -6554,9 +6554,9 @@ body.rtl-layout .account-side-panel.open {
 
 .top10-rank-badge {
   position: absolute;
-  bottom: 60px; /* Position above the text details */
-  left: 0px; /* Sit on the far left of the wider card */
-  font-size: 160px;
+  bottom: 60px; /* Above the text details */
+  left: -20px; /* Overlap the left edge of the poster */
+  font-size: 150px;
   font-weight: 900;
   color: #000;
   -webkit-text-stroke: 4px #e50914;
@@ -6565,7 +6565,7 @@ body.rtl-layout .account-side-panel.open {
   z-index: 10;
   font-family: 'Inter', sans-serif;
   pointer-events: none;
-  letter-spacing: -10px;
+  letter-spacing: -5px;
 }
 
 .top10-track .movie-card:hover .top10-rank-badge {
@@ -6578,17 +6578,17 @@ body.rtl-layout .account-side-panel.open {
     padding-left: 10px;
   }
   .top10-track .movie-card {
-    flex: 0 0 160px;
-    width: 160px;
-    max-width: 160px;
+    flex: 0 0 120px;
+    width: 120px;
+    max-width: 120px;
   }
-  .top10-track .card-poster-wrap {
-    width: 110px;
+  .top10-track .movie-card:first-child {
+    margin-left: 30px; 
   }
   .top10-rank-badge {
-    font-size: 110px;
+    font-size: 100px;
     bottom: 50px;
-    left: -10px;
+    left: -15px;
     -webkit-text-stroke: 3px #e50914;
   }
 }
