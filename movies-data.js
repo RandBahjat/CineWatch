@@ -12158,6 +12158,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Dragon Ball Z: Wrath of the Dragon",
+    type: "Movie",
+    year: 1991,
+    rating: 6.5,
+    age: "PG",
+    duration: "43m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1lmwZTsqwTtvd3m60pyQfhGM2Ut.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/vsmlvr8FX2bfGlimucXTw8XArFB.jpg",
+    videoUrl: "39102",
+    overview: "Powerful Namekian warlord Lord Slug arrive Earth, drain planet of energy, plan reshape it his own dark image. Goku must push past limit, tap into hidden power to stop him before Earth wither, die.",
+    director: "Mitsuo Hashimoto",
+    cast: [
+      "Masako Nozawa, Ryō Horikawa, Naoki Tatsuta, Naoko Watanabe, Hiromi Tsuru"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
