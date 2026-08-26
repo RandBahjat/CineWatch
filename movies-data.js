@@ -12212,6 +12212,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Dragon Ball Z: The Return of Cooler",
+    type: "Movie",
+    year: 1992,
+    rating: 6.9,
+    age: "PG",
+    duration: "45m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ipfeRIqcBj5NfCLkTtg39enfJV2.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/oYREex6JaANz1aVPYLcXvdpuTnY.jpg",
+    videoUrl: "39103",
+    overview: "Cooler, Frieza's brother, return seek revenge for past defeat, ally with race of mechanical being take over peaceful planet. Goku, friend get pull into fight protect innocent world from Cooler's cybernetic army.",
+    director: "Yoshihiro Ueda",
+    cast: [
+      "Masako Nozawa, Ryō Horikawa, Shigeru Chiba, Toshio Furukawa, Naoko Watanabe"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
