@@ -12213,7 +12213,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Dragon Ball Z: The Return of Cooler",
+    title: "Dragon Ball Z: Super Android 13!",
     type: "Movie",
     year: 1992,
     rating: 6.9,
