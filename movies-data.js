@@ -12053,7 +12053,7 @@ window._MOVIES_DATA = [
   {
     title: "Dragon Ball Z: Battle of Gods",
     type: "Movie",
-    year: ,
+    year: 2013,
     rating: 7.6,
     age: "PG",
     duration: "51m",
