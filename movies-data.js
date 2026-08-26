@@ -11739,7 +11739,7 @@ window._MOVIES_DATA = [
   {
     title: "Lucy",
     type: "Movie",
-    year: 2021,
+    year: 2014,
     rating: 7.1,
     age: "R",
     duration: "2h 18m",
