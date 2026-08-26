@@ -6602,3 +6602,6 @@ body.rtl-layout .account-side-panel.open {
  h t m l [ l a n g = " k u " ]   . e n - o n l y   {   d i s p l a y :   n o n e   ! i m p o r t a n t ;   }  
  h t m l [ l a n g = " k u " ]   . k u - o n l y   {   d i s p l a y :   i n l i n e   ! i m p o r t a n t ;   }  
  
+/* Language Overrides */
+html[lang="ku"] .en-only { display: none !important; }
+html[lang="ku"] .ku-only { display: inline !important; }
