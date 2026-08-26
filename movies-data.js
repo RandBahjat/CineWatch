@@ -12124,7 +12124,7 @@ window._MOVIES_DATA = [
     overview: "Vicious space pirate Bojack, freed after long imprisonment, seek revenge, wreak havoc during World Martial Arts Tournament. Young Gohan must step up, protect friend, fight fierce battle while Goku stuck away in Other World.",
     director: "Yoshihiro Ueda",
     cast: [
-      "Masako Nozawa, Ryō Horikawa, Bin Shimada, Kōichi Yamadera, Aya Hisakawa"
+      "Masako Nozawa, Ryō Horikawa, Shigeru Chiba, Toshio Furukawa, Naoko Watanabe"
     ],
     trending: false,
     featured: false,
