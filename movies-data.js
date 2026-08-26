@@ -12201,7 +12201,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ipfeRIqcBj5NfCLkTtg39enfJV2.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oYREex6JaANz1aVPYLcXvdpuTnY.jpg",
-    videoUrl: "39108",
+    videoUrl: "",
     overview: "Ancient evil warrior Tapion seal inside music box, wake up alongside monstrous beast Hirudegarn once he free. Trunks, Goten must earn Tapion's trust, work together stop Hirudegarn before it destroy world twice over.",
     director: "Mitsuo Hashimoto",
     cast: [
