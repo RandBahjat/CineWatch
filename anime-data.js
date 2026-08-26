@@ -1,4 +1,4 @@
-﻿// CineWatch - Anime Data
+// CineWatch - Anime Data
 window._ANIME_DATA = [
   {
     title: "One Piece",
@@ -418,7 +418,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 76,
-            title: "Time to Fight Back! Usopp’s Quick Thinking and Fire Star!",
+            title: "Time to Fight Back! Usopp�s Quick Thinking and Fire Star!",
             absoluteEpisode: 76
           },
           {
@@ -563,7 +563,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 103,
-            title: "Spiders Café at 8 o'Clock! The Enemy Leaders Gather!",
+            title: "Spiders Caf� at 8 o'Clock! The Enemy Leaders Gather!",
             absoluteEpisode: 103
           },
           {
@@ -1323,7 +1323,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 251,
-            title: "The Truth Behind Her Betrayal! Robin’s Sorrowful Decision!",
+            title: "The Truth Behind Her Betrayal! Robin�s Sorrowful Decision!",
             absoluteEpisode: 251
           },
           {
@@ -1428,7 +1428,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 271,
-            title: "Don’t Stop! Hoist the Counterattack Signal!",
+            title: "Don�t Stop! Hoist the Counterattack Signal!",
             absoluteEpisode: 271
           },
           {
@@ -1468,7 +1468,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 279,
-            title: "Jump Towards the Falls! Luffy’s Feelings!",
+            title: "Jump Towards the Falls! Luffy�s Feelings!",
             absoluteEpisode: 279
           },
           {
@@ -1723,12 +1723,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 330,
-            title: "The Staw Hat’s Hard Battles! A Pirate Soul Risking It All for the Flag!",
+            title: "The Staw Hat�s Hard Battles! A Pirate Soul Risking It All for the Flag!",
             absoluteEpisode: 330
           },
           {
             episode: 331,
-            title: "Hot Full Throttle! The Twin’s Magnetic Power Drawing Near!",
+            title: "Hot Full Throttle! The Twin�s Magnetic Power Drawing Near!",
             absoluteEpisode: 331
           },
           {
@@ -1763,12 +1763,12 @@ window._ANIME_DATA = [
         episodes: [
           {
             episode: 337,
-            title: "Plunging into the Devil’s Sea! The Mysterious Skeleton Floating in the Fog!",
+            title: "Plunging into the Devil�s Sea! The Mysterious Skeleton Floating in the Fog!",
             absoluteEpisode: 337
           },
           {
             episode: 338,
-            title: "The Joy of Seeing People! The Gentleman Skeleton’s True Identity!",
+            title: "The Joy of Seeing People! The Gentleman Skeleton�s True Identity!",
             absoluteEpisode: 338
           },
           {
@@ -1783,12 +1783,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 341,
-            title: "Nami’s in a Major Pinch! The Zombie Mansion and the Invisible Man!",
+            title: "Nami�s in a Major Pinch! The Zombie Mansion and the Invisible Man!",
             absoluteEpisode: 341
           },
           {
             episode: 342,
-            title: "The Zombie’s Secret! Hogback’s Nightmarish Laboratory!",
+            title: "The Zombie�s Secret! Hogback�s Nightmarish Laboratory!",
             absoluteEpisode: 342
           },
           {
@@ -1958,7 +1958,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 376,
-            title: "It Repels Everything! Kuma’s Paw-Paw Power!",
+            title: "It Repels Everything! Kuma�s Paw-Paw Power!",
             absoluteEpisode: 376
           },
           {
@@ -2033,7 +2033,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 390,
-            title: "Landing to Get to Fish-man Island – The Sabaody Archipelago",
+            title: "Landing to Get to Fish-man Island � The Sabaody Archipelago",
             absoluteEpisode: 390
           },
           {
@@ -2053,12 +2053,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 394,
-            title: "Rescue Camie! The Archipelago’s Lingering Dark History",
+            title: "Rescue Camie! The Archipelago�s Lingering Dark History",
             absoluteEpisode: 394
           },
           {
             episode: 395,
-            title: "Time Limit – The Human Auction Begins",
+            title: "Time Limit � The Human Auction Begins",
             absoluteEpisode: 395
           },
           {
@@ -2083,17 +2083,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 400,
-            title: "Roger and Rayleigh – the King of the Pirates and His Right Hand Man",
+            title: "Roger and Rayleigh � the King of the Pirates and His Right Hand Man",
             absoluteEpisode: 400
           },
           {
             episode: 401,
-            title: "No Escape!? Admiral Kizaru’s Light Speed Kick!!",
+            title: "No Escape!? Admiral Kizaru�s Light Speed Kick!!",
             absoluteEpisode: 401
           },
           {
             episode: 402,
-            title: "Overwhelming! The Navy’s Fighting Weapons, the Pacifistas",
+            title: "Overwhelming! The Navy�s Fighting Weapons, the Pacifistas",
             absoluteEpisode: 402
           },
           {
@@ -2108,17 +2108,17 @@ window._ANIME_DATA = [
           },
           {
             episode: 405,
-            title: "Eliminated Friends – The Final Day of the Straw Hat Crew",
+            title: "Eliminated Friends � The Final Day of the Straw Hat Crew",
             absoluteEpisode: 405
           },
           {
             episode: 406,
-            title: "Feudal Era Side Story – Boss Luffy Appears Again",
+            title: "Feudal Era Side Story � Boss Luffy Appears Again",
             absoluteEpisode: 406
           },
           {
             episode: 407,
-            title: "Feudal Era Side Story – Defeat Thriller Company's Trap",
+            title: "Feudal Era Side Story � Defeat Thriller Company's Trap",
             absoluteEpisode: 407
           }
         ]
@@ -2143,7 +2143,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 411,
-            title: "The Secret Hidden on the Backs – Luffy and the Snake Princess Meet",
+            title: "The Secret Hidden on the Backs � Luffy and the Snake Princess Meet",
             absoluteEpisode: 411
           },
           {
@@ -2163,7 +2163,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 415,
-            title: "Hancock's Confession – The Sisters' Abhorrent Past",
+            title: "Hancock's Confession � The Sisters' Abhorrent Past",
             absoluteEpisode: 415
           },
           {
@@ -2178,7 +2178,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 418,
-            title: "The Friends' Whereabouts – The Science of Weather and the Mechanical Island",
+            title: "The Friends' Whereabouts � The Science of Weather and the Mechanical Island",
             absoluteEpisode: 418
           },
           {
@@ -2188,7 +2188,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 420,
-            title: "The Friends' Whereabouts – Bridging the Islands and Vicious Vegetations!",
+            title: "The Friends' Whereabouts � Bridging the Islands and Vicious Vegetations!",
             absoluteEpisode: 420
           },
           {
@@ -3388,7 +3388,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 656,
-            title: "Rebeccca’s Sword of Death! Backwater Sword Dance!",
+            title: "Rebeccca�s Sword of Death! Backwater Sword Dance!",
             absoluteEpisode: 656
           },
           {
@@ -3688,7 +3688,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 715,
-            title: "The Manly Duel! Señor's Elegy of Love!",
+            title: "The Manly Duel! Se�or's Elegy of Love!",
             absoluteEpisode: 715
           },
           {
@@ -3848,12 +3848,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 747,
-            title: "The Silver Fortress – The Great Adventures of Luffy and Bart",
+            title: "The Silver Fortress � The Great Adventures of Luffy and Bart",
             absoluteEpisode: 747
           },
           {
             episode: 748,
-            title: "An Underground Labyrinth – Luffy vs. Mine Cart Man",
+            title: "An Underground Labyrinth � Luffy vs. Mine Cart Man",
             absoluteEpisode: 748
           }
         ]
@@ -4053,7 +4053,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 787,
-            title: "The Emperor's Daughter! Sanji's Fiancée - Pudding!",
+            title: "The Emperor's Daughter! Sanji's Fianc�e - Pudding!",
             absoluteEpisode: 787
           },
           {
@@ -4338,7 +4338,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 843,
-            title: "The Castle Collapses! The Straw Hat’s Great Escape Begins!",
+            title: "The Castle Collapses! The Straw Hat�s Great Escape Begins!",
             absoluteEpisode: 843
           },
           {
@@ -4393,7 +4393,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 854,
-            title: "The Threat of the Mole! Luffy’s Silent Fight!",
+            title: "The Threat of the Mole! Luffy�s Silent Fight!",
             absoluteEpisode: 854
           },
           {
@@ -4403,7 +4403,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 856,
-            title: "The Forbidden Secret! Katakuri’s Merienda!",
+            title: "The Forbidden Secret! Katakuri�s Merienda!",
             absoluteEpisode: 856
           },
           {
@@ -4488,7 +4488,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 873,
-            title: "Pulling Back from the Brink! The Formidable Reinforcements – Germa!",
+            title: "Pulling Back from the Brink! The Formidable Reinforcements � Germa!",
             absoluteEpisode: 873
           },
           {
@@ -4708,7 +4708,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 915,
-            title: "Destructive! One Shot, One Kill – Thunder Bagua!",
+            title: "Destructive! One Shot, One Kill � Thunder Bagua!",
             absoluteEpisode: 915
           },
           {
@@ -4728,7 +4728,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 919,
-            title: "Rampage! The Prisoners – Luffy and Kid!",
+            title: "Rampage! The Prisoners � Luffy and Kid!",
             absoluteEpisode: 919
           },
           {
@@ -4738,7 +4738,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 921,
-            title: "Luxurious and Gorgeous! Wano's Most Beautiful Woman – Komurasaki!",
+            title: "Luxurious and Gorgeous! Wano's Most Beautiful Woman � Komurasaki!",
             absoluteEpisode: 921
           },
           {
@@ -4878,7 +4878,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 949,
-            title: "We’re Here to Win! Luffy's Desperate Scream!",
+            title: "We�re Here to Win! Luffy's Desperate Scream!",
             absoluteEpisode: 949
           },
           {
@@ -4908,7 +4908,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 955,
-            title: "A New Alliance?! Kaido’s Army Gathers!",
+            title: "A New Alliance?! Kaido�s Army Gathers!",
             absoluteEpisode: 955
           },
           {
@@ -5028,7 +5028,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 979,
-            title: "Good Luck?! Leader Kin’emon’s Plot!",
+            title: "Good Luck?! Leader Kin�emon�s Plot!",
             absoluteEpisode: 979
           },
           {
@@ -5043,22 +5043,22 @@ window._ANIME_DATA = [
           },
           {
             episode: 982,
-            title: "Kaido’s Trump Card! The Tobi Roppo Appear!",
+            title: "Kaido�s Trump Card! The Tobi Roppo Appear!",
             absoluteEpisode: 982
           },
           {
             episode: 983,
-            title: "The Samurai Warriors’ Earnestness! The Straw Hats Land at Onigashima!",
+            title: "The Samurai Warriors� Earnestness! The Straw Hats Land at Onigashima!",
             absoluteEpisode: 983
           },
           {
             episode: 984,
-            title: "Luffy Goes Out of Control?! Sneaking into Kaido’s Banquet!",
+            title: "Luffy Goes Out of Control?! Sneaking into Kaido�s Banquet!",
             absoluteEpisode: 984
           },
           {
             episode: 985,
-            title: "Thinking of Otama! Luffy’s Furious Strike!",
+            title: "Thinking of Otama! Luffy�s Furious Strike!",
             absoluteEpisode: 985
           },
           {
@@ -5083,7 +5083,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 990,
-            title: "Thunder Bagua! Here Comes Kaido’s Son!",
+            title: "Thunder Bagua! Here Comes Kaido�s Son!",
             absoluteEpisode: 990
           },
           {
@@ -5093,12 +5093,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 992,
-            title: "Desire to be Oden! Yamato’s Dream!",
+            title: "Desire to be Oden! Yamato�s Dream!",
             absoluteEpisode: 992
           },
           {
             episode: 993,
-            title: "Explosive?! The Handcuffs that Shackle Yamato’s Freedom!",
+            title: "Explosive?! The Handcuffs that Shackle Yamato�s Freedom!",
             absoluteEpisode: 993
           },
           {
@@ -5113,7 +5113,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 996,
-            title: "Onigashima in Tumult! Luffy’s All-Out War Begins!",
+            title: "Onigashima in Tumult! Luffy�s All-Out War Begins!",
             absoluteEpisode: 996
           },
           {
@@ -5123,12 +5123,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 998,
-            title: "Zeus’ Treason?! The Cornered Nami!",
+            title: "Zeus� Treason?! The Cornered Nami!",
             absoluteEpisode: 998
           },
           {
             episode: 999,
-            title: "I’ll Protect You! Yamato Meets Momonosuke!",
+            title: "I�ll Protect You! Yamato Meets Momonosuke!",
             absoluteEpisode: 999
           },
           {
@@ -5153,7 +5153,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1004,
-            title: "An Inherited Technique! Unleashing Oden’s Secret Swordplay!",
+            title: "An Inherited Technique! Unleashing Oden�s Secret Swordplay!",
             absoluteEpisode: 1004
           },
           {
@@ -5163,32 +5163,32 @@ window._ANIME_DATA = [
           },
           {
             episode: 1006,
-            title: "I Won’t Forgive Him! Chopper’s Determination!",
+            title: "I Won�t Forgive Him! Chopper�s Determination!",
             absoluteEpisode: 1006
           },
           {
             episode: 1007,
-            title: "Zoro’s Pursuit! Ice Oni Tag!",
+            title: "Zoro�s Pursuit! Ice Oni Tag!",
             absoluteEpisode: 1007
           },
           {
             episode: 1008,
-            title: "Nami Surrenders?! Ulti’s Fierce Headbutt!",
+            title: "Nami Surrenders?! Ulti�s Fierce Headbutt!",
             absoluteEpisode: 1008
           },
           {
             episode: 1009,
-            title: "Sasaki’s Onslaught! Armored Division vs. Yamato!",
+            title: "Sasaki�s Onslaught! Armored Division vs. Yamato!",
             absoluteEpisode: 1009
           },
           {
             episode: 1010,
-            title: "Eliminate the Ice Oni! Chopper’s Fire Trick!",
+            title: "Eliminate the Ice Oni! Chopper�s Fire Trick!",
             absoluteEpisode: 1010
           },
           {
             episode: 1011,
-            title: "It’s Not Okay! The Spider Lures Sanji!",
+            title: "It�s Not Okay! The Spider Lures Sanji!",
             absoluteEpisode: 1011
           },
           {
@@ -5198,12 +5198,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 1013,
-            title: "Yamato’s Past! The Man Who Came for an Emperor of the Sea!",
+            title: "Yamato�s Past! The Man Who Came for an Emperor of the Sea!",
             absoluteEpisode: 1013
           },
           {
             episode: 1014,
-            title: "Marco’s Tears! The Bond of the Whitebeard Pirates!",
+            title: "Marco�s Tears! The Bond of the Whitebeard Pirates!",
             absoluteEpisode: 1014
           },
           {
@@ -5228,12 +5228,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 1019,
-            title: "Otama’s Secret Plan! Operation Kibi Dango!",
+            title: "Otama�s Secret Plan! Operation Kibi Dango!",
             absoluteEpisode: 1019
           },
           {
             episode: 1020,
-            title: "Sanji’s Scream! An SOS Echoes Over the Island!",
+            title: "Sanji�s Scream! An SOS Echoes Over the Island!",
             absoluteEpisode: 1020
           },
           {
@@ -5258,7 +5258,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1025,
-            title: "The Worst Generation Gets Wiped Out?! The Emperors’ Deadly Attack!",
+            title: "The Worst Generation Gets Wiped Out?! The Emperors� Deadly Attack!",
             absoluteEpisode: 1025
           },
           {
@@ -5268,7 +5268,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1027,
-            title: "Defend Luffy! Zoro and Law’s Sword Technique!",
+            title: "Defend Luffy! Zoro and Law�s Sword Technique!",
             absoluteEpisode: 1027
           },
           {
@@ -5278,7 +5278,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1029,
-            title: "A Faint Memory! Luffy and Red-Haired’s Daughter Uta!",
+            title: "A Faint Memory! Luffy and Red-Haired�s Daughter Uta!",
             absoluteEpisode: 1029
           },
           {
@@ -5318,12 +5318,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 1037,
-            title: "Believe in Luffy! The Alliance’s Counterattack Begins!",
+            title: "Believe in Luffy! The Alliance�s Counterattack Begins!",
             absoluteEpisode: 1037
           },
           {
             episode: 1038,
-            title: "Nami’s Lethal Attack! Otama’s Desperate Challenge!",
+            title: "Nami�s Lethal Attack! Otama�s Desperate Challenge!",
             absoluteEpisode: 1038
           },
           {
@@ -5343,7 +5343,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1042,
-            title: "The Predator’s Trap - Black Maria’s Temptation!",
+            title: "The Predator�s Trap - Black Maria�s Temptation!",
             absoluteEpisode: 1042
           },
           {
@@ -5373,7 +5373,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1048,
-            title: "For the Future! Yamato and the Great Swordsmen’s Pledge",
+            title: "For the Future! Yamato and the Great Swordsmen�s Pledge",
             absoluteEpisode: 1048
           },
           {
@@ -5383,12 +5383,12 @@ window._ANIME_DATA = [
           },
           {
             episode: 1050,
-            title: "Two Dragons Face Off! Momonosuke’s Determination!",
+            title: "Two Dragons Face Off! Momonosuke�s Determination!",
             absoluteEpisode: 1050
           },
           {
             episode: 1051,
-            title: "A Legend All Over Again! Luffy’s Fist Roars in the Sky",
+            title: "A Legend All Over Again! Luffy�s Fist Roars in the Sky",
             absoluteEpisode: 1051
           },
           {
@@ -5733,7 +5733,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 1119,
-            title: "The Entrusted Message! King Cobra’s Resolve",
+            title: "The Entrusted Message! King Cobra�s Resolve",
             absoluteEpisode: 1119
           },
           {
@@ -6478,7 +6478,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 7,
-            title: "Déjà vu",
+            title: "D�j� vu",
             absoluteEpisode: 81
           },
           {
@@ -7718,10 +7718,10 @@ window._ANIME_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qEUrbXJ2qt4Rg84Btlx4STOhgte.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/j6RVYpovoPsk269DANJkAerHpzg.jpg",
-    overview: "After Majin Buu defeat, Goku, friend enjoy peace, but new threat emerge from beyond stars — god of destruction, powerful warrior from other universe, force Goku push past Super Saiyan into whole new level of power.",
+    overview: "After Majin Buu defeat, Goku, friend enjoy peace, but new threat emerge from beyond stars � god of destruction, powerful warrior from other universe, force Goku push past Super Saiyan into whole new level of power.",
     director: "Kimitoshi Chioka",
     cast: [
-      "Masako Nozawa, Ryō Horikawa, Yūko Minaguchi, Bin Shimada, Naoko Watanabe"
+      "Masako Nozawa, Ryo Horikawa, Yuko Minaguchi, Bin Shimada, Naoko Watanabe"
     ],
     tags: [
       "Animation",
@@ -7871,7 +7871,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 28,
-            title: "The 6th Universe's God of Destruction — His Name's Champa",
+            title: "The 6th Universe's God of Destruction � His Name's Champa",
             duration: "23m"
           },
           {
@@ -7901,7 +7901,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 34,
-            title: "Piccolo vs Frost — Bet Everything on the Makankosappo!",
+            title: "Piccolo vs Frost � Bet Everything on the Makankosappo!",
             duration: "23m"
           },
           {
@@ -8006,7 +8006,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 55,
-            title: "I Want to Meet Son Goku - A Call from Zenō-sama",
+            title: "I Want to Meet Son Goku - A Call from Zeno-sama",
             duration: "23m"
           },
           {
@@ -8151,7 +8151,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 84,
-            title: "Son Goku the Talent Scout — Inviting Kuririn and No. 18",
+            title: "Son Goku the Talent Scout � Inviting Kuririn and No. 18",
             duration: "23m"
           },
           {
@@ -8266,7 +8266,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 107,
-            title: "Revenge ‘F'! The Cunning Trap?!",
+            title: "Revenge �F'! The Cunning Trap?!",
             duration: "23m"
           },
           {
@@ -8412,7 +8412,7 @@ window._ANIME_DATA = [
     overview: "Ten years have passed since Goku left Earth to train Uub. However, Pilaf has returned, and this time he's stolen the Black Star Dragon Balls...",
     director: "Osamu Kasai",
     cast: [
-      "Masako Nozawa, Yūko Minaguchi, Takeshi Kusao"
+      "Masako Nozawa, Yuko Minaguchi, Takeshi Kusao"
     ],
     tags: [
       "Animation",
@@ -9112,7 +9112,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 55,
-            title: "That's Earth Papa… The Counterattack of Freeza Father and Son",
+            title: "That's Earth Papa� The Counterattack of Freeza Father and Son",
             duration: "25m",
             absoluteEpisode: 55
           },
@@ -9178,7 +9178,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 66,
-            title: "The Time has Come to Become One Again… Piccolo's Decision for Ultimate Power!",
+            title: "The Time has Come to Become One Again� Piccolo's Decision for Ultimate Power!",
             duration: "25m",
             absoluteEpisode: 66
           },
@@ -9651,13 +9651,13 @@ window._ANIME_DATA = [
           },
           {
             episode: 46,
-            title: "The Great Kaiōshin's Bright Idea! Son Goku is Revived!!",
+            title: "The Great Kaioshin's Bright Idea! Son Goku is Revived!!",
             duration: "25m",
             absoluteEpisode: 144
           },
           {
             episode: 47,
-            title: "One Time Only Miracle… Will the Super Combination With That Guy Come About?",
+            title: "One Time Only Miracle� Will the Super Combination With That Guy Come About?",
             duration: "25m",
             absoluteEpisode: 145
           },
@@ -9735,7 +9735,7 @@ window._ANIME_DATA = [
           },
           {
             episode: 60,
-            title: "And So, After 10 Years... The First Tenka'ichi Budōkai in a Long Time!",
+            title: "And So, After 10 Years... The First Tenka'ichi Budokai in a Long Time!",
             duration: "25m",
             absoluteEpisode: 158
           },
@@ -11170,7 +11170,7 @@ window._ANIME_DATA = [
   }
   ,
   {
-        title: "Naruto Shippūden",
+        title: "Naruto Shippuden",
         type: "TV Show",
         isAnime: true,
         year: 2007,
@@ -11286,13 +11286,13 @@ window._ANIME_DATA = [
               },
               {
                 episode: 15,
-                title: "The Secret Weapon Is Called…",
+                title: "The Secret Weapon Is Called�",
                 duration: "30m",
                 absoluteEpisode: 15
               },
               {
                 episode: 16,
-                title: "The Secret of Jinchūriki",
+                title: "The Secret of Jinchuriki",
                 duration: "30m",
                 absoluteEpisode: 16
               },
@@ -11453,7 +11453,7 @@ window._ANIME_DATA = [
               },
               {
                 episode: 10,
-                title: "Orochimaru VS Jinchūriki",
+                title: "Orochimaru VS Jinchuriki",
                 duration: "30m",
                 absoluteEpisode: 42
               },
@@ -11495,7 +11495,7 @@ window._ANIME_DATA = [
               },
               {
                 episode: 17,
-                title: "Something Important…",
+                title: "Something Important�",
                 duration: "30m",
                 absoluteEpisode: 49
               },
@@ -12037,7 +12037,7 @@ window._ANIME_DATA = [
               },
               {
                 episode: 24,
-                title: "The Light and Dark of the Mangekyō Sharingan",
+                title: "The Light and Dark of the Mangekyo Sharingan",
                 duration: "30m",
                 absoluteEpisode: 136
               },
@@ -12310,7 +12310,7 @@ window._ANIME_DATA = [
               },
               {
                 episode: 4,
-                title: "Kakashi Hatake, the Jōnin in Charge",
+                title: "Kakashi Hatake, the Jonin in Charge",
                 duration: "30m",
                 absoluteEpisode: 179
               },
@@ -12507,7 +12507,7 @@ window._ANIME_DATA = [
               },
               {
                 episode: 15,
-                title: "Danzō Shimura",
+                title: "Danzo Shimura",
                 duration: "30m",
                 absoluteEpisode: 211
               },
@@ -12680,7 +12680,7 @@ window._ANIME_DATA = [
               },
               {
                 episode: 18,
-                title: "The Legendary Ino–Shika–Chō",
+                title: "The Legendary Ino�Shika�Cho",
                 duration: "30m",
                 absoluteEpisode: 239
               },
@@ -12883,7 +12883,7 @@ window._ANIME_DATA = [
               },
               {
                 episode: 30,
-                title: "Mifune vs. Hanzō",
+                title: "Mifune vs. Hanzo",
                 duration: "30m",
                 absoluteEpisode: 272
               },
@@ -12895,7 +12895,7 @@ window._ANIME_DATA = [
               },
               {
                 episode: 32,
-                title: "The Complete Ino-Shika-Chō Formation",
+                title: "The Complete Ino-Shika-Cho Formation",
                 duration: "30m",
                 absoluteEpisode: 274
               },
@@ -12912,7 +12912,7 @@ window._ANIME_DATA = [
             episodes: [
               {
                 episode: 1,
-                title: "Attack of the Gedō Statue",
+                title: "Attack of the Gedo Statue",
                 duration: "30m",
                 absoluteEpisode: 276
               },
@@ -13169,7 +13169,7 @@ window._ANIME_DATA = [
               },
               {
                 episode: 23,
-                title: "A Hole in the Heart: The Other Jinchūriki",
+                title: "A Hole in the Heart: The Other Jinchuriki",
                 duration: "30m",
                 absoluteEpisode: 318
               },
@@ -13419,7 +13419,7 @@ window._ANIME_DATA = [
               },
               {
                 episode: 10,
-                title: "Coup d'État",
+                title: "Coup d'�tat",
                 duration: "30m",
                 absoluteEpisode: 358
               },
@@ -13650,13 +13650,13 @@ window._ANIME_DATA = [
             episodes: [
               {
                 episode: 1,
-                title: "The New Chūnin Exams",
+                title: "The New Chunin Exams",
                 duration: "30m",
                 absoluteEpisode: 394
               },
               {
                 episode: 2,
-                title: "The Chūnin Exams Begin",
+                title: "The Chunin Exams Begin",
                 duration: "30m",
                 absoluteEpisode: 395
               },
@@ -13781,7 +13781,7 @@ window._ANIME_DATA = [
               },
               {
                 episode: 2,
-                title: "The Two Mangekyō",
+                title: "The Two Mangekyo",
                 duration: "30m",
                 absoluteEpisode: 415
               },
@@ -13865,13 +13865,13 @@ window._ANIME_DATA = [
               },
               {
                 episode: 16,
-                title: "Killer B Rappūden: Part 1",
+                title: "Killer B Rappuden: Part 1",
                 duration: "30m",
                 absoluteEpisode: 429
               },
               {
                 episode: 17,
-                title: "Killer B Rappūden: Part 2",
+                title: "Killer B Rappuden: Part 2",
                 duration: "30m",
                 absoluteEpisode: 430
               },
@@ -14075,7 +14075,7 @@ window._ANIME_DATA = [
               },
               {
                 episode: 51,
-                title: "Ninshū: The Ninja Creed",
+                title: "Ninshu: The Ninja Creed",
                 duration: "30m",
                 absoluteEpisode: 464
               },
@@ -14117,7 +14117,7 @@ window._ANIME_DATA = [
               },
               {
                 episode: 58,
-                title: "The Two of Them… Always",
+                title: "The Two of Them� Always",
                 duration: "30m",
                 absoluteEpisode: 471
               },
@@ -14171,25 +14171,25 @@ window._ANIME_DATA = [
               },
               {
                 episode: 67,
-                title: "Naruto ・ Hinata",
+                title: "Naruto � Hinata",
                 duration: "30m",
                 absoluteEpisode: 480
               },
               {
                 episode: 68,
-                title: "Sasuke ・ Sakura",
+                title: "Sasuke � Sakura",
                 duration: "30m",
                 absoluteEpisode: 481
               },
               {
                 episode: 69,
-                title: "Gaara ・ Shikamaru",
+                title: "Gaara � Shikamaru",
                 duration: "30m",
                 absoluteEpisode: 482
               },
               {
                 episode: 70,
-                title: "Jiraiya ・ Kakashi",
+                title: "Jiraiya � Kakashi",
                 duration: "30m",
                 absoluteEpisode: 483
               },
@@ -14207,13 +14207,13 @@ window._ANIME_DATA = [
               },
               {
                 episode: 73,
-                title: "Fūshin",
+                title: "Fushin",
                 duration: "30m",
                 absoluteEpisode: 486
               },
               {
                 episode: 74,
-                title: "Ketsuryūgan",
+                title: "Ketsuryugan",
                 duration: "30m",
                 absoluteEpisode: 487
               },
@@ -16093,4 +16093,3008 @@ window._ANIME_DATA = [
           }
         ]
       }
+,
+{
+  "id": "bleach_1905",
+  "title": "Bleach",
+  "type": "TV Show",
+  "year": 2004,
+  "rating": 8.4,
+  "age": "TV-14",
+  "duration": "24m",
+  "genres": [
+    "Animation",
+    "Action",
+    "Adventure",
+    "Fantasy"
+  ],
+  "poster": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/2Eewbc7HcIxWAyCQjHQ5C3m5c7A.jpg",
+  "backdrop": "https://image.tmdb.org/t/p/original/4kL1OIPmQhCBLtWbTID5T1XoQ9.jpg",
+  "videoUrl": "",
+  "overview": "Ichigo Kurosaki is a teenager gifted with the ability to see spirits. His life is drastically changed by the sudden appearance of a Soul Reaper—one who governs the flow of souls between the human world and the afterlife—named Rukia Kuchiki, who arrives in search of a Hollow, a dangerous lost soul. When Rukia is severely wounded defending Ichigo from the Hollow, she attempts to transfer half of her reiatsu energy to Ichigo so that he can defeat the Hollow. However, Ichigo takes almost all of her energy, transforming into a Soul Reaper and allowing him to defeat the Hollow with ease. With her powers diminished, Rukia is left stranded in the human world until she can recover her strength. In the meantime, Ichigo must take over Rukia's role as a Soul Reaper, battling Hollows and guiding souls to the afterlife realm known as the Soul Society.",
+  "director": "Noriyuki Abe",
+  "cast": [
+    "Masakazu Morita",
+    "Fumiko Orikasa",
+    "Noriaki Sugiyama",
+    "Hiroki Yasumoto",
+    "Kentarō Itō"
+  ],
+  "trending": true,
+  "seasons": [
+    {
+      "season": 2004,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "The Day I Became a Shinigami",
+          "duration": "24m",
+          "overview": "Ichigo Kurosaki is a teenage boy given the ability to see ghosts.While trying to help a young girl ghost being terrorized by a giant monster called a Hollow..he's saved by the intervention of Rukia Kuchiki, a tough female soul reaper..Later when a Hollow appears and terrorizes Ichigo's family, an injured Rukia makes a fateful decision and transfers her remaining powers to Ichigo.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/540/1351123.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 2,
+          "title": "A Shinigami's Work",
+          "duration": "24m",
+          "overview": "Waiting for her powers to return Rukia poses as an exchange student at Ichigo's school.Ichigo must take her place as a Soul Reaper.When he later battles a Hollow, he recognizes it as his friend, Orihime's older brother.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/541/1353532.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 3,
+          "title": "The Older Brother's Wish, the Younger Sister's Wish",
+          "duration": "24m",
+          "overview": "Orihime learns that her brother is a Hollow, a soul that didn't pass peacefully over to the Soul Society but lingered instead, pursing those they loved most in life.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/920222.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 4,
+          "title": "Cursed Parakeet",
+          "duration": "24m",
+          "overview": "Ichigo's friend and classmate Chad Sado brings a bird to school that turns out to be cursed and contains the soul of a boy who lived a tragic life.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/920226.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 5,
+          "title": "Beat the Invisible Enemy!",
+          "duration": "24m",
+          "overview": "Rukia and Chad fight a vicious Hollow named Shrieker, the Hollow has defeated a large number of Soul Reapers in battles and has committed many crimes.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/920227.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 6,
+          "title": "Fight to the Death! Ichigo vs. Ichigo",
+          "duration": "24m",
+          "overview": "At a Soul Reaper supply shop, Rukia picks up a modified soul to take over Ichigo's body while he's pulling Soul Reaper duty. But the mod soul takes off with Ichigo's body to have a little fun!",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/920860.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 7,
+          "title": "Greetings from a Stuffed Toy",
+          "duration": "24m",
+          "overview": "Rukia and Ichigo track Ichigo's body to a local elementary school. While Ichigo struggles with mischievous soul inhabiting his body, Rukia receives word of a Hollow sighting nearby, but is unable to confirm it's location.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/920865.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 8,
+          "title": "June 17, Memories in the Rain",
+          "duration": "24m",
+          "overview": "On the anniversary of his mother's death, Ichigo intends to take the day off from Soul Reaper duties and visit her grave with the rest of his family, but Rukia is at the cemetery waiting for him. She hears how his mother died and has some suggestions to offer him.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/921731.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 9,
+          "title": "Unbeatable Enemy",
+          "duration": "24m",
+          "overview": "Ichigo faces the Grand Fisher, a Hollow that uses a lure in the shape of a little girl, who Ichigo recalls with shock as the same girl he saw when his mother died. He attacks the Hollow in a rage, making him an easy target.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/921740.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 10,
+          "title": "Assault on Trip at Sacred Ground!",
+          "duration": "24m",
+          "overview": "When television hero Don Kanonji schedules a live recording of his show \"Spirit Hunter\" at a local abandoned hospital, Ichigo is surprised to see that an actual demi-Hollow is being summoned for the show.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/921744.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 11,
+          "title": "The Legendary Quincy",
+          "duration": "24m",
+          "overview": "Rumors spread about Ichigo and Rukia's relationship when they keep dissappearing from school to respond to Hollow alerts. Overworked and frustrated, Ichigo is unaware that one of his classmates, Uryu Ishida, possesses spiritual powers of his own.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/921784.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 12,
+          "title": "A Gentle Right Arm",
+          "duration": "24m",
+          "overview": "In order to prove how  useless Soul Reapers are, Uryu releases bait to draw Hollows to their town. Whoever gets rid of the most wins the challenge, but soon Hollows are everywhere, including one that threatens Chad and Ichigo's sister.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/921805.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 13,
+          "title": "Flower and Hollow",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/921807.jpg",
+          "videoUrl": ""
+        }
+      ]
+    },
+    {
+      "season": 2005,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Back to Back, a Fight to the Death!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/921822.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 2,
+          "title": "Kon's Great Plan",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/921824.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 3,
+          "title": "The Encounter, Renji Abarai!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/921829.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 4,
+          "title": "Ichigo Dies!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/921832.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 5,
+          "title": "Reclaim! The Power of the Shinigami!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/921833.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 6,
+          "title": "Ichigo Becomes a Hollow!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/921834.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 7,
+          "title": "Ichimaru Gin's Shadow",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/921835.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 8,
+          "title": "Enter! The World of the Shinigami",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/921838.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 9,
+          "title": "The Man Who Hates Shinigami",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/921839.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 10,
+          "title": "14 Days Before Rukia's Execution",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922105.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 11,
+          "title": "Assemble! The 13 Divisions",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922108.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 12,
+          "title": "Penetrate the Center with an Enormous Bombshell?",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922117.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 13,
+          "title": "Formation! The Worst Tag",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922122.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 14,
+          "title": "Release the Death Blow!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922125.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 15,
+          "title": "Orihime Targeted",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922126.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 16,
+          "title": "Breakthrough! The Shinigami's Encompassing Net",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922127.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 17,
+          "title": "Renji's Confrontation",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922128.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 18,
+          "title": "The Resolution to Kill",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922129.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 19,
+          "title": "Stars and the Stray",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922130.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 20,
+          "title": "Miracle! The Mysterious New Hero",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922133.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 21,
+          "title": "Tragedy of Dawn",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922135.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 22,
+          "title": "Assassination of Aizen! The Darkness Which Approaches",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922138.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 23,
+          "title": "Kenpachi Zaraki Approaches!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922139.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 24,
+          "title": "Reason of the Fist",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922158.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 25,
+          "title": "Desperation! The Broken Zangetsu",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922164.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 26,
+          "title": "The Man of Immortality",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922166.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 27,
+          "title": "The Shinigami Whom Ganju Met",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922169.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 28,
+          "title": "Reunion, Ichigo and Rukia",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922170.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 29,
+          "title": "Yoruichi, Master of Speed, Dances!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922177.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 30,
+          "title": "The Despicable Shinigami",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922179.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 31,
+          "title": "Ishida, Limits of Power!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922180.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 32,
+          "title": "Overcome the Limits!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922182.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 33,
+          "title": "Authentic Records! School of Shinigami",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922200.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 34,
+          "title": "The Avengers",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922201.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 35,
+          "title": "Hitsugaya Roars!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922202.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 36,
+          "title": "Rukia's Nightmare",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922203.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 37,
+          "title": "The Awakening Lion",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922204.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 38,
+          "title": "Morning of the Sentence",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922238.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 39,
+          "title": "Renji, Oath of the Soul! Death Match with Byakuya",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922240.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 40,
+          "title": "Ichimaru Gin's Temptation, Resolution Shattered",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922242.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 41,
+          "title": "An Accomplished Oath! Get Back Rukia!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922243.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 42,
+          "title": "The Strongest Shinigami! Ultimate Confrontation Between Teacher and Student",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922244.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 43,
+          "title": "Supersonic Battle! Determine the Goddess of Chivalry",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922245.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 44,
+          "title": "Zenbonzakura, Crushed! Zangetsu Thrusts Through the Sky",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922246.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 45,
+          "title": "Unseal! The Black Blade, the Miraculous Power",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922247.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 46,
+          "title": "Conclusion of the Death Match! White Pride and Black Desire",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922248.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 47,
+          "title": "Truth of Despair, the Dagger that has been Brandished",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922249.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 48,
+          "title": "Aizen Stands! His Terrifying Ambition",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922250.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 49,
+          "title": "Gather Together! Group of the Strongest Shinigami!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922251.jpg",
+          "videoUrl": ""
+        }
+      ]
+    },
+    {
+      "season": 2006,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Rukia's Resolution, Ichigo's Feelings",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/368/922252.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 2,
+          "title": "New School Term, Renji Has Come to the Material world?!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925643.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 3,
+          "title": "Creeping Terror, the Second Victim",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925645.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 4,
+          "title": "Break Through! The Trap Hidden in the Labyrinth",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925646.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 5,
+          "title": "Death Game! The Missing Classmate",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925647.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 6,
+          "title": "True Identity of the Devil, the Secret Which Is Revealed",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925648.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 7,
+          "title": "Baunt! The Soul Hunters",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925649.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 8,
+          "title": "Return of Rukia! The Substitute Team Revival",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925650.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 9,
+          "title": "The Moment of Collision!! An Evil Hand Draws Near to the Quincy",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925651.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 10,
+          "title": "Water Attack! Escape from the Shutdown Hospital",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925652.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 11,
+          "title": "Gathering Bounts! The Man Who Makes His Move",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925653.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 12,
+          "title": "Memories of an Eternally Living Clan",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925654.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 13,
+          "title": "Earth-Shattering Event at 11th Squad! The Shinigami Who Rises Again",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925655.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 14,
+          "title": "Crashing Force! Friido vs. Zangetsu",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925656.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 15,
+          "title": "Unfading Grudge! The Shinigami Whom Kenpachi Killed",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925657.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 16,
+          "title": "Shocking Revelations for the Gotei 13 Divisions!! The Truth Buried in History",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925658.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 17,
+          "title": "Yoshino's Decision of Death",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925659.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 18,
+          "title": "Assault from a Formidable Enemy! A Tiny Final Line of Defense?!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925660.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 19,
+          "title": "Hitsugaya Moves! The Attacked City",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925661.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 20,
+          "title": "Ichigo vs. Dalk! Appearance of the Faded Darkness",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925662.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 21,
+          "title": "Grey Shadow, the Secret of the Doll",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925663.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 22,
+          "title": "Breaking Up of the Substitute Team? The Betrayal of Rukia",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925664.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 23,
+          "title": "Battle of Tears! Rukia vs. Orihime",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925665.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 24,
+          "title": "Rangiku Dances! Cut Down the Invisible Enemy",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925666.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 25,
+          "title": "Byakuya Assembles! The Gotei 13 Make Their Move",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925667.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 26,
+          "title": "Annihilation of the Vice-Captains!? Trap in the Underground Cave",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925668.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 27,
+          "title": "Rematch?! Ishida vs. Nemu",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925669.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 28,
+          "title": "Abarai Renji, Soul of Bankai!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925670.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 29,
+          "title": "Shinigami and Quincy, the Reviving Power",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925671.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 30,
+          "title": "Enter the World of the Shinigami, Again",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925672.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 31,
+          "title": "Assault of the Bounts! Chaos in the Gotei 13 Divisions",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925673.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 32,
+          "title": "Hitsugaya's Resolution! The Moment of Conflict Approaches",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925674.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 33,
+          "title": "Byakuya Takes the Field! Dance of the Wind-Splitting Cherry Blossoms",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925675.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 34,
+          "title": "Ichigo・Byakuya・Kariya, Battle of the Three Extremes!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925676.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 35,
+          "title": "Hitsugaya Strikes! Cut Down the Enemy in the Forest",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925677.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 36,
+          "title": "Clash! Zaraki Kenpachi vs. Ichinose Maki",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925678.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 37,
+          "title": "Shinigami vs. Shinigami! The Uncontrollable Power",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925679.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 38,
+          "title": "Soi Fong Dies? The Last of the Secret Mobile Corps",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925680.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 39,
+          "title": "Mayuri's Bankai! Sawatari: Clash of the Demon",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925681.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 40,
+          "title": "The Last Quincy! The Exploding Power",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925682.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 41,
+          "title": "Ishida, Exceeding the Limits to Attack!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925683.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 42,
+          "title": "10th Division's Death Struggle! The Release of Hyourinmaru",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925684.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 43,
+          "title": "Kariya! Countdown to the Detonation",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925685.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 44,
+          "title": "Life and Revenge! Ishida, the Ultimate Choice",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925686.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 45,
+          "title": "The Swung-Down Edge! The Moment of Ruin",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925687.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 46,
+          "title": "The Wailing Bount! The Last Clash",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925688.jpg",
+          "videoUrl": ""
+        }
+      ]
+    },
+    {
+      "season": 2007,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Ichigo and Rukia, Thoughts in the Revolving Sky",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925689.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 2,
+          "title": "Reopening of the Substitute Business! The Terrifying Transfer Student",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925691.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 3,
+          "title": "Shock! The Father's True Character",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925692.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 4,
+          "title": "The Commencement of War, the Vizards and the Arrancars",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925693.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 5,
+          "title": "Prelude to the Apocalypse, The Arrancar Offensive",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925694.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 6,
+          "title": "Reunion, Ichigo and Rukia and Shinigami",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925695.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 7,
+          "title": "Mission! The Shinigami Have Came",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925696.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 8,
+          "title": "The Evil Eye, Aizen Again",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925697.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 9,
+          "title": "Rukia's Battle Begins! The Freezing White Blade",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925698.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 10,
+          "title": "Ikkaku's Bankai! The Power That Breaks Everything",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925699.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 11,
+          "title": "Team Zaraki's Secret Story! The Lucky Men",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925700.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 12,
+          "title": "Hitsugaya Scatters! The Broken Hyourinmaru",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925701.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 13,
+          "title": "Clash! The Protector vs. the Bearer",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925702.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 14,
+          "title": "Vizard! The Power of the Awakened",
+          "duration": "24m",
+          "overview": "Ichigo seeks out the Vizard after realizing that he must learn how to control his inner Hollow. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925703.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 15,
+          "title": "Ichigo, Complete Hollowification?!",
+          "duration": "24m",
+          "overview": "Ichigo begins training to control his inner Hollow. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925704.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 16,
+          "title": "Clash! The Black Bankai and the White Bankai",
+          "duration": "24m",
+          "overview": "Ichigo continues his battle with his inner Hollow. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925705.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 17,
+          "title": "Urgent Report! Aizen's Terrifying Plan",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925706.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 18,
+          "title": "Uryuu vs. Ryuuken! Clash of the Parent-Child Quincys",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925707.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 19,
+          "title": "Urahara's Decision, Orihime's Thoughts",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925708.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 20,
+          "title": "The Nightmare Arrancar! Team Hitsugaya Moves Out",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925709.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 21,
+          "title": "The Swooping Descent of the Dark Emissary! The Propagation of Malice",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925710.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 22,
+          "title": "The Invisible Enemy! Hitsugaya's Merciless Decision",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925711.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 23,
+          "title": "Rangiku's Tears, the Sorrowful Parting of Brother and Sister",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925712.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 24,
+          "title": "Hitsugaya, Karin and Soccer Ball",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925714.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 25,
+          "title": "Ikkaku's Hot-Blooded Kendo Tale",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925715.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 26,
+          "title": "The Beautiful Patissier, Yumichika!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925716.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 27,
+          "title": "Kon Is Deceived! Rangiku on the Lookout..",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925717.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 28,
+          "title": "Civil War in Hueco Mondo! Ulquiorra's Death",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925718.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 29,
+          "title": "The Malicious Battle, Aizen's Trap",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925719.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 30,
+          "title": "Hueco Mondo Moves Again! Hitsugaya vs. Yammy",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925720.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 31,
+          "title": "Ichigo vs. Grimmjow, the 11-second Battle",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925721.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 32,
+          "title": "Ulquiorra's Scheme, the Moment When the Sun Sets",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925722.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 33,
+          "title": "Goodbye..., Kurosaki",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925723.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 34,
+          "title": "Strict Order! The Forbidden Rescue of Inoue Orihime",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925724.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 35,
+          "title": "Grimmjow's Revival",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925725.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 36,
+          "title": "Ishida・Chad, the Quickening of a New Power",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925726.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 37,
+          "title": "The Espada Gathers! Aizen's Royal Assembly",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925727.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 38,
+          "title": "The Name Is Nel! The Appearance of the Strange Arrancar",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925728.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 39,
+          "title": "The Forest of Menos! The Search for the Missing Rukia",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925729.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 40,
+          "title": "Ashido, the Shinigami Who Came from the Past",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925730.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 41,
+          "title": "Through the Crumbling Forest, a Million Menos",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925731.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 42,
+          "title": "Oath! Back Here Alive Again",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925732.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 43,
+          "title": "The Raging Storm! Encounter with the Dancing Arrancar",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925733.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 44,
+          "title": "Ichigo Strikes Back! This Is My Bankai",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925737.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 45,
+          "title": "The Devilish Research! Szayel Aporro's Plan",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925738.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 46,
+          "title": "Rukia and Kaien, the Sorrowful Reunion",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925739.jpg",
+          "videoUrl": ""
+        }
+      ]
+    },
+    {
+      "season": 2008,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Rukia Retaliates! Release the Desperate Kidou",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925740.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 2,
+          "title": "Ishida & Pesshe, the United Attack of Friendship",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925741.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 3,
+          "title": "Ishida's Trump Card, Seele Schneider",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925742.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 4,
+          "title": "Right Arm of the Giant, Left Arm of the Devil",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925743.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 5,
+          "title": "Sado Yasutora Dies! Orihime's Tears",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925744.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 6,
+          "title": "Testament, Your Heart Is Right Here...",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925745.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 7,
+          "title": "The Cruel Arrancar, Ulquiorra's Provocation",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925746.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 8,
+          "title": "Syazel Aporro Laughs, the Net Trapping Renji Is Complete",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925747.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 9,
+          "title": "Shinigami and Quincy, the Battle with Madness",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925748.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 10,
+          "title": "Ishida's Strategy, the 20-second Offense and Defense",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925749.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 11,
+          "title": "The Murderous Intent Boils! The Joyful Grimmjow",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925750.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 12,
+          "title": "Desperate Effort vs. Desperate Effort! The Hollowized Ichigo",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925751.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 13,
+          "title": "The Moment of Conclusion, the End of Grimmjow",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925752.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 14,
+          "title": "The New Captain Appears! His Name Is Shusuke Amagai",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925755.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 15,
+          "title": "New Development, the Dangerous Transfer Student Appears!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925756.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 16,
+          "title": "Desperate Struggle Under the Moonlit Night, the Mysterious Assassin and Zanpakutō",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925757.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 17,
+          "title": "Kenryu, the Profusion of Blooming Crimson Flowers",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925758.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 18,
+          "title": "Kibune Goes to War! The Violent Wind That Rages",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925759.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 19,
+          "title": "The Appearance of the Great Evil! The Darkness in the House of Kasumioji",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925760.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 20,
+          "title": "Break the Mirror's Boundary! Ichigo's Captivity",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925761.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 21,
+          "title": "The Revenging Assassin, Ichigo Is Targeted",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925762.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 22,
+          "title": "Mystery! The Sword-Consuming Assassin",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925763.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 23,
+          "title": "The Reversal of Rukia, the Rampaging Blade",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925764.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 24,
+          "title": "The Nightmare Which Is Shown, Ichigo's Inside the Mirror",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925765.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 25,
+          "title": "Confrontation?! Amagai vs. Gotei 13",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925766.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 26,
+          "title": "The Princess' Decision, the Sorrowful Bride",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925767.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 27,
+          "title": "The 2nd Division Sorties! Ichigo Is Surrounded",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925768.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 28,
+          "title": "Amagai's True Strength, Zanpakuto Is Released!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925769.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 29,
+          "title": "The Darkness Which Moves! Kibune's True Colors",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925770.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 30,
+          "title": "Kira and Kibune, Offense and Defense of the 3rd Division",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925771.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 31,
+          "title": "Ice and Flame! Fierce Fight of Amagai vs. Hitsugaya",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925772.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 32,
+          "title": "Sortie Orders! Suppress the House of Kasumiōji",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925773.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 33,
+          "title": "Ichigo Rages! The Assassin's Secret",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925774.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 34,
+          "title": "Duel! Amagai vs. Ichigo",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925775.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 35,
+          "title": "The Fallen Shinigami's Pride",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/370/925776.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 36,
+          "title": "Hueco Mundo Chapter, Restart!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943936.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 37,
+          "title": "The Frightening Banquet, Szayel Aporro's Theater",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943938.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 38,
+          "title": "Nel's Secret, a Busty Beauty Joins the Battle!?",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943939.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 39,
+          "title": "Irresistable, Puppet Show of Terror",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943940.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 40,
+          "title": "Neliel's Past",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943941.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 41,
+          "title": "The Ultimate Union! Pesche's Seriousness",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943942.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 42,
+          "title": "Joining the Battle! The Strongest Shinigami Army Appears",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943943.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 43,
+          "title": "Byakuya's Bankai, the Quiet Anger",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943944.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 44,
+          "title": "The Two Scientists, Mayuri's Trap",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943945.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 45,
+          "title": "Holy Birth, The Resurrecting Szayel Aporro",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943946.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 46,
+          "title": "The Hardest Body!? Cut Down Nnoitra",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943947.jpg",
+          "videoUrl": ""
+        }
+      ]
+    },
+    {
+      "season": 2009,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Nnoitra Released! Multiplying Arms",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943952.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 2,
+          "title": "Fierce Fighting Conclusion! Who's the Strongest",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943953.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 3,
+          "title": "Karakura Town Gathers! Aizen Versus Shinigami",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943954.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 4,
+          "title": "Ichigo's Seppuku Persuasion Strategy",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943955.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 5,
+          "title": "Thump! A Kemari Tournament Filled with Hollows",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943957.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 6,
+          "title": "The Past Chapter Begins! The Truth from 110 Years Ago",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943959.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 7,
+          "title": "12th Division's New Captain, Urahara Kisuke",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943960.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 8,
+          "title": "Aizen and the Boy Genius",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943962.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 9,
+          "title": "Muguruma 9th Division, Moves Out",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943963.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 10,
+          "title": "Hiyori Dies? The Beginning of Tragedy",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943964.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 11,
+          "title": "Betrayal! Aizen's Secret Maneuvers",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943965.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 12,
+          "title": "Rescue Hirako! Aizen vs. Urahara",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943966.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 13,
+          "title": "Konso Detective Karakuraizer Is Born",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943972.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 14,
+          "title": "Karakuraizer's Last Day",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943973.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 15,
+          "title": "Defend Karakura Town! Entire Appearance of the Shinigami",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943974.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 16,
+          "title": "Elite! The Four Shinigami",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943976.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 17,
+          "title": "Beautiful Little Devil Charlotte",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943977.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 18,
+          "title": "Kira, the Battle Within Despair",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943978.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 19,
+          "title": "Hisagi's Shikai! The Name Is...",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943979.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 20,
+          "title": "Ikkaku Falls! The Shinigami's Crisis",
+          "duration": "24m",
+          "overview": "3rd Seat Ikkaku Madarame loses his fight against Choe Neng Poww, forcing Captain Sajin Komamura to take over his battle. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943980.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 21,
+          "title": "The Full Showdown! Shinigami vs. Espada",
+          "duration": "24m",
+          "overview": "Captain Suì-Fēng begins her battle with Ggio Vega while the other two Espada and their Fracción begin their fights. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943981.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 22,
+          "title": "The Most Evil Tag!? Soi Fon & Ōmaeda",
+          "duration": "24m",
+          "overview": "Ggio Vega and Nirgge Parduoc release their Zanpakutōs, prompting Lieutenant Marechiyo Ōmaeda to use his true power. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943982.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 23,
+          "title": "A Miraculous Body! Ggio Releases",
+          "duration": "24m",
+          "overview": "Lieutenant Marechiyo Ōmaeda and Captain Suì-Fēng keep struggling against their opponents.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943983.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 24,
+          "title": "3 vs. 1 Battle! Rangiku's Crisis",
+          "duration": "24m",
+          "overview": "Lieutenant Momo Hinamori arrives to help out Lieutenant Rangiku Matsumoto.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943984.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 25,
+          "title": "All Vice-Captains Annihilated! The Terrifying Demonic Beast",
+          "duration": "24m",
+          "overview": "Ayon overpowers the lieutenants, greatly injuring them, but Captain-Commander Genryūsai Shigekuni Yamamoto appears to fight the beast. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943985.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 26,
+          "title": "Fierce Fighting Concludes? Towards a New Battle!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943986.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 27,
+          "title": "Wonderful Error",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943987.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 28,
+          "title": "Summer! Sea! Swimsuit Festival!!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943988.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 29,
+          "title": "Cry of the Soul? The Rug Shinigami Is Born!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943989.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 30,
+          "title": "A New Enemy! The Materialization of Zanpakutō",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943990.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 31,
+          "title": "Byakuya, Disappearing with the Cherry Blossoms",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943991.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 32,
+          "title": "Sode no Shirayuki vs. Rukia! Confused Heart",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943992.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 33,
+          "title": "Zangetsu Becomes an Enemy",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943993.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 34,
+          "title": "Renji Surprised?! The Two Zabimarus",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943994.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 35,
+          "title": "Clash! Hisagi vs. Kazeshini",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943995.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 36,
+          "title": "Release! The New Getsuga Tenshō",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943996.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 37,
+          "title": "Soi Fon, Surrounding the Zanpakutō!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943997.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 38,
+          "title": "Friendship? Hatred? Haineko & Tobiume",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943998.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 39,
+          "title": "The Awakening Hyōrinmaru! Hitsugaya's Fierce Fight",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/943999.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 40,
+          "title": "Byakuya's Betrayal",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944000.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 41,
+          "title": "For the Sake of Pride! Byakuya vs. Renji",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944001.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 42,
+          "title": "Shinigami and Zanpakuto, Total Sortie",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944002.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 43,
+          "title": "One-to-One Fight! Ichigo vs. Senbonzakura",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944003.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 44,
+          "title": "The Long Awaited...Kenpachi Appears!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944004.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 45,
+          "title": "Pursue Byakuya! The Confused Gotei Divisions",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944005.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 46,
+          "title": "Special Mission! Rescue Captain Commander Yamamoto!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944006.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 47,
+          "title": "Deceived Shinigami! The World Collapse Crisis",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944007.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 48,
+          "title": "Dragon of Ice and Dragon of Flame! The Strongest Showdown!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944008.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 49,
+          "title": "Senbonzakura's Bankai! Offense and Defense of the Living World",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944009.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 50,
+          "title": "That Man, For the Sake of the Kuchiki...",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944010.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 51,
+          "title": "Dark History! The Worst Shinigami Is Born",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944011.jpg",
+          "videoUrl": ""
+        }
+      ]
+    },
+    {
+      "season": 2010,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Byakuya, the Truth Behind His Betrayal",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944012.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 2,
+          "title": "Cero!? Muramasa's True Identity Revealed",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944013.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 3,
+          "title": "Byakuya and Renji, the 6th Division Returns",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944014.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 4,
+          "title": "Final Chapter: Zanpakutō Unknown Tales",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944015.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 5,
+          "title": "Byakuya's Anger! The Kuchiki Family Collapses",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944016.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 6,
+          "title": "A New Enemy! The True Nature of the Sword Beasts",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944017.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 7,
+          "title": "Stray Snake, Tortured Monkey",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944018.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 8,
+          "title": "Terror! The Monster That Lurks Underground",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944019.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 9,
+          "title": "Conclusion?! Hisagi vs. Kazeshini",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944020.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 10,
+          "title": "The Person with the Unknown Ability! Orihime Is Targeted",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944021.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 11,
+          "title": "Haineko Cries! The Tragic Sword Beast",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944022.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 12,
+          "title": "Imprisonment?! Senbonzakura and Zabimaru",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944023.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 13,
+          "title": "Battle of the Females? Nanao vs. Katen Kyōkotsu",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944024.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 14,
+          "title": "Evolution?! The Wonder of the Final Sword Beast",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/377/944025.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 15,
+          "title": "Ichigo vs. Ulquiorra, Resume!",
+          "duration": "24m",
+          "overview": "Prior events are recalled. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950136.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 16,
+          "title": "Connected Hearts! The Left Fist Prepared for Death",
+          "duration": "24m",
+          "overview": "Ichigo struggles against Ulquiorra as Renji Abarai and Yasutora Sado fight Battikaroa.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950137.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 17,
+          "title": "Jealousy and Hatred... Orihime's Dilemma",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950138.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 18,
+          "title": "Ichigo and Uryū, Bonded Back to Back",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950139.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 19,
+          "title": "Beginning of Despair...Ichigo, the Unreachable Blade",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950140.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 20,
+          "title": "Ichigo Dies! Orihime, the Cry of Sorrow!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950141.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 21,
+          "title": "Ichigo vs. Ulquiorra, Conclusion!",
+          "duration": "24m",
+          "overview": "Ichigo and Ulquiorra conclude their battle. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950146.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 22,
+          "title": "Fury of the Shark! Halibel Releases",
+          "duration": "24m",
+          "overview": "As Rukia, Chad and Renji battle Yammy Llargo, the captains continue battling the Espada. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950151.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 23,
+          "title": "Hitsugaya, the Desperate Hyōten Hyakkasō!",
+          "duration": "24m",
+          "overview": "The battle between Tōshirō and Tier Harribel continues. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950152.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 24,
+          "title": "The Approaching Breath of Death... the King Who Rules over Death!",
+          "duration": "24m",
+          "overview": "Captain Suì-Fēng and Lieutenant Marechiyo Ōmaeda struggle against Baraggan Louisenbairn. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950155.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 25,
+          "title": "One Hit Kill! Sui Feng, Bankai!",
+          "duration": "24m",
+          "overview": "As Lieutenant Marechiyo Ōmaeda distracts Baraggan Luisenbarn for Captain Suì-Fēng, Captain Shunsui Kyōraku and Coyote Starrk continue their battle. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950156.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 26,
+          "title": "Climax! Kyōraku vs. Stark!",
+          "duration": "24m",
+          "overview": "Captain Kyōraku and Coyote Starrk decide to get serious in their battle. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950157.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 27,
+          "title": "The Nightmare Returns...Revival of the Espada",
+          "duration": "24m",
+          "overview": "The Espada are shown to still be alive, Sōsuke Aizen, Gin Ichimaru, and Kaname Tōsen are freed, and the Visored arrive on the battlefield. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950161.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 28,
+          "title": "Hirako and Aizen...the Reunion of Fate!",
+          "duration": "24m",
+          "overview": "The Visored join the fight and think back to 101 years ago, when Shinji and his friends were going through Hollowfication.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950176.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 29,
+          "title": "Hisagi and Tōsen... the Moment of Parting!",
+          "duration": "24m",
+          "overview": "Hachigen Ushōda helps Captain Suì-Fēng battle Baraggan Luisenbarn. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950178.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 30,
+          "title": "Crown of Lies... Barragan's Grudge!",
+          "duration": "24m",
+          "overview": "Baraggan Luisenbarn recalls his past as the King of Hueco Mundo.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950179.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 31,
+          "title": "Power of the Soul! Los Lobos, Attack!",
+          "duration": "24m",
+          "overview": "Love Aikawa and Rōjūrō Ōtoribashi battle against Coyote Starrk. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950199.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 32,
+          "title": "Stark, the Lone Battle",
+          "duration": "24m",
+          "overview": "Coyote Starrk and Captain Shunsui Kyōraku conclude their battle. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950200.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 33,
+          "title": "Chain of Sacrifice...Halibel's Past",
+          "duration": "24m",
+          "overview": "As Tier Harribel falls unconscious from her wounds, she recalls her past. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950201.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 34,
+          "title": "The Hundred-Year Grudge...Hiyori's Revenge!",
+          "duration": "24m",
+          "overview": "As the situation begins to get desperate in the Fake Karakura Town, the battle with Yammy Llargo continues in Hueco Mundo. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950203.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 35,
+          "title": "Protect Karakura Town! Ichigo's Return!",
+          "duration": "24m",
+          "overview": "The captains in Hueco Mundo decide to send Ichigo back to Karakura Town. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950204.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 36,
+          "title": "Side Story! Ichigo and the Magic Lamp!",
+          "duration": "24m",
+          "overview": "Ichigo has a dream and tries to escape from it. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950205.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 37,
+          "title": "The Final Trump Card! Ichigo, Towards the Decisive Battle!",
+          "duration": "24m",
+          "overview": "Ichigo begins his return to Karakura Town. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950208.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 38,
+          "title": "Byakuya vs. Kenpachi?! The Melee Commences!",
+          "duration": "24m",
+          "overview": "As Captains Byakuya Kuchiki and Kenpachi prepare to fight each other, Yammy Llargo's anger makes him even stronger.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950209.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 39,
+          "title": "For the Sake of Justice?! The Man Who Deserted the Shinigami",
+          "duration": "24m",
+          "overview": "Kaname Tōsen reveals his true reasons for betraying Soul Society. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950210.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 40,
+          "title": "Desperate Struggle with Aizen! Hirako, Shikai!",
+          "duration": "24m",
+          "overview": "As Captain Sajin Komamura continues his battle with Tōsen, Shinji releases his Zanpakutō against Aizen. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950219.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 41,
+          "title": "All-Out War! Aizen vs. Shinigami!",
+          "duration": "24m",
+          "overview": "The Shinigami and Visored vow to protect Ichigo and defeat Aizen.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950220.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 42,
+          "title": "Hitsugaya, Enraged! Blade of Hatred!",
+          "duration": "24m",
+          "overview": "The Shinigami and Visored, attacking Aizen, are unable to defeat the treacherous captain. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950221.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 43,
+          "title": "Impossible to Attack?! The Sealed Genryūsai!",
+          "duration": "24m",
+          "overview": "Captain-Commander Genryūsai Shigekuni Yamamoto joins the battle against Aizen, only for his Zanpakutō's abilities to be sealed by Wonderweiss Margela. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950222.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 44,
+          "title": "It's All a Trap...Engineered Bonds!",
+          "duration": "24m",
+          "overview": "Aizen reveals to Ichigo that all of his battles have taken place exactly as he desired. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950227.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 45,
+          "title": "The Shocking Truth...the Mysterious Power Within Ichigo!",
+          "duration": "24m",
+          "overview": "As Aizen reveals more facts to Ichigo, Isshin Kurosaki joins the battle. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950230.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 46,
+          "title": "The Extending Blade?! Ichigo vs. Gin!",
+          "duration": "24m",
+          "overview": "As Ichigo and Gin Ichimaru battle, Aizen explains the true power of the Hōgyoku to Isshin Kurosaki. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950232.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 47,
+          "title": "Film! Festival! Shinigami Film Festival!",
+          "duration": "24m",
+          "overview": "The Shinigami in the Gotei 13 make a movie for the Seireitei International Film Festival. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950233.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 48,
+          "title": "Theatre Opening Commemoration! Hell Chapter・Prologue",
+          "duration": "24m",
+          "overview": "While visiting the World of the Living, Rukia comes across Kurumadani, the current Soul Reaper stationed in Karakura Town, being attacked by a mysterious masked man. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950234.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 49,
+          "title": "Urahara Appears! Stop Aizen!",
+          "duration": "24m",
+          "overview": "As Aizen is transformed by the Hōgyoku, Kisuke realizes that Aizen has evaded the Soul Reapers because he has a high Spirit Energy. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950235.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 50,
+          "title": "Ichigo Loses His Fighting Spirit!? Gin's Expectation!",
+          "duration": "24m",
+          "overview": "Ichigo finds himself cornered against Gin's Bankai. Meanwhile, Urahara, Yoruichi, and Isshin fight Aizen in a three-on-one battle. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950248.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 51,
+          "title": "The Final Getsuga Tenshō!? Ichigo's Training!",
+          "duration": "24m",
+          "overview": "Ichigo and Isshin arrive in the Precipice World, a place where time flows two thousand times faster than the outside world. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950249.jpg",
+          "videoUrl": ""
+        }
+      ]
+    },
+    {
+      "season": 2011,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Real World and Shinigami! The New Year Special!",
+          "duration": "24m",
+          "overview": "The Women's Soul Reaper Association is hosting a New Year's party in the Soul Society, when Hitsugaya and the other male Soul Reapers come crashing in. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950250.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 2,
+          "title": "Another Side Story! This Time the Enemy Is a Monster!?",
+          "duration": "24m",
+          "overview": "Ichigo has another dream and tries to escape from it again. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950251.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 3,
+          "title": "Delusion Roars! Hisagi, Towards the Hot Springs Inn!",
+          "duration": "24m",
+          "overview": "Lieutenants Shūhei Hisagi and Rangiku Matsumoto go on a mission, and Hisagi deludes himself into thinking that Rangiku likes him. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950252.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 4,
+          "title": "For the Sake of Protecting! Ichigo vs. Tensa Zangetsu!",
+          "duration": "24m",
+          "overview": "Ichigo stands his ground against Tensa Zangetsu, who fuses with Ichigo's inner Hollow. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950253.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 5,
+          "title": "Emergency Situation! Aizen, New Evolution!",
+          "duration": "24m",
+          "overview": "As Aizen was about to kill Ichigo's friends, he is stopped by Gin who betrays him after 200 years of their partnership. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950254.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 6,
+          "title": "Goodbye...Rangiku",
+          "duration": "24m",
+          "overview": "Ichigo arrives to settle his score with Aizen once and for all. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950255.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 7,
+          "title": "Fierce Fighting Conclusion! Release, the Final Getsuga Tenshō!",
+          "duration": "24m",
+          "overview": "Ichigo uses the Final Getsuga Tenshō against Aizen. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950256.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 8,
+          "title": "Ichigo's Resolution! The Price of the Fierce Battle",
+          "duration": "24m",
+          "overview": "The aftermath of the battle with Aizen is shown. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950257.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 9,
+          "title": "The Soul Detective ・ Karakuraizer Takes Off Again!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950258.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 10,
+          "title": "Inauguration! The Brand New 2nd Division Captain!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950259.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 11,
+          "title": "The Man Who Risked His Life for Squad 11!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950260.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 12,
+          "title": "Kon Saw It! The Secret of a Beautiful Office Lady",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950261.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 13,
+          "title": "Yachiru's Friend! The Shinigami of Justice Appears!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950262.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 14,
+          "title": "Hitsugaya Toushirou's Day Off!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950263.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 15,
+          "title": "Unusual Incident in Seireitei?! The Gotei 13 Invading Army Arc!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950647.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 16,
+          "title": "Renji vs. Rukia!? Battle with Comrades!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950648.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 17,
+          "title": "Ichigo's Capture Net! Escape from Soul Society!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950649.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 18,
+          "title": "Gotei 13, Gathering in the Real World!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950650.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 19,
+          "title": "Ikkaku vs. Ikkaku! Showdown of Mutual Self!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950656.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 20,
+          "title": "Clash! Rukia vs. Rukia!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950657.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 21,
+          "title": "Protect Ichigo! Nozomi's Determination!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950659.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 22,
+          "title": "Recapture Seireitei! The Captains Move!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950660.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 23,
+          "title": "For the Sake of the Believers! Byakuya vs. Hitsugaya!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950662.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 24,
+          "title": "The Two Hinamori, Hitsugaya's Resolution",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950664.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 25,
+          "title": "Pride of the Kuchiki Family! Byakuya vs. Byakuya!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950666.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 26,
+          "title": "Defeat Kageroza! Shinigami, All-Out War!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950668.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 27,
+          "title": "The Forbidden Research...Nozomi's Hidden Secret!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950669.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 28,
+          "title": "I Want to Live...! Nozomi's Zanpakutō",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950670.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 29,
+          "title": "For the Sake of Fighting! The Awakening Nozomi!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950671.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 30,
+          "title": "The Most Evil Reigai, Appears in the Real World!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950672.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 31,
+          "title": "Destroy Nozomi!? Genryusai's Decision!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950673.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 32,
+          "title": "The Depleting Reiatsu! Ichigo, Death Struggle of the Soul!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950674.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 33,
+          "title": "Hiding in the Dangai? Another Ichigo!?",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950675.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 34,
+          "title": "Pursue Kageroza! Technological Development Department, Infiltration!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950676.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 35,
+          "title": "The Developer of the Modified Souls",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950677.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 36,
+          "title": "Kon's Thoughts, Nozomi's Thoughts",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950678.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 37,
+          "title": "Protect Ichigo! The Bonds of Friends!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950679.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 38,
+          "title": "Reigai vs. Original, the Fierce Battle for Gambled Pride!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950680.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 39,
+          "title": "Invading Army Arc, Final Conclusion!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950681.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 40,
+          "title": "Thank You",
+          "duration": "24m",
+          "overview": "Ichigo gradually loses his remaining powers and bids farewell to Rukia. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950682.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 41,
+          "title": "3rd Year High School Student! Dressed Up, and a New Chapter Begins!",
+          "duration": "24m",
+          "overview": "Seventeen months later, Ichigo continues living life as a normal teenage high school student in Karakura Town. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950683.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 42,
+          "title": "A Dispute in School?! Ichigo and Uryuu, Fight Together!",
+          "duration": "24m",
+          "overview": "Ichigo gets contacted by a man named Kugo Ginjoo who wants information about a certain person close to Ichigo. Uryu pursues a stranger who appears to be interested in Ichigo. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950684.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 43,
+          "title": "Uryuu Is Attacked, a Threat Draws Near Friends!",
+          "duration": "24m",
+          "overview": "After Ichigo and Orihime Inoue visit Uryū in the hospital, Keigo Asano is attacked. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950685.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 44,
+          "title": "The Fullbring User: Kugo Ginjo",
+          "duration": "24m",
+          "overview": "Ichigo decides to call on Ginjo for some answers. At his hideout, \"Xcution,\" Ginjo tells Ichigo of his goal to restore Ichigo's lost Soul Reaper powers, as well as demonstrating his own unique power, \"Fullbring.\" ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950686.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 45,
+          "title": "A Creeping Danger in the Kurosaki Family?! Ichigo's Confusion!",
+          "duration": "24m",
+          "overview": "Ginjo gives Ichigo a day to decide whether to regain his lost Soul Reaper powers or not. But Ichigo, who no longer wishes to endanger anyone by being a Soul Reaper, decides to decline the offer. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950687.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 46,
+          "title": "Power of the Substitute Badge, Ichigo's \"Pride\"!",
+          "duration": "24m",
+          "overview": "Ichigo begins training to regain his Soul Reaper powers at the Xcution's hideout. His first training is to fight and win against Mr. Pork, an opponent created by Riruka's Fullbring power \"Dollhouse.\" ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950688.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 47,
+          "title": "Next Target, the Devil's Hand Aims at Orihime!",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950689.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 48,
+          "title": "The Man Who Killed the Shinigami Substitute!? Tsukishima Makes His Move",
+          "duration": "24m",
+          "overview": "Ichigo and Chad rush to find Orihime. Meanwhile, Orihime attempts to stop Tsukishima from leaving the scene, but is instead stabbed by his Fullbring power.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950690.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 49,
+          "title": "Fullbring, the Detested Power!",
+          "duration": "24m",
+          "overview": "Ichigo asks Ginjo to let him fight one of the Xcution members for his training. But Jackie, who detests the power of Fullbring, finds Ichigo's request selfish and refuses.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950691.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 50,
+          "title": "Tsukishima Attacks! The Training Has Been Thwarted!",
+          "duration": "24m",
+          "overview": "Ichigo begins his training with Jackie Tristan, who brings out her Fullbring power \"Dirty Boots.\" As he goes up against Jackie's powerful attacks, Ichigo begins to gradually understand the use of his own Fullbring power. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950692.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 51,
+          "title": "Onwards to Battle! Ichigo, Mastering the Fullbring!",
+          "duration": "24m",
+          "overview": "Tsukishima breaks into the Xcution hideout where Ichigo is training. Learning that he was the one who attacked Uryu and Orihime, a furious Ichigo proceeds to attack Tsukishima.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950693.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 52,
+          "title": "Ichigo vs. Ginjo, to the Game's Space!",
+          "duration": "24m",
+          "overview": "Ichigo fights Kūgo Ginjō in the Game Space. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950694.jpg",
+          "videoUrl": ""
+        }
+      ]
+    },
+    {
+      "season": 2012,
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "The Shinigami Enter Battle! Seireitei Also Has a New Year Special!",
+          "duration": "24m",
+          "overview": "On New Year's Day, Izuru hosts a kite-flying contest in the hopes of everyone having a good time. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950695.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 2,
+          "title": "Friend or Foe!? Ginjō's True Intentions!",
+          "duration": "24m",
+          "overview": "Ichigo continues his training with Kūgo Ginjō.",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950696.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 3,
+          "title": "Creeping Menace...Tsukishima's Ability!",
+          "duration": "24m",
+          "overview": "Ichigo trains with his Fullbring. Chad and Orihime investigate Tsukishima and engage in battle. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950697.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 4,
+          "title": "Clash?! Xcution Attacks Ginjo!",
+          "duration": "24m",
+          "overview": "Uryu begins his own investigation to track down the enemy who attacked him. As he goes around searching for clues, he notices that people close to Ichigo are acting strangely. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950698.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 5,
+          "title": "The Sorrowful Battle! Ichigo vs. Sado & Orihime!",
+          "duration": "24m",
+          "overview": "Ichigo escapes from his house in confusion after witnessing his friends and family welcoming Tsukishima as if they've known him for years. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950699.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 6,
+          "title": "Ichigo vs Uryu?! Who Is the Traitor?!",
+          "duration": "24m",
+          "overview": "As Ichigo begins his battle with Tsukishima, Uryū arrives and Ginjō is cut by Tsukishima. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950700.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 7,
+          "title": "A New Appearance! Meet the Gotei 13!",
+          "duration": "24m",
+          "overview": "Ginjo reveals his true colors by attacking Ichigo and stripping him of his Fullbring powers. Ichigo lies in despair from losing his powers yet again, when his father Isshin and Kisuke Urahara arrive. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950701.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 8,
+          "title": "Revival! Substitute Shinigami･Ichigo Kurosaki!",
+          "duration": "24m",
+          "overview": "Under the orders of Head Captain Yamamoto, the 13 Court Guard Squad Soul Reapers share their Spirit Energy to restore Ichigo's lost powers. With his Soul Reaper powers fully restored, Ichigo returns to challenge Ginjo. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950702.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 9,
+          "title": "Fierce Fight! Shinigami vs. Xcution!",
+          "duration": "24m",
+          "overview": "The Soul Reapers take on the Xcution members in one-on-one battles. Meanwhile, Ichigo and Uryu prepare to take on Ginjo. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950703.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 10,
+          "title": "Desperate Struggle!? Byakuya's Troubled Memories",
+          "duration": "24m",
+          "overview": "The battle between Byakuya and Tsukishima escalates as they both push their powers to the limit. Meanwhile, Rukia struggles against the traps set up by Riruka. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950704.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 11,
+          "title": "Ichigo vs. Ginjo! Secret of the Substitute Badge",
+          "duration": "24m",
+          "overview": "As the battle between Ichigo, Uryū , and Kūgo Ginjō intensifies, the truth behind the Substitute Shinigami Badge surfaces. ",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950705.jpg",
+          "videoUrl": ""
+        },
+        {
+          "episode": 12,
+          "title": "Changing History, Unchanging Heart",
+          "duration": "24m",
+          "overview": "",
+          "thumbnail": "https://static.tvmaze.com/uploads/images/original_untouched/380/950706.jpg",
+          "videoUrl": ""
+        }
+      ]
+    }
+  ]
+}
 ]
