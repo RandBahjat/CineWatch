@@ -11949,7 +11949,7 @@ window._MOVIES_DATA = [
     year: 2010,
     rating: 6.7,
     age: "PG-13",
-    duration: "1h 50m",
+    duration: "1h 47m",
     genres: [
       "Action",
       "Adventure",
