@@ -11507,8 +11507,8 @@ window._MOVIES_DATA = [
   {
     title: "DC League of Super-Pets",
     type: "Movie",
-    year: 2015,
-    rating: 4.9,
+    year: 2022,
+    rating: 6.8,
     age: "R",
     duration: "1h 39m",
     genres: [
