@@ -6525,12 +6525,18 @@ body.rtl-layout .account-side-panel.open {
 
 /* --- Top 10 Rank Badge Styles (Netflix Style) --- */
 .top10-track {
-  padding-left: 35px;
+  padding-left: 20px;
 }
 
 .top10-track .movie-card {
   overflow: visible;
-  flex: 0 0 170px; /* Narrower width for posters */
+  flex: 0 0 170px; 
+  width: 170px;
+  max-width: 170px;
+}
+
+.top10-track .movie-card:first-child {
+  margin-left: 40px; /* Space so the #1 doesn't get cut off on the left edge */
 }
 
 .force-poster-wrap {
@@ -6539,8 +6545,8 @@ body.rtl-layout .account-side-panel.open {
 
 .top10-rank-badge {
   position: absolute;
-  bottom: -10px;
-  left: -35px;
+  bottom: -15px;
+  right: 85%; /* Aligns the right side of the number slightly past the left edge */
   font-size: 140px;
   font-weight: 900;
   color: #000;
