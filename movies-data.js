@@ -11510,7 +11510,7 @@ window._MOVIES_DATA = [
     year: 2022,
     rating: 6.8,
     age: "PG",
-    duration: "1h m",
+    duration: "1h 45m",
     genres: [
       "Thriller",
       "Horror"
