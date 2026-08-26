@@ -12337,7 +12337,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dZCWRFJnwyxYOhzAhf7Xyru4moB.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1hiaeEgYcVU3gA3nrPpcqJDZ4SV.jpg",
-    videoUrl: "39106",
+    videoUrl: "",
     overview: "Evil scientist clone Broly, create bio-engineer monster call Bio-Broly, unleash him at big tournament. Broly's berserk rage grow harder, harder to contain, threaten kill everyone trap inside island facility.",
     director: "Yoshihiro Ueda",
     cast: [
