@@ -2808,15 +2808,6 @@ function bindEventListeners() {
       return;
     }
 
-    // Continue Watching Remove Button
-    const removeBtn = e.target.closest(".continue-remove-btn");
-    if (removeBtn) {
-      e.stopPropagation();
-      const movieId = removeBtn.dataset.removeId;
-      removeContinueWatching(movieId);
-      showToast("Removed from Continue Watching");
-      return;
-    }
 
     // Center Play Button
     const playBtn = e.target.closest(".card-center-play");
