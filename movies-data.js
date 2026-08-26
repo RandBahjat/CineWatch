@@ -11472,7 +11472,7 @@ window._MOVIES_DATA = [
     overview: "Wealthy crime novelist found dead night of his 85th birthday, detective Benoit Blanc call in investigate. Family full of secret, greed, lie, each one suspect, all point finger, truth harder to find than expect.",
     director: "Rian Johnson",
     cast: [
-      "Joel Kinnaman, Rosamund Pike, Common, Ana de Armas, Clive Owen"
+      "Daniel Craig, Chris Evans, Ana de Armas, Jamie Lee Curtis, Michael Shannon, Toni Collette"
     ],
     trending: false,
     featured: false,
