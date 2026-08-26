@@ -11678,7 +11678,7 @@ window._MOVIES_DATA = [
     overview: "Middle-age man's marriage fall apart, get taken under wing by young slick bachelor teach him how date again. Multiple tangle love story collide, reveal how messy, funny, unexpected love really is.",
     director: "Glenn Ficarra, John Requa",
     cast: [
-      "Jonah Hill, Michael Cera, Christopher Mintz-Plasse, Bill Hader, Seth Rogen, Emma Stone"
+      "Steve Carell, Ryan Gosling, Julianne Moore, Emma Stone, Marisa Tomei, Kevin Bacon"
     ],
     trending: false,
     featured: false,
