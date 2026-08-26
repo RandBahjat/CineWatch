@@ -6528,31 +6528,24 @@ body.rtl-layout .account-side-panel.open {
   padding-left: 20px;
 }
 
+.top10-track {
+  padding-left: 20px;
+}
+
 .top10-track .movie-card {
-  overflow: visible;
-  flex: 0 0 210px; 
-  width: 210px;
-  max-width: 210px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  flex: 0 0 160px;
 }
 
 .top10-track .movie-card:first-child {
-  margin-left: 0px; 
+  margin-left: 30px; 
 }
 
 .top10-track .card-poster-wrap {
-  width: 140px;
-  margin-left: auto; /* Push poster to the right */
-  aspect-ratio: 2 / 3 !important; 
-  z-index: 2; /* Poster on top of the number */
+  overflow: visible; /* Prevent clipping the number */
 }
 
-.top10-track .card-details {
-  width: 140px;
-  margin-left: auto; /* Push text to the right to align with poster */
-  padding: 0.5rem 0;
+.top10-track .card-poster {
+  border-radius: var(--radius-xs); /* Keep image corners rounded */
 }
 
 .force-poster-wrap {
@@ -6561,15 +6554,15 @@ body.rtl-layout .account-side-panel.open {
 
 .top10-rank-badge {
   position: absolute;
-  top: 60px; /* Aligns with bottom of the poster (140 * 1.5 = 210px height, so top: 60px puts the 150px tall number at bottom) */
-  left: 0px; /* Number sits in the empty space on the left */
-  font-size: 160px;
+  bottom: -15px; 
+  left: -25px; 
+  font-size: 140px;
   font-weight: 900;
   color: #000;
   -webkit-text-stroke: 4px #e50914;
   text-shadow: 4px 4px 10px rgba(0,0,0,0.8);
   line-height: 1;
-  z-index: 1; /* Number is behind the poster */
+  z-index: 10;
   font-family: 'Inter', sans-serif;
   pointer-events: none;
   letter-spacing: -5px;
@@ -6585,18 +6578,15 @@ body.rtl-layout .account-side-panel.open {
     padding-left: 10px;
   }
   .top10-track .movie-card {
-    flex: 0 0 160px;
-    width: 160px;
-    max-width: 160px;
+    flex: 0 0 120px;
   }
-  .top10-track .card-poster-wrap,
-  .top10-track .card-details {
-    width: 110px;
+  .top10-track .movie-card:first-child {
+    margin-left: 25px;
   }
   .top10-rank-badge {
-    font-size: 110px;
-    top: 50px;
-    left: -5px;
+    font-size: 100px;
+    bottom: -10px;
+    left: -15px;
     -webkit-text-stroke: 3px #e50914;
   }
 }
