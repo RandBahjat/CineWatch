@@ -11923,7 +11923,7 @@ window._MOVIES_DATA = [
     year: 2008,
     rating: 6.5,
     age: "PG-13",
-    duration: "2h 9m",
+    duration: "1h 50m",
     genres: [
       "Action",
       "Crime",
