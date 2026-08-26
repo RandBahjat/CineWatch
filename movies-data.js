@@ -11763,9 +11763,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Lucy",
+    title: "Bruce Almighty",
     type: "Movie",
-    year: 2014,
+    year: 2003,
     rating: 6.4,
     age: "R",
     duration: "1h 29m",
