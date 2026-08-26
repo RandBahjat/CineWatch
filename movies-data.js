@@ -12281,7 +12281,7 @@ window._MOVIES_DATA = [
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/3sb7LPrIrNMp8ZlsUSEhNwhUpU0.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/8bBwrxTwj4MVoy2ivYCqNLCxRcf.jpg",
+    backdrop: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/29e04197-041b-4715-ba54-2d9132ce1b19/df8kswr-f951c537-94b2-4b07-a810-ff3e658c537c.png/v1/fill/w_1190,h_672,q_70,strp/dbz_plan_to_eradicate_the_saiyans_poster_by_rcm2_df8kswr-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIzIiwicGF0aCI6Ii9mLzI5ZTA0MTk3LTA0MWItNDcxNS1iYTU0LTJkOTEzMmNlMWIxOS9kZjhrc3dyLWY5NTFjNTM3LTk0YjItNGIwNy1hODEwLWZmM2U2NThjNTM3Yy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.y71M90SIweAbrZf81W-3udP9u0IH1WOlIIiyUnPcEmQ",
     videoUrl: "24752",
     overview: "Cooler, Frieza's older, more powerful brother, seek vengeance for kin's defeat, hunt Goku down on New Namek. Goku must survive brutal onslaught, tap into new strength stop Cooler once, for all.",
     director: "Yoshihiro Ueda",
