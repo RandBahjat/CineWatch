@@ -11959,7 +11959,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wNEHNqo3MgHmj3BUiPSqqq5czcm.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/yGUOEjZniQQsuyWqC5N0UU28osa.jpg",
     videoUrl: "27581",
-    overview: "Bumbling analyst Maxwell Smart finally promote field agent, partner with skilled Agent 99 stop terrorist organization threaten steal nuclear weapon. Clumsy charm, gadget, spy antic clash with real danger of mission.",
+    overview: "Two mismatched desk-bound NYPD cop, overshadow by department's star detective duo, get chance step up when big case fall into their lap. Bumbling investigation lead uncover massive financial fraud far bigger than expect.",
     director: "Peter Segal",
     cast: [
       "Steve Carell, Anne Hathaway, Dwayne Johnson, Alan Arkin, Terence Stamp"
