@@ -12420,7 +12420,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/9mZGGJJP04RBmrzh9XVSfqRXl0d.jpg",
     videoUrl: "39101",
     overview: "Mysterious alien tree land on Earth, drain planet life force feed its deadly fruit, alien crew guard it fiercely. Goku, Gohan, Piccolo, Krillin must stop tree before it suck Earth dry, kill everyone on it.",
-    director: "Mitsuo Hashimoto",
+    director: "Daisuke Nishio",
     cast: [
       "Masako Nozawa, Ryō Horikawa, Takeshi Kusao, Shigeru Chiba, Toshio Furukawa"
     ],
