@@ -12178,7 +12178,7 @@ window._MOVIES_DATA = [
     overview: "Ancient evil warrior Tapion seal inside music box, wake up alongside monstrous beast Hirudegarn once he free. Trunks, Goten must earn Tapion's trust, work together stop Hirudegarn before it destroy world twice over.",
     director: "Mitsuo Hashimoto",
     cast: [
-      "Masako Nozawa, Ryō Horikawa, Naoki Tatsuta, Naoko Watanabe, Hiromi Tsuru"
+      "Masako Nozawa, Ryō Horikawa, Takeshi Kusao, Yūko Minaguchi, Kōji Yada"
     ],
     trending: false,
     featured: false,
