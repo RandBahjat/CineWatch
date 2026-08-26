@@ -12229,7 +12229,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uVJqC187rKxQ1sJsWlKjNfAzeTk.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/br9p5Liij0JVXUtrvZPUZQTy9Tt.jpg",
     videoUrl: "39104",
-    overview: "Cooler, Frieza's brother, return seek revenge for past defeat, ally with race of mechanical being take over peaceful planet. Goku, friend get pull into fight protect innocent world from Cooler's cybernetic army.",
+    overview: "Remnant of Red Ribbon Army activate three deadly android built destroy Goku for good. Battle push Goku, Vegeta, Trunks to limit as android fuse together become near unstoppable force.",
     director: "Yoshihiro Ueda",
     cast: [
       "Masako Nozawa, Ryō Horikawa, Shigeru Chiba, Toshio Furukawa, Naoko Watanabe"
