@@ -11710,6 +11710,31 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Don't Look Up",
+    type: "Movie",
+    year: 2013,
+    rating: 7.2,
+    age: "PG-13",
+    duration: "2h 23m",
+    genres: [
+      "Drama",
+      "Romance"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nimh1rrDDLhgpG8XAYoUZXHYwb6.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/7F5OIBVD2ZXKQrfPQq6azMZQGAK.jpg",
+    videoUrl: "64682",
+    overview: "Young writer Nick Carraway move next door to mysterious, wealthy Jay Gatsby, drawn into his lavish world of party, wealth, obsession. Gatsby's endless pursuit of lost love Daisy expose dark side of American dream.",
+    director: "Baz Luhrmann",
+    cast: [
+      "Leonardo DiCaprio, Carey Mulligan, Tobey Maguire, Joel Edgerton, Isla Fisher"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
