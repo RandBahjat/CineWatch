@@ -11969,6 +11969,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Dragon Ball Super: Super Hero",
+    type: "Movie",
+    year: 2022,
+    rating: 6.7,
+    age: "PG-13",
+    duration: "1h 47m",
+    genres: [
+      "Action",
+      "Crime",
+      "Comedy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wNEHNqo3MgHmj3BUiPSqqq5czcm.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/yGUOEjZniQQsuyWqC5N0UU28osa.jpg",
+    videoUrl: "27581",
+    overview: "Two mismatched desk-bound NYPD cop, overshadow by department's star detective duo, get chance step up when big case fall into their lap. Bumbling investigation lead uncover massive financial fraud far bigger than expect.",
+    director: "Adam McKay",
+    cast: [
+      "Will Ferrell, Mark Wahlberg, Eva Mendes, Samuel L. Jackson, Dwayne Johnson, Michael Keaton"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
