@@ -12324,8 +12324,8 @@ window._MOVIES_DATA = [
     title: "Dragon Ball: Curse of the Blood Rubies",
     type: "Movie",
     year: 1986,
-    rating: ,
-    age: "TV-PG",
+    rating: 6.6,
+    age: "PG",
     duration: "47m",
     genres: [
       "Action",
