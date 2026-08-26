@@ -12389,7 +12389,7 @@ window._MOVIES_DATA = [
       "Fantasy"
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/Apnw8FWoPOIsu14d5dvaNZzFSJE.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6iO8TJCyLI4BiPYOvdwzPV2bhoV.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/2WTjYoswcKZTQrokeUOhY3Xb3mZ.jpg",
     videoUrl: "44251",
     overview: "Broly, Legendary Super Saiyan, survive first defeat, revive by fanatic follower, unleash unstoppable rage once more. Gohan, Goten, Trunks, Videl trap in his path, must fight for survival against near god-like power.",
