@@ -12014,7 +12014,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/xXuVZCvWBjeDNcdSezBb6m3Qkpx.jpg",
     videoUrl: "303857",
     overview: "Remnant of Frieza's army use magic ball resurrect fallen tyrant, train hard prepare revenge. Frieza return stronger than ever, attack Earth, force Goku, Vegeta race back save planet, friends.",
-    director: "Tetsuro Kodama",
+    director: "Tadayoshi Yamamuro",
     cast: [
       "Masako Nozawa, Kōichi Yamadera, Ryō Horikawa, Aya Hisakawa, Hiroshi Kamiya"
     ],
