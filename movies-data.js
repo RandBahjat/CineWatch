@@ -12029,7 +12029,7 @@ window._MOVIES_DATA = [
     year: 1995,
     rating: 7.6,
     age: "PG",
-    duration: "1h 34m",
+    duration: "51m",
     genres: [
       "Action",
       "Animation",
