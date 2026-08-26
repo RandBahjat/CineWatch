@@ -6598,3 +6598,7 @@ body.rtl-layout .account-side-panel.open {
     font-size: 1rem;
   }
 }
+/ *   L a n g u a g e   O v e r r i d e s   * /  
+ h t m l [ l a n g = " k u " ]   . e n - o n l y   {   d i s p l a y :   n o n e   ! i m p o r t a n t ;   }  
+ h t m l [ l a n g = " k u " ]   . k u - o n l y   {   d i s p l a y :   i n l i n e   ! i m p o r t a n t ;   }  
+ 
