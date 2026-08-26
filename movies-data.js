@@ -11984,7 +11984,7 @@ window._MOVIES_DATA = [
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/pi0iZOEHeA3ih4p1IwAG4x2DZNH.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/yGUOEjZniQQsuyWqC5N0UU28osa.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/9bbxqz1iPEfZN9Xi2ZjJhkp5JRo.jpg",
     videoUrl: "27581",
     overview: "Two mismatched desk-bound NYPD cop, overshadow by department's star detective duo, get chance step up when big case fall into their lap. Bumbling investigation lead uncover massive financial fraud far bigger than expect.",
     director: "Adam McKay",
