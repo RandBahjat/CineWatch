@@ -12379,7 +12379,7 @@ window._MOVIES_DATA = [
     title: "Dragon Ball Z: Broly - The Legendary Super Saiyan",
     type: "Movie",
     year: 1993,
-    rating: 7.1,
+    rating: 7.3,
     age: "TV-PG",
     duration: "48m",
     genres: [
