@@ -11453,6 +11453,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Knives Out",
+    type: "Movie",
+    year: 2019,
+    rating: 6.6,
+    age: "R",
+    duration: "1h 53m",
+    genres: [
+      "Action",
+      "Crime",
+      "Thriller"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/pbGveUC8mk0QRkdXpERPLbMFnrg.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/y9LrSzPDFubfzs03w8OzhqWgFiQ.jpg",
+    videoUrl: "466081",
+    overview: "Ex-con, ex-Special Forces Pete Koslow work as informant for FBI, go undercover infiltrate mob run drug operation inside prison. Deal go bad, Koslow frame for murder, must escape prison, clear name, protect family.",
+    director: "Andrea Di Stefano",
+    cast: [
+      "Joel Kinnaman, Rosamund Pike, Common, Ana de Armas, Clive Owen"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
