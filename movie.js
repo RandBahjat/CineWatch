@@ -604,7 +604,12 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
   const fav = isFavorite(movie.id);
   const primaryGenre = movie.genres && movie.genres.length > 0 ? translateGenre(movie.genres[0]) : "";
   const displayType = movie.type || (movie.seasons ? "TV Show" : "Movie");
-  const rankHtml = rank !== null ? `<div class="top10-rank-badge">${rank}</div>` : "";
+  const rankHtml = rank !== null ? `
+    <div class="top10-rank-badge">
+      <span class="top10-rank-text">TOP</span>
+      <span class="top10-rank-num">${rank.toString().padStart(2, '0')}</span>
+    </div>
+  ` : "";
   
   const imgSrc = forcePoster ? movie.poster : (movie.backdrop || movie.poster);
   const sourceTag = forcePoster ? "" : `<source media="(max-width: 768px)" srcset="${movie.poster}">`;
