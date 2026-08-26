@@ -11665,7 +11665,7 @@ window._MOVIES_DATA = [
     year: 2011,
     rating: 7.4,
     age: "PG-13",
-    duration: "1h 53m",
+    duration: "1h 58m",
     genres: [
       "Comedy",
 
