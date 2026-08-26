@@ -11701,7 +11701,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/7F5OIBVD2ZXKQrfPQq6azMZQGAK.jpg",
     videoUrl: "64682",
     overview: "Young writer Nick Carraway move next door to mysterious, wealthy Jay Gatsby, drawn into his lavish world of party, wealth, obsession. Gatsby's endless pursuit of lost love Daisy expose dark side of American dream.",
-    director: "Glenn Ficarra, John Requa",
+    director: "Baz Luhrmann",
     cast: [
       "Steve Carell, Ryan Gosling, Julianne Moore, Emma Stone, Marisa Tomei, Kevin Bacon"
     ],
