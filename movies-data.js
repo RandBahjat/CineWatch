@@ -12186,7 +12186,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Dragon Ball Z: Wrath of the Dragon",
+    title: "Dragon Ball Z: The Return of Cooler",
     type: "Movie",
     year: 1995,
     rating: 7.4,
