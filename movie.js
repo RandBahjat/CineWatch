@@ -2831,6 +2831,18 @@ function bindEventListeners() {
     const card = e.target.closest(".movie-card") || e.target.closest(".browse-card");
     if (card) {
       const movieId = card.dataset.id;
+      
+      // Intercept click if in Continue Watching selection mode
+      if (state.isCwSelectionMode && card.classList.contains("continue-card") && state.activeView === "continue") {
+        if (state.cwSelectedItems.has(movieId)) {
+          state.cwSelectedItems.delete(movieId);
+        } else {
+          state.cwSelectedItems.add(movieId);
+        }
+        renderContinueWatchingPage();
+        return;
+      }
+      
       openDetailsModal(movieId);
     }
   });
