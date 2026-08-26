@@ -12149,7 +12149,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/vsmlvr8FX2bfGlimucXTw8XArFB.jpg",
     videoUrl: "39102",
     overview: "Powerful Namekian warlord Lord Slug arrive Earth, drain planet of energy, plan reshape it his own dark image. Goku must push past limit, tap into hidden power to stop him before Earth wither, die.",
-    director: "Yoshihiro Ueda",
+    director: "Mitsuo Hashimoto",
     cast: [
       "Masako Nozawa, Ryō Horikawa, Shigeru Chiba, Toshio Furukawa, Naoko Watanabe"
     ],
