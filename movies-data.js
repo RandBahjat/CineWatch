@@ -11457,7 +11457,7 @@ window._MOVIES_DATA = [
     title: "Knives Out",
     type: "Movie",
     year: 2019,
-    rating: 6.6,
+    rating: 7.9,
     age: "R",
     duration: "1h 53m",
     genres: [
