@@ -11649,7 +11649,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ek8e8txUyUwd2BNqj6lFEerJfbq.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/z2cjtcPIssilQfVaO2LrUyLjapC.jpg",
     videoUrl: "8363",
-    overview: "In future world, time literally money, people stop aging at twenty-five, must earn more time live longer. Poor man frame for murder, team up with rich hostage, fight corrupt system control life span of everyone.",
+    overview: "Two awkward teen best friend try score alcohol for party before head off separate college, hoping night lead to popularity, girl, one last wild adventure together. Chaos, cop, misadventure test friendship before life pull them apart.",
     director: "Andrew Niccol",
     cast: [
       "Justin Timberlake, Amanda Seyfried, Cillian Murphy, Vincent Kartheiser, Olivia Wilde"
