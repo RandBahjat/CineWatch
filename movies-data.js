@@ -11515,6 +11515,7 @@ window._MOVIES_DATA = [
       "Action",
       "Animation",
       "Adventure",
+      "Comedy",
       ""
 
     ],
