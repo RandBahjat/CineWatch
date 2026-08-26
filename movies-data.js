@@ -12070,7 +12070,7 @@ window._MOVIES_DATA = [
     overview: "God of Destruction Beerus wake from long slumber, hunt for legendary Super Saiyan God he dream about. Goku, friend must find way awaken this new form before Beerus destroy Earth out boredom, rage.",
     director: "Masahiro Hosoda",
     cast: [
-      "Masako Nozawa, Ryō Horikawa, Shigeru Chiba, Toshio Furukawa, Bin Shimada"
+      "Masako Nozawa, Ryō Horikawa, Kōichi Yamadera, Kenji Nojima, Aya Hisakawa"
     ],
     trending: false,
     featured: false,
