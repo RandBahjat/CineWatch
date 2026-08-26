@@ -11650,7 +11650,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/z2cjtcPIssilQfVaO2LrUyLjapC.jpg",
     videoUrl: "8363",
     overview: "Two awkward teen best friend try score alcohol for party before head off separate college, hoping night lead to popularity, girl, one last wild adventure together. Chaos, cop, misadventure test friendship before life pull them apart.",
-    director: "Andrew Niccol",
+    director: "Greg Mottola",
     cast: [
       "Justin Timberlake, Amanda Seyfried, Cillian Murphy, Vincent Kartheiser, Olivia Wilde"
     ],
