@@ -12376,7 +12376,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Dragon Ball Z: Broly - Second Coming",
+    title: "Dragon Ball Z: Broly - The Legendary Super Saiyan",
     type: "Movie",
     year: 1994,
     rating: 6.5,
