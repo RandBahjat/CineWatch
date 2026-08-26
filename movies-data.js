@@ -11839,6 +11839,31 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "London Has Fallen",
+    type: "Movie",
+    year: 2016,
+    rating: 5.9,
+    age: "R",
+    duration: "1h 39m",
+    genres: [
+      "Action",
+      "Thriller",
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iEbLkYzyiUdOKNK4WNBFyGH7r2Y.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/2aXAK6WNg9ihJm8qRSrguKzgaB7.jpg",
+    videoUrl: "267860",
+    overview: "World leader gather London for state funeral, terrorist group launch coordinated attack, turn city into war zone. Secret Service agent Mike Banning must protect President, get him out alive before city fall completely.",
+    director: "Babak Najafi",
+    cast: [
+      "Gerard Butler, Aaron Eckhart, Morgan Freeman, Angela Bassett, Alon Aboutboul"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
