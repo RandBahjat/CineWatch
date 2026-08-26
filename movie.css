@@ -6520,3 +6520,37 @@ body.rtl-layout .account-side-panel.open {
 .cw-action-bar button {
   transition: all 0.2s ease;
 }
+
+/* --- Top 10 Trending Today Styles --- */
+.top10-track {
+  counter-reset: top10;
+  padding-left: 20px;
+}
+
+.top10-track .movie-card {
+  counter-increment: top10;
+  margin-left: 40px; /* Space for the big number */
+  overflow: visible; /* Allow number to stick out */
+}
+
+.top10-track .movie-card::before {
+  content: counter(top10);
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  transform: translateY(-50%);
+  font-size: 140px;
+  font-weight: 900;
+  color: #000;
+  -webkit-text-stroke: 4px #e50914; /* Netflix red stroke */
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  line-height: 1;
+  z-index: -1;
+  font-family: 'Inter', sans-serif;
+  pointer-events: none;
+}
+
+.top10-track .movie-card:hover::before {
+  color: #e50914; /* Fill on hover for an awesome effect */
+  transition: color 0.3s ease;
+}
