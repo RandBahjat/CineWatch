@@ -12054,8 +12054,8 @@ window._MOVIES_DATA = [
     title: "Dragon Ball Z: Battle of Gods",
     type: "Movie",
     year: 2013,
-    rating: 7.6,
-    age: "PG",
+    rating: 7.1,
+    age: "TV-PG",
     duration: "51m",
     genres: [
       "Action",
