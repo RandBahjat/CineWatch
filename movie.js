@@ -4025,8 +4025,9 @@ function updateIframeServer() {
       const selected = serverSelect.value;
       if (selected === 'zxcstream') {
         newUrl = data.type === 'tv' ? `https://player.zxcstream.xyz/embed/tv/${data.id}/${data.season}/${data.episode}` : `https://player.zxcstream.xyz/embed/movie/${data.id}`;
-      } else if (selected === 'vidsrc-me') {
-        newUrl = data.type === 'tv' ? `https://vidsrc.me/embed/tv?tmdb=${data.id}&season=${data.season}&episode=${data.episode}` : `https://vidsrc.me/embed/movie?tmdb=${data.id}`;
+      if (selected === 'vidsrc-me') {
+        const idParam = String(data.id).startsWith('tt') ? `imdb=${data.id}` : `tmdb=${data.id}`;
+        newUrl = data.type === 'tv' ? `https://vidsrc.me/embed/tv?${idParam}&season=${data.season}&episode=${data.episode}` : `https://vidsrc.me/embed/movie?${idParam}`;
       } else {
         newUrl = data.type === 'tv' ? `https://vidsrc.sbs/embed/tv/${data.id}/${data.season}/${data.episode}` : `https://vidsrc.sbs/embed/movie/${data.id}`;
       }
