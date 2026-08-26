@@ -12296,7 +12296,7 @@ window._MOVIES_DATA = [
   {
     title: "Dragon Ball Z: Bio-Broly",
     type: "Movie",
-    year: 1993,
+    year: 1994,
     rating: 6.7,
     age: "PG",
     duration: "59m",
