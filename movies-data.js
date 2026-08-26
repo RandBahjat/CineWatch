@@ -11755,7 +11755,7 @@ window._MOVIES_DATA = [
     overview: "Woman accidentally expose to powerful drug that unlock full potential of human brain, gain extraordinary power grow more intense as brain capacity keep expand. Race against time, before power consume her completely, evade dangerous gang chase her down.",
     director: "Luc Besson",
     cast: [
-      "Leonardo DiCaprio, Jennifer Lawrence, Meryl Streep, Cate Blanchett, Timothée Chalamet, Jonah Hill"
+      "Scarlett Johansson, Morgan Freeman, Choi Min-sik, Amr Waked"
     ],
     trending: false,
     featured: false,
