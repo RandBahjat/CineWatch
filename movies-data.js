@@ -11779,7 +11779,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/rLPk1hXHV9KDH89Jcx5ms4q4AjE.jpg",
     videoUrl: "310",
     overview: "Frustrated TV reporter complain God not doing his job right, get granted all of God's power himself, see if he do better. Chaos, comedy, humility follow as he learn real weight of power, responsibility.",
-    director: "Luc Besson",
+    director: "Tom Shadyac",
     cast: [
       "Scarlett Johansson, Morgan Freeman, Choi Min-sik, Amr Waked"
     ],
