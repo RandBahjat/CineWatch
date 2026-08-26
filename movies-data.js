@@ -12230,7 +12230,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/br9p5Liij0JVXUtrvZPUZQTy9Tt.jpg",
     videoUrl: "39104",
     overview: "Remnant of Red Ribbon Army activate three deadly android built destroy Goku for good. Battle push Goku, Vegeta, Trunks to limit as android fuse together become near unstoppable force.",
-    director: "Yoshihiro Ueda",
+    director: "Daisuke Nishio",
     cast: [
       "Masako Nozawa, Ryō Horikawa, Shigeru Chiba, Toshio Furukawa, Naoko Watanabe"
     ],
