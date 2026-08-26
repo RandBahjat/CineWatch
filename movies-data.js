@@ -11618,6 +11618,7 @@ window._MOVIES_DATA = [
     duration: "1h 49m",
     genres: [
       "Action",
+      
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wmLoMyofbseLfxiGgk1Iz5H97c3.jpg",
