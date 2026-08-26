@@ -12023,6 +12023,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Dragon Ball Z: Resurrection 'F'",
+    type: "Movie",
+    year: 2015,
+    rating: 7.1,
+    age: "PG-13",
+    duration: "1h 34m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/soq3AxjALdBfdPAm8H7yuMmNL5Y.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/xXuVZCvWBjeDNcdSezBb6m3Qkpx.jpg",
+    videoUrl: "303857",
+    overview: "Remnant of Frieza's army use magic ball resurrect fallen tyrant, train hard prepare revenge. Frieza return stronger than ever, attack Earth, force Goku, Vegeta race back save planet, friends.",
+    director: "Tadayoshi Yamamuro",
+    cast: [
+      "Masako Nozawa, Ryō Horikawa, Ryūsei Nakao, Sōichirō Hoshi, Toshio Furukawa"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
