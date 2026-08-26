@@ -11675,7 +11675,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/p4RafgAPk558muOjnBMHhMArjS2.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/izxt0tTNWr5DWoTiKzvvd4Hu0pR.jpg",
     videoUrl: "50646",
-    overview: "Two awkward teen best friend try score alcohol for party before head off separate college, hoping night lead to popularity, girl, one last wild adventure together. Chaos, cop, misadventure test friendship before life pull them apart.",
+    overview: "Middle-age man's marriage fall apart, get taken under wing by young slick bachelor teach him how date again. Multiple tangle love story collide, reveal how messy, funny, unexpected love really is.",
     director: "Greg Mottola",
     cast: [
       "Jonah Hill, Michael Cera, Christopher Mintz-Plasse, Bill Hader, Seth Rogen, Emma Stone"
