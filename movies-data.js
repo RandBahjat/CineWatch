@@ -11668,6 +11668,7 @@ window._MOVIES_DATA = [
     duration: "1h 58m",
     genres: [
       "Comedy",
+      "Drama"
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ek8e8txUyUwd2BNqj6lFEerJfbq.jpg",
