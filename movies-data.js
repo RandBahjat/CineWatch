@@ -11647,7 +11647,7 @@ window._MOVIES_DATA = [
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ek8e8txUyUwd2BNqj6lFEerJfbq.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/kx2YVkcsnTnmF9XGTAj2NqEcHFG.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/z2cjtcPIssilQfVaO2LrUyLjapC.jpg",
     videoUrl: "49530",
     overview: "In future world, time literally money, people stop aging at twenty-five, must earn more time live longer. Poor man frame for murder, team up with rich hostage, fight corrupt system control life span of everyone.",
     director: "Andrew Niccol",
