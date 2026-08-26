@@ -12191,7 +12191,7 @@ window._MOVIES_DATA = [
     year: 1992,
     rating: 6.9,
     age: "PG",
-    duration: "52m",
+    duration: "45m",
     genres: [
       "Action",
       "Animation",
