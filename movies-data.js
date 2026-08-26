@@ -11652,7 +11652,7 @@ window._MOVIES_DATA = [
     overview: "Two awkward teen best friend try score alcohol for party before head off separate college, hoping night lead to popularity, girl, one last wild adventure together. Chaos, cop, misadventure test friendship before life pull them apart.",
     director: "Greg Mottola",
     cast: [
-      "Justin Timberlake, Amanda Seyfried, Cillian Murphy, Vincent Kartheiser, Olivia Wilde"
+      "Jonah Hill, Michael Cera, Christopher Mintz-Plasse, Bill Hader, Seth Rogen, Emma Stone"
     ],
     trending: false,
     featured: false,
