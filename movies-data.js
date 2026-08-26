@@ -11868,8 +11868,8 @@ window._MOVIES_DATA = [
   {
     title: "High Crimes",
     type: "Movie",
-    year: 1997,
-    rating: 6.6,
+    year: 2002,
+    rating: 6.4,
     age: "R",
     duration: "1h 55m",
     genres: [
