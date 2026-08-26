@@ -6608,3 +6608,5 @@ html[lang="ku"] .ku-only { display: inline !important; }
 
 body.rtl-layout .progress-bar-fill { float: right; border-radius: 2px 0 0 2px; }
 body.rtl-layout .progress-bar-container { direction: rtl; }
+
+.card-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
