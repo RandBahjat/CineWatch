@@ -11720,7 +11720,7 @@ window._MOVIES_DATA = [
     genres: [
       "Drama",
       "comedy"
-      ""
+      "Sci-Fi"
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nimh1rrDDLhgpG8XAYoUZXHYwb6.jpg",
