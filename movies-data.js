@@ -11700,7 +11700,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nimh1rrDDLhgpG8XAYoUZXHYwb6.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7F5OIBVD2ZXKQrfPQq6azMZQGAK.jpg",
     videoUrl: "64682",
-    overview: "Middle-age man's marriage fall apart, get taken under wing by young slick bachelor teach him how date again. Multiple tangle love story collide, reveal how messy, funny, unexpected love really is.",
+    overview: "Young writer Nick Carraway move next door to mysterious, wealthy Jay Gatsby, drawn into his lavish world of party, wealth, obsession. Gatsby's endless pursuit of lost love Daisy expose dark side of American dream.",
     director: "Glenn Ficarra, John Requa",
     cast: [
       "Steve Carell, Ryan Gosling, Julianne Moore, Emma Stone, Marisa Tomei, Kevin Bacon"
