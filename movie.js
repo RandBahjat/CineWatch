@@ -667,7 +667,9 @@ function renderContinueWatchingShelf() {
     return;
   }
 
-  shelf.classList.remove("hidden");
+  if (state.activeView === "home") {
+    shelf.classList.remove("hidden");
+  }
   track.innerHTML = items
     .map((item) => {
       const movie = MOVIES.find((m) => m.id === item.movieId);
