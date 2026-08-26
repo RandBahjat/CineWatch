@@ -12041,7 +12041,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/xeYKMrkcug0A6Igp0UGial69FVU.jpg",
     videoUrl: "39107",
     overview: "Evil demon Janemba born from imbalance in Other World, warp reality, break law of life, death itself. Goku, newly fuse Gogeta must stop him before chaos destroy both living, dead world.",
-    director: "Tadayoshi Yamamuro",
+    director: "Osamu Kasai",
     cast: [
       "Masako Nozawa, Ryō Horikawa, Ryūsei Nakao, Sōichirō Hoshi, Toshio Furukawa"
     ],
