@@ -6610,3 +6610,6 @@ body.rtl-layout .progress-bar-fill { float: right; border-radius: 2px 0 0 2px; }
 body.rtl-layout .progress-bar-container { direction: rtl; }
 
 .card-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.continue-card .card-poster-wrap { aspect-ratio: 16 / 9; }
+.continue-card img.card-poster { width: 100%; height: 100%; object-fit: cover; }
