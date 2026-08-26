@@ -12313,7 +12313,7 @@ window._MOVIES_DATA = [
     overview: "Evil scientist clone Broly, create bio-engineer monster call Bio-Broly, unleash him at big tournament. Broly's berserk rage grow harder, harder to contain, threaten kill everyone trap inside island facility.",
     director: "Yoshihiro Ueda",
     cast: [
-      "Toku Nishio, Shinji Ogawa, Hisao Egawa"
+      "Masako Nozawa, Ryō Horikawa, Takeshi Kusao, Naoko Watanabe, Hiromi Tsuru"
     ],
     trending: false,
     featured: false,
