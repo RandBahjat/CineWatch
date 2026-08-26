@@ -11997,7 +11997,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Dragon Ball Super: Super Hero",
+    title: "Dragon Ball Z: Resurrection 'F'",
     type: "Movie",
     year: 2022,
     rating: 7.1,
