@@ -12131,6 +12131,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Dragon Ball Z: Bojack Unbound",
+    type: "Movie",
+    year: 1993,
+    rating: 7.1,
+    age: "E10+",
+    duration: "50m",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iihTK9Af8G1ZzBjkIIAV4qQMkzF.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/h5Rvh7TUOLqmY2AOebwSEnHolwB.jpg",
+    videoUrl: "39105",
+    overview: "Vicious space pirate Bojack, freed after long imprisonment, seek revenge, wreak havoc during World Martial Arts Tournament. Young Gohan must step up, protect friend, fight fierce battle while Goku stuck away in Other World.",
+    director: "Yoshihiro Ueda",
+    cast: [
+      "Masako Nozawa, Ryō Horikawa, Shigeru Chiba, Toshio Furukawa, Naoko Watanabe"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
