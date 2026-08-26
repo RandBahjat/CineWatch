@@ -852,12 +852,12 @@ function renderContinueWatchingPage() {
         : `<span>${Math.max(1, Math.round((item.duration - item.currentTime) / 60))}m left</span><span>${percent}%</span>`;
 
       const isSelected = state.isCwSelectionMode && state.cwSelectedItems.has(movie.id);
+      const isSelected = state.isCwSelectionMode && state.cwSelectedItems.has(movie.id);
       const selectedClass = isSelected ? 'cw-selected' : '';
       const selectionOverlay = state.isCwSelectionMode ? 
         `<div class="cw-selection-overlay ${isSelected ? 'active' : ''}">
            <ion-icon name="checkmark-circle"></ion-icon>
          </div>` : '';
-      const removeBtnHtml = state.isCwSelectionMode ? '' : `<button class="continue-remove-btn" data-remove-id="${movie.id}" title="Remove from list">&times;</button>`;
 
       return `
       <div class="movie-card continue-card ${selectedClass}" data-id="${movie.id}">
@@ -867,7 +867,6 @@ function renderContinueWatchingPage() {
             <img src="${movie.backdrop || movie.poster}" alt="${movie.title}" class="card-poster">
           </picture>
           <div class="card-gradient"></div>
-          ${removeBtnHtml}
           ${selectionOverlay}
           <div class="card-overlay"></div>
           <div class="progress-bar-wrap">
