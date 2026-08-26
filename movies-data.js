@@ -11676,7 +11676,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/izxt0tTNWr5DWoTiKzvvd4Hu0pR.jpg",
     videoUrl: "50646",
     overview: "Middle-age man's marriage fall apart, get taken under wing by young slick bachelor teach him how date again. Multiple tangle love story collide, reveal how messy, funny, unexpected love really is.",
-    director: "Greg Mottola",
+    director: "Glenn Ficarra, John Requa",
     cast: [
       "Jonah Hill, Michael Cera, Christopher Mintz-Plasse, Bill Hader, Seth Rogen, Emma Stone"
     ],
