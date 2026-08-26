@@ -1146,6 +1146,7 @@ select {
 
 .carousel-track {
   display: flex;
+  align-items: flex-start; /* Prevent cards from stretching to match tallest sibling and exploding in width due to aspect-ratio */
   gap: 1.25rem;
   overflow-x: auto;
   scroll-behavior: smooth;
