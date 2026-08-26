@@ -11462,7 +11462,8 @@ window._MOVIES_DATA = [
     duration: "2h 10m",
     genres: [
       "Crime",
-      "Thriller"
+      "Mystery",
+      ""
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/pbGveUC8mk0QRkdXpERPLbMFnrg.jpg",
