@@ -11585,6 +11585,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Steve",
+    type: "Movie",
+    year: 2025,
+    rating: 4.4,
+    age: "R",
+    duration: "1h 42m",
+    genres: [
+      "Crime",
+      "Thriller",
+      "Mystery"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nM26QosEfgjEegONCiNNrYMBTxD.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/rT40yt2rTZlAELcjPr8N5eqhZTN.jpg",
+    videoUrl: "331962",
+    overview: "NYPD detective investigate partner's death, uncover dark secret while immigrant woman haunt by mysterious event she can't explain. Two story collide, reveal shocking truth tie both together.",
+    director: "Declan Dale",
+    cast: [
+      "Keanu Reeves, Ana de Armas, Christopher McDonald, Big Daddy Kane, Mira Sorvino"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
