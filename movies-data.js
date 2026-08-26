@@ -11546,7 +11546,7 @@ window._MOVIES_DATA = [
       "War"
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qpPMewlugFaejXjz4YNDnpTniFX.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/mDcPRjZC1bb6LavFU3gwsWdVfCM.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/mzFlwK2WN5KGCgEc4ExJmooJy97.jpg",
     videoUrl: "539681",
     overview: "Krypto, Superman's loyal dog, team up with ragtag group of shelter pet after Justice League get kidnap. Must learn work together, tap into own super power, save owner, world from villainous guinea pig plan.",
