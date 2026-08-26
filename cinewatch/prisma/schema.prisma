@@ -1,0 +1,71 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String         @id @default(cuid())
+  username      String         @unique
+  email         String         @unique
+  passwordHash  String
+  role          String         @default("USER")
+  watchHistory  WatchHistory[]
+  watchlist     Watchlist[]
+  ratings       Rating[]
+  reviews       Review[]
+}
+
+model Media {
+  id          String         @id @default(cuid())
+  type        String         // MOVIE, SERIES, ANIME
+  title       String
+  synopsis    String
+  posterUrl   String
+  backdropUrl String
+  releaseYear Int
+  rating      Float          @default(0)
+  watchItems  Watchlist[]
+  history     WatchHistory[]
+  ratings     Rating[]
+  reviews     Review[]
+}
+
+model Watchlist {
+  id        String   @id @default(cuid())
+  userId    String
+  mediaId   String
+  user      User     @relation(fields: [userId], references: [id])
+  media     Media    @relation(fields: [mediaId], references: [id])
+  @@unique([userId, mediaId])
+}
+
+model WatchHistory {
+  id        String   @id @default(cuid())
+  userId    String
+  mediaId   String
+  progress  Int      // seconds
+  user      User     @relation(fields: [userId], references: [id])
+  media     Media    @relation(fields: [mediaId], references: [id])
+}
+
+model Rating {
+  id        String   @id @default(cuid())
+  score     Float
+  userId    String
+  mediaId   String
+  user      User     @relation(fields: [userId], references: [id])
+  media     Media    @relation(fields: [mediaId], references: [id])
+}
+
+model Review {
+  id        String   @id @default(cuid())
+  content   String
+  userId    String
+  mediaId   String
+  user      User     @relation(fields: [userId], references: [id])
+  media     Media    @relation(fields: [mediaId], references: [id])
+}
