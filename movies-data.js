@@ -11960,7 +11960,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/yGUOEjZniQQsuyWqC5N0UU28osa.jpg",
     videoUrl: "27581",
     overview: "Two mismatched desk-bound NYPD cop, overshadow by department's star detective duo, get chance step up when big case fall into their lap. Bumbling investigation lead uncover massive financial fraud far bigger than expect.",
-    director: "Peter Segal",
+    director: "Adam McKay",
     cast: [
       "Steve Carell, Anne Hathaway, Dwayne Johnson, Alan Arkin, Terence Stamp"
     ],
