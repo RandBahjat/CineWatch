@@ -11829,7 +11829,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iEbLkYzyiUdOKNK4WNBFyGH7r2Y.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/2aXAK6WNg9ihJm8qRSrguKzgaB7.jpg",
     videoUrl: "267860",
-    overview: "Ordinary, unhappy office worker discover he descend from line of legendary assassin, recruit into secret society of killer. Trained sharpen deadly skill, uncover conspiracy tie back to own father's death.",
+    overview: "World leader gather London for state funeral, terrorist group launch coordinated attack, turn city into war zone. Secret Service agent Mike Banning must protect President, get him out alive before city fall completely.",
     director: "Timur Bekmambetov",
     cast: [
       "James McAvoy, Angelina Jolie, Morgan Freeman, Terence Stamp, Thomas Kretschmann"
