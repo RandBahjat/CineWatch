@@ -11788,6 +11788,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Bruce Almighty",
+    type: "Movie",
+    year: 2003,
+    rating: 6.8,
+    age: "PG-13",
+    duration: "1h 41m",
+    genres: [
+      "Comedy",
+      "Fantasy",
+      "Romance"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wqkWrOFtYnZSvIMu8Lsmz7WIvKC.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/rLPk1hXHV9KDH89Jcx5ms4q4AjE.jpg",
+    videoUrl: "310",
+    overview: "Frustrated TV reporter complain God not doing his job right, get granted all of God's power himself, see if he do better. Chaos, comedy, humility follow as he learn real weight of power, responsibility.",
+    director: "Tom Shadyac",
+    cast: [
+      "Jim Carrey, Morgan Freeman, Jennifer Aniston, Philip Baker Hall, Catherine Bell"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
