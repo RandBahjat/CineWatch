@@ -11814,6 +11814,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "London Has Fallen",
+    type: "Movie",
+    year: 2008,
+    rating: 6.7,
+    age: "R",
+    duration: "1h 50m",
+    genres: [
+      "Action",
+      "Thriller",
+      "Sci-Fi"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/njy7Pz7ZHZceO7lNfGIHKphY8Hd.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/vjwuT8EzWY96W6nrJKZNI2WJU87.jpg",
+    videoUrl: "8909",
+    overview: "Ordinary, unhappy office worker discover he descend from line of legendary assassin, recruit into secret society of killer. Trained sharpen deadly skill, uncover conspiracy tie back to own father's death.",
+    director: "Timur Bekmambetov",
+    cast: [
+      "James McAvoy, Angelina Jolie, Morgan Freeman, Terence Stamp, Thomas Kretschmann"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
