@@ -12164,7 +12164,7 @@ window._MOVIES_DATA = [
     year: 1995,
     rating: 7.4,
     age: "E10+",
-    duration: "43m",
+    duration: "52m",
     genres: [
       "Action",
       "Animation",
