@@ -6573,7 +6573,8 @@ body.rtl-layout .account-side-panel.open {
   }
   .top10-rank-badge {
     font-size: 90px;
-    right: 80%;
+    top: 80px; /* Adjusted for shorter mobile posters */
+    left: -20px;
     -webkit-text-stroke: 3px #e50914;
   }
 }
