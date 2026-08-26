@@ -11907,7 +11907,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9WqA0Ry9wmTzFvom8mNbcyKZQgP.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/86rDAqR5oDu29qZTGyk88VdB2lI.jpg",
     videoUrl: "134374",
-    overview: "Successful lawyer discover husband hide dark secret, deserter accuse of war crime long ago. Team with disgrace military lawyer defend him, dig up buried truth put both their life at risk.",
+    overview: "Trio of dim-witted bodybuilder hatch scheme kidnap, extort wealthy client, live out twisted version American dream. Plan spiral out control, greed, violence, incompetence turn get-rich scheme into bloody disaster.",
     director: "Carl Franklin",
     cast: [
       "Ashley Judd, Morgan Freeman, Jim Caviezel, Adam Scott, Amanda Peet"
