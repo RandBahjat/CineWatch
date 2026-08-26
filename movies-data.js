@@ -11660,9 +11660,9 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Superbad",
+    title: "Crazy, Stupid, Love.",
     type: "Movie",
-    year: 2007,
+    year: 2011,
     rating: 7.6,
     age: "R",
     duration: "1h 53m",
