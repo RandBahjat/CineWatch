@@ -11552,7 +11552,7 @@ window._MOVIES_DATA = [
     overview: "Two young guy stumble into arm dealing business, land massive three hundred million dollar contract supply US military in Afghanistan war. Greed, ambition push them deeper into shady, dangerous world of international arms trade.",
     director: "Todd Phillips",
     cast: [
-      "Dwayne Johnson, Kevin Hart, Kate McKinnon, John Krasinski, Vanessa Bayer, Marc Maron"
+      "Jonah Hill, Miles Teller, Ana de Armas, Bradley Cooper, Kevin Pollak"
     ],
     trending: false,
     featured: false,
