@@ -12066,7 +12066,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nxZEdYcHMuD8SSuwusDnK9CD2H1.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/61t00k4ta1nNqKI2qPLKgoW6EoP.jpg",
-    videoUrl: "126",
+    videoUrl: "126963",
     overview: "Evil demon Janemba born from imbalance in Other World, warp reality, break law of life, death itself. Goku, newly fuse Gogeta must stop him before chaos destroy both living, dead world.",
     director: "Osamu Kasai",
     cast: [
