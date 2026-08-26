@@ -12416,7 +12416,7 @@ window._MOVIES_DATA = [
       "Fantasy"
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6iO8TJCyLI4BiPYOvdwzPV2bhoV.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fDX4Dp8IKvjBAaEb5MOJrGkxWX0.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/xrg1pYVPK1yN0UREAzd1ywoVM6m.jpg",
     videoUrl: "34433",
     overview: "Ancient Legendary Super Saiyan Broly, thought myth, real, awaken by chance encounter with Goku, unleash near-limitless power fuel by deep-root childhood rage. Goku, Vegeta, Piccolo, Gohan must find way stop force stronger than anything they face before.",
