@@ -852,7 +852,6 @@ function renderContinueWatchingPage() {
         : `<span>${Math.max(1, Math.round((item.duration - item.currentTime) / 60))}m left</span><span>${percent}%</span>`;
 
       const isSelected = state.isCwSelectionMode && state.cwSelectedItems.has(movie.id);
-      const isSelected = state.isCwSelectionMode && state.cwSelectedItems.has(movie.id);
       const selectedClass = isSelected ? 'cw-selected' : '';
       const selectionOverlay = state.isCwSelectionMode ? 
         `<div class="cw-selection-overlay ${isSelected ? 'active' : ''}">
