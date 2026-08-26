@@ -11540,7 +11540,7 @@ window._MOVIES_DATA = [
     age: "R",
     duration: "1h 54m",
     genres: [
-      "Animation",
+      "Crime",
       "Adventure",
       "Comedy",
       "Family"
