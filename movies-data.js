@@ -11628,7 +11628,7 @@ window._MOVIES_DATA = [
     overview: "In future world, time literally money, people stop aging at twenty-five, must earn more time live longer. Poor man frame for murder, team up with rich hostage, fight corrupt system control life span of everyone.",
     director: "Andrew Niccol",
     cast: [
-      "Cillian Murphy, Tracey Ullman, Simbi Ajikawo (Little Simz), Jay Lycurgo, Emily Watson"
+      "Justin Timberlake, Amanda Seyfried, Cillian Murphy, Vincent Kartheiser, Olivia Wilde"
     ],
     trending: false,
     featured: false,
