@@ -4015,8 +4015,8 @@ function updateIframeServer() {
 
       if (!serverSelect.dataset.animeServersPopulated) {
         serverSelect.innerHTML = `
-          <option value="vidsrc-sbs">VidSrc (Reliable / Fast)</option>
           <option value="vidsrc-me">VidSrc ME (Multi-Language)</option>
+          <option value="vidsrc-sbs">VidSrc (Reliable / Fast)</option>
           <option value="zxcstream">ZXC Stream (Japanese Sub)</option>
         `;
         serverSelect.dataset.animeServersPopulated = "true";
