@@ -11703,7 +11703,7 @@ window._MOVIES_DATA = [
     overview: "Young writer Nick Carraway move next door to mysterious, wealthy Jay Gatsby, drawn into his lavish world of party, wealth, obsession. Gatsby's endless pursuit of lost love Daisy expose dark side of American dream.",
     director: "Baz Luhrmann",
     cast: [
-      "Steve Carell, Ryan Gosling, Julianne Moore, Emma Stone, Marisa Tomei, Kevin Bacon"
+      "Leonardo DiCaprio, Carey Mulligan, Tobey Maguire, Joel Edgerton, Isla Fisher"
     ],
     trending: false,
     featured: false,
