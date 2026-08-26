@@ -11908,7 +11908,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/86rDAqR5oDu29qZTGyk88VdB2lI.jpg",
     videoUrl: "134374",
     overview: "Trio of dim-witted bodybuilder hatch scheme kidnap, extort wealthy client, live out twisted version American dream. Plan spiral out control, greed, violence, incompetence turn get-rich scheme into bloody disaster.",
-    director: "Carl Franklin",
+    director: "Michael Bay",
     cast: [
       "Ashley Judd, Morgan Freeman, Jim Caviezel, Adam Scott, Amanda Peet"
     ],
