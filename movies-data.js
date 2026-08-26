@@ -12163,7 +12163,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 1995,
     rating: 7.4,
-    age: "PG",
+    age: "E10+",
     duration: "43m",
     genres: [
       "Action",
