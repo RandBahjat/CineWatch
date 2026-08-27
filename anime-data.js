@@ -14,7 +14,7 @@ window._ANIME_DATA = [
       "Drama",
       "Sports"
     ],
-    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/rF5hD66Q07Yqgq76y4S4sB2kHwe.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8WEr48swcqe89Zsy5sdrGCASlIg.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/6x1ZEm3m7aBtzR78uDk2l8xWqWb.jpg",
     videoUrl: "60863",
     anilistId: 20464,
