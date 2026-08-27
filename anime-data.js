@@ -19,7 +19,7 @@ window._ANIME_DATA = [
     videoUrl: "114410",
     anilistId: 127230,
     animeSlug: "chainsaw-man",
-    overview: "Denji, desperate young man saddled with huge debt, merge with devil dog Pochita, gain power to transform into Chainsaw Man. Join Public Safety Devil Hunters, fight brutal demon, seek simple life, uncover dark conspiracy in bloody, chaotic world.",
+    overview: "Denji, poor young man drown in debt, fuse with pet devil Pochita after brutal death, become chainsaw-wield hybrid devil hunter. Chase simple dream — good meal, warm bed, girl to love — while cut through vicious devil, dark conspiracy.",
     director: "Tatsuki Fujimoto",
     cast: [
       "Kikunosuke Toya, Tomori Kusunoki, Shogo Sakata, Fairouz Ai, Ryan Colt Levy"
