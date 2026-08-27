@@ -23,10 +23,7 @@ window._ANIME_DATA = [
     overview: "Yuji Itadori, ordinary high schooler, swallow cursed finger, become vessel for powerful demon Sukuna to save friend. Pull into secret world of jujutsu sorcerer, battle deadly curse, uncover deep conspiracy tie to Sukuna's ancient past.",
     director: "Gege Akutami",
     cast: [
-      "Junya Enoki",
-      "Yuma Uchida",
-      "Asami Seto",
-      "Yuichi Nakamura"
+      "Junya Enoki, Yūichi Nakamura, Asami Seto, Robbie Daymond, Kaiji Tang"
     ],
     trending: true,
     featured: false,
