@@ -22151,7 +22151,7 @@ window._ANIME_DATA = [
     type: "TV Show",
     isAnime: true,
     year: 2019,
-    rating: 8.7,
+    rating: 8.9,
     age: "TV-MA",
     duration: "24m",
     genres: [
