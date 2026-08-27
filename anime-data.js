@@ -14,7 +14,7 @@ window._ANIME_DATA = [
       "Drama",
       "Horror"
     ],
-    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/32m2tJ9394hXh76k3qK6P3nL32Y.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1m4RlC9BTCbyY549TOdVQ5NRPcR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/x8J2G8N8vP0VvE3Z7gN8P2h4L8N.jpg",
     videoUrl: "61374",
     anilistId: 20605,
