@@ -1,5 +1,197 @@
 ﻿// CineWatch - Anime Data
 window._ANIME_DATA = [
+  {
+    title: "One Punch Man",
+    type: "TV Show",
+    isAnime: true,
+    year: 2015,
+    rating: 8.8,
+    age: "TV-14",
+    duration: "24m",
+    genres: [
+      "Animation",
+      "Action",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iE3s0lG5QVdEHOEZno7EQyicKLW.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/sMO1v5TUf8GOJHbJieOUHqOSKEi.jpg",
+    videoUrl: "63639",
+    anilistId: 21087,
+    animeSlug: "one-punch-man",
+    overview: "Saitama is a hero who only became a hero for fun. After three years of "special" training, though, he's become so strong that he's practically invincible. In fact, he's too strong—even his mightiest opponents are taken out with a single punch, and it turns out that being devastatingly powerful is actually kind of a bore.",
+    director: "Shingo Natsume",
+    cast: [
+      "Makoto Furukawa",
+      "Kaito Ishikawa",
+      "Yuki Kaji",
+      "Aoi Yuki"
+    ],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Strongest Man"
+          },
+          {
+            episode: 2,
+            title: "The Lone Cyborg"
+          },
+          {
+            episode: 3,
+            title: "The Obsessive Scientist"
+          },
+          {
+            episode: 4,
+            title: "The Modern Ninja"
+          },
+          {
+            episode: 5,
+            title: "The Ultimate Master"
+          },
+          {
+            episode: 6,
+            title: "The Terrifying City"
+          },
+          {
+            episode: 7,
+            title: "The Ultimate Disciple"
+          },
+          {
+            episode: 8,
+            title: "The Deep Sea King"
+          },
+          {
+            episode: 9,
+            title: "Unyielding Justice"
+          },
+          {
+            episode: 10,
+            title: "Unparalleled Peril"
+          },
+          {
+            episode: 11,
+            title: "The Dominator of the Universe"
+          },
+          {
+            episode: 12,
+            title: "The Strongest Hero"
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "Return of the Hero"
+          },
+          {
+            episode: 2,
+            title: "Human Monster"
+          },
+          {
+            episode: 3,
+            title: "The Hunt Begins"
+          },
+          {
+            episode: 4,
+            title: "Metal Bat"
+          },
+          {
+            episode: 5,
+            title: "Martial Arts Tournament"
+          },
+          {
+            episode: 6,
+            title: "The Uprising of the Monsters"
+          },
+          {
+            episode: 7,
+            title: "The Class S Heroes"
+          },
+          {
+            episode: 8,
+            title: "The Resistance of the Strong"
+          },
+          {
+            episode: 9,
+            title: "The Troubles of the Strongest"
+          },
+          {
+            episode: 10,
+            title: "Justice Under Siege"
+          },
+          {
+            episode: 11,
+            title: "The Varieties of Pride"
+          },
+          {
+            episode: 12,
+            title: "The Wiping of the Disciple's Butt"
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Strategy Meeting"
+          },
+          {
+            episode: 2,
+            title: "Monster Traits"
+          },
+          {
+            episode: 3,
+            title: "Organism Limits"
+          },
+          {
+            episode: 4,
+            title: "Counterattack Signal"
+          },
+          {
+            episode: 5,
+            title: "Monster King"
+          },
+          {
+            episode: 6,
+            title: "Motley Heroes"
+          },
+          {
+            episode: 7,
+            title: "Counterstrike"
+          },
+          {
+            episode: 8,
+            title: "Ninja Tale"
+          },
+          {
+            episode: 9,
+            title: "Brave Child"
+          },
+          {
+            episode: 10,
+            title: "Immortal Bloodbath"
+          },
+          {
+            episode: 11,
+            title: "Top Dragons"
+          },
+          {
+            episode: 12,
+            title: "Ultimate Lifeform"
+          }
+        ]
+      }
+    ]
+  },
 
   {
     title: "One Piece",
