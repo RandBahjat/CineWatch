@@ -251,7 +251,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/5lB7yPaRhJHQ9dx7AnvPUi0GZDU.jpg",
     videoUrl: "1516698",
     overview: "Ry, college student with chronic illness, escape summer to Majorca with mom, unexpected fall for local guy. Living-in-moment romance collide with worsening health, long-hidden family secret threaten unravel it all.",
-    director: "Travis Knight",
+    director: "Carlson Young",
     cast: [
       "Nicholas Galitzine, Camila Mendes, Idris Elba, Jared Leto, Alison Brie, Morena Baccarin, James Purefoy"
     ],
