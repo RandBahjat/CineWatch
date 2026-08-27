@@ -22004,6 +22004,150 @@ window._ANIME_DATA = [
           {
             episode: 26,
             title: "アレカラ×ト×ソレカラ"
+          },
+          {
+            episode: 27,
+            title: "トウギジョウ×ニ×トウジョウ"
+          },
+          {
+            episode: 28,
+            title: "ネン×ト×ネン"
+          },
+          {
+            episode: 29,
+            title: "カクセイ×ト×カノウセイ"
+          },
+          {
+            episode: 30,
+            title: "ゲキトウ×ト×カットウ"
+          },
+          {
+            episode: 31,
+            title: "インネン×ト×シュウネン"
+          },
+          {
+            episode: 32,
+            title: "ドッキリ×ナ×ショウリ"
+          },
+          {
+            episode: 33,
+            title: "ケイハク×ナ×キョウハク"
+          },
+          {
+            episode: 34,
+            title: "ジツリョク×デ×セツジョク"
+          },
+          {
+            episode: 35,
+            title: "セイカク×ナ×ゴウカク"
+          },
+          {
+            episode: 36,
+            title: "オオキナカリ×ト×チイサナケリ"
+          },
+          {
+            episode: 37,
+            title: "ジン×ト×ゴン"
+          },
+          {
+            episode: 38,
+            title: "オヤジ×ノ×ヘンジ"
+          },
+          {
+            episode: 39,
+            title: "ネガイ×ト×チカイ"
+          },
+          {
+            episode: 40,
+            title: "ノウリョクシャ×ハ×キョウリョクシャ？"
+          },
+          {
+            episode: 41,
+            title: "ゴウケツ×ノ×シュウケツ"
+          },
+          {
+            episode: 42,
+            title: "マモル×ト×セメル"
+          },
+          {
+            episode: 43,
+            title: "ショウゲキ×ノ×サンゲキ"
+          },
+          {
+            episode: 44,
+            title: "ゲキセン×ノ×フクセン"
+          },
+          {
+            episode: 45,
+            title: "コウソク×ト×ヤクソク"
+          },
+          {
+            episode: 46,
+            title: "オウモノ×ト×マツモノ"
+          },
+          {
+            episode: 47,
+            title: "セイヤク×ト×セイヤク"
+          },
+          {
+            episode: 48,
+            title: "メキキ×ノ×キキメ"
+          },
+          {
+            episode: 49,
+            title: "ツイセキ×デ×ブンセキ"
+          },
+          {
+            episode: 50,
+            title: "ナカマ×ト×カタナ"
+          },
+          {
+            episode: 51,
+            title: "ヒジョウ×ノ×センジョウ"
+          },
+          {
+            episode: 52,
+            title: "シュウゲキ×ト×ショウゲキ"
+          },
+          {
+            episode: 53,
+            title: "フェイク×デ×サイク"
+          },
+          {
+            episode: 54,
+            title: "ウラナイ×ガ×アタラナイ？"
+          },
+          {
+            episode: 55,
+            title: "ナカマ×ト×イカサマ"
+          },
+          {
+            episode: 56,
+            title: "サイアイ×ト×サイアク"
+          },
+          {
+            episode: 57,
+            title: "センテ×ト×オキテ"
+          },
+          {
+            episode: 58,
+            title: "ヒキギワ×ノ×ヒキガネ"
+          },
+          {
+            episode: 59,
+            title: "セリ×ト×アセリ"
+          },
+          {
+            episode: 60,
+            title: "キマリ×ト×ハジマリ"
+          },
+          {
+            episode: 61,
+            title: "カンユウ×ト×シンユウ"
+          },
+          {
+            episode: 62,
+            title: "ゲンジツ？×ト×ゲンセキ"
           }
         ]
       },
@@ -22012,463 +22156,304 @@ window._ANIME_DATA = [
         episodes: [
           {
             episode: 1,
-            title: "トウギジョウ×ニ×トウジョウ"
-          },
-          {
-            episode: 2,
-            title: "ネン×ト×ネン"
-          },
-          {
-            episode: 3,
-            title: "カクセイ×ト×カノウセイ"
-          },
-          {
-            episode: 4,
-            title: "ゲキトウ×ト×カットウ"
-          },
-          {
-            episode: 5,
-            title: "インネン×ト×シュウネン"
-          },
-          {
-            episode: 6,
-            title: "ドッキリ×ナ×ショウリ"
-          },
-          {
-            episode: 7,
-            title: "ケイハク×ナ×キョウハク"
-          },
-          {
-            episode: 8,
-            title: "ジツリョク×デ×セツジョク"
-          },
-          {
-            episode: 9,
-            title: "セイカク×ナ×ゴウカク"
-          },
-          {
-            episode: 10,
-            title: "オオキナカリ×ト×チイサナケリ"
-          },
-          {
-            episode: 11,
-            title: "ジン×ト×ゴン"
-          },
-          {
-            episode: 12,
-            title: "オヤジ×ノ×ヘンジ"
-          }
-        ]
-      },
-      {
-        season: 3,
-        episodes: [
-          {
-            episode: 1,
-            title: "ネガイ×ト×チカイ"
-          },
-          {
-            episode: 2,
-            title: "ノウリョクシャ×ハ×キョウリョクシャ？"
-          },
-          {
-            episode: 3,
-            title: "ゴウケツ×ノ×シュウケツ"
-          },
-          {
-            episode: 4,
-            title: "マモル×ト×セメル"
-          },
-          {
-            episode: 5,
-            title: "ショウゲキ×ノ×サンゲキ"
-          },
-          {
-            episode: 6,
-            title: "ゲキセン×ノ×フクセン"
-          },
-          {
-            episode: 7,
-            title: "コウソク×ト×ヤクソク"
-          },
-          {
-            episode: 8,
-            title: "オウモノ×ト×マツモノ"
-          },
-          {
-            episode: 9,
-            title: "セイヤク×ト×セイヤク"
-          },
-          {
-            episode: 10,
-            title: "メキキ×ノ×キキメ"
-          },
-          {
-            episode: 11,
-            title: "ツイセキ×デ×ブンセキ"
-          },
-          {
-            episode: 12,
-            title: "ナカマ×ト×カタナ"
-          },
-          {
-            episode: 13,
-            title: "ヒジョウ×ノ×センジョウ"
-          },
-          {
-            episode: 14,
-            title: "シュウゲキ×ト×ショウゲキ"
-          },
-          {
-            episode: 15,
-            title: "フェイク×デ×サイク"
-          },
-          {
-            episode: 16,
-            title: "ウラナイ×ガ×アタラナイ？"
-          },
-          {
-            episode: 17,
-            title: "ナカマ×ト×イカサマ"
-          },
-          {
-            episode: 18,
-            title: "サイアイ×ト×サイアク"
-          },
-          {
-            episode: 19,
-            title: "センテ×ト×オキテ"
-          },
-          {
-            episode: 20,
-            title: "ヒキギワ×ノ×ヒキガネ"
-          }
-        ]
-      },
-      {
-        season: 4,
-        episodes: [
-          {
-            episode: 1,
-            title: "セリ×ト×アセリ"
-          },
-          {
-            episode: 2,
-            title: "キマリ×ト×ハジマリ"
-          },
-          {
-            episode: 3,
-            title: "カンユウ×ト×シンユウ"
-          },
-          {
-            episode: 4,
-            title: "ゲンジツ？×ト×ゲンセキ"
-          },
-          {
-            episode: 5,
             title: "シショウ×ハ×ヒジョウ？"
           },
           {
-            episode: 6,
+            episode: 2,
             title: "キョウカ×ト×キョウカツ"
           },
           {
-            episode: 7,
+            episode: 3,
             title: "ジャケン×ト×ジャンケン"
           },
           {
-            episode: 8,
+            episode: 4,
             title: "コウリャク×ト×サクリャク"
           },
           {
-            episode: 9,
+            episode: 5,
             title: "15×ト×15"
           },
           {
-            episode: 10,
+            episode: 6,
             title: "カイゾク×ト×スイソク"
           },
           {
-            episode: 11,
+            episode: 7,
             title: "タイケツ×デ×ネッケツ"
           },
           {
-            episode: 12,
+            episode: 8,
             title: "コンジョウ×ト×ユウジョウ"
           },
           {
-            episode: 13,
+            episode: 9,
             title: "カケヒキ×ト×トリヒキ"
           },
           {
-            episode: 14,
+            episode: 10,
             title: "チェイス×デ×チャンス"
           },
           {
-            episode: 15,
+            episode: 11,
             title: "キョウキ×ト×ショウキ"
           },
           {
-            episode: 16,
+            episode: 12,
             title: "ショウシャ×ト×ハイシャ"
           },
           {
-            episode: 17,
-            title: "ジンノトモ×ト×シンノトモ"
-          }
-        ]
-      },
-      {
-        season: 5,
-        episodes: [
-          {
-            episode: 1,
-            title: "サイカイ×ト×リカイ"
-          },
-          {
-            episode: 2,
-            title: "フアン×ト×シュツゲン"
-          },
-          {
-            episode: 3,
-            title: "キュウソク×ナ×ゾウショク"
-          },
-          {
-            episode: 4,
-            title: "NG×ナ×NGL"
-          },
-          {
-            episode: 5,
-            title: "ゴクアク×ト×サイアク"
-          },
-          {
-            episode: 6,
-            title: "タタカイ×ノ×カイシ"
-          },
-          {
-            episode: 7,
-            title: "カイト×ノ×スロット"
-          },
-          {
-            episode: 8,
-            title: "カンカ×シテ×シンカ"
-          },
-          {
-            episode: 9,
-            title: "サダメ×ノ×メザメ"
-          },
-          {
-            episode: 10,
-            title: "ヒカリ×ト×カゲ"
-          },
-          {
-            episode: 11,
-            title: "チカイ×ト×サイカイ"
-          },
-          {
-            episode: 12,
-            title: "ケットウ×シテ×トウソウ"
-          },
-          {
             episode: 13,
-            title: "ジャンケン×ト×ジャクテン"
+            title: "ジンノトモ×ト×シンノトモ"
           },
           {
             episode: 14,
-            title: "ヤサシサ×ト×ツヨサ"
+            title: "サイカイ×ト×リカイ"
           },
           {
             episode: 15,
-            title: "リソク×ト×ジュバク"
+            title: "フアン×ト×シュツゲン"
           },
           {
             episode: 16,
-            title: "キョウシャ×ト×ジャクシャ"
+            title: "キュウソク×ナ×ゾウショク"
           },
           {
             episode: 17,
-            title: "ヒトツノネガイ×ト×フタツノチカイ"
+            title: "NG×ナ×NGL"
           },
           {
             episode: 18,
-            title: "パーム×ト×デート"
+            title: "ゴクアク×ト×サイアク"
           },
           {
             episode: 19,
-            title: "トモダチ×ト×タビダチ"
+            title: "タタカイ×ノ×カイシ"
           },
           {
             episode: 20,
-            title: "ウラミ×ト×スゴミ"
+            title: "カイト×ノ×スロット"
           },
           {
             episode: 21,
-            title: "ムホウ×ナ×ホーム"
+            title: "カンカ×シテ×シンカ"
           },
           {
             episode: 22,
-            title: "ゲキトウ×デ×ゲキメツ"
+            title: "サダメ×ノ×メザメ"
           },
           {
             episode: 23,
-            title: "センニュウ×ト×センベツ"
+            title: "ヒカリ×ト×カゲ"
           },
           {
             episode: 24,
-            title: "コンビネーション×ト×エボリューション"
+            title: "チカイ×ト×サイカイ"
           },
           {
             episode: 25,
-            title: "ツイセキ×ニハ×ツイゲキ"
+            title: "ケットウ×シテ×トウソウ"
           },
           {
             episode: 26,
-            title: "イカルゴ×ト×イカズチ"
+            title: "ジャンケン×ト×ジャクテン"
           },
           {
             episode: 27,
-            title: "ノウリョク×ト×タイキョク"
+            title: "ヤサシサ×ト×ツヨサ"
           },
           {
             episode: 28,
-            title: "ツミ×ト×ヨミ"
+            title: "リソク×ト×ジュバク"
           },
           {
             episode: 29,
-            title: "マヨイ×ト×トマドイ"
+            title: "キョウシャ×ト×ジャクシャ"
           },
           {
             episode: 30,
-            title: "カクゴ×ト×カクセイ"
+            title: "ヒトツノネガイ×ト×フタツノチカイ"
           },
           {
             episode: 31,
-            title: "ノヴ×ト×モラウ"
+            title: "パーム×ト×デート"
           },
           {
             episode: 32,
-            title: "リターン×ト×リタイア"
+            title: "トモダチ×ト×タビダチ"
           },
           {
             episode: 33,
-            title: "コムギ×ノ×グンギ"
+            title: "ウラミ×ト×スゴミ"
           },
           {
             episode: 34,
-            title: "コウシンカイシ×デ×コウドウカイシ"
+            title: "ムホウ×ナ×ホーム"
           },
           {
             episode: 35,
-            title: "コンワク×ト×オモワク"
+            title: "ゲキトウ×デ×ゲキメツ"
           },
           {
             episode: 36,
-            title: "トツニュウ×シテ×シンニュウ"
+            title: "センニュウ×ト×センベツ"
           },
           {
             episode: 37,
-            title: "カイブツ×ト×カイブツ"
+            title: "コンビネーション×ト×エボリューション"
           },
           {
             episode: 38,
-            title: "ムシ×ダケド×カシ"
+            title: "ツイセキ×ニハ×ツイゲキ"
           },
           {
             episode: 39,
-            title: "ブンダン×ト×ゴサン"
+            title: "イカルゴ×ト×イカズチ"
           },
           {
             episode: 40,
-            title: "ギム×ト×ギモン"
+            title: "ノウリョク×ト×タイキョク"
           },
           {
             episode: 41,
-            title: "フクシュウ×ト×シュウフク"
+            title: "ツミ×ト×ヨミ"
           },
           {
             episode: 42,
-            title: "ブジョク×ニハ×セツジョク"
+            title: "マヨイ×ト×トマドイ"
           },
           {
             episode: 43,
-            title: "イツワリ×ノ×イカリ"
+            title: "カクゴ×ト×カクセイ"
           },
           {
             episode: 44,
-            title: "ツヨ×イカ×ヨワ×イカ"
+            title: "ノヴ×ト×モラウ"
           },
           {
             episode: 45,
-            title: "ニセモノ×ト×ホンモノ"
+            title: "リターン×ト×リタイア"
           },
           {
             episode: 46,
-            title: "ハイボク×ト×メンボク"
+            title: "コムギ×ノ×グンギ"
           },
           {
             episode: 47,
-            title: "タテマエ×ト×ナマエ"
+            title: "コウシンカイシ×デ×コウドウカイシ"
           },
           {
             episode: 48,
-            title: "ムカデ×ト×オモイデ"
+            title: "コンワク×ト×オモワク"
           },
           {
             episode: 49,
-            title: "ケッカイ×ト×カクセイ"
+            title: "トツニュウ×シテ×シンニュウ"
           },
           {
             episode: 50,
-            title: "ブノツヨミ×ト×ブノキワミ"
+            title: "カイブツ×ト×カイブツ"
           },
           {
             episode: 51,
-            title: "ゼロ×ト×ローズ"
+            title: "ムシ×ダケド×カシ"
           },
           {
             episode: 52,
-            title: "テキイ×ト×ケツイ"
+            title: "ブンダン×ト×ゴサン"
           },
           {
             episode: 53,
-            title: "ムジョウノヨロコビ×ト×ムショウノアイ"
+            title: "ギム×ト×ギモン"
           },
           {
             episode: 54,
-            title: "ヒョウテキ×ト×モクテキ"
+            title: "フクシュウ×ト×シュウフク"
           },
           {
             episode: 55,
-            title: "マホウ×デ×ゼツボウ"
+            title: "ブジョク×ニハ×セツジョク"
           },
           {
             episode: 56,
-            title: "イカリ×ト×ヒカリ"
+            title: "イツワリ×ノ×イカリ"
           },
           {
             episode: 57,
-            title: "センコウ×ト×ハツドウ"
+            title: "ツヨ×イカ×ヨワ×イカ"
           },
           {
             episode: 58,
-            title: "セイゾン×ノ×キゲン"
+            title: "ニセモノ×ト×ホンモノ"
           },
           {
             episode: 59,
-            title: "ヒトコト×ハ×ソノヒト"
+            title: "ハイボク×ト×メンボク"
           },
           {
             episode: 60,
-            title: "コノヒ×ト×コノシュンカン"
+            title: "タテマエ×ト×ナマエ"
           },
           {
             episode: 61,
+            title: "ムカデ×ト×オモイデ"
+          },
+          {
+            episode: 62,
+            title: "ケッカイ×ト×カクセイ"
+          },
+          {
+            episode: 63,
+            title: "ブノツヨミ×ト×ブノキワミ"
+          },
+          {
+            episode: 64,
+            title: "ゼロ×ト×ローズ"
+          },
+          {
+            episode: 65,
+            title: "テキイ×ト×ケツイ"
+          },
+          {
+            episode: 66,
+            title: "ムジョウノヨロコビ×ト×ムショウノアイ"
+          },
+          {
+            episode: 67,
+            title: "ヒョウテキ×ト×モクテキ"
+          },
+          {
+            episode: 68,
+            title: "マホウ×デ×ゼツボウ"
+          },
+          {
+            episode: 69,
+            title: "イカリ×ト×ヒカリ"
+          },
+          {
+            episode: 70,
+            title: "センコウ×ト×ハツドウ"
+          },
+          {
+            episode: 71,
+            title: "セイゾン×ノ×キゲン"
+          },
+          {
+            episode: 72,
+            title: "ヒトコト×ハ×ソノヒト"
+          },
+          {
+            episode: 73,
+            title: "コノヒ×ト×コノシュンカン"
+          },
+          {
+            episode: 74,
             title: "キキョウ×ト×ホンミョウ"
           }
         ]
       },
       {
-        season: 6,
+        season: 3,
         episodes: [
           {
             episode: 1,
