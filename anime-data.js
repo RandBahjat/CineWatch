@@ -22499,4 +22499,4 @@ window._ANIME_DATA =
   },
 
 
-]
+];
