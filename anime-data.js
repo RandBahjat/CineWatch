@@ -15,7 +15,7 @@ window._ANIME_DATA = [
       "Fantasy"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/tMefBSflR6PGQLvLuwzC4ih33w9.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/myryZe4g6PrzGIfOSn9IYmvQ88H.jpg",
     videoUrl: "1429",
     anilistId: 16498,
     animeSlug: "attack-on-titan",
