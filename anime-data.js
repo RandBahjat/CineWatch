@@ -15,7 +15,7 @@ window._ANIME_DATA = [
       "Sports"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fcKH1NQzoTXiYO1OrhaFFwTKhBp.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/t6LctQfWf6X16GzKq771V333p98.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/seMRyWVwIVBWbC9xaMzDMZJ8fUH.jpg",
     videoUrl: "131041",
     anilistId: 137822,
     animeSlug: "blue-lock",
