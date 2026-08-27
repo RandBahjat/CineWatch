@@ -237,7 +237,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Master of the Universe",
+    title: "The Last Sunrise",
     type: "Movie",
     year: 2026,
     rating: 6.9,
