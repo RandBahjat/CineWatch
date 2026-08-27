@@ -16,7 +16,7 @@ window._ANIME_DATA = [
       "History"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vUHlpA5c1NXkds59reY3HMb4Abs.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/b3z6q80mGq85XbE0qEa7Q5w1D7.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/rL3gpiDrdClh3PYqWhozu7WovPg.jpg",
     videoUrl: "88803",
     anilistId: 101348,
     animeSlug: "vinland-saga",
