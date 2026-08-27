@@ -22145,7 +22145,7 @@ window._ANIME_DATA = [
         ]
       }
     ]
-  }
+  },
 {
     title: "Vinland Saga",
     type: "TV Show",
