@@ -20,7 +20,7 @@ window._ANIME_DATA = [
     anilistId: 151807,
     animeSlug: "solo-leveling",
     overview: "Sung Jin-Woo, weakest hunter alive, barely survive deadly dungeon raid, wake up with mysterious system only he can see. Power grow limitless, level up beyond anyone before him, uncover dark secret behind dungeon, hunter world itself.",
-    director: "Shunsuke Nakashige",
+    director: "Chugong",
     cast: [
       "Taito Ban",
       "Genta Nakamura",
