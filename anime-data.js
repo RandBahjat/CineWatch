@@ -19,7 +19,7 @@ window._ANIME_DATA = [
     videoUrl: "85937",
     anilistId: 101922,
     animeSlug: "demon-slayer",
-    overview: "It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has been transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his family.",
+    overview: "Tanjiro Kamado, kind-heart boy, come home find family slaughter by demon, only sister Nezuko survive, now turn demon herself. Join secret Demon Slayer Corps, train hard, hunt demon, seek cure bring sister back human.",
     director: "Haruo Sotozaki",
     cast: [
       "Natsuki Hanae",
