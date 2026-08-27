@@ -8765,7 +8765,7 @@ window._ANIME_DATA = [
       "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ojsPI8fNwcecKLhVC4rB4ZZhFMc.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/vI3n2tM32JEqB3kR58sN7m7aZkF.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/abfE867mF3TJrCuI3KFyMj465DN.jpg",
     videoUrl: "61709",
     anilistId: 6033,
     animeSlug: "dragon-ball-z-kai",
