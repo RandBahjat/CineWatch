@@ -8755,31 +8755,29 @@ window._ANIME_DATA = [
     type: "TV Show",
     isAnime: true,
     year: 2009,
-    rating: 8.5,
+    rating: 8.3,
     age: "TV-14",
-    duration: "25m",
+    duration: "24m",
     genres: [
       "Animation",
       "Action",
       "Adventure",
-      "Comedy",
-      "Sci-Fi & Fantasy"
+      "Sci-Fi"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ojsPI8fNwcecKLhVC4rB4ZZhFMc.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/abfE867mF3TJrCuI3KFyMj465DN.jpg",
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/dkuJWQWbJ3W753X7F81k2MtdrXq.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/vI3n2tM32JEqB3kR58sN7m7aZkF.jpg",
     videoUrl: "61709",
     anilistId: 6033,
     animeSlug: "dragon-ball-z-kai",
-    overview: "Rejoin Goku and his friends in a series of cosmic battles! Toei has redubbed, recut, and cleaned up the animation of the original 1989 animated series. The show's story arc has been refined to better follow the comic book series on which it is based. The show also features a new opening and ending. In the series, martial artist Goku, and his various friends, battle increasingly powerful enemies to defend the world against evil. Can Earth's defender defeat demons, aliens, and other villains?",
-    director: "Akira Toriyama",
+    overview: "Revisiting the acclaimed Dragon Ball Z series, this remastered and condensed version removes original filler episodes to more closely follow Akira Toriyama's manga, delivering faster-paced action, updated animation sequences, and a re-recorded voice track as Goku and his friends defend Earth from increasingly powerful cosmic threats.",
+    director: "Yasuhiro Nowatari",
     cast: [
       "Masako Nozawa",
       "Ryo Horikawa",
       "Toshio Furukawa",
-      "Mayumi Tanaka",
-      "Ryusei Nakao"
+      "Mayumi Tanaka"
     ],
-    trending: false,
+    trending: true,
     featured: false,
     is4k: false,
     seasons: [
@@ -8788,591 +8786,107 @@ window._ANIME_DATA = [
         episodes: [
           {
             episode: 1,
-            title: "Prologue to Battle! The Return of Son Goku",
-            duration: "25m",
-            absoluteEpisode: 1
+            title: "Episode 1"
           },
           {
             episode: 2,
-            title: "The Enemy is Goku's Brother?! The Secret of the Mighty Saiyan Warriors",
-            duration: "25m",
-            absoluteEpisode: 2
+            title: "Episode 2"
           },
           {
             episode: 3,
-            title: "A Life-or-Death Battle! Goku and Piccolo's Ferocious Suicide Attack",
-            duration: "25m",
-            absoluteEpisode: 3
+            title: "Episode 3"
           },
           {
             episode: 4,
-            title: "Run in the Afterlife, Son Goku! The One Million Snake Way!",
-            duration: "25m",
-            absoluteEpisode: 4
+            title: "Episode 4"
           },
           {
             episode: 5,
-            title: "Wilderness Survival! A Moonlit Night Awakens Gohan",
-            duration: "25m",
-            absoluteEpisode: 5
+            title: "Episode 5"
           },
           {
             episode: 6,
-            title: "The End of the Line is Reached! Playful Trials of Kaiosama",
-            duration: "25m",
-            absoluteEpisode: 6
+            title: "Episode 6"
           },
           {
             episode: 7,
-            title: "The Battle With 10-Times Gravity! Goku, Your Training is a Race",
-            duration: "25m",
-            absoluteEpisode: 7
+            title: "Episode 7"
           },
           {
             episode: 8,
-            title: "Come Forth, Shenlong! The Saiyans Finally Arrive on Earth",
-            duration: "25m",
-            absoluteEpisode: 8
+            title: "Episode 8"
           },
           {
             episode: 9,
-            title: "Yamucha's Struggle! The Terrible Saibaimen",
-            duration: "25m",
-            absoluteEpisode: 9
+            title: "Episode 9"
           },
           {
             episode: 10,
-            title: "Sit Tight, Chaozu! The Screaming Kikoho of Tenshinhan",
-            duration: "25m",
-            absoluteEpisode: 10
+            title: "Episode 10"
           },
           {
             episode: 11,
-            title: "Will Son Goku Be in Time?! 3 Hours Until the Battle Resumes",
-            duration: "25m",
-            absoluteEpisode: 11
+            title: "Episode 11"
           },
           {
             episode: 12,
-            title: "Tears Shed by Piccolo... Son Goku's Furious Counterattack!",
-            duration: "25m",
-            absoluteEpisode: 12
+            title: "Episode 12"
           },
           {
             episode: 13,
-            title: "This is the Kaioken! The Critical Battle of Goku vs. Vegeta",
-            duration: "25m",
-            absoluteEpisode: 13
+            title: "Episode 13"
           },
           {
             episode: 14,
-            title: "The Impact of the Kamehameha! Vegeta's Tenacious Transformation",
-            duration: "25m",
-            absoluteEpisode: 14
+            title: "Episode 14"
           },
           {
             episode: 15,
-            title: "Goku in Absolute Peril! Entrust Your Wishes to the Genki Dama",
-            duration: "25m",
-            absoluteEpisode: 15
+            title: "Episode 15"
           },
           {
             episode: 16,
-            title: "The Invincible Vegeta Defeated! Son Gohan Summons a Miracle",
-            duration: "25m",
-            absoluteEpisode: 16
+            title: "Episode 16"
           },
           {
             episode: 17,
-            title: "Dawn of the Fierce Battle... The Star of Hope Is Piccolo's Homeland",
-            duration: "25m",
-            absoluteEpisode: 17
+            title: "Episode 17"
           },
           {
             episode: 18,
-            title: "The Spaceship that Sleeps in Yunzabit! Blast Off for Planet Namek",
-            duration: "25m",
-            absoluteEpisode: 18
+            title: "Episode 18"
           },
           {
             episode: 19,
-            title: "A Formidable New Enemy! Emperor of the Universe, Freeza",
-            duration: "25m",
-            absoluteEpisode: 19
+            title: "Episode 19"
           },
           {
             episode: 20,
-            title: "Rebellion Against Freeza! Vegeta, Burning with Ambition",
-            duration: "25m",
-            absoluteEpisode: 20
+            title: "Episode 20"
           },
           {
             episode: 21,
-            title: "Protect the Dragon Balls! The Namekian Offensive",
-            duration: "25m",
-            absoluteEpisode: 21
+            title: "Episode 21"
           },
           {
             episode: 22,
-            title: "Dodoria in Terrifying Hot Pursuit! Vegeta Learns the Truth",
-            duration: "25m",
-            absoluteEpisode: 22
+            title: "Episode 22"
           },
           {
             episode: 23,
-            title: "Vegeta's Secret Plan! Tragic Attack Upon the Namekians",
-            duration: "25m",
-            absoluteEpisode: 23
+            title: "Episode 23"
           },
           {
             episode: 24,
-            title: "Resurrected Companions! The Beauty Soldier Zarbon's Demon Transformation",
-            duration: "25m",
-            absoluteEpisode: 24
+            title: "Episode 24"
           },
           {
             episode: 25,
-            title: "Kuririn's Power-Up! The Foreboding Squirming of Freeza",
-            duration: "25m",
-            absoluteEpisode: 25
+            title: "Episode 25"
           },
           {
             episode: 26,
-            title: "The Conspiracy Completely Shatters! Vegeta's Counterattack vs. Zarbon",
-            duration: "25m",
-            absoluteEpisode: 26
-          },
-          {
-            episode: 27,
-            title: "A Hair-Trigger Pinch! Gohan, Protect the Four Star Ball",
-            duration: "25m",
-            absoluteEpisode: 27
-          },
-          {
-            episode: 28,
-            title: "The Super Decisive Battle Draws Near! The Ginyu Special Force Has Arrived!",
-            duration: "25m",
-            absoluteEpisode: 28
-          },
-          {
-            episode: 29,
-            title: "The Special-Squad's Frontline Man! Break Gurudo's Spell",
-            duration: "25m",
-            absoluteEpisode: 29
-          },
-          {
-            episode: 30,
-            title: "The Hellish Recoome! Keep Me Entertained, Vegeta-chan",
-            duration: "25m",
-            absoluteEpisode: 30
-          },
-          {
-            episode: 31,
-            title: "Son Goku Finally Arrives! Knock the Ginyu Special-Squad Around",
-            duration: "25m",
-            absoluteEpisode: 31
-          },
-          {
-            episode: 32,
-            title: "Star Performer's Entry!? Captain Ginyu vs. Son Goku",
-            duration: "25m",
-            absoluteEpisode: 32
-          },
-          {
-            episode: 33,
-            title: "Son Goku at Full Power! Ginyu's Secret Trick Trembles!?",
-            duration: "25m",
-            absoluteEpisode: 33
-          },
-          {
-            episode: 34,
-            title: "Surprise! Son Goku is Ginyu and Ginyu is Son Goku!?",
-            duration: "25m",
-            absoluteEpisode: 34
-          },
-          {
-            episode: 35,
-            title: "A Great Turnabout For Goku?! Super Shenron, Come Out Right Now!",
-            duration: "25m",
-            absoluteEpisode: 35
-          },
-          {
-            episode: 36,
-            title: "An Excited Freeza Approaches! Porunga... Before Granting the Wish!",
-            duration: "25m",
-            absoluteEpisode: 36
-          },
-          {
-            episode: 37,
-            title: "A Tormenting Super Transformation! Freeza's One Million Fighting Power",
-            duration: "25m",
-            absoluteEpisode: 37
-          },
-          {
-            episode: 38,
-            title: "Freeza Bares His Fangs! Gohan's Transcendent Power Attacks",
-            duration: "25m",
-            absoluteEpisode: 38
-          },
-          {
-            episode: 39,
-            title: "The Reborn Piccolo Shows Himself! An Enraged Freeza's Second Transformation",
-            duration: "25m",
-            absoluteEpisode: 39
-          },
-          {
-            episode: 40,
-            title: "Final Super Transformation of Freeza! The Terror Greater than Hell Starts Now",
-            duration: "25m",
-            absoluteEpisode: 40
-          },
-          {
-            episode: 41,
-            title: "The Moment We've Waited For! Son Goku is Revived",
-            duration: "25m",
-            absoluteEpisode: 41
-          },
-          {
-            episode: 42,
-            title: "Defeat Freeza, Son Goku! The Proud Vegeta's Tears",
-            duration: "25m",
-            absoluteEpisode: 42
-          },
-          {
-            episode: 43,
-            title: "Son Goku vs. Freeza! The Curtain Opens on the Super Decisive Battle!",
-            duration: "25m",
-            absoluteEpisode: 43
-          },
-          {
-            episode: 44,
-            title: "A Physical War That Exceeds All Limits! Goku and Freeza and Ginyu, Again?!",
-            duration: "25m",
-            absoluteEpisode: 44
-          },
-          {
-            episode: 45,
-            title: "It's a 20-Fold Kaioken! A Kamehameha With Everything on the Line",
-            duration: "25m",
-            absoluteEpisode: 45
-          },
-          {
-            episode: 46,
-            title: "This is the Last Trump Card! Goku's Extra-Large Genki-dama",
-            duration: "25m",
-            absoluteEpisode: 46
-          },
-          {
-            episode: 47,
-            title: "Awaken, Legendary Warrior... Son Goku, the Super Saiyan!",
-            duration: "25m",
-            absoluteEpisode: 47
-          },
-          {
-            episode: 48,
-            title: "The Angry Super Saiyan! Throw Your Hat in the Ring Goku Son!",
-            duration: "25m",
-            absoluteEpisode: 48
-          },
-          {
-            episode: 49,
-            title: "Exact Vengeance Son Goku! The Countdown to the Planet's Collapse",
-            duration: "25m",
-            absoluteEpisode: 49
-          },
-          {
-            episode: 50,
-            title: "Do-or-Die Full Power of Freeza! Shenlong Heed this Wish",
-            duration: "25m",
-            absoluteEpisode: 50
-          },
-          {
-            episode: 51,
-            title: "Furious Battle Cry of Goku! Make it in Time... The Resurrection Wish!",
-            duration: "25m",
-            absoluteEpisode: 51
-          },
-          {
-            episode: 52,
-            title: "Two Remain on a Vanishing Planet! This is the Final Showdown",
-            duration: "25m",
-            absoluteEpisode: 52
-          },
-          {
-            episode: 53,
-            title: "The Final Blow, Son Goku... Planet Namek Scatters Throughout Space",
-            duration: "25m",
-            absoluteEpisode: 53
-          },
-          {
-            episode: 54,
-            title: "Goku Vanishes in Space... Return to Life! Super Warriors",
-            duration: "25m",
-            absoluteEpisode: 54
-          },
-          {
-            episode: 55,
-            title: "That's Earth Papa� The Counterattack of Freeza Father and Son",
-            duration: "25m",
-            absoluteEpisode: 55
-          },
-          {
-            episode: 56,
-            title: "I'll Defeat Freeza! Another Super Saiyan",
-            duration: "25m",
-            absoluteEpisode: 56
-          },
-          {
-            episode: 57,
-            title: "Welcome Back Son Goku! The Confession of the Mysterious Young Boy Trunks",
-            duration: "25m",
-            absoluteEpisode: 57
-          },
-          {
-            episode: 58,
-            title: "Goku's New Technique, Instant Movement! Special Training Staked on 3 Years From Now",
-            duration: "25m",
-            absoluteEpisode: 58
-          },
-          {
-            episode: 59,
-            title: "The Pair Who Don't Leave a Trace! The Artificial Humans Appear",
-            duration: "25m",
-            absoluteEpisode: 59
-          },
-          {
-            episode: 60,
-            title: "Attacked on Both Sides by an Internal Enemy?! Son Goku vs Artificial Human #19",
-            duration: "25m",
-            absoluteEpisode: 60
-          },
-          {
-            episode: 61,
-            title: "No Chance of Victory Against #19! Super Vegeta Arrives Late",
-            duration: "25m",
-            absoluteEpisode: 61
-          },
-          {
-            episode: 62,
-            title: "Piccolo's Assault! The Missing #20 and the Future Gone Eschew",
-            duration: "25m",
-            absoluteEpisode: 62
-          },
-          {
-            episode: 63,
-            title: "Pursue! Doctor Gero... The Search for the Mysterious Laboratory!",
-            duration: "25m",
-            absoluteEpisode: 63
-          },
-          {
-            episode: 64,
-            title: "#17 and #18, and...! The Artificial Humans Awaken",
-            duration: "25m",
-            absoluteEpisode: 64
-          },
-          {
-            episode: 65,
-            title: "A Cute Face and Super Power?! #18 vs Vegeta",
-            duration: "25m",
-            absoluteEpisode: 65
-          },
-          {
-            episode: 66,
-            title: "The Time has Come to Become One Again� Piccolo's Decision for Ultimate Power!",
-            duration: "25m",
-            absoluteEpisode: 66
-          },
-          {
-            episode: 67,
-            title: "One More Time Machine?! Bulma Unveils a Mystery",
-            duration: "25m",
-            absoluteEpisode: 67
-          },
-          {
-            episode: 68,
-            title: "And So the Monster Makes its Move... Take Off! It's the Super Namekian!",
-            duration: "25m",
-            absoluteEpisode: 68
-          },
-          {
-            episode: 69,
-            title: "I am Your Sibling! The Monster with the Aura of Goku",
-            duration: "25m",
-            absoluteEpisode: 69
-          },
-          {
-            episode: 70,
-            title: "Escape tactic,Taiyoken! The Android Cell attacks",
-            duration: "25m",
-            absoluteEpisode: 70
-          },
-          {
-            episode: 71,
-            title: "Attack the Elusive Cell! Son Goku, Finally Revived!",
-            duration: "25m",
-            absoluteEpisode: 71
-          },
-          {
-            episode: 72,
-            title: "Surpass Super Saiyan! Now, Into the Room of Spirit and Time",
-            duration: "25m",
-            absoluteEpisode: 72
-          },
-          {
-            episode: 73,
-            title: "This is the Power of a Super-Namekian! No. 17 vs. Piccolo!",
-            duration: "25m",
-            absoluteEpisode: 73
-          },
-          {
-            episode: 74,
-            title: "Run #17! The Suicidal Resistance, Piccolo",
-            duration: "25m",
-            absoluteEpisode: 74
-          },
-          {
-            episode: 75,
-            title: "Unmeasured Power! The Silent Warrior #16, Makes his Move",
-            duration: "25m",
-            absoluteEpisode: 75
-          },
-          {
-            episode: 76,
-            title: "Tenshinhan's Do-or-Die Shin Kikoho! Save Your Brother-in-Arms, Son Goku",
-            duration: "25m",
-            absoluteEpisode: 76
-          },
-          {
-            episode: 77,
-            title: "Super Saiyan Surpassed! The Daring Vegeta Strikes Cell",
-            duration: "25m",
-            absoluteEpisode: 77
-          },
-          {
-            episode: 78,
-            title: "The Surging Resentment of Cell! Krillin, Destroy #18",
-            duration: "25m",
-            absoluteEpisode: 78
-          },
-          {
-            episode: 79,
-            title: "And So the Situation Takes a Turn for the Worst... Cell Attacks #18!",
-            duration: "25m",
-            absoluteEpisode: 79
-          },
-          {
-            episode: 80,
-            title: "The Tables Have Turned! Perfect Form Cell, Finally Goes into Action",
-            duration: "25m",
-            absoluteEpisode: 80
-          },
-          {
-            episode: 81,
-            title: "Full-Power Strike of Vegeta! But the Terror of Cell Grows and Grows",
-            duration: "25m",
-            absoluteEpisode: 81
-          },
-          {
-            episode: 82,
-            title: "Super Power Awakening! Trunks Surpasses his Father",
-            duration: "25m",
-            absoluteEpisode: 82
-          },
-          {
-            episode: 83,
-            title: "The Televi Has Been Hijacked! A Live Broadcast of the Cell Games Press Conference",
-            duration: "25m",
-            absoluteEpisode: 83
-          },
-          {
-            episode: 84,
-            title: "Training Completed! Does Goku, have the Composure to Defeat Cell?!",
-            duration: "25m",
-            absoluteEpisode: 84
-          },
-          {
-            episode: 85,
-            title: "An Interrupted Rest! The Self-Defense Army, Launches a General Offensive Against Cell",
-            duration: "25m",
-            absoluteEpisode: 85
-          },
-          {
-            episode: 86,
-            title: "A New God! The Dragon Balls are Finally Revived",
-            duration: "25m",
-            absoluteEpisode: 86
-          },
-          {
-            episode: 87,
-            title: "Satan's Legion Runs Wild! The Curtain Rises on the Cell Games",
-            duration: "25m",
-            absoluteEpisode: 87
-          },
-          {
-            episode: 88,
-            title: "Decisive Battle! Cell vs Son Goku",
-            duration: "25m",
-            absoluteEpisode: 88
-          },
-          {
-            episode: 89,
-            title: "A Battle of the Highest Level! Defeat Cell, Son Goku",
-            duration: "25m",
-            absoluteEpisode: 89
-          },
-          {
-            episode: 90,
-            title: "Conclusion to the Death Match! Time for Goku's Decision",
-            duration: "25m",
-            absoluteEpisode: 90
-          },
-          {
-            episode: 91,
-            title: "Get Angry Gohan! Release Your Dormant Power",
-            duration: "25m",
-            absoluteEpisode: 91
-          },
-          {
-            episode: 92,
-            title: "The Tears that Disappeared into the Sky! The Angry Super Awakening of Gohan",
-            duration: "25m",
-            absoluteEpisode: 92
-          },
-          {
-            episode: 93,
-            title: "Fighting Spirit Free from Hesitation! Gohan, Pulverizes the Cell Juniors",
-            duration: "25m",
-            absoluteEpisode: 93
-          },
-          {
-            episode: 94,
-            title: "The Perfect Form Breaks Down! Explosion, the Super Iron Fist of Rage",
-            duration: "25m",
-            absoluteEpisode: 94
-          },
-          {
-            episode: 95,
-            title: "Bye-Bye Everyone! This is the Only Way to Save the Earth",
-            duration: "25m",
-            absoluteEpisode: 95
-          },
-          {
-            episode: 96,
-            title: "Combine Our Power! The Mightiest Final Kamehameha",
-            duration: "25m",
-            absoluteEpisode: 96
-          },
-          {
-            episode: 97,
-            title: "Farewell with a Smile! Heading for New Days...",
-            duration: "25m",
-            absoluteEpisode: 97
-          },
-          {
-            episode: 98,
-            title: "Bring Peace to the Future! Goku's Spirit is Eternal",
-            duration: "25m",
-            absoluteEpisode: 98
+            title: "Episode 26"
           }
         ]
       },
@@ -9381,417 +8895,551 @@ window._ANIME_DATA = [
         episodes: [
           {
             episode: 1,
-            title: "7 Years Since That Event! Starting Today, Gohan's a High Schooler",
-            duration: "25m",
-            absoluteEpisode: 99
+            title: "Episode 1"
           },
           {
             episode: 2,
-            title: "Found Out! The New Hero is Son Gohan",
-            duration: "25m",
-            absoluteEpisode: 100
+            title: "Episode 2"
           },
           {
             episode: 3,
-            title: "Gohan is the Teacher! Videl's Introduction to Flight",
-            duration: "25m",
-            absoluteEpisode: 101
+            title: "Episode 3"
           },
           {
             episode: 4,
-            title: "The Dragon Team, All Assembled! Son Goku has Returned!!",
-            duration: "25m",
-            absoluteEpisode: 102
+            title: "Episode 4"
           },
           {
             episode: 5,
-            title: "Everyone is Shocked! Goten and Trunks' Super Battle!!",
-            duration: "25m",
-            absoluteEpisode: 103
+            title: "Episode 5"
           },
           {
             episode: 6,
-            title: "A Troubling Premonition! The Appearance of a Mysterious Warrior!!",
-            duration: "25m",
-            absoluteEpisode: 104
+            title: "Episode 6"
           },
           {
             episode: 7,
-            title: "What's the Matter, Piccolo?! An Unexpected Conclusion to the First Round",
-            duration: "25m",
-            absoluteEpisode: 105
+            title: "Episode 7"
           },
           {
             episode: 8,
-            title: "Videl is Worn Ragged, Gohan's Anger at its Limits!!",
-            duration: "25m",
-            absoluteEpisode: 106
+            title: "Episode 8"
           },
           {
             episode: 9,
-            title: "A Slithering Conspiracy!! Secrets of the Terrible Majin",
-            duration: "25m",
-            absoluteEpisode: 107
+            title: "Episode 9"
           },
           {
             episode: 10,
-            title: "The Heinous Mage Babidi and King of the Underworld Dabra's Trap",
-            duration: "25m",
-            absoluteEpisode: 108
+            title: "Episode 10"
           },
           {
             episode: 11,
-            title: "Don't Underestimate a Super Saiyan! Vegeta and Goku's Full Throttle Power!",
-            duration: "25m",
-            absoluteEpisode: 109
+            title: "Episode 11"
           },
           {
             episode: 12,
-            title: "Who is the World's Greatest?! A Battle Royal Match to Decide!!",
-            duration: "25m",
-            absoluteEpisode: 110
+            title: "Episode 12"
           },
           {
             episode: 13,
-            title: "The Fearsome Children!! #18's Great Struggle",
-            duration: "25m",
-            absoluteEpisode: 111
+            title: "Episode 13"
           },
           {
             episode: 14,
-            title: "The Star Performer Takes the Stage! Take Down the Demon King!!",
-            duration: "25m",
-            absoluteEpisode: 112
+            title: "Episode 14"
           },
           {
             episode: 15,
-            title: "A Wicked Heart is Revived, Vegeta, the Prince of Destruction!",
-            duration: "25m",
-            absoluteEpisode: 113
+            title: "Episode 15"
           },
           {
             episode: 16,
-            title: "I'm the Strongest! The Clash of Goku vs Vegeta",
-            duration: "25m",
-            absoluteEpisode: 114
+            title: "Episode 16"
           },
           {
             episode: 17,
-            title: "The Countdown to Revival Crush Babidi's Ambitions!",
-            duration: "25m",
-            absoluteEpisode: 115
+            title: "Episode 17"
           },
           {
             episode: 18,
-            title: "The Seal is Broken!? Gohan's Kamehameha of Resistance",
-            duration: "25m",
-            absoluteEpisode: 116
+            title: "Episode 18"
           },
           {
             episode: 19,
-            title: "A Straight Line to Despair!? Terror of Majin Buu",
-            duration: "25m",
-            absoluteEpisode: 117
+            title: "Episode 19"
           },
           {
             episode: 20,
-            title: "Turn into Sweets! The Creepy Powers of the Hungry Majin",
-            duration: "25m",
-            absoluteEpisode: 118
+            title: "Episode 20"
           },
           {
             episode: 21,
-            title: "I'll Finish The Majin! Vegeta's Final Fight to the Death",
-            duration: "25m",
-            absoluteEpisode: 119
+            title: "Episode 21"
           },
           {
             episode: 22,
-            title: "For Those Whom He Loves... The Last Moment of the Proud Warrior",
-            duration: "25m",
-            absoluteEpisode: 120
+            title: "Episode 22"
           },
           {
             episode: 23,
-            title: "The Nightmare Returns, The Immortal Monster, Majin Buu",
-            duration: "25m",
-            absoluteEpisode: 121
+            title: "Episode 23"
           },
           {
             episode: 24,
-            title: "Secret Plan to Defeat Buu, It's Name is Fusion",
-            duration: "25m",
-            absoluteEpisode: 122
+            title: "Episode 24"
           },
           {
             episode: 25,
-            title: "A Faint Ray of Hope Has Appeared! Open Your Eyes, Warriors",
-            duration: "25m",
-            absoluteEpisode: 123
+            title: "Episode 25"
           },
           {
             episode: 26,
-            title: "Find the Nuisance, Babidi's Revenge Plan Begins",
-            duration: "25m",
-            absoluteEpisode: 124
+            title: "Episode 26"
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "Episode 1"
+          },
+          {
+            episode: 2,
+            title: "Episode 2"
+          },
+          {
+            episode: 3,
+            title: "Episode 3"
+          },
+          {
+            episode: 4,
+            title: "Episode 4"
+          },
+          {
+            episode: 5,
+            title: "Episode 5"
+          },
+          {
+            episode: 6,
+            title: "Episode 6"
+          },
+          {
+            episode: 7,
+            title: "Episode 7"
+          },
+          {
+            episode: 8,
+            title: "Episode 8"
+          },
+          {
+            episode: 9,
+            title: "Episode 9"
+          },
+          {
+            episode: 10,
+            title: "Episode 10"
+          },
+          {
+            episode: 11,
+            title: "Episode 11"
+          },
+          {
+            episode: 12,
+            title: "Episode 12"
+          },
+          {
+            episode: 13,
+            title: "Episode 13"
+          },
+          {
+            episode: 14,
+            title: "Episode 14"
+          },
+          {
+            episode: 15,
+            title: "Episode 15"
+          },
+          {
+            episode: 16,
+            title: "Episode 16"
+          },
+          {
+            episode: 17,
+            title: "Episode 17"
+          },
+          {
+            episode: 18,
+            title: "Episode 18"
+          },
+          {
+            episode: 19,
+            title: "Episode 19"
+          },
+          {
+            episode: 20,
+            title: "Episode 20"
+          },
+          {
+            episode: 21,
+            title: "Episode 21"
+          },
+          {
+            episode: 22,
+            title: "Episode 22"
+          },
+          {
+            episode: 23,
+            title: "Episode 23"
+          },
+          {
+            episode: 24,
+            title: "Episode 24"
+          },
+          {
+            episode: 25,
+            title: "Episode 25"
+          }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          {
+            episode: 1,
+            title: "Episode 1"
+          },
+          {
+            episode: 2,
+            title: "Episode 2"
+          },
+          {
+            episode: 3,
+            title: "Episode 3"
+          },
+          {
+            episode: 4,
+            title: "Episode 4"
+          },
+          {
+            episode: 5,
+            title: "Episode 5"
+          },
+          {
+            episode: 6,
+            title: "Episode 6"
+          },
+          {
+            episode: 7,
+            title: "Episode 7"
+          },
+          {
+            episode: 8,
+            title: "Episode 8"
+          },
+          {
+            episode: 9,
+            title: "Episode 9"
+          },
+          {
+            episode: 10,
+            title: "Episode 10"
+          },
+          {
+            episode: 11,
+            title: "Episode 11"
+          },
+          {
+            episode: 12,
+            title: "Episode 12"
+          },
+          {
+            episode: 13,
+            title: "Episode 13"
+          },
+          {
+            episode: 14,
+            title: "Episode 14"
+          },
+          {
+            episode: 15,
+            title: "Episode 15"
+          },
+          {
+            episode: 16,
+            title: "Episode 16"
+          },
+          {
+            episode: 17,
+            title: "Episode 17"
+          },
+          {
+            episode: 18,
+            title: "Episode 18"
+          },
+          {
+            episode: 19,
+            title: "Episode 19"
+          },
+          {
+            episode: 20,
+            title: "Episode 20"
+          }
+        ]
+      },
+      {
+        season: 5,
+        episodes: [
+          {
+            episode: 1,
+            title: "Episode 1"
+          },
+          {
+            episode: 2,
+            title: "Episode 2"
+          },
+          {
+            episode: 3,
+            title: "Episode 3"
+          },
+          {
+            episode: 4,
+            title: "Episode 4"
+          },
+          {
+            episode: 5,
+            title: "Episode 5"
+          },
+          {
+            episode: 6,
+            title: "Episode 6"
+          },
+          {
+            episode: 7,
+            title: "Episode 7"
+          },
+          {
+            episode: 8,
+            title: "Episode 8"
+          },
+          {
+            episode: 9,
+            title: "Episode 9"
+          },
+          {
+            episode: 10,
+            title: "Episode 10"
+          },
+          {
+            episode: 11,
+            title: "Episode 11"
+          },
+          {
+            episode: 12,
+            title: "Episode 12"
+          },
+          {
+            episode: 13,
+            title: "Episode 13"
+          },
+          {
+            episode: 14,
+            title: "Episode 14"
+          },
+          {
+            episode: 15,
+            title: "Episode 15"
+          },
+          {
+            episode: 16,
+            title: "Episode 16"
+          },
+          {
+            episode: 17,
+            title: "Episode 17"
+          },
+          {
+            episode: 18,
+            title: "Episode 18"
+          },
+          {
+            episode: 19,
+            title: "Episode 19"
+          },
+          {
+            episode: 20,
+            title: "Episode 20"
+          },
+          {
+            episode: 21,
+            title: "Episode 21"
+          },
+          {
+            episode: 22,
+            title: "Episode 22"
+          },
+          {
+            episode: 23,
+            title: "Episode 23"
+          },
+          {
+            episode: 24,
+            title: "Episode 24"
+          },
+          {
+            episode: 25,
+            title: "Episode 25"
+          },
+          {
+            episode: 26,
+            title: "Episode 26"
           },
           {
             episode: 27,
-            title: "Time of Ordeal Attaining the Legendary Power",
-            duration: "25m",
-            absoluteEpisode: 125
+            title: "Episode 27"
           },
           {
             episode: 28,
-            title: "Stop Majin Buu The Limit! Super Saiyan 3",
-            duration: "25m",
-            absoluteEpisode: 126
+            title: "Episode 28"
           },
           {
             episode: 29,
-            title: "Standing Up For Himself, Buu's Rebellion",
-            duration: "25m",
-            absoluteEpisode: 127
+            title: "Episode 29"
           },
           {
             episode: 30,
-            title: "Awful Looking!? Special Training, Fusion Pose",
-            duration: "25m",
-            absoluteEpisode: 128
+            title: "Episode 30"
           },
           {
             episode: 31,
-            title: "Bye-Bye, Everyone!! Son Goku Returns to the Afterlife",
-            duration: "25m",
-            absoluteEpisode: 129
+            title: "Episode 31"
           },
           {
             episode: 32,
-            title: "Found You, Gohan! Harsh Training in the Realm of the Kais!",
-            duration: "25m",
-            absoluteEpisode: 130
+            title: "Episode 32"
           },
           {
             episode: 33,
-            title: "Birth! Combine Super Warrior, His Name is Gotenks!!",
-            duration: "25m",
-            absoluteEpisode: 131
+            title: "Episode 33"
           },
           {
             episode: 34,
-            title: "Who Will Be the One to Defeat the Majin? The Beginning of the Strongest Man",
-            duration: "25m",
-            absoluteEpisode: 132
+            title: "Episode 34"
           },
           {
             episode: 35,
-            title: "The Power-Up Continues!? Perfected! Super Gotenks",
-            duration: "25m",
-            absoluteEpisode: 133
+            title: "Episode 35"
+          }
+        ]
+      },
+      {
+        season: 6,
+        episodes: [
+          {
+            episode: 1,
+            title: "Episode 1"
           },
           {
-            episode: 36,
-            title: "That Which is Brought Forth by Anger - Another Majin",
-            duration: "25m",
-            absoluteEpisode: 134
+            episode: 2,
+            title: "Episode 2"
           },
           {
-            episode: 37,
-            title: "Buu Ate Buu - Attack of the New Majin",
-            duration: "25m",
-            absoluteEpisode: 135
+            episode: 3,
+            title: "Episode 3"
           },
           {
-            episode: 38,
-            title: "Head Straight to the Catastrophe! The Deadline is in 1 Hour!!",
-            duration: "25m",
-            absoluteEpisode: 136
+            episode: 4,
+            title: "Episode 4"
           },
           {
-            episode: 39,
-            title: "Special Training Completed! You're Finished Now, Majin Buu",
-            duration: "25m",
-            absoluteEpisode: 137
+            episode: 5,
+            title: "Episode 5"
           },
           {
-            episode: 40,
-            title: "Buu Eliminated With Ghosts! A Surefire Kamikaze Attack!!",
-            duration: "25m",
-            absoluteEpisode: 138
+            episode: 6,
+            title: "Episode 6"
           },
           {
-            episode: 41,
-            title: "The Reserved Transformation of Gotenks! Super Gotenks 3!!\"",
-            duration: "25m",
-            absoluteEpisode: 139
+            episode: 7,
+            title: "Episode 7"
           },
           {
-            episode: 42,
-            title: "In High Spirits! Buu-Buu Volleyball!",
-            duration: "25m",
-            absoluteEpisode: 140
+            episode: 8,
+            title: "Episode 8"
           },
           {
-            episode: 43,
-            title: "You Kept Everyone Waiting! A Reborn Gohan Returns to Earth!!",
-            duration: "25m",
-            absoluteEpisode: 141
+            episode: 9,
+            title: "Episode 9"
           },
           {
-            episode: 44,
-            title: "Buu is Overwhelmed! Ultimate Gohan's Super Power",
-            duration: "25m",
-            absoluteEpisode: 142
+            episode: 10,
+            title: "Episode 10"
           },
           {
-            episode: 45,
-            title: "Buu's Trick - Gotenks is Absorbed?!",
-            duration: "25m",
-            absoluteEpisode: 143
+            episode: 11,
+            title: "Episode 11"
           },
           {
-            episode: 46,
-            title: "The Great Kaioshin's Bright Idea! Son Goku is Revived!!",
-            duration: "25m",
-            absoluteEpisode: 144
+            episode: 12,
+            title: "Episode 12"
           },
           {
-            episode: 47,
-            title: "One Time Only Miracle� Will the Super Combination With That Guy Come About?",
-            duration: "25m",
-            absoluteEpisode: 145
+            episode: 13,
+            title: "Episode 13"
           },
           {
-            episode: 48,
-            title: "Invincible! Ultimate Warrior Vegetto!",
-            duration: "25m",
-            absoluteEpisode: 146
+            episode: 14,
+            title: "Episode 14"
           },
           {
-            episode: 49,
-            title: "The Ace Up Buu's Sleeve! The Warriors are Absorbed!!",
-            duration: "25m",
-            absoluteEpisode: 147
+            episode: 15,
+            title: "Episode 15"
           },
           {
-            episode: 50,
-            title: "Rescuing Gohan and Company! Goku and Vegeta's Infiltration Mission!",
-            duration: "25m",
-            absoluteEpisode: 148
+            episode: 16,
+            title: "Episode 16"
           },
           {
-            episode: 51,
-            title: "Emergency Escape from Inside the Body! Buu's Reverse-Transformation is the Worst!!",
-            duration: "25m",
-            absoluteEpisode: 149
+            episode: 17,
+            title: "Episode 17"
           },
           {
-            episode: 52,
-            title: "Earth Disappears!! The Original Buu's Single Cruel Blast!!",
-            duration: "25m",
-            absoluteEpisode: 150
+            episode: 18,
+            title: "Episode 18"
           },
           {
-            episode: 53,
-            title: "Final Decisive Battle! A Conclusion in the Realm of the Kais!!",
-            duration: "25m",
-            absoluteEpisode: 151
+            episode: 19,
+            title: "Episode 19"
           },
           {
-            episode: 54,
-            title: "Do Your Best, Kakarrot! You Are No. 1!!",
-            duration: "25m",
-            absoluteEpisode: 152
+            episode: 20,
+            title: "Episode 20"
           },
           {
-            episode: 55,
-            title: "A One Minute Battle Vegeta's Life Risking Stall Tactics!",
-            duration: "25m",
-            absoluteEpisode: 153
+            episode: 21,
+            title: "Episode 21"
           },
           {
-            episode: 56,
-            title: "A Secret Plan Comes Together in a Flash - Please Grant These Two Wishes",
-            duration: "25m",
-            absoluteEpisode: 154
+            episode: 22,
+            title: "Episode 22"
           },
           {
-            episode: 57,
-            title: "Give Me Energy! We'll Make a Huge Genki-Dama!!",
-            duration: "25m",
-            absoluteEpisode: 155
+            episode: 23,
+            title: "Episode 23"
           },
           {
-            episode: 58,
-            title: "The Savior of the World is You! Everyone's Spirit Bomb is Completed",
-            duration: "25m",
-            absoluteEpisode: 156
+            episode: 24,
+            title: "Episode 24"
           },
           {
-            episode: 59,
-            title: "Son Goku is the Strongest After All!! Majin Buu is Annihilated",
-            duration: "25m",
-            absoluteEpisode: 157
+            episode: 25,
+            title: "Episode 25"
           },
           {
-            episode: 60,
-            title: "And So, After 10 Years... The First Tenka'ichi Budokai in a Long Time!",
-            duration: "25m",
-            absoluteEpisode: 158
-          },
-          {
-            episode: 61,
-            title: "Even Stronger! Goku's Dream Never Ends!!",
-            duration: "25m",
-            absoluteEpisode: 159
-          },
-          {
-            episode: 63,
-            title: "Videl's Crisis? Gohan's Urgent Call-out!",
-            duration: "25m",
-            absoluteEpisode: 160
-          },
-          {
-            episode: 64,
-            title: "A Monster is Taken Away! The Culprit is Great Saiyaman?",
-            duration: "25m",
-            absoluteEpisode: 161
-          },
-          {
-            episode: 65,
-            title: "Entering the World Martial Arts Tournament! Goten Shows Off His Explosive Power During Training!",
-            duration: "25m",
-            absoluteEpisode: 162
-          },
-          {
-            episode: 66,
-            title: "Who Is the World's Greatest? The Tournament Preliminaries Begin!",
-            duration: "25m",
-            absoluteEpisode: 163
-          },
-          {
-            episode: 67,
-            title: "The Junior Champ is Finally Decided! Who Will Fight Against Mr. Satan?",
-            duration: "25m",
-            absoluteEpisode: 164
-          },
-          {
-            episode: 68,
-            title: "An Eerie Entity Who Exactly Is Spopovitch?",
-            duration: "25m",
-            absoluteEpisode: 165
-          },
-          {
-            episode: 69,
-            title: "A Creeping Conspiracy! The Target is Gohan",
-            duration: "25m",
-            absoluteEpisode: 166
-          },
-          {
-            episode: 70,
-            title: "Peace Returns! A Time of Rest for the Warriors!",
-            duration: "25m",
-            absoluteEpisode: 167
+            episode: 26,
+            title: "Episode 26"
           }
         ]
       }

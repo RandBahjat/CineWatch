@@ -98,5 +98,5 @@ const finalNewDbz = newDbz + seasonsStr + '    ]\n  }';
 
 // replace only the FIRST occurrence of toReplace to be safe
 content = content.replace(toReplace, finalNewDbz.trim());
-fs.writeFileSync(filePath, content);
+fs.writeFileSync('anime-data.js', content);
 console.log("DBZ Kai replaced successfully.");
