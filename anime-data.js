@@ -20178,12 +20178,1185 @@ window._ANIME_DATA = [
                 title: "The Girl Who Loves Smiles",
                 duration: "25m",
                 overview: "The struggle against the villains may be over, but Izuku and Ochaco both still have internal demons to face."
+              }
+  ,
+  {
+        title: "My Hero Academia",
+        type: "TV Show",
+        isAnime: true,
+        year: 2016,
+        rating: 8.6,
+        age: "TV-14",
+        duration: "24m",
+        genres: [
+          "Animation",
+          "Action",
+          "Adventure",
+          "Fantasy"
+        ],
+        poster: "https://media.themoviedb.org/t/p/w300_and_h450_face/phuYuzqWW9ru8EA3HVjE9W2Rr3M.jpg",
+        backdrop: "https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/ol0H2DGp4ifBHA4JDlCpwJWxnY2.jpg",
+        videoUrl: "65930",
+        anilistId: 21459,
+        animeSlug: "my-hero-academia",
+        overview: "Izuku has dreamt of being a hero all his life?a lofty goal for anyone, but especially challenging for a kid with no superpowers. That?s right, in a world where eighty percent of the population has some kind of super-powered \"quirk,\" Izuku was unlucky enough to be born completely normal. But that?s not enough to stop him from enrolling in one of the world?s most prestigious hero academies.",
+        director: "Kenji Nagasaki",
+        cast: [
+          "Daiki Yamashita",
+          "Nobuhiko Okamoto",
+          "Ayane Sakura",
+          "Kaito Ishikawa",
+          "Yuki Kaji"
+        ],
+        trending: true,
+        featured: false,
+        is4k: false,
+        seasons: [
+          {
+            season: 1,
+            episodes: [
+              {
+                episode: 1,
+                title: "Episode 1",
+                duration: "24m",
+                absoluteEpisode: 1,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 2,
+                title: "Episode 2",
+                duration: "24m",
+                absoluteEpisode: 2,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 3,
+                title: "Episode 3",
+                duration: "24m",
+                absoluteEpisode: 3,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 4,
+                title: "Episode 4",
+                duration: "24m",
+                absoluteEpisode: 4,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 5,
+                title: "Episode 5",
+                duration: "24m",
+                absoluteEpisode: 5,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 6,
+                title: "Episode 6",
+                duration: "24m",
+                absoluteEpisode: 6,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 7,
+                title: "Episode 7",
+                duration: "24m",
+                absoluteEpisode: 7,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 8,
+                title: "Episode 8",
+                duration: "24m",
+                absoluteEpisode: 8,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 9,
+                title: "Episode 9",
+                duration: "24m",
+                absoluteEpisode: 9,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 10,
+                title: "Episode 10",
+                duration: "24m",
+                absoluteEpisode: 10,
+                overview: "Izuku and his classmates continue their hero training."
               },
               {
                 episode: 11,
-                title: "My Hero Academia",
-                duration: "25m",
-                overview: "How has the world changed in the eight years since Izuku and the heroes defeated All For One and Shigaraki?"
+                title: "Episode 11",
+                duration: "24m",
+                absoluteEpisode: 11,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 12,
+                title: "Episode 12",
+                duration: "24m",
+                absoluteEpisode: 12,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 13,
+                title: "Episode 13",
+                duration: "24m",
+                absoluteEpisode: 13,
+                overview: "Izuku and his classmates continue their hero training."
+              }
+            ]
+          },
+          {
+            season: 2,
+            episodes: [
+              {
+                episode: 1,
+                title: "Episode 1",
+                duration: "24m",
+                absoluteEpisode: 14,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 2,
+                title: "Episode 2",
+                duration: "24m",
+                absoluteEpisode: 15,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 3,
+                title: "Episode 3",
+                duration: "24m",
+                absoluteEpisode: 16,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 4,
+                title: "Episode 4",
+                duration: "24m",
+                absoluteEpisode: 17,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 5,
+                title: "Episode 5",
+                duration: "24m",
+                absoluteEpisode: 18,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 6,
+                title: "Episode 6",
+                duration: "24m",
+                absoluteEpisode: 19,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 7,
+                title: "Episode 7",
+                duration: "24m",
+                absoluteEpisode: 20,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 8,
+                title: "Episode 8",
+                duration: "24m",
+                absoluteEpisode: 21,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 9,
+                title: "Episode 9",
+                duration: "24m",
+                absoluteEpisode: 22,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 10,
+                title: "Episode 10",
+                duration: "24m",
+                absoluteEpisode: 23,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 11,
+                title: "Episode 11",
+                duration: "24m",
+                absoluteEpisode: 24,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 12,
+                title: "Episode 12",
+                duration: "24m",
+                absoluteEpisode: 25,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 13,
+                title: "Episode 13",
+                duration: "24m",
+                absoluteEpisode: 26,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 14,
+                title: "Episode 14",
+                duration: "24m",
+                absoluteEpisode: 27,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 15,
+                title: "Episode 15",
+                duration: "24m",
+                absoluteEpisode: 28,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 16,
+                title: "Episode 16",
+                duration: "24m",
+                absoluteEpisode: 29,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 17,
+                title: "Episode 17",
+                duration: "24m",
+                absoluteEpisode: 30,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 18,
+                title: "Episode 18",
+                duration: "24m",
+                absoluteEpisode: 31,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 19,
+                title: "Episode 19",
+                duration: "24m",
+                absoluteEpisode: 32,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 20,
+                title: "Episode 20",
+                duration: "24m",
+                absoluteEpisode: 33,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 21,
+                title: "Episode 21",
+                duration: "24m",
+                absoluteEpisode: 34,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 22,
+                title: "Episode 22",
+                duration: "24m",
+                absoluteEpisode: 35,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 23,
+                title: "Episode 23",
+                duration: "24m",
+                absoluteEpisode: 36,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 24,
+                title: "Episode 24",
+                duration: "24m",
+                absoluteEpisode: 37,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 25,
+                title: "Episode 25",
+                duration: "24m",
+                absoluteEpisode: 38,
+                overview: "Izuku and his classmates continue their hero training."
+              }
+            ]
+          },
+          {
+            season: 3,
+            episodes: [
+              {
+                episode: 1,
+                title: "Episode 1",
+                duration: "24m",
+                absoluteEpisode: 39,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 2,
+                title: "Episode 2",
+                duration: "24m",
+                absoluteEpisode: 40,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 3,
+                title: "Episode 3",
+                duration: "24m",
+                absoluteEpisode: 41,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 4,
+                title: "Episode 4",
+                duration: "24m",
+                absoluteEpisode: 42,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 5,
+                title: "Episode 5",
+                duration: "24m",
+                absoluteEpisode: 43,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 6,
+                title: "Episode 6",
+                duration: "24m",
+                absoluteEpisode: 44,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 7,
+                title: "Episode 7",
+                duration: "24m",
+                absoluteEpisode: 45,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 8,
+                title: "Episode 8",
+                duration: "24m",
+                absoluteEpisode: 46,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 9,
+                title: "Episode 9",
+                duration: "24m",
+                absoluteEpisode: 47,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 10,
+                title: "Episode 10",
+                duration: "24m",
+                absoluteEpisode: 48,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 11,
+                title: "Episode 11",
+                duration: "24m",
+                absoluteEpisode: 49,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 12,
+                title: "Episode 12",
+                duration: "24m",
+                absoluteEpisode: 50,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 13,
+                title: "Episode 13",
+                duration: "24m",
+                absoluteEpisode: 51,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 14,
+                title: "Episode 14",
+                duration: "24m",
+                absoluteEpisode: 52,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 15,
+                title: "Episode 15",
+                duration: "24m",
+                absoluteEpisode: 53,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 16,
+                title: "Episode 16",
+                duration: "24m",
+                absoluteEpisode: 54,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 17,
+                title: "Episode 17",
+                duration: "24m",
+                absoluteEpisode: 55,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 18,
+                title: "Episode 18",
+                duration: "24m",
+                absoluteEpisode: 56,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 19,
+                title: "Episode 19",
+                duration: "24m",
+                absoluteEpisode: 57,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 20,
+                title: "Episode 20",
+                duration: "24m",
+                absoluteEpisode: 58,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 21,
+                title: "Episode 21",
+                duration: "24m",
+                absoluteEpisode: 59,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 22,
+                title: "Episode 22",
+                duration: "24m",
+                absoluteEpisode: 60,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 23,
+                title: "Episode 23",
+                duration: "24m",
+                absoluteEpisode: 61,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 24,
+                title: "Episode 24",
+                duration: "24m",
+                absoluteEpisode: 62,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 25,
+                title: "Episode 25",
+                duration: "24m",
+                absoluteEpisode: 63,
+                overview: "Izuku and his classmates continue their hero training."
+              }
+            ]
+          },
+          {
+            season: 4,
+            episodes: [
+              {
+                episode: 1,
+                title: "Episode 1",
+                duration: "24m",
+                absoluteEpisode: 64,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 2,
+                title: "Episode 2",
+                duration: "24m",
+                absoluteEpisode: 65,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 3,
+                title: "Episode 3",
+                duration: "24m",
+                absoluteEpisode: 66,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 4,
+                title: "Episode 4",
+                duration: "24m",
+                absoluteEpisode: 67,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 5,
+                title: "Episode 5",
+                duration: "24m",
+                absoluteEpisode: 68,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 6,
+                title: "Episode 6",
+                duration: "24m",
+                absoluteEpisode: 69,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 7,
+                title: "Episode 7",
+                duration: "24m",
+                absoluteEpisode: 70,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 8,
+                title: "Episode 8",
+                duration: "24m",
+                absoluteEpisode: 71,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 9,
+                title: "Episode 9",
+                duration: "24m",
+                absoluteEpisode: 72,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 10,
+                title: "Episode 10",
+                duration: "24m",
+                absoluteEpisode: 73,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 11,
+                title: "Episode 11",
+                duration: "24m",
+                absoluteEpisode: 74,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 12,
+                title: "Episode 12",
+                duration: "24m",
+                absoluteEpisode: 75,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 13,
+                title: "Episode 13",
+                duration: "24m",
+                absoluteEpisode: 76,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 14,
+                title: "Episode 14",
+                duration: "24m",
+                absoluteEpisode: 77,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 15,
+                title: "Episode 15",
+                duration: "24m",
+                absoluteEpisode: 78,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 16,
+                title: "Episode 16",
+                duration: "24m",
+                absoluteEpisode: 79,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 17,
+                title: "Episode 17",
+                duration: "24m",
+                absoluteEpisode: 80,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 18,
+                title: "Episode 18",
+                duration: "24m",
+                absoluteEpisode: 81,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 19,
+                title: "Episode 19",
+                duration: "24m",
+                absoluteEpisode: 82,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 20,
+                title: "Episode 20",
+                duration: "24m",
+                absoluteEpisode: 83,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 21,
+                title: "Episode 21",
+                duration: "24m",
+                absoluteEpisode: 84,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 22,
+                title: "Episode 22",
+                duration: "24m",
+                absoluteEpisode: 85,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 23,
+                title: "Episode 23",
+                duration: "24m",
+                absoluteEpisode: 86,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 24,
+                title: "Episode 24",
+                duration: "24m",
+                absoluteEpisode: 87,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 25,
+                title: "Episode 25",
+                duration: "24m",
+                absoluteEpisode: 88,
+                overview: "Izuku and his classmates continue their hero training."
+              }
+            ]
+          },
+          {
+            season: 5,
+            episodes: [
+              {
+                episode: 1,
+                title: "Episode 1",
+                duration: "24m",
+                absoluteEpisode: 89,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 2,
+                title: "Episode 2",
+                duration: "24m",
+                absoluteEpisode: 90,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 3,
+                title: "Episode 3",
+                duration: "24m",
+                absoluteEpisode: 91,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 4,
+                title: "Episode 4",
+                duration: "24m",
+                absoluteEpisode: 92,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 5,
+                title: "Episode 5",
+                duration: "24m",
+                absoluteEpisode: 93,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 6,
+                title: "Episode 6",
+                duration: "24m",
+                absoluteEpisode: 94,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 7,
+                title: "Episode 7",
+                duration: "24m",
+                absoluteEpisode: 95,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 8,
+                title: "Episode 8",
+                duration: "24m",
+                absoluteEpisode: 96,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 9,
+                title: "Episode 9",
+                duration: "24m",
+                absoluteEpisode: 97,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 10,
+                title: "Episode 10",
+                duration: "24m",
+                absoluteEpisode: 98,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 11,
+                title: "Episode 11",
+                duration: "24m",
+                absoluteEpisode: 99,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 12,
+                title: "Episode 12",
+                duration: "24m",
+                absoluteEpisode: 100,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 13,
+                title: "Episode 13",
+                duration: "24m",
+                absoluteEpisode: 101,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 14,
+                title: "Episode 14",
+                duration: "24m",
+                absoluteEpisode: 102,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 15,
+                title: "Episode 15",
+                duration: "24m",
+                absoluteEpisode: 103,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 16,
+                title: "Episode 16",
+                duration: "24m",
+                absoluteEpisode: 104,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 17,
+                title: "Episode 17",
+                duration: "24m",
+                absoluteEpisode: 105,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 18,
+                title: "Episode 18",
+                duration: "24m",
+                absoluteEpisode: 106,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 19,
+                title: "Episode 19",
+                duration: "24m",
+                absoluteEpisode: 107,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 20,
+                title: "Episode 20",
+                duration: "24m",
+                absoluteEpisode: 108,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 21,
+                title: "Episode 21",
+                duration: "24m",
+                absoluteEpisode: 109,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 22,
+                title: "Episode 22",
+                duration: "24m",
+                absoluteEpisode: 110,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 23,
+                title: "Episode 23",
+                duration: "24m",
+                absoluteEpisode: 111,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 24,
+                title: "Episode 24",
+                duration: "24m",
+                absoluteEpisode: 112,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 25,
+                title: "Episode 25",
+                duration: "24m",
+                absoluteEpisode: 113,
+                overview: "Izuku and his classmates continue their hero training."
+              }
+            ]
+          },
+          {
+            season: 6,
+            episodes: [
+              {
+                episode: 1,
+                title: "Episode 1",
+                duration: "24m",
+                absoluteEpisode: 114,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 2,
+                title: "Episode 2",
+                duration: "24m",
+                absoluteEpisode: 115,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 3,
+                title: "Episode 3",
+                duration: "24m",
+                absoluteEpisode: 116,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 4,
+                title: "Episode 4",
+                duration: "24m",
+                absoluteEpisode: 117,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 5,
+                title: "Episode 5",
+                duration: "24m",
+                absoluteEpisode: 118,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 6,
+                title: "Episode 6",
+                duration: "24m",
+                absoluteEpisode: 119,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 7,
+                title: "Episode 7",
+                duration: "24m",
+                absoluteEpisode: 120,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 8,
+                title: "Episode 8",
+                duration: "24m",
+                absoluteEpisode: 121,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 9,
+                title: "Episode 9",
+                duration: "24m",
+                absoluteEpisode: 122,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 10,
+                title: "Episode 10",
+                duration: "24m",
+                absoluteEpisode: 123,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 11,
+                title: "Episode 11",
+                duration: "24m",
+                absoluteEpisode: 124,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 12,
+                title: "Episode 12",
+                duration: "24m",
+                absoluteEpisode: 125,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 13,
+                title: "Episode 13",
+                duration: "24m",
+                absoluteEpisode: 126,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 14,
+                title: "Episode 14",
+                duration: "24m",
+                absoluteEpisode: 127,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 15,
+                title: "Episode 15",
+                duration: "24m",
+                absoluteEpisode: 128,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 16,
+                title: "Episode 16",
+                duration: "24m",
+                absoluteEpisode: 129,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 17,
+                title: "Episode 17",
+                duration: "24m",
+                absoluteEpisode: 130,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 18,
+                title: "Episode 18",
+                duration: "24m",
+                absoluteEpisode: 131,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 19,
+                title: "Episode 19",
+                duration: "24m",
+                absoluteEpisode: 132,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 20,
+                title: "Episode 20",
+                duration: "24m",
+                absoluteEpisode: 133,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 21,
+                title: "Episode 21",
+                duration: "24m",
+                absoluteEpisode: 134,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 22,
+                title: "Episode 22",
+                duration: "24m",
+                absoluteEpisode: 135,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 23,
+                title: "Episode 23",
+                duration: "24m",
+                absoluteEpisode: 136,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 24,
+                title: "Episode 24",
+                duration: "24m",
+                absoluteEpisode: 137,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 25,
+                title: "Episode 25",
+                duration: "24m",
+                absoluteEpisode: 138,
+                overview: "Izuku and his classmates continue their hero training."
+              }
+            ]
+          },
+          {
+            season: 7,
+            episodes: [
+              {
+                episode: 1,
+                title: "Episode 1",
+                duration: "24m",
+                absoluteEpisode: 139,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 2,
+                title: "Episode 2",
+                duration: "24m",
+                absoluteEpisode: 140,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 3,
+                title: "Episode 3",
+                duration: "24m",
+                absoluteEpisode: 141,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 4,
+                title: "Episode 4",
+                duration: "24m",
+                absoluteEpisode: 142,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 5,
+                title: "Episode 5",
+                duration: "24m",
+                absoluteEpisode: 143,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 6,
+                title: "Episode 6",
+                duration: "24m",
+                absoluteEpisode: 144,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 7,
+                title: "Episode 7",
+                duration: "24m",
+                absoluteEpisode: 145,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 8,
+                title: "Episode 8",
+                duration: "24m",
+                absoluteEpisode: 146,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 9,
+                title: "Episode 9",
+                duration: "24m",
+                absoluteEpisode: 147,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 10,
+                title: "Episode 10",
+                duration: "24m",
+                absoluteEpisode: 148,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 11,
+                title: "Episode 11",
+                duration: "24m",
+                absoluteEpisode: 149,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 12,
+                title: "Episode 12",
+                duration: "24m",
+                absoluteEpisode: 150,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 13,
+                title: "Episode 13",
+                duration: "24m",
+                absoluteEpisode: 151,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 14,
+                title: "Episode 14",
+                duration: "24m",
+                absoluteEpisode: 152,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 15,
+                title: "Episode 15",
+                duration: "24m",
+                absoluteEpisode: 153,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 16,
+                title: "Episode 16",
+                duration: "24m",
+                absoluteEpisode: 154,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 17,
+                title: "Episode 17",
+                duration: "24m",
+                absoluteEpisode: 155,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 18,
+                title: "Episode 18",
+                duration: "24m",
+                absoluteEpisode: 156,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 19,
+                title: "Episode 19",
+                duration: "24m",
+                absoluteEpisode: 157,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 20,
+                title: "Episode 20",
+                duration: "24m",
+                absoluteEpisode: 158,
+                overview: "Izuku and his classmates continue their hero training."
+              },
+              {
+                episode: 21,
+                title: "Episode 21",
+                duration: "24m",
+                absoluteEpisode: 159,
+                overview: "Izuku and his classmates continue their hero training."
               }
             ]
           }
