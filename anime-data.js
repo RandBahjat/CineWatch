@@ -15,7 +15,7 @@ window._ANIME_DATA = [
       "Sports"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8WEr48swcqe89Zsy5sdrGCASlIg.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/6x1ZEm3m7aBtzR78uDk2l8xWqWb.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/s8NdKWkRGRdNYm472t58ZTYg1bE.jpg",
     videoUrl: "60863",
     anilistId: 20464,
     animeSlug: "haikyu",
