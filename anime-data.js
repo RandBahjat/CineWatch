@@ -11,8 +11,7 @@ window._ANIME_DATA = [
     genres: [
       "Animation",
       "Action",
-      "Comedy",
-      "Sci-Fi"
+      "Comedy"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iE3s0lG5QVdEHOEZno7EQyicKLW.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/sMO1v5TUf8GOJHbJieOUHqOSKEi.jpg",
