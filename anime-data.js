@@ -22506,66 +22506,61 @@ window._ANIME_DATA = [
           {
             episode: 24,
             title: "The Time Has Come"
-          }
-        ]
-      },
-      {
-        season: 2,
-        episodes: [
+          },
           {
-            episode: 1,
+            episode: 25,
             title: "Tryouts"
           },
           {
-            episode: 2,
+            episode: 26,
             title: "The Assassin and the Ninja"
           },
           {
-            episode: 3,
+            episode: 27,
             title: "The World of Feeling"
           },
           {
-            episode: 4,
+            episode: 28,
             title: "Chameleon"
           },
           {
-            episode: 5,
+            episode: 29,
             title: "Flow"
           },
           {
-            episode: 6,
+            episode: 30,
             title: "Grand Stage"
           },
           {
-            episode: 7,
+            episode: 31,
             title: "Itoshi Sae"
           },
           {
-            episode: 8,
+            episode: 32,
             title: "Blue Genes"
           },
           {
-            episode: 9,
+            episode: 33,
             title: "Night Snow"
           },
           {
-            episode: 10,
+            episode: 34,
             title: "The Subs Take to the Stage"
           },
           {
-            episode: 11,
+            episode: 35,
             title: "What You Taught Us"
           },
           {
-            episode: 12,
+            episode: 36,
             title: "Flowers"
           },
           {
-            episode: 13,
+            episode: 37,
             title: "Not Alone"
           },
           {
-            episode: 14,
+            episode: 38,
             title: "Last Attack"
           }
         ]
