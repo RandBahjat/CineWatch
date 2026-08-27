@@ -15,7 +15,7 @@ window._ANIME_DATA = [
       "Fantasy"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iFM1dyFi0rByvEomEkmm7NpQeeb.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/9ns9463dwOeo1CK1JU2sRAFUMHZ.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/tJ946hTDv4vwf51dYD6cK8pxC8o.jpg",
     videoUrl: "114410",
     anilistId: 127230,
     animeSlug: "chainsaw-man",
