@@ -1373,7 +1373,7 @@ function renderUserBadge() {
         <div class="account-panel-profile">
           <div class="account-panel-avatar">${renderAvatarHTML(userAvatar, "panel-avatar-img")}</div>
           <div class="account-panel-name" id="panelUserName">${userName}</div>
-          <div class="account-panel-date"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Member since ${createdAt || "Unknown"}</div>
+          <div class="account-panel-date"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#e50914" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Member since ${createdAt || "Unknown"}</div>
         </div>
 
         <div class="account-panel-section-label">⚙ SETTINGS</div>
