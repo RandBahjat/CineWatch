@@ -5918,9 +5918,6 @@ body.rtl-layout .account-side-panel {
   border-left: none;
   border-right: 1px solid rgba(255,255,255,0.08);
   transform: translateX(-100%);
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2300FF00"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>') no-repeat center;
-  background-size: cover;
-  animation: none;
 }
 .cf-text {
   flex: 1;
