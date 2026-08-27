@@ -21,10 +21,7 @@ window._ANIME_DATA = [
     overview: "Saitama, hero who train so hard he lose hair, gain power to defeat any foe with single punch, now struggle real problem: nobody recognize his strength, life feel meaningless without challenge. Team up with cyborg Genos, seek worthy opponent, real thrill of battle again.",
     director: "Shingo Natsume",
     cast: [
-      "Makoto Furukawa",
-      "Kaito Ishikawa",
-      "Yuki Kaji",
-      "Aoi Yuki"
+      Makoto Furukawa, Kaito Ishikawa, Max Mittelman, Zach Aguilar
     ],
     trending: true,
     featured: false,
