@@ -15,194 +15,194 @@ const MOVIES = [
     overview: "Chicagoan Frank Gallagher is the proud single dad of six smart, industrious, independent kids, who without him would be... perhaps better off. When Frank's not at the bar spending what little money they have, he's passed out on the floor. But the kids have found ways to grow up in spite of him.",
     director: "John Wells",
     cast: ["William H. Macy", "Emmy Rossum", "Jeremy Allen White", "Ethan Cutkosky", "Shanola Hampton", "Steve Howey", "Emma Kenney", "Cameron Monaghan", "Noel Fisher"],
-        seasons: [
+            seasons: [
       {
         season: 1,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'Pilot' },
+          { episode: 2, title: 'Frank the Plank' },
+          { episode: 3, title: 'Aunt Ginger' },
+          { episode: 4, title: 'Casey Casden' },
+          { episode: 5, title: 'Three Boys' },
+          { episode: 6, title: 'Killer Carl' },
+          { episode: 7, title: 'Frank Gallagher: Loving Husband, Devoted Father' },
+          { episode: 8, title: 'It\'s Time to Kill the Turtle' },
+          { episode: 9, title: 'But at Last Came a Knock' },
+          { episode: 10, title: 'Nana Gallagher Had an Affair' },
+          { episode: 11, title: 'Daddyz Girl' },
+          { episode: 12, title: 'Father Frank, Full of Grace' }
         ]
       },
       {
         season: 2,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'Summertime' },
+          { episode: 2, title: 'Summer Loving' },
+          { episode: 3, title: 'I\'ll Light a Candle for You Every Day' },
+          { episode: 4, title: 'A Beautiful Mess' },
+          { episode: 5, title: 'Father\'s Day' },
+          { episode: 6, title: 'Can I Have a Mother' },
+          { episode: 7, title: 'A Bottle of Jean Nate' },
+          { episode: 8, title: 'Parenthood' },
+          { episode: 9, title: 'Hurricane Monica' },
+          { episode: 10, title: 'A Great Cause' },
+          { episode: 11, title: 'Just Like the Pilgrims Intended' },
+          { episode: 12, title: 'Fiona Interrupted' }
         ]
       },
       {
         season: 3,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'El Gran Cañon' },
+          { episode: 2, title: 'The American Dream' },
+          { episode: 3, title: 'May I Trim Your Hedges?' },
+          { episode: 4, title: 'The Helpful Gallaghers' },
+          { episode: 5, title: 'The Sins of My Caretaker' },
+          { episode: 6, title: 'Cascading Failures' },
+          { episode: 7, title: 'A Long Way from Home' },
+          { episode: 8, title: 'Where There\'s a Will' },
+          { episode: 9, title: 'Frank the Plumber' },
+          { episode: 10, title: 'Civil Wrongs' },
+          { episode: 11, title: 'Order Room Service' },
+          { episode: 12, title: 'Survival of the Fittest' }
         ]
       },
       {
         season: 4,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'Simple Pleasures' },
+          { episode: 2, title: 'My Oldest Daughter' },
+          { episode: 3, title: 'Like Father, Like Daughter' },
+          { episode: 4, title: 'Strangers on a Train' },
+          { episode: 5, title: 'There\'s the Rub' },
+          { episode: 6, title: 'Iron City' },
+          { episode: 7, title: 'A Jailbird, Invalid, Martyr, Cutter, Retard, and Parasitic Twin' },
+          { episode: 8, title: 'Hope Springs Paternal' },
+          { episode: 9, title: 'The Legend of Bonnie and Carl' },
+          { episode: 10, title: 'Liver, I Hardly Know Her' },
+          { episode: 11, title: 'Emily' },
+          { episode: 12, title: 'Lazarus' }
         ]
       },
       {
         season: 5,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'Milk of the Gods' },
+          { episode: 2, title: 'I\'m the Liver' },
+          { episode: 3, title: 'The Two Lisas' },
+          { episode: 4, title: 'A Night to Remem... Wait, What?' },
+          { episode: 5, title: 'Rite of Passage' },
+          { episode: 6, title: 'Crazy Love' },
+          { episode: 7, title: 'Tell Me You Fucking Need Me' },
+          { episode: 8, title: 'Uncle Carl' },
+          { episode: 9, title: 'Carl\'s First Sentencing' },
+          { episode: 10, title: 'South Side Rules' },
+          { episode: 11, title: 'Drugs Actually' },
+          { episode: 12, title: 'Love Songs (In the Key of Gallagher)' }
         ]
       },
       {
         season: 6,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'I Only Miss Her When I\'m Breathing' },
+          { episode: 2, title: '#AbortionRules' },
+          { episode: 3, title: 'The F Word' },
+          { episode: 4, title: 'Going Once, Going Twice' },
+          { episode: 5, title: 'Refugees' },
+          { episode: 6, title: 'NSFW' },
+          { episode: 7, title: 'Pimp\'s Paradise' },
+          { episode: 8, title: 'Be a Good Boy. Come for Grandma.' },
+          { episode: 9, title: 'A Yurt of One\'s Own' },
+          { episode: 10, title: 'Paradise Lost' },
+          { episode: 11, title: 'Sleep No More' },
+          { episode: 12, title: 'Familia Supra Gallegorious Omnia!' }
         ]
       },
       {
         season: 7,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'Hiraeth' },
+          { episode: 2, title: 'Swipe, Fuck, Leave' },
+          { episode: 3, title: 'Home Sweet Homeless Shelter' },
+          { episode: 4, title: 'I Am a Storm' },
+          { episode: 5, title: 'Own Your Shit' },
+          { episode: 6, title: 'The Defenestration of Frank' },
+          { episode: 7, title: 'You\'ll Never Ever Get a Chicken in Your Whole Entire Life' },
+          { episode: 8, title: 'You Sold Me the Laundromat, Remember?' },
+          { episode: 9, title: 'Ouroboros' },
+          { episode: 10, title: 'Ride or Die' },
+          { episode: 11, title: 'Happily Ever After' },
+          { episode: 12, title: 'Requiem for a Slut' }
         ]
       },
       {
         season: 8,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'We Become What We ... Frank!' },
+          { episode: 2, title: 'Where\'s My Meth?' },
+          { episode: 3, title: 'God Bless Her Rotting Soul' },
+          { episode: 4, title: 'F**k Paying It Forward' },
+          { episode: 5, title: 'The (Mis)Education of Liam Fergus Beircheart Gallagher' },
+          { episode: 6, title: 'Icarus Fell and Rusty Ate Him' },
+          { episode: 7, title: 'Occupy Fiona' },
+          { episode: 8, title: 'Frank\'s Northern Southern Express' },
+          { episode: 9, title: 'The Fugees' },
+          { episode: 10, title: 'Church of Gay Jesus' },
+          { episode: 11, title: 'A Gallagher Pedicure' },
+          { episode: 12, title: 'Sleepwalking' }
         ]
       },
       {
         season: 9,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' },
-          { episode: 13, title: 'Episode 13' },
-          { episode: 14, title: 'Episode 14' }
+          { episode: 1, title: 'Are You There Shim? It\'s Me, Ian' },
+          { episode: 2, title: 'Mo White!' },
+          { episode: 3, title: 'Weirdo Gallagher Vortex' },
+          { episode: 4, title: 'Do Right, Vote White!' },
+          { episode: 5, title: 'Black Haired Ginger' },
+          { episode: 6, title: 'Face It, You\'re Gorgeous' },
+          { episode: 7, title: 'Down Like the Titanic' },
+          { episode: 8, title: 'The Apple Doesn\'t Fall Far from the Alibi' },
+          { episode: 9, title: 'Boooooooooooone!' },
+          { episode: 10, title: 'Los Diablos!' },
+          { episode: 11, title: 'The Hobo Games' },
+          { episode: 12, title: 'You\'ll Know the Bottom When You Hit It' },
+          { episode: 13, title: 'Lost' },
+          { episode: 14, title: 'Found' }
         ]
       },
       {
         season: 10,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'We Few, We Lucky Few, We Band of Gallaghers!' },
+          { episode: 2, title: 'Sleep Well My Prince for Tomorrow You Shall Be King' },
+          { episode: 3, title: 'Which America?' },
+          { episode: 4, title: 'A Little Gallagher Goes a Long Way' },
+          { episode: 5, title: 'Sparky' },
+          { episode: 6, title: 'Adios Gringos' },
+          { episode: 7, title: 'Citizen Carl' },
+          { episode: 8, title: 'Debbie Might Be a Prostitute' },
+          { episode: 9, title: 'O Captain, My Captain' },
+          { episode: 10, title: 'Now Leaving Illinois' },
+          { episode: 11, title: 'Location, Location, Location' },
+          { episode: 12, title: '"Gallavich!"' }
         ]
       },
       {
         season: 11,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'This is Chicago!' },
+          { episode: 2, title: 'Go Home, Gentrifier!' },
+          { episode: 3, title: 'Frances Francis Franny Frank' },
+          { episode: 4, title: 'NIMBY' },
+          { episode: 5, title: 'Slaughter' },
+          { episode: 6, title: 'Do Not Go Gentle Into That Good....Eh, Screw It' },
+          { episode: 7, title: 'Two at a Biker Bar, One in the Lake' },
+          { episode: 8, title: 'Cancelled' },
+          { episode: 9, title: 'Survivors' },
+          { episode: 10, title: 'DNR' },
+          { episode: 11, title: 'The Fickle Lady is Calling it Quits' },
+          { episode: 12, title: 'Father Frank, Full of Grace' }
         ]
       }
     ]
@@ -222,9 +222,9 @@ const MOVIES = [
     videoUrl:
       "950028",
     overview:
-      "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places — testing the fragile boundaries between their relationship, their neighbors, and everything they thought they wanted.",
+      "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places â€” testing the fragile boundaries between their relationship, their neighbors, and everything they thought they wanted.",
     director: "Olivia Wilde",
-    cast: ["Seth Rogen, Olivia Wilde, Penélope Cruz, Edward Norton"],
+    cast: ["Seth Rogen, Olivia Wilde, PenÃ©lope Cruz, Edward Norton"],
     trending: true,
     featured: true,
     is4k: false,
@@ -286,7 +286,7 @@ const MOVIES = [
       "https://image.tmdb.org/t/p/original/zwocf2Q0UAcwBJ5Ck6oMxY5sJAR.jpg",
     videoUrl: "125909",
     overview:
-      "Welcome to Gotham City, where corruption runs deep and criminals grow bolder by the night. Forged by tragedy, Bruce Wayne becomes the Batman — but his one-man crusade for justice draws unexpected allies, dangerous enemies, and consequences he never anticipated.",
+      "Welcome to Gotham City, where corruption runs deep and criminals grow bolder by the night. Forged by tragedy, Bruce Wayne becomes the Batman â€” but his one-man crusade for justice draws unexpected allies, dangerous enemies, and consequences he never anticipated.",
     director: "Sacha Goedegebure",
     cast: ["Hamish Linklater", "Krystal Joy Brown", "Minnie Driver"],
     trending: true,
@@ -326,10 +326,10 @@ const MOVIES = [
     ],
   },
 
-  // ── EXAMPLE: Adding a TV Show with cinesrc ─────────────────────────────────
+  // â”€â”€ EXAMPLE: Adding a TV Show with cinesrc â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   // The iframe given by cinesrc for Breaking Bad S1E1 is:
   //   https://cinesrc.st/embed/tv/1396?s=1&e=1
-  // The TMDB ID is 1396 — just put that as cinesrcId below.
+  // The TMDB ID is 1396 â€” just put that as cinesrcId below.
   // Episodes are auto-streamed at https://cinesrc.st/embed/tv/1396?s=S&e=E
 
   {
@@ -347,7 +347,7 @@ const MOVIES = [
     videoUrl:
       "1368337",
     overview:
-      "After years of brutal war, Odysseus sets sail for home — but the gods have other plans. Crossing a treacherous Mediterranean, he and his crew face the Cyclops Polyphemus, the deadly call of the Sirens, and the sorceress Circe, each trial pushing him closer to the edge of what he can endure to see Ithaca again.",
+      "After years of brutal war, Odysseus sets sail for home â€” but the gods have other plans. Crossing a treacherous Mediterranean, he and his crew face the Cyclops Polyphemus, the deadly call of the Sirens, and the sorceress Circe, each trial pushing him closer to the edge of what he can endure to see Ithaca again.",
     director: "Christopher Nolan",
     cast: ["Matt Damon", "Anne Hathaway", "Tom Holland", "Robert Pattinson", "Charlize Theron"],
     trending: true,
@@ -369,9 +369,9 @@ const MOVIES = [
     videoUrl:
       "980431",
     overview:
-      "Years after saving the world, Aang and his friends have grown into their roles as leaders of a fragile peace. When a radical group known as The Denied threatens to unravel that balance in pursuit of a relic that could restore bending to the world, Aang must reunite with Sokka, Toph, and Fire Lord Zuko for a journey that tests old bonds — and asks what's left of the boy who once carried the fate of the world alone.",
+      "Years after saving the world, Aang and his friends have grown into their roles as leaders of a fragile peace. When a radical group known as The Denied threatens to unravel that balance in pursuit of a relic that could restore bending to the world, Aang must reunite with Sokka, Toph, and Fire Lord Zuko for a journey that tests old bonds â€” and asks what's left of the boy who once carried the fate of the world alone.",
     director: "Lauren Montgomery, Steve Ahn, William Mata",
-    cast: ["Steven Yeun (Zuko)", "Dave Bautista", "Dionne Quan (Toph)", "Román Zaragoza (Sokka)"],
+    cast: ["Steven Yeun (Zuko)", "Dave Bautista", "Dionne Quan (Toph)", "RomÃ¡n Zaragoza (Sokka)"],
     trending: true,
     featured: true,
   },
@@ -390,7 +390,7 @@ const MOVIES = [
     videoUrl:
       "1339713",
     overview:
-      "Bear, a shy and socially awkward music store employee, has long harbored an unspoken crush on his coworker Nikki. When he stumbles across a mysterious antique object said to grant wishes if broken, he impulsively wishes for Nikki to love him more than anything in the world. The wish is granted — but the transformation that follows reveals just how dangerous it can be to get exactly what you wished for.",
+      "Bear, a shy and socially awkward music store employee, has long harbored an unspoken crush on his coworker Nikki. When he stumbles across a mysterious antique object said to grant wishes if broken, he impulsively wishes for Nikki to love him more than anything in the world. The wish is granted â€” but the transformation that follows reveals just how dangerous it can be to get exactly what you wished for.",
     director: "Curry Barker",
     cast: ["Michael Johnston, Inde Navarrette, Cooper Tomlinson, Megan Lawless, Andy Richter"],
     trending: false,
@@ -454,7 +454,7 @@ const MOVIES = [
       "1212763",
     overview:
       "The sixth installment in the legendary horror franchise, serving as a direct sequel to Evil Dead Rise. The story follows a young woman named Alice who seeks comfort from her in-laws at a secluded country home following the sudden death of her husband. However, the grieving gathering quickly devolves into a grueling family reunion from hell as members of the household are systematically possessed and transformed into bloodthirsty Deadites.",
-    director: "Sébastien Vaniček",
+    director: "SÃ©bastien VaniÄek",
     cast: ["Souheila Yacoub (as Alice), Hunter Doohan (as Joseph), Luciane Buchanan (as Thya), Tandi Wright (as Susan), Erroll Shand (as Edgar), Maude Davey (as Polly)"],
     trending: false,
     featured: false,
@@ -537,7 +537,7 @@ const MOVIES = [
     videoUrl:
       "936075",
     overview:
-      "Following Michael Jackson from his early years performing with his brothers under his father Joe's demanding discipline through his emergence as a solo superstar, the film chronicles the personal and professional forces that shaped one of music's most iconic and complicated figures — culminating around the release of his groundbreaking 1979 album Off the Wall.",
+      "Following Michael Jackson from his early years performing with his brothers under his father Joe's demanding discipline through his emergence as a solo superstar, the film chronicles the personal and professional forces that shaped one of music's most iconic and complicated figures â€” culminating around the release of his groundbreaking 1979 album Off the Wall.",
     director: "Antoine Fuqua",
     cast: ["Jaafar Jackson, Colman Domingo, Nia Long, Miles Teller, Laura Harrier, Kat Graham, Larenz Tate"],
     trending: false,
@@ -560,7 +560,7 @@ const MOVIES = [
     overview:
       "A gripping sci-fi thriller based on the bestselling novel by Andy Weir. The story follows Ryland Grace, a middle school science teacher turned astronaut, who wakes up from a coma aboard a spaceship with amnesia. As his memories slowly piece themselves back together, he discovers that he is the sole survivor of a desperate, last-chance mission to save Earth from a solar-extinction event. To succeed, he must use his scientific ingenuity and team up with an unexpected alien ally to solve a cosmic catastrophe.",
     director: "Phil Lord, Christopher Miller",
-    cast: ["Ryan Gosling (as Ryland Grace), Sandra Hüller (as Eva Stratt)"],
+    cast: ["Ryan Gosling (as Ryland Grace), Sandra HÃ¼ller (as Eva Stratt)"],
     trending: false,
     featured: false,
   },
@@ -582,7 +582,7 @@ const MOVIES = [
     cast: ["Alan Ritchson", "Maria Sten", "Sonya Cassidy", "Anthony Michael Hall"],
     trending: false,
     featured: false,
-    cinesrcId: "108978", // ← TMDB ID from: https://cinesrc.st/embed/tv/108978?s=1&e=1
+    cinesrcId: "108978", // â† TMDB ID from: https://cinesrc.st/embed/tv/108978?s=1&e=1
     seasons: [
       {
         season: 1,
@@ -651,7 +651,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/wjwMC7u3xWKkrronolBqsIy4L0L.jpg",
     videoUrl: "1083381",
-    overview: "A strange doorway appears in the basement of a furniture showroom, leading to an endless labyrinth of eerily familiar office corridors and empty rooms. When a man disappears into this impossible space, the people searching for him must venture into its depths — where the walls never end, and something else calls it home.",
+    overview: "A strange doorway appears in the basement of a furniture showroom, leading to an endless labyrinth of eerily familiar office corridors and empty rooms. When a man disappears into this impossible space, the people searching for him must venture into its depths â€” where the walls never end, and something else calls it home.",
     director: "Kane Parsons",
     cast: ["Chiwetel Ejiofor", "Renate Reinsve", "Mark Duplass", "Lukita Maxwell", "Finn Bennett"],
     trending: false,  // Set to true to show in "Trending Now" row
@@ -668,7 +668,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bNErActDctl6cdUGw9pnjSCmyhQ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/5JAwEip2X27MZyjySHdaSvqaPQP.jpg",
     videoUrl: "1307118",
-    overview: "After a ruthless tech giant acquires a small robotics company, a grieving engineer is tasked with testing their new AI companion. But when he attempts to reprogram her to be a truly sentient soulmate, she develops needs of her own — unleashing a relentless spree of precision-engineered mayhem. An offshoot of the M3GAN universe.",
+    overview: "After a ruthless tech giant acquires a small robotics company, a grieving engineer is tasked with testing their new AI companion. But when he attempts to reprogram her to be a truly sentient soulmate, she develops needs of her own â€” unleashing a relentless spree of precision-engineered mayhem. An offshoot of the M3GAN universe.",
     director: "Kate Dolan",
     cast: ["Lily Sullivan, David Rysdahl, Claudia Doumit, Arty Froushan, Elijah Cook, Emma Ramos, Maria Hof, Oliver Cooper, Noor Dillan-Knight"],
     trending: false,  // Set to true to show in "Trending Now" row
@@ -687,7 +687,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/sPX89Td70IDDjVr85jdSBb4rWGr.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/9IIBboV7MCT0bTxzXHmWK1Hq558.jpg",
     videoUrl: "272",
-    overview: "Haunted by his parents' death and driven by a need to conquer his own fears, Bruce Wayne disappears from Gotham to train under the mysterious League of Shadows. Returning years later with new skills and resolve, he becomes Batman — a symbol meant to strike fear into criminals while he wages a personal war against the corruption consuming his city, including a mysterious threat orchestrated by the sinister Ra's al Ghul and Scarecrow.",
+    overview: "Haunted by his parents' death and driven by a need to conquer his own fears, Bruce Wayne disappears from Gotham to train under the mysterious League of Shadows. Returning years later with new skills and resolve, he becomes Batman â€” a symbol meant to strike fear into criminals while he wages a personal war against the corruption consuming his city, including a mysterious threat orchestrated by the sinister Ra's al Ghul and Scarecrow.",
     director: "Christopher Nolan",
     cast: ["Christian Bale", "Michael Caine", "Liam Neeson", "Katie Holmes", "Gary Oldman", "Cillian Murphy", "Morgan Freeman"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -705,7 +705,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/cfT29Im5VDvjE0RpyKOSdCKZal7.jpg",
     videoUrl: "155",
-    overview: "Batman, Lieutenant Gordon, and District Attorney Harvey Dent form an uneasy alliance to bring down organized crime in Gotham City once and for all. Their progress is shattered by the arrival of a brilliant and chaotic criminal known only as the Joker, whose reign of terror pushes Gotham's guardians to their limits — testing Batman's principles, Dent's ideals, and the very soul of the city itself.",
+    overview: "Batman, Lieutenant Gordon, and District Attorney Harvey Dent form an uneasy alliance to bring down organized crime in Gotham City once and for all. Their progress is shattered by the arrival of a brilliant and chaotic criminal known only as the Joker, whose reign of terror pushes Gotham's guardians to their limits â€” testing Batman's principles, Dent's ideals, and the very soul of the city itself.",
     director: "Christopher Nolan",
     cast: ["Christian Bale", "Heath Ledger", "Aaron Eckhart", "Michael Caine", "Maggie Gyllenhaal", "Gary Oldman", "Morgan Freeman"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -724,7 +724,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/hr0L2aueqlP2BYUblTTjmtn0hw4.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/y2DB71C4nyIdMrANijz8mzvQtk6.jpg",
     videoUrl: "49026",
-    overview: "Years after retreating into isolation following the death of Harvey Dent, a crippled and disillusioned Bruce Wayne is forced back into the cowl when a merciless masked revolutionary named Bane threatens to bring Gotham City to its knees. With old allies, new enemies, and a city on the brink of anarchy, Batman must find the strength to rise once more — even if it costs him everything.",
+    overview: "Years after retreating into isolation following the death of Harvey Dent, a crippled and disillusioned Bruce Wayne is forced back into the cowl when a merciless masked revolutionary named Bane threatens to bring Gotham City to its knees. With old allies, new enemies, and a city on the brink of anarchy, Batman must find the strength to rise once more â€” even if it costs him everything.",
     director: "Christopher Nolan",
     cast: ["Christian Bale", "Tom Hardy", "Anne Hathaway", "Gary Oldman", "Joseph Gordon-Levitt", "Marion Cotillard", "Michael Caine"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -743,7 +743,7 @@ const MOVIES = [
     videoUrl: "1284465",
     overview: "A dark, gritty reimagining based on the 17th-century classic ballad. The film follows an aging, battle-worn Robin Hood who has retreated into self-imposed exile, deeply tormented by the violent crimes and killings of his past outlaw life. When he is gravely wounded, he takes refuge in a remote priory. In the hands of a mysterious prioress and an orphaned girl, the cynical legend is offered one final, painful chance at spiritual salvation and redemption.",
     director: "Michael Sarnoski",
-    cast: ["Hugh Jackman, Jodie Comer, Bill Skarsgård, Murray Bartlett, Noah Jupe"],
+    cast: ["Hugh Jackman, Jodie Comer, Bill SkarsgÃ¥rd, Murray Bartlett, Noah Jupe"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -761,7 +761,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/jexoNYnPd6vVrmygwF6QZmWPFdu.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/HVcza6tJtWFrLriuh3Ano4Vt46.jpg",
     videoUrl: "1930", // cinesrc movie embed: https://cinesrc.st/embed/movie/1084242
-    overview: "Peter Parker has always felt like an outsider, still haunted by the unexplained disappearance of his parents years ago. Determined to find answers, he investigates his father's old research and crosses paths with Dr. Curt Connors at Oscorp — an encounter that leaves Peter with astonishing new abilities. As he grapples with the responsibilities of his newfound power, a personal tragedy pushes him to become a masked vigilante, just as a monstrous adversary threatens the city he's sworn to protect.",
+    overview: "Peter Parker has always felt like an outsider, still haunted by the unexplained disappearance of his parents years ago. Determined to find answers, he investigates his father's old research and crosses paths with Dr. Curt Connors at Oscorp â€” an encounter that leaves Peter with astonishing new abilities. As he grapples with the responsibilities of his newfound power, a personal tragedy pushes him to become a masked vigilante, just as a monstrous adversary threatens the city he's sworn to protect.",
     director: "Marc Webb",
     cast: ["Andrew Garfield", "Emma Stone", "Rhys Ifans", "Denis Leary", "Martin Sheen", "Sally Field"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -782,7 +782,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/bU7nTmvmy0h3VUP01v1T2imgH6N.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/hDvqcbZhq9ux0euxYxCP9N6m1Rh.jpg",
     videoUrl: "102382",
-    overview: "As Spider-Man, Peter Parker continues protecting the city he loves while struggling to balance his double life with his relationship with Gwen Stacy. When a lonely Oscorp engineer is transformed into the destructive Electro, and Peter's estranged friend Harry Osborn returns to confront his father's dark legacy, Peter must face threats that will test everything he holds dear — and force him to reckon with the cost of being a hero.",
+    overview: "As Spider-Man, Peter Parker continues protecting the city he loves while struggling to balance his double life with his relationship with Gwen Stacy. When a lonely Oscorp engineer is transformed into the destructive Electro, and Peter's estranged friend Harry Osborn returns to confront his father's dark legacy, Peter must face threats that will test everything he holds dear â€” and force him to reckon with the cost of being a hero.",
     director: "Marc Webb",
     cast: ["Andrew Garfield", "Emma Stone", "Jamie Foxx", "Dane DeHaan", "Colm Feore", "Sally Field"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -820,7 +820,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/yIJTgThq4ZZHHvn5EM7Y8eqleIy.jpg",
     videoUrl: "99861",
-    overview: "Determined to protect the world from future threats, Tony Stark reactivates a dormant peacekeeping program, hoping to give Earth its own shield against alien invasion. But his plan backfires when the artificial intelligence he creates, Ultron, decides that humanity itself is the greatest threat of all. As Ultron sets his sights on global extinction, the Avengers must reunite — and confront new allies, old rivalries, and the true cost of playing god — to save the planet.",
+    overview: "Determined to protect the world from future threats, Tony Stark reactivates a dormant peacekeeping program, hoping to give Earth its own shield against alien invasion. But his plan backfires when the artificial intelligence he creates, Ultron, decides that humanity itself is the greatest threat of all. As Ultron sets his sights on global extinction, the Avengers must reunite â€” and confront new allies, old rivalries, and the true cost of playing god â€” to save the planet.",
     director: "Joss Whedon",
     cast: ["Robert Downey Jr.", "Chris Evans", "Scarlett Johansson", "Chris Hemsworth", "Mark Ruffalo", "Jeremy Renner", "James Spader", "Aaron Taylor-Johnson", "Elizabeth Olsen"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -841,7 +841,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg",
     videoUrl: "299536",
-    overview: "Thanos, the mad titan, arrives on Earth with one goal: to collect all six Infinity Stones and use their combined power to wipe out half of all life in the universe. As his ruthless quest brings him into conflict with the Avengers and the Guardians of the Galaxy, the assembled heroes must set aside their differences and unite like never before — knowing that even their combined might may not be enough to stop him.",
+    overview: "Thanos, the mad titan, arrives on Earth with one goal: to collect all six Infinity Stones and use their combined power to wipe out half of all life in the universe. As his ruthless quest brings him into conflict with the Avengers and the Guardians of the Galaxy, the assembled heroes must set aside their differences and unite like never before â€” knowing that even their combined might may not be enough to stop him.",
     director: "Anthony Russo, Joe Russo",
     cast: ["Robert Downey Jr.", "Chris Hemsworth", "Chris Evans", "Scarlett Johansson", "Josh Brolin", "Chris Pratt", "Zoe Saldana", "Benedict Cumberbatch"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -884,7 +884,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZRneIxpbeLT6fYO_m4PuvggP6W8o2W0_IMqmbXIMHNA&s=10",
     backdrop: "https://image.tmdb.org/t/p/original/fn4n6uOYcB6Uh89nbNPoU2w80RV.jpg",
     videoUrl: "315635",
-    overview: "Still buzzing from his experience with the Avengers, Peter Parker returns home to Queens, eager to prove himself as more than just a friendly neighborhood hero. When the Vulture emerges as a new and dangerous threat, wielding weapons built from stolen alien technology, Peter must juggle his desire to prove himself to Tony Stark with the everyday struggles of being a teenager — before the stakes become too big for him to handle alone.",
+    overview: "Still buzzing from his experience with the Avengers, Peter Parker returns home to Queens, eager to prove himself as more than just a friendly neighborhood hero. When the Vulture emerges as a new and dangerous threat, wielding weapons built from stolen alien technology, Peter must juggle his desire to prove himself to Tony Stark with the everyday struggles of being a teenager â€” before the stakes become too big for him to handle alone.",
     director: "Jon Watts",
     cast: ["Tom Holland, Michael Keaton, Robert Downey Jr., Marisa Tomei, Zendaya, Jacob Batalon"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -906,7 +906,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2dtxxSB41PWg_zeX8Tcwzj6VBfE1fOj98brLOpnoqhA&s=10",
     backdrop: "https://image.tmdb.org/t/p/original/qY76zJncsFzeE4tx1jRSQFcWS1.jpg",
     videoUrl: "429617",
-    overview: "Still reeling from the loss of Tony Stark, Peter Parker just wants a normal summer with his friends in Europe — and maybe finally tell MJ how he feels. But Nick Fury has other plans, pulling Peter into a global threat involving mysterious elemental creatures and a new ally named Mysterio. As expectations mount for him to fill the void left behind, Peter must decide what it really means to be the next hero the world needs.",
+    overview: "Still reeling from the loss of Tony Stark, Peter Parker just wants a normal summer with his friends in Europe â€” and maybe finally tell MJ how he feels. But Nick Fury has other plans, pulling Peter into a global threat involving mysterious elemental creatures and a new ally named Mysterio. As expectations mount for him to fill the void left behind, Peter must decide what it really means to be the next hero the world needs.",
     director: "Jon Watts",
     cast: ["Tom Holland, Samuel L. Jackson, Jake Gyllenhaal, Zendaya, Marisa Tomei, Jacob Batalon"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -927,7 +927,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/14QbnygCuTO0vl7CAFmPf1fgZfV.jpg",
     videoUrl: "634649",
-    overview: "Peter Parker's life is turned upside down the moment his secret identity is exposed to the world. Desperate to reclaim his normal life, he turns to Doctor Strange for a spell to make everyone forget — but when the spell goes catastrophically wrong, it tears open the fabric of the multiverse, bringing dangerous villains from other realities crashing into Peter's world. Now Peter must confront threats greater than he's ever faced, learning that the greatest responsibility sometimes demands the greatest sacrifice.",
+    overview: "Peter Parker's life is turned upside down the moment his secret identity is exposed to the world. Desperate to reclaim his normal life, he turns to Doctor Strange for a spell to make everyone forget â€” but when the spell goes catastrophically wrong, it tears open the fabric of the multiverse, bringing dangerous villains from other realities crashing into Peter's world. Now Peter must confront threats greater than he's ever faced, learning that the greatest responsibility sometimes demands the greatest sacrifice.",
     director: "Jon Watts",
     cast: ["Tom Holland, Zendaya, Benedict Cumberbatch, Jacob Batalon, Willem Dafoe, Alfred Molina"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -948,7 +948,7 @@ const MOVIES = [
     poster: "https://cdng.europosters.eu/pod_public/1300/263132.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/cyecB7godJ6kNHGONFjUyVN9OX5.jpg",
     videoUrl: "1726",
-    overview: "Tony Stark, a billionaire industrialist and genius inventor, is captured by terrorists in Afghanistan and forced to build a devastating weapon. Instead, he secretly constructs a powered suit of armor and escapes captivity. Back home, haunted by what he's witnessed, Stark rebuilds and improves his suit, adopting the identity of Iron Man — determined to protect the world from the same kind of weapons his company once manufactured, even as a dangerous betrayal from within threatens everything he's built.",
+    overview: "Tony Stark, a billionaire industrialist and genius inventor, is captured by terrorists in Afghanistan and forced to build a devastating weapon. Instead, he secretly constructs a powered suit of armor and escapes captivity. Back home, haunted by what he's witnessed, Stark rebuilds and improves his suit, adopting the identity of Iron Man â€” determined to protect the world from the same kind of weapons his company once manufactured, even as a dangerous betrayal from within threatens everything he's built.",
     director: "Jon Favreau",
     cast: ["Robert Downey Jr., Gwyneth Paltrow, Terrence Howard, Jeff Bridges"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -969,7 +969,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR67Amj_OOwllAH84OebJZvqi8qrqf35gD0iI2k7acYI8iko8Oe1dwkPdDb&s=10",
     backdrop: "https://images.alphacoders.com/689/689262.jpg",
     videoUrl: "10138",
-    overview: "Now publicly known as Iron Man, Tony Stark must navigate mounting pressure from the U.S. government, who want his suit's technology for themselves. Meanwhile, dying from the very device keeping him alive, Stark struggles to maintain his composure — even as a vengeful new enemy named Ivan Vanko builds his own devastating weapons, backed by Stark's rival, Justin Hammer, in a scheme to destroy everything Tony has built.",
+    overview: "Now publicly known as Iron Man, Tony Stark must navigate mounting pressure from the U.S. government, who want his suit's technology for themselves. Meanwhile, dying from the very device keeping him alive, Stark struggles to maintain his composure â€” even as a vengeful new enemy named Ivan Vanko builds his own devastating weapons, backed by Stark's rival, Justin Hammer, in a scheme to destroy everything Tony has built.",
     director: "Jon Favreau",
     cast: ["Robert Downey Jr., Gwyneth Paltrow, Terrence Howard, Jeff Bridges"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -990,7 +990,7 @@ const MOVIES = [
     poster: "https://i.ebayimg.com/00/s/MTUwMFgxMDAw/z/WyEAAOSwsxJgBcuf/$_57.JPG?set_id=8800005007",
     backdrop: "https://image.tmdb.org/t/p/original/aFTYFqrWp4RS46Twm87l5e0ItYb.jpg",
     videoUrl: "68721",
-    overview: "Haunted by the events in New York and increasingly consumed by anxiety, Tony Stark's world is shattered when a mysterious terrorist calling himself the Mandarin launches a devastating attack that hits far too close to home. Stripped of his usual resources and forced to rely on nothing but his intelligence and resourcefulness, Tony must dig deep to uncover the truth behind the Mandarin's identity — and confront a threat far more personal than he ever expected.",
+    overview: "Haunted by the events in New York and increasingly consumed by anxiety, Tony Stark's world is shattered when a mysterious terrorist calling himself the Mandarin launches a devastating attack that hits far too close to home. Stripped of his usual resources and forced to rely on nothing but his intelligence and resourcefulness, Tony must dig deep to uncover the truth behind the Mandarin's identity â€” and confront a threat far more personal than he ever expected.",
     director: "Jon Favreau",
     cast: ["Robert Downey Jr., Gwyneth Paltrow, Don Cheadle, Guy Pearce, Ben Kingsley"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1012,7 +1012,7 @@ const MOVIES = [
     poster: "https://m.media-amazon.com/images/I/81U9EbWexxL._AC_UF894,1000_QL80_.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ryf1UaxSxwKV0gshQOkLgdmcF7M.jpg",
     videoUrl: "1771",
-    overview: "Rejected from military service due to his frail body, Steve Rogers is given a chance to serve his country in a different way — as the volunteer subject of an experimental super-soldier program. Transformed into Captain America, Steve becomes a symbol of hope during World War II, leading the fight against the Red Skull, a ruthless Nazi scientist wielding a mysterious and powerful artifact with the potential to change the course of the war — and the world.",
+    overview: "Rejected from military service due to his frail body, Steve Rogers is given a chance to serve his country in a different way â€” as the volunteer subject of an experimental super-soldier program. Transformed into Captain America, Steve becomes a symbol of hope during World War II, leading the fight against the Red Skull, a ruthless Nazi scientist wielding a mysterious and powerful artifact with the potential to change the course of the war â€” and the world.",
     director: "Joe Johnston",
     cast: ["Chris Evans, Hayley Atwell, Sebastian Stan, Tommy Lee Jones, Hugo Weaving"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1034,7 +1034,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/l79VoTIPEXwo9zCTPTnpqdASvus.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/xOe8nHr5bpPvq4JbGy4vpttDwg2.jpg",
     videoUrl: "100402",
-    overview: "Still adjusting to life in the present day, Steve Rogers finds himself caught in a web of political intrigue when a deadly attack exposes a conspiracy buried deep within S.H.I.E.L.D. Teaming up with Natasha Romanoff and a new ally, Sam Wilson, Steve must uncover the truth behind a shadowy organization pulling the strings from the shadows — all while confronting a lethal assassin from his own past known only as the Winter Soldier.",
+    overview: "Still adjusting to life in the present day, Steve Rogers finds himself caught in a web of political intrigue when a deadly attack exposes a conspiracy buried deep within S.H.I.E.L.D. Teaming up with Natasha Romanoff and a new ally, Sam Wilson, Steve must uncover the truth behind a shadowy organization pulling the strings from the shadows â€” all while confronting a lethal assassin from his own past known only as the Winter Soldier.",
     director: "Joe Johnston",
     cast: ["Chris Evans, Scarlett Johansson, Sebastian Stan, Anthony Mackie, Samuel L. Jackson, Robert Redford"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1056,7 +1056,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/uXzQDq63nkrRbj2sl0OFJWmOPZg.jpg",
     videoUrl: "271110",
-    overview: "When a mission gone wrong results in tragic collateral damage, the government moves to place the Avengers under strict oversight. The team is split — Tony Stark believes accountability is necessary, while Steve Rogers fears the loss of their autonomy. As old loyalties clash with new convictions, and a hidden threat manipulates the growing tension from the shadows, the Avengers must confront each other before an even greater danger tears them apart for good.",
+    overview: "When a mission gone wrong results in tragic collateral damage, the government moves to place the Avengers under strict oversight. The team is split â€” Tony Stark believes accountability is necessary, while Steve Rogers fears the loss of their autonomy. As old loyalties clash with new convictions, and a hidden threat manipulates the growing tension from the shadows, the Avengers must confront each other before an even greater danger tears them apart for good.",
     director: "Joe Johnston",
     cast: ["Chris Evans, Robert Downey Jr., Scarlett Johansson, Sebastian Stan, Anthony Mackie, Chadwick Boseman"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1075,7 +1075,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/prSfAi1xGrhLQNxVSUFh61xQ4Qy.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/fLR1sAH2UMJzeKbGJMd3gp1KWXS.jpg",
     videoUrl: "10195",
-    overview: "Thor, the arrogant and headstrong heir to the throne of Asgard, reignites an ancient war through his recklessness. As punishment, his father Odin strips him of his powers and banishes him to Earth. Stranded and mortal, Thor must learn humility and earn back his worthiness — all while his brother Loki schemes for the throne back home, setting in motion a betrayal that threatens both Asgard and Earth alike.",
+    overview: "Thor, the arrogant and headstrong heir to the throne of Asgard, reignites an ancient war through his recklessness. As punishment, his father Odin strips him of his powers and banishes him to Earth. Stranded and mortal, Thor must learn humility and earn back his worthiness â€” all while his brother Loki schemes for the throne back home, setting in motion a betrayal that threatens both Asgard and Earth alike.",
     director: "Kenneth Branagh",
     cast: ["Chris Hemsworth, Natalie Portman, Tom Hiddleston, Anthony Hopkins, Idris Elba"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1114,7 +1114,7 @@ const MOVIES = [
     poster: "https://m.media-amazon.com/images/I/81mT16hOQvL._AC_UF894,1000_QL80_.jpg",
     backdrop: "https://images7.alphacoders.com/874/thumb-1920-874950.jpg",
     videoUrl: "284053",
-    overview: "Stripped of his hammer and thrown into captivity on a chaotic alien planet, Thor finds himself forced to fight for his freedom against a former ally turned gladiator opponent. Racing against time to escape and return home, he must stop Hela, the ruthless goddess of death, from destroying Asgard and unleashing Ragnarok — the prophesied end of his world.",
+    overview: "Stripped of his hammer and thrown into captivity on a chaotic alien planet, Thor finds himself forced to fight for his freedom against a former ally turned gladiator opponent. Racing against time to escape and return home, he must stop Hela, the ruthless goddess of death, from destroying Asgard and unleashing Ragnarok â€” the prophesied end of his world.",
     director: "Taika Waititi",
     cast: ["Chris Hemsworth, Tom Hiddleston, Cate Blanchett, Idris Elba, Jeff Goldblum, Tessa Thompson, Mark Ruffalo"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1133,7 +1133,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/z7SKBU3PhpH5HdMHz2GOzmral0R.jpg",
     videoUrl: "616037",
-    overview: "Struggling to find purpose after years of loss and battle, Thor attempts to step back from his life as a warrior in search of peace. That search is cut short when Gorr the God Butcher emerges, wielding a weapon capable of killing gods and vowing to wipe them all from existence. To stop him, Thor must reunite with his ex, Jane Foster — who has taken up his mantle as the Mighty Thor — alongside King Valkyrie and the Guardians of the Galaxy.",
+    overview: "Struggling to find purpose after years of loss and battle, Thor attempts to step back from his life as a warrior in search of peace. That search is cut short when Gorr the God Butcher emerges, wielding a weapon capable of killing gods and vowing to wipe them all from existence. To stop him, Thor must reunite with his ex, Jane Foster â€” who has taken up his mantle as the Mighty Thor â€” alongside King Valkyrie and the Guardians of the Galaxy.",
     director: "Taika Waititi",
     cast: ["Chris Hemsworth, Natalie Portman, Christian Bale, Tessa Thompson, Russell"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1152,9 +1152,9 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwBxeWEag4mqr9vQpPlJHtPlb_ZLsGdxZS_3mm67jYjQ&s=10",
     backdrop: "https://image.tmdb.org/t/p/original/o6D4dIH8i9qrftUNKfyJehWTOpW.jpg",
     videoUrl: "414906",
-    overview: "When a sadistic killer known as the Riddler begins murdering Gotham's elite and leaving behind cryptic clues, Batman is drawn into his most challenging investigation yet. As he follows the trail through the city's underworld, he uncovers a web of corruption that stretches all the way back to his own family's legacy — forcing him to confront painful truths while facing off against the Penguin and Carmine Falcone along the way.",
+    overview: "When a sadistic killer known as the Riddler begins murdering Gotham's elite and leaving behind cryptic clues, Batman is drawn into his most challenging investigation yet. As he follows the trail through the city's underworld, he uncovers a web of corruption that stretches all the way back to his own family's legacy â€” forcing him to confront painful truths while facing off against the Penguin and Carmine Falcone along the way.",
     director: "Matt Reeves",
-    cast: ["Robert Pattinson, Zoë Kravitz, Paul Dano, Jeffrey Wright, Colin Farrell, John Turturro"],
+    cast: ["Robert Pattinson, ZoÃ« Kravitz, Paul Dano, Jeffrey Wright, Colin Farrell, John Turturro"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
 
@@ -1171,7 +1171,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5mlI9Xiq19VvZESv_r0yRJgb4XIu-Ht0tCR_oMGftFQ&s=10",
     backdrop: "https://image.tmdb.org/t/p/original/bWZwiaJSXwYILxi3bE5Quwy5UXC.jpg",
     videoUrl: "https://example.com/video.mp4",
-    overview: "Balancing his Kryptonian origins with the values instilled in him growing up in Kansas, Superman navigates a world increasingly skeptical of his motives and methods as a superhero. When Lex Luthor orchestrates a calculated scheme to expose and destroy him — using both technology and public opinion as weapons — Superman must decide what kind of hero he wants to be, and prove that kindness is still a strength worth fighting for.",
+    overview: "Balancing his Kryptonian origins with the values instilled in him growing up in Kansas, Superman navigates a world increasingly skeptical of his motives and methods as a superhero. When Lex Luthor orchestrates a calculated scheme to expose and destroy him â€” using both technology and public opinion as weapons â€” Superman must decide what kind of hero he wants to be, and prove that kindness is still a strength worth fighting for.",
     director: "James Gunn",
     cast: ["David Corenswet, Rachel Brosnahan, Nicholas Hoult, Edi Gathegi, Anthony Carrigan, Nathan Fillion"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1189,7 +1189,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/uCg2HPY7rBCrh1YGpXam9LH1xKZ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qkOw5IZXESOiRH4wzdIYJlBZiCp.jpg",
     videoUrl: "https://example.com/video.mp4",
-    overview: "Half-human, half-Atlantean, Arthur Curry has spent his life torn between two worlds. When his ambitious brother Orm plots to unite the seven undersea kingdoms and wage war on the surface, Arthur is thrust into a journey to reclaim his birthright as the true king of Atlantis — alongside Mera, princess of Xebel — facing mythical creatures, ancient prophecies, and a battle to prove himself as more than just a man caught between two worlds.",
+    overview: "Half-human, half-Atlantean, Arthur Curry has spent his life torn between two worlds. When his ambitious brother Orm plots to unite the seven undersea kingdoms and wage war on the surface, Arthur is thrust into a journey to reclaim his birthright as the true king of Atlantis â€” alongside Mera, princess of Xebel â€” facing mythical creatures, ancient prophecies, and a battle to prove himself as more than just a man caught between two worlds.",
     director: "James Wan",
     cast: ["Jason Momoa, Amber Heard, Willem Dafoe, Patrick Wilson, Nicole Kidman, Dolph Lundgren"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1208,7 +1208,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ07y6P5Z1a90Pc3X5d3BLI58uycJQEzsyBng3Xn6zoSQ&s=10",
     backdrop: "https://image.tmdb.org/t/p/original/jXJxMcVoEuXzym3vFnjqDW4ifo6.jpg",
     videoUrl: "https://example.com/video.mp4",
-    overview: "Now settling into his role as King of Atlantis while adjusting to fatherhood, Arthur Curry finds himself pulled back into conflict when Black Manta resurfaces, empowered by an ancient and malevolent artifact known as the Black Trident. As Manta's vendetta threatens to unleash irreversible destruction on both Atlantis and the surface world, Arthur is forced to team up with his imprisoned brother Orm — putting aside years of rivalry to defend everything they both hold dear.",
+    overview: "Now settling into his role as King of Atlantis while adjusting to fatherhood, Arthur Curry finds himself pulled back into conflict when Black Manta resurfaces, empowered by an ancient and malevolent artifact known as the Black Trident. As Manta's vendetta threatens to unleash irreversible destruction on both Atlantis and the surface world, Arthur is forced to team up with his imprisoned brother Orm â€” putting aside years of rivalry to defend everything they both hold dear.",
     director: "James Wan",
     cast: ["Jason Momoa, Patrick Wilson, Amber Heard, Yahya Abdul-Mateen II, Nicole Kidman, Temuera Morrison, Randall Park"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1227,7 +1227,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1XAC6RPT01UX9EQGy2JVn5c8pgy.jpg",
     videoUrl: "671",
-    overview: "Raised in ignorance of his true heritage by his cruel aunt and uncle, Harry Potter learns on his eleventh birthday that he's actually a famous wizard, orphaned as a baby when a dark wizard tried and failed to kill him. Whisked off to Hogwarts School of Witchcraft and Wizardry, Harry begins to master magic, make lifelong friends, and uncover clues pointing to a hidden, powerful artifact — while a lingering evil stirs once more within the castle's walls.",
+    overview: "Raised in ignorance of his true heritage by his cruel aunt and uncle, Harry Potter learns on his eleventh birthday that he's actually a famous wizard, orphaned as a baby when a dark wizard tried and failed to kill him. Whisked off to Hogwarts School of Witchcraft and Wizardry, Harry begins to master magic, make lifelong friends, and uncover clues pointing to a hidden, powerful artifact â€” while a lingering evil stirs once more within the castle's walls.",
     director: "Chris Columbus",
     cast: ["Daniel Radcliffe, Rupert Grint, Emma Watson, Richard Harris, Maggie Smith, Alan Rickman"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1263,8 +1263,8 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLBdnlzLnNeha9UfT__hwGOhY9Vh87Fn7pb4XAh3H17w&s=10",
     backdrop: "https://image.tmdb.org/t/p/original/fVgBU3KJAWHS55FPdbsZQ3YQG2Z.jpg",
     videoUrl: "673",
-    overview: "As his third year at Hogwarts begins, Harry learns that Sirius Black, a notorious escaped prisoner from Azkaban, may be coming after him. With dementors patrolling the school grounds and new mysteries surrounding his parents' deaths coming to light, Harry must rely on his closest friends — and a mysterious new professor — to uncover the truth behind Black's true intentions before it's too late.",
-    director: "Alfonso Cuarón",
+    overview: "As his third year at Hogwarts begins, Harry learns that Sirius Black, a notorious escaped prisoner from Azkaban, may be coming after him. With dementors patrolling the school grounds and new mysteries surrounding his parents' deaths coming to light, Harry must rely on his closest friends â€” and a mysterious new professor â€” to uncover the truth behind Black's true intentions before it's too late.",
+    director: "Alfonso CuarÃ³n",
     cast: ["Daniel Radcliffe, Rupert Grint, Emma Watson, Gary Oldman, David Thewlis, Emma Thompson"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
@@ -1281,7 +1281,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoco-jf8kEfqokZ8TaGvVLTexLHhBL2C3HPFA9hD4D0Q&s=10",
     backdrop: "https://image.tmdb.org/t/p/original/rJFoaMjn2sYte0w74Pyur9CZg26.jpg",
     videoUrl: "674",
-    overview: "As Hogwarts hosts the Triwizard Tournament, a perilous competition between three magic schools, Harry is shocked to find his name emerges from the Goblet of Fire despite being underage and ineligible. Forced to compete in a series of increasingly dangerous trials, Harry senses a growing darkness at play — one tied directly to the return of the wizard responsible for his parents' deaths, culminating in a confrontation that changes the wizarding world forever.",
+    overview: "As Hogwarts hosts the Triwizard Tournament, a perilous competition between three magic schools, Harry is shocked to find his name emerges from the Goblet of Fire despite being underage and ineligible. Forced to compete in a series of increasingly dangerous trials, Harry senses a growing darkness at play â€” one tied directly to the return of the wizard responsible for his parents' deaths, culminating in a confrontation that changes the wizarding world forever.",
     director: "Mike Newell",
     cast: ["Daniel Radcliffe, Rupert Grint, Emma Watson, Ralph Fiennes, Brendan Gleeson, Robert Pattinson"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1299,7 +1299,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJFs9LPhwKKlDW02S8MrSYBJ1BzUPgPmVhINsuCWbX1g&s=10",
     backdrop: "https://image.tmdb.org/t/p/original/jLbpgkxA5PSgzmcszT8yCOyPkgf.jpg",
     videoUrl: "675",
-    overview: "Branded a liar by the Ministry of Magic for insisting that the darkest wizard of all time has returned, Harry finds himself isolated and under scrutiny as a new Defense Against the Dark Arts teacher, the tyrannical Dolores Umbridge, seizes control of Hogwarts. Determined to prepare his friends for the fight ahead, Harry secretly forms Dumbledore's Army, training a select group of students in real defensive magic — all while a shadowy prophecy draws him closer to his ultimate confrontation.",
+    overview: "Branded a liar by the Ministry of Magic for insisting that the darkest wizard of all time has returned, Harry finds himself isolated and under scrutiny as a new Defense Against the Dark Arts teacher, the tyrannical Dolores Umbridge, seizes control of Hogwarts. Determined to prepare his friends for the fight ahead, Harry secretly forms Dumbledore's Army, training a select group of students in real defensive magic â€” all while a shadowy prophecy draws him closer to his ultimate confrontation.",
     director: "David Yates",
     cast: ["Daniel Radcliffe, Rupert Grint, Emma Watson, Imelda Staunton, Gary Oldman, Ralph Fiennes"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1317,7 +1317,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/z7uo9zmQdQwU5ZJHFpv2Upl30i1.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/r5xT55Era1XrpAq6XNsrPpozNjM.jpg",
     videoUrl: "767",
-    overview: "With Voldemort's power growing beyond the wizarding world's control, Dumbledore enlists Harry's help to unlock buried memories held by the reluctant Professor Slughorn — memories that may hold the key to defeating the Dark Lord once and for all. As romantic entanglements complicate life at Hogwarts, a hidden threat within the castle's own walls edges closer to a devastating betrayal that will change everything.",
+    overview: "With Voldemort's power growing beyond the wizarding world's control, Dumbledore enlists Harry's help to unlock buried memories held by the reluctant Professor Slughorn â€” memories that may hold the key to defeating the Dark Lord once and for all. As romantic entanglements complicate life at Hogwarts, a hidden threat within the castle's own walls edges closer to a devastating betrayal that will change everything.",
     director: "David Yates",
     cast: ["Daniel Radcliffe, Rupert Grint, Emma Watson, Michael Gambon, Alan Rickman, Tom Felton"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1371,7 +1371,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/ltuwOEAJ4rfGVLdC4YYmCYBVcQV.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zQ8AxTPiCiS5nnwXpwTBPBHSaa5.jpg",
     videoUrl: "557",
-    overview: "Peter Parker has always felt like an outsider — awkward, overlooked, and quietly in love with his childhood friend Mary Jane. Everything changes when a spider bite grants him extraordinary strength, agility, and reflexes. As Peter grapples with the immense responsibility that comes with his new powers, a brilliant scientist's tragic transformation into the villainous Green Goblin forces Peter to step fully into his role as Spider-Man, testing his resolve and the people he loves most.",
+    overview: "Peter Parker has always felt like an outsider â€” awkward, overlooked, and quietly in love with his childhood friend Mary Jane. Everything changes when a spider bite grants him extraordinary strength, agility, and reflexes. As Peter grapples with the immense responsibility that comes with his new powers, a brilliant scientist's tragic transformation into the villainous Green Goblin forces Peter to step fully into his role as Spider-Man, testing his resolve and the people he loves most.",
     director: "Sam Raimi",
     cast: ["Tobey Maguire, Kirsten Dunst, Willem Dafoe, James Franco, Rosemary Harris, Cliff Robertson"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1389,7 +1389,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/plvv0gzpYXJTnkaiLboFDc7KfYJ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8G6HCS82vNxgg5wp7oBDSk32XpF.jpg",
     videoUrl: "558",
-    overview: "Two years into his life as Spider-Man, Peter Parker is exhausted — his grades are slipping, his relationships are fraying, and Mary Jane seems to be moving on without him. Just as he considers giving up the mask altogether, a failed fusion experiment transforms respected scientist Otto Octavius into the ruthless Doctor Octopus. As Doc Ock's rampage threatens the city, Peter must rediscover what it truly means to carry the responsibility of being a hero.",
+    overview: "Two years into his life as Spider-Man, Peter Parker is exhausted â€” his grades are slipping, his relationships are fraying, and Mary Jane seems to be moving on without him. Just as he considers giving up the mask altogether, a failed fusion experiment transforms respected scientist Otto Octavius into the ruthless Doctor Octopus. As Doc Ock's rampage threatens the city, Peter must rediscover what it truly means to carry the responsibility of being a hero.",
     director: "Sam Raimi",
     cast: ["Tobey Maguire, Kirsten Dunst, Alfred Molina, James Franco, Rosemary Harris"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1407,7 +1407,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/vdMbdIb8kKx29tAOzICO2Zm0lBd.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/9RsLXZ9oy5c1yBCtJ7B43jy0JvD.jpg",
     videoUrl: "559",
-    overview: "With fame and confidence going to his head, Peter Parker finds his world spiraling when a strange black substance from space bonds with his Spider-Man suit, amplifying his powers but also corrupting his personality. As his relationships with Mary Jane and Harry Osborn fracture under the strain, Peter must confront both an escaped convict transformed into the sand-manipulating Sandman and the return of an old rival — all while battling the darker version of himself the symbiote is bringing to the surface.",
+    overview: "With fame and confidence going to his head, Peter Parker finds his world spiraling when a strange black substance from space bonds with his Spider-Man suit, amplifying his powers but also corrupting his personality. As his relationships with Mary Jane and Harry Osborn fracture under the strain, Peter must confront both an escaped convict transformed into the sand-manipulating Sandman and the return of an old rival â€” all while battling the darker version of himself the symbiote is bringing to the surface.",
     director: "Sam Raimi",
     cast: ["Tobey Maguire, Kirsten Dunst, James Franco, Thomas Haden Church, Topher Grace, Bryce Dallas Howard"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1425,7 +1425,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/3E53WEZJqP6aM84D8CckXx4pIHw.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/bUcmY4GuJRIwQbZ8mYy1lWWDfNI.jpg",
     videoUrl: "293660",
-    overview: "Wade Wilson, a former Special Forces operative turned mercenary, is diagnosed with terminal cancer and desperate for any chance at survival. He undergoes an experimental treatment that leaves him disfigured but grants him rapid healing abilities. Rebranding himself as the fourth-wall-breaking antihero Deadpool, Wade sets out on a merciless quest for revenge against the man responsible for his transformation — all while trying to reclaim the woman he loves.",
+    overview: "Wade Wilson, a former Special Forces operative turned mercenary, is diagnosed with terminal cancer and desperate for any chance at survival. He undergoes an experimental treatment that leaves him disfigured but grants him rapid healing abilities. Rebranding himself as the fourth-wall-breaking antihero Deadpool, Wade sets out on a merciless quest for revenge against the man responsible for his transformation â€” all while trying to reclaim the woman he loves.",
     director: "Tim Miller",
     cast: ["Ryan Reynolds, Morena Baccarin, Ed Skrein, T.J. Miller, Gina Carano"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1443,7 +1443,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/to0spRl1CMDvyUbOnbb4fTk3VAd.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/lR83v2CtCtNwdZ7InEzVGjcqf4c.jpg",
     videoUrl: "383498",
-    overview: "Reeling from a tragedy that shatters his will to live, Wade Wilson finds new purpose when he crosses paths with Russell, a troubled young mutant on the run. When Cable, a battle-hardened soldier from the future, arrives to eliminate Russell, Wade assembles a ragtag team of mutant misfits — X-Force — to protect the boy and stop Cable's mission, all while wrestling with his own grief and sense of purpose.",
+    overview: "Reeling from a tragedy that shatters his will to live, Wade Wilson finds new purpose when he crosses paths with Russell, a troubled young mutant on the run. When Cable, a battle-hardened soldier from the future, arrives to eliminate Russell, Wade assembles a ragtag team of mutant misfits â€” X-Force â€” to protect the boy and stop Cable's mission, all while wrestling with his own grief and sense of purpose.",
     director: "David Leitch",
     cast: ["Ryan Reynolds, Josh Brolin, Morena Baccarin, Julian Dennison, Zazie Beetz"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1461,7 +1461,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/tuxt193U1kovduUDK4fuzFoh5Tt.jpg",
     videoUrl: "533535",
-    overview: "Living a quiet, unfulfilled life after hanging up his mask, Wade Wilson finds himself pulled back into action when his world faces destruction from a mysterious organization known as the TVA. To save his reality, Wade must convince a battle-weary, reluctant variant of Wolverine to join him — forcing two of the most stubborn antiheroes in the multiverse to work together, whether they like it or not.",
+    overview: "Living a quiet, unfulfilled life after hanging up his mask, Wade Wilson finds himself pulled back into action when his world faces destruction from a mysterious organization known as the TVA. To save his reality, Wade must convince a battle-weary, reluctant variant of Wolverine to join him â€” forcing two of the most stubborn antiheroes in the multiverse to work together, whether they like it or not.",
     director: "Shawn Levy",
     cast: ["Ryan Reynolds, Hugh Jackman, Emma Corrin, Matthew Macfadyen"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1497,7 +1497,7 @@ const MOVIES = [
     poster: "https://media.themoviedb.org/t/p/w440_and_h660_face/sCmwhWMMNStxkKi078eEx1CpyB8.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/bsVrSbbupHT6Xv5em2WtRMOwSsx.jpg",
     videoUrl: "76170",
-    overview: "Summoned to Japan by an old friend he once saved, Logan is drawn into a deadly conflict involving the criminal underworld, ancient loyalties, and a mysterious offer that could finally take away his healing power — and his endless pain.",
+    overview: "Summoned to Japan by an old friend he once saved, Logan is drawn into a deadly conflict involving the criminal underworld, ancient loyalties, and a mysterious offer that could finally take away his healing power â€” and his endless pain.",
     director: "James Mangold",
     cast: ["Hugh Jackman, Tao Okamoto, Rila Fukushima, Hiroyuki Sanada"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1533,7 +1533,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/bRDAc4GogyS9ci3ow7UnInOcriN.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3QUVzbcNyfGe3ocWkYAT8emK8Co.jpg",
     videoUrl: "36657",
-    overview: "In a world where mutants face growing fear and prejudice, Professor Charles Xavier runs a school dedicated to nurturing young mutants and promoting peaceful coexistence with humanity. When Magneto, a powerful mutant with a radically different vision, launches a dangerous plan to even the playing field, Xavier's team — including the newly arrived Wolverine and Rogue — must stop him before it's too late.",
+    overview: "In a world where mutants face growing fear and prejudice, Professor Charles Xavier runs a school dedicated to nurturing young mutants and promoting peaceful coexistence with humanity. When Magneto, a powerful mutant with a radically different vision, launches a dangerous plan to even the playing field, Xavier's team â€” including the newly arrived Wolverine and Rogue â€” must stop him before it's too late.",
     director: "Bryan Singer",
     cast: ["Hugh Jackman, Patrick Stewart, Ian McKellen, Halle Berry, Famke Janssen"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1623,7 +1623,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/ikA8UhYdTGpqbatFa93nIf6noSr.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/2ex2beZ4ssMeOduLD0ILzXKCiep.jpg",
     videoUrl: "246655",
-    overview: "After lying dormant for thousands of years, En Sabah Nur — the first and most powerful mutant, known as Apocalypse — awakens with a plan to cleanse the world and rebuild it in his image. As he recruits a team of powerful mutants to serve him, Professor Xavier and a new generation of X-Men must unite to stop an enemy unlike anything they've ever faced.",
+    overview: "After lying dormant for thousands of years, En Sabah Nur â€” the first and most powerful mutant, known as Apocalypse â€” awakens with a plan to cleanse the world and rebuild it in his image. As he recruits a team of powerful mutants to serve him, Professor Xavier and a new generation of X-Men must unite to stop an enemy unlike anything they've ever faced.",
     director: "Bryan Singer",
     cast: ["Hugh Jackman, James McAvoy, Michael Fassbender, Jennifer Lawrence, Patrick Stewart, Ian McKellen"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1659,7 +1659,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/xiDGcXJTvu1lazFRYip6g1eLt9c.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/lrNbt21hRirjyTK0SeLA0L4RAVS.jpg",
     videoUrl: "340102",
-    overview: "Trapped in a secretive facility, a group of young mutants struggle to control their dangerous new abilities while confronting terrifying visions of their pasts — and a sinister force determined to keep them there.",
+    overview: "Trapped in a secretive facility, a group of young mutants struggle to control their dangerous new abilities while confronting terrifying visions of their pasts â€” and a sinister force determined to keep them there.",
     director: "Josh Boone",
     cast: ["Maisie Williams, Anya Taylor-Joy, Charlie Heaton, Alice Braga"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1677,7 +1677,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQncXTIuQhDasWy1mSmIYlEhjyMpFuOLToyiH_dI6UWgg&s=10",
     backdrop: "https://i5.walmartimages.com/seo/Marvel-Thunderbolts-Logo-Wall-Poster-14-725-x-22-375-Framed_bab29668-669b-4023-bf4c-a73ebeec1e5b.e105400c71b5688c896cad5ae08a4124.jpeg",
     videoUrl: "986056",
-    overview: "When a group of morally complicated former villains and government operatives — Yelena Belova, Bucky Barnes, Red Guardian, Ghost, Taskmaster, and John Walker — find themselves betrayed and left for dead, they're forced into an uneasy alliance. As they uncover a threat tied to a mysteriously powerful figure known as the Sentry, this team of self-described disposable delinquents must decide whether they have what it takes to become the heroes the world doesn't expect from them.",
+    overview: "When a group of morally complicated former villains and government operatives â€” Yelena Belova, Bucky Barnes, Red Guardian, Ghost, Taskmaster, and John Walker â€” find themselves betrayed and left for dead, they're forced into an uneasy alliance. As they uncover a threat tied to a mysteriously powerful figure known as the Sentry, this team of self-described disposable delinquents must decide whether they have what it takes to become the heroes the world doesn't expect from them.",
     director: "Jake Schreier",
     cast: ["Florence Pugh, Sebastian Stan, Julia Louis-Dreyfus, Wyatt Russell, David Harbour, Hannah John-Kamen, Lewis Pullman"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1695,7 +1695,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/gKzYx79y0AQTL4UAk1cBQJ3nvrm.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/25glwwmPK6IZlZQQrAG61fzCcNX.jpg",
     videoUrl: "1724",
-    overview: "Living in exile and haunted by the uncontrollable creature within him, Bruce Banner is forced back into the crosshairs of General Thaddeus Ross's military hunt when a mission gone wrong exposes him once again. As Ross weaponizes the same experiment that created the Hulk against him, Banner must race to find a cure before his condition — and the enemies chasing him — spiral completely out of control.",
+    overview: "Living in exile and haunted by the uncontrollable creature within him, Bruce Banner is forced back into the crosshairs of General Thaddeus Ross's military hunt when a mission gone wrong exposes him once again. As Ross weaponizes the same experiment that created the Hulk against him, Banner must race to find a cure before his condition â€” and the enemies chasing him â€” spiral completely out of control.",
     director: "Louis Leterrier",
     cast: ["Edward Norton, Liv Tyler, Tim Roth, William Hurt, Tim Blake Nelson"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1749,7 +1749,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpNyLpjwLNRb5VPhegATPnXm5kZkpWWsIk09Qpv6PsRA&s=10",
     backdrop: "https://m.media-amazon.com/images/S/pv-target-images/4398a50e9fb6248fb219eaf138d6622a22b9fdaa8cf97832d11456fdfa0ef4b4.jpg",
     videoUrl: "447365",
-    overview: "Still reeling from the loss of Gamora, Peter Quill rallies the Guardians for one final mission to save Rocket's life — a journey that forces the team to confront the traumatic origins of Rocket's past before it's too late.",
+    overview: "Still reeling from the loss of Gamora, Peter Quill rallies the Guardians for one final mission to save Rocket's life â€” a journey that forces the team to confront the traumatic origins of Rocket's past before it's too late.",
     director: "James Gunn",
     cast: ["Chris Pratt, Zoe Saldana, Dave Bautista, Karen Gillan, Bradley Cooper"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1767,7 +1767,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/rQRnQfUl3kfp78nCWq8Ks04vnq1.jpg",
     backdrop: "https://pbs.twimg.com/media/EG2H58YU4AAWJrR.jpg:large",
     videoUrl: "102899",
-    overview: "Struggling to rebuild his life and reconnect with his young daughter after his release from prison, small-time thief Scott Lang is unexpectedly recruited by Dr. Hank Pym to become his successor as Ant-Man. Trained to master a suit capable of shrinking him to insect size while amplifying his strength, Scott must team up with Pym's daughter Hope to pull off a high-stakes heist, stopping a former protégé from weaponizing similar technology for catastrophic ends.",
+    overview: "Struggling to rebuild his life and reconnect with his young daughter after his release from prison, small-time thief Scott Lang is unexpectedly recruited by Dr. Hank Pym to become his successor as Ant-Man. Trained to master a suit capable of shrinking him to insect size while amplifying his strength, Scott must team up with Pym's daughter Hope to pull off a high-stakes heist, stopping a former protÃ©gÃ© from weaponizing similar technology for catastrophic ends.",
     director: "Peyton Reed",
     cast: ["Paul Rudd, Evangeline Lilly, Corey Stoll, Bobby Cannavale, Michael Douglas"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1785,9 +1785,9 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5S4ottdftuBBjhZFSISCPpLDlx68vSasdfFIDvwoljg&s=10",
     backdrop: "https://wallpaperaccess.com/full/1101863.jpg",
     videoUrl: "363088",
-    overview: "Still adjusting to house arrest following the events of Civil War, Scott Lang gets pulled back into action when Hope van Dyne and Hank Pym enlist his help on an urgent new mission. Suited up alongside Hope, now fighting as the Wasp, Scott must help them rescue Hank's long-lost wife Janet from the mysterious Quantum Realm — all while evading a dangerous new adversary named Ghost and a black-market dealer chasing their technology.",
+    overview: "Still adjusting to house arrest following the events of Civil War, Scott Lang gets pulled back into action when Hope van Dyne and Hank Pym enlist his help on an urgent new mission. Suited up alongside Hope, now fighting as the Wasp, Scott must help them rescue Hank's long-lost wife Janet from the mysterious Quantum Realm â€” all while evading a dangerous new adversary named Ghost and a black-market dealer chasing their technology.",
     director: "Peyton Reed",
-    cast: ["Paul Rudd, Evangeline Lilly, Michael Peña, Michael Douglas, Hannah John-Kamen"],
+    cast: ["Paul Rudd, Evangeline Lilly, Michael PeÃ±a, Michael Douglas, Hannah John-Kamen"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
 
@@ -1803,7 +1803,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/qnqGbB22YJ7dSs4o6M7exTpNxPz.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/kcfa5mlL0RtpsG7q1TmXyurdP3r.jpg",
     videoUrl: "640146",
-    overview: "When a family experiment accidentally pulls Scott Lang, Hope, and their loved ones into the mysterious and treacherous Quantum Realm, they find themselves face to face with Kang the Conqueror — a being whose knowledge of time itself makes him one of the most dangerous threats the Ant-Man family has ever faced.",
+    overview: "When a family experiment accidentally pulls Scott Lang, Hope, and their loved ones into the mysterious and treacherous Quantum Realm, they find themselves face to face with Kang the Conqueror â€” a being whose knowledge of time itself makes him one of the most dangerous threats the Ant-Man family has ever faced.",
     director: "Peyton Reed",
     cast: ["Paul Rudd, Evangeline Lilly, Michael Douglas, Michelle Pfeiffer, Jonathan Majors, Kathryn Newton"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1821,7 +1821,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/uxzzxijgPIY7slzFvMotPv8wjKA.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/6ELJEzQJ3Y45HczvreC3dg0GV5R.jpg",
     videoUrl: "284054",
-    overview: "Following the death of his father, T'Challa returns to Wakanda, a hidden and technologically advanced African nation, to assume the throne as its new king. As he adjusts to his royal duties and role as Black Panther, an old enemy from his father's past resurfaces, threatening to expose Wakanda's secrets and destabilize everything T'Challa has sworn to protect — forcing him to confront powerful questions about legacy, isolation, and responsibility.",
+    overview: "Following the death of his father, T'Challa returns to Wakanda, a hidden and technologically advanced African nation, to assume the throne as its new king. As he adjusts to his royal duties and role as Black Panther, an old enemy from his father's past resurfaces, threatening to expose Wakanda's secrets and destabilize everything T'Challa has sworn to protect â€” forcing him to confront powerful questions about legacy, isolation, and responsibility.",
     director: "Ryan Coogler",
     cast: ["Chadwick Boseman, Michael B. Jordan, Lupita Nyong'o, Danai Gurira, Martin Freeman, Angela Bassett"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1839,7 +1839,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/6QZmkUIvmBbtkzMWCkx1slCL0Um.jpg",
     videoUrl: "284054",
-    overview: "Grieving the loss of their king, Queen Ramonda, Shuri, and the Wakandan people must protect their nation from a powerful new threat rising from the ocean depths — a hidden civilization led by the formidable Namor, determined to defend his own people at any cost.",
+    overview: "Grieving the loss of their king, Queen Ramonda, Shuri, and the Wakandan people must protect their nation from a powerful new threat rising from the ocean depths â€” a hidden civilization led by the formidable Namor, determined to defend his own people at any cost.",
     director: "Ryan Coogler",
     cast: ["Letitia Wright, Lupita Nyong'o, Danai Gurira, Winston Duke, Angela Bassett, Tenoch Huerta"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1857,7 +1857,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQfiVvjpyhjGOv9UDoveRz1LpkP0ZjU4d1NsYaHeqcHQ&s=10",
     backdrop: "https://image.tmdb.org/t/p/original/xGIeqQunSj5dxGZVKzNNr9W4vps.jpg",
     videoUrl: "298618",
-    overview: "Struggling with the pain of a past he can never seem to escape, Barry Allen discovers he's able to travel through time by running fast enough. In a moment of desperation, he alters a pivotal event from his childhood — only to find himself trapped in a fractured reality without his powers, working alongside a younger, less experienced version of himself. As the timeline unravels further, Barry must find a way to restore order, uniting with alternate heroes to face a familiar, catastrophic threat before it's too late.",
+    overview: "Struggling with the pain of a past he can never seem to escape, Barry Allen discovers he's able to travel through time by running fast enough. In a moment of desperation, he alters a pivotal event from his childhood â€” only to find himself trapped in a fractured reality without his powers, working alongside a younger, less experienced version of himself. As the timeline unravels further, Barry must find a way to restore order, uniting with alternate heroes to face a familiar, catastrophic threat before it's too late.",
     director: "Andy Muschietti",
     cast: ["Ezra Miller, Sasha Calle, Michael Keaton, Ben Affleck, Michael Shannon"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1875,7 +1875,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8GFtkImmK0K1VaUChR0n9O61CFU.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/16M8zTkadi0nslWjqpzCPzsYjuq.jpg",
     videoUrl: "49521",
-    overview: "Sent to Earth as an infant to escape the destruction of Krypton, Clark Kent grows up grappling with immense powers he doesn't fully understand and a life spent hiding who he truly is. When the ruthless General Zod arrives seeking to reshape Earth into a new Krypton, Clark must finally step into his destiny — embracing the legacy of his Kryptonian heritage and the values instilled by his human parents to become the hero the world needs.",
+    overview: "Sent to Earth as an infant to escape the destruction of Krypton, Clark Kent grows up grappling with immense powers he doesn't fully understand and a life spent hiding who he truly is. When the ruthless General Zod arrives seeking to reshape Earth into a new Krypton, Clark must finally step into his destiny â€” embracing the legacy of his Kryptonian heritage and the values instilled by his human parents to become the hero the world needs.",
     director: "Zack Snyder",
     cast: ["Henry Cavill, Amy Adams, Michael Shannon, Diane Lane, Russell Crowe, Kevin Costner"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1893,7 +1893,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/5UsK3grJvtQrtzEgqNlDljJW96w.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3NduEGX5vu0G4ydWHCeCHK0FI78.jpg",
     videoUrl: "209112",
-    overview: "In the aftermath of Superman's catastrophic battle that left Metropolis in ruins, Bruce Wayne grows increasingly wary of the Kryptonian's godlike power, viewing him as a threat that must be stopped. As tensions rise between the two heroes, the manipulative Lex Luthor secretly orchestrates a deadly conflict between them, forcing Batman and Superman into a confrontation that will test their ideals — even as an even greater threat looms on the horizon.",
+    overview: "In the aftermath of Superman's catastrophic battle that left Metropolis in ruins, Bruce Wayne grows increasingly wary of the Kryptonian's godlike power, viewing him as a threat that must be stopped. As tensions rise between the two heroes, the manipulative Lex Luthor secretly orchestrates a deadly conflict between them, forcing Batman and Superman into a confrontation that will test their ideals â€” even as an even greater threat looms on the horizon.",
     director: "Zack Snyder",
     cast: ["Ben Affleck, Henry Cavill, Amy Adams, Jesse Eisenberg, Diane Lane, Gal Gadot"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1911,7 +1911,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzu_N1gQ-M4--wo4Hhb6CwcVO0lSXFzZ26YjPEr1CxFg&s=10",
     backdrop: "https://image.tmdb.org/t/p/original/9WoLTsRgrupkvCgs3bhsl2EjLhs.jpg",
     videoUrl: "791373",
-    overview: "Convinced humanity needs greater protection following Superman's death, Bruce Wayne, alongside Diana Prince, sets out to recruit a team of extraordinary individuals to form an unprecedented alliance of heroes. As Steppenwolf, an ancient conqueror, arrives on Earth searching for three long-hidden Mother Boxes capable of ending the world, this newly formed Justice League must overcome deep divisions and personal demons to stand together — and prevent an unstoppable evil from reshaping the planet.",
+    overview: "Convinced humanity needs greater protection following Superman's death, Bruce Wayne, alongside Diana Prince, sets out to recruit a team of extraordinary individuals to form an unprecedented alliance of heroes. As Steppenwolf, an ancient conqueror, arrives on Earth searching for three long-hidden Mother Boxes capable of ending the world, this newly formed Justice League must overcome deep divisions and personal demons to stand together â€” and prevent an unstoppable evil from reshaping the planet.",
     director: "Zack Snyder",
     cast: ["Ben Affleck, Henry Cavill, Gal Gadot, Ezra Miller, Ray Fisher, Jason Momoa"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1929,7 +1929,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/9dQbO6eEceIaCXC9ZZMdtRT8URM.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7zS58YPAw002RNejOF1vNB3XHbW.jpg",
     videoUrl: "1250",
-    overview: "Desperate to save his dying father, young Johnny Blaze sells his soul to the devil, Mephistopheles, only to lose his father anyway on the very same night. Years later, as a famous motorcycle stunt performer, Johnny is forced to fulfill his end of the bargain, transforming into the Ghost Rider — a flaming-skulled bounty hunter of the damned. When Mephistopheles' own son threatens to seize control of Hell, Johnny must embrace his cursed power to stop him.",
+    overview: "Desperate to save his dying father, young Johnny Blaze sells his soul to the devil, Mephistopheles, only to lose his father anyway on the very same night. Years later, as a famous motorcycle stunt performer, Johnny is forced to fulfill his end of the bargain, transforming into the Ghost Rider â€” a flaming-skulled bounty hunter of the damned. When Mephistopheles' own son threatens to seize control of Hell, Johnny must embrace his cursed power to stop him.",
     director: "Mark Steven Johnson",
     cast: ["Nicolas Cage, Eva Mendes, Wes Bentley, Sam Elliott, Peter Fonda"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -1947,9 +1947,9 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/nLHbf1zN8XtuK7wWJkem9fWeJ9r.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/z7qtrSn5iZrwKFE1sYPr597HweG.jpg",
     videoUrl: "71676",
-    overview: "Hiding out in Eastern Europe to escape the curse controlling him, Johnny Blaze is offered a chance at redemption when a secretive sect recruits him to protect a young boy from dark forces seeking to use him for a sinister ritual — a mission that could finally free Johnny from the Ghost Rider's grip.",
+    overview: "Hiding out in Eastern Europe to escape the curse controlling him, Johnny Blaze is offered a chance at redemption when a secretive sect recruits him to protect a young boy from dark forces seeking to use him for a sinister ritual â€” a mission that could finally free Johnny from the Ghost Rider's grip.",
     director: "Mark Neveldine,Brian Taylor",
-    cast: ["Nicolas Cage, Ciarán Hinds, Idris Elba, Violante Placido, Johnny Whitworth"],
+    cast: ["Nicolas Cage, CiarÃ¡n Hinds, Idris Elba, Violante Placido, Johnny Whitworth"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
 
@@ -2021,7 +2021,7 @@ const MOVIES = [
     videoUrl: "458156",
     overview: "With the price on his head higher than ever, John Wick uncovers a path to defeating the High Table once and for all. But before he can earn his freedom, he must face down new enemies wielding old alliances across the globe, in a fight that will push him to his absolute limit.",
     director: "Chad Stahelski",
-    cast: ["Keanu Reeves, Donnie Yen, Bill Skarsgård, Laurence Fishburne, Hiroyuki Sanada, Shamier Anderson, Ian McShane"],
+    cast: ["Keanu Reeves, Donnie Yen, Bill SkarsgÃ¥rd, Laurence Fishburne, Hiroyuki Sanada, Shamier Anderson, Ian McShane"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
 
@@ -2037,7 +2037,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0YJOxxGmQ7S3vmzX553SH02JPHP66qprzDPkXJAvmng&s=10",
     backdrop: "https://image.tmdb.org/t/p/original/sd4xN5xi8tKRPrJOWwNiZEile7f.jpg",
     videoUrl: "920",
-    overview: "Arrogant and single-minded, rookie race car Lightning McQueen has his sights set on nothing but victory and fame. But when a wrong turn strands him in the sleepy, forgotten town of Radiator Springs, he's forced to slow down and get to know its quirky residents. As he grows closer to the town and its inhabitants, Lightning begins to realize that winning isn't everything — and that friendship, community, and character matter far more than any trophy.",
+    overview: "Arrogant and single-minded, rookie race car Lightning McQueen has his sights set on nothing but victory and fame. But when a wrong turn strands him in the sleepy, forgotten town of Radiator Springs, he's forced to slow down and get to know its quirky residents. As he grows closer to the town and its inhabitants, Lightning begins to realize that winning isn't everything â€” and that friendship, community, and character matter far more than any trophy.",
     director: "John Lasseter",
     cast: ["Owen Wilson, Paul Newman, Bonnie Hunt, Larry the Cable Guy"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2091,7 +2091,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_nHIBdUUSF-4EN_LqniWD_XsFxoazWSzKzCFx3en69g&s=10",
     backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOqFqvTyokvWt4Hpr5jfkz-s1vaxqphnrPBFotQxWCMNXbpdAneyW60e9y&s=10",
     videoUrl: "72105",
-    overview: "As a lonely child, John Bennett wished for his teddy bear to come to life, and Ted has been his inseparable best friend ever since. Now in his thirties, John is torn between his loyalty to his foul-mouthed, hard-partying bear and his relationship with his girlfriend Lori, who wants him to finally grow up. As their friendship faces new strains — including a bizarre kidnapping plot involving an obsessive fan — John must decide what kind of adult he wants to become.",
+    overview: "As a lonely child, John Bennett wished for his teddy bear to come to life, and Ted has been his inseparable best friend ever since. Now in his thirties, John is torn between his loyalty to his foul-mouthed, hard-partying bear and his relationship with his girlfriend Lori, who wants him to finally grow up. As their friendship faces new strains â€” including a bizarre kidnapping plot involving an obsessive fan â€” John must decide what kind of adult he wants to become.",
     director: "Seth MacFarlane",
     cast: ["Mark Wahlberg, Mila Kunis, Seth MacFarlane, Joel McHale, Giovanni Ribisi"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2109,7 +2109,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBt17U_Vy-0aDZ0sLKr0HaXy-rw2dnJ7WBEuwITspaTQ&s=10",
     backdrop: "https://images1.resources.foxtel.com.au/store2/mount1/16/2/639rl.jpg",
     videoUrl: "214756",
-    overview: "As a lonely child, John Bennett wished for his teddy bear to come to life, and Ted has been his inseparable best friend ever since. Now in his thirties, John is torn between his loyalty to his foul-mouthed, hard-partying bear and his relationship with his girlfriend Lori, who wants him to finally grow up. As their friendship faces new strains — including a bizarre kidnapping plot involving an obsessive fan — John must decide what kind of adult he wants to become.",
+    overview: "As a lonely child, John Bennett wished for his teddy bear to come to life, and Ted has been his inseparable best friend ever since. Now in his thirties, John is torn between his loyalty to his foul-mouthed, hard-partying bear and his relationship with his girlfriend Lori, who wants him to finally grow up. As their friendship faces new strains â€” including a bizarre kidnapping plot involving an obsessive fan â€” John must decide what kind of adult he wants to become.",
     director: "Seth MacFarlane",
     cast: ["Mark Wahlberg, Mila Kunis, Seth MacFarlane, Joel McHale, Giovanni Ribisi"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2127,7 +2127,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHK_FOnat28w5uhq1RKCyunssmIo-vrzuGpTukOIrigQ&s=10",
     backdrop: "https://s1.dmcdn.net/v/RX8aA1ep8Di1fIkkW/x1080",
     videoUrl: "771",
-    overview: "In the chaos of leaving for a family trip to Paris, the McCallisters accidentally leave their youngest son, Kevin, behind. Thrilled at first to have the house to himself, Kevin quickly realizes he must grow up fast when he discovers two inept burglars targeting his home. Armed with nothing but his wits and a house full of household objects, Kevin rigs an elaborate gauntlet of booby traps to protect his home — and himself — from the intruders.",
+    overview: "In the chaos of leaving for a family trip to Paris, the McCallisters accidentally leave their youngest son, Kevin, behind. Thrilled at first to have the house to himself, Kevin quickly realizes he must grow up fast when he discovers two inept burglars targeting his home. Armed with nothing but his wits and a house full of household objects, Kevin rigs an elaborate gauntlet of booby traps to protect his home â€” and himself â€” from the intruders.",
     director: "Chris Columbus",
     cast: ["Macaulay Culkin, Joe Pesci, Daniel Stern, Catherine O'Hara, John Heard"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2145,7 +2145,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbcdixBXtd1AliXMK63eF6aLEZcSK202vhlVO28bR77w&s=10",
     backdrop: "https://wallpaper.forfun.com/fetch/45/455bb820903b89cdf397246385c9ac3e.jpeg",
     videoUrl: "772",
-    overview: "Through a chaotic mix-up at the airport, Kevin McCallister ends up on a flight to New York City alone, while his family heads to Florida without him. Left to fend for himself in a new city, Kevin once again crosses paths with the same two bumbling crooks — this time with an entire city as his playground for outsmarting them.",
+    overview: "Through a chaotic mix-up at the airport, Kevin McCallister ends up on a flight to New York City alone, while his family heads to Florida without him. Left to fend for himself in a new city, Kevin once again crosses paths with the same two bumbling crooks â€” this time with an entire city as his playground for outsmarting them.",
     director: "Chris Columbus",
     cast: ["Macaulay Culkin, Joe Pesci, Daniel Stern, Catherine O'Hara, Tim Curry"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2163,7 +2163,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/2uNW4WbgBXL25BAbXGLnLqX71Sw.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/VuukZLgaCrho2Ar8Scl9HtV3yD.jpg",
     videoUrl: "335983",
-    overview: "While investigating a shady biotech company run by the ambitious Carlton Drake, journalist Eddie Brock is unknowingly infected with an alien symbiote that bonds directly with his body. As the entity, Venom, begins to take hold — sharing his mind, granting him lethal abilities, and encouraging his darkest impulses — Eddie must find a way to control the chaos within him and stop Drake from unleashing an even greater threat.",
+    overview: "While investigating a shady biotech company run by the ambitious Carlton Drake, journalist Eddie Brock is unknowingly infected with an alien symbiote that bonds directly with his body. As the entity, Venom, begins to take hold â€” sharing his mind, granting him lethal abilities, and encouraging his darkest impulses â€” Eddie must find a way to control the chaos within him and stop Drake from unleashing an even greater threat.",
     director: "Ruben Fleischer",
     cast: ["MTom Hardy, Michelle Williams, Riz Ahmed, Woody Harrelson"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2181,7 +2181,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/pzKsRuKLFmYrW5Q0q8E8G78Tcgo.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/cxlIj6EMsOyHdpBvGPdjAEdRT51.jpg",
     videoUrl: "580489",
-    overview: "As Eddie Brock struggles to coexist with Venom, a serial killer named Cletus Kasady bonds with a symbiote of his own — the ruthless Carnage — forcing Eddie and Venom to overcome their own dysfunction and team up to stop a threat far more dangerous than themselves.",
+    overview: "As Eddie Brock struggles to coexist with Venom, a serial killer named Cletus Kasady bonds with a symbiote of his own â€” the ruthless Carnage â€” forcing Eddie and Venom to overcome their own dysfunction and team up to stop a threat far more dangerous than themselves.",
     director: "Andy Serkis",
     cast: ["Tom Hardy, Woody Harrelson, Michelle Williams, Naomie Harris"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2217,7 +2217,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/ijhdkyObTGGM3rVjpeaX1JIr5k4.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/cMfokHWle5lfCreoV08cbmkKv6G.jpg",
     videoUrl: "698687",
-    overview: "On a Cybertron ruled by a rigid caste system, lowly miners Orion Pax and D-16 dream of something greater than the lives they've been assigned. When a dangerous expedition beneath the planet's surface reveals long-buried truths about their world's history, the two friends are forced to confront a betrayal that fractures their bond forever — setting them on the path to becoming the two iconic rivals who will define the fate of Cybertron for generations: Optimus Prime and Megatron.",
+    overview: "On a Cybertron ruled by a rigid caste system, lowly miners Orion Pax and D-16 dream of something greater than the lives they've been assigned. When a dangerous expedition beneath the planet's surface reveals long-buried truths about their world's history, the two friends are forced to confront a betrayal that fractures their bond forever â€” setting them on the path to becoming the two iconic rivals who will define the fate of Cybertron for generations: Optimus Prime and Megatron.",
     director: "Josh Cooley",
     cast: ["Chris Hemsworth, Brian Tyree Henry, Scarlett Johansson, Keegan-Michael Key"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2235,7 +2235,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/aQvJ5WPzZgYVDrxLX4R6cLJCEaQ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/94f5iTqs610olgYEsg0BA20y2G4.jpg",
     videoUrl: "454626",
-    overview: "On the run after his powers make him a target back home, Sonic hides out on Earth, quietly living in a small Montana town. When a moment of panic accidentally causes a massive power outage, he attracts the attention of the U.S. government — and the eccentric, villainous Dr. Robotnik, who's determined to harness Sonic's powers for his own gain. Forced to team up with the town's sheriff, Tom Wachowski, Sonic sets off on a cross-country adventure to protect his newfound home and outsmart Robotnik once and for all.",
+    overview: "On the run after his powers make him a target back home, Sonic hides out on Earth, quietly living in a small Montana town. When a moment of panic accidentally causes a massive power outage, he attracts the attention of the U.S. government â€” and the eccentric, villainous Dr. Robotnik, who's determined to harness Sonic's powers for his own gain. Forced to team up with the town's sheriff, Tom Wachowski, Sonic sets off on a cross-country adventure to protect his newfound home and outsmart Robotnik once and for all.",
     director: "Jeff Fowler",
     cast: ["Ben Schwartz, James Marsden, Jim Carrey, Tika Sumpter"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2289,7 +2289,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/8VG8fDNiy50H4FedGwdSVUPoaJe.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/hvbWh2aBmBNWEBJIjJF2Km6Pn4i.jpg",
     videoUrl: "497",
-    overview: "Paul Edgecomb, a veteran corrections officer on death row during the Depression era, encounters John Coffey, a physically imposing but gentle man convicted of murdering two young girls. As Paul comes to know John, he discovers the condemned man possesses an extraordinary, almost supernatural gift for healing — a revelation that forces Paul to confront painful questions about guilt, mercy, and the true nature of the man he's meant to escort to his execution.",
+    overview: "Paul Edgecomb, a veteran corrections officer on death row during the Depression era, encounters John Coffey, a physically imposing but gentle man convicted of murdering two young girls. As Paul comes to know John, he discovers the condemned man possesses an extraordinary, almost supernatural gift for healing â€” a revelation that forces Paul to confront painful questions about guilt, mercy, and the true nature of the man he's meant to escort to his execution.",
     director: "Frank Darabont",
     cast: ["Tom Hanks, Michael Clarke Duncan, David Morse, Bonnie Hunt, James Cromwell"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2307,7 +2307,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qQclTgLMDvGBuUBFGHRipxkEwWR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
     videoUrl: "1439930",
-    overview: "Having finally eliminated those responsible for his family's murder, Frank Castle tries to move past his life as the Punisher. But peace proves elusive when Ma Gnucci, a ruthless crime boss seeking retribution for the deaths of her own sons, drags him back into a brutal confrontation — forcing Frank to confront both a new enemy and the ghosts of his past.",
+    overview: "Having finally eliminated those responsible for his family's murder, Frank Castle tries to move past his life as the Punisher. But peace proves elusive when Ma Gnucci, a ruthless crime boss seeking retribution for the deaths of her own sons, drags him back into a brutal confrontation â€” forcing Frank to confront both a new enemy and the ghosts of his past.",
     director: "Reinaldo Marcus Green",
     cast: ["Jon Bernthal, Deborah Ann Woll, Jason R. Moore, Judith Light"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2361,7 +2361,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ctjEj2xM32OvBXCq8zAdK3ZrsAj.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ggC3Brchf4RqPitEh7cROFoeAWn.jpg",
     videoUrl: "640",
-    overview: "Before turning 19, Frank Abagnale Jr. had already conned his way across dozens of countries, posing convincingly as an airline pilot, a doctor, and a legal prosecutor while cashing millions in bad checks. As his elaborate schemes grow bolder, FBI agent Carl Hanratty becomes obsessed with catching him, sparking a cat-and-mouse pursuit that spans years — and gradually reveals the loneliness and longing hidden beneath Frank's dazzling façade.",
+    overview: "Before turning 19, Frank Abagnale Jr. had already conned his way across dozens of countries, posing convincingly as an airline pilot, a doctor, and a legal prosecutor while cashing millions in bad checks. As his elaborate schemes grow bolder, FBI agent Carl Hanratty becomes obsessed with catching him, sparking a cat-and-mouse pursuit that spans years â€” and gradually reveals the loneliness and longing hidden beneath Frank's dazzling faÃ§ade.",
     director: "Steven Spielberg",
     cast: ["Leonardo DiCaprio, Tom Hanks, Christopher Walken, Amy Adams, Martin Sheen"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2379,7 +2379,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL1WuN2jU4W11K2KgexcA0EAa0UT0jbek895wWTZvboQ&s=10",
     backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6UO7XVreFwif88sHI76WhMBpadr2lxlWHwKNW-mHtJA&s=10",
     videoUrl: "744",
-    overview: "Pete Maverick Mitchell is one of the Navy's most talented and impulsive fighter pilots, earning a coveted spot at the elite Top Gun training program. As he competes fiercely against his fellow aviators — including his rival Iceman — for the title of best pilot, Maverick grapples with the shadow of his father's controversial past and a devastating personal tragedy that forces him to confront his own recklessness and rediscover what it truly means to fly.",
+    overview: "Pete Maverick Mitchell is one of the Navy's most talented and impulsive fighter pilots, earning a coveted spot at the elite Top Gun training program. As he competes fiercely against his fellow aviators â€” including his rival Iceman â€” for the title of best pilot, Maverick grapples with the shadow of his father's controversial past and a devastating personal tragedy that forces him to confront his own recklessness and rediscover what it truly means to fly.",
     director: "Tony Scott",
     cast: ["Tom Cruise, Kelly McGillis, Val Kilmer, Anthony Edwards, Tom Skerritt"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2397,7 +2397,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEdx3z5R-k3bb6sb2fJutOx97TuH8aeqVABV30oTMl6A&s=10",
     backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSawVA0k1rHCwzjOPgJfpNzLyFNgUg-y-VRiMLPw02jsg&s=10",
     videoUrl: "361743",
-    overview: "Decades after his Top Gun days, Maverick returns as a flight instructor tasked with training a new generation of elite pilots for a dangerous mission, forcing him to confront his own past — including his complicated relationship with the son of his fallen best friend.",
+    overview: "Decades after his Top Gun days, Maverick returns as a flight instructor tasked with training a new generation of elite pilots for a dangerous mission, forcing him to confront his own past â€” including his complicated relationship with the son of his fallen best friend.",
     director: "Joseph Kosinski",
     cast: ["Tom Cruise, Miles Teller, Jennifer Connelly, Jon Hamm, Glen Powell, Val Kilmer"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2433,7 +2433,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqkIPS9c8dOSVXEepmMZN1MGnRODfOKd9JZ1g7_0vjNQ&s=10",
     backdrop: "https://image.tmdb.org/t/p/original/ncMSia5IokKyU0nktu7K0B3vd7P.jpg",
     videoUrl: "27205",
-    overview: "Dom Cobb is a master thief with a rare ability to infiltrate people's dreams and extract their deepest secrets. His unique skill has made him a valuable — and wanted — man, costing him everything he holds dear. Offered a chance to have his old life restored, Cobb takes on a seemingly impossible final job: instead of stealing an idea, he must plant one, navigating through layered dreams within dreams where the line between reality and imagination grows increasingly dangerous to define.",
+    overview: "Dom Cobb is a master thief with a rare ability to infiltrate people's dreams and extract their deepest secrets. His unique skill has made him a valuable â€” and wanted â€” man, costing him everything he holds dear. Offered a chance to have his old life restored, Cobb takes on a seemingly impossible final job: instead of stealing an idea, he must plant one, navigating through layered dreams within dreams where the line between reality and imagination grows increasingly dangerous to define.",
     director: "Christopher Nolan",
     cast: ["Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page, Tom Hardy, Marion Cotillard"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2451,7 +2451,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRiP_OD3okUny5FD2L3SWXKW_CTSVLlmVLaUv9xviEtw&s=10",
     backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUQFlyhWI2XXUNgIX5qd1xxKLC02l1JtH_ng7JTUayzA&s=10",
     videoUrl: "787",
-    overview: "John and Jane Smith appear to be an ordinary suburban couple whose marriage has grown stale and routine. In reality, both are highly skilled assassins, each hiding their true profession from the other for years. When their separate agencies assign them the same target — each other — their carefully guarded secrets collide, forcing them to fight for their lives while rediscovering the passion that first brought them together.",
+    overview: "John and Jane Smith appear to be an ordinary suburban couple whose marriage has grown stale and routine. In reality, both are highly skilled assassins, each hiding their true profession from the other for years. When their separate agencies assign them the same target â€” each other â€” their carefully guarded secrets collide, forcing them to fight for their lives while rediscovering the passion that first brought them together.",
     director: "Doug Liman",
     cast: ["Brad Pitt, Angelina Jolie, Vince Vaughn, Adam Brody"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2471,7 +2471,7 @@ const MOVIES = [
     videoUrl: "954",
     overview: "When a routine mission ends in catastrophe and the deaths of his entire team, Ethan Hunt finds himself the prime suspect, accused of betraying the IMF from within. On the run and cut off from the agency he once trusted, Ethan assembles a small band of allies to track down the real mole, racing against time to expose the conspiracy and clear his name before it's too late.",
     director: "Brian De Palma",
-    cast: ["Tom Cruise, Jon Voight, Emmanuelle Béart, Henry Czerny, Ving Rhames"],
+    cast: ["Tom Cruise, Jon Voight, Emmanuelle BÃ©art, Henry Czerny, Ving Rhames"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
 
@@ -2487,7 +2487,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXh-cukhK8tTGgz33ibFeGJg5vSLnoOiMi5x1YWbAgxQ&s=10",
     backdrop: "https://image.tmdb.org/t/p/original/2UtSksEVHwRcoRpOuOewVLucl0p.jpg",
     videoUrl: "955",
-    overview: "Ethan Hunt is sent to stop a rogue former IMF agent from unleashing a genetically engineered virus, teaming up with a professional thief whose past relationship with the villain puts her — and the entire mission — at risk.",
+    overview: "Ethan Hunt is sent to stop a rogue former IMF agent from unleashing a genetically engineered virus, teaming up with a professional thief whose past relationship with the villain puts her â€” and the entire mission â€” at risk.",
     director: "John Woo",
     cast: ["Tom Cruise, Dougray Scott, Thandiwe Newton, Ving Rhames"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2505,7 +2505,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGat7GAakdr3o3aONDF0zybyMnTA5GYm0RgkHiOBjWw&s=10",
     backdrop: "https://image.tmdb.org/t/p/original/5hizq0BiBHPAV9iD2qbp5RwStdT.jpg",
     videoUrl: "956",
-    overview: "Now training new IMF recruits and preparing for civilian life, Ethan Hunt is pulled back into the field when a former protégé is captured by a ruthless arms dealer, forcing Ethan to confront a personal, high-stakes mission that threatens everyone he loves.",
+    overview: "Now training new IMF recruits and preparing for civilian life, Ethan Hunt is pulled back into the field when a former protÃ©gÃ© is captured by a ruthless arms dealer, forcing Ethan to confront a personal, high-stakes mission that threatens everyone he loves.",
     director: "J.J. Abrams",
     cast: ["Tom Cruise, Philip Seymour Hoffman, Ving Rhames, Michelle Monaghan, Keri Russell"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2577,7 +2577,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB5MZzpTGhw2fyNCpzjeS0noExEwMjj5_fKOSLNqA43w&s=10",
     backdrop: "https://image.tmdb.org/t/p/original/x1ZKRyvB7QAXfYVgf5mUJzjPqfH.jpg",
     videoUrl: "575264",
-    overview: "Ethan Hunt and his team race to track down a dangerous new weapon capable of controlling the truth itself before it falls into the wrong hands — pursued by a mysterious figure from Ethan's past and a rapidly evolving artificial intelligence that threatens all of humanity.",
+    overview: "Ethan Hunt and his team race to track down a dangerous new weapon capable of controlling the truth itself before it falls into the wrong hands â€” pursued by a mysterious figure from Ethan's past and a rapidly evolving artificial intelligence that threatens all of humanity.",
     director: "Christopher McQuarrie",
     cast: ["Tom Cruise, Hayley Atwell, Ving Rhames, Simon Pegg, Rebecca Ferguson, Esai Morales"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2633,7 +2633,7 @@ const MOVIES = [
     videoUrl: "569094",
     overview: "Now more confident in his role as Spider-Man, Miles Morales is pulled into a vast multiversal adventure alongside Gwen Stacy, joining a team of Spider-People from across dimensions. But when Miles clashes with them over their methods, he finds himself hunted across the multiverse by an army of alternate Spider-Man variants.",
     director: "Joaquim Dos Santos, Kemp Powers, Justin K. Thompson",
-    cast: ["Shameik Moore, Hailee Steinfeld, Brian Tyree Henry, Luna Lauren Vélez, Jake Johnson, Oscar Isaac"],
+    cast: ["Shameik Moore, Hailee Steinfeld, Brian Tyree Henry, Luna Lauren VÃ©lez, Jake Johnson, Oscar Isaac"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
 
@@ -2649,7 +2649,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS412PM3M801wUr5CXVqlWXT4dvvMKmqjf-aSzdDSBvyQ&s=10",
     backdrop: "https://miro.medium.com/v2/resize:fit:1400/1*wLCHEekWiQAj-Q-Fg_8zcg.jpeg",
     videoUrl: "9502",
-    overview: "Po, a noodle-loving panda with a deep passion for kung fu but seemingly none of the skill, works at his father's restaurant while secretly dreaming of joining the legendary Furious Five. When a shocking twist of fate names him the prophesied Dragon Warrior, Po must be trained by the skeptical Master Shifu — despite the doubts of everyone around him — to defend the Valley of Peace against the vengeful and powerful snow leopard, Tai Lung.",
+    overview: "Po, a noodle-loving panda with a deep passion for kung fu but seemingly none of the skill, works at his father's restaurant while secretly dreaming of joining the legendary Furious Five. When a shocking twist of fate names him the prophesied Dragon Warrior, Po must be trained by the skeptical Master Shifu â€” despite the doubts of everyone around him â€” to defend the Valley of Peace against the vengeful and powerful snow leopard, Tai Lung.",
     director: "Mark Osborne, John Stevenson",
     cast: ["Jack Black, Dustin Hoffman, Angelina Jolie, Ian McShane, Jackie Chan"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2721,7 +2721,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/yfzmfWGjcmyugH6FZ13WcsUGiNj.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/puFbbiJxY0rjJtcvsTeSCQHNchR.jpg",
     videoUrl: "81188",
-    overview: "When the evil spirit Pitch Black launches an assault to engulf the world in darkness and fear, the Immortal Guardians—Santa Claus, the Tooth Fairy, the Easter Bunny, and the Sandman—enlist the help of carefree Jack Frost to protect the hopes, beliefs, and imagination of children everywhere.",
+    overview: "When the evil spirit Pitch Black launches an assault to engulf the world in darkness and fear, the Immortal Guardiansâ€”Santa Claus, the Tooth Fairy, the Easter Bunny, and the Sandmanâ€”enlist the help of carefree Jack Frost to protect the hopes, beliefs, and imagination of children everywhere.",
     director: "Peter Ramsey",
     cast: ["Chris Pine, Alec Baldwin, Jude Law, Isla Fisher, Hugh Jackman"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -2775,7 +2775,7 @@ const MOVIES = [
     poster: "https://upload.wikimedia.org/wikipedia/en/2/22/Shrek_the_Third_%282007_animated_feature_film%29.jpg",
     backdrop: "https://i.ytimg.com/vi/Z3gcIfWHSpI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBa8FtWTmxEPq3igjNSxnciEMlvNw",
     videoUrl: "810",
-    overview: "When King Harold suddenly falls ill, Shrek is unexpectedly next in line to inherit the throne of Far Far Away. Unwilling to give up his beloved swamp, Shrek sets off with Donkey and Puss in Boots to find the only other rightful heir—Fiona's teenage cousin, Arthur—while Prince Charming gathers a legion of fairytale villains to launch a coup.",
+    overview: "When King Harold suddenly falls ill, Shrek is unexpectedly next in line to inherit the throne of Far Far Away. Unwilling to give up his beloved swamp, Shrek sets off with Donkey and Puss in Boots to find the only other rightful heirâ€”Fiona's teenage cousin, Arthurâ€”while Prince Charming gathers a legion of fairytale villains to launch a coup.",
     director: "Chris Miller, Raman Hui",
     cast: ["Mike Myers, Eddie Murphy, Cameron Diaz, Antonio Banderas, Justin Timberlake"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -3035,7 +3035,7 @@ const MOVIES = [
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3SfWVJwhTZGXXC3_UqlhGzh46IUcaYObevtvL6f2GtQ&s=10",
     backdrop: "https://m.media-amazon.com/images/M/MV5BYmQ3Y2Q3N2YtNzMzNy00YWI1LTllMjgtMWViZWM4NTk4ODllXkEyXkFqcGdeQXZ3ZXNsZXk@._V1_.jpg",
     videoUrl: "637649",
-    overview: "H, a cold and mysterious stranger, takes a job at a high-security cash truck company in Los Angeles. After surprising his co-workers by single-handedly stopping a violent robbery with lethal precision, his true motives become clear—he is on a ruthless quest for vengeance to hunt down the men responsible for his son's murder.",
+    overview: "H, a cold and mysterious stranger, takes a job at a high-security cash truck company in Los Angeles. After surprising his co-workers by single-handedly stopping a violent robbery with lethal precision, his true motives become clearâ€”he is on a ruthless quest for vengeance to hunt down the men responsible for his son's murder.",
     director: "Guy Ritchie",
     cast: ["Jason Statham, Holt McCallany, Jeffrey Donovan, Josh Hartnett, Scott Eastwood  "],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -3086,7 +3086,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/gh2ShN6ku8VOT8wNyEOgZQwhNtE.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zNnjHLDtV8Ti3aworltaeaLMov4.jpg",
     videoUrl: "242",
-    overview: "Now in his 60s, a guilt-ridden Michael Corleone seeks to free his family from the criminal underworld and legitimize his business empire through a deal with the Vatican. However, corporate corruption, internal power struggles, and a fierce new protégé draw him back into the violence he desperately tried to leave behind.",
+    overview: "Now in his 60s, a guilt-ridden Michael Corleone seeks to free his family from the criminal underworld and legitimize his business empire through a deal with the Vatican. However, corporate corruption, internal power struggles, and a fierce new protÃ©gÃ© draw him back into the violence he desperately tried to leave behind.",
     director: "Francis Ford Coppola",
     cast: ["Al Pacino, Diane Keaton, Talia Shire, Andy Garcia, Eli Wallach, Sofia Coppola  "],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -3275,7 +3275,7 @@ const MOVIES = [
     videoUrl: "1122573",
     overview: "Two extraction specialists are tasked with planning an escape route for a high-level female negotiator caught in the middle of a high-stakes, dangerous environment where the lines between friend and foe are blurred.",
     director: "Guy Ritchie",
-    cast: ["Henry Cavill, Jake Gyllenhaal, Eiza González, Carlos Bardem, Fisher Stevens  "],
+    cast: ["Henry Cavill, Jake Gyllenhaal, Eiza GonzÃ¡lez, Carlos Bardem, Fisher Stevens  "],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -3324,7 +3324,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/2VUmvqsHb6cEtdfscEA6fqqVzLg.jpg",
     backdrop: "https://4kwallpapers.com/images/wallpapers/ana-de-armas-5120x2880-20130.jpg",
     videoUrl: "541671",
-    overview: "Taking place between the events of John Wick: Chapter 3 – Parabellum and Chapter 4, ballerina-assassin Eve Macarro seeks revenge against the hitmen who murdered her family. Trained in the lethal traditions of the Ruska Roma, she embarks on a deadly hunt through the criminal underworld, crossing paths with familiar allies and enemies.",
+    overview: "Taking place between the events of John Wick: Chapter 3 â€“ Parabellum and Chapter 4, ballerina-assassin Eve Macarro seeks revenge against the hitmen who murdered her family. Trained in the lethal traditions of the Ruska Roma, she embarks on a deadly hunt through the criminal underworld, crossing paths with familiar allies and enemies.",
     director: "Len Wiseman  ",
     cast: ["Ana de Armas, Keanu Reeves, Ian McShane, Anjelica Huston, Gabriel Byrne, Lance Reddick, Norman Reedus  "],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -3375,7 +3375,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lkZ9gqCEjzX85lKR6Jjd1uGAXNp.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/iCDMBi6WLjUBnt24dNwHqqF81UL.jpg",
     videoUrl: "1858",
-    overview: "An ancient intergalactic war between two alien robot factions—the heroic Autobots and the evil Decepticons—comes to Earth. High school student Sam Witwicky unknowingly holds the key to the AllSpark, an ultimate power source, forcing him to team up with Optimus Prime and the Autobots to save humanity from destruction.",
+    overview: "An ancient intergalactic war between two alien robot factionsâ€”the heroic Autobots and the evil Decepticonsâ€”comes to Earth. High school student Sam Witwicky unknowingly holds the key to the AllSpark, an ultimate power source, forcing him to team up with Optimus Prime and the Autobots to save humanity from destruction.",
     director: "Michael Bay ",
     cast: ["Shia LaBeouf, Megan Fox, Josh Duhamel, Tyrese Gibson, John Turturro, Jon Voight, Peter Cullen "],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -3528,7 +3528,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nf5qaSEvyYSNeFH0YhSs5EsBLX9.jpg",
     backdrop: "https://qiibo.com/wp-content/uploads/2025/07/fantastic-four-poster.jpg",
     videoUrl: "617126",
-    overview: "Set against the backdrop of a vibrant, retro-futuristic 1960s alternate universe, Marvel's First Family—Reed Richards, Sue Storm, Johnny Storm, and Ben Grimm—face their most daunting challenge yet: defending Earth from the cosmic threat of Galactus and his herald, the Silver Surfer.",
+    overview: "Set against the backdrop of a vibrant, retro-futuristic 1960s alternate universe, Marvel's First Familyâ€”Reed Richards, Sue Storm, Johnny Storm, and Ben Grimmâ€”face their most daunting challenge yet: defending Earth from the cosmic threat of Galactus and his herald, the Silver Surfer.",
     director: "Matt Shakman ",
     cast: ["Pedro Pascal, Vanessa Kirby, Joseph Quinn, Ebon Moss-Bachrach, Julia Garner, Ralph Ineson "],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -3919,7 +3919,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xvx4Yhf0DVH8G4LzNISpMfFBDy2.jpg",
     backdrop: "https://static0.srcdn.com/wordpress/wp-content/uploads/2018/05/How-to-Train-Your-Dragon-3-Poster-Cropped.jpg",
     videoUrl: "166428",
-    overview: "Now chief of Berk, Hiccup has fulfilled his dream of creating a peaceful dragon utopia. However, as the village becomes dangerously overcrowded with rescued dragons, the sudden appearance of a female Light Fury and the threat of the ruthless dragon hunter Grimmel force Hiccup and Toothless to seek out The Hidden World—a legendary ancestral sanctuary for dragons.",
+    overview: "Now chief of Berk, Hiccup has fulfilled his dream of creating a peaceful dragon utopia. However, as the village becomes dangerously overcrowded with rescued dragons, the sudden appearance of a female Light Fury and the threat of the ruthless dragon hunter Grimmel force Hiccup and Toothless to seek out The Hidden Worldâ€”a legendary ancestral sanctuary for dragons.",
     director: "Dean DeBlois ",
     cast: ["Jay Baruchel, America Ferrera, Cate Blanchett, Craig Ferguson, F. Murray Abraham, Jonah Hill, Christopher Mintz-Plasse, Kristen Wiig, Kit Harington, Gerard Butler"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -4175,9 +4175,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg",
     backdrop: "https://wallpapercave.com/wp/wp9424755.jpg",
     videoUrl: "19995",
-    overview: "On the lush alien world of Pandora, a paraplegic former Marine named Jake Sully replaces his deceased twin brother on a unique corporate mission. Operating an avatar—a genetically engineered body that blends human DNA with that of the indigenous Na'vi—Jake falls in love with Neytiri, a Na'vi woman, and finds himself torn between following orders and protecting the alien world he has come to call home.",
+    overview: "On the lush alien world of Pandora, a paraplegic former Marine named Jake Sully replaces his deceased twin brother on a unique corporate mission. Operating an avatarâ€”a genetically engineered body that blends human DNA with that of the indigenous Na'viâ€”Jake falls in love with Neytiri, a Na'vi woman, and finds himself torn between following orders and protecting the alien world he has come to call home.",
     director: "James Cameron",
-    cast: ["Sam Worthington, Zoe Saldaña, Sigourney Weaver, Stephen Lang, Michelle Rodriguez, Giovanni Ribisi"],
+    cast: ["Sam Worthington, Zoe SaldaÃ±a, Sigourney Weaver, Stephen Lang, Michelle Rodriguez, Giovanni Ribisi"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -4194,7 +4194,7 @@ const MOVIES = [
     videoUrl: "76600",
     overview: "Set more than a decade after the events of the first film, Jake Sully and Neytiri have formed a family on Pandora. However, when an old threat returns to finish what was started, they must leave their forest home and seek refuge with the oceanic Metkayina clan, learning the ways of the water to keep each other safe.",
     director: "James Cameron",
-    cast: ["Sam Worthington, Zoe Saldaña, Sigourney Weaver, Stephen Lang, Kate Winslet, Cliff Curtis, Joel David Moore"],
+    cast: ["Sam Worthington, Zoe SaldaÃ±a, Sigourney Weaver, Stephen Lang, Kate Winslet, Cliff Curtis, Joel David Moore"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -4211,7 +4211,7 @@ const MOVIES = [
     videoUrl: "83533",
     overview: "Following the tragic losses of their recent battles, Jake Sully and Neytiri encounter a aggressive and volcanic-dwelling Na'vi tribe known as the Ash People, led by Varang. As grief and tension run high, the Sully family must navigate complex internal conflicts and the dangerous new dynamics on Pandora",
     director: "James Cameron",
-    cast: ["Sam Worthington, Zoe Saldaña, Sigourney Weaver, Stephen Lang, Oona Chaplin, Michelle Yeoh, Britain Dalton"],
+    cast: ["Sam Worthington, Zoe SaldaÃ±a, Sigourney Weaver, Stephen Lang, Oona Chaplin, Michelle Yeoh, Britain Dalton"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -4378,7 +4378,7 @@ const MOVIES = [
     videoUrl: "75656",
     overview: "An FBI agent and an Interpol detective track a team of illusionists known as The Four Horsemen. The group pulls off audacious bank heists during their high-profile stage shows, rewarding their audiences with the stolen money while staying one step ahead of the law using elaborate tricks and misdirection.",
     director: "Louis Leterrier",
-    cast: ["Jesse Eisenberg, Mark Ruffalo, Woody Harrelson, Isla Fisher, Dave Franco, Mélanie Laurent, Morgan Freeman, Michael Caine"],
+    cast: ["Jesse Eisenberg, Mark Ruffalo, Woody Harrelson, Isla Fisher, Dave Franco, MÃ©lanie Laurent, Morgan Freeman, Michael Caine"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -4410,7 +4410,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/oD3Eey4e4Z259XLm3eD3WGcoJAh.jpg",
     backdrop: "https://www.joblo.com/wp-content/uploads/2025/10/Now-You-See-Me-3-1280x720.jpg",
     videoUrl: "425274",
-    overview: "A decade after their last performance, the original Four Horsemen are pulled out of hiding when three young, rebellious illusionists—Charlie, Bosco, and June—impersonate them using digital deepfakes to pull off a crypto-heist. Recruited by what they believe is the secret society known as The Eye, the veteran magicians must team up with the rookies to execute a massive international heist targeting Veronika Vanderberg, the head of a corrupt, money-laundering South African diamond syndicate.",
+    overview: "A decade after their last performance, the original Four Horsemen are pulled out of hiding when three young, rebellious illusionistsâ€”Charlie, Bosco, and Juneâ€”impersonate them using digital deepfakes to pull off a crypto-heist. Recruited by what they believe is the secret society known as The Eye, the veteran magicians must team up with the rookies to execute a massive international heist targeting Veronika Vanderberg, the head of a corrupt, money-laundering South African diamond syndicate.",
     director: "Ruben Fleischer",
     cast: ["Jesse Eisenberg, Woody Harrelson, Dave Franco, Isla Fisher, Justice Smith, Dominic Sessa, Ariana Greenblatt, Lizzy Caplan, Rosamund Pike, Morgan Freeman"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -4567,7 +4567,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
     backdrop: "https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/MgXQGyNr1xbI8tJSYiMWv5kXg5g/AAAABd12fwHAGK_7EG-5T6R37hImS0IPa8pGZ8iWSbj6NL9DOwJ7njeXb4ydmeKpRjEcNQx10rprbFsSowbR-Qpp6maCmGGfxFlEwtH2GVSS0g64UgPpQDa1rlSiAg.jpg?r=564",
     videoUrl: "124364",
-    overview: "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest — including the terrifying creatures that come out when the sun goes down.",
+    overview: "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest â€” including the terrifying creatures that come out when the sun goes down.",
     director: "John Griffin",
     cast: ["Harold Perrineau, Catalina Sandino Moreno, Ricky He, David Alpay, Chloe Van Landschoot, Hannah Cheramy"],
     trending: false,
@@ -4676,7 +4676,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ilOKsGRHYc78R2tSMusAd3xGJWq.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/dA4PbgytuOtzvPBJWoqFo9034D.jpg",
     videoUrl: "124364",
-    overview: "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest — including the terrifying creatures that come out when the sun goes down.",
+    overview: "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest â€” including the terrifying creatures that come out when the sun goes down.",
     director: "Alex Kurtzman, Duane Capizzi, Roberto Orci, Jeff Kline",
     cast: ["Peter Cullen, Frank Welker, Jeffrey Combs, Tania Gunadi, Josh Keaton"],
     trending: false,
@@ -4792,7 +4792,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1BX1HZZqDoLDx9Ry4oET6dA9293.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/iTHKz6kCv1UyXfdcB4kutMQYsaD.jpg",
     videoUrl: "888",
-    overview: "Bitten by a neogenetic spider, college student Peter Parker develops spider-like superpowers. Now moonlighting as the masked hero Spider-Man, he battles a rogues' gallery of classic villains — including the Green Goblin, Venom, Doctor Octopus, and Kingpin — while balancing crimefighting with the struggles of his personal and student life.",
+    overview: "Bitten by a neogenetic spider, college student Peter Parker develops spider-like superpowers. Now moonlighting as the masked hero Spider-Man, he battles a rogues' gallery of classic villains â€” including the Green Goblin, Venom, Doctor Octopus, and Kingpin â€” while balancing crimefighting with the struggles of his personal and student life.",
     director: "John Semper (based on characters by Stan Lee & Steve Ditko)",
     cast: ["Christopher Daniel Barnes, Edward Asner, Joseph Campanella, Efrem Zimbalist Jr., Hank Azaria, Mark Hamill"],
     trending: false,
@@ -4921,14 +4921,14 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/mcRVsjMbhFstRK9z2oGRHiIvulr.jpg",
     backdrop: "https://images2.alphacoders.com/136/thumb-1920-1367517.jpeg",
     videoUrl: "1155089",
-    overview: "Death is coming — worse than death: oblivion. Not just for one Earth, but for every universe. As the mysterious Monitor gathers the greatest team of Super Heroes ever assembled to combat this ultimate threat, the Anti-Monitor is unleashed into the DC Multiverse and begins annihilating the different Earths that compose it, forcing heroes across realities to unite before all of existence is erased.",
+    overview: "Death is coming â€” worse than death: oblivion. Not just for one Earth, but for every universe. As the mysterious Monitor gathers the greatest team of Super Heroes ever assembled to combat this ultimate threat, the Anti-Monitor is unleashed into the DC Multiverse and begins annihilating the different Earths that compose it, forcing heroes across realities to unite before all of existence is erased.",
     director: "Jeff Wamester",
     cast: ["Matt Bomer, Jensen Ackles, Darren Criss, Meg Donnelly, Stana Katic, Jimmi Simpson, Zachary Quinto, Aldis Hodge, Harry Shum Jr., Alexandra Daddario"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
   {
-    title: "Justice League: Crisis on Infinite Earths – Part Two",
+    title: "Justice League: Crisis on Infinite Earths â€“ Part Two",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
     rating: 6.2,
@@ -4945,7 +4945,7 @@ const MOVIES = [
     featured: false,
   },
   {
-    title: "Justice League: Crisis on Infinite Earths – Part Three",
+    title: "Justice League: Crisis on Infinite Earths â€“ Part Three",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
     rating: 6.1,
@@ -4972,7 +4972,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/eifGNCSDuxJeS1loAXil5bIGgvC.jpg",
     backdrop: "https://zrockr.com/user-files/uploads/2017/11/maxresdefault.jpg",
     videoUrl: "141052",
-    overview: "Fueled by his restored faith in humanity and inspired by Superman's selfless sacrifice, Bruce Wayne enlists newfound ally Diana Prince to face an even greater threat. Together, Batman and Wonder Woman quickly recruit a team of metahumans — Aquaman, Cyborg, and the Flash — to stand against Steppenwolf and his army of Parademons. Despite forming this unprecedented league of heroes, it may be too late to save the planet from an assault of catastrophic proportions.",
+    overview: "Fueled by his restored faith in humanity and inspired by Superman's selfless sacrifice, Bruce Wayne enlists newfound ally Diana Prince to face an even greater threat. Together, Batman and Wonder Woman quickly recruit a team of metahumans â€” Aquaman, Cyborg, and the Flash â€” to stand against Steppenwolf and his army of Parademons. Despite forming this unprecedented league of heroes, it may be too late to save the planet from an assault of catastrophic proportions.",
     director: "Zack Snyder",
     cast: ["Ben Affleck, Henry Cavill, Gal Gadot, Ezra Miller, Jason Momoa, Ray Fisher, Amy Adams, Jeremy Irons, Diane Lane, Connie Nielsen, J.K. Simmons"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -4989,7 +4989,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gWcTaDFXDrOAPfVzfBFz0Aya5BE.jpg",
     backdrop: "https://wallpapercave.com/wp/wp6631318.jpg",
     videoUrl: "408220",
-    overview: "When innocent civilians begin committing unthinkable crimes across Metropolis, Gotham City, and beyond, Batman must call upon mystical counterparts to eradicate a demonic threat to the planet. This team of Dark Arts specialists — including John Constantine, Zatanna, and Deadman — must unravel the mystery of Earth's supernatural plague and contend with the rising, powerful villainous forces behind the siege, before it's too late for all of mankind.",
+    overview: "When innocent civilians begin committing unthinkable crimes across Metropolis, Gotham City, and beyond, Batman must call upon mystical counterparts to eradicate a demonic threat to the planet. This team of Dark Arts specialists â€” including John Constantine, Zatanna, and Deadman â€” must unravel the mystery of Earth's supernatural plague and contend with the rising, powerful villainous forces behind the siege, before it's too late for all of mankind.",
     director: "Jay Oliva",
     cast: ["Matt Ryan, Camilla Luddington, Jason O'Mara, Nicholas Turturro, Rosario Dawson, Jerry O'Connell, Alfred Molina"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -5072,7 +5072,7 @@ const MOVIES = [
     cast: ["Bryan Cranston", "Aaron Paul", "Anna Gunn", "Dean Norris", "Betsy Brandt"],
     trending: true,
     featured: false,
-    cinesrcId: "1396", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "1396", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -5107,17 +5107,17 @@ const MOVIES = [
       {
         season: 3,
         episodes: [
-          { episode: 1, title: "No Más" },
+          { episode: 1, title: "No MÃ¡s" },
           { episode: 2, title: "Caballo Sin Nombre" },
           { episode: 3, title: "I.F.T." },
           { episode: 4, title: "Green Light" },
-          { episode: 5, title: "Más" },
+          { episode: 5, title: "MÃ¡s" },
           { episode: 6, title: "Sunset" },
           { episode: 7, title: "One Minute" },
           { episode: 8, title: "I See You" },
           { episode: 9, title: "Kafkaesque" },
           { episode: 10, title: "Fly" },
-          { episode: 11, title: "Abiquiú" },
+          { episode: 11, title: "AbiquiÃº" },
           { episode: 12, title: "Half Measures" },
           { episode: 13, title: "Full Measure" },
         ],
@@ -5179,7 +5179,7 @@ const MOVIES = [
     cast: ["Karl Urban, Jack Quaid, Antony Starr, Erin Moriarty, Dominique McElligott, Jessie T. Usher, Laz Alonso, Chace Crawford, Tomer Kapon, Karen Fukuhara"],
     trending: false,
     featured: false,
-    cinesrcId: "76479", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "76479", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -5259,12 +5259,12 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/t5mbrd79o89pYB8OQ4QPFNkIRPm.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/wKXpV8QgNXtJ4OQyzqDy82SsURm.jpg",
     videoUrl: "",
-    overview: "A young Bruce Wayne fights crime and evil in Gotham City as the mysterious vigilante, the Batman. This animated series follows his early crimefighting years — from a solo detective battling classic villains like the Joker, Penguin, and Mr. Freeze, to eventually building the Bat-Family with Robin and Batgirl, and forming ties with the wider DC Universe.",
+    overview: "A young Bruce Wayne fights crime and evil in Gotham City as the mysterious vigilante, the Batman. This animated series follows his early crimefighting years â€” from a solo detective battling classic villains like the Joker, Penguin, and Mr. Freeze, to eventually building the Bat-Family with Robin and Batgirl, and forming ties with the wider DC Universe.",
     director: "Michael Goguen, Duane Capizzi",
     cast: ["Rino Romano, Alastair Duncan, Evan Sabara, Danielle Judovits, Kevin Michael Richardson, Ming-Na Wen, Mitch Pileggi"],
     trending: false,
     featured: false,
-    cinesrcId: "2022", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "2022", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -5369,9 +5369,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/sFC1ElvoKGdHJIWRpNB3xWJ9lJA.jpg",
     backdrop: "https://img10.hotstar.com/image/upload/f_auto,q_auto/sources/r1/cms/prod/9174/1776264519174-i",
     videoUrl: "439079",
-    overview: "A priest with a haunted past and a novice on the threshold of her final vows are sent by the Vatican to investigate the death of a young nun in Romania. Together, they uncover the order's unholy secret and must confront a malevolent demonic force in the form of a nun, risking their lives — and souls — to stop it from escaping the abbey.",
+    overview: "A priest with a haunted past and a novice on the threshold of her final vows are sent by the Vatican to investigate the death of a young nun in Romania. Together, they uncover the order's unholy secret and must confront a malevolent demonic force in the form of a nun, risking their lives â€” and souls â€” to stop it from escaping the abbey.",
     director: "Corin Hardy",
-    cast: ["Taissa Farmiga, Demián Bichir, Jonas Bloquet, Bonnie Aarons, Ingrid Bisu, Charlotte Hope"],
+    cast: ["Taissa Farmiga, DemiÃ¡n Bichir, Jonas Bloquet, Bonnie Aarons, Ingrid Bisu, Charlotte Hope"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -5403,9 +5403,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
     backdrop: "https://saintscroll.com/wp-content/uploads/2023/01/Screenshot-2023-01-19-at-1.33.19-PM-900x474.png",
     videoUrl: "315162",
-    overview: "Puss in Boots discovers that his passion for reckless adventure has taken its toll — he's burned through eight of his nine lives, leaving only one remaining. Determined to restore them, he sets out on an epic journey to find the mythical Last Wish, joined by his old flame Kitty Softpaws and an overly optimistic therapy dog, while a host of rivals — including Goldilocks, the Three Bears, and Big Jack Horner — race to reach it first.",
+    overview: "Puss in Boots discovers that his passion for reckless adventure has taken its toll â€” he's burned through eight of his nine lives, leaving only one remaining. Determined to restore them, he sets out on an epic journey to find the mythical Last Wish, joined by his old flame Kitty Softpaws and an overly optimistic therapy dog, while a host of rivals â€” including Goldilocks, the Three Bears, and Big Jack Horner â€” race to reach it first.",
     director: "Joel Crawford (Co-Director: Januel Mercado)",
-    cast: ["Antonio Banderas, Salma Hayek, Harvey Guillén, Florence Pugh, Olivia Colman, Ray Winstone, Samson Kayo, John Mulaney, Wagner Moura, Da'Vine Joy Randolph"],
+    cast: ["Antonio Banderas, Salma Hayek, Harvey GuillÃ©n, Florence Pugh, Olivia Colman, Ray Winstone, Samson Kayo, John Mulaney, Wagner Moura, Da'Vine Joy Randolph"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -5420,12 +5420,12 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/acrtAy8gmxcsEvrDP09MpMSCeDZ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rmRp41yelJG1tCCdoHRiHX8qp7g.jpg",
     videoUrl: "",
-    overview: "By daylight, Marinette Dupain-Cheng and Adrien Agreste are ordinary Parisian teenagers. But unbeknownst to their family and friends, the two carry a huge secret — using the powers of magical creatures called Kwamis, they transform into the superheroes Ladybug and Cat Noir. Tasked with protecting Paris from the villain Hawk Moth, they must balance their new responsibilities with ordinary teenage troubles of love, school, and friendship, all while remaining unaware of each other's true identities.",
+    overview: "By daylight, Marinette Dupain-Cheng and Adrien Agreste are ordinary Parisian teenagers. But unbeknownst to their family and friends, the two carry a huge secret â€” using the powers of magical creatures called Kwamis, they transform into the superheroes Ladybug and Cat Noir. Tasked with protecting Paris from the villain Hawk Moth, they must balance their new responsibilities with ordinary teenage troubles of love, school, and friendship, all while remaining unaware of each other's true identities.",
     director: "Thomas Astruc",
     cast: ["Cristina Vee, Bryce Papenbrook, Mela Lee, Carrie Keranen"],
     trending: false,
     featured: false,
-    cinesrcId: "65334", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "65334", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -5450,7 +5450,7 @@ const MOVIES = [
           { episode: 18, title: "La Marionnettiste" },
           { episode: 19, title: "Reflekta" },
           { episode: 20, title: "Guitar Vilain" },
-          { episode: 21, title: "Numéric" },
+          { episode: 21, title: "NumÃ©ric" },
           { episode: 22, title: "Princesse Fragrance" },
           { episode: 23, title: "Jackady" },
           { episode: 24, title: "Volpina" },
@@ -5461,11 +5461,11 @@ const MOVIES = [
       {
         season: 2,
         episodes: [
-          { episode: 1, title: "Pire Noël" },
+          { episode: 1, title: "Pire NoÃ«l" },
           { episode: 2, title: " Le Collectionneur" },
           { episode: 3, title: "Doudou Vilain" },
           { episode: 4, title: "Audimatrix" },
-          { episode: 5, title: "La Béfana" },
+          { episode: 5, title: "La BÃ©fana" },
           { episode: 6, title: "Riposte" },
           { episode: 7, title: "Robostus" },
           { episode: 8, title: "Gigantitan" },
@@ -5494,13 +5494,13 @@ const MOVIES = [
         episodes: [
           { episode: 1, title: "Rebrousse-Temps" },
           { episode: 2, title: "Papa Garou" },
-          { episode: 3, title: "Caméléon" },
+          { episode: 3, title: "CamÃ©lÃ©on" },
           { episode: 4, title: "Animaestro" },
           { episode: 5, title: " Boulangerix" },
           { episode: 6, title: "Silence" },
           { episode: 7, title: "Oblivio" },
           { episode: 8, title: "Climatika 2" },
-          { episode: 9, title: "Poupéflekta" },
+          { episode: 9, title: "PoupÃ©flekta" },
           { episode: 10, title: "Oni-Chan" },
           { episode: 11, title: "Miraculeur" },
           { episode: 12, title: "La Marionnettiste 2" },
@@ -5510,12 +5510,12 @@ const MOVIES = [
           { episode: 16, title: "Festin" },
           { episode: 17, title: "Ikari Gozen" },
           { episode: 18, title: "Timetagger" },
-          { episode: 19, title: "Trouble Fête" },
+          { episode: 19, title: "Trouble FÃªte" },
           { episode: 20, title: "Gamer 2.0" },
           { episode: 21, title: "Chat Blanc" },
-          { episode: 22, title: "Félix" },
+          { episode: 22, title: "FÃ©lix" },
           { episode: 23, title: "Ladybug" },
-          { episode: 24, title: "Maître Noël" },
+          { episode: 24, title: "MaÃ®tre NoÃ«l" },
           { episode: 25, title: "Mangeamour" },
           { episode: 26, title: "Miracle Queen" },
         ],
@@ -5523,11 +5523,11 @@ const MOVIES = [
       {
         season: 4,
         episodes: [
-          { episode: 1, title: "Vérité" },
+          { episode: 1, title: "VÃ©ritÃ©" },
           { episode: 2, title: "Mensonge" },
           { episode: 3, title: "Le gang des secrets" },
           { episode: 4, title: " M. Pigeon 72" },
-          { episode: 5, title: "Psycomédien" },
+          { episode: 5, title: "PsycomÃ©dien" },
           { episode: 6, title: "Fu Furieux" },
           { episode: 7, title: "Pirkell" },
           { episode: 8, title: "Queen Banana" },
@@ -5543,12 +5543,12 @@ const MOVIES = [
           { episode: 18, title: "Exauceur" },
           { episode: 19, title: "Simplificator" },
           { episode: 20, title: "Qilin" },
-          { episode: 21, title: "Chère Famille" },
-          { episode: 22, title: "Ephémère" },
+          { episode: 21, title: "ChÃ¨re Famille" },
+          { episode: 22, title: "EphÃ©mÃ¨re" },
           { episode: 23, title: "Kuro Neko" },
           { episode: 24, title: "Penalteam" },
           { episode: 25, title: "Risque" },
-          { episode: 26, title: "Réplique" },
+          { episode: 26, title: "RÃ©plique" },
         ],
       },
       {
@@ -5564,7 +5564,7 @@ const MOVIES = [
           { episode: 8, title: "Reunion" },
           { episode: 9, title: "Exaltation" },
           { episode: 10, title: "Transmission" },
-          { episode: 11, title: "Déflagration" },
+          { episode: 11, title: "DÃ©flagration" },
           { episode: 12, title: "Perfection" },
           { episode: 13, title: "Migration" },
           { episode: 14, title: "Derision" },
@@ -5572,14 +5572,14 @@ const MOVIES = [
           { episode: 16, title: "Protection" },
           { episode: 17, title: "Adoration" },
           { episode: 18, title: "Emotion" },
-          { episode: 19, title: "Prétention" },
+          { episode: 19, title: "PrÃ©tention" },
           { episode: 20, title: "Revelation" },
           { episode: 21, title: "Confrontation" },
           { episode: 22, title: "Collusion" },
           { episode: 23, title: "Revolution" },
           { episode: 24, title: "Representation" },
           { episode: 25, title: "Conformation" },
-          { episode: 26, title: "Re-création" },
+          { episode: 26, title: "Re-crÃ©ation" },
           { episode: 27, title: "Action" },
         ],
       },
@@ -5595,18 +5595,18 @@ const MOVIES = [
           { episode: 7, title: "El Toro De Piedra" },
           { episode: 8, title: "Vampigami" },
           { episode: 9, title: "Monsieur Agreste" },
-          { episode: 10, title: "Le Château Noir" },
+          { episode: 10, title: "Le ChÃ¢teau Noir" },
           { episode: 11, title: "Revelator" },
           { episode: 12, title: "Psyconductrice" },
           { episode: 13, title: "Yaksi Gozen" },
           { episode: 14, title: "Couchorak" },
           { episode: 15, title: "La Redresseuse" },
           { episode: 16, title: "Noe" },
-          { episode: 17, title: "La Fée de Beaux Rêves" },
+          { episode: 17, title: "La FÃ©e de Beaux RÃªves" },
           { episode: 18, title: "Les Crassetastrophes" },
           { episode: 19, title: "Riginarazione" },
           { episode: 20, title: "Renverse-coeurs" },
-          { episode: 21, title: "Les Titans Chaînés" },
+          { episode: 21, title: "Les Titans ChaÃ®nÃ©s" },
           { episode: 22, title: "Lady Chaos" },
           { episode: 23, title: "Tristanansi" },
           { episode: 24, title: "La Reine de Frayeurville" },
@@ -5630,9 +5630,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dQNJ8SdCMn3zWwHzzQD2xrphR1X.jpg",
     backdrop: "https://wallpapercg.com/download/miraculous-tales-of-ladybug-cat-noir--26041.jpeg",
     videoUrl: "496450",
-    overview: "This animated musical feature film serves as a reimagining and origin story of the globally popular series. It follows Marinette Dupain-Cheng, a socially awkward Parisian teenager, and Adrien Agreste, the lonely son of a wealthy fashion mogul. When a sinister villain named Hawk Moth threatens Paris with dark magic, both teenagers are chosen to wield the magical jewels known as Miraculous. Transforming into the superheroes Ladybug and Cat Noir, they must learn to master their new powers and work together to save the city, all while keeping their true identities a secret from the world—and each other.",
+    overview: "This animated musical feature film serves as a reimagining and origin story of the globally popular series. It follows Marinette Dupain-Cheng, a socially awkward Parisian teenager, and Adrien Agreste, the lonely son of a wealthy fashion mogul. When a sinister villain named Hawk Moth threatens Paris with dark magic, both teenagers are chosen to wield the magical jewels known as Miraculous. Transforming into the superheroes Ladybug and Cat Noir, they must learn to master their new powers and work together to save the city, all while keeping their true identities a secret from the worldâ€”and each other.",
     director: "Jeremy Zag",
-    cast: ["Anouck Hautbois, Benjamin Bollen, Antoine Tomé (French) / Cristina Vee, Bryce Papenbrook, Keith Silverstein (English)"],
+    cast: ["Anouck Hautbois, Benjamin Bollen, Antoine TomÃ© (French) / Cristina Vee, Bryce Papenbrook, Keith Silverstein (English)"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -5647,7 +5647,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9YbyvcrHmY2SVbdfXpb8mC4Fy0g.jpg",
     backdrop: "https://www.acmodasi.in/amdb/images/movie/w1920/75/58/miraculous-world-new-york-united-heroez-2020-177377.webp",
     videoUrl: "755812",
-    overview: "In the first feature-length television special of the Miraculous World series, Marinette's school class travels to New York City to celebrate French-American Friendship Week. The trip seems perfect until Adrien is initially left behind by his strict father. However, Gabriel Agreste has his own hidden agenda—he is traveling to New York to steal an ancient, powerful native American necklace holding the Eagle Miraculous. When Hawk Moth sets his plan into motion, Ladybug and Cat Noir must join forces with New York's legendary homegrown protectors, the United HeroeZ, to stop a catastrophic threat to global peace.",
+    overview: "In the first feature-length television special of the Miraculous World series, Marinette's school class travels to New York City to celebrate French-American Friendship Week. The trip seems perfect until Adrien is initially left behind by his strict father. However, Gabriel Agreste has his own hidden agendaâ€”he is traveling to New York to steal an ancient, powerful native American necklace holding the Eagle Miraculous. When Hawk Moth sets his plan into motion, Ladybug and Cat Noir must join forces with New York's legendary homegrown protectors, the United HeroeZ, to stop a catastrophic threat to global peace.",
     director: "Thomas Astruc",
     cast: ["Cristina Vee, Bryce Papenbrook, Keith Silverstein, Zeno Robinson, Jaimi Gray, Scott Whyte"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -5683,7 +5683,7 @@ const MOVIES = [
     videoUrl: "1147400",
     overview: "In this unique dimension-hopping television special, Ladybug and Cat Noir face an entirely new kind of threat when two corrupted Miraculous holders from a dark parallel universe break into their world. In this mirror reality, the equivalents of Marinette and Adrien are the villainous Shadybug and Claw Noir, who serve under the cruel command of the Supreme. To defeat these lethal variants and save both versions of Paris, Ladybug and Cat Noir must team up with Betterfly, a heroic alternate-universe version of Monarch who uses the Butterfly Miraculous to inspire hope rather than despair.",
     director: "Thomas Astruc",
-    cast: ["Anouck Hautbois, Benjamin Bollen, Antoine Tomé (French) / Cristina Vee, Bryce Papenbrook, Keith Silverstein (English)"],
+    cast: ["Anouck Hautbois, Benjamin Bollen, Antoine TomÃ© (French) / Cristina Vee, Bryce Papenbrook, Keith Silverstein (English)"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -5766,7 +5766,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
     backdrop: "https://img1.wsimg.com/isteam/ip/d6a3e7a7-e920-4711-bf09-856dd846af78/THEHOUSEMAID.webp/:/rs=w:1280",
     videoUrl: "1368166",
-    overview: "Based on the wildly popular 2022 psychological thriller novel by Freida McFadden, the film follows Millie Calloway, a young woman with a troubled past struggling to rebuild her life on parole. Desperate for a job, she is hired as a live-in housemaid for the wealthy Winchester family at their luxurious Long Island estate. What starts as a dream opportunity quickly devolves into a nightmare as Millie uncovers the dark, deeply twisted secrets hidden behind the family's picture-perfect facade—finding herself trapped in a dangerous game of psychological manipulation where nothing is as it seems.",
+    overview: "Based on the wildly popular 2022 psychological thriller novel by Freida McFadden, the film follows Millie Calloway, a young woman with a troubled past struggling to rebuild her life on parole. Desperate for a job, she is hired as a live-in housemaid for the wealthy Winchester family at their luxurious Long Island estate. What starts as a dream opportunity quickly devolves into a nightmare as Millie uncovers the dark, deeply twisted secrets hidden behind the family's picture-perfect facadeâ€”finding herself trapped in a dangerous game of psychological manipulation where nothing is as it seems.",
     director: "Paul Feig",
     cast: ["Sydney Sweeney, Amanda Seyfried, Brandon Sklenar, Michele Morrone, Elizabeth Perkins"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -5785,7 +5785,7 @@ const MOVIES = [
     videoUrl: "157336",
     overview: "During a manned mission to Mars, astronaut Mark Watney is presumed dead after a fierce storm separates him from his crew and forces them to evacuate the planet. Left stranded alone on the hostile Martian landscape with meager supplies, the ingenious botanist must rely on his scientific wit, engineering skills, and sheer grit to survive. Using his knowledge to grow potatoes inside an artificial habitat and modify old equipment, he manages to broadcast a desperate signal back to Earth, triggering an audacious, high-stakes international rescue mission by NASA and his former crewmates.",
     director: "Ridley Scott",
-    cast: ["Matt Damon, Jessica Chastain, Jeff Daniels, Kristen Wiig, Chiwetel Ejiofor, Sean Bean, Kate Mara, Sebastian Stan, Donald Glover, Michael Peña"],
+    cast: ["Matt Damon, Jessica Chastain, Jeff Daniels, Kristen Wiig, Chiwetel Ejiofor, Sean Bean, Kate Mara, Sebastian Stan, Donald Glover, Michael PeÃ±a"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -5802,7 +5802,7 @@ const MOVIES = [
     videoUrl: "2501",
     overview: "During a manned mission to Mars, astronaut Mark Watney is presumed dead after a fierce storm separates him from his crew and forces them to evacuate the planet. Left stranded alone on the hostile Martian landscape with meager supplies, the ingenious botanist must rely on his scientific wit, engineering skills, and sheer grit to survive. Using his knowledge to grow potatoes inside an artificial habitat and modify old equipment, he manages to broadcast a desperate signal back to Earth, triggering an audacious, high-stakes international rescue mission by NASA and his former crewmates.",
     director: "Ridley Scott",
-    cast: ["Matt Damon, Jessica Chastain, Jeff Daniels, Kristen Wiig, Chiwetel Ejiofor, Sean Bean, Kate Mara, Sebastian Stan, Donald Glover, Michael Peña"],
+    cast: ["Matt Damon, Jessica Chastain, Jeff Daniels, Kristen Wiig, Chiwetel Ejiofor, Sean Bean, Kate Mara, Sebastian Stan, Donald Glover, Michael PeÃ±a"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -5834,9 +5834,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/15rMz5MRXFp7CP4VxhjYw4y0FUn.jpg",
     backdrop: "https://www.reelworldtheology.com/wp-content/uploads/2016/07/bourne-ultimatum-header.jpg",
     videoUrl: "2503",
-    overview: "Jason Bourne continues his high-stakes quest to uncover the dark truths of his past while evading a new generation of highly trained black-ops assassins. Tracking clues from Moscow, Paris, Madrid, and London all the way to New York City, Bourne races to expose Operation Blackbriar—the sinister evolution of the Treadstone program that created him—and finally discover his true identity as David Webb.",
+    overview: "Jason Bourne continues his high-stakes quest to uncover the dark truths of his past while evading a new generation of highly trained black-ops assassins. Tracking clues from Moscow, Paris, Madrid, and London all the way to New York City, Bourne races to expose Operation Blackbriarâ€”the sinister evolution of the Treadstone program that created himâ€”and finally discover his true identity as David Webb.",
     director: "Paul Greengrass",
-    cast: ["Matt Damon, Joan Allen, David Strathairn, Julia Stiles, Scott Glenn, Albert Finney, Edgar Ramírez"],
+    cast: ["Matt Damon, Joan Allen, David Strathairn, Julia Stiles, Scott Glenn, Albert Finney, Edgar RamÃ­rez"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -5868,7 +5868,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/xA7N41glw17MBQtcWSm2eBlBRuG.jpg",
     backdrop: "https://media.themoviedb.org/t/p/w1000_and_h563_face/t8v8d5tn4L3BT3I1j86DDt3AhyH.jpg",
     videoUrl: "324668",
-    overview: "A decade after walking away from the agency, a now-fully-remembered Jason Bourne is pulled out of the shadows. Scrimping a living via underground bare-knuckle boxing matches in Greece, his quiet isolation ends when his old ally, Nicky Parsons, hacks into the CIA’s most secure mainframe. She uncovers explosive new files regarding Treadstone's origins and a deeply personal secret about Bourne's father. Hunted across Athens, Berlin, and Las Vegas, Bourne must evade a ruthless new CIA director and a lethal asset while uncovering a massive global surveillance conspiracy known as Iron Hand.",
+    overview: "A decade after walking away from the agency, a now-fully-remembered Jason Bourne is pulled out of the shadows. Scrimping a living via underground bare-knuckle boxing matches in Greece, his quiet isolation ends when his old ally, Nicky Parsons, hacks into the CIAâ€™s most secure mainframe. She uncovers explosive new files regarding Treadstone's origins and a deeply personal secret about Bourne's father. Hunted across Athens, Berlin, and Las Vegas, Bourne must evade a ruthless new CIA director and a lethal asset while uncovering a massive global surveillance conspiracy known as Iron Hand.",
     director: "Paul Greengrass",
     cast: ["Matt Damon, Tommy Lee Jones, Alicia Vikander, Vincent Cassel, Julia Stiles, Riz Ahmed"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -5887,7 +5887,7 @@ const MOVIES = [
     videoUrl: "286217",
     overview: "During a manned mission to Mars, astronaut Mark Watney is presumed dead after a fierce storm separates him from his crew and forces them to evacuate the planet. Left stranded alone on the hostile Martian landscape with meager supplies, the ingenious botanist must rely on his scientific wit, engineering skills, and sheer grit to survive. Using his knowledge to grow potatoes inside an artificial habitat and modify old equipment, he manages to broadcast a desperate signal back to Earth, triggering an audacious, high-stakes international rescue mission by NASA and his former crewmates.",
     director: "Ridley Scott",
-    cast: ["Matt Damon, Jessica Chastain, Jeff Daniels, Kristen Wiig, Chiwetel Ejiofor, Sean Bean, Kate Mara, Sebastian Stan, Donald Glover, Michael Peña"],
+    cast: ["Matt Damon, Jessica Chastain, Jeff Daniels, Kristen Wiig, Chiwetel Ejiofor, Sean Bean, Kate Mara, Sebastian Stan, Donald Glover, Michael PeÃ±a"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -5955,7 +5955,7 @@ const MOVIES = [
     videoUrl: "1241982",
     overview: "Three years after her first grand voyage, Moana receives an unexpected call from her wayfinding ancestors. This cosmic sign urges her to journey far beyond the shores of Motunui into the dangerous, long-lost waters of the Oceania seas. To break a ancient curse that has kept the people of the ocean separated, she reunites with the legendary demigod Maui and puts together a brand-new crew of unlikely mariners to face off against sinister new entities of the deep.",
     director: "David Derrick Jr., Jason Hand, Dana Ledoux Miller",
-    cast: ["Auli'i Cravalho, Dwayne Johnson, Hualālai Chung, Rose Matafeo, David Fane, Awhimai Fraser, Gerald Ramsey"],
+    cast: ["Auli'i Cravalho, Dwayne Johnson, HualÄlai Chung, Rose Matafeo, David Fane, Awhimai Fraser, Gerald Ramsey"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -5972,7 +5972,7 @@ const MOVIES = [
     videoUrl: "1108427",
     overview: "A live-action reimagining of Disney's hit 2016 animated feature. The film follows the fearless young Pacific Islander wayfinder, Moana, as she answers the ocean's call and sets sail beyond the safety of her home reef. Teaming up with the legendary, larger-than-life demigod Maui, she embarks on an epic, high-seas voyage to confront ancient entities and restore the heart of Te Fiti to save her people.",
     director: "Thomas Kail",
-    cast: ["Catherine Lagaʻaia, Dwayne Johnson, John Tui, Frankie Adams, Rena Owen"],
+    cast: ["Catherine LagaÊ»aia, Dwayne Johnson, John Tui, Frankie Adams, Rena Owen"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -6004,7 +6004,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/ts996lKsxvjkO2yiYG0ht4qAicO.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/iWak7wT0j6ycCc8lKr4NBz9c7n5.jpg",
     videoUrl: "210577",
-    overview: "On the morning of their fifth wedding anniversary, former New York writer Nick Dunne returns home to find his suburban Missouri house in disarray and his beautiful, brilliant wife, Amy, missing. Under intense pressure from both the police and a growing media frenzy, Nick's calm, detached demeanor begins to make him look highly suspicious. As the investigation deepens, Amy’s diary entries reveal a deeply troubled marriage, leaving everyone to wonder: did Nick Dunne kill his wife, or is there a much more calculated game at play?",
+    overview: "On the morning of their fifth wedding anniversary, former New York writer Nick Dunne returns home to find his suburban Missouri house in disarray and his beautiful, brilliant wife, Amy, missing. Under intense pressure from both the police and a growing media frenzy, Nick's calm, detached demeanor begins to make him look highly suspicious. As the investigation deepens, Amyâ€™s diary entries reveal a deeply troubled marriage, leaving everyone to wonder: did Nick Dunne kill his wife, or is there a much more calculated game at play?",
     director: "David Fincher",
     cast: ["Ben Affleck, Rosamund Pike, Neil Patrick Harris, Tyler Perry, Carrie Coon, Kim Dickens"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6026,7 +6026,7 @@ const MOVIES = [
     cast: ["Tara Strong, Meagan Smith, Paul Eiding, Dee Bradley Baker, Steven Blum, Richard Steven Horvitz, Richard McGonagle, Fred Tatasciore, Jim Ward"],
     trending: false,
     featured: false,
-    cinesrcId: "4686", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "4686", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -6116,7 +6116,7 @@ const MOVIES = [
     cast: ["Yuri Lowenthal, Ashley Johnson, Greg Cipes, Dee Bradley Baker, Paul Eiding, Vyvan Pham, Jeff Bennett, Richard McGonagle"],
     trending: false,
     featured: false,
-    cinesrcId: "6040", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "6040", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -6197,7 +6197,7 @@ const MOVIES = [
     cast: ["Yuri Lowenthal, Ashley Johnson, Greg Cipes, Dee Bradley Baker, Paul Eiding, Vyvan Pham, Jeff Bennett, Richard McGonagle"],
     trending: false,
     featured: false,
-    cinesrcId: "31109", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "31109", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -6279,12 +6279,12 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/uos1avg8fudMB3t1jYxHkzLDCJC.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/2FCDydVqTYsIO0d16DT32nxm7g8.jpg",
     videoUrl: "",
-    overview: "Now sixteen and craving independence, Ben Tennyson sets out to be a solo superhero — until Grandpa Max partners him with Rook Blonko, an alien Plumber recruit from the planet Revonnah. Together, using an evolved Omnitrix with a whole new roster of alien forms, they defend Earth from returning threats and new villains across the galaxy.",
+    overview: "Now sixteen and craving independence, Ben Tennyson sets out to be a solo superhero â€” until Grandpa Max partners him with Rook Blonko, an alien Plumber recruit from the planet Revonnah. Together, using an evolved Omnitrix with a whole new roster of alien forms, they defend Earth from returning threats and new villains across the galaxy.",
     director: "Duncan Rouleau, Joe Casey, Joe Kelly, Steven T. Seagle",
     cast: ["Yuri Lowenthal, Bumper Robinson, Paul Eiding, Dee Bradley Baker, Eric Bauza, Corey Burton, John DiMaggio, Rob Paulsen"],
     trending: false,
     featured: false,
-    cinesrcId: "46922", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "46922", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -6424,7 +6424,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/pSgXKPU5h6U89ipF7HBYajvYt7j.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rHf6t1BfiaVD18gF2oTZO9kw2pS.jpg",
     videoUrl: "353486",
-    overview: "Four teenagers in detention discover an old video game console with a game they've never heard of. When they decide to play, they're immediately sucked into the jungle world of Jumanji, taking on the bodies of their adult avatars. To escape and return to the real world, they must complete the most dangerous adventure of their lives — together.",
+    overview: "Four teenagers in detention discover an old video game console with a game they've never heard of. When they decide to play, they're immediately sucked into the jungle world of Jumanji, taking on the bodies of their adult avatars. To escape and return to the real world, they must complete the most dangerous adventure of their lives â€” together.",
     director: "Jake Kasdan",
     cast: ["Dwayne Johnson, Jack Black, Kevin Hart, Karen Gillan, Nick Jonas, Bobby Cannavale, Rhys Darby, Alex Wolff, Ser'Darius Blain, Madison Iseman, Morgan Turner, Colin Hanks"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6441,7 +6441,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/jyw8VKYEiM1UDzPB7NsisUgBeJ8.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qgch2rFskIxDMgwrD5lWTaB4nBl.jpg",
     videoUrl: "512200",
-    overview: "As the gang returns to Jumanji to rescue one of their own, they discover that nothing is as they expect. The game has changed, and the players must brave parts unknown — from arid deserts to snowy mountains — to escape the world's most dangerous game.",
+    overview: "As the gang returns to Jumanji to rescue one of their own, they discover that nothing is as they expect. The game has changed, and the players must brave parts unknown â€” from arid deserts to snowy mountains â€” to escape the world's most dangerous game.",
     director: "Jake Kasdan",
     cast: ["Dwayne Johnson, Jack Black, Kevin Hart, Karen Gillan, Nick Jonas, Bobby Cannavale, Rhys Darby, Alex Wolff, Ser'Darius Blain, Madison Iseman, Morgan Turner, Colin Hanks"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6458,7 +6458,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lMrxYKKhd4lqRzwUHAy5gcx9PSO.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/klJMCIblHLFwCuGjKz7tyOpekIC.jpg",
     videoUrl: "36557",
-    overview: "Le Chiffre, a banker to the world's terrorists, is scheduled to participate in a high-stakes poker game in Montenegro, where he intends to use his winnings to rebuild his financial standing after a failed investment. James Bond, newly promoted to 00 status, is sent to bankrupt him at the table — but the mission spirals into a deadly game of trust, betrayal, and survival that will define the agent he becomes.",
+    overview: "Le Chiffre, a banker to the world's terrorists, is scheduled to participate in a high-stakes poker game in Montenegro, where he intends to use his winnings to rebuild his financial standing after a failed investment. James Bond, newly promoted to 00 status, is sent to bankrupt him at the table â€” but the mission spirals into a deadly game of trust, betrayal, and survival that will define the agent he becomes.",
     director: "Martin Campbell",
     cast: ["Daniel Craig, Eva Green, Mads Mikkelsen, Judi Dench, Jeffrey Wright, Giancarlo Giannini, Caterina Murino"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6475,7 +6475,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/e3DXXLJHGqMx9yYpXsql1XNljmM.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3CqMIX3ZlrD0pU3fpBL6DM0Cneb.jpg",
     videoUrl: "10764",
-    overview: "Continuing directly from Casino Royale, James Bond descends into mystery as he tries to stop a shadowy organization from eliminating a country's most valuable resource. Betrayed by Vesper, the woman he loved, Bond fights the urge to make his mission personal — pursuing the truth alongside M, only to discover the conspiracy runs far deeper and more dangerous than anyone imagined.",
+    overview: "Continuing directly from Casino Royale, James Bond descends into mystery as he tries to stop a shadowy organization from eliminating a country's most valuable resource. Betrayed by Vesper, the woman he loved, Bond fights the urge to make his mission personal â€” pursuing the truth alongside M, only to discover the conspiracy runs far deeper and more dangerous than anyone imagined.",
     director: "Marc Forster",
     cast: ["Daniel Craig, Olga Kurylenko, Mathieu Amalric, Judi Dench, Jeffrey Wright, Giancarlo Giannini, Gemma Arterton, Jesper Christensen"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6492,9 +6492,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/d0IVecFQvsGdSbnMAHqiYsNYaJT.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/lnAqZDaP0yejFsuHZqeTGJOeRov.jpg",
     videoUrl: "37724",
-    overview: "Bond's loyalty to M is tested when her past comes back to haunt her. After a mission in Istanbul goes wrong and he's presumed dead, Bond returns to find MI6 under a devastating cyber attack from a mysterious enemy. As the threat closes in, 007 must track down and destroy it — no matter how personal the cost becomes.",
+    overview: "Bond's loyalty to M is tested when her past comes back to haunt her. After a mission in Istanbul goes wrong and he's presumed dead, Bond returns to find MI6 under a devastating cyber attack from a mysterious enemy. As the threat closes in, 007 must track down and destroy it â€” no matter how personal the cost becomes.",
     director: "Sam Mendes",
-    cast: ["Daniel Craig, Javier Bardem, Ralph Fiennes, Naomie Harris, Bérénice Marlohe, Albert Finney, Judi Dench"],
+    cast: ["Daniel Craig, Javier Bardem, Ralph Fiennes, Naomie Harris, BÃ©rÃ©nice Marlohe, Albert Finney, Judi Dench"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -6509,9 +6509,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/zj8ongFhtWNsVlfjOGo8pSr7PQg.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/daZ7Z8IvbbeHQVQNK8RXr32OHtk.jpg",
     videoUrl: "37724",
-    overview: "A cryptic message from Bond's past sends him on a trail to uncover a sinister organization known as S.P.E.C.T.R.E. While M battles political forces to keep the secret service alive, Bond covertly enlists Moneypenny and Q to help him track down Dr. Madeleine Swann, daughter of his old nemesis, who may hold the key to unraveling the conspiracy — and to a chilling personal connection between Bond and the enemy he's chasing.",
+    overview: "A cryptic message from Bond's past sends him on a trail to uncover a sinister organization known as S.P.E.C.T.R.E. While M battles political forces to keep the secret service alive, Bond covertly enlists Moneypenny and Q to help him track down Dr. Madeleine Swann, daughter of his old nemesis, who may hold the key to unraveling the conspiracy â€” and to a chilling personal connection between Bond and the enemy he's chasing.",
     director: "Sam Mendes",
-    cast: ["Daniel Craig, Christoph Waltz, Léa Seydoux, Ben Whishaw, Naomie Harris, Dave Bautista, Monica Bellucci, Ralph Fiennes"],
+    cast: ["Daniel Craig, Christoph Waltz, LÃ©a Seydoux, Ben Whishaw, Naomie Harris, Dave Bautista, Monica Bellucci, Ralph Fiennes"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -6528,7 +6528,7 @@ const MOVIES = [
     videoUrl: "370172",
     overview: "Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
     director: "Cary Joji Fukunaga",
-    cast: ["Daniel Craig, Rami Malek, Léa Seydoux, Lashana Lynch, Ben Whishaw, Naomie Harris, Jeffrey Wright, Christoph Waltz, Ralph Fiennes, Ana de Armas"],
+    cast: ["Daniel Craig, Rami Malek, LÃ©a Seydoux, Lashana Lynch, Ben Whishaw, Naomie Harris, Jeffrey Wright, Christoph Waltz, Ralph Fiennes, Ana de Armas"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -6543,14 +6543,14 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/gZWl93sf8AxavYpVT1Un6EF3oCj.jpg",
     videoUrl: "475557",
-    overview: "In Gotham City, mentally troubled comedian Arthur Fleck embarks on a downward spiral of social revolution and bloody crime. A party clown and failed stand-up comedian leading an impoverished life with his ailing mother, Arthur is shunned by society and branded a freak — pushing him to embrace a life of chaos and transform into his infamous alter-ego: the Joker.",
+    overview: "In Gotham City, mentally troubled comedian Arthur Fleck embarks on a downward spiral of social revolution and bloody crime. A party clown and failed stand-up comedian leading an impoverished life with his ailing mother, Arthur is shunned by society and branded a freak â€” pushing him to embrace a life of chaos and transform into his infamous alter-ego: the Joker.",
     director: "Todd Phillips",
     cast: ["Joaquin Phoenix, Robert De Niro, Zazie Beetz, Frances Conroy, Brett Cullen, Bill Camp, Glenn Fleshler"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
   {
-    title: "Joker: Folie à Deux ",
+    title: "Joker: Folie Ã  Deux ",
     type: "Movie", // Use "Movie" or "TV Show"
     year: 2024,
     rating: 5.2,
@@ -6560,7 +6560,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/if8QiqCI7WAGImKcJCfzp6VTyKA.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/uGmYqxh8flqkudioyFtD7IJSHxK.jpg",
     videoUrl: "889737",
-    overview: "While institutionalized at Arkham State Hospital, Arthur Fleck forms a volatile connection with Harleen Lee Quinzel. Their relationship evolves into a shared delusion that unfolds alongside Arthur's trial for the crimes he committed as the Joker — blurring the line between love, madness, and performance.",
+    overview: "While institutionalized at Arkham State Hospital, Arthur Fleck forms a volatile connection with Harleen Lee Quinzel. Their relationship evolves into a shared delusion that unfolds alongside Arthur's trial for the crimes he committed as the Joker â€” blurring the line between love, madness, and performance.",
     director: "Todd Phillips",
     cast: ["Joaquin Phoenix, Lady Gaga, Brendan Gleeson, Catherine Keener, Zazie Beetz, Harry Lawtey"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6594,7 +6594,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vuza0WqY239yBXOadKlGwJsZJFE.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/kjWIp6COK4MKF0KSffzUD8l9Kuo.jpg",
     videoUrl: "37165",
-    overview: "An insurance salesman discovers his entire life is actually a TV show. Truman Burbank has no idea that everything in his world — his family, friends, and hometown — is part of a massive, elaborately constructed television set, with his every move broadcast live to billions around the globe. As he begins to notice cracks in the illusion, Truman must decide whether to uncover the truth and break free.",
+    overview: "An insurance salesman discovers his entire life is actually a TV show. Truman Burbank has no idea that everything in his world â€” his family, friends, and hometown â€” is part of a massive, elaborately constructed television set, with his every move broadcast live to billions around the globe. As he begins to notice cracks in the illusion, Truman must decide whether to uncover the truth and break free.",
     director: "Peter Weir",
     cast: ["Jim Carrey, Laura Linney, Noah Emmerich, Natascha McElhone, Holland Taylor, Ed Harris"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6611,7 +6611,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/yhIsVvcUm7QxzLfT6HW2wLf5ajY.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/k6UGKIF7EWHUGvXRVWjlp4YzKUB.jpg",
     videoUrl: "564",
-    overview: "In the Sahara Desert, adventurer Rick O'Connell teams up with Egyptologist Evelyn Carnahan and her cowardly brother Jonathan on an expedition to Hamunaptra, the legendary City of the Dead. There, they accidentally awaken Imhotep, a cursed high priest condemned to an eternity as one of the living dead 3,000 years ago — unleashing a vengeful, ancient terror upon the modern world.",
+    overview: "In the Sahara Desert, adventurer Rick O'Connell teams up with Egyptologist Evelyn Carnahan and her cowardly brother Jonathan on an expedition to Hamunaptra, the legendary City of the Dead. There, they accidentally awaken Imhotep, a cursed high priest condemned to an eternity as one of the living dead 3,000 years ago â€” unleashing a vengeful, ancient terror upon the modern world.",
     director: "Stephen Sommers",
     cast: ["Brendan Fraser, Rachel Weisz, John Hannah, Arnold Vosloo, Jonathan Hyde, Kevin J. O'Connor"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6628,9 +6628,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/52ml62vClzrlqvXZq2FEW6UF6c1.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oMKFQmoVgB69fyXfSMu0lGlHJP2.jpg",
     videoUrl: "447200",
-    overview: "A security expert must infiltrate a burning skyscraper, 225 stories above ground, when his family is trapped inside by criminals. FBI Hostage Rescue Team veteran Will Sawyer, now assessing security for the world's tallest and safest building, finds it suddenly ablaze and himself framed for the fire. On the run and wanted for a crime he didn't commit, Will must clear his name and rescue his family — trapped above the fire line.",
+    overview: "A security expert must infiltrate a burning skyscraper, 225 stories above ground, when his family is trapped inside by criminals. FBI Hostage Rescue Team veteran Will Sawyer, now assessing security for the world's tallest and safest building, finds it suddenly ablaze and himself framed for the fire. On the run and wanted for a crime he didn't commit, Will must clear his name and rescue his family â€” trapped above the fire line.",
     director: "Rawson Marshall Thurber",
-    cast: ["Dwayne Johnson, Neve Campbell, Chin Han, Roland Møller, Noah Taylor, Byron Mann, Pablo Schreiber, Hannah Quinlivan"],
+    cast: ["Dwayne Johnson, Neve Campbell, Chin Han, Roland MÃ¸ller, Noah Taylor, Byron Mann, Pablo Schreiber, Hannah Quinlivan"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -6645,7 +6645,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rCtreCr4xiYEWDQTebybolIh6Xe.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/5sHE4jKJtA9fCkaMeaVUy6KHc2W.jpg",
     videoUrl: "436270",
-    overview: "Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods — and imprisoned just as quickly — Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world. As his ancient reemergence collides with the heroes of the Justice Society, both sides must decide whether he's a savior or the deadliest threat the world has ever seen.",
+    overview: "Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods â€” and imprisoned just as quickly â€” Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world. As his ancient reemergence collides with the heroes of the Justice Society, both sides must decide whether he's a savior or the deadliest threat the world has ever seen.",
     director: "Jaume Collet-Serra",
     cast: ["Dwayne Johnson, Aldis Hodge, Noah Centineo, Sarah Shahi, Quintessa Swindell, Marwan Kenzari, Pierce Brosnan, Viola Davis"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6662,7 +6662,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lAXONuqg41NwUMuzMiFvicDET9Y.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/dK12GIdhGP6NPGFssK2Fh265jyr.jpg",
     videoUrl: "512195",
-    overview: "An Interpol agent successfully tracks down the world's most wanted art thief with help from a rival thief. But nothing is as it seems, as a daring heist brings together the FBI's top profiler and two rival criminals — and a series of double-crosses ensues in this globe-trotting hunt for a legendary lost treasure.",
+    overview: "An Interpol agent successfully tracks down the world's most wanted art thief with help from a rival thief. But nothing is as it seems, as a daring heist brings together the FBI's top profiler and two rival criminals â€” and a series of double-crosses ensues in this globe-trotting hunt for a legendary lost treasure.",
     director: "Rawson Marshall Thurber",
     cast: ["Dwayne Johnson, Ryan Reynolds, Gal Gadot, Ritu Arya, Chris Diamantopoulos"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6696,7 +6696,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ode14q7WtDugFDp78fo9lCsmay9.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/eTlcNXGv32zkVI7ZDHhfeaKHXKQ.jpg",
     videoUrl: "198663",
-    overview: "A teen with no memory of the outside world awakens in a gigantic maze guarded by deadly creatures, and plots a daring escape. Thrown into a walled enclosure known as the Glade alongside a group of other boys, Thomas must adapt to their rules and society while uncovering clues that may lead to the truth behind their confinement — and a way out of the ever-changing maze that surrounds them.",
+    overview: "A teen with no memory of the outside world awakens in a gigantic maze guarded by deadly creatures, and plots a daring escape. Thrown into a walled enclosure known as the Glade alongside a group of other boys, Thomas must adapt to their rules and society while uncovering clues that may lead to the truth behind their confinement â€” and a way out of the ever-changing maze that surrounds them.",
     director: "Wes Ball",
     cast: ["Dylan O'Brien, Kaya Scodelario, Thomas Brodie-Sangster, Will Poulter, Ki Hong Lee, Aml Ameen, Patricia Clarkson, Blake Cooper"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6713,7 +6713,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/aITIsX20tACn6jgtyDcCYpRT216.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/eegXMHCYvEc8dFInKtrGlElfwjs.jpg",
     videoUrl: "9334",
-    overview: "A desert warrior rises up against the evil army that is destroying his homeland. In an ancient time predating the pyramids, the evil king Memnon uses the psychic powers of his sorceress Cassandra to foretell his victories. Hired to kill the sorceress, the assassin Mathayus captures her instead — and, with unlikely allies at his side, prepares for a final showdown that will determine the fate of the free tribes.",
+    overview: "A desert warrior rises up against the evil army that is destroying his homeland. In an ancient time predating the pyramids, the evil king Memnon uses the psychic powers of his sorceress Cassandra to foretell his victories. Hired to kill the sorceress, the assassin Mathayus captures her instead â€” and, with unlikely allies at his side, prepares for a final showdown that will determine the fate of the free tribes.",
     director: "Chuck Russell",
     cast: ["Dwayne Johnson, Steven Brand, Michael Clarke Duncan, Kelly Hu, Bernard Hill, Grant Heslov, Peter Facinelli"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6730,7 +6730,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/sLT9UzBTckTre0tP075xGA6w2Bb.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1jHxkVXMI5s3vRiyiZooUy1shB5.jpg",
     videoUrl: "285",
-    overview: "Captain Barbossa, Will Turner, and Elizabeth Swann must sail off the edge of the map to rescue Jack Sparrow from Davy Jones's Locker. But nothing is quite as it seems, as betrayal looms among their crew and a massive war brews between the East India Trading Company and the world's pirate lords — with the fate of the seas, and Jack's soul, hanging in the balance.",
+    overview: "Captain Barbossa, Will Turner, and Elizabeth Swann must sail off the edge of the map to rescue Jack Sparrow from Davy Jones's Locker. But nothing is quite as it seems, as betrayal looms among their crew and a massive war brews between the East India Trading Company and the world's pirate lords â€” with the fate of the seas, and Jack's soul, hanging in the balance.",
     director: "Gore Verbinski",
     cast: ["Johnny Depp, Orlando Bloom, Keira Knightley, Geoffrey Rush, Bill Nighy, Jack Davenport, Chow Yun-fat"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6747,7 +6747,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/raayaQ9WTUGolsYHPWc2bGonu58.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/bacOuUnRBoAO1NjMfsAGX2EKRrS.jpg",
     videoUrl: "1366",
-    overview: "Rocky Balboa, a small-time boxer from working-class Philadelphia, is arbitrarily chosen to take on the reigning world heavyweight champion, Apollo Creed, when the champion's scheduled opponent is injured. While training with feisty former contender Mickey Goldmill, Rocky tentatively begins a relationship with Adrian, the shy sister of his meat-packer friend Paulie — all while preparing for the one-in-a-million shot that could define his life.",
+    overview: "Rocky Balboa, a small-time boxer from working-class Philadelphia, is arbitrarily chosen to take on the reigning world heavyweight champion, Apollo Creed, when the champion's scheduled opponent is injured. While training with feisty former contender Mickey Goldmill, Rocky tentatively begins a relationship with Adrian, the shy sister of his meat-packer friend Paulie â€” all while preparing for the one-in-a-million shot that could define his life.",
     director: "John G. Avildsen",
     cast: ["Sylvester Stallone, Talia Shire, Burt Young, Carl Weathers, Burgess Meredith"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6798,7 +6798,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/2MHUit4H6OK5adcOjnCN6suCKOl.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7Xvz1fjhaGh6AF33R76dwoDrfkH.jpg",
     videoUrl: "1374",
-    overview: "Rocky Balboa proudly holds the world heavyweight boxing championship, but a new challenger has stepped forward — Ivan Drago, a towering fighter backed by the Soviet Union. When Rocky's close friend and former rival Apollo Creed faces Drago in an exhibition match that ends in tragedy, Rocky is driven by guilt and honor to travel to the Soviet Union and confront Drago on his own turf, training in isolation to avenge his friend and defend his country.",
+    overview: "Rocky Balboa proudly holds the world heavyweight boxing championship, but a new challenger has stepped forward â€” Ivan Drago, a towering fighter backed by the Soviet Union. When Rocky's close friend and former rival Apollo Creed faces Drago in an exhibition match that ends in tragedy, Rocky is driven by guilt and honor to travel to the Soviet Union and confront Drago on his own turf, training in isolation to avenge his friend and defend his country.",
     director: "Sylvester Stallone",
     cast: ["Sylvester Stallone, Dolph Lundgren, Talia Shire, Burt Young, Carl Weathers, Brigitte Nielsen, Tony Burton"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6815,7 +6815,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/tevHaVxtrMTaUi8f3YjLWYSSY8A.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zG8sOSReFKlBVz7k8hOXPjwoPxH.jpg",
     videoUrl: "1375",
-    overview: "Reluctantly retired from boxing due to brain damage sustained in the ring, Rocky Balboa returns home to South Philadelphia only to discover he's lost his fortune due to a corrupt accountant's mismanagement. Stripped of fame and purpose, Rocky takes charge of his late trainer's gym and trains a hungry young protégé, Tommy Gunn — all while struggling to reconnect with his increasingly resentful son.",
+    overview: "Reluctantly retired from boxing due to brain damage sustained in the ring, Rocky Balboa returns home to South Philadelphia only to discover he's lost his fortune due to a corrupt accountant's mismanagement. Stripped of fame and purpose, Rocky takes charge of his late trainer's gym and trains a hungry young protÃ©gÃ©, Tommy Gunn â€” all while struggling to reconnect with his increasingly resentful son.",
     director: "John G. Avildsen",
     cast: ["Sylvester Stallone, Talia Shire, Burt Young, Sage Stallone, Tommy Morrison, Burgess Meredith, Richard Gant"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6832,7 +6832,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cQGM5k1NtU85n4TUlrOrwijSCcm.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/gLrhzo4rQNmaLkVqWBGJF2xYx8G.jpg",
     videoUrl: "38365",
-    overview: "Five childhood friends and former basketball teammates reunite years later to honor the passing of their beloved childhood coach. With their wives and kids in tow, they spend the Fourth of July holiday weekend together at the lake house where they once celebrated their championship — reminiscing about the past and rediscovering what friendship and family really mean.",
+    overview: "Five childhood friends and former basketball teammates reunite years later to honor the passing of their beloved childhood coach. With their wives and kids in tow, they spend the Fourth of July holiday weekend together at the lake house where they once celebrated their championship â€” reminiscing about the past and rediscovering what friendship and family really mean.",
     director: "Dennis Dugan",
     cast: ["Adam Sandler, Kevin James, Chris Rock, David Spade, Rob Schneider, Salma Hayek, Maria Bello, Maya Rudolph"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6849,7 +6849,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/hT6ijOtjtYrnyDhN7VA2QWyGFAm.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/epVPiaRsLhJMinNRWUFWMudZ9ba.jpg",
     videoUrl: "109418",
-    overview: "Lenny has relocated his family back to the small town where he and his friends grew up. This time around, the grown-ups are the ones learning lessons from their kids on a day notoriously full of chaos — between old bullies, new bullies, a schizo bus driver, drunk cops on skis, and 400 costumed party crashers, sometimes crazy just follows you.",
+    overview: "Lenny has relocated his family back to the small town where he and his friends grew up. This time around, the grown-ups are the ones learning lessons from their kids on a day notoriously full of chaos â€” between old bullies, new bullies, a schizo bus driver, drunk cops on skis, and 400 costumed party crashers, sometimes crazy just follows you.",
     director: "Dennis Dugan",
     cast: ["Adam Sandler, Kevin James, Chris Rock, David Spade, Salma Hayek, Maria Bello, Maya Rudolph, Nick Swardson"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6866,7 +6866,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cdqLnri3NEGcmfnqwk2TSIYtddg.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/t2NWApVqG68kzD2ck1mBzaN4Y1Y.jpg",
     videoUrl: "845781",
-    overview: "After Santa Claus — Code Name: Red One — is kidnapped, the North Pole's Head of Security must team up with the world's most infamous bounty hunter in a globe-trotting, action-packed mission to save Christmas before it's too late.",
+    overview: "After Santa Claus â€” Code Name: Red One â€” is kidnapped, the North Pole's Head of Security must team up with the world's most infamous bounty hunter in a globe-trotting, action-packed mission to save Christmas before it's too late.",
     director: "Jake Kasdan",
     cast: ["Dwayne Johnson, Chris Evans, Lucy Liu, Kiernan Shipka, Bonnie Hunt, Kristofer Hivju, Nick Kroll, J.K. Simmons"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6883,7 +6883,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/aCnVdvExw6UWSeQfr0tUH3jr4qG.jpg",
     backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/ieaqdvP8osNeB6q5J4tX5w2SGar.jpg",
     videoUrl: "72190",
-    overview: "Life for former United Nations investigator Gerry Lane and his family seems content — until the world is suddenly plagued by a mysterious infection turning entire populations into rampaging, mindless zombies. After barely escaping the chaos, Lane is persuaded to travel the globe investigating the disease's origins, braving horrific dangers and long odds to find answers before human civilization falls.",
+    overview: "Life for former United Nations investigator Gerry Lane and his family seems content â€” until the world is suddenly plagued by a mysterious infection turning entire populations into rampaging, mindless zombies. After barely escaping the chaos, Lane is persuaded to travel the globe investigating the disease's origins, braving horrific dangers and long odds to find answers before human civilization falls.",
     director: "Marc Forster",
     cast: ["Brad Pitt, Mireille Enos, Daniella Kertesz, James Badge Dale, Matthew Fox, David Morse, Peter Capaldi"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6900,7 +6900,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9f2Q0U3IOsLgrI2HkvldwSABZy5.jpg",
     backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg",
     videoUrl: "566525",
-    overview: "Shang-Chi, the master of weaponry-based Kung Fu, must confront the past he thought he'd left behind when he's drawn into the web of the mysterious Ten Rings organization — forcing him to face his father, the group's dangerous leader, and a legacy he can no longer outrun.",
+    overview: "Shang-Chi, the master of weaponry-based Kung Fu, must confront the past he thought he'd left behind when he's drawn into the web of the mysterious Ten Rings organization â€” forcing him to face his father, the group's dangerous leader, and a legacy he can no longer outrun.",
     director: "Destin Daniel Cretton",
     cast: ["Simu Liu, Awkwafina, Tony Leung Chiu-wai, Michelle Yeoh, Meng'er Zhang, Fala Chen, Florian Munteanu, Benedict Wong, Ben Kingsley"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6917,7 +6917,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/9yguvvrOG8dBVIbxCst0GyzVJu1.jpg",
     backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/rVRtRE6HJ5xbdo5jd9aTT8tEVaF.jpg",
     videoUrl: "313369",
-    overview: "Mia, an aspiring actress, serves lattes to movie stars in between auditions, while Sebastian, a jazz musician, scrapes by playing cocktail party gigs in dingy bars. As success mounts for both of them, they're faced with decisions that begin to fray the fragile fabric of their love affair — and the dreams they worked so hard to maintain in each other threaten to tear them apart.",
+    overview: "Mia, an aspiring actress, serves lattes to movie stars in between auditions, while Sebastian, a jazz musician, scrapes by playing cocktail party gigs in dingy bars. As success mounts for both of them, they're faced with decisions that begin to fray the fragile fabric of their love affair â€” and the dreams they worked so hard to maintain in each other threaten to tear them apart.",
     director: "Damien Chazelle",
     cast: ["Ryan Gosling, Emma Stone, John Legend, Rosemarie DeWitt, J.K. Simmons, Finn Wittrock"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6934,7 +6934,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iQ5ztdjvteGeboxtmRdXEChJOHh.jpg",
     backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/1qM2BYNE11Viby8ImC9LC00DgDr.jpg",
     videoUrl: "111",
-    overview: "In 1980, Tony Montana, a Cuban refugee, arrives in Miami during the Mariel Boatlift with nothing to his name. His intelligence, guts, and ambition help him skyrocket from dishwasher to the top of a violent criminal empire built on cocaine — but his ruthless greed, paranoia, and self-destructive excess ultimately prove to be his undoing.",
+    overview: "In 1980, Tony Montana, a Cuban refugee, arrives in Miami during the Mariel Boatlift with nothing to his name. His intelligence, guts, and ambition help him skyrocket from dishwasher to the top of a violent criminal empire built on cocaine â€” but his ruthless greed, paranoia, and self-destructive excess ultimately prove to be his undoing.",
     director: "Brian De Palma",
     cast: ["Al Pacino, Steven Bauer, Michelle Pfeiffer, Mary Elizabeth Mastrantonio, Robert Loggia, F. Murray Abraham"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6951,9 +6951,9 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/6O7O6pCh0dImRLoNnsTx42Jaaoj.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/tlkN3WHdvnVl11IkU5k59X38iYb.jpg",
     videoUrl: "1865",
-    overview: "Jack Sparrow crosses paths with a woman from his past, and he's not sure if it's love — or if she's a ruthless con artist who's using him to find the fabled Fountain of Youth. When she forces him aboard the Queen Anne's Revenge, the ship of the formidable pirate Blackbeard, Jack finds himself on an unexpected adventure in which he doesn't know who to fear more: Blackbeard or the woman from his past.",
+    overview: "Jack Sparrow crosses paths with a woman from his past, and he's not sure if it's love â€” or if she's a ruthless con artist who's using him to find the fabled Fountain of Youth. When she forces him aboard the Queen Anne's Revenge, the ship of the formidable pirate Blackbeard, Jack finds himself on an unexpected adventure in which he doesn't know who to fear more: Blackbeard or the woman from his past.",
     director: "Rob Marshall",
-    cast: ["Johnny Depp, Penélope Cruz, Geoffrey Rush, Ian McShane, Kevin McNally, Sam Claflin"],
+    cast: ["Johnny Depp, PenÃ©lope Cruz, Geoffrey Rush, Ian McShane, Kevin McNally, Sam Claflin"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -6968,7 +6968,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/eyWICPcxOuTcDDDbTMOZawoOn8d.jpg",
     backdrop: "https://media.themoviedb.org/t/p/w533_and_h300_face/2uSCHUsmzb6KkQPFSxBQ7bgfJLE.jpg",
     videoUrl: "345940",
-    overview: "A deep-sea submersible is attacked by a massive creature previously thought to be extinct, and now lies disabled at the bottom of the deepest trench in the Pacific with its crew trapped inside. With time running out, expert deep-sea rescue diver Jonas Taylor is recruited by a visionary Chinese oceanographer to save the crew from this prehistoric threat — a 75-foot megalodon shark unlike anything modern science has ever seen.",
+    overview: "A deep-sea submersible is attacked by a massive creature previously thought to be extinct, and now lies disabled at the bottom of the deepest trench in the Pacific with its crew trapped inside. With time running out, expert deep-sea rescue diver Jonas Taylor is recruited by a visionary Chinese oceanographer to save the crew from this prehistoric threat â€” a 75-foot megalodon shark unlike anything modern science has ever seen.",
     director: "Jon Turteltaub",
     cast: ["Jason Statham, Li Bingbing, Rainn Wilson, Ruby Rose, Winston Chao, Cliff Curtis"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -6985,7 +6985,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4m1Au3YkjqsxF8iwQy0fPYSxE0h.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zN41DPmPhwmgJjHwezALdrdvD0h.jpg",
     videoUrl: "615656",
-    overview: "Jonas Taylor leads a daring research team on an exploratory dive into the deepest depths of the ocean. Their voyage spirals into chaos when a malevolent mining operation threatens their mission, forcing them into a high-stakes battle for survival against multiple massive Megalodons — and a threat even more terrifying than they imagined.",
+    overview: "Jonas Taylor leads a daring research team on an exploratory dive into the deepest depths of the ocean. Their voyage spirals into chaos when a malevolent mining operation threatens their mission, forcing them into a high-stakes battle for survival against multiple massive Megalodons â€” and a threat even more terrifying than they imagined.",
     director: "Ben Wheatley",
     cast: ["Jason Statham, Wu Jing, Sophia Cai, Page Kennedy, Sergio Peris-Mencheta, Skyler Samuels, Cliff Curtis"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -7002,9 +7002,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9uGHEgsiUXjCNq8wdq4r49YL8A1.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/262HmU2EgvYIN52g6huHzx30YAU.jpg",
     videoUrl: "1359",
-    overview: "A wealthy New York City investment banking executive, Patrick Bateman, hides his alternate psychopathic ego from his co-workers and friends as he delves deeper into his violent, hedonistic fantasies — blurring the line between his outwardly polished yuppie life and the depraved killer lurking beneath.",
+    overview: "A wealthy New York City investment banking executive, Patrick Bateman, hides his alternate psychopathic ego from his co-workers and friends as he delves deeper into his violent, hedonistic fantasies â€” blurring the line between his outwardly polished yuppie life and the depraved killer lurking beneath.",
     director: "Mary Harron",
-    cast: ["Christian Bale, Justin Theroux, Josh Lucas, Bill Sage, Chloë Sevigny, Reese Witherspoon, Samantha Mathis, Willem Dafoe, Jared Leto"],
+    cast: ["Christian Bale, Justin Theroux, Josh Lucas, Bill Sage, ChloÃ« Sevigny, Reese Witherspoon, Samantha Mathis, Willem Dafoe, Jared Leto"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -7019,7 +7019,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/j8szC8OgrejDQjjMKSVXyaAjw3V.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qbnZOPPUAipuX4erfeP4svARjOi.jpg",
     videoUrl: "718930",
-    overview: "Unlucky assassin Ladybug is determined to do his job peacefully after one too many gigs gone off the rails. Fate, however, has other plans — his latest mission puts him on a collision course with lethal adversaries from around the globe, all with connected yet conflicting objectives, on the world's fastest train.",
+    overview: "Unlucky assassin Ladybug is determined to do his job peacefully after one too many gigs gone off the rails. Fate, however, has other plans â€” his latest mission puts him on a collision course with lethal adversaries from around the globe, all with connected yet conflicting objectives, on the world's fastest train.",
     director: "David Leitch",
     cast: ["Brad Pitt, Joey King, Aaron Taylor-Johnson, Brian Tyree Henry, Andrew Koji, Hiroyuki Sanada, Michael Shannon, Sandra Bullock"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -7036,7 +7036,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/A7EByudX0eOzlkQ2FIbogzyazm2.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/f0ACHVpV707zqu4etZrXnWNdSgL.jpg",
     videoUrl: "866398",
-    overview: "Eloise Parker is a schoolteacher who lives alone, with a quiet tenant renting her garage — Adam Clay, a former operative of a clandestine organization called Beekeepers, now living peacefully as a literal beekeeper. When Eloise falls victim to a phishing scam that wipes out over $2 million, including funds from a charity she manages, Clay is drawn back into the world he left behind — and his brutal campaign for vengeance takes on national stakes.",
+    overview: "Eloise Parker is a schoolteacher who lives alone, with a quiet tenant renting her garage â€” Adam Clay, a former operative of a clandestine organization called Beekeepers, now living peacefully as a literal beekeeper. When Eloise falls victim to a phishing scam that wipes out over $2 million, including funds from a charity she manages, Clay is drawn back into the world he left behind â€” and his brutal campaign for vengeance takes on national stakes.",
     director: "David Ayer",
     cast: ["Jason Statham, Emmy Raver-Lampman, Josh Hutcherson, Bobby Naderi, Minnie Driver, Phylicia Rashad, Jeremy Irons"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -7053,7 +7053,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uLOmOF5IzWoyrgIF5MfUnh5pa1X.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rGX4v2DdJvzNWGj3cprnkXsnTIp.jpg",
     videoUrl: "607",
-    overview: "After a bizarre police chase with an otherworldly being, NYPD detective James Edwards is recruited into a top-secret organization established to monitor and police alien activity on Earth. As the newest member of the Men in Black, Agent J teams up with the seasoned Agent K to stop an intergalactic terrorist from assassinating two ambassadors from opposing galaxies — a plot that could spark a war for the fate of the planet.",
+    overview: "After a bizarre police chase with an otherworldly being, NYPD detective James Edwards is recruited into a top-secret organization established to monitor and police alien activity on Earth. As the newest member of the Men in Black, Agent J teams up with the seasoned Agent K to stop an intergalactic terrorist from assassinating two ambassadors from opposing galaxies â€” a plot that could spark a war for the fate of the planet.",
     director: "Barry Sonnenfeld",
     cast: ["Tommy Lee Jones, Will Smith, Linda Fiorentino, Vincent D'Onofrio, Rip Torn, Tony Shalhoub"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -7087,7 +7087,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/90DdoEStzeObs96fsYf4GG544iN.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/iCqk02W09UCA7ljxG5XEiX1xJkw.jpg",
     videoUrl: "41154",
-    overview: "Agents J and K are back... in time. J has seen some inexplicable things in his 15 years with the Men in Black, but nothing perplexes him quite like his wry, reticent partner. When K's life and the fate of the planet are put at stake, Agent J must travel back to 1969 to stop an escaped alien from assassinating his friend and changing history — uncovering secrets about K, and himself, along the way.",
+    overview: "Agents J and K are back... in time. J has seen some inexplicable things in his 15 years with the Men in Black, but nothing perplexes him quite like his wry, reticent partner. When K's life and the fate of the planet are put at stake, Agent J must travel back to 1969 to stop an escaped alien from assassinating his friend and changing history â€” uncovering secrets about K, and himself, along the way.",
     director: "Barry Sonnenfeld",
     cast: ["Will Smith, Tommy Lee Jones, Josh Brolin, Jemaine Clement, Michael Stuhlbarg, Emma Thompson"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -7104,7 +7104,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fDEdtS4P0gJsxHDIt8dG8TR5dx1.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/39LxWqvQCsbAe0Cm2B7dtBe3Rd4.jpg",
     videoUrl: "359410",
-    overview: "Troubled former UFC fighter Elwood Dalton makes a living scamming other fighters on the underground circuit. When Frankie, the owner of an unruly roadhouse in the Florida Keys, offers him a job as head bouncer, Dalton reluctantly accepts — only to discover this seemingly laid-back paradise is hiding something far more dangerous beneath the surface.",
+    overview: "Troubled former UFC fighter Elwood Dalton makes a living scamming other fighters on the underground circuit. When Frankie, the owner of an unruly roadhouse in the Florida Keys, offers him a job as head bouncer, Dalton reluctantly accepts â€” only to discover this seemingly laid-back paradise is hiding something far more dangerous beneath the surface.",
     director: "Doug Liman",
     cast: ["Jake Gyllenhaal, Daniela Melchior, Billy Magnussen, Conor McGregor, Jessica Williams, Joaquim de Almeida, JD Pardo"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -7121,7 +7121,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oxK0OlJ5brTZMLQu5AD1oLDgwt3.jpg",
     videoUrl: "85",
-    overview: "It is 1936. Dr. Indiana Jones — the tweed-suited professor who just happens to be a celebrated archaeologist — is recruited by the U.S. government to locate the legendary Ark of the Covenant, said to make any army invincible, before it falls into Nazi hands. The globetrotting hunt for the ancient relic pits him against the entire Nazi regime in a race against time to save the world from unimaginable power.",
+    overview: "It is 1936. Dr. Indiana Jones â€” the tweed-suited professor who just happens to be a celebrated archaeologist â€” is recruited by the U.S. government to locate the legendary Ark of the Covenant, said to make any army invincible, before it falls into Nazi hands. The globetrotting hunt for the ancient relic pits him against the entire Nazi regime in a race against time to save the world from unimaginable power.",
     director: "Steven Spielberg",
     cast: ["Harrison Ford, Karen Allen, Paul Freeman, Ronald Lacey, John Rhys-Davies, Denholm Elliott"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -7138,8 +7138,8 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6lAPOAFYFWIO3SQRemEY2wInQMC.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/2Qwb7EayKsD2cuB3I2u2k2VU3Lb.jpg",
     videoUrl: "166426",
-    overview: "Thrust into an all-new adventure, a down-on-his-luck Captain Jack Sparrow finds the winds of ill-fortune blowing even more strongly when deadly ghost sailors led by his old nemesis, the terrifying Captain Salazar, escape from the Devil's Triangle bent on killing every pirate at sea — notably Jack. Jack's only hope of survival lies in the legendary Trident of Poseidon, but to find it, he must forge an uneasy alliance with a brilliant young woman and a headstrong young man.",
-    director: "Joachim Rønning, Espen Sandberg",
+    overview: "Thrust into an all-new adventure, a down-on-his-luck Captain Jack Sparrow finds the winds of ill-fortune blowing even more strongly when deadly ghost sailors led by his old nemesis, the terrifying Captain Salazar, escape from the Devil's Triangle bent on killing every pirate at sea â€” notably Jack. Jack's only hope of survival lies in the legendary Trident of Poseidon, but to find it, he must forge an uneasy alliance with a brilliant young woman and a headstrong young man.",
+    director: "Joachim RÃ¸nning, Espen Sandberg",
     cast: ["Johnny Depp, Javier Bardem, Geoffrey Rush, Brenton Thwaites, Kaya Scodelario, Kevin McNally"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
@@ -7155,7 +7155,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/gpdVNUaa4LhRMLfJOPj1AZdhAZ3.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/a4cX1maHQn5JFQMfYGR72cK8bfH.jpg",
     videoUrl: "87",
-    overview: "In 1935, after arriving in India, Indiana Jones is asked by a desperate village to help reclaim a sacred stone stolen from them. Agreeing to the mission, Indy — joined by singer Willie Scott and young sidekick Short Round — journeys to Pankot Palace and stumbles upon a secret Thuggee cult, led by the sinister Mola Ram, plotting a terrible plan in the catacombs of an ancient temple.",
+    overview: "In 1935, after arriving in India, Indiana Jones is asked by a desperate village to help reclaim a sacred stone stolen from them. Agreeing to the mission, Indy â€” joined by singer Willie Scott and young sidekick Short Round â€” journeys to Pankot Palace and stumbles upon a secret Thuggee cult, led by the sinister Mola Ram, plotting a terrible plan in the catacombs of an ancient temple.",
     director: "Steven Spielberg",
     cast: ["Harrison Ford, Kate Capshaw, Ke Huy Quan, Amrish Puri, Roshan Seth, Philip Stone"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -7172,7 +7172,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/sizg1AU8f8JDZX4QIgE4pjUMBvx.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/267Mdb5i1AXuVN64DhVEOUPmM25.jpg",
     videoUrl: "89",
-    overview: "When Dr. Henry Jones Sr. suddenly goes missing while pursuing the Holy Grail, eminent archaeologist Indiana Jones must follow in his estranged father's footsteps to find him. Tracking clues in his father's notebook, Indy arrives in Venice, where he enlists the help of a beautiful academic, Dr. Elsa Schneider, along with old allies Marcus Brody and Sallah — racing against the Nazis to stop them from seizing the power of eternal life.",
+    overview: "When Dr. Henry Jones Sr. suddenly goes missing while pursuing the Holy Grail, eminent archaeologist Indiana Jones must follow in his estranged father's footsteps to find him. Tracking clues in his father's notebook, Indy arrives in Venice, where he enlists the help of a beautiful academic, Dr. Elsa Schneider, along with old allies Marcus Brody and Sallah â€” racing against the Nazis to stop them from seizing the power of eternal life.",
     director: "Steven Spielberg",
     cast: ["Harrison Ford, Sean Connery, Denholm Elliott, Alison Doody, John Rhys-Davies, Julian Glover, River Phoenix"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -7223,7 +7223,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/zMpJY5CJKUufG9OTw0In4eAFqPX.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/2igcXhXIVUouBPYFZ7kwr3z5qrD.jpg",
     videoUrl: "953",
-    overview: "At New York's Central Park Zoo, a lion, a zebra, a giraffe, and a hippo are best friends and stars of the show. But when one of the animals goes missing from their cage, the other three break free to find him — and all four end up stranded on the wild island of Madagascar, forced to adjust to a life far from the comforts of captivity.",
+    overview: "At New York's Central Park Zoo, a lion, a zebra, a giraffe, and a hippo are best friends and stars of the show. But when one of the animals goes missing from their cage, the other three break free to find him â€” and all four end up stranded on the wild island of Madagascar, forced to adjust to a life far from the comforts of captivity.",
     director: "Eric Darnell, Tom McGrath",
     cast: ["Ben Stiller, Chris Rock, David Schwimmer, Jada Pinkett Smith, Sacha Baron Cohen, Cedric the Entertainer, Andy Richter"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -7240,7 +7240,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/agRbLOHgN46TQO4YdKR462iR7To.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/r2M9ElkHxEJP7riCFbT5N0uXZTc.jpg",
     videoUrl: "10527",
-    overview: "Desperate to return to their beloved Central Park Zoo, Alex, Marty, Melman, and Gloria board a decrepit cargo plane repaired by the ever-resourceful penguins. The precariously patched-up craft crash-lands in Africa instead, where the animals encounter members of their own species for the first time — and Alex discovers his royal heritage as a long-lost prince of a lion pride, reuniting with parents he never knew he had.",
+    overview: "Desperate to return to their beloved Central Park Zoo, Alex, Marty, Melman, and Gloria board a decrepit cargo plane repaired by the ever-resourceful penguins. The precariously patched-up craft crash-lands in Africa instead, where the animals encounter members of their own species for the first time â€” and Alex discovers his royal heritage as a long-lost prince of a lion pride, reuniting with parents he never knew he had.",
     director: "Eric Darnell, Tom McGrath",
     cast: ["Ben Stiller, Chris Rock, David Schwimmer, Jada Pinkett Smith, Sacha Baron Cohen, Cedric the Entertainer, Bernie Mac, Alec Baldwin"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -7257,7 +7257,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ekraj4ksvIKeuvQVEevEJkuybZd.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/hfdds27YL5nTAhiOtjfNNxD3bJe.jpg",
     videoUrl: "80321",
-    overview: "Animal pals Alex, Marty, Melman, and Gloria are still trying to make it back to New York's Central Park Zoo. They're forced to take a detour to Europe to find the penguins and chimps who broke the bank at a Monte Carlo casino. When ruthless French animal-control officer Captain Chantel DuBois picks up their scent, Alex and company are forced to hide out in a traveling circus — and reinvent themselves to survive.",
+    overview: "Animal pals Alex, Marty, Melman, and Gloria are still trying to make it back to New York's Central Park Zoo. They're forced to take a detour to Europe to find the penguins and chimps who broke the bank at a Monte Carlo casino. When ruthless French animal-control officer Captain Chantel DuBois picks up their scent, Alex and company are forced to hide out in a traveling circus â€” and reinvent themselves to survive.",
     director: "Eric Darnell, Conrad Vernon, Tom McGrath",
     cast: ["Ben Stiller, Chris Rock, David Schwimmer, Jada Pinkett Smith, Sacha Baron Cohen, Jessica Chastain, Bryan Cranston, Frances McDormand"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -7274,7 +7274,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nBM9MMa2WCwvMG4IJ3eiGUdbPe6.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/4V1yIoAKPMRQwGBaSses8Bp2nsi.jpg",
     videoUrl: "137113",
-    overview: "A military officer with no combat experience is thrust into a suicide mission against an unbeatable alien invasion. When he dies in battle, he finds himself trapped in a time loop, reliving the same brutal day over and over. Partnering with a legendary Special Forces warrior, he uses each cycle to sharpen his skills and uncover a way to finally break the loop — and defeat the extraterrestrial threat once and for all.",
+    overview: "A military officer with no combat experience is thrust into a suicide mission against an unbeatable alien invasion. When he dies in battle, he finds himself trapped in a time loop, reliving the same brutal day over and over. Partnering with a legendary Special Forces warrior, he uses each cycle to sharpen his skills and uncover a way to finally break the loop â€” and defeat the extraterrestrial threat once and for all.",
     director: "Doug Liman",
     cast: ["Tom Cruise, Emily Blunt, Bill Paxton, Brendan Gleeson"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -7291,9 +7291,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/cAh2pCiNPftsY3aSqJuIOde7uWr.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/r94MwcvPBidnQh2ASOfPV2wEEnm.jpg",
     videoUrl: "1903",
-    overview: "David Aames has it all — wealth, good looks, and gorgeous women on his arm. But just as he begins falling for the warmhearted Sofia, his face is horribly disfigured in a car accident caused by a resentful ex-lover. That's only the beginning of his troubles, as the lines between illusion and reality, between life and death, begin to blur beyond recognition.",
+    overview: "David Aames has it all â€” wealth, good looks, and gorgeous women on his arm. But just as he begins falling for the warmhearted Sofia, his face is horribly disfigured in a car accident caused by a resentful ex-lover. That's only the beginning of his troubles, as the lines between illusion and reality, between life and death, begin to blur beyond recognition.",
     director: "Cameron Crowe",
-    cast: ["Tom Cruise, Penélope Cruz, Kurt Russell, Cameron Diaz, Jason Lee, Noah Taylor"],
+    cast: ["Tom Cruise, PenÃ©lope Cruz, Kurt Russell, Cameron Diaz, Jason Lee, Noah Taylor"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -7308,7 +7308,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/23ILgoPSO5ShKcTZOuiTVfqFAUB.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qphzPbr42CaV6cayxOAsUbk8nLV.jpg",
     videoUrl: "337170",
-    overview: "The story of Barry Seal, an ordinary commercial pilot recruited by the CIA in the 1980s, who juggles surveillance work for the agency, smuggling cocaine for the Medellín Cartel, and running guns for the Contras in Nicaragua — a clandestine web of operations that would eventually spiral out of control and be exposed as the Iran-Contra Affair.",
+    overview: "The story of Barry Seal, an ordinary commercial pilot recruited by the CIA in the 1980s, who juggles surveillance work for the agency, smuggling cocaine for the MedellÃ­n Cartel, and running guns for the Contras in Nicaragua â€” a clandestine web of operations that would eventually spiral out of control and be exposed as the Iran-Contra Affair.",
     director: "Doug Liman",
     cast: ["Tom Cruise, Domhnall Gleeson, Sarah Wright, Caleb Landry Jones, Jesse Plemons"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -7327,7 +7327,7 @@ const MOVIES = [
     videoUrl: "438631",
     overview: "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people. As malevolent forces explode into conflict over the planet's exclusive supply of the most precious resource in existence, only those who can conquer their own fear will survive.",
     director: "Denis Villeneuve",
-    cast: ["Timothée Chalamet, Rebecca Ferguson, Oscar Isaac, Josh Brolin, Stellan Skarsgård, Dave Bautista, Zendaya, Javier Bardem, Jason Momoa, Charlotte Rampling"],
+    cast: ["TimothÃ©e Chalamet, Rebecca Ferguson, Oscar Isaac, Josh Brolin, Stellan SkarsgÃ¥rd, Dave Bautista, Zendaya, Javier Bardem, Jason Momoa, Charlotte Rampling"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -7344,7 +7344,7 @@ const MOVIES = [
     videoUrl: "693134",
     overview: "Follow the mythic journey of Paul Atreides as he unites with Chani and the Fremen while on a path of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, Paul endeavors to prevent a terrible future only he can foresee.",
     director: "Denis Villeneuve",
-    cast: ["Timothée Chalamet, Zendaya, Rebecca Ferguson, Josh Brolin, Austin Butler, Florence Pugh, Dave Bautista, Christopher Walken, Léa Seydoux, Stellan Skarsgård, Javier Bardem"],
+    cast: ["TimothÃ©e Chalamet, Zendaya, Rebecca Ferguson, Josh Brolin, Austin Butler, Florence Pugh, Dave Bautista, Christopher Walken, LÃ©a Seydoux, Stellan SkarsgÃ¥rd, Javier Bardem"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -7427,7 +7427,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/aHTUpo45qy9QYIOnVITGGqLoVcA.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/lg8grww4YuOrGYsuVeuo0VuNNSU.jpg",
     videoUrl: "12153",
-    overview: "Two disgraced FBI agent brothers, Marcus and Kevin Copeland, accidentally foil a drug bust. As punishment, they're forced to escort a pair of socialite heiresses to the Hamptons, where they're being used as bait for a kidnapping plot. When the girls refuse to go after realizing the plan, Marcus and Kevin are left with no options — deciding to pose as the sisters themselves, transforming from Black FBI agents into wealthy white women.",
+    overview: "Two disgraced FBI agent brothers, Marcus and Kevin Copeland, accidentally foil a drug bust. As punishment, they're forced to escort a pair of socialite heiresses to the Hamptons, where they're being used as bait for a kidnapping plot. When the girls refuse to go after realizing the plan, Marcus and Kevin are left with no options â€” deciding to pose as the sisters themselves, transforming from Black FBI agents into wealthy white women.",
     director: "Keenen Ivory Wayans",
     cast: ["Shawn Wayans, Marlon Wayans, Jaime King, Frankie Faison, Lochlyn Munro, John Heard, Terry Crews"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -7446,7 +7446,7 @@ const MOVIES = [
     videoUrl: "2109",
     overview: "A loyal and dedicated Hong Kong Inspector teams up with a reckless and loudmouthed LAPD detective to rescue the Chinese Consul's kidnapped daughter, while trying to arrest a dangerous crime lord along the way.",
     director: "Brett Ratner",
-    cast: ["Jackie Chan, Chris Tucker, Tom Wilkinson, Ken Leung, Elizabeth Peña"],
+    cast: ["Jackie Chan, Chris Tucker, Tom Wilkinson, Ken Leung, Elizabeth PeÃ±a"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -7461,9 +7461,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/aBQf2vMiCINeVC9v6BGVYKXurTh.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/mo1MXdcLSx6EMaGrpjjL8qOSEHE.jpg",
     videoUrl: "5175",
-    overview: "It's vacation time for Carter as he finds himself alongside Lee in Hong Kong wishing for more excitement. While Carter wants to party and meet the ladies, Lee is out to track down a Triad gang lord — and the two soon become embroiled in a dangerous counterfeit money scam involving murdered U.S. customs agents.",
+    overview: "It's vacation time for Carter as he finds himself alongside Lee in Hong Kong wishing for more excitement. While Carter wants to party and meet the ladies, Lee is out to track down a Triad gang lord â€” and the two soon become embroiled in a dangerous counterfeit money scam involving murdered U.S. customs agents.",
     director: "Brett Ratner",
-    cast: ["Jackie Chan, Chris Tucker, John Lone, Ziyi Zhang, Roselyn Sánchez, Alan King"],
+    cast: ["Jackie Chan, Chris Tucker, John Lone, Ziyi Zhang, Roselyn SÃ¡nchez, Alan King"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -7497,7 +7497,7 @@ const MOVIES = [
     videoUrl: "1197306",
     overview: "Levon Cade left behind a decorated military career in the black ops to live a simple life working construction. But when his boss's daughter, who is like family to him, is taken by human traffickers, his search to bring her home uncovers a world of corruption far greater than he ever could have imagined.",
     director: "David Ayer",
-    cast: ["Jason Statham, Jason Flemyng, Michael Peña, David Harbour, Merab Ninidze, Maximilian Osinski"],
+    cast: ["Jason Statham, Jason Flemyng, Michael PeÃ±a, David Harbour, Merab Ninidze, Maximilian Osinski"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -7580,9 +7580,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/yzAlcuJhpnxRPjaj7AHBRbNPQCJ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/wiHwmNKPA7J9GgqCKY2z243HE3S.jpg",
     videoUrl: "82675",
-    overview: "Two years after using his particular set of skills to rescue his daughter, retired CIA operative Bryan Mills is on a family trip to Istanbul when he, his ex-wife, and his daughter find themselves targeted by the vengeful father of one of the kidnappers Mills killed while saving Kim — turning the hunter into the hunted.",
+    overview: "Two years after using his particular set of skills to rescue his daughter, retired CIA operative Bryan Mills is on a family trip to Istanbul when he, his ex-wife, and his daughter find themselves targeted by the vengeful father of one of the kidnappers Mills killed while saving Kim â€” turning the hunter into the hunted.",
     director: "Olivier Megaton",
-    cast: ["Liam Neeson, Maggie Grace, Famke Janssen, Rade Šerbedžija, Leland Orser, Luke Grimes"],
+    cast: ["Liam Neeson, Maggie Grace, Famke Janssen, Rade Å erbedÅ¾ija, Leland Orser, Luke Grimes"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -7614,7 +7614,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/6Biy7R9LfumYshur3YKhpj56MpB.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rQxHMwD8zjEvdsvhyfMAI4vAU6d.jpg",
     videoUrl: "74",
-    overview: "Ray Ferrier is a divorced dockworker and less-than-perfect father. Soon after his ex-wife and her new husband drop off his teenage son and young daughter for a rare weekend visit, a strange and violent storm sweeps through — heralding the arrival of massive alien tripod war machines that begin obliterating everything in their path. Ray must fight to keep his fractured family alive as an all-out invasion threatens the future of humanity.",
+    overview: "Ray Ferrier is a divorced dockworker and less-than-perfect father. Soon after his ex-wife and her new husband drop off his teenage son and young daughter for a rare weekend visit, a strange and violent storm sweeps through â€” heralding the arrival of massive alien tripod war machines that begin obliterating everything in their path. Ray must fight to keep his fractured family alive as an all-out invasion threatens the future of humanity.",
     director: "Steven Spielberg",
     cast: ["Tom Cruise, Dakota Fanning, Miranda Otto, Tim Robbins, Justin Chatwin"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -7631,7 +7631,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/jPC2eYub74zwf2tPGVtzSlBW6Oy.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7ZvfdaFhqALOAb7pd4YNpucikMK.jpg",
     videoUrl: "854",
-    overview: "Stanley Ipkiss, an insecure bank clerk who has lost his zest for life, is an incredibly nice man — too nice for his own good, and a pushover when it comes to confrontation. After stumbling upon an ancient, magical mask depicting the Norse god of mischief, he's transformed into a confident, cartoon-like wild man who upsets his ordinary life and draws the attention of the local mob boss.",
+    overview: "Stanley Ipkiss, an insecure bank clerk who has lost his zest for life, is an incredibly nice man â€” too nice for his own good, and a pushover when it comes to confrontation. After stumbling upon an ancient, magical mask depicting the Norse god of mischief, he's transformed into a confident, cartoon-like wild man who upsets his ordinary life and draws the attention of the local mob boss.",
     director: "Chuck Russell",
     cast: ["Jim Carrey, Cameron Diaz, Peter Riegert, Peter Greene, Amy Yasbeck, Richard Jeni"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -7648,7 +7648,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/rULWuutDcN5NvtiZi4FRPzRYWSh.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oU5npfTRR8WiwXnxdUSLXztOzvG.jpg",
     videoUrl: "634492",
-    overview: "In a switch from the typical genre, Madame Web tells the standalone origin story of one of Marvel publishing's most enigmatic heroines. The suspense-driven thriller stars Cassandra Webb as a paramedic in Manhattan who develops the power to see the future — and realizes she can use that insight to change it. Forced to confront revelations about her past, she forges a relationship with three young women bound for powerful destinies, if they can all survive a deadly present.",
+    overview: "In a switch from the typical genre, Madame Web tells the standalone origin story of one of Marvel publishing's most enigmatic heroines. The suspense-driven thriller stars Cassandra Webb as a paramedic in Manhattan who develops the power to see the future â€” and realizes she can use that insight to change it. Forced to confront revelations about her past, she forges a relationship with three young women bound for powerful destinies, if they can all survive a deadly present.",
     director: "S.J. Clarkson",
     cast: ["Dakota Johnson, Sydney Sweeney, Isabela Merced, Celeste O'Connor, Tahar Rahim, Mike Epps, Emma Roberts, Adam Scott"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -7670,7 +7670,7 @@ const MOVIES = [
     cast: ["Henry Cavill, Anya Chalotra, Freya Allan, Eamon Farren, Joey Batey, MyAnna Buring, Liam Hemsworth"],
     trending: false,
     featured: false,
-    cinesrcId: "71912", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "71912", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -7779,7 +7779,7 @@ const MOVIES = [
     cast: ["Pedro Pascal, Bella Ramsey, Anna Torv, Gabriel Luna, Storm Reid, Nick Offerman, Murray Bartlett, Isabela Merced, Young Mazino"],
     trending: false,
     featured: false,
-    cinesrcId: "100088", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "100088", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -7820,12 +7820,12 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rX1wQMTKFqF0gvZyS0DDQqgnQPB.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/vttOoJ9aGKHY05Gsb1lNbOAZgTM.jpg",
     videoUrl: "",
-    overview: "After stealing the Tesseract during a botched time heist, the mercurial villain Loki lands in the custody of the Time Variance Authority (TVA), a bureaucratic organization tasked with maintaining the sacred timeline of the multiverse. Instead of being erased from existence, Loki is offered a choice — help fix a greater threat to the timeline, or face deletion — sending him on a mind-bending journey that challenges everything he thought he knew about himself.",
+    overview: "After stealing the Tesseract during a botched time heist, the mercurial villain Loki lands in the custody of the Time Variance Authority (TVA), a bureaucratic organization tasked with maintaining the sacred timeline of the multiverse. Instead of being erased from existence, Loki is offered a choice â€” help fix a greater threat to the timeline, or face deletion â€” sending him on a mind-bending journey that challenges everything he thought he knew about himself.",
     director: "Michael Waldron",
     cast: ["Tom Hiddleston, Owen Wilson, Gugu Mbatha-Raw, Sophia Di Martino, Wunmi Mosaku, Eugene Cordero, Jonathan Majors"],
     trending: false,
     featured: false,
-    cinesrcId: "84958", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "84958", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -7867,7 +7867,7 @@ const MOVIES = [
     cast: ["Winona Ryder, David Harbour, Finn Wolfhard, Millie Bobby Brown, Gaten Matarazzo, Caleb McLaughlin, Natalia Dyer, Charlie Heaton, Noah Schnapp, Sadie Sink, Joe Keery, Maya Hawke"],
     trending: false,
     featured: false,
-    cinesrcId: "66732", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "66732", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -7951,12 +7951,12 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/uneEmfKFbyOZsN77JAHXK1cIAmX.jpg",
     videoUrl: "",
-    overview: "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who share a single characteristic: none of them has anything to lose. Five months of seclusion — memorizing every step, every detail, every probability — culminate in eleven days locked inside the Royal Mint of Spain, surrounded by police forces and dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
-    director: "Álex Pina",
-    cast: ["Úrsula Corberó, Álvaro Morte, Itziar Ituño, Pedro Alonso, Paco Tous, Alba Flores, Miguel Herrán, Jaime Lorente, Esther Acebo"],
+    overview: "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who share a single characteristic: none of them has anything to lose. Five months of seclusion â€” memorizing every step, every detail, every probability â€” culminate in eleven days locked inside the Royal Mint of Spain, surrounded by police forces and dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
+    director: "Ãlex Pina",
+    cast: ["Ãšrsula CorberÃ³, Ãlvaro Morte, Itziar ItuÃ±o, Pedro Alonso, Paco Tous, Alba Flores, Miguel HerrÃ¡n, Jaime Lorente, Esther Acebo"],
     trending: false,
     featured: false,
-    cinesrcId: "71446", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "71446", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -7965,20 +7965,20 @@ const MOVIES = [
           { episode: 2, title: "Imprudencias letales" },
           { episode: 3, title: "Errar al disparar" },
           { episode: 4, title: "Caballo de Troya" },
-          { episode: 5, title: "El día de la marmota" },
-          { episode: 6, title: "La cálida Guerra Fría" },
+          { episode: 5, title: "El dÃ­a de la marmota" },
+          { episode: 6, title: "La cÃ¡lida Guerra FrÃ­a" },
           { episode: 7, title: "Refrigerada inestabilidad" },
-          { episode: 8, title: "Tú lo has buscado" },
+          { episode: 8, title: "TÃº lo has buscado" },
           { episode: 9, title: "El que la sigue la consigue" },
         ],
       },
       {
         season: 2,
         episodes: [
-          { episode: 1, title: "Se acabaron las máscaras" },
+          { episode: 1, title: "Se acabaron las mÃ¡scaras" },
           { episode: 2, title: " La cabeza del plan" },
-          { episode: 3, title: "Cuestión de eficacia" },
-          { episode: 4, title: "¿Qué hemos hecho?" },
+          { episode: 3, title: "CuestiÃ³n de eficacia" },
+          { episode: 4, title: "Â¿QuÃ© hemos hecho?" },
           { episode: 5, title: "A contrarreloj" },
           { episode: 6, title: "Bella ciao" },
         ],
@@ -7989,10 +7989,10 @@ const MOVIES = [
           { episode: 1, title: "Hemos vuelto" },
           { episode: 2, title: "Aikido" },
           { episode: 3, title: "48 metros bajo el suelo" },
-          { episode: 4, title: " La hora del delfín" },
+          { episode: 4, title: " La hora del delfÃ­n" },
           { episode: 5, title: "Bum, bum, ciao" },
-          { episode: 6, title: "Todo pareció insignificante" },
-          { episode: 7, title: "Pequeñas vacaciones" },
+          { episode: 6, title: "Todo pareciÃ³ insignificante" },
+          { episode: 7, title: "PequeÃ±as vacaciones" },
           { episode: 8, title: "La deriva" },
         ],
       },
@@ -8000,28 +8000,28 @@ const MOVIES = [
         season: 4,
         episodes: [
           { episode: 1, title: "Game over" },
-          { episode: 2, title: "La boda de Berlín" },
-          { episode: 3, title: "Lección de anatomía" },
-          { episode: 4, title: "Suspiros de España" },
+          { episode: 2, title: "La boda de BerlÃ­n" },
+          { episode: 3, title: "LecciÃ³n de anatomÃ­a" },
+          { episode: 4, title: "Suspiros de EspaÃ±a" },
           { episode: 5, title: "5 minutos antes" },
-          { episode: 6, title: "KO técnico" },
+          { episode: 6, title: "KO tÃ©cnico" },
           { episode: 7, title: "Tumbar la carpa" },
-          { episode: 8, title: "Plan París" },
+          { episode: 8, title: "Plan ParÃ­s" },
         ],
       },
       {
         season: 5,
         episodes: [
           { episode: 1, title: "El final del camino" },
-          { episode: 2, title: "¿Crees en la reencarnación?" },
-          { episode: 3, title: "El espectáculo de la vida" },
+          { episode: 2, title: "Â¿Crees en la reencarnaciÃ³n?" },
+          { episode: 3, title: "El espectÃ¡culo de la vida" },
           { episode: 4, title: "Tu sitio en el cielo" },
           { episode: 5, title: "Vivir muchas vidas" },
-          { episode: 6, title: "Válvulas de escape" },
+          { episode: 6, title: "VÃ¡lvulas de escape" },
           { episode: 7, title: "Ciencia ilusionada" },
-          { episode: 8, title: "La teoría de la elegancia" },
+          { episode: 8, title: "La teorÃ­a de la elegancia" },
           { episode: 9, title: "Lo que se habla en la cama" },
-          { episode: 10, title: "Una tradición familiar" },
+          { episode: 10, title: "Una tradiciÃ³n familiar" },
         ],
       },
 
@@ -8038,12 +8038,12 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ijWWwINc8h71NQ8j1LTJMFSj5wr.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/z8axGj6DbR1cZZw3fCLNnJE9LIJ.jpg",
     videoUrl: "",
-    overview: "Blending the style of classic sitcoms with the Marvel Cinematic Universe, WandaVision follows Wanda Maximoff and Vision — two super-powered beings living idealized suburban lives — as they begin to suspect that everything is not as it seems.",
+    overview: "Blending the style of classic sitcoms with the Marvel Cinematic Universe, WandaVision follows Wanda Maximoff and Vision â€” two super-powered beings living idealized suburban lives â€” as they begin to suspect that everything is not as it seems.",
     director: "Jac Schaeffer",
     cast: ["Elizabeth Olsen, Paul Bettany, Kathryn Hahn, Teyonah Parris, Randall Park, Kat Dennings, Evan Peters, Debra Jo Rupp"],
     trending: false,
     featured: false,
-    cinesrcId: "85271", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "85271", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -8306,7 +8306,7 @@ const MOVIES = [
     cast: ["Grant Gustin, Candice Patton, Danielle Panabaker, Carlos Valdes, Tom Cavanagh, Jesse L. Martin, Keiynan Lonsdale"],
     trending: false,
     featured: false,
-    cinesrcId: "60735", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "60735", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -8736,12 +8736,12 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/vlv1gn98GqMnKHLSh0dNciqGfBl.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/sdKDOUAstJv46rUuBtjHV8ILkcN.jpg",
     videoUrl: "",
-    overview: "Follows the world's most famous superhero and comic books' most famous journalist as they deal with all the stress, pressure, and complexities that come with being working parents in today's society — all while Superman balances his heroic duties with Lois Lane raising their teenage sons in Smallville.",
+    overview: "Follows the world's most famous superhero and comic books' most famous journalist as they deal with all the stress, pressure, and complexities that come with being working parents in today's society â€” all while Superman balances his heroic duties with Lois Lane raising their teenage sons in Smallville.",
     director: "Todd Helbing, Greg Berlanti",
-    cast: ["Tyler Hoechlin, Elizabeth Tulloch, Jordan Elsass, Alexander Garfin, Erik Valdez, Inde Navarrette, Wolé Parks, Adam Rayner"],
+    cast: ["Tyler Hoechlin, Elizabeth Tulloch, Jordan Elsass, Alexander Garfin, Erik Valdez, Inde Navarrette, WolÃ© Parks, Adam Rayner"],
     trending: false,
     featured: false,
-    cinesrcId: "95057", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "95057", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -8832,12 +8832,12 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/pE8CScObQURsFZ723PSW1K9EGYp.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/m0GVaV4mgE8aFSHp8kTevHb8feu.jpg",
     videoUrl: "",
-    overview: "A gangster family epic set in 1919 Birmingham, England, centered on the Shelby crime family, led by ambitious and ruthless Thomas Shelby. Fresh from the horrors of World War I, Tommy schemes his way up from the poverty of Small Heath, seeking to move the family beyond their bookmaking business into legitimate — and not-so-legitimate — enterprises, clashing along the way with rival gangs, the police, and the IRA.",
+    overview: "A gangster family epic set in 1919 Birmingham, England, centered on the Shelby crime family, led by ambitious and ruthless Thomas Shelby. Fresh from the horrors of World War I, Tommy schemes his way up from the poverty of Small Heath, seeking to move the family beyond their bookmaking business into legitimate â€” and not-so-legitimate â€” enterprises, clashing along the way with rival gangs, the police, and the IRA.",
     director: "Steven Knight",
     cast: ["Cillian Murphy, Paul Anderson, Sophie Rundle, Sam Neill, Helen McCrory, Tom Hardy, Steven Knight"],
     trending: false,
     featured: false,
-    cinesrcId: "60574", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "60574", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -8921,12 +8921,12 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/zU0htwkhNvBQdVSIKB9s6hgVeFK.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/5N5dSOrysuquExvn8Gpp5jMEf6u.jpg",
     videoUrl: "",
-    overview: "In a 1950s orphanage, a young girl named Beth Harmon discovers an astonishing talent for chess while developing a dependency on tranquilizers provided to the children — an addiction that will follow her into adulthood. Grandmaster-level chess is a sport dominated by men, but as Beth rises through the ranks of competitive chess, she must fight to overcome her personal demons and outmaneuver a world that doesn't expect her to win.",
+    overview: "In a 1950s orphanage, a young girl named Beth Harmon discovers an astonishing talent for chess while developing a dependency on tranquilizers provided to the children â€” an addiction that will follow her into adulthood. Grandmaster-level chess is a sport dominated by men, but as Beth rises through the ranks of competitive chess, she must fight to overcome her personal demons and outmaneuver a world that doesn't expect her to win.",
     director: "Scott Frank",
     cast: ["Anya Taylor-Joy, Chloe Pirrie, Bill Camp, Marielle Heller, Thomas Brodie-Sangster, Moses Ingram, Harry Melling"],
     trending: false,
     featured: false,
-    cinesrcId: "87739", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "87739", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -9175,7 +9175,7 @@ const MOVIES = [
           { episode: 4, title: "The Griffin Equivalency" },
           { episode: 5, title: "The Euclid Alternative" },
           { episode: 6, title: "The Cooper-Nowitzki Theorem" },
-          { episode: 7, title: "The Panty Piñata Polarization" },
+          { episode: 7, title: "The Panty PiÃ±ata Polarization" },
           { episode: 8, title: "The Lizard-Spock Expansion" },
           { episode: 9, title: "The White Asparagus Triangulation" },
           { episode: 10, title: "The Vartabedian Conundrum" },
@@ -9497,12 +9497,12 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zTjMmLFn2jgsxZwHC5fbsm6HHG4.jpg",
     videoUrl: "",
-    overview: "Seven noble families fight for control of the mythical land of Westeros. Political and sexual intrigue is pervasive in this fantasy epic, as the Iron Throne is fiercely contested by dynasties whose ancestors ruled for centuries. Meanwhile, a forgotten race, banished to the North, thousands of years ago, returns after being dormant for millennia — as an ancient enemy beyond the Wall threatens the very existence of the Seven Kingdoms.",
+    overview: "Seven noble families fight for control of the mythical land of Westeros. Political and sexual intrigue is pervasive in this fantasy epic, as the Iron Throne is fiercely contested by dynasties whose ancestors ruled for centuries. Meanwhile, a forgotten race, banished to the North, thousands of years ago, returns after being dormant for millennia â€” as an ancient enemy beyond the Wall threatens the very existence of the Seven Kingdoms.",
     director: "David Benioff, D.B. Weiss",
     cast: ["Emilia Clarke, Peter Dinklage, Kit Harington, Lena Headey, Sophie Turner, Maisie Williams, Nikolaj Coster-Waldau, Iain Glen"],
     trending: false,
     featured: false,
-    cinesrcId: "1399", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "1399", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -9630,7 +9630,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/9LRFNLthb0jfWC0HUDUWjYgpP9F.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/hD3OwBSTHIr7CE1UIBYOH6fZHWC.jpg",
     videoUrl: "269149",
-    overview: "Determined to prove herself, Officer Judy Hopps, the first bunny on Zootopia's police force, jumps at the chance to crack her first case — even if it means partnering with a fast-talking, scam-artist fox to solve the mystery. As their investigation uncovers a conspiracy that threatens the very fabric of a city where all animals live in harmony, Judy and Nick must confront their own prejudices to save their home.",
+    overview: "Determined to prove herself, Officer Judy Hopps, the first bunny on Zootopia's police force, jumps at the chance to crack her first case â€” even if it means partnering with a fast-talking, scam-artist fox to solve the mystery. As their investigation uncovers a conspiracy that threatens the very fabric of a city where all animals live in harmony, Judy and Nick must confront their own prejudices to save their home.",
     director: "Byron Howard, Rich Moore, Jared Bush",
     cast: ["Ginnifer Goodwin, Jason Bateman, Idris Elba, Jenny Slate, Nate Torrence, Bonnie Hunt, Don Lake, Tommy Chong"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -9681,7 +9681,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/dRoFlUbH1l51ACmx5oPCI3jfvZq.jpg",
     videoUrl: "1314481",
-    overview: "Two decades after leaving her position as an assistant at Runway magazine, Andrea Andy Sachs has become a respected reporter — until her entire newsroom is abruptly laid off. Meanwhile, her old boss Miranda Priestly faces mounting pressure over Runway's declining relevance in a new media landscape. The two reconnect with Emily Charlton, Miranda's former assistant turned powerful luxury executive, whose funding could be the key to Runway's survival.",
+    overview: "Two decades after leaving her position as an assistant at Runway magazine, Andrea Andy Sachs has become a respected reporter â€” until her entire newsroom is abruptly laid off. Meanwhile, her old boss Miranda Priestly faces mounting pressure over Runway's declining relevance in a new media landscape. The two reconnect with Emily Charlton, Miranda's former assistant turned powerful luxury executive, whose funding could be the key to Runway's survival.",
     director: "David Frankel",
     cast: ["Meryl Streep, Anne Hathaway, Emily Blunt, Stanley Tucci, Kenneth Branagh, Simone Ashley, Justin Theroux, Lucy Liu, B.J. Novak"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -9715,7 +9715,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fVQFPRuw3yWXojYDJvA5EoFjUOY.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/mfxaHyz4lHKaXXjG9ItLNFd9dXT.jpg",
     videoUrl: "4247",
-    overview: "A group of college students are lured to a haunted mansion by their professor for what's supposed to be a supernatural research project. As paranormal chaos and ridiculous horror-movie tropes take over the night, the survivors of the first film find themselves tangled in a fresh wave of spoofs — this time taking aim at The Exorcist, The Haunting, and other supernatural horror classics.",
+    overview: "A group of college students are lured to a haunted mansion by their professor for what's supposed to be a supernatural research project. As paranormal chaos and ridiculous horror-movie tropes take over the night, the survivors of the first film find themselves tangled in a fresh wave of spoofs â€” this time taking aim at The Exorcist, The Haunting, and other supernatural horror classics.",
     director: "Keenen Ivory Wayans",
     cast: ["Shawn Wayans, Marlon Wayans, Alyson Fouse, Greg Grabianski, Dave Polsky, Michael Anthony Snowden, Craig Wayans"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -9732,7 +9732,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7Eb1JWK0Cb0rbfsYjwfc9g0PbQH.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3nuZqbOzF9gQKERuVFVIiAIy7KF.jpg",
     videoUrl: "4248",
-    overview: "A group of college students are lured to a haunted mansion by their professor for what's supposed to be a supernatural research project. As paranormal chaos and ridiculous horror-movie tropes take over the night, the survivors of the first film find themselves tangled in a fresh wave of spoofs — this time taking aim at The Exorcist, The Haunting, and other supernatural horror classics.",
+    overview: "A group of college students are lured to a haunted mansion by their professor for what's supposed to be a supernatural research project. As paranormal chaos and ridiculous horror-movie tropes take over the night, the survivors of the first film find themselves tangled in a fresh wave of spoofs â€” this time taking aim at The Exorcist, The Haunting, and other supernatural horror classics.",
     director: "Keenen Ivory Wayans",
     cast: ["Shawn Wayans, Marlon Wayans, Alyson Fouse, Greg Grabianski, Dave Polsky, Michael Anthony Snowden, Craig Wayans"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -9749,7 +9749,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8dLsax5KSwlCY5uWXETKjud5k6U.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/v1QegczD8a1m8KLckFnBSWsiudi.jpg",
     videoUrl: "4256",
-    overview: "A weathergirl becomes convinced that a mysterious videotape is connected to alien crop circles suddenly appearing all over the country. As the government prepares for what may be an imminent invasion, this entry spoofs Signs, The Ring, The Matrix, and 8 Mile — piling on the chaos with a mix of aliens, ghosts, and prophecy in classic franchise fashion.",
+    overview: "A weathergirl becomes convinced that a mysterious videotape is connected to alien crop circles suddenly appearing all over the country. As the government prepares for what may be an imminent invasion, this entry spoofs Signs, The Ring, The Matrix, and 8 Mile â€” piling on the chaos with a mix of aliens, ghosts, and prophecy in classic franchise fashion.",
     director: "David Zucker",
     cast: ["Anna Faris, Anthony Anderson, Kevin Hart, Leslie Nielsen, Camryn Manheim, Simon Rex, George Carlin, Queen Latifah, Eddie Griffin, Denise Richards, Regina Hall, Charlie Sheen"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -9800,7 +9800,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/znHT8peERZRWG1ME3r0Db0EV8k8.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/r6ktIlRjHgtd4gRFMw8cFwmgyvB.jpg",
     videoUrl: "1273221",
-    overview: "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs — and no horror movie IP is safe. Picking up years after the events of Scary Movie 2, the Wayans brothers return for a franchise reunion that reunites the original cast for a fresh wave of horror parody.",
+    overview: "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs â€” and no horror movie IP is safe. Picking up years after the events of Scary Movie 2, the Wayans brothers return for a franchise reunion that reunites the original cast for a fresh wave of horror parody.",
     director: "Michael Tiddes",
     cast: ["Anna Faris, Regina Hall, Marlon Wayans, Shawn Wayans, Jon Abrahams, Lochlyn Munro, Cheri Oteri, Dave Sheridan, Anthony Anderson, Chris Elliott, Damon Wayans Jr., Kim Wayans, Heidi Gardner"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -9835,7 +9835,7 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/suZiLGzuiY8Fswn7ijWuHkEHLim.jpg",
     videoUrl: "283445",
     overview: "A protective mother and her twin sons move into a rural house haunted by a supernatural entity that feeds on the souls of the children it seduces into killing their entire families. As the boys are drawn into watching disturbing home movies left behind by a previous family, a former deputy investigating the string of killings races to save them before history repeats itself.",
-    director: "Ciarán Foy",
+    director: "CiarÃ¡n Foy",
     cast: ["James Ransone, Shannyn Sossamon, Robert Daniel Sloan, Dartanian Sloan, Lea Coco, Tate Ellington"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
@@ -9868,7 +9868,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/kjjz8mVNrwNUa9uz8IMnqS79rxj.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/wngCzx8xEh8qgvQf8JZih1zHjnj.jpg",
     videoUrl: "15805",
-    overview: "When Barbara Gordon (Batgirl) suffers a brain-freezing accident while investigating one of Mr. Freeze's schemes, Batman and Robin must race against time to find a cure. Their only hope lies in a rare tissue match — the wife of Mr. Freeze himself, kept alive in cryogenic suspension. As Batman scrambles to save Barbara, he's forced into a desperate, unlikely alliance with his icy nemesis.",
+    overview: "When Barbara Gordon (Batgirl) suffers a brain-freezing accident while investigating one of Mr. Freeze's schemes, Batman and Robin must race against time to find a cure. Their only hope lies in a rare tissue match â€” the wife of Mr. Freeze himself, kept alive in cryogenic suspension. As Batman scrambles to save Barbara, he's forced into a desperate, unlikely alliance with his icy nemesis.",
     director: "Boyd Kirkland",
     cast: ["Kevin Conroy, Michael Ansara, Loren Lester, Mary Kay Bergman, Bob Hastings, Efrem Zimbalist Jr."],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -9885,7 +9885,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/cY30YkhK84E18ROghF4osi67EYT.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/cpsCU7XJ3GbyqK4oa34pYsCAycU.jpg",
     videoUrl: "16234",
-    overview: "Years after the Joker's mysterious disappearance, Gotham's new Batman, Terry McGinnis, is confronted by his return. As Terry investigates, he uncovers a shocking secret from Bruce Wayne's past involving the Joker's original demise — one that forces the aging Bruce to finally confront his greatest enemy's dark legacy, and its haunting connection to Tim Drake, the former Robin.",
+    overview: "Years after the Joker's mysterious disappearance, Gotham's new Batman, Terry McGinnis, is confronted by his return. As Terry investigates, he uncovers a shocking secret from Bruce Wayne's past involving the Joker's original demise â€” one that forces the aging Bruce to finally confront his greatest enemy's dark legacy, and its haunting connection to Tim Drake, the former Robin.",
     director: "Curt Geda",
     cast: ["Kevin Conroy, Mark Hamill, Will Friedle, Angie Harmon, Dean Stockwell, Melissa Joan Hart"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -9919,7 +9919,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/mLZRhulJcDsxZWTdfx0trtk6y07.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/I5wTC8hHYW4hrVG7O7PoD0W5Qd.jpg",
     videoUrl: "69735",
-    overview: "Bruce Wayne returns to Gotham City after years abroad, ready to begin his war on crime — but his early, clumsy attempts at vigilantism nearly get him killed. Meanwhile, an idealistic rookie cop named James Gordon transfers into Gotham's corrupt police force, determined to make a difference. As both men navigate a city drowning in crime, their paths converge, laying the groundwork for the alliance that will define Gotham's future.",
+    overview: "Bruce Wayne returns to Gotham City after years abroad, ready to begin his war on crime â€” but his early, clumsy attempts at vigilantism nearly get him killed. Meanwhile, an idealistic rookie cop named James Gordon transfers into Gotham's corrupt police force, determined to make a difference. As both men navigate a city drowning in crime, their paths converge, laying the groundwork for the alliance that will define Gotham's future.",
     director: "Sam Liu, Lauren Montgomery",
     cast: ["Ben McKenzie, Bryan Cranston, Eliza Dushku, Katee Sackhoff, Jon Polito, Alex Rocco"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -9936,7 +9936,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8uKIqZBXfxhflenI2LkNZIHUp7I.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/83eJ2r9dIf87pN0YoVOQakDD2q3.jpg",
     videoUrl: "20077",
-    overview: "The Penguin breaks out of Arkham Asylum, and while on the run, he stumbles upon Dracula's coffin in a graveyard, unwittingly resurrecting the ancient vampire. As Dracula begins terrorizing Gotham City and building an army of the undead, Batman must find a way to defeat a foe unlike any he's faced before — one that hunts the night just as he does.",
+    overview: "The Penguin breaks out of Arkham Asylum, and while on the run, he stumbles upon Dracula's coffin in a graveyard, unwittingly resurrecting the ancient vampire. As Dracula begins terrorizing Gotham City and building an army of the undead, Batman must find a way to defeat a foe unlike any he's faced before â€” one that hunts the night just as he does.",
     director: "Michael Goguen, Tae Ho Han, Sam Liu",
     cast: ["Rino Romano, Peter Stormare, Alastair Duncan, Tara Strong, Kevin Michael Richardson, Dee Bradley Baker"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -9953,7 +9953,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ktjbGsGm5GKlHDvvwQajXvDW2BN.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/jLslJietfQJEgOvQHk4fRYFCnTS.jpg",
     videoUrl: "20077",
-    overview: "The Penguin breaks out of Arkham Asylum, and while on the run, he stumbles upon Dracula's coffin in a graveyard, unwittingly resurrecting the ancient vampire. As Dracula begins terrorizing Gotham City and building an army of the undead, Batman must find a way to defeat a foe unlike any he's faced before — one that hunts the night just as he does.",
+    overview: "The Penguin breaks out of Arkham Asylum, and while on the run, he stumbles upon Dracula's coffin in a graveyard, unwittingly resurrecting the ancient vampire. As Dracula begins terrorizing Gotham City and building an army of the undead, Batman must find a way to defeat a foe unlike any he's faced before â€” one that hunts the night just as he does.",
     director: "Michael Goguen, Tae Ho Han, Sam Liu",
     cast: ["Rino Romano, Peter Stormare, Alastair Duncan, Tara Strong, Kevin Michael Richardson, Dee Bradley Baker"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -9970,7 +9970,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/mlmhpUArJdpRPO211v3lETe3uzg.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1GolTpuYYwClqRQX3rXtiMq5S2X.jpg",
     videoUrl: "21683",
-    overview: "A brand-new, mysterious female vigilante calling herself Batwoman appears on the streets of Gotham City, and Batman is determined to uncover her true identity. As he investigates several suspects among the city's elite, he finds himself caught in a dangerous crossfire between the mob and Batwoman's own agenda — all while the criminal underworld capitalizes on the chaos.",
+    overview: "A brand-new, mysterious female vigilante calling herself Batwoman appears on the streets of Gotham City, and Batman is determined to uncover her true identity. As he investigates several suspects among the city's elite, he finds himself caught in a dangerous crossfire between the mob and Batwoman's own agenda â€” all while the criminal underworld capitalizes on the chaos.",
     director: "Curt Geda",
     cast: ["Kevin Conroy, Kyra Sedgwick, Kelly Ripa, Elisa Gabrielli, Efrem Zimbalist Jr., Hector Elizondo, David Ogden Stiers"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -9987,7 +9987,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/b9KxvIAZkl2f57kjObj8Z9z9LhL.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/4REt2c4uGP9zAXlRQRtifDeYTc9.jpg",
     videoUrl: "242643",
-    overview: "The Suicide Squad — a team of imprisoned supervillains led by the ruthless Amanda Waller — is forced on a covert mission into Arkham Asylum to extract classified information from the Riddler, who's threatening to expose the government's darkest secrets. As their mission spirals out of control, they find themselves face-to-face with Batman himself, while a bigger, more explosive threat looms over Gotham City.",
+    overview: "The Suicide Squad â€” a team of imprisoned supervillains led by the ruthless Amanda Waller â€” is forced on a covert mission into Arkham Asylum to extract classified information from the Riddler, who's threatening to expose the government's darkest secrets. As their mission spirals out of control, they find themselves face-to-face with Batman himself, while a bigger, more explosive threat looms over Gotham City.",
     director: "Jay Oliva, Ethan Spaulding",
     cast: ["Kevin Conroy, C. Thomas Howell, Neal McDonough, Hynden Walch, Troy Baker, Matthew Gray Gubler"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10004,7 +10004,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/mvffaexT5kA3chOnGxwBSlRoshh.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/r0nVOJN0AOymABBM8qVhSFv97yj.jpg",
     videoUrl: "886396",
-    overview: "A recently arrived and hostile alien species threatens the Earth, but there's more to this invasion than meets the eye. As Batman and Superman investigate the mysterious attackers, their teenage sons — Robin (Damian Wayne) and Superboy (Jonathan Kent) — are drawn into the chaos, forced to work together and confront secrets about their own destinies that could reshape the future of the Justice League.",
+    overview: "A recently arrived and hostile alien species threatens the Earth, but there's more to this invasion than meets the eye. As Batman and Superman investigate the mysterious attackers, their teenage sons â€” Robin (Damian Wayne) and Superboy (Jonathan Kent) â€” are drawn into the chaos, forced to work together and confront secrets about their own destinies that could reshape the future of the Justice League.",
     director: "Matt Peters",
     cast: ["Jensen Ackles, Jack Griffo, Cameron Monaghan, Darren Criss, Travis Willingham, Nia Long"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10021,7 +10021,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/wCoqSF2Ojkywffadtbn43dPhVgJ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qo9eeHB1ZYNGATYTE9xHGh28IT5.jpg",
     videoUrl: "76589",
-    overview: "Batman's private files detailing the secret weaknesses of every member of the Justice League fall into the hands of the villainous Vandal Savage and his Legion of Doom. Using this intimate knowledge against them, the villains launch a coordinated, devastating attack designed to eliminate each hero individually — forcing the League to uncover the traitor in their midst before it's too late.",
+    overview: "Batman's private files detailing the secret weaknesses of every member of the Justice League fall into the hands of the villainous Vandal Savage and his Legion of Doom. Using this intimate knowledge against them, the villains launch a coordinated, devastating attack designed to eliminate each hero individually â€” forcing the League to uncover the traitor in their midst before it's too late.",
     director: "Lauren Montgomery",
     cast: ["Kevin Conroy, Tim Daly, Susan Eisenberg, Nathan Fillion, Carl Lumbly, Michael Rosenbaum, Bumper Robinson, Olivia d'Abo"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10038,7 +10038,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/zma3rOg6yJxgJ1Lo9uuw3tJOjbZ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zYARGakIhHUvPuVJzlbqU40FrnV.jpg",
     videoUrl: "17445",
-    overview: "Test pilot Hal Jordan is unexpectedly chosen to join the Green Lantern Corps, an elite intergalactic police force powered by willpower itself. Thrust into a much larger universe than he ever imagined, Hal is mentored by veteran Lantern Sinestro — but as he investigates a series of murders within the Corps, he uncovers a conspiracy that threatens the very order Sinestro has sworn to protect.",
+    overview: "Test pilot Hal Jordan is unexpectedly chosen to join the Green Lantern Corps, an elite intergalactic police force powered by willpower itself. Thrust into a much larger universe than he ever imagined, Hal is mentored by veteran Lantern Sinestro â€” but as he investigates a series of murders within the Corps, he uncovers a conspiracy that threatens the very order Sinestro has sworn to protect.",
     director: "Lauren Montgomery",
     cast: ["Christopher Meloni, Victor Garber, Michael Madsen, Tricia Helfer, Kurtwood Smith, Fred Tatasciore"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10055,7 +10055,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nS41LN1m2HYvVotvgOTcbPW2cjL.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/v2PbcBAJINk02PYWppsGsuQRIuu.jpg",
     videoUrl: "887357",
-    overview: "Struggling to overcome the trauma of war, veteran John Stewart is recruited by the Green Lantern Corps and given a power ring — but before he can complete his training, he's thrust into action with a rookie team of heroes when a menacing alien threat descends on Earth. As John grapples with his own inner demons, he must learn to trust himself and his newfound abilities to protect the planet.",
+    overview: "Struggling to overcome the trauma of war, veteran John Stewart is recruited by the Green Lantern Corps and given a power ring â€” but before he can complete his training, he's thrust into action with a rookie team of heroes when a menacing alien threat descends on Earth. As John grapples with his own inner demons, he must learn to trust himself and his newfound abilities to protect the planet.",
     director: "Jeff Wamester",
     cast: ["Aldis Hodge, Jimmi Simpson, Adam Bartley, Idris Elba, Rob Wiethoff, Jamie Gray Hyder"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10089,8 +10089,8 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/chpWmskl3aKm1aTZqUHRCtviwPy.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/pUNfHmVqfwRdILhCkU8TdysVOXo.jpg",
     videoUrl: "533533",
-    overview: "A highly sophisticated program, Ares, is sent from the digital world into the real world on a dangerous mission — marking humankind's first encounter with A.I. beings. The film explores artificial intelligence originating from the Grid crossing into reality, with Kevin Flynn returning to confront the consequences of a world not yet ready for contact.",
-    director: "Joachim Rønning ",
+    overview: "A highly sophisticated program, Ares, is sent from the digital world into the real world on a dangerous mission â€” marking humankind's first encounter with A.I. beings. The film explores artificial intelligence originating from the Grid crossing into reality, with Kevin Flynn returning to confront the consequences of a world not yet ready for contact.",
+    director: "Joachim RÃ¸nning ",
     cast: ["Jared Leto, Greta Lee, Evan Peters, Hasan Minhaj, Jodie Turner-Smith, Arturo Castro, Cameron Monaghan, Gillian Anderson, Jeff Bridges"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
@@ -10106,7 +10106,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/5qHoazZiaLe7oFBok7XlUhg96f2.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/kzn2mRzACwANeOrfCUdVaNyTeca.jpg",
     videoUrl: "1072790",
-    overview: "After an amazing first date, Bea and Ben's fiery attraction turns ice cold — until they find themselves unexpectedly reunited at a destination wedding in Australia. To avoid the awkwardness of their failed romance, the sworn enemies pretend to be a couple, but their plan to fake a relationship threatens to become all too real.",
+    overview: "After an amazing first date, Bea and Ben's fiery attraction turns ice cold â€” until they find themselves unexpectedly reunited at a destination wedding in Australia. To avoid the awkwardness of their failed romance, the sworn enemies pretend to be a couple, but their plan to fake a relationship threatens to become all too real.",
     director: "Will Gluck",
     cast: ["Sydney Sweeney, Glen Powell, Alexandra Shipp, GaTa, Michelle Hurd, Bryan Brown, Rachel Griffiths, Dermot Mulroney"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10123,7 +10123,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rwla9vqzrKVVKVKiOuROTIXGsxj.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/ifnnW3q4rcxGiqFQf2CLG8Ms4p9.jpg",
     videoUrl: "1035259",
-    overview: "Only one man has the particular set of skills to lead Police Squad and save the world — Lt. Frank Drebin Jr. Following in his father's footsteps, he must solve a murder case to prevent Police Squad from being shut down for good, in this reboot of the beloved spoof comedy franchise.",
+    overview: "Only one man has the particular set of skills to lead Police Squad and save the world â€” Lt. Frank Drebin Jr. Following in his father's footsteps, he must solve a murder case to prevent Police Squad from being shut down for good, in this reboot of the beloved spoof comedy franchise.",
     director: "Akiva Schaffer",
     cast: ["Liam Neeson, Pamela Anderson, Paul Walter Hauser, Kevin Durand, Danny Huston"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10157,7 +10157,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fPtUgMcLIboqlTlPrq0bQpKK8eq.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/4vSBj7BYsyuKCx96EJzGyp20WfY.jpg",
     videoUrl: "593643",
-    overview: "A young couple travels to a remote island to eat at an exclusive restaurant helmed by a celebrity chef known for his intense, theatrical culinary style. As the elaborate, meticulously curated tasting menu unfolds course by course, they gradually realize the mysterious chef has prepared a shocking menu for his elite guests — one designed for a sinister purpose that goes far beyond fine dining.",
+    overview: "A young couple travels to a remote island to eat at an exclusive restaurant helmed by a celebrity chef known for his intense, theatrical culinary style. As the elaborate, meticulously curated tasting menu unfolds course by course, they gradually realize the mysterious chef has prepared a shocking menu for his elite guests â€” one designed for a sinister purpose that goes far beyond fine dining.",
     director: "Mark Mylod",
     cast: ["Ralph Fiennes, Anya Taylor-Joy, Nicholas Hoult, Hong Chau, Janet McTeer, Judith Light, John Leguizamo"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10174,7 +10174,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/5mVyFHSY2rSsNgD4NfEwV82HigU.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rTBOOAb9BmoqIiNh5mmLPQETWaK.jpg",
     videoUrl: "593643",
-    overview: "An overachieving high school senior with dreams of an Ivy League future falls for the mysterious new girl who just moved in next door — only to discover she has a secret past as an adult film star. As their relationship deepens, he must decide how far he'll go to protect her from a world determined to expose her history and drag them both down.",
+    overview: "An overachieving high school senior with dreams of an Ivy League future falls for the mysterious new girl who just moved in next door â€” only to discover she has a secret past as an adult film star. As their relationship deepens, he must decide how far he'll go to protect her from a world determined to expose her history and drag them both down.",
     director: "Luke Greenfield",
     cast: ["Emile Hirsch, Elisha Cuthbert, Timothy Olyphant, Chris Marquette, Paul Dano, James Remar"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10191,7 +10191,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/nKhhDFCdzxeJ3GUunQ570LDpUkz.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/p5HKeRbNRTZL2tvFhmXF8oVL1y6.jpg",
     videoUrl: "593643",
-    overview: "When Dylan and Jamie meet, they quickly become best friends. Feeling jaded by love, the two agree to be just friends with the added benefit of casual sex — no strings attached. But as their arrangement blurs the line between friendship and romance, they discover that keeping feelings out of it may be harder than they bargained for.",
+    overview: "When Dylan and Jamie meet, they quickly become best friends. Feeling jaded by love, the two agree to be just friends with the added benefit of casual sex â€” no strings attached. But as their arrangement blurs the line between friendship and romance, they discover that keeping feelings out of it may be harder than they bargained for.",
     director: "Will Gluck",
     cast: ["Justin Timberlake, Mila Kunis, Patricia Clarkson, Jenna Elfman, Bryan Greenberg, Woody Harrelson, Richard Jenkins"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10208,7 +10208,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9C09L1U9S13J4Ut029Qhu0oLcTQ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rSEfKLHDZKiMQWsyJIfKr9D0CaC.jpg",
     videoUrl: "41630",
-    overview: "Adam and Emma have known each other since childhood, drifting in and out of one another's lives over the years. When they reconnect as adults, they agree to keep things purely physical — no emotional attachments, no relationship expectations. But as their arrangement continues, they find it increasingly difficult to keep feelings from creeping into the equation.",
+    overview: "Adam and Emma have known each other since childhood, drifting in and out of one another's lives over the years. When they reconnect as adults, they agree to keep things purely physical â€” no emotional attachments, no relationship expectations. But as their arrangement continues, they find it increasingly difficult to keep feelings from creeping into the equation.",
     director: "Ivan Reitman",
     cast: ["Natalie Portman, Ashton Kutcher, Kevin Kline, Cary Elwes, Greta Gerwig, Lake Bell"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10225,7 +10225,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/v5f1qO6NJnxWgONgkYg21TW39DT.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/30rvmoEBqovm723agDJ3QddWXcY.jpg",
     videoUrl: "37735",
-    overview: "A clean-cut high schooler's life takes an unexpected turn after a little white lie about losing her virginity spreads through the school's rumor mill. As her reputation spirals wildly out of control, she decides to embrace her new wild child image, cleverly turning gossip into personal gain — all while inadvertently learning what it really means to stand up for herself.",
+    overview: "A clean-cut high schooler's life takes an unexpected turn after a little white lie about losing her virginity spreads through the school's rumor mill. As her reputation spirals wildly out of control, she decides to embrace her new wild child image, cleverly turning gossip into personal gain â€” all while inadvertently learning what it really means to stand up for herself.",
     director: "Will Gluck",
     cast: ["Emma Stone, Amanda Bynes, Penn Badgley, Patricia Clarkson, Thomas Haden Church, Stanley Tucci, Lisa Kudrow"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10259,7 +10259,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4JyNWkryifWbWXJyxcWh3pVya6N.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/iQlJyRecJeGGzQGT2rEcyAgz89F.jpg",
     videoUrl: "762975",
-    overview: "Cassie, a struggling singer-songwriter, and Luke, a Marine about to be deployed, enter into a marriage of convenience for the practical benefits — health insurance for her, extra pay for him. But as their fake relationship deepens through letters and unexpected visits, their feelings for each other become dangerously real, blurring the line between the arrangement they made and the love they didn't plan for.",
+    overview: "Cassie, a struggling singer-songwriter, and Luke, a Marine about to be deployed, enter into a marriage of convenience for the practical benefits â€” health insurance for her, extra pay for him. But as their fake relationship deepens through letters and unexpected visits, their feelings for each other become dangerously real, blurring the line between the arrangement they made and the love they didn't plan for.",
     director: "Elizabeth Allen Rosenbaum",
     cast: ["Sofia Carson, Nicholas Galitzine, John Harlan Kim, Chosen Jacobs, Linden Ashby, Nicholas Logan"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10276,7 +10276,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/n0ybibhJtQ5icDqTp8eRytcIHJx.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1PXwh3nJzgRkkYnqfWInJNypeL4.jpg",
     videoUrl: "37799",
-    overview: "On a fall night in 2003, Harvard undergrad and computer programming genius Mark Zuckerberg sits down at his computer and, fueled by rage and beer, begins to create what would become the social phenomenon known as Facebook. Six years and 500 million friends later, Mark Zuckerberg is the youngest billionaire in history — but for this entrepreneur, success leads to both personal and legal complications as former friends and colleagues turn into rivals.",
+    overview: "On a fall night in 2003, Harvard undergrad and computer programming genius Mark Zuckerberg sits down at his computer and, fueled by rage and beer, begins to create what would become the social phenomenon known as Facebook. Six years and 500 million friends later, Mark Zuckerberg is the youngest billionaire in history â€” but for this entrepreneur, success leads to both personal and legal complications as former friends and colleagues turn into rivals.",
     director: "David Fincher",
     cast: ["Jesse Eisenberg, Andrew Garfield, Justin Timberlake, Armie Hammer, Rooney Mara"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10295,7 +10295,7 @@ const MOVIES = [
     videoUrl: "339403",
     overview: "A stylish, music-driven action thriller following Baby, a talented young getaway driver who relies on a personal soundtrack to drown out a severe case of tinnitus caused by a childhood accident. Hoping to clear his debt with a ruthless crime boss and walk away to start a normal life with a charming waitress, Baby finds himself forced into a doomed, high-stakes heist that threatens his life and freedom.",
     director: "Edgar Wright",
-    cast: ["Ansel Elgort, Lily James, Kevin Spacey, Jon Hamm, Eiza González, Jamie Foxx, Jon Bernthal"],
+    cast: ["Ansel Elgort, Lily James, Kevin Spacey, Jon Hamm, Eiza GonzÃ¡lez, Jamie Foxx, Jon Bernthal"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -10412,7 +10412,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/jjPJ4s3DWZZvI4vw8Xfi4Vqa1Q8.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/iuyE1qy9HoTsMg0DHB1KJxM94DJ.jpg",
     videoUrl: "337167",
-    overview: "The final installment in the Fifty Shades trilogy finds newly married Anastasia and Christian Grey trying to embrace their luxurious lifestyle and intense bond. However, as Ana steps into a new role at work and Christian adjusts to marital commitment, new threats emerge—including Ana's vengeful former boss, Jack Hyde, who seeks revenge against the couple, testing their trust and endurance.",
+    overview: "The final installment in the Fifty Shades trilogy finds newly married Anastasia and Christian Grey trying to embrace their luxurious lifestyle and intense bond. However, as Ana steps into a new role at work and Christian adjusts to marital commitment, new threats emergeâ€”including Ana's vengeful former boss, Jack Hyde, who seeks revenge against the couple, testing their trust and endurance.",
     director: "James Foley",
     cast: ["Dakota Johnson, Jamie Dornan, Eric Johnson, Rita Ora, Luke Grimes, Victor Rasuk, Jennifer Ehle, Marcia Gay Harden"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10429,9 +10429,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dncJ81z1BahrT3ogLvlxOUC5n4u.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/AvIiUxbIrxwbLAhLgMGIpCEeneP.jpg",
     videoUrl: "4108",
-    overview: "A high-octane action thriller following Frank Martin, a quiet, elite mercenary living in the south of France who delivers package deliveries with zero questions asked. Guided by three strict rules—never change the deal, no names, and never look in the package—Frank's life shifts into overdrive when he breaks his own rules and discovers his latest cargo is a bound woman linked to an international human trafficking ring.",
+    overview: "A high-octane action thriller following Frank Martin, a quiet, elite mercenary living in the south of France who delivers package deliveries with zero questions asked. Guided by three strict rulesâ€”never change the deal, no names, and never look in the packageâ€”Frank's life shifts into overdrive when he breaks his own rules and discovers his latest cargo is a bound woman linked to an international human trafficking ring.",
     director: "Corey Yuen, Louis Leterrier",
-    cast: ["Jason Statham, Shu Qi, François Berléand, Matt Schulze, Ric Young, Doug Rand"],
+    cast: ["Jason Statham, Shu Qi, FranÃ§ois BerlÃ©and, Matt Schulze, Ric Young, Doug Rand"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -10448,7 +10448,7 @@ const MOVIES = [
     videoUrl: "9335",
     overview: "Ex-special forces operative Frank Martin has relocated to Miami, taking a low-profile temporary job driving and protecting the young son of a high-ranking US anti-drug official. When the boy is kidnapped and infected with a deadly, highly contagious airborne virus, Frank is framed for the crime and must go on the run to stop a ruthless cartel plot before time runs out.",
     director: "Louis Leterrier",
-    cast: ["Jason Statham, Alessandro Gassmann, Amber Valletta, Kate Nauta, François Berléand, Keith David, Hunter Clary"],
+    cast: ["Jason Statham, Alessandro Gassmann, Amber Valletta, Kate Nauta, FranÃ§ois BerlÃ©and, Keith David, Hunter Clary"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -10465,7 +10465,7 @@ const MOVIES = [
     videoUrl: "13387",
     overview: "Frank Martin is pressured into a high-stakes delivery across Europe to transport Valentina, the kidnapped daughter of a Ukrainian government official. Equipped with explosive wristbands programmed to detonate if he strays more than 75 feet from his Audi, Frank must outrun corrupt mercenaries while racing to complete the job and keep them both alive.",
     director: "Olivier Megaton",
-    cast: ["Jason Statham, Natalya Rudakova, François Berléand, Robert Knepper, Jeroen Krabbé, Alex Kobold"],
+    cast: ["Jason Statham, Natalya Rudakova, FranÃ§ois BerlÃ©and, Robert Knepper, Jeroen KrabbÃ©, Alex Kobold"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -10481,7 +10481,7 @@ const MOVIES = [
     backdrop: "https://image.tmdb.org/t/p/original/yQvjqIvOwpawVZje41Wno365kR.jpg",
     videoUrl: "762430",
     overview: "An action thriller following Matt Turner, a Berlin-based American financier who receives a terrifying phone call while driving his kids to school. An anonymous caller informs him that a pressure-activated bomb is hidden beneath his car seat, which will detonate if anyone attempts to exit. Forced to obey a series of increasingly dangerous instructions across the city, Matt must unravel the caller's motive to save his children and clear his own name.",
-    director: "Nimród Antal",
+    director: "NimrÃ³d Antal",
     cast: ["Liam Neeson, Noma Dumezweni, Lilly Aspell, Jack Champion, Embeth Davidtz, Matthew Modine"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
@@ -10497,7 +10497,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bv9dy8mnwftdY2j6gG39gCfSFpV.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3VqxfyYUD23Q5G11ruSMnSU7zIL.jpg",
     videoUrl: "823625",
-    overview: "Travis Block is a shadowy freelance operative working directly for FBI Director Gabriel Robinson, specializing in pulling endangered undercover agents out of dangerous situations. When Block discovers a secret, illegal government operation targeting innocent civilians—and that an insider trying to expose it has been murdered—he finds himself locked in a deadly game of cat and mouse against the very agency he swore to serve.",
+    overview: "Travis Block is a shadowy freelance operative working directly for FBI Director Gabriel Robinson, specializing in pulling endangered undercover agents out of dangerous situations. When Block discovers a secret, illegal government operation targeting innocent civiliansâ€”and that an insider trying to expose it has been murderedâ€”he finds himself locked in a deadly game of cat and mouse against the very agency he swore to serve.",
     director: "Mark Williams",
     cast: ["Liam Neeson, Emmy Raver-Lampman, Taylor John Smith, Aidan Quinn, Claire van der Boom, Yael Stone"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10565,9 +10565,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/jLLtx3nTRSLGPAKl4RoIv1FbEBr.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/arNhhBd88bP3Bjoe4HT8MFE1JQA.jpg",
     videoUrl: "1029575",
-    overview: "Dan Morgan is a devoted husband, loving father of three, and successful car salesman living a quiet suburban life. However, decades earlier, he was an elite government assassin. When enemy ghosts from his past track him down, Dan packs his unsuspecting wife, angst-ridden teen daughter, gamer son, and ten-month-old baby into their minivan for an impromptu road trip to Las Vegas—determined to protect his family while pretending it's just an innocent family vacation.",
+    overview: "Dan Morgan is a devoted husband, loving father of three, and successful car salesman living a quiet suburban life. However, decades earlier, he was an elite government assassin. When enemy ghosts from his past track him down, Dan packs his unsuspecting wife, angst-ridden teen daughter, gamer son, and ten-month-old baby into their minivan for an impromptu road trip to Las Vegasâ€”determined to protect his family while pretending it's just an innocent family vacation.",
     director: "Simon Cellan Jones",
-    cast: ["Mark Wahlberg, Michelle Monaghan, Zoe Colletti, Van Crosby, Saïd Taghmaoui, Maggie Q"],
+    cast: ["Mark Wahlberg, Michelle Monaghan, Zoe Colletti, Van Crosby, SaÃ¯d Taghmaoui, Maggie Q"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -10582,7 +10582,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/semFxuYx6HcrkZzslgAkBqfJvZk.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7nAVXGHHtaNcdsqvDXmY6R9N0fG.jpg",
     videoUrl: "1363123",
-    overview: "In this holiday-themed sequel, former assassin Dan Morgan plans a European family Christmas trip to London to reconnect with his kids. However, the vacation derails when a mysterious figure from Dan's past—his long-lost half-brother Finn—shows up with unfinished business. To stop Finn and protect his loved ones, Dan and the family are forced into an international game of cat-and-mouse filled with bank heists and car chases across Europe.",
+    overview: "In this holiday-themed sequel, former assassin Dan Morgan plans a European family Christmas trip to London to reconnect with his kids. However, the vacation derails when a mysterious figure from Dan's pastâ€”his long-lost half-brother Finnâ€”shows up with unfinished business. To stop Finn and protect his loved ones, Dan and the family are forced into an international game of cat-and-mouse filled with bank heists and car chases across Europe.",
     director: "Simon Cellan Jones",
     cast: ["Mark Wahlberg, Michelle Monaghan, Kit Harington, Zoe Colletti, Van Crosby, Sidse Babett Knudsen"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10599,7 +10599,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/liLN69YgoovHVgmlHJ876PKi5Yi.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oWCExzaakAyCCpjQSZ7yak4Wi2d.jpg",
     videoUrl: "868759",
-    overview: "Salt-of-the-earth farmer Cole falls head over heels for the mysterious Sadie after a romantic first date. When she suddenly stops replying to his texts, Cole flies to London as a grand romantic gesture to surprise her—only to discover that Sadie is actually a covert CIA operative. Before they can even decide on a second date, Cole and Sadie are swept into a globe-trotting international adventure to save the world.",
+    overview: "Salt-of-the-earth farmer Cole falls head over heels for the mysterious Sadie after a romantic first date. When she suddenly stops replying to his texts, Cole flies to London as a grand romantic gesture to surprise herâ€”only to discover that Sadie is actually a covert CIA operative. Before they can even decide on a second date, Cole and Sadie are swept into a globe-trotting international adventure to save the world.",
     director: "Dexter Fletcher",
     cast: ["Chris Evans, Ana de Armas, Adrien Brody, Mike Moh, Amy Sedaris, Tate Donovan, Tim Blake Nelson"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10616,9 +10616,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8cXbitsS6dWQ5gfMTZdorpAAzEH.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/pLOFQLeKQYsCzkYgsw9tg1cPuDG.jpg",
     videoUrl: "725201",
-    overview: "When Court Gentry—a top-tier CIA mercenary operating under the codename Sierra Six—uncovers dark agency secrets during a mission, he becomes the prime target of his rogue superiors. To eliminate him, the CIA unleashes Lloyd Hansen, a sociopathic former agent turned mercenary who launches a relentless, global manhunt across Europe to hunt Six down.",
+    overview: "When Court Gentryâ€”a top-tier CIA mercenary operating under the codename Sierra Sixâ€”uncovers dark agency secrets during a mission, he becomes the prime target of his rogue superiors. To eliminate him, the CIA unleashes Lloyd Hansen, a sociopathic former agent turned mercenary who launches a relentless, global manhunt across Europe to hunt Six down.",
     director: "Anthony Russo, Joe Russo",
-    cast: ["Ryan Gosling, Chris Evans, Ana de Armas, Jessica Henwick, Regé-Jean Page, Wagner Moura, Julia Butters, Dhanush, Alfre Woodard, Billy Bob Thornton"],
+    cast: ["Ryan Gosling, Chris Evans, Ana de Armas, Jessica Henwick, RegÃ©-Jean Page, Wagner Moura, Julia Butters, Dhanush, Alfre Woodard, Billy Bob Thornton"],
     trending: false, // Leave false so it only shows up in the Genres tab
     featured: false,
   },
@@ -10718,7 +10718,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/azL2ThbJMIkts3ZMt3j1YgBUeDB.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/yyG9D9E6xf6HoumerzB9pQJfGEI.jpg",
     videoUrl: "98566",
-    overview: "Darkness has settled over New York City as the villainous Shredder and his evil Foot Clan maintain an iron grip on everything from the police to the politicians. When ambitious TV reporter April O'Neil stumbles upon a group of mysterious masked vigilantes, she discovers four mutated, pizza-loving turtle brothers—Leonardo, Raphael, Donatello, and Michelangelo. Teaming up with April and her cameraman Vern, the Ninja Turtles must come out of the sewers to save the city from Shredder's terrifying plot.",
+    overview: "Darkness has settled over New York City as the villainous Shredder and his evil Foot Clan maintain an iron grip on everything from the police to the politicians. When ambitious TV reporter April O'Neil stumbles upon a group of mysterious masked vigilantes, she discovers four mutated, pizza-loving turtle brothersâ€”Leonardo, Raphael, Donatello, and Michelangelo. Teaming up with April and her cameraman Vern, the Ninja Turtles must come out of the sewers to save the city from Shredder's terrifying plot.",
     director: "Jonathan Liebesman",
     cast: ["Megan Fox, Will Arnett, William Fichtner, Alan Ritchson, Noel Fisher, Pete Ploszek, Jeremy Howard, Tohoru Masamune"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10735,7 +10735,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/euVaCiCWz3AALcQXHT6aUqdGUo6.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8I02462R9MJV4LHnPL5PN4tixyH.jpg",
     videoUrl: "308531",
-    overview: "After arch-nemesis Shredder escapes custody, he joins forces with mad scientist Baxter Stockman and two mutated henchmen, Bebop and Rocksteady, to launch a sinister plan for world domination. As the Turtles—Leonardo, Raphael, Donatello, and Michelangelo—prepare to battle Shredder and his gang alongside April O'Neil and hockey-masked vigilante Casey Jones, they find themselves facing an even greater alien threat: the formidable Krang from Dimension X.",
+    overview: "After arch-nemesis Shredder escapes custody, he joins forces with mad scientist Baxter Stockman and two mutated henchmen, Bebop and Rocksteady, to launch a sinister plan for world domination. As the Turtlesâ€”Leonardo, Raphael, Donatello, and Michelangeloâ€”prepare to battle Shredder and his gang alongside April O'Neil and hockey-masked vigilante Casey Jones, they find themselves facing an even greater alien threat: the formidable Krang from Dimension X.",
     director: "Dave Green",
     cast: ["Megan Fox, Will Arnett, Stephen Amell, Tyler Perry, Brian Tee, Laura Linney, Pete Ploszek, Alan Ritchson, Noel Fisher, Jeremy Howard"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -10908,7 +10908,7 @@ const MOVIES = [
           { episode: 3, title: "Informed Consent" },
           { episode: 4, title: "Lines in the Sand" },
           { episode: 5, title: "Fools for Love" },
-          { episode: 6, title: "Que Será Será" },
+          { episode: 6, title: "Que SerÃ¡ SerÃ¡" },
           { episode: 7, title: "Son of Coma Guy" },
           { episode: 8, title: "Whac-A-Mole" },
           { episode: 9, title: "Finding Judas" },
@@ -11389,7 +11389,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zpEWFNqoN8Qg1SzMMHmaGyOBTdW.jpg",
     videoUrl: "1054867",
-    overview: "Washed-up former radical revolutionary Ghetto Pat Calhoun—now living off-grid under the alias Bob Ferguson—spends his days in a state of paranoid, marijuana-fueled isolation alongside his self-reliant teenage daughter, Willa. When his ruthless former nemesis, Colonel Steven J. Lockjaw, resurfaces sixteen years later to hunt them down, Bob is forced back into action, reuniting with his old allies to rescue Willa and confront the ghost of their past.",
+    overview: "Washed-up former radical revolutionary Ghetto Pat Calhounâ€”now living off-grid under the alias Bob Fergusonâ€”spends his days in a state of paranoid, marijuana-fueled isolation alongside his self-reliant teenage daughter, Willa. When his ruthless former nemesis, Colonel Steven J. Lockjaw, resurfaces sixteen years later to hunt them down, Bob is forced back into action, reuniting with his old allies to rescue Willa and confront the ghost of their past.",
     director: "Paul Thomas Anderson",
     cast: ["Leonardo DiCaprio, Sean Penn, Benicio del Toro, Regina Hall, Teyana Taylor, Chase Infiniti"],
     trending: false, // Leave false so it only shows up in the Genres tab
@@ -11547,7 +11547,7 @@ const MOVIES = [
     cast: ["Nicolas Cage (as Ben Reilly / The Spider), Lamorne Morris, Li Jun Li, Karen Rodriguez, Abraham Popoola, Jack Huston, Brendan Gleeson"],
     trending: false,
     featured: false,
-    cinesrcId: "220102", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "220102", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -11575,12 +11575,12 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8jjTPo8j2dG6eDBYZOxgEpzSGAB.jpg",
     videoUrl: "",
-    overview: "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Their totalitarian reign is highlighted through their sigil: a three-headed dragon, representing the union of King Aegon and his sisters, Rhaenys and Visenya. But the seeds of the downfall of House Targaryen have already been planted, as the Dance of the Dragons — a Targaryen civil war — approaches.",
+    overview: "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Their totalitarian reign is highlighted through their sigil: a three-headed dragon, representing the union of King Aegon and his sisters, Rhaenys and Visenya. But the seeds of the downfall of House Targaryen have already been planted, as the Dance of the Dragons â€” a Targaryen civil war â€” approaches.",
     director: "Ryan Condal, George R.R. Martin",
     cast: ["Paddy Considine, Emma D'Arcy, Matt Smith, Olivia Cooke, Rhys Ifans, Steve Toussaint, Eve Best, Sonoya Mizuno, Fabien Frankel"],
     trending: false,
     featured: false,
-    cinesrcId: "94997", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "94997", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -11636,12 +11636,12 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3KLmx6nLaiYe07kSwuWdpTEHJgE.jpg",
     videoUrl: "",
-    overview: "An American football coach, Ted Lasso, is hired to manage AFC Richmond, a British soccer team — despite having no experience coaching soccer at all. His folksy, positive attitude, unwavering optimism, and unique brand of leadership begin to unite a dysfunctional team and a fractured fan base, even as his personal life and marriage crumble behind the scenes.",
+    overview: "An American football coach, Ted Lasso, is hired to manage AFC Richmond, a British soccer team â€” despite having no experience coaching soccer at all. His folksy, positive attitude, unwavering optimism, and unique brand of leadership begin to unite a dysfunctional team and a fractured fan base, even as his personal life and marriage crumble behind the scenes.",
     director: "Bill Lawrence, Jason Sudeikis, Brendan Hunt, Joe Kelly",
     cast: ["Jason Sudeikis, Hannah Waddingham, Jeremy Swift, Brett Goldstein, Nick Mohammed, Juno Temple, Brendan Hunt, Phil Dunster"],
     trending: false,
     featured: false,
-    cinesrcId: "97546", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "97546", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -11726,7 +11726,7 @@ const MOVIES = [
     cast: ["Robbie Daymond (Peter Parker / Spider-Man), Nadji Jeter (Miles Morales), Laura Bailey (Gwen Stacy), Nancy Linari (Aunt May), Fred Tatasciore (Max Modell), Melanie Minichino (Anya Corazon)"],
     trending: false,
     featured: false,
-    cinesrcId: "72705", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "72705", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -11820,7 +11820,7 @@ const MOVIES = [
     cast: ["Hudson Thames (Peter Parker), Colman Domingo (Norman Osborn), Kari Wahlgren (Aunt May), Grace Song (Nico Minoru), Zeno Robinson (Harry Osborn), Hugh Dancy (Otto Octavius), Charlie Cox (Daredevil)"],
     trending: false,
     featured: false,
-    cinesrcId: "138503", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "138503", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -11850,12 +11850,12 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9PFonBhy4cQy7Jz20NpMygczOkv.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/AeJgnEXaFcsGzU5Y4Nrq9WggAQ5.jpg",
     videoUrl: "",
-    overview: "Wednesday Addams is sent to Nevermore Academy, a bizarre boarding school where she attempts to master her emerging psychic ability, thwart a monstrous killing spree that has terrorized the local town, and solve a supernatural mystery that entangled her parents 25 years ago — all while navigating her new relationships at the school.",
+    overview: "Wednesday Addams is sent to Nevermore Academy, a bizarre boarding school where she attempts to master her emerging psychic ability, thwart a monstrous killing spree that has terrorized the local town, and solve a supernatural mystery that entangled her parents 25 years ago â€” all while navigating her new relationships at the school.",
     director: "Alfred Gough, Miles Millar",
     cast: ["Jenna Ortega, Gwendoline Christie, Hunter Doohan, Percy Hynes White, Emma Myers, Joy Sunday, Riki Lindhome, Christina Ricci, Catherine Zeta-Jones"],
     trending: false,
     featured: false,
-    cinesrcId: "119051", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "119051", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -11896,12 +11896,12 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rTc7ZXdroqjkKivFPvCPX0Ru7uw.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/isJ4POBlbH5kmHVgbdP4gC4nFqO.jpg",
     videoUrl: "",
-    overview: "New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling. As Tony navigates the pressures of running a criminal empire while raising a family, the series digs deep into the psychology of a modern mafia don caught between two worlds — one of ruthless violence, the other of suburban domesticity.",
+    overview: "New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling. As Tony navigates the pressures of running a criminal empire while raising a family, the series digs deep into the psychology of a modern mafia don caught between two worlds â€” one of ruthless violence, the other of suburban domesticity.",
     director: "David Chase",
     cast: ["James Gandolfini, Lorraine Bracco, Edie Falco, Michael Imperioli, Dominic Chianese, Steven Van Zandt, Tony Sirico, Robert Iler, Jamie-Lynn Sigler, Aida Turturro"],
     trending: false,
     featured: false,
-    cinesrcId: "1398", // ← This is all you need! Put the TMDB ID from the cinesrc URL here
+    cinesrcId: "1398", // â† This is all you need! Put the TMDB ID from the cinesrc URL here
     seasons: [
       {
         season: 1,
@@ -12131,7 +12131,7 @@ const MOVIES = [
         episodes: [
           { episode: 1, title: "Really Sad Devil Guy" },
           { episode: 2, title: "Lucifer! Lucifer! Lucifer!" },
-          { episode: 3, title: "¡Diablo!" },
+          { episode: 3, title: "Â¡Diablo!" },
           { episode: 4, title: "It Never Ends Well for the Chicken" },
           { episode: 5, title: "Detective Amenadiel" },
           { episode: 6, title: "BluBallz" },
@@ -12733,7 +12733,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/1QdXdRYfktUSONkl1oD5gc6Be0s.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/5aE1kxWg6RhgQxJTXTxifv4uq7P.jpg",
     videoUrl: "93405",
-    overview: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games—with high stakes. But, a tempting prize awaits the victor.",
+    overview: "Hundreds of cash-strapped players accept a strange invitation to compete in children's gamesâ€”with high stakes. But, a tempting prize awaits the victor.",
     director: "Hwang Dong-hyuk",
     cast: ["Lee Jung-jae", "Park Hae-soo", "Oh Yeong-su", "Wi Ha-jun", "Jung Ho-yeon", "Heo Sung-tae"],
     trending: false,
@@ -12762,7 +12762,7 @@ const MOVIES = [
           { episode: 3, title: "001" },
           { episode: 4, title: "Six Legs" },
           { episode: 5, title: "One More Game" },
-          { episode: 6, title: "O ﻿ X" },
+          { episode: 6, title: "O ï»¿ X" },
           { episode: 7, title: "Friend or Foe" }
         ],
       },
@@ -12773,8 +12773,8 @@ const MOVIES = [
           { episode: 2, title: "The Starry Night" },
           { episode: 3, title: "It's Not Your Fault" },
           { episode: 4, title: "222" },
-          { episode: 5, title: "○△□" },
-          { episode: 6, title: "Humans Are…" }
+          { episode: 5, title: "â—‹â–³â–¡" },
+          { episode: 6, title: "Humans Areâ€¦" }
         ],
       }
     ]
@@ -12854,7 +12854,7 @@ const MOVIES = [
       {
         season: 3,
         episodes: [
-          { episode: 1, title: "Orientación" },
+          { episode: 1, title: "OrientaciÃ³n" },
           { episode: 2, title: "Fire/Water" },
           { episode: 3, title: "Call Waiting" },
           { episode: 4, title: "Good Fences" },
@@ -12972,7 +12972,7 @@ const MOVIES = [
           { episode: 3, title: "The Lion Sleeps Tonight" },
           { episode: 4, title: "All in the Family" },
           { episode: 5, title: "Turning Biminese" },
-          { episode: 6, title: "Sí Se Puede" },
+          { episode: 6, title: "SÃ­ Se Puede" },
           { episode: 7, title: "Easy as Pie" },
           { episode: 8, title: "The Damage a Man Can Do" },
           { episode: 9, title: "About Last Night" },
@@ -13366,7 +13366,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/iLQnvSXoqV6ztRtp1uPw6ZZyTCw.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7QSM3AsgWXctWBm7OFov9dGdZgt.jpg",
     videoUrl: "60708",
-    overview: "The good. The evil. The beginning.Everyone knows the name Commissioner Gordon. He is one of the crime world's greatest foes, a man whose reputation is synonymous with law and order. But what is known of Gordon's story and his rise from rookie detective to Police Commissioner? What did it take to navigate the multiple layers of corruption that secretly ruled Gotham City, the spawning ground of the world's most iconic villains? And what circumstances created them – the larger-than-life personas who would become Catwoman, The Penguin, The Riddler, Two-Face and The Joker?Gotham is an origin story of the great DC Comics Super-Villains and vigilantes, revealing an entirely new chapter that has never been told. It follows one cop's rise through a dangerously corrupt city teetering between good and evil, and chronicles the birth of one of the most popular super heroes of our time.",
+    overview: "The good. The evil. The beginning.Everyone knows the name Commissioner Gordon. He is one of the crime world's greatest foes, a man whose reputation is synonymous with law and order. But what is known of Gordon's story and his rise from rookie detective to Police Commissioner? What did it take to navigate the multiple layers of corruption that secretly ruled Gotham City, the spawning ground of the world's most iconic villains? And what circumstances created them â€“ the larger-than-life personas who would become Catwoman, The Penguin, The Riddler, Two-Face and The Joker?Gotham is an origin story of the great DC Comics Super-Villains and vigilantes, revealing an entirely new chapter that has never been told. It follows one cop's rise through a dangerously corrupt city teetering between good and evil, and chronicles the birth of one of the most popular super heroes of our time.",
     director: "Bruno Heller",
     cast: ["Ben McKenzie", "Donal Logue", "David Mazouz", "Sean Pertwee", "Robin Lord Taylor", "Erin Richards"],
     trending: false,
@@ -13557,7 +13557,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/kidkbZRBGbsEIrX7pODRSKi9ipl.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/sNr1KlhUisRsrGZLRkgyvm0PraW.jpg",
     videoUrl: "71728",
-    overview: "For young Sheldon Cooper, it isn't easy growing up in East Texas. Being a once-in-a-generation mind capable of advanced mathematics and science isn't always helpful in a land where church and football are king. And while the vulnerable, gifted and somewhat naïve Sheldon deals with the world, his very normal family must find a way to deal with him. His father, George, is struggling to find his way as a high school football coach and as father to a boy he doesn't understand. Sheldon's mother, Mary, fiercely protects and nurtures her son in a town where he just doesn't fit in. Sheldon's older brother, Georgie, does the best he can in high school, but it's tough to be cool when you're in the same classes with your odd younger brother. Sheldon's twin sister, Missy, sometimes resents all the attention Sheldon gets, but also remains the one person who can reliably tell Sheldon the truth. Finally, there's Sheldon's beloved Meemaw, his foul-mouthed, hard-drinking Texas grandmother who is very supportive of her grandson and his unique gifts. For 12 years on The Big Bang Theory, audiences have come to know the iconic, eccentric, and extraordinary Sheldon Cooper. This single-camera, half-hour comedy allows us the chance to meet him in childhood, as he embarks on his innocent, awkward, and hopeful journey toward the man he will become.",
+    overview: "For young Sheldon Cooper, it isn't easy growing up in East Texas. Being a once-in-a-generation mind capable of advanced mathematics and science isn't always helpful in a land where church and football are king. And while the vulnerable, gifted and somewhat naÃ¯ve Sheldon deals with the world, his very normal family must find a way to deal with him. His father, George, is struggling to find his way as a high school football coach and as father to a boy he doesn't understand. Sheldon's mother, Mary, fiercely protects and nurtures her son in a town where he just doesn't fit in. Sheldon's older brother, Georgie, does the best he can in high school, but it's tough to be cool when you're in the same classes with your odd younger brother. Sheldon's twin sister, Missy, sometimes resents all the attention Sheldon gets, but also remains the one person who can reliably tell Sheldon the truth. Finally, there's Sheldon's beloved Meemaw, his foul-mouthed, hard-drinking Texas grandmother who is very supportive of her grandson and his unique gifts. For 12 years on The Big Bang Theory, audiences have come to know the iconic, eccentric, and extraordinary Sheldon Cooper. This single-camera, half-hour comedy allows us the chance to meet him in childhood, as he embarks on his innocent, awkward, and hopeful journey toward the man he will become.",
     director: "Chuck Lorre, Steven Molaro",
     cast: ["Iain Armitage", "Zoe Perry", "Lance Barber", "Montana Jordan", "Raegan Revord", "Annie Potts"],
     trending: false,
@@ -13572,9 +13572,9 @@ const MOVIES = [
           { episode: 3, title: "Poker, Faith, and Eggs" },
           { episode: 4, title: "A Therapist, a Comic Book, and a Breakfast Sausage" },
           { episode: 5, title: "A Solar Calculator, a Game Ball, and a Cheerleader's Bosom" },
-          { episode: 6, title: "A Patch, a Modem, and a Zantac®" },
+          { episode: 6, title: "A Patch, a Modem, and a ZantacÂ®" },
           { episode: 7, title: "A Brisket, Voodoo, and Cannonball Run" },
-          { episode: 8, title: "Cape Canaveral, Schrödinger's Cat, and Cyndi Lauper's Hair" },
+          { episode: 8, title: "Cape Canaveral, SchrÃ¶dinger's Cat, and Cyndi Lauper's Hair" },
           { episode: 9, title: "Spock, Kirk, and Testicular Hernia" },
           { episode: 10, title: "An Eagle Feather, a String Bean, and an Eskimo" },
           { episode: 11, title: "Demons, Sunday School, and Prime Numbers" },
@@ -13787,7 +13787,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/lqcDVZ8pyk08AVftMBildDR3QUK.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/bRE6zX4iOAejLOQCHryoV5WNu8G.jpg",
     videoUrl: "105248",
-    overview: "Set in Cyberpunk 2077 universe, Cyberpunk: Edgerunners tells a standalone, 10-episode story about a street kid trying to survive in a technology and body modification-obsessed city of the future. Having everything to lose, he chooses to stay alive by becoming an edgerunner—a mercenary outlaw also known as a cyberpunk.",
+    overview: "Set in Cyberpunk 2077 universe, Cyberpunk: Edgerunners tells a standalone, 10-episode story about a street kid trying to survive in a technology and body modification-obsessed city of the future. Having everything to lose, he chooses to stay alive by becoming an edgerunnerâ€”a mercenary outlaw also known as a cyberpunk.",
     director: "Hiroyuki Imaishi",
     cast: ["Kenn", "Aoi Yuki", "Hiroki Touchi", "Michiko Kaiden", "Takako Honda", "Wataru Takagi"],
     trending: false,
@@ -14065,7 +14065,7 @@ const MOVIES = [
           { episode: 19, title: "James Baxter the Horse" },
           { episode: 20, title: "Shh!" },
           { episode: 21, title: "The Suitor" },
-          { episode: 22, title: "The Party's Over, Isla de Señorita" },
+          { episode: 22, title: "The Party's Over, Isla de SeÃ±orita" },
           { episode: 23, title: "One Last Job" },
           { episode: 24, title: "Another 5 Short Graybles" },
           { episode: 25, title: "Candy Streets" },
@@ -15896,9 +15896,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w1280/9bkxU7kTMLuhBOPnkAYXtCsqZj3.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/41t0KM9bHGLi49OtS3hLt14vm6l.jpg",
     videoUrl: "11228",
-    overview: "LazyTown is an Icelandic-American children's television program with a cast and crew from Iceland, the United Kingdom, and the United States. It was created by Magnús Scheving, a gymnastics champion and CEO of LazyTown Entertainment, who also stars in the show. Originally performed in English, the show has been dubbed into more than a dozen languages and aired in over 100 countries.A total of 52 episodes of LazyTown were produced from 2004 to 2007, for the show's first and second seasons. In the US, LazyTown originally aired on Nickelodeon and Nick Jr.; in 2011, PBS Kids Sprout gained the rights to air the series. Turner Broadcasting System Europe acquired the LazyTown Entertainment company in 2011 and commissioned a third season of the series to be delivered at the end of 2012 which premiered on April 6, 2013, in the UK.As of 2012, LazyTown airs on Turner Broadcasting's international preschool network, Cartoonito, and is distributed by Turner Broadcasting System Europe.LazyTown has generated several spin-off projects including stage productions and a TV program for younger children called LazyTown Extra.",
-    director: "Magnús Scheving",
-    cast: ["Magnús Scheving", "Julianna Rose Mauriello", "Stefán Karl Stefánsson", "Chloe Lang", "Kodi Smit-McPhee", "David Matthew Feldman"],
+    overview: "LazyTown is an Icelandic-American children's television program with a cast and crew from Iceland, the United Kingdom, and the United States. It was created by MagnÃºs Scheving, a gymnastics champion and CEO of LazyTown Entertainment, who also stars in the show. Originally performed in English, the show has been dubbed into more than a dozen languages and aired in over 100 countries.A total of 52 episodes of LazyTown were produced from 2004 to 2007, for the show's first and second seasons. In the US, LazyTown originally aired on Nickelodeon and Nick Jr.; in 2011, PBS Kids Sprout gained the rights to air the series. Turner Broadcasting System Europe acquired the LazyTown Entertainment company in 2011 and commissioned a third season of the series to be delivered at the end of 2012 which premiered on April 6, 2013, in the UK.As of 2012, LazyTown airs on Turner Broadcasting's international preschool network, Cartoonito, and is distributed by Turner Broadcasting System Europe.LazyTown has generated several spin-off projects including stage productions and a TV program for younger children called LazyTown Extra.",
+    director: "MagnÃºs Scheving",
+    cast: ["MagnÃºs Scheving", "Julianna Rose Mauriello", "StefÃ¡n Karl StefÃ¡nsson", "Chloe Lang", "Kodi Smit-McPhee", "David Matthew Feldman"],
     trending: false,
     featured: false,
     cinesrcId: "1894",
@@ -16521,7 +16521,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/bmk89gI4anquXyaEy6oCfUgfZ32.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3NF0qCnYVjczbeEUZBcJg2SlNVt.jpg",
     videoUrl: "4656",
-    overview: "The New Justice League Unlimited consists of Superman, Batman, Wonder Woman, The Flash, Green Lantern, Martian Manhunter and Hawkgirl – they have all saved countless lives from unspeakable dangers, using their unique powers to fight evil on Earth and across the galaxy. And until now, they have all worked alone. But after an alien invasion that took their combined powers to defeat, these seven super heroes unite to become the Justice League.",
+    overview: "The New Justice League Unlimited consists of Superman, Batman, Wonder Woman, The Flash, Green Lantern, Martian Manhunter and Hawkgirl â€“ they have all saved countless lives from unspeakable dangers, using their unique powers to fight evil on Earth and across the galaxy. And until now, they have all worked alone. But after an alien invasion that took their combined powers to defeat, these seven super heroes unite to become the Justice League.",
     director: "Joaquim Dos Santos",
     cast: ["George Newbern", "Kevin Conroy", "Susan Eisenberg", "Carl Lumbly", "Michael Rosenbaum", "Phil LaMarr"],
     trending: false,
@@ -18225,7 +18225,7 @@ const MOVIES = [
           { episode: 15, title: "Amplification" },
           { episode: 16, title: "Lie Ability" },
           { episode: 17, title: "A Credible Threat" },
-          { episode: 18, title: "The Maid of Gévaudan" },
+          { episode: 18, title: "The Maid of GÃ©vaudan" },
           { episode: 19, title: "The Beast of Beacon Hills" },
           { episode: 20, title: "Apotheosis" }
         ],
@@ -18268,7 +18268,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/lztz5XBMG1x6Y5ubz7CxfPFsAcW.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/jnzoh5qoxRLFRIQAxnl6D3RStPC.jpg",
     videoUrl: "91363",
-    overview: "What If…? flips the script on the MCU by reimagining events from the films in unexpected ways. Marvel Studios' first animated series focuses on different heroes from the MCU, featuring a voice cast that includes a host of stars who reprise their roles.",
+    overview: "What Ifâ€¦? flips the script on the MCU by reimagining events from the films in unexpected ways. Marvel Studios' first animated series focuses on different heroes from the MCU, featuring a voice cast that includes a host of stars who reprise their roles.",
     director: "Bryan Andrews",
     cast: ["Jeffrey Wright", "Chadwick Boseman", "Hayley Atwell", "Sebastian Stan", "Benedict Cumberbatch", "Chris Hemsworth"],
     trending: false,
@@ -18278,13 +18278,13 @@ const MOVIES = [
       {
         season: 1,
         episodes: [
-          { episode: 1, title: "What If… Captain Carter Were the First Avenger?" },
-          { episode: 2, title: "What If… T'Challa Became a Star-Lord?" },
+          { episode: 1, title: "What Ifâ€¦ Captain Carter Were the First Avenger?" },
+          { episode: 2, title: "What Ifâ€¦ T'Challa Became a Star-Lord?" },
           { episode: 3, title: "What If... The World Lost its Mightiest Heroes?" },
-          { episode: 4, title: "What If… Doctor Strange Lost His Heart Instead of His Hands?" },
+          { episode: 4, title: "What Ifâ€¦ Doctor Strange Lost His Heart Instead of His Hands?" },
           { episode: 5, title: "What If... Zombies!?" },
-          { episode: 6, title: "What If… Killmonger Rescued Tony Stark?" },
-          { episode: 7, title: "What If… Thor Were an Only Child?" },
+          { episode: 6, title: "What Ifâ€¦ Killmonger Rescued Tony Stark?" },
+          { episode: 7, title: "What Ifâ€¦ Thor Were an Only Child?" },
           { episode: 8, title: "What If... Ultron Won?" },
           { episode: 9, title: "What If... The Watcher Broke His Oath?" }
         ],
@@ -20292,9 +20292,9 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/k5Qg5rgPoKdh3yTJJrLtyoyYGwC.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/baz06JeHeGjq45auOFEiw1K7zVj.jpg",
     videoUrl: "1426",
-    overview: "Modern Family revolves around three different types of families (nuclear, step- and same-sex) living in the Los Angeles area, who are interrelated through Jay Pritchett and his children, Claire Dunphy (née Pritchett) and Mitchell Pritchett. Patriarch Jay is remarried to a much younger woman, Gloria Delgado Pritchett (née Ramirez), a passionate Colombian with whom he has an infant son, Fulgencio (Joe) Pritchett, and a son from Gloria's previous marriage, Manny Delgado.Jay's daughter Claire was a homemaker, but has returned to the business world. She is now the chief executive of her father's previous business, Pritchett's Closets and Blinds. She is married to Phil Dunphy, a realtor and self-professed \"cool dad\". They have three children: Haley Dunphy, a stereotypical ditzy teenage girl; Alex Dunphy, a nerdy, smart middle child; and Luke Dunphy, the off-beat only son.Jay's lawyer son Mitchell and his husband Cameron Tucker have one daughter, Lily Tucker-Pritchett. As the name suggests, this family represents a modern-day family, and episodes are comically based on situations which many families encounter in real life.",
+    overview: "Modern Family revolves around three different types of families (nuclear, step- and same-sex) living in the Los Angeles area, who are interrelated through Jay Pritchett and his children, Claire Dunphy (nÃ©e Pritchett) and Mitchell Pritchett. Patriarch Jay is remarried to a much younger woman, Gloria Delgado Pritchett (nÃ©e Ramirez), a passionate Colombian with whom he has an infant son, Fulgencio (Joe) Pritchett, and a son from Gloria's previous marriage, Manny Delgado.Jay's daughter Claire was a homemaker, but has returned to the business world. She is now the chief executive of her father's previous business, Pritchett's Closets and Blinds. She is married to Phil Dunphy, a realtor and self-professed \"cool dad\". They have three children: Haley Dunphy, a stereotypical ditzy teenage girl; Alex Dunphy, a nerdy, smart middle child; and Luke Dunphy, the off-beat only son.Jay's lawyer son Mitchell and his husband Cameron Tucker have one daughter, Lily Tucker-Pritchett. As the name suggests, this family represents a modern-day family, and episodes are comically based on situations which many families encounter in real life.",
     director: "Christopher Lloyd, Steven Levitan",
-    cast: ["Ed O'Neill", "Sofía Vergara", "Julie Bowen", "Ty Burrell", "Jesse Tyler Ferguson", "Eric Stonestreet", "Sarah Hyland", "Ariel Winter", "Nolan Gould", "Rico Rodriguez", "Aubrey Anderson-Emmons"],
+    cast: ["Ed O'Neill", "SofÃ­a Vergara", "Julie Bowen", "Ty Burrell", "Jesse Tyler Ferguson", "Eric Stonestreet", "Sarah Hyland", "Ariel Winter", "Nolan Gould", "Rico Rodriguez", "Aubrey Anderson-Emmons"],
     trending: false,
     featured: false,
     cinesrcId: "1421",
@@ -21014,7 +21014,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4l6KD9HhtD6nCDEfg10Lp6C6zah.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/xHCfWGlxwbtMeeOnTvxUCZRGnkk.jpg",
     videoUrl: "62127",
-    overview: "Danny Rand resurfaces fifteen years after being presumed dead, returning to New York City to reclaim his family's company and identity. Possessing incredible martial arts skills and the mystical power of the Iron Fist, Danny fights against the criminal element corrupting his family's legacy — and his own life — as he tries to reconcile his past with the life he's returned to.",
+    overview: "Danny Rand resurfaces fifteen years after being presumed dead, returning to New York City to reclaim his family's company and identity. Possessing incredible martial arts skills and the mystical power of the Iron Fist, Danny fights against the criminal element corrupting his family's legacy â€” and his own life â€” as he tries to reconcile his past with the life he's returned to.",
     director: "Scott Buck",
     cast: ["Finn Jones", "Jessica Henwick", "Tom Pelphrey", "Jessica Stroup", "Sacha Dhawan", "Alice Eve"],
     trending: false,
@@ -21068,7 +21068,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1l7vsAIkqOzrqiPwjO27Cb5QdfJ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7j4ug9B6JXVeh5HhQjjPScrdj4Z.jpg",
     videoUrl: "71789",
-    overview: "Following a violent riot in Los Angeles, a decorated LAPD sergeant, Daniel Hondo Harrelson, is tasked with leading a new SWAT unit that better represents the diverse community it protects. Straddling two worlds — as both a Black man from his old neighborhood and the leader of the elite tactical squad tasked with keeping the city safe — Hondo must navigate the razor's edge between duty and loyalty.",
+    overview: "Following a violent riot in Los Angeles, a decorated LAPD sergeant, Daniel Hondo Harrelson, is tasked with leading a new SWAT unit that better represents the diverse community it protects. Straddling two worlds â€” as both a Black man from his old neighborhood and the leader of the elite tactical squad tasked with keeping the city safe â€” Hondo must navigate the razor's edge between duty and loyalty.",
     director: "Aaron Rahsaan Thomas, Shawn Ryan",
     cast: ["Shemar Moore, Alex Russell, Lina Esco, Kenny Johnson, Jay Harrington, David Lim, Anna Enger Ritch"],
     trending: false,
@@ -21292,7 +21292,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/49XzINhH4LFsgz7cx6TOPcHUJUL.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/n4XLn0wLCxWSFaQgG6queZlFPKi.jpg",
     videoUrl: "71591",
-    overview: "Daredevil, Jessica Jones, Luke Cage, and Iron Fist team up to face a common enemy and save New York City. When the shadowy criminal organization known as The Hand emerges with a plan that threatens to destroy the city, these four reluctant heroes are forced to set aside their differences and unite — for the first time — as an unlikely team.",
+    overview: "Daredevil, Jessica Jones, Luke Cage, and Iron Fist team up to face a common enemy and save New York City. When the shadowy criminal organization known as The Hand emerges with a plan that threatens to destroy the city, these four reluctant heroes are forced to set aside their differences and unite â€” for the first time â€” as an unlikely team.",
     director: "Douglas Petrie, Marco Ramirez",
     cast: ["Charlie Cox", "Krysten Ritter", "Mike Colter", "Finn Jones", "Sigourney Weaver", "Elodie Yung"],
     trending: false,
@@ -21383,7 +21383,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/VYnnyA2hyxi3VUPgCA71mMtt69.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/gmO3aezFgDcrhcymhNSJLGZ3CT.jpg",
     videoUrl: "44217",
-    overview: "The often outrageous adventures of a 12-year-old blue cat named Gumball Watterson, as he navigates the wonderfully weird world of Elmore alongside his goldfish-turned-legged adoptive brother Darwin. Blending traditional animation, live-action, CGI, and puppetry, the series follows Gumball's chaotic misadventures with his sister Anais and his hilariously flawed family, the Wattersons. ",
+    overview: "The often outrageous adventures of a 12-year-old blue cat named Gumball Watterson, as he navigates the wonderfully weird world of Elmore alongside his goldfish-turned-legged adoptive brother Darwin. Blending traditional animation, live-action, CGI, and puppetry, the series follows Gumball's chaotic misadventures with his sister Anais and his hilariously flawed family, the Wattersons.Â ",
     director: "Ben Bocquelet",
     cast: ["Logan Grove / Nicolas Cantu, Kwesi Boakye / Terrell Ransom Jr. / Donielle T. Hansley Jr., Teresa Gallagher, Dan Russell"],
     trending: false,
@@ -21745,7 +21745,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/3xWzlLZ0kAD6SkVZTekFM9lxZyP.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zFdHbLQqkTgxd2eJyYbufwyE22M.jpg",
     videoUrl: "60625",
-    overview: "Three bear brothers — Grizzly, Panda, and Ice Bear — navigate the everyday complications of modern life in the Bay Area, all while trying to fit into human society, find friendship, and figure out where they truly belong. Balancing heartfelt sincerity with offbeat comedy, the series follows the bears as they attempt to make sense of technology, social norms, and the search for genuine connection.",
+    overview: "Three bear brothers â€” Grizzly, Panda, and Ice Bear â€” navigate the everyday complications of modern life in the Bay Area, all while trying to fit into human society, find friendship, and figure out where they truly belong. Balancing heartfelt sincerity with offbeat comedy, the series follows the bears as they attempt to make sense of technology, social norms, and the search for genuine connection.",
     director: "Daniel Chong",
     cast: ["Eric Edelstein", "Bobby Moynihan", "Demetri Martin", "Charlyne Yi", "Eliza Coupe"],
     trending: false,
@@ -22090,7 +22090,7 @@ const MOVIES = [
     poster: "https://image.tmdb.org/t/p/original/9SQaM6Yubh6bpkHBAsbpcvUCfh8.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/cyH8Ni1OSMtBbloEmI9eE69Xi7j.jpg",
     videoUrl: "60592",
-    overview: "Uncle Grandpa is everyone's uncle and grandpa at the same time — a magical, energetic being who travels the world in his living, talking RV to help kids with their everyday problems. Accompanied by an eccentric crew including a giant talking cat named Giant Realistic Flying Tiger and Pizza Steve, Uncle Grandpa's chaotic, surreal solutions rarely go as planned, but somehow always work out in the end.",
+    overview: "Uncle Grandpa is everyone's uncle and grandpa at the same time â€” a magical, energetic being who travels the world in his living, talking RV to help kids with their everyday problems. Accompanied by an eccentric crew including a giant talking cat named Giant Realistic Flying Tiger and Pizza Steve, Uncle Grandpa's chaotic, surreal solutions rarely go as planned, but somehow always work out in the end.",
     director: "Pete Browngardt",
     cast: ["Pete Browngardt", "Kevin Michael Richardson", "Annick Obonsawin", "Eric Bauza"],
     trending: false,
@@ -22289,7 +22289,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8zRstOgaipruJPlsHK2diMx4lPy.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/e5YSF0Inv9eL77jv2WQtNOOB3Bg.jpg",
     videoUrl: "67061",
-    overview: "Steven Universe, a young boy with magical powers inherited from his mother, lives with three magical guardians — the Crystal Gems — who protect their small town from otherworldly threats. As Steven learns to control his emerging abilities and uncover the truth about his mother's mysterious past, the series unfolds into a rich, emotionally layered saga about identity, family, love, and the cosmic legacy he's inherited.",
+    overview: "Steven Universe, a young boy with magical powers inherited from his mother, lives with three magical guardians â€” the Crystal Gems â€” who protect their small town from otherworldly threats. As Steven learns to control his emerging abilities and uncover the truth about his mother's mysterious past, the series unfolds into a rich, emotionally layered saga about identity, family, love, and the cosmic legacy he's inherited.",
     director: "Rebecca Sugar",
     cast: ["Zach Callison", "Estelle", "Michaela Dietz", "Deedee Magno Hall", "Tom Scharpling", "Grace Rolek"],
     trending: false,
@@ -22489,7 +22489,7 @@ const MOVIES = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/WtYiQk6432J0jCi61UQzLFtCCX.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/e5UakgeJsTBKtjxEURpg6hcohqX.jpg",
     videoUrl: "72693",
-    overview: "With the war against Homeworld won and Earth finally safe, Steven Universe should be able to relax into a peaceful new chapter of his life. Instead, unresolved trauma from his years of saving the world begins to surface, forcing him to confront the emotional toll of his upbringing and figure out who he is outside of being everyone's hero — while also dealing with a whole new set of Gem-related crises along the way.",
+    overview: "With the war against Homeworld won and Earth finally safe, Steven Universe should be able to relax into a peaceful new chapter of his life. Instead, unresolved trauma from his years of saving the world begins to surface, forcing him to confront the emotional toll of his upbringing and figure out who he is outside of being everyone's hero â€” while also dealing with a whole new set of Gem-related crises along the way.",
     director: "Rebecca Sugar",
     cast: ["Zach Callison, Michaela Dietz, Estelle, Deedee Magno Hall, Shelby Rabara"],
     trending: false,

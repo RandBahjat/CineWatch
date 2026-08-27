@@ -1,6 +1,6 @@
-// CineWatch — Series Data
+// CineWatch â€” Series Data
 // Edit this file to add, remove, or reorder TV shows and series.
-// Push to GitHub (or save — auto-sync will handle it) for changes to go live.
+// Push to GitHub (or save â€” auto-sync will handle it) for changes to go live.
 
 window._SERIES_DATA = [
   {
@@ -16,194 +16,194 @@ window._SERIES_DATA = [
     overview: "Chicagoan Frank Gallagher is the proud single dad of six smart, industrious, independent kids, who without him would be... perhaps better off. When Frank's not at the bar spending what little money they have, he's passed out on the floor. But the kids have found ways to grow up in spite of him.",
     director: 'John Wells',
     cast: ['William H. Macy', 'Emmy Rossum', 'Jeremy Allen White', 'Ethan Cutkosky', 'Shanola Hampton', 'Steve Howey', 'Emma Kenney', 'Cameron Monaghan', 'Noel Fisher'],
-        seasons: [
+            seasons: [
       {
         season: 1,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'Pilot' },
+          { episode: 2, title: 'Frank the Plank' },
+          { episode: 3, title: 'Aunt Ginger' },
+          { episode: 4, title: 'Casey Casden' },
+          { episode: 5, title: 'Three Boys' },
+          { episode: 6, title: 'Killer Carl' },
+          { episode: 7, title: 'Frank Gallagher: Loving Husband, Devoted Father' },
+          { episode: 8, title: 'It\'s Time to Kill the Turtle' },
+          { episode: 9, title: 'But at Last Came a Knock' },
+          { episode: 10, title: 'Nana Gallagher Had an Affair' },
+          { episode: 11, title: 'Daddyz Girl' },
+          { episode: 12, title: 'Father Frank, Full of Grace' }
         ]
       },
       {
         season: 2,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'Summertime' },
+          { episode: 2, title: 'Summer Loving' },
+          { episode: 3, title: 'I\'ll Light a Candle for You Every Day' },
+          { episode: 4, title: 'A Beautiful Mess' },
+          { episode: 5, title: 'Father\'s Day' },
+          { episode: 6, title: 'Can I Have a Mother' },
+          { episode: 7, title: 'A Bottle of Jean Nate' },
+          { episode: 8, title: 'Parenthood' },
+          { episode: 9, title: 'Hurricane Monica' },
+          { episode: 10, title: 'A Great Cause' },
+          { episode: 11, title: 'Just Like the Pilgrims Intended' },
+          { episode: 12, title: 'Fiona Interrupted' }
         ]
       },
       {
         season: 3,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'El Gran Cañon' },
+          { episode: 2, title: 'The American Dream' },
+          { episode: 3, title: 'May I Trim Your Hedges?' },
+          { episode: 4, title: 'The Helpful Gallaghers' },
+          { episode: 5, title: 'The Sins of My Caretaker' },
+          { episode: 6, title: 'Cascading Failures' },
+          { episode: 7, title: 'A Long Way from Home' },
+          { episode: 8, title: 'Where There\'s a Will' },
+          { episode: 9, title: 'Frank the Plumber' },
+          { episode: 10, title: 'Civil Wrongs' },
+          { episode: 11, title: 'Order Room Service' },
+          { episode: 12, title: 'Survival of the Fittest' }
         ]
       },
       {
         season: 4,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'Simple Pleasures' },
+          { episode: 2, title: 'My Oldest Daughter' },
+          { episode: 3, title: 'Like Father, Like Daughter' },
+          { episode: 4, title: 'Strangers on a Train' },
+          { episode: 5, title: 'There\'s the Rub' },
+          { episode: 6, title: 'Iron City' },
+          { episode: 7, title: 'A Jailbird, Invalid, Martyr, Cutter, Retard, and Parasitic Twin' },
+          { episode: 8, title: 'Hope Springs Paternal' },
+          { episode: 9, title: 'The Legend of Bonnie and Carl' },
+          { episode: 10, title: 'Liver, I Hardly Know Her' },
+          { episode: 11, title: 'Emily' },
+          { episode: 12, title: 'Lazarus' }
         ]
       },
       {
         season: 5,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'Milk of the Gods' },
+          { episode: 2, title: 'I\'m the Liver' },
+          { episode: 3, title: 'The Two Lisas' },
+          { episode: 4, title: 'A Night to Remem... Wait, What?' },
+          { episode: 5, title: 'Rite of Passage' },
+          { episode: 6, title: 'Crazy Love' },
+          { episode: 7, title: 'Tell Me You Fucking Need Me' },
+          { episode: 8, title: 'Uncle Carl' },
+          { episode: 9, title: 'Carl\'s First Sentencing' },
+          { episode: 10, title: 'South Side Rules' },
+          { episode: 11, title: 'Drugs Actually' },
+          { episode: 12, title: 'Love Songs (In the Key of Gallagher)' }
         ]
       },
       {
         season: 6,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'I Only Miss Her When I\'m Breathing' },
+          { episode: 2, title: '#AbortionRules' },
+          { episode: 3, title: 'The F Word' },
+          { episode: 4, title: 'Going Once, Going Twice' },
+          { episode: 5, title: 'Refugees' },
+          { episode: 6, title: 'NSFW' },
+          { episode: 7, title: 'Pimp\'s Paradise' },
+          { episode: 8, title: 'Be a Good Boy. Come for Grandma.' },
+          { episode: 9, title: 'A Yurt of One\'s Own' },
+          { episode: 10, title: 'Paradise Lost' },
+          { episode: 11, title: 'Sleep No More' },
+          { episode: 12, title: 'Familia Supra Gallegorious Omnia!' }
         ]
       },
       {
         season: 7,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'Hiraeth' },
+          { episode: 2, title: 'Swipe, Fuck, Leave' },
+          { episode: 3, title: 'Home Sweet Homeless Shelter' },
+          { episode: 4, title: 'I Am a Storm' },
+          { episode: 5, title: 'Own Your Shit' },
+          { episode: 6, title: 'The Defenestration of Frank' },
+          { episode: 7, title: 'You\'ll Never Ever Get a Chicken in Your Whole Entire Life' },
+          { episode: 8, title: 'You Sold Me the Laundromat, Remember?' },
+          { episode: 9, title: 'Ouroboros' },
+          { episode: 10, title: 'Ride or Die' },
+          { episode: 11, title: 'Happily Ever After' },
+          { episode: 12, title: 'Requiem for a Slut' }
         ]
       },
       {
         season: 8,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'We Become What We ... Frank!' },
+          { episode: 2, title: 'Where\'s My Meth?' },
+          { episode: 3, title: 'God Bless Her Rotting Soul' },
+          { episode: 4, title: 'F**k Paying It Forward' },
+          { episode: 5, title: 'The (Mis)Education of Liam Fergus Beircheart Gallagher' },
+          { episode: 6, title: 'Icarus Fell and Rusty Ate Him' },
+          { episode: 7, title: 'Occupy Fiona' },
+          { episode: 8, title: 'Frank\'s Northern Southern Express' },
+          { episode: 9, title: 'The Fugees' },
+          { episode: 10, title: 'Church of Gay Jesus' },
+          { episode: 11, title: 'A Gallagher Pedicure' },
+          { episode: 12, title: 'Sleepwalking' }
         ]
       },
       {
         season: 9,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' },
-          { episode: 13, title: 'Episode 13' },
-          { episode: 14, title: 'Episode 14' }
+          { episode: 1, title: 'Are You There Shim? It\'s Me, Ian' },
+          { episode: 2, title: 'Mo White!' },
+          { episode: 3, title: 'Weirdo Gallagher Vortex' },
+          { episode: 4, title: 'Do Right, Vote White!' },
+          { episode: 5, title: 'Black Haired Ginger' },
+          { episode: 6, title: 'Face It, You\'re Gorgeous' },
+          { episode: 7, title: 'Down Like the Titanic' },
+          { episode: 8, title: 'The Apple Doesn\'t Fall Far from the Alibi' },
+          { episode: 9, title: 'Boooooooooooone!' },
+          { episode: 10, title: 'Los Diablos!' },
+          { episode: 11, title: 'The Hobo Games' },
+          { episode: 12, title: 'You\'ll Know the Bottom When You Hit It' },
+          { episode: 13, title: 'Lost' },
+          { episode: 14, title: 'Found' }
         ]
       },
       {
         season: 10,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'We Few, We Lucky Few, We Band of Gallaghers!' },
+          { episode: 2, title: 'Sleep Well My Prince for Tomorrow You Shall Be King' },
+          { episode: 3, title: 'Which America?' },
+          { episode: 4, title: 'A Little Gallagher Goes a Long Way' },
+          { episode: 5, title: 'Sparky' },
+          { episode: 6, title: 'Adios Gringos' },
+          { episode: 7, title: 'Citizen Carl' },
+          { episode: 8, title: 'Debbie Might Be a Prostitute' },
+          { episode: 9, title: 'O Captain, My Captain' },
+          { episode: 10, title: 'Now Leaving Illinois' },
+          { episode: 11, title: 'Location, Location, Location' },
+          { episode: 12, title: '"Gallavich!"' }
         ]
       },
       {
         season: 11,
         episodes: [
-          { episode: 1, title: 'Episode 1' },
-          { episode: 2, title: 'Episode 2' },
-          { episode: 3, title: 'Episode 3' },
-          { episode: 4, title: 'Episode 4' },
-          { episode: 5, title: 'Episode 5' },
-          { episode: 6, title: 'Episode 6' },
-          { episode: 7, title: 'Episode 7' },
-          { episode: 8, title: 'Episode 8' },
-          { episode: 9, title: 'Episode 9' },
-          { episode: 10, title: 'Episode 10' },
-          { episode: 11, title: 'Episode 11' },
-          { episode: 12, title: 'Episode 12' }
+          { episode: 1, title: 'This is Chicago!' },
+          { episode: 2, title: 'Go Home, Gentrifier!' },
+          { episode: 3, title: 'Frances Francis Franny Frank' },
+          { episode: 4, title: 'NIMBY' },
+          { episode: 5, title: 'Slaughter' },
+          { episode: 6, title: 'Do Not Go Gentle Into That Good....Eh, Screw It' },
+          { episode: 7, title: 'Two at a Biker Bar, One in the Lake' },
+          { episode: 8, title: 'Cancelled' },
+          { episode: 9, title: 'Survivors' },
+          { episode: 10, title: 'DNR' },
+          { episode: 11, title: 'The Fickle Lady is Calling it Quits' },
+          { episode: 12, title: 'Father Frank, Full of Grace' }
         ]
       }
     ]
@@ -288,7 +288,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/zCHmmoqtLsIsou866osiWtIWmoA.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/xZs15f429HpnrlTCZyjEaqhUYyN.jpg',
     videoUrl: '125909',
-    overview: 'Welcome to Gotham City, where corruption runs deep and criminals grow bolder by the night. Forged by tragedy, Bruce Wayne becomes the Batman — but his one-man crusade for justice draws unexpected allies, dangerous enemies, and consequences he never anticipated.',
+    overview: 'Welcome to Gotham City, where corruption runs deep and criminals grow bolder by the night. Forged by tragedy, Bruce Wayne becomes the Batman â€” but his one-man crusade for justice draws unexpected allies, dangerous enemies, and consequences he never anticipated.',
     director: 'Sacha Goedegebure',
     cast: [
       'Hamish Linklater',
@@ -407,7 +407,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg',
     videoUrl: '108978',
-    overview: 'Jack Reacher spent years as a decorated investigator in the U.S. Army\'s military police, uncovering corruption others tried to bury. Now retired from that life, he wanders from town to town with nothing but a toothbrush and his instincts — but wherever he lands, danger has a way of finding him, and Reacher has a way of finishing it.',
+    overview: 'Jack Reacher spent years as a decorated investigator in the U.S. Army\'s military police, uncovering corruption others tried to bury. Now retired from that life, he wanders from town to town with nothing but a toothbrush and his instincts â€” but wherever he lands, danger has a way of finding him, and Reacher has a way of finishing it.',
     cast: [
       'Alan Ritchson',
       'Maria Sten',
@@ -1108,7 +1108,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/pRtJagIxpfODzzb0T0NAvZSzErC.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/q3UGWifvIpdey1T2efX4dSmbZpU.jpg',
     videoUrl: '124364',
-    overview: 'Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest — including the terrifying creatures that come out when the sun goes down.',
+    overview: 'Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest â€” including the terrifying creatures that come out when the sun goes down.',
     director: 'John Griffin',
     cast: [
       'Harold Perrineau, Catalina Sandino Moreno, Ricky He, David Alpay, Chloe Van Landschoot, Hannah Cheramy'
@@ -1316,7 +1316,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/ilOKsGRHYc78R2tSMusAd3xGJWq.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/dA4PbgytuOtzvPBJWoqFo9034D.jpg',
     videoUrl: '32910',
-    overview: 'Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest — including the terrifying creatures that come out when the sun goes down.',
+    overview: 'Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest â€” including the terrifying creatures that come out when the sun goes down.',
     director: 'Alex Kurtzman, Duane Capizzi, Roberto Orci, Jeff Kline',
     cast: [
       'Peter Cullen, Frank Welker, Jeffrey Combs, Tania Gunadi, Josh Keaton'
@@ -1618,7 +1618,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/1BX1HZZqDoLDx9Ry4oET6dA9293.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/iTHKz6kCv1UyXfdcB4kutMQYsaD.jpg',
     videoUrl: '888',
-    overview: "Bitten by a neogenetic spider, college student Peter Parker develops spider-like superpowers. Now moonlighting as the masked hero Spider-Man, he battles a rogues' gallery of classic villains — including the Green Goblin, Venom, Doctor Octopus, and Kingpin — while balancing crimefighting with the struggles of his personal and student life.",
+    overview: "Bitten by a neogenetic spider, college student Peter Parker develops spider-like superpowers. Now moonlighting as the masked hero Spider-Man, he battles a rogues' gallery of classic villains â€” including the Green Goblin, Venom, Doctor Octopus, and Kingpin â€” while balancing crimefighting with the struggles of his personal and student life.",
     director: 'John Semper (based on characters by Stan Lee & Steve Ditko)',
     cast: [
       'Christopher Daniel Barnes, Edward Asner, Joseph Campanella, Efrem Zimbalist Jr., Hank Azaria, Mark Hamill'
@@ -2178,7 +2178,7 @@ window._SERIES_DATA = [
         episodes: [
           {
             episode: 1,
-            title: 'No Más'
+            title: 'No MÃ¡s'
           },
           {
             episode: 2,
@@ -2194,7 +2194,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 5,
-            title: 'Más'
+            title: 'MÃ¡s'
           },
           {
             episode: 6,
@@ -2218,7 +2218,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 11,
-            title: 'Abiquiú'
+            title: 'AbiquiÃº'
           },
           {
             episode: 12,
@@ -2648,7 +2648,7 @@ window._SERIES_DATA = [
     overview: 'CIA operative Joe lead special military program called Lioness. Train rough young female Marine named Cruz to go undercover deep inside terrorist organizations. Team must stop dangerous high-level threats to nation while Joe struggle to balance brutal job with family life at home.',
     director: 'Taylor Sheridan',
     cast: [
-      'Zoe Saldaña, Laysla De Oliveira, Nicole Kidman, Michael Kelly, Morgan Freeman, Dave Annable, Jill Wagner'
+      'Zoe SaldaÃ±a, Laysla De Oliveira, Nicole Kidman, Michael Kelly, Morgan Freeman, Dave Annable, Jill Wagner'
     ],
     trending: false,
     featured: false,
@@ -2783,7 +2783,7 @@ window._SERIES_DATA = [
     poster: 'https://image.tmdb.org/t/p/original/t5mbrd79o89pYB8OQ4QPFNkIRPm.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/wKXpV8QgNXtJ4OQyzqDy82SsURm.jpg',
     videoUrl: '2022',
-    overview: 'A young Bruce Wayne fights crime and evil in Gotham City as the mysterious vigilante, the Batman. This animated series follows his early crimefighting years — from a solo detective battling classic villains like the Joker, Penguin, and Mr. Freeze, to eventually building the Bat-Family with Robin and Batgirl, and forming ties with the wider DC Universe.',
+    overview: 'A young Bruce Wayne fights crime and evil in Gotham City as the mysterious vigilante, the Batman. This animated series follows his early crimefighting years â€” from a solo detective battling classic villains like the Joker, Penguin, and Mr. Freeze, to eventually building the Bat-Family with Robin and Batgirl, and forming ties with the wider DC Universe.',
     director: 'Michael Goguen, Duane Capizzi',
     cast: [
       'Rino Romano, Alastair Duncan, Evan Sabara, Danielle Judovits, Kevin Michael Richardson, Ming-Na Wen, Mitch Pileggi'
@@ -4307,7 +4307,7 @@ window._SERIES_DATA = [
     poster: 'https://image.tmdb.org/t/p/original/uos1avg8fudMB3t1jYxHkzLDCJC.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/2FCDydVqTYsIO0d16DT32nxm7g8.jpg',
     videoUrl: '46922',
-    overview: 'Now sixteen and craving independence, Ben Tennyson sets out to be a solo superhero — until Grandpa Max partners him with Rook Blonko, an alien Plumber recruit from the planet Revonnah. Together, using an evolved Omnitrix with a whole new roster of alien forms, they defend Earth from returning threats and new villains across the galaxy.',
+    overview: 'Now sixteen and craving independence, Ben Tennyson sets out to be a solo superhero â€” until Grandpa Max partners him with Rook Blonko, an alien Plumber recruit from the planet Revonnah. Together, using an evolved Omnitrix with a whole new roster of alien forms, they defend Earth from returning threats and new villains across the galaxy.',
     director: 'Duncan Rouleau, Joe Casey, Joe Kelly, Steven T. Seagle',
     cast: [
       'Yuri Lowenthal, Bumper Robinson, Paul Eiding, Dee Bradley Baker, Eric Bauza, Corey Burton, John DiMaggio, Rob Paulsen'
@@ -4698,7 +4698,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/acrtAy8gmxcsEvrDP09MpMSCeDZ.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/rmRp41yelJG1tCCdoHRiHX8qp7g.jpg',
     videoUrl: '65334',
-    overview: "By daylight, Marinette Dupain-Cheng and Adrien Agreste are ordinary Parisian teenagers. But unbeknownst to their family and friends, the two carry a huge secret — using the powers of magical creatures called Kwamis, they transform into the superheroes Ladybug and Cat Noir. Tasked with protecting Paris from the villain Hawk Moth, they must balance their new responsibilities with ordinary teenage troubles of love, school, and friendship, all while remaining unaware of each other's true identities.",
+    overview: "By daylight, Marinette Dupain-Cheng and Adrien Agreste are ordinary Parisian teenagers. But unbeknownst to their family and friends, the two carry a huge secret â€” using the powers of magical creatures called Kwamis, they transform into the superheroes Ladybug and Cat Noir. Tasked with protecting Paris from the villain Hawk Moth, they must balance their new responsibilities with ordinary teenage troubles of love, school, and friendship, all while remaining unaware of each other's true identities.",
     director: 'Thomas Astruc',
     cast: [
       'Cristina Vee, Bryce Papenbrook, Mela Lee, Carrie Keranen'
@@ -4792,7 +4792,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 21,
-            title: 'Numéric'
+            title: 'NumÃ©ric'
           },
           {
             episode: 22,
@@ -4821,7 +4821,7 @@ window._SERIES_DATA = [
         episodes: [
           {
             episode: 1,
-            title: 'Pire Noël'
+            title: 'Pire NoÃ«l'
           },
           {
             episode: 2,
@@ -4837,7 +4837,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 5,
-            title: 'La Béfana'
+            title: 'La BÃ©fana'
           },
           {
             episode: 6,
@@ -4938,7 +4938,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 3,
-            title: 'Caméléon'
+            title: 'CamÃ©lÃ©on'
           },
           {
             episode: 4,
@@ -4962,7 +4962,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 9,
-            title: 'Poupéflekta'
+            title: 'PoupÃ©flekta'
           },
           {
             episode: 10,
@@ -5002,7 +5002,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 19,
-            title: 'Trouble Fête'
+            title: 'Trouble FÃªte'
           },
           {
             episode: 20,
@@ -5014,7 +5014,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 22,
-            title: 'Félix'
+            title: 'FÃ©lix'
           },
           {
             episode: 23,
@@ -5022,7 +5022,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 24,
-            title: 'Maître Noël'
+            title: 'MaÃ®tre NoÃ«l'
           },
           {
             episode: 25,
@@ -5039,7 +5039,7 @@ window._SERIES_DATA = [
         episodes: [
           {
             episode: 1,
-            title: 'Vérité'
+            title: 'VÃ©ritÃ©'
           },
           {
             episode: 2,
@@ -5055,7 +5055,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 5,
-            title: 'Psycomédien'
+            title: 'PsycomÃ©dien'
           },
           {
             episode: 6,
@@ -5119,11 +5119,11 @@ window._SERIES_DATA = [
           },
           {
             episode: 21,
-            title: 'Chère Famille'
+            title: 'ChÃ¨re Famille'
           },
           {
             episode: 22,
-            title: 'Ephémère'
+            title: 'EphÃ©mÃ¨re'
           },
           {
             episode: 23,
@@ -5139,7 +5139,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 26,
-            title: 'Réplique'
+            title: 'RÃ©plique'
           }
         ]
       },
@@ -5188,7 +5188,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 11,
-            title: 'Déflagration'
+            title: 'DÃ©flagration'
           },
           {
             episode: 12,
@@ -5220,7 +5220,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 19,
-            title: 'Prétention'
+            title: 'PrÃ©tention'
           },
           {
             episode: 20,
@@ -5248,7 +5248,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 26,
-            title: 'Re-création'
+            title: 'Re-crÃ©ation'
           },
           {
             episode: 27,
@@ -5297,7 +5297,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 10,
-            title: 'Le Château Noir'
+            title: 'Le ChÃ¢teau Noir'
           },
           {
             episode: 11,
@@ -5325,7 +5325,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 17,
-            title: 'La Fée de Beaux Rêves'
+            title: 'La FÃ©e de Beaux RÃªves'
           },
           {
             episode: 18,
@@ -5341,7 +5341,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 21,
-            title: 'Les Titans Chaînés'
+            title: 'Les Titans ChaÃ®nÃ©s'
           },
           {
             episode: 22,
@@ -5484,7 +5484,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/rX1wQMTKFqF0gvZyS0DDQqgnQPB.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/vttOoJ9aGKHY05Gsb1lNbOAZgTM.jpg',
     videoUrl: '84958',
-    overview: 'After stealing the Tesseract during a botched time heist, the mercurial villain Loki lands in the custody of the Time Variance Authority (TVA), a bureaucratic organization tasked with maintaining the sacred timeline of the multiverse. Instead of being erased from existence, Loki is offered a choice — help fix a greater threat to the timeline, or face deletion — sending him on a mind-bending journey that challenges everything he thought he knew about himself.',
+    overview: 'After stealing the Tesseract during a botched time heist, the mercurial villain Loki lands in the custody of the Time Variance Authority (TVA), a bureaucratic organization tasked with maintaining the sacred timeline of the multiverse. Instead of being erased from existence, Loki is offered a choice â€” help fix a greater threat to the timeline, or face deletion â€” sending him on a mind-bending journey that challenges everything he thought he knew about himself.',
     director: 'Michael Waldron',
     cast: [
       'Tom Hiddleston, Owen Wilson, Gugu Mbatha-Raw, Sophia Di Martino, Wunmi Mosaku, Eugene Cordero, Jonathan Majors'
@@ -5790,10 +5790,10 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/uneEmfKFbyOZsN77JAHXK1cIAmX.jpg',
     videoUrl: '71446',
-    overview: 'To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who share a single characteristic: none of them has anything to lose. Five months of seclusion — memorizing every step, every detail, every probability — culminate in eleven days locked inside the Royal Mint of Spain, surrounded by police forces and dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.',
-    director: 'Álex Pina',
+    overview: 'To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who share a single characteristic: none of them has anything to lose. Five months of seclusion â€” memorizing every step, every detail, every probability â€” culminate in eleven days locked inside the Royal Mint of Spain, surrounded by police forces and dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.',
+    director: 'Ãlex Pina',
     cast: [
-      'Úrsula Corberó, Álvaro Morte, Itziar Ituño, Pedro Alonso, Paco Tous, Alba Flores, Miguel Herrán, Jaime Lorente, Esther Acebo'
+      'Ãšrsula CorberÃ³, Ãlvaro Morte, Itziar ItuÃ±o, Pedro Alonso, Paco Tous, Alba Flores, Miguel HerrÃ¡n, Jaime Lorente, Esther Acebo'
     ],
     trending: false,
     featured: false,
@@ -5820,11 +5820,11 @@ window._SERIES_DATA = [
           },
           {
             episode: 5,
-            title: 'El día de la marmota'
+            title: 'El dÃ­a de la marmota'
           },
           {
             episode: 6,
-            title: 'La cálida Guerra Fría'
+            title: 'La cÃ¡lida Guerra FrÃ­a'
           },
           {
             episode: 7,
@@ -5832,7 +5832,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 8,
-            title: 'Tú lo has buscado'
+            title: 'TÃº lo has buscado'
           },
           {
             episode: 9,
@@ -5845,7 +5845,7 @@ window._SERIES_DATA = [
         episodes: [
           {
             episode: 1,
-            title: 'Se acabaron las máscaras'
+            title: 'Se acabaron las mÃ¡scaras'
           },
           {
             episode: 2,
@@ -5853,11 +5853,11 @@ window._SERIES_DATA = [
           },
           {
             episode: 3,
-            title: 'Cuestión de eficacia'
+            title: 'CuestiÃ³n de eficacia'
           },
           {
             episode: 4,
-            title: '¿Qué hemos hecho?'
+            title: 'Â¿QuÃ© hemos hecho?'
           },
           {
             episode: 5,
@@ -5886,7 +5886,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 4,
-            title: ' La hora del delfín'
+            title: ' La hora del delfÃ­n'
           },
           {
             episode: 5,
@@ -5894,11 +5894,11 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: 'Todo pareció insignificante'
+            title: 'Todo pareciÃ³ insignificante'
           },
           {
             episode: 7,
-            title: 'Pequeñas vacaciones'
+            title: 'PequeÃ±as vacaciones'
           },
           {
             episode: 8,
@@ -5915,15 +5915,15 @@ window._SERIES_DATA = [
           },
           {
             episode: 2,
-            title: 'La boda de Berlín'
+            title: 'La boda de BerlÃ­n'
           },
           {
             episode: 3,
-            title: 'Lección de anatomía'
+            title: 'LecciÃ³n de anatomÃ­a'
           },
           {
             episode: 4,
-            title: 'Suspiros de España'
+            title: 'Suspiros de EspaÃ±a'
           },
           {
             episode: 5,
@@ -5931,7 +5931,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: 'KO técnico'
+            title: 'KO tÃ©cnico'
           },
           {
             episode: 7,
@@ -5939,7 +5939,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 8,
-            title: 'Plan París'
+            title: 'Plan ParÃ­s'
           }
         ]
       },
@@ -5952,11 +5952,11 @@ window._SERIES_DATA = [
           },
           {
             episode: 2,
-            title: '¿Crees en la reencarnación?'
+            title: 'Â¿Crees en la reencarnaciÃ³n?'
           },
           {
             episode: 3,
-            title: 'El espectáculo de la vida'
+            title: 'El espectÃ¡culo de la vida'
           },
           {
             episode: 4,
@@ -5968,7 +5968,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: 'Válvulas de escape'
+            title: 'VÃ¡lvulas de escape'
           },
           {
             episode: 7,
@@ -5976,7 +5976,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 8,
-            title: 'La teoría de la elegancia'
+            title: 'La teorÃ­a de la elegancia'
           },
           {
             episode: 9,
@@ -5984,7 +5984,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 10,
-            title: 'Una tradición familiar'
+            title: 'Una tradiciÃ³n familiar'
           }
         ]
       }
@@ -6005,7 +6005,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/ijWWwINc8h71NQ8j1LTJMFSj5wr.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/z8axGj6DbR1cZZw3fCLNnJE9LIJ.jpg',
     videoUrl: '85271',
-    overview: 'Blending the style of classic sitcoms with the Marvel Cinematic Universe, WandaVision follows Wanda Maximoff and Vision — two super-powered beings living idealized suburban lives — as they begin to suspect that everything is not as it seems.',
+    overview: 'Blending the style of classic sitcoms with the Marvel Cinematic Universe, WandaVision follows Wanda Maximoff and Vision â€” two super-powered beings living idealized suburban lives â€” as they begin to suspect that everything is not as it seems.',
     director: 'Jac Schaeffer',
     cast: [
       'Elizabeth Olsen, Paul Bettany, Kathryn Hahn, Teyonah Parris, Randall Park, Kat Dennings, Evan Peters, Debra Jo Rupp'
@@ -8198,10 +8198,10 @@ window._SERIES_DATA = [
     poster: 'https://image.tmdb.org/t/p/original/vlv1gn98GqMnKHLSh0dNciqGfBl.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/sdKDOUAstJv46rUuBtjHV8ILkcN.jpg',
     videoUrl: '95057',
-    overview: "Follows the world's most famous superhero and comic books' most famous journalist as they deal with all the stress, pressure, and complexities that come with being working parents in today's society — all while Superman balances his heroic duties with Lois Lane raising their teenage sons in Smallville.",
+    overview: "Follows the world's most famous superhero and comic books' most famous journalist as they deal with all the stress, pressure, and complexities that come with being working parents in today's society â€” all while Superman balances his heroic duties with Lois Lane raising their teenage sons in Smallville.",
     director: 'Todd Helbing, Greg Berlanti',
     cast: [
-      'Tyler Hoechlin, Elizabeth Tulloch, Jordan Elsass, Alexander Garfin, Erik Valdez, Inde Navarrette, Wolé Parks, Adam Rayner'
+      'Tyler Hoechlin, Elizabeth Tulloch, Jordan Elsass, Alexander Garfin, Erik Valdez, Inde Navarrette, WolÃ© Parks, Adam Rayner'
     ],
     trending: false,
     featured: false,
@@ -8455,7 +8455,7 @@ window._SERIES_DATA = [
     poster: 'https://image.tmdb.org/t/p/original/pE8CScObQURsFZ723PSW1K9EGYp.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/m0GVaV4mgE8aFSHp8kTevHb8feu.jpg',
     videoUrl: '60574',
-    overview: 'A gangster family epic set in 1919 Birmingham, England, centered on the Shelby crime family, led by ambitious and ruthless Thomas Shelby. Fresh from the horrors of World War I, Tommy schemes his way up from the poverty of Small Heath, seeking to move the family beyond their bookmaking business into legitimate — and not-so-legitimate — enterprises, clashing along the way with rival gangs, the police, and the IRA.',
+    overview: 'A gangster family epic set in 1919 Birmingham, England, centered on the Shelby crime family, led by ambitious and ruthless Thomas Shelby. Fresh from the horrors of World War I, Tommy schemes his way up from the poverty of Small Heath, seeking to move the family beyond their bookmaking business into legitimate â€” and not-so-legitimate â€” enterprises, clashing along the way with rival gangs, the police, and the IRA.',
     director: 'Steven Knight',
     cast: [
       'Cillian Murphy, Paul Anderson, Sophie Rundle, Sam Neill, Helen McCrory, Tom Hardy, Steven Knight'
@@ -8908,7 +8908,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/zU0htwkhNvBQdVSIKB9s6hgVeFK.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/5N5dSOrysuquExvn8Gpp5jMEf6u.jpg',
     videoUrl: '87739',
-    overview: "In a 1950s orphanage, a young girl named Beth Harmon discovers an astonishing talent for chess while developing a dependency on tranquilizers provided to the children — an addiction that will follow her into adulthood. Grandmaster-level chess is a sport dominated by men, but as Beth rises through the ranks of competitive chess, she must fight to overcome her personal demons and outmaneuver a world that doesn't expect her to win.",
+    overview: "In a 1950s orphanage, a young girl named Beth Harmon discovers an astonishing talent for chess while developing a dependency on tranquilizers provided to the children â€” an addiction that will follow her into adulthood. Grandmaster-level chess is a sport dominated by men, but as Beth rises through the ranks of competitive chess, she must fight to overcome her personal demons and outmaneuver a world that doesn't expect her to win.",
     director: 'Scott Frank',
     cast: [
       'Anya Taylor-Joy, Chloe Pirrie, Bill Camp, Marielle Heller, Thomas Brodie-Sangster, Moses Ingram, Harry Melling'
@@ -9647,7 +9647,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 7,
-            title: 'The Panty Piñata Polarization'
+            title: 'The Panty PiÃ±ata Polarization'
           },
           {
             episode: 8,
@@ -10739,7 +10739,7 @@ window._SERIES_DATA = [
     poster: 'https://image.tmdb.org/t/p/original/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/zTjMmLFn2jgsxZwHC5fbsm6HHG4.jpg',
     videoUrl: '1399',
-    overview: 'Seven noble families fight for control of the mythical land of Westeros. Political and sexual intrigue is pervasive in this fantasy epic, as the Iron Throne is fiercely contested by dynasties whose ancestors ruled for centuries. Meanwhile, a forgotten race, banished to the North, thousands of years ago, returns after being dormant for millennia — as an ancient enemy beyond the Wall threatens the very existence of the Seven Kingdoms.',
+    overview: 'Seven noble families fight for control of the mythical land of Westeros. Political and sexual intrigue is pervasive in this fantasy epic, as the Iron Throne is fiercely contested by dynasties whose ancestors ruled for centuries. Meanwhile, a forgotten race, banished to the North, thousands of years ago, returns after being dormant for millennia â€” as an ancient enemy beyond the Wall threatens the very existence of the Seven Kingdoms.',
     director: 'David Benioff, D.B. Weiss',
     cast: [
       'Emilia Clarke, Peter Dinklage, Kit Harington, Lena Headey, Sophie Turner, Maisie Williams, Nikolaj Coster-Waldau, Iain Glen'
@@ -11577,7 +11577,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: 'Que Será Será'
+            title: 'Que SerÃ¡ SerÃ¡'
           },
           {
             episode: 7,
@@ -14884,7 +14884,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w1280/1QdXdRYfktUSONkl1oD5gc6Be0s.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/5aE1kxWg6RhgQxJTXTxifv4uq7P.jpg',
     videoUrl: '93405',
-    overview: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games—with high stakes. But, a tempting prize awaits the victor.",
+    overview: "Hundreds of cash-strapped players accept a strange invitation to compete in children's gamesâ€”with high stakes. But, a tempting prize awaits the victor.",
     director: 'Hwang Dong-hyuk',
     cast: [
       'Lee Jung-jae',
@@ -14964,7 +14964,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: 'O ﻿ X'
+            title: 'O ï»¿ X'
           },
           {
             episode: 7,
@@ -14993,11 +14993,11 @@ window._SERIES_DATA = [
           },
           {
             episode: 5,
-            title: '○△□'
+            title: 'â—‹â–³â–¡'
           },
           {
             episode: 6,
-            title: 'Humans Are…'
+            title: 'Humans Areâ€¦'
           }
         ]
       }
@@ -15223,7 +15223,7 @@ window._SERIES_DATA = [
         episodes: [
           {
             episode: 1,
-            title: 'Orientación'
+            title: 'OrientaciÃ³n'
           },
           {
             episode: 2,
@@ -15571,7 +15571,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: 'Sí Se Puede'
+            title: 'SÃ­ Se Puede'
           },
           {
             episode: 7,
@@ -16830,7 +16830,7 @@ window._SERIES_DATA = [
     poster: 'https://image.tmdb.org/t/p/original/iLQnvSXoqV6ztRtp1uPw6ZZyTCw.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/7QSM3AsgWXctWBm7OFov9dGdZgt.jpg',
     videoUrl: '60708',
-    overview: "The good. The evil. The beginning.Everyone knows the name Commissioner Gordon. He is one of the crime world's greatest foes, a man whose reputation is synonymous with law and order. But what is known of Gordon's story and his rise from rookie detective to Police Commissioner? What did it take to navigate the multiple layers of corruption that secretly ruled Gotham City, the spawning ground of the world's most iconic villains? And what circumstances created them – the larger-than-life personas who would become Catwoman, The Penguin, The Riddler, Two-Face and The Joker?Gotham is an origin story of the great DC Comics Super-Villains and vigilantes, revealing an entirely new chapter that has never been told. It follows one cop's rise through a dangerously corrupt city teetering between good and evil, and chronicles the birth of one of the most popular super heroes of our time.",
+    overview: "The good. The evil. The beginning.Everyone knows the name Commissioner Gordon. He is one of the crime world's greatest foes, a man whose reputation is synonymous with law and order. But what is known of Gordon's story and his rise from rookie detective to Police Commissioner? What did it take to navigate the multiple layers of corruption that secretly ruled Gotham City, the spawning ground of the world's most iconic villains? And what circumstances created them â€“ the larger-than-life personas who would become Catwoman, The Penguin, The Riddler, Two-Face and The Joker?Gotham is an origin story of the great DC Comics Super-Villains and vigilantes, revealing an entirely new chapter that has never been told. It follows one cop's rise through a dangerously corrupt city teetering between good and evil, and chronicles the birth of one of the most popular super heroes of our time.",
     director: 'Bruno Heller',
     cast: [
       'Ben McKenzie',
@@ -17390,7 +17390,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w1280/kidkbZRBGbsEIrX7pODRSKi9ipl.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/sNr1KlhUisRsrGZLRkgyvm0PraW.jpg',
     videoUrl: '71728',
-    overview: "For young Sheldon Cooper, it isn't easy growing up in East Texas. Being a once-in-a-generation mind capable of advanced mathematics and science isn't always helpful in a land where church and football are king. And while the vulnerable, gifted and somewhat naïve Sheldon deals with the world, his very normal family must find a way to deal with him. His father, George, is struggling to find his way as a high school football coach and as father to a boy he doesn't understand. Sheldon's mother, Mary, fiercely protects and nurtures her son in a town where he just doesn't fit in. Sheldon's older brother, Georgie, does the best he can in high school, but it's tough to be cool when you're in the same classes with your odd younger brother. Sheldon's twin sister, Missy, sometimes resents all the attention Sheldon gets, but also remains the one person who can reliably tell Sheldon the truth. Finally, there's Sheldon's beloved Meemaw, his foul-mouthed, hard-drinking Texas grandmother who is very supportive of her grandson and his unique gifts. For 12 years on The Big Bang Theory, audiences have come to know the iconic, eccentric, and extraordinary Sheldon Cooper. This single-camera, half-hour comedy allows us the chance to meet him in childhood, as he embarks on his innocent, awkward, and hopeful journey toward the man he will become.",
+    overview: "For young Sheldon Cooper, it isn't easy growing up in East Texas. Being a once-in-a-generation mind capable of advanced mathematics and science isn't always helpful in a land where church and football are king. And while the vulnerable, gifted and somewhat naÃ¯ve Sheldon deals with the world, his very normal family must find a way to deal with him. His father, George, is struggling to find his way as a high school football coach and as father to a boy he doesn't understand. Sheldon's mother, Mary, fiercely protects and nurtures her son in a town where he just doesn't fit in. Sheldon's older brother, Georgie, does the best he can in high school, but it's tough to be cool when you're in the same classes with your odd younger brother. Sheldon's twin sister, Missy, sometimes resents all the attention Sheldon gets, but also remains the one person who can reliably tell Sheldon the truth. Finally, there's Sheldon's beloved Meemaw, his foul-mouthed, hard-drinking Texas grandmother who is very supportive of her grandson and his unique gifts. For 12 years on The Big Bang Theory, audiences have come to know the iconic, eccentric, and extraordinary Sheldon Cooper. This single-camera, half-hour comedy allows us the chance to meet him in childhood, as he embarks on his innocent, awkward, and hopeful journey toward the man he will become.",
     director: 'Chuck Lorre, Steven Molaro',
     cast: [
       'Iain Armitage',
@@ -17429,7 +17429,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: 'A Patch, a Modem, and a Zantac®'
+            title: 'A Patch, a Modem, and a ZantacÂ®'
           },
           {
             episode: 7,
@@ -17437,7 +17437,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 8,
-            title: "Cape Canaveral, Schrödinger's Cat, and Cyndi Lauper's Hair"
+            title: "Cape Canaveral, SchrÃ¶dinger's Cat, and Cyndi Lauper's Hair"
           },
           {
             episode: 9,
@@ -18889,7 +18889,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 22,
-            title: "The Party's Over, Isla de Señorita"
+            title: "The Party's Over, Isla de SeÃ±orita"
           },
           {
             episode: 23,
@@ -19917,7 +19917,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 3,
-            title: '¡Diablo!'
+            title: 'Â¡Diablo!'
           },
           {
             episode: 4,
@@ -20036,7 +20036,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/8jjTPo8j2dG6eDBYZOxgEpzSGAB.jpg',
     videoUrl: '94997',
-    overview: 'The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Their totalitarian reign is highlighted through their sigil: a three-headed dragon, representing the union of King Aegon and his sisters, Rhaenys and Visenya. But the seeds of the downfall of House Targaryen have already been planted, as the Dance of the Dragons — a Targaryen civil war — approaches.',
+    overview: 'The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Their totalitarian reign is highlighted through their sigil: a three-headed dragon, representing the union of King Aegon and his sisters, Rhaenys and Visenya. But the seeds of the downfall of House Targaryen have already been planted, as the Dance of the Dragons â€” a Targaryen civil war â€” approaches.',
     director: 'Ryan Condal, George R.R. Martin',
     cast: [
       "Paddy Considine, Emma D'Arcy, Matt Smith, Olivia Cooke, Rhys Ifans, Steve Toussaint, Eve Best, Sonoya Mizuno, Fabien Frankel"
@@ -20181,7 +20181,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/3KLmx6nLaiYe07kSwuWdpTEHJgE.jpg',
     videoUrl: '97546',
-    overview: 'An American football coach, Ted Lasso, is hired to manage AFC Richmond, a British soccer team — despite having no experience coaching soccer at all. His folksy, positive attitude, unwavering optimism, and unique brand of leadership begin to unite a dysfunctional team and a fractured fan base, even as his personal life and marriage crumble behind the scenes.',
+    overview: 'An American football coach, Ted Lasso, is hired to manage AFC Richmond, a British soccer team â€” despite having no experience coaching soccer at all. His folksy, positive attitude, unwavering optimism, and unique brand of leadership begin to unite a dysfunctional team and a fractured fan base, even as his personal life and marriage crumble behind the scenes.',
     director: 'Bill Lawrence, Jason Sudeikis, Brendan Hunt, Joe Kelly',
     cast: [
       'Jason Sudeikis, Hannah Waddingham, Jeremy Swift, Brett Goldstein, Nick Mohammed, Juno Temple, Brendan Hunt, Phil Dunster'
@@ -20493,7 +20493,7 @@ window._SERIES_DATA = [
         episodes: [
           {
             episode: 1,
-            title: 'Ándale'
+            title: 'Ãndale'
           },
           {
             episode: 2,
@@ -20893,7 +20893,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/9PFonBhy4cQy7Jz20NpMygczOkv.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/AeJgnEXaFcsGzU5Y4Nrq9WggAQ5.jpg',
     videoUrl: '119051',
-    overview: 'Wednesday Addams is sent to Nevermore Academy, a bizarre boarding school where she attempts to master her emerging psychic ability, thwart a monstrous killing spree that has terrorized the local town, and solve a supernatural mystery that entangled her parents 25 years ago — all while navigating her new relationships at the school.',
+    overview: 'Wednesday Addams is sent to Nevermore Academy, a bizarre boarding school where she attempts to master her emerging psychic ability, thwart a monstrous killing spree that has terrorized the local town, and solve a supernatural mystery that entangled her parents 25 years ago â€” all while navigating her new relationships at the school.',
     director: 'Alfred Gough, Miles Millar',
     cast: [
       'Jenna Ortega, Gwendoline Christie, Hunter Doohan, Percy Hynes White, Emma Myers, Joy Sunday, Riki Lindhome, Christina Ricci, Catherine Zeta-Jones'
@@ -20992,7 +20992,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/rTc7ZXdroqjkKivFPvCPX0Ru7uw.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/isJ4POBlbH5kmHVgbdP4gC4nFqO.jpg',
     videoUrl: '1398',
-    overview: 'New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling. As Tony navigates the pressures of running a criminal empire while raising a family, the series digs deep into the psychology of a modern mafia don caught between two worlds — one of ruthless violence, the other of suburban domesticity.',
+    overview: 'New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling. As Tony navigates the pressures of running a criminal empire while raising a family, the series digs deep into the psychology of a modern mafia don caught between two worlds â€” one of ruthless violence, the other of suburban domesticity.',
     director: 'David Chase',
     cast: [
       'James Gandolfini, Lorraine Bracco, Edie Falco, Michael Imperioli, Dominic Chianese, Steven Van Zandt, Tony Sirico, Robert Iler, Jamie-Lynn Sigler, Aida Turturro'
@@ -21393,12 +21393,12 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w1280/9bkxU7kTMLuhBOPnkAYXtCsqZj3.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/41t0KM9bHGLi49OtS3hLt14vm6l.jpg',
     videoUrl: '1894',
-    overview: "LazyTown is an Icelandic-American children's television program with a cast and crew from Iceland, the United Kingdom, and the United States. It was created by Magnús Scheving, a gymnastics champion and CEO of LazyTown Entertainment, who also stars in the show. Originally performed in English, the show has been dubbed into more than a dozen languages and aired in over 100 countries.A total of 52 episodes of LazyTown were produced from 2004 to 2007, for the show's first and second seasons. In the US, LazyTown originally aired on Nickelodeon and Nick Jr.; in 2011, PBS Kids Sprout gained the rights to air the series. Turner Broadcasting System Europe acquired the LazyTown Entertainment company in 2011 and commissioned a third season of the series to be delivered at the end of 2012 which premiered on April 6, 2013, in the UK.As of 2012, LazyTown airs on Turner Broadcasting's international preschool network, Cartoonito, and is distributed by Turner Broadcasting System Europe.LazyTown has generated several spin-off projects including stage productions and a TV program for younger children called LazyTown Extra.",
-    director: 'Magnús Scheving',
+    overview: "LazyTown is an Icelandic-American children's television program with a cast and crew from Iceland, the United Kingdom, and the United States. It was created by MagnÃºs Scheving, a gymnastics champion and CEO of LazyTown Entertainment, who also stars in the show. Originally performed in English, the show has been dubbed into more than a dozen languages and aired in over 100 countries.A total of 52 episodes of LazyTown were produced from 2004 to 2007, for the show's first and second seasons. In the US, LazyTown originally aired on Nickelodeon and Nick Jr.; in 2011, PBS Kids Sprout gained the rights to air the series. Turner Broadcasting System Europe acquired the LazyTown Entertainment company in 2011 and commissioned a third season of the series to be delivered at the end of 2012 which premiered on April 6, 2013, in the UK.As of 2012, LazyTown airs on Turner Broadcasting's international preschool network, Cartoonito, and is distributed by Turner Broadcasting System Europe.LazyTown has generated several spin-off projects including stage productions and a TV program for younger children called LazyTown Extra.",
+    director: 'MagnÃºs Scheving',
     cast: [
-      'Magnús Scheving',
+      'MagnÃºs Scheving',
       'Julianna Rose Mauriello',
-      'Stefán Karl Stefánsson',
+      'StefÃ¡n Karl StefÃ¡nsson',
       'Chloe Lang',
       'Kodi Smit-McPhee',
       'David Matthew Feldman'
@@ -23544,7 +23544,7 @@ window._SERIES_DATA = [
     poster: 'https://image.tmdb.org/t/p/original/bmk89gI4anquXyaEy6oCfUgfZ32.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/3NF0qCnYVjczbeEUZBcJg2SlNVt.jpg',
     videoUrl: '84200',
-    overview: 'The New Justice League Unlimited consists of Superman, Batman, Wonder Woman, The Flash, Green Lantern, Martian Manhunter and Hawkgirl – they have all saved countless lives from unspeakable dangers, using their unique powers to fight evil on Earth and across the galaxy. And until now, they have all worked alone. But after an alien invasion that took their combined powers to defeat, these seven super heroes unite to become the Justice League.',
+    overview: 'The New Justice League Unlimited consists of Superman, Batman, Wonder Woman, The Flash, Green Lantern, Martian Manhunter and Hawkgirl â€“ they have all saved countless lives from unspeakable dangers, using their unique powers to fight evil on Earth and across the galaxy. And until now, they have all worked alone. But after an alien invasion that took their combined powers to defeat, these seven super heroes unite to become the Justice League.',
     director: 'Joaquim Dos Santos',
     cast: [
       'George Newbern',
@@ -28893,7 +28893,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 18,
-            title: 'The Maid of Gévaudan'
+            title: 'The Maid of GÃ©vaudan'
           },
           {
             episode: 19,
@@ -29008,7 +29008,7 @@ window._SERIES_DATA = [
     poster: 'https://image.tmdb.org/t/p/original/lztz5XBMG1x6Y5ubz7CxfPFsAcW.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/jnzoh5qoxRLFRIQAxnl6D3RStPC.jpg',
     videoUrl: '91363',
-    overview: "What If…? flips the script on the MCU by reimagining events from the films in unexpected ways. Marvel Studios' first animated series focuses on different heroes from the MCU, featuring a voice cast that includes a host of stars who reprise their roles.",
+    overview: "What Ifâ€¦? flips the script on the MCU by reimagining events from the films in unexpected ways. Marvel Studios' first animated series focuses on different heroes from the MCU, featuring a voice cast that includes a host of stars who reprise their roles.",
     director: 'Bryan Andrews',
     cast: [
       'Jeffrey Wright',
@@ -29027,11 +29027,11 @@ window._SERIES_DATA = [
         episodes: [
           {
             episode: 1,
-            title: 'What If… Captain Carter Were the First Avenger?'
+            title: 'What Ifâ€¦ Captain Carter Were the First Avenger?'
           },
           {
             episode: 2,
-            title: "What If… T'Challa Became a Star-Lord?"
+            title: "What Ifâ€¦ T'Challa Became a Star-Lord?"
           },
           {
             episode: 3,
@@ -29039,7 +29039,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 4,
-            title: 'What If… Doctor Strange Lost His Heart Instead of His Hands?'
+            title: 'What Ifâ€¦ Doctor Strange Lost His Heart Instead of His Hands?'
           },
           {
             episode: 5,
@@ -29047,11 +29047,11 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: 'What If… Killmonger Rescued Tony Stark?'
+            title: 'What Ifâ€¦ Killmonger Rescued Tony Stark?'
           },
           {
             episode: 7,
-            title: 'What If… Thor Were an Only Child?'
+            title: 'What Ifâ€¦ Thor Were an Only Child?'
           },
           {
             episode: 8,
@@ -35061,7 +35061,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/3xWzlLZ0kAD6SkVZTekFM9lxZyP.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/zFdHbLQqkTgxd2eJyYbufwyE22M.jpg',
     videoUrl: '63401',
-    overview: 'Three bear brothers — Grizzly, Panda, and Ice Bear — navigate the everyday complications of modern life in the Bay Area, all while trying to fit into human society, find friendship, and figure out where they truly belong. Balancing heartfelt sincerity with offbeat comedy, the series follows the bears as they attempt to make sense of technology, social norms, and the search for genuine connection.',
+    overview: 'Three bear brothers â€” Grizzly, Panda, and Ice Bear â€” navigate the everyday complications of modern life in the Bay Area, all while trying to fit into human society, find friendship, and figure out where they truly belong. Balancing heartfelt sincerity with offbeat comedy, the series follows the bears as they attempt to make sense of technology, social norms, and the search for genuine connection.',
     director: 'Daniel Chong',
     cast: [
       'Eric Edelstein',
@@ -35864,7 +35864,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/VYnnyA2hyxi3VUPgCA71mMtt69.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/gmO3aezFgDcrhcymhNSJLGZ3CT.jpg',
     videoUrl: '37606',
-    overview: "The often outrageous adventures of a 12-year-old blue cat named Gumball Watterson, as he navigates the wonderfully weird world of Elmore alongside his goldfish-turned-legged adoptive brother Darwin. Blending traditional animation, live-action, CGI, and puppetry, the series follows Gumball's chaotic misadventures with his sister Anais and his hilariously flawed family, the Wattersons. ",
+    overview: "The often outrageous adventures of a 12-year-old blue cat named Gumball Watterson, as he navigates the wonderfully weird world of Elmore alongside his goldfish-turned-legged adoptive brother Darwin. Blending traditional animation, live-action, CGI, and puppetry, the series follows Gumball's chaotic misadventures with his sister Anais and his hilariously flawed family, the Wattersons.Â ",
     director: 'Ben Bocquelet',
     cast: [
       'Logan Grove / Nicolas Cantu, Kwesi Boakye / Terrell Ransom Jr. / Donielle T. Hansley Jr., Teresa Gallagher, Dan Russell'
@@ -37020,7 +37020,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/49XzINhH4LFsgz7cx6TOPcHUJUL.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/n4XLn0wLCxWSFaQgG6queZlFPKi.jpg',
     videoUrl: '62285',
-    overview: 'Daredevil, Jessica Jones, Luke Cage, and Iron Fist team up to face a common enemy and save New York City. When the shadowy criminal organization known as The Hand emerges with a plan that threatens to destroy the city, these four reluctant heroes are forced to set aside their differences and unite — for the first time — as an unlikely team.',
+    overview: 'Daredevil, Jessica Jones, Luke Cage, and Iron Fist team up to face a common enemy and save New York City. When the shadowy criminal organization known as The Hand emerges with a plan that threatens to destroy the city, these four reluctant heroes are forced to set aside their differences and unite â€” for the first time â€” as an unlikely team.',
     director: 'Douglas Petrie, Marco Ramirez',
     cast: [
       'Charlie Cox',
@@ -37268,7 +37268,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/1l7vsAIkqOzrqiPwjO27Cb5QdfJ.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/7j4ug9B6JXVeh5HhQjjPScrdj4Z.jpg',
     videoUrl: '71790',
-    overview: "Following a violent riot in Los Angeles, a decorated LAPD sergeant, Daniel Hondo Harrelson, is tasked with leading a new SWAT unit that better represents the diverse community it protects. Straddling two worlds — as both a Black man from his old neighborhood and the leader of the elite tactical squad tasked with keeping the city safe — Hondo must navigate the razor's edge between duty and loyalty.",
+    overview: "Following a violent riot in Los Angeles, a decorated LAPD sergeant, Daniel Hondo Harrelson, is tasked with leading a new SWAT unit that better represents the diverse community it protects. Straddling two worlds â€” as both a Black man from his old neighborhood and the leader of the elite tactical squad tasked with keeping the city safe â€” Hondo must navigate the razor's edge between duty and loyalty.",
     director: 'Aaron Rahsaan Thomas, Shawn Ryan',
     cast: [
       'Shemar Moore, Alex Russell, Lina Esco, Kenny Johnson, Jay Harrington, David Lim, Anna Enger Ritch'
@@ -37986,7 +37986,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/4l6KD9HhtD6nCDEfg10Lp6C6zah.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/xHCfWGlxwbtMeeOnTvxUCZRGnkk.jpg',
     videoUrl: '62127',
-    overview: "Danny Rand resurfaces fifteen years after being presumed dead, returning to New York City to reclaim his family's company and identity. Possessing incredible martial arts skills and the mystical power of the Iron Fist, Danny fights against the criminal element corrupting his family's legacy — and his own life — as he tries to reconcile his past with the life he's returned to.",
+    overview: "Danny Rand resurfaces fifteen years after being presumed dead, returning to New York City to reclaim his family's company and identity. Possessing incredible martial arts skills and the mystical power of the Iron Fist, Danny fights against the criminal element corrupting his family's legacy â€” and his own life â€” as he tries to reconcile his past with the life he's returned to.",
     director: 'Scott Buck',
     cast: [
       'Finn Jones',
@@ -39261,11 +39261,11 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/k5Qg5rgPoKdh3yTJJrLtyoyYGwC.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/baz06JeHeGjq45auOFEiw1K7zVj.jpg',
     videoUrl: '1421',
-    overview: `Modern Family revolves around three different types of families (nuclear, step- and same-sex) living in the Los Angeles area, who are interrelated through Jay Pritchett and his children, Claire Dunphy (née Pritchett) and Mitchell Pritchett. Patriarch Jay is remarried to a much younger woman, Gloria Delgado Pritchett (née Ramirez), a passionate Colombian with whom he has an infant son, Fulgencio (Joe) Pritchett, and a son from Gloria's previous marriage, Manny Delgado.Jay's daughter Claire was a homemaker, but has returned to the business world. She is now the chief executive of her father's previous business, Pritchett's Closets and Blinds. She is married to Phil Dunphy, a realtor and self-professed "cool dad". They have three children: Haley Dunphy, a stereotypical ditzy teenage girl; Alex Dunphy, a nerdy, smart middle child; and Luke Dunphy, the off-beat only son.Jay's lawyer son Mitchell and his husband Cameron Tucker have one daughter, Lily Tucker-Pritchett. As the name suggests, this family represents a modern-day family, and episodes are comically based on situations which many families encounter in real life.`,
+    overview: `Modern Family revolves around three different types of families (nuclear, step- and same-sex) living in the Los Angeles area, who are interrelated through Jay Pritchett and his children, Claire Dunphy (nÃ©e Pritchett) and Mitchell Pritchett. Patriarch Jay is remarried to a much younger woman, Gloria Delgado Pritchett (nÃ©e Ramirez), a passionate Colombian with whom he has an infant son, Fulgencio (Joe) Pritchett, and a son from Gloria's previous marriage, Manny Delgado.Jay's daughter Claire was a homemaker, but has returned to the business world. She is now the chief executive of her father's previous business, Pritchett's Closets and Blinds. She is married to Phil Dunphy, a realtor and self-professed "cool dad". They have three children: Haley Dunphy, a stereotypical ditzy teenage girl; Alex Dunphy, a nerdy, smart middle child; and Luke Dunphy, the off-beat only son.Jay's lawyer son Mitchell and his husband Cameron Tucker have one daughter, Lily Tucker-Pritchett. As the name suggests, this family represents a modern-day family, and episodes are comically based on situations which many families encounter in real life.`,
     director: 'Christopher Lloyd, Steven Levitan',
     cast: [
       "Ed O'Neill",
-      'Sofía Vergara',
+      'SofÃ­a Vergara',
       'Julie Bowen',
       'Ty Burrell',
       'Jesse Tyler Ferguson',
@@ -46387,7 +46387,7 @@ window._SERIES_DATA = [
     poster: 'https://image.tmdb.org/t/p/original/9SQaM6Yubh6bpkHBAsbpcvUCfh8.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/cyH8Ni1OSMtBbloEmI9eE69Xi7j.jpg',
     videoUrl: '47035',
-    overview: "Uncle Grandpa is everyone's uncle and grandpa at the same time — a magical, energetic being who travels the world in his living, talking RV to help kids with their everyday problems. Accompanied by an eccentric crew including a giant talking cat named Giant Realistic Flying Tiger and Pizza Steve, Uncle Grandpa's chaotic, surreal solutions rarely go as planned, but somehow always work out in the end.",
+    overview: "Uncle Grandpa is everyone's uncle and grandpa at the same time â€” a magical, energetic being who travels the world in his living, talking RV to help kids with their everyday problems. Accompanied by an eccentric crew including a giant talking cat named Giant Realistic Flying Tiger and Pizza Steve, Uncle Grandpa's chaotic, surreal solutions rarely go as planned, but somehow always work out in the end.",
     director: 'Pete Browngardt',
     cast: [
       'Pete Browngardt',
@@ -47053,7 +47053,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/8zRstOgaipruJPlsHK2diMx4lPy.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/e5YSF0Inv9eL77jv2WQtNOOB3Bg.jpg',
     videoUrl: '61175',
-    overview: "Steven Universe, a young boy with magical powers inherited from his mother, lives with three magical guardians — the Crystal Gems — who protect their small town from otherworldly threats. As Steven learns to control his emerging abilities and uncover the truth about his mother's mysterious past, the series unfolds into a rich, emotionally layered saga about identity, family, love, and the cosmic legacy he's inherited.",
+    overview: "Steven Universe, a young boy with magical powers inherited from his mother, lives with three magical guardians â€” the Crystal Gems â€” who protect their small town from otherworldly threats. As Steven learns to control his emerging abilities and uncover the truth about his mother's mysterious past, the series unfolds into a rich, emotionally layered saga about identity, family, love, and the cosmic legacy he's inherited.",
     director: 'Rebecca Sugar',
     cast: [
       'Zach Callison',
@@ -47725,7 +47725,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/WtYiQk6432J0jCi61UQzLFtCCX.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/e5UakgeJsTBKtjxEURpg6hcohqX.jpg',
     videoUrl: '94280',
-    overview: "With the war against Homeworld won and Earth finally safe, Steven Universe should be able to relax into a peaceful new chapter of his life. Instead, unresolved trauma from his years of saving the world begins to surface, forcing him to confront the emotional toll of his upbringing and figure out who he is outside of being everyone's hero — while also dealing with a whole new set of Gem-related crises along the way.",
+    overview: "With the war against Homeworld won and Earth finally safe, Steven Universe should be able to relax into a peaceful new chapter of his life. Instead, unresolved trauma from his years of saving the world begins to surface, forcing him to confront the emotional toll of his upbringing and figure out who he is outside of being everyone's hero â€” while also dealing with a whole new set of Gem-related crises along the way.",
     director: 'Rebecca Sugar',
     cast: [
       'Zach Callison, Michaela Dietz, Estelle, Deedee Magno Hall, Shelby Rabara'
@@ -48510,7 +48510,7 @@ window._SERIES_DATA = [
     poster: 'https://image.tmdb.org/t/p/original/aAI6McsjhwggmGdZwOylXraoil.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/muqoT0YgutI02txKRDV8FmuLF9E.jpg',
     videoUrl: '48866',
-    overview: "100 years in the future, when the Earth has been abandoned due to radioactivity, the last surviving humans live on an ark orbiting the planet — but the ark won't last forever. So the repressive regime picks 100 expendable juvenile delinquents to send down to Earth to see if the planet is still habitable.",
+    overview: "100 years in the future, when the Earth has been abandoned due to radioactivity, the last surviving humans live on an ark orbiting the planet â€” but the ark won't last forever. So the repressive regime picks 100 expendable juvenile delinquents to send down to Earth to see if the planet is still habitable.",
     director: 'Jason Rothenberg',
     cast: [
       'Eliza Taylor, Marie Avgeropoulos, Bob Morley, Lindsey Morgan, Richard Harmon'
@@ -49532,7 +49532,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/zLf4ASzJklyxLDzcbH2IzEV2Es2.jpg',
     videoUrl: '110642',
     overview: 'Leon Kennedy find evidence of cyber-terror plot inside White House, Claire Redfield investigate mysterious outbreak at refugee camp near US-Mexico border. Two thread tangle, expose deep conspiracy tied to bioweapon research.',
-    director: 'Eiichirō Hasumi',
+    director: 'EiichirÅ Hasumi',
     cast: [
       'Nick Apostolides (Leon Kennedy), Stephanie Panisello (Claire Redfield), Ben Diskin (Jason), Matthew Mercer (Patrick Wilcox)'
     ],
@@ -49578,7 +49578,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/uWpG7GqfKGQqX4YMAo3nv5OrglV.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/adZ9ldSlkGfLfsHNbh37ZThCcgU.jpg',
     videoUrl: '456',
-    overview: 'Homer, dumb but loveable dad, wife Marge, three kid — Bart, Lisa, Maggie — live wacky life in Springfield. Satire everyday American life, poke fun at family, work, society, pop culture, still going strong decade after decade.',
+    overview: 'Homer, dumb but loveable dad, wife Marge, three kid â€” Bart, Lisa, Maggie â€” live wacky life in Springfield. Satire everyday American life, poke fun at family, work, society, pop culture, still going strong decade after decade.',
     director: ["James L.Brooks", "Matt Groening", "Sam Simon"],
     cast: [
       'Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith, Hank Azaria, Harry Shearer'
@@ -52960,7 +52960,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 12,
-            title: '¡The Fall Guy-Yi-Yi!'
+            title: 'Â¡The Fall Guy-Yi-Yi!'
           },
           {
             episode: 13,
@@ -53174,7 +53174,7 @@ window._SERIES_DATA = [
           { episode: 3, title: 'A Wanted (Inhu)man' },
           { episode: 4, title: 'Devils You Know' },
           { episode: 5, title: '4,722 Hours' },
-          { episode: 6, title: 'Among Us Hide…' },
+          { episode: 6, title: 'Among Us Hideâ€¦' },
           { episode: 7, title: 'Chaos Theory' },
           { episode: 8, title: 'Many Heads, One Tale' },
           { episode: 9, title: 'Closure' },
@@ -53240,7 +53240,7 @@ window._SERIES_DATA = [
           { episode: 15, title: 'Rise and Shine' },
           { episode: 16, title: 'Inside Voices' },
           { episode: 17, title: 'The Honeymoon' },
-          { episode: 18, title: 'All Roads Lead…' },
+          { episode: 18, title: 'All Roads Leadâ€¦' },
           { episode: 19, title: 'Option Two' },
           { episode: 20, title: 'The One Who Will Save Us All' },
           { episode: 21, title: 'The Force of Gravity' },
@@ -53381,13 +53381,13 @@ window._SERIES_DATA = [
           { episode: 1, title: "To Me, My X-Men" },
           { episode: 2, title: "Mutant Liberation Begins" },
           { episode: 3, title: "Fire Made Flesh" },
-          { episode: 4, title: "Motendo / Lifedeath – Part 1" },
+          { episode: 4, title: "Motendo / Lifedeath â€“ Part 1" },
           { episode: 5, title: "Remember It" },
-          { episode: 6, title: "Lifedeath – Part 2" },
+          { episode: 6, title: "Lifedeath â€“ Part 2" },
           { episode: 7, title: "Bright Eyes" },
-          { episode: 8, title: "Tolerance is Extinction – Part 1" },
-          { episode: 9, title: "Tolerance is Extinction – Part 2" },
-          { episode: 10, title: "Tolerance is Extinction – Part 3" }
+          { episode: 8, title: "Tolerance is Extinction â€“ Part 1" },
+          { episode: 9, title: "Tolerance is Extinction â€“ Part 2" },
+          { episode: 10, title: "Tolerance is Extinction â€“ Part 3" }
         ]
       },
       {
@@ -53452,7 +53452,7 @@ window._SERIES_DATA = [
     videoUrl: "111110",
     overview: "Live action show based on legendary manga. Young stretchy boy Monkey D. Luffy set sail to assemble pirate crew. Together Straw Hat crew search dangerous ocean for grand treasure left by Gold Roger so Luffy become King of Pirates.",
     director: "Matt Owens, Steven Maeda",
-    cast: ["Iñaki Godoy, Mackenyu, Emily Rudd, Jacob Romero, Taz Skylar, Vincent Regan, Jeff Ward, Morgan Davies"],
+    cast: ["IÃ±aki Godoy, Mackenyu, Emily Rudd, Jacob Romero, Taz Skylar, Vincent Regan, Jeff Ward, Morgan Davies"],
     trending: false,
     featured: false,
     is4k: true,
