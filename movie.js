@@ -29,8 +29,8 @@ if (window.location.hash.includes("type=recovery")) {
 // ==========================================
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
-let FEATURED_TITLES = ["Batman: Knightfall Part 1: Knightfall", "Mutiny", "Reacher", "Lanterns", "Lioness","Spider-Man: Brand New Day", "The Last Sunrise", "The Odyssey", "Obsession", "The Last House", "Silo"];
-let TOP_10_TRENDING_TODAY = ["Motor City",""Mutiny", "Reacher", "Batman: Knightfall Part 1: Knightfall","The Last Sunrise","Spider-Man: Brand New Day", "Lanterns", "The Odyssey", "The Odyssey", "Motor City", "Toy Story 5", "Obsession"];
+let FEATURED_TITLES = ["Batman: Knightfall Part 1: Knightfall", "Mutiny", "Reacher", "Lanterns", "Lioness", "Spider-Man: Brand New Day", "The Last Sunrise", "The Odyssey", "Obsession", "The Last House", "Silo"];
+let TOP_10_TRENDING_TODAY = ["Motor City", "Mutiny", "Reacher", "Batman: Knightfall Part 1: Knightfall", "The Last Sunrise", "Spider-Man: Brand New Day", "Lanterns", "The Odyssey", "The Odyssey", "Motor City", "Toy Story 5", "Obsession"];
 let TRENDING_THIS_WEEK_MOVIES = ["Batman: Knightfall Part 1: Knightfall", "Mutiny", "Spider-Man: Brand New Day", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Minions & Monsters", "The Last House", "Disclosure Day", "The Invite", "The End of Oak Street", "Backrooms", "Camp Rock 3", "Evil Dead Burn", "Project Hail Mary", "Supergirl"]; // Add titles here for 'Trending Movies This Week'
 let TRENDING_THIS_WEEK_SERIES = ["Lanterns", "Reacher", "Lucky", "Silo", "One Piece", "Ted Lasso", "X-Men '97", "Lioness", "Outer Banks"]; // Add titles here for 'Trending Series This Week'
 const POPULAR_MOVIES = ["Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters", "The Invite", "Spider-Man: No Way Home", "The End of Oak Street", "Disclosure Day", "Camp Rock 3", "The Last House", "Michael", "Project Hail Mary"]; // Add titles here for 'Popular Movie'
@@ -650,19 +650,19 @@ async function renderCarousels() {
 
   const tracks = Object.keys(shelfMap);
   let chunkStartTime = performance.now();
-  
+
   for (let i = 0; i < tracks.length; i++) {
     const trackId = tracks[i];
     const track = document.getElementById(trackId);
     if (!track) continue;
-    
+
     // Time-slicing: Only yield if we've blocked the thread for > 40ms.
     // This makes Desktop lightning fast (no yielding) while saving Mobile from TBT penalties!
     if (performance.now() - chunkStartTime > 40) {
       await new Promise(resolve => setTimeout(resolve, 0));
       chunkStartTime = performance.now();
     }
-    
+
     const movieList = shelfMap[trackId];
     if (trackId === "top10Track") {
       track.innerHTML = movieList.map((movie, index) => createMovieCardHTML(movie, index + 1, true)).join("");
@@ -4035,10 +4035,10 @@ function updateIframeServer() {
       }
 
       const selected = serverSelect.value;
-      
+
       let mappedSeason = data.season;
       let mappedEpisode = data.episode;
-      
+
       // Fix Bleach episode mapping for TMDB-based servers
       if (String(data.id) === "30984" || String(data.id) === "tt0436992" || String(data.parentId) === "Bleach") {
         const bleachSeasons = [20, 21, 22, 28, 18, 22, 20, 16, 22, 16, 7, 17, 36, 51, 26, 24];
