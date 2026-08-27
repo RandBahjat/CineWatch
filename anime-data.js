@@ -6,7 +6,7 @@ window._ANIME_DATA = [
     isAnime: true,
     year: 2015,
     rating: 8.6,
-    age: "TV-14",
+    age: "TV-PG",
     duration: "24m",
     genres: [
       "Animation",
