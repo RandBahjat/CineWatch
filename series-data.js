@@ -6,11 +6,11 @@ window._SERIES_DATA = [
   {
     title: 'Shameless',
     type: 'series',
+    year: '2011',
     rating: 8.5,
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/ifo31fMWLmyOVpdak9K0kY4jldQ.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/8A071YZoKIzoXt4t6aPWEyyuoxw.jpg',
     genres: ['Drama', 'Comedy'],
-    year: '2011',
     duration: '45m',
     ageRating: 'TV-MA',
     overview: "Chicagoan Frank Gallagher is the proud single dad of six smart, industrious, independent kids, who without him would be... perhaps better off. When Frank's not at the bar spending what little money they have, he's passed out on the floor. But the kids have found ways to grow up in spite of him.",
