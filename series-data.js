@@ -53281,5 +53281,210 @@ window._SERIES_DATA = [
       }
     ]
   },
-
+ {
+    title: 'Shameless',
+    type: 'series',
+    year: '2011',
+    ageRating: 'TV-MA',
+    rating: 8.5,
+    poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/ifo31fMWLmyOVpdak9K0kY4jldQ.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/8A071YZoKIzoXt4t6aPWEyyuoxw.jpg',
+    genres: ['Drama', 'Comedy'],
+    duration: '45m',
+    videoUrl:"34307",
+    overview: "Chicagoan Frank Gallagher is the proud single dad of six smart, industrious, independent kids, who without him would be... perhaps better off. When Frank's not at the bar spending what little money they have, he's passed out on the floor. But the kids have found ways to grow up in spite of him.",
+    director: 'John Wells',
+    cast: ['William H. Macy', 'Emmy Rossum', 'Jeremy Allen White', 'Ethan Cutkosky', 'Shanola Hampton', 'Steve Howey', 'Emma Kenney', 'Cameron Monaghan', 'Noel Fisher'],
+            seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: 'Pilot' },
+          { episode: 2, title: 'Frank the Plank' },
+          { episode: 3, title: 'Aunt Ginger' },
+          { episode: 4, title: 'Casey Casden' },
+          { episode: 5, title: 'Three Boys' },
+          { episode: 6, title: 'Killer Carl' },
+          { episode: 7, title: 'Frank Gallagher: Loving Husband, Devoted Father' },
+          { episode: 8, title: 'It\'s Time to Kill the Turtle' },
+          { episode: 9, title: 'But at Last Came a Knock' },
+          { episode: 10, title: 'Nana Gallagher Had an Affair' },
+          { episode: 11, title: 'Daddyz Girl' },
+          { episode: 12, title: 'Father Frank, Full of Grace' }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: 'Summertime' },
+          { episode: 2, title: 'Summer Loving' },
+          { episode: 3, title: 'I\'ll Light a Candle for You Every Day' },
+          { episode: 4, title: 'A Beautiful Mess' },
+          { episode: 5, title: 'Father\'s Day' },
+          { episode: 6, title: 'Can I Have a Mother' },
+          { episode: 7, title: 'A Bottle of Jean Nate' },
+          { episode: 8, title: 'Parenthood' },
+          { episode: 9, title: 'Hurricane Monica' },
+          { episode: 10, title: 'A Great Cause' },
+          { episode: 11, title: 'Just Like the Pilgrims Intended' },
+          { episode: 12, title: 'Fiona Interrupted' }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: 'El Gran Cañon' },
+          { episode: 2, title: 'The American Dream' },
+          { episode: 3, title: 'May I Trim Your Hedges?' },
+          { episode: 4, title: 'The Helpful Gallaghers' },
+          { episode: 5, title: 'The Sins of My Caretaker' },
+          { episode: 6, title: 'Cascading Failures' },
+          { episode: 7, title: 'A Long Way from Home' },
+          { episode: 8, title: 'Where There\'s a Will' },
+          { episode: 9, title: 'Frank the Plumber' },
+          { episode: 10, title: 'Civil Wrongs' },
+          { episode: 11, title: 'Order Room Service' },
+          { episode: 12, title: 'Survival of the Fittest' }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          { episode: 1, title: 'Simple Pleasures' },
+          { episode: 2, title: 'My Oldest Daughter' },
+          { episode: 3, title: 'Like Father, Like Daughter' },
+          { episode: 4, title: 'Strangers on a Train' },
+          { episode: 5, title: 'There\'s the Rub' },
+          { episode: 6, title: 'Iron City' },
+          { episode: 7, title: 'A Jailbird, Invalid, Martyr, Cutter, Retard, and Parasitic Twin' },
+          { episode: 8, title: 'Hope Springs Paternal' },
+          { episode: 9, title: 'The Legend of Bonnie and Carl' },
+          { episode: 10, title: 'Liver, I Hardly Know Her' },
+          { episode: 11, title: 'Emily' },
+          { episode: 12, title: 'Lazarus' }
+        ]
+      },
+      {
+        season: 5,
+        episodes: [
+          { episode: 1, title: 'Milk of the Gods' },
+          { episode: 2, title: 'I\'m the Liver' },
+          { episode: 3, title: 'The Two Lisas' },
+          { episode: 4, title: 'A Night to Remem... Wait, What?' },
+          { episode: 5, title: 'Rite of Passage' },
+          { episode: 6, title: 'Crazy Love' },
+          { episode: 7, title: 'Tell Me You Fucking Need Me' },
+          { episode: 8, title: 'Uncle Carl' },
+          { episode: 9, title: 'Carl\'s First Sentencing' },
+          { episode: 10, title: 'South Side Rules' },
+          { episode: 11, title: 'Drugs Actually' },
+          { episode: 12, title: 'Love Songs (In the Key of Gallagher)' }
+        ]
+      },
+      {
+        season: 6,
+        episodes: [
+          { episode: 1, title: 'I Only Miss Her When I\'m Breathing' },
+          { episode: 2, title: '#AbortionRules' },
+          { episode: 3, title: 'The F Word' },
+          { episode: 4, title: 'Going Once, Going Twice' },
+          { episode: 5, title: 'Refugees' },
+          { episode: 6, title: 'NSFW' },
+          { episode: 7, title: 'Pimp\'s Paradise' },
+          { episode: 8, title: 'Be a Good Boy. Come for Grandma.' },
+          { episode: 9, title: 'A Yurt of One\'s Own' },
+          { episode: 10, title: 'Paradise Lost' },
+          { episode: 11, title: 'Sleep No More' },
+          { episode: 12, title: 'Familia Supra Gallegorious Omnia!' }
+        ]
+      },
+      {
+        season: 7,
+        episodes: [
+          { episode: 1, title: 'Hiraeth' },
+          { episode: 2, title: 'Swipe, Fuck, Leave' },
+          { episode: 3, title: 'Home Sweet Homeless Shelter' },
+          { episode: 4, title: 'I Am a Storm' },
+          { episode: 5, title: 'Own Your Shit' },
+          { episode: 6, title: 'The Defenestration of Frank' },
+          { episode: 7, title: 'You\'ll Never Ever Get a Chicken in Your Whole Entire Life' },
+          { episode: 8, title: 'You Sold Me the Laundromat, Remember?' },
+          { episode: 9, title: 'Ouroboros' },
+          { episode: 10, title: 'Ride or Die' },
+          { episode: 11, title: 'Happily Ever After' },
+          { episode: 12, title: 'Requiem for a Slut' }
+        ]
+      },
+      {
+        season: 8,
+        episodes: [
+          { episode: 1, title: 'We Become What We ... Frank!' },
+          { episode: 2, title: 'Where\'s My Meth?' },
+          { episode: 3, title: 'God Bless Her Rotting Soul' },
+          { episode: 4, title: 'F**k Paying It Forward' },
+          { episode: 5, title: 'The (Mis)Education of Liam Fergus Beircheart Gallagher' },
+          { episode: 6, title: 'Icarus Fell and Rusty Ate Him' },
+          { episode: 7, title: 'Occupy Fiona' },
+          { episode: 8, title: 'Frank\'s Northern Southern Express' },
+          { episode: 9, title: 'The Fugees' },
+          { episode: 10, title: 'Church of Gay Jesus' },
+          { episode: 11, title: 'A Gallagher Pedicure' },
+          { episode: 12, title: 'Sleepwalking' }
+        ]
+      },
+      {
+        season: 9,
+        episodes: [
+          { episode: 1, title: 'Are You There Shim? It\'s Me, Ian' },
+          { episode: 2, title: 'Mo White!' },
+          { episode: 3, title: 'Weirdo Gallagher Vortex' },
+          { episode: 4, title: 'Do Right, Vote White!' },
+          { episode: 5, title: 'Black Haired Ginger' },
+          { episode: 6, title: 'Face It, You\'re Gorgeous' },
+          { episode: 7, title: 'Down Like the Titanic' },
+          { episode: 8, title: 'The Apple Doesn\'t Fall Far from the Alibi' },
+          { episode: 9, title: 'Boooooooooooone!' },
+          { episode: 10, title: 'Los Diablos!' },
+          { episode: 11, title: 'The Hobo Games' },
+          { episode: 12, title: 'You\'ll Know the Bottom When You Hit It' },
+          { episode: 13, title: 'Lost' },
+          { episode: 14, title: 'Found' }
+        ]
+      },
+      {
+        season: 10,
+        episodes: [
+          { episode: 1, title: 'We Few, We Lucky Few, We Band of Gallaghers!' },
+          { episode: 2, title: 'Sleep Well My Prince for Tomorrow You Shall Be King' },
+          { episode: 3, title: 'Which America?' },
+          { episode: 4, title: 'A Little Gallagher Goes a Long Way' },
+          { episode: 5, title: 'Sparky' },
+          { episode: 6, title: 'Adios Gringos' },
+          { episode: 7, title: 'Citizen Carl' },
+          { episode: 8, title: 'Debbie Might Be a Prostitute' },
+          { episode: 9, title: 'O Captain, My Captain' },
+          { episode: 10, title: 'Now Leaving Illinois' },
+          { episode: 11, title: 'Location, Location, Location' },
+          { episode: 12, title: '"Gallavich!"' }
+        ]
+      },
+      {
+        season: 11,
+        episodes: [
+          { episode: 1, title: 'This is Chicago!' },
+          { episode: 2, title: 'Go Home, Gentrifier!' },
+          { episode: 3, title: 'Frances Francis Franny Frank' },
+          { episode: 4, title: 'NIMBY' },
+          { episode: 5, title: 'Slaughter' },
+          { episode: 6, title: 'Do Not Go Gentle Into That Good....Eh, Screw It' },
+          { episode: 7, title: 'Two at a Biker Bar, One in the Lake' },
+          { episode: 8, title: 'Cancelled' },
+          { episode: 9, title: 'Survivors' },
+          { episode: 10, title: 'DNR' },
+          { episode: 11, title: 'The Fickle Lady is Calling it Quits' },
+          { episode: 12, title: 'Father Frank, Full of Grace' }
+        ]
+      }
+    ]
+  },
 ];
