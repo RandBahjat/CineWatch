@@ -20,7 +20,7 @@ window._ANIME_DATA = [
     anilistId: 101922,
     animeSlug: "demon-slayer",
     overview: "Tanjiro Kamado, kind-heart boy, come home find family slaughter by demon, only sister Nezuko survive, now turn demon herself. Join secret Demon Slayer Corps, train hard, hunt demon, seek cure bring sister back human.",
-    director: "Haruo Sotozaki",
+    director: "Koyoharu Gotouge",
     cast: [
       "Natsuki Hanae",
       "Akari Kito",
