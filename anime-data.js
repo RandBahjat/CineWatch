@@ -5,7 +5,7 @@ window._ANIME_DATA = [
     type: "TV Show",
     isAnime: true,
     year: 2020,
-    rating: 8.6,
+    rating: 8.5,
     age: "TV-MA",
     duration: "24m",
     genres: [
