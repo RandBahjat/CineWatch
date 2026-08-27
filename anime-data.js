@@ -20,7 +20,7 @@ window._ANIME_DATA = [
     anilistId: 11061,
     animeSlug: "hunter-x-hunter-2011",
     overview: "Gon Freecss, young boy, chase dream become Hunter like father, elite adventurer explore world, hunt treasure, danger, truth. Meet loyal friend along way, face brutal trial, deadly enemy push him past limit again, again.",
-    director: "Hiroshi Koujina",
+    director: "Yoshihiro Togashi",
     cast: [
       "Megumi Han",
       "Mariya Ise",
