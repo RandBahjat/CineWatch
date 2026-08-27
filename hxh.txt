@@ -1,0 +1,630 @@
+  {
+    title: "Hunter x Hunter",
+    type: "TV Show",
+    isAnime: true,
+    year: 2011,
+    rating: 9.0,
+    age: "TV-14",
+    duration: "24m",
+    genres: [
+      "Animation",
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1QepByFcxuwzVOzM5nlxU34u8wS.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/uc8v0m8aYgO5Ff8uE7d1L0TksYx.jpg",
+    videoUrl: "46298",
+    anilistId: 11061,
+    animeSlug: "hunter-x-hunter-2011",
+    overview: "Twelve-year-old Gon Freecss one day discovers that the father he had always been told was dead was alive and well. His Father, Ging, is a Hunter—a member of society's elite with a license to go anywhere or do almost anything. Gon, determined to follow in his father's footsteps, decides to take the Hunter Examination and eventually find his father to prove himself as a Hunter in his own right.",
+    director: "Hiroshi Koujina",
+    cast: [
+      "Megumi Han",
+      "Mariya Ise",
+      "Keiji Fujiwara",
+      "Miyuki Sawashiro"
+    ],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Departure × and × Friends"
+          },
+          {
+            episode: 2,
+            title: "Test × of × Tests"
+          },
+          {
+            episode: 3,
+            title: "Rivals × in × Survival"
+          },
+          {
+            episode: 4,
+            title: "Hope × and × Ambition"
+          },
+          {
+            episode: 5,
+            title: "Hisoka × Is × Sneaky"
+          },
+          {
+            episode: 6,
+            title: "A × Surprising × Challenge"
+          },
+          {
+            episode: 7,
+            title: "Showdown × on × The Airship"
+          },
+          {
+            episode: 8,
+            title: "Solution × Is × Majority Rules?"
+          },
+          {
+            episode: 9,
+            title: "Beware × of × Prisoners"
+          },
+          {
+            episode: 10,
+            title: "Trick × to × The Trick"
+          },
+          {
+            episode: 11,
+            title: "Trouble × with × The Gamble"
+          },
+          {
+            episode: 12,
+            title: "Last Test × of × Resolve"
+          },
+          {
+            episode: 13,
+            title: "Letter × from × Gon"
+          },
+          {
+            episode: 14,
+            title: "Hit × the × Target"
+          },
+          {
+            episode: 15,
+            title: "Explosion × of × Deception"
+          },
+          {
+            episode: 16,
+            title: "Defeat × and × Disgrace"
+          },
+          {
+            episode: 17,
+            title: "アナ×デ×ワナ"
+          },
+          {
+            episode: 18,
+            title: "タイセツ×ナ×メンセツ"
+          },
+          {
+            episode: 19,
+            title: "カテナイ×ガ×マケナイ"
+          },
+          {
+            episode: 20,
+            title: "フカカイ×ナ×テンカイ"
+          },
+          {
+            episode: 21,
+            title: "キョウダイ×ノ×モンダイ"
+          },
+          {
+            episode: 22,
+            title: "キケン×ナ×バンケン"
+          },
+          {
+            episode: 23,
+            title: "バンニン×ノ×セキニン"
+          },
+          {
+            episode: 24,
+            title: "ゾルディック×ノ×カゾク"
+          },
+          {
+            episode: 25,
+            title: "ミエナイ×ト×アエナイ"
+          },
+          {
+            episode: 26,
+            title: "アレカラ×ト×ソレカラ"
+          },
+          {
+            episode: 27,
+            title: "トウギジョウ×ニ×トウジョウ"
+          },
+          {
+            episode: 28,
+            title: "ネン×ト×ネン"
+          },
+          {
+            episode: 29,
+            title: "カクセイ×ト×カノウセイ"
+          },
+          {
+            episode: 30,
+            title: "ゲキトウ×ト×カットウ"
+          },
+          {
+            episode: 31,
+            title: "インネン×ト×シュウネン"
+          },
+          {
+            episode: 32,
+            title: "ドッキリ×ナ×ショウリ"
+          },
+          {
+            episode: 33,
+            title: "ケイハク×ナ×キョウハク"
+          },
+          {
+            episode: 34,
+            title: "ジツリョク×デ×セツジョク"
+          },
+          {
+            episode: 35,
+            title: "セイカク×ナ×ゴウカク"
+          },
+          {
+            episode: 36,
+            title: "オオキナカリ×ト×チイサナケリ"
+          },
+          {
+            episode: 37,
+            title: "ジン×ト×ゴン"
+          },
+          {
+            episode: 38,
+            title: "オヤジ×ノ×ヘンジ"
+          },
+          {
+            episode: 39,
+            title: "ネガイ×ト×チカイ"
+          },
+          {
+            episode: 40,
+            title: "ノウリョクシャ×ハ×キョウリョクシャ？"
+          },
+          {
+            episode: 41,
+            title: "ゴウケツ×ノ×シュウケツ"
+          },
+          {
+            episode: 42,
+            title: "マモル×ト×セメル"
+          },
+          {
+            episode: 43,
+            title: "ショウゲキ×ノ×サンゲキ"
+          },
+          {
+            episode: 44,
+            title: "ゲキセン×ノ×フクセン"
+          },
+          {
+            episode: 45,
+            title: "コウソク×ト×ヤクソク"
+          },
+          {
+            episode: 46,
+            title: "オウモノ×ト×マツモノ"
+          },
+          {
+            episode: 47,
+            title: "セイヤク×ト×セイヤク"
+          },
+          {
+            episode: 48,
+            title: "メキキ×ノ×キキメ"
+          },
+          {
+            episode: 49,
+            title: "ツイセキ×デ×ブンセキ"
+          },
+          {
+            episode: 50,
+            title: "ナカマ×ト×カタナ"
+          },
+          {
+            episode: 51,
+            title: "ヒジョウ×ノ×センジョウ"
+          },
+          {
+            episode: 52,
+            title: "シュウゲキ×ト×ショウゲキ"
+          },
+          {
+            episode: 53,
+            title: "フェイク×デ×サイク"
+          },
+          {
+            episode: 54,
+            title: "ウラナイ×ガ×アタラナイ？"
+          },
+          {
+            episode: 55,
+            title: "ナカマ×ト×イカサマ"
+          },
+          {
+            episode: 56,
+            title: "サイアイ×ト×サイアク"
+          },
+          {
+            episode: 57,
+            title: "センテ×ト×オキテ"
+          },
+          {
+            episode: 58,
+            title: "ヒキギワ×ノ×ヒキガネ"
+          },
+          {
+            episode: 59,
+            title: "セリ×ト×アセリ"
+          },
+          {
+            episode: 60,
+            title: "キマリ×ト×ハジマリ"
+          },
+          {
+            episode: 61,
+            title: "カンユウ×ト×シンユウ"
+          },
+          {
+            episode: 62,
+            title: "ゲンジツ？×ト×ゲンセキ"
+          },
+          {
+            episode: 63,
+            title: "シショウ×ハ×ヒジョウ？"
+          },
+          {
+            episode: 64,
+            title: "キョウカ×ト×キョウカツ"
+          },
+          {
+            episode: 65,
+            title: "ジャケン×ト×ジャンケン"
+          },
+          {
+            episode: 66,
+            title: "コウリャク×ト×サクリャク"
+          },
+          {
+            episode: 67,
+            title: "15×ト×15"
+          },
+          {
+            episode: 68,
+            title: "カイゾク×ト×スイソク"
+          },
+          {
+            episode: 69,
+            title: "タイケツ×デ×ネッケツ"
+          },
+          {
+            episode: 70,
+            title: "コンジョウ×ト×ユウジョウ"
+          },
+          {
+            episode: 71,
+            title: "カケヒキ×ト×トリヒキ"
+          },
+          {
+            episode: 72,
+            title: "チェイス×デ×チャンス"
+          },
+          {
+            episode: 73,
+            title: "キョウキ×ト×ショウキ"
+          },
+          {
+            episode: 74,
+            title: "ショウシャ×ト×ハイシャ"
+          },
+          {
+            episode: 75,
+            title: "ジンノトモ×ト×シンノトモ"
+          },
+          {
+            episode: 76,
+            title: "サイカイ×ト×リカイ"
+          },
+          {
+            episode: 77,
+            title: "フアン×ト×シュツゲン"
+          },
+          {
+            episode: 78,
+            title: "キュウソク×ナ×ゾウショク"
+          },
+          {
+            episode: 79,
+            title: "NG×ナ×NGL"
+          },
+          {
+            episode: 80,
+            title: "ゴクアク×ト×サイアク"
+          },
+          {
+            episode: 81,
+            title: "タタカイ×ノ×カイシ"
+          },
+          {
+            episode: 82,
+            title: "カイト×ノ×スロット"
+          },
+          {
+            episode: 83,
+            title: "カンカ×シテ×シンカ"
+          },
+          {
+            episode: 84,
+            title: "サダメ×ノ×メザメ"
+          },
+          {
+            episode: 85,
+            title: "ヒカリ×ト×カゲ"
+          },
+          {
+            episode: 86,
+            title: "チカイ×ト×サイカイ"
+          },
+          {
+            episode: 87,
+            title: "ケットウ×シテ×トウソウ"
+          },
+          {
+            episode: 88,
+            title: "ジャンケン×ト×ジャクテン"
+          },
+          {
+            episode: 89,
+            title: "ヤサシサ×ト×ツヨサ"
+          },
+          {
+            episode: 90,
+            title: "リソク×ト×ジュバク"
+          },
+          {
+            episode: 91,
+            title: "キョウシャ×ト×ジャクシャ"
+          },
+          {
+            episode: 92,
+            title: "ヒトツノネガイ×ト×フタツノチカイ"
+          },
+          {
+            episode: 93,
+            title: "パーム×ト×デート"
+          },
+          {
+            episode: 94,
+            title: "トモダチ×ト×タビダチ"
+          },
+          {
+            episode: 95,
+            title: "ウラミ×ト×スゴミ"
+          },
+          {
+            episode: 96,
+            title: "ムホウ×ナ×ホーム"
+          },
+          {
+            episode: 97,
+            title: "ゲキトウ×デ×ゲキメツ"
+          },
+          {
+            episode: 98,
+            title: "センニュウ×ト×センベツ"
+          },
+          {
+            episode: 99,
+            title: "コンビネーション×ト×エボリューション"
+          },
+          {
+            episode: 100,
+            title: "ツイセキ×ニハ×ツイゲキ"
+          },
+          {
+            episode: 101,
+            title: "イカルゴ×ト×イカズチ"
+          },
+          {
+            episode: 102,
+            title: "ノウリョク×ト×タイキョク"
+          },
+          {
+            episode: 103,
+            title: "ツミ×ト×ヨミ"
+          },
+          {
+            episode: 104,
+            title: "マヨイ×ト×トマドイ"
+          },
+          {
+            episode: 105,
+            title: "カクゴ×ト×カクセイ"
+          },
+          {
+            episode: 106,
+            title: "ノヴ×ト×モラウ"
+          },
+          {
+            episode: 107,
+            title: "リターン×ト×リタイア"
+          },
+          {
+            episode: 108,
+            title: "コムギ×ノ×グンギ"
+          },
+          {
+            episode: 109,
+            title: "コウシンカイシ×デ×コウドウカイシ"
+          },
+          {
+            episode: 110,
+            title: "コンワク×ト×オモワク"
+          },
+          {
+            episode: 111,
+            title: "トツニュウ×シテ×シンニュウ"
+          },
+          {
+            episode: 112,
+            title: "カイブツ×ト×カイブツ"
+          },
+          {
+            episode: 113,
+            title: "ムシ×ダケド×カシ"
+          },
+          {
+            episode: 114,
+            title: "ブンダン×ト×ゴサン"
+          },
+          {
+            episode: 115,
+            title: "ギム×ト×ギモン"
+          },
+          {
+            episode: 116,
+            title: "フクシュウ×ト×シュウフク"
+          },
+          {
+            episode: 117,
+            title: "ブジョク×ニハ×セツジョク"
+          },
+          {
+            episode: 118,
+            title: "イツワリ×ノ×イカリ"
+          },
+          {
+            episode: 119,
+            title: "ツヨ×イカ×ヨワ×イカ"
+          },
+          {
+            episode: 120,
+            title: "ニセモノ×ト×ホンモノ"
+          },
+          {
+            episode: 121,
+            title: "ハイボク×ト×メンボク"
+          },
+          {
+            episode: 122,
+            title: "タテマエ×ト×ナマエ"
+          },
+          {
+            episode: 123,
+            title: "ムカデ×ト×オモイデ"
+          },
+          {
+            episode: 124,
+            title: "ケッカイ×ト×カクセイ"
+          },
+          {
+            episode: 125,
+            title: "ブノツヨミ×ト×ブノキワミ"
+          },
+          {
+            episode: 126,
+            title: "ゼロ×ト×ローズ"
+          },
+          {
+            episode: 127,
+            title: "テキイ×ト×ケツイ"
+          },
+          {
+            episode: 128,
+            title: "ムジョウノヨロコビ×ト×ムショウノアイ"
+          },
+          {
+            episode: 129,
+            title: "ヒョウテキ×ト×モクテキ"
+          },
+          {
+            episode: 130,
+            title: "マホウ×デ×ゼツボウ"
+          },
+          {
+            episode: 131,
+            title: "イカリ×ト×ヒカリ"
+          },
+          {
+            episode: 132,
+            title: "センコウ×ト×ハツドウ"
+          },
+          {
+            episode: 133,
+            title: "セイゾン×ノ×キゲン"
+          },
+          {
+            episode: 134,
+            title: "ヒトコト×ハ×ソノヒト"
+          },
+          {
+            episode: 135,
+            title: "コノヒ×ト×コノシュンカン"
+          },
+          {
+            episode: 136,
+            title: "キキョウ×ト×ホンミョウ"
+          },
+          {
+            episode: 137,
+            title: "ジュウニシン×デ×ギロン"
+          },
+          {
+            episode: 138,
+            title: "オネダリ×ト×オネガイ"
+          },
+          {
+            episode: 139,
+            title: "アルカ×ト×ナニカ"
+          },
+          {
+            episode: 140,
+            title: "サンセン×ト×カイセン"
+          },
+          {
+            episode: 141,
+            title: "テジナシ×ト×シツジ"
+          },
+          {
+            episode: 142,
+            title: "ハリ×ト×カリ"
+          },
+          {
+            episode: 143,
+            title: "ツミ×ト×ツメ"
+          },
+          {
+            episode: 144,
+            title: "ケッサイ×ト×カッサイ"
+          },
+          {
+            episode: 145,
+            title: "カンパイ×ト×サイカイ"
+          },
+          {
+            episode: 146,
+            title: "カイチョウ×ト×カイジョ"
+          },
+          {
+            episode: 147,
+            title: "スクイ×ト×ミライ"
+          },
+          {
+            episode: 148,
+            title: "コレマデ×ト×コレカラ"
+          }
+        ]
+      }
+    ]
+  },
