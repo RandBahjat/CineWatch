@@ -1,4 +1,4 @@
-// CineWatch â€” Series Data
+﻿// CineWatch â€” Series Data
 // Edit this file to add, remove, or reorder TV shows and series.
 // Push to GitHub (or save â€” auto-sync will handle it) for changes to go live.
 
@@ -6,7 +6,7 @@ window._SERIES_DATA = [
   {
     title: 'Shameless',
     type: 'series',
-    poster: 'https://image.tmdb.org/t/p/w500/9bjy9hQhL8yJ8HDFUxtgS69s8Y8.jpg',
+    poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/ifo31fMWLmyOVpdak9K0kY4jldQ.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/jBJWaqmbBrcFnvPGBhoP6kugqDB.jpg',
     rating: 8.0,
     genres: ['Drama', 'Comedy'],
