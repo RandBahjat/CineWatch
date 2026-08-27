@@ -247,7 +247,7 @@ window._MOVIES_DATA = [
       "Drama",
       "Romance"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/a77OcLmarwiBJakOPPC36m58t4L.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/3PWJqDfygN0YNNjWsDUOXclCp3h.jpg",
     backdrop: "https://images3.alphacoders.com/140/thumb-1920-1409079.jpg",
     videoUrl: "1698856",
     overview: "Separated from his magical Power Sword as a child, Prince Adam leads a quiet life on Earth until the weapon guides him back to his home planet of Eternia. Finding his homeland shattered under the tyrannical rule of Skeletor, Adam must team up with Teela and Duncan to claim his true destiny as He-Man and liberate his world.  ",
