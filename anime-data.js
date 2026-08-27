@@ -21,7 +21,7 @@ window._ANIME_DATA = [
     anilistId: 113415,
     animeSlug: "jujutsu-kaisen",
     overview: "Yuji Itadori, ordinary high schooler, swallow cursed finger, become vessel for powerful demon Sukuna to save friend. Pull into secret world of jujutsu sorcerer, battle deadly curse, uncover deep conspiracy tie to Sukuna's ancient past.",
-    director: "Sunghoo Park",
+    director: "Gege Akutami",
     cast: [
       "Junya Enoki",
       "Yuma Uchida",
