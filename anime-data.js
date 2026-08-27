@@ -22,10 +22,7 @@ window._ANIME_DATA = [
     overview: "Gon Freecss, young boy, chase dream become Hunter like father, elite adventurer explore world, hunt treasure, danger, truth. Meet loyal friend along way, face brutal trial, deadly enemy push him past limit again, again.",
     director: "Yoshihiro Togashi",
     cast: [
-      "Megumi Han",
-      "Mariya Ise",
-      "Keiji Fujiwara",
-      "Miyuki Sawashiro"
+      "Megumi Han, Miyu Irino, Mariya Ise, Erica Mendez, Cristina Vee"
     ],
     trending: true,
     featured: false,
