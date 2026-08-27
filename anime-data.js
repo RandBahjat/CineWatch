@@ -20,7 +20,7 @@ window._ANIME_DATA = [
     videoUrl: "95479",
     anilistId: 113415,
     animeSlug: "jujutsu-kaisen",
-    overview: "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.",
+    overview: "Yuji Itadori, ordinary high schooler, swallow cursed finger, become vessel for powerful demon Sukuna to save friend. Pull into secret world of jujutsu sorcerer, battle deadly curse, uncover deep conspiracy tie to Sukuna's ancient past.",
     director: "Sunghoo Park",
     cast: [
       "Junya Enoki",
