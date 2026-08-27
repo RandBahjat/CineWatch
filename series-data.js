@@ -1,4 +1,4 @@
-﻿// CineWatch â€” Series Data
+// CineWatch â€” Series Data
 // Edit this file to add, remove, or reorder TV shows and series.
 // Push to GitHub (or save â€” auto-sync will handle it) for changes to go live.
 
