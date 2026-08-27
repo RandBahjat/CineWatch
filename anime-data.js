@@ -22967,7 +22967,7 @@ window._ANIME_DATA = [
         ]
       }
     ]
-  }
+  },
  {
     title: "Tokyo Ghoul",
     type: "TV Show",
