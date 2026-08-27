@@ -244,7 +244,7 @@ window._MOVIES_DATA = [
     age: "R",
     duration: "1h 46m",
     genres: [
-      "Action",
+      "Drama",
       "Adventure",
       "Fantasy",
       "Sci-Fi"
