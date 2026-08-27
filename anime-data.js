@@ -1,7 +1,6 @@
 ﻿// CineWatch - Anime Data
 window._ANIME_DATA = [
   
-
   {
     title: "One Piece",
     type: "TV Show",
