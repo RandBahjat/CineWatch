@@ -21448,155 +21448,145 @@ window._ANIME_DATA = [
           {
             episode: 24,
             title: "Accomplices"
-          }
-        ]
-      },
-      {
-        season: 2,
-        episodes: [
+          },
           {
-            episode: 1,
+            episode: 25,
             title: "Hidden Inventory"
           },
           {
-            episode: 2,
+            episode: 26,
             title: "Hidden Inventory, Part 2"
           },
           {
-            episode: 3,
+            episode: 27,
             title: "Hidden Inventory, Part 3"
           },
           {
-            episode: 4,
+            episode: 28,
             title: "Hidden Inventory, Part 4"
           },
           {
-            episode: 5,
+            episode: 29,
             title: "Premature Death"
           },
           {
-            episode: 6,
+            episode: 30,
             title: "It's Like That"
           },
           {
-            episode: 7,
+            episode: 31,
             title: "Evening Festival"
           },
           {
-            episode: 8,
+            episode: 32,
             title: "The Shibuya Incident"
           },
           {
-            episode: 9,
+            episode: 33,
             title: "The Shibuya Incident - Gate Open"
           },
           {
-            episode: 10,
+            episode: 34,
             title: "Pandemonium"
           },
           {
-            episode: 11,
+            episode: 35,
             title: "Summon"
           },
           {
-            episode: 12,
+            episode: 36,
             title: "Dull Knife"
           },
           {
-            episode: 13,
+            episode: 37,
             title: "Red Scale"
           },
           {
-            episode: 14,
+            episode: 38,
             title: "Fluctuations"
           },
           {
-            episode: 15,
+            episode: 39,
             title: "Fluctuations II"
           },
           {
-            episode: 16,
+            episode: 40,
             title: "Thunderclap"
           },
           {
-            episode: 17,
+            episode: 41,
             title: "Thunderclap II"
           },
           {
-            episode: 18,
+            episode: 42,
             title: "Right and Wrong"
           },
           {
-            episode: 19,
+            episode: 43,
             title: "Right and Wrong II"
           },
           {
-            episode: 20,
+            episode: 44,
             title: "Right and Wrong III"
           },
           {
-            episode: 21,
+            episode: 45,
             title: "Transformation"
           },
           {
-            episode: 22,
+            episode: 46,
             title: "Transformation II"
           },
           {
-            episode: 23,
+            episode: 47,
             title: "The Shibuya Incident - Gate Closed"
-          }
-        ]
-      },
-      {
-        season: 3,
-        episodes: [
+          },
           {
-            episode: 1,
+            episode: 48,
             title: "Execution"
           },
           {
-            episode: 2,
+            episode: 49,
             title: "One More Time"
           },
           {
-            episode: 3,
+            episode: 50,
             title: "About the Culling Game"
           },
           {
-            episode: 4,
+            episode: 51,
             title: "Perfect Preparation"
           },
           {
-            episode: 5,
+            episode: 52,
             title: "Passion"
           },
           {
-            episode: 6,
+            episode: 53,
             title: "Cog"
           },
           {
-            episode: 7,
+            episode: 54,
             title: "Tokyo Colony No. 1"
           },
           {
-            episode: 8,
+            episode: 55,
             title: "Tokyo Colony No. 1, Part 2"
           },
           {
-            episode: 9,
+            episode: 56,
             title: "Tokyo Colony No. 1, Part 3"
           },
           {
-            episode: 10,
+            episode: 57,
             title: "Tokyo Colony No. 1, Part 4"
           },
           {
-            episode: 11,
+            episode: 58,
             title: "Tokyo Colony No. 1, Part 5"
           },
           {
-            episode: 12,
+            episode: 59,
             title: "Sendai Colony"
           }
         ]
