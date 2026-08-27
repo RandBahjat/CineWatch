@@ -14,7 +14,7 @@ window._ANIME_DATA = [
       "Comedy"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dT10AxJIXVvRwFAew4tt2RhzJrD.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/sMO1v5TUf8GOJHbJieOUHqOSKEi.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/3AXLSxMuqyZt8HyrKKfrcJtkswD.jpg",
     videoUrl: "63639",
     anilistId: 21087,
     animeSlug: "one-punch-man",
