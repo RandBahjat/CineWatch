@@ -1,0 +1,21 @@
+# CineWatch
+
+> A modern streaming platform for Movies, TV Series, and Anime.
+
+## About
+CineWatch is a web application that allows users to browse and stream a wide collection of movies, TV series, and anime. The platform features an intuitive interface with dynamic carousels, genre filtering, search functionality, and a hero section highlighting top content.
+
+## Technical Architecture
+- **Frontend:** Semantic HTML5, Vanilla CSS, and JavaScript.
+- **Data:** Content metadata (movies, series, anime) is loaded dynamically via JavaScript data files.
+- **Streaming:** Integrates with third-party iframe embed providers (e.g., VidSrc, ZXC Stream, Vaplayer).
+- **Features:** "Continue Watching" tracking using local storage, favorites list, detailed modals, and a responsive mobile-first design.
+
+## Navigation & Structure
+- `/index.html`: The main homepage featuring the hero banner, top 10 lists, and genre rows.
+- `/admin.html`: Administrative dashboard for managing content.
+- `/movie.js`: Core frontend logic, UI interactions, modal handling, and streaming integration.
+- `/*-data.js`: Data source files containing the content catalog.
+
+## Purpose
+The primary purpose of this site is entertainment, providing users with a fast, accessible, and seamless viewing experience across multiple media types.
