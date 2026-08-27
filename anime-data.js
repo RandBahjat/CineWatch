@@ -20281,7 +20281,7 @@ window._ANIME_DATA = [
         ]
       }
     ]
-  }
+  },
 
 {
     title: "Attack on Titan",
