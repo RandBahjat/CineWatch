@@ -1,5 +1,6 @@
 ﻿// CineWatch - Anime Data
-window._ANIME_D
+window._ANIME_DATA = [
+
  
   
  
