@@ -1,0 +1,284 @@
+  {
+    title: "JUJUTSU KAISEN",
+    type: "TV Show",
+    isAnime: true,
+    year: 2020,
+    rating: 8.6,
+    age: "TV-MA",
+    duration: "24m",
+    genres: [
+      "Animation",
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/hFWP5HkbVEe40hrptcgHQpSeaUu.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/6K2LdEXv1UymW7hZ3xTtvLzE2Zt.jpg",
+    videoUrl: "95479",
+    anilistId: 113415,
+    animeSlug: "jujutsu-kaisen",
+    overview: "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.",
+    director: "Sunghoo Park",
+    cast: [
+      "Junya Enoki",
+      "Yuma Uchida",
+      "Asami Seto",
+      "Yuichi Nakamura"
+    ],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Ryomen Sukuna"
+          },
+          {
+            episode: 2,
+            title: "For Myself"
+          },
+          {
+            episode: 3,
+            title: "Girl of Steel"
+          },
+          {
+            episode: 4,
+            title: "Curse Womb Must Die"
+          },
+          {
+            episode: 5,
+            title: "Curse Womb Must Die -II-"
+          },
+          {
+            episode: 6,
+            title: "After Rain"
+          },
+          {
+            episode: 7,
+            title: "Assault"
+          },
+          {
+            episode: 8,
+            title: "Boredom"
+          },
+          {
+            episode: 9,
+            title: "Small Fry and Reverse Retribution"
+          },
+          {
+            episode: 10,
+            title: "Idle Transfiguration"
+          },
+          {
+            episode: 11,
+            title: "Narrow-minded"
+          },
+          {
+            episode: 12,
+            title: "To You, Someday"
+          },
+          {
+            episode: 13,
+            title: "Tomorrow"
+          },
+          {
+            episode: 14,
+            title: "Kyoto Sister School Exchange Event - Group Battle 0 -"
+          },
+          {
+            episode: 15,
+            title: "Kyoto Sister School Exchange Event - Group Battle 1 -"
+          },
+          {
+            episode: 16,
+            title: "Kyoto Sister School Exchange Event - Group Battle 2 -"
+          },
+          {
+            episode: 17,
+            title: "Kyoto Sister School Exchange Event - Group Battle 3 -"
+          },
+          {
+            episode: 18,
+            title: "Sage"
+          },
+          {
+            episode: 19,
+            title: "Black Flash"
+          },
+          {
+            episode: 20,
+            title: "Nonstandard"
+          },
+          {
+            episode: 21,
+            title: "Jujutsu Koshien"
+          },
+          {
+            episode: 22,
+            title: "The Origin of Blind Obedience"
+          },
+          {
+            episode: 23,
+            title: "The Origin of Blind Obedience - 2 -"
+          },
+          {
+            episode: 24,
+            title: "Accomplices"
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "Hidden Inventory"
+          },
+          {
+            episode: 2,
+            title: "Hidden Inventory, Part 2"
+          },
+          {
+            episode: 3,
+            title: "Hidden Inventory, Part 3"
+          },
+          {
+            episode: 4,
+            title: "Hidden Inventory, Part 4"
+          },
+          {
+            episode: 5,
+            title: "Premature Death"
+          },
+          {
+            episode: 6,
+            title: "It's Like That"
+          },
+          {
+            episode: 7,
+            title: "Evening Festival"
+          },
+          {
+            episode: 8,
+            title: "The Shibuya Incident"
+          },
+          {
+            episode: 9,
+            title: "The Shibuya Incident - Gate Open"
+          },
+          {
+            episode: 10,
+            title: "Pandemonium"
+          },
+          {
+            episode: 11,
+            title: "Summon"
+          },
+          {
+            episode: 12,
+            title: "Dull Knife"
+          },
+          {
+            episode: 13,
+            title: "Red Scale"
+          },
+          {
+            episode: 14,
+            title: "Fluctuations"
+          },
+          {
+            episode: 15,
+            title: "Fluctuations II"
+          },
+          {
+            episode: 16,
+            title: "Thunderclap"
+          },
+          {
+            episode: 17,
+            title: "Thunderclap II"
+          },
+          {
+            episode: 18,
+            title: "Right and Wrong"
+          },
+          {
+            episode: 19,
+            title: "Right and Wrong II"
+          },
+          {
+            episode: 20,
+            title: "Right and Wrong III"
+          },
+          {
+            episode: 21,
+            title: "Transformation"
+          },
+          {
+            episode: 22,
+            title: "Transformation II"
+          },
+          {
+            episode: 23,
+            title: "The Shibuya Incident - Gate Closed"
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "Execution"
+          },
+          {
+            episode: 2,
+            title: "One More Time"
+          },
+          {
+            episode: 3,
+            title: "About the Culling Game"
+          },
+          {
+            episode: 4,
+            title: "Perfect Preparation"
+          },
+          {
+            episode: 5,
+            title: "Passion"
+          },
+          {
+            episode: 6,
+            title: "Cog"
+          },
+          {
+            episode: 7,
+            title: "Tokyo Colony No. 1"
+          },
+          {
+            episode: 8,
+            title: "Tokyo Colony No. 1, Part 2"
+          },
+          {
+            episode: 9,
+            title: "Tokyo Colony No. 1, Part 3"
+          },
+          {
+            episode: 10,
+            title: "Tokyo Colony No. 1, Part 4"
+          },
+          {
+            episode: 11,
+            title: "Tokyo Colony No. 1, Part 5"
+          },
+          {
+            episode: 12,
+            title: "Sendai Colony"
+          }
+        ]
+      }
+    ]
+  },
