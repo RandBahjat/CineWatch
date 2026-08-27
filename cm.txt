@@ -1,0 +1,83 @@
+  {
+    title: "Chainsaw Man",
+    type: "TV Show",
+    isAnime: true,
+    year: 2022,
+    rating: 8.7,
+    age: "TV-MA",
+    duration: "24m",
+    genres: [
+      "Animation",
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/npdB6eFzizki0WaZ1OvKcJrWe97.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/9ns9463dwOeo1CK1JU2sRAFUMHZ.jpg",
+    videoUrl: "114410",
+    anilistId: 127230,
+    animeSlug: "chainsaw-man",
+    overview: "Denji, desperate young man saddled with huge debt, merge with devil dog Pochita, gain power to transform into Chainsaw Man. Join Public Safety Devil Hunters, fight brutal demon, seek simple life, uncover dark conspiracy in bloody, chaotic world.",
+    director: "Tatsuki Fujimoto",
+    cast: [
+      "Kikunosuke Toya, Tomori Kusunoki, Shogo Sakata, Fairouz Ai, Ryan Colt Levy"
+    ],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Dog & Chainsaw"
+          },
+          {
+            episode: 2,
+            title: "Arrival in Tokyo"
+          },
+          {
+            episode: 3,
+            title: "Meowy's Whereabouts"
+          },
+          {
+            episode: 4,
+            title: "Rescue"
+          },
+          {
+            episode: 5,
+            title: "Gun Devil"
+          },
+          {
+            episode: 6,
+            title: "Kill Denji"
+          },
+          {
+            episode: 7,
+            title: "The Taste of a Kiss"
+          },
+          {
+            episode: 8,
+            title: "Gunfire"
+          },
+          {
+            episode: 9,
+            title: "From Kyoto"
+          },
+          {
+            episode: 10,
+            title: "Bruised & Battered"
+          },
+          {
+            episode: 11,
+            title: "Mission Start"
+          },
+          {
+            episode: 12,
+            title: "Katana vs. Chainsaw"
+          }
+        ]
+      }
+    ]
+  },
