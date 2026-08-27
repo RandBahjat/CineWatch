@@ -53283,9 +53283,9 @@ window._SERIES_DATA = [
   },
  {
     title: 'Shameless',
-    type: 'series',
-    year: '2011',
-    ageRating: 'TV-MA',
+    type: 'TV Show',
+    year: 2011,
+    age: 'TV-MA',
     rating: 8.5,
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/ifo31fMWLmyOVpdak9K0kY4jldQ.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/8A071YZoKIzoXt4t6aPWEyyuoxw.jpg',
