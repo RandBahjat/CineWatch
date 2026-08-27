@@ -1,0 +1,695 @@
+  {
+    title: "Dragon Ball Z Kai",
+    type: "TV Show",
+    isAnime: true,
+    year: 2009,
+    rating: 8.3,
+    age: "TV-14",
+    duration: "24m",
+    genres: [
+      "Animation",
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/dkuJWQWbJ3W753X7F81k2MtdrXq.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/vI3n2tM32JEqB3kR58sN7m7aZkF.jpg",
+    videoUrl: "61709",
+    anilistId: 6033,
+    animeSlug: "dragon-ball-z-kai",
+    overview: "Revisiting the acclaimed Dragon Ball Z series, this remastered and condensed version removes original filler episodes to more closely follow Akira Toriyama's manga, delivering faster-paced action, updated animation sequences, and a re-recorded voice track as Goku and his friends defend Earth from increasingly powerful cosmic threats.",
+    director: "Yasuhiro Nowatari",
+    cast: [
+      "Masako Nozawa",
+      "Ryo Horikawa",
+      "Toshio Furukawa",
+      "Mayumi Tanaka"
+    ],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Prologue to Battle! The Return of Son Goku"
+          },
+          {
+            episode: 2,
+            title: "The Enemy is Goku's Brother?! The Secret of the Mighty Saiyan Warriors"
+          },
+          {
+            episode: 3,
+            title: "A Life-or-Death Battle! Goku and Piccolo's Ferocious Suicide Attack"
+          },
+          {
+            episode: 4,
+            title: "Run in the Afterlife, Son Goku! The One Million Snake Way!"
+          },
+          {
+            episode: 5,
+            title: "Wilderness Survival! A Moonlit Night Awakens Gohan"
+          },
+          {
+            episode: 6,
+            title: "The End of the Line is Reached! Playful Trials of Kaiosama"
+          },
+          {
+            episode: 7,
+            title: "The Battle With 10-Times Gravity! Goku, Your Training is a Race"
+          },
+          {
+            episode: 8,
+            title: "Come Forth, Shenlong! The Saiyans Finally Arrive on Earth"
+          },
+          {
+            episode: 9,
+            title: "Yamucha's Struggle! The Terrible Saibaimen"
+          },
+          {
+            episode: 10,
+            title: "Sit Tight, Chaozu! The Screaming Kikoho of Tenshinhan"
+          },
+          {
+            episode: 11,
+            title: "Will Son Goku Be in Time?! 3 Hours Until the Battle Resumes"
+          },
+          {
+            episode: 12,
+            title: "Tears Shed by Piccolo... Son Goku's Furious Counterattack!"
+          },
+          {
+            episode: 13,
+            title: "This is the Kaioken! The Critical Battle of Goku vs. Vegeta"
+          },
+          {
+            episode: 14,
+            title: "The Impact of the Kamehameha! Vegeta's Tenacious Transformation"
+          },
+          {
+            episode: 15,
+            title: "Goku in Absolute Peril! Entrust Your Wishes to the Genki Dama"
+          },
+          {
+            episode: 16,
+            title: "The Invincible Vegeta Defeated! Son Gohan Summons a Miracle"
+          },
+          {
+            episode: 17,
+            title: "Dawn of the Fierce Battle... The Star of Hope Is Piccolo's Homeland"
+          },
+          {
+            episode: 18,
+            title: "The Spaceship that Sleeps in Yunzabit! Blast Off for Planet Namek"
+          },
+          {
+            episode: 19,
+            title: "A Formidable New Enemy! Emperor of the Universe, Freeza"
+          },
+          {
+            episode: 20,
+            title: "Rebellion Against Freeza! Vegeta, Burning with Ambition"
+          },
+          {
+            episode: 21,
+            title: "Protect the Dragon Balls! The Namekian Offensive"
+          },
+          {
+            episode: 22,
+            title: "Dodoria in Terrifying Hot Pursuit! Vegeta Learns the Truth"
+          },
+          {
+            episode: 23,
+            title: "Vegeta's Secret Plan! Tragic Attack Upon the Namekians"
+          },
+          {
+            episode: 24,
+            title: "Resurrected Companions! The Beauty Soldier Zarbon's Demon Transformation"
+          },
+          {
+            episode: 25,
+            title: "Kuririn's Power-Up! The Foreboding Squirming of Freeza"
+          },
+          {
+            episode: 26,
+            title: "The Conspiracy Completely Shatters! Vegeta's Counterattack vs. Zarbon"
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "A Hair-Trigger Pinch! Gohan, Protect the Four Star Ball"
+          },
+          {
+            episode: 2,
+            title: "The Super Decisive Battle Draws Near! The Ginyu Special Force Has Arrived!"
+          },
+          {
+            episode: 3,
+            title: "The Special-Squad's Frontline Man! Break Gurudo's Spell"
+          },
+          {
+            episode: 4,
+            title: "The Hellish Recoome! Keep Me Entertained, Vegeta-chan"
+          },
+          {
+            episode: 5,
+            title: "Son Goku Finally Arrives! Knock the Ginyu Special-Squad Around"
+          },
+          {
+            episode: 6,
+            title: "Star Performer's Entry!? Captain Ginyu vs. Son Goku"
+          },
+          {
+            episode: 7,
+            title: "Son Goku at Full Power! Ginyu's Secret Trick Trembles!?"
+          },
+          {
+            episode: 8,
+            title: "Surprise! Son Goku is Ginyu and Ginyu is Son Goku!?"
+          },
+          {
+            episode: 9,
+            title: "A Great Turnabout For Goku?! Super Shenron, Come Out Right Now!"
+          },
+          {
+            episode: 10,
+            title: "An Excited Freeza Approaches! Porunga... Before Granting the Wish!"
+          },
+          {
+            episode: 11,
+            title: "A Tormenting Super Transformation! Freeza's One Million Fighting Power"
+          },
+          {
+            episode: 12,
+            title: "Freeza Bares His Fangs! Gohan's Transcendent Power Attacks"
+          },
+          {
+            episode: 13,
+            title: "The Reborn Piccolo Shows Himself! An Enraged Freeza's Second Transformation"
+          },
+          {
+            episode: 14,
+            title: "Final Super Transformation of Freeza! The Terror Greater than Hell Starts Now"
+          },
+          {
+            episode: 15,
+            title: "The Moment We've Waited For! Son Goku is Revived"
+          },
+          {
+            episode: 16,
+            title: "Defeat Freeza, Son Goku! The Proud Vegeta's Tears"
+          },
+          {
+            episode: 17,
+            title: "Son Goku vs. Freeza! The Curtain Opens on the Super Decisive Battle!"
+          },
+          {
+            episode: 18,
+            title: "A Physical War That Exceeds All Limits! Goku and Freeza and Ginyu, Again?!"
+          },
+          {
+            episode: 19,
+            title: "It's a 20-Fold Kaioken! A Kamehameha With Everything on the Line"
+          },
+          {
+            episode: 20,
+            title: "This is the Last Trump Card! Goku's Extra-Large Genki-dama"
+          },
+          {
+            episode: 21,
+            title: "Awaken, Legendary Warrior... Son Goku, the Super Saiyan!"
+          },
+          {
+            episode: 22,
+            title: "The Angry Super Saiyan! Throw Your Hat in the Ring Goku Son!"
+          },
+          {
+            episode: 23,
+            title: "Exact Vengeance Son Goku! The Countdown to the Planet's Collapse"
+          },
+          {
+            episode: 24,
+            title: "Do-or-Die Full Power of Freeza! Shenlong Heed this Wish"
+          },
+          {
+            episode: 25,
+            title: "Furious Battle Cry of Goku! Make it in Time... The Resurrection Wish!"
+          },
+          {
+            episode: 26,
+            title: "Two Remain on a Vanishing Planet! This is the Final Showdown"
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Final Blow, Son Goku... Planet Namek Scatters Throughout Space"
+          },
+          {
+            episode: 2,
+            title: "Goku Vanishes in Space... Return to Life! Super Warriors"
+          },
+          {
+            episode: 3,
+            title: "That's Earth Papa… The Counterattack of Freeza Father and Son"
+          },
+          {
+            episode: 4,
+            title: "I'll Defeat Freeza! Another Super Saiyan"
+          },
+          {
+            episode: 5,
+            title: "Welcome Back Son Goku! The Confession of the Mysterious Young Boy Trunks"
+          },
+          {
+            episode: 6,
+            title: "Goku's New Technique, Instant Movement! Special Training Staked on 3 Years From Now"
+          },
+          {
+            episode: 7,
+            title: "The Pair Who Don't Leave a Trace! The Artificial Humans Appear"
+          },
+          {
+            episode: 8,
+            title: "Attacked on Both Sides by an Internal Enemy?! Son Goku vs Artificial Human #19"
+          },
+          {
+            episode: 9,
+            title: "No Chance of Victory Against #19! Super Vegeta Arrives Late"
+          },
+          {
+            episode: 10,
+            title: "Piccolo's Assault! The Missing #20 and the Future Gone Eschew"
+          },
+          {
+            episode: 11,
+            title: "Pursue! Doctor Gero... The Search for the Mysterious Laboratory!"
+          },
+          {
+            episode: 12,
+            title: "#17 and #18, and...! The Artificial Humans Awaken"
+          },
+          {
+            episode: 13,
+            title: "A Cute Face and Super Power?! #18 vs Vegeta"
+          },
+          {
+            episode: 14,
+            title: "The Time has Come to Become One Again… Piccolo's Decision for Ultimate Power!"
+          },
+          {
+            episode: 15,
+            title: "One More Time Machine?! Bulma Unveils a Mystery"
+          },
+          {
+            episode: 16,
+            title: "And So the Monster Makes its Move... Take Off! It's the Super Namekian!"
+          },
+          {
+            episode: 17,
+            title: "I am Your Sibling! The Monster with the Aura of Goku"
+          },
+          {
+            episode: 18,
+            title: "Escape tactic,Taiyoken! The Android Cell attacks"
+          },
+          {
+            episode: 19,
+            title: "Attack the Elusive Cell! Son Goku, Finally Revived!"
+          },
+          {
+            episode: 20,
+            title: "Surpass Super Saiyan! Now, Into the Room of Spirit and Time"
+          },
+          {
+            episode: 21,
+            title: "This is the Power of a Super-Namekian! No. 17 vs. Piccolo!"
+          },
+          {
+            episode: 22,
+            title: "Run #17! The Suicidal Resistance, Piccolo"
+          },
+          {
+            episode: 23,
+            title: "Unmeasured Power! The Silent Warrior #16, Makes his Move"
+          },
+          {
+            episode: 24,
+            title: "Tenshinhan's Do-or-Die Shin Kikoho! Save Your Brother-in-Arms, Son Goku"
+          },
+          {
+            episode: 25,
+            title: "Super Saiyan Surpassed! The Daring Vegeta Strikes Cell"
+          }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Surging Resentment of Cell! Krillin, Destroy #18"
+          },
+          {
+            episode: 2,
+            title: "And So the Situation Takes a Turn for the Worst... Cell Attacks #18!"
+          },
+          {
+            episode: 3,
+            title: "The Tables Have Turned! Perfect Form Cell, Finally Goes into Action"
+          },
+          {
+            episode: 4,
+            title: "Full-Power Strike of Vegeta! But the Terror of Cell Grows and Grows"
+          },
+          {
+            episode: 5,
+            title: "Super Power Awakening! Trunks Surpasses his Father"
+          },
+          {
+            episode: 6,
+            title: "The Televi Has Been Hijacked! A Live Broadcast of the Cell Games Press Conference"
+          },
+          {
+            episode: 7,
+            title: "Training Completed! Does Goku, have the Composure to Defeat Cell?!"
+          },
+          {
+            episode: 8,
+            title: "An Interrupted Rest! The Self-Defense Army, Launches a General Offensive Against Cell"
+          },
+          {
+            episode: 9,
+            title: "A New God! The Dragon Balls are Finally Revived"
+          },
+          {
+            episode: 10,
+            title: "Satan's Legion Runs Wild! The Curtain Rises on the Cell Games"
+          },
+          {
+            episode: 11,
+            title: "Decisive Battle! Cell vs Son Goku"
+          },
+          {
+            episode: 12,
+            title: "A Battle of the Highest Level! Defeat Cell, Son Goku"
+          },
+          {
+            episode: 13,
+            title: "Conclusion to the Death Match! Time for Goku's Decision"
+          },
+          {
+            episode: 14,
+            title: "Get Angry Gohan! Release Your Dormant Power"
+          },
+          {
+            episode: 15,
+            title: "The Tears that Disappeared into the Sky! The Angry Super Awakening of Gohan"
+          },
+          {
+            episode: 16,
+            title: "Fighting Spirit Free from Hesitation! Gohan, Pulverizes the Cell Juniors"
+          },
+          {
+            episode: 17,
+            title: "The Perfect Form Breaks Down! Explosion, the Super Iron Fist of Rage"
+          },
+          {
+            episode: 18,
+            title: "Bye-Bye Everyone! This is the Only Way to Save the Earth"
+          },
+          {
+            episode: 19,
+            title: "Combine Our Power! The Mightiest Final Kamehameha"
+          },
+          {
+            episode: 20,
+            title: "Farewell with a Smile! Heading for New Days..."
+          }
+        ]
+      },
+      {
+        season: 5,
+        episodes: [
+          {
+            episode: 1,
+            title: "Bring Peace to the Future! Goku's Spirit is Eternal"
+          },
+          {
+            episode: 2,
+            title: "7 Years Since That Event! Starting Today, Gohan's a High Schooler"
+          },
+          {
+            episode: 3,
+            title: "Found Out! The New Hero is Son Gohan"
+          },
+          {
+            episode: 4,
+            title: "Gohan is the Teacher! Videl's Introduction to Flight"
+          },
+          {
+            episode: 5,
+            title: "The Dragon Team, All Assembled! Son Goku has Returned!!"
+          },
+          {
+            episode: 6,
+            title: "Everyone is Shocked! Goten and Trunks' Super Battle!!"
+          },
+          {
+            episode: 7,
+            title: "A Troubling Premonition! The Appearance of a Mysterious Warrior!!"
+          },
+          {
+            episode: 8,
+            title: "What's the Matter, Piccolo?! An Unexpected Conclusion to the First Round"
+          },
+          {
+            episode: 9,
+            title: "Videl is Worn Ragged, Gohan's Anger at its Limits!!"
+          },
+          {
+            episode: 10,
+            title: "A Slithering Conspiracy!! Secrets of the Terrible Majin"
+          },
+          {
+            episode: 11,
+            title: "The Heinous Mage Babidi and King of the Underworld Dabra's Trap"
+          },
+          {
+            episode: 12,
+            title: "Don't Underestimate a Super Saiyan! Vegeta and Goku's Full Throttle Power!"
+          },
+          {
+            episode: 13,
+            title: "Who is the World's Greatest?! A Battle Royal Match to Decide!!"
+          },
+          {
+            episode: 14,
+            title: "The Fearsome Children!! #18's Great Struggle"
+          },
+          {
+            episode: 15,
+            title: "The Star Performer Takes the Stage! Take Down the Demon King!!"
+          },
+          {
+            episode: 16,
+            title: "A Wicked Heart is Revived, Vegeta, the Prince of Destruction!"
+          },
+          {
+            episode: 17,
+            title: "I'm the Strongest! The Clash of Goku vs Vegeta"
+          },
+          {
+            episode: 18,
+            title: "The Countdown to Revival Crush Babidi's Ambitions!"
+          },
+          {
+            episode: 19,
+            title: "The Seal is Broken!? Gohan's Kamehameha of Resistance"
+          },
+          {
+            episode: 20,
+            title: "A Straight Line to Despair!? Terror of Majin Buu"
+          },
+          {
+            episode: 21,
+            title: "Turn into Sweets! The Creepy Powers of the Hungry Majin"
+          },
+          {
+            episode: 22,
+            title: "I'll Finish The Majin! Vegeta's Final Fight to the Death"
+          },
+          {
+            episode: 23,
+            title: "For Those Whom He Loves... The Last Moment of the Proud Warrior"
+          },
+          {
+            episode: 24,
+            title: "The Nightmare Returns, The Immortal Monster, Majin Buu"
+          },
+          {
+            episode: 25,
+            title: "Secret Plan to Defeat Buu, It's Name is Fusion"
+          },
+          {
+            episode: 26,
+            title: "A Faint Ray of Hope Has Appeared! Open Your Eyes, Warriors"
+          },
+          {
+            episode: 27,
+            title: "Find the Nuisance, Babidi's Revenge Plan Begins"
+          },
+          {
+            episode: 28,
+            title: "Time of Ordeal Attaining the Legendary Power"
+          },
+          {
+            episode: 29,
+            title: "Stop Majin Buu The Limit! Super Saiyan 3"
+          },
+          {
+            episode: 30,
+            title: "Standing Up For Himself, Buu's Rebellion"
+          },
+          {
+            episode: 31,
+            title: "Awful Looking!? Special Training, Fusion Pose"
+          },
+          {
+            episode: 32,
+            title: "Bye-Bye, Everyone!! Son Goku Returns to the Afterlife"
+          },
+          {
+            episode: 33,
+            title: "Found You, Gohan! Harsh Training in the Realm of the Kais!"
+          },
+          {
+            episode: 34,
+            title: "Birth! Combine Super Warrior, His Name is Gotenks!!"
+          },
+          {
+            episode: 35,
+            title: "Who Will Be the One to Defeat the Majin? The Beginning of the Strongest Man"
+          }
+        ]
+      },
+      {
+        season: 6,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Power-Up Continues!? Perfected! Super Gotenks"
+          },
+          {
+            episode: 2,
+            title: "That Which is Brought Forth by Anger - Another Majin"
+          },
+          {
+            episode: 3,
+            title: "Buu Ate Buu - Attack of the New Majin"
+          },
+          {
+            episode: 4,
+            title: "Head Straight to the Catastrophe! The Deadline is in 1 Hour!!"
+          },
+          {
+            episode: 5,
+            title: "Special Training Completed! You're Finished Now, Majin Buu"
+          },
+          {
+            episode: 6,
+            title: "Buu Eliminated With Ghosts! A Surefire Kamikaze Attack!!"
+          },
+          {
+            episode: 7,
+            title: "The Reserved Transformation of Gotenks! Super Gotenks 3!!\""
+          },
+          {
+            episode: 8,
+            title: "In High Spirits! Buu-Buu Volleyball!"
+          },
+          {
+            episode: 9,
+            title: "You Kept Everyone Waiting! A Reborn Gohan Returns to Earth!!"
+          },
+          {
+            episode: 10,
+            title: "Buu is Overwhelmed! Ultimate Gohan's Super Power"
+          },
+          {
+            episode: 11,
+            title: "Buu's Trick - Gotenks is Absorbed?!"
+          },
+          {
+            episode: 12,
+            title: "The Great Kaiōshin's Bright Idea! Son Goku is Revived!!"
+          },
+          {
+            episode: 13,
+            title: "One Time Only Miracle… Will the Super Combination With That Guy Come About?"
+          },
+          {
+            episode: 14,
+            title: "Invincible! Ultimate Warrior Vegetto!"
+          },
+          {
+            episode: 15,
+            title: "The Ace Up Buu's Sleeve! The Warriors are Absorbed!!"
+          },
+          {
+            episode: 16,
+            title: "Rescuing Gohan and Company! Goku and Vegeta's Infiltration Mission!"
+          },
+          {
+            episode: 17,
+            title: "Emergency Escape from Inside the Body! Buu's Reverse-Transformation is the Worst!!"
+          },
+          {
+            episode: 18,
+            title: "Earth Disappears!! The Original Buu's Single Cruel Blast!!"
+          },
+          {
+            episode: 19,
+            title: "Final Decisive Battle! A Conclusion in the Realm of the Kais!!"
+          },
+          {
+            episode: 20,
+            title: "Do Your Best, Kakarrot! You Are No. 1!!"
+          },
+          {
+            episode: 21,
+            title: "A One Minute Battle Vegeta's Life Risking Stall Tactics!"
+          },
+          {
+            episode: 22,
+            title: "A Secret Plan Comes Together in a Flash - Please Grant These Two Wishes"
+          },
+          {
+            episode: 23,
+            title: "Give Me Energy! We'll Make a Huge Genki-Dama!!"
+          },
+          {
+            episode: 24,
+            title: "The Savior of the World is You! Everyone's Spirit Bomb is Completed"
+          },
+          {
+            episode: 25,
+            title: "Son Goku is the Strongest After All!! Majin Buu is Annihilated"
+          },
+          {
+            episode: 26,
+            title: "And So, After 10 Years... The First Tenka'ichi Budōkai in a Long Time!"
+          }
+        ]
+      }
+    ]
+  },
