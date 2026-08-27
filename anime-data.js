@@ -15,7 +15,7 @@ window._ANIME_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dT10AxJIXVvRwFAew4tt2RhzJrD.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3AXLSxMuqyZt8HyrKKfrcJtkswD.jpg",
-    videoUrl: "63639",
+    videoUrl: "63926",
     anilistId: 21087,
     animeSlug: "one-punch-man",
     overview: "Saitama is a hero who only became a hero for fun. After three years of special training, though, he's become so strong that he's practically invincible. In fact, he's too strong—even his mightiest opponents are taken out with a single punch, and it turns out that being devastatingly powerful is actually kind of a bore.",
