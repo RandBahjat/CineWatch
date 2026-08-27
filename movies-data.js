@@ -253,7 +253,7 @@ window._MOVIES_DATA = [
     overview: "Ry, college student with chronic illness, escape summer to Majorca with mom, unexpected fall for local guy. Living-in-moment romance collide with worsening health, long-hidden family secret threaten unravel it all.",
     director: "Carlson Young",
     cast: [
-      "Nicholas Galitzine, Camila Mendes, Idris Elba, Jared Leto, Alison Brie, Morena Baccarin, James Purefoy"
+      "Eva Longoria, Maia Reficco, Fernando Lindez, Anna Klassen, Chloé Sweetlove, Sabrina Bartlett"
     ],
     trending: true,
     featured: false,
