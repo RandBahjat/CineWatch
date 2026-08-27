@@ -1,0 +1,195 @@
+  {
+    title: "BLUE LOCK",
+    type: "TV Show",
+    isAnime: true,
+    year: 2022,
+    rating: 8.2,
+    age: "TV-14",
+    duration: "24m",
+    genres: [
+      "Animation",
+      "Action",
+      "Drama",
+      "Sports"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/tvOq4K0tDNYYeq13tUf6n4lS4Jk.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/t6LctQfWf6X16GzKq771V333p98.jpg",
+    videoUrl: "131041",
+    anilistId: 137822,
+    animeSlug: "blue-lock",
+    overview: "After a disastrous defeat at the 2018 World Cup, Japan's team struggles to regroup. But what's missing? An absolute Ace Striker, who can guide them to the win. The Japan Football Union is hell-bent on creating a striker who hungers for goals and thirsts for victory, and who can be the decisive instrument in turning around a losing match...and to do so, they've gathered 300 of Japan's best and brightest youth players. Who will emerge to lead the team...and will they be able to out-muscle and out-ego everyone who stands in their way?",
+    director: "Tetsuaki Watanabe",
+    cast: [
+      "Kazuki Ura",
+      "Tasuku Kaito",
+      "Yuki Ono",
+      "Soma Saito"
+    ],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Dream"
+          },
+          {
+            episode: 2,
+            title: "Monster"
+          },
+          {
+            episode: 3,
+            title: "Soccer's \"Zero\""
+          },
+          {
+            episode: 4,
+            title: "Premonition and Intuition"
+          },
+          {
+            episode: 5,
+            title: "To Be Reborn"
+          },
+          {
+            episode: 6,
+            title: "I'm Sorry"
+          },
+          {
+            episode: 7,
+            title: "Rush"
+          },
+          {
+            episode: 8,
+            title: "The Formula for Goals"
+          },
+          {
+            episode: 9,
+            title: "Awakening"
+          },
+          {
+            episode: 10,
+            title: "Just the Way It Is"
+          },
+          {
+            episode: 11,
+            title: "The Final Piece"
+          },
+          {
+            episode: 12,
+            title: "The Second Selection"
+          },
+          {
+            episode: 13,
+            title: "TOP 3"
+          },
+          {
+            episode: 14,
+            title: "The Geniuses and the Average Joes"
+          },
+          {
+            episode: 15,
+            title: "Devour"
+          },
+          {
+            episode: 16,
+            title: "Tri-Fusion"
+          },
+          {
+            episode: 17,
+            title: "Donkey"
+          },
+          {
+            episode: 18,
+            title: "The Stage for the Lead"
+          },
+          {
+            episode: 19,
+            title: "Dancing Boy"
+          },
+          {
+            episode: 20,
+            title: "Super Link-Up Play"
+          },
+          {
+            episode: 21,
+            title: "I'm Not There"
+          },
+          {
+            episode: 22,
+            title: "Voice"
+          },
+          {
+            episode: 23,
+            title: "Luck"
+          },
+          {
+            episode: 24,
+            title: "The Time Has Come"
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "Tryouts"
+          },
+          {
+            episode: 2,
+            title: "The Assassin and the Ninja"
+          },
+          {
+            episode: 3,
+            title: "The World of Feeling"
+          },
+          {
+            episode: 4,
+            title: "Chameleon"
+          },
+          {
+            episode: 5,
+            title: "Flow"
+          },
+          {
+            episode: 6,
+            title: "Grand Stage"
+          },
+          {
+            episode: 7,
+            title: "Itoshi Sae"
+          },
+          {
+            episode: 8,
+            title: "Blue Genes"
+          },
+          {
+            episode: 9,
+            title: "Night Snow"
+          },
+          {
+            episode: 10,
+            title: "The Subs Take to the Stage"
+          },
+          {
+            episode: 11,
+            title: "What You Taught Us"
+          },
+          {
+            episode: 12,
+            title: "Flowers"
+          },
+          {
+            episode: 13,
+            title: "Not Alone"
+          },
+          {
+            episode: 14,
+            title: "Last Attack"
+          }
+        ]
+      }
+    ]
+  }
