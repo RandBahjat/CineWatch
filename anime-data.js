@@ -21464,5 +21464,144 @@ window._ANIME_DATA = [
       }
     ]
   },
-
+ {
+    title: "Solo Leveling",
+    type: "TV Show",
+    isAnime: true,
+    year: 2024,
+    rating: 8.9,
+    age: "TV-14",
+    duration: "24m",
+    genres: [
+      "Animation",
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    poster: "https://image.tmdb.org/t/p/original/lrjox5mFm9WecMeqyBeXlGaejoc.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/qanL26nbrKNWIDk7rNYS1lOwzgx.jpg",
+    videoUrl: "127532",
+    anilistId: 151807,
+    animeSlug: "solo-leveling",
+    overview: "Sung Jin-Woo, weakest hunter alive, barely survive deadly dungeon raid, wake up with mysterious system only he can see. Power grow limitless, level up beyond anyone before him, uncover dark secret behind dungeon, hunter world itself.",
+    director: "Chugong",
+    cast: [
+      "Taito Ban, Aoi Ichikawa, Reina Ueda, Aleks Le, Anthony Sardinha"
+    ],
+    trending: true,
+    featured: true,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "I'm Used to It"
+          },
+          {
+            episode: 2,
+            title: "If I Had One More Chance"
+          },
+          {
+            episode: 3,
+            title: "It's Like a Game"
+          },
+          {
+            episode: 4,
+            title: "I've Gotta Get Stronger"
+          },
+          {
+            episode: 5,
+            title: "A Pretty Good Deal"
+          },
+          {
+            episode: 6,
+            title: "The Real Hunt Begins"
+          },
+          {
+            episode: 7,
+            title: "Let's See How Far I Can Go"
+          },
+          {
+            episode: 8,
+            title: "This Is Frustrating"
+          },
+          {
+            episode: 9,
+            title: "You've Been Hiding Your Skills"
+          },
+          {
+            episode: 10,
+            title: "What Is This, a Picnic?"
+          },
+          {
+            episode: 11,
+            title: "A Knight Who Defends an Empty Throne"
+          },
+          {
+            episode: 12,
+            title: "Arise"
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "You aren't E-rank, are You"
+          },
+          {
+            episode: 2,
+            title: "I Suppose You aren't Aware"
+          },
+          {
+            episode: 3,
+            title: "Still a Long Way to Go"
+          },
+          {
+            episode: 4,
+            title: "I Need to Stop Faking"
+          },
+          {
+            episode: 5,
+            title: "This Is What We're Trained to Do"
+          },
+          {
+            episode: 6,
+            title: "Don't Look Down on My Guys"
+          },
+          {
+            episode: 7,
+            title: "The 10th S-rank Hunter"
+          },
+          {
+            episode: 8,
+            title: "Looking Up Was Tiring Me Out"
+          },
+          {
+            episode: 9,
+            title: "It Was All Worth It"
+          },
+          {
+            episode: 10,
+            title: "We Need a Hero"
+          },
+          {
+            episode: 11,
+            title: "It's Going to Get Even More Intense"
+          },
+          {
+            episode: 12,
+            title: "Are You the King of Humans"
+          },
+          {
+            episode: 13,
+            title: "On to the Next Target"
+          }
+        ]
+      }
+    ]
+  },
 ];
