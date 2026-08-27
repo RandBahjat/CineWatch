@@ -240,7 +240,7 @@ window._MOVIES_DATA = [
     title: "The Last Sunrise",
     type: "Movie",
     year: 2026,
-    rating: 6.9,
+    rating: 5.7,
     age: "PG-13",
     duration: "2h 21m",
     genres: [
