@@ -22,10 +22,7 @@ window._ANIME_DATA = [
     overview: "Light Yagami is an ace student with great prospects—and he's bored out of his mind. But all that changes when he finds the Death Note, a notebook dropped by a rogue Shinigami death god. Any human whose name is written in the notebook dies, and Light has vowed to use the power of the Death Note to rid the world of evil. But will Light succeed in his noble goal, or will the Death Note turn him into the very thing he fights against?",
     director: "Tsugumi Ohba, Takeshi Obata",
     cast: [
-      "Mamoru Miyano",
-      "Kappei Yamaguchi",
-      "Aya Hirano",
-      "Shido Nakamura"
+      "Mamoru Miyano, Alessandro Juliani, Brad Swaile, Shidou Nakamura, Vincent Tong"
     ],
     trending: true,
     featured: false,
