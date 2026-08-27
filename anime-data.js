@@ -15,7 +15,7 @@ window._ANIME_DATA = [
       "Supernatural"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/tCZFfYTIwrR7n94J6G14Y4hAFU6.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/1S8zD4GWWVl5k7e9gJIfL9ZJ1tE.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/msyFkFfEMuHpKvq7cf4NnyugbXP.jpg",
     videoUrl: "13916",
     anilistId: 1535,
     animeSlug: "death-note",
