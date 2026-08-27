@@ -15,7 +15,7 @@ window._ANIME_DATA = [
       "Fantasy"
     ],
     poster: "https://image.tmdb.org/t/p/original/lrjox5mFm9WecMeqyBeXlGaejoc.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/tEunVUqi33X5U8YnIurSnd8bH8v.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/qanL26nbrKNWIDk7rNYS1lOwzgx.jpg",
     videoUrl: "127532",
     anilistId: 151807,
     animeSlug: "solo-leveling",
