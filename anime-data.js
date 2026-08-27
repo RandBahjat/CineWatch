@@ -5,7 +5,7 @@ window._ANIME_DATA = [
     type: "TV Show",
     isAnime: true,
     year: 2015,
-    rating: 8.8,
+    rating: 8.6,
     age: "TV-14",
     duration: "24m",
     genres: [
