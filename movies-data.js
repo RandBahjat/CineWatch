@@ -245,9 +245,7 @@ window._MOVIES_DATA = [
     duration: "1h 46m",
     genres: [
       "Drama",
-      "Romance",
-      "Fantasy",
-      "Sci-Fi"
+      "Romance"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/a77OcLmarwiBJakOPPC36m58t4L.jpg",
     backdrop: "https://images3.alphacoders.com/140/thumb-1920-1409079.jpg",
