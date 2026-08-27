@@ -20,7 +20,7 @@ window._ANIME_DATA = [
     anilistId: 20605,
     animeSlug: "tokyo-ghoul",
     overview: "Tokyo has become a cruel and merciless city—a place where vicious creatures called “ghouls” exist alongside humans. The citizens of this once great metropolis live in constant fear of these bloodthirsty savages and their thirst for human flesh. However, the greatest threat these ghouls pose is their dangerous ability to masquerade as humans and blend in with society.",
-    director: "Shuhei Morita",
+    director: "Sui Ishida",
     cast: [
       "Natsuki Hanae",
       "Sora Amamiya",
