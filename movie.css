@@ -6613,3 +6613,12 @@ body.rtl-layout .progress-bar-container { direction: rtl; }
 
 .continue-card .card-poster-wrap { aspect-ratio: 16 / 9; }
 .continue-card img.card-poster { width: 100%; height: 100%; object-fit: cover; }
+
+/* Override any translation extension highlights in the sidebar */
+.account-side-panel font, 
+.account-side-panel .goog-text-highlight,
+font[style] {
+    background-color: transparent !important;
+    background: none !important;
+    box-shadow: none !important;
+}
