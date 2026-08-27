@@ -23,10 +23,7 @@ window._ANIME_DATA = [
     overview: "For a thousand years, the Vikings have made quite a name and reputation for themselves as the strongest families with a thirst for violence. Thorfinn, the son of one of the Vikings' greatest warriors, spends his boyhood in a battlefield enhancing his skills in his adventure to redeem his most-desired revenge after his father was murdered.",
     director: "Makoto Yukimura",
     cast: [
-      "Yuto Uemura",
-      "Shunsuke Takeuchi",
-      "Kensho Ono",
-      "Akio Otsuka"
+      "Yūto Uemura, Shūto Suzuki, Yoshimasa Hosoya, Kenjiro Tsuda, Zeno Robinson"
     ],
     trending: true,
     featured: false,
