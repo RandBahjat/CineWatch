@@ -649,13 +649,19 @@ async function renderCarousels() {
   };
 
   const tracks = Object.keys(shelfMap);
+  let chunkStartTime = performance.now();
+  
   for (let i = 0; i < tracks.length; i++) {
     const trackId = tracks[i];
     const track = document.getElementById(trackId);
     if (!track) continue;
     
-    // Yield to main thread to prevent Long Tasks (fixes Total Blocking Time on Lighthouse)
-    await new Promise(resolve => setTimeout(resolve, 0));
+    // Time-slicing: Only yield if we've blocked the thread for > 40ms.
+    // This makes Desktop lightning fast (no yielding) while saving Mobile from TBT penalties!
+    if (performance.now() - chunkStartTime > 40) {
+      await new Promise(resolve => setTimeout(resolve, 0));
+      chunkStartTime = performance.now();
+    }
     
     const movieList = shelfMap[trackId];
     if (trackId === "top10Track") {
