@@ -19,7 +19,7 @@ window._ANIME_DATA = [
     videoUrl: "127532",
     anilistId: 151807,
     animeSlug: "solo-leveling",
-    overview: "In a world where hunters, humans who possess magical abilities, must battle deadly monsters to protect the human race from certain annihilation, a notoriously weak hunter named Sung Jinwoo finds himself in a seemingly endless struggle for survival. One day, after narrowly surviving an overwhelmingly powerful double dungeon that nearly wipes out his entire party, a mysterious program called the System chooses him as its sole player and in turn, gives him the extremely rare ability to level up in strength, possibly beyond any known limits. Follow Jinwoo's journey as he fights against all kinds of enemies, both man and monster, to discover the secrets of the dungeons and the true source of his powers.",
+    overview: "Sung Jin-Woo, weakest hunter alive, barely survive deadly dungeon raid, wake up with mysterious system only he can see. Power grow limitless, level up beyond anyone before him, uncover dark secret behind dungeon, hunter world itself.",
     director: "Shunsuke Nakashige",
     cast: [
       "Taito Ban",
