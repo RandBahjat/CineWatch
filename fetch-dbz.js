@@ -1,9 +1,9 @@
 const fs = require('fs');
 
 async function run() {
-  const showRes = await fetch('https://api.tvmaze.com/search/shows?q=dragon%20ball%20z%20kai');
+  const showRes = await fetch('https://api.tvmaze.com/search/shows?q=dragon%20ball%20kai');
   const shows = await showRes.json();
-  const dbz = shows.find(s => s.show.name.toLowerCase().includes('dragon ball z kai') || s.show.name.toLowerCase().includes('dragon ball kai')).show;
+  const dbz = shows.find(s => s.show.name === 'Dragon Ball Kai').show;
   
   const epRes = await fetch('https://api.tvmaze.com/shows/' + dbz.id + '/episodes');
   const episodes = await epRes.json();
@@ -46,7 +46,6 @@ async function run() {
     seasons: [
 `;
 
-  // Fix poster and backdrop to DBZ Kai placeholders (using correct ones if possible, but placeholders are fine if we don't have TMDB image keys)
   out = out.replace("https://www.themoviedb.org/t/p/w600_and_h900_face/1QepByFcxuwzVOzM5nlxU34u8wS.jpg", "https://image.tmdb.org/t/p/w600_and_h900_face/dkuJWQWbJ3W753X7F81k2MtdrXq.jpg");
   out = out.replace("https://image.tmdb.org/t/p/original/uc8v0m8aYgO5Ff8uE7d1L0TksYx.jpg", "https://image.tmdb.org/t/p/original/vI3n2tM32JEqB3kR58sN7m7aZkF.jpg");
 
@@ -60,11 +59,13 @@ async function run() {
     
     let count = seasonCounts[s];
     for (let e = 0; e < count; e++) {
-        if (epIndex >= allEpisodes.length) break; // if TVMaze has fewer episodes
-        let ep = allEpisodes[epIndex];
+        let epTitle = "Episode " + (e + 1);
+        if (epIndex < allEpisodes.length) {
+            epTitle = allEpisodes[epIndex].title;
+        }
         out += '          {\n';
         out += '            episode: ' + (e + 1) + ',\n';
-        out += '            title: "' + ep.title + '"\n';
+        out += '            title: "' + epTitle + '"\n';
         out += '          }' + (e === count - 1 ? '' : ',') + '\n';
         epIndex++;
     }
