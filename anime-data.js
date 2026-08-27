@@ -19,7 +19,7 @@ window._ANIME_DATA = [
     videoUrl: "63639",
     anilistId: 21087,
     animeSlug: "one-punch-man",
-    overview: "Saitama is a hero who only became a hero for fun. After three years of "special" training, though, he's become so strong that he's practically invincible. In fact, he's too strong—even his mightiest opponents are taken out with a single punch, and it turns out that being devastatingly powerful is actually kind of a bore.",
+    overview: "Saitama is a hero who only became a hero for fun. After three years of special training, though, he's become so strong that he's practically invincible. In fact, he's too strong—even his mightiest opponents are taken out with a single punch, and it turns out that being devastatingly powerful is actually kind of a bore.",
     director: "Shingo Natsume",
     cast: [
       "Makoto Furukawa",
