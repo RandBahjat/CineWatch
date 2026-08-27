@@ -639,7 +639,7 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
   `;
 }
 
-function renderCarousels() {
+async function renderCarousels() {
   const shelfMap = {
     top10Track: MOVIES.filter((m) => TOP_10_TRENDING_TODAY.includes(m.title)).sort((a, b) => TOP_10_TRENDING_TODAY.indexOf(a.title) - TOP_10_TRENDING_TODAY.indexOf(b.title)),
     trendingMoviesTrack: MOVIES.filter((m) => TRENDING_THIS_WEEK_MOVIES.includes(m.title) && m.type !== "TV Show").sort((a, b) => TRENDING_THIS_WEEK_MOVIES.indexOf(a.title) - TRENDING_THIS_WEEK_MOVIES.indexOf(b.title)),
@@ -648,9 +648,15 @@ function renderCarousels() {
     popularSeriesTrack: MOVIES.filter((m) => POPULAR_SERIES.includes(m.title) && (m.type === "TV Show" || m.type === "Series")).sort((a, b) => POPULAR_SERIES.indexOf(a.title) - POPULAR_SERIES.indexOf(b.title)),
   };
 
-  Object.keys(shelfMap).forEach((trackId) => {
+  const tracks = Object.keys(shelfMap);
+  for (let i = 0; i < tracks.length; i++) {
+    const trackId = tracks[i];
     const track = document.getElementById(trackId);
-    if (!track) return;
+    if (!track) continue;
+    
+    // Yield to main thread to prevent Long Tasks (fixes Total Blocking Time on Lighthouse)
+    await new Promise(resolve => setTimeout(resolve, 0));
+    
     const movieList = shelfMap[trackId];
     if (trackId === "top10Track") {
       track.innerHTML = movieList.map((movie, index) => createMovieCardHTML(movie, index + 1, true)).join("");
@@ -662,7 +668,7 @@ function renderCarousels() {
     track.querySelectorAll(".movie-card").forEach((card) => {
       card.onclick = () => openDetailsModal(card.dataset.id);
     });
-  });
+  }
 }
 
 function renderContinueWatchingShelf() {
