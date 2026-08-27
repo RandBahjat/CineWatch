@@ -2,6 +2,34 @@ const FEATURED_TITLES = ["Reacher","Lanterns", "House of the Dragon", "The Invit
 const TRENDING_TITLES = ["Reacher","Lanterns", "Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters", "The Invite", "Young Washington", "The Last House", "Ted Lasso", "Project Hail Mary"];
 const MOVIES = [
   {
+    id: "34307",
+    title: "Shameless",
+    type: "series",
+    poster: "https://image.tmdb.org/t/p/w500/9bjy9hQhL8yJ8HDFUxtgS69s8Y8.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/jBJWaqmbBrcFnvPGBhoP6kugqDB.jpg",
+    rating: 8.0,
+    genres: ["Drama", "Comedy"],
+    year: "2011",
+    duration: "45m",
+    ageRating: "TV-MA",
+    overview: "Chicagoan Frank Gallagher is the proud single dad of six smart, industrious, independent kids, who without him would be... perhaps better off. When Frank's not at the bar spending what little money they have, he's passed out on the floor. But the kids have found ways to grow up in spite of him.",
+    director: "John Wells",
+    cast: ["William H. Macy", "Emmy Rossum", "Jeremy Allen White", "Ethan Cutkosky", "Shanola Hampton", "Steve Howey", "Emma Kenney", "Cameron Monaghan", "Noel Fisher"],
+    seasons: [
+      { season: 1, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
+      { season: 2, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
+      { season: 3, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
+      { season: 4, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
+      { season: 5, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
+      { season: 6, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
+      { season: 7, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
+      { season: 8, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
+      { season: 9, episodes: Array.from({length: 14}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
+      { season: 10, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
+      { season: 11, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) }
+    ]
+  },
+  {
     title: "The Invite",
     type: "Movie",
     year: 2026,
