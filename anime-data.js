@@ -22,7 +22,7 @@ window._ANIME_DATA = [
     overview: "Denji, poor young man drown in debt, fuse with pet devil Pochita after brutal death, become chainsaw-wield hybrid devil hunter. Chase simple dream — good meal, warm bed, girl to love — while cut through vicious devil, dark conspiracy.",
     director: "Tatsuki Fujimoto",
     cast: [
-      "Kikunosuke Toya, Tomori Kusunoki, Shogo Sakata, Fairouz Ai, Ryan Colt Levy"
+      "Kikunosuke Toya, Fairouz Ai, Tomori Kusunoki, Ryan Colt Levy, Suzie Yeung"
     ],
     trending: true,
     featured: false,
