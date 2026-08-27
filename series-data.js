@@ -13,6 +13,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/8A071YZoKIzoXt4t6aPWEyyuoxw.jpg',
     genres: ['Drama', 'Comedy'],
     duration: '45m',
+    videoUrl
     overview: "Chicagoan Frank Gallagher is the proud single dad of six smart, industrious, independent kids, who without him would be... perhaps better off. When Frank's not at the bar spending what little money they have, he's passed out on the floor. But the kids have found ways to grow up in spite of him.",
     director: 'John Wells',
     cast: ['William H. Macy', 'Emmy Rossum', 'Jeremy Allen White', 'Ethan Cutkosky', 'Shanola Hampton', 'Steve Howey', 'Emma Kenney', 'Cameron Monaghan', 'Noel Fisher'],
