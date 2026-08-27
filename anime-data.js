@@ -22570,5 +22570,397 @@ window._ANIME_DATA = [
     ]
   },
 
-
+ {
+    title: "Haikyu!!",
+    type: "TV Show",
+    isAnime: true,
+    year: 2014,
+    rating: 8.6,
+    age: "TV-14",
+    duration: "24m",
+    genres: [
+      "Animation",
+      "Comedy",
+      "Drama",
+      "Sports"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8WEr48swcqe89Zsy5sdrGCASlIg.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/s8NdKWkRGRdNYm472t58ZTYg1bE.jpg",
+    videoUrl: "60863",
+    anilistId: 20464,
+    animeSlug: "haikyu",
+    overview: "Inspired by a small-statured pro volleyball player, Shouyou Hinata creates a volleyball team in his last year of middle school. Unfortunately the team is matched up against the \"King of the Court\" Tobio Kageyama's team in their first tournament and inevitably lose. After the crushing defeat, Hinata vows to surpass Kageyama. After entering high school, Hinata joins the volleyball team only to find that Tobio has also joined.",
+    director: "Susumu Mitsunaka",
+    cast: [
+      "Ayumu Murase",
+      "Kaito Ishikawa",
+      "Satoshi Hino",
+      "Miyu Irino"
+    ],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "The End & the Beginning"
+          },
+          {
+            episode: 2,
+            title: "Karasuno High School Volleyball Club"
+          },
+          {
+            episode: 3,
+            title: "The Formidable Ally"
+          },
+          {
+            episode: 4,
+            title: "The View from the Summit"
+          },
+          {
+            episode: 5,
+            title: "A Coward's Anxiety"
+          },
+          {
+            episode: 6,
+            title: "An Interesting Team"
+          },
+          {
+            episode: 7,
+            title: "Versus the Great King"
+          },
+          {
+            episode: 8,
+            title: "He Who Is Called ''Ace''"
+          },
+          {
+            episode: 9,
+            title: "A Toss to the Ace"
+          },
+          {
+            episode: 10,
+            title: "Yearning"
+          },
+          {
+            episode: 11,
+            title: "Decision"
+          },
+          {
+            episode: 12,
+            title: "The Neko-Karasu Reunion"
+          },
+          {
+            episode: 13,
+            title: "Rival"
+          },
+          {
+            episode: 14,
+            title: "Formidable Opponents"
+          },
+          {
+            episode: 15,
+            title: "Revival"
+          },
+          {
+            episode: 16,
+            title: "Winners and Losers"
+          },
+          {
+            episode: 17,
+            title: "The Iron Wall"
+          },
+          {
+            episode: 18,
+            title: "Guarding Your Back"
+          },
+          {
+            episode: 19,
+            title: "Coaches"
+          },
+          {
+            episode: 20,
+            title: "Oikawa Toru Is Not a Genius"
+          },
+          {
+            episode: 21,
+            title: "Senpai's True Abilities"
+          },
+          {
+            episode: 22,
+            title: "Evolution"
+          },
+          {
+            episode: 23,
+            title: "The Point that Changes the Momentum"
+          },
+          {
+            episode: 24,
+            title: "Removing The Solitary King"
+          },
+          {
+            episode: 25,
+            title: "The Third Day"
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "Let's Go To Tokyo!!"
+          },
+          {
+            episode: 2,
+            title: "Direct Sunlight"
+          },
+          {
+            episode: 3,
+            title: "Villager B"
+          },
+          {
+            episode: 4,
+            title: "Center Ace"
+          },
+          {
+            episode: 5,
+            title: "Greed"
+          },
+          {
+            episode: 6,
+            title: "Tempo"
+          },
+          {
+            episode: 7,
+            title: "Moonrise"
+          },
+          {
+            episode: 8,
+            title: "Illusionary Hero"
+          },
+          {
+            episode: 9,
+            title: "Vs \"Umbrella\""
+          },
+          {
+            episode: 10,
+            title: "Cogs"
+          },
+          {
+            episode: 11,
+            title: "Above"
+          },
+          {
+            episode: 12,
+            title: "Let the Games Begin!"
+          },
+          {
+            episode: 13,
+            title: "A Simple and Pure Strength"
+          },
+          {
+            episode: 14,
+            title: "Still Growing"
+          },
+          {
+            episode: 15,
+            title: "Place to Play"
+          },
+          {
+            episode: 16,
+            title: "Next"
+          },
+          {
+            episode: 17,
+            title: "The Battle Without Will Power"
+          },
+          {
+            episode: 18,
+            title: "The Losers"
+          },
+          {
+            episode: 19,
+            title: "The Iron Wall Can Be Rebuilt Again and Again"
+          },
+          {
+            episode: 20,
+            title: "Wiping Out"
+          },
+          {
+            episode: 21,
+            title: "The Destroyer"
+          },
+          {
+            episode: 22,
+            title: "The Fight of the Previously Spineless"
+          },
+          {
+            episode: 23,
+            title: "Team"
+          },
+          {
+            episode: 24,
+            title: "The Absolute Limit Switch"
+          },
+          {
+            episode: 25,
+            title: "Declaration of War"
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "Greetings"
+          },
+          {
+            episode: 2,
+            title: "The Threat of \"Left\""
+          },
+          {
+            episode: 3,
+            title: "Guess-Monster"
+          },
+          {
+            episode: 4,
+            title: "The Halo Around the Moon"
+          },
+          {
+            episode: 5,
+            title: "One vs. Many"
+          },
+          {
+            episode: 6,
+            title: "The Chemical Change of Encounters"
+          },
+          {
+            episode: 7,
+            title: "Obsession"
+          },
+          {
+            episode: 8,
+            title: "An Annoying Guy"
+          },
+          {
+            episode: 9,
+            title: "The Volleyball Freaks"
+          },
+          {
+            episode: 10,
+            title: "The Battle of Concepts"
+          }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          {
+            episode: 1,
+            title: "Introductions"
+          },
+          {
+            episode: 2,
+            title: "Lost"
+          },
+          {
+            episode: 3,
+            title: "Perspective"
+          },
+          {
+            episode: 4,
+            title: "Take it Easy"
+          },
+          {
+            episode: 5,
+            title: "Hunger"
+          },
+          {
+            episode: 6,
+            title: "Enhancements"
+          },
+          {
+            episode: 7,
+            title: "Return"
+          },
+          {
+            episode: 8,
+            title: "Challenger"
+          },
+          {
+            episode: 9,
+            title: "Everyone's Night"
+          },
+          {
+            episode: 10,
+            title: "Battle Lines"
+          },
+          {
+            episode: 11,
+            title: "A Chance to Connect"
+          },
+          {
+            episode: 12,
+            title: "Vivid"
+          },
+          {
+            episode: 13,
+            title: "The Second Day"
+          },
+          {
+            episode: 14,
+            title: "Rhythm"
+          },
+          {
+            episode: 15,
+            title: "Found"
+          },
+          {
+            episode: 16,
+            title: "Broken Heart"
+          },
+          {
+            episode: 17,
+            title: "Cats vs Monkeys"
+          },
+          {
+            episode: 18,
+            title: "Trap"
+          },
+          {
+            episode: 19,
+            title: "The Ultimate Challengers"
+          },
+          {
+            episode: 20,
+            title: "Leader"
+          },
+          {
+            episode: 21,
+            title: "Hero"
+          },
+          {
+            episode: 22,
+            title: "Pitons"
+          },
+          {
+            episode: 23,
+            title: "The Birth of the Serene King"
+          },
+          {
+            episode: 24,
+            title: "Monsters' Ball"
+          },
+          {
+            episode: 25,
+            title: "The Promised Land"
+          }
+        ]
+      }
+    ]
+  },
 ]
