@@ -237,6 +237,32 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
+    title: "Master of the Universe",
+    type: "Movie",
+    year: 2026,
+    rating: 6.9,
+    age: "PG-13",
+    duration: "2h 21m",
+    genres: [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/a77OcLmarwiBJakOPPC36m58t4L.jpg",
+    backdrop: "https://images3.alphacoders.com/140/thumb-1920-1409079.jpg",
+    videoUrl: "1698856",
+    overview: "Separated from his magical Power Sword as a child, Prince Adam leads a quiet life on Earth until the weapon guides him back to his home planet of Eternia. Finding his homeland shattered under the tyrannical rule of Skeletor, Adam must team up with Teela and Duncan to claim his true destiny as He-Man and liberate his world.  ",
+    director: "Travis Knight",
+    cast: [
+      "Nicholas Galitzine, Camila Mendes, Idris Elba, Jared Leto, Alison Brie, Morena Baccarin, James Purefoy"
+    ],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "Camp Rock 3",
     type: "Movie",
     year: 2026,
