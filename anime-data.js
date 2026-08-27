@@ -22977,8 +22977,8 @@ window._ANIME_DATA = [
     genres: [
       "Animation",
       "Action",
-      "Horror"
-      "Supernatural",
+      "Horror",
+      "Supernatural"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1m4RlC9BTCbyY549TOdVQ5NRPcR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/yOarY3Yo0NMkuTuft87M5oAZa3C.jpg",
