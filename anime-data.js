@@ -22,10 +22,7 @@ window._ANIME_DATA = [
     overview: "Sung Jin-Woo, weakest hunter alive, barely survive deadly dungeon raid, wake up with mysterious system only he can see. Power grow limitless, level up beyond anyone before him, uncover dark secret behind dungeon, hunter world itself.",
     director: "Chugong",
     cast: [
-      "Taito Ban",
-      "Genta Nakamura",
-      "Reina Ueda",
-      "Daisuke Hirakawa"
+      "Taito Ban, Aoi Ichikawa, Reina Ueda, Aleks Le, Anthony Sardinha"
     ],
     trending: true,
     featured: true,
