@@ -15,7 +15,7 @@ window._ANIME_DATA = [
       "Fantasy"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/6K2LdEXv1UymW7hZ3xTtvLzE2Zt.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/nIHp6fz2MX33blJKYa9BSbhct7W.jpg",
     videoUrl: "95479",
     anilistId: 113415,
     animeSlug: "jujutsu-kaisen",
