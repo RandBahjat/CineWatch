@@ -8,7 +8,7 @@ window._SERIES_DATA = [
     type: 'series',
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/ifo31fMWLmyOVpdak9K0kY4jldQ.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/8A071YZoKIzoXt4t6aPWEyyuoxw.jpg',
-    rating: 8.0,
+    rating: 8.5,
     genres: ['Drama', 'Comedy'],
     year: '2011',
     duration: '45m',
