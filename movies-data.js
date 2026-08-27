@@ -250,7 +250,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/3PWJqDfygN0YNNjWsDUOXclCp3h.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/5lB7yPaRhJHQ9dx7AnvPUi0GZDU.jpg",
     videoUrl: "1516698",
-    overview: "Separated from his magical Power Sword as a child, Prince Adam leads a quiet life on Earth until the weapon guides him back to his home planet of Eternia. Finding his homeland shattered under the tyrannical rule of Skeletor, Adam must team up with Teela and Duncan to claim his true destiny as He-Man and liberate his world.  ",
+    overview: "Ry, college student with chronic illness, escape summer to Majorca with mom, unexpected fall for local guy. Living-in-moment romance collide with worsening health, long-hidden family secret threaten unravel it all.",
     director: "Travis Knight",
     cast: [
       "Nicholas Galitzine, Camila Mendes, Idris Elba, Jared Leto, Alison Brie, Morena Baccarin, James Purefoy"
