@@ -16,18 +16,196 @@ window._SERIES_DATA = [
     overview: "Chicagoan Frank Gallagher is the proud single dad of six smart, industrious, independent kids, who without him would be... perhaps better off. When Frank's not at the bar spending what little money they have, he's passed out on the floor. But the kids have found ways to grow up in spite of him.",
     director: 'John Wells',
     cast: ['William H. Macy', 'Emmy Rossum', 'Jeremy Allen White', 'Ethan Cutkosky', 'Shanola Hampton', 'Steve Howey', 'Emma Kenney', 'Cameron Monaghan', 'Noel Fisher'],
-    seasons: [
-      { season: 1, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
-      { season: 2, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
-      { season: 3, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
-      { season: 4, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
-      { season: 5, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
-      { season: 6, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
-      { season: 7, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
-      { season: 8, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
-      { season: 9, episodes: Array.from({length: 14}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
-      { season: 10, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) },
-      { season: 11, episodes: Array.from({length: 12}, (_, i) => ({ episode: i + 1, title: 'Episode ' + (i + 1) })) }
+        seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: 'Episode 1' },
+          { episode: 2, title: 'Episode 2' },
+          { episode: 3, title: 'Episode 3' },
+          { episode: 4, title: 'Episode 4' },
+          { episode: 5, title: 'Episode 5' },
+          { episode: 6, title: 'Episode 6' },
+          { episode: 7, title: 'Episode 7' },
+          { episode: 8, title: 'Episode 8' },
+          { episode: 9, title: 'Episode 9' },
+          { episode: 10, title: 'Episode 10' },
+          { episode: 11, title: 'Episode 11' },
+          { episode: 12, title: 'Episode 12' }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: 'Episode 1' },
+          { episode: 2, title: 'Episode 2' },
+          { episode: 3, title: 'Episode 3' },
+          { episode: 4, title: 'Episode 4' },
+          { episode: 5, title: 'Episode 5' },
+          { episode: 6, title: 'Episode 6' },
+          { episode: 7, title: 'Episode 7' },
+          { episode: 8, title: 'Episode 8' },
+          { episode: 9, title: 'Episode 9' },
+          { episode: 10, title: 'Episode 10' },
+          { episode: 11, title: 'Episode 11' },
+          { episode: 12, title: 'Episode 12' }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: 'Episode 1' },
+          { episode: 2, title: 'Episode 2' },
+          { episode: 3, title: 'Episode 3' },
+          { episode: 4, title: 'Episode 4' },
+          { episode: 5, title: 'Episode 5' },
+          { episode: 6, title: 'Episode 6' },
+          { episode: 7, title: 'Episode 7' },
+          { episode: 8, title: 'Episode 8' },
+          { episode: 9, title: 'Episode 9' },
+          { episode: 10, title: 'Episode 10' },
+          { episode: 11, title: 'Episode 11' },
+          { episode: 12, title: 'Episode 12' }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          { episode: 1, title: 'Episode 1' },
+          { episode: 2, title: 'Episode 2' },
+          { episode: 3, title: 'Episode 3' },
+          { episode: 4, title: 'Episode 4' },
+          { episode: 5, title: 'Episode 5' },
+          { episode: 6, title: 'Episode 6' },
+          { episode: 7, title: 'Episode 7' },
+          { episode: 8, title: 'Episode 8' },
+          { episode: 9, title: 'Episode 9' },
+          { episode: 10, title: 'Episode 10' },
+          { episode: 11, title: 'Episode 11' },
+          { episode: 12, title: 'Episode 12' }
+        ]
+      },
+      {
+        season: 5,
+        episodes: [
+          { episode: 1, title: 'Episode 1' },
+          { episode: 2, title: 'Episode 2' },
+          { episode: 3, title: 'Episode 3' },
+          { episode: 4, title: 'Episode 4' },
+          { episode: 5, title: 'Episode 5' },
+          { episode: 6, title: 'Episode 6' },
+          { episode: 7, title: 'Episode 7' },
+          { episode: 8, title: 'Episode 8' },
+          { episode: 9, title: 'Episode 9' },
+          { episode: 10, title: 'Episode 10' },
+          { episode: 11, title: 'Episode 11' },
+          { episode: 12, title: 'Episode 12' }
+        ]
+      },
+      {
+        season: 6,
+        episodes: [
+          { episode: 1, title: 'Episode 1' },
+          { episode: 2, title: 'Episode 2' },
+          { episode: 3, title: 'Episode 3' },
+          { episode: 4, title: 'Episode 4' },
+          { episode: 5, title: 'Episode 5' },
+          { episode: 6, title: 'Episode 6' },
+          { episode: 7, title: 'Episode 7' },
+          { episode: 8, title: 'Episode 8' },
+          { episode: 9, title: 'Episode 9' },
+          { episode: 10, title: 'Episode 10' },
+          { episode: 11, title: 'Episode 11' },
+          { episode: 12, title: 'Episode 12' }
+        ]
+      },
+      {
+        season: 7,
+        episodes: [
+          { episode: 1, title: 'Episode 1' },
+          { episode: 2, title: 'Episode 2' },
+          { episode: 3, title: 'Episode 3' },
+          { episode: 4, title: 'Episode 4' },
+          { episode: 5, title: 'Episode 5' },
+          { episode: 6, title: 'Episode 6' },
+          { episode: 7, title: 'Episode 7' },
+          { episode: 8, title: 'Episode 8' },
+          { episode: 9, title: 'Episode 9' },
+          { episode: 10, title: 'Episode 10' },
+          { episode: 11, title: 'Episode 11' },
+          { episode: 12, title: 'Episode 12' }
+        ]
+      },
+      {
+        season: 8,
+        episodes: [
+          { episode: 1, title: 'Episode 1' },
+          { episode: 2, title: 'Episode 2' },
+          { episode: 3, title: 'Episode 3' },
+          { episode: 4, title: 'Episode 4' },
+          { episode: 5, title: 'Episode 5' },
+          { episode: 6, title: 'Episode 6' },
+          { episode: 7, title: 'Episode 7' },
+          { episode: 8, title: 'Episode 8' },
+          { episode: 9, title: 'Episode 9' },
+          { episode: 10, title: 'Episode 10' },
+          { episode: 11, title: 'Episode 11' },
+          { episode: 12, title: 'Episode 12' }
+        ]
+      },
+      {
+        season: 9,
+        episodes: [
+          { episode: 1, title: 'Episode 1' },
+          { episode: 2, title: 'Episode 2' },
+          { episode: 3, title: 'Episode 3' },
+          { episode: 4, title: 'Episode 4' },
+          { episode: 5, title: 'Episode 5' },
+          { episode: 6, title: 'Episode 6' },
+          { episode: 7, title: 'Episode 7' },
+          { episode: 8, title: 'Episode 8' },
+          { episode: 9, title: 'Episode 9' },
+          { episode: 10, title: 'Episode 10' },
+          { episode: 11, title: 'Episode 11' },
+          { episode: 12, title: 'Episode 12' },
+          { episode: 13, title: 'Episode 13' },
+          { episode: 14, title: 'Episode 14' }
+        ]
+      },
+      {
+        season: 10,
+        episodes: [
+          { episode: 1, title: 'Episode 1' },
+          { episode: 2, title: 'Episode 2' },
+          { episode: 3, title: 'Episode 3' },
+          { episode: 4, title: 'Episode 4' },
+          { episode: 5, title: 'Episode 5' },
+          { episode: 6, title: 'Episode 6' },
+          { episode: 7, title: 'Episode 7' },
+          { episode: 8, title: 'Episode 8' },
+          { episode: 9, title: 'Episode 9' },
+          { episode: 10, title: 'Episode 10' },
+          { episode: 11, title: 'Episode 11' },
+          { episode: 12, title: 'Episode 12' }
+        ]
+      },
+      {
+        season: 11,
+        episodes: [
+          { episode: 1, title: 'Episode 1' },
+          { episode: 2, title: 'Episode 2' },
+          { episode: 3, title: 'Episode 3' },
+          { episode: 4, title: 'Episode 4' },
+          { episode: 5, title: 'Episode 5' },
+          { episode: 6, title: 'Episode 6' },
+          { episode: 7, title: 'Episode 7' },
+          { episode: 8, title: 'Episode 8' },
+          { episode: 9, title: 'Episode 9' },
+          { episode: 10, title: 'Episode 10' },
+          { episode: 11, title: 'Episode 11' },
+          { episode: 12, title: 'Episode 12' }
+        ]
+      }
     ]
   },
   {
