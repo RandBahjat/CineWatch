@@ -14,7 +14,7 @@ window._ANIME_DATA = [
       "Adventure",
       "Fantasy"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/npdB6eFzizki0WaZ1OvKcJrWe97.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iFM1dyFi0rByvEomEkmm7NpQeeb.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/9ns9463dwOeo1CK1JU2sRAFUMHZ.jpg",
     videoUrl: "114410",
     anilistId: 127230,
