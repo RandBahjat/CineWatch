@@ -19,7 +19,7 @@ window._ANIME_DATA = [
     videoUrl: "46298",
     anilistId: 11061,
     animeSlug: "hunter-x-hunter-2011",
-    overview: "Twelve-year-old Gon Freecss one day discovers that the father he had always been told was dead was alive and well. His Father, Ging, is a Hunter—a member of society's elite with a license to go anywhere or do almost anything. Gon, determined to follow in his father's footsteps, decides to take the Hunter Examination and eventually find his father to prove himself as a Hunter in his own right.",
+    overview: "Gon Freecss, young boy, chase dream become Hunter like father, elite adventurer explore world, hunt treasure, danger, truth. Meet loyal friend along way, face brutal trial, deadly enemy push him past limit again, again.",
     director: "Hiroshi Koujina",
     cast: [
       "Megumi Han",
