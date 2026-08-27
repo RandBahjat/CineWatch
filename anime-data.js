@@ -22965,4 +22965,253 @@ window._ANIME_DATA = [
       }
     ]
   },
+
+{
+    title: "Tokyo Ghoul",
+    type: "TV Show",
+    isAnime: true,
+    year: 2014,
+    rating: 7.8,
+    age: "TV-MA",
+    duration: "24m",
+    genres: [
+      "Animation",
+      "Action",
+      "Drama",
+      "Horror"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1m4RlC9BTCbyY549TOdVQ5NRPcR.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/yOarY3Yo0NMkuTuft87M5oAZa3C.jpg",
+    videoUrl: "61374",
+    anilistId: 20605,
+    animeSlug: "tokyo-ghoul",
+    overview: "Tokyo has become a cruel and merciless city—a place where vicious creatures called “ghouls” exist alongside humans. The citizens of this once great metropolis live in constant fear of these bloodthirsty savages and their thirst for human flesh. However, the greatest threat these ghouls pose is their dangerous ability to masquerade as humans and blend in with society.",
+    director: "Sui Ishida",
+    cast: [
+      "Natsuki Hanae, Sōra Amamiya, Kana Hanazawa, Austin Tindle, Brina Palencia"
+    ],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Tragedy"
+          },
+          {
+            episode: 2,
+            title: "Incubation"
+          },
+          {
+            episode: 3,
+            title: "Dove"
+          },
+          {
+            episode: 4,
+            title: "Supper"
+          },
+          {
+            episode: 5,
+            title: "Scars"
+          },
+          {
+            episode: 6,
+            title: "Cloudburst"
+          },
+          {
+            episode: 7,
+            title: "Captivity"
+          },
+          {
+            episode: 8,
+            title: "Circular"
+          },
+          {
+            episode: 9,
+            title: "Birdcage"
+          },
+          {
+            episode: 10,
+            title: "Aogiri"
+          },
+          {
+            episode: 11,
+            title: "High Spirits"
+          },
+          {
+            episode: 12,
+            title: "Ghoul"
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "New Surge"
+          },
+          {
+            episode: 2,
+            title: "Dancing Flowers"
+          },
+          {
+            episode: 3,
+            title: "Hangman"
+          },
+          {
+            episode: 4,
+            title: "Deeper Layers"
+          },
+          {
+            episode: 5,
+            title: "Rift"
+          },
+          {
+            episode: 6,
+            title: "Thousand Paths"
+          },
+          {
+            episode: 7,
+            title: "Permeation"
+          },
+          {
+            episode: 8,
+            title: "Old Nines"
+          },
+          {
+            episode: 9,
+            title: "City in Waiting"
+          },
+          {
+            episode: 10,
+            title: "Last Rain"
+          },
+          {
+            episode: 11,
+            title: "Deluge of Flowers"
+          },
+          {
+            episode: 12,
+            title: "Ken"
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "START: Those Who Hunt"
+          },
+          {
+            episode: 2,
+            title: "member: Fragments"
+          },
+          {
+            episode: 3,
+            title: "fresh: Eve"
+          },
+          {
+            episode: 4,
+            title: "MAIN: Auction"
+          },
+          {
+            episode: 5,
+            title: "PresS: Night of Scattering"
+          },
+          {
+            episode: 6,
+            title: "turn: In the End"
+          },
+          {
+            episode: 7,
+            title: "mind: Days of Recollections"
+          },
+          {
+            episode: 8,
+            title: "TAKe: One Who Writhes"
+          },
+          {
+            episode: 9,
+            title: "play: Departed Spirit"
+          },
+          {
+            episode: 10,
+            title: "think: Sway"
+          },
+          {
+            episode: 11,
+            title: "writE: The Absent One"
+          },
+          {
+            episode: 12,
+            title: "Beautiful Dream: Daybreak"
+          }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          {
+            episode: 1,
+            title: "Place: And So, Once Again"
+          },
+          {
+            episode: 2,
+            title: "Volt: White Darkness"
+          },
+          {
+            episode: 3,
+            title: "union: Close Game"
+          },
+          {
+            episode: 4,
+            title: "Vive: Those Left Behind"
+          },
+          {
+            episode: 5,
+            title: "Move: Confluence, Confusion"
+          },
+          {
+            episode: 6,
+            title: "Face: Effulgence"
+          },
+          {
+            episode: 7,
+            title: "proof: Bonds"
+          },
+          {
+            episode: 8,
+            title: "incarnation: Awakened Child"
+          },
+          {
+            episode: 9,
+            title: "Morse: Remembrances"
+          },
+          {
+            episode: 10,
+            title: "call: The Far Side of Tragedy"
+          },
+          {
+            episode: 11,
+            title: "ACT: Encounters"
+          },
+          {
+            episode: 12,
+            title: "The Final Episode"
+          }
+        ]
+      }
+    ]
+  },
+
+
+
+
+
+
 ]
