@@ -671,14 +671,6 @@ body.rtl-layout .modal-search-clear {
   color: #fff;
   font-weight: 700;
   box-shadow: 0 2px 10px rgba(229, 9, 20, 0.4);
-}
-
-.search-modal-close:hover {
-  background: rgba(229, 9, 20, 0.25);
-  color: #ff334b;
-  border-color: rgba(229, 9, 20, 0.4);
-}
-
 /* --- 2. Main Content Body --- */
 .search-modal-body {
   position: relative;
