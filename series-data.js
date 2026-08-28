@@ -1,4 +1,4 @@
-// CineWatch â€” Series Data
+﻿// CineWatch â€” Series Data
 // Edit this file to add, remove, or reorder TV shows and series.
 // Push to GitHub (or save â€” auto-sync will handle it) for changes to go live.
 
@@ -13,7 +13,7 @@ window._SERIES_DATA = [
     genres: [
       "Drama"
     ],
-    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/xO1zHtc6wW1Oikp2L97gJcdQ6Y8.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xKk4bFCCpZ9tvjUykvvMYLSBnjo.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/6K5w17E49tG2O0a9wN8C2D8p8z3.jpg",
     videoUrl: "246246",
     overview: "A stripper's fate takes a turn when she crosses paths with the wealthy, dysfunctional family behind a cosmetics dynasty and a devious trafficking scheme.",
