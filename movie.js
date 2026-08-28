@@ -1855,10 +1855,6 @@ function openDetailsModal(movieId) {
         titleEl.removeAttribute("translate");
       }
     }
-      document.getElementById("detailsDuration").textContent = `${movie.seasons.length} Season${movie.seasons.length > 1 ? 's' : ''}`;
-    } else {
-      document.getElementById("detailsDuration").textContent = movie.duration;
-    }
 
     if (document.getElementById("detailsGenres")) {
       document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &middot; ");
