@@ -28840,7 +28840,7 @@ window._SERIES_DATA = [
     poster: 'https://image.tmdb.org/t/p/original/lztz5XBMG1x6Y5ubz7CxfPFsAcW.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/jnzoh5qoxRLFRIQAxnl6D3RStPC.jpg',
     videoUrl: '91363',
-    overview: "What Ifâ€¦? flips the script on the MCU by reimagining events from the films in unexpected ways. Marvel Studios' first animated series focuses on different heroes from the MCU, featuring a voice cast that includes a host of stars who reprise their roles.",
+    overview: "What If flips the script on the MCU by reimagining events from the films in unexpected ways. Marvel Studios' first animated series focuses on different heroes from the MCU, featuring a voice cast that includes a host of stars who reprise their roles.",
     overviewKurdish: "",
     director: 'Bryan Andrews',
     cast: [
