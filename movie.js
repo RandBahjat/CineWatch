@@ -439,6 +439,17 @@ async function initApp() {
   } finally {
     dismissLoader();
 
+    // Initial AI button state (show on home, hide if deep linking to details)
+    const initAiBtn = document.getElementById("floatingAiBtn");
+    if (initAiBtn) {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('v')) {
+        initAiBtn.classList.add("hidden");
+      } else {
+        initAiBtn.classList.remove("hidden");
+      }
+    }
+
     // Check for deep link (e.g., ?v=spider-noir) and open the movie immediately
     const params = new URLSearchParams(window.location.search);
     const deepLinkMovie = params.get('v');
