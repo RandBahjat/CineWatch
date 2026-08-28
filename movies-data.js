@@ -12556,6 +12556,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Marty Supreme",
+    type: "Movie",
+    year: 2025,
+    rating: 7.5,
+    age: "R",
+    duration: "2h 29m",
+    genres: [
+      "Drama",
+      "Sport",
+      "Comedy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/jr2tjSvV6SOMCcOLYMz9TSvOjgC.jpg",
+    videoUrl: "1317288",
+    overview: "Marty Mauser, aspiring ping-pong player in 1950s New York, chase dream nobody respect, go through hell to become great. Loosely inspire by real table tennis champ Marty Reisman, mix ambition, obsession, chaos.",
+    director: "Josh Safdie",
+    cast: [
+      "Timothée Chalamet, Gwyneth Paltrow, Odessa A'zion, Kevin O'Leary, Tyler Okonma (Tyler, the Creator), Abel Ferrara, Fran Drescher"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
