@@ -784,12 +784,6 @@ body.rtl-layout .modal-search-clear {
   color: #fff;
   transform: translateY(-1px);
   gap: 0.5rem;
-}
-
-.search-recent-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
   padding: 0.5rem 0.9rem;
   color: rgba(255, 255, 255, 0.85);
   font-size: 0.82rem;
