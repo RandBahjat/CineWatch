@@ -4324,7 +4324,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/ydmZIafp66mHABs3QJDwvjRgZfE.jpg",
     videoUrl: "359724",
     overview: "American car designer, hotshot British race driver team up build revolutionary race car for Ford, take down dominant Ferrari at brutal 24 Hours of Le Mans. Fight corporate politics, personal ego, sheer engineering will to make history.",
-    director: "Guy Ritchie",
+    director: "James Mangold",
     cast: [
       "Henry Cavill, Jake Gyllenhaal, Eiza González, Carlos Bardem, Fisher Stevens  "
     ],
