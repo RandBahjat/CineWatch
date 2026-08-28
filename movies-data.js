@@ -12456,7 +12456,7 @@ window._MOVIES_DATA = [
   {
     title: "Marty Supreme",
     type: "Movie",
-    year: 1990,
+    year: 2025,
     rating: 6.7,
     age: "PG",
     duration: "1h",
