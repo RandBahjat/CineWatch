@@ -1624,6 +1624,22 @@ async function renderCommentsSection(movieId) {
 
   if (!commentsSection || !commentInputArea || !commentsList) return;
 
+  const cookies = document.cookie || '';
+  const isCkb = cookies.includes('googtrans=/en/ckb');
+  const isAr = cookies.includes('googtrans=/en/ar');
+
+  const commentsTitleHeading = document.getElementById('commentsTitleHeading');
+  if (commentsTitleHeading) {
+    commentsTitleHeading.textContent = isCkb ? 'لێدوانەکان' : (isAr ? 'التعليقات' : 'Comments');
+  }
+
+  const placeholderText = isCkb ? 'لێدوانێک بنووسە...' : (isAr ? 'اكتب تعليقاً...' : 'Write a comment...');
+  const postBtnText = isCkb ? 'ناردنی لێدوان' : (isAr ? 'إرسال التعليق' : 'Post Comment');
+  const loginNotice = isCkb ? 'پێویستە بچیتە ژوورەوە بۆ ناردنی لێدوان.' : (isAr ? 'يجب تسجيل الدخول لإضافة تعليق.' : 'You must be logged in to post a comment.');
+  const loginBtnText = isCkb ? 'چوونەژوورەوە یان دروستکردنی هەژمار' : (isAr ? 'تسجيل الدخول أو إنشاء حساب' : 'Log In or Sign Up');
+  const noCommentsText = isCkb ? 'هیچ لێدوانێک نییە، یەکەم کەس بە!' : (isAr ? 'لا توجد تعليقات بعد. كن أول من يعلق!' : 'No comments yet. Be the first!');
+  const failedText = isCkb ? 'بارکردنی لێدوانەکان سەرکەوتوو نەبوو.' : (isAr ? 'فشل تحميل التعليقات.' : 'Failed to load comments.');
+
   // Show section
   commentsSection.style.display = 'block';
 
@@ -1631,16 +1647,16 @@ async function renderCommentsSection(movieId) {
   if (state.user) {
     commentInputArea.classList.remove('locked');
     commentInputArea.innerHTML = `
-      <textarea id="newCommentText" placeholder="Write a comment..." rows="3"></textarea>
-      <button class="post-comment-btn" id="postCommentBtn" onclick="submitComment('${movieId}')">
-        Post Comment
+      <textarea id="newCommentText" placeholder="${placeholderText}" rows="3" ${isCkb || isAr ? 'style="direction: rtl; text-align: right;"' : ''}></textarea>
+      <button class="post-comment-btn notranslate" translate="no" id="postCommentBtn" onclick="submitComment('${movieId}')">
+        ${postBtnText}
       </button>
     `;
   } else {
     commentInputArea.classList.add('locked');
     commentInputArea.innerHTML = `
-      <div style="color: rgba(255,255,255,0.7); margin-bottom: 1rem;">You must be logged in to post a comment.</div>
-      <button class="post-comment-btn" onclick="openAuthModal()" style="align-self: center;">Log In or Sign Up</button>
+      <div style="color: rgba(255,255,255,0.7); margin-bottom: 1rem;">${loginNotice}</div>
+      <button class="post-comment-btn notranslate" translate="no" onclick="openAuthModal()" style="align-self: center;">${loginBtnText}</button>
     `;
   }
 
@@ -1651,12 +1667,12 @@ async function renderCommentsSection(movieId) {
   const { data, error } = await window.CW_API.getComments(movieId);
 
   if (error) {
-    commentsList.innerHTML = `<div class="no-comments">Failed to load comments.</div>`;
+    commentsList.innerHTML = `<div class="no-comments notranslate" translate="no">${failedText}</div>`;
     return;
   }
 
   if (!data || data.length === 0) {
-    commentsList.innerHTML = `<div class="no-comments">No comments yet. Be the first!</div>`;
+    commentsList.innerHTML = `<div class="no-comments notranslate" translate="no">${noCommentsText}</div>`;
     return;
   }
 
@@ -1667,8 +1683,9 @@ async function renderCommentsSection(movieId) {
       : (comment.avatar || '🎬');
 
     const isOwner = state.user && comment.user_id === state.user.id;
+    const deleteTitle = isCkb ? 'سڕینەوەی لێدوان' : (isAr ? 'حذف التعليق' : 'Delete comment');
     const deleteBtn = isOwner ? `
-      <button class="comment-delete-btn" onclick="deleteComment('${comment.id}', '${movieId}')" title="Delete comment">
+      <button class="comment-delete-btn" onclick="deleteComment('${comment.id}', '${movieId}')" title="${deleteTitle}">
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4h6v2"/></svg>
       </button>` : '';
 
@@ -1677,20 +1694,19 @@ async function renderCommentsSection(movieId) {
       <div class="comment-avatar">${avatarContent}</div>
       <div class="comment-content">
         <div class="comment-header">
-          <span class="comment-author">${comment.username}</span>
+          <span class="comment-author notranslate" translate="no">${comment.username}</span>
           <div style="display:flex; align-items:center; gap:0.75rem;">
             <span class="comment-date">${new Date(comment.created_at).toLocaleDateString()}</span>
             ${deleteBtn}
           </div>
         </div>
-        <div class="comment-text">${comment.content.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</div>
+        <div class="comment-text notranslate" translate="no">${comment.content.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</div>
       </div>
     </div>
   `}).join('');
 }
 
 window.deleteComment = async function (commentId, movieId) {
-
   const { success, error } = await window.CW_API.deleteComment(commentId);
   if (success) {
     await renderCommentsSection(movieId);
@@ -1706,9 +1722,15 @@ window.submitComment = async function (movieId) {
 
   if (!content) return;
 
+  const cookies = document.cookie || '';
+  const isCkb = cookies.includes('googtrans=/en/ckb');
+  const isAr = cookies.includes('googtrans=/en/ar');
+  const postingText = isCkb ? '...ناردن' : (isAr ? '...جارٍ الإرسال' : 'Posting...');
+  const postBtnText = isCkb ? 'ناردنی لێدوان' : (isAr ? 'إرسال التعليق' : 'Post Comment');
+
   if (postBtn) {
     postBtn.disabled = true;
-    postBtn.innerHTML = 'Posting...';
+    postBtn.innerHTML = postingText;
   }
 
   const { success, error } = await window.CW_API.postComment(movieId, content);
@@ -1718,7 +1740,7 @@ window.submitComment = async function (movieId) {
     // Re-render to show the new comment
     await renderCommentsSection(movieId);
   } else {
-    alert('Failed to post comment: ' + (error || 'Unknown error'));
+    alert((isCkb ? 'ناردن سەرکەوتوو نەبوو: ' : (isAr ? 'فشل النشر: ' : 'Failed to post comment: ')) + (error || 'Unknown error'));
   }
 
   if (postBtn) {
