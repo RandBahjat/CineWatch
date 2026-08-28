@@ -2778,7 +2778,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/yuvFyfOAO2UB5YP0HKgu8imtJul.jpg",
     videoUrl: "335787",
     overview: "Young street-smart thief Nathan Drake team up with seasoned treasure hunter Victor Sullivan, chase legendary lost gold once belong to Magellan's crew. Global adventure, deadly rival, ancient puzzle push them race against time, dangerous enemy.",
-    director: "Doug Liman",
+    director: "Ruben Fleischer",
     cast: [
       "Brad Pitt, Angelina Jolie, Vince Vaughn, Adam Brody"
     ],
