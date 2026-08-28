@@ -14,7 +14,7 @@ window._SERIES_DATA = [
       "Drama"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xKk4bFCCpZ9tvjUykvvMYLSBnjo.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/6K5w17E49tG2O0a9wN8C2D8p8z3.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/ywJcUIMTCjstPLvvyIiPWP3G3m3.jpg",
     videoUrl: "246246",
     overview: "A stripper's fate takes a turn when she crosses paths with the wealthy, dysfunctional family behind a cosmetics dynasty and a devious trafficking scheme.",
     director: "Tyler Perry",
