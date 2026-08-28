@@ -1,13 +1,9 @@
 const fs = require('fs');
 let code = fs.readFileSync('movie.js', 'utf8');
 
-const targetSection = `window.submitComment = async function (movieId) {
-  const textInput = document.getElementById('newCommentText');
-  const postBtn = document.getElementById('postCommentBtn');
-      document.getElementById("detailsDuration").textContent = movie.duration;
-    }`;
+const targetRegex = /window\.submitComment = async function \(movieId\) \{[\s\S]*?setOverviewElement\(document\.getElementById\("detailsOverview"\), getLocalizedOverview\(movie\)\);/;
 
-const cleanSection = `window.submitComment = async function (movieId) {
+const replacement = `window.submitComment = async function (movieId) {
   const textInput = document.getElementById('newCommentText');
   const postBtn = document.getElementById('postCommentBtn');
   const content = textInput ? textInput.value.trim() : '';
@@ -91,8 +87,19 @@ function openDetailsModal(movieId) {
       document.getElementById("detailsDuration").textContent = isCkb ? \`\${sCount} وەرز\` : (isAr ? \`\${movie.seasons.length} مواسم\` : \`\${movie.seasons.length} Season\${movie.seasons.length > 1 ? 's' : ''}\`);
     } else {
       document.getElementById("detailsDuration").textContent = movie.duration;
-    }`;
+    }
+    if (titleEl) {
+      titleEl.textContent = movie.title;
+      titleEl.classList.add("notranslate");
+      titleEl.setAttribute("translate", "no");
+    }
 
-code = code.replace(targetSection, cleanSection);
+    if (document.getElementById("detailsGenres")) {
+      document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &middot; ");
+    }
+
+    setOverviewElement(document.getElementById("detailsOverview"), getLocalizedOverview(movie));`;
+
+code = code.replace(targetRegex, replacement);
 fs.writeFileSync('movie.js', code, 'utf8');
-console.log('Cleaned submitComment and openDetailsModal');
+console.log('Regex replace success');
