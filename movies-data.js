@@ -12457,7 +12457,7 @@ window._MOVIES_DATA = [
     title: "Marty Supreme",
     type: "Movie",
     year: 2025,
-    rating: 6.7,
+    rating: 7.5,
     age: "PG",
     duration: "1h",
     genres: [
