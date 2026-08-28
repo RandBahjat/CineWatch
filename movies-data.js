@@ -4310,7 +4310,7 @@ window._MOVIES_DATA = [
   {
     title: "Ford v Ferrari",
     type: "Movie",
-    year: 2026,
+    year: 2019,
     rating: 6.3,
     age: "R",
     duration: "1h 38m",
