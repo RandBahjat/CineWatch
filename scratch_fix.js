@@ -1,11 +1,13 @@
 const fs = require('fs');
 const oldContent = fs.readFileSync('old_movie.js', 'utf8');
 
-const startMarker = 'function openDetailsModal(movieId) {';
-const endMarker = '// ==========================================\n// API SCRAPING FOR RAW STREAMS';
+const startMarker = 'function openDetailsModal(movieId)';
+const endMarker = 'function fetchRawStream';
 
 const startIdx = oldContent.indexOf(startMarker);
 const endIdx = oldContent.indexOf(endMarker);
+
+console.log('startIdx:', startIdx, 'endIdx:', endIdx);
 
 if (startIdx !== -1 && endIdx !== -1) {
   let modalCode = oldContent.substring(startIdx, endIdx);
@@ -28,8 +30,6 @@ if (startIdx !== -1 && endIdx !== -1) {
     fs.writeFileSync('movie.js', currentMovie, 'utf8');
     console.log('Successfully updated movie.js');
   } else {
-    console.error('Markers not found in movie.js');
+    console.error('Markers not found in movie.js, curStart:', curStart, 'curEnd:', curEnd);
   }
-} else {
-  console.error('Markers not found in old_movie.js');
 }
