@@ -1,4 +1,4 @@
-// CineWatch - Anime Data
+﻿// CineWatch - Anime Data
 window._ANIME_DATA = [
  
 
@@ -23224,7 +23224,7 @@ window._ANIME_DATA = [
       "Adventure",
       "Fantasy"
     ],
-    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/vQ1T2U20Yw61xTfSg8E1m6i9g2d.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/mM6c5ISlyKWtie2hGiZWo6hmlhU.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/x8Y5p5F6k7P6q3L9m8N8q9q2.jpg",
     videoUrl: "902",
     anilistId: 481,
