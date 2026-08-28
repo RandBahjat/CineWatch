@@ -286,7 +286,7 @@ ${JSON.stringify(catalog.slice(0, 400))}
     const floatingAiBtn = document.getElementById("floatingAiBtn");
     const closeBtn = document.getElementById("closeAiModalBtn");
     const clearBtn = document.getElementById("aiClearHistoryBtn");
-    const chips = document.querySelectorAll(".ai-chip");
+    const promptCards = document.querySelectorAll(".ai-prompt-card, .ai-chip");
 
     if (navAiBtn) navAiBtn.onclick = openAiModal;
     if (mobileAiBtn) {
@@ -301,9 +301,9 @@ ${JSON.stringify(catalog.slice(0, 400))}
     if (closeBtn) closeBtn.onclick = closeAiModal;
     if (clearBtn) clearBtn.onclick = clearAiHistory;
 
-    chips.forEach((chip) => {
-      chip.onclick = () => {
-        const prompt = chip.dataset.prompt;
+    promptCards.forEach((card) => {
+      card.onclick = () => {
+        const prompt = card.dataset.prompt;
         if (prompt) window.sendAiChatMessage(prompt);
       };
     });
