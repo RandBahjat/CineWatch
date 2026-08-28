@@ -12679,7 +12679,7 @@ window._MOVIES_DATA = [
     overview: "Drone repairman, one of last human left on ravage Earth, question memory, reality while clean up after devastating alien war. Discover truth of past, own identity threaten shatter everything he think he know.",
     director: "Joseph Kosinski",
     cast: [
-      "Alicia Vikander, Dominic West, Walton Goggins, Daniel Wu, Kristin Scott Thomas"
+      "Tom Cruise, Morgan Freeman, Olga Kurylenko, Andrea Riseborough, Nikolaj Coster-Waldau"
     ],
     trending: false,
     featured: false,
