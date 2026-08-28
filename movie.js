@@ -1815,21 +1815,6 @@ function openDetailsModal(movieId) {
   if (!movie) return;
 
   // We are entering a new view, so we should keep track of where we came from if we aren't already in details
-  if (state.activeView !== "details") {
-    state.previousView = state.activeView;
-  }
-
-  // Update URL for deep-linking and sharing
-  window.history.replaceState(null, '', '?v=' + movieId);
-
-  const mainContent = document.getElementById("mainContent");
-  const heroBanner = document.getElementById("heroBanner");
-  const detailsSection = document.getElementById("detailsSection");
-
-  const toFadeOut = [];
-  if (state.activeView === "details") {
-    toFadeOut.push(detailsSection);
-  } else {
     if (mainContent) toFadeOut.push(mainContent);
     if (heroBanner && !heroBanner.classList.contains("hidden")) toFadeOut.push(heroBanner);
   }
