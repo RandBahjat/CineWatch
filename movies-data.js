@@ -28,6 +28,30 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
+    title: "Mutiny",
+    type: "Movie",
+    year: 2026,
+    rating: 5.7,
+    age: "R",
+    duration: "1h 35m",
+    genres: [
+      "Action",
+      "Thriller"
+    ],
+    poster: "https://image.tmdb.org/t/p/original/lsYSWqj6i2iyUDJoLA2cazFJYlC.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
+    videoUrl: "1288445",
+    overview: "Ex-Special Forces agent Cole Reed see billionaire industrialist boss framed and murdered in front of him. Forced on run as chief suspect, Reed uncover massive international conspiracy while hunted by corrupt government operatives and dangerous mercenaries. Must fight to survive and expose real killer.",
+    director: "Jean-François Richet",
+    cast: [
+      "Jason Statham, Annabelle Wallis, Jason Wong"
+    ],
+    trending: true,
+    featured: true,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "The Invite",
     type: "Movie",
     year: 2026,
