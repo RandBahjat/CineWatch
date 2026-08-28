@@ -4850,6 +4850,31 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
+    title: "Black Widow ",
+    type: "Movie",
+    year: 2021,
+    rating: 6.7,
+    age: "PG-13",
+    duration: "2h 14m",
+    genres: [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w1280/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/dq18nCTTLpy9PmtzZI6Y2yAgdw5.jpg",
+    videoUrl: "497698",
+    overview: "Natasha Romanoff confronts the darker parts of her past when a dangerous conspiracy with ties to her history arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
+    director: "Cate Shortland",
+    cast: [
+      "Scarlett Johansson, Florence Pugh, David Harbour, O-T Fagbenle, Olga Kurylenko, William Hurt, Ray Winstone, Rachel Weisz"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "The Departed ",
     type: "Movie",
     year: 2006,
