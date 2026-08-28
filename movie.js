@@ -2997,7 +2997,22 @@ function bindEventListeners() {
 
   if (navSearchBtn) navSearchBtn.onclick = openSearchModal;
   if (searchModalClose) searchModalClose.onclick = closeSearchModal;
-  if (searchModalBackdrop) searchModalBackdrop.onclick = closeSearchModal;
+  
+  // Search Type Switcher (Segmented Control)
+  const searchTypeSwitcher = document.getElementById("searchTypeSwitcher");
+  if (searchTypeSwitcher) {
+    searchTypeSwitcher.querySelectorAll(".type-switch-btn").forEach(btn => {
+      btn.onclick = () => {
+        searchTypeSwitcher.querySelectorAll(".type-switch-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        state.searchFilter = btn.dataset.filter || "all";
+
+        if (searchInput && searchInput.value.trim().length > 0) {
+          searchInput.dispatchEvent(new Event('input'));
+        }
+      };
+    });
+  } if (searchModalBackdrop) searchModalBackdrop.onclick = closeSearchModal;
 
   // Search Filter Dropdown Logic
   if (searchFilterBtn && searchFilterDropdown) {
