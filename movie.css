@@ -7042,6 +7042,21 @@ body {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 229, 255, 0.7);
 }
 
+@media (max-width: 767px) {
+  .floating-ai-btn {
+    bottom: 18px;
+    left: 18px;
+    right: auto;
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+  }
+  body.rtl-layout .floating-ai-btn {
+    left: auto;
+    right: 18px;
+  }
+}
+
 body.rtl-layout .floating-ai-btn {
   left: auto;
   right: 24px;
