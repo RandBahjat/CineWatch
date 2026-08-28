@@ -1285,207 +1285,13 @@
                 // Close button
                 document.getElementById('langToastClose')?.addEventListener('click', () => {
                     toast.classList.remove('active');
-        .VIpgJd-Zvi9od-aZ2wEe-wOHMyf, .VIpgJd-Zvi9od-aZ2wEe-OiiCO { display: none !important; }
-        .goog-te-gadget-icon { display: none !important; }
-        .goog-te-banner-frame { display: none !important; }
-
-        /* Custom Language Dropdown Styles */
-        .custom-lang-dropdown {
-            position: relative;
-            margin-right: 0.5rem;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.85rem;
-            font-weight: 500;
-            z-index: 1000;
-            user-select: none;
-        }
-        .lang-dropdown-selected {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            padding: 6px 12px;
-            border: 1px solid var(--border-color);
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.05);
-            color: white;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        .lang-dropdown-selected:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255,255,255,0.3);
-        }
-        .lang-icon { font-size: 1.1rem; color: var(--primary); }
-        .lang-arrow { font-size: 0.9rem; color: var(--text-muted); transition: transform 0.3s ease; }
-        .custom-lang-dropdown.open .lang-arrow { transform: rotate(180deg); }
-        .custom-lang-dropdown.open .lang-dropdown-selected {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: var(--primary);
-        }
-
-        .lang-dropdown-options {
-            position: absolute;
-            top: calc(100% + 8px);
-            right: 0;
-            background: rgba(15, 15, 20, 0.95);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 12px;
-            padding: 6px;
-            width: max-content;
-            min-width: 120px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.8);
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-15px) scale(0.95);
-            transform-origin: top right;
-            transition: visibility 0.2s, opacity 0.2s, transform 0.2s;
-        }
-        /* Handle RTL layout for dropdown options positioning */
-        .rtl-layout .lang-dropdown-options { right: auto; left: 0; transform-origin: top left; }
-
-        @keyframes dropdownPop {
-            0% { opacity: 0; transform: translateY(-15px) scale(0.95); }
-            100% { opacity: 1; transform: translateY(0) scale(1); }
-        }
-
-        @keyframes optionFadeIn {
-            0% { opacity: 0; transform: translateX(10px); }
-            100% { opacity: 1; transform: translateX(0); }
-        }
-        @keyframes optionFadeInRTL {
-            0% { opacity: 0; transform: translateX(-10px); }
-            100% { opacity: 1; transform: translateX(0); }
-        }
-
-        .custom-lang-dropdown.open .lang-dropdown-options {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0) scale(1);
-            animation: dropdownPop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-        }
-
-        .lang-option {
-            padding: 8px 12px;
-            color: var(--text-muted);
-            cursor: pointer;
-            border-radius: 8px;
-            transition: all 0.2s ease;
-            display: flex;
-            align-items: center;
-            opacity: 1; /* Default state when closed */
-        }
-        
-        .custom-lang-dropdown.open .lang-option {
-            opacity: 0;
-            animation: optionFadeIn 0.3s forwards ease-out;
-        }
-        .rtl-layout .custom-lang-dropdown.open .lang-option {
-            animation-name: optionFadeInRTL;
-        }
-        .custom-lang-dropdown.open .lang-option:nth-child(1) { animation-delay: 0.05s; }
-        .custom-lang-dropdown.open .lang-option:nth-child(2) { animation-delay: 0.10s; }
-        .custom-lang-dropdown.open .lang-option:nth-child(3) { animation-delay: 0.15s; }
-        .custom-lang-dropdown.open .lang-option:nth-child(4) { animation-delay: 0.20s; }
-
-        .lang-option:hover {
-            background: rgba(255, 255, 255, 0.08);
-            color: white;
-        }
-        .lang-option.active {
-            background: var(--primary);
-            color: white;
-            font-weight: 600;
-        }
-    </style>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en', 
-                includedLanguages: 'ar,ckb,en',
-                autoDisplay: false
-            }, 'google_translate_element');
-        }
-
-        function changeLanguage(langCode) {
-            if (langCode === 'en') {
-                document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-                document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + window.location.hostname;
-            } else {
-                document.cookie = "googtrans=/en/" + langCode + "; path=/;";
-
-                const LANG_MAP = {
-                    ckb: { label: '\u0643\u0648\u0631\u062F\u06CC',    cookie: 'googtrans=/en/ckb' },
-                    ku:  { label: '\u0643\u0648\u0631\u062F\u06CC',    cookie: 'googtrans=/en/ckb' },
-                    ar:  { label: '\u0627\u0644\u0639\u0631\u0628\u064A\u0629',  cookie: 'googtrans=/en/ar'  },
-                    en:  { label: 'English',  cookie: ''                  },
-                };
-
-                const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase().split('-')[0];
-                const detected    = LANG_MAP[browserLang] || LANG_MAP['en'];
-                const isEnglish   = browserLang === 'en' || !LANG_MAP[browserLang];
-
-                // Build tabs — English is always default selected
-                const tabsEl  = document.getElementById('langToastTabs');
-                const msgEl   = document.getElementById('langToastMsg');
-                const toast   = document.getElementById('langToast');
-                if (!toast || !tabsEl) return;
-
-                const languages = [
-                    { label: 'English',   cookie: '',                    active: true },
-                    { label: '\u0643\u0648\u0631\u062F\u06CC',     cookie: 'googtrans=/en/ckb'               },
-                    { label: '\u0627\u0644\u0639\u0631\u0628\u064A\u0629',   cookie: 'googtrans=/en/ar'                },
-                ];
-
-                tabsEl.innerHTML = languages.map((l, i) =>
-                    `<button class="lang-toast-tab${l.active ? ' active-tab' : ''}" data-idx="${i}">${l.label}</button>`
-                ).join('');
-
-                msgEl.textContent = 'Choose your language';
-
-                // Tab switching
-                tabsEl.addEventListener('click', e => {
-                    const btn = e.target.closest('.lang-toast-tab');
-                    if (!btn) return;
-                    tabsEl.querySelectorAll('.lang-toast-tab').forEach(b => b.classList.remove('active-tab'));
-                    btn.classList.add('active-tab');
-                    const idx = parseInt(btn.dataset.idx);
-                    const chosen = languages[idx];
-                    msgEl.textContent = chosen.active ? 'Choose your language' : `Translate to ${chosen.label}?`;
-                    document.getElementById('langToastChange')._chosenCookie = chosen.cookie || '';
-                });
-
-                // Translate button
-                document.getElementById('langToastChange').addEventListener('click', () => {
-                    const translateBtn = document.getElementById('langToastChange');
-                    // _chosenCookie: '' means English, a string means the target lang
-                    const chosenCookie = translateBtn._chosenCookie !== undefined
-                        ? translateBtn._chosenCookie
-                        : (isEnglish ? '' : detected.cookie);
-
-                    if (chosenCookie) {
-                        // Set target language
-                        document.cookie = chosenCookie + '; path=/';
-                    } else {
-                        // English selected — clear any existing translation cookie
-                        document.cookie = 'googtrans=/en/en; path=/';
-                        document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
-                    }
-                    localStorage.setItem('langPromptShownAt', Date.now());
-                    toast.classList.remove('active');
-                    setTimeout(() => window.location.reload(), 200);
-                });
-
-                // Close button
-                document.getElementById('langToastClose')?.addEventListener('click', () => {
-                    toast.classList.remove('active');
                     localStorage.setItem('langPromptShownAt', Date.now());
                 });
 
                 // Show after short delay
                 setTimeout(() => toast.classList.add('active'), 800);
-            }
+            })();
+
 
             const cookies = document.cookie.split(';');
             let currentLang = 'en';
@@ -1494,7 +1300,9 @@
                     const val = c.split('=')[1];
                     const parts = val.split('/');
                     if (parts.length > 2) currentLang = parts[2];
-                    break;
+            }
+            
+                                break;
                 }
             }
             
