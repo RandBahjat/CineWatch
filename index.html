@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260829_52">
+    <link rel="stylesheet" href="movie.css?v=20260829_53">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -26,9 +26,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_3964" defer></script>
-    <script src="series-data.js?v=20260818_3964" defer></script>
-    <script src="anime-data.js?v=20260818_3964" defer></script>
+    <script src="movies-data.js?v=20260818_3965" defer></script>
+    <script src="series-data.js?v=20260818_3965" defer></script>
+    <script src="anime-data.js?v=20260818_3965" defer></script>
     <script src="movie.js?v=v23" defer></script>
     <script src="ai-assistant.js?v=v4" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -173,42 +173,76 @@
         </div>
     </header>
 
-    <!-- Search Modal -->
+    <!-- Search Modal (Futuristic Spotlight Edition) -->
     <div class="search-modal hidden" id="searchModal">
         <div class="search-modal-backdrop" id="searchModalBackdrop"></div>
         <div class="search-modal-content">
+            <!-- Animated Ambient Glow Aura -->
+            <div class="search-bg-glow"></div>
+            <div class="search-blob search-blob1"></div>
+            <div class="search-blob search-blob2"></div>
+
+            <!-- Top Search Input Bar (Linear / Raycast Style) -->
             <div class="search-modal-header">
-                <h2>Search</h2>
-                <div class="search-header-right" style="position: relative;">
-                    <button class="search-filter-btn" id="searchFilterBtn"><span id="filterBtnText" class="notranslate" translate="no">Movies & Series</span> <ion-icon name="chevron-down-outline"></ion-icon></button>
-                    <div class="search-filter-dropdown hidden" id="searchFilterDropdown">
-                        <div class="filter-option active" data-filter="all"><span id="filterOptAll" class="notranslate" translate="no">Movies & Series</span></div>
-                        <div class="filter-option" data-filter="movie"><span id="filterOptMovie" class="notranslate" translate="no">Movies Only</span></div>
-                        <div class="filter-option" data-filter="series"><span id="filterOptSeries" class="notranslate" translate="no">Series Only</span></div>
+                <div class="search-modal-input-wrapper">
+                    <ion-icon name="search-outline" class="modal-search-icon"></ion-icon>
+                    <input type="text" id="searchInput" placeholder="Search movies, series, anime, genres, actors..." autocomplete="off">
+                    <button class="modal-search-clear hidden" id="searchClearBtn">&times;</button>
+                </div>
+
+                <div class="search-header-right">
+                    <div class="search-filter-wrapper" style="position: relative;">
+                        <button class="search-filter-btn" id="searchFilterBtn">
+                            <span id="filterBtnText" class="notranslate" translate="no">All Types</span>
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="search-filter-dropdown hidden" id="searchFilterDropdown">
+                            <div class="filter-option active" data-filter="all"><span id="filterOptAll" class="notranslate" translate="no">Movies & Series</span></div>
+                            <div class="filter-option" data-filter="movie"><span id="filterOptMovie" class="notranslate" translate="no">Movies Only</span></div>
+                            <div class="filter-option" data-filter="series"><span id="filterOptSeries" class="notranslate" translate="no">Series Only</span></div>
+                        </div>
                     </div>
-                    <button class="search-modal-close" id="searchModalClose">
+                    <button class="search-modal-close" id="searchModalClose" title="Close Search">
                         <ion-icon name="close-outline"></ion-icon>
                     </button>
                 </div>
             </div>
+
+            <!-- Quick Trend Filter Chips -->
+            <div class="search-quick-tags notranslate" translate="no" id="searchQuickTags">
+                <span class="quick-tag-label">🔥 Trending:</span>
+                <button class="search-tag-chip" data-search="Action">Action</button>
+                <button class="search-tag-chip" data-search="Sci-Fi">Sci-Fi</button>
+                <button class="search-tag-chip" data-search="Animation">Anime</button>
+                <button class="search-tag-chip" data-search="Horror">Horror</button>
+                <button class="search-tag-chip" data-search="Comedy">Comedy</button>
+            </div>
+
+            <!-- Body (Recent & Results) -->
             <div class="search-modal-body">
-                <div class="search-modal-input-wrapper">
-                    <ion-icon name="search-outline" class="modal-search-icon"></ion-icon>
-                    <input type="text" id="searchInput" placeholder="Type here to search..." autocomplete="off">
-                    <button class="modal-search-clear hidden" id="searchClearBtn">&times;</button>
-                </div>
-                
+                <!-- Recent Searches Section -->
                 <div class="search-recent-section" id="searchRecentSection">
                     <div class="search-recent-header">
-                        <span>RECENT</span>
-                        <button id="clearRecentBtn">Clear</button>
+                        <span><ion-icon name="time-outline"></ion-icon> RECENT SEARCHES</span>
+                        <button id="clearRecentBtn">Clear History</button>
                     </div>
                     <div class="search-recent-list" id="searchRecentList">
                         <!-- Populated by JS -->
                     </div>
                 </div>
 
+                <!-- Live Results Container -->
                 <div class="search-dropdown hidden" id="searchDropdown"></div>
+            </div>
+
+            <!-- Search Footer Keyboard Shortcuts -->
+            <div class="search-modal-footer">
+                <div class="search-hint-item">
+                    <kbd>↵</kbd> <span>to view all results</span>
+                </div>
+                <div class="search-hint-item">
+                    <kbd>esc</kbd> <span>to close</span>
+                </div>
             </div>
         </div>
     </div>
