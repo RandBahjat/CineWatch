@@ -239,30 +239,41 @@ ${JSON.stringify(catalog.slice(0, 400))}
     // Show typing
     showTypingIndicator();
 
-    try {
-      const response = await fetch(API_ENDPOINT, {
+    const requestPayload = {
+      system_instruction: {
+        parts: [{ text: getSystemInstruction() }],
+      },
+      contents: conversationHistory,
+      generationConfig: {
+        temperature: 0.7,
+        topP: 0.95,
+        maxOutputTokens: 1000,
+      },
+    };
+
+    async function callGemini(model) {
+      const response = await fetch(getApiEndpoint(model), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          system_instruction: {
-            parts: [{ text: getSystemInstruction() }],
-          },
-          contents: conversationHistory,
-          generationConfig: {
-            temperature: 0.7,
-            topP: 0.95,
-            maxOutputTokens: 1000,
-          },
-        }),
+        body: JSON.stringify(requestPayload),
       });
+      if (!response.ok) {
+        throw new Error(`API Error ${response.status} on model ${model}`);
+      }
+      return await response.json();
+    }
+
+    try {
+      let data;
+      try {
+        data = await callGemini(PRIMARY_MODEL);
+      } catch (primaryErr) {
+        console.warn("Primary 3.7-flash failed or busy, trying 3.6-flash fallback...", primaryErr);
+        data = await callGemini(FALLBACK_MODEL);
+      }
 
       removeTypingIndicator();
 
-      if (!response.ok) {
-        throw new Error(`API Error: ${response.status}`);
-      }
-
-      const data = await response.json();
       const aiReply =
         data?.candidates?.[0]?.content?.parts?.[0]?.text ||
         "I couldn't generate a response at this moment. Please try again.";
