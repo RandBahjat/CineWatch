@@ -5,8 +5,8 @@
 
 (function () {
   const GEMINI_API_KEY = "AQ.Ab8RN6JsqKWFNQOYBdJtcu69XZaGpchEQI7qBAJZkChPwxL7AA";
-  const PRIMARY_MODEL = "gemini-3.7-flash";
-  const FALLBACK_MODEL = "gemini-3.6-flash";
+  const PRIMARY_MODEL = "gemini-3.6-flash";
+  const FALLBACK_MODEL = "gemini-3.7-flash";
 
   function getApiEndpoint(model) {
     return `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`;
@@ -23,9 +23,27 @@
     return "en";
   }
 
+  function getAllMedia() {
+    if (typeof MOVIES !== "undefined" && Array.isArray(MOVIES) && MOVIES.length > 0) {
+      return MOVIES;
+    }
+    const local = [
+      ...(window._MOVIES_DATA || []),
+      ...(window._SERIES_DATA || []),
+      ...(window._ANIME_DATA || [])
+    ];
+    local.forEach((m) => {
+      if (!m.id) {
+        m.id = m.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") + (m.year ? "-" + m.year : "");
+      }
+    });
+    return local;
+  }
+
   // Search catalog for relevant titles based on user query (actors, directors, genres, keywords)
   function searchCatalogForQuery(queryText) {
-    if (typeof MOVIES === "undefined" || !Array.isArray(MOVIES) || !queryText) return [];
+    const allMedia = getAllMedia();
+    if (!allMedia || !allMedia.length || !queryText) return [];
     const q = queryText.toLowerCase().trim();
     const stopWords = new Set([
       "show", "all", "me", "movie", "movies", "series", "the", "in", "site", "film", "films",
@@ -36,7 +54,7 @@
 
     const tokens = q.split(/[^a-zA-Z0-9\u0600-\u06FF]+/).filter((t) => t.length > 1 && !stopWords.has(t));
 
-    const matches = MOVIES.filter((m) => {
+    const matches = allMedia.filter((m) => {
       const title = (m.title || "").toLowerCase();
       const cast = Array.isArray(m.cast) ? m.cast.join(" ").toLowerCase() : (m.cast || "").toLowerCase();
       const director = (m.director || "").toLowerCase();
@@ -59,30 +77,24 @@
 
   // Get concise catalog summary for Gemini system instruction
   function getCatalogContext(currentQuery = "") {
-    if (typeof MOVIES === "undefined" || !Array.isArray(MOVIES)) return "";
+    const allMedia = getAllMedia();
+    if (!allMedia || !allMedia.length) return "";
 
-    // 1. If there's an active query, get specific relevant matches first
+    // 1. Specific matches for the query
     const matched = currentQuery ? searchCatalogForQuery(currentQuery) : [];
     let matchSection = "";
     if (matched.length > 0) {
-      matchSection = `\n\n*** MATCHING CINEWATCH CATALOG TITLES FOUND FOR THIS QUERY (${matched.length} titles found in site database) ***\n` +
+      matchSection = `\n\n*** MATCHING CINEWATCH DATABASE TITLES FOUND FOR THIS QUERY (${matched.length} titles in database) ***\n` +
         matched.map((m) => {
-          const castStr = Array.isArray(m.cast) ? m.cast.slice(0, 6).join(", ") : (m.cast || "");
+          const castStr = Array.isArray(m.cast) ? m.cast.slice(0, 4).join(", ") : (m.cast || "");
           const dirStr = m.director ? ` | Dir: ${m.director}` : "";
-          const genresStr = Array.isArray(m.genres) ? m.genres.slice(0, 3).join(", ") : (m.genres || "");
+          const genresStr = Array.isArray(m.genres) ? m.genres.slice(0, 2).join(", ") : (m.genres || "");
           return `• "${m.title}" (${m.year}) | ID: ${m.id} | Rating: ${m.rating} | Type: ${m.type || (m.seasons ? "TV Show" : "Movie")} | Genres: ${genresStr}${dirStr} | Cast: ${castStr}`;
         }).join("\n") +
-        `\n\nCRITICAL INSTRUCTION FOR QUERY MATCHES: When the user asks to see or list movies/shows for this query (e.g., an actor like Tom Cruise, director, franchise, or genre), you MUST include and list ALL of these matched CineWatch titles in your response and append their exact [[MOVIE_CARD: <id>]] tags so the user sees cards for every single one of them. Do not omit any.`;
+        `\n\nCRITICAL INSTRUCTION: The user is asking for these titles/actor/director/genre. You MUST list ALL ${matched.length} titles above and attach their exact [[MOVIE_CARD: <id>]] tags so the user sees every single card. Keep description to 1 sentence per title so the full list outputs quickly.`;
     }
 
-    // 2. High-level general catalog snapshot
-    const generalSnapshot = MOVIES.slice(0, 400).map((m) => {
-      const castStr = Array.isArray(m.cast) ? m.cast.slice(0, 3).join(", ") : (m.cast || "");
-      const dirStr = m.director ? ` | Dir: ${m.director}` : "";
-      return `[ID: ${m.id}] ${m.title} (${m.year}) - ${m.type || (m.seasons ? "TV Show" : "Movie")} - ${m.rating}★ - Cast: ${castStr}${dirStr}`;
-    }).join("\n");
-
-    return `\nGeneral CineWatch Catalog Sample:\n${generalSnapshot}${matchSection}`;
+    return matchSection;
   }
 
   function getUserAccountName() {
@@ -116,7 +128,7 @@ Your capabilities:
 2. If recommending or listing movies/series that exist in CineWatch's catalog, ALWAYS embed a special card tag on its own line for every title:
    [[MOVIE_CARD: <id>]]
    where <id> matches the exact CineWatch ID provided in the catalog context.
-3. Accuracy: When the user asks to see all movies from a specific actor (e.g., Tom Cruise, Leonardo DiCaprio, Keanu Reeves), director (e.g., Christopher Nolan), or franchise, consult the MATCHING CINEWATCH CATALOG TITLES list and list ALL of them.
+3. Accuracy: When the user asks to see all movies from a specific actor (e.g. Tom Cruise), director (e.g. Christopher Nolan), or franchise, consult the MATCHING CINEWATCH DATABASE TITLES list and list ALL of them.
 4. Keep responses concise, formatted with clean bullet points and bold titles. Avoid excessive or unnecessary emojis.
 5. Language instruction:
    - If the user writes in Kurdish (سۆرانی) or current language is 'ckb', respond naturally in Kurdish Sorani.
