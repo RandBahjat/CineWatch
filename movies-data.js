@@ -12453,6 +12453,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Marty Supreme",
+    type: "Movie",
+    year: 1990,
+    rating: 6.7,
+    age: "PG",
+    duration: "1h",
+    genres: [
+      "Action",
+      "Animation",
+      "Adventure",
+      "Fantasy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fDX4Dp8IKvjBAaEb5MOJrGkxWX0.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/9mZGGJJP04RBmrzh9XVSfqRXl0d.jpg",
+    videoUrl: "39101",
+    overview: "Mysterious alien tree land on Earth, drain planet life force feed its deadly fruit, alien crew guard it fiercely. Goku, Gohan, Piccolo, Krillin must stop tree before it suck Earth dry, kill everyone on it.",
+    director: "Daisuke Nishio",
+    cast: [
+      "Masako Nozawa, Naoki Tatsuta, Toshio Furukawa, Mayumi Tanaka, Hiromi Tsuru"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
