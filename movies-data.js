@@ -12673,7 +12673,7 @@ window._MOVIES_DATA = [
       "Sci-Fi"
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/s4Qn5LF6OwK4rIifmthIDtbqDSs.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bYLM3GpNUZnoFElPXp1zlhDPdtv.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/2e0DTQ6IsY3KI5yPOToAYpA2oMx.jpg",
     videoUrl: "338970",
     overview: "Lara Croft, fierce, fearless daughter of missing adventurer, journey to mysterious island search for father, uncover ancient tomb hold dark secret. Face deadly trial, ruthless enemy, discover true strength inside herself.",
