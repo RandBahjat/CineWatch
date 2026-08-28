@@ -1973,24 +1973,6 @@ function openDetailsModal(movieId) {
           e.stopPropagation();
           const val = opt.getAttribute("data-value");
           seasonSelect.value = val;
-          seasonSelectTrigger.querySelector("span").textContent = `Season ${val}`;
-
-          seasonSelectOptions.querySelectorAll(".custom-option").forEach(o => o.classList.remove("selected"));
-          opt.classList.add("selected");
-
-          customSeasonSelect.classList.remove("open");
-          renderEpisodes(val);
-
-          const epSearch = document.getElementById("episodeSearch");
-          if (epSearch && epSearch.value) {
-            renderEpisodes(val, epSearch.value);
-          }
-        };
-      });
-
-      // Search filter
-      const epSearch = document.getElementById("episodeSearch");
-      if (epSearch) {
         epSearch.value = "";
         epSearch.oninput = () => renderEpisodes(seasonSelect.value, epSearch.value);
       }
