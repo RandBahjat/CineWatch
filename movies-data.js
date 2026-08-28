@@ -7,7 +7,7 @@ window._MOVIES_DATA = [
     title: "Grand Theft Auto VI: An Extended Look",
     type: "Movie",
     year: 2026,
-    rating: 5.7,
+    rating: 8.4,
     age: "R",
     duration: "1h 35m",
     genres: [
