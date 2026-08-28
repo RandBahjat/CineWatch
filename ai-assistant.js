@@ -339,9 +339,9 @@ ${catalogData}
       },
       contents: conversationHistory,
       generationConfig: {
-        temperature: 0.4,
+        temperature: 0.3,
         topP: 0.95,
-        maxOutputTokens: 1600,
+        maxOutputTokens: 2500,
       },
     };
 
@@ -354,7 +354,11 @@ ${catalogData}
       if (!response.ok) {
         throw new Error(`API Error ${response.status} on model ${model}`);
       }
-      return await response.json();
+      const json = await response.json();
+      if (json.error || !json.candidates || !json.candidates.length) {
+        throw new Error(`Model ${model} returned error: ${JSON.stringify(json.error || json)}`);
+      }
+      return json;
     }
 
     try {
@@ -362,7 +366,7 @@ ${catalogData}
       try {
         data = await callGemini(PRIMARY_MODEL);
       } catch (primaryErr) {
-        console.warn("Primary 3.7-flash failed or busy, trying 3.6-flash fallback...", primaryErr);
+        console.warn("Primary 3.6-flash busy/failed, trying 3.7-flash fallback...", primaryErr);
         data = await callGemini(FALLBACK_MODEL);
       }
 
