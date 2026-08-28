@@ -521,9 +521,9 @@ function setupHeroBanner() {
         <div class="hero-content">
             <h1 class="hero-title notranslate" translate="no">${movie.title}</h1>
             <div class="hero-meta">
-                <span class="meta-rating"><span class="star-icon">★</span> ${formatRating(movie.rating)}</span>
+                <span class="meta-rating notranslate" translate="no"><span class="star-icon">★</span> ${formatRating(movie.rating)}</span>
                 <span class="meta-dot">•</span>
-                <span class="meta-year">${formatNumber(movie.year)}</span>
+                <span class="meta-year notranslate" translate="no">${formatNumber(movie.year)}</span>
                 ${genresList ? `<span class="meta-dot">•</span><span class="meta-genres-inline">${genresList}</span>` : ""}
             </div>
             <p class="hero-overview ${getLocalizedOverview(movie).isKurdish ? 'notranslate' : ''}" translate="${getLocalizedOverview(movie).isKurdish ? 'no' : 'yes'}">${getLocalizedOverview(movie).text}</p>
