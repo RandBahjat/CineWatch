@@ -1950,31 +1950,6 @@ function openDetailsModal(movieId) {
         episodeGrid.querySelectorAll(".episode-row:not(.episode-unavailable)").forEach((card) => {
           const thumb = card.querySelector('.episode-row-thumb');
           if (thumb) {
-            thumb.style.cursor = 'pointer';
-            card.style.cursor = 'default';
-            thumb.onclick = (e) => {
-              e.stopPropagation();
-              const videoUrl = card.dataset.video;
-              const epTitle = card.dataset.title;
-              const epNum = parseInt(card.dataset.episode);
-              openVideoPlayerWithUrl(videoUrl, epTitle, movie.id, { season: seasonData.season, episode: epNum });
-            };
-          }
-        });
-
-
-      }
-
-      renderEpisodes(seasonSelect.value);
-
-      // Handle custom option click
-      seasonSelectOptions.querySelectorAll(".custom-option").forEach((opt) => {
-        opt.onclick = (e) => {
-          e.stopPropagation();
-          const val = opt.getAttribute("data-value");
-          seasonSelect.value = val;
-        epSearch.value = "";
-        epSearch.oninput = () => renderEpisodes(seasonSelect.value, epSearch.value);
       }
     }
 
