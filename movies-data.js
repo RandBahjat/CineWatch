@@ -4837,7 +4837,7 @@ window._MOVIES_DATA = [
       "Sport"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4ktdbrhCnAoDGLW36afjB717Sa.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/dq18nCTTLpy9PmtzZI6Y2yAgdw5.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/wNXuGkQ9lGpqD2s0dKIdJJEBMur.jpg",
     videoUrl: "497698",
     overview: "Natasha Romanoff confronts the darker parts of her past when a dangerous conspiracy with ties to her history arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
     director: "Cate Shortland",
