@@ -404,26 +404,6 @@ function removeContinueWatching(movieId) {
 async function initApp() {
   // Bind UI event listeners immediately so search, navigation, and modals work with zero delay
   bindEventListeners();
-
-  const dismissLoader = () => {
-    const loader = document.getElementById("appLoader");
-    if (loader) {
-      loader.classList.add("fade-out");
-      setTimeout(() => {
-        if (loader && loader.parentNode) {
-          loader.remove();
-        }
-      }, 400);
-    }
-  };
-
-  try {
-    // Load all movies & series from MongoDB first
-    await loadMediaFromAPI();
-
-    loadState();
-    renderUserBadge();
-    updateWatchlistBadge();
 // 3. UI RENDERERS & CONTROLLERS
 // ==========================================
 
