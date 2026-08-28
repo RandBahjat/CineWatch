@@ -37,11 +37,23 @@
     }));
   }
 
+  function getUserAccountName() {
+    if (typeof state !== "undefined" && state?.user?.name) {
+      return state.user.name.trim();
+    }
+    if (typeof state !== "undefined" && state?.user?.username) {
+      return state.user.username.trim();
+    }
+    return null;
+  }
+
   function getSystemInstruction() {
     const lang = getActiveLang();
     const catalog = getCatalogContext();
+    const userName = getUserAccountName();
 
     return `You are CineWatch AI, a friendly, ultra-knowledgeable, and modern movie, TV series, and anime assistant on the streaming and movie tracking site CineWatch.
+${userName ? `The current logged-in user's name is "${userName}". Greet or address them warmly by their name when appropriate.` : ""}
 
 Your capabilities:
 1. Provide personalized movie, series, and anime recommendations based on user mood, plot tropes, genres, actors, directors, or similar titles.
@@ -93,6 +105,7 @@ ${JSON.stringify(catalog.slice(0, 400))}
     if (welcome) welcome.classList.remove("hidden");
     const chips = document.getElementById("aiQuickChips");
     if (chips) chips.classList.remove("hidden");
+    localizeAiUI();
   }
 
   function localizeAiUI() {
@@ -101,24 +114,37 @@ ${JSON.stringify(catalog.slice(0, 400))}
     const welcomeTitle = document.getElementById("aiWelcomeTitle");
     const welcomeDesc = document.getElementById("aiWelcomeDesc");
     const onlineText = document.getElementById("aiOnlineText");
+    const userName = getUserAccountName();
 
     if (lang === "ckb") {
       if (input) input.placeholder = "پرسیار بکە... بۆ نموونە فیلمێکی وروژێنەرم بۆ پێشنیار بکە";
-      if (welcomeTitle) welcomeTitle.textContent = "حەز دەکەیت چ جۆرە فیلمێک یان زنجیرەیەک سەیر بکەیت؟";
+      if (welcomeTitle) {
+        welcomeTitle.textContent = userName
+          ? `چۆن دەتوانین یارمەتیت بدەین، ${userName}؟`
+          : "چۆن دەتوانین یارمەتیت بدەین لە سەیرکردنی فیلم و زنجیرەکان؟";
+      }
       if (welcomeDesc)
         welcomeDesc.textContent =
           "داوای پێشنیار بکە بەپێی کەش، ئەکتەر، چیرۆک یان دۆزینەوەی فیلمە نایابەکان لە کەتەلۆگەکەمان.";
       if (onlineText) onlineText.textContent = "یاریدەدەری زیرەکی سینەما";
     } else if (lang === "ar") {
       if (input) input.placeholder = "اسأل أي شيء... مثلاً اقترح لي فيلم إثارة وتشويق";
-      if (welcomeTitle) welcomeTitle.textContent = "ما الذي ترغب في مشاهدته الليلة؟";
+      if (welcomeTitle) {
+        welcomeTitle.textContent = userName
+          ? `كيف يمكننا مساعدتك يا ${userName}؟`
+          : "كيف يمكننا مساعدتك اليوم؟";
+      }
       if (welcomeDesc)
         welcomeDesc.textContent =
           "اطلب ترشيحات حسب مزاجك، الممثلين المفضلين، أو استكشف أفضل الأفلام والمسلسلات في مكتبتنا.";
       if (onlineText) onlineText.textContent = "مساعد السينما الذكي";
     } else {
       if (input) input.placeholder = "Ask anything... e.g. Recommend a psychological thriller";
-      if (welcomeTitle) welcomeTitle.textContent = "What would you like to watch?";
+      if (welcomeTitle) {
+        welcomeTitle.textContent = userName
+          ? `How can we help you, ${userName}?`
+          : "How can we help you today?";
+      }
       if (welcomeDesc)
         welcomeDesc.textContent =
           "Ask for recommendations by mood, favorite actors, plot twists, or find hidden gems from our streaming catalog.";
