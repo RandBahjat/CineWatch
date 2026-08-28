@@ -48,12 +48,6 @@ function translateGenre(genre) {
   const isSorani = cookies.includes('googtrans=/en/ckb');
   if (isSorani) {
     if (genre === 'Fantasy') return 'فانتاسی';
-    if (genre === 'Adventure') return 'سەرکێشی';
-    if (genre === 'Action') return 'ئاکشن';
-    if (genre === 'Sci-Fi') return 'خەیاڵی زانستی';
-    if (genre === 'Mystery') return 'نهێنی';
-    if (genre === 'Thriller') return 'هەستبزوێن';
-  }
 // Capture recovery hash immediately before Supabase clears it
 if (window.location.hash.includes("type=recovery")) {
   window.CW_PENDING_RECOVERY = true;
