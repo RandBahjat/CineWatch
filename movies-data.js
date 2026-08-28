@@ -12677,7 +12677,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/tenUPIMnLO9QUcvAtakp0xSAYTz.jpg",
     videoUrl: "75612",
     overview: "Drone repairman, one of last human left on ravage Earth, question memory, reality while clean up after devastating alien war. Discover truth of past, own identity threaten shatter everything he think he know.",
-    director: "Roar Uthaug",
+    director: "Joseph Kosinski",
     cast: [
       "Alicia Vikander, Dominic West, Walton Goggins, Daniel Wu, Kristin Scott Thomas"
     ],
