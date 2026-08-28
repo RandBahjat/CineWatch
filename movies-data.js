@@ -4677,7 +4677,7 @@ window._MOVIES_DATA = [
     year: 1990,
     rating: 6.1,
     age: "PG-13",
-    duration: "3h 14m",
+    duration: "1h 14m",
     genres: [
       "Drama",
       "Romance"
