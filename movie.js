@@ -930,24 +930,6 @@ function renderContinueWatchingPage() {
   if (selectBtn && removeBtn && cancelBtn) {
     if (state.isCwSelectionMode) {
       selectBtn.classList.add("hidden");
-      removeBtn.classList.remove("hidden");
-      cancelBtn.classList.remove("hidden");
-      removeBtn.textContent = `Remove Selected (${state.cwSelectedItems.size})`;
-    } else {
-      selectBtn.classList.remove("hidden");
-      removeBtn.classList.add("hidden");
-      cancelBtn.classList.add("hidden");
-    }
-  }
-
-  grid.innerHTML = items
-    .map((item) => {
-      const movie = MOVIES.find((m) => m.id === item.movieId);
-      if (!movie) return "";
-
-      const isIframe = item.isIframe;
-      const percent = isIframe ? 50 : Math.min(100, Math.round((item.currentTime / item.duration) * 100));
-      const metaLabel = isIframe
         ? `<span>In Progress</span>`
         : `<span>${Math.max(1, Math.round((item.duration - item.currentTime) / 60))}m left</span><span>${percent}%</span>`;
 
