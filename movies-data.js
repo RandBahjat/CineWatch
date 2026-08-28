@@ -4689,7 +4689,7 @@ window._MOVIES_DATA = [
     overview: "Hotshot young stock car driver, raw talent, hot temper, team up with veteran crew chief chase glory on NASCAR circuit. Rivalry, romance, near-fatal crash test his drive to become champion.",
     director: "Tony Scott",
     cast: [
-      "Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates, Frances Fisher, Gloria Stuart  "
+      "Tom Cruise, Robert Duvall, Nicole Kidman, Randy Quaid, Cary Elwes"
     ],
     trending: false,
     featured: false,
