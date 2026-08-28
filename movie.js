@@ -95,13 +95,8 @@ function formatMediaType(type) {
 }
 
 function getLocalizedTitle(item) {
-  if (!item) return { text: "", isKurdish: false };
-  const cookies = document.cookie || '';
-  const isSorani = cookies.includes('googtrans=/en/ckb');
-  if (isSorani && item.titleKurdish) {
-    return { text: item.titleKurdish, isKurdish: true };
-  }
-  return { text: item.title || "", isKurdish: false };
+  if (!item) return { text: "", isKurdish: true };
+  return { text: item.title || "", isKurdish: true };
 }
 
 function formatRating(rating) {
