@@ -969,7 +969,7 @@ function renderContinueWatchingPage() {
           </div>
         </div>
         <div class="card-details">
-          <h4 class="card-title">${movie.title}</h4>
+          <h4 class="card-title notranslate" translate="no">${movie.title}</h4>
           <div class="card-meta">
             ${metaLabel}
           </div>
