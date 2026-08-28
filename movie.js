@@ -1849,14 +1849,9 @@ function openDetailsModal(movieId) {
       document.getElementById("detailsDuration").textContent = movie.duration;
     }
     if (titleEl) {
-      titleEl.textContent = titleInfo.text;
-      if (titleInfo.isKurdish) {
-        titleEl.classList.add("notranslate");
-        titleEl.setAttribute("translate", "no");
-      } else {
-        titleEl.classList.remove("notranslate");
-        titleEl.removeAttribute("translate");
-      }
+      titleEl.textContent = movie.title;
+      titleEl.classList.add("notranslate");
+      titleEl.setAttribute("translate", "no");
     }
 
     if (document.getElementById("detailsGenres")) {
