@@ -12589,7 +12589,7 @@ window._MOVIES_DATA = [
     year: 2018,
     rating: 6.3,
     age: "PG-13",
-    duration: "1h 55m",
+    duration: "1h 59m",
     genres: [
       "Action",
       "Adventure",
