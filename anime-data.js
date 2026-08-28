@@ -23225,7 +23225,7 @@ window._ANIME_DATA = [
       "Fantasy"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/mM6c5ISlyKWtie2hGiZWo6hmlhU.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/x8Y5p5F6k7P6q3L9m8N8q9q2.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/nZMhQrVEOe9iKAdTB4lE1zlWSRj.jpg",
     videoUrl: "902",
     anilistId: 481,
     animeSlug: "yu-gi-oh-duel-monsters",
