@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260828_2159">
+    <link rel="stylesheet" href="movie.css?v=20260828_2161">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -26,9 +26,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_3879" defer></script>
-    <script src="series-data.js?v=20260818_3879" defer></script>
-    <script src="anime-data.js?v=20260818_3879" defer></script>
+    <script src="movies-data.js?v=20260818_3881" defer></script>
+    <script src="series-data.js?v=20260818_3881" defer></script>
+    <script src="anime-data.js?v=20260818_3881" defer></script>
     <script src="movie.js?v=v15" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1374,13 +1374,77 @@
             const filterOptAll = document.getElementById('filterOptAll');
             const filterOptMovie = document.getElementById('filterOptMovie');
             const filterOptSeries = document.getElementById('filterOptSeries');
-            
+            const navContinue1 = document.getElementById('navContinue1');
+            const navContinue2 = document.getElementById('navContinue2');
+            const navWatchlist1 = document.getElementById('navWatchlist1');
+            const navWatchlist2 = document.getElementById('navWatchlist2');
+
+            const genreMapKurdish = {
+                'all': 'هەموو جۆرەکان',
+                'Action': 'ئاکشن',
+                'Adventure': 'سەرکێشی',
+                'Animation': 'ئەنیمەیشن',
+                'Comedy': 'کۆمیدی',
+                'Crime': 'تاوانکاری',
+                'Drama': 'دراما',
+                'Family': 'خێزانی',
+                'Kids': 'منداڵان',
+                'History': 'مێژوویی',
+                'Fantasy': 'فانتازیا',
+                'Horror': 'ترسناک',
+                'Mystery': 'نهێنی',
+                'Romance': 'ڕۆمانسی',
+                'Sci-Fi': 'خەیاڵی زانستی',
+                'Thriller': 'هەستبزوێن',
+                'War': 'جەنگ'
+            };
+
+            const genreMapArabic = {
+                'all': 'جميع الأنواع',
+                'Action': 'أكشن',
+                'Adventure': 'مغامرة',
+                'Animation': 'رسوم متحركة',
+                'Comedy': 'كوميديا',
+                'Crime': 'جريمة',
+                'Drama': 'دراما',
+                'Family': 'عائلي',
+                'Kids': 'أطفال',
+                'History': 'تاريخي',
+                'Fantasy': 'فانتازيا',
+                'Horror': 'رعب',
+                'Mystery': 'غموض',
+                'Romance': 'رومانسي',
+                'Sci-Fi': 'خيال علمي',
+                'Thriller': 'إثارة',
+                'War': 'حرب'
+            };
+
+            const genreMapEnglish = {
+                'all': 'All',
+                'Action': 'Action',
+                'Adventure': 'Adventure',
+                'Animation': 'Animation',
+                'Comedy': 'Comedy',
+                'Crime': 'Crime',
+                'Drama': 'Drama',
+                'Family': 'Family',
+                'Kids': 'Kids',
+                'History': 'History',
+                'Fantasy': 'Fantasy',
+                'Horror': 'Horror',
+                'Mystery': 'Mystery',
+                'Romance': 'Romance',
+                'Sci-Fi': 'Sci-Fi',
+                'Thriller': 'Thriller',
+                'War': 'War'
+            };
+
             if (currentLang === 'ckb') {
-                if (loginPwLabel) loginPwLabel.textContent = 'وشەی نهێنی';
-                if (signupPwLabel) signupPwLabel.textContent = 'وشەی نهێنی';
+                if (loginPwLabel) loginPwLabel.textContent = 'تێپەڕەوشە';
+                if (signupPwLabel) signupPwLabel.textContent = 'تێپەڕەوشە';
                 if (loginPwInput) loginPwInput.placeholder = '••••••••';
                 if (signupPwInput) signupPwInput.placeholder = '••••••••';
-                if (signupEmailLabel) signupEmailLabel.textContent = 'ئیمەیڵ';
+                if (signupEmailLabel) signupEmailLabel.textContent = 'ناونیشانی ئیمەیڵ';
                 if (textTabSignup) textTabSignup.textContent = 'دروستکردنی هەژمار';
                 if (textBtnSignup) textBtnSignup.textContent = 'دروستکردنی هەژمار';
                 if (signupEmailInput) signupEmailInput.placeholder = 'ئیمەیڵ';
@@ -1394,17 +1458,18 @@
                 if (navMovies2) navMovies2.textContent = 'فیلمەکان';
                 if (navAnime1) navAnime1.textContent = 'ئەنیمی';
                 if (navAnime2) navAnime2.textContent = 'ئەنیمی';
+                if (navContinue1) navContinue1.textContent = 'بەردەوامبوون لە سەیرکردن';
+                if (navContinue2) navContinue2.textContent = 'بەردەوامبوون لە سەیرکردن';
+                if (navWatchlist1) navWatchlist1.textContent = 'دڵخوازەکانم';
+                if (navWatchlist2) navWatchlist2.textContent = 'دڵخوازەکانم';
                 if (filterBtnText) filterBtnText.textContent = 'فیلم و زنجیرە';
                 if (filterOptAll) filterOptAll.textContent = 'فیلم و زنجیرە';
                 if (filterOptMovie) filterOptMovie.textContent = 'تەنها فیلم';
                 if (filterOptSeries) filterOptSeries.textContent = 'تەنها زنجیرە';
-                document.querySelectorAll('.browse-filter-btn[data-genre="all"]').forEach(btn => btn.textContent = 'هەموو جۆرەکان');
-                document.querySelectorAll('.browse-filter-btn[data-genre="Fantasy"]').forEach(btn => btn.textContent = 'فانتازیا');
-                document.querySelectorAll('.browse-filter-btn[data-genre="Adventure"]').forEach(btn => btn.textContent = 'سەرکێشی');
-                document.querySelectorAll('.browse-filter-btn[data-genre="Action"]').forEach(btn => btn.textContent = 'ئاکشن');
-                document.querySelectorAll('.browse-filter-btn[data-genre="Sci-Fi"]').forEach(btn => btn.textContent = 'خەیاڵی زانستی');
-                document.querySelectorAll('.browse-filter-btn[data-genre="Mystery"]').forEach(btn => btn.textContent = 'نهێنی');
-                document.querySelectorAll('.browse-filter-btn[data-genre="Thriller"]').forEach(btn => btn.textContent = 'هەستبزوێن');
+                document.querySelectorAll('.browse-filter-btn').forEach(btn => {
+                    const g = btn.getAttribute('data-genre');
+                    if (genreMapKurdish[g]) btn.textContent = genreMapKurdish[g];
+                });
                 document.querySelectorAll('.report-text').forEach(el => el.textContent = 'ڕیپۆرت');
                 const detailsReportBtn = document.getElementById('detailsReportBtn');
                 if (detailsReportBtn) detailsReportBtn.textContent = 'ڕیپۆرت';
@@ -1433,10 +1498,18 @@
                 if (navMovies2) navMovies2.textContent = 'أفلام';
                 if (navAnime1) navAnime1.textContent = 'الأنمي';
                 if (navAnime2) navAnime2.textContent = 'الأنمي';
+                if (navContinue1) navContinue1.textContent = 'متابعة المشاهدة';
+                if (navContinue2) navContinue2.textContent = 'متابعة المشاهدة';
+                if (navWatchlist1) navWatchlist1.textContent = 'قائمتي';
+                if (navWatchlist2) navWatchlist2.textContent = 'قائمتي';
                 if (filterBtnText) filterBtnText.textContent = 'أفلام ومسلسلات';
                 if (filterOptAll) filterOptAll.textContent = 'أفلام ومسلسلات';
                 if (filterOptMovie) filterOptMovie.textContent = 'أفلام فقط';
                 if (filterOptSeries) filterOptSeries.textContent = 'مسلسلات فقط';
+                document.querySelectorAll('.browse-filter-btn').forEach(btn => {
+                    const g = btn.getAttribute('data-genre');
+                    if (genreMapArabic[g]) btn.textContent = genreMapArabic[g];
+                });
                 const detailsSimilarsText = document.getElementById('detailsSimilarsText');
                 if (detailsSimilarsText) detailsSimilarsText.textContent = 'أعمال مشابهة';
                 const detailsSimilarsHeading = document.getElementById('detailsSimilarsHeading');
@@ -1462,11 +1535,18 @@
                 if (navMovies2) navMovies2.textContent = 'Movies';
                 if (navAnime1) navAnime1.textContent = 'Anime';
                 if (navAnime2) navAnime2.textContent = 'Anime';
+                if (navContinue1) navContinue1.textContent = 'Continue Watching';
+                if (navContinue2) navContinue2.textContent = 'Continue Watching';
+                if (navWatchlist1) navWatchlist1.textContent = 'My Watchlist';
+                if (navWatchlist2) navWatchlist2.textContent = 'My Watchlist';
                 if (filterBtnText) filterBtnText.textContent = 'Movies & Series';
                 if (filterOptAll) filterOptAll.textContent = 'Movies & Series';
                 if (filterOptMovie) filterOptMovie.textContent = 'Movies Only';
                 if (filterOptSeries) filterOptSeries.textContent = 'Series Only';
-                document.querySelectorAll('.browse-filter-btn[data-genre="Fantasy"]').forEach(btn => btn.textContent = 'Fantasy');
+                document.querySelectorAll('.browse-filter-btn').forEach(btn => {
+                    const g = btn.getAttribute('data-genre');
+                    if (genreMapEnglish[g]) btn.textContent = genreMapEnglish[g];
+                });
                 document.querySelectorAll('.report-text').forEach(el => el.textContent = 'Report');
                 const detailsReportBtn = document.getElementById('detailsReportBtn');
                 if (detailsReportBtn) detailsReportBtn.textContent = 'Report';
