@@ -4687,7 +4687,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/e5VCaSZH8suNZjgexgY9wl3XCA6.jpg",
     videoUrl: "2119",
     overview: "Hotshot young stock car driver, raw talent, hot temper, team up with veteran crew chief chase glory on NASCAR circuit. Rivalry, romance, near-fatal crash test his drive to become champion.",
-    director: "James Cameron",
+    director: "Tony Scott",
     cast: [
       "Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates, Frances Fisher, Gloria Stuart  "
     ],
