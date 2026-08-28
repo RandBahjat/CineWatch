@@ -1822,6 +1822,13 @@ function openDetailsModal(movieId) {
   if (state.activeView !== "details") {
     state.previousView = state.activeView;
   }
+  document.body.classList.remove("view-home");
+  document.body.classList.add("view-details");
+  const detailsAiBtn = document.getElementById("floatingAiBtn");
+  if (detailsAiBtn) {
+    detailsAiBtn.classList.add("hidden");
+    detailsAiBtn.style.display = "none";
+  }
 
   window.history.replaceState(null, '', '?v=' + movieId);
 

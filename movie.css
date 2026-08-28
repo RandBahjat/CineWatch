@@ -7013,7 +7013,10 @@ body {
 }
 
 /* Floating AI Button */
-.floating-ai-btn.hidden {
+.floating-ai-btn.hidden,
+body:not(.view-home) .floating-ai-btn,
+body:has(#detailsSection:not(.hidden)) .floating-ai-btn,
+body:has(#videoModal:not(.hidden)) .floating-ai-btn {
   display: none !important;
 }
 
