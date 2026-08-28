@@ -12469,7 +12469,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/jr2tjSvV6SOMCcOLYMz9TSvOjgC.jpg",
     videoUrl: "1317288",
-    overview: "Mysterious alien tree land on Earth, drain planet life force feed its deadly fruit, alien crew guard it fiercely. Goku, Gohan, Piccolo, Krillin must stop tree before it suck Earth dry, kill everyone on it.",
+    overview: "Marty Mauser, aspiring ping-pong player in 1950s New York, chase dream nobody respect, go through hell to become great. Loosely inspire by real table tennis champ Marty Reisman, mix ambition, obsession, chaos.",
     director: "Daisuke Nishio",
     cast: [
       "Masako Nozawa, Naoki Tatsuta, Toshio Furukawa, Mayumi Tanaka, Hiromi Tsuru"
