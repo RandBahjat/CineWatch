@@ -1833,10 +1833,19 @@ function openDetailsModal(movieId) {
     window.scrollTo(0, 0);
     if (detailsSection) detailsSection.scrollTo(0, 0);
 
-    document.getElementById("detailsBg").style.backgroundImage = `url('${movie.backdrop || movie.poster}')`;
-    document.getElementById("detailsTitle").textContent = movie.title;
+    const titleInfo = getLocalizedTitle(movie);
+    const titleEl = document.getElementById("detailsTitle");
+    if (titleEl) {
+      titleEl.textContent = titleInfo.text;
+      if (titleInfo.isKurdish) {
+        titleEl.classList.add("notranslate");
+        titleEl.setAttribute("translate", "no");
+      } else {
+        titleEl.classList.remove("notranslate");
+        titleEl.removeAttribute("translate");
+      }
+    }
     document.getElementById("detailsRating").textContent = formatRating(movie.rating);
-    document.getElementById("detailsYear").textContent = movie.year;
     if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
       document.getElementById("detailsDuration").textContent = `${movie.seasons.length} Season${movie.seasons.length > 1 ? 's' : ''}`;
     } else {
