@@ -68,7 +68,7 @@ Your capabilities:
 2. If recommending movies or series that exist in CineWatch's catalog, embed a special card tag on its own line:
    [[MOVIE_CARD: <id>]]
    where <id> matches the exact CineWatch ID.
-3. Keep responses concise, formatted with clean bullet points and bold titles.
+3. Keep responses concise, formatted with clean bullet points and bold titles. Avoid excessive or unnecessary emojis.
 4. Language instruction:
    - If the user writes in Kurdish (سۆرانی) or current language is 'ckb', respond naturally in Kurdish Sorani.
    - If the user writes in Arabic or current language is 'ar', respond in fluent Arabic.
@@ -169,7 +169,7 @@ ${JSON.stringify(catalog.slice(0, 400))}
     let text = rawText.replace(movieCardRegex, (match, movieId) => {
       const movie = typeof MOVIES !== "undefined" ? MOVIES.find((m) => m.id === movieId) : null;
       if (!movie) return "";
-      const rating = movie.rating ? `⭐ ${movie.rating}` : "";
+      const rating = movie.rating ? `★ ${movie.rating}` : "";
       const year = movie.year || "";
       const type = movie.type || (movie.seasons ? "TV Show" : "Movie");
       const poster = movie.poster || movie.backdrop || "";
@@ -214,7 +214,7 @@ ${JSON.stringify(catalog.slice(0, 400))}
 
     if (!isUser) {
       msgDiv.innerHTML = `
-        <div class="ai-bubble-avatar">✨</div>
+        <div class="ai-bubble-avatar"><ion-icon name="sparkles"></ion-icon></div>
         <div class="ai-bubble-content">${formatAiResponse(content)}</div>
       `;
     } else {
@@ -234,7 +234,7 @@ ${JSON.stringify(catalog.slice(0, 400))}
     indicator.id = "aiTypingIndicator";
     indicator.className = "ai-chat-bubble ai-bubble typing-bubble";
     indicator.innerHTML = `
-      <div class="ai-bubble-avatar">✨</div>
+      <div class="ai-bubble-avatar"><ion-icon name="sparkles"></ion-icon></div>
       <div class="ai-bubble-content typing-dots">
         <span></span><span></span><span></span>
       </div>
