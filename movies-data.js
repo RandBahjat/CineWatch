@@ -4828,7 +4828,7 @@ window._MOVIES_DATA = [
     title: "Need for Speed",
     type: "Movie",
     year: 2014,
-    rating: 6.7,
+    rating: 6.4,
     age: "PG-13",
     duration: "2h 14m",
     genres: [
