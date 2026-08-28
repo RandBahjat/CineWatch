@@ -1918,29 +1918,6 @@ function openDetailsModal(movieId) {
     const reportBtn = document.getElementById("detailsReportBtn");
     if (reportBtn) {
       reportBtn.onclick = () => {
-        const reportModal = document.getElementById("reportModal");
-        if (reportModal) {
-          reportModal.classList.remove("hidden");
-          // Auto-fill the subject line with the current movie/series title
-          const subjectInput = document.getElementById("reportSubject");
-          if (subjectInput) {
-            subjectInput.value = `Issue with: ${movie.title}`;
-          }
-        }
-      };
-    }
-
-    // Initialize interactive rating system
-    if (typeof initializeRatingSystem === 'function') {
-      initializeRatingSystem(movie.id);
-    }
-
-    // Render Comments Section
-    renderCommentsSection(movie.id);
-
-    // Generate You May Like Section
-    const similarsGrid = document.getElementById("detailsSimilarsGrid");
-    const similarsSection = document.getElementById("detailsSimilarsSection");
     if (similarsGrid && similarsSection) {
       let similarMovies = MOVIES.filter(m => m.id !== movie.id)
         .map(m => {
