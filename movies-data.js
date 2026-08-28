@@ -4683,7 +4683,7 @@ window._MOVIES_DATA = [
       "Drama",
       "Sport"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8UvcoeMJag8UWGF8sg7eYspzq0Q.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/fu8h6Kg911AYYfYseblDKh7kSsP.jpg",
     videoUrl: "597",
     overview: "A seventeen-year-old aristocrat falls in love with a kind-hearted but poor artist aboard the luxurious, ill-fated R.M.S. Titanic. As their passionate romance blooms across the ship's strict class divide, they must fight for survival when the unsinkable ocean liner strikes an iceberg in the North Atlantic",
