@@ -66,6 +66,16 @@ function formatRating(rating) {
   return num.replace(/[0-9]/g, d => '٠١٢٣٤٥٦٧٨٩'[d]);
 }
 
+function getLocalizedOverview(item) {
+  if (!item) return "";
+  const cookies = document.cookie || '';
+  const isSorani = cookies.includes('googtrans=/en/ckb');
+  if (isSorani && item.overviewKurdish) {
+    return item.overviewKurdish;
+  }
+  return item.overview || "";
+}
+
 async function loadMediaFromAPI() {
   try {
     // 1. Load media from local JS files instead of Supabase per user preference
@@ -457,7 +467,7 @@ function setupHeroBanner() {
                 <span class="meta-year">${movie.year}</span>
                 ${genresList ? `<span class="meta-dot">•</span><span class="meta-genres-inline">${genresList}</span>` : ""}
             </div>
-            <p class="hero-overview">${movie.overview}</p>
+            <p class="hero-overview">${getLocalizedOverview(movie)}</p>
             <div class="hero-actions">
                 <button class="btn-hero-play notranslate" translate="no" onclick="openVideoPlayer('${movie.id}')">
                     <ion-icon name="play" style="font-size: 1.15em; vertical-align: -1px; margin-right: 4px;"></ion-icon> ${playText}
@@ -1749,7 +1759,7 @@ function openDetailsModal(movieId) {
       document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &middot; ");
     }
 
-    document.getElementById("detailsOverview").textContent = movie.overview;
+    document.getElementById("detailsOverview").textContent = getLocalizedOverview(movie);
 
     const castContainer = document.getElementById("detailsCastContainer");
     const castText = document.getElementById("detailsCastText");
@@ -1895,7 +1905,7 @@ function openDetailsModal(movieId) {
           const resolvedUrl = getEpisodeUrl(ep, seasonData);
           const thumb = ep.thumbnail || movie.backdrop || movie.poster || "";
           const duration = ep.duration || "";
-          const overview = ep.overview || "";
+          const overview = getLocalizedOverview(ep);
           return `
         <div class="episode-row ${resolvedUrl ? "" : "episode-unavailable"}" 
              data-video="${resolvedUrl}" 
@@ -2112,7 +2122,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
       const seasonData = parentMovie.seasons?.find(s => s.season === epData.season);
       return seasonData?.episodes?.find(e => e.episode === epData.episode);
     })() : null;
-    const overview = epObj?.overview || (parentMovie?.overview ?? "");
+    const overview = getLocalizedOverview(epObj) || getLocalizedOverview(parentMovie);
     if (overview) {
       overviewEl.textContent = overview;
       overviewEl.classList.remove("hidden");
