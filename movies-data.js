@@ -12570,7 +12570,7 @@ window._MOVIES_DATA = [
       "Fantasy"
 
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
+    poster: "https://image.tmdb.org/t/p/original/pbUZ2mYlb9fsdqjGv6cwoNfjfag.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/jr2tjSvV6SOMCcOLYMz9TSvOjgC.jpg",
     videoUrl: "1317288",
     overview: "Marty Mauser, aspiring ping-pong player in 1950s New York, chase dream nobody respect, go through hell to become great. Loosely inspire by real table tennis champ Marty Reisman, mix ambition, obsession, chaos.",
