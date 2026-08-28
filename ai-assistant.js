@@ -214,7 +214,7 @@ ${JSON.stringify(catalog.slice(0, 400))}
 
     if (!isUser) {
       msgDiv.innerHTML = `
-        <div class="ai-bubble-avatar"><ion-icon name="sparkles"></ion-icon></div>
+        <div class="ai-bubble-avatar"><ion-icon name="chatbubbles"></ion-icon></div>
         <div class="ai-bubble-content">${formatAiResponse(content)}</div>
       `;
     } else {
@@ -234,7 +234,7 @@ ${JSON.stringify(catalog.slice(0, 400))}
     indicator.id = "aiTypingIndicator";
     indicator.className = "ai-chat-bubble ai-bubble typing-bubble";
     indicator.innerHTML = `
-      <div class="ai-bubble-avatar"><ion-icon name="sparkles"></ion-icon></div>
+      <div class="ai-bubble-avatar"><ion-icon name="chatbubbles"></ion-icon></div>
       <div class="ai-bubble-content typing-dots">
         <span></span><span></span><span></span>
       </div>
