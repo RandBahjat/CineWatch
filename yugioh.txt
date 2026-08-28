@@ -1,0 +1,954 @@
+  {
+    title: "Yu-Gi-Oh! Duel Monsters",
+    type: "TV Show",
+    isAnime: true,
+    year: 2000,
+    rating: 7.7,
+    age: "TV-14",
+    duration: "24m",
+    genres: [
+      "Animation",
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/vQ1T2U20Yw61xTfSg8E1m6i9g2d.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/x8Y5p5F6k7P6q3L9m8N8q9q2.jpg",
+    videoUrl: "902",
+    anilistId: 481,
+    animeSlug: "yu-gi-oh-duel-monsters",
+    overview: "Yugi Mutou is a boy who loves games, but is often bullied. One day, he solves an ancient puzzle known as the Millennium Puzzle, causing a mysterious spirit with the personality of a gambler to reside in his body. From that moment on, whenever Yugi's friends are threatened, this other Yugi makes an appearance and challenges the bullies to dangerous Shadow Games.",
+    director: "Kunihisa Sugishima",
+    cast: [
+      "Shunsuke Kazama",
+      "Maki Saito",
+      "Hiroki Takahashi",
+      "Hidehiro Kikuchi"
+    ],
+    trending: true,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Heart of the Cards"
+          },
+          {
+            episode: 2,
+            title: "The Gauntlet is Thrown"
+          },
+          {
+            episode: 3,
+            title: "Journey to the Duelist Kingdom"
+          },
+          {
+            episode: 4,
+            title: "Into The Hornet's Nest (Part 1 of 2)"
+          },
+          {
+            episode: 5,
+            title: "The Ultimate Great Moth (Part 2 of 2)"
+          },
+          {
+            episode: 6,
+            title: "First Duel"
+          },
+          {
+            episode: 7,
+            title: "Attack From the Deep"
+          },
+          {
+            episode: 8,
+            title: "Everything's Relative (Part 1 of 3)"
+          },
+          {
+            episode: 9,
+            title: "Duel With A Ghoul (Part 2 of 3)"
+          },
+          {
+            episode: 10,
+            title: "Give Up The Ghost (Part 3 of 3)"
+          },
+          {
+            episode: 11,
+            title: "The Dueling Monkey (Part 1 of 2)"
+          },
+          {
+            episode: 12,
+            title: "Trial By Red Eyes (Part 2 of 2)"
+          },
+          {
+            episode: 13,
+            title: "Evil Spirit of the Ring"
+          },
+          {
+            episode: 14,
+            title: "The Light at the End of the Tunnel (Part 1 of 2)"
+          },
+          {
+            episode: 15,
+            title: "Winning Through Intimidation (Part 2 of 2)"
+          },
+          {
+            episode: 16,
+            title: "The Scars of Defeat"
+          },
+          {
+            episode: 17,
+            title: "Arena of Lost Souls (Part 1 of 2)"
+          },
+          {
+            episode: 18,
+            title: "Arena of Lost Souls (Part 2 of 2)"
+          },
+          {
+            episode: 19,
+            title: "Double Trouble Duel (Part 1 of 3)"
+          },
+          {
+            episode: 20,
+            title: "Double Trouble Duel (Part 2 of 3)"
+          },
+          {
+            episode: 21,
+            title: "Double Trouble Duel (Part 3 of 3)"
+          },
+          {
+            episode: 22,
+            title: "Face Off (Part 1 of 3)"
+          },
+          {
+            episode: 23,
+            title: "Face Off (Part 2 of 3)"
+          },
+          {
+            episode: 24,
+            title: "Face Off (Part 3 of 3)"
+          },
+          {
+            episode: 25,
+            title: "Shining Friendship"
+          },
+          {
+            episode: 26,
+            title: "Champion versus Creator (Part 1 of 2)"
+          },
+          {
+            episode: 27,
+            title: "Champion versus Creator (Part 2 of 2)"
+          },
+          {
+            episode: 28,
+            title: "The Night Before"
+          },
+          {
+            episode: 29,
+            title: "Duel Identity (Part 1 of 2)"
+          },
+          {
+            episode: 30,
+            title: "Duel Identity (Part 2 of 2)"
+          },
+          {
+            episode: 31,
+            title: "Keith's Machinations (Part 1 of 2)"
+          },
+          {
+            episode: 32,
+            title: "Keith's Machinations (Part 2 of 2)"
+          },
+          {
+            episode: 33,
+            title: "Best of Friends, Best of Duelists (Part 1 of 2)"
+          },
+          {
+            episode: 34,
+            title: "Best of Friends, Best of Duelists (Part 2 of 2)"
+          },
+          {
+            episode: 35,
+            title: "Yugi versus Pegasus: Match Of The Millennium (Part 1 of 5)"
+          },
+          {
+            episode: 36,
+            title: "Yugi versus Pegasus: Match Of The Millennium (Part 2 of 5)"
+          },
+          {
+            episode: 37,
+            title: "Yugi versus Pegasus: Match Of The Millennium (Part 3 of 5)"
+          },
+          {
+            episode: 38,
+            title: "Yugi versus Pegasus: Match Of The Millennium (Part 4 of 5)"
+          },
+          {
+            episode: 39,
+            title: "Yugi versus Pegasus: Match Of The Millennium (Part 5 of 5)"
+          },
+          {
+            episode: 40,
+            title: "Aftermath"
+          },
+          {
+            episode: 41,
+            title: "The Wrath of Rebecca (Part 1 of 2)"
+          },
+          {
+            episode: 42,
+            title: "The Ties of Friendship (Part 2 of 2)"
+          },
+          {
+            episode: 43,
+            title: "Legendary Heroes (Part 1 of 3)"
+          },
+          {
+            episode: 44,
+            title: "Legendary Heroes (Part 2 of 3)"
+          },
+          {
+            episode: 45,
+            title: "Legendary Heroes (Part 3 of 3)"
+          },
+          {
+            episode: 46,
+            title: "Dungeon Dice Monsters (Part 1 of 4)"
+          },
+          {
+            episode: 47,
+            title: "Dungeon Dice Monsters (Part 2 of 4)"
+          },
+          {
+            episode: 48,
+            title: "Dungeon Dice Monsters (Part 3 of 4)"
+          },
+          {
+            episode: 49,
+            title: "Dungeon Dice Monsters (Part 4 of 4)"
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "The Mystery Duelist (Part 1 of 2)"
+          },
+          {
+            episode: 2,
+            title: "The Mystery Duelist (Part 2 of 2)"
+          },
+          {
+            episode: 3,
+            title: "The Past is Prologue"
+          },
+          {
+            episode: 4,
+            title: "Steppin' Out"
+          },
+          {
+            episode: 5,
+            title: "Obelisk the Tormentor"
+          },
+          {
+            episode: 6,
+            title: "Stalked by the Rare Hunters"
+          },
+          {
+            episode: 7,
+            title: "Yugi Versus The Rare Hunter (Part 1 of 2)"
+          },
+          {
+            episode: 8,
+            title: "Yugi Versus The Rare Hunter (Part 2 of 2)"
+          },
+          {
+            episode: 9,
+            title: "The ESP Duelist (Part 1 of 2)"
+          },
+          {
+            episode: 10,
+            title: "The ESP Duelist (Part 2 of 2)"
+          },
+          {
+            episode: 11,
+            title: "The Master Of Magicians (Part 1 of 3)"
+          },
+          {
+            episode: 12,
+            title: "The Master of Magicians (Part 2 of 3)"
+          },
+          {
+            episode: 13,
+            title: "The Master Of Magicians (Part 3 of 3)"
+          },
+          {
+            episode: 14,
+            title: "Playing With A Parasite (Part 1 of 2)"
+          },
+          {
+            episode: 15,
+            title: "Playing With a Parasite (Part 2 of 2)"
+          },
+          {
+            episode: 16,
+            title: "Mime Control (Part 1 of 3)"
+          },
+          {
+            episode: 17,
+            title: "Mime Control (Part 2 of 3)"
+          },
+          {
+            episode: 18,
+            title: "Mime Control (Part 3 of 3)"
+          },
+          {
+            episode: 19,
+            title: "Legendary Fisherman (Part 1 of 2)"
+          },
+          {
+            episode: 20,
+            title: "Legendary Fisherman (Part 2 of 2)"
+          },
+          {
+            episode: 21,
+            title: "Double Duel (Part 1 of 4)"
+          },
+          {
+            episode: 22,
+            title: "Double Duel (Part 2 of 4)"
+          },
+          {
+            episode: 23,
+            title: "Double Duel (Part 3 of 4)"
+          },
+          {
+            episode: 24,
+            title: "Double Duel (Part 4 of 4)"
+          },
+          {
+            episode: 25,
+            title: "The Rescue"
+          },
+          {
+            episode: 26,
+            title: "Friends 'Til the End (Part 1 of 4)"
+          },
+          {
+            episode: 27,
+            title: "Friends 'Til the End (Part 2 of 4)"
+          },
+          {
+            episode: 28,
+            title: "Friends 'Til the End (Part 3 of 4)"
+          },
+          {
+            episode: 29,
+            title: "Friends 'Til the End (Part 4 of 4)"
+          },
+          {
+            episode: 30,
+            title: "Shadow Of A Duel"
+          },
+          {
+            episode: 31,
+            title: "Lights, Camera, Duel"
+          },
+          {
+            episode: 32,
+            title: "Let the Finals Begin!"
+          },
+          {
+            episode: 33,
+            title: "The Dark Spirit Revealed (Part 1 of 3)"
+          },
+          {
+            episode: 34,
+            title: "The Dark Spirit Revealed (Part 2 of 3)"
+          },
+          {
+            episode: 35,
+            title: "The Dark Spirit Revealed (Part 3 of 3)"
+          },
+          {
+            episode: 36,
+            title: "Rage Of The Egyptian Gods"
+          },
+          {
+            episode: 37,
+            title: "Awakening of Evil (Part 1 of 4)"
+          },
+          {
+            episode: 38,
+            title: "Awakening of Evil (Part 2 of 4)"
+          },
+          {
+            episode: 39,
+            title: "Awakening of Evil (Part 3 of 4)"
+          },
+          {
+            episode: 40,
+            title: "Awakening of Evil (Part 4 of 4)"
+          },
+          {
+            episode: 41,
+            title: "Mind Game (Part 1 of 3)"
+          },
+          {
+            episode: 42,
+            title: "Mind Game (Part 2 of 3)"
+          },
+          {
+            episode: 43,
+            title: "Mind Game (Part 3 of 3)"
+          },
+          {
+            episode: 44,
+            title: "A Duel With Destiny (Part 1 of 2)"
+          },
+          {
+            episode: 45,
+            title: "A Duel With Destiny (Part 2 of 2)"
+          },
+          {
+            episode: 46,
+            title: "The Tomb-Keeper's Secret"
+          },
+          {
+            episode: 47,
+            title: "Showdown In The Shadows (Part 1 of 2)"
+          },
+          {
+            episode: 48,
+            title: "Showdown In The Shadows (Part 2 of 2)"
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "A Virtual Nightmare"
+          },
+          {
+            episode: 2,
+            title: "Isolated in Cyber Space (Part 1 of 3)"
+          },
+          {
+            episode: 3,
+            title: "Isolated in Cyber Space (Part 2 of 3)"
+          },
+          {
+            episode: 4,
+            title: "Isolated in Cyber Space (Part 3 of 3)"
+          },
+          {
+            episode: 5,
+            title: "Freeze Play (Part 1 of 2)"
+          },
+          {
+            episode: 6,
+            title: "Freeze Play (Part 2 of 2)"
+          },
+          {
+            episode: 7,
+            title: "Courtroom Chaos (Part 1 of 2)"
+          },
+          {
+            episode: 8,
+            title: "Courtroom Chaos (Part 2 of 2)"
+          },
+          {
+            episode: 9,
+            title: "Mechanical Mayhem (Part 1 of 2)"
+          },
+          {
+            episode: 10,
+            title: "Mechanical Mayhem (Part 2 of 2)"
+          },
+          {
+            episode: 11,
+            title: "Settling the Score (Part 1 of 2)"
+          },
+          {
+            episode: 12,
+            title: "Settling the Score (Part 2 of 2)"
+          },
+          {
+            episode: 13,
+            title: "Noah's Secret"
+          },
+          {
+            episode: 14,
+            title: "Merger Of The Big Five (Part 1 of 3)"
+          },
+          {
+            episode: 15,
+            title: "Merger Of The Big Five (Part 2 of 3)"
+          },
+          {
+            episode: 16,
+            title: "Merger Of The Big Five (Part 3 of 3)"
+          },
+          {
+            episode: 17,
+            title: "Brothers In Arms (Part 1 of 3)"
+          },
+          {
+            episode: 18,
+            title: "Brothers In Arms (Part 2 of 3)"
+          },
+          {
+            episode: 19,
+            title: "Brothers In Arms (Part 3 of 3)"
+          },
+          {
+            episode: 20,
+            title: "Noah's Final Threat (Part 1 of 2)"
+          },
+          {
+            episode: 21,
+            title: "Noah's Final Threat (Part 2 of 2)"
+          },
+          {
+            episode: 22,
+            title: "So Close Yet So Far"
+          },
+          {
+            episode: 23,
+            title: "Burying The Past (Part 1 of 2)"
+          },
+          {
+            episode: 24,
+            title: "Burying The Past (Part 2 of 2)"
+          },
+          {
+            episode: 25,
+            title: "Back To Battle City (Part 1 of 3)"
+          },
+          {
+            episode: 26,
+            title: "Back To Battle City (Part 2 of 3)"
+          },
+          {
+            episode: 27,
+            title: "Back To Battle City (Part 3 of 3)"
+          },
+          {
+            episode: 28,
+            title: "The Darkness Returns (Part 1 of 4)"
+          },
+          {
+            episode: 29,
+            title: "The Darkness Returns (Part 2 of 4)"
+          },
+          {
+            episode: 30,
+            title: "The Darkness Returns (Part 3 of 4)"
+          },
+          {
+            episode: 31,
+            title: "The Darkness Returns (Part 4 of 4)"
+          },
+          {
+            episode: 32,
+            title: "Clash In The Coliseum (Part 1 of 6)"
+          },
+          {
+            episode: 33,
+            title: "Clash In The Coliseum (Part 2 of 6)"
+          },
+          {
+            episode: 34,
+            title: "Clash In The Coliseum (Part 3 of 6)"
+          },
+          {
+            episode: 35,
+            title: "Clash In The Coliseum (Part 4 of 6)"
+          },
+          {
+            episode: 36,
+            title: "Clash In The Coliseum (Part 5 of 6)"
+          },
+          {
+            episode: 37,
+            title: "Clash In The Coliseum (Part 6 of 6)"
+          },
+          {
+            episode: 38,
+            title: "Battle For The Bronze (Part 1 of 3)"
+          },
+          {
+            episode: 39,
+            title: "Battle For The Bronze (Part 2 of 3)"
+          },
+          {
+            episode: 40,
+            title: "Battle For The Bronze (Part 3 of 3)"
+          },
+          {
+            episode: 41,
+            title: "The Final Face Off (Part 1 of 5)"
+          },
+          {
+            episode: 42,
+            title: "The Final Face Off (Part 2 of 5)"
+          },
+          {
+            episode: 43,
+            title: "The Final Face Off (Part 3 of 5)"
+          },
+          {
+            episode: 44,
+            title: "The Final Face Off (Part 4 of 5)"
+          },
+          {
+            episode: 45,
+            title: "The Final Face Off (Part 5 of 5)"
+          },
+          {
+            episode: 46,
+            title: "One For The Road"
+          },
+          {
+            episode: 47,
+            title: "Looking Back And Moving Ahead"
+          }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          {
+            episode: 1,
+            title: "A New Evil (Part 1 of 2)"
+          },
+          {
+            episode: 2,
+            title: "A New Evil (Part 2 of 2)"
+          },
+          {
+            episode: 3,
+            title: "Legend Of The Dragons"
+          },
+          {
+            episode: 4,
+            title: "The Creator Returns"
+          },
+          {
+            episode: 5,
+            title: "Deja Duel! (Part 1 of 2)"
+          },
+          {
+            episode: 6,
+            title: "Deja Duel! (Part 2 of 2)"
+          },
+          {
+            episode: 7,
+            title: "An Unexpected Enemy"
+          },
+          {
+            episode: 8,
+            title: "My Freaky Valentine (Part 1 of 3)"
+          },
+          {
+            episode: 9,
+            title: "My Freaky Valentine (Part 2 of 3)"
+          },
+          {
+            episode: 10,
+            title: "My Freaky Valentine (Part 3 of 3)"
+          },
+          {
+            episode: 11,
+            title: "The Challenge"
+          },
+          {
+            episode: 12,
+            title: "Fate Of The Pharaoh (Part 1 of 3)"
+          },
+          {
+            episode: 13,
+            title: "Fate Of The Pharaoh (Part 2 of 3)"
+          },
+          {
+            episode: 14,
+            title: "Fate Of The Pharaoh (Part 3 of 3)"
+          },
+          {
+            episode: 15,
+            title: "Trial By Stone"
+          },
+          {
+            episode: 16,
+            title: "On The Wrong Track (Part 1 of 3)"
+          },
+          {
+            episode: 17,
+            title: "On The Wrong Track (Part 2 of 3)"
+          },
+          {
+            episode: 18,
+            title: "On The Wrong Track (Part 3 of 3)"
+          },
+          {
+            episode: 19,
+            title: "Self Destruction"
+          },
+          {
+            episode: 20,
+            title: "Reliving the Past"
+          },
+          {
+            episode: 21,
+            title: "Deck of Armor"
+          },
+          {
+            episode: 22,
+            title: "Flight Of Fear (Part 1 of 2)"
+          },
+          {
+            episode: 23,
+            title: "Flight Of Fear (Part 2 of 2)"
+          },
+          {
+            episode: 24,
+            title: "Paradise Found"
+          },
+          {
+            episode: 25,
+            title: "Fighting For A Friend (Part 1 of 5)"
+          },
+          {
+            episode: 26,
+            title: "Fighting For A Friend (Part 2 of 5)"
+          },
+          {
+            episode: 27,
+            title: "Fighting For A Friend (Part 3 of 5)"
+          },
+          {
+            episode: 28,
+            title: "Fighting For A Friend (Part 4 of 5)"
+          },
+          {
+            episode: 29,
+            title: "Fighting For A Friend (Part 5 of 5)"
+          },
+          {
+            episode: 30,
+            title: "Grappling With A Guardian (Part 1 of 3)"
+          },
+          {
+            episode: 31,
+            title: "Grappling With A Guardian (Part 2 of 3)"
+          },
+          {
+            episode: 32,
+            title: "Grappling With A Guardian (Part 3 of 3)"
+          },
+          {
+            episode: 33,
+            title: "A Duel With Dartz (Part 1 of 6)"
+          },
+          {
+            episode: 34,
+            title: "A Duel With Dartz (Part 2 of 6)"
+          },
+          {
+            episode: 35,
+            title: "A Duel With Dartz (Part 3 of 6)"
+          },
+          {
+            episode: 36,
+            title: "A Duel With Dartz (Part 4 of 6)"
+          },
+          {
+            episode: 37,
+            title: "A Duel With Dartz (Part 5 of 6)"
+          },
+          {
+            episode: 38,
+            title: "A Duel With Dartz (Part 6 of 6)"
+          },
+          {
+            episode: 39,
+            title: "Rise Of The Great Beast (Part 1 of 2)"
+          },
+          {
+            episode: 40,
+            title: "Rise Of The Great Beast (Part 2 of 2)"
+          }
+        ]
+      },
+      {
+        season: 5,
+        episodes: [
+          {
+            episode: 1,
+            title: "Unwanted Guest (Part 1 of 2)"
+          },
+          {
+            episode: 2,
+            title: "Unwanted Guest (Part 2 of 2)"
+          },
+          {
+            episode: 3,
+            title: "Let the Games Begin! (Part 1 of 2)"
+          },
+          {
+            episode: 4,
+            title: "Let the Games Begin! (Part 2 of 2)"
+          },
+          {
+            episode: 5,
+            title: "Child's Play"
+          },
+          {
+            episode: 6,
+            title: "Down in Flames (Part 1 of 2)"
+          },
+          {
+            episode: 7,
+            title: "Down in Flames (Part 2 of 2)"
+          },
+          {
+            episode: 8,
+            title: "A Brawl in a Small Town (Part 1 of 2)"
+          },
+          {
+            episode: 9,
+            title: "A Brawl in a Small Town (Part 2 of 2)"
+          },
+          {
+            episode: 10,
+            title: "One Step Ahead (Part 1 of 2)"
+          },
+          {
+            episode: 11,
+            title: "One Step Ahead (Part 2 of 2)"
+          },
+          {
+            episode: 12,
+            title: "Sinister Secrets (Part 1 of 3)"
+          },
+          {
+            episode: 13,
+            title: "Sinister Secrets (Part 2 of 3)"
+          },
+          {
+            episode: 14,
+            title: "Sinister Secrets (Part 3 of 3)"
+          },
+          {
+            episode: 15,
+            title: "Tomb of the Nameless Pharaoh"
+          },
+          {
+            episode: 16,
+            title: "Spiritual Awakening"
+          },
+          {
+            episode: 17,
+            title: "Memoirs of a Pharaoh"
+          },
+          {
+            episode: 18,
+            title: "The Intruder (1)"
+          },
+          {
+            episode: 19,
+            title: "The Intruder (2)"
+          },
+          {
+            episode: 20,
+            title: "Makings of a Magician"
+          },
+          {
+            episode: 21,
+            title: "Birth of the Blue-Eyes"
+          },
+          {
+            episode: 22,
+            title: "Village of Lost Souls"
+          },
+          {
+            episode: 23,
+            title: "A Reversal of Fortune"
+          },
+          {
+            episode: 24,
+            title: "In Search of a King"
+          },
+          {
+            episode: 25,
+            title: "Village of Vengeance (1)"
+          },
+          {
+            episode: 26,
+            title: "Village of Vengeance (2)"
+          },
+          {
+            episode: 27,
+            title: "Village of Vengeance (3)"
+          },
+          {
+            episode: 28,
+            title: "Village of Vengeance (4)"
+          },
+          {
+            episode: 29,
+            title: "Village of Vengeance (5)"
+          },
+          {
+            episode: 30,
+            title: "Name of the Game"
+          },
+          {
+            episode: 31,
+            title: "The Dark One Cometh (1)"
+          },
+          {
+            episode: 32,
+            title: "The Dark One Cometh (2)"
+          },
+          {
+            episode: 33,
+            title: "The Dark One Cometh (3)"
+          },
+          {
+            episode: 34,
+            title: "The Dark One Cometh (4)"
+          },
+          {
+            episode: 35,
+            title: "In the Name of the Pharaoh!"
+          },
+          {
+            episode: 36,
+            title: "The Final Journey"
+          },
+          {
+            episode: 37,
+            title: "The Final Duel (1)"
+          },
+          {
+            episode: 38,
+            title: "The Final Duel (2)"
+          },
+          {
+            episode: 39,
+            title: "The Final Duel (3)"
+          },
+          {
+            episode: 40,
+            title: "The Final Duel (4)"
+          }
+        ]
+      }
+    ]
+  }
