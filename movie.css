@@ -634,68 +634,6 @@ body.rtl-layout .modal-search-clear {
 .search-header-right {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-}
-
-.search-filter-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: rgba(255, 255, 255, 0.85);
-  padding: 0.4rem 0.8rem;
-  border-radius: 50px;
-  font-size: 0.76rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  white-space: nowrap;
-}
-
-.search-filter-btn:hover {
-  background: rgba(229, 9, 20, 0.18);
-  border-color: rgba(229, 9, 20, 0.4);
-  color: #fff;
-}
-
-.search-filter-dropdown {
-  position: absolute;
-  top: calc(100% + 8px);
-  right: 0;
-  background: rgba(18, 22, 34, 0.98);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 12px;
-  padding: 0.4rem;
-  z-index: 100;
-  min-width: 155px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(16px);
-}
-
-.search-filter-dropdown.hidden {
-  display: none;
-}
-
-.filter-option {
-  padding: 0.55rem 0.85rem;
-  color: rgba(255, 255, 255, 0.75);
-  cursor: pointer;
-  border-radius: 8px;
-  font-size: 0.82rem;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-
-.filter-option:hover,
-.filter-option.active {
-  background: rgba(229, 9, 20, 0.2);
-  color: #ff334b;
-  font-weight: 600;
-}
-
-.search-modal-close {
-  background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   color: rgba(255, 255, 255, 0.75);
