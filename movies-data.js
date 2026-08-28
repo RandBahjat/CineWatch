@@ -12472,7 +12472,7 @@ window._MOVIES_DATA = [
     overview: "Marty Mauser, aspiring ping-pong player in 1950s New York, chase dream nobody respect, go through hell to become great. Loosely inspire by real table tennis champ Marty Reisman, mix ambition, obsession, chaos.",
     director: "Josh Safdie",
     cast: [
-      "Masako Nozawa, Naoki Tatsuta, Toshio Furukawa, Mayumi Tanaka, Hiromi Tsuru"
+      "Timothée Chalamet, Gwyneth Paltrow, Odessa A'zion, Kevin O'Leary, Tyler Okonma (Tyler, the Creator), Abel Ferrara, Fran Drescher"
     ],
     trending: false,
     featured: false,
