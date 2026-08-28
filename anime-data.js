@@ -19180,7 +19180,7 @@ window._ANIME_DATA = [
             title: "Episode 2",
             duration: "24m",
             absoluteEpisode: 2,
-            overview: "Izuku and his classmates continue their hero training."
+            overview: "Izuku and his classmates continue their hero training.",
             overviewKurdish: "",
           },
           {
@@ -19188,7 +19188,7 @@ window._ANIME_DATA = [
             title: "Episode 3",
             duration: "24m",
             absoluteEpisode: 3,
-            overview: "Izuku and his classmates continue their hero training."
+            overview: "Izuku and his classmates continue their hero training.",
             overviewKurdish: "",
           },
           {
