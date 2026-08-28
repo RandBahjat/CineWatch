@@ -12557,7 +12557,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Marty Supreme",
+    title: "Assassin's Creed",
     type: "Movie",
     year: 2025,
     rating: 7.5,
