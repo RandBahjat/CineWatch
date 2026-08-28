@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260828_2109">
+    <link rel="stylesheet" href="movie.css?v=20260828_2110">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows ΓÇö all in one simple, easy-to-use site.</title>
@@ -26,9 +26,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_3821" defer></script>
-    <script src="series-data.js?v=20260818_3821" defer></script>
-    <script src="anime-data.js?v=20260818_3821" defer></script>
+    <script src="movies-data.js?v=20260818_3822" defer></script>
+    <script src="series-data.js?v=20260818_3822" defer></script>
+    <script src="anime-data.js?v=20260818_3822" defer></script>
     <script src="movie.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1408,8 +1408,10 @@
                 document.querySelectorAll('.report-text').forEach(el => el.textContent = 'ڕیپۆرت');
                 const detailsReportBtn = document.getElementById('detailsReportBtn');
                 if (detailsReportBtn) detailsReportBtn.textContent = 'ڕیپۆرت';
-                const submitReportText = document.getElementById('submitReportText');
-                if (submitReportText) submitReportText.textContent = 'ڕیپۆرت';
+                const detailsSimilarsText = document.getElementById('detailsSimilarsText');
+                if (detailsSimilarsText) detailsSimilarsText.textContent = 'هاوشێوە';
+                const detailsSimilarsHeading = document.getElementById('detailsSimilarsHeading');
+                if (detailsSimilarsHeading) detailsSimilarsHeading.textContent = 'بەرهەمی هاوشێوە';
             } else if (currentLang === 'ar') {
                 if (loginPwLabel) loginPwLabel.textContent = 'كلمة المرور';
                 if (signupPwLabel) signupPwLabel.textContent = 'كلمة المرور';
@@ -1433,6 +1435,10 @@
                 if (filterOptAll) filterOptAll.textContent = 'أفلام ومسلسلات';
                 if (filterOptMovie) filterOptMovie.textContent = 'أفلام فقط';
                 if (filterOptSeries) filterOptSeries.textContent = 'مسلسلات فقط';
+                const detailsSimilarsText = document.getElementById('detailsSimilarsText');
+                if (detailsSimilarsText) detailsSimilarsText.textContent = 'أعمال مشابهة';
+                const detailsSimilarsHeading = document.getElementById('detailsSimilarsHeading');
+                if (detailsSimilarsHeading) detailsSimilarsHeading.textContent = 'قد يعجبك أيضاً';
             } else {
                 if (loginPwLabel) loginPwLabel.textContent = 'Password';
                 if (signupPwLabel) signupPwLabel.textContent = 'Password';
@@ -1462,6 +1468,10 @@
                 if (detailsReportBtn) detailsReportBtn.textContent = 'Report';
                 const submitReportText = document.getElementById('submitReportText');
                 if (submitReportText) submitReportText.textContent = 'Submit Report';
+                const detailsSimilarsText = document.getElementById('detailsSimilarsText');
+                if (detailsSimilarsText) detailsSimilarsText.textContent = 'Similars';
+                const detailsSimilarsHeading = document.getElementById('detailsSimilarsHeading');
+                if (detailsSimilarsHeading) detailsSimilarsHeading.textContent = 'You may like';
             }
 
             // Setup Custom Dropdown
