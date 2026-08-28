@@ -4311,7 +4311,7 @@ window._MOVIES_DATA = [
     title: "Ford v Ferrari",
     type: "Movie",
     year: 2019,
-    rating: 6.3,
+    rating: 8.1,
     age: "R",
     duration: "1h 38m",
     genres: [
