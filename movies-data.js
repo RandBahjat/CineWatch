@@ -18,7 +18,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/po0uFYwWNByHQzHLCVJ6FetkN4M.jpg",
     videoUrl: "1744462",
     overview: "Jason, Lucia team up in sunny, dangerous state of Leonida, easy score gone wrong drag them into criminal conspiracy stretch across whole region. Now must rely on each other, survive underworld of Vice City to make it out alive.",
-    director: "Jean-François Richet",
+    director: "Rockstar Games",
     cast: [
       "Jason Statham, Annabelle Wallis, Jason Wong"
     ],
