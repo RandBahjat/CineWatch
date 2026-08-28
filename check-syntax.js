@@ -52,11 +52,9 @@ const cleanHeaderCss = `.modal-search-clear:hover {
   box-shadow: 0 2px 10px rgba(229, 9, 20, 0.4);
 }`;
 
-if (css.includes(searchClearTarget)) {
-    css = css.replace(searchClearTarget, cleanHeaderCss);
-    fs.writeFileSync('movie.css', css, 'utf8');
-    console.log('movie.css header styles updated successfully');
-}
+css = css.replace(/\.modal-search-clear:hover\s*\{\s*background:\s*rgba\(229,\s*9,\s*20,\s*0\.3\);/g, cleanHeaderCss);
+fs.writeFileSync('movie.css', css, 'utf8');
+console.log('movie.css header styles updated successfully');
 
 function checkFile(filename) {
     try {
