@@ -12562,7 +12562,7 @@ window._MOVIES_DATA = [
     year: 2016,
     rating: 5.6,
     age: "PG-13",
-    duration: "2h 29m",
+    duration: "1h 55m",
     genres: [
       "Drama",
       "Sport",
