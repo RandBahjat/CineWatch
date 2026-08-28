@@ -680,7 +680,6 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
 
   const imgSrc = forcePoster ? movie.poster : (movie.backdrop || movie.poster);
   const sourceTag = forcePoster ? "" : `<source media="(max-width: 768px)" srcset="${movie.poster}">`;
-  const titleInfo = getLocalizedTitle(movie);
 
   return `
     <div class="movie-card" data-id="${movie.id}">
@@ -696,7 +695,7 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
         </div>
       </div>
       <div class="card-details">
-        <h4 class="card-title ${titleInfo.isKurdish ? 'notranslate' : ''}" ${titleInfo.isKurdish ? 'translate="no"' : ''}>${titleInfo.text}</h4>
+        <h4 class="card-title notranslate" translate="no">${movie.title}</h4>
         <div class="card-meta">
           <span class="card-rating">⭐ ${formatRating(movie.rating)}</span>
           <span class="card-year">${formatNumber(movie.year)}</span>
