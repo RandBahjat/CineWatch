@@ -909,27 +909,6 @@ function renderContinueWatchingPage() {
   }
 
   if (items.length === 0) {
-    grid.innerHTML = "";
-    if (emptyTitle) emptyTitle.textContent = "No titles in Continue Watching";
-    if (emptyText) emptyText.textContent = "Movies and series you start watching will appear here so you can easily pick up where you left off.";
-    if (exploreBtn) {
-      exploreBtn.textContent = "Explore Movies";
-      exploreBtn.onclick = () => switchView("movies");
-    }
-    emptyState.classList.remove("hidden");
-    return;
-  }
-
-  emptyState.classList.add("hidden");
-
-  // Update Action Bar UI
-  const selectBtn = document.getElementById("cwSelectBtn");
-  const removeBtn = document.getElementById("cwRemoveSelectedBtn");
-  const cancelBtn = document.getElementById("cwCancelSelectBtn");
-
-  if (selectBtn && removeBtn && cancelBtn) {
-    if (state.isCwSelectionMode) {
-      selectBtn.classList.add("hidden");
         ? `<span>In Progress</span>`
         : `<span>${Math.max(1, Math.round((item.duration - item.currentTime) / 60))}m left</span><span>${percent}%</span>`;
 
