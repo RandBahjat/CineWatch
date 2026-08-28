@@ -12593,7 +12593,6 @@ window._MOVIES_DATA = [
     genres: [
       "Action",
       "Adventure",
-      "Sci-Fi",
       "Fantasy"
 
     ],
