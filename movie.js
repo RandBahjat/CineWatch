@@ -669,12 +669,13 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
   const rankHtml = rank !== null ? `
     <div class="top10-rank-badge">
       <span class="top10-rank-text">TOP</span>
-      <span class="top10-rank-num">${rank.toString().padStart(2, '0')}</span>
+      <span class="top10-rank-num">${formatNumber(rank.toString().padStart(2, '0'))}</span>
     </div>
   ` : "";
 
   const imgSrc = forcePoster ? movie.poster : (movie.backdrop || movie.poster);
   const sourceTag = forcePoster ? "" : `<source media="(max-width: 768px)" srcset="${movie.poster}">`;
+  const titleInfo = getLocalizedTitle(movie);
 
   return `
     <div class="movie-card" data-id="${movie.id}">
@@ -690,11 +691,11 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
         </div>
       </div>
       <div class="card-details">
-        <h4 class="card-title notranslate" translate="no">${movie.title}</h4>
+        <h4 class="card-title ${titleInfo.isKurdish ? 'notranslate' : ''}" ${titleInfo.isKurdish ? 'translate="no"' : ''}>${titleInfo.text}</h4>
         <div class="card-meta">
           <span class="card-rating">⭐ ${formatRating(movie.rating)}</span>
-          <span class="card-year">${movie.year}</span>
-          <span class="card-type">${displayType}</span>
+          <span class="card-year">${formatNumber(movie.year)}</span>
+          <span class="card-type notranslate" translate="no">${formatMediaType(displayType)}</span>
         </div>
       </div>
     </div>
