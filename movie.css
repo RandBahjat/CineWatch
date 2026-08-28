@@ -725,9 +725,6 @@ body.rtl-layout .modal-search-clear {
   border-color: rgba(229, 9, 20, 0.4);
   color: #fff;
   transform: translateY(-1px);
-}
-
-/* Recent Searches List */
 .search-recent-section.hidden {
   display: none;
 }
