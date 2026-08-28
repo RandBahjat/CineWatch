@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260829_57">
+    <link rel="stylesheet" href="movie.css?v=20260829_58">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -26,9 +26,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_3968" defer></script>
-    <script src="series-data.js?v=20260818_3968" defer></script>
-    <script src="anime-data.js?v=20260818_3968" defer></script>
+    <script src="movies-data.js?v=20260818_3969" defer></script>
+    <script src="series-data.js?v=20260818_3969" defer></script>
+    <script src="anime-data.js?v=20260818_3969" defer></script>
     <script src="movie.js?v=v24" defer></script>
     <script src="ai-assistant.js?v=v4" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -173,21 +173,19 @@
         </div>
     </header>
 
-    <!-- Search Modal (Futuristic Spotlight Edition) -->
+    <!-- Search Modal (Spotlight Organization) -->
     <div class="search-modal hidden" id="searchModal">
         <div class="search-modal-backdrop" id="searchModalBackdrop"></div>
         <div class="search-modal-content">
-            <!-- Animated Ambient Glow Aura -->
+            <!-- Ambient Glow -->
             <div class="search-bg-glow"></div>
-            <div class="search-blob search-blob1"></div>
-            <div class="search-blob search-blob2"></div>
 
-            <!-- Top Search Input Bar (Linear / Raycast Style) -->
+            <!-- Top Search Input Bar -->
             <div class="search-modal-header">
                 <div class="search-modal-input-wrapper">
                     <ion-icon name="search-outline" class="modal-search-icon"></ion-icon>
                     <input type="text" id="searchInput" placeholder="Search movies, series, anime, genres, actors..." autocomplete="off">
-                    <button class="modal-search-clear hidden" id="searchClearBtn">&times;</button>
+                    <button class="modal-search-clear hidden" id="searchClearBtn" title="Clear input">&times;</button>
                 </div>
 
                 <div class="search-header-right">
@@ -208,21 +206,26 @@
                 </div>
             </div>
 
-            <!-- Quick Trend Filter Chips -->
-            <div class="search-quick-tags notranslate" translate="no" id="searchQuickTags">
-                <span class="quick-tag-label">🔥 Trending:</span>
-                <button class="search-tag-chip" data-search="Action">Action</button>
-                <button class="search-tag-chip" data-search="Sci-Fi">Sci-Fi</button>
-                <button class="search-tag-chip" data-search="Animation">Anime</button>
-                <button class="search-tag-chip" data-search="Horror">Horror</button>
-                <button class="search-tag-chip" data-search="Comedy">Comedy</button>
-            </div>
-
-            <!-- Body (Recent & Results) -->
+            <!-- Main Content Area -->
             <div class="search-modal-body">
+                <!-- Trending / Explore Section -->
+                <div class="search-section" id="searchExploreSection">
+                    <div class="search-section-header">
+                        <span><ion-icon name="flame-outline"></ion-icon> POPULAR CATEGORIES</span>
+                    </div>
+                    <div class="search-tags-grid notranslate" translate="no" id="searchQuickTags">
+                        <button class="search-tag-chip" data-search="Action"><span class="tag-emoji">⚡</span> Action</button>
+                        <button class="search-tag-chip" data-search="Sci-Fi"><span class="tag-emoji">🧠</span> Sci-Fi</button>
+                        <button class="search-tag-chip" data-search="Animation"><span class="tag-emoji">🎌</span> Anime</button>
+                        <button class="search-tag-chip" data-search="Horror"><span class="tag-emoji">💀</span> Horror</button>
+                        <button class="search-tag-chip" data-search="Comedy"><span class="tag-emoji">🍿</span> Comedy</button>
+                        <button class="search-tag-chip" data-search="Drama"><span class="tag-emoji">🎭</span> Drama</button>
+                    </div>
+                </div>
+
                 <!-- Recent Searches Section -->
-                <div class="search-recent-section" id="searchRecentSection">
-                    <div class="search-recent-header">
+                <div class="search-section search-recent-section" id="searchRecentSection">
+                    <div class="search-section-header">
                         <span><ion-icon name="time-outline"></ion-icon> RECENT SEARCHES</span>
                         <button id="clearRecentBtn">Clear History</button>
                     </div>
@@ -237,11 +240,16 @@
 
             <!-- Search Footer Keyboard Shortcuts -->
             <div class="search-modal-footer">
-                <div class="search-hint-item">
-                    <kbd>↵</kbd> <span>to view all results</span>
+                <div class="search-footer-shortcuts">
+                    <div class="search-hint-item">
+                        <kbd>↵</kbd> <span>Search All</span>
+                    </div>
+                    <div class="search-hint-item">
+                        <kbd>ESC</kbd> <span>Close</span>
+                    </div>
                 </div>
-                <div class="search-hint-item">
-                    <kbd>esc</kbd> <span>to close</span>
+                <div class="search-footer-brand notranslate" translate="no">
+                    <span>CineWatch Search</span>
                 </div>
             </div>
         </div>
