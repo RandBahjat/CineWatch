@@ -4321,7 +4321,7 @@ window._MOVIES_DATA = [
       "Biograpghy"
     ],
     poster: "https://image.tmdb.org/t/p/original/j3X6EgrPFc9BUKgMoMOoSkHt8iX.jpg",
-    backdrop: "https://m.media-amazon.com/images/S/pv-target-images/f5a62dc8ead401c75012a3398a02c2ecb09d1f8f12aa6ba6cc04287c60c2b972.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/ydmZIafp66mHABs3QJDwvjRgZfE.jpg",
     videoUrl: "1122573",
     overview: "Two extraction specialists are tasked with planning an escape route for a high-level female negotiator caught in the middle of a high-stakes, dangerous environment where the lines between friend and foe are blurred.",
     director: "Guy Ritchie",
