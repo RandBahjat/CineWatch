@@ -1399,6 +1399,17 @@ select {
 .continue-poster-wrap {
   aspect-ratio: 16 / 9;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: relative;
+}
+
+.continue-poster-wrap .card-poster,
+.continue-card .card-poster {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
 }
 
 .progress-bar-wrap {
