@@ -385,6 +385,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/4QnFxk03yAn7U2ZTL5oMCCqxlPc.jpg',
     videoUrl: '2098',
     overview: "Billionaire Bruce Wayne defends Gotham City as the Dark Knight, battling a iconic rogues' gallery including the Joker, Two-Face, Harley Quinn, and Mr. Freeze. Blending a dark 1940s film noir aesthetic with complex storytelling, it redefined superhero animation and set the foundation for the DC Animated Universe.",
+    overviewKurdish: "",
     director: 'Bruce Timm, Eric Radomski',
     cast: [
       'Kevin Conroy, Mark Hamill, Efrem Zimbalist Jr., Bob Hastings, Loren Lester, Arleen Sorkin'
@@ -774,6 +775,7 @@ window._SERIES_DATA = [
     backdrop: 'https://images8.alphacoders.com/111/1116250.jpg',
     videoUrl: '4625',
     overview: "Continuing the story of Batman: The Animated Series, Gotham's crusade evolves with a revamped art style and a dynamic new team dynamic. With Dick Grayson stepping out as Nightwing, Barbara Gordon officially taking on the role of Batgirl, and young Tim Drake becoming the new Robin, Batman leads his expanded Bat-Family against classic and newly dangerous threats.",
+    overviewKurdish: "",
     director: 'Bruce Timm, Paul Dini',
     cast: [
       'Kevin Conroy, Mathew Valencia, Tara Strong, Loren Lester, Mark Hamill, Arleen Sorkin'
@@ -1417,6 +1419,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/iTHKz6kCv1UyXfdcB4kutMQYsaD.jpg',
     videoUrl: '888',
     overview: "Bitten by a neogenetic spider, college student Peter Parker develops spider-like superpowers. Now moonlighting as the masked hero Spider-Man, he battles a rogues' gallery of classic villains â€” including the Green Goblin, Venom, Doctor Octopus, and Kingpin â€” while balancing crimefighting with the struggles of his personal and student life.",
+    overviewKurdish: "",
     director: 'John Semper (based on characters by Stan Lee & Steve Ditko)',
     cast: [
       'Christopher Daniel Barnes, Edward Asner, Joseph Campanella, Efrem Zimbalist Jr., Hank Azaria, Mark Hamill'
@@ -1729,6 +1732,7 @@ window._SERIES_DATA = [
     backdrop: 'https://images6.alphacoders.com/668/668663.jpg',
     videoUrl: '3854',
     overview: "An animated series focusing on a sixteen-year-old Peter Parker navigating high school life while secretly becoming Spider-Man after being bitten by a genetically altered spider. The show explores the origins of his powers, his relationships with Gwen Stacy, Harry Osborn, and Mary Jane Watson, and his growing rogues' gallery of villains in New York City.",
+    overviewKurdish: "",
     director: 'Greg Weisman, Victor Cook',
     cast: [
       'Josh Keaton, Lacey Chabert, Joshua LeBar, James Arnold Taylor, Daran Norris, Clancy Brown'
@@ -1869,6 +1873,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/tsRy63Mu5cu8etL1X7ZLyf7UP1M.jpg',
     videoUrl: '1396',
     overview: "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine to secure his family's future.",
+    overviewKurdish: "",
     director: 'Vince Gilligan',
     cast: [
       'Bryan Cranston',
@@ -2173,6 +2178,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg',
     videoUrl: '76479',
     overview: "A group of vigilantes set out to expose and take down corrupt superheroes who abuse their superpowers and are controlled by a powerful, profit-driven corporation. When Hughie Campbell's girlfriend is accidentally killed by a member of the Seven, he joins forces with the ruthless Billy Butcher to bring the Supes to justice.",
+    overviewKurdish: "",
     director: 'Eric Kripke',
     cast: [
       'Karl Urban, Jack Quaid, Antony Starr, Erin Moriarty, Dominique McElligott, Jessie T. Usher, Laz Alonso, Chace Crawford, Tomer Kapon, Karen Fukuhara'
@@ -2893,6 +2899,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/6KclfESXQia4BbJNv4xUnBqaWfe.jpg',
     videoUrl: '61889',
     overview: "Blinded as a young boy but imbued with extraordinary senses, attorney Matt Murdock fights for justice by day in the courtroom. By night, he takes to the streets of Hell's Kitchen, New York, as a masked vigilante. His crusade forces him into a deadly, high-stakes battle against Wilson Fisk, a powerful and ruthless businessman secretly consolidating control over the city's criminal underworld.",
+    overviewKurdish: "",
     director: 'Steven S. DeKnigh',
     cast: [
       "Charlie Cox, Deborah Ann Woll, Elden Henson, Toby Leonard Moore, Vondie Curtis-Hall, Bob Gunton, Ayelet Zurer, Rosario Dawson, Vincent D'Onofrio"
@@ -3090,6 +3097,7 @@ window._SERIES_DATA = [
     backdrop: 'https://images5.alphacoders.com/138/1389241.jpg',
     videoUrl: '202555',
     overview: "Blinded as a young boy but imbued with extraordinary senses, attorney Matt Murdock fights for justice by day in the courtroom. By night, he takes to the streets of Hell's Kitchen, New York, as a masked vigilante. His crusade forces him into a deadly, high-stakes battle against Wilson Fisk, a powerful and ruthless businessman secretly consolidating control over the city's criminal underworld.",
+    overviewKurdish: "",
     director: 'Steven S. DeKnigh',
     cast: [
       "Charlie Cox, Deborah Ann Woll, Elden Henson, Toby Leonard Moore, Vondie Curtis-Hall, Bob Gunton, Ayelet Zurer, Rosario Dawson, Vincent D'Onofrio"
@@ -3200,6 +3208,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/6UH52Fmau8RPsMAbQbjwN3wJSCj.jpg',
     videoUrl: '95557',
     overview: "Mark Grayson is a seemingly normal teenager, except for the fact that his father, Nolan, is Omni-Man, the most powerful superhero on the planet. Shortly after his seventeenth birthday, Mark begins to develop powers of his own and enters into training under his father's guidance. However, as Mark tries to balance his personal life with his new heroic duties, he begins to uncover dark secrets about his father's past and the true nature of their alien heritage",
+    overviewKurdish: "",
     director: 'Robert Kirkman, Ryan Ottley, Cory Walker',
     cast: [
       'Steven Yeun, J.K. Simmons, Sandra Oh, Zazie Beetz, Grey Griffin, Walton Goggins, Gillian Jacobs'
@@ -4497,6 +4506,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/rmRp41yelJG1tCCdoHRiHX8qp7g.jpg',
     videoUrl: '65334',
     overview: "By daylight, Marinette Dupain-Cheng and Adrien Agreste are ordinary Parisian teenagers. But unbeknownst to their family and friends, the two carry a huge secret â€” using the powers of magical creatures called Kwamis, they transform into the superheroes Ladybug and Cat Noir. Tasked with protecting Paris from the villain Hawk Moth, they must balance their new responsibilities with ordinary teenage troubles of love, school, and friendship, all while remaining unaware of each other's true identities.",
+    overviewKurdish: "",
     director: 'Thomas Astruc',
     cast: [
       'Cristina Vee, Bryce Papenbrook, Mela Lee, Carrie Keranen'
@@ -6625,6 +6635,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/g9iWefLnhAnvbthM0UurqHGhc1s.jpg',
     videoUrl: '60735',
     overview: "After being struck by lightning, forensic investigator Barry Allen wakes up from his coma to discover he's been given the power of super speed, becoming the Flash and fighting crime in Central City. As he uses his newfound abilities to protect the city from other superpowered threats, Barry must also confront the dark secret behind the very event that gave him his powers.",
+    overviewKurdish: "",
     director: 'Greg Berlanti, Andrew Kreisberg, Geoff Johns',
     cast: [
       'Grant Gustin, Candice Patton, Danielle Panabaker, Carlos Valdes, Tom Cavanagh, Jesse L. Martin, Keiynan Lonsdale'
@@ -7432,6 +7443,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/jgb9xICHFX8wTGQ75js4uNbttQs.jpg',
     videoUrl: '62688',
     overview: "Supergirl is an action-adventure drama based on the DC Comics character Kara Zor-El, Superman's (Kal-El) cousin who, after 12 years of keeping her powers a secret on Earth, decides to finally embrace her superhuman abilities and be the hero she was always meant to be.",
+    overviewKurdish: "",
     director: 'Ali Adler, Greg Berlanti, Andrew Kreisberg',
     cast: [
       'Melissa Benoist',
@@ -7997,6 +8009,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/sdKDOUAstJv46rUuBtjHV8ILkcN.jpg',
     videoUrl: '95057',
     overview: "Follows the world's most famous superhero and comic books' most famous journalist as they deal with all the stress, pressure, and complexities that come with being working parents in today's society â€” all while Superman balances his heroic duties with Lois Lane raising their teenage sons in Smallville.",
+    overviewKurdish: "",
     director: 'Todd Helbing, Greg Berlanti',
     cast: [
       'Tyler Hoechlin, Elizabeth Tulloch, Jordan Elsass, Alexander Garfin, Erik Valdez, Inde Navarrette, WolÃ© Parks, Adam Rayner'
@@ -8707,6 +8720,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/5N5dSOrysuquExvn8Gpp5jMEf6u.jpg',
     videoUrl: '87739',
     overview: "In a 1950s orphanage, a young girl named Beth Harmon discovers an astonishing talent for chess while developing a dependency on tranquilizers provided to the children â€” an addiction that will follow her into adulthood. Grandmaster-level chess is a sport dominated by men, but as Beth rises through the ranks of competitive chess, she must fight to overcome her personal demons and outmaneuver a world that doesn't expect her to win.",
+    overviewKurdish: "",
     director: 'Scott Frank',
     cast: [
       'Anya Taylor-Joy, Chloe Pirrie, Bill Camp, Marielle Heller, Thomas Brodie-Sangster, Moses Ingram, Harry Melling'
@@ -8764,6 +8778,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/f3cin9kOz4nOrlYEMxGFQhv4bdN.jpg',
     videoUrl: '71712',
     overview: "Shaun Murphy, a young surgeon with autism and savant syndrome, relocates from a quiet country life to join a prestigious hospital's surgical unit. Unable to personally connect with those around him, Shaun uses his extraordinary medical gifts to save lives and challenge the skepticism of his colleagues.",
+    overviewKurdish: "",
     director: 'David Shore',
     cast: [
       'Freddie Highmore',
@@ -11071,6 +11086,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/3ANXZWhhcqPAh0q6nRZ979TIwxC.jpg',
     videoUrl: '273240',
     overview: "A romantic drama series based on the bestselling book series by Elle Kennedy. Set at Briar University, the show follows the personal lives, romantic entanglements, and deep friendships of an elite college ice hockey team and the women in their orbit. Season 1 centers on an opposites attract agreement between Hannah, a quiet music student, and Garrett, the university's star hockey player.",
+    overviewKurdish: "",
     director: 'Louisa Levy',
     cast: [
       'Ella Bright',
@@ -13847,6 +13863,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/ynSOcgDLZfdLCZfRSYZGiTgYJVo.jpg',
     videoUrl: '73586',
     overview: "John Dutton run largest contiguous ranch in America, fight to protect land from land developer, real estate mogul, Indian reservation all want piece of it. Family torn by power, legacy, betrayal, blood, as they battle keep control of ranch passed down generation to generation.",
+    overviewKurdish: "",
     director: 'Taylor Sheridan, John Linson',
     cast: [
       'Kevin Costner, Luke Grimes, Kelly Reilly, Wes Bentley, Cole Hauser, Kelsey Asbille'
@@ -13888,6 +13905,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/ugndFTbGW9G4iGOu0H5zE6NDp85.jpg',
     videoUrl: '1402',
     overview: "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+    overviewKurdish: "",
     director: 'Frank Darabont',
     cast: [
       'Andrew Lincoln',
@@ -14683,6 +14701,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/5aE1kxWg6RhgQxJTXTxifv4uq7P.jpg',
     videoUrl: '93405',
     overview: "Hundreds of cash-strapped players accept a strange invitation to compete in children's gamesâ€”with high stakes. But, a tempting prize awaits the victor.",
+    overviewKurdish: "",
     director: 'Hwang Dong-hyuk',
     cast: [
       'Lee Jung-jae',
@@ -14817,6 +14836,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/e9veIcSy0MUJpQqlffQJdKId9eF.jpg',
     videoUrl: '2288',
     overview: "Lincoln Burrows is currently on death row and scheduled to die in a few months for an assassination his younger brother Michael is convinced he did not commit. With no other options and time winding down, Michael takes drastic measures to get himself incarcerated alongside his brother in Fox River State Penitentiary. Once he's inside, Michael - a structural engineer with the blueprints for the prison - begins to execute an elaborate plan to break Lincoln out and prove him innocent. When Michael arrives at Fox River State Penitentiary, he meets the prison denizens who will, unknowingly, help in his escape plans - his cellmate, the lovelorn Sucre; beautiful prison doctor Dr. Sara Tancredi, who happens to be the governor's daughter; former mob boss John Abruzzi; and Warden Henry Pope. Meanwhile, outside the prison walls, the brothers' childhood friend and Lincoln's lost love, attorney Veronica Donovan, works within the law to free them; Lincoln's teenage son LJ may be going down a path similar to his convicted father's; and Secret Service Agent Paul Kellerman's investigation into Lincoln's case proves that there may be a national conspiracy.",
+    overviewKurdish: "",
     director: 'Paul Scheuring',
     cast: [
       'Wentworth Miller',
@@ -15225,6 +15245,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/kzTpRHLuJm7afxbgu04C6gJQSvp.jpg',
     videoUrl: '1405',
     overview: "He's smart, he's good looking, and he's got a great sense of humor. He's Dexter Morgan, everyone's favorite serial killer. As a Miami forensics expert, he spends his days solving crimes, and nights committing them. But Dexter lives by a strict code of honor that is both his saving grace and lifelong burden. Torn between his deadly compulsion and his desire for true happiness, Dexter is a man in profound conflict with the world and himself.",
+    overviewKurdish: "",
     director: 'James Manos Jr.',
     cast: [
       'Michael C. Hall',
@@ -15680,6 +15701,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/mQVqfX6yccHQbLsjHUyJz8Wiwk7.jpg',
     videoUrl: '4604',
     overview: "A retelling of Superman's early days as teenager Clark Kent growing up in Smallville, Kansas. He is guided by his adopted parents Jonathan and Martha Kent.Friends and adversaries include Lana Lang, Chloe Sullivan, Pete Ross, Lois Lane and Lex Luthor and his father Lionel Luthor.",
+    overviewKurdish: "",
     director: 'Alfred Gough, Miles Millar',
     cast: [
       'Tom Welling',
@@ -16629,6 +16651,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/7QSM3AsgWXctWBm7OFov9dGdZgt.jpg',
     videoUrl: '60708',
     overview: "The good. The evil. The beginning.Everyone knows the name Commissioner Gordon. He is one of the crime world's greatest foes, a man whose reputation is synonymous with law and order. But what is known of Gordon's story and his rise from rookie detective to Police Commissioner? What did it take to navigate the multiple layers of corruption that secretly ruled Gotham City, the spawning ground of the world's most iconic villains? And what circumstances created them â€“ the larger-than-life personas who would become Catwoman, The Penguin, The Riddler, Two-Face and The Joker?Gotham is an origin story of the great DC Comics Super-Villains and vigilantes, revealing an entirely new chapter that has never been told. It follows one cop's rise through a dangerously corrupt city teetering between good and evil, and chronicles the birth of one of the most popular super heroes of our time.",
+    overviewKurdish: "",
     director: 'Bruno Heller',
     cast: [
       'Ben McKenzie',
@@ -17189,6 +17212,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/sNr1KlhUisRsrGZLRkgyvm0PraW.jpg',
     videoUrl: '71728',
     overview: "For young Sheldon Cooper, it isn't easy growing up in East Texas. Being a once-in-a-generation mind capable of advanced mathematics and science isn't always helpful in a land where church and football are king. And while the vulnerable, gifted and somewhat naÃ¯ve Sheldon deals with the world, his very normal family must find a way to deal with him. His father, George, is struggling to find his way as a high school football coach and as father to a boy he doesn't understand. Sheldon's mother, Mary, fiercely protects and nurtures her son in a town where he just doesn't fit in. Sheldon's older brother, Georgie, does the best he can in high school, but it's tough to be cool when you're in the same classes with your odd younger brother. Sheldon's twin sister, Missy, sometimes resents all the attention Sheldon gets, but also remains the one person who can reliably tell Sheldon the truth. Finally, there's Sheldon's beloved Meemaw, his foul-mouthed, hard-drinking Texas grandmother who is very supportive of her grandson and his unique gifts. For 12 years on The Big Bang Theory, audiences have come to know the iconic, eccentric, and extraordinary Sheldon Cooper. This single-camera, half-hour comedy allows us the chance to meet him in childhood, as he embarks on his innocent, awkward, and hopeful journey toward the man he will become.",
+    overviewKurdish: "",
     director: 'Chuck Lorre, Steven Molaro',
     cast: [
       'Iain Armitage',
@@ -17891,6 +17915,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/3h4DWrR6t6bTCrcUabDwPqZhONY.jpg',
     videoUrl: '2309',
     overview: "Danny Fenton was once your typical shy kid--you know, kind of a wallflower. But all that changed one afternoon when Danny accidentally blew up his parents' laboratory and became ghost-hunting superhero Danny Phantom. Now 1/2 ghost, Danny's picked up some prety cool paranormal powers-- but only his best friends Samantha and Tucker know his secret. These days, Danny's busy fighting ghosts, saving the world and hiding his new identity--which is actually a whole lot easier than trying to survive ninth grade.",
+    overviewKurdish: "",
     director: 'Butch Hartman',
     cast: [
       'David Kaufman',
@@ -18149,6 +18174,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/d8rse1RgMzXwmZvBpDvcG1VUO2Y.jpg',
     videoUrl: '15260',
     overview: "Adventure Time's unlikely heroes Finn and Jake are buddies who traverse the mystical Land of Ooo and encounter its colorful inhabitants.",
+    overviewKurdish: "",
     director: 'Pendleton Ward',
     cast: [
       'Jeremy Shada',
@@ -19342,6 +19368,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/6t2FvBr9DS8MOq0m5FAwPBCdAW5.jpg',
     videoUrl: '220102',
     overview: "A live-action superhero series set in an alternate universe within the Sony's Spider-Man Universe (SSU) franchise. The show follows Ben Reilly, a grizzled, down-on-his-luck private investigator grappling with his past life as 1930s New York City's one and only superhero, the Spider. When an exceptional case crosses his desk, the aging, cynical hero is forced to step back into the shadows and become the Spider once more. The series uniquely released in both a standard color version and a stylized, gritty black-and-white version.",
+    overviewKurdish: "",
     director: 'Oren Uziel',
     cast: [
       'Nicolas Cage (as Ben Reilly / The Spider), Lamorne Morris, Li Jun Li, Karen Rodriguez, Abraham Popoola, Jack Huston, Brendan Gleeson'
@@ -20620,6 +20647,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/2oFQz1CcRs9zlUuonTB6vLoyB5I.jpg',
     videoUrl: '138503',
     overview: "An animated superhero series that serves as an alternate-universe prequel exploring Peter Parker's early days as Spider-Man. Instead of being mentored by Tony Stark like in the main MCU timeline, 15-year-old Peter finds himself under the wing of corporate billionaire Norman Osborn. The series features a stylized comic-book animation aesthetic and focuses on a chaotic freshman year filled with balancing school, new allies, and classic street-level villains.",
+    overviewKurdish: "",
     director: 'Jeff Trammell',
     cast: [
       'Hudson Thames (Peter Parker), Colman Domingo (Norman Osborn), Kari Wahlgren (Aunt May), Grace Song (Nico Minoru), Zeno Robinson (Harry Osborn), Hugh Dancy (Otto Octavius), Charlie Cox (Daredevil)'
@@ -21192,6 +21220,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/41t0KM9bHGLi49OtS3hLt14vm6l.jpg',
     videoUrl: '1894',
     overview: "LazyTown is an Icelandic-American children's television program with a cast and crew from Iceland, the United Kingdom, and the United States. It was created by MagnÃºs Scheving, a gymnastics champion and CEO of LazyTown Entertainment, who also stars in the show. Originally performed in English, the show has been dubbed into more than a dozen languages and aired in over 100 countries.A total of 52 episodes of LazyTown were produced from 2004 to 2007, for the show's first and second seasons. In the US, LazyTown originally aired on Nickelodeon and Nick Jr.; in 2011, PBS Kids Sprout gained the rights to air the series. Turner Broadcasting System Europe acquired the LazyTown Entertainment company in 2011 and commissioned a third season of the series to be delivered at the end of 2012 which premiered on April 6, 2013, in the UK.As of 2012, LazyTown airs on Turner Broadcasting's international preschool network, Cartoonito, and is distributed by Turner Broadcasting System Europe.LazyTown has generated several spin-off projects including stage productions and a TV program for younger children called LazyTown Extra.",
+    overviewKurdish: "",
     director: 'MagnÃºs Scheving',
     cast: [
       'MagnÃºs Scheving',
@@ -23544,6 +23573,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/dOPFDHM4NP90BHHcJTSmOTEhtum.jpg',
     videoUrl: '4630',
     overview: "Timmy Turner is your average 10-year-old kid with a not-so-average secret. You see, his life used to be miserable. He couldn't catch a break - not from bullies at school, not from his insane teacher Mr. Crocker, and DEFINITELY not from Vicky, his evil babysitter. But he's got just what he needs to make it all better: Cosmo and Wanda, fairy godparents who can grant his every wish! Sure, those wishes can backfire, and turn into seemingly irreversible disasters, but that's not stopping Timmy from having amazing adventures along the way!",
+    overviewKurdish: "",
     director: 'Butch Hartman',
     cast: [
       'Tara Strong',
@@ -25755,6 +25785,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/cwKuMNndfjSl8iQIcAISL0C1tDZ.jpg',
     videoUrl: '37680',
     overview: "Suits delves into the fast-paced, high-stakes world of a top Manhattan corporate law firm where hotshot associate Harvey Specter makes a risky move by hiring Mike Ross a brilliant but unmotivated college dropout, as his associate. As he becomes enmeshed in this unfamiliar world, Mike relies heavily on the firm's best paralegal Rachel Zane and Harvey's no-nonsense assistant Donna Paulsen to help him serve justice. With a photographic memory and the street smarts of a hustler, Mike proves to be a legal prodigy despite the absence of bonafide legal credentials.",
+    overviewKurdish: "",
     director: 'Aaron Korsh',
     cast: [
       'Gabriel Macht',
@@ -26366,6 +26397,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/jbTqU6BJMufoMnPSlO4ThrcXs3Y.jpg',
     videoUrl: '1434',
     overview: "Family Guy follows Peter Griffin the endearingly ignorant dad, and his hilariously offbeat family of middle-class New Englanders in Quahog, RI. Lois is Peter's wife, a stay-at-home mom with no patience for her family's antics. Then there are their kids: 18-year-old Meg is an outcast at school and the Griffin family punching bag; 13-year-old Chris is a socially awkward teen who doesn't have a clue about the opposite sex; and one-year-old Stewie is a diabolically clever baby whose burgeoning sexuality is very much a work in progress. Rounding out the Griffin household is Brian the family dog and a ladies' man who is one step away from AA.",
+    overviewKurdish: "",
     director: 'Seth MacFarlane',
     cast: [
       'Seth MacFarlane',
@@ -28345,6 +28377,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/93n2LOxsLulbfnatfv5aqmpsadR.jpg',
     videoUrl: '34524',
     overview: "Always an outsider and often unnoticed, Scott McCall yearns to be recognized in some small way that takes him out of his typical state of high school anonymity. When his best friend, Stiles, convinces him to go into the woods one night to join a police search for a dead body, Scott encounters a creature in the darkness. Narrowly escaping an attack with a vicious bite in his side, the next day brings strange surprises for Scott at school and his life will never be the same.MTV's reboot of the classic 1980s cult movie Teen Wolf.",
+    overviewKurdish: "",
     director: 'Jeff Davis',
     cast: [
       'Tyler Posey',
@@ -28807,6 +28840,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/jnzoh5qoxRLFRIQAxnl6D3RStPC.jpg',
     videoUrl: '91363',
     overview: "What Ifâ€¦? flips the script on the MCU by reimagining events from the films in unexpected ways. Marvel Studios' first animated series focuses on different heroes from the MCU, featuring a voice cast that includes a host of stars who reprise their roles.",
+    overviewKurdish: "",
     director: 'Bryan Andrews',
     cast: [
       'Jeffrey Wright',
@@ -28957,6 +28991,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/q3pCsNvJ7CmdJUz2sJEEUY3pOPC.jpg',
     videoUrl: '5920',
     overview: "Patrick Jane, an independent consultant with the California Bureau of Investigation (CBI), has a remarkable track record for solving serious crimes by using his razor sharp skills of observation. Within the Bureau, Jane is notorious for his blatant lack of protocol and his semi-celebrity past as a psychic medium, whose paranormal abilities he now admits he feigned. No-nonsense Senior Agent Teresa Lisbon openly resists having Jane in her unit and alternates between reluctantly acknowledging Jane's usefulness and blasting him for his theatrics, narcissism, and dangerous lack of boundaries. Lisbon's team includes agents Kimball Cho, Wayne Rigsby and rookie member Grace Van Pelt, who all think Jane's a loose cannon but admire his charm and knack for clearing cases.",
+    overviewKurdish: "",
     director: 'Bruno Heller',
     cast: [
       'Simon Baker',
@@ -30486,6 +30521,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/y2UmFNOMwNmfdHs7DYWGAQOTIC8.jpg',
     videoUrl: '7330',
     overview: "Tony, Rhodey, and Pepper star as teenagers in this cartoon. When Tony's father dies, he moves in with Rhodey and also invents his Iron Man armor. Tony has to deal with teenage problems like school and crushes as well as deal with superhero problems like supervillains and stopping plans for world domination.",
+    overviewKurdish: "",
     director: 'Christopher Yost',
     cast: [
       'Adrian Petriw',
@@ -31899,6 +31935,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/km6wy5CpLul51F3eh6fEBQ0UoJE.jpg',
     videoUrl: '47480',
     overview: "The famous cat and mouse duo is back in an all-new series, The Tom and Jerry Show. Premiering Wednesday April 9 at 5:30 p.m. (ET/PT) on Cartoon Network, The Tom and Jerry Show is a fresh take on the iconic frenemies that preserves the look, core characters and sensibilities of the original theatrical shorts. Comprised of two 11-minute elements, each episode will feature Tom the cat and Jerry the mouse plotting against each other-with Tom's determination matched only by Jerry's own cleverness in evading capture. But this time the cartoon mayhem will not be limited to only Tom and Jerry's familiar suburban setting. In The Tom and Jerry Show, the title characters' nonstop game of cat and mouse will expand to also include more fantastic worlds, from a witch's cabin to a mad scientist's lab.",
+    overviewKurdish: "",
     director: 'Darrell Van Citters',
     cast: [
       'William Hanna',
@@ -32831,6 +32868,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/46tjvIBAdk9RfsPKwFez2p8Ip3W.jpg',
     videoUrl: '64198',
     overview: "Blaze and the Monster Machines is a CG interactive preschool series about Blaze, the world's greatest monster truck, and his best buddy and driver, a boy named AJ.",
+    overviewKurdish: "",
     director: 'Jeff Borkin',
     cast: [
       'Nolan North',
@@ -33610,6 +33648,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/abmwQvkZh6yufaodYwnOV15EST0.jpg',
     videoUrl: '39898',
     overview: "Kung Fu Panda: Legends of Awesomeness is based on DreamWorks Animation's hit feature film, Kung Fu Panda which has grossed over $630 million at the worldwide box office and became the studio's most successful original feature film ever. Kung Fu Panda garnered an Oscar nomination for Best Animated Feature Film of the Year and a Golden Globe nomination for Best Animated Feature Film.",
+    overviewKurdish: "",
     director: 'Peter Hastings',
     cast: [
       'Mick Wingert',
@@ -35465,6 +35504,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/1osMkFZKoOQNGMgtPtjMvN4K2rS.jpg',
     videoUrl: '291904',
     overview: "Welcome back to Elmore, where the laws of reality are a joke, and family life is anything but ordinary. Whether he's battling an evil fast-food empire, facing off against a sentient AI in love with his mom, or trying to stop Banana Joe from wearing pants, Gumball Watterson drags his brother Darwin, sister Anais, and the rest of the town of Elmore along for the ride.",
+    overviewKurdish: "",
     director: 'Ben Bocquelet',
     cast: [
       'Nicolas Cantu',
@@ -35663,6 +35703,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/gmO3aezFgDcrhcymhNSJLGZ3CT.jpg',
     videoUrl: '37606',
     overview: "The often outrageous adventures of a 12-year-old blue cat named Gumball Watterson, as he navigates the wonderfully weird world of Elmore alongside his goldfish-turned-legged adoptive brother Darwin. Blending traditional animation, live-action, CGI, and puppetry, the series follows Gumball's chaotic misadventures with his sister Anais and his hilariously flawed family, the Wattersons.Â ",
+    overviewKurdish: "",
     director: 'Ben Bocquelet',
     cast: [
       'Logan Grove / Nicolas Cantu, Kwesi Boakye / Terrell Ransom Jr. / Donielle T. Hansley Jr., Teresa Gallagher, Dan Russell'
@@ -37067,6 +37108,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/7j4ug9B6JXVeh5HhQjjPScrdj4Z.jpg',
     videoUrl: '71790',
     overview: "Following a violent riot in Los Angeles, a decorated LAPD sergeant, Daniel Hondo Harrelson, is tasked with leading a new SWAT unit that better represents the diverse community it protects. Straddling two worlds â€” as both a Black man from his old neighborhood and the leader of the elite tactical squad tasked with keeping the city safe â€” Hondo must navigate the razor's edge between duty and loyalty.",
+    overviewKurdish: "",
     director: 'Aaron Rahsaan Thomas, Shawn Ryan',
     cast: [
       'Shemar Moore, Alex Russell, Lina Esco, Kenny Johnson, Jay Harrington, David Lim, Anna Enger Ritch'
@@ -37785,6 +37827,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/xHCfWGlxwbtMeeOnTvxUCZRGnkk.jpg',
     videoUrl: '62127',
     overview: "Danny Rand resurfaces fifteen years after being presumed dead, returning to New York City to reclaim his family's company and identity. Possessing incredible martial arts skills and the mystical power of the Iron Fist, Danny fights against the criminal element corrupting his family's legacy â€” and his own life â€” as he tries to reconcile his past with the life he's returned to.",
+    overviewKurdish: "",
     director: 'Scott Buck',
     cast: [
       'Finn Jones',
@@ -40151,6 +40194,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/64a8imymtJ4WOzIeyUHLtZnJ3wv.jpg',
     videoUrl: '92749',
     overview: "When Steven Grant, a mild-mannered gift-shop employee, becomes plagued with blackouts and memories of another life, he discovers he has dissociative identity disorder and shares a body with mercenary Marc Spector. As Steven/Marc's enemies converge upon them, they must navigate their complex identities while thrust into a deadly mystery among the powerful gods of Egypt.",
+    overviewKurdish: "",
     director: 'Jeremy Slater',
     cast: [
       'Oscar Isaac',
@@ -45569,6 +45613,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/9QNv2Al3GfCND8BwuLmu2GwVht7.jpg',
     videoUrl: '88329',
     overview: "Marvel Studios' Hawkeye is an original new series set in post-blip New York City where former Avenger Clint Barton aka Hawkeye has a seemingly simple mission: get back to his family for Christmas. But when a threat from his past shows up, Hawkeye reluctantly teams up with Kate Bishop, a 22-year-old skilled archer and his biggest fan, to unravel a criminal conspiracy.",
+    overviewKurdish: "",
     director: 'Jonathan Igla',
     cast: [
       'Jeremy Renner',
@@ -46186,6 +46231,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/cyH8Ni1OSMtBbloEmI9eE69Xi7j.jpg',
     videoUrl: '47035',
     overview: "Uncle Grandpa is everyone's uncle and grandpa at the same time â€” a magical, energetic being who travels the world in his living, talking RV to help kids with their everyday problems. Accompanied by an eccentric crew including a giant talking cat named Giant Realistic Flying Tiger and Pizza Steve, Uncle Grandpa's chaotic, surreal solutions rarely go as planned, but somehow always work out in the end.",
+    overviewKurdish: "",
     director: 'Pete Browngardt',
     cast: [
       'Pete Browngardt',
@@ -46852,6 +46898,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/e5YSF0Inv9eL77jv2WQtNOOB3Bg.jpg',
     videoUrl: '61175',
     overview: "Steven Universe, a young boy with magical powers inherited from his mother, lives with three magical guardians â€” the Crystal Gems â€” who protect their small town from otherworldly threats. As Steven learns to control his emerging abilities and uncover the truth about his mother's mysterious past, the series unfolds into a rich, emotionally layered saga about identity, family, love, and the cosmic legacy he's inherited.",
+    overviewKurdish: "",
     director: 'Rebecca Sugar',
     cast: [
       'Zach Callison',
@@ -47524,6 +47571,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/e5UakgeJsTBKtjxEURpg6hcohqX.jpg',
     videoUrl: '94280',
     overview: "With the war against Homeworld won and Earth finally safe, Steven Universe should be able to relax into a peaceful new chapter of his life. Instead, unresolved trauma from his years of saving the world begins to surface, forcing him to confront the emotional toll of his upbringing and figure out who he is outside of being everyone's hero â€” while also dealing with a whole new set of Gem-related crises along the way.",
+    overviewKurdish: "",
     director: 'Rebecca Sugar',
     cast: [
       'Zach Callison, Michaela Dietz, Estelle, Deedee Magno Hall, Shelby Rabara'
@@ -47635,6 +47683,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/7zTON5elWsObqmzEchOSUnMdoua.jpg',
     videoUrl: '72468',
     overview: "OK K.O.! Let's Be Heroes is a world of original heroes across the TV and gaming landscape together with the greenlight of this action-packed comedy followed by the console and PC game jointly developed with indie video game studio Capybara games. The knockout series is inspired by creator Ian Jones-Quartey's childhood and follows the heroic feats of K.O., an endlessly optimistic boy attempting to level up to be the best he can be in a dynamic universe of heroes, friends and challenging foes.",
+    overviewKurdish: "",
     director: 'Ian Jones-Quartey',
     cast: [
       'Courtenay Taylor',
@@ -48309,6 +48358,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/muqoT0YgutI02txKRDV8FmuLF9E.jpg',
     videoUrl: '48866',
     overview: "100 years in the future, when the Earth has been abandoned due to radioactivity, the last surviving humans live on an ark orbiting the planet â€” but the ark won't last forever. So the repressive regime picks 100 expendable juvenile delinquents to send down to Earth to see if the planet is still habitable.",
+    overviewKurdish: "",
     director: 'Jason Rothenberg',
     cast: [
       'Eliza Taylor, Marie Avgeropoulos, Bob Morley, Lindsey Morgan, Richard Harmon'
@@ -53100,6 +53150,7 @@ window._SERIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/4XccmjsOmQZw8S2iW1wvlvmb5v1.jpg",
     videoUrl: "125988",
     overview: "In ruin future, ten thousand people live in giant underground silo, told outside world poison, deadly. Engineer Juliette Nichols dig into mystery of husband death, uncover dark secret silo elder try hide.",
+    overviewKurdish: "",
     director: "Graham Yost",
     cast: [
       "Rebecca Ferguson, Common, Rashida Jones, David Oyelowo, Tim Robbins"
@@ -53167,6 +53218,7 @@ window._SERIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/iDnTAeR2WNA62XQG0ivtteDSjd5.jpg",
     videoUrl: "138502",
     overview: "X-Men '97 is a revival of the classic animated series, following the iconic mutant team as they navigate high-stakes adventures and emotional challenges in a world that hates and fears them.",
+    overviewKurdish: "",
     director: "Beau DeMayo",
     cast: ["Ray Chase, Jennifer Hale, Cal Dodd, Alison Sealy-Smith, Lenore Zann, JP Karliak"],
     trending: false,
@@ -53216,6 +53268,7 @@ window._SERIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/wowtdtDM980GjuxCXJY4seeqP2O.jpg",
     videoUrl: "299167",
     overview: "Beth Dutton, Rip Wheeler gamble everything on new life in South Texas, but promise of building future far from ghost of Yellowstone quickly collide with brutal new reality, rival ranch that stop at nothing protect its empire.",
+    overviewKurdish: "",
     director: "Chad Feehan",
     cast: ["Kelly Reilly, Cole Hauser, Ed Harris, Annette Bening, Finn Little, Jai Courtney"],
     trending: false,
@@ -53249,6 +53302,7 @@ window._SERIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/qD211Hb5XwFxrszzBBe5EUYJerh.jpg",
     videoUrl: "111110",
     overview: "Live action show based on legendary manga. Young stretchy boy Monkey D. Luffy set sail to assemble pirate crew. Together Straw Hat crew search dangerous ocean for grand treasure left by Gold Roger so Luffy become King of Pirates.",
+    overviewKurdish: "",
     director: "Matt Owens, Steven Maeda",
     cast: ["IÃ±aki Godoy, Mackenyu, Emily Rudd, Jacob Romero, Taz Skylar, Vincent Regan, Jeff Ward, Morgan Davies"],
     trending: false,
@@ -53295,6 +53349,7 @@ window._SERIES_DATA = [
     duration: '45m',
     videoUrl:"34307",
     overview: "Chicagoan Frank Gallagher is the proud single dad of six smart, industrious, independent kids, who without him would be... perhaps better off. When Frank's not at the bar spending what little money they have, he's passed out on the floor. But the kids have found ways to grow up in spite of him.",
+    overviewKurdish: "",
     director: 'John Wells',
     cast: ['William H. Macy', 'Emmy Rossum', 'Jeremy Allen White', 'Ethan Cutkosky', 'Shanola Hampton', 'Steve Howey', 'Emma Kenney', 'Cameron Monaghan', 'Noel Fisher'],
             seasons: [
@@ -53503,6 +53558,7 @@ window._SERIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/ywJcUIMTCjstPLvvyIiPWP3G3m3.jpg",
     videoUrl: "246246",
     overview: "A stripper's fate takes a turn when she crosses paths with the wealthy, dysfunctional family behind a cosmetics dynasty and a devious trafficking scheme.",
+    overviewKurdish: "",
     director: "Tyler Perry",
     cast: [
       "Taylor Polidore Williams",

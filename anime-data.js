@@ -29,6 +29,7 @@ window._ANIME_DATA = [
     anilistId: 21,
     animeSlug: "one-piece",
     overview: "Monkey D. Luffy refuses to let anyone or anything stand in the way of his quest to become the king of all pirates. With a course charted for the treacherous waters of the Grand Line and beyond, this is one captain who'll never give up until he's claimed the greatest treasure on Earth: the Legendary One Piece!",
+    overviewKurdish: "",
     director: "Eiichiro Oda",
     cast: [
       "Mayumi Tanaka",
@@ -6059,6 +6060,7 @@ window._ANIME_DATA = [
     anilistId: 813,
     animeSlug: "dragon-ball-z",
     overview: "After learning that he is from another planet, a warrior named Goku and his friends are prompted to defend it from an onslaught of extraterrestrial enemies.",
+    overviewKurdish: "",
     director: "Akira Toriyama",
     cast: [
       "Masako Nozawa",
@@ -7592,6 +7594,7 @@ window._ANIME_DATA = [
     videoUrl: "236994",
     animeSlug: "dragon-ball-daima",
     overview: "Goku and company were living peaceful lives when they suddenly turned small due to a conspiracy When they discover that the reason for this may lie in a world known as the Demon Realm, a mysterious young Majin named Glorio appears before them.",
+    overviewKurdish: "",
     director: "Akira Toriyama",
     cast: [
       "Masako Nozawa",
@@ -7727,6 +7730,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qEUrbXJ2qt4Rg84Btlx4STOhgte.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/j6RVYpovoPsk269DANJkAerHpzg.jpg",
     overview: "After Majin Buu defeat, Goku, friend enjoy peace, but new threat emerge from beyond stars � god of destruction, powerful warrior from other universe, force Goku push past Super Saiyan into whole new level of power.",
+    overviewKurdish: "",
     director: "Kimitoshi Chioka",
     cast: [
       "Masako Nozawa, Ryo Horikawa, Yuko Minaguchi, Bin Shimada, Naoko Watanabe"
@@ -8418,6 +8422,7 @@ window._ANIME_DATA = [
     poster: "https://image.tmdb.org/t/p/original/fzH3xKyIvLnq1paTrjecNyWQmRh.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8lZPuGblM5Qq2W12anr53Xzn6vf.jpg",
     overview: "Ten years have passed since Goku left Earth to train Uub. However, Pilaf has returned, and this time he's stolen the Black Star Dragon Balls...",
+    overviewKurdish: "",
     director: "Osamu Kasai",
     cast: [
       "Masako Nozawa, Yuko Minaguchi, Takeshi Kusao"
@@ -8778,6 +8783,7 @@ window._ANIME_DATA = [
     anilistId: 6033,
     animeSlug: "dragon-ball-z-kai",
     overview: "Revisiting the acclaimed Dragon Ball Z series, this remastered and condensed version removes original filler episodes to more closely follow Akira Toriyama's manga, delivering faster-paced action, updated animation sequences, and a re-recorded voice track as Goku and his friends defend Earth from increasingly powerful cosmic threats.",
+    overviewKurdish: "",
     director: "Yasuhiro Nowatari",
     cast: [
       "Masako Nozawa",
@@ -9474,6 +9480,7 @@ window._ANIME_DATA = [
     anilistId: 20,
     animeSlug: "naruto",
     overview: "Naruto Uzumaki, young ninja with sealed nine-tailed fox spirit inside him, dream become strongest ninja, earn respect as Hokage, leader of his village. Chase acceptance, fight rival, grow strong through many battle, deep bond of friendship.",
+    overviewKurdish: "",
     director: "Masashi Kishimoto",
     cast: [
       "Junko Takeuchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue, Hidekatsu Shibata"
@@ -10845,6 +10852,7 @@ window._ANIME_DATA = [
     anilistId: 114,
     animeSlug: "naruto-shippuden",
     overview: "Naruto Shippuuden is the continuation of the original animated TV series Naruto. The story revolves around an older and slightly more matured Uzumaki Naruto and his quest to save his friend Uchiha Sasuke from the grips of the snake-like Shinobi, Orochimaru.",
+    overviewKurdish: "",
     director: "Masashi Kishimoto",
     cast: [
       "Junko Takeuchi, Chie Nakamura, Noriaki Sugiyama, Kazuhiko Inoue, Masako Katsuki"
@@ -13976,6 +13984,7 @@ window._ANIME_DATA = [
     anilistId: 97938,
     animeSlug: "boruto",
     overview: "The life of the shinobi is beginning to change. Boruto Uzumaki, son of Seventh Hokage Naruto Uzumaki, has enrolled in the Ninja Academy to learn the ways of the ninja. Now, as a series of mysterious events unfolds, Boruto's story is about to begin!",
+    overviewKurdish: "",
     director: "Masashi Kishimoto",
     cast: [
       "Yuko Sanpei, Kokoro Kikuchi, Ryuichi Kijima, Kensho Ono, Atsushi Abe"
@@ -15769,6 +15778,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/mNwz73VBP4HCY5QGXxRoCTabGTh.jpg",
     videoUrl: "30984",
     overview: "Ichigo Kurosaki is a teenager gifted with the ability to see spirits. His life is drastically changed by the sudden appearance of a Soul Reaper—one who governs the flow of souls between the human world and the afterlife—named Rukia Kuchiki, who arrives in search of a Hollow, a dangerous lost soul. When Rukia is severely wounded defending Ichigo from the Hollow, she attempts to transfer half of her reiatsu energy to Ichigo so that he can defeat the Hollow. However, Ichigo takes almost all of her energy, transforming into a Soul Reaper and allowing him to defeat the Hollow with ease. With her powers diminished, Rukia is left stranded in the human world until she can recover her strength. In the meantime, Ichigo must take over Rukia's role as a Soul Reaper, battling Hollows and guiding souls to the afterlife realm known as the Soul Society.",
+    overviewKurdish: "",
     director: "Noriyuki Abe",
     cast: [
       "Masakazu Morita",
@@ -15787,6 +15797,7 @@ window._ANIME_DATA = [
             title: "The Day I Became a Shinigami",
             duration: "24m",
             overview: "Ichigo Kurosaki is a teenage boy given the ability to see ghosts.While trying to help a young girl ghost being terrorized by a giant monster called a Hollow..he's saved by the intervention of Rukia Kuchiki, a tough female soul reaper..Later when a Hollow appears and terrorizes Ichigo's family, an injured Rukia makes a fateful decision and transfers her remaining powers to Ichigo.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/540/1351123.jpg",
             videoUrl: ""
           },
@@ -15795,6 +15806,7 @@ window._ANIME_DATA = [
             title: "A Shinigami's Work",
             duration: "24m",
             overview: "Waiting for her powers to return Rukia poses as an exchange student at Ichigo's school.Ichigo must take her place as a Soul Reaper.When he later battles a Hollow, he recognizes it as his friend, Orihime's older brother.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/541/1353532.jpg",
             videoUrl: ""
           },
@@ -15803,6 +15815,7 @@ window._ANIME_DATA = [
             title: "The Older Brother's Wish, the Younger Sister's Wish",
             duration: "24m",
             overview: "Orihime learns that her brother is a Hollow, a soul that didn't pass peacefully over to the Soul Society but lingered instead, pursing those they loved most in life.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/920222.jpg",
             videoUrl: ""
           },
@@ -15811,6 +15824,7 @@ window._ANIME_DATA = [
             title: "Cursed Parakeet",
             duration: "24m",
             overview: "Ichigo's friend and classmate Chad Sado brings a bird to school that turns out to be cursed and contains the soul of a boy who lived a tragic life.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/920226.jpg",
             videoUrl: ""
           },
@@ -15819,6 +15833,7 @@ window._ANIME_DATA = [
             title: "Beat the Invisible Enemy!",
             duration: "24m",
             overview: "Rukia and Chad fight a vicious Hollow named Shrieker, the Hollow has defeated a large number of Soul Reapers in battles and has committed many crimes.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/920227.jpg",
             videoUrl: ""
           },
@@ -15827,6 +15842,7 @@ window._ANIME_DATA = [
             title: "Fight to the Death! Ichigo vs. Ichigo",
             duration: "24m",
             overview: "At a Soul Reaper supply shop, Rukia picks up a modified soul to take over Ichigo's body while he's pulling Soul Reaper duty. But the mod soul takes off with Ichigo's body to have a little fun!",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/920860.jpg",
             videoUrl: ""
           },
@@ -15835,6 +15851,7 @@ window._ANIME_DATA = [
             title: "Greetings from a Stuffed Toy",
             duration: "24m",
             overview: "Rukia and Ichigo track Ichigo's body to a local elementary school. While Ichigo struggles with mischievous soul inhabiting his body, Rukia receives word of a Hollow sighting nearby, but is unable to confirm it's location.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/920865.jpg",
             videoUrl: ""
           },
@@ -15843,6 +15860,7 @@ window._ANIME_DATA = [
             title: "June 17, Memories in the Rain",
             duration: "24m",
             overview: "On the anniversary of his mother's death, Ichigo intends to take the day off from Soul Reaper duties and visit her grave with the rest of his family, but Rukia is at the cemetery waiting for him. She hears how his mother died and has some suggestions to offer him.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921731.jpg",
             videoUrl: ""
           },
@@ -15851,6 +15869,7 @@ window._ANIME_DATA = [
             title: "Unbeatable Enemy",
             duration: "24m",
             overview: "Ichigo faces the Grand Fisher, a Hollow that uses a lure in the shape of a little girl, who Ichigo recalls with shock as the same girl he saw when his mother died. He attacks the Hollow in a rage, making him an easy target.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921740.jpg",
             videoUrl: ""
           },
@@ -15859,6 +15878,7 @@ window._ANIME_DATA = [
             title: "Assault on Trip at Sacred Ground!",
             duration: "24m",
             overview: "When television hero Don Kanonji schedules a live recording of his show \"Spirit Hunter\" at a local abandoned hospital, Ichigo is surprised to see that an actual demi-Hollow is being summoned for the show.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921744.jpg",
             videoUrl: ""
           },
@@ -15867,6 +15887,7 @@ window._ANIME_DATA = [
             title: "The Legendary Quincy",
             duration: "24m",
             overview: "Rumors spread about Ichigo and Rukia's relationship when they keep dissappearing from school to respond to Hollow alerts. Overworked and frustrated, Ichigo is unaware that one of his classmates, Uryu Ishida, possesses spiritual powers of his own.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921784.jpg",
             videoUrl: ""
           },
@@ -15875,6 +15896,7 @@ window._ANIME_DATA = [
             title: "A Gentle Right Arm",
             duration: "24m",
             overview: "In order to prove how  useless Soul Reapers are, Uryu releases bait to draw Hollows to their town. Whoever gets rid of the most wins the challenge, but soon Hollows are everywhere, including one that threatens Chad and Ichigo's sister.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921805.jpg",
             videoUrl: ""
           },
@@ -15883,6 +15905,7 @@ window._ANIME_DATA = [
             title: "Flower and Hollow",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921807.jpg",
             videoUrl: ""
           }
@@ -15896,6 +15919,7 @@ window._ANIME_DATA = [
             title: "Back to Back, a Fight to the Death!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921822.jpg",
             videoUrl: ""
           },
@@ -15904,6 +15928,7 @@ window._ANIME_DATA = [
             title: "Kon's Great Plan",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921824.jpg",
             videoUrl: ""
           },
@@ -15912,6 +15937,7 @@ window._ANIME_DATA = [
             title: "The Encounter, Renji Abarai!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921829.jpg",
             videoUrl: ""
           },
@@ -15920,6 +15946,7 @@ window._ANIME_DATA = [
             title: "Ichigo Dies!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921832.jpg",
             videoUrl: ""
           },
@@ -15928,6 +15955,7 @@ window._ANIME_DATA = [
             title: "Reclaim! The Power of the Shinigami!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921833.jpg",
             videoUrl: ""
           },
@@ -15936,6 +15964,7 @@ window._ANIME_DATA = [
             title: "Ichigo Becomes a Hollow!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921834.jpg",
             videoUrl: ""
           },
@@ -15944,6 +15973,7 @@ window._ANIME_DATA = [
             title: "Ichimaru Gin's Shadow",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921835.jpg",
             videoUrl: ""
           },
@@ -15952,6 +15982,7 @@ window._ANIME_DATA = [
             title: "Enter! The World of the Shinigami",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921838.jpg",
             videoUrl: ""
           },
@@ -15960,6 +15991,7 @@ window._ANIME_DATA = [
             title: "The Man Who Hates Shinigami",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921839.jpg",
             videoUrl: ""
           },
@@ -15968,6 +16000,7 @@ window._ANIME_DATA = [
             title: "14 Days Before Rukia's Execution",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922105.jpg",
             videoUrl: ""
           },
@@ -15976,6 +16009,7 @@ window._ANIME_DATA = [
             title: "Assemble! The 13 Divisions",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922108.jpg",
             videoUrl: ""
           },
@@ -15984,6 +16018,7 @@ window._ANIME_DATA = [
             title: "Penetrate the Center with an Enormous Bombshell?",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922117.jpg",
             videoUrl: ""
           },
@@ -15992,6 +16027,7 @@ window._ANIME_DATA = [
             title: "Formation! The Worst Tag",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922122.jpg",
             videoUrl: ""
           },
@@ -16000,6 +16036,7 @@ window._ANIME_DATA = [
             title: "Release the Death Blow!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922125.jpg",
             videoUrl: ""
           },
@@ -16008,6 +16045,7 @@ window._ANIME_DATA = [
             title: "Orihime Targeted",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922126.jpg",
             videoUrl: ""
           },
@@ -16016,6 +16054,7 @@ window._ANIME_DATA = [
             title: "Breakthrough! The Shinigami's Encompassing Net",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922127.jpg",
             videoUrl: ""
           },
@@ -16024,6 +16063,7 @@ window._ANIME_DATA = [
             title: "Renji's Confrontation",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922128.jpg",
             videoUrl: ""
           },
@@ -16032,6 +16072,7 @@ window._ANIME_DATA = [
             title: "The Resolution to Kill",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922129.jpg",
             videoUrl: ""
           },
@@ -16040,6 +16081,7 @@ window._ANIME_DATA = [
             title: "Stars and the Stray",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922130.jpg",
             videoUrl: ""
           },
@@ -16048,6 +16090,7 @@ window._ANIME_DATA = [
             title: "Miracle! The Mysterious New Hero",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922133.jpg",
             videoUrl: ""
           },
@@ -16056,6 +16099,7 @@ window._ANIME_DATA = [
             title: "Tragedy of Dawn",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922135.jpg",
             videoUrl: ""
           },
@@ -16064,6 +16108,7 @@ window._ANIME_DATA = [
             title: "Assassination of Aizen! The Darkness Which Approaches",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922138.jpg",
             videoUrl: ""
           },
@@ -16072,6 +16117,7 @@ window._ANIME_DATA = [
             title: "Kenpachi Zaraki Approaches!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922139.jpg",
             videoUrl: ""
           },
@@ -16080,6 +16126,7 @@ window._ANIME_DATA = [
             title: "Reason of the Fist",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922158.jpg",
             videoUrl: ""
           },
@@ -16088,6 +16135,7 @@ window._ANIME_DATA = [
             title: "Desperation! The Broken Zangetsu",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922164.jpg",
             videoUrl: ""
           },
@@ -16096,6 +16144,7 @@ window._ANIME_DATA = [
             title: "The Man of Immortality",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922166.jpg",
             videoUrl: ""
           },
@@ -16104,6 +16153,7 @@ window._ANIME_DATA = [
             title: "The Shinigami Whom Ganju Met",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922169.jpg",
             videoUrl: ""
           },
@@ -16112,6 +16162,7 @@ window._ANIME_DATA = [
             title: "Reunion, Ichigo and Rukia",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922170.jpg",
             videoUrl: ""
           },
@@ -16120,6 +16171,7 @@ window._ANIME_DATA = [
             title: "Yoruichi, Master of Speed, Dances!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922177.jpg",
             videoUrl: ""
           },
@@ -16128,6 +16180,7 @@ window._ANIME_DATA = [
             title: "The Despicable Shinigami",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922179.jpg",
             videoUrl: ""
           },
@@ -16136,6 +16189,7 @@ window._ANIME_DATA = [
             title: "Ishida, Limits of Power!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922180.jpg",
             videoUrl: ""
           },
@@ -16144,6 +16198,7 @@ window._ANIME_DATA = [
             title: "Overcome the Limits!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922182.jpg",
             videoUrl: ""
           },
@@ -16152,6 +16207,7 @@ window._ANIME_DATA = [
             title: "Authentic Records! School of Shinigami",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922200.jpg",
             videoUrl: ""
           },
@@ -16160,6 +16216,7 @@ window._ANIME_DATA = [
             title: "The Avengers",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922201.jpg",
             videoUrl: ""
           },
@@ -16168,6 +16225,7 @@ window._ANIME_DATA = [
             title: "Hitsugaya Roars!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922202.jpg",
             videoUrl: ""
           },
@@ -16176,6 +16234,7 @@ window._ANIME_DATA = [
             title: "Rukia's Nightmare",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922203.jpg",
             videoUrl: ""
           },
@@ -16184,6 +16243,7 @@ window._ANIME_DATA = [
             title: "The Awakening Lion",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922204.jpg",
             videoUrl: ""
           },
@@ -16192,6 +16252,7 @@ window._ANIME_DATA = [
             title: "Morning of the Sentence",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922238.jpg",
             videoUrl: ""
           },
@@ -16200,6 +16261,7 @@ window._ANIME_DATA = [
             title: "Renji, Oath of the Soul! Death Match with Byakuya",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922240.jpg",
             videoUrl: ""
           },
@@ -16208,6 +16270,7 @@ window._ANIME_DATA = [
             title: "Ichimaru Gin's Temptation, Resolution Shattered",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922242.jpg",
             videoUrl: ""
           },
@@ -16216,6 +16279,7 @@ window._ANIME_DATA = [
             title: "An Accomplished Oath! Get Back Rukia!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922243.jpg",
             videoUrl: ""
           },
@@ -16224,6 +16288,7 @@ window._ANIME_DATA = [
             title: "The Strongest Shinigami! Ultimate Confrontation Between Teacher and Student",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922244.jpg",
             videoUrl: ""
           },
@@ -16232,6 +16297,7 @@ window._ANIME_DATA = [
             title: "Supersonic Battle! Determine the Goddess of Chivalry",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922245.jpg",
             videoUrl: ""
           },
@@ -16240,6 +16306,7 @@ window._ANIME_DATA = [
             title: "Zenbonzakura, Crushed! Zangetsu Thrusts Through the Sky",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922246.jpg",
             videoUrl: ""
           },
@@ -16248,6 +16315,7 @@ window._ANIME_DATA = [
             title: "Unseal! The Black Blade, the Miraculous Power",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922247.jpg",
             videoUrl: ""
           },
@@ -16256,6 +16324,7 @@ window._ANIME_DATA = [
             title: "Conclusion of the Death Match! White Pride and Black Desire",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922248.jpg",
             videoUrl: ""
           },
@@ -16264,6 +16333,7 @@ window._ANIME_DATA = [
             title: "Truth of Despair, the Dagger that has been Brandished",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922249.jpg",
             videoUrl: ""
           },
@@ -16272,6 +16342,7 @@ window._ANIME_DATA = [
             title: "Aizen Stands! His Terrifying Ambition",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922250.jpg",
             videoUrl: ""
           },
@@ -16280,6 +16351,7 @@ window._ANIME_DATA = [
             title: "Gather Together! Group of the Strongest Shinigami!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922251.jpg",
             videoUrl: ""
           }
@@ -16293,6 +16365,7 @@ window._ANIME_DATA = [
             title: "Rukia's Resolution, Ichigo's Feelings",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922252.jpg",
             videoUrl: ""
           },
@@ -16301,6 +16374,7 @@ window._ANIME_DATA = [
             title: "New School Term, Renji Has Come to the Material world?!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925643.jpg",
             videoUrl: ""
           },
@@ -16309,6 +16383,7 @@ window._ANIME_DATA = [
             title: "Creeping Terror, the Second Victim",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925645.jpg",
             videoUrl: ""
           },
@@ -16317,6 +16392,7 @@ window._ANIME_DATA = [
             title: "Break Through! The Trap Hidden in the Labyrinth",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925646.jpg",
             videoUrl: ""
           },
@@ -16325,6 +16401,7 @@ window._ANIME_DATA = [
             title: "Death Game! The Missing Classmate",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925647.jpg",
             videoUrl: ""
           },
@@ -16333,6 +16410,7 @@ window._ANIME_DATA = [
             title: "True Identity of the Devil, the Secret Which Is Revealed",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925648.jpg",
             videoUrl: ""
           },
@@ -16341,6 +16419,7 @@ window._ANIME_DATA = [
             title: "Baunt! The Soul Hunters",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925649.jpg",
             videoUrl: ""
           },
@@ -16349,6 +16428,7 @@ window._ANIME_DATA = [
             title: "Return of Rukia! The Substitute Team Revival",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925650.jpg",
             videoUrl: ""
           },
@@ -16357,6 +16437,7 @@ window._ANIME_DATA = [
             title: "The Moment of Collision!! An Evil Hand Draws Near to the Quincy",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925651.jpg",
             videoUrl: ""
           },
@@ -16365,6 +16446,7 @@ window._ANIME_DATA = [
             title: "Water Attack! Escape from the Shutdown Hospital",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925652.jpg",
             videoUrl: ""
           },
@@ -16373,6 +16455,7 @@ window._ANIME_DATA = [
             title: "Gathering Bounts! The Man Who Makes His Move",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925653.jpg",
             videoUrl: ""
           },
@@ -16381,6 +16464,7 @@ window._ANIME_DATA = [
             title: "Memories of an Eternally Living Clan",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925654.jpg",
             videoUrl: ""
           },
@@ -16389,6 +16473,7 @@ window._ANIME_DATA = [
             title: "Earth-Shattering Event at 11th Squad! The Shinigami Who Rises Again",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925655.jpg",
             videoUrl: ""
           },
@@ -16397,6 +16482,7 @@ window._ANIME_DATA = [
             title: "Crashing Force! Friido vs. Zangetsu",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925656.jpg",
             videoUrl: ""
           },
@@ -16405,6 +16491,7 @@ window._ANIME_DATA = [
             title: "Unfading Grudge! The Shinigami Whom Kenpachi Killed",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925657.jpg",
             videoUrl: ""
           },
@@ -16413,6 +16500,7 @@ window._ANIME_DATA = [
             title: "Shocking Revelations for the Gotei 13 Divisions!! The Truth Buried in History",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925658.jpg",
             videoUrl: ""
           },
@@ -16421,6 +16509,7 @@ window._ANIME_DATA = [
             title: "Yoshino's Decision of Death",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925659.jpg",
             videoUrl: ""
           },
@@ -16429,6 +16518,7 @@ window._ANIME_DATA = [
             title: "Assault from a Formidable Enemy! A Tiny Final Line of Defense?!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925660.jpg",
             videoUrl: ""
           },
@@ -16437,6 +16527,7 @@ window._ANIME_DATA = [
             title: "Hitsugaya Moves! The Attacked City",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925661.jpg",
             videoUrl: ""
           },
@@ -16445,6 +16536,7 @@ window._ANIME_DATA = [
             title: "Ichigo vs. Dalk! Appearance of the Faded Darkness",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925662.jpg",
             videoUrl: ""
           },
@@ -16453,6 +16545,7 @@ window._ANIME_DATA = [
             title: "Grey Shadow, the Secret of the Doll",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925663.jpg",
             videoUrl: ""
           },
@@ -16461,6 +16554,7 @@ window._ANIME_DATA = [
             title: "Breaking Up of the Substitute Team? The Betrayal of Rukia",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925664.jpg",
             videoUrl: ""
           },
@@ -16469,6 +16563,7 @@ window._ANIME_DATA = [
             title: "Battle of Tears! Rukia vs. Orihime",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925665.jpg",
             videoUrl: ""
           },
@@ -16477,6 +16572,7 @@ window._ANIME_DATA = [
             title: "Rangiku Dances! Cut Down the Invisible Enemy",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925666.jpg",
             videoUrl: ""
           },
@@ -16485,6 +16581,7 @@ window._ANIME_DATA = [
             title: "Byakuya Assembles! The Gotei 13 Make Their Move",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925667.jpg",
             videoUrl: ""
           },
@@ -16493,6 +16590,7 @@ window._ANIME_DATA = [
             title: "Annihilation of the Vice-Captains!? Trap in the Underground Cave",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925668.jpg",
             videoUrl: ""
           },
@@ -16501,6 +16599,7 @@ window._ANIME_DATA = [
             title: "Rematch?! Ishida vs. Nemu",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925669.jpg",
             videoUrl: ""
           },
@@ -16509,6 +16608,7 @@ window._ANIME_DATA = [
             title: "Abarai Renji, Soul of Bankai!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925670.jpg",
             videoUrl: ""
           },
@@ -16517,6 +16617,7 @@ window._ANIME_DATA = [
             title: "Shinigami and Quincy, the Reviving Power",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925671.jpg",
             videoUrl: ""
           },
@@ -16525,6 +16626,7 @@ window._ANIME_DATA = [
             title: "Enter the World of the Shinigami, Again",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925672.jpg",
             videoUrl: ""
           },
@@ -16533,6 +16635,7 @@ window._ANIME_DATA = [
             title: "Assault of the Bounts! Chaos in the Gotei 13 Divisions",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925673.jpg",
             videoUrl: ""
           },
@@ -16541,6 +16644,7 @@ window._ANIME_DATA = [
             title: "Hitsugaya's Resolution! The Moment of Conflict Approaches",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925674.jpg",
             videoUrl: ""
           },
@@ -16549,6 +16653,7 @@ window._ANIME_DATA = [
             title: "Byakuya Takes the Field! Dance of the Wind-Splitting Cherry Blossoms",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925675.jpg",
             videoUrl: ""
           },
@@ -16557,6 +16662,7 @@ window._ANIME_DATA = [
             title: "Ichigo・Byakuya・Kariya, Battle of the Three Extremes!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925676.jpg",
             videoUrl: ""
           },
@@ -16565,6 +16671,7 @@ window._ANIME_DATA = [
             title: "Hitsugaya Strikes! Cut Down the Enemy in the Forest",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925677.jpg",
             videoUrl: ""
           },
@@ -16573,6 +16680,7 @@ window._ANIME_DATA = [
             title: "Clash! Zaraki Kenpachi vs. Ichinose Maki",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925678.jpg",
             videoUrl: ""
           },
@@ -16581,6 +16689,7 @@ window._ANIME_DATA = [
             title: "Shinigami vs. Shinigami! The Uncontrollable Power",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925679.jpg",
             videoUrl: ""
           },
@@ -16589,6 +16698,7 @@ window._ANIME_DATA = [
             title: "Soi Fong Dies? The Last of the Secret Mobile Corps",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925680.jpg",
             videoUrl: ""
           },
@@ -16597,6 +16707,7 @@ window._ANIME_DATA = [
             title: "Mayuri's Bankai! Sawatari: Clash of the Demon",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925681.jpg",
             videoUrl: ""
           },
@@ -16605,6 +16716,7 @@ window._ANIME_DATA = [
             title: "The Last Quincy! The Exploding Power",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925682.jpg",
             videoUrl: ""
           },
@@ -16613,6 +16725,7 @@ window._ANIME_DATA = [
             title: "Ishida, Exceeding the Limits to Attack!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925683.jpg",
             videoUrl: ""
           },
@@ -16621,6 +16734,7 @@ window._ANIME_DATA = [
             title: "10th Division's Death Struggle! The Release of Hyourinmaru",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925684.jpg",
             videoUrl: ""
           },
@@ -16629,6 +16743,7 @@ window._ANIME_DATA = [
             title: "Kariya! Countdown to the Detonation",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925685.jpg",
             videoUrl: ""
           },
@@ -16637,6 +16752,7 @@ window._ANIME_DATA = [
             title: "Life and Revenge! Ishida, the Ultimate Choice",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925686.jpg",
             videoUrl: ""
           },
@@ -16645,6 +16761,7 @@ window._ANIME_DATA = [
             title: "The Swung-Down Edge! The Moment of Ruin",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925687.jpg",
             videoUrl: ""
           },
@@ -16653,6 +16770,7 @@ window._ANIME_DATA = [
             title: "The Wailing Bount! The Last Clash",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925688.jpg",
             videoUrl: ""
           }
@@ -16666,6 +16784,7 @@ window._ANIME_DATA = [
             title: "Ichigo and Rukia, Thoughts in the Revolving Sky",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925689.jpg",
             videoUrl: ""
           },
@@ -16674,6 +16793,7 @@ window._ANIME_DATA = [
             title: "Reopening of the Substitute Business! The Terrifying Transfer Student",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925691.jpg",
             videoUrl: ""
           },
@@ -16682,6 +16802,7 @@ window._ANIME_DATA = [
             title: "Shock! The Father's True Character",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925692.jpg",
             videoUrl: ""
           },
@@ -16690,6 +16811,7 @@ window._ANIME_DATA = [
             title: "The Commencement of War, the Vizards and the Arrancars",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925693.jpg",
             videoUrl: ""
           },
@@ -16698,6 +16820,7 @@ window._ANIME_DATA = [
             title: "Prelude to the Apocalypse, The Arrancar Offensive",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925694.jpg",
             videoUrl: ""
           },
@@ -16706,6 +16829,7 @@ window._ANIME_DATA = [
             title: "Reunion, Ichigo and Rukia and Shinigami",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925695.jpg",
             videoUrl: ""
           },
@@ -16714,6 +16838,7 @@ window._ANIME_DATA = [
             title: "Mission! The Shinigami Have Came",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925696.jpg",
             videoUrl: ""
           },
@@ -16722,6 +16847,7 @@ window._ANIME_DATA = [
             title: "The Evil Eye, Aizen Again",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925697.jpg",
             videoUrl: ""
           },
@@ -16730,6 +16856,7 @@ window._ANIME_DATA = [
             title: "Rukia's Battle Begins! The Freezing White Blade",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925698.jpg",
             videoUrl: ""
           },
@@ -16738,6 +16865,7 @@ window._ANIME_DATA = [
             title: "Ikkaku's Bankai! The Power That Breaks Everything",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925699.jpg",
             videoUrl: ""
           },
@@ -16746,6 +16874,7 @@ window._ANIME_DATA = [
             title: "Team Zaraki's Secret Story! The Lucky Men",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925700.jpg",
             videoUrl: ""
           },
@@ -16754,6 +16883,7 @@ window._ANIME_DATA = [
             title: "Hitsugaya Scatters! The Broken Hyourinmaru",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925701.jpg",
             videoUrl: ""
           },
@@ -16762,6 +16892,7 @@ window._ANIME_DATA = [
             title: "Clash! The Protector vs. the Bearer",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925702.jpg",
             videoUrl: ""
           },
@@ -16770,6 +16901,7 @@ window._ANIME_DATA = [
             title: "Vizard! The Power of the Awakened",
             duration: "24m",
             overview: "Ichigo seeks out the Vizard after realizing that he must learn how to control his inner Hollow. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925703.jpg",
             videoUrl: ""
           },
@@ -16778,6 +16910,7 @@ window._ANIME_DATA = [
             title: "Ichigo, Complete Hollowification?!",
             duration: "24m",
             overview: "Ichigo begins training to control his inner Hollow. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925704.jpg",
             videoUrl: ""
           },
@@ -16786,6 +16919,7 @@ window._ANIME_DATA = [
             title: "Clash! The Black Bankai and the White Bankai",
             duration: "24m",
             overview: "Ichigo continues his battle with his inner Hollow. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925705.jpg",
             videoUrl: ""
           },
@@ -16794,6 +16928,7 @@ window._ANIME_DATA = [
             title: "Urgent Report! Aizen's Terrifying Plan",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925706.jpg",
             videoUrl: ""
           },
@@ -16802,6 +16937,7 @@ window._ANIME_DATA = [
             title: "Uryuu vs. Ryuuken! Clash of the Parent-Child Quincys",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925707.jpg",
             videoUrl: ""
           },
@@ -16810,6 +16946,7 @@ window._ANIME_DATA = [
             title: "Urahara's Decision, Orihime's Thoughts",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925708.jpg",
             videoUrl: ""
           },
@@ -16818,6 +16955,7 @@ window._ANIME_DATA = [
             title: "The Nightmare Arrancar! Team Hitsugaya Moves Out",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925709.jpg",
             videoUrl: ""
           },
@@ -16826,6 +16964,7 @@ window._ANIME_DATA = [
             title: "The Swooping Descent of the Dark Emissary! The Propagation of Malice",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925710.jpg",
             videoUrl: ""
           },
@@ -16834,6 +16973,7 @@ window._ANIME_DATA = [
             title: "The Invisible Enemy! Hitsugaya's Merciless Decision",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925711.jpg",
             videoUrl: ""
           },
@@ -16842,6 +16982,7 @@ window._ANIME_DATA = [
             title: "Rangiku's Tears, the Sorrowful Parting of Brother and Sister",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925712.jpg",
             videoUrl: ""
           },
@@ -16850,6 +16991,7 @@ window._ANIME_DATA = [
             title: "Hitsugaya, Karin and Soccer Ball",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925714.jpg",
             videoUrl: ""
           },
@@ -16858,6 +17000,7 @@ window._ANIME_DATA = [
             title: "Ikkaku's Hot-Blooded Kendo Tale",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925715.jpg",
             videoUrl: ""
           },
@@ -16866,6 +17009,7 @@ window._ANIME_DATA = [
             title: "The Beautiful Patissier, Yumichika!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925716.jpg",
             videoUrl: ""
           },
@@ -16874,6 +17018,7 @@ window._ANIME_DATA = [
             title: "Kon Is Deceived! Rangiku on the Lookout..",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925717.jpg",
             videoUrl: ""
           },
@@ -16882,6 +17027,7 @@ window._ANIME_DATA = [
             title: "Civil War in Hueco Mondo! Ulquiorra's Death",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925718.jpg",
             videoUrl: ""
           },
@@ -16890,6 +17036,7 @@ window._ANIME_DATA = [
             title: "The Malicious Battle, Aizen's Trap",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925719.jpg",
             videoUrl: ""
           },
@@ -16898,6 +17045,7 @@ window._ANIME_DATA = [
             title: "Hueco Mondo Moves Again! Hitsugaya vs. Yammy",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925720.jpg",
             videoUrl: ""
           },
@@ -16906,6 +17054,7 @@ window._ANIME_DATA = [
             title: "Ichigo vs. Grimmjow, the 11-second Battle",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925721.jpg",
             videoUrl: ""
           },
@@ -16914,6 +17063,7 @@ window._ANIME_DATA = [
             title: "Ulquiorra's Scheme, the Moment When the Sun Sets",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925722.jpg",
             videoUrl: ""
           },
@@ -16922,6 +17072,7 @@ window._ANIME_DATA = [
             title: "Goodbye..., Kurosaki",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925723.jpg",
             videoUrl: ""
           },
@@ -16930,6 +17081,7 @@ window._ANIME_DATA = [
             title: "Strict Order! The Forbidden Rescue of Inoue Orihime",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925724.jpg",
             videoUrl: ""
           },
@@ -16938,6 +17090,7 @@ window._ANIME_DATA = [
             title: "Grimmjow's Revival",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925725.jpg",
             videoUrl: ""
           },
@@ -16946,6 +17099,7 @@ window._ANIME_DATA = [
             title: "Ishida・Chad, the Quickening of a New Power",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925726.jpg",
             videoUrl: ""
           },
@@ -16954,6 +17108,7 @@ window._ANIME_DATA = [
             title: "The Espada Gathers! Aizen's Royal Assembly",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925727.jpg",
             videoUrl: ""
           },
@@ -16962,6 +17117,7 @@ window._ANIME_DATA = [
             title: "The Name Is Nel! The Appearance of the Strange Arrancar",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925728.jpg",
             videoUrl: ""
           },
@@ -16970,6 +17126,7 @@ window._ANIME_DATA = [
             title: "The Forest of Menos! The Search for the Missing Rukia",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925729.jpg",
             videoUrl: ""
           },
@@ -16978,6 +17135,7 @@ window._ANIME_DATA = [
             title: "Ashido, the Shinigami Who Came from the Past",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925730.jpg",
             videoUrl: ""
           },
@@ -16986,6 +17144,7 @@ window._ANIME_DATA = [
             title: "Through the Crumbling Forest, a Million Menos",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925731.jpg",
             videoUrl: ""
           },
@@ -16994,6 +17153,7 @@ window._ANIME_DATA = [
             title: "Oath! Back Here Alive Again",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925732.jpg",
             videoUrl: ""
           },
@@ -17002,6 +17162,7 @@ window._ANIME_DATA = [
             title: "The Raging Storm! Encounter with the Dancing Arrancar",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925733.jpg",
             videoUrl: ""
           },
@@ -17010,6 +17171,7 @@ window._ANIME_DATA = [
             title: "Ichigo Strikes Back! This Is My Bankai",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925737.jpg",
             videoUrl: ""
           },
@@ -17018,6 +17180,7 @@ window._ANIME_DATA = [
             title: "The Devilish Research! Szayel Aporro's Plan",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925738.jpg",
             videoUrl: ""
           },
@@ -17026,6 +17189,7 @@ window._ANIME_DATA = [
             title: "Rukia and Kaien, the Sorrowful Reunion",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925739.jpg",
             videoUrl: ""
           }
@@ -17039,6 +17203,7 @@ window._ANIME_DATA = [
             title: "Rukia Retaliates! Release the Desperate Kidou",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925740.jpg",
             videoUrl: ""
           },
@@ -17047,6 +17212,7 @@ window._ANIME_DATA = [
             title: "Ishida & Pesshe, the United Attack of Friendship",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925741.jpg",
             videoUrl: ""
           },
@@ -17055,6 +17221,7 @@ window._ANIME_DATA = [
             title: "Ishida's Trump Card, Seele Schneider",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925742.jpg",
             videoUrl: ""
           },
@@ -17063,6 +17230,7 @@ window._ANIME_DATA = [
             title: "Right Arm of the Giant, Left Arm of the Devil",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925743.jpg",
             videoUrl: ""
           },
@@ -17071,6 +17239,7 @@ window._ANIME_DATA = [
             title: "Sado Yasutora Dies! Orihime's Tears",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925744.jpg",
             videoUrl: ""
           },
@@ -17079,6 +17248,7 @@ window._ANIME_DATA = [
             title: "Testament, Your Heart Is Right Here...",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925745.jpg",
             videoUrl: ""
           },
@@ -17087,6 +17257,7 @@ window._ANIME_DATA = [
             title: "The Cruel Arrancar, Ulquiorra's Provocation",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925746.jpg",
             videoUrl: ""
           },
@@ -17095,6 +17266,7 @@ window._ANIME_DATA = [
             title: "Syazel Aporro Laughs, the Net Trapping Renji Is Complete",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925747.jpg",
             videoUrl: ""
           },
@@ -17103,6 +17275,7 @@ window._ANIME_DATA = [
             title: "Shinigami and Quincy, the Battle with Madness",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925748.jpg",
             videoUrl: ""
           },
@@ -17111,6 +17284,7 @@ window._ANIME_DATA = [
             title: "Ishida's Strategy, the 20-second Offense and Defense",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925749.jpg",
             videoUrl: ""
           },
@@ -17119,6 +17293,7 @@ window._ANIME_DATA = [
             title: "The Murderous Intent Boils! The Joyful Grimmjow",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925750.jpg",
             videoUrl: ""
           },
@@ -17127,6 +17302,7 @@ window._ANIME_DATA = [
             title: "Desperate Effort vs. Desperate Effort! The Hollowized Ichigo",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925751.jpg",
             videoUrl: ""
           },
@@ -17135,6 +17311,7 @@ window._ANIME_DATA = [
             title: "The Moment of Conclusion, the End of Grimmjow",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925752.jpg",
             videoUrl: ""
           },
@@ -17143,6 +17320,7 @@ window._ANIME_DATA = [
             title: "The New Captain Appears! His Name Is Shusuke Amagai",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925755.jpg",
             videoUrl: ""
           },
@@ -17151,6 +17329,7 @@ window._ANIME_DATA = [
             title: "New Development, the Dangerous Transfer Student Appears!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925756.jpg",
             videoUrl: ""
           },
@@ -17159,6 +17338,7 @@ window._ANIME_DATA = [
             title: "Desperate Struggle Under the Moonlit Night, the Mysterious Assassin and Zanpakutō",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925757.jpg",
             videoUrl: ""
           },
@@ -17167,6 +17347,7 @@ window._ANIME_DATA = [
             title: "Kenryu, the Profusion of Blooming Crimson Flowers",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925758.jpg",
             videoUrl: ""
           },
@@ -17175,6 +17356,7 @@ window._ANIME_DATA = [
             title: "Kibune Goes to War! The Violent Wind That Rages",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925759.jpg",
             videoUrl: ""
           },
@@ -17183,6 +17365,7 @@ window._ANIME_DATA = [
             title: "The Appearance of the Great Evil! The Darkness in the House of Kasumioji",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925760.jpg",
             videoUrl: ""
           },
@@ -17191,6 +17374,7 @@ window._ANIME_DATA = [
             title: "Break the Mirror's Boundary! Ichigo's Captivity",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925761.jpg",
             videoUrl: ""
           },
@@ -17199,6 +17383,7 @@ window._ANIME_DATA = [
             title: "The Revenging Assassin, Ichigo Is Targeted",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925762.jpg",
             videoUrl: ""
           },
@@ -17207,6 +17392,7 @@ window._ANIME_DATA = [
             title: "Mystery! The Sword-Consuming Assassin",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925763.jpg",
             videoUrl: ""
           },
@@ -17215,6 +17401,7 @@ window._ANIME_DATA = [
             title: "The Reversal of Rukia, the Rampaging Blade",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925764.jpg",
             videoUrl: ""
           },
@@ -17223,6 +17410,7 @@ window._ANIME_DATA = [
             title: "The Nightmare Which Is Shown, Ichigo's Inside the Mirror",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925765.jpg",
             videoUrl: ""
           },
@@ -17231,6 +17419,7 @@ window._ANIME_DATA = [
             title: "Confrontation?! Amagai vs. Gotei 13",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925766.jpg",
             videoUrl: ""
           },
@@ -17239,6 +17428,7 @@ window._ANIME_DATA = [
             title: "The Princess' Decision, the Sorrowful Bride",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925767.jpg",
             videoUrl: ""
           },
@@ -17247,6 +17437,7 @@ window._ANIME_DATA = [
             title: "The 2nd Division Sorties! Ichigo Is Surrounded",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925768.jpg",
             videoUrl: ""
           },
@@ -17255,6 +17446,7 @@ window._ANIME_DATA = [
             title: "Amagai's True Strength, Zanpakuto Is Released!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925769.jpg",
             videoUrl: ""
           },
@@ -17263,6 +17455,7 @@ window._ANIME_DATA = [
             title: "The Darkness Which Moves! Kibune's True Colors",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925770.jpg",
             videoUrl: ""
           },
@@ -17271,6 +17464,7 @@ window._ANIME_DATA = [
             title: "Kira and Kibune, Offense and Defense of the 3rd Division",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925771.jpg",
             videoUrl: ""
           },
@@ -17279,6 +17473,7 @@ window._ANIME_DATA = [
             title: "Ice and Flame! Fierce Fight of Amagai vs. Hitsugaya",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925772.jpg",
             videoUrl: ""
           },
@@ -17287,6 +17482,7 @@ window._ANIME_DATA = [
             title: "Sortie Orders! Suppress the House of Kasumiōji",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925773.jpg",
             videoUrl: ""
           },
@@ -17295,6 +17491,7 @@ window._ANIME_DATA = [
             title: "Ichigo Rages! The Assassin's Secret",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925774.jpg",
             videoUrl: ""
           },
@@ -17303,6 +17500,7 @@ window._ANIME_DATA = [
             title: "Duel! Amagai vs. Ichigo",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925775.jpg",
             videoUrl: ""
           },
@@ -17311,6 +17509,7 @@ window._ANIME_DATA = [
             title: "The Fallen Shinigami's Pride",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925776.jpg",
             videoUrl: ""
           },
@@ -17319,6 +17518,7 @@ window._ANIME_DATA = [
             title: "Hueco Mundo Chapter, Restart!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943936.jpg",
             videoUrl: ""
           },
@@ -17327,6 +17527,7 @@ window._ANIME_DATA = [
             title: "The Frightening Banquet, Szayel Aporro's Theater",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943938.jpg",
             videoUrl: ""
           },
@@ -17335,6 +17536,7 @@ window._ANIME_DATA = [
             title: "Nel's Secret, a Busty Beauty Joins the Battle!?",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943939.jpg",
             videoUrl: ""
           },
@@ -17343,6 +17545,7 @@ window._ANIME_DATA = [
             title: "Irresistable, Puppet Show of Terror",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943940.jpg",
             videoUrl: ""
           },
@@ -17351,6 +17554,7 @@ window._ANIME_DATA = [
             title: "Neliel's Past",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943941.jpg",
             videoUrl: ""
           },
@@ -17359,6 +17563,7 @@ window._ANIME_DATA = [
             title: "The Ultimate Union! Pesche's Seriousness",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943942.jpg",
             videoUrl: ""
           },
@@ -17367,6 +17572,7 @@ window._ANIME_DATA = [
             title: "Joining the Battle! The Strongest Shinigami Army Appears",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943943.jpg",
             videoUrl: ""
           },
@@ -17375,6 +17581,7 @@ window._ANIME_DATA = [
             title: "Byakuya's Bankai, the Quiet Anger",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943944.jpg",
             videoUrl: ""
           },
@@ -17383,6 +17590,7 @@ window._ANIME_DATA = [
             title: "The Two Scientists, Mayuri's Trap",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943945.jpg",
             videoUrl: ""
           },
@@ -17391,6 +17599,7 @@ window._ANIME_DATA = [
             title: "Holy Birth, The Resurrecting Szayel Aporro",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943946.jpg",
             videoUrl: ""
           },
@@ -17399,6 +17608,7 @@ window._ANIME_DATA = [
             title: "The Hardest Body!? Cut Down Nnoitra",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943947.jpg",
             videoUrl: ""
           }
@@ -17412,6 +17622,7 @@ window._ANIME_DATA = [
             title: "Nnoitra Released! Multiplying Arms",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943952.jpg",
             videoUrl: ""
           },
@@ -17420,6 +17631,7 @@ window._ANIME_DATA = [
             title: "Fierce Fighting Conclusion! Who's the Strongest",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943953.jpg",
             videoUrl: ""
           },
@@ -17428,6 +17640,7 @@ window._ANIME_DATA = [
             title: "Karakura Town Gathers! Aizen Versus Shinigami",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943954.jpg",
             videoUrl: ""
           },
@@ -17436,6 +17649,7 @@ window._ANIME_DATA = [
             title: "Ichigo's Seppuku Persuasion Strategy",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943955.jpg",
             videoUrl: ""
           },
@@ -17444,6 +17658,7 @@ window._ANIME_DATA = [
             title: "Thump! A Kemari Tournament Filled with Hollows",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943957.jpg",
             videoUrl: ""
           },
@@ -17452,6 +17667,7 @@ window._ANIME_DATA = [
             title: "The Past Chapter Begins! The Truth from 110 Years Ago",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943959.jpg",
             videoUrl: ""
           },
@@ -17460,6 +17676,7 @@ window._ANIME_DATA = [
             title: "12th Division's New Captain, Urahara Kisuke",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943960.jpg",
             videoUrl: ""
           },
@@ -17468,6 +17685,7 @@ window._ANIME_DATA = [
             title: "Aizen and the Boy Genius",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943962.jpg",
             videoUrl: ""
           },
@@ -17476,6 +17694,7 @@ window._ANIME_DATA = [
             title: "Muguruma 9th Division, Moves Out",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943963.jpg",
             videoUrl: ""
           },
@@ -17484,6 +17703,7 @@ window._ANIME_DATA = [
             title: "Hiyori Dies? The Beginning of Tragedy",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943964.jpg",
             videoUrl: ""
           },
@@ -17492,6 +17712,7 @@ window._ANIME_DATA = [
             title: "Betrayal! Aizen's Secret Maneuvers",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943965.jpg",
             videoUrl: ""
           },
@@ -17500,6 +17721,7 @@ window._ANIME_DATA = [
             title: "Rescue Hirako! Aizen vs. Urahara",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943966.jpg",
             videoUrl: ""
           },
@@ -17508,6 +17730,7 @@ window._ANIME_DATA = [
             title: "Konso Detective Karakuraizer Is Born",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943972.jpg",
             videoUrl: ""
           },
@@ -17516,6 +17739,7 @@ window._ANIME_DATA = [
             title: "Karakuraizer's Last Day",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943973.jpg",
             videoUrl: ""
           },
@@ -17524,6 +17748,7 @@ window._ANIME_DATA = [
             title: "Defend Karakura Town! Entire Appearance of the Shinigami",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943974.jpg",
             videoUrl: ""
           },
@@ -17532,6 +17757,7 @@ window._ANIME_DATA = [
             title: "Elite! The Four Shinigami",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943976.jpg",
             videoUrl: ""
           },
@@ -17540,6 +17766,7 @@ window._ANIME_DATA = [
             title: "Beautiful Little Devil Charlotte",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943977.jpg",
             videoUrl: ""
           },
@@ -17548,6 +17775,7 @@ window._ANIME_DATA = [
             title: "Kira, the Battle Within Despair",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943978.jpg",
             videoUrl: ""
           },
@@ -17556,6 +17784,7 @@ window._ANIME_DATA = [
             title: "Hisagi's Shikai! The Name Is...",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943979.jpg",
             videoUrl: ""
           },
@@ -17564,6 +17793,7 @@ window._ANIME_DATA = [
             title: "Ikkaku Falls! The Shinigami's Crisis",
             duration: "24m",
             overview: "3rd Seat Ikkaku Madarame loses his fight against Choe Neng Poww, forcing Captain Sajin Komamura to take over his battle. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943980.jpg",
             videoUrl: ""
           },
@@ -17572,6 +17802,7 @@ window._ANIME_DATA = [
             title: "The Full Showdown! Shinigami vs. Espada",
             duration: "24m",
             overview: "Captain Suì-Fēng begins her battle with Ggio Vega while the other two Espada and their Fracción begin their fights. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943981.jpg",
             videoUrl: ""
           },
@@ -17580,6 +17811,7 @@ window._ANIME_DATA = [
             title: "The Most Evil Tag!? Soi Fon & Ōmaeda",
             duration: "24m",
             overview: "Ggio Vega and Nirgge Parduoc release their Zanpakutōs, prompting Lieutenant Marechiyo Ōmaeda to use his true power. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943982.jpg",
             videoUrl: ""
           },
@@ -17588,6 +17820,7 @@ window._ANIME_DATA = [
             title: "A Miraculous Body! Ggio Releases",
             duration: "24m",
             overview: "Lieutenant Marechiyo Ōmaeda and Captain Suì-Fēng keep struggling against their opponents.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943983.jpg",
             videoUrl: ""
           },
@@ -17596,6 +17829,7 @@ window._ANIME_DATA = [
             title: "3 vs. 1 Battle! Rangiku's Crisis",
             duration: "24m",
             overview: "Lieutenant Momo Hinamori arrives to help out Lieutenant Rangiku Matsumoto.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943984.jpg",
             videoUrl: ""
           },
@@ -17604,6 +17838,7 @@ window._ANIME_DATA = [
             title: "All Vice-Captains Annihilated! The Terrifying Demonic Beast",
             duration: "24m",
             overview: "Ayon overpowers the lieutenants, greatly injuring them, but Captain-Commander Genryūsai Shigekuni Yamamoto appears to fight the beast. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943985.jpg",
             videoUrl: ""
           },
@@ -17612,6 +17847,7 @@ window._ANIME_DATA = [
             title: "Fierce Fighting Concludes? Towards a New Battle!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943986.jpg",
             videoUrl: ""
           },
@@ -17620,6 +17856,7 @@ window._ANIME_DATA = [
             title: "Wonderful Error",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943987.jpg",
             videoUrl: ""
           },
@@ -17628,6 +17865,7 @@ window._ANIME_DATA = [
             title: "Summer! Sea! Swimsuit Festival!!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943988.jpg",
             videoUrl: ""
           },
@@ -17636,6 +17874,7 @@ window._ANIME_DATA = [
             title: "Cry of the Soul? The Rug Shinigami Is Born!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943989.jpg",
             videoUrl: ""
           },
@@ -17644,6 +17883,7 @@ window._ANIME_DATA = [
             title: "A New Enemy! The Materialization of Zanpakutō",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943990.jpg",
             videoUrl: ""
           },
@@ -17652,6 +17892,7 @@ window._ANIME_DATA = [
             title: "Byakuya, Disappearing with the Cherry Blossoms",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943991.jpg",
             videoUrl: ""
           },
@@ -17660,6 +17901,7 @@ window._ANIME_DATA = [
             title: "Sode no Shirayuki vs. Rukia! Confused Heart",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943992.jpg",
             videoUrl: ""
           },
@@ -17668,6 +17910,7 @@ window._ANIME_DATA = [
             title: "Zangetsu Becomes an Enemy",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943993.jpg",
             videoUrl: ""
           },
@@ -17676,6 +17919,7 @@ window._ANIME_DATA = [
             title: "Renji Surprised?! The Two Zabimarus",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943994.jpg",
             videoUrl: ""
           },
@@ -17684,6 +17928,7 @@ window._ANIME_DATA = [
             title: "Clash! Hisagi vs. Kazeshini",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943995.jpg",
             videoUrl: ""
           },
@@ -17692,6 +17937,7 @@ window._ANIME_DATA = [
             title: "Release! The New Getsuga Tenshō",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943996.jpg",
             videoUrl: ""
           },
@@ -17700,6 +17946,7 @@ window._ANIME_DATA = [
             title: "Soi Fon, Surrounding the Zanpakutō!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943997.jpg",
             videoUrl: ""
           },
@@ -17708,6 +17955,7 @@ window._ANIME_DATA = [
             title: "Friendship? Hatred? Haineko & Tobiume",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943998.jpg",
             videoUrl: ""
           },
@@ -17716,6 +17964,7 @@ window._ANIME_DATA = [
             title: "The Awakening Hyōrinmaru! Hitsugaya's Fierce Fight",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943999.jpg",
             videoUrl: ""
           },
@@ -17724,6 +17973,7 @@ window._ANIME_DATA = [
             title: "Byakuya's Betrayal",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944000.jpg",
             videoUrl: ""
           },
@@ -17732,6 +17982,7 @@ window._ANIME_DATA = [
             title: "For the Sake of Pride! Byakuya vs. Renji",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944001.jpg",
             videoUrl: ""
           },
@@ -17740,6 +17991,7 @@ window._ANIME_DATA = [
             title: "Shinigami and Zanpakuto, Total Sortie",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944002.jpg",
             videoUrl: ""
           },
@@ -17748,6 +18000,7 @@ window._ANIME_DATA = [
             title: "One-to-One Fight! Ichigo vs. Senbonzakura",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944003.jpg",
             videoUrl: ""
           },
@@ -17756,6 +18009,7 @@ window._ANIME_DATA = [
             title: "The Long Awaited...Kenpachi Appears!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944004.jpg",
             videoUrl: ""
           },
@@ -17764,6 +18018,7 @@ window._ANIME_DATA = [
             title: "Pursue Byakuya! The Confused Gotei Divisions",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944005.jpg",
             videoUrl: ""
           },
@@ -17772,6 +18027,7 @@ window._ANIME_DATA = [
             title: "Special Mission! Rescue Captain Commander Yamamoto!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944006.jpg",
             videoUrl: ""
           },
@@ -17780,6 +18036,7 @@ window._ANIME_DATA = [
             title: "Deceived Shinigami! The World Collapse Crisis",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944007.jpg",
             videoUrl: ""
           },
@@ -17788,6 +18045,7 @@ window._ANIME_DATA = [
             title: "Dragon of Ice and Dragon of Flame! The Strongest Showdown!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944008.jpg",
             videoUrl: ""
           },
@@ -17796,6 +18054,7 @@ window._ANIME_DATA = [
             title: "Senbonzakura's Bankai! Offense and Defense of the Living World",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944009.jpg",
             videoUrl: ""
           },
@@ -17804,6 +18063,7 @@ window._ANIME_DATA = [
             title: "That Man, For the Sake of the Kuchiki...",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944010.jpg",
             videoUrl: ""
           },
@@ -17812,6 +18072,7 @@ window._ANIME_DATA = [
             title: "Dark History! The Worst Shinigami Is Born",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944011.jpg",
             videoUrl: ""
           }
@@ -17825,6 +18086,7 @@ window._ANIME_DATA = [
             title: "Byakuya, the Truth Behind His Betrayal",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944012.jpg",
             videoUrl: ""
           },
@@ -17833,6 +18095,7 @@ window._ANIME_DATA = [
             title: "Cero!? Muramasa's True Identity Revealed",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944013.jpg",
             videoUrl: ""
           },
@@ -17841,6 +18104,7 @@ window._ANIME_DATA = [
             title: "Byakuya and Renji, the 6th Division Returns",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944014.jpg",
             videoUrl: ""
           },
@@ -17849,6 +18113,7 @@ window._ANIME_DATA = [
             title: "Final Chapter: Zanpakutō Unknown Tales",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944015.jpg",
             videoUrl: ""
           },
@@ -17857,6 +18122,7 @@ window._ANIME_DATA = [
             title: "Byakuya's Anger! The Kuchiki Family Collapses",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944016.jpg",
             videoUrl: ""
           },
@@ -17865,6 +18131,7 @@ window._ANIME_DATA = [
             title: "A New Enemy! The True Nature of the Sword Beasts",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944017.jpg",
             videoUrl: ""
           },
@@ -17873,6 +18140,7 @@ window._ANIME_DATA = [
             title: "Stray Snake, Tortured Monkey",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944018.jpg",
             videoUrl: ""
           },
@@ -17881,6 +18149,7 @@ window._ANIME_DATA = [
             title: "Terror! The Monster That Lurks Underground",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944019.jpg",
             videoUrl: ""
           },
@@ -17889,6 +18158,7 @@ window._ANIME_DATA = [
             title: "Conclusion?! Hisagi vs. Kazeshini",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944020.jpg",
             videoUrl: ""
           },
@@ -17897,6 +18167,7 @@ window._ANIME_DATA = [
             title: "The Person with the Unknown Ability! Orihime Is Targeted",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944021.jpg",
             videoUrl: ""
           },
@@ -17905,6 +18176,7 @@ window._ANIME_DATA = [
             title: "Haineko Cries! The Tragic Sword Beast",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944022.jpg",
             videoUrl: ""
           },
@@ -17913,6 +18185,7 @@ window._ANIME_DATA = [
             title: "Imprisonment?! Senbonzakura and Zabimaru",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944023.jpg",
             videoUrl: ""
           },
@@ -17921,6 +18194,7 @@ window._ANIME_DATA = [
             title: "Battle of the Females? Nanao vs. Katen Kyōkotsu",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944024.jpg",
             videoUrl: ""
           },
@@ -17929,6 +18203,7 @@ window._ANIME_DATA = [
             title: "Evolution?! The Wonder of the Final Sword Beast",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944025.jpg",
             videoUrl: ""
           },
@@ -17937,6 +18212,7 @@ window._ANIME_DATA = [
             title: "Ichigo vs. Ulquiorra, Resume!",
             duration: "24m",
             overview: "Prior events are recalled. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950136.jpg",
             videoUrl: ""
           },
@@ -17945,6 +18221,7 @@ window._ANIME_DATA = [
             title: "Connected Hearts! The Left Fist Prepared for Death",
             duration: "24m",
             overview: "Ichigo struggles against Ulquiorra as Renji Abarai and Yasutora Sado fight Battikaroa.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950137.jpg",
             videoUrl: ""
           },
@@ -17953,6 +18230,7 @@ window._ANIME_DATA = [
             title: "Jealousy and Hatred... Orihime's Dilemma",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950138.jpg",
             videoUrl: ""
           },
@@ -17961,6 +18239,7 @@ window._ANIME_DATA = [
             title: "Ichigo and Uryū, Bonded Back to Back",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950139.jpg",
             videoUrl: ""
           },
@@ -17969,6 +18248,7 @@ window._ANIME_DATA = [
             title: "Beginning of Despair...Ichigo, the Unreachable Blade",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950140.jpg",
             videoUrl: ""
           },
@@ -17977,6 +18257,7 @@ window._ANIME_DATA = [
             title: "Ichigo Dies! Orihime, the Cry of Sorrow!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950141.jpg",
             videoUrl: ""
           },
@@ -17985,6 +18266,7 @@ window._ANIME_DATA = [
             title: "Ichigo vs. Ulquiorra, Conclusion!",
             duration: "24m",
             overview: "Ichigo and Ulquiorra conclude their battle. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950146.jpg",
             videoUrl: ""
           },
@@ -17993,6 +18275,7 @@ window._ANIME_DATA = [
             title: "Fury of the Shark! Halibel Releases",
             duration: "24m",
             overview: "As Rukia, Chad and Renji battle Yammy Llargo, the captains continue battling the Espada. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950151.jpg",
             videoUrl: ""
           },
@@ -18001,6 +18284,7 @@ window._ANIME_DATA = [
             title: "Hitsugaya, the Desperate Hyōten Hyakkasō!",
             duration: "24m",
             overview: "The battle between Tōshirō and Tier Harribel continues. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950152.jpg",
             videoUrl: ""
           },
@@ -18009,6 +18293,7 @@ window._ANIME_DATA = [
             title: "The Approaching Breath of Death... the King Who Rules over Death!",
             duration: "24m",
             overview: "Captain Suì-Fēng and Lieutenant Marechiyo Ōmaeda struggle against Baraggan Louisenbairn. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950155.jpg",
             videoUrl: ""
           },
@@ -18017,6 +18302,7 @@ window._ANIME_DATA = [
             title: "One Hit Kill! Sui Feng, Bankai!",
             duration: "24m",
             overview: "As Lieutenant Marechiyo Ōmaeda distracts Baraggan Luisenbarn for Captain Suì-Fēng, Captain Shunsui Kyōraku and Coyote Starrk continue their battle. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950156.jpg",
             videoUrl: ""
           },
@@ -18025,6 +18311,7 @@ window._ANIME_DATA = [
             title: "Climax! Kyōraku vs. Stark!",
             duration: "24m",
             overview: "Captain Kyōraku and Coyote Starrk decide to get serious in their battle. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950157.jpg",
             videoUrl: ""
           },
@@ -18033,6 +18320,7 @@ window._ANIME_DATA = [
             title: "The Nightmare Returns...Revival of the Espada",
             duration: "24m",
             overview: "The Espada are shown to still be alive, Sōsuke Aizen, Gin Ichimaru, and Kaname Tōsen are freed, and the Visored arrive on the battlefield. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950161.jpg",
             videoUrl: ""
           },
@@ -18041,6 +18329,7 @@ window._ANIME_DATA = [
             title: "Hirako and Aizen...the Reunion of Fate!",
             duration: "24m",
             overview: "The Visored join the fight and think back to 101 years ago, when Shinji and his friends were going through Hollowfication.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950176.jpg",
             videoUrl: ""
           },
@@ -18049,6 +18338,7 @@ window._ANIME_DATA = [
             title: "Hisagi and Tōsen... the Moment of Parting!",
             duration: "24m",
             overview: "Hachigen Ushōda helps Captain Suì-Fēng battle Baraggan Luisenbarn. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950178.jpg",
             videoUrl: ""
           },
@@ -18057,6 +18347,7 @@ window._ANIME_DATA = [
             title: "Crown of Lies... Barragan's Grudge!",
             duration: "24m",
             overview: "Baraggan Luisenbarn recalls his past as the King of Hueco Mundo.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950179.jpg",
             videoUrl: ""
           },
@@ -18065,6 +18356,7 @@ window._ANIME_DATA = [
             title: "Power of the Soul! Los Lobos, Attack!",
             duration: "24m",
             overview: "Love Aikawa and Rōjūrō Ōtoribashi battle against Coyote Starrk. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950199.jpg",
             videoUrl: ""
           },
@@ -18073,6 +18365,7 @@ window._ANIME_DATA = [
             title: "Stark, the Lone Battle",
             duration: "24m",
             overview: "Coyote Starrk and Captain Shunsui Kyōraku conclude their battle. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950200.jpg",
             videoUrl: ""
           },
@@ -18081,6 +18374,7 @@ window._ANIME_DATA = [
             title: "Chain of Sacrifice...Halibel's Past",
             duration: "24m",
             overview: "As Tier Harribel falls unconscious from her wounds, she recalls her past. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950201.jpg",
             videoUrl: ""
           },
@@ -18089,6 +18383,7 @@ window._ANIME_DATA = [
             title: "The Hundred-Year Grudge...Hiyori's Revenge!",
             duration: "24m",
             overview: "As the situation begins to get desperate in the Fake Karakura Town, the battle with Yammy Llargo continues in Hueco Mundo. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950203.jpg",
             videoUrl: ""
           },
@@ -18097,6 +18392,7 @@ window._ANIME_DATA = [
             title: "Protect Karakura Town! Ichigo's Return!",
             duration: "24m",
             overview: "The captains in Hueco Mundo decide to send Ichigo back to Karakura Town. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950204.jpg",
             videoUrl: ""
           },
@@ -18105,6 +18401,7 @@ window._ANIME_DATA = [
             title: "Side Story! Ichigo and the Magic Lamp!",
             duration: "24m",
             overview: "Ichigo has a dream and tries to escape from it. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950205.jpg",
             videoUrl: ""
           },
@@ -18113,6 +18410,7 @@ window._ANIME_DATA = [
             title: "The Final Trump Card! Ichigo, Towards the Decisive Battle!",
             duration: "24m",
             overview: "Ichigo begins his return to Karakura Town. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950208.jpg",
             videoUrl: ""
           },
@@ -18121,6 +18419,7 @@ window._ANIME_DATA = [
             title: "Byakuya vs. Kenpachi?! The Melee Commences!",
             duration: "24m",
             overview: "As Captains Byakuya Kuchiki and Kenpachi prepare to fight each other, Yammy Llargo's anger makes him even stronger.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950209.jpg",
             videoUrl: ""
           },
@@ -18129,6 +18428,7 @@ window._ANIME_DATA = [
             title: "For the Sake of Justice?! The Man Who Deserted the Shinigami",
             duration: "24m",
             overview: "Kaname Tōsen reveals his true reasons for betraying Soul Society. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950210.jpg",
             videoUrl: ""
           },
@@ -18137,6 +18437,7 @@ window._ANIME_DATA = [
             title: "Desperate Struggle with Aizen! Hirako, Shikai!",
             duration: "24m",
             overview: "As Captain Sajin Komamura continues his battle with Tōsen, Shinji releases his Zanpakutō against Aizen. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950219.jpg",
             videoUrl: ""
           },
@@ -18145,6 +18446,7 @@ window._ANIME_DATA = [
             title: "All-Out War! Aizen vs. Shinigami!",
             duration: "24m",
             overview: "The Shinigami and Visored vow to protect Ichigo and defeat Aizen.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950220.jpg",
             videoUrl: ""
           },
@@ -18153,6 +18455,7 @@ window._ANIME_DATA = [
             title: "Hitsugaya, Enraged! Blade of Hatred!",
             duration: "24m",
             overview: "The Shinigami and Visored, attacking Aizen, are unable to defeat the treacherous captain. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950221.jpg",
             videoUrl: ""
           },
@@ -18161,6 +18464,7 @@ window._ANIME_DATA = [
             title: "Impossible to Attack?! The Sealed Genryūsai!",
             duration: "24m",
             overview: "Captain-Commander Genryūsai Shigekuni Yamamoto joins the battle against Aizen, only for his Zanpakutō's abilities to be sealed by Wonderweiss Margela. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950222.jpg",
             videoUrl: ""
           },
@@ -18169,6 +18473,7 @@ window._ANIME_DATA = [
             title: "It's All a Trap...Engineered Bonds!",
             duration: "24m",
             overview: "Aizen reveals to Ichigo that all of his battles have taken place exactly as he desired. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950227.jpg",
             videoUrl: ""
           },
@@ -18177,6 +18482,7 @@ window._ANIME_DATA = [
             title: "The Shocking Truth...the Mysterious Power Within Ichigo!",
             duration: "24m",
             overview: "As Aizen reveals more facts to Ichigo, Isshin Kurosaki joins the battle. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950230.jpg",
             videoUrl: ""
           },
@@ -18185,6 +18491,7 @@ window._ANIME_DATA = [
             title: "The Extending Blade?! Ichigo vs. Gin!",
             duration: "24m",
             overview: "As Ichigo and Gin Ichimaru battle, Aizen explains the true power of the Hōgyoku to Isshin Kurosaki. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950232.jpg",
             videoUrl: ""
           },
@@ -18193,6 +18500,7 @@ window._ANIME_DATA = [
             title: "Film! Festival! Shinigami Film Festival!",
             duration: "24m",
             overview: "The Shinigami in the Gotei 13 make a movie for the Seireitei International Film Festival. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950233.jpg",
             videoUrl: ""
           },
@@ -18201,6 +18509,7 @@ window._ANIME_DATA = [
             title: "Theatre Opening Commemoration! Hell Chapter・Prologue",
             duration: "24m",
             overview: "While visiting the World of the Living, Rukia comes across Kurumadani, the current Soul Reaper stationed in Karakura Town, being attacked by a mysterious masked man. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950234.jpg",
             videoUrl: ""
           },
@@ -18209,6 +18518,7 @@ window._ANIME_DATA = [
             title: "Urahara Appears! Stop Aizen!",
             duration: "24m",
             overview: "As Aizen is transformed by the Hōgyoku, Kisuke realizes that Aizen has evaded the Soul Reapers because he has a high Spirit Energy. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950235.jpg",
             videoUrl: ""
           },
@@ -18217,6 +18527,7 @@ window._ANIME_DATA = [
             title: "Ichigo Loses His Fighting Spirit!? Gin's Expectation!",
             duration: "24m",
             overview: "Ichigo finds himself cornered against Gin's Bankai. Meanwhile, Urahara, Yoruichi, and Isshin fight Aizen in a three-on-one battle. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950248.jpg",
             videoUrl: ""
           },
@@ -18225,6 +18536,7 @@ window._ANIME_DATA = [
             title: "The Final Getsuga Tenshō!? Ichigo's Training!",
             duration: "24m",
             overview: "Ichigo and Isshin arrive in the Precipice World, a place where time flows two thousand times faster than the outside world. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950249.jpg",
             videoUrl: ""
           }
@@ -18238,6 +18550,7 @@ window._ANIME_DATA = [
             title: "Real World and Shinigami! The New Year Special!",
             duration: "24m",
             overview: "The Women's Soul Reaper Association is hosting a New Year's party in the Soul Society, when Hitsugaya and the other male Soul Reapers come crashing in. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950250.jpg",
             videoUrl: ""
           },
@@ -18246,6 +18559,7 @@ window._ANIME_DATA = [
             title: "Another Side Story! This Time the Enemy Is a Monster!?",
             duration: "24m",
             overview: "Ichigo has another dream and tries to escape from it again. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950251.jpg",
             videoUrl: ""
           },
@@ -18254,6 +18568,7 @@ window._ANIME_DATA = [
             title: "Delusion Roars! Hisagi, Towards the Hot Springs Inn!",
             duration: "24m",
             overview: "Lieutenants Shūhei Hisagi and Rangiku Matsumoto go on a mission, and Hisagi deludes himself into thinking that Rangiku likes him. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950252.jpg",
             videoUrl: ""
           },
@@ -18262,6 +18577,7 @@ window._ANIME_DATA = [
             title: "For the Sake of Protecting! Ichigo vs. Tensa Zangetsu!",
             duration: "24m",
             overview: "Ichigo stands his ground against Tensa Zangetsu, who fuses with Ichigo's inner Hollow. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950253.jpg",
             videoUrl: ""
           },
@@ -18270,6 +18586,7 @@ window._ANIME_DATA = [
             title: "Emergency Situation! Aizen, New Evolution!",
             duration: "24m",
             overview: "As Aizen was about to kill Ichigo's friends, he is stopped by Gin who betrays him after 200 years of their partnership. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950254.jpg",
             videoUrl: ""
           },
@@ -18278,6 +18595,7 @@ window._ANIME_DATA = [
             title: "Goodbye...Rangiku",
             duration: "24m",
             overview: "Ichigo arrives to settle his score with Aizen once and for all. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950255.jpg",
             videoUrl: ""
           },
@@ -18286,6 +18604,7 @@ window._ANIME_DATA = [
             title: "Fierce Fighting Conclusion! Release, the Final Getsuga Tenshō!",
             duration: "24m",
             overview: "Ichigo uses the Final Getsuga Tenshō against Aizen. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950256.jpg",
             videoUrl: ""
           },
@@ -18294,6 +18613,7 @@ window._ANIME_DATA = [
             title: "Ichigo's Resolution! The Price of the Fierce Battle",
             duration: "24m",
             overview: "The aftermath of the battle with Aizen is shown. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950257.jpg",
             videoUrl: ""
           },
@@ -18302,6 +18622,7 @@ window._ANIME_DATA = [
             title: "The Soul Detective ・ Karakuraizer Takes Off Again!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950258.jpg",
             videoUrl: ""
           },
@@ -18310,6 +18631,7 @@ window._ANIME_DATA = [
             title: "Inauguration! The Brand New 2nd Division Captain!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950259.jpg",
             videoUrl: ""
           },
@@ -18318,6 +18640,7 @@ window._ANIME_DATA = [
             title: "The Man Who Risked His Life for Squad 11!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950260.jpg",
             videoUrl: ""
           },
@@ -18326,6 +18649,7 @@ window._ANIME_DATA = [
             title: "Kon Saw It! The Secret of a Beautiful Office Lady",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950261.jpg",
             videoUrl: ""
           },
@@ -18334,6 +18658,7 @@ window._ANIME_DATA = [
             title: "Yachiru's Friend! The Shinigami of Justice Appears!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950262.jpg",
             videoUrl: ""
           },
@@ -18342,6 +18667,7 @@ window._ANIME_DATA = [
             title: "Hitsugaya Toushirou's Day Off!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950263.jpg",
             videoUrl: ""
           },
@@ -18350,6 +18676,7 @@ window._ANIME_DATA = [
             title: "Unusual Incident in Seireitei?! The Gotei 13 Invading Army Arc!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950647.jpg",
             videoUrl: ""
           },
@@ -18358,6 +18685,7 @@ window._ANIME_DATA = [
             title: "Renji vs. Rukia!? Battle with Comrades!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950648.jpg",
             videoUrl: ""
           },
@@ -18366,6 +18694,7 @@ window._ANIME_DATA = [
             title: "Ichigo's Capture Net! Escape from Soul Society!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950649.jpg",
             videoUrl: ""
           },
@@ -18374,6 +18703,7 @@ window._ANIME_DATA = [
             title: "Gotei 13, Gathering in the Real World!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950650.jpg",
             videoUrl: ""
           },
@@ -18382,6 +18712,7 @@ window._ANIME_DATA = [
             title: "Ikkaku vs. Ikkaku! Showdown of Mutual Self!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950656.jpg",
             videoUrl: ""
           },
@@ -18390,6 +18721,7 @@ window._ANIME_DATA = [
             title: "Clash! Rukia vs. Rukia!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950657.jpg",
             videoUrl: ""
           },
@@ -18398,6 +18730,7 @@ window._ANIME_DATA = [
             title: "Protect Ichigo! Nozomi's Determination!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950659.jpg",
             videoUrl: ""
           },
@@ -18406,6 +18739,7 @@ window._ANIME_DATA = [
             title: "Recapture Seireitei! The Captains Move!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950660.jpg",
             videoUrl: ""
           },
@@ -18414,6 +18748,7 @@ window._ANIME_DATA = [
             title: "For the Sake of the Believers! Byakuya vs. Hitsugaya!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950662.jpg",
             videoUrl: ""
           },
@@ -18422,6 +18757,7 @@ window._ANIME_DATA = [
             title: "The Two Hinamori, Hitsugaya's Resolution",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950664.jpg",
             videoUrl: ""
           },
@@ -18430,6 +18766,7 @@ window._ANIME_DATA = [
             title: "Pride of the Kuchiki Family! Byakuya vs. Byakuya!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950666.jpg",
             videoUrl: ""
           },
@@ -18438,6 +18775,7 @@ window._ANIME_DATA = [
             title: "Defeat Kageroza! Shinigami, All-Out War!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950668.jpg",
             videoUrl: ""
           },
@@ -18446,6 +18784,7 @@ window._ANIME_DATA = [
             title: "The Forbidden Research...Nozomi's Hidden Secret!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950669.jpg",
             videoUrl: ""
           },
@@ -18454,6 +18793,7 @@ window._ANIME_DATA = [
             title: "I Want to Live...! Nozomi's Zanpakutō",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950670.jpg",
             videoUrl: ""
           },
@@ -18462,6 +18802,7 @@ window._ANIME_DATA = [
             title: "For the Sake of Fighting! The Awakening Nozomi!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950671.jpg",
             videoUrl: ""
           },
@@ -18470,6 +18811,7 @@ window._ANIME_DATA = [
             title: "The Most Evil Reigai, Appears in the Real World!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950672.jpg",
             videoUrl: ""
           },
@@ -18478,6 +18820,7 @@ window._ANIME_DATA = [
             title: "Destroy Nozomi!? Genryusai's Decision!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950673.jpg",
             videoUrl: ""
           },
@@ -18486,6 +18829,7 @@ window._ANIME_DATA = [
             title: "The Depleting Reiatsu! Ichigo, Death Struggle of the Soul!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950674.jpg",
             videoUrl: ""
           },
@@ -18494,6 +18838,7 @@ window._ANIME_DATA = [
             title: "Hiding in the Dangai? Another Ichigo!?",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950675.jpg",
             videoUrl: ""
           },
@@ -18502,6 +18847,7 @@ window._ANIME_DATA = [
             title: "Pursue Kageroza! Technological Development Department, Infiltration!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950676.jpg",
             videoUrl: ""
           },
@@ -18510,6 +18856,7 @@ window._ANIME_DATA = [
             title: "The Developer of the Modified Souls",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950677.jpg",
             videoUrl: ""
           },
@@ -18518,6 +18865,7 @@ window._ANIME_DATA = [
             title: "Kon's Thoughts, Nozomi's Thoughts",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950678.jpg",
             videoUrl: ""
           },
@@ -18526,6 +18874,7 @@ window._ANIME_DATA = [
             title: "Protect Ichigo! The Bonds of Friends!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950679.jpg",
             videoUrl: ""
           },
@@ -18534,6 +18883,7 @@ window._ANIME_DATA = [
             title: "Reigai vs. Original, the Fierce Battle for Gambled Pride!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950680.jpg",
             videoUrl: ""
           },
@@ -18542,6 +18892,7 @@ window._ANIME_DATA = [
             title: "Invading Army Arc, Final Conclusion!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950681.jpg",
             videoUrl: ""
           },
@@ -18550,6 +18901,7 @@ window._ANIME_DATA = [
             title: "Thank You",
             duration: "24m",
             overview: "Ichigo gradually loses his remaining powers and bids farewell to Rukia. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950682.jpg",
             videoUrl: ""
           },
@@ -18558,6 +18910,7 @@ window._ANIME_DATA = [
             title: "3rd Year High School Student! Dressed Up, and a New Chapter Begins!",
             duration: "24m",
             overview: "Seventeen months later, Ichigo continues living life as a normal teenage high school student in Karakura Town. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950683.jpg",
             videoUrl: ""
           },
@@ -18566,6 +18919,7 @@ window._ANIME_DATA = [
             title: "A Dispute in School?! Ichigo and Uryuu, Fight Together!",
             duration: "24m",
             overview: "Ichigo gets contacted by a man named Kugo Ginjoo who wants information about a certain person close to Ichigo. Uryu pursues a stranger who appears to be interested in Ichigo. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950684.jpg",
             videoUrl: ""
           },
@@ -18574,6 +18928,7 @@ window._ANIME_DATA = [
             title: "Uryuu Is Attacked, a Threat Draws Near Friends!",
             duration: "24m",
             overview: "After Ichigo and Orihime Inoue visit Uryū in the hospital, Keigo Asano is attacked. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950685.jpg",
             videoUrl: ""
           },
@@ -18582,6 +18937,7 @@ window._ANIME_DATA = [
             title: "The Fullbring User: Kugo Ginjo",
             duration: "24m",
             overview: "Ichigo decides to call on Ginjo for some answers. At his hideout, \"Xcution,\" Ginjo tells Ichigo of his goal to restore Ichigo's lost Soul Reaper powers, as well as demonstrating his own unique power, \"Fullbring.\" ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950686.jpg",
             videoUrl: ""
           },
@@ -18590,6 +18946,7 @@ window._ANIME_DATA = [
             title: "A Creeping Danger in the Kurosaki Family?! Ichigo's Confusion!",
             duration: "24m",
             overview: "Ginjo gives Ichigo a day to decide whether to regain his lost Soul Reaper powers or not. But Ichigo, who no longer wishes to endanger anyone by being a Soul Reaper, decides to decline the offer. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950687.jpg",
             videoUrl: ""
           },
@@ -18598,6 +18955,7 @@ window._ANIME_DATA = [
             title: "Power of the Substitute Badge, Ichigo's \"Pride\"!",
             duration: "24m",
             overview: "Ichigo begins training to regain his Soul Reaper powers at the Xcution's hideout. His first training is to fight and win against Mr. Pork, an opponent created by Riruka's Fullbring power \"Dollhouse.\" ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950688.jpg",
             videoUrl: ""
           },
@@ -18606,6 +18964,7 @@ window._ANIME_DATA = [
             title: "Next Target, the Devil's Hand Aims at Orihime!",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950689.jpg",
             videoUrl: ""
           },
@@ -18614,6 +18973,7 @@ window._ANIME_DATA = [
             title: "The Man Who Killed the Shinigami Substitute!? Tsukishima Makes His Move",
             duration: "24m",
             overview: "Ichigo and Chad rush to find Orihime. Meanwhile, Orihime attempts to stop Tsukishima from leaving the scene, but is instead stabbed by his Fullbring power.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950690.jpg",
             videoUrl: ""
           },
@@ -18622,6 +18982,7 @@ window._ANIME_DATA = [
             title: "Fullbring, the Detested Power!",
             duration: "24m",
             overview: "Ichigo asks Ginjo to let him fight one of the Xcution members for his training. But Jackie, who detests the power of Fullbring, finds Ichigo's request selfish and refuses.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950691.jpg",
             videoUrl: ""
           },
@@ -18630,6 +18991,7 @@ window._ANIME_DATA = [
             title: "Tsukishima Attacks! The Training Has Been Thwarted!",
             duration: "24m",
             overview: "Ichigo begins his training with Jackie Tristan, who brings out her Fullbring power \"Dirty Boots.\" As he goes up against Jackie's powerful attacks, Ichigo begins to gradually understand the use of his own Fullbring power. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950692.jpg",
             videoUrl: ""
           },
@@ -18638,6 +19000,7 @@ window._ANIME_DATA = [
             title: "Onwards to Battle! Ichigo, Mastering the Fullbring!",
             duration: "24m",
             overview: "Tsukishima breaks into the Xcution hideout where Ichigo is training. Learning that he was the one who attacked Uryu and Orihime, a furious Ichigo proceeds to attack Tsukishima.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950693.jpg",
             videoUrl: ""
           },
@@ -18646,6 +19009,7 @@ window._ANIME_DATA = [
             title: "Ichigo vs. Ginjo, to the Game's Space!",
             duration: "24m",
             overview: "Ichigo fights Kūgo Ginjō in the Game Space. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950694.jpg",
             videoUrl: ""
           }
@@ -18659,6 +19023,7 @@ window._ANIME_DATA = [
             title: "The Shinigami Enter Battle! Seireitei Also Has a New Year Special!",
             duration: "24m",
             overview: "On New Year's Day, Izuru hosts a kite-flying contest in the hopes of everyone having a good time. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950695.jpg",
             videoUrl: ""
           },
@@ -18667,6 +19032,7 @@ window._ANIME_DATA = [
             title: "Friend or Foe!? Ginjō's True Intentions!",
             duration: "24m",
             overview: "Ichigo continues his training with Kūgo Ginjō.",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950696.jpg",
             videoUrl: ""
           },
@@ -18675,6 +19041,7 @@ window._ANIME_DATA = [
             title: "Creeping Menace...Tsukishima's Ability!",
             duration: "24m",
             overview: "Ichigo trains with his Fullbring. Chad and Orihime investigate Tsukishima and engage in battle. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950697.jpg",
             videoUrl: ""
           },
@@ -18683,6 +19050,7 @@ window._ANIME_DATA = [
             title: "Clash?! Xcution Attacks Ginjo!",
             duration: "24m",
             overview: "Uryu begins his own investigation to track down the enemy who attacked him. As he goes around searching for clues, he notices that people close to Ichigo are acting strangely. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950698.jpg",
             videoUrl: ""
           },
@@ -18691,6 +19059,7 @@ window._ANIME_DATA = [
             title: "The Sorrowful Battle! Ichigo vs. Sado & Orihime!",
             duration: "24m",
             overview: "Ichigo escapes from his house in confusion after witnessing his friends and family welcoming Tsukishima as if they've known him for years. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950699.jpg",
             videoUrl: ""
           },
@@ -18699,6 +19068,7 @@ window._ANIME_DATA = [
             title: "Ichigo vs Uryu?! Who Is the Traitor?!",
             duration: "24m",
             overview: "As Ichigo begins his battle with Tsukishima, Uryū arrives and Ginjō is cut by Tsukishima. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950700.jpg",
             videoUrl: ""
           },
@@ -18707,6 +19077,7 @@ window._ANIME_DATA = [
             title: "A New Appearance! Meet the Gotei 13!",
             duration: "24m",
             overview: "Ginjo reveals his true colors by attacking Ichigo and stripping him of his Fullbring powers. Ichigo lies in despair from losing his powers yet again, when his father Isshin and Kisuke Urahara arrive. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950701.jpg",
             videoUrl: ""
           },
@@ -18715,6 +19086,7 @@ window._ANIME_DATA = [
             title: "Revival! Substitute Shinigami･Ichigo Kurosaki!",
             duration: "24m",
             overview: "Under the orders of Head Captain Yamamoto, the 13 Court Guard Squad Soul Reapers share their Spirit Energy to restore Ichigo's lost powers. With his Soul Reaper powers fully restored, Ichigo returns to challenge Ginjo. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950702.jpg",
             videoUrl: ""
           },
@@ -18723,6 +19095,7 @@ window._ANIME_DATA = [
             title: "Fierce Fight! Shinigami vs. Xcution!",
             duration: "24m",
             overview: "The Soul Reapers take on the Xcution members in one-on-one battles. Meanwhile, Ichigo and Uryu prepare to take on Ginjo. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950703.jpg",
             videoUrl: ""
           },
@@ -18731,6 +19104,7 @@ window._ANIME_DATA = [
             title: "Desperate Struggle!? Byakuya's Troubled Memories",
             duration: "24m",
             overview: "The battle between Byakuya and Tsukishima escalates as they both push their powers to the limit. Meanwhile, Rukia struggles against the traps set up by Riruka. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950704.jpg",
             videoUrl: ""
           },
@@ -18739,6 +19113,7 @@ window._ANIME_DATA = [
             title: "Ichigo vs. Ginjo! Secret of the Substitute Badge",
             duration: "24m",
             overview: "As the battle between Ichigo, Uryū , and Kūgo Ginjō intensifies, the truth behind the Substitute Shinigami Badge surfaces. ",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950705.jpg",
             videoUrl: ""
           },
@@ -18747,6 +19122,7 @@ window._ANIME_DATA = [
             title: "Changing History, Unchanging Heart",
             duration: "24m",
             overview: "",
+            overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950706.jpg",
             videoUrl: ""
           }
@@ -18775,6 +19151,7 @@ window._ANIME_DATA = [
     anilistId: 21459,
     animeSlug: "my-hero-academia",
     overview: "Izuku has dreamt of being a hero all his life?a lofty goal for anyone, but especially challenging for a kid with no superpowers. That?s right, in a world where eighty percent of the population has some kind of super-powered \"quirk,\" Izuku was unlucky enough to be born completely normal. But that?s not enough to stop him from enrolling in one of the world?s most prestigious hero academies.",
+    overviewKurdish: "",
     director: "Kenji Nagasaki",
     cast: [
       "Daiki Yamashita",
@@ -18796,6 +19173,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 1,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 2,
@@ -18803,6 +19181,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 2,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 3,
@@ -18810,6 +19189,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 3,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 4,
@@ -18817,6 +19197,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 4,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 5,
@@ -18824,6 +19205,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 5,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 6,
@@ -18831,6 +19213,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 6,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 7,
@@ -18838,6 +19221,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 7,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 8,
@@ -18845,6 +19229,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 8,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 9,
@@ -18852,6 +19237,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 9,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 10,
@@ -18859,6 +19245,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 10,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 11,
@@ -18866,6 +19253,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 11,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 12,
@@ -18873,6 +19261,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 12,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 13,
@@ -18880,6 +19269,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 13,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           }
         ]
       },
@@ -18892,6 +19282,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 14,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 2,
@@ -18899,6 +19290,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 15,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 3,
@@ -18906,6 +19298,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 16,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 4,
@@ -18913,6 +19306,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 17,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 5,
@@ -18920,6 +19314,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 18,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 6,
@@ -18927,6 +19322,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 19,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 7,
@@ -18934,6 +19330,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 20,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 8,
@@ -18941,6 +19338,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 21,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 9,
@@ -18948,6 +19346,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 22,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 10,
@@ -18955,6 +19354,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 23,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 11,
@@ -18962,6 +19362,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 24,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 12,
@@ -18969,6 +19370,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 25,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 13,
@@ -18976,6 +19378,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 26,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 14,
@@ -18983,6 +19386,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 27,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 15,
@@ -18990,6 +19394,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 28,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 16,
@@ -18997,6 +19402,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 29,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 17,
@@ -19004,6 +19410,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 30,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 18,
@@ -19011,6 +19418,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 31,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 19,
@@ -19018,6 +19426,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 32,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 20,
@@ -19025,6 +19434,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 33,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 21,
@@ -19032,6 +19442,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 34,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 22,
@@ -19039,6 +19450,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 35,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 23,
@@ -19046,6 +19458,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 36,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 24,
@@ -19053,6 +19466,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 37,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 25,
@@ -19060,6 +19474,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 38,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           }
         ]
       },
@@ -19072,6 +19487,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 39,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 2,
@@ -19079,6 +19495,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 40,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 3,
@@ -19086,6 +19503,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 41,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 4,
@@ -19093,6 +19511,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 42,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 5,
@@ -19100,6 +19519,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 43,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 6,
@@ -19107,6 +19527,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 44,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 7,
@@ -19114,6 +19535,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 45,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 8,
@@ -19121,6 +19543,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 46,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 9,
@@ -19128,6 +19551,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 47,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 10,
@@ -19135,6 +19559,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 48,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 11,
@@ -19142,6 +19567,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 49,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 12,
@@ -19149,6 +19575,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 50,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 13,
@@ -19156,6 +19583,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 51,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 14,
@@ -19163,6 +19591,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 52,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 15,
@@ -19170,6 +19599,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 53,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 16,
@@ -19177,6 +19607,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 54,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 17,
@@ -19184,6 +19615,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 55,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 18,
@@ -19191,6 +19623,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 56,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 19,
@@ -19198,6 +19631,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 57,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 20,
@@ -19205,6 +19639,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 58,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 21,
@@ -19212,6 +19647,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 59,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 22,
@@ -19219,6 +19655,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 60,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 23,
@@ -19226,6 +19663,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 61,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 24,
@@ -19233,6 +19671,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 62,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 25,
@@ -19240,6 +19679,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 63,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           }
         ]
       },
@@ -19252,6 +19692,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 64,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 2,
@@ -19259,6 +19700,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 65,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 3,
@@ -19266,6 +19708,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 66,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 4,
@@ -19273,6 +19716,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 67,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 5,
@@ -19280,6 +19724,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 68,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 6,
@@ -19287,6 +19732,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 69,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 7,
@@ -19294,6 +19740,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 70,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 8,
@@ -19301,6 +19748,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 71,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 9,
@@ -19308,6 +19756,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 72,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 10,
@@ -19315,6 +19764,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 73,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 11,
@@ -19322,6 +19772,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 74,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 12,
@@ -19329,6 +19780,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 75,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 13,
@@ -19336,6 +19788,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 76,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 14,
@@ -19343,6 +19796,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 77,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 15,
@@ -19350,6 +19804,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 78,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 16,
@@ -19357,6 +19812,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 79,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 17,
@@ -19364,6 +19820,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 80,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 18,
@@ -19371,6 +19828,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 81,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 19,
@@ -19378,6 +19836,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 82,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 20,
@@ -19385,6 +19844,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 83,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 21,
@@ -19392,6 +19852,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 84,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 22,
@@ -19399,6 +19860,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 85,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 23,
@@ -19406,6 +19868,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 86,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 24,
@@ -19413,6 +19876,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 87,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 25,
@@ -19420,6 +19884,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 88,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           }
         ]
       },
@@ -19432,6 +19897,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 89,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 2,
@@ -19439,6 +19905,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 90,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 3,
@@ -19446,6 +19913,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 91,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 4,
@@ -19453,6 +19921,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 92,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 5,
@@ -19460,6 +19929,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 93,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 6,
@@ -19467,6 +19937,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 94,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 7,
@@ -19474,6 +19945,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 95,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 8,
@@ -19481,6 +19953,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 96,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 9,
@@ -19488,6 +19961,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 97,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 10,
@@ -19495,6 +19969,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 98,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 11,
@@ -19502,6 +19977,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 99,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 12,
@@ -19509,6 +19985,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 100,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 13,
@@ -19516,6 +19993,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 101,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 14,
@@ -19523,6 +20001,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 102,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 15,
@@ -19530,6 +20009,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 103,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 16,
@@ -19537,6 +20017,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 104,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 17,
@@ -19544,6 +20025,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 105,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 18,
@@ -19551,6 +20033,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 106,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 19,
@@ -19558,6 +20041,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 107,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 20,
@@ -19565,6 +20049,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 108,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 21,
@@ -19572,6 +20057,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 109,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 22,
@@ -19579,6 +20065,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 110,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 23,
@@ -19586,6 +20073,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 111,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 24,
@@ -19593,6 +20081,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 112,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 25,
@@ -19600,6 +20089,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 113,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           }
         ]
       },
@@ -19612,6 +20102,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 114,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 2,
@@ -19619,6 +20110,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 115,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 3,
@@ -19626,6 +20118,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 116,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 4,
@@ -19633,6 +20126,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 117,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 5,
@@ -19640,6 +20134,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 118,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 6,
@@ -19647,6 +20142,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 119,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 7,
@@ -19654,6 +20150,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 120,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 8,
@@ -19661,6 +20158,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 121,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 9,
@@ -19668,6 +20166,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 122,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 10,
@@ -19675,6 +20174,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 123,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 11,
@@ -19682,6 +20182,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 124,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 12,
@@ -19689,6 +20190,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 125,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 13,
@@ -19696,6 +20198,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 126,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 14,
@@ -19703,6 +20206,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 127,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 15,
@@ -19710,6 +20214,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 128,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 16,
@@ -19717,6 +20222,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 129,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 17,
@@ -19724,6 +20230,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 130,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 18,
@@ -19731,6 +20238,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 131,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 19,
@@ -19738,6 +20246,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 132,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 20,
@@ -19745,6 +20254,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 133,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 21,
@@ -19752,6 +20262,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 134,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 22,
@@ -19759,6 +20270,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 135,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 23,
@@ -19766,6 +20278,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 136,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 24,
@@ -19773,6 +20286,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 137,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 25,
@@ -19780,6 +20294,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 138,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           }
         ]
       },
@@ -19792,6 +20307,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 139,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 2,
@@ -19799,6 +20315,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 140,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 3,
@@ -19806,6 +20323,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 141,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 4,
@@ -19813,6 +20331,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 142,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 5,
@@ -19820,6 +20339,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 143,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 6,
@@ -19827,6 +20347,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 144,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 7,
@@ -19834,6 +20355,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 145,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 8,
@@ -19841,6 +20363,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 146,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 9,
@@ -19848,6 +20371,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 147,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 10,
@@ -19855,6 +20379,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 148,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 11,
@@ -19862,6 +20387,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 149,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 12,
@@ -19869,6 +20395,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 150,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 13,
@@ -19876,6 +20403,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 151,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 14,
@@ -19883,6 +20411,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 152,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 15,
@@ -19890,6 +20419,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 153,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 16,
@@ -19897,6 +20427,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 154,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 17,
@@ -19904,6 +20435,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 155,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 18,
@@ -19911,6 +20443,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 156,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 19,
@@ -19918,6 +20451,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 157,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 20,
@@ -19925,6 +20459,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 158,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           },
           {
             episode: 21,
@@ -19932,6 +20467,7 @@ window._ANIME_DATA = [
             duration: "24m",
             absoluteEpisode: 159,
             overview: "Izuku and his classmates continue their hero training."
+            overviewKurdish: "",
           }
         ]
       }
@@ -19958,6 +20494,7 @@ window._ANIME_DATA = [
     anilistId: 16498,
     animeSlug: "attack-on-titan",
     overview: "Humanity huddle behind giant wall, hide from monstrous man-eating Titan roam outside. When wall breach, young Eren Yeager swear revenge, join fight uncover dark truth behind Titan, wall, world itself.",
+    overviewKurdish: "",
     director: "Hajime Isayama",
     cast: [
       "Yuki Kaji",
@@ -20367,6 +20904,7 @@ window._ANIME_DATA = [
     anilistId: 101922,
     animeSlug: "demon-slayer",
     overview: "Tanjiro Kamado, kind-heart boy, come home find family slaughter by demon, only sister Nezuko survive, now turn demon herself. Join secret Demon Slayer Corps, train hard, hunt demon, seek cure bring sister back human.",
+    overviewKurdish: "",
     director: "Koyoharu Gotouge",
     cast: [
       "Natsuki Hanae, Akari Kitō, Hiro Shimono, Yoshitsugu Matsuoka, Zach Aguilar"
@@ -20668,6 +21206,7 @@ window._ANIME_DATA = [
     anilistId: 21087,
     animeSlug: "one-punch-man",
     overview: "Saitama, hero who train so hard he lose hair, gain power to defeat any foe with single punch, now struggle real problem: nobody recognize his strength, life feel meaningless without challenge. Team up with cyborg Genos, seek worthy opponent, real thrill of battle again.",
+    overviewKurdish: "",
     director: "Shingo Natsume",
     cast: [
       "Makoto Furukawa, Kaito Ishikawa, Max Mittelman, Zach Aguilar"
@@ -20857,6 +21396,7 @@ window._ANIME_DATA = [
     anilistId: 151807,
     animeSlug: "solo-leveling",
     overview: "Sung Jin-Woo, weakest hunter alive, barely survive deadly dungeon raid, wake up with mysterious system only he can see. Power grow limitless, level up beyond anyone before him, uncover dark secret behind dungeon, hunter world itself.",
+    overviewKurdish: "",
     director: "Chugong",
     cast: [
       "Taito Ban, Aoi Ichikawa, Reina Ueda, Aleks Le, Anthony Sardinha"
@@ -20998,6 +21538,7 @@ window._ANIME_DATA = [
     anilistId: 113415,
     animeSlug: "jujutsu-kaisen",
     overview: "Yuji Itadori, ordinary high schooler, swallow cursed finger, become vessel for powerful demon Sukuna to save friend. Pull into secret world of jujutsu sorcerer, battle deadly curse, uncover deep conspiracy tie to Sukuna's ancient past.",
+    overviewKurdish: "",
     director: "Gege Akutami",
     cast: [
       "Junya Enoki, Yūichi Nakamura, Asami Seto, Robbie Daymond, Kaiji Tang"
@@ -21269,6 +21810,7 @@ window._ANIME_DATA = [
     anilistId: 127230,
     animeSlug: "chainsaw-man",
     overview: "Denji, poor young man drown in debt, fuse with pet devil Pochita after brutal death, become chainsaw-wield hybrid devil hunter. Chase simple dream — good meal, warm bed, girl to love — while cut through vicious devil, dark conspiracy.",
+    overviewKurdish: "",
     director: "Tatsuki Fujimoto",
     cast: [
       "Kikunosuke Toya, Fairouz Ai, Tomori Kusunoki, Ryan Colt Levy, Suzie Yeung"
@@ -21352,6 +21894,7 @@ window._ANIME_DATA = [
     anilistId: 1535,
     animeSlug: "death-note",
     overview: "Light Yagami is an ace student with great prospects—and he's bored out of his mind. But all that changes when he finds the Death Note, a notebook dropped by a rogue Shinigami death god. Any human whose name is written in the notebook dies, and Light has vowed to use the power of the Death Note to rid the world of evil. But will Light succeed in his noble goal, or will the Death Note turn him into the very thing he fights against?",
+    overviewKurdish: "",
     director: "Tsugumi Ohba, Takeshi Obata",
     cast: [
       "Mamoru Miyano, Alessandro Juliani, Brad Swaile, Shidou Nakamura, Vincent Tong"
@@ -21536,6 +22079,7 @@ window._ANIME_DATA = [
     anilistId: 11061,
     animeSlug: "hunter-x-hunter-2011",
     overview: "Gon Freecss, young boy, chase dream become Hunter like father, elite adventurer explore world, hunt treasure, danger, truth. Meet loyal friend along way, face brutal trial, deadly enemy push him past limit again, again.",
+    overviewKurdish: "",
     director: "Yoshihiro Togashi",
     cast: [
       "Megumi Han, Miyu Irino, Mariya Ise, Erica Mendez, Cristina Vee"
@@ -22174,6 +22718,7 @@ window._ANIME_DATA = [
     anilistId: 101348,
     animeSlug: "vinland-saga",
     overview: "For a thousand years, the Vikings have made quite a name and reputation for themselves as the strongest families with a thirst for violence. Thorfinn, the son of one of the Vikings' greatest warriors, spends his boyhood in a battlefield enhancing his skills in his adventure to redeem his most-desired revenge after his father was murdered.",
+    overviewKurdish: "",
     director: "Makoto Yukimura",
     cast: [
       "Yūto Uemura, Shūto Suzuki, Yoshimasa Hosoya, Kenjiro Tsuda, Zeno Robinson"
@@ -22407,6 +22952,7 @@ window._ANIME_DATA = [
     anilistId: 137822,
     animeSlug: "blue-lock",
     overview: "After a disastrous defeat at the 2018 World Cup, Japan's team struggles to regroup. But what's missing? An absolute Ace Striker, who can guide them to the win. The Japan Football Union is hell-bent on creating a striker who hungers for goals and thirsts for victory, and who can be the decisive instrument in turning around a losing match...and to do so, they've gathered 300 of Japan's best and brightest youth players. Who will emerge to lead the team...and will they be able to out-muscle and out-ego everyone who stands in their way?",
+    overviewKurdish: "",
     director: "Muneyuki Kaneshiro, Yūsuke Nomura",
     cast: [
       "Kazuki Ura, Tasuku Kaito, Reiya Masaki, Aleks Le, Bryson Baugus"
@@ -22595,6 +23141,7 @@ window._ANIME_DATA = [
     anilistId: 20464,
     animeSlug: "haikyu",
     overview: "Inspired by a small-statured pro volleyball player, Shouyou Hinata creates a volleyball team in his last year of middle school. Unfortunately the team is matched up against the \"King of the Court\" Tobio Kageyama's team in their first tournament and inevitably lose. After the crushing defeat, Hinata vows to surpass Kageyama. After entering high school, Hinata joins the volleyball team only to find that Tobio has also joined.",
+    overviewKurdish: "",
     director: "Susumu Mitsunaka",
     cast: [
       "Ayumu Murase",
@@ -22988,6 +23535,7 @@ window._ANIME_DATA = [
     anilistId: 20605,
     animeSlug: "tokyo-ghoul",
     overview: "Tokyo has become a cruel and merciless city—a place where vicious creatures called “ghouls” exist alongside humans. The citizens of this once great metropolis live in constant fear of these bloodthirsty savages and their thirst for human flesh. However, the greatest threat these ghouls pose is their dangerous ability to masquerade as humans and blend in with society.",
+    overviewKurdish: "",
     director: "Sui Ishida",
     cast: [
       "Natsuki Hanae, Sōra Amamiya, Kana Hanazawa, Austin Tindle, Brina Palencia"
@@ -23230,6 +23778,7 @@ window._ANIME_DATA = [
     anilistId: 481,
     animeSlug: "yu-gi-oh-duel-monsters",
     overview: "Yugi Mutou is a boy who loves games, but is often bullied. One day, he solves an ancient puzzle known as the Millennium Puzzle, causing a mysterious spirit with the personality of a gambler to reside in his body. From that moment on, whenever Yugi's friends are threatened, this other Yugi makes an appearance and challenges the bullies to dangerous Shadow Games.",
+    overviewKurdish: "",
     director: "Kunihisa Sugishima",
     cast: [
       "Shunsuke Kazama",
