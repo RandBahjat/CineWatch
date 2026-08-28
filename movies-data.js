@@ -2772,9 +2772,7 @@ window._MOVIES_DATA = [
     duration: "1h 56m",
     genres: [
       "Action",
-      "Comedy",
-      "Romance",
-      "Thriller"
+      "Adventure",
     ],
     poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRiP_OD3okUny5FD2L3SWXKW_CTSVLlmVLaUv9xviEtw&s=10",
     backdrop: "https://image.tmdb.org/t/p/original/n86p0tTWxu1EzFxWfhvQeIl40bK.jpg",
