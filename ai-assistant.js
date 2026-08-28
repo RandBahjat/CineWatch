@@ -100,24 +100,24 @@ ${JSON.stringify(catalog.slice(0, 400))}
 
     if (lang === "ckb") {
       if (input) input.placeholder = "پرسیار بکە... بۆ نموونە فیلمێکی وروژێنەرم بۆ پێشنیار بکە";
-      if (welcomeTitle) welcomeTitle.textContent = "پرسیار لە زیرەکی دەستکردی CineWatch بکە";
+      if (welcomeTitle) welcomeTitle.textContent = "حەز دەکەیت چ جۆرە فیلمێک یان زنجیرەیەک سەیر بکەیت؟";
       if (welcomeDesc)
         welcomeDesc.textContent =
-          "دەتوانم فیلم و زنجیرەکان بەپێی کەشوهەوا، جۆر، یان ئەکتەر لە کەتەلۆگی CineWatch پێشنیار بکەم!";
+          "داوای پێشنیار بکە بەپێی کەش، ئەکتەر، چیرۆک یان دۆزینەوەی فیلمە نایابەکان لە کەتەلۆگەکەمان.";
       if (onlineText) onlineText.textContent = "یاریدەدەری زیرەکی سینەما";
     } else if (lang === "ar") {
       if (input) input.placeholder = "اسأل أي شيء... مثلاً اقترح لي فيلم إثارة وتشويق";
-      if (welcomeTitle) welcomeTitle.textContent = "اسأل مساعد CineWatch الذكي";
+      if (welcomeTitle) welcomeTitle.textContent = "ما الذي ترغب في مشاهدته الليلة؟";
       if (welcomeDesc)
         welcomeDesc.textContent =
-          "يمكنني اقتراح أفضل الأفلام والمسلسلات والأنمي من مكتبة CineWatch حسب مزاجك وتفضيلاتك!";
+          "اطلب ترشيحات حسب مزاجك، الممثلين المفضلين، أو استكشف أفضل الأفلام والمسلسلات في مكتبتنا.";
       if (onlineText) onlineText.textContent = "مساعد السينما الذكي";
     } else {
       if (input) input.placeholder = "Ask anything... e.g. Recommend a psychological thriller";
-      if (welcomeTitle) welcomeTitle.textContent = "Ask CineWatch AI";
+      if (welcomeTitle) welcomeTitle.textContent = "What would you like to watch?";
       if (welcomeDesc)
         welcomeDesc.textContent =
-          "I can find movies & series by mood, genre, actor, or plot from our catalog. Tell me what you'd like to watch!";
+          "Ask for recommendations by mood, favorite actors, plot twists, or find hidden gems from our streaming catalog.";
       if (onlineText) onlineText.textContent = "Smart Movie Assistant";
     }
   }
