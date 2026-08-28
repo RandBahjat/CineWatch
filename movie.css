@@ -6639,3 +6639,35 @@ body.rtl-layout .details-content-wrapper {
   margin-right: 0;
   margin-left: auto;
 }
+
+
+/* ==========================================================================
+   ANNIHILATE GOOGLE TRANSLATE WIDGET
+   Forcefully completely disable the annoying floating widget and banners.
+   ========================================================================== */
+body > .skiptranslate,
+body > div[id^="goog"],
+body > iframe.skiptranslate,
+.VIpgJd-Zvi9od-aZ2wEe-wOHMyf,
+.VIpgJd-Zvi9od-aZ2wEe-OiiCO,
+.goog-te-gadget-icon,
+.goog-te-banner-frame,
+#goog-gt-tt,
+.goog-tooltip,
+.goog-tooltip:hover,
+#google_translate_element {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  z-index: -2147483648 !important;
+  width: 0 !important;
+  height: 0 !important;
+  position: absolute !important;
+  top: -10000px !important;
+  left: -10000px !important;
+}
+
+body {
+  top: 0 !important;
+}
