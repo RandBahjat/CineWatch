@@ -19,7 +19,6 @@ window._MOVIES_DATA = [
     videoUrl: "1744462",
     overview: "Jason, Lucia team up in sunny, dangerous state of Leonida, easy score gone wrong drag them into criminal conspiracy stretch across whole region. Now must rely on each other, survive underworld of Vice City to make it out alive.",
     director: "Rockstar Games",
-    
     trending: true,
     featured: true,
     is4k: false,
