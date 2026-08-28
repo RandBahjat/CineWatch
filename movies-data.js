@@ -2803,7 +2803,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wFjboE0aFZNbVOF05fzrka9Fqyx.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/y1zfDhKOMAtWhTrpaCVnjj3R4hX.jpg",
     videoUrl: "696806",
-    overview: "Young street-smart thief Nathan Drake team up with seasoned treasure hunter Victor Sullivan, chase legendary lost gold once belong to Magellan's crew. Global adventure, deadly rival, ancient puzzle push them race against time, dangerous enemy.",
+    overview: "Time-traveling pilot crash land in past, team up with younger self, seek help of late father save future, rescue mother from danger of present. Family, grief, sci-fi adventure collide in race against time.",
     director: "Ruben Fleischer",
     cast: [
       "Tom Holland, Mark Wahlberg, Sophia Ali, Tati Gabrielle, Antonio Banderas"
