@@ -534,9 +534,7 @@ function setupHeroBanner() {
 
     if (hasMoved) {
       if (e.cancelable) e.preventDefault(); // Prevent native text/image selection
-      const isRTL = getComputedStyle(document.body).direction === "rtl";
-      const effectiveDiffX = isRTL ? -diffX : diffX;
-      heroTrack.style.transform = `translateX(${currentTranslate + effectiveDiffX}px)`;
+      heroTrack.style.transform = `translateX(${currentTranslate + diffX}px)`;
     }
   };
 
