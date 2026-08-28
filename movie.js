@@ -1835,6 +1835,16 @@ function openDetailsModal(movieId) {
     document.getElementById("detailsBg").style.backgroundImage = `url('${movie.backdrop || movie.poster}')`;
     const titleInfo = getLocalizedTitle(movie);
     const titleEl = document.getElementById("detailsTitle");
+    document.getElementById("detailsRating").textContent = formatRating(movie.rating);
+    document.getElementById("detailsYear").textContent = formatNumber(movie.year);
+    const isCkb = (document.cookie || '').includes('googtrans=/en/ckb');
+    const isAr = (document.cookie || '').includes('googtrans=/en/ar');
+    if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
+      const sCount = formatNumber(movie.seasons.length);
+      document.getElementById("detailsDuration").textContent = isCkb ? `${sCount} وەرز` : (isAr ? `${movie.seasons.length} مواسم` : `${movie.seasons.length} Season${movie.seasons.length > 1 ? 's' : ''}`);
+    } else {
+      document.getElementById("detailsDuration").textContent = movie.duration;
+    }
     if (titleEl) {
       titleEl.textContent = titleInfo.text;
       if (titleInfo.isKurdish) {
