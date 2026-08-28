@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260828_2247">
+    <link rel="stylesheet" href="movie.css?v=20260828_2248">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -26,9 +26,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_3919" defer></script>
-    <script src="series-data.js?v=20260818_3919" defer></script>
-    <script src="anime-data.js?v=20260818_3919" defer></script>
+    <script src="movies-data.js?v=20260818_3920" defer></script>
+    <script src="series-data.js?v=20260818_3920" defer></script>
+    <script src="anime-data.js?v=20260818_3920" defer></script>
     <script src="movie.js?v=v20" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1378,6 +1378,8 @@
             const navContinue2 = document.getElementById('navContinue2');
             const navWatchlist1 = document.getElementById('navWatchlist1');
             const navWatchlist2 = document.getElementById('navWatchlist2');
+            const continueShelfTitle = document.getElementById('continueShelfTitle');
+            const continueShelfSubtitle = document.getElementById('continueShelfSubtitle');
 
             const genreMapKurdish = {
                 'all': 'هەموو جۆرەکان',
@@ -1410,7 +1412,7 @@
                 'Family': 'عائلي',
                 'Kids': 'أطفال',
                 'History': 'تاريخي',
-                'Fantasy': 'فانتازيا',
+                'Fantasy': 'خيالي',
                 'Horror': 'رعب',
                 'Mystery': 'غموض',
                 'Romance': 'رومانسي',
@@ -1420,7 +1422,7 @@
             };
 
             const genreMapEnglish = {
-                'all': 'All',
+                'all': 'All Genres',
                 'Action': 'Action',
                 'Adventure': 'Adventure',
                 'Animation': 'Animation',
@@ -1462,6 +1464,8 @@
                 if (navContinue2) navContinue2.textContent = 'بەردەوامبوون لە سەیرکردن';
                 if (navWatchlist1) navWatchlist1.textContent = 'دڵخوازەکانم';
                 if (navWatchlist2) navWatchlist2.textContent = 'دڵخوازەکانم';
+                if (continueShelfTitle) continueShelfTitle.textContent = 'بەردەوام بە لە سەیرکردن';
+                if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'رێک لەو شوێنە دەستپێبکەوە کە لێی وەستابووی';
                 if (filterBtnText) filterBtnText.textContent = 'فیلم و زنجیرە';
                 if (filterOptAll) filterOptAll.textContent = 'فیلم و زنجیرە';
                 if (filterOptMovie) filterOptMovie.textContent = 'تەنها فیلم';
@@ -1502,6 +1506,8 @@
                 if (navContinue2) navContinue2.textContent = 'متابعة المشاهدة';
                 if (navWatchlist1) navWatchlist1.textContent = 'قائمتي';
                 if (navWatchlist2) navWatchlist2.textContent = 'قائمتي';
+                if (continueShelfTitle) continueShelfTitle.textContent = 'متابعة المشاهدة';
+                if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'تابع من حيث توقفت';
                 if (filterBtnText) filterBtnText.textContent = 'أفلام ومسلسلات';
                 if (filterOptAll) filterOptAll.textContent = 'أفلام ومسلسلات';
                 if (filterOptMovie) filterOptMovie.textContent = 'أفلام فقط';
@@ -1539,6 +1545,8 @@
                 if (navContinue2) navContinue2.textContent = 'Continue Watching';
                 if (navWatchlist1) navWatchlist1.textContent = 'My Watchlist';
                 if (navWatchlist2) navWatchlist2.textContent = 'My Watchlist';
+                if (continueShelfTitle) continueShelfTitle.textContent = 'Continue Watching';
+                if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'Pick up right where you left off';
                 if (filterBtnText) filterBtnText.textContent = 'Movies & Series';
                 if (filterOptAll) filterOptAll.textContent = 'Movies & Series';
                 if (filterOptMovie) filterOptMovie.textContent = 'Movies Only';
