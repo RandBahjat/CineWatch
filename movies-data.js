@@ -12596,7 +12596,7 @@ window._MOVIES_DATA = [
       "Fantasy"
 
     ],
-    poster: "https://image.tmdb.org/t/p/original/lso7y9jXFiVHMcW4nSAudU5vq7i.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/s4Qn5LF6OwK4rIifmthIDtbqDSs.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/x6vSFazTxDaJTTGqedjlsTXcTpV.jpg",
     videoUrl: "121856",
     overview: "Death row inmate wake inside secret facility, force relive genetic memory of ancient ancestor, member of Assassin Brotherhood battle Templar Order. Uncover ancient artifact tie past, present, gain skill needed fight modern-day war.",
