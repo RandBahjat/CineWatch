@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260828_2310">
+    <link rel="stylesheet" href="movie.css?v=20260828_2311">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -26,9 +26,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_3945" defer></script>
-    <script src="series-data.js?v=20260818_3945" defer></script>
-    <script src="anime-data.js?v=20260818_3945" defer></script>
+    <script src="movies-data.js?v=20260818_3946" defer></script>
+    <script src="series-data.js?v=20260818_3946" defer></script>
+    <script src="anime-data.js?v=20260818_3946" defer></script>
     <script src="movie.js?v=v22" defer></script>
     <script src="ai-assistant.js?v=v1" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -1450,6 +1450,8 @@
             const navWatchlist2 = document.getElementById('navWatchlist2');
             const continueShelfTitle = document.getElementById('continueShelfTitle');
             const continueShelfSubtitle = document.getElementById('continueShelfSubtitle');
+            const navAiBtnText = document.getElementById('navAiBtnText');
+            const navAiBtnTextMobile = document.getElementById('navAiBtnTextMobile');
 
             const genreMapKurdish = {
                 'all': 'هەموو جۆرەکان',
@@ -1536,6 +1538,8 @@
                 if (navWatchlist2) navWatchlist2.textContent = 'دڵخوازەکانم';
                 if (continueShelfTitle) continueShelfTitle.textContent = 'بەردەوام بە لە سەیرکردن';
                 if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'رێک لەو شوێنە دەستپێبکەوە کە لێی وەستابووی';
+                if (navAiBtnText) navAiBtnText.textContent = 'پرسیار لە زیرەکی دەستکرد';
+                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = 'پرسیار لە زیرەکی دەستکرد';
                 if (filterBtnText) filterBtnText.textContent = 'فیلم و زنجیرە';
                 if (filterOptAll) filterOptAll.textContent = 'فیلم و زنجیرە';
                 if (filterOptMovie) filterOptMovie.textContent = 'تەنها فیلم';
@@ -1578,6 +1582,8 @@
                 if (navWatchlist2) navWatchlist2.textContent = 'قائمتي';
                 if (continueShelfTitle) continueShelfTitle.textContent = 'متابعة المشاهدة';
                 if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'تابع من حيث توقفت';
+                if (navAiBtnText) navAiBtnText.textContent = 'اسأل الذكاء الاصطناعي';
+                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = 'اسأل الذكاء الاصطناعي';
                 if (filterBtnText) filterBtnText.textContent = 'أفلام ومسلسلات';
                 if (filterOptAll) filterOptAll.textContent = 'أفلام ومسلسلات';
                 if (filterOptMovie) filterOptMovie.textContent = 'أفلام فقط';
@@ -1617,6 +1623,8 @@
                 if (navWatchlist2) navWatchlist2.textContent = 'My Watchlist';
                 if (continueShelfTitle) continueShelfTitle.textContent = 'Continue Watching';
                 if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'Pick up right where you left off';
+                if (navAiBtnText) navAiBtnText.textContent = 'Ask AI';
+                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = 'Ask AI Assistant';
                 if (filterBtnText) filterBtnText.textContent = 'Movies & Series';
                 if (filterOptAll) filterOptAll.textContent = 'Movies & Series';
                 if (filterOptMovie) filterOptMovie.textContent = 'Movies Only';
