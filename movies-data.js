@@ -4681,6 +4681,7 @@ window._MOVIES_DATA = [
     genres: [
       "Action",
       "Drama",
+      
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/fu8h6Kg911AYYfYseblDKh7kSsP.jpg",
