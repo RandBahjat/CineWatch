@@ -4675,7 +4675,7 @@ window._MOVIES_DATA = [
     title: "Days of Thunder",
     type: "Movie",
     year: 1990,
-    rating: 7.9,
+    rating: 6.1,
     age: "PG-13",
     duration: "3h 14m",
     genres: [
