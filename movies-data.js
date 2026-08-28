@@ -2769,7 +2769,7 @@ window._MOVIES_DATA = [
     year: 2022,
     rating: 6.3,
     age: "PG-13",
-    duration: "2h",
+    duration: "1h 56m",
     genres: [
       "Action",
       "Comedy",
