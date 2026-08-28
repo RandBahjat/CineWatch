@@ -4312,7 +4312,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 2019,
     rating: 8.1,
-    age: "R",
+    age: "PG-13",
     duration: "1h 38m",
     genres: [
       "Action",
