@@ -1855,8 +1855,6 @@ function openDetailsModal(movieId) {
         titleEl.removeAttribute("translate");
       }
     }
-    document.getElementById("detailsRating").textContent = formatRating(movie.rating);
-    if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
       document.getElementById("detailsDuration").textContent = `${movie.seasons.length} Season${movie.seasons.length > 1 ? 's' : ''}`;
     } else {
       document.getElementById("detailsDuration").textContent = movie.duration;
