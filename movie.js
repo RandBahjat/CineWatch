@@ -1082,7 +1082,8 @@ function renderBrowsePagination(paginationId, currentPage, totalPages, onPageCha
   // Add jump to page input
   html += `
     <div class="page-jump">
-      <button class="page-btn page-jump-btn" id="${paginationId}-jump-btn">Go</button>
+      <input type="number" class="page-jump-input notranslate" translate="no" id="${paginationId}-jump-input" min="1" max="${totalPages}" placeholder="${goText}" title="Jump to page">
+      <button class="page-btn page-jump-btn notranslate" translate="no" id="${paginationId}-jump-btn">${goText}</button>
     </div>
   `;
 
