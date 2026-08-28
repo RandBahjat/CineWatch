@@ -4326,7 +4326,7 @@ window._MOVIES_DATA = [
     overview: "American car designer, hotshot British race driver team up build revolutionary race car for Ford, take down dominant Ferrari at brutal 24 Hours of Le Mans. Fight corporate politics, personal ego, sheer engineering will to make history.",
     director: "James Mangold",
     cast: [
-      "Henry Cavill, Jake Gyllenhaal, Eiza González, Carlos Bardem, Fisher Stevens  "
+      "Matt Damon, Christian Bale, Jon Bernthal, Caitriona Balfe, Tracy Letts"
     ],
     trending: false,
     featured: false,
