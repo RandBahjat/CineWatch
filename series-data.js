@@ -206,6 +206,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg',
     videoUrl: '108978',
     overview: 'Jack Reacher spent years as a decorated investigator in the U.S. Army\'s military police, uncovering corruption others tried to bury. Now retired from that life, he wanders from town to town with nothing but a toothbrush and his instincts â€” but wherever he lands, danger has a way of finding him, and Reacher has a way of finishing it.',
+    
     cast: [
       'Alan Ritchson',
       'Maria Sten',
