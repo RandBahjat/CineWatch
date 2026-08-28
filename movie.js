@@ -697,8 +697,8 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
       <div class="card-details">
         <h4 class="card-title notranslate" translate="no">${movie.title}</h4>
         <div class="card-meta">
-          <span class="card-rating">⭐ ${formatRating(movie.rating)}</span>
-          <span class="card-year">${formatNumber(movie.year)}</span>
+          <span class="card-rating notranslate" translate="no">⭐ ${formatRating(movie.rating)}</span>
+          <span class="card-year notranslate" translate="no">${formatNumber(movie.year)}</span>
           <span class="card-type notranslate" translate="no">${formatMediaType(displayType)}</span>
         </div>
       </div>
