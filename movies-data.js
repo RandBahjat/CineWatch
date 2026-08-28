@@ -2774,7 +2774,7 @@ window._MOVIES_DATA = [
       "Action",
       "Adventure",
     ],
-    poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRiP_OD3okUny5FD2L3SWXKW_CTSVLlmVLaUv9xviEtw&s=10",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rJHC1RUORuUhtfNb4Npclx0xnOf.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/n86p0tTWxu1EzFxWfhvQeIl40bK.jpg",
     videoUrl: "787",
     overview: "John and Jane Smith appear to be an ordinary suburban couple whose marriage has grown stale and routine. In reality, both are highly skilled assassins, each hiding their true profession from the other for years. When their separate agencies assign them the same target — each other — their carefully guarded secrets collide, forcing them to fight for their lives while rediscovering the passion that first brought them together.",
