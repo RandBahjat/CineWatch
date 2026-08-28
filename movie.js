@@ -1062,20 +1062,26 @@ function renderBrowsePagination(paginationId, currentPage, totalPages, onPageCha
     pages.push(totalPages);
   }
 
-  let html = `<button class="page-btn prev-btn" ${currentPage === 1 ? "disabled" : ""} data-page="${currentPage - 1}">‹ Prev</button>`;
+  const cookies = document.cookie || '';
+  const isCkb = cookies.includes('googtrans=/en/ckb');
+  const isAr = cookies.includes('googtrans=/en/ar');
+  const prevText = isCkb ? '‹ پێشوو' : (isAr ? '‹ السابق' : '‹ Prev');
+  const nextText = isCkb ? 'دواتر ›' : (isAr ? 'التالي ›' : 'Next ›');
+  const goText = isCkb ? 'بڕۆ' : (isAr ? 'انتقال' : 'Go');
+
+  let html = `<button class="page-btn prev-btn notranslate" translate="no" ${currentPage === 1 ? "disabled" : ""} data-page="${currentPage - 1}">${prevText}</button>`;
   pages.forEach((p) => {
     if (p === "…") {
-      html += `<span class="page-ellipsis">…</span>`;
+      html += `<span class="page-ellipsis notranslate" translate="no">…</span>`;
     } else {
-      html += `<button class="page-btn ${p === currentPage ? "active" : ""}" data-page="${p}">${p}</button>`;
+      html += `<button class="page-btn notranslate ${p === currentPage ? "active" : ""}" translate="no" data-page="${p}">${formatNumber(p)}</button>`;
     }
   });
-  html += `<button class="page-btn next-btn" ${currentPage === totalPages ? "disabled" : ""} data-page="${currentPage + 1}">Next ›</button>`;
+  html += `<button class="page-btn next-btn notranslate" translate="no" ${currentPage === totalPages ? "disabled" : ""} data-page="${currentPage + 1}">${nextText}</button>`;
 
   // Add jump to page input
   html += `
     <div class="page-jump">
-      <input type="number" class="page-jump-input" id="${paginationId}-jump-input" min="1" max="${totalPages}" placeholder="Go" title="Jump to page">
       <button class="page-btn page-jump-btn" id="${paginationId}-jump-btn">Go</button>
     </div>
   `;
