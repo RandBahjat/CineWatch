@@ -4679,8 +4679,8 @@ window._MOVIES_DATA = [
     age: "PG-13",
     duration: "1h 47m",
     genres: [
+      "Action",
       "Drama",
-      "Romance"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/fu8h6Kg911AYYfYseblDKh7kSsP.jpg",
