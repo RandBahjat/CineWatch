@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260822_4829">
+    <link rel="stylesheet" href="movie.css?v=20260822_4830">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows ΓÇö all in one simple, easy-to-use site.</title>
@@ -26,9 +26,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_3795" defer></script>
-    <script src="series-data.js?v=20260818_3795" defer></script>
-    <script src="anime-data.js?v=20260818_3795" defer></script>
+    <script src="movies-data.js?v=20260818_3796" defer></script>
+    <script src="series-data.js?v=20260818_3796" defer></script>
+    <script src="anime-data.js?v=20260818_3796" defer></script>
     <script src="movie.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1474,13 +1474,73 @@
             // Close on click outside
             document.addEventListener('click', (e) => {
                 if (!dropdown.contains(e.target)) {
+            }
+
+            // Setup Custom Dropdown
+            const dropdown = document.getElementById('customLangDropdown');
+            const dropdownBtn = document.getElementById('langDropdownBtn');
+            const selectedText = document.getElementById('langSelectedText');
+            const options = document.querySelectorAll('.lang-option');
+
+            // Set initial active state
+            options.forEach(opt => {
+                if (opt.dataset.value === currentLang) {
+                    opt.classList.add('active');
+                    selectedText.textContent = opt.textContent;
+                }
+                
+                opt.addEventListener('click', () => {
+                    if (opt.dataset.value !== currentLang) {
+                        changeLanguage(opt.dataset.value);
+                    }
+                });
+            });
+
+            // Toggle dropdown
+            dropdownBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                dropdown.classList.toggle('open');
+            });
+
+            // Close on click outside
+            document.addEventListener('click', (e) => {
+                if (!dropdown.contains(e.target)) {
                     dropdown.classList.remove('open');
                 }
             });
         });
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        // Aggressively hunt down and hide Google Translate floating widgets
+        const hideGoogleWidget = () => {
+            const badSelectors = [
+                '.VIpgJd-Zvi9od-aZ2wEe-wOHMyf', 
+                '.goog-te-gadget-icon', 
+                '.skiptranslate > iframe', 
+                '.VIpgJd-Zvi9od-aZ2wEe-OiiCO',
+                '#goog-gt-tt'
+            ];
+            document.querySelectorAll(badSelectors.join(', ')).forEach(el => {
+                el.style.setProperty('display', 'none', 'important');
+                el.style.setProperty('opacity', '0', 'important');
+                el.style.setProperty('visibility', 'hidden', 'important');
+                el.style.setProperty('pointer-events', 'none', 'important');
+                el.style.setProperty('width', '0', 'important');
+                el.style.setProperty('height', '0', 'important');
+            });
+            
+            document.querySelectorAll('iframe').forEach(iframe => {
+                if (iframe.name === 'c' || (iframe.id && iframe.id.startsWith(':1'))) {
+                    iframe.style.setProperty('display', 'none', 'important');
+                }
+            });
+        };
 
+        setInterval(hideGoogleWidget, 500);
+        const observer = new MutationObserver(hideGoogleWidget);
+        observer.observe(document.documentElement, { childList: true, subtree: true });
+    </script>
 </body>
 
 </html>
