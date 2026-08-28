@@ -4833,8 +4833,8 @@ window._MOVIES_DATA = [
     duration: "2h 12m",
     genres: [
       "Action",
-      "Adventure",
-      "Sci-Fi"
+      "Crime",
+      "Sport"
     ],
     poster: "https://www.themoviedb.org/t/p/w1280/qAZ0pzat24kLdO3o8ejmbLxyOac.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/dq18nCTTLpy9PmtzZI6Y2yAgdw5.jpg",
