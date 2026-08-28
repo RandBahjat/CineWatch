@@ -2788,6 +2788,30 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
+    title: "Uncharted",
+    type: "Movie",
+    year: 2022,
+    rating: 6.3,
+    age: "PG-13",
+    duration: "1h 56m",
+    genres: [
+      "Action",
+      "Adventure",
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rJHC1RUORuUhtfNb4Npclx0xnOf.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/yuvFyfOAO2UB5YP0HKgu8imtJul.jpg",
+    videoUrl: "335787",
+    overview: "Young street-smart thief Nathan Drake team up with seasoned treasure hunter Victor Sullivan, chase legendary lost gold once belong to Magellan's crew. Global adventure, deadly rival, ancient puzzle push them race against time, dangerous enemy.",
+    director: "Ruben Fleischer",
+    cast: [
+      "Tom Holland, Mark Wahlberg, Sophia Ali, Tati Gabrielle, Antonio Banderas"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "Mission: Impossible",
     type: "Movie",
     year: 1996,
