@@ -1934,22 +1934,6 @@ function openDetailsModal(movieId) {
               ${resolvedUrl ? '<div class="ep-play-circle">▶</div>' : ""}
             </div>
           </div>
-          <div class="episode-row-info">
-            <div class="ep-row-top">
-              <span class="ep-row-title notranslate" translate="no">${ep.title}</span>
-              ${duration ? `<span class="ep-row-duration">${duration}</span>` : ""}
-            </div>
-            ${overview ? `<p class="ep-row-overview ${overviewInfo.isKurdish ? 'notranslate' : ''}" translate="${overviewInfo.isKurdish ? 'no' : 'yes'}">${overviewInfo.text}</p>` : ""}
-          </div>
-          ${resolvedUrl ? `` : `<span class="episode-soon">Soon</span>`}
-        </div>
-      `;
-        }).join("");
-
-        // Click to play episode
-        episodeGrid.querySelectorAll(".episode-row:not(.episode-unavailable)").forEach((card) => {
-          const thumb = card.querySelector('.episode-row-thumb');
-          if (thumb) {
       }
     }
 
