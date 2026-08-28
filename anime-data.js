@@ -1,4 +1,4 @@
-﻿// CineWatch - Anime Data
+// CineWatch - Anime Data
 window._ANIME_DATA = [
  
 
@@ -19172,7 +19172,7 @@ window._ANIME_DATA = [
             title: "Episode 1",
             duration: "24m",
             absoluteEpisode: 1,
-            overview: "Izuku and his classmates continue their hero training."
+            overview: "Izuku and his classmates continue their hero training.",
             overviewKurdish: "",
           },
           {
