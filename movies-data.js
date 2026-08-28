@@ -170,6 +170,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/caBIySpwuFi2i7ynvHIlnxJLOdN.jpg",
     videoUrl: "1560520",
     overview: "Monster villain Bane destroy Arkham Asylum walls and release all dangerous criminals into Gotham. Exhausted Batman force himself past mental and physical limits to catch every escaped villain, leading to legendary brutal confrontation with Bane!",
+    overviewKurdish: "بەین، دوژمنێکی زیرەک و بێ بەزەیی، پلانێکی وردی داڕشتووە بۆ لابردنی باتمان لە گۆوثام. سەرەتا هەموو دوژمنە مەترسیدارەکانی ئارکهام ئازایلۆم بەڕەلا دەکات بۆ ناو شار، تاکو باتمان بێ پشوو بمێنێتەوە لە ڕاونانیان. هێز و توانای باتمان بەرەبەرە کەم دەبێتەوە، هەتا لە کۆتاییدا ڕووبەڕووی بەین دەبێتەوە بۆ شەڕێکی چارەنووسساز.",
     director: "Jeff Wamester",
     cast: [
       "Anson Mount, Michael Mando, Pablo Schreiber, Jack Giffin, Bruce Boxleitner, David Dastmalchian, Simon Templeman"
