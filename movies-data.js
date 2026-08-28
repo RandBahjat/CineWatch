@@ -4839,7 +4839,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/4ktdbrhCnAoDGLW36afjB717Sa.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/wNXuGkQ9lGpqD2s0dKIdJJEBMur.jpg",
     videoUrl: "136797",
-    overview: "Natasha Romanoff confronts the darker parts of her past when a dangerous conspiracy with ties to her history arises. Pursued by a force that will stop at nothing to bring her down, Natasha must deal with her history as a spy and the broken relationships left in her wake long before she became an Avenger.",
+    overview: "Ex-con street racer, frame for crime he not commit, chase cross-country race to clear name, get revenge on man who set him up. High-speed pursuit, illegal race, deadly grudge fuel the ride.",
     director: "Cate Shortland",
     cast: [
       "Scarlett Johansson, Florence Pugh, David Harbour, O-T Fagbenle, Olga Kurylenko, William Hurt, Ray Winstone, Rachel Weisz"
