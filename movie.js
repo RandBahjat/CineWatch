@@ -1994,23 +1994,6 @@ function openDetailsModal(movieId) {
         epSearch.value = "";
         epSearch.oninput = () => renderEpisodes(seasonSelect.value, epSearch.value);
       }
-
-      // Sort button
-      const sortBtn = document.getElementById("episodeSortBtn");
-      if (sortBtn) {
-        sortBtn.onclick = () => {
-          state.episodeSortOrder = state.episodeSortOrder === "desc" ? "asc" : "desc";
-          sortBtn.querySelector("span").textContent = state.episodeSortOrder === "desc" ? "Z-A" : "A-Z";
-          renderEpisodes(seasonSelect.value, epSearch ? epSearch.value : "");
-        };
-      }
-
-      // Play button plays first available episode of the selected season
-      playBtn.onclick = () => {
-        const seasonData = movie.seasons.find((s) => s.season === parseInt(seasonSelect.value));
-        if (!seasonData) return;
-        }
-      };
     }
 
     // Switch to details page view
