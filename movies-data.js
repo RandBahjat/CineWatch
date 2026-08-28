@@ -4840,7 +4840,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/wNXuGkQ9lGpqD2s0dKIdJJEBMur.jpg",
     videoUrl: "136797",
     overview: "Ex-con street racer, frame for crime he not commit, chase cross-country race to clear name, get revenge on man who set him up. High-speed pursuit, illegal race, deadly grudge fuel the ride.",
-    director: "Cate Shortland",
+    director: "Scott Waugh",
     cast: [
       "Scarlett Johansson, Florence Pugh, David Harbour, O-T Fagbenle, Olga Kurylenko, William Hurt, Ray Winstone, Rachel Weisz"
     ],
