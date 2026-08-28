@@ -2220,7 +2220,11 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     }
   }
 
-  if (title) title.textContent = displayTitle;
+  if (title) {
+    title.textContent = displayTitle;
+    title.classList.add("notranslate");
+    title.setAttribute("translate", "no");
+  }
 
   if (overviewEl) {
     const epObj = epData && parentMovie ? (() => {
