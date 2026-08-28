@@ -14,7 +14,7 @@ window._MOVIES_DATA = [
       "Action",
       "Adventure"
     ],
-    poster: "https://image.tmdb.org/t/p/original/lsYSWqj6i2iyUDJoLA2cazFJYlC.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xTZuh9ziUjIyHBWO9OvqNIPqVWe.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
     videoUrl: "1288445",
     overview: "Ex-Special Forces agent Cole Reed see billionaire industrialist boss framed and murdered in front of him. Forced on run as chief suspect, Reed uncover massive international conspiracy while hunted by corrupt government operatives and dangerous mercenaries. Must fight to survive and expose real killer.",
