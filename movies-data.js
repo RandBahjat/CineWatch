@@ -12559,7 +12559,7 @@ window._MOVIES_DATA = [
   {
     title: "Assassin's Creed",
     type: "Movie",
-    year: 2025,
+    year: 2016,
     rating: 7.5,
     age: "R",
     duration: "2h 29m",
