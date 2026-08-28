@@ -12,7 +12,7 @@ window._MOVIES_DATA = [
     duration: "30m",
     genres: [
       "Action",
-      "Thriller"
+      "Adventure"
     ],
     poster: "https://image.tmdb.org/t/p/original/lsYSWqj6i2iyUDJoLA2cazFJYlC.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
