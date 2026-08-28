@@ -12463,8 +12463,7 @@ window._MOVIES_DATA = [
     genres: [
       "Drama",
       "Sport",
-      "Comedy",
-      "Fantasy"
+      "Comedy"
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fDX4Dp8IKvjBAaEb5MOJrGkxWX0.jpg",
