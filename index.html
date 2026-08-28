@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260828_2309">
+    <link rel="stylesheet" href="movie.css?v=20260828_2310">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -26,9 +26,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_3944" defer></script>
-    <script src="series-data.js?v=20260818_3944" defer></script>
-    <script src="anime-data.js?v=20260818_3944" defer></script>
+    <script src="movies-data.js?v=20260818_3945" defer></script>
+    <script src="series-data.js?v=20260818_3945" defer></script>
+    <script src="anime-data.js?v=20260818_3945" defer></script>
     <script src="movie.js?v=v22" defer></script>
     <script src="ai-assistant.js?v=v1" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -853,6 +853,63 @@
         </div>
     </div>
 
+
+    <!-- CineWatch AI Assistant Modal -->
+    <div class="ai-modal-overlay hidden" id="aiModal">
+        <div class="ai-modal-card">
+            <!-- Header -->
+            <div class="ai-modal-header">
+                <div class="ai-header-left">
+                    <div class="ai-avatar-icon">
+                        <span>✨</span>
+                    </div>
+                    <div>
+                        <div class="ai-modal-title notranslate" translate="no">CineWatch <span class="text-primary">AI</span></div>
+                        <div class="ai-status-indicator notranslate" translate="no">
+                            <span class="ai-status-dot"></span> <span id="aiOnlineText">Smart Movie Assistant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-header-actions">
+                    <button class="ai-clear-btn" id="aiClearHistoryBtn" title="Clear Conversation">
+                        <ion-icon name="trash-outline"></ion-icon>
+                    </button>
+                    <button class="modal-close-btn" id="closeAiModalBtn">&times;</button>
+                </div>
+            </div>
+
+            <!-- Body (Chat messages) -->
+            <div class="ai-modal-body" id="aiChatBody">
+                <!-- Welcome Banner -->
+                <div class="ai-welcome-msg" id="aiWelcomeMsg">
+                    <div class="ai-welcome-icon">🍿</div>
+                    <h3 id="aiWelcomeTitle">Ask CineWatch AI</h3>
+                    <p id="aiWelcomeDesc">I can find movies & series by mood, genre, actor, or plot from our catalog. Tell me what you'd like to watch!</p>
+                </div>
+
+                <!-- Quick Suggestions -->
+                <div class="ai-quick-chips notranslate" translate="no" id="aiQuickChips">
+                    <button class="ai-chip" data-prompt="Suggest 3 top-rated action movies with intense suspense">🔥 Top Action Movies</button>
+                    <button class="ai-chip" data-prompt="Find mind-bending Sci-Fi movies or series with plot twists">🧠 Mind-Bending Sci-Fi</button>
+                    <button class="ai-chip" data-prompt="Recommend a fun, lighthearted comedy for family movie night">🍿 Family Comedy</button>
+                    <button class="ai-chip" data-prompt="What are the best anime series available on CineWatch?">🎌 Top Anime</button>
+                </div>
+
+                <!-- Messages Container -->
+                <div class="ai-messages-list" id="aiMessagesList"></div>
+            </div>
+
+            <!-- Footer / Input -->
+            <div class="ai-modal-footer">
+                <form id="aiChatForm" class="ai-input-form" onsubmit="event.preventDefault(); window.sendAiChatMessage();">
+                    <input type="text" id="aiChatInput" class="ai-input" placeholder="Ask anything... e.g. Recommend a psychological thriller" autocomplete="off">
+                    <button type="submit" id="aiSendBtn" class="ai-send-btn" title="Send Message">
+                        <ion-icon name="paper-plane"></ion-icon>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- Authentication (Login / Signup) Modal -->
     <div class="modal-overlay hidden" id="authModal" onclick="document.getElementById('authModal').classList.add('hidden')">
