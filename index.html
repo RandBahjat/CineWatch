@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260829_29">
+    <link rel="stylesheet" href="movie.css?v=20260829_30">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -26,9 +26,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_3948" defer></script>
-    <script src="series-data.js?v=20260818_3948" defer></script>
-    <script src="anime-data.js?v=20260818_3948" defer></script>
+    <script src="movies-data.js?v=20260818_3949" defer></script>
+    <script src="series-data.js?v=20260818_3949" defer></script>
+    <script src="anime-data.js?v=20260818_3949" defer></script>
     <script src="movie.js?v=v22" defer></script>
     <script src="ai-assistant.js?v=v1" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -857,24 +857,29 @@
     <!-- CineWatch AI Assistant Modal -->
     <div class="ai-modal-overlay hidden" id="aiModal">
         <div class="ai-modal-card">
+            <!-- Animated Ambient Glow Blobs -->
+            <div class="ai-bg-glow"></div>
+            <div class="ai-blob ai-blob1"></div>
+            <div class="ai-blob ai-blob2"></div>
+
             <!-- Header -->
             <div class="ai-modal-header">
                 <div class="ai-header-left">
-                    <div class="ai-avatar-icon">
-                        <span>✨</span>
+                    <div class="ai-avatar-box">
+                        <div class="ai-avatar-orb">✨</div>
                     </div>
-                    <div>
-                        <div class="ai-modal-title notranslate" translate="no">CineWatch <span class="text-primary">AI</span></div>
+                    <div class="ai-header-text">
+                        <div class="ai-modal-title notranslate" translate="no">Cine<span class="text-primary">Watch</span> <span class="ai-badge-pill">AI 3.6</span></div>
                         <div class="ai-status-indicator notranslate" translate="no">
                             <span class="ai-status-dot"></span> <span id="aiOnlineText">Smart Movie Assistant</span>
                         </div>
                     </div>
                 </div>
                 <div class="ai-header-actions">
-                    <button class="ai-clear-btn" id="aiClearHistoryBtn" title="Clear Conversation">
-                        <ion-icon name="trash-outline"></ion-icon>
+                    <button class="ai-action-icon-btn" id="aiClearHistoryBtn" title="Clear Chat">
+                        <ion-icon name="refresh-outline"></ion-icon>
                     </button>
-                    <button class="modal-close-btn" id="closeAiModalBtn">&times;</button>
+                    <button class="modal-close-btn ai-close-btn" id="closeAiModalBtn">&times;</button>
                 </div>
             </div>
 
@@ -882,29 +887,60 @@
             <div class="ai-modal-body" id="aiChatBody">
                 <!-- Welcome Banner -->
                 <div class="ai-welcome-msg" id="aiWelcomeMsg">
-                    <div class="ai-welcome-icon">🍿</div>
-                    <h3 id="aiWelcomeTitle">Ask CineWatch AI</h3>
-                    <p id="aiWelcomeDesc">I can find movies & series by mood, genre, actor, or plot from our catalog. Tell me what you'd like to watch!</p>
-                </div>
+                    <div class="ai-orb-graphic">
+                        <div class="ai-orb-ring"></div>
+                        <div class="ai-orb-core"><ion-icon name="sparkles"></ion-icon></div>
+                    </div>
+                    <h3 id="aiWelcomeTitle">What would you like to watch?</h3>
+                    <p id="aiWelcomeDesc">Ask for recommendations by mood, favorite actors, plot twists, or find hidden gems from our streaming catalog.</p>
+                    
+                    <!-- Suggestion Cards Grid -->
+                    <div class="ai-quick-cards notranslate" translate="no" id="aiQuickChips">
+                        <div class="ai-prompt-card" data-prompt="Suggest 3 high-octane action thrillers with great ratings">
+                            <div class="prompt-icon-wrap" style="background: rgba(229, 9, 20, 0.15); color: #ff334b;">🔥</div>
+                            <div class="prompt-card-text">
+                                <div class="prompt-card-title">Top Action Thrillers</div>
+                                <div class="prompt-card-desc">High stakes & suspense</div>
+                            </div>
+                        </div>
 
-                <!-- Quick Suggestions -->
-                <div class="ai-quick-chips notranslate" translate="no" id="aiQuickChips">
-                    <button class="ai-chip" data-prompt="Suggest 3 top-rated action movies with intense suspense">🔥 Top Action Movies</button>
-                    <button class="ai-chip" data-prompt="Find mind-bending Sci-Fi movies or series with plot twists">🧠 Mind-Bending Sci-Fi</button>
-                    <button class="ai-chip" data-prompt="Recommend a fun, lighthearted comedy for family movie night">🍿 Family Comedy</button>
-                    <button class="ai-chip" data-prompt="What are the best anime series available on CineWatch?">🎌 Top Anime</button>
+                        <div class="ai-prompt-card" data-prompt="Find mind-bending Sci-Fi movies or series with unexpected plot twists">
+                            <div class="prompt-icon-wrap" style="background: rgba(0, 229, 255, 0.15); color: #00e5ff;">🧠</div>
+                            <div class="prompt-card-text">
+                                <div class="prompt-card-title">Mind-Bending Sci-Fi</div>
+                                <div class="prompt-card-desc">Twists, space & mystery</div>
+                            </div>
+                        </div>
+
+                        <div class="ai-prompt-card" data-prompt="Recommend a fun, wholesome comedy for family movie night">
+                            <div class="prompt-icon-wrap" style="background: rgba(255, 183, 3, 0.15); color: #ffb703;">🍿</div>
+                            <div class="prompt-card-text">
+                                <div class="prompt-card-title">Family Comedy</div>
+                                <div class="prompt-card-desc">Feel-good & humorous</div>
+                            </div>
+                        </div>
+
+                        <div class="ai-prompt-card" data-prompt="What are the best trending anime series available on CineWatch?">
+                            <div class="prompt-icon-wrap" style="background: rgba(156, 39, 176, 0.15); color: #d05ce3;">🎌</div>
+                            <div class="prompt-card-text">
+                                <div class="prompt-card-title">Top Anime Hits</div>
+                                <div class="prompt-card-desc">Shonen, fantasy & story</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Messages Container -->
                 <div class="ai-messages-list" id="aiMessagesList"></div>
             </div>
 
-            <!-- Footer / Input -->
+            <!-- Footer / Input Area -->
             <div class="ai-modal-footer">
                 <form id="aiChatForm" class="ai-input-form" onsubmit="event.preventDefault(); window.sendAiChatMessage();">
+                    <div class="ai-input-sparkle-icon">✨</div>
                     <input type="text" id="aiChatInput" class="ai-input" placeholder="Ask anything... e.g. Recommend a psychological thriller" autocomplete="off">
                     <button type="submit" id="aiSendBtn" class="ai-send-btn" title="Send Message">
-                        <ion-icon name="paper-plane"></ion-icon>
+                        <ion-icon name="arrow-up-outline"></ion-icon>
                     </button>
                 </form>
             </div>
