@@ -1,11 +1,9 @@
 const fs = require('fs');
 let code = fs.readFileSync('movie.js', 'utf8');
 
-const target = `  if (items.length === 0) {
-        ? \`<span>In Progress</span>\`
-        : \`<span>\${Math.max(1, Math.round((item.duration - item.currentTime) / 60))}m left</span><span>\${percent}%</span>\`;`;
+const targetRegex = /if \(items\.length === 0\) \{[\s\S]*?const isSelected = state\.isCwSelectionMode/;
 
-const replacement = `  if (items.length === 0) {
+const replacement = `if (items.length === 0) {
     grid.innerHTML = "";
     if (emptyTitle) emptyTitle.textContent = "No titles in Continue Watching";
     if (emptyText) emptyText.textContent = "Movies and series you start watching will appear here so you can easily pick up where you left off.";
@@ -51,8 +49,10 @@ const replacement = `  if (items.length === 0) {
       const leftText = isCkb ? 'خولەک ماوە' : (isAr ? 'دقيقة متبقية' : 'm left');
       const metaLabel = isIframe
         ? \`<span class="notranslate" translate="no">\${inProgressText}</span>\`
-        : \`<span class="notranslate" translate="no">\${formatNumber(Math.max(1, Math.round((item.duration - item.currentTime) / 60)))} \${leftText}</span><span class="notranslate" translate="no">\${formatNumber(percent)}%</span>\`;`;
+        : \`<span class="notranslate" translate="no">\${formatNumber(Math.max(1, Math.round((item.duration - item.currentTime) / 60)))} \${leftText}</span><span class="notranslate" translate="no">\${formatNumber(percent)}%</span>\`;
 
-code = code.replace(target, replacement);
+      const isSelected = state.isCwSelectionMode`;
+
+code = code.replace(targetRegex, replacement);
 fs.writeFileSync('movie.js', code, 'utf8');
-console.log('Fixed renderContinueWatchingGrid');
+console.log('Regex replace success');
