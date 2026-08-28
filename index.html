@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260829_39">
+    <link rel="stylesheet" href="movie.css?v=20260829_40">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -26,9 +26,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_3960" defer></script>
-    <script src="series-data.js?v=20260818_3960" defer></script>
-    <script src="anime-data.js?v=20260818_3960" defer></script>
+    <script src="movies-data.js?v=20260818_3961" defer></script>
+    <script src="series-data.js?v=20260818_3961" defer></script>
+    <script src="anime-data.js?v=20260818_3961" defer></script>
     <script src="movie.js?v=v22" defer></script>
     <script src="ai-assistant.js?v=v4" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -150,7 +150,7 @@
                 </div>
                 
                 <!-- Search Icon Button -->
-                <button class="nav-action-btn" id="navSearchBtn" title="Search">
+                <button class="nav-action-btn" id="navSearchBtn" onclick="if(window.openSearchModal) window.openSearchModal(); else { document.getElementById('searchModal').classList.remove('hidden'); document.body.style.overflow='hidden'; }" title="Search">
                     <ion-icon name="search-outline"></ion-icon>
                 </button>
 
