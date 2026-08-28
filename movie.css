@@ -6489,29 +6489,6 @@ body.rtl-layout .account-side-panel.open {
   border-color: #e50914;
 }
 
-.search-tag-chip {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.85);
-  padding: 0.65rem 0.9rem;
-  border-radius: 12px;
-  font-size: 0.84rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  text-align: center;
-}
-
-.search-tag-chip:hover {
-  background: rgba(229, 9, 20, 0.15);
-  border-color: rgba(229, 9, 20, 0.4);
-  color: #fff;
-  transform: translateY(-1px);
-}
-
 .post-comment-btn {
   align-self: flex-end;
   background: #e50914;
