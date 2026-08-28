@@ -4672,7 +4672,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Titanic",
+    title: "Days of Thunder",
     type: "Movie",
     year: 1997,
     rating: 7.9,
