@@ -12458,7 +12458,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 2025,
     rating: 7.5,
-    age: "PG",
+    age: "R",
     duration: "1h",
     genres: [
       "Action",
