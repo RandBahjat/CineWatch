@@ -1630,15 +1630,15 @@ async function renderCommentsSection(movieId) {
 
   const commentsTitleHeading = document.getElementById('commentsTitleHeading');
   if (commentsTitleHeading) {
-    commentsTitleHeading.textContent = isCkb ? 'لێدوانەکان' : (isAr ? 'التعليقات' : 'Comments');
+    commentsTitleHeading.textContent = isCkb ? 'بۆچوونەکان' : (isAr ? 'التعليقات' : 'Comments');
   }
 
-  const placeholderText = isCkb ? 'لێدوانێک بنووسە...' : (isAr ? 'اكتب تعليقاً...' : 'Write a comment...');
-  const postBtnText = isCkb ? 'ناردنی لێدوان' : (isAr ? 'إرسال التعليق' : 'Post Comment');
-  const loginNotice = isCkb ? 'پێویستە بچیتە ژوورەوە بۆ ناردنی لێدوان.' : (isAr ? 'يجب تسجيل الدخول لإضافة تعليق.' : 'You must be logged in to post a comment.');
+  const placeholderText = isCkb ? 'بۆچوونێک بنووسە...' : (isAr ? 'اكتب تعليقاً...' : 'Write a comment...');
+  const postBtnText = isCkb ? 'ناردنی بۆچوون' : (isAr ? 'إرسال التعليق' : 'Post Comment');
+  const loginNotice = isCkb ? 'پێویستە بچیتە ژوورەوە بۆ ناردنی بۆچوون.' : (isAr ? 'يجب تسجيل الدخول لإضافة تعليق.' : 'You must be logged in to post a comment.');
   const loginBtnText = isCkb ? 'چوونەژوورەوە یان دروستکردنی هەژمار' : (isAr ? 'تسجيل الدخول أو إنشاء حساب' : 'Log In or Sign Up');
-  const noCommentsText = isCkb ? 'هیچ لێدوانێک نییە، یەکەم کەس بە!' : (isAr ? 'لا توجد تعليقات بعد. كن أول من يعلق!' : 'No comments yet. Be the first!');
-  const failedText = isCkb ? 'بارکردنی لێدوانەکان سەرکەوتوو نەبوو.' : (isAr ? 'فشل تحميل التعليقات.' : 'Failed to load comments.');
+  const noCommentsText = isCkb ? 'هیچ بۆچوونێک نییە، یەکەم کەس بە!' : (isAr ? 'لا توجد تعليقات بعد. كن أول من يعلق!' : 'No comments yet. Be the first!');
+  const failedText = isCkb ? 'بارکردنی بۆچوونەکان سەرکەوتوو نەبوو.' : (isAr ? 'فشل تحميل التعليقات.' : 'Failed to load comments.');
 
   // Show section
   commentsSection.style.display = 'block';
@@ -1683,7 +1683,7 @@ async function renderCommentsSection(movieId) {
       : (comment.avatar || '🎬');
 
     const isOwner = state.user && comment.user_id === state.user.id;
-    const deleteTitle = isCkb ? 'سڕینەوەی لێدوان' : (isAr ? 'حذف التعليق' : 'Delete comment');
+    const deleteTitle = isCkb ? 'سڕینەوەی بۆچوون' : (isAr ? 'حذف التعليق' : 'Delete comment');
     const deleteBtn = isOwner ? `
       <button class="comment-delete-btn" onclick="deleteComment('${comment.id}', '${movieId}')" title="${deleteTitle}">
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4h6v2"/></svg>
