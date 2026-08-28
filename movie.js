@@ -3027,12 +3027,53 @@ function bindEventListeners() {
     });
   }
 
+  // Clear Recents
+  if (clearRecentBtn) {
+    clearRecentBtn.onclick = () => {
+      localStorage.removeItem("recentSearches");
+      renderRecentSearches();
+    };
+  }
+
+  // Click on a recent search chip
+  if (searchRecentList) {
+    searchRecentList.onclick = (e) => {
+      const item = e.target.closest(".search-recent-item");
+      if (item && searchInput) {
+        const query = item.dataset.query;
+        searchInput.value = query;
+        searchInput.dispatchEvent(new Event('input'));
+      }
+    };
+  }
+
+  // Click on a Quick Category / Trend Tag Chip
+  const searchQuickTags = document.getElementById("searchQuickTags");
+  if (searchQuickTags) {
+    searchQuickTags.onclick = (e) => {
+      const chip = e.target.closest(".search-tag-chip");
+      if (chip && searchInput) {
+        const query = chip.dataset.search;
+        searchInput.value = query;
+        searchInput.dispatchEvent(new Event('input'));
+      }
+    };
+  }
+
+  // Close on Escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !searchModal.classList.contains("hidden")) {
+      closeSearchModal();
+    }
+  });
+
+  if (searchInput) {
     searchInput.oninput = (e) => {
       const query = e.target.value.trim().toLowerCase();
       const exploreSec = document.getElementById("searchExploreSection");
 
       if (query.length > 0) {
-        searchClearBtn.classList.remove("hidden");
+        if (searchClearBtn) searchClearBtn.classList.remove("hidden");
         if (searchRecentSection) searchRecentSection.classList.add("hidden");
         if (exploreSec) exploreSec.classList.add("hidden");
 
@@ -3042,10 +3083,18 @@ function bindEventListeners() {
             .slice(0, 15)
             .map(
               (m, i) => `
-              <img src="${m.poster}" alt="${m.title}" style="animation-delay: ${i * 60 + 80}ms">
+            <div class="search-item" data-id="${m.id}" style="animation-delay: ${i * 30}ms">
+              <img src="${m.poster || m.backdrop}" alt="${m.title}" loading="lazy">
               <div class="search-item-info">
                 <div class="search-item-title notranslate" translate="no">${m.title}</div>
-                <div class="search-item-meta">⭐ ${formatRating(m.rating)} • ${m.year} • ${m.genres.map(translateGenre).join(", ")}</div>
+                <div class="search-item-meta notranslate" translate="no">
+                  <span class="search-item-badge">${m.type || (m.seasons ? 'TV Show' : 'Movie')}</span>
+                  <span>${m.year || ''}</span>
+                  <span class="search-item-rating">⭐ ${formatRating(m.rating)}</span>
+                </div>
+              </div>
+              <div class="search-item-action">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
               </div>
             </div>
           `,
@@ -3053,12 +3102,13 @@ function bindEventListeners() {
             .join("");
           searchDropdown.classList.remove("hidden");
         } else {
-          searchDropdown.innerHTML = `<div style="padding: 1rem; text-align: center; color: var(--text-dim); font-size: 0.85rem;">No results found</div>`;
+          searchDropdown.innerHTML = `<div class="search-no-results">No titles found matching "<strong>${query}</strong>"</div>`;
           searchDropdown.classList.remove("hidden");
         }
       } else {
-        searchClearBtn.classList.add("hidden");
-        searchDropdown.classList.add("hidden");
+        if (searchClearBtn) searchClearBtn.classList.add("hidden");
+        if (searchDropdown) searchDropdown.classList.add("hidden");
+        if (exploreSec) exploreSec.classList.remove("hidden");
         renderRecentSearches(); // show recents again
       }
     };
