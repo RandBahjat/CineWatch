@@ -12468,7 +12468,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/jr2tjSvV6SOMCcOLYMz9TSvOjgC.jpg",
-    videoUrl: "39101",
+    videoUrl: "",
     overview: "Mysterious alien tree land on Earth, drain planet life force feed its deadly fruit, alien crew guard it fiercely. Goku, Gohan, Piccolo, Krillin must stop tree before it suck Earth dry, kill everyone on it.",
     director: "Daisuke Nishio",
     cast: [
