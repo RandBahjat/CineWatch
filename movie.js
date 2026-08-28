@@ -1136,14 +1136,18 @@ function renderMoviesSection() {
   // Clamp page in case filter change reduced total
   if (state.moviesPage > totalPages) state.moviesPage = totalPages;
 
+  const cookies = document.cookie || '';
+  const isCkb = cookies.includes('googtrans=/en/ckb');
+  const isAr = cookies.includes('googtrans=/en/ar');
+
   // Update count badge (next to heading)
   const countEl = document.getElementById("moviesCount");
-  if (countEl) countEl.textContent = `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`;
+  if (countEl) countEl.textContent = isCkb ? `${formatNumber(filtered.length)} فیلم` : (isAr ? `${filtered.length} فيلم` : `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`);
 
   // Update count label (between filters and grid)
   const labelEl = document.getElementById("moviesCountLabel");
   if (labelEl) {
-    labelEl.textContent = `Titles: ${filtered.length}`;
+    labelEl.textContent = isCkb ? `ناونیشانەکان: ${formatNumber(filtered.length)}` : (isAr ? `العناوين: ${filtered.length}` : `Titles: ${filtered.length}`);
   }
 
   // Sync active filter button
@@ -1166,13 +1170,17 @@ function renderSeriesSection() {
 
   if (state.seriesPage > totalPages) state.seriesPage = totalPages;
 
+  const cookies = document.cookie || '';
+  const isCkb = cookies.includes('googtrans=/en/ckb');
+  const isAr = cookies.includes('googtrans=/en/ar');
+
   const countEl = document.getElementById("seriesCount");
-  if (countEl) countEl.textContent = `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`;
+  if (countEl) countEl.textContent = isCkb ? `${formatNumber(filtered.length)} زنجیرە` : (isAr ? `${filtered.length} مسلسل` : `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`);
 
   // Update count label (between filters and grid)
   const labelEl = document.getElementById("seriesCountLabel");
   if (labelEl) {
-    labelEl.textContent = `Titles: ${filtered.length}`;
+    labelEl.textContent = isCkb ? `ناونیشانەکان: ${formatNumber(filtered.length)}` : (isAr ? `العناوين: ${filtered.length}` : `Titles: ${filtered.length}`);
   }
 
   document.querySelectorAll("#seriesFilterBar .browse-filter-btn").forEach((btn) => {
@@ -1194,12 +1202,16 @@ function renderAnimeSection() {
 
   if (state.animePage > totalPages) state.animePage = totalPages;
 
+  const cookies = document.cookie || '';
+  const isCkb = cookies.includes('googtrans=/en/ckb');
+  const isAr = cookies.includes('googtrans=/en/ar');
+
   const countEl = document.getElementById("animeCount");
-  if (countEl) countEl.textContent = `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`;
+  if (countEl) countEl.textContent = isCkb ? `${formatNumber(filtered.length)} ئەنیمێ` : (isAr ? `${filtered.length} أنمي` : `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`);
 
   const labelEl = document.getElementById("animeCountLabel");
   if (labelEl) {
-    labelEl.textContent = `Titles: ${filtered.length}`;
+    labelEl.textContent = isCkb ? `ناونیشانەکان: ${formatNumber(filtered.length)}` : (isAr ? `العناوين: ${filtered.length}` : `Titles: ${filtered.length}`);
   }
 
   document.querySelectorAll("#animeFilterBar .browse-filter-btn").forEach((btn) => {
