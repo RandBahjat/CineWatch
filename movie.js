@@ -404,12 +404,6 @@ function removeContinueWatching(movieId) {
 async function initApp() {
   // Bind UI event listeners immediately so search, navigation, and modals work with zero delay
   bindEventListeners();
-// 3. UI RENDERERS & CONTROLLERS
-// ==========================================
-
-async function initApp() {
-  // Bind UI event listeners immediately so search, navigation, and modals work with zero delay
-  bindEventListeners();
 
   const dismissLoader = () => {
     const loader = document.getElementById("appLoader");
