@@ -12583,6 +12583,33 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Assassin's Creed",
+    type: "Movie",
+    year: 2016,
+    rating: 5.6,
+    age: "PG-13",
+    duration: "1h 55m",
+    genres: [
+      "Action",
+      "Adventure",
+      "Sci-Fi",
+      "Fantasy"
+
+    ],
+    poster: "https://image.tmdb.org/t/p/original/lso7y9jXFiVHMcW4nSAudU5vq7i.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/x6vSFazTxDaJTTGqedjlsTXcTpV.jpg",
+    videoUrl: "121856",
+    overview: "Death row inmate wake inside secret facility, force relive genetic memory of ancient ancestor, member of Assassin Brotherhood battle Templar Order. Uncover ancient artifact tie past, present, gain skill needed fight modern-day war.",
+    director: "Justin Kurzel",
+    cast: [
+      "Michael Fassbender, Marion Cotillard, Jeremy Irons, Brendan Gleeson, Ariane Labed"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
