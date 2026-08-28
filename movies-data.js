@@ -4842,7 +4842,7 @@ window._MOVIES_DATA = [
     overview: "Ex-con street racer, frame for crime he not commit, chase cross-country race to clear name, get revenge on man who set him up. High-speed pursuit, illegal race, deadly grudge fuel the ride.",
     director: "Scott Waugh",
     cast: [
-      "Scarlett Johansson, Florence Pugh, David Harbour, O-T Fagbenle, Olga Kurylenko, William Hurt, Ray Winstone, Rachel Weisz"
+      "Aaron Paul, Dominic Cooper, Imogen Poots, Michael Keaton, Rami Malek"
     ],
     trending: false,
     featured: false,
