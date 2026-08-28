@@ -12675,7 +12675,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bYLM3GpNUZnoFElPXp1zlhDPdtv.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/tenUPIMnLO9QUcvAtakp0xSAYTz.jpg",
-    videoUrl: "756",
+    videoUrl: "75612",
     overview: "Lara Croft, fierce, fearless daughter of missing adventurer, journey to mysterious island search for father, uncover ancient tomb hold dark secret. Face deadly trial, ruthless enemy, discover true strength inside herself.",
     director: "Roar Uthaug",
     cast: [
