@@ -2804,7 +2804,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/y1zfDhKOMAtWhTrpaCVnjj3R4hX.jpg",
     videoUrl: "696806",
     overview: "Time-traveling pilot crash land in past, team up with younger self, seek help of late father save future, rescue mother from danger of present. Family, grief, sci-fi adventure collide in race against time.",
-    director: "Ruben Fleischer",
+    director: "Shawn Levy",
     cast: [
       "Tom Holland, Mark Wahlberg, Sophia Ali, Tati Gabrielle, Antonio Banderas"
     ],
