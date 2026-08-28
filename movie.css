@@ -796,9 +796,7 @@ body.rtl-layout .modal-search-clear {
   transition: all 0.2s ease;
 }
 
-.search-tag-chip .tag-emoji {
-  font-size: 1rem;
-}
+
 
 .search-tag-chip:hover {
   background: rgba(229, 9, 20, 0.15);
