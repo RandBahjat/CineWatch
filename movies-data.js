@@ -2806,7 +2806,7 @@ window._MOVIES_DATA = [
     overview: "Time-traveling pilot crash land in past, team up with younger self, seek help of late father save future, rescue mother from danger of present. Family, grief, sci-fi adventure collide in race against time.",
     director: "Shawn Levy",
     cast: [
-      "Tom Holland, Mark Wahlberg, Sophia Ali, Tati Gabrielle, Antonio Banderas"
+      "Ryan Reynolds, Walker Scobell, Mark Ruffalo, Jennifer Garner, Zoe Saldaña"
     ],
     trending: false,
     featured: false,
