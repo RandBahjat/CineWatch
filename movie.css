@@ -6675,6 +6675,24 @@ body.rtl-layout .details-back-btn {
   z-index: 99999;
 }
 
+body.rtl-layout .comments-section,
+body.rtl-layout .comment-input-area,
+body.rtl-layout .comment-item,
+body.rtl-layout .comment-content {
+  text-align: right;
+  direction: rtl;
+}
+
+body.rtl-layout .post-comment-btn {
+  align-self: flex-start;
+}
+
+body.rtl-layout .comments-list {
+  padding-right: 0;
+  padding-left: 8px;
+}
+
+
 /* Force hero title and text to align to the right in RTL */
 body.rtl-layout .hero-content {
   text-align: right;
