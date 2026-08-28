@@ -1,32 +1,61 @@
 const fs = require('fs');
 const vm = require('vm');
 
-let js = fs.readFileSync('movie.js', 'utf8');
-const startIdx = js.indexOf('// Search Type Switcher (Segmented Control)');
-const endIdx = js.indexOf('// Clear Recents');
-if (startIdx !== -1 && endIdx !== -1) {
-    const cleanSegment = `// Search Type Switcher (Segmented Control)
-  const searchTypeSwitcher = document.getElementById("searchTypeSwitcher");
-  if (searchTypeSwitcher) {
-    searchTypeSwitcher.querySelectorAll(".type-switch-btn").forEach(btn => {
-      btn.onclick = () => {
-        searchTypeSwitcher.querySelectorAll(".type-switch-btn").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        state.searchFilter = btn.dataset.filter || "all";
+let css = fs.readFileSync('movie.css', 'utf8');
+const searchClearTarget = `.modal-search-clear:hover {
+  background: rgba(229, 9, 20, 0.3);`;
 
-        if (searchInput && searchInput.value.trim().length > 0) {
-          searchInput.dispatchEvent(new Event('input'));
-        }
-      };
-    });
-  }
+const cleanHeaderCss = `.modal-search-clear:hover {
+  background: rgba(229, 9, 20, 0.3);
+  color: #fff;
+}
 
-  if (searchModalBackdrop) searchModalBackdrop.onclick = closeSearchModal;
+.search-header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
 
-  `;
-    js = js.slice(0, startIdx) + cleanSegment + js.slice(endIdx);
-    fs.writeFileSync('movie.js', js, 'utf8');
-    console.log('movie.js cleaned successfully');
+/* Segmented Type Switcher */
+.search-type-switcher {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3px;
+  border-radius: 10px;
+  gap: 2px;
+}
+
+.type-switch-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.65);
+  padding: 0.35rem 0.75rem;
+  border-radius: 7px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.type-switch-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.type-switch-btn.active {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 2px 10px rgba(229, 9, 20, 0.4);
+}`;
+
+if (css.includes(searchClearTarget)) {
+    css = css.replace(searchClearTarget, cleanHeaderCss);
+    fs.writeFileSync('movie.css', css, 'utf8');
+    console.log('movie.css header styles updated successfully');
 }
 
 function checkFile(filename) {
