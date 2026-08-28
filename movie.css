@@ -6640,6 +6640,24 @@ body.rtl-layout .details-content-wrapper {
   margin-left: auto;
 }
 
+/* Force hero title and text to align to the right in RTL */
+body.rtl-layout .hero-content {
+  text-align: right;
+  margin-left: 0;
+}
+body.rtl-layout .hero-title {
+  text-align: right !important;
+  direction: rtl;
+  unicode-bidi: plaintext;
+}
+body.rtl-layout .hero-overview {
+  text-align: right !important;
+}
+body.rtl-layout .hero-actions {
+  justify-content: flex-start;
+}
+
+
 
 /* ==========================================================================
    ANNIHILATE GOOGLE TRANSLATE WIDGET
