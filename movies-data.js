@@ -12587,7 +12587,7 @@ window._MOVIES_DATA = [
     title: "Tomb Raider",
     type: "Movie",
     year: 2018,
-    rating: 5.6,
+    rating: 6.3,
     age: "PG-13",
     duration: "1h 55m",
     genres: [
