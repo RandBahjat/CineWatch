@@ -2780,7 +2780,7 @@ window._MOVIES_DATA = [
     overview: "Young street-smart thief Nathan Drake team up with seasoned treasure hunter Victor Sullivan, chase legendary lost gold once belong to Magellan's crew. Global adventure, deadly rival, ancient puzzle push them race against time, dangerous enemy.",
     director: "Ruben Fleischer",
     cast: [
-      "Brad Pitt, Angelina Jolie, Vince Vaughn, Adam Brody"
+      "Tom Holland, Mark Wahlberg, Sophia Ali, Tati Gabrielle, Antonio Banderas"
     ],
     trending: false,
     featured: false,
