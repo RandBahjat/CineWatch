@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260828_2165">
+    <link rel="stylesheet" href="movie.css?v=20260828_2166">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -26,9 +26,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_3885" defer></script>
-    <script src="series-data.js?v=20260818_3885" defer></script>
-    <script src="anime-data.js?v=20260818_3885" defer></script>
+    <script src="movies-data.js?v=20260818_3886" defer></script>
+    <script src="series-data.js?v=20260818_3886" defer></script>
+    <script src="anime-data.js?v=20260818_3886" defer></script>
     <script src="movie.js?v=v16" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1600,20 +1600,17 @@
     </script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script>
-        // Aggressively hunt down and delete all Google Translate floating widgets, tooltips, and frames
-        const hideGoogleWidget = () => {
-            const badSelectors = [
-                '[class*="VIpgJd"]',
-                '[class*="skiptranslate"]',
-                '[class*="goog-te"]',
-                'iframe.skiptranslate',
-                'iframe[id*=":"], iframe[src*="translate"]',
-                '#goog-gt-tt',
-                'div[id*=":"]'
-            ];
-            document.querySelectorAll(badSelectors.join(', ')).forEach(el => {
-                if (el && el.id !== 'google_translate_element') {
-                    el.remove();
+        // Suppress Google Translate floating tooltip and top banner shift without killing the translation engine
+        const suppressGoogleFloatingUI = () => {
+            const tooltips = document.querySelectorAll('#goog-gt-tt, .goog-te-banner-frame, .VIpgJd-ZVi9od-ORHb-OEVmcd, .VIpgJd-ZVi9od-aZ2wEe-wOHMyf');
+            tooltips.forEach(el => {
+                if (el) {
+                    el.style.setProperty('display', 'none', 'important');
+                    el.style.setProperty('visibility', 'hidden', 'important');
+                    el.style.setProperty('pointer-events', 'none', 'important');
+                    el.style.setProperty('opacity', '0', 'important');
+                    el.style.setProperty('top', '-99999px', 'important');
+                    el.style.setProperty('left', '-99999px', 'important');
                 }
             });
             if (document.body.style.top && document.body.style.top !== '0px') {
@@ -1621,11 +1618,9 @@
             }
         };
 
-        hideGoogleWidget();
-        setInterval(hideGoogleWidget, 40);
-        const observer = new MutationObserver(hideGoogleWidget);
-        observer.observe(document.documentElement, { childList: true, subtree: true });
-        window.addEventListener('load', hideGoogleWidget);
+        suppressGoogleFloatingUI();
+        setInterval(suppressGoogleFloatingUI, 100);
+        window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
 </body>
 
