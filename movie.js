@@ -1877,45 +1877,6 @@ function openDetailsModal(movieId) {
       document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &middot; ");
     }
 
-    setOverviewElement(document.getElementById("detailsOverview"), getLocalizedOverview(movie));
-
-    const castContainer = document.getElementById("detailsCastContainer");
-    const castText = document.getElementById("detailsCastText");
-    const dirContainer = document.getElementById("detailsDirectorContainer");
-    const dirText = document.getElementById("detailsDirectorText");
-
-    if (dirContainer && dirText) {
-      if (movie.director) {
-        dirText.textContent = movie.director;
-        dirContainer.classList.remove("hidden");
-      } else {
-        dirContainer.classList.add("hidden");
-      }
-    }
-
-    if (castContainer && castText) {
-      if (movie.cast && movie.cast.length > 0) {
-        castText.textContent = movie.cast.join(", ");
-        castContainer.classList.remove("hidden");
-      } else {
-        castContainer.classList.add("hidden");
-      }
-    }
-
-    const favCheckbox = document.getElementById("detailsFavCheckbox");
-    const favBtn = document.getElementById("detailsFavBtn");
-    const fav = isFavorite(movie.id);
-
-    // Sync checkbox state with actual favorites state
-    favCheckbox.checked = fav;
-
-    favBtn.onclick = (e) => {
-      e.preventDefault(); // Prevent default label click behavior
-      const isNowFav = toggleFavorite(movie.id);
-      favCheckbox.checked = isNowFav;
-    };
-
-    const reportBtn = document.getElementById("detailsReportBtn");
     if (reportBtn) {
       reportBtn.onclick = () => {
     if (similarsGrid && similarsSection) {
