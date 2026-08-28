@@ -12576,7 +12576,7 @@ window._MOVIES_DATA = [
     overview: "Death row inmate wake inside secret facility, force relive genetic memory of ancient ancestor, member of Assassin Brotherhood battle Templar Order. Uncover ancient artifact tie past, present, gain skill needed fight modern-day war.",
     director: "Justin Kurzel",
     cast: [
-      "Timothée Chalamet, Gwyneth Paltrow, Odessa A'zion, Kevin O'Leary, Tyler Okonma (Tyler, the Creator), Abel Ferrara, Fran Drescher"
+      "Michael Fassbender, Marion Cotillard, Jeremy Irons, Brendan Gleeson, Ariane Labed"
     ],
     trending: false,
     featured: false,
