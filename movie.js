@@ -513,7 +513,7 @@ function setupHeroBanner() {
     startX = e.type.includes("mouse") ? e.pageX : e.touches[0].clientX;
     const bannerWidth = heroBanner.offsetWidth || window.innerWidth;
 
-    const isRtl = getComputedStyle(document.body).direction === \'rtl\';
+    const isRtl = getComputedStyle(document.body).direction === "rtl";
     const directionSign = isRtl ? 1 : -1;
     currentTranslate = directionSign * state.currentHeroIndex * bannerWidth;
 
@@ -534,7 +534,7 @@ function setupHeroBanner() {
 
     if (hasMoved) {
       if (e.cancelable) e.preventDefault(); // Prevent native text/image selection
-      const isRTL = getComputedStyle(document.body).direction === \'rtl\';
+      const isRTL = getComputedStyle(document.body).direction === "rtl";
       const effectiveDiffX = isRTL ? -diffX : diffX;
       heroTrack.style.transform = `translateX(${currentTranslate + effectiveDiffX}px)`;
     }
@@ -549,7 +549,7 @@ function setupHeroBanner() {
       ? e.pageX
       : (e.changedTouches && e.changedTouches[0] ? e.changedTouches[0].clientX : startX);
     const diffX = endX - startX;
-    const isRTL = getComputedStyle(document.body).direction === \'rtl\';
+    const isRTL = getComputedStyle(document.body).direction === "rtl";
     const effectiveDiffX = isRTL ? -diffX : diffX;
 
     const bannerWidth = heroBanner.offsetWidth || window.innerWidth;
@@ -617,7 +617,7 @@ function updateHeroBanner() {
   heroTrack.style.transition = "transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)";
 
   // Handle RTL layout direction for Sorani
-  const isRtl = getComputedStyle(document.body).direction === \'rtl\';
+  const isRtl = getComputedStyle(document.body).direction === "rtl";
   const directionSign = isRtl ? 1 : -1;
   heroTrack.style.transform = `translateX(${directionSign * state.currentHeroIndex * 100}%)`;
 
