@@ -414,6 +414,9 @@ function removeContinueWatching(movieId) {
 // ==========================================
 
 async function initApp() {
+  // Bind UI event listeners immediately so search, navigation, and modals work with zero delay
+  bindEventListeners();
+
   const dismissLoader = () => {
     const loader = document.getElementById("appLoader");
     if (loader) {
@@ -441,9 +444,6 @@ async function initApp() {
     renderCarousels();
     renderContinueWatchingShelf();
     if (typeof renderWatchlistHomeShelf === "function") renderWatchlistHomeShelf();
-
-    // Event Listeners Setup
-    bindEventListeners();
 
     // Start hero auto slide (managed by startHeroAutoplay)
   } catch (err) {
