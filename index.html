@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260828_2060">
+    <link rel="stylesheet" href="movie.css?v=20260828_2061">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows ΓÇö all in one simple, easy-to-use site.</title>
@@ -26,9 +26,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_3815" defer></script>
-    <script src="series-data.js?v=20260818_3815" defer></script>
-    <script src="anime-data.js?v=20260818_3815" defer></script>
+    <script src="movies-data.js?v=20260818_3816" defer></script>
+    <script src="series-data.js?v=20260818_3816" defer></script>
+    <script src="anime-data.js?v=20260818_3816" defer></script>
     <script src="movie.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1084,15 +1084,34 @@
     <!-- Google Translate Engine -->
     <div id="google_translate_element" style="display:none;"></div>
     <style>
-        /* Hide Google Translate Bar, Tooltips, and Floating Widget */
-        body { top: 0 !important; }
-        .skiptranslate iframe { display: none !important; }
-        #goog-gt-tt { display: none !important; }
-        .goog-text-highlight { background: none !important; box-shadow: none !important; }
-        /* Hide the specific floating button widget (blue circle with G) */
-        .VIpgJd-Zvi9od-aZ2wEe-wOHMyf, .VIpgJd-Zvi9od-aZ2wEe-OiiCO { display: none !important; }
-        .goog-te-gadget-icon { display: none !important; }
-        .goog-te-banner-frame { display: none !important; }
+        /* Hide Google Translate Bar, Tooltips, and Floating Widget completely */
+        body { top: 0px !important; position: static !important; }
+        .skiptranslate,
+        body > .skiptranslate,
+        iframe.skiptranslate,
+        iframe[id*=":0"],
+        iframe[id*="goog"],
+        iframe[src*="translate.google"],
+        [class*="VIpgJd"],
+        [class*="goog-"],
+        [id*="goog"],
+        #goog-gt-tt,
+        .goog-tooltip,
+        .goog-text-highlight,
+        .goog-te-gadget-icon,
+        .goog-te-banner-frame {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+            position: absolute !important;
+            top: -99999px !important;
+            left: -99999px !important;
+            width: 0 !important;
+            height: 0 !important;
+            z-index: -999999 !important;
+            clip: rect(0, 0, 0, 0) !important;
+        }
 
         /* Custom Language Dropdown Styles */
         .custom-lang-dropdown {
