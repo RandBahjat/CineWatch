@@ -3,12 +3,53 @@ const vm = require('vm');
 
 let js = fs.readFileSync('movie.js', 'utf8');
 
-const targetBrokenBlock = `    const reportBtn = document.getElementById("detailsReportBtn");
-    if (reportBtn) {
-      reportBtn.onclick = () => {
-    if (similarsGrid && similarsSection) {`;
+const targetBefore = `    if (document.getElementById("detailsGenres")) {
+      document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &middot; ");
+    }`;
 
-const fixedBlock = `    const reportBtn = document.getElementById("detailsReportBtn");
+const fixedCompleteBlock = `    if (document.getElementById("detailsGenres")) {
+      document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &middot; ");
+    }
+
+    setOverviewElement(document.getElementById("detailsOverview"), getLocalizedOverview(movie));
+
+    const castContainer = document.getElementById("detailsCastContainer");
+    const castText = document.getElementById("detailsCastText");
+    const dirContainer = document.getElementById("detailsDirectorContainer");
+    const dirText = document.getElementById("detailsDirectorText");
+
+    if (dirContainer && dirText) {
+      if (movie.director) {
+        dirText.textContent = movie.director;
+        dirContainer.classList.remove("hidden");
+      } else {
+        dirContainer.classList.add("hidden");
+      }
+    }
+
+    if (castContainer && castText) {
+      if (movie.cast && movie.cast.length > 0) {
+        castText.textContent = movie.cast.join(", ");
+        castContainer.classList.remove("hidden");
+      } else {
+        castContainer.classList.add("hidden");
+      }
+    }
+
+    const favCheckbox = document.getElementById("detailsFavCheckbox");
+    const favBtn = document.getElementById("detailsFavBtn");
+    const fav = isFavorite(movie.id);
+
+    // Sync checkbox state with actual favorites state
+    favCheckbox.checked = fav;
+
+    favBtn.onclick = (e) => {
+      e.preventDefault(); // Prevent default label click behavior
+      const isNowFav = toggleFavorite(movie.id);
+      favCheckbox.checked = isNowFav;
+    };
+
+    const reportBtn = document.getElementById("detailsReportBtn");
     if (reportBtn) {
       reportBtn.onclick = () => {
         const reportModal = document.getElementById("reportModal");
@@ -52,14 +93,13 @@ const fixedBlock = `    const reportBtn = document.getElementById("detailsReport
       }
     }`;
 
-if (js.includes(targetBrokenBlock)) {
-  const startIdx = js.indexOf(targetBrokenBlock);
-  const endIdx = js.indexOf('// ── TV Show: show season/episode picker', startIdx);
-  if (startIdx !== -1 && endIdx !== -1) {
-    js = js.slice(0, startIdx) + fixedBlock + '\n\n    ' + js.slice(endIdx);
-    fs.writeFileSync('movie.js', js, 'utf8');
-    console.log('movie.js details section fixed successfully');
-  }
+const startIdx = js.indexOf(targetBefore);
+const endIdx = js.indexOf('const tvSection = document.getElementById("tvShowSection");');
+
+if (startIdx !== -1 && endIdx !== -1) {
+  js = js.slice(0, startIdx) + fixedCompleteBlock + '\n\n    // ── TV Show: show season/episode picker ──\n    ' + js.slice(endIdx);
+  fs.writeFileSync('movie.js', js, 'utf8');
+  console.log('movie.js details section replaced successfully');
 }
 
 function checkFile(filename) {
