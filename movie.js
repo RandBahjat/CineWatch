@@ -1832,7 +1832,7 @@ function openDetailsModal(movieId) {
   setTimeout(() => {
     window.scrollTo(0, 0);
     if (detailsSection) detailsSection.scrollTo(0, 0);
-
+    document.getElementById("detailsBg").style.backgroundImage = `url('${movie.backdrop || movie.poster}')`;
     const titleInfo = getLocalizedTitle(movie);
     const titleEl = document.getElementById("detailsTitle");
     if (titleEl) {
