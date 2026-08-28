@@ -12659,6 +12659,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Oblivion",
+    type: "Movie",
+    year: 2018,
+    rating: 6.3,
+    age: "PG-13",
+    duration: "1h 59m",
+    genres: [
+      "Action",
+      "Adventure",
+      "Fantasy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/s4Qn5LF6OwK4rIifmthIDtbqDSs.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/2e0DTQ6IsY3KI5yPOToAYpA2oMx.jpg",
+    videoUrl: "338970",
+    overview: "Lara Croft, fierce, fearless daughter of missing adventurer, journey to mysterious island search for father, uncover ancient tomb hold dark secret. Face deadly trial, ruthless enemy, discover true strength inside herself.",
+    director: "Roar Uthaug",
+    cast: [
+      "Alicia Vikander, Dominic West, Walton Goggins, Daniel Wu, Kristin Scott Thomas"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 

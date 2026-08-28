@@ -2953,6 +2953,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://cinewatch.watch/?v=oblivion</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://cinewatch.watch/?v=lanterns</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
