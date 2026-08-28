@@ -67,13 +67,30 @@ function formatRating(rating) {
 }
 
 function getLocalizedOverview(item) {
-  if (!item) return "";
+  if (!item) return { text: "", isKurdish: false };
   const cookies = document.cookie || '';
   const isSorani = cookies.includes('googtrans=/en/ckb');
   if (isSorani && item.overviewKurdish) {
-    return item.overviewKurdish;
+    return { text: item.overviewKurdish, isKurdish: true };
   }
-  return item.overview || "";
+  return { text: item.overview || "", isKurdish: false };
+}
+
+function setOverviewElement(el, info) {
+  if (!el) return;
+  if (info && info.text) {
+    el.textContent = info.text;
+    el.classList.remove("hidden");
+    if (info.isKurdish) {
+      el.classList.add("notranslate");
+      el.setAttribute("translate", "no");
+    } else {
+      el.classList.remove("notranslate");
+      el.removeAttribute("translate");
+    }
+  } else {
+    el.classList.add("hidden");
+  }
 }
 
 async function loadMediaFromAPI() {
@@ -467,7 +484,7 @@ function setupHeroBanner() {
                 <span class="meta-year">${movie.year}</span>
                 ${genresList ? `<span class="meta-dot">•</span><span class="meta-genres-inline">${genresList}</span>` : ""}
             </div>
-            <p class="hero-overview">${getLocalizedOverview(movie)}</p>
+            <p class="hero-overview ${getLocalizedOverview(movie).isKurdish ? 'notranslate' : ''}" translate="${getLocalizedOverview(movie).isKurdish ? 'no' : 'yes'}">${getLocalizedOverview(movie).text}</p>
             <div class="hero-actions">
                 <button class="btn-hero-play notranslate" translate="no" onclick="openVideoPlayer('${movie.id}')">
                     <ion-icon name="play" style="font-size: 1.15em; vertical-align: -1px; margin-right: 4px;"></ion-icon> ${playText}
@@ -1759,7 +1776,7 @@ function openDetailsModal(movieId) {
       document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &middot; ");
     }
 
-    document.getElementById("detailsOverview").textContent = getLocalizedOverview(movie);
+    setOverviewElement(document.getElementById("detailsOverview"), getLocalizedOverview(movie));
 
     const castContainer = document.getElementById("detailsCastContainer");
     const castText = document.getElementById("detailsCastText");
@@ -1905,7 +1922,7 @@ function openDetailsModal(movieId) {
           const resolvedUrl = getEpisodeUrl(ep, seasonData);
           const thumb = ep.thumbnail || movie.backdrop || movie.poster || "";
           const duration = ep.duration || "";
-          const overview = getLocalizedOverview(ep);
+          const overviewInfo = getLocalizedOverview(ep);
           return `
         <div class="episode-row ${resolvedUrl ? "" : "episode-unavailable"}" 
              data-video="${resolvedUrl}" 
@@ -1924,7 +1941,7 @@ function openDetailsModal(movieId) {
               <span class="ep-row-title notranslate" translate="no">${ep.title}</span>
               ${duration ? `<span class="ep-row-duration">${duration}</span>` : ""}
             </div>
-            ${overview ? `<p class="ep-row-overview">${overview}</p>` : ""}
+            ${overview ? `<p class="ep-row-overview ${overviewInfo.isKurdish ? 'notranslate' : ''}" translate="${overviewInfo.isKurdish ? 'no' : 'yes'}">${overviewInfo.text}</p>` : ""}
           </div>
           ${resolvedUrl ? `` : `<span class="episode-soon">Soon</span>`}
         </div>
@@ -2122,10 +2139,9 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
       const seasonData = parentMovie.seasons?.find(s => s.season === epData.season);
       return seasonData?.episodes?.find(e => e.episode === epData.episode);
     })() : null;
-    const overview = getLocalizedOverview(epObj) || getLocalizedOverview(parentMovie);
-    if (overview) {
-      overviewEl.textContent = overview;
-      overviewEl.classList.remove("hidden");
+    const overviewInfo = getLocalizedOverview(epObj).text ? getLocalizedOverview(epObj) : getLocalizedOverview(parentMovie);
+    setOverviewElement(overviewEl, overviewInfo);
+    if (overviewInfo.text) {
     } else {
       overviewEl.classList.add("hidden");
     }
@@ -2318,13 +2334,8 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
   if (title) title.textContent = movie.title;
 
   if (overviewEl) {
-    const locOverview = getLocalizedOverview(movie);
-    if (locOverview) {
-      overviewEl.textContent = locOverview;
-      overviewEl.classList.remove("hidden");
-    } else {
-      overviewEl.classList.add("hidden");
-    }
+    const info = getLocalizedOverview(movie);
+    setOverviewElement(overviewEl, info);
   }
 
   // ── Hide TV-only buttons ──
