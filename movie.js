@@ -2318,8 +2318,9 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
   if (title) title.textContent = movie.title;
 
   if (overviewEl) {
-    if (movie.overview) {
-      overviewEl.textContent = movie.overview;
+    const locOverview = getLocalizedOverview(movie);
+    if (locOverview) {
+      overviewEl.textContent = locOverview;
       overviewEl.classList.remove("hidden");
     } else {
       overviewEl.classList.add("hidden");
