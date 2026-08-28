@@ -1,4 +1,4 @@
-﻿// CineWatch — Movies Data
+// CineWatch — Movies Data
 // Edit this file to add, remove, or reorder movies.
 // Push to GitHub (or save — auto-sync will handle it) for changes to go live.
 
@@ -17,7 +17,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xTZuh9ziUjIyHBWO9OvqNIPqVWe.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/po0uFYwWNByHQzHLCVJ6FetkN4M.jpg",
     videoUrl: "1744462",
-    overview: "Jason, Lucia team up in sunny, dangerous state of Leonida, easy score gone wrong drag them into criminal conspiracy stretch across whole region. Now must rely on each other, survive underworld of Vice City to make it out alive.",
+    overview: "جەیسن و لوسیا لە سەرەتاوە دەیانزانی هەلومەرج لە دژیانە. کارێکی سادە کە بۆ دزین بڕیار درابوو بە خراپی کۆتایی هات، ئەوانیش خۆیان بینییەوە لەناو تاریکترین بەشی ئەو شوێنەی کە هەمووکات وەک خۆشترین شوێن ناسراوە بوو لە ئەمریکا — گیریان خواردووە لە ناو تۆڕێکی تاوانی قووڵ و ترسناک کە بە درێژایی هەموو ویلایەتی لیۆنیدا دەگرێتەوە، ئێستاش پێویستیان بە یەکتری هەیە زیاتر لە هەر کاتێکی تر بۆ ئەوەی بتوانن زیندوو بمێننەوە.",
     director: "Rockstar Games",
     trending: true,
     featured: true,
