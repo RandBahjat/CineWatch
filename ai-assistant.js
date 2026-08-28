@@ -323,13 +323,13 @@ ${catalogData}
 
     const requestPayload = {
       system_instruction: {
-        parts: [{ text: getSystemInstruction() }],
+        parts: [{ text: getSystemInstruction(text) }],
       },
       contents: conversationHistory,
       generationConfig: {
-        temperature: 0.7,
+        temperature: 0.4,
         topP: 0.95,
-        maxOutputTokens: 1000,
+        maxOutputTokens: 1600,
       },
     };
 
