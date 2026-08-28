@@ -12600,7 +12600,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/2e0DTQ6IsY3KI5yPOToAYpA2oMx.jpg",
     videoUrl: "338970",
     overview: "Lara Croft, fierce, fearless daughter of missing adventurer, journey to mysterious island search for father, uncover ancient tomb hold dark secret. Face deadly trial, ruthless enemy, discover true strength inside herself.",
-    director: "Justin Kurzel",
+    director: "Roar Uthaug",
     cast: [
       "Michael Fassbender, Marion Cotillard, Jeremy Irons, Brendan Gleeson, Ariane Labed"
     ],
