@@ -1,12 +1,16 @@
 /**
  * CineWatch AI Movie Assistant
- * Powered by Google Gemini 3.6 Flash
+ * Powered by Google Gemini 3.7 Flash
  */
 
 (function () {
   const GEMINI_API_KEY = "AQ.Ab8RN6JsqKWFNQOYBdJtcu69XZaGpchEQI7qBAJZkChPwxL7AA";
-  const GEMINI_MODEL = "gemini-3.6-flash";
-  const API_ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
+  const PRIMARY_MODEL = "gemini-3.7-flash";
+  const FALLBACK_MODEL = "gemini-3.6-flash";
+
+  function getApiEndpoint(model) {
+    return `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`;
+  }
 
   // In-memory conversation history
   let conversationHistory = [];
