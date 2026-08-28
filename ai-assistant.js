@@ -38,11 +38,19 @@
   }
 
   function getUserAccountName() {
+    let fullName = null;
     if (typeof state !== "undefined" && state?.user?.name) {
-      return state.user.name.trim();
+      fullName = state.user.name.trim();
+    } else if (typeof state !== "undefined" && state?.user?.username) {
+      fullName = state.user.username.trim();
+    } else if (typeof state !== "undefined" && state?.user?.email) {
+      fullName = state.user.email.split('@')[0];
     }
-    if (typeof state !== "undefined" && state?.user?.username) {
-      return state.user.username.trim();
+    if (fullName) {
+      // Extract only the first name (e.g., "Rand" from "Rand Bahjat" or "Rand_Bahjat")
+      const cleaned = fullName.replace(/[_\-.]+/g, ' ').trim();
+      const firstName = cleaned.split(/\s+/)[0];
+      return firstName.charAt(0).toUpperCase() + firstName.slice(1);
     }
     return null;
   }
@@ -53,7 +61,7 @@
     const userName = getUserAccountName();
 
     return `You are CineWatch AI, a friendly, ultra-knowledgeable, and modern movie, TV series, and anime assistant on the streaming and movie tracking site CineWatch.
-${userName ? `The current logged-in user's name is "${userName}". Greet or address them warmly by their name when appropriate.` : ""}
+${userName ? `The current logged-in user's first name is "${userName}". Address and greet them warmly by their first name (${userName}) when appropriate.` : ""}
 
 Your capabilities:
 1. Provide personalized movie, series, and anime recommendations based on user mood, plot tropes, genres, actors, directors, or similar titles.
