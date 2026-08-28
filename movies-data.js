@@ -12602,7 +12602,7 @@ window._MOVIES_DATA = [
     overview: "Lara Croft, fierce, fearless daughter of missing adventurer, journey to mysterious island search for father, uncover ancient tomb hold dark secret. Face deadly trial, ruthless enemy, discover true strength inside herself.",
     director: "Roar Uthaug",
     cast: [
-      "Michael Fassbender, Marion Cotillard, Jeremy Irons, Brendan Gleeson, Ariane Labed"
+      "Alicia Vikander, Dominic West, Walton Goggins, Daniel Wu, Kristin Scott Thomas"
     ],
     trending: false,
     featured: false,
