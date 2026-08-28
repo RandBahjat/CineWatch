@@ -1774,7 +1774,7 @@ function openDetailsModal(movieId) {
       document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &middot; ");
     }
 
-    setOverviewElement(document.getElementById("detailsOverview"), getLocalizedOverview(movie));
+    document.getElementById("detailsOverview").textContent = movie.overview;
 
     const castContainer = document.getElementById("detailsCastContainer");
     const castText = document.getElementById("detailsCastText");
@@ -1851,208 +1851,13 @@ function openDetailsModal(movieId) {
       const limited = similarMovies.slice(0, 12);
       if (limited.length > 0) {
         similarsSection.classList.remove("hidden");
-        similarsGrid.innerHTML = limited.map(m => createMovieCardHTML(m)).join("");
+        similarsGrid.innerHTML = limited.map(createMovieCardHTML).join("");
       } else {
         similarsSection.classList.add("hidden");
       }
     }
 
-    // ── TV Show: show season/episode picker ──────────────────────────────────
-    const tvSection = document.getElementById("tvShowSection");
-    const playBtn = document.getElementById("detailsPlayBtn");
-
-    if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
-      tvSection.classList.remove("hidden");
-
-      const seasonSelect = document.getElementById("seasonSelect");
-      const episodeGrid = document.getElementById("episodeGrid");
-      const customSeasonSelect = document.getElementById("customSeasonSelect");
-      const seasonSelectTrigger = document.getElementById("seasonSelectTrigger");
-      const seasonSelectOptions = document.getElementById("seasonSelectOptions");
-
-      // Populate custom season dropdown
-      seasonSelectOptions.innerHTML = movie.seasons
-        .map((s) => `<div class="custom-option" data-value="${s.season}">Season ${s.season}</div>`)
-        .join("");
-
-      if (movie.seasons.length > 0) {
-        const initialSeason = movie.seasons[0].season;
-        seasonSelect.value = initialSeason;
-        seasonSelectTrigger.querySelector("span").textContent = `Season ${initialSeason}`;
-        seasonSelectOptions.querySelector('.custom-option').classList.add('selected');
-      }
-
-      // Dropdown toggle logic
-      seasonSelectTrigger.onclick = (e) => {
-        e.stopPropagation();
-        customSeasonSelect.classList.toggle("open");
-      };
-
-      document.addEventListener("click", () => {
-        if (customSeasonSelect) customSeasonSelect.classList.remove("open");
-      });
-
-      function getEpisodeUrl(ep, seasonData) {
-        if (ep.videoUrl) return ep.videoUrl;
-        // We return a special template string so openVideoPlayerWithUrl knows it's a TV embed that can be switched
-        const mediaId = movie.cinesrcId || movie.videoUrl;
-        if (mediaId) {
-          const absEp = ep.absoluteEpisode || "";
-          const aniId = movie.anilistId || "";
-          return `tv_embed:${mediaId}:${seasonData.season}:${ep.episode}:${absEp}:${aniId}`;
-        }
-        return "";
-      }
-
-      function renderEpisodes(seasonNum, filter = "") {
-        const seasonData = movie.seasons.find((s) => s.season === parseInt(seasonNum));
-        if (!seasonData) return;
-
-        let filtered = filter
-          ? seasonData.episodes.filter(ep => ep.title.toLowerCase().includes(filter.toLowerCase()))
-          : [...seasonData.episodes];
-
-        if (state.episodeSortOrder === "desc") {
-          filtered.reverse();
-        }
-
-        episodeGrid.innerHTML = filtered.map((ep) => {
-          const resolvedUrl = getEpisodeUrl(ep, seasonData);
-    postBtn.innerHTML = 'Post Comment';
-  }
-};
-
-function openDetailsModal(movieId) {
-  const movie = MOVIES.find((m) => m.id === movieId);
-  if (!movie) return;
-
-  // We are entering a new view, so we should keep track of where we came from if we aren't already in details
-  if (state.activeView !== "details") {
-    state.previousView = state.activeView;
-  }
-
-  // Update URL for deep-linking and sharing
-  window.history.replaceState(null, '', '?v=' + movieId);
-
-  const mainContent = document.getElementById("mainContent");
-  const heroBanner = document.getElementById("heroBanner");
-  const detailsSection = document.getElementById("detailsSection");
-
-  const toFadeOut = [];
-  if (state.activeView === "details") {
-    toFadeOut.push(detailsSection);
-  } else {
-    if (mainContent) toFadeOut.push(mainContent);
-    if (heroBanner && !heroBanner.classList.contains("hidden")) toFadeOut.push(heroBanner);
-  }
-
-  toFadeOut.forEach(el => {
-    el.style.transition = "opacity 0.3s ease-in-out";
-    el.style.opacity = "0";
-  });
-
-  setTimeout(() => {
-    window.scrollTo(0, 0);
-    if (detailsSection) detailsSection.scrollTo(0, 0);
-
-    document.getElementById("detailsBg").style.backgroundImage = `url('${movie.backdrop || movie.poster}')`;
-    document.getElementById("detailsTitle").textContent = movie.title;
-    document.getElementById("detailsRating").textContent = formatRating(movie.rating);
-    document.getElementById("detailsYear").textContent = movie.year;
-    if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
-      document.getElementById("detailsDuration").textContent = `${movie.seasons.length} Season${movie.seasons.length > 1 ? 's' : ''}`;
-    } else {
-      document.getElementById("detailsDuration").textContent = movie.duration;
-    }
-
-    if (document.getElementById("detailsGenres")) {
-      document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &middot; ");
-    }
-
-    setOverviewElement(document.getElementById("detailsOverview"), getLocalizedOverview(movie));
-
-    const castContainer = document.getElementById("detailsCastContainer");
-    const castText = document.getElementById("detailsCastText");
-    const dirContainer = document.getElementById("detailsDirectorContainer");
-    const dirText = document.getElementById("detailsDirectorText");
-
-    if (dirContainer && dirText) {
-      if (movie.director) {
-        dirText.textContent = movie.director;
-        dirContainer.classList.remove("hidden");
-      } else {
-        dirContainer.classList.add("hidden");
-      }
-    }
-
-    if (castContainer && castText) {
-      if (movie.cast && movie.cast.length > 0) {
-        castText.textContent = movie.cast.join(", ");
-        castContainer.classList.remove("hidden");
-      } else {
-        castContainer.classList.add("hidden");
-      }
-    }
-
-    const favCheckbox = document.getElementById("detailsFavCheckbox");
-    const favBtn = document.getElementById("detailsFavBtn");
-    const fav = isFavorite(movie.id);
-
-    // Sync checkbox state with actual favorites state
-    favCheckbox.checked = fav;
-
-    favBtn.onclick = (e) => {
-      e.preventDefault(); // Prevent default label click behavior
-      const isNowFav = toggleFavorite(movie.id);
-      favCheckbox.checked = isNowFav;
-    };
-
-    const reportBtn = document.getElementById("detailsReportBtn");
-    if (reportBtn) {
-      reportBtn.onclick = () => {
-        const reportModal = document.getElementById("reportModal");
-        if (reportModal) {
-          reportModal.classList.remove("hidden");
-          // Auto-fill the subject line with the current movie/series title
-          const subjectInput = document.getElementById("reportSubject");
-          if (subjectInput) {
-            subjectInput.value = `Issue with: ${movie.title}`;
-          }
-        }
-      };
-    }
-
-    // Initialize interactive rating system
-    if (typeof initializeRatingSystem === 'function') {
-      initializeRatingSystem(movie.id);
-    }
-
-    // Render Comments Section
-    renderCommentsSection(movie.id);
-
-    // Generate You May Like Section
-    const similarsGrid = document.getElementById("detailsSimilarsGrid");
-    const similarsSection = document.getElementById("detailsSimilarsSection");
-    if (similarsGrid && similarsSection) {
-      let similarMovies = MOVIES.filter(m => m.id !== movie.id)
-        .map(m => {
-          const matchScore = m.genres.filter(g => movie.genres.includes(g)).length;
-          return { movie: m, matchScore };
-        })
-        .filter(m => m.matchScore > 0)
-        .sort((a, b) => b.matchScore !== a.matchScore ? b.matchScore - a.matchScore : 0.5 - Math.random())
-        .map(m => m.movie);
-
-      const limited = similarMovies.slice(0, 12);
-      if (limited.length > 0) {
-        similarsSection.classList.remove("hidden");
-        similarsGrid.innerHTML = limited.map(m => createMovieCardHTML(m)).join("");
-      } else {
-        similarsSection.classList.add("hidden");
-      }
-    }
-
-    // ── TV Show: show season/episode picker ──────────────────────────────────
+    // ΓöÇΓöÇ TV Show: show season/episode picker ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
     const tvSection = document.getElementById("tvShowSection");
     const playBtn = document.getElementById("detailsPlayBtn");
 
@@ -2115,8 +1920,127 @@ function openDetailsModal(movieId) {
           const resolvedUrl = getEpisodeUrl(ep, seasonData);
           const thumb = ep.thumbnail || movie.backdrop || movie.poster || "";
           const duration = ep.duration || "";
-          const overviewInfo = getLocalizedOverview(ep);
+          const overview = ep.overview || "";
+          return `
+        <div class="episode-row ${resolvedUrl ? "" : "episode-unavailable"}" 
+             data-video="${resolvedUrl}" 
+             data-title="${movie.title} ΓÇö S${seasonData.season}E${ep.episode}: ${ep.title}"
+             data-episode="${ep.episode}"
+             title="${resolvedUrl ? "Click to watch" : "Not available yet"}">
+          <div class="episode-row-thumb">
+            ${thumb ? `<img src="${thumb}" alt="${ep.title}" loading="lazy" class="ep-thumb-img">` : ""}
+            <div class="ep-thumb-overlay">
+              <span class="ep-num-badge">${ep.episode}</span>
+              ${resolvedUrl ? '<div class="ep-play-circle">Γû╢</div>' : ""}
+            </div>
+          </div>
+          <div class="episode-row-info">
+            <div class="ep-row-top">
+              <span class="ep-row-title notranslate" translate="no">${ep.title}</span>
+              ${duration ? `<span class="ep-row-duration">${duration}</span>` : ""}
+            </div>
+            ${overview ? `<p class="ep-row-overview">${overview}</p>` : ""}
+          </div>
+          ${resolvedUrl ? `` : `<span class="episode-soon">Soon</span>`}
+        </div>
+      `;
+        }).join("");
+
+        // Click to play episode
+        episodeGrid.querySelectorAll(".episode-row:not(.episode-unavailable)").forEach((card) => {
+          const thumb = card.querySelector('.episode-row-thumb');
+          if (thumb) {
+            thumb.style.cursor = 'pointer';
+            card.style.cursor = 'default';
+            thumb.onclick = (e) => {
+              e.stopPropagation();
+              const videoUrl = card.dataset.video;
+              const epTitle = card.dataset.title;
+              const epNum = parseInt(card.dataset.episode);
+              openVideoPlayerWithUrl(videoUrl, epTitle, movie.id, { season: seasonData.season, episode: epNum });
+            };
+          }
+        });
+
+
       }
+
+      renderEpisodes(seasonSelect.value);
+
+      // Handle custom option click
+      seasonSelectOptions.querySelectorAll(".custom-option").forEach((opt) => {
+        opt.onclick = (e) => {
+          e.stopPropagation();
+          const val = opt.getAttribute("data-value");
+          seasonSelect.value = val;
+          seasonSelectTrigger.querySelector("span").textContent = `Season ${val}`;
+
+          seasonSelectOptions.querySelectorAll(".custom-option").forEach(o => o.classList.remove("selected"));
+          opt.classList.add("selected");
+
+          customSeasonSelect.classList.remove("open");
+          renderEpisodes(val);
+
+          const epSearch = document.getElementById("episodeSearch");
+          if (epSearch && epSearch.value) {
+            renderEpisodes(val, epSearch.value);
+          }
+        };
+      });
+
+      // Search filter
+      const epSearch = document.getElementById("episodeSearch");
+      if (epSearch) {
+        epSearch.value = "";
+        epSearch.oninput = () => renderEpisodes(seasonSelect.value, epSearch.value);
+      }
+
+      // Sort button
+      const sortBtn = document.getElementById("episodeSortBtn");
+      if (sortBtn) {
+        sortBtn.onclick = () => {
+          state.episodeSortOrder = state.episodeSortOrder === "desc" ? "asc" : "desc";
+          sortBtn.querySelector("span").textContent = state.episodeSortOrder === "desc" ? "Z-A" : "A-Z";
+          renderEpisodes(seasonSelect.value, epSearch ? epSearch.value : "");
+        };
+      }
+
+      // Play button plays first available episode of the selected season
+      playBtn.onclick = () => {
+        const seasonData = movie.seasons.find((s) => s.season === parseInt(seasonSelect.value));
+        if (!seasonData) return;
+        const firstEp = seasonData.episodes[0];
+        if (!firstEp) return;
+        const epUrl = getEpisodeUrl(firstEp, seasonData);
+        if (epUrl) {
+          const epTitle = `${movie.title} ΓÇö S${seasonData.season}E${firstEp.episode}: ${firstEp.title}`;
+          openVideoPlayerWithUrl(epUrl, epTitle, movie.id);
+        }
+      };
+
+    } else {
+      // Movie ΓÇö hide TV section
+      tvSection.classList.add("hidden");
+      playBtn.onclick = () => {
+        openVideoPlayer(movie.id);
+      };
+    }
+
+    // Similars Button Logic
+    const similarsBtn = document.getElementById("detailsSimilarsBtn");
+    const similarsText = document.getElementById("detailsSimilarsText");
+    if (similarsText) {
+      const isCkb = document.cookie.includes("googtrans=/en/ckb");
+      const isAr = document.cookie.includes("googtrans=/en/ar");
+      similarsText.textContent = isCkb ? "هاوشێوە" : (isAr ? "أعمال مشابهة" : "Similars");
+    }
+    if (similarsBtn) {
+      similarsBtn.onclick = () => {
+        const section = document.getElementById("detailsSimilarsSection");
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      };
     }
 
     // Switch to details page view
