@@ -3027,53 +3027,15 @@ function bindEventListeners() {
     });
   }
 
-  // Clear Recents
-  if (clearRecentBtn) {
-    clearRecentBtn.onclick = () => {
-      localStorage.removeItem("recentSearches");
-      renderRecentSearches();
-    };
-  }
-
-  // Click on a recent item
-  if (searchRecentList) {
-    searchRecentList.onclick = (e) => {
-      const item = e.target.closest(".search-recent-item");
-      if (item) {
-        const query = item.dataset.query;
-        searchInput.value = query;
-        searchInput.dispatchEvent(new Event('input'));
-      }
-    };
-  }
-
-  // Click on a Quick Trending Tag Chip
-  const searchQuickTags = document.getElementById("searchQuickTags");
-  if (searchQuickTags) {
-    searchQuickTags.onclick = (e) => {
-      const chip = e.target.closest(".search-tag-chip");
-      if (chip && searchInput) {
-        const query = chip.dataset.search;
-        searchInput.value = query;
-        searchInput.dispatchEvent(new Event('input'));
-      }
-    };
-  }
-
-  // Close on Escape key
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !searchModal.classList.contains("hidden")) {
-      closeSearchModal();
-    }
-  });
-
-  // Live Search
-  if (searchInput) {
     searchInput.oninput = (e) => {
       const query = e.target.value.trim().toLowerCase();
+      const exploreSec = document.getElementById("searchExploreSection");
+
       if (query.length > 0) {
         searchClearBtn.classList.remove("hidden");
-        searchRecentSection.classList.add("hidden"); // hide recents when typing
+        if (searchRecentSection) searchRecentSection.classList.add("hidden");
+        if (exploreSec) exploreSec.classList.add("hidden");
+
         const matches = fuzzySearch(query);
         if (matches.length > 0) {
           searchDropdown.innerHTML = matches
