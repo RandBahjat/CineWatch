@@ -7013,6 +7013,10 @@ body {
 }
 
 /* Floating AI Button */
+.floating-ai-btn.hidden {
+  display: none !important;
+}
+
 .floating-ai-btn {
   position: fixed;
   bottom: 85px;
