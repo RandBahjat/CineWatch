@@ -12459,7 +12459,7 @@ window._MOVIES_DATA = [
     year: 2025,
     rating: 7.5,
     age: "R",
-    duration: "1h",
+    duration: "2h 29m",
     genres: [
       "Action",
       "Animation",
