@@ -1779,65 +1779,6 @@ window.deleteComment = async function (commentId, movieId) {
 window.submitComment = async function (movieId) {
   const textInput = document.getElementById('newCommentText');
   const postBtn = document.getElementById('postCommentBtn');
-  const content = textInput ? textInput.value.trim() : '';
-
-  if (!content) return;
-
-  const cookies = document.cookie || '';
-  const isCkb = cookies.includes('googtrans=/en/ckb');
-  const isAr = cookies.includes('googtrans=/en/ar');
-  const postingText = isCkb ? '...ناردن' : (isAr ? '...جارٍ الإرسال' : 'Posting...');
-  const postBtnText = isCkb ? 'ناردنی لێدوان' : (isAr ? 'إرسال التعليق' : 'Post Comment');
-
-  if (postBtn) {
-    postBtn.disabled = true;
-    postBtn.innerHTML = postingText;
-  }
-
-  const { success, error } = await window.CW_API.postComment(movieId, content);
-
-  if (success) {
-    if (textInput) textInput.value = '';
-    // Re-render to show the new comment
-    await renderCommentsSection(movieId);
-  } else {
-    alert((isCkb ? 'ناردن سەرکەوتوو نەبوو: ' : (isAr ? 'فشل النشر: ' : 'Failed to post comment: ')) + (error || 'Unknown error'));
-  }
-
-  if (postBtn) {
-    postBtn.disabled = false;
-    postBtn.innerHTML = 'Post Comment';
-  }
-};
-
-function openDetailsModal(movieId) {
-  const movie = MOVIES.find((m) => m.id === movieId);
-  if (!movie) return;
-
-  // We are entering a new view, so we should keep track of where we came from if we aren't already in details
-    if (mainContent) toFadeOut.push(mainContent);
-    if (heroBanner && !heroBanner.classList.contains("hidden")) toFadeOut.push(heroBanner);
-  }
-
-  toFadeOut.forEach(el => {
-    el.style.transition = "opacity 0.3s ease-in-out";
-    el.style.opacity = "0";
-  });
-
-  setTimeout(() => {
-    window.scrollTo(0, 0);
-    if (detailsSection) detailsSection.scrollTo(0, 0);
-    document.getElementById("detailsBg").style.backgroundImage = `url('${movie.backdrop || movie.poster}')`;
-    const titleInfo = getLocalizedTitle(movie);
-    const titleEl = document.getElementById("detailsTitle");
-    document.getElementById("detailsRating").textContent = formatRating(movie.rating);
-    document.getElementById("detailsYear").textContent = formatNumber(movie.year);
-    const isCkb = (document.cookie || '').includes('googtrans=/en/ckb');
-    const isAr = (document.cookie || '').includes('googtrans=/en/ar');
-    if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
-      const sCount = formatNumber(movie.seasons.length);
-      document.getElementById("detailsDuration").textContent = isCkb ? `${sCount} وەرز` : (isAr ? `${movie.seasons.length} مواسم` : `${movie.seasons.length} Season${movie.seasons.length > 1 ? 's' : ''}`);
-    } else {
       document.getElementById("detailsDuration").textContent = movie.duration;
     }
     if (titleEl) {
