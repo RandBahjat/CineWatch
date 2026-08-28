@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-global.window = { location: { hash: '' } };
+global.window = { location: { hash: '' }, addEventListener: () => {} };
 global.document = {
     getElementById: () => ({ style: {}, classList: { toggle: () => {} }, addEventListener: () => {} }),
     querySelectorAll: () => ([]),
@@ -11,6 +11,7 @@ global.document = {
 global.performance = { now: () => 0 };
 global.localStorage = { getItem: () => null, setItem: () => {} };
 global.setTimeout = (cb) => cb();
+global.URLSearchParams = class { get() { return null; } };
 
 try {
     eval(fs.readFileSync('movies-data.js', 'utf8'));
