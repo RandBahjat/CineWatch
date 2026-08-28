@@ -2800,7 +2800,7 @@ window._MOVIES_DATA = [
       "Comedy",
       "Sci-Fi"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/rJHC1RUORuUhtfNb4Npclx0xnOf.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/wFjboE0aFZNbVOF05fzrka9Fqyx.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/yuvFyfOAO2UB5YP0HKgu8imtJul.jpg",
     videoUrl: "335787",
     overview: "Young street-smart thief Nathan Drake team up with seasoned treasure hunter Victor Sullivan, chase legendary lost gold once belong to Magellan's crew. Global adventure, deadly rival, ancient puzzle push them race against time, dangerous enemy.",
