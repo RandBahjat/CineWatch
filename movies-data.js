@@ -2766,7 +2766,7 @@ window._MOVIES_DATA = [
   {
     title: "Uncharted",
     type: "Movie",
-    year: 2005,
+    year: 2022,
     rating: 6.5,
     age: "PG-13",
     duration: "2h",
