@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260822_4841">
+    <link rel="stylesheet" href="movie.css?v=20260822_4842">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows ΓÇö all in one simple, easy-to-use site.</title>
@@ -26,9 +26,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_3807" defer></script>
-    <script src="series-data.js?v=20260818_3807" defer></script>
-    <script src="anime-data.js?v=20260818_3807" defer></script>
+    <script src="movies-data.js?v=20260818_3808" defer></script>
+    <script src="series-data.js?v=20260818_3808" defer></script>
+    <script src="anime-data.js?v=20260818_3808" defer></script>
     <script src="movie.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1219,19 +1219,6 @@
                 document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + window.location.hostname;
             } else {
                 document.cookie = "googtrans=/en/" + langCode + "; path=/;";
-                document.cookie = "googtrans=/en/" + langCode + "; path=/; domain=" + window.location.hostname;
-            }
-            window.location.reload();
-        }
-
-        // Custom Dropdown Logic
-        document.addEventListener('DOMContentLoaded', () => {
-            // ΓöÇΓöÇ Language Toast (Chrome-style) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
-            (function() {
-                // Show once per day (24h cooldown)
-                const lastShown = localStorage.getItem('langPromptShownAt');
-                const ONE_DAY = 24 * 60 * 60 * 1000;
-                if (lastShown && (Date.now() - parseInt(lastShown)) < ONE_DAY) return;
 
                 const LANG_MAP = {
                     ckb: { label: '\u0643\u0648\u0631\u062F\u06CC',    cookie: 'googtrans=/en/ckb' },
