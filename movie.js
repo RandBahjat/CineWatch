@@ -3012,31 +3012,9 @@ function bindEventListeners() {
         }
       };
     });
-  } if (searchModalBackdrop) searchModalBackdrop.onclick = closeSearchModal;
-
-    };
-
-    searchFilterDropdown.querySelectorAll(".filter-option").forEach(opt => {
-      opt.onclick = () => {
-        searchFilterDropdown.querySelectorAll(".filter-option").forEach(o => o.classList.remove("active"));
-        opt.classList.add("active");
-        searchFilterBtn.innerHTML = `<span id="filterBtnText" class="notranslate" translate="no">${opt.textContent}</span> <ion-icon name="chevron-down-outline"></ion-icon>`;
-        searchFilterDropdown.classList.add("hidden");
-
-        state.searchFilter = opt.dataset.filter;
-
-        if (searchInput && searchInput.value.trim().length > 0) {
-          searchInput.dispatchEvent(new Event('input'));
-        }
-      };
-    });
-
-    document.addEventListener("click", (e) => {
-      if (!searchFilterBtn.contains(e.target) && !searchFilterDropdown.contains(e.target)) {
-        searchFilterDropdown.classList.add("hidden");
-      }
-    });
   }
+
+  if (searchModalBackdrop) searchModalBackdrop.onclick = closeSearchModal;
 
   // Clear Recents
   if (clearRecentBtn) {
