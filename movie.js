@@ -508,17 +508,18 @@ function setupHeroBanner() {
     const backdropUrl = movie.backdrop || movie.poster || "";
     const bgStyle = backdropUrl ? `style="background-image: url('${backdropUrl}')"` : "";
     const genresList = (movie.genres || []).slice(0, 3).map(translateGenre).join(" • ");
+    const titleInfo = getLocalizedTitle(movie);
 
     return `
       <div class="hero-slide">
         <div class="hero-bg-image" ${bgStyle}></div>
         <div class="hero-bg-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title notranslate" translate="no">${movie.title}</h1>
+            <h1 class="hero-title ${titleInfo.isKurdish ? 'notranslate' : ''}" ${titleInfo.isKurdish ? 'translate="no"' : ''}>${titleInfo.text}</h1>
             <div class="hero-meta">
                 <span class="meta-rating"><span class="star-icon">★</span> ${formatRating(movie.rating)}</span>
                 <span class="meta-dot">•</span>
-                <span class="meta-year">${movie.year}</span>
+                <span class="meta-year">${formatNumber(movie.year)}</span>
                 ${genresList ? `<span class="meta-dot">•</span><span class="meta-genres-inline">${genresList}</span>` : ""}
             </div>
             <p class="hero-overview ${getLocalizedOverview(movie).isKurdish ? 'notranslate' : ''}" translate="${getLocalizedOverview(movie).isKurdish ? 'no' : 'yes'}">${getLocalizedOverview(movie).text}</p>
