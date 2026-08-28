@@ -3047,6 +3047,19 @@ function bindEventListeners() {
     };
   }
 
+  // Click on a Quick Trending Tag Chip
+  const searchQuickTags = document.getElementById("searchQuickTags");
+  if (searchQuickTags) {
+    searchQuickTags.onclick = (e) => {
+      const chip = e.target.closest(".search-tag-chip");
+      if (chip && searchInput) {
+        const query = chip.dataset.search;
+        searchInput.value = query;
+        searchInput.dispatchEvent(new Event('input'));
+      }
+    };
+  }
+
   // Close on Escape key
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && !searchModal.classList.contains("hidden")) {
@@ -3067,7 +3080,6 @@ function bindEventListeners() {
             .slice(0, 15)
             .map(
               (m, i) => `
-            <div class="search-item" data-id="${m.id}" style="animation-delay: ${i * 60}ms">
               <img src="${m.poster}" alt="${m.title}" style="animation-delay: ${i * 60 + 80}ms">
               <div class="search-item-info">
                 <div class="search-item-title notranslate" translate="no">${m.title}</div>
