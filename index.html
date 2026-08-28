@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260829_109">
+    <link rel="stylesheet" href="movie.css?v=20260829_110">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -26,9 +26,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_3983" defer></script>
-    <script src="series-data.js?v=20260818_3983" defer></script>
-    <script src="anime-data.js?v=20260818_3983" defer></script>
+    <script src="movies-data.js?v=20260818_3984" defer></script>
+    <script src="series-data.js?v=20260818_3984" defer></script>
+    <script src="anime-data.js?v=20260818_3984" defer></script>
     <script src="movie.js?v=v25" defer></script>
     <script src="ai-assistant.js?v=v4" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -189,17 +189,13 @@
                 </div>
 
                 <div class="search-header-right">
-                    <div class="search-filter-wrapper" style="position: relative;">
-                        <button class="search-filter-btn" id="searchFilterBtn">
-                            <span id="filterBtnText" class="notranslate" translate="no">All Types</span>
-                            <ion-icon name="chevron-down-outline"></ion-icon>
-                        </button>
-                        <div class="search-filter-dropdown hidden" id="searchFilterDropdown">
-                            <div class="filter-option active" data-filter="all"><span id="filterOptAll" class="notranslate" translate="no">Movies & Series</span></div>
-                            <div class="filter-option" data-filter="movie"><span id="filterOptMovie" class="notranslate" translate="no">Movies Only</span></div>
-                            <div class="filter-option" data-filter="series"><span id="filterOptSeries" class="notranslate" translate="no">Series Only</span></div>
-                        </div>
+                    <!-- Segmented Filter Switcher -->
+                    <div class="search-type-switcher notranslate" translate="no" id="searchTypeSwitcher">
+                        <button class="type-switch-btn active" data-filter="all">All</button>
+                        <button class="type-switch-btn" data-filter="movie">Movies</button>
+                        <button class="type-switch-btn" data-filter="series">Series</button>
                     </div>
+
                     <button class="search-modal-close" id="searchModalClose" title="Close Search">
                         <ion-icon name="close-outline"></ion-icon>
                     </button>
