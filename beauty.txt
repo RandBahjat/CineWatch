@@ -1,0 +1,201 @@
+  {
+    title: "Beauty in Black",
+    type: "TV Show",
+    year: 2024,
+    rating: 7.2,
+    age: "TV-MA",
+    duration: "45m",
+    genres: [
+      "Drama"
+    ],
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/xO1zHtc6wW1Oikp2L97gJcdQ6Y8.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/6K5w17E49tG2O0a9wN8C2D8p8z3.jpg",
+    videoUrl: "246246",
+    overview: "A stripper's fate takes a turn when she crosses paths with the wealthy, dysfunctional family behind a cosmetics dynasty and a devious trafficking scheme.",
+    director: "Tyler Perry",
+    cast: [
+      "Taylor Polidore Williams",
+      "Amber Reign Smith",
+      "Crystle Stewart",
+      "Ricco Ross"
+    ],
+    trending: true,
+    featured: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "Make It Rain"
+          },
+          {
+            episode: 2,
+            title: "A Dance with Daddy"
+          },
+          {
+            episode: 3,
+            title: "The Aftermath"
+          },
+          {
+            episode: 4,
+            title: "A Family Affair"
+          },
+          {
+            episode: 5,
+            title: "Unraveling Threads"
+          },
+          {
+            episode: 6,
+            title: "Bang Bang"
+          },
+          {
+            episode: 7,
+            title: "Even Playing Field"
+          },
+          {
+            episode: 8,
+            title: "Killing Karma"
+          },
+          {
+            episode: 9,
+            title: "Blind Rage"
+          },
+          {
+            episode: 10,
+            title: "Power Struggle"
+          },
+          {
+            episode: 11,
+            title: "Up Against the Wall"
+          },
+          {
+            episode: 12,
+            title: "Hot Seat"
+          },
+          {
+            episode: 13,
+            title: "By Any Means"
+          },
+          {
+            episode: 14,
+            title: "Wild Ride"
+          },
+          {
+            episode: 15,
+            title: "The Lion's Den"
+          },
+          {
+            episode: 16,
+            title: "Now Make It Thunder"
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: "Crowned in Beauty"
+          },
+          {
+            episode: 2,
+            title: "When the Tables Turn"
+          },
+          {
+            episode: 3,
+            title: "Blaze of Beauty"
+          },
+          {
+            episode: 4,
+            title: "The Next Chapter"
+          },
+          {
+            episode: 5,
+            title: "Hunter's Prey"
+          },
+          {
+            episode: 6,
+            title: "The Enemy of My Enemy"
+          },
+          {
+            episode: 7,
+            title: "Gloves Off"
+          },
+          {
+            episode: 8,
+            title: "Hold The Pleasantries"
+          },
+          {
+            episode: 9,
+            title: "Toxic Vibes"
+          },
+          {
+            episode: 10,
+            title: "Playing for Keeps"
+          },
+          {
+            episode: 11,
+            title: "Fed Up"
+          },
+          {
+            episode: 12,
+            title: "Flames of Fury"
+          },
+          {
+            episode: 13,
+            title: "Boom!"
+          },
+          {
+            episode: 14,
+            title: "Your Turn Is Coming"
+          },
+          {
+            episode: 15,
+            title: "The Power of Us"
+          },
+          {
+            episode: 16,
+            title: "Queen's Gambit"
+          }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          {
+            episode: 1,
+            title: "King In Play"
+          },
+          {
+            episode: 2,
+            title: "Gotcha"
+          },
+          {
+            episode: 3,
+            title: "Throne Of Blood"
+          },
+          {
+            episode: 4,
+            title: "A Tender Betrayal"
+          },
+          {
+            episode: 5,
+            title: "Devil In The Details"
+          },
+          {
+            episode: 6,
+            title: "A Pack Of Wolves"
+          },
+          {
+            episode: 7,
+            title: "The Looking Glass"
+          },
+          {
+            episode: 8,
+            title: "Dancing In The Rain"
+          }
+        ]
+      }
+    ]
+  }
