@@ -12663,7 +12663,7 @@ window._MOVIES_DATA = [
     title: "Oblivion",
     type: "Movie",
     year: 2013,
-    rating: 6.3,
+    rating: 7.0,
     age: "PG-13",
     duration: "1h 59m",
     genres: [
