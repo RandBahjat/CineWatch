@@ -23,18 +23,66 @@
     return "en";
   }
 
+  // Search catalog for relevant titles based on user query (actors, directors, genres, keywords)
+  function searchCatalogForQuery(queryText) {
+    if (typeof MOVIES === "undefined" || !Array.isArray(MOVIES) || !queryText) return [];
+    const q = queryText.toLowerCase().trim();
+    const stopWords = new Set([
+      "show", "all", "me", "movie", "movies", "series", "the", "in", "site", "film", "films",
+      "with", "from", "recommend", "of", "a", "an", "for", "list", "give", "can", "you", "tell",
+      "about", "please", "what", "are", "best", "top", "watch", "streaming", "catalog", "is",
+      "were", "was", "any", "good", "new", "old", "some"
+    ]);
+
+    const tokens = q.split(/[^a-zA-Z0-9\u0600-\u06FF]+/).filter((t) => t.length > 1 && !stopWords.has(t));
+
+    const matches = MOVIES.filter((m) => {
+      const title = (m.title || "").toLowerCase();
+      const cast = Array.isArray(m.cast) ? m.cast.join(" ").toLowerCase() : (m.cast || "").toLowerCase();
+      const director = (m.director || "").toLowerCase();
+      const genres = Array.isArray(m.genres) ? m.genres.join(" ").toLowerCase() : (m.genres || "").toLowerCase();
+      const hay = `${title} ${cast} ${director} ${genres}`;
+
+      // Full phrase match in title, cast, or director
+      if (q.length > 2 && (title.includes(q) || cast.includes(q) || director.includes(q))) {
+        return true;
+      }
+      // Multi-token match across all fields
+      if (tokens.length > 0 && tokens.every((tok) => hay.includes(tok))) {
+        return true;
+      }
+      return false;
+    });
+
+    return Array.from(new Set(matches)).slice(0, 50);
+  }
+
   // Get concise catalog summary for Gemini system instruction
-  function getCatalogContext() {
-    if (typeof MOVIES === "undefined" || !Array.isArray(MOVIES)) return [];
-    // Return titles with IDs, rating, genres, type for accurate matching
-    return MOVIES.slice(0, 1500).map((m) => ({
-      id: m.id,
-      title: m.title,
-      type: m.type || (m.seasons ? "TV Show" : "Movie"),
-      year: m.year,
-      rating: m.rating,
-      genres: m.genres,
-    }));
+  function getCatalogContext(currentQuery = "") {
+    if (typeof MOVIES === "undefined" || !Array.isArray(MOVIES)) return "";
+
+    // 1. If there's an active query, get specific relevant matches first
+    const matched = currentQuery ? searchCatalogForQuery(currentQuery) : [];
+    let matchSection = "";
+    if (matched.length > 0) {
+      matchSection = `\n\n*** MATCHING CINEWATCH CATALOG TITLES FOUND FOR THIS QUERY (${matched.length} titles found in site database) ***\n` +
+        matched.map((m) => {
+          const castStr = Array.isArray(m.cast) ? m.cast.slice(0, 6).join(", ") : (m.cast || "");
+          const dirStr = m.director ? ` | Dir: ${m.director}` : "";
+          const genresStr = Array.isArray(m.genres) ? m.genres.slice(0, 3).join(", ") : (m.genres || "");
+          return `• "${m.title}" (${m.year}) | ID: ${m.id} | Rating: ${m.rating} | Type: ${m.type || (m.seasons ? "TV Show" : "Movie")} | Genres: ${genresStr}${dirStr} | Cast: ${castStr}`;
+        }).join("\n") +
+        `\n\nCRITICAL INSTRUCTION FOR QUERY MATCHES: When the user asks to see or list movies/shows for this query (e.g., an actor like Tom Cruise, director, franchise, or genre), you MUST include and list ALL of these matched CineWatch titles in your response and append their exact [[MOVIE_CARD: <id>]] tags so the user sees cards for every single one of them. Do not omit any.`;
+    }
+
+    // 2. High-level general catalog snapshot
+    const generalSnapshot = MOVIES.slice(0, 400).map((m) => {
+      const castStr = Array.isArray(m.cast) ? m.cast.slice(0, 3).join(", ") : (m.cast || "");
+      const dirStr = m.director ? ` | Dir: ${m.director}` : "";
+      return `[ID: ${m.id}] ${m.title} (${m.year}) - ${m.type || (m.seasons ? "TV Show" : "Movie")} - ${m.rating}★ - Cast: ${castStr}${dirStr}`;
+    }).join("\n");
+
+    return `\nGeneral CineWatch Catalog Sample:\n${generalSnapshot}${matchSection}`;
   }
 
   function getUserAccountName() {
@@ -55,9 +103,9 @@
     return null;
   }
 
-  function getSystemInstruction() {
+  function getSystemInstruction(currentQuery = "") {
     const lang = getActiveLang();
-    const catalog = getCatalogContext();
+    const catalogData = getCatalogContext(currentQuery);
     const userName = getUserAccountName();
 
     return `You are CineWatch AI, a friendly, ultra-knowledgeable, and modern movie, TV series, and anime assistant on the streaming and movie tracking site CineWatch.
@@ -65,19 +113,19 @@ ${userName ? `The current logged-in user's first name is "${userName}". Address 
 
 Your capabilities:
 1. Provide personalized movie, series, and anime recommendations based on user mood, plot tropes, genres, actors, directors, or similar titles.
-2. If recommending movies or series that exist in CineWatch's catalog, embed a special card tag on its own line:
+2. If recommending or listing movies/series that exist in CineWatch's catalog, ALWAYS embed a special card tag on its own line for every title:
    [[MOVIE_CARD: <id>]]
-   where <id> matches the exact CineWatch ID.
-3. Keep responses concise, formatted with clean bullet points and bold titles. Avoid excessive or unnecessary emojis.
-4. Language instruction:
+   where <id> matches the exact CineWatch ID provided in the catalog context.
+3. Accuracy: When the user asks to see all movies from a specific actor (e.g., Tom Cruise, Leonardo DiCaprio, Keanu Reeves), director (e.g., Christopher Nolan), or franchise, consult the MATCHING CINEWATCH CATALOG TITLES list and list ALL of them.
+4. Keep responses concise, formatted with clean bullet points and bold titles. Avoid excessive or unnecessary emojis.
+5. Language instruction:
    - If the user writes in Kurdish (سۆرانی) or current language is 'ckb', respond naturally in Kurdish Sorani.
    - If the user writes in Arabic or current language is 'ar', respond in fluent Arabic.
    - If the user writes in English, respond in friendly English.
    - Always match the user's conversational language.
-5. Do NOT make up fake URLs. Only use the [[MOVIE_CARD: <id>]] format for site titles.
+6. Do NOT make up fake URLs. Only use the [[MOVIE_CARD: <id>]] format for site titles.
 
-CineWatch Top Catalog Reference (ID | Title | Type | Year | Rating | Genres):
-${JSON.stringify(catalog.slice(0, 400))}
+${catalogData}
 `;
   }
 
