@@ -792,7 +792,7 @@ function renderContinueWatchingShelf() {
           </div>
         </div>
         <div class="card-details">
-          <h4 class="card-title">${movie.title}</h4>
+          <h4 class="card-title notranslate" translate="no">${movie.title}</h4>
           <div class="card-meta">
             ${metaLabel}
           </div>
@@ -825,6 +825,7 @@ function renderWatchlistHomeShelf() {
   }
   track.innerHTML = favMovies.map((movie) => {
     const fav = isFavorite(movie.id);
+    const displayType = movie.type || (movie.seasons ? "TV Show" : "Movie");
     return `
       <div class="movie-card continue-card" data-id="${movie.id}" style="cursor:pointer;">
         <div class="card-poster-wrap continue-poster-wrap">
@@ -832,9 +833,8 @@ function renderWatchlistHomeShelf() {
           <div class="card-overlay">
 
             <div class="card-details">
-              <h4 class="card-title">${movie.title}</h4>
+              <h4 class="card-title notranslate" translate="no">${movie.title}</h4>
               <div class="card-meta">
-                <span>${movie.year}</span>
                 <span>${movie.type}</span>
               </div>
             </div>
