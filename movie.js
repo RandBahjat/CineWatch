@@ -35,6 +35,43 @@ let TRENDING_THIS_WEEK_MOVIES = ["Batman: Knightfall Part 1: Knightfall", "Mutin
 let TRENDING_THIS_WEEK_SERIES = ["Lanterns", "Reacher", "Lucky", "Silo", "One Piece", "Ted Lasso", "X-Men '97", "Lioness", "Outer Banks"]; // Add titles here for 'Trending Series This Week'
 const POPULAR_MOVIES = ["Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters", "The Invite", "Spider-Man: No Way Home", "The End of Oak Street", "Disclosure Day", "Camp Rock 3", "The Last House", "Michael", "Project Hail Mary"]; // Add titles here for 'Popular Movie'
 const POPULAR_SERIES = ["Reacher", "House of the Dragon", "Ted Lasso", "The Mentalist", "Lucky", "Off Campus", "Silo", "Game of Thrones", "The Sopranos", "Stranger Things", "The Boys"]; // Add titles here for 'Popular Series'
+// Capture recovery hash immediately before Supabase clears it
+if (window.location.hash.includes("type=recovery")) {
+  window.CW_PENDING_RECOVERY = true;
+}
+
+/**
+ * CineWatch — Pure Vanilla JavaScript (ES6+)
+ * Feature-rich movie streaming platform logic
+ *
+ * ==========================================
+ * HOW TO ADD / EDIT MOVIES
+ * ==========================================
+ * Scroll down to the "MOVIE DATABASE" section below.
+ * To EDIT a movie: just change the values inside its {...} block.
+ * To ADD a movie: copy an existing {...} block, paste it before the
+ *   closing "];", change the "id" to something unique (e.g. "m13"),
+ *   and fill in the fields.
+ *
+ * Fields that matter for where a movie shows up:
+ *   - featured: true  -> appears in the big hero banner rotation
+ *   - trending: true  -> appears in the "Trending" row
+ *   - genres: ["..."]   -> controls which genre rows it appears in
+ *
+ * That's the ONLY place you need to touch. Everything else in this
+ * file reads from this array automatically — you don't need to edit
+ * any HTML for movie content to change.
+ */
+
+// ==========================================
+// 1. HIGHLIGHTS & TRENDING
+// ==========================================
+let FEATURED_TITLES = ["Grand Theft Auto VI: An Extended Look","Batman: Knightfall Part 1: Knightfall", "Mutiny", "Reacher", "Lanterns", "Lioness", "Spider-Man: Brand New Day", "The Last Sunrise", "The Odyssey", "Obsession", "The Last House", "Silo"];
+let TOP_10_TRENDING_TODAY = ["Grand Theft Auto VI: An Extended Look","Motor City", "Mutiny", "Batman: Knightfall Part 1: Knightfall","Reacher", "The Last Sunrise", "Spider-Man: Brand New Day", "Lanterns", "The Odyssey", "The Odyssey", "Motor City", "Toy Story 5", "Obsession"];
+let TRENDING_THIS_WEEK_MOVIES = ["Batman: Knightfall Part 1: Knightfall", "Mutiny", "Spider-Man: Brand New Day", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Minions & Monsters", "The Last House", "Disclosure Day", "The Invite", "The End of Oak Street", "Backrooms", "Camp Rock 3", "Evil Dead Burn", "Project Hail Mary", "Supergirl"]; // Add titles here for 'Trending Movies This Week'
+let TRENDING_THIS_WEEK_SERIES = ["Lanterns", "Reacher", "Lucky", "Silo", "One Piece", "Ted Lasso", "X-Men '97", "Lioness", "Outer Banks"]; // Add titles here for 'Trending Series This Week'
+const POPULAR_MOVIES = ["Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters", "The Invite", "Spider-Man: No Way Home", "The End of Oak Street", "Disclosure Day", "Camp Rock 3", "The Last House", "Michael", "Project Hail Mary"]; // Add titles here for 'Popular Movie'
+const POPULAR_SERIES = ["Reacher", "House of the Dragon", "Ted Lasso", "The Mentalist", "Lucky", "Off Campus", "Silo", "Game of Thrones", "The Sopranos", "Stranger Things", "The Boys"]; // Add titles here for 'Popular Series'
 
 // ==========================================
 // 2. MOVIE DATABASE (loaded from MongoDB)
@@ -46,14 +83,44 @@ let MOVIES = [];
 function translateGenre(genre) {
   const cookies = document.cookie || '';
   const isSorani = cookies.includes('googtrans=/en/ckb');
+  const isArabic = cookies.includes('googtrans=/en/ar');
   if (isSorani) {
-    if (genre === 'Fantasy') return 'فانتاسی';
-
-    if (genre === 'Adventure') return 'سەرکێشی';
+    if (genre === 'all') return 'هەموو جۆرەکان';
     if (genre === 'Action') return 'ئاکشن';
-    if (genre === 'Sci-Fi') return 'خەیاڵی زانستی';
+    if (genre === 'Adventure') return 'سەرکێشی';
+    if (genre === 'Animation') return 'ئەنیمەیشن';
+    if (genre === 'Comedy') return 'کۆمیدی';
+    if (genre === 'Crime') return 'تاوانکاری';
+    if (genre === 'Drama') return 'دراما';
+    if (genre === 'Family') return 'خێزانی';
+    if (genre === 'Kids') return 'منداڵان';
+    if (genre === 'History') return 'مێژوویی';
+    if (genre === 'Fantasy') return 'فانتازیا';
+    if (genre === 'Horror') return 'ترسناک';
     if (genre === 'Mystery') return 'نهێنی';
+    if (genre === 'Romance') return 'ڕۆمانسی';
+    if (genre === 'Sci-Fi' || genre === 'Science-Fiction' || genre === 'Science Fiction') return 'خەیاڵی زانستی';
     if (genre === 'Thriller') return 'هەستبزوێن';
+    if (genre === 'War') return 'جەنگ';
+  }
+  if (isArabic) {
+    if (genre === 'all') return 'جميع الأنواع';
+    if (genre === 'Action') return 'أكشن';
+    if (genre === 'Adventure') return 'مغامرة';
+    if (genre === 'Animation') return 'رسوم متحركة';
+    if (genre === 'Comedy') return 'كوميديا';
+    if (genre === 'Crime') return 'جريمة';
+    if (genre === 'Drama') return 'دراما';
+    if (genre === 'Family') return 'عائلي';
+    if (genre === 'Kids') return 'أطفال';
+    if (genre === 'History') return 'تاريخي';
+    if (genre === 'Fantasy') return 'فانتازيا';
+    if (genre === 'Horror') return 'رعب';
+    if (genre === 'Mystery') return 'غموض';
+    if (genre === 'Romance') return 'رومانسي';
+    if (genre === 'Sci-Fi' || genre === 'Science-Fiction' || genre === 'Science Fiction') return 'خيال علمي';
+    if (genre === 'Thriller') return 'إثارة';
+    if (genre === 'War') return 'حرب';
   }
   return genre;
 }
