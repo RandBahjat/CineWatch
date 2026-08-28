@@ -1774,7 +1774,7 @@ function openDetailsModal(movieId) {
       document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &middot; ");
     }
 
-    document.getElementById("detailsOverview").textContent = movie.overview;
+    setOverviewElement(document.getElementById("detailsOverview"), getLocalizedOverview(movie));
 
     const castContainer = document.getElementById("detailsCastContainer");
     const castText = document.getElementById("detailsCastText");
