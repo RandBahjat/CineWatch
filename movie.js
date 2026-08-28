@@ -759,14 +759,38 @@ function renderContinueWatchingShelf() {
   );
 
   if (items.length === 0) {
-    shelf.classList.add("hidden");
+    grid.innerHTML = "";
+    if (emptyTitle) emptyTitle.textContent = "No titles in Continue Watching";
+    if (emptyText) emptyText.textContent = "Movies and series you start watching will appear here so you can easily pick up where you left off.";
+    if (exploreBtn) {
+      exploreBtn.textContent = "Explore Movies";
+      exploreBtn.onclick = () => switchView("movies");
+    }
+    emptyState.classList.remove("hidden");
     return;
   }
 
-  if (state.activeView === "home") {
-    shelf.classList.remove("hidden");
+  emptyState.classList.add("hidden");
+
+  // Update Action Bar UI
+  const selectBtn = document.getElementById("cwSelectBtn");
+  const removeBtn = document.getElementById("cwRemoveSelectedBtn");
+  const cancelBtn = document.getElementById("cwCancelSelectBtn");
+
+  if (selectBtn && removeBtn && cancelBtn) {
+    if (state.isCwSelectionMode) {
+      selectBtn.classList.add("hidden");
+      removeBtn.classList.remove("hidden");
+      cancelBtn.classList.remove("hidden");
+      removeBtn.textContent = `Remove Selected (${state.cwSelectedItems.size})`;
+    } else {
+      selectBtn.classList.remove("hidden");
+      removeBtn.classList.add("hidden");
+      cancelBtn.classList.add("hidden");
+    }
   }
-  track.innerHTML = items
+
+  grid.innerHTML = items
     .map((item) => {
       const movie = MOVIES.find((m) => m.id === item.movieId);
       if (!movie) return "";
@@ -781,136 +805,6 @@ function renderContinueWatchingShelf() {
       const metaLabel = isIframe
         ? `<span class="notranslate" translate="no">${inProgressText}</span>`
         : `<span class="notranslate" translate="no">${formatNumber(Math.max(1, Math.round((item.duration - item.currentTime) / 60)))} ${leftText}</span><span class="notranslate" translate="no">${formatNumber(percent)}%</span>`;
-
-      return `
-      <div class="movie-card continue-card" data-id="${movie.id}">
-        <div class="card-poster-wrap continue-poster-wrap">
-          <picture>
-            <source media="(max-width: 768px)" srcset="${movie.poster}">
-            <img src="${movie.backdrop || movie.poster}" alt="${movie.title}" class="card-poster">
-          </picture>
-          <div class="card-gradient"></div>
-          <div class="card-overlay"></div>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar-fill" style="width: ${percent}%"></div>
-          </div>
-        </div>
-        <div class="card-details">
-          <h4 class="card-title notranslate" translate="no">${movie.title}</h4>
-          <div class="card-meta">
-            ${metaLabel}
-          </div>
-        </div>
-      </div>
-    `;
-    })
-    .join("");
-}
-
-function renderWatchlistHomeShelf() {
-  const shelf = document.getElementById("watchlistHomeShelf");
-  const track = document.getElementById("watchlistHomeTrack");
-  if (!shelf || !track) return;
-
-  // Only show for signed-in users with saved titles
-  if (!state.user || state.favorites.length === 0) {
-    shelf.classList.add("hidden");
-    return;
-  }
-
-  const favMovies = MOVIES.filter((m) => state.favorites.includes(m.id));
-  if (favMovies.length === 0) {
-    shelf.classList.add("hidden");
-    return;
-  }
-
-  if (state.activeView === "home") {
-    shelf.classList.remove("hidden");
-  }
-  track.innerHTML = favMovies.map((movie) => {
-    const fav = isFavorite(movie.id);
-    const displayType = movie.type || (movie.seasons ? "TV Show" : "Movie");
-    return `
-      <div class="movie-card continue-card" data-id="${movie.id}" style="cursor:pointer;">
-        <div class="card-poster-wrap continue-poster-wrap">
-          <img src="${movie.backdrop || movie.poster}" alt="${movie.title}" class="card-poster">
-          <div class="card-overlay">
-
-            <div class="card-details">
-              <h4 class="card-title notranslate" translate="no">${movie.title}</h4>
-              <div class="card-meta">
-                <span>${movie.type}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    `;
-  }).join("");
-
-  // Click opens details modal
-  track.querySelectorAll(".movie-card").forEach((card) => {
-    card.onclick = () => openDetailsModal(card.dataset.id);
-  });
-}
-
-function renderWatchlist() {
-  const grid = document.getElementById("watchlistGrid");
-  const emptyState = document.getElementById("emptyWatchlist");
-  const countText = document.getElementById("watchlistCountText");
-
-  const favMovies = MOVIES.filter((m) => state.favorites.includes(m.id));
-  if (countText) {
-    countText.textContent = `${favMovies.length} saved ${favMovies.length === 1 ? "title" : "titles"}`;
-  }
-
-  if (favMovies.length === 0) {
-    grid.innerHTML = "";
-    emptyState.classList.remove("hidden");
-    return;
-  }
-
-  emptyState.classList.add("hidden");
-  grid.innerHTML = favMovies.map(m => createMovieCardHTML(m)).join("");
-}
-
-function renderContinueWatchingPage() {
-  const grid = document.getElementById("continueGrid");
-  const emptyState = document.getElementById("emptyContinue");
-  const countText = document.getElementById("continueCountText");
-  const emptyTitle = document.getElementById("emptyContinueTitle");
-  const emptyText = document.getElementById("emptyContinueText");
-  const exploreBtn = document.getElementById("exploreContinueBtn");
-
-  if (!grid || !emptyState) return;
-
-  // Prompt unauthenticated users
-  if (!state.user) {
-    grid.innerHTML = "";
-    if (countText) countText.textContent = "Sign in required";
-    if (emptyTitle) emptyTitle.textContent = "Sign in to view Continue Watching";
-    if (emptyText) emptyText.textContent = "Sign in to track your watch progress across all your devices.";
-    if (exploreBtn) {
-      exploreBtn.textContent = "Sign In";
-      exploreBtn.onclick = () => {
-        if (typeof openAuthModal === "function") openAuthModal();
-      };
-    }
-    emptyState.classList.remove("hidden");
-    return;
-  }
-
-  const items = Object.values(state.continueWatching).sort(
-    (a, b) => b.timestamp - a.timestamp
-  );
-
-  if (countText) {
-    countText.textContent = `${items.length} ${items.length === 1 ? "title" : "titles"} in progress`;
-  }
-
-  if (items.length === 0) {
-        ? `<span>In Progress</span>`
-        : `<span>${Math.max(1, Math.round((item.duration - item.currentTime) / 60))}m left</span><span>${percent}%</span>`;
 
       const isSelected = state.isCwSelectionMode && state.cwSelectedItems.has(movie.id);
       const selectedClass = isSelected ? 'cw-selected' : '';
