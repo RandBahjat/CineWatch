@@ -4308,6 +4308,30 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
+    title: "in the Grey",
+    type: "Movie",
+    year: 2026,
+    rating: 6.3,
+    age: "R",
+    duration: "1h 38m",
+    genres: [
+      "Action",
+      "Thriller"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dQgIcW6Th08kMRf2HBoYWoFE6OD.jpg",
+    backdrop: "https://m.media-amazon.com/images/S/pv-target-images/f5a62dc8ead401c75012a3398a02c2ecb09d1f8f12aa6ba6cc04287c60c2b972.jpg",
+    videoUrl: "1122573",
+    overview: "Two extraction specialists are tasked with planning an escape route for a high-level female negotiator caught in the middle of a high-stakes, dangerous environment where the lines between friend and foe are blurred.",
+    director: "Guy Ritchie",
+    cast: [
+      "Henry Cavill, Jake Gyllenhaal, Eiza González, Carlos Bardem, Fisher Stevens  "
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "Green Lantern",
     type: "Movie",
     year: 2011,
