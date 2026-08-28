@@ -6635,9 +6635,44 @@ body.rtl-layout .hero-bg-overlay {
 body.rtl-layout .details-hero-container {
   align-items: flex-start;
 }
-body.rtl-layout .details-content-wrapper {
+body.rtl-layout .details-content-wrapper,
+body.rtl-layout .details-hero-info {
+  text-align: right;
   margin-right: 0;
   margin-left: auto;
+}
+
+body.rtl-layout .details-title-large,
+body.rtl-layout .details-title,
+body.rtl-layout #detailsTitle {
+  text-align: right !important;
+  direction: rtl;
+  unicode-bidi: plaintext;
+}
+
+body.rtl-layout .details-overview-large,
+body.rtl-layout #detailsOverview {
+  text-align: right !important;
+  direction: rtl;
+}
+
+body.rtl-layout .details-meta-row {
+  justify-content: flex-start;
+  direction: rtl;
+}
+
+body.rtl-layout .details-action-buttons {
+  justify-content: flex-start;
+  direction: rtl;
+}
+
+body.rtl-layout .details-cast-list {
+  text-align: right;
+  direction: rtl;
+}
+
+body.rtl-layout .details-back-btn {
+  z-index: 99999;
 }
 
 /* Force hero title and text to align to the right in RTL */
@@ -6657,22 +6692,30 @@ body.rtl-layout .hero-actions {
   justify-content: flex-start;
 }
 
-
-
 /* ==========================================================================
    ANNIHILATE GOOGLE TRANSLATE WIDGET
    Forcefully completely disable the annoying floating widget and banners.
    ========================================================================== */
 body > .skiptranslate,
+body > iframe.skiptranslate,
 body > div[id^="goog"],
-
-.VIpgJd-Zvi9od-aZ2wEe-wOHMyf,
-.VIpgJd-Zvi9od-aZ2wEe-OiiCO,
-.goog-te-gadget-icon,
-.goog-te-banner-frame,
+body > div[class*="skiptranslate"],
+iframe.skiptranslate,
+iframe[id*="goog"],
+iframe[id*=":"],
+iframe[src*="translate.google"],
+.skiptranslate,
+[class*="VIpgJd"],
+[class*="goog-"],
+[id*="goog"],
+[id*="google_translate"],
 #goog-gt-tt,
 .goog-tooltip,
 .goog-tooltip:hover,
+.goog-te-gadget,
+.goog-te-gadget-icon,
+.goog-te-gadget-simple,
+.goog-te-banner-frame,
 #google_translate_element {
   display: none !important;
   opacity: 0 !important;
@@ -6682,10 +6725,13 @@ body > div[id^="goog"],
   width: 0 !important;
   height: 0 !important;
   position: absolute !important;
-  top: -10000px !important;
-  left: -10000px !important;
+  top: -100000px !important;
+  left: -100000px !important;
+  clip: rect(0, 0, 0, 0) !important;
 }
 
 body {
-  top: 0 !important;
+  top: 0px !important;
+  position: static !important;
 }
+
