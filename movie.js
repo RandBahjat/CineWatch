@@ -3014,10 +3014,6 @@ function bindEventListeners() {
     });
   } if (searchModalBackdrop) searchModalBackdrop.onclick = closeSearchModal;
 
-  // Search Filter Dropdown Logic
-  if (searchFilterBtn && searchFilterDropdown) {
-    searchFilterBtn.onclick = () => {
-      searchFilterDropdown.classList.toggle("hidden");
     };
 
     searchFilterDropdown.querySelectorAll(".filter-option").forEach(opt => {
