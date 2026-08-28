@@ -12676,7 +12676,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bYLM3GpNUZnoFElPXp1zlhDPdtv.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/tenUPIMnLO9QUcvAtakp0xSAYTz.jpg",
     videoUrl: "75612",
-    overview: "Lara Croft, fierce, fearless daughter of missing adventurer, journey to mysterious island search for father, uncover ancient tomb hold dark secret. Face deadly trial, ruthless enemy, discover true strength inside herself.",
+    overview: "Drone repairman, one of last human left on ravage Earth, question memory, reality while clean up after devastating alien war. Discover truth of past, own identity threaten shatter everything he think he know.",
     director: "Roar Uthaug",
     cast: [
       "Alicia Vikander, Dominic West, Walton Goggins, Daniel Wu, Kristin Scott Thomas"
