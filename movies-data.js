@@ -335,31 +335,7 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
-  {
-    title: "The Whisper Man",
-    type: "Movie",
-    year: 2026,
-    rating: 6.1,
-    age: "R",
-    duration: "1h 43m",
-    genres: [
-      "Action",
-      "Thriller",
-      "Crime"
-    ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lGovcOtxugJPhfJjFKud9EbWtOA.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/l7asYmqOad01F2u0oCMM8nQjoEP.jpg",
-    videoUrl: "860508",
-    overview: "In 1970s Detroit, hard-working man John Miller fall in love with local gangster girl. Jealous mob boss framing John, sending him to prison for crime he no do. John break out of jail and hunt down criminals on brutal silent quest for absolute revenge. Movie got almost no spoken words, using rock music and raw action to tell story!",
-    director: "Potsy Ponciroli",
-    cast: [
-      "Alan Ritchson, Shailene Woodley, Ben Foster, Pablo Schreiber, Ben McKenzie, Lionel Boyce"
-    ],
-    trending: false,
-    featured: false,
-    is4k: false,
-    seasons: []
-  },
+  
   {
     title: "The Dark Knight Rises",
     type: "Movie",
