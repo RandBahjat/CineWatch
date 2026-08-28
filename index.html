@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260828_2194">
+    <link rel="stylesheet" href="movie.css?v=20260828_2195">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -26,9 +26,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_3914" defer></script>
-    <script src="series-data.js?v=20260818_3914" defer></script>
-    <script src="anime-data.js?v=20260818_3914" defer></script>
+    <script src="movies-data.js?v=20260818_3915" defer></script>
+    <script src="series-data.js?v=20260818_3915" defer></script>
+    <script src="anime-data.js?v=20260818_3915" defer></script>
     <script src="movie.js?v=v19" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -850,9 +850,9 @@
             <button class="modal-close-btn" id="closeAuthBtn" onclick="document.getElementById('authModal').classList.add('hidden')">&times;</button>
 
             <div class="auth-modal-body">
-                <div class="auth-header">
-                    <div class="auth-logo notranslate" translate="no"><ion-icon name="ticket" style="color: var(--primary); font-size: 1.3em; vertical-align: middle;"></ion-icon> CineWatch</div>
-                    <p class="auth-subtitle">Welcome to your personal cinema universe</p>
+                <div class="auth-header" style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div class="auth-logo notranslate" translate="no" style="display: inline-flex; align-items: center; justify-content: center; text-align: center;"><ion-icon name="ticket" style="color: var(--primary); font-size: 1.3em; vertical-align: middle;"></ion-icon> CineWatch</div>
+                    <p class="auth-subtitle" style="text-align: center;">Welcome to your personal cinema universe</p>
                 </div>
 
                 <!-- Auth Tabs -->
@@ -874,7 +874,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="loginPassword" class="notranslate" translate="no">Password</label>
+                        <label for="loginPassword" id="loginPwLabel" class="notranslate" translate="no">Password</label>
                         <div class="input-with-icon">
                             <ion-icon name="lock-closed-outline"></ion-icon>
                             <input type="password" id="loginPassword" class="form-control notranslate" translate="no"
