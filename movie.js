@@ -2009,30 +2009,6 @@ function openDetailsModal(movieId) {
       playBtn.onclick = () => {
         const seasonData = movie.seasons.find((s) => s.season === parseInt(seasonSelect.value));
         if (!seasonData) return;
-        const firstEp = seasonData.episodes[0];
-        if (!firstEp) return;
-        const epUrl = getEpisodeUrl(firstEp, seasonData);
-        if (epUrl) {
-          const epTitle = `${movie.title} — S${seasonData.season}E${firstEp.episode}: ${firstEp.title}`;
-          openVideoPlayerWithUrl(epUrl, epTitle, movie.id);
-        }
-      };
-
-    } else {
-      // Movie — hide TV section
-      tvSection.classList.add("hidden");
-      playBtn.onclick = () => {
-        openVideoPlayer(movie.id);
-      };
-    }
-
-    // Similars Button Logic
-    const similarsBtn = document.getElementById("detailsSimilarsBtn");
-    if (similarsBtn) {
-      similarsBtn.onclick = () => {
-        const section = document.getElementById("detailsSimilarsSection");
-        if (section) {
-          section.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       };
     }
