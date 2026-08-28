@@ -6739,6 +6739,18 @@ body.rtl-layout .hero-actions {
   justify-content: flex-start;
 }
 
+body.rtl-layout .auth-header,
+body.rtl-layout .auth-logo,
+body.rtl-layout .auth-subtitle {
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 /* ==========================================================================
    ANNIHILATE GOOGLE TRANSLATE WIDGET
    Forcefully completely disable the annoying floating widget and banners.
