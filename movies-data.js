@@ -2791,7 +2791,7 @@ window._MOVIES_DATA = [
     title: "The Adam Project",
     type: "Movie",
     year: 2022,
-    rating: 6.3,
+    rating: 6.7,
     age: "PG-13",
     duration: "1h 56m",
     genres: [
