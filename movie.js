@@ -771,12 +771,16 @@ function renderContinueWatchingShelf() {
       const movie = MOVIES.find((m) => m.id === item.movieId);
       if (!movie) return "";
 
-      // For iframe-tracked entries we don't have real timestamps — show "In Progress"
       const isIframe = item.isIframe;
       const percent = isIframe ? 50 : Math.min(100, Math.round((item.currentTime / item.duration) * 100));
+      const cookies = document.cookie || '';
+      const isCkb = cookies.includes('googtrans=/en/ckb');
+      const isAr = cookies.includes('googtrans=/en/ar');
+      const inProgressText = isCkb ? 'بەردەوام بە' : (isAr ? 'قيد المشاهدة' : 'In Progress');
+      const leftText = isCkb ? 'خولەک ماوە' : (isAr ? 'دقيقة متبقية' : 'm left');
       const metaLabel = isIframe
-        ? `<span>In Progress</span>`
-        : `<span>${Math.max(1, Math.round((item.duration - item.currentTime) / 60))}m left</span><span>${percent}%</span>`;
+        ? `<span class="notranslate" translate="no">${inProgressText}</span>`
+        : `<span class="notranslate" translate="no">${formatNumber(Math.max(1, Math.round((item.duration - item.currentTime) / 60)))} ${leftText}</span><span class="notranslate" translate="no">${formatNumber(percent)}%</span>`;
 
       return `
       <div class="movie-card continue-card" data-id="${movie.id}">
