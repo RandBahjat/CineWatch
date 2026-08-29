@@ -18,7 +18,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6UqflU8Qqkz7Dq4swJPqs0ZJjY4.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/uauoVKKCkNA9iWjgJCL8TdSfLf5.jpg",
     videoUrl: "860508",
-    overview: "Jason and Lucia always know odds against them. Simple job meant for quick score go bad, land them in darkest corner of place once known as sunniest spot in America — caught up in deep, dangerous criminal network stretch across whole state of Leonida, now need each other more than ever to survive.",
+    overview: "Young son vanish, widower turn to estranged father, retired detective who once put away serial killer, "The Whisper Man," terrorize quiet town Featherbank fifteen year back. Old case, new crime tangle together, dark rumor of accomplice resurface.",
     overviewKurdish: "جەیسن و لوسیا لە سەرەتاوە دەیانزانی هەلومەرج لە دژیانە. کارێکی سادە کە بۆ دزین بڕیار درابوو بە خراپی کۆتایی هات، ئەوانیش خۆیان بینییەوە لەناو تاریکترین بەشی ئەو شوێنەی کە هەمووکات وەک خۆشترین شوێن ناسراوە بوو لە ئەمریکا — گیریان خواردووە لە ناو تۆڕێکی تاوانی قووڵ و ترسناک کە بە درێژایی هەموو ویلایەتی لیۆنیدا دەگرێتەوە، ئێستاش پێویستیان بە یەکتری هەیە زیاتر لە هەر کاتێکی تر بۆ ئەوەی بتوانن زیندوو بمێننەوە.",
     director: "Rockstar Games",
     trending: true,
