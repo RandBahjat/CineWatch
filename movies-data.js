@@ -18,7 +18,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6UqflU8Qqkz7Dq4swJPqs0ZJjY4.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/uauoVKKCkNA9iWjgJCL8TdSfLf5.jpg",
     videoUrl: "860508",
-    overview: "Young son vanish, widower turn to estranged father, retired detective who once put away serial killer, The Whisper Man, terrorize quiet town Featherbank fifteen year back. Old case, new crime tangle together, dark rumor of accomplice resurface.",
+    overview: "Widower's son vanish in town once terrorize by serial killer The Whisper Man." Turn to estranged father, retired detective, dig up old case now tangle with new one.",
     overviewKurdish: "کوڕێکی گەنج ون دەبێت، پیاوێکی بێوەژن ڕوو لە باوکی لێدوورکەوتووی خۆی دەکات، پۆلیسێکی خانەنشین کە جارێکیان کوشەرێکی زنجیرەیی,پیاوی چرپە، گرتبوو کە پازدە ساڵ لەمەوبەر شارۆچکەی هێمنی فێدەربانکی تۆقاندبوو. کەیسی کۆن و تاوانی نوێ تێکەڵ دەبنەوە، تاوتوێی نهێنی هاوکارێکی تاریک دووبارە سەرهەڵدەدات.",
     director: "James Ashcroft",
     cast: ["Robert De Niro, Michelle Monaghan, Adam Scott, Hamish Linklater, Owen Teague, Michael Keaton, John Carroll Lynch"],
