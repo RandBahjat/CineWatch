@@ -19,7 +19,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/uauoVKKCkNA9iWjgJCL8TdSfLf5.jpg",
     videoUrl: "860508",
     overview: "Widower's son vanish in town once terrorize by serial killer The Whisper Man. Turn to estranged father, retired detective, dig up old case now tangle with new one.",
-    overviewKurdish: "کوڕێکی گەنج ون دەبێت، پیاوێکی بێوەژن ڕوو لە باوکی لێدوورکەوتووی خۆی دەکات، پۆلیسێکی خانەنشین کە جارێکیان کوشەرێکی زنجیرەیی,پیاوی چرپە، گرتبوو کە پازدە ساڵ لەمەوبەر شارۆچکەی هێمنی فێدەربانکی تۆقاندبوو. کەیسی کۆن و تاوانی نوێ تێکەڵ دەبنەوە، تاوتوێی نهێنی هاوکارێکی تاریک دووبارە سەرهەڵدەدات.",
+    overviewKurdish: کوڕی پیاوێکی بێوەژن ون دەبێت لە شارۆچکەیەک کە جارێکیان کوشەرێکی زنجیرەیی، "پیاوی چرپە،" تۆقاندبووی. ڕوو لە باوکی لێدوورکەوتووی خۆی دەکات، پۆلیسێکی خانەنشین، کەیسی کۆن هەڵدەکۆڵنەوە کە ئێستا تێکەڵ دەبێت لەگەڵ تاوانێکی نوێ.",
     director: "James Ashcroft",
     cast: ["Robert De Niro, Michelle Monaghan, Adam Scott, Hamish Linklater, Owen Teague, Michael Keaton, John Carroll Lynch"],
     trending: true,
