@@ -4177,6 +4177,7 @@ function updateIframeServer() {
       if (!serverSelect.dataset.animeServersPopulated) {
         serverSelect.innerHTML = `
           <option value="vidsrc-sbs">VidSrc (Reliable / Fast)</option>
+          <option value="embvid">EmbVid (Premium Server)</option>
           <option value="vidsrc-me">VidSrc ME (Multi-Language)</option>
           <option value="zxcstream">ZXC Stream (Japanese Sub)</option>
         `;
@@ -4202,7 +4203,12 @@ function updateIframeServer() {
         }
       }
 
-      if (selected === 'zxcstream') {
+      if (selected === 'embvid') {
+        const embKey = 'vm_live_xGHB0XJKZEnGxbsohGJo7P0akb8rsfLD';
+        newUrl = data.type === 'tv'
+          ? `https://embvid.com/embed/tv/${data.id}/${mappedSeason}/${mappedEpisode}?api_key=${embKey}`
+          : `https://embvid.com/embed/movie/${data.id}?api_key=${embKey}`;
+      } else if (selected === 'zxcstream') {
         newUrl = data.type === 'tv' ? `https://player.zxcstream.xyz/embed/tv/${data.id}/${mappedSeason}/${mappedEpisode}` : `https://player.zxcstream.xyz/embed/movie/${data.id}`;
       } else if (selected === 'vidsrc-me') {
         const idParam = String(data.id).startsWith('tt') ? `imdb=${data.id}` : `tmdb=${data.id}`;
