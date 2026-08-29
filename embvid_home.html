@@ -1,0 +1,2767 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Host, manage, and share your videos with powerful embedding features.">
+
+    <title>EmbVid.com - Professional Video Hosting Made Simple</title>
+
+            <link rel="icon" href="/storage/landing/favicon-64_1773229443.png" type="image/x-icon">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <!-- emb-font-upgrade-v1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700,800&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="preload" as="style" href="https://embvid.com/build/assets/app-DzDEEB8u.css" /><link rel="stylesheet" href="https://embvid.com/build/assets/app-DzDEEB8u.css" />
+    <style>
+        :root {
+            --primary-color: #f59e0b;
+        }
+
+        /* Dark Theme */
+        html.dark {
+            --bg-primary: #0a0a0b;
+            --bg-secondary: #18181b;
+            --bg-card: rgba(24, 24, 27, 0.8);
+            --bg-card-gradient: linear-gradient(180deg, rgba(24, 24, 27, 0.8) 0%, rgba(24, 24, 27, 0.4) 100%);
+            --text-primary: #ffffff;
+            --text-secondary: #e4e4e7;
+            --text-muted: #a1a1aa;
+            --text-faded: #71717a;
+            --border-color: rgba(255, 255, 255, 0.06);
+            --border-hover: rgba(255, 255, 255, 0.15);
+            --nav-scrolled: rgba(10, 10, 11, 0.95);
+            --hero-grid-color: rgba(255, 255, 255, 0.02);
+            --btn-secondary-text: #e4e4e7;
+            --footer-text: #52525b;
+        }
+
+        /* Light Theme */
+        html.light {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f4f4f5;
+            --bg-card: rgba(255, 255, 255, 0.9);
+            --bg-card-gradient: linear-gradient(180deg, rgba(244, 244, 245, 0.9) 0%, rgba(244, 244, 245, 0.5) 100%);
+            --text-primary: #18181b;
+            --text-secondary: #27272a;
+            --text-muted: #52525b;
+            --text-faded: #71717a;
+            --border-color: rgba(0, 0, 0, 0.08);
+            --border-hover: rgba(0, 0, 0, 0.15);
+            --nav-scrolled: rgba(255, 255, 255, 0.95);
+            --hero-grid-color: rgba(0, 0, 0, 0.03);
+            --btn-secondary-text: #27272a;
+            --footer-text: #71717a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-secondary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .nav.scrolled {
+            background: var(--nav-scrolled);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .nav-logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            cursor: pointer;
+            border: none;
+            position: relative;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: #0a0a0b;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #f59e0b, #f97316, #fbbf24, #f59e0b);
+            background-size: 300% 300%;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .btn-primary:hover::before {
+            opacity: 1;
+            animation: gradient-shift 2s linear infinite;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 0 24px rgba(245, 158, 11, 0.2);
+            transform: translateY(-1px);
+        }
+
+        .btn-primary svg {
+            transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .btn-primary:hover svg {
+            transform: translateX(3px);
+        }
+
+        @keyframes gradient-shift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--btn-secondary-text);
+            border: 1px solid var(--border-hover);
+            overflow: hidden;
+        }
+
+        .btn-secondary::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #f59e0b, transparent);
+            transform: scaleX(0);
+            transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .btn-secondary:hover {
+            color: var(--text-primary);
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+
+        .btn-secondary:hover::before {
+            transform: scaleX(1);
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: var(--text-muted);
+        }
+
+        .btn-ghost:hover {
+            color: var(--text-primary);
+        }
+
+        .btn-large {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: 100px 0 80px;
+            overflow: hidden;
+        }
+
+        .hero-bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+            opacity: 1;
+            pointer-events: none;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -40%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.15), transparent);
+        }
+
+        .hero-grid-layout {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            background: rgba(245, 158, 11, 0.05);
+            color: #f59e0b;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+        }
+
+        .hero-badge-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #f59e0b;
+            animation: pulse-dot 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-dot {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.4;
+                transform: scale(0.8);
+            }
+        }
+
+        .hero-title {
+            font-family: 'Poppins', -apple-system, sans-serif;
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            letter-spacing: -1.5px;
+        }
+
+        .hero-title span {
+            background: linear-gradient(135deg, #f59e0b, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 17px;
+            line-height: 1.65;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            max-width: 480px;
+        }
+
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 48px;
+        }
+
+        .hero-stats-row {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .hero-stat {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .hero-stat-num {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .hero-stat-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            letter-spacing: 0.3px;
+        }
+
+        .hero-stat-divider {
+            width: 1px;
+            height: 32px;
+            background: var(--border-color);
+        }
+
+        .hero-visual {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-player-wrap {
+            position: relative;
+        }
+
+        .hero-player {
+            background: #1a1f2e;
+            border-radius: 12px;
+            border: 1px solid #2a3042;
+            overflow: hidden;
+            box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.03) inset;
+        }
+
+        .hero-player-topbar {
+            display: flex;
+            align-items: center;
+            padding: 10px 14px;
+            background: rgba(18, 22, 34, 0.5);
+            border-bottom: 1px solid #2a3042;
+        }
+
+        .hero-player-url {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 12px;
+            background: #0f1220;
+            border-radius: 6px;
+            flex: 1;
+        }
+
+        .hero-player-url span {
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            font-size: 11.5px;
+            color: #64748b;
+        }
+
+        .hero-player-screen {
+            position: relative;
+            aspect-ratio: 16/9;
+            background: linear-gradient(135deg, #0c0f1a 0%, #141928 50%, #0c0f1a 100%);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-player-overlay {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-play-btn {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: rgba(245, 158, 11, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #0f172a;
+            cursor: pointer;
+            transition: all 0.25s;
+            box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.3);
+            animation: play-pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes play-pulse {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 0 16px rgba(245, 158, 11, 0);
+            }
+        }
+
+        .hero-player-controls {
+            padding: 0 14px 12px;
+        }
+
+        .hero-player-progress {
+            width: 100%;
+            height: 3px;
+            background: #2a3042;
+            border-radius: 2px;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+
+        .hero-player-progress-fill {
+            width: 35%;
+            height: 100%;
+            background: linear-gradient(90deg, #f59e0b, #f97316);
+            border-radius: 2px;
+        }
+
+        .hero-player-control-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hero-player-left-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hero-player-time {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: #64748b;
+        }
+
+        .hero-player-right-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hero-player-quality {
+            font-size: 10px;
+            font-weight: 600;
+            color: #f59e0b;
+            background: rgba(245, 158, 11, 0.1);
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        .hero-float-card {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 16px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            animation: hero-float 4s ease-in-out infinite;
+            z-index: 3;
+        }
+
+        .hero-float-views {
+            top: 16%;
+            right: -24px;
+            animation-delay: 0s;
+        }
+
+        .hero-float-embed {
+            bottom: 20%;
+            left: -20px;
+            animation-delay: 2s;
+        }
+
+        @keyframes hero-float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        .hero-float-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .hero-float-views .hero-float-icon {
+            background: rgba(245, 158, 11, 0.1);
+        }
+
+        .hero-float-embed .hero-float-icon {
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        .hero-float-num {
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1;
+        }
+
+        .hero-float-label {
+            font-size: 11px;
+            color: var(--text-muted);
+            line-height: 1;
+        }
+
+        .hero-float-text {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        /* Sections */
+        .section {
+            padding: 6rem 0;
+            position: relative;
+        }
+
+        .section-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 640px;
+            margin: 0 auto 4rem;
+        }
+
+        .section-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-faded);
+        }
+
+        /* Features */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .feature-card {
+            background: var(--bg-card-gradient);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: rgba(245, 158, 11, 0.3);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(245, 158, 11, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-icon svg {
+            width: 24px;
+            height: 24px;
+            color: var(--primary-color);
+        }
+
+        .feature-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .feature-description {
+            font-size: 0.9375rem;
+            color: var(--text-faded);
+            line-height: 1.6;
+        }
+
+        /* Steps */
+        .steps-section {
+            background: var(--bg-secondary);
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+        }
+
+        .step-card {
+            text-align: center;
+        }
+
+        .step-number {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--primary-color), #fcd34d);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0a0a0b;
+            margin: 0 auto 1.5rem;
+        }
+
+        .step-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .step-description {
+            font-size: 0.9375rem;
+            color: var(--text-faded);
+            line-height: 1.6;
+        }
+
+        /* Stats */
+        .stats-section {
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.9375rem;
+            color: var(--text-faded);
+            font-weight: 500;
+        }
+
+        /* Pricing Section */
+        .pricing-section {
+            padding: 1.5rem 0 4rem;
+        }
+
+        .pricing-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .pricing-toggle-label {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            transition: all 0.3s;
+        }
+
+        .pricing-toggle-label.active {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .pricing-toggle-btn {
+            position: relative;
+            width: 56px;
+            height: 28px;
+            background: var(--border-color);
+            border-radius: 9999px;
+            border: 2px solid var(--border-hover);
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .pricing-toggle-dot {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 20px;
+            height: 20px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            align-items: start;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+
+            border-radius: 16px;
+            padding: 2rem;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            border-color: var(--border-hover);
+            transform: translateY(-4px);
+        }
+
+        .pricing-card.featured {
+            border: 2px solid var(--primary-color);
+            transform: scale(1.03);
+        }
+
+        .pricing-card.featured:hover {
+            transform: scale(1.03) translateY(-4px);
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary-color);
+            color: #000;
+            padding: 4px 16px;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+
+        .pricing-plan-name {
+            font-size: 1.375rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-plan-desc {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .pricing-amount {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            line-height: 1;
+        }
+
+        .pricing-period {
+            font-size: 1rem;
+            color: var(--text-faded);
+            margin-left: 4px;
+        }
+
+        .pricing-savings {
+            color: #10b981;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            margin-top: 0.375rem;
+        }
+
+        .pricing-cta {
+            display: block;
+            text-align: center;
+            padding: 0.875rem 1.5rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 0.9375rem;
+            font-weight: 700;
+            margin: 1.5rem 0;
+            transition: all 0.2s;
+            background: var(--bg-secondary);
+            color: var(--btn-secondary-text);
+            border: 1px solid var(--border-color);
+        }
+
+        .pricing-cta:hover {
+            border-color: var(--border-hover);
+            background: var(--border-color);
+        }
+
+        .pricing-cta.primary {
+            background: var(--primary-color);
+            color: #000;
+            border-color: transparent;
+        }
+
+        .pricing-cta.primary:hover {
+            opacity: 0.9;
+            filter: brightness(1.1);
+        }
+
+        .pricing-features {
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+        }
+
+        .pricing-features-label {
+            font-size: 0.8125rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .pricing-feature-text {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .pricing-feature-text.disabled {
+            color: var(--text-faded);
+            text-decoration: line-through;
+        }
+
+        /* PAYG Section */
+        .payg-divider {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin: 4rem 0 3rem;
+        }
+
+        .payg-divider-line {
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+
+        .payg-divider-text {
+            color: var(--text-faded);
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .payg-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .payg-card:hover {
+            border-color: var(--border-hover);
+        }
+
+        .payg-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .payg-icon {
+            width: 48px;
+            height: 48px;
+            background: color-mix(in srgb, var(--primary-color) 15%, transparent);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .payg-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .payg-subtitle {
+            color: var(--text-muted);
+            font-size: 0.9375rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .payg-rates {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .payg-rate {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            text-align: center;
+        }
+
+        .payg-rate-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.75rem;
+        }
+
+        .payg-rate-label {
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.375rem;
+        }
+
+        .payg-rate-price {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        .payg-rate-unit {
+            color: var(--text-faded);
+            font-size: 0.8125rem;
+        }
+
+        .payg-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 0.9375rem;
+            font-weight: 700;
+            background: var(--bg-secondary);
+            color: var(--btn-secondary-text);
+            border: 1px solid var(--border-color);
+            transition: all 0.2s;
+        }
+
+        .payg-cta:hover {
+            border-color: var(--border-hover);
+            background: var(--border-color);
+        }
+
+        .payg-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .payg-feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        /* CTA */
+        .cta-section {
+            padding: 8rem 0;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(245, 158, 11, 0.05));
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            border-radius: 24px;
+            padding: 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-box::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.15), transparent 60%);
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-title {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .cta-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        
+        /* =================================================
+           EMB HERO v1 — new design system foundation
+           ================================================= */
+        /* emb-hero-css-v1 */
+        :root {
+            --emb-ink: #0A0A0B;
+            --emb-ink-2: #1A1A1D;
+            --emb-paper: #FAFAF7;
+            --emb-paper-2: #F2F1EC;
+            --emb-muted: #71717A;
+            --emb-muted-2: #A1A1AA;
+            --emb-hairline: #E7E5E0;
+            --emb-hairline-strong: #D4D2CC;
+            --emb-ok: #10B981;
+            --emb-serif: "Instrument Serif", Georgia, serif;
+            --emb-sans: "Inter Tight", "Inter", system-ui, sans-serif;
+            --emb-mono: "JetBrains Mono", ui-monospace, monospace;
+        }
+        html.dark {
+            --emb-ink: #FAFAF7;
+            --emb-ink-2: #E7E5E0;
+            --emb-paper: #0A0A0B;
+            --emb-paper-2: #141416;
+            --emb-muted: #A1A1AA;
+            --emb-muted-2: #71717A;
+            --emb-hairline: #27272A;
+            --emb-hairline-strong: #3F3F46;
+        }
+
+        .emb-hero {
+            position: relative;
+            padding: 60px 40px 80px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: var(--emb-paper);
+            color: var(--emb-ink);
+            font-family: var(--emb-sans);
+        }
+        .emb-hero-bg-video {
+            position: absolute; inset: 0; width: 100%; height: 100%;
+            object-fit: cover; z-index: 0;
+            opacity: 1;
+        }
+        .emb-hero::before {
+            content: "";
+            position: absolute; inset: 0; z-index: 1;
+            background: linear-gradient(180deg, rgba(250,250,247,0.55) 0%, rgba(250,250,247,0.35) 50%, rgba(250,250,247,0.7) 100%);
+            pointer-events: none;
+        }
+        html.dark .emb-hero::before {
+            background: linear-gradient(180deg, rgba(10,10,11,0.55) 0%, rgba(10,10,11,0.35) 50%, rgba(10,10,11,0.7) 100%);
+        }
+        .emb-hero-inner {
+            position: relative; z-index: 2;
+            max-width: 1240px; margin: 0 auto; width: 100%;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .emb-hero-content { max-width: 620px; }
+
+        .emb-hero-eyebrow {
+            display: inline-flex; align-items: center; gap: 10px;
+            font-size: 12px; font-weight: 500;
+            color: var(--emb-muted);
+            padding: 6px 14px; border: 1px solid var(--emb-hairline);
+            border-radius: 9999px;
+            margin-bottom: 28px;
+            letter-spacing: 0.01em;
+            font-family: var(--emb-sans);
+        }
+        .emb-hero-dot {
+            width: 6px; height: 6px; border-radius: 50%;
+            background: var(--emb-ok);
+            box-shadow: 0 0 0 3px rgba(16,185,129,0.15);
+            animation: emb-pulse 2s infinite ease-in-out;
+        }
+        @keyframes emb-pulse {
+            0%, 100% { box-shadow: 0 0 0 3px rgba(16,185,129,0.15); }
+            50% { box-shadow: 0 0 0 6px rgba(16,185,129,0.05); }
+        }
+
+        .emb-hero-title {
+            font-family: var(--emb-sans);
+            font-size: clamp(44px, 6.5vw, 84px);
+            font-weight: 600;
+            letter-spacing: -0.035em;
+            line-height: 0.98;
+            color: var(--emb-ink);
+            margin: 0 0 24px;
+        }
+        .emb-hero-title .emb-hero-em,
+        .emb-hero-title span {
+            font-family: var(--emb-serif);
+            font-style: italic;
+            font-weight: 400;
+            letter-spacing: -0.015em;
+            color: var(--emb-ink);
+            padding-right: 0.08em;
+        }
+
+        .emb-hero-subtitle {
+            font-size: 18px;
+            line-height: 1.55;
+            color: var(--emb-muted);
+            max-width: 52ch;
+            margin: 0 0 36px;
+            font-weight: 400;
+        }
+
+        .emb-hero-actions {
+            display: flex; gap: 12px; flex-wrap: wrap;
+            margin-bottom: 48px;
+        }
+        .emb-btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 14px 22px;
+            border-radius: 10px;
+            font-family: var(--emb-sans);
+            font-size: 14px; font-weight: 600;
+            text-decoration: none;
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            white-space: nowrap;
+            letter-spacing: -0.005em;
+        }
+        .emb-btn-primary {
+            background: var(--emb-ink);
+            color: var(--emb-paper);
+            border-color: var(--emb-ink);
+        }
+        .emb-btn-primary:hover {
+            background: var(--primary-color, #FF5B1F);
+            border-color: var(--primary-color, #FF5B1F);
+            color: #fff;
+            transform: translateY(-1px);
+        }
+        .emb-btn-ghost {
+            background: transparent;
+            color: var(--emb-ink);
+            border-color: var(--emb-hairline-strong);
+        }
+        .emb-btn-ghost:hover {
+            border-color: var(--emb-ink);
+            background: var(--emb-paper-2);
+        }
+
+        .emb-hero-stats {
+            display: flex; align-items: center; gap: 32px;
+            padding-top: 32px;
+            border-top: 1px solid var(--emb-hairline);
+            flex-wrap: wrap;
+        }
+        .emb-hero-stat { display: flex; flex-direction: column; gap: 4px; }
+        .emb-hero-stat-num {
+            font-family: var(--emb-mono);
+            font-size: 22px;
+            font-weight: 500;
+            color: var(--emb-ink);
+            letter-spacing: -0.02em;
+            font-variant-numeric: tabular-nums;
+        }
+        .emb-hero-stat-label {
+            font-size: 12px;
+            color: var(--emb-muted);
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+        .emb-hero-stat-divider {
+            width: 1px; height: 32px;
+            background: var(--emb-hairline);
+        }
+
+        /* Player mockup */
+        .emb-hero-visual {
+            position: relative;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .emb-player-frame {
+            width: 100%;
+            max-width: 520px;
+            background: #0A0A0B;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 40px 80px -30px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.02);
+        }
+        html.dark .emb-player-frame {
+            box-shadow: 0 30px 80px -30px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.04);
+        }
+        .emb-player-chrome {
+            display: flex; align-items: center; gap: 14px;
+            padding: 10px 14px;
+            background: #141416;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .emb-player-dots { display: flex; gap: 6px; }
+        .emb-player-dots span {
+            width: 10px; height: 10px; border-radius: 50%;
+            background: #2a2a2e;
+        }
+        .emb-player-url {
+            flex: 1;
+            display: flex; align-items: center; gap: 6px;
+            padding: 5px 10px;
+            background: rgba(255,255,255,0.04);
+            border-radius: 6px;
+            font-family: var(--emb-mono);
+            font-size: 11px;
+            color: #71717A;
+        }
+        .emb-player-screen {
+            position: relative;
+            aspect-ratio: 16 / 9;
+            background: #0A0A0B;
+            overflow: hidden;
+        }
+        .emb-player-bg-pattern {
+            position: absolute; inset: 0;
+            background:
+                radial-gradient(circle at 30% 40%, rgba(255,91,31,0.12) 0%, transparent 50%),
+                radial-gradient(circle at 70% 60%, rgba(16,185,129,0.08) 0%, transparent 50%),
+                linear-gradient(180deg, #0A0A0B 0%, #141416 100%);
+        }
+        .emb-player-play {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 64px; height: 64px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.95);
+            color: #0A0A0B;
+            border: none;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer;
+            padding-left: 4px;
+            transition: transform 0.2s ease;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+        }
+        .emb-player-play:hover { transform: translate(-50%, -50%) scale(1.05); }
+        .emb-player-controls {
+            position: absolute;
+            left: 0; right: 0; bottom: 0;
+            padding: 12px 16px 14px;
+            background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.6) 100%);
+        }
+        .emb-player-bar {
+            height: 3px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 2px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .emb-player-bar-fill {
+            position: absolute; left: 0; top: 0; bottom: 0;
+            width: 34%;
+            background: var(--primary-color, #FF5B1F);
+            border-radius: 2px;
+        }
+        .emb-player-bar-knob {
+            position: absolute;
+            left: 34%; top: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px; height: 10px;
+            background: #fff;
+            border-radius: 50%;
+        }
+        .emb-player-meta {
+            display: flex; justify-content: space-between; align-items: center;
+            color: #E4E4E7;
+            font-size: 11px;
+            font-family: var(--emb-mono);
+        }
+        .emb-player-quality {
+            padding: 2px 6px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 3px;
+            font-size: 10px;
+        }
+
+        
+        @media (max-width: 1100px) {
+            .emb-float-tl { left: 0; top: 0; }
+            .emb-float-br { right: 0; bottom: 0; }
+        }
+        .emb-float-label {
+            font-size: 10px;
+            color: #71717A;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 3px;
+        }
+        html.dark .emb-float-label { color: #A1A1AA; }
+        .emb-float-value {
+            font-family: var(--emb-mono);
+            font-size: 15px;
+            font-weight: 500;
+            color: #0A0A0B;
+            font-variant-numeric: tabular-nums;
+        }
+        html.dark .emb-float-value { color: #FAFAF7; }
+        .emb-float-trend {
+            font-size: 11px;
+            color: var(--emb-ok);
+            font-weight: 500;
+            margin-top: 2px;
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 980px) {
+            .emb-hero { padding: 48px 24px 64px; }
+            .emb-hero-inner { grid-template-columns: 1fr; gap: 60px; }
+            .emb-hero-visual { order: -1; }
+            .emb-player-frame { max-width: 460px; }
+            .emb-float-tl { left: -10px; top: -10px; }
+            .emb-float-br { right: -10px; bottom: -10px; }
+        }
+        @media (max-width: 600px) {
+            .emb-hero-eyebrow { font-size: 11px; padding: 5px 12px; }
+            .emb-hero-stats { gap: 20px; }
+            .emb-hero-stat-num { font-size: 18px; }
+            .emb-float { padding: 10px 12px; min-width: 110px; }
+            .emb-float-value { font-size: 14px; }
+            .emb-btn { padding: 12px 18px; font-size: 13px; }
+        }
+
+        
+
+        /* =================================================
+           EMB FEATURES v1 — editorial grid, no pastel tiles
+           emb-features-css-v1
+           ================================================= */
+        .emb-section {
+            position: relative;
+            padding: 80px 40px 24px;
+            background: var(--emb-paper);
+            color: var(--emb-ink);
+            font-family: var(--emb-sans);
+        }
+        .emb-section-inner {
+            max-width: 1240px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .emb-section-head {
+            max-width: 720px;
+            margin: 0 auto 80px;
+            text-align: center;
+        }
+        .emb-section-eyebrow {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--emb-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 20px;
+        }
+        .emb-section-title {
+            font-family: var(--emb-sans);
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            line-height: 1.05;
+            color: var(--emb-ink);
+            margin: 0 0 20px;
+        }
+        .emb-section-title .emb-section-em {
+            font-family: var(--emb-serif);
+            font-style: italic;
+            font-weight: 400;
+            letter-spacing: -0.015em;
+            padding-right: 0.08em;
+        }
+        .emb-section-lede {
+            font-size: 17px;
+            color: var(--emb-muted);
+            line-height: 1.6;
+            max-width: 56ch;
+            margin: 0 auto;
+        }
+
+        .emb-features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: var(--emb-hairline);
+            border: 1px solid var(--emb-hairline);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .emb-feature {
+            position: relative;
+            padding: 40px 36px 44px;
+            background: var(--emb-paper);
+            transition: background 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            min-height: 220px;
+        }
+        .emb-feature:hover {
+            background: var(--emb-paper-2);
+        }
+        .emb-feature-num {
+            font-family: var(--emb-mono);
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--emb-muted-2);
+            letter-spacing: 0.08em;
+            margin-bottom: 28px;
+            font-variant-numeric: tabular-nums;
+        }
+        .emb-feature-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            color: var(--primary-color, #FF5B1F);
+            margin-bottom: 24px;
+        }
+        .emb-feature-title {
+            font-family: var(--emb-sans);
+            font-size: 19px;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            color: var(--emb-ink);
+            margin: 0 0 10px;
+            line-height: 1.25;
+        }
+        .emb-feature-desc {
+            font-size: 14.5px;
+            line-height: 1.6;
+            color: var(--emb-muted);
+            margin: 0;
+        }
+
+        @media (max-width: 980px) {
+            .emb-section { padding: 56px 24px 16px; }
+            .emb-section-head { margin: 0 auto 56px; }
+            .emb-features-grid { grid-template-columns: repeat(2, 1fr); }
+            .emb-feature { padding: 32px 28px 36px; min-height: 200px; }
+        }
+        @media (max-width: 620px) {
+            .emb-section { padding: 64px 20px; }
+            .emb-features-grid { grid-template-columns: 1fr; }
+            .emb-feature { min-height: unset; }
+        }
+
+        
+
+        /* =================================================
+           EMB HOW IT WORKS v1 — huge italic serif numerals
+           emb-hiw-css-v1
+           ================================================= */
+        .emb-hiw {
+            background: var(--emb-paper-2);
+        }
+        .emb-hiw-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px;
+            position: relative;
+        }
+        .emb-hiw-step {
+            position: relative;
+            padding-top: 20px;
+        }
+        .emb-hiw-step::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 48px;
+            height: 2px;
+            background: var(--primary-color, #FF5B1F);
+        }
+        .emb-hiw-num {
+            font-family: var(--emb-serif);
+            font-style: italic;
+            font-weight: 400;
+            font-size: clamp(72px, 9vw, 128px);
+            line-height: 0.9;
+            letter-spacing: -0.04em;
+            color: var(--emb-ink);
+            margin: 32px 0 28px;
+            font-variant-numeric: tabular-nums;
+        }
+        .emb-hiw-title {
+            font-family: var(--emb-sans);
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            color: var(--emb-ink);
+            margin: 0 0 12px;
+            line-height: 1.25;
+        }
+        .emb-hiw-desc {
+            font-size: 15.5px;
+            line-height: 1.6;
+            color: var(--emb-muted);
+            margin: 0;
+            max-width: 34ch;
+        }
+
+        @media (max-width: 980px) {
+            .emb-hiw-grid { grid-template-columns: 1fr; gap: 48px; }
+            .emb-hiw-num { font-size: clamp(64px, 14vw, 96px); }
+        }
+
+        /* Footer */
+        .footer {
+            border-top: 1px solid var(--border-color);
+            padding: 2.5rem 0 2rem;
+        }
+
+        .footer-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            text-align: center;
+        }
+
+        .footer-copyright {
+            font-size: 0.8125rem;
+            color: var(--footer-text);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem 0;
+        }
+
+        .footer-link {
+            font-size: 0.8125rem;
+            color: var(--text-faded);
+            text-decoration: none;
+            transition: color 0.2s;
+            padding: 0.2rem 0.75rem;
+            white-space: nowrap;
+        }
+
+        .footer-link:hover {
+            color: var(--text-primary);
+        }
+
+        .footer-social {
+            display: flex;
+            align-items: center;
+            gap: 0.625rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: var(--border-color);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-faded);
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .social-link:hover {
+            background: var(--border-hover);
+            color: var(--text-primary);
+        }
+
+        .social-link svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Improved Steps Section */
+        .steps-wrapper {
+            position: relative;
+        }
+
+        .steps-line {
+            display: none;
+        }
+
+        @media (min-width: 769px) {
+            .steps-line {
+                display: block;
+                position: absolute;
+                top: 50px;
+                left: 15%;
+                right: 15%;
+                height: 3px;
+                background: linear-gradient(90deg, var(--primary-color), #fcd34d, var(--primary-color));
+                border-radius: 2px;
+                opacity: 0.3;
+            }
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .step-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary-color);
+            box-shadow: 0 20px 40px rgba(245, 158, 11, 0.15);
+        }
+
+        .step-icon-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        .step-number {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-color), #fcd34d);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: #0a0a0b;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
+        }
+
+        .step-pulse {
+            position: absolute;
+            inset: -8px;
+            border: 2px solid var(--primary-color);
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.3;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 0.1;
+            }
+        }
+
+        .step-content {
+            margin-top: 1rem;
+        }
+
+        .step-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .step-description {
+            font-size: 0.95rem;
+            color: var(--text-faded);
+            line-height: 1.7;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 5rem 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            box-shadow: 0 15px 35px rgba(245, 158, 11, 0.1);
+        }
+
+        .stat-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(245, 158, 11, 0.05));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+
+        .stat-icon svg {
+            width: 28px;
+            height: 28px;
+            color: var(--primary-color);
+        }
+
+        .stat-value {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--text-primary), var(--text-muted));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: var(--text-faded);
+            font-weight: 500;
+        }
+
+        .stat-bar {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), #fcd34d);
+            border-radius: 2px 2px 0 0;
+            transition: width 0.3s ease;
+        }
+
+        .stat-card:hover .stat-bar {
+            width: 100px;
+        }
+
+        /* Hamburger button */
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 1002;
+            background: var(--bg-primary);
+        }
+
+        .nav-hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            z-index: 1001;
+        }
+
+        .nav-hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--text-primary);
+            margin: 5px 0;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+
+        .nav-hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .nav-hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .nav-hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--bg-primary);
+            z-index: 1000;
+            padding: 100px 32px 32px;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .mobile-menu.active {
+            display: flex;
+        }
+
+        .mobile-menu a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .mobile-menu a:hover {
+            color: var(--primary-color);
+        }
+
+        .mobile-menu .mobile-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        .mobile-menu .mobile-btns .btn {
+            text-align: center;
+            padding: 14px 24px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .nav-actions {
+                display: none;
+            }
+
+            .nav {
+                position: sticky;
+                top: 0;
+                z-index: 1002;
+                background: var(--bg-primary);
+            }
+
+            .nav-hamburger {
+                display: block;
+            }
+
+            .hero-grid-layout {
+                grid-template-columns: 1fr;
+                gap: 48px;
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 38px;
+            }
+
+            .hero-subtitle {
+                max-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-actions {
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .hero-actions .btn {
+                width: 100%;
+            }
+
+            .hero-stats-row {
+                justify-content: center;
+            }
+
+            .hero-float-views {
+                right: 4px;
+                top: 8%;
+            }
+
+            .hero-float-embed {
+                left: 4px;
+                bottom: 14%;
+            }
+
+            .cta-box {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        flex-direction: column;
+        text-align: center;
+        }
+        }
+
+        /* Custom CSS */
+        
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                                    <img src="/uploads/settings/site_logo_1773227133.png" alt="EmbVid.com"
+                        style="height: 40px; max-height: 40px; width: auto; object-fit: contain;">
+                            </a>
+
+            <div class="nav-links">
+                                    <a href="#features" class="nav-link">Features</a>
+                                                <a href="#pricing" class="nav-link">Pricing</a>
+                                    <a href="#faq" class="nav-link">FAQ</a>
+                            </div>
+
+            <div class="nav-actions">
+                                    <a href="https://embvid.com/login" class="btn btn-ghost">Log In</a>
+                                                    <a href="https://embvid.com/register" class="btn btn-primary">Get Started</a>
+                            </div>
+            <button class="nav-hamburger" id="navHamburger" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+                    <a href="#features" onclick="toggleMobileMenu()">Features</a>
+                        <a href="#pricing" onclick="toggleMobileMenu()">Pricing</a>
+                    <a href="#faq" onclick="toggleMobileMenu()">FAQ</a>
+                <div class="mobile-btns">
+                            <a href="https://embvid.com/login" class="btn btn-ghost">Log In</a>
+                                        <a href="https://embvid.com/register" class="btn btn-primary">Get Started</a>
+                    </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="emb-hero" id="hero">
+                    <video class="emb-hero-bg-video" autoplay muted loop playsinline>
+                <source src="/storage/landing/ready-project-file-asmrf-3_1776422579.mp4" type="video/mp4">
+            </video>
+        <div class="emb-hero-inner">
+            <div class="emb-hero-content">
+
+                <h1 class="emb-hero-title">
+                    Stream your videos <em class="emb-hero-em">anywhere.</em>
+                </h1>
+
+                <p class="emb-hero-subtitle">Professional HLS streaming, secure embedding, and detailed analytics. Start with free 3-day trial — no card required.</p>
+
+                <div class="emb-hero-actions">
+                                            <a href="/register" class="emb-btn emb-btn-primary">
+                            Start Free Trial
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                                                        </div>
+
+                            </div>
+
+            <div class="emb-hero-visual">
+                <div class="emb-player-frame">
+                    <div class="emb-player-chrome">
+                        <div class="emb-player-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="emb-player-url">
+                            <svg width="11" height="11" viewBox="0 0 14 14" fill="none">
+                                <rect x="3" y="6" width="8" height="6" rx="1" stroke="currentColor" stroke-width="1"/>
+                                <path d="M5 6V4a2 2 0 014 0v2" stroke="currentColor" stroke-width="1"/>
+                            </svg>
+                            <span>embvid.com/embed/v/a8f2e</span>
+                        </div>
+                    </div>
+                    <div class="emb-player-screen">
+                        <div class="emb-player-bg-pattern"></div>
+                        <button class="emb-player-play" aria-label="Play">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                <path d="M8 5.14v13.72a1 1 0 001.5.86l11.04-6.86a1 1 0 000-1.72L9.5 4.28a1 1 0 00-1.5.86z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                        <div class="emb-player-controls">
+                            <div class="emb-player-bar">
+                                <div class="emb-player-bar-fill"></div>
+                                <div class="emb-player-bar-knob"></div>
+                            </div>
+                            <div class="emb-player-meta">
+                                <span class="emb-player-time">0:42 / 3:18</span>
+                                <span class="emb-player-quality">1080p</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                </div>
+            </div>
+        </div>
+    <!-- Features Section -->
+            <section class="emb-section emb-features" id="features">
+            <div class="emb-section-inner">
+                <div class="emb-section-head">
+                    <div class="emb-section-eyebrow">What's inside</div>
+                    <h2 class="emb-section-title">
+                        Powerful Features
+                    </h2>
+                                            <p class="emb-section-lede">Everything you need to host and deliver professional video content</p>
+                                    </div>
+
+                <div class="emb-features-grid">
+                                            <div class="emb-feature">
+                            <div class="emb-feature-num">01</div>
+                            <div class="emb-feature-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon>
+</svg>
+                                </svg>
+                            </div>
+                            <h3 class="emb-feature-title">HLS Streaming</h3>
+                            <p class="emb-feature-desc">Adaptive bitrate streaming for smooth playback on any device.</p>
+                        </div>
+                                            <div class="emb-feature">
+                            <div class="emb-feature-num">02</div>
+                            <div class="emb-feature-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path>
+</svg>
+                                </svg>
+                            </div>
+                            <h3 class="emb-feature-title">Secure Embedding</h3>
+                            <p class="emb-feature-desc">Domain restrictions and password protection for your content.</p>
+                        </div>
+                                            <div class="emb-feature">
+                            <div class="emb-feature-num">03</div>
+                            <div class="emb-feature-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line>
+</svg>
+                                </svg>
+                            </div>
+                            <h3 class="emb-feature-title">Analytics Dashboard</h3>
+                            <p class="emb-feature-desc">Track views, bandwidth usage, and engagement in real-time.</p>
+                        </div>
+                                            <div class="emb-feature">
+                            <div class="emb-feature-num">04</div>
+                            <div class="emb-feature-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>
+</svg>
+                                </svg>
+                            </div>
+                            <h3 class="emb-feature-title">Developer API</h3>
+                            <p class="emb-feature-desc">Full REST API access for seamless integration.</p>
+                        </div>
+                                            <div class="emb-feature">
+                            <div class="emb-feature-num">05</div>
+                            <div class="emb-feature-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+</svg>
+                                </svg>
+                            </div>
+                            <h3 class="emb-feature-title">Organized Library</h3>
+                            <p class="emb-feature-desc">Folders and search to keep your videos organized.</p>
+                        </div>
+                                            <div class="emb-feature">
+                            <div class="emb-feature-num">06</div>
+                            <div class="emb-feature-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+</svg>
+                                </svg>
+                            </div>
+                            <h3 class="emb-feature-title">Global CDN</h3>
+                            <p class="emb-feature-desc">Fastest delivery worldwide.</p>
+                        </div>
+                                    </div>
+            </div>
+        </section>
+    
+    <!-- How It Works Section -->
+    
+    <!-- Stats Section -->
+    
+    <!-- Pricing Section -->
+            <section class="pricing-section" id="pricing">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title"></h2>
+                    <p class="section-subtitle"></p>
+                </div>
+
+                
+                
+                
+                                    
+                    <div class="pplp-wrap">
+
+                        <div class="pplp-hero">
+                            <div class="pplp-eyebrow">Pay as you go</div>
+                            <h3 class="pplp-h1">Simple pricing.<br><span class="pplp-h1-muted">No subscriptions.</span></h3>
+                            <p class="pplp-lede">You only pay for what you actually use — bandwidth streamed and storage held. Top up your wallet with crypto, upload videos, done.</p>
+                        </div>
+
+                        <div class="pplp-grid-rates" style="grid-template-columns: repeat(2, 1fr);">
+                            <div class="pplp-price-card">
+                                <div class="pplp-price-head">
+                                    <span class="pplp-tag">Bandwidth</span>
+                                    <span class="pplp-meta">Per GB streamed</span>
+                                </div>
+                                <div class="pplp-price-num"><span class="pplp-currency">$</span>0.002</div>
+                                <div class="pplp-price-sub">≈ $2.00 per terabyte</div>
+                                <div class="pplp-price-foot"><span class="pplp-dot"></span> Adaptive HLS up to 4K · Global CDN</div>
+                            </div>
+
+                            <div class="pplp-price-card">
+                                <div class="pplp-price-head">
+                                    <span class="pplp-tag">Storage</span>
+                                    <span class="pplp-meta">Per GB / month</span>
+                                </div>
+                                <div class="pplp-price-num"><span class="pplp-currency">$</span>0.005</div>
+                                <div class="pplp-price-sub">≈ $5.00 per terabyte per month</div>
+                                <div class="pplp-price-foot"><span class="pplp-dot"></span> Redundant storage · Daily snapshots</div>
+                            </div>
+
+                                                    </div>
+
+
+
+                        <div class="pplp-calc-header-outside">
+                            <span class="pplp-eyebrow">Cost estimator</span>
+                            <h4 class="pplp-h2 pplp-h2-center">Model your monthly bill</h4>
+                            <p class="pplp-calc-subtitle">Enter your monthly traffic to calculate estimated pricing.</p>
+                        </div>
+                        <div class="pplp-calc">
+                            <div class="pplp-calc-head" style="justify-content: flex-end;">
+                                <div class="pplp-unit-toggle">
+                                    <span id="pplp-gb-label" class="pplp-unit-label pplp-unit-active">GB</span>
+                                    <button type="button" onclick="pplpToggleUnit()" class="pplp-unit-switch">
+                                        <span id="pplp-unit-dot" class="pplp-unit-dot"></span>
+                                    </button>
+                                    <span id="pplp-tb-label" class="pplp-unit-label">TB</span>
+                                </div>
+                            </div>
+                            <div class="pplp-calc-grid">
+                                <div class="pplp-calc-field">
+                                    <label class="pplp-calc-label">Storage (<span id="pplp-s-unit">GB</span>)</label>
+                                    <input type="number" id="pplp-storage" value="100" min="0" step="any" oninput="pplpCalcCost()" class="pplp-calc-input">
+                                </div>
+                                <div class="pplp-calc-field">
+                                    <label class="pplp-calc-label">Bandwidth (<span id="pplp-b-unit">GB</span>)</label>
+                                    <input type="number" id="pplp-bandwidth" value="500" min="0" step="any" oninput="pplpCalcCost()" class="pplp-calc-input">
+                                </div>
+                                <div class="pplp-calc-result">
+                                    <div class="pplp-calc-result-label">Estimated monthly cost</div>
+                                    <div id="pplp-calc-result" class="pplp-calc-result-value">$2.90</div>
+                                    <div class="pplp-calc-result-sub">Based on current rates</div>
+                                </div>
+                            </div>
+                        </div>
+
+                                                                            <div id="faq" class="pplp-faq">
+                                <h4 class="pplp-h2-center">Common questions</h4>
+                                                                                                    <details class="pplp-faq-item" open>
+                                        <summary>How does billing actually work?</summary>
+                                        <p>Deposit any amount, any time. We deduct bandwidth and storage charges from your balance as you use them. No monthly fees, no subscriptions, no minimums.</p>
+                                    </details>
+                                                                    <details class="pplp-faq-item">
+                                        <summary>What payment methods do you accept?</summary>
+                                        <p>Bitcoin, USDT, Ethereum, and 30+ other cryptocurrencies via Cryptomus. No credit cards, no PayPal — pure crypto, no questions asked.</p>
+                                    </details>
+                                                                    <details class="pplp-faq-item">
+                                        <summary>Is there a free trial?</summary>
+                                        <p>Yes. New accounts get a 3-day trial with full platform access and a starter bandwidth allocation — no crypto deposit required.</p>
+                                    </details>
+                                                                    <details class="pplp-faq-item">
+                                        <summary>What counts as bandwidth?</summary>
+                                        <p>Only successful HTTP 200 and 206 responses on video segments. Failed requests, redirects, and preflight calls never hit your bill.</p>
+                                    </details>
+                                                                    <details class="pplp-faq-item">
+                                        <summary>What is the maximum file size?</summary>
+                                        <p>Individual uploads are capped at 20 GB per file. Files are chunked, uploaded directly to our transcoding cluster, and processed into adaptive HLS in parallel.</p>
+                                    </details>
+                                                                    <details class="pplp-faq-item">
+                                        <summary>Can I monetize my videos?</summary>
+                                        <p>Yes. Run VAST preroll and popup ads from any network or your own direct deals. We do not take a cut of your ad revenue.</p>
+                                    </details>
+                                                                    <details class="pplp-faq-item">
+                                        <summary>Can I customize the player with my own branding?</summary>
+                                        <p>Yes. choose brand colors, customize the play button, and control what shows on the player. Your videos look like yours, not ours.</p>
+                                    </details>
+                                                            </div>
+                        
+                    </div>
+
+                    <style>
+                        .pplp-wrap { max-width: 1100px; margin: 0 auto; color: var(--text-primary); }
+                        .pplp-wrap * { box-sizing: border-box; }
+                        .pplp-hero { text-align: center; padding: 0 0 3rem; }
+                        .pplp-eyebrow { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--primary-color); margin-bottom: 1.25rem; padding: 6px 14px; border: 1px solid rgba(255,165,0,0.35); border-radius: 9999px; background: rgba(255,165,0,0.05); }
+                        .pplp-eyebrow-small { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--primary-color); margin-bottom: 0.625rem; }
+                        
+                        /* pplp-font-unify-v2 */
+                        .pricing-section, .pricing-section * { font-family: "Inter Tight", var(--emb-sans), system-ui, sans-serif; }
+                        .pricing-section .pplp-eyebrow-small,
+                        .pricing-section .pplp-unit-label,
+                        .pricing-section .pplp-calc-label,
+                        .pricing-section .pplp-price-meta-right { font-family: "JetBrains Mono", var(--emb-mono), monospace; }
+                        
+                        .pplp-h1 { font-family: "Inter Tight", var(--emb-sans), system-ui, sans-serif; font-size: clamp(32px, 5vw, 56px); font-weight: 600; letter-spacing: -0.035em; line-height: 1.05; margin: 0 0 1.25rem; color: var(--text-primary); }
+                        .pplp-h1-muted { color: var(--text-muted); }
+                        .pplp-h2 { font-family: var(--emb-sans, "Inter Tight", system-ui, sans-serif); font-size: clamp(28px, 3.5vw, 42px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.05; margin: 0 0 0.75rem; color: var(--text-primary); }
+                        .pplp-h2-center { font-family: var(--emb-sans, "Inter Tight", system-ui, sans-serif); font-size: clamp(28px, 3.5vw, 42px); font-weight: 700; letter-spacing: -0.035em; line-height: 1.05; margin: 0 0 2rem; text-align: center; color: var(--text-primary); }
+                        .pplp-lede { font-size: 17px; color: var(--text-muted); line-height: 1.6; max-width: 56ch; margin: 0 auto; }
+                        .pplp-lede-small { font-size: 15px; color: var(--text-muted); line-height: 1.6; max-width: 52ch; margin: 0.5rem 0 0; }
+
+                        .pplp-grid-rates { display: grid; gap: 1.25rem; margin-bottom: 1.75rem; }
+                        .pplp-price-card { padding: 2.25rem; border: 1px solid var(--border-color); border-radius: 16px; background: rgba(255, 255, 255, 0.015); position: relative; overflow: hidden; transition: border-color 0.2s, background 0.2s; }
+                        html.light .pplp-price-card { background: rgba(0, 0, 0, 0.015); }
+                        .pplp-price-card:hover { border-color: var(--primary-color); }
+                        .pplp-price-card::before { content: ""; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: var(--primary-color); }
+                        .pplp-price-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.25rem; }
+                        .pplp-tag { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--primary-color); }
+                        .pplp-meta { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+                        .pplp-price-num { font-family: var(--emb-sans, "Inter Tight", system-ui, sans-serif); font-size: 60px; font-weight: 700; letter-spacing: -0.04em; line-height: 1; font-variant-numeric: tabular-nums; margin-bottom: 0.875rem; display: flex; align-items: flex-start; color: var(--text-primary); }
+                        .pplp-currency { font-size: 26px; color: var(--text-muted); font-weight: 500; margin-top: 10px; margin-right: 4px; }
+                        .pplp-price-sub { font-size: 14px; color: var(--text-muted); line-height: 1.5; margin-bottom: 1.25rem; }
+                        .pplp-price-foot { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--text-primary); padding-top: 1.25rem; border-top: 1px solid var(--border-color); }
+                        .pplp-dot { width: 8px; height: 8px; border-radius: 50%; background: #10b981; display: inline-block; flex-shrink: 0; }
+
+                        .pplp-cta-row { display: flex; gap: 0.75rem; justify-content: center; margin-bottom: 5rem; flex-wrap: wrap; }
+                        .pplp-feat { padding: 1.75rem 1.5rem; background: var(--bg-primary); transition: background 0.2s; }
+                        .pplp-feat:hover { background: rgba(255, 255, 255, 0.02); }
+                        html.light .pplp-feat:hover { background: rgba(0, 0, 0, 0.02); }
+                        .pplp-feat-icon { color: var(--primary-color); margin-bottom: 0.875rem; display: block; }
+                        .pplp-feat-title { font-size: 15px; font-weight: 700; color: var(--text-primary); margin-bottom: 4px; }
+                        .pplp-feat-sub { font-size: 13px; color: var(--text-muted); line-height: 1.4; }
+
+                        .pplp-calc { padding: 3rem; border: 1px solid var(--border-color); border-radius: 16px; margin: 3rem 0; background: rgba(255, 255, 255, 0.015); }
+                        html.light .pplp-calc { background: rgba(0, 0, 0, 0.015); }
+                        .pplp-calc-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 1.25rem; margin-bottom: 2rem; flex-wrap: wrap; }
+                        .pplp-unit-toggle { display: inline-flex; align-items: center; gap: 0.625rem; }
+                        .pplp-unit-label { font-size: 14px; font-weight: 500; color: var(--text-muted); }
+                        .pplp-unit-active { color: var(--text-primary); font-weight: 700; }
+                        .pplp-unit-switch { position: relative; width: 48px; height: 26px; background: var(--primary-color); border-radius: 9999px; border: none; cursor: pointer; padding: 0; }
+                        .pplp-unit-dot { position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; background: #ffffff; border-radius: 50%; transition: transform 0.2s ease; }
+                        .pplp-calc-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem; align-items: stretch; }
+                        .pplp-calc-field { display: flex; flex-direction: column; gap: 0.625rem; justify-content: flex-end; }
+                        .pplp-calc-label { font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+                        .pplp-calc-input { width: 100%; padding: 0.875rem 1rem; border: 1px solid var(--border-color); border-radius: 10px; font-size: 16px; color: var(--text-primary); font-family: inherit; font-weight: 600; outline: none; background: var(--bg-primary); transition: border-color 0.15s; }
+                        .pplp-calc-input:focus { border-color: var(--primary-color); }
+                        .pplp-calc-result { background: var(--primary-color); border-radius: 12px; padding: 1.125rem 1.375rem; display: flex; flex-direction: column; justify-content: center; color: #ffffff; }
+                        .pplp-calc-result-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.75); margin-bottom: 6px; }
+                        .pplp-calc-result-value { font-size: 36px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+                        .pplp-calc-result-sub { font-size: 12px; color: rgba(255,255,255,0.7); margin-top: 4px; }
+
+                        .pplp-faq { padding: 3rem 0 0; border-top: 1px solid var(--border-color); }
+                        .pplp-faq-item { border-top: 1px solid var(--border-color); padding: 1.25rem 0; }
+                        .pplp-faq-item:last-child { border-bottom: 1px solid var(--border-color); }
+                        .pplp-faq-item summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 17px; font-weight: 600; color: var(--text-primary); }
+                        .pplp-faq-item summary::-webkit-details-marker { display: none; }
+                        .pplp-faq-item summary::after { content: "+"; color: var(--text-muted); font-size: 22px; font-weight: 300; line-height: 1; }
+                        .pplp-faq-item[open] summary::after { content: "–"; }
+                        .pplp-faq-item p { margin: 0.875rem 0 0; font-size: 15px; color: var(--text-muted); line-height: 1.65; max-width: 70ch; }
+
+                        .pplp-btn { display: inline-flex; align-items: center; gap: 8px; padding: 0.875rem 1.75rem; border-radius: 10px; font-size: 15px; font-weight: 700; text-decoration: none; border: none; cursor: pointer; font-family: inherit; transition: background 0.15s, transform 0.1s, border-color 0.15s; white-space: nowrap; }
+                        .pplp-btn-primary { background: var(--primary-color); color: #ffffff; }
+                        .pplp-btn-primary:hover { opacity: 0.9; }
+                        .pplp-btn-primary:active { transform: scale(0.98); }
+                        .pplp-btn-ghost { background: transparent; color: var(--text-primary); border: 1px solid var(--border-color); }
+                        .pplp-btn-ghost:hover { border-color: var(--primary-color); }
+
+                        @media (max-width: 880px) {
+                            .pplp-grid-rates { grid-template-columns: 1fr !important; }
+                            .pplp-calc-grid { grid-template-columns: 1fr; }
+                            .pplp-calc { padding: 2rem; }
+                            .pplp-price-card { padding: 1.75rem; }
+                            .pplp-price-num { font-size: 48px; }
+                        }
+                        @media (max-width: 520px) {
+                        }
+                    
+
+                        /* =================================================
+                           UNIFIED SECTION SPACING v2 — unified-spacing-v2
+                           Placed in second style block to win specificity
+                           ================================================= */
+                        .emb-section,
+                        section.section,
+                        section.stats-section,
+                        section.pricing-section,
+                        section.cta-section,
+                        section.steps-section {
+                            padding: 30px 40px !important;
+                        }
+                        .emb-hero {
+                            padding: 20px 40px 30px !important;
+                        }
+                        @media (max-width: 980px) {
+                            .emb-section,
+                            section.section,
+                            section.stats-section,
+                            section.pricing-section,
+                            section.cta-section,
+                            section.steps-section {
+                                padding: 24px 24px !important;
+                            }
+                            .emb-hero {
+                                padding: 16px 24px 24px !important;
+                            }
+                        }
+                        .emb-section-inner,
+                        .section-container,
+                        .pricing-container,
+                        .pplp-container {
+                            max-width: 1240px !important;
+                            margin: 0 auto !important;
+                            width: 100% !important;
+                        }
+                    
+
+                        /* pricing-internal-tighten-v1 */
+                        .pricing-section .section-header { margin-bottom: 0 !important; }
+                        .pricing-section .section-container { padding-top: 0 !important; padding-bottom: 0 !important; }
+                        .pricing-section .pplp-hero { padding: 0 0 2rem !important; }
+                    
+
+                        /* pplp-calc-header-outside-v1 */
+                        .pplp-calc-header-outside {
+                            text-align: center;
+                            max-width: 640px;
+                            margin: 3rem auto 1.5rem;
+                        }
+                        .pplp-calc-header-outside .pplp-eyebrow {
+                            margin-bottom: 1rem;
+                        }
+                        .pplp-calc-header-outside .pplp-h2 {
+                            text-align: center;
+                            margin: 0;
+                        }
+                    
+
+                        /* pplp-calc-tighten-v1 */
+                        .pplp-calc-head { margin-bottom: 1rem !important; }
+                        .pplp-calc { padding: 2rem !important; }
+                    
+
+                        /* emb-eyebrow-pill-v1 — match PAY AS YOU GO pill style */
+                        .emb-section-eyebrow {
+                            display: inline-block !important;
+                            font-size: 11px !important;
+                            font-weight: 700 !important;
+                            text-transform: uppercase !important;
+                            letter-spacing: 0.14em !important;
+                            color: var(--primary-color) !important;
+                            padding: 6px 14px !important;
+                            border: 1px solid rgba(255,165,0,0.35) !important;
+                            background: rgba(255,165,0,0.05) !important;
+                            border-radius: 9999px !important;
+                            margin-bottom: 1.25rem !important;
+                        }
+                    
+
+                        /* emb-btn-match-navbar-v1 — hero button matches navbar Get Started */
+                        .emb-btn-primary {
+                            background: var(--primary-color) !important;
+                            color: #0a0a0b !important;
+                            position: relative !important;
+                            overflow: hidden !important;
+                            z-index: 1 !important;
+                            border: none !important;
+                            transition: transform 0.25s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.3s ease !important;
+                        }
+                        .emb-btn-primary::before {
+                            content: "";
+                            position: absolute;
+                            inset: -2px;
+                            border-radius: 10px;
+                            background: linear-gradient(135deg, #f59e0b, #f97316, #fbbf24, #f59e0b);
+                            background-size: 300% 300%;
+                            z-index: -1;
+                            opacity: 0;
+                            transition: opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+                        }
+                        .emb-btn-primary:hover::before {
+                            opacity: 1;
+                            animation: emb-btn-gradient-shift 2s linear infinite;
+                        }
+                        .emb-btn-primary:hover {
+                            box-shadow: 0 0 24px rgba(245, 158, 11, 0.2);
+                            transform: translateY(-1px);
+                        }
+                        .emb-btn-primary svg {
+                            transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+                        }
+                        .emb-btn-primary:hover svg {
+                            transform: translateX(3px);
+                        }
+                        @keyframes emb-btn-gradient-shift {
+                            0% { background-position: 0% 50%; }
+                            50% { background-position: 100% 50%; }
+                            100% { background-position: 0% 50%; }
+                        }
+                    
+
+                        /* pplp-calc-subtitle-v1 */
+                        .pplp-calc-subtitle {
+                            font-size: 17px;
+                            color: var(--text-muted);
+                            line-height: 1.6;
+                            text-align: center;
+                            max-width: 52ch;
+                            margin: 0.75rem auto 0;
+                        }
+                    </style>
+
+                    <script>
+                        (function() {
+                            var useTB = false;
+                            var bwPrice = 0.002;
+                            var stPrice = 0.005;
+                            window.pplpToggleUnit = function() {
+                                useTB = !useTB;
+                                var dot = document.getElementById("pplp-unit-dot");
+                                var gb = document.getElementById("pplp-gb-label");
+                                var tb = document.getElementById("pplp-tb-label");
+                                var sU = document.getElementById("pplp-s-unit");
+                                var bU = document.getElementById("pplp-b-unit");
+                                var sI = document.getElementById("pplp-storage");
+                                var bI = document.getElementById("pplp-bandwidth");
+                                dot.style.transform = useTB ? "translateX(22px)" : "translateX(0)";
+                                gb.classList.toggle("pplp-unit-active", !useTB);
+                                tb.classList.toggle("pplp-unit-active", useTB);
+                                sU.textContent = useTB ? "TB" : "GB";
+                                bU.textContent = useTB ? "TB" : "GB";
+                                if (useTB) {
+                                    sI.value = (parseFloat(sI.value || 0) / 1000).toFixed(2).replace(/\.00$/, '');
+                                    bI.value = (parseFloat(bI.value || 0) / 1000).toFixed(2).replace(/\.00$/, '');
+                                } else {
+                                    sI.value = Math.round(parseFloat(sI.value || 0) * 1000);
+                                    bI.value = Math.round(parseFloat(bI.value || 0) * 1000);
+                                }
+                                pplpCalcCost();
+                            };
+                            window.pplpCalcCost = function() {
+                                var s = parseFloat(document.getElementById("pplp-storage").value) || 0;
+                                var b = parseFloat(document.getElementById("pplp-bandwidth").value) || 0;
+                                if (useTB) { s *= 1000; b *= 1000; }
+                                var total = (s * stPrice) + (b * bwPrice);
+                                document.getElementById("pplp-calc-result").textContent = "$" + total.toFixed(2);
+                            };
+                            pplpCalcCost();
+                        })();
+                    </script>
+                
+            </div>
+        </section>
+    
+    <!-- CTA Section -->
+            <section class="cta-section">
+            <div class="section-container">
+                <div class="cta-box">
+                    <div class="cta-content">
+                        <h2 class="cta-title">Ready to Get Started?</h2>
+                        <p class="cta-subtitle">Join thousands of creators who trust us with their video content.</p>
+                                                    <a href="/register" class="btn btn-primary btn-large">
+                                Create Free Account
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2.5">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                                            </div>
+                </div>
+            </div>
+        </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-copyright">
+                    © 2026 EmbVid.com. All rights reserved.
+                </div>
+
+                                    <div class="footer-links">
+                                                                                    <a href="/page/privacy-policy" class="footer-link">Privacy Policy</a>
+                                                                                                                <a href="/page/terms-of-service" class="footer-link">Terms of Service</a>
+                                                                                                                <a href="/page/Contact-Us" class="footer-link">Contact</a>
+                                                                                                                <a href="/page/dmca" class="footer-link">DMCA Policy</a>
+                                                                        </div>
+                
+                            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Pricing toggle
+        let lpYearly = false;
+
+        function toggleLpPricing() {
+            lpYearly = !lpYearly;
+            const dot = document.getElementById('lp-toggle-dot');
+            const mLabel = document.getElementById('lp-monthly-label');
+            const yLabel = document.getElementById('lp-yearly-label');
+            if (dot) dot.style.transform = lpYearly ? 'translateX(28px)' : 'translateX(0)';
+            if (mLabel) {
+                mLabel.classList.toggle('active', !lpYearly);
+            }
+            if (yLabel) {
+                yLabel.classList.toggle('active', lpYearly);
+            }
+            document.querySelectorAll('.lp-price-monthly').forEach(el => el.style.display = lpYearly ? 'none' : '');
+            document.querySelectorAll('.lp-price-yearly').forEach(el => el.style.display = lpYearly ? '' : 'none');
+        }
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const hamburger = document.getElementById('navHamburger');
+            menu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
+        }
+    </script>
+    <script>
+        function toggleMobileMenu() {
+            document.getElementById('mobileMenu').classList.toggle('active');
+            document.getElementById('navHamburger').classList.toggle('active');
+            document.body.style.overflow = document.getElementById('mobileMenu').classList.contains('active') ? 'hidden' :
+                '';
+        }
+    </script>
+</body>
+
+</html>
