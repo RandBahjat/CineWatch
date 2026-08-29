@@ -1878,7 +1878,7 @@ function openDetailsModal(movieId) {
 
     const userRatingLabel = document.getElementById("userRatingLabel");
     if (userRatingLabel) {
-      userRatingLabel.textContent = isCkb ? "رێژە" : (isAr ? "التقييم" : "Rate:");
+      userRatingLabel.textContent = isCkb ? "هەڵسەنگاندن" : (isAr ? "التقييم" : "Rate:");
     }
 
     setOverviewElement(document.getElementById("detailsOverview"), getLocalizedOverview(movie));
@@ -4363,7 +4363,7 @@ async function initializeRatingSystem(movieId) {
     const cookies = document.cookie || '';
     const isCkb = cookies.includes('googtrans=/en/ckb');
     const isAr = cookies.includes('googtrans=/en/ar');
-    userRatingLabel.textContent = isCkb ? 'رێژە' : (isAr ? 'التقييم' : 'Rate:');
+    userRatingLabel.textContent = isCkb ? 'هەڵسەنگاندن' : (isAr ? 'التقييم' : 'Rate:');
   }
 
   starsContainer.innerHTML = ''; // Clear container
