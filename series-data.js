@@ -23,7 +23,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/ruwzidqanSyhhMEk6kCVd9BLui1.jpg',
     videoUrl: '95350',
     overview: 'John Stewart, new recruit, and Hal Jordan, veteran Lantern, two space cops dragged into dark earth-based mystery investigating murder in American heartland. Story split across two timelines, 2016 and 2026, buddy-cop energy meets superhero stakes.',
-    
+    overviewKurdish:"
     director: 'Chris Mundy',
     cast: [
       'Kyle Chandler, Aaron Pierre, Kelly Macdonald, Garret Dillahunt, Poorna Jagannathan, Ulrich Thomsen, Nathan Fillion, Laura Linney'
