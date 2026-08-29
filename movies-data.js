@@ -50,7 +50,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Grand Theft Auto VI: An Extended Look",
+    title: "Mousetrap",
     type: "Movie",
     year: 2026,
     rating: 8.4,
