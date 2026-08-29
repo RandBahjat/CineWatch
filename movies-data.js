@@ -21,7 +21,7 @@ window._MOVIES_DATA = [
     overview: "Young son vanish, widower turn to estranged father, retired detective who once put away serial killer, The Whisper Man, terrorize quiet town Featherbank fifteen year back. Old case, new crime tangle together, dark rumor of accomplice resurface.",
     overviewKurdish: "کوڕی گەنجی پیاوێکی بێوەژن ون دەبێت لە فێدەربانک، شارۆچکەیەکی هێمن کە پازدە ساڵ لەمەوبەر لەلایەن پیاو کوژێک بە ناوی ویسپەر مان تۆقێندرابوو. ئەمە وای لێدەکات ڕوو لە باوکی لێدوورکەوتووی خۆی بکات، پۆلیسێکی خانەنشین کە ئەو کاتە پیاو کوژی گرتبوو. کەیسی کۆن و تاوانی نوێ تێکەڵ دەبنەوە، تاوتوێی نهێنی هاوکارێکی تاریک دووبارە سەرهەڵدەدات.",
     director: "James Ashcroft",
-    case:["Robert De Niro, Michelle Monaghan, Adam Scott, Hamish Linklater, Owen Teague, Michael Keaton, John Carroll Lynch"],
+    cast: ["Robert De Niro, Michelle Monaghan, Adam Scott, Hamish Linklater, Owen Teague, Michael Keaton, John Carroll Lynch"],
     trending: true,
     featured: true,
     is4k: false,
