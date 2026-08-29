@@ -4176,10 +4176,12 @@ function updateIframeServer() {
 
       if (!serverSelect.dataset.animeServersPopulated) {
         serverSelect.innerHTML = `
-          <option value="vidsrc-sbs">VidSrc (Reliable / Fast)</option>
-          <option value="embvid">EmbVid (Premium Server)</option>
+          <option value="autoembed">AutoEmbed (Fast / HD)</option>
+          <option value="vidlink">VidLink (Multi-Audio / Sub)</option>
+          <option value="vidsrc-sbs">VidSrc (Reliable)</option>
+          <option value="zxcstream">ZXC Stream (Japanese Audio)</option>
           <option value="vidsrc-me">VidSrc ME (Multi-Language)</option>
-          <option value="zxcstream">ZXC Stream (Japanese Sub)</option>
+          <option value="embvid">EmbVid (Dashboard Server)</option>
         `;
         serverSelect.dataset.animeServersPopulated = "true";
       }
@@ -4203,7 +4205,15 @@ function updateIframeServer() {
         }
       }
 
-      if (selected === 'embvid') {
+      if (selected === 'autoembed') {
+        newUrl = data.type === 'tv'
+          ? `https://player.autoembed.cc/embed/tv/${data.id}/${mappedSeason}/${mappedEpisode}`
+          : `https://player.autoembed.cc/embed/movie/${data.id}`;
+      } else if (selected === 'vidlink') {
+        newUrl = data.type === 'tv'
+          ? `https://vidlink.pro/tv/${data.id}/${mappedSeason}/${mappedEpisode}`
+          : `https://vidlink.pro/movie/${data.id}`;
+      } else if (selected === 'embvid') {
         const embKey = 'vm_live_xGHB0XJKZEnGxbsohGJo7P0akb8rsfLD';
         newUrl = data.type === 'tv'
           ? `https://embvid.com/embed/tv/${data.id}/${mappedSeason}/${mappedEpisode}?api_key=${embKey}`
