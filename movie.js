@@ -1701,7 +1701,7 @@ async function renderCommentsSection(movieId) {
 
   const placeholderText = isCkb ? 'بۆچوونێک بنووسە...' : (isAr ? 'اكتب تعليقاً...' : 'Write a comment...');
   const postBtnText = isCkb ? 'ناردنی بۆچوون' : (isAr ? 'إرسال التعليق' : 'Post Comment');
-  const loginNotice = isCkb ? 'تکایە خۆت تۆماربکە سەرەتا.' : (isAr ? 'يجب تسجيل الدخول لإضافة تعليق.' : 'You must be logged in to post a comment.');
+  const loginNotice = isCkb ? 'تکایە خۆت تۆماربکە سەرەتا' : (isAr ? 'يجب تسجيل الدخول لإضافة تعليق.' : 'You must be logged in to post a comment.');
   const loginBtnText = isCkb ? 'چوونەژوورەوە یان دروستکردنی هەژمار' : (isAr ? 'تسجيل الدخول أو إنشاء حساب' : 'Log In or Sign Up');
   const noCommentsText = isCkb ? 'هیچ بۆچوونێک نییە، یەکەم کەس بە!' : (isAr ? 'لا توجد تعليقات بعد. كن أول من يعلق!' : 'No comments yet. Be the first!');
   const failedText = isCkb ? 'بارکردنی بۆچوونەکان سەرکەوتوو نەبوو.' : (isAr ? 'فشل تحميل التعليقات.' : 'Failed to load comments.');
