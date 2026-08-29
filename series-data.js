@@ -20,7 +20,7 @@ window._SERIES_DATA = [
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/2mwgHfOyrFrmvozjFoEXHRdfGhv.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/bYtQiIibQzvMeXvLMKVcZ5DlT31.jpg',
-    videoUrl: ',
+    videoUrl: '290193',
     overview: 'John Stewart, new recruit, and Hal Jordan, veteran Lantern, two space cops dragged into dark earth-based mystery investigating murder in American heartland. Story split across two timelines, 2016 and 2026, buddy-cop energy meets superhero stakes.',
     overviewKurdish:"جۆن ستیوارت، ئەندامێکی نوێ، و هال جۆردان، لانتەرنێکی شارەزا، دوو پۆلیسی سەرۆکی گەردوونی دەگیرێن ناو نهێنییەکی تاریکی سەر زەوی کە پەیوەستە بە لێکۆڵینەوەی کوشتنێک لە ناوچەیەکی ئەمریکی. چیرۆکەکە بەسەر دوو کاتدا دابەش دەبێت، ٢٠١٦ و ٢٠٢٦، وزەی هاوڕێیەتی پۆلیسی تێکەڵ دەبێت لەگەڵ مەترسییەکانی پاڵەوانێکی سوپەرهیرۆ.",
     director: 'Chris Mundy',
