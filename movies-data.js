@@ -19,7 +19,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/uauoVKKCkNA9iWjgJCL8TdSfLf5.jpg",
     videoUrl: "860508",
     overview: "Young son vanish, widower turn to estranged father, retired detective who once put away serial killer, The Whisper Man, terrorize quiet town Featherbank fifteen year back. Old case, new crime tangle together, dark rumor of accomplice resurface.",
-    overviewKurdish: "کوڕێکی گەنج ون دەبێت، پیاوێکی بێوەژن ڕوو لە باوکی لێدوورکەوتووی خۆی دەکات، پۆلیسێکی خانەنشین کە جارێکیان کوشەرێکی زنجیرەیی,"پیاوی چرپە، گرتبوو کە پازدە ساڵ لەمەوبەر شارۆچکەی هێمنی فێدەربانکی تۆقاندبوو. کەیسی کۆن و تاوانی نوێ تێکەڵ دەبنەوە، تاوتوێی نهێنی هاوکارێکی تاریک دووبارە سەرهەڵدەدات.",
+    overviewKurdish: "کوڕێکی گەنج ون دەبێت، پیاوێکی بێوەژن ڕوو لە باوکی لێدوورکەوتووی خۆی دەکات، پۆلیسێکی خانەنشین کە جارێکیان کوشەرێکی زنجیرەیی,پیاوی چرپە، گرتبوو کە پازدە ساڵ لەمەوبەر شارۆچکەی هێمنی فێدەربانکی تۆقاندبوو. کەیسی کۆن و تاوانی نوێ تێکەڵ دەبنەوە، تاوتوێی نهێنی هاوکارێکی تاریک دووبارە سەرهەڵدەدات.",
     director: "Rockstar Games",
     trending: true,
     featured: true,
