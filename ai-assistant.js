@@ -16,7 +16,7 @@
   }
 
   const PRIMARY_MODEL = "gemini-3.6-flash";
-  const FALLBACK_MODEL = "gemini-3.7-flash";
+  const FALLBACK_MODEL = "gemini-3.5-flash";
 
   function getApiEndpoint(model) {
     return `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${getDecryptedKey()}`;
@@ -50,61 +50,77 @@
     return local;
   }
 
+  function toSafeText(val) {
+    if (!val) return "";
+    if (Array.isArray(val)) return val.map((v) => String(v || "")).join(" ").toLowerCase();
+    return String(val).toLowerCase();
+  }
+
   // Search catalog for relevant titles based on user query (actors, directors, genres, keywords)
   function searchCatalogForQuery(queryText) {
-    const allMedia = getAllMedia();
-    if (!allMedia || !allMedia.length || !queryText) return [];
-    const q = queryText.toLowerCase().trim();
-    const stopWords = new Set([
-      "show", "all", "me", "movie", "movies", "series", "the", "in", "site", "film", "films",
-      "with", "from", "recommend", "of", "a", "an", "for", "list", "give", "can", "you", "tell",
-      "about", "please", "what", "are", "best", "top", "watch", "streaming", "catalog", "is",
-      "were", "was", "any", "good", "new", "old", "some"
-    ]);
+    try {
+      const allMedia = getAllMedia();
+      if (!allMedia || !allMedia.length || !queryText) return [];
+      const q = String(queryText).toLowerCase().trim();
+      const stopWords = new Set([
+        "show", "all", "me", "movie", "movies", "series", "the", "in", "site", "film", "films",
+        "with", "from", "recommend", "of", "a", "an", "for", "list", "give", "can", "you", "tell",
+        "about", "please", "what", "are", "best", "top", "watch", "streaming", "catalog", "is",
+        "were", "was", "any", "good", "new", "old", "some"
+      ]);
 
-    const tokens = q.split(/[^a-zA-Z0-9\u0600-\u06FF]+/).filter((t) => t.length > 1 && !stopWords.has(t));
+      const tokens = q.split(/[^a-zA-Z0-9\u0600-\u06FF]+/).filter((t) => t.length > 1 && !stopWords.has(t));
 
-    const matches = allMedia.filter((m) => {
-      const title = (m.title || "").toLowerCase();
-      const cast = Array.isArray(m.cast) ? m.cast.join(" ").toLowerCase() : (m.cast || "").toLowerCase();
-      const director = (m.director || "").toLowerCase();
-      const genres = Array.isArray(m.genres) ? m.genres.join(" ").toLowerCase() : (m.genres || "").toLowerCase();
-      const hay = `${title} ${cast} ${director} ${genres}`;
+      const matches = allMedia.filter((m) => {
+        const title = toSafeText(m.title);
+        const cast = toSafeText(m.cast);
+        const director = toSafeText(m.director);
+        const genres = toSafeText(m.genres);
+        const hay = `${title} ${cast} ${director} ${genres}`;
 
-      // Full phrase match in title, cast, or director
-      if (q.length > 2 && (title.includes(q) || cast.includes(q) || director.includes(q))) {
-        return true;
-      }
-      // Multi-token match across all fields
-      if (tokens.length > 0 && tokens.every((tok) => hay.includes(tok))) {
-        return true;
-      }
-      return false;
-    });
+        // Full phrase match in title, cast, or director
+        if (q.length > 2 && (title.includes(q) || cast.includes(q) || director.includes(q))) {
+          return true;
+        }
+        // Multi-token match across all fields
+        if (tokens.length > 0 && tokens.every((tok) => hay.includes(tok))) {
+          return true;
+        }
+        return false;
+      });
 
-    return Array.from(new Set(matches)).slice(0, 50);
+      return Array.from(new Set(matches)).slice(0, 50);
+    } catch (e) {
+      console.warn("searchCatalogForQuery error:", e);
+      return [];
+    }
   }
 
   // Get concise catalog summary for Gemini system instruction
   function getCatalogContext(currentQuery = "") {
-    const allMedia = getAllMedia();
-    if (!allMedia || !allMedia.length) return "";
+    try {
+      const allMedia = getAllMedia();
+      if (!allMedia || !allMedia.length) return "";
 
-    // 1. Specific matches for the query
-    const matched = currentQuery ? searchCatalogForQuery(currentQuery) : [];
-    let matchSection = "";
-    if (matched.length > 0) {
-      matchSection = `\n\n*** MATCHING CINEWATCH DATABASE TITLES FOUND FOR THIS QUERY (${matched.length} titles in database) ***\n` +
-        matched.map((m) => {
-          const castStr = Array.isArray(m.cast) ? m.cast.slice(0, 4).join(", ") : (m.cast || "");
-          const dirStr = m.director ? ` | Dir: ${m.director}` : "";
-          const genresStr = Array.isArray(m.genres) ? m.genres.slice(0, 2).join(", ") : (m.genres || "");
-          return `• "${m.title}" (${m.year}) | ID: ${m.id} | Rating: ${m.rating} | Type: ${m.type || (m.seasons ? "TV Show" : "Movie")} | Genres: ${genresStr}${dirStr} | Cast: ${castStr}`;
-        }).join("\n") +
-        `\n\nCRITICAL INSTRUCTION: The user is asking for these titles/actor/director/genre. You MUST list ALL ${matched.length} titles above and attach their exact [[MOVIE_CARD: <id>]] tags so the user sees every single card. Keep description to 1 sentence per title so the full list outputs quickly.`;
+      // 1. Specific matches for the query
+      const matched = currentQuery ? searchCatalogForQuery(currentQuery) : [];
+      let matchSection = "";
+      if (matched.length > 0) {
+        matchSection = `\n\n*** MATCHING CINEWATCH DATABASE TITLES FOUND FOR THIS QUERY (${matched.length} titles in database) ***\n` +
+          matched.map((m) => {
+            const castStr = Array.isArray(m.cast) ? m.cast.slice(0, 4).join(", ") : String(m.cast || "");
+            const dirStr = m.director ? ` | Dir: ${Array.isArray(m.director) ? m.director.join(", ") : m.director}` : "";
+            const genresStr = Array.isArray(m.genres) ? m.genres.slice(0, 2).join(", ") : String(m.genres || "");
+            return `• "${m.title}" (${m.year}) | ID: ${m.id} | Rating: ${m.rating} | Type: ${m.type || (m.seasons ? "TV Show" : "Movie")} | Genres: ${genresStr}${dirStr} | Cast: ${castStr}`;
+          }).join("\n") +
+          `\n\nCRITICAL INSTRUCTION: The user is asking for these titles/actor/director/genre. You MUST list ALL ${matched.length} titles above and attach their exact [[MOVIE_CARD: <id>]] tags so the user sees every single card. Keep description to 1 sentence per title so the full list outputs quickly.`;
+      }
+
+      return matchSection;
+    } catch (e) {
+      console.warn("getCatalogContext error:", e);
+      return "";
     }
-
-    return matchSection;
   }
 
   function getUserAccountName() {
@@ -356,19 +372,28 @@ ${catalogData}
     };
 
     async function callGemini(model) {
-      const response = await fetch(getApiEndpoint(model), {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(requestPayload),
-      });
-      if (!response.ok) {
-        throw new Error(`API Error ${response.status} on model ${model}`);
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 15000);
+      try {
+        const response = await fetch(getApiEndpoint(model), {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(requestPayload),
+          signal: controller.signal,
+        });
+        clearTimeout(timeoutId);
+        if (!response.ok) {
+          throw new Error(`API Error ${response.status} on model ${model}`);
+        }
+        const json = await response.json();
+        if (json.error || !json.candidates || !json.candidates.length) {
+          throw new Error(`Model ${model} returned error: ${JSON.stringify(json.error || json)}`);
+        }
+        return json;
+      } catch (err) {
+        clearTimeout(timeoutId);
+        throw err;
       }
-      const json = await response.json();
-      if (json.error || !json.candidates || !json.candidates.length) {
-        throw new Error(`Model ${model} returned error: ${JSON.stringify(json.error || json)}`);
-      }
-      return json;
     }
 
     try {
@@ -376,7 +401,7 @@ ${catalogData}
       try {
         data = await callGemini(PRIMARY_MODEL);
       } catch (primaryErr) {
-        console.warn("Primary 3.6-flash busy/failed, trying 3.7-flash fallback...", primaryErr);
+        console.warn("Primary 3.6-flash failed or timed out, trying 3.5-flash fallback...", primaryErr);
         data = await callGemini(FALLBACK_MODEL);
       }
 
