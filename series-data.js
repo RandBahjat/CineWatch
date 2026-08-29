@@ -22,7 +22,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/bYtQiIibQzvMeXvLMKVcZ5DlT31.jpg',
     videoUrl: '290193',
     overview: 'Reclusive novelist Je Moon-jae wake to find identity stolen, ally with ruthless loan shark hunt down "The Rat" who took everything.',
-    overviewKurdish:جێ مون‌جای، ڕۆماننووسێکی گۆشەگیر، هەڵدەستێت و دەبینێت ناسنامەکەی دزراوە، هاوپەیمانی لەگەڵ قەرزدەرێکی دڵڕەق دەکات بۆ ڕاونانی "مشکەکە" کە هەموو شتێکی لێ بردووە.",
+    overviewKurdish:"جێ مون‌جای، ڕۆماننووسێکی گۆشەگیر، هەڵدەستێت و دەبینێت ناسنامەکەی دزراوە، هاوپەیمانی لەگەڵ قەرزدەرێکی دڵڕەق دەکات بۆ ڕاونانی "مشکەکە" کە هەموو شتێکی لێ بردووە.",
     director: 'Chris Mundy',
     cast: [
       'Kyle Chandler, Aaron Pierre, Kelly Macdonald, Garret Dillahunt, Poorna Jagannathan, Ulrich Thomsen, Nathan Fillion, Laura Linney'
