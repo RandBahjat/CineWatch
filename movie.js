@@ -1876,6 +1876,11 @@ function openDetailsModal(movieId) {
       document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &middot; ");
     }
 
+    const userRatingLabel = document.getElementById("userRatingLabel");
+    if (userRatingLabel) {
+      userRatingLabel.textContent = isCkb ? "رێژە" : (isAr ? "التقييم" : "Rate:");
+    }
+
     setOverviewElement(document.getElementById("detailsOverview"), getLocalizedOverview(movie));
 
     const castContainer = document.getElementById("detailsCastContainer");
@@ -4352,6 +4357,14 @@ async function initializeRatingSystem(movieId) {
   const badgeRating = document.getElementById('detailsRating');
 
   if (!starsContainer) return;
+
+  const userRatingLabel = document.getElementById('userRatingLabel');
+  if (userRatingLabel) {
+    const cookies = document.cookie || '';
+    const isCkb = cookies.includes('googtrans=/en/ckb');
+    const isAr = cookies.includes('googtrans=/en/ar');
+    userRatingLabel.textContent = isCkb ? 'رێژە' : (isAr ? 'التقييم' : 'Rate:');
+  }
 
   starsContainer.innerHTML = ''; // Clear container
 
