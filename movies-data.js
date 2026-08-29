@@ -19,7 +19,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/uauoVKKCkNA9iWjgJCL8TdSfLf5.jpg",
     videoUrl: "860508",
     overview: "Widower's son vanish in town once terrorize by serial killer The Whisper Man. Turn to estranged father, retired detective, dig up old case now tangle with new one.",
-    overviewKurdish:"کوڕی گەنجی پیاوێکی بێوەژن ون دەبێت لە فێزەربانک، شارۆچکەیەکی هێمن کە پازدە ساڵ لەمەوبەر بە کوشەرێکی زنجیرەیی ناسراو بە پیاوی چرپە تۆقاندرابوو. ئەمە وای لێدەکات ڕوو لە باوکی لێدوورکەوتووی خۆی بکات، پۆلیسێکی خانەنشین کە ئەو کاتە کوشەرەکەی گرتبوو. کەیسی کۆن و تاوانی نوێ تێکەڵ دەبنەوە، تاوتوێی نهێنی هاوکارێکی تاریک دووبارە سەرهەڵدەدات.",
+    overviewKurdish:"کوڕی گەنجی پیاوێکی بێوەژن ون دەبێت لە فێزەربانک، شارۆچکەیەکی هێمن کە پازدە ساڵ لەمەوبەر بە  و بە پیاوی چرپە تۆقاندرابوو. ئەمە وای لێدەکات ڕوو لە باوکی لێدوورکەوتووی خۆی بکات، پۆلیسێکی خانەنشین کە ئەو کاتە کوشەرەکەی گرتبوو. کەیسی کۆن و تاوانی نوێ تێکەڵ دەبنەوە، تاوتوێی نهێنی هاوکارێکی تاریک دووبارە سەرهەڵدەدات.",
     director: "James Ashcroft",
     cast: ["Robert De Niro, Michelle Monaghan, Adam Scott, Hamish Linklater, Owen Teague, Michael Keaton, John Carroll Lynch"],
     trending: true,
