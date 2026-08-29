@@ -4,10 +4,10 @@
 
 window._MOVIES_DATA = [
   {
-    title: "Grand Theft Auto VI: An Extended Look",
+    title: "The Whisper Man",
     type: "Movie",
     year: 2026,
-    rating: 8.4,
+    rating: 6.3,
     age: "R",
     duration: "30m",
     genres: [
