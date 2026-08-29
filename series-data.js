@@ -16,7 +16,7 @@ window._SERIES_DATA = [
     genres: [
       'Crime',
       'Drama',
-      'Mystery',
+      'Mystery'
     ],
     poster: 'https://image.tmdb.org/t/p/original/rzyXM5uB2Oci6u7aP3ijPxcTmfV.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/ruwzidqanSyhhMEk6kCVd9BLui1.jpg',
