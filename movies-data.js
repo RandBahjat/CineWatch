@@ -15,7 +15,7 @@ window._MOVIES_DATA = [
       "Drama",
       "Thriller"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xTZuh9ziUjIyHBWO9OvqNIPqVWe.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6UqflU8Qqkz7Dq4swJPqs0ZJjY4.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oDp9Yvvi2mRHXxPh6E2wi9ybhtK.jpg",
     videoUrl: "1744462",
     overview: "Jason and Lucia always know odds against them. Simple job meant for quick score go bad, land them in darkest corner of place once known as sunniest spot in America — caught up in deep, dangerous criminal network stretch across whole state of Leonida, now need each other more than ever to survive.",
