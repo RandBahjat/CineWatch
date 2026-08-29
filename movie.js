@@ -4171,7 +4171,7 @@ function updateIframeServer() {
 
   if (isAnime) {
     if (serverSelectWrap && serverSelect) {
-      serverSelectWrap.style.display = 'block';
+      serverSelectWrap.style.display = 'flex';
       serverSelectWrap.classList.remove('hidden');
 
       if (!serverSelect.dataset.animeServersPopulated) {
