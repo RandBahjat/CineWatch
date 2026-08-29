@@ -10,7 +10,7 @@ window._SERIES_DATA = [
     title: "Mousetrap",
     type: 'TV Show',
     year: 2026,
-    rating: 8.6,
+    rating: 7.6,
     age: 'TV-MA',
     duration: '1h',
     genres: [
