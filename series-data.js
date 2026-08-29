@@ -25,7 +25,7 @@ window._SERIES_DATA = [
     overviewKurdish:"جێ مون‌جای، ڕۆماننووسێکی گۆشەگیر، هەڵدەستێت و دەبینێت ناسنامەکەی دزراوە، هاوپەیمانی لەگەڵ قەرزدەرێکی دڵڕەق دەکات بۆ ڕاونانی مشکەکە کە هەموو شتێکی لێ بردووە.",
     director: 'Kim Hong-sun, Lee Jae-gon',
     cast: [
-      'Kyle Chandler, Aaron Pierre, Kelly Macdonald, Garret Dillahunt, Poorna Jagannathan, Ulrich Thomsen, Nathan Fillion, Laura Linney'
+      'Ryu Jun-yeol, Sul Kyung-gu, Lee Kyoo-hyung'
     ],
     trending: false,
     featured: false,
