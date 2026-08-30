@@ -915,13 +915,64 @@ function startApp() {
     if (e.target.id === 'playerModal') closePlayer();
   });
 
-  // Settings dropdown handlers
+  // Settings overlay handlers
   const openSettingsBtn = document.getElementById('openSettingsBtn');
+  const closeSettingsBtn = document.getElementById('closeSettingsBtn');
+  const settingsOverlay = document.getElementById('settingsOverlay');
+
   if (openSettingsBtn) {
     openSettingsBtn.addEventListener('click', () => {
-      switchTab('settings');
-      // Hide dropdown by removing focus from wrap (hacky but works)
+      settingsOverlay?.classList.remove('hidden');
       document.activeElement?.blur();
+    });
+  }
+
+  if (closeSettingsBtn) {
+    closeSettingsBtn.addEventListener('click', () => {
+      settingsOverlay?.classList.add('hidden');
+    });
+  }
+
+  // Avatar file picker
+  const editAvatarBtn = document.querySelector('.edit-avatar-btn');
+  if (editAvatarBtn) {
+    editAvatarBtn.addEventListener('click', () => {
+      const input = document.createElement('input');
+      input.type = 'file';
+      input.accept = 'image/*';
+      input.onchange = (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const url = URL.createObjectURL(file);
+        const avatar = document.querySelector('.profile-avatar');
+        avatar.style.backgroundImage = `url(${url})`;
+        avatar.style.backgroundSize = 'cover';
+        avatar.style.backgroundPosition = 'center';
+        // Hide the icon, keep the edit button
+        const icon = avatar.querySelector('ion-icon');
+        if (icon) icon.style.display = 'none';
+        showToast('Profile picture updated!');
+      };
+      input.click();
+    });
+  }
+
+  // Banner file picker
+  const editBannerBtn = document.querySelector('.edit-banner-btn');
+  if (editBannerBtn) {
+    editBannerBtn.addEventListener('click', () => {
+      const input = document.createElement('input');
+      input.type = 'file';
+      input.accept = 'image/*';
+      input.onchange = (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const url = URL.createObjectURL(file);
+        const banner = document.querySelector('.profile-banner');
+        if (banner) banner.style.backgroundImage = `url(${url})`;
+        showToast('Cover photo updated!');
+      };
+      input.click();
     });
   }
 
@@ -938,10 +989,10 @@ function startApp() {
     });
   }
 
-  const aboutBtn = document.getElementById('pageCheckUpdateBtn');
-  if (aboutBtn) {
-    aboutBtn.addEventListener('click', () => {
-      showToast('You are running the latest version!\\nCineWatch Desktop v1.0.0', 3000);
+  const updateBtn = document.getElementById('pageCheckUpdateBtn');
+  if (updateBtn) {
+    updateBtn.addEventListener('click', () => {
+      showToast('You are on the latest version — CineWatch v1.0.0');
     });
   }
 }
