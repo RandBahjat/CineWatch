@@ -641,9 +641,10 @@ function renderAnimeTab() {
 // 6. Live TV Tab
 function renderLiveTV() {
   const grid = document.getElementById('liveGrid');
-  if (!grid || typeof LIVE_CHANNELS === 'undefined') return;
+  const channels = window._LIVE_CHANNELS || [];
+  if (!grid || channels.length === 0) return;
 
-  grid.innerHTML = LIVE_CHANNELS.map(ch => `
+  grid.innerHTML = channels.map(ch => `
     <div class="live-card" onclick="showToast('Channel stream loading...')">
       <div class="live-icon"><ion-icon name="tv-outline"></ion-icon></div>
       <div>
