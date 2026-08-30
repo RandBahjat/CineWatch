@@ -435,6 +435,14 @@ function setupHeroDragEvents() {
 
     updateHeroBannerPosition();
     startHeroAutoplay(slidesCount);
+
+    // After any drag movement, swallow the next click so openDetail doesn't fire
+    if (heroDragState.hasMoved) {
+      heroContainer.addEventListener('click', (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+      }, { capture: true, once: true });
+    }
   };
 
   heroContainer.addEventListener('mousedown', onDragStart);
