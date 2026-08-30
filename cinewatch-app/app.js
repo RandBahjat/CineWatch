@@ -42,31 +42,61 @@ let state = {
 };
 
 // Storage helpers
-function loadFavorites() {
+async function loadFavorites() {
   try {
-    const saved = localStorage.getItem('cinewatch_app_favs');
-    if (saved) state.favorites = new Set(JSON.parse(saved));
+    const raw = localStorage.getItem('cinewatch_app_favs') || localStorage.getItem('cinewatch_favorites');
+    if (raw) {
+      const arr = JSON.parse(raw);
+      state.favorites = new Set(arr);
+    }
   } catch(e) {}
+
+  // Sync with Supabase API if user is logged in
+  if (window.api && typeof window.api.getUserFavorites === 'function') {
+    try {
+      const userFavs = await window.api.getUserFavorites();
+      if (Array.isArray(userFavs) && userFavs.length > 0) {
+        userFavs.forEach(id => state.favorites.add(String(id)));
+        saveFavorites();
+      }
+    } catch(err) {
+      // Offline / guest mode fallback
+    }
+  }
 }
 
 function saveFavorites() {
   try {
     localStorage.setItem('cinewatch_app_favs', JSON.stringify([...state.favorites]));
+    localStorage.setItem('cinewatch_favorites', JSON.stringify([...state.favorites]));
   } catch(e) {}
 }
 
-function toggleFavorite(id, e) {
+async function toggleFavorite(id, e) {
   if (e) e.stopPropagation();
-  if (state.favorites.has(id)) {
+  const wasFav = state.favorites.has(id);
+  if (wasFav) {
     state.favorites.delete(id);
     showToast('Removed from Watchlist');
   } else {
     state.favorites.add(id);
-    showToast('Saved to Watchlist');
+    showToast('Saved to Watchlist ❤️');
   }
   saveFavorites();
   renderWatchlist();
   if (state.currentTab === 'home') renderHome();
+
+  // Sync to Supabase cloud if api is available
+  if (window.api && typeof window.api.toggleFavorite === 'function') {
+    try {
+      await window.api.toggleFavorite(id);
+    } catch(err) {}
+  }
+}
+
+function toggleFav(e, id) {
+  if (e) e.stopPropagation();
+  toggleFavorite(id, e);
 }
 
 function hideSplash() {
