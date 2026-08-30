@@ -121,6 +121,38 @@ function initCatalog() {
 }
 
 // Navigation & Tab Switching with Lazy Tab Rendering
+function setupNavigation() {
+  document.querySelectorAll('.nav-item').forEach(btn => {
+    btn.onclick = () => {
+      const tab = btn.dataset.tab;
+      if (tab) switchTab(tab);
+    };
+  });
+
+  // Keyboard shortcut '/' for search
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && !['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) {
+      e.preventDefault();
+      switchTab('explore');
+      document.getElementById('searchInput')?.focus();
+    }
+  });
+
+  // Topbar Search Click
+  document.getElementById('topSearchBtn')?.addEventListener('click', () => {
+    switchTab('explore');
+  });
+  document.getElementById('topSearchInput')?.addEventListener('click', () => {
+    switchTab('explore');
+    document.getElementById('searchInput')?.focus();
+  });
+
+  // Hero controls
+  document.getElementById('heroPrevBtn')?.addEventListener('click', () => changeHeroSlide(-1));
+  document.getElementById('heroNextBtn')?.addEventListener('click', () => changeHeroSlide(1));
+  setupHeroDragEvents();
+}
+
 const renderedTabs = new Set(['home']);
 
 function switchTab(tabId) {
