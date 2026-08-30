@@ -217,6 +217,33 @@ function setupNavigation() {
   setupHeroDragEvents();
 }
 
+// PWA Install Logic
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+});
+
+window.addEventListener('appinstalled', () => {
+  deferredPrompt = null;
+  showToast('CineWatch successfully installed! 🎉');
+});
+
+function triggerAppInstall() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User accepted the install prompt');
+      }
+      deferredPrompt = null;
+    });
+  } else {
+    // If already installed or browser doesn't support it
+    showToast('App is already installed or your browser requires manual installation (e.g., Safari Share > Add to Home Screen).');
+  }
+}
+
 function switchTab(tabId) {
   state.currentTab = tabId;
 
