@@ -1,162 +1,1770 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSJ9WDT6RX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LSJ9WDT6RX');
+    </script>
+    <link rel="stylesheet" href="movie.css?v=20260830_825">
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1" />
-    <title>CineWatch App</title>
-    <meta name="theme-color" content="#0a0a0f" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Google Fonts: Inter & Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=1">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <!-- Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="api.js?v=v6" defer></script>
+    <script src="movies-data.js?v=20260818_4598" defer></script>
+    <script src="series-data.js?v=20260818_4598" defer></script>
+    <script src="anime-data.js?v=20260818_4598" defer></script>
+    <script src="movie.js?v=v42" defer></script>
+    <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <!-- Existing catalog data (referenced, not copied) -->
-    <script src="../movies-data.js?v=1" defer></script>
-    <script src="../series-data.js?v=1" defer></script>
-    <script src="../anime-data.js?v=1" defer></script>
-    <script src="live-tv.js?v=1" defer></script>
-    <script src="app.js?v=5" defer></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </head>
-<body>
-    <!-- Ambient background glow blobs -->
-    <div class="bg-glow bg-glow-1"></div>
-    <div class="bg-glow bg-glow-2"></div>
-    <div class="bg-glow bg-glow-3"></div>
 
-    <!-- App loading splash -->
-    <div class="splash" id="splash">
-        <div class="splash-logo"><ion-icon name="ticket"></ion-icon> Cine<span>Watch</span></div>
-        <div class="splash-ring"></div>
-        <p>Loading your cinema…</p>
+<body class="view-home">
+    <svg width="0" height="0" style="position: absolute; visibility: hidden;">
+      <defs>
+        <linearGradient id="redGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#ff6b6b"/>
+          <stop offset="100%" stop-color="#e53935"/>
+        </linearGradient>
+        <linearGradient id="yellowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#ffe066"/>
+          <stop offset="100%" stop-color="#ffb300"/>
+        </linearGradient>
+        <linearGradient id="greenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#7ee08a"/>
+          <stop offset="100%" stop-color="#2e9e44"/>
+        </linearGradient>
+      </defs>
+    </svg>
+    <!-- Language Toast ΓÇö Chrome-style compact popup (top-right) -->
+    <div class="lang-toast" id="langToast" role="dialog" aria-label="Language suggestion">
+        <div class="lang-toast-header">
+            <svg class="lang-toast-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <div class="lang-toast-tabs" id="langToastTabs">
+                <!-- filled dynamically -->
+            </div>
+            <button class="lang-toast-close" id="langToastClose" aria-label="Dismiss">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <div class="lang-toast-body">
+            <span id="langToastMsg">Translate this page?</span>
+            <button class="lang-toast-translate-btn" id="langToastChange">Translate</button>
+        </div>
     </div>
 
-    <!-- Top app bar -->
-    <header class="topbar" id="topbar">
-        <button class="icon-btn" id="menuBtn" aria-label="Menu"><ion-icon name="menu-outline"></ion-icon></button>
-        <div class="topbar-logo"><ion-icon name="ticket"></ion-icon> Cine<span>Watch</span></div>
-        <button class="icon-btn" id="searchBtn" aria-label="Search"><ion-icon name="search-outline"></ion-icon></button>
+
+    <!-- Loading Splash Screen -->
+    <div class="app-loader" id="appLoader">
+        <div class="loader-content">
+            <div class="loader-logo notranslate" translate="no"><ion-icon name="ticket" style="color: var(--primary); font-size: 1.3em; vertical-align: middle;"></ion-icon> Cine<span>Watch</span></div>
+            <div class="loader-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+            </div>
+            <p class="loader-text">Loading your cinema...</p>
+        </div>
+    </div>
+
+    <!-- Fixed Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+            <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="document.getElementById('mobileMenuOverlay').classList.add('active'); document.body.style.overflow='hidden';">
+                <ion-icon name="menu-outline" style="pointer-events: none;"></ion-icon>
+            </button>
+                <!-- Logo: hidden on mobile (shown in slide-out menu instead) -->
+                <a href="#" class="brand-logo" id="logoBtn">
+                    <span class="logo-icon"><ion-icon name="ticket" style="color: var(--primary); font-size: 1.3em;"></ion-icon></span>
+                    <span class="logo-text notranslate" translate="no">Cine<span class="logo-accent">Watch</span></span>
+                </a>
+                <nav class="nav-links">
+                    <a href="#" class="nav-link active" data-view="home"><ion-icon name="home-outline"></ion-icon> <span id="navHome1" class="notranslate" translate="no">Home</span></a>
+                    <a href="#" class="nav-link" data-view="movies"><ion-icon name="film-outline"></ion-icon> <span id="navMovies1" class="notranslate" translate="no">Movies</span></a>
+                    <a href="#" class="nav-link" data-view="series"><ion-icon name="tv-outline"></ion-icon> <span class="notranslate" translate="no" id="navSeries1">Series</span></a>
+                    <a href="#" class="nav-link" data-view="anime">
+                        <svg class="anime-goku-icon" viewBox="0 0 100 100" style="width: 1.8em; height: 1.8em; vertical-align: -0.4em; margin-right: 6px; display: inline-block; fill: none; stroke: currentColor; stroke-width: 5; stroke-linejoin: miter; stroke-linecap: butt; stroke-miterlimit: 4;">
+                          <path d="
+                            M 50 88 
+                            L 40 80 L 35 68 
+                            L 20 72 L 28 60 
+                            L 12 60 L 25 50 
+                            L 10 30 L 38 42 
+                            L 38 12 L 50 35 
+                            L 60 15 L 65 38 
+                            L 85 28 L 75 45 
+                            L 95 52 L 78 60 
+                            L 85 70 L 65 68 
+                            L 60 80 Z
+                          " />
+                          <path d="
+                            M 35 68 
+                            L 40 55 L 44 65 
+                            L 50 50 L 54 68 
+                            L 60 55 L 65 68
+                          " />
+                        </svg>
+                        <span class="notranslate" translate="no" id="navAnime1">Anime</span>
+                    </a>
+                    <a href="#" class="nav-link" data-view="continue"><ion-icon name="play-circle-outline"></ion-icon> <span id="navContinue1" class="notranslate" translate="no">Continue Watching</span></a>
+                    <a href="#" class="nav-link" data-view="watchlist"><ion-icon name="heart-outline"></ion-icon> <span id="navWatchlist1" class="notranslate" translate="no">My Watchlist</span></a>
+
+                </nav>
+            </div>
+
+            <div class="nav-right">
+                <!-- Language Selector (Custom Dropdown) -->
+                <div class="custom-lang-dropdown notranslate" translate="no" id="customLangDropdown">
+                    <div class="lang-dropdown-selected" id="langDropdownBtn">
+                        <ion-icon name="language-outline" class="lang-icon"></ion-icon>
+                        <span id="langSelectedText">English</span>
+                        <ion-icon name="chevron-down-outline" class="lang-arrow"></ion-icon>
+                    </div>
+                    <div class="lang-dropdown-options" id="langDropdownOptions">
+                        <div class="lang-option" data-value="en">English</div>
+                        <div class="lang-option" data-value="ckb">Central Kurdish</div>
+                        <div class="lang-option" data-value="ar">Arabic</div>
+                    </div>
+                </div>
+                
+                <!-- Search Icon Button -->
+                <button class="nav-action-btn" id="navSearchBtn" onclick="if(window.openSearchModal) window.openSearchModal(); else { document.getElementById('searchModal').classList.remove('hidden'); document.body.style.overflow='hidden'; }" title="Search">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+                <!-- AI Assistant Button -->
+                <button class="nav-ai-btn notranslate" translate="no" id="navAiBtn" title="Ask CineWatch AI">
+                    <ion-icon name="chatbubbles-outline" style="font-size: 1.05rem;"></ion-icon>
+                    <span class="ai-btn-text" id="navAiBtnText">Ask AI</span>
+                </button>
+
+                <!-- Download App Button -->
+                <a href="download.html" class="nav-ai-btn" style="background: rgba(229, 9, 20, 0.15); color: var(--primary); border: 1px solid rgba(229, 9, 20, 0.3); text-decoration: none;" title="Download CineWatch App">
+                    <ion-icon name="cloud-download-outline" style="font-size: 1.05rem;"></ion-icon>
+                    <span class="ai-btn-text">Download App</span>
+                </a>
+
+                <!-- Report Issue Button -->
+                <button class="nav-report-btn" id="headerReportBtn" title="Report an Issue / Send Feedback">
+                    <span class="report-text">Report</span>
+                </button>
+
+                <!-- User Auth Badge / Profile -->
+                <div class="user-profile-container" id="userProfileContainer">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </div>
     </header>
 
-    <!-- Main scroll viewport -->
-    <main class="app-view" id="appView">
+    <!-- Search Modal (Spotlight Organization) -->
+    <div class="search-modal hidden" id="searchModal">
+        <div class="search-modal-backdrop" id="searchModalBackdrop"></div>
+        <div class="search-modal-content">
+            <!-- Ambient Glow -->
+            <div class="search-bg-glow"></div>
 
-        <!-- ===== HOME TAB ===== -->
-        <section class="tab-panel active" id="panel-home">
-            <div class="hero" id="hero">
-                <div class="hero-track" id="heroTrack"></div>
-                <div class="hero-dots" id="heroDots"></div>
-            </div>
-            <div class="shelves" id="homeShelves"></div>
-        </section>
-
-        <!-- ===== EXPLORE / SEARCH TAB ===== -->
-        <section class="tab-panel" id="panel-explore">
-            <div class="explore-head">
-                <h1>Explore</h1>
-                <div class="search-box">
-                    <ion-icon name="search-outline"></ion-icon>
-                    <input type="text" id="searchInput" placeholder="Search movies, series, anime…" autocomplete="off">
+            <!-- Top Search Input Bar -->
+            <div class="search-modal-header">
+                <div class="search-modal-input-wrapper">
+                    <ion-icon name="search-outline" class="modal-search-icon"></ion-icon>
+                    <input type="text" id="searchInput" placeholder="Search movies, series, anime, genres, actors..." autocomplete="off">
+                    <button class="modal-search-clear hidden" id="searchClearBtn" title="Clear input">&times;</button>
                 </div>
-                <div class="filter-chips" id="filterChips">
-                    <button class="chip active" data-type="all">All</button>
-                    <button class="chip" data-type="Movie">Movies</button>
-                    <button class="chip" data-type="TV Show">Series</button>
-                    <button class="chip" data-type="Anime">Anime</button>
+
+                <div class="search-header-right">
+                    <!-- Segmented Filter Switcher -->
+                    <div class="search-type-switcher notranslate" translate="no" id="searchTypeSwitcher">
+                        <button class="type-switch-btn active" data-filter="all">All</button>
+                        <button class="type-switch-btn" data-filter="movie">Movies</button>
+                        <button class="type-switch-btn" data-filter="series">Series</button>
+                    </div>
+
+                    <button class="search-modal-close" id="searchModalClose" title="Close Search">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
                 </div>
-                <div class="genre-chips" id="genreChips"></div>
             </div>
-            <div class="results-grid" id="resultsGrid"></div>
-            <div class="empty-state hidden" id="exploreEmpty">
-                <ion-icon name="search-outline"></ion-icon>
-                <p>No results found</p>
+
+            <!-- Main Content Area -->
+            <div class="search-modal-body">
+                <!-- Trending / Explore Section -->
+                <div class="search-section" id="searchExploreSection">
+                    <div class="search-section-header">
+                        <span>POPULAR CATEGORIES</span>
+                    </div>
+                    <div class="search-tags-grid notranslate" translate="no" id="searchQuickTags">
+                        <button class="search-tag-chip" data-search="Action">Action</button>
+                        <button class="search-tag-chip" data-search="Sci-Fi">Sci-Fi</button>
+                        <button class="search-tag-chip" data-search="Animation">Anime</button>
+                        <button class="search-tag-chip" data-search="Horror">Horror</button>
+                        <button class="search-tag-chip" data-search="Comedy">Comedy</button>
+                        <button class="search-tag-chip" data-search="Drama">Drama</button>
+                    </div>
+                </div>
+
+                <!-- Recent Searches Section -->
+                <div class="search-section search-recent-section" id="searchRecentSection">
+                    <div class="search-section-header">
+                        <span>RECENT SEARCHES</span>
+                        <button id="clearRecentBtn">Clear</button>
+                    </div>
+                    <div class="search-recent-list" id="searchRecentList">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Live Results Container -->
+                <div class="search-dropdown hidden" id="searchDropdown"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay" onclick="if(event.target === this) { this.classList.remove('active'); document.body.style.overflow=''; }">
+        <div class="mobile-menu">
+            <!-- Logo at top of menu -->
+            <div class="mobile-menu-header">
+                <a href="#" class="brand-logo mobile-menu-logo">
+                    <span class="logo-icon"><ion-icon name="ticket" style="color: var(--primary); font-size: 1.3em;"></ion-icon></span>
+                    <span class="logo-text notranslate" translate="no">Cine<span class="logo-accent">Watch</span></span>
+                </a>
+                <button class="mobile-menu-close" id="mobileMenuCloseBtn" onclick="document.getElementById('mobileMenuOverlay').classList.remove('active'); document.body.style.overflow='';">&times;</button>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="mobile-nav-links">
+                <a href="#" class="nav-link active" data-view="home"><ion-icon name="home-outline"></ion-icon> <span id="navHome2" class="notranslate" translate="no">Home</span></a>
+                <a href="#" class="nav-link" data-view="movies"><ion-icon name="film-outline"></ion-icon> <span id="navMovies2" class="notranslate" translate="no">Movies</span></a>
+                <a href="#" class="nav-link" data-view="series"><ion-icon name="tv-outline"></ion-icon> <span class="notranslate" translate="no" id="navSeries2">Series</span></a>
+                <a href="#" class="nav-link" data-view="anime">
+                    <svg class="anime-goku-icon" viewBox="0 0 100 100" style="width: 1.8em; height: 1.8em; vertical-align: -0.4em; margin-right: 6px; display: inline-block; fill: none; stroke: currentColor; stroke-width: 5; stroke-linejoin: miter; stroke-linecap: butt; stroke-miterlimit: 4;">
+                      <path d="
+                        M 50 88 
+                        L 40 80 L 35 68 
+                        L 20 72 L 28 60 
+                        L 12 60 L 25 50 
+                        L 10 30 L 38 42 
+                        L 38 12 L 50 35 
+                        L 60 15 L 65 38 
+                        L 85 28 L 75 45 
+                        L 95 52 L 78 60 
+                        L 85 70 L 65 68 
+                        L 60 80 Z
+                      " />
+                      <path d="
+                        M 35 68 
+                        L 40 55 L 44 65 
+                        L 50 50 L 54 68 
+                        L 60 55 L 65 68
+                      " />
+                    </svg>
+                    <span class="notranslate" translate="no" id="navAnime2">Anime</span>
+                </a>
+                <a href="#" class="nav-link" data-view="continue"><ion-icon name="play-circle-outline"></ion-icon> <span id="navContinue2" class="notranslate" translate="no">Continue Watching</span></a>
+                <a href="#" class="nav-link" data-view="watchlist"><ion-icon name="heart-outline"></ion-icon> <span id="navWatchlist2" class="notranslate" translate="no">My Watchlist</span></a>
+                <a href="#" class="nav-link ai-nav-link" id="mobileAiBtn"><ion-icon name="chatbubbles-outline"></ion-icon> <span id="navAiBtnTextMobile" class="notranslate" translate="no">Ask AI Assistant</span></a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Spotlight Section -->
+    <section class="hero-banner" id="heroBanner">
+        <div class="hero-track" id="heroTrack"></div>
+        <div class="hero-carousel-dots" id="heroDots"></div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTopBtn" title="Back to top" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"/>
+        </svg>
+    </button>
+
+
+    <section id="detailsSection" class="hidden">
+        <!-- Top bar containing Back and Mute buttons -->
+        <div class="details-top-bar">
+            <!-- Back Button (top left) -->
+            <button class="details-back-btn" id="closeDetailsBtn" title="Go Back">
+                <svg viewBox="0 0 24 24" class="go-back-arr-2" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Hero Background -->
+        <div class="details-hero-bg">
+            <div class="details-bg" id="detailsBg"></div>
+            <div class="details-bg-gradient-overlay"></div>
+        </div>
+
+        <!-- 1. Hero Content (exactly 100vh) -->
+        <div class="details-hero-container">
+            <div class="details-content-wrapper">
+                
+                <div class="details-hero-info">
+                <!-- Title / Logo area -->
+                <img id="detailsLogo" class="details-logo hidden" src="" alt="Movie Logo" />
+                <h1 class="details-title-large notranslate" translate="no" id="detailsTitle">Movie Title</h1>
+                
+                <div class="details-meta-row">
+                    <span class="meta-rating"><ion-icon name="star" style="color: var(--gold);"></ion-icon> <span id="detailsRating">4.8</span></span>
+                    <span class="meta-separator">&nbsp;&middot;&nbsp;</span>
+                    <span class="meta-year" id="detailsYear">2026</span>
+                    <span class="meta-separator">&nbsp;&middot;&nbsp;</span>
+                    <span class="meta-duration" id="detailsDuration">2h 10m</span>
+                    <span class="meta-separator">&nbsp;&middot;&nbsp;</span>
+                    <span class="meta-genres" id="detailsGenres">Action &middot; Adventure &middot; Sci-Fi</span>
+                </div>
+
+
+                <p class="details-overview-large" id="detailsOverview">Synopsis goes here...</p>
+
+                <!-- Actions Row -->
+                <div class="details-action-buttons">
+                    <button class="btn btn-play-circle" id="detailsPlayBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+
+                    <!-- Watchlist Circular Toggle -->
+                    <div class="watchlist-wrapper">
+                      <input type="checkbox" id="detailsFavCheckbox" class="hidden-trigger">
+                      <label for="detailsFavCheckbox" class="circle outline-circle" id="detailsFavBtn">
+                        <ion-icon class="icon-add" name="add-outline"></ion-icon>
+                        <ion-icon class="icon-check" name="checkmark-outline"></ion-icon>
+                      </label>
+                    </div>
+                    
+                    <button class="btn btn-secondary-pill" id="detailsReportBtn" title="Report an issue">
+                        Report
+                    </button>
+                    
+                    <button class="btn btn-secondary-pill" id="detailsSimilarsBtn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        <span id="detailsSimilarsText" class="notranslate" translate="no">Similars</span>
+                    </button>
+                </div>
+                </div>
+
+                <!-- Rate Stars (moved above Director) -->
+                <div class="rating-block" id="userRatingBlock" style="margin-bottom: 0; margin-top: 1.5rem;">
+                    <span class="rating-label notranslate" translate="no" id="userRatingLabel">Rate:</span>
+                    <div class="stars" id="starContainer"></div>
+                    <span id="liveValue" style="font-size:20px; font-weight:800; min-width:34px; transition: color 0.2s ease;">0.0</span>
+                    <div class="feedback" id="ratedFeedback">Rated 👍</div>
+                </div>
+
+                <!-- Director List -->
+                <div class="details-cast-list hidden" id="detailsDirectorContainer">
+                    <span class="cast-label notranslate" translate="no" id="labelDirector">Director:</span>
+                    <span id="detailsDirectorText" class="cast-text"></span>
+                </div>
+                <!-- Cast List -->
+                <div class="details-cast-list hidden" id="detailsCastContainer">
+                    <span class="cast-label notranslate" translate="no" id="labelCast">Cast:</span>
+                    <span id="detailsCastText" class="cast-text"></span>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+        <!-- 2. Scrollable Extra Content (below the fold) -->
+        <div class="details-extra-content">
+
+            <!-- TV Show Season/Episode Selector -->
+            <div id="tvShowSection" class="tv-show-section hidden">
+                <div class="season-episode-header">
+                    <h3 class="shelf-title shelf-title-accent">Episodes</h3>
+                    <div class="season-controls">
+                        <div class="custom-select-wrapper" id="customSeasonSelect">
+                            <div class="custom-select-trigger season-select-pill" id="seasonSelectTrigger">
+                                <span>Season 1</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="transition: transform 0.3s ease;"><polyline points="6 9 12 15 18 9"/></svg>
+                            </div>
+                            <div class="custom-select-options" id="seasonSelectOptions"></div>
+                            <input type="hidden" id="seasonSelect" value="1">
+                        </div>
+                        <div class="season-select-pill" id="episodeSortBtn" title="Reverse Sort" style="padding: 0.45rem; min-width: auto; gap: 4px; margin-right: auto; margin-left: 0.5rem;">
+                            <ion-icon name="swap-vertical-outline" style="font-size: 1.1rem;"></ion-icon>
+                            <span style="font-size: 0.75rem;" class="notranslate" translate="no">A-Z</span>
+                        </div>
+                        <div class="episode-search-wrap">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                            <input type="text" id="episodeSearch" class="episode-search-input" placeholder="Search episodes..." />
+                        </div>
+                    </div>
+                </div>
+                <div class="episode-list" id="episodeGrid"></div>
+            </div>
+
+            <!-- Comments Section -->
+            <div class="comments-section" id="commentsSection" style="display: none;">
+                <h3 class="shelf-title shelf-title-accent notranslate" translate="no" id="commentsTitleHeading">Comments</h3>
+                
+                <!-- Comment Input Area -->
+                <div class="comment-input-area" id="commentInputArea">
+                    <!-- Will be populated dynamically based on auth state -->
+                </div>
+
+                <!-- Comments List -->
+                <div class="comments-list" id="commentsList">
+                    <!-- Comments will load here -->
+                    <div class="loading-spinner" style="margin: 2rem auto;"></div>
+                </div>
+            </div>
+
+            <!-- You May Like Section -->
+            <div class="details-similars-section" id="detailsSimilarsSection">
+                <h3 class="shelf-title shelf-title-accent notranslate" translate="no" id="detailsSimilarsHeading">You may like</h3>
+                <div class="browse-grid" id="detailsSimilarsGrid" style="margin-top: 1rem;"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Main Views & Shelves Container -->
+    <main class="main-content" id="mainContent">
+        
+        <!-- Global Safety Banner -->
+        <div id="safetyBannerWrapper">
+            <div class="safety-banner" id="safetyBanner" style="position: relative; background: rgba(74, 222, 128, 0.1); border: 1px solid rgba(74, 222, 128, 0.2); border-radius: 12px; padding: 1rem 3rem 1rem 1.25rem; margin: 2rem 5% 3rem 5%; display: flex; align-items: center; justify-content: flex-start; gap: 12px; color: #4ade80;">
+                <ion-icon name="shield-checkmark" style="font-size: 1.5rem; flex-shrink: 0;"></ion-icon>
+                <span style="font-size: 0.9rem; font-weight: 500; line-height: 1.4;">100% Safe & Secure. Enjoy ad-free, malware-free streaming.</span>
+                <button id="closeSafetyBanner" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); background: none; border: none; color: #4ade80; font-size: 1.5rem; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0;">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+        <script>
+            (function() {
+                const banner = document.getElementById('safetyBanner');
+                const closeBtn = document.getElementById('closeSafetyBanner');
+                const hiddenTime = localStorage.getItem('safetyBannerHiddenTime');
+                const now = new Date().getTime();
+                
+                if (hiddenTime && (now - parseInt(hiddenTime)) < 24 * 60 * 60 * 1000) {
+                    banner.style.display = 'none';
+                }
+                
+                closeBtn.addEventListener('click', () => {
+                    banner.style.display = 'none';
+                    localStorage.setItem('safetyBannerHiddenTime', new Date().getTime().toString());
+                });
+            })();
+        </script>
+        <!-- Continue Watching Shelf -->
+        <section class="shelf-section hidden" id="continueWatchingShelf">
+            <div class="shelf-header">
+                <h2 class="shelf-title shelf-title-accent" id="continueShelfTitle">Continue Watching</h2>
+                <span class="shelf-subtitle notranslate" translate="no" id="continueShelfSubtitle">Pick up right where you left off</span>
+            </div>
+            <div class="carousel-wrapper">
+                <button class="carousel-nav prev" data-target="continueTrack"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                <div class="carousel-track" id="continueTrack"></div>
+                <button class="carousel-nav next" data-target="continueTrack"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
             </div>
         </section>
 
-        <!-- ===== LIVE TV TAB ===== -->
-        <section class="tab-panel" id="panel-live">
-            <div class="explore-head">
-                <h1>Live TV</h1>
-                <p class="sub">Watch live channels — coming soon</p>
+        <!-- Watchlist Home Shelf (shown on Home page) -->
+        <section class="shelf-section hidden" id="watchlistHomeShelf">
+            <div class="shelf-header">
+                <h2 class="shelf-title shelf-title-accent">Watchlist</h2>
+                <a href="#" class="shelf-explore nav-link" data-view="watchlist">See all <ion-icon name="chevron-forward-outline"></ion-icon></a>
             </div>
-            <div class="live-grid" id="liveGrid"></div>
+            <div class="carousel-wrapper">
+                <button class="carousel-nav prev" data-target="watchlistHomeTrack"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                <div class="carousel-track" id="watchlistHomeTrack"></div>
+                <button class="carousel-nav next" data-target="watchlistHomeTrack"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+            </div>
         </section>
 
-        <!-- ===== ANIME TAB ===== -->
-        <section class="tab-panel" id="panel-anime">
-            <div class="explore-head">
-                <h1>Anime</h1>
+        <!-- Continue Watching View (Dynamic Full-Page) -->
+        <section class="shelf-section hidden" id="continueSection">
+            <div class="shelf-header" style="justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2 class="shelf-title shelf-title-accent">Continue Watching</h2>
+                <div class="cw-action-bar" id="cwActionBar" style="display: flex; gap: 10px;">
+                    <button id="cwSelectBtn" class="btn btn-secondary" style="padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 500;">Select</button>
+                    <button id="cwRemoveSelectedBtn" class="btn btn-primary hidden" style="padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 500; background-color: #ef4444; border-color: #ef4444; color: white;">Remove Selected (0)</button>
+                    <button id="cwCancelSelectBtn" class="btn btn-secondary hidden" style="padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 500;">Cancel</button>
+                </div>
             </div>
-            <div class="results-grid" id="animeGrid"></div>
+            <div class="movies-grid" id="continueGrid"></div>
+            <div class="empty-state hidden" id="emptyContinue">
+                <div class="empty-icon"><ion-icon name="play-circle-outline"></ion-icon></div>
+                <h3 id="emptyContinueTitle">No titles in Continue Watching</h3>
+                <p id="emptyContinueText">Movies and series you start watching will appear here so you can easily pick up where you left off.</p>
+                <button class="btn btn-primary mt-4" id="exploreContinueBtn">Explore Movies</button>
+            </div>
         </section>
 
-        <!-- ===== WATCHLIST TAB ===== -->
-        <section class="tab-panel" id="panel-watchlist">
-            <div class="explore-head">
-                <h1>My Watchlist</h1>
-            </div>
-            <div class="results-grid" id="watchlistGrid"></div>
-            <div class="empty-state hidden" id="watchlistEmpty">
-                <ion-icon name="heart-outline"></ion-icon>
-                <p>Your watchlist is empty</p>
-                <span>Tap the heart on any title to save it here</span>
+        <!-- My Watchlist View (Dynamic) -->
+        <section class="shelf-section hidden" id="watchlistSection">
+            <div class="movies-grid" id="watchlistGrid"></div>
+            <div class="empty-state hidden" id="emptyWatchlist">
+                <div class="empty-icon"><ion-icon name="heart-dislike-outline"></ion-icon></div>
+                <h3>Your watchlist is empty</h3>
+                <p>Explore titles and tap the heart icon to save your favorite movies and series here!</p>
+                <button class="btn btn-primary mt-4" id="exploreBtn">Explore Movies</button>
             </div>
         </section>
+
+        <!-- Filtered Grid View (For Search / Genre Tabs) -->
+        <section class="shelf-section hidden" id="filteredSection">
+            <div class="shelf-header">
+                <h2 class="shelf-title" id="filteredTitle">Search Results</h2>
+                <span class="shelf-subtitle" id="filteredCount">0 titles found</span>
+            </div>
+            <div class="movies-grid" id="filteredGrid"></div>
+        </section>
+
+        <!-- ===== MOVIES BROWSE SECTION ===== -->
+        <section class="browse-section hidden" id="moviesSection">
+            <div class="browse-section-header">
+                <div class="browse-title-row">
+                    <h1 class="browse-title"><ion-icon name="film-outline"></ion-icon> Movies</h1>
+                    <span class="browse-count" id="moviesCount">0 titles</span>
+                </div>
+                <!-- Genre Filter Bar -->
+                <div class="browse-filter-bar" id="moviesFilterBar">
+                    <button class="browse-filter-btn active" data-genre="all" data-section="movies">All</button>
+                    <button class="browse-filter-btn" data-genre="Action" data-section="movies">Action</button>
+                    <button class="browse-filter-btn" data-genre="Adventure" data-section="movies">Adventure</button>
+                    <button class="browse-filter-btn" data-genre="Animation" data-section="movies">Animation</button>
+                    <button class="browse-filter-btn" data-genre="Comedy" data-section="movies">Comedy</button>
+                    <button class="browse-filter-btn" data-genre="Crime" data-section="movies">Crime</button>
+                    <button class="browse-filter-btn" data-genre="Drama" data-section="movies">Drama</button>
+                    <button class="browse-filter-btn" data-genre="Family" data-section="movies">Family</button>
+                    <button class="browse-filter-btn" data-genre="Kids" data-section="movies">Kids</button>
+                    <button class="browse-filter-btn" data-genre="History" data-section="movies">History</button>
+                    <button class="browse-filter-btn" data-genre="Fantasy" data-section="movies">Fantasy</button>
+                    <button class="browse-filter-btn" data-genre="Horror" data-section="movies">Horror</button>
+                    <button class="browse-filter-btn" data-genre="Mystery" data-section="movies">Mystery</button>
+                    <button class="browse-filter-btn" data-genre="Romance" data-section="movies">Romance</button>
+                    <button class="browse-filter-btn" data-genre="Sci-Fi" data-section="movies">Sci-Fi</button>
+                    <button class="browse-filter-btn" data-genre="Thriller" data-section="movies">Thriller</button>
+                    <button class="browse-filter-btn" data-genre="War" data-section="movies">War</button>
+                </div>
+            </div>
+            <!-- Count Label -->
+            <div class="browse-results-bar">
+                <span id="moviesCountLabel">Showing all titles</span>
+            </div>
+            <!-- Cards Grid -->
+            <div class="browse-grid" id="moviesGrid"></div>
+            <!-- Pagination -->
+            <div class="browse-pagination" id="moviesPagination"></div>
+        </section>
+
+        <!-- ===== SERIES BROWSE SECTION ===== -->
+        <section class="browse-section hidden" id="seriesSection">
+            <div class="browse-section-header">
+                <div class="browse-title-row">
+                    <h1 class="browse-title"><ion-icon name="tv-outline"></ion-icon> Series</h1>
+                    <span class="browse-count" id="seriesCount">0 titles</span>
+                </div>
+                <!-- Genre Filter Bar -->
+                <div class="browse-filter-bar" id="seriesFilterBar">
+                    <button class="browse-filter-btn active" data-genre="all" data-section="series">All</button>
+                    <button class="browse-filter-btn" data-genre="Action" data-section="series">Action</button>
+                    <button class="browse-filter-btn" data-genre="Adventure" data-section="series">Adventure</button>
+                    <button class="browse-filter-btn" data-genre="Animation" data-section="series">Animation</button>
+                    <button class="browse-filter-btn" data-genre="Comedy" data-section="series">Comedy</button>
+                    <button class="browse-filter-btn" data-genre="Crime" data-section="series">Crime</button>
+                    <button class="browse-filter-btn" data-genre="Drama" data-section="series">Drama</button>
+                    <button class="browse-filter-btn" data-genre="Family" data-section="series">Family</button>
+                    <button class="browse-filter-btn" data-genre="Kids" data-section="series">Kids</button>
+                    <button class="browse-filter-btn" data-genre="History" data-section="series">History</button>
+                    <button class="browse-filter-btn" data-genre="Fantasy" data-section="series">Fantasy</button>
+                    <button class="browse-filter-btn" data-genre="Horror" data-section="series">Horror</button>
+                    <button class="browse-filter-btn" data-genre="Mystery" data-section="series">Mystery</button>
+                    <button class="browse-filter-btn" data-genre="Romance" data-section="series">Romance</button>
+                    <button class="browse-filter-btn" data-genre="Sci-Fi" data-section="series">Sci-Fi</button>
+                    <button class="browse-filter-btn" data-genre="Thriller" data-section="series">Thriller</button>
+                    <button class="browse-filter-btn" data-genre="War" data-section="series">War</button>
+                </div>
+            </div>
+            <!-- Count Label -->
+            <div class="browse-results-bar">
+                <span id="seriesCountLabel">Showing all titles</span>
+            </div>
+            <!-- Cards Grid -->
+            <div class="browse-grid" id="seriesGrid"></div>
+            <!-- Pagination -->
+            <div class="browse-pagination" id="seriesPagination"></div>
+        </section>
+
+        <!-- Anime Section (Browse) -->
+        <section class="browse-section hidden" id="animeSection">
+            <div class="browse-section-header">
+                <div class="browse-title-row">
+                    <h1 class="browse-title">
+                      <svg class="anime-goku-icon" viewBox="0 0 100 100" style="width: 1em; height: 1em; vertical-align: -0.1em; display: inline-block; fill: none; stroke: currentColor; stroke-width: 5; stroke-linejoin: miter; stroke-linecap: butt; stroke-miterlimit: 4;">
+                        <path d="M 50 88 L 40 80 L 35 68 L 20 72 L 28 60 L 12 60 L 25 50 L 10 30 L 38 42 L 38 12 L 50 35 L 60 15 L 65 38 L 85 28 L 75 45 L 95 52 L 78 60 L 85 70 L 65 68 L 60 80 Z" />
+                        <path d="M 35 68 L 40 55 L 44 65 L 50 50 L 54 68 L 60 55 L 65 68" />
+                      </svg> Anime
+                    </h1>
+                    <span class="browse-count" id="animeCount">0 titles</span>
+                </div>
+                <!-- Genre Filter Bar -->
+                <div class="browse-filter-bar" id="animeFilterBar">
+                    <button class="browse-filter-btn active" data-genre="all" data-section="anime">All</button>
+                    <button class="browse-filter-btn" data-genre="Action" data-section="anime">Action</button>
+                    <button class="browse-filter-btn" data-genre="Adventure" data-section="anime">Adventure</button>
+                    <button class="browse-filter-btn" data-genre="Comedy" data-section="anime">Comedy</button>
+                    <button class="browse-filter-btn" data-genre="Drama" data-section="anime">Drama</button>
+                    <button class="browse-filter-btn" data-genre="Fantasy" data-section="anime">Fantasy</button>
+                    <button class="browse-filter-btn" data-genre="Horror" data-section="anime">Horror</button>
+                    <button class="browse-filter-btn" data-genre="Mystery" data-section="anime">Mystery</button>
+                    <button class="browse-filter-btn" data-genre="Romance" data-section="anime">Romance</button>
+                    <button class="browse-filter-btn" data-genre="Sci-Fi" data-section="anime">Sci-Fi</button>
+                    <button class="browse-filter-btn" data-genre="Thriller" data-section="anime">Thriller</button>
+                </div>
+            </div>
+            <!-- Count Label -->
+            <div class="browse-results-bar">
+                <span id="animeCountLabel">Showing all titles</span>
+            </div>
+            <!-- Cards Grid -->
+            <div class="browse-grid" id="animeGrid"></div>
+            <!-- Pagination -->
+            <div class="browse-pagination" id="animePagination"></div>
+        </section>
+
+        <!-- Category Shelves Container -->
+        <div id="defaultShelves">
+            <!-- Shelf 0: Top 10 Trending Today -->
+            <section class="shelf-section">
+                <div class="shelf-header">
+                    <div>
+                        <h2 class="shelf-title shelf-title-accent">Top 10 Today</h2>
+
+                    </div>
+                </div>
+                <div class="carousel-container">
+                    <button class="carousel-nav prev" data-target="top10Track"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                    <div class="carousel-track top10-track" id="top10Track"></div>
+                    <button class="carousel-nav next" data-target="top10Track"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                </div>
+            </section>
+
+            <!-- Shelf 1: Trending Movies -->
+            <section class="shelf-section">
+                <div class="shelf-header">
+                    <div>
+                        <h2 class="shelf-title shelf-title-accent">Trending Movies This Week</h2>
+                        <span class="shelf-subtitle">Most watched movies this week</span>
+                    </div>
+                    <a href="#" class="shelf-explore nav-link" data-view="movies">Explore All <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                </div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev" data-target="trendingMoviesTrack"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                    <div class="carousel-track" id="trendingMoviesTrack"></div>
+                    <button class="carousel-nav next" data-target="trendingMoviesTrack"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                </div>
+            </section>
+
+            <!-- Shelf 2: Trending Series -->
+            <section class="shelf-section">
+                <div class="shelf-header">
+                    <div>
+                        <h2 class="shelf-title shelf-title-accent">Trending Series This Week</h2>
+                        <span class="shelf-subtitle">Most watched series this week</span>
+                    </div>
+                    <a href="#" class="shelf-explore nav-link" data-view="series">Explore All <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                </div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev" data-target="trendingSeriesTrack"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                    <div class="carousel-track" id="trendingSeriesTrack"></div>
+                    <button class="carousel-nav next" data-target="trendingSeriesTrack"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                </div>
+            </section>
+
+            <!-- Shelf 3: Popular Movies -->
+            <section class="shelf-section">
+                <div class="shelf-header">
+                    <div>
+                        <h2 class="shelf-title shelf-title-accent">Popular Movie</h2>
+                        <span class="shelf-subtitle">All-time popular movies</span>
+                    </div>
+                    <a href="#" class="shelf-explore nav-link" data-view="movies">Explore All <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                </div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev" data-target="popularMoviesTrack"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                    <div class="carousel-track" id="popularMoviesTrack"></div>
+                    <button class="carousel-nav next" data-target="popularMoviesTrack"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                </div>
+            </section>
+
+            <!-- Shelf 4: Popular Series -->
+            <section class="shelf-section">
+                <div class="shelf-header">
+                    <div>
+                        <h2 class="shelf-title shelf-title-accent">Popular Series</h2>
+                        <span class="shelf-subtitle">All-time popular series</span>
+                    </div>
+                    <a href="#" class="shelf-explore nav-link" data-view="series">Explore All <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                </div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-nav prev" data-target="popularSeriesTrack"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                    <div class="carousel-track" id="popularSeriesTrack"></div>
+                    <button class="carousel-nav next" data-target="popularSeriesTrack"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                </div>
+            </section>
+
+
+        </div>
+
     </main>
 
-    <!-- Fixed bottom navigation -->
-    <nav class="bottom-nav" id="bottomNav">
-        <button class="nav-item active" data-tab="home"><ion-icon name="home-outline"></ion-icon><span>Home</span></button>
-        <button class="nav-item" data-tab="explore"><ion-icon name="compass-outline"></ion-icon><span>Explore</span></button>
-        <button class="nav-item" data-tab="live"><ion-icon name="radio-outline"></ion-icon><span>Live TV</span></button>
-        <button class="nav-item" data-tab="anime"><ion-icon name="flash-outline"></ion-icon><span>Anime</span></button>
-        <button class="nav-item" data-tab="watchlist"><ion-icon name="heart-outline"></ion-icon><span>Watchlist</span></button>
-    </nav>
-
-    <!-- Detail modal -->
-    <div class="modal-overlay hidden" id="detailModal">
-        <div class="detail-sheet" id="detailSheet">
-            <button class="sheet-close" id="detailClose" aria-label="Close"><ion-icon name="close-outline"></ion-icon></button>
-            <div class="detail-hero" id="detailHero"></div>
-            <div class="detail-body" id="detailBody"></div>
+    <footer id="homeFooter" class="site-footer" style="width: 100%;">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo notranslate" translate="no">Cine<span class="text-primary">Watch</span></div>
+                <p class="footer-desc">Your ultimate destination for movies and TV series. Stream anytime, anywhere. 100% safe and secure.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Series</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Report a Problem</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
+        <div class="footer-bottom">
+            <div class="footer-copyright" style="font-size: 0.85rem; color: var(--text-dim); text-align: center; line-height: 1.5; padding: 0 1rem;">
+                &copy; 2026 CineWatch. All rights reserved. <span style="margin: 0 15px;">|</span> Disclaimer: This site does not store any files on its server. All contents are provided by non-affiliated third parties.
+            </div>
+        </div>
+    </footer>
 
-    <!-- Quick-play video modal -->
-    <div class="player-overlay hidden" id="playerModal">
-        <div class="player-shell">
-            <div class="player-topbar">
-                <button class="icon-btn" id="playerClose" aria-label="Back"><ion-icon name="chevron-back-outline"></ion-icon></button>
-                <div class="player-title" id="playerTitle">Now Playing</div>
-                <div class="server-select-wrap" id="serverSelectWrap">
+    <!-- Custom Video Player Modal -->
+    <div class="video-modal-overlay hidden" id="videoModal">
+        <div class="video-container">
+
+            <!-- Mouse Catcher for Iframe Hover -->
+            <div class="mouse-catcher" id="mouseCatcher"></div>
+
+            <!-- Video Header (Hover Zone) -->
+            <div class="video-header">
+                <!-- Back Button -->
+                <button class="player-back-btn" id="closePlayerBtn" title="Go Back">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                    </svg>
+                </button>
+
+                <!-- Server Selector (Top-Right Pill) -->
+                <div class="player-server-pill hidden notranslate" translate="no" id="serverSelectWrap">
                     <ion-icon name="server-outline"></ion-icon>
-                    <select id="serverSelect"></select>
+                    <span class="server-pill-label">Server:</span>
+                    <select id="videoServerSelect" class="player-server-select" title="Switch Video Server"></select>
                 </div>
             </div>
-            <div class="player-stage">
-                <video id="videoEl" class="hidden" playsinline preload="metadata"></video>
-                <iframe id="iframeEl" class="hidden" allowfullscreen allow="autoplay; fullscreen; encrypted-media; picture-in-picture"></iframe>
-                <div class="player-loading hidden" id="playerLoading"><ion-icon name="sync-outline"></ion-icon></div>
+
+            <!-- HTML5 Video Player -->
+            <video id="videoElement" class="video-element" preload="metadata" playsinline>
+                <source src="" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <!-- Iframe Video Player (For External Embeds) -->
+            <iframe id="iframeElement" class="video-element hidden" src="" width="100%" height="100%" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" allow="autoplay; fullscreen; encrypted-media; picture-in-picture"></iframe>
+
+            <!-- Center Play/Pause Overlay Animation -->
+            <div class="video-center-overlay hidden" id="videoCenterOverlay">
+                <span class="center-play-icon" id="centerPlayIcon"><ion-icon name="play-outline"></ion-icon></span>
             </div>
-            <div class="player-controls" id="playerControls">
-                <div class="pc-row">
-                    <button class="icon-btn" id="playPause"><ion-icon name="play"></ion-icon></button>
-                    <button class="icon-btn" id="rewind10"><ion-icon name="refresh-outline"></ion-icon><span class="skip">10</span></button>
-                    <button class="icon-btn" id="forward10"><ion-icon name="refresh-outline"></ion-icon><span class="skip fwd">10</span></button>
-                    <div class="seek-wrap">
-                        <span id="curTime">0:00</span>
-                        <input type="range" id="seekBar" min="0" max="100" value="0" step="0.1">
-                        <span id="durTime">0:00</span>
+
+            <!-- Bottom Controls Gradient Overlay -->
+            <div class="player-bottom-area" id="playerControlsBar">
+
+                <!-- Show Info (bottom-left) -->
+                <div class="player-info-area">
+                    <img class="player-show-poster hidden" id="playerShowPoster" src="" alt="" />
+                    <div class="player-info-text">
+                        <div class="player-meta" id="playerMeta"></div>
+                        <div class="player-ep-title" id="playerMovieTitle">Movie Title</div>
+                        <div class="player-ep-overview hidden" id="playerEpOverview"></div>
                     </div>
-                    <button class="icon-btn" id="fullscreenBtn"><ion-icon name="expand-outline"></ion-icon></button>
                 </div>
+
+
+
+
+
+                <!-- Progress Bar Row -->
+                <div class="player-progress-row">
+                    <span class="player-time-left" id="currentTimeText">0:00</span>
+                    <div class="seek-container">
+                        <div class="seek-progress-bg">
+                            <div class="seek-progress-fill" id="seekFill"></div>
+                        </div>
+                        <input type="range" id="seekBar" class="seek-slider" min="0" max="100" value="0" step="0.1">
+                        <div class="seek-tooltip" id="seekTooltip">00:00</div>
+                    </div>
+                    <span class="player-time-right" id="durationText">0:00</span>
+                </div>
+
+                <!-- Controls Row -->
+                <div class="controls-row">
+                    <!-- Left Controls -->
+                    <div class="controls-left">
+                        <button class="ctrl-btn" id="playPauseBtn" title="Play/Pause (Space)"><ion-icon name="play-outline"></ion-icon></button>
+                        <button class="ctrl-btn ctrl-skip" id="rewindBtn" title="Rewind 10s">
+                            <ion-icon name="refresh-outline" style="transform: scaleX(-1); display:block;"></ion-icon>
+                            <span class="skip-label">10</span>
+                        </button>
+                        <button class="ctrl-btn ctrl-skip" id="forwardBtn" title="Forward 10s">
+                            <ion-icon name="refresh-outline" style="display:block;"></ion-icon>
+                            <span class="skip-label">10</span>
+                        </button>
+                        <div class="volume-container">
+                            <button class="ctrl-btn" id="muteBtn" title="Mute/Unmute"><ion-icon name="volume-medium-outline"></ion-icon></button>
+                            <input type="range" id="volumeBar" class="volume-slider" min="0" max="1" step="0.05" value="1">
+                        </div>
+                    </div>
+
+                    <!-- Right Controls -->
+                    <div class="controls-right">
+                        <button class="ctrl-btn" id="playerNextEpBtn" title="Next Episode"><ion-icon name="play-skip-forward-outline"></ion-icon></button>
+                        <button class="ctrl-btn ctrl-btn-label" id="playerEpisodesBtn" title="Episodes">
+                            <ion-icon name="list-outline"></ion-icon>
+                            <span>Episodes</span>
+                        </button>
+                        <button class="ctrl-btn" id="fullscreenBtn" title="Fullscreen (F)"><ion-icon name="expand-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- CineWatch AI Assistant Modal -->
+    <div class="ai-modal-overlay hidden" id="aiModal">
+        <div class="ai-modal-card">
+            <!-- Animated Ambient Glow Blobs -->
+            <div class="ai-bg-glow"></div>
+            <div class="ai-blob ai-blob1"></div>
+            <div class="ai-blob ai-blob2"></div>
+
+            <!-- Header -->
+            <div class="ai-modal-header">
+                <div class="ai-header-left">
+                    <div class="ai-avatar-box">
+                        <div class="ai-avatar-orb"><ion-icon name="chatbubbles"></ion-icon></div>
+                    </div>
+                    <div class="ai-header-text">
+                        <div class="ai-modal-title notranslate" translate="no">Cine<span class="text-primary">Watch</span> <span class="ai-badge-pill">AI</span></div>
+                        <div class="ai-status-indicator notranslate" translate="no">
+                            <span class="ai-status-dot"></span> <span id="aiOnlineText">Smart Movie Assistant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-header-actions">
+                    <button class="ai-action-icon-btn" id="aiClearHistoryBtn" title="Clear Chat">
+                        <ion-icon name="refresh-outline"></ion-icon>
+                    </button>
+                    <button class="modal-close-btn ai-close-btn" id="closeAiModalBtn">&times;</button>
+                </div>
+            </div>
+
+            <!-- Body (Chat messages) -->
+            <div class="ai-modal-body" id="aiChatBody">
+                <!-- Welcome Banner -->
+                <div class="ai-welcome-msg" id="aiWelcomeMsg">
+                    <div class="ai-orb-graphic">
+                        <div class="ai-orb-ring"></div>
+                        <div class="ai-orb-core"><ion-icon name="chatbubbles"></ion-icon></div>
+                    </div>
+                    <h3 id="aiWelcomeTitle">What would you like to watch?</h3>
+                    <p id="aiWelcomeDesc">Ask for recommendations by mood, favorite actors, plot twists, or find hidden gems from our streaming catalog.</p>
+                    
+                    <!-- Suggestion Cards Grid -->
+                    <div class="ai-quick-cards notranslate" translate="no" id="aiQuickChips">
+                        <div class="ai-prompt-card" data-prompt="Suggest 3 high-octane action thrillers with great ratings">
+                            <div class="prompt-icon-wrap" style="background: rgba(229, 9, 20, 0.15); color: #ff334b;"><ion-icon name="flame"></ion-icon></div>
+                            <div class="prompt-card-text">
+                                <div class="prompt-card-title">Top Action Thrillers</div>
+                                <div class="prompt-card-desc">High stakes & suspense</div>
+                            </div>
+                        </div>
+
+                        <div class="ai-prompt-card" data-prompt="Find mind-bending Sci-Fi movies or series with unexpected plot twists">
+                            <div class="prompt-icon-wrap" style="background: rgba(0, 229, 255, 0.15); color: #00e5ff;"><ion-icon name="planet"></ion-icon></div>
+                            <div class="prompt-card-text">
+                                <div class="prompt-card-title">Mind-Bending Sci-Fi</div>
+                                <div class="prompt-card-desc">Twists, space & mystery</div>
+                            </div>
+                        </div>
+
+                        <div class="ai-prompt-card" data-prompt="Recommend a fun, wholesome comedy for family movie night">
+                            <div class="prompt-icon-wrap" style="background: rgba(255, 183, 3, 0.15); color: #ffb703;"><ion-icon name="happy"></ion-icon></div>
+                            <div class="prompt-card-text">
+                                <div class="prompt-card-title">Family Comedy</div>
+                                <div class="prompt-card-desc">Feel-good & humorous</div>
+                            </div>
+                        </div>
+
+                        <div class="ai-prompt-card" data-prompt="What are the best trending anime series available on CineWatch?">
+                            <div class="prompt-icon-wrap" style="background: rgba(156, 39, 176, 0.15); color: #d05ce3;"><ion-icon name="flash"></ion-icon></div>
+                            <div class="prompt-card-text">
+                                <div class="prompt-card-title">Top Anime Hits</div>
+                                <div class="prompt-card-desc">Shonen, fantasy & story</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Messages Container -->
+                <div class="ai-messages-list" id="aiMessagesList"></div>
+            </div>
+
+            <!-- Footer / Input Area -->
+            <div class="ai-modal-footer">
+                <form id="aiChatForm" class="ai-input-form" onsubmit="event.preventDefault(); window.sendAiChatMessage();">
+                    <div class="ai-input-sparkle-icon"><ion-icon name="chatbubble-ellipses-outline"></ion-icon></div>
+                    <input type="text" id="aiChatInput" class="ai-input" placeholder="Ask anything... e.g. Recommend a psychological thriller" autocomplete="off">
+                    <button type="submit" id="aiSendBtn" class="ai-send-btn" title="Send Message">
+                        <ion-icon name="arrow-up-outline"></ion-icon>
+                    </button>
+                </form>
             </div>
         </div>
     </div>
 
-    <!-- Toast -->
-    <div class="toast" id="toast"></div>
+    <!-- Authentication (Login / Signup) Modal -->
+    <div class="modal-overlay hidden" id="authModal" onclick="document.getElementById('authModal').classList.add('hidden')">
+        <div class="modal-card auth-modal-card" onclick="event.stopPropagation()">
+            <div class="bg"></div>
+            <div class="blob"></div>
+            <div class="blob blob2"></div>
+            <button class="modal-close-btn" id="closeAuthBtn" onclick="document.getElementById('authModal').classList.add('hidden')">&times;</button>
+
+            <div class="auth-modal-body">
+                <div class="auth-header" style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div class="auth-logo notranslate" translate="no" style="display: inline-flex; align-items: center; justify-content: center; text-align: center;"><ion-icon name="ticket" style="color: var(--primary); font-size: 1.3em; vertical-align: middle;"></ion-icon> CineWatch</div>
+                    <p class="auth-subtitle" style="text-align: center;">Welcome to your personal cinema universe</p>
+                </div>
+
+                <!-- Auth Tabs -->
+                <div class="auth-tabs">
+                    <button class="auth-tab active" id="tabLoginBtn" onclick="this.classList.add('active'); document.getElementById('tabSignupBtn').classList.remove('active'); document.getElementById('loginForm').classList.remove('hidden'); document.getElementById('signupForm').classList.add('hidden');"><ion-icon name="log-in-outline"></ion-icon> Sign In</button>
+                    <button class="auth-tab" id="tabSignupBtn" onclick="this.classList.add('active'); document.getElementById('tabLoginBtn').classList.remove('active'); document.getElementById('signupForm').classList.remove('hidden'); document.getElementById('loginForm').classList.add('hidden');"><ion-icon name="person-add-outline"></ion-icon> <span id="textTabSignup" class="notranslate" translate="no">Create Account</span></button>
+                </div>
+
+                <!-- Login Form -->
+                <form id="loginForm" class="auth-form" novalidate>
+                    <div class="form-group">
+                        <label for="loginEmail">Email Address</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" id="loginEmail" name="email" class="form-control" placeholder="Email Address"
+                                autocomplete="email" required>
+                        </div>
+                        <div class="form-error" id="loginEmailError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginPassword" id="loginPwLabel" class="notranslate" translate="no">Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="loginPassword" class="form-control notranslate" translate="no"
+                                autocomplete="current-password" required>
+                            <button type="button" class="password-toggle-btn" aria-label="Show/hide password" id="toggleLoginPassword">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </button>
+                        </div>
+                        <div class="form-error" id="loginPasswordError"></div>
+                        <div style="text-align: right; margin-top: 0.5rem;">
+                            <a href="#" id="showResetFormBtn" style="font-size: 0.95rem; color: var(--primary); text-decoration: none;">Forgot Password?</a>
+                        </div>
+                    </div>
+
+                    <div class="cf-turnstile" data-sitekey="0x4AAAAAAEYq2FBWTuFz8998" data-theme="dark" style="margin-bottom: 20px;"></div>
+
+                    <div class="form-alert hidden" id="loginAlert"></div>
+                    <button type="submit" class="btn btn-primary btn-block"><ion-icon name="log-in-outline"></ion-icon> Sign
+                        In</button>
+                </form>
+
+                <!-- Signup Form -->
+                <form id="signupForm" class="auth-form hidden" novalidate>
+                    <div class="form-group">
+                        <label for="signupName">Username</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <input type="text" id="signupName" name="username" class="form-control" placeholder="Username" required>
+                        </div>
+                        <div class="form-error" id="signupNameError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupEmail" class="notranslate" translate="no">Email Address</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" id="signupEmail" class="form-control" placeholder="Email" autocomplete="email" required>
+                        </div>
+                        <div class="form-error" id="signupEmailError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupPassword" id="signupPwLabel" class="notranslate" translate="no">Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="signupPassword" class="form-control notranslate" translate="no" autocomplete="new-password" required>
+                            <button type="button" class="password-toggle-btn" aria-label="Show/hide password" id="toggleSignupPassword">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </button>
+                        </div>
+                        <div class="password-strength-bar" id="passwordStrengthBar">
+                            <div class="strength-segment" id="strengthWeak"></div>
+                            <div class="strength-segment" id="strengthMedium"></div>
+                            <div class="strength-segment" id="strengthStrong"></div>
+                        </div>
+                        <div class="strength-text" id="passwordStrengthText"></div>
+                        <ul class="password-requirements" id="passwordReqs">
+                            <li id="reqLength"><ion-icon name="close-circle-outline"></ion-icon> At least 8 characters</li>
+                            <li id="reqCapital"><ion-icon name="close-circle-outline"></ion-icon> Uppercase letter</li>
+                            <li id="reqNumber"><ion-icon name="close-circle-outline"></ion-icon> Number</li>
+                            <li id="reqSymbol"><ion-icon name="close-circle-outline"></ion-icon> Symbol</li>
+                        </ul>
+                        <div class="form-error" id="signupPasswordError"></div>
+                    </div>
+                    
+                    <div class="cf-turnstile" data-sitekey="0x4AAAAAAEYq2FBWTuFz8998" data-theme="dark" style="margin-bottom: 20px;"></div>
+
+                    <div class="form-alert hidden" id="signupAlert"></div>
+
+                    <button type="submit" class="btn btn-primary btn-block"><ion-icon name="person-add-outline"></ion-icon>
+                        <span id="textBtnSignup" class="notranslate" translate="no">Create Account</span></button>
+                </form>
+
+                <!-- Reset Password Form -->
+                <form id="resetPasswordForm" class="auth-form hidden" novalidate>
+                    <div style="margin-bottom: 1.5rem; text-align: center;">
+                        <h3 style="color: var(--text-light); margin-bottom: 0.5rem;">Reset Password</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Enter your email address to receive a password reset link.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resetInput">Email Address</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" id="resetInput" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-error" id="resetError"></div>
+                    </div>
+
+                    <div class="form-alert hidden" id="resetAlert"></div>
+
+                    <button type="submit" class="btn btn-primary btn-block"><ion-icon name="paper-plane-outline"></ion-icon> Send Reset Link</button>
+                    
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <a href="#" id="backToLoginBtn" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem; transition: color 0.2s;">Back to Login</a>
+                    </div>
+                </form>
+
+                <!-- Change Password Form -->
+                <form id="changePasswordForm" class="auth-form hidden" novalidate>
+                    <div style="margin-bottom: 1.5rem; text-align: center;">
+                        <h3 style="color: var(--text-light); margin-bottom: 0.5rem;">Change Password</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Securely update your password.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="cpNewModal">New Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="cpNewModal" class="form-control notranslate" translate="no" required minlength="6">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpConfirmModal">Confirm New Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="cpConfirmModal" class="form-control notranslate" translate="no" required>
+                        </div>
+                    </div>
+
+                    <div class="form-alert hidden" id="cpAlert"></div>
+
+                    <button type="submit" class="btn btn-primary btn-block" id="cpSubmitBtn">Update Password</button>
+                    
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <a href="#" id="cancelCpBtn" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem; transition: color 0.2s;">Cancel</a>
+                    </div>
+                </form>
+
+                <!-- Recovery Password Form (from Email Link) -->
+                <form id="recoveryPasswordForm" class="auth-form hidden" novalidate>
+                    <div style="margin-bottom: 1.5rem; text-align: center;">
+                        <h3 style="color: var(--text-light); margin-bottom: 0.5rem;">Set New Password</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Please enter your new password below.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="recoveryNewModal">New Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="recoveryNewModal" class="form-control notranslate" translate="no" required minlength="6">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="recoveryConfirmModal">Confirm New Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="recoveryConfirmModal" class="form-control notranslate" translate="no" required>
+                        </div>
+                    </div>
+
+                    <div class="form-alert hidden" id="recoveryAlertModal"></div>
+
+                    <button type="submit" class="btn btn-primary btn-block"><ion-icon name="checkmark-outline"></ion-icon> Confirm Password</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+
+    <!-- Report / Contact Issue Modal -->
+    <div class="modal-overlay hidden" id="reportModal">
+        <div class="modal-card auth-modal-card" style="padding-bottom: 2rem;">
+            <div class="bg"></div>
+            <div class="blob"></div>
+            <div class="blob blob2"></div>
+            <button class="modal-close-btn" id="closeReportBtn">&times;</button>
+            
+            <div class="auth-modal-body">
+                <div class="auth-header">
+                    <div class="auth-logo" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                        Report an Issue
+                    </div>
+                    <p class="auth-subtitle">Encountered a problem or have feedback? Let us know below.</p>
+                </div>
+                <form id="reportForm" class="auth-form" novalidate>
+                    <div class="form-group">
+                        <label for="reportEmail">Email Address</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" id="reportEmail" class="form-control" placeholder="Your email address" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reportSubject">Title / Issue Type</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="warning-outline"></ion-icon>
+                            <input type="text" id="reportSubject" class="form-control" placeholder="e.g. Video buffering, Audio sync, Missing subtitles..." required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reportMessage">Description / Details</label>
+                        <textarea id="reportMessage" class="form-control" rows="4" placeholder="Describe the issue or feedback in detail..." style="resize: vertical; padding-left: 1rem;" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" style="margin-top: 1.5rem;">
+                        <ion-icon name="paper-plane-outline"></ion-icon> <span id="submitReportText">Submit Report</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Translate Engine -->
+    <div id="google_translate_element" style="display:none;"></div>
+    <style>
+        /* Hide Google Translate Bar, Tooltips, and Floating Widget completely */
+        body { top: 0px !important; position: static !important; }
+        .skiptranslate,
+        body > .skiptranslate,
+        iframe.skiptranslate,
+        iframe[id*=":0"],
+        iframe[id*="goog"],
+        iframe[src*="translate.google"],
+        [class*="VIpgJd"],
+        [class*="goog-"],
+        [id*="goog"],
+        #goog-gt-tt,
+        .goog-tooltip,
+        .goog-text-highlight,
+        .goog-te-gadget-icon,
+        .goog-te-banner-frame {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+            position: absolute !important;
+            top: -99999px !important;
+            left: -99999px !important;
+            width: 0 !important;
+            height: 0 !important;
+            z-index: -999999 !important;
+            clip: rect(0, 0, 0, 0) !important;
+        }
+
+        /* Custom Language Dropdown Styles */
+        .custom-lang-dropdown {
+            position: relative;
+            margin-right: 0.5rem;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 500;
+            z-index: 1000;
+            user-select: none;
+        }
+        .lang-dropdown-selected {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .lang-dropdown-selected:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255,255,255,0.3);
+        }
+        .lang-icon { font-size: 1.1rem; color: var(--primary); }
+        .lang-arrow { font-size: 0.9rem; color: var(--text-muted); transition: transform 0.3s ease; }
+        .custom-lang-dropdown.open .lang-arrow { transform: rotate(180deg); }
+        .custom-lang-dropdown.open .lang-dropdown-selected {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--primary);
+        }
+
+        .lang-dropdown-options {
+            position: absolute;
+            top: calc(100% + 8px);
+            right: 0;
+            background: rgba(15, 15, 20, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 6px;
+            width: max-content;
+            min-width: 120px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-15px) scale(0.95);
+            transform-origin: top right;
+            transition: visibility 0.2s, opacity 0.2s, transform 0.2s;
+        }
+        /* Handle RTL layout for dropdown options positioning */
+        .rtl-layout .lang-dropdown-options { right: auto; left: 0; transform-origin: top left; }
+
+        @keyframes dropdownPop {
+            0% { opacity: 0; transform: translateY(-15px) scale(0.95); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        @keyframes optionFadeIn {
+            0% { opacity: 0; transform: translateX(10px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes optionFadeInRTL {
+            0% { opacity: 0; transform: translateX(-10px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        .custom-lang-dropdown.open .lang-dropdown-options {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0) scale(1);
+            animation: dropdownPop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        .lang-option {
+            padding: 8px 12px;
+            color: var(--text-muted);
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            opacity: 1; /* Default state when closed */
+        }
+        
+        .custom-lang-dropdown.open .lang-option {
+            opacity: 0;
+            animation: optionFadeIn 0.3s forwards ease-out;
+        }
+        .rtl-layout .custom-lang-dropdown.open .lang-option {
+            animation-name: optionFadeInRTL;
+        }
+        .custom-lang-dropdown.open .lang-option:nth-child(1) { animation-delay: 0.05s; }
+        .custom-lang-dropdown.open .lang-option:nth-child(2) { animation-delay: 0.10s; }
+        .custom-lang-dropdown.open .lang-option:nth-child(3) { animation-delay: 0.15s; }
+        .custom-lang-dropdown.open .lang-option:nth-child(4) { animation-delay: 0.20s; }
+
+        .lang-option:hover {
+            background: rgba(255, 255, 255, 0.08);
+            color: white;
+        }
+        .lang-option.active {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+    </style>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en', 
+                includedLanguages: 'ar,ckb,en',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+
+        function changeLanguage(langCode) {
+            if (langCode === 'en') {
+                document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+                document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + window.location.hostname;
+            } else {
+                document.cookie = "googtrans=/en/" + langCode + "; path=/;";
+                document.cookie = "googtrans=/en/" + langCode + "; path=/; domain=" + window.location.hostname;
+            }
+            window.location.reload();
+        }
+
+        // Custom Dropdown Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            // ΓöÇΓöÇ Language Toast (Chrome-style) ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ
+            (function() {
+                // Show once per day (24h cooldown)
+                const lastShown = localStorage.getItem('langPromptShownAt');
+                const ONE_DAY = 24 * 60 * 60 * 1000;
+                if (lastShown && (Date.now() - parseInt(lastShown)) < ONE_DAY) return;
+
+                const LANG_MAP = {
+                    ckb: { label: '\u0643\u0648\u0631\u062F\u06CC',    cookie: 'googtrans=/en/ckb' },
+                    ku:  { label: '\u0643\u0648\u0631\u062F\u06CC',    cookie: 'googtrans=/en/ckb' },
+                    ar:  { label: '\u0627\u0644\u0639\u0631\u0628\u064A\u0629',  cookie: 'googtrans=/en/ar'  },
+                    en:  { label: 'English',  cookie: ''                  },
+                };
+
+                const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase().split('-')[0];
+                const detected    = LANG_MAP[browserLang] || LANG_MAP['en'];
+                const isEnglish   = browserLang === 'en' || !LANG_MAP[browserLang];
+
+                // Build tabs — English is always default selected
+                const tabsEl  = document.getElementById('langToastTabs');
+                const msgEl   = document.getElementById('langToastMsg');
+                const toast   = document.getElementById('langToast');
+                if (!toast || !tabsEl) return;
+
+                const languages = [
+                    { label: 'English',   cookie: '',                    active: true },
+                    { label: '\u0643\u0648\u0631\u062F\u06CC',     cookie: 'googtrans=/en/ckb'               },
+                    { label: '\u0627\u0644\u0639\u0631\u0628\u064A\u0629',   cookie: 'googtrans=/en/ar'                },
+                ];
+
+                tabsEl.innerHTML = languages.map((l, i) =>
+                    `<button class="lang-toast-tab${l.active ? ' active-tab' : ''}" data-idx="${i}">${l.label}</button>`
+                ).join('');
+
+                msgEl.textContent = 'Choose your language';
+
+                // Tab switching
+                tabsEl.addEventListener('click', e => {
+                    const btn = e.target.closest('.lang-toast-tab');
+                    if (!btn) return;
+                    tabsEl.querySelectorAll('.lang-toast-tab').forEach(b => b.classList.remove('active-tab'));
+                    btn.classList.add('active-tab');
+                    const idx = parseInt(btn.dataset.idx);
+                    const chosen = languages[idx];
+                    msgEl.textContent = chosen.active ? 'Choose your language' : `Translate to ${chosen.label}?`;
+                    document.getElementById('langToastChange')._chosenCookie = chosen.cookie || '';
+                });
+
+                // Translate button
+                document.getElementById('langToastChange').addEventListener('click', () => {
+                    const translateBtn = document.getElementById('langToastChange');
+                    // _chosenCookie: '' means English, a string means the target lang
+                    const chosenCookie = translateBtn._chosenCookie !== undefined
+                        ? translateBtn._chosenCookie
+                        : (isEnglish ? '' : detected.cookie);
+
+                    if (chosenCookie) {
+                        // Set target language
+                        document.cookie = chosenCookie + '; path=/';
+                    } else {
+                        // English selected ΓÇö clear any existing translation cookie
+                        document.cookie = 'googtrans=/en/en; path=/';
+                        document.cookie = 'googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
+                    }
+                    localStorage.setItem('langPromptShownAt', Date.now());
+                    toast.classList.remove('active');
+                    setTimeout(() => window.location.reload(), 200);
+                });
+
+                // Close button
+                document.getElementById('langToastClose')?.addEventListener('click', () => {
+                    toast.classList.remove('active');
+                    localStorage.setItem('langPromptShownAt', Date.now());
+                });
+
+                // Show after short delay
+                setTimeout(() => toast.classList.add('active'), 800);
+            })();
+
+
+            const cookies = document.cookie.split(';');
+            let currentLang = 'en';
+            for (let c of cookies) {
+                if (c.trim().startsWith('googtrans=')) {
+                    const val = c.split('=')[1];
+                    const parts = val.split('/');
+                    if (parts.length > 2) currentLang = parts[2];
+                    break;
+                }
+            }
+            
+            // RTL handling for Arabic and Sorani
+            if (currentLang === 'ckb' || currentLang === 'ar') {
+                document.body.style.direction = 'rtl';
+                document.body.classList.add('rtl-layout');
+            } else {
+                // Force LTR for English
+                const style = document.createElement('style');
+                style.innerHTML = 'html, body { direction: ltr !important; }';
+                document.head.appendChild(style);
+            }
+            
+            // Manual translation for Login Password Label
+            const loginPwLabel = document.querySelector('label[for="loginPassword"]');
+            const signupPwLabel = document.querySelector('label[for="signupPassword"]');
+            const signupEmailLabel = document.querySelector('label[for="signupEmail"]');
+            const textTabSignup = document.getElementById('textTabSignup');
+            const textBtnSignup = document.getElementById('textBtnSignup');
+            
+            const loginPwInput = document.getElementById('loginPassword');
+            const signupPwInput = document.getElementById('signupPassword');
+            const signupEmailInput = document.getElementById('signupEmail');
+            
+            const labelDirector = document.getElementById('labelDirector');
+            const labelCast = document.getElementById('labelCast');
+            const navSeries1 = document.getElementById('navSeries1');
+            const navSeries2 = document.getElementById('navSeries2');
+            const navHome1 = document.getElementById('navHome1');
+            const navHome2 = document.getElementById('navHome2');
+            const navMovies1 = document.getElementById('navMovies1');
+            const navMovies2 = document.getElementById('navMovies2');
+            const navAnime1 = document.getElementById('navAnime1');
+            const navAnime2 = document.getElementById('navAnime2');
+            
+            // Search filters
+            const filterBtnText = document.getElementById('filterBtnText');
+            const filterOptAll = document.getElementById('filterOptAll');
+            const filterOptMovie = document.getElementById('filterOptMovie');
+            const filterOptSeries = document.getElementById('filterOptSeries');
+            const navContinue1 = document.getElementById('navContinue1');
+            const navContinue2 = document.getElementById('navContinue2');
+            const navWatchlist1 = document.getElementById('navWatchlist1');
+            const navWatchlist2 = document.getElementById('navWatchlist2');
+            const continueShelfTitle = document.getElementById('continueShelfTitle');
+            const continueShelfSubtitle = document.getElementById('continueShelfSubtitle');
+            const navAiBtnText = document.getElementById('navAiBtnText');
+            const navAiBtnTextMobile = document.getElementById('navAiBtnTextMobile');
+
+            const genreMapKurdish = {
+                'all': 'هەموو جۆرەکان',
+                'Action': 'ئاکشن',
+                'Adventure': 'سەرکێشی',
+                'Animation': 'ئەنیمەیشن',
+                'Comedy': 'کۆمیدی',
+                'Crime': 'تاوانکاری',
+                'Drama': 'دراما',
+                'Family': 'خێزانی',
+                'Kids': 'منداڵان',
+                'History': 'مێژوویی',
+                'Fantasy': 'فانتازیا',
+                'Horror': 'ترسناک',
+                'Mystery': 'نهێنی',
+                'Romance': 'ڕۆمانسی',
+                'Sci-Fi': 'خەیاڵی زانستی',
+                'Thriller': 'هەستبزوێن',
+                'War': 'جەنگ'
+            };
+
+            const genreMapArabic = {
+                'all': 'جميع الأنواع',
+                'Action': 'أكشن',
+                'Adventure': 'مغامرة',
+                'Animation': 'رسوم متحركة',
+                'Comedy': 'كوميديا',
+                'Crime': 'جريمة',
+                'Drama': 'دراما',
+                'Family': 'عائلي',
+                'Kids': 'أطفال',
+                'History': 'تاريخي',
+                'Fantasy': 'خيالي',
+                'Horror': 'رعب',
+                'Mystery': 'غموض',
+                'Romance': 'رومانسي',
+                'Sci-Fi': 'خيال علمي',
+                'Thriller': 'إثارة',
+                'War': 'حرب'
+            };
+
+            const genreMapEnglish = {
+                'all': 'All Genres',
+                'Action': 'Action',
+                'Adventure': 'Adventure',
+                'Animation': 'Animation',
+                'Comedy': 'Comedy',
+                'Crime': 'Crime',
+                'Drama': 'Drama',
+                'Family': 'Family',
+                'Kids': 'Kids',
+                'History': 'History',
+                'Fantasy': 'Fantasy',
+                'Horror': 'Horror',
+                'Mystery': 'Mystery',
+                'Romance': 'Romance',
+                'Sci-Fi': 'Sci-Fi',
+                'Thriller': 'Thriller',
+                'War': 'War'
+            };
+
+            if (currentLang === 'ckb') {
+                if (loginPwLabel) loginPwLabel.textContent = 'وشەی نهێنی';
+                if (signupPwLabel) signupPwLabel.textContent = 'وشەی نهێنی';
+                if (loginPwInput) loginPwInput.placeholder = '••••••••';
+                if (signupPwInput) signupPwInput.placeholder = '••••••••';
+                if (signupEmailLabel) signupEmailLabel.textContent = 'ناونیشانی ئیمەیڵ';
+                if (textTabSignup) textTabSignup.textContent = 'دروستکردنی هەژمار';
+                if (textBtnSignup) textBtnSignup.textContent = 'دروستکردنی هەژمار';
+                if (signupEmailInput) signupEmailInput.placeholder = 'ئیمەیڵ';
+                if (labelDirector) labelDirector.textContent = 'دەرهێنەر:';
+                if (labelCast) labelCast.textContent = 'ئەکتەرەکان:';
+                if (navSeries1) navSeries1.textContent = 'زنجیرەکان';
+                if (navSeries2) navSeries2.textContent = 'زنجیرەکان';
+                if (navHome1) navHome1.textContent = 'سەرەکی';
+                if (navHome2) navHome2.textContent = 'سەرەکی';
+                if (navMovies1) navMovies1.textContent = 'فیلمەکان';
+                if (navMovies2) navMovies2.textContent = 'فیلمەکان';
+                if (navAnime1) navAnime1.textContent = 'ئەنیمی';
+                if (navAnime2) navAnime2.textContent = 'ئەنیمی';
+                if (navContinue1) navContinue1.textContent = 'بەردەوامبوون لە سەیرکردن';
+                if (navContinue2) navContinue2.textContent = 'بەردەوامبوون لە سەیرکردن';
+                if (navWatchlist1) navWatchlist1.textContent = 'دڵخوازەکانم';
+                if (navWatchlist2) navWatchlist2.textContent = 'دڵخوازەکانم';
+                if (continueShelfTitle) continueShelfTitle.textContent = 'بەردەوام بە لە سەیرکردن';
+                if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'رێک لەو شوێنە دەستپێبکەوە کە لێی وەستابووی';
+                if (navAiBtnText) navAiBtnText.textContent = 'پرسیار لە زیرەکی دەستکرد';
+                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = 'پرسیار لە زیرەکی دەستکرد';
+                if (filterBtnText) filterBtnText.textContent = 'فیلم و زنجیرە';
+                if (filterOptAll) filterOptAll.textContent = 'فیلم و زنجیرە';
+                if (filterOptMovie) filterOptMovie.textContent = 'تەنها فیلم';
+                if (filterOptSeries) filterOptSeries.textContent = 'تەنها زنجیرە';
+                document.querySelectorAll('.browse-filter-btn').forEach(btn => {
+                    const g = btn.getAttribute('data-genre');
+                    if (genreMapKurdish[g]) btn.textContent = genreMapKurdish[g];
+                });
+                document.querySelectorAll('.report-text').forEach(el => el.textContent = 'ڕیپۆرت');
+                const detailsReportBtn = document.getElementById('detailsReportBtn');
+                if (detailsReportBtn) detailsReportBtn.textContent = 'ڕیپۆرت';
+                const detailsSimilarsText = document.getElementById('detailsSimilarsText');
+                if (detailsSimilarsText) detailsSimilarsText.textContent = 'هاوشێوە';
+                const detailsSimilarsHeading = document.getElementById('detailsSimilarsHeading');
+                if (detailsSimilarsHeading) detailsSimilarsHeading.textContent = 'بەرهەمی هاوشێوە';
+                const commentsTitleHeading = document.getElementById('commentsTitleHeading');
+                if (commentsTitleHeading) commentsTitleHeading.textContent = 'بۆچوونەکان';
+            } else if (currentLang === 'ar') {
+                if (loginPwLabel) loginPwLabel.textContent = 'كلمة المرور';
+                if (signupPwLabel) signupPwLabel.textContent = 'كلمة المرور';
+                if (loginPwInput) loginPwInput.placeholder = '••••••••';
+                if (signupPwInput) signupPwInput.placeholder = '••••••••';
+                if (signupEmailLabel) signupEmailLabel.textContent = 'البريد الإلكتروني';
+                if (textTabSignup) textTabSignup.textContent = 'إنشاء حساب';
+                if (textBtnSignup) textBtnSignup.textContent = 'إنشاء حساب';
+                if (signupEmailInput) signupEmailInput.placeholder = 'البريد الإلكتروني';
+                if (labelDirector) labelDirector.textContent = 'المخرج:';
+                if (labelCast) labelCast.textContent = 'طاقم العمل:';
+                if (navSeries1) navSeries1.textContent = 'مسلسلات';
+                if (navSeries2) navSeries2.textContent = 'مسلسلات';
+                if (navHome1) navHome1.textContent = 'الرئيسية';
+                if (navHome2) navHome2.textContent = 'الرئيسية';
+                if (navMovies1) navMovies1.textContent = 'أفلام';
+                if (navMovies2) navMovies2.textContent = 'أفلام';
+                if (navAnime1) navAnime1.textContent = 'الأنمي';
+                if (navAnime2) navAnime2.textContent = 'الأنمي';
+                if (navContinue1) navContinue1.textContent = 'متابعة المشاهدة';
+                if (navContinue2) navContinue2.textContent = 'متابعة المشاهدة';
+                if (navWatchlist1) navWatchlist1.textContent = 'قائمتي';
+                if (navWatchlist2) navWatchlist2.textContent = 'قائمتي';
+                if (continueShelfTitle) continueShelfTitle.textContent = 'متابعة المشاهدة';
+                if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'تابع من حيث توقفت';
+                if (navAiBtnText) navAiBtnText.textContent = 'اسأل الذكاء الاصطناعي';
+                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = 'اسأل الذكاء الاصطناعي';
+                if (filterBtnText) filterBtnText.textContent = 'أفلام ومسلسلات';
+                if (filterOptAll) filterOptAll.textContent = 'أفلام ومسلسلات';
+                if (filterOptMovie) filterOptMovie.textContent = 'أفلام فقط';
+                if (filterOptSeries) filterOptSeries.textContent = 'مسلسلات فقط';
+                document.querySelectorAll('.browse-filter-btn').forEach(btn => {
+                    const g = btn.getAttribute('data-genre');
+                    if (genreMapArabic[g]) btn.textContent = genreMapArabic[g];
+                });
+                const detailsSimilarsText = document.getElementById('detailsSimilarsText');
+                if (detailsSimilarsText) detailsSimilarsText.textContent = 'أعمال مشابهة';
+                const detailsSimilarsHeading = document.getElementById('detailsSimilarsHeading');
+                if (detailsSimilarsHeading) detailsSimilarsHeading.textContent = 'قد يعجبك أيضاً';
+                const commentsTitleHeading = document.getElementById('commentsTitleHeading');
+                if (commentsTitleHeading) commentsTitleHeading.textContent = 'التعليقات';
+            } else {
+                if (loginPwLabel) loginPwLabel.textContent = 'Password';
+                if (signupPwLabel) signupPwLabel.textContent = 'Password';
+                if (loginPwInput) loginPwInput.placeholder = '••••••••';
+                if (signupPwInput) signupPwInput.placeholder = '••••••••';
+                if (signupEmailLabel) signupEmailLabel.textContent = 'Email Address';
+                if (textTabSignup) textTabSignup.textContent = 'Create Account';
+                if (textBtnSignup) textBtnSignup.textContent = 'Create Account';
+                if (signupEmailInput) signupEmailInput.placeholder = 'Email';
+                if (labelDirector) labelDirector.textContent = 'Director:';
+                if (labelCast) labelCast.textContent = 'Cast:';
+                if (navSeries1) navSeries1.textContent = 'Series';
+                if (navSeries2) navSeries2.textContent = 'Series';
+                if (navHome1) navHome1.textContent = 'Home';
+                if (navHome2) navHome2.textContent = 'Home';
+                if (navMovies1) navMovies1.textContent = 'Movies';
+                if (navMovies2) navMovies2.textContent = 'Movies';
+                if (navAnime1) navAnime1.textContent = 'Anime';
+                if (navAnime2) navAnime2.textContent = 'Anime';
+                if (navContinue1) navContinue1.textContent = 'Continue Watching';
+                if (navContinue2) navContinue2.textContent = 'Continue Watching';
+                if (navWatchlist1) navWatchlist1.textContent = 'My Watchlist';
+                if (navWatchlist2) navWatchlist2.textContent = 'My Watchlist';
+                if (continueShelfTitle) continueShelfTitle.textContent = 'Continue Watching';
+                if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'Pick up right where you left off';
+                if (navAiBtnText) navAiBtnText.textContent = 'Ask AI';
+                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = 'Ask AI Assistant';
+                if (filterBtnText) filterBtnText.textContent = 'Movies & Series';
+                if (filterOptAll) filterOptAll.textContent = 'Movies & Series';
+                if (filterOptMovie) filterOptMovie.textContent = 'Movies Only';
+                if (filterOptSeries) filterOptSeries.textContent = 'Series Only';
+                document.querySelectorAll('.browse-filter-btn').forEach(btn => {
+                    const g = btn.getAttribute('data-genre');
+                    if (genreMapEnglish[g]) btn.textContent = genreMapEnglish[g];
+                });
+                document.querySelectorAll('.report-text').forEach(el => el.textContent = 'Report');
+                const detailsReportBtn = document.getElementById('detailsReportBtn');
+                if (detailsReportBtn) detailsReportBtn.textContent = 'Report';
+                const submitReportText = document.getElementById('submitReportText');
+                if (submitReportText) submitReportText.textContent = 'Submit Report';
+                const detailsSimilarsText = document.getElementById('detailsSimilarsText');
+                if (detailsSimilarsText) detailsSimilarsText.textContent = 'Similars';
+                const detailsSimilarsHeading = document.getElementById('detailsSimilarsHeading');
+                if (detailsSimilarsHeading) detailsSimilarsHeading.textContent = 'You may like';
+                const commentsTitleHeading = document.getElementById('commentsTitleHeading');
+                if (commentsTitleHeading) commentsTitleHeading.textContent = 'Comments';
+            }
+
+            // Setup Custom Dropdown
+            const dropdown = document.getElementById('customLangDropdown');
+            const dropdownBtn = document.getElementById('langDropdownBtn');
+            const selectedText = document.getElementById('langSelectedText');
+            const options = document.querySelectorAll('.lang-option');
+
+            if (dropdown && dropdownBtn) {
+                // Set initial active state
+                options.forEach(opt => {
+                    if (opt.dataset.value === currentLang) {
+                        opt.classList.add('active');
+                        if (selectedText) selectedText.textContent = opt.textContent;
+                    }
+                    
+                    opt.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        dropdown.classList.remove('open');
+                        if (opt.dataset.value !== currentLang) {
+                            changeLanguage(opt.dataset.value);
+                        }
+                    });
+                });
+
+                // Toggle dropdown
+                dropdownBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    dropdown.classList.toggle('open');
+                });
+
+                // Close on click outside
+                document.addEventListener('click', (e) => {
+                    if (!dropdown.contains(e.target)) {
+                        dropdown.classList.remove('open');
+                    }
+                });
+            }
+        });
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        // Suppress Google Translate floating tooltip and top banner shift without killing the translation engine
+        const suppressGoogleFloatingUI = () => {
+            const tooltips = document.querySelectorAll('#goog-gt-tt, .goog-te-banner-frame, .VIpgJd-ZVi9od-ORHb-OEVmcd, .VIpgJd-ZVi9od-aZ2wEe-wOHMyf');
+            tooltips.forEach(el => {
+                if (el) {
+                    el.style.setProperty('display', 'none', 'important');
+                    el.style.setProperty('visibility', 'hidden', 'important');
+                    el.style.setProperty('pointer-events', 'none', 'important');
+                    el.style.setProperty('opacity', '0', 'important');
+                    el.style.setProperty('top', '-99999px', 'important');
+                    el.style.setProperty('left', '-99999px', 'important');
+                }
+            });
+            if (document.body.style.top && document.body.style.top !== '0px') {
+                document.body.style.top = '0px';
+            }
+        };
+
+        suppressGoogleFloatingUI();
+        setInterval(suppressGoogleFloatingUI, 100);
+        window.addEventListener('load', suppressGoogleFloatingUI);
+    </script>
 </body>
+
 </html>
