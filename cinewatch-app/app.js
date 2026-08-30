@@ -114,21 +114,25 @@ setTimeout(hideSplash, 1200);
 
 const fallbackImg = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='450' viewBox='0 0 300 450'%3E%3Crect width='300' height='450' fill='%2311141e'/%3E%3Ctext x='50%25' y='50%25' fill='%23555' font-family='sans-serif' font-size='16' text-anchor='middle'%3ENo Poster%3C/text%3E%3C/svg%3E";
 
-// Catalog Initialization with async-safe data waiting
+// Catalog Initialization with async-safe data waiting and max retry cap
 let catalogInitialized = false;
+let catalogAttempts = 0;
 
 function initCatalog() {
+  if (catalogInitialized && MOVIES.length > 0) return;
+
   const movies = window._MOVIES_DATA || [];
   const series = window._SERIES_DATA || [];
   const anime = window._ANIME_DATA || [];
 
   if (movies.length === 0 && series.length === 0 && anime.length === 0) {
-    // Data files still loading in background, retry in 50ms
-    setTimeout(initCatalog, 50);
-    return;
+    catalogAttempts++;
+    if (catalogAttempts < 12) {
+      setTimeout(initCatalog, 80);
+      return;
+    }
   }
 
-  if (catalogInitialized && MOVIES.length > 0) return;
   catalogInitialized = true;
 
   try {
