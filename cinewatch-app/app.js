@@ -456,6 +456,26 @@ function setupHeroDragEvents() {
   heroContainer.addEventListener('touchend', onDragEnd);
 }
 
+// Render hero slide indicator dots
+function renderHeroDots(count) {
+  const dotsEl = document.getElementById('heroDots');
+  if (!dotsEl) return;
+  dotsEl.innerHTML = Array.from({ length: count }, (_, i) =>
+    `<button class="hero-dot ${i === state.heroIndex ? 'active' : ''}" onclick="jumpHeroSlide(${i})" aria-label="Go to slide ${i + 1}"></button>`
+  ).join('');
+}
+
+function updateHeroDots() {
+  document.querySelectorAll('#heroDots .hero-dot').forEach((dot, i) => {
+    dot.classList.toggle('active', i === state.heroIndex);
+  });
+}
+
+function jumpHeroSlide(index) {
+  state.heroIndex = index;
+  updateHeroBannerPosition();
+}
+
 function updateHeroBannerPosition() {
   const heroTrack = document.getElementById('heroTrack');
   const slides = document.querySelectorAll('.hero-slide');
@@ -463,6 +483,7 @@ function updateHeroBannerPosition() {
 
   heroTrack.style.transition = 'transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)';
   heroTrack.style.transform = `translateX(-${state.heroIndex * 100}%)`;
+  updateHeroDots();
 }
 
 function startHeroAutoplay(totalSlides) {
