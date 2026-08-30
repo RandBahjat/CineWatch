@@ -402,9 +402,6 @@ function removeContinueWatching(movieId) {
 // ==========================================
 
 async function initApp() {
-  // Bind UI event listeners immediately so search, navigation, and modals work with zero delay
-  bindEventListeners();
-
   const dismissLoader = () => {
     const loader = document.getElementById("appLoader");
     if (loader) {
@@ -418,7 +415,14 @@ async function initApp() {
   };
 
   try {
-    // Load all movies & series from MongoDB first
+    // Bind UI event listeners immediately
+    try {
+      bindEventListeners();
+    } catch (e) {
+      console.warn("Event listeners binding warning:", e);
+    }
+
+    // Load all movies & series from local data
     await loadMediaFromAPI();
 
     loadState();
@@ -447,6 +451,17 @@ async function initApp() {
     }
   }
 }
+
+// Fallback auto-dismiss loader in case of any unhandled condition
+setTimeout(() => {
+  const loader = document.getElementById("appLoader");
+  if (loader) {
+    loader.classList.add("fade-out");
+    setTimeout(() => {
+      if (loader && loader.parentNode) loader.remove();
+    }, 400);
+  }
+}, 1500);
 
 function getFeaturedMovies() {
   return MOVIES.filter((m) => m.featured).sort((a, b) => {
