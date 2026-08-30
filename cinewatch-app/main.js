@@ -19,7 +19,7 @@ function createWindow() {
     }
   });
 
-  mainWindow.loadURL('https://cinewatch.vercel.app/');
+  mainWindow.loadURL('https://cinewatch.watch/');
 
   mainWindow.webContents.setWindowOpenHandler(({ url }) => {
     if (url.startsWith('http:') || url.startsWith('https:')) {
