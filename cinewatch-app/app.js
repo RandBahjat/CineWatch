@@ -914,6 +914,26 @@ function startApp() {
   document.getElementById('playerModal')?.addEventListener('click', (e) => {
     if (e.target.id === 'playerModal') closePlayer();
   });
+
+  // Settings dropdown handlers
+  const themeBtn = document.getElementById('themeToggleBtn');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('light-mode');
+      const isLight = document.documentElement.classList.contains('light-mode');
+      themeBtn.innerHTML = isLight 
+        ? '<ion-icon name="moon-outline"></ion-icon> Dark Mode'
+        : '<ion-icon name="contrast-outline"></ion-icon> Light Mode';
+      showToast(isLight ? 'Switched to Light Mode' : 'Switched to Dark Mode');
+    });
+  }
+
+  const aboutBtn = document.getElementById('aboutBtn');
+  if (aboutBtn) {
+    aboutBtn.addEventListener('click', () => {
+      showToast('CineWatch Desktop v1.0.0\\nBuilt for high-performance streaming.', 3000);
+    });
+  }
 }
 
 if (document.readyState === 'loading') {
