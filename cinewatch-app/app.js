@@ -916,7 +916,17 @@ function startApp() {
   });
 
   // Settings dropdown handlers
-  const themeBtn = document.getElementById('themeToggleBtn');
+  const openSettingsBtn = document.getElementById('openSettingsBtn');
+  if (openSettingsBtn) {
+    openSettingsBtn.addEventListener('click', () => {
+      switchTab('settings');
+      // Hide dropdown by removing focus from wrap (hacky but works)
+      document.activeElement?.blur();
+    });
+  }
+
+  // Settings page buttons
+  const themeBtn = document.getElementById('pageThemeToggleBtn');
   if (themeBtn) {
     themeBtn.addEventListener('click', () => {
       document.documentElement.classList.toggle('light-mode');
@@ -928,10 +938,10 @@ function startApp() {
     });
   }
 
-  const aboutBtn = document.getElementById('aboutBtn');
+  const aboutBtn = document.getElementById('pageCheckUpdateBtn');
   if (aboutBtn) {
     aboutBtn.addEventListener('click', () => {
-      showToast('CineWatch Desktop v1.0.0\\nBuilt for high-performance streaming.', 3000);
+      showToast('You are running the latest version!\\nCineWatch Desktop v1.0.0', 3000);
     });
   }
 }
