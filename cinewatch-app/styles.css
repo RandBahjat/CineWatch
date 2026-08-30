@@ -1837,24 +1837,27 @@ html, body {
   top: 1.5rem;
   left: 1.5rem;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 0.6rem 1.2rem;
-  border-radius: var(--radius-full);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   color: #fff;
-  font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
   cursor: pointer;
   transition: all var(--transition-fast);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
 }
 
 .settings-back-btn:hover {
-  background: rgba(229, 9, 20, 0.8);
+  background: var(--primary);
   border-color: var(--primary);
+  transform: scale(1.08);
 }
 
 .profile-banner {
@@ -1871,13 +1874,15 @@ html, body {
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, var(--bg-app) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .edit-banner-btn {
   position: absolute;
   bottom: 1rem;
   right: 1.5rem;
-  z-index: 2;
+  z-index: 3;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1891,8 +1896,9 @@ html, body {
   align-items: center;
   gap: 0.5rem;
   transition: all var(--transition-fast);
+  user-select: none;
 }
-.edit-banner-btn:hover { background: rgba(0, 0, 0, 0.8); }
+.edit-banner-btn:hover { background: rgba(229, 9, 20, 0.8); border-color: var(--primary); }
 
 .profile-avatar-wrap {
   position: relative;
@@ -1956,7 +1962,13 @@ html, body {
 }
 
 .settings-content {
-  padding: 3rem 3.5rem 4rem;
+  padding: 2rem 3.5rem 4rem;
+}
+
+.settings-section-divider {
+  height: 1px;
+  background: var(--border-subtle);
+  margin: 0 3.5rem;
 }
 
 .settings-container {
@@ -1964,6 +1976,30 @@ html, body {
   flex-direction: column;
   gap: 1.5rem;
   max-width: 800px;
+}
+
+.settings-save-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.9rem 2rem;
+  background: linear-gradient(135deg, var(--primary), #b0060f);
+  border: none;
+  border-radius: var(--radius-md);
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  max-width: 800px;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 20px rgba(229, 9, 20, 0.35);
+}
+
+.settings-save-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(229, 9, 20, 0.5);
 }
 
 .settings-card {
