@@ -679,7 +679,7 @@ function getOrCreateVjsPlayer() {
   return vjsPlayerInstance;
 }
 
-// Direct Play Video Modal with VideoSkin / Video.js & Multi-Server Support
+// Direct Play Video Modal with VideoSkin & Multi-Server Support
 function playMovieDirect(movieId) {
   closeDetail();
   const movie = MOVIES.find(m => m.id === movieId);
@@ -688,65 +688,59 @@ function playMovieDirect(movieId) {
   const playerModal = document.getElementById('playerModal');
   const playerTitle = document.getElementById('playerTitle');
   const iframeEl = document.getElementById('iframeEl');
-  const vjsContainer = document.getElementById('vjsContainer');
   const videoSkinPlayer = document.getElementById('videoSkinPlayer');
   const videoSkinMedia = document.getElementById('videoSkinMedia');
   const serverSelect = document.getElementById('serverSelect');
 
   if (playerTitle) playerTitle.textContent = `${movie.title} (${movie.year || '2026'})`;
 
-  // Check if movie has direct video stream (.m3u8 / .mp4) or server iframe
-  const isDirectStream = movie.videoUrl && (movie.videoUrl.endsWith('.m3u8') || movie.videoUrl.endsWith('.mp4'));
+  const tmdb = movie.tmdbId || movie.videoUrl || '550';
+  const isTv = movie.type === 'TV Show' || movie.type === 'Series' || (movie.seasons && movie.seasons.length);
 
-  if (isDirectStream) {
-    if (iframeEl) {
-      iframeEl.classList.add('hidden');
-      iframeEl.src = '';
-    }
-    if (vjsContainer) vjsContainer.classList.add('hidden');
-    if (videoSkinPlayer) {
-      videoSkinPlayer.classList.remove('hidden');
-      if (videoSkinMedia) {
-        videoSkinMedia.src = movie.videoUrl;
-        videoSkinMedia.play().catch(() => {});
+  // Sample HD video stream for VideoSkin player demo
+  const sampleVideo = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
+  const directVideoUrl = (movie.videoUrl && (movie.videoUrl.endsWith('.m3u8') || movie.videoUrl.endsWith('.mp4'))) ? movie.videoUrl : sampleVideo;
+
+  const servers = [
+    { id: 'videoskin', name: '✨ VideoSkin Gold Player (Direct HD)', type: 'videoskin', url: directVideoUrl },
+    { id: 'autoembed', name: 'AutoEmbed Fast Server', type: 'iframe', url: isTv ? `https://player.autoembed.cc/embed/tv/${tmdb}/1/1` : `https://player.autoembed.cc/embed/movie/${tmdb}` },
+    { id: 'vidlink', name: 'VidLink Pro (Multi-Audio)', type: 'iframe', url: isTv ? `https://vidlink.pro/tv/${tmdb}/1/1` : `https://vidlink.pro/movie/${tmdb}` },
+    { id: 'vidsrc', name: 'VidSrc VIP Stream', type: 'iframe', url: isTv ? `https://vidsrc.to/embed/tv/${tmdb}/1/1` : `https://vidsrc.to/embed/movie/${tmdb}` }
+  ];
+
+  function switchPlayerSource(srv) {
+    if (srv.type === 'videoskin') {
+      if (iframeEl) {
+        iframeEl.classList.add('hidden');
+        iframeEl.src = '';
+      }
+      if (videoSkinPlayer) {
+        videoSkinPlayer.classList.remove('hidden');
+        if (videoSkinMedia) {
+          videoSkinMedia.src = srv.url;
+          videoSkinMedia.play().catch(() => {});
+        }
+      }
+    } else {
+      if (videoSkinMedia) videoSkinMedia.pause();
+      if (videoSkinPlayer) videoSkinPlayer.classList.add('hidden');
+      if (iframeEl) {
+        iframeEl.classList.remove('hidden');
+        iframeEl.src = srv.url;
       }
     }
-    if (serverSelect) {
-      serverSelect.innerHTML = `<option value="${movie.videoUrl}">VideoSkin Native Player (Full HD)</option>`;
-    }
-  } else {
-    // Streaming Server Endpoints (Embed Player)
-    if (videoSkinMedia) {
-      videoSkinMedia.pause();
-    }
-    if (videoSkinPlayer) videoSkinPlayer.classList.add('hidden');
-    if (vjsContainer) vjsContainer.classList.add('hidden');
-    if (iframeEl) iframeEl.classList.remove('hidden');
-
-    const tmdb = movie.tmdbId || movie.videoUrl || '550';
-    const isTv = movie.type === 'TV Show' || movie.type === 'Series' || (movie.seasons && movie.seasons.length);
-    const servers = isTv ? [
-      { name: 'AutoEmbed TV (Fast)', url: `https://player.autoembed.cc/embed/tv/${tmdb}/1/1` },
-      { name: 'VidLink Pro TV', url: `https://vidlink.pro/tv/${tmdb}/1/1` },
-      { name: 'VidSrc VIP TV', url: `https://vidsrc.to/embed/tv/${tmdb}/1/1` }
-    ] : [
-      { name: 'AutoEmbed Fast Stream', url: `https://player.autoembed.cc/embed/movie/${tmdb}` },
-      { name: 'VidLink Pro (Multi-Audio)', url: `https://vidlink.pro/movie/${tmdb}` },
-      { name: 'VidSrc VIP', url: `https://vidsrc.to/embed/movie/${tmdb}` },
-      { name: 'ZXC Stream', url: `https://stream.zxc.pm/movie/${tmdb}` }
-    ];
-
-    if (serverSelect) {
-      serverSelect.innerHTML = servers.map((s, i) => `<option value="${s.url}">${s.name}</option>`).join('');
-      serverSelect.onchange = () => {
-        if (iframeEl) iframeEl.src = serverSelect.value;
-      };
-    }
-
-    if (iframeEl) {
-      iframeEl.src = servers[0].url;
-    }
   }
+
+  if (serverSelect) {
+    serverSelect.innerHTML = servers.map(s => `<option value="${s.id}">${s.name}</option>`).join('');
+    serverSelect.onchange = () => {
+      const selected = servers.find(s => s.id === serverSelect.value);
+      if (selected) switchPlayerSource(selected);
+    };
+  }
+
+  // Default to VideoSkin
+  switchPlayerSource(servers[0]);
 
   playerModal?.classList.remove('hidden');
 }
@@ -757,9 +751,6 @@ function closePlayer() {
   const videoSkinMedia = document.getElementById('videoSkinMedia');
   if (iframeEl) iframeEl.src = '';
   if (videoSkinMedia) videoSkinMedia.pause();
-  if (vjsPlayerInstance) {
-    vjsPlayerInstance.pause();
-  }
   playerModal?.classList.add('hidden');
 }
 
