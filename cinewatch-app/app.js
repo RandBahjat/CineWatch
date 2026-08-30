@@ -41,6 +41,18 @@ let state = {
   currentStreamData: null
 };
 
+// Global Toast System
+function showToast(msg, type = 'info') {
+  const toast = document.getElementById('toast');
+  if (!toast) return;
+  toast.textContent = msg;
+  toast.className = 'toast show';
+  clearTimeout(window._toastTimer);
+  window._toastTimer = setTimeout(() => {
+    toast.classList.remove('show');
+  }, 2800);
+}
+
 // Storage helpers
 async function loadFavorites() {
   try {
@@ -52,9 +64,9 @@ async function loadFavorites() {
   } catch(e) {}
 
   // Sync with Supabase API if user is logged in
-  if (window.api && typeof window.api.getUserFavorites === 'function') {
+  if (window.CW_API && typeof window.CW_API.getUserFavorites === 'function') {
     try {
-      const userFavs = await window.api.getUserFavorites();
+      const userFavs = await window.CW_API.getUserFavorites();
       if (Array.isArray(userFavs) && userFavs.length > 0) {
         userFavs.forEach(id => state.favorites.add(String(id)));
         saveFavorites();
@@ -87,9 +99,9 @@ async function toggleFavorite(id, e) {
   if (state.currentTab === 'home') renderHome();
 
   // Sync to Supabase cloud if api is available
-  if (window.api && typeof window.api.toggleFavorite === 'function') {
+  if (window.CW_API && typeof window.CW_API.toggleFavorite === 'function') {
     try {
-      await window.api.toggleFavorite(id);
+      await window.CW_API.toggleFavorite(id);
     } catch(err) {}
   }
 }
@@ -110,11 +122,11 @@ function hideSplash() {
 }
 
 // Fallback auto-dismiss splash screen
-setTimeout(hideSplash, 1200);
+setTimeout(hideSplash, 600);
 
 const fallbackImg = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='450' viewBox='0 0 300 450'%3E%3Crect width='300' height='450' fill='%2311141e'/%3E%3Ctext x='50%25' y='50%25' fill='%23555' font-family='sans-serif' font-size='16' text-anchor='middle'%3ENo Poster%3C/text%3E%3C/svg%3E";
 
-// Catalog Initialization with async-safe data waiting and max retry cap
+// Catalog Initialization with async-safe data waiting
 let catalogInitialized = false;
 let catalogAttempts = 0;
 
@@ -127,8 +139,8 @@ function initCatalog() {
 
   if (movies.length === 0 && series.length === 0 && anime.length === 0) {
     catalogAttempts++;
-    if (catalogAttempts < 12) {
-      setTimeout(initCatalog, 80);
+    if (catalogAttempts < 8) {
+      setTimeout(initCatalog, 50);
       return;
     }
   }
@@ -157,11 +169,30 @@ function initCatalog() {
 // Navigation & Tab Switching with Lazy Tab Rendering
 function setupNavigation() {
   document.querySelectorAll('.nav-item').forEach(btn => {
-    btn.onclick = () => {
+    btn.onclick = (e) => {
+      e.preventDefault();
       const tab = btn.dataset.tab;
       if (tab) switchTab(tab);
+      // Close mobile sidebar if open
+      document.getElementById('sidebar')?.classList.remove('mobile-open');
     };
   });
+
+  // Mobile menu button toggle
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const sidebar = document.getElementById('sidebar');
+  if (mobileMenuBtn && sidebar) {
+    mobileMenuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      sidebar.classList.toggle('mobile-open');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (sidebar.classList.contains('mobile-open') && !sidebar.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+        sidebar.classList.remove('mobile-open');
+      }
+    });
+  }
 
   // Keyboard shortcut '/' for search
   document.addEventListener('keydown', (e) => {
@@ -204,24 +235,23 @@ function switchTab(tabId) {
   const appView = document.getElementById('appView');
   if (appView) appView.scrollTop = 0;
 
-  // Lazy render tab contents on first visit
+  // Render tab contents
   if (!renderedTabs.has(tabId)) {
     renderedTabs.add(tabId);
-    if (tabId === 'explore') renderExplore();
-    else if (tabId === 'movies') renderMoviesTab();
-    else if (tabId === 'series') renderSeriesTab();
-    else if (tabId === 'anime') renderAnimeTab();
-    else if (tabId === 'live') renderLiveTV();
-    else if (tabId === 'ai') renderAITab();
   }
+
+  if (tabId === 'explore') renderExplore();
+  else if (tabId === 'movies') renderMoviesTab();
+  else if (tabId === 'series') renderSeriesTab();
+  else if (tabId === 'anime') renderAnimeTab();
+  else if (tabId === 'live') renderLiveTV();
+  else if (tabId === 'ai') renderAITab();
+  else if (tabId === 'watchlist') renderWatchlist();
 
   if (tabId === 'explore') {
     document.getElementById('searchInput')?.focus();
   } else if (tabId === 'ai') {
-    renderAITab();
     document.getElementById('aiChatInput')?.focus();
-  } else if (tabId === 'watchlist') {
-    renderWatchlist();
   }
 }
 
