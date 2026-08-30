@@ -679,7 +679,7 @@ function getOrCreateVjsPlayer() {
   return vjsPlayerInstance;
 }
 
-// Direct Play Video Modal with VideoSkin & Multi-Server Support
+// Direct Play Video Modal with Video.js HTML v10 Skin & Multi-Server Support
 function playMovieDirect(movieId) {
   closeDetail();
   const movie = MOVIES.find(m => m.id === movieId);
@@ -688,8 +688,8 @@ function playMovieDirect(movieId) {
   const playerModal = document.getElementById('playerModal');
   const playerTitle = document.getElementById('playerTitle');
   const iframeEl = document.getElementById('iframeEl');
-  const videoSkinPlayer = document.getElementById('videoSkinPlayer');
-  const videoSkinMedia = document.getElementById('videoSkinMedia');
+  const vjs10Player = document.getElementById('vjs10Player');
+  const vjs10Media = document.getElementById('vjs10Media');
   const serverSelect = document.getElementById('serverSelect');
 
   if (playerTitle) playerTitle.textContent = `${movie.title} (${movie.year || '2026'})`;
@@ -697,33 +697,35 @@ function playMovieDirect(movieId) {
   const tmdb = movie.tmdbId || movie.videoUrl || '550';
   const isTv = movie.type === 'TV Show' || movie.type === 'Series' || (movie.seasons && movie.seasons.length);
 
-  // Sample HD video stream for VideoSkin player demo
-  const sampleVideo = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
-  const directVideoUrl = (movie.videoUrl && (movie.videoUrl.endsWith('.m3u8') || movie.videoUrl.endsWith('.mp4'))) ? movie.videoUrl : sampleVideo;
+  // Video.js stream
+  const defaultStream = "https://stream.mux.com/BV3YZtogl89mg9VcNBhhnHm02Y34zI1nlMuMQfAbl3dM/highest.mp4";
+  const directVideoUrl = (movie.videoUrl && (movie.videoUrl.endsWith('.m3u8') || movie.videoUrl.endsWith('.mp4'))) ? movie.videoUrl : defaultStream;
+  const posterUrl = movie.backdrop || movie.poster || "https://image.mux.com/BV3YZtogl89mg9VcNBhhnHm02Y34zI1nlMuMQfAbl3dM/thumbnail.webp";
 
   const servers = [
-    { id: 'videoskin', name: '✨ VideoSkin Gold Player (Direct HD)', type: 'videoskin', url: directVideoUrl },
+    { id: 'vjs10', name: '✨ Video.js v10 Gold Skin Player', type: 'vjs10', url: directVideoUrl, poster: posterUrl },
     { id: 'autoembed', name: 'AutoEmbed Fast Server', type: 'iframe', url: isTv ? `https://player.autoembed.cc/embed/tv/${tmdb}/1/1` : `https://player.autoembed.cc/embed/movie/${tmdb}` },
     { id: 'vidlink', name: 'VidLink Pro (Multi-Audio)', type: 'iframe', url: isTv ? `https://vidlink.pro/tv/${tmdb}/1/1` : `https://vidlink.pro/movie/${tmdb}` },
     { id: 'vidsrc', name: 'VidSrc VIP Stream', type: 'iframe', url: isTv ? `https://vidsrc.to/embed/tv/${tmdb}/1/1` : `https://vidsrc.to/embed/movie/${tmdb}` }
   ];
 
   function switchPlayerSource(srv) {
-    if (srv.type === 'videoskin') {
+    if (srv.type === 'vjs10') {
       if (iframeEl) {
         iframeEl.classList.add('hidden');
         iframeEl.src = '';
       }
-      if (videoSkinPlayer) {
-        videoSkinPlayer.classList.remove('hidden');
-        if (videoSkinMedia) {
-          videoSkinMedia.src = srv.url;
-          videoSkinMedia.play().catch(() => {});
+      if (vjs10Player) {
+        vjs10Player.classList.remove('hidden');
+        vjs10Player.setAttribute('poster', srv.poster);
+        if (vjs10Media) {
+          vjs10Media.src = srv.url;
+          vjs10Media.play().catch(() => {});
         }
       }
     } else {
-      if (videoSkinMedia) videoSkinMedia.pause();
-      if (videoSkinPlayer) videoSkinPlayer.classList.add('hidden');
+      if (vjs10Media) vjs10Media.pause();
+      if (vjs10Player) vjs10Player.classList.add('hidden');
       if (iframeEl) {
         iframeEl.classList.remove('hidden');
         iframeEl.src = srv.url;
@@ -739,7 +741,7 @@ function playMovieDirect(movieId) {
     };
   }
 
-  // Default to VideoSkin
+  // Default to Video.js v10 Skin Player
   switchPlayerSource(servers[0]);
 
   playerModal?.classList.remove('hidden');
@@ -748,9 +750,9 @@ function playMovieDirect(movieId) {
 function closePlayer() {
   const playerModal = document.getElementById('playerModal');
   const iframeEl = document.getElementById('iframeEl');
-  const videoSkinMedia = document.getElementById('videoSkinMedia');
+  const vjs10Media = document.getElementById('vjs10Media');
   if (iframeEl) iframeEl.src = '';
-  if (videoSkinMedia) videoSkinMedia.pause();
+  if (vjs10Media) vjs10Media.pause();
   playerModal?.classList.add('hidden');
 }
 
