@@ -933,48 +933,43 @@ function startApp() {
     });
   }
 
-  // Avatar file picker
-  const editAvatarBtn = document.querySelector('.edit-avatar-btn');
-  if (editAvatarBtn) {
-    editAvatarBtn.addEventListener('click', () => {
-      const input = document.createElement('input');
-      input.type = 'file';
-      input.accept = 'image/*';
-      input.onchange = (e) => {
-        const file = e.target.files[0];
-        if (!file) return;
-        const url = URL.createObjectURL(file);
-        const avatar = document.querySelector('.profile-avatar');
+  // Avatar file picker (via native input)
+  const avatarInput = document.getElementById('avatarFileInput');
+  if (avatarInput) {
+    avatarInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const url = URL.createObjectURL(file);
+      const avatar = document.getElementById('profileAvatar');
+      if (avatar) {
         avatar.style.backgroundImage = `url(${url})`;
         avatar.style.backgroundSize = 'cover';
         avatar.style.backgroundPosition = 'center';
-        // Hide the icon, keep the edit button
         const icon = avatar.querySelector('ion-icon');
         if (icon) icon.style.display = 'none';
-        showToast('Profile picture updated!');
-      };
-      input.click();
+      }
+      showToast('Profile picture updated!');
     });
   }
 
-  // Banner file picker
-  const editBannerBtn = document.querySelector('.edit-banner-btn');
-  if (editBannerBtn) {
-    editBannerBtn.addEventListener('click', () => {
-      const input = document.createElement('input');
-      input.type = 'file';
-      input.accept = 'image/*';
-      input.onchange = (e) => {
-        const file = e.target.files[0];
-        if (!file) return;
-        const url = URL.createObjectURL(file);
-        const banner = document.querySelector('.profile-banner');
-        if (banner) banner.style.backgroundImage = `url(${url})`;
-        showToast('Cover photo updated!');
-      };
-      input.click();
+  // Banner file picker (via native input)
+  const bannerInput = document.getElementById('bannerFileInput');
+  if (bannerInput) {
+    bannerInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const url = URL.createObjectURL(file);
+      const banner = document.getElementById('profileBanner');
+      if (banner) banner.style.backgroundImage = `url(${url})`;
+      showToast('Cover photo updated!');
     });
   }
+
+  // Save button
+  document.getElementById('saveSettingsBtn')?.addEventListener('click', () => {
+    showToast('Settings saved!');
+    setTimeout(() => document.getElementById('settingsOverlay')?.classList.add('hidden'), 600);
+  });
 
   // Settings page buttons
   const themeBtn = document.getElementById('pageThemeToggleBtn');
