@@ -961,21 +961,44 @@ html, body {
   position: relative !important;
 }
 
+/* Luxury Chrome-Crystal Top 10 Rank Numeral */
 .top10-rank-badge {
   position: absolute;
-  bottom: 48px;
-  left: -12px;
-  font-family: var(--font-display);
-  font-size: 6.8rem;
+  bottom: 42px;
+  left: -14px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 6.2rem;
   font-weight: 900;
   line-height: 0.85;
-  color: #06070a;
-  -webkit-text-stroke: 4px rgba(255, 255, 255, 0.95);
-  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.95), 0 0 20px rgba(229, 9, 20, 0.4);
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.7) 45%, rgba(255, 255, 255, 0.15) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.85);
+  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 20px rgba(229, 9, 20, 0.35));
   z-index: 10;
   pointer-events: none;
   user-select: none;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
+}
+
+/* Top 10 Floating Badge on Poster */
+.top10-pill-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: linear-gradient(135deg, var(--primary), #90000a);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  padding: 3px 8px;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 14px rgba(229, 9, 20, 0.6);
+  z-index: 4;
 }
 
 .card-info {
