@@ -659,7 +659,27 @@ function closeDetail() {
   document.getElementById('detailModal')?.classList.add('hidden');
 }
 
-// Direct Play Video Modal
+// Video.js Instance Handler
+let vjsPlayerInstance = null;
+
+function getOrCreateVjsPlayer() {
+  if (!vjsPlayerInstance && typeof videojs !== 'undefined') {
+    const el = document.getElementById('vjsPlayer');
+    if (el) {
+      vjsPlayerInstance = videojs('vjsPlayer', {
+        controls: true,
+        autoplay: true,
+        preload: 'auto',
+        responsive: true,
+        fluid: true,
+        playbackRates: [0.5, 1, 1.25, 1.5, 2]
+      });
+    }
+  }
+  return vjsPlayerInstance;
+}
+
+// Direct Play Video Modal with Video.js & Multi-Server Support
 function playMovieDirect(movieId) {
   closeDetail();
   const movie = MOVIES.find(m => m.id === movieId);
@@ -668,28 +688,59 @@ function playMovieDirect(movieId) {
   const playerModal = document.getElementById('playerModal');
   const playerTitle = document.getElementById('playerTitle');
   const iframeEl = document.getElementById('iframeEl');
+  const vjsContainer = document.getElementById('vjsContainer');
   const serverSelect = document.getElementById('serverSelect');
 
   if (playerTitle) playerTitle.textContent = `${movie.title} (${movie.year || '2026'})`;
 
-  // Streaming Server Endpoints
-  const servers = [
-    { name: 'AutoEmbed Server (Fast)', url: `https://player.autoembed.cc/embed/movie/${movie.tmdbId || '550'}` },
-    { name: 'VidLink Pro (Multi-Audio)', url: `https://vidlink.pro/movie/${movie.tmdbId || '550'}` },
-    { name: 'VidSrc VIP', url: `https://vidsrc.to/embed/movie/${movie.tmdbId || '550'}` },
-    { name: 'ZXC Stream', url: `https://stream.zxc.pm/movie/${movie.tmdbId || '550'}` }
-  ];
+  // Check if movie has direct video stream (.m3u8 / .mp4) or server iframe
+  const isDirectStream = movie.videoUrl && (movie.videoUrl.endsWith('.m3u8') || movie.videoUrl.endsWith('.mp4'));
 
-  if (serverSelect) {
-    serverSelect.innerHTML = servers.map((s, i) => `<option value="${s.url}">${s.name}</option>`).join('');
-    serverSelect.onchange = () => {
-      if (iframeEl) iframeEl.src = serverSelect.value;
-    };
-  }
+  if (isDirectStream) {
+    // Play with Video.js
+    if (iframeEl) {
+      iframeEl.classList.add('hidden');
+      iframeEl.src = '';
+    }
+    if (vjsContainer) vjsContainer.classList.remove('hidden');
 
-  if (iframeEl) {
-    iframeEl.classList.remove('hidden');
-    iframeEl.src = servers[0].url;
+    const player = getOrCreateVjsPlayer();
+    if (player) {
+      player.src({
+        src: movie.videoUrl,
+        type: movie.videoUrl.endsWith('.m3u8') ? 'application/x-mpegURL' : 'video/mp4'
+      });
+      player.play();
+    }
+    if (serverSelect) {
+      serverSelect.innerHTML = `<option value="${movie.videoUrl}">Video.js Direct Player (Full HD)</option>`;
+    }
+  } else {
+    // Streaming Server Endpoints (Embed Player)
+    if (vjsPlayerInstance) {
+      vjsPlayerInstance.pause();
+    }
+    if (vjsContainer) vjsContainer.classList.add('hidden');
+    if (iframeEl) iframeEl.classList.remove('hidden');
+
+    const tmdb = movie.tmdbId || movie.videoUrl || '550';
+    const servers = [
+      { name: 'AutoEmbed Fast Stream', url: `https://player.autoembed.cc/embed/movie/${tmdb}` },
+      { name: 'VidLink Pro (Multi-Audio)', url: `https://vidlink.pro/movie/${tmdb}` },
+      { name: 'VidSrc VIP', url: `https://vidsrc.to/embed/movie/${tmdb}` },
+      { name: 'ZXC Stream', url: `https://stream.zxc.pm/movie/${tmdb}` }
+    ];
+
+    if (serverSelect) {
+      serverSelect.innerHTML = servers.map((s, i) => `<option value="${s.url}">${s.name}</option>`).join('');
+      serverSelect.onchange = () => {
+        if (iframeEl) iframeEl.src = serverSelect.value;
+      };
+    }
+
+    if (iframeEl) {
+      iframeEl.src = servers[0].url;
+    }
   }
 
   playerModal?.classList.remove('hidden');
@@ -699,6 +750,9 @@ function closePlayer() {
   const playerModal = document.getElementById('playerModal');
   const iframeEl = document.getElementById('iframeEl');
   if (iframeEl) iframeEl.src = '';
+  if (vjsPlayerInstance) {
+    vjsPlayerInstance.pause();
+  }
   playerModal?.classList.add('hidden');
 }
 
