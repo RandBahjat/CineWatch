@@ -3,12 +3,13 @@ const SUPABASE_URL = 'https://oscsoignmxakmssxzgsj.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable_Bl5PcXWRXpaZUWxqZweAbA_vkdMvZpd';
 
 // Initialize Supabase Client
-let supabaseClient;
+let supabaseClient = null;
 try {
-  supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  if (window.supabase && typeof window.supabase.createClient === 'function') {
+    supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  }
 } catch (e) {
-  alert('Error initializing Supabase in api.js: ' + e.message);
-  console.error(e);
+  console.warn('Could not initialize Supabase client:', e);
 }
 
 window.CW_API = {
