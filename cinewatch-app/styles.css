@@ -1026,6 +1026,31 @@ html, body {
   color: var(--text-main);
 }
 
+/* FIX 3: Load More pagination button */
+.load-more-btn {
+  display: block;
+  margin: 1.5rem auto 3rem;
+  padding: 0.85rem 2.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  color: var(--text-sub);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  letter-spacing: 0.3px;
+}
+
+.load-more-btn:hover {
+  background: rgba(229, 9, 20, 0.1);
+  border-color: var(--primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--primary-glow);
+}
+
 /* ==========================================================================
    LIVE TV CHANNELS
    ========================================================================== */
