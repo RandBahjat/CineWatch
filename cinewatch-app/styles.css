@@ -273,6 +273,18 @@ html, body {
   z-index: 200;
 }
 
+/* Transparent bridge filling the gap between dropdown bottom and the button,
+   keeps :hover alive while moving the mouse between the two elements */
+.user-dropdown::after {
+  content: '';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 0;
+  right: 0;
+  height: 0.75rem;
+  background: transparent;
+}
+
 .sidebar-user-wrap:hover .user-dropdown,
 .sidebar-user-wrap:focus-within .user-dropdown {
   opacity: 1;
