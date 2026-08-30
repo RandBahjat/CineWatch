@@ -309,8 +309,13 @@ html, body {
   border-bottom: 1px solid var(--border-subtle);
 }
 
+.user-dropdown-item:first-child {
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
 .user-dropdown-item:last-child {
   border-bottom: none;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
 }
 
 .user-dropdown-item ion-icon {
