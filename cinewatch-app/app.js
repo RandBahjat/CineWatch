@@ -82,7 +82,9 @@ function hideSplash() {
 // Fallback auto-dismiss splash screen
 setTimeout(hideSplash, 1200);
 
-/// Catalog Initialization with async-safe data waiting
+const fallbackImg = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='450' viewBox='0 0 300 450'%3E%3Crect width='300' height='450' fill='%2311141e'/%3E%3Ctext x='50%25' y='50%25' fill='%23555' font-family='sans-serif' font-size='16' text-anchor='middle'%3ENo Poster%3C/text%3E%3C/svg%3E";
+
+// Catalog Initialization with async-safe data waiting
 let catalogInitialized = false;
 
 function initCatalog() {
@@ -111,12 +113,6 @@ function initCatalog() {
     });
 
     renderHome();
-    renderExplore();
-    renderMoviesTab();
-    renderSeriesTab();
-    renderAnimeTab();
-    renderLiveTV();
-    renderWatchlist();
   } catch (err) {
     console.error('Error initializing catalog:', err);
   } finally {
@@ -124,59 +120,8 @@ function initCatalog() {
   }
 }
 
-// Navigation & Tab Switching
-function setupNavigation() {
-  document.querySelectorAll('.nav-item').forEach(btn => {
-    btn.onclick = () => {
-      const tab = btn.dataset.tab;
-      if (tab) switchTab(tab);
-    };
-  });
-
-  // Keyboard shortcut '/' for search
-  document.addEventListener('keydown', (e) => {
-    if (e.key === '/' && !['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) {
-      e.preventDefault();
-      switchTab('explore');
-      document.getElementById('searchInput')?.focus();
-    }
-  });
-
-  // Topbar Search Click
-  document.getElementById('topSearchBtn')?.addEventListener('click', () => {
-    switchTab('explore');
-  });
-  document.getElementById('topSearchInput')?.addEventListener('click', () => {
-    switchTab('explore');
-    document.getElementById('searchInput')?.focus();
-  });
-
-  // Explore Search Input
-  const searchInput = document.getElementById('searchInput');
-  const clearBtn = document.getElementById('exploreClearBtn');
-  if (searchInput) {
-    searchInput.addEventListener('input', (e) => {
-      const query = e.target.value.trim();
-      if (clearBtn) clearBtn.classList.toggle('hidden', !query);
-      searchCatalog(query);
-    });
-  }
-  if (clearBtn) {
-    clearBtn.addEventListener('click', () => {
-      if (searchInput) {
-        searchInput.value = '';
-        clearBtn.classList.add('hidden');
-        searchCatalog('');
-        searchInput.focus();
-      }
-    });
-  }
-
-  // Hero controls
-  document.getElementById('heroPrevBtn')?.addEventListener('click', () => changeHeroSlide(-1));
-  document.getElementById('heroNextBtn')?.addEventListener('click', () => changeHeroSlide(1));
-  setupHeroDragEvents();
-}
+// Navigation & Tab Switching with Lazy Tab Rendering
+const renderedTabs = new Set(['home']);
 
 function switchTab(tabId) {
   state.currentTab = tabId;
@@ -193,6 +138,16 @@ function switchTab(tabId) {
   const appView = document.getElementById('appView');
   if (appView) appView.scrollTop = 0;
 
+  // Lazy render tab contents on first visit
+  if (!renderedTabs.has(tabId)) {
+    renderedTabs.add(tabId);
+    if (tabId === 'explore') renderExplore();
+    else if (tabId === 'movies') renderMoviesTab();
+    else if (tabId === 'series') renderSeriesTab();
+    else if (tabId === 'anime') renderAnimeTab();
+    else if (tabId === 'live') renderLiveTV();
+  }
+
   if (tabId === 'explore') {
     document.getElementById('searchInput')?.focus();
   } else if (tabId === 'watchlist') {
@@ -200,27 +155,19 @@ function switchTab(tabId) {
   }
 }
 
-// Toast Notification
-function showToast(msg) {
-  const el = document.getElementById('toast');
-  if (!el) return;
-  el.textContent = msg;
-  el.classList.add('show');
-  setTimeout(() => el.classList.remove('show'), 2400);
-}
-
-// Card HTML Generator with countdown rank badge support
+// Card HTML Generator with non-blocking fallback image and zero recursion
 function createCardHTML(movie, rankNum = null) {
   if (!movie) return '';
   const isFav = state.favorites.has(movie.id);
   const rankBadge = rankNum ? `<div class="card-rank">🔥 TOP ${11 - rankNum}</div>` : '';
   const metaYear = movie.year ? `<span>${movie.year}</span>` : '';
   const metaDur = movie.duration ? `<span>${movie.duration}</span>` : '';
+  const posterSrc = movie.poster || movie.backdrop || fallbackImg;
 
   return `
     <div class="media-card" onclick="openDetail('${movie.id}')">
       <div class="card-poster">
-        <img src="${movie.poster || movie.backdrop || ''}" alt="${movie.title}" loading="lazy" onerror="this.src='https://via.placeholder.com/300x450/11141e/ffffff?text=${encodeURIComponent(movie.title)}'">
+        <img src="${posterSrc}" alt="${movie.title}" loading="lazy" onerror="this.onerror=null; this.src='${fallbackImg}';">
         ${rankBadge}
         <button class="card-fav-btn ${isFav ? 'active' : ''}" onclick="toggleFav(event, '${movie.id}')" aria-label="Favorite">
           <ion-icon name="${isFav ? 'heart' : 'heart-outline'}"></ion-icon>
