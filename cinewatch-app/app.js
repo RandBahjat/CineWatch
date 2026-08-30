@@ -120,6 +120,7 @@ function setupNavigation() {
   // Hero controls
   document.getElementById('heroPrevBtn')?.addEventListener('click', () => changeHeroSlide(-1));
   document.getElementById('heroNextBtn')?.addEventListener('click', () => changeHeroSlide(1));
+  setupHeroDragEvents();
 }
 
 function switchTab(tabId) {
