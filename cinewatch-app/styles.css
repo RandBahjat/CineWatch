@@ -772,7 +772,7 @@ html, body {
   gap: 3.2rem;
   position: relative;
   z-index: 5;
-  margin-top: -3.5rem;
+  margin-top: 2rem;
 }
 
 .shelf {
