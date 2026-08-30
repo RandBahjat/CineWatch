@@ -248,19 +248,102 @@ html, body {
   border-top: 1px solid var(--border-subtle);
 }
 
+/* Wrap positions the dropdown above the user button */
+.sidebar-user-wrap {
+  position: relative;
+}
+
+/* The dropdown menu (above the button) */
+.user-dropdown {
+  position: absolute;
+  bottom: calc(100% + 0.6rem);
+  left: 0;
+  right: 0;
+  background: rgba(14, 17, 26, 0.97);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transform: translateY(10px) scale(0.97);
+  pointer-events: none;
+  transition: opacity 0.22s ease, transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 200;
+}
+
+.sidebar-user-wrap:hover .user-dropdown,
+.sidebar-user-wrap:focus-within .user-dropdown {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.user-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  background: transparent;
+  border: none;
+  color: var(--text-sub);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  transition: all var(--transition-fast);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.user-dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.user-dropdown-item ion-icon {
+  font-size: 1.2rem;
+  color: var(--text-dim);
+  transition: color var(--transition-fast);
+}
+
+.user-dropdown-item:hover {
+  background: rgba(229, 9, 20, 0.1);
+  color: #ffffff;
+}
+
+.user-dropdown-item:hover ion-icon {
+  color: var(--primary);
+}
+
 .sidebar-user {
   display: flex;
   align-items: center;
   gap: 0.85rem;
-  padding: 0.5rem;
+  padding: 0.6rem 0.8rem;
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border-subtle);
-  transition: background var(--transition-fast);
+  cursor: pointer;
+  transition: all var(--transition-fast);
 }
 
-.sidebar-user:hover {
-  background: rgba(255, 255, 255, 0.06);
+.sidebar-user-wrap:hover .sidebar-user {
+  background: rgba(229, 9, 20, 0.08);
+  border-color: rgba(229, 9, 20, 0.3);
+}
+
+.user-chevron {
+  font-size: 1rem;
+  color: var(--text-dim);
+  margin-left: auto;
+  transition: transform var(--transition-smooth);
+}
+
+.sidebar-user-wrap:hover .user-chevron {
+  transform: rotate(180deg);
+  color: var(--primary);
 }
 
 .user-avatar {
