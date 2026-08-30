@@ -1804,3 +1804,38 @@ html, body {
   color: rgba(255,255,255,0.9);
   filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));
 }
+
+/* ==========================================================================
+   LIGHT MODE OVERRIDES
+   ========================================================================== */
+html.light-mode {
+  --bg-app: #f4f5f7;
+  --bg-sidebar: rgba(255, 255, 255, 0.95);
+  --bg-card: rgba(255, 255, 255, 0.9);
+  --bg-card-hover: rgba(230, 235, 240, 0.9);
+  --bg-modal: rgba(240, 245, 250, 0.96);
+  --text-main: #11141e;
+  --text-sub: #495057;
+  --text-dim: #868e96;
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-hover: rgba(0, 0, 0, 0.15);
+}
+
+html.light-mode .user-dropdown {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.1);
+}
+
+html.light-mode .explore-search-bar {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+html.light-mode .explore-search-bar input {
+  color: var(--text-main);
+}
+
+html.light-mode .toast {
+  background: #ffffff;
+  color: #111;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
