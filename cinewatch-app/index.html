@@ -1,162 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1" />
-    <title>CineWatch App</title>
-    <meta name="theme-color" content="#0a0a0f" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=1">
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <!-- Existing catalog data (referenced, not copied) -->
-    <script src="./movies-data.js?v=1" defer></script>
-    <script src="./series-data.js?v=1" defer></script>
-    <script src="./anime-data.js?v=1" defer></script>
-    <script src="live-tv.js?v=1" defer></script>
-    <script src="app.js?v=5" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1" />
+  <title>CineWatch App</title>
+  <meta name="theme-color" content="#06070a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="./movies-data.js?v=1" defer></script>
+  <script src="./series-data.js?v=1" defer></script>
+  <script src="./anime-data.js?v=1" defer></script>
+  <script src="live-tv.js?v=1" defer></script>
+  <script src="app.js?v=3" defer></script>
 </head>
 <body>
-    <!-- Ambient background glow blobs -->
-    <div class="bg-glow bg-glow-1"></div>
-    <div class="bg-glow bg-glow-2"></div>
-    <div class="bg-glow bg-glow-3"></div>
 
-    <!-- App loading splash -->
-    <div class="splash" id="splash">
-        <div class="splash-logo"><ion-icon name="ticket"></ion-icon> Cine<span>Watch</span></div>
-        <div class="splash-ring"></div>
-        <p>Loading your cinema…</p>
+  <!-- Ambient glow orbs -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <!-- Loading Splash -->
+  <div class="splash" id="splash">
+    <div class="splash-logo">
+      <div class="brand-icon"><ion-icon name="ticket"></ion-icon></div>
+      Cine<span>Watch</span>
     </div>
+    <div class="splash-ring"></div>
+    <p>Loading your cinema…</p>
+  </div>
 
-    <!-- Top app bar -->
-    <header class="topbar" id="topbar">
-        <button class="icon-btn" id="menuBtn" aria-label="Menu"><ion-icon name="menu-outline"></ion-icon></button>
-        <div class="topbar-logo"><ion-icon name="ticket"></ion-icon> Cine<span>Watch</span></div>
-        <button class="icon-btn" id="searchBtn" aria-label="Search"><ion-icon name="search-outline"></ion-icon></button>
-    </header>
+  <!-- Mobile Topbar (hidden on desktop) -->
+  <header class="topbar" id="topbar">
+    <button class="icon-btn" id="mobileMenuBtn" aria-label="Open menu">
+      <ion-icon name="menu-outline"></ion-icon>
+    </button>
+    <div class="topbar-logo">Cine<span>Watch</span></div>
+    <button class="icon-btn" id="searchBtn" aria-label="Search">
+      <ion-icon name="search-outline"></ion-icon>
+    </button>
+  </header>
 
-    <!-- Main scroll viewport -->
+  <!-- App Layout: Sidebar + Main -->
+  <div class="app-layout">
+
+    <!-- ===== LEFT SIDEBAR ===== -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <a class="sidebar-brand" href="#">
+          <div class="brand-icon"><ion-icon name="ticket"></ion-icon></div>
+          <span class="brand-text">Cine<span>Watch</span></span>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <span class="nav-group-label">MENU</span>
+        <button class="nav-item active" data-tab="home">
+          <div class="active-glow"></div>
+          <ion-icon name="home-outline"></ion-icon>
+          <span>Home</span>
+        </button>
+        <button class="nav-item" data-tab="explore">
+          <div class="active-glow"></div>
+          <ion-icon name="compass-outline"></ion-icon>
+          <span>Explore</span>
+        </button>
+        <button class="nav-item" data-tab="movies">
+          <div class="active-glow"></div>
+          <ion-icon name="film-outline"></ion-icon>
+          <span>Movies</span>
+        </button>
+        <button class="nav-item" data-tab="series">
+          <div class="active-glow"></div>
+          <ion-icon name="tv-outline"></ion-icon>
+          <span>Series</span>
+        </button>
+        <button class="nav-item" data-tab="anime">
+          <div class="active-glow"></div>
+          <ion-icon name="flash-outline"></ion-icon>
+          <span>Anime</span>
+        </button>
+        <button class="nav-item" data-tab="live">
+          <div class="active-glow"></div>
+          <ion-icon name="radio-outline"></ion-icon>
+          <span>Live TV</span>
+        </button>
+
+        <span class="nav-group-label" style="margin-top:1rem;">LIBRARY</span>
+        <button class="nav-item" data-tab="watchlist">
+          <div class="active-glow"></div>
+          <ion-icon name="heart-outline"></ion-icon>
+          <span>Watchlist</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-user-wrap">
+          <div class="user-dropdown">
+            <button class="user-dropdown-item">
+              <ion-icon name="person-outline"></ion-icon>
+              Profile
+            </button>
+            <button class="user-dropdown-item">
+              <ion-icon name="settings-outline"></ion-icon>
+              Settings
+            </button>
+          </div>
+          <div class="sidebar-user">
+            <div class="user-avatar"><ion-icon name="person-outline"></ion-icon></div>
+            <div class="user-info">
+              <div class="user-name">Guest</div>
+              <div class="user-role">Free Plan</div>
+            </div>
+            <ion-icon name="chevron-up-outline" style="margin-left:auto; color: var(--text-dim);"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ===== MAIN CONTENT ===== -->
     <main class="app-view" id="appView">
 
-        <!-- ===== HOME TAB ===== -->
-        <section class="tab-panel active" id="panel-home">
-            <div class="hero" id="hero">
-                <div class="hero-track" id="heroTrack"></div>
-                <div class="hero-dots" id="heroDots"></div>
-            </div>
-            <div class="shelves" id="homeShelves"></div>
-        </section>
+      <!-- HOME TAB -->
+      <section class="tab-panel active" id="panel-home">
+        <div class="hero" id="hero">
+          <div class="hero-track" id="heroTrack"></div>
+          <div class="hero-dots" id="heroDots"></div>
+        </div>
+        <div class="shelves" id="homeShelves"></div>
+      </section>
 
-        <!-- ===== EXPLORE / SEARCH TAB ===== -->
-        <section class="tab-panel" id="panel-explore">
-            <div class="explore-head">
-                <h1>Explore</h1>
-                <div class="search-box">
-                    <ion-icon name="search-outline"></ion-icon>
-                    <input type="text" id="searchInput" placeholder="Search movies, series, anime…" autocomplete="off">
-                </div>
-                <div class="filter-chips" id="filterChips">
-                    <button class="chip active" data-type="all">All</button>
-                    <button class="chip" data-type="Movie">Movies</button>
-                    <button class="chip" data-type="TV Show">Series</button>
-                    <button class="chip" data-type="Anime">Anime</button>
-                </div>
-                <div class="genre-chips" id="genreChips"></div>
-            </div>
-            <div class="results-grid" id="resultsGrid"></div>
-            <div class="empty-state hidden" id="exploreEmpty">
-                <ion-icon name="search-outline"></ion-icon>
-                <p>No results found</p>
-            </div>
-        </section>
+      <!-- EXPLORE TAB -->
+      <section class="tab-panel" id="panel-explore">
+        <div class="explore-head">
+          <h1>Explore</h1>
+          <div class="search-box">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="text" id="searchInput" placeholder="Search movies, series, anime…" autocomplete="off">
+          </div>
+          <div class="filter-chips" id="filterChips">
+            <button class="chip active" data-type="all">All</button>
+            <button class="chip" data-type="Movie">Movies</button>
+            <button class="chip" data-type="TV Show">Series</button>
+            <button class="chip" data-type="Anime">Anime</button>
+          </div>
+          <div class="genre-chips" id="genreChips"></div>
+        </div>
+        <div class="results-grid" id="resultsGrid"></div>
+        <div class="empty-state hidden" id="exploreEmpty">
+          <ion-icon name="search-outline"></ion-icon>
+          <p>No results found</p>
+        </div>
+      </section>
 
-        <!-- ===== LIVE TV TAB ===== -->
-        <section class="tab-panel" id="panel-live">
-            <div class="explore-head">
-                <h1>Live TV</h1>
-                <p class="sub">Watch live channels — coming soon</p>
-            </div>
-            <div class="live-grid" id="liveGrid"></div>
-        </section>
+      <!-- MOVIES TAB -->
+      <section class="tab-panel" id="panel-movies">
+        <div class="explore-head">
+          <h1>Movies</h1>
+        </div>
+        <div class="results-grid" id="moviesGrid"></div>
+      </section>
 
-        <!-- ===== ANIME TAB ===== -->
-        <section class="tab-panel" id="panel-anime">
-            <div class="explore-head">
-                <h1>Anime</h1>
-            </div>
-            <div class="results-grid" id="animeGrid"></div>
-        </section>
+      <!-- SERIES TAB -->
+      <section class="tab-panel" id="panel-series">
+        <div class="explore-head">
+          <h1>Series</h1>
+        </div>
+        <div class="results-grid" id="seriesGrid"></div>
+      </section>
 
-        <!-- ===== WATCHLIST TAB ===== -->
-        <section class="tab-panel" id="panel-watchlist">
-            <div class="explore-head">
-                <h1>My Watchlist</h1>
-            </div>
-            <div class="results-grid" id="watchlistGrid"></div>
-            <div class="empty-state hidden" id="watchlistEmpty">
-                <ion-icon name="heart-outline"></ion-icon>
-                <p>Your watchlist is empty</p>
-                <span>Tap the heart on any title to save it here</span>
-            </div>
-        </section>
+      <!-- ANIME TAB -->
+      <section class="tab-panel" id="panel-anime">
+        <div class="explore-head">
+          <h1>Anime</h1>
+        </div>
+        <div class="results-grid" id="animeGrid"></div>
+      </section>
+
+      <!-- LIVE TV TAB -->
+      <section class="tab-panel" id="panel-live">
+        <div class="explore-head">
+          <h1>Live TV</h1>
+          <p class="sub">Watch live channels — coming soon</p>
+        </div>
+        <div class="live-grid" id="liveGrid"></div>
+      </section>
+
+      <!-- WATCHLIST TAB -->
+      <section class="tab-panel" id="panel-watchlist">
+        <div class="explore-head">
+          <h1>My Watchlist</h1>
+        </div>
+        <div class="results-grid" id="watchlistGrid"></div>
+        <div class="empty-state hidden" id="watchlistEmpty">
+          <ion-icon name="heart-outline"></ion-icon>
+          <p>Your watchlist is empty</p>
+          <span>Click the heart on any title to save it here</span>
+        </div>
+      </section>
+
     </main>
+  </div><!-- /.app-layout -->
 
-    <!-- Fixed bottom navigation (becomes left sidebar on desktop in CSS) -->
-    <nav class="bottom-nav" id="bottomNav">
-        <button class="nav-item active" data-tab="home"><ion-icon name="home-outline"></ion-icon><span>Home</span></button>
-        <button class="nav-item" data-tab="explore"><ion-icon name="compass-outline"></ion-icon><span>Explore</span></button>
-        <button class="nav-item" data-tab="live"><ion-icon name="radio-outline"></ion-icon><span>Live TV</span></button>
-        <button class="nav-item" data-tab="anime"><ion-icon name="flash-outline"></ion-icon><span>Anime</span></button>
-        <button class="nav-item" data-tab="watchlist"><ion-icon name="heart-outline"></ion-icon><span>Watchlist</span></button>
-    </nav>
-
-    <!-- Detail modal -->
-    <div class="modal-overlay hidden" id="detailModal">
-        <div class="detail-sheet" id="detailSheet">
-            <button class="sheet-close" id="detailClose" aria-label="Close"><ion-icon name="close-outline"></ion-icon></button>
-            <div class="detail-hero" id="detailHero"></div>
-            <div class="detail-body" id="detailBody"></div>
-        </div>
+  <!-- Detail Modal -->
+  <div class="modal-overlay hidden" id="detailModal">
+    <div class="detail-sheet" id="detailSheet">
+      <button class="sheet-close" id="detailClose" aria-label="Close"><ion-icon name="close-outline"></ion-icon></button>
+      <div class="detail-hero" id="detailHero"></div>
+      <div class="detail-body" id="detailBody"></div>
     </div>
+  </div>
 
-    <!-- Quick-play video modal -->
-    <div class="player-overlay hidden" id="playerModal">
-        <div class="player-shell">
-            <div class="player-topbar">
-                <button class="icon-btn" id="playerClose" aria-label="Back"><ion-icon name="chevron-back-outline"></ion-icon></button>
-                <div class="player-title" id="playerTitle">Now Playing</div>
-                <div class="server-select-wrap" id="serverSelectWrap">
-                    <ion-icon name="server-outline"></ion-icon>
-                    <select id="serverSelect"></select>
-                </div>
-            </div>
-            <div class="player-stage">
-                <video id="videoEl" class="hidden" playsinline preload="metadata"></video>
-                <iframe id="iframeEl" class="hidden" allowfullscreen allow="autoplay; fullscreen; encrypted-media; picture-in-picture"></iframe>
-                <div class="player-loading hidden" id="playerLoading"><ion-icon name="sync-outline"></ion-icon></div>
-            </div>
-            <div class="player-controls" id="playerControls">
-                <div class="pc-row">
-                    <button class="icon-btn" id="playPause"><ion-icon name="play"></ion-icon></button>
-                    <button class="icon-btn" id="rewind10"><ion-icon name="refresh-outline"></ion-icon><span class="skip">10</span></button>
-                    <button class="icon-btn" id="forward10"><ion-icon name="refresh-outline"></ion-icon><span class="skip fwd">10</span></button>
-                    <div class="seek-wrap">
-                        <span id="curTime">0:00</span>
-                        <input type="range" id="seekBar" min="0" max="100" value="0" step="0.1">
-                        <span id="durTime">0:00</span>
-                    </div>
-                    <button class="icon-btn" id="fullscreenBtn"><ion-icon name="expand-outline"></ion-icon></button>
-                </div>
-            </div>
+  <!-- Player Modal -->
+  <div class="player-overlay hidden" id="playerModal">
+    <div class="player-shell">
+      <div class="player-topbar">
+        <button class="icon-btn" id="playerClose" aria-label="Back"><ion-icon name="chevron-back-outline"></ion-icon></button>
+        <div class="player-title" id="playerTitle">Now Playing</div>
+        <div class="server-select-wrap" id="serverSelectWrap">
+          <ion-icon name="server-outline"></ion-icon>
+          <select id="serverSelect"></select>
         </div>
+      </div>
+      <div class="player-stage">
+        <video id="videoEl" class="hidden" playsinline preload="metadata"></video>
+        <iframe id="iframeEl" class="hidden" allowfullscreen allow="autoplay; fullscreen; encrypted-media; picture-in-picture"></iframe>
+        <div class="player-loading hidden" id="playerLoading"><ion-icon name="sync-outline"></ion-icon></div>
+      </div>
+      <div class="player-controls" id="playerControls">
+        <div class="pc-row">
+          <button class="icon-btn" id="playPause"><ion-icon name="play"></ion-icon></button>
+          <button class="icon-btn" id="rewind10"><ion-icon name="play-back-outline"></ion-icon></button>
+          <button class="icon-btn" id="forward10"><ion-icon name="play-forward-outline"></ion-icon></button>
+          <div class="seek-wrap">
+            <span id="curTime">0:00</span>
+            <input type="range" id="seekBar" min="0" max="100" value="0" step="0.1">
+            <span id="durTime">0:00</span>
+          </div>
+          <button class="icon-btn" id="fullscreenBtn"><ion-icon name="expand-outline"></ion-icon></button>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Toast -->
-    <div class="toast" id="toast"></div>
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
 </body>
 </html>
