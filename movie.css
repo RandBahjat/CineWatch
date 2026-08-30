@@ -481,19 +481,6 @@ select {
   border-radius: 50%;
   transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
 }
-.nav-action-btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.35);
-  color: var(--primary);
-}
-.nav-action-btn:active {
-  transform: scale(0.96);
-}/* ==========================================================================
-   ORGANIZED SPOTLIGHT SEARCH MODAL
-   ========================================================================== */
-.search-modal {
-  position: fixed;
-  inset: 0;
   z-index: 10000;
   display: flex;
   justify-content: center;
