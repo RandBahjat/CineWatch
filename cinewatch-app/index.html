@@ -73,13 +73,26 @@
             </nav>
 
             <div class="sidebar-footer">
-                <div class="sidebar-user">
-                    <div class="user-avatar">
-                        <ion-icon name="person"></ion-icon>
+                <div class="sidebar-user-wrap">
+                    <div class="sidebar-user" id="sidebarUser">
+                        <div class="user-avatar">
+                            <ion-icon name="person"></ion-icon>
+                        </div>
+                        <div class="user-info">
+                            <span class="user-name">Guest User</span>
+                            <span class="user-status">Premium VIP</span>
+                        </div>
+                        <ion-icon name="chevron-up-outline" class="user-chevron"></ion-icon>
                     </div>
-                    <div class="user-info">
-                        <span class="user-name">Guest User</span>
-                        <span class="user-status">Premium VIP</span>
+                    <div class="user-dropdown">
+                        <button class="user-dropdown-item" onclick="showToast('Login coming soon!')">
+                            <ion-icon name="log-in-outline"></ion-icon>
+                            <span>Login</span>
+                        </button>
+                        <button class="user-dropdown-item" onclick="showToast('Sign Up coming soon!')">
+                            <ion-icon name="person-add-outline"></ion-icon>
+                            <span>Sign Up</span>
+                        </button>
                     </div>
                 </div>
             </div>
