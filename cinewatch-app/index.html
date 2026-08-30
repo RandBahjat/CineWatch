@@ -257,6 +257,22 @@
                 </div>
             </div>
             <div class="player-stage">
+                <!-- VideoSkin Media Chrome Player -->
+                <media-controller id="videoSkinPlayer" class="video-skin-wrap hidden" style="--media-accent-color: #f5c518; --media-border-radius: 1rem;">
+                    <video id="videoSkinMedia" slot="media" playsinline preload="auto" crossorigin></video>
+                    <media-control-bar>
+                        <media-play-button></media-play-button>
+                        <media-seek-backward-button seek-offset="10"></media-seek-backward-button>
+                        <media-seek-forward-button seek-offset="10"></media-seek-forward-button>
+                        <media-time-range></media-time-range>
+                        <media-time-display show-duration></media-time-display>
+                        <media-mute-button></media-mute-button>
+                        <media-volume-range></media-volume-range>
+                        <media-pip-button></media-pip-button>
+                        <media-fullscreen-button></media-fullscreen-button>
+                    </media-control-bar>
+                </media-controller>
+
                 <div id="vjsContainer" class="vjs-container-wrap hidden">
                     <video id="vjsPlayer" class="video-js vjs-theme-city vjs-big-play-centered" playsinline controls preload="auto"></video>
                 </div>
