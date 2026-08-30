@@ -29,6 +29,12 @@
     "directories": {
       "output": "C:\\CinewatchBuild"
     },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico"
+    },
     "win": {
       "target": "portable"
     }
