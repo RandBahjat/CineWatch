@@ -457,6 +457,201 @@ select {
   font-size: 0.75rem;
   padding: 0.1rem 0.45rem;
   border-radius: 10px;
+  transition: var(--transition-normal);
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.3);
+}
+.btn-primary:hover {
+  background: var(--primary-hover);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border-light);
+}
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+}
+
+.browse-count {
+  font-size: 0.92rem;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.3rem 0.85rem;
+  background: rgba(229, 9, 20, 0.25);
+  border-radius: 20px;
+  border: 1px solid rgba(229, 9, 20, 0.5);
+  white-space: nowrap;
+}
+
+.btn-outline:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: rgba(229, 9, 20, 0.1);
+}
+
+.btn-demo {
+  background: linear-gradient(135deg, #2b3644, #1f2833);
+  color: var(--gold);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+}
+.btn-demo:hover {
+  border-color: var(--gold);
+  background: rgba(255, 193, 7, 0.15);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-lg {
+  padding: 0.9rem 2rem;
+  font-size: 1.05rem;
+}
+
+/* Sticky Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  background: transparent;
+  z-index: 100;
+  transition: var(--transition-normal);
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  text-decoration: none;
+}
+
+.logo-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+  display: block;
+  transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              filter 0.3s ease;
+}
+
+.brand-logo:hover .logo-icon {
+  transform: scale(1.2) rotate(-10deg);
+}
+
+.logo-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+  display: block;
+}
+
+.logo-text {
+  letter-spacing: -0.5px;
+}
+
+.logo-accent {
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: var(--transition-fast);
+  position: relative;
+  padding: 0.3rem 0;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.nav-link ion-icon {
+  font-size: 1.2rem;
+  transition:
+    transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    color 0.3s ease;
+}
+
+.nav-link:hover ion-icon {
+  transform: translateY(-3px) scale(1.15);
+  color: var(--primary);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #fff;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--primary);
+  border-radius: 2px;
+  box-shadow: 0 0 8px var(--primary);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform: scaleX(0);
+  transform-origin: center;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.badge {
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 10px;
   margin-left: 0.25rem;
 }
 
@@ -481,6 +676,79 @@ select {
   border-radius: 50%;
   transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
 }
+
+.nav-action-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.35);
+  color: var(--primary);
+}
+
+.nav-action-btn:active {
+  transform: scale(0.96);
+}
+
+/* --- AI Assistant Navbar Button --- */
+.nav-ai-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: linear-gradient(135deg, rgba(229, 9, 20, 0.2), rgba(138, 43, 226, 0.25));
+  border: 1px solid rgba(229, 9, 20, 0.45);
+  color: #fff;
+  padding: 0.42rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.nav-ai-btn:hover {
+  background: linear-gradient(135deg, rgba(229, 9, 20, 0.35), rgba(138, 43, 226, 0.45));
+  border-color: rgba(229, 9, 20, 0.75);
+  box-shadow: 0 0 14px rgba(229, 9, 20, 0.4);
+  transform: translateY(-1px);
+  color: #fff;
+}
+
+.nav-ai-btn:active {
+  transform: scale(0.96);
+}
+
+/* --- Report Navbar Button --- */
+.nav-report-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.42rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-report-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav-report-btn:active {
+  transform: scale(0.96);
+}
+
+/* ==========================================================================
+   ORGANIZED SPOTLIGHT SEARCH MODAL
+   ========================================================================== */
+.search-modal {
+  position: fixed;
+  inset: 0;
   z-index: 10000;
   display: flex;
   justify-content: center;
@@ -742,70 +1010,7 @@ body.rtl-layout .modal-search-clear {
     justify-content: center;
   }
 }
-/* --- 2. Main Content Body --- */
-.search-modal-body {
-  position: relative;
-  z-index: 2;
-  padding: 1.3rem 1.4rem;
-  max-height: 56vh;
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
-}
 
-.search-modal-body::-webkit-scrollbar {
-  width: 5px;
-}
-
-.search-modal-body::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.18);
-  border-radius: 10px;
-}
-
-/* Sections Structure */
-.search-section {
-  margin-bottom: 1.3rem;
-}
-
-.search-section:last-child {
-  margin-bottom: 0;
-}
-
-.search-section-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.45);
-  letter-spacing: 0.9px;
-  text-transform: uppercase;
-  margin-bottom: 0.75rem;
-}
-
-.search-section-header span {
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-}
-
-#clearRecentBtn {
-  background: transparent;
-  border: none;
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 0.72rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: color 0.2s;
-  letter-spacing: 0.5px;
-}
-
-#clearRecentBtn:hover {
-  color: #ff334b;
-}
-
-/* Category Grid */
-.search-tags-grid {
 /* --- 2. Main Content Body --- */
 .search-modal-body {
   position: relative;
@@ -873,101 +1078,6 @@ body.rtl-layout .modal-search-clear {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   gap: 0.6rem;
-}
-
-.nav-action-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
-  color: #fff;
-  font-size: 1.15rem;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  transition: transform 0.2s, box-shadow 0.2s, color 0.2s;
-}
-
-.nav-action-btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.35);
-  color: var(--primary);
-}
-
-.nav-action-btn:active {
-  transform: scale(0.96);
-}
-
-/* --- AI Assistant Navbar Button --- */
-.nav-ai-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  background: linear-gradient(135deg, rgba(229, 9, 20, 0.2), rgba(138, 43, 226, 0.25));
-  border: 1px solid rgba(229, 9, 20, 0.45);
-  color: #fff;
-  padding: 0.42rem 0.85rem;
-  border-radius: 20px;
-  font-size: 0.84rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
-.nav-ai-btn:hover {
-  background: linear-gradient(135deg, rgba(229, 9, 20, 0.35), rgba(138, 43, 226, 0.45));
-  border-color: rgba(229, 9, 20, 0.75);
-  box-shadow: 0 0 14px rgba(229, 9, 20, 0.4);
-  transform: translateY(-1px);
-  color: #fff;
-}
-
-.nav-ai-btn:active {
-  transform: scale(0.96);
-}
-
-/* --- Report Navbar Button --- */
-.nav-report-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: rgba(255, 255, 255, 0.8);
-  padding: 0.42rem 0.85rem;
-  border-radius: 20px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.nav-report-btn:hover {
-  background: rgba(255, 255, 255, 0.12);
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.25);
-}
-
-.nav-report-btn:active {
-  transform: scale(0.96);
-}
-
-/* ==========================================================================
-   ORGANIZED SPOTLIGHT SEARCH MODAL
-   ========================================================================== */
-.search-modal {
-  position: fixed;
-  inset: 0;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(20px);
-  display: flex;
-  justify-content: center;
-  padding-top: 10vh;
 }
 
 .search-tag-chip {
