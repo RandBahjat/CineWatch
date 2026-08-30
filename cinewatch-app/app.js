@@ -1,12 +1,33 @@
 /**
- * CineWatch Mobile/Desktop Standalone App Logic
+ * CineWatch Standalone App Engine
+ * Supports Fullscreen Layout, Left Sidebar, Filtering, Live TV & Quick Player
  */
 
-// Featured title lists for hero / top 10
-const FEATURED_TITLES = ["The Whisper Man", "Grand Theft Auto VI: An Extended Look", "Mousetrap", "Batman: Knightfall Part 1: Knightfall", "Mutiny", "Reacher", "Lanterns", "Lioness", "Spider-Man: Brand New Day", "The Odyssey"];
-const TOP_10_TITLES = ["Grand Theft Auto VI: An Extended Look", "Motor City", "Mutiny", "Batman: Knightfall Part 1: Knightfall", "Reacher", "The Last Sunrise", "Spider-Man: Brand New Day", "Lanterns", "The Odyssey", "Toy Story 5"];
-const TRENDING_MOVIES_TITLES = ["Batman: Knightfall Part 1: Knightfall", "Mutiny", "Spider-Man: Brand New Day", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Minions & Monsters", "Project Hail Mary"];
-const TRENDING_SERIES_TITLES = ["Lanterns", "Reacher", "Lucky", "Silo", "One Piece", "Ted Lasso", "X-Men '97", "Lioness", "Outer Banks"];
+const FEATURED_TITLES = [
+  "Grand Theft Auto VI: An Extended Look",
+  "The Whisper Man",
+  "Mousetrap",
+  "Batman: Knightfall Part 1: Knightfall",
+  "Mutiny",
+  "Reacher",
+  "Lanterns",
+  "Lioness",
+  "Spider-Man: Brand New Day",
+  "The Odyssey"
+];
+
+const TOP_10_TITLES = [
+  "Grand Theft Auto VI: An Extended Look",
+  "Motor City",
+  "Mutiny",
+  "Batman: Knightfall Part 1: Knightfall",
+  "Reacher",
+  "The Last Sunrise",
+  "Spider-Man: Brand New Day",
+  "Lanterns",
+  "The Odyssey",
+  "Toy Story 5"
+];
 
 let MOVIES = [];
 let state = {
@@ -27,21 +48,25 @@ function loadFavorites() {
     if (saved) state.favorites = new Set(JSON.parse(saved));
   } catch(e) {}
 }
+
 function saveFavorites() {
   try {
     localStorage.setItem('cinewatch_app_favs', JSON.stringify([...state.favorites]));
   } catch(e) {}
 }
-function toggleFavorite(id) {
+
+function toggleFavorite(id, e) {
+  if (e) e.stopPropagation();
   if (state.favorites.has(id)) {
     state.favorites.delete(id);
     showToast('Removed from Watchlist');
   } else {
     state.favorites.add(id);
-    showToast('Added to Watchlist');
+    showToast('Saved to Watchlist');
   }
   saveFavorites();
   renderWatchlist();
+  if (state.currentTab === 'home') renderHome();
 }
 
 // Catalog Initialization
@@ -67,48 +92,64 @@ function initCatalog() {
 
   renderHome();
   renderExplore();
+  renderMoviesTab();
+  renderSeriesTab();
+  renderAnimeTab();
   renderLiveTV();
-  renderAnime();
   renderWatchlist();
 }
 
-// UI Navigation & Tab Switching
+// Navigation & Tab Switching
 function setupNavigation() {
   document.querySelectorAll('.nav-item').forEach(btn => {
     btn.onclick = () => {
       const tab = btn.dataset.tab;
-      switchTab(tab);
+      if (tab) switchTab(tab);
     };
   });
 
-  document.getElementById('searchBtn')?.addEventListener('click', () => switchTab('explore'));
-  document.getElementById('menuBtn')?.addEventListener('click', () => showToast('CineWatch App v1.0'));
+  // Keyboard shortcut '/' for search
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && !['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) {
+      e.preventDefault();
+      switchTab('explore');
+      document.getElementById('searchInput')?.focus();
+    }
+  });
+
+  // Hero controls
+  document.getElementById('heroPrevBtn')?.addEventListener('click', () => changeHeroSlide(-1));
+  document.getElementById('heroNextBtn')?.addEventListener('click', () => changeHeroSlide(1));
 }
 
 function switchTab(tabId) {
   state.currentTab = tabId;
+  
+  // Update sidebar & bottom nav buttons
   document.querySelectorAll('.nav-item').forEach(b => {
     b.classList.toggle('active', b.dataset.tab === tabId);
   });
+
+  // Switch tab panels
   document.querySelectorAll('.tab-panel').forEach(p => {
     p.classList.toggle('active', p.id === `panel-${tabId}`);
   });
 
-  // Reset scroll
+  // Scroll to top
   const main = document.getElementById('appView');
   if (main) main.scrollTop = 0;
 }
 
-// Toast
+// Toast Notification
 function showToast(msg) {
   const el = document.getElementById('toast');
   if (!el) return;
   el.textContent = msg;
   el.classList.add('show');
-  setTimeout(() => el.classList.remove('show'), 2200);
+  setTimeout(() => el.classList.remove('show'), 2400);
 }
 
-// Render Card HTML
+// Render Card HTML with 3D Hover & Shimmer
 function createCardHTML(m, rankNum = null) {
   const isFav = state.favorites.has(m.id);
   return `
@@ -117,204 +158,310 @@ function createCardHTML(m, rankNum = null) {
         <img src="${m.poster || m.backdrop}" alt="${m.title}" loading="lazy" />
         <div class="card-badge"><ion-icon name="star"></ion-icon> ${m.rating || 'N/A'}</div>
         ${rankNum ? `<div class="card-top10-num">${rankNum}</div>` : ''}
+        <div class="card-overlay">
+          <div class="card-play-icon"><ion-icon name="play"></ion-icon></div>
+        </div>
       </div>
-      <div class="card-title">${m.title}</div>
-      <div class="card-sub">${m.year || ''} • ${m.type || 'Movie'}</div>
+      <div class="card-info">
+        <div class="card-title">${m.title}</div>
+        <div class="card-sub">${m.year || ''} • ${m.type || (m.seasons ? 'Series' : 'Movie')}</div>
+      </div>
     </div>
   `;
 }
 
-// Render Home Tab
+// 1. Home Tab Rendering
 function renderHome() {
-  // 1. Hero Carousel
   const heroFeatured = MOVIES.filter(m => FEATURED_TITLES.includes(m.title)).slice(0, 6);
   const heroTrack = document.getElementById('heroTrack');
   const heroDots = document.getElementById('heroDots');
 
   if (heroTrack && heroFeatured.length > 0) {
-    heroTrack.innerHTML = heroFeatured.map(m => `
-      <div class="hero-slide" style="background-image: url('${m.backdrop || m.poster}')" onclick="openDetail('${m.id}')">
-        <div class="hero-content">
-          <span class="hero-badge">Featured</span>
-          <h2 class="hero-title">${m.title}</h2>
-          <div class="hero-meta">
-            <span class="rating"><ion-icon name="star"></ion-icon> ${m.rating}</span>
-            <span>•</span>
-            <span>${m.year}</span>
-            <span>•</span>
-            <span>${m.duration || m.age || ''}</span>
+    heroTrack.innerHTML = heroFeatured.map((m, idx) => `
+      <div class="hero-slide ${idx === 0 ? 'active' : ''}" style="background-image: url('${m.backdrop || m.poster}')" onclick="openDetail('${m.id}')">
+        <div class="hero-content" onclick="event.stopPropagation()">
+          <div class="hero-badge-row">
+            <span class="hero-badge"><ion-icon name="flame"></ion-icon> Featured</span>
+            <span class="hero-type-pill">${m.type || 'Movie'}</span>
           </div>
-          <div class="hero-actions" onclick="event.stopPropagation()">
-            <button class="btn btn-primary" onclick="playMovieDirect('${m.id}')"><ion-icon name="play"></ion-icon> Play</button>
-            <button class="btn btn-secondary" onclick="openDetail('${m.id}')"><ion-icon name="information-circle-outline"></ion-icon> Info</button>
+          <h1 class="hero-title">${m.title}</h1>
+          <div class="hero-meta">
+            <span class="rating"><ion-icon name="star"></ion-icon> ${m.rating || '8.5'}</span>
+            <span>•</span>
+            <span>${m.year || '2026'}</span>
+            <span>•</span>
+            <span>${m.duration || '2h 15m'}</span>
+          </div>
+          <p class="hero-overview">${m.description || 'Experience this blockbuster cinema release in full Ultra HD quality with immersive audio and multi-server streaming.'}</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" onclick="playMovieDirect('${m.id}')"><ion-icon name="play"></ion-icon> Watch Now</button>
+            <button class="btn btn-secondary" onclick="openDetail('${m.id}')"><ion-icon name="information-circle-outline"></ion-icon> Details</button>
           </div>
         </div>
       </div>
     `).join('');
 
-    heroDots.innerHTML = heroFeatured.map((_, i) => `<div class="dot ${i === 0 ? 'active' : ''}"></div>`).join('');
+    if (heroDots) {
+      heroDots.innerHTML = heroFeatured.map((_, idx) => `
+        <div class="hero-dot ${idx === 0 ? 'active' : ''}" onclick="goToHeroSlide(${idx})"></div>
+      `).join('');
+    }
 
-    // Auto rotate
-    if (state.heroTimer) clearInterval(state.heroTimer);
-    state.heroTimer = setInterval(() => {
-      state.heroIndex = (state.heroIndex + 1) % heroFeatured.length;
-      heroTrack.style.transform = `translateX(-${state.heroIndex * 100}%)`;
-      document.querySelectorAll('.hero-dots .dot').forEach((d, i) => d.classList.toggle('active', i === state.heroIndex));
-    }, 6000);
+    startHeroAutoplay(heroFeatured.length);
   }
 
-  // 2. Shelves
+  // Shelves
   const shelvesContainer = document.getElementById('homeShelves');
   if (!shelvesContainer) return;
 
-  const top10 = MOVIES.filter(m => TOP_10_TITLES.includes(m.title)).slice(0, 10);
-  const trendingMovies = MOVIES.filter(m => TRENDING_MOVIES_TITLES.includes(m.title) && m.type !== 'TV Show').slice(0, 12);
-  const trendingSeries = MOVIES.filter(m => TRENDING_SERIES_TITLES.includes(m.title) && (m.type === 'TV Show' || m.type === 'Series')).slice(0, 12);
-  const kurdishDubbed = MOVIES.filter(m => m.overviewKurdish && m.overviewKurdish.trim().length > 0).slice(0, 12);
+  const top10 = TOP_10_TITLES.map(title => MOVIES.find(m => m.title === title)).filter(Boolean);
+  const trendingMovies = MOVIES.filter(m => (m.type === 'Movie' || !m.type) && !m.isAnime).slice(0, 15);
+  const trendingSeries = MOVIES.filter(m => m.type === 'TV Show' || m.type === 'Series' || m.seasons).slice(0, 15);
+  const animeHits = MOVIES.filter(m => m.isAnime || m.genres?.includes('Anime')).slice(0, 15);
 
   shelvesContainer.innerHTML = `
-    <!-- Top 10 Shelf -->
+    <!-- Top 10 Today -->
     <div class="shelf">
-      <div class="shelf-head">
-        <div class="shelf-title">Top 10 Today</div>
+      <div class="shelf-header">
+        <h2 class="shelf-title"><span class="title-bar"></span> Top 10 in World Today</h2>
       </div>
       <div class="shelf-track">
-        ${top10.map((m, idx) => createCardHTML(m, idx + 1)).join('')}
+        ${top10.map((m, i) => createCardHTML(m, i + 1)).join('')}
       </div>
     </div>
 
     <!-- Trending Movies -->
     <div class="shelf">
-      <div class="shelf-head">
-        <div class="shelf-title">Trending Movies</div>
+      <div class="shelf-header">
+        <h2 class="shelf-title"><span class="title-bar"></span> Trending Movies</h2>
       </div>
       <div class="shelf-track">
         ${trendingMovies.map(m => createCardHTML(m)).join('')}
       </div>
     </div>
 
-    <!-- Trending Series -->
+    <!-- Popular TV Series -->
     <div class="shelf">
-      <div class="shelf-head">
-        <div class="shelf-title">Trending Series</div>
+      <div class="shelf-header">
+        <h2 class="shelf-title"><span class="title-bar"></span> Popular Series</h2>
       </div>
       <div class="shelf-track">
         ${trendingSeries.map(m => createCardHTML(m)).join('')}
       </div>
     </div>
 
-    <!-- Kurdish Dubbed / Subbed Shelf -->
+    <!-- Top Anime -->
     <div class="shelf">
-      <div class="shelf-head">
-        <div class="shelf-title">Kurdish Translated</div>
+      <div class="shelf-header">
+        <h2 class="shelf-title"><span class="title-bar"></span> Anime Hits</h2>
       </div>
       <div class="shelf-track">
-        ${kurdishDubbed.map(m => createCardHTML(m)).join('')}
+        ${animeHits.map(m => createCardHTML(m)).join('')}
       </div>
     </div>
   `;
 }
 
-// Render Explore Tab
+function startHeroAutoplay(totalSlides) {
+  clearInterval(state.heroTimer);
+  state.heroTimer = setInterval(() => {
+    changeHeroSlide(1, totalSlides);
+  }, 6500);
+}
+
+function changeHeroSlide(direction, totalSlides = null) {
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.hero-dot');
+  const count = totalSlides || slides.length;
+  if (count <= 1) return;
+
+  slides[state.heroIndex]?.classList.remove('active');
+  dots[state.heroIndex]?.classList.remove('active');
+
+  state.heroIndex = (state.heroIndex + direction + count) % count;
+
+  slides[state.heroIndex]?.classList.add('active');
+  dots[state.heroIndex]?.classList.add('active');
+}
+
+function goToHeroSlide(idx) {
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.hero-dot');
+  if (!slides[idx]) return;
+
+  slides[state.heroIndex]?.classList.remove('active');
+  dots[state.heroIndex]?.classList.remove('active');
+
+  state.heroIndex = idx;
+
+  slides[state.heroIndex]?.classList.add('active');
+  dots[state.heroIndex]?.classList.add('active');
+}
+
+// 2. Explore Tab
 function renderExplore() {
-  const input = document.getElementById('searchInput');
-  const chips = document.querySelectorAll('#filterChips .chip');
-  const genreContainer = document.getElementById('genreChips');
-  const grid = document.getElementById('resultsGrid');
-  const empty = document.getElementById('exploreEmpty');
+  const searchInput = document.getElementById('searchInput');
+  const filterChips = document.getElementById('filterChips');
+  const genreChips = document.getElementById('genreChips');
+  const clearBtn = document.getElementById('exploreClearBtn');
 
-  // Populate genres
-  const genres = ["Action", "Adventure", "Animation", "Comedy", "Crime", "Drama", "Fantasy", "Horror", "Mystery", "Romance", "Sci-Fi", "Thriller"];
-  if (genreContainer) {
-    genreContainer.innerHTML = `<button class="chip ${state.activeGenre === 'all' ? 'active' : ''}" data-genre="all">All Genres</button>` +
-      genres.map(g => `<button class="chip ${state.activeGenre === g ? 'active' : ''}" data-genre="${g}">${g}</button>`).join('');
+  // Type filter pills
+  filterChips?.querySelectorAll('.pill-btn').forEach(btn => {
+    btn.onclick = () => {
+      filterChips.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.activeType = btn.dataset.type || 'all';
+      filterResults();
+    };
+  });
 
-    genreContainer.querySelectorAll('.chip').forEach(btn => {
+  // Extract unique genres
+  const genresSet = new Set();
+  MOVIES.forEach(m => {
+    if (Array.isArray(m.genres)) m.genres.forEach(g => genresSet.add(g));
+    else if (m.genres) genresSet.add(m.genres);
+  });
+
+  if (genreChips) {
+    genreChips.innerHTML = `
+      <button class="pill-btn active" data-genre="all">All Genres</button>
+      ${[...genresSet].slice(0, 10).map(g => `<button class="pill-btn" data-genre="${g}">${g}</button>`).join('')}
+    `;
+
+    genreChips.querySelectorAll('.pill-btn').forEach(btn => {
       btn.onclick = () => {
-        state.activeGenre = btn.dataset.genre;
-        genreContainer.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', c.dataset.genre === state.activeGenre));
-        filterExplore();
+        genreChips.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        state.activeGenre = btn.dataset.genre || 'all';
+        filterResults();
       };
     });
   }
 
-  chips.forEach(btn => {
-    btn.onclick = () => {
-      state.activeType = btn.dataset.type;
-      chips.forEach(c => c.classList.toggle('active', c.dataset.type === state.activeType));
-      filterExplore();
-    };
+  searchInput?.addEventListener('input', () => {
+    clearBtn?.classList.toggle('hidden', !searchInput.value);
+    filterResults();
   });
 
-  if (input) {
-    input.oninput = () => filterExplore();
-  }
+  clearBtn?.addEventListener('click', () => {
+    if (searchInput) {
+      searchInput.value = '';
+      clearBtn.classList.add('hidden');
+      filterResults();
+    }
+  });
 
-  filterExplore();
+  filterResults();
+}
 
-  function filterExplore() {
-    const q = (input?.value || '').toLowerCase().trim();
-    let list = MOVIES.filter(m => {
-      // Type check
-      if (state.activeType === 'Movie' && (m.type === 'TV Show' || m.isAnime)) return false;
-      if (state.activeType === 'TV Show' && (m.type !== 'TV Show' || m.isAnime)) return false;
-      if (state.activeType === 'Anime' && !m.isAnime) return false;
+function filterResults() {
+  const q = document.getElementById('searchInput')?.value.toLowerCase().trim() || '';
+  const grid = document.getElementById('resultsGrid');
+  const empty = document.getElementById('exploreEmpty');
+  const countEl = document.getElementById('exploreCount');
 
-      // Genre check
-      if (state.activeGenre !== 'all' && (!m.genres || !m.genres.includes(state.activeGenre))) return false;
+  let filtered = MOVIES.filter(m => {
+    // Type filter
+    if (state.activeType !== 'all') {
+      if (state.activeType === 'Anime' && !m.isAnime && !m.genres?.includes('Anime')) return false;
+      if (state.activeType === 'Movie' && (m.type === 'TV Show' || m.type === 'Series' || m.seasons)) return false;
+      if (state.activeType === 'TV Show' && m.type !== 'TV Show' && m.type !== 'Series' && !m.seasons) return false;
+    }
 
-      // Query check
-      if (q) {
-        const matchTitle = m.title.toLowerCase().includes(q);
-        const matchCast = m.cast && m.cast.some(c => c.toLowerCase().includes(q));
-        const matchDir = m.director && m.director.toLowerCase().includes(q);
-        return matchTitle || matchCast || matchDir;
-      }
+    // Genre filter
+    if (state.activeGenre !== 'all') {
+      const gStr = Array.isArray(m.genres) ? m.genres.join(' ') : String(m.genres || '');
+      if (!gStr.toLowerCase().includes(state.activeGenre.toLowerCase())) return false;
+    }
 
-      return true;
-    });
+    // Search query
+    if (q) {
+      const hay = `${m.title} ${m.director || ''} ${Array.isArray(m.cast) ? m.cast.join(' ') : (m.cast || '')} ${m.year || ''}`.toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
 
-    if (grid) grid.innerHTML = list.map(m => createCardHTML(m)).join('');
-    if (empty) empty.classList.toggle('hidden', list.length > 0);
+    return true;
+  });
+
+  if (countEl) countEl.textContent = `${filtered.length} Titles`;
+
+  if (grid) {
+    if (filtered.length === 0) {
+      grid.innerHTML = '';
+      empty?.classList.remove('hidden');
+    } else {
+      empty?.classList.add('hidden');
+      grid.innerHTML = filtered.map(m => createCardHTML(m)).join('');
+    }
   }
 }
 
-// Render Live TV Tab
+// 3. Movies Tab
+function renderMoviesTab() {
+  const grid = document.getElementById('moviesGrid');
+  const countEl = document.getElementById('moviesCount');
+  const movies = MOVIES.filter(m => (!m.type || m.type === 'Movie') && !m.isAnime);
+  if (countEl) countEl.textContent = `${movies.length} Movies`;
+  if (grid) grid.innerHTML = movies.map(m => createCardHTML(m)).join('');
+}
+
+// 4. Series Tab
+function renderSeriesTab() {
+  const grid = document.getElementById('seriesGrid');
+  const countEl = document.getElementById('seriesCount');
+  const series = MOVIES.filter(m => m.type === 'TV Show' || m.type === 'Series' || m.seasons);
+  if (countEl) countEl.textContent = `${series.length} Series`;
+  if (grid) grid.innerHTML = series.map(m => createCardHTML(m)).join('');
+}
+
+// 5. Anime Tab
+function renderAnimeTab() {
+  const grid = document.getElementById('animeGrid');
+  const countEl = document.getElementById('animeCount');
+  const anime = MOVIES.filter(m => m.isAnime || m.genres?.includes('Anime'));
+  if (countEl) countEl.textContent = `${anime.length} Anime`;
+  if (grid) grid.innerHTML = anime.map(m => createCardHTML(m)).join('');
+}
+
+// 6. Live TV Tab
 function renderLiveTV() {
   const grid = document.getElementById('liveGrid');
-  if (!grid || !window._LIVE_CHANNELS) return;
+  if (!grid || typeof LIVE_CHANNELS === 'undefined') return;
 
-  grid.innerHTML = window._LIVE_CHANNELS.map(ch => `
-    <div class="channel-card ${ch.live ? 'live-now' : ''}" onclick="showToast('Starting stream for ${ch.name}…')">
-      <div class="channel-icon">${ch.icon}</div>
-      <div class="channel-name">${ch.name}</div>
-      <div class="channel-cat">${ch.category}</div>
+  grid.innerHTML = LIVE_CHANNELS.map(ch => `
+    <div class="live-card" onclick="showToast('Channel stream loading...')">
+      <div class="live-icon"><ion-icon name="tv-outline"></ion-icon></div>
+      <div>
+        <h3 style="font-size: 1.05rem; font-weight: 700; color: #fff;">${ch.name}</h3>
+        <p style="font-size: 0.8rem; color: var(--text-dim);">${ch.category} • HD Quality</p>
+      </div>
     </div>
   `).join('');
 }
 
-// Render Anime Tab
-function renderAnime() {
-  const grid = document.getElementById('animeGrid');
-  if (!grid) return;
-  const animeList = MOVIES.filter(m => m.isAnime || (m.genres && m.genres.includes('Animation')));
-  grid.innerHTML = animeList.map(m => createCardHTML(m)).join('');
-}
-
-// Render Watchlist Tab
+// 7. Watchlist Tab
 function renderWatchlist() {
   const grid = document.getElementById('watchlistGrid');
   const empty = document.getElementById('watchlistEmpty');
-  if (!grid) return;
+  const countEl = document.getElementById('watchlistCount');
 
   const favList = MOVIES.filter(m => state.favorites.has(m.id));
-  grid.innerHTML = favList.map(m => createCardHTML(m)).join('');
-  if (empty) empty.classList.toggle('hidden', favList.length > 0);
+  if (countEl) countEl.textContent = `${favList.length} Saved`;
+
+  if (grid) {
+    if (favList.length === 0) {
+      grid.innerHTML = '';
+      empty?.classList.remove('hidden');
+    } else {
+      empty?.classList.add('hidden');
+      grid.innerHTML = favList.map(m => createCardHTML(m)).join('');
+    }
+  }
 }
 
 // Detail Modal
-function openDetail(id) {
-  const movie = MOVIES.find(m => m.id === id);
+function openDetail(movieId) {
+  const movie = MOVIES.find(m => m.id === movieId);
   if (!movie) return;
 
   state.currentDetail = movie;
@@ -322,234 +469,109 @@ function openDetail(id) {
   const hero = document.getElementById('detailHero');
   const body = document.getElementById('detailBody');
 
-  if (!modal || !hero || !body) return;
-
-  hero.style.backgroundImage = `url('${movie.backdrop || movie.poster}')`;
+  if (hero) {
+    hero.style.backgroundImage = `url('${movie.backdrop || movie.poster}')`;
+    hero.innerHTML = `
+      <div class="detail-hero-content">
+        <h2 style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 800;">${movie.title}</h2>
+        <div style="display: flex; gap: 0.75rem; color: var(--text-sub); font-size: 0.9rem;">
+          <span style="color: var(--accent-gold); font-weight: 700;"><ion-icon name="star"></ion-icon> ${movie.rating || '8.5'}</span>
+          <span>•</span>
+          <span>${movie.year || '2026'}</span>
+          <span>•</span>
+          <span>${movie.duration || '2h 10m'}</span>
+        </div>
+      </div>
+    `;
+  }
 
   const isFav = state.favorites.has(movie.id);
 
-  body.innerHTML = `
-    <div class="detail-title">${movie.title}</div>
-    <div class="detail-meta">
-      <span style="color:#ffb703; font-weight:700;">★ ${movie.rating || 'N/A'}</span>
-      <span>•</span>
-      <span>${movie.year || ''}</span>
-      <span>•</span>
-      <span>${movie.duration || movie.age || ''}</span>
-      <span>•</span>
-      <span>${(movie.genres || []).join(', ')}</span>
-    </div>
-    <div class="detail-actions">
-      <button class="btn btn-primary" onclick="playMovieDirect('${movie.id}')"><ion-icon name="play"></ion-icon> Watch Now</button>
-      <button class="btn btn-secondary" id="favToggleBtn" onclick="toggleFavoriteDetail('${movie.id}')">
-        <ion-icon name="${isFav ? 'heart' : 'heart-outline'}"></ion-icon> ${isFav ? 'Saved' : 'Watchlist'}
-      </button>
-    </div>
-    <p class="detail-overview">${movie.overviewKurdish || movie.overview || 'No overview available.'}</p>
+  if (body) {
+    body.innerHTML = `
+      <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
+        <button class="btn btn-primary" onclick="playMovieDirect('${movie.id}')"><ion-icon name="play"></ion-icon> Play Movie</button>
+        <button class="btn btn-secondary" onclick="toggleFavorite('${movie.id}'); openDetail('${movie.id}');">
+          <ion-icon name="${isFav ? 'heart' : 'heart-outline'}" style="color: ${isFav ? 'var(--primary)' : 'inherit'};"></ion-icon>
+          ${isFav ? 'In Watchlist' : 'Add to Watchlist'}
+        </button>
+      </div>
 
-    ${(movie.type === 'TV Show' || movie.type === 'Series') && movie.seasons && movie.seasons.length ? renderEpisodesUI(movie) : ''}
-  `;
+      <p style="color: rgba(255,255,255,0.85); line-height: 1.6; font-size: 0.95rem;">
+        ${movie.description || 'A cinematic masterpiece streaming now on CineWatch in full high-definition quality with crystal clear audio.'}
+      </p>
 
-  document.getElementById('detailClose').onclick = closeDetail;
-  modal.classList.remove('hidden');
-}
-
-function toggleFavoriteDetail(id) {
-  toggleFavorite(id);
-  const btn = document.getElementById('favToggleBtn');
-  if (btn) {
-    const isFav = state.favorites.has(id);
-    btn.innerHTML = `<ion-icon name="${isFav ? 'heart' : 'heart-outline'}"></ion-icon> ${isFav ? 'Saved' : 'Watchlist'}`;
+      <div style="display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.88rem; color: var(--text-sub); margin-top: 0.5rem;">
+        <div><strong style="color: #fff;">Genres:</strong> ${Array.isArray(movie.genres) ? movie.genres.join(', ') : (movie.genres || 'Action, Drama')}</div>
+        ${movie.director ? `<div><strong style="color: #fff;">Director:</strong> ${movie.director}</div>` : ''}
+        ${movie.cast ? `<div><strong style="color: #fff;">Cast:</strong> ${Array.isArray(movie.cast) ? movie.cast.join(', ') : movie.cast}</div>` : ''}
+      </div>
+    `;
   }
+
+  modal?.classList.remove('hidden');
 }
 
 function closeDetail() {
   document.getElementById('detailModal')?.classList.add('hidden');
 }
 
-function renderEpisodesUI(movie) {
-  const initialSeason = movie.seasons[0];
-  return `
-    <div class="episodes-section">
-      <div class="episodes-head">
-        <div class="shelf-title">Episodes</div>
-        <select class="season-select" id="seasonSelect" onchange="switchSeason(this.value)">
-          ${movie.seasons.map(s => `<option value="${s.season}">Season ${s.season}</option>`).join('')}
-        </select>
-      </div>
-      <div class="episodes-list" id="episodesList">
-        ${renderEpisodesList(movie, initialSeason.season)}
-      </div>
-    </div>
-  `;
-}
-
-function renderEpisodesList(movie, seasonNum) {
-  const season = movie.seasons.find(s => s.season == seasonNum) || movie.seasons[0];
-  if (!season || !season.episodes) return '<p>No episodes available.</p>';
-
-  return season.episodes.map(ep => {
-    const mediaId = movie.cinesrcId || movie.videoUrl;
-    const absEp = ep.absoluteEpisode || '';
-    const aniId = movie.anilistId || '';
-    const token = `tv_embed:${mediaId}:${season.season}:${ep.episode}:${absEp}:${aniId}`;
-    const title = `${movie.title} - S${season.season} E${ep.episode}: ${ep.title}`;
-
-    return `
-      <div class="episode-row" onclick="playStreamToken('${token}', '${title.replace(/'/g, "\\'")}', '${movie.id}')">
-        <img class="ep-thumb" src="${ep.thumbnail || movie.backdrop || movie.poster}" alt="${ep.title}" />
-        <div class="ep-info">
-          <div class="ep-num">Episode ${ep.episode}</div>
-          <div class="ep-title">${ep.title}</div>
-        </div>
-        <ion-icon name="play-circle-outline" style="font-size:1.5rem; color:var(--accent-neon);"></ion-icon>
-      </div>
-    `;
-  }).join('');
-}
-
-function switchSeason(seasonNum) {
-  if (!state.currentDetail) return;
-  const listEl = document.getElementById('episodesList');
-  if (listEl) {
-    listEl.innerHTML = renderEpisodesList(state.currentDetail, seasonNum);
-  }
-}
-
-// Quick-Play Modal Player
-function playMovieDirect(id) {
-  const movie = MOVIES.find(m => m.id === id);
+// Direct Play Video Modal
+function playMovieDirect(movieId) {
+  closeDetail();
+  const movie = MOVIES.find(m => m.id === movieId);
   if (!movie) return;
 
-  if ((movie.type === 'TV Show' || movie.type === 'Series') && movie.seasons && movie.seasons.length) {
-    const s1 = movie.seasons[0];
-    const ep1 = s1.episodes[0];
-    if (ep1) {
-      const mediaId = movie.cinesrcId || movie.videoUrl;
-      const token = `tv_embed:${mediaId}:${s1.season}:${ep1.episode}:${ep1.absoluteEpisode || ''}:${movie.anilistId || ''}`;
-      playStreamToken(token, `${movie.title} - S${s1.season} E${ep1.episode}`, movie.id);
-      return;
-    }
-  }
-
-  // Single movie
-  playStreamData({ type: 'movie', id: movie.videoUrl, parentId: movie.id, title: movie.title });
-}
-
-function playStreamToken(token, titleStr, parentId) {
-  const parts = token.split(':');
-  playStreamData({
-    type: 'tv',
-    id: parts[1],
-    season: parts[2],
-    episode: parts[3],
-    parentId,
-    title: titleStr
-  });
-}
-
-function playStreamData(data) {
-  state.currentStreamData = data;
-  const modal = document.getElementById('playerModal');
-  const titleEl = document.getElementById('playerTitle');
+  const playerModal = document.getElementById('playerModal');
+  const playerTitle = document.getElementById('playerTitle');
+  const iframeEl = document.getElementById('iframeEl');
   const serverSelect = document.getElementById('serverSelect');
-  const isAnime = (() => {
-    const ref = MOVIES.find(m => m.id === data.parentId || m.videoUrl === data.id);
-    return !!(ref?.isAnime || ref?.genres?.includes('Animation'));
-  })();
 
-  if (titleEl) titleEl.textContent = data.title || 'Playing Video';
+  if (playerTitle) playerTitle.textContent = `${movie.title} (${movie.year || '2026'})`;
 
-  // Populate servers
+  // Streaming Server Endpoints
+  const servers = [
+    { name: 'AutoEmbed Server (Fast)', url: `https://player.autoembed.cc/embed/movie/${movie.tmdbId || '550'}` },
+    { name: 'VidLink Pro (Multi-Audio)', url: `https://vidlink.pro/movie/${movie.tmdbId || '550'}` },
+    { name: 'VidSrc VIP', url: `https://vidsrc.to/embed/movie/${movie.tmdbId || '550'}` },
+    { name: 'ZXC Stream', url: `https://stream.zxc.pm/movie/${movie.tmdbId || '550'}` }
+  ];
+
   if (serverSelect) {
-    if (isAnime) {
-      serverSelect.innerHTML = `
-        <option value="autoembed">AutoEmbed HD</option>
-        <option value="vidlink">VidLink (Multi-Audio)</option>
-        <option value="vidsrc-sbs">VidSrc</option>
-        <option value="zxcstream">ZXC Stream</option>
-        <option value="vidsrc-me">VidSrc ME</option>
-        <option value="embvid">EmbVid</option>
-      `;
-    } else {
-      serverSelect.innerHTML = `
-        <option value="vaplayer">VAPlayer (Netflix Red)</option>
-        <option value="vidsrc-sbs">VidSrc SBS</option>
-        <option value="autoembed">AutoEmbed</option>
-      `;
-    }
-
-    serverSelect.onchange = updatePlayerServer;
+    serverSelect.innerHTML = servers.map((s, i) => `<option value="${s.url}">${s.name}</option>`).join('');
+    serverSelect.onchange = () => {
+      if (iframeEl) iframeEl.src = serverSelect.value;
+    };
   }
 
-  updatePlayerServer();
-
-  document.getElementById('playerClose').onclick = closePlayer;
-  modal.classList.remove('hidden');
-}
-
-function updatePlayerServer() {
-  if (!state.currentStreamData) return;
-  const data = state.currentStreamData;
-  const server = document.getElementById('serverSelect')?.value || 'vaplayer';
-  const iframe = document.getElementById('iframeEl');
-  const video = document.getElementById('videoEl');
-
-  if (!iframe) return;
-
-  let url = '';
-  if (server === 'vaplayer') {
-    url = data.type === 'tv'
-      ? `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}?skin=netflix&color=e50914`
-      : `https://vaplayer.ru/embed/movie/${data.id}?skin=netflix&color=e50914`;
-  } else if (server === 'autoembed') {
-    url = data.type === 'tv'
-      ? `https://player.autoembed.cc/embed/tv/${data.id}/${data.season}/${data.episode}`
-      : `https://player.autoembed.cc/embed/movie/${data.id}`;
-  } else if (server === 'vidlink') {
-    url = data.type === 'tv'
-      ? `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}`
-      : `https://vidlink.pro/movie/${data.id}`;
-  } else if (server === 'zxcstream') {
-    url = data.type === 'tv'
-      ? `https://player.zxcstream.xyz/embed/tv/${data.id}/${data.season}/${data.episode}`
-      : `https://player.zxcstream.xyz/embed/movie/${data.id}`;
-  } else if (server === 'vidsrc-me') {
-    url = data.type === 'tv'
-      ? `https://vidsrc.me/embed/tv/${data.id}/${data.season}/${data.episode}`
-      : `https://vidsrc.me/embed/movie/${data.id}`;
-  } else if (server === 'embvid') {
-    const embKey = 'vm_live_xGHB0XJKZEnGxbsohGJo7P0akb8rsfLD';
-    url = data.type === 'tv'
-      ? `https://embvid.com/embed/tv/${data.id}/${data.season}/${data.episode}?api_key=${embKey}`
-      : `https://embvid.com/embed/movie/${data.id}?api_key=${embKey}`;
-  } else {
-    url = data.type === 'tv'
-      ? `https://vidsrc.sbs/embed/tv/${data.id}/${data.season}/${data.episode}`
-      : `https://vidsrc.sbs/embed/movie/${data.id}`;
+  if (iframeEl) {
+    iframeEl.classList.remove('hidden');
+    iframeEl.src = servers[0].url;
   }
 
-  video.classList.add('hidden');
-  iframe.classList.remove('hidden');
-  iframe.src = url;
+  playerModal?.classList.remove('hidden');
 }
 
 function closePlayer() {
-  const iframe = document.getElementById('iframeEl');
-  if (iframe) iframe.src = '';
-  document.getElementById('playerModal')?.classList.add('hidden');
+  const playerModal = document.getElementById('playerModal');
+  const iframeEl = document.getElementById('iframeEl');
+  if (iframeEl) iframeEl.src = '';
+  playerModal?.classList.add('hidden');
 }
 
-// Global Exports
-window.openDetail = openDetail;
-window.playMovieDirect = playMovieDirect;
-window.playStreamToken = playStreamToken;
-window.switchSeason = switchSeason;
-window.toggleFavoriteDetail = toggleFavoriteDetail;
-
-// App entry point
+// Global Event Listeners
 document.addEventListener('DOMContentLoaded', () => {
   loadFavorites();
-  setupNavigation();
   initCatalog();
+  setupNavigation();
+
+  document.getElementById('detailClose')?.addEventListener('click', closeDetail);
+  document.getElementById('detailModal')?.addEventListener('click', (e) => {
+    if (e.target.id === 'detailModal') closeDetail();
+  });
+
+  document.getElementById('playerClose')?.addEventListener('click', closePlayer);
+  document.getElementById('playerModal')?.addEventListener('click', (e) => {
+    if (e.target.id === 'playerModal') closePlayer();
+  });
 });
