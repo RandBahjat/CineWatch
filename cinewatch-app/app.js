@@ -933,6 +933,42 @@ function startApp() {
     });
   }
 
+  // Auth overlay handlers
+  const authOverlay = document.getElementById('authOverlay');
+
+  document.getElementById('openAuthBtn')?.addEventListener('click', () => {
+    authOverlay?.classList.remove('hidden');
+    document.activeElement?.blur();
+  });
+
+  document.getElementById('closeAuthBtn')?.addEventListener('click', () => {
+    authOverlay?.classList.add('hidden');
+  });
+
+  // Tab switching
+  function switchAuthTab(tab) {
+    document.querySelectorAll('.auth-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+    document.querySelectorAll('.auth-form').forEach(f => f.classList.toggle('active', f.id === (tab === 'signin' ? 'formSignIn' : 'formSignUp')));
+  }
+
+  document.getElementById('tabSignIn')?.addEventListener('click', () => switchAuthTab('signin'));
+  document.getElementById('tabSignUp')?.addEventListener('click', () => switchAuthTab('signup'));
+  document.getElementById('switchToSignUp')?.addEventListener('click', (e) => { e.preventDefault(); switchAuthTab('signup'); });
+  document.getElementById('switchToSignIn')?.addEventListener('click', (e) => { e.preventDefault(); switchAuthTab('signin'); });
+
+  // Form submissions
+  document.getElementById('formSignIn')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    showToast('Signed in successfully! Welcome back.');
+    authOverlay?.classList.add('hidden');
+  });
+
+  document.getElementById('formSignUp')?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    showToast('Account created! Welcome to CineWatch.');
+    authOverlay?.classList.add('hidden');
+  });
+
   // Avatar file picker (via native input)
   const avatarInput = document.getElementById('avatarFileInput');
   if (avatarInput) {
