@@ -1231,6 +1231,22 @@ html, body {
   display: block;
 }
 
+/* VideoSkin Media Chrome Component Styling */
+.video-skin-wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  border-radius: var(--media-border-radius, 1rem);
+  overflow: hidden;
+  --media-control-bar-background: rgba(8, 10, 16, 0.88);
+  background: #000;
+  display: block;
+}
+.video-skin-wrap.hidden {
+  display: none !important;
+}
+
 /* Video.js CineWatch Theme Customization */
 .vjs-container-wrap {
   width: 100%;
