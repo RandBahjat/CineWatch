@@ -277,6 +277,110 @@ function renderHome() {
   `;
 }
 
+// Real-time Smooth Drag / Swipe to change hero slides with cursor
+let heroDragState = {
+  startX: 0,
+  currentTranslate: 0,
+  isDragging: false,
+  hasMoved: false
+};
+
+function setupHeroDragEvents() {
+  const heroContainer = document.getElementById('hero');
+  const heroTrack = document.getElementById('heroTrack');
+  if (!heroContainer || !heroTrack) return;
+
+  const onDragStart = (e) => {
+    if (e.type.includes('mouse') && e.button !== 0) return;
+    heroDragState.isDragging = true;
+    heroDragState.hasMoved = false;
+    heroDragState.startX = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+    const bannerWidth = heroContainer.offsetWidth || window.innerWidth;
+    heroDragState.currentTranslate = -state.heroIndex * bannerWidth;
+
+    heroTrack.style.transition = 'none';
+    heroContainer.classList.add('is-dragging');
+    clearInterval(state.heroTimer);
+  };
+
+  const onDragMove = (e) => {
+    if (!heroDragState.isDragging) return;
+    const currentX = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+    const diffX = currentX - heroDragState.startX;
+
+    if (Math.abs(diffX) > 6) {
+      heroDragState.hasMoved = true;
+    }
+
+    if (heroDragState.hasMoved) {
+      if (e.cancelable) e.preventDefault();
+      heroTrack.style.transform = `translateX(${heroDragState.currentTranslate + diffX}px)`;
+    }
+  };
+
+  const onDragEnd = (e) => {
+    if (!heroDragState.isDragging) return;
+    heroDragState.isDragging = false;
+    heroContainer.classList.remove('is-dragging');
+
+    const endX = e.type.includes('mouse')
+      ? e.pageX
+      : (e.changedTouches && e.changedTouches[0] ? e.changedTouches[0].clientX : heroDragState.startX);
+    const diffX = endX - heroDragState.startX;
+    const bannerWidth = heroContainer.offsetWidth || window.innerWidth;
+    const threshold = Math.min(100, bannerWidth * 0.12);
+
+    const slidesCount = document.querySelectorAll('.hero-slide').length || 6;
+
+    if (heroDragState.hasMoved && Math.abs(diffX) > threshold) {
+      if (diffX < 0) {
+        // Dragged left -> next slide
+        state.heroIndex = (state.heroIndex + 1) % slidesCount;
+      } else {
+        // Dragged right -> previous slide
+        state.heroIndex = (state.heroIndex - 1 + slidesCount) % slidesCount;
+      }
+    }
+
+    updateHeroBannerPosition();
+    startHeroAutoplay(slidesCount);
+  };
+
+  heroContainer.addEventListener('click', (e) => {
+    if (heroDragState.hasMoved) {
+      e.preventDefault();
+      e.stopPropagation();
+      heroDragState.hasMoved = false;
+    }
+  }, true);
+
+  heroContainer.addEventListener('dragstart', (e) => e.preventDefault());
+  heroContainer.addEventListener('mousedown', onDragStart);
+  window.addEventListener('mousemove', onDragMove);
+  window.addEventListener('mouseup', onDragEnd);
+
+  heroContainer.addEventListener('touchstart', onDragStart, { passive: true });
+  heroContainer.addEventListener('touchmove', onDragMove, { passive: false });
+  heroContainer.addEventListener('touchend', onDragEnd);
+  heroContainer.addEventListener('touchcancel', onDragEnd);
+}
+
+function updateHeroBannerPosition() {
+  const heroTrack = document.getElementById('heroTrack');
+  const dots = document.querySelectorAll('.hero-dot');
+  const slides = document.querySelectorAll('.hero-slide');
+  if (!heroTrack || slides.length === 0) return;
+
+  heroTrack.style.transition = 'transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)';
+  heroTrack.style.transform = `translateX(-${state.heroIndex * 100}%)`;
+
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === state.heroIndex);
+  });
+
+  updateHeroCounter(state.heroIndex, slides.length);
+}
+
 function updateHeroCounter(currentIdx, totalCount) {
   const counterEl = document.getElementById('heroCounter');
   if (counterEl) {
@@ -290,38 +394,24 @@ function startHeroAutoplay(totalSlides) {
   clearInterval(state.heroTimer);
   state.heroTimer = setInterval(() => {
     changeHeroSlide(1, totalSlides);
-  }, 7000);
+  }, 7500);
 }
 
 function changeHeroSlide(direction, totalSlides = null) {
   const slides = document.querySelectorAll('.hero-slide');
-  const dots = document.querySelectorAll('.hero-dot');
   const count = totalSlides || slides.length;
   if (count <= 1) return;
 
-  slides[state.heroIndex]?.classList.remove('active');
-  dots[state.heroIndex]?.classList.remove('active');
-
   state.heroIndex = (state.heroIndex + direction + count) % count;
-
-  slides[state.heroIndex]?.classList.add('active');
-  dots[state.heroIndex]?.classList.add('active');
-  updateHeroCounter(state.heroIndex, count);
+  updateHeroBannerPosition();
 }
 
 function goToHeroSlide(idx) {
   const slides = document.querySelectorAll('.hero-slide');
-  const dots = document.querySelectorAll('.hero-dot');
   if (!slides[idx]) return;
 
-  slides[state.heroIndex]?.classList.remove('active');
-  dots[state.heroIndex]?.classList.remove('active');
-
   state.heroIndex = idx;
-
-  slides[state.heroIndex]?.classList.add('active');
-  dots[state.heroIndex]?.classList.add('active');
-  updateHeroCounter(state.heroIndex, slides.length);
+  updateHeroBannerPosition();
 }
 
 // 2. Explore Tab
