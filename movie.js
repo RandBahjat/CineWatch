@@ -4163,6 +4163,8 @@ function setupCwSelectionListeners() {
       renderContinueWatchingPage();
     }
   });
+}
+
 function safeInitMovieApp() {
   initApp();
   trackVisit();
