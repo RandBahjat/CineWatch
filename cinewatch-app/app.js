@@ -614,64 +614,106 @@ function filterResults() {
   const empty = document.getElementById('exploreEmpty');
   const countEl = document.getElementById('exploreCount');
 
+  // FIX 5: filtering is synchronous but rendering is async (no UI freeze)
   let filtered = MOVIES.filter(m => {
     if (state.activeType !== 'all') {
       if (state.activeType === 'Anime' && !m.isAnime && !m.genres?.includes('Anime')) return false;
       if (state.activeType === 'Movie' && (m.type === 'TV Show' || m.type === 'Series' || m.seasons)) return false;
       if (state.activeType === 'TV Show' && m.type !== 'TV Show' && m.type !== 'Series' && !m.seasons) return false;
     }
-
     if (state.activeGenre !== 'all') {
       const gStr = Array.isArray(m.genres) ? m.genres.join(' ') : String(m.genres || '');
       if (!gStr.toLowerCase().includes(state.activeGenre.toLowerCase())) return false;
     }
-
     if (q) {
       const hay = `${m.title} ${m.director || ''} ${Array.isArray(m.cast) ? m.cast.join(' ') : (m.cast || '')} ${m.year || ''}`.toLowerCase();
       if (!hay.includes(q)) return false;
     }
-
     return true;
   });
 
   if (countEl) countEl.textContent = `${filtered.length} Titles`;
 
-  if (grid) {
-    if (filtered.length === 0) {
-      grid.innerHTML = '';
-      empty?.classList.remove('hidden');
-    } else {
-      empty?.classList.add('hidden');
-      grid.innerHTML = filtered.map(m => createCardHTML(m)).join('');
-    }
+  // FIX 3: Paginated — only render PAGE_SIZE items, add Load More if needed
+  _filteredCache.explore = filtered;
+  _pageOffset.explore = 0;
+
+  if (!grid) return;
+  if (filtered.length === 0) {
+    grid.innerHTML = '';
+    empty?.classList.remove('hidden');
+    return;
   }
+  empty?.classList.add('hidden');
+
+  // FIX 5: async render — no main-thread blocking
+  renderCardsAsync(filtered, grid, 0, false);
+  _renderLoadMoreBtn('resultsGrid', 'explore', filtered);
 }
 
-// 3. Movies Tab
+// Shared "Load More" button renderer
+function _renderLoadMoreBtn(gridId, cacheKey, items) {
+  const grid = document.getElementById(gridId);
+  if (!grid) return;
+
+  // Remove any existing Load More button
+  const old = document.getElementById(`load-more-${gridId}`);
+  if (old) old.remove();
+
+  const nextOffset = (_pageOffset[cacheKey] || 0) + PAGE_SIZE;
+  if (nextOffset >= items.length) return; // no more pages
+
+  const btn = document.createElement('button');
+  btn.id = `load-more-${gridId}`;
+  btn.className = 'load-more-btn';
+  btn.textContent = `Load More (${items.length - nextOffset} remaining)`;
+  btn.title = `Load next ${PAGE_SIZE} results`;
+  btn.onclick = () => {
+    _pageOffset[cacheKey] = nextOffset;
+    renderCardsAsync(items, grid, nextOffset, true);
+    btn.remove();
+    _renderLoadMoreBtn(gridId, cacheKey, items);
+  };
+
+  // Insert after the grid
+  grid.insertAdjacentElement('afterend', btn);
+}
+
+// 3. Movies Tab — FIX 3+5: Async paginated render
 function renderMoviesTab() {
   const grid = document.getElementById('moviesGrid');
   const countEl = document.getElementById('moviesCount');
   const movies = MOVIES.filter(m => (!m.type || m.type === 'Movie') && !m.isAnime);
   if (countEl) countEl.textContent = `${movies.length} Movies`;
-  if (grid) grid.innerHTML = movies.map(m => createCardHTML(m)).join('');
+  _pageOffset.movies = 0;
+  renderCardsAsync(movies, grid, 0, false);
+  _renderLoadMoreBtn('moviesGrid', 'movies', movies);
+  // Cache for load-more
+  _filteredCache.movies = movies;
 }
 
-// 4. Series Tab
+// 4. Series Tab — FIX 3+5: Async paginated render
 function renderSeriesTab() {
   const grid = document.getElementById('seriesGrid');
   const countEl = document.getElementById('seriesCount');
   const series = MOVIES.filter(m => m.type === 'TV Show' || m.type === 'Series' || m.seasons);
   if (countEl) countEl.textContent = `${series.length} Series`;
-  if (grid) grid.innerHTML = series.map(m => createCardHTML(m)).join('');
+  _pageOffset.series = 0;
+  renderCardsAsync(series, grid, 0, false);
+  _renderLoadMoreBtn('seriesGrid', 'series', series);
+  _filteredCache.series = series;
 }
 
-// 5. Anime Tab
+// 5. Anime Tab — FIX 3+5: Async paginated render
 function renderAnimeTab() {
   const grid = document.getElementById('animeGrid');
   const countEl = document.getElementById('animeCount');
   const anime = MOVIES.filter(m => m.isAnime || m.genres?.includes('Anime'));
   if (countEl) countEl.textContent = `${anime.length} Anime`;
-  if (grid) grid.innerHTML = anime.map(m => createCardHTML(m)).join('');
+  _pageOffset.anime = 0;
+  renderCardsAsync(anime, grid, 0, false);
+  _renderLoadMoreBtn('animeGrid', 'anime', anime);
+  _filteredCache.anime = anime;
 }
 
 // 6. Live TV Tab
@@ -723,9 +765,10 @@ function renderWatchlist() {
   }
 }
 
-// Detail Modal
+// Detail Modal — FIX 4: O(1) Map lookup instead of .find()
 function openDetail(movieId) {
-  const movie = MOVIES.find(m => String(m.id) === String(movieId));
+  // FIX 4: instant O(1) lookup — no N+1 scan through the whole MOVIES array
+  const movie = _movieMap.get(String(movieId));
   if (!movie) return;
 
   state.currentDetail = movie;
@@ -780,10 +823,11 @@ function closeDetail() {
   document.getElementById('detailModal')?.classList.add('hidden');
 }
 
-// Multi-Server Video Streaming Player
+// Multi-Server Video Streaming Player — FIX 4: O(1) Map lookup
 function playMovieDirect(movieId) {
   closeDetail();
-  const movie = MOVIES.find(m => String(m.id) === String(movieId));
+  // FIX 4: instant O(1) lookup
+  const movie = _movieMap.get(String(movieId));
   if (!movie) return;
 
   const playerModal = document.getElementById('playerModal');
