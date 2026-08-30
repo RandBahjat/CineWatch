@@ -69,34 +69,48 @@ function toggleFavorite(id, e) {
   if (state.currentTab === 'home') renderHome();
 }
 
+function hideSplash() {
+  const splash = document.getElementById('splash');
+  if (splash) {
+    splash.classList.add('hidden');
+    setTimeout(() => {
+      if (splash && splash.parentNode) splash.remove();
+    }, 450);
+  }
+}
+
+// Fallback auto-dismiss splash screen
+setTimeout(hideSplash, 1200);
+
 // Catalog Initialization
 function initCatalog() {
-  const movies = window._MOVIES_DATA || [];
-  const series = window._SERIES_DATA || [];
-  const anime = window._ANIME_DATA || [];
+  try {
+    const movies = window._MOVIES_DATA || [];
+    const series = window._SERIES_DATA || [];
+    const anime = window._ANIME_DATA || [];
 
-  MOVIES = [...movies, ...series, ...anime];
-  MOVIES.forEach(m => {
-    if (!m.id) {
-      m.id = m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + (m.year ? '-' + m.year : '');
-    }
-    if ((m.type === 'TV Show' || m.type === 'Series') && m.seasons && m.seasons.length) {
-      m.duration = `${m.seasons.length} Season${m.seasons.length > 1 ? 's' : ''}`;
-    }
-  });
+    MOVIES = [...movies, ...series, ...anime];
+    MOVIES.forEach(m => {
+      if (!m.id) {
+        m.id = m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + (m.year ? '-' + m.year : '');
+      }
+      if ((m.type === 'TV Show' || m.type === 'Series') && m.seasons && m.seasons.length) {
+        m.duration = `${m.seasons.length} Season${m.seasons.length > 1 ? 's' : ''}`;
+      }
+    });
 
-  // Hide splash
-  setTimeout(() => {
-    document.getElementById('splash')?.classList.add('hidden');
-  }, 400);
-
-  renderHome();
-  renderExplore();
-  renderMoviesTab();
-  renderSeriesTab();
-  renderAnimeTab();
-  renderLiveTV();
-  renderWatchlist();
+    renderHome();
+    renderExplore();
+    renderMoviesTab();
+    renderSeriesTab();
+    renderAnimeTab();
+    renderLiveTV();
+    renderWatchlist();
+  } catch (err) {
+    console.error('Error initializing catalog:', err);
+  } finally {
+    hideSplash();
+  }
 }
 
 // Navigation & Tab Switching
