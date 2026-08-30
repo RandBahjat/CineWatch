@@ -185,12 +185,6 @@ function renderHome() {
       return `
         <div class="hero-slide ${idx === 0 ? 'active' : ''}" style="background-image: url('${m.backdrop || m.poster}')" onclick="openDetail('${m.id}')">
           <div class="hero-content" onclick="event.stopPropagation()">
-            <div class="hero-badge-row">
-              <span class="hero-badge-trending"><ion-icon name="flame"></ion-icon> #1 Trending</span>
-              <span class="hero-quality-pill">4K ULTRA HD</span>
-              <span class="hero-quality-pill">DOLBY ATMOS</span>
-            </div>
-            
             <h1 class="hero-title">${m.title}</h1>
             
             <div class="hero-meta-row">
