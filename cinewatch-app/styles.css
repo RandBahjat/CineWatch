@@ -567,9 +567,40 @@ html, body {
   transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   SHELVES & HORIZONTAL CAROUSELS
-   ========================================================================== */
+/* Slide indicator dots */
+.hero-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 0 0.2rem;
+  background: transparent;
+  position: relative;
+  z-index: 10;
+}
+
+.hero-dot {
+  height: 4px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  width: 22px;
+}
+
+.hero-dot.active {
+  width: 52px;
+  background: var(--primary);
+  box-shadow: 0 0 12px var(--primary-glow);
+}
+
+.hero-dot:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.55);
+  width: 32px;
+}
+
+/* Shelves start below dots, no negative margin overlap needed */
+
 .shelves-container {
   padding: 0 2rem 4rem;
   display: flex;
