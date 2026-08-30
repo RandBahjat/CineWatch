@@ -1359,9 +1359,26 @@ html, body {
   }
 }
 
-@media (max-width: 768px) {
   .sidebar {
     display: none;
+  }
+  .sidebar.mobile-open {
+    display: flex !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    z-index: 9999;
+    background: rgba(10, 12, 18, 0.98);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+    animation: slideInLeft 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  @keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
   }
 
   .topbar {
