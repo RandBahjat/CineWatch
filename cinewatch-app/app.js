@@ -283,6 +283,8 @@ function renderHome() {
       `;
     }).join('');
 
+    // Render indicator dots
+    renderHeroDots(heroFeatured.length);
     startHeroAutoplay(heroFeatured.length);
   }
 
