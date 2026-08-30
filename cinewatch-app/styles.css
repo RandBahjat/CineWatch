@@ -957,19 +957,25 @@ html, body {
   z-index: 4;
 }
 
-.card-top10-num {
+.top10-card {
+  position: relative !important;
+}
+
+.top10-rank-badge {
   position: absolute;
-  bottom: -8px;
-  left: 4px;
+  bottom: 48px;
+  left: -12px;
   font-family: var(--font-display);
-  font-size: 5.6rem;
+  font-size: 6.8rem;
   font-weight: 900;
   line-height: 0.85;
   color: #06070a;
-  -webkit-text-stroke: 3.5px rgba(255, 255, 255, 0.9);
-  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.95);
-  z-index: 4;
+  -webkit-text-stroke: 4px rgba(255, 255, 255, 0.95);
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.95), 0 0 20px rgba(229, 9, 20, 0.4);
+  z-index: 10;
   pointer-events: none;
+  user-select: none;
+  letter-spacing: -3px;
 }
 
 .card-info {
