@@ -72,7 +72,7 @@
   <script src="./series-data.js?v=1" defer></script>
   <script src="./anime-data.js?v=1" defer></script>
   <script src="live-tv.js?v=1" defer></script>
-  <script src="app.js?v=37" defer></script>
+  <script src="app.js?v=38" defer></script>
 </head>
 <body>
 
@@ -214,44 +214,60 @@
         </div>
       </section>
 
-      <!-- SETTINGS TAB -->
-      <section class="tab-panel" id="panel-settings">
-        <div class="page-header">
-          <h1 class="page-title">Settings</h1>
-          <p class="page-desc">Manage your app preferences and account details.</p>
-        </div>
-        
-        <div class="settings-container">
-          <div class="settings-card">
-            <h3>Appearance</h3>
-            <div class="settings-row">
-              <div class="settings-info">
-                <h4>Theme Mode</h4>
-                <p>Switch between Dark Mode and Light Mode.</p>
-              </div>
-              <button class="settings-btn" id="pageThemeToggleBtn">
-                <ion-icon name="contrast-outline"></ion-icon> Toggle Theme
-              </button>
-            </div>
-          </div>
-          
-          <div class="settings-card">
-            <h3>App Information</h3>
-            <div class="settings-row">
-              <div class="settings-info">
-                <h4>Version</h4>
-                <p>CineWatch Desktop v1.0.0</p>
-              </div>
-              <button class="settings-btn" id="pageCheckUpdateBtn">
-                <ion-icon name="cloud-download-outline"></ion-icon> Check for Updates
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
     </main>
   </div><!-- /.app-layout -->
+
+  <!-- Full-Screen Settings Overlay -->
+  <div class="settings-overlay hidden" id="settingsOverlay">
+    <div class="settings-header">
+      <button class="settings-back-btn" id="closeSettingsBtn">
+        <ion-icon name="arrow-back-outline"></ion-icon> Back
+      </button>
+      <div class="profile-banner" style="background-image: url('https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=2070&auto=format&fit=crop');">
+        <button class="edit-banner-btn"><ion-icon name="camera-outline"></ion-icon> Change Cover</button>
+      </div>
+      <div class="profile-avatar-wrap">
+        <div class="profile-avatar">
+          <ion-icon name="person-outline"></ion-icon>
+          <button class="edit-avatar-btn"><ion-icon name="camera-outline"></ion-icon></button>
+        </div>
+        <div class="profile-name-info">
+          <h2>Guest</h2>
+          <span>Free Plan</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="settings-content">
+      <div class="settings-container" style="padding-top: 0;">
+        <div class="settings-card">
+          <h3>Appearance</h3>
+          <div class="settings-row">
+            <div class="settings-info">
+              <h4>Theme Mode</h4>
+              <p>Switch between Dark Mode and Light Mode.</p>
+            </div>
+            <button class="settings-btn" id="pageThemeToggleBtn">
+              <ion-icon name="contrast-outline"></ion-icon> Toggle Theme
+            </button>
+          </div>
+        </div>
+        
+        <div class="settings-card">
+          <h3>App Information</h3>
+          <div class="settings-row">
+            <div class="settings-info">
+              <h4>Version</h4>
+              <p>CineWatch Desktop v1.0.0</p>
+            </div>
+            <button class="settings-btn" id="pageCheckUpdateBtn">
+              <ion-icon name="cloud-download-outline"></ion-icon> Check for Updates
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Detail Modal -->
   <div class="modal-overlay hidden" id="detailModal">
