@@ -72,7 +72,7 @@
   <script src="./series-data.js?v=1" defer></script>
   <script src="./anime-data.js?v=1" defer></script>
   <script src="live-tv.js?v=1" defer></script>
-  <script src="app.js?v=22" defer></script>
+  <script src="app.js?v=23" defer></script>
 </head>
 <body>
 
@@ -80,16 +80,6 @@
   <div class="bg-glow bg-glow-1"></div>
   <div class="bg-glow bg-glow-2"></div>
   <div class="bg-glow bg-glow-3"></div>
-
-  <!-- Loading Splash -->
-  <div class="splash" id="splash">
-    <div class="splash-logo">
-      <div class="brand-icon"><ion-icon name="ticket"></ion-icon></div>
-      Cine<span>Watch</span>
-    </div>
-    <div class="splash-ring"></div>
-    <p>Loading your cinema…</p>
-  </div>
 
   <!-- Mobile Topbar (hidden on desktop via CSS) -->
   <header class="topbar" id="topbar">
@@ -199,7 +189,7 @@
           <div class="genre-pills-row" id="genreChips"></div>
         </div>
         
-        <div class="results-grid" id="resultsGrid"></div>
+        <div class="cards-grid" id="resultsGrid"></div>
         
         <div class="empty-state hidden" id="exploreEmpty">
           <ion-icon name="search-outline"></ion-icon>
@@ -221,7 +211,7 @@
         <div class="explore-head">
           <h1>My Watchlist</h1>
         </div>
-        <div class="results-grid" id="watchlistGrid"></div>
+        <div class="cards-grid" id="watchlistGrid"></div>
         <div class="empty-state hidden" id="watchlistEmpty">
           <ion-icon name="heart-outline"></ion-icon>
           <p>Your watchlist is empty</p>
@@ -275,16 +265,6 @@
 
   <!-- Toast -->
   <div class="toast" id="toast"></div>
-
-  <script>
-    // Hide splash after page loads
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        const splash = document.getElementById('splash');
-        if (splash) splash.classList.add('hidden');
-      }, 1200);
-    });
-  </script>
 
 </body>
 </html>
