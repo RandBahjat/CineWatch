@@ -770,8 +770,8 @@ function closePlayer() {
   playerModal?.classList.add('hidden');
 }
 
-// Global Event Listeners
-document.addEventListener('DOMContentLoaded', () => {
+// Global Event Listeners & Immediate Start
+function startApp() {
   loadFavorites();
   initCatalog();
   setupNavigation();
@@ -785,4 +785,10 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('playerModal')?.addEventListener('click', (e) => {
     if (e.target.id === 'playerModal') closePlayer();
   });
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', startApp);
+} else {
+  startApp();
+}
