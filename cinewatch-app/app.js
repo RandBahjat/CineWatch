@@ -177,29 +177,43 @@ function renderHome() {
   const heroDots = document.getElementById('heroDots');
 
   if (heroTrack && heroFeatured.length > 0) {
-    heroTrack.innerHTML = heroFeatured.map((m, idx) => `
-      <div class="hero-slide ${idx === 0 ? 'active' : ''}" style="background-image: url('${m.backdrop || m.poster}')" onclick="openDetail('${m.id}')">
-        <div class="hero-content" onclick="event.stopPropagation()">
-          <div class="hero-badge-row">
-            <span class="hero-badge"><ion-icon name="flame"></ion-icon> Featured</span>
-            <span class="hero-type-pill">${m.type || 'Movie'}</span>
-          </div>
-          <h1 class="hero-title">${m.title}</h1>
-          <div class="hero-meta">
-            <span class="rating"><ion-icon name="star"></ion-icon> ${m.rating || '8.5'}</span>
-            <span>•</span>
-            <span>${m.year || '2026'}</span>
-            <span>•</span>
-            <span>${m.duration || '2h 15m'}</span>
-          </div>
-          <p class="hero-overview">${m.description || 'Experience this blockbuster cinema release in full Ultra HD quality with immersive audio and multi-server streaming.'}</p>
-          <div class="hero-actions">
-            <button class="btn btn-primary" onclick="playMovieDirect('${m.id}')"><ion-icon name="play"></ion-icon> Watch Now</button>
-            <button class="btn btn-secondary" onclick="openDetail('${m.id}')"><ion-icon name="information-circle-outline"></ion-icon> Details</button>
+    heroTrack.innerHTML = heroFeatured.map((m, idx) => {
+      const isFav = state.favorites.has(m.id);
+      const genreText = Array.isArray(m.genres) ? m.genres.slice(0, 3).join(' • ') : (m.genres || 'Action • Sci-Fi');
+      return `
+        <div class="hero-slide ${idx === 0 ? 'active' : ''}" style="background-image: url('${m.backdrop || m.poster}')" onclick="openDetail('${m.id}')">
+          <div class="hero-content" onclick="event.stopPropagation()">
+            <div class="hero-badge-row">
+              <span class="hero-badge-trending"><ion-icon name="flame"></ion-icon> #1 Trending</span>
+              <span class="hero-quality-pill">4K ULTRA HD</span>
+              <span class="hero-quality-pill">DOLBY ATMOS</span>
+            </div>
+            
+            <h1 class="hero-title">${m.title}</h1>
+            
+            <div class="hero-meta-row">
+              <span class="hero-rating-badge"><ion-icon name="star"></ion-icon> ${m.rating || '8.8'}</span>
+              <span class="hero-meta-divider">•</span>
+              <span>${m.year || '2026'}</span>
+              <span class="hero-meta-divider">•</span>
+              <span>${m.duration || '2h 20m'}</span>
+              <span class="hero-meta-divider">•</span>
+              <span>${genreText}</span>
+            </div>
+
+            <p class="hero-overview">${m.description || 'Experience this blockbuster cinema release in full Ultra HD quality with crystal-clear audio and lightning-fast multi-server streaming.'}</p>
+            
+            <div class="hero-actions-row">
+              <button class="btn btn-primary" onclick="playMovieDirect('${m.id}')"><ion-icon name="play"></ion-icon> Watch Now</button>
+              <button class="btn btn-secondary" onclick="openDetail('${m.id}')"><ion-icon name="information-circle-outline"></ion-icon> Details</button>
+              <button class="btn btn-icon-only" title="${isFav ? 'Remove from Watchlist' : 'Add to Watchlist'}" onclick="toggleFavorite('${m.id}', event)">
+                <ion-icon name="${isFav ? 'heart' : 'heart-outline'}" style="color: ${isFav ? 'var(--primary)' : 'inherit'};"></ion-icon>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    `).join('');
+      `;
+    }).join('');
 
     if (heroDots) {
       heroDots.innerHTML = heroFeatured.map((_, idx) => `
@@ -207,6 +221,7 @@ function renderHome() {
       `).join('');
     }
 
+    updateHeroCounter(0, heroFeatured.length);
     startHeroAutoplay(heroFeatured.length);
   }
 
@@ -262,11 +277,20 @@ function renderHome() {
   `;
 }
 
+function updateHeroCounter(currentIdx, totalCount) {
+  const counterEl = document.getElementById('heroCounter');
+  if (counterEl) {
+    const cur = String(currentIdx + 1).padStart(2, '0');
+    const tot = String(totalCount || 6).padStart(2, '0');
+    counterEl.innerHTML = `${cur} <span>/ ${tot}</span>`;
+  }
+}
+
 function startHeroAutoplay(totalSlides) {
   clearInterval(state.heroTimer);
   state.heroTimer = setInterval(() => {
     changeHeroSlide(1, totalSlides);
-  }, 6500);
+  }, 7000);
 }
 
 function changeHeroSlide(direction, totalSlides = null) {
@@ -282,6 +306,7 @@ function changeHeroSlide(direction, totalSlides = null) {
 
   slides[state.heroIndex]?.classList.add('active');
   dots[state.heroIndex]?.classList.add('active');
+  updateHeroCounter(state.heroIndex, count);
 }
 
 function goToHeroSlide(idx) {
@@ -296,6 +321,7 @@ function goToHeroSlide(idx) {
 
   slides[state.heroIndex]?.classList.add('active');
   dots[state.heroIndex]?.classList.add('active');
+  updateHeroCounter(state.heroIndex, slides.length);
 }
 
 // 2. Explore Tab
