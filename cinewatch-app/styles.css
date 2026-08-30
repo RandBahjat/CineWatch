@@ -466,13 +466,13 @@ html, body {
 /* ==========================================================================
    REDESIGNED IMMERSIVE CINEMATIC HERO SLIDE (BIG SLIDE)
    ========================================================================== */
-/* Hero Horizontal Carousel with Cursor Drag & Swipe (Authentic Website Layout) */
+/* Hero Horizontal Carousel with Cursor Drag & Swipe (Enlarged 92vh) */
 .hero-container {
   position: relative;
   width: 100%;
-  height: 82vh;
-  min-height: 560px;
-  max-height: 820px;
+  height: 92vh;
+  min-height: 720px;
+  max-height: 960px;
   overflow: hidden;
   background: #05070a;
   cursor: grab;
