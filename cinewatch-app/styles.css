@@ -673,8 +673,18 @@ html, body {
   padding: 1rem 0.35rem 1.6rem;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
 }
-.shelf-track::-webkit-scrollbar { display: none; }
+.shelf-track.is-dragging {
+  cursor: grabbing;
+  scroll-behavior: auto;
+}
+.shelf-track img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
 
 /* STRICT UNIFORM 3D MOVIE CARD COMPONENT (235px Width × 350px Height - No Scaling) */
 .card {
