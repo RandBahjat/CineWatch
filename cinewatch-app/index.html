@@ -353,5 +353,16 @@
     <script src="anime-data.js?v=21"></script>
     <script src="live-tv.js?v=21"></script>
     <script src="app.js?v=21"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js').then(registration => {
+            console.log('SW registered: ', registration);
+          }).catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+        });
+      }
+    </script>
 </body>
 </html>
