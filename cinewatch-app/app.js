@@ -208,10 +208,14 @@ function switchTab(tabId) {
     else if (tabId === 'series') renderSeriesTab();
     else if (tabId === 'anime') renderAnimeTab();
     else if (tabId === 'live') renderLiveTV();
+    else if (tabId === 'ai') renderAITab();
   }
 
   if (tabId === 'explore') {
     document.getElementById('searchInput')?.focus();
+  } else if (tabId === 'ai') {
+    renderAITab();
+    document.getElementById('aiChatInput')?.focus();
   } else if (tabId === 'watchlist') {
     renderWatchlist();
   }
