@@ -4163,11 +4163,17 @@ function setupCwSelectionListeners() {
       renderContinueWatchingPage();
     }
   });
+function safeInitMovieApp() {
+  initApp();
+  trackVisit();
+  setupCwSelectionListeners();
 }
 
-document.addEventListener("DOMContentLoaded", () => { initApp(); trackVisit(); setupCwSelectionListeners(); });
-
-window.currentIframeData = null;
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", safeInitMovieApp);
+} else {
+  safeInitMovieApp();
+}
 
 function updateIframeServer() {
   if (!window.currentIframeData) return;
