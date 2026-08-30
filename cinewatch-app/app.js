@@ -947,6 +947,8 @@ function startApp() {
   document.getElementById('playerModal')?.addEventListener('click', (e) => {
     if (e.target.id === 'playerModal') closePlayer();
   });
+}
+
 let appStarted = false;
 function safeStartApp() {
   if (appStarted) return;
