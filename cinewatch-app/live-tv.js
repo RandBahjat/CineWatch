@@ -1,11 +1,61 @@
-// Live TV Placeholder Channels Config
+/**
+ * CineWatch Live TV Channels Data
+ */
 window._LIVE_CHANNELS = [
-  { id: 'ch-1', name: 'CineWatch Action 24/7', category: 'Movies', icon: '🔥', live: true },
-  { id: 'ch-2', name: 'CineWatch Sci-Fi', category: 'Movies', icon: '🚀', live: true },
-  { id: 'ch-3', name: 'HBO HD (Demo)', category: 'Premium', icon: '🎬', live: true },
-  { id: 'ch-4', name: 'Netflix Movies (Demo)', category: 'Premium', icon: '🍿', live: true },
-  { id: 'ch-5', name: 'Anime 24/7 HD', category: 'Anime', icon: '⚡', live: true },
-  { id: 'ch-6', name: 'Kurdish Cinema 24/7', category: 'Regional', icon: '☀️', live: true },
-  { id: 'ch-7', name: 'KurdSat Drama', category: 'Regional', icon: '📺', live: true },
-  { id: 'ch-8', name: 'NCourt Live', category: 'News', icon: '🌐', live: false }
+  {
+    id: "live-bein-sports-1",
+    name: "beIN Sports 1 HD",
+    category: "Sports",
+    logo: "⚽",
+    streamUrl: "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+  },
+  {
+    id: "live-sky-sports",
+    name: "Sky Sports Premier League",
+    category: "Sports",
+    logo: "🏆",
+    streamUrl: "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+  },
+  {
+    id: "live-hbo-hd",
+    name: "HBO Cinema HD",
+    category: "Movies",
+    logo: "🎬",
+    streamUrl: "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+  },
+  {
+    id: "live-discovery",
+    name: "Discovery Channel",
+    category: "Documentary",
+    logo: "🌍",
+    streamUrl: "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+  },
+  {
+    id: "live-natgeo",
+    name: "National Geographic HD",
+    category: "Documentary",
+    logo: "🦁",
+    streamUrl: "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+  },
+  {
+    id: "live-cartoon-network",
+    name: "Cartoon Network HD",
+    category: "Kids & Animation",
+    logo: "🎨",
+    streamUrl: "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+  },
+  {
+    id: "live-bbc-news",
+    name: "BBC World News",
+    category: "News",
+    logo: "📡",
+    streamUrl: "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+  },
+  {
+    id: "live-cnn",
+    name: "CNN International",
+    category: "News",
+    logo: "🌐",
+    streamUrl: "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+  }
 ];
