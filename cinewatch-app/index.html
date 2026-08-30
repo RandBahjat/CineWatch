@@ -72,7 +72,7 @@
   <script src="./series-data.js?v=1" defer></script>
   <script src="./anime-data.js?v=1" defer></script>
   <script src="live-tv.js?v=1" defer></script>
-  <script src="app.js?v=41" defer></script>
+  <script src="app.js?v=42" defer></script>
 </head>
 <body>
 
@@ -220,24 +220,36 @@
   <!-- Full-Screen Settings Overlay -->
   <div class="settings-overlay hidden" id="settingsOverlay">
     <div class="settings-header">
-      <button class="settings-back-btn" id="closeSettingsBtn">
-        <ion-icon name="arrow-back-outline"></ion-icon> Back
+      <!-- Redesigned back button: floating pill top-left -->
+      <button class="settings-back-btn" id="closeSettingsBtn" aria-label="Go Back">
+        <ion-icon name="chevron-back-outline"></ion-icon>
       </button>
-      <div class="profile-banner" style="background-image: url('https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=2070&auto=format&fit=crop');">
-        <button class="edit-banner-btn"><ion-icon name="camera-outline"></ion-icon> Change Cover</button>
+
+      <div class="profile-banner" id="profileBanner" style="background-image: url('https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=2070&auto=format&fit=crop');">
+        <!-- Change Cover triggers file input -->
+        <label class="edit-banner-btn" for="bannerFileInput">
+          <ion-icon name="camera-outline"></ion-icon> Change Cover
+        </label>
+        <input type="file" id="bannerFileInput" accept="image/*" style="display:none;">
       </div>
+
       <div class="profile-avatar-wrap">
-        <div class="profile-avatar">
+        <div class="profile-avatar" id="profileAvatar">
           <ion-icon name="person-outline"></ion-icon>
-          <button class="edit-avatar-btn"><ion-icon name="camera-outline"></ion-icon></button>
+          <label class="edit-avatar-btn" for="avatarFileInput" aria-label="Change profile picture">
+            <ion-icon name="camera-outline"></ion-icon>
+          </label>
+          <input type="file" id="avatarFileInput" accept="image/*" style="display:none;">
         </div>
         <div class="profile-name-info">
           <h2>Guest</h2>
-          <span>Free Plan</span>
         </div>
       </div>
     </div>
-    
+
+    <!-- Divider between profile and settings -->
+    <div class="settings-section-divider"></div>
+
     <div class="settings-content">
       <div class="settings-container" style="padding-top: 0;">
         <div class="settings-card">
@@ -265,6 +277,11 @@
             </button>
           </div>
         </div>
+
+        <!-- Save Button -->
+        <button class="settings-save-btn" id="saveSettingsBtn">
+          <ion-icon name="checkmark-circle-outline"></ion-icon> Save Changes
+        </button>
       </div>
     </div>
   </div>
