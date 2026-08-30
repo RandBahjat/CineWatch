@@ -72,7 +72,7 @@
   <script src="./series-data.js?v=1" defer></script>
   <script src="./anime-data.js?v=1" defer></script>
   <script src="live-tv.js?v=1" defer></script>
-  <script src="app.js?v=19" defer></script>
+  <script src="app.js?v=20" defer></script>
 </head>
 <body>
 
@@ -178,24 +178,32 @@
 
       <!-- EXPLORE TAB -->
       <section class="tab-panel" id="panel-explore">
-        <div class="explore-head">
-          <h1>Explore</h1>
-          <div class="search-box">
+        <div class="page-header">
+          <div class="page-title-row">
+            <h1 class="page-title">Explore</h1>
+            <span class="page-count" id="exploreCount">0 Titles</span>
+          </div>
+          
+          <div class="explore-search-bar">
             <ion-icon name="search-outline"></ion-icon>
             <input type="text" id="searchInput" placeholder="Search movies, series, anime…" autocomplete="off">
+            <button class="search-clear-btn" id="exploreClearBtn" aria-label="Clear Search"><ion-icon name="close-circle"></ion-icon></button>
           </div>
-          <div class="filter-chips" id="filterChips">
-            <button class="chip active" data-type="all">All</button>
-            <button class="chip" data-type="Movie">Movies</button>
-            <button class="chip" data-type="TV Show">Series</button>
-            <button class="chip" data-type="Anime">Anime</button>
+          
+          <div class="filter-pills-row" id="filterChips">
+            <button class="pill-btn active" data-type="all">All</button>
+            <button class="pill-btn" data-type="Movie">Movies</button>
+            <button class="pill-btn" data-type="TV Show">Series</button>
+            <button class="pill-btn" data-type="Anime">Anime</button>
           </div>
-          <div class="genre-chips" id="genreChips"></div>
+          <div class="genre-pills-row" id="genreChips"></div>
         </div>
+        
         <div class="results-grid" id="resultsGrid"></div>
+        
         <div class="empty-state hidden" id="exploreEmpty">
           <ion-icon name="search-outline"></ion-icon>
-          <p>No results found</p>
+          <p>No results found for your search.</p>
         </div>
       </section>
 
