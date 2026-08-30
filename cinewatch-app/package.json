@@ -25,6 +25,7 @@
   "build": {
     "appId": "com.cinewatch.app",
     "productName": "CineWatch",
+    "icon": "icon-512.png",
     "directories": {
       "output": "C:\\CinewatchBuild"
     },
