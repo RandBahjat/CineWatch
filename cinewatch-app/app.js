@@ -965,10 +965,22 @@ function startApp() {
     });
   }
 
-  // Save button
+  // Save button — show success animation, stay on settings page
   document.getElementById('saveSettingsBtn')?.addEventListener('click', () => {
-    showToast('Settings saved!');
-    setTimeout(() => document.getElementById('settingsOverlay')?.classList.add('hidden'), 600);
+    const btn = document.getElementById('saveSettingsBtn');
+    if (!btn || btn.classList.contains('saving')) return;
+
+    btn.classList.add('saving');
+    btn.innerHTML = '<ion-icon name="checkmark-circle"></ion-icon> Saved!';
+    btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+    btn.style.boxShadow = '0 4px 20px rgba(34, 197, 94, 0.45)';
+
+    setTimeout(() => {
+      btn.classList.remove('saving');
+      btn.innerHTML = '<ion-icon name="checkmark-circle-outline"></ion-icon> Save Changes';
+      btn.style.background = '';
+      btn.style.boxShadow = '';
+    }, 2500);
   });
 
   // Settings page buttons
