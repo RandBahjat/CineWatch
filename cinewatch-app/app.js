@@ -82,13 +82,24 @@ function hideSplash() {
 // Fallback auto-dismiss splash screen
 setTimeout(hideSplash, 1200);
 
-// Catalog Initialization
-function initCatalog() {
-  try {
-    const movies = window._MOVIES_DATA || [];
-    const series = window._SERIES_DATA || [];
-    const anime = window._ANIME_DATA || [];
+/// Catalog Initialization with async-safe data waiting
+let catalogInitialized = false;
 
+function initCatalog() {
+  const movies = window._MOVIES_DATA || [];
+  const series = window._SERIES_DATA || [];
+  const anime = window._ANIME_DATA || [];
+
+  if (movies.length === 0 && series.length === 0 && anime.length === 0) {
+    // Data files still loading in background, retry in 50ms
+    setTimeout(initCatalog, 50);
+    return;
+  }
+
+  if (catalogInitialized && MOVIES.length > 0) return;
+  catalogInitialized = true;
+
+  try {
     MOVIES = [...movies, ...series, ...anime];
     MOVIES.forEach(m => {
       if (!m.id) {
@@ -131,6 +142,36 @@ function setupNavigation() {
     }
   });
 
+  // Topbar Search Click
+  document.getElementById('topSearchBtn')?.addEventListener('click', () => {
+    switchTab('explore');
+  });
+  document.getElementById('topSearchInput')?.addEventListener('click', () => {
+    switchTab('explore');
+    document.getElementById('searchInput')?.focus();
+  });
+
+  // Explore Search Input
+  const searchInput = document.getElementById('searchInput');
+  const clearBtn = document.getElementById('exploreClearBtn');
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.trim();
+      if (clearBtn) clearBtn.classList.toggle('hidden', !query);
+      searchCatalog(query);
+    });
+  }
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      if (searchInput) {
+        searchInput.value = '';
+        clearBtn.classList.add('hidden');
+        searchCatalog('');
+        searchInput.focus();
+      }
+    });
+  }
+
   // Hero controls
   document.getElementById('heroPrevBtn')?.addEventListener('click', () => changeHeroSlide(-1));
   document.getElementById('heroNextBtn')?.addEventListener('click', () => changeHeroSlide(1));
@@ -139,20 +180,24 @@ function setupNavigation() {
 
 function switchTab(tabId) {
   state.currentTab = tabId;
-  
-  // Update sidebar & bottom nav buttons
-  document.querySelectorAll('.nav-item').forEach(b => {
-    b.classList.toggle('active', b.dataset.tab === tabId);
+
+  document.querySelectorAll('.nav-item').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.tab === tabId);
   });
 
-  // Switch tab panels
-  document.querySelectorAll('.tab-panel').forEach(p => {
-    p.classList.toggle('active', p.id === `panel-${tabId}`);
+  document.querySelectorAll('.tab-panel').forEach(panel => {
+    panel.classList.toggle('active', panel.id === `panel-${tabId}`);
   });
 
-  // Scroll to top
-  const main = document.getElementById('appView');
-  if (main) main.scrollTop = 0;
+  // Scroll to top of app view on tab switch
+  const appView = document.getElementById('appView');
+  if (appView) appView.scrollTop = 0;
+
+  if (tabId === 'explore') {
+    document.getElementById('searchInput')?.focus();
+  } else if (tabId === 'watchlist') {
+    renderWatchlist();
+  }
 }
 
 // Toast Notification
@@ -164,22 +209,30 @@ function showToast(msg) {
   setTimeout(() => el.classList.remove('show'), 2400);
 }
 
-// Render Card HTML with Clean Hover
-function createCardHTML(m, rankNum = null) {
-  const isFav = state.favorites.has(m.id);
+// Card HTML Generator with countdown rank badge support
+function createCardHTML(movie, rankNum = null) {
+  if (!movie) return '';
+  const isFav = state.favorites.has(movie.id);
+  const rankBadge = rankNum ? `<div class="card-rank">🔥 TOP ${11 - rankNum}</div>` : '';
+  const metaYear = movie.year ? `<span>${movie.year}</span>` : '';
+  const metaDur = movie.duration ? `<span>${movie.duration}</span>` : '';
+
   return `
-    <div class="card" onclick="openDetail('${m.id}')">
+    <div class="media-card" onclick="openDetail('${movie.id}')">
       <div class="card-poster">
-        <img src="${m.poster || m.backdrop}" alt="${m.title}" loading="lazy" />
-        ${rankNum ? `<div class="top10-pill-tag"><ion-icon name="flame"></ion-icon> TOP ${11 - rankNum}</div>` : ''}
-        <div class="card-badge"><ion-icon name="star"></ion-icon> ${m.rating || 'N/A'}</div>
-        <div class="card-overlay">
-          <div class="card-play-icon"><ion-icon name="play"></ion-icon></div>
-        </div>
+        <img src="${movie.poster || movie.backdrop || ''}" alt="${movie.title}" loading="lazy" onerror="this.src='https://via.placeholder.com/300x450/11141e/ffffff?text=${encodeURIComponent(movie.title)}'">
+        ${rankBadge}
+        <button class="card-fav-btn ${isFav ? 'active' : ''}" onclick="toggleFav(event, '${movie.id}')" aria-label="Favorite">
+          <ion-icon name="${isFav ? 'heart' : 'heart-outline'}"></ion-icon>
+        </button>
       </div>
       <div class="card-info">
-        <div class="card-title">${m.title}</div>
-        <div class="card-sub">${m.year || ''} • ${m.type || (m.seasons ? 'Series' : 'Movie')}</div>
+        <h3 class="card-title">${movie.title}</h3>
+        <div class="card-meta">
+          <span class="card-rating"><ion-icon name="star"></ion-icon> ${movie.rating || '8.0'}</span>
+          ${metaYear}
+          ${metaDur}
+        </div>
       </div>
     </div>
   `;
@@ -187,7 +240,12 @@ function createCardHTML(m, rankNum = null) {
 
 // 1. Home Tab Rendering
 function renderHome() {
-  const heroFeatured = MOVIES.filter(m => FEATURED_TITLES.includes(m.title)).slice(0, 6);
+  if (!MOVIES || MOVIES.length === 0) return;
+
+  let heroFeatured = MOVIES.filter(m => FEATURED_TITLES.includes(m.title)).slice(0, 6);
+  if (heroFeatured.length === 0) {
+    heroFeatured = MOVIES.slice(0, 6);
+  }
   const heroTrack = document.getElementById('heroTrack');
 
   if (heroTrack && heroFeatured.length > 0) {
