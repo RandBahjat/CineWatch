@@ -1808,8 +1808,158 @@ html, body {
 /* ==========================================================================
    SETTINGS PAGE
    ========================================================================== */
+/* ==========================================================================
+   SETTINGS PAGE & FULLSCREEN OVERLAY
+   ========================================================================== */
+.settings-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-app);
+  z-index: 1000;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: opacity var(--transition-smooth), transform var(--transition-smooth);
+}
+
+.settings-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+}
+
+.settings-header {
+  position: relative;
+  width: 100%;
+}
+
+.settings-back-btn {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius-full);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.settings-back-btn:hover {
+  background: rgba(229, 9, 20, 0.8);
+  border-color: var(--primary);
+}
+
+.profile-banner {
+  width: 100%;
+  height: 250px;
+  background-color: #1a1e29;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.profile-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, var(--bg-app) 0%, transparent 60%);
+}
+
+.edit-banner-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all var(--transition-fast);
+}
+.edit-banner-btn:hover { background: rgba(0, 0, 0, 0.8); }
+
+.profile-avatar-wrap {
+  position: relative;
+  margin-top: -60px;
+  padding: 0 3.5rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+  z-index: 2;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #121622;
+  border: 4px solid var(--bg-app);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  color: var(--text-sub);
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.edit-avatar-btn {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity var(--transition-fast);
+}
+
+.profile-avatar:hover .edit-avatar-btn {
+  opacity: 1;
+}
+
+.profile-name-info h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 0.2rem;
+}
+
+.profile-name-info span {
+  font-size: 1rem;
+  color: var(--accent-gold);
+  font-weight: 600;
+  background: rgba(245, 197, 24, 0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-md);
+}
+
+.settings-content {
+  padding: 3rem 3.5rem 4rem;
+}
+
 .settings-container {
-  padding: 0 2rem 4rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
