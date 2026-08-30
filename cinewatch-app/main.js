@@ -19,7 +19,7 @@ function createWindow() {
     }
   });
 
-  mainWindow.loadURL('https://cinewatch.watch/');
+  mainWindow.loadFile(path.join(__dirname, 'index.html'));
 
   mainWindow.webContents.setWindowOpenHandler(({ url }) => {
     if (url.startsWith('http:') || url.startsWith('https:')) {
