@@ -72,7 +72,7 @@
   <script src="./series-data.js?v=1" defer></script>
   <script src="./anime-data.js?v=1" defer></script>
   <script src="live-tv.js?v=1" defer></script>
-  <script src="app.js?v=50" defer></script>
+  <script src="app.js?v=51" defer></script>
 </head>
 <body>
 
@@ -329,6 +329,63 @@
 
   <!-- Toast -->
   <div class="toast" id="toast"></div>
+
+  <!-- Auth Overlay (Sign In / Create Account) -->
+  <div class="auth-overlay hidden" id="authOverlay">
+    <button class="auth-close-btn" id="closeAuthBtn" aria-label="Close">
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="auth-card">
+      <!-- Logo -->
+      <div class="auth-logo">
+        <div class="brand-icon"><ion-icon name="ticket"></ion-icon></div>
+        Cine<span>Watch</span>
+      </div>
+
+      <!-- Tab Switcher -->
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="tabSignIn" data-tab="signin">Sign In</button>
+        <button class="auth-tab" id="tabSignUp" data-tab="signup">Create Account</button>
+      </div>
+
+      <!-- Sign In Form -->
+      <form class="auth-form active" id="formSignIn" autocomplete="off">
+        <div class="auth-field">
+          <ion-icon name="mail-outline"></ion-icon>
+          <input type="email" id="signinEmail" placeholder="Email address" required>
+        </div>
+        <div class="auth-field">
+          <ion-icon name="lock-closed-outline"></ion-icon>
+          <input type="password" id="signinPass" placeholder="Password" required>
+        </div>
+        <button type="submit" class="auth-submit-btn">
+          <ion-icon name="log-in-outline"></ion-icon> Sign In
+        </button>
+        <p class="auth-switch">Don't have an account? <a href="#" id="switchToSignUp">Create one</a></p>
+      </form>
+
+      <!-- Create Account Form -->
+      <form class="auth-form" id="formSignUp" autocomplete="off">
+        <div class="auth-field">
+          <ion-icon name="person-outline"></ion-icon>
+          <input type="text" id="signupName" placeholder="Full name" required>
+        </div>
+        <div class="auth-field">
+          <ion-icon name="mail-outline"></ion-icon>
+          <input type="email" id="signupEmail" placeholder="Email address" required>
+        </div>
+        <div class="auth-field">
+          <ion-icon name="lock-closed-outline"></ion-icon>
+          <input type="password" id="signupPass" placeholder="Password" required>
+        </div>
+        <button type="submit" class="auth-submit-btn">
+          <ion-icon name="person-add-outline"></ion-icon> Create Account
+        </button>
+        <p class="auth-switch">Already have an account? <a href="#" id="switchToSignIn">Sign in</a></p>
+      </form>
+    </div>
+  </div>
 
 </body>
 </html>
