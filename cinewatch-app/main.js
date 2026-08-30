@@ -7,21 +7,20 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     width: 1280,
     height: 840,
-    minWidth: 400,
+    minWidth: 420,
     minHeight: 640,
-    backgroundColor: '#0a0a0f',
+    backgroundColor: '#06070a',
     title: 'CineWatch App',
     autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
-      webSecurity: false // Allows loading local video and stream embeds safely
+      webSecurity: false
     }
   });
 
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
 
-  // Open external links in default browser
   mainWindow.webContents.setWindowOpenHandler(({ url }) => {
     if (url.startsWith('http:') || url.startsWith('https:')) {
       shell.openExternal(url);
