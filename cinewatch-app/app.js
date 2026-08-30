@@ -679,7 +679,7 @@ function getOrCreateVjsPlayer() {
   return vjsPlayerInstance;
 }
 
-// Direct Play Video Modal with Video.js & Multi-Server Support
+// Direct Play Video Modal with VideoSkin / Video.js & Multi-Server Support
 function playMovieDirect(movieId) {
   closeDetail();
   const movie = MOVIES.find(m => m.id === movieId);
@@ -689,6 +689,8 @@ function playMovieDirect(movieId) {
   const playerTitle = document.getElementById('playerTitle');
   const iframeEl = document.getElementById('iframeEl');
   const vjsContainer = document.getElementById('vjsContainer');
+  const videoSkinPlayer = document.getElementById('videoSkinPlayer');
+  const videoSkinMedia = document.getElementById('videoSkinMedia');
   const serverSelect = document.getElementById('serverSelect');
 
   if (playerTitle) playerTitle.textContent = `${movie.title} (${movie.year || '2026'})`;
@@ -697,34 +699,37 @@ function playMovieDirect(movieId) {
   const isDirectStream = movie.videoUrl && (movie.videoUrl.endsWith('.m3u8') || movie.videoUrl.endsWith('.mp4'));
 
   if (isDirectStream) {
-    // Play with Video.js
     if (iframeEl) {
       iframeEl.classList.add('hidden');
       iframeEl.src = '';
     }
-    if (vjsContainer) vjsContainer.classList.remove('hidden');
-
-    const player = getOrCreateVjsPlayer();
-    if (player) {
-      player.src({
-        src: movie.videoUrl,
-        type: movie.videoUrl.endsWith('.m3u8') ? 'application/x-mpegURL' : 'video/mp4'
-      });
-      player.play();
+    if (vjsContainer) vjsContainer.classList.add('hidden');
+    if (videoSkinPlayer) {
+      videoSkinPlayer.classList.remove('hidden');
+      if (videoSkinMedia) {
+        videoSkinMedia.src = movie.videoUrl;
+        videoSkinMedia.play().catch(() => {});
+      }
     }
     if (serverSelect) {
-      serverSelect.innerHTML = `<option value="${movie.videoUrl}">Video.js Direct Player (Full HD)</option>`;
+      serverSelect.innerHTML = `<option value="${movie.videoUrl}">VideoSkin Native Player (Full HD)</option>`;
     }
   } else {
     // Streaming Server Endpoints (Embed Player)
-    if (vjsPlayerInstance) {
-      vjsPlayerInstance.pause();
+    if (videoSkinMedia) {
+      videoSkinMedia.pause();
     }
+    if (videoSkinPlayer) videoSkinPlayer.classList.add('hidden');
     if (vjsContainer) vjsContainer.classList.add('hidden');
     if (iframeEl) iframeEl.classList.remove('hidden');
 
     const tmdb = movie.tmdbId || movie.videoUrl || '550';
-    const servers = [
+    const isTv = movie.type === 'TV Show' || movie.type === 'Series' || (movie.seasons && movie.seasons.length);
+    const servers = isTv ? [
+      { name: 'AutoEmbed TV (Fast)', url: `https://player.autoembed.cc/embed/tv/${tmdb}/1/1` },
+      { name: 'VidLink Pro TV', url: `https://vidlink.pro/tv/${tmdb}/1/1` },
+      { name: 'VidSrc VIP TV', url: `https://vidsrc.to/embed/tv/${tmdb}/1/1` }
+    ] : [
       { name: 'AutoEmbed Fast Stream', url: `https://player.autoembed.cc/embed/movie/${tmdb}` },
       { name: 'VidLink Pro (Multi-Audio)', url: `https://vidlink.pro/movie/${tmdb}` },
       { name: 'VidSrc VIP', url: `https://vidsrc.to/embed/movie/${tmdb}` },
@@ -749,7 +754,9 @@ function playMovieDirect(movieId) {
 function closePlayer() {
   const playerModal = document.getElementById('playerModal');
   const iframeEl = document.getElementById('iframeEl');
+  const videoSkinMedia = document.getElementById('videoSkinMedia');
   if (iframeEl) iframeEl.src = '';
+  if (videoSkinMedia) videoSkinMedia.pause();
   if (vjsPlayerInstance) {
     vjsPlayerInstance.pause();
   }
