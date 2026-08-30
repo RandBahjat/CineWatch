@@ -175,48 +175,34 @@ function createCardHTML(m, rankNum = null) {
 function renderHome() {
   const heroFeatured = MOVIES.filter(m => FEATURED_TITLES.includes(m.title)).slice(0, 6);
   const heroTrack = document.getElementById('heroTrack');
-  const heroDots = document.getElementById('heroDots');
 
   if (heroTrack && heroFeatured.length > 0) {
     heroTrack.innerHTML = heroFeatured.map((m, idx) => {
-      const isFav = state.favorites.has(m.id);
-      const genreText = Array.isArray(m.genres) ? m.genres.slice(0, 3).join(' • ') : (m.genres || 'Action • Sci-Fi');
+      const genreText = Array.isArray(m.genres) ? m.genres.slice(0, 3).join(' • ') : (m.genres || 'Action • Adventure • Sci-Fi');
       return `
         <div class="hero-slide ${idx === 0 ? 'active' : ''}" style="background-image: url('${m.backdrop || m.poster}')" onclick="openDetail('${m.id}')">
           <div class="hero-content" onclick="event.stopPropagation()">
             <h1 class="hero-title">${m.title}</h1>
             
             <div class="hero-meta-row">
-              <span class="hero-rating-badge"><ion-icon name="star"></ion-icon> ${m.rating || '8.8'}</span>
+              <span class="hero-rating-badge"><ion-icon name="star"></ion-icon> ${m.rating || '8.1'}</span>
               <span class="hero-meta-divider">•</span>
               <span>${m.year || '2026'}</span>
-              <span class="hero-meta-divider">•</span>
-              <span>${m.duration || '2h 20m'}</span>
               <span class="hero-meta-divider">•</span>
               <span>${genreText}</span>
             </div>
 
-            <p class="hero-overview">${m.description || 'Experience this blockbuster cinema release in full Ultra HD quality with crystal-clear audio and lightning-fast multi-server streaming.'}</p>
+            <p class="hero-overview">${m.description || 'Experience this blockbuster release in full HD quality with crystal-clear audio and lightning-fast multi-server streaming.'}</p>
             
             <div class="hero-actions-row">
-              <button class="btn btn-primary" onclick="playMovieDirect('${m.id}')"><ion-icon name="play"></ion-icon> Watch Now</button>
-              <button class="btn btn-secondary" onclick="openDetail('${m.id}')"><ion-icon name="information-circle-outline"></ion-icon> Details</button>
-              <button class="btn btn-icon-only" title="${isFav ? 'Remove from Watchlist' : 'Add to Watchlist'}" onclick="toggleFavorite('${m.id}', event)">
-                <ion-icon name="${isFav ? 'heart' : 'heart-outline'}" style="color: ${isFav ? 'var(--primary)' : 'inherit'};"></ion-icon>
-              </button>
+              <button class="btn-hero-play" onclick="playMovieDirect('${m.id}')"><ion-icon name="play"></ion-icon> Play</button>
+              <button class="btn-hero-more" onclick="openDetail('${m.id}')"><ion-icon name="information-circle-outline"></ion-icon> See More</button>
             </div>
           </div>
         </div>
       `;
     }).join('');
 
-    if (heroDots) {
-      heroDots.innerHTML = heroFeatured.map((_, idx) => `
-        <div class="hero-dot ${idx === 0 ? 'active' : ''}" onclick="goToHeroSlide(${idx})"></div>
-      `).join('');
-    }
-
-    updateHeroCounter(0, heroFeatured.length);
     startHeroAutoplay(heroFeatured.length);
   }
 
