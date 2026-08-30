@@ -187,7 +187,41 @@
                     <div class="live-grid" id="liveGrid"></div>
                 </section>
 
-                <!-- ===== 7. WATCHLIST TAB ===== -->
+                <!-- ===== 7. AI ASSISTANT TAB ===== -->
+                <section class="tab-panel" id="panel-ai">
+                    <div class="page-header">
+                        <div class="page-title-row">
+                            <h1 class="page-title">✨ AI Movie Matchmaker</h1>
+                            <span class="page-count">Smart Recommendations</span>
+                        </div>
+                        <p class="page-desc">Ask CineWatch AI anything — describe a mood, plot, or vibe to get instant movie & series recommendations.</p>
+                    </div>
+                    <div class="ai-tab-container" id="aiTabContainer">
+                        <div class="ai-quick-prompts">
+                            <button class="ai-prompt-chip" onclick="askAIPrompt('Mind-bending sci-fi thriller like Interstellar')">🚀 Mind-bending Sci-Fi</button>
+                            <button class="ai-prompt-chip" onclick="askAIPrompt('Best binge-worthy crime mystery series')">🕵️ Binge-worthy Mystery</button>
+                            <button class="ai-prompt-chip" onclick="askAIPrompt('Heartwarming anime movies with great visuals')">🌸 Beautiful Anime</button>
+                            <button class="ai-prompt-chip" onclick="askAIPrompt('Top rated 2026 action blockbusters')">🔥 2026 Action Hits</button>
+                        </div>
+                        <div class="ai-chat-box">
+                            <div class="ai-messages-list" id="aiMessagesList">
+                                <div class="ai-msg ai-msg-bot">
+                                    <div class="ai-bot-avatar"><ion-icon name="sparkles"></ion-icon></div>
+                                    <div class="ai-msg-bubble">
+                                        Hello! I'm your CineWatch AI Assistant. What kind of movie or TV show are you in the mood for today?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ai-input-bar">
+                                <input type="text" id="aiChatInput" placeholder="Ask for recommendations, actors, plots, or ratings..." autocomplete="off">
+                                <button id="aiSendBtn" class="ai-send-btn" aria-label="Send"><ion-icon name="send"></ion-icon></button>
+                            </div>
+                        </div>
+                        <div class="cards-grid" id="aiResultsGrid"></div>
+                    </div>
+                </section>
+
+                <!-- ===== 8. WATCHLIST TAB ===== -->
                 <section class="tab-panel" id="panel-watchlist">
                     <div class="page-header">
                         <div class="page-title-row">
