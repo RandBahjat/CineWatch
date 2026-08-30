@@ -444,6 +444,36 @@ html, body {
   border-color: rgba(255, 255, 255, 0.2);
 }
 
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-top-download {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(229, 9, 20, 0.15);
+  color: var(--primary);
+  border: 1px solid rgba(229, 9, 20, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-top-download:hover {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--primary-glow);
+}
+
 .topbar-search {
   flex: 0 1 480px;
   height: 42px;
