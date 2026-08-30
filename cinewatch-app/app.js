@@ -343,7 +343,6 @@ function setupShelfDragScroll() {
       if (e.button !== 0) return;
       isDown = true;
       hasMoved = false;
-      track.classList.add('is-dragging');
       startX = e.pageX - track.offsetLeft;
       scrollLeft = track.scrollLeft;
     });
@@ -357,17 +356,18 @@ function setupShelfDragScroll() {
 
     window.addEventListener('mousemove', (e) => {
       if (!isDown) return;
-      e.preventDefault();
       const x = e.pageX - track.offsetLeft;
-      const walk = (x - startX) * 1.5;
-      if (Math.abs(x - startX) > 6) {
+      const diff = Math.abs(x - startX);
+      if (diff > 18) {
         hasMoved = true;
+        track.classList.add('is-dragging');
+        track.scrollLeft = scrollLeft - (x - startX) * 1.5;
       }
-      track.scrollLeft = scrollLeft - walk;
     });
 
     track.addEventListener('click', (e) => {
       if (hasMoved) {
+        if (e.target.closest('.card-fav-btn, button, a')) return;
         e.preventDefault();
         e.stopPropagation();
         hasMoved = false;
@@ -397,8 +397,6 @@ function setupHeroDragEvents() {
     const bannerWidth = heroContainer.offsetWidth || window.innerWidth;
     heroDragState.currentTranslate = -state.heroIndex * bannerWidth;
 
-    heroTrack.style.transition = 'none';
-    heroContainer.classList.add('is-dragging');
     clearInterval(state.heroTimer);
   };
 
@@ -407,11 +405,10 @@ function setupHeroDragEvents() {
     const currentX = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
     const diffX = currentX - heroDragState.startX;
 
-    if (Math.abs(diffX) > 6) {
+    if (Math.abs(diffX) > 18) {
       heroDragState.hasMoved = true;
-    }
-
-    if (heroDragState.hasMoved) {
+      heroContainer.classList.add('is-dragging');
+      heroTrack.style.transition = 'none';
       if (e.cancelable) e.preventDefault();
       heroTrack.style.transform = `translateX(${heroDragState.currentTranslate + diffX}px)`;
     }
@@ -433,10 +430,8 @@ function setupHeroDragEvents() {
 
     if (heroDragState.hasMoved && Math.abs(diffX) > threshold) {
       if (diffX < 0) {
-        // Dragged left -> next slide
         state.heroIndex = (state.heroIndex + 1) % slidesCount;
       } else {
-        // Dragged right -> previous slide
         state.heroIndex = (state.heroIndex - 1 + slidesCount) % slidesCount;
       }
     }
@@ -447,6 +442,8 @@ function setupHeroDragEvents() {
 
   heroContainer.addEventListener('click', (e) => {
     if (heroDragState.hasMoved) {
+      // Never block clicks on interactive buttons
+      if (e.target.closest('.btn-hero-play, .btn-hero-more, button, a')) return;
       e.preventDefault();
       e.stopPropagation();
       heroDragState.hasMoved = false;
