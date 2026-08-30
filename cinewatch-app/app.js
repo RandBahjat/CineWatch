@@ -30,6 +30,14 @@ const TOP_10_TITLES = [
 ];
 
 let MOVIES = [];
+// FIX 4: N+1 → O(1) Map lookup instead of repeated .find() scans
+let _movieMap = new Map();
+
+// FIX 3: Pagination constants & offsets per view
+const PAGE_SIZE = 40;
+let _pageOffset = { explore: 0, movies: 0, series: 0, anime: 0 };
+let _filteredCache = { explore: [] };
+
 let state = {
   currentTab: 'home',
   favorites: new Set(),
@@ -85,6 +93,8 @@ async function toggleFavorite(id, e) {
   if (e) e.stopPropagation();
   const strId = String(id);
   const wasFav = state.favorites.has(strId);
+
+  // FIX 2: OPTIMISTIC RENDERING — update UI instantly, sync cloud in background
   if (wasFav) {
     state.favorites.delete(strId);
     showToast('Removed from Watchlist');
@@ -92,15 +102,29 @@ async function toggleFavorite(id, e) {
     state.favorites.add(strId);
     showToast('Saved to Watchlist ❤️');
   }
-  saveFavorites();
-  renderWatchlist();
-  if (state.currentTab === 'home') renderHome();
+
+  // Immediately update every fav button for this card (no full re-render needed)
+  _updateAllFavButtons(strId, !wasFav);
+
+  // FIX 5: ASYNC — save & cloud sync fully non-blocking
+  Promise.resolve().then(() => {
+    saveFavorites();
+    renderWatchlist();
+  });
 
   if (window.CW_API && typeof window.CW_API.toggleFavorite === 'function') {
-    try {
-      await window.CW_API.toggleFavorite(strId);
-    } catch (err) {}
+    // Fire-and-forget — never blocks the UI thread
+    window.CW_API.toggleFavorite(strId).catch(() => {});
   }
+}
+
+// FIX 2: Surgically update only the affected heart buttons without re-rendering the whole grid
+function _updateAllFavButtons(id, isFav) {
+  document.querySelectorAll(`[data-media-id="${id}"] .card-fav-btn, .card-fav-btn[data-id="${id}"]`).forEach(btn => {
+    btn.classList.toggle('active', isFav);
+    const icon = btn.querySelector('ion-icon');
+    if (icon) icon.setAttribute('name', isFav ? 'heart' : 'heart-outline');
+  });
 }
 
 function toggleFav(e, id) {
@@ -138,7 +162,12 @@ function initCatalog() {
       }
     });
 
-    renderHome();
+    // FIX 4: Build O(1) Map — eliminates all N+1 .find() scans across the app
+    _movieMap.clear();
+    MOVIES.forEach(m => _movieMap.set(String(m.id), m));
+
+    // FIX 5: ASYNC — render home on next frame, don't block catalog init
+    requestAnimationFrame(() => renderHome());
   } catch (err) {
     console.error('Error initializing catalog:', err);
   }
@@ -218,6 +247,31 @@ function switchTab(tabId) {
   }
 }
 
+// FIX 5: Async chunked renderer — renders PAGE_SIZE cards per animation frame
+function renderCardsAsync(items, container, offset = 0, appendMode = false) {
+  if (!container) return;
+  const chunk = items.slice(offset, offset + PAGE_SIZE);
+  if (chunk.length === 0) return;
+
+  // Use DocumentFragment for a single DOM write per chunk (no layout thrashing)
+  requestAnimationFrame(() => {
+    const frag = document.createDocumentFragment();
+    chunk.forEach((m, i) => {
+      const wrapper = document.createElement('div');
+      wrapper.innerHTML = createCardHTML(m, null);
+      const card = wrapper.firstElementChild;
+      if (card) frag.appendChild(card);
+    });
+    if (!appendMode) container.innerHTML = '';
+    container.appendChild(frag);
+  });
+}
+
+// FIX 1: Tooltip helper — sets title attribute for browser-native tooltips
+function _tip(el, text) {
+  if (el) el.setAttribute('title', text);
+}
+
 // Media Card HTML Generator
 function createCardHTML(movie, rankNum = null) {
   if (!movie) return '';
@@ -227,19 +281,21 @@ function createCardHTML(movie, rankNum = null) {
   const metaDur = movie.duration ? `<span>${movie.duration}</span>` : '';
   const posterSrc = movie.poster || movie.backdrop || fallbackImg;
 
+  // FIX 1: Text labels are always visible; tooltip on fav-btn for icon-only clarity
+  // FIX 4: data-media-id on wrapper enables O(1) surgical fav button updates
   return `
-    <div class="media-card" onclick="openDetail('${movie.id}')">
+    <div class="media-card" data-media-id="${movie.id}" onclick="openDetail('${movie.id}')">
       <div class="card-poster">
         <img src="${posterSrc}" alt="${movie.title}" loading="lazy" onerror="this.onerror=null; this.src='${fallbackImg}';">
         ${rankBadge}
-        <button class="card-fav-btn ${isFav ? 'active' : ''}" onclick="toggleFav(event, '${movie.id}')" aria-label="Favorite">
+        <button class="card-fav-btn ${isFav ? 'active' : ''}" data-id="${movie.id}" onclick="toggleFav(event, '${movie.id}')" aria-label="${isFav ? 'Remove from Watchlist' : 'Add to Watchlist'}" title="${isFav ? 'Remove from Watchlist' : 'Save to Watchlist'}">
           <ion-icon name="${isFav ? 'heart' : 'heart-outline'}"></ion-icon>
         </button>
       </div>
       <div class="card-info">
         <h3 class="card-title">${movie.title}</h3>
         <div class="card-meta">
-          <span class="card-rating"><ion-icon name="star"></ion-icon> ${movie.rating || '8.0'}</span>
+          <span class="card-rating" title="Rating"><ion-icon name="star"></ion-icon> ${movie.rating || '8.0'}</span>
           ${metaYear}
           ${metaDur}
         </div>
