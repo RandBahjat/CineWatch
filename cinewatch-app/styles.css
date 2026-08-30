@@ -608,7 +608,6 @@ html, body {
   gap: 3rem;
   position: relative;
   z-index: 10;
-  margin-top: -2.5rem;
 }
 
 .shelf {
