@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260830_767">
+    <link rel="stylesheet" href="movie.css?v=20260830_769">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -26,9 +26,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_4540" defer></script>
-    <script src="series-data.js?v=20260818_4540" defer></script>
-    <script src="anime-data.js?v=20260818_4540" defer></script>
+    <script src="movies-data.js?v=20260818_4542" defer></script>
+    <script src="series-data.js?v=20260818_4542" defer></script>
+    <script src="anime-data.js?v=20260818_4542" defer></script>
     <script src="movie.js?v=v42" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -153,12 +153,17 @@
                 <button class="nav-action-btn" id="navSearchBtn" onclick="if(window.openSearchModal) window.openSearchModal(); else { document.getElementById('searchModal').classList.remove('hidden'); document.body.style.overflow='hidden'; }" title="Search">
                     <ion-icon name="search-outline"></ion-icon>
                 </button>
-
                 <!-- AI Assistant Button -->
                 <button class="nav-ai-btn notranslate" translate="no" id="navAiBtn" title="Ask CineWatch AI">
                     <ion-icon name="chatbubbles-outline" style="font-size: 1.05rem;"></ion-icon>
                     <span class="ai-btn-text" id="navAiBtnText">Ask AI</span>
                 </button>
+
+                <!-- Download App Button -->
+                <a href="download.html" class="nav-ai-btn" style="background: rgba(229, 9, 20, 0.15); color: var(--primary); border: 1px solid rgba(229, 9, 20, 0.3); text-decoration: none;" title="Download CineWatch App">
+                    <ion-icon name="cloud-download-outline" style="font-size: 1.05rem;"></ion-icon>
+                    <span class="ai-btn-text">Download App</span>
+                </a>
 
                 <!-- Report Issue Button -->
                 <button class="nav-report-btn" id="headerReportBtn" title="Report an Issue / Send Feedback">
