@@ -157,7 +157,7 @@ function createCardHTML(m, rankNum = null) {
     <div class="card" onclick="openDetail('${m.id}')">
       <div class="card-poster">
         <img src="${m.poster || m.backdrop}" alt="${m.title}" loading="lazy" />
-        ${rankNum ? `<div class="top10-pill-tag"><ion-icon name="flame"></ion-icon> #${rankNum} TOP 10</div>` : ''}
+        ${rankNum ? `<div class="top10-pill-tag"><ion-icon name="flame"></ion-icon> TOP ${11 - rankNum}</div>` : ''}
         <div class="card-badge"><ion-icon name="star"></ion-icon> ${m.rating || 'N/A'}</div>
         <div class="card-overlay">
           <div class="card-play-icon"><ion-icon name="play"></ion-icon></div>
