@@ -167,7 +167,7 @@ window._MOVIES_DATA = [
       "Fantasy"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-    backdrop: "odysseus-matt-damon-3840x2160-26432.jpg",
+    backdrop: "https://www.themoviedb.org/t/p/original/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
     videoUrl: "1368337",
     overview: "After years of brutal war, Odysseus sets sail for home — but the gods have other plans. Crossing a treacherous Mediterranean, he and his crew face the Cyclops Polyphemus, the deadly call of the Sirens, and the sorceress Circe, each trial pushing him closer to the edge of what he can endure to see Ithaca again.",
     overviewKurdish: "",
