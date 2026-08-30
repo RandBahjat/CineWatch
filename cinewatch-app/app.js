@@ -154,11 +154,10 @@ function showToast(msg) {
 function createCardHTML(m, rankNum = null) {
   const isFav = state.favorites.has(m.id);
   return `
-    <div class="card ${rankNum ? 'top10-card' : ''}" onclick="openDetail('${m.id}')">
-      ${rankNum ? `<div class="top10-rank-badge">${rankNum}</div>` : ''}
+    <div class="card" onclick="openDetail('${m.id}')">
       <div class="card-poster">
         <img src="${m.poster || m.backdrop}" alt="${m.title}" loading="lazy" />
-        ${rankNum ? `<div class="top10-pill-tag">TOP 10</div>` : ''}
+        ${rankNum ? `<div class="top10-pill-tag"><ion-icon name="flame"></ion-icon> #${rankNum} TOP 10</div>` : ''}
         <div class="card-badge"><ion-icon name="star"></ion-icon> ${m.rating || 'N/A'}</div>
         <div class="card-overlay">
           <div class="card-play-icon"><ion-icon name="play"></ion-icon></div>
