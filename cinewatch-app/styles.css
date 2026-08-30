@@ -470,9 +470,9 @@ html, body {
 .hero-container {
   position: relative;
   width: 100%;
-  height: 78vh;
-  min-height: 580px;
-  max-height: 780px;
+  height: 86vh;
+  min-height: 640px;
+  max-height: 880px;
   overflow: hidden;
   background: #000;
   cursor: grab;
@@ -505,7 +505,7 @@ html, body {
   padding: 5rem 3.5rem 6.5rem;
 }
 
-/* Cinematic Multi-Layer Gradient Vignette */
+/* Subtle, Bright Cinematic Bottom Gradient (No Heavy Dark Shadow) */
 .hero-slide::before {
   content: '';
   position: absolute;
@@ -514,16 +514,14 @@ html, body {
     linear-gradient(
       0deg,
       var(--bg-app) 0%,
-      rgba(6, 7, 10, 0.92) 15%,
-      rgba(6, 7, 10, 0.45) 50%,
-      rgba(6, 7, 10, 0.75) 100%
+      rgba(6, 7, 10, 0.6) 20%,
+      transparent 60%
     ),
     linear-gradient(
       90deg,
-      rgba(6, 7, 10, 0.98) 0%,
-      rgba(6, 7, 10, 0.7) 40%,
-      rgba(6, 7, 10, 0.15) 75%,
-      transparent 100%
+      rgba(6, 7, 10, 0.75) 0%,
+      rgba(6, 7, 10, 0.35) 45%,
+      transparent 80%
     );
   z-index: 1;
   pointer-events: none;
