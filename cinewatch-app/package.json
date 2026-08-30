@@ -1,0 +1,31 @@
+{
+  "name": "cinewatch-app",
+  "version": "1.0.0",
+  "description": "CineWatch Movies & Series Standalone Mobile and Desktop Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win",
+    "dev": "electron ."
+  },
+  "keywords": [
+    "cinewatch",
+    "movies",
+    "series",
+    "anime",
+    "streaming"
+  ],
+  "author": "Rand Bahjat",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.cinewatch.app",
+    "productName": "CineWatch",
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
