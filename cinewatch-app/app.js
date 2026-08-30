@@ -157,7 +157,7 @@ function createCardHTML(m, rankNum = null) {
     <div class="card" onclick="openDetail('${m.id}')">
       <div class="card-poster">
         <img src="${m.poster || m.backdrop}" alt="${m.title}" loading="lazy" />
-        ${rankNum ? `<div class="top10-pill-tag"><ion-icon name="flame"></ion-icon> TOP ${11 - rankNum}</div>` : ''}
+        ${rankNum ? `<div class="top10-pill-tag"><ion-icon name="flame"></ion-icon> #${rankNum} TOP 10</div>` : ''}
         <div class="card-badge"><ion-icon name="star"></ion-icon> ${m.rating || 'N/A'}</div>
         <div class="card-overlay">
           <div class="card-play-icon"><ion-icon name="play"></ion-icon></div>
@@ -256,6 +256,52 @@ function renderHome() {
       </div>
     </div>
   `;
+
+  setupShelfDragScroll();
+}
+
+function setupShelfDragScroll() {
+  document.querySelectorAll('.shelf-track').forEach(track => {
+    let isDown = false;
+    let startX = 0;
+    let scrollLeft = 0;
+    let hasMoved = false;
+
+    track.addEventListener('mousedown', (e) => {
+      if (e.button !== 0) return;
+      isDown = true;
+      hasMoved = false;
+      track.classList.add('is-dragging');
+      startX = e.pageX - track.offsetLeft;
+      scrollLeft = track.scrollLeft;
+    });
+
+    window.addEventListener('mouseup', () => {
+      if (isDown) {
+        isDown = false;
+        track.classList.remove('is-dragging');
+      }
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - track.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      if (Math.abs(x - startX) > 6) {
+        hasMoved = true;
+      }
+      track.scrollLeft = scrollLeft - walk;
+    });
+
+    track.addEventListener('click', (e) => {
+      if (hasMoved) {
+        e.preventDefault();
+        e.stopPropagation();
+        hasMoved = false;
+      }
+    }, true);
+  });
 }
 
 // Real-time Smooth Drag / Swipe to change hero slides with cursor
