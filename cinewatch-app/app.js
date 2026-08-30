@@ -150,15 +150,15 @@ function showToast(msg) {
   setTimeout(() => el.classList.remove('show'), 2400);
 }
 
-// Render Card HTML with 3D Hover & Shimmer
+// Render Card HTML with Clean Hover
 function createCardHTML(m, rankNum = null) {
   const isFav = state.favorites.has(m.id);
   return `
-    <div class="card" onclick="openDetail('${m.id}')">
+    <div class="card ${rankNum ? 'top10-card' : ''}" onclick="openDetail('${m.id}')">
+      ${rankNum ? `<div class="top10-rank-badge">${rankNum}</div>` : ''}
       <div class="card-poster">
         <img src="${m.poster || m.backdrop}" alt="${m.title}" loading="lazy" />
         <div class="card-badge"><ion-icon name="star"></ion-icon> ${m.rating || 'N/A'}</div>
-        ${rankNum ? `<div class="card-top10-num">${rankNum}</div>` : ''}
         <div class="card-overlay">
           <div class="card-play-icon"><ion-icon name="play"></ion-icon></div>
         </div>
