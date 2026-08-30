@@ -34,6 +34,7 @@
     }
   },
   "dependencies": {
-    "png-to-ico": "^3.0.2"
+    "png-to-ico": "^3.0.2",
+    "sharp": "^0.35.4"
   }
 }
