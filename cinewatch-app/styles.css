@@ -1988,12 +1988,13 @@ html, body {
   border: none;
   border-radius: var(--radius-md);
   color: #fff;
+  font-family: var(--font-body);
   font-size: 1.05rem;
   font-weight: 700;
   cursor: pointer;
   width: 100%;
   max-width: 800px;
-  transition: all var(--transition-fast);
+  transition: background 0.4s ease, box-shadow 0.4s ease, transform var(--transition-fast);
   box-shadow: 0 4px 20px rgba(229, 9, 20, 0.35);
 }
 
