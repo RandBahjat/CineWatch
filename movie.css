@@ -693,6 +693,68 @@ body.rtl-layout .modal-search-clear {
   color: #ff334b;
   border-color: rgba(229, 9, 20, 0.4);
 }
+
+/* Responsive Search Modal Header (Mobile Optimization) */
+@media (max-width: 640px) {
+  .search-modal-header {
+    display: grid !important;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "input close"
+      "filter filter";
+    gap: 0.65rem 0.5rem;
+    padding: 0.85rem 0.95rem 0.75rem;
+  }
+
+  .search-modal-input-wrapper {
+    grid-area: input;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .search-modal-input-wrapper input {
+    font-size: 0.96rem;
+    padding: 0.45rem 2rem 0.45rem 2.35rem;
+  }
+
+  body.rtl-layout .search-modal-input-wrapper input {
+    padding: 0.45rem 2.35rem 0.45rem 2rem;
+  }
+
+  .search-header-right {
+    display: contents !important;
+  }
+
+  .search-modal-close {
+    grid-area: close;
+    width: 34px;
+    height: 34px;
+    align-self: center;
+  }
+
+  .search-type-switcher {
+    grid-area: filter;
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    padding: 3px;
+    border-radius: 10px;
+  }
+
+  .type-switch-btn {
+    flex: 1;
+    text-align: center;
+    padding: 0.42rem 0.3rem;
+    font-size: 0.82rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 /* --- 2. Main Content Body --- */
 .search-modal-body {
   position: relative;
