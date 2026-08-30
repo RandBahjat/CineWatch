@@ -665,7 +665,84 @@ function renderLiveTV() {
   `).join('');
 }
 
-// 7. Watchlist Tab
+// 7. AI Movie Assistant Tab
+function renderAITab() {
+  const input = document.getElementById('aiChatInput');
+  const sendBtn = document.getElementById('aiSendBtn');
+  if (!input || !sendBtn) return;
+
+  sendBtn.onclick = () => sendAIChatMessage();
+  input.onkeydown = (e) => {
+    if (e.key === 'Enter') sendAIChatMessage();
+  };
+}
+
+function askAIPrompt(promptText) {
+  const input = document.getElementById('aiChatInput');
+  if (input) {
+    input.value = promptText;
+    sendAIChatMessage();
+  }
+}
+
+function sendAIChatMessage() {
+  const input = document.getElementById('aiChatInput');
+  const msgList = document.getElementById('aiMessagesList');
+  const resultsGrid = document.getElementById('aiResultsGrid');
+  if (!input || !msgList) return;
+
+  const text = input.value.trim();
+  if (!text) return;
+  input.value = '';
+
+  // Append user message
+  const userMsg = document.createElement('div');
+  userMsg.className = 'ai-msg ai-msg-user';
+  userMsg.innerHTML = `<div class="ai-msg-bubble">${text}</div>`;
+  msgList.appendChild(userMsg);
+  msgList.scrollTop = msgList.scrollHeight;
+
+  // Bot thinking...
+  const botMsg = document.createElement('div');
+  botMsg.className = 'ai-msg ai-msg-bot';
+  botMsg.innerHTML = `
+    <div class="ai-bot-avatar"><ion-icon name="sparkles"></ion-icon></div>
+    <div class="ai-msg-bubble">Searching catalog and analyzing recommendations...</div>
+  `;
+  msgList.appendChild(botMsg);
+  msgList.scrollTop = msgList.scrollHeight;
+
+  setTimeout(() => {
+    // Semantic & Keyword matching against catalog
+    const qTokens = text.toLowerCase().split(/\s+/).filter(t => t.length > 2);
+    const scored = MOVIES.map(m => {
+      let score = 0;
+      const hay = `${m.title} ${m.description || ''} ${Array.isArray(m.genres) ? m.genres.join(' ') : (m.genres || '')} ${m.director || ''} ${Array.isArray(m.cast) ? m.cast.join(' ') : (m.cast || '')}`.toLowerCase();
+      qTokens.forEach(t => {
+        if (hay.includes(t)) score += 2;
+      });
+      if (m.rating && Number(m.rating) >= 7.5) score += 1;
+      return { movie: m, score };
+    }).filter(item => item.score > 0).sort((a, b) => b.score - a.score).slice(0, 12);
+
+    const matches = scored.map(s => s.movie);
+    if (matches.length > 0) {
+      botMsg.querySelector('.ai-msg-bubble').innerHTML = `Here are <strong>${matches.length}</strong> top recommendations for <em>"${text}"</em>:`;
+      if (resultsGrid) {
+        resultsGrid.innerHTML = matches.map(m => createCardHTML(m)).join('');
+      }
+    } else {
+      botMsg.querySelector('.ai-msg-bubble').innerHTML = `I picked these popular top-rated titles for you:`;
+      const fallbackMatches = MOVIES.slice(0, 8);
+      if (resultsGrid) {
+        resultsGrid.innerHTML = fallbackMatches.map(m => createCardHTML(m)).join('');
+      }
+    }
+    msgList.scrollTop = msgList.scrollHeight;
+  }, 350);
+}
+
+// 8. Watchlist Tab
 function renderWatchlist() {
   const grid = document.getElementById('watchlistGrid');
   const empty = document.getElementById('watchlistEmpty');
