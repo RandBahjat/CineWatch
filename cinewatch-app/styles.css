@@ -703,10 +703,14 @@ html, body {
   align-items: center;
   justify-content: flex-end;
   gap: 0.5rem;
-  padding: 0.9rem 3.5rem 0.2rem;
+  padding: 0 3.5rem;
   background: transparent;
-  position: relative;
-  z-index: 10;
+  position: absolute;
+  bottom: 2rem;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  pointer-events: auto;
 }
 
 .hero-dot {
