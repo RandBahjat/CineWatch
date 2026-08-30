@@ -116,9 +116,14 @@
                     <span>Search movies, series, anime…</span>
                     <kbd>/</kbd>
                 </div>
-                <button class="topbar-btn" id="topSearchBtn" aria-label="Search" onclick="switchTab('explore')">
-                    <ion-icon name="search-outline"></ion-icon>
-                </button>
+                <div class="topbar-actions">
+                    <button class="btn-top-download" onclick="switchTab('download')" title="Download CineWatch App">
+                        <ion-icon name="cloud-download-outline"></ion-icon> Download
+                    </button>
+                    <button class="topbar-btn" id="topSearchBtn" aria-label="Search" onclick="switchTab('explore')">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                </div>
             </header>
 
             <!-- Scrollable Viewport -->
