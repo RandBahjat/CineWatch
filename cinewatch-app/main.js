@@ -12,13 +12,17 @@ function createWindow() {
     minHeight: 640,
     backgroundColor: '#06070a',
     title: 'CineWatch App',
+    icon: path.join(__dirname, 'icon.ico'),
     autoHideMenuBar: true,
+    frame: false, // Makes the app borderless
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
       webSecurity: false
     }
   });
+
+  // Handle fullscreen toggle via IPC or F11 (optional, HTML5 fullscreen works automatically)
 
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
 
