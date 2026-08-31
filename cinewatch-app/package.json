@@ -32,8 +32,8 @@
     "nsis": {
       "oneClick": true,
       "perMachine": false,
-      "installerIcon": "icon.ico",
-      "uninstallerIcon": "icon.ico"
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico"
     },
     "win": {
       "target": "portable",
