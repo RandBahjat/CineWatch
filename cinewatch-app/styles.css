@@ -2739,6 +2739,11 @@ html.light-mode .toast {
     margin-left: 0 !important;
     padding-top: env(safe-area-inset-top);
   }
+
+  .main-wrapper {
+    overflow: visible !important;
+    width: 100% !important;
+  }
   
   .mobile-bottom-nav {
     display: flex;
