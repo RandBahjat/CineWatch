@@ -1098,6 +1098,17 @@ function startApp() {
   // Call on load
   updateProfileUI();
 
+  // Log Out Action
+  document.getElementById('logoutBtn')?.addEventListener('click', () => {
+    localStorage.removeItem('cw_currentUser');
+    showToast('Logged out successfully');
+    updateProfileUI();
+    
+    // Redirect to home/sign in if needed, or open auth overlay
+    document.getElementById('settingsOverlay')?.classList.add('hidden');
+    document.getElementById('authOverlay')?.classList.remove('hidden');
+  });
+
   // Form submissions
   document.getElementById('formSignIn')?.addEventListener('submit', (e) => {
     e.preventDefault();
