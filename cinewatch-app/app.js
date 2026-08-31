@@ -1095,6 +1095,21 @@ function startApp() {
   const savedBanner = localStorage.getItem('cw_banner');
   const savedTheme  = localStorage.getItem('cw_theme') || 'dark';
 
+  function updateMobileNavAvatar(dataUrl) {
+    const mobileIcon = document.getElementById('mobileProfileIcon');
+    const mobileImg = document.getElementById('mobileProfileImg');
+    if (mobileIcon && mobileImg) {
+      if (dataUrl) {
+        mobileImg.src = dataUrl;
+        mobileImg.style.display = 'block';
+        mobileIcon.style.display = 'none';
+      } else {
+        mobileImg.style.display = 'none';
+        mobileIcon.style.display = 'block';
+      }
+    }
+  }
+
   if (savedAvatar) {
     const avatar = document.getElementById('profileAvatar');
     if (avatar) {
@@ -1104,6 +1119,7 @@ function startApp() {
       const icon = avatar.querySelector('ion-icon');
       if (icon) icon.style.display = 'none';
     }
+    updateMobileNavAvatar(savedAvatar);
   }
   if (savedBanner) {
     const banner = document.getElementById('profileBanner');
@@ -1165,6 +1181,7 @@ function startApp() {
           const icon = avatar.querySelector('ion-icon');
           if (icon) icon.style.display = 'none';
         }
+        updateMobileNavAvatar(dataUrl);
         showToast('Profile picture saved!');
       };
       reader.readAsDataURL(file);
