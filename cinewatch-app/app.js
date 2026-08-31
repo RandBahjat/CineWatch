@@ -1214,6 +1214,20 @@ function startApp() {
       showToast('You are on the latest version — CineWatch v1.0.0');
     });
   }
+
+  // Watch Together features
+  document.querySelector('.create-room-btn')?.addEventListener('click', () => {
+    showToast('Creating a new watch room...');
+  });
+  document.querySelector('.join-room-btn')?.addEventListener('click', () => {
+    const input = document.querySelector('.party-join-box input');
+    if (input && input.value.trim() !== '') {
+      showToast('Joining room ' + input.value.toUpperCase() + '...');
+      input.value = '';
+    } else {
+      showToast('Please enter a room code');
+    }
+  });
 }
 
 if (document.readyState === 'loading') {
