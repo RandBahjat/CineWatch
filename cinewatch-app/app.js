@@ -1216,9 +1216,52 @@ function startApp() {
   }
 
   // Watch Together features
+  const partyMainScreen = document.getElementById('partyMainScreen');
+  const partyCreateScreen = document.getElementById('partyCreateScreen');
+  const roomCodeGroup = document.getElementById('roomCodeGroup');
+  const roomCodeInput = document.getElementById('roomCodeInput');
+
+  function generateRoomCode() {
+    return Math.random().toString(36).substring(2, 10).toUpperCase();
+  }
+
   document.querySelector('.create-room-btn')?.addEventListener('click', () => {
-    showToast('Creating a new watch room...');
+    partyMainScreen?.classList.add('hidden');
+    partyCreateScreen?.classList.remove('hidden');
   });
+
+  document.getElementById('cancelCreateRoomBtn')?.addEventListener('click', () => {
+    partyCreateScreen?.classList.add('hidden');
+    partyMainScreen?.classList.remove('hidden');
+  });
+
+  // Privacy Pills
+  document.querySelectorAll('#roomPrivacyPills .theme-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('#roomPrivacyPills .theme-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      
+      if (pill.dataset.privacy === 'private') {
+        roomCodeGroup?.classList.remove('hidden');
+        if (roomCodeInput) roomCodeInput.value = generateRoomCode();
+      } else {
+        roomCodeGroup?.classList.add('hidden');
+      }
+    });
+  });
+
+  // Create Room Confirm Action
+  document.querySelector('.create-room-confirm-btn')?.addEventListener('click', () => {
+    const roomName = document.getElementById('roomNameInput')?.value.trim() || 'My Room';
+    const isPrivate = document.querySelector('#roomPrivacyPills .theme-pill.active')?.dataset.privacy === 'private';
+    
+    showToast(`Created ${isPrivate ? 'private' : 'public'} room: ${roomName}`);
+    
+    // Reset and go back
+    partyCreateScreen?.classList.add('hidden');
+    partyMainScreen?.classList.remove('hidden');
+  });
+
   document.querySelector('.join-room-btn')?.addEventListener('click', () => {
     const input = document.querySelector('.party-join-box input');
     if (input && input.value.trim() !== '') {
