@@ -1,4 +1,4 @@
-const { app, BrowserWindow, shell, dialog } = require('electron');
+const { app, BrowserWindow, shell, dialog, ipcMain } = require('electron');
 const path = require('path');
 const { autoUpdater } = require('electron-updater');
 
@@ -15,16 +15,26 @@ function createWindow() {
     icon: path.join(__dirname, 'icon.ico'),
     autoHideMenuBar: true,
     titleBarStyle: 'hidden',
-    titleBarOverlay: {
-      color: '#06070a',
-      symbolColor: '#ffffff',
-      height: 32
-    },
     webPreferences: {
+      preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: false,
       contextIsolation: true,
       webSecurity: false
     }
+  });
+
+  // Window control IPC listeners
+  ipcMain.on('window-minimize', () => {
+    if (mainWindow) mainWindow.minimize();
+  });
+  ipcMain.on('window-maximize', () => {
+    if (mainWindow) {
+      if (mainWindow.isMaximized()) mainWindow.unmaximize();
+      else mainWindow.maximize();
+    }
+  });
+  ipcMain.on('window-close', () => {
+    if (mainWindow) mainWindow.close();
   });
 
   // Handle fullscreen toggle via IPC or F11 (optional, HTML5 fullscreen works automatically)
