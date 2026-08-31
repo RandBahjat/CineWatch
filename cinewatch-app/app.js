@@ -1218,11 +1218,23 @@ function startApp() {
   // Watch Together features
   const partyMainScreen = document.getElementById('partyMainScreen');
   const partyCreateScreen = document.getElementById('partyCreateScreen');
+  const partyActiveScreen = document.getElementById('partyActiveScreen');
+  
   const roomCodeGroup = document.getElementById('roomCodeGroup');
   const roomCodeInput = document.getElementById('roomCodeInput');
+  const activeRoomName = document.getElementById('activeRoomName');
+  const activeRoomCode = document.getElementById('activeRoomCode');
+  const activeRoomCodeRow = document.getElementById('activeRoomCodeRow');
 
   function generateRoomCode() {
     return Math.random().toString(36).substring(2, 10).toUpperCase();
+  }
+
+  // Formatting for room code input (uppercase, max 8 chars)
+  if (roomCodeInput) {
+    roomCodeInput.addEventListener('input', (e) => {
+      e.target.value = e.target.value.toUpperCase().replace(/[^A-Z0-9]/g, '').substring(0, 8);
+    });
   }
 
   document.querySelector('.create-room-btn')?.addEventListener('click', () => {
@@ -1243,7 +1255,7 @@ function startApp() {
       
       if (pill.dataset.privacy === 'private') {
         roomCodeGroup?.classList.remove('hidden');
-        if (roomCodeInput) roomCodeInput.value = generateRoomCode();
+        if (roomCodeInput && !roomCodeInput.value) roomCodeInput.value = generateRoomCode();
       } else {
         roomCodeGroup?.classList.add('hidden');
       }
@@ -1255,18 +1267,56 @@ function startApp() {
     const roomName = document.getElementById('roomNameInput')?.value.trim() || 'My Room';
     const isPrivate = document.querySelector('#roomPrivacyPills .theme-pill.active')?.dataset.privacy === 'private';
     
+    let finalCode = '';
+    if (isPrivate) {
+      finalCode = roomCodeInput?.value.trim() || generateRoomCode();
+      if (finalCode.length < 4) {
+        showToast('Room code must be at least 4 characters');
+        return;
+      }
+    }
+    
+    // Set active room details
+    if (activeRoomName) activeRoomName.textContent = roomName;
+    if (activeRoomCodeRow) {
+      if (isPrivate) {
+        activeRoomCodeRow.style.display = 'flex';
+        if (activeRoomCode) activeRoomCode.textContent = finalCode;
+      } else {
+        activeRoomCodeRow.style.display = 'none';
+      }
+    }
+    
     showToast(`Created ${isPrivate ? 'private' : 'public'} room: ${roomName}`);
     
-    // Reset and go back
+    // Transition to Active Room
     partyCreateScreen?.classList.add('hidden');
-    partyMainScreen?.classList.remove('hidden');
+    partyActiveScreen?.classList.remove('hidden');
   });
 
+  // Leave Room Action
+  document.getElementById('leaveRoomBtn')?.addEventListener('click', () => {
+    partyActiveScreen?.classList.add('hidden');
+    partyMainScreen?.classList.remove('hidden');
+    showToast('Left the room');
+  });
+
+  // Join Room Action (from main screen)
   document.querySelector('.join-room-btn')?.addEventListener('click', () => {
     const input = document.querySelector('.party-join-box input');
     if (input && input.value.trim() !== '') {
-      showToast('Joining room ' + input.value.toUpperCase() + '...');
+      const code = input.value.toUpperCase();
+      showToast('Joined room ' + code);
       input.value = '';
+      
+      // Set active room details
+      if (activeRoomName) activeRoomName.textContent = 'Joined Room';
+      if (activeRoomCodeRow) activeRoomCodeRow.style.display = 'flex';
+      if (activeRoomCode) activeRoomCode.textContent = code;
+      
+      // Transition to Active Room
+      partyMainScreen?.classList.add('hidden');
+      partyActiveScreen?.classList.remove('hidden');
     } else {
       showToast('Please enter a room code');
     }
