@@ -263,7 +263,6 @@ function switchTab(tabId) {
   else if (tabId === 'movies') renderMoviesTab();
   else if (tabId === 'series') renderSeriesTab();
   else if (tabId === 'anime') renderAnimeTab();
-  else if (tabId === 'live') renderLiveTV();
   else if (tabId === 'ai') renderAITab();
   else if (tabId === 'watchlist') renderWatchlist();
 
