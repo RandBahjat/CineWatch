@@ -1077,17 +1077,72 @@ function startApp() {
   document.getElementById('switchToSignUp')?.addEventListener('click', (e) => { e.preventDefault(); switchAuthTab('signup'); });
   document.getElementById('switchToSignIn')?.addEventListener('click', (e) => { e.preventDefault(); switchAuthTab('signin'); });
 
+  // Local Storage Auth System
+  function getDb() {
+    return JSON.parse(localStorage.getItem('cw_users')) || [];
+  }
+  function saveDb(users) {
+    localStorage.setItem('cw_users', JSON.stringify(users));
+  }
+  
+  function updateProfileUI() {
+    const activeUser = JSON.parse(localStorage.getItem('cw_currentUser'));
+    const profileName = document.querySelector('.profile-name h2');
+    if (activeUser && profileName) {
+      profileName.textContent = activeUser.name;
+    } else if (profileName) {
+      profileName.textContent = 'Guest';
+    }
+  }
+  
+  // Call on load
+  updateProfileUI();
+
   // Form submissions
   document.getElementById('formSignIn')?.addEventListener('submit', (e) => {
     e.preventDefault();
-    showToast('Signed in successfully! Welcome back.');
-    authOverlay?.classList.add('hidden');
+    const email = document.getElementById('signinEmail')?.value.trim();
+    const pass = document.getElementById('signinPass')?.value;
+    
+    if (!email || !pass) return showToast('Please enter both email and password');
+    
+    const users = getDb();
+    const user = users.find(u => u.email === email && u.pass === pass);
+    
+    if (user) {
+      localStorage.setItem('cw_currentUser', JSON.stringify(user));
+      showToast(`Welcome back, ${user.name}!`);
+      updateProfileUI();
+      authOverlay?.classList.add('hidden');
+      e.target.reset();
+    } else {
+      showToast('Invalid email or password');
+    }
   });
 
   document.getElementById('formSignUp')?.addEventListener('submit', (e) => {
     e.preventDefault();
-    showToast('Account created! Welcome to CineWatch.');
+    const name = document.getElementById('signupName')?.value.trim();
+    const email = document.getElementById('signupEmail')?.value.trim();
+    const pass = document.getElementById('signupPass')?.value;
+    
+    if (!name || !email || !pass) return showToast('Please fill all fields');
+    if (pass.length < 6) return showToast('Password must be at least 6 characters');
+    
+    const users = getDb();
+    if (users.find(u => u.email === email)) {
+      return showToast('Account with this email already exists');
+    }
+    
+    const newUser = { name, email, pass };
+    users.push(newUser);
+    saveDb(users);
+    
+    localStorage.setItem('cw_currentUser', JSON.stringify(newUser));
+    showToast(`Account created! Welcome, ${name}.`);
+    updateProfileUI();
     authOverlay?.classList.add('hidden');
+    e.target.reset();
   });
 
   // ── Restore saved profile data on load ───────────────────────────────
