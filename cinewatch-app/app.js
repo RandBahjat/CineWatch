@@ -184,15 +184,8 @@ function setupNavigation() {
     };
   });
 
-  function bindEventListeners() {
-  // Custom Window Controls
-  if (window.electronAPI) {
-    document.getElementById('winMinBtn')?.addEventListener('click', () => window.electronAPI.windowMinimize());
-    document.getElementById('winMaxBtn')?.addEventListener('click', () => window.electronAPI.windowMaximize());
-    document.getElementById('winCloseBtn')?.addEventListener('click', () => window.electronAPI.windowClose());
-  }
-
-  // Sidebar navigation
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const sidebar = document.getElementById('sidebar');
   if (mobileMenuBtn && sidebar) {
     mobileMenuBtn.onclick = (e) => {
