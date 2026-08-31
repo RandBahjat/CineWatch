@@ -1039,7 +1039,13 @@ function startApp() {
   
   if (mobileProfileBtn) {
     mobileProfileBtn.addEventListener('click', () => {
-      settingsOverlay?.classList.remove('hidden');
+      // Show auth screen if not logged in, otherwise show settings
+      const activeUser = localStorage.getItem('cw_currentUser');
+      if (activeUser) {
+        settingsOverlay?.classList.remove('hidden');
+      } else {
+        document.getElementById('authOverlay')?.classList.remove('hidden');
+      }
       
       // Update active state in bottom nav manually since it doesn't use switchTab
       document.querySelectorAll('.mobile-bottom-nav .nav-item').forEach(btn => {
