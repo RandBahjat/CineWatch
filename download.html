@@ -21,7 +21,6 @@
             font-family: 'Inter', sans-serif;
         }
 
-        /* ── Ambient Glow ── */
         .ambient-glow {
             position: fixed;
             top: 25%;
@@ -45,7 +44,7 @@
             position: fixed;
             top: 0; left: 0; right: 0;
             height: 68px;
-            background: rgba(3, 4, 6, 0.85);
+            background: rgba(3,4,6,0.85);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border-bottom: 1px solid rgba(255,255,255,0.05);
@@ -66,7 +65,7 @@
         }
         .brand-logo .accent { color: #e50914; }
 
-        /* ── Main Layout ── */
+        /* ── Page ── */
         .page {
             display: flex;
             flex-direction: column;
@@ -75,7 +74,6 @@
             padding: 130px 2rem 8rem;
             max-width: 1100px;
             margin: 0 auto;
-            gap: 0;
         }
 
         /* ── Hero ── */
@@ -106,7 +104,7 @@
             opacity: 0;
             animation: fadeUp 0.7s ease-out 0.2s forwards;
         }
-        .text-dim { color: #a1a1aa; }
+        .text-dim { color: #71717a; }
         .hero-desc {
             font-size: 1.15rem;
             color: #94a3b8;
@@ -117,7 +115,7 @@
             animation: fadeUp 0.7s ease-out 0.3s forwards;
         }
 
-        /* ── Platform divider ── */
+        /* ── Platform label ── */
         .platform-row {
             width: 100%;
             display: flex;
@@ -145,11 +143,11 @@
             background: rgba(255,255,255,0.06);
         }
 
-        /* ── Download Buttons ── */
+        /* ── Buttons ── */
         .dl-btn-row {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 1.2rem;
             margin-bottom: 2.5rem;
             flex-wrap: wrap;
             justify-content: center;
@@ -166,12 +164,11 @@
             font-size: 1rem;
             font-weight: 600;
             text-decoration: none;
-            cursor: pointer;
             border: none;
-            transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.2,0.8,0.2,1);
         }
         .btn-dl ion-icon { font-size: 1.25rem; }
-
         .btn-win {
             background: #fff;
             color: #000;
@@ -181,16 +178,12 @@
             transform: translateY(-3px) scale(1.03);
             box-shadow: 0 14px 40px rgba(255,255,255,0.22);
         }
+        .sys-note { font-size: 0.8rem; color: #3f3f46; }
 
-        .sys-note {
-            font-size: 0.8rem;
-            color: #3f3f46;
-        }
-
-        /* ── Desktop Window Showcase ── */
+        /* ── Desktop Window ── */
         .showcase-wrap {
             width: 100%;
-            margin-bottom: 6rem;
+            margin-bottom: 7rem;
             opacity: 0;
             animation: fadeUp 0.9s ease-out 0.55s forwards;
         }
@@ -217,11 +210,11 @@
         .win-content {
             width: 100%;
             height: 520px;
-            position: relative;
             overflow: hidden;
             background: #06070a;
+            position: relative;
         }
-        /* Embed real site via iframe */
+        /* Scale the app iframe (cinewatch-app) to fit the window */
         .win-content iframe {
             width: 150%;
             height: 150%;
@@ -230,29 +223,29 @@
             transform-origin: top left;
             pointer-events: none;
         }
-        /* Gradient fade on the bottom so it looks intentional */
         .win-content::after {
             content: '';
             position: absolute;
             bottom: 0; left: 0; right: 0;
             height: 80px;
-            background: linear-gradient(to top, rgba(12,14,22,1), transparent);
+            background: linear-gradient(to top, rgba(8,10,16,1), transparent);
             pointer-events: none;
         }
 
-        /* ── Android Section ── */
+        /* ══════════════════════════════════════
+           ANDROID SECTION
+        ══════════════════════════════════════ */
         .android-section {
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 0;
         }
 
         .android-header {
-            margin-bottom: 1rem;
             opacity: 0;
             animation: fadeUp 0.7s ease-out 0.7s forwards;
+            margin-bottom: 0.8rem;
         }
         .android-title {
             font-family: 'Outfit', sans-serif;
@@ -270,11 +263,10 @@
             line-height: 1.6;
             margin: 0 auto 2rem;
         }
-
         .android-dl-row {
             opacity: 0;
             animation: fadeUp 0.7s ease-out 0.8s forwards;
-            margin-bottom: 3.5rem;
+            margin-bottom: 4rem;
         }
         .btn-android {
             background: linear-gradient(135deg, #1c2433, #111827);
@@ -290,64 +282,121 @@
         .android-sys-note {
             font-size: 0.8rem;
             color: #3f3f46;
-            margin-top: 0.7rem;
+            margin-top: 0.75rem;
         }
 
-        /* ── Phone Mockup ── */
-        .phones-showcase {
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            gap: 2rem;
+        /* ── Galaxy S25 Ultra Mockup ── */
+        .galaxy-wrap {
             opacity: 0;
-            animation: fadeUp 1s ease-out 0.9s forwards;
+            animation: fadeUp 1s ease-out 0.95s forwards;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-        .phone {
+        /* Outer titanium frame */
+        .galaxy-frame {
             position: relative;
-            width: 240px;
-            background: #0c0e15;
-            border-radius: 44px;
-            border: 2px solid rgba(255,255,255,0.1);
-            padding: 14px 10px 20px;
+            width: 290px;
+            background: linear-gradient(160deg, #2a2a2a 0%, #1a1a1a 40%, #222 70%, #191919 100%);
+            border-radius: 52px;
+            /* Titanium edge highlight effect */
+            border: 1.5px solid #404040;
             box-shadow:
-                0 40px 100px rgba(0,0,0,0.95),
-                inset 0 1px 0 rgba(255,255,255,0.08),
-                0 0 0 1px rgba(255,255,255,0.03);
-        }
-        .phone.secondary {
-            width: 210px;
-            opacity: 0.5;
-            filter: blur(1px);
-            transform: translateY(30px);
-        }
-
-        .phone-notch {
-            width: 70px;
-            height: 16px;
-            background: #0c0e15;
-            border-radius: 0 0 12px 12px;
-            border: 2px solid rgba(255,255,255,0.07);
-            border-top: none;
-            margin: 0 auto 8px;
+                /* Outer drop shadow */
+                0 50px 120px rgba(0,0,0,0.95),
+                /* Titanium edge shine (right) */
+                4px 0 8px rgba(255,255,255,0.06),
+                /* Titanium edge shine (left) */
+                -4px 0 8px rgba(255,255,255,0.04),
+                /* Inner shadow (depth) */
+                inset 0 0 0 1.5px rgba(255,255,255,0.06),
+                inset 0 2px 4px rgba(255,255,255,0.08),
+                /* Glow from screen */
+                0 0 60px rgba(229,9,20,0.08);
+            padding: 14px 8px;
         }
 
-        .phone-screen {
-            width: 100%;
-            height: 430px;
-            border-radius: 30px;
-            overflow: hidden;
-            background: #06070a;
-            position: relative;
+        /* Side buttons (volume, power) */
+        .galaxy-frame::before {
+            content: '';
+            position: absolute;
+            right: -3px;
+            top: 110px;
+            width: 3px;
+            height: 60px;
+            background: linear-gradient(to bottom, #333, #2a2a2a, #333);
+            border-radius: 0 3px 3px 0;
         }
-        /* Embed real site in phone via iframe */
-        .phone-iframe-wrap {
+        .galaxy-frame::after {
+            content: '';
+            position: absolute;
+            left: -3px;
+            top: 100px;
+            width: 3px;
+            height: 44px;
+            background: linear-gradient(to bottom, #333, #2a2a2a, #333);
+            border-radius: 3px 0 0 3px;
+            box-shadow: 0 55px 0 #2a2a2a;
+        }
+
+        /* Screen container */
+        .galaxy-screen-wrap {
             width: 100%;
-            height: 100%;
+            border-radius: 42px;
+            overflow: hidden;
+            background: #000;
+            position: relative;
+            /* Punch-hole camera - no notch, just a tiny dot at top */
+        }
+
+        /* Punch-hole camera dot */
+        .galaxy-camera {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 11px;
+            height: 11px;
+            background: #000;
+            border-radius: 50%;
+            z-index: 10;
+            border: 1px solid rgba(255,255,255,0.08);
+            box-shadow: inset 0 0 3px rgba(0,0,0,0.8);
+        }
+
+        /* Status bar */
+        .galaxy-status-bar {
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 30px;
+            background: rgba(6,7,10,0.92);
+            z-index: 5;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 18px 0 14px;
+            font-size: 0.55rem;
+            color: rgba(255,255,255,0.7);
+            font-weight: 600;
+        }
+        .status-time { font-size: 0.6rem; }
+        .status-icons {
+            display: flex;
+            gap: 3px;
+            align-items: center;
+            font-size: 0.65rem;
+        }
+
+        /* App iframe inside phone */
+        .galaxy-app {
+            width: 100%;
+            height: 560px;
             position: relative;
             overflow: hidden;
         }
-        .phone-iframe-wrap iframe {
+        .galaxy-app iframe {
+            /* Scale the app down to fit a phone width */
             width: 400%;
             height: 400%;
             border: none;
@@ -356,12 +405,40 @@
             pointer-events: none;
         }
 
-        .phone-home-bar {
-            width: 80px;
+        /* Bottom bar inside screen */
+        .galaxy-bottom-bar {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 28px;
+            background: rgba(6,7,10,0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 5;
+        }
+        .galaxy-home-indicator {
+            width: 100px;
             height: 4px;
-            background: rgba(255,255,255,0.15);
+            background: rgba(255,255,255,0.3);
             border-radius: 2px;
-            margin: 10px auto 0;
+        }
+
+        /* Physical home bar below frame */
+        .galaxy-chin {
+            width: 90px;
+            height: 4px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 2px;
+            margin: 12px auto 0;
+        }
+
+        /* Ambient glow under phone */
+        .galaxy-glow {
+            width: 200px;
+            height: 30px;
+            background: radial-gradient(ellipse, rgba(229,9,20,0.3), transparent 70%);
+            filter: blur(20px);
+            margin-top: -10px;
         }
 
         @keyframes fadeUp {
@@ -372,17 +449,15 @@
         @media (max-width: 768px) {
             .hero-title    { font-size: 3rem; }
             .android-title { font-size: 2.5rem; }
-            .win-content   { height: 320px; }
-            .phone         { width: 190px; }
-            .phone-screen  { height: 360px; }
-            .phone.secondary { display: none; }
+            .win-content   { height: 300px; }
+            .galaxy-frame  { width: 240px; }
+            .galaxy-app    { height: 460px; }
         }
     </style>
 </head>
 <body>
     <div class="ambient-glow"></div>
 
-    <!-- NAVBAR -->
     <header class="navbar">
         <a href="index.html" class="brand-logo">
             <span style="color:#e50914;font-size:1.4rem;display:flex;align-items:center;">
@@ -399,29 +474,30 @@
         <h1 class="hero-title"><span class="text-dim">Streamlined</span> for Desktop.</h1>
         <p class="hero-desc">Experience an ultra-fast, immersive, and ad-free cinematic layout. CineWatch brings the ultimate streaming environment straight to your device.</p>
 
-        <!-- ===== WINDOWS ===== -->
+        <!-- ══ WINDOWS ══ -->
         <div class="platform-row">
             <div class="platform-label"><ion-icon name="logo-windows"></ion-icon> Windows Desktop</div>
         </div>
 
         <div class="dl-btn-row">
-            <a href="https://github.com/RandBahjat/CineWatch/releases/latest/download/CineWatch-v1.2.5-Setup.exe" class="btn-dl btn-win">
+            <a href="https://github.com/RandBahjat/CineWatch/releases/latest/download/CineWatch-v1.2.5-Setup.exe"
+               class="btn-dl btn-win">
                 <ion-icon name="logo-windows"></ion-icon>
                 <span>Download for Windows</span>
             </a>
             <div class="sys-note">Windows 10 / 11 &bull; 64-bit &bull; Free</div>
         </div>
 
-        <!-- Desktop window with real site iframe -->
+        <!-- Desktop window — embeds the DESKTOP APP (cinewatch-app/index.html) -->
         <div class="showcase-wrap">
             <div class="win-chrome">
                 <div class="win-titlebar">
-                    <span class="win-title-text">cinewatch.watch &mdash; Home</span>
+                    <span class="win-title-text">CineWatch App &mdash; Home</span>
                 </div>
                 <div class="win-content">
                     <iframe
-                        src="index.html"
-                        title="CineWatch Homepage Preview"
+                        src="cinewatch-app/index.html"
+                        title="CineWatch Desktop App Preview"
                         scrolling="no"
                         sandbox="allow-scripts allow-same-origin"
                     ></iframe>
@@ -429,16 +505,16 @@
             </div>
         </div>
 
-        <!-- ===== ANDROID ===== -->
+        <!-- ══ ANDROID ══ -->
         <div class="android-section">
 
-            <div class="platform-row" style="margin-bottom:2rem;">
+            <div class="platform-row" style="animation-delay:0.65s;">
                 <div class="platform-label"><ion-icon name="logo-android"></ion-icon> Android Mobile</div>
             </div>
 
             <div class="android-header">
                 <h2 class="android-title">Watch on the <span class="text-dim">go.</span></h2>
-                <p class="android-desc">The CineWatch Android app delivers the same cinematic experience optimized for your phone — blazing fast, smooth, and always in your pocket.</p>
+                <p class="android-desc">Take CineWatch wherever you go. The Android app delivers the same cinematic experience, perfectly optimized for your phone.</p>
             </div>
 
             <div class="android-dl-row">
@@ -449,59 +525,46 @@
                 <div class="android-sys-note">Android 8.0+ &bull; APK &bull; Free</div>
             </div>
 
-            <!-- Phone mockups with real site iframe -->
-            <div class="phones-showcase">
-                <!-- Secondary blurred phone (left) -->
-                <div class="phone secondary">
-                    <div class="phone-notch"></div>
-                    <div class="phone-screen">
-                        <div class="phone-iframe-wrap">
-                            <iframe
-                                src="index.html"
-                                title="CineWatch App Preview"
-                                scrolling="no"
-                                sandbox="allow-scripts allow-same-origin"
-                            ></iframe>
-                        </div>
-                    </div>
-                    <div class="phone-home-bar"></div>
-                </div>
+            <!-- Galaxy S25 Ultra Mockup — ONE phone -->
+            <div class="galaxy-wrap">
+                <div class="galaxy-frame">
+                    <div class="galaxy-screen-wrap">
 
-                <!-- Main hero phone (center) -->
-                <div class="phone">
-                    <div class="phone-notch"></div>
-                    <div class="phone-screen">
-                        <div class="phone-iframe-wrap">
-                            <iframe
-                                src="index.html"
-                                title="CineWatch App Preview"
-                                scrolling="no"
-                                sandbox="allow-scripts allow-same-origin"
-                            ></iframe>
+                        <!-- Status Bar -->
+                        <div class="galaxy-status-bar">
+                            <span class="status-time">9:41</span>
+                            <div class="status-icons">
+                                <ion-icon name="cellular-outline"></ion-icon>
+                                <ion-icon name="wifi-outline"></ion-icon>
+                                <ion-icon name="battery-full-outline"></ion-icon>
+                            </div>
                         </div>
-                    </div>
-                    <div class="phone-home-bar"></div>
-                </div>
 
-                <!-- Secondary blurred phone (right) -->
-                <div class="phone secondary">
-                    <div class="phone-notch"></div>
-                    <div class="phone-screen">
-                        <div class="phone-iframe-wrap">
+                        <!-- Punch-hole camera -->
+                        <div class="galaxy-camera"></div>
+
+                        <!-- Real app iframe — mobile viewport -->
+                        <div class="galaxy-app">
                             <iframe
-                                src="index.html"
-                                title="CineWatch App Preview"
+                                src="cinewatch-app/index.html"
+                                title="CineWatch App on Android"
                                 scrolling="no"
                                 sandbox="allow-scripts allow-same-origin"
                             ></iframe>
                         </div>
+
+                        <!-- Home indicator -->
+                        <div class="galaxy-bottom-bar">
+                            <div class="galaxy-home-indicator"></div>
+                        </div>
+
                     </div>
-                    <div class="phone-home-bar"></div>
                 </div>
+                <div class="galaxy-chin"></div>
+                <div class="galaxy-glow"></div>
             </div>
 
         </div>
-
     </main>
 </body>
 </html>
