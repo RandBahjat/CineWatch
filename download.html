@@ -13,6 +13,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     
     <style>
+        * { box-sizing: border-box; }
         body {
             background-color: #030406;
             color: #f1f5f9;
@@ -22,32 +23,30 @@
             padding: 0;
         }
 
-        /* Ambient Glow Background */
         .ambient-glow {
             position: fixed;
             top: 20%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 800px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(229,9,20,0.15) 0%, transparent 60%);
+            width: 900px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(229,9,20,0.12) 0%, transparent 60%);
             z-index: -1;
-            filter: blur(60px);
+            filter: blur(80px);
             pointer-events: none;
             animation: pulseGlow 8s ease-in-out infinite alternate;
         }
 
         @keyframes pulseGlow {
             0% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
-            100% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+            100% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
         }
 
-        /* Navbar Override */
         .navbar {
             position: fixed;
             top: 0; left: 0; right: 0;
             height: 70px;
-            background: rgba(3, 4, 6, 0.7);
+            background: rgba(3, 4, 6, 0.8);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border-bottom: 1px solid rgba(255,255,255,0.05);
@@ -68,19 +67,19 @@
             color: #fff;
         }
         .brand-logo .logo-accent { color: #e50914; }
-        .logo-icon ion-icon { color: #e50914; font-size: 1.4rem; }
 
-        /* Main Content */
+        /* === PAGE LAYOUT === */
         .download-landing {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            padding: 140px 2rem 4rem;
-            max-width: 1000px;
+            padding: 140px 2rem 6rem;
+            max-width: 1100px;
             margin: 0 auto;
         }
 
+        /* === HERO SECTION === */
         .hero-badge {
             display: inline-flex;
             align-items: center;
@@ -117,100 +116,130 @@
         }
 
         .hero-desc {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             color: #94a3b8;
             line-height: 1.6;
-            max-width: 650px;
+            max-width: 620px;
             margin-bottom: 3rem;
             animation: fadeUp 0.8s ease-out 0.2s forwards;
             opacity: 0;
         }
 
-        .download-btn-wrap {
+        /* === PLATFORM SECTIONS === */
+        .platform-section {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .platform-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
             animation: fadeUp 0.8s ease-out 0.3s forwards;
             opacity: 0;
+        }
+        .platform-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: rgba(255,255,255,0.06);
+        }
+
+        .download-btn-wrap {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            animation: fadeUp 0.8s ease-out 0.35s forwards;
+            opacity: 0;
+            flex-wrap: wrap;
         }
 
         .btn-download-main {
             display: inline-flex;
             align-items: center;
             gap: 12px;
-            padding: 1.2rem 2.8rem;
+            padding: 1rem 2.2rem;
             background: #fff;
             color: #000;
             border: none;
-            border-radius: 14px;
+            border-radius: 12px;
             font-family: 'Inter', sans-serif;
-            font-size: 1.15rem;
+            font-size: 1.05rem;
             font-weight: 600;
             text-decoration: none;
             cursor: pointer;
-            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+            box-shadow: 0 10px 30px rgba(255,255,255,0.12);
             transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
         }
-
         .btn-download-main:hover {
-            transform: scale(1.03) translateY(-2px);
-            box-shadow: 0 15px 40px rgba(255, 255, 255, 0.25);
+            transform: scale(1.04) translateY(-2px);
+            box-shadow: 0 15px 40px rgba(255,255,255,0.22);
         }
+        .btn-download-main ion-icon { font-size: 1.3rem; }
 
-        .btn-download-main ion-icon {
-            font-size: 1.4rem;
+        .btn-download-android {
+            background: linear-gradient(135deg, #1a2332, #0d1520);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+        .btn-download-android:hover {
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            border-color: rgba(255,255,255,0.2);
         }
 
         .sys-req {
-            margin-top: 1rem;
-            font-size: 0.85rem;
-            color: #64748b;
+            font-size: 0.82rem;
+            color: #475569;
         }
 
-        /* Mockup Glass Showcase */
+        /* === DESKTOP SHOWCASE === */
         .showcase-wrap {
-            margin-top: 5rem;
             width: 100%;
-            perspective: 1000px;
-            animation: fadeUp 1s ease-out 0.4s forwards;
+            margin-top: 2.5rem;
+            animation: fadeUp 1s ease-out 0.5s forwards;
             opacity: 0;
         }
 
         .showcase-window {
             width: 100%;
-            background: rgba(20, 22, 30, 0.7);
-            backdrop-filter: blur(30px);
-            -webkit-backdrop-filter: blur(30px);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 16px;
+            background: #0a0c12;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 14px;
             overflow: hidden;
-            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255,255,255,0.15);
-            display: flex;
-            flex-direction: column;
+            box-shadow: 0 30px 90px rgba(0,0,0,0.9), inset 0 1px 0 rgba(255,255,255,0.1);
         }
 
-        .showcase-header {
-            height: 36px;
-            background: rgba(10, 12, 18, 0.6);
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+        .showcase-titlebar {
+            height: 38px;
+            background: rgba(12,14,22,0.95);
+            border-bottom: 1px solid rgba(255,255,255,0.04);
             display: flex;
             align-items: center;
+            justify-content: center;
+            position: relative;
             padding: 0 1rem;
-            gap: 8px;
         }
 
-        .dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #334155;
+        .titlebar-label {
+            font-size: 0.75rem;
+            color: #475569;
+            font-weight: 500;
+            letter-spacing: 0.5px;
         }
-        .dot.r { background: #ef4444; }
-        .dot.y { background: #eab308; }
-        .dot.g { background: #22c55e; }
 
         .showcase-body {
-            height: 480px;
-            background-image: url('https://image.tmdb.org/t/p/original/8rpDcsfLJypbO6vtecsm1p2P90.jpg'); /* Beautiful cinematic image */
+            height: 500px;
+            background-image: url('https://image.tmdb.org/t/p/original/jXJxMcVoEuXzym3vFnjqDW4ifo6.jpg');
             background-size: cover;
-            background-position: center 20%;
+            background-position: center top;
             position: relative;
         }
 
@@ -218,7 +247,320 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, rgba(10, 12, 18, 0.9) 0%, transparent 60%);
+            background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, transparent 30%, rgba(0,0,0,0.4) 100%);
+        }
+
+        /* App UI overlay to simulate real CineWatch homepage */
+        .app-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .app-nav-bar {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 0.8rem 2rem;
+            background: rgba(6, 7, 10, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .app-brand {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 1rem;
+            color: #fff;
+        }
+        .app-brand span { color: #e50914; }
+
+        .app-nav-links {
+            display: flex;
+            gap: 1.2rem;
+            flex: 1;
+        }
+        .app-nav-links a {
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+        }
+        .app-nav-links a.active { color: #fff; font-weight: 600; }
+
+        .app-hero-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 2rem 2.5rem;
+        }
+        .app-hero-tag {
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #e50914;
+            margin-bottom: 0.5rem;
+        }
+        .app-hero-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.1;
+            margin-bottom: 0.5rem;
+        }
+        .app-hero-meta {
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 1rem;
+        }
+        .app-hero-btns {
+            display: flex;
+            gap: 0.6rem;
+        }
+        .app-play-btn {
+            background: #e50914;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 0.35rem 0.8rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .app-more-btn {
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 0.35rem 0.8rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        /* === ANDROID SECTION === */
+        .android-section {
+            width: 100%;
+            margin-top: 5rem;
+        }
+
+        .android-platform-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            animation: fadeUp 0.8s ease-out 0.6s forwards;
+            opacity: 0;
+        }
+        .android-platform-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: rgba(255,255,255,0.06);
+        }
+
+        .android-content {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            text-align: left;
+            animation: fadeUp 1s ease-out 0.7s forwards;
+            opacity: 0;
+        }
+
+        .android-text {
+            flex: 1;
+        }
+
+        .android-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+
+        .android-desc {
+            color: #94a3b8;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .android-download-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .android-sys-req {
+            font-size: 0.82rem;
+            color: #475569;
+        }
+
+        /* === PHONE MOCKUP === */
+        .phone-wrap {
+            flex: 0 0 auto;
+            width: 260px;
+        }
+
+        .phone-frame {
+            width: 260px;
+            background: #0e1117;
+            border-radius: 42px;
+            border: 2px solid rgba(255,255,255,0.12);
+            padding: 16px 10px;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.9), inset 0 1px 0 rgba(255,255,255,0.1), 0 0 0 1px rgba(255,255,255,0.04);
+            position: relative;
+        }
+
+        .phone-notch {
+            width: 80px;
+            height: 18px;
+            background: #0e1117;
+            border-radius: 0 0 14px 14px;
+            margin: 0 auto 8px;
+            position: relative;
+            z-index: 10;
+            border: 2px solid rgba(255,255,255,0.08);
+            border-top: none;
+        }
+
+        .phone-screen {
+            width: 100%;
+            border-radius: 28px;
+            overflow: hidden;
+            background: #06070a;
+            height: 440px;
+            position: relative;
+        }
+
+        /* Phone App UI */
+        .phone-app {
+            position: absolute;
+            inset: 0;
+            background-image: url('https://image.tmdb.org/t/p/original/jXJxMcVoEuXzym3vFnjqDW4ifo6.jpg');
+            background-size: cover;
+            background-position: center 30%;
+        }
+
+        .phone-app::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, transparent 30%, rgba(0,0,0,0.7) 70%, rgba(6,7,10,1) 100%);
+        }
+
+        .phone-header {
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 14px;
+            background: rgba(6,7,10,0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .phone-brand {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 0.75rem;
+            color: #fff;
+        }
+        .phone-brand span { color: #e50914; }
+
+        .phone-search-icon {
+            color: rgba(255,255,255,0.7);
+            font-size: 1rem;
+        }
+
+        .phone-hero-text {
+            position: absolute;
+            bottom: 80px;
+            left: 14px;
+            right: 14px;
+        }
+
+        .phone-hero-badge {
+            font-size: 0.5rem;
+            font-weight: 700;
+            color: #e50914;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .phone-hero-title {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 1rem;
+            color: #fff;
+            line-height: 1.2;
+            margin-bottom: 6px;
+        }
+
+        .phone-hero-meta {
+            font-size: 0.55rem;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 8px;
+        }
+
+        .phone-play-btn {
+            background: #e50914;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 5px 12px;
+            font-size: 0.6rem;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .phone-bottom-nav {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 56px;
+            background: rgba(6,7,10,0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .phone-nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3px;
+            color: rgba(255,255,255,0.4);
+            font-size: 0.45rem;
+        }
+        .phone-nav-item.active { color: #fff; }
+        .phone-nav-item ion-icon { font-size: 1.1rem; }
+
+        .phone-home-btn {
+            width: 100px;
+            height: 4px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 2px;
+            margin: 8px auto 0;
         }
 
         @keyframes fadeUp {
@@ -226,10 +568,20 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
             .hero-title { font-size: 3rem; }
-            .hero-desc { font-size: 1.1rem; }
-            .showcase-body { height: 250px; }
+            .android-content { flex-direction: column-reverse; align-items: center; text-align: center; gap: 3rem; }
+            .android-download-wrap { align-items: center; }
+            .android-text { max-width: 500px; }
+            .showcase-body { height: 320px; }
+            .app-hero-title { font-size: 1.3rem; }
+        }
+
+        @media (max-width: 600px) {
+            .hero-title { font-size: 2.5rem; }
+            .phone-wrap { width: 220px; }
+            .phone-frame { width: 220px; }
+            .phone-screen { height: 380px; }
         }
     </style>
 </head>
@@ -238,34 +590,126 @@
 
     <header class="navbar">
         <a href="index.html" class="brand-logo">
-            <span class="logo-icon"><ion-icon name="ticket"></ion-icon></span>
-            <span class="logo-text">Cine<span class="logo-accent">Watch</span></span>
+            <span style="color:#e50914;font-size:1.4rem;display:flex;"><ion-icon name="ticket"></ion-icon></span>
+            <span>Cine<span class="logo-accent">Watch</span></span>
         </a>
     </header>
 
     <main class="download-landing">
-        <div class="hero-badge">
-            <ion-icon name="flash"></ion-icon> NEW V1.2.5
-        </div>
+
+        <!-- HERO -->
+        <div class="hero-badge"><ion-icon name="flash"></ion-icon> NEW V1.2.5</div>
         <h1 class="hero-title"><span class="text-gradient">Streamlined</span> for Desktop.</h1>
         <p class="hero-desc">Experience an ultra-fast, immersive, and ad-free cinematic layout. CineWatch Desktop brings the ultimate streaming environment straight to your PC.</p>
-        
-        <div class="download-btn-wrap">
-            <a href="https://github.com/RandBahjat/CineWatch/releases/latest/download/CineWatch-v1.2.5-Setup.exe" class="btn-download-main">
-                <ion-icon name="logo-windows"></ion-icon>
-                <span>Download for Windows</span>
-            </a>
-            <div class="sys-req">Windows 10/11 • 64-bit</div>
-        </div>
 
-        <div class="showcase-wrap">
-            <div class="showcase-window">
-                <div class="showcase-header">
-                    <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
+        <!-- WINDOWS SECTION -->
+        <div class="platform-section">
+            <div class="platform-label"><ion-icon name="logo-windows"></ion-icon> Windows</div>
+            <div class="download-btn-wrap">
+                <a href="https://github.com/RandBahjat/CineWatch/releases/latest/download/CineWatch-v1.2.5-Setup.exe" class="btn-download-main">
+                    <ion-icon name="logo-windows"></ion-icon>
+                    <span>Download for Windows</span>
+                </a>
+                <div class="sys-req">Windows 10/11 &bull; 64-bit &bull; Free</div>
+            </div>
+
+            <!-- DESKTOP WINDOW MOCKUP -->
+            <div class="showcase-wrap">
+                <div class="showcase-window">
+                    <div class="showcase-titlebar">
+                        <span class="titlebar-label">CineWatch — Home</span>
+                    </div>
+                    <div class="showcase-body">
+                        <div class="app-overlay">
+                            <div class="app-nav-bar">
+                                <div class="app-brand">Cine<span>Watch</span></div>
+                                <div class="app-nav-links">
+                                    <a href="#" class="active">Home</a>
+                                    <a href="#">Movies</a>
+                                    <a href="#">Series</a>
+                                    <a href="#">Anime</a>
+                                    <a href="#">Watch Together</a>
+                                </div>
+                            </div>
+                            <div class="app-hero-content">
+                                <div class="app-hero-tag">★ TRENDING NOW</div>
+                                <div class="app-hero-title">GTA VI: An Extended Look</div>
+                                <div class="app-hero-meta">8.4 &nbsp;&bull;&nbsp; 2026 &nbsp;&bull;&nbsp; Action, Adventure</div>
+                                <div class="app-hero-btns">
+                                    <button class="app-play-btn"><ion-icon name="play"></ion-icon> Play</button>
+                                    <button class="app-more-btn">See More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="showcase-body"></div>
             </div>
         </div>
+
+        <!-- ANDROID SECTION -->
+        <div class="android-section">
+            <div class="android-platform-label"><ion-icon name="logo-android"></ion-icon> Android</div>
+            <div class="android-content">
+
+                <!-- PHONE MOCKUP -->
+                <div class="phone-wrap">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="phone-app">
+                                <!-- Phone Header -->
+                                <div class="phone-header">
+                                    <div class="phone-brand">Cine<span>Watch</span></div>
+                                    <ion-icon name="search-outline" class="phone-search-icon"></ion-icon>
+                                </div>
+                                <!-- Hero Content -->
+                                <div class="phone-hero-text">
+                                    <div class="phone-hero-badge">★ TRENDING</div>
+                                    <div class="phone-hero-title">GTA VI: An<br>Extended Look</div>
+                                    <div class="phone-hero-meta">8.4 &bull; 2026 &bull; Action</div>
+                                    <button class="phone-play-btn"><ion-icon name="play"></ion-icon> Play</button>
+                                </div>
+                                <!-- Bottom Nav -->
+                                <div class="phone-bottom-nav">
+                                    <div class="phone-nav-item active">
+                                        <ion-icon name="home"></ion-icon>
+                                        <span>Home</span>
+                                    </div>
+                                    <div class="phone-nav-item">
+                                        <ion-icon name="compass-outline"></ion-icon>
+                                        <span>Explore</span>
+                                    </div>
+                                    <div class="phone-nav-item">
+                                        <ion-icon name="people-outline"></ion-icon>
+                                        <span>Together</span>
+                                    </div>
+                                    <div class="phone-nav-item">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                        <span>Watchlist</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone-home-btn"></div>
+                    </div>
+                </div>
+
+                <!-- TEXT -->
+                <div class="android-text">
+                    <h2 class="android-title">Watch on the<br><span class="text-gradient">go.</span></h2>
+                    <p class="android-desc">Take CineWatch wherever you go. The Android app gives you the same cinematic experience optimized for mobile — smooth, fast, and entirely in your pocket.</p>
+                    <div class="android-download-wrap">
+                        <a href="#" class="btn-download-main btn-download-android">
+                            <ion-icon name="logo-android"></ion-icon>
+                            <span>Download for Android</span>
+                        </a>
+                        <div class="android-sys-req">Android 8.0+ &bull; APK &bull; Free</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </main>
 </body>
 </html>
