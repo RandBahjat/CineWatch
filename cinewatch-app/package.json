@@ -1,6 +1,6 @@
 {
   "name": "cinewatch-app",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "CineWatch Movies & Series Standalone Mobile and Desktop Application",
   "main": "main.js",
   "scripts": {
