@@ -37,18 +37,27 @@ function createWindow() {
 app.whenReady().then(() => {
   createWindow();
   
+  // Disable automatic downloading — the user must choose to update
+  autoUpdater.autoDownload = false;
+
   // Check for updates shortly after startup
   setTimeout(() => {
-    autoUpdater.checkForUpdatesAndNotify();
+    autoUpdater.checkForUpdates();
   }, 2000);
 });
 
 // Auto Updater Events
-autoUpdater.on('update-available', () => {
+autoUpdater.on('update-available', (info) => {
   dialog.showMessageBox({
-    type: 'info',
+    type: 'question',
+    buttons: ['Download Update', 'Cancel'],
+    defaultId: 0,
     title: 'Update Available',
-    message: 'A new version of CineWatch is available. Downloading now...'
+    message: `A new version of CineWatch (v${info.version}) is available. Would you like to download it now?`
+  }).then((result) => {
+    if (result.response === 0) {
+      autoUpdater.downloadUpdate();
+    }
   });
 });
 
