@@ -2699,7 +2699,7 @@ html.light-mode .toast {
     display: none !important;
   }
   
-  #mobileMenuBtn, #topSearchBtn {
+  .topbar {
     display: none !important;
   }
   
@@ -2715,10 +2715,7 @@ html.light-mode .toast {
   
   .main-content {
     margin-left: 0 !important;
-  }
-  
-  .topbar {
-    padding-left: 1rem !important;
+    padding-top: env(safe-area-inset-top);
   }
   
   .mobile-bottom-nav {
