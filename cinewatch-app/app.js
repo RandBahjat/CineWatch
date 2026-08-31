@@ -1096,8 +1096,39 @@ function startApp() {
     const profileName = document.querySelector('.profile-name h2');
     if (activeUser && profileName) {
       profileName.textContent = activeUser.user_metadata?.name || activeUser.email.split('@')[0];
-    } else if (profileName) {
-      profileName.textContent = 'Guest';
+      
+      const savedAvatar = localStorage.getItem('cw_avatar');
+      const savedBanner = localStorage.getItem('cw_banner');
+      if (savedAvatar) {
+        const avatar = document.getElementById('profileAvatar');
+        if (avatar) {
+          avatar.style.backgroundImage = `url(${savedAvatar})`;
+          avatar.style.backgroundSize = 'cover';
+          avatar.style.backgroundPosition = 'center';
+          const icon = avatar.querySelector('ion-icon');
+          if (icon) icon.style.display = 'none';
+        }
+        updateMobileNavAvatar(savedAvatar);
+      }
+      if (savedBanner) {
+        const banner = document.getElementById('profileBanner');
+        if (banner) banner.style.backgroundImage = `url(${savedBanner})`;
+      }
+    } else {
+      if (profileName) profileName.textContent = 'Guest';
+      
+      const avatar = document.getElementById('profileAvatar');
+      if (avatar) {
+        avatar.style.backgroundImage = 'none';
+        const icon = avatar.querySelector('ion-icon');
+        if (icon) icon.style.display = 'block';
+      }
+      updateMobileNavAvatar(null);
+      
+      const banner = document.getElementById('profileBanner');
+      if (banner) {
+        banner.style.backgroundImage = `url('https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=2070&auto=format&fit=crop')`;
+      }
     }
   }
   
@@ -1170,8 +1201,6 @@ function startApp() {
   });
 
   // ── Restore saved profile data on load ───────────────────────────────
-  const savedAvatar = localStorage.getItem('cw_avatar');
-  const savedBanner = localStorage.getItem('cw_banner');
   const savedTheme  = localStorage.getItem('cw_theme') || 'dark';
 
   function updateMobileNavAvatar(dataUrl) {
@@ -1187,22 +1216,6 @@ function startApp() {
         mobileIcon.style.display = 'block';
       }
     }
-  }
-
-  if (savedAvatar) {
-    const avatar = document.getElementById('profileAvatar');
-    if (avatar) {
-      avatar.style.backgroundImage = `url(${savedAvatar})`;
-      avatar.style.backgroundSize = 'cover';
-      avatar.style.backgroundPosition = 'center';
-      const icon = avatar.querySelector('ion-icon');
-      if (icon) icon.style.display = 'none';
-    }
-    updateMobileNavAvatar(savedAvatar);
-  }
-  if (savedBanner) {
-    const banner = document.getElementById('profileBanner');
-    if (banner) banner.style.backgroundImage = `url(${savedBanner})`;
   }
 
   // Apply saved theme
