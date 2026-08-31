@@ -179,8 +179,13 @@ function setupNavigation() {
     btn.onclick = (e) => {
       e.preventDefault();
       const tab = btn.dataset.tab;
+      
+      // If clicking the profile tab button itself, let its dedicated event listener handle it
+      if (btn.id === 'mobileProfileBtn') return;
+      
       if (tab) switchTab(tab);
       document.getElementById('sidebar')?.classList.remove('mobile-open');
+      document.getElementById('settingsOverlay')?.classList.add('hidden');
     };
   });
 
