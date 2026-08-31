@@ -2687,3 +2687,84 @@ html.light-mode .toast {
 .win-btn:active ion-icon {
   transform: scale(0.85);
 }
+
+/* Mobile Bottom Nav */
+.mobile-bottom-nav {
+  display: none; /* hidden on desktop */
+}
+
+@media (max-width: 860px) {
+  .window-controls {
+    display: none !important;
+  }
+  
+  .mobile-menu-trigger {
+    display: none !important;
+  }
+  
+  .sidebar {
+    display: none !important;
+  }
+  
+  /* Reset app layout to take full width */
+  .app-layout {
+    grid-template-columns: 1fr !important;
+    padding-bottom: 65px; /* space for bottom nav */
+  }
+  
+  .main-content {
+    margin-left: 0 !important;
+  }
+  
+  .topbar {
+    padding-left: 1rem !important;
+  }
+  
+  .mobile-bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    background: rgba(10, 12, 18, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  
+  .mobile-bottom-nav .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: #64748b;
+    background: transparent;
+    border: none;
+    font-size: 0.65rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+  }
+  
+  .mobile-bottom-nav .nav-item ion-icon {
+    font-size: 1.4rem;
+    margin-bottom: 2px;
+    transition: transform 0.3s ease;
+  }
+  
+  .mobile-bottom-nav .nav-item.active {
+    color: #e50914;
+    font-weight: 700;
+  }
+  
+  .mobile-bottom-nav .nav-item.active ion-icon {
+    transform: translateY(-2px);
+  }
+}
