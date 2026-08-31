@@ -2699,7 +2699,7 @@ html.light-mode .toast {
     display: none !important;
   }
   
-  .mobile-menu-trigger {
+  #mobileMenuBtn, #topSearchBtn {
     display: none !important;
   }
   
