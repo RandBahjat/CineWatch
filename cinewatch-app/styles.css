@@ -2765,7 +2765,7 @@ html.light-mode .toast {
   display: none; /* hidden on desktop */
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1024px) {
   .window-controls {
     display: none !important;
   }
