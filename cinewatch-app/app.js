@@ -1023,11 +1023,23 @@ function startApp() {
   const openSettingsBtn = document.getElementById('openSettingsBtn');
   const closeSettingsBtn = document.getElementById('closeSettingsBtn');
   const settingsOverlay = document.getElementById('settingsOverlay');
+  const mobileProfileBtn = document.getElementById('mobileProfileBtn');
 
   if (openSettingsBtn) {
     openSettingsBtn.addEventListener('click', () => {
       settingsOverlay?.classList.remove('hidden');
       document.activeElement?.blur();
+    });
+  }
+  
+  if (mobileProfileBtn) {
+    mobileProfileBtn.addEventListener('click', () => {
+      settingsOverlay?.classList.remove('hidden');
+      
+      // Update active state in bottom nav manually since it doesn't use switchTab
+      document.querySelectorAll('.mobile-bottom-nav .nav-item').forEach(btn => {
+        btn.classList.toggle('active', btn.id === 'mobileProfileBtn');
+      });
     });
   }
 
