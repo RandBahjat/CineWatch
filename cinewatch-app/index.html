@@ -72,7 +72,7 @@
   <script src="./series-data.js?v=1" defer></script>
   <script src="./anime-data.js?v=1" defer></script>
 
-  <script src="app.js?v=153" defer></script>
+  <script src="app.js?v=156" defer></script>
 </head>
 <body>
 
@@ -282,16 +282,19 @@
       <div class="settings-container" style="padding-top: 0;">
         <div class="settings-card">
           <h3>Appearance</h3>
-            <div class="settings-row">
-              <div class="settings-info">
-                <h4>Theme Mode</h4>
-                <p>Switch between Light, Dark, or System Default.</p>
+            <div class="settings-row" style="align-items: center; flex-wrap: wrap; gap: 0.75rem;">
+              <h4>Theme Mode</h4>
+              <div class="theme-pills" id="themePills">
+                <button class="theme-pill" data-theme="system">
+                  <ion-icon name="phone-portrait-outline"></ion-icon> System
+                </button>
+                <button class="theme-pill" data-theme="dark">
+                  <ion-icon name="moon-outline"></ion-icon> Dark
+                </button>
+                <button class="theme-pill" data-theme="light">
+                  <ion-icon name="sunny-outline"></ion-icon> Light
+                </button>
               </div>
-              <select class="settings-select" id="themeSelect">
-                <option value="system">System Default</option>
-                <option value="dark">Dark Mode</option>
-                <option value="light">Light Mode</option>
-              </select>
             </div>
         </div>
         
