@@ -744,21 +744,126 @@ function renderAnimeTab() {
 }
 
 // 6. Live TV Tab
-function renderLiveTV() {
-  const grid = document.getElementById('liveGrid');
-  const channels = window._LIVE_CHANNELS || [];
-  if (!grid || channels.length === 0) return;
+let _liveChannelsAll = [];
+let _liveActiveCat = 'all';
+let _liveQuery = '';
+let _liveLoaded = false;
 
-  grid.innerHTML = channels.map(ch => `
-    <div class="live-card" onclick="showToast('Connecting to ${ch.name} stream...')">
-      <div class="live-icon">${ch.logo || '📺'}</div>
-      <div>
-        <h3 style="font-size: 1.05rem; font-weight: 700; color: #fff;">${ch.name}</h3>
-        <p style="font-size: 0.8rem; color: var(--text-dim);">${ch.category} • Full HD</p>
-      </div>
-    </div>
-  `).join('');
+function renderLiveTVGrid() {
+  const grid = document.getElementById('liveGrid');
+  const empty = document.getElementById('liveEmpty');
+  const countEl = document.getElementById('liveCount');
+  if (!grid) return;
+
+  const filtered = _liveChannelsAll.filter(ch => {
+    const matchCat = _liveActiveCat === 'all' || (ch.category || '').toLowerCase() === _liveActiveCat.toLowerCase();
+    const matchQ = !_liveQuery || ch.name.toLowerCase().includes(_liveQuery);
+    return matchCat && matchQ;
+  });
+
+  if (countEl) countEl.textContent = filtered.length + ' Channels';
+
+  if (filtered.length === 0) {
+    grid.innerHTML = '';
+    empty?.classList.remove('hidden');
+    return;
+  }
+  empty?.classList.add('hidden');
+
+  grid.innerHTML = filtered.map(ch => {
+    const safeStream = encodeURIComponent(ch.streamUrl);
+    const safeName = (ch.name || '').replace(/"/g, '');
+    const logoHtml = ch.logo
+      ? '<img src="' + ch.logo + '" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'" alt="' + safeName + '">'
+      : '';
+    return '<div class="live-card" data-stream="' + safeStream + '" data-name="' + safeName + '" onclick="playLiveChannel(this)">'
+      + '<div class="live-card-thumb">'
+      + logoHtml
+      + '<div class="live-card-fallback-icon" style="display:' + (ch.logo ? 'none' : 'flex') + '"><ion-icon name="tv-outline"></ion-icon></div>'
+      + '<div class="live-badge"><span class="live-dot"></span> LIVE</div>'
+      + '</div>'
+      + '<div class="live-card-info">'
+      + '<h3>' + safeName + '</h3>'
+      + '<p>' + (ch.category || 'General') + (ch.country ? ' · ' + ch.country : '') + '</p>'
+      + '</div></div>';
+  }).join('');
 }
+
+async function renderLiveTV() {
+  const loading = document.getElementById('liveLoading');
+  const grid = document.getElementById('liveGrid');
+
+  if (!_liveLoaded) {
+    loading?.classList.remove('hidden');
+    if (grid) grid.innerHTML = '';
+    if (typeof window._loadLiveChannels === 'function') {
+      _liveChannelsAll = await window._loadLiveChannels();
+    } else {
+      _liveChannelsAll = window._LIVE_CHANNELS || [];
+    }
+    _liveLoaded = true;
+    loading?.classList.add('hidden');
+  }
+
+  const searchInput = document.getElementById('liveSearch');
+  if (searchInput && !searchInput._wired) {
+    searchInput._wired = true;
+    searchInput.addEventListener('input', () => {
+      _liveQuery = searchInput.value.toLowerCase().trim();
+      renderLiveTVGrid();
+    });
+  }
+
+  const filterRow = document.getElementById('liveCategoryFilter');
+  if (filterRow && !filterRow._wired) {
+    filterRow._wired = true;
+    filterRow.querySelectorAll('.pill-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterRow.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        _liveActiveCat = btn.dataset.cat;
+        renderLiveTVGrid();
+      });
+    });
+  }
+
+  renderLiveTVGrid();
+}
+
+window.playLiveChannel = function(el) {
+  const streamUrl = decodeURIComponent(el.dataset.stream);
+  const name = el.dataset.name;
+  const playerModal = document.getElementById('playerModal');
+  const titleEl = document.getElementById('playerTitle');
+  const videoEl = document.getElementById('videoEl');
+  const iframeEl = document.getElementById('iframeEl');
+
+  if (!playerModal || !videoEl) { showToast('Player not ready'); return; }
+
+  if (titleEl) titleEl.textContent = '\uD83D\uDD34 LIVE \u2014 ' + name;
+  iframeEl?.classList.add('hidden');
+  videoEl.classList.remove('hidden');
+  videoEl.src = '';
+  playerModal.classList.remove('hidden');
+
+  if (videoEl._hls) { videoEl._hls.destroy(); videoEl._hls = null; }
+
+  if (window.Hls && window.Hls.isSupported()) {
+    const hls = new window.Hls({ enableWorker: false, maxBufferLength: 15 });
+    hls.loadSource(streamUrl);
+    hls.attachMedia(videoEl);
+    hls.on(window.Hls.Events.MANIFEST_PARSED, () => videoEl.play().catch(() => {}));
+    hls.on(window.Hls.Events.ERROR, (ev, data) => {
+      if (data.fatal) showToast('Stream unavailable. Try another channel.');
+    });
+    videoEl._hls = hls;
+  } else if (videoEl.canPlayType('application/vnd.apple.mpegurl')) {
+    videoEl.src = streamUrl;
+    videoEl.play().catch(() => {});
+  } else {
+    showToast('HLS not supported in this player.');
+  }
+};
 
 // 7. AI Assistant Tab
 function renderAITab() {
