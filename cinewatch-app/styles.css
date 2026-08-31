@@ -2091,6 +2091,45 @@ html, body {
   color: var(--text-main);
 }
 
+.theme-pills {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.theme-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-sub);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.theme-pill ion-icon {
+  font-size: 1rem;
+}
+
+.theme-pill:hover {
+  background: rgba(229, 9, 20, 0.15);
+  border-color: rgba(229, 9, 20, 0.4);
+  color: #fff;
+}
+
+.theme-pill.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+  box-shadow: 0 0 16px rgba(229, 9, 20, 0.4);
+}
+
 /* ==========================================================================
    LIGHT MODE OVERRIDES
    ========================================================================== */
