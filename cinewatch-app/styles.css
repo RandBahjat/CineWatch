@@ -713,23 +713,24 @@ html, body {
 }
 
 .hero-dot {
-  height: 5px;
-  border-radius: 99px;
-  background: rgba(255, 255, 255, 0.25);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  width: 28px;
 }
 
 .hero-dot.active {
-  width: 60px;
+  width: 24px;
+  border-radius: 8px;
   background: var(--primary);
-  box-shadow: 0 0 14px var(--primary-glow);
+  box-shadow: 0 0 12px var(--primary-glow);
 }
 
 .hero-dot:hover:not(.active) {
-  background: rgba(255, 255, 255, 0.55);
-  width: 38px;
+  background: rgba(255, 255, 255, 0.7);
+  width: 12px;
 }
 
 /* Shelves start below dots, no negative margin overlap needed */
@@ -2766,5 +2767,12 @@ html.light-mode .toast {
   
   .mobile-bottom-nav .nav-item.active ion-icon {
     transform: translateY(-2px);
+  }
+
+  /* Show 2 posters in explore on mobile */
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.8rem !important;
+    padding: 0 1rem 6rem !important;
   }
 }
