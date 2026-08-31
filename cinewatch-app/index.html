@@ -72,7 +72,7 @@
   <script src="./series-data.js?v=1" defer></script>
   <script src="./anime-data.js?v=1" defer></script>
   <script src="live-tv.js?v=1" defer></script>
-  <script src="app.js?v=56" defer></script>
+  <script src="app.js?v=57" defer></script>
 </head>
 <body>
 
@@ -194,12 +194,35 @@
 
       <!-- LIVE TV TAB -->
       <section class="tab-panel" id="panel-live">
-        <div class="explore-head">
-          <h1>Live TV</h1>
-          <p class="sub">Watch live channels — coming soon</p>
-        </div>
-        <div class="live-grid" id="liveGrid"></div>
-      </section>
+          <div class="page-header">
+            <div class="page-title-row">
+              <h1 class="page-title">Live TV</h1>
+              <span class="page-count" id="liveCount">Loading...</span>
+            </div>
+            <div class="explore-search-bar">
+              <ion-icon name="search-outline"></ion-icon>
+              <input type="text" id="liveSearch" placeholder="Search channels…" autocomplete="off">
+            </div>
+            <div class="filter-pills-row" id="liveCategoryFilter">
+              <button class="pill-btn active" data-cat="all">All</button>
+              <button class="pill-btn" data-cat="News">News</button>
+              <button class="pill-btn" data-cat="Arabic">Arabic</button>
+              <button class="pill-btn" data-cat="Business">Business</button>
+              <button class="pill-btn" data-cat="Science">Science</button>
+              <button class="pill-btn" data-cat="General">General</button>
+            </div>
+          </div>
+          <div class="live-loading hidden" id="liveLoading">
+            <ion-icon name="sync-outline" class="spin-icon"></ion-icon>
+            <p>Loading channels…</p>
+          </div>
+          <div class="live-grid" id="liveGrid"></div>
+          <div class="empty-state hidden" id="liveEmpty">
+            <ion-icon name="tv-outline"></ion-icon>
+            <p>No channels found.</p>
+          </div>
+        </section>
+
 
       <!-- WATCHLIST TAB -->
       <section class="tab-panel" id="panel-watchlist">
