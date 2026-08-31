@@ -1141,15 +1141,39 @@ function startApp() {
   });
 
   // Settings page buttons
-  const themeBtn = document.getElementById('pageThemeToggleBtn');
-  if (themeBtn) {
-    themeBtn.addEventListener('click', () => {
-      document.documentElement.classList.toggle('light-mode');
-      const isLight = document.documentElement.classList.contains('light-mode');
-      themeBtn.innerHTML = isLight 
-        ? '<ion-icon name="moon-outline"></ion-icon> Dark Mode'
-        : '<ion-icon name="contrast-outline"></ion-icon> Light Mode';
-      showToast(isLight ? 'Switched to Light Mode' : 'Switched to Dark Mode');
+  const themeSelect = document.getElementById('themeSelect');
+  if (themeSelect) {
+    // Check initial system preference
+    const prefersLight = window.matchMedia('(prefers-color-scheme: light)');
+    
+    themeSelect.addEventListener('change', (e) => {
+      const mode = e.target.value;
+      if (mode === 'light') {
+        document.documentElement.classList.add('light-mode');
+        showToast('Switched to Light Mode');
+      } else if (mode === 'dark') {
+        document.documentElement.classList.remove('light-mode');
+        showToast('Switched to Dark Mode');
+      } else {
+        // System Default
+        if (prefersLight.matches) {
+          document.documentElement.classList.add('light-mode');
+        } else {
+          document.documentElement.classList.remove('light-mode');
+        }
+        showToast('Using System Default Theme');
+      }
+    });
+
+    // Listen for system theme changes if set to system
+    prefersLight.addEventListener('change', (e) => {
+      if (themeSelect.value === 'system') {
+        if (e.matches) {
+          document.documentElement.classList.add('light-mode');
+        } else {
+          document.documentElement.classList.remove('light-mode');
+        }
+      }
     });
   }
 
