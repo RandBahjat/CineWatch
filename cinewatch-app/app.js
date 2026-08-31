@@ -1301,6 +1301,12 @@ function startApp() {
     showToast('Left the room');
   });
 
+  // Back Button Action
+  document.getElementById('goBackFromActiveRoom')?.addEventListener('click', () => {
+    partyActiveScreen?.classList.add('hidden');
+    partyMainScreen?.classList.remove('hidden');
+  });
+
   // Join Room Action (from main screen)
   document.querySelector('.join-room-btn')?.addEventListener('click', () => {
     const input = document.querySelector('.party-join-box input');
