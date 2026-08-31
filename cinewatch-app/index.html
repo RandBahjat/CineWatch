@@ -72,7 +72,7 @@
   <script src="./series-data.js?v=1" defer></script>
   <script src="./anime-data.js?v=1" defer></script>
 
-  <script src="app.js?v=170" defer></script>
+  <script src="app.js?v=172" defer></script>
 </head>
 <body>
 
@@ -208,7 +208,7 @@
 
       <!-- WATCH TOGETHER TAB -->
       <section class="tab-panel" id="panel-party">
-        <div class="party-container">
+        <div class="party-container" id="partyMainScreen">
           <div class="party-hero">
             <ion-icon name="videocam-outline" class="party-icon-main"></ion-icon>
             <h2>Watch Together</h2>
@@ -223,6 +223,49 @@
             <div class="party-join-box">
               <input type="text" placeholder="Enter Room Code (e.g. A7X9P)">
               <button class="party-btn join-room-btn">Join</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="party-container hidden" id="partyCreateScreen">
+          <div class="party-hero" style="margin-bottom: 2rem;">
+            <ion-icon name="add-circle-outline" class="party-icon-main"></ion-icon>
+            <h2>New Room</h2>
+            <p>Set up your room details.</p>
+          </div>
+          
+          <div class="party-form" style="width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 1.5rem; text-align: left;">
+            <div class="input-group" style="display: flex; flex-direction: column; gap: 0.5rem;">
+              <label style="font-size: 0.9rem; color: var(--text-sub); font-weight: 600;">Room Name</label>
+              <input type="text" id="roomNameInput" placeholder="My Awesome Room" style="width: 100%; padding: 0.8rem; border-radius: var(--radius-md); background: rgba(255, 255, 255, 0.08); border: 1px solid var(--border-subtle); color: #fff; font-family: var(--font-body); outline: none;">
+            </div>
+            
+            <div class="input-group" style="display: flex; flex-direction: column; gap: 0.5rem;">
+              <label style="font-size: 0.9rem; color: var(--text-sub); font-weight: 600;">Privacy</label>
+              <div class="theme-pills" id="roomPrivacyPills">
+                <button class="theme-pill active" data-privacy="public">
+                  <ion-icon name="earth-outline"></ion-icon> Public
+                </button>
+                <button class="theme-pill" data-privacy="private">
+                  <ion-icon name="lock-closed-outline"></ion-icon> Private
+                </button>
+              </div>
+            </div>
+            
+            <div class="input-group hidden" id="roomCodeGroup" style="display: flex; flex-direction: column; gap: 0.5rem;">
+              <label style="font-size: 0.9rem; color: var(--text-sub); font-weight: 600;">Room Code (8 characters)</label>
+              <input type="text" id="roomCodeInput" readonly value="" style="width: 100%; padding: 0.8rem; border-radius: var(--radius-md); background: rgba(0, 0, 0, 0.5); border: 1px solid var(--border-subtle); color: var(--primary); font-family: monospace; font-size: 1.2rem; font-weight: 700; outline: none; text-align: center; letter-spacing: 4px;">
+              <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.2rem;">No one can join unless they enter this exact code.</p>
+            </div>
+            
+            <div style="display: flex; flex-direction: column; gap: 0.8rem; margin-top: 1rem;">
+              <button class="party-btn create-room-confirm-btn" style="width: 100%; justify-content: center;">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <span>Create Room</span>
+              </button>
+              <button class="party-btn" id="cancelCreateRoomBtn" style="background: transparent; color: var(--text-sub); width: 100%; justify-content: center; box-shadow: none;">
+                Cancel
+              </button>
             </div>
           </div>
         </div>
