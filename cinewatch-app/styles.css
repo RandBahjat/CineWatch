@@ -2788,11 +2788,26 @@ html.light-mode .toast {
     transform: translateY(-2px);
   }
 
-  /* Show 2 posters in explore on mobile */
+  /* Show 2 perfectly equal posters in explore on mobile */
   .cards-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 0.8rem !important;
-    padding: 0 1rem 6rem !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.75rem !important;
+    padding: 0 0.75rem 6rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .cards-grid .media-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    flex: none !important;
+    max-width: 100% !important;
+  }
+
+  .cards-grid .media-card .card-poster {
+    width: 100% !important;
+    aspect-ratio: 2 / 3 !important;
   }
 }
 
