@@ -71,8 +71,8 @@
   <script src="./movies-data.js?v=1" defer></script>
   <script src="./series-data.js?v=1" defer></script>
   <script src="./anime-data.js?v=1" defer></script>
-  <script src="live-tv.js?v=1" defer></script>
-  <script src="app.js?v=109" defer></script>
+
+  <script src="app.js?v=110" defer></script>
 </head>
 <body>
 
@@ -118,10 +118,10 @@
           <ion-icon name="compass-outline"></ion-icon>
           <span>Explore</span>
         </button>
-        <button class="nav-item" data-tab="live">
+        <button class="nav-item" data-tab="party">
           <div class="active-glow"></div>
-          <ion-icon name="radio-outline"></ion-icon>
-          <span>Live TV</span>
+          <ion-icon name="people-outline"></ion-icon>
+          <span>Watch Together</span>
         </button>
 
         <span class="nav-group-label" style="margin-top:1rem;">LIBRARY</span>
@@ -144,13 +144,20 @@
               Settings
             </button>
           </div>
-          <div class="sidebar-user">
-            <div class="user-avatar"><ion-icon name="person-outline"></ion-icon></div>
+          <div class="sidebar-user premium-profile">
+            <div class="user-avatar-premium">
+              <ion-icon name="person"></ion-icon>
+              <div class="avatar-ring"></div>
+            </div>
             <div class="user-info">
               <div class="user-name">Guest</div>
-              <div class="user-role">Free Plan</div>
+              <div class="user-role premium-badge">
+                <ion-icon name="sparkles"></ion-icon> Free Plan
+              </div>
             </div>
-            <ion-icon name="chevron-up-outline" style="margin-left:auto; color: var(--text-dim);"></ion-icon>
+            <div class="profile-arrow">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </div>
           </div>
         </div>
       </div>
@@ -199,36 +206,27 @@
         </div>
       </section>
 
-      <!-- LIVE TV TAB -->
-      <section class="tab-panel" id="panel-live">
-          <div class="page-header">
-            <div class="page-title-row">
-              <h1 class="page-title">Live TV</h1>
-              <span class="page-count" id="liveCount">Loading...</span>
-            </div>
-            <div class="explore-search-bar">
-              <ion-icon name="search-outline"></ion-icon>
-              <input type="text" id="liveSearch" placeholder="Search channels…" autocomplete="off">
-            </div>
-            <div class="filter-pills-row" id="liveCategoryFilter">
-              <button class="pill-btn active" data-cat="all">All</button>
-              <button class="pill-btn" data-cat="News">News</button>
-              <button class="pill-btn" data-cat="Arabic">Arabic</button>
-              <button class="pill-btn" data-cat="Business">Business</button>
-              <button class="pill-btn" data-cat="Science">Science</button>
-              <button class="pill-btn" data-cat="General">General</button>
+      <!-- WATCH TOGETHER TAB -->
+      <section class="tab-panel" id="panel-party">
+        <div class="party-container">
+          <div class="party-hero">
+            <ion-icon name="videocam-outline" class="party-icon-main"></ion-icon>
+            <h2>Watch Together</h2>
+            <p>Create a room and invite your friends to sync your movie and series playback in real-time.</p>
+          </div>
+          <div class="party-actions">
+            <button class="party-btn create-room-btn">
+              <ion-icon name="add-circle-outline"></ion-icon>
+              <span>Create New Room</span>
+            </button>
+            <div class="party-divider"><span>OR</span></div>
+            <div class="party-join-box">
+              <input type="text" placeholder="Enter Room Code (e.g. A7X9P)">
+              <button class="party-btn join-room-btn">Join</button>
             </div>
           </div>
-          <div class="live-loading hidden" id="liveLoading">
-            <ion-icon name="sync-outline" class="spin-icon"></ion-icon>
-            <p>Loading channels…</p>
-          </div>
-          <div class="live-grid" id="liveGrid"></div>
-          <div class="empty-state hidden" id="liveEmpty">
-            <ion-icon name="tv-outline"></ion-icon>
-            <p>No channels found.</p>
-          </div>
-        </section>
+        </div>
+      </section>
 
 
       <!-- WATCHLIST TAB -->
