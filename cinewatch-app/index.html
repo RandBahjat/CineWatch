@@ -72,7 +72,7 @@
   <script src="./series-data.js?v=1" defer></script>
   <script src="./anime-data.js?v=1" defer></script>
 
-  <script src="app.js?v=136" defer></script>
+  <script src="app.js?v=139" defer></script>
 </head>
 <body>
 
@@ -282,28 +282,30 @@
       <div class="settings-container" style="padding-top: 0;">
         <div class="settings-card">
           <h3>Appearance</h3>
-          <div class="settings-row">
-            <div class="settings-info">
-              <h4>Theme Mode</h4>
-              <p>Switch between Dark Mode and Light Mode.</p>
+            <div class="settings-row">
+              <div class="settings-info">
+                <h4>Theme Mode</h4>
+                <p>Switch between Light, Dark, or System Default.</p>
+              </div>
+              <select class="settings-select" id="themeSelect">
+                <option value="system">System Default</option>
+                <option value="dark">Dark Mode</option>
+                <option value="light">Light Mode</option>
+              </select>
             </div>
-            <button class="settings-btn" id="pageThemeToggleBtn">
-              <ion-icon name="contrast-outline"></ion-icon> Toggle Theme
-            </button>
-          </div>
         </div>
         
         <div class="settings-card">
           <h3>App Information</h3>
-          <div class="settings-row">
-            <div class="settings-info">
-              <h4>Version</h4>
-              <p>CineWatch Desktop v1.0.0</p>
+            <div class="settings-row">
+              <div class="settings-info">
+                <h4>Version</h4>
+                <p>CineWatch App v1.0.0</p>
+              </div>
+              <button class="settings-btn" id="pageCheckUpdateBtn">
+                <ion-icon name="cloud-download-outline"></ion-icon> Check for Updates
+              </button>
             </div>
-            <button class="settings-btn" id="pageCheckUpdateBtn">
-              <ion-icon name="cloud-download-outline"></ion-icon> Check for Updates
-            </button>
-          </div>
         </div>
 
         <!-- Save Button -->
