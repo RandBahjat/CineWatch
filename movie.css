@@ -8076,52 +8076,22 @@ body.rtl-layout .ai-prompt-card {
 
 /* Premium Download App Button */
 .nav-download-btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 8px;
-  background: linear-gradient(135deg, rgba(229, 9, 20, 0.9), rgba(179, 7, 16, 0.95));
-  color: white !important;
+  color: #fff;
   text-decoration: none;
-  padding: 6px 14px 6px 6px;
-  border-radius: 50px;
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 0.9rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.4);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 6px 16px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.nav-download-btn::before {
-  content: '';
-  position: absolute;
-  top: 0; left: -100%;
-  width: 100%; height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  transition: all 0.5s ease;
 }
 
 .nav-download-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(229, 9, 20, 0.6);
-  border-color: rgba(255, 255, 255, 0.4);
-}
-
-.nav-download-btn:hover::before {
-  left: 100%;
-}
-
-.download-icon-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: white;
-  color: #e50914;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  font-size: 1.1rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
 }
