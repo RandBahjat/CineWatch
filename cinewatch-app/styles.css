@@ -1988,6 +1988,7 @@ html, body {
   flex-direction: column;
   gap: 1.5rem;
   max-width: 800px;
+  padding-bottom: 5rem;
 }
 
 .settings-save-btn {
