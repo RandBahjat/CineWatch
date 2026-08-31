@@ -1208,42 +1208,6 @@ function startApp() {
   });
 
   // Settings page buttons
-  const themeSelect = document.getElementById('themeSelect');
-  if (themeSelect) {
-    // Check initial system preference
-    const prefersLight = window.matchMedia('(prefers-color-scheme: light)');
-    
-    themeSelect.addEventListener('change', (e) => {
-      const mode = e.target.value;
-      if (mode === 'light') {
-        document.documentElement.classList.add('light-mode');
-        showToast('Switched to Light Mode');
-      } else if (mode === 'dark') {
-        document.documentElement.classList.remove('light-mode');
-        showToast('Switched to Dark Mode');
-      } else {
-        // System Default
-        if (prefersLight.matches) {
-          document.documentElement.classList.add('light-mode');
-        } else {
-          document.documentElement.classList.remove('light-mode');
-        }
-        showToast('Using System Default Theme');
-      }
-    });
-
-    // Listen for system theme changes if set to system
-    prefersLight.addEventListener('change', (e) => {
-      if (themeSelect.value === 'system') {
-        if (e.matches) {
-          document.documentElement.classList.add('light-mode');
-        } else {
-          document.documentElement.classList.remove('light-mode');
-        }
-      }
-    });
-  }
-
   const updateBtn = document.getElementById('pageCheckUpdateBtn');
   if (updateBtn) {
     updateBtn.addEventListener('click', () => {
