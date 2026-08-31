@@ -1,6 +1,6 @@
 {
   "name": "cinewatch-app",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "CineWatch Movies & Series Standalone Mobile and Desktop Application",
   "main": "main.js",
   "scripts": {
@@ -29,6 +29,7 @@
     "directories": {
       "output": "C:\\CinewatchBuild"
     },
+    "artifactName": "CineWatch-v${version}-Setup.${ext}",
     "nsis": {
       "oneClick": true,
       "perMachine": false,
