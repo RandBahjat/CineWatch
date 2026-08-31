@@ -72,9 +72,16 @@
   <script src="./series-data.js?v=1" defer></script>
   <script src="./anime-data.js?v=1" defer></script>
   <script src="live-tv.js?v=1" defer></script>
-  <script src="app.js?v=83" defer></script>
+  <script src="app.js?v=84" defer></script>
 </head>
 <body>
+
+  <!-- Custom Window Controls -->
+  <div class="window-controls">
+    <button class="win-btn win-min" id="winMinBtn"><ion-icon name="remove"></ion-icon></button>
+    <button class="win-btn win-max" id="winMaxBtn"><ion-icon name="stop-outline"></ion-icon></button>
+    <button class="win-btn win-close" id="winCloseBtn"><ion-icon name="close"></ion-icon></button>
+  </div>
 
   <!-- Mobile Topbar (hidden on desktop via CSS) -->
   <header class="topbar" id="topbar">
