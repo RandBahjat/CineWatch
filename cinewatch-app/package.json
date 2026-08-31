@@ -1,6 +1,6 @@
 {
   "name": "cinewatch-app",
-  "version": "1.0.0",
+  "version": "1.2.1",
   "description": "CineWatch Movies & Series Standalone Mobile and Desktop Application",
   "main": "main.js",
   "scripts": {
@@ -37,7 +37,7 @@
     },
     "win": {
       "target": "portable",
-      "icon": "icon.ico"
+      "icon": "build/icon.ico"
     },
     "publish": [{
       "provider": "github",
