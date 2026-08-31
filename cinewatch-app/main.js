@@ -14,7 +14,12 @@ function createWindow() {
     title: 'CineWatch App',
     icon: path.join(__dirname, 'icon.ico'),
     autoHideMenuBar: true,
-    frame: false, // Makes the app borderless
+    titleBarStyle: 'hidden',
+    titleBarOverlay: {
+      color: '#06070a',
+      symbolColor: '#ffffff',
+      height: 32
+    },
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
