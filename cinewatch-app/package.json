@@ -36,7 +36,8 @@
       "uninstallerIcon": "icon.ico"
     },
     "win": {
-      "target": "portable"
+      "target": "portable",
+      "icon": "icon.ico"
     },
     "publish": [{
       "provider": "github",
