@@ -1,5 +1,6 @@
-const { app, BrowserWindow, shell } = require('electron');
+const { app, BrowserWindow, shell, dialog } = require('electron');
 const path = require('path');
+const { autoUpdater } = require('electron-updater');
 
 let mainWindow;
 
@@ -33,8 +34,37 @@ function createWindow() {
   });
 }
 
-app.whenReady().then(createWindow);
+app.whenReady().then(() => {
+  createWindow();
+  
+  // Check for updates shortly after startup
+  setTimeout(() => {
+    autoUpdater.checkForUpdatesAndNotify();
+  }, 2000);
+});
 
+// Auto Updater Events
+autoUpdater.on('update-available', () => {
+  dialog.showMessageBox({
+    type: 'info',
+    title: 'Update Available',
+    message: 'A new version of CineWatch is available. Downloading now...'
+  });
+});
+
+autoUpdater.on('update-downloaded', () => {
+  dialog.showMessageBox({
+    type: 'question',
+    buttons: ['Install and Relaunch', 'Later'],
+    defaultId: 0,
+    title: 'Update Ready',
+    message: 'The new update has been downloaded. Restart the application to apply the updates.'
+  }).then((result) => {
+    if (result.response === 0) {
+      autoUpdater.quitAndInstall();
+    }
+  });
+});
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
     app.quit();
