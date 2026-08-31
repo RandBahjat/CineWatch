@@ -2387,3 +2387,19 @@ html.light-mode .toast {
   font-size: 0.75rem;
   color: var(--text-dim);
 }
+
+/* ==========================================================================
+   APP DRAG REGION (For borderless window)
+   ========================================================================== */
+.sidebar, .navbar, .page-header, .explore-head {
+  -webkit-app-region: drag;
+}
+
+/* Make buttons and inputs inside drag regions clickable */
+.sidebar button, .sidebar a, .sidebar input, 
+.navbar button, .navbar a, .navbar input,
+.page-header button, .page-header a, .page-header input,
+.explore-head button, .explore-head a, .explore-head input,
+.filter-pills-row, .explore-search-bar {
+  -webkit-app-region: no-drag;
+}
