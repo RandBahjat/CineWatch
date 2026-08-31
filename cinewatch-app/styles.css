@@ -1307,13 +1307,22 @@ html, body {
 .detail-sheet {
   position: relative;
   width: 100%;
-  max-width: 680px;
-  max-height: 90vh;
-  background: var(--bg-modal);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
+  max-width: 800px;
+  max-height: 85vh;
+  background: rgba(10, 12, 20, 0.65);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
   overflow-y: auto;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9), inset 0 1px 0 rgba(255,255,255,0.1);
+  transform: scale(0.95) translateY(20px);
+  opacity: 0;
+  animation: modalScaleUp 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes modalScaleUp {
+  to { transform: scale(1) translateY(0); opacity: 1; }
 }
 
 .sheet-close-btn {
@@ -1345,19 +1354,21 @@ html, body {
 .detail-hero {
   position: relative;
   width: 100%;
-  height: 280px;
+  height: 380px;
   background-size: cover;
   background-position: center 20%;
   display: flex;
   align-items: flex-end;
-  padding: 1.5rem 2rem;
+  padding: 2rem 2.5rem;
+  border-radius: 24px 24px 0 0;
 }
 
 .detail-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, var(--bg-modal) 0%, rgba(8, 10, 15, 0.7) 40%, transparent 100%);
+  background: linear-gradient(to top, rgba(10, 12, 20, 1) 0%, rgba(10, 12, 20, 0.4) 50%, transparent 100%);
+  border-radius: 24px 24px 0 0;
 }
 
 .detail-hero-content {
@@ -2400,8 +2411,221 @@ html.light-mode .toast {
 .navbar button, .navbar a, .navbar input,
 .page-header button, .page-header a, .page-header input,
 .explore-head button, .explore-head a, .explore-head input,
-.filter-pills-row, .explore-search-bar {
+.filter-pills-row, .ex.page-header button {
   -webkit-app-region: no-drag;
+}
+
+/* ==========================================================================
+   WATCH TOGETHER UI
+   ========================================================================== */
+.party-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.party-hero {
+  margin-bottom: 2.5rem;
+}
+
+.party-icon-main {
+  font-size: 5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 20px var(--primary-glow));
+  animation: floatIcon 3s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.party-hero h2 {
+  font-size: 2.5rem;
+  font-family: var(--font-heading);
+  margin-bottom: 0.5rem;
+}
+
+.party-hero p {
+  color: var(--text-dim);
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.party-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 340px;
+}
+
+.party-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 15px var(--primary-glow);
+}
+
+.party-btn:hover {
+  transform: translateY(-2px);
+  background: #ff1c28;
+}
+
+.party-divider {
+  display: flex;
+  align-items: center;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+.party-divider::before, .party-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-subtle);
+  margin: 0 10px;
+}
+
+.party-join-box {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.party-join-box input {
+  flex: 1;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 0.8rem 1rem;
+  color: #fff;
+  outline: none;
+  font-family: var(--font-body);
+}
+
+.party-join-box input:focus {
+  border-color: var(--primary);
+}
+
+.join-room-btn {
+  padding: 0.8rem 1.5rem;
+  background: var(--bg-card-hover);
+  box-shadow: none;
+}
+
+.join-room-btn:hover {
+  background: var(--border-subtle);
+}
+
+/* ==========================================================================
+   PREMIUM PROFILE
+   ========================================================================== */
+.premium-profile {
+  position: relative;
+  background: linear-gradient(145deg, rgba(20,22,30,0.8) 0%, rgba(10,12,18,0.9) 100%);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 0.8rem;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.premium-profile::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(229,9,20,0.15), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.premium-profile:hover {
+  transform: translateY(-3px);
+  border-color: rgba(229,9,20,0.4);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5), 0 0 15px rgba(229,9,20,0.2);
+}
+
+.premium-profile:hover::before {
+  opacity: 1;
+}
+
+.user-avatar-premium {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(229,9,20,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-size: 1.3rem;
+  z-index: 2;
+}
+
+.avatar-ring {
+  position: absolute;
+  inset: -2px;
+  border-radius: 14px;
+  background: conic-gradient(from 0deg, var(--primary), transparent 60%);
+  animation: spinRing 4s linear infinite;
+  opacity: 0.5;
+  z-index: -1;
+  mask-image: radial-gradient(transparent 58%, black 60%);
+  -webkit-mask-image: radial-gradient(transparent 58%, black 60%);
+}
+
+@keyframes spinRing {
+  to { transform: rotate(360deg); }
+}
+
+.premium-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #fbbf24 !important;
+  font-weight: 600;
+  font-size: 0.75rem;
+  background: rgba(251, 191, 36, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.premium-badge ion-icon {
+  font-size: 0.85rem;
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; text-shadow: 0 0 10px rgba(251, 191, 36, 0.8); }
+}
+
+.profile-arrow {
+  margin-left: auto;
+  color: var(--text-dim);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.premium-profile:hover .profile-arrow {
+  transform: translateX(4px);
+  color: #fff;
 }
 
 /* ==========================================================================
