@@ -1090,35 +1090,102 @@ function startApp() {
     authOverlay?.classList.add('hidden');
   });
 
-  // Avatar file picker (via native input)
+  // ── Restore saved profile data on load ───────────────────────────────
+  const savedAvatar = localStorage.getItem('cw_avatar');
+  const savedBanner = localStorage.getItem('cw_banner');
+  const savedTheme  = localStorage.getItem('cw_theme') || 'dark';
+
+  if (savedAvatar) {
+    const avatar = document.getElementById('profileAvatar');
+    if (avatar) {
+      avatar.style.backgroundImage = `url(${savedAvatar})`;
+      avatar.style.backgroundSize = 'cover';
+      avatar.style.backgroundPosition = 'center';
+      const icon = avatar.querySelector('ion-icon');
+      if (icon) icon.style.display = 'none';
+    }
+  }
+  if (savedBanner) {
+    const banner = document.getElementById('profileBanner');
+    if (banner) banner.style.backgroundImage = `url(${savedBanner})`;
+  }
+
+  // Apply saved theme
+  function applyTheme(mode) {
+    const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+    if (mode === 'light') {
+      document.documentElement.classList.add('light-mode');
+    } else if (mode === 'dark') {
+      document.documentElement.classList.remove('light-mode');
+    } else {
+      prefersLight ? document.documentElement.classList.add('light-mode')
+                   : document.documentElement.classList.remove('light-mode');
+    }
+    // Update active pill
+    document.querySelectorAll('.theme-pill').forEach(p => {
+      p.classList.toggle('active', p.dataset.theme === mode);
+    });
+  }
+  applyTheme(savedTheme);
+
+  // Theme pills
+  document.querySelectorAll('.theme-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      const mode = pill.dataset.theme;
+      localStorage.setItem('cw_theme', mode);
+      applyTheme(mode);
+      const labels = { system: 'Using System Default', dark: 'Switched to Dark Mode', light: 'Switched to Light Mode' };
+      showToast(labels[mode]);
+    });
+  });
+
+  // Listen for system theme changes when mode = system
+  window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
+    if ((localStorage.getItem('cw_theme') || 'dark') === 'system') {
+      e.matches ? document.documentElement.classList.add('light-mode')
+                : document.documentElement.classList.remove('light-mode');
+    }
+  });
+
+  // ── Avatar file picker ────────────────────────────────────────────────
   const avatarInput = document.getElementById('avatarFileInput');
   if (avatarInput) {
     avatarInput.addEventListener('change', (e) => {
       const file = e.target.files[0];
       if (!file) return;
-      const url = URL.createObjectURL(file);
-      const avatar = document.getElementById('profileAvatar');
-      if (avatar) {
-        avatar.style.backgroundImage = `url(${url})`;
-        avatar.style.backgroundSize = 'cover';
-        avatar.style.backgroundPosition = 'center';
-        const icon = avatar.querySelector('ion-icon');
-        if (icon) icon.style.display = 'none';
-      }
-      showToast('Profile picture updated!');
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        const dataUrl = ev.target.result;
+        localStorage.setItem('cw_avatar', dataUrl);
+        const avatar = document.getElementById('profileAvatar');
+        if (avatar) {
+          avatar.style.backgroundImage = `url(${dataUrl})`;
+          avatar.style.backgroundSize = 'cover';
+          avatar.style.backgroundPosition = 'center';
+          const icon = avatar.querySelector('ion-icon');
+          if (icon) icon.style.display = 'none';
+        }
+        showToast('Profile picture saved!');
+      };
+      reader.readAsDataURL(file);
     });
   }
 
-  // Banner file picker (via native input)
+  // ── Banner file picker ────────────────────────────────────────────────
   const bannerInput = document.getElementById('bannerFileInput');
   if (bannerInput) {
     bannerInput.addEventListener('change', (e) => {
       const file = e.target.files[0];
       if (!file) return;
-      const url = URL.createObjectURL(file);
-      const banner = document.getElementById('profileBanner');
-      if (banner) banner.style.backgroundImage = `url(${url})`;
-      showToast('Cover photo updated!');
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        const dataUrl = ev.target.result;
+        localStorage.setItem('cw_banner', dataUrl);
+        const banner = document.getElementById('profileBanner');
+        if (banner) banner.style.backgroundImage = `url(${dataUrl})`;
+        showToast('Cover photo saved!');
+      };
+      reader.readAsDataURL(file);
     });
   }
 
