@@ -72,7 +72,7 @@
   <script src="./series-data.js?v=1" defer></script>
   <script src="./anime-data.js?v=1" defer></script>
 
-  <script src="app.js?v=181" defer></script>
+  <script src="app.js?v=184" defer></script>
 </head>
 <body>
 
@@ -254,7 +254,7 @@
             
             <div class="input-group hidden" id="roomCodeGroup" style="display: flex; flex-direction: column; gap: 0.5rem;">
               <label style="font-size: 0.9rem; color: var(--text-sub); font-weight: 600;">Room Code (8 characters)</label>
-              <input type="text" id="roomCodeInput" maxlength="8" style="width: 100%; padding: 0.8rem; border-radius: var(--radius-md); background: rgba(255, 255, 255, 0.08); border: 1px solid var(--border-subtle); color: var(--primary); font-family: monospace; font-size: 1.2rem; font-weight: 700; outline: none; text-align: center; letter-spacing: 4px;">
+              <input type="text" id="roomCodeInput" maxlength="8" placeholder="e.g. X9Q2P4M1" style="width: 100%; padding: 0.8rem; border-radius: var(--radius-md); background: rgba(255, 255, 255, 0.08); border: 1px solid var(--border-subtle); color: var(--primary); font-family: monospace; font-size: 1.2rem; font-weight: 700; outline: none; text-align: center; letter-spacing: 4px;">
               <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 0.2rem;">No one can join unless they enter this exact code.</p>
             </div>
             
@@ -271,7 +271,10 @@
         </div>
         
         <div class="party-container hidden" id="partyActiveScreen">
-          <div class="party-hero" style="margin-bottom: 2rem;">
+          <div class="party-hero" style="margin-bottom: 2rem; position: relative;">
+            <button id="goBackFromActiveRoom" style="position: absolute; top: -10px; left: 0; background: transparent; border: none; color: var(--text-sub); font-size: 1.5rem; cursor: pointer; z-index: 10;">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </button>
             <div style="width: 80px; height: 80px; background: rgba(229, 9, 20, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
               <ion-icon name="radio-outline" style="font-size: 2.5rem; color: var(--primary);"></ion-icon>
             </div>
@@ -287,6 +290,12 @@
              <div style="display: flex; justify-content: space-between; align-items: center;" id="activeRoomCodeRow">
                <span style="color: var(--text-sub); font-size: 0.9rem; font-weight: 600;">Room Code</span>
                <span id="activeRoomCode" style="color: #fff; font-family: monospace; font-size: 1.1rem; letter-spacing: 2px;"></span>
+             </div>
+             <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 1rem; margin-top: 0.5rem;" id="activeRoomMembersRow">
+               <span style="color: var(--text-sub); font-size: 0.9rem; font-weight: 600;">Members</span>
+               <span id="activeRoomMembers" style="color: #fff; font-size: 0.9rem; font-weight: 600; display: flex; align-items: center; gap: 0.4rem;">
+                 <ion-icon name="people-outline"></ion-icon> 1 / 8
+               </span>
              </div>
              
              <button class="party-btn" id="leaveRoomBtn" style="background: rgba(255,255,255,0.08); color: var(--text-main); width: 100%; justify-content: center; margin-top: 1rem; box-shadow: none; border: 1px solid var(--border-subtle);">
