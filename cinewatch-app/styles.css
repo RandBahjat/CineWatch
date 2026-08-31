@@ -1,5 +1,5 @@
 /* Hide topbar on desktop — sidebar handles all navigation */
-@media (min-width: 861px) {
+@media (min-width: 1025px) {
   .topbar { display: none !important; }
 }
 
@@ -794,6 +794,15 @@ html, body {
 }
 
 /* ==========================================================================
+   MOBILE-SPECIFIC ENHANCEMENTS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .window-controls {
+    display: none;
+  }
+}
+
+/* ==========================================================================
    MEDIA CARDS
    ========================================================================== */
 .media-card {
@@ -1539,7 +1548,7 @@ html, body {
   pointer-events: auto;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1024px) {
   .sidebar {
     display: none;
   }
