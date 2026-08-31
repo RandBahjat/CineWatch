@@ -1038,9 +1038,13 @@ function startApp() {
   }
   
   if (mobileProfileBtn) {
-    mobileProfileBtn.addEventListener('click', () => {
+    mobileProfileBtn.addEventListener('click', async () => {
       // Show auth screen if not logged in, otherwise show settings
-      const activeUser = localStorage.getItem('cw_currentUser');
+      let activeUser = null;
+      if (window.CW_API) {
+        activeUser = await window.CW_API.getCurrentUser();
+      }
+      
       if (activeUser) {
         settingsOverlay?.classList.remove('hidden');
       } else {
@@ -1083,30 +1087,33 @@ function startApp() {
   document.getElementById('switchToSignUp')?.addEventListener('click', (e) => { e.preventDefault(); switchAuthTab('signup'); });
   document.getElementById('switchToSignIn')?.addEventListener('click', (e) => { e.preventDefault(); switchAuthTab('signin'); });
 
-  // Local Storage Auth System
-  function getDb() {
-    return JSON.parse(localStorage.getItem('cw_users')) || [];
-  }
-  function saveDb(users) {
-    localStorage.setItem('cw_users', JSON.stringify(users));
-  }
-  
-  function updateProfileUI() {
-    const activeUser = JSON.parse(localStorage.getItem('cw_currentUser'));
+  // Supabase Auth System
+  async function updateProfileUI() {
+    let activeUser = null;
+    if (window.CW_API) {
+      activeUser = await window.CW_API.getCurrentUser();
+    }
     const profileName = document.querySelector('.profile-name h2');
     if (activeUser && profileName) {
-      profileName.textContent = activeUser.name;
+      profileName.textContent = activeUser.user_metadata?.name || activeUser.email.split('@')[0];
     } else if (profileName) {
       profileName.textContent = 'Guest';
     }
   }
   
   // Call on load
-  updateProfileUI();
+  setTimeout(updateProfileUI, 1000); // give API time to load
+
+  // Listen for auth changes from API
+  window.addEventListener('cw:authChanged', (e) => {
+    updateProfileUI();
+  });
 
   // Log Out Action
-  document.getElementById('logoutBtn')?.addEventListener('click', () => {
-    localStorage.removeItem('cw_currentUser');
+  document.getElementById('logoutBtn')?.addEventListener('click', async () => {
+    if (window.CW_API) {
+      await window.CW_API.signOut();
+    }
     showToast('Logged out successfully');
     updateProfileUI();
     
@@ -1116,28 +1123,29 @@ function startApp() {
   });
 
   // Form submissions
-  document.getElementById('formSignIn')?.addEventListener('submit', (e) => {
+  document.getElementById('formSignIn')?.addEventListener('submit', async (e) => {
     e.preventDefault();
     const email = document.getElementById('signinEmail')?.value.trim();
     const pass = document.getElementById('signinPass')?.value;
     
     if (!email || !pass) return showToast('Please enter both email and password');
     
-    const users = getDb();
-    const user = users.find(u => u.email === email && u.pass === pass);
-    
-    if (user) {
-      localStorage.setItem('cw_currentUser', JSON.stringify(user));
-      showToast(`Welcome back, ${user.name}!`);
-      updateProfileUI();
-      authOverlay?.classList.add('hidden');
-      e.target.reset();
+    if (window.CW_API) {
+      const { user, error } = await window.CW_API.signIn(email, pass);
+      if (user) {
+        showToast(`Welcome back!`);
+        updateProfileUI();
+        authOverlay?.classList.add('hidden');
+        e.target.reset();
+      } else {
+        showToast(error || 'Invalid email or password');
+      }
     } else {
-      showToast('Invalid email or password');
+      showToast('Backend API not loaded.');
     }
   });
 
-  document.getElementById('formSignUp')?.addEventListener('submit', (e) => {
+  document.getElementById('formSignUp')?.addEventListener('submit', async (e) => {
     e.preventDefault();
     const name = document.getElementById('signupName')?.value.trim();
     const email = document.getElementById('signupEmail')?.value.trim();
@@ -1146,20 +1154,19 @@ function startApp() {
     if (!name || !email || !pass) return showToast('Please fill all fields');
     if (pass.length < 6) return showToast('Password must be at least 6 characters');
     
-    const users = getDb();
-    if (users.find(u => u.email === email)) {
-      return showToast('Account with this email already exists');
+    if (window.CW_API) {
+      const { user, error } = await window.CW_API.signUp(name, email, pass);
+      if (user) {
+        showToast(`Account created! Welcome, ${name}.`);
+        updateProfileUI();
+        authOverlay?.classList.add('hidden');
+        e.target.reset();
+      } else {
+        showToast(error || 'Failed to create account');
+      }
+    } else {
+      showToast('Backend API not loaded.');
     }
-    
-    const newUser = { name, email, pass };
-    users.push(newUser);
-    saveDb(users);
-    
-    localStorage.setItem('cw_currentUser', JSON.stringify(newUser));
-    showToast(`Account created! Welcome, ${name}.`);
-    updateProfileUI();
-    authOverlay?.classList.add('hidden');
-    e.target.reset();
   });
 
   // ── Restore saved profile data on load ───────────────────────────────
