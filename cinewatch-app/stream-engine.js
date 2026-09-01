@@ -56,22 +56,20 @@ class CineWatchStreamEngine {
     for (const base of CONSUMET_ENDPOINTS) {
       try {
         const searchUrl = `${base}/movies/flixhq/${encodeURIComponent(cleanTitle)}`;
-        const searchRes = await fetch(searchUrl, { signal: AbortSignal.timeout(4500) });
+        const searchRes = await fetch(searchUrl, { signal: AbortSignal.timeout(2000) });
         if (!searchRes.ok) continue;
 
         const searchData = await searchRes.json();
         if (!searchData || !searchData.results || searchData.results.length === 0) continue;
 
-        // Find best match by title & year
         let match = searchData.results.find(r => 
           r.title.toLowerCase() === cleanTitle.toLowerCase() && (!item.year || r.releaseDate === String(item.year))
         ) || searchData.results[0];
 
         if (!match || !match.id) continue;
 
-        // Fetch media info (episodes/servers)
         const infoUrl = `${base}/movies/flixhq/info?id=${encodeURIComponent(match.id)}`;
-        const infoRes = await fetch(infoUrl, { signal: AbortSignal.timeout(4500) });
+        const infoRes = await fetch(infoUrl, { signal: AbortSignal.timeout(2000) });
         if (!infoRes.ok) continue;
 
         const infoData = await infoRes.json();
@@ -86,14 +84,12 @@ class CineWatchStreamEngine {
 
         if (!targetEpisodeId) continue;
 
-        // Fetch streaming sources (.m3u8 playlist)
         const watchUrl = `${base}/movies/flixhq/watch?episodeId=${encodeURIComponent(targetEpisodeId)}&mediaId=${encodeURIComponent(match.id)}`;
-        const watchRes = await fetch(watchUrl, { signal: AbortSignal.timeout(5000) });
+        const watchRes = await fetch(watchUrl, { signal: AbortSignal.timeout(2500) });
         if (!watchRes.ok) continue;
 
         const watchData = await watchRes.json();
         if (watchData && watchData.sources && watchData.sources.length > 0) {
-          // Pick best quality / master stream
           const masterSource = watchData.sources.find(s => s.quality === 'auto' || s.quality === '1080p' || s.isM3U8) || watchData.sources[0];
           
           const result = {
@@ -113,7 +109,8 @@ class CineWatchStreamEngine {
           return result;
         }
       } catch (e) {
-        // Try next endpoint silently
+        // Stop retrying multiple endpoints if the first one times out, to save user wait time
+        break; 
       }
     }
 
