@@ -1326,6 +1326,78 @@ select,
   overflow: hidden;
 }
 
+/* ==========================================================================
+   VIDSTACK PLAYER GLASSMORPHIC THEMING
+   ========================================================================== */
+media-player {
+  --video-brand: #e50914;
+  --video-focus: #ff1c2a;
+  --video-bg: transparent;
+  --media-border-radius: 18px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+}
+
+media-player.vds-player {
+  background: #000;
+}
+
+/* Vidstack Autoplay & State Selectors */
+.player[autoplay][data-started] {
+  /** autoplay has successfully started */
+  opacity: 1;
+}
+
+.player[data-autoplay-error]:not([data-started]) {
+  /** autoplay has failed - show fallback controls */
+}
+
+media-video-layout {
+  --media-controls-color: #ffffff;
+  --media-controls-bg: rgba(10, 12, 18, 0.75);
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+}
+
+.vds-controls {
+  padding: 16px 24px;
+}
+
+.vds-time-slider {
+  --media-slider-fill: linear-gradient(90deg, #ff1c2a 0%, #e50914 100%);
+  --media-slider-height: 6px;
+  --media-slider-thumb-size: 16px;
+  --media-slider-thumb-bg: #ffffff;
+  --media-slider-thumb-shadow: 0 0 12px rgba(229, 9, 20, 0.85);
+}
+
+.vds-button {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  backdrop-filter: blur(12px);
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.vds-button:hover {
+  background: rgba(229, 9, 20, 0.85);
+  transform: scale(1.1);
+  border-color: rgba(255, 28, 42, 0.6);
+  box-shadow: 0 0 16px rgba(229, 9, 20, 0.6);
+}
+
+.vds-menu {
+  background: rgba(12, 15, 24, 0.85) !important;
+  backdrop-filter: blur(28px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(190%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75) !important;
+}
+
 .ai-messages-list {
   padding: 1.5rem;
   display: flex;
