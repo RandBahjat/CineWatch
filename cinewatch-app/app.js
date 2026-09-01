@@ -969,26 +969,39 @@ function openDetail(movieId) {
 
       <div class="immersive-bottom-container">
         <div class="immersive-left">
-          <h1 class="immersive-title">${movie.title} <span class="immersive-year">${movie.year || '2026'}</span></h1>
+          <h1 class="immersive-title">${movie.title}</h1>
+          
+          <div class="immersive-meta-pills">
+            <span class="meta-badge-pill gold"><ion-icon name="star"></ion-icon> IMDb ${imdbRating}</span>
+            <span class="meta-badge-pill">${movie.year || '2026'}</span>
+            <span class="meta-badge-pill"><ion-icon name="time-outline"></ion-icon> ${movie.duration || '2h 15m'}</span>
+            <span class="meta-badge-pill highlight">4K UHD</span>
+            <span class="meta-badge-pill age">${movie.age || 'R'}</span>
+          </div>
+
           <div class="immersive-cast">${castText.toUpperCase()}</div>
           <p class="immersive-overview">${overview}</p>
+
           <div class="immersive-btn-row">
             <button class="btn-watch-now" onclick="playMovieDirect('${movie.id}')">
-              <ion-icon name="play"></ion-icon> Watch Now
+              <ion-icon name="play"></ion-icon>
+              <span>Watch Now</span>
             </button>
-            <button class="btn-more-info" onclick="toggleFavorite('${movie.id}'); openDetail('${movie.id}');">
-              <ion-icon name="${isFav ? 'checkmark-circle-outline' : 'information-circle-outline'}"></ion-icon> ${isFav ? 'In Watchlist' : 'Watchlist'}
+            <button class="btn-more-info ${isFav ? 'active-fav' : ''}" onclick="toggleFavorite('${movie.id}'); openDetail('${movie.id}');">
+              <ion-icon name="${isFav ? 'checkmark-circle' : 'add-circle-outline'}"></ion-icon>
+              <span>${isFav ? 'In Watchlist' : 'Add to Watchlist'}</span>
             </button>
           </div>
         </div>
 
         <div class="immersive-right">
-          <div class="immersive-meta-row">
-            <span class="meta-time"><ion-icon name="time-outline"></ion-icon> ${movie.duration || '2:15'}</span>
-            <span class="meta-match">IMDb ${imdbRating}</span>
-            <span class="meta-age-box">${movie.age || 'R'}</span>
+          <div class="immersive-runtime-card">
+            <div class="runtime-play-head">
+              <ion-icon name="play-circle-outline"></ion-icon>
+              <span>ESTIMATED RUNTIME</span>
+            </div>
+            <div class="runtime-play-time">Plays until ${timeString}</div>
           </div>
-          <div class="meta-subtext">RUNTIME WOULD PLAY TILL ${timeString}</div>
         </div>
       </div>
     `;
