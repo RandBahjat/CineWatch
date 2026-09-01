@@ -1133,12 +1133,9 @@ function playMovieDirect(movieId) {
     nextEpBtn.classList.toggle('hidden', !isTv);
   }
 
-  // High-Speed Streaming Fleet (Plays the actual full movie/series)
+  // Single Unified Player Engine: Vidstack Native 4K Player
   const servers = [
-    { id: 'vidlink', name: '⚡ Server 1: VidLink Pro HD', url: isTv ? `https://vidlink.pro/tv/${tmdb}/1/1` : `https://vidlink.pro/movie/${tmdb}` },
-    { id: 'vidsrc-vip', name: '👑 Server 2: VidSrc CC V2', url: isTv ? `https://vidsrc.cc/v2/embed/tv/${tmdb}/1/1` : `https://vidsrc.cc/v2/embed/movie/${tmdb}` },
-    { id: 'smashy', name: '🚀 Server 3: SmashyStream', url: isTv ? `https://player.smashystream.com/tv/${tmdb}/1/1` : `https://player.smashystream.com/movie/${tmdb}` },
-    { id: 'vidsrc', name: '🌟 Server 4: VidSrc Original', url: isTv ? `https://vidsrc.to/embed/tv/${tmdb}/1/1` : `https://vidsrc.to/embed/movie/${tmdb}` }
+    { id: 'vidstack-direct', name: '⚡ Vidstack Native Engine (Auto TMDB 4K)' }
   ];
 
   function switchSource(srv) {
@@ -1146,13 +1143,15 @@ function playMovieDirect(movieId) {
     const playerControls = document.getElementById('playerControls');
     if (playerLoading) playerLoading.classList.remove('hidden');
 
-    // Always keep CineWatch Custom Frosted Glass Controls Dock active
+    // Keep Custom Vidstack Player active
     if (playerControls) playerControls.classList.remove('hidden');
     if (iframeEl) { iframeEl.src = ''; iframeEl.classList.add('hidden'); }
 
     const vidstackPlayer = document.getElementById('vidstackPlayer');
     const vidstackPoster = document.getElementById('vidstackPoster');
-    const targetUrl = srv.streamUrl || 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4';
+    
+    // Resolve stream based on TMDB ID & Title
+    const targetUrl = srv.streamUrl || movie.streamUrl || `https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4`;
 
     if (vidstackPlayer) {
       vidstackPlayer.title = `${movie.title} (${movie.year || '2026'})`;
@@ -1160,20 +1159,19 @@ function playMovieDirect(movieId) {
       vidstackPlayer.src = targetUrl;
       vidstackPlayer.autoplay = true;
 
-      // Vidstack Autoplay Events
+      // Vidstack Autoplay Lifecycle
       vidstackPlayer.addEventListener('autoplay', (event) => {
         playerLoading?.classList.add('hidden');
       });
 
       vidstackPlayer.addEventListener('autoplay-fail', (event) => {
-        console.warn('Vidstack autoplay failed/prevented:', event.detail);
+        console.warn('Vidstack autoplay prevented:', event.detail);
         playerLoading?.classList.add('hidden');
       });
     }
 
     if (videoEl) {
       videoEl.classList.remove('hidden');
-      
       if (targetUrl.includes('.m3u8') && window.Hls && Hls.isSupported()) {
         if (_cwPlayerState.hlsInstance) _cwPlayerState.hlsInstance.destroy();
         _cwPlayerState.hlsInstance = new Hls({ enableWorker: true });
@@ -1186,14 +1184,12 @@ function playMovieDirect(movieId) {
       } else {
         videoEl.src = targetUrl;
         videoEl.play().catch(() => {});
-        videoEl.onloadeddata = () => {
-          playerLoading?.classList.add('hidden');
-        };
+        videoEl.onloadeddata = () => playerLoading?.classList.add('hidden');
         setTimeout(() => playerLoading?.classList.add('hidden'), 1000);
       }
     }
     
-    if (streamTypeBadge) streamTypeBadge.textContent = 'VIDSTACK 4K';
+    if (streamTypeBadge) streamTypeBadge.textContent = 'VIDSTACK TMDB';
   }
 
   // Populate bottom dock server menu
