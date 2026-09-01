@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cinewatch-cache-v2'; // Bumped cache version
+﻿const CACHE_NAME = 'cinewatch-cache-v99'; // Bumped cache version
 const urlsToCache = [
   './index.html',
   './styles.css',
