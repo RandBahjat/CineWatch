@@ -37,7 +37,13 @@ function createWindow() {
     if (mainWindow) mainWindow.close();
   });
 
-  // Handle fullscreen toggle via IPC or F11 (optional, HTML5 fullscreen works automatically)
+  // Enable F12 and Ctrl+Shift+I to toggle DevTools
+  mainWindow.webContents.on('before-input-event', (event, input) => {
+    if (input.key === 'F12' || (input.control && input.shift && input.key.toLowerCase() === 'i')) {
+      mainWindow.webContents.toggleDevTools();
+      event.preventDefault();
+    }
+  });
 
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
 
