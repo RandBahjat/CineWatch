@@ -1401,42 +1401,67 @@ html, body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  pointer-events: auto;
+  z-index: 30;
+}
+
+.immersive-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  pointer-events: auto;
+}
+
+.immersive-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 0.65rem 1.4rem;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: all 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  -webkit-app-region: no-drag;
+}
+
+.immersive-back-btn:hover {
+  background: var(--primary, #e50914);
+  border-color: var(--primary, #e50914);
+  color: #ffffff;
+  transform: translateX(-3px);
+  box-shadow: 0 6px 25px rgba(229, 9, 20, 0.6);
+}
+
+.immersive-back-btn ion-icon {
+  font-size: 1.25rem;
 }
 
 .immersive-logo {
   font-family: var(--font-display);
   font-size: 1.6rem;
   font-weight: 800;
-  color: var(--primary); /* Warm orange from mockup */
+  color: #ffffff;
   letter-spacing: -0.5px;
+}
+
+.immersive-logo span {
+  color: var(--primary, #e50914);
 }
 
 .immersive-top-actions {
   display: flex;
   gap: 1rem;
+  pointer-events: auto;
 }
-
-.top-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255,255,255,0.1);
-  color: #fff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 20px;
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.top-btn:hover { background: rgba(255,255,255,0.2); }
-.top-btn.icon-only { padding: 0.6rem; border-radius: 50%; font-size: 1.2rem; }
-.top-btn ion-icon { font-size: 1.2rem; }
 
 /* ── Bottom Content ── */
 .immersive-bottom-container {
