@@ -1090,6 +1090,10 @@ function startApp() {
   document.getElementById('switchToSignUp')?.addEventListener('click', (e) => { e.preventDefault(); switchAuthTab('signup'); });
   document.getElementById('switchToSignIn')?.addEventListener('click', (e) => { e.preventDefault(); switchAuthTab('signin'); });
 
+  // Desktop left-panel toggle buttons
+  document.getElementById('panelSwitchToSignUp')?.addEventListener('click', () => switchAuthTab('signup'));
+  document.getElementById('panelSwitchToSignIn')?.addEventListener('click', () => switchAuthTab('signin'));
+
   // Supabase Auth System
   async function updateProfileUI() {
     let activeUser = null;
