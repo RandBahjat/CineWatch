@@ -307,7 +307,7 @@ function _tip(el, text) {
 function createCardHTML(movie, rankNum = null) {
   if (!movie) return '';
   const isFav = state.favorites.has(String(movie.id));
-  const rankBadge = rankNum ? `<div class="card-rank">ðŸ”¥ TOP ${rankNum}</div>` : '';
+  const rankBadge = rankNum ? `<div class="card-rank"><ion-icon name="flame"></ion-icon> TOP ${rankNum}</div>` : '';
   const metaYear = movie.year ? `<span>${movie.year}</span>` : '';
   const metaDur = movie.duration ? `<span>${movie.duration}</span>` : '';
   const posterSrc = movie.poster || movie.backdrop || fallbackImg;
