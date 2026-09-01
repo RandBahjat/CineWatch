@@ -76,7 +76,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="../api.js?v=v6" defer></script>
 
-  <script src="app.js?v=243" defer></script>
+  <script src="app.js?v=244" defer></script>
 </head>
 <body>
 
@@ -464,48 +464,50 @@
 
   <!-- Auth Overlay (Sign In / Create Account) -->
   <div class="auth-overlay hidden" id="authOverlay">
-    <!-- Cinematic blurred background -->
     <div class="auth-bg"></div>
-    <!-- Close button -->
     <button class="auth-close-btn" id="closeAuthBtn" aria-label="Close">
       <ion-icon name="close-outline"></ion-icon>
     </button>
 
     <div class="auth-card">
-      <!-- LEFT: Cinematic Branding Panel -->
+
+      <!-- LEFT PANEL: Branding + Toggle -->
       <div class="auth-panel-left">
-        <div class="auth-poster-grid">
-          <img src="https://image.tmdb.org/t/p/w300/1E5baAaEse26fej7uHcjOgEE2t2.jpg" alt="" />
-          <img src="https://image.tmdb.org/t/p/w300/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg" alt="" />
-          <img src="https://image.tmdb.org/t/p/w300/gKkl37BQuKTanygYQG1pyYgLVgf.jpg" alt="" />
-          <img src="https://image.tmdb.org/t/p/w300/rktDFPbfHfUbArZ6OOOKsXcv0Bm.jpg" alt="" />
-          <img src="https://image.tmdb.org/t/p/w300/NpEkpHHt64CbFDIeVxiMGBgBLR.jpg" alt="" />
-          <img src="https://image.tmdb.org/t/p/w300/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg" alt="" />
-        </div>
-        <div class="auth-panel-overlay">
+        <!-- Sign In left content -->
+        <div class="auth-left-content active" id="leftContentSignIn">
           <div class="auth-brand">
             <div class="auth-brand-icon"><ion-icon name="ticket"></ion-icon></div>
             <span class="auth-brand-name">Cine<em>Watch</em></span>
           </div>
-          <p class="auth-panel-tagline">Stream together,<br>everywhere.</p>
+          <h2 class="auth-left-title">Welcome Back!</h2>
+          <p class="auth-left-sub">Stream together, everywhere.</p>
+          <button class="auth-panel-toggle-btn" id="panelSwitchToSignUp">Create Account</button>
+        </div>
+        <!-- Sign Up left content -->
+        <div class="auth-left-content" id="leftContentSignUp">
+          <div class="auth-brand">
+            <div class="auth-brand-icon"><ion-icon name="ticket"></ion-icon></div>
+            <span class="auth-brand-name">Cine<em>Watch</em></span>
+          </div>
+          <h2 class="auth-left-title">Hello, Friend!</h2>
+          <p class="auth-left-sub">Join CineWatch and start watching together.</p>
+          <button class="auth-panel-toggle-btn" id="panelSwitchToSignIn">Sign In</button>
         </div>
       </div>
 
-      <!-- RIGHT: Form Panel -->
+      <!-- RIGHT PANEL: Forms -->
       <div class="auth-panel-right">
-        <div class="auth-form-header">
-          <h2 class="auth-form-title" id="authFormTitle">Welcome back</h2>
-          <p class="auth-form-sub">Sign in to your account to continue</p>
-        </div>
 
-        <!-- Pill Tab Switcher -->
-        <div class="auth-tabs">
+        <!-- Mobile-only tab switcher (hidden on desktop) -->
+        <div class="auth-tabs mobile-only-tabs">
           <button class="auth-tab active" id="tabSignIn" data-tab="signin">Sign In</button>
           <button class="auth-tab" id="tabSignUp" data-tab="signup">Create Account</button>
         </div>
 
         <!-- Sign In Form -->
         <form class="auth-form active" id="formSignIn" autocomplete="off">
+          <h2 class="auth-form-title">Sign In</h2>
+          <p class="auth-form-sub">Enter your credentials to continue</p>
           <div class="auth-field">
             <ion-icon name="mail-outline"></ion-icon>
             <input type="email" id="signinEmail" placeholder="Email address" required>
@@ -514,14 +516,14 @@
             <ion-icon name="lock-closed-outline"></ion-icon>
             <input type="password" id="signinPass" placeholder="Password" required>
           </div>
-          <button type="submit" class="auth-submit-btn">
-            Sign In <ion-icon name="arrow-forward-outline"></ion-icon>
-          </button>
-          <p class="auth-switch">Don't have an account? <a href="#" id="switchToSignUp">Create one</a></p>
+          <button type="submit" class="auth-submit-btn">Sign In</button>
+          <p class="auth-switch mobile-only-switch">Don't have an account? <a href="#" id="switchToSignUp">Create one</a></p>
         </form>
 
         <!-- Create Account Form -->
         <form class="auth-form" id="formSignUp" autocomplete="off">
+          <h2 class="auth-form-title">Create Account</h2>
+          <p class="auth-form-sub">Fill in the details to get started</p>
           <div class="auth-field">
             <ion-icon name="person-outline"></ion-icon>
             <input type="text" id="signupName" placeholder="Full name" required>
@@ -534,11 +536,10 @@
             <ion-icon name="lock-closed-outline"></ion-icon>
             <input type="password" id="signupPass" placeholder="Password (min. 6 chars)" required>
           </div>
-          <button type="submit" class="auth-submit-btn">
-            Create Account <ion-icon name="arrow-forward-outline"></ion-icon>
-          </button>
-          <p class="auth-switch">Already have an account? <a href="#" id="switchToSignIn">Sign in</a></p>
+          <button type="submit" class="auth-submit-btn">Sign Up</button>
+          <p class="auth-switch mobile-only-switch">Already have an account? <a href="#" id="switchToSignIn">Sign in</a></p>
         </form>
+
       </div>
     </div>
   </div>
