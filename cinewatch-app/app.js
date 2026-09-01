@@ -1173,25 +1173,6 @@ function playMovieDirect(movieId) {
       setTimeout(() => playerLoading?.classList.add('hidden'), 800);
     }
 
-    if (videoEl) {
-      videoEl.classList.remove('hidden');
-      if (targetUrl.includes('.m3u8') && window.Hls && Hls.isSupported()) {
-        if (_cwPlayerState.hlsInstance) _cwPlayerState.hlsInstance.destroy();
-        _cwPlayerState.hlsInstance = new Hls({ enableWorker: true });
-        _cwPlayerState.hlsInstance.loadSource(targetUrl);
-        _cwPlayerState.hlsInstance.attachMedia(videoEl);
-        _cwPlayerState.hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
-          videoEl.play().catch(() => {});
-          playerLoading?.classList.add('hidden');
-        });
-      } else {
-        videoEl.src = targetUrl;
-        videoEl.play().catch(() => {});
-        videoEl.onloadeddata = () => playerLoading?.classList.add('hidden');
-        setTimeout(() => playerLoading?.classList.add('hidden'), 800);
-      }
-    }
-    
     if (streamTypeBadge) streamTypeBadge.textContent = 'VIDSTACK TMDB';
   }
 
