@@ -1137,7 +1137,7 @@ function startApp() {
       if (activeUser) {
         settingsOverlay?.classList.remove('hidden');
       } else {
-        document.getElementById('authOverlay')?.classList.remove('hidden');
+        showAuth();
       }
     });
   }
@@ -1356,7 +1356,7 @@ function startApp() {
     
     // Redirect to home/sign in if needed, or open auth overlay
     document.getElementById('settingsOverlay')?.classList.add('hidden');
-    document.getElementById('authOverlay')?.classList.remove('hidden');
+    showAuth();
   });
 
   // Form submissions
@@ -1372,7 +1372,7 @@ function startApp() {
       if (user) {
         showToast(`Welcome back!`);
         updateProfileUI();
-        authOverlay?.classList.add('hidden');
+        hideAuth();
         e.target.reset();
       } else {
         showToast(error || 'Invalid email or password');
@@ -1396,7 +1396,7 @@ function startApp() {
       if (user) {
         showToast(`Account created! Welcome, ${name}.`);
         updateProfileUI();
-        authOverlay?.classList.add('hidden');
+        hideAuth();
         e.target.reset();
       } else {
         showToast(error || 'Failed to create account');
