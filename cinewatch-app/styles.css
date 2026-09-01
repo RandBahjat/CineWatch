@@ -3101,3 +3101,103 @@ html.light-mode .hero-slide::before {
     linear-gradient(to right, rgba(244, 245, 247, 0.95) 0%, rgba(244, 245, 247, 0.65) 30%, rgba(244, 245, 247, 0.15) 60%, transparent 80%),
     linear-gradient(to top, var(--bg-app) 0%, rgba(244, 245, 247, 0.8) 12%, rgba(244, 245, 247, 0.2) 30%, transparent 50%);
 }
+
+
+/* ===== NEW SIDEBAR USER CARD (GUEST) ===== */
+.new-profile-card {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  background: #0d0f14;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.05);
+  margin-top: auto;
+  gap: 12px;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.new-profile-card:hover {
+  background: #12141a;
+  border-color: rgba(255,255,255,0.1);
+}
+
+.avatar-blob {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.blob-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+  filter: drop-shadow(0 4px 6px rgba(255, 0, 51, 0.2));
+  transform-origin: center;
+}
+
+.user-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.user-name {
+  font-weight: 700;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.new-premium-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #2a2212;
+  color: #ffc107;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  width: fit-content;
+}
+
+/* Logout SVG Hover Animation (from React framer-motion code) */
+.logout-icon-wrapper {
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.logout-icon-wrapper:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+.logout-icon-wrapper:hover .animated-logout-svg {
+  stroke: #fff;
+}
+
+.animated-logout-svg .logout-arrow,
+.animated-logout-svg .logout-arrow-bottom,
+.animated-logout-svg .logout-door {
+  transition: transform 0.25s ease;
+}
+
+.logout-icon-wrapper:hover .animated-logout-svg .logout-arrow,
+.logout-icon-wrapper:hover .animated-logout-svg .logout-arrow-bottom {
+  transform: translateX(4px);
+}
+
+.logout-icon-wrapper:hover .animated-logout-svg .logout-door {
+  transform: translateX(-2px);
+}
