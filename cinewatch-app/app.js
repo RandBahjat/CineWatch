@@ -231,7 +231,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 window.addEventListener('appinstalled', () => {
   deferredPrompt = null;
-  showToast('CineWatch successfully installed! ðŸŽ‰');
+  showToast('CineWatch successfully installed!');
 });
 
 function triggerAppInstall() {
