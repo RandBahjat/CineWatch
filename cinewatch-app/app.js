@@ -1159,8 +1159,9 @@ function playMovieDirect(movieId) {
     const vidstackPoster = document.getElementById('vidstackPoster');
     
     // Resolve Real Stream from TMDB via Stream Engine
-    // Fallback HLS stream that will NEVER fail CORS policies (Mux Big Buck Bunny)
-    let targetUrl = `https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8`; 
+    // Fallback: If no stream exists (e.g. unreleased movie), play a YouTube trailer!
+    // We use the YouTube ID provided by the user (or any trailer ID)
+    let targetUrl = `youtube/_cMxraX_5RE`; 
     
     if (window.cwStreamEngine) {
       try {
@@ -1168,12 +1169,17 @@ function playMovieDirect(movieId) {
         if (streamData && streamData.streamUrl) {
           targetUrl = streamData.streamUrl;
           if (streamTypeBadge) streamTypeBadge.textContent = streamData.provider || 'VIDSTACK TMDB';
+        } else {
+          if (streamTypeBadge) streamTypeBadge.textContent = 'YOUTUBE TRAILER';
         }
       } catch (e) {
         console.warn('Stream resolution failed:', e);
       }
     } else if (srv.streamUrl || movie.streamUrl) {
       targetUrl = srv.streamUrl || movie.streamUrl;
+    } else if (movie.trailerYouTubeId) {
+      targetUrl = `youtube/${movie.trailerYouTubeId}`;
+      if (streamTypeBadge) streamTypeBadge.textContent = 'YOUTUBE TRAILER';
     }
 
     if (vidstackPlayer) {
@@ -1182,6 +1188,17 @@ function playMovieDirect(movieId) {
       
       // Stop old playback cleanly
       vidstackPlayer.pause();
+      
+      // Wire up YouTube Provider Configuration
+      vidstackPlayer.addEventListener('provider-change', (event) => {
+        const provider = event.detail;
+        // Check if the provider is YouTube based on type
+        if (provider?.type === 'youtube') {
+          // Enable cookies for YouTube provider as requested
+          provider.cookies = true;
+        }
+      });
+
       vidstackPlayer.src = targetUrl;
       
       vidstackPlayer.play().catch(e => console.warn('Vidstack play error:', e));
