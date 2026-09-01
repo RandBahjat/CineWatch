@@ -2911,12 +2911,9 @@ function bindEventListeners() {
     let scrollLeft;
     let hasDragged = false;
 
-    track.style.cursor = "grab";
-
     track.addEventListener("mousedown", (e) => {
       isDown = true;
       hasDragged = false;
-      track.style.cursor = "grabbing";
       track.style.scrollBehavior = "auto";
       startX = e.pageX - track.offsetLeft;
       scrollLeft = track.scrollLeft;
@@ -2926,13 +2923,11 @@ function bindEventListeners() {
     track.addEventListener("mouseleave", () => {
       if (!isDown) return;
       isDown = false;
-      track.style.cursor = "grab";
       track.style.scrollBehavior = "smooth";
     });
 
     track.addEventListener("mouseup", () => {
       isDown = false;
-      track.style.cursor = "grab";
       track.style.scrollBehavior = "smooth";
     });
 
