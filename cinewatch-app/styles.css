@@ -816,7 +816,7 @@ select,
   overflow-x: auto;
   padding: 0.5rem 0.25rem 1.2rem;
   scroll-behavior: smooth;
-  cursor: grab;
+  cursor: default;
   scrollbar-width: none;
 }
 
@@ -825,7 +825,7 @@ select,
 }
 
 .shelf-track.is-dragging {
-  cursor: grabbing;
+  cursor: default;
   scroll-behavior: auto;
 }
 
