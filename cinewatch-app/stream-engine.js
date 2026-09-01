@@ -32,6 +32,26 @@ class CineWatchStreamEngine {
       .replace(/Part \d+/gi, '')
       .trim();
 
+    // 0. Query Local Backend Extractor (/api/stream)
+    try {
+      const localApiUrl = `/api/stream?title=${encodeURIComponent(cleanTitle)}&tmdbId=${item.tmdbId || ''}&type=${item.type || 'movie'}&season=${item.season || 1}&episode=${item.episode || 1}`;
+      const localRes = await fetch(localApiUrl, { signal: AbortSignal.timeout(6000) });
+      if (localRes.ok) {
+        const localData = await localRes.json();
+        if (localData && localData.success && localData.streamUrl) {
+          const result = {
+            isDirect: true,
+            streamUrl: localData.streamUrl,
+            isM3U8: true,
+            subtitles: localData.subtitles || [],
+            provider: 'CineWatch Native 4K'
+          };
+          this.cache.set(cacheKey, result);
+          return result;
+        }
+      }
+    } catch (e) {}
+
     // 1. Try Consumet FlixHQ Provider
     for (const base of CONSUMET_ENDPOINTS) {
       try {
