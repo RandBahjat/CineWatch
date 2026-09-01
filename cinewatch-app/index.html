@@ -76,7 +76,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="../api.js?v=v6" defer></script>
 
-  <script src="app.js?v=20"></script>
+  <script src="app.js?v=21"></script>
 </head>
 <body>
 
@@ -524,6 +524,7 @@
           <div class="auth-field">
             <ion-icon name="lock-closed-outline"></ion-icon>
             <input type="password" id="signinPass" placeholder="Password" required>
+            <ion-icon name="eye-outline" class="toggle-password" style="cursor: pointer;"></ion-icon>
           </div>
           <button type="submit" class="auth-submit-btn">Sign In</button>
           <p class="auth-switch mobile-only-switch">Don't have an account? <a href="#" id="switchToSignUp">Create one</a></p>
@@ -544,6 +545,7 @@
           <div class="auth-field">
             <ion-icon name="lock-closed-outline"></ion-icon>
             <input type="password" id="signupPass" placeholder="Password (min. 6 chars)" required>
+            <ion-icon name="eye-outline" class="toggle-password" style="cursor: pointer;"></ion-icon>
           </div>
           <button type="submit" class="auth-submit-btn">Sign Up</button>
           <p class="auth-switch mobile-only-switch">Already have an account? <a href="#" id="switchToSignIn">Sign in</a></p>
