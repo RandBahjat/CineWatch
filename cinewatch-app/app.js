@@ -1523,6 +1523,44 @@ function startApp() {
     if (e.target.id === 'playerModal') closePlayer();
   });
 
+  // Window Controls (Minimize, Maximize/Restore, Close)
+  const winMinBtn = document.getElementById('winMinBtn');
+  const winMaxBtn = document.getElementById('winMaxBtn');
+  const winCloseBtn = document.getElementById('winCloseBtn');
+
+  if (winMinBtn) {
+    winMinBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (window.electronAPI && typeof window.electronAPI.windowMinimize === 'function') {
+        window.electronAPI.windowMinimize();
+      }
+    });
+  }
+
+  if (winMaxBtn) {
+    winMaxBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (window.electronAPI && typeof window.electronAPI.windowMaximize === 'function') {
+        window.electronAPI.windowMaximize();
+      } else if (document.fullscreenElement) {
+        document.exitFullscreen().catch(() => {});
+      } else {
+        document.documentElement.requestFullscreen().catch(() => {});
+      }
+    });
+  }
+
+  if (winCloseBtn) {
+    winCloseBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (window.electronAPI && typeof window.electronAPI.windowClose === 'function') {
+        window.electronAPI.windowClose();
+      } else {
+        window.close();
+      }
+    });
+  }
+
   // Settings overlay handlers
   const openSettingsBtn = document.getElementById('openSettingsBtn');
   const closeSettingsBtn = document.getElementById('closeSettingsBtn');
