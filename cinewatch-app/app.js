@@ -1,4 +1,4 @@
-/**
+﻿/**
  * CineWatch Standalone App Engine
  * High-Performance, Instant-Loading Streaming Platform Logic
  */
@@ -30,7 +30,7 @@ const TOP_10_TITLES = [
 ];
 
 let MOVIES = [];
-// FIX 4: N+1 → O(1) Map lookup instead of repeated .find() scans
+// FIX 4: N+1 â†’ O(1) Map lookup instead of repeated .find() scans
 let _movieMap = new Map();
 
 // FIX 3: Pagination constants & offsets per view
@@ -94,26 +94,26 @@ async function toggleFavorite(id, e) {
   const strId = String(id);
   const wasFav = state.favorites.has(strId);
 
-  // FIX 2: OPTIMISTIC RENDERING — update UI instantly, sync cloud in background
+  // FIX 2: OPTIMISTIC RENDERING â€” update UI instantly, sync cloud in background
   if (wasFav) {
     state.favorites.delete(strId);
     showToast('Removed from Watchlist');
   } else {
     state.favorites.add(strId);
-    showToast('Saved to Watchlist ❤️');
+    showToast('Saved to Watchlist â¤ï¸');
   }
 
   // Immediately update every fav button for this card (no full re-render needed)
   _updateAllFavButtons(strId, !wasFav);
 
-  // FIX 5: ASYNC — save & cloud sync fully non-blocking
+  // FIX 5: ASYNC â€” save & cloud sync fully non-blocking
   Promise.resolve().then(() => {
     saveFavorites();
     renderWatchlist();
   });
 
   if (window.CW_API && typeof window.CW_API.toggleFavorite === 'function') {
-    // Fire-and-forget — never blocks the UI thread
+    // Fire-and-forget â€” never blocks the UI thread
     window.CW_API.toggleFavorite(strId).catch(() => {});
   }
 }
@@ -162,11 +162,11 @@ function initCatalog() {
       }
     });
 
-    // FIX 4: Build O(1) Map — eliminates all N+1 .find() scans across the app
+    // FIX 4: Build O(1) Map â€” eliminates all N+1 .find() scans across the app
     _movieMap.clear();
     MOVIES.forEach(m => _movieMap.set(String(m.id), m));
 
-    // FIX 5: ASYNC — render home on next frame, don't block catalog init
+    // FIX 5: ASYNC â€” render home on next frame, don't block catalog init
     requestAnimationFrame(() => renderHome());
   } catch (err) {
     console.error('Error initializing catalog:', err);
@@ -231,7 +231,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 
 window.addEventListener('appinstalled', () => {
   deferredPrompt = null;
-  showToast('CineWatch successfully installed! 🎉');
+  showToast('CineWatch successfully installed! ðŸŽ‰');
 });
 
 function triggerAppInstall() {
@@ -278,7 +278,7 @@ function switchTab(tabId) {
   }
 }
 
-// FIX 5: Async chunked renderer — renders PAGE_SIZE cards per animation frame
+// FIX 5: Async chunked renderer â€” renders PAGE_SIZE cards per animation frame
 function renderCardsAsync(items, container, offset = 0, appendMode = false) {
   if (!container) return;
   const chunk = items.slice(offset, offset + PAGE_SIZE);
@@ -298,7 +298,7 @@ function renderCardsAsync(items, container, offset = 0, appendMode = false) {
   });
 }
 
-// FIX 1: Tooltip helper — sets title attribute for browser-native tooltips
+// FIX 1: Tooltip helper â€” sets title attribute for browser-native tooltips
 function _tip(el, text) {
   if (el) el.setAttribute('title', text);
 }
@@ -307,7 +307,7 @@ function _tip(el, text) {
 function createCardHTML(movie, rankNum = null) {
   if (!movie) return '';
   const isFav = state.favorites.has(String(movie.id));
-  const rankBadge = rankNum ? `<div class="card-rank">🔥 TOP ${rankNum}</div>` : '';
+  const rankBadge = rankNum ? `<div class="card-rank">ðŸ”¥ TOP ${rankNum}</div>` : '';
   const metaYear = movie.year ? `<span>${movie.year}</span>` : '';
   const metaDur = movie.duration ? `<span>${movie.duration}</span>` : '';
   const posterSrc = movie.poster || movie.backdrop || fallbackImg;
@@ -348,16 +348,16 @@ function renderHome() {
   const heroTrack = document.getElementById('heroTrack');
   if (heroTrack && heroFeatured.length > 0) {
     heroTrack.innerHTML = heroFeatured.map((m, idx) => {
-      const genreText = Array.isArray(m.genres) ? m.genres.slice(0, 3).join(' • ') : (m.genres || 'Action • Adventure • Sci-Fi');
+      const genreText = Array.isArray(m.genres) ? m.genres.slice(0, 3).join(' â€¢ ') : (m.genres || 'Action â€¢ Adventure â€¢ Sci-Fi');
       return `
-        <link rel="stylesheet" href="styles.css?v=14"><div class="hero-slide" style="background-image: url('${m.backdrop || m.poster || ''}')" onclick="openDetail('${m.id}')">
+        <div class="hero-slide" style="background-image: url('${m.backdrop || m.poster || ''}')" onclick="openDetail('${m.id}')">
           <div class="hero-content" onclick="event.stopPropagation()">
             <h1 class="hero-title">${m.title}</h1>
             <div class="hero-meta-row">
               <span class="hero-rating-badge"><ion-icon name="star"></ion-icon> ${m.rating || '8.1'}</span>
-              <span class="hero-meta-divider">•</span>
+              <span class="hero-meta-divider">â€¢</span>
               <span>${m.year || '2026'}</span>
-              <span class="hero-meta-divider">•</span>
+              <span class="hero-meta-divider">â€¢</span>
               <span>${genreText}</span>
             </div>
             <p class="hero-overview">${m.description || 'Experience this blockbuster release in full HD quality with crystal-clear audio and lightning-fast multi-server streaming.'}</p>
@@ -665,7 +665,7 @@ function filterResults() {
 
   if (countEl) countEl.textContent = `${filtered.length} Titles`;
 
-  // FIX 3: Paginated — only render PAGE_SIZE items, add Load More if needed
+  // FIX 3: Paginated â€” only render PAGE_SIZE items, add Load More if needed
   _filteredCache.explore = filtered;
   _pageOffset.explore = 0;
 
@@ -677,7 +677,7 @@ function filterResults() {
   }
   empty?.classList.add('hidden');
 
-  // FIX 5: async render — no main-thread blocking
+  // FIX 5: async render â€” no main-thread blocking
   renderCardsAsync(filtered, grid, 0, false);
   _renderLoadMoreBtn('resultsGrid', 'explore', filtered);
 }
@@ -710,7 +710,7 @@ function _renderLoadMoreBtn(gridId, cacheKey, items) {
   grid.insertAdjacentElement('afterend', btn);
 }
 
-// 3. Movies Tab — FIX 3+5: Async paginated render
+// 3. Movies Tab â€” FIX 3+5: Async paginated render
 function renderMoviesTab() {
   const grid = document.getElementById('moviesGrid');
   const countEl = document.getElementById('moviesCount');
@@ -723,7 +723,7 @@ function renderMoviesTab() {
   _filteredCache.movies = movies;
 }
 
-// 4. Series Tab — FIX 3+5: Async paginated render
+// 4. Series Tab â€” FIX 3+5: Async paginated render
 function renderSeriesTab() {
   const grid = document.getElementById('seriesGrid');
   const countEl = document.getElementById('seriesCount');
@@ -735,7 +735,7 @@ function renderSeriesTab() {
   _filteredCache.series = series;
 }
 
-// 5. Anime Tab — FIX 3+5: Async paginated render
+// 5. Anime Tab â€” FIX 3+5: Async paginated render
 function renderAnimeTab() {
   const grid = document.getElementById('animeGrid');
   const countEl = document.getElementById('animeCount');
@@ -788,7 +788,7 @@ function renderLiveTVGrid() {
       + '</div>'
       + '<div class="live-card-info">'
       + '<h3>' + safeName + '</h3>'
-      + '<p>' + (ch.category || 'General') + (ch.country ? ' · ' + ch.country : '') + '</p>'
+      + '<p>' + (ch.category || 'General') + (ch.country ? ' Â· ' + ch.country : '') + '</p>'
       + '</div></div>';
   }).join('');
 }
@@ -901,9 +901,9 @@ function renderWatchlist() {
   }
 }
 
-// Detail Modal — FIX 4: O(1) Map lookup instead of .find()
+// Detail Modal â€” FIX 4: O(1) Map lookup instead of .find()
 function openDetail(movieId) {
-  // FIX 4: instant O(1) lookup — no N+1 scan through the whole MOVIES array
+  // FIX 4: instant O(1) lookup â€” no N+1 scan through the whole MOVIES array
   const movie = _movieMap.get(String(movieId));
   if (!movie) return;
 
@@ -919,9 +919,9 @@ function openDetail(movieId) {
         <h2 style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 800;">${movie.title}</h2>
         <div style="display: flex; gap: 0.75rem; color: var(--text-sub); font-size: 0.9rem;">
           <span style="color: var(--accent-gold); font-weight: 700;"><ion-icon name="star"></ion-icon> ${movie.rating || '8.5'}</span>
-          <span>•</span>
+          <span>â€¢</span>
           <span>${movie.year || '2026'}</span>
-          <span>•</span>
+          <span>â€¢</span>
           <span>${movie.duration || '2h 10m'}</span>
         </div>
       </div>
@@ -959,7 +959,7 @@ function closeDetail() {
   document.getElementById('detailModal')?.classList.add('hidden');
 }
 
-// Multi-Server Video Streaming Player — FIX 4: O(1) Map lookup
+// Multi-Server Video Streaming Player â€” FIX 4: O(1) Map lookup
 function playMovieDirect(movieId) {
   closeDetail();
   // FIX 4: instant O(1) lookup
@@ -977,9 +977,9 @@ function playMovieDirect(movieId) {
   const isTv = movie.type === 'TV Show' || movie.type === 'Series' || (movie.seasons && movie.seasons.length);
 
   const servers = [
-    { id: 'autoembed', name: '⚡ AutoEmbed Fast Server', url: isTv ? `https://player.autoembed.cc/embed/tv/${tmdb}/1/1` : `https://player.autoembed.cc/embed/movie/${tmdb}` },
-    { id: 'vidlink', name: '🎬 VidLink Pro (Multi-Audio)', url: isTv ? `https://vidlink.pro/tv/${tmdb}/1/1` : `https://vidlink.pro/movie/${tmdb}` },
-    { id: 'vidsrc', name: '🌟 VidSrc VIP Stream', url: isTv ? `https://vidsrc.to/embed/tv/${tmdb}/1/1` : `https://vidsrc.to/embed/movie/${tmdb}` }
+    { id: 'autoembed', name: 'âš¡ AutoEmbed Fast Server', url: isTv ? `https://player.autoembed.cc/embed/tv/${tmdb}/1/1` : `https://player.autoembed.cc/embed/movie/${tmdb}` },
+    { id: 'vidlink', name: 'ðŸŽ¬ VidLink Pro (Multi-Audio)', url: isTv ? `https://vidlink.pro/tv/${tmdb}/1/1` : `https://vidlink.pro/movie/${tmdb}` },
+    { id: 'vidsrc', name: 'ðŸŒŸ VidSrc VIP Stream', url: isTv ? `https://vidsrc.to/embed/tv/${tmdb}/1/1` : `https://vidsrc.to/embed/movie/${tmdb}` }
   ];
 
   function switchSource(srv) {
@@ -1210,7 +1210,7 @@ function startApp() {
     }
   });
 
-  // ── Restore saved profile data on load ───────────────────────────────
+  // â”€â”€ Restore saved profile data on load â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const savedTheme  = localStorage.getItem('cw_theme') || 'dark';
 
   function updateMobileNavAvatar(dataUrl) {
@@ -1265,7 +1265,7 @@ function startApp() {
     }
   });
 
-  // ── Avatar file picker ────────────────────────────────────────────────
+  // â”€â”€ Avatar file picker â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const avatarInput = document.getElementById('avatarFileInput');
   if (avatarInput) {
     avatarInput.addEventListener('change', (e) => {
@@ -1290,7 +1290,7 @@ function startApp() {
     });
   }
 
-  // ── Banner file picker ────────────────────────────────────────────────
+  // â”€â”€ Banner file picker â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const bannerInput = document.getElementById('bannerFileInput');
   if (bannerInput) {
     bannerInput.addEventListener('change', (e) => {
@@ -1308,7 +1308,7 @@ function startApp() {
     });
   }
 
-  // Save button — show success animation, stay on settings page
+  // Save button â€” show success animation, stay on settings page
   document.getElementById('saveSettingsBtn')?.addEventListener('click', () => {
     const btn = document.getElementById('saveSettingsBtn');
     if (!btn || btn.classList.contains('saving')) return;
@@ -1330,7 +1330,7 @@ function startApp() {
   const updateBtn = document.getElementById('pageCheckUpdateBtn');
   if (updateBtn) {
     updateBtn.addEventListener('click', () => {
-      showToast('You are on the latest version — CineWatch v1.0.0');
+      showToast('You are on the latest version â€” CineWatch v1.0.0');
     });
   }
 
