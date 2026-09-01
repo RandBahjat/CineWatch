@@ -39,6 +39,65 @@ const server = http.createServer((req, res) => {
   // Parse requested path
   const parsedUrl = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
   let pathname = decodeURIComponent(parsedUrl.pathname);
+
+  // Direct Stream Extractor API endpoint
+  if (pathname === '/api/stream') {
+    const tmdbId = parsedUrl.searchParams.get('tmdbId');
+    const title = parsedUrl.searchParams.get('title') || '';
+    const type = parsedUrl.searchParams.get('type') || 'movie';
+    const season = parsedUrl.searchParams.get('season') || '1';
+    const episode = parsedUrl.searchParams.get('episode') || '1';
+
+    // Query upstream direct stream providers (Consumet / FlixHQ / VidCloud)
+    const queryProviders = async () => {
+      const endpoints = [
+        `https://consumet-api-production-e852.up.railway.app/movies/flixhq/${encodeURIComponent(title)}`,
+        `https://api-consumet.onrender.com/movies/flixhq/${encodeURIComponent(title)}`,
+        `https://c.delusionz.xyz/movies/flixhq/${encodeURIComponent(title)}`
+      ];
+
+      for (const ep of endpoints) {
+        try {
+          const res = await fetch(ep, { signal: AbortSignal.timeout(4000) });
+          if (!res.ok) continue;
+          const data = await res.json();
+          if (data && data.results && data.results.length > 0) {
+            const match = data.results[0];
+            const baseUrl = ep.split('/movies/flixhq/')[0];
+            const infoRes = await fetch(`${baseUrl}/movies/flixhq/info?id=${encodeURIComponent(match.id)}`, { signal: AbortSignal.timeout(4000) });
+            if (!infoRes.ok) continue;
+            const infoData = await infoRes.json();
+            
+            let epId = infoData.id;
+            if (infoData.episodes && infoData.episodes.length > 0) {
+              const targetEp = infoData.episodes.find(e => e.season === parseInt(season) && e.number === parseInt(episode)) || infoData.episodes[0];
+              if (targetEp) epId = targetEp.id;
+            }
+
+            const watchRes = await fetch(`${baseUrl}/movies/flixhq/watch?episodeId=${encodeURIComponent(epId)}&mediaId=${encodeURIComponent(match.id)}`, { signal: AbortSignal.timeout(4000) });
+            if (!watchRes.ok) continue;
+            const watchData = await watchRes.json();
+            if (watchData && watchData.sources && watchData.sources.length > 0) {
+              const master = watchData.sources.find(s => s.quality === 'auto' || s.isM3U8) || watchData.sources[0];
+              return {
+                success: true,
+                streamUrl: master.url,
+                subtitles: watchData.subtitles || []
+              };
+            }
+          }
+        } catch (e) {}
+      }
+      return { success: false };
+    };
+
+    queryProviders().then(result => {
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify(result));
+    });
+    return;
+  }
+
   if (pathname === '/' || pathname === '') {
     pathname = '/index.html';
   }
