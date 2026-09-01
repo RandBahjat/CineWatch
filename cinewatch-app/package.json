@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "serve": "node ../serve-app.js",
     "build:win": "electron-builder --win",
     "dev": "electron ."
   },
