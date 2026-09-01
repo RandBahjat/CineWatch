@@ -1146,39 +1146,34 @@ function playMovieDirect(movieId) {
     const playerControls = document.getElementById('playerControls');
     if (playerLoading) playerLoading.classList.remove('hidden');
 
-    if (srv.isDirect && srv.streamUrl) {
-      // Direct Native Video Player
-      _cwPlayerState.isDirect = true;
-      if (iframeEl) { iframeEl.src = ''; iframeEl.classList.add('hidden'); }
-      if (playerControls) playerControls.classList.remove('hidden');
-      if (videoEl) {
-        videoEl.classList.remove('hidden');
-        videoEl.src = srv.streamUrl;
+    // Always keep CineWatch Custom Frosted Glass Controls Dock active
+    if (playerControls) playerControls.classList.remove('hidden');
+    if (iframeEl) { iframeEl.src = ''; iframeEl.classList.add('hidden'); }
+
+    if (videoEl) {
+      videoEl.classList.remove('hidden');
+      const targetUrl = srv.streamUrl || 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4';
+      
+      if (targetUrl.includes('.m3u8') && window.Hls && Hls.isSupported()) {
+        if (_cwPlayerState.hlsInstance) _cwPlayerState.hlsInstance.destroy();
+        _cwPlayerState.hlsInstance = new Hls({ enableWorker: true });
+        _cwPlayerState.hlsInstance.loadSource(targetUrl);
+        _cwPlayerState.hlsInstance.attachMedia(videoEl);
+        _cwPlayerState.hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
+          videoEl.play().catch(() => {});
+          playerLoading?.classList.add('hidden');
+        });
+      } else {
+        videoEl.src = targetUrl;
         videoEl.play().catch(() => {});
-        videoEl.onloadeddata = () => playerLoading?.classList.add('hidden');
-        setTimeout(() => playerLoading?.classList.add('hidden'), 1000);
-      }
-      if (streamTypeBadge) streamTypeBadge.textContent = 'DIRECT STREAM';
-    } else {
-      // High-Speed Cloud Stream (Plays actual movie & series)
-      _cwPlayerState.isDirect = false;
-      if (videoEl) { videoEl.pause(); videoEl.classList.add('hidden'); }
-      if (playerControls) playerControls.classList.add('hidden');
-      if (iframeEl) {
-        iframeEl.classList.remove('hidden');
-        // Custom branding for VidLink to match CineWatch red & black UI
-        let embedUrl = srv.url;
-        if (embedUrl.includes('vidlink.pro')) {
-          const sep = embedUrl.includes('?') ? '&' : '?';
-          embedUrl = `${embedUrl}${sep}primaryColor=e50914&secondaryColor=ffffff&iconColor=ffffff&autoplay=true`;
-        }
-        iframeEl.src = embedUrl;
-        iframeEl.onload = () => {
+        videoEl.onloadeddata = () => {
           playerLoading?.classList.add('hidden');
         };
+        setTimeout(() => playerLoading?.classList.add('hidden'), 1000);
       }
-      if (streamTypeBadge) streamTypeBadge.textContent = srv.name.split(':')[0] || 'STREAM';
     }
+    
+    if (streamTypeBadge) streamTypeBadge.textContent = 'CINEWATCH NATIVE';
   }
 
   // Populate bottom dock server menu
