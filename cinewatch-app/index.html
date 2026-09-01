@@ -86,7 +86,7 @@
   <!-- Supabase SDK & API -->
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
   <script src="./api.js?v=v6" defer></script>
-  <script src="./app.js?v=83" defer></script>
+  <script src="./app.js?v=84" defer></script>
 </head>
 <body>
 
@@ -464,7 +464,7 @@
         </button>
       </div>
 
-      <!-- Player Top Bar (Overlay) -->
+      <!-- Player Top Bar (Floating Glass Island) -->
       <div class="cw-player-topbar" id="playerTopBar">
         <div class="cw-topbar-left">
           <button class="cw-btn-circle" id="playerClose" aria-label="Exit Player">
@@ -476,20 +476,12 @@
               <span class="cw-badge 4k">4K ULTRA HD</span>
               <span class="cw-badge hdr">HDR10</span>
               <span class="cw-badge dolby">DOLBY 5.1</span>
-              <span class="cw-badge live" id="streamTypeBadge">DIRECT STREAM</span>
             </div>
-          </div>
-        </div>
-        
-        <div class="cw-topbar-right">
-          <div class="cw-server-glass-wrap">
-            <ion-icon name="server-outline"></ion-icon>
-            <select id="serverSelect" class="cw-server-select" title="Switch Streaming Server"></select>
           </div>
         </div>
       </div>
 
-      <!-- Player Bottom Controls Dock (Overlay) -->
+      <!-- Player Bottom Controls Dock (Floating Frosted Glass Island) -->
       <div class="cw-player-controls" id="playerControls">
         <!-- Glowing Seekbar with buffer and hover preview -->
         <div class="cw-progress-container" id="progressContainer">
@@ -531,8 +523,20 @@
             </div>
           </div>
 
-          <!-- Right Controls: Next Ep, Subtitles, Speed, PiP, Fullscreen -->
+          <!-- Right Controls: Server Switch, Next Ep, Subtitles, Speed, PiP, Fullscreen -->
           <div class="cw-ctrl-group right">
+            <!-- Server Switcher Menu -->
+            <div class="cw-dropdown-wrap">
+              <button class="cw-ctrl-btn cw-glass-pill-btn" id="serverMenuBtn" title="Switch Streaming Server">
+                <ion-icon name="server-outline"></ion-icon>
+                <span id="serverActiveLabel">Server 1</span>
+              </button>
+              <div class="cw-menu-popover hidden" id="serverMenu">
+                <div class="cw-menu-header">Streaming Server</div>
+                <div class="cw-menu-list" id="serverList"></div>
+              </div>
+            </div>
+
             <!-- Next Episode Button (Visible for Series/Anime) -->
             <button class="cw-ctrl-btn hidden" id="nextEpBtn" title="Next Episode (N)">
               <ion-icon name="play-skip-forward-outline"></ion-icon>
