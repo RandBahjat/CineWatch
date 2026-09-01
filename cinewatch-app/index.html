@@ -76,7 +76,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="../api.js?v=v6" defer></script>
 
-  <script src="app.js?v=231" defer></script>
+  <script src="app.js?v=232" defer></script>
 </head>
 <body>
 
@@ -461,18 +461,25 @@
 
   <!-- Auth Overlay (Sign In / Create Account) -->
   <div class="auth-overlay hidden" id="authOverlay">
+    <!-- Cinematic background -->
+    <div class="auth-bg"></div>
+
+    <!-- Close button -->
     <button class="auth-close-btn" id="closeAuthBtn" aria-label="Close">
       <ion-icon name="close-outline"></ion-icon>
     </button>
 
     <div class="auth-card">
-      <!-- Logo -->
-      <div class="auth-logo">
-        <div class="brand-icon"><ion-icon name="ticket"></ion-icon></div>
-        Cine<span>Watch</span>
+      <!-- Top branding hero -->
+      <div class="auth-hero">
+        <div class="auth-logo">
+          <div class="brand-icon"><ion-icon name="ticket"></ion-icon></div>
+          Cine<span>Watch</span>
+        </div>
+        <p class="auth-tagline">Stream together, everywhere.</p>
       </div>
 
-      <!-- Tab Switcher -->
+      <!-- Tab Switcher pills -->
       <div class="auth-tabs">
         <button class="auth-tab active" id="tabSignIn" data-tab="signin">Sign In</button>
         <button class="auth-tab" id="tabSignUp" data-tab="signup">Create Account</button>
@@ -489,7 +496,7 @@
           <input type="password" id="signinPass" placeholder="Password" required>
         </div>
         <button type="submit" class="auth-submit-btn">
-          <ion-icon name="log-in-outline"></ion-icon> Sign In
+          Sign In <ion-icon name="arrow-forward-outline"></ion-icon>
         </button>
         <p class="auth-switch">Don't have an account? <a href="#" id="switchToSignUp">Create one</a></p>
       </form>
@@ -506,10 +513,10 @@
         </div>
         <div class="auth-field">
           <ion-icon name="lock-closed-outline"></ion-icon>
-          <input type="password" id="signupPass" placeholder="Password" required>
+          <input type="password" id="signupPass" placeholder="Password (min. 6 chars)" required>
         </div>
         <button type="submit" class="auth-submit-btn">
-          <ion-icon name="person-add-outline"></ion-icon> Create Account
+          Create Account <ion-icon name="arrow-forward-outline"></ion-icon>
         </button>
         <p class="auth-switch">Already have an account? <a href="#" id="switchToSignIn">Sign in</a></p>
       </form>
