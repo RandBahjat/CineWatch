@@ -1144,7 +1144,7 @@ function playMovieDirect(movieId) {
 
   function switchSource(srv) {
     const playerLoading = document.getElementById('playerLoading');
-    if (playerLoading) playerLoading.classList.remove('hidden');
+    const playerControls = document.getElementById('playerControls');
 
     if (srv.isDirect && srv.streamUrl && window.Hls && Hls.isSupported()) {
       // Direct Native HLS / MP4 Stream
@@ -1162,14 +1162,22 @@ function playMovieDirect(movieId) {
           playerLoading?.classList.add('hidden');
         });
       }
+      if (playerControls) playerControls.classList.remove('hidden');
       if (streamTypeBadge) streamTypeBadge.textContent = 'DIRECT 4K NATIVE';
     } else {
-      // High-Performance Embed Server
+      // High-Performance Embed Server — Hide duplicate external dock for pure cinematic full player
       _cwPlayerState.isDirect = false;
       if (videoEl) { videoEl.pause(); videoEl.classList.add('hidden'); }
+      if (playerControls) playerControls.classList.add('hidden');
       if (iframeEl) {
         iframeEl.classList.remove('hidden');
-        iframeEl.src = srv.url;
+        // Apply custom theme parameters for VidLink to match CineWatch brand
+        let embedUrl = srv.url;
+        if (embedUrl.includes('vidlink.pro')) {
+          const sep = embedUrl.includes('?') ? '&' : '?';
+          embedUrl = `${embedUrl}${sep}primaryColor=e50914&secondaryColor=ffffff&iconColor=ffffff&autoplay=false`;
+        }
+        iframeEl.src = embedUrl;
         iframeEl.onload = () => {
           playerLoading?.classList.add('hidden');
         };
