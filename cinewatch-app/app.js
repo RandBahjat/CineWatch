@@ -1045,16 +1045,16 @@ function startApp() {
         activeUser = await window.CW_API.getCurrentUser();
       }
       
+      // Mark profile tab as active
+      document.querySelectorAll('.mobile-bottom-nav .nav-item').forEach(btn => {
+        btn.classList.toggle('active', btn.id === 'mobileProfileBtn');
+      });
+
       if (activeUser) {
         settingsOverlay?.classList.remove('hidden');
       } else {
         document.getElementById('authOverlay')?.classList.remove('hidden');
       }
-      
-      // Update active state in bottom nav manually since it doesn't use switchTab
-      document.querySelectorAll('.mobile-bottom-nav .nav-item').forEach(btn => {
-        btn.classList.toggle('active', btn.id === 'mobileProfileBtn');
-      });
     });
   }
 
