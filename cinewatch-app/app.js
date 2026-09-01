@@ -1079,6 +1079,10 @@ function startApp() {
     switchTab('home');
   });
 
+  document.getElementById('desktopCloseAuthBtn')?.addEventListener('click', () => {
+    authOverlay?.classList.add('hidden');
+  });
+
   // Tab switching — with animated transitions
   let _authCurrentTab = 'signin';
 
