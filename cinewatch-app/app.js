@@ -1159,7 +1159,8 @@ function playMovieDirect(movieId) {
     const vidstackPoster = document.getElementById('vidstackPoster');
     
     // Resolve Real Stream from TMDB via Stream Engine
-    let targetUrl = `https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4`; // Fallback preview
+    // Fallback HLS stream that will NEVER fail CORS policies (Mux Big Buck Bunny)
+    let targetUrl = `https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8`; 
     
     if (window.cwStreamEngine) {
       try {
