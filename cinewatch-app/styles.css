@@ -1867,12 +1867,18 @@ html, body {
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: #fff;
   font-size: 1.4rem;
-  display: flex;
+  display: none; /* Hidden by default (mobile) */
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all var(--transition-fast);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 1024px) {
+  .settings-back-btn {
+    display: flex; /* Show on desktop (Windows) */
+  }
 }
 
 .settings-back-btn:hover {
