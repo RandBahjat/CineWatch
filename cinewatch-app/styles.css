@@ -66,6 +66,42 @@ html, body {
   user-select: none;
 }
 
+/* Universal Pointer Cursors for all Interactive Elements */
+button,
+a,
+input[type="button"],
+input[type="submit"],
+input[type="range"],
+select,
+.cw-ctrl-btn,
+.cw-btn-circle,
+.cw-glass-pill-btn,
+.cw-menu-item,
+.btn-watch-now,
+.btn-more-info,
+.immersive-back-btn,
+.nav-item,
+.win-btn,
+.movie-card,
+.continue-card,
+.genre-pill,
+.theme-pill,
+.chip,
+.quick-tag,
+.hero-btn,
+.cw-progress-container,
+.cw-progress-slider,
+.cw-vol-slider,
+.cw-seek-zone,
+.icon-btn,
+.search-result-item,
+.sidebar-signin-btn,
+.auth-submit-btn,
+.auth-panel-toggle-btn,
+.auth-tab {
+  cursor: pointer !important;
+}
+
 /* Custom Scrollbars */
 ::-webkit-scrollbar {
   width: 6px;
