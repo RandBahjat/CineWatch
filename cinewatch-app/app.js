@@ -1,4 +1,4 @@
-﻿/**
+/**
  * CineWatch Standalone App Engine
  * High-Performance, Instant-Loading Streaming Platform Logic
  */
@@ -901,10 +901,16 @@ function renderWatchlist() {
   }
 }
 
-// Detail Modal — FIX 4: O(1) Map lookup instead of .find()
+// Detail Modal — with Netflix-style auto-playing trailer
+let _trailerTimer = null;
+let _trailerMuted = true;
+
 function openDetail(movieId) {
   const movie = _movieMap.get(String(movieId));
   if (!movie) return;
+
+  // Cancel any previous trailer timer
+  clearTimeout(_trailerTimer);
 
   state.currentDetail = movie;
   const modal = document.getElementById('detailModal');
@@ -916,19 +922,32 @@ function openDetail(movieId) {
   const castText     = movie.cast ? (Array.isArray(movie.cast) ? movie.cast.join(', ') : movie.cast) : '';
   const directorText = movie.director || '';
   const overview     = movie.description || movie.overview || 'A cinematic masterpiece streaming now on CineWatch in full high-definition quality with crystal clear audio.';
+  const trailerId    = movie.trailerYouTubeId || null;
 
-  /* Hero: backdrop image + TITLE ONLY overlaid at bottom */
+  /* ── Hero: backdrop + title only overlaid at bottom ── */
   if (hero) {
     hero.style.backgroundImage = `url('${movie.backdrop || movie.poster || ''}')`;
+    hero.style.backgroundSize  = 'cover';
+    hero.style.backgroundPosition = 'center top';
     hero.innerHTML = `
       <div class="detail-hero-gradient"></div>
       <div class="detail-hero-title-wrap">
         <h2 class="detail-title">${movie.title}</h2>
       </div>
+      ${trailerId ? `<button class="trailer-sound-btn hidden" id="trailerSoundBtn" title="Toggle sound">
+        <ion-icon name="volume-mute"></ion-icon>
+      </button>` : ''}
     `;
+
+    /* Auto-play trailer after 4 seconds if available */
+    if (trailerId) {
+      _trailerTimer = setTimeout(() => {
+        _startTrailer(hero, trailerId);
+      }, 4000);
+    }
   }
 
-  /* Body: everything below the image */
+  /* ── Body: all content below image ── */
   if (body) {
     body.innerHTML = `
       <div class="detail-metadata">
@@ -969,8 +988,50 @@ function openDetail(movieId) {
   modal?.classList.remove('hidden');
 }
 
+function _startTrailer(heroEl, ytId) {
+  if (!heroEl || !document.getElementById('detailModal') || document.getElementById('detailModal').classList.contains('hidden')) return;
+
+  _trailerMuted = true;
+
+  // Build muted autoplay iframe
+  const iframe = document.createElement('iframe');
+  iframe.className = 'trailer-iframe';
+  iframe.src = `https://www.youtube.com/embed/${ytId}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${ytId}&iv_load_policy=3`;
+  iframe.allow = 'autoplay; encrypted-media';
+  iframe.allowFullscreen = false;
+
+  // Fade-out the background image, fade-in the iframe
+  iframe.style.opacity = '0';
+  iframe.style.transition = 'opacity 1.2s ease';
+  heroEl.appendChild(iframe);
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      iframe.style.opacity = '1';
+      heroEl.style.backgroundImage = 'none';
+    });
+  });
+
+  // Wire up the sound toggle button
+  const soundBtn = document.getElementById('trailerSoundBtn');
+  if (soundBtn) {
+    soundBtn.classList.remove('hidden');
+    soundBtn.onclick = () => {
+      _trailerMuted = !_trailerMuted;
+      const newSrc = `https://www.youtube.com/embed/${ytId}?autoplay=1&mute=${_trailerMuted ? 1 : 0}&controls=0&modestbranding=1&rel=0&loop=1&playlist=${ytId}&iv_load_policy=3`;
+      iframe.src = newSrc;
+      soundBtn.innerHTML = `<ion-icon name="${_trailerMuted ? 'volume-mute' : 'volume-high'}"></ion-icon>`;
+    };
+  }
+}
+
 function closeDetail() {
-  document.getElementById('detailModal')?.classList.add('hidden');
+  clearTimeout(_trailerTimer);
+  const modal = document.getElementById('detailModal');
+  if (modal) modal.classList.add('hidden');
+  // Clean up iframe so video stops
+  const iframe = document.querySelector('.trailer-iframe');
+  if (iframe) iframe.remove();
 }
 
 // Multi-Server Video Streaming Player â€” FIX 4: O(1) Map lookup
