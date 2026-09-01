@@ -86,6 +86,22 @@
       ]
     }
   ],
+  "screenshots": [
+    {
+      "src": "/cinewatch-app/android-screen.jpg",
+      "sizes": "1080x1920",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "CineWatch Mobile App Screen"
+    },
+    {
+      "src": "/cinewatch-app/android-screen.jpg",
+      "sizes": "1080x1920",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "CineWatch Tablet & Desktop View"
+    }
+  ],
   "share_target": {
     "action": "/cinewatch-app/index.html",
     "method": "GET",
