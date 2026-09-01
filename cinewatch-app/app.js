@@ -1141,10 +1141,18 @@ function playMovieDirect(movieId) {
   async function switchSource(srv) {
     const playerLoading = document.getElementById('playerLoading');
     const playerControls = document.getElementById('playerControls');
+    const centerPlayBadge = document.getElementById('centerPlayBadge');
+    const seekLeftZone = document.getElementById('seekLeftZone');
+    const seekRightZone = document.getElementById('seekRightZone');
+    
     if (playerLoading) playerLoading.classList.remove('hidden');
 
     // Hide Custom Legacy Controls - Rely entirely on Vidstack's `<media-video-layout>`
     if (playerControls) playerControls.classList.add('hidden');
+    if (centerPlayBadge) centerPlayBadge.classList.add('hidden');
+    if (seekLeftZone) seekLeftZone.classList.add('hidden');
+    if (seekRightZone) seekRightZone.classList.add('hidden');
+    
     if (iframeEl) { iframeEl.src = ''; iframeEl.classList.add('hidden'); }
 
     const vidstackPlayer = document.getElementById('vidstackPlayer');
