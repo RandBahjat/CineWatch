@@ -957,12 +957,14 @@ function openDetail(movieId) {
 
     body.innerHTML = `
       <div class="immersive-topbar">
-        <div class="immersive-logo">CineWatch</div>
-        <div class="immersive-top-actions">
-          <button class="top-btn" onclick="closeDetail()"><ion-icon name="arrow-back-outline"></ion-icon> Go Back</button>
-          <button class="top-btn icon-only"><ion-icon name="settings-outline"></ion-icon></button>
-          <button class="top-btn icon-only"><ion-icon name="flag-outline"></ion-icon></button>
+        <div class="immersive-topbar-left">
+          <button class="immersive-back-btn" onclick="closeDetail()" aria-label="Go Back">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+            <span>Back</span>
+          </button>
+          <div class="immersive-logo">Cine<span>Watch</span></div>
         </div>
+        <div class="immersive-top-actions"></div>
       </div>
 
       <div class="immersive-bottom-container">
