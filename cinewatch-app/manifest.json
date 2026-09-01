@@ -2,8 +2,8 @@
   "name": "CineWatch",
   "short_name": "CineWatch",
   "description": "Stream premium movies, series, anime, and watch together with friends.",
-  "start_url": "./index.html",
-  "scope": "./",
+  "start_url": "/cinewatch-app/index.html",
+  "scope": "/cinewatch-app/",
   "id": "watch.cinewatch.app",
   "display": "standalone",
   "orientation": "any",
@@ -15,31 +15,31 @@
   },
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "/cinewatch-app/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icon-192.png",
+      "src": "/cinewatch-app/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "icon-256.png",
+      "src": "/cinewatch-app/icon-256.png",
       "sizes": "256x256",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icon-512.png",
+      "src": "/cinewatch-app/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icon-512.png",
+      "src": "/cinewatch-app/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -50,10 +50,10 @@
       "name": "Explore Movies & Series",
       "short_name": "Explore",
       "description": "Browse trending movies, series, and anime",
-      "url": "./index.html#explore",
+      "url": "/cinewatch-app/index.html#explore",
       "icons": [
         {
-          "src": "icon-192.png",
+          "src": "/cinewatch-app/icon-192.png",
           "sizes": "192x192",
           "type": "image/png"
         }
@@ -63,10 +63,10 @@
       "name": "Watch Together",
       "short_name": "Together",
       "description": "Stream together with friends in real-time",
-      "url": "./index.html#party",
+      "url": "/cinewatch-app/index.html#party",
       "icons": [
         {
-          "src": "icon-192.png",
+          "src": "/cinewatch-app/icon-192.png",
           "sizes": "192x192",
           "type": "image/png"
         }
@@ -76,10 +76,10 @@
       "name": "My Watchlist",
       "short_name": "Watchlist",
       "description": "View your saved movies and series",
-      "url": "./index.html#watchlist",
+      "url": "/cinewatch-app/index.html#watchlist",
       "icons": [
         {
-          "src": "icon-192.png",
+          "src": "/cinewatch-app/icon-192.png",
           "sizes": "192x192",
           "type": "image/png"
         }
@@ -87,7 +87,7 @@
     }
   ],
   "share_target": {
-    "action": "./index.html",
+    "action": "/cinewatch-app/index.html",
     "method": "GET",
     "params": {
       "title": "title",
