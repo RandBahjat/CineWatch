@@ -1168,6 +1168,9 @@ function playMovieDirect(movieId) {
         console.warn('Vidstack autoplay prevented:', event.detail);
         playerLoading?.classList.add('hidden');
       });
+      
+      // Auto clear spinner after 800ms
+      setTimeout(() => playerLoading?.classList.add('hidden'), 800);
     }
 
     if (videoEl) {
@@ -1185,7 +1188,7 @@ function playMovieDirect(movieId) {
         videoEl.src = targetUrl;
         videoEl.play().catch(() => {});
         videoEl.onloadeddata = () => playerLoading?.classList.add('hidden');
-        setTimeout(() => playerLoading?.classList.add('hidden'), 1000);
+        setTimeout(() => playerLoading?.classList.add('hidden'), 800);
       }
     }
     
