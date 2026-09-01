@@ -1473,95 +1473,180 @@ html, body {
 }
 
 .immersive-left {
-  max-width: 600px;
+  max-width: 680px;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1.1rem;
 }
 
 .immersive-title {
   font-family: var(--font-display);
-  font-size: 4.5rem;
+  font-size: 3.6rem;
   font-weight: 800;
   margin: 0;
-  line-height: 1;
+  line-height: 1.1;
   letter-spacing: -1px;
-  display: flex;
-  align-items: baseline;
-  gap: 1.5rem;
+  color: #ffffff;
+  text-shadow: 0 4px 16px rgba(0,0,0,0.8);
 }
 
-.immersive-year {
-  font-weight: 300;
-  font-size: 3.5rem;
-  color: rgba(255,255,255,0.7);
+.immersive-meta-pills {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.meta-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(8px);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #e5e7eb;
+  letter-spacing: 0.3px;
+}
+
+.meta-badge-pill.gold {
+  background: rgba(245, 197, 24, 0.15);
+  border-color: rgba(245, 197, 24, 0.35);
+  color: #f5c518;
+}
+
+.meta-badge-pill.gold ion-icon {
+  font-size: 0.95rem;
+}
+
+.meta-badge-pill.highlight {
+  background: rgba(229, 9, 20, 0.18);
+  border-color: rgba(229, 9, 20, 0.4);
+  color: #ff3344;
+}
+
+.meta-badge-pill.age {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
 }
 
 .immersive-cast {
   font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--primary);
+  font-weight: 800;
+  color: #ff3344;
   letter-spacing: 1px;
 }
 
 .immersive-overview {
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 1.6;
-  color: rgba(255,255,255,0.85);
-  margin: 0 0 1rem 0;
+  color: rgba(255, 255, 255, 0.82);
+  margin: 0;
+  max-height: 4.8em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 /* Action Buttons */
 .immersive-btn-row {
   display: flex;
+  align-items: center;
   gap: 1.2rem;
+  margin-top: 0.5rem;
 }
 
 .btn-watch-now {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  background: linear-gradient(135deg, var(--primary) 0%, #b80710 100%);
-  color: #111;
+  gap: 10px;
+  background: linear-gradient(135deg, #ff1c2a 0%, #e50914 100%);
+  color: #ffffff !important;
   border: none;
-  border-radius: 30px;
-  padding: 0.8rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 700;
+  border-radius: 50px;
+  padding: 0.9rem 2.4rem;
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
   cursor: pointer;
-  transition: transform 0.2s, filter 0.2s;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 8px 28px rgba(229, 9, 20, 0.55);
 }
 
-.btn-watch-now ion-icon { font-size: 1.4rem; }
-.btn-watch-now:hover { transform: scale(1.05); filter: brightness(1.1); }
+.btn-watch-now ion-icon { font-size: 1.35rem; }
+
+.btn-watch-now:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 36px rgba(229, 9, 20, 0.7);
+  filter: brightness(1.1);
+}
 
 .btn-more-info {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(30, 30, 35, 0.8);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: #fff;
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 30px;
-  padding: 0.8rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 600;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  color: #ffffff;
+  border-radius: 50px;
+  padding: 0.9rem 2.2rem;
+  font-family: inherit;
+  font-size: 1.02rem;
+  font-weight: 700;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.btn-more-info ion-icon { font-size: 1.4rem; }
-.btn-more-info:hover { background: rgba(50, 50, 55, 0.9); }
+.btn-more-info ion-icon { font-size: 1.35rem; }
 
-/* Right Meta */
-.immersive-right {
+.btn-more-info:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-more-info.active-fav {
+  background: rgba(245, 197, 24, 0.18);
+  border-color: rgba(245, 197, 24, 0.5);
+  color: #f5c518;
+}
+
+/* Right Runtime Card */
+.immersive-runtime-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  gap: 0.8rem;
-  margin-bottom: 0.5rem; /* Aligns with the buttons baseline roughly */
+  gap: 4px;
+  background: rgba(10, 12, 18, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  padding: 10px 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.runtime-play-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #9ca3af;
+  letter-spacing: 0.6px;
+}
+
+.runtime-play-head ion-icon { color: var(--primary); font-size: 1rem; }
+
+.runtime-play-time {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #ffffff;
 }
 
 .immersive-meta-row {
