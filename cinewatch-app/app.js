@@ -348,16 +348,16 @@ function renderHome() {
   const heroTrack = document.getElementById('heroTrack');
   if (heroTrack && heroFeatured.length > 0) {
     heroTrack.innerHTML = heroFeatured.map((m, idx) => {
-      const genreText = Array.isArray(m.genres) ? m.genres.slice(0, 3).join(' â€¢ ') : (m.genres || 'Action â€¢ Adventure â€¢ Sci-Fi');
+      const genreText = Array.isArray(m.genres) ? m.genres.slice(0, 3).join(' &bull; ') : (m.genres ? String(m.genres).replace(/â€¢/g, '&bull;') : 'Action &bull; Adventure &bull; Sci-Fi');
       return `
         <div class="hero-slide" style="background-image: url('${m.backdrop || m.poster || ''}')" onclick="openDetail('${m.id}')">
           <div class="hero-content" onclick="event.stopPropagation()">
             <h1 class="hero-title">${m.title}</h1>
             <div class="hero-meta-row">
               <span class="hero-rating-badge"><ion-icon name="star"></ion-icon> ${m.rating || '8.1'}</span>
-              <span class="hero-meta-divider">â€¢</span>
+              <span class="hero-meta-divider">&bull;</span>
               <span>${m.year || '2026'}</span>
-              <span class="hero-meta-divider">â€¢</span>
+              <span class="hero-meta-divider">&bull;</span>
               <span>${genreText}</span>
             </div>
             <p class="hero-overview">${m.description || 'Experience this blockbuster release in full HD quality with crystal-clear audio and lightning-fast multi-server streaming.'}</p>
