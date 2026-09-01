@@ -1003,7 +1003,6 @@ function openDetail(movieId) {
             <span class="meta-badge-pill gold"><ion-icon name="star"></ion-icon> IMDb ${imdbRating}</span>
             <span class="meta-badge-pill">${movie.year || '2026'}</span>
             <span class="meta-badge-pill"><ion-icon name="time-outline"></ion-icon> ${movie.duration || '2h 15m'}</span>
-            <span class="meta-badge-pill highlight">4K UHD</span>
             <span class="meta-badge-pill age">${movie.age || 'R'}</span>
           </div>
 
