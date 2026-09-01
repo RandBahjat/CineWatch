@@ -1,4 +1,4 @@
-// CineWatch — Movies Data
+﻿// CineWatch — Movies Data
 // Edit this file to add, remove, or reorder movies.
 // Push to GitHub (or save — auto-sync will handle it) for changes to go live.
 
