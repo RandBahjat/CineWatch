@@ -1186,6 +1186,21 @@ function playMovieDirect(movieId) {
       vidstackPlayer.title = `${movie.title} (${movie.year || '2026'})`;
       if (vidstackPoster) vidstackPoster.src = movie.backdrop || movie.poster || '';
       
+      // Plyr Layout Configuration
+      const plyrLayout = document.querySelector('media-plyr-layout');
+      if (plyrLayout) {
+        // You can populate this dictionary with Spanish or Kurdish translations
+        plyrLayout.translations = {
+          'Play': 'Play',
+          'Pause': 'Pause',
+          'Settings': 'Settings',
+          'Enter Fullscreen': 'Fullscreen',
+          'Exit Fullscreen': 'Exit Fullscreen',
+          'Speed': 'Speed',
+          'Quality': 'Quality'
+        };
+      }
+
       // Stop old playback cleanly
       vidstackPlayer.pause();
       
