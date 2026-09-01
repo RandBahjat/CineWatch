@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -337,10 +337,27 @@
         /* Screen inner container */
         .galaxy-screen-wrap {
             width: 100%;
+            height: 580px;
             border-radius: 36px;
             overflow: hidden;
             background: #000;
             position: relative;
+        }
+
+        /* App image area */
+        .galaxy-app {
+            position: absolute;
+            inset: 0;
+            top: 84px; /* below status(48px) + browser(36px) */
+            bottom: 24px; /* above home indicator */
+            overflow: hidden;
+        }
+        .galaxy-app img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            display: block;
         }
 
         /* Pill-shaped Dynamic Island notch */
@@ -464,7 +481,7 @@
             .android-title { font-size: 2.5rem; }
             .win-content   { height: 300px; }
             .galaxy-frame  { width: 230px; }
-            .galaxy-app    { height: 420px; }
+            .galaxy-screen-wrap { height: 460px; }
         }
     </style>
   <!-- Force iframe cache bust on every load -->
@@ -544,34 +561,43 @@
                     <ion-icon name="logo-android"></ion-icon>
                     <span>Download for Android</span>
                 </a>
-                <div class="android-sys-note">Android 8.0+ &bull; APK &bull; Free</div>
-            </div>
-
-            <!-- Galaxy S25 Ultra Mockup — ONE phone -->
-            <div class="galaxy-wrap">
-                <div class="galaxy-frame">
-                    <div class="galaxy-screen-wrap">
-
-                        <!-- Status Bar -->
+                <div class="android-sys-note">Android 8.0+ &bull;                         <!-- Status Bar -->
                         <div class="galaxy-status-bar">
-                            <span class="status-time">9:41</span>
+                            <span class="status-time">14:38</span>
                             <div class="status-icons">
-                                <ion-icon name="cellular-outline"></ion-icon>
                                 <ion-icon name="wifi-outline"></ion-icon>
+                                <ion-icon name="cellular-outline"></ion-icon>
                                 <ion-icon name="battery-full-outline"></ion-icon>
                             </div>
                         </div>
 
-                        <!-- Punch-hole camera -->
+                        <!-- Dynamic Island pill notch -->
                         <div class="galaxy-camera"></div>
 
-                        <!-- Real app iframe — mobile viewport -->
+                        <!-- Chrome browser bar -->
+                        <div class="galaxy-browser-bar">
+                            <div class="browser-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="browser-url">localhost:3500</div>
+                            <div class="browser-actions">
+                                <ion-icon name="bookmark-outline"></ion-icon>
+                                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                            </div>
+                        </div>
+
+                        <!-- App screenshot -->
                         <div class="galaxy-app">
                             <img
                                 src="android-screen.jpg"
                                 alt="CineWatch Android App Screenshot"
-                                style="width:100%; height:100%; object-fit:cover; object-position:top;"
                             />
+                        </div>
+
+                        <!-- Home indicator -->
+                        <div class="galaxy-bottom-bar">
+                            <div class="galaxy-home-indicator"></div>
+                        </div>>
                         </div>
 
                         <!-- Home indicator -->
