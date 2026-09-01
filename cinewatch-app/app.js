@@ -1074,6 +1074,11 @@ function startApp() {
 
   document.getElementById('closeAuthBtn')?.addEventListener('click', () => {
     authOverlay?.classList.add('hidden');
+    // Switch back to home tab so nav state matches what user sees
+    switchTab('home');
+    document.querySelectorAll('.mobile-bottom-nav .nav-item').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.tab === 'home');
+    });
   });
 
   // Tab switching
