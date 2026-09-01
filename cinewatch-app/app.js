@@ -1138,26 +1138,44 @@ function playMovieDirect(movieId) {
     { id: 'vidstack-direct', name: '⚡ Vidstack Native Engine (Auto TMDB 4K)' }
   ];
 
-  function switchSource(srv) {
+  async function switchSource(srv) {
     const playerLoading = document.getElementById('playerLoading');
     const playerControls = document.getElementById('playerControls');
     if (playerLoading) playerLoading.classList.remove('hidden');
 
-    // Keep Custom Vidstack Player active
-    if (playerControls) playerControls.classList.remove('hidden');
+    // Hide Custom Legacy Controls - Rely entirely on Vidstack's `<media-video-layout>`
+    if (playerControls) playerControls.classList.add('hidden');
     if (iframeEl) { iframeEl.src = ''; iframeEl.classList.add('hidden'); }
 
     const vidstackPlayer = document.getElementById('vidstackPlayer');
     const vidstackPoster = document.getElementById('vidstackPoster');
     
-    // Resolve stream based on TMDB ID & Title
-    const targetUrl = srv.streamUrl || movie.streamUrl || `https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4`;
+    // Resolve Real Stream from TMDB via Stream Engine
+    let targetUrl = `https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4`; // Fallback preview
+    
+    if (window.cwStreamEngine) {
+      try {
+        const streamData = await window.cwStreamEngine.getDirectStream(movie);
+        if (streamData && streamData.streamUrl) {
+          targetUrl = streamData.streamUrl;
+          if (streamTypeBadge) streamTypeBadge.textContent = streamData.provider || 'VIDSTACK TMDB';
+        }
+      } catch (e) {
+        console.warn('Stream resolution failed:', e);
+      }
+    } else if (srv.streamUrl || movie.streamUrl) {
+      targetUrl = srv.streamUrl || movie.streamUrl;
+    }
 
     if (vidstackPlayer) {
       vidstackPlayer.title = `${movie.title} (${movie.year || '2026'})`;
       if (vidstackPoster) vidstackPoster.src = movie.backdrop || movie.poster || '';
+      
+      // Stop old playback cleanly
+      vidstackPlayer.pause();
       vidstackPlayer.src = targetUrl;
-      vidstackPlayer.autoplay = true;
+      
+      vidstackPlayer.play().catch(e => console.warn('Vidstack play error:', e));
 
       // Vidstack Autoplay Lifecycle
       vidstackPlayer.addEventListener('autoplay', (event) => {
@@ -1169,8 +1187,13 @@ function playMovieDirect(movieId) {
         playerLoading?.classList.add('hidden');
       });
       
-      // Auto clear spinner after 800ms
-      setTimeout(() => playerLoading?.classList.add('hidden'), 800);
+      // Also listen to standard playing event
+      vidstackPlayer.addEventListener('playing', () => {
+        playerLoading?.classList.add('hidden');
+      });
+      
+      // Auto clear spinner after 3 seconds as a hard fallback
+      setTimeout(() => playerLoading?.classList.add('hidden'), 3000);
     }
 
     if (streamTypeBadge) streamTypeBadge.textContent = 'VIDSTACK TMDB';
