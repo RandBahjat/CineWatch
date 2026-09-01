@@ -3201,3 +3201,55 @@ html.light-mode .hero-slide::before {
 .logout-icon-wrapper:hover .animated-logout-svg .logout-door {
   transform: translateX(-2px);
 }
+
+
+/* ===== NEW SIGN IN BUTTON (SIDEBAR) ===== */
+.sidebar-signin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 14px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.3);
+}
+
+.sidebar-signin-btn:hover {
+  background: #ff1c2a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(229, 9, 20, 0.4);
+}
+
+/* Animated Login SVG (Door & Arrow) */
+.animated-login-svg .login-arrow,
+.animated-login-svg .login-arrow-bottom,
+.animated-login-svg .login-door {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Base state: Arrow is slightly outside */
+.animated-login-svg .login-arrow,
+.animated-login-svg .login-arrow-bottom {
+  transform: translateX(-4px);
+  opacity: 0.8;
+}
+
+/* Hover state: Arrow moves in, Door shifts slightly */
+.sidebar-signin-btn:hover .animated-login-svg .login-arrow,
+.sidebar-signin-btn:hover .animated-login-svg .login-arrow-bottom {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.sidebar-signin-btn:hover .animated-login-svg .login-door {
+  transform: translateX(2px);
+}
