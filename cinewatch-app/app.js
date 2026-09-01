@@ -1,4 +1,4 @@
-﻿/**
+/**
  * CineWatch Standalone App Engine
  * High-Performance, Instant-Loading Streaming Platform Logic
  */
@@ -901,9 +901,8 @@ function renderWatchlist() {
   }
 }
 
-// Detail Modal â€” FIX 4: O(1) Map lookup instead of .find()
+// Detail Modal — FIX 4: O(1) Map lookup instead of .find()
 function openDetail(movieId) {
-  // FIX 4: instant O(1) lookup â€” no N+1 scan through the whole MOVIES array
   const movie = _movieMap.get(String(movieId));
   if (!movie) return;
 
@@ -912,46 +911,70 @@ function openDetail(movieId) {
   const hero = document.getElementById('detailHero');
   const body = document.getElementById('detailBody');
 
+  const isFav = state.favorites.has(String(movie.id));
+  const genreText = Array.isArray(movie.genres) ? movie.genres.join(', ') : (movie.genres || 'Action, Drama');
+  const castText = movie.cast ? (Array.isArray(movie.cast) ? movie.cast.join(', ') : movie.cast) : 'Tom Holland, Zendaya, Benedict Cumberbatch';
+  const directorText = movie.director || 'Jon Watts';
+
   if (hero) {
     hero.style.backgroundImage = `url('${movie.backdrop || movie.poster || ''}')`;
     hero.innerHTML = `
+      <div class="detail-hero-gradient"></div>
       <div class="detail-hero-content">
-        <h2 style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 800;">${movie.title}</h2>
-        <div style="display: flex; gap: 0.75rem; color: var(--text-sub); font-size: 0.9rem;">
-          <span style="color: var(--accent-gold); font-weight: 700;"><ion-icon name="star"></ion-icon> ${movie.rating || '8.5'}</span>
-          <span>â€¢</span>
-          <span>${movie.year || '2026'}</span>
-          <span>â€¢</span>
-          <span>${movie.duration || '2h 10m'}</span>
+        <h2 class="detail-title">${movie.title}</h2>
+        
+        <div class="detail-metadata">
+          <span class="meta-item"><ion-icon name="star" style="color:var(--accent-gold);"></ion-icon> ${movie.rating || '8.5'}</span>
+          <span class="meta-item">${movie.year || '2026'}</span>
+          <span class="meta-badge age-badge">${movie.age || 'TV-MA'}</span>
+          <span class="meta-item">${movie.duration || '2h 10m'}</span>
+          <span class="meta-badge hd-badge">HD</span>
+        </div>
+
+        <div class="detail-actions">
+          <button class="btn btn-primary" onclick="playMovieDirect('${movie.id}')">
+            <ion-icon name="play"></ion-icon> Play
+          </button>
+          <button class="btn btn-circle" onclick="toggleFavorite('${movie.id}'); openDetail('${movie.id}');" title="${isFav ? 'Remove from Watchlist' : 'Add to Watchlist'}">
+            <ion-icon name="${isFav ? 'checkmark' : 'add'}"></ion-icon>
+          </button>
+          <button class="btn btn-circle" title="Rate">
+            <ion-icon name="thumbs-up-outline"></ion-icon>
+          </button>
         </div>
       </div>
     `;
   }
 
-  const isFav = state.favorites.has(String(movie.id));
-
   if (body) {
     body.innerHTML = `
-      <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
-        <button class="btn btn-primary" onclick="playMovieDirect('${movie.id}')"><ion-icon name="play"></ion-icon> Play Movie</button>
-        <button class="btn btn-secondary" onclick="toggleFavorite('${movie.id}'); openDetail('${movie.id}');">
-          <ion-icon name="${isFav ? 'heart' : 'heart-outline'}" style="color: ${isFav ? 'var(--primary)' : 'inherit'};"></ion-icon>
-          ${isFav ? 'In Watchlist' : 'Add to Watchlist'}
-        </button>
-      </div>
-
-      <p style="color: rgba(255,255,255,0.85); line-height: 1.6; font-size: 0.95rem;">
-        ${movie.description || 'A cinematic masterpiece streaming now on CineWatch in full high-definition quality with crystal clear audio.'}
-      </p>
-
-      <div style="display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.88rem; color: var(--text-sub); margin-top: 0.5rem;">
-        <div><strong style="color: #fff;">Genres:</strong> ${Array.isArray(movie.genres) ? movie.genres.join(', ') : (movie.genres || 'Action, Drama')}</div>
-        ${movie.director ? `<div><strong style="color: #fff;">Director:</strong> ${movie.director}</div>` : ''}
-        ${movie.cast ? `<div><strong style="color: #fff;">Cast:</strong> ${Array.isArray(movie.cast) ? movie.cast.join(', ') : movie.cast}</div>` : ''}
+      <div class="detail-layout">
+        <div class="detail-left">
+          <p class="detail-overview">
+            ${movie.description || movie.overview || 'A cinematic masterpiece streaming now on CineWatch in full high-definition quality with crystal clear audio.'}
+          </p>
+        </div>
+        <div class="detail-right">
+          <div class="info-row">
+            <span class="info-label">Cast:</span>
+            <span class="info-value">${castText}</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Genres:</span>
+            <span class="info-value">${genreText}</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Director:</span>
+            <span class="info-value">${directorText}</span>
+          </div>
+        </div>
       </div>
     `;
   }
 
+  // Reset scroll and show modal
+  const sheet = document.getElementById('detailSheet');
+  if (sheet) sheet.scrollTop = 0;
   modal?.classList.remove('hidden');
 }
 
