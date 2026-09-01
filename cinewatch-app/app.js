@@ -543,22 +543,50 @@ function setupHeroDragEvents() {
   heroContainer.addEventListener('touchend', onDragEnd);
 }
 
-// Render hero slide indicator dots
+// Render hero slide indicator dock with numbers & navigation
 function renderHeroDots(count) {
   const dotsEl = document.getElementById('heroDots');
   if (!dotsEl) return;
-  dotsEl.innerHTML = Array.from({ length: count }, (_, i) =>
-    `<button class="hero-dot ${i === state.heroIndex ? 'active' : ''}" onclick="jumpHeroSlide(${i})" aria-label="Go to slide ${i + 1}"></button>`
-  ).join('');
+  
+  const pad = (n) => String(n).padStart(2, '0');
+  
+  dotsEl.innerHTML = `
+    <button class="hero-nav-arrow" onclick="jumpHeroSlide(state.heroIndex - 1)" aria-label="Previous Slide" title="Previous Slide">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </button>
+    <div class="hero-dots-track">
+      ${Array.from({ length: count }, (_, i) =>
+        `<button class="hero-dot ${i === state.heroIndex ? 'active' : ''}" onclick="jumpHeroSlide(${i})" aria-label="Go to slide ${i + 1}"></button>`
+      ).join('')}
+    </div>
+    <div class="hero-page-counter">
+      <span class="hero-cur-num" id="heroCurNum">${pad(state.heroIndex + 1)}</span>
+      <span class="hero-sep">/</span>
+      <span class="hero-total-num" id="heroTotalNum">${pad(count)}</span>
+    </div>
+    <button class="hero-nav-arrow" onclick="jumpHeroSlide(state.heroIndex + 1)" aria-label="Next Slide" title="Next Slide">
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </button>
+  `;
 }
 
 function updateHeroDots() {
+  const count = document.querySelectorAll('.hero-slide').length || 6;
+  const pad = (n) => String(n).padStart(2, '0');
+  
+  const curNum = document.getElementById('heroCurNum');
+  if (curNum) curNum.textContent = pad(state.heroIndex + 1);
+
   document.querySelectorAll('#heroDots .hero-dot').forEach((dot, i) => {
     dot.classList.toggle('active', i === state.heroIndex);
   });
 }
 
 function jumpHeroSlide(index) {
+  const count = document.querySelectorAll('.hero-slide').length || 6;
+  if (index < 0) index = count - 1;
+  else if (index >= count) index = 0;
+  
   state.heroIndex = index;
   updateHeroBannerPosition();
 }
