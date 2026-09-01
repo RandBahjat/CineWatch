@@ -1194,7 +1194,7 @@ function startApp() {
     hideAuth();
   });
 
-  // Tab switching — 100% CSS-driven, no inline styles needed
+  // Tab switching — staggered CSS transitions
   let _authCurrentTab = 'signin';
 
   function switchAuthTab(tab) {
@@ -1205,17 +1205,18 @@ function startApp() {
       t.classList.toggle('active', t.dataset.tab === tab)
     );
 
-    // Right panel forms
+    // Right panel forms — stagger: fade out → wait → fade in
     const outFormId = _authCurrentTab === 'signin' ? 'formSignIn' : 'formSignUp';
     const inFormId  = tab === 'signin' ? 'formSignIn' : 'formSignUp';
     document.getElementById(outFormId)?.classList.remove('active');
-    setTimeout(() => document.getElementById(inFormId)?.classList.add('active'), 50);
+    // Wait for out-fade to progress before bringing in the new one
+    setTimeout(() => document.getElementById(inFormId)?.classList.add('active'), 180);
 
-    // Left panel content
+    // Left panel content — same stagger
     const outLeftId = _authCurrentTab === 'signin' ? 'leftContentSignIn' : 'leftContentSignUp';
     const inLeftId  = tab === 'signin' ? 'leftContentSignIn' : 'leftContentSignUp';
     document.getElementById(outLeftId)?.classList.remove('active');
-    setTimeout(() => document.getElementById(inLeftId)?.classList.add('active'), 60);
+    setTimeout(() => document.getElementById(inLeftId)?.classList.add('active'), 180);
 
     _authCurrentTab = tab;
   }
