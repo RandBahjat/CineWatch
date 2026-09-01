@@ -1407,7 +1407,7 @@ html, body {
   font-family: var(--font-display);
   font-size: 1.6rem;
   font-weight: 800;
-  color: #f7a072; /* Warm orange from mockup */
+  color: var(--primary); /* Warm orange from mockup */
   letter-spacing: -0.5px;
 }
 
@@ -1475,7 +1475,7 @@ html, body {
 .immersive-cast {
   font-size: 0.85rem;
   font-weight: 700;
-  color: #f7a072;
+  color: var(--primary);
   letter-spacing: 1px;
 }
 
@@ -1496,7 +1496,7 @@ html, body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: linear-gradient(135deg, #f7a072 0%, #ff7b54 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, #b80710 100%);
   color: #111;
   border: none;
   border-radius: 30px;
@@ -1554,7 +1554,7 @@ html, body {
 }
 
 .meta-match {
-  color: #f7a072;
+  color: var(--primary);
   font-weight: 700;
 }
 
