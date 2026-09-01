@@ -2419,6 +2419,24 @@ html.light-mode .toast {
 }
 .auth-switch a:hover { text-decoration: underline; }
 
+/* Responsive adjustments for Desktop */
+@media (min-width: 1024px) {
+  .auth-overlay {
+    align-items: center;
+  }
+  
+  .auth-card {
+    border-radius: 28px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding: 3rem 2.5rem;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8), 0 0 40px rgba(229, 9, 20, 0.1);
+  }
+
+  .auth-card::before {
+    display: none;
+  }
+}
+
 /* ==========================================================================
    LIVE TV CHANNEL CARDS (New Design)
    ========================================================================== */
