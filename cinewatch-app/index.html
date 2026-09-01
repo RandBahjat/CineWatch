@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -93,7 +93,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="../api.js?v=v6" defer></script>
 
-  <script src="app.js?v=28"></script>
+  <script src="app.js?v=29"></script>
 </head>
 <body>
 
@@ -165,19 +165,25 @@
               Settings
             </button>
           </div>
-          <div class="sidebar-user premium-profile">
-            <div class="user-avatar-premium">
-              <ion-icon name="person"></ion-icon>
-              <div class="avatar-ring"></div>
+          <div class="sidebar-user new-profile-card">
+            <div class="avatar-blob">
+              <ion-icon name="person" style="color: #ff0033; font-size: 1.2rem; z-index: 2; position: relative;"></ion-icon>
+              <svg class="blob-bg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#520011" d="M47.7,-57.2C59.4,-45.5,64.8,-27.1,66.8,-8.9C68.7,9.3,67.3,27.3,58.5,41.9C49.6,56.5,33.4,67.7,15,72.4C-3.4,77,-24,75.1,-40.4,65.3C-56.7,55.5,-68.8,37.8,-73.4,18.5C-78.1,-0.7,-75.3,-21.4,-65,-37.2C-54.7,-53,-36.8,-63.9,-19.7,-68.4C-2.5,-72.9,13.9,-70.8,36,-68.9Z" transform="translate(100 100) scale(1.1)" />
+              </svg>
             </div>
             <div class="user-info">
               <div class="user-name">Guest</div>
-              <div class="user-role premium-badge">
+              <div class="user-role new-premium-badge">
                 <ion-icon name="sparkles"></ion-icon> Free Plan
               </div>
             </div>
-            <div class="profile-arrow">
-              <ion-icon name="chevron-forward-outline"></ion-icon>
+            <div class="logout-icon-wrapper" onclick="document.getElementById('logoutBtn')?.click()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="animated-logout-svg">
+                <path class="logout-door" style="transform-origin: 50% 50%" d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                <path class="logout-arrow" d="M9 12h12" />
+                <path class="logout-arrow-bottom" d="M18 15l3 -3l-3 -3" />
+              </svg>
             </div>
           </div>
         </div>
