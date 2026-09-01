@@ -1,4 +1,4 @@
-/**
+﻿/**
  * CineWatch Standalone App Engine
  * High-Performance, Instant-Loading Streaming Platform Logic
  */
@@ -902,6 +902,7 @@ function renderWatchlist() {
 }
 
 // Detail Modal — with Netflix-style auto-playing trailer
+// Detail Modal — Immersive Full-Screen View
 let _trailerTimer = null;
 let _trailerMuted = true;
 
@@ -919,21 +920,18 @@ function openDetail(movieId) {
 
   const isFav        = state.favorites.has(String(movie.id));
   const genreText    = Array.isArray(movie.genres) ? movie.genres.join(', ') : (movie.genres || 'Action, Drama');
-  const castText     = movie.cast ? (Array.isArray(movie.cast) ? movie.cast.join(', ') : movie.cast) : '';
+  let castText     = movie.cast ? (Array.isArray(movie.cast) ? movie.cast.join(', ') : movie.cast) : 'TOM HOLLAND, ZENDAYA, BENEDICT CUMBERBATCH';
   const directorText = movie.director || '';
   const overview     = movie.description || movie.overview || 'A cinematic masterpiece streaming now on CineWatch in full high-definition quality with crystal clear audio.';
   const trailerId    = movie.trailerYouTubeId || null;
 
-  /* ── Hero: backdrop + title only overlaid at bottom ── */
+  /* ── Hero: Full-screen background ── */
   if (hero) {
     hero.style.backgroundImage = `url('${movie.backdrop || movie.poster || ''}')`;
     hero.style.backgroundSize  = 'cover';
-    hero.style.backgroundPosition = 'center top';
+    hero.style.backgroundPosition = 'center center';
     hero.innerHTML = `
-      <div class="detail-hero-gradient"></div>
-      <div class="detail-hero-title-wrap">
-        <h2 class="detail-title">${movie.title}</h2>
-      </div>
+      <div class="immersive-gradient"></div>
       ${trailerId ? `<button class="trailer-sound-btn hidden" id="trailerSoundBtn" title="Toggle sound">
         <ion-icon name="volume-mute"></ion-icon>
       </button>` : ''}
@@ -947,37 +945,48 @@ function openDetail(movieId) {
     }
   }
 
-  /* ── Body: all content below image ── */
+  /* ── Body: Top Nav + Bottom Content ── */
   if (body) {
+    // Generate a random match percentage for the UI
+    const matchPercent = Math.floor(Math.random() * 15) + 80;
+    
+    // Simulate runtime play till time
+    const now = new Date();
+    now.setHours(now.getHours() + 2);
+    const timeString = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+
     body.innerHTML = `
-      <div class="detail-metadata">
-        <span class="meta-rating"><ion-icon name="star"></ion-icon> ${movie.rating || '8.5'}</span>
-        <span class="meta-item">${movie.year || '2026'}</span>
-        <span class="meta-badge">${movie.age || 'PG-13'}</span>
-        <span class="meta-item">${movie.duration || '2h 10m'}</span>
-        <span class="meta-badge">HD</span>
-      </div>
-
-      <div class="detail-actions">
-        <button class="detail-btn-play" onclick="playMovieDirect('${movie.id}')">
-          <ion-icon name="play"></ion-icon> Play
-        </button>
-        <button class="detail-btn-circle" onclick="toggleFavorite('${movie.id}'); openDetail('${movie.id}');" title="${isFav ? 'Remove from Watchlist' : 'Add to Watchlist'}">
-          <ion-icon name="${isFav ? 'checkmark' : 'add'}"></ion-icon>
-        </button>
-        <button class="detail-btn-circle" title="Rate this">
-          <ion-icon name="thumbs-up-outline"></ion-icon>
-        </button>
-      </div>
-
-      <div class="detail-layout">
-        <div class="detail-left">
-          <p class="detail-overview">${overview}</p>
+      <div class="immersive-topbar">
+        <div class="immersive-logo">CineWatch</div>
+        <div class="immersive-top-actions">
+          <button class="top-btn" onclick="closeDetail()"><ion-icon name="arrow-back-outline"></ion-icon> Go Back</button>
+          <button class="top-btn icon-only"><ion-icon name="settings-outline"></ion-icon></button>
+          <button class="top-btn icon-only"><ion-icon name="flag-outline"></ion-icon></button>
         </div>
-        <div class="detail-right">
-          ${castText     ? `<div class="info-row"><span class="info-label">Cast:</span> <span class="info-value">${castText}</span></div>` : ''}
-          ${genreText    ? `<div class="info-row"><span class="info-label">Genres:</span> <span class="info-value">${genreText}</span></div>` : ''}
-          ${directorText ? `<div class="info-row"><span class="info-label">Director:</span> <span class="info-value">${directorText}</span></div>` : ''}
+      </div>
+
+      <div class="immersive-bottom-container">
+        <div class="immersive-left">
+          <h1 class="immersive-title">${movie.title} <span class="immersive-year">${movie.year || '2026'}</span></h1>
+          <div class="immersive-cast">${castText.toUpperCase()}</div>
+          <p class="immersive-overview">${overview}</p>
+          <div class="immersive-btn-row">
+            <button class="btn-watch-now" onclick="playMovieDirect('${movie.id}')">
+              <ion-icon name="play"></ion-icon> Watch Now
+            </button>
+            <button class="btn-more-info" onclick="toggleFavorite('${movie.id}'); openDetail('${movie.id}');">
+              <ion-icon name="${isFav ? 'checkmark-circle-outline' : 'information-circle-outline'}"></ion-icon> ${isFav ? 'In Watchlist' : 'Watchlist'}
+            </button>
+          </div>
+        </div>
+
+        <div class="immersive-right">
+          <div class="immersive-meta-row">
+            <span class="meta-time"><ion-icon name="time-outline"></ion-icon> ${movie.duration || '2:15'}</span>
+            <span class="meta-match">${matchPercent}% Match</span>
+            <span class="meta-age-box">${movie.age || 'R'}</span>
+          </div>
+          <div class="meta-subtext">RUNTIME WOULD PLAY TILL ${timeString}</div>
         </div>
       </div>
     `;
