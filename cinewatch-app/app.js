@@ -1194,51 +1194,28 @@ function startApp() {
     hideAuth();
   });
 
-  // Tab switching — smooth CSS-driven transitions
+  // Tab switching — 100% CSS-driven, no inline styles needed
   let _authCurrentTab = 'signin';
 
   function switchAuthTab(tab) {
     if (tab === _authCurrentTab) return;
-    const direction = tab === 'signup' ? 1 : -1;
 
     // Update mobile pill tabs
     document.querySelectorAll('.auth-tab').forEach(t =>
       t.classList.toggle('active', t.dataset.tab === tab)
     );
 
-    // ── Right panel form crossfade ──────────────────────────────────────
-    const outId  = _authCurrentTab === 'signin' ? 'formSignIn' : 'formSignUp';
-    const inId   = tab === 'signin' ? 'formSignIn' : 'formSignUp';
-    const outForm = document.getElementById(outId);
-    const inForm  = document.getElementById(inId);
+    // Right panel forms
+    const outFormId = _authCurrentTab === 'signin' ? 'formSignIn' : 'formSignUp';
+    const inFormId  = tab === 'signin' ? 'formSignIn' : 'formSignUp';
+    document.getElementById(outFormId)?.classList.remove('active');
+    setTimeout(() => document.getElementById(inFormId)?.classList.add('active'), 50);
 
-    if (outForm) {
-      outForm.style.transition = 'opacity 0.28s ease, transform 0.28s ease';
-      outForm.style.opacity = '0';
-      outForm.style.transform = `translateX(${direction * -36}px)`;
-      setTimeout(() => {
-        outForm.classList.remove('active');
-        outForm.style.cssText = '';
-      }, 290);
-    }
-
-    setTimeout(() => {
-      if (inForm) {
-        inForm.style.cssText = `opacity:0; transform:translateX(${direction * 36}px)`;
-        inForm.classList.add('active');
-        inForm.offsetHeight; // force reflow
-        inForm.style.transition = 'opacity 0.32s ease, transform 0.32s ease';
-        inForm.style.opacity = '1';
-        inForm.style.transform = 'translateX(0)';
-        setTimeout(() => { inForm.style.cssText = ''; }, 330);
-      }
-    }, 110);
-
-    // ── Left panel content crossfade (CSS does it — just swap active class) ──
-    const outLeft = document.getElementById(_authCurrentTab === 'signin' ? 'leftContentSignIn' : 'leftContentSignUp');
-    const inLeft  = document.getElementById(tab === 'signin' ? 'leftContentSignIn' : 'leftContentSignUp');
-    if (outLeft) outLeft.classList.remove('active');
-    if (inLeft)  setTimeout(() => inLeft.classList.add('active'), 60);
+    // Left panel content
+    const outLeftId = _authCurrentTab === 'signin' ? 'leftContentSignIn' : 'leftContentSignUp';
+    const inLeftId  = tab === 'signin' ? 'leftContentSignIn' : 'leftContentSignUp';
+    document.getElementById(outLeftId)?.classList.remove('active');
+    setTimeout(() => document.getElementById(inLeftId)?.classList.add('active'), 60);
 
     _authCurrentTab = tab;
   }
