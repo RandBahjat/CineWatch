@@ -1133,17 +1133,12 @@ function playMovieDirect(movieId) {
     nextEpBtn.classList.toggle('hidden', !isTv);
   }
 
-  // CineWatch Native Player Engine + Cloud Backup
+  // High-Speed Streaming Fleet (Plays the actual full movie/series)
   const servers = [
-    { 
-      id: 'native', 
-      name: '🎬 CineWatch Custom Engine', 
-      isDirect: true, 
-      streamUrl: movie.streamUrl || 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4' 
-    },
-    { id: 'vidlink', name: '⚡ Cloud Server 1 (VidLink)', url: isTv ? `https://vidlink.pro/tv/${tmdb}/1/1` : `https://vidlink.pro/movie/${tmdb}` },
-    { id: 'vidsrc-vip', name: '👑 Cloud Server 2 (VidSrc)', url: isTv ? `https://vidsrc.cc/v2/embed/tv/${tmdb}/1/1` : `https://vidsrc.cc/v2/embed/movie/${tmdb}` },
-    { id: 'smashy', name: '🚀 Cloud Server 3 (Smashy)', url: isTv ? `https://player.smashystream.com/tv/${tmdb}/1/1` : `https://player.smashystream.com/movie/${tmdb}` }
+    { id: 'vidlink', name: '⚡ Server 1: VidLink Pro HD', url: isTv ? `https://vidlink.pro/tv/${tmdb}/1/1` : `https://vidlink.pro/movie/${tmdb}` },
+    { id: 'vidsrc-vip', name: '👑 Server 2: VidSrc CC V2', url: isTv ? `https://vidsrc.cc/v2/embed/tv/${tmdb}/1/1` : `https://vidsrc.cc/v2/embed/movie/${tmdb}` },
+    { id: 'smashy', name: '🚀 Server 3: SmashyStream', url: isTv ? `https://player.smashystream.com/tv/${tmdb}/1/1` : `https://player.smashystream.com/movie/${tmdb}` },
+    { id: 'vidsrc', name: '🌟 Server 4: VidSrc Original', url: isTv ? `https://vidsrc.to/embed/tv/${tmdb}/1/1` : `https://vidsrc.to/embed/movie/${tmdb}` }
   ];
 
   function switchSource(srv) {
@@ -1151,48 +1146,38 @@ function playMovieDirect(movieId) {
     const playerControls = document.getElementById('playerControls');
     if (playerLoading) playerLoading.classList.remove('hidden');
 
-    if (srv.isDirect) {
-      // CineWatch Direct Native Video Player (Uses our custom UI dock 100%)
+    if (srv.isDirect && srv.streamUrl) {
+      // Direct Native Video Player
       _cwPlayerState.isDirect = true;
       if (iframeEl) { iframeEl.src = ''; iframeEl.classList.add('hidden'); }
       if (playerControls) playerControls.classList.remove('hidden');
-      
       if (videoEl) {
         videoEl.classList.remove('hidden');
-        
-        if (srv.streamUrl.endsWith('.m3u8') && window.Hls && Hls.isSupported()) {
-          if (_cwPlayerState.hlsInstance) _cwPlayerState.hlsInstance.destroy();
-          _cwPlayerState.hlsInstance = new Hls({ enableWorker: true });
-          _cwPlayerState.hlsInstance.loadSource(srv.streamUrl);
-          _cwPlayerState.hlsInstance.attachMedia(videoEl);
-          _cwPlayerState.hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
-            videoEl.play().catch(() => {});
-            playerLoading?.classList.add('hidden');
-          });
-        } else {
-          videoEl.src = srv.streamUrl;
-          videoEl.play().catch(() => {});
-          videoEl.onloadeddata = () => {
-            playerLoading?.classList.add('hidden');
-          };
-          // Timeout safety
-          setTimeout(() => playerLoading?.classList.add('hidden'), 1200);
-        }
+        videoEl.src = srv.streamUrl;
+        videoEl.play().catch(() => {});
+        videoEl.onloadeddata = () => playerLoading?.classList.add('hidden');
+        setTimeout(() => playerLoading?.classList.add('hidden'), 1000);
       }
-      if (streamTypeBadge) streamTypeBadge.textContent = 'CINEWATCH NATIVE';
+      if (streamTypeBadge) streamTypeBadge.textContent = 'DIRECT STREAM';
     } else {
-      // Third-party embed fallback
+      // High-Speed Cloud Stream (Plays actual movie & series)
       _cwPlayerState.isDirect = false;
       if (videoEl) { videoEl.pause(); videoEl.classList.add('hidden'); }
       if (playerControls) playerControls.classList.add('hidden');
       if (iframeEl) {
         iframeEl.classList.remove('hidden');
-        iframeEl.src = srv.url;
+        // Custom branding for VidLink to match CineWatch red & black UI
+        let embedUrl = srv.url;
+        if (embedUrl.includes('vidlink.pro')) {
+          const sep = embedUrl.includes('?') ? '&' : '?';
+          embedUrl = `${embedUrl}${sep}primaryColor=e50914&secondaryColor=ffffff&iconColor=ffffff&autoplay=true`;
+        }
+        iframeEl.src = embedUrl;
         iframeEl.onload = () => {
           playerLoading?.classList.add('hidden');
         };
       }
-      if (streamTypeBadge) streamTypeBadge.textContent = srv.name.split(' ')[0] || 'STREAM';
+      if (streamTypeBadge) streamTypeBadge.textContent = srv.name.split(':')[0] || 'STREAM';
     }
   }
 
