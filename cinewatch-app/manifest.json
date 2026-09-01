@@ -1,21 +1,81 @@
 {
   "name": "CineWatch",
   "short_name": "CineWatch",
-  "description": "Premium Movies, Series, and Anime streaming.",
+  "description": "Stream premium movies, series, anime, and watch together with friends.",
   "start_url": "./index.html",
+  "id": "watch.cinewatch.app",
   "display": "standalone",
-  "background_color": "#0b0d14",
+  "orientation": "any",
+  "background_color": "#06070a",
   "theme_color": "#e50914",
+  "categories": ["entertainment", "movies", "video"],
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
   "icons": [
     {
       "src": "icon-192.png",
       "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-256.png",
+      "sizes": "256x256",
       "type": "image/png"
     },
     {
       "src": "icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
-  ]
+  ],
+  "shortcuts": [
+    {
+      "name": "Explore Movies & Series",
+      "short_name": "Explore",
+      "description": "Browse trending movies, series, and anime",
+      "url": "./index.html#explore",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Watch Together",
+      "short_name": "Together",
+      "description": "Stream together with friends in real-time",
+      "url": "./index.html#party",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "My Watchlist",
+      "short_name": "Watchlist",
+      "description": "View your saved movies and series",
+      "url": "./index.html#watchlist",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "./index.html",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
 }
