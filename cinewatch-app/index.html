@@ -76,7 +76,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="../api.js?v=v6" defer></script>
 
-  <script src="app.js?v=237" defer></script>
+  <script src="app.js?v=238" defer></script>
 </head>
 <body>
 
@@ -343,6 +343,9 @@
   <!-- Full-Screen Settings Overlay -->
   <div class="settings-overlay hidden" id="settingsOverlay">
     <div class="settings-header">
+      <button class="settings-back-btn" id="closeSettingsBtn" aria-label="Go Back">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </button>
       <div class="profile-banner" id="profileBanner" style="background-image: url('https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=2070&auto=format&fit=crop');">
         <!-- Change Cover triggers file input -->
         <label class="edit-banner-btn" for="bannerFileInput">
