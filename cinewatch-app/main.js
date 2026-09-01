@@ -24,17 +24,20 @@ function createWindow() {
   });
 
   // Window control IPC listeners
-  ipcMain.on('window-minimize', () => {
-    if (mainWindow) mainWindow.minimize();
+  ipcMain.on('window-minimize', (event) => {
+    const win = BrowserWindow.fromWebContents(event.sender) || mainWindow;
+    if (win) win.minimize();
   });
-  ipcMain.on('window-maximize', () => {
-    if (mainWindow) {
-      if (mainWindow.isMaximized()) mainWindow.unmaximize();
-      else mainWindow.maximize();
+  ipcMain.on('window-maximize', (event) => {
+    const win = BrowserWindow.fromWebContents(event.sender) || mainWindow;
+    if (win) {
+      if (win.isMaximized()) win.unmaximize();
+      else win.maximize();
     }
   });
-  ipcMain.on('window-close', () => {
-    if (mainWindow) mainWindow.close();
+  ipcMain.on('window-close', (event) => {
+    const win = BrowserWindow.fromWebContents(event.sender) || mainWindow;
+    if (win) win.close();
   });
 
   // Enable F12 and Ctrl+Shift+I to toggle DevTools
