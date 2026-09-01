@@ -1356,46 +1356,67 @@ media-player.vds-player {
 }
 
 media-video-layout {
-  --media-controls-color: #ffffff;
-  --media-controls-bg: rgba(10, 12, 18, 0.75);
-  backdrop-filter: blur(28px) saturate(180%);
-  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  /* Core Variables */
+  --video-brand: #e50914;
+  --video-controls-color: #ffffff;
+  --video-slider-track-fill: #e50914;
+  --video-slider-thumb-bg: #ffffff;
+  --video-slider-thumb-size: 16px;
 }
 
-.vds-controls {
-  padding: 16px 24px;
+/* ── Deep Shadow DOM Styling for TRUE Glassmorphism ── */
+
+/* Floating Glass Bottom Controls Dock */
+media-video-layout::part(controls) {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%) !important;
+  padding-bottom: 24px;
 }
 
-.vds-time-slider {
-  --media-slider-fill: linear-gradient(90deg, #ff1c2a 0%, #e50914 100%);
-  --media-slider-height: 6px;
-  --media-slider-thumb-size: 16px;
-  --media-slider-thumb-bg: #ffffff;
-  --media-slider-thumb-shadow: 0 0 12px rgba(229, 9, 20, 0.85);
-}
-
-.vds-button {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+/* Glassy Action Buttons */
+media-video-layout::part(button) {
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);
-  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  margin: 0 4px;
 }
 
-.vds-button:hover {
-  background: rgba(229, 9, 20, 0.85);
-  transform: scale(1.1);
+media-video-layout::part(button):hover {
+  background: rgba(229, 9, 20, 0.85); /* CineWatch Red Glow */
+  transform: scale(1.15);
   border-color: rgba(255, 28, 42, 0.6);
   box-shadow: 0 0 16px rgba(229, 9, 20, 0.6);
 }
 
-.vds-menu {
-  background: rgba(12, 15, 24, 0.85) !important;
-  backdrop-filter: blur(28px) saturate(190%) !important;
-  -webkit-backdrop-filter: blur(28px) saturate(190%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+/* Beautiful Frosted Glass Settings Menu */
+media-video-layout::part(menu) {
+  background: rgba(12, 15, 24, 0.75) !important;
+  backdrop-filter: blur(32px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(32px) saturate(190%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
   border-radius: 16px !important;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75) !important;
+  padding: 8px !important;
+}
+
+/* Slider Customization */
+media-video-layout::part(slider) {
+  --video-slider-track-bg: rgba(255, 255, 255, 0.2);
+}
+
+media-video-layout::part(slider-thumb) {
+  box-shadow: 0 0 16px rgba(229, 9, 20, 0.9);
+}
+
+/* Tooltips */
+media-video-layout::part(tooltip) {
+  background: rgba(20, 20, 20, 0.9);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  color: #fff;
 }
 
 .ai-messages-list {
