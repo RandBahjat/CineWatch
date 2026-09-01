@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -454,6 +454,15 @@
             .galaxy-app    { height: 460px; }
         }
     </style>
+  <!-- Force iframe cache bust on every load -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('iframe').forEach(f => {
+        const base = 'cinewatch-app/index.html';
+        f.src = base + '?bust=' + Date.now();
+      });
+    });
+  </script>
 </head>
 <body>
     <div class="ambient-glow"></div>
