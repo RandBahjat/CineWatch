@@ -948,7 +948,7 @@ function openDetail(movieId) {
   /* ── Body: Top Nav + Bottom Content ── */
   if (body) {
     // Generate a random match percentage for the UI
-    const matchPercent = Math.floor(Math.random() * 15) + 80;
+    const imdbRating = movie.rating || '8.5';
     
     // Simulate runtime play till time
     const now = new Date();
@@ -983,7 +983,7 @@ function openDetail(movieId) {
         <div class="immersive-right">
           <div class="immersive-meta-row">
             <span class="meta-time"><ion-icon name="time-outline"></ion-icon> ${movie.duration || '2:15'}</span>
-            <span class="meta-match">${matchPercent}% Match</span>
+            <span class="meta-match">IMDb ${imdbRating}</span>
             <span class="meta-age-box">${movie.age || 'R'}</span>
           </div>
           <div class="meta-subtext">RUNTIME WOULD PLAY TILL ${timeString}</div>
