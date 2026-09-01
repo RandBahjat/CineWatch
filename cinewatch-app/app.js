@@ -1227,6 +1227,43 @@ function playMovieDirect(movieId) {
     };
   }
 
+  // Attempt Direct Stream Extraction (Consumet / FlixHQ Raw HLS)
+  if (window.cwStreamEngine) {
+    window.cwStreamEngine.getDirectStream(movie).then(directRes => {
+      if (directRes && directRes.streamUrl) {
+        servers.unshift({
+          id: 'native-extracted',
+          name: `🎬 ${directRes.provider || 'Direct 4K Stream'}`,
+          isDirect: true,
+          streamUrl: directRes.streamUrl,
+          subtitles: directRes.subtitles
+        });
+        switchSource(servers[0]);
+        if (serverActiveLabel) serverActiveLabel.textContent = 'Direct 4K';
+        if (serverList) {
+          serverList.innerHTML = servers.map((s, idx) => `
+            <button class="cw-menu-item ${idx === 0 ? 'active' : ''}" data-srv-id="${s.id}">
+              <span>${s.name}</span>
+            </button>
+          `).join('');
+          serverList.querySelectorAll('.cw-menu-item').forEach(item => {
+            item.onclick = (e) => {
+              e.stopPropagation();
+              const srv = servers.find(s => s.id === item.dataset.srvId);
+              if (srv) {
+                switchSource(srv);
+                if (serverActiveLabel) serverActiveLabel.textContent = srv.name.split(':')[0].replace(/[^a-zA-Z0-9 ]/g, '').trim();
+                serverList.querySelectorAll('.cw-menu-item').forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+                serverMenu?.classList.add('hidden');
+              }
+            };
+          });
+        }
+      }
+    }).catch(() => {});
+  }
+
   // Setup Player Controls & Listeners
   initPlayerControllers();
 
