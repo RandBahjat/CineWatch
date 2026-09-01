@@ -1355,47 +1355,71 @@ media-player.vds-player {
   /** autoplay has failed - show fallback controls */
 }
 
-media-video-layout {
-  --media-controls-color: #ffffff;
-  --media-controls-bg: rgba(10, 12, 18, 0.75);
+.plyr {
+  /* Adapted for CineWatch Red Theme */
+  --plyr-color-main: #e50914; 
+  --plyr-border-radius: 10px;
+
+  --plyr-font-family: inherit;
+  --plyr-font-weight-regular: 400;
+  --plyr-font-size-small: 13px;
+  --plyr-font-size-base: 15px;
+  --plyr-font-size-large: 18px;
+  --plyr-font-size-xlarge: 21px;
+  --plyr-line-height: 1.7;
+
+  --plyr-audio-border: 1px solid #edecec;
+  --plyr-video-controls-background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+
+  /* Focus */
+  --plyr-focus-visible-color: var(--plyr-color-main);
+
+  /* Control */
+  --plyr-control-spacing: 10px;
+  --plyr-control-radius: 4px;
+  --plyr-control-icon-size: 18px;
+  --plyr-control-toggle-checked-background: var(--plyr-color-main);
+
+  --plyr-audio-controls-background: #fff;
+  --plyr-audio-control-background-hover: var(--plyr-color-main);
+  --plyr-audio-control-color: hsl(216, 15%, 34%);
+  --plyr-audio-control-color-hover: #fff;
+
+  --plyr-video-control-color: #fff;
+  --plyr-video-control-color-hover: #fff;
+  --plyr-video-control-background-hover: var(--plyr-color-main);
+
+  /* Menu */
+  --plyr-font-size-menu: var(--plyr-font-size-small, 13px);
+  --plyr-menu-background: rgba(10, 12, 18, 0.85); /* Dark Frosted Glass Menu */
   backdrop-filter: blur(28px) saturate(180%);
-  -webkit-backdrop-filter: blur(28px) saturate(180%);
-}
+  --plyr-menu-color: #fff;
+  --plyr-menu-radius: 8px;
+  --plyr-menu-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 
-.vds-controls {
-  padding: 16px 24px;
-}
+  /* Range */
+  --plyr-range-track-height: 5px;
+  --plyr-range-fill-background: var(--plyr-color-main);
+  --plyr-range-thumb-height: 13px;
+  --plyr-range-thumb-background: #fff;
 
-.vds-time-slider {
-  --media-slider-fill: linear-gradient(90deg, #ff1c2a 0%, #e50914 100%);
-  --media-slider-height: 6px;
-  --media-slider-thumb-size: 16px;
-  --media-slider-thumb-bg: #ffffff;
-  --media-slider-thumb-shadow: 0 0 12px rgba(229, 9, 20, 0.85);
-}
+  /* Progress */
+  --plyr-progress-loading-background: rgba(229, 9, 20, 0.6);
+  --plyr-progress-loading-size: 25px;
 
-.vds-button {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 50%;
-  backdrop-filter: blur(12px);
-  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
+  /* Time */
+  --plyr-font-size-time: var(--plyr-font-size-small, 13px);
+  --plyr-time-radius: 5px;
 
-.vds-button:hover {
-  background: rgba(229, 9, 20, 0.85);
-  transform: scale(1.1);
-  border-color: rgba(255, 28, 42, 0.6);
-  box-shadow: 0 0 16px rgba(229, 9, 20, 0.6);
-}
+  /* Tooltip */
+  --plyr-tooltip-background: #fff;
+  --plyr-tooltip-radius: 5px;
+  --plyr-tooltip-color: #111;
 
-.vds-menu {
-  background: rgba(12, 15, 24, 0.85) !important;
-  backdrop-filter: blur(28px) saturate(190%) !important;
-  -webkit-backdrop-filter: blur(28px) saturate(190%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.14) !important;
-  border-radius: 16px !important;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75) !important;
+  /* Thumbnail */
+  --plyr-thumbnail-aspect-ratio: 16 / 9;
+  --plyr-thumbnail-min-width: 140px;
+  --plyr-thumbnail-max-width: 180px;
 }
 
 .ai-messages-list {
