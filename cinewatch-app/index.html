@@ -76,7 +76,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="../api.js?v=v6" defer></script>
 
-  <script src="app.js?v=16"></script>
+  <script src="app.js?v=17"></script>
 </head>
 <body>
 
@@ -464,7 +464,16 @@
 
   <!-- Auth Overlay (Sign In / Create Account) -->
   <div class="auth-overlay hidden" id="authOverlay">
+    <!-- Solid black background as requested -->
     <div class="auth-bg"></div>
+
+    <!-- Desktop Go Back button -->
+    <button class="auth-desktop-back-btn" id="desktopCloseAuthBtn" aria-label="Go Back">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+      <span>Back</span>
+    </button>
+
+    <!-- Mobile Close button (X) -->
     <button class="auth-close-btn" id="closeAuthBtn" aria-label="Close">
       <ion-icon name="close-outline"></ion-icon>
     </button>
