@@ -1,4 +1,4 @@
-/**
+﻿/**
  * CineWatch Standalone App Engine
  * High-Performance, Instant-Loading Streaming Platform Logic
  */
@@ -908,71 +908,62 @@ function openDetail(movieId) {
 
   state.currentDetail = movie;
   const modal = document.getElementById('detailModal');
-  const hero = document.getElementById('detailHero');
-  const body = document.getElementById('detailBody');
+  const hero  = document.getElementById('detailHero');
+  const body  = document.getElementById('detailBody');
 
-  const isFav = state.favorites.has(String(movie.id));
-  const genreText = Array.isArray(movie.genres) ? movie.genres.join(', ') : (movie.genres || 'Action, Drama');
-  const castText = movie.cast ? (Array.isArray(movie.cast) ? movie.cast.join(', ') : movie.cast) : 'Tom Holland, Zendaya, Benedict Cumberbatch';
-  const directorText = movie.director || 'Jon Watts';
+  const isFav        = state.favorites.has(String(movie.id));
+  const genreText    = Array.isArray(movie.genres) ? movie.genres.join(', ') : (movie.genres || 'Action, Drama');
+  const castText     = movie.cast ? (Array.isArray(movie.cast) ? movie.cast.join(', ') : movie.cast) : '';
+  const directorText = movie.director || '';
+  const overview     = movie.description || movie.overview || 'A cinematic masterpiece streaming now on CineWatch in full high-definition quality with crystal clear audio.';
 
+  /* Hero: backdrop image + TITLE ONLY overlaid at bottom */
   if (hero) {
     hero.style.backgroundImage = `url('${movie.backdrop || movie.poster || ''}')`;
     hero.innerHTML = `
       <div class="detail-hero-gradient"></div>
-      <div class="detail-hero-content">
+      <div class="detail-hero-title-wrap">
         <h2 class="detail-title">${movie.title}</h2>
-        
-        <div class="detail-metadata">
-          <span class="meta-item"><ion-icon name="star" style="color:var(--accent-gold);"></ion-icon> ${movie.rating || '8.5'}</span>
-          <span class="meta-item">${movie.year || '2026'}</span>
-          <span class="meta-badge age-badge">${movie.age || 'TV-MA'}</span>
-          <span class="meta-item">${movie.duration || '2h 10m'}</span>
-          <span class="meta-badge hd-badge">HD</span>
-        </div>
-
-        <div class="detail-actions">
-          <button class="btn btn-primary" onclick="playMovieDirect('${movie.id}')">
-            <ion-icon name="play"></ion-icon> Play
-          </button>
-          <button class="btn btn-circle" onclick="toggleFavorite('${movie.id}'); openDetail('${movie.id}');" title="${isFav ? 'Remove from Watchlist' : 'Add to Watchlist'}">
-            <ion-icon name="${isFav ? 'checkmark' : 'add'}"></ion-icon>
-          </button>
-          <button class="btn btn-circle" title="Rate">
-            <ion-icon name="thumbs-up-outline"></ion-icon>
-          </button>
-        </div>
       </div>
     `;
   }
 
+  /* Body: everything below the image */
   if (body) {
     body.innerHTML = `
+      <div class="detail-metadata">
+        <span class="meta-rating"><ion-icon name="star"></ion-icon> ${movie.rating || '8.5'}</span>
+        <span class="meta-item">${movie.year || '2026'}</span>
+        <span class="meta-badge">${movie.age || 'PG-13'}</span>
+        <span class="meta-item">${movie.duration || '2h 10m'}</span>
+        <span class="meta-badge">HD</span>
+      </div>
+
+      <div class="detail-actions">
+        <button class="detail-btn-play" onclick="playMovieDirect('${movie.id}')">
+          <ion-icon name="play"></ion-icon> Play
+        </button>
+        <button class="detail-btn-circle" onclick="toggleFavorite('${movie.id}'); openDetail('${movie.id}');" title="${isFav ? 'Remove from Watchlist' : 'Add to Watchlist'}">
+          <ion-icon name="${isFav ? 'checkmark' : 'add'}"></ion-icon>
+        </button>
+        <button class="detail-btn-circle" title="Rate this">
+          <ion-icon name="thumbs-up-outline"></ion-icon>
+        </button>
+      </div>
+
       <div class="detail-layout">
         <div class="detail-left">
-          <p class="detail-overview">
-            ${movie.description || movie.overview || 'A cinematic masterpiece streaming now on CineWatch in full high-definition quality with crystal clear audio.'}
-          </p>
+          <p class="detail-overview">${overview}</p>
         </div>
         <div class="detail-right">
-          <div class="info-row">
-            <span class="info-label">Cast:</span>
-            <span class="info-value">${castText}</span>
-          </div>
-          <div class="info-row">
-            <span class="info-label">Genres:</span>
-            <span class="info-value">${genreText}</span>
-          </div>
-          <div class="info-row">
-            <span class="info-label">Director:</span>
-            <span class="info-value">${directorText}</span>
-          </div>
+          ${castText     ? `<div class="info-row"><span class="info-label">Cast:</span> <span class="info-value">${castText}</span></div>` : ''}
+          ${genreText    ? `<div class="info-row"><span class="info-label">Genres:</span> <span class="info-value">${genreText}</span></div>` : ''}
+          ${directorText ? `<div class="info-row"><span class="info-label">Director:</span> <span class="info-value">${directorText}</span></div>` : ''}
         </div>
       </div>
     `;
   }
 
-  // Reset scroll and show modal
   const sheet = document.getElementById('detailSheet');
   if (sheet) sheet.scrollTop = 0;
   modal?.classList.remove('hidden');
