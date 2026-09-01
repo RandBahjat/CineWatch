@@ -1074,11 +1074,9 @@ function startApp() {
 
   document.getElementById('closeAuthBtn')?.addEventListener('click', () => {
     authOverlay?.classList.add('hidden');
-    // Switch back to home tab so nav state matches what user sees
+    // Force-deactivate profile btn (it has no data-tab so switchTab can't catch it)
+    document.getElementById('mobileProfileBtn')?.classList.remove('active');
     switchTab('home');
-    document.querySelectorAll('.mobile-bottom-nav .nav-item').forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.tab === 'home');
-    });
   });
 
   // Tab switching
