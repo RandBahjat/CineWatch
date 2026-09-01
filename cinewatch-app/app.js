@@ -1150,9 +1150,29 @@ function playMovieDirect(movieId) {
     if (playerControls) playerControls.classList.remove('hidden');
     if (iframeEl) { iframeEl.src = ''; iframeEl.classList.add('hidden'); }
 
+    const vidstackPlayer = document.getElementById('vidstackPlayer');
+    const vidstackPoster = document.getElementById('vidstackPoster');
+    const targetUrl = srv.streamUrl || 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4';
+
+    if (vidstackPlayer) {
+      vidstackPlayer.title = `${movie.title} (${movie.year || '2026'})`;
+      if (vidstackPoster) vidstackPoster.src = movie.backdrop || movie.poster || '';
+      vidstackPlayer.src = targetUrl;
+      vidstackPlayer.autoplay = true;
+
+      // Vidstack Autoplay Events
+      vidstackPlayer.addEventListener('autoplay', (event) => {
+        playerLoading?.classList.add('hidden');
+      });
+
+      vidstackPlayer.addEventListener('autoplay-fail', (event) => {
+        console.warn('Vidstack autoplay failed/prevented:', event.detail);
+        playerLoading?.classList.add('hidden');
+      });
+    }
+
     if (videoEl) {
       videoEl.classList.remove('hidden');
-      const targetUrl = srv.streamUrl || 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4';
       
       if (targetUrl.includes('.m3u8') && window.Hls && Hls.isSupported()) {
         if (_cwPlayerState.hlsInstance) _cwPlayerState.hlsInstance.destroy();
@@ -1173,7 +1193,7 @@ function playMovieDirect(movieId) {
       }
     }
     
-    if (streamTypeBadge) streamTypeBadge.textContent = 'CINEWATCH NATIVE';
+    if (streamTypeBadge) streamTypeBadge.textContent = 'VIDSTACK 4K';
   }
 
   // Populate bottom dock server menu
