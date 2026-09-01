@@ -1106,13 +1106,13 @@ function playMovieDirect(movieId) {
     nextEpBtn.classList.toggle('hidden', !isTv);
   }
 
-  // Premium Server Fleet
+  // Premium High-Reliability Server Fleet (VidLink Pro as default #1)
   const servers = [
-    { id: 'autoembed', name: '⚡ AutoEmbed Ultra (Fast HD)', url: isTv ? `https://player.autoembed.cc/embed/tv/${tmdb}/1/1` : `https://player.autoembed.cc/embed/movie/${tmdb}` },
-    { id: 'vidlink', name: '🎬 VidLink Pro (Multi-Audio & Sub)', url: isTv ? `https://vidlink.pro/tv/${tmdb}/1/1` : `https://vidlink.pro/movie/${tmdb}` },
-    { id: 'vidsrc-vip', name: '👑 VidSrc CC (V2 Cloud Stream)', url: isTv ? `https://vidsrc.cc/v2/embed/tv/${tmdb}/1/1` : `https://vidsrc.cc/v2/embed/movie/${tmdb}` },
-    { id: 'vidsrc', name: '🌟 VidSrc Original', url: isTv ? `https://vidsrc.to/embed/tv/${tmdb}/1/1` : `https://vidsrc.to/embed/movie/${tmdb}` },
-    { id: 'smashy', name: '🚀 SmashyStream HD', url: isTv ? `https://player.smashystream.com/tv/${tmdb}/1/1` : `https://player.smashystream.com/movie/${tmdb}` }
+    { id: 'vidlink', name: '⚡ Server 1: VidLink Pro HD', url: isTv ? `https://vidlink.pro/tv/${tmdb}/1/1` : `https://vidlink.pro/movie/${tmdb}` },
+    { id: 'vidsrc-vip', name: '👑 Server 2: VidSrc CC V2', url: isTv ? `https://vidsrc.cc/v2/embed/tv/${tmdb}/1/1` : `https://vidsrc.cc/v2/embed/movie/${tmdb}` },
+    { id: 'smashy', name: '🚀 Server 3: SmashyStream', url: isTv ? `https://player.smashystream.com/tv/${tmdb}/1/1` : `https://player.smashystream.com/movie/${tmdb}` },
+    { id: 'vidsrc', name: '🌟 Server 4: VidSrc Original', url: isTv ? `https://vidsrc.to/embed/tv/${tmdb}/1/1` : `https://vidsrc.to/embed/movie/${tmdb}` },
+    { id: 'autoembed', name: '🎬 Server 5: AutoEmbed HD', url: isTv ? `https://player.autoembed.cc/embed/tv/${tmdb}/1/1` : `https://player.autoembed.cc/embed/movie/${tmdb}` }
   ];
 
   function switchSource(srv) {
@@ -1147,8 +1147,46 @@ function playMovieDirect(movieId) {
           playerLoading?.classList.add('hidden');
         };
       }
-      if (streamTypeBadge) streamTypeBadge.textContent = srv.name.split(' ')[1] || 'STREAM';
+      if (streamTypeBadge) streamTypeBadge.textContent = srv.name.split(':')[0] || 'STREAM';
     }
+  }
+
+  // Populate bottom dock server menu
+  const serverList = document.getElementById('serverList');
+  const serverActiveLabel = document.getElementById('serverActiveLabel');
+  const serverMenuBtn = document.getElementById('serverMenuBtn');
+  const serverMenu = document.getElementById('serverMenu');
+
+  if (serverList) {
+    serverList.innerHTML = servers.map((s, idx) => `
+      <button class="cw-menu-item ${idx === 0 ? 'active' : ''}" data-srv-id="${s.id}">
+        <span>${s.name}</span>
+      </button>
+    `).join('');
+
+    serverList.querySelectorAll('.cw-menu-item').forEach(item => {
+      item.onclick = (e) => {
+        e.stopPropagation();
+        const srv = servers.find(s => s.id === item.dataset.srvId);
+        if (srv) {
+          switchSource(srv);
+          if (serverActiveLabel) serverActiveLabel.textContent = srv.name.split(':')[0].replace(/[^a-zA-Z0-9 ]/g, '').trim();
+          serverList.querySelectorAll('.cw-menu-item').forEach(i => i.classList.remove('active'));
+          item.classList.add('active');
+          serverMenu?.classList.add('hidden');
+          showToast(`Switched to ${srv.name}`);
+        }
+      };
+    });
+  }
+
+  if (serverMenuBtn && serverMenu) {
+    serverMenuBtn.onclick = (e) => {
+      e.stopPropagation();
+      serverMenu.classList.toggle('hidden');
+      document.getElementById('speedMenu')?.classList.add('hidden');
+      document.getElementById('subtitlesMenu')?.classList.add('hidden');
+    };
   }
 
   if (serverSelect) {
