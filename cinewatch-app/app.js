@@ -1194,78 +1194,51 @@ function startApp() {
     hideAuth();
   });
 
-  // Tab switching — with animated transitions
+  // Tab switching — smooth CSS-driven transitions
   let _authCurrentTab = 'signin';
 
   function switchAuthTab(tab) {
     if (tab === _authCurrentTab) return;
-    const direction = tab === 'signup' ? 1 : -1; // +1 = going right, -1 = going left
+    const direction = tab === 'signup' ? 1 : -1;
 
-    // Update pill tabs
-    document.querySelectorAll('.auth-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+    // Update mobile pill tabs
+    document.querySelectorAll('.auth-tab').forEach(t =>
+      t.classList.toggle('active', t.dataset.tab === tab)
+    );
 
-    const outId = _authCurrentTab === 'signin' ? 'formSignIn' : 'formSignUp';
-    const inId  = tab === 'signin' ? 'formSignIn' : 'formSignUp';
+    // ── Right panel form crossfade ──────────────────────────────────────
+    const outId  = _authCurrentTab === 'signin' ? 'formSignIn' : 'formSignUp';
+    const inId   = tab === 'signin' ? 'formSignIn' : 'formSignUp';
     const outForm = document.getElementById(outId);
     const inForm  = document.getElementById(inId);
 
-    // Animate outgoing form
     if (outForm) {
-      outForm.style.animation = 'none';
-      outForm.style.opacity = '1';
-      outForm.style.transform = 'translateX(0)';
-      outForm.offsetHeight; // force reflow
       outForm.style.transition = 'opacity 0.28s ease, transform 0.28s ease';
       outForm.style.opacity = '0';
-      outForm.style.transform = `translateX(${direction * -40}px)`;
+      outForm.style.transform = `translateX(${direction * -36}px)`;
       setTimeout(() => {
         outForm.classList.remove('active');
-        outForm.style.transition = '';
-        outForm.style.opacity = '';
-        outForm.style.transform = '';
-      }, 280);
+        outForm.style.cssText = '';
+      }, 290);
     }
 
-    // Animate incoming form (after short delay)
     setTimeout(() => {
       if (inForm) {
+        inForm.style.cssText = `opacity:0; transform:translateX(${direction * 36}px)`;
         inForm.classList.add('active');
-        inForm.style.opacity = '0';
-        inForm.style.transform = `translateX(${direction * 40}px)`;
-        inForm.offsetHeight;
-        inForm.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        inForm.offsetHeight; // force reflow
+        inForm.style.transition = 'opacity 0.32s ease, transform 0.32s ease';
         inForm.style.opacity = '1';
         inForm.style.transform = 'translateX(0)';
-        setTimeout(() => { inForm.style.transition = ''; }, 300);
+        setTimeout(() => { inForm.style.cssText = ''; }, 330);
       }
-    }, 120);
+    }, 110);
 
-    // Animate left panel content (desktop)
+    // ── Left panel content crossfade (CSS does it — just swap active class) ──
     const outLeft = document.getElementById(_authCurrentTab === 'signin' ? 'leftContentSignIn' : 'leftContentSignUp');
     const inLeft  = document.getElementById(tab === 'signin' ? 'leftContentSignIn' : 'leftContentSignUp');
-    if (outLeft) {
-      outLeft.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
-      outLeft.style.opacity = '0';
-      outLeft.style.transform = 'translateY(-12px)';
-      setTimeout(() => {
-        outLeft.classList.remove('active');
-        outLeft.style.transition = '';
-        outLeft.style.opacity = '';
-        outLeft.style.transform = '';
-      }, 250);
-    }
-    setTimeout(() => {
-      if (inLeft) {
-        inLeft.classList.add('active');
-        inLeft.style.opacity = '0';
-        inLeft.style.transform = 'translateY(12px)';
-        inLeft.offsetHeight;
-        inLeft.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-        inLeft.style.opacity = '1';
-        inLeft.style.transform = 'translateY(0)';
-        setTimeout(() => { inLeft.style.transition = ''; }, 300);
-      }
-    }, 100);
+    if (outLeft) outLeft.classList.remove('active');
+    if (inLeft)  setTimeout(() => inLeft.classList.add('active'), 60);
 
     _authCurrentTab = tab;
   }
