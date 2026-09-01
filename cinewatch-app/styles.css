@@ -2429,8 +2429,21 @@ html.light-mode .toast {
 .auth-form-title { display: none; font-family: var(--font-display); font-size: 1.6rem; font-weight: 800; color: #fff; margin: 0; }
 .auth-form-sub { display: none; font-size: 0.85rem; color: var(--text-dim); margin: 0; }
 
-.auth-form { display: none; flex-direction: column; gap: 0.85rem; }
-.auth-form.active { display: flex; }
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity 0.35s cubic-bezier(0.4,0,0.2,1), transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  /* Mobile: show stacked, desktop: absolute (overridden in @media) */
+}
+.auth-form.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
 
 .auth-field {
   display: flex; align-items: center; gap: 0.75rem;
