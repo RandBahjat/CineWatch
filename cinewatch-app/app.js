@@ -1,4 +1,4 @@
-﻿/**
+/**
  * CineWatch Standalone App Engine
  * High-Performance, Instant-Loading Streaming Platform Logic
  */
@@ -1148,23 +1148,50 @@ function startApp() {
     });
   }
 
-  // Auth overlay handlers
+  // ── Auth overlay fade helpers ─────────────────────────────────────────
   const authOverlay = document.getElementById('authOverlay');
 
+  function showAuth() {
+    if (!authOverlay) return;
+    authOverlay.style.display = 'flex';       // 1. make visible in layout
+    authOverlay.style.opacity = '0';          // 2. start transparent
+    authOverlay.classList.remove('hidden');
+    // 3. next frame: fade in
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        authOverlay.style.opacity = '1';
+      });
+    });
+  }
+
+  function hideAuth() {
+    if (!authOverlay) return;
+    authOverlay.style.opacity = '0';          // 1. fade out
+    // 2. after transition ends: remove from layout
+    const onEnd = () => {
+      authOverlay.classList.add('hidden');
+      authOverlay.style.display = '';
+      authOverlay.style.opacity = '';
+      authOverlay.removeEventListener('transitionend', onEnd);
+    };
+    authOverlay.addEventListener('transitionend', onEnd);
+  }
+  // ────────────────────────────────────────────────────────────────────────
+
   document.getElementById('openAuthBtn')?.addEventListener('click', () => {
-    authOverlay?.classList.remove('hidden');
+    showAuth();
     document.activeElement?.blur();
   });
 
   document.getElementById('closeAuthBtn')?.addEventListener('click', () => {
-    authOverlay?.classList.add('hidden');
+    hideAuth();
     // Force-deactivate profile btn (it has no data-tab so switchTab can't catch it)
     document.getElementById('mobileProfileBtn')?.classList.remove('active');
     switchTab('home');
   });
 
   document.getElementById('desktopCloseAuthBtn')?.addEventListener('click', () => {
-    authOverlay?.classList.add('hidden');
+    hideAuth();
   });
 
   // Tab switching — with animated transitions
