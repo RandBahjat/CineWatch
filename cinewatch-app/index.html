@@ -93,7 +93,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
   <script src="./api.js?v=v6" defer></script>
   <script src="./stream-engine.js?v=2" defer></script>
-  <script src="./app.js?v=100" defer></script>
+  <script src="./app.js?v=101" defer></script>
 </head>
 <body>
 
@@ -434,8 +434,24 @@
   <div class="player-overlay hidden" id="playerModal">
     <div class="cw-player-shell" id="cwPlayerShell">
       
-      <!-- Video / Stream Stage -->
+      <!-- Video / Stream Stage with Vidstack Player Engine -->
       <div class="cw-player-stage" id="cwPlayerStage">
+        <media-player
+          id="vidstackPlayer"
+          class="player vds-player"
+          title="CineWatch"
+          src=""
+          aspect-ratio="16/9"
+          autoplay
+          playsinline
+          crossorigin
+        >
+          <media-provider id="vidstackProvider">
+            <media-poster id="vidstackPoster" src="" alt="Poster"></media-poster>
+          </media-provider>
+          <media-video-layout></media-video-layout>
+        </media-player>
+
         <video id="videoEl" class="hidden" playsinline preload="metadata" crossorigin="anonymous"></video>
         <iframe id="iframeEl" class="hidden" allowfullscreen allow="autoplay; fullscreen; encrypted-media; picture-in-picture"></iframe>
         
