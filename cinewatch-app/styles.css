@@ -1580,6 +1580,36 @@ html, body {
   .detail-btn-play { flex: 1; justify-content: center; }
 }
 
+
+/* ── Trailer iframe (auto-play in hero) ── */
+.trailer-iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.trailer-sound-btn {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  z-index: 10;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: rgba(20,24,32,0.75);
+  border: 1.5px solid rgba(255,255,255,0.4);
+  color: #fff;
+  font-size: 1.1rem;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  pointer-events: all;
+  transition: all 0.2s;
+}
+.trailer-sound-btn:hover { background: rgba(255,255,255,0.12); border-color: #fff; }
+.trailer-sound-btn.hidden { display: none; }
 /* ==========================================================================
    MOBILE BOTTOM NAVIGATION & RESPONSIVE
    ========================================================================== */
