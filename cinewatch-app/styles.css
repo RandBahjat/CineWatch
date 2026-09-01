@@ -1436,7 +1436,7 @@ html, body {
   width: 100%;
   max-width: 1100px;
   aspect-ratio: 16 / 9;
-  background: linear-gradient(to right, rgba(11,13,20,0.92) 0%, rgba(11,13,20,0.6) 100%), url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=2070&auto=format&fit=crop');
+  background: linear-gradient(to right, rgba(11,13,20,0.92) 0%, rgba(11,13,20,0.6) 100%), url('https://image.tmdb.org/t/p/original/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg');
   background-size: cover;
   background-position: center;
   border-radius: var(--radius-md);
@@ -1506,7 +1506,7 @@ html, body {
 .player-stage {
   flex: 1;
   position: relative;
-  background: linear-gradient(to right, rgba(11,13,20,0.92) 0%, rgba(11,13,20,0.6) 100%), url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=2070&auto=format&fit=crop');
+  background: linear-gradient(to right, rgba(11,13,20,0.92) 0%, rgba(11,13,20,0.6) 100%), url('https://image.tmdb.org/t/p/original/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -2224,7 +2224,7 @@ html.light-mode .toast {
 .auth-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(11,13,20,0.92) 0%, rgba(11,13,20,0.6) 100%), url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=2070&auto=format&fit=crop');
+  background: linear-gradient(to right, rgba(11,13,20,0.92) 0%, rgba(11,13,20,0.6) 100%), url('https://image.tmdb.org/t/p/original/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg');
   background-size: cover;
   background-position: center;
   
