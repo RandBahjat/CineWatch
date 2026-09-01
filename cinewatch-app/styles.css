@@ -1876,6 +1876,26 @@ html, body {
 }
 
 @media (min-width: 1024px) {
+  .auth-close-btn { display: none; }
+  .auth-desktop-back-btn {
+    display: flex;
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    z-index: 2010;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.6);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  .auth-desktop-back-btn ion-icon { font-size: 1.4rem; }
+  .auth-desktop-back-btn:hover { color: #fff; }
   .settings-back-btn {
     display: flex; /* Show on desktop (Windows) */
   }
@@ -2200,11 +2220,12 @@ html.light-mode .toast {
 .auth-bg {
   position: absolute;
   inset: 0;
-  background: rgba(5,6,10,0.9);
-  backdrop-filter: blur(28px);
-  -webkit-backdrop-filter: blur(28px);
+  background: #000;
+  
+  -webkit-
 }
 
+.auth-desktop-back-btn { display: none; }
 .auth-close-btn {
   position: absolute;
   top: 1.2rem; right: 1.2rem;
@@ -2301,6 +2322,26 @@ html.light-mode .toast {
 
 /* ══ DESKTOP — Split Panel ══ */
 @media (min-width: 1024px) {
+  .auth-close-btn { display: none; }
+  .auth-desktop-back-btn {
+    display: flex;
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    z-index: 2010;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.6);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  .auth-desktop-back-btn ion-icon { font-size: 1.4rem; }
+  .auth-desktop-back-btn:hover { color: #fff; }
   .auth-overlay { align-items: center; justify-content: center; }
 
   .auth-card {
