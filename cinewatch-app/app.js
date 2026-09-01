@@ -1,4 +1,4 @@
-/**
+﻿/**
  * CineWatch Standalone App Engine
  * High-Performance, Instant-Loading Streaming Platform Logic
  */
@@ -1163,6 +1163,20 @@ function startApp() {
   document.getElementById('tabSignUp')?.addEventListener('click', () => switchAuthTab('signup'));
   document.getElementById('switchToSignUp')?.addEventListener('click', (e) => { e.preventDefault(); switchAuthTab('signup'); });
   document.getElementById('switchToSignIn')?.addEventListener('click', (e) => { e.preventDefault(); switchAuthTab('signin'); });
+
+    // Password toggle
+  document.querySelectorAll('.toggle-password').forEach(icon => {
+    icon.addEventListener('click', () => {
+      const input = icon.previousElementSibling;
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.name = 'eye-off-outline';
+      } else {
+        input.type = 'password';
+        icon.name = 'eye-outline';
+      }
+    });
+  });
 
   // Desktop left-panel toggle buttons
   document.getElementById('panelSwitchToSignUp')?.addEventListener('click', () => switchAuthTab('signup'));
