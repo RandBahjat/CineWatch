@@ -294,164 +294,177 @@
             align-items: center;
         }
 
-        /* Outer titanium frame */
+        /* ── New Modern Phone Frame ── */
         .galaxy-frame {
             position: relative;
-            width: 290px;
-            background: linear-gradient(160deg, #2a2a2a 0%, #1a1a1a 40%, #222 70%, #191919 100%);
-            border-radius: 52px;
-            /* Titanium edge highlight effect */
-            border: 1.5px solid #404040;
+            width: 280px;
+            background: linear-gradient(170deg, #1a1a1a 0%, #141414 50%, #1a1a1a 100%);
+            border-radius: 44px;
+            border: 1.5px solid rgba(255,255,255,0.1);
             box-shadow:
-                /* Outer drop shadow */
-                0 50px 120px rgba(0,0,0,0.95),
-                /* Titanium edge shine (right) */
-                4px 0 8px rgba(255,255,255,0.06),
-                /* Titanium edge shine (left) */
-                -4px 0 8px rgba(255,255,255,0.04),
-                /* Inner shadow (depth) */
-                inset 0 0 0 1.5px rgba(255,255,255,0.06),
-                inset 0 2px 4px rgba(255,255,255,0.08),
-                /* Glow from screen */
-                0 0 60px rgba(229,9,20,0.08);
-            padding: 14px 8px;
+                0 0 0 1px rgba(0,0,0,0.8),
+                inset 0 0 0 1px rgba(255,255,255,0.05),
+                0 40px 80px rgba(0,0,0,0.6),
+                0 0 0 8px #111,
+                0 0 0 9px rgba(255,255,255,0.06);
+            padding: 10px;
         }
 
-        /* Side buttons (volume, power) */
+        /* Power button */
         .galaxy-frame::before {
             content: '';
             position: absolute;
             right: -3px;
-            top: 110px;
+            top: 120px;
             width: 3px;
-            height: 60px;
-            background: linear-gradient(to bottom, #333, #2a2a2a, #333);
+            height: 55px;
+            background: linear-gradient(to bottom, #2a2a2a, #333, #2a2a2a);
             border-radius: 0 3px 3px 0;
         }
+
+        /* Volume buttons */
         .galaxy-frame::after {
             content: '';
             position: absolute;
             left: -3px;
             top: 100px;
             width: 3px;
-            height: 44px;
-            background: linear-gradient(to bottom, #333, #2a2a2a, #333);
+            height: 70px;
+            background: linear-gradient(to bottom, #2a2a2a, #333, #2a2a2a);
             border-radius: 3px 0 0 3px;
-            box-shadow: 0 55px 0 #2a2a2a;
         }
 
-        /* Screen container */
+        /* Screen inner container */
         .galaxy-screen-wrap {
             width: 100%;
-            border-radius: 42px;
+            border-radius: 36px;
             overflow: hidden;
             background: #000;
             position: relative;
-            /* Punch-hole camera - no notch, just a tiny dot at top */
         }
 
-        /* Punch-hole camera dot */
+        /* Pill-shaped Dynamic Island notch */
         .galaxy-camera {
             position: absolute;
             top: 10px;
             left: 50%;
             transform: translateX(-50%);
-            width: 11px;
-            height: 11px;
+            width: 88px;
+            height: 26px;
             background: #000;
-            border-radius: 50%;
+            border-radius: 20px;
             z-index: 10;
-            border: 1px solid rgba(255,255,255,0.08);
-            box-shadow: inset 0 0 3px rgba(0,0,0,0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .galaxy-camera::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #1a1a2a;
+            border-radius: 50%;
+            border: 1px solid #222;
+        }
+        .galaxy-camera::after {
+            content: '';
+            width: 5px;
+            height: 5px;
+            background: #0d1a2a;
+            border-radius: 50%;
         }
 
         /* Status bar */
         .galaxy-status-bar {
             position: absolute;
             top: 0; left: 0; right: 0;
-            height: 30px;
-            background: rgba(6,7,10,0.92);
+            height: 48px;
+            background: rgba(6,7,10,0.9);
+            z-index: 5;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 8px 20px 0;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .status-time { letter-spacing: 0.5px; font-size: 0.72rem; }
+        .status-icons { display: flex; align-items: center; gap: 4px; font-size: 0.85rem; }
+
+        /* Browser bar */
+        .galaxy-browser-bar {
+            position: absolute;
+            top: 48px; left: 0; right: 0;
+            height: 36px;
+            background: #111;
             z-index: 5;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            padding: 0 18px 0 14px;
-            font-size: 0.55rem;
-            color: rgba(255,255,255,0.7);
-            font-weight: 600;
+            padding: 0 12px;
+            gap: 8px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
         }
-        .status-time { font-size: 0.6rem; }
-        .status-icons {
+        .browser-dots {
             display: flex;
             gap: 3px;
+        }
+        .browser-dots span {
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.2);
+        }
+        .browser-url {
+            flex: 1;
+            background: rgba(255,255,255,0.06);
+            border-radius: 8px;
+            padding: 3px 10px;
+            font-size: 0.62rem;
+            color: rgba(255,255,255,0.5);
+            display: flex;
             align-items: center;
-            font-size: 0.65rem;
+            gap: 6px;
         }
-
-        /* App iframe inside phone */
-        .galaxy-app {
-            width: 100%;
-            height: 560px;
-            position: relative;
-            overflow: hidden;
+        .browser-url::before {
+            content: '';
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: #4caf50;
+            flex-shrink: 0;
         }
-        .galaxy-app iframe {
-            /* Scale the app down to fit a phone width */
-            width: 400%;
-            height: 400%;
-            border: none;
-            transform: scale(0.25);
-            transform-origin: top left;
-            pointer-events: none;
+        .browser-actions {
+            display: flex;
+            gap: 8px;
+            color: rgba(255,255,255,0.3);
+            font-size: 0.85rem;
         }
 
         /* Bottom bar inside screen */
         .galaxy-bottom-bar {
             position: absolute;
             bottom: 0; left: 0; right: 0;
-            height: 28px;
+            height: 24px;
             background: rgba(6,7,10,0.9);
             display: flex;
             align-items: center;
             justify-content: center;
             z-index: 5;
         }
-        .galaxy-home-indicator {
-            width: 100px;
-            height: 4px;
-            background: rgba(255,255,255,0.3);
-            border-radius: 2px;
-        }
 
-        /* Physical home bar below frame */
-        .galaxy-chin {
+        .galaxy-home-indicator {
             width: 90px;
             height: 4px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 2px;
-            margin: 12px auto 0;
-        }
-
-        /* Ambient glow under phone */
-        .galaxy-glow {
-            width: 200px;
-            height: 30px;
-            background: radial-gradient(ellipse, rgba(229,9,20,0.3), transparent 70%);
-            filter: blur(20px);
-            margin-top: -10px;
-        }
-
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(28px); }
-            to   { opacity: 1; transform: translateY(0);    }
+            background: rgba(255,255,255,0.25);
+            border-radius: 4px;
         }
 
         @media (max-width: 768px) {
-            .hero-title    { font-size: 3rem; }
             .android-title { font-size: 2.5rem; }
             .win-content   { height: 300px; }
-            .galaxy-frame  { width: 240px; }
-            .galaxy-app    { height: 460px; }
+            .galaxy-frame  { width: 230px; }
+            .galaxy-app    { height: 420px; }
         }
     </style>
   <!-- Force iframe cache bust on every load -->
