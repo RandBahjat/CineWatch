@@ -588,11 +588,11 @@ select,
   max-height: 1100px;
   overflow: hidden;
   background: #06070a;
-  cursor: grab;
+  cursor: default;
 }
 
 .hero-container.is-dragging {
-  cursor: grabbing;
+  cursor: default;
 }
 
 .hero-track {
