@@ -350,7 +350,7 @@ function renderHome() {
     heroTrack.innerHTML = heroFeatured.map((m, idx) => {
       const genreText = Array.isArray(m.genres) ? m.genres.slice(0, 3).join(' • ') : (m.genres || 'Action • Adventure • Sci-Fi');
       return `
-        <div class="hero-slide" style="background-image: url('${m.backdrop || m.poster || ''}')" onclick="openDetail('${m.id}')">
+        <link rel="stylesheet" href="styles.css?v=14"><div class="hero-slide" style="background-image: url('${m.backdrop || m.poster || ''}')" onclick="openDetail('${m.id}')">
           <div class="hero-content" onclick="event.stopPropagation()">
             <h1 class="hero-title">${m.title}</h1>
             <div class="hero-meta-row">
@@ -1083,6 +1083,9 @@ function startApp() {
   function switchAuthTab(tab) {
     document.querySelectorAll('.auth-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
     document.querySelectorAll('.auth-form').forEach(f => f.classList.toggle('active', f.id === (tab === 'signin' ? 'formSignIn' : 'formSignUp')));
+    // Toggle left panel content on desktop
+    document.getElementById('leftContentSignIn')?.classList.toggle('active', tab === 'signin');
+    document.getElementById('leftContentSignUp')?.classList.toggle('active', tab === 'signup');
   }
 
   document.getElementById('tabSignIn')?.addEventListener('click', () => switchAuthTab('signin'));
