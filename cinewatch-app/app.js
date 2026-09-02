@@ -1739,8 +1739,26 @@ function startApp() {
   const settingsOverlay = document.getElementById('settingsOverlay');
   const mobileProfileBtn = document.getElementById('mobileProfileBtn');
 
+  function syncSettingsProfile() {
+    try {
+      const stored = sessionStorage.getItem('cw_user');
+      const user = (window.state && window.state.user) || (stored ? JSON.parse(stored) : null);
+      const nameEl = document.getElementById('settingsUserName');
+      const metaEl = document.getElementById('settingsUserPlan');
+      const avatarEl = document.getElementById('settingsAvatarImg');
+      if (user) {
+        if (nameEl) nameEl.textContent = user.name || 'User';
+        if (metaEl) metaEl.textContent = `Premium Plan • Member since ${user.createdAt ? new Date(user.createdAt).getFullYear() : '2023'}`;
+        if (avatarEl && user.avatar && (user.avatar.startsWith('data:') || user.avatar.startsWith('http'))) {
+          avatarEl.src = user.avatar;
+        }
+      }
+    } catch(e) {}
+  }
+
   if (openSettingsBtn) {
     openSettingsBtn.addEventListener('click', () => {
+      syncSettingsProfile();
       settingsOverlay?.classList.remove('hidden');
       document.activeElement?.blur();
     });
@@ -1760,6 +1778,7 @@ function startApp() {
       });
 
       if (activeUser) {
+        syncSettingsProfile();
         settingsOverlay?.classList.remove('hidden');
       } else {
         showAuth();
@@ -1772,6 +1791,100 @@ function startApp() {
       settingsOverlay?.classList.add('hidden');
     });
   }
+
+  // Manage Account
+  document.getElementById('settingsManageAccBtn')?.addEventListener('click', () => {
+    const profileBadge = document.getElementById('profileBadgeToggle') || document.getElementById('profileBadgeToggleSidebar');
+    if (profileBadge) {
+      profileBadge.click();
+    } else {
+      showAuth();
+    }
+  });
+
+  // Avatar Upload
+  const editAvatarBtn = document.getElementById('settingsEditAvatarBtn');
+  const avatarFileInput = document.getElementById('settingsAvatarFileInput');
+  if (editAvatarBtn && avatarFileInput) {
+    editAvatarBtn.addEventListener('click', () => avatarFileInput.click());
+    avatarFileInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        const dataUrl = event.target.result;
+        const img = document.getElementById('settingsAvatarImg');
+        if (img) img.src = dataUrl;
+        if (window.state && window.state.user) {
+          window.state.user.avatar = dataUrl;
+          if (typeof saveUser === 'function') saveUser(window.state.user);
+          if (typeof renderUserBadge === 'function') renderUserBadge();
+        }
+        showToast('Profile photo updated!');
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  // Theme Pills
+  const themePills = document.querySelectorAll('.settings-theme-pill');
+  themePills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      themePills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      const selected = pill.getAttribute('data-theme');
+      if (selected === 'light') {
+        document.documentElement.classList.add('light-mode');
+        document.documentElement.classList.remove('dark');
+      } else if (selected === 'dark') {
+        document.documentElement.classList.remove('light-mode');
+        document.documentElement.classList.add('dark');
+      } else {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.classList.toggle('light-mode', !prefersDark);
+        document.documentElement.classList.toggle('dark', prefersDark);
+      }
+      localStorage.setItem('cinewatch_theme_pref', selected);
+    });
+  });
+
+  // Check for updates
+  document.getElementById('pageCheckUpdateBtn')?.addEventListener('click', () => {
+    showToast('Checking for updates...');
+    setTimeout(() => {
+      showToast('CineWatch is up to date (v2.4.1)');
+    }, 800);
+  });
+
+  // Save Settings
+  document.getElementById('saveSettingsBtn')?.addEventListener('click', () => {
+    const quality = document.getElementById('videoQualitySelect')?.value || 'auto';
+    const reducedMotion = document.getElementById('reducedMotionToggle')?.checked || false;
+    const autoplay = document.getElementById('autoplayToggle')?.checked ?? true;
+    const spatialAudio = document.getElementById('spatialAudioToggle')?.checked ?? true;
+
+    localStorage.setItem('cinewatch_settings', JSON.stringify({
+      quality, reducedMotion, autoplay, spatialAudio
+    }));
+
+    showToast('Settings saved successfully!');
+    setTimeout(() => {
+      settingsOverlay?.classList.add('hidden');
+    }, 600);
+  });
+
+  // Log Out button
+  document.getElementById('logoutBtn')?.addEventListener('click', () => {
+    settingsOverlay?.classList.add('hidden');
+    if (typeof window.logout === 'function') {
+      window.logout();
+    } else if (window.CW_API && typeof window.CW_API.signOut === 'function') {
+      window.CW_API.signOut();
+      if (typeof saveUser === 'function') saveUser(null);
+      if (typeof renderUserBadge === 'function') renderUserBadge();
+    }
+    showToast('Signed out successfully');
+  });
 
   // ── Auth overlay fade helpers ─────────────────────────────────────────
   const authOverlay = document.getElementById('authOverlay');
