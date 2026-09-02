@@ -3918,11 +3918,6 @@ html.light-mode .hero-slide::before {
   color: #ffffff;
   margin: 0;
   white-space: nowrap;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
-}
-  color: #fff;
-  margin: 0;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
 }
 
 .cw-player-badges {
