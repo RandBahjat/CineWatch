@@ -3478,45 +3478,68 @@ body.rtl-layout .details-back-btn svg {
 @media (max-width: 768px) {
   .navbar .brand-logo {
     display: none !important; /* Hide logo from mobile top navbar */
-  }
-
-  .nav-container {
-    justify-content: space-between;
-    gap: 0.6rem;
-    padding: 0 1rem;
+  }  .nav-container {
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    padding: 0 0.8rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   .nav-left {
-    gap: 0.4rem;
-    flex-shrink: 0;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.4rem !important;
+    flex-shrink: 0 !important;
+    min-width: 36px !important;
+    z-index: 10 !important;
+  }
+
+  .mobile-menu-btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 36px !important;
+    height: 36px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    color: #fff !important;
+    font-size: 1.6rem !important;
+    flex-shrink: 0 !important;
+    cursor: pointer !important;
   }
 
   .nav-right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 0.4rem;
-    flex: 1;
-    margin-left: 0;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 0.35rem !important;
+    flex-shrink: 0 !important;
+    flex-grow: 0 !important;
+    margin-left: auto !important;
+    max-width: calc(100% - 46px) !important;
   }
 
   .nav-action-btn {
-    width: 36px !important;
-    height: 36px !important;
+    width: 34px !important;
+    height: 34px !important;
     font-size: 1.05rem !important;
-    flex-shrink: 0;
+    flex-shrink: 0 !important;
   }
 
   /* Compact AI Assistant Button on Mobile */
   .nav-ai-btn {
-    width: 36px !important;
-    height: 36px !important;
+    width: 34px !important;
+    height: 34px !important;
     padding: 0 !important;
     border-radius: 50% !important;
     justify-content: center !important;
     background: linear-gradient(135deg, rgba(229, 9, 20, 0.25), rgba(138, 43, 226, 0.35)) !important;
     border: 1px solid rgba(229, 9, 20, 0.5) !important;
-    flex-shrink: 0;
+    flex-shrink: 0 !important;
   }
 
   .nav-ai-btn .ai-btn-text {
@@ -3528,6 +3551,35 @@ body.rtl-layout .details-back-btn svg {
     color: #ff4d5a;
   }
 
+  /* Compact Download App Button on Mobile */
+  .nav-download-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 34px !important;
+    height: 34px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    flex-shrink: 0 !important;
+  }
+
+  .nav-download-btn .download-text {
+    display: none !important;
+  }
+
+  .nav-download-btn .download-icon-mobile {
+    display: inline-block !important;
+    font-size: 1.1rem !important;
+    color: #fff !important;
+  }
+
+  .nav-download-btn:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+  }
+
   /* Hide Report button in mobile top navbar (accessible in mobile drawer menu) */
   .nav-report-btn {
     display: none !important;
@@ -3535,20 +3587,30 @@ body.rtl-layout .details-back-btn svg {
 
   /* Compact Language dropdown on mobile */
   .custom-lang-dropdown {
-    margin-right: 0 !important;
-    flex-shrink: 0;
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+    max-width: 95px !important;
   }
 
   .lang-dropdown-selected {
-    padding: 4px 8px !important;
+    padding: 4px 7px !important;
     font-size: 0.76rem !important;
     gap: 3px !important;
+    white-space: nowrap !important;
+  }
+
+  .lang-dropdown-selected .lang-icon {
+    font-size: 0.95rem !important;
+  }
+
+  .lang-dropdown-selected .lang-arrow {
+    font-size: 0.75rem !important;
   }
 
   .user-profile-container {
     display: flex !important;
-    align-items: center;
-    flex-shrink: 0;
+    align-items: center !important;
+    flex-shrink: 0 !important;
   }
 
   .user-profile-container .profile-badge .avatar {
