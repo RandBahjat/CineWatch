@@ -5252,3 +5252,240 @@ html.light-mode .hero-slide::before {
   .cw-vol-slider-wrap { display: none !important; }
 }
 
+/* ==========================================================================
+   LIGHT MODE STYLING
+   ========================================================================== */
+html.light-mode {
+  color-scheme: light;
+}
+
+html.light-mode body {
+  background-color: #f6f6f9;
+  color: #1a1a1a;
+}
+
+/* Sidebar in light mode */
+html.light-mode .sidebar {
+  background: #ffffff;
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.04);
+}
+
+html.light-mode .sidebar .brand-name {
+  color: #1a1a1a;
+}
+
+html.light-mode .nav-item {
+  color: #555558;
+}
+
+html.light-mode .nav-item:hover {
+  background: rgba(229, 9, 20, 0.08);
+  color: #e50914;
+}
+
+html.light-mode .nav-item.active {
+  background: rgba(229, 9, 20, 0.12);
+  color: #e50914;
+}
+
+/* Main content headers and cards */
+html.light-mode .main-content {
+  background: #f6f6f9;
+  color: #1a1a1a;
+}
+
+html.light-mode .section-heading,
+html.light-mode .shelf-title {
+  color: #1a1a1a;
+}
+
+/* Settings overlay in light mode */
+html.light-mode .settings-overlay {
+  background: #f4f4f7;
+  color: #1a1a1a;
+}
+
+html.light-mode .settings-hero-scrim {
+  background: linear-gradient(to top, #f4f4f7 0%, rgba(244, 244, 247, 0.85) 15%, rgba(244, 244, 247, 0.2) 55%, transparent 100%),
+              linear-gradient(to bottom, rgba(244, 244, 247, 0.6) 0%, transparent 35%);
+}
+
+html.light-mode .settings-title-heading {
+  color: #1a1a1a;
+  text-shadow: none;
+}
+
+html.light-mode .settings-back-btn-new {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #1a1a1a;
+}
+
+html.light-mode .settings-back-btn-new:hover {
+  background: #ffffff;
+  color: #e50914;
+}
+
+/* Glass cards in light mode */
+html.light-mode .settings-card-glass,
+html.light-mode .settings-hero-profile-card {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  color: #1a1a1a;
+}
+
+html.light-mode .settings-hero-profile-name,
+html.light-mode .settings-section-title,
+html.light-mode .settings-item-title,
+html.light-mode .settings-field-label {
+  color: #111111;
+}
+
+html.light-mode .settings-hero-profile-meta,
+html.light-mode .settings-item-desc,
+html.light-mode .settings-field-desc,
+html.light-mode .settings-legal-link {
+  color: #666668;
+}
+
+html.light-mode .settings-hero-btn-manage {
+  background: #ffffff;
+  border-color: #e50914;
+  color: #e50914;
+}
+
+html.light-mode .settings-hero-btn-manage:hover {
+  background: #e50914;
+  color: #ffffff;
+}
+
+html.light-mode .settings-hero-btn-bg {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: #333333;
+}
+
+html.light-mode .settings-theme-pills-row {
+  background: #eaeaea;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+html.light-mode .settings-theme-pill {
+  color: #666668;
+}
+
+html.light-mode .settings-theme-pill:hover {
+  color: #111111;
+}
+
+html.light-mode .settings-theme-pill.active {
+  background: #e50914;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(229, 9, 20, 0.3);
+}
+
+html.light-mode .settings-scale-select {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: #111111;
+}
+
+html.light-mode .settings-slider {
+  background-color: #d1d1d6;
+}
+
+html.light-mode .settings-btn-find-friends,
+html.light-mode .settings-check-update-btn {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: #1a1a1a;
+}
+
+html.light-mode .settings-btn-logout-main {
+  background: #ffffff;
+  border: 1px solid rgba(229, 9, 20, 0.2);
+  color: #e50914;
+}
+
+html.light-mode .settings-btn-logout-main:hover {
+  background: #ffebeb;
+  color: #c0000c;
+}
+
+/* Account Management Overlay in Light Mode */
+html.light-mode .account-overlay {
+  background: #f4f4f7;
+  background-image: radial-gradient(ellipse at top, rgba(230, 230, 235, 0.6) 0%, #f4f4f7 70%, #f4f4f7 100%);
+  color: #1a1a1a;
+}
+
+html.light-mode .account-title-heading,
+html.light-mode .account-card-title,
+html.light-mode .account-device-name,
+html.light-mode .account-2fa-title {
+  color: #111111;
+}
+
+html.light-mode .account-back-btn {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #111111;
+}
+
+html.light-mode .account-glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  color: #111111;
+}
+
+html.light-mode .account-text-input,
+html.light-mode .account-email-box,
+html.light-mode .account-password-box {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: #111111;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+html.light-mode .account-device-row {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+html.light-mode .account-device-row.current-device {
+  background: #ffffff;
+  border: 1px solid rgba(229, 9, 20, 0.35);
+}
+
+html.light-mode .account-device-signout-btn,
+html.light-mode .account-input-btn,
+html.light-mode .account-change-pwd-btn,
+html.light-mode .account-btn-signout-all {
+  background: #f0f0f2;
+  color: #111111;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+html.light-mode .account-device-signout-btn:hover,
+html.light-mode .account-input-btn:hover,
+html.light-mode .account-change-pwd-btn:hover,
+html.light-mode .account-btn-signout-all:hover {
+  background: #e4e4e7;
+}
+
+html.light-mode .account-member-pill {
+  background: #eaeaea;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  color: #555558;
+}
+
+html.light-mode .account-card-subtitle,
+html.light-mode .account-input-label,
+html.light-mode .account-device-meta,
+html.light-mode .account-2fa-desc {
+  color: #666668;
+}
+
