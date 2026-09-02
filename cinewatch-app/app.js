@@ -2650,6 +2650,7 @@ if (document.readyState === 'loading') {
   window.closeDetail = closeDetail;
   window.slideShelf = slideShelf;
   window.toggleFav = toggleFav;
+  window.toggleFavorite = toggleFavorite;
   window.jumpHeroSlide = jumpHeroSlide;
   window.switchTab = switchTab;
   window.triggerAppInstall = triggerAppInstall;
