@@ -48,6 +48,15 @@ function createWindow() {
     }
   });
 
+  // Strip any query strings on local file:// URLs so asar archive lookup never fails with ERR_FILE_NOT_FOUND
+  mainWindow.webContents.session.webRequest.onBeforeRequest((details, callback) => {
+    if (details.url.startsWith('file://') && details.url.includes('?')) {
+      const cleanUrl = details.url.split('?')[0];
+      return callback({ redirectURL: cleanUrl });
+    }
+    callback({});
+  });
+
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
 
   mainWindow.webContents.setWindowOpenHandler(({ url }) => {
@@ -62,16 +71,30 @@ function createWindow() {
   });
 }
 
+// Global exception guards to prevent unexpected app termination
+process.on('uncaughtException', (err) => {
+  console.error('CineWatch Uncaught Exception:', err);
+});
+process.on('unhandledRejection', (reason) => {
+  console.error('CineWatch Unhandled Rejection:', reason);
+});
+
 app.whenReady().then(() => {
   createWindow();
   
   // Disable automatic downloading — the user must choose to update
   autoUpdater.autoDownload = false;
 
-  // Check for updates shortly after startup
+  // Safe update check with error handler to prevent crashing
+  autoUpdater.on('error', (err) => {
+    console.log('Update check error (safe ignored):', err ? err.message : err);
+  });
+
   setTimeout(() => {
-    autoUpdater.checkForUpdates();
-  }, 2000);
+    try {
+      autoUpdater.checkForUpdates().catch(() => {});
+    } catch (e) {}
+  }, 3000);
 });
 
 // Auto Updater Events
