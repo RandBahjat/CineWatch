@@ -881,6 +881,7 @@ select,
 
 .shelf-track {
   display: flex;
+  align-items: flex-start;
   gap: 1.25rem;
   overflow-x: auto;
   padding: 0.5rem 0.25rem 1.2rem;
