@@ -96,7 +96,7 @@
   <script src="./api.js?v=v6" defer></script>
   <script src="./stream-engine.js?v=3" defer></script>
   <script src="./movie.js?v=v42" defer></script>
-  <script src="./app.js?v=283" defer></script>
+  <script src="./app.js?v=285" defer></script>
 </head>
 <body>
 
@@ -350,7 +350,7 @@
   <div class="settings-overlay hidden" id="settingsOverlay">
     <!-- Hero / Header Background -->
     <div class="settings-hero-bg">
-      <div class="settings-hero-img" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4iczSgSW2agyqM1U10Rzcz2vGQZhlqCQMS-HzMQ1pKSQIs0u-cv0I_zg8YZwefS_DgVfF1NjlMnwXinClZXdhb3EzczjLDvfGUUmmm6QOTdtWjpGAu8J7WvXkF2I8GTgwt3oHfHjROslMLVmxeTfHLLbMFOU0OacAuvBIROr_K2J9XCBT4xJ2fsTiH-BujLi7dZPomW8s25LKpx-z8kBlch-F07cIwWyLD2wyCnzW1HMPFEkAhZ28')">
+      <div class="settings-hero-img" id="settingsHeroBgImg" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4iczSgSW2agyqM1U10Rzcz2vGQZhlqCQMS-HzMQ1pKSQIs0u-cv0I_zg8YZwefS_DgVfF1NjlMnwXinClZXdhb3EzczjLDvfGUUmmm6QOTdtWjpGAu8J7WvXkF2I8GTgwt3oHfHjROslMLVmxeTfHLLbMFOU0OacAuvBIROr_K2J9XCBT4xJ2fsTiH-BujLi7dZPomW8s25LKpx-z8kBlch-F07cIwWyLD2wyCnzW1HMPFEkAhZ28')">
         <!-- Scrim Overlay -->
         <div class="settings-hero-scrim"></div>
       </div>
@@ -366,49 +366,74 @@
         <h1 class="settings-title-heading">Settings</h1>
       </header>
 
-      <!-- Structured Grid Layout -->
-      <div class="settings-layout-grid">
-        <!-- Profile Card -->
-        <section class="settings-card-glass settings-profile-card">
-          <div class="settings-avatar-container">
-            <img id="settingsAvatarImg" class="settings-avatar-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWzfkAEVcNLGJSidDoeiPDQgQIM8g08wkKUjhaNT7qLJIZORj788jigNbnJhqdKyymeomMPcm9AcKHE_w5ioHvYrNyhCRJYecw-qw5wqfQYDV5ioO4F5Oj9I5Z6wAbknBhIqDvQbqcaKUWC8XNwYsNC5oUG4dpf_GZkXkMLYyASA2F_KjZXlx53ldwEx2VJ5u8UudByxo6nd0DkOe6xpOLBrHys85Ga5m9C8d0FQ85pr6OrNF-B0fM" alt="Profile Picture" />
-            <button class="settings-edit-avatar-badge" id="settingsEditAvatarBtn" aria-label="Edit Avatar">
-              <span class="material-symbols-outlined">edit</span>
-            </button>
-            <input type="file" id="settingsAvatarFileInput" accept="image/*" style="display:none;" />
-          </div>
-          <h2 class="settings-user-name" id="settingsUserName">Alex Rivers</h2>
-          <p class="settings-user-meta" id="settingsUserPlan">Premium Plan • Member since 2023</p>
-          <button class="settings-manage-acc-btn" id="settingsManageAccBtn">Manage Account</button>
-        </section>
+      <!-- Hero Profile Section -->
+      <section class="settings-card-glass settings-hero-profile-card">
+        <div class="settings-hero-avatar-wrap">
+          <img id="settingsAvatarImg" class="settings-hero-avatar-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWzfkAEVcNLGJSidDoeiPDQgQIM8g08wkKUjhaNT7qLJIZORj788jigNbnJhqdKyymeomMPcm9AcKHE_w5ioHvYrNyhCRJYecw-qw5wqfQYDV5ioO4F5Oj9I5Z6wAbknBhIqDvQbqcaKUWC8XNwYsNC5oUG4dpf_GZkXkMLYyASA2F_KjZXlx53ldwEx2VJ5u8UudByxo6nd0DkOe6xpOLBrHys85Ga5m9C8d0FQ85pr6OrNF-B0fM" alt="Alex Rivers" />
+          <button class="settings-hero-avatar-edit-btn" id="settingsEditAvatarBtn" aria-label="Edit avatar">
+            <span class="material-symbols-outlined">edit</span>
+          </button>
+          <input type="file" id="settingsAvatarFileInput" accept="image/*" style="display:none;" />
+        </div>
 
+        <div class="settings-hero-profile-info">
+          <h2 class="settings-hero-profile-name" id="settingsUserName">Alex Rivers</h2>
+          <p class="settings-hero-profile-meta" id="settingsUserPlan">Premium Plan • Member since 2023</p>
+        </div>
+
+        <div class="settings-hero-profile-actions">
+          <button class="settings-hero-btn-manage" id="settingsManageAccBtn">
+            <span class="material-symbols-outlined">manage_accounts</span>
+            Manage Account
+          </button>
+          <button class="settings-hero-btn-bg" id="settingsChangeBgBtn">
+            <span class="material-symbols-outlined">image</span>
+            <span>Change Background</span>
+          </button>
+          <input type="file" id="settingsBgFileInput" accept="image/*" style="display:none;" />
+        </div>
+      </section>
+
+      <!-- Settings Cards Grid -->
+      <div class="settings-cards-grid-3">
         <!-- Appearance Settings -->
-        <section class="settings-card-glass settings-appearance-card">
+        <section class="settings-card-glass settings-card-content">
           <h3 class="settings-section-title">Appearance</h3>
-          <div class="settings-fields-stack">
-            <div class="settings-row-split">
-              <div>
-                <h4 class="settings-field-label">Theme Mode</h4>
-                <p class="settings-field-desc">Choose your preferred viewing environment</p>
+          <div class="settings-inner-stack">
+            <div class="settings-fields-group">
+              <div class="settings-row-between">
+                <div>
+                  <h4 class="settings-item-title">Theme Mode</h4>
+                  <p class="settings-item-desc">Choose viewing environment</p>
+                </div>
+                <div class="settings-theme-pills-row" id="themePills">
+                  <button class="settings-theme-pill active" data-theme="system">
+                    <span class="material-symbols-outlined">settings_brightness</span> System
+                  </button>
+                  <button class="settings-theme-pill" data-theme="dark">
+                    <span class="material-symbols-outlined">dark_mode</span> Dark
+                  </button>
+                </div>
               </div>
-              <div class="settings-theme-pills-row" id="themePills">
-                <button class="settings-theme-pill active" data-theme="system">
-                  <span class="material-symbols-outlined">settings_brightness</span> System
-                </button>
-                <button class="settings-theme-pill" data-theme="dark">
-                  <span class="material-symbols-outlined">dark_mode</span> Dark
-                </button>
-                <button class="settings-theme-pill" data-theme="light">
-                  <span class="material-symbols-outlined">light_mode</span> Light
-                </button>
+
+              <div class="settings-row-between">
+                <div>
+                  <h4 class="settings-item-title">Interface Scale</h4>
+                  <p class="settings-item-desc">Adjust element sizing</p>
+                </div>
+                <select class="settings-scale-select" id="interfaceScaleSelect">
+                  <option value="100">Default (100%)</option>
+                  <option value="110">Large (110%)</option>
+                  <option value="90">Compact (90%)</option>
+                </select>
               </div>
             </div>
-            <div class="settings-row-between" style="margin-top: auto;">
+
+            <div class="settings-row-between settings-divider-top">
               <div>
-                <h4 class="settings-field-label">Reduced Motion</h4>
-                <p class="settings-field-desc">Minimize UI animations for a quieter experience</p>
+                <h4 class="settings-item-title">Reduced Motion</h4>
+                <p class="settings-item-desc">Minimize UI animations</p>
               </div>
-              <!-- Custom Toggle -->
               <label class="settings-switch">
                 <input type="checkbox" id="reducedMotionToggle" />
                 <span class="settings-slider"></span>
@@ -417,65 +442,95 @@
           </div>
         </section>
 
-        <!-- Streaming Settings -->
-        <section class="settings-card-glass settings-streaming-card">
+        <!-- Playback & Streaming Settings -->
+        <section class="settings-card-glass settings-card-content">
           <h3 class="settings-section-title">Playback &amp; Streaming</h3>
-          <div class="settings-fields-stack">
-            <div class="settings-row-split">
-              <div>
-                <h4 class="settings-field-label">Video Quality</h4>
-                <p class="settings-field-desc">Default resolution on Wi-Fi</p>
+          <div class="settings-inner-stack">
+            <div class="settings-fields-group">
+              <div class="settings-row-between">
+                <div>
+                  <h4 class="settings-item-title">Video Quality</h4>
+                  <p class="settings-item-desc">Default resolution on Wi-Fi</p>
+                </div>
+                <select class="settings-scale-select" id="videoQualitySelect">
+                  <option value="auto">Auto (Recommended)</option>
+                  <option value="4k">4K Ultra HD</option>
+                  <option value="1080p">1080p Full HD</option>
+                </select>
               </div>
-              <select class="settings-select-field" id="videoQualitySelect">
-                <option value="auto">Auto (Recommended)</option>
-                <option value="4k">4K Ultra HD</option>
-                <option value="1080p">1080p Full HD</option>
-                <option value="saver">Data Saver</option>
-              </select>
+
+              <div class="settings-row-between">
+                <div>
+                  <h4 class="settings-item-title">Auto-Download</h4>
+                  <p class="settings-item-desc">Save next episodes</p>
+                </div>
+                <label class="settings-switch">
+                  <input type="checkbox" id="autoDownloadToggle" checked />
+                  <span class="settings-slider"></span>
+                </label>
+              </div>
             </div>
-            <div class="settings-row-between">
-              <div>
-                <h4 class="settings-field-label">Autoplay Next Episode</h4>
-                <p class="settings-field-desc">Seamlessly continue your binge</p>
+
+            <div class="settings-fields-group settings-divider-top">
+              <div class="settings-row-between">
+                <div>
+                  <h4 class="settings-item-title">Autoplay Next Episode</h4>
+                </div>
+                <label class="settings-switch">
+                  <input type="checkbox" id="autoplayToggle" checked />
+                  <span class="settings-slider"></span>
+                </label>
               </div>
-              <label class="settings-switch">
-                <input type="checkbox" id="autoplayToggle" checked />
-                <span class="settings-slider"></span>
-              </label>
-            </div>
-            <div class="settings-row-between">
-              <div>
-                <h4 class="settings-field-label">Spatial Audio</h4>
-                <p class="settings-field-desc">Enable immersive sound</p>
+
+              <div class="settings-row-between">
+                <div>
+                  <h4 class="settings-item-title">Spatial Audio</h4>
+                </div>
+                <label class="settings-switch">
+                  <input type="checkbox" id="spatialAudioToggle" checked />
+                  <span class="settings-slider"></span>
+                </label>
               </div>
-              <label class="settings-switch">
-                <input type="checkbox" id="spatialAudioToggle" checked />
-                <span class="settings-slider"></span>
-              </label>
             </div>
           </div>
         </section>
 
-        <!-- Plan Info Card -->
-        <section class="settings-card-glass settings-plan-card">
-          <div>
-            <h3 class="settings-plan-title">
-              <span class="material-symbols-outlined text-primary-color">star</span>
-              Subscription
-            </h3>
-            <div class="settings-plan-price-row">
-              <div>
-                <p class="settings-field-desc">Current Plan</p>
-                <p class="settings-plan-name">4K Ultra HD</p>
+        <!-- Social & Discover -->
+        <section class="settings-card-glass settings-card-content">
+          <h3 class="settings-section-title" style="display: flex; align-items: center; gap: 0.5rem;">
+            <span class="material-symbols-outlined" style="color: #e50914;">group</span>
+            Social &amp; Discover
+          </h3>
+          <div class="settings-inner-stack">
+            <button class="settings-btn-find-friends" id="findFriendsBtn">
+              <span class="material-symbols-outlined">person_add</span> Find Friends
+            </button>
+
+            <div class="settings-fields-group">
+              <div class="settings-row-between" id="watchPartySettingsRow" style="cursor: pointer;">
+                <div>
+                  <h4 class="settings-item-title">Watch Party Settings</h4>
+                  <p class="settings-item-desc">Manage visibility</p>
+                </div>
+                <span class="material-symbols-outlined" style="color: #c6c6c7;">chevron_right</span>
               </div>
-              <p class="settings-plan-price">$19.99/mo</p>
+
+              <div class="settings-row-between">
+                <div>
+                  <h4 class="settings-item-title">Activity Status</h4>
+                  <p class="settings-item-desc">Show what you're watching</p>
+                </div>
+                <label class="settings-switch">
+                  <input type="checkbox" id="activityStatusToggle" checked />
+                  <span class="settings-slider"></span>
+                </label>
+              </div>
             </div>
           </div>
-          <button class="settings-upgrade-plan-btn" id="upgradePlanBtn">Upgrade Plan</button>
         </section>
 
         <!-- App Information -->
-        <section class="settings-card-glass settings-app-info-card">
+        <section class="settings-card-glass settings-app-info-full">
           <h3 class="settings-section-title">App Information</h3>
           <div class="settings-row-between" style="margin-bottom: 1.5rem;">
             <div>
@@ -495,7 +550,7 @@
         </section>
 
         <!-- Action Buttons -->
-        <div class="settings-actions-row">
+        <div class="settings-actions-full-row">
           <button class="settings-btn-save-main" id="saveSettingsBtn">
             <span class="material-symbols-outlined">save</span> Save Changes
           </button>
