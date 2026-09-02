@@ -349,9 +349,9 @@ window.createCardHTML = createCardHTML;
 function renderHome() {
   if (!MOVIES || MOVIES.length === 0) return;
 
-  const featuredList = (window.FEATURED_TITLES && window.FEATURED_TITLES.length > 0)
+  const featuredList = (typeof window.FEATURED_TITLES !== 'undefined' && window.FEATURED_TITLES.length > 0)
     ? window.FEATURED_TITLES
-    : FEATURED_TITLES;
+    : APP_FEATURED;
   let heroFeatured = featuredList
     .map(title => MOVIES.find(m => m.title === title))
     .filter(Boolean)
@@ -394,9 +394,9 @@ function renderHome() {
   const shelvesContainer = document.getElementById('homeShelves');
   if (!shelvesContainer) return;
 
-  const top10List = (window.TOP_10_TRENDING_TODAY && window.TOP_10_TRENDING_TODAY.length > 0)
+  const top10List = (typeof window.TOP_10_TRENDING_TODAY !== 'undefined' && window.TOP_10_TRENDING_TODAY.length > 0)
     ? window.TOP_10_TRENDING_TODAY
-    : TOP_10_TITLES;
+    : APP_TOP_10;
   const top10 = top10List.map(title => MOVIES.find(m => m.title === title)).filter(Boolean);
 
   let trendingMovies;
