@@ -1948,9 +1948,20 @@ function openDetailsModal(movieId) {
         const iframe = document.createElement('iframe');
         iframe.id = 'detailsTrailerIframe';
         iframe.className = 'details-trailer-iframe';
+
+        function extractYt(urlOrId) {
+          if (!urlOrId) return null;
+          const str = String(urlOrId).trim();
+          if (!str) return null;
+          if (/^[a-zA-Z0-9_-]{11}$/.test(str)) return str;
+          const match = str.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=|shorts\/))([\w-]{11})/i);
+          return match && match[1] ? match[1] : null;
+        }
+
+        const customYt = extractYt(movie.trailerUrl || movie.trailer || movie.trailerYouTubeId);
         const query = encodeURIComponent(`${movie.title} ${movie.year || ''} official trailer`);
-        iframe.src = movie.trailerYouTubeId 
-          ? `https://www.youtube-nocookie.com/embed/${movie.trailerYouTubeId}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${movie.trailerYouTubeId}&iv_load_policy=3`
+        iframe.src = customYt 
+          ? `https://www.youtube-nocookie.com/embed/${customYt}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${customYt}&iv_load_policy=3`
           : `https://www.youtube-nocookie.com/embed?listType=search&list=${query}&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3`;
         iframe.allow = 'autoplay; encrypted-media';
         iframe.style.position = 'absolute';
