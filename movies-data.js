@@ -61,7 +61,7 @@ window._MOVIES_DATA = [
       "Action",
       "Thriller"
     ],
-    poster: "https://image.tmdb.org/t/p/original/lsYSWqj6i2iyUDJoLA2cazFJYlC.jpg",
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/pu2VxGlpGwffOx292w18b1tv96j.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
     videoUrl: "1288445",
     overview: "Ex-Special Forces agent Cole Reed see billionaire industrialist boss framed and murdered in front of him. Forced on run as chief suspect, Reed uncover massive international conspiracy while hunted by corrupt government operatives and dangerous mercenaries. Must fight to survive and expose real killer.",
@@ -86,7 +86,7 @@ window._MOVIES_DATA = [
       "Comedy",
       "Drama"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/hFLVVF6GSfFkvDlht6iCsCcFjrh.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
     videoUrl: "950028",
     overview: "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places — testing the fragile boundaries between their relationship, their neighbors, and everything they thought they wanted.",
@@ -138,7 +138,7 @@ window._MOVIES_DATA = [
       "Sci-Fi",
       "Adventure"
     ],
-    poster: "https://image.tmdb.org/t/p/original/1QCWdqzTfh2x9UylVpspIU6QTuM.jpg",
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/uhzRnTW4DM13UQBvZP3eVNzQTuz.jpg",
     backdrop: "https://images.hdqwalls.com/download/supergirl-team-up-4k-hb-3840x2160.jpg",
     videoUrl: "1081003",
     overview: "Kara Zor-El, cousin of Superman, is drawn into a quest for vengeance after a violent attack shatters her fragile peace. Joined by an unexpected ally, she sets out across the galaxy, confronting both a ruthless enemy and her own darker instincts along the way.",
@@ -251,7 +251,7 @@ window._MOVIES_DATA = [
       "Horror",
       "Drama"
     ],
-    poster: "https://www.themoviedb.org/t/p/w1280/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/cUnADM9fsYV69Fk0TkMp7xVLnKj.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oICYZzr1arFtiaPrQfOTYZOOrCy.jpg",
     videoUrl: "1339713",
     overview: "Bear, a shy and socially awkward music store employee, has long harbored an unspoken crush on his coworker Nikki. When he stumbles across a mysterious antique object said to grant wishes if broken, he impulsively wishes for Nikki to love him more than anything in the world. The wish is granted — but the transformation that follows reveals just how dangerous it can be to get exactly what you wished for.",
@@ -278,7 +278,7 @@ window._MOVIES_DATA = [
       "Fantasy",
       "Sci-Fi"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/a77OcLmarwiBJakOPPC36m58t4L.jpg",
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/oRuyGUHdoaQxWP3SDfafGkStxTC.jpg",
     backdrop: "https://images3.alphacoders.com/140/thumb-1920-1409079.jpg",
     videoUrl: "1698856",
     overview: "Separated from his magical Power Sword as a child, Prince Adam leads a quiet life on Earth until the weapon guides him back to his home planet of Eternia. Finding his homeland shattered under the tyrannical rule of Skeletor, Adam must team up with Teela and Duncan to claim his true destiny as He-Man and liberate his world.  ",
@@ -381,7 +381,7 @@ window._MOVIES_DATA = [
       "Thriller",
       "Crime"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lGovcOtxugJPhfJjFKud9EbWtOA.jpg",
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/dx2dblJL3GAKcXXXPjC2FSaMTWW.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/l7asYmqOad01F2u0oCMM8nQjoEP.jpg",
     videoUrl: "87513",
     overview: "In 1970s Detroit, hard-working man John Miller fall in love with local gangster girl. Jealous mob boss framing John, sending him to prison for crime he no do. John break out of jail and hunt down criminals on brutal silent quest for absolute revenge. Movie got almost no spoken words, using rock music and raw action to tell story!",
