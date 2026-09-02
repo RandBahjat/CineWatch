@@ -2,8 +2,11 @@ const { app, BrowserWindow, shell, dialog, ipcMain, session } = require('electro
 const path = require('path');
 const { autoUpdater } = require('electron-updater');
 
-// Disable hardware acceleration to eliminate Windows GPU compositing crashes (0xC0000005 black screen)
-app.disableHardwareAcceleration();
+// Enable high-performance hardware acceleration & GPU rasterization for smooth 60+ FPS
+app.commandLine.appendSwitch('ignore-gpu-blocklist');
+app.commandLine.appendSwitch('enable-gpu-rasterization');
+app.commandLine.appendSwitch('enable-zero-copy');
+app.commandLine.appendSwitch('disable-gpu-process-crash-limit');
 
 let mainWindow;
 
