@@ -1047,16 +1047,20 @@ function renderWatchlist() {
 }
 
 // Detail Modal — with Netflix-style auto-playing trailer
-// Detail Modal — Immersive Full-Screen View
+// Detail Modal — Immersive Full-Screen View with 10s Auto-playing Trailer
 let _trailerTimer = null;
 let _trailerMuted = true;
 
 function openDetail(movieId) {
-  const movie = _movieMap.get(String(movieId));
+  let movie = _movieMap.get(String(movieId));
+  if (!movie && typeof movieId === 'object' && movieId) movie = movieId;
+  if (!movie && movieId) movie = MOVIES.find(m => String(m.id) === String(movieId) || m.title === movieId);
   if (!movie) return;
 
-  // Cancel any previous trailer timer
+  // Cancel any previous trailer timer and remove existing trailer iframe
   clearTimeout(_trailerTimer);
+  const existingTrailer = document.querySelector('.trailer-iframe');
+  if (existingTrailer) existingTrailer.remove();
 
   state.currentDetail = movie;
   const modal = document.getElementById('detailModal');
@@ -1065,10 +1069,9 @@ function openDetail(movieId) {
 
   const isFav        = state.favorites.has(String(movie.id));
   const genreText    = Array.isArray(movie.genres) ? movie.genres.join(', ') : (movie.genres || 'Action, Drama');
-  let castText     = movie.cast ? (Array.isArray(movie.cast) ? movie.cast.join(', ') : movie.cast) : 'TOM HOLLAND, ZENDAYA, BENEDICT CUMBERBATCH';
+  let castText       = movie.cast ? (Array.isArray(movie.cast) ? movie.cast.join(', ') : movie.cast) : 'Cast details available soon';
   const directorText = movie.director || '';
   const overview     = movie.description || movie.overview || 'A cinematic masterpiece streaming now on CineWatch in full high-definition quality with crystal clear audio.';
-  const trailerId    = movie.trailerYouTubeId || null;
 
   /* ── Hero: Full-screen background ── */
   if (hero) {
@@ -1077,25 +1080,21 @@ function openDetail(movieId) {
     hero.style.backgroundPosition = 'center center';
     hero.innerHTML = `
       <div class="immersive-gradient"></div>
-      ${trailerId ? `<button class="trailer-sound-btn hidden" id="trailerSoundBtn" title="Toggle sound">
+      <button class="trailer-sound-btn hidden" id="trailerSoundBtn" title="Toggle sound">
         <ion-icon name="volume-mute"></ion-icon>
-      </button>` : ''}
+      </button>
     `;
 
-    /* Auto-play trailer after 4 seconds if available */
-    if (trailerId) {
-      _trailerTimer = setTimeout(() => {
-        _startTrailer(hero, trailerId);
-      }, 4000);
-    }
+    /* Auto-play trailer after 10 seconds of staying in detail */
+    _trailerTimer = setTimeout(() => {
+      _startTrailer(hero, movie);
+    }, 10000);
   }
 
   /* ── Body: Top Nav + Bottom Content ── */
   if (body) {
-    // Generate a random match percentage for the UI
     const imdbRating = movie.rating || '8.5';
     
-    // Calculate super accurate "Plays until" time based on movie.duration in the code
     function parseDurationMinutes(dur, isTv) {
       if (!dur) return isTv ? 45 : 120;
       if (typeof dur === 'number') return dur;
@@ -1144,18 +1143,18 @@ function openDetail(movieId) {
             <span class="meta-badge-pill gold"><ion-icon name="star"></ion-icon> IMDb ${imdbRating}</span>
             <span class="meta-badge-pill">${movie.year || '2026'}</span>
             <span class="meta-badge-pill"><ion-icon name="time-outline"></ion-icon> ${movie.duration || '2h 15m'}</span>
-            <span class="meta-badge-pill age">${movie.age || 'R'}</span>
+            <span class="meta-badge-pill age">${movie.age || 'PG-13'}</span>
           </div>
 
           <div class="immersive-cast">${castText.toUpperCase()}</div>
           <p class="immersive-overview">${overview}</p>
 
           <div class="immersive-btn-row">
-            <button class="btn-watch-now" onclick="playMovieDirect('${movie.id}')">
+            <button class="btn-watch-now" id="detailWatchNowBtn">
               <ion-icon name="play"></ion-icon>
               <span>Watch Now</span>
             </button>
-            <button class="btn-more-info ${isFav ? 'active-fav' : ''}" onclick="toggleFavorite('${movie.id}'); openDetail('${movie.id}');">
+            <button class="btn-more-info ${isFav ? 'active-fav' : ''}" id="detailWatchlistBtn">
               <ion-icon name="${isFav ? 'checkmark-circle' : 'add-circle-outline'}"></ion-icon>
               <span>${isFav ? 'In Watchlist' : 'Add to Watchlist'}</span>
             </button>
@@ -1173,6 +1172,38 @@ function openDetail(movieId) {
         </div>
       </div>
     `;
+
+    // Wire Watch Now Button safely
+    const watchBtn = body.querySelector('#detailWatchNowBtn');
+    if (watchBtn) {
+      watchBtn.onclick = (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        playMovieDirect(movie.id);
+      };
+    }
+
+    // Wire Watchlist Button safely with user login check
+    const favBtn = body.querySelector('#detailWatchlistBtn');
+    if (favBtn) {
+      favBtn.onclick = (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        const user = getActiveUser();
+        if (!user) {
+          showToast('Please log into your account to add to Watchlist!');
+          if (typeof openAuthOverlay === 'function') openAuthOverlay('signin');
+          return;
+        }
+        toggleFavorite(movie.id, e);
+        const isNowFav = state.favorites.has(String(movie.id));
+        favBtn.classList.toggle('active-fav', isNowFav);
+        const icon = favBtn.querySelector('ion-icon');
+        if (icon) icon.setAttribute('name', isNowFav ? 'checkmark-circle' : 'add-circle-outline');
+        const span = favBtn.querySelector('span');
+        if (span) span.textContent = isNowFav ? 'In Watchlist' : 'Add to Watchlist';
+      };
+    }
   }
 
   const sheet = document.getElementById('detailSheet');
@@ -1180,38 +1211,68 @@ function openDetail(movieId) {
   modal?.classList.remove('hidden');
 }
 
-function _startTrailer(heroEl, ytId) {
+function _startTrailer(heroEl, movie) {
   if (!heroEl || !document.getElementById('detailModal') || document.getElementById('detailModal').classList.contains('hidden')) return;
 
   _trailerMuted = true;
 
+  // Remove any previous iframe
+  const oldIframe = heroEl.querySelector('.trailer-iframe');
+  if (oldIframe) oldIframe.remove();
+
   // Build muted autoplay iframe
   const iframe = document.createElement('iframe');
   iframe.className = 'trailer-iframe';
-  iframe.src = `https://www.youtube.com/embed/${ytId}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${ytId}&iv_load_policy=3`;
+
+  let trailerSrc = '';
+  if (movie.trailerYouTubeId) {
+    trailerSrc = `https://www.youtube-nocookie.com/embed/${movie.trailerYouTubeId}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${movie.trailerYouTubeId}&iv_load_policy=3&enablejsapi=1`;
+  } else {
+    const query = encodeURIComponent(`${movie.title} ${movie.year || ''} official trailer`);
+    trailerSrc = `https://www.youtube-nocookie.com/embed?listType=search&list=${query}&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3`;
+  }
+
+  iframe.src = trailerSrc;
   iframe.allow = 'autoplay; encrypted-media';
   iframe.allowFullscreen = false;
-
-  // Fade-out the background image, fade-in the iframe
+  iframe.style.position = 'absolute';
+  iframe.style.inset = '0';
+  iframe.style.width = '100%';
+  iframe.style.height = '100%';
+  iframe.style.border = 'none';
+  iframe.style.zIndex = '1';
+  iframe.style.pointerEvents = 'none';
   iframe.style.opacity = '0';
-  iframe.style.transition = 'opacity 1.2s ease';
-  heroEl.appendChild(iframe);
+  iframe.style.transition = 'opacity 1.5s ease';
+
+  // Insert behind the gradient overlay
+  const gradient = heroEl.querySelector('.immersive-gradient');
+  if (gradient) {
+    heroEl.insertBefore(iframe, gradient);
+  } else {
+    heroEl.appendChild(iframe);
+  }
 
   requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      iframe.style.opacity = '1';
-      heroEl.style.backgroundImage = 'none';
-    });
+    setTimeout(() => {
+      iframe.style.opacity = '0.85';
+    }, 100);
   });
 
   // Wire up the sound toggle button
   const soundBtn = document.getElementById('trailerSoundBtn');
   if (soundBtn) {
     soundBtn.classList.remove('hidden');
-    soundBtn.onclick = () => {
+    soundBtn.style.zIndex = '15';
+    soundBtn.onclick = (e) => {
+      e.stopPropagation();
       _trailerMuted = !_trailerMuted;
-      const newSrc = `https://www.youtube.com/embed/${ytId}?autoplay=1&mute=${_trailerMuted ? 1 : 0}&controls=0&modestbranding=1&rel=0&loop=1&playlist=${ytId}&iv_load_policy=3`;
-      iframe.src = newSrc;
+      if (movie.trailerYouTubeId) {
+        iframe.src = `https://www.youtube-nocookie.com/embed/${movie.trailerYouTubeId}?autoplay=1&mute=${_trailerMuted ? 1 : 0}&controls=0&modestbranding=1&rel=0&loop=1&playlist=${movie.trailerYouTubeId}&iv_load_policy=3&enablejsapi=1`;
+      } else {
+        const query = encodeURIComponent(`${movie.title} ${movie.year || ''} official trailer`);
+        iframe.src = `https://www.youtube-nocookie.com/embed?listType=search&list=${query}&autoplay=1&mute=${_trailerMuted ? 1 : 0}&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3`;
+      }
       soundBtn.innerHTML = `<ion-icon name="${_trailerMuted ? 'volume-mute' : 'volume-high'}"></ion-icon>`;
     };
   }
@@ -1221,7 +1282,6 @@ function closeDetail() {
   clearTimeout(_trailerTimer);
   const modal = document.getElementById('detailModal');
   if (modal) modal.classList.add('hidden');
-  // Clean up iframe so video stops
   const iframe = document.querySelector('.trailer-iframe');
   if (iframe) iframe.remove();
 }
@@ -1251,10 +1311,13 @@ function formatPlayerTime(seconds) {
 }
 
 function playMovieDirect(movieId) {
-  closeDetail();
-  const movie = _movieMap.get(String(movieId));
+  let movie = _movieMap.get(String(movieId)) || state.currentDetail;
+  if (!movie && movieId) {
+    movie = MOVIES.find(m => String(m.id) === String(movieId) || m.title === movieId);
+  }
   if (!movie) return;
 
+  closeDetail();
   _cwPlayerState.activeMovie = movie;
 
   const playerModal = document.getElementById('playerModal');
@@ -1267,16 +1330,23 @@ function playMovieDirect(movieId) {
 
   if (playerTitle) playerTitle.textContent = `${movie.title} (${movie.year || '2026'})`;
 
-  const tmdb = movie.tmdbId || movie.videoUrl || '550';
+  const tmdb = movie.tmdbId || movie.videoUrl || movie.cinesrcId || '550';
   const isTv = movie.type === 'TV Show' || movie.type === 'Series' || (movie.seasons && movie.seasons.length);
 
   if (nextEpBtn) {
     nextEpBtn.classList.toggle('hidden', !isTv);
   }
 
-  // Dedicated VidLink Pro Streaming Engine (Only Server)
-  const sNum = movie.season || 1;
-  const epNum = movie.episode || 1;
+  // Dedicated VidLink Pro Streaming Engine
+  let sNum = 1;
+  let epNum = 1;
+  if (movie.seasons && movie.seasons.length > 0 && movie.seasons[0].episodes && movie.seasons[0].episodes.length > 0) {
+    sNum = movie.seasons[0].season || 1;
+    epNum = movie.seasons[0].episodes[0].episode || 1;
+  } else {
+    sNum = movie.season || 1;
+    epNum = movie.episode || 1;
+  }
 
   const vidLinkUrl = isTv
     ? `https://vidlink.pro/tv/${tmdb}/${sNum}/${epNum}?primaryColor=e50914`
