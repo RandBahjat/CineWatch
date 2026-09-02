@@ -69,6 +69,19 @@ function showToast(msg) {
   }, 2800);
 }
 
+// Auth Helper
+function getActiveUser() {
+  if (window.state && window.state.user) return window.state.user;
+  try {
+    const raw = localStorage.getItem('cinewatch_user');
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (parsed && (parsed.id || parsed.email || parsed.username)) return parsed;
+    }
+  } catch (e) {}
+  return null;
+}
+
 // Storage helpers
 async function loadFavorites() {
   try {
@@ -100,16 +113,25 @@ function saveFavorites() {
 
 async function toggleFavorite(id, e) {
   if (e) e.stopPropagation();
+  const user = getActiveUser();
+  if (!user) {
+    showToast('Please log into your account to add to Watchlist!');
+    if (typeof openAuthOverlay === 'function') {
+      openAuthOverlay('signin');
+    }
+    return false;
+  }
+
   const strId = String(id);
   const wasFav = state.favorites.has(strId);
 
-  // FIX 2: OPTIMISTIC RENDERING â€” update UI instantly, sync cloud in background
+  // FIX 2: OPTIMISTIC RENDERING — update UI instantly, sync cloud in background
   if (wasFav) {
     state.favorites.delete(strId);
     showToast('Removed from Watchlist');
   } else {
     state.favorites.add(strId);
-    showToast('Saved to Watchlist â¤ï¸');
+    showToast('Added to Watchlist ❤️');
   }
 
   // Immediately update every fav button for this card (no full re-render needed)
