@@ -4,7 +4,7 @@
 
 window._MOVIES_DATA = [
   {
-    title: Just Play Dead",
+    title: "Just Play Dead",
     type: "Movie",
     year: 2026,
     rating: 6.3,
