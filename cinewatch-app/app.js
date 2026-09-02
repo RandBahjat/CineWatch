@@ -1709,17 +1709,19 @@ function startApp() {
   const winCloseBtn = document.getElementById('winCloseBtn');
 
   if (winMinBtn) {
-    winMinBtn.addEventListener('click', (e) => {
+    winMinBtn.onclick = (e) => {
       e.stopPropagation();
+      e.preventDefault();
       if (window.electronAPI && typeof window.electronAPI.windowMinimize === 'function') {
         window.electronAPI.windowMinimize();
       }
-    });
+    };
   }
 
   if (winMaxBtn) {
-    winMaxBtn.addEventListener('click', (e) => {
+    winMaxBtn.onclick = (e) => {
       e.stopPropagation();
+      e.preventDefault();
       if (window.electronAPI && typeof window.electronAPI.windowMaximize === 'function') {
         window.electronAPI.windowMaximize();
       } else if (document.fullscreenElement) {
@@ -1727,16 +1729,30 @@ function startApp() {
       } else {
         document.documentElement.requestFullscreen().catch(() => {});
       }
-    });
+    };
   }
 
   if (winCloseBtn) {
-    winCloseBtn.addEventListener('click', (e) => {
+    winCloseBtn.onclick = (e) => {
       e.stopPropagation();
+      e.preventDefault();
       if (window.electronAPI && typeof window.electronAPI.windowClose === 'function') {
         window.electronAPI.windowClose();
       } else {
         window.close();
+      }
+    };
+  }
+
+  // Sync Maximize icon state dynamically from Electron
+  if (window.electronAPI && typeof window.electronAPI.onWindowStateChange === 'function') {
+    window.electronAPI.onWindowStateChange((state) => {
+      const maxIcon = winMaxBtn?.querySelector('ion-icon');
+      if (maxIcon) {
+        maxIcon.setAttribute('name', state.isMaximized ? 'copy-outline' : 'stop-outline');
+      }
+      if (winMaxBtn) {
+        winMaxBtn.setAttribute('title', state.isMaximized ? 'Restore' : 'Maximize');
       }
     });
   }
