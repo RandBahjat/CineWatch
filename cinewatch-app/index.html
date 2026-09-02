@@ -94,7 +94,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
   <script src="./api.js?v=v6" defer></script>
   <script src="./stream-engine.js?v=3" defer></script>
-  <script src="./app.js?v=125" defer></script>
+  <script src="./app.js?v=127" defer></script>
 </head>
 <body>
 
@@ -505,17 +505,10 @@
         </div>
 
         <div class="cw-topbar-right">
-          <!-- Server Switcher Menu -->
-          <div class="cw-dropdown-wrap">
-            <button class="cw-ctrl-btn cw-glass-pill-btn" id="serverMenuBtn" title="Switch Streaming Server">
-              <ion-icon name="server-outline"></ion-icon>
-              <span id="serverActiveLabel">Server 1</span>
-              <ion-icon name="chevron-down-outline" style="font-size: 0.85rem; margin-left: 2px;"></ion-icon>
-            </button>
-            <div class="cw-menu-popover hidden" id="serverMenu">
-              <div class="cw-menu-header">Streaming Server</div>
-              <div class="cw-menu-list" id="serverList"></div>
-            </div>
+          <!-- VidLink Pro Dedicated Server Badge -->
+          <div class="cw-glass-pill-btn" style="pointer-events: none; cursor: default; display: flex; align-items: center; gap: 8px;">
+            <ion-icon name="flash" style="color: #ff1c2a; font-size: 0.95rem;"></ion-icon>
+            <span style="font-weight: 700; letter-spacing: 0.5px;">VidLink Pro HD</span>
           </div>
         </div>
       </div>
