@@ -2213,3 +2213,15 @@ if (window.electronAPI) {
   document.getElementById('winMaxBtn')?.addEventListener('click', () => window.electronAPI.windowMaximize());
   document.getElementById('winCloseBtn')?.addEventListener('click', () => window.electronAPI.windowClose());
 }
+
+  // Global window exports for HTML onclick handlers
+  window.playMovieDirect = playMovieDirect;
+  window.openDetail = openDetail;
+  window.closeDetail = closeDetail;
+  window.slideShelf = slideShelf;
+  window.toggleFav = toggleFav;
+  window.jumpHeroSlide = jumpHeroSlide;
+  window.switchTab = switchTab;
+  window.triggerAppInstall = triggerAppInstall;
+  window.createCardHTML = createCardHTML;
+})();
