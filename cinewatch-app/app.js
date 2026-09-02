@@ -1802,6 +1802,35 @@ function startApp() {
     }
   });
 
+  // Change Background
+  const changeBgBtn = document.getElementById('settingsChangeBgBtn');
+  const bgFileInput = document.getElementById('settingsBgFileInput');
+  if (changeBgBtn && bgFileInput) {
+    changeBgBtn.addEventListener('click', () => bgFileInput.click());
+    bgFileInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        const dataUrl = event.target.result;
+        const heroImg = document.getElementById('settingsHeroBgImg');
+        if (heroImg) heroImg.style.backgroundImage = `url('${dataUrl}')`;
+        localStorage.setItem('cinewatch_settings_bg', dataUrl);
+        showToast('Background updated!');
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  // Load custom background if saved
+  try {
+    const savedBg = localStorage.getItem('cinewatch_settings_bg');
+    if (savedBg) {
+      const heroImg = document.getElementById('settingsHeroBgImg');
+      if (heroImg) heroImg.style.backgroundImage = `url('${savedBg}')`;
+    }
+  } catch(e) {}
+
   // Avatar Upload
   const editAvatarBtn = document.getElementById('settingsEditAvatarBtn');
   const avatarFileInput = document.getElementById('settingsAvatarFileInput');
@@ -1825,6 +1854,30 @@ function startApp() {
       reader.readAsDataURL(file);
     });
   }
+
+  // Interface Scale Select
+  document.getElementById('interfaceScaleSelect')?.addEventListener('change', (e) => {
+    const scale = e.target.value;
+    document.body.style.zoom = scale === '110' ? '1.05' : scale === '90' ? '0.95' : '1';
+    showToast(`Interface scale set to ${scale}%`);
+  });
+
+  // Find Friends & Watch Party Row
+  document.getElementById('findFriendsBtn')?.addEventListener('click', () => {
+    if (typeof window.switchTab === 'function') {
+      settingsOverlay?.classList.add('hidden');
+      window.switchTab('together');
+    } else {
+      showToast('Finding friends on Watch Together...');
+    }
+  });
+
+  document.getElementById('watchPartySettingsRow')?.addEventListener('click', () => {
+    if (typeof window.switchTab === 'function') {
+      settingsOverlay?.classList.add('hidden');
+      window.switchTab('together');
+    }
+  });
 
   // Theme Pills
   const themePills = document.querySelectorAll('.settings-theme-pill');
