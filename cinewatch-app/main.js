@@ -103,29 +103,29 @@ function createWindow() {
 
   // Fix YouTube Embed Error 153 in Electron: Inject valid Referer, Origin, and standard User-Agent headers
   const ytFilter = {
-    urls: [
-      '*://*.youtube.com/*',
-      '*://*.youtube-nocookie.com/*',
-      '*://*.googlevideo.com/*'
-    ]
+    urls: ['*://*/*']
   };
 
   mainWindow.webContents.session.webRequest.onBeforeSendHeaders(ytFilter, (details, callback) => {
     const requestHeaders = details.requestHeaders;
-    requestHeaders['Referer'] = 'https://www.youtube.com/';
-    requestHeaders['Origin'] = 'https://www.youtube.com';
-    if (requestHeaders['User-Agent']) {
-      requestHeaders['User-Agent'] = requestHeaders['User-Agent']
-        .replace(/Electron\/[0-9.]+\s*/g, '')
-        .replace(/CineWatch\/[0-9.]+\s*/g, '');
+    if (details.url.includes('youtube.com') || details.url.includes('youtube-nocookie.com') || details.url.includes('googlevideo.com')) {
+      requestHeaders['Referer'] = 'https://www.youtube.com/';
+      requestHeaders['Origin'] = 'https://www.youtube.com';
+      if (requestHeaders['User-Agent']) {
+        requestHeaders['User-Agent'] = requestHeaders['User-Agent']
+          .replace(/Electron\/[0-9.]+\s*/g, '')
+          .replace(/CineWatch\/[0-9.]+\s*/g, '');
+      }
     }
     callback({ cancel: false, requestHeaders });
   });
 
   mainWindow.webContents.session.webRequest.onHeadersReceived(ytFilter, (details, callback) => {
     const responseHeaders = Object.assign({}, details.responseHeaders);
-    delete responseHeaders['x-frame-options'];
-    delete responseHeaders['X-Frame-Options'];
+    if (details.url.includes('youtube.com') || details.url.includes('youtube-nocookie.com')) {
+      delete responseHeaders['x-frame-options'];
+      delete responseHeaders['X-Frame-Options'];
+    }
     callback({ cancel: false, responseHeaders });
   });
 
