@@ -72,7 +72,7 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
-  
+
   {
     title: "Mutiny",
     type: "Movie",
@@ -418,7 +418,7 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
-  
+
   {
     title: "The Dark Knight Rises",
     type: "Movie",
