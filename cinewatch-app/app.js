@@ -57,16 +57,39 @@ var state = {
   currentDetail: null
 };
 
-// Global Toast Notification
+// Global Toast Notification (Top-Right Sleek Glassmorphism)
 function showToast(msg) {
   const toast = document.getElementById('toast');
   if (!toast) return;
-  toast.textContent = msg;
+
+  const isAuth = msg.toLowerCase().includes('log in') || msg.toLowerCase().includes('account');
+  const isHeart = msg.includes('❤️') || msg.toLowerCase().includes('watchlist') || msg.toLowerCase().includes('saved');
+  
+  let iconName = 'notifications-outline';
+  let titleText = 'CineWatch';
+  if (isAuth) {
+    iconName = 'lock-closed';
+    titleText = 'Account Required';
+  } else if (isHeart) {
+    iconName = 'heart';
+    titleText = 'My Watchlist';
+  }
+
+  toast.innerHTML = `
+    <div class="toast-icon-wrap ${isAuth ? 'toast-auth' : ''}">
+      <ion-icon name="${iconName}"></ion-icon>
+    </div>
+    <div class="toast-body">
+      <div class="toast-heading">${titleText}</div>
+      <div class="toast-text">${msg}</div>
+    </div>
+  `;
+
   toast.className = 'toast show';
   clearTimeout(window._toastTimer);
   window._toastTimer = setTimeout(() => {
     toast.classList.remove('show');
-  }, 2800);
+  }, 3500);
 }
 
 // Auth Helper
