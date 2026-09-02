@@ -7,7 +7,7 @@ window._MOVIES_DATA = [
     title: "Just Play Dead",
     type: "Movie",
     year: 2026,
-    rating: 6.3,
+    rating: 4.5,
     age: "R",
     duration: "1h 51m",
     genres: [
