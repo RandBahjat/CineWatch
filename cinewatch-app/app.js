@@ -2534,12 +2534,7 @@ if (document.readyState === 'loading') {
   startApp();
 }
 
-// Custom Window Controls (Added at the end)
-if (window.electronAPI) {
-  document.getElementById('winMinBtn')?.addEventListener('click', () => window.electronAPI.windowMinimize());
-  document.getElementById('winMaxBtn')?.addEventListener('click', () => window.electronAPI.windowMaximize());
-  document.getElementById('winCloseBtn')?.addEventListener('click', () => window.electronAPI.windowClose());
-}
+
 
   // Global window exports for HTML onclick handlers
   window.playMovieDirect = playMovieDirect;
