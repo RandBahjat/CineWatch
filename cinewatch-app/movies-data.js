@@ -15,10 +15,10 @@ window._MOVIES_DATA = [
       "Thriller"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/glALx6QaIgw1u4joXsnfHTjWi6D.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/tieojVpH6eW44JQOQEWnf8t4khG.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/7gf2GLNZ6lqbbTRuY9Vvrar0z3k.jpg",
     videoUrl: "1480574",
     overview: "Criminal fake death for insurance money, frame wife's lover; wife plot kill him for real, both race outmaneuver each other.",
-    overviewKurdish: "تاوانبارێک وا دەردەخات کە مردووە بۆ بەدەستهێنانی پارەی بیمە، هاوسەرەکەشی تاوانبار دەکات، بەڵام هاوسەرەکەی پلانی کوشتنی ڕاستەقینەی داناوە، هەردووکیان پێشبڕکێ دەکەن بۆ ئەوەی زاڵ بن بەسەر یەکتریدا.",
+    overviewKurdish:" تاوانبارێک وا دەردەخات کە مردووە بۆ بەدەستهێنانی پارەی بیمە، هاوسەرەکەشی تاوانبار دەکات، بەڵام هاوسەرەکەی پلانی کوشتنی ڕاستەقینەی داناوە، هەردووکیان پێشبڕکێ دەکەن بۆ ئەوەی زاڵ بن بەسەر یەکتریدا.",
     director: "Martin Campbell",
     cast: ["Samuel L. Jackson, Eva Green, María Pedraza, Eoin Macken"],
     trending: true,
@@ -72,7 +72,7 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
-
+  
   {
     title: "Mutiny",
     type: "Movie",
@@ -418,7 +418,7 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
-
+  
   {
     title: "The Dark Knight Rises",
     type: "Movie",
