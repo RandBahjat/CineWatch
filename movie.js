@@ -1959,13 +1959,10 @@ function openDetailsModal(movieId) {
         }
 
         const customYt = extractYt(movie.trailerUrl || movie.trailer || movie.trailerYouTubeId);
-        const hostOrigin = (window.location.protocol === 'http:' || window.location.protocol === 'https:') 
-          ? window.location.origin 
-          : 'https://www.youtube.com';
         const query = encodeURIComponent(`${movie.title} ${movie.year || ''} official trailer`);
         iframe.src = customYt 
-          ? `https://www.youtube.com/embed/${customYt}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${customYt}&iv_load_policy=3&enablejsapi=1&origin=${encodeURIComponent(hostOrigin)}`
-          : `https://www.youtube.com/embed?listType=search&list=${query}&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3&enablejsapi=1&origin=${encodeURIComponent(hostOrigin)}`;
+          ? `https://www.youtube.com/embed/${customYt}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${customYt}&iv_load_policy=3&enablejsapi=1`
+          : `https://www.youtube.com/embed?listType=search&list=${query}&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3&enablejsapi=1`;
         iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
         iframe.referrerPolicy = 'strict-origin-when-cross-origin';
         iframe.style.position = 'absolute';
