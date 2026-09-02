@@ -973,10 +973,34 @@ function openDetail(movieId) {
     // Generate a random match percentage for the UI
     const imdbRating = movie.rating || '8.5';
     
-    // Simulate runtime play till time
+    // Calculate super accurate "Plays until" time based on movie.duration in the code
+    function parseDurationMinutes(dur, isTv) {
+      if (!dur) return isTv ? 45 : 120;
+      if (typeof dur === 'number') return dur;
+      const s = String(dur).trim().toLowerCase();
+      let h = 0, m = 0;
+      const hMatch = s.match(/(\d+)\s*(?:h|hr|hours?)/);
+      if (hMatch) h = parseInt(hMatch[1], 10) || 0;
+      const mMatch = s.match(/(\d+)\s*(?:m|min|mins|minutes?)/);
+      if (mMatch) m = parseInt(mMatch[1], 10) || 0;
+      if (!hMatch && !mMatch) {
+        const rawNum = parseInt(s.replace(/[^0-9]/g, ''), 10);
+        if (!isNaN(rawNum) && rawNum > 0) m = rawNum;
+      }
+      const total = (h * 60) + m;
+      return total > 0 ? total : (isTv ? 45 : 120);
+    }
+
+    const durationMins = parseDurationMinutes(movie.duration, movie.type === 'TV Show' || movie.type === 'Series');
     const now = new Date();
-    now.setHours(now.getHours() + 2);
-    const timeString = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+    const finishTime = new Date(now.getTime() + durationMins * 60 * 1000);
+    
+    let endHours = finishTime.getHours();
+    const endMinutes = String(finishTime.getMinutes()).padStart(2, '0');
+    const ampm = endHours >= 12 ? 'PM' : 'AM';
+    endHours = endHours % 12;
+    endHours = endHours ? endHours : 12;
+    const timeString = `${String(endHours).padStart(2, '0')}:${endMinutes} ${ampm}`;
 
     body.innerHTML = `
       <div class="immersive-topbar">
