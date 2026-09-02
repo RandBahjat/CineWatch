@@ -1108,10 +1108,10 @@ function openDetail(movieId) {
       </button>
     `;
 
-    /* Auto-play trailer after 10 seconds of staying in detail */
+    /* Auto-play trailer after 3 seconds of staying in detail */
     _trailerTimer = setTimeout(() => {
       _startTrailer(hero, movie);
-    }, 10000);
+    }, 3000);
   }
 
   /* ── Body: Top Nav + Bottom Content ── */
