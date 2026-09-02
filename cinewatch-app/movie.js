@@ -1449,7 +1449,9 @@ function renderAvatarHTML(avatarStr, extraClass = "") {
 
 function renderUserBadge() {
   const container = document.getElementById("userProfileContainer");
-  if (!container) return;
+  const sidebarFooter = document.querySelector(".sidebar-footer");
+
+  if (!container && !sidebarFooter) return;
 
   if (state.user) {
     const userAvatar = state.user.avatar || "🍿";
@@ -1468,12 +1470,44 @@ function renderUserBadge() {
     if (currentLang === 'ckb') uploadAvatarText = "وێنەی پڕۆفایل";
     else if (currentLang === 'ar') uploadAvatarText = "تغيير الصورة";
 
-    // Render only the avatar icon button in the navbar
-    container.innerHTML = `
-      <button class="profile-icon-btn" id="profileBadgeToggle" aria-label="My Account">
-        ${renderAvatarHTML(userAvatar, "badge-avatar")}
-      </button>
-    `;
+    if (container) {
+      // Render only the avatar icon button in the navbar
+      container.innerHTML = `
+        <button class="profile-icon-btn" id="profileBadgeToggle" aria-label="My Account">
+          ${renderAvatarHTML(userAvatar, "badge-avatar")}
+        </button>
+      `;
+    }
+
+    if (sidebarFooter && document.getElementById("openAuthBtn")) {
+      sidebarFooter.innerHTML = `
+        <div class="sidebar-user-wrap">
+          <div class="sidebar-user" id="profileBadgeToggleSidebar">
+            <div class="user-avatar">${renderAvatarHTML(userAvatar, "sidebar-avatar")}</div>
+            <div class="user-info">
+              <span class="user-name">${userName}</span>
+              <span class="user-status">CineWatch</span>
+            </div>
+            <ion-icon name="chevron-up-outline" class="user-chevron"></ion-icon>
+          </div>
+          
+          <div class="user-dropdown">
+            <button class="user-dropdown-item" onclick="if(window.switchTab) window.switchTab('settings')">
+              <ion-icon name="settings-outline"></ion-icon> Settings
+            </button>
+            <button class="user-dropdown-item" style="color: var(--danger);" onclick="logout()">
+              <ion-icon name="log-out-outline"></ion-icon> Log Out
+            </button>
+          </div>
+        </div>
+      `;
+    } else if (sidebarFooter && document.querySelector(".sidebar-user-wrap")) {
+       const avatarEl = sidebarFooter.querySelector(".user-avatar");
+       const nameEl = sidebarFooter.querySelector(".user-name");
+       if (avatarEl) avatarEl.innerHTML = renderAvatarHTML(userAvatar, "sidebar-avatar");
+       if (nameEl) nameEl.textContent = userName;
+    }
+
 
     // Create or reuse the side panel
     let panel = document.getElementById("accountSidePanel");
@@ -1696,15 +1730,32 @@ function renderUserBadge() {
     };
 
   } else {
-    container.innerHTML = `
-      <button class="nav-user-icon-btn" id="headerLoginBtn" title="Sign In">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-          <circle cx="12" cy="7" r="4"/>
-        </svg>
-      </button>
-    `;
-    document.getElementById("headerLoginBtn").onclick = () => openAuthModal();
+    if (container) {
+      container.innerHTML = `
+        <button class="nav-user-icon-btn" id="headerLoginBtn" title="Sign In">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </button>
+      `;
+      document.getElementById("headerLoginBtn").onclick = () => openAuthModal();
+    }
+    
+    if (sidebarFooter) {
+      sidebarFooter.innerHTML = `
+        <button class="sidebar-signin-btn" id="openAuthBtn">
+          <span>Sign In</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="animated-login-svg">
+            <path class="login-door" style="transform-origin: 50% 50%" d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+            <path class="login-arrow" d="M14 12h-12" />
+            <path class="login-arrow-bottom" d="M5 15l-3 -3l3 -3" />
+          </svg>
+        </button>
+      `;
+      const authBtn = document.getElementById("openAuthBtn");
+      if (authBtn) authBtn.onclick = () => openAuthModal();
+    }
   }
 }
 
