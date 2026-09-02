@@ -192,13 +192,13 @@ const BROWSE_PAGE_SIZE = 20;
 // ==========================================
 // 2. STATE & STORAGE MANAGEMENT
 // ==========================================
-const KEYS = {
+var KEYS = {
   USER: "cinewatch_user",
   FAVORITES: "cinewatch_favorites",
   CONTINUE: "cinewatch_continue_watching",
 };
 
-const state = {
+var state = {
   user: null,
   favorites: [],
   continueWatching: {},
