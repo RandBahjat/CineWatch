@@ -2086,29 +2086,78 @@ media-video-layout::part(tooltip) {
 
 .toast {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background: rgba(18, 22, 34, 0.95);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid var(--border-subtle);
-  padding: 0.85rem 1.4rem;
-  border-radius: var(--radius-md);
+  top: 4.5rem;
+  right: 1.8rem;
+  background: linear-gradient(135deg, rgba(22, 26, 40, 0.94) 0%, rgba(12, 14, 22, 0.98) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(229, 9, 20, 0.35);
+  border-left: 4px solid #e50914;
+  padding: 0.85rem 1.25rem;
+  border-radius: 14px;
   color: #fff;
-  font-size: 0.92rem;
-  font-weight: 600;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-  z-index: 9999;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7), 0 0 24px rgba(229, 9, 20, 0.2);
+  z-index: 100002;
   opacity: 0;
-  transform: translateY(20px);
-  transition: all var(--transition-smooth);
+  transform: translateX(120%);
+  transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.38s ease;
   pointer-events: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 380px;
 }
 
 .toast.show {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
   pointer-events: auto;
+}
+
+.toast-icon-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(229, 9, 20, 0.15);
+  border: 1px solid rgba(229, 9, 20, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: #e50914;
+  flex-shrink: 0;
+}
+
+.toast-icon-wrap.toast-auth {
+  background: rgba(234, 179, 8, 0.15);
+  border-color: rgba(234, 179, 8, 0.4);
+  color: #eab308;
+}
+
+.toast-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.toast-heading {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #e50914;
+}
+
+.toast-auth .toast-heading,
+.toast-icon-wrap.toast-auth + .toast-body .toast-heading {
+  color: #eab308;
+}
+
+.toast-text {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #f3f4f6;
+  line-height: 1.35;
 }
 
 @media (max-width: 1024px) {
