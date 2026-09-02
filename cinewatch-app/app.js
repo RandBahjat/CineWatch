@@ -1986,27 +1986,54 @@ function startApp() {
     }
   });
 
-  // Theme Pills
+  // Theme Mode Controller
+  function applyThemeMode(selected) {
+    const pills = document.querySelectorAll('.settings-theme-pill');
+    pills.forEach(p => {
+      p.classList.toggle('active', p.getAttribute('data-theme') === selected);
+    });
+
+    if (selected === 'light') {
+      document.documentElement.classList.add('light-mode');
+      document.documentElement.classList.remove('dark');
+    } else if (selected === 'dark') {
+      document.documentElement.classList.remove('light-mode');
+      document.documentElement.classList.add('dark');
+    } else {
+      // System
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.toggle('light-mode', !prefersDark);
+      document.documentElement.classList.toggle('dark', prefersDark);
+    }
+    localStorage.setItem('cinewatch_theme_pref', selected);
+  }
+
+  // OS theme changes listener when in system mode
+  try {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      const current = localStorage.getItem('cinewatch_theme_pref') || 'dark';
+      if (current === 'system') {
+        document.documentElement.classList.toggle('light-mode', !e.matches);
+        document.documentElement.classList.toggle('dark', e.matches);
+      }
+    });
+  } catch(e) {}
+
+  // Theme Pills click
   const themePills = document.querySelectorAll('.settings-theme-pill');
   themePills.forEach(pill => {
     pill.addEventListener('click', () => {
-      themePills.forEach(p => p.classList.remove('active'));
-      pill.classList.add('active');
       const selected = pill.getAttribute('data-theme');
-      if (selected === 'light') {
-        document.documentElement.classList.add('light-mode');
-        document.documentElement.classList.remove('dark');
-      } else if (selected === 'dark') {
-        document.documentElement.classList.remove('light-mode');
-        document.documentElement.classList.add('dark');
-      } else {
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        document.documentElement.classList.toggle('light-mode', !prefersDark);
-        document.documentElement.classList.toggle('dark', prefersDark);
-      }
-      localStorage.setItem('cinewatch_theme_pref', selected);
+      applyThemeMode(selected);
+      showToast(`Switched to ${selected.charAt(0).toUpperCase() + selected.slice(1)} Mode`);
     });
   });
+
+  // Restore saved theme on startup
+  try {
+    const savedTheme = localStorage.getItem('cinewatch_theme_pref') || 'dark';
+    applyThemeMode(savedTheme);
+  } catch(e) {}
 
   // Check for updates
   document.getElementById('pageCheckUpdateBtn')?.addEventListener('click', () => {
