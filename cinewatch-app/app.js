@@ -342,7 +342,13 @@ window.createCardHTML = createCardHTML;
 function renderHome() {
   if (!MOVIES || MOVIES.length === 0) return;
 
-  let heroFeatured = MOVIES.filter(m => FEATURED_TITLES.includes(m.title)).slice(0, 6);
+  const featuredList = (window.FEATURED_TITLES && window.FEATURED_TITLES.length > 0)
+    ? window.FEATURED_TITLES
+    : FEATURED_TITLES;
+  let heroFeatured = featuredList
+    .map(title => MOVIES.find(m => m.title === title))
+    .filter(Boolean)
+    .slice(0, 8);
   if (heroFeatured.length === 0) {
     heroFeatured = MOVIES.slice(0, 6);
   }
@@ -381,9 +387,29 @@ function renderHome() {
   const shelvesContainer = document.getElementById('homeShelves');
   if (!shelvesContainer) return;
 
-  const top10 = TOP_10_TITLES.map(title => MOVIES.find(m => m.title === title)).filter(Boolean);
-  const trendingMovies = MOVIES.filter(m => (!m.type || m.type === 'Movie') && !m.isAnime).slice(0, 15);
-  const trendingSeries = MOVIES.filter(m => (m.type === 'TV Show' || m.type === 'Series') && !m.isAnime).slice(0, 15);
+  const top10List = (window.TOP_10_TRENDING_TODAY && window.TOP_10_TRENDING_TODAY.length > 0)
+    ? window.TOP_10_TRENDING_TODAY
+    : TOP_10_TITLES;
+  const top10 = top10List.map(title => MOVIES.find(m => m.title === title)).filter(Boolean);
+
+  let trendingMovies;
+  if (window.TRENDING_THIS_WEEK_MOVIES && window.TRENDING_THIS_WEEK_MOVIES.length > 0) {
+    trendingMovies = window.TRENDING_THIS_WEEK_MOVIES
+      .map(title => MOVIES.find(m => m.title === title && (!m.type || m.type === 'Movie')))
+      .filter(Boolean);
+  } else {
+    trendingMovies = MOVIES.filter(m => (!m.type || m.type === 'Movie') && !m.isAnime).slice(0, 15);
+  }
+
+  let trendingSeries;
+  if (window.TRENDING_THIS_WEEK_SERIES && window.TRENDING_THIS_WEEK_SERIES.length > 0) {
+    trendingSeries = window.TRENDING_THIS_WEEK_SERIES
+      .map(title => MOVIES.find(m => m.title === title && (m.type === 'TV Show' || m.type === 'Series')))
+      .filter(Boolean);
+  } else {
+    trendingSeries = MOVIES.filter(m => (m.type === 'TV Show' || m.type === 'Series') && !m.isAnime).slice(0, 15);
+  }
+
   const animeHits = MOVIES.filter(m => m.isAnime || m.genres?.includes('Anime')).slice(0, 15);
 
   shelvesContainer.innerHTML = `
