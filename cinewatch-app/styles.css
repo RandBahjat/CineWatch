@@ -620,7 +620,9 @@ select,
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, var(--bg-app) 0%, rgba(6, 7, 10, 0.35) 8%, transparent 25%);
+  background: 
+    linear-gradient(to right, rgba(6, 7, 10, 0.6) 0%, rgba(6, 7, 10, 0.25) 25%, transparent 55%),
+    linear-gradient(to top, var(--bg-app) 0%, rgba(6, 7, 10, 0.35) 8%, transparent 25%);
   z-index: 1;
   pointer-events: none;
 }
@@ -641,7 +643,7 @@ select,
   line-height: 1.1;
   letter-spacing: -0.5px;
   color: #ffffff;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+  text-shadow: none;
 }
 
 .hero-meta-row {
