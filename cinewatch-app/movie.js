@@ -339,6 +339,11 @@ window.addEventListener("cw:firestoreMoviesUpdated", (e) => {
 });
 
 function toggleFavorite(movieId) {
+  if (!state.user) {
+    showToast("Please log into your account to add to Watchlist!");
+    if (typeof openAuthModal === 'function') openAuthModal();
+    return false;
+  }
   const index = state.favorites.indexOf(movieId);
   let added = false;
   if (index > -1) {
@@ -1925,7 +1930,42 @@ function openDetailsModal(movieId) {
   setTimeout(() => {
     window.scrollTo(0, 0);
     if (detailsSection) detailsSection.scrollTo(0, 0);
-    document.getElementById("detailsBg").style.backgroundImage = `url('${movie.backdrop || movie.poster}')`;
+    const detailsBg = document.getElementById("detailsBg");
+    if (detailsBg) {
+      detailsBg.style.backgroundImage = `url('${movie.backdrop || movie.poster}')`;
+      
+      // Cancel previous trailer timer and remove iframe
+      clearTimeout(window._detailsTrailerTimer);
+      const prevTrailer = document.getElementById('detailsTrailerIframe');
+      if (prevTrailer) prevTrailer.remove();
+
+      // Start 10-second trailer background timer
+      window._detailsTrailerTimer = setTimeout(() => {
+        if (state.activeView !== "details") return;
+        const currentBg = document.getElementById("detailsBg");
+        if (!currentBg) return;
+
+        const iframe = document.createElement('iframe');
+        iframe.id = 'detailsTrailerIframe';
+        iframe.className = 'details-trailer-iframe';
+        const query = encodeURIComponent(`${movie.title} ${movie.year || ''} official trailer`);
+        iframe.src = movie.trailerYouTubeId 
+          ? `https://www.youtube-nocookie.com/embed/${movie.trailerYouTubeId}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${movie.trailerYouTubeId}&iv_load_policy=3`
+          : `https://www.youtube-nocookie.com/embed?listType=search&list=${query}&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3`;
+        iframe.allow = 'autoplay; encrypted-media';
+        iframe.style.position = 'absolute';
+        iframe.style.inset = '0';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.style.border = 'none';
+        iframe.style.pointerEvents = 'none';
+        iframe.style.opacity = '0';
+        iframe.style.transition = 'opacity 1.5s ease';
+        iframe.style.zIndex = '1';
+        currentBg.appendChild(iframe);
+        setTimeout(() => { iframe.style.opacity = '0.75'; }, 100);
+      }, 10000);
+    }
     const titleEl = document.getElementById("detailsTitle");
     const ratingEl = document.getElementById("detailsRating");
     if (ratingEl) {
