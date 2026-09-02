@@ -157,6 +157,26 @@ app.whenReady().then(async () => {
       await session.defaultSession.clearStorageData({
         storages: ['serviceworkers', 'cachestorage']
       });
+
+      // Default session level YouTube header injection
+      session.defaultSession.webRequest.onBeforeSendHeaders(ytFilter, (details, callback) => {
+        const requestHeaders = details.requestHeaders;
+        requestHeaders['Referer'] = 'https://www.youtube.com/';
+        requestHeaders['Origin'] = 'https://www.youtube.com';
+        if (requestHeaders['User-Agent']) {
+          requestHeaders['User-Agent'] = requestHeaders['User-Agent']
+            .replace(/Electron\/[0-9.]+\s*/g, '')
+            .replace(/CineWatch\/[0-9.]+\s*/g, '');
+        }
+        callback({ cancel: false, requestHeaders });
+      });
+
+      session.defaultSession.webRequest.onHeadersReceived(ytFilter, (details, callback) => {
+        const responseHeaders = Object.assign({}, details.responseHeaders);
+        delete responseHeaders['x-frame-options'];
+        delete responseHeaders['X-Frame-Options'];
+        callback({ cancel: false, responseHeaders });
+      });
     }
   } catch (e) {}
 
