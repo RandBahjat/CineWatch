@@ -94,7 +94,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
   <script src="./api.js?v=v6" defer></script>
   <script src="./stream-engine.js?v=3" defer></script>
-  <script src="./app.js?v=124" defer></script>
+  <script src="./app.js?v=125" defer></script>
 </head>
 <body>
 
@@ -562,19 +562,8 @@
             </div>
           </div>
 
-          <!-- Right Controls: Server Switch, Next Ep, Subtitles, Speed, PiP, Fullscreen -->
+          <!-- Right Controls: Next Ep, Subtitles, Speed, PiP, Fullscreen -->
           <div class="cw-ctrl-group right">
-            <!-- Server Switcher Menu -->
-            <div class="cw-dropdown-wrap">
-              <button class="cw-ctrl-btn cw-glass-pill-btn" id="serverMenuBtn" title="Switch Streaming Server">
-                <ion-icon name="server-outline"></ion-icon>
-                <span id="serverActiveLabel">Server 1</span>
-              </button>
-              <div class="cw-menu-popover hidden" id="serverMenu">
-                <div class="cw-menu-header">Streaming Server</div>
-                <div class="cw-menu-list" id="serverList"></div>
-              </div>
-            </div>
 
             <!-- Next Episode Button (Visible for Series/Anime) -->
             <button class="cw-ctrl-btn hidden" id="nextEpBtn" title="Next Episode (N)">
