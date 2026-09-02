@@ -3,7 +3,7 @@
  * High-Performance, Instant-Loading Streaming Platform Logic
  */
 
-const FEATURED_TITLES = [
+var FEATURED_TITLES = window.FEATURED_TITLES || [
   "Just Play Dead",
   "The Whisper Man",
   "Grand Theft Auto VI: An Extended Look",
@@ -17,7 +17,7 @@ const FEATURED_TITLES = [
   "The Odyssey"
 ];
 
-const TOP_10_TITLES = [
+var TOP_10_TITLES = window.TOP_10_TRENDING_TODAY || [
   "Just Play Dead",
   "Grand Theft Auto VI: An Extended Look",
   "Motor City",
@@ -31,16 +31,16 @@ const TOP_10_TITLES = [
   "Toy Story 5"
 ];
 
-let MOVIES = [];
-// FIX 4: N+1 â†’ O(1) Map lookup instead of repeated .find() scans
-let _movieMap = new Map();
+var MOVIES = window.MOVIES && window.MOVIES.length ? window.MOVIES : [];
+// FIX 4: N+1 → O(1) Map lookup instead of repeated .find() scans
+var _movieMap = new Map();
 
 // FIX 3: Pagination constants & offsets per view
-const PAGE_SIZE = 40;
-let _pageOffset = { explore: 0, movies: 0, series: 0, anime: 0 };
-let _filteredCache = { explore: [] };
+var PAGE_SIZE = 40;
+var _pageOffset = { explore: 0, movies: 0, series: 0, anime: 0 };
+var _filteredCache = { explore: [] };
 
-let state = {
+var state = {
   currentTab: 'home',
   favorites: new Set(),
   activeType: 'all',
