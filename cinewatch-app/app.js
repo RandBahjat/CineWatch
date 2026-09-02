@@ -1128,46 +1128,21 @@ function playMovieDirect(movieId) {
     nextEpBtn.classList.toggle('hidden', !isTv);
   }
 
-  // Real Multi-Server Streaming Engine
+  // Dedicated VidLink Pro Streaming Engine (Only Server)
   const sNum = movie.season || 1;
   const epNum = movie.episode || 1;
+
+  const vidLinkUrl = isTv
+    ? `https://vidlink.pro/tv/${tmdb}/${sNum}/${epNum}?primaryColor=e50914`
+    : `https://vidlink.pro/movie/${tmdb}?primaryColor=e50914`;
 
   const servers = [
     {
       id: 'vidlink',
-      name: '⚡ Server 1: VidLink Pro (Fast / HD)',
-      url: isTv ? `https://vidlink.pro/tv/${tmdb}/${sNum}/${epNum}?primaryColor=e50914` : `https://vidlink.pro/movie/${tmdb}?primaryColor=e50914`
-    },
-    {
-      id: 'vaplayer',
-      name: '🎬 Server 2: VaPlayer (Netflix HD)',
-      url: isTv ? `https://vaplayer.ru/embed/tv/${tmdb}/${sNum}/${epNum}?skin=netflix&color=e50914` : `https://vaplayer.ru/embed/movie/${tmdb}?skin=netflix&color=e50914`
-    },
-    {
-      id: 'vidsrc-cc',
-      name: '👑 Server 3: VidSrc CC (1080p)',
-      url: isTv ? `https://vidsrc.cc/v2/embed/tv/${tmdb}/${sNum}/${epNum}` : `https://vidsrc.cc/v2/embed/movie/${tmdb}`
-    },
-    {
-      id: 'smashy',
-      name: '🚀 Server 4: SmashyStream',
-      url: isTv ? `https://player.smashystream.com/tv/${tmdb}/${sNum}/${epNum}` : `https://player.smashystream.com/movie/${tmdb}`
-    },
-    {
-      id: 'autoembed',
-      name: '🌟 Server 5: AutoEmbed (Multi-Audio)',
-      url: isTv ? `https://player.autoembed.cc/embed/tv/${tmdb}/${sNum}/${epNum}` : `https://player.autoembed.cc/embed/movie/${tmdb}`
+      name: '⚡ VidLink Pro HD',
+      url: vidLinkUrl
     }
   ];
-
-  if (movie.streamUrl) {
-    servers.unshift({
-      id: 'direct-stream',
-      name: '💎 Direct Master 4K (Vidstack)',
-      isDirect: true,
-      streamUrl: movie.streamUrl
-    });
-  }
 
   function switchSource(srv) {
     const vidstackPlayer = document.getElementById('vidstackPlayer');
@@ -1178,86 +1153,24 @@ function playMovieDirect(movieId) {
     // Never show duplicate custom spinner
     if (playerLoading) playerLoading.classList.add('hidden');
 
-    // Case 1: Direct Master Video Stream (HLS / MP4) -> Use Vidstack
-    if (srv.isDirect || srv.streamUrl) {
-      if (iframeEl) {
-        iframeEl.src = '';
-        iframeEl.classList.add('hidden');
-      }
-      if (vidstackPlayer) {
-        vidstackPlayer.classList.remove('hidden');
-        vidstackPlayer.title = `${movie.title} (${movie.year || '2026'})`;
-        vidstackPlayer.pause();
-        vidstackPlayer.src = srv.streamUrl;
-        vidstackPlayer.play().catch(() => {});
-      }
-      if (streamTypeBadge) streamTypeBadge.textContent = 'DIRECT 4K';
-      return;
+    if (vidstackPlayer) {
+      vidstackPlayer.pause();
+      vidstackPlayer.src = '';
+      vidstackPlayer.classList.add('hidden');
     }
 
-    // Case 2: Real TMDB Movie/Series Server (VidLink / VaPlayer / VidSrc / Smashy / AutoEmbed)
-    if (srv.url) {
-      if (vidstackPlayer) {
-        vidstackPlayer.pause();
-        vidstackPlayer.src = '';
-        vidstackPlayer.classList.add('hidden');
-      }
-      if (iframeEl) {
-        iframeEl.classList.remove('hidden');
-        iframeEl.src = srv.url;
-      }
-      if (streamTypeBadge) streamTypeBadge.textContent = srv.name.split(':')[0].replace(/[^a-zA-Z0-9 ]/g, '').trim() || 'STREAM';
+    if (iframeEl) {
+      iframeEl.classList.remove('hidden');
+      iframeEl.src = srv ? srv.url : vidLinkUrl;
     }
+
+    if (streamTypeBadge) streamTypeBadge.textContent = 'VIDLINK PRO';
   }
 
-  // Populate bottom dock server menu
-  const serverList = document.getElementById('serverList');
+  // Populate server label
   const serverActiveLabel = document.getElementById('serverActiveLabel');
-  const serverMenuBtn = document.getElementById('serverMenuBtn');
-  const serverMenu = document.getElementById('serverMenu');
-
-  if (serverList) {
-    serverList.innerHTML = servers.map((s, idx) => `
-      <button class="cw-menu-item ${idx === 0 ? 'active' : ''}" data-srv-id="${s.id}">
-        <span>${s.name}</span>
-      </button>
-    `).join('');
-
-    serverList.querySelectorAll('.cw-menu-item').forEach(item => {
-      item.onclick = (e) => {
-        e.stopPropagation();
-        const srv = servers.find(s => s.id === item.dataset.srvId);
-        if (srv) {
-          switchSource(srv);
-          if (serverActiveLabel) serverActiveLabel.textContent = srv.name.split(':')[0].replace(/[^a-zA-Z0-9 ]/g, '').trim();
-          serverList.querySelectorAll('.cw-menu-item').forEach(i => i.classList.remove('active'));
-          item.classList.add('active');
-          serverMenu?.classList.add('hidden');
-          showToast(`Switched to ${srv.name}`);
-        }
-      };
-    });
-  }
-
-  if (serverActiveLabel && servers[0]) {
-    serverActiveLabel.textContent = servers[0].name.split(':')[0].replace(/[^a-zA-Z0-9 ]/g, '').trim();
-  }
-
-  if (serverMenuBtn && serverMenu) {
-    serverMenuBtn.onclick = (e) => {
-      e.stopPropagation();
-      serverMenu.classList.toggle('hidden');
-      document.getElementById('speedMenu')?.classList.add('hidden');
-      document.getElementById('subtitlesMenu')?.classList.add('hidden');
-    };
-  }
-
-  if (serverSelect) {
-    serverSelect.innerHTML = servers.map(s => `<option value="${s.id}">${s.name}</option>`).join('');
-    serverSelect.onchange = () => {
-      const selected = servers.find(s => s.id === serverSelect.value);
-      if (selected) switchSource(selected);
-    };
+  if (serverActiveLabel) {
+    serverActiveLabel.textContent = 'VidLink Pro';
   }
 
   // Setup Player Controls & Listeners
