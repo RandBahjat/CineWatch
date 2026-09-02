@@ -82,7 +82,15 @@ process.on('unhandledRejection', (reason) => {
   console.error('CineWatch Unhandled Rejection:', reason);
 });
 
-app.whenReady().then(() => {
+app.whenReady().then(async () => {
+  try {
+    if (session && session.defaultSession) {
+      await session.defaultSession.clearStorageData({
+        storages: ['serviceworkers', 'cachestorage']
+      });
+    }
+  } catch (e) {}
+
   createWindow();
   
   // Disable automatic downloading — the user must choose to update
