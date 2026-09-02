@@ -1128,111 +1128,86 @@ function playMovieDirect(movieId) {
     nextEpBtn.classList.toggle('hidden', !isTv);
   }
 
-  // Single Unified Player Engine: Vidstack Native 4K Player
+  // Real Multi-Server Streaming Engine
+  const sNum = movie.season || 1;
+  const epNum = movie.episode || 1;
+
   const servers = [
-    { id: 'vidstack-direct', name: '⚡ Vidstack Native Engine (Auto TMDB 4K)' }
+    {
+      id: 'vidlink',
+      name: '⚡ Server 1: VidLink Pro (Fast / HD)',
+      url: isTv ? `https://vidlink.pro/tv/${tmdb}/${sNum}/${epNum}?primaryColor=e50914` : `https://vidlink.pro/movie/${tmdb}?primaryColor=e50914`
+    },
+    {
+      id: 'vaplayer',
+      name: '🎬 Server 2: VaPlayer (Netflix HD)',
+      url: isTv ? `https://vaplayer.ru/embed/tv/${tmdb}/${sNum}/${epNum}?skin=netflix&color=e50914` : `https://vaplayer.ru/embed/movie/${tmdb}?skin=netflix&color=e50914`
+    },
+    {
+      id: 'vidsrc-cc',
+      name: '👑 Server 3: VidSrc CC (1080p)',
+      url: isTv ? `https://vidsrc.cc/v2/embed/tv/${tmdb}/${sNum}/${epNum}` : `https://vidsrc.cc/v2/embed/movie/${tmdb}`
+    },
+    {
+      id: 'smashy',
+      name: '🚀 Server 4: SmashyStream',
+      url: isTv ? `https://player.smashystream.com/tv/${tmdb}/${sNum}/${epNum}` : `https://player.smashystream.com/movie/${tmdb}`
+    },
+    {
+      id: 'autoembed',
+      name: '🌟 Server 5: AutoEmbed (Multi-Audio)',
+      url: isTv ? `https://player.autoembed.cc/embed/tv/${tmdb}/${sNum}/${epNum}` : `https://player.autoembed.cc/embed/movie/${tmdb}`
+    }
   ];
 
-  async function switchSource(srv) {
-    const playerLoading = document.getElementById('playerLoading');
-    const playerControls = document.getElementById('playerControls');
-    const centerPlayBadge = document.getElementById('centerPlayBadge');
-    const seekLeftZone = document.getElementById('seekLeftZone');
-    const seekRightZone = document.getElementById('seekRightZone');
-    
-    if (playerLoading) playerLoading.classList.remove('hidden');
+  if (movie.streamUrl) {
+    servers.unshift({
+      id: 'direct-stream',
+      name: '💎 Direct Master 4K (Vidstack)',
+      isDirect: true,
+      streamUrl: movie.streamUrl
+    });
+  }
 
-    // Hide Custom Legacy Controls - Rely entirely on Vidstack's `<media-video-layout>`
-    if (playerControls) playerControls.classList.add('hidden');
-    if (centerPlayBadge) centerPlayBadge.classList.add('hidden');
-    if (seekLeftZone) seekLeftZone.classList.add('hidden');
-    if (seekRightZone) seekRightZone.classList.add('hidden');
-    
-    if (iframeEl) { iframeEl.src = ''; iframeEl.classList.add('hidden'); }
-
+  function switchSource(srv) {
     const vidstackPlayer = document.getElementById('vidstackPlayer');
-    const vidstackPoster = document.getElementById('vidstackPoster');
-    
-    // Resolve Real Stream from TMDB via Stream Engine
-    // Fallback: If no stream exists (e.g. unreleased movie), play a YouTube trailer!
-    // We use the YouTube ID provided by the user (or any trailer ID)
-    let targetUrl = `youtube/_cMxraX_5RE`; 
-    
-    if (window.cwStreamEngine) {
-      try {
-        const streamData = await window.cwStreamEngine.getDirectStream(movie);
-        if (streamData && streamData.streamUrl) {
-          targetUrl = streamData.streamUrl;
-          if (streamTypeBadge) streamTypeBadge.textContent = streamData.provider || 'VIDSTACK TMDB';
-        } else {
-          if (streamTypeBadge) streamTypeBadge.textContent = 'YOUTUBE TRAILER';
-        }
-      } catch (e) {
-        console.warn('Stream resolution failed:', e);
+    const iframeEl = document.getElementById('iframeEl');
+    const streamTypeBadge = document.getElementById('streamTypeBadge');
+    const playerLoading = document.getElementById('playerLoading');
+
+    // Never show duplicate custom spinner
+    if (playerLoading) playerLoading.classList.add('hidden');
+
+    // Case 1: Direct Master Video Stream (HLS / MP4) -> Use Vidstack
+    if (srv.isDirect || srv.streamUrl) {
+      if (iframeEl) {
+        iframeEl.src = '';
+        iframeEl.classList.add('hidden');
       }
-    } else if (srv.streamUrl || movie.streamUrl) {
-      targetUrl = srv.streamUrl || movie.streamUrl;
-    } else if (movie.trailerYouTubeId) {
-      targetUrl = `youtube/${movie.trailerYouTubeId}`;
-      if (streamTypeBadge) streamTypeBadge.textContent = 'YOUTUBE TRAILER';
+      if (vidstackPlayer) {
+        vidstackPlayer.classList.remove('hidden');
+        vidstackPlayer.title = `${movie.title} (${movie.year || '2026'})`;
+        vidstackPlayer.pause();
+        vidstackPlayer.src = srv.streamUrl;
+        vidstackPlayer.play().catch(() => {});
+      }
+      if (streamTypeBadge) streamTypeBadge.textContent = 'DIRECT 4K';
+      return;
     }
 
-    if (vidstackPlayer) {
-      vidstackPlayer.title = `${movie.title} (${movie.year || '2026'})`;
-      if (vidstackPoster) vidstackPoster.src = movie.backdrop || movie.poster || '';
-      
-      // Plyr Layout Configuration
-      const plyrLayout = document.querySelector('media-plyr-layout');
-      if (plyrLayout) {
-        // You can populate this dictionary with Spanish or Kurdish translations
-        plyrLayout.translations = {
-          'Play': 'Play',
-          'Pause': 'Pause',
-          'Settings': 'Settings',
-          'Enter Fullscreen': 'Fullscreen',
-          'Exit Fullscreen': 'Exit Fullscreen',
-          'Speed': 'Speed',
-          'Quality': 'Quality'
-        };
+    // Case 2: Real TMDB Movie/Series Server (VidLink / VaPlayer / VidSrc / Smashy / AutoEmbed)
+    if (srv.url) {
+      if (vidstackPlayer) {
+        vidstackPlayer.pause();
+        vidstackPlayer.src = '';
+        vidstackPlayer.classList.add('hidden');
       }
-
-      // Stop old playback cleanly
-      vidstackPlayer.pause();
-      
-      // Wire up YouTube Provider Configuration
-      vidstackPlayer.addEventListener('provider-change', (event) => {
-        const provider = event.detail;
-        // Check if the provider is YouTube based on type
-        if (provider?.type === 'youtube') {
-          // Enable cookies for YouTube provider as requested
-          provider.cookies = true;
-        }
-      });
-
-      vidstackPlayer.src = targetUrl;
-      
-      vidstackPlayer.play().catch(e => console.warn('Vidstack play error:', e));
-
-      // Vidstack Autoplay Lifecycle
-      vidstackPlayer.addEventListener('autoplay', (event) => {
-        playerLoading?.classList.add('hidden');
-      });
-
-      vidstackPlayer.addEventListener('autoplay-fail', (event) => {
-        console.warn('Vidstack autoplay prevented:', event.detail);
-        playerLoading?.classList.add('hidden');
-      });
-      
-      // Also listen to standard playing event
-      vidstackPlayer.addEventListener('playing', () => {
-        playerLoading?.classList.add('hidden');
-      });
-      
-      // Auto clear spinner after 3 seconds as a hard fallback
-      setTimeout(() => playerLoading?.classList.add('hidden'), 3000);
+      if (iframeEl) {
+        iframeEl.classList.remove('hidden');
+        iframeEl.src = srv.url;
+      }
+      if (streamTypeBadge) streamTypeBadge.textContent = srv.name.split(':')[0].replace(/[^a-zA-Z0-9 ]/g, '').trim() || 'STREAM';
     }
-
-    if (streamTypeBadge) streamTypeBadge.textContent = 'VIDSTACK TMDB';
   }
 
   // Populate bottom dock server menu
@@ -1264,6 +1239,10 @@ function playMovieDirect(movieId) {
     });
   }
 
+  if (serverActiveLabel && servers[0]) {
+    serverActiveLabel.textContent = servers[0].name.split(':')[0].replace(/[^a-zA-Z0-9 ]/g, '').trim();
+  }
+
   if (serverMenuBtn && serverMenu) {
     serverMenuBtn.onclick = (e) => {
       e.stopPropagation();
@@ -1279,43 +1258,6 @@ function playMovieDirect(movieId) {
       const selected = servers.find(s => s.id === serverSelect.value);
       if (selected) switchSource(selected);
     };
-  }
-
-  // Attempt Direct Stream Extraction (Consumet / FlixHQ Raw HLS)
-  if (window.cwStreamEngine) {
-    window.cwStreamEngine.getDirectStream(movie).then(directRes => {
-      if (directRes && directRes.streamUrl) {
-        servers.unshift({
-          id: 'native-extracted',
-          name: `🎬 ${directRes.provider || 'Direct 4K Stream'}`,
-          isDirect: true,
-          streamUrl: directRes.streamUrl,
-          subtitles: directRes.subtitles
-        });
-        switchSource(servers[0]);
-        if (serverActiveLabel) serverActiveLabel.textContent = 'Direct 4K';
-        if (serverList) {
-          serverList.innerHTML = servers.map((s, idx) => `
-            <button class="cw-menu-item ${idx === 0 ? 'active' : ''}" data-srv-id="${s.id}">
-              <span>${s.name}</span>
-            </button>
-          `).join('');
-          serverList.querySelectorAll('.cw-menu-item').forEach(item => {
-            item.onclick = (e) => {
-              e.stopPropagation();
-              const srv = servers.find(s => s.id === item.dataset.srvId);
-              if (srv) {
-                switchSource(srv);
-                if (serverActiveLabel) serverActiveLabel.textContent = srv.name.split(':')[0].replace(/[^a-zA-Z0-9 ]/g, '').trim();
-                serverList.querySelectorAll('.cw-menu-item').forEach(i => i.classList.remove('active'));
-                item.classList.add('active');
-                serverMenu?.classList.add('hidden');
-              }
-            };
-          });
-        }
-      }
-    }).catch(() => {});
   }
 
   // Setup Player Controls & Listeners
