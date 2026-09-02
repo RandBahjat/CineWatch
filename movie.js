@@ -339,6 +339,11 @@ window.addEventListener("cw:firestoreMoviesUpdated", (e) => {
 });
 
 function toggleFavorite(movieId) {
+  if (!state.user) {
+    showToast("Please log into your account to add to Watchlist!");
+    if (typeof openAuthModal === 'function') openAuthModal();
+    return false;
+  }
   const index = state.favorites.indexOf(movieId);
   let added = false;
   if (index > -1) {
