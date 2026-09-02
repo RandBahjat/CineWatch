@@ -1682,7 +1682,9 @@ media-video-layout::part(tooltip) {
 .immersive-gradient {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(6, 7, 10, 0.7) 0%, rgba(6, 7, 10, 0.15) 15%, transparent 35%);
+  background: 
+    linear-gradient(to right, rgba(6, 7, 10, 0.65) 0%, rgba(6, 7, 10, 0.25) 25%, transparent 55%),
+    linear-gradient(to top, rgba(6, 7, 10, 0.7) 0%, rgba(6, 7, 10, 0.15) 15%, transparent 35%);
   pointer-events: none;
 }
 
