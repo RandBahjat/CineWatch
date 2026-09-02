@@ -1153,6 +1153,16 @@ function playMovieDirect(movieId) {
     // Never show duplicate custom spinner
     if (playerLoading) playerLoading.classList.add('hidden');
 
+    const playerControls = document.getElementById('playerControls');
+    const centerPlayBadge = document.getElementById('centerPlayBadge');
+    const seekLeftZone = document.getElementById('seekLeftZone');
+    const seekRightZone = document.getElementById('seekRightZone');
+
+    if (playerControls) playerControls.classList.add('hidden');
+    if (centerPlayBadge) centerPlayBadge.classList.add('hidden');
+    if (seekLeftZone) seekLeftZone.classList.add('hidden');
+    if (seekRightZone) seekRightZone.classList.add('hidden');
+
     if (vidstackPlayer) {
       vidstackPlayer.pause();
       vidstackPlayer.src = '';
