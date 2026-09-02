@@ -2,6 +2,9 @@ const { app, BrowserWindow, shell, dialog, ipcMain } = require('electron');
 const path = require('path');
 const { autoUpdater } = require('electron-updater');
 
+// Disable hardware acceleration to eliminate Windows GPU compositing crashes (0xC0000005 black screen)
+app.disableHardwareAcceleration();
+
 let mainWindow;
 
 function createWindow() {
