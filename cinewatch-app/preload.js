@@ -4,5 +4,6 @@ contextBridge.exposeInMainWorld('electronAPI', {
   windowMinimize: () => ipcRenderer.send('window-minimize'),
   windowMaximize: () => ipcRenderer.send('window-maximize'),
   windowClose: () => ipcRenderer.send('window-close'),
-  toggleFullscreen: () => ipcRenderer.send('window-toggle-fullscreen')
+  toggleFullscreen: () => ipcRenderer.send('window-toggle-fullscreen'),
+  onWindowStateChange: (callback) => ipcRenderer.on('window-state-changed', (event, state) => callback(state))
 });
