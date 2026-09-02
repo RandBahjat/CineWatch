@@ -1147,16 +1147,23 @@ function renderBrowsePagination(paginationId, currentPage, totalPages, onPageCha
 
 /** Get filtered list for movies section */
 function getMoviesList() {
-  return MOVIES.filter((m) => m.type === "Movie" || (!m.type && !m.seasons));
+  return MOVIES.filter((m) => {
+    const isAnime = Boolean(m.isAnime || m.type === "Anime" || (m.genres && m.genres.includes("Anime")));
+    const isSeries = Boolean(m.type === "TV Show" || m.type === "Series" || (Array.isArray(m.seasons) && m.seasons.length > 0));
+    return !isAnime && !isSeries && (m.type === "Movie" || !m.type);
+  });
 }
 
 /** Get filtered list for series section */
 function getSeriesList() {
-  return MOVIES.filter((m) => !m.isAnime && (m.type === "TV Show" || m.type === "Series" || (m.seasons && m.seasons.length > 0)));
+  return MOVIES.filter((m) => {
+    const isAnime = Boolean(m.isAnime || m.type === "Anime" || (m.genres && m.genres.includes("Anime")));
+    return !isAnime && (m.type === "TV Show" || m.type === "Series" || (Array.isArray(m.seasons) && m.seasons.length > 0));
+  });
 }
 
 function getAnimeList() {
-  return MOVIES.filter((m) => m.isAnime || m.type === "Anime" || (m.genres && m.genres.includes("Anime")) || (m.genres && m.genres.includes("Animation") && (m.origin_country && (m.origin_country.includes("JP") || m.origin_country.includes("Japan")))));
+  return MOVIES.filter((m) => m.isAnime || m.type === "Anime" || (m.genres && m.genres.includes("Anime")));
 }
 
 /** Apply the active genre filter to a list */
