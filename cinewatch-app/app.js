@@ -551,22 +551,17 @@ function renderHeroDots(count) {
   const pad = (n) => String(n).padStart(2, '0');
   
   dotsEl.innerHTML = `
-    <button class="hero-nav-arrow" onclick="jumpHeroSlide(state.heroIndex - 1)" aria-label="Previous Slide" title="Previous Slide">
-      <ion-icon name="chevron-back-outline"></ion-icon>
-    </button>
     <div class="hero-dots-track">
       ${Array.from({ length: count }, (_, i) =>
         `<button class="hero-dot ${i === state.heroIndex ? 'active' : ''}" onclick="jumpHeroSlide(${i})" aria-label="Go to slide ${i + 1}"></button>`
       ).join('')}
     </div>
-    <div class="hero-page-counter">
+    <div class="hero-dots-divider"></div>
+    <div class="hero-page-counter" onclick="jumpHeroSlide(state.heroIndex + 1)" title="Next Slide">
       <span class="hero-cur-num" id="heroCurNum">${pad(state.heroIndex + 1)}</span>
       <span class="hero-sep">/</span>
       <span class="hero-total-num" id="heroTotalNum">${pad(count)}</span>
     </div>
-    <button class="hero-nav-arrow" onclick="jumpHeroSlide(state.heroIndex + 1)" aria-label="Next Slide" title="Next Slide">
-      <ion-icon name="chevron-forward-outline"></ion-icon>
-    </button>
   `;
 }
 
