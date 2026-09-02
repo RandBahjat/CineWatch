@@ -1609,7 +1609,13 @@ function closePlayer() {
   const playerModal = document.getElementById('playerModal');
   const iframeEl = document.getElementById('iframeEl');
   const videoEl = document.getElementById('videoEl');
+  const vidstackPlayer = document.getElementById('vidstackPlayer');
 
+  if (vidstackPlayer) {
+    vidstackPlayer.pause();
+    vidstackPlayer.src = '';
+    vidstackPlayer.classList.add('hidden');
+  }
   if (_cwPlayerState.hlsInstance) {
     _cwPlayerState.hlsInstance.destroy();
     _cwPlayerState.hlsInstance = null;
@@ -1618,7 +1624,10 @@ function closePlayer() {
     videoEl.pause();
     videoEl.src = '';
   }
-  if (iframeEl) iframeEl.src = '';
+  if (iframeEl) {
+    iframeEl.src = '';
+    iframeEl.classList.add('hidden');
+  }
 
   playerModal?.classList.add('hidden');
 }
