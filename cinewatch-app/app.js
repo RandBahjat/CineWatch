@@ -6,33 +6,37 @@
  * High-Performance, Instant-Loading Streaming Platform Logic
  */
 
-var FEATURED_TITLES = window.FEATURED_TITLES || [
-  "Just Play Dead",
-  "The Whisper Man",
-  "Grand Theft Auto VI: An Extended Look",
-  "Mousetrap",
-  "Batman: Knightfall Part 1: Knightfall",
-  "Mutiny",
-  "Reacher",
-  "Lanterns",
-  "Lioness",
-  "Spider-Man: Brand New Day",
-  "The Odyssey"
-];
+var APP_FEATURED = (typeof window.FEATURED_TITLES !== 'undefined' && window.FEATURED_TITLES.length > 0)
+  ? window.FEATURED_TITLES
+  : [
+    "Just Play Dead",
+    "The Whisper Man",
+    "Grand Theft Auto VI: An Extended Look",
+    "Mousetrap",
+    "Batman: Knightfall Part 1: Knightfall",
+    "Mutiny",
+    "Reacher",
+    "Lanterns",
+    "Lioness",
+    "Spider-Man: Brand New Day",
+    "The Odyssey"
+  ];
 
-var TOP_10_TITLES = window.TOP_10_TRENDING_TODAY || [
-  "Just Play Dead",
-  "Grand Theft Auto VI: An Extended Look",
-  "Motor City",
-  "Mutiny",
-  "Batman: Knightfall Part 1: Knightfall",
-  "Reacher",
-  "The Last Sunrise",
-  "Spider-Man: Brand New Day",
-  "Lanterns",
-  "The Odyssey",
-  "Toy Story 5"
-];
+var APP_TOP_10 = (typeof window.TOP_10_TRENDING_TODAY !== 'undefined' && window.TOP_10_TRENDING_TODAY.length > 0)
+  ? window.TOP_10_TRENDING_TODAY
+  : [
+    "Just Play Dead",
+    "Grand Theft Auto VI: An Extended Look",
+    "Motor City",
+    "Mutiny",
+    "Batman: Knightfall Part 1: Knightfall",
+    "Reacher",
+    "The Last Sunrise",
+    "Spider-Man: Brand New Day",
+    "Lanterns",
+    "The Odyssey",
+    "Toy Story 5"
+  ];
 
 var MOVIES = window.MOVIES && window.MOVIES.length ? window.MOVIES : [];
 // FIX 4: N+1 → O(1) Map lookup instead of repeated .find() scans
