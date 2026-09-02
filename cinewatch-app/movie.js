@@ -4121,38 +4121,41 @@ function bindEventListeners() {
 
 /**
  * Toggle fullscreen for the video container.
- * Works for both the native <video> player and iframe embeds.
+ * Works for both the native <video> player, iframe embeds, and standalone app.
  */
 function toggleFullscreen() {
-  // Use the outermost modal overlay so the Fullscreen API works correctly.
-  // Requesting fullscreen on an inner child of a position:fixed element
-  // causes browsers to silently reject the request.
-  const fsTarget =
-    document.getElementById("videoModal") ||
-    document.querySelector(".video-container");
+  if (window.electronAPI && typeof window.electronAPI.toggleFullscreen === "function") {
+    window.electronAPI.toggleFullscreen();
+  }
 
-  const isFullscreen =
+  const isFullscreen = !!(
     document.fullscreenElement ||
     document.webkitFullscreenElement ||
-    document.msFullscreenElement;
+    document.msFullscreenElement
+  );
+
+  const fsTarget =
+    document.getElementById("playerModal") ||
+    document.getElementById("cwPlayerShell") ||
+    document.getElementById("videoModal") ||
+    document.querySelector(".video-container") ||
+    document.documentElement;
 
   if (!isFullscreen) {
-    if (fsTarget.requestFullscreen) {
-      fsTarget.requestFullscreen().catch((err) =>
-        console.error("Fullscreen error:", err)
-      );
-    } else if (fsTarget.webkitRequestFullscreen) {
+    if (fsTarget && fsTarget.requestFullscreen) {
+      fsTarget.requestFullscreen().catch(() => {
+        document.documentElement.requestFullscreen().catch(() => {});
+      });
+    } else if (fsTarget && fsTarget.webkitRequestFullscreen) {
       fsTarget.webkitRequestFullscreen();
-    } else if (fsTarget.msRequestFullscreen) {
-      fsTarget.msRequestFullscreen();
+    } else if (document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen().catch(() => {});
     }
   } else {
     if (document.exitFullscreen) {
-      document.exitFullscreen();
+      document.exitFullscreen().catch(() => {});
     } else if (document.webkitExitFullscreen) {
       document.webkitExitFullscreen();
-    } else if (document.msExitFullscreen) {
-      document.msExitFullscreen();
     }
   }
 }
@@ -4167,7 +4170,12 @@ function updateFullscreenIcon() {
 
   const fsBtn = document.getElementById("fullscreenBtn");
   if (fsBtn) {
-    fsBtn.innerHTML = `<ion-icon name="${isFs ? "contract-outline" : "expand-outline"}"></ion-icon>`;
+    const icon = fsBtn.querySelector("ion-icon") || document.getElementById("fullscreenIcon");
+    if (icon) {
+      icon.setAttribute("name", isFs ? "contract-outline" : "expand-outline");
+    } else {
+      fsBtn.innerHTML = `<ion-icon name="${isFs ? "contract-outline" : "expand-outline"}"></ion-icon>`;
+    }
   }
 }
 

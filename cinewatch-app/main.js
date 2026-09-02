@@ -42,6 +42,12 @@ function createWindow() {
     const win = BrowserWindow.fromWebContents(event.sender) || mainWindow;
     if (win) win.close();
   });
+  ipcMain.on('window-toggle-fullscreen', (event) => {
+    const win = BrowserWindow.fromWebContents(event.sender) || mainWindow;
+    if (win) {
+      win.setFullScreen(!win.isFullScreen());
+    }
+  });
 
   // Enable F12 and Ctrl+Shift+I to toggle DevTools
   mainWindow.webContents.on('before-input-event', (event, input) => {

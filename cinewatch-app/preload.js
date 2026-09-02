@@ -3,5 +3,6 @@ const { contextBridge, ipcRenderer } = require('electron');
 contextBridge.exposeInMainWorld('electronAPI', {
   windowMinimize: () => ipcRenderer.send('window-minimize'),
   windowMaximize: () => ipcRenderer.send('window-maximize'),
-  windowClose: () => ipcRenderer.send('window-close')
+  windowClose: () => ipcRenderer.send('window-close'),
+  toggleFullscreen: () => ipcRenderer.send('window-toggle-fullscreen')
 });

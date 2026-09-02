@@ -1565,14 +1565,22 @@ function initPlayerControllers() {
 
   // Fullscreen
   if (fullscreenBtn) {
-    fullscreenBtn.onclick = () => {
-      const shell = document.getElementById('cwPlayerShell');
-      if (!document.fullscreenElement) {
-        shell?.requestFullscreen().catch(() => {});
-        document.getElementById('fullscreenIcon')?.setAttribute('name', 'contract-outline');
+    fullscreenBtn.onclick = (e) => {
+      e?.preventDefault();
+      if (typeof toggleFullscreen === 'function') {
+        toggleFullscreen();
       } else {
-        document.exitFullscreen().catch(() => {});
-        document.getElementById('fullscreenIcon')?.setAttribute('name', 'expand-outline');
+        if (window.electronAPI && typeof window.electronAPI.toggleFullscreen === 'function') {
+          window.electronAPI.toggleFullscreen();
+        }
+        const target = document.getElementById('playerModal') || document.getElementById('cwPlayerShell') || document.documentElement;
+        if (!document.fullscreenElement) {
+          target.requestFullscreen().catch(() => document.documentElement.requestFullscreen().catch(() => {}));
+          document.getElementById('fullscreenIcon')?.setAttribute('name', 'contract-outline');
+        } else {
+          document.exitFullscreen().catch(() => {});
+          document.getElementById('fullscreenIcon')?.setAttribute('name', 'expand-outline');
+        }
       }
     };
   }
