@@ -747,18 +747,33 @@ function renderExplore() {
   filterResults();
 }
 
+function isAnimeItem(m) {
+  return Boolean(m.isAnime || m.type === 'Anime' || (Array.isArray(m.genres) && m.genres.includes('Anime')));
+}
+
+function isSeriesItem(m) {
+  if (isAnimeItem(m)) return false;
+  return Boolean(m.type === 'TV Show' || m.type === 'Series' || (Array.isArray(m.seasons) && m.seasons.length > 0));
+}
+
+function isMovieItem(m) {
+  if (isAnimeItem(m)) return false;
+  if (isSeriesItem(m)) return false;
+  return Boolean(!m.type || m.type === 'Movie');
+}
+
 function filterResults() {
   const q = document.getElementById('searchInput')?.value.toLowerCase().trim() || '';
   const grid = document.getElementById('resultsGrid');
   const empty = document.getElementById('exploreEmpty');
   const countEl = document.getElementById('exploreCount');
 
-  // FIX 5: filtering is synchronous but rendering is async (no UI freeze)
+  // FIX: Accurate, clean classification of Movies, Series, and Anime
   let filtered = MOVIES.filter(m => {
     if (state.activeType !== 'all') {
-      if (state.activeType === 'Anime' && !m.isAnime && !m.genres?.includes('Anime')) return false;
-      if (state.activeType === 'Movie' && (m.type === 'TV Show' || m.type === 'Series' || m.seasons)) return false;
-      if (state.activeType === 'TV Show' && m.type !== 'TV Show' && m.type !== 'Series' && !m.seasons) return false;
+      if (state.activeType === 'Anime' && !isAnimeItem(m)) return false;
+      if (state.activeType === 'Movie' && !isMovieItem(m)) return false;
+      if (state.activeType === 'TV Show' && !isSeriesItem(m)) return false;
     }
     if (state.activeGenre !== 'all') {
       const gStr = Array.isArray(m.genres) ? m.genres.join(' ') : String(m.genres || '');
@@ -773,7 +788,7 @@ function filterResults() {
 
   if (countEl) countEl.textContent = `${filtered.length} Titles`;
 
-  // FIX 3: Paginated â€” only render PAGE_SIZE items, add Load More if needed
+  // FIX 3: Paginated — only render PAGE_SIZE items, add Load More if needed
   _filteredCache.explore = filtered;
   _pageOffset.explore = 0;
 
@@ -785,7 +800,7 @@ function filterResults() {
   }
   empty?.classList.add('hidden');
 
-  // FIX 5: async render â€” no main-thread blocking
+  // FIX 5: async render — no main-thread blocking
   renderCardsAsync(filtered, grid, 0, false);
   _renderLoadMoreBtn('resultsGrid', 'explore', filtered);
 }
@@ -818,11 +833,11 @@ function _renderLoadMoreBtn(gridId, cacheKey, items) {
   grid.insertAdjacentElement('afterend', btn);
 }
 
-// 3. Movies Tab â€” FIX 3+5: Async paginated render
+// 3. Movies Tab — FIX 3+5: Async paginated render
 function renderMoviesTab() {
   const grid = document.getElementById('moviesGrid');
   const countEl = document.getElementById('moviesCount');
-  const movies = MOVIES.filter(m => (!m.type || m.type === 'Movie') && !m.isAnime);
+  const movies = MOVIES.filter(isMovieItem);
   if (countEl) countEl.textContent = `${movies.length} Movies`;
   _pageOffset.movies = 0;
   renderCardsAsync(movies, grid, 0, false);
@@ -831,11 +846,11 @@ function renderMoviesTab() {
   _filteredCache.movies = movies;
 }
 
-// 4. Series Tab â€” FIX 3+5: Async paginated render
+// 4. Series Tab — FIX 3+5: Async paginated render
 function renderSeriesTab() {
   const grid = document.getElementById('seriesGrid');
   const countEl = document.getElementById('seriesCount');
-  const series = MOVIES.filter(m => m.type === 'TV Show' || m.type === 'Series' || m.seasons);
+  const series = MOVIES.filter(isSeriesItem);
   if (countEl) countEl.textContent = `${series.length} Series`;
   _pageOffset.series = 0;
   renderCardsAsync(series, grid, 0, false);
@@ -843,11 +858,11 @@ function renderSeriesTab() {
   _filteredCache.series = series;
 }
 
-// 5. Anime Tab â€” FIX 3+5: Async paginated render
+// 5. Anime Tab — FIX 3+5: Async paginated render
 function renderAnimeTab() {
   const grid = document.getElementById('animeGrid');
   const countEl = document.getElementById('animeCount');
-  const anime = MOVIES.filter(m => m.isAnime || m.genres?.includes('Anime'));
+  const anime = MOVIES.filter(isAnimeItem);
   if (countEl) countEl.textContent = `${anime.length} Anime`;
   _pageOffset.anime = 0;
   renderCardsAsync(anime, grid, 0, false);
