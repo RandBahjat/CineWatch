@@ -1263,10 +1263,10 @@ function _startTrailer(heroEl, movie) {
 
   let trailerSrc = '';
   if (customYtId) {
-    trailerSrc = `https://www.youtube.com/embed/${customYtId}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${customYtId}&iv_load_policy=3&enablejsapi=1&origin=${encodeURIComponent(hostOrigin)}`;
+    trailerSrc = `https://www.youtube.com/embed/${customYtId}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${customYtId}&iv_load_policy=3&enablejsapi=1`;
   } else {
     const query = encodeURIComponent(`${movie.title} ${movie.year || ''} official trailer`);
-    trailerSrc = `https://www.youtube.com/embed?listType=search&list=${query}&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3&enablejsapi=1&origin=${encodeURIComponent(hostOrigin)}`;
+    trailerSrc = `https://www.youtube.com/embed?listType=search&list=${query}&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3&enablejsapi=1`;
   }
 
   iframe.src = trailerSrc;
