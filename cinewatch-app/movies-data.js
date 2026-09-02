@@ -1,4 +1,4 @@
-﻿// CineWatch — Movies Data
+// CineWatch — Movies Data
 // Edit this file to add, remove, or reorder movies.
 // Push to GitHub (or save — auto-sync will handle it) for changes to go live.
 
@@ -61,7 +61,7 @@ window._MOVIES_DATA = [
       "Action",
       "Thriller"
     ],
-    poster: "https://image.tmdb.org/t/p/original/lsYSWqj6i2iyUDJoLA2cazFJYlC.jpg",
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/pu2VxGlpGwffOx292w18b1tv96j.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
     videoUrl: "1288445",
     overview: "Ex-Special Forces agent Cole Reed see billionaire industrialist boss framed and murdered in front of him. Forced on run as chief suspect, Reed uncover massive international conspiracy while hunted by corrupt government operatives and dangerous mercenaries. Must fight to survive and expose real killer.",
@@ -86,7 +86,7 @@ window._MOVIES_DATA = [
       "Comedy",
       "Drama"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/hFLVVF6GSfFkvDlht6iCsCcFjrh.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
     videoUrl: "950028",
     overview: "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places — testing the fragile boundaries between their relationship, their neighbors, and everything they thought they wanted.",
