@@ -31,11 +31,20 @@ function createWindow() {
     const win = BrowserWindow.fromWebContents(event.sender) || mainWindow;
     if (win) win.minimize();
   });
+  let lastMaxTime = 0;
   ipcMain.on('window-maximize', (event) => {
+    const now = Date.now();
+    if (now - lastMaxTime < 250) return; // Debounce duplicate event triggers
+    lastMaxTime = now;
+
     const win = BrowserWindow.fromWebContents(event.sender) || mainWindow;
     if (win) {
-      if (win.isMaximized()) win.unmaximize();
-      else win.maximize();
+      if (win.isMaximized() || win.isFullScreen()) {
+        if (win.isFullScreen()) win.setFullScreen(false);
+        win.unmaximize();
+      } else {
+        win.maximize();
+      }
     }
   });
   ipcMain.on('window-close', (event) => {
@@ -46,6 +55,27 @@ function createWindow() {
     const win = BrowserWindow.fromWebContents(event.sender) || mainWindow;
     if (win) {
       win.setFullScreen(!win.isFullScreen());
+    }
+  });
+
+  mainWindow.on('maximize', () => {
+    if (mainWindow && !mainWindow.isDestroyed()) {
+      mainWindow.webContents.send('window-state-changed', { isMaximized: true });
+    }
+  });
+  mainWindow.on('unmaximize', () => {
+    if (mainWindow && !mainWindow.isDestroyed()) {
+      mainWindow.webContents.send('window-state-changed', { isMaximized: false });
+    }
+  });
+  mainWindow.on('enter-full-screen', () => {
+    if (mainWindow && !mainWindow.isDestroyed()) {
+      mainWindow.webContents.send('window-state-changed', { isMaximized: true });
+    }
+  });
+  mainWindow.on('leave-full-screen', () => {
+    if (mainWindow && !mainWindow.isDestroyed()) {
+      mainWindow.webContents.send('window-state-changed', { isMaximized: mainWindow.isMaximized() });
     }
   });
 
