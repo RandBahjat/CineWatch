@@ -620,9 +620,7 @@ select,
   content: '';
   position: absolute;
   inset: 0;
-  background: 
-    linear-gradient(to right, rgba(6, 7, 10, 0.95) 0%, rgba(6, 7, 10, 0.65) 30%, rgba(6, 7, 10, 0.15) 60%, transparent 80%),
-    linear-gradient(to top, var(--bg-app) 0%, rgba(6, 7, 10, 0.8) 12%, rgba(6, 7, 10, 0.2) 30%, transparent 50%);
+  background: linear-gradient(to top, var(--bg-app) 0%, rgba(6, 7, 10, 0.35) 8%, transparent 25%);
   z-index: 1;
   pointer-events: none;
 }
