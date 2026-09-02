@@ -4255,9 +4255,9 @@ function updateIframeServer() {
       if (serverSelect) serverSelect.dataset.animeServersPopulated = "";
     }
     if (data.type === 'tv') {
-      newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}?skin=netflix&color=e50914`;
+      newUrl = `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=e50914`;
     } else {
-      newUrl = `https://vaplayer.ru/embed/movie/${data.id}?skin=netflix&color=e50914`;
+      newUrl = `https://vidlink.pro/movie/${data.id}?primaryColor=e50914`;
     }
   }
 
