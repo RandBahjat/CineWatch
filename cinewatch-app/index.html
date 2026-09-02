@@ -96,7 +96,7 @@
   <script src="./api.js?v=v6" defer></script>
   <script src="./stream-engine.js?v=3" defer></script>
   <script src="./movie.js?v=v42" defer></script>
-  <script src="./app.js?v=266" defer></script>
+  <script src="./app.js?v=268" defer></script>
 </head>
 <body>
 
@@ -348,80 +348,163 @@
 
   <!-- Full-Screen Settings Overlay -->
   <div class="settings-overlay hidden" id="settingsOverlay">
-    <div class="settings-header">
-      <button class="settings-back-btn" id="closeSettingsBtn" aria-label="Go Back">
-        <ion-icon name="arrow-back-outline"></ion-icon>
-      </button>
-      <div class="profile-banner" id="profileBanner" style="background-image: url('https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=2070&auto=format&fit=crop');">
-        <!-- Change Cover triggers file input -->
-        <label class="edit-banner-btn" for="bannerFileInput">
-          <ion-icon name="camera-outline"></ion-icon> Change Cover
-        </label>
-        <input type="file" id="bannerFileInput" accept="image/*" style="display:none;">
-      </div>
-
-      <div class="profile-avatar-wrap">
-        <div class="profile-avatar" id="profileAvatar">
-          <ion-icon name="person-outline"></ion-icon>
-          <label class="edit-avatar-btn" for="avatarFileInput" aria-label="Change profile picture">
-            <ion-icon name="camera-outline"></ion-icon>
-          </label>
-          <input type="file" id="avatarFileInput" accept="image/*" style="display:none;">
-        </div>
-        <div class="profile-name-info">
-          <h2>Guest</h2>
-        </div>
+    <!-- Hero / Header Background -->
+    <div class="settings-hero-bg">
+      <div class="settings-hero-img" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4iczSgSW2agyqM1U10Rzcz2vGQZhlqCQMS-HzMQ1pKSQIs0u-cv0I_zg8YZwefS_DgVfF1NjlMnwXinClZXdhb3EzczjLDvfGUUmmm6QOTdtWjpGAu8J7WvXkF2I8GTgwt3oHfHjROslMLVmxeTfHLLbMFOU0OacAuvBIROr_K2J9XCBT4xJ2fsTiH-BujLi7dZPomW8s25LKpx-z8kBlch-F07cIwWyLD2wyCnzW1HMPFEkAhZ28')">
+        <!-- Scrim Overlay -->
+        <div class="settings-hero-scrim"></div>
       </div>
     </div>
 
-    <!-- Divider between profile and settings -->
-    <div class="settings-section-divider"></div>
+    <!-- Main Content Canvas -->
+    <main class="settings-canvas">
+      <!-- Header Section -->
+      <header class="settings-top-header">
+        <button class="settings-back-btn-new" id="closeSettingsBtn" aria-label="Back">
+          <span class="material-symbols-outlined">arrow_back</span>
+        </button>
+        <h1 class="settings-title-heading">Settings</h1>
+      </header>
 
-    <div class="settings-content">
-      <div class="settings-container" style="padding-top: 0;">
-        <div class="settings-card">
-          <h3>Appearance</h3>
-            <div class="settings-row" style="align-items: center; flex-wrap: wrap; gap: 0.75rem;">
-              <h4>Theme Mode</h4>
-              <div class="theme-pills" id="themePills">
-                <button class="theme-pill" data-theme="system">
-                  <ion-icon name="phone-portrait-outline"></ion-icon> System
+      <!-- Structured Grid Layout -->
+      <div class="settings-layout-grid">
+        <!-- Profile Card -->
+        <section class="settings-card-glass settings-profile-card">
+          <div class="settings-avatar-container">
+            <img id="settingsAvatarImg" class="settings-avatar-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWzfkAEVcNLGJSidDoeiPDQgQIM8g08wkKUjhaNT7qLJIZORj788jigNbnJhqdKyymeomMPcm9AcKHE_w5ioHvYrNyhCRJYecw-qw5wqfQYDV5ioO4F5Oj9I5Z6wAbknBhIqDvQbqcaKUWC8XNwYsNC5oUG4dpf_GZkXkMLYyASA2F_KjZXlx53ldwEx2VJ5u8UudByxo6nd0DkOe6xpOLBrHys85Ga5m9C8d0FQ85pr6OrNF-B0fM" alt="Profile Picture" />
+            <button class="settings-edit-avatar-badge" id="settingsEditAvatarBtn" aria-label="Edit Avatar">
+              <span class="material-symbols-outlined">edit</span>
+            </button>
+            <input type="file" id="settingsAvatarFileInput" accept="image/*" style="display:none;" />
+          </div>
+          <h2 class="settings-user-name" id="settingsUserName">Alex Rivers</h2>
+          <p class="settings-user-meta" id="settingsUserPlan">Premium Plan • Member since 2023</p>
+          <button class="settings-manage-acc-btn" id="settingsManageAccBtn">Manage Account</button>
+        </section>
+
+        <!-- Appearance Settings -->
+        <section class="settings-card-glass settings-appearance-card">
+          <h3 class="settings-section-title">Appearance</h3>
+          <div class="settings-fields-stack">
+            <div class="settings-row-split">
+              <div>
+                <h4 class="settings-field-label">Theme Mode</h4>
+                <p class="settings-field-desc">Choose your preferred viewing environment</p>
+              </div>
+              <div class="settings-theme-pills-row" id="themePills">
+                <button class="settings-theme-pill active" data-theme="system">
+                  <span class="material-symbols-outlined">settings_brightness</span> System
                 </button>
-                <button class="theme-pill" data-theme="dark">
-                  <ion-icon name="moon-outline"></ion-icon> Dark
+                <button class="settings-theme-pill" data-theme="dark">
+                  <span class="material-symbols-outlined">dark_mode</span> Dark
                 </button>
-                <button class="theme-pill" data-theme="light">
-                  <ion-icon name="sunny-outline"></ion-icon> Light
+                <button class="settings-theme-pill" data-theme="light">
+                  <span class="material-symbols-outlined">light_mode</span> Light
                 </button>
               </div>
             </div>
-        </div>
-        
-        <div class="settings-card">
-          <h3>App Information</h3>
-            <div class="settings-row">
-              <div class="settings-info">
-                <h4>Version</h4>
-                <p>CineWatch App v1.0.0</p>
+            <div class="settings-row-between" style="margin-top: auto;">
+              <div>
+                <h4 class="settings-field-label">Reduced Motion</h4>
+                <p class="settings-field-desc">Minimize UI animations for a quieter experience</p>
               </div>
-              <button class="settings-btn" id="pageCheckUpdateBtn">
-                <ion-icon name="cloud-download-outline"></ion-icon> Check for Updates
-              </button>
+              <!-- Custom Toggle -->
+              <label class="settings-switch">
+                <input type="checkbox" id="reducedMotionToggle" />
+                <span class="settings-slider"></span>
+              </label>
             </div>
-        </div>
+          </div>
+        </section>
 
-        <!-- Save & Logout Buttons -->
-        <div style="display: flex; flex-direction: column; gap: 1rem;">
-          <button class="settings-save-btn" id="saveSettingsBtn">
-            <ion-icon name="checkmark-circle-outline"></ion-icon> Save Changes
+        <!-- Streaming Settings -->
+        <section class="settings-card-glass settings-streaming-card">
+          <h3 class="settings-section-title">Playback &amp; Streaming</h3>
+          <div class="settings-fields-stack">
+            <div class="settings-row-split">
+              <div>
+                <h4 class="settings-field-label">Video Quality</h4>
+                <p class="settings-field-desc">Default resolution on Wi-Fi</p>
+              </div>
+              <select class="settings-select-field" id="videoQualitySelect">
+                <option value="auto">Auto (Recommended)</option>
+                <option value="4k">4K Ultra HD</option>
+                <option value="1080p">1080p Full HD</option>
+                <option value="saver">Data Saver</option>
+              </select>
+            </div>
+            <div class="settings-row-between">
+              <div>
+                <h4 class="settings-field-label">Autoplay Next Episode</h4>
+                <p class="settings-field-desc">Seamlessly continue your binge</p>
+              </div>
+              <label class="settings-switch">
+                <input type="checkbox" id="autoplayToggle" checked />
+                <span class="settings-slider"></span>
+              </label>
+            </div>
+            <div class="settings-row-between">
+              <div>
+                <h4 class="settings-field-label">Spatial Audio</h4>
+                <p class="settings-field-desc">Enable immersive sound</p>
+              </div>
+              <label class="settings-switch">
+                <input type="checkbox" id="spatialAudioToggle" checked />
+                <span class="settings-slider"></span>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <!-- Plan Info Card -->
+        <section class="settings-card-glass settings-plan-card">
+          <div>
+            <h3 class="settings-plan-title">
+              <span class="material-symbols-outlined text-primary-color">star</span>
+              Subscription
+            </h3>
+            <div class="settings-plan-price-row">
+              <div>
+                <p class="settings-field-desc">Current Plan</p>
+                <p class="settings-plan-name">4K Ultra HD</p>
+              </div>
+              <p class="settings-plan-price">$19.99/mo</p>
+            </div>
+          </div>
+          <button class="settings-upgrade-plan-btn" id="upgradePlanBtn">Upgrade Plan</button>
+        </section>
+
+        <!-- App Information -->
+        <section class="settings-card-glass settings-app-info-card">
+          <h3 class="settings-section-title">App Information</h3>
+          <div class="settings-row-between" style="margin-bottom: 1.5rem;">
+            <div>
+              <h4 class="settings-field-label">Version</h4>
+              <p class="settings-field-desc">CineWatch App v2.4.1</p>
+            </div>
+            <button class="settings-check-update-btn" id="pageCheckUpdateBtn">
+              <span class="material-symbols-outlined">update</span> Check for Updates
+            </button>
+          </div>
+          <div class="settings-legal-grid">
+            <a href="#" class="settings-legal-link">Privacy Policy</a>
+            <a href="#" class="settings-legal-link">Terms of Service</a>
+            <a href="#" class="settings-legal-link">Open Source Licenses</a>
+            <a href="#" class="settings-legal-link">Help Center</a>
+          </div>
+        </section>
+
+        <!-- Action Buttons -->
+        <div class="settings-actions-row">
+          <button class="settings-btn-save-main" id="saveSettingsBtn">
+            <span class="material-symbols-outlined">save</span> Save Changes
           </button>
-          
-          <button class="settings-save-btn" id="logoutBtn" style="background: rgba(255, 255, 255, 0.05); color: #ff4757; border: 1px solid rgba(255, 71, 87, 0.3); box-shadow: none;">
-            <ion-icon name="log-out-outline"></ion-icon> Log Out
+          <button class="settings-btn-logout-main" id="logoutBtn">
+            <span class="material-symbols-outlined">logout</span> Log Out
           </button>
         </div>
       </div>
-    </div>
+    </main>
   </div>
 
   <!-- Detail Modal -->
