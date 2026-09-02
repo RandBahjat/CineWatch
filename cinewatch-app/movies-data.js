@@ -381,7 +381,7 @@ window._MOVIES_DATA = [
       "Thriller",
       "Crime"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lGovcOtxugJPhfJjFKud9EbWtOA.jpg",
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/dx2dblJL3GAKcXXXPjC2FSaMTWW.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/l7asYmqOad01F2u0oCMM8nQjoEP.jpg",
     videoUrl: "87513",
     overview: "In 1970s Detroit, hard-working man John Miller fall in love with local gangster girl. Jealous mob boss framing John, sending him to prison for crime he no do. John break out of jail and hunt down criminals on brutal silent quest for absolute revenge. Movie got almost no spoken words, using rock music and raw action to tell story!",
