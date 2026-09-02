@@ -1730,15 +1730,32 @@ function renderUserBadge() {
     };
 
   } else {
-    container.innerHTML = `
-      <button class="nav-user-icon-btn" id="headerLoginBtn" title="Sign In">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-          <circle cx="12" cy="7" r="4"/>
-        </svg>
-      </button>
-    `;
-    document.getElementById("headerLoginBtn").onclick = () => openAuthModal();
+    if (container) {
+      container.innerHTML = `
+        <button class="nav-user-icon-btn" id="headerLoginBtn" title="Sign In">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </button>
+      `;
+      document.getElementById("headerLoginBtn").onclick = () => openAuthModal();
+    }
+    
+    if (sidebarFooter) {
+      sidebarFooter.innerHTML = `
+        <button class="sidebar-signin-btn" id="openAuthBtn">
+          <span>Sign In</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="animated-login-svg">
+            <path class="login-door" style="transform-origin: 50% 50%" d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+            <path class="login-arrow" d="M14 12h-12" />
+            <path class="login-arrow-bottom" d="M5 15l-3 -3l3 -3" />
+          </svg>
+        </button>
+      `;
+      const authBtn = document.getElementById("openAuthBtn");
+      if (authBtn) authBtn.onclick = () => openAuthModal();
+    }
   }
 }
 
