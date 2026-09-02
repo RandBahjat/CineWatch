@@ -4,6 +4,30 @@
 
 window._MOVIES_DATA = [
   {
+    title: Just Play Dead",
+    type: "Movie",
+    year: 2026,
+    rating: 6.3,
+    age: "R",
+    duration: "1h 51m",
+    genres: [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/6UqflU8Qqkz7Dq4swJPqs0ZJjY4.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/uauoVKKCkNA9iWjgJCL8TdSfLf5.jpg",
+    videoUrl: "860508",
+    overview: "Young son vanish, widower turn to estranged father, retired detective who once put away serial killer, The Whisper Man, terrorize quiet town Featherbank fifteen year back. Old case, new crime tangle together, dark rumor of accomplice resurface.",
+    overviewKurdish: "کوڕی گەنجی پیاوێکی بێوەژن ون دەبێت لە فێدەربانک، شارۆچکەیەکی هێمن کە پازدە ساڵ لەمەوبەر لەلایەن پیاو کوژێک بە ناوی ویسپەر مان تۆقێندرابوو. ئەمە وای لێدەکات ڕوو لە باوکی لێدوورکەوتووی خۆی بکات، پۆلیسێکی خانەنشین کە ئەو کاتە پیاو کوژی گرتبوو. کەیسی کۆن و تاوانی نوێ تێکەڵ دەبنەوە، تاوتوێی نهێنی هاوکارێکی تاریک دووبارە سەرهەڵدەدات.",
+    director: "James Ashcroft",
+    cast: ["Robert De Niro, Michelle Monaghan, Adam Scott, Hamish Linklater, Owen Teague, Michael Keaton, John Carroll Lynch"],
+    trending: true,
+    featured: true,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "The Whisper Man",
     type: "Movie",
     year: 2026,
