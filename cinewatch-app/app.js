@@ -388,36 +388,68 @@ function renderHome() {
     <div class="shelf">
       <div class="shelf-header">
         <h2 class="shelf-title"><span class="title-bar"></span> Top 10 in World Today</h2>
+        <div class="shelf-nav-btns">
+          <button class="shelf-nav-btn prev" onclick="slideShelf(this, -1)" aria-label="Slide Left" title="Previous"><ion-icon name="chevron-back-outline"></ion-icon></button>
+          <button class="shelf-nav-btn next" onclick="slideShelf(this, 1)" aria-label="Slide Right" title="Next"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+        </div>
       </div>
-      <div class="shelf-track">
-        ${(top10.length ? top10 : MOVIES.slice(0, 10)).map((m, i) => createCardHTML(m, i + 1)).join('')}
+      <div class="shelf-track-wrap">
+        <button class="shelf-edge-arrow prev" onclick="slideShelf(this, -1)" aria-label="Slide Left" title="Slide Left"><ion-icon name="chevron-back-outline"></ion-icon></button>
+        <div class="shelf-track">
+          ${(top10.length ? top10 : MOVIES.slice(0, 10)).map((m, i) => createCardHTML(m, i + 1)).join('')}
+        </div>
+        <button class="shelf-edge-arrow next" onclick="slideShelf(this, 1)" aria-label="Slide Right" title="Slide Right"><ion-icon name="chevron-forward-outline"></ion-icon></button>
       </div>
     </div>
 
     <div class="shelf">
       <div class="shelf-header">
         <h2 class="shelf-title"><span class="title-bar"></span> Trending Movies</h2>
+        <div class="shelf-nav-btns">
+          <button class="shelf-nav-btn prev" onclick="slideShelf(this, -1)" aria-label="Slide Left" title="Previous"><ion-icon name="chevron-back-outline"></ion-icon></button>
+          <button class="shelf-nav-btn next" onclick="slideShelf(this, 1)" aria-label="Slide Right" title="Next"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+        </div>
       </div>
-      <div class="shelf-track">
-        ${trendingMovies.map(m => createCardHTML(m)).join('')}
+      <div class="shelf-track-wrap">
+        <button class="shelf-edge-arrow prev" onclick="slideShelf(this, -1)" aria-label="Slide Left" title="Slide Left"><ion-icon name="chevron-back-outline"></ion-icon></button>
+        <div class="shelf-track">
+          ${trendingMovies.map(m => createCardHTML(m)).join('')}
+        </div>
+        <button class="shelf-edge-arrow next" onclick="slideShelf(this, 1)" aria-label="Slide Right" title="Slide Right"><ion-icon name="chevron-forward-outline"></ion-icon></button>
       </div>
     </div>
 
     <div class="shelf">
       <div class="shelf-header">
         <h2 class="shelf-title"><span class="title-bar"></span> Popular Series</h2>
+        <div class="shelf-nav-btns">
+          <button class="shelf-nav-btn prev" onclick="slideShelf(this, -1)" aria-label="Slide Left" title="Previous"><ion-icon name="chevron-back-outline"></ion-icon></button>
+          <button class="shelf-nav-btn next" onclick="slideShelf(this, 1)" aria-label="Slide Right" title="Next"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+        </div>
       </div>
-      <div class="shelf-track">
-        ${trendingSeries.map(m => createCardHTML(m)).join('')}
+      <div class="shelf-track-wrap">
+        <button class="shelf-edge-arrow prev" onclick="slideShelf(this, -1)" aria-label="Slide Left" title="Slide Left"><ion-icon name="chevron-back-outline"></ion-icon></button>
+        <div class="shelf-track">
+          ${trendingSeries.map(m => createCardHTML(m)).join('')}
+        </div>
+        <button class="shelf-edge-arrow next" onclick="slideShelf(this, 1)" aria-label="Slide Right" title="Slide Right"><ion-icon name="chevron-forward-outline"></ion-icon></button>
       </div>
     </div>
 
     <div class="shelf">
       <div class="shelf-header">
         <h2 class="shelf-title"><span class="title-bar"></span> Anime Hits</h2>
+        <div class="shelf-nav-btns">
+          <button class="shelf-nav-btn prev" onclick="slideShelf(this, -1)" aria-label="Slide Left" title="Previous"><ion-icon name="chevron-back-outline"></ion-icon></button>
+          <button class="shelf-nav-btn next" onclick="slideShelf(this, 1)" aria-label="Slide Right" title="Next"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+        </div>
       </div>
-      <div class="shelf-track">
-        ${animeHits.map(m => createCardHTML(m)).join('')}
+      <div class="shelf-track-wrap">
+        <button class="shelf-edge-arrow prev" onclick="slideShelf(this, -1)" aria-label="Slide Left" title="Slide Left"><ion-icon name="chevron-back-outline"></ion-icon></button>
+        <div class="shelf-track">
+          ${animeHits.map(m => createCardHTML(m)).join('')}
+        </div>
+        <button class="shelf-edge-arrow next" onclick="slideShelf(this, 1)" aria-label="Slide Right" title="Slide Right"><ion-icon name="chevron-forward-outline"></ion-icon></button>
       </div>
     </div>
   `;
@@ -425,47 +457,78 @@ function renderHome() {
   setupShelfDragScroll();
 }
 
+window.slideShelf = function(btn, direction) {
+  const shelf = btn.closest('.shelf');
+  if (!shelf) return;
+  const track = shelf.querySelector('.shelf-track');
+  if (!track) return;
+  const scrollAmount = Math.max(340, track.clientWidth * 0.75);
+  track.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+};
+
 function setupShelfDragScroll() {
   document.querySelectorAll('.shelf-track').forEach(track => {
     let isDown = false;
     let startX = 0;
     let scrollLeft = 0;
-    let hasMoved = false;
+    let dragDistance = 0;
+
+    // Prevent default browser ghost dragging on all poster images
+    track.querySelectorAll('img').forEach(img => {
+      img.setAttribute('draggable', 'false');
+      img.addEventListener('dragstart', (e) => e.preventDefault());
+    });
 
     track.addEventListener('mousedown', (e) => {
       if (e.button !== 0) return;
       isDown = true;
-      hasMoved = false;
-      startX = e.pageX - track.offsetLeft;
+      dragDistance = 0;
+      startX = e.pageX;
       scrollLeft = track.scrollLeft;
-    });
-
-    window.addEventListener('mouseup', () => {
-      if (isDown) {
-        isDown = false;
-        track.classList.remove('is-dragging');
-      }
+      track.style.scrollBehavior = 'auto';
     });
 
     window.addEventListener('mousemove', (e) => {
       if (!isDown) return;
-      const x = e.pageX - track.offsetLeft;
-      const diff = Math.abs(x - startX);
-      if (diff > 10) {
-        hasMoved = true;
+      const walk = e.pageX - startX;
+      dragDistance = Math.abs(walk);
+      if (dragDistance > 5) {
         track.classList.add('is-dragging');
-        track.scrollLeft = scrollLeft - (x - startX) * 1.5;
+        track.scrollLeft = scrollLeft - walk;
       }
     });
 
+    window.addEventListener('mouseup', () => {
+      if (!isDown) return;
+      isDown = false;
+      track.style.scrollBehavior = 'smooth';
+      setTimeout(() => {
+        track.classList.remove('is-dragging');
+        dragDistance = 0;
+      }, 60);
+    });
+
+    // Intercept card click if user was dragging
     track.addEventListener('click', (e) => {
-      if (hasMoved) {
-        if (e.target.closest('.card-fav-btn, button, a')) return;
+      if (dragDistance > 6) {
         e.preventDefault();
         e.stopPropagation();
-        hasMoved = false;
+        e.stopImmediatePropagation();
       }
     }, true);
+
+    // Mouse wheel horizontal scroll
+    track.addEventListener('wheel', (e) => {
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        if (maxScroll > 0) {
+          if ((e.deltaY > 0 && track.scrollLeft < maxScroll - 2) || (e.deltaY < 0 && track.scrollLeft > 2)) {
+            e.preventDefault();
+            track.scrollBy({ left: e.deltaY * 1.5, behavior: 'auto' });
+          }
+        }
+      }
+    }, { passive: false });
   });
 }
 
