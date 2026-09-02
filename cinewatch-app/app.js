@@ -4,8 +4,9 @@
  */
 
 const FEATURED_TITLES = [
-  "Grand Theft Auto VI: An Extended Look",
+  "Just Play Dead",
   "The Whisper Man",
+  "Grand Theft Auto VI: An Extended Look",
   "Mousetrap",
   "Batman: Knightfall Part 1: Knightfall",
   "Mutiny",
@@ -17,6 +18,7 @@ const FEATURED_TITLES = [
 ];
 
 const TOP_10_TITLES = [
+  "Just Play Dead",
   "Grand Theft Auto VI: An Extended Look",
   "Motor City",
   "Mutiny",
