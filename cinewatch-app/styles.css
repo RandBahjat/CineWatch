@@ -3831,20 +3831,24 @@ html.light-mode .hero-slide::before {
   box-shadow: 0 10px 35px rgba(229, 9, 20, 0.5);
 }
 
-/* Player Top Bar (Floating Glass Island on Top Left) */
+/* Player Top Bar (Floating Glass Island with Left Title and Right Server Switcher) */
 .cw-player-topbar {
   position: absolute;
   top: 1.5rem;
   left: 2rem;
+  right: 2rem;
   padding: 0;
   background: transparent;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   z-index: 30;
+  pointer-events: none;
   transition: opacity 0.35s ease, transform 0.35s ease;
 }
 
 .cw-topbar-left {
+  pointer-events: auto;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -3855,6 +3859,37 @@ html.light-mode .hero-slide::before {
   border-radius: 50px;
   padding: 0.5rem 1.4rem 0.5rem 0.6rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.cw-topbar-right {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+}
+
+.cw-topbar-right .cw-glass-pill-btn {
+  background: rgba(14, 16, 26, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 50px;
+  padding: 0.55rem 1.2rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  transition: all 0.25s ease;
+}
+
+.cw-topbar-right .cw-glass-pill-btn:hover {
+  background: rgba(229, 9, 20, 0.85);
+  border-color: rgba(229, 9, 20, 0.6);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(229, 9, 20, 0.4);
 }
 
 .cw-btn-circle {
