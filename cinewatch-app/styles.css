@@ -2436,9 +2436,9 @@ media-video-layout::part(tooltip) {
 .settings-hero-scrim {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, #131313 0%, rgba(19, 19, 19, 0.6) 60%, transparent 100%),
-              linear-gradient(to right, rgba(19, 19, 19, 0.9) 0%, rgba(19, 19, 19, 0.5) 35%, transparent 70%);
-  opacity: 0.95;
+  background: linear-gradient(to right, #131313 0%, #131313 28%, rgba(19, 19, 19, 0.65) 55%, transparent 100%),
+              linear-gradient(to top, #131313 0%, rgba(19, 19, 19, 0.4) 65%, transparent 100%);
+  opacity: 1;
 }
 
 /* Main Content Canvas */
