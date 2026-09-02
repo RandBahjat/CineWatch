@@ -1939,7 +1939,7 @@ function openDetailsModal(movieId) {
       const prevTrailer = document.getElementById('detailsTrailerIframe');
       if (prevTrailer) prevTrailer.remove();
 
-      // Start 10-second trailer background timer
+      // Start 3-second trailer background timer
       window._detailsTrailerTimer = setTimeout(() => {
         if (state.activeView !== "details") return;
         const currentBg = document.getElementById("detailsBg");
@@ -1959,11 +1959,15 @@ function openDetailsModal(movieId) {
         }
 
         const customYt = extractYt(movie.trailerUrl || movie.trailer || movie.trailerYouTubeId);
+        const hostOrigin = (window.location.protocol === 'http:' || window.location.protocol === 'https:') 
+          ? window.location.origin 
+          : 'https://www.youtube.com';
         const query = encodeURIComponent(`${movie.title} ${movie.year || ''} official trailer`);
         iframe.src = customYt 
-          ? `https://www.youtube-nocookie.com/embed/${customYt}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${customYt}&iv_load_policy=3`
-          : `https://www.youtube-nocookie.com/embed?listType=search&list=${query}&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3`;
-        iframe.allow = 'autoplay; encrypted-media';
+          ? `https://www.youtube.com/embed/${customYt}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${customYt}&iv_load_policy=3&enablejsapi=1&origin=${encodeURIComponent(hostOrigin)}`
+          : `https://www.youtube.com/embed?listType=search&list=${query}&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3&enablejsapi=1&origin=${encodeURIComponent(hostOrigin)}`;
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
         iframe.style.position = 'absolute';
         iframe.style.inset = '0';
         iframe.style.width = '100%';
@@ -1975,7 +1979,7 @@ function openDetailsModal(movieId) {
         iframe.style.zIndex = '1';
         currentBg.appendChild(iframe);
         setTimeout(() => { iframe.style.opacity = '0.75'; }, 100);
-      }, 10000);
+      }, 3000);
     }
     const titleEl = document.getElementById("detailsTitle");
     const ratingEl = document.getElementById("detailsRating");
