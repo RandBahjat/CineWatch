@@ -20,7 +20,7 @@ window._MOVIES_DATA = [
     overview: "Criminal fake death for insurance money, frame wife's lover; wife plot kill him for real, both race outmaneuver each other.",
     overviewKurdish: "کوڕی گەنجی پیاوێکی بێوەژن ون دەبێت لە فێدەربانک، شارۆچکەیەکی هێمن کە پازدە ساڵ لەمەوبەر لەلایەن پیاو کوژێک بە ناوی ویسپەر مان تۆقێندرابوو. ئەمە وای لێدەکات ڕوو لە باوکی لێدوورکەوتووی خۆی بکات، پۆلیسێکی خانەنشین کە ئەو کاتە پیاو کوژی گرتبوو. کەیسی کۆن و تاوانی نوێ تێکەڵ دەبنەوە، تاوتوێی نهێنی هاوکارێکی تاریک دووبارە سەرهەڵدەدات.",
     director: "Martin Campbell",
-    cast: ["Robert De Niro, Michelle Monaghan, Adam Scott, Hamish Linklater, Owen Teague, Michael Keaton, John Carroll Lynch"],
+    cast: ["Samuel L. Jackson, Eva Green, María Pedraza, Eoin Macken"],
     trending: true,
     featured: true,
     is4k: false,
