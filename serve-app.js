@@ -104,8 +104,18 @@ const server = http.createServer((req, res) => {
 
   let filePath = path.join(ROOT_DIR, pathname);
 
-  // Security: prevent directory traversal outside ROOT_DIR
-  if (!filePath.startsWith(ROOT_DIR)) {
+  // Seamless Sync: Serve shared data and movie.js directly from root directory
+  // so whatever you edit in movie.js or data files is instantly live in the app!
+  const sharedFiles = ['/movies-data.js', '/series-data.js', '/anime-data.js', '/movie.js'];
+  if (sharedFiles.includes(pathname)) {
+    const parentPath = path.join(__dirname, pathname);
+    if (fs.existsSync(parentPath)) {
+      filePath = parentPath;
+    }
+  }
+
+  // Security: prevent directory traversal outside ROOT_DIR or __dirname
+  if (!filePath.startsWith(ROOT_DIR) && !filePath.startsWith(__dirname)) {
     res.writeHead(403, { 'Content-Type': 'text/plain' });
     res.end('403 Forbidden');
     return;
