@@ -11,12 +11,20 @@ if (window.location.hash.includes("type=recovery")) {
 // ==========================================
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
-let FEATURED_TITLES = ["The Whisper Man","Grand Theft Auto VI: An Extended Look","Mousetrap","Batman: Knightfall Part 1: Knightfall", "Mutiny", "Reacher", "Lanterns", "Lioness", "Spider-Man: Brand New Day", "The Last Sunrise", "The Odyssey", "Obsession", "The Last House", "Silo"];
-let TOP_10_TRENDING_TODAY = ["Grand Theft Auto VI: An Extended Look","Motor City", "Mutiny", "Batman: Knightfall Part 1: Knightfall","Reacher", "The Last Sunrise", "Spider-Man: Brand New Day", "Lanterns", "The Odyssey", "The Odyssey", "Motor City", "Toy Story 5"];
-let TRENDING_THIS_WEEK_MOVIES = ["Batman: Knightfall Part 1: Knightfall", "Mutiny", "Spider-Man: Brand New Day", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Minions & Monsters", "The Last House", "Disclosure Day", "The Invite", "The End of Oak Street", "Backrooms", "Camp Rock 3", "Evil Dead Burn", "Project Hail Mary", "Supergirl"];
+let FEATURED_TITLES = ["Just Play Dead","The Whisper Man","Grand Theft Auto VI: An Extended Look","Mousetrap","Batman: Knightfall Part 1: Knightfall", "Mutiny", "Reacher", "Lanterns", "Lioness", "Spider-Man: Brand New Day", "The Last Sunrise", "The Odyssey", "Obsession", "The Last House", "Silo"];
+let TOP_10_TRENDING_TODAY = ["Just Play Dead","Grand Theft Auto VI: An Extended Look","Motor City", "Mutiny", "Batman: Knightfall Part 1: Knightfall","Reacher", "The Last Sunrise", "Spider-Man: Brand New Day", "Lanterns", "The Odyssey", "Toy Story 5"];
+let TRENDING_THIS_WEEK_MOVIES = ["Just Play Dead","Batman: Knightfall Part 1: Knightfall", "Mutiny", "Spider-Man: Brand New Day", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Minions & Monsters", "The Last House", "Disclosure Day", "The Invite", "The End of Oak Street", "Backrooms", "Camp Rock 3", "Evil Dead Burn", "Project Hail Mary", "Supergirl"];
 let TRENDING_THIS_WEEK_SERIES = ["Lanterns", "Reacher", "Lucky", "Silo", "One Piece", "Ted Lasso", "X-Men '97", "Lioness", "Outer Banks"];
-const POPULAR_MOVIES = ["Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters", "The Invite", "Spider-Man: No Way Home", "The End of Oak Street", "Disclosure Day", "Camp Rock 3", "The Last House", "Michael", "Project Hail Mary"];
+const POPULAR_MOVIES = ["Just Play Dead", "Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters", "The Invite", "Spider-Man: No Way Home", "The End of Oak Street", "Disclosure Day", "Camp Rock 3", "The Last House", "Michael", "Project Hail Mary"];
 const POPULAR_SERIES = ["Reacher", "House of the Dragon", "Ted Lasso", "The Mentalist", "Lucky", "Off Campus", "Silo", "Game of Thrones", "The Sopranos", "Stranger Things", "The Boys"];
+
+// Expose globally so apps & modules can sync seamlessly with movie.js
+window.FEATURED_TITLES = FEATURED_TITLES;
+window.TOP_10_TRENDING_TODAY = TOP_10_TRENDING_TODAY;
+window.TRENDING_THIS_WEEK_MOVIES = TRENDING_THIS_WEEK_MOVIES;
+window.TRENDING_THIS_WEEK_SERIES = TRENDING_THIS_WEEK_SERIES;
+window.POPULAR_MOVIES = POPULAR_MOVIES;
+window.POPULAR_SERIES = POPULAR_SERIES;
 
 // ==========================================
 // 2. MOVIE DATABASE
