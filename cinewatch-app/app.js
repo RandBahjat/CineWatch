@@ -516,19 +516,6 @@ function setupShelfDragScroll() {
         e.stopImmediatePropagation();
       }
     }, true);
-
-    // Mouse wheel horizontal scroll
-    track.addEventListener('wheel', (e) => {
-      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
-        const maxScroll = track.scrollWidth - track.clientWidth;
-        if (maxScroll > 0) {
-          if ((e.deltaY > 0 && track.scrollLeft < maxScroll - 2) || (e.deltaY < 0 && track.scrollLeft > 2)) {
-            e.preventDefault();
-            track.scrollBy({ left: e.deltaY * 1.5, behavior: 'auto' });
-          }
-        }
-      }
-    }, { passive: false });
   });
 }
 
