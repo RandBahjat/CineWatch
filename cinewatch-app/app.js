@@ -381,7 +381,7 @@ function renderHome() {
 
   const top10 = TOP_10_TITLES.map(title => MOVIES.find(m => m.title === title)).filter(Boolean);
   const trendingMovies = MOVIES.filter(m => (!m.type || m.type === 'Movie') && !m.isAnime).slice(0, 15);
-  const trendingSeries = MOVIES.filter(m => m.type === 'TV Show' || m.type === 'Series' || m.seasons).slice(0, 15);
+  const trendingSeries = MOVIES.filter(m => (m.type === 'TV Show' || m.type === 'Series') && !m.isAnime).slice(0, 15);
   const animeHits = MOVIES.filter(m => m.isAnime || m.genres?.includes('Anime')).slice(0, 15);
 
   shelvesContainer.innerHTML = `
