@@ -4169,6 +4169,10 @@ function setupCwSelectionListeners() {
 }
 
 function safeInitMovieApp() {
+  // Only run website initialization if the website DOM elements exist
+  if (!document.getElementById("heroBanner") && !document.getElementById("appLoader")) {
+    return;
+  }
   initApp();
   trackVisit();
   setupCwSelectionListeners();
