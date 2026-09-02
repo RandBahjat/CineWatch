@@ -3058,6 +3058,514 @@ media-video-layout::part(tooltip) {
 }
 
 /* ==========================================================================
+   ACCOUNT MANAGEMENT OVERLAY
+   ========================================================================== */
+.account-overlay {
+  position: fixed;
+  inset: 0;
+  background: #131313;
+  background-image: radial-gradient(ellipse at top, rgba(42, 42, 42, 0.45) 0%, #131313 70%, #131313 100%);
+  color: #e5e2e1;
+  font-family: 'Inter', sans-serif;
+  z-index: 2100;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: opacity var(--transition-smooth), transform var(--transition-smooth);
+}
+
+.account-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+}
+
+.account-top-header {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3rem 4rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .account-top-header {
+    padding: 2rem 1.25rem 1.5rem;
+    gap: 1rem;
+  }
+}
+
+.account-back-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(42, 42, 42, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e5e2e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.account-back-btn:hover {
+  background: #393939;
+  color: #ffb4aa;
+  transform: scale(1.06);
+}
+
+.account-title-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #e5e2e1;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .account-title-heading {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+}
+
+.account-canvas {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 4rem 5rem;
+}
+
+@media (max-width: 768px) {
+  .account-canvas {
+    padding: 0 1.25rem 4rem;
+  }
+}
+
+.account-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+@media (max-width: 1024px) {
+  .account-grid-3 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.account-glass-card {
+  background: rgba(32, 32, 31, 0.6);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 32px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.account-glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+}
+
+.account-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.5rem;
+}
+
+.account-icon-badge {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(229, 9, 20, 0.2);
+  border: 1px solid rgba(229, 9, 20, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffb4aa;
+  flex-shrink: 0;
+}
+
+.account-card-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #e5e2e1;
+  margin: 0;
+}
+
+.account-card-subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  color: #c6c6c7;
+  margin: 0.15rem 0 0;
+}
+
+/* Profile Body */
+.account-profile-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.account-avatar-wrapper {
+  position: relative;
+  width: 128px;
+  height: 128px;
+}
+
+.account-avatar-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #393939;
+  box-shadow: 0 12px 30px rgba(229, 9, 20, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.account-avatar-wrapper:hover .account-avatar-circle {
+  transform: scale(1.05);
+}
+
+.account-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.account-avatar-edit-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: #393939;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  color: #ffb4aa;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.account-avatar-edit-btn:hover {
+  background: #353535;
+  transform: scale(1.1);
+}
+
+.account-input-group {
+  width: 100%;
+}
+
+.account-input-label {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #c6c6c7;
+  display: block;
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+
+.account-input-relative {
+  position: relative;
+  width: 100%;
+}
+
+.account-text-input {
+  width: 100%;
+  background: #1c1b1b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1rem 5rem 1rem 1.25rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #e5e2e1;
+  outline: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: border-color 0.2s ease;
+}
+
+.account-text-input:focus {
+  border-color: #ffb4aa;
+}
+
+.account-input-btn {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #393939;
+  color: #e5e2e1;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.75rem;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.account-input-btn:hover {
+  background: #353535;
+}
+
+.account-member-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(42, 42, 42, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: #c6c6c7;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Devices List */
+.account-devices-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.account-device-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(28, 27, 27, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: border-color 0.2s ease;
+}
+
+.account-device-row:hover {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.account-device-row.current-device {
+  border: 1px solid rgba(229, 9, 20, 0.35);
+  background: rgba(28, 27, 27, 0.7);
+}
+
+.account-device-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.account-device-name {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #e5e2e1;
+  margin: 0;
+}
+
+.account-device-meta {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0.15rem 0 0;
+}
+
+.account-device-signout-btn {
+  background: #393939;
+  color: #e5e2e1;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.account-device-signout-btn:hover {
+  background: #353535;
+}
+
+.account-signout-all-wrap {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.account-btn-signout-all {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(42, 42, 42, 0.5);
+  color: #e5e2e1;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.account-btn-signout-all:hover {
+  background: #353535;
+  border-color: rgba(229, 9, 20, 0.4);
+}
+
+/* Security Body */
+.account-security-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.account-field-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-email-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1c1b1b;
+  border-radius: 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  color: #e5e2e1;
+}
+
+.account-password-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: #1c1b1b;
+  border-radius: 1rem;
+  padding: 0.5rem 0.75rem 0.5rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.account-password-dots {
+  font-size: 18px;
+  letter-spacing: 0.25em;
+  color: #c6c6c7;
+  font-weight: 700;
+}
+
+.account-change-pwd-btn {
+  background: #393939;
+  color: #e5e2e1;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-size: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.account-change-pwd-btn:hover {
+  background: #353535;
+}
+
+.account-2fa-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(28, 27, 27, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 0.5rem;
+}
+
+.account-2fa-title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #e5e2e1;
+  margin: 0;
+}
+
+.account-2fa-desc {
+  font-size: 14px;
+  line-height: 20px;
+  color: #c6c6c7;
+  margin: 0.25rem 0 0;
+}
+
+.account-2fa-toggle {
+  width: 56px;
+  height: 32px;
+  border-radius: 9999px;
+  background: #e50914;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  flex-shrink: 0;
+  cursor: pointer;
+  border: 1px solid #e50914;
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.3);
+  transition: all 0.25s ease;
+}
+
+.account-2fa-knob {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transform: translateX(24px);
+  transition: transform 0.25s ease;
+}
+
+.account-2fa-toggle.off {
+  background: #2a2a2a;
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+.account-2fa-toggle.off .account-2fa-knob {
+  transform: translateX(0);
+}
+
+/* ==========================================================================
    LIGHT MODE OVERRIDES
    ========================================================================== */
 html.light-mode {
