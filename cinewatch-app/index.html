@@ -96,7 +96,7 @@
   <script src="./api.js?v=v6" defer></script>
   <script src="./stream-engine.js?v=3" defer></script>
   <script src="./movie.js?v=v42" defer></script>
-  <script src="./app.js?v=276" defer></script>
+  <script src="./app.js?v=278" defer></script>
 </head>
 <body>
 
@@ -557,6 +557,149 @@
           <button class="settings-btn-logout-main" id="logoutBtn">
             <span class="material-symbols-outlined">logout</span> Log Out
           </button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Full-Screen Account Management Overlay -->
+  <div class="account-overlay hidden" id="accountOverlay">
+    <header class="account-top-header">
+      <button class="account-back-btn" id="closeAccountBtn" aria-label="Back to Settings">
+        <span class="material-symbols-outlined">arrow_back</span>
+      </button>
+      <h1 class="account-title-heading">Account Management</h1>
+    </header>
+
+    <main class="account-canvas">
+      <div class="account-grid-3">
+        <!-- Profile Identity -->
+        <div class="account-glass-card">
+          <div class="account-card-header">
+            <div class="account-icon-badge">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+            </div>
+            <h2 class="account-card-title">Profile Identity</h2>
+          </div>
+          <div class="account-profile-body">
+            <div class="account-avatar-wrapper">
+              <div class="account-avatar-circle">
+                <img id="accountAvatarImg" class="account-avatar-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaZjUKUNWUylU9HmkS25mT9GU0BV6JIpDfFJNMlQaKJzgnCvnqs4J-unB8HatKoldCDNJwIYsNP74iW9XvNPxVjVwZwWjKE7Y6Si6NnXPcCfA602N9bzHh7Del3whgK9hGA-zMPQ7D_Jh5r8XEod-5m3azuY1QU0t5kjbMCXoleRrXa24cD9zn0xCSDlNF87-Eq1T6TnHJhDGZSr_2y8NaQM7aBGijhJSVnmkoRlUPhpTfB3fmu_Ho" alt="Avatar">
+              </div>
+              <button class="account-avatar-edit-btn" id="accountEditAvatarBtn" aria-label="Change profile picture">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">edit</span>
+              </button>
+              <input type="file" id="accountAvatarFileInput" accept="image/*" style="display:none;" />
+            </div>
+
+            <div class="account-input-group">
+              <label class="account-input-label">Display Name</label>
+              <div class="account-input-relative">
+                <input class="account-text-input" id="accountDisplayNameInput" type="text" value="Cinephile99" readonly />
+                <button class="account-input-btn" id="accountEditNameBtn">Edit</button>
+              </div>
+            </div>
+
+            <div class="account-member-pill">
+              <span class="material-symbols-outlined">schedule</span>
+              <span id="accountMemberSince">Member since: Oct 2021</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Device Management -->
+        <div class="account-glass-card">
+          <div class="account-card-header">
+            <div class="account-icon-badge">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">devices</span>
+            </div>
+            <div class="account-header-text">
+              <h2 class="account-card-title">Device Management</h2>
+              <p class="account-card-subtitle">Manage and monitor your active sessions.</p>
+            </div>
+          </div>
+
+          <div class="account-devices-list">
+            <!-- Current Device -->
+            <div class="account-device-row current-device">
+              <div class="account-device-info">
+                <span class="material-symbols-outlined text-primary-color">desktop_windows</span>
+                <div>
+                  <p class="account-device-name">Windows PC</p>
+                  <p class="account-device-meta text-primary-color">New York, USA • Current Device</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Android Phone -->
+            <div class="account-device-row">
+              <div class="account-device-info">
+                <span class="material-symbols-outlined text-muted">smartphone</span>
+                <div>
+                  <p class="account-device-name">Android Phone</p>
+                  <p class="account-device-meta text-muted">Active 2 hours ago</p>
+                </div>
+              </div>
+              <button class="account-device-signout-btn" onclick="showToast('Signed out of Android Phone')">Sign Out</button>
+            </div>
+
+            <!-- Smart TV -->
+            <div class="account-device-row">
+              <div class="account-device-info">
+                <span class="material-symbols-outlined text-muted">tv</span>
+                <div>
+                  <p class="account-device-name">Smart TV</p>
+                  <p class="account-device-meta text-muted">Active yesterday</p>
+                </div>
+              </div>
+              <button class="account-device-signout-btn" onclick="showToast('Signed out of Smart TV')">Sign Out</button>
+            </div>
+
+            <div class="account-signout-all-wrap">
+              <button class="account-btn-signout-all" id="signOutAllDevicesBtn">
+                <span class="material-symbols-outlined">logout</span>
+                Sign Out of All Devices
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Security & Credentials -->
+        <div class="account-glass-card">
+          <div class="account-card-header">
+            <div class="account-icon-badge">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">lock</span>
+            </div>
+            <h2 class="account-card-title">Security &amp; Credentials</h2>
+          </div>
+
+          <div class="account-security-body">
+            <div class="account-field-item">
+              <label class="account-input-label">Email Address</label>
+              <div class="account-email-box">
+                <span id="accountEmailDisplay">user@example.com</span>
+                <span class="material-symbols-outlined text-primary-color" style="font-variation-settings: 'FILL' 1;" title="Verified">verified</span>
+              </div>
+            </div>
+
+            <div class="account-field-item">
+              <label class="account-input-label">Password</label>
+              <div class="account-password-box">
+                <span class="account-password-dots">••••••••••••</span>
+                <button class="account-change-pwd-btn" id="accountChangePasswordBtn">Change</button>
+              </div>
+            </div>
+
+            <div class="account-2fa-row">
+              <div class="account-2fa-text">
+                <p class="account-2fa-title">Two-Factor Auth (2FA)</p>
+                <p class="account-2fa-desc">Extra layer of security via SMS.</p>
+              </div>
+              <button class="account-2fa-toggle" id="account2faToggle" aria-label="Toggle 2FA">
+                <div class="account-2fa-knob active" id="account2faKnob"></div>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </main>
