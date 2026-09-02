@@ -1,3 +1,6 @@
+(function() {
+  'use strict';
+
 /**
  * CineWatch Standalone App Engine
  * High-Performance, Instant-Loading Streaming Platform Logic
