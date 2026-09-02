@@ -874,14 +874,22 @@ select,
   border-radius: var(--radius-full);
 }
 
+.shelf-track-wrap {
+  position: relative;
+  width: 100%;
+}
+
 .shelf-track {
   display: flex;
   gap: 1.25rem;
   overflow-x: auto;
   padding: 0.5rem 0.25rem 1.2rem;
   scroll-behavior: smooth;
-  cursor: default;
+  cursor: grab;
   scrollbar-width: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 .shelf-track::-webkit-scrollbar {
@@ -889,8 +897,99 @@ select,
 }
 
 .shelf-track.is-dragging {
-  cursor: default;
+  cursor: grabbing;
   scroll-behavior: auto;
+}
+
+.shelf-track.is-dragging .media-card {
+  pointer-events: none;
+}
+
+.shelf-track img {
+  user-drag: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+/* Shelf Navigation Buttons (Header and Floating Edge) */
+.shelf-nav-btns {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shelf-nav-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.shelf-nav-btn:hover {
+  background: var(--primary, #e50914);
+  border-color: #ff1c2a;
+  transform: scale(1.1);
+  box-shadow: 0 0 14px rgba(229, 9, 20, 0.5);
+}
+
+.shelf-nav-btn:active {
+  transform: scale(0.95);
+}
+
+/* Floating Edge Arrows over the track */
+.shelf-edge-arrow {
+  position: absolute;
+  top: calc(50% - 14px);
+  transform: translateY(-50%);
+  width: 44px;
+  height: 80px;
+  background: rgba(10, 12, 18, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-size: 1.6rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, background 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+.shelf-edge-arrow.prev {
+  left: -8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.shelf-edge-arrow.next {
+  right: -8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.shelf-track-wrap:hover .shelf-edge-arrow {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.shelf-edge-arrow:hover {
+  background: rgba(229, 9, 20, 0.95);
+  border-color: #ff1c2a;
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 0 25px rgba(229, 9, 20, 0.7);
 }
 
 /* ==========================================================================
