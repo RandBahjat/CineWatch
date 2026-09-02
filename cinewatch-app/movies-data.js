@@ -18,7 +18,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/tieojVpH6eW44JQOQEWnf8t4khG.jpg",
     videoUrl: "1480574",
     overview: "Criminal fake death for insurance money, frame wife's lover; wife plot kill him for real, both race outmaneuver each other.",
-    overviewKurdish: "کوڕی گەنجی پیاوێکی بێوەژن ون دەبێت لە فێدەربانک، شارۆچکەیەکی هێمن کە پازدە ساڵ لەمەوبەر لەلایەن پیاو کوژێک بە ناوی ویسپەر مان تۆقێندرابوو. ئەمە وای لێدەکات ڕوو لە باوکی لێدوورکەوتووی خۆی بکات، پۆلیسێکی خانەنشین کە ئەو کاتە پیاو کوژی گرتبوو. کەیسی کۆن و تاوانی نوێ تێکەڵ دەبنەوە، تاوتوێی نهێنی هاوکارێکی تاریک دووبارە سەرهەڵدەدات.",
+    overviewKurdish: تاوانبارێک وا دەردەخات کە مردووە بۆ بەدەستهێنانی پارەی بیمە، هاوسەرەکەشی تاوانبار دەکات، بەڵام هاوسەرەکەی پلانی کوشتنی ڕاستەقینەی داناوە، هەردووکیان پێشبڕکێ دەکەن بۆ ئەوەی زاڵ بن بەسەر یەکتریدا.",
     director: "Martin Campbell",
     cast: ["Samuel L. Jackson, Eva Green, María Pedraza, Eoin Macken"],
     trending: true,
