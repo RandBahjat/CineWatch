@@ -1257,16 +1257,21 @@ function _startTrailer(heroEl, movie) {
   iframe.className = 'trailer-iframe';
 
   const customYtId = extractYouTubeId(movie.trailerUrl || movie.trailer || movie.trailerYouTubeId);
+  const hostOrigin = (window.location.protocol === 'http:' || window.location.protocol === 'https:') 
+    ? window.location.origin 
+    : 'https://www.youtube.com';
+
   let trailerSrc = '';
   if (customYtId) {
-    trailerSrc = `https://www.youtube-nocookie.com/embed/${customYtId}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${customYtId}&iv_load_policy=3&enablejsapi=1`;
+    trailerSrc = `https://www.youtube.com/embed/${customYtId}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${customYtId}&iv_load_policy=3&enablejsapi=1&origin=${encodeURIComponent(hostOrigin)}`;
   } else {
     const query = encodeURIComponent(`${movie.title} ${movie.year || ''} official trailer`);
-    trailerSrc = `https://www.youtube-nocookie.com/embed?listType=search&list=${query}&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3`;
+    trailerSrc = `https://www.youtube.com/embed?listType=search&list=${query}&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3&enablejsapi=1&origin=${encodeURIComponent(hostOrigin)}`;
   }
 
   iframe.src = trailerSrc;
-  iframe.allow = 'autoplay; encrypted-media';
+  iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+  iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
   iframe.allowFullscreen = false;
   iframe.style.position = 'absolute';
   iframe.style.inset = '0';
@@ -1296,16 +1301,30 @@ function _startTrailer(heroEl, movie) {
   const soundBtn = document.getElementById('trailerSoundBtn');
   if (soundBtn) {
     soundBtn.classList.remove('hidden');
-    soundBtn.style.zIndex = '15';
+    soundBtn.innerHTML = '<ion-icon name="volume-mute"></ion-icon>';
     soundBtn.onclick = (e) => {
       e.stopPropagation();
+      e.preventDefault();
       _trailerMuted = !_trailerMuted;
-      if (customYtId) {
-        iframe.src = `https://www.youtube-nocookie.com/embed/${customYtId}?autoplay=1&mute=${_trailerMuted ? 1 : 0}&controls=0&modestbranding=1&rel=0&loop=1&playlist=${customYtId}&iv_load_policy=3&enablejsapi=1`;
-      } else {
-        const query = encodeURIComponent(`${movie.title} ${movie.year || ''} official trailer`);
-        iframe.src = `https://www.youtube-nocookie.com/embed?listType=search&list=${query}&autoplay=1&mute=${_trailerMuted ? 1 : 0}&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3`;
-      }
+      
+      // Control audio via YouTube postMessage API (seamless, no reload)
+      try {
+        if (iframe && iframe.contentWindow) {
+          iframe.contentWindow.postMessage(JSON.stringify({
+            event: 'command',
+            func: _trailerMuted ? 'mute' : 'unMute',
+            args: []
+          }), '*');
+          if (!_trailerMuted) {
+            iframe.contentWindow.postMessage(JSON.stringify({
+              event: 'command',
+              func: 'setVolume',
+              args: [100]
+            }), '*');
+          }
+        }
+      } catch (err) {}
+
       soundBtn.innerHTML = `<ion-icon name="${_trailerMuted ? 'volume-mute' : 'volume-high'}"></ion-icon>`;
     };
   }
@@ -1317,6 +1336,11 @@ function closeDetail() {
   if (modal) modal.classList.add('hidden');
   const iframe = document.querySelector('.trailer-iframe');
   if (iframe) iframe.remove();
+  const soundBtn = document.getElementById('trailerSoundBtn');
+  if (soundBtn) {
+    soundBtn.classList.add('hidden');
+    soundBtn.innerHTML = '<ion-icon name="volume-mute"></ion-icon>';
+  }
 }
 
 // ==========================================================================
