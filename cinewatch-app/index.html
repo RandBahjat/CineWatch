@@ -94,7 +94,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
   <script src="./api.js?v=v6" defer></script>
   <script src="./stream-engine.js?v=3" defer></script>
-  <script src="./app.js?v=131" defer></script>
+  <script src="./app.js?v=133" defer></script>
 </head>
 <body>
 
@@ -488,27 +488,21 @@
         </button>
       </div>
 
-      <!-- Player Top Bar (Floating Glass Island) -->
+      <!-- Player Top Bar (Floating Glass Navigation) -->
       <div class="cw-player-topbar" id="playerTopBar">
         <div class="cw-topbar-left">
-          <button class="cw-btn-circle" id="playerClose" aria-label="Exit Player">
+          <button class="cw-btn-back" id="playerClose" aria-label="Exit Player" title="Back to CineWatch (Esc)">
             <ion-icon name="arrow-back-outline"></ion-icon>
+            <span>Back</span>
           </button>
-          <div class="cw-title-meta">
+          
+          <div class="cw-player-title-pill">
             <h2 class="cw-player-title" id="playerTitle">Now Playing</h2>
             <div class="cw-player-badges">
               <span class="cw-badge 4k">4K ULTRA HD</span>
               <span class="cw-badge hdr">HDR10</span>
               <span class="cw-badge dolby">DOLBY 5.1</span>
             </div>
-          </div>
-        </div>
-
-        <div class="cw-topbar-right">
-          <!-- VidLink Pro Dedicated Server Badge -->
-          <div class="cw-glass-pill-btn" style="pointer-events: none; cursor: default; display: flex; align-items: center; gap: 8px;">
-            <ion-icon name="flash" style="color: #ff1c2a; font-size: 0.95rem;"></ion-icon>
-            <span style="font-weight: 700; letter-spacing: 0.5px;">VidLink Pro HD</span>
           </div>
         </div>
       </div>
