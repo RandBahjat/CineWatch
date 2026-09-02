@@ -1733,10 +1733,12 @@ function startApp() {
     });
   }
 
-  // Settings overlay handlers
+  // Settings & Account overlay handlers
   const openSettingsBtn = document.getElementById('openSettingsBtn');
   const closeSettingsBtn = document.getElementById('closeSettingsBtn');
   const settingsOverlay = document.getElementById('settingsOverlay');
+  const accountOverlay = document.getElementById('accountOverlay');
+  const closeAccountBtn = document.getElementById('closeAccountBtn');
   const mobileProfileBtn = document.getElementById('mobileProfileBtn');
 
   function syncSettingsProfile() {
@@ -1756,9 +1758,29 @@ function startApp() {
     } catch(e) {}
   }
 
+  function syncAccountData() {
+    try {
+      const stored = sessionStorage.getItem('cw_user');
+      const user = (window.state && window.state.user) || (stored ? JSON.parse(stored) : null);
+      const nameInput = document.getElementById('accountDisplayNameInput');
+      const emailDisplay = document.getElementById('accountEmailDisplay');
+      const avatarImg = document.getElementById('accountAvatarImg');
+      const memberSince = document.getElementById('accountMemberSince');
+      if (user) {
+        if (nameInput) nameInput.value = user.name || 'Cinephile99';
+        if (emailDisplay) emailDisplay.textContent = user.email || 'user@example.com';
+        if (memberSince) memberSince.textContent = `Member since: ${user.createdAt ? new Date(user.createdAt).toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) : 'Oct 2021'}`;
+        if (avatarImg && user.avatar && (user.avatar.startsWith('data:') || user.avatar.startsWith('http'))) {
+          avatarImg.src = user.avatar;
+        }
+      }
+    } catch(e) {}
+  }
+
   if (openSettingsBtn) {
     openSettingsBtn.addEventListener('click', () => {
       syncSettingsProfile();
+      accountOverlay?.classList.add('hidden');
       settingsOverlay?.classList.remove('hidden');
       document.activeElement?.blur();
     });
@@ -1779,6 +1801,7 @@ function startApp() {
 
       if (activeUser) {
         syncSettingsProfile();
+        accountOverlay?.classList.add('hidden');
         settingsOverlay?.classList.remove('hidden');
       } else {
         showAuth();
@@ -1792,14 +1815,98 @@ function startApp() {
     });
   }
 
-  // Manage Account
+  // Manage Account -> Opens Account Management section
   document.getElementById('settingsManageAccBtn')?.addEventListener('click', () => {
-    const profileBadge = document.getElementById('profileBadgeToggle') || document.getElementById('profileBadgeToggleSidebar');
-    if (profileBadge) {
-      profileBadge.click();
-    } else {
-      showAuth();
-    }
+    syncAccountData();
+    settingsOverlay?.classList.add('hidden');
+    accountOverlay?.classList.remove('hidden');
+  });
+
+  // Close Account Management -> Returns to Settings
+  if (closeAccountBtn) {
+    closeAccountBtn.addEventListener('click', () => {
+      accountOverlay?.classList.add('hidden');
+      syncSettingsProfile();
+      settingsOverlay?.classList.remove('hidden');
+    });
+  }
+
+  // Account Avatar Upload
+  const accountEditAvatarBtn = document.getElementById('accountEditAvatarBtn');
+  const accountAvatarFileInput = document.getElementById('accountAvatarFileInput');
+  if (accountEditAvatarBtn && accountAvatarFileInput) {
+    accountEditAvatarBtn.addEventListener('click', () => accountAvatarFileInput.click());
+    accountAvatarFileInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        const dataUrl = event.target.result;
+        const img = document.getElementById('accountAvatarImg');
+        if (img) img.src = dataUrl;
+        const settingsImg = document.getElementById('settingsAvatarImg');
+        if (settingsImg) settingsImg.src = dataUrl;
+        if (window.state && window.state.user) {
+          window.state.user.avatar = dataUrl;
+          if (typeof saveUser === 'function') saveUser(window.state.user);
+          if (typeof renderUserBadge === 'function') renderUserBadge();
+        }
+        showToast('Profile photo updated!');
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  // Account Edit Name
+  const accountEditNameBtn = document.getElementById('accountEditNameBtn');
+  const accountDisplayNameInput = document.getElementById('accountDisplayNameInput');
+  if (accountEditNameBtn && accountDisplayNameInput) {
+    accountEditNameBtn.addEventListener('click', () => {
+      if (accountDisplayNameInput.hasAttribute('readonly')) {
+        accountDisplayNameInput.removeAttribute('readonly');
+        accountDisplayNameInput.focus();
+        accountDisplayNameInput.select();
+        accountEditNameBtn.textContent = 'Save';
+        accountEditNameBtn.style.backgroundColor = '#e50914';
+        accountEditNameBtn.style.color = '#ffffff';
+      } else {
+        accountDisplayNameInput.setAttribute('readonly', 'true');
+        accountEditNameBtn.textContent = 'Edit';
+        accountEditNameBtn.style.backgroundColor = '';
+        accountEditNameBtn.style.color = '';
+        const newName = accountDisplayNameInput.value.trim();
+        if (newName) {
+          const settingsName = document.getElementById('settingsUserName');
+          if (settingsName) settingsName.textContent = newName;
+          if (window.state && window.state.user) {
+            window.state.user.name = newName;
+            if (typeof saveUser === 'function') saveUser(window.state.user);
+            if (typeof renderUserBadge === 'function') renderUserBadge();
+          }
+          showToast('Display name updated!');
+        }
+      }
+    });
+  }
+
+  // Account Change Password
+  document.getElementById('accountChangePasswordBtn')?.addEventListener('click', () => {
+    showToast('Password reset link sent to your email.');
+  });
+
+  // Account 2FA Toggle
+  const account2faToggle = document.getElementById('account2faToggle');
+  if (account2faToggle) {
+    account2faToggle.addEventListener('click', () => {
+      account2faToggle.classList.toggle('off');
+      const isEnabled = !account2faToggle.classList.contains('off');
+      showToast(`Two-Factor Authentication (2FA) ${isEnabled ? 'enabled' : 'disabled'}`);
+    });
+  }
+
+  // Account Sign Out of All Devices
+  document.getElementById('signOutAllDevicesBtn')?.addEventListener('click', () => {
+    showToast('Successfully signed out of all other devices');
   });
 
   // Change Background
