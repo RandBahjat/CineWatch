@@ -8157,3 +8157,28 @@ body.rtl-layout .ai-prompt-card {
   border-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-1px);
 }
+
+/* ==========================================
+   RTL Mobile Navbar Separation & Overlap Guard
+   ========================================== */
+body.rtl-layout .nav-container {
+  flex-direction: row !important;
+}
+
+body.rtl-layout .nav-left {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+  order: 1 !important;
+}
+
+body.rtl-layout .nav-right {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  justify-content: flex-start !important;
+  order: 2 !important;
+}
+
+body.rtl-layout .custom-lang-dropdown {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
