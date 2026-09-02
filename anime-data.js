@@ -26,6 +26,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
     backdrop: "https://netflixjunkie-media.b-cdn.net/media/image/image_1742647488887.jpeg",
     videoUrl: "37854",
+    trailerUrl: "",
     anilistId: 21,
     animeSlug: "one-piece",
     overview: "Monkey D. Luffy refuses to let anyone or anything stand in the way of his quest to become the king of all pirates. With a course charted for the treacherous waters of the Grand Line and beyond, this is one captain who'll never give up until he's claimed the greatest treasure on Earth: the Legendary One Piece!",
@@ -6057,6 +6058,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/oQ5CnVj3TRifXl2bIOri6H6rfNe.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zOz6DeXeOhKRVGUuiK3WufLXQIB.jpg",
     videoUrl: "12971",
+    trailerUrl: "",
     anilistId: 813,
     animeSlug: "dragon-ball-z",
     overview: "After learning that he is from another planet, a warrior named Goku and his friends are prompted to defend it from an onslaught of extraterrestrial enemies.",
@@ -7592,6 +7594,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/lMULbSFZNXUC87MqOZQ4SSV9DXI.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oUmWLyeko3kYdUr8DBLIsxwcugl.jpg",
     videoUrl: "236994",
+    trailerUrl: "",
     animeSlug: "dragon-ball-daima",
     overview: "Goku and company were living peaceful lives when they suddenly turned small due to a conspiracy When they discover that the reason for this may lie in a world known as the Demon Realm, a mysterious young Majin named Glorio appears before them.",
     overviewKurdish: "",
@@ -7742,6 +7745,7 @@ window._ANIME_DATA = [
       "Fantasy"
     ],
     videoUrl: "62715",
+    trailerUrl: "",
     seasons: [
       {
         season: 1,
@@ -8434,6 +8438,7 @@ window._ANIME_DATA = [
       "Fantasy"
     ],
     videoUrl: "12697",
+    trailerUrl: "",
     seasons: [
       {
         season: 1,
@@ -8780,6 +8785,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/ojsPI8fNwcecKLhVC4rB4ZZhFMc.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/abfE867mF3TJrCuI3KFyMj465DN.jpg",
     videoUrl: "61709",
+    trailerUrl: "",
     anilistId: 6033,
     animeSlug: "dragon-ball-z-kai",
     overview: "Revisiting the acclaimed Dragon Ball Z series, this remastered and condensed version removes original filler episodes to more closely follow Akira Toriyama's manga, delivering faster-paced action, updated animation sequences, and a re-recorded voice track as Goku and his friends defend Earth from increasingly powerful cosmic threats.",
@@ -9477,6 +9483,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xppeysfvDKVx775MFuH8Z9BlpMk.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/mpsYIytXhDXjI9yYC1Fp1S3PxsS.jpg",
     videoUrl: "46260",
+    trailerUrl: "",
     anilistId: 20,
     animeSlug: "naruto",
     overview: "Naruto Uzumaki, young ninja with sealed nine-tailed fox spirit inside him, dream become strongest ninja, earn respect as Hokage, leader of his village. Chase acceptance, fight rival, grow strong through many battle, deep bond of friendship.",
@@ -10849,6 +10856,7 @@ window._ANIME_DATA = [
     poster: "https://image.tmdb.org/t/p/original/3V7kzJX7hvF0H9CDJsgcWKXTSsR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7uHujbHkYBFwaRNiBeJ07mDdmyl.jpg",
     videoUrl: "31910",
+    trailerUrl: "",
     anilistId: 114,
     animeSlug: "naruto-shippuden",
     overview: "Naruto Shippuuden is the continuation of the original animated TV series Naruto. The story revolves around an older and slightly more matured Uzumaki Naruto and his quest to save his friend Uchiha Sasuke from the grips of the snake-like Shinobi, Orochimaru.",
@@ -13981,6 +13989,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/e0B6i48kxdRkMcK4tR4YNfXGWOc.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/fA2ZkasP7MWEUgJelvzkjlXSoqu.jpg",
     videoUrl: "70881",
+    trailerUrl: "",
     anilistId: 97938,
     animeSlug: "boruto",
     overview: "The life of the shinobi is beginning to change. Boruto Uzumaki, son of Seventh Hokage Naruto Uzumaki, has enrolled in the Ninja Academy to learn the ways of the ninja. Now, as a series of mysterious events unfolds, Boruto's story is about to begin!",
@@ -15777,6 +15786,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/mNwz73VBP4HCY5QGXxRoCTabGTh.jpg",
     videoUrl: "30984",
+    trailerUrl: "",
     overview: "Ichigo Kurosaki is a teenager gifted with the ability to see spirits. His life is drastically changed by the sudden appearance of a Soul Reaper—one who governs the flow of souls between the human world and the afterlife—named Rukia Kuchiki, who arrives in search of a Hollow, a dangerous lost soul. When Rukia is severely wounded defending Ichigo from the Hollow, she attempts to transfer half of her reiatsu energy to Ichigo so that he can defeat the Hollow. However, Ichigo takes almost all of her energy, transforming into a Soul Reaper and allowing him to defeat the Hollow with ease. With her powers diminished, Rukia is left stranded in the human world until she can recover her strength. In the meantime, Ichigo must take over Rukia's role as a Soul Reaper, battling Hollows and guiding souls to the afterlife realm known as the Soul Society.",
     overviewKurdish: "",
     director: "Noriyuki Abe",
@@ -15800,6 +15810,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/540/1351123.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 2,
@@ -15809,6 +15820,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/541/1353532.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 3,
@@ -15818,6 +15830,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/920222.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 4,
@@ -15827,6 +15840,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/920226.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 5,
@@ -15836,6 +15850,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/920227.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 6,
@@ -15845,6 +15860,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/920860.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 7,
@@ -15854,6 +15870,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/920865.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 8,
@@ -15863,6 +15880,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921731.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 9,
@@ -15872,6 +15890,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921740.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 10,
@@ -15881,6 +15900,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921744.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 11,
@@ -15890,6 +15910,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921784.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 12,
@@ -15899,6 +15920,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921805.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 13,
@@ -15908,6 +15930,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921807.jpg",
             videoUrl: ""
+            trailerUrl: "",
           }
         ]
       },
@@ -15922,6 +15945,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921822.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 2,
@@ -15931,6 +15955,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921824.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 3,
@@ -15940,6 +15965,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921829.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 4,
@@ -15949,6 +15975,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921832.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 5,
@@ -15958,6 +15985,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921833.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 6,
@@ -15967,6 +15995,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921834.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 7,
@@ -15976,6 +16005,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921835.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 8,
@@ -15985,6 +16015,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921838.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 9,
@@ -15994,6 +16025,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921839.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 10,
@@ -16003,6 +16035,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922105.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 11,
@@ -16012,6 +16045,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922108.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 12,
@@ -16021,6 +16055,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922117.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 13,
@@ -16030,6 +16065,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922122.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 14,
@@ -16039,6 +16075,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922125.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 15,
@@ -16048,6 +16085,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922126.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 16,
@@ -16057,6 +16095,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922127.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 17,
@@ -16066,6 +16105,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922128.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 18,
@@ -16075,6 +16115,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922129.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 19,
@@ -16084,6 +16125,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922130.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 20,
@@ -16093,6 +16135,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922133.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 21,
@@ -16102,6 +16145,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922135.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 22,
@@ -16111,6 +16155,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922138.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 23,
@@ -16120,6 +16165,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922139.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 24,
@@ -16129,6 +16175,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922158.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 25,
@@ -16138,6 +16185,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922164.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 26,
@@ -16147,6 +16195,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922166.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 27,
@@ -16156,6 +16205,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922169.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 28,
@@ -16165,6 +16215,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922170.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 29,
@@ -16174,6 +16225,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922177.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 30,
@@ -16183,6 +16235,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922179.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 31,
@@ -16192,6 +16245,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922180.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 32,
@@ -16201,6 +16255,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922182.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 33,
@@ -16210,6 +16265,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922200.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 34,
@@ -16219,6 +16275,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922201.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 35,
@@ -16228,6 +16285,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922202.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 36,
@@ -16237,6 +16295,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922203.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 37,
@@ -16246,6 +16305,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922204.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 38,
@@ -16255,6 +16315,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922238.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 39,
@@ -16264,6 +16325,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922240.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 40,
@@ -16273,6 +16335,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922242.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 41,
@@ -16282,6 +16345,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922243.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 42,
@@ -16291,6 +16355,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922244.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 43,
@@ -16300,6 +16365,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922245.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 44,
@@ -16309,6 +16375,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922246.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 45,
@@ -16318,6 +16385,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922247.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 46,
@@ -16327,6 +16395,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922248.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 47,
@@ -16336,6 +16405,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922249.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 48,
@@ -16345,6 +16415,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922250.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 49,
@@ -16354,6 +16425,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922251.jpg",
             videoUrl: ""
+            trailerUrl: "",
           }
         ]
       },
@@ -16368,6 +16440,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922252.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 2,
@@ -16377,6 +16450,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925643.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 3,
@@ -16386,6 +16460,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925645.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 4,
@@ -16395,6 +16470,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925646.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 5,
@@ -16404,6 +16480,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925647.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 6,
@@ -16413,6 +16490,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925648.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 7,
@@ -16422,6 +16500,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925649.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 8,
@@ -16431,6 +16510,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925650.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 9,
@@ -16440,6 +16520,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925651.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 10,
@@ -16449,6 +16530,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925652.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 11,
@@ -16458,6 +16540,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925653.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 12,
@@ -16467,6 +16550,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925654.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 13,
@@ -16476,6 +16560,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925655.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 14,
@@ -16485,6 +16570,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925656.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 15,
@@ -16494,6 +16580,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925657.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 16,
@@ -16503,6 +16590,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925658.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 17,
@@ -16512,6 +16600,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925659.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 18,
@@ -16521,6 +16610,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925660.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 19,
@@ -16530,6 +16620,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925661.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 20,
@@ -16539,6 +16630,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925662.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 21,
@@ -16548,6 +16640,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925663.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 22,
@@ -16557,6 +16650,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925664.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 23,
@@ -16566,6 +16660,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925665.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 24,
@@ -16575,6 +16670,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925666.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 25,
@@ -16584,6 +16680,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925667.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 26,
@@ -16593,6 +16690,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925668.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 27,
@@ -16602,6 +16700,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925669.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 28,
@@ -16611,6 +16710,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925670.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 29,
@@ -16620,6 +16720,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925671.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 30,
@@ -16629,6 +16730,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925672.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 31,
@@ -16638,6 +16740,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925673.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 32,
@@ -16647,6 +16750,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925674.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 33,
@@ -16656,6 +16760,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925675.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 34,
@@ -16665,6 +16770,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925676.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 35,
@@ -16674,6 +16780,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925677.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 36,
@@ -16683,6 +16790,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925678.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 37,
@@ -16692,6 +16800,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925679.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 38,
@@ -16701,6 +16810,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925680.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 39,
@@ -16710,6 +16820,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925681.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 40,
@@ -16719,6 +16830,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925682.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 41,
@@ -16728,6 +16840,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925683.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 42,
@@ -16737,6 +16850,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925684.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 43,
@@ -16746,6 +16860,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925685.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 44,
@@ -16755,6 +16870,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925686.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 45,
@@ -16764,6 +16880,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925687.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 46,
@@ -16773,6 +16890,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925688.jpg",
             videoUrl: ""
+            trailerUrl: "",
           }
         ]
       },
@@ -16787,6 +16905,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925689.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 2,
@@ -16796,6 +16915,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925691.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 3,
@@ -16805,6 +16925,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925692.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 4,
@@ -16814,6 +16935,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925693.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 5,
@@ -16823,6 +16945,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925694.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 6,
@@ -16832,6 +16955,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925695.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 7,
@@ -16841,6 +16965,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925696.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 8,
@@ -16850,6 +16975,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925697.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 9,
@@ -16859,6 +16985,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925698.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 10,
@@ -16868,6 +16995,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925699.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 11,
@@ -16877,6 +17005,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925700.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 12,
@@ -16886,6 +17015,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925701.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 13,
@@ -16895,6 +17025,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925702.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 14,
@@ -16904,6 +17035,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925703.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 15,
@@ -16913,6 +17045,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925704.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 16,
@@ -16922,6 +17055,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925705.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 17,
@@ -16931,6 +17065,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925706.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 18,
@@ -16940,6 +17075,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925707.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 19,
@@ -16949,6 +17085,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925708.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 20,
@@ -16958,6 +17095,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925709.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 21,
@@ -16967,6 +17105,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925710.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 22,
@@ -16976,6 +17115,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925711.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 23,
@@ -16985,6 +17125,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925712.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 24,
@@ -16994,6 +17135,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925714.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 25,
@@ -17003,6 +17145,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925715.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 26,
@@ -17012,6 +17155,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925716.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 27,
@@ -17021,6 +17165,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925717.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 28,
@@ -17030,6 +17175,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925718.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 29,
@@ -17039,6 +17185,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925719.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 30,
@@ -17048,6 +17195,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925720.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 31,
@@ -17057,6 +17205,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925721.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 32,
@@ -17066,6 +17215,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925722.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 33,
@@ -17075,6 +17225,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925723.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 34,
@@ -17084,6 +17235,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925724.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 35,
@@ -17093,6 +17245,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925725.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 36,
@@ -17102,6 +17255,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925726.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 37,
@@ -17111,6 +17265,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925727.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 38,
@@ -17120,6 +17275,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925728.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 39,
@@ -17129,6 +17285,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925729.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 40,
@@ -17138,6 +17295,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925730.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 41,
@@ -17147,6 +17305,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925731.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 42,
@@ -17156,6 +17315,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925732.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 43,
@@ -17165,6 +17325,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925733.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 44,
@@ -17174,6 +17335,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925737.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 45,
@@ -17183,6 +17345,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925738.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 46,
@@ -17192,6 +17355,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925739.jpg",
             videoUrl: ""
+            trailerUrl: "",
           }
         ]
       },
@@ -17206,6 +17370,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925740.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 2,
@@ -17215,6 +17380,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925741.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 3,
@@ -17224,6 +17390,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925742.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 4,
@@ -17233,6 +17400,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925743.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 5,
@@ -17242,6 +17410,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925744.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 6,
@@ -17251,6 +17420,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925745.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 7,
@@ -17260,6 +17430,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925746.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 8,
@@ -17269,6 +17440,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925747.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 9,
@@ -17278,6 +17450,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925748.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 10,
@@ -17287,6 +17460,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925749.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 11,
@@ -17296,6 +17470,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925750.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 12,
@@ -17305,6 +17480,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925751.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 13,
@@ -17314,6 +17490,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925752.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 14,
@@ -17323,6 +17500,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925755.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 15,
@@ -17332,6 +17510,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925756.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 16,
@@ -17341,6 +17520,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925757.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 17,
@@ -17350,6 +17530,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925758.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 18,
@@ -17359,6 +17540,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925759.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 19,
@@ -17368,6 +17550,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925760.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 20,
@@ -17377,6 +17560,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925761.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 21,
@@ -17386,6 +17570,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925762.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 22,
@@ -17395,6 +17580,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925763.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 23,
@@ -17404,6 +17590,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925764.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 24,
@@ -17413,6 +17600,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925765.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 25,
@@ -17422,6 +17610,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925766.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 26,
@@ -17431,6 +17620,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925767.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 27,
@@ -17440,6 +17630,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925768.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 28,
@@ -17449,6 +17640,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925769.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 29,
@@ -17458,6 +17650,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925770.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 30,
@@ -17467,6 +17660,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925771.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 31,
@@ -17476,6 +17670,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925772.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 32,
@@ -17485,6 +17680,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925773.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 33,
@@ -17494,6 +17690,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925774.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 34,
@@ -17503,6 +17700,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925775.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 35,
@@ -17512,6 +17710,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925776.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 36,
@@ -17521,6 +17720,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943936.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 37,
@@ -17530,6 +17730,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943938.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 38,
@@ -17539,6 +17740,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943939.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 39,
@@ -17548,6 +17750,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943940.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 40,
@@ -17557,6 +17760,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943941.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 41,
@@ -17566,6 +17770,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943942.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 42,
@@ -17575,6 +17780,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943943.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 43,
@@ -17584,6 +17790,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943944.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 44,
@@ -17593,6 +17800,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943945.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 45,
@@ -17602,6 +17810,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943946.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 46,
@@ -17611,6 +17820,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943947.jpg",
             videoUrl: ""
+            trailerUrl: "",
           }
         ]
       },
@@ -17625,6 +17835,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943952.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 2,
@@ -17634,6 +17845,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943953.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 3,
@@ -17643,6 +17855,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943954.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 4,
@@ -17652,6 +17865,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943955.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 5,
@@ -17661,6 +17875,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943957.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 6,
@@ -17670,6 +17885,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943959.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 7,
@@ -17679,6 +17895,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943960.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 8,
@@ -17688,6 +17905,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943962.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 9,
@@ -17697,6 +17915,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943963.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 10,
@@ -17706,6 +17925,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943964.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 11,
@@ -17715,6 +17935,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943965.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 12,
@@ -17724,6 +17945,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943966.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 13,
@@ -17733,6 +17955,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943972.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 14,
@@ -17742,6 +17965,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943973.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 15,
@@ -17751,6 +17975,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943974.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 16,
@@ -17760,6 +17985,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943976.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 17,
@@ -17769,6 +17995,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943977.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 18,
@@ -17778,6 +18005,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943978.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 19,
@@ -17787,6 +18015,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943979.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 20,
@@ -17796,6 +18025,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943980.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 21,
@@ -17805,6 +18035,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943981.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 22,
@@ -17814,6 +18045,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943982.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 23,
@@ -17823,6 +18055,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943983.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 24,
@@ -17832,6 +18065,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943984.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 25,
@@ -17841,6 +18075,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943985.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 26,
@@ -17850,6 +18085,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943986.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 27,
@@ -17859,6 +18095,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943987.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 28,
@@ -17868,6 +18105,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943988.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 29,
@@ -17877,6 +18115,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943989.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 30,
@@ -17886,6 +18125,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943990.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 31,
@@ -17895,6 +18135,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943991.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 32,
@@ -17904,6 +18145,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943992.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 33,
@@ -17913,6 +18155,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943993.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 34,
@@ -17922,6 +18165,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943994.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 35,
@@ -17931,6 +18175,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943995.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 36,
@@ -17940,6 +18185,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943996.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 37,
@@ -17949,6 +18195,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943997.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 38,
@@ -17958,6 +18205,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943998.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 39,
@@ -17967,6 +18215,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943999.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 40,
@@ -17976,6 +18225,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944000.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 41,
@@ -17985,6 +18235,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944001.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 42,
@@ -17994,6 +18245,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944002.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 43,
@@ -18003,6 +18255,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944003.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 44,
@@ -18012,6 +18265,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944004.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 45,
@@ -18021,6 +18275,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944005.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 46,
@@ -18030,6 +18285,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944006.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 47,
@@ -18039,6 +18295,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944007.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 48,
@@ -18048,6 +18305,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944008.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 49,
@@ -18057,6 +18315,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944009.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 50,
@@ -18066,6 +18325,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944010.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 51,
@@ -18075,6 +18335,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944011.jpg",
             videoUrl: ""
+            trailerUrl: "",
           }
         ]
       },
@@ -18089,6 +18350,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944012.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 2,
@@ -18098,6 +18360,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944013.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 3,
@@ -18107,6 +18370,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944014.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 4,
@@ -18116,6 +18380,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944015.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 5,
@@ -18125,6 +18390,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944016.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 6,
@@ -18134,6 +18400,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944017.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 7,
@@ -18143,6 +18410,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944018.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 8,
@@ -18152,6 +18420,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944019.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 9,
@@ -18161,6 +18430,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944020.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 10,
@@ -18170,6 +18440,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944021.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 11,
@@ -18179,6 +18450,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944022.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 12,
@@ -18188,6 +18460,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944023.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 13,
@@ -18197,6 +18470,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944024.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 14,
@@ -18206,6 +18480,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944025.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 15,
@@ -18215,6 +18490,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950136.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 16,
@@ -18224,6 +18500,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950137.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 17,
@@ -18233,6 +18510,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950138.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 18,
@@ -18242,6 +18520,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950139.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 19,
@@ -18251,6 +18530,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950140.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 20,
@@ -18260,6 +18540,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950141.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 21,
@@ -18269,6 +18550,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950146.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 22,
@@ -18278,6 +18560,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950151.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 23,
@@ -18287,6 +18570,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950152.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 24,
@@ -18296,6 +18580,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950155.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 25,
@@ -18305,6 +18590,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950156.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 26,
@@ -18314,6 +18600,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950157.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 27,
@@ -18323,6 +18610,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950161.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 28,
@@ -18332,6 +18620,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950176.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 29,
@@ -18341,6 +18630,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950178.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 30,
@@ -18350,6 +18640,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950179.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 31,
@@ -18359,6 +18650,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950199.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 32,
@@ -18368,6 +18660,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950200.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 33,
@@ -18377,6 +18670,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950201.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 34,
@@ -18386,6 +18680,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950203.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 35,
@@ -18395,6 +18690,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950204.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 36,
@@ -18404,6 +18700,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950205.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 37,
@@ -18413,6 +18710,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950208.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 38,
@@ -18422,6 +18720,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950209.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 39,
@@ -18431,6 +18730,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950210.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 40,
@@ -18440,6 +18740,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950219.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 41,
@@ -18449,6 +18750,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950220.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 42,
@@ -18458,6 +18760,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950221.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 43,
@@ -18467,6 +18770,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950222.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 44,
@@ -18476,6 +18780,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950227.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 45,
@@ -18485,6 +18790,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950230.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 46,
@@ -18494,6 +18800,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950232.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 47,
@@ -18503,6 +18810,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950233.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 48,
@@ -18512,6 +18820,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950234.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 49,
@@ -18521,6 +18830,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950235.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 50,
@@ -18530,6 +18840,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950248.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 51,
@@ -18539,6 +18850,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950249.jpg",
             videoUrl: ""
+            trailerUrl: "",
           }
         ]
       },
@@ -18553,6 +18865,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950250.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 2,
@@ -18562,6 +18875,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950251.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 3,
@@ -18571,6 +18885,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950252.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 4,
@@ -18580,6 +18895,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950253.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 5,
@@ -18589,6 +18905,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950254.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 6,
@@ -18598,6 +18915,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950255.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 7,
@@ -18607,6 +18925,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950256.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 8,
@@ -18616,6 +18935,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950257.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 9,
@@ -18625,6 +18945,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950258.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 10,
@@ -18634,6 +18955,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950259.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 11,
@@ -18643,6 +18965,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950260.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 12,
@@ -18652,6 +18975,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950261.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 13,
@@ -18661,6 +18985,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950262.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 14,
@@ -18670,6 +18995,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950263.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 15,
@@ -18679,6 +19005,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950647.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 16,
@@ -18688,6 +19015,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950648.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 17,
@@ -18697,6 +19025,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950649.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 18,
@@ -18706,6 +19035,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950650.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 19,
@@ -18715,6 +19045,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950656.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 20,
@@ -18724,6 +19055,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950657.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 21,
@@ -18733,6 +19065,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950659.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 22,
@@ -18742,6 +19075,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950660.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 23,
@@ -18751,6 +19085,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950662.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 24,
@@ -18760,6 +19095,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950664.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 25,
@@ -18769,6 +19105,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950666.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 26,
@@ -18778,6 +19115,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950668.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 27,
@@ -18787,6 +19125,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950669.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 28,
@@ -18796,6 +19135,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950670.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 29,
@@ -18805,6 +19145,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950671.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 30,
@@ -18814,6 +19155,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950672.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 31,
@@ -18823,6 +19165,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950673.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 32,
@@ -18832,6 +19175,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950674.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 33,
@@ -18841,6 +19185,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950675.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 34,
@@ -18850,6 +19195,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950676.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 35,
@@ -18859,6 +19205,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950677.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 36,
@@ -18868,6 +19215,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950678.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 37,
@@ -18877,6 +19225,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950679.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 38,
@@ -18886,6 +19235,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950680.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 39,
@@ -18895,6 +19245,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950681.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 40,
@@ -18904,6 +19255,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950682.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 41,
@@ -18913,6 +19265,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950683.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 42,
@@ -18922,6 +19275,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950684.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 43,
@@ -18931,6 +19285,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950685.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 44,
@@ -18940,6 +19295,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950686.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 45,
@@ -18949,6 +19305,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950687.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 46,
@@ -18958,6 +19315,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950688.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 47,
@@ -18967,6 +19325,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950689.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 48,
@@ -18976,6 +19335,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950690.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 49,
@@ -18985,6 +19345,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950691.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 50,
@@ -18994,6 +19355,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950692.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 51,
@@ -19003,6 +19365,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950693.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 52,
@@ -19012,6 +19375,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950694.jpg",
             videoUrl: ""
+            trailerUrl: "",
           }
         ]
       },
@@ -19026,6 +19390,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950695.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 2,
@@ -19035,6 +19400,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950696.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 3,
@@ -19044,6 +19410,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950697.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 4,
@@ -19053,6 +19420,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950698.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 5,
@@ -19062,6 +19430,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950699.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 6,
@@ -19071,6 +19440,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950700.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 7,
@@ -19080,6 +19450,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950701.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 8,
@@ -19089,6 +19460,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950702.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 9,
@@ -19098,6 +19470,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950703.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 10,
@@ -19107,6 +19480,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950704.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 11,
@@ -19116,6 +19490,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950705.jpg",
             videoUrl: ""
+            trailerUrl: "",
           },
           {
             episode: 12,
@@ -19125,6 +19500,7 @@ window._ANIME_DATA = [
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950706.jpg",
             videoUrl: ""
+            trailerUrl: "",
           }
         ]
       }
@@ -19148,6 +19524,7 @@ window._ANIME_DATA = [
     poster: "https://media.themoviedb.org/t/p/w300_and_h450_face/phuYuzqWW9ru8EA3HVjE9W2Rr3M.jpg",
     backdrop: "https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/ol0H2DGp4ifBHA4JDlCpwJWxnY2.jpg",
     videoUrl: "65930",
+    trailerUrl: "",
     anilistId: 21459,
     animeSlug: "my-hero-academia",
     overview: "Izuku has dreamt of being a hero all his life?a lofty goal for anyone, but especially challenging for a kid with no superpowers. That?s right, in a world where eighty percent of the population has some kind of super-powered \"quirk,\" Izuku was unlucky enough to be born completely normal. But that?s not enough to stop him from enrolling in one of the world?s most prestigious hero academies.",
@@ -20491,6 +20868,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/hTP1DtLGFamjfu8WqjnuQdP1n4i.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/myryZe4g6PrzGIfOSn9IYmvQ88H.jpg",
     videoUrl: "1429",
+    trailerUrl: "",
     anilistId: 16498,
     animeSlug: "attack-on-titan",
     overview: "Humanity huddle behind giant wall, hide from monstrous man-eating Titan roam outside. When wall breach, young Eren Yeager swear revenge, join fight uncover dark truth behind Titan, wall, world itself.",
@@ -20901,6 +21279,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xUfRZu2mi8jH6SzQEJGP6tjBuYj.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3GQKYh6Trm8pxd2AypovoYQf4Ay.jpg",
     videoUrl: "85937",
+    trailerUrl: "",
     anilistId: 101922,
     animeSlug: "demon-slayer",
     overview: "Tanjiro Kamado, kind-heart boy, come home find family slaughter by demon, only sister Nezuko survive, now turn demon herself. Join secret Demon Slayer Corps, train hard, hunt demon, seek cure bring sister back human.",
@@ -21203,6 +21582,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dT10AxJIXVvRwFAew4tt2RhzJrD.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3AXLSxMuqyZt8HyrKKfrcJtkswD.jpg",
     videoUrl: "63926",
+    trailerUrl: "",
     anilistId: 21087,
     animeSlug: "one-punch-man",
     overview: "Saitama, hero who train so hard he lose hair, gain power to defeat any foe with single punch, now struggle real problem: nobody recognize his strength, life feel meaningless without challenge. Team up with cyborg Genos, seek worthy opponent, real thrill of battle again.",
@@ -21393,6 +21773,7 @@ window._ANIME_DATA = [
     poster: "https://image.tmdb.org/t/p/original/lrjox5mFm9WecMeqyBeXlGaejoc.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qanL26nbrKNWIDk7rNYS1lOwzgx.jpg",
     videoUrl: "127532",
+    trailerUrl: "",
     anilistId: 151807,
     animeSlug: "solo-leveling",
     overview: "Sung Jin-Woo, weakest hunter alive, barely survive deadly dungeon raid, wake up with mysterious system only he can see. Power grow limitless, level up beyond anyone before him, uncover dark secret behind dungeon, hunter world itself.",
@@ -21535,6 +21916,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fHpKWq9ayzSk8nSwqRuaAUemRKh.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/nIHp6fz2MX33blJKYa9BSbhct7W.jpg",
     videoUrl: "95479",
+    trailerUrl: "",
     anilistId: 113415,
     animeSlug: "jujutsu-kaisen",
     overview: "Yuji Itadori, ordinary high schooler, swallow cursed finger, become vessel for powerful demon Sukuna to save friend. Pull into secret world of jujutsu sorcerer, battle deadly curse, uncover deep conspiracy tie to Sukuna's ancient past.",
@@ -21807,6 +22189,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/iFM1dyFi0rByvEomEkmm7NpQeeb.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/tJ946hTDv4vwf51dYD6cK8pxC8o.jpg",
     videoUrl: "114410",
+    trailerUrl: "",
     anilistId: 127230,
     animeSlug: "chainsaw-man",
     overview: "Denji, poor young man drown in debt, fuse with pet devil Pochita after brutal death, become chainsaw-wield hybrid devil hunter. Chase simple dream — good meal, warm bed, girl to love — while cut through vicious devil, dark conspiracy.",
@@ -21891,6 +22274,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/tCZFfYTIwrR7n94J6G14Y4hAFU6.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/msyFkFfEMuHpKvq7cf4NnyugbXP.jpg",
     videoUrl: "13916",
+    trailerUrl: "",
     anilistId: 1535,
     animeSlug: "death-note",
     overview: "Light Yagami is an ace student with great prospects—and he's bored out of his mind. But all that changes when he finds the Death Note, a notebook dropped by a rogue Shinigami death god. Any human whose name is written in the notebook dies, and Light has vowed to use the power of the Death Note to rid the world of evil. But will Light succeed in his noble goal, or will the Death Note turn him into the very thing he fights against?",
@@ -22076,6 +22460,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/i2EEr2uBvRlAwJ8d8zTG2Y19mIa.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/zJVqkxZ2cSD01MDhoFbT5Hg9pqm.jpg",
     videoUrl: "46298",
+    trailerUrl: "",
     anilistId: 11061,
     animeSlug: "hunter-x-hunter-2011",
     overview: "Gon Freecss, young boy, chase dream become Hunter like father, elite adventurer explore world, hunt treasure, danger, truth. Meet loyal friend along way, face brutal trial, deadly enemy push him past limit again, again.",
@@ -22715,6 +23100,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vUHlpA5c1NXkds59reY3HMb4Abs.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/rL3gpiDrdClh3PYqWhozu7WovPg.jpg",
     videoUrl: "88803",
+    trailerUrl: "",
     anilistId: 101348,
     animeSlug: "vinland-saga",
     overview: "For a thousand years, the Vikings have made quite a name and reputation for themselves as the strongest families with a thirst for violence. Thorfinn, the son of one of the Vikings' greatest warriors, spends his boyhood in a battlefield enhancing his skills in his adventure to redeem his most-desired revenge after his father was murdered.",
@@ -22949,6 +23335,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/fcKH1NQzoTXiYO1OrhaFFwTKhBp.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/seMRyWVwIVBWbC9xaMzDMZJ8fUH.jpg",
     videoUrl: "131041",
+    trailerUrl: "",
     anilistId: 137822,
     animeSlug: "blue-lock",
     overview: "After a disastrous defeat at the 2018 World Cup, Japan's team struggles to regroup. But what's missing? An absolute Ace Striker, who can guide them to the win. The Japan Football Union is hell-bent on creating a striker who hungers for goals and thirsts for victory, and who can be the decisive instrument in turning around a losing match...and to do so, they've gathered 300 of Japan's best and brightest youth players. Who will emerge to lead the team...and will they be able to out-muscle and out-ego everyone who stands in their way?",
@@ -23138,6 +23525,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/8WEr48swcqe89Zsy5sdrGCASlIg.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/s8NdKWkRGRdNYm472t58ZTYg1bE.jpg",
     videoUrl: "60863",
+    trailerUrl: "",
     anilistId: 20464,
     animeSlug: "haikyu",
     overview: "Inspired by a small-statured pro volleyball player, Shouyou Hinata creates a volleyball team in his last year of middle school. Unfortunately the team is matched up against the \"King of the Court\" Tobio Kageyama's team in their first tournament and inevitably lose. After the crushing defeat, Hinata vows to surpass Kageyama. After entering high school, Hinata joins the volleyball team only to find that Tobio has also joined.",
@@ -23532,6 +23920,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1m4RlC9BTCbyY549TOdVQ5NRPcR.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/yOarY3Yo0NMkuTuft87M5oAZa3C.jpg",
     videoUrl: "61374",
+    trailerUrl: "",
     anilistId: 20605,
     animeSlug: "tokyo-ghoul",
     overview: "Tokyo has become a cruel and merciless city—a place where vicious creatures called “ghouls” exist alongside humans. The citizens of this once great metropolis live in constant fear of these bloodthirsty savages and their thirst for human flesh. However, the greatest threat these ghouls pose is their dangerous ability to masquerade as humans and blend in with society.",
@@ -23775,6 +24164,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/mM6c5ISlyKWtie2hGiZWo6hmlhU.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/nZMhQrVEOe9iKAdTB4lE1zlWSRj.jpg",
     videoUrl: "902",
+    trailerUrl: "",
     anilistId: 481,
     animeSlug: "yu-gi-oh-duel-monsters",
     overview: "Yugi Mutou is a boy who loves games, but is often bullied. One day, he solves an ancient puzzle known as the Millennium Puzzle, causing a mysterious spirit with the personality of a gambler to reside in his body. From that moment on, whenever Yugi's friends are threatened, this other Yugi makes an appearance and challenges the bullies to dangerous Shadow Games.",
