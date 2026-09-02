@@ -1449,7 +1449,9 @@ function renderAvatarHTML(avatarStr, extraClass = "") {
 
 function renderUserBadge() {
   const container = document.getElementById("userProfileContainer");
-  if (!container) return;
+  const sidebarFooter = document.querySelector(".sidebar-footer");
+
+  if (!container && !sidebarFooter) return;
 
   if (state.user) {
     const userAvatar = state.user.avatar || "🍿";
@@ -1468,12 +1470,44 @@ function renderUserBadge() {
     if (currentLang === 'ckb') uploadAvatarText = "وێنەی پڕۆفایل";
     else if (currentLang === 'ar') uploadAvatarText = "تغيير الصورة";
 
-    // Render only the avatar icon button in the navbar
-    container.innerHTML = `
-      <button class="profile-icon-btn" id="profileBadgeToggle" aria-label="My Account">
-        ${renderAvatarHTML(userAvatar, "badge-avatar")}
-      </button>
-    `;
+    if (container) {
+      // Render only the avatar icon button in the navbar
+      container.innerHTML = `
+        <button class="profile-icon-btn" id="profileBadgeToggle" aria-label="My Account">
+          ${renderAvatarHTML(userAvatar, "badge-avatar")}
+        </button>
+      `;
+    }
+
+    if (sidebarFooter && document.getElementById("openAuthBtn")) {
+      sidebarFooter.innerHTML = `
+        <div class="sidebar-user-wrap">
+          <div class="sidebar-user" id="profileBadgeToggleSidebar">
+            <div class="user-avatar">${renderAvatarHTML(userAvatar, "sidebar-avatar")}</div>
+            <div class="user-info">
+              <span class="user-name">${userName}</span>
+              <span class="user-status">CineWatch</span>
+            </div>
+            <ion-icon name="chevron-up-outline" class="user-chevron"></ion-icon>
+          </div>
+          
+          <div class="user-dropdown">
+            <button class="user-dropdown-item" onclick="if(window.switchTab) window.switchTab('settings')">
+              <ion-icon name="settings-outline"></ion-icon> Settings
+            </button>
+            <button class="user-dropdown-item" style="color: var(--danger);" onclick="logout()">
+              <ion-icon name="log-out-outline"></ion-icon> Log Out
+            </button>
+          </div>
+        </div>
+      `;
+    } else if (sidebarFooter && document.querySelector(".sidebar-user-wrap")) {
+       const avatarEl = sidebarFooter.querySelector(".user-avatar");
+       const nameEl = sidebarFooter.querySelector(".user-name");
+       if (avatarEl) avatarEl.innerHTML = renderAvatarHTML(userAvatar, "sidebar-avatar");
+       if (nameEl) nameEl.textContent = userName;
+    }
+
 
     // Create or reuse the side panel
     let panel = document.getElementById("accountSidePanel");
