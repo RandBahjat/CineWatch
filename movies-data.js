@@ -166,7 +166,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/E812GNXYQqjJwN0cVPY3icHpaj.jpg",
     videoUrl: "192139",
     trailerUrl: "https://youtu.be/sdQbQU70Nd0?si=Ig115LMtNnOMPkkm",
-    overview: "Jason and Lucia always know odds against them. Simple job meant for quick score go bad, land them in darkest corner of place once known as sunniest spot in America — caught up in deep, dangerous criminal network stretch across whole state of Leonida, now need each other more than ever to survive.",
+    overview: "In October 1986, U.S. President Ronald Reagan and Soviet leader Mikhail Gorbachev meet in Iceland for high-stakes summit to eliminate nuclear weapons. Both big leaders clash over missile shields and cold war ideas, fighting against time to make peace deal before world explode!",
     overviewKurdish: "جەیسن و لوسیا لە سەرەتاوە دەیانزانی هەلومەرج لە دژیانە. کارێکی سادە کە بۆ دزین بڕیار درابوو بە خراپی کۆتایی هات، ئەوانیش خۆیان بینییەوە لەناو تاریکترین بەشی ئەو شوێنەی کە هەمووکات وەک خۆشترین شوێن ناسراوە بوو لە ئەمریکا — گیریان خواردووە لە ناو تۆڕێکی تاوانی قووڵ و ترسناک کە بە درێژایی هەموو ویلایەتی لیۆنیدا دەگرێتەوە، ئێستاش پێویستیان بە یەکتری هەیە زیاتر لە هەر کاتێکی تر بۆ ئەوەی بتوانن زیندوو بمێننەوە.",
     director: "Rockstar Games",
     trending: true,
