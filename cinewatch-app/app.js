@@ -1428,14 +1428,17 @@ function playMovieDirect(movieId) {
 
   if (playerTitle) playerTitle.textContent = `${movie.title} (${movie.year || '2026'})`;
 
+  const movieVideoUrlStr = String(movie.videoUrl || '');
+  const ytVideoId = extractYouTubeId(movieVideoUrlStr);
+
   const tmdb = movie.tmdbId || movie.videoUrl || movie.cinesrcId || '550';
   const isTv = movie.type === 'TV Show' || movie.type === 'Series' || (movie.seasons && movie.seasons.length);
 
   if (nextEpBtn) {
-    nextEpBtn.classList.toggle('hidden', !isTv);
+    nextEpBtn.classList.toggle('hidden', !isTv || !!ytVideoId);
   }
 
-  // Dedicated VidLink Pro Streaming Engine
+  // Dedicated Streaming Engine
   let sNum = 1;
   let epNum = 1;
   if (movie.seasons && movie.seasons.length > 0 && movie.seasons[0].episodes && movie.seasons[0].episodes.length > 0) {
@@ -1446,17 +1449,31 @@ function playMovieDirect(movieId) {
     epNum = movie.episode || 1;
   }
 
-  const vidLinkUrl = isTv
-    ? `https://vidlink.pro/tv/${tmdb}/${sNum}/${epNum}?primaryColor=e50914`
-    : `https://vidlink.pro/movie/${tmdb}?primaryColor=e50914`;
+  let vidLinkUrl = '';
+  let servers = [];
 
-  const servers = [
-    {
-      id: 'vidlink',
-      name: '⚡ VidLink Pro HD',
-      url: vidLinkUrl
-    }
-  ];
+  if (ytVideoId) {
+    vidLinkUrl = `https://www.youtube.com/embed/${ytVideoId}?autoplay=1&rel=0&modestbranding=1`;
+    servers = [
+      {
+        id: 'youtube',
+        name: '▶ YouTube HD Stream',
+        url: vidLinkUrl
+      }
+    ];
+  } else {
+    vidLinkUrl = isTv
+      ? `https://vidlink.pro/tv/${tmdb}/${sNum}/${epNum}?primaryColor=e50914`
+      : `https://vidlink.pro/movie/${tmdb}?primaryColor=e50914`;
+
+    servers = [
+      {
+        id: 'vidlink',
+        name: '⚡ VidLink Pro HD',
+        url: vidLinkUrl
+      }
+    ];
+  }
 
   function switchSource(srv) {
     const vidstackPlayer = document.getElementById('vidstackPlayer');
