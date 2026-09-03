@@ -22,7 +22,7 @@ window._MOVIES_DATA = [
     overview: "Wile E. Coyote sue Acme Corporation after decade of faulty product cause endless harm chase Road Runner. Team with down-on-luck lawyer, take corporate giant to court.",
     overviewKurdish:"وایڵ ئی. کایۆتی دژی کۆمپانیای ئاکمی سکاڵا تۆمار دەکات لەدوای دەیان ساڵ بەرهەمی خراپ کە زیانی زۆری پێگەیاندووە لە کاتی ڕاونانی ڕۆدڕەنەر. لەگەڵ پارێزەرێکی بەختڕەش هاوکاری دەکات بۆ بردنی کۆمپانیا بۆ دادگا.",
     director: "Dave Green",
-    cast: ["Samuel L. Jackson, Eva Green, María Pedraza, Eoin Macken"],
+    cast: ["Will Forte, Lana Condor, Peter Dinklage"],
     trending: true,
     featured: true,
     is4k: false,
