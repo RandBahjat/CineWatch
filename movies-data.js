@@ -15,7 +15,7 @@ window._MOVIES_DATA = [
       "Comedy",
       "Family"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vhv7lBWYM0DUuNU2a0V7Rhq21dD.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uxCaBoYXsDC4A0SqTm3SISj0OwK.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/viZqGq9TNvQ5uXSD4ahg2RpRONT.jpg",
     videoUrl: "1204680",
     trailerUrl: "https://youtu.be/fWKpUCvC_RQ",
