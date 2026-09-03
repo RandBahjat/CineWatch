@@ -1916,17 +1916,39 @@ function startApp() {
 
   function syncSettingsProfile() {
     try {
-      const stored = sessionStorage.getItem('cw_user');
-      const user = (window.state && window.state.user) || (stored ? JSON.parse(stored) : null);
+      const user = getActiveUser();
+      const profileCard = document.getElementById('settingsHeroProfileCard');
+      const logoutBtn = document.getElementById('logoutBtn');
+      const loginBtn = document.getElementById('settingsLoginBtn');
+      const socialCard = document.getElementById('settingsSocialCard');
       const nameEl = document.getElementById('settingsUserName');
       const metaEl = document.getElementById('settingsUserPlan');
       const avatarEl = document.getElementById('settingsAvatarImg');
+
       if (user) {
-        if (nameEl) nameEl.textContent = user.name || 'User';
-        if (metaEl) metaEl.textContent = `Premium Plan • Member since ${user.createdAt ? new Date(user.createdAt).getFullYear() : '2023'}`;
-        if (avatarEl && user.avatar && (user.avatar.startsWith('data:') || user.avatar.startsWith('http'))) {
-          avatarEl.src = user.avatar;
+        // User IS signed in: show account profile section, social card, and logout button
+        if (profileCard) profileCard.classList.remove('hidden');
+        if (logoutBtn) logoutBtn.classList.remove('hidden');
+        if (loginBtn) loginBtn.classList.add('hidden');
+        if (socialCard) socialCard.classList.remove('hidden');
+
+        if (nameEl) nameEl.textContent = user.name || user.username || 'User';
+        if (metaEl) metaEl.textContent = `Premium Plan • Member since ${user.createdAt ? new Date(user.createdAt).getFullYear() : '2026'}`;
+        if (avatarEl) {
+          if (user.avatar && (user.avatar.startsWith('data:') || user.avatar.startsWith('http'))) {
+            avatarEl.src = user.avatar;
+          } else {
+            avatarEl.src = 'icon-256.png';
+          }
         }
+      } else {
+        // User is NOT signed in: HIDE everything related to the account!
+        if (profileCard) profileCard.classList.add('hidden');
+        if (logoutBtn) logoutBtn.classList.add('hidden');
+        if (loginBtn) loginBtn.classList.remove('hidden');
+        if (socialCard) socialCard.classList.add('hidden');
+        if (nameEl) nameEl.textContent = '';
+        if (metaEl) metaEl.textContent = '';
       }
     } catch(e) {}
   }
