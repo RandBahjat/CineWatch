@@ -13,7 +13,7 @@ window._MOVIES_DATA = [
     genres: [
       "Animation",
       "Comedy",
-      ""
+      "Family"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/glALx6QaIgw1u4joXsnfHTjWi6D.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7gf2GLNZ6lqbbTRuY9Vvrar0z3k.jpg",
