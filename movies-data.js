@@ -151,7 +151,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "",
+    title: "The Brink of War",
     type: "Movie",
     year: 2026,
     rating: 8.4,
