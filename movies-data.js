@@ -54,6 +54,31 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
+    title: "LEGO Star Wars: The Mandalorian",
+    type: "Movie",
+    year: 2026,
+    rating: 7.6,
+    age: "PG",
+    duration: "1h 43m",
+    genres: [
+      "Animation",
+      "Comedy",
+      "Family"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vhv7lBWYM0DUuNU2a0V7Rhq21dD.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/viZqGq9TNvQ5uXSD4ahg2RpRONT.jpg",
+    videoUrl: "1204680",
+    trailerUrl: "https://youtu.be/fWKpUCvC_RQ",
+    overview: "Wile E. Coyote sue Acme Corporation after decade of faulty product cause endless harm chase Road Runner. Team with down-on-luck lawyer, take corporate giant to court.",
+    overviewKurdish:"وایڵ ئی. کایۆتی دژی کۆمپانیای ئاکمی سکاڵا تۆمار دەکات لەدوای دەیان ساڵ بەرهەمی خراپ کە زیانی زۆری پێگەیاندووە لە کاتی ڕاونانی ڕۆدڕەنەر. لەگەڵ پارێزەرێکی بەختڕەش هاوکاری دەکات بۆ بردنی کۆمپانیا بۆ دادگا.",
+    director: "Dave Green",
+    cast: ["Will Forte, Lana Condor, Peter Dinklage"],
+    trending: true,
+    featured: true,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "Just Play Dead",
     type: "Movie",
     year: 2026,
