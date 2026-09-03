@@ -26,7 +26,7 @@ window._ANIME_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
     backdrop: "https://netflixjunkie-media.b-cdn.net/media/image/image_1742647488887.jpeg",
     videoUrl: "37854",
-    trailerUrl: "https://youtu.be/k9xyEqZbHuk?si=fRQVmx9K7r5xE3kD",
+    trailerUrl: "https://youtu.be/ZcsbhQxhFqU?si=GLtHLrEtroQsBfpN",
     anilistId: 21,
     animeSlug: "one-piece",
     overview: "Monkey D. Luffy refuses to let anyone or anything stand in the way of his quest to become the king of all pirates. With a course charted for the treacherous waters of the Grand Line and beyond, this is one captain who'll never give up until he's claimed the greatest treasure on Earth: the Legendary One Piece!",
