@@ -4,7 +4,7 @@
 
 window._MOVIES_DATA = [
   {
-    title: "Coyote vs. Acme",
+    title: "The Runner",
     type: "Movie",
     year: 2026,
     rating: 7.6,
