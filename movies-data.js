@@ -83,7 +83,7 @@ window._MOVIES_DATA = [
     year: 2026,
     rating: 8.4,
     age: "R",
-    duration: "30m",
+    duration: "30m",grand theft 
     genres: [
       "Action",
       "Adventure"
