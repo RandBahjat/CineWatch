@@ -11,7 +11,7 @@ window._MOVIES_DATA = [
     age: "PG",
     duration: "1h 43m",
     genres: [
-      "Drama",
+      "Animation",
       "Thriller"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/glALx6QaIgw1u4joXsnfHTjWi6D.jpg",
