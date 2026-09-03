@@ -2156,6 +2156,41 @@ body.rtl-layout .details-back-btn svg {
   border-color: rgba(255,255,255,0.4);
 }
 
+.details-sound-btn {
+  background: rgba(18, 22, 32, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+  font-size: 1.3rem;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.details-sound-btn:hover {
+  background: var(--primary, #e50914);
+  border-color: var(--primary, #e50914);
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 0 16px rgba(229, 9, 20, 0.6);
+}
+
+.details-sound-btn:active {
+  transform: scale(0.92);
+}
+
+.details-sound-btn.hidden {
+  display: none !important;
+}
+
 .details-hero-info {
   max-width: 680px;
   margin-bottom: 0;
