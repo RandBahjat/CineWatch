@@ -28,6 +28,30 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
+    title: "Just Play Dead",
+    type: "Movie",
+    year: 2026,
+    rating: 4.5,
+    age: "R",
+    duration: "1h 36m",
+    genres: [
+      "Drama",
+      "Thriller"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/glALx6QaIgw1u4joXsnfHTjWi6D.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/7gf2GLNZ6lqbbTRuY9Vvrar0z3k.jpg",
+    videoUrl: "1480574",
+    trailerUrl: "",
+    overview: "Criminal fake death for insurance money, frame wife's lover; wife plot kill him for real, both race outmaneuver each other.",
+    overviewKurdish:" تاوانبارێک وا دەردەخات کە مردووە بۆ بەدەستهێنانی پارەی بیمە، هاوسەرەکەشی تاوانبار دەکات، بەڵام هاوسەرەکەی پلانی کوشتنی ڕاستەقینەی داناوە، هەردووکیان پێشبڕکێ دەکەن بۆ ئەوەی زاڵ بن بەسەر یەکتریدا.",
+    director: "Martin Campbell",
+    cast: ["Samuel L. Jackson, Eva Green, María Pedraza, Eoin Macken"],
+    trending: true,
+    featured: true,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "The Whisper Man",
     type: "Movie",
     year: 2026,
