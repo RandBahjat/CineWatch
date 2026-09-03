@@ -1784,7 +1784,16 @@ function renderUserBadge() {
         </button>
       `;
       const authBtn = document.getElementById("openAuthBtn");
-      if (authBtn) authBtn.onclick = () => openAuthModal();
+      if (authBtn) {
+        authBtn.onclick = (e) => {
+          e.preventDefault();
+          if (typeof window.showAuth === 'function') {
+            window.showAuth();
+          } else {
+            openAuthModal();
+          }
+        };
+      }
     }
   }
 }
@@ -2933,15 +2942,24 @@ function setupVideoControls(video) {
 }
 
 function openAuthModal() {
-  const modal = document.getElementById("authModal");
+  if (typeof window.showAuth === 'function') {
+    window.showAuth();
+    return;
+  }
+  const modal = document.getElementById("authOverlay") || document.getElementById("authModal");
+  if (!modal) return;
   modal.classList.remove("hidden");
+  modal.style.display = "flex";
+  modal.style.opacity = "1";
+  modal.style.visibility = "visible";
+  modal.style.pointerEvents = "auto";
   document.body.style.overflow = "hidden";
 
   // Reset forms and hide Turnstile widgets
-  const loginForm = document.getElementById("loginForm");
-  const signupForm = document.getElementById("signupForm");
-  if (loginForm) loginForm.reset();
-  if (signupForm) signupForm.reset();
+  const loginForm = document.getElementById("loginForm") || document.getElementById("formSignIn");
+  const signupForm = document.getElementById("signupForm") || document.getElementById("formSignUp");
+  if (loginForm && typeof loginForm.reset === 'function') loginForm.reset();
+  if (signupForm && typeof signupForm.reset === 'function') signupForm.reset();
 
   const cfLogin = document.getElementById("cf-turnstile");
   if (cfLogin) cfLogin.classList.add("hidden");
@@ -2954,12 +2972,23 @@ function openAuthModal() {
   const signupAlert = document.getElementById("signupAlert");
   if (signupAlert) { signupAlert.classList.add("hidden"); signupAlert.textContent = ""; }
 }
+window.openAuthModal = openAuthModal;
 
 function closeAuthModal() {
-  const modal = document.getElementById("authModal");
+  if (typeof window.hideAuth === 'function') {
+    window.hideAuth();
+    return;
+  }
+  const modal = document.getElementById("authOverlay") || document.getElementById("authModal");
+  if (!modal) return;
   modal.classList.add("hidden");
+  modal.style.opacity = "0";
+  modal.style.visibility = "hidden";
+  modal.style.pointerEvents = "none";
+  modal.style.display = "";
   document.body.style.overflow = "";
 }
+window.closeAuthModal = closeAuthModal;
 
 function openReportModal(defaultSubject = "") {
   const modal = document.getElementById("reportModal");
