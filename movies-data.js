@@ -4,7 +4,7 @@
 
 window._MOVIES_DATA = [
   {
-    title: "",
+    title: "Coyote vs. Acme",
     type: "Movie",
     year: 2026,
     rating: 4.5,
