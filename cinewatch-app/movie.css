@@ -5002,8 +5002,11 @@ body.rtl-layout .details-back-btn svg {
 
 /* Custom Avatar Upload Styles */
 .avatar-custom-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 50%;
+  display: block;
 }
 
 .avatar-custom-img.badge-avatar {
@@ -5018,6 +5021,42 @@ body.rtl-layout .details-back-btn svg {
   border: 2px solid var(--primary);
 }
 
+.avatar-custom-img.sidebar-avatar {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-logout-btn {
+  margin-left: auto;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-dim, #9ca3af);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.sidebar-logout-btn:hover {
+  background: rgba(229, 9, 20, 0.2);
+  border-color: #e50914;
+  color: #e50914;
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(229, 9, 20, 0.45);
+}
+
+.sidebar-logout-btn:active {
+  transform: scale(0.92);
+}
 
 .picker-header {
   display: flex;
