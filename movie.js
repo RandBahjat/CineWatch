@@ -2915,6 +2915,18 @@ function closeVideoPlayer() {
   video.onloadedmetadata = null;
   video.oncanplay = null;
 
+  if (window.artPlayerInstance) {
+    try {
+      window.artPlayerInstance.destroy();
+    } catch (e) {}
+    window.artPlayerInstance = null;
+  }
+  const artApp = document.getElementById("artplayerApp");
+  if (artApp) {
+    artApp.classList.add("hidden");
+    artApp.innerHTML = "";
+  }
+
   if (state.currentPlayingMovie && video.currentTime > 0 && !video.classList.contains("hidden")) {
     // Native <video> player — save real progress
     updateContinueWatching(
