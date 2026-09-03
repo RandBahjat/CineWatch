@@ -31,6 +31,15 @@ window.POPULAR_SERIES = POPULAR_SERIES;
 // ==========================================
 let MOVIES = [];
 
+function extractYouTubeId(urlOrId) {
+  if (!urlOrId) return null;
+  const str = String(urlOrId).trim();
+  if (!str) return null;
+  if (/^[a-zA-Z0-9_-]{11}$/.test(str)) return str;
+  const match = str.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=|shorts\/))([\w-]{11})/i);
+  return match && match[1] ? match[1] : null;
+}
+
 function translateGenre(genre) {
   const cookies = document.cookie || '';
   const isSorani = cookies.includes('googtrans=/en/ckb');
@@ -1990,16 +1999,7 @@ function openDetailsModal(movieId) {
         iframe.id = 'detailsTrailerIframe';
         iframe.className = 'details-trailer-iframe';
 
-        function extractYt(urlOrId) {
-          if (!urlOrId) return null;
-          const str = String(urlOrId).trim();
-          if (!str) return null;
-          if (/^[a-zA-Z0-9_-]{11}$/.test(str)) return str;
-          const match = str.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=|shorts\/))([\w-]{11})/i);
-          return match && match[1] ? match[1] : null;
-        }
-
-        const customYt = extractYt(movie.trailerUrl || movie.trailer || movie.trailerYouTubeId);
+        const customYt = extractYouTubeId(movie.trailerUrl || movie.trailer || movie.trailerYouTubeId || movie.videoUrl);
         const query = encodeURIComponent(`${movie.title} ${movie.year || ''} official trailer`);
         iframe.src = customYt 
           ? `https://www.youtube.com/embed/${customYt}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${customYt}&iv_load_policy=3&cc_load_policy=0&cc_lang_pref=off&hl=en&enablejsapi=1`
@@ -2035,7 +2035,6 @@ function openDetailsModal(movieId) {
         requestAnimationFrame(() => {
           setTimeout(() => {
             wrap.classList.add('active');
-            currentBg.style.backgroundImage = 'none';
           }, 150);
         });
       }, 3000);
@@ -2472,6 +2471,26 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   }
 
   const videoUrlStr = String(videoUrl || "");
+  const ytVideoId = extractYouTubeId(videoUrlStr);
+  if (ytVideoId) {
+    if (video) {
+      video.classList.add("hidden");
+      video.pause();
+      video.src = "";
+    }
+    if (iframe) {
+      iframe.classList.remove("hidden");
+      iframe.src = `https://www.youtube.com/embed/${ytVideoId}?autoplay=1&rel=0&modestbranding=1`;
+    }
+    document.querySelector(".video-container")?.classList.add("is-iframe");
+    if (controlsBar) controlsBar.classList.add("hidden");
+    if (centerOverlay) centerOverlay.style.display = "none";
+    if (serverWrap) serverWrap.classList.add("hidden");
+    modal.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+    return;
+  }
+
   const isNumericId = /^\d+$/.test(videoUrlStr);
   const isTvEmbed = videoUrlStr.startsWith("tv_embed:");
   const isEmbedUrl = isTvEmbed || videoUrlStr.includes("/embed/") || videoUrlStr.includes("moviepire.co") || videoUrlStr.includes("vidapi.ru") || videoUrlStr.includes("vaplayer.ru");
@@ -2657,6 +2676,26 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
 
   // Check if it's an embed ID or URL
   const movieVideoUrlStr = String(movie.videoUrl || "");
+  const ytVideoId = extractYouTubeId(movieVideoUrlStr);
+  if (ytVideoId) {
+    if (video) {
+      video.classList.add("hidden");
+      video.pause();
+      video.src = "";
+    }
+    if (iframe) {
+      iframe.classList.remove("hidden");
+      iframe.src = `https://www.youtube.com/embed/${ytVideoId}?autoplay=1&rel=0&modestbranding=1`;
+    }
+    document.querySelector(".video-container")?.classList.add("is-iframe");
+    if (controlsBar) controlsBar.classList.add("hidden");
+    if (centerOverlay) centerOverlay.style.display = "none";
+    if (serverWrap) serverWrap.classList.add("hidden");
+    modal.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+    return;
+  }
+
   const isNumericId = /^\d+$/.test(movieVideoUrlStr);
   const isEmbedUrl = movieVideoUrlStr.includes("/embed/") || movieVideoUrlStr.includes("moviepire.co") || movieVideoUrlStr.includes("vidapi.ru") || movieVideoUrlStr.includes("vaplayer.ru");
   const serverWrap = document.getElementById("serverSelectWrap");
