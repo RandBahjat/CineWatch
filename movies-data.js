@@ -168,7 +168,7 @@ window._MOVIES_DATA = [
     trailerUrl: "https://youtu.be/sdQbQU70Nd0?si=Ig115LMtNnOMPkkm",
     overview: "In October 1986, U.S. President Ronald Reagan and Soviet leader Mikhail Gorbachev meet in Iceland for high-stakes summit to eliminate nuclear weapons. Both big leaders clash over missile shields and cold war ideas, fighting against time to make peace deal before world explode!",
     overviewKurdish: "لە تشرینی یەکەمی ساڵی ١٩٨٦، ڕۆناڵد ڕەیگن سەرۆکی ئەمریکا و میخائیل گۆرباتشۆڤ سەرۆکی یەکێتیی سۆڤیەت لە ئایسلەندا کۆدەبنەوە لە لووتکەیەکی گرنگدا بۆ دانوستان لەسەر لەناوبردنی چەکە ئەتۆمییەکان. لەگەڵ زیادبوونی گوشاری ڕاوێژکاران لەسەر هەردوولا، هەردوو سەرکردەکە تووشی ململانێ دەبن لەسەر سیستەمی بەرگری و بیرۆکەکانی جەنگی سارد، و هەوڵدەدەن بگەنە ڕێککەوتنی ئاشتی پێش ئەوەی ئاڵۆزییەکان کارەسات بنێنەوە.",
-    director: "Rockstar Games",
+    director: "Michael Russell Gunn",
     trending: true,
     featured: true,
     is4k: false,
