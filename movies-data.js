@@ -159,7 +159,8 @@ window._MOVIES_DATA = [
     duration: "1h 57m",
     genres: [
       "Drama",
-      "Hiso"
+      "History",
+      ""
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xTZuh9ziUjIyHBWO9OvqNIPqVWe.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oDp9Yvvi2mRHXxPh6E2wi9ybhtK.jpg",
