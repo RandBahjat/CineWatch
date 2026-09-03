@@ -96,10 +96,10 @@ function showToast(msg) {
 function getActiveUser() {
   if (window.state && window.state.user) return window.state.user;
   try {
-    const raw = localStorage.getItem('cinewatch_user');
+    const raw = localStorage.getItem('cw_user') || localStorage.getItem('cinewatch_user') || sessionStorage.getItem('cw_user');
     if (raw) {
       const parsed = JSON.parse(raw);
-      if (parsed && (parsed.id || parsed.email || parsed.username)) return parsed;
+      if (parsed && (parsed.id || parsed.email || parsed.username || parsed.name)) return parsed;
     }
   } catch (e) {}
   return null;
