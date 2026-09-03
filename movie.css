@@ -3478,68 +3478,45 @@ body.rtl-layout .details-back-btn svg {
 @media (max-width: 768px) {
   .navbar .brand-logo {
     display: none !important; /* Hide logo from mobile top navbar */
-  }  .nav-container {
-    justify-content: space-between !important;
-    align-items: center !important;
-    gap: 0.5rem !important;
-    padding: 0 0.8rem !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
+  }
+
+  .nav-container {
+    justify-content: space-between;
+    gap: 0.6rem;
+    padding: 0 1rem;
   }
 
   .nav-left {
-    display: flex !important;
-    align-items: center !important;
-    gap: 0.4rem !important;
-    flex-shrink: 0 !important;
-    min-width: 36px !important;
-    z-index: 10 !important;
-  }
-
-  .mobile-menu-btn {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 36px !important;
-    height: 36px !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    background: transparent !important;
-    border: none !important;
-    color: #fff !important;
-    font-size: 1.6rem !important;
-    flex-shrink: 0 !important;
-    cursor: pointer !important;
+    gap: 0.4rem;
+    flex-shrink: 0;
   }
 
   .nav-right {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: flex-end !important;
-    gap: 0.35rem !important;
-    flex-shrink: 0 !important;
-    flex-grow: 0 !important;
-    margin-left: auto !important;
-    max-width: calc(100% - 46px) !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.4rem;
+    flex: 1;
+    margin-left: 0;
   }
 
   .nav-action-btn {
-    width: 34px !important;
-    height: 34px !important;
+    width: 36px !important;
+    height: 36px !important;
     font-size: 1.05rem !important;
-    flex-shrink: 0 !important;
+    flex-shrink: 0;
   }
 
   /* Compact AI Assistant Button on Mobile */
   .nav-ai-btn {
-    width: 34px !important;
-    height: 34px !important;
+    width: 36px !important;
+    height: 36px !important;
     padding: 0 !important;
     border-radius: 50% !important;
     justify-content: center !important;
     background: linear-gradient(135deg, rgba(229, 9, 20, 0.25), rgba(138, 43, 226, 0.35)) !important;
     border: 1px solid rgba(229, 9, 20, 0.5) !important;
-    flex-shrink: 0 !important;
+    flex-shrink: 0;
   }
 
   .nav-ai-btn .ai-btn-text {
@@ -3551,35 +3528,6 @@ body.rtl-layout .details-back-btn svg {
     color: #ff4d5a;
   }
 
-  /* Compact Download App Button on Mobile */
-  .nav-download-btn {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 34px !important;
-    height: 34px !important;
-    padding: 0 !important;
-    border-radius: 50% !important;
-    background: rgba(255, 255, 255, 0.08) !important;
-    border: 1px solid rgba(255, 255, 255, 0.15) !important;
-    flex-shrink: 0 !important;
-  }
-
-  .nav-download-btn .download-text {
-    display: none !important;
-  }
-
-  .nav-download-btn .download-icon-mobile {
-    display: inline-block !important;
-    font-size: 1.1rem !important;
-    color: #fff !important;
-  }
-
-  .nav-download-btn:hover {
-    background: rgba(255, 255, 255, 0.15) !important;
-    border-color: rgba(255, 255, 255, 0.3) !important;
-  }
-
   /* Hide Report button in mobile top navbar (accessible in mobile drawer menu) */
   .nav-report-btn {
     display: none !important;
@@ -3587,30 +3535,20 @@ body.rtl-layout .details-back-btn svg {
 
   /* Compact Language dropdown on mobile */
   .custom-lang-dropdown {
-    margin: 0 !important;
-    flex-shrink: 0 !important;
-    max-width: 95px !important;
+    margin-right: 0 !important;
+    flex-shrink: 0;
   }
 
   .lang-dropdown-selected {
-    padding: 4px 7px !important;
+    padding: 4px 8px !important;
     font-size: 0.76rem !important;
     gap: 3px !important;
-    white-space: nowrap !important;
-  }
-
-  .lang-dropdown-selected .lang-icon {
-    font-size: 0.95rem !important;
-  }
-
-  .lang-dropdown-selected .lang-arrow {
-    font-size: 0.75rem !important;
   }
 
   .user-profile-container {
     display: flex !important;
-    align-items: center !important;
-    flex-shrink: 0 !important;
+    align-items: center;
+    flex-shrink: 0;
   }
 
   .user-profile-container .profile-badge .avatar {
@@ -5064,8 +5002,11 @@ body.rtl-layout .details-back-btn svg {
 
 /* Custom Avatar Upload Styles */
 .avatar-custom-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 50%;
+  display: block;
 }
 
 .avatar-custom-img.badge-avatar {
@@ -5080,6 +5021,42 @@ body.rtl-layout .details-back-btn svg {
   border: 2px solid var(--primary);
 }
 
+.avatar-custom-img.sidebar-avatar {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-logout-btn {
+  margin-left: auto;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-dim, #9ca3af);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.sidebar-logout-btn:hover {
+  background: rgba(229, 9, 20, 0.2);
+  border-color: #e50914;
+  color: #e50914;
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(229, 9, 20, 0.45);
+}
+
+.sidebar-logout-btn:active {
+  transform: scale(0.92);
+}
 
 .picker-header {
   display: flex;
@@ -8136,49 +8113,3 @@ body.rtl-layout .ai-prompt-card {
   }
 }
 
-/* Premium Download App Button */
-.nav-download-btn {
-  display: inline-flex;
-  align-items: center;
-  color: #fff;
-  text-decoration: none;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 0.95rem;
-  padding: 6px 16px;
-  border-radius: 50px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
-}
-
-.nav-download-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-1px);
-}
-
-/* ==========================================
-   RTL Mobile Navbar Separation & Overlap Guard
-   ========================================== */
-body.rtl-layout .nav-container {
-  flex-direction: row !important;
-}
-
-body.rtl-layout .nav-left {
-  margin-right: 0 !important;
-  margin-left: auto !important;
-  order: 1 !important;
-}
-
-body.rtl-layout .nav-right {
-  margin-left: 0 !important;
-  margin-right: auto !important;
-  justify-content: flex-start !important;
-  order: 2 !important;
-}
-
-body.rtl-layout .custom-lang-dropdown {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}

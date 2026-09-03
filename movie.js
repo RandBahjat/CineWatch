@@ -1484,6 +1484,21 @@ function renderUserBadge() {
       `;
     }
 
+    function logout() {
+      if (window.CW_API && typeof window.CW_API.signOut === 'function') {
+        window.CW_API.signOut();
+      }
+      saveUser(null);
+      if (typeof state !== 'undefined' && state) state.user = null;
+      localStorage.removeItem('cw_user');
+      localStorage.removeItem('supabase_auth_token');
+      renderUserBadge();
+      if (typeof updateProfileUI === 'function') updateProfileUI();
+      showToast("Signed out successfully");
+      closePanel();
+    }
+    window.logout = logout;
+
     if (sidebarFooter && document.getElementById("openAuthBtn")) {
       sidebarFooter.innerHTML = `
         <div class="sidebar-user-wrap">
@@ -1493,24 +1508,34 @@ function renderUserBadge() {
               <span class="user-name">${userName}</span>
               <span class="user-status">CineWatch</span>
             </div>
-            <ion-icon name="chevron-up-outline" class="user-chevron"></ion-icon>
-          </div>
-          
-          <div class="user-dropdown">
-            <button class="user-dropdown-item" onclick="if(window.switchTab) window.switchTab('settings')">
-              <ion-icon name="settings-outline"></ion-icon> Settings
-            </button>
-            <button class="user-dropdown-item" style="color: var(--danger);" onclick="logout()">
-              <ion-icon name="log-out-outline"></ion-icon> Log Out
+            <button class="sidebar-logout-btn" id="sidebarLogoutBtn" title="Log Out" aria-label="Log Out">
+              <ion-icon name="log-out-outline"></ion-icon>
             </button>
           </div>
         </div>
       `;
+
+      const logoutBtn = sidebarFooter.querySelector("#sidebarLogoutBtn");
+      if (logoutBtn) {
+        logoutBtn.onclick = (e) => {
+          e.stopPropagation();
+          e.preventDefault();
+          logout();
+        };
+      }
     } else if (sidebarFooter && document.querySelector(".sidebar-user-wrap")) {
        const avatarEl = sidebarFooter.querySelector(".user-avatar");
        const nameEl = sidebarFooter.querySelector(".user-name");
        if (avatarEl) avatarEl.innerHTML = renderAvatarHTML(userAvatar, "sidebar-avatar");
        if (nameEl) nameEl.textContent = userName;
+       const logoutBtn = sidebarFooter.querySelector("#sidebarLogoutBtn");
+       if (logoutBtn) {
+         logoutBtn.onclick = (e) => {
+           e.stopPropagation();
+           e.preventDefault();
+           logout();
+         };
+       }
     }
 
 
