@@ -1273,16 +1273,45 @@ function _startTrailer(heroEl, movie) {
 
   let trailerSrc = '';
   if (customYtId) {
-    trailerSrc = `https://www.youtube.com/embed/${customYtId}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${customYtId}&iv_load_policy=3&enablejsapi=1`;
+    trailerSrc = `https://www.youtube.com/embed/${customYtId}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${customYtId}&iv_load_policy=3&cc_load_policy=0&cc_lang_pref=off&hl=en&enablejsapi=1`;
   } else {
     const query = encodeURIComponent(`${movie.title} ${movie.year || ''} official trailer`);
-    trailerSrc = `https://www.youtube.com/embed?listType=search&list=${query}&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3&enablejsapi=1`;
+    trailerSrc = `https://www.youtube.com/embed?listType=search&list=${query}&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3&cc_load_policy=0&cc_lang_pref=off&hl=en&enablejsapi=1`;
   }
 
   iframe.src = trailerSrc;
   iframe.referrerPolicy = 'strict-origin-when-cross-origin';
   iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
   iframe.allowFullscreen = false;
+
+  function disableSubtitles() {
+    try {
+      if (iframe && iframe.contentWindow) {
+        iframe.contentWindow.postMessage(JSON.stringify({
+          event: 'command',
+          func: 'unloadModule',
+          args: ['captions']
+        }), '*');
+        iframe.contentWindow.postMessage(JSON.stringify({
+          event: 'command',
+          func: 'setOption',
+          args: ['captions', 'track', {}]
+        }), '*');
+        iframe.contentWindow.postMessage(JSON.stringify({
+          event: 'command',
+          func: 'setOption',
+          args: ['cc', 'track', {}]
+        }), '*');
+      }
+    } catch(e) {}
+  }
+
+  iframe.onload = () => {
+    disableSubtitles();
+    setTimeout(disableSubtitles, 500);
+    setTimeout(disableSubtitles, 1200);
+    setTimeout(disableSubtitles, 2500);
+  };
 
   wrap.appendChild(iframe);
   wrap.classList.remove('hidden');
