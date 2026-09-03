@@ -2099,7 +2099,7 @@ media-video-layout::part(tooltip) {
   height: 56.25vw; /* 100 * 9 / 16 = 16:9 ratio */
   min-height: 100vh;
   min-width: 177.78vh; /* 100 * 16 / 9 = 16:9 ratio */
-  transform: translate(-50%, -50%) scale(1.15); /* Scale to guarantee full-bleed cover fit and crop out YouTube top/bottom chrome */
+  transform: translate(-50%, -50%) scale(1.38); /* Scale 1.38x expands 2.39:1 widescreen footage to eliminate top/bottom black bars completely */
   border: none;
   pointer-events: none;
   background: #000;
