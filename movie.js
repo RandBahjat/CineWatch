@@ -2037,6 +2037,36 @@ function openDetailsModal(movieId) {
             wrap.classList.add('active');
           }, 150);
         });
+
+        // Wire up sound toggle button for trailer background
+        const soundBtn = document.getElementById('detailsSoundBtn');
+        if (soundBtn) {
+          soundBtn.classList.remove('hidden');
+          soundBtn.innerHTML = '<ion-icon name="volume-mute"></ion-icon>';
+          let isMuted = true;
+          soundBtn.onclick = (e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            isMuted = !isMuted;
+            try {
+              if (iframe && iframe.contentWindow) {
+                iframe.contentWindow.postMessage(JSON.stringify({
+                  event: 'command',
+                  func: isMuted ? 'mute' : 'unMute',
+                  args: []
+                }), '*');
+                if (!isMuted) {
+                  iframe.contentWindow.postMessage(JSON.stringify({
+                    event: 'command',
+                    func: 'setVolume',
+                    args: [100]
+                  }), '*');
+                }
+              }
+            } catch (err) {}
+            soundBtn.innerHTML = `<ion-icon name="${isMuted ? 'volume-mute' : 'volume-high'}"></ion-icon>`;
+          };
+        }
       }, 3000);
     }
     const titleEl = document.getElementById("detailsTitle");
