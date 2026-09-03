@@ -18,7 +18,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vhv7lBWYM0DUuNU2a0V7Rhq21dD.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/kf5Mrf9dvlamRqDK5pVeVKn1fx6.jpg",
     videoUrl: "1204680",
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/fY_gBf8QVR0?si=EAMeVeC-cUzTVIs-",
     overview: "Criminal fake death for insurance money, frame wife's lover; wife plot kill him for real, both race outmaneuver each other.",
     overviewKurdish:" تاوانبارێک وا دەردەخات کە مردووە بۆ بەدەستهێنانی پارەی بیمە، هاوسەرەکەشی تاوانبار دەکات، بەڵام هاوسەرەکەی پلانی کوشتنی ڕاستەقینەی داناوە، هەردووکیان پێشبڕکێ دەکەن بۆ ئەوەی زاڵ بن بەسەر یەکتریدا.",
     director: "Martin Campbell",
