@@ -1,9 +1,22 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 
-const PORT = 3500;
+let PORT = parseInt(process.env.PORT, 10) || 3500;
 const ROOT_DIR = path.join(__dirname, 'cinewatch-app');
+
+function getLocalIp() {
+  const interfaces = os.networkInterfaces();
+  for (const name of Object.keys(interfaces)) {
+    for (const iface of interfaces[name]) {
+      if (iface.family === 'IPv4' && !iface.internal) {
+        return iface.address;
+      }
+    }
+  }
+  return 'localhost';
+}
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',
