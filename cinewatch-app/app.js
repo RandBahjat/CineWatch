@@ -1098,10 +1098,10 @@ function openDetail(movieId) {
 
   /* ── Hero: Full-screen background ── */
   if (hero) {
-    hero.style.backgroundImage = `url('${movie.backdrop || movie.poster || ''}')`;
-    hero.style.backgroundSize  = 'cover';
-    hero.style.backgroundPosition = 'center center';
+    hero.style.backgroundImage = 'none';
     hero.innerHTML = `
+      <div class="detail-hero-backdrop" id="detailHeroBackdrop" style="background-image: url('${movie.backdrop || movie.poster || ''}');"></div>
+      <div class="trailer-iframe-wrap hidden" id="trailerIframeWrap"></div>
       <div class="immersive-gradient"></div>
       <button class="trailer-sound-btn hidden" id="trailerSoundBtn" title="Toggle sound">
         <ion-icon name="volume-mute"></ion-icon>
