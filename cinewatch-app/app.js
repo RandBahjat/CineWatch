@@ -2265,7 +2265,18 @@ function startApp() {
       if (typeof saveUser === 'function') saveUser(null);
       if (typeof renderUserBadge === 'function') renderUserBadge();
     }
+    syncSettingsProfile();
     showToast('Signed out successfully');
+  });
+
+  // Sign In button inside Settings when logged out
+  document.getElementById('settingsLoginBtn')?.addEventListener('click', () => {
+    settingsOverlay?.classList.add('hidden');
+    if (typeof openAuthOverlay === 'function') {
+      openAuthOverlay('signin');
+    } else {
+      showAuth();
+    }
   });
 
   // ── Auth overlay fade helpers ─────────────────────────────────────────
