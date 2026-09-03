@@ -2418,14 +2418,19 @@ function startApp() {
         banner.style.backgroundImage = `url('https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=2070&auto=format&fit=crop')`;
       }
     }
+    syncSettingsProfile();
   }
   
   // Call on load
-  setTimeout(updateProfileUI, 1000); // give API time to load
+  setTimeout(() => {
+    updateProfileUI();
+    syncSettingsProfile();
+  }, 1000); // give API time to load
 
   // Listen for auth changes from API
   window.addEventListener('cw:authChanged', (e) => {
     updateProfileUI();
+    syncSettingsProfile();
   });
 
   // Log Out Action
