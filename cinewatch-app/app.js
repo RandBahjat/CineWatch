@@ -1878,6 +1878,17 @@ function closePlayer() {
     vidstackPlayer.src = '';
     vidstackPlayer.classList.add('hidden');
   }
+  if (window.artPlayerInstance) {
+    try {
+      window.artPlayerInstance.destroy();
+    } catch (e) {}
+    window.artPlayerInstance = null;
+  }
+  const artApp = document.getElementById('artplayerApp');
+  if (artApp) {
+    artApp.classList.add('hidden');
+    artApp.innerHTML = '';
+  }
   if (_cwPlayerState.hlsInstance) {
     _cwPlayerState.hlsInstance.destroy();
     _cwPlayerState.hlsInstance = null;
