@@ -1408,6 +1408,218 @@ function formatPlayerTime(seconds) {
   return h > 0 ? `${h}:${pad(m)}:${pad(s)}` : `${pad(m)}:${pad(s)}`;
 }
 
+function initArtPlayerForAnimeApp(movie, sNum, epNum) {
+  const playerModal = document.getElementById('playerModal');
+  const artContainer = document.getElementById('artplayerApp');
+  const vidstackPlayer = document.getElementById('vidstackPlayer');
+  const iframeEl = document.getElementById('iframeEl');
+  const videoEl = document.getElementById('videoEl');
+  const playerControls = document.getElementById('playerControls');
+  const centerPlayBadge = document.getElementById('centerPlayBadge');
+  const seekLeftZone = document.getElementById('seekLeftZone');
+  const seekRightZone = document.getElementById('seekRightZone');
+  const playerTitle = document.getElementById('playerTitle');
+  const playerLoading = document.getElementById('playerLoading');
+
+  if (playerTitle) playerTitle.textContent = `${movie.title} - S${sNum} E${epNum}`;
+  if (playerLoading) playerLoading.classList.add('hidden');
+  if (playerControls) playerControls.classList.add('hidden');
+  if (centerPlayBadge) centerPlayBadge.classList.add('hidden');
+  if (seekLeftZone) seekLeftZone.classList.add('hidden');
+  if (seekRightZone) seekRightZone.classList.add('hidden');
+
+  if (vidstackPlayer) {
+    vidstackPlayer.pause();
+    vidstackPlayer.src = '';
+    vidstackPlayer.classList.add('hidden');
+  }
+  if (videoEl) {
+    videoEl.pause();
+    videoEl.src = '';
+    videoEl.classList.add('hidden');
+  }
+  if (iframeEl) {
+    iframeEl.src = '';
+    iframeEl.classList.add('hidden');
+  }
+
+  if (artContainer) {
+    artContainer.classList.remove('hidden');
+  }
+
+  if (window.artPlayerInstance) {
+    try { window.artPlayerInstance.destroy(); } catch (e) {}
+    window.artPlayerInstance = null;
+  }
+
+  const poster = movie.backdrop || movie.poster || '';
+  const cleanUrl = String(movie.videoUrl || '');
+  const streamUrl = cleanUrl.startsWith('http') ? cleanUrl : 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8';
+
+  if (typeof Artplayer === 'undefined') {
+    console.warn('Artplayer library not yet available');
+    return;
+  }
+
+  try {
+    window.artPlayerInstance = new Artplayer({
+      container: '#artplayerApp',
+      url: streamUrl,
+      poster: poster,
+      volume: 0.7,
+      isLive: false,
+      muted: false,
+      autoplay: true,
+      pip: true,
+      autoSize: false,
+      autoMini: true,
+      screenshot: true,
+      setting: true,
+      loop: true,
+      flip: true,
+      playbackRate: true,
+      aspectRatio: true,
+      fullscreen: true,
+      fullscreenWeb: true,
+      subtitleOffset: true,
+      miniProgressBar: true,
+      mutex: true,
+      backdrop: true,
+      playsInline: true,
+      autoPlayback: true,
+      airplay: true,
+      theme: '#23ade5',
+      lang: navigator.language ? navigator.language.toLowerCase() : 'en',
+      moreVideoAttr: {
+        crossOrigin: 'anonymous',
+      },
+      customType: {
+        m3u8: function (video, url, art) {
+          if (typeof Hls !== 'undefined' && Hls.isSupported()) {
+            if (art.hls) art.hls.destroy();
+            const hls = new Hls();
+            hls.loadSource(url);
+            hls.attachMedia(video);
+            art.hls = hls;
+            art.on('destroy', () => hls.destroy());
+          } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = url;
+          } else {
+            art.notice.show = 'Unsupported video format: m3u8';
+          }
+        },
+      },
+      settings: [
+        {
+          width: 200,
+          html: 'Subtitle',
+          tooltip: 'Subtitles',
+          icon: '<ion-icon name="subtitles-outline" style="font-size:1.2rem;"></ion-icon>',
+          selector: [
+            {
+              html: 'Display',
+              tooltip: 'Show',
+              switch: true,
+              onSwitch(item) {
+                item.tooltip = item.switch ? 'Hide' : 'Show';
+                if (window.artPlayerInstance) {
+                  window.artPlayerInstance.subtitle.show = !item.switch;
+                }
+                return !item.switch;
+              },
+            },
+            {
+              default: true,
+              html: 'English Sub',
+              url: '',
+            },
+            {
+              html: 'Kurdish Sub',
+              url: '',
+            },
+            {
+              html: 'Japanese (Raw)',
+              url: '',
+            },
+          ],
+          onSelect(item) {
+            if (item.url && window.artPlayerInstance) {
+              window.artPlayerInstance.subtitle.switch(item.url, { name: item.html });
+            }
+            return item.html;
+          },
+        },
+        {
+          html: 'Audio / Dub',
+          icon: '<ion-icon name="volume-high-outline" style="font-size:1.2rem;"></ion-icon>',
+          tooltip: 'Japanese',
+          selector: [
+            { default: true, html: 'Japanese (Original)' },
+            { html: 'English Dub' },
+          ],
+        },
+        {
+          html: 'Playback Speed',
+          icon: '<ion-icon name="speedometer-outline" style="font-size:1.2rem;"></ion-icon>',
+          tooltip: '1x',
+          range: [1, 0.5, 3, 0.25],
+          onRange(item) {
+            if (window.artPlayerInstance) window.artPlayerInstance.playbackRate = item.range[0];
+            return `${item.range[0]}x`;
+          },
+        },
+        {
+          html: 'Switch Server (Embed)',
+          icon: '<ion-icon name="server-outline" style="font-size:1.2rem;"></ion-icon>',
+          tooltip: 'ArtPlayer',
+          selector: [
+            { default: true, html: 'ArtPlayer (Glass)' },
+            { html: 'VidLink (Embed)' },
+            { html: 'AutoEmbed' }
+          ],
+          onSelect(item) {
+            if (item.html.includes('VidLink')) {
+              if (window.artPlayerInstance) window.artPlayerInstance.pause();
+              artContainer.classList.add('hidden');
+              iframeEl.classList.remove('hidden');
+              const tmdb = movie.tmdbId || movie.videoUrl || '37854';
+              iframeEl.src = `https://vidlink.pro/tv/${tmdb}/${sNum}/${epNum}?primaryColor=e50914`;
+            } else if (item.html.includes('AutoEmbed')) {
+              if (window.artPlayerInstance) window.artPlayerInstance.pause();
+              artContainer.classList.add('hidden');
+              iframeEl.classList.remove('hidden');
+              const tmdb = movie.tmdbId || movie.videoUrl || '37854';
+              iframeEl.src = `https://player.autoembed.cc/embed/tv/${tmdb}/${sNum}/${epNum}`;
+            }
+            return item.html;
+          }
+        }
+      ],
+      contextmenu: [
+        {
+          html: 'CineWatch Anime Glass Player',
+          click(contextmenu) {
+            contextmenu.show = false;
+          },
+        },
+      ],
+      controls: [
+        {
+          position: 'right',
+          html: '<span style="padding: 3px 10px; background: rgba(35,173,229,0.2); border: 1px solid #23ade5; border-radius: 6px; font-size: 0.72rem; font-weight: 700; color: #23ade5; letter-spacing: 0.5px;">ANIME</span>',
+          index: 1,
+          tooltip: 'Dedicated Anime Mode',
+        },
+      ],
+    });
+  } catch (err) {
+    console.error('Failed to init ArtPlayer in app:', err);
+  }
+
+  playerModal?.classList.remove('hidden');
+  resetPlayerIdleTimer();
+}
+
 function playMovieDirect(movieId) {
   let movie = _movieMap.get(String(movieId)) || state.currentDetail;
   if (!movie && movieId) {
@@ -1447,6 +1659,12 @@ function playMovieDirect(movieId) {
   } else {
     sNum = movie.season || 1;
     epNum = movie.episode || 1;
+  }
+
+  const isAnime = !!(movie.isAnime || movie.type === 'Anime');
+  if (isAnime) {
+    initArtPlayerForAnimeApp(movie, sNum, epNum);
+    return;
   }
 
   let vidLinkUrl = '';
