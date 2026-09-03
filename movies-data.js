@@ -21,7 +21,7 @@ window._MOVIES_DATA = [
     trailerUrl: "https://youtu.be/raY-TDLE458?si=kl8RoS6tBCeHwgEX",
     overview: "High-powered London lawyer Maia Marten out on morning jog when mystery man hijack her diabetic son's insulin device. To save kid, Maia must sprint full-speed across London, obey crazy demands, and kill court witness before time run out.",
     overviewKurdish:"وایمایا مارتن، پارێزەرێکی بەتوانای لۆندۆنە. لە کاتی ڕاکردنی بەیانیان، کەسێکی نادیار ڕاڵێو و دەسەڵات دەگرێت بەسەر ئامێری ئەنسۆلینی کوڕە شەکرەدارەکەی. بۆ ڕزگارکردنی ژیانی کوڕەکەی، پێویستە مایا بە خێرایی لەنێو شاری لۆندۆن ڕابکات، گوێڕایەڵی داواکارییە مەترسیدارەکان بێت و شایەتحاڵێکی دادگا بکوژێت پێش ئەوەی کات تەواو بێت.",
-    director: "Dave Green",
+    director: "Kevin Macdonald",
     cast: ["Will Forte, Lana Condor, Peter Dinklage"],
     trending: true,
     featured: true,
