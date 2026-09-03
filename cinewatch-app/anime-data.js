@@ -15809,7 +15809,7 @@ window._ANIME_DATA = [
             overview: "Ichigo Kurosaki is a teenage boy given the ability to see ghosts.While trying to help a young girl ghost being terrorized by a giant monster called a Hollow..he's saved by the intervention of Rukia Kuchiki, a tough female soul reaper..Later when a Hollow appears and terrorizes Ichigo's family, an injured Rukia makes a fateful decision and transfers her remaining powers to Ichigo.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/540/1351123.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -15819,7 +15819,7 @@ window._ANIME_DATA = [
             overview: "Waiting for her powers to return Rukia poses as an exchange student at Ichigo's school.Ichigo must take her place as a Soul Reaper.When he later battles a Hollow, he recognizes it as his friend, Orihime's older brother.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/541/1353532.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -15829,7 +15829,7 @@ window._ANIME_DATA = [
             overview: "Orihime learns that her brother is a Hollow, a soul that didn't pass peacefully over to the Soul Society but lingered instead, pursing those they loved most in life.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/920222.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -15839,7 +15839,7 @@ window._ANIME_DATA = [
             overview: "Ichigo's friend and classmate Chad Sado brings a bird to school that turns out to be cursed and contains the soul of a boy who lived a tragic life.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/920226.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -15849,7 +15849,7 @@ window._ANIME_DATA = [
             overview: "Rukia and Chad fight a vicious Hollow named Shrieker, the Hollow has defeated a large number of Soul Reapers in battles and has committed many crimes.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/920227.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -15859,7 +15859,7 @@ window._ANIME_DATA = [
             overview: "At a Soul Reaper supply shop, Rukia picks up a modified soul to take over Ichigo's body while he's pulling Soul Reaper duty. But the mod soul takes off with Ichigo's body to have a little fun!",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/920860.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -15869,7 +15869,7 @@ window._ANIME_DATA = [
             overview: "Rukia and Ichigo track Ichigo's body to a local elementary school. While Ichigo struggles with mischievous soul inhabiting his body, Rukia receives word of a Hollow sighting nearby, but is unable to confirm it's location.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/920865.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -15879,7 +15879,7 @@ window._ANIME_DATA = [
             overview: "On the anniversary of his mother's death, Ichigo intends to take the day off from Soul Reaper duties and visit her grave with the rest of his family, but Rukia is at the cemetery waiting for him. She hears how his mother died and has some suggestions to offer him.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921731.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -15889,7 +15889,7 @@ window._ANIME_DATA = [
             overview: "Ichigo faces the Grand Fisher, a Hollow that uses a lure in the shape of a little girl, who Ichigo recalls with shock as the same girl he saw when his mother died. He attacks the Hollow in a rage, making him an easy target.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921740.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -15899,7 +15899,7 @@ window._ANIME_DATA = [
             overview: "When television hero Don Kanonji schedules a live recording of his show \"Spirit Hunter\" at a local abandoned hospital, Ichigo is surprised to see that an actual demi-Hollow is being summoned for the show.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921744.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -15909,7 +15909,7 @@ window._ANIME_DATA = [
             overview: "Rumors spread about Ichigo and Rukia's relationship when they keep dissappearing from school to respond to Hollow alerts. Overworked and frustrated, Ichigo is unaware that one of his classmates, Uryu Ishida, possesses spiritual powers of his own.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921784.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -15919,7 +15919,7 @@ window._ANIME_DATA = [
             overview: "In order to prove how  useless Soul Reapers are, Uryu releases bait to draw Hollows to their town. Whoever gets rid of the most wins the challenge, but soon Hollows are everywhere, including one that threatens Chad and Ichigo's sister.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921805.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -15929,7 +15929,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921807.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           }
         ]
@@ -15944,7 +15944,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921822.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -15954,7 +15954,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921824.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -15964,7 +15964,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921829.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -15974,7 +15974,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921832.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -15984,7 +15984,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921833.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -15994,7 +15994,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921834.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16004,7 +16004,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921835.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16014,7 +16014,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921838.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16024,7 +16024,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/921839.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16034,7 +16034,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922105.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16044,7 +16044,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922108.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16054,7 +16054,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922117.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16064,7 +16064,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922122.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16074,7 +16074,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922125.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16084,7 +16084,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922126.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16094,7 +16094,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922127.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16104,7 +16104,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922128.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16114,7 +16114,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922129.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16124,7 +16124,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922130.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16134,7 +16134,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922133.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16144,7 +16144,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922135.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16154,7 +16154,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922138.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16164,7 +16164,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922139.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16174,7 +16174,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922158.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16184,7 +16184,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922164.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16194,7 +16194,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922166.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16204,7 +16204,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922169.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16214,7 +16214,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922170.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16224,7 +16224,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922177.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16234,7 +16234,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922179.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16244,7 +16244,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922180.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16254,7 +16254,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922182.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16264,7 +16264,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922200.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16274,7 +16274,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922201.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16284,7 +16284,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922202.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16294,7 +16294,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922203.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16304,7 +16304,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922204.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16314,7 +16314,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922238.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16324,7 +16324,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922240.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16334,7 +16334,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922242.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16344,7 +16344,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922243.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16354,7 +16354,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922244.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16364,7 +16364,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922245.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16374,7 +16374,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922246.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16384,7 +16384,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922247.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16394,7 +16394,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922248.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16404,7 +16404,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922249.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16414,7 +16414,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922250.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16424,7 +16424,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922251.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           }
         ]
@@ -16439,7 +16439,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/368/922252.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16449,7 +16449,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925643.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16459,7 +16459,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925645.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16469,7 +16469,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925646.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16479,7 +16479,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925647.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16489,7 +16489,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925648.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16499,7 +16499,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925649.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16509,7 +16509,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925650.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16519,7 +16519,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925651.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16529,7 +16529,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925652.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16539,7 +16539,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925653.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16549,7 +16549,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925654.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16559,7 +16559,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925655.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16569,7 +16569,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925656.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16579,7 +16579,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925657.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16589,7 +16589,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925658.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16599,7 +16599,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925659.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16609,7 +16609,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925660.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16619,7 +16619,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925661.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16629,7 +16629,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925662.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16639,7 +16639,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925663.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16649,7 +16649,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925664.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16659,7 +16659,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925665.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16669,7 +16669,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925666.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16679,7 +16679,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925667.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16689,7 +16689,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925668.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16699,7 +16699,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925669.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16709,7 +16709,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925670.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16719,7 +16719,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925671.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16729,7 +16729,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925672.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16739,7 +16739,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925673.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16749,7 +16749,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925674.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16759,7 +16759,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925675.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16769,7 +16769,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925676.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16779,7 +16779,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925677.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16789,7 +16789,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925678.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16799,7 +16799,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925679.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16809,7 +16809,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925680.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16819,7 +16819,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925681.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16829,7 +16829,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925682.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16839,7 +16839,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925683.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16849,7 +16849,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925684.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16859,7 +16859,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925685.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16869,7 +16869,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925686.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16879,7 +16879,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925687.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16889,7 +16889,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925688.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           }
         ]
@@ -16904,7 +16904,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925689.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16914,7 +16914,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925691.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16924,7 +16924,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925692.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16934,7 +16934,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925693.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16944,7 +16944,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925694.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16954,7 +16954,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925695.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16964,7 +16964,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925696.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16974,7 +16974,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925697.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16984,7 +16984,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925698.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -16994,7 +16994,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925699.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17004,7 +17004,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925700.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17014,7 +17014,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925701.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17024,7 +17024,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925702.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17034,7 +17034,7 @@ window._ANIME_DATA = [
             overview: "Ichigo seeks out the Vizard after realizing that he must learn how to control his inner Hollow. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925703.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17044,7 +17044,7 @@ window._ANIME_DATA = [
             overview: "Ichigo begins training to control his inner Hollow. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925704.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17054,7 +17054,7 @@ window._ANIME_DATA = [
             overview: "Ichigo continues his battle with his inner Hollow. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925705.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17064,7 +17064,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925706.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17074,7 +17074,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925707.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17084,7 +17084,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925708.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17094,7 +17094,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925709.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17104,7 +17104,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925710.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17114,7 +17114,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925711.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17124,7 +17124,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925712.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17134,7 +17134,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925714.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17144,7 +17144,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925715.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17154,7 +17154,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925716.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17164,7 +17164,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925717.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17174,7 +17174,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925718.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17184,7 +17184,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925719.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17194,7 +17194,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925720.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17204,7 +17204,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925721.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17214,7 +17214,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925722.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17224,7 +17224,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925723.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17234,7 +17234,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925724.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17244,7 +17244,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925725.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17254,7 +17254,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925726.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17264,7 +17264,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925727.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17274,7 +17274,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925728.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17284,7 +17284,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925729.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17294,7 +17294,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925730.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17304,7 +17304,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925731.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17314,7 +17314,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925732.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17324,7 +17324,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925733.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17334,7 +17334,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925737.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17344,7 +17344,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925738.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17354,7 +17354,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925739.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           }
         ]
@@ -17369,7 +17369,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925740.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17379,7 +17379,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925741.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17389,7 +17389,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925742.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17399,7 +17399,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925743.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17409,7 +17409,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925744.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17419,7 +17419,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925745.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17429,7 +17429,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925746.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17439,7 +17439,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925747.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17449,7 +17449,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925748.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17459,7 +17459,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925749.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17469,7 +17469,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925750.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17479,7 +17479,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925751.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17489,7 +17489,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925752.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17499,7 +17499,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925755.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17509,7 +17509,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925756.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17519,7 +17519,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925757.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17529,7 +17529,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925758.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17539,7 +17539,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925759.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17549,7 +17549,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925760.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17559,7 +17559,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925761.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17569,7 +17569,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925762.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17579,7 +17579,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925763.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17589,7 +17589,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925764.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17599,7 +17599,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925765.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17609,7 +17609,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925766.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17619,7 +17619,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925767.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17629,7 +17629,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925768.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17639,7 +17639,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925769.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17649,7 +17649,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925770.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17659,7 +17659,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925771.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17669,7 +17669,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925772.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17679,7 +17679,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925773.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17689,7 +17689,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925774.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17699,7 +17699,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925775.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17709,7 +17709,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/370/925776.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17719,7 +17719,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943936.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17729,7 +17729,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943938.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17739,7 +17739,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943939.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17749,7 +17749,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943940.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17759,7 +17759,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943941.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17769,7 +17769,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943942.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17779,7 +17779,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943943.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17789,7 +17789,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943944.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17799,7 +17799,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943945.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17809,7 +17809,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943946.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17819,7 +17819,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943947.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           }
         ]
@@ -17834,7 +17834,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943952.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17844,7 +17844,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943953.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17854,7 +17854,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943954.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17864,7 +17864,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943955.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17874,7 +17874,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943957.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17884,7 +17884,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943959.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17894,7 +17894,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943960.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17904,7 +17904,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943962.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17914,7 +17914,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943963.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17924,7 +17924,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943964.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17934,7 +17934,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943965.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17944,7 +17944,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943966.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17954,7 +17954,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943972.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17964,7 +17964,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943973.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17974,7 +17974,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943974.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17984,7 +17984,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943976.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -17994,7 +17994,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943977.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18004,7 +18004,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943978.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18014,7 +18014,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943979.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18024,7 +18024,7 @@ window._ANIME_DATA = [
             overview: "3rd Seat Ikkaku Madarame loses his fight against Choe Neng Poww, forcing Captain Sajin Komamura to take over his battle. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943980.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18034,7 +18034,7 @@ window._ANIME_DATA = [
             overview: "Captain Suì-Fēng begins her battle with Ggio Vega while the other two Espada and their Fracción begin their fights. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943981.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18044,7 +18044,7 @@ window._ANIME_DATA = [
             overview: "Ggio Vega and Nirgge Parduoc release their Zanpakutōs, prompting Lieutenant Marechiyo Ōmaeda to use his true power. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943982.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18054,7 +18054,7 @@ window._ANIME_DATA = [
             overview: "Lieutenant Marechiyo Ōmaeda and Captain Suì-Fēng keep struggling against their opponents.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943983.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18064,7 +18064,7 @@ window._ANIME_DATA = [
             overview: "Lieutenant Momo Hinamori arrives to help out Lieutenant Rangiku Matsumoto.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943984.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18074,7 +18074,7 @@ window._ANIME_DATA = [
             overview: "Ayon overpowers the lieutenants, greatly injuring them, but Captain-Commander Genryūsai Shigekuni Yamamoto appears to fight the beast. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943985.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18084,7 +18084,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943986.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18094,7 +18094,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943987.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18104,7 +18104,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943988.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18114,7 +18114,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943989.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18124,7 +18124,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943990.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18134,7 +18134,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943991.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18144,7 +18144,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943992.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18154,7 +18154,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943993.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18164,7 +18164,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943994.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18174,7 +18174,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943995.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18184,7 +18184,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943996.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18194,7 +18194,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943997.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18204,7 +18204,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943998.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18214,7 +18214,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/943999.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18224,7 +18224,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944000.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18234,7 +18234,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944001.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18244,7 +18244,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944002.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18254,7 +18254,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944003.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18264,7 +18264,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944004.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18274,7 +18274,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944005.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18284,7 +18284,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944006.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18294,7 +18294,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944007.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18304,7 +18304,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944008.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18314,7 +18314,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944009.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18324,7 +18324,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944010.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18334,7 +18334,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944011.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           }
         ]
@@ -18349,7 +18349,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944012.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18359,7 +18359,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944013.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18369,7 +18369,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944014.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18379,7 +18379,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944015.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18389,7 +18389,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944016.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18399,7 +18399,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944017.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18409,7 +18409,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944018.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18419,7 +18419,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944019.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18429,7 +18429,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944020.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18439,7 +18439,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944021.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18449,7 +18449,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944022.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18459,7 +18459,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944023.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18469,7 +18469,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944024.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18479,7 +18479,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/377/944025.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18489,7 +18489,7 @@ window._ANIME_DATA = [
             overview: "Prior events are recalled. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950136.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18499,7 +18499,7 @@ window._ANIME_DATA = [
             overview: "Ichigo struggles against Ulquiorra as Renji Abarai and Yasutora Sado fight Battikaroa.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950137.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18509,7 +18509,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950138.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18519,7 +18519,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950139.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18529,7 +18529,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950140.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18539,7 +18539,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950141.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18549,7 +18549,7 @@ window._ANIME_DATA = [
             overview: "Ichigo and Ulquiorra conclude their battle. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950146.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18559,7 +18559,7 @@ window._ANIME_DATA = [
             overview: "As Rukia, Chad and Renji battle Yammy Llargo, the captains continue battling the Espada. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950151.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18569,7 +18569,7 @@ window._ANIME_DATA = [
             overview: "The battle between Tōshirō and Tier Harribel continues. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950152.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18579,7 +18579,7 @@ window._ANIME_DATA = [
             overview: "Captain Suì-Fēng and Lieutenant Marechiyo Ōmaeda struggle against Baraggan Louisenbairn. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950155.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18589,7 +18589,7 @@ window._ANIME_DATA = [
             overview: "As Lieutenant Marechiyo Ōmaeda distracts Baraggan Luisenbarn for Captain Suì-Fēng, Captain Shunsui Kyōraku and Coyote Starrk continue their battle. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950156.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18599,7 +18599,7 @@ window._ANIME_DATA = [
             overview: "Captain Kyōraku and Coyote Starrk decide to get serious in their battle. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950157.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18609,7 +18609,7 @@ window._ANIME_DATA = [
             overview: "The Espada are shown to still be alive, Sōsuke Aizen, Gin Ichimaru, and Kaname Tōsen are freed, and the Visored arrive on the battlefield. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950161.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18619,7 +18619,7 @@ window._ANIME_DATA = [
             overview: "The Visored join the fight and think back to 101 years ago, when Shinji and his friends were going through Hollowfication.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950176.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18629,7 +18629,7 @@ window._ANIME_DATA = [
             overview: "Hachigen Ushōda helps Captain Suì-Fēng battle Baraggan Luisenbarn. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950178.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18639,7 +18639,7 @@ window._ANIME_DATA = [
             overview: "Baraggan Luisenbarn recalls his past as the King of Hueco Mundo.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950179.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18649,7 +18649,7 @@ window._ANIME_DATA = [
             overview: "Love Aikawa and Rōjūrō Ōtoribashi battle against Coyote Starrk. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950199.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18659,7 +18659,7 @@ window._ANIME_DATA = [
             overview: "Coyote Starrk and Captain Shunsui Kyōraku conclude their battle. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950200.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18669,7 +18669,7 @@ window._ANIME_DATA = [
             overview: "As Tier Harribel falls unconscious from her wounds, she recalls her past. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950201.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18679,7 +18679,7 @@ window._ANIME_DATA = [
             overview: "As the situation begins to get desperate in the Fake Karakura Town, the battle with Yammy Llargo continues in Hueco Mundo. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950203.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18689,7 +18689,7 @@ window._ANIME_DATA = [
             overview: "The captains in Hueco Mundo decide to send Ichigo back to Karakura Town. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950204.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18699,7 +18699,7 @@ window._ANIME_DATA = [
             overview: "Ichigo has a dream and tries to escape from it. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950205.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18709,7 +18709,7 @@ window._ANIME_DATA = [
             overview: "Ichigo begins his return to Karakura Town. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950208.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18719,7 +18719,7 @@ window._ANIME_DATA = [
             overview: "As Captains Byakuya Kuchiki and Kenpachi prepare to fight each other, Yammy Llargo's anger makes him even stronger.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950209.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18729,7 +18729,7 @@ window._ANIME_DATA = [
             overview: "Kaname Tōsen reveals his true reasons for betraying Soul Society. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950210.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18739,7 +18739,7 @@ window._ANIME_DATA = [
             overview: "As Captain Sajin Komamura continues his battle with Tōsen, Shinji releases his Zanpakutō against Aizen. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950219.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18749,7 +18749,7 @@ window._ANIME_DATA = [
             overview: "The Shinigami and Visored vow to protect Ichigo and defeat Aizen.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950220.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18759,7 +18759,7 @@ window._ANIME_DATA = [
             overview: "The Shinigami and Visored, attacking Aizen, are unable to defeat the treacherous captain. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950221.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18769,7 +18769,7 @@ window._ANIME_DATA = [
             overview: "Captain-Commander Genryūsai Shigekuni Yamamoto joins the battle against Aizen, only for his Zanpakutō's abilities to be sealed by Wonderweiss Margela. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950222.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18779,7 +18779,7 @@ window._ANIME_DATA = [
             overview: "Aizen reveals to Ichigo that all of his battles have taken place exactly as he desired. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950227.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18789,7 +18789,7 @@ window._ANIME_DATA = [
             overview: "As Aizen reveals more facts to Ichigo, Isshin Kurosaki joins the battle. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950230.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18799,7 +18799,7 @@ window._ANIME_DATA = [
             overview: "As Ichigo and Gin Ichimaru battle, Aizen explains the true power of the Hōgyoku to Isshin Kurosaki. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950232.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18809,7 +18809,7 @@ window._ANIME_DATA = [
             overview: "The Shinigami in the Gotei 13 make a movie for the Seireitei International Film Festival. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950233.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18819,7 +18819,7 @@ window._ANIME_DATA = [
             overview: "While visiting the World of the Living, Rukia comes across Kurumadani, the current Soul Reaper stationed in Karakura Town, being attacked by a mysterious masked man. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950234.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18829,7 +18829,7 @@ window._ANIME_DATA = [
             overview: "As Aizen is transformed by the Hōgyoku, Kisuke realizes that Aizen has evaded the Soul Reapers because he has a high Spirit Energy. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950235.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18839,7 +18839,7 @@ window._ANIME_DATA = [
             overview: "Ichigo finds himself cornered against Gin's Bankai. Meanwhile, Urahara, Yoruichi, and Isshin fight Aizen in a three-on-one battle. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950248.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18849,7 +18849,7 @@ window._ANIME_DATA = [
             overview: "Ichigo and Isshin arrive in the Precipice World, a place where time flows two thousand times faster than the outside world. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950249.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           }
         ]
@@ -18864,7 +18864,7 @@ window._ANIME_DATA = [
             overview: "The Women's Soul Reaper Association is hosting a New Year's party in the Soul Society, when Hitsugaya and the other male Soul Reapers come crashing in. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950250.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18874,7 +18874,7 @@ window._ANIME_DATA = [
             overview: "Ichigo has another dream and tries to escape from it again. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950251.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18884,7 +18884,7 @@ window._ANIME_DATA = [
             overview: "Lieutenants Shūhei Hisagi and Rangiku Matsumoto go on a mission, and Hisagi deludes himself into thinking that Rangiku likes him. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950252.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18894,7 +18894,7 @@ window._ANIME_DATA = [
             overview: "Ichigo stands his ground against Tensa Zangetsu, who fuses with Ichigo's inner Hollow. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950253.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18904,7 +18904,7 @@ window._ANIME_DATA = [
             overview: "As Aizen was about to kill Ichigo's friends, he is stopped by Gin who betrays him after 200 years of their partnership. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950254.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18914,7 +18914,7 @@ window._ANIME_DATA = [
             overview: "Ichigo arrives to settle his score with Aizen once and for all. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950255.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18924,7 +18924,7 @@ window._ANIME_DATA = [
             overview: "Ichigo uses the Final Getsuga Tenshō against Aizen. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950256.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18934,7 +18934,7 @@ window._ANIME_DATA = [
             overview: "The aftermath of the battle with Aizen is shown. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950257.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18944,7 +18944,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950258.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18954,7 +18954,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950259.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18964,7 +18964,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950260.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18974,7 +18974,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950261.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18984,7 +18984,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950262.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -18994,7 +18994,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950263.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19004,7 +19004,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950647.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19014,7 +19014,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950648.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19024,7 +19024,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950649.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19034,7 +19034,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950650.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19044,7 +19044,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950656.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19054,7 +19054,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950657.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19064,7 +19064,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950659.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19074,7 +19074,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950660.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19084,7 +19084,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950662.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19094,7 +19094,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950664.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19104,7 +19104,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950666.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19114,7 +19114,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950668.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19124,7 +19124,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950669.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19134,7 +19134,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950670.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19144,7 +19144,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950671.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19154,7 +19154,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950672.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19164,7 +19164,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950673.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19174,7 +19174,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950674.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19184,7 +19184,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950675.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19194,7 +19194,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950676.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19204,7 +19204,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950677.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19214,7 +19214,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950678.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19224,7 +19224,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950679.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19234,7 +19234,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950680.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19244,7 +19244,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950681.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19254,7 +19254,7 @@ window._ANIME_DATA = [
             overview: "Ichigo gradually loses his remaining powers and bids farewell to Rukia. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950682.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19264,7 +19264,7 @@ window._ANIME_DATA = [
             overview: "Seventeen months later, Ichigo continues living life as a normal teenage high school student in Karakura Town. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950683.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19274,7 +19274,7 @@ window._ANIME_DATA = [
             overview: "Ichigo gets contacted by a man named Kugo Ginjoo who wants information about a certain person close to Ichigo. Uryu pursues a stranger who appears to be interested in Ichigo. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950684.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19284,7 +19284,7 @@ window._ANIME_DATA = [
             overview: "After Ichigo and Orihime Inoue visit Uryū in the hospital, Keigo Asano is attacked. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950685.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19294,7 +19294,7 @@ window._ANIME_DATA = [
             overview: "Ichigo decides to call on Ginjo for some answers. At his hideout, \"Xcution,\" Ginjo tells Ichigo of his goal to restore Ichigo's lost Soul Reaper powers, as well as demonstrating his own unique power, \"Fullbring.\" ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950686.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19304,7 +19304,7 @@ window._ANIME_DATA = [
             overview: "Ginjo gives Ichigo a day to decide whether to regain his lost Soul Reaper powers or not. But Ichigo, who no longer wishes to endanger anyone by being a Soul Reaper, decides to decline the offer. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950687.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19314,7 +19314,7 @@ window._ANIME_DATA = [
             overview: "Ichigo begins training to regain his Soul Reaper powers at the Xcution's hideout. His first training is to fight and win against Mr. Pork, an opponent created by Riruka's Fullbring power \"Dollhouse.\" ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950688.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19324,7 +19324,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950689.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19334,7 +19334,7 @@ window._ANIME_DATA = [
             overview: "Ichigo and Chad rush to find Orihime. Meanwhile, Orihime attempts to stop Tsukishima from leaving the scene, but is instead stabbed by his Fullbring power.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950690.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19344,7 +19344,7 @@ window._ANIME_DATA = [
             overview: "Ichigo asks Ginjo to let him fight one of the Xcution members for his training. But Jackie, who detests the power of Fullbring, finds Ichigo's request selfish and refuses.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950691.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19354,7 +19354,7 @@ window._ANIME_DATA = [
             overview: "Ichigo begins his training with Jackie Tristan, who brings out her Fullbring power \"Dirty Boots.\" As he goes up against Jackie's powerful attacks, Ichigo begins to gradually understand the use of his own Fullbring power. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950692.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19364,7 +19364,7 @@ window._ANIME_DATA = [
             overview: "Tsukishima breaks into the Xcution hideout where Ichigo is training. Learning that he was the one who attacked Uryu and Orihime, a furious Ichigo proceeds to attack Tsukishima.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950693.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19374,7 +19374,7 @@ window._ANIME_DATA = [
             overview: "Ichigo fights Kūgo Ginjō in the Game Space. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950694.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           }
         ]
@@ -19389,7 +19389,7 @@ window._ANIME_DATA = [
             overview: "On New Year's Day, Izuru hosts a kite-flying contest in the hopes of everyone having a good time. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950695.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19399,7 +19399,7 @@ window._ANIME_DATA = [
             overview: "Ichigo continues his training with Kūgo Ginjō.",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950696.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19409,7 +19409,7 @@ window._ANIME_DATA = [
             overview: "Ichigo trains with his Fullbring. Chad and Orihime investigate Tsukishima and engage in battle. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950697.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19419,7 +19419,7 @@ window._ANIME_DATA = [
             overview: "Uryu begins his own investigation to track down the enemy who attacked him. As he goes around searching for clues, he notices that people close to Ichigo are acting strangely. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950698.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19429,7 +19429,7 @@ window._ANIME_DATA = [
             overview: "Ichigo escapes from his house in confusion after witnessing his friends and family welcoming Tsukishima as if they've known him for years. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950699.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19439,7 +19439,7 @@ window._ANIME_DATA = [
             overview: "As Ichigo begins his battle with Tsukishima, Uryū arrives and Ginjō is cut by Tsukishima. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950700.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19449,7 +19449,7 @@ window._ANIME_DATA = [
             overview: "Ginjo reveals his true colors by attacking Ichigo and stripping him of his Fullbring powers. Ichigo lies in despair from losing his powers yet again, when his father Isshin and Kisuke Urahara arrive. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950701.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19459,7 +19459,7 @@ window._ANIME_DATA = [
             overview: "Under the orders of Head Captain Yamamoto, the 13 Court Guard Squad Soul Reapers share their Spirit Energy to restore Ichigo's lost powers. With his Soul Reaper powers fully restored, Ichigo returns to challenge Ginjo. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950702.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19469,7 +19469,7 @@ window._ANIME_DATA = [
             overview: "The Soul Reapers take on the Xcution members in one-on-one battles. Meanwhile, Ichigo and Uryu prepare to take on Ginjo. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950703.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19479,7 +19479,7 @@ window._ANIME_DATA = [
             overview: "The battle between Byakuya and Tsukishima escalates as they both push their powers to the limit. Meanwhile, Rukia struggles against the traps set up by Riruka. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950704.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19489,7 +19489,7 @@ window._ANIME_DATA = [
             overview: "As the battle between Ichigo, Uryū , and Kūgo Ginjō intensifies, the truth behind the Substitute Shinigami Badge surfaces. ",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950705.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           },
           {
@@ -19499,7 +19499,7 @@ window._ANIME_DATA = [
             overview: "",
             overviewKurdish: "",
             thumbnail: "https://static.tvmaze.com/uploads/images/original_untouched/380/950706.jpg",
-            videoUrl: ""
+            videoUrl: "",
             trailerUrl: "",
           }
         ]
