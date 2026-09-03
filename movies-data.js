@@ -7,7 +7,7 @@ window._MOVIES_DATA = [
     title: "Coyote vs. Acme",
     type: "Movie",
     year: 2026,
-    rating: ,
+    rating: 7.6,
     age: "R",
     duration: "1h 36m",
     genres: [
