@@ -20,7 +20,7 @@ window._MOVIES_DATA = [
     videoUrl: "1204680",
     trailerUrl: "https://youtu.be/fY_gBf8QVR0?si=EAMeVeC-cUzTVIs-",
     overview: "Wile E. Coyote sue Acme Corporation after decade of faulty product cause endless harm chase Road Runner. Team with down-on-luck lawyer, take corporate giant to court.",
-    overviewKurdish:" تاوانبارێک وا دەردەخات کە مردووە بۆ بەدەستهێنانی پارەی بیمە، هاوسەرەکەشی تاوانبار دەکات، بەڵام هاوسەرەکەی پلانی کوشتنی ڕاستەقینەی داناوە، هەردووکیان پێشبڕکێ دەکەن بۆ ئەوەی زاڵ بن بەسەر یەکتریدا.",
+    overviewKurdish:"وایڵ ئی. کایۆتی دژی کۆمپانیای ئاکمی سکاڵا تۆمار دەکات لەدوای دەیان ساڵ بەرهەمی خراپ کە زیانی زۆری پێگەیاندووە لە کاتی ڕاونانی ڕۆدڕەنەر. لەگەڵ پارێزەرێکی بەختڕەش هاوکاری دەکات بۆ بردنی کۆمپانیا بۆ دادگا.",
     director: "Martin Campbell",
     cast: ["Samuel L. Jackson, Eva Green, María Pedraza, Eoin Macken"],
     trending: true,
