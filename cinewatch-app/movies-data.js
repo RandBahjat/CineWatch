@@ -53,6 +53,7 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  
   {
     title: "Just Play Dead",
     type: "Movie",
@@ -120,6 +121,31 @@ window._MOVIES_DATA = [
     overview: "Jason and Lucia always know odds against them. Simple job meant for quick score go bad, land them in darkest corner of place once known as sunniest spot in America — caught up in deep, dangerous criminal network stretch across whole state of Leonida, now need each other more than ever to survive.",
     overviewKurdish: "جەیسن و لوسیا لە سەرەتاوە دەیانزانی هەلومەرج لە دژیانە. کارێکی سادە کە بۆ دزین بڕیار درابوو بە خراپی کۆتایی هات، ئەوانیش خۆیان بینییەوە لەناو تاریکترین بەشی ئەو شوێنەی کە هەمووکات وەک خۆشترین شوێن ناسراوە بوو لە ئەمریکا — گیریان خواردووە لە ناو تۆڕێکی تاوانی قووڵ و ترسناک کە بە درێژایی هەموو ویلایەتی لیۆنیدا دەگرێتەوە، ئێستاش پێویستیان بە یەکتری هەیە زیاتر لە هەر کاتێکی تر بۆ ئەوەی بتوانن زیندوو بمێننەوە.",
     director: "Rockstar Games",
+    trending: true,
+    featured: true,
+    is4k: false,
+    seasons: []
+  },
+  {
+    title: "The Brink of War",
+    type: "Movie",
+    year: 2026,
+    rating: 6.4,
+    age: "PG",
+    duration: "1h 57m",
+    genres: [
+      "Drama",
+      "History",
+      "Thriller"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vCIQeQ2ynVqEjIvtbOXGnKtcgAX.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/E812GNXYQqjJwN0cVPY3icHpaj.jpg",
+    videoUrl: "192139",
+    trailerUrl: "https://youtu.be/sdQbQU70Nd0?si=Ig115LMtNnOMPkkm",
+    overview: "In October 1986, U.S. President Ronald Reagan and Soviet leader Mikhail Gorbachev meet in Iceland for high-stakes summit to eliminate nuclear weapons. Both big leaders clash over missile shields and cold war ideas, fighting against time to make peace deal before world explode!",
+    overviewKurdish: "لە تشرینی یەکەمی ساڵی ١٩٨٦، ڕۆناڵد ڕەیگن سەرۆکی ئەمریکا و میخائیل گۆرباتشۆڤ سەرۆکی یەکێتیی سۆڤیەت لە ئایسلەندا کۆدەبنەوە لە لووتکەیەکی گرنگدا بۆ دانوستان لەسەر لەناوبردنی چەکە ئەتۆمییەکان. لەگەڵ زیادبوونی گوشاری ڕاوێژکاران لەسەر هەردوولا، هەردوو سەرکردەکە تووشی ململانێ دەبن لەسەر سیستەمی بەرگری و بیرۆکەکانی جەنگی سارد، و هەوڵدەدەن بگەنە ڕێککەوتنی ئاشتی پێش ئەوەی ئاڵۆزییەکان کارەسات بنێنەوە.",
+    director: "Michael Russell Gunn",
+    cast: ["Jeff Daniels, Jared Harris, J. K. Simmons, Hope Davis"],
     trending: true,
     featured: true,
     is4k: false,
