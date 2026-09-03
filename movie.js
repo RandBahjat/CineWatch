@@ -3579,6 +3579,21 @@ function bindEventListeners() {
 
   // Close modals
   if (document.getElementById("closeDetailsBtn")) document.getElementById("closeDetailsBtn").onclick = () => {
+    clearTimeout(window._detailsTrailerTimer);
+    const soundBtn = document.getElementById("detailsSoundBtn");
+    if (soundBtn) {
+      soundBtn.classList.add("hidden");
+      soundBtn.innerHTML = '<ion-icon name="volume-mute"></ion-icon>';
+    }
+    const prevTrailer = document.getElementById('detailsTrailerIframe');
+    if (prevTrailer) prevTrailer.remove();
+    const prevWrap = document.querySelector('#detailsBg .trailer-iframe-wrap');
+    if (prevWrap) {
+      prevWrap.innerHTML = '';
+      prevWrap.classList.remove('active');
+      prevWrap.classList.add('hidden');
+    }
+
     const detailsSection = document.getElementById("detailsSection");
 
     detailsSection.style.opacity = "0";
