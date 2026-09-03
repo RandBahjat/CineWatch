@@ -90,7 +90,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/xTZuh9ziUjIyHBWO9OvqNIPqVWe.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/oDp9Yvvi2mRHXxPh6E2wi9ybhtK.jpg",
-    videoUrl: "2174446",
+    videoUrl: "https://youtu.be/2KgWPX_igO0?si=tn1BR-pFCrCn79ZZ6",
     trailerUrl: "",
     overview: "Jason and Lucia always know odds against them. Simple job meant for quick score go bad, land them in darkest corner of place once known as sunniest spot in America — caught up in deep, dangerous criminal network stretch across whole state of Leonida, now need each other more than ever to survive.",
     overviewKurdish: "جەیسن و لوسیا لە سەرەتاوە دەیانزانی هەلومەرج لە دژیانە. کارێکی سادە کە بۆ دزین بڕیار درابوو بە خراپی کۆتایی هات، ئەوانیش خۆیان بینییەوە لەناو تاریکترین بەشی ئەو شوێنەی کە هەمووکات وەک خۆشترین شوێن ناسراوە بوو لە ئەمریکا — گیریان خواردووە لە ناو تۆڕێکی تاوانی قووڵ و ترسناک کە بە درێژایی هەموو ویلایەتی لیۆنیدا دەگرێتەوە، ئێستاش پێویستیان بە یەکتری هەیە زیاتر لە هەر کاتێکی تر بۆ ئەوەی بتوانن زیندوو بمێننەوە.",
