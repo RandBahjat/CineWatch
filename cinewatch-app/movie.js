@@ -2681,6 +2681,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
   const centerOverlay = document.getElementById("videoCenterOverlay");
   const title = document.getElementById("playerMovieTitle");
   const playPauseBtn = document.getElementById("playPauseBtn");
+  const serverWrap = document.getElementById("serverSelectWrap");
 
   // ── Populate info area ──
   const posterEl = document.getElementById("playerShowPoster");
@@ -2724,22 +2725,27 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
       video.pause();
       video.src = "";
     }
-    if (iframe) {
-      iframe.classList.remove("hidden");
-      iframe.src = `https://www.youtube.com/embed/${ytVideoId}?autoplay=1&rel=0&modestbranding=1`;
-    }
-    document.querySelector(".video-container")?.classList.add("is-iframe");
     if (controlsBar) controlsBar.classList.add("hidden");
     if (centerOverlay) centerOverlay.style.display = "none";
     if (serverWrap) serverWrap.classList.add("hidden");
+    window.currentIframeData = null;
+
+    if (iframe) {
+      iframe.classList.remove("hidden");
+      iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      iframe.allowFullscreen = true;
+      iframe.src = `https://www.youtube.com/embed/${ytVideoId}?autoplay=1&rel=0&modestbranding=1`;
+    }
+    document.querySelector(".video-container")?.classList.add("is-iframe");
     modal.classList.remove("hidden");
     document.body.style.overflow = "hidden";
+    const bttBtn = document.getElementById("backToTopBtn");
+    if (bttBtn) bttBtn.style.display = "none";
     return;
   }
 
   const isNumericId = /^\d+$/.test(movieVideoUrlStr);
   const isEmbedUrl = movieVideoUrlStr.includes("/embed/") || movieVideoUrlStr.includes("moviepire.co") || movieVideoUrlStr.includes("vidapi.ru") || movieVideoUrlStr.includes("vaplayer.ru");
-  const serverWrap = document.getElementById("serverSelectWrap");
 
   let streamUrl = null;
 
