@@ -2052,16 +2052,58 @@ media-video-layout::part(tooltip) {
 }
 
 
-/* ── Trailer iframe (auto-play in hero) ── */
-.trailer-iframe {
+/* ── Detail Hero Backdrop & Trailer Cover Wrap ── */
+.detail-hero-backdrop {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  border: none;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), visibility 1s ease;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+.detail-hero-backdrop.hidden-bg {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.trailer-iframe-wrap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   pointer-events: none;
-  z-index: 2; /* Between background and gradient */
+  z-index: 2; /* Over backdrop, below gradient and UI */
+  background: #000;
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.trailer-iframe-wrap.active {
+  opacity: 1;
+}
+
+/* ── Full-bleed cover video iframe ── */
+.trailer-iframe,
+.details-trailer-iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 56.25vw; /* 100 * 9 / 16 = 16:9 ratio */
+  min-height: 100vh;
+  min-width: 177.78vh; /* 100 * 16 / 9 = 16:9 ratio */
+  transform: translate(-50%, -50%) scale(1.15); /* Scale to guarantee full-bleed cover fit and crop out YouTube top/bottom chrome */
+  border: none;
+  pointer-events: none;
+  background: #000;
+  display: block;
 }
 
 .trailer-sound-btn {
