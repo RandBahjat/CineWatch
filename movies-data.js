@@ -7,7 +7,7 @@ window._MOVIES_DATA = [
     title: "The Runner",
     type: "Movie",
     year: 2026,
-    rating: 7.6,
+    rating: 4.3,
     age: "PG",
     duration: "1h 43m",
     genres: [
