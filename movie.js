@@ -31,6 +31,15 @@ window.POPULAR_SERIES = POPULAR_SERIES;
 // ==========================================
 let MOVIES = [];
 
+function extractYouTubeId(urlOrId) {
+  if (!urlOrId) return null;
+  const str = String(urlOrId).trim();
+  if (!str) return null;
+  if (/^[a-zA-Z0-9_-]{11}$/.test(str)) return str;
+  const match = str.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=|shorts\/))([\w-]{11})/i);
+  return match && match[1] ? match[1] : null;
+}
+
 function translateGenre(genre) {
   const cookies = document.cookie || '';
   const isSorani = cookies.includes('googtrans=/en/ckb');
