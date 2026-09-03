@@ -2282,36 +2282,58 @@ function startApp() {
   // ── Auth overlay fade helpers ─────────────────────────────────────────
   const authOverlay = document.getElementById('authOverlay');
 
-  function showAuth() {
+  function showAuth(mode = 'signin') {
+    const authOverlay = document.getElementById('authOverlay');
     if (!authOverlay) return;
-    authOverlay.style.display = 'flex';       // 1. make visible in layout
-    authOverlay.style.opacity = '0';          // 2. start transparent
+    if (typeof switchAuthTab === 'function') {
+      switchAuthTab(mode === 'signup' ? 'signup' : 'signin');
+    }
+    authOverlay.style.display = 'flex';
+    authOverlay.style.visibility = 'visible';
+    authOverlay.style.pointerEvents = 'auto';
+    authOverlay.style.opacity = '0';
     authOverlay.classList.remove('hidden');
-    // 3. next frame: fade in
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         authOverlay.style.opacity = '1';
       });
     });
+    document.body.style.overflow = 'hidden';
   }
+  window.showAuth = showAuth;
+  window.openAuthOverlay = showAuth;
+  window.openAuthModal = showAuth;
 
   function hideAuth() {
+    const authOverlay = document.getElementById('authOverlay');
     if (!authOverlay) return;
-    authOverlay.style.opacity = '0';          // 1. fade out
-    // 2. after transition ends: remove from layout
+    authOverlay.style.opacity = '0';
+    authOverlay.style.pointerEvents = 'none';
     const onEnd = () => {
       authOverlay.classList.add('hidden');
       authOverlay.style.display = '';
       authOverlay.style.opacity = '';
+      authOverlay.style.visibility = '';
+      authOverlay.style.pointerEvents = '';
       authOverlay.removeEventListener('transitionend', onEnd);
     };
     authOverlay.addEventListener('transitionend', onEnd);
+    document.body.style.overflow = '';
   }
+  window.hideAuth = hideAuth;
+  window.closeAuthModal = hideAuth;
   // ────────────────────────────────────────────────────────────────────────
 
-  document.getElementById('openAuthBtn')?.addEventListener('click', () => {
-    showAuth();
-    document.activeElement?.blur();
+  // Robust document-level event delegation for ANY Sign In buttons
+  document.addEventListener('click', (e) => {
+    const trigger = e.target.closest('#openAuthBtn, .sidebar-signin-btn, #headerLoginBtn, #settingsLoginBtn');
+    if (trigger) {
+      e.preventDefault();
+      e.stopPropagation();
+      document.getElementById('settingsOverlay')?.classList.add('hidden');
+      showAuth();
+      document.activeElement?.blur();
+    }
   });
 
   document.getElementById('closeAuthBtn')?.addEventListener('click', () => {
