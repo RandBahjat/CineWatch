@@ -16,7 +16,7 @@ window._MOVIES_DATA = [
       "Family"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uxCaBoYXsDC4A0SqTm3SISj0OwK.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/viZqGq9TNvQ5uXSD4ahg2RpRONT.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/1KohYajglCHxTgj2NY2WTI7gn9v.jpg",
     videoUrl: "1204680",
     trailerUrl: "https://youtu.be/fWKpUCvC_RQ",
     overview: "Wile E. Coyote sue Acme Corporation after decade of faulty product cause endless harm chase Road Runner. Team with down-on-luck lawyer, take corporate giant to court.",
