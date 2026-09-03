@@ -4497,6 +4497,175 @@ if (document.readyState === "loading") {
   safeInitMovieApp();
 }
 
+function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
+  const artContainer = document.getElementById("artplayerApp");
+  if (!artContainer) return;
+
+  const video = document.getElementById("videoElement");
+  const iframe = document.getElementById("iframeElement");
+  const controlsBar = document.getElementById("playerControlsBar");
+  const centerOverlay = document.getElementById("videoCenterOverlay");
+
+  if (video) {
+    video.classList.add("hidden");
+    video.pause();
+    video.src = "";
+  }
+  if (iframe) {
+    iframe.classList.add("hidden");
+    iframe.src = "";
+  }
+  if (controlsBar) controlsBar.classList.add("hidden");
+  if (centerOverlay) centerOverlay.style.display = "none";
+
+  artContainer.classList.remove("hidden");
+
+  if (window.artPlayerInstance) {
+    try {
+      window.artPlayerInstance.destroy();
+    } catch (e) {}
+    window.artPlayerInstance = null;
+  }
+
+  const poster = (movie?.backdrop || movie?.poster || parentMovie?.backdrop || parentMovie?.poster || "");
+  const cleanUrl = String(videoUrl || movie?.videoUrl || "");
+  const streamUrl = cleanUrl.startsWith("http") ? cleanUrl : "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8";
+
+  if (typeof Artplayer === "undefined") {
+    console.warn("Artplayer library not yet available");
+    return;
+  }
+
+  try {
+    window.artPlayerInstance = new Artplayer({
+      container: '#artplayerApp',
+      url: streamUrl,
+      poster: poster,
+      volume: 0.7,
+      isLive: false,
+      muted: false,
+      autoplay: true,
+      pip: true,
+      autoSize: false,
+      autoMini: true,
+      screenshot: true,
+      setting: true,
+      loop: true,
+      flip: true,
+      playbackRate: true,
+      aspectRatio: true,
+      fullscreen: true,
+      fullscreenWeb: true,
+      subtitleOffset: true,
+      miniProgressBar: true,
+      mutex: true,
+      backdrop: true,
+      playsInline: true,
+      autoPlayback: true,
+      airplay: true,
+      theme: '#23ade5',
+      lang: navigator.language ? navigator.language.toLowerCase() : 'en',
+      moreVideoAttr: {
+        crossOrigin: 'anonymous',
+      },
+      customType: {
+        m3u8: function (video, url, art) {
+          if (typeof Hls !== 'undefined' && Hls.isSupported()) {
+            if (art.hls) art.hls.destroy();
+            const hls = new Hls();
+            hls.loadSource(url);
+            hls.attachMedia(video);
+            art.hls = hls;
+            art.on('destroy', () => hls.destroy());
+          } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.src = url;
+          } else {
+            art.notice.show = 'Unsupported video format: m3u8';
+          }
+        },
+      },
+      settings: [
+        {
+          width: 200,
+          html: 'Subtitle',
+          tooltip: 'Subtitles',
+          icon: '<ion-icon name="subtitles-outline" style="font-size:1.2rem;"></ion-icon>',
+          selector: [
+            {
+              html: 'Display',
+              tooltip: 'Show',
+              switch: true,
+              onSwitch(item) {
+                item.tooltip = item.switch ? 'Hide' : 'Show';
+                if (window.artPlayerInstance) {
+                  window.artPlayerInstance.subtitle.show = !item.switch;
+                }
+                return !item.switch;
+              },
+            },
+            {
+              default: true,
+              html: 'English Sub',
+              url: '',
+            },
+            {
+              html: 'Kurdish Sub',
+              url: '',
+            },
+            {
+              html: 'Japanese (Raw)',
+              url: '',
+            },
+          ],
+          onSelect(item) {
+            if (item.url && window.artPlayerInstance) {
+              window.artPlayerInstance.subtitle.switch(item.url, { name: item.html });
+            }
+            return item.html;
+          },
+        },
+        {
+          html: 'Audio / Dub',
+          icon: '<ion-icon name="volume-high-outline" style="font-size:1.2rem;"></ion-icon>',
+          tooltip: 'Japanese',
+          selector: [
+            { default: true, html: 'Japanese (Original)' },
+            { html: 'English Dub' },
+          ],
+        },
+        {
+          html: 'Playback Speed',
+          icon: '<ion-icon name="speedometer-outline" style="font-size:1.2rem;"></ion-icon>',
+          tooltip: '1x',
+          range: [1, 0.5, 3, 0.25],
+          onRange(item) {
+            if (window.artPlayerInstance) window.artPlayerInstance.playbackRate = item.range[0];
+            return `${item.range[0]}x`;
+          },
+        },
+      ],
+      contextmenu: [
+        {
+          html: 'CineWatch Anime Glass Player',
+          click(contextmenu) {
+            contextmenu.show = false;
+          },
+        },
+      ],
+      controls: [
+        {
+          position: 'right',
+          html: '<span style="padding: 3px 10px; background: rgba(35,173,229,0.2); border: 1px solid #23ade5; border-radius: 6px; font-size: 0.72rem; font-weight: 700; color: #23ade5; letter-spacing: 0.5px;">ANIME</span>',
+          index: 1,
+          tooltip: 'Dedicated Anime Mode',
+        },
+      ],
+    });
+  } catch (err) {
+    console.error("Failed to init ArtPlayer:", err);
+  }
+}
+
 function updateIframeServer() {
   if (!window.currentIframeData) return;
   const data = window.currentIframeData;
@@ -4519,8 +4688,9 @@ function updateIframeServer() {
 
       if (!serverSelect.dataset.animeServersPopulated) {
         serverSelect.innerHTML = `
-          <option value="autoembed">AutoEmbed (Fast / HD)</option>
+          <option value="artplayer" selected>✨ ArtPlayer (Anime Glass Player)</option>
           <option value="vidlink">VidLink (Multi-Audio / Sub)</option>
+          <option value="autoembed">AutoEmbed (Fast / HD)</option>
           <option value="vidsrc-sbs">VidSrc (Reliable)</option>
           <option value="zxcstream">ZXC Stream (Japanese Audio)</option>
           <option value="vidsrc-me">VidSrc ME (Multi-Language)</option>
@@ -4530,6 +4700,18 @@ function updateIframeServer() {
       }
 
       const selected = serverSelect.value;
+
+      if (selected === 'artplayer') {
+        initArtPlayerForAnime(null, refMovie, parentMovie, data);
+        return;
+      } else {
+        const artApp = document.getElementById("artplayerApp");
+        if (artApp) artApp.classList.add("hidden");
+        if (window.artPlayerInstance) {
+          try { window.artPlayerInstance.pause(); } catch(e) {}
+        }
+        if (iframe) iframe.classList.remove("hidden");
+      }
 
       let mappedSeason = data.season;
       let mappedEpisode = data.episode;
@@ -4574,6 +4756,11 @@ function updateIframeServer() {
       newUrl = data.type === 'tv' ? `https://vidsrc.sbs/embed/tv/${data.id}/${data.season}/${data.episode}` : `https://vidsrc.sbs/embed/movie/${data.id}`;
     }
   } else {
+    const artApp = document.getElementById("artplayerApp");
+    if (artApp) artApp.classList.add("hidden");
+    if (window.artPlayerInstance) {
+      try { window.artPlayerInstance.pause(); } catch(e) {}
+    }
     if (serverSelectWrap) {
       serverSelectWrap.style.display = 'none';
       serverSelectWrap.classList.add('hidden');
