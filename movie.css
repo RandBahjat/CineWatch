@@ -2555,6 +2555,22 @@ body.rtl-layout .details-back-btn svg {
   object-fit: contain;
 }
 
+.artplayer-app {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.artplayer-app.hidden {
+  display: none !important;
+}
+
 .video-center-overlay {
   position: absolute;
   top: 50%;
