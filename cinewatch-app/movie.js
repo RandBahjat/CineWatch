@@ -1981,6 +1981,17 @@ function openDetailsModal(movieId) {
       clearTimeout(window._detailsTrailerTimer);
       const prevTrailer = document.getElementById('detailsTrailerIframe');
       if (prevTrailer) prevTrailer.remove();
+      const prevSoundBtn = document.getElementById('detailsSoundBtn');
+      if (prevSoundBtn) {
+        prevSoundBtn.classList.add('hidden');
+        prevSoundBtn.innerHTML = '<ion-icon name="volume-mute"></ion-icon>';
+      }
+      const prevWrap = document.querySelector('#detailsBg .trailer-iframe-wrap');
+      if (prevWrap) {
+        prevWrap.innerHTML = '';
+        prevWrap.classList.remove('active');
+        prevWrap.classList.add('hidden');
+      }
 
       // Start 3-second trailer background timer
       window._detailsTrailerTimer = setTimeout(() => {
@@ -2037,6 +2048,36 @@ function openDetailsModal(movieId) {
             wrap.classList.add('active');
           }, 150);
         });
+
+        // Wire up sound toggle button for trailer background
+        const soundBtn = document.getElementById('detailsSoundBtn');
+        if (soundBtn) {
+          soundBtn.classList.remove('hidden');
+          soundBtn.innerHTML = '<ion-icon name="volume-mute"></ion-icon>';
+          let isMuted = true;
+          soundBtn.onclick = (e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            isMuted = !isMuted;
+            try {
+              if (iframe && iframe.contentWindow) {
+                iframe.contentWindow.postMessage(JSON.stringify({
+                  event: 'command',
+                  func: isMuted ? 'mute' : 'unMute',
+                  args: []
+                }), '*');
+                if (!isMuted) {
+                  iframe.contentWindow.postMessage(JSON.stringify({
+                    event: 'command',
+                    func: 'setVolume',
+                    args: [100]
+                  }), '*');
+                }
+              }
+            } catch (err) {}
+            soundBtn.innerHTML = `<ion-icon name="${isMuted ? 'volume-mute' : 'volume-high'}"></ion-icon>`;
+          };
+        }
       }, 3000);
     }
     const titleEl = document.getElementById("detailsTitle");
@@ -3538,6 +3579,21 @@ function bindEventListeners() {
 
   // Close modals
   if (document.getElementById("closeDetailsBtn")) document.getElementById("closeDetailsBtn").onclick = () => {
+    clearTimeout(window._detailsTrailerTimer);
+    const soundBtn = document.getElementById("detailsSoundBtn");
+    if (soundBtn) {
+      soundBtn.classList.add("hidden");
+      soundBtn.innerHTML = '<ion-icon name="volume-mute"></ion-icon>';
+    }
+    const prevTrailer = document.getElementById('detailsTrailerIframe');
+    if (prevTrailer) prevTrailer.remove();
+    const prevWrap = document.querySelector('#detailsBg .trailer-iframe-wrap');
+    if (prevWrap) {
+      prevWrap.innerHTML = '';
+      prevWrap.classList.remove('active');
+      prevWrap.classList.add('hidden');
+    }
+
     const detailsSection = document.getElementById("detailsSection");
 
     detailsSection.style.opacity = "0";
