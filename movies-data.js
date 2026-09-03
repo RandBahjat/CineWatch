@@ -154,7 +154,7 @@ window._MOVIES_DATA = [
     title: "The Brink of War",
     type: "Movie",
     year: 2026,
-    rating: 8.4,
+    rating: 6.4,
     age: "R",
     duration: "30m",
     genres: [
