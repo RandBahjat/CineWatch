@@ -1248,9 +1248,19 @@ function _startTrailer(heroEl, movie) {
 
   _trailerMuted = true;
 
-  // Remove any previous iframe
-  const oldIframe = heroEl.querySelector('.trailer-iframe');
-  if (oldIframe) oldIframe.remove();
+  let wrap = heroEl.querySelector('#trailerIframeWrap') || heroEl.querySelector('.trailer-iframe-wrap');
+  const backdrop = heroEl.querySelector('#detailHeroBackdrop') || heroEl.querySelector('.detail-hero-backdrop');
+
+  if (!wrap) {
+    wrap = document.createElement('div');
+    wrap.className = 'trailer-iframe-wrap hidden';
+    wrap.id = 'trailerIframeWrap';
+    const gradient = heroEl.querySelector('.immersive-gradient');
+    if (gradient) heroEl.insertBefore(wrap, gradient);
+    else heroEl.appendChild(wrap);
+  } else {
+    wrap.innerHTML = '';
+  }
 
   // Build muted autoplay iframe
   const iframe = document.createElement('iframe');
@@ -1273,28 +1283,19 @@ function _startTrailer(heroEl, movie) {
   iframe.referrerPolicy = 'strict-origin-when-cross-origin';
   iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
   iframe.allowFullscreen = false;
-  iframe.style.position = 'absolute';
-  iframe.style.inset = '0';
-  iframe.style.width = '100%';
-  iframe.style.height = '100%';
-  iframe.style.border = 'none';
-  iframe.style.zIndex = '1';
-  iframe.style.pointerEvents = 'none';
-  iframe.style.opacity = '0';
-  iframe.style.transition = 'opacity 1.5s ease';
 
-  // Insert behind the gradient overlay
-  const gradient = heroEl.querySelector('.immersive-gradient');
-  if (gradient) {
-    heroEl.insertBefore(iframe, gradient);
-  } else {
-    heroEl.appendChild(iframe);
-  }
+  wrap.appendChild(iframe);
+  wrap.classList.remove('hidden');
 
   requestAnimationFrame(() => {
     setTimeout(() => {
-      iframe.style.opacity = '0.85';
-    }, 100);
+      wrap.classList.add('active');
+      // Hide the background image completely once the video trailer starts playing so it never shows through or behind!
+      if (backdrop) {
+        backdrop.classList.add('hidden-bg');
+      }
+      heroEl.style.backgroundImage = 'none';
+    }, 150);
   });
 
   // Wire up the sound toggle button
@@ -1334,6 +1335,16 @@ function closeDetail() {
   clearTimeout(_trailerTimer);
   const modal = document.getElementById('detailModal');
   if (modal) modal.classList.add('hidden');
+  const wrap = document.getElementById('trailerIframeWrap') || document.querySelector('.trailer-iframe-wrap');
+  if (wrap) {
+    wrap.innerHTML = '';
+    wrap.classList.remove('active');
+    wrap.classList.add('hidden');
+  }
+  const backdrop = document.getElementById('detailHeroBackdrop') || document.querySelector('.detail-hero-backdrop');
+  if (backdrop) {
+    backdrop.classList.remove('hidden-bg');
+  }
   const iframe = document.querySelector('.trailer-iframe');
   if (iframe) iframe.remove();
   const soundBtn = document.getElementById('trailerSoundBtn');
@@ -1341,6 +1352,7 @@ function closeDetail() {
     soundBtn.classList.add('hidden');
     soundBtn.innerHTML = '<ion-icon name="volume-mute"></ion-icon>';
   }
+  _trailerMuted = true;
 }
 
 // ==========================================================================
