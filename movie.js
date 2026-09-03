@@ -1977,7 +1977,14 @@ function openDetailsModal(movieId) {
       window._detailsTrailerTimer = setTimeout(() => {
         if (state.activeView !== "details") return;
         const currentBg = document.getElementById("detailsBg");
-        if (!currentBg) return;
+        let wrap = currentBg.querySelector('.trailer-iframe-wrap');
+        if (!wrap) {
+          wrap = document.createElement('div');
+          wrap.className = 'trailer-iframe-wrap hidden';
+          currentBg.appendChild(wrap);
+        } else {
+          wrap.innerHTML = '';
+        }
 
         const iframe = document.createElement('iframe');
         iframe.id = 'detailsTrailerIframe';
@@ -1999,17 +2006,15 @@ function openDetailsModal(movieId) {
           : `https://www.youtube.com/embed?listType=search&list=${query}&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3&enablejsapi=1`;
         iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
         iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-        iframe.style.position = 'absolute';
-        iframe.style.inset = '0';
-        iframe.style.width = '100%';
-        iframe.style.height = '100%';
-        iframe.style.border = 'none';
-        iframe.style.pointerEvents = 'none';
-        iframe.style.opacity = '0';
-        iframe.style.transition = 'opacity 1.5s ease';
-        iframe.style.zIndex = '1';
-        currentBg.appendChild(iframe);
-        setTimeout(() => { iframe.style.opacity = '0.75'; }, 100);
+
+        wrap.appendChild(iframe);
+        wrap.classList.remove('hidden');
+        requestAnimationFrame(() => {
+          setTimeout(() => {
+            wrap.classList.add('active');
+            currentBg.style.backgroundImage = 'none';
+          }, 150);
+        });
       }, 3000);
     }
     const titleEl = document.getElementById("detailsTitle");
