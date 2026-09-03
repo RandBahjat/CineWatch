@@ -2002,10 +2002,33 @@ function openDetailsModal(movieId) {
         const customYt = extractYt(movie.trailerUrl || movie.trailer || movie.trailerYouTubeId);
         const query = encodeURIComponent(`${movie.title} ${movie.year || ''} official trailer`);
         iframe.src = customYt 
-          ? `https://www.youtube.com/embed/${customYt}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${customYt}&iv_load_policy=3&enablejsapi=1`
-          : `https://www.youtube.com/embed?listType=search&list=${query}&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3&enablejsapi=1`;
+          ? `https://www.youtube.com/embed/${customYt}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${customYt}&iv_load_policy=3&cc_load_policy=0&cc_lang_pref=off&hl=en&enablejsapi=1`
+          : `https://www.youtube.com/embed?listType=search&list=${query}&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3&cc_load_policy=0&cc_lang_pref=off&hl=en&enablejsapi=1`;
         iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
         iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+
+        function disableMovieSubtitles() {
+          try {
+            if (iframe && iframe.contentWindow) {
+              iframe.contentWindow.postMessage(JSON.stringify({
+                event: 'command',
+                func: 'unloadModule',
+                args: ['captions']
+              }), '*');
+              iframe.contentWindow.postMessage(JSON.stringify({
+                event: 'command',
+                func: 'setOption',
+                args: ['captions', 'track', {}]
+              }), '*');
+            }
+          } catch(e) {}
+        }
+
+        iframe.onload = () => {
+          disableMovieSubtitles();
+          setTimeout(disableMovieSubtitles, 500);
+          setTimeout(disableMovieSubtitles, 1200);
+        };
 
         wrap.appendChild(iframe);
         wrap.classList.remove('hidden');
