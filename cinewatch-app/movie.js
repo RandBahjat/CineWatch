@@ -1784,7 +1784,16 @@ function renderUserBadge() {
         </button>
       `;
       const authBtn = document.getElementById("openAuthBtn");
-      if (authBtn) authBtn.onclick = () => openAuthModal();
+      if (authBtn) {
+        authBtn.onclick = (e) => {
+          e.preventDefault();
+          if (typeof window.showAuth === 'function') {
+            window.showAuth();
+          } else {
+            openAuthModal();
+          }
+        };
+      }
     }
   }
 }
