@@ -1981,6 +1981,17 @@ function openDetailsModal(movieId) {
       clearTimeout(window._detailsTrailerTimer);
       const prevTrailer = document.getElementById('detailsTrailerIframe');
       if (prevTrailer) prevTrailer.remove();
+      const prevSoundBtn = document.getElementById('detailsSoundBtn');
+      if (prevSoundBtn) {
+        prevSoundBtn.classList.add('hidden');
+        prevSoundBtn.innerHTML = '<ion-icon name="volume-mute"></ion-icon>';
+      }
+      const prevWrap = document.querySelector('#detailsBg .trailer-iframe-wrap');
+      if (prevWrap) {
+        prevWrap.innerHTML = '';
+        prevWrap.classList.remove('active');
+        prevWrap.classList.add('hidden');
+      }
 
       // Start 3-second trailer background timer
       window._detailsTrailerTimer = setTimeout(() => {
