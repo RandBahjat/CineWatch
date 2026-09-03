@@ -19,7 +19,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/1KohYajglCHxTgj2NY2WTI7gn9v.jpg",
     videoUrl: "1386315",
     trailerUrl: "https://youtu.be/raY-TDLE458?si=kl8RoS6tBCeHwgEX",
-    overview: "Wile E. Coyote sue Acme Corporation after decade of faulty product cause endless harm chase Road Runner. Team with down-on-luck lawyer, take corporate giant to court.",
+    overview: "High-powered London lawyer Maia Marten out on morning jog when mystery man hijack her diabetic son's insulin device. To save kid, Maia must sprint full-speed across London, obey crazy demands, and kill court witness before time run out.",
     overviewKurdish:"وایڵ ئی. کایۆتی دژی کۆمپانیای ئاکمی سکاڵا تۆمار دەکات لەدوای دەیان ساڵ بەرهەمی خراپ کە زیانی زۆری پێگەیاندووە لە کاتی ڕاونانی ڕۆدڕەنەر. لەگەڵ پارێزەرێکی بەختڕەش هاوکاری دەکات بۆ بردنی کۆمپانیا بۆ دادگا.",
     director: "Dave Green",
     cast: ["Will Forte, Lana Condor, Peter Dinklage"],
