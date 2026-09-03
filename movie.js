@@ -2471,6 +2471,26 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   }
 
   const videoUrlStr = String(videoUrl || "");
+  const ytVideoId = extractYouTubeId(videoUrlStr);
+  if (ytVideoId) {
+    if (video) {
+      video.classList.add("hidden");
+      video.pause();
+      video.src = "";
+    }
+    if (iframe) {
+      iframe.classList.remove("hidden");
+      iframe.src = `https://www.youtube.com/embed/${ytVideoId}?autoplay=1&rel=0&modestbranding=1`;
+    }
+    document.querySelector(".video-container")?.classList.add("is-iframe");
+    if (controlsBar) controlsBar.classList.add("hidden");
+    if (centerOverlay) centerOverlay.style.display = "none";
+    if (serverWrap) serverWrap.classList.add("hidden");
+    modal.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+    return;
+  }
+
   const isNumericId = /^\d+$/.test(videoUrlStr);
   const isTvEmbed = videoUrlStr.startsWith("tv_embed:");
   const isEmbedUrl = isTvEmbed || videoUrlStr.includes("/embed/") || videoUrlStr.includes("moviepire.co") || videoUrlStr.includes("vidapi.ru") || videoUrlStr.includes("vaplayer.ru");
