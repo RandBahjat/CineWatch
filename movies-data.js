@@ -16,7 +16,7 @@ window._MOVIES_DATA = [
       "Family"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vhv7lBWYM0DUuNU2a0V7Rhq21dD.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/7gf2GLNZ6lqbbTRuY9Vvrar0z3k.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/viZqGq9TNvQ5uXSD4ahg2RpRONT.jpg",
     videoUrl: "1480574",
     trailerUrl: "",
     overview: "Criminal fake death for insurance money, frame wife's lover; wife plot kill him for real, both race outmaneuver each other.",
