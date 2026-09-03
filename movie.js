@@ -11,7 +11,7 @@ if (window.location.hash.includes("type=recovery")) {
 // ==========================================
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
-let FEATURED_TITLES = ["The Runner","Coyote vs. Acme","Just Play Dead","Reacher","The Whisper Man","Grand Theft Auto VI: An Extended" ,"Batman: Knightfall Part 1: Knightfall", "Mutiny", "Lanterns", "Lioness", "Spider-Man: Brand New Day", "The Last Sunrise", "The Odyssey"];
+let FEATURED_TITLES = ["The Runner","Coyote vs. Acme","Just Play Dead","Reacher","The Whisper Man","Grand Theft Auto VI: An Extended Look" ,"Batman: Knightfall Part 1: Knightfall", "Mutiny", "Lanterns", "Lioness", "Spider-Man: Brand New Day", "The Last Sunrise", "The Odyssey"];
 let TOP_10_TRENDING_TODAY = ["The Runner","Just Play Dead","Coyote vs. Acme" , "Mutiny", "Batman: Knightfall Part 1: Knightfall","Reacher", "Spider-Man: Brand New Day", "Lanterns", "The Odyssey","The Brink of War"];
 let TRENDING_THIS_WEEK_MOVIES = ["Just Play Dead","Batman: Knightfall Part 1: Knightfall", "Mutiny", "Spider-Man: Brand New Day", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Minions & Monsters", "The Last House", "Disclosure Day", "The Invite", "The End of Oak Street", "Backrooms", "Camp Rock 3", "Evil Dead Burn", "Project Hail Mary", "Supergirl"];
 let TRENDING_THIS_WEEK_SERIES = ["Lanterns", "Reacher", "Lucky", "Silo", "One Piece", "Ted Lasso", "X-Men '97", "Lioness", "Outer Banks"];
