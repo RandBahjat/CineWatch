@@ -273,7 +273,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg',
     videoUrl: '108978',
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/PCbp1FfipPg?si=RUMi40UOLFe6HQYP",
     overview: 'Jack Reacher spent years as a decorated investigator in the U.S. Army\'s military police, uncovering corruption others tried to bury. Now retired from that life, he wanders from town to town with nothing but a toothbrush and his instincts â€” but wherever he lands, danger has a way of finding him, and Reacher has a way of finishing it.',
     overviewKurdish:"جاک ڕیچەر بۆ ماوەی چەندین ساڵ وەک پۆلیسی سوپای ئەمریکا خزمەتی کردووە و ناوبانگی بەدەستهێناوە وەک لێکۆڵەرێکی بەتوانا، ئەو گەندەڵییانی ئاشکرا کردووە کە خەڵکانی تر هەوڵیان دەدا شاردنەوە. ئێستا لەو ژیانە خۆی بازداوە، لە شارۆچکەیەک بۆ شارۆچکەیەکی تر دەگەڕێت بەبێ هیچ شتێک جگە لە فراشکەیەکی ددان و هەستی خۆی — بەڵام هەرکوێ دابنیشێت، مەترسی ڕێگای دەدۆزێتەوە بۆ گەیشتنی، و ڕیچەریش ڕێگای خۆی هەیە بۆ کۆتایی هێنانی پێ.",
     cast: [
