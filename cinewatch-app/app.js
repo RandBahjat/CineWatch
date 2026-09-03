@@ -1266,7 +1266,7 @@ function _startTrailer(heroEl, movie) {
   const iframe = document.createElement('iframe');
   iframe.className = 'trailer-iframe';
 
-  const customYtId = extractYouTubeId(movie.trailerUrl || movie.trailer || movie.trailerYouTubeId);
+  const customYtId = extractYouTubeId(movie.trailerUrl || movie.trailer || movie.trailerYouTubeId || movie.videoUrl);
   const hostOrigin = (window.location.protocol === 'http:' || window.location.protocol === 'https:') 
     ? window.location.origin 
     : 'https://www.youtube.com';
