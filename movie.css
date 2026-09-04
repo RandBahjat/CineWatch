@@ -8231,6 +8231,211 @@ body.rtl-layout .ai-prompt-card {
 }
 
 .anime-audio-pill:hover {
+min-width: 0;
+}
+
+.ai-movie-title {
+  font-weight: 800;
+  font-size: 0.96rem;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ai-movie-meta {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ai-movie-watch-btn {
+  align-self: flex-start;
+  margin-top: 0.25rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--primary), #b80710);
+  color: #fff;
+  border: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(229, 9, 20, 0.4);
+}
+
+.ai-movie-card:hover .ai-movie-watch-btn {
+  transform: scale(1.04);
+  background: linear-gradient(135deg, #ff1a2b, var(--primary));
+}
+
+/* Typing Indicator Animation */
+.typing-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.95rem 1.2rem;
+}
+
+.typing-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00e5ff;
+  animation: typing-bounce 1.4s infinite ease-in-out both;
+}
+
+.typing-dots span:nth-child(1) { animation-delay: -0.32s; }
+.typing-dots span:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes typing-bounce {
+  0%, 80%, 100% { transform: scale(0); opacity: 0.3; }
+  40% { transform: scale(1); opacity: 1; }
+}
+
+/* AI Modal Footer */
+.ai-modal-footer {
+  position: relative;
+  z-index: 2;
+  padding: 1rem 1.4rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ai-input-form {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1.5px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50px;
+  padding: 0.38rem 0.5rem 0.38rem 1.1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  transition: all 0.25s ease;
+}
+
+.ai-input-form:focus-within {
+  border-color: #00e5ff;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.25);
+}
+
+.ai-input-sparkle-icon {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.ai-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 0.92rem;
+  font-family: inherit;
+}
+
+.ai-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.88rem;
+}
+
+.ai-send-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00e5ff, var(--primary));
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex-shrink: 0;
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.4);
+}
+
+.ai-send-btn:hover:not(:disabled) {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.7);
+}
+
+.ai-send-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 600px) {
+  .ai-modal-card {
+    height: 94vh;
+    border-radius: 18px;
+  }
+  .ai-quick-cards {
+    grid-template-columns: 1fr;
+  }
+  .floating-ai-btn {
+    bottom: 75px;
+    right: 18px;
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+  }
+  body.rtl-layout .floating-ai-btn {
+    left: 18px;
+    right: auto;
+  }
+}
+
+/* Anime Detail Audio / Server Selector (SUB / DUB) */
+.anime-audio-toggle {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 28px;
+  padding: 3px;
+  gap: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  margin-right: 0.5rem;
+}
+
+.anime-server-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0 4px 0 8px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.anime-audio-pill {
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.65);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  letter-spacing: 0.5px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.anime-audio-pill:hover {
   color: #fff;
   background: rgba(255, 255, 255, 0.08);
 }
