@@ -20879,7 +20879,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/myryZe4g6PrzGIfOSn9IYmvQ88H.jpg",
     videoUrl: "1429",
     malId: 16498,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/LV-nazLVmgo?si=UWMkQgQQUoAsMd5r",
     anilistId: 16498,
     animeSlug: "attack-on-titan",
     overview: "Humanity huddle behind giant wall, hide from monstrous man-eating Titan roam outside. When wall breach, young Eren Yeager swear revenge, join fight uncover dark truth behind Titan, wall, world itself.",
