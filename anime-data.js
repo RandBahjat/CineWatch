@@ -23355,7 +23355,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/seMRyWVwIVBWbC9xaMzDMZJ8fUH.jpg",
     videoUrl: "131041",
     malId: 49596,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/QAlsuW5EXUg?si=eiJtkBetU8loWyyI",
     anilistId: 137822,
     animeSlug: "blue-lock",
     overview: "After a disastrous defeat at the 2018 World Cup, Japan's team struggles to regroup. But what's missing? An absolute Ace Striker, who can guide them to the win. The Japan Football Union is hell-bent on creating a striker who hungers for goals and thirsts for victory, and who can be the decisive instrument in turning around a losing match...and to do so, they've gathered 300 of Japan's best and brightest youth players. Who will emerge to lead the team...and will they be able to out-muscle and out-ego everyone who stands in their way?",
