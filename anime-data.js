@@ -22478,7 +22478,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/zJVqkxZ2cSD01MDhoFbT5Hg9pqm.jpg",
     videoUrl: "46298",
     malId: 11061,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/d6kBeJjTGnY?si=-1x0pKB4v1NcNarI",
     anilistId: 11061,
     animeSlug: "hunter-x-hunter-2011",
     overview: "Gon Freecss, young boy, chase dream become Hunter like father, elite adventurer explore world, hunt treasure, danger, truth. Meet loyal friend along way, face brutal trial, deadly enemy push him past limit again, again.",
