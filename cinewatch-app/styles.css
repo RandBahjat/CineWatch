@@ -4600,6 +4600,10 @@ html.light-mode .toast {
     padding-top: env(safe-area-inset-top);
   }
 
+  .app-view {
+    padding-top: max(28px, env(safe-area-inset-top));
+  }
+
   .main-wrapper {
     overflow: visible !important;
     width: 100% !important;
