@@ -8790,7 +8790,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/abfE867mF3TJrCuI3KFyMj465DN.jpg",
     videoUrl: "61709",
     malId: 6033,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/cUq5HHbu1Lw?si=-BeKojMcXtda-O9f",
     anilistId: 6033,
     animeSlug: "dragon-ball-z-kai",
     overview: "Revisiting the acclaimed Dragon Ball Z series, this remastered and condensed version removes original filler episodes to more closely follow Akira Toriyama's manga, delivering faster-paced action, updated animation sequences, and a re-recorded voice track as Goku and his friends defend Earth from increasingly powerful cosmic threats.",
