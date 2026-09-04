@@ -1671,6 +1671,37 @@ function playMovieDirect(movieId) {
     return;
   }
 
+  let mappedSeason = sNum;
+  let mappedEpisode = epNum;
+
+  // Fix Bleach episode mapping for TMDB-based servers
+  if (String(tmdb) === "30984" || String(tmdb) === "tt0436992" || String(movie.title).toLowerCase().includes("bleach")) {
+    const bleachSeasons = [20, 21, 22, 28, 18, 22, 20, 16, 22, 16, 7, 17, 36, 51, 26, 24];
+    let ep = parseInt(epNum) || 1;
+    for (let s = 0; s < bleachSeasons.length; s++) {
+      if (ep <= bleachSeasons[s]) {
+        mappedSeason = s + 1;
+        mappedEpisode = ep;
+        break;
+      }
+      ep -= bleachSeasons[s];
+    }
+  }
+
+  // Fix One Piece episode mapping for TMDB-based servers (One Piece has 21+ seasons on TMDB!)
+  if (String(tmdb) === "37854" || String(movie.title).toLowerCase().includes("one piece")) {
+    const onePieceSeasons = [61, 16, 14, 39, 13, 52, 33, 33, 61, 45, 26, 14, 26, 47, 62, 50, 118, 50, 109, 181, 67, 100];
+    let ep = parseInt(epNum) || 1;
+    for (let s = 0; s < onePieceSeasons.length; s++) {
+      if (ep <= onePieceSeasons[s]) {
+        mappedSeason = s + 1;
+        mappedEpisode = ep;
+        break;
+      }
+      ep -= onePieceSeasons[s];
+    }
+  }
+
   let vidLinkUrl = '';
   let servers = [];
 
@@ -1685,7 +1716,7 @@ function playMovieDirect(movieId) {
     ];
   } else {
     vidLinkUrl = isTv
-      ? `https://vidlink.pro/tv/${tmdb}/${sNum}/${epNum}?primaryColor=${animeColor}`
+      ? `https://vidlink.pro/tv/${tmdb}/${mappedSeason}/${mappedEpisode}?primaryColor=${animeColor}`
       : `https://vidlink.pro/movie/${tmdb}?primaryColor=${animeColor}`;
 
     servers = [
@@ -1697,7 +1728,7 @@ function playMovieDirect(movieId) {
       {
         id: 'autoembed',
         name: '🚀 AutoEmbed HD',
-        url: isTv ? `https://player.autoembed.cc/embed/tv/${tmdb}/${sNum}/${epNum}` : `https://player.autoembed.cc/embed/movie/${tmdb}`
+        url: isTv ? `https://player.autoembed.cc/embed/tv/${tmdb}/${mappedSeason}/${mappedEpisode}` : `https://player.autoembed.cc/embed/movie/${tmdb}`
       }
     ];
   }
