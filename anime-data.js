@@ -23942,7 +23942,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/yOarY3Yo0NMkuTuft87M5oAZa3C.jpg",
     videoUrl: "61374",
     malId: 22319,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/vGuQeQsoRgU?si=D8fy_l5acYz8g8hb",
     anilistId: 20605,
     animeSlug: "tokyo-ghoul",
     overview: "Tokyo has become a cruel and merciless city—a place where vicious creatures called “ghouls” exist alongside humans. The citizens of this once great metropolis live in constant fear of these bloodthirsty savages and their thirst for human flesh. However, the greatest threat these ghouls pose is their dangerous ability to masquerade as humans and blend in with society.",
