@@ -21291,7 +21291,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/3GQKYh6Trm8pxd2AypovoYQf4Ay.jpg",
     videoUrl: "85937",
     malId: 38000,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/VQGCKyvzIM4?si=Rp3evdCQyRafIsqK",
     anilistId: 101922,
     animeSlug: "demon-slayer",
     overview: "Tanjiro Kamado, kind-heart boy, come home find family slaughter by demon, only sister Nezuko survive, now turn demon herself. Join secret Demon Slayer Corps, train hard, hunt demon, seek cure bring sister back human.",
