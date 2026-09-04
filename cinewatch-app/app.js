@@ -1805,8 +1805,13 @@ function playMovieDirect(movieId) {
       servers = [
         {
           id: 'mega',
-          name: '🟣 Mega Server (MegaCloud HD)',
+          name: '🟣 Mega Server (English Sub / Japanese)',
           url: megaUrl
+        },
+        {
+          id: 'mega-dub',
+          name: '🎙️ Mega Server (English Dub)',
+          url: `https://megavid.buzz/mal/${malId}/${epNum}/dub`
         },
         {
           id: 'vidlink',
