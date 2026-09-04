@@ -15795,7 +15795,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/mNwz73VBP4HCY5QGXxRoCTabGTh.jpg",
     videoUrl: "30984",
     malId: 269,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/mnFXQUq-7ks?si=2tzr3nltiWPY_G47",
     overview: "Ichigo Kurosaki is a teenager gifted with the ability to see spirits. His life is drastically changed by the sudden appearance of a Soul Reaper—one who governs the flow of souls between the human world and the afterlife—named Rukia Kuchiki, who arrives in search of a Hollow, a dangerous lost soul. When Rukia is severely wounded defending Ichigo from the Hollow, she attempts to transfer half of her reiatsu energy to Ichigo so that he can defeat the Hollow. However, Ichigo takes almost all of her energy, transforming into a Soul Reaper and allowing him to defeat the Hollow with ease. With her powers diminished, Rukia is left stranded in the human world until she can recover her strength. In the meantime, Ichigo must take over Rukia's role as a Soul Reaper, battling Hollows and guiding souls to the afterlife realm known as the Soul Society.",
     overviewKurdish: "",
     director: "Noriyuki Abe",
