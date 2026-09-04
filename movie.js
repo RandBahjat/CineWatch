@@ -2233,6 +2233,29 @@ function openDetailsModal(movieId) {
         if (customSeasonSelect) customSeasonSelect.classList.remove("open");
       });
 
+      // Anime Audio Preference (SUB / DUB) on Detail Page
+      const audioToggle = document.getElementById("animeAudioToggle");
+      if (audioToggle) {
+        if (movie.isAnime) {
+          audioToggle.classList.remove("hidden");
+          const curPref = localStorage.getItem("cw_anime_audio_pref") || "sub";
+          audioToggle.querySelectorAll(".anime-audio-pill").forEach(p => {
+            p.classList.toggle("active", p.dataset.audio === curPref);
+            p.onclick = (e) => {
+              e.stopPropagation();
+              const chosen = p.dataset.audio;
+              localStorage.setItem("cw_anime_audio_pref", chosen);
+              audioToggle.querySelectorAll(".anime-audio-pill").forEach(x => x.classList.toggle("active", x.dataset.audio === chosen));
+              if (typeof showToast === "function") {
+                showToast(`Audio set to ${chosen === 'dub' ? '🎙️ English Dub' : '🟣 English Sub'}`);
+              }
+            };
+          });
+        } else {
+          audioToggle.classList.add("hidden");
+        }
+      }
+
       function getEpisodeUrl(ep, seasonData) {
         if (ep.videoUrl) return ep.videoUrl;
         // We return a special template string so openVideoPlayerWithUrl knows it's a TV embed that can be switched
