@@ -2233,34 +2233,30 @@ function openDetailsModal(movieId) {
         if (customSeasonSelect) customSeasonSelect.classList.remove("open");
       });
 
-    // Anime Audio / Server Preference (SUB / DUB) on Detail Page
+    // Anime Audio / Server Preference (SUB / DUB) on Detail Page (Episodes Section)
     const isAnime = !!(movie.isAnime || movie.type === 'Anime');
-    const headerAudioToggle = document.getElementById("detailsAnimeAudioToggle");
     const seasonAudioToggle = document.getElementById("animeAudioToggle");
-    const allAudioToggles = [headerAudioToggle, seasonAudioToggle].filter(Boolean);
 
-    allAudioToggles.forEach(toggle => {
+    if (seasonAudioToggle) {
       if (isAnime) {
-        toggle.classList.remove("hidden");
+        seasonAudioToggle.classList.remove("hidden");
         const curPref = localStorage.getItem("cw_anime_audio_pref") || "sub";
-        toggle.querySelectorAll(".anime-audio-pill").forEach(p => {
+        seasonAudioToggle.querySelectorAll(".anime-audio-pill").forEach(p => {
           p.classList.toggle("active", p.dataset.audio === curPref);
           p.onclick = (e) => {
             e.stopPropagation();
             const chosen = p.dataset.audio;
             localStorage.setItem("cw_anime_audio_pref", chosen);
-            allAudioToggles.forEach(t => {
-              t.querySelectorAll(".anime-audio-pill").forEach(x => x.classList.toggle("active", x.dataset.audio === chosen));
-            });
+            seasonAudioToggle.querySelectorAll(".anime-audio-pill").forEach(x => x.classList.toggle("active", x.dataset.audio === chosen));
             if (typeof showToast === "function") {
               showToast(`Server set to ${chosen === 'dub' ? '🎙️ Mega Server (DUB)' : '🟣 Mega Server (SUB)'}`);
             }
           };
         });
       } else {
-        toggle.classList.add("hidden");
+        seasonAudioToggle.classList.add("hidden");
       }
-    });
+    }
 
       function getEpisodeUrl(ep, seasonData) {
         if (ep.videoUrl) return ep.videoUrl;
@@ -4805,102 +4801,47 @@ function updateIframeServer() {
 
   let newUrl = '';
 
+  if (serverSelectWrap) {
+    serverSelectWrap.style.display = 'none';
+    serverSelectWrap.classList.add('hidden');
+  }
+
   if (isAnime) {
-    if (serverSelectWrap && serverSelect) {
-      serverSelectWrap.style.display = 'flex';
-      serverSelectWrap.classList.remove('hidden');
+    const artApp = document.getElementById("artplayerApp");
+    if (artApp) artApp.classList.add("hidden");
+    if (window.artPlayerInstance) {
+      try { window.artPlayerInstance.pause(); } catch(e) {}
+    }
+    if (iframe) iframe.classList.remove("hidden");
 
-      const pref = localStorage.getItem("cw_anime_audio_pref") || "sub";
-      if (!serverSelect.dataset.animeServersPopulated || serverSelect.dataset.animeLastPref !== pref) {
-        serverSelect.innerHTML = `
-          <option value="mega"${pref === 'sub' ? ' selected' : ''}>🟣 Mega Server (English Sub / Japanese)</option>
-          <option value="mega-dub"${pref === 'dub' ? ' selected' : ''}>🎙️ Mega Server (English Dub)</option>
-          <option value="vidlink">⚡ VidLink Pro Anime (Multi-Audio / Sub)</option>
-          <option value="artplayer">✨ ArtPlayer Glass (Direct Mega Stream)</option>
-          <option value="autoembed">🚀 AutoEmbed (Fast / HD)</option>
-          <option value="vidsrc-sbs">🛡️ VidSrc (All 1,100+ Episodes)</option>
-          <option value="zxcstream">🇯🇵 ZXC Stream (Japanese Audio)</option>
-        `;
-        serverSelect.dataset.animeServersPopulated = "true";
-        serverSelect.dataset.animeLastPref = pref;
-        serverSelect.value = pref === 'dub' ? 'mega-dub' : 'mega';
-      }
+    let mappedSeason = data.season;
+    let mappedEpisode = data.episode;
 
-      const selected = serverSelect.value;
+    const malId = getAnimeMalId(refMovie, data.id);
+    let rawEp = data.absoluteEpisode || data.episode || 1;
 
-      if (selected === 'artplayer') {
-        initArtPlayerForAnime(null, refMovie, parentMovie, data);
-        return;
-      } else {
-        const artApp = document.getElementById("artplayerApp");
-        if (artApp) artApp.classList.add("hidden");
-        if (window.artPlayerInstance) {
-          try { window.artPlayerInstance.pause(); } catch(e) {}
-        }
-        if (iframe) iframe.classList.remove("hidden");
-      }
-
-      let mappedSeason = data.season;
-      let mappedEpisode = data.episode;
-
-      // Fix Bleach episode mapping for TMDB-based servers
-      if (String(data.id) === "30984" || String(data.id) === "tt0436992" || String(data.parentId) === "Bleach") {
-        const bleachSeasons = [20, 21, 22, 28, 18, 22, 20, 16, 22, 16, 7, 17, 36, 51, 26, 24];
-        let ep = parseInt(data.episode) || 1;
-        for (let s = 0; s < bleachSeasons.length; s++) {
-          if (ep <= bleachSeasons[s]) {
-            mappedSeason = s + 1;
-            mappedEpisode = ep;
+    // Ensure rawEp is continuous episode if seasons are present
+    if (refMovie && refMovie.seasons && (!data.absoluteEpisode || data.absoluteEpisode === data.episode)) {
+      let epCount = 0;
+      let found = false;
+      for (const s of refMovie.seasons) {
+        for (const ep of s.episodes) {
+          epCount++;
+          if (s.season === parseInt(data.season) && ep.episode === parseInt(data.episode)) {
+            rawEp = ep.absoluteEpisode || epCount;
+            found = true;
             break;
           }
-          ep -= bleachSeasons[s];
         }
+        if (found) break;
       }
+    }
 
-      const malId = getAnimeMalId(refMovie, data.id);
-      const aniId = refMovie?.anilistId || malId || 21;
-      let rawEp = data.absoluteEpisode || data.episode || 1;
-
-      // Ensure rawEp is continuous episode if seasons are present
-      if (refMovie && refMovie.seasons && (!data.absoluteEpisode || data.absoluteEpisode === data.episode)) {
-        let epCount = 0;
-        let found = false;
-        for (const s of refMovie.seasons) {
-          for (const ep of s.episodes) {
-            epCount++;
-            if (s.season === parseInt(data.season) && ep.episode === parseInt(data.episode)) {
-              rawEp = ep.absoluteEpisode || epCount;
-              found = true;
-              break;
-            }
-          }
-          if (found) break;
-        }
-      }
-
-      if (selected === 'mega-dub') {
-        newUrl = `https://megavid.buzz/mal/${malId}/${rawEp}/dub`;
-        localStorage.setItem("cw_anime_audio_pref", "dub");
-      } else if (selected === 'mega') {
-        newUrl = `https://megavid.buzz/mal/${malId}/${rawEp}/sub`;
-        localStorage.setItem("cw_anime_audio_pref", "sub");
-      } else if (selected === 'vidlink') {
-        newUrl = data.type === 'tv'
-          ? `https://vidlink.pro/anime/${aniId}/${rawEp}/sub?fallback=true&primaryColor=23ade5`
-          : `https://vidlink.pro/movie/${data.id}?primaryColor=23ade5`;
-      } else if (selected === 'vidsrc-sbs') {
-        newUrl = data.type === 'tv'
-          ? `https://vidsrc.sbs/embed/tv/${data.id}/1/${rawEp}`
-          : `https://vidsrc.sbs/embed/movie/${data.id}`;
-      } else if (selected === 'autoembed') {
-        newUrl = data.type === 'tv'
-          ? `https://player.autoembed.cc/embed/tv/${data.id}/${mappedSeason}/${mappedEpisode}`
-          : `https://player.autoembed.cc/embed/movie/${data.id}`;
-      } else if (selected === 'zxcstream') {
-        newUrl = data.type === 'tv' ? `https://player.zxcstream.xyz/embed/tv/${data.id}/${mappedSeason}/${mappedEpisode}` : `https://player.zxcstream.xyz/embed/movie/${data.id}`;
-      }
+    const pref = localStorage.getItem("cw_anime_audio_pref") || "sub";
+    if (pref === 'dub') {
+      newUrl = `https://megavid.buzz/mal/${malId}/${rawEp}/dub`;
     } else {
-      newUrl = data.type === 'tv' ? `https://vidsrc.sbs/embed/tv/${data.id}/${data.season}/${data.episode}` : `https://vidsrc.sbs/embed/movie/${data.id}`;
+      newUrl = `https://megavid.buzz/mal/${malId}/${rawEp}/sub`;
     }
   } else {
     const artApp = document.getElementById("artplayerApp");
@@ -4908,35 +4849,10 @@ function updateIframeServer() {
     if (window.artPlayerInstance) {
       try { window.artPlayerInstance.pause(); } catch(e) {}
     }
-    if (serverSelectWrap && serverSelect) {
-      serverSelectWrap.style.display = 'flex';
-      serverSelectWrap.classList.remove('hidden');
-      if (serverSelect.dataset.animeServersPopulated) {
-        serverSelect.innerHTML = `
-          <option value="vidlink" selected>⚡ VidLink Pro</option>
-          <option value="vidsrc">🛡️ VidSrc</option>
-          <option value="autoembed">🚀 AutoEmbed HD</option>
-        `;
-        serverSelect.dataset.animeServersPopulated = "";
-      }
-      const selected = serverSelect.value || 'vidlink';
-      if (selected === 'vidsrc') {
-        newUrl = data.type === 'tv' ? `https://vidsrc.sbs/embed/tv/${data.id}/${data.season}/${data.episode}` : `https://vidsrc.sbs/embed/movie/${data.id}`;
-      } else if (selected === 'autoembed') {
-        newUrl = data.type === 'tv' ? `https://player.autoembed.cc/embed/tv/${data.id}/${data.season}/${data.episode}` : `https://player.autoembed.cc/embed/movie/${data.id}`;
-      } else {
-        if (data.type === 'tv') {
-          newUrl = `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=e50914`;
-        } else {
-          newUrl = `https://vidlink.pro/movie/${data.id}?primaryColor=e50914`;
-        }
-      }
+    if (data.type === 'tv') {
+      newUrl = `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=e50914`;
     } else {
-      if (data.type === 'tv') {
-        newUrl = `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=e50914`;
-      } else {
-        newUrl = `https://vidlink.pro/movie/${data.id}?primaryColor=e50914`;
-      }
+      newUrl = `https://vidlink.pro/movie/${data.id}?primaryColor=e50914`;
     }
   }
 
