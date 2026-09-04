@@ -1792,30 +1792,62 @@ function playMovieDirect(movieId) {
       }
     ];
   } else {
-    const aniId = movie.anilistId || movie.malId || 21;
+    const malId = getAnimeMalId(movie, tmdb);
+    const aniId = movie.anilistId || malId || 21;
+    const megaUrl = `https://megavid.buzz/mal/${malId}/${epNum}/sub`;
     vidLinkUrl = isAnime
-      ? `https://vidlink.pro/anime/${aniId}/${epNum}/sub?fallback=true&primaryColor=${animeColor}`
+      ? megaUrl
       : (isTv
           ? `https://vidlink.pro/tv/${tmdb}/${mappedSeason}/${mappedEpisode}?primaryColor=${animeColor}`
           : `https://vidlink.pro/movie/${tmdb}?primaryColor=${animeColor}`);
 
-    servers = [
-      {
-        id: 'vidlink',
-        name: '⚡ VidLink Pro Anime',
-        url: vidLinkUrl
-      },
-      {
-        id: 'vidsrc-sbs',
-        name: '🛡️ VidSrc (All Episodes)',
-        url: isTv ? `https://vidsrc.sbs/embed/tv/${tmdb}/1/${epNum}` : `https://vidsrc.sbs/embed/movie/${tmdb}`
-      },
-      {
-        id: 'autoembed',
-        name: '🚀 AutoEmbed HD',
-        url: isTv ? `https://player.autoembed.cc/embed/tv/${tmdb}/${mappedSeason}/${mappedEpisode}` : `https://player.autoembed.cc/embed/movie/${tmdb}`
-      }
-    ];
+    if (isAnime) {
+      servers = [
+        {
+          id: 'mega',
+          name: '🟣 Mega Server (MegaCloud HD)',
+          url: megaUrl
+        },
+        {
+          id: 'vidlink',
+          name: '⚡ VidLink Pro Anime',
+          url: `https://vidlink.pro/anime/${aniId}/${epNum}/sub?fallback=true&primaryColor=${animeColor}`
+        },
+        {
+          id: 'artplayer',
+          name: '✨ ArtPlayer Glass (Direct Mega Stream)',
+          url: 'artplayer://anime'
+        },
+        {
+          id: 'vidsrc-sbs',
+          name: '🛡️ VidSrc (All Episodes)',
+          url: isTv ? `https://vidsrc.sbs/embed/tv/${tmdb}/1/${epNum}` : `https://vidsrc.sbs/embed/movie/${tmdb}`
+        },
+        {
+          id: 'autoembed',
+          name: '🚀 AutoEmbed HD',
+          url: isTv ? `https://player.autoembed.cc/embed/tv/${tmdb}/${mappedSeason}/${mappedEpisode}` : `https://player.autoembed.cc/embed/movie/${tmdb}`
+        }
+      ];
+    } else {
+      servers = [
+        {
+          id: 'vidlink',
+          name: '⚡ VidLink Pro',
+          url: vidLinkUrl
+        },
+        {
+          id: 'vidsrc-sbs',
+          name: '🛡️ VidSrc (All Episodes)',
+          url: isTv ? `https://vidsrc.sbs/embed/tv/${tmdb}/${mappedSeason}/${mappedEpisode}` : `https://vidsrc.sbs/embed/movie/${tmdb}`
+        },
+        {
+          id: 'autoembed',
+          name: '🚀 AutoEmbed HD',
+          url: isTv ? `https://player.autoembed.cc/embed/tv/${tmdb}/${mappedSeason}/${mappedEpisode}` : `https://player.autoembed.cc/embed/movie/${tmdb}`
+        }
+      ];
+    }
   }
 
   function switchSource(srv) {
@@ -1823,6 +1855,7 @@ function playMovieDirect(movieId) {
     const iframeEl = document.getElementById('iframeEl');
     const streamTypeBadge = document.getElementById('streamTypeBadge');
     const playerLoading = document.getElementById('playerLoading');
+    const artContainer = document.getElementById('artplayerApp');
 
     // Never show duplicate custom spinner
     if (playerLoading) playerLoading.classList.add('hidden');
@@ -1837,6 +1870,19 @@ function playMovieDirect(movieId) {
     if (seekLeftZone) seekLeftZone.classList.add('hidden');
     if (seekRightZone) seekRightZone.classList.add('hidden');
 
+    if (srv && srv.id === 'artplayer') {
+      initArtPlayerForAnimeApp(movie, sNum, epNum);
+      const serverActiveLabel = document.getElementById('serverActiveLabel');
+      if (serverActiveLabel) serverActiveLabel.textContent = srv.name;
+      if (streamTypeBadge) streamTypeBadge.textContent = 'ARTPLAYER';
+      return;
+    }
+
+    if (artContainer) artContainer.classList.add('hidden');
+    if (window.artPlayerInstance) {
+      try { window.artPlayerInstance.pause(); } catch(e) {}
+    }
+
     if (vidstackPlayer) {
       vidstackPlayer.pause();
       vidstackPlayer.src = '';
@@ -1848,13 +1894,11 @@ function playMovieDirect(movieId) {
       iframeEl.src = srv ? srv.url : vidLinkUrl;
     }
 
-    if (streamTypeBadge) streamTypeBadge.textContent = 'VIDLINK PRO';
-  }
-
-  // Populate server label
-  const serverActiveLabel = document.getElementById('serverActiveLabel');
-  if (serverActiveLabel) {
-    serverActiveLabel.textContent = 'VidLink Pro';
+    const serverActiveLabel = document.getElementById('serverActiveLabel');
+    if (serverActiveLabel) {
+      serverActiveLabel.textContent = srv ? srv.name : (isAnime ? '🟣 Mega Server' : 'VidLink Pro');
+    }
+    if (streamTypeBadge) streamTypeBadge.textContent = isAnime ? 'MEGA HD' : 'VIDLINK PRO';
   }
 
   // Setup Player Controls & Listeners
