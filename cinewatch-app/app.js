@@ -2380,6 +2380,12 @@ function startApp() {
     });
   }
 
+  // Hide desktop window controls when loaded in a web browser
+  if (!window.electronAPI) {
+    const wc = document.querySelector('.window-controls');
+    if (wc) wc.style.display = 'none';
+  }
+
   // Settings & Account overlay handlers
   const openSettingsBtn = document.getElementById('openSettingsBtn');
   const closeSettingsBtn = document.getElementById('closeSettingsBtn');
