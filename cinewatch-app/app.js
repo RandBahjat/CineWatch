@@ -1408,7 +1408,52 @@ function formatPlayerTime(seconds) {
   return h > 0 ? `${h}:${pad(m)}:${pad(s)}` : `${pad(m)}:${pad(s)}`;
 }
 
-function initArtPlayerForAnimeApp(movie, sNum, epNum) {
+const ANIME_MAL_MAP = {
+  '37854': 21,       // One Piece
+  '12971': 813,      // Dragon Ball Z
+  '236994': 56880,   // Dragon Ball DAIMA
+  '62715': 30694,    // Dragon Ball Super
+  '12697': 225,      // Dragon Ball GT
+  '61709': 6033,     // Dragon Ball Z Kai
+  '46260': 20,       // Naruto
+  '31910': 1735,     // Naruto Shippuden
+  '70881': 34566,    // Boruto: Naruto Next Generations
+  '30984': 269,      // Bleach
+  '65930': 31964,    // My Hero Academia
+  '1429': 16498,     // Attack on Titan
+  '85937': 38000,    // Demon Slayer
+  '63926': 30276,    // One Punch Man
+  '127532': 52299,   // Solo Leveling
+  '95479': 40748,    // JUJUTSU KAISEN
+  '114410': 44511,   // Chainsaw Man
+  '13916': 1535,     // Death Note
+  '46298': 11061,    // Hunter x Hunter
+  '88803': 37521,    // Vinland Saga
+  '131041': 49596,   // BLUE LOCK
+  '60863': 20583,    // Haikyu!!
+  '61374': 22319,    // Tokyo Ghoul
+  '902': 481,        // Yu-Gi-Oh! Duel Monsters
+};
+
+function getAnimeMalId(refMovie, dataId) {
+  if (refMovie?.malId) return refMovie.malId;
+  const key = String(dataId || refMovie?.videoUrl || refMovie?.id || '');
+  if (ANIME_MAL_MAP[key]) return ANIME_MAL_MAP[key];
+  if (refMovie?.title) {
+    const t = refMovie.title.toLowerCase();
+    if (t.includes('one piece')) return 21;
+    if (t.includes('bleach')) return 269;
+    if (t.includes('shippuden')) return 1735;
+    if (t.includes('naruto')) return 20;
+    if (t.includes('death note')) return 1535;
+    if (t.includes('hunter')) return 11061;
+    if (t.includes('attack on titan')) return 16498;
+    if (t.includes('demon slayer')) return 38000;
+  }
+  return refMovie?.anilistId || 21;
+}
+
+async function initArtPlayerForAnimeApp(movie, sNum, epNum) {
   const playerModal = document.getElementById('playerModal');
   const artContainer = document.getElementById('artplayerApp');
   const vidstackPlayer = document.getElementById('vidstackPlayer');
@@ -1452,8 +1497,29 @@ function initArtPlayerForAnimeApp(movie, sNum, epNum) {
     window.artPlayerInstance = null;
   }
 
+  const malId = getAnimeMalId(movie, movie.videoUrl || movie.id);
   const poster = movie.backdrop || movie.poster || '';
-  const cleanUrl = String(movie.videoUrl || '');
+  let cleanUrl = String(movie.videoUrl || '');
+  let subtitleUrl = '';
+
+  if (!cleanUrl.startsWith('http')) {
+    try {
+      const res = await fetch(`https://megavid.buzz/mal/${malId}/${epNum}/sub/source`);
+      const srcData = await res.json();
+      if (srcData && srcData.source) {
+        cleanUrl = srcData.source;
+        if (srcData.tracks && srcData.tracks.length > 0) {
+          const enTrack = srcData.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || srcData.tracks[0];
+          if (enTrack && enTrack.file) {
+            subtitleUrl = enTrack.file;
+          }
+        }
+      }
+    } catch (e) {
+      console.warn('App ArtPlayer Mega fetch failed:', e);
+    }
+  }
+
   const streamUrl = cleanUrl.startsWith('http') ? cleanUrl : 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8';
 
   if (typeof Artplayer === 'undefined') {
@@ -1493,6 +1559,17 @@ function initArtPlayerForAnimeApp(movie, sNum, epNum) {
       moreVideoAttr: {
         crossOrigin: 'anonymous',
       },
+      subtitle: subtitleUrl ? {
+        url: subtitleUrl,
+        type: 'vtt',
+        style: {
+          color: '#ffffff',
+          fontSize: '22px',
+          textShadow: '0 2px 4px rgba(0,0,0,0.8)',
+          fontWeight: '600'
+        },
+        encoding: 'utf-8',
+      } : undefined,
       customType: {
         m3u8: function (video, url, art) {
           if (typeof Hls !== 'undefined' && Hls.isSupported()) {
@@ -1531,7 +1608,7 @@ function initArtPlayerForAnimeApp(movie, sNum, epNum) {
             {
               default: true,
               html: 'English Sub',
-              url: '',
+              url: subtitleUrl || '',
             },
             {
               html: 'Kurdish Sub',
