@@ -22205,7 +22205,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/tJ946hTDv4vwf51dYD6cK8pxC8o.jpg",
     videoUrl: "114410",
     malId: 44511,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/l96zmDlWCBk?si=bs0hDVyCnF80CK5j",
     anilistId: 127230,
     animeSlug: "chainsaw-man",
     overview: "Denji, poor young man drown in debt, fuse with pet devil Pochita after brutal death, become chainsaw-wield hybrid devil hunter. Chase simple dream — good meal, warm bed, girl to love — while cut through vicious devil, dark conspiracy.",
