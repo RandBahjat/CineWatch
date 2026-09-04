@@ -1662,7 +1662,11 @@ function playMovieDirect(movieId) {
   }
 
   const isAnime = !!(movie.isAnime || movie.type === 'Anime');
-  if (isAnime) {
+  const animeColor = isAnime ? '23ade5' : 'e50914';
+
+  // If anime has a direct .m3u8 / .mp4 URL (e.g. from VidHide), launch ArtPlayer!
+  const hasDirectStream = String(movie.videoUrl || '').includes('.m3u8') || String(movie.videoUrl || '').includes('.mp4');
+  if (isAnime && hasDirectStream) {
     initArtPlayerForAnimeApp(movie, sNum, epNum);
     return;
   }
@@ -1681,14 +1685,19 @@ function playMovieDirect(movieId) {
     ];
   } else {
     vidLinkUrl = isTv
-      ? `https://vidlink.pro/tv/${tmdb}/${sNum}/${epNum}?primaryColor=e50914`
-      : `https://vidlink.pro/movie/${tmdb}?primaryColor=e50914`;
+      ? `https://vidlink.pro/tv/${tmdb}/${sNum}/${epNum}?primaryColor=${animeColor}`
+      : `https://vidlink.pro/movie/${tmdb}?primaryColor=${animeColor}`;
 
     servers = [
       {
         id: 'vidlink',
         name: '⚡ VidLink Pro HD',
         url: vidLinkUrl
+      },
+      {
+        id: 'autoembed',
+        name: '🚀 AutoEmbed HD',
+        url: isTv ? `https://player.autoembed.cc/embed/tv/${tmdb}/${sNum}/${epNum}` : `https://player.autoembed.cc/embed/movie/${tmdb}`
       }
     ];
   }
