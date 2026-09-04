@@ -4688,11 +4688,11 @@ function updateIframeServer() {
 
       if (!serverSelect.dataset.animeServersPopulated) {
         serverSelect.innerHTML = `
-          <option value="artplayer" selected>✨ ArtPlayer (Anime Glass Player)</option>
-          <option value="vidlink">VidLink (Multi-Audio / Sub)</option>
-          <option value="autoembed">AutoEmbed (Fast / HD)</option>
-          <option value="vidsrc-sbs">VidSrc (Reliable)</option>
-          <option value="zxcstream">ZXC Stream (Japanese Audio)</option>
+          <option value="vidlink" selected>⚡ VidLink Pro (Multi-Audio / Sub)</option>
+          <option value="autoembed">🚀 AutoEmbed (Fast / HD)</option>
+          <option value="vidsrc-sbs">🛡️ VidSrc (Reliable)</option>
+          <option value="zxcstream">🇯🇵 ZXC Stream (Japanese Audio)</option>
+          <option value="artplayer">✨ ArtPlayer (VidHide / Direct Stream)</option>
           <option value="vidsrc-me">VidSrc ME (Multi-Language)</option>
           <option value="embvid">EmbVid (Dashboard Server)</option>
         `;
@@ -4736,8 +4736,8 @@ function updateIframeServer() {
           : `https://player.autoembed.cc/embed/movie/${data.id}`;
       } else if (selected === 'vidlink') {
         newUrl = data.type === 'tv'
-          ? `https://vidlink.pro/tv/${data.id}/${mappedSeason}/${mappedEpisode}`
-          : `https://vidlink.pro/movie/${data.id}`;
+          ? `https://vidlink.pro/tv/${data.id}/${mappedSeason}/${mappedEpisode}?primaryColor=23ade5`
+          : `https://vidlink.pro/movie/${data.id}?primaryColor=23ade5`;
       } else if (selected === 'embvid') {
         const embKey = 'vm_live_xGHB0XJKZEnGxbsohGJo7P0akb8rsfLD';
         newUrl = data.type === 'tv'
