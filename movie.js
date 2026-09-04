@@ -4706,11 +4706,27 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         {
           html: 'Audio / Dub',
           icon: '<ion-icon name="volume-high-outline" style="font-size:1.2rem;"></ion-icon>',
-          tooltip: 'Japanese',
+          tooltip: 'Audio Track',
           selector: [
-            { default: true, html: 'Japanese (Original)' },
+            { default: true, html: 'Japanese (Sub)' },
             { html: 'English Dub' },
           ],
+          onSelect(item) {
+            const isDub = item.html === 'English Dub';
+            const route = isDub ? 'dub' : 'sub';
+            fetch(`https://megavid.buzz/mal/${malId}/${rawEp}/${route}/source`)
+              .then(r => r.json())
+              .then(d => {
+                if (d && d.source && window.artPlayerInstance) {
+                  window.artPlayerInstance.switchUrl(d.source);
+                  if (typeof showToast === 'function') {
+                    showToast(`Switched to ${item.html}`);
+                  }
+                }
+              })
+              .catch(err => console.warn("Failed to switch audio stream:", err));
+            return item.html;
+          },
         },
         {
           html: 'Playback Speed',
@@ -4767,7 +4783,8 @@ function updateIframeServer() {
 
       if (!serverSelect.dataset.animeServersPopulated) {
         serverSelect.innerHTML = `
-          <option value="mega" selected>🟣 Mega Server (MegaCloud HD)</option>
+          <option value="mega" selected>🟣 Mega Server (English Sub / Japanese)</option>
+          <option value="mega-dub">🎙️ Mega Server (English Dub)</option>
           <option value="vidlink">⚡ VidLink Pro Anime (Multi-Audio / Sub)</option>
           <option value="artplayer">✨ ArtPlayer Glass (Direct Mega Stream)</option>
           <option value="autoembed">🚀 AutoEmbed (Fast / HD)</option>
@@ -4829,7 +4846,9 @@ function updateIframeServer() {
         }
       }
 
-      if (selected === 'mega') {
+      if (selected === 'mega-dub') {
+        newUrl = `https://megavid.buzz/mal/${malId}/${rawEp}/dub`;
+      } else if (selected === 'mega') {
         newUrl = `https://megavid.buzz/mal/${malId}/${rawEp}/sub`;
       } else if (selected === 'vidlink') {
         newUrl = data.type === 'tv'
