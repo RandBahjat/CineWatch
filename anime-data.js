@@ -19534,7 +19534,7 @@ window._ANIME_DATA = [
     backdrop: "https://media.themoviedb.org/t/p/w1920_and_h800_multi_faces/ol0H2DGp4ifBHA4JDlCpwJWxnY2.jpg",
     videoUrl: "65930",
     malId: 31964,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/TRr_dS2REo4?si=g4Xkc7csxxC14QLx",
     anilistId: 21459,
     animeSlug: "my-hero-academia",
     overview: "Izuku has dreamt of being a hero all his life?a lofty goal for anyone, but especially challenging for a kid with no superpowers. That?s right, in a world where eighty percent of the population has some kind of super-powered \"quirk,\" Izuku was unlucky enough to be born completely normal. But that?s not enough to stop him from enrolling in one of the world?s most prestigious hero academies.",
