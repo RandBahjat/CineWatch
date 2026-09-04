@@ -10863,7 +10863,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/7uHujbHkYBFwaRNiBeJ07mDdmyl.jpg",
     videoUrl: "31910",
     malId: 1735,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/22R0j8UKRzY?si=QE8vzMCRHZmbRUO_",
     anilistId: 114,
     animeSlug: "naruto-shippuden",
     overview: "Naruto Shippuuden is the continuation of the original animated TV series Naruto. The story revolves around an older and slightly more matured Uzumaki Naruto and his quest to save his friend Uchiha Sasuke from the grips of the snake-like Shinobi, Orochimaru.",
