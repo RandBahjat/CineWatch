@@ -1182,8 +1182,9 @@ function openDetail(movieId) {
             </button>
             ${isAnime ? `
             <div class="anime-audio-toggle" id="appAnimeAudioToggle">
-              <button type="button" class="anime-audio-pill ${curPref === 'sub' ? 'active' : ''}" data-audio="sub">🟣 SUB</button>
-              <button type="button" class="anime-audio-pill ${curPref === 'dub' ? 'active' : ''}" data-audio="dub">🎙️ DUB</button>
+              <span class="anime-server-label">Server:</span>
+              <button type="button" class="anime-audio-pill ${curPref === 'sub' ? 'active' : ''}" data-audio="sub" title="Mega Server (English Sub / Japanese)">🟣 SUB</button>
+              <button type="button" class="anime-audio-pill ${curPref === 'dub' ? 'active' : ''}" data-audio="dub" title="Mega Server (English Dub)">🎙️ DUB</button>
             </div>
             ` : ''}
             <button class="btn-more-info ${isFav ? 'active-fav' : ''}" id="detailWatchlistBtn">
@@ -1224,7 +1225,7 @@ function openDetail(movieId) {
           const chosen = p.dataset.audio;
           localStorage.setItem('cw_anime_audio_pref', chosen);
           appAudioToggle.querySelectorAll('.anime-audio-pill').forEach(x => x.classList.toggle('active', x.dataset.audio === chosen));
-          showToast(`Audio set to ${chosen === 'dub' ? '🎙️ English Dub' : '🟣 English Sub'}`);
+          showToast(`Server set to ${chosen === 'dub' ? '🎙️ Mega Server (DUB)' : '🟣 Mega Server (SUB)'}`);
         };
       });
     }
@@ -1825,17 +1826,21 @@ function playMovieDirect(movieId) {
           : `https://vidlink.pro/movie/${tmdb}?primaryColor=${animeColor}`);
 
     if (isAnime) {
+      const curPref = localStorage.getItem('cw_anime_audio_pref') || 'sub';
+      const subOption = {
+        id: 'mega',
+        name: '🟣 Mega Server (English Sub / Japanese)',
+        url: megaUrl
+      };
+      const dubOption = {
+        id: 'mega-dub',
+        name: '🎙️ Mega Server (English Dub)',
+        url: `https://megavid.buzz/mal/${malId}/${epNum}/dub`
+      };
+
       servers = [
-        {
-          id: 'mega',
-          name: '🟣 Mega Server (English Sub / Japanese)',
-          url: megaUrl
-        },
-        {
-          id: 'mega-dub',
-          name: '🎙️ Mega Server (English Dub)',
-          url: `https://megavid.buzz/mal/${malId}/${epNum}/dub`
-        },
+        curPref === 'dub' ? dubOption : subOption,
+        curPref === 'dub' ? subOption : dubOption,
         {
           id: 'vidlink',
           name: '⚡ VidLink Pro Anime',
@@ -1904,6 +1909,12 @@ function playMovieDirect(movieId) {
       if (serverActiveLabel) serverActiveLabel.textContent = srv.name;
       if (streamTypeBadge) streamTypeBadge.textContent = 'ARTPLAYER';
       return;
+    }
+
+    if (srv && srv.id === 'mega-dub') {
+      localStorage.setItem('cw_anime_audio_pref', 'dub');
+    } else if (srv && srv.id === 'mega') {
+      localStorage.setItem('cw_anime_audio_pref', 'sub');
     }
 
     if (artContainer) artContainer.classList.add('hidden');
