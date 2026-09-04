@@ -1180,13 +1180,6 @@ function openDetail(movieId) {
               <ion-icon name="play"></ion-icon>
               <span>Watch Now</span>
             </button>
-            ${isAnime ? `
-            <div class="anime-audio-toggle" id="appAnimeAudioToggle">
-              <span class="anime-server-label">Server:</span>
-              <button type="button" class="anime-audio-pill ${curPref === 'sub' ? 'active' : ''}" data-audio="sub" title="Mega Server (English Sub / Japanese)">🟣 SUB</button>
-              <button type="button" class="anime-audio-pill ${curPref === 'dub' ? 'active' : ''}" data-audio="dub" title="Mega Server (English Dub)">🎙️ DUB</button>
-            </div>
-            ` : ''}
             <button class="btn-more-info ${isFav ? 'active-fav' : ''}" id="detailWatchlistBtn">
               <ion-icon name="${isFav ? 'checkmark-circle' : 'add-circle-outline'}"></ion-icon>
               <span>${isFav ? 'In Watchlist' : 'Add to Watchlist'}</span>
@@ -1214,20 +1207,6 @@ function openDetail(movieId) {
         e.preventDefault();
         playMovieDirect(movie.id);
       };
-    }
-
-    // Wire Anime SUB / DUB toggle buttons
-    const appAudioToggle = body.querySelector('#appAnimeAudioToggle');
-    if (appAudioToggle) {
-      appAudioToggle.querySelectorAll('.anime-audio-pill').forEach(p => {
-        p.onclick = (e) => {
-          e.stopPropagation();
-          const chosen = p.dataset.audio;
-          localStorage.setItem('cw_anime_audio_pref', chosen);
-          appAudioToggle.querySelectorAll('.anime-audio-pill').forEach(x => x.classList.toggle('active', x.dataset.audio === chosen));
-          showToast(`Server set to ${chosen === 'dub' ? '🎙️ Mega Server (DUB)' : '🟣 Mega Server (SUB)'}`);
-        };
-      });
     }
 
     // Wire Watchlist Button safely with user login check
