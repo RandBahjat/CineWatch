@@ -767,6 +767,137 @@ select {
   transform: scale(0.96);
 }
 
+/* --- Download App Navbar Button --- */
+.nav-download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 0.42rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.nav-download-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.nav-download-btn:active {
+  transform: scale(0.96);
+}
+
+/* ==========================================================================
+   RTL & KURDISH / ARABIC NAVBAR OPTIMIZATIONS
+   ========================================================================== */
+body.rtl-layout .nav-left,
+[dir="rtl"] .nav-left {
+  gap: 1.1rem;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+body.rtl-layout .nav-links,
+[dir="rtl"] .nav-links {
+  gap: 0.85rem;
+  flex-shrink: 1;
+}
+
+body.rtl-layout .nav-link,
+[dir="rtl"] .nav-link {
+  font-size: 0.88rem;
+  gap: 0.32rem;
+  white-space: nowrap;
+}
+
+body.rtl-layout .nav-right,
+[dir="rtl"] .nav-right {
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+body.rtl-layout .nav-ai-btn,
+[dir="rtl"] .nav-ai-btn {
+  padding: 0.38rem 0.72rem;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+body.rtl-layout .nav-download-btn,
+[dir="rtl"] .nav-download-btn {
+  padding: 0.38rem 0.72rem;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+body.rtl-layout .nav-report-btn,
+[dir="rtl"] .nav-report-btn {
+  padding: 0.38rem 0.72rem;
+  font-size: 0.82rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* On mid-sized laptops & screens in RTL */
+@media (max-width: 1480px) {
+  body.rtl-layout .nav-container,
+  [dir="rtl"] .nav-container {
+    padding: 0 1rem;
+    gap: 0.6rem;
+  }
+  body.rtl-layout .nav-left,
+  [dir="rtl"] .nav-left {
+    gap: 0.8rem;
+  }
+  body.rtl-layout .nav-links,
+  [dir="rtl"] .nav-links {
+    gap: 0.6rem;
+  }
+  body.rtl-layout .nav-link,
+  [dir="rtl"] .nav-link {
+    font-size: 0.84rem;
+    gap: 0.25rem;
+  }
+  body.rtl-layout .brand-logo .brand-text,
+  [dir="rtl"] .brand-logo .brand-text {
+    font-size: 1.3rem;
+  }
+}
+
+/* If screen is below 1360px in RTL, gracefully collapse inline nav-links to the side drawer */
+@media (max-width: 1360px) {
+  body.rtl-layout .nav-links,
+  [dir="rtl"] .nav-links {
+    display: none !important;
+  }
+  body.rtl-layout .mobile-menu-btn,
+  [dir="rtl"] .mobile-menu-btn {
+    display: block !important;
+  }
+  body.rtl-layout .nav-left,
+  [dir="rtl"] .nav-left {
+    gap: 0.8rem;
+  }
+  body.rtl-layout .nav-right,
+  [dir="rtl"] .nav-right {
+    flex: 1;
+    justify-content: flex-end;
+  }
+}
+
 /* ==========================================================================
    ORGANIZED SPOTLIGHT SEARCH MODAL
    ========================================================================== */
