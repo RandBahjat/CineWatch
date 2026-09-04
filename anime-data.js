@@ -22291,7 +22291,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/msyFkFfEMuHpKvq7cf4NnyugbXP.jpg",
     videoUrl: "13916",
     malId: 1535,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/NlJZ-YgAt-c?si=kmQy5PWQmp4NIesv",
     anilistId: 1535,
     animeSlug: "death-note",
     overview: "Light Yagami is an ace student with great prospects—and he's bored out of his mind. But all that changes when he finds the Death Note, a notebook dropped by a rogue Shinigami death god. Any human whose name is written in the notebook dies, and Light has vowed to use the power of the Death Note to rid the world of evil. But will Light succeed in his noble goal, or will the Death Note turn him into the very thing he fights against?",
