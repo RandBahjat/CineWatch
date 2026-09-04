@@ -23119,7 +23119,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/rL3gpiDrdClh3PYqWhozu7WovPg.jpg",
     videoUrl: "88803",
     malId: 37521,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/f8JrZ7Q_p-8?si=cpFjtbYrtwx5x75Q",
     anilistId: 101348,
     animeSlug: "vinland-saga",
     overview: "For a thousand years, the Vikings have made quite a name and reputation for themselves as the strongest families with a thirst for violence. Thorfinn, the son of one of the Vikings' greatest warriors, spends his boyhood in a battlefield enhancing his skills in his adventure to redeem his most-desired revenge after his father was murdered.",
