@@ -13997,7 +13997,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/fA2ZkasP7MWEUgJelvzkjlXSoqu.jpg",
     videoUrl: "70881",
     malId: 34566,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/ppLE9xycGm4?si=kNvNSg6gl1t-iZ6q",
     anilistId: 97938,
     animeSlug: "boruto",
     overview: "The life of the shinobi is beginning to change. Boruto Uzumaki, son of Seventh Hokage Naruto Uzumaki, has enrolled in the Ninja Academy to learn the ways of the ninja. Now, as a series of mysterious events unfolds, Boruto's story is about to begin!",
