@@ -4688,15 +4688,19 @@ function updateIframeServer() {
 
       if (!serverSelect.dataset.animeServersPopulated) {
         serverSelect.innerHTML = `
-          <option value="vidlink" selected>⚡ VidLink Pro (Multi-Audio / Sub)</option>
+          <option value="vidlink">⚡ VidLink Pro (Multi-Audio / Sub)</option>
+          <option value="vidsrc-sbs">🛡️ VidSrc (All 1,100+ Episodes)</option>
           <option value="autoembed">🚀 AutoEmbed (Fast / HD)</option>
-          <option value="vidsrc-sbs">🛡️ VidSrc (Reliable)</option>
           <option value="zxcstream">🇯🇵 ZXC Stream (Japanese Audio)</option>
           <option value="artplayer">✨ ArtPlayer (VidHide / Direct Stream)</option>
-          <option value="vidsrc-me">VidSrc ME (Multi-Language)</option>
-          <option value="embvid">EmbVid (Dashboard Server)</option>
         `;
         serverSelect.dataset.animeServersPopulated = "true";
+      }
+
+      const epNumber = parseInt(data.episode) || 1;
+      const isOnePieceMid = (String(data.id) === "37854" || String(refMovie?.title).toLowerCase().includes("one piece")) && epNumber > 130;
+      if (isOnePieceMid && !serverSelect.dataset.userManuallySelected) {
+        serverSelect.value = "vidsrc-sbs";
       }
 
       const selected = serverSelect.value;
@@ -4744,7 +4748,11 @@ function updateIframeServer() {
         }
       }
 
-      if (selected === 'autoembed') {
+      if (selected === 'vidsrc-sbs') {
+        newUrl = data.type === 'tv'
+          ? `https://vidsrc.sbs/embed/tv/${data.id}/1/${data.episode || 1}`
+          : `https://vidsrc.sbs/embed/movie/${data.id}`;
+      } else if (selected === 'autoembed') {
         newUrl = data.type === 'tv'
           ? `https://player.autoembed.cc/embed/tv/${data.id}/${mappedSeason}/${mappedEpisode}`
           : `https://player.autoembed.cc/embed/movie/${data.id}`;
@@ -4752,19 +4760,10 @@ function updateIframeServer() {
         newUrl = data.type === 'tv'
           ? `https://vidlink.pro/tv/${data.id}/${mappedSeason}/${mappedEpisode}?primaryColor=23ade5`
           : `https://vidlink.pro/movie/${data.id}?primaryColor=23ade5`;
-      } else if (selected === 'embvid') {
-        const embKey = 'vm_live_xGHB0XJKZEnGxbsohGJo7P0akb8rsfLD';
-        newUrl = data.type === 'tv'
-          ? `https://embvid.com/embed/tv/${data.id}/${mappedSeason}/${mappedEpisode}?api_key=${embKey}`
-          : `https://embvid.com/embed/movie/${data.id}?api_key=${embKey}`;
       } else if (selected === 'zxcstream') {
         newUrl = data.type === 'tv' ? `https://player.zxcstream.xyz/embed/tv/${data.id}/${mappedSeason}/${mappedEpisode}` : `https://player.zxcstream.xyz/embed/movie/${data.id}`;
-      } else if (selected === 'vidsrc-me') {
-        newUrl = data.type === 'tv'
-          ? `https://vidsrc.me/embed/tv/${data.id}/${mappedSeason}/${mappedEpisode}`
-          : `https://vidsrc.me/embed/movie/${data.id}`;
       } else {
-        newUrl = data.type === 'tv' ? `https://vidsrc.sbs/embed/tv/${data.id}/${mappedSeason}/${mappedEpisode}` : `https://vidsrc.sbs/embed/movie/${data.id}`;
+        newUrl = data.type === 'tv' ? `https://vidsrc.sbs/embed/tv/${data.id}/1/${data.episode || 1}` : `https://vidsrc.sbs/embed/movie/${data.id}`;
       }
     } else {
       newUrl = data.type === 'tv' ? `https://vidsrc.sbs/embed/tv/${data.id}/${data.season}/${data.episode}` : `https://vidsrc.sbs/embed/movie/${data.id}`;
