@@ -4688,19 +4688,13 @@ function updateIframeServer() {
 
       if (!serverSelect.dataset.animeServersPopulated) {
         serverSelect.innerHTML = `
-          <option value="vidlink">⚡ VidLink Pro (Multi-Audio / Sub)</option>
-          <option value="vidsrc-sbs">🛡️ VidSrc (All 1,100+ Episodes)</option>
+          <option value="vidlink" selected>⚡ VidLink Pro Anime (Multi-Audio / Sub)</option>
           <option value="autoembed">🚀 AutoEmbed (Fast / HD)</option>
+          <option value="vidsrc-sbs">🛡️ VidSrc (All 1,100+ Episodes)</option>
           <option value="zxcstream">🇯🇵 ZXC Stream (Japanese Audio)</option>
           <option value="artplayer">✨ ArtPlayer (VidHide / Direct Stream)</option>
         `;
         serverSelect.dataset.animeServersPopulated = "true";
-      }
-
-      const epNumber = parseInt(data.episode) || 1;
-      const isOnePieceMid = (String(data.id) === "37854" || String(refMovie?.title).toLowerCase().includes("one piece")) && epNumber > 130;
-      if (isOnePieceMid && !serverSelect.dataset.userManuallySelected) {
-        serverSelect.value = "vidsrc-sbs";
       }
 
       const selected = serverSelect.value;
@@ -4734,36 +4728,25 @@ function updateIframeServer() {
         }
       }
 
-      // Fix One Piece episode mapping for TMDB-based servers (One Piece has 21+ seasons on TMDB!)
-      if (String(data.id) === "37854" || String(data.parentId) === "One Piece" || String(refMovie?.title).toLowerCase().includes("one piece")) {
-        const onePieceSeasons = [61, 16, 14, 39, 13, 52, 33, 33, 61, 45, 26, 14, 26, 47, 62, 50, 118, 50, 109, 181, 67, 100];
-        let ep = parseInt(data.episode) || 1;
-        for (let s = 0; s < onePieceSeasons.length; s++) {
-          if (ep <= onePieceSeasons[s]) {
-            mappedSeason = s + 1;
-            mappedEpisode = ep;
-            break;
-          }
-          ep -= onePieceSeasons[s];
-        }
-      }
+      const aniId = refMovie?.anilistId || refMovie?.malId || 21;
+      const rawEp = data.episode || 1;
 
-      if (selected === 'vidsrc-sbs') {
+      if (selected === 'vidlink') {
         newUrl = data.type === 'tv'
-          ? `https://vidsrc.sbs/embed/tv/${data.id}/1/${data.episode || 1}`
+          ? `https://vidlink.pro/anime/${aniId}/${rawEp}/sub?fallback=true&primaryColor=23ade5`
+          : `https://vidlink.pro/movie/${data.id}?primaryColor=23ade5`;
+      } else if (selected === 'vidsrc-sbs') {
+        newUrl = data.type === 'tv'
+          ? `https://vidsrc.sbs/embed/tv/${data.id}/1/${rawEp}`
           : `https://vidsrc.sbs/embed/movie/${data.id}`;
       } else if (selected === 'autoembed') {
         newUrl = data.type === 'tv'
           ? `https://player.autoembed.cc/embed/tv/${data.id}/${mappedSeason}/${mappedEpisode}`
           : `https://player.autoembed.cc/embed/movie/${data.id}`;
-      } else if (selected === 'vidlink') {
-        newUrl = data.type === 'tv'
-          ? `https://vidlink.pro/tv/${data.id}/${mappedSeason}/${mappedEpisode}?primaryColor=23ade5`
-          : `https://vidlink.pro/movie/${data.id}?primaryColor=23ade5`;
       } else if (selected === 'zxcstream') {
         newUrl = data.type === 'tv' ? `https://player.zxcstream.xyz/embed/tv/${data.id}/${mappedSeason}/${mappedEpisode}` : `https://player.zxcstream.xyz/embed/movie/${data.id}`;
       } else {
-        newUrl = data.type === 'tv' ? `https://vidsrc.sbs/embed/tv/${data.id}/1/${data.episode || 1}` : `https://vidsrc.sbs/embed/movie/${data.id}`;
+        newUrl = data.type === 'tv' ? `https://vidlink.pro/anime/${aniId}/${rawEp}/sub?fallback=true&primaryColor=23ade5` : `https://vidlink.pro/movie/${data.id}?primaryColor=23ade5`;
       }
     } else {
       newUrl = data.type === 'tv' ? `https://vidsrc.sbs/embed/tv/${data.id}/${data.season}/${data.episode}` : `https://vidsrc.sbs/embed/movie/${data.id}`;
