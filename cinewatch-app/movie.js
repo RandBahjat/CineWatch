@@ -4730,6 +4730,20 @@ function updateIframeServer() {
         }
       }
 
+      // Fix One Piece episode mapping for TMDB-based servers (One Piece has 21+ seasons on TMDB!)
+      if (String(data.id) === "37854" || String(data.parentId) === "One Piece" || String(refMovie?.title).toLowerCase().includes("one piece")) {
+        const onePieceSeasons = [61, 16, 14, 39, 13, 52, 33, 33, 61, 45, 26, 14, 26, 47, 62, 50, 118, 50, 109, 181, 67, 100];
+        let ep = parseInt(data.episode) || 1;
+        for (let s = 0; s < onePieceSeasons.length; s++) {
+          if (ep <= onePieceSeasons[s]) {
+            mappedSeason = s + 1;
+            mappedEpisode = ep;
+            break;
+          }
+          ep -= onePieceSeasons[s];
+        }
+      }
+
       if (selected === 'autoembed') {
         newUrl = data.type === 'tv'
           ? `https://player.autoembed.cc/embed/tv/${data.id}/${mappedSeason}/${mappedEpisode}`
