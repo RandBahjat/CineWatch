@@ -21931,7 +21931,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/nIHp6fz2MX33blJKYa9BSbhct7W.jpg",
     videoUrl: "95479",
     malId: 40748,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/pkKu9hLT-t8?si=F_Eg5ZrkXQaWx1CY",
     anilistId: 113415,
     animeSlug: "jujutsu-kaisen",
     overview: "Yuji Itadori, ordinary high schooler, swallow cursed finger, become vessel for powerful demon Sukuna to save friend. Pull into secret world of jujutsu sorcerer, battle deadly curse, uncover deep conspiracy tie to Sukuna's ancient past.",
