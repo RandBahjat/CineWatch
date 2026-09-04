@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260904_1562">
+    <link rel="stylesheet" href="movie.css?v=20260904_1563">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -27,9 +27,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_5693" defer></script>
-    <script src="series-data.js?v=20260818_5693" defer></script>
-    <script src="anime-data.js?v=20260818_5693" defer></script>
+    <script src="movies-data.js?v=20260818_5694" defer></script>
+    <script src="series-data.js?v=20260818_5694" defer></script>
+    <script src="anime-data.js?v=20260818_5694" defer></script>
     <script src="movie.js?v=v44" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -1657,14 +1657,14 @@
                 if (navMovies2) navMovies2.textContent = 'أفلام';
                 if (navAnime1) navAnime1.textContent = 'الأنمي';
                 if (navAnime2) navAnime2.textContent = 'الأنمي';
-                if (navContinue1) navContinue1.textContent = 'متابعة المشاهدة';
-                if (navContinue2) navContinue2.textContent = 'متابعة المشاهدة';
+                if (navContinue1) navContinue1.textContent = 'متابعة';
+                if (navContinue2) navContinue2.textContent = 'متابعة';
                 if (navWatchlist1) navWatchlist1.textContent = 'قائمتي';
                 if (navWatchlist2) navWatchlist2.textContent = 'قائمتي';
                 if (continueShelfTitle) continueShelfTitle.textContent = 'متابعة المشاهدة';
                 if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'تابع من حيث توقفت';
-                if (navAiBtnText) navAiBtnText.textContent = 'اسأل الذكاء الاصطناعي';
-                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = 'اسأل الذكاء الاصطناعي';
+                if (navAiBtnText) navAiBtnText.textContent = 'الذكاء الاصطناعي';
+                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = 'الذكاء الاصطناعي';
                 if (filterBtnText) filterBtnText.textContent = 'أفلام ومسلسلات';
                 if (filterOptAll) filterOptAll.textContent = 'أفلام ومسلسلات';
                 if (filterOptMovie) filterOptMovie.textContent = 'أفلام فقط';
@@ -1673,6 +1673,8 @@
                     const g = btn.getAttribute('data-genre');
                     if (genreMapArabic[g]) btn.textContent = genreMapArabic[g];
                 });
+                document.querySelectorAll('.download-text').forEach(el => el.textContent = 'تحميل');
+                document.querySelectorAll('.report-text').forEach(el => el.textContent = 'إبلاغ');
                 const detailsSimilarsText = document.getElementById('detailsSimilarsText');
                 if (detailsSimilarsText) detailsSimilarsText.textContent = 'أعمال مشابهة';
                 const detailsSimilarsHeading = document.getElementById('detailsSimilarsHeading');
