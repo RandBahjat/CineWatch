@@ -8443,7 +8443,6 @@ window._ANIME_DATA = [
     ],
     videoUrl: "12697",
     malId: 225,
-    trailerUrl: "",
     seasons: [
       {
         season: 1,
