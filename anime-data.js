@@ -23338,7 +23338,7 @@ window._ANIME_DATA = [
   },
 
 {
-    title: "BLUE LOCK",
+    title: ",
     type: "TV Show",
     isAnime: true,
     year: 2022,
