@@ -9489,7 +9489,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/mpsYIytXhDXjI9yYC1Fp1S3PxsS.jpg",
     videoUrl: "46260",
     malId: 20,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/-G9BqkgZXRA?si=96NRrH8Taz-7morv",
     anilistId: 20,
     animeSlug: "naruto",
     overview: "Naruto Uzumaki, young ninja with sealed nine-tailed fox spirit inside him, dream become strongest ninja, earn respect as Hokage, leader of his village. Chase acceptance, fight rival, grow strong through many battle, deep bond of friendship.",
