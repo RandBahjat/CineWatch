@@ -1715,15 +1715,23 @@ function playMovieDirect(movieId) {
       }
     ];
   } else {
-    vidLinkUrl = isTv
-      ? `https://vidlink.pro/tv/${tmdb}/${mappedSeason}/${mappedEpisode}?primaryColor=${animeColor}`
-      : `https://vidlink.pro/movie/${tmdb}?primaryColor=${animeColor}`;
+    const aniId = movie.anilistId || movie.malId || 21;
+    vidLinkUrl = isAnime
+      ? `https://vidlink.pro/anime/${aniId}/${epNum}/sub?fallback=true&primaryColor=${animeColor}`
+      : (isTv
+          ? `https://vidlink.pro/tv/${tmdb}/${mappedSeason}/${mappedEpisode}?primaryColor=${animeColor}`
+          : `https://vidlink.pro/movie/${tmdb}?primaryColor=${animeColor}`);
 
     servers = [
       {
         id: 'vidlink',
-        name: '⚡ VidLink Pro HD',
+        name: '⚡ VidLink Pro Anime',
         url: vidLinkUrl
+      },
+      {
+        id: 'vidsrc-sbs',
+        name: '🛡️ VidSrc (All Episodes)',
+        url: isTv ? `https://vidsrc.sbs/embed/tv/${tmdb}/1/${epNum}` : `https://vidsrc.sbs/embed/movie/${tmdb}`
       },
       {
         id: 'autoembed',
