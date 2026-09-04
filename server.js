@@ -50,6 +50,12 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  if (safePath === '/app' || safePath === '/app/') {
+    res.writeHead(302, { 'Location': '/cinewatch-app/' });
+    res.end();
+    return;
+  }
+
   // Default to index.html for root or directory
   let filePath = path.join(ROOT_DIR, safePath);
 
