@@ -289,205 +289,253 @@
             margin-top: 0.75rem;
         }
 
-        /* ── Galaxy S25 Ultra Mockup ── */
+        /* ══════════════════════════════════════════════════
+           SAMSUNG GALAXY S25 ULTRA MOCKUP (ULTRA-REALISTIC)
+        ══════════════════════════════════════════════════ */
         .galaxy-wrap {
             opacity: 0;
             animation: fadeUp 1s ease-out 0.95s forwards;
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative;
+            margin: 1rem auto 0;
         }
 
-        /* ═══════════════════════════════════════
-           SAMSUNG GALAXY S25 ULTRA MOCKUP
-        ═══════════════════════════════════════ */
-
-        /* Outer titanium frame — flat sides, rectangular corners */
+        /* Outer Titanium Frame — S25 Ultra Flat Titanium Sides */
         .galaxy-frame {
             position: relative;
-            width: 270px;
-            /* Titanium colour — matte dark grey */
-            background: linear-gradient(175deg, #2c2c2e 0%, #1c1c1e 35%, #232323 65%, #1c1c1e 100%);
-            border-radius: 22px;          /* S25 Ultra has much tighter corners than iPhone */
-            /* Titanium edge shine */
-            border: 1.5px solid #3a3a3c;
-            box-shadow:
-                inset 0 1px 0 rgba(255,255,255,0.10),    /* top edge highlight */
-                inset 0 -1px 0 rgba(0,0,0,0.4),          /* bottom edge shadow */
-                inset 1px 0 0 rgba(255,255,255,0.04),
-                inset -1px 0 0 rgba(0,0,0,0.3),
-                0 50px 100px rgba(0,0,0,0.75),
-                0 20px 40px rgba(0,0,0,0.5);
-            padding: 8px 8px 14px;        /* extra bottom padding for S Pen slot */
+            width: 310px;
+            height: 648px;
+            /* Grade 5 Titanium finish with natural metallic lighting */
+            background: linear-gradient(165deg, 
+                #3a3c42 0%, 
+                #232428 18%, 
+                #2c2d33 42%, 
+                #1a1b1e 70%, 
+                #32343a 100%
+            );
+            border-radius: 20px;          /* S25 Ultra ergonomic softened corners */
+            padding: 4px;                  /* World-class ultra-slim 1.2mm symmetrical bezels */
+            box-sizing: border-box;
+            box-shadow: 
+                /* Outer titanium chamfer highlights */
+                0 0 0 1px rgba(255,255,255,0.18),
+                0 0 0 2px #121316,
+                /* Inner frame depth */
+                inset 0 1px 0 rgba(255,255,255,0.25),
+                inset 0 -1px 0 rgba(0,0,0,0.6),
+                inset 1px 0 0 rgba(255,255,255,0.08),
+                inset -1px 0 0 rgba(0,0,0,0.5),
+                /* Realistic drop shadows */
+                0 30px 80px -10px rgba(0,0,0,0.9),
+                0 15px 35px -5px rgba(0,0,0,0.7);
         }
 
-        /* Right side — power button (short, flat) */
+        /* Right side — Volume Rocker (Both buttons on the right side for Samsung) */
         .galaxy-frame::before {
             content: '';
             position: absolute;
-            right: -2px;
-            top: 130px;
+            right: -2.5px;
+            top: 115px;
             width: 2.5px;
-            height: 48px;
-            background: linear-gradient(to bottom, #3a3a3c, #48484a, #3a3a3c);
+            height: 64px;
+            background: linear-gradient(to bottom, #42444b, #2b2c31, #3a3c42);
             border-radius: 0 2px 2px 0;
+            box-shadow: 1px 0 2px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.2);
         }
 
-        /* Left side — volume up + volume down (two separate flat bars) */
+        /* Right side — Power / Side Key */
         .galaxy-frame::after {
             content: '';
             position: absolute;
-            left: -2px;
-            top: 100px;
+            right: -2.5px;
+            top: 198px;
             width: 2.5px;
-            height: 80px;
-            background:
-                linear-gradient(to bottom, transparent 0%, transparent 44%,
-                                #1c1c1e 44%, #1c1c1e 52%,
-                                #3a3a3c 52%, #48484a 75%, #3a3a3c 100%);
-            border-radius: 2px 0 0 2px;
+            height: 42px;
+            background: linear-gradient(to bottom, #42444b, #2b2c31, #3a3c42);
+            border-radius: 0 2px 2px 0;
+            box-shadow: 1px 0 2px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.2);
         }
 
-        /* S Pen slot — bottom right corner, Samsung signature feature */
-        .galaxy-spen {
+        /* Top earpiece speaker micro-slit */
+        .galaxy-speaker {
             position: absolute;
-            bottom: 4px;
-            right: 16px;
-            width: 3px;
-            height: 60px;
-            background: linear-gradient(to bottom, #3a3a3c, #2c2c2e);
-            border-radius: 2px;
-        }
-
-        /* Screen — very slight inner radius, almost flat edge to edge */
-        .galaxy-screen-wrap {
-            width: 100%;
-            height: 580px;
-            border-radius: 16px;          /* tighter screen radius for S-Ultra style */
-            overflow: hidden;
-            background: #000;
-            position: relative;
-        }
-
-        /* Tiny single punch-hole camera — NOT an iPhone pill */
-        .galaxy-camera {
-            position: absolute;
-            top: 12px;
+            top: 1.5px;
             left: 50%;
             transform: translateX(-50%);
-            width: 10px;
-            height: 10px;
-            background: radial-gradient(circle, #0a0f1a 40%, #1a1f2a 100%);
-            border-radius: 50%;
+            width: 38px;
+            height: 1.5px;
+            background: #111215;
+            border-radius: 1px;
             z-index: 10;
-            box-shadow: 0 0 0 1px rgba(255,255,255,0.06), inset 0 1px 2px rgba(0,0,0,0.8);
         }
-        /* Remove old pill ::before / ::after */
-        .galaxy-camera::before, .galaxy-camera::after { display: none; }
 
-        /* Status bar — Samsung One UI style: time left, icons right, slim */
+        /* S Pen Silo at bottom edge */
+        .galaxy-spen {
+            position: absolute;
+            bottom: -1px;
+            right: 22px;
+            width: 26px;
+            height: 3px;
+            background: #1c1d20;
+            border-radius: 1px 1px 0 0;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.15);
+            z-index: 2;
+        }
+
+        /* Screen Wrapper — Dynamic AMOLED 2X Flat Display */
+        .galaxy-screen-wrap {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+            background: #06070a;
+            box-shadow: inset 0 0 0 1px rgba(0,0,0,0.9);
+        }
+
+        /* Corning Gorilla Armor diagonal anti-reflective glass sheen */
+        .galaxy-screen-wrap::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                130deg,
+                rgba(255,255,255,0.08) 0%,
+                rgba(255,255,255,0.03) 25%,
+                transparent 45%
+            );
+            pointer-events: none;
+            z-index: 8;
+        }
+
+        /* Samsung Infinity-O Punch-Hole Camera */
+        .galaxy-camera {
+            position: absolute;
+            top: 9px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 35% 35%, #1c2744 15%, #080c16 65%, #000 100%);
+            box-shadow: 0 0 0 1px rgba(255,255,255,0.06), inset 0 1px 2px rgba(0,0,0,0.9);
+            z-index: 9;
+        }
+
+        /* Samsung One UI 7 Status Bar */
         .galaxy-status-bar {
             position: absolute;
             top: 0; left: 0; right: 0;
-            height: 36px;
-            background: rgba(6,7,10,0.92);
-            z-index: 5;
+            height: 32px;
+            background: linear-gradient(to bottom, rgba(6,7,10,0.85), transparent);
+            z-index: 7;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0 18px;
+            padding: 0 16px;
             font-size: 0.68rem;
-            font-weight: 600;
-            color: #fff;
+            color: #ffffff;
+            pointer-events: none;
         }
-        .status-time { letter-spacing: 0.3px; font-size: 0.7rem; font-weight: 700; }
-        .status-icons { display: flex; align-items: center; gap: 3px; font-size: 0.8rem; }
-
-        /* Browser bar — Samsung Internet style */
-        .galaxy-browser-bar {
-            position: absolute;
-            top: 36px; left: 0; right: 0;
-            height: 34px;
-            background: #0f0f0f;
-            z-index: 5;
+        .status-time {
+            font-family: 'Inter', -apple-system, sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: -0.2px;
+        }
+        .status-icons {
             display: flex;
             align-items: center;
-            padding: 0 10px;
-            gap: 8px;
-            border-bottom: 1px solid rgba(255,255,255,0.04);
-        }
-        .browser-dots { display: flex; gap: 3px; }
-        .browser-dots span {
-            width: 5px; height: 5px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.15);
-        }
-        .browser-url {
-            flex: 1;
-            background: rgba(255,255,255,0.05);
-            border-radius: 6px;
-            padding: 3px 8px;
-            font-size: 0.6rem;
-            color: rgba(255,255,255,0.45);
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        .browser-url::before {
-            content: '';
-            width: 5px; height: 5px;
-            border-radius: 50%;
-            background: #4caf50;
-            flex-shrink: 0;
-        }
-        .browser-actions {
-            display: flex;
             gap: 6px;
-            color: rgba(255,255,255,0.25);
-            font-size: 0.8rem;
+            font-size: 0.78rem;
+            opacity: 0.95;
+        }
+        .status-5g {
+            font-size: 0.58rem;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            background: rgba(255,255,255,0.15);
+            padding: 1px 3px;
+            border-radius: 2px;
+            line-height: 1;
+        }
+        .battery-pill {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+        .battery-icon {
+            width: 16px;
+            height: 8px;
+            border: 1.2px solid #ffffff;
+            border-radius: 2px;
+            padding: 1px;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .battery-icon::after {
+            content: '';
+            position: absolute;
+            right: -2.5px;
+            top: 1.5px;
+            width: 1.5px;
+            height: 3px;
+            background: #ffffff;
+            border-radius: 0 1px 1px 0;
+        }
+        .battery-level {
+            width: 80%;
+            height: 100%;
+            background: #ffffff;
+            border-radius: 1px;
         }
 
-        /* App screenshot area */
+        /* App Screenshot Area (Native Edge-to-Edge Experience) */
         .galaxy-app {
             position: absolute;
             inset: 0;
-            top: 70px;  /* status(36) + browser(34) */
-            bottom: 22px;
             overflow: hidden;
+            background: #06070a;
         }
         .galaxy-app img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: top;
+            object-position: top center;
             display: block;
         }
 
-        /* Bottom home indicator bar */
+        /* One UI Gesture Bar (Home indicator) */
         .galaxy-bottom-bar {
             position: absolute;
             bottom: 0; left: 0; right: 0;
-            height: 22px;
-            background: rgba(6,7,10,0.92);
+            height: 20px;
+            background: linear-gradient(to top, rgba(6,7,10,0.85), transparent);
             display: flex;
             align-items: center;
             justify-content: center;
-            z-index: 5;
+            z-index: 7;
+            pointer-events: none;
         }
         .galaxy-home-indicator {
-            width: 80px;
-            height: 3px;
-            background: rgba(255,255,255,0.2);
-            border-radius: 3px;
+            width: 90px;
+            height: 3.5px;
+            background: rgba(255,255,255,0.45);
+            border-radius: 4px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.4);
         }
 
-        /* Red ambient glow under phone */
+        /* Red Ambient Glow Under Phone */
         .galaxy-glow {
-            width: 180px;
-            height: 28px;
-            background: radial-gradient(ellipse, rgba(229,9,20,0.25), transparent 70%);
-            margin-top: -4px;
-            filter: blur(10px);
+            width: 240px;
+            height: 35px;
+            background: radial-gradient(ellipse, rgba(229,9,20,0.32), transparent 70%);
+            margin-top: -6px;
+            filter: blur(14px);
+            pointer-events: none;
         }
 
         @media (max-width: 768px) {
