@@ -8199,3 +8199,49 @@ body.rtl-layout .ai-prompt-card {
   }
 }
 
+/* Anime Detail Audio / Server Selector (SUB / DUB) */
+.anime-audio-toggle {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 28px;
+  padding: 3px;
+  gap: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  margin-right: 0.5rem;
+}
+
+.anime-audio-pill {
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.65);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  letter-spacing: 0.5px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.anime-audio-pill:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.anime-audio-pill.active {
+  background: linear-gradient(135deg, #a855f7 0%, #6366f1 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 10px rgba(168, 85, 247, 0.45);
+}
+
+.anime-audio-pill[data-audio="dub"].active {
+  background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+  box-shadow: 0 2px 10px rgba(236, 72, 153, 0.45);
+}
