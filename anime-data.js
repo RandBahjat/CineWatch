@@ -24187,7 +24187,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/nZMhQrVEOe9iKAdTB4lE1zlWSRj.jpg",
     videoUrl: "902",
     malId: 481,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/jEXZRp_bmcA?si=4-lgGyVQubTnDNr5",
     anilistId: 481,
     animeSlug: "yu-gi-oh-duel-monsters",
     overview: "Yugi Mutou is a boy who loves games, but is often bullied. One day, he solves an ancient puzzle known as the Millennium Puzzle, causing a mysterious spirit with the personality of a gambler to reside in his body. From that moment on, whenever Yugi's friends are threatened, this other Yugi makes an appearance and challenges the bullies to dangerous Shadow Games.",
