@@ -23546,7 +23546,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/s8NdKWkRGRdNYm472t58ZTYg1bE.jpg",
     videoUrl: "60863",
     malId: 20583,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/JOGp2c7-cKc?si=ebFtwW_03-68ix5Y",
     anilistId: 20464,
     animeSlug: "haikyu",
     overview: "Inspired by a small-statured pro volleyball player, Shouyou Hinata creates a volleyball team in his last year of middle school. Unfortunately the team is matched up against the \"King of the Court\" Tobio Kageyama's team in their first tournament and inevitably lose. After the crushing defeat, Hinata vows to surpass Kageyama. After entering high school, Hinata joins the volleyball team only to find that Tobio has also joined.",
