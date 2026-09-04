@@ -2635,7 +2635,10 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
       centerOverlay.style.display = "flex";
       centerOverlay.style.animation = "none";
     }
-    serverWrap.classList.remove("hidden");
+    if (serverWrap) {
+      serverWrap.classList.add("hidden");
+      serverWrap.style.display = "none";
+    }
     if (isTvEmbed) {
       const parts = videoUrl.split(":");
       window.currentIframeData = {
@@ -2828,7 +2831,10 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     controlsBar.classList.add("hidden");
 
     if (centerOverlay) centerOverlay.style.display = "none";
-    serverWrap.classList.remove("hidden");
+    if (serverWrap) {
+      serverWrap.classList.add("hidden");
+      serverWrap.style.display = "none";
+    }
     if (isNumericId) {
       window.currentIframeData = { type: "movie", id: movie.videoUrl, parentId: movie.id };
     } else {
