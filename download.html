@@ -493,12 +493,20 @@
             border-radius: 1px;
         }
 
-        /* App Screenshot Area (Native Edge-to-Edge Experience) */
+        /* App Display Area (Native Edge-to-Edge Experience) */
         .galaxy-app {
             position: absolute;
             inset: 0;
             overflow: hidden;
             background: #06070a;
+            border-radius: 16px;
+        }
+        .galaxy-app iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: #06070a;
+            display: block;
         }
         .galaxy-app img {
             width: 100%;
