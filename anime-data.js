@@ -21595,7 +21595,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/3AXLSxMuqyZt8HyrKKfrcJtkswD.jpg",
     videoUrl: "63926",
     malId: 30276,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/H4459oyZYoo?si=ywlwbDaeFqWsY2gW",
     anilistId: 21087,
     animeSlug: "one-punch-man",
     overview: "Saitama, hero who train so hard he lose hair, gain power to defeat any foe with single punch, now struggle real problem: nobody recognize his strength, life feel meaningless without challenge. Team up with cyborg Genos, seek worthy opponent, real thrill of battle again.",
