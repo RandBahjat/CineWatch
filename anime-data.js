@@ -7749,7 +7749,7 @@ window._ANIME_DATA = [
     ],
     videoUrl: "62715",
     malId: 30694,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/QinoGlZP_V4?si=Ob-Tr0BnRIKiYkUq",
     seasons: [
       {
         season: 1,
