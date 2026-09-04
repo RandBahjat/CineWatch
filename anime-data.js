@@ -21787,7 +21787,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/qanL26nbrKNWIDk7rNYS1lOwzgx.jpg",
     videoUrl: "127532",
     malId: 52299,
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/bssSj4cKsrI?si=dhaitlNyZyBgMxOw",
     anilistId: 151807,
     animeSlug: "solo-leveling",
     overview: "Sung Jin-Woo, weakest hunter alive, barely survive deadly dungeon raid, wake up with mysterious system only he can see. Power grow limitless, level up beyond anyone before him, uncover dark secret behind dungeon, hunter world itself.",
