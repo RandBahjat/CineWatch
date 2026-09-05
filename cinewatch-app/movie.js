@@ -4851,41 +4851,11 @@ function updateIframeServer() {
     return;
   }
 
-    let mappedSeason = data.season;
-    let mappedEpisode = data.episode;
-
-    const malId = getAnimeMalId(refMovie, data.id);
-    let rawEp = data.absoluteEpisode || data.episode || 1;
-
-    // Ensure rawEp is continuous episode if seasons are present
-    if (refMovie && refMovie.seasons && (!data.absoluteEpisode || data.absoluteEpisode === data.episode)) {
-      let epCount = 0;
-      let found = false;
-      for (const s of refMovie.seasons) {
-        for (const ep of s.episodes) {
-          epCount++;
-          if (s.season === parseInt(data.season) && ep.episode === parseInt(data.episode)) {
-            rawEp = ep.absoluteEpisode || epCount;
-            found = true;
-            break;
-          }
-        }
-        if (found) break;
-      }
-    }
-
-    const pref = localStorage.getItem("cw_anime_audio_pref") || "sub";
-    if (pref === 'dub') {
-      newUrl = `https://megavid.buzz/mal/${malId}/${rawEp}/dub`;
-    } else {
-      newUrl = `https://megavid.buzz/mal/${malId}/${rawEp}/sub`;
-    }
-  } else {
-    const artApp = document.getElementById("artplayerApp");
-    if (artApp) artApp.classList.add("hidden");
-    if (window.artPlayerInstance) {
-      try { window.artPlayerInstance.pause(); } catch(e) {}
-    }
+  const artApp = document.getElementById("artplayerApp");
+  if (artApp) artApp.classList.add("hidden");
+  if (window.artPlayerInstance) {
+    try { window.artPlayerInstance.pause(); } catch(e) {}
+  }
     if (data.type === 'tv') {
       newUrl = `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=e50914`;
     } else {
