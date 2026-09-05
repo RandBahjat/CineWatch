@@ -1456,7 +1456,7 @@ function getAnimeMalId(refMovie, dataId) {
   return refMovie?.anilistId || 21;
 }
 
-async function initArtPlayerForAnimeApp(movie, sNum, epNum) {
+async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
   const playerModal = document.getElementById('playerModal');
   const artContainer = document.getElementById('artplayerApp');
   const vidstackPlayer = document.getElementById('vidstackPlayer');
