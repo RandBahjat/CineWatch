@@ -1505,9 +1505,11 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum) {
   let cleanUrl = String(movie.videoUrl || '');
   let subtitleUrl = '';
 
-  if (!cleanUrl.startsWith('http')) {
+  const curPref = audioPref || localStorage.getItem('cw_anime_audio_pref') || 'sub';
+
+  if (!cleanUrl.startsWith('http') || cleanUrl.includes('.buzz') || cleanUrl.includes('megavid')) {
     try {
-      const res = await fetch(`https://megavid.buzz/mal/${malId}/${epNum}/sub/source`);
+      const res = await fetch(`https://megavid.buzz/mal/${malId}/${epNum}/${curPref}/source`);
       const srcData = await res.json();
       if (srcData && srcData.source) {
         cleanUrl = srcData.source;
@@ -1632,11 +1634,28 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum) {
         {
           html: 'Audio / Dub',
           icon: '<ion-icon name="volume-high-outline" style="font-size:1.2rem;"></ion-icon>',
-          tooltip: 'Japanese',
+          tooltip: curPref === 'dub' ? 'English Dub' : 'Japanese (Sub)',
           selector: [
-            { default: true, html: 'Japanese (Original)' },
-            { html: 'English Dub' },
+            { default: curPref !== 'dub', html: 'Japanese (Sub)' },
+            { default: curPref === 'dub', html: 'English Dub' },
           ],
+          onSelect(item) {
+            const isDub = item.html === 'English Dub';
+            const route = isDub ? 'dub' : 'sub';
+            localStorage.setItem('cw_anime_audio_pref', route);
+            fetch(`https://megavid.buzz/mal/${malId}/${epNum}/${route}/source`)
+              .then(r => r.json())
+              .then(d => {
+                if (d && d.source && window.artPlayerInstance) {
+                  window.artPlayerInstance.switchUrl(d.source);
+                  if (typeof showToast === 'function') {
+                    showToast(`Switched to ${item.html}`);
+                  }
+                }
+              })
+              .catch(err => console.warn('Failed to switch audio stream:', err));
+            return item.html;
+          },
         },
         {
           html: 'Playback Speed',
@@ -1648,36 +1667,10 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum) {
             return `${item.range[0]}x`;
           },
         },
-        {
-          html: 'Switch Server (Embed)',
-          icon: '<ion-icon name="server-outline" style="font-size:1.2rem;"></ion-icon>',
-          tooltip: 'ArtPlayer',
-          selector: [
-            { default: true, html: 'ArtPlayer (Glass)' },
-            { html: 'VidLink (Embed)' },
-            { html: 'AutoEmbed' }
-          ],
-          onSelect(item) {
-            if (item.html.includes('VidLink')) {
-              if (window.artPlayerInstance) window.artPlayerInstance.pause();
-              artContainer.classList.add('hidden');
-              iframeEl.classList.remove('hidden');
-              const tmdb = movie.tmdbId || movie.videoUrl || '37854';
-              iframeEl.src = `https://vidlink.pro/tv/${tmdb}/${sNum}/${epNum}?primaryColor=e50914`;
-            } else if (item.html.includes('AutoEmbed')) {
-              if (window.artPlayerInstance) window.artPlayerInstance.pause();
-              artContainer.classList.add('hidden');
-              iframeEl.classList.remove('hidden');
-              const tmdb = movie.tmdbId || movie.videoUrl || '37854';
-              iframeEl.src = `https://player.autoembed.cc/embed/tv/${tmdb}/${sNum}/${epNum}`;
-            }
-            return item.html;
-          }
-        }
       ],
       contextmenu: [
         {
-          html: 'CineWatch Anime Glass Player',
+          html: 'CineWatch Anime Mega Player',
           click(contextmenu) {
             contextmenu.show = false;
           },
@@ -1686,9 +1679,21 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum) {
       controls: [
         {
           position: 'right',
-          html: '<span style="padding: 3px 10px; background: rgba(35,173,229,0.2); border: 1px solid #23ade5; border-radius: 6px; font-size: 0.72rem; font-weight: 700; color: #23ade5; letter-spacing: 0.5px;">ANIME</span>',
+          html: '<button style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);color:#fff;border-radius:6px;padding:3px 10px;font-size:0.75rem;cursor:pointer;display:flex;align-items:center;gap:4px;">⏩ Skip Intro (+85s)</button>',
+          index: 2,
+          tooltip: 'Skip Opening (+85s)',
+          click: function() {
+            if (window.artPlayerInstance) {
+              window.artPlayerInstance.currentTime += 85;
+              if (typeof showToast === 'function') showToast('Skipped Opening (+85s)');
+            }
+          }
+        },
+        {
+          position: 'right',
+          html: '<span style="padding: 3px 10px; background: rgba(35,173,229,0.2); border: 1px solid #23ade5; border-radius: 6px; font-size: 0.72rem; font-weight: 700; color: #23ade5; letter-spacing: 0.5px;">MEGA HD</span>',
           index: 1,
-          tooltip: 'Dedicated Anime Mode',
+          tooltip: 'MegaCloud Direct Engine',
         },
       ],
     });
