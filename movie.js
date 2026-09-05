@@ -4629,24 +4629,37 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   const curPref = localStorage.getItem("cw_anime_audio_pref") || "sub";
 
   if (!cleanUrl || !cleanUrl.startsWith("http") || cleanUrl.includes(".buzz") || cleanUrl.includes("megavid")) {
-    try {
-      const res = await fetch(`https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}/source`);
-      const srcData = await res.json();
-      if (srcData && srcData.source) {
-        cleanUrl = srcData.source;
-        if (srcData.tracks && srcData.tracks.length > 0) {
-          const enTrack = srcData.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || srcData.tracks[0];
-          if (enTrack && enTrack.file) {
-            subtitleUrl = enTrack.file;
+    const endpoints = [
+      `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+      `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+      `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+      `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}/source`
+    ];
+    for (const epUrl of endpoints) {
+      try {
+        const res = await fetch(epUrl);
+        if (!res.ok) continue;
+        const srcData = await res.json();
+        if (srcData && srcData.source) {
+          cleanUrl = srcData.source;
+          if (srcData.tracks && srcData.tracks.length > 0) {
+            const enTrack = srcData.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || srcData.tracks[0];
+            if (enTrack && enTrack.file) {
+              subtitleUrl = enTrack.file;
+            }
           }
+          break;
         }
+      } catch (e) {
+        console.warn("ArtPlayer Mega fetch failed:", e);
       }
-    } catch (e) {
-      console.warn("ArtPlayer Mega fetch failed:", e);
     }
   }
 
-  const streamUrl = cleanUrl.startsWith("http") ? cleanUrl : "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8";
+  // Setup visible topbar server switcher dropdown
+  setupAnimeServerDropdown(ref, rawEp, curPref, malId);
+
+  const streamUrl = cleanUrl.startsWith("http") ? cleanUrl : `https://vidlink.pro/anime/${malId}/${rawEp}/${curPref}`;
 
   if (typeof Artplayer === "undefined") {
     console.warn("Artplayer library not yet available");
