@@ -2536,6 +2536,21 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     nextEpBtn.classList.toggle("hidden", !epData);
   }
 
+  const isAnime = !!(parentMovie?.isAnime || parentMovie?.type === 'Anime');
+  if (isAnime) {
+    if (serverWrap) serverWrap.classList.add("hidden");
+    if (video) { video.classList.add("hidden"); video.pause(); video.src = ""; }
+    if (iframe) { iframe.classList.add("hidden"); iframe.src = ""; }
+    if (controlsBar) controlsBar.classList.add("hidden");
+    if (centerOverlay) centerOverlay.style.display = "none";
+    initArtPlayerForAnime(videoUrl, parentMovie, parentMovie, epData);
+    modal.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+    const bttBtn = document.getElementById("backToTopBtn");
+    if (bttBtn) bttBtn.style.display = "none";
+    return;
+  }
+
   const videoUrlStr = String(videoUrl || "");
   const ytVideoId = extractYouTubeId(videoUrlStr);
   if (ytVideoId) {
