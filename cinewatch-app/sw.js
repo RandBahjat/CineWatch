@@ -1,5 +1,5 @@
 // CineWatch PWA Service Worker
-const CACHE_NAME = 'cinewatch-pwa-v77';
+const CACHE_NAME = 'cinewatch-pwa-v78';
 const ASSETS_TO_CACHE = [
   './index.html',
   './manifest.json',
