@@ -4625,9 +4625,11 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   let cleanUrl = String(videoUrl || "");
   let subtitleUrl = "";
 
-  if (!cleanUrl || !cleanUrl.startsWith("http")) {
+  const curPref = localStorage.getItem("cw_anime_audio_pref") || "sub";
+
+  if (!cleanUrl || !cleanUrl.startsWith("http") || cleanUrl.includes(".buzz") || cleanUrl.includes("megavid")) {
     try {
-      const res = await fetch(`https://megavid.buzz/mal/${malId}/${rawEp}/sub/source`);
+      const res = await fetch(`https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}/source`);
       const srcData = await res.json();
       if (srcData && srcData.source) {
         cleanUrl = srcData.source;
@@ -4752,14 +4754,15 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         {
           html: 'Audio / Dub',
           icon: '<ion-icon name="volume-high-outline" style="font-size:1.2rem;"></ion-icon>',
-          tooltip: 'Audio Track',
+          tooltip: curPref === 'dub' ? 'English Dub' : 'Japanese (Sub)',
           selector: [
-            { default: true, html: 'Japanese (Sub)' },
-            { html: 'English Dub' },
+            { default: curPref !== 'dub', html: 'Japanese (Sub)' },
+            { default: curPref === 'dub', html: 'English Dub' },
           ],
           onSelect(item) {
             const isDub = item.html === 'English Dub';
             const route = isDub ? 'dub' : 'sub';
+            localStorage.setItem("cw_anime_audio_pref", route);
             fetch(`https://megavid.buzz/mal/${malId}/${rawEp}/${route}/source`)
               .then(r => r.json())
               .then(d => {
@@ -4787,7 +4790,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       ],
       contextmenu: [
         {
-          html: 'CineWatch Anime Glass Player',
+          html: 'CineWatch Anime Mega Player',
           click(contextmenu) {
             contextmenu.show = false;
           },
@@ -4796,9 +4799,21 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       controls: [
         {
           position: 'right',
-          html: '<span style="padding: 3px 10px; background: rgba(35,173,229,0.2); border: 1px solid #23ade5; border-radius: 6px; font-size: 0.72rem; font-weight: 700; color: #23ade5; letter-spacing: 0.5px;">ANIME</span>',
+          html: '<button style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);color:#fff;border-radius:6px;padding:3px 10px;font-size:0.75rem;cursor:pointer;display:flex;align-items:center;gap:4px;">⏩ Skip Intro (+85s)</button>',
+          index: 2,
+          tooltip: 'Skip Opening (+85s)',
+          click: function() {
+            if (window.artPlayerInstance) {
+              window.artPlayerInstance.currentTime += 85;
+              if (typeof showToast === 'function') showToast('Skipped Opening (+85s)');
+            }
+          }
+        },
+        {
+          position: 'right',
+          html: '<span style="padding: 3px 10px; background: rgba(35,173,229,0.2); border: 1px solid #23ade5; border-radius: 6px; font-size: 0.72rem; font-weight: 700; color: #23ade5; letter-spacing: 0.5px;">MEGA HD</span>',
           index: 1,
-          tooltip: 'Dedicated Anime Mode',
+          tooltip: 'MegaCloud Direct Engine',
         },
       ],
     });
@@ -4828,54 +4843,24 @@ function updateIframeServer() {
   }
 
   if (isAnime) {
-    const artApp = document.getElementById("artplayerApp");
-    if (artApp) artApp.classList.add("hidden");
-    if (window.artPlayerInstance) {
-      try { window.artPlayerInstance.pause(); } catch(e) {}
+    if (iframe) {
+      iframe.classList.add("hidden");
+      iframe.src = "";
     }
-    if (iframe) iframe.classList.remove("hidden");
+    initArtPlayerForAnime(data.id, refMovie, parentMovie, data);
+    return;
+  }
 
-    let mappedSeason = data.season;
-    let mappedEpisode = data.episode;
-
-    const malId = getAnimeMalId(refMovie, data.id);
-    let rawEp = data.absoluteEpisode || data.episode || 1;
-
-    // Ensure rawEp is continuous episode if seasons are present
-    if (refMovie && refMovie.seasons && (!data.absoluteEpisode || data.absoluteEpisode === data.episode)) {
-      let epCount = 0;
-      let found = false;
-      for (const s of refMovie.seasons) {
-        for (const ep of s.episodes) {
-          epCount++;
-          if (s.season === parseInt(data.season) && ep.episode === parseInt(data.episode)) {
-            rawEp = ep.absoluteEpisode || epCount;
-            found = true;
-            break;
-          }
-        }
-        if (found) break;
-      }
-    }
-
-    const pref = localStorage.getItem("cw_anime_audio_pref") || "sub";
-    if (pref === 'dub') {
-      newUrl = `https://megavid.buzz/mal/${malId}/${rawEp}/dub`;
-    } else {
-      newUrl = `https://megavid.buzz/mal/${malId}/${rawEp}/sub`;
-    }
-  } else {
-    const artApp = document.getElementById("artplayerApp");
-    if (artApp) artApp.classList.add("hidden");
-    if (window.artPlayerInstance) {
-      try { window.artPlayerInstance.pause(); } catch(e) {}
-    }
+  const artApp = document.getElementById("artplayerApp");
+  if (artApp) artApp.classList.add("hidden");
+  if (window.artPlayerInstance) {
+    try { window.artPlayerInstance.pause(); } catch(e) {}
+  }
     if (data.type === 'tv') {
       newUrl = `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=e50914`;
     } else {
       newUrl = `https://vidlink.pro/movie/${data.id}?primaryColor=e50914`;
     }
-  }
 
   iframe.onload = () => {
     const centerOverlay = document.getElementById('videoCenterOverlay');
