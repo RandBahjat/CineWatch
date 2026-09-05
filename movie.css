@@ -2726,6 +2726,38 @@ body.rtl-layout .details-back-btn svg {
   display: none !important;
 }
 
+.cw-server-opt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.65rem 0.95rem;
+  border-radius: 10px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #d1d5db;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  user-select: none;
+}
+
+.cw-server-opt:hover {
+  background: rgba(35, 173, 229, 0.15);
+  border-color: rgba(35, 173, 229, 0.35);
+  color: #ffffff;
+  transform: translateX(3px);
+}
+
+.cw-server-opt.active {
+  background: linear-gradient(135deg, rgba(35, 173, 229, 0.25) 0%, rgba(139, 92, 246, 0.2) 100%);
+  border-color: #23ade5;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(35, 173, 229, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+
 .video-center-overlay {
   position: absolute;
   top: 50%;
