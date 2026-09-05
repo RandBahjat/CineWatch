@@ -4861,7 +4861,6 @@ function updateIframeServer() {
     } else {
       newUrl = `https://vidlink.pro/movie/${data.id}?primaryColor=e50914`;
     }
-  }
 
   iframe.onload = () => {
     const centerOverlay = document.getElementById('videoCenterOverlay');
