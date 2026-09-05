@@ -56,6 +56,38 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  // Direct Anime Source Proxy (bypasses CORS restrictions)
+  if (safePath === '/api/anime-source') {
+    let parsed = new URL(req.url, `http://localhost:${PORT}`);
+    const malId = parsed.searchParams.get('malId') || '21';
+    const ep = parsed.searchParams.get('ep') || '1';
+    const mode = parsed.searchParams.get('mode') || 'sub';
+    const targetUrl = `https://megavid.buzz/mal/${malId}/${ep}/${mode}/source`;
+
+    fetch(targetUrl, {
+      headers: {
+        'Referer': 'https://megavid.buzz/',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
+      }
+    })
+      .then(r => r.json())
+      .then(data => {
+        res.writeHead(200, {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
+        });
+        res.end(JSON.stringify(data));
+      })
+      .catch(err => {
+        res.writeHead(500, {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
+        });
+        res.end(JSON.stringify({ error: err.message }));
+      });
+    return;
+  }
+
   // Default to index.html for root or directory
   let filePath = path.join(ROOT_DIR, safePath);
 
