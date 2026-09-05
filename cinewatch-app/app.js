@@ -1670,17 +1670,28 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
             const isDub = item.html === 'English Dub';
             const route = isDub ? 'dub' : 'sub';
             localStorage.setItem('cw_anime_audio_pref', route);
-            fetch(`https://megavid.buzz/mal/${malId}/${epNum}/${route}/source`)
-              .then(r => r.json())
-              .then(d => {
-                if (d && d.source && window.artPlayerInstance) {
-                  window.artPlayerInstance.switchUrl(d.source);
-                  if (typeof showToast === 'function') {
-                    showToast(`Switched to ${item.html}`);
+            const epEndpoints = [
+              `/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
+              `http://localhost:3500/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
+              `http://localhost:3000/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
+              `https://megavid.buzz/mal/${malId}/${epNum}/${route}/source`
+            ];
+            (async () => {
+              for (const epUrl of epEndpoints) {
+                try {
+                  const r = await fetch(epUrl);
+                  if (!r.ok) continue;
+                  const d = await r.json();
+                  if (d && d.source && window.artPlayerInstance) {
+                    window.artPlayerInstance.switchUrl(d.source);
+                    if (typeof showToast === 'function') {
+                      showToast(`Switched to ${item.html}`);
+                    }
+                    break;
                   }
-                }
-              })
-              .catch(err => console.warn('Failed to switch audio stream:', err));
+                } catch(e) {}
+              }
+            })();
             return item.html;
           },
         },
