@@ -794,6 +794,29 @@
             <span>Back</span>
           </button>
         </div>
+
+        <div class="cw-player-title-pill" id="playerTitlePill" style="pointer-events:auto;">
+          <h3 class="cw-player-title" id="playerTitle">CineWatch Stream</h3>
+          <div class="cw-player-badges">
+            <span class="cw-badge" id="streamTypeBadge">MEGA HD</span>
+          </div>
+        </div>
+
+        <div class="cw-topbar-right" style="pointer-events:auto; display:flex; align-items:center; gap:0.75rem; margin-left:auto;">
+          <!-- Server Selector Dropdown Button -->
+          <div class="cw-dropdown-wrap" id="serverSelectWrap" style="position:relative;">
+            <button class="cw-btn-back" id="serverSelectBtn" title="Switch Video Server" style="border-radius:50px; height:42px; padding:0 1.25rem 0 1rem; font-size:0.88rem; font-weight:700; display:inline-flex; align-items:center; gap:8px;">
+              <ion-icon name="server-outline" style="font-size:1.15rem; color:#23ade5;"></ion-icon>
+              <span id="serverActiveLabel">🟣 Mega Server (Sub)</span>
+              <ion-icon name="chevron-down-outline" style="font-size:0.9rem;"></ion-icon>
+            </button>
+            <div class="cw-menu-popover hidden" id="serverMenu" style="position:absolute; right:0; top:calc(100% + 8px); background:rgba(14,16,26,0.95); backdrop-filter:blur(24px) saturate(180%); -webkit-backdrop-filter:blur(24px) saturate(180%); border:1px solid rgba(255,255,255,0.18); border-radius:16px; padding:10px; min-width:270px; z-index:100; box-shadow:0 16px 40px rgba(0,0,0,0.85);">
+              <div class="cw-menu-header" style="font-size:0.75rem; color:#9ca3af; padding:4px 8px 8px; text-transform:uppercase; font-weight:800; letter-spacing:0.5px; border-bottom:1px solid rgba(255,255,255,0.08); margin-bottom:6px;">Select Video Server</div>
+              <div class="cw-menu-list" id="serverSelect" style="display:flex; flex-direction:column; gap:4px;">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Player Bottom Controls Dock (Floating Frosted Glass Island) -->
