@@ -1508,24 +1508,51 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum) {
   const curPref = audioPref || localStorage.getItem('cw_anime_audio_pref') || 'sub';
 
   if (!cleanUrl.startsWith('http') || cleanUrl.includes('.buzz') || cleanUrl.includes('megavid')) {
-    try {
-      const res = await fetch(`https://megavid.buzz/mal/${malId}/${epNum}/${curPref}/source`);
-      const srcData = await res.json();
-      if (srcData && srcData.source) {
-        cleanUrl = srcData.source;
-        if (srcData.tracks && srcData.tracks.length > 0) {
-          const enTrack = srcData.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || srcData.tracks[0];
-          if (enTrack && enTrack.file) {
-            subtitleUrl = enTrack.file;
+    const endpoints = [
+      `/api/anime-source?malId=${malId}&ep=${epNum}&mode=${curPref}`,
+      `http://localhost:3500/api/anime-source?malId=${malId}&ep=${epNum}&mode=${curPref}`,
+      `http://localhost:3000/api/anime-source?malId=${malId}&ep=${epNum}&mode=${curPref}`,
+      `https://megavid.buzz/mal/${malId}/${epNum}/${curPref}/source`
+    ];
+
+    for (const epUrl of endpoints) {
+      try {
+        const res = await fetch(epUrl);
+        if (!res.ok) continue;
+        const srcData = await res.json();
+        if (srcData && srcData.source) {
+          cleanUrl = srcData.source;
+          if (srcData.tracks && srcData.tracks.length > 0) {
+            const enTrack = srcData.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || srcData.tracks[0];
+            if (enTrack && enTrack.file) {
+              subtitleUrl = enTrack.file;
+            }
           }
+          break;
         }
-      }
-    } catch (e) {
-      console.warn('App ArtPlayer Mega fetch failed:', e);
+      } catch (e) {}
     }
   }
 
-  const streamUrl = cleanUrl.startsWith('http') ? cleanUrl : 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8';
+  // Wire Server Selector Dropdown Trigger
+  const serverSelectBtn = document.getElementById('serverSelectBtn');
+  const serverMenu = document.getElementById('serverMenu');
+  if (serverSelectBtn && serverMenu) {
+    serverSelectBtn.onclick = (e) => {
+      e.stopPropagation();
+      serverMenu.classList.toggle('hidden');
+    };
+    if (!window._cwServerMenuListener) {
+      window._cwServerMenuListener = true;
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('#serverSelectWrap')) {
+          serverMenu.classList.add('hidden');
+        }
+      });
+    }
+  }
+
+  const streamUrl = cleanUrl.startsWith('http') ? cleanUrl : `https://vidlink.pro/anime/${malId}/${epNum}/${curPref}`;
 
   if (typeof Artplayer === 'undefined') {
     console.warn('Artplayer library not yet available');
