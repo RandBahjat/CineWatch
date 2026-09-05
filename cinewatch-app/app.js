@@ -1749,10 +1749,36 @@ function playMovieDirect(movieId) {
   const isAnime = !!(movie.isAnime || movie.type === 'Anime');
   const animeColor = isAnime ? '23ade5' : 'e50914';
 
-  // If anime has a direct .m3u8 / .mp4 URL (e.g. from VidHide), launch ArtPlayer!
-  const hasDirectStream = String(movie.videoUrl || '').includes('.m3u8') || String(movie.videoUrl || '').includes('.mp4');
-  if (isAnime && hasDirectStream) {
-    initArtPlayerForAnimeApp(movie, sNum, epNum);
+  if (isAnime) {
+    const curPref = localStorage.getItem('cw_anime_audio_pref') || 'sub';
+    initArtPlayerForAnimeApp(movie, sNum, epNum, curPref);
+
+    if (playerTitle) playerTitle.textContent = `${movie.title} - S${sNum} E${epNum}`;
+    const serverActiveLabel = document.getElementById('serverActiveLabel');
+    if (serverActiveLabel) serverActiveLabel.textContent = curPref === 'dub' ? '🎙️ Mega Server HD (Dub)' : '🟣 Mega Server HD (Sub)';
+    if (streamTypeBadge) streamTypeBadge.textContent = curPref === 'dub' ? 'MEGA DUB' : 'MEGA SUB';
+
+    const serverSelect = document.getElementById('serverSelect');
+    if (serverSelect) {
+      serverSelect.innerHTML = `
+        <div class="cw-server-opt ${curPref !== 'dub' ? 'active' : ''}" data-server="sub">🟣 Mega Server HD (Sub / Japanese)</div>
+        <div class="cw-server-opt ${curPref === 'dub' ? 'active' : ''}" data-server="dub">🎙️ Mega Server HD (English Dub)</div>
+      `;
+      serverSelect.querySelectorAll('.cw-server-opt').forEach(opt => {
+        opt.onclick = () => {
+          const chosen = opt.dataset.server;
+          localStorage.setItem('cw_anime_audio_pref', chosen);
+          initArtPlayerForAnimeApp(movie, sNum, epNum, chosen);
+          serverSelect.querySelectorAll('.cw-server-opt').forEach(o => o.classList.toggle('active', o === opt));
+          if (serverActiveLabel) serverActiveLabel.textContent = opt.textContent;
+          if (streamTypeBadge) streamTypeBadge.textContent = chosen === 'dub' ? 'MEGA DUB' : 'MEGA SUB';
+          document.getElementById('serverMenu')?.classList.add('hidden');
+        };
+      });
+    }
+
+    playerModal?.classList.remove('hidden');
+    resetPlayerIdleTimer();
     return;
   }
 
