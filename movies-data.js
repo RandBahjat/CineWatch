@@ -46,7 +46,7 @@ window._MOVIES_DATA = [
     trailerUrl: "https://youtu.be/om5Un9X720M?si=w2Q4Yb_O5B2js4Td",
     overview: "In 1987 Cold War time, American pilot crash land deep inside dangerous Soviet territory! To survive and get back home alive, pilot forced to team up with weird eccentric former KGB agent Nikolai Ustinov on wild buddy mission.",
     overviewKurdish:"لە سەردەمی جەنگی سارد لە ساڵی ١٩٨٧دا، فڕۆکەوانێکی ئەمریکی لە ناوچەیەکی دوورەدەست و مەترسیداری سۆڤیەتدا تێکدەشکێت و گیر دەخوات. بۆ ئەوەی لە ژیاندا بێنێتەوە و بگەڕێتەوە نیشتمانەکەی، ناچار دەبێت هاوکاری لەگەڵ نیکۆلای ئوستینۆڤ دروست بکات، کە ئەفسەرێکی پێشووی سەیر و سەمەرەی دەزگای سیخوڕی KGBیە.",
-    director: "Kevin Macdonald",
+    director: "Jonathan Goldstein, John Francis Daley",
     cast: ["Gal Gadot, Damian Lewis, Alfred Enoch, Rory Wilmot"],
     trending: true,
     featured: true,
