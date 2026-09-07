@@ -622,31 +622,24 @@ select {
   height: 16px;
 }
 
-/* Open on Hover / Focus / Toggle */
-.nav-browse-item:hover .nav-browse-dropdown,
-.nav-browse-item:focus-within .nav-browse-dropdown,
+/* Dropdown visibility strictly controlled by .is-open (supporting click-to-close & selection dismiss) */
 .nav-browse-item.is-open .nav-browse-dropdown {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  transform: translateY(0) scale(1);
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transform: translateY(0) scale(1) !important;
 }
 
-/* Immediately dismiss dropdown when an item is selected */
-.nav-browse-dropdown.is-hidden,
-.nav-browse-item.is-closed .nav-browse-dropdown,
-.nav-browse-item.is-closed:hover .nav-browse-dropdown,
-.nav-browse-item.is-closed:focus-within .nav-browse-dropdown {
-  display: none !important;
-  opacity: 0 !important;
-  visibility: hidden !important;
-  pointer-events: none !important;
-  transform: translateY(10px) scale(0.96) !important;
+.nav-browse-item.is-open .browse-chevron {
+  transform: rotate(180deg);
+  color: #ffffff;
 }
 
-.nav-browse-item.is-closed .browse-chevron,
-.nav-browse-item.is-closed:hover .browse-chevron {
-  transform: rotate(0deg) !important;
+.nav-browse-item.is-open .nav-browse-pill-btn {
+  background: rgba(229, 9, 20, 0.18);
+  border-color: rgba(229, 9, 20, 0.5);
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(229, 9, 20, 0.35);
 }
 
 /* Dropdown Header */
