@@ -1185,7 +1185,7 @@ body.rtl-layout .modal-search-icon {
 /* Mobile Menu Styling - Replaced by Floating Mobile Bottom Dock */
 .mobile-menu-btn,
 .mobile-menu-overlay {
-  display: none;
+  display: none !important;
 }
 
 /* ==========================================================================
@@ -4020,10 +4020,6 @@ body.rtl-layout .details-back-btn svg {
   flex-shrink: 0;
 }
 
-  display: none !important;
-}
-
-.mobile-menu-overlay {
 .mobile-menu-overlay.active {
   opacity: 1;
   visibility: visible;
