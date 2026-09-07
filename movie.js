@@ -5103,6 +5103,25 @@ document.getElementById("playerPrevEpBtn")?.addEventListener("click", () => navi
   onScroll();
 })();
 
+// ==========================================
+// DYNAMIC GLASSMORPHIС NAVBAR SCROLL HANDLER
+// ==========================================
+(function initNavbarScroll() {
+  const navbar = document.getElementById("navbar");
+  if (!navbar) return;
+
+  function updateNavbar() {
+    if (window.scrollY > 20) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  }
+
+  window.addEventListener("scroll", updateNavbar, { passive: true });
+  updateNavbar();
+})();
+
 function trackVisit() {
   // Check if visitor is likely a bot/crawler
   const isBot = /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent) || navigator.webdriver;
