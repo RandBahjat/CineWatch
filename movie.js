@@ -1313,6 +1313,7 @@ function switchView(viewName) {
     if (link.dataset.view === viewName) link.classList.add("active");
     else link.classList.remove("active");
   });
+  if (window.updateNavGlider) window.updateNavGlider(true);
   window.dispatchEvent(new Event("scroll"));
 
   const safetyBannerWrapper = document.getElementById("safetyBannerWrapper");
