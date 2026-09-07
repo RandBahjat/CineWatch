@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=17887808_146193">
+    <link rel="stylesheet" href="movie.css?v=17887808_146194">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows â€” all in one simple, easy-to-use site.</title>
@@ -27,10 +27,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_5998" defer></script>
-    <script src="series-data.js?v=20260818_5998" defer></script>
-    <script src="anime-data.js?v=20260818_5998" defer></script>
-    <script src="movie.js?v=17887808_146194" defer></script>
+    <script src="movies-data.js?v=20260818_5999" defer></script>
+    <script src="series-data.js?v=20260818_5999" defer></script>
+    <script src="anime-data.js?v=20260818_5999" defer></script>
+    <script src="movie.js?v=17887808_146195" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1301,116 +1301,207 @@
             opacity: 0 !important;
             pointer-events: none !important;
             position: absolute !important;
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" id="signupEmail" class="form-control" placeholder="Email" autocomplete="email" required>
+                        </div>
+                        <div class="form-error" id="signupEmailError"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupPassword" id="signupPwLabel" class="notranslate" translate="no">Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="signupPassword" class="form-control notranslate" translate="no" autocomplete="new-password" required>
+                            <button type="button" class="password-toggle-btn" aria-label="Show/hide password" id="toggleSignupPassword">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </button>
+                        </div>
+                        <div class="password-strength-bar" id="passwordStrengthBar">
+                            <div class="strength-segment" id="strengthWeak"></div>
+                            <div class="strength-segment" id="strengthMedium"></div>
+                            <div class="strength-segment" id="strengthStrong"></div>
+                        </div>
+                        <div class="strength-text" id="passwordStrengthText"></div>
+                        <ul class="password-requirements" id="passwordReqs">
+                            <li id="reqLength"><ion-icon name="close-circle-outline"></ion-icon> At least 8 characters</li>
+                            <li id="reqCapital"><ion-icon name="close-circle-outline"></ion-icon> Uppercase letter</li>
+                            <li id="reqNumber"><ion-icon name="close-circle-outline"></ion-icon> Number</li>
+                            <li id="reqSymbol"><ion-icon name="close-circle-outline"></ion-icon> Symbol</li>
+                        </ul>
+                        <div class="form-error" id="signupPasswordError"></div>
+                    </div>
+                    
+                    <div class="cf-turnstile" data-sitekey="0x4AAAAAAEYq2FBWTuFz8998" data-theme="dark" style="margin-bottom: 20px;"></div>
+
+                    <div class="form-alert hidden" id="signupAlert"></div>
+
+                    <button type="submit" class="btn btn-primary btn-block"><ion-icon name="person-add-outline"></ion-icon>
+                        <span id="textBtnSignup" class="notranslate" translate="no">Create Account</span></button>
+                </form>
+
+                <!-- Reset Password Form -->
+                <form id="resetPasswordForm" class="auth-form hidden" novalidate>
+                    <div style="margin-bottom: 1.5rem; text-align: center;">
+                        <h3 style="color: var(--text-light); margin-bottom: 0.5rem;">Reset Password</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Enter your email address to receive a password reset link.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resetInput">Email Address</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" id="resetInput" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-error" id="resetError"></div>
+                    </div>
+
+                    <div class="form-alert hidden" id="resetAlert"></div>
+
+                    <button type="submit" class="btn btn-primary btn-block"><ion-icon name="paper-plane-outline"></ion-icon> Send Reset Link</button>
+                    
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <a href="#" id="backToLoginBtn" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem; transition: color 0.2s;">Back to Login</a>
+                    </div>
+                </form>
+
+                <!-- Change Password Form -->
+                <form id="changePasswordForm" class="auth-form hidden" novalidate>
+                    <div style="margin-bottom: 1.5rem; text-align: center;">
+                        <h3 style="color: var(--text-light); margin-bottom: 0.5rem;">Change Password</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Securely update your password.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="cpNewModal">New Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="cpNewModal" class="form-control notranslate" translate="no" required minlength="6">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpConfirmModal">Confirm New Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="cpConfirmModal" class="form-control notranslate" translate="no" required>
+                        </div>
+                    </div>
+
+                    <div class="form-alert hidden" id="cpAlert"></div>
+
+                    <button type="submit" class="btn btn-primary btn-block" id="cpSubmitBtn">Update Password</button>
+                    
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <a href="#" id="cancelCpBtn" style="color: var(--text-muted); text-decoration: none; font-size: 0.95rem; transition: color 0.2s;">Cancel</a>
+                    </div>
+                </form>
+
+                <!-- Recovery Password Form (from Email Link) -->
+                <form id="recoveryPasswordForm" class="auth-form hidden" novalidate>
+                    <div style="margin-bottom: 1.5rem; text-align: center;">
+                        <h3 style="color: var(--text-light); margin-bottom: 0.5rem;">Set New Password</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Please enter your new password below.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="recoveryNewModal">New Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="recoveryNewModal" class="form-control notranslate" translate="no" required minlength="6">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="recoveryConfirmModal">Confirm New Password</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="recoveryConfirmModal" class="form-control notranslate" translate="no" required>
+                        </div>
+                    </div>
+
+                    <div class="form-alert hidden" id="recoveryAlertModal"></div>
+
+                    <button type="submit" class="btn btn-primary btn-block"><ion-icon name="checkmark-outline"></ion-icon> Confirm Password</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+
+    <!-- Report / Contact Issue Modal -->
+    <div class="modal-overlay hidden" id="reportModal">
+        <div class="modal-card auth-modal-card" style="padding-bottom: 2rem;">
+            <div class="bg"></div>
+            <div class="blob"></div>
+            <div class="blob blob2"></div>
+            <button class="modal-close-btn" id="closeReportBtn">&times;</button>
+            
+            <div class="auth-modal-body">
+                <div class="auth-header">
+                    <div class="auth-logo" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                        Report an Issue
+                    </div>
+                    <p class="auth-subtitle">Encountered a problem or have feedback? Let us know below.</p>
+                </div>
+                <form id="reportForm" class="auth-form" novalidate>
+                    <div class="form-group">
+                        <label for="reportEmail">Email Address</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" id="reportEmail" class="form-control" placeholder="Your email address" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reportSubject">Title / Issue Type</label>
+                        <div class="input-with-icon">
+                            <ion-icon name="warning-outline"></ion-icon>
+                            <input type="text" id="reportSubject" class="form-control" placeholder="e.g. Video buffering, Audio sync, Missing subtitles..." required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reportMessage">Description / Details</label>
+                        <textarea id="reportMessage" class="form-control" rows="4" placeholder="Describe the issue or feedback in detail..." style="resize: vertical; padding-left: 1rem;" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" style="margin-top: 1.5rem;">
+                        <ion-icon name="paper-plane-outline"></ion-icon> <span id="submitReportText">Submit Report</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Translate Engine -->
+    <div id="google_translate_element" style="display:none;"></div>
+    <style>
+        /* Hide Google Translate Bar, Tooltips, and Floating Widget completely */
+        body { top: 0px !important; position: static !important; }
+        .skiptranslate,
+        body > .skiptranslate,
+        iframe.skiptranslate,
+        iframe[id*=":0"],
+        iframe[id*="goog"],
+        iframe[src*="translate.google"],
+        [class*="VIpgJd"],
+        [class*="goog-"],
+        [id*="goog"],
+        #goog-gt-tt,
+        .goog-tooltip,
+        .goog-text-highlight,
+        .goog-te-gadget-icon,
+        .goog-te-banner-frame {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+            position: absolute !important;
             top: -99999px !important;
             left: -99999px !important;
             width: 0 !important;
             height: 0 !important;
             z-index: -999999 !important;
             clip: rect(0, 0, 0, 0) !important;
-        }
-
-        /* Language Toast â€” Chrome-style compact popup (top-right) */
-        .lang-toast {
-            position: fixed;
-            top: 86px;
-            right: 24px;
-            background: rgba(18, 20, 29, 0.95);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 12px;
-            padding: 12px 16px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
-            z-index: 9999;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(-10px);
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-            max-width: 340px;
-        }
-        .lang-toast.active {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
-        .lang-toast-header {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .lang-toast-globe {
-            width: 18px !important;
-            height: 18px !important;
-            color: var(--primary, #e50914);
-            flex-shrink: 0;
-        }
-        .lang-toast-tabs {
-            display: flex;
-            gap: 4px;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 2px;
-            border-radius: 8px;
-            flex: 1;
-        }
-        .lang-toast-tab {
-            background: transparent;
-            border: none;
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.8rem;
-            padding: 4px 8px;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.2s;
-            font-family: inherit;
-        }
-        .lang-toast-tab.active-tab {
-            background: rgba(255, 255, 255, 0.15);
-            color: #fff;
-            font-weight: 600;
-        }
-        .lang-toast-close {
-            background: transparent;
-            border: none;
-            color: rgba(255, 255, 255, 0.5);
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2px;
-        }
-        .lang-toast-close svg {
-            width: 16px;
-            height: 16px;
-        }
-        .lang-toast-close:hover {
-            color: #fff;
-        }
-        .lang-toast-body {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 12px;
-        }
-        #langToastMsg {
-            font-size: 0.82rem;
-            color: rgba(255, 255, 255, 0.85);
-        }
-        .lang-toast-translate-btn {
-            background: var(--primary, #e50914);
-            border: none;
-            color: #fff;
-            padding: 5px 12px;
-            border-radius: 6px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        .lang-toast-translate-btn:hover {
-            background: #ff1e27;
         }
 
         /* Custom Language Dropdown Styles */
