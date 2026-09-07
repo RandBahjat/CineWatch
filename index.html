@@ -11,8 +11,8 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260908_229">
-    <link rel="stylesheet" href="browse-fix.css?v=20260908_229">
+    <link rel="stylesheet" href="movie.css?v=20260908_230">
+    <link rel="stylesheet" href="browse-fix.css?v=20260908_230">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -28,10 +28,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_6155" defer></script>
-    <script src="series-data.js?v=20260818_6155" defer></script>
-    <script src="anime-data.js?v=20260818_6155" defer></script>
-    <script src="movie.js?v=20260908_229" defer></script>
+    <script src="movies-data.js?v=20260818_6156" defer></script>
+    <script src="series-data.js?v=20260818_6156" defer></script>
+    <script src="anime-data.js?v=20260818_6156" defer></script>
+    <script src="movie.js?v=20260908_230" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1781,9 +1781,9 @@
                 const browseLabelDownload = document.getElementById('browseLabelDownload');
                 if (browseLabelDownload) browseLabelDownload.textContent = 'داگرتن';
                 const browseLabelAi = document.getElementById('browseLabelAi');
-                if (browseLabelAi) browseLabelAi.textContent = 'زیرەکی دەستکرد';
+                if (browseLabelAi) browseLabelAi.textContent = 'یارمەتیدەری زیرەک';
                 const browseLabelReport = document.getElementById('browseLabelReport');
-                if (browseLabelReport) browseLabelReport.textContent = 'ڕاپۆرت';
+                if (browseLabelReport) browseLabelReport.textContent = 'ریپۆرت';
 
                 if (loginPwLabel) loginPwLabel.textContent = 'وشەی نهێنی';
                 if (signupPwLabel) signupPwLabel.textContent = 'وشەی نهێنی';
@@ -1809,8 +1809,10 @@
                 if (navWatchlist2) navWatchlist2.textContent = 'دڵخوازەکان';
                 if (continueShelfTitle) continueShelfTitle.textContent = 'بەردەوام بە لە سەیرکردن';
                 if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'ڕێک لەو شوێنە دەستپێبکەوە کە لێی وەستابووی';
-                if (navAiBtnText) navAiBtnText.textContent = 'زیرەکی دەستکرد';
-                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = 'زیرەکی دەستکرد';
+                if (navAiBtnText) navAiBtnText.textContent = 'یارمەتیدەری زیرەک';
+                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = 'یارمەتیدەری زیرەک';
+                const aiOnlineText = document.getElementById('aiOnlineText');
+                if (aiOnlineText) aiOnlineText.textContent = 'یارمەتیدەری زیرەک';
                 if (filterBtnText) filterBtnText.textContent = 'فیلم و زنجیرە';
                 if (filterOptAll) filterOptAll.textContent = 'فیلم و زنجیرە';
                 if (filterOptMovie) filterOptMovie.textContent = 'تەنها فیلم';
@@ -1820,9 +1822,9 @@
                     if (genreMapKurdish[g]) btn.textContent = genreMapKurdish[g];
                 });
                 document.querySelectorAll('.download-text').forEach(el => el.textContent = 'داگرتن');
-                document.querySelectorAll('.report-text').forEach(el => el.textContent = 'ڕاپۆرت');
+                document.querySelectorAll('.report-text').forEach(el => el.textContent = 'ریپۆرت');
                 const detailsReportBtn = document.getElementById('detailsReportBtn');
-                if (detailsReportBtn) detailsReportBtn.textContent = 'ڕاپۆرت';
+                if (detailsReportBtn) detailsReportBtn.textContent = 'ریپۆرت';
                 const detailsSimilarsText = document.getElementById('detailsSimilarsText');
                 if (detailsSimilarsText) detailsSimilarsText.textContent = 'هاوشێوە';
                 const detailsSimilarsHeading = document.getElementById('detailsSimilarsHeading');
