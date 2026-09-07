@@ -5443,7 +5443,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 3,
-            title: 'The Path'
+            title: 'Do You Reject Satan?'
           },
           {
             episode: 4,
