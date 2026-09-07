@@ -1691,7 +1691,11 @@ body.rtl-layout .modal-search-clear {
   color: #ff334b;
 }
 
+
+
+
 /* Category Grid */
+
 .search-tags-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
@@ -2263,6 +2267,7 @@ body.rtl-layout .modal-search-clear {
 /* Movie Cards */
 .movie-card {
   flex: 0 0 280px;
+  width: 100%;
   position: relative;
   background: transparent;
   cursor: pointer;
@@ -2482,7 +2487,7 @@ body.rtl-layout .modal-search-clear {
 /* Movies Grid View (For Search / Watchlist) */
 .movies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.6rem;
 }
 
@@ -4015,10 +4020,6 @@ body.rtl-layout .details-back-btn svg {
   flex-shrink: 0;
 }
 
-  display: none !important;
-}
-
-.mobile-menu-overlay {
 .mobile-menu-overlay.active {
   opacity: 1;
   visibility: visible;
@@ -4192,8 +4193,8 @@ body.rtl-layout .details-back-btn svg {
     padding: 2rem 1.5rem 3rem;
   }
 
-  .movies-grid {
-    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  .movies-grid, .browse-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1.2rem;
   }
 }
@@ -4341,8 +4342,8 @@ body.rtl-layout .details-back-btn svg {
     display: none; /* Allow pure swipe / scroll on mobile touch */
   }
 
-  .movies-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  .movies-grid, .browse-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 1rem;
   }
 
@@ -4436,9 +4437,7 @@ body.rtl-layout .details-back-btn svg {
     height: 64px;
   }
 
-  .navbar .brand-logo {
-    display: none !important;
-  }
+  /* Brand logo remains visible on mobile */
 
   .nav-container {
     padding: 0 0.6rem;
@@ -4615,8 +4614,8 @@ body.rtl-layout .details-back-btn svg {
     flex: 0 0 200px;
   }
 
-  .movies-grid {
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  .movies-grid, .browse-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 0.8rem;
   }
 
@@ -5850,10 +5849,10 @@ body.rtl-layout .details-back-btn svg {
 }
 
 .browse-title-row {
-  display: none !important;
-  align-items: baseline;
-  gap: 1rem;
-  margin-bottom: 1.4rem;
+  display: flex !important;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.8rem;
   flex-wrap: wrap;
 }
 
@@ -5869,12 +5868,20 @@ body.rtl-layout .details-back-btn svg {
 
 /* ---- Filter Bar ---- */
 .browse-filter-bar {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  scrollbar-width: none !important;
   gap: 0.55rem;
   align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem; /* reduced from 3.5rem to give space to the label */
+  padding: 0.4rem 2px 0.8rem 2px;
+  margin-top: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.browse-filter-bar::-webkit-scrollbar {
+  display: none !important;
 }
 
 /* ---- Results Count Label ---- */
@@ -5918,21 +5925,149 @@ body.rtl-layout .details-back-btn svg {
   border-color: var(--primary);
   color: #fff;
   font-weight: 700;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 3px 12px rgba(229, 9, 20, 0.4);
 }
 
-/* ---- Browse Grid ---- */
-.browse-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.6rem;
-  margin-bottom: 2.5rem;
-}
-
-.browse-grid .movie-card {
-  flex: none;
+/* Custom Avatar Upload Styles */
+.avatar-custom-img {
   width: 100%;
-  min-width: 0;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.avatar-custom-img.badge-avatar {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.avatar-custom-img.header-avatar {
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--primary);
+}
+
+.avatar-custom-img.sidebar-avatar {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-logout-btn {
+  margin-left: auto;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-dim, #9ca3af);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.sidebar-logout-btn:hover {
+  background: rgba(229, 9, 20, 0.2);
+  border-color: #e50914;
+  color: #e50914;
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(229, 9, 20, 0.45);
+}
+
+.sidebar-logout-btn:active {
+  transform: scale(0.92);
+}
+
+.picker-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.upload-avatar-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #00cc66;
+  background: rgba(0, 204, 102, 0.12);
+  border: 1px solid rgba(0, 204, 102, 0.3);
+  padding: 0.2rem 0.55rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.upload-avatar-label:hover {
+  background: #00cc66;
+  color: #000000;
+  box-shadow: 0 2px 8px rgba(0, 204, 102, 0.4);
+}
+
+/* Header Report Issue Button */
+.nav-report-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(229, 9, 20, 0.12);
+  border: 1px solid rgba(229, 9, 20, 0.35);
+  color: #ff4d4d;
+  padding: 0.45rem 0.8rem;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(10px);
+}
+
+.nav-report-btn:hover {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+  box-shadow: 0 4px 14px rgba(229, 9, 20, 0.4);
+  transform: translateY(-1px);
+}
+
+/* ================================================
+   BROWSE SECTION  (Movies / Series full-page view)
+   ================================================ */
+
+.browse-section {
+  padding: 2rem 0 4rem;
+  min-height: 80vh;
+}
+
+.browse-section-header {
+  margin-bottom: 1.8rem;
+}
+
+.browse-title-row {
+  display: flex !important;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.browse-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.5px;
+  margin: 0;
+  line-height: 1.1;
 }
 
 .browse-card {
@@ -6235,54 +6370,12 @@ body.rtl-layout .details-back-btn svg {
 
 /* ---- Responsive Breakpoints ---- */
 
-/* Extra Large screens (≥1600px): 5 columns */
-@media (min-width: 1600px) {
-  .browse-grid {
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1.8rem;
-  }
-}
 
-/* Normal desktops (1200px - 1600px): 4 columns (default) */
-@media (max-width: 1200px) {
-  .browse-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-}
 
-/* Tablets (768px - 900px): 3 columns */
-@media (max-width: 850px) {
-  .browse-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem;
-  }
-  .browse-title {
-    font-size: 1.7rem;
-  }
-}
-
-/* Mobile landscape (480px - 768px): 2 columns */
-@media (max-width: 768px) {
-  .browse-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-  .browse-filter-bar {
-    gap: 0.4rem;
-  }
-  .browse-filter-btn {
-    padding: 0.38rem 0.85rem;
-    font-size: 0.8rem;
-  }
-}
 
 /* Portrait mobile (<480px): 2 columns with large posters */
 @media (max-width: 480px) {
-  .browse-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.85rem;
-  }
+  
   .browse-title {
     font-size: 1.4rem;
   }
@@ -7149,13 +7242,8 @@ input:-webkit-autofill:active {
 }
 
 @media (max-width: 768px) {
-  .movie-card {
-    flex: 0 0 160px !important;
-    min-width: unset;
-  }
-  .movie-card .card-poster-wrap {
-    aspect-ratio: 2 / 3;
-  }
+  
+  
   .movie-card .card-gradient {
     display: block;
     position: absolute;
@@ -7341,13 +7429,8 @@ body.rtl-layout .account-side-panel {
 }
 
 @media (max-width: 768px) {
-  .movie-card {
-    flex: 0 0 160px !important;
-    min-width: unset;
-  }
-  .movie-card .card-poster-wrap {
-    aspect-ratio: 2 / 3;
-  }
+  
+  
   .movie-card .card-gradient {
     display: block;
     position: absolute;
@@ -9101,52 +9184,64 @@ min-width: 0;
 
 
 
-/* ==========================================================================
-   ENHANCED BROWSE, MOVIES, SERIES & ANIME 2-COLUMN PORTRAIT POSTER LAYOUT
-   ========================================================================== */
+/* ============================================================
+   BROWSE PAGE FINAL OVERRIDES — CINEBY STYLE
+   ============================================================ */
 
-/* Universal Browse Section Spacing */
-.browse-section {
-  padding: 6.2rem 1.5rem 5rem !important;
-  max-width: 1440px !important;
-  margin: 0 auto !important;
+/* Grid: 4-column landscape cards — Cineby style */
+.browse-grid,
+#moviesGrid,
+#seriesGrid,
+#animeGrid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 1.4rem 1rem !important;
+  margin-bottom: 2.5rem !important;
+}
+
+/* Keep 16:9 landscape aspect ratio on browse grid card images */
+.browse-grid .card-poster-wrap,
+#moviesGrid .card-poster-wrap,
+#seriesGrid .card-poster-wrap,
+#animeGrid .card-poster-wrap {
+  aspect-ratio: 16 / 9 !important;
   width: 100% !important;
-  box-sizing: border-box !important;
 }
 
-/* Browse Header Title & Count */
-.browse-title-row {
-  display: flex !important;
-  align-items: center !important;
-  gap: 0.85rem !important;
-  margin-bottom: 0.8rem !important;
-  flex-wrap: wrap !important;
+/* Constrain movie-card inside browse grid */
+.browse-grid .movie-card,
+#moviesGrid .movie-card,
+#seriesGrid .movie-card,
+#animeGrid .movie-card {
+  flex: none !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
 }
 
-.browse-title {
-  font-size: 2rem !important;
-  font-weight: 800 !important;
-  color: #ffffff !important;
-  letter-spacing: -0.5px !important;
-  margin: 0 !important;
-  line-height: 1.1 !important;
-  display: flex !important;
-  align-items: center !important;
-  gap: 0.5rem !important;
+/* Responsive: 2 columns on mobile */
+@media (max-width: 640px) {
+  .browse-grid,
+  #moviesGrid,
+  #seriesGrid,
+  #animeGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.8rem !important;
+  }
 }
 
-.browse-count {
-  font-size: 0.82rem !important;
-  color: #ff5e67 !important;
-  font-weight: 700 !important;
-  padding: 0.22rem 0.8rem !important;
-  background: rgba(255, 59, 68, 0.16) !important;
-  border-radius: 9999px !important;
-  border: 1px solid rgba(255, 59, 68, 0.35) !important;
-  white-space: nowrap !important;
+/* Responsive: 3 columns on tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .browse-grid,
+  #moviesGrid,
+  #seriesGrid,
+  #animeGrid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
 }
 
-/* Horizontal Scrolling Liquid Glass Genre Filter Bar */
+
+/* Filter bar: horizontal scroll, no scrollbar */
 .browse-filter-bar {
   display: flex !important;
   flex-wrap: nowrap !important;
@@ -9154,368 +9249,56 @@ min-width: 0;
   -webkit-overflow-scrolling: touch !important;
   scrollbar-width: none !important;
   -ms-overflow-style: none !important;
-  gap: 0.55rem !important;
+  gap: 1.8rem !important;
   align-items: center !important;
-  padding: 0.4rem 2px 0.85rem 2px !important;
-  margin: 0.5rem 0 1.2rem 0 !important;
-  width: 100% !important;
+  padding: 0 0 0.8rem 0 !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 1.5rem !important;
+  border-bottom: 1px solid rgba(255,255,255,0.08) !important;
 }
 
 .browse-filter-bar::-webkit-scrollbar {
   display: none !important;
 }
 
-/* Redundant results count bar hidden */
-.browse-results-bar {
-  display: none !important;
-}
-
-/* Genre Pill Buttons */
+/* Filter buttons: plain text tabs (Cineby style) */
 .browse-filter-btn {
   flex-shrink: 0 !important;
-  padding: 0.45rem 1.15rem !important;
-  border-radius: 9999px !important;
-  border: 1px solid rgba(255, 255, 255, 0.14) !important;
-  background: rgba(255, 255, 255, 0.07) !important;
-  color: rgba(255, 255, 255, 0.8) !important;
+  padding: 0 0 0.6rem 0 !important;
+  border: none !important;
+  border-bottom: 2px solid transparent !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: rgba(255,255,255,0.55) !important;
   font-family: inherit !important;
-  font-size: 0.84rem !important;
-  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
   cursor: pointer !important;
-  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  transition: color 0.2s ease, border-color 0.2s ease !important;
   white-space: nowrap !important;
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
   text-decoration: none !important;
+  margin-bottom: -1px !important;
 }
 
 .browse-filter-btn:hover {
-  background: rgba(255, 255, 255, 0.16) !important;
-  border-color: rgba(255, 255, 255, 0.28) !important;
-  color: #fff !important;
-  transform: translateY(-1px) !important;
+  color: #ffffff !important;
+  background: transparent !important;
+  border-bottom-color: rgba(255,255,255,0.3) !important;
+  transform: none !important;
+  box-shadow: none !important;
 }
 
 .browse-filter-btn.active {
-  background: #ff3b44 !important;
-  border-color: #ff3b44 !important;
   color: #ffffff !important;
-  font-weight: 700 !important;
-  box-shadow: 0 4px 16px rgba(255, 59, 68, 0.45) !important;
-}
-
-/* Desktop Grid: Multi-column Portrait Posters */
-.browse-grid,
-.movies-grid,
-#moviesGrid,
-#seriesGrid,
-#animeGrid,
-#watchlistGrid,
-#filteredGrid {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)) !important;
-  gap: 1.5rem 1.2rem !important;
-  margin-bottom: 2.5rem !important;
-  width: 100% !important;
-}
-
-.browse-grid .movie-card,
-.movies-grid .movie-card,
-#moviesGrid .movie-card,
-#seriesGrid .movie-card,
-#animeGrid .movie-card,
-#watchlistGrid .movie-card,
-#filteredGrid .movie-card {
-  width: 100% !important;
-  min-width: 0 !important;
-  max-width: 100% !important;
-  flex: none !important;
-  display: flex !important;
-  flex-direction: column !important;
-  margin: 0 !important;
-  position: relative !important;
   background: transparent !important;
-  cursor: pointer !important;
+  border-bottom-color: var(--primary, #e50914) !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
 }
 
-/* 2:3 Aspect Ratio Portrait Poster Wrap */
-.browse-grid .card-poster-wrap,
-.movies-grid .card-poster-wrap,
-#moviesGrid .card-poster-wrap,
-#seriesGrid .card-poster-wrap,
-#animeGrid .card-poster-wrap,
-#watchlistGrid .card-poster-wrap,
-#filteredGrid .card-poster-wrap,
-.force-poster-wrap {
-  width: 100% !important;
-  aspect-ratio: 2 / 3 !important;
-  border-radius: 12px !important;
-  overflow: hidden !important;
-  background: #141721 !important;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5) !important;
-  position: relative !important;
-}
-
-.browse-grid .card-poster,
-.movies-grid .card-poster,
-#moviesGrid .card-poster,
-#seriesGrid .card-poster,
-#animeGrid .card-poster,
-#watchlistGrid .card-poster,
-#filteredGrid .card-poster,
-.force-poster-img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  display: block !important;
-  transition: transform 0.4s ease !important;
-}
-
-.browse-grid .movie-card:hover .card-poster,
-.movies-grid .movie-card:hover .card-poster {
-  transform: scale(1.05) !important;
-}
-
-.browse-grid .card-details,
-.movies-grid .card-details,
-#moviesGrid .card-details,
-#seriesGrid .card-details,
-#animeGrid .card-details,
-#watchlistGrid .card-details,
-#filteredGrid .card-details {
-  position: static !important;
-  padding: 8px 2px 2px 2px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 3px !important;
-  background: transparent !important;
-}
-
-.browse-grid .card-title,
-.movies-grid .card-title,
-#moviesGrid .card-title,
-#seriesGrid .card-title,
-#animeGrid .card-title,
-#watchlistGrid .card-title,
-#filteredGrid .card-title {
-  font-size: 0.92rem !important;
-  font-weight: 700 !important;
-  color: #fff !important;
-  white-space: nowrap !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  margin: 0 !important;
-  line-height: 1.25 !important;
-  text-shadow: none !important;
-}
-
-.browse-grid .card-meta,
-.movies-grid .card-meta,
-#moviesGrid .card-meta,
-#seriesGrid .card-meta,
-#animeGrid .card-meta,
-#watchlistGrid .card-meta,
-#filteredGrid .card-meta {
-  display: flex !important;
-  align-items: center !important;
-  gap: 6px !important;
-  font-size: 0.76rem !important;
-  color: rgba(255, 255, 255, 0.6) !important;
-  margin: 0 !important;
-}
-
-.browse-grid .card-rating,
-.movies-grid .card-rating {
-  color: #ffc107 !important;
-  font-weight: 700 !important;
-}
-
-.browse-grid .card-type,
-.movies-grid .card-type,
-#moviesGrid .card-type,
-#seriesGrid .card-type,
-#animeGrid .card-type,
-#watchlistGrid .card-type,
-#filteredGrid .card-type {
-  display: inline-block !important;
-  padding: 1px 6px !important;
-  background: rgba(255, 255, 255, 0.08) !important;
-  border-radius: 4px !important;
-  font-size: 0.7rem !important;
-  color: rgba(255, 255, 255, 0.7) !important;
-}
-
-.browse-grid .card-gradient,
-.movies-grid .card-gradient,
-#moviesGrid .card-gradient,
-#seriesGrid .card-gradient,
-#animeGrid .card-gradient,
-#watchlistGrid .card-gradient,
-#filteredGrid .card-gradient {
+/* Hide old results count bar */
+.browse-results-bar {
   display: none !important;
-}
-
-/* ==========================================================================
-   MOBILE & TABLET: 2 POSTERS BY EACH SIDE (EXACT 2-COLUMN GRID)
-   ========================================================================== */
-@media (max-width: 900px) {
-  .browse-section {
-    padding: 4.8rem 12px 6.5rem 12px !important;
-  }
-
-  .browse-title-row {
-    display: flex !important;
-    align-items: center !important;
-    gap: 0.65rem !important;
-    margin-bottom: 0.5rem !important;
-  }
-
-  .browse-title {
-    font-size: 1.55rem !important;
-  }
-
-  .browse-count {
-    font-size: 0.78rem !important;
-    padding: 0.2rem 0.65rem !important;
-  }
-
-  .browse-filter-bar {
-    gap: 8px !important;
-    padding: 4px 2px 10px 2px !important;
-    margin: 0.3rem 0 1rem 0 !important;
-  }
-
-  .browse-filter-btn {
-    padding: 6px 14px !important;
-    font-size: 0.82rem !important;
-  }
-
-  /* 2 POSTERS SIDE-BY-SIDE ON ALL SCREENS <= 900PX */
-  .browse-grid,
-  .movies-grid,
-  #moviesGrid,
-  #seriesGrid,
-  #animeGrid,
-  #watchlistGrid,
-  #filteredGrid {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 14px 10px !important;
-    width: 100% !important;
-    margin-bottom: 3.5rem !important;
-  }
-
-  .browse-grid .movie-card,
-  .movies-grid .movie-card,
-  #moviesGrid .movie-card,
-  #seriesGrid .movie-card,
-  #animeGrid .movie-card,
-  #watchlistGrid .movie-card,
-  #filteredGrid .movie-card {
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    flex: none !important;
-    display: flex !important;
-    flex-direction: column !important;
-    margin: 0 !important;
-  }
-
-  .browse-grid .card-poster-wrap,
-  .movies-grid .card-poster-wrap,
-  #moviesGrid .card-poster-wrap,
-  #seriesGrid .card-poster-wrap,
-  #animeGrid .card-poster-wrap,
-  #watchlistGrid .card-poster-wrap,
-  #filteredGrid .card-poster-wrap,
-  .force-poster-wrap {
-    width: 100% !important;
-    aspect-ratio: 2 / 3 !important;
-    border-radius: 12px !important;
-    overflow: hidden !important;
-    background: #141721 !important;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.55) !important;
-  }
-
-  .browse-grid .card-poster,
-  .movies-grid .card-poster,
-  #moviesGrid .card-poster,
-  #seriesGrid .card-poster,
-  #animeGrid .card-poster,
-  #watchlistGrid .card-poster,
-  #filteredGrid .card-poster,
-  .force-poster-img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    display: block !important;
-  }
-
-  .browse-grid .card-details,
-  .movies-grid .card-details,
-  #moviesGrid .card-details,
-  #seriesGrid .card-details,
-  #animeGrid .card-details,
-  #watchlistGrid .card-details,
-  #filteredGrid .card-details {
-    position: static !important;
-    padding: 7px 2px 2px 2px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 2px !important;
-    background: transparent !important;
-  }
-
-  .browse-grid .card-title,
-  .movies-grid .card-title,
-  #moviesGrid .card-title,
-  #seriesGrid .card-title,
-  #animeGrid .card-title,
-  #watchlistGrid .card-title,
-  #filteredGrid .card-title {
-    font-size: 0.86rem !important;
-    font-weight: 700 !important;
-    color: #fff !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    margin: 0 !important;
-    line-height: 1.25 !important;
-    text-shadow: none !important;
-  }
-
-  .browse-grid .card-meta,
-  .movies-grid .card-meta,
-  #moviesGrid .card-meta,
-  #seriesGrid .card-meta,
-  #animeGrid .card-meta,
-  #watchlistGrid .card-meta,
-  #filteredGrid .card-meta {
-    display: flex !important;
-    align-items: center !important;
-    gap: 6px !important;
-    font-size: 0.72rem !important;
-    color: rgba(255, 255, 255, 0.6) !important;
-    margin: 0 !important;
-  }
-
-  .browse-grid .card-type,
-  .movies-grid .card-type,
-  #moviesGrid .card-type,
-  #seriesGrid .card-type,
-  #animeGrid .card-type,
-  #watchlistGrid .card-type,
-  #filteredGrid .card-type {
-    display: inline-block !important;
-    padding: 1px 5px !important;
-    background: rgba(255, 255, 255, 0.08) !important;
-    border-radius: 4px !important;
-    font-size: 0.68rem !important;
-    color: rgba(255, 255, 255, 0.7) !important;
-  }
-
-  /* Pagination spacing above bottom dock */
-  .browse-pagination {
-    padding-bottom: 2rem !important;
-  }
 }
