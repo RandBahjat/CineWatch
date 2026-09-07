@@ -29,7 +29,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "The Runner",
+    title: "Mayday",
     type: "Movie",
     year: 2026,
     rating: 4.3,
