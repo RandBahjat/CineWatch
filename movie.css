@@ -622,13 +622,29 @@ select {
   height: 16px;
 }
 
-/* Open on Hover */
+/* Open on Hover / Focus / Toggle */
 .nav-browse-item:hover .nav-browse-dropdown,
-.nav-browse-item:focus-within .nav-browse-dropdown {
+.nav-browse-item:focus-within .nav-browse-dropdown,
+.nav-browse-item.is-open .nav-browse-dropdown {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
   transform: translateY(0) scale(1);
+}
+
+/* Immediately dismiss dropdown when an item is selected */
+.nav-browse-item.is-closed .nav-browse-dropdown,
+.nav-browse-item.is-closed:hover .nav-browse-dropdown,
+.nav-browse-item.is-closed:focus-within .nav-browse-dropdown {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transform: translateY(10px) scale(0.96) !important;
+}
+
+.nav-browse-item.is-closed .browse-chevron,
+.nav-browse-item.is-closed:hover .browse-chevron {
+  transform: rotate(0deg) !important;
 }
 
 /* Dropdown Header */
@@ -772,80 +788,192 @@ select {
 }
 
 /* Custom Language Dropdown Pill */
+/* ==========================================================================
+   REDESIGNED CUSTOM LANGUAGE DROPDOWN (iOS 26 LIQUID GLASS + FLAGS)
+   ========================================================================== */
 .custom-lang-dropdown {
   position: relative;
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 500;
-  z-index: 1000;
+  z-index: 1050;
   user-select: none;
 }
 
 .lang-dropdown-selected {
   display: flex;
   align-items: center;
-  gap: 7px;
-  padding: 0.48rem 1rem;
+  gap: 8px;
+  padding: 0.44rem 0.95rem;
   border-radius: 9999px;
   background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   color: #ffffff;
   cursor: pointer;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.35),
+              0 6px 20px -2px rgba(0, 0, 0, 0.35);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .lang-dropdown-selected:hover {
   background: rgba(255, 255, 255, 0.16);
-  border-color: rgba(255, 255, 255, 0.35);
-  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-1.5px);
+  box-shadow: inset 0 1.5px 1px rgba(255, 255, 255, 0.5),
+              0 10px 26px rgba(0, 0, 0, 0.45);
 }
 
 .custom-lang-dropdown.open .lang-dropdown-selected {
-  background: rgba(255, 255, 255, 0.22);
-  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(229, 9, 20, 0.16);
+  border-color: rgba(229, 9, 20, 0.5);
+  box-shadow: 0 0 18px rgba(229, 9, 20, 0.35),
+              inset 0 1px 1px rgba(255, 255, 255, 0.4);
 }
 
-.lang-icon {
-  font-size: 1.15rem;
-  color: #ffffff;
+.lang-flag-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 16px;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  flex-shrink: 0;
+}
+
+.lang-flag {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .lang-arrow {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.75);
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-left: 2px;
 }
 
 .custom-lang-dropdown.open .lang-arrow {
   transform: rotate(180deg);
+  color: #ffffff;
 }
 
 .lang-dropdown-options {
   position: absolute;
   top: calc(100% + 10px);
   right: 0;
-  background: rgba(20, 24, 36, 0.92);
-  backdrop-filter: blur(32px) saturate(200%);
-  -webkit-backdrop-filter: blur(32px) saturate(200%);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 18px;
+  left: auto;
+  width: 220px;
   padding: 8px;
-  width: max-content;
-  min-width: 140px;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+  background: rgba(14, 18, 30, 0.95);
+  backdrop-filter: blur(36px) saturate(210%);
+  -webkit-backdrop-filter: blur(36px) saturate(210%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  box-shadow: 0 24px 60px -6px rgba(0, 0, 0, 0.8),
+              inset 0 1px 1px rgba(255, 255, 255, 0.2);
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-12px) scale(0.94);
+  pointer-events: none;
+  transform: translateY(10px) scale(0.96);
   transform-origin: top right;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.25s;
+  z-index: 1100;
 }
 
 .custom-lang-dropdown.open .lang-dropdown-options {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
   transform: translateY(0) scale(1);
+}
+
+.lang-dropdown-header {
+  padding: 4px 8px 8px 8px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.lang-dropdown-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid transparent;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  color: rgba(255, 255, 255, 0.85);
+  position: relative;
+}
+
+.lang-option:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  transform: translateX(2px);
+}
+
+.rtl-layout .lang-option:hover {
+  transform: translateX(-2px);
+}
+
+.lang-option.active {
+  background: rgba(229, 9, 20, 0.18);
+  border-color: rgba(229, 9, 20, 0.5);
+  color: #ffffff;
+  box-shadow: 0 0 14px rgba(229, 9, 20, 0.25);
+}
+
+.lang-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex: 1;
+  text-align: left;
+}
+
+.rtl-layout .lang-meta {
+  text-align: right;
+}
+
+.lang-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.lang-sub {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.lang-check {
+  display: none;
+  font-size: 1.05rem;
+  color: #e50914;
+}
+
+.lang-option.active .lang-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ==========================================================================

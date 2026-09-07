@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=17887808_146157">
+    <link rel="stylesheet" href="movie.css?v=17887808_146158">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -27,10 +27,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_5962" defer></script>
-    <script src="series-data.js?v=20260818_5962" defer></script>
-    <script src="anime-data.js?v=20260818_5962" defer></script>
-    <script src="movie.js?v=17887808_146158" defer></script>
+    <script src="movies-data.js?v=20260818_5963" defer></script>
+    <script src="series-data.js?v=20260818_5963" defer></script>
+    <script src="anime-data.js?v=20260818_5963" defer></script>
+    <script src="movie.js?v=17887808_146159" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -185,15 +185,37 @@
 
                 <!-- Language Selector (Custom Dropdown) -->
                 <div class="custom-lang-dropdown notranslate" translate="no" id="customLangDropdown">
-                    <div class="lang-dropdown-selected" id="langDropdownBtn">
-                        <ion-icon name="language-outline" class="lang-icon"></ion-icon>
+                    <div class="lang-dropdown-selected" id="langDropdownBtn" role="button" aria-haspopup="true" aria-expanded="false" title="Change Language">
+                        <span class="lang-flag-wrapper" id="langCurrentFlag">
+                            <svg class="lang-flag" viewBox="0 0 64 48" width="22" height="16" aria-hidden="true"><rect width="64" height="48" fill="#B22234"/><path d="M0 3.7h64M0 11.1h64M0 18.5h64M0 25.8h64M0 33.2h64M0 40.6h64" stroke="#FFF" stroke-width="3.7"/><rect width="26" height="26" fill="#3C3B6E"/><circle cx="5" cy="5" r="1.2" fill="#FFF"/><circle cx="13" cy="5" r="1.2" fill="#FFF"/><circle cx="21" cy="5" r="1.2" fill="#FFF"/><circle cx="9" cy="9" r="1.2" fill="#FFF"/><circle cx="17" cy="9" r="1.2" fill="#FFF"/><circle cx="5" cy="13" r="1.2" fill="#FFF"/><circle cx="13" cy="13" r="1.2" fill="#FFF"/><circle cx="21" cy="13" r="1.2" fill="#FFF"/><circle cx="9" cy="17" r="1.2" fill="#FFF"/><circle cx="17" cy="17" r="1.2" fill="#FFF"/><circle cx="5" cy="21" r="1.2" fill="#FFF"/><circle cx="13" cy="21" r="1.2" fill="#FFF"/><circle cx="21" cy="21" r="1.2" fill="#FFF"/></svg>
+                        </span>
                         <span id="langSelectedText">English</span>
                         <ion-icon name="chevron-down-outline" class="lang-arrow"></ion-icon>
                     </div>
                     <div class="lang-dropdown-options" id="langDropdownOptions">
-                        <div class="lang-option" data-value="en">English</div>
-                        <div class="lang-option" data-value="ckb">کوردی</div>
-                        <div class="lang-option" data-value="ar">العربية</div>
+                        <div class="lang-dropdown-header">
+                            <span class="lang-dropdown-title">Select Language</span>
+                        </div>
+                        <div class="lang-option" data-value="en" id="langOptEn">
+                            <span class="lang-flag-wrapper">
+                                <svg class="lang-flag" viewBox="0 0 64 48" width="22" height="16" aria-hidden="true"><rect width="64" height="48" fill="#B22234"/><path d="M0 3.7h64M0 11.1h64M0 18.5h64M0 25.8h64M0 33.2h64M0 40.6h64" stroke="#FFF" stroke-width="3.7"/><rect width="26" height="26" fill="#3C3B6E"/><circle cx="5" cy="5" r="1.2" fill="#FFF"/><circle cx="13" cy="5" r="1.2" fill="#FFF"/><circle cx="21" cy="5" r="1.2" fill="#FFF"/><circle cx="9" cy="9" r="1.2" fill="#FFF"/><circle cx="17" cy="9" r="1.2" fill="#FFF"/><circle cx="5" cy="13" r="1.2" fill="#FFF"/><circle cx="13" cy="13" r="1.2" fill="#FFF"/><circle cx="21" cy="13" r="1.2" fill="#FFF"/><circle cx="9" cy="17" r="1.2" fill="#FFF"/><circle cx="17" cy="17" r="1.2" fill="#FFF"/><circle cx="5" cy="21" r="1.2" fill="#FFF"/><circle cx="13" cy="21" r="1.2" fill="#FFF"/><circle cx="21" cy="21" r="1.2" fill="#FFF"/></svg>
+                            </span>
+                            <div class="lang-meta">
+                                <span class="lang-name">English</span>
+                                <span class="lang-sub">United States</span>
+                            </div>
+                            <div class="lang-check"><ion-icon name="checkmark-outline"></ion-icon></div>
+                        </div>
+                        <div class="lang-option" data-value="ckb" id="langOptCkb">
+                            <span class="lang-flag-wrapper">
+                                <svg class="lang-flag" viewBox="0 0 64 48" width="22" height="16" aria-hidden="true"><rect width="64" height="16" fill="#E4002B"/><rect y="16" width="64" height="16" fill="#FFFFFF"/><rect y="32" width="64" height="16" fill="#009639"/><circle cx="32" cy="24" r="4.2" fill="#FFC72C"/><polygon points="32.0,16.0 32.7,19.6 34.4,16.4 34.0,19.9 36.5,17.4 35.1,20.7 38.3,19.0 35.9,21.8 39.4,21.1 36.4,23.0 40.0,23.4 36.5,24.3 39.8,25.8 36.2,25.6 38.9,28.0 35.5,26.8 37.4,29.9 34.5,27.7 35.5,31.2 33.3,28.3 33.2,31.9 32.0,28.5 30.8,31.9 30.7,28.3 28.5,31.2 29.5,27.7 26.6,29.9 28.5,26.8 25.1,28.0 27.8,25.6 24.2,25.8 27.5,24.3 24.0,23.4 27.6,23.0 24.6,21.1 28.1,21.8 25.7,19.0 28.9,20.7 27.5,17.4 30.0,19.9 29.6,16.4 31.3,19.6" fill="#FFC72C"/></svg>
+                            </span>
+                            <div class="lang-meta">
+                                <span class="lang-name">کوردی</span>
+                                <span class="lang-sub">Kurmancî / Soranî</span>
+                            </div>
+                            <div class="lang-check"><ion-icon name="checkmark-outline"></ion-icon></div>
+                        </div>
                     </div>
                 </div>
                 
@@ -1394,136 +1416,182 @@
         .custom-lang-dropdown {
             position: relative;
             margin-right: 0.5rem;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.85rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif;
+            font-size: 0.88rem;
             font-weight: 500;
-            z-index: 1000;
+            z-index: 1050;
             user-select: none;
         }
         .lang-dropdown-selected {
             display: flex;
             align-items: center;
-            gap: 7px;
-            padding: 0.52rem 1rem;
+            gap: 8px;
+            padding: 0.44rem 0.95rem;
             border-radius: 9999px;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.05) 100%);
-            border: 1px solid rgba(255, 255, 255, 0.28);
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.18);
             color: #ffffff;
             cursor: pointer;
-            backdrop-filter: blur(24px) saturate(200%) brightness(110%);
-            -webkit-backdrop-filter: blur(24px) saturate(200%) brightness(110%);
-            box-shadow: inset 0 1.5px 0.5px rgba(255, 255, 255, 0.75),
-                        inset 0 -1px 1px rgba(255, 255, 255, 0.12),
-                        0 8px 24px -4px rgba(0, 0, 0, 0.25);
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            backdrop-filter: blur(24px) saturate(190%);
+            -webkit-backdrop-filter: blur(24px) saturate(190%);
+            box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.35),
+                        0 6px 20px -2px rgba(0, 0, 0, 0.35);
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .lang-dropdown-selected:hover {
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.10) 100%);
-            border-color: rgba(255, 255, 255, 0.55);
-            transform: translateY(-2px);
-            box-shadow: inset 0 1.5px 0.5px rgba(255, 255, 255, 0.95),
-                        0 10px 28px rgba(0, 0, 0, 0.35);
+            background: rgba(255, 255, 255, 0.16);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-1.5px);
+            box-shadow: inset 0 1.5px 1px rgba(255, 255, 255, 0.5),
+                        0 10px 26px rgba(0, 0, 0, 0.45);
         }
-        .lang-icon { font-size: 1.1rem; color: var(--primary); }
-        .lang-arrow { font-size: 0.9rem; color: var(--text-muted); transition: transform 0.3s ease; }
-        .custom-lang-dropdown.open .lang-arrow { transform: rotate(180deg); }
         .custom-lang-dropdown.open .lang-dropdown-selected {
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.14) 100%);
-            border-color: rgba(255, 255, 255, 0.65);
-            box-shadow: inset 0 1.5px 0.5px rgba(255, 255, 255, 1),
-                        0 10px 28px rgba(0, 0, 0, 0.4);
+            background: rgba(229, 9, 20, 0.16);
+            border-color: rgba(229, 9, 20, 0.5);
+            box-shadow: 0 0 18px rgba(229, 9, 20, 0.35),
+                        inset 0 1px 1px rgba(255, 255, 255, 0.4);
         }
-
+        .lang-flag-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 16px;
+            border-radius: 3px;
+            overflow: hidden;
+            box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            flex-shrink: 0;
+        }
+        .lang-flag {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .lang-arrow {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+            margin-left: 2px;
+        }
+        .custom-lang-dropdown.open .lang-arrow {
+            transform: rotate(180deg);
+            color: #ffffff;
+        }
         .lang-dropdown-options {
             position: absolute;
             top: calc(100% + 10px);
             right: 0;
-            background: rgba(25, 28, 40, 0.75);
-            backdrop-filter: blur(36px) saturate(220%);
-            -webkit-backdrop-filter: blur(36px) saturate(220%);
-            border: 1px solid rgba(255, 255, 255, 0.24);
-            border-radius: 18px;
+            left: auto;
+            width: 220px;
             padding: 8px;
-            width: max-content;
-            min-width: 135px;
-            box-shadow: inset 0 1.5px 0.5px rgba(255, 255, 255, 0.4),
-                        0 20px 45px rgba(0, 0, 0, 0.5);
+            background: rgba(14, 18, 30, 0.95);
+            backdrop-filter: blur(36px) saturate(210%);
+            -webkit-backdrop-filter: blur(36px) saturate(210%);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            border-radius: 18px;
+            box-shadow: 0 24px 60px -6px rgba(0, 0, 0, 0.8),
+                        inset 0 1px 1px rgba(255, 255, 255, 0.2);
             opacity: 0;
             visibility: hidden;
-            transform: translateY(-12px) scale(0.94);
+            pointer-events: none;
+            transform: translateY(10px) scale(0.96);
             transform-origin: top right;
-            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                        visibility 0.25s;
+            z-index: 1100;
         }
-        /* Handle RTL layout for dropdown options positioning */
-        .rtl-layout .lang-dropdown-options { right: auto; left: 0; transform-origin: top left; }
+        .custom-lang-dropdown.open .lang-dropdown-options {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transform: translateY(0) scale(1);
+        }
+        .rtl-layout .lang-dropdown-options {
+            right: auto;
+            left: 0;
+            transform-origin: top left;
+        }
         .rtl-layout .custom-lang-dropdown {
             margin-right: 0;
             margin-left: 0.5rem;
         }
-        .rtl-layout .lang-dropdown-selected {
-            font-family: 'Outfit', 'Inter', system-ui, sans-serif;
-            font-weight: 600;
+        .lang-dropdown-header {
+            padding: 4px 8px 8px 8px;
+            margin-bottom: 6px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
-
-        @keyframes dropdownPop {
-            0% { opacity: 0; transform: translateY(-15px) scale(0.95); }
-            100% { opacity: 1; transform: translateY(0) scale(1); }
+        .lang-dropdown-title {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.45);
         }
-
-        @keyframes optionFadeIn {
-            0% { opacity: 0; transform: translateX(10px); }
-            100% { opacity: 1; transform: translateX(0); }
-        }
-        @keyframes optionFadeInRTL {
-            0% { opacity: 0; transform: translateX(-10px); }
-            100% { opacity: 1; transform: translateX(0); }
-        }
-
-        .custom-lang-dropdown.open .lang-dropdown-options {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0) scale(1);
-            animation: dropdownPop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-        }
-
         .lang-option {
-            padding: 8px 12px;
-            color: var(--text-muted);
-            cursor: pointer;
-            border-radius: 8px;
-            transition: all 0.2s ease;
             display: flex;
             align-items: center;
-            opacity: 1; /* Default state when closed */
+            gap: 12px;
+            padding: 8px 10px;
+            border-radius: 12px;
+            cursor: pointer;
+            background: transparent;
+            border: 1px solid transparent;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            color: rgba(255, 255, 255, 0.85);
+            position: relative;
         }
-        
-        .custom-lang-dropdown.open .lang-option {
-            opacity: 0;
-            animation: optionFadeIn 0.3s forwards ease-out;
-        }
-        .rtl-layout .custom-lang-dropdown.open .lang-option {
-            animation-name: optionFadeInRTL;
-        }
-        .custom-lang-dropdown.open .lang-option:nth-child(1) { animation-delay: 0.05s; }
-        .custom-lang-dropdown.open .lang-option:nth-child(2) { animation-delay: 0.10s; }
-        .custom-lang-dropdown.open .lang-option:nth-child(3) { animation-delay: 0.15s; }
-        .custom-lang-dropdown.open .lang-option:nth-child(4) { animation-delay: 0.20s; }
-
         .lang-option:hover {
             background: rgba(255, 255, 255, 0.08);
-            color: white;
+            border-color: rgba(255, 255, 255, 0.14);
+            color: #ffffff;
+            transform: translateX(2px);
+        }
+        .rtl-layout .lang-option:hover {
+            transform: translateX(-2px);
         }
         .lang-option.active {
-            background: var(--primary);
-            color: white;
+            background: rgba(229, 9, 20, 0.18);
+            border-color: rgba(229, 9, 20, 0.5);
+            color: #ffffff;
+            box-shadow: 0 0 14px rgba(229, 9, 20, 0.25);
+        }
+        .lang-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            flex: 1;
+            text-align: left;
+        }
+        .rtl-layout .lang-meta {
+            text-align: right;
+        }
+        .lang-name {
+            font-size: 0.88rem;
             font-weight: 600;
+            color: #ffffff;
+        }
+        .lang-sub {
+            font-size: 0.72rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .lang-check {
+            display: none;
+            font-size: 1.05rem;
+            color: #e50914;
+        }
+        .lang-option.active .lang-check {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     </style>
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
                 pageLanguage: 'en', 
-                includedLanguages: 'ar,ckb,en',
+                includedLanguages: 'ckb,en',
                 autoDisplay: false
             }, 'google_translate_element');
         }
@@ -1633,7 +1701,8 @@
             }
             
             // RTL handling for Arabic and Sorani
-            if (currentLang === 'ckb' || currentLang === 'ar') {
+            if (currentLang === 'ar') currentLang = 'en';
+            if (currentLang === 'ckb') {
                 document.body.style.direction = 'rtl';
                 document.body.classList.add('rtl-layout');
             } else {
@@ -1879,32 +1948,39 @@
             const dropdown = document.getElementById('customLangDropdown');
             const dropdownBtn = document.getElementById('langDropdownBtn');
             const selectedText = document.getElementById('langSelectedText');
+            const currentFlagEl = document.getElementById('langCurrentFlag');
             const options = document.querySelectorAll('.lang-option');
+
+            const FLAG_US = `<svg class="lang-flag" viewBox="0 0 64 48" width="22" height="16" aria-hidden="true"><rect width="64" height="48" fill="#B22234"/><path d="M0 3.7h64M0 11.1h64M0 18.5h64M0 25.8h64M0 33.2h64M0 40.6h64" stroke="#FFF" stroke-width="3.7"/><rect width="26" height="26" fill="#3C3B6E"/><circle cx="5" cy="5" r="1.2" fill="#FFF"/><circle cx="13" cy="5" r="1.2" fill="#FFF"/><circle cx="21" cy="5" r="1.2" fill="#FFF"/><circle cx="9" cy="9" r="1.2" fill="#FFF"/><circle cx="17" cy="9" r="1.2" fill="#FFF"/><circle cx="5" cy="13" r="1.2" fill="#FFF"/><circle cx="13" cy="13" r="1.2" fill="#FFF"/><circle cx="21" cy="13" r="1.2" fill="#FFF"/><circle cx="9" cy="17" r="1.2" fill="#FFF"/><circle cx="17" cy="17" r="1.2" fill="#FFF"/><circle cx="5" cy="21" r="1.2" fill="#FFF"/><circle cx="13" cy="21" r="1.2" fill="#FFF"/><circle cx="21" cy="21" r="1.2" fill="#FFF"/></svg>`;
+            const FLAG_CKB = `<svg class="lang-flag" viewBox="0 0 64 48" width="22" height="16" aria-hidden="true"><rect width="64" height="16" fill="#E4002B"/><rect y="16" width="64" height="16" fill="#FFFFFF"/><rect y="32" width="64" height="16" fill="#009639"/><circle cx="32" cy="24" r="4.2" fill="#FFC72C"/><polygon points="32.0,16.0 32.7,19.6 34.4,16.4 34.0,19.9 36.5,17.4 35.1,20.7 38.3,19.0 35.9,21.8 39.4,21.1 36.4,23.0 40.0,23.4 36.5,24.3 39.8,25.8 36.2,25.6 38.9,28.0 35.5,26.8 37.4,29.9 34.5,27.7 35.5,31.2 33.3,28.3 33.2,31.9 32.0,28.5 30.8,31.9 30.7,28.3 28.5,31.2 29.5,27.7 26.6,29.9 28.5,26.8 25.1,28.0 27.8,25.6 24.2,25.8 27.5,24.3 24.0,23.4 27.6,23.0 24.6,21.1 28.1,21.8 25.7,19.0 28.9,20.7 27.5,17.4 30.0,19.9 29.6,16.4 31.3,19.6" fill="#FFC72C"/></svg>`;
 
             function updateSelectedLangLabel(lang) {
                 if (!selectedText) return;
                 const isMobile = window.innerWidth <= 768;
                 if (lang === 'ckb') {
                     selectedText.textContent = 'کوردی';
-                } else if (lang === 'ar') {
-                    selectedText.textContent = isMobile ? 'عربي' : 'العربية';
+                    if (currentFlagEl) currentFlagEl.innerHTML = FLAG_CKB;
                 } else {
                     selectedText.textContent = isMobile ? 'EN' : 'English';
+                    if (currentFlagEl) currentFlagEl.innerHTML = FLAG_US;
                 }
+                options.forEach(opt => {
+                    if (opt.dataset.value === lang) {
+                        opt.classList.add('active');
+                    } else {
+                        opt.classList.remove('active');
+                    }
+                });
             }
 
             if (dropdown && dropdownBtn) {
-                // Set initial active state
                 options.forEach(opt => {
-                    if (opt.dataset.value === currentLang) {
-                        opt.classList.add('active');
-                    }
-                    
                     opt.addEventListener('click', (e) => {
                         e.stopPropagation();
                         dropdown.classList.remove('open');
-                        if (opt.dataset.value !== currentLang) {
-                            changeLanguage(opt.dataset.value);
+                        const chosen = opt.dataset.value;
+                        if (chosen && chosen !== currentLang) {
+                            changeLanguage(chosen);
                         }
                     });
                 });
