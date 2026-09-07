@@ -1015,7 +1015,7 @@ function renderWatchlist() {
   }
 
   if (emptyState) emptyState.classList.add("hidden");
-  grid.innerHTML = validFavorites.map((movie) => createMovieCardHTML(movie, null, true)).join("");
+  grid.innerHTML = validFavorites.map((movie) => createMovieCardHTML(movie, null, false)).join("");
 
   grid.querySelectorAll(".movie-card").forEach((card) => {
     card.onclick = () => openDetailsModal(card.dataset.id);
@@ -1054,7 +1054,7 @@ function renderFilteredGrid(movieList, titleText) {
       </div>
     `;
   } else {
-    filteredGrid.innerHTML = movieList.map(m => createMovieCardHTML(m, null, true)).join("");
+    filteredGrid.innerHTML = movieList.map(m => createMovieCardHTML(m, null, false)).join("");
     filteredGrid.querySelectorAll(".movie-card").forEach((card) => {
       card.onclick = () => openDetailsModal(card.dataset.id);
     });
@@ -1080,7 +1080,7 @@ function renderBrowseGrid(items, gridId, page) {
         <p>Try a different filter.</p>
       </div>`;
   } else {
-    grid.innerHTML = pageItems.map(m => createMovieCardHTML(m, null, true)).join("");
+    grid.innerHTML = pageItems.map(m => createMovieCardHTML(m, null, false)).join("");
     grid.querySelectorAll(".movie-card").forEach((card) => {
       card.onclick = () => openDetailsModal(card.dataset.id);
     });
