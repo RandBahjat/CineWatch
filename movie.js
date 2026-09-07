@@ -5183,14 +5183,15 @@ document.getElementById("playerPrevEpBtn")?.addEventListener("click", () => navi
     setTimeout(() => positionGliderTo(getActiveLink(), false), 200);
 
     links.forEach((link) => {
-      link.addEventListener("mouseenter", () => {
-        positionGliderTo(link, true);
-      });
+      const onHover = () => positionGliderTo(link, true);
+      link.addEventListener("mouseenter", onHover);
+      link.addEventListener("mouseover", onHover);
+      link.addEventListener("pointerenter", onHover);
     });
 
-    container.addEventListener("mouseleave", () => {
-      positionGliderTo(getActiveLink(), true);
-    });
+    const onLeave = () => positionGliderTo(getActiveLink(), true);
+    container.addEventListener("mouseleave", onLeave);
+    container.addEventListener("pointerleave", onLeave);
 
     window.updateNavGlider = function (animate = true) {
       setTimeout(() => {
