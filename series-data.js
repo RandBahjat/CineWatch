@@ -5367,9 +5367,9 @@ window._SERIES_DATA = [
     ]
   },
   {
-    title: 'The Last of Us',
+    title: 'The Gentlemen',
     type: 'TV Show',
-    year: 2023,
+    year: 2024,
     rating: 8.4,
     age: 'TV-MA',
     duration: '50m',
