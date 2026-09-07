@@ -32,7 +32,7 @@ window._MOVIES_DATA = [
     title: "Mayday",
     type: "Movie",
     year: 2026,
-    rating: 4.3,
+    rating: 6.9,
     age: "PG-13",
     duration: "1h 25m",
     genres: [
