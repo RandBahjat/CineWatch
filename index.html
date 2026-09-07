@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260904_1802">
+    <link rel="stylesheet" href="movie.css?v=20260904_1803">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -27,9 +27,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_5933" defer></script>
-    <script src="series-data.js?v=20260818_5933" defer></script>
-    <script src="anime-data.js?v=20260818_5933" defer></script>
+    <script src="movies-data.js?v=20260818_5934" defer></script>
+    <script src="series-data.js?v=20260818_5934" defer></script>
+    <script src="anime-data.js?v=20260818_5934" defer></script>
     <script src="movie.js?v=v44" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -1269,24 +1269,29 @@
             display: flex;
             align-items: center;
             gap: 6px;
-            padding: 6px 12px;
-            border: 1px solid var(--border-color);
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.05);
+            padding: 0.44rem 0.88rem;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.06);
             color: white;
             cursor: pointer;
-            transition: all 0.3s ease;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .lang-dropdown-selected:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255,255,255,0.3);
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
         }
         .lang-icon { font-size: 1.1rem; color: var(--primary); }
         .lang-arrow { font-size: 0.9rem; color: var(--text-muted); transition: transform 0.3s ease; }
         .custom-lang-dropdown.open .lang-arrow { transform: rotate(180deg); }
         .custom-lang-dropdown.open .lang-dropdown-selected {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.12);
             border-color: var(--primary);
+            box-shadow: 0 0 14px rgba(229, 9, 20, 0.3);
         }
 
         .lang-dropdown-options {
