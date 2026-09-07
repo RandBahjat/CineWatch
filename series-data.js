@@ -5384,7 +5384,7 @@ window._SERIES_DATA = [
     trailerUrl: "",
     overview: 'Fancy rich guy Eddie inherits big family estate after father die. But surprise! Massive underground cannabis weed empire hiding right under castle ground! Dangerous gang lords own farm. Eddie must play dirty crime game with bad guys to keep family safe and protect mansion.',
     overviewKurdish:"ئێدی هۆرنیمان بە شێوەیەکی چاوەڕواننەکراو خاوەندارێتیی زەوی و ماڵە گەورەکەی باوکی بە میرات بۆ دەمێنێتەوە، بەڵام بۆی دەردەکەوێت کە ئەستێڵک و زەوییەکانی خێزانەکەی بوونەتە بنکەیەکی گەورەی ڕێنیشاندانی ئیمپراتۆرییەتیی ماریوانا لەلایەن تاوانبارانەوە. ئێدی ناچار دەبێت بچێتە ناو جیهانی ژێر زەویی تاوانکاریی بریتانیاوە بۆ ئەوەی خێزانەکەی لە مەترسی بپارێزێت و دەسەڵات بگرێتە دەست.",
-    director: 'Craig Mazin, Neil Druckmann',
+    director: 'Guy Ritchie',
     cast: [
       'Pedro Pascal, Bella Ramsey, Anna Torv, Gabriel Luna, Storm Reid, Nick Offerman, Murray Bartlett, Isabela Merced, Young Mazino'
     ],
