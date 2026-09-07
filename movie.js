@@ -3412,11 +3412,25 @@ function bindEventListeners() {
         if (mobileMenuOverlay) mobileMenuOverlay.classList.remove("active");
         switchView(targetView);
       } else if (card.id === 'browseCardAi') {
-        const navAiBtn = document.getElementById('navAiBtn');
-        if (navAiBtn) navAiBtn.click();
+        if (typeof window.openAiModal === 'function') {
+          window.openAiModal();
+        } else {
+          const aiModal = document.getElementById('aiModal');
+          if (aiModal) {
+            aiModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+          }
+        }
       } else if (card.id === 'browseCardReport') {
-        const headerReportBtn = document.getElementById('headerReportBtn');
-        if (headerReportBtn) headerReportBtn.click();
+        if (typeof openReportModal === 'function') {
+          openReportModal();
+        } else {
+          const reportModal = document.getElementById('reportModal');
+          if (reportModal) {
+            reportModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+          }
+        }
       } else if (card.id === 'browseCardDownload') {
         window.location.href = 'download.html';
       }
