@@ -1361,9 +1361,9 @@ function switchView(viewName) {
 
   const mobileDockBrowse = document.getElementById("mobileDockBrowse");
   if (mobileDockBrowse) {
-    if (viewName === 'series' || viewName === 'anime' || viewName === 'continue') {
+    if (viewName === 'movies' || viewName === 'series' || viewName === 'anime' || viewName === 'continue') {
       mobileDockBrowse.classList.add("active");
-    } else if (viewName === 'home' || viewName === 'movies' || viewName === 'watchlist') {
+    } else if (viewName === 'home' || viewName === 'watchlist') {
       mobileDockBrowse.classList.remove("active");
     }
   }
