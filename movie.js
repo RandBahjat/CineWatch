@@ -702,7 +702,9 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
     </div>
   ` : "";
 
-  const imgSrc = forcePoster ? (movie.poster || movie.backdrop) : (movie.backdrop || movie.poster);
+  const isMobileScreen = typeof window !== 'undefined' && window.innerWidth <= 768;
+  const usePoster = forcePoster || isMobileScreen;
+  const imgSrc = usePoster ? (movie.poster || movie.backdrop) : (movie.backdrop || movie.poster);
   // On mobile screen, always show poster instead of backdrop
   const sourceTag = `<source media="(max-width: 768px)" srcset="${movie.poster || movie.backdrop}">`;
 
@@ -1055,7 +1057,8 @@ function renderFilteredGrid(movieList, titleText) {
       </div>
     `;
   } else {
-    filteredGrid.innerHTML = movieList.map(m => createMovieCardHTML(m, null, false)).join("");
+    const isMobileFiltered = typeof window !== 'undefined' && window.innerWidth <= 768;
+    filteredGrid.innerHTML = movieList.map(m => createMovieCardHTML(m, null, isMobileFiltered)).join("");
     filteredGrid.querySelectorAll(".movie-card").forEach((card) => {
       card.onclick = () => openDetailsModal(card.dataset.id);
     });
@@ -1081,7 +1084,8 @@ function renderBrowseGrid(items, gridId, page) {
         <p>Try a different filter.</p>
       </div>`;
   } else {
-    grid.innerHTML = pageItems.map(m => createMovieCardHTML(m, null, false)).join("");
+    const isMobileGrid = typeof window !== 'undefined' && window.innerWidth <= 768;
+    grid.innerHTML = pageItems.map(m => createMovieCardHTML(m, null, isMobileGrid)).join("");
     grid.querySelectorAll(".movie-card").forEach((card) => {
       card.onclick = () => openDetailsModal(card.dataset.id);
     });

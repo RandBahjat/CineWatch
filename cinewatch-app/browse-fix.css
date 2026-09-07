@@ -248,7 +248,7 @@
   cursor: pointer !important;
 }
 
-/* 16:9 Landscape aspect ratio for backdrops */
+/* 16:9 Landscape aspect ratio for backdrops (Desktop) */
 #moviesGrid .card-poster-wrap,
 #seriesGrid .card-poster-wrap,
 #animeGrid .card-poster-wrap,
@@ -262,6 +262,17 @@
   background: #181818 !important;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45) !important;
   transition: box-shadow 0.3s ease !important;
+}
+
+/* Mobile Screen (max-width: 768px): Show vertical posters with 2:3 ratio instead of 16:9 backdrops */
+@media (max-width: 768px) {
+  #moviesGrid .card-poster-wrap,
+  #seriesGrid .card-poster-wrap,
+  #animeGrid .card-poster-wrap,
+  .browse-grid .card-poster-wrap {
+    aspect-ratio: 2 / 3 !important;
+    border-radius: 10px !important;
+  }
 }
 
 #moviesGrid .movie-card:hover .card-poster-wrap,
@@ -384,6 +395,13 @@
   .browse-grid {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 1rem 0.75rem !important;
+  }
+
+  #moviesGrid .card-poster-wrap,
+  #seriesGrid .card-poster-wrap,
+  #animeGrid .card-poster-wrap,
+  .browse-grid .card-poster-wrap {
+    aspect-ratio: 2 / 3 !important;
   }
 
   .browse-title {
