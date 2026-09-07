@@ -44,7 +44,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/4gyx49ibwQslyrwuUS1c58PJEEd.jpg",
     videoUrl: "1137844",
     trailerUrl: "https://youtu.be/om5Un9X720M?si=w2Q4Yb_O5B2js4Td",
-    overview: "High-powered London lawyer Maia Marten out on morning jog when mystery man hijack her diabetic son's insulin device. To save kid, Maia must sprint full-speed across London, obey crazy demands, and kill court witness before time run out.",
+    overview: "In 1987 Cold War time, American pilot crash land deep inside dangerous Soviet territory! To survive and get back home alive, pilot forced to team up with weird eccentric former KGB agent Nikolai Ustinov on wild buddy mission.",
     overviewKurdish:"مایا مارتن، پارێزەرێکی بەتوانای لۆندۆنە. لە کاتی ڕاکردنی بەیانیان، کەسێکی نادیار ڕاڵێو و دەسەڵات دەگرێت بەسەر ئامێری ئەنسۆلینی کوڕە شەکرەدارەکەی. بۆ ڕزگارکردنی ژیانی کوڕەکەی، پێویستە مایا بە خێرایی لەنێو شاری لۆندۆن ڕابکات، گوێڕایەڵی داواکارییە مەترسیدارەکان بێت و شایەتحاڵێکی دادگا بکوژێت پێش ئەوەی کات تەواو بێت.",
     director: "Kevin Macdonald",
     cast: ["Gal Gadot, Damian Lewis, Alfred Enoch, Rory Wilmot"],
