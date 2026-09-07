@@ -3396,6 +3396,28 @@ function bindEventListeners() {
             document.body.style.overflow = "hidden";
           }
         }
+      } else if (btn.id === "mobileDockLogin" || btn.id === "mobileDockWatchlist") {
+        closeBrowseDropdown();
+        if (state.user) {
+          const profileBadge = document.getElementById("profileBadgeToggle");
+          if (profileBadge) {
+            profileBadge.click();
+          } else {
+            const panel = document.getElementById("accountSidePanel");
+            const overlay = document.getElementById("accountPanelOverlay");
+            if (panel && overlay) {
+              panel.classList.add("open");
+              overlay.classList.add("active");
+              document.body.style.overflow = "hidden";
+            }
+          }
+        } else {
+          if (typeof openAuthModal === "function") {
+            openAuthModal();
+          } else if (typeof showAuth === "function") {
+            showAuth();
+          }
+        }
       }
     };
   });
