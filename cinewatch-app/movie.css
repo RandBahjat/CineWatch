@@ -4214,18 +4214,6 @@ body.rtl-layout .details-back-btn svg {
   .movies-grid, .browse-grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1.2rem;
-  }
-}
-
-/* Medium Tablets & Mobile Landscape (max-width: 768px) */
-@media (max-width: 768px) {
-  .navbar .brand-logo {
-    display: none !important; /* Hide logo from mobile top navbar */
-  }
-
-  .nav-container {
-    justify-content: space-between;
-    gap: 0.6rem;
     padding: 0 1rem;
   }
 
