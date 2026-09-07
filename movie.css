@@ -2267,6 +2267,7 @@ body.rtl-layout .modal-search-clear {
 /* Movie Cards */
 .movie-card {
   flex: 0 0 280px;
+  width: 100%;
   position: relative;
   background: transparent;
   cursor: pointer;
@@ -9160,6 +9161,7 @@ min-width: 0;
   font-weight: 700 !important;
   box-shadow: 0 4px 16px rgba(255, 59, 68, 0.45) !important;
 }
+
 
 
 
