@@ -3244,15 +3244,22 @@ function bindEventListeners() {
   // Browse Dropdown Controls & Dismissal
   const browseItem = document.getElementById("navBrowseItem");
   const browseTriggerBtn = document.getElementById("navBrowseTrigger");
+  const browseDropdown = document.getElementById("navBrowseDropdown");
 
   if (browseItem) {
+    browseItem.addEventListener("mouseenter", () => {
+      if (browseDropdown) browseDropdown.classList.remove("is-hidden");
+      browseItem.classList.remove("is-closed");
+    });
     browseItem.addEventListener("mouseleave", () => {
+      if (browseDropdown) browseDropdown.classList.remove("is-hidden");
       browseItem.classList.remove("is-closed");
       browseItem.classList.remove("is-open");
     });
     if (browseTriggerBtn) {
       browseTriggerBtn.addEventListener("click", (e) => {
         e.stopPropagation();
+        if (browseDropdown) browseDropdown.classList.remove("is-hidden");
         if (browseItem.classList.contains("is-closed")) {
           browseItem.classList.remove("is-closed");
           browseItem.classList.add("is-open");
@@ -3263,6 +3270,7 @@ function bindEventListeners() {
     }
     document.addEventListener("click", (e) => {
       if (!browseItem.contains(e.target)) {
+        if (browseDropdown) browseDropdown.classList.add("is-hidden");
         browseItem.classList.add("is-closed");
         browseItem.classList.remove("is-open");
       }
@@ -3273,6 +3281,7 @@ function bindEventListeners() {
   document.querySelectorAll(".nav-dropdown-card").forEach((card) => {
     card.onclick = (e) => {
       // Immediately dismiss the dropdown when any card is clicked
+      if (browseDropdown) browseDropdown.classList.add("is-hidden");
       if (browseItem) {
         browseItem.classList.add("is-closed");
         browseItem.classList.remove("is-open");
