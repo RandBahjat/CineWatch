@@ -11,8 +11,8 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260908_227">
-    <link rel="stylesheet" href="browse-fix.css?v=20260908_227">
+    <link rel="stylesheet" href="movie.css?v=20260908_225">
+    <link rel="stylesheet" href="browse-fix.css?v=20260908_225">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -28,10 +28,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_6153" defer></script>
-    <script src="series-data.js?v=20260818_6153" defer></script>
-    <script src="anime-data.js?v=20260818_6153" defer></script>
-    <script src="movie.js?v=20260908_227" defer></script>
+    <script src="movies-data.js?v=20260818_6151" defer></script>
+    <script src="series-data.js?v=20260818_6151" defer></script>
+    <script src="anime-data.js?v=20260818_6151" defer></script>
+    <script src="movie.js?v=20260908_225" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1894,6 +1894,14 @@
             }
 
             // Setup Custom Dropdown
+            
+            const dropdown = document.getElementById('customLangDropdown');
+            const dropdownBtn = document.getElementById('langDropdownBtn');
+            const selectedText = document.getElementById('langSelectedText');
+            const currentFlagEl = document.getElementById('langCurrentFlag');
+            const options = document.querySelectorAll('.lang-option');
+
+            const FLAG_US = `<svg class="lang-flag" viewBox="0 0 64 48" width="22" height="16" aria-hidden="true"><rect width="64" height="48" fill="#B22234"/><path d="M0 3.7h64M0 11.1h64M0 18.5h64M0 25.8h64M0 33.2h64M0 40.6h64" stroke="#FFF" stroke-width="3.7"/><rect width="26" height="26" fill="#3C3B6E"/><circle cx="5" cy="5" r="1.2" fill="#FFF"/><circle cx="13" cy="5" r="1.2" fill="#FFF"/><circle cx="21" cy="5" r="1.2" fill="#FFF"/><circle cx="9" cy="9" r="1.2" fill="#FFF"/><circle cx="17" cy="9" r="1.2" fill="#FFF"/><circle cx="5" cy="13" r="1.2" fill="#FFF"/><circle cx="13" cy="13" r="1.2" fill="#FFF"/><circle cx="21" cy="13" r="1.2" fill="#FFF"/><circle cx="9" cy="17" r="1.2" fill="#FFF"/><circle cx="17" cy="17" r="1.2" fill="#FFF"/><circle cx="5" cy="21" r="1.2" fill="#FFF"/><circle cx="13" cy="21" r="1.2" fill="#FFF"/><circle cx="21" cy="21" r="1.2" fill="#FFF"/></svg>`;
             const FLAG_CKB = `<svg class="lang-flag" viewBox="0 0 64 48" width="22" height="16" aria-hidden="true"><rect width="64" height="16" fill="#E4002B"/><rect y="16" width="64" height="16" fill="#FFFFFF"/><rect y="32" width="64" height="16" fill="#009639"/><circle cx="32" cy="24" r="4.2" fill="#FFC72C"/><polygon points="32.0,16.0 32.7,19.6 34.4,16.4 34.0,19.9 36.5,17.4 35.1,20.7 38.3,19.0 35.9,21.8 39.4,21.1 36.4,23.0 40.0,23.4 36.5,24.3 39.8,25.8 36.2,25.6 38.9,28.0 35.5,26.8 37.4,29.9 34.5,27.7 35.5,31.2 33.3,28.3 33.2,31.9 32.0,28.5 30.8,31.9 30.7,28.3 28.5,31.2 29.5,27.7 26.6,29.9 28.5,26.8 25.1,28.0 27.8,25.6 24.2,25.8 27.5,24.3 24.0,23.4 27.6,23.0 24.6,21.1 28.1,21.8 25.7,19.0 28.9,20.7 27.5,17.4 30.0,19.9 29.6,16.4 31.3,19.6" fill="#FFC72C"/></svg>`;
 
             function updateSelectedLangLabel(lang) {
