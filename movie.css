@@ -2486,7 +2486,7 @@ body.rtl-layout .modal-search-clear {
 /* Movies Grid View (For Search / Watchlist) */
 .movies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.6rem;
 }
 
@@ -5937,17 +5937,12 @@ body.rtl-layout .details-back-btn svg {
 /* ---- Browse Grid ---- */
 .browse-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.6rem 1.2rem;
   margin-bottom: 2.5rem;
 }
 
-@media (max-width: 768px) {
-  .browse-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem 0.8rem;
-  }
-}
+
 
 .browse-card {
   position: relative;
@@ -6248,19 +6243,9 @@ body.rtl-layout .details-back-btn svg {
 }
 
 /* ---- Responsive Breakpoints ---- */
-@media (min-width: 769px) {
-  .browse-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.8rem;
-  }
-}
 
-@media (max-width: 768px) {
-  .browse-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-}
+
+
 
 /* Portrait mobile (<480px): 2 columns with large posters */
 @media (max-width: 480px) {
@@ -9188,4 +9173,5 @@ min-width: 0;
   font-weight: 700 !important;
   box-shadow: 0 4px 16px rgba(255, 59, 68, 0.45) !important;
 }
+
 
