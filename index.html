@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=17887808_146189">
+    <link rel="stylesheet" href="movie.css?v=17887808_146190">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -27,10 +27,49 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_5994" defer></script>
-    <script src="series-data.js?v=20260818_5994" defer></script>
-    <script src="anime-data.js?v=20260818_5994" defer></script>
-    <script src="movie.js?v=17887808_146190" defer></script>
+    <script src="movies-data.js?v=20260818_5995" defer></script>
+    <script src="series-data.js?v=20260818_5995" defer></script>
+    <script src="anime-data.js?v=20260818_5995" defer></script>
+    <script src="movie.js?v=17887808_146191" defer></script>
+    <script src="ai-assistant.js?v=v11" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSJ9WDT6RX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LSJ9WDT6RX');
+    </script>
+    <link rel="stylesheet" href="movie.css?v=17887808_146190">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <!-- Google Fonts: Inter & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/artplayer/dist/artplayer.js"></script>
+    <!-- Supabase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="api.js?v=v6" defer></script>
+    <script src="movies-data.js?v=20260818_5995" defer></script>
+    <script src="series-data.js?v=20260818_5995" defer></script>
+    <script src="anime-data.js?v=20260818_5995" defer></script>
+    <script src="movie.js?v=17887808_146191" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -43,11 +82,20 @@
       <defs>
         <linearGradient id="redGradient" x1="0%" y1="0%" x2="0%" y2="100%">
           <stop offset="0%" stop-color="#ff6b6b"/>
-          <stop offset="100%" stop-color="#e53935"/>
+          <stop offset="100%" stop-color="#e53935"/>        </linearGradient>
+        <linearGradient id="greenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#7ee08a"/>
+          <stop offset="100%" stop-color="#2e9e44"/>
         </linearGradient>
-        <linearGradient id="yellowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stop-color="#ffe066"/>
-          <stop offset="100%" stop-color="#ffb300"/>
+      </defs>
+    </svg>
+
+    <!-- Loading Splash Screen -->
+    <div class="app-loader" id="appLoader">
+        <div class="loader-content">
+            <div class="loader-logo notranslate" translate="no"><ion-icon name="ticket" style="color: var(--primary); font-size: 1.3em; vertical-align: middle;"></ion-icon> Cine<span>Watch</span></div>
+            <div class="loader-spinner">
+                <div class="spinner-ring"></div>
                 <div class="spinner-ring"></div>
                 <div class="spinner-ring"></div>
             </div>
