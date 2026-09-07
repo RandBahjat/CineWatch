@@ -5463,7 +5463,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 8,
-            title: ' This Mad Circus'
+            title: 'Bring Me the Head'
           },
         ]
       }
