@@ -6248,46 +6248,17 @@ body.rtl-layout .details-back-btn svg {
 }
 
 /* ---- Responsive Breakpoints ---- */
-
-/* Extra Large screens (≥1600px): 5 columns */
-@media (min-width: 1600px) {
+@media (min-width: 769px) {
   .browse-grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.8rem;
   }
 }
 
-/* Normal desktops (1200px - 1600px): 4 columns (default) */
-@media (max-width: 1200px) {
-  .browse-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-}
-
-/* Tablets (768px - 900px): 3 columns */
-@media (max-width: 850px) {
-  .browse-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem;
-  }
-  .browse-title {
-    font-size: 1.7rem;
-  }
-}
-
-/* Mobile landscape (480px - 768px): 2 columns */
 @media (max-width: 768px) {
   .browse-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-  }
-  .browse-filter-bar {
-    gap: 0.4rem;
-  }
-  .browse-filter-btn {
-    padding: 0.38rem 0.85rem;
-    font-size: 0.8rem;
   }
 }
 
