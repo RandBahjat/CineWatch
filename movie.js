@@ -1314,10 +1314,11 @@ function switchView(viewName) {
     else link.classList.remove("active");
   });
 
-  // Handle Browse Dropdown active states
+  // Handle Browse Dropdown active states & cards
   const browseTrigger = document.getElementById("navBrowseTrigger");
-  const browseDropItems = document.querySelectorAll(".browse-drop-item");
-  const isBrowseSubView = (viewName === 'movies' || viewName === 'series' || viewName === 'anime');
+  const browseCards = document.querySelectorAll(".browse-card");
+  const homeBtn = document.getElementById("navHomeBtn");
+  const isBrowseSubView = (viewName === 'movies' || viewName === 'series' || viewName === 'anime' || viewName === 'continue' || viewName === 'watchlist');
 
   if (browseTrigger) {
     if (isBrowseSubView) {
@@ -1327,11 +1328,19 @@ function switchView(viewName) {
     }
   }
 
-  browseDropItems.forEach((dropItem) => {
-    if (dropItem.dataset.view === viewName) {
-      dropItem.classList.add("active");
+  if (homeBtn) {
+    if (viewName === 'home') {
+      homeBtn.classList.add("active");
     } else {
-      dropItem.classList.remove("active");
+      homeBtn.classList.remove("active");
+    }
+  }
+
+  browseCards.forEach((card) => {
+    if (card.dataset.view === viewName) {
+      card.classList.add("active");
+    } else {
+      card.classList.remove("active");
     }
   });
 
