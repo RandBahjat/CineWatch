@@ -5170,12 +5170,7 @@ document.getElementById("playerPrevEpBtn")?.addEventListener("click", () => navi
     if (!container) return;
 
     let glider = container.querySelector(".nav-glider");
-    if (!glider) {
-      glider = document.createElement("div");
-      glider.className = "nav-glider";
-      glider.id = "navGlider";
-      container.prepend(glider);
-    }
+    if (!glider) return;
 
     const links = Array.from(container.querySelectorAll(".nav-link"));
 
