@@ -1316,7 +1316,7 @@ function switchView(viewName) {
 
   // Handle Browse Dropdown active states & cards
   const browseTrigger = document.getElementById("navBrowseTrigger");
-  const browseCards = document.querySelectorAll(".browse-card");
+  const browseCards = document.querySelectorAll(".nav-dropdown-card");
   const homeBtn = document.getElementById("navHomeBtn");
   const isBrowseSubView = (viewName === 'movies' || viewName === 'series' || viewName === 'anime' || viewName === 'continue' || viewName === 'watchlist');
 
@@ -3230,8 +3230,8 @@ function bindEventListeners() {
     };
   });
 
-  // Browse Dropdown Cards (.browse-card)
-  document.querySelectorAll(".browse-card").forEach((card) => {
+  // Browse Dropdown Cards (.nav-dropdown-card)
+  document.querySelectorAll(".nav-dropdown-card").forEach((card) => {
     card.onclick = (e) => {
       const targetView = card.dataset.view;
       if (targetView) {
@@ -3398,7 +3398,7 @@ function bindEventListeners() {
     }
 
     // Entire Movie Card Click -> Details Modal (handles both carousel & browse cards)
-    const card = e.target.closest(".movie-card") || e.target.closest(".browse-card");
+    const card = e.target.closest(".movie-card") || e.target.closest(".nav-dropdown-card");
     if (card) {
       const movieId = card.dataset.id;
 

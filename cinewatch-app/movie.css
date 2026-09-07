@@ -596,7 +596,7 @@ select {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  width: 320px;
+  width: 340px;
   padding: 14px 16px 16px 16px;
   background: rgba(14, 18, 30, 0.94);
   backdrop-filter: blur(36px) saturate(210%);
@@ -665,41 +665,43 @@ select {
   text-transform: uppercase;
 }
 
-/* Grid Layouts */
-.browse-grid {
-  display: grid;
-  gap: 8px;
+/* Custom Nav Dropdown Grid (No clash with page browse-grid) */
+.nav-dropdown-grid {
+  display: grid !important;
+  gap: 8px !important;
 }
 
-.browse-grid-3 {
-  grid-template-columns: repeat(3, 1fr);
+.nav-grid-3 {
+  grid-template-columns: repeat(3, 1fr) !important;
 }
 
-.browse-grid-2 {
-  grid-template-columns: repeat(2, 1fr);
+.nav-grid-2 {
+  grid-template-columns: repeat(2, 1fr) !important;
 }
 
 /* Individual Card (Rounded Rectangle Tile) */
-.browse-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 12px 6px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.85);
-  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
-  cursor: pointer;
+.nav-dropdown-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 12px 6px !important;
+  min-height: 68px !important;
+  border-radius: 14px !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  text-decoration: none !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
 }
 
-.browse-card-icon {
-  font-size: 1.5rem;
+.nav-dropdown-icon {
+  font-size: 1.45rem;
   color: #ff3b44;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -711,31 +713,31 @@ select {
   stroke-width: 5;
 }
 
-.browse-card-label {
+.nav-dropdown-label {
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 600;
   line-height: 1.2;
   color: #ffffff;
 }
 
-.browse-card:hover {
-  background: rgba(255, 59, 68, 0.15);
-  border-color: rgba(255, 59, 68, 0.45);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(229, 9, 20, 0.25);
-  color: #ffffff;
+.nav-dropdown-card:hover {
+  background: rgba(255, 59, 68, 0.15) !important;
+  border-color: rgba(255, 59, 68, 0.45) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(229, 9, 20, 0.25) !important;
+  color: #ffffff !important;
 }
 
-.browse-card:hover .browse-card-icon {
+.nav-dropdown-card:hover .nav-dropdown-icon {
   transform: scale(1.15);
 }
 
-.browse-card.active {
-  background: rgba(255, 59, 68, 0.22);
-  border-color: #ff3b44;
-  box-shadow: 0 0 14px rgba(229, 9, 20, 0.35);
-  color: #ffffff;
+.nav-dropdown-card.active {
+  background: rgba(255, 59, 68, 0.22) !important;
+  border-color: #ff3b44 !important;
+  box-shadow: 0 0 14px rgba(229, 9, 20, 0.35) !important;
+  color: #ffffff !important;
 }
 
 /* --- Search Lens Button --- */
@@ -7857,7 +7859,7 @@ body {
 .ai-blob1 {
   top: -100px;
   right: -50px;
-  width: 320px;
+  width: 340px;
   height: 320px;
   background: linear-gradient(135deg, #00e5ff, #8a2be2);
   animation: ai-blob-float 10s ease-in-out infinite alternate;
