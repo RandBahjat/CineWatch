@@ -5401,7 +5401,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 2,
-            title: 'Infected'
+            title: 'Tackle Tommy Woo Woo'
           },
           {
             episode: 3,
