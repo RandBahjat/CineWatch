@@ -1314,6 +1314,13 @@ function switchView(viewName) {
     else link.classList.remove("active");
   });
 
+  // Dismiss Browse dropdown upon switching view
+  const navBrowseItem = document.getElementById("navBrowseItem");
+  if (navBrowseItem) {
+    navBrowseItem.classList.add("is-closed");
+    navBrowseItem.classList.remove("is-open");
+  }
+
   // Handle Browse Dropdown active states & cards
   const browseTrigger = document.getElementById("navBrowseTrigger");
   const browseCards = document.querySelectorAll(".nav-dropdown-card");
