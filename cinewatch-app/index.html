@@ -1630,32 +1630,6 @@
                 document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
                 document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + window.location.hostname;
             } else {
-                const navBrowseText = document.getElementById('navBrowseText');
-                if (navBrowseText) navBrowseText.textContent = 'Browse';
-                const browseHeaderTitle = document.getElementById('browseHeaderTitle');
-                if (browseHeaderTitle) browseHeaderTitle.textContent = 'Browse';
-                const browseSecContent = document.getElementById('browseSecContent');
-                if (browseSecContent) browseSecContent.textContent = 'CONTENT';
-                const browseSecPersonal = document.getElementById('browseSecPersonal');
-                if (browseSecPersonal) browseSecPersonal.textContent = 'PERSONAL';
-                const browseSecMore = document.getElementById('browseSecMore');
-                if (browseSecMore) browseSecMore.textContent = 'MORE';
-                const browseLabelMovies = document.getElementById('browseLabelMovies');
-                if (browseLabelMovies) browseLabelMovies.textContent = 'Movies';
-                const browseLabelSeries = document.getElementById('browseLabelSeries');
-                if (browseLabelSeries) browseLabelSeries.textContent = 'Series';
-                const browseLabelAnime = document.getElementById('browseLabelAnime');
-                if (browseLabelAnime) browseLabelAnime.textContent = 'Anime';
-                const browseLabelContinue = document.getElementById('browseLabelContinue');
-                if (browseLabelContinue) browseLabelContinue.textContent = 'Continue';
-                const browseLabelWatchlist = document.getElementById('browseLabelWatchlist');
-                if (browseLabelWatchlist) browseLabelWatchlist.textContent = 'Watchlist';
-                const browseLabelDownload = document.getElementById('browseLabelDownload');
-                if (browseLabelDownload) browseLabelDownload.textContent = 'Download';
-                const browseLabelAi = document.getElementById('browseLabelAi');
-                if (browseLabelAi) browseLabelAi.textContent = 'Ask AI';
-                const browseLabelReport = document.getElementById('browseLabelReport');
-                if (browseLabelReport) browseLabelReport.textContent = 'Report';
                 document.cookie = "googtrans=/en/" + langCode + "; path=/;";
                 document.cookie = "googtrans=/en/" + langCode + "; path=/; domain=" + window.location.hostname;
             }
@@ -1678,32 +1652,6 @@
             // RTL handling for Arabic and Sorani
             if (currentLang === 'ar') currentLang = 'en';
             if (currentLang === 'ckb') {
-                const navBrowseText = document.getElementById('navBrowseText');
-                if (navBrowseText) navBrowseText.textContent = 'گەڕان';
-                const browseHeaderTitle = document.getElementById('browseHeaderTitle');
-                if (browseHeaderTitle) browseHeaderTitle.textContent = 'گەڕان';
-                const browseSecContent = document.getElementById('browseSecContent');
-                if (browseSecContent) browseSecContent.textContent = 'ناوەڕۆک';
-                const browseSecPersonal = document.getElementById('browseSecPersonal');
-                if (browseSecPersonal) browseSecPersonal.textContent = 'تایبەت';
-                const browseSecMore = document.getElementById('browseSecMore');
-                if (browseSecMore) browseSecMore.textContent = 'زیاتر';
-                const browseLabelMovies = document.getElementById('browseLabelMovies');
-                if (browseLabelMovies) browseLabelMovies.textContent = 'فیلمەکان';
-                const browseLabelSeries = document.getElementById('browseLabelSeries');
-                if (browseLabelSeries) browseLabelSeries.textContent = 'زنجیرەکان';
-                const browseLabelAnime = document.getElementById('browseLabelAnime');
-                if (browseLabelAnime) browseLabelAnime.textContent = 'ئەنیمی';
-                const browseLabelContinue = document.getElementById('browseLabelContinue');
-                if (browseLabelContinue) browseLabelContinue.textContent = 'بەردەوامبوون';
-                const browseLabelWatchlist = document.getElementById('browseLabelWatchlist');
-                if (browseLabelWatchlist) browseLabelWatchlist.textContent = 'دڵخوازەکان';
-                const browseLabelDownload = document.getElementById('browseLabelDownload');
-                if (browseLabelDownload) browseLabelDownload.textContent = 'داگرتن';
-                const browseLabelAi = document.getElementById('browseLabelAi');
-                if (browseLabelAi) browseLabelAi.textContent = 'زیرەکی دەستکرد';
-                const browseLabelReport = document.getElementById('browseLabelReport');
-                if (browseLabelReport) browseLabelReport.textContent = 'ڕاپۆرت';
                 document.body.style.direction = 'rtl';
                 document.body.classList.add('rtl-layout');
             } else {
@@ -1810,6 +1758,33 @@
             };
 
             if (currentLang === 'ckb') {
+                const navBrowseText = document.getElementById('navBrowseText');
+                if (navBrowseText) navBrowseText.textContent = 'گەڕان';
+                const browseHeaderTitle = document.getElementById('browseHeaderTitle');
+                if (browseHeaderTitle) browseHeaderTitle.textContent = 'گەڕان';
+                const browseSecContent = document.getElementById('browseSecContent');
+                if (browseSecContent) browseSecContent.textContent = 'ناوەڕۆک';
+                const browseSecPersonal = document.getElementById('browseSecPersonal');
+                if (browseSecPersonal) browseSecPersonal.textContent = 'تایبەت';
+                const browseSecMore = document.getElementById('browseSecMore');
+                if (browseSecMore) browseSecMore.textContent = 'زیاتر';
+                const browseLabelMovies = document.getElementById('browseLabelMovies');
+                if (browseLabelMovies) browseLabelMovies.textContent = 'فیلمەکان';
+                const browseLabelSeries = document.getElementById('browseLabelSeries');
+                if (browseLabelSeries) browseLabelSeries.textContent = 'زنجیرەکان';
+                const browseLabelAnime = document.getElementById('browseLabelAnime');
+                if (browseLabelAnime) browseLabelAnime.textContent = 'ئەنیمی';
+                const browseLabelContinue = document.getElementById('browseLabelContinue');
+                if (browseLabelContinue) browseLabelContinue.textContent = 'بەردەوامبوون';
+                const browseLabelWatchlist = document.getElementById('browseLabelWatchlist');
+                if (browseLabelWatchlist) browseLabelWatchlist.textContent = 'دڵخوازەکان';
+                const browseLabelDownload = document.getElementById('browseLabelDownload');
+                if (browseLabelDownload) browseLabelDownload.textContent = 'داگرتن';
+                const browseLabelAi = document.getElementById('browseLabelAi');
+                if (browseLabelAi) browseLabelAi.textContent = 'زیرەکی دەستکرد';
+                const browseLabelReport = document.getElementById('browseLabelReport');
+                if (browseLabelReport) browseLabelReport.textContent = 'ڕاپۆرت';
+
                 if (loginPwLabel) loginPwLabel.textContent = 'وشەی نهێنی';
                 if (signupPwLabel) signupPwLabel.textContent = 'وشەی نهێنی';
                 if (loginPwInput) loginPwInput.placeholder = '••••••••';
@@ -1881,6 +1856,7 @@
                 if (browseLabelAi) browseLabelAi.textContent = 'الذكاء الاصطناعي';
                 const browseLabelReport = document.getElementById('browseLabelReport');
                 if (browseLabelReport) browseLabelReport.textContent = 'إبلاغ';
+
                 if (loginPwLabel) loginPwLabel.textContent = 'كلمة المرور';
                 if (signupPwLabel) signupPwLabel.textContent = 'كلمة المرور';
                 if (loginPwInput) loginPwInput.placeholder = '••••••••';
@@ -1924,6 +1900,33 @@
                 const commentsTitleHeading = document.getElementById('commentsTitleHeading');
                 if (commentsTitleHeading) commentsTitleHeading.textContent = 'التعليقات';
             } else {
+                const navBrowseText = document.getElementById('navBrowseText');
+                if (navBrowseText) navBrowseText.textContent = 'Browse';
+                const browseHeaderTitle = document.getElementById('browseHeaderTitle');
+                if (browseHeaderTitle) browseHeaderTitle.textContent = 'Browse';
+                const browseSecContent = document.getElementById('browseSecContent');
+                if (browseSecContent) browseSecContent.textContent = 'CONTENT';
+                const browseSecPersonal = document.getElementById('browseSecPersonal');
+                if (browseSecPersonal) browseSecPersonal.textContent = 'PERSONAL';
+                const browseSecMore = document.getElementById('browseSecMore');
+                if (browseSecMore) browseSecMore.textContent = 'MORE';
+                const browseLabelMovies = document.getElementById('browseLabelMovies');
+                if (browseLabelMovies) browseLabelMovies.textContent = 'Movies';
+                const browseLabelSeries = document.getElementById('browseLabelSeries');
+                if (browseLabelSeries) browseLabelSeries.textContent = 'Series';
+                const browseLabelAnime = document.getElementById('browseLabelAnime');
+                if (browseLabelAnime) browseLabelAnime.textContent = 'Anime';
+                const browseLabelContinue = document.getElementById('browseLabelContinue');
+                if (browseLabelContinue) browseLabelContinue.textContent = 'Continue';
+                const browseLabelWatchlist = document.getElementById('browseLabelWatchlist');
+                if (browseLabelWatchlist) browseLabelWatchlist.textContent = 'Watchlist';
+                const browseLabelDownload = document.getElementById('browseLabelDownload');
+                if (browseLabelDownload) browseLabelDownload.textContent = 'Download';
+                const browseLabelAi = document.getElementById('browseLabelAi');
+                if (browseLabelAi) browseLabelAi.textContent = 'Ask AI';
+                const browseLabelReport = document.getElementById('browseLabelReport');
+                if (browseLabelReport) browseLabelReport.textContent = 'Report';
+
                 if (loginPwLabel) loginPwLabel.textContent = 'Password';
                 if (signupPwLabel) signupPwLabel.textContent = 'Password';
                 if (loginPwInput) loginPwInput.placeholder = '••••••••';
