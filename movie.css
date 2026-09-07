@@ -1185,7 +1185,7 @@ body.rtl-layout .modal-search-icon {
 /* Mobile Menu Styling - Replaced by Floating Mobile Bottom Dock */
 .mobile-menu-btn,
 .mobile-menu-overlay {
-  display: none !important;
+  display: none;
 }
 
 /* ==========================================================================
