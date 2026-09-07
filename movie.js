@@ -1313,6 +1313,28 @@ function switchView(viewName) {
     if (link.dataset.view === viewName) link.classList.add("active");
     else link.classList.remove("active");
   });
+
+  // Handle Browse Dropdown active states
+  const browseTrigger = document.getElementById("navBrowseTrigger");
+  const browseDropItems = document.querySelectorAll(".browse-drop-item");
+  const isBrowseSubView = (viewName === 'movies' || viewName === 'series' || viewName === 'anime');
+
+  if (browseTrigger) {
+    if (isBrowseSubView) {
+      browseTrigger.classList.add("active");
+    } else {
+      browseTrigger.classList.remove("active");
+    }
+  }
+
+  browseDropItems.forEach((dropItem) => {
+    if (dropItem.dataset.view === viewName) {
+      dropItem.classList.add("active");
+    } else {
+      dropItem.classList.remove("active");
+    }
+  });
+
   if (window.updateNavGlider) window.updateNavGlider(true);
   window.dispatchEvent(new Event("scroll"));
 
