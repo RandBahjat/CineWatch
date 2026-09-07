@@ -1313,6 +1313,28 @@ function switchView(viewName) {
     if (link.dataset.view === viewName) link.classList.add("active");
     else link.classList.remove("active");
   });
+
+  // Handle Browse Dropdown active states
+  const browseTrigger = document.getElementById("navBrowseTrigger");
+  const browseDropItems = document.querySelectorAll(".browse-drop-item");
+  const isBrowseSubView = (viewName === 'movies' || viewName === 'series' || viewName === 'anime');
+
+  if (browseTrigger) {
+    if (isBrowseSubView) {
+      browseTrigger.classList.add("active");
+    } else {
+      browseTrigger.classList.remove("active");
+    }
+  }
+
+  browseDropItems.forEach((dropItem) => {
+    if (dropItem.dataset.view === viewName) {
+      dropItem.classList.add("active");
+    } else {
+      dropItem.classList.remove("active");
+    }
+  });
+
   if (window.updateNavGlider) window.updateNavGlider(true);
   window.dispatchEvent(new Event("scroll"));
 
@@ -3188,9 +3210,25 @@ function bindEventListeners() {
   document.querySelectorAll(".nav-link").forEach((link) => {
     link.onclick = (e) => {
       e.preventDefault();
+      if (link.dataset.view === "browse") {
+        // If clicking browse directly, switch to movies or toggle dropdown
+        switchView("movies");
+        return;
+      }
       const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
       if (mobileMenuOverlay) mobileMenuOverlay.classList.remove("active");
       switchView(link.dataset.view);
+    };
+  });
+
+  // Browse Dropdown Items
+  document.querySelectorAll(".browse-drop-item").forEach((item) => {
+    item.onclick = (e) => {
+      e.preventDefault();
+      const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+      if (mobileMenuOverlay) mobileMenuOverlay.classList.remove("active");
+      const targetView = item.dataset.view;
+      if (targetView) switchView(targetView);
     };
   });
 
@@ -5132,12 +5170,7 @@ document.getElementById("playerPrevEpBtn")?.addEventListener("click", () => navi
     if (!container) return;
 
     let glider = container.querySelector(".nav-glider");
-    if (!glider) {
-      glider = document.createElement("div");
-      glider.className = "nav-glider";
-      glider.id = "navGlider";
-      container.prepend(glider);
-    }
+    if (!glider) return;
 
     const links = Array.from(container.querySelectorAll(".nav-link"));
 
