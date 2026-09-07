@@ -3210,9 +3210,25 @@ function bindEventListeners() {
   document.querySelectorAll(".nav-link").forEach((link) => {
     link.onclick = (e) => {
       e.preventDefault();
+      if (link.dataset.view === "browse") {
+        // If clicking browse directly, switch to movies or toggle dropdown
+        switchView("movies");
+        return;
+      }
       const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
       if (mobileMenuOverlay) mobileMenuOverlay.classList.remove("active");
       switchView(link.dataset.view);
+    };
+  });
+
+  // Browse Dropdown Items
+  document.querySelectorAll(".browse-drop-item").forEach((item) => {
+    item.onclick = (e) => {
+      e.preventDefault();
+      const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+      if (mobileMenuOverlay) mobileMenuOverlay.classList.remove("active");
+      const targetView = item.dataset.view;
+      if (targetView) switchView(targetView);
     };
   });
 
