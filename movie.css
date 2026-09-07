@@ -572,18 +572,17 @@ select {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.nav-browse-item:hover .nav-browse-pill-btn,
+.nav-browse-pill-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
 .nav-browse-item.active .nav-browse-pill-btn,
 .nav-browse-pill-btn.active {
   background: rgba(229, 9, 20, 0.18);
   border-color: rgba(229, 9, 20, 0.5);
   color: #ffffff;
   box-shadow: 0 0 16px rgba(229, 9, 20, 0.35);
-}
-
-.nav-browse-item:hover .browse-chevron {
-  transform: rotate(180deg);
-  color: #ffffff;
 }
 
 /* --- Cineby-Style Mega Dropdown Card --- */
