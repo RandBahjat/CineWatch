@@ -1247,9 +1247,47 @@ body.rtl-layout .modal-search-icon {
   display: block;
 }
 
+/* Mobile Browse Close & Backdrop */
+.browse-mobile-close {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.browse-mobile-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.mobile-browse-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 8, 18, 0.72);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1250;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.28s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.28s;
+  pointer-events: none;
+}
+
 @media (max-width: 900px) {
   .mobile-bottom-dock {
     display: flex;
+    bottom: calc(env(safe-area-inset-bottom, 0px) + 16px);
   }
 
   .mobile-menu-btn {
@@ -1258,6 +1296,16 @@ body.rtl-layout .modal-search-icon {
 
   body {
     padding-bottom: 90px !important;
+  }
+
+  .mobile-browse-backdrop {
+    display: block;
+  }
+
+  body.mobile-browse-open .mobile-browse-backdrop {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .nav-browse-item {
@@ -1272,10 +1320,18 @@ body.rtl-layout .modal-search-icon {
     display: none !important;
   }
 
+  body.mobile-browse-open .navbar {
+    z-index: 1350 !important;
+  }
+
+  body.mobile-browse-open .mobile-bottom-dock {
+    z-index: 1400 !important;
+  }
+
   body.mobile-browse-open .nav-browse-dropdown.cineby-dropdown {
     position: fixed !important;
     top: auto !important;
-    bottom: 84px !important;
+    bottom: calc(env(safe-area-inset-bottom, 0px) + 80px) !important;
     left: 50% !important;
     right: auto !important;
     transform: translate(-50%, 0) scale(1) !important;
@@ -1283,10 +1339,67 @@ body.rtl-layout .modal-search-icon {
     visibility: visible !important;
     pointer-events: auto !important;
     width: calc(100vw - 32px) !important;
-    max-width: 350px !important;
-    border-radius: 24px !important;
-    z-index: 1300 !important;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85), inset 0 1px 1px rgba(255, 255, 255, 0.25) !important;
+    max-width: 340px !important;
+    max-height: calc(100dvh - 160px) !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    border-radius: 22px !important;
+    padding: 12px 14px 14px 14px !important;
+    z-index: 1380 !important;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.9), inset 0 1px 1px rgba(255, 255, 255, 0.25) !important;
+    animation: mobileBrowseSlideUp 0.28s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+
+  @keyframes mobileBrowseSlideUp {
+    from {
+      opacity: 0;
+      transform: translate(-50%, 16px) scale(0.96);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, 0) scale(1);
+    }
+  }
+
+  .browse-dropdown-header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding-bottom: 6px !important;
+    margin-bottom: 8px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+
+  .browse-mobile-close {
+    display: flex !important;
+  }
+
+  .nav-browse-dropdown.cineby-dropdown .browse-section-label {
+    font-size: 0.68rem !important;
+    margin-bottom: 4px !important;
+    letter-spacing: 0.06em !important;
+  }
+
+  .nav-browse-dropdown.cineby-dropdown .browse-dropdown-section {
+    margin-bottom: 7px !important;
+  }
+
+  .nav-browse-dropdown.cineby-dropdown .browse-dropdown-section:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .nav-browse-dropdown.cineby-dropdown .nav-dropdown-card {
+    padding: 7px 4px !important;
+    gap: 4px !important;
+    border-radius: 10px !important;
+  }
+
+  .nav-browse-dropdown.cineby-dropdown .nav-dropdown-icon {
+    font-size: 1.15rem !important;
+  }
+
+  .nav-browse-dropdown.cineby-dropdown .nav-dropdown-label {
+    font-size: 0.74rem !important;
   }
 }
 
