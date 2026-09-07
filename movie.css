@@ -9192,11 +9192,14 @@ min-width: 0;
    BROWSE PAGE FINAL OVERRIDES — CINEBY STYLE
    ============================================================ */
 
-/* Grid: 4-column responsive, portrait poster cards */
-.browse-grid {
+/* Grid: portrait poster cards, ~5-6 per row */
+.browse-grid,
+#moviesGrid,
+#seriesGrid,
+#animeGrid {
   display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(165px, 1fr)) !important;
-  gap: 1.2rem 0.9rem !important;
+  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)) !important;
+  gap: 1rem 0.8rem !important;
   margin-bottom: 2.5rem !important;
 }
 
