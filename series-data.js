@@ -5382,7 +5382,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/dj0nrEVWe7KIUTT4ioAfHQyrTwN.jpg',
     videoUrl: '236235',
     trailerUrl: "",
-    overview: 'Eddie Horniman inherit aristocratic estate, discover it sit on massive weed empire run by American crime family. Must navigate dangerous underworld, decide keep clean hand or embrace criminal life.',
+    overview: 'Fancy rich guy Eddie inherits big family estate after father die. But surprise! Massive underground cannabis weed empire hiding right under castle ground! Dangerous gang lords own farm. Eddie must play dirty crime game with bad guys to keep family safe and protect mansion.',
     director: 'Craig Mazin, Neil Druckmann',
     cast: [
       'Pedro Pascal, Bella Ramsey, Anna Torv, Gabriel Luna, Storm Reid, Nick Offerman, Murray Bartlett, Isabela Merced, Young Mazino'
