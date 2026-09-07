@@ -561,8 +561,13 @@ select {
 }
 
 .browse-btn-icon {
-  font-size: 1.15rem;
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: #ff3b44;
+  flex-shrink: 0;
   transition: transform 0.25s ease;
 }
 
