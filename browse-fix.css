@@ -1,1 +1,123 @@
-﻿/* browse-fix.css */
+/*
+ * browse-fix.css — Browse grid override
+ * Loaded AFTER movie.css to guarantee these styles win.
+ */
+
+/* 4-column landscape grid */
+#moviesGrid,
+#seriesGrid,
+#animeGrid,
+.browse-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 1.4rem 1rem !important;
+  margin-bottom: 2.5rem !important;
+}
+
+/* Cards fill their grid cell */
+#moviesGrid .movie-card,
+#seriesGrid .movie-card,
+#animeGrid .movie-card,
+.browse-grid .movie-card {
+  flex: none !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* 16:9 landscape image ratio */
+#moviesGrid .card-poster-wrap,
+#seriesGrid .card-poster-wrap,
+#animeGrid .card-poster-wrap,
+.browse-grid .card-poster-wrap {
+  aspect-ratio: 16 / 9 !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+#moviesGrid .card-poster,
+#seriesGrid .card-poster,
+#animeGrid .card-poster,
+.browse-grid .card-poster {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+#moviesGrid .card-title,
+#seriesGrid .card-title,
+#animeGrid .card-title,
+.browse-grid .card-title {
+  font-size: 0.85rem !important;
+}
+
+#moviesGrid .card-meta,
+#seriesGrid .card-meta,
+#animeGrid .card-meta,
+.browse-grid .card-meta {
+  font-size: 0.75rem !important;
+  gap: 0.5rem !important;
+}
+
+/* Cineby-style text filter tabs */
+.browse-filter-bar {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+  gap: 1.8rem !important;
+  align-items: center !important;
+  padding: 0 0 0.8rem 0 !important;
+  margin-bottom: 1.5rem !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+.browse-filter-bar::-webkit-scrollbar { display: none !important; }
+
+.browse-filter-btn {
+  flex-shrink: 0 !important;
+  padding: 0 0 0.6rem 0 !important;
+  border: none !important;
+  border-bottom: 2px solid transparent !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.55) !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  margin-bottom: -1px !important;
+  transition: color 0.2s ease, border-color 0.2s ease !important;
+}
+.browse-filter-btn:hover {
+  color: #fff !important;
+  border-bottom-color: rgba(255, 255, 255, 0.3) !important;
+  background: transparent !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+.browse-filter-btn.active {
+  color: #fff !important;
+  border-bottom-color: #e50914 !important;
+  background: transparent !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+}
+
+/* Hide old results count bar */
+.browse-results-bar { display: none !important; }
+
+/* Responsive */
+@media (max-width: 1024px) and (min-width: 641px) {
+  #moviesGrid, #seriesGrid, #animeGrid, .browse-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+@media (max-width: 640px) {
+  #moviesGrid, #seriesGrid, #animeGrid, .browse-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.8rem !important;
+  }
+}
