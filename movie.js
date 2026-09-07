@@ -3230,14 +3230,24 @@ function bindEventListeners() {
     };
   });
 
-  // Browse Dropdown Items
-  document.querySelectorAll(".browse-drop-item").forEach((item) => {
-    item.onclick = (e) => {
-      e.preventDefault();
-      const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
-      if (mobileMenuOverlay) mobileMenuOverlay.classList.remove("active");
-      const targetView = item.dataset.view;
-      if (targetView) switchView(targetView);
+  // Browse Dropdown Cards (.browse-card)
+  document.querySelectorAll(".browse-card").forEach((card) => {
+    card.onclick = (e) => {
+      const targetView = card.dataset.view;
+      if (targetView) {
+        e.preventDefault();
+        const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+        if (mobileMenuOverlay) mobileMenuOverlay.classList.remove("active");
+        switchView(targetView);
+      } else if (card.id === 'browseCardAi') {
+        e.preventDefault();
+        const navAiBtn = document.getElementById('navAiBtn');
+        if (navAiBtn) navAiBtn.click();
+      } else if (card.id === 'browseCardReport') {
+        e.preventDefault();
+        const headerReportBtn = document.getElementById('headerReportBtn');
+        if (headerReportBtn) headerReportBtn.click();
+      }
     };
   });
 
