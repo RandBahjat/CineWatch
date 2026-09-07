@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260904_1805">
+    <link rel="stylesheet" href="movie.css?v=20260904_1806">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -27,9 +27,9 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_5936" defer></script>
-    <script src="series-data.js?v=20260818_5936" defer></script>
-    <script src="anime-data.js?v=20260818_5936" defer></script>
+    <script src="movies-data.js?v=20260818_5937" defer></script>
+    <script src="series-data.js?v=20260818_5937" defer></script>
+    <script src="anime-data.js?v=20260818_5937" defer></script>
     <script src="movie.js?v=v44" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -1253,6 +1253,110 @@
             height: 0 !important;
             z-index: -999999 !important;
             clip: rect(0, 0, 0, 0) !important;
+        }
+
+        /* Language Toast — Chrome-style compact popup (top-right) */
+        .lang-toast {
+            position: fixed;
+            top: 86px;
+            right: 24px;
+            background: rgba(18, 20, 29, 0.95);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px;
+            padding: 12px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            max-width: 340px;
+        }
+        .lang-toast.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .lang-toast-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .lang-toast-globe {
+            width: 18px !important;
+            height: 18px !important;
+            color: var(--primary, #e50914);
+            flex-shrink: 0;
+        }
+        .lang-toast-tabs {
+            display: flex;
+            gap: 4px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2px;
+            border-radius: 8px;
+            flex: 1;
+        }
+        .lang-toast-tab {
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.8rem;
+            padding: 4px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+        .lang-toast-tab.active-tab {
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            font-weight: 600;
+        }
+        .lang-toast-close {
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+        }
+        .lang-toast-close svg {
+            width: 16px;
+            height: 16px;
+        }
+        .lang-toast-close:hover {
+            color: #fff;
+        }
+        .lang-toast-body {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        #langToastMsg {
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+        .lang-toast-translate-btn {
+            background: var(--primary, #e50914);
+            border: none;
+            color: #fff;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .lang-toast-translate-btn:hover {
+            background: #ff1e27;
         }
 
         /* Custom Language Dropdown Styles */
