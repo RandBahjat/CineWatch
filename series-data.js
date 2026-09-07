@@ -5447,7 +5447,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 4,
-            title: 'Day One'
+            title: 'The Bigger Picture'
           },
           {
             episode: 5,
