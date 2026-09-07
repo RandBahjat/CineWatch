@@ -413,14 +413,14 @@ select {
   box-shadow: none !important;
 }
 
-/* Scrolled Navbar: Frosted Glass */
+/* Scrolled Navbar: Rich Frosted Glass Header */
 .navbar.scrolled {
   height: 70px;
-  background: rgba(10, 14, 24, 0.75) !important;
-  backdrop-filter: blur(28px) saturate(190%) brightness(105%) !important;
-  -webkit-backdrop-filter: blur(28px) saturate(190%) brightness(105%) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-  box-shadow: 0 12px 36px -6px rgba(0, 0, 0, 0.45);
+  background: rgba(8, 12, 22, 0.92) !important;
+  backdrop-filter: blur(24px) saturate(180%) brightness(105%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) brightness(105%) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 12px 36px -6px rgba(0, 0, 0, 0.55);
 }
 
 .nav-container {
@@ -1241,11 +1241,23 @@ body.rtl-layout .modal-search-icon {
   transform: scale(1.05);
 }
 
-.mobile-dock-btn .dock-browse-icon,
-.mobile-dock-btn .dock-user-icon {
-  width: 18px;
-  height: 18px;
+.mobile-dock-btn .dock-browse-icon {
+  width: 20px;
+  height: 20px;
   display: block;
+}
+
+.mobile-dock-btn .dock-user-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  stroke-width: 1.6;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobile-dock-btn:hover .dock-user-icon,
+.mobile-dock-btn.active .dock-user-icon {
+  transform: scale(1.08);
 }
 
 /* Mobile Browse Close & Backdrop */
@@ -1304,13 +1316,23 @@ body.rtl-layout .modal-search-icon {
     display: none !important;
   }
 
-  /* Compact and clean mobile top navbar */
+  /* Compact and clean mobile top navbar locked to top */
   .navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
     height: 64px !important;
+    z-index: 1000 !important;
   }
 
   .navbar.scrolled {
     height: 60px !important;
+    background: rgba(8, 12, 22, 0.94) !important;
+    backdrop-filter: blur(20px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.6) !important;
   }
 
   .nav-container {
@@ -5734,9 +5756,9 @@ body.rtl-layout .details-back-btn svg {
 }
 
 .avatar-custom-img.badge-avatar {
-  width: 32px;
-  height: 32px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
 }
 
 .avatar-custom-img.header-avatar {
@@ -5939,9 +5961,9 @@ body.rtl-layout .details-back-btn svg {
 }
 
 .avatar-custom-img.badge-avatar {
-  width: 32px;
-  height: 32px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
 }
 
 .avatar-custom-img.header-avatar {
