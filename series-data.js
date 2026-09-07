@@ -5367,6 +5367,108 @@ window._SERIES_DATA = [
     ]
   },
   {
+    title: 'The Last of Us',
+    type: 'TV Show',
+    year: 2023,
+    rating: 8.4,
+    age: 'TV-MA',
+    duration: '50m',
+    genres: [
+      'Drama',
+      'Action',
+      'Horror',
+      'Sci-Fi'
+    ],
+    poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/uDgy6hyPd82kOHh6I95FLtLnj6p.jpg',
+    videoUrl: '100088',
+    trailerUrl: "",
+    overview: 'Twenty years after a fungal pandemic destroys civilization, a hardened survivor named Joel is hired to smuggle Ellie, a 14-year-old girl, out of an oppressive quarantine zone. What starts as a small job soon becomes a brutal, heartbreaking journey, as they both must traverse the U.S. and depend on each other for survival.',
+    director: 'Craig Mazin, Neil Druckmann',
+    cast: [
+      'Pedro Pascal, Bella Ramsey, Anna Torv, Gabriel Luna, Storm Reid, Nick Offerman, Murray Bartlett, Isabela Merced, Young Mazino'
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: "When You're Lost in the Darkness"
+          },
+          {
+            episode: 2,
+            title: 'Infected'
+          },
+          {
+            episode: 3,
+            title: 'Long, Long Time'
+          },
+          {
+            episode: 4,
+            title: 'Please Hold to My Hand'
+          },
+          {
+            episode: 5,
+            title: 'Endure and Survive'
+          },
+          {
+            episode: 6,
+            title: 'Kin'
+          },
+          {
+            episode: 7,
+            title: 'Left Behind'
+          },
+          {
+            episode: 8,
+            title: 'When We Are in Need'
+          },
+          {
+            episode: 9,
+            title: 'Look for the Light'
+          }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          {
+            episode: 1,
+            title: 'Future Days'
+          },
+          {
+            episode: 2,
+            title: ' Through the Valley'
+          },
+          {
+            episode: 3,
+            title: 'The Path'
+          },
+          {
+            episode: 4,
+            title: 'Day One'
+          },
+          {
+            episode: 5,
+            title: 'Feel Her Love'
+          },
+          {
+            episode: 6,
+            title: 'The Price'
+          },
+          {
+            episode: 7,
+            title: 'Convergence'
+          }
+        ]
+      }
+    ]
+  },
+  {
     title: 'Loki',
     type: 'TV Show',
     year: 2021,
