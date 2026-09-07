@@ -5374,7 +5374,7 @@ window._SERIES_DATA = [
     age: 'TV-MA',
     duration: '50m',
     genres: [
-      ',
+      'Comedy',
       'Action',
       'Horror',
       'Sci-Fi'
