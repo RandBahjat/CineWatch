@@ -1316,12 +1316,7 @@ function switchView(viewName) {
 
   // Dismiss Browse dropdown upon switching view
   const navBrowseItem = document.getElementById("navBrowseItem");
-  const navBrowseDropdown = document.getElementById("navBrowseDropdown");
-  if (navBrowseDropdown) {
-    navBrowseDropdown.classList.add("is-hidden");
-  }
   if (navBrowseItem) {
-    navBrowseItem.classList.add("is-closed");
     navBrowseItem.classList.remove("is-open");
   }
 
@@ -3244,35 +3239,52 @@ function bindEventListeners() {
   // Browse Dropdown Controls & Dismissal
   const browseItem = document.getElementById("navBrowseItem");
   const browseTriggerBtn = document.getElementById("navBrowseTrigger");
-  const browseDropdown = document.getElementById("navBrowseDropdown");
+
+  let isClosingBrowse = false;
+
+  function closeBrowseDropdown() {
+    if (!browseItem) return;
+    isClosingBrowse = true;
+    browseItem.classList.remove("is-open");
+    setTimeout(() => {
+      isClosingBrowse = false;
+    }, 250);
+  }
+
+  function openBrowseDropdown() {
+    if (!browseItem || isClosingBrowse) return;
+    browseItem.classList.add("is-open");
+  }
+
+  function toggleBrowseDropdown() {
+    if (!browseItem) return;
+    if (browseItem.classList.contains("is-open")) {
+      closeBrowseDropdown();
+    } else {
+      openBrowseDropdown();
+    }
+  }
 
   if (browseItem) {
     browseItem.addEventListener("mouseenter", () => {
-      if (browseDropdown) browseDropdown.classList.remove("is-hidden");
-      browseItem.classList.remove("is-closed");
+      openBrowseDropdown();
     });
+
     browseItem.addEventListener("mouseleave", () => {
-      if (browseDropdown) browseDropdown.classList.remove("is-hidden");
-      browseItem.classList.remove("is-closed");
-      browseItem.classList.remove("is-open");
+      closeBrowseDropdown();
     });
+
     if (browseTriggerBtn) {
       browseTriggerBtn.addEventListener("click", (e) => {
+        e.preventDefault();
         e.stopPropagation();
-        if (browseDropdown) browseDropdown.classList.remove("is-hidden");
-        if (browseItem.classList.contains("is-closed")) {
-          browseItem.classList.remove("is-closed");
-          browseItem.classList.add("is-open");
-        } else {
-          browseItem.classList.toggle("is-open");
-        }
+        toggleBrowseDropdown();
       });
     }
+
     document.addEventListener("click", (e) => {
       if (!browseItem.contains(e.target)) {
-        if (browseDropdown) browseDropdown.classList.add("is-hidden");
-        browseItem.classList.add("is-closed");
-        browseItem.classList.remove("is-open");
+        closeBrowseDropdown();
       }
     });
   }
@@ -3280,26 +3292,24 @@ function bindEventListeners() {
   // Browse Dropdown Cards (.nav-dropdown-card)
   document.querySelectorAll(".nav-dropdown-card").forEach((card) => {
     card.onclick = (e) => {
+      e.preventDefault();
+      e.stopPropagation();
       // Immediately dismiss the dropdown when any card is clicked
-      if (browseDropdown) browseDropdown.classList.add("is-hidden");
-      if (browseItem) {
-        browseItem.classList.add("is-closed");
-        browseItem.classList.remove("is-open");
-      }
+      closeBrowseDropdown();
+
       const targetView = card.dataset.view;
       if (targetView) {
-        e.preventDefault();
         const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
         if (mobileMenuOverlay) mobileMenuOverlay.classList.remove("active");
         switchView(targetView);
       } else if (card.id === 'browseCardAi') {
-        e.preventDefault();
         const navAiBtn = document.getElementById('navAiBtn');
         if (navAiBtn) navAiBtn.click();
       } else if (card.id === 'browseCardReport') {
-        e.preventDefault();
         const headerReportBtn = document.getElementById('headerReportBtn');
         if (headerReportBtn) headerReportBtn.click();
+      } else if (card.id === 'browseCardDownload') {
+        window.location.href = 'download.html';
       }
     };
   });
