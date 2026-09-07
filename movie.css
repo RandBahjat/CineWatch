@@ -1241,11 +1241,18 @@ body.rtl-layout .modal-search-icon {
   transform: scale(1.05);
 }
 
-.mobile-dock-btn .dock-browse-icon,
-.mobile-dock-btn .dock-user-icon {
-  width: 18px;
-  height: 18px;
+.mobile-dock-btn .dock-browse-icon {
+  width: 20px;
+  height: 20px;
   display: block;
+}
+
+.mobile-dock-btn .dock-user-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  stroke-width: 1.6;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* Mobile Browse Close & Backdrop */
