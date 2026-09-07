@@ -5926,211 +5926,19 @@ body.rtl-layout .details-back-btn svg {
 
 .browse-filter-btn.active {
   background: var(--primary);
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-}
-
-.avatar-custom-img.badge-avatar {
-  width: 32px;
-  height: 32px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.avatar-custom-img.header-avatar {
-  width: 48px;
-  height: 48px;
-  border: 2px solid var(--primary);
-}
-
-.avatar-custom-img.sidebar-avatar {
-  width: 100%;
-  height: 100%;
-}
-
-.sidebar-logout-btn {
-  margin-left: auto;
-  width: 32px;
-  height: 32px;
-  min-width: 32px;
-  min-height: 32px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: var(--text-dim, #9ca3af);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.15rem;
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  flex-shrink: 0;
-  z-index: 2;
-}
-
-.sidebar-logout-btn:hover {
-  background: rgba(229, 9, 20, 0.2);
-  border-color: #e50914;
-  color: #e50914;
-  transform: scale(1.1);
-  box-shadow: 0 0 12px rgba(229, 9, 20, 0.45);
-}
-
-.sidebar-logout-btn:active {
-  transform: scale(0.92);
-}
-
-.picker-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
-}
-
-.upload-avatar-label {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #00cc66;
-  background: rgba(0, 204, 102, 0.12);
-  border: 1px solid rgba(0, 204, 102, 0.3);
-  padding: 0.2rem 0.55rem;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-}
-
-.upload-avatar-label:hover {
-  background: #00cc66;
-  color: #000000;
-  box-shadow: 0 2px 8px rgba(0, 204, 102, 0.4);
-}
-
-/* Header Report Issue Button */
-.nav-report-btn {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  background: rgba(229, 9, 20, 0.12);
-  border: 1px solid rgba(229, 9, 20, 0.35);
-  color: #ff4d4d;
-  padding: 0.45rem 0.8rem;
-  border-radius: 30px;
-  font-family: inherit;
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  backdrop-filter: blur(10px);
-}
-
-.nav-report-btn:hover {
-  background: var(--primary);
-  color: #ffffff;
   border-color: var(--primary);
-  box-shadow: 0 4px 14px rgba(229, 9, 20, 0.4);
-  transform: translateY(-1px);
-}
-
-/* ================================================
-   BROWSE SECTION  (Movies / Series full-page view)
-   ================================================ */
-
-.browse-section {
-  padding: 2rem 0 4rem;
-  min-height: 80vh;
-}
-
-.browse-section-header {
-  margin-bottom: 1.8rem;
-}
-
-.browse-title-row {
-  display: flex !important;
-  align-items: center;
-  gap: 0.85rem;
-  margin-bottom: 0.8rem;
-  flex-wrap: wrap;
-}
-
-.browse-title {
-  font-size: 2rem;
-  font-weight: 800;
   color: #fff;
-  letter-spacing: -0.5px;
-  margin: 0;
-  line-height: 1.1;
-}
-
-
-/* ---- Filter Bar ---- */
-.browse-filter-bar {
-  display: flex !important;
-  flex-wrap: nowrap !important;
-  overflow-x: auto !important;
-  -webkit-overflow-scrolling: touch !important;
-  scrollbar-width: none !important;
-  gap: 1.5rem;
-  align-items: center;
-  padding: 0.4rem 2px 0.8rem 2px;
-  margin-top: 0.6rem;
-  margin-bottom: 1.2rem;
-}
-
-.browse-filter-bar::-webkit-scrollbar {
-  display: none !important;
-}
-
-/* ---- Results Count Label ---- */
-.browse-results-bar {
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: 1.05rem;
-  color: var(--text-muted);
-}
-.browse-results-bar span {
-  color: #fff;
-  font-weight: 600;
-}
-
-
-.browse-filter-btn {
-  padding: 0 0 0.5rem 0;
-  border: none;
-  border-bottom: 2px solid transparent;
-  border-radius: 0;
-  background: transparent;
-  color: var(--text-muted);
-  font-family: inherit;
-  font-size: 0.95rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  white-space: nowrap;
-}
-
-.browse-filter-btn:hover {
-  background: transparent;
-  border-color: transparent;
-  color: #fff;
-  transform: none;
-}
-
-.browse-filter-btn.active {
-  background: transparent !important;
-  border-bottom-color: var(--primary) !important;
+  background: #ff3b44 !important;
+  border-color: #ff3b44 !important;
   color: #fff !important;
-  font-weight: 600 !important;
-  box-shadow: none !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 16px rgba(255, 59, 68, 0.45) !important;
 }
 
 /* ---- Browse Grid ---- */
 .browse-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.6rem 1.2rem;
   margin-bottom: 2.5rem;
 }
@@ -7342,28 +7150,28 @@ input:-webkit-autofill:active {
     display: none;
   }
 }
- / *   R T L   A d j u s t m e n t s   f o r   S i d e b a r s   * / 
- b o d y . r t l - l a y o u t   . m o b i l e - m e n u   { 
-     l e f t :   a u t o ; 
-     r i g h t :   - 3 0 0 p x ; 
- } 
- b o d y . r t l - l a y o u t   . m o b i l e - m e n u - o v e r l a y . a c t i v e   . m o b i l e - m e n u   { 
-     l e f t :   a u t o ; 
-     r i g h t :   0 ; 
- } 
- b o d y . r t l - l a y o u t   . a c c o u n t - s i d e - p a n e l   { 
-     r i g h t :   a u t o ; 
-     l e f t :   0 ; 
-     b o r d e r - l e f t :   n o n e ; 
-     b o r d e r - r i g h t :   1 p x   s o l i d   r g b a ( 2 5 5 , 2 5 5 , 2 5 5 , 0 . 0 8 ) ; 
-     t r a n s f o r m :   t r a n s l a t e X ( - 1 0 0 % ) ; 
-     b o x - s h a d o w :   8 p x   0   3 2 p x   r g b a ( 0 , 0 , 0 , 0 . 6 ) ; 
- } 
- b o d y . r t l - l a y o u t   . a c c o u n t - s i d e - p a n e l . o p e n   { 
-     t r a n s f o r m :   t r a n s l a t e X ( 0 ) ; 
- } 
-  
- 
+ / *   R T L   A d j u s t m e n t s   f o r   S i d e b a r s   * / 
+ b o d y . r t l - l a y o u t   . m o b i l e - m e n u   { 
+     l e f t :   a u t o ; 
+     r i g h t :   - 3 0 0 p x ; 
+ } 
+ b o d y . r t l - l a y o u t   . m o b i l e - m e n u - o v e r l a y . a c t i v e   . m o b i l e - m e n u   { 
+     l e f t :   a u t o ; 
+     r i g h t :   0 ; 
+ } 
+ b o d y . r t l - l a y o u t   . a c c o u n t - s i d e - p a n e l   { 
+     r i g h t :   a u t o ; 
+     l e f t :   0 ; 
+     b o r d e r - l e f t :   n o n e ; 
+     b o r d e r - r i g h t :   1 p x   s o l i d   r g b a ( 2 5 5 , 2 5 5 , 2 5 5 , 0 . 0 8 ) ; 
+     t r a n s f o r m :   t r a n s l a t e X ( - 1 0 0 % ) ; 
+     b o x - s h a d o w :   8 p x   0   3 2 p x   r g b a ( 0 , 0 , 0 , 0 . 6 ) ; 
+ } 
+ b o d y . r t l - l a y o u t   . a c c o u n t - s i d e - p a n e l . o p e n   { 
+     t r a n s f o r m :   t r a n s l a t e X ( 0 ) ; 
+ } 
+  
+ 
 
 /* RTL Adjustments for Sidebars */
 body.rtl-layout .mobile-menu {
@@ -8096,10 +7904,10 @@ body.rtl-layout .account-side-panel.open {
     font-size: 1rem;
   }
 }
-/ *   L a n g u a g e   O v e r r i d e s   * /  
- h t m l [ l a n g = " k u " ]   . e n - o n l y   {   d i s p l a y :   n o n e   ! i m p o r t a n t ;   }  
- h t m l [ l a n g = " k u " ]   . k u - o n l y   {   d i s p l a y :   i n l i n e   ! i m p o r t a n t ;   }  
- 
+/ *   L a n g u a g e   O v e r r i d e s   * /  
+ h t m l [ l a n g = " k u " ]   . e n - o n l y   {   d i s p l a y :   n o n e   ! i m p o r t a n t ;   }  
+ h t m l [ l a n g = " k u " ]   . k u - o n l y   {   d i s p l a y :   i n l i n e   ! i m p o r t a n t ;   }  
+ 
 /* Language Overrides */
 html[lang="ku"] .en-only { display: none !important; }
 html[lang="ku"] .ku-only { display: inline !important; }
@@ -9353,3 +9161,7 @@ min-width: 0;
   font-weight: 700 !important;
   box-shadow: 0 4px 16px rgba(255, 59, 68, 0.45) !important;
 }
+
+
+
+
