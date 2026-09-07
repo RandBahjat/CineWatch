@@ -703,7 +703,8 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
   ` : "";
 
   const imgSrc = forcePoster ? (movie.poster || movie.backdrop) : (movie.backdrop || movie.poster);
-  const sourceTag = forcePoster ? "" : `<source media="(max-width: 768px)" srcset="${movie.backdrop || movie.poster}">`;
+  // On mobile screen, always show poster instead of backdrop
+  const sourceTag = `<source media="(max-width: 768px)" srcset="${movie.poster || movie.backdrop}">`;
 
   return `
     <div class="movie-card" data-id="${movie.id}">
@@ -2051,7 +2052,9 @@ function openDetailsModal(movieId) {
     if (detailsSection) detailsSection.scrollTo(0, 0);
     const detailsBg = document.getElementById("detailsBg");
     if (detailsBg) {
-      detailsBg.style.backgroundImage = `url('${movie.backdrop || movie.poster}')`;
+      const isMobileDetails = window.innerWidth <= 768;
+      const detailsHeroImg = (isMobileDetails && movie.poster) ? movie.poster : (movie.backdrop || movie.poster);
+      detailsBg.style.backgroundImage = `url('${detailsHeroImg}')`;
       
       // Cancel previous trailer timer and remove iframe
       clearTimeout(window._detailsTrailerTimer);

@@ -9240,6 +9240,18 @@ min-width: 0;
   width: 100% !important;
 }
 
+/* Mobile Screen: Show vertical poster with 2:3 ratio instead of 16:9 backdrop */
+@media (max-width: 768px) {
+  .movie-card:not(.continue-card) .card-poster-wrap,
+  .browse-grid .card-poster-wrap,
+  #moviesGrid .card-poster-wrap,
+  #seriesGrid .card-poster-wrap,
+  #animeGrid .card-poster-wrap,
+  .filtered-grid .card-poster-wrap {
+    aspect-ratio: 2 / 3 !important;
+  }
+}
+
 /* Constrain movie-card inside browse grid */
 .browse-grid .movie-card,
 #moviesGrid .movie-card,
