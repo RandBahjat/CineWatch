@@ -520,12 +520,9 @@ select {
 
 .btn-demo {
   background: linear-gradient(135deg, #2b3644, #1f2833);
-  color: var(--gold);
-  border: 1px solid rgba(255, 193, 7, 0.3);
-}
-.btn-demo:hover {
-  border-color: var(--gold);
-  background: rgba(255, 193, 7, 0.15);
+.btn-lg {
+  padding: 0.9rem 2rem;
+  font-size: 1.05rem;
 }
 
 /* Sticky Navbar */
