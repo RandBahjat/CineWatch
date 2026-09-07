@@ -6136,6 +6136,7 @@ body.rtl-layout .details-back-btn svg {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1.6rem 1.2rem;
   margin-bottom: 2.5rem;
+}
 
 .browse-card {
   position: relative;
