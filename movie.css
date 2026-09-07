@@ -9192,12 +9192,25 @@ min-width: 0;
    BROWSE PAGE FINAL OVERRIDES — CINEBY STYLE
    ============================================================ */
 
-/* Grid: 4-column responsive, smaller cards */
+/* Grid: 4-column responsive, portrait poster cards */
 .browse-grid {
   display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
-  gap: 1.4rem 1rem !important;
+  grid-template-columns: repeat(auto-fill, minmax(165px, 1fr)) !important;
+  gap: 1.2rem 0.9rem !important;
   margin-bottom: 2.5rem !important;
+}
+
+/* Force portrait aspect ratio for browse grid cards */
+.browse-grid .card-poster-wrap,
+.browse-grid .force-poster-wrap {
+  aspect-ratio: 2 / 3 !important;
+}
+
+/* Make cards look clean in the browse grid */
+.browse-grid .movie-card {
+  width: 100% !important;
+  flex: none !important;
+  min-width: 0 !important;
 }
 
 /* Filter bar: horizontal scroll, no scrollbar */
