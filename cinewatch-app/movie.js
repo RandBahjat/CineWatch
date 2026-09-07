@@ -694,7 +694,7 @@ function updateHeroBanner() {
 function createMovieCardHTML(movie, rank = null, forcePoster = false) {
   const fav = isFavorite(movie.id);
   const primaryGenre = movie.genres && movie.genres.length > 0 ? translateGenre(movie.genres[0]) : "";
-  const displayType = movie.type || (movie.seasons ? "TV Show" : "Movie");
+  const displayType = movie.isAnime ? "Anime" : (movie.type || (movie.seasons ? "TV Show" : "Movie"));
   const rankHtml = rank !== null ? `
     <div class="top10-rank-badge">
       <span class="top10-rank-text">TOP</span>
@@ -702,8 +702,8 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
     </div>
   ` : "";
 
-  const imgSrc = forcePoster ? movie.poster : (movie.backdrop || movie.poster);
-  const sourceTag = forcePoster ? "" : `<source media="(max-width: 768px)" srcset="${movie.poster}">`;
+  const imgSrc = forcePoster ? (movie.poster || movie.backdrop) : (movie.backdrop || movie.poster);
+  const sourceTag = forcePoster ? "" : `<source media="(max-width: 768px)" srcset="${movie.backdrop || movie.poster}">`;
 
   return `
     <div class="movie-card" data-id="${movie.id}">
@@ -721,7 +721,7 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
       <div class="card-details">
         <h4 class="card-title notranslate" translate="no">${movie.title}</h4>
         <div class="card-meta">
-          <span class="card-rating notranslate" translate="no">⭐ ${formatRating(movie.rating)}</span>
+          <span class="card-rating notranslate" translate="no"><span class="star-icon" style="color: #e50914; margin-right: 3px;">★</span>${formatRating(movie.rating)}</span>
           <span class="card-year notranslate" translate="no">${formatNumber(movie.year)}</span>
           <span class="card-type notranslate" translate="no">${formatMediaType(displayType)}</span>
         </div>
@@ -1015,7 +1015,7 @@ function renderWatchlist() {
   }
 
   if (emptyState) emptyState.classList.add("hidden");
-  grid.innerHTML = validFavorites.map((movie) => createMovieCardHTML(movie, null, true)).join("");
+  grid.innerHTML = validFavorites.map((movie) => createMovieCardHTML(movie, null, false)).join("");
 
   grid.querySelectorAll(".movie-card").forEach((card) => {
     card.onclick = () => openDetailsModal(card.dataset.id);
@@ -1054,7 +1054,7 @@ function renderFilteredGrid(movieList, titleText) {
       </div>
     `;
   } else {
-    filteredGrid.innerHTML = movieList.map(m => createMovieCardHTML(m, null, true)).join("");
+    filteredGrid.innerHTML = movieList.map(m => createMovieCardHTML(m, null, false)).join("");
     filteredGrid.querySelectorAll(".movie-card").forEach((card) => {
       card.onclick = () => openDetailsModal(card.dataset.id);
     });
@@ -1080,7 +1080,7 @@ function renderBrowseGrid(items, gridId, page) {
         <p>Try a different filter.</p>
       </div>`;
   } else {
-    grid.innerHTML = pageItems.map(m => createMovieCardHTML(m, null, true)).join("");
+    grid.innerHTML = pageItems.map(m => createMovieCardHTML(m, null, false)).join("");
     grid.querySelectorAll(".movie-card").forEach((card) => {
       card.onclick = () => openDetailsModal(card.dataset.id);
     });
