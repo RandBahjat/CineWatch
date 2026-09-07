@@ -9104,7 +9104,7 @@ min-width: 0;
   white-space: nowrap !important;
 }
 
-/* Horizontal Scrolling Liquid Glass Genre Filter Bar */
+/* Horizontal Scrolling Genre Filter Bar (Cineby Style) */
 .browse-filter-bar {
   display: flex !important;
   flex-wrap: nowrap !important;
@@ -9127,38 +9127,39 @@ min-width: 0;
   display: none !important;
 }
 
-/* Genre Pill Buttons */
+/* Genre Text Buttons */
 .browse-filter-btn {
   flex-shrink: 0 !important;
-  padding: 0.45rem 1.15rem !important;
-  border-radius: 9999px !important;
-  border: 1px solid rgba(255, 255, 255, 0.14) !important;
-  background: rgba(255, 255, 255, 0.07) !important;
-  color: rgba(255, 255, 255, 0.8) !important;
+  padding: 0 0 0.5rem 0 !important;
+  border: none !important;
+  border-bottom: 2px solid transparent !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: var(--text-muted) !important;
   font-family: inherit !important;
-  font-size: 0.84rem !important;
-  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
   cursor: pointer !important;
-  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  transition: all 0.2s ease !important;
   white-space: nowrap !important;
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
   text-decoration: none !important;
 }
 
 .browse-filter-btn:hover {
-  background: rgba(255, 255, 255, 0.16) !important;
-  border-color: rgba(255, 255, 255, 0.28) !important;
+  background: transparent !important;
+  border-color: transparent !important;
   color: #fff !important;
-  transform: translateY(-1px) !important;
+  transform: none !important;
 }
 
 .browse-filter-btn.active {
-  background: #ff3b44 !important;
-  border-color: #ff3b44 !important;
+  background: transparent !important;
+  border-bottom-color: var(--primary) !important;
   color: #ffffff !important;
-  font-weight: 700 !important;
-  box-shadow: 0 4px 16px rgba(255, 59, 68, 0.45) !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
 }
 
 
