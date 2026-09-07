@@ -633,9 +633,11 @@ select {
 }
 
 /* Immediately dismiss dropdown when an item is selected */
+.nav-browse-dropdown.is-hidden,
 .nav-browse-item.is-closed .nav-browse-dropdown,
 .nav-browse-item.is-closed:hover .nav-browse-dropdown,
 .nav-browse-item.is-closed:focus-within .nav-browse-dropdown {
+  display: none !important;
   opacity: 0 !important;
   visibility: hidden !important;
   pointer-events: none !important;
