@@ -9192,28 +9192,27 @@ min-width: 0;
    BROWSE PAGE FINAL OVERRIDES — CINEBY STYLE
    ============================================================ */
 
-/* Grid: portrait poster cards, ~5-6 per row */
+/* Grid: 4-column landscape cards — Cineby style */
 .browse-grid,
 #moviesGrid,
 #seriesGrid,
 #animeGrid {
   display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)) !important;
-  gap: 1rem 0.8rem !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 1.4rem 1rem !important;
   margin-bottom: 2.5rem !important;
 }
 
-/* Force portrait aspect ratio for browse grid cards — beats the 16:9 base rule */
+/* Keep 16:9 landscape aspect ratio on browse grid card images */
 .browse-grid .card-poster-wrap,
-.browse-grid .force-poster-wrap,
 #moviesGrid .card-poster-wrap,
 #seriesGrid .card-poster-wrap,
 #animeGrid .card-poster-wrap {
-  aspect-ratio: 2 / 3 !important;
+  aspect-ratio: 16 / 9 !important;
   width: 100% !important;
 }
 
-/* Override the fixed flex-basis on movie-card inside a grid */
+/* Constrain movie-card inside browse grid */
 .browse-grid .movie-card,
 #moviesGrid .movie-card,
 #seriesGrid .movie-card,
@@ -9223,6 +9222,28 @@ min-width: 0;
   min-width: 0 !important;
   max-width: 100% !important;
 }
+
+/* Responsive: 2 columns on mobile */
+@media (max-width: 640px) {
+  .browse-grid,
+  #moviesGrid,
+  #seriesGrid,
+  #animeGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.8rem !important;
+  }
+}
+
+/* Responsive: 3 columns on tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .browse-grid,
+  #moviesGrid,
+  #seriesGrid,
+  #animeGrid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
 
 /* Filter bar: horizontal scroll, no scrollbar */
 .browse-filter-bar {
