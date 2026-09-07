@@ -1313,6 +1313,7 @@ function switchView(viewName) {
     if (link.dataset.view === viewName) link.classList.add("active");
     else link.classList.remove("active");
   });
+  if (window.updateNavGlider) window.updateNavGlider(true);
   window.dispatchEvent(new Event("scroll"));
 
   const safetyBannerWrapper = document.getElementById("safetyBannerWrapper");
@@ -5120,6 +5121,96 @@ document.getElementById("playerPrevEpBtn")?.addEventListener("click", () => navi
 
   window.addEventListener("scroll", updateNavbar, { passive: true });
   updateNavbar();
+})();
+
+// ==========================================
+// LIQUID GLASS NAVBAR SWITCHING GLIDER
+// ==========================================
+(function initNavGliderModule() {
+  function setupGlider() {
+    const container = document.getElementById("navLinksContainer") || document.querySelector(".nav-links");
+    if (!container) return;
+
+    let glider = container.querySelector(".nav-glider");
+    if (!glider) {
+      glider = document.createElement("div");
+      glider.className = "nav-glider";
+      glider.id = "navGlider";
+      container.prepend(glider);
+    }
+
+    const links = Array.from(container.querySelectorAll(".nav-link"));
+
+    function positionGliderTo(link, animate = true) {
+      if (!link || !container.contains(link)) {
+        glider.style.opacity = "0";
+        return;
+      }
+      const containerRect = container.getBoundingClientRect();
+      const linkRect = link.getBoundingClientRect();
+
+      // Guard against initial zero-dimension layout before fonts load
+      if (linkRect.width === 0) return;
+
+      const left = linkRect.left - containerRect.left;
+      const top = linkRect.top - containerRect.top;
+      const width = linkRect.width;
+      const height = linkRect.height;
+
+      if (!animate) {
+        glider.style.transition = "none";
+      } else {
+        glider.style.transition = "transform 0.34s cubic-bezier(0.22, 1, 0.36, 1), width 0.34s cubic-bezier(0.22, 1, 0.36, 1), height 0.34s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.25s ease";
+      }
+
+      glider.style.transform = `translate(${left}px, ${top}px)`;
+      glider.style.width = `${width}px`;
+      glider.style.height = `${height}px`;
+      glider.style.opacity = "1";
+
+      if (!animate) {
+        glider.offsetHeight; // Force reflow
+        glider.style.transition = "";
+      }
+    }
+
+    function getActiveLink() {
+      return container.querySelector(".nav-link.active") || links[0];
+    }
+
+    // Set initial position with micro-retry for font rendering
+    setTimeout(() => positionGliderTo(getActiveLink(), false), 50);
+    setTimeout(() => positionGliderTo(getActiveLink(), false), 200);
+
+    links.forEach((link) => {
+      link.addEventListener("mouseenter", () => {
+        positionGliderTo(link, true);
+      });
+    });
+
+    container.addEventListener("mouseleave", () => {
+      positionGliderTo(getActiveLink(), true);
+    });
+
+    window.updateNavGlider = function (animate = true) {
+      setTimeout(() => {
+        positionGliderTo(getActiveLink(), animate);
+      }, 30);
+    };
+
+    window.addEventListener("resize", () => {
+      positionGliderTo(getActiveLink(), false);
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", setupGlider);
+  } else {
+    setupGlider();
+  }
+  window.addEventListener("load", () => {
+    if (window.updateNavGlider) window.updateNavGlider(false);
+  });
 })();
 
 function trackVisit() {

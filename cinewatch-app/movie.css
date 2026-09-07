@@ -386,35 +386,38 @@ select {
 }
 
 /* ==========================================================================
-   REDESIGNED CINEWATCH NAVBAR & CINEMATIC HOVER EFFECT
+   REDESIGNED CINEWATCH LIQUID GLASS NAVBAR & SWITCHING GLIDER
    ========================================================================== */
 
-/* Fixed Glassmorphic Navbar Container */
+/* Fixed Liquid Glass Navbar */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 74px;
-  background: linear-gradient(180deg, rgba(5, 7, 10, 0.92) 0%, rgba(5, 7, 10, 0.5) 60%, transparent 100%);
+  background: rgba(5, 8, 15, 0.55);
+  backdrop-filter: blur(24px) saturate(200%) contrast(105%);
+  -webkit-backdrop-filter: blur(24px) saturate(200%) contrast(105%);
   z-index: 1000;
   transition: background 0.35s cubic-bezier(0.16, 1, 0.3, 1),
               height 0.3s cubic-bezier(0.16, 1, 0.3, 1),
               box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-              border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-              backdrop-filter 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-              -webkit-backdrop-filter 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  border-bottom: 1px solid transparent;
+              border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15),
+              0 10px 30px -5px rgba(0, 0, 0, 0.5);
 }
 
-/* Scrolled Frosted Acrylic Glass State */
+/* Scrolled Liquid Glass State */
 .navbar.scrolled {
   height: 68px;
-  background: rgba(5, 7, 10, 0.82);
-  backdrop-filter: blur(24px) saturate(190%);
-  -webkit-backdrop-filter: blur(24px) saturate(190%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 12px 36px -4px rgba(0, 0, 0, 0.65), 0 0 1px 1px rgba(255, 255, 255, 0.04) inset;
+  background: rgba(4, 7, 13, 0.78);
+  backdrop-filter: blur(32px) saturate(210%) contrast(110%);
+  -webkit-backdrop-filter: blur(32px) saturate(210%) contrast(110%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.22),
+              0 16px 40px -8px rgba(0, 0, 0, 0.75);
 }
 
 .nav-container {
@@ -498,75 +501,75 @@ select {
   filter: drop-shadow(0 0 12px rgba(229, 9, 20, 0.4));
 }
 
-/* --- Nav Links Capsule Island --- */
+/* --- Liquid Glass Nav Island & Glider --- */
 .nav-links {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 4px 6px;
+  padding: 4px;
   border-radius: 9999px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.02) 100%), rgba(8, 12, 22, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.3),
+              inset 0 -1px 1px 0 rgba(0, 0, 0, 0.4),
+              0 8px 24px -4px rgba(0, 0, 0, 0.5);
+  isolation: isolate;
 }
 
-/* --- Redesigned Nav Link Pill & New Cinematic Hover Effect --- */
+/* The Liquid Glass Glider Pill that smoothly slides between buttons */
+.nav-glider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, rgba(229, 9, 20, 0.32) 0%, rgba(229, 9, 20, 0.16) 100%), rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.45),
+              inset 0 -1px 1px 0 rgba(0, 0, 0, 0.25),
+              0 4px 18px rgba(229, 9, 20, 0.45),
+              0 0 14px rgba(229, 9, 20, 0.25);
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transform: translate(0, 0);
+  transition: transform 0.34s cubic-bezier(0.22, 1, 0.36, 1),
+              width 0.34s cubic-bezier(0.22, 1, 0.36, 1),
+              height 0.34s cubic-bezier(0.22, 1, 0.36, 1),
+              opacity 0.25s ease;
+}
+
+/* --- Nav Link Item (Inside Liquid Glass Dock) --- */
 .nav-link {
+  position: relative;
+  z-index: 2;
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
   font-size: 0.92rem;
   font-weight: 500;
-  color: rgba(240, 243, 248, 0.75);
-  position: relative;
+  color: rgba(240, 243, 248, 0.72);
   padding: 0.48rem 0.95rem;
   border-radius: 9999px;
   white-space: nowrap;
   flex-shrink: 0;
   text-decoration: none;
-  background: transparent;
-  border: 1px solid transparent;
-  overflow: hidden;
-  isolation: isolate;
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  box-shadow: none !important;
   transition: color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
-              background 0.25s cubic-bezier(0.16, 1, 0.3, 1),
-              border-color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
               transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
 }
 
-/* Nav Link Ambient Luminous Spotlight (::before) */
-.nav-link::before {
-  content: "";
-  position: absolute;
-  inset: -10px;
-  background: radial-gradient(circle at 50% 50%, rgba(229, 9, 20, 0.3) 0%, rgba(229, 9, 20, 0.08) 45%, transparent 70%);
-  opacity: 0;
-  transform: scale(0.65);
-  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  pointer-events: none;
-  z-index: -1;
-}
-
-/* Nav Link Laser / Neon Beacon Underline (::after) */
+/* No underline line / hr whatsoever */
+.nav-link::before,
 .nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: 3px;
-  left: 50%;
-  width: 0;
-  height: 2.5px;
-  background: linear-gradient(90deg, transparent 0%, #ff3b44 25%, #e50914 50%, #ff3b44 75%, transparent 100%);
-  border-radius: 9999px;
-  box-shadow: 0 0 10px rgba(229, 9, 20, 0.9), 0 0 4px #ff6b6b;
-  transform: translateX(-50%);
-  transition: width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
-              opacity 0.3s ease;
-  opacity: 0;
-  pointer-events: none;
-  z-index: 2;
+  display: none !important;
+  content: none !important;
 }
 
 /* Nav Link Icon & SVG */
@@ -583,61 +586,27 @@ select {
 /* Nav Link Text */
 .nav-link span {
   position: relative;
-  z-index: 1;
   letter-spacing: -0.01em;
-  transition: letter-spacing 0.25s ease;
+  transition: letter-spacing 0.25s ease, color 0.25s ease;
 }
 
-/* --- THE NEW HOVER STATE --- */
+/* Hover over individual nav link */
 .nav-link:hover {
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35),
-              0 0 18px rgba(229, 9, 20, 0.18),
-              0 1px 1px rgba(255, 255, 255, 0.1) inset;
-  transform: translateY(-2px);
-}
-
-.nav-link:hover::before {
-  opacity: 1;
-  transform: scale(1.1);
-}
-
-.nav-link:hover::after {
-  width: 55%;
-  opacity: 1;
+  transform: translateY(-1px);
 }
 
 .nav-link:hover ion-icon,
 .nav-link:hover svg {
-  transform: translateY(-1.5px) scale(1.18);
+  transform: translateY(-1px) scale(1.16);
   color: #ff333f;
   filter: drop-shadow(0 0 8px rgba(229, 9, 20, 0.8));
 }
 
-.nav-link:hover span {
-  letter-spacing: 0.01em;
-}
-
-.nav-link:active {
-  transform: translateY(0) scale(0.97);
-  background: rgba(255, 255, 255, 0.12);
-}
-
-/* --- ACTIVE LINK STATE --- */
+/* Active Link State */
 .nav-link.active {
   color: #ffffff;
   font-weight: 600;
-  background: linear-gradient(135deg, rgba(229, 9, 20, 0.18) 0%, rgba(229, 9, 20, 0.06) 100%);
-  border-color: rgba(229, 9, 20, 0.38);
-  box-shadow: 0 0 16px rgba(229, 9, 20, 0.22) inset,
-              0 2px 10px rgba(0, 0, 0, 0.25);
-}
-
-.nav-link.active::after {
-  width: 60%;
-  opacity: 1;
 }
 
 .nav-link.active ion-icon,
@@ -658,7 +627,7 @@ select {
   box-shadow: 0 0 8px rgba(229, 9, 20, 0.5);
 }
 
-/* --- Nav Right Actions --- */
+/* --- Nav Right Actions with Liquid Glass Finish --- */
 .nav-right {
   display: flex;
   align-items: center;
@@ -670,8 +639,8 @@ select {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.02) 100%), rgba(10, 14, 24, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   color: rgba(255, 255, 255, 0.85);
   font-size: 1.15rem;
   cursor: pointer;
@@ -679,17 +648,20 @@ select {
   height: 38px;
   border-radius: 50%;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.25),
+              0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .nav-action-btn:hover {
   transform: translateY(-2px) scale(1.06);
-  background: rgba(255, 255, 255, 0.12);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.05) 100%), rgba(15, 20, 32, 0.6);
   border-color: rgba(229, 9, 20, 0.5);
   color: #ffffff;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35),
-              0 0 16px rgba(229, 9, 20, 0.35);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.35),
+              0 6px 20px rgba(0, 0, 0, 0.4),
+              0 0 18px rgba(229, 9, 20, 0.4);
 }
 
 .nav-action-btn:active {
@@ -701,8 +673,8 @@ select {
   display: inline-flex;
   align-items: center;
   gap: 0.48rem;
-  background: linear-gradient(135deg, rgba(229, 9, 20, 0.24) 0%, rgba(138, 43, 226, 0.28) 100%);
-  border: 1px solid rgba(229, 9, 20, 0.45);
+  background: linear-gradient(135deg, rgba(229, 9, 20, 0.28) 0%, rgba(138, 43, 226, 0.32) 100%), rgba(10, 14, 24, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #ffffff;
   padding: 0.46rem 0.92rem;
   border-radius: 9999px;
@@ -710,18 +682,20 @@ select {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.3),
+              0 4px 14px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
 }
 
 .nav-ai-btn:hover {
-  background: linear-gradient(135deg, rgba(229, 9, 20, 0.38) 0%, rgba(138, 43, 226, 0.45) 100%);
-  border-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 20px rgba(229, 9, 20, 0.4),
-              0 0 20px rgba(138, 43, 226, 0.3);
+  background: linear-gradient(135deg, rgba(229, 9, 20, 0.42) 0%, rgba(138, 43, 226, 0.48) 100%), rgba(15, 20, 34, 0.6);
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.45),
+              0 6px 24px rgba(229, 9, 20, 0.45),
+              0 0 20px rgba(138, 43, 226, 0.35);
   transform: translateY(-2px);
   color: #fff;
 }
@@ -736,8 +710,8 @@ select {
   align-items: center;
   justify-content: center;
   gap: 0.42rem;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.02) 100%), rgba(10, 14, 24, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   color: rgba(255, 255, 255, 0.9);
   padding: 0.46rem 0.92rem;
   border-radius: 9999px;
@@ -748,15 +722,18 @@ select {
   text-decoration: none;
   white-space: nowrap;
   flex-shrink: 0;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.25),
+              0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .nav-download-btn:hover {
-  background: rgba(255, 255, 255, 0.12);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.04) 100%), rgba(15, 20, 32, 0.6);
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.35),
+              0 6px 18px rgba(0, 0, 0, 0.35);
   transform: translateY(-2px);
 }
 
@@ -769,8 +746,8 @@ select {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.01) 100%), rgba(10, 14, 24, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   color: rgba(255, 255, 255, 0.75);
   padding: 0.46rem 0.88rem;
   border-radius: 9999px;
@@ -778,14 +755,15 @@ select {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .nav-report-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.03) 100%), rgba(15, 20, 32, 0.5);
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.25);
   transform: translateY(-2px);
 }
 
