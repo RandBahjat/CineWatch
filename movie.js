@@ -1347,8 +1347,25 @@ function switchView(viewName) {
       card.classList.add("active");
     } else {
       card.classList.remove("active");
+  // Mobile Bottom Dock Active State Sync
+  document.querySelectorAll(".mobile-dock-btn").forEach((btn) => {
+    if (btn.dataset.view === viewName) {
+      btn.classList.add("active");
+    } else {
+      btn.classList.remove("active");
     }
   });
+
+  const mobileDockBrowse = document.getElementById("mobileDockBrowse");
+  if (mobileDockBrowse) {
+    if (viewName === 'series' || viewName === 'anime' || viewName === 'continue') {
+      mobileDockBrowse.classList.add("active");
+    } else if (viewName === 'home' || viewName === 'movies' || viewName === 'watchlist') {
+      mobileDockBrowse.classList.remove("active");
+    }
+  }
+
+  document.body.classList.remove("mobile-browse-open");
 
   if (window.updateNavGlider) window.updateNavGlider(true);
   window.dispatchEvent(new Event("scroll"));
