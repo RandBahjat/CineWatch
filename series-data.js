@@ -5425,7 +5425,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 8,
-            title: 'When We Are in Need'
+            title: 'The Gospel According to Bobby Glass'
           },
           {
             episode: 9,
