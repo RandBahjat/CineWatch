@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=17887773_141932">
+    <link rel="stylesheet" href="movie.css?v=17887808_146153">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -27,10 +27,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_5957" defer></script>
-    <script src="series-data.js?v=20260818_5957" defer></script>
-    <script src="anime-data.js?v=20260818_5957" defer></script>
-    <script src="movie.js?v=17887773_141932" defer></script>
+    <script src="movies-data.js?v=20260818_5958" defer></script>
+    <script src="series-data.js?v=20260818_5958" defer></script>
+    <script src="anime-data.js?v=20260818_5958" defer></script>
+    <script src="movie.js?v=17887808_146154" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -93,59 +93,96 @@
     <header class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-left">
-            <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="document.getElementById('mobileMenuOverlay').classList.add('active'); document.body.style.overflow='hidden';">
-                <ion-icon name="menu-outline" style="pointer-events: none;"></ion-icon>
-            </button>
-                <!-- Logo: hidden on mobile (shown in slide-out menu instead) -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="document.getElementById('mobileMenuOverlay').classList.add('active'); document.body.style.overflow='hidden';">
+                    <ion-icon name="menu-outline" style="pointer-events: none;"></ion-icon>
+                </button>
+                <!-- Brand Logo -->
                 <a href="#" class="brand-logo" id="logoBtn">
                     <div class="brand-icon"><ion-icon name="ticket"></ion-icon></div>
                     <span class="brand-text notranslate" translate="no">Cine<span>Watch</span></span>
                 </a>
-                <nav class="nav-links" id="navLinksContainer">
-                    <a href="#" class="nav-link active" data-view="home"><span id="navHome1" class="notranslate" translate="no">Home</span></a>
-                    
-                    <!-- Browse with Interactive Hover Dropdown (Movies, Series, Anime) -->
-                    <div class="nav-browse-item" id="navBrowseItem">
-                        <a href="#" class="nav-link nav-browse-trigger" id="navBrowseTrigger" data-view="browse">
-                            <span id="navBrowseText" class="notranslate" translate="no">Browse</span>
-                            <ion-icon name="chevron-down-outline" class="browse-chevron"></ion-icon>
-                        </a>
-                        <div class="nav-browse-dropdown" id="navBrowseDropdown">
-                            <a href="#" class="browse-drop-item" data-view="movies" id="browseDropMovies">
-                                <div class="browse-drop-icon"><ion-icon name="film-outline"></ion-icon></div>
-                                <div class="browse-drop-info">
-                                    <span class="browse-drop-title notranslate" translate="no">Movies</span>
-                                    <span class="browse-drop-desc">Explore movies & blockbusters</span>
-                                </div>
-                            </a>
-                            <a href="#" class="browse-drop-item" data-view="series" id="browseDropSeries">
-                                <div class="browse-drop-icon"><ion-icon name="tv-outline"></ion-icon></div>
-                                <div class="browse-drop-info">
-                                    <span class="browse-drop-title notranslate" translate="no">Series</span>
-                                    <span class="browse-drop-desc">Browse TV shows & seasons</span>
-                                </div>
-                            </a>
-                            <a href="#" class="browse-drop-item" data-view="anime" id="browseDropAnime">
-                                <div class="browse-drop-icon anime-icon-wrapper">
-                                    <svg class="anime-goku-icon" viewBox="0 0 100 100" style="width: 1.5em; height: 1.5em; display: inline-block; fill: none; stroke: currentColor; stroke-width: 5; stroke-linejoin: miter; stroke-linecap: butt;">
-                                      <path d="M 50 88 L 40 80 L 35 68 L 20 72 L 28 60 L 12 60 L 25 50 L 10 30 L 38 42 L 38 12 L 50 35 L 60 15 L 65 38 L 85 28 L 75 45 L 95 52 L 78 60 L 85 70 L 65 68 L 60 80 Z" />
-                                      <path d="M 35 68 L 40 55 L 44 65 L 50 50 L 54 68 L 60 55 L 65 68" />
-                                    </svg>
-                                </div>
-                                <div class="browse-drop-info">
-                                    <span class="browse-drop-title notranslate" translate="no">Anime</span>
-                                    <span class="browse-drop-desc">Japanese animation & OVAs</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <a href="#" class="nav-link" data-view="continue"><span id="navContinue1" class="notranslate" translate="no">Continue Watching</span></a>
-                    <a href="#" class="nav-link" data-view="watchlist"><span id="navWatchlist1" class="notranslate" translate="no">My Watchlist</span></a>
-                </nav>
             </div>
 
             <div class="nav-right">
+                <!-- Home Link -->
+                <a href="#" class="nav-link nav-home-link active" data-view="home" id="navHomeBtn">
+                    <ion-icon name="home-outline"></ion-icon>
+                    <span id="navHome1" class="notranslate" translate="no">Home</span>
+                </a>
+
+                <!-- Repositioned Browse Pill Button & Cineby-style Mega Dropdown -->
+                <div class="nav-browse-item" id="navBrowseItem">
+                    <button class="nav-browse-pill-btn" id="navBrowseTrigger" type="button" aria-haspopup="true">
+                        <ion-icon name="grid-outline" class="browse-btn-icon"></ion-icon>
+                        <span id="navBrowseText" class="browse-btn-text notranslate" translate="no">Browse</span>
+                        <ion-icon name="chevron-down-outline" class="browse-chevron"></ion-icon>
+                    </button>
+
+                    <div class="nav-browse-dropdown cineby-dropdown" id="navBrowseDropdown">
+                        <div class="browse-dropdown-header">
+                            <span class="browse-header-title">Browse</span>
+                        </div>
+
+                        <!-- Section: CONTENT -->
+                        <div class="browse-dropdown-section">
+                            <div class="browse-section-label">CONTENT</div>
+                            <div class="browse-grid browse-grid-3">
+                                <a href="#" class="browse-card" data-view="movies" id="browseCardMovies">
+                                    <div class="browse-card-icon"><ion-icon name="film-outline"></ion-icon></div>
+                                    <span class="browse-card-label notranslate" translate="no">Movies</span>
+                                </a>
+                                <a href="#" class="browse-card" data-view="series" id="browseCardSeries">
+                                    <div class="browse-card-icon"><ion-icon name="tv-outline"></ion-icon></div>
+                                    <span class="browse-card-label notranslate" translate="no">Series</span>
+                                </a>
+                                <a href="#" class="browse-card" data-view="anime" id="browseCardAnime">
+                                    <div class="browse-card-icon anime-goku-wrapper">
+                                        <svg class="anime-goku-icon" viewBox="0 0 100 100" style="width: 1.4em; height: 1.4em; display: inline-block; fill: none; stroke: currentColor; stroke-width: 5; stroke-linejoin: miter; stroke-linecap: butt;">
+                                          <path d="M 50 88 L 40 80 L 35 68 L 20 72 L 28 60 L 12 60 L 25 50 L 10 30 L 38 42 L 38 12 L 50 35 L 60 15 L 65 38 L 85 28 L 75 45 L 95 52 L 78 60 L 85 70 L 65 68 L 60 80 Z" />
+                                          <path d="M 35 68 L 40 55 L 44 65 L 50 50 L 54 68 L 60 55 L 65 68" />
+                                        </svg>
+                                    </div>
+                                    <span class="browse-card-label notranslate" translate="no">Anime</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Section: PERSONAL -->
+                        <div class="browse-dropdown-section">
+                            <div class="browse-section-label">PERSONAL</div>
+                            <div class="browse-grid browse-grid-2">
+                                <a href="#" class="browse-card" data-view="continue" id="browseCardContinue">
+                                    <div class="browse-card-icon"><ion-icon name="play-circle-outline"></ion-icon></div>
+                                    <span class="browse-card-label notranslate" translate="no">Continue Watching</span>
+                                </a>
+                                <a href="#" class="browse-card" data-view="watchlist" id="browseCardWatchlist">
+                                    <div class="browse-card-icon"><ion-icon name="heart-outline"></ion-icon></div>
+                                    <span class="browse-card-label notranslate" translate="no">My Watchlist</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Section: MORE / APPS -->
+                        <div class="browse-dropdown-section">
+                            <div class="browse-section-label">MORE</div>
+                            <div class="browse-grid browse-grid-3">
+                                <a href="download.html" class="browse-card" id="browseCardDownload">
+                                    <div class="browse-card-icon"><ion-icon name="cloud-download-outline"></ion-icon></div>
+                                    <span class="browse-card-label notranslate" translate="no">Download</span>
+                                </a>
+                                <a href="#" class="browse-card" id="browseCardAi">
+                                    <div class="browse-card-icon"><ion-icon name="chatbubbles-outline"></ion-icon></div>
+                                    <span class="browse-card-label notranslate" translate="no">Ask AI</span>
+                                </a>
+                                <a href="#" class="browse-card" id="browseCardReport">
+                                    <div class="browse-card-icon"><ion-icon name="alert-circle-outline"></ion-icon></div>
+                                    <span class="browse-card-label notranslate" translate="no">Report</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Language Selector (Custom Dropdown) -->
                 <div class="custom-lang-dropdown notranslate" translate="no" id="customLangDropdown">
                     <div class="lang-dropdown-selected" id="langDropdownBtn">
@@ -163,22 +200,6 @@
                 <!-- Search Icon Button -->
                 <button class="nav-action-btn" id="navSearchBtn" onclick="if(window.openSearchModal) window.openSearchModal(); else { document.getElementById('searchModal').classList.remove('hidden'); document.body.style.overflow='hidden'; }" title="Search">
                     <ion-icon name="search-outline"></ion-icon>
-                </button>
-                <!-- AI Assistant Button -->
-                <button class="nav-ai-btn notranslate" translate="no" id="navAiBtn" title="Ask CineWatch AI">
-                    <ion-icon name="chatbubbles-outline" style="font-size: 1.05rem;"></ion-icon>
-                    <span class="ai-btn-text" id="navAiBtnText">Ask AI</span>
-                </button>
-
-                <!-- Download App Button -->
-                <a href="download.html" class="nav-download-btn" title="Download CineWatch App">
-                    <ion-icon name="cloud-download-outline" class="download-icon-mobile" style="display:none;"></ion-icon>
-                    <span class="ai-btn-text download-text">Download</span>
-                </a>
-
-                <!-- Report Issue Button -->
-                <button class="nav-report-btn" id="headerReportBtn" title="Report an Issue / Send Feedback">
-                    <span class="report-text">Report</span>
                 </button>
 
                 <!-- User Auth Badge / Profile -->
