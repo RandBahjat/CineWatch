@@ -1443,14 +1443,26 @@ function switchView(viewName) {
     moviesSection.classList.remove("hidden");
     // Reset filter & page on fresh nav; keep state if already there
     renderMoviesSection();
+    setTimeout(() => {
+      const bar = document.getElementById("moviesFilterBar");
+      if (bar && window.updateFilterScrollNav) window.updateFilterScrollNav(bar);
+    }, 60);
   } else if (viewName === "series") {
     hideAll();
     seriesSection.classList.remove("hidden");
     renderSeriesSection();
+    setTimeout(() => {
+      const bar = document.getElementById("seriesFilterBar");
+      if (bar && window.updateFilterScrollNav) window.updateFilterScrollNav(bar);
+    }, 60);
   } else if (viewName === "anime") {
     hideAll();
     if (animeSection) animeSection.classList.remove("hidden");
     renderAnimeSection();
+    setTimeout(() => {
+      const bar = document.getElementById("animeFilterBar");
+      if (bar && window.updateFilterScrollNav) window.updateFilterScrollNav(bar);
+    }, 60);
   } else if (viewName === "watchlist") {
     hideAll();
     watchlistSection.classList.remove("hidden");
