@@ -5427,10 +5427,7 @@ window._SERIES_DATA = [
             episode: 8,
             title: 'The Gospel According to Bobby Glass'
           },
-          {
-            episode: 9,
-            title: 'Look for the Light'
-          }
+          
         ]
       },
       {
