@@ -3,9 +3,9 @@
 // Push to GitHub (or save â€” auto-sync will handle it) for changes to go live.
 
 window._SERIES_DATA = [
-  
 
- 
+
+
   {
     title: "Mousetrap",
     type: 'TV Show',
@@ -23,7 +23,7 @@ window._SERIES_DATA = [
     videoUrl: '290193',
     trailerUrl: "",
     overview: 'Reclusive novelist Je Moon-jae wake to find identity stolen, ally with ruthless loan shark hunt down The Rat who took everything.',
-    overviewKurdish:"جێ مون‌جای، ڕۆماننووسێکی گۆشەگیر، هەڵدەستێت و دەبینێت ناسنامەکەی دزراوە، هاوپەیمانی لەگەڵ قەرزدەرێکی دڵڕەق دەکات بۆ ڕاونانی مشکەکە کە هەموو شتێکی لێ بردووە.",
+    overviewKurdish: "جێ مون‌جای، ڕۆماننووسێکی گۆشەگیر، هەڵدەستێت و دەبینێت ناسنامەکەی دزراوە، هاوپەیمانی لەگەڵ قەرزدەرێکی دڵڕەق دەکات بۆ ڕاونانی مشکەکە کە هەموو شتێکی لێ بردووە.",
     director: 'Kim Hong-sun, Lee Jae-gon',
     cast: [
       'Ryu Jun-yeol, Sul Kyung-gu, Lee Kyoo-hyung'
@@ -89,7 +89,7 @@ window._SERIES_DATA = [
     videoUrl: '95350',
     trailerUrl: "",
     overview: 'John Stewart, new recruit, and Hal Jordan, veteran Lantern, two space cops dragged into dark earth-based mystery investigating murder in American heartland. Story split across two timelines, 2016 and 2026, buddy-cop energy meets superhero stakes.',
-    overviewKurdish:"جۆن ستیوارت، ئەندامێکی نوێ، و هال جۆردان، لانتەرنێکی شارەزا، دوو پۆلیسی سەرۆکی گەردوونی دەگیرێن ناو نهێنییەکی تاریکی سەر زەوی کە پەیوەستە بە لێکۆڵینەوەی کوشتنێک لە ناوچەیەکی ئەمریکی. چیرۆکەکە بەسەر دوو کاتدا دابەش دەبێت، ٢٠١٦ و ٢٠٢٦، وزەی هاوڕێیەتی پۆلیسی تێکەڵ دەبێت لەگەڵ مەترسییەکانی پاڵەوانێکی سوپەرهیرۆ.",
+    overviewKurdish: "جۆن ستیوارت، ئەندامێکی نوێ، و هال جۆردان، لانتەرنێکی شارەزا، دوو پۆلیسی سەرۆکی گەردوونی دەگیرێن ناو نهێنییەکی تاریکی سەر زەوی کە پەیوەستە بە لێکۆڵینەوەی کوشتنێک لە ناوچەیەکی ئەمریکی. چیرۆکەکە بەسەر دوو کاتدا دابەش دەبێت، ٢٠١٦ و ٢٠٢٦، وزەی هاوڕێیەتی پۆلیسی تێکەڵ دەبێت لەگەڵ مەترسییەکانی پاڵەوانێکی سوپەرهیرۆ.",
     director: 'Chris Mundy',
     cast: [
       'Kyle Chandler, Aaron Pierre, Kelly Macdonald, Garret Dillahunt, Poorna Jagannathan, Ulrich Thomsen, Nathan Fillion, Laura Linney'
@@ -275,7 +275,7 @@ window._SERIES_DATA = [
     videoUrl: '108978',
     trailerUrl: "https://youtu.be/PCbp1FfipPg?si=RUMi40UOLFe6HQYPF",
     overview: 'Jack Reacher spent years as a decorated investigator in the U.S. Army\'s military police, uncovering corruption others tried to bury. Now retired from that life, he wanders from town to town with nothing but a toothbrush and his instincts â€” but wherever he lands, danger has a way of finding him, and Reacher has a way of finishing it.',
-    overviewKurdish:"جاک ڕیچەر بۆ ماوەی چەندین ساڵ وەک پۆلیسی سوپای ئەمریکا خزمەتی کردووە و ناوبانگی بەدەستهێناوە وەک لێکۆڵەرێکی بەتوانا، ئەو گەندەڵییانی ئاشکرا کردووە کە خەڵکانی تر هەوڵیان دەدا شاردنەوە. ئێستا لەو ژیانە خۆی بازداوە، لە شارۆچکەیەک بۆ شارۆچکەیەکی تر دەگەڕێت بەبێ هیچ شتێک جگە لە فراشکەیەکی ددان و هەستی خۆی — بەڵام هەرکوێ دابنیشێت، مەترسی ڕێگای دەدۆزێتەوە بۆ گەیشتنی، و ڕیچەریش ڕێگای خۆی هەیە بۆ کۆتایی هێنانی پێ.",
+    overviewKurdish: "جاک ڕیچەر بۆ ماوەی چەندین ساڵ وەک پۆلیسی سوپای ئەمریکا خزمەتی کردووە و ناوبانگی بەدەستهێناوە وەک لێکۆڵەرێکی بەتوانا، ئەو گەندەڵییانی ئاشکرا کردووە کە خەڵکانی تر هەوڵیان دەدا شاردنەوە. ئێستا لەو ژیانە خۆی بازداوە، لە شارۆچکەیەک بۆ شارۆچکەیەکی تر دەگەڕێت بەبێ هیچ شتێک جگە لە فراشکەیەکی ددان و هەستی خۆی — بەڵام هەرکوێ دابنیشێت، مەترسی ڕێگای دەدۆزێتەوە بۆ گەیشتنی، و ڕیچەریش ڕێگای خۆی هەیە بۆ کۆتایی هێنانی پێ.",
     cast: [
       'Alan Ritchson',
       'Maria Sten',
@@ -5375,13 +5375,12 @@ window._SERIES_DATA = [
     duration: '50m',
     genres: [
       'Comedy',
-      'Action',
-      'Horror',
-      'Sci-Fi'
+      'Crime',
+      'Drama',
     ],
-    poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg',
-    backdrop: 'https://image.tmdb.org/t/p/original/uDgy6hyPd82kOHh6I95FLtLnj6p.jpg',
-    videoUrl: '100088',
+    poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/tw3tzfXaSpmUZIB8ZNqNEGzMBCy.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/dj0nrEVWe7KIUTT4ioAfHQyrTwN.jpg',
+    videoUrl: '236235',
     trailerUrl: "",
     overview: 'Twenty years after a fungal pandemic destroys civilization, a hardened survivor named Joel is hired to smuggle Ellie, a 14-year-old girl, out of an oppressive quarantine zone. What starts as a small job soon becomes a brutal, heartbreaking journey, as they both must traverse the U.S. and depend on each other for survival.',
     director: 'Craig Mazin, Neil Druckmann',
@@ -8653,7 +8652,7 @@ window._SERIES_DATA = [
     ]
   },
 
-{
+  {
     title: 'Outer Banks',
     type: 'TV Show',
     year: 2020,
@@ -20466,7 +20465,7 @@ window._SERIES_DATA = [
       {
         season: 1,
         episodes: [
-          
+
           {
             episode: 1,
             title: 'Pilot'
@@ -20499,7 +20498,7 @@ window._SERIES_DATA = [
             episode: 8,
             title: 'And Salt the Earth Behind You'
           },
-          
+
         ]
       },
       {
@@ -20537,7 +20536,7 @@ window._SERIES_DATA = [
             episode: 8,
             title: 'All My Life, My Heart Has Yearned for a Thing I Cannot Name'
           },
-         
+
         ]
       },
       {
@@ -20575,8 +20574,8 @@ window._SERIES_DATA = [
             episode: 8,
             title: 'In God We Trust'
           },
-        
-        
+
+
         ]
       }
     ]
@@ -53495,7 +53494,7 @@ window._SERIES_DATA = [
     ]
   },
 
-{
+  {
     title: "X-Men '97",
     type: "TV Show",
     year: 2024,
@@ -53587,7 +53586,7 @@ window._SERIES_DATA = [
     year: 2023,
     rating: 8.3,
     age: "TV-14",
-    genres: ["Action", "Adventure","Comedy","Fantasy"],
+    genres: ["Action", "Adventure", "Comedy", "Fantasy"],
     poster: "https://image.tmdb.org/t/p/original/yEtSBgugED8XyhqjcKgF6j2zDMf.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/qD211Hb5XwFxrszzBBe5EUYJerh.jpg",
     videoUrl: "111110",
@@ -53628,7 +53627,7 @@ window._SERIES_DATA = [
       }
     ]
   },
- {
+  {
     title: 'Shameless',
     type: 'TV Show',
     year: 2011,
@@ -53638,13 +53637,13 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/8A071YZoKIzoXt4t6aPWEyyuoxw.jpg',
     genres: ['Drama', 'Comedy'],
     duration: '45m',
-    videoUrl:"34307",
+    videoUrl: "34307",
     trailerUrl: "",
     overview: "Chicagoan Frank Gallagher is the proud single dad of six smart, industrious, independent kids, who without him would be... perhaps better off. When Frank's not at the bar spending what little money they have, he's passed out on the floor. But the kids have found ways to grow up in spite of him.",
     overviewKurdish: "",
     director: 'John Wells',
     cast: ['William H. Macy', 'Emmy Rossum', 'Jeremy Allen White', 'Ethan Cutkosky', 'Shanola Hampton', 'Steve Howey', 'Emma Kenney', 'Cameron Monaghan', 'Noel Fisher'],
-            seasons: [
+    seasons: [
       {
         season: 1,
         episodes: [
@@ -53836,7 +53835,7 @@ window._SERIES_DATA = [
       }
     ]
   },
-{
+  {
     title: "Beauty in Black",
     type: "TV Show",
     year: 2024,
