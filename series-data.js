@@ -5405,7 +5405,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 3,
-            title: 'Wheres My Weed At?'
+            title: 'Where is My Weed At?'
           },
           {
             episode: 4,
