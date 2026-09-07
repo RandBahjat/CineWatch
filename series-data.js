@@ -5370,7 +5370,7 @@ window._SERIES_DATA = [
     title: 'The Gentlemen',
     type: 'TV Show',
     year: 2024,
-    rating: 8.4,
+    rating: 8.0,
     age: 'TV-MA',
     duration: '50m',
     genres: [
