@@ -4477,14 +4477,14 @@ body.rtl-layout .details-back-btn svg {
     position: absolute !important;
     top: 50% !important;
     left: 50% !important;
-    width: 100% !important;
-    height: 100% !important;
-    min-width: 100% !important;
-    min-height: 100% !important;
-    transform: translate(-50%, -50%) scale(1.22) !important;
+    width: 145% !important;
+    height: 145% !important;
+    min-width: 145% !important;
+    min-height: 145% !important;
+    transform: translate(-50%, -50%) !important;
     object-fit: cover !important;
     border: none !important;
-    pointer-events: auto !important;
+    pointer-events: none !important;
     background: #000000 !important;
   }
 
