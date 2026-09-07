@@ -385,13 +385,6 @@ select {
   background: rgba(229, 9, 20, 0.1);
 }
 
-.btn-demo {
-  background: linear-gradient(135deg, #2b3644, #1f2833);
-.btn-lg {
-  padding: 0.9rem 2rem;
-  font-size: 1.05rem;
-}
-
 /* ==========================================================================
    REDESIGNED CINEWATCH NAVBAR & CINEMATIC HOVER EFFECT
    ========================================================================== */
