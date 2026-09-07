@@ -1080,7 +1080,7 @@ function renderBrowseGrid(items, gridId, page) {
         <p>Try a different filter.</p>
       </div>`;
   } else {
-    grid.innerHTML = pageItems.map(m => createMovieCardHTML(m, null, true)).join("");
+    grid.innerHTML = pageItems.map(m => createMovieCardHTML(m, null, false)).join("");
     grid.querySelectorAll(".movie-card").forEach((card) => {
       card.onclick = () => openDetailsModal(card.dataset.id);
     });
