@@ -1380,6 +1380,8 @@ function switchView(viewName) {
   }
 
   document.body.classList.remove("mobile-browse-open");
+  document.body.classList.remove("view-home", "view-movies", "view-series", "view-anime", "view-watchlist", "view-continue", "view-genres", "view-search", "view-details");
+  document.body.classList.add("view-" + viewName);
 
   if (window.updateNavGlider) window.updateNavGlider(true);
   window.dispatchEvent(new Event("scroll"));
@@ -1422,6 +1424,15 @@ function switchView(viewName) {
       navbar.classList.add("hidden");
     } else {
       navbar.classList.remove("hidden");
+    }
+  }
+
+  const mobileDock = document.getElementById("mobileBottomDock");
+  if (mobileDock) {
+    if (viewName === "details") {
+      mobileDock.classList.add("hidden");
+    } else {
+      mobileDock.classList.remove("hidden");
     }
   }
 
