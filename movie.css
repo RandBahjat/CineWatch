@@ -393,12 +393,12 @@ select {
    MINIMALIST NAVBAR WITH RIGHT-SIDE BROWSE BUTTON & CINEBY-STYLE DROPDOWN
    ========================================================================== */
 
-/* Navbar: Floating directly over hero backdrop */
+/* Navbar: Floating directly over hero backdrop (stays at top, does not follow on scroll) */
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
   height: 80px;
   background: transparent !important;
   backdrop-filter: none !important;
@@ -1248,8 +1248,8 @@ body.rtl-layout .modal-search-icon {
 }
 
 .mobile-dock-btn .dock-user-icon {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   display: block;
   stroke-width: 1.6;
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
@@ -1316,9 +1316,9 @@ body.rtl-layout .modal-search-icon {
     display: none !important;
   }
 
-  /* Compact and clean mobile top navbar locked to top */
+  /* Compact and clean mobile top navbar staying at top */
   .navbar {
-    position: fixed !important;
+    position: absolute !important;
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
@@ -4458,7 +4458,7 @@ body.rtl-layout .details-back-btn svg {
 /* Portrait Mobile Devices (max-width: 480px) */
 @media (max-width: 480px) {
   .navbar {
-    position: fixed !important;
+    position: absolute !important;
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
@@ -5548,9 +5548,9 @@ body.rtl-layout .details-back-btn svg {
 }
 
 .avatar-icon.badge-avatar {
-  width: 40px;
-  height: 40px;
-  font-size: 1.4rem;
+  width: 44px;
+  height: 44px;
+  font-size: 1.55rem;
 }
 
 .avatar-icon.header-avatar {
@@ -5762,8 +5762,8 @@ body.rtl-layout .details-back-btn svg {
 }
 
 .avatar-custom-img.badge-avatar {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border: 1.5px solid rgba(255, 255, 255, 0.35);
 }
 
@@ -5967,8 +5967,8 @@ body.rtl-layout .details-back-btn svg {
 }
 
 .avatar-custom-img.badge-avatar {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border: 1.5px solid rgba(255, 255, 255, 0.35);
 }
 
@@ -6422,12 +6422,12 @@ body.rtl-layout .details-back-btn svg {
    NAVBAR USER ICON BUTTON (not signed in)
    ========================================= */
 .nav-user-icon-btn {
-  width: 44px;
-  height: 44px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.09);
-  border: 1.5px solid rgba(255, 255, 255, 0.22);
-  color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1.5px solid rgba(255, 255, 255, 0.26);
+  color: rgba(255, 255, 255, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6437,16 +6437,17 @@ body.rtl-layout .details-back-btn svg {
 }
 
 .nav-user-icon-btn:hover {
-  background: rgba(229, 9, 20, 0.22);
+  background: rgba(229, 9, 20, 0.25);
   border-color: var(--primary);
   color: #fff;
   transform: scale(1.08);
-  box-shadow: 0 0 14px rgba(229, 9, 20, 0.4);
+  box-shadow: 0 0 16px rgba(229, 9, 20, 0.45);
 }
 
 .nav-user-icon-btn svg {
-  width: 25px;
-  height: 25px;
+  width: 27px;
+  height: 27px;
+  stroke-width: 2.1;
   transition: transform 0.2s ease;
 }
 
