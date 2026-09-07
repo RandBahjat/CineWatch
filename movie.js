@@ -1316,12 +1316,7 @@ function switchView(viewName) {
 
   // Dismiss Browse dropdown upon switching view
   const navBrowseItem = document.getElementById("navBrowseItem");
-  const navBrowseDropdown = document.getElementById("navBrowseDropdown");
-  if (navBrowseDropdown) {
-    navBrowseDropdown.classList.add("is-hidden");
-  }
   if (navBrowseItem) {
-    navBrowseItem.classList.add("is-closed");
     navBrowseItem.classList.remove("is-open");
   }
 
