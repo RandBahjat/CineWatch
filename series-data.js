@@ -5455,7 +5455,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: 'The Price'
+            title: 'The Bells of San Domenico'
           },
           {
             episode: 7,
