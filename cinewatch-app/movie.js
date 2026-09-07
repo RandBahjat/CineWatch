@@ -1350,6 +1350,26 @@ function switchView(viewName) {
     }
   });
 
+  // Mobile Bottom Dock Active State Sync
+  document.querySelectorAll(".mobile-dock-btn").forEach((btn) => {
+    if (btn.dataset.view === viewName) {
+      btn.classList.add("active");
+    } else {
+      btn.classList.remove("active");
+    }
+  });
+
+  const mobileDockBrowse = document.getElementById("mobileDockBrowse");
+  if (mobileDockBrowse) {
+    if (viewName === 'series' || viewName === 'anime' || viewName === 'continue') {
+      mobileDockBrowse.classList.add("active");
+    } else if (viewName === 'home' || viewName === 'movies' || viewName === 'watchlist') {
+      mobileDockBrowse.classList.remove("active");
+    }
+  }
+
+  document.body.classList.remove("mobile-browse-open");
+
   if (window.updateNavGlider) window.updateNavGlider(true);
   window.dispatchEvent(new Event("scroll"));
 
@@ -3246,6 +3266,7 @@ function bindEventListeners() {
     if (!browseItem) return;
     isClosingBrowse = true;
     browseItem.classList.remove("is-open");
+    document.body.classList.remove("mobile-browse-open");
     setTimeout(() => {
       isClosingBrowse = false;
     }, 250);
@@ -3283,7 +3304,7 @@ function bindEventListeners() {
     }
 
     document.addEventListener("click", (e) => {
-      if (!browseItem.contains(e.target)) {
+      if (!browseItem.contains(e.target) && !e.target.closest("#mobileDockBrowse")) {
         closeBrowseDropdown();
       }
     });
@@ -3310,6 +3331,34 @@ function bindEventListeners() {
         if (headerReportBtn) headerReportBtn.click();
       } else if (card.id === 'browseCardDownload') {
         window.location.href = 'download.html';
+      }
+    };
+  });
+
+  // Mobile Bottom Dock Event Handlers
+  document.querySelectorAll(".mobile-dock-btn").forEach((btn) => {
+    btn.onclick = (e) => {
+      e.preventDefault();
+      const targetView = btn.dataset.view;
+      if (targetView) {
+        document.body.classList.remove("mobile-browse-open");
+        closeBrowseDropdown();
+        switchView(targetView);
+      } else if (btn.id === "mobileDockBrowse") {
+        document.body.classList.toggle("mobile-browse-open");
+        toggleBrowseDropdown();
+      } else if (btn.id === "mobileDockSearch") {
+        document.body.classList.remove("mobile-browse-open");
+        closeBrowseDropdown();
+        if (window.openSearchModal) {
+          window.openSearchModal();
+        } else {
+          const sm = document.getElementById("searchModal");
+          if (sm) {
+            sm.classList.remove("hidden");
+            document.body.style.overflow = "hidden";
+          }
+        }
       }
     };
   });
