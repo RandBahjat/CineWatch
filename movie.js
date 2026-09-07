@@ -15,7 +15,7 @@ let FEATURED_TITLES = ["Mayday","The Runner","Coyote vs. Acme","Just Play Dead",
 let TOP_10_TRENDING_TODAY = ["Mayday","The Runner","Just Play Dead","Coyote vs. Acme" , "Mutiny","Reacher", "Spider-Man: Brand New Day","One Piece", "Lanterns", "The Odyssey"];
 let TRENDING_THIS_WEEK_MOVIES = ["Mayday","The Whispher Man","Batman: Knightfall Part 1: Knightfall", "Mutiny", "Spider-Man: Brand New Day", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Minions & Monsters", "The Last House", "Disclosure Day", "The Invite", "The End of Oak Street", "Backrooms", "Camp Rock 3", "Evil Dead Burn", "Just Play Dead"];
 let TRENDING_THIS_WEEK_SERIES = ["Lanterns", "Reacher", "Lucky", "Silo", "One Piece", "Ted Lasso", "X-Men '97", "Lioness", "Outer Banks"];
-const POPULAR_MOVIES = ["Mayday", "", "The Odyssey", "Minions & Monsters", "The Invite", "Spider-Man: No Way Home", "The End of Oak Street", "Disclosure Day", "Camp Rock 3", "The Last House", "Michael", "Project Hail Mary"];
+const POPULAR_MOVIES = ["Mayday", "The Whispher Man", "The Odyssey", "Minions & Monsters", "The Invite", "Spider-Man: No Way Home", "The End of Oak Street", "Disclosure Day", "Camp Rock 3", "The Last House", "Michael", "Project Hail Mary"];
 const POPULAR_SERIES = ["Reacher", "House of the Dragon", "Ted Lasso", "The Mentalist", "Lucky", "Off Campus", "Silo", "Game of Thrones", "The Sopranos", "Stranger Things", "The Boys"];
 
 // Expose globally so apps & modules can sync seamlessly with movie.js
