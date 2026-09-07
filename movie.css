@@ -1294,6 +1294,71 @@ body.rtl-layout .modal-search-icon {
     display: none !important;
   }
 
+  /* Hide Desktop navigation items from the top navbar on mobile/tablet */
+  .nav-home-link,
+  .nav-link,
+  .nav-links,
+  .nav-glider,
+  #navSearchBtn {
+    display: none !important;
+  }
+
+  /* Compact and clean mobile top navbar */
+  .navbar {
+    height: 64px !important;
+  }
+
+  .navbar.scrolled {
+    height: 60px !important;
+  }
+
+  .nav-container {
+    height: 100% !important;
+    padding: 0 1.25rem !important;
+    gap: 0.5rem !important;
+  }
+
+  .nav-left {
+    gap: 0.5rem !important;
+  }
+
+  .brand-logo {
+    font-size: 1.3rem !important;
+    gap: 0.6rem !important;
+  }
+
+  .brand-logo .brand-icon {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 1.15rem !important;
+    border-radius: 10px !important;
+  }
+
+  .brand-logo .brand-text {
+    font-size: 1.3rem !important;
+  }
+
+  .nav-right {
+    gap: 0.5rem !important;
+  }
+
+  .custom-lang-dropdown {
+    margin-right: 0 !important;
+  }
+
+  .lang-dropdown-selected {
+    padding: 0.4rem 0.75rem !important;
+    font-size: 0.84rem !important;
+    gap: 0.4rem !important;
+  }
+
+  .lang-toast {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
   body {
     padding-bottom: 90px !important;
   }
