@@ -1241,7 +1241,8 @@ body.rtl-layout .modal-search-icon {
   transform: scale(1.05);
 }
 
-.mobile-dock-btn .dock-browse-icon {
+.mobile-dock-btn .dock-browse-icon,
+.mobile-dock-btn .dock-user-icon {
   width: 18px;
   height: 18px;
   display: block;
