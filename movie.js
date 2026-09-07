@@ -1347,6 +1347,9 @@ function switchView(viewName) {
       card.classList.add("active");
     } else {
       card.classList.remove("active");
+    }
+  });
+
   // Mobile Bottom Dock Active State Sync
   document.querySelectorAll(".mobile-dock-btn").forEach((btn) => {
     if (btn.dataset.view === viewName) {
