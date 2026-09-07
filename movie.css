@@ -9200,17 +9200,25 @@ min-width: 0;
   margin-bottom: 2.5rem !important;
 }
 
-/* Force portrait aspect ratio for browse grid cards */
+/* Force portrait aspect ratio for browse grid cards — beats the 16:9 base rule */
 .browse-grid .card-poster-wrap,
-.browse-grid .force-poster-wrap {
+.browse-grid .force-poster-wrap,
+#moviesGrid .card-poster-wrap,
+#seriesGrid .card-poster-wrap,
+#animeGrid .card-poster-wrap {
   aspect-ratio: 2 / 3 !important;
+  width: 100% !important;
 }
 
-/* Make cards look clean in the browse grid */
-.browse-grid .movie-card {
-  width: 100% !important;
+/* Override the fixed flex-basis on movie-card inside a grid */
+.browse-grid .movie-card,
+#moviesGrid .movie-card,
+#seriesGrid .movie-card,
+#animeGrid .movie-card {
   flex: none !important;
+  width: 100% !important;
   min-width: 0 !important;
+  max-width: 100% !important;
 }
 
 /* Filter bar: horizontal scroll, no scrollbar */
