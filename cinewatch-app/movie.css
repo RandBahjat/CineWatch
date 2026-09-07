@@ -1416,10 +1416,15 @@ body.rtl-layout .modal-search-icon {
     z-index: 1400 !important;
   }
 
+  .nav-browse-dropdown.cineby-dropdown {
+    display: none;
+  }
+
   body.mobile-browse-open .nav-browse-dropdown.cineby-dropdown {
+    display: block !important;
     position: fixed !important;
     top: auto !important;
-    bottom: calc(env(safe-area-inset-bottom, 0px) + 80px) !important;
+    bottom: calc(env(safe-area-inset-bottom, 0px) + 76px) !important;
     left: 50% !important;
     right: auto !important;
     transform: translate(-50%, 0) scale(1) !important;
@@ -2436,6 +2441,10 @@ body.rtl-layout .modal-search-clear {
 .card-rating {
   color: var(--gold);
   font-weight: 600;
+}
+
+.card-rating .star-icon {
+  color: #ffc107 !important;
 }
 
 .card-year {
@@ -9240,8 +9249,13 @@ min-width: 0;
   width: 100% !important;
 }
 
-/* Mobile Screen: Show vertical poster with 2:3 ratio instead of 16:9 backdrop */
+/* Mobile Screen: Show vertical poster with 2:3 ratio & larger card sizes */
 @media (max-width: 768px) {
+  .movie-card:not(.continue-card) {
+    flex: 0 0 176px !important;
+    min-width: 160px !important;
+  }
+
   .movie-card:not(.continue-card) .card-poster-wrap,
   .browse-grid .card-poster-wrap,
   #moviesGrid .card-poster-wrap,
@@ -9249,6 +9263,14 @@ min-width: 0;
   #animeGrid .card-poster-wrap,
   .filtered-grid .card-poster-wrap {
     aspect-ratio: 2 / 3 !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-card:not(.continue-card) {
+    flex: 0 0 168px !important;
+    min-width: 154px !important;
   }
 }
 

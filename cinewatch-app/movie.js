@@ -722,7 +722,7 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
       <div class="card-details">
         <h4 class="card-title notranslate" translate="no">${movie.title}</h4>
         <div class="card-meta">
-          <span class="card-rating notranslate" translate="no"><span class="star-icon" style="color: #e50914; margin-right: 3px;">★</span>${formatRating(movie.rating)}</span>
+          <span class="card-rating notranslate" translate="no"><span class="star-icon" style="color: #ffc107; margin-right: 3px;">★</span>${formatRating(movie.rating)}</span>
           <span class="card-year notranslate" translate="no">${formatNumber(movie.year)}</span>
           <span class="card-type notranslate" translate="no">${formatMediaType(displayType)}</span>
         </div>
@@ -3280,6 +3280,23 @@ function bindEventListeners() {
   // Browse Dropdown Controls & Dismissal
   const browseItem = document.getElementById("navBrowseItem");
   const browseTriggerBtn = document.getElementById("navBrowseTrigger");
+  const browseDropdown = document.getElementById("navBrowseDropdown");
+
+  // Move dropdown to body on mobile so it stays fixed to viewport regardless of navbar scroll
+  function syncBrowseDropdownPlacement() {
+    if (!browseDropdown || !browseItem) return;
+    if (window.innerWidth <= 900) {
+      if (browseDropdown.parentElement !== document.body) {
+        document.body.appendChild(browseDropdown);
+      }
+    } else {
+      if (browseDropdown.parentElement !== browseItem) {
+        browseItem.appendChild(browseDropdown);
+      }
+    }
+  }
+  window.addEventListener("resize", syncBrowseDropdownPlacement, { passive: true });
+  syncBrowseDropdownPlacement();
 
   let isClosingBrowse = false;
 
@@ -3325,7 +3342,12 @@ function bindEventListeners() {
     }
 
     document.addEventListener("click", (e) => {
-      if (!browseItem.contains(e.target) && !e.target.closest("#mobileDockBrowse") && !e.target.closest("#browseMobileCloseBtn")) {
+      const dropdown = document.getElementById("navBrowseDropdown");
+      const isInside = (browseItem && browseItem.contains(e.target)) ||
+                       (dropdown && dropdown.contains(e.target)) ||
+                       e.target.closest("#mobileDockBrowse") ||
+                       e.target.closest("#browseMobileCloseBtn");
+      if (!isInside) {
         closeBrowseDropdown();
       }
     });
@@ -3382,6 +3404,7 @@ function bindEventListeners() {
         closeBrowseDropdown();
         switchView(targetView);
       } else if (btn.id === "mobileDockBrowse") {
+        e.stopPropagation();
         if (document.body.classList.contains("mobile-browse-open")) {
           closeBrowseDropdown();
         } else {
