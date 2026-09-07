@@ -1695,20 +1695,7 @@ body.rtl-layout .modal-search-clear {
 
 
 /* Category Grid */
-/* ---- Browse Grid ---- */
-.browse-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1.6rem 1.2rem;
-  margin-bottom: 2.5rem;
-}
 
-@media (max-width: 768px) {
-  .browse-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem 0.8rem;
-  }
-}
 .search-tags-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
@@ -5947,12 +5934,19 @@ body.rtl-layout .details-back-btn svg {
   box-shadow: 0 4px 16px rgba(255, 59, 68, 0.45) !important;
 }
 
-/* ---- Browse Grid (Portrait Posters) ---- */
+/* ---- Browse Grid ---- */
 .browse-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.6rem 1.2rem;
   margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .browse-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 0.8rem;
+  }
 }
 
 .browse-card {
