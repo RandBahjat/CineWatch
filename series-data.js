@@ -5382,7 +5382,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/dj0nrEVWe7KIUTT4ioAfHQyrTwN.jpg',
     videoUrl: '236235',
     trailerUrl: "",
-    overview: 'Twenty years after a fungal pandemic destroys civilization, a hardened survivor named Joel is hired to smuggle Ellie, a 14-year-old girl, out of an oppressive quarantine zone. What starts as a small job soon becomes a brutal, heartbreaking journey, as they both must traverse the U.S. and depend on each other for survival.',
+    overview: 'Eddie Horniman inherit aristocratic estate, discover it sit on massive weed empire run by American crime family. Must navigate dangerous underworld, decide keep clean hand or embrace criminal life.',
     director: 'Craig Mazin, Neil Druckmann',
     cast: [
       'Pedro Pascal, Bella Ramsey, Anna Torv, Gabriel Luna, Storm Reid, Nick Offerman, Murray Bartlett, Isabela Merced, Young Mazino'
