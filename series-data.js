@@ -5397,7 +5397,7 @@ window._SERIES_DATA = [
         episodes: [
           {
             episode: 1,
-            title: "When You're Lost in the Darkness"
+            title: "Refined Aggression"
           },
           {
             episode: 2,
