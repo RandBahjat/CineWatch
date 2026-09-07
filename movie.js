@@ -2356,7 +2356,7 @@ function openDetailsModal(movieId) {
             localStorage.setItem("cw_anime_audio_pref", chosen);
             seasonAudioToggle.querySelectorAll(".anime-audio-pill").forEach(x => x.classList.toggle("active", x.dataset.audio === chosen));
             if (typeof showToast === "function") {
-              showToast(`Server set to ${chosen === 'dub' ? '🎙️ Mega Server (DUB)' : '🟣 Mega Server (SUB)'}`);
+              showToast(`Server set to Mega Server (${chosen === 'dub' ? 'DUB' : 'SUB'})`);
             }
           };
         });
