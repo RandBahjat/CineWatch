@@ -4436,9 +4436,7 @@ body.rtl-layout .details-back-btn svg {
     height: 64px;
   }
 
-  .navbar .brand-logo {
-    display: none !important;
-  }
+  /* Brand logo remains visible on mobile */
 
   .nav-container {
     padding: 0 0.6rem;
