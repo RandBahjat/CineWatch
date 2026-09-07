@@ -5383,7 +5383,7 @@ window._SERIES_DATA = [
     videoUrl: '236235',
     trailerUrl: "",
     overview: 'Fancy rich guy Eddie inherits big family estate after father die. But surprise! Massive underground cannabis weed empire hiding right under castle ground! Dangerous gang lords own farm. Eddie must play dirty crime game with bad guys to keep family safe and protect mansion.',
-    overviewKurdish:"Kurdish Overvieپ
+    overviewKurdish:"Kurdish Overvie
 
 ئێدی هۆرنیمان بە شێوەیەکی چاوەڕواننەکراو خاوەندارێتیی زەوی و ماڵە گەورەکەی باوکی بە میرات بۆ دەمێنێتەوە، بەڵام بۆی دەردەکەوێت کە ئەستێڵک و زەوییەکانی خێزانەکەی بوونەتە بنکەیەکی گەورەی ڕێنیشاندانی ئیمپراتۆرییەتیی ماریوانا لەلایەن تاوانبارانەوە. ئێدی ناچار دەبێت بچێتە ناو جیهانی ژێر زەویی تاوانکاریی بریتانیاوە بۆ ئەوەی خێزانەکەی لە مەترسی بپارێزێت و دەسەڵات بگرێتە دەست."
     director: 'Craig Mazin, Neil Druckmann',
