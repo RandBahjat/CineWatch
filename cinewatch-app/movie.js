@@ -1314,6 +1314,13 @@ function switchView(viewName) {
     else link.classList.remove("active");
   });
 
+  // Dismiss Browse dropdown upon switching view
+  const navBrowseItem = document.getElementById("navBrowseItem");
+  if (navBrowseItem) {
+    navBrowseItem.classList.add("is-closed");
+    navBrowseItem.classList.remove("is-open");
+  }
+
   // Handle Browse Dropdown active states & cards
   const browseTrigger = document.getElementById("navBrowseTrigger");
   const browseCards = document.querySelectorAll(".nav-dropdown-card");
@@ -3230,9 +3237,42 @@ function bindEventListeners() {
     };
   });
 
+  // Browse Dropdown Controls & Dismissal
+  const browseItem = document.getElementById("navBrowseItem");
+  const browseTriggerBtn = document.getElementById("navBrowseTrigger");
+
+  if (browseItem) {
+    browseItem.addEventListener("mouseleave", () => {
+      browseItem.classList.remove("is-closed");
+      browseItem.classList.remove("is-open");
+    });
+    if (browseTriggerBtn) {
+      browseTriggerBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (browseItem.classList.contains("is-closed")) {
+          browseItem.classList.remove("is-closed");
+          browseItem.classList.add("is-open");
+        } else {
+          browseItem.classList.toggle("is-open");
+        }
+      });
+    }
+    document.addEventListener("click", (e) => {
+      if (!browseItem.contains(e.target)) {
+        browseItem.classList.add("is-closed");
+        browseItem.classList.remove("is-open");
+      }
+    });
+  }
+
   // Browse Dropdown Cards (.nav-dropdown-card)
   document.querySelectorAll(".nav-dropdown-card").forEach((card) => {
     card.onclick = (e) => {
+      // Immediately dismiss the dropdown when any card is clicked
+      if (browseItem) {
+        browseItem.classList.add("is-closed");
+        browseItem.classList.remove("is-open");
+      }
       const targetView = card.dataset.view;
       if (targetView) {
         e.preventDefault();
