@@ -11,7 +11,7 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=17887808_146183">
+    <link rel="stylesheet" href="movie.css?v=17887808_146184">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -27,10 +27,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_5988" defer></script>
-    <script src="series-data.js?v=20260818_5988" defer></script>
-    <script src="anime-data.js?v=20260818_5988" defer></script>
-    <script src="movie.js?v=17887808_146184" defer></script>
+    <script src="movies-data.js?v=20260818_5989" defer></script>
+    <script src="series-data.js?v=20260818_5989" defer></script>
+    <script src="anime-data.js?v=20260818_5989" defer></script>
+    <script src="movie.js?v=17887808_146185" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -238,12 +238,10 @@
     </header>
 
     <!-- Floating Mobile Bottom Navigation Dock (Cineby style) -->
+    <div class="mobile-browse-backdrop" id="mobileBrowseBackdrop"></div>
     <nav class="mobile-bottom-dock" id="mobileBottomDock" aria-label="Mobile Navigation">
         <button class="mobile-dock-btn active" data-view="home" id="mobileDockHome" title="Home">
             <ion-icon name="home-outline"></ion-icon>
-        </button>
-        <button class="mobile-dock-btn" data-view="movies" id="mobileDockMovies" title="Movies">
-            <ion-icon name="film-outline"></ion-icon>
         </button>
         <button class="mobile-dock-btn" id="mobileDockBrowse" title="Browse">
             <svg class="dock-browse-icon" width="18" height="18" viewBox="0 0 24 24" fill="none">
