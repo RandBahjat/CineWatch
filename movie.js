@@ -702,7 +702,7 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
     </div>
   ` : "";
 
-  const imgSrc = forcePoster ? movie.poster : (movie.backdrop || movie.poster);
+  const imgSrc = forcePoster ? (movie.poster || movie.backdrop) : (movie.backdrop || movie.poster);
   const sourceTag = forcePoster ? "" : `<source media="(max-width: 768px)" srcset="${movie.backdrop || movie.poster}">`;
 
   return `
