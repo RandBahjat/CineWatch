@@ -5926,6 +5926,201 @@ body.rtl-layout .details-back-btn svg {
 
 .browse-filter-btn.active {
   background: var(--primary);
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.avatar-custom-img.badge-avatar {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.avatar-custom-img.header-avatar {
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--primary);
+}
+
+.avatar-custom-img.sidebar-avatar {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar-logout-btn {
+  margin-left: auto;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-dim, #9ca3af);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.sidebar-logout-btn:hover {
+  background: rgba(229, 9, 20, 0.2);
+  border-color: #e50914;
+  color: #e50914;
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(229, 9, 20, 0.45);
+}
+
+.sidebar-logout-btn:active {
+  transform: scale(0.92);
+}
+
+.picker-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.upload-avatar-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #00cc66;
+  background: rgba(0, 204, 102, 0.12);
+  border: 1px solid rgba(0, 204, 102, 0.3);
+  padding: 0.2rem 0.55rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.upload-avatar-label:hover {
+  background: #00cc66;
+  color: #000000;
+  box-shadow: 0 2px 8px rgba(0, 204, 102, 0.4);
+}
+
+/* Header Report Issue Button */
+.nav-report-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(229, 9, 20, 0.12);
+  border: 1px solid rgba(229, 9, 20, 0.35);
+  color: #ff4d4d;
+  padding: 0.45rem 0.8rem;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(10px);
+}
+
+.nav-report-btn:hover {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+  box-shadow: 0 4px 14px rgba(229, 9, 20, 0.4);
+  transform: translateY(-1px);
+}
+
+/* ================================================
+   BROWSE SECTION  (Movies / Series full-page view)
+   ================================================ */
+
+.browse-section {
+  padding: 2rem 0 4rem;
+  min-height: 80vh;
+}
+
+.browse-section-header {
+  margin-bottom: 1.8rem;
+}
+
+.browse-title-row {
+  display: flex !important;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.browse-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.5px;
+  margin: 0;
+  line-height: 1.1;
+}
+
+
+/* ---- Filter Bar ---- */
+.browse-filter-bar {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  scrollbar-width: none !important;
+  gap: 0.55rem;
+  align-items: center;
+  padding: 0.4rem 2px 0.8rem 2px;
+  margin-top: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.browse-filter-bar::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* ---- Results Count Label ---- */
+.browse-results-bar {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+.browse-results-bar span {
+  color: #fff;
+  font-weight: 600;
+}
+
+
+.browse-filter-btn {
+  padding: 0.45rem 1.1rem;
+  border-radius: 30px;
+  border: 1px solid var(--border-light);
+  background: rgba(255,255,255,0.05);
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  backdrop-filter: blur(6px);
+}
+
+.browse-filter-btn:hover {
+  background: rgba(229, 9, 20, 0.15);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.browse-filter-btn.active {
+  background: var(--primary);
   border-color: var(--primary);
   color: #fff;
   background: #ff3b44 !important;
@@ -5938,12 +6133,9 @@ body.rtl-layout .details-back-btn svg {
 /* ---- Browse Grid ---- */
 .browse-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1.6rem 1.2rem;
   margin-bottom: 2.5rem;
-}
-
-
 
 .browse-card {
   position: relative;
