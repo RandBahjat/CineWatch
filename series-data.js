@@ -5439,7 +5439,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 2,
-            title: ' Through the Valley'
+            title: 'There's a Rat in the Kitchen"
           },
           {
             episode: 3,
