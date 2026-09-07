@@ -5386,7 +5386,7 @@ window._SERIES_DATA = [
     overviewKurdish:"ئێدی هۆرنیمان بە شێوەیەکی چاوەڕواننەکراو خاوەندارێتیی زەوی و ماڵە گەورەکەی باوکی بە میرات بۆ دەمێنێتەوە، بەڵام بۆی دەردەکەوێت کە ئەستێڵک و زەوییەکانی خێزانەکەی بوونەتە بنکەیەکی گەورەی ڕێنیشاندانی ئیمپراتۆرییەتیی ماریوانا لەلایەن تاوانبارانەوە. ئێدی ناچار دەبێت بچێتە ناو جیهانی ژێر زەویی تاوانکاریی بریتانیاوە بۆ ئەوەی خێزانەکەی لە مەترسی بپارێزێت و دەسەڵات بگرێتە دەست.",
     director: 'Guy Ritchie',
     cast: [
-      'Pedro Pascal, Bella Ramsey, Anna Torv, Gabriel Luna, Storm Reid, Nick Offerman, Murray Bartlett, Isabela Merced, Young Mazino'
+      'Theo James, Kaya Scodelario, Daniel Ings, Joely Richardson, Vinnie Jones, Giancarlo Esposito, Ray Winstone'
     ],
     trending: false,
     featured: false,
