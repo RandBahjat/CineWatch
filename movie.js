@@ -3304,10 +3304,27 @@ function bindEventListeners() {
     }
 
     document.addEventListener("click", (e) => {
-      if (!browseItem.contains(e.target) && !e.target.closest("#mobileDockBrowse")) {
+      if (!browseItem.contains(e.target) && !e.target.closest("#mobileDockBrowse") && !e.target.closest("#browseMobileCloseBtn")) {
         closeBrowseDropdown();
       }
     });
+
+    const mobileBrowseBackdrop = document.getElementById("mobileBrowseBackdrop");
+    if (mobileBrowseBackdrop) {
+      mobileBrowseBackdrop.onclick = (e) => {
+        e.preventDefault();
+        closeBrowseDropdown();
+      };
+    }
+
+    const browseMobileCloseBtn = document.getElementById("browseMobileCloseBtn");
+    if (browseMobileCloseBtn) {
+      browseMobileCloseBtn.onclick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        closeBrowseDropdown();
+      };
+    }
   }
 
   // Browse Dropdown Cards (.nav-dropdown-card)
@@ -3341,14 +3358,16 @@ function bindEventListeners() {
       e.preventDefault();
       const targetView = btn.dataset.view;
       if (targetView) {
-        document.body.classList.remove("mobile-browse-open");
         closeBrowseDropdown();
         switchView(targetView);
       } else if (btn.id === "mobileDockBrowse") {
-        document.body.classList.toggle("mobile-browse-open");
-        toggleBrowseDropdown();
+        if (document.body.classList.contains("mobile-browse-open")) {
+          closeBrowseDropdown();
+        } else {
+          document.body.classList.add("mobile-browse-open");
+          openBrowseDropdown();
+        }
       } else if (btn.id === "mobileDockSearch") {
-        document.body.classList.remove("mobile-browse-open");
         closeBrowseDropdown();
         if (window.openSearchModal) {
           window.openSearchModal();
