@@ -1695,6 +1695,20 @@ body.rtl-layout .modal-search-clear {
 
 
 /* Category Grid */
+/* ---- Browse Grid ---- */
+.browse-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.6rem 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .browse-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 0.8rem;
+  }
+}
 .search-tags-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
