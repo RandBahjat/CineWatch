@@ -6,21 +6,28 @@ function updateFile(filePath, transforms) {
     console.log(`[NOT FOUND] ${filePath}`);
     return;
   }
-  let content = fs.readFileSync(filePath, "utf8");
+  let rawContent = fs.readFileSync(filePath, "utf8");
+  const isCRLF = rawContent.includes("\r\n");
+  let content = rawContent.replace(/\r\n/g, "\n");
   let original = content;
+
   for (const { search, replace } of transforms) {
     if (typeof search === "string") {
-      if (!content.includes(search)) {
-        console.warn(`[WARN] Search string not found in ${filePath}:\n${search.substring(0, 60)}...`);
+      const normSearch = search.replace(/\r\n/g, "\n");
+      const normReplace = replace.replace(/\r\n/g, "\n");
+      if (!content.includes(normSearch)) {
+        console.warn(`[WARN] Search string not found in ${filePath}:\n${normSearch.substring(0, 60)}...`);
       } else {
-        content = content.replace(search, replace);
+        content = content.replace(normSearch, normReplace);
       }
     } else {
       content = content.replace(search, replace);
     }
   }
+
   if (content !== original) {
-    fs.writeFileSync(filePath, content, "utf8");
+    const finalContent = isCRLF ? content.replace(/\n/g, "\r\n") : content;
+    fs.writeFileSync(filePath, finalContent, "utf8");
     console.log(`[UPDATED] ${filePath}`);
   } else {
     console.log(`[NO CHANGE] ${filePath}`);
