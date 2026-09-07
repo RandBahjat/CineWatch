@@ -3963,7 +3963,7 @@ body.rtl-layout .details-back-btn svg {
   }
 
   .mobile-menu-btn {
-    display: block !important; /* Show hamburger button on tablet */
+    display: none !important;
   }
 
   .navbar .brand-logo {
