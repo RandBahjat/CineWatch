@@ -1,0 +1,300 @@
+/*
+ * browse-fix.css — Cineby-Style Browse Grid & Filter Styles
+ * Loaded AFTER movie.css to guarantee exact appearance for Movies, Series, and Anime views.
+ */
+
+/* Section Spacing */
+.browse-section {
+  padding-top: 1rem !important;
+  max-width: 1440px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+}
+
+.browse-section-header {
+  margin-bottom: 1.5rem !important;
+}
+
+.browse-title-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
+  margin-bottom: 1.25rem !important;
+}
+
+.browse-title {
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  letter-spacing: -0.3px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  margin: 0 !important;
+}
+
+.browse-count {
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  color: rgba(255, 255, 255, 0.65) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  padding: 0.25rem 0.65rem !important;
+  border-radius: 20px !important;
+  letter-spacing: 0.3px !important;
+}
+
+/* ============================================================
+   CINEBY-STYLE TEXT FILTER TABS
+   ============================================================ */
+.browse-filter-bar {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+  gap: 1.6rem !important;
+  align-items: center !important;
+  padding: 0 0 0.75rem 0 !important;
+  margin-bottom: 1.8rem !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.browse-filter-bar::-webkit-scrollbar {
+  display: none !important;
+}
+
+.browse-filter-btn {
+  flex-shrink: 0 !important;
+  padding: 0 0 0.55rem 0 !important;
+  border: none !important;
+  border-bottom: 2px solid transparent !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.55) !important;
+  font-family: inherit !important;
+  font-size: 0.92rem !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  margin-bottom: -1px !important;
+  transition: color 0.2s ease, border-color 0.2s ease !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.browse-filter-btn:hover {
+  color: #ffffff !important;
+  background: transparent !important;
+  border-bottom-color: rgba(255, 255, 255, 0.35) !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.browse-filter-btn.active {
+  color: #ffffff !important;
+  background: transparent !important;
+  border-bottom-color: #e50914 !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+}
+
+/* Hide clutter */
+.browse-results-bar {
+  display: none !important;
+}
+
+/* ============================================================
+   4-COLUMN COMPACT LANDSCAPE GRID (CINEBY STYLE)
+   ============================================================ */
+#moviesGrid,
+#seriesGrid,
+#animeGrid,
+.browse-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 1.6rem 1.15rem !important;
+  margin-bottom: 2.5rem !important;
+  width: 100% !important;
+}
+
+/* Cards fill their grid cell with no flex shrinkage or expansion */
+#moviesGrid .movie-card,
+#seriesGrid .movie-card,
+#animeGrid .movie-card,
+.browse-grid .movie-card {
+  flex: none !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  background: transparent !important;
+  cursor: pointer !important;
+}
+
+/* 16:9 Landscape aspect ratio for backdrops */
+#moviesGrid .card-poster-wrap,
+#seriesGrid .card-poster-wrap,
+#animeGrid .card-poster-wrap,
+.browse-grid .card-poster-wrap {
+  aspect-ratio: 16 / 9 !important;
+  width: 100% !important;
+  height: auto !important;
+  position: relative !important;
+  overflow: hidden !important;
+  border-radius: 8px !important;
+  background: #181818 !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45) !important;
+  transition: box-shadow 0.3s ease !important;
+}
+
+#moviesGrid .movie-card:hover .card-poster-wrap,
+#seriesGrid .movie-card:hover .card-poster-wrap,
+#animeGrid .movie-card:hover .card-poster-wrap,
+.browse-grid .movie-card:hover .card-poster-wrap {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7) !important;
+}
+
+#moviesGrid .card-poster,
+#seriesGrid .card-poster,
+#animeGrid .card-poster,
+.browse-grid .card-poster {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+#moviesGrid .movie-card:hover .card-poster,
+#seriesGrid .movie-card:hover .card-poster,
+#animeGrid .movie-card:hover .card-poster,
+.browse-grid .movie-card:hover .card-poster {
+  transform: scale(1.05) !important;
+}
+
+/* Card details & typography */
+#moviesGrid .card-details,
+#seriesGrid .card-details,
+#animeGrid .card-details,
+.browse-grid .card-details {
+  padding: 8px 2px 0 !important;
+  background: transparent !important;
+}
+
+#moviesGrid .card-title,
+#seriesGrid .card-title,
+#animeGrid .card-title,
+.browse-grid .card-title {
+  font-size: 0.92rem !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  line-height: 1.35 !important;
+  margin-bottom: 3px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  transition: color 0.2s ease !important;
+}
+
+#moviesGrid .movie-card:hover .card-title,
+#seriesGrid .movie-card:hover .card-title,
+#animeGrid .movie-card:hover .card-title,
+.browse-grid .movie-card:hover .card-title {
+  color: #e50914 !important;
+}
+
+#moviesGrid .card-meta,
+#seriesGrid .card-meta,
+#animeGrid .card-meta,
+.browse-grid .card-meta {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-size: 0.78rem !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+#moviesGrid .card-rating,
+#seriesGrid .card-rating,
+#animeGrid .card-rating,
+.browse-grid .card-rating {
+  font-weight: 600 !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 3px !important;
+}
+
+#moviesGrid .card-rating .star-icon,
+#seriesGrid .card-rating .star-icon,
+#animeGrid .card-rating .star-icon,
+.browse-grid .card-rating .star-icon {
+  color: #e50914 !important;
+}
+
+#moviesGrid .card-year,
+#seriesGrid .card-year,
+#animeGrid .card-year,
+.browse-grid .card-year,
+#moviesGrid .card-type,
+#seriesGrid .card-type,
+#animeGrid .card-type,
+.browse-grid .card-type {
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-weight: 500 !important;
+}
+
+/* ============================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================ */
+/* Tablet: 3 columns */
+@media (max-width: 1100px) and (min-width: 641px) {
+  #moviesGrid,
+  #seriesGrid,
+  #animeGrid,
+  .browse-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.3rem 0.9rem !important;
+  }
+}
+
+/* Mobile: 2 columns */
+@media (max-width: 640px) {
+  #moviesGrid,
+  #seriesGrid,
+  #animeGrid,
+  .browse-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem 0.75rem !important;
+  }
+
+  .browse-title {
+    font-size: 1.3rem !important;
+  }
+
+  .browse-filter-bar {
+    gap: 1.2rem !important;
+    margin-bottom: 1.3rem !important;
+  }
+
+  .browse-filter-btn {
+    font-size: 0.85rem !important;
+  }
+
+  #moviesGrid .card-title,
+  #seriesGrid .card-title,
+  #animeGrid .card-title,
+  .browse-grid .card-title {
+    font-size: 0.84rem !important;
+  }
+
+  #moviesGrid .card-meta,
+  #seriesGrid .card-meta,
+  #animeGrid .card-meta,
+  .browse-grid .card-meta {
+    font-size: 0.72rem !important;
+    gap: 6px !important;
+  }
+}
