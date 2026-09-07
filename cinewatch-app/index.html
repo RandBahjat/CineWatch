@@ -105,21 +105,21 @@
 
                     <div class="nav-browse-dropdown cineby-dropdown" id="navBrowseDropdown">
                         <div class="browse-dropdown-header">
-                            <span class="browse-header-title">Browse</span>
+                            <span class="browse-header-title notranslate" translate="no" id="browseHeaderTitle">Browse</span>
                             <button class="browse-mobile-close" id="browseMobileCloseBtn" type="button" aria-label="Close Browse">&times;</button>
                         </div>
 
                         <!-- Section: CONTENT -->
                         <div class="browse-dropdown-section">
-                            <div class="browse-section-label">CONTENT</div>
+                            <div class="browse-section-label notranslate" translate="no" id="browseSecContent">CONTENT</div>
                             <div class="nav-dropdown-grid nav-grid-3">
                                 <a href="#" class="nav-dropdown-card" data-view="movies" id="browseCardMovies">
                                     <div class="nav-dropdown-icon"><ion-icon name="film-outline"></ion-icon></div>
-                                    <span class="nav-dropdown-label notranslate" translate="no">Movies</span>
+                                    <span class="nav-dropdown-label notranslate" translate="no" id="browseLabelMovies">Movies</span>
                                 </a>
                                 <a href="#" class="nav-dropdown-card" data-view="series" id="browseCardSeries">
                                     <div class="nav-dropdown-icon"><ion-icon name="tv-outline"></ion-icon></div>
-                                    <span class="nav-dropdown-label notranslate" translate="no">Series</span>
+                                    <span class="nav-dropdown-label notranslate" translate="no" id="browseLabelSeries">Series</span>
                                 </a>
                                 <a href="#" class="nav-dropdown-card" data-view="anime" id="browseCardAnime">
                                     <div class="nav-dropdown-icon">
@@ -128,41 +128,41 @@
                                           <path d="M18 15L18.6 17.4L21 18L18.6 18.6L18 21L17.4 18.6L15 18L17.4 17.4L18 15Z" fill="currentColor"/>
                                         </svg>
                                     </div>
-                                    <span class="nav-dropdown-label notranslate" translate="no">Anime</span>
+                                    <span class="nav-dropdown-label notranslate" translate="no" id="browseLabelAnime">Anime</span>
                                 </a>
                             </div>
                         </div>
 
                         <!-- Section: PERSONAL -->
                         <div class="browse-dropdown-section">
-                            <div class="browse-section-label">PERSONAL</div>
+                            <div class="browse-section-label notranslate" translate="no" id="browseSecPersonal">PERSONAL</div>
                             <div class="nav-dropdown-grid nav-grid-2">
                                 <a href="#" class="nav-dropdown-card" data-view="continue" id="browseCardContinue">
                                     <div class="nav-dropdown-icon"><ion-icon name="play-circle-outline"></ion-icon></div>
-                                    <span class="nav-dropdown-label notranslate" translate="no">Continue</span>
+                                    <span class="nav-dropdown-label notranslate" translate="no" id="browseLabelContinue">Continue</span>
                                 </a>
                                 <a href="#" class="nav-dropdown-card" data-view="watchlist" id="browseCardWatchlist">
                                     <div class="nav-dropdown-icon"><ion-icon name="heart-outline"></ion-icon></div>
-                                    <span class="nav-dropdown-label notranslate" translate="no">Watchlist</span>
+                                    <span class="nav-dropdown-label notranslate" translate="no" id="browseLabelWatchlist">Watchlist</span>
                                 </a>
                             </div>
                         </div>
 
                         <!-- Section: MORE / APPS -->
                         <div class="browse-dropdown-section">
-                            <div class="browse-section-label">MORE</div>
+                            <div class="browse-section-label notranslate" translate="no" id="browseSecMore">MORE</div>
                             <div class="nav-dropdown-grid nav-grid-3">
                                 <a href="download.html" class="nav-dropdown-card" id="browseCardDownload">
                                     <div class="nav-dropdown-icon"><ion-icon name="cloud-download-outline"></ion-icon></div>
-                                    <span class="nav-dropdown-label notranslate" translate="no">Download</span>
+                                    <span class="nav-dropdown-label notranslate" translate="no" id="browseLabelDownload">Download</span>
                                 </a>
                                 <a href="#" class="nav-dropdown-card" id="browseCardAi">
                                     <div class="nav-dropdown-icon"><ion-icon name="chatbubbles-outline"></ion-icon></div>
-                                    <span class="nav-dropdown-label notranslate" translate="no">Ask AI</span>
+                                    <span class="nav-dropdown-label notranslate" translate="no" id="browseLabelAi">Ask AI</span>
                                 </a>
                                 <a href="#" class="nav-dropdown-card" id="browseCardReport">
                                     <div class="nav-dropdown-icon"><ion-icon name="alert-circle-outline"></ion-icon></div>
-                                    <span class="nav-dropdown-label notranslate" translate="no">Report</span>
+                                    <span class="nav-dropdown-label notranslate" translate="no" id="browseLabelReport">Report</span>
                                 </a>
                             </div>
                         </div>
@@ -1630,6 +1630,32 @@
                 document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
                 document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + window.location.hostname;
             } else {
+                const navBrowseText = document.getElementById('navBrowseText');
+                if (navBrowseText) navBrowseText.textContent = 'Browse';
+                const browseHeaderTitle = document.getElementById('browseHeaderTitle');
+                if (browseHeaderTitle) browseHeaderTitle.textContent = 'Browse';
+                const browseSecContent = document.getElementById('browseSecContent');
+                if (browseSecContent) browseSecContent.textContent = 'CONTENT';
+                const browseSecPersonal = document.getElementById('browseSecPersonal');
+                if (browseSecPersonal) browseSecPersonal.textContent = 'PERSONAL';
+                const browseSecMore = document.getElementById('browseSecMore');
+                if (browseSecMore) browseSecMore.textContent = 'MORE';
+                const browseLabelMovies = document.getElementById('browseLabelMovies');
+                if (browseLabelMovies) browseLabelMovies.textContent = 'Movies';
+                const browseLabelSeries = document.getElementById('browseLabelSeries');
+                if (browseLabelSeries) browseLabelSeries.textContent = 'Series';
+                const browseLabelAnime = document.getElementById('browseLabelAnime');
+                if (browseLabelAnime) browseLabelAnime.textContent = 'Anime';
+                const browseLabelContinue = document.getElementById('browseLabelContinue');
+                if (browseLabelContinue) browseLabelContinue.textContent = 'Continue';
+                const browseLabelWatchlist = document.getElementById('browseLabelWatchlist');
+                if (browseLabelWatchlist) browseLabelWatchlist.textContent = 'Watchlist';
+                const browseLabelDownload = document.getElementById('browseLabelDownload');
+                if (browseLabelDownload) browseLabelDownload.textContent = 'Download';
+                const browseLabelAi = document.getElementById('browseLabelAi');
+                if (browseLabelAi) browseLabelAi.textContent = 'Ask AI';
+                const browseLabelReport = document.getElementById('browseLabelReport');
+                if (browseLabelReport) browseLabelReport.textContent = 'Report';
                 document.cookie = "googtrans=/en/" + langCode + "; path=/;";
                 document.cookie = "googtrans=/en/" + langCode + "; path=/; domain=" + window.location.hostname;
             }
@@ -1652,6 +1678,32 @@
             // RTL handling for Arabic and Sorani
             if (currentLang === 'ar') currentLang = 'en';
             if (currentLang === 'ckb') {
+                const navBrowseText = document.getElementById('navBrowseText');
+                if (navBrowseText) navBrowseText.textContent = 'گەڕان';
+                const browseHeaderTitle = document.getElementById('browseHeaderTitle');
+                if (browseHeaderTitle) browseHeaderTitle.textContent = 'گەڕان';
+                const browseSecContent = document.getElementById('browseSecContent');
+                if (browseSecContent) browseSecContent.textContent = 'ناوەڕۆک';
+                const browseSecPersonal = document.getElementById('browseSecPersonal');
+                if (browseSecPersonal) browseSecPersonal.textContent = 'تایبەت';
+                const browseSecMore = document.getElementById('browseSecMore');
+                if (browseSecMore) browseSecMore.textContent = 'زیاتر';
+                const browseLabelMovies = document.getElementById('browseLabelMovies');
+                if (browseLabelMovies) browseLabelMovies.textContent = 'فیلمەکان';
+                const browseLabelSeries = document.getElementById('browseLabelSeries');
+                if (browseLabelSeries) browseLabelSeries.textContent = 'زنجیرەکان';
+                const browseLabelAnime = document.getElementById('browseLabelAnime');
+                if (browseLabelAnime) browseLabelAnime.textContent = 'ئەنیمی';
+                const browseLabelContinue = document.getElementById('browseLabelContinue');
+                if (browseLabelContinue) browseLabelContinue.textContent = 'بەردەوامبوون';
+                const browseLabelWatchlist = document.getElementById('browseLabelWatchlist');
+                if (browseLabelWatchlist) browseLabelWatchlist.textContent = 'دڵخوازەکان';
+                const browseLabelDownload = document.getElementById('browseLabelDownload');
+                if (browseLabelDownload) browseLabelDownload.textContent = 'داگرتن';
+                const browseLabelAi = document.getElementById('browseLabelAi');
+                if (browseLabelAi) browseLabelAi.textContent = 'زیرەکی دەستکرد';
+                const browseLabelReport = document.getElementById('browseLabelReport');
+                if (browseLabelReport) browseLabelReport.textContent = 'ڕاپۆرت';
                 document.body.style.direction = 'rtl';
                 document.body.classList.add('rtl-layout');
             } else {
@@ -1803,6 +1855,32 @@
                 const commentsTitleHeading = document.getElementById('commentsTitleHeading');
                 if (commentsTitleHeading) commentsTitleHeading.textContent = 'بۆچوونەکان';
             } else if (currentLang === 'ar') {
+                const navBrowseText = document.getElementById('navBrowseText');
+                if (navBrowseText) navBrowseText.textContent = 'تصفح';
+                const browseHeaderTitle = document.getElementById('browseHeaderTitle');
+                if (browseHeaderTitle) browseHeaderTitle.textContent = 'تصفح';
+                const browseSecContent = document.getElementById('browseSecContent');
+                if (browseSecContent) browseSecContent.textContent = 'المحتوى';
+                const browseSecPersonal = document.getElementById('browseSecPersonal');
+                if (browseSecPersonal) browseSecPersonal.textContent = 'شخصي';
+                const browseSecMore = document.getElementById('browseSecMore');
+                if (browseSecMore) browseSecMore.textContent = 'المزيد';
+                const browseLabelMovies = document.getElementById('browseLabelMovies');
+                if (browseLabelMovies) browseLabelMovies.textContent = 'أفلام';
+                const browseLabelSeries = document.getElementById('browseLabelSeries');
+                if (browseLabelSeries) browseLabelSeries.textContent = 'مسلسلات';
+                const browseLabelAnime = document.getElementById('browseLabelAnime');
+                if (browseLabelAnime) browseLabelAnime.textContent = 'الأنمي';
+                const browseLabelContinue = document.getElementById('browseLabelContinue');
+                if (browseLabelContinue) browseLabelContinue.textContent = 'متابعة';
+                const browseLabelWatchlist = document.getElementById('browseLabelWatchlist');
+                if (browseLabelWatchlist) browseLabelWatchlist.textContent = 'قائمتي';
+                const browseLabelDownload = document.getElementById('browseLabelDownload');
+                if (browseLabelDownload) browseLabelDownload.textContent = 'تحميل';
+                const browseLabelAi = document.getElementById('browseLabelAi');
+                if (browseLabelAi) browseLabelAi.textContent = 'الذكاء الاصطناعي';
+                const browseLabelReport = document.getElementById('browseLabelReport');
+                if (browseLabelReport) browseLabelReport.textContent = 'إبلاغ';
                 if (loginPwLabel) loginPwLabel.textContent = 'كلمة المرور';
                 if (signupPwLabel) signupPwLabel.textContent = 'كلمة المرور';
                 if (loginPwInput) loginPwInput.placeholder = '••••••••';
