@@ -190,6 +190,8 @@ ${catalogData}
       document.body.style.overflow = "";
     }
   }
+  window.openAiModal = openAiModal;
+  window.closeAiModal = closeAiModal;
 
   function clearAiHistory() {
     conversationHistory = [];
