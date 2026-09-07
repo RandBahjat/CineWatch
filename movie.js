@@ -2107,9 +2107,10 @@ function openDetailsModal(movieId) {
         const customYt = extractYouTubeId(movie.trailerUrl || movie.trailer || movie.trailerYouTubeId || movie.videoUrl);
         const query = encodeURIComponent(`${movie.title} ${movie.year || ''} official trailer`);
         const originParam = window.location.origin ? `&origin=${encodeURIComponent(window.location.origin)}` : '';
+        const cleanParams = `autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3&cc_load_policy=0&cc_lang_pref=off&hl=en&enablejsapi=1&playsinline=1&fs=0&disablekb=1&autohide=1&showinfo=0${originParam}`;
         iframe.src = customYt 
-          ? `https://www.youtube.com/embed/${customYt}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${customYt}&iv_load_policy=3&cc_load_policy=0&cc_lang_pref=off&hl=en&enablejsapi=1&playsinline=1${originParam}`
-          : `https://www.youtube.com/embed?listType=search&list=${query}&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3&cc_load_policy=0&cc_lang_pref=off&hl=en&enablejsapi=1&playsinline=1${originParam}`;
+          ? `https://www.youtube.com/embed/${customYt}?${cleanParams}&playlist=${customYt}`
+          : `https://www.youtube.com/embed?listType=search&list=${query}&${cleanParams}`;
         iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
         iframe.referrerPolicy = 'strict-origin-when-cross-origin';
         iframe.setAttribute('playsinline', '1');
@@ -2174,6 +2175,15 @@ function openDetailsModal(movieId) {
             } catch (err) {}
             soundBtn.innerHTML = `<ion-icon name="${isMuted ? 'volume-mute' : 'volume-high'}"></ion-icon>`;
           };
+
+          // Also allow tapping on the hero showcase area to toggle sound
+          const heroBg = document.querySelector('.details-hero-bg');
+          if (heroBg) {
+            heroBg.onclick = (e) => {
+              if (e.target.closest('#closeDetailsBtn') || e.target.closest('#detailsSoundBtn')) return;
+              soundBtn.click();
+            };
+          }
         }
       }, trailerDelay);
     }
