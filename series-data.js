@@ -5417,7 +5417,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: 'Kin'
+            title: 'All Eventualities'
           },
           {
             episode: 7,
