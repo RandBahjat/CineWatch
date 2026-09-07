@@ -4440,14 +4440,13 @@ body.rtl-layout .details-back-btn svg {
     font-size: 1.25rem !important;
   }
 
-  /* 2. Top Video Player / Trailer Showcase: 16:9 Aspect Ratio */
+  /* 2. Top Video Player / Trailer Showcase: Expanded Prominent View */
   .details-hero-bg {
     position: relative !important;
     width: 100% !important;
-    height: auto !important;
-    aspect-ratio: 16 / 9 !important;
-    min-height: 215px !important;
-    max-height: 56.25vw !important;
+    height: 38vh !important;
+    min-height: 285px !important;
+    max-height: 44vh !important;
     margin: 0 !important;
     padding: 0 !important;
     overflow: hidden !important;
@@ -4480,15 +4479,13 @@ body.rtl-layout .details-back-btn svg {
   .details-trailer-iframe,
   .trailer-iframe {
     position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
+    top: 50% !important;
+    left: 50% !important;
     width: 100% !important;
     height: 100% !important;
     min-width: 100% !important;
     min-height: 100% !important;
-    max-width: 100% !important;
-    max-height: 100% !important;
-    transform: none !important;
+    transform: translate(-50%, -50%) scale(1.22) !important;
     object-fit: cover !important;
     border: none !important;
     pointer-events: auto !important;
@@ -4502,8 +4499,8 @@ body.rtl-layout .details-back-btn svg {
     background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.55) 0%,
-      transparent 22%,
-      transparent 72%,
+      transparent 18%,
+      transparent 76%,
       #080a0e 100%
     ) !important;
     pointer-events: none !important;
