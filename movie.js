@@ -3415,6 +3415,12 @@ function bindEventListeners() {
   document.addEventListener("click", (e) => {
     const filterBtn = e.target.closest(".browse-filter-btn");
     if (!filterBtn) return;
+
+    // Smoothly slide the clicked filter button into view
+    try {
+      filterBtn.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+    } catch (err) {}
+
     const section = filterBtn.dataset.section; // "movies" or "series" or "anime"
     const genre = filterBtn.dataset.genre;
     if (section === "movies") {
@@ -3430,6 +3436,99 @@ function bindEventListeners() {
       state.animePage = 1;
       renderAnimeSection();
     }
+  });
+
+  // Sliding Filter Bar Navigation Arrows (like Home Poster Carousel Nav)
+  document.addEventListener("click", (e) => {
+    const scrollBtn = e.target.closest(".filter-scroll-btn");
+    if (!scrollBtn) return;
+    const targetId = scrollBtn.dataset.target;
+    const bar = document.getElementById(targetId);
+    if (bar) {
+      const scrollAmount = scrollBtn.classList.contains("prev") ? -320 : 320;
+      bar.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    }
+  });
+
+  // Update filter arrow button visibility based on scroll position
+  function updateFilterScrollNav(bar) {
+    if (!bar) return;
+    const wrapper = bar.closest(".browse-filter-wrapper");
+    if (!wrapper) return;
+    const prevBtn = wrapper.querySelector(".filter-scroll-btn.prev");
+    const nextBtn = wrapper.querySelector(".filter-scroll-btn.next");
+    const maxScroll = bar.scrollWidth - bar.clientWidth;
+
+    if (maxScroll <= 8) {
+      if (prevBtn) prevBtn.classList.add("is-hidden");
+      if (nextBtn) nextBtn.classList.add("is-hidden");
+      wrapper.classList.remove("has-scroll-left");
+      wrapper.classList.add("at-scroll-end");
+      return;
+    }
+
+    if (prevBtn) {
+      prevBtn.classList.toggle("is-hidden", bar.scrollLeft <= 8);
+    }
+    wrapper.classList.toggle("has-scroll-left", bar.scrollLeft > 8);
+
+    if (nextBtn) {
+      nextBtn.classList.toggle("is-hidden", bar.scrollLeft >= maxScroll - 8);
+    }
+    wrapper.classList.toggle("at-scroll-end", bar.scrollLeft >= maxScroll - 8);
+  }
+  window.updateFilterScrollNav = updateFilterScrollNav;
+
+  // Initialize scroll listeners & drag-to-scroll on browse filter bars
+  document.querySelectorAll(".browse-filter-bar").forEach((bar) => {
+    bar.addEventListener("scroll", () => updateFilterScrollNav(bar), { passive: true });
+    setTimeout(() => updateFilterScrollNav(bar), 150);
+
+    // Drag-to-scroll with mouse
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    let hasDragged = false;
+
+    bar.addEventListener("mousedown", (e) => {
+      isDown = true;
+      hasDragged = false;
+      bar.style.scrollBehavior = "auto";
+      startX = e.pageX - bar.offsetLeft;
+      scrollLeft = bar.scrollLeft;
+    });
+
+    bar.addEventListener("mouseleave", () => {
+      if (!isDown) return;
+      isDown = false;
+      bar.style.scrollBehavior = "smooth";
+    });
+
+    bar.addEventListener("mouseup", () => {
+      isDown = false;
+      bar.style.scrollBehavior = "smooth";
+    });
+
+    bar.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - bar.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      bar.scrollLeft = scrollLeft - walk;
+      if (Math.abs(walk) > 5) hasDragged = true;
+    });
+
+    bar.addEventListener("click", (e) => {
+      if (hasDragged) {
+        e.stopPropagation();
+        e.preventDefault();
+        hasDragged = false;
+      }
+    }, true);
+  });
+
+  window.addEventListener("resize", () => {
+    document.querySelectorAll(".browse-filter-bar").forEach(updateFilterScrollNav);
   });
 
   // Carousel Buttons
