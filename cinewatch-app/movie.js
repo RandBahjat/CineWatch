@@ -11,12 +11,12 @@ if (window.location.hash.includes("type=recovery")) {
 // ==========================================
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
-let FEATURED_TITLES = ["The Runner","Coyote vs. Acme","Just Play Dead","Reacher","The Whisper Man","Grand Theft Auto VI: An Extended Look" ,"Batman: Knightfall Part 1: Knightfall", "Mutiny", "Lanterns", "Lioness", "Spider-Man: Brand New Day", "The Last Sunrise", "The Odyssey"];
-let TOP_10_TRENDING_TODAY = ["The Runner","Just Play Dead","Coyote vs. Acme" , "Mutiny", "Batman: Knightfall Part 1: Knightfall","Reacher", "Spider-Man: Brand New Day", "Lanterns", "The Odyssey","The Brink of War"];
-let TRENDING_THIS_WEEK_MOVIES = ["Just Play Dead","Batman: Knightfall Part 1: Knightfall", "Mutiny", "Spider-Man: Brand New Day", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Minions & Monsters", "The Last House", "Disclosure Day", "The Invite", "The End of Oak Street", "Backrooms", "Camp Rock 3", "Evil Dead Burn", "Project Hail Mary", "Supergirl"];
+let FEATURED_TITLES = ["Mayday","The Runner","Coyote vs. Acme","Just Play Dead","Reacher","The Whisper Man","Grand Theft Auto VI: An Extended Look" ,"Batman: Knightfall Part 1: Knightfall", "Mutiny", "Lanterns", "Lioness", "Spider-Man: Brand New Day","The Odyssey"];
+let TOP_10_TRENDING_TODAY = ["Mayday","The Runner","Just Play Dead","Coyote vs. Acme" , "Mutiny","Reacher", "Spider-Man: Brand New Day","One Piece", "Lanterns", "The Odyssey"];
+let TRENDING_THIS_WEEK_MOVIES = ["Mayday","The Whispher Man","Batman: Knightfall Part 1: Knightfall", "Mutiny", "Spider-Man: Brand New Day", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Minions & Monsters", "The Last House", "Disclosure Day", "The Invite", "The End of Oak Street", "Backrooms", "Camp Rock 3", "Evil Dead Burn", "Just Play Dead"];
 let TRENDING_THIS_WEEK_SERIES = ["Lanterns", "Reacher", "Lucky", "Silo", "One Piece", "Ted Lasso", "X-Men '97", "Lioness", "Outer Banks"];
-const POPULAR_MOVIES = ["Just Play Dead", "Spider-Man: Brand New Day", "The Odyssey", "Minions & Monsters", "The Invite", "Spider-Man: No Way Home", "The End of Oak Street", "Disclosure Day", "Camp Rock 3", "The Last House", "Michael", "Project Hail Mary"];
-const POPULAR_SERIES = ["Reacher", "House of the Dragon", "Ted Lasso", "The Mentalist", "Lucky", "Off Campus", "Silo", "Game of Thrones", "The Sopranos", "Stranger Things", "The Boys"];
+const POPULAR_MOVIES = ["Mayday", "The Whispher Man", "The Odyssey", "The Runner", "Spider-Man: Brand New Day", "Spider-Man: No Way Home", "The End of Oak Street", "Disclosure Day", "Camp Rock 3", "The Last House", "Michael", "Project Hail Mary"];
+const POPULAR_SERIES = ["The Gentlemen","Reacher", "House of the Dragon", "Ted Lasso", "The Mentalist", "Lucky", "Off Campus", "Silo", "Game of Thrones", "The Sopranos", "Stranger Things", "The Boys"];
 
 // Expose globally so apps & modules can sync seamlessly with movie.js
 window.FEATURED_TITLES = FEATURED_TITLES;
@@ -5101,6 +5101,25 @@ document.getElementById("playerPrevEpBtn")?.addEventListener("click", () => navi
 
   // Run once on load in case page starts scrolled
   onScroll();
+})();
+
+// ==========================================
+// DYNAMIC GLASSMORPHIС NAVBAR SCROLL HANDLER
+// ==========================================
+(function initNavbarScroll() {
+  const navbar = document.getElementById("navbar");
+  if (!navbar) return;
+
+  function updateNavbar() {
+    if (window.scrollY > 20) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  }
+
+  window.addEventListener("scroll", updateNavbar, { passive: true });
+  updateNavbar();
 })();
 
 function trackVisit() {
