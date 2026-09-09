@@ -5063,10 +5063,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     const iframe = document.getElementById("iframeElement");
     if (iframe) {
       iframe.classList.remove("hidden");
-      const tmdbId = ref.videoUrl || ref.id || ref.malId;
-      const season = epData?.season || 1;
-      const epNum = epData?.episode || rawEp;
-      iframe.src = `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=e50914`;
+      iframe.src = `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`;
       const centerOverlay = document.getElementById("videoCenterOverlay");
       if (centerOverlay) centerOverlay.style.display = "none";
     }
@@ -5081,11 +5078,11 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   }
 
   try {
-    window.artPlayerInstance = new Artplayer({
+    const artOptions = {
       container: '#artplayerApp',
       url: streamUrl,
       poster: poster,
-      volume: 0.7,
+      volume: 0.8,
       isLive: false,
       muted: false,
       autoplay: true,
@@ -5094,7 +5091,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       autoMini: true,
       screenshot: true,
       setting: true,
-      loop: true,
+      loop: false,
       flip: true,
       playbackRate: true,
       aspectRatio: true,
@@ -5112,28 +5109,62 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       moreVideoAttr: {
         crossOrigin: 'anonymous',
       },
-      subtitle: subtitleUrl ? {
-        url: subtitleUrl,
-        type: 'vtt',
-        style: {
-          color: '#ffffff',
-          fontSize: '22px',
-          textShadow: '0 2px 4px rgba(0,0,0,0.8)',
-          fontWeight: '600'
-        },
-        encoding: 'utf-8',
-      } : undefined,
       customType: {
         m3u8: function (video, url, art) {
           if (typeof Hls !== 'undefined' && Hls.isSupported()) {
-            if (art.hls) art.hls.destroy();
-            const hls = new Hls();
+            if (art.hls) {
+              try { art.hls.destroy(); } catch (e) {}
+            }
+            const hls = new Hls({
+              enableWorker: true,
+              lowLatencyMode: true,
+              backBufferLength: 90
+            });
             hls.loadSource(url);
             hls.attachMedia(video);
+            hls.on(Hls.Events.MANIFEST_PARSED, function () {
+              console.log('[ArtPlayer] HLS manifest parsed successfully, starting playback');
+              video.play().catch(function(e) {
+                console.warn('[ArtPlayer] Unmuted autoplay blocked, retrying muted:', e);
+                video.muted = true;
+                video.play().catch(function(err) {
+                  console.warn('[ArtPlayer] Muted playback also blocked:', err);
+                });
+              });
+            });
+            hls.on(Hls.Events.ERROR, function (event, data) {
+              console.warn('[ArtPlayer] HLS error event:', data.type, data.details);
+              if (data.fatal) {
+                switch (data.type) {
+                  case Hls.ErrorTypes.NETWORK_ERROR:
+                    console.warn('[ArtPlayer] HLS fatal network error, reloading...');
+                    hls.startLoad();
+                    break;
+                  case Hls.ErrorTypes.MEDIA_ERROR:
+                    console.warn('[ArtPlayer] HLS fatal media error, recovering...');
+                    hls.recoverMediaError();
+                    break;
+                  default:
+                    console.error('[ArtPlayer] HLS fatal error unrecoverable:', data);
+                    hls.destroy();
+                    const artApp = document.getElementById("artplayerApp");
+                    const ifr = document.getElementById("iframeElement");
+                    if (artApp) artApp.classList.add("hidden");
+                    if (ifr) {
+                      ifr.classList.remove("hidden");
+                      ifr.src = `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`;
+                    }
+                    break;
+                }
+              }
+            });
             art.hls = hls;
-            art.on('destroy', () => hls.destroy());
+            art.on('destroy', () => {
+              try { hls.destroy(); } catch(e) {}
+            });
           } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
             video.src = url;
+            video.play().catch(function() {});
           } else {
             art.notice.show = 'Unsupported video format: m3u8';
           }
@@ -5261,9 +5292,32 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           tooltip: 'MegaCloud Direct Engine',
         },
       ],
-    });
+    };
+
+    if (subtitleUrl && typeof subtitleUrl === 'string' && subtitleUrl.trim().length > 0) {
+      artOptions.subtitle = {
+        url: subtitleUrl,
+        type: 'vtt',
+        style: {
+          color: '#ffffff',
+          fontSize: '22px',
+          textShadow: '0 2px 4px rgba(0,0,0,0.8)',
+          fontWeight: '600'
+        },
+        encoding: 'utf-8',
+      };
+    }
+
+    window.artPlayerInstance = new Artplayer(artOptions);
   } catch (err) {
     console.error("Failed to init ArtPlayer:", err);
+    const artApp = document.getElementById("artplayerApp");
+    const ifr = document.getElementById("iframeElement");
+    if (artApp) artApp.classList.add("hidden");
+    if (ifr) {
+      ifr.classList.remove("hidden");
+      ifr.src = `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`;
+    }
   }
 }
 
@@ -5315,6 +5369,12 @@ function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId, epData) {
       </div>
       <div class="cw-server-opt ${isDub ? 'active' : ''}" data-server="dub">
         🎙️ Mega Server HD (English Dub)
+      </div>
+      <div class="cw-server-opt" data-server="mega-embed-sub">
+        ⚡ Mega Server Embed (Sub - JW Player)
+      </div>
+      <div class="cw-server-opt" data-server="mega-embed-dub">
+        ⚡ Mega Server Embed (Dub - JW Player)
       </div>
       <div class="cw-server-opt" data-server="vidlink">
         ⚡ VidLink Pro Anime (Mirror)
@@ -5372,6 +5432,18 @@ function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId, epData) {
               }
             } catch(err) {}
           }
+        } else if (chosen === "mega-embed-sub" || chosen === "mega-embed-dub") {
+          const mode = chosen === "mega-embed-dub" ? "dub" : "sub";
+          if (streamTypeBadge) streamTypeBadge.textContent = "MEGA EMBED";
+          if (artApp) artApp.classList.add("hidden");
+          if (window.artPlayerInstance) {
+            try { window.artPlayerInstance.pause(); } catch(e) {}
+          }
+          if (iframe) {
+            iframe.classList.remove("hidden");
+            iframe.src = `https://megavid.buzz/mal/${malId}/${rawEp}/${mode}`;
+          }
+          if (typeof showToast === 'function') showToast(`Switched to Mega Server Embed (${mode.toUpperCase()})`);
         } else if (chosen === "vidlink") {
           if (streamTypeBadge) streamTypeBadge.textContent = "VIDLINK";
           if (artApp) artApp.classList.add("hidden");
@@ -5410,6 +5482,8 @@ function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId, epData) {
     standardSelect.innerHTML = `
       <option value="sub" ${!isDub ? 'selected' : ''}>Mega Server HD (Sub / Japanese)</option>
       <option value="dub" ${isDub ? 'selected' : ''}>Mega Server HD (English Dub)</option>
+      <option value="mega-embed-sub">Mega Server Embed (Sub - JW Player)</option>
+      <option value="mega-embed-dub">Mega Server Embed (Dub - JW Player)</option>
       <option value="vidlink">VidLink Pro Anime (Mirror)</option>
       <option value="vidsrc">VidSrc HD (Mirror)</option>
     `;
