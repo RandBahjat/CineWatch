@@ -56,6 +56,76 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  // M3U8 Stream Proxy (Injects required referer and rewrites nested playlists)
+  if (safePath === '/api/anime-m3u8') {
+    let parsed = new URL(req.url, `http://localhost:${PORT}`);
+    const streamTarget = parsed.searchParams.get('url');
+    if (!streamTarget) {
+      res.writeHead(400, { 'Content-Type': 'text/plain' });
+      res.end('Missing url parameter');
+      return;
+    }
+
+    const host = req.headers.host || `localhost:${PORT}`;
+    const proto = req.headers['x-forwarded-proto'] || 'http';
+    const baseUrl = `${proto}://${host}`;
+
+    fetch(streamTarget, {
+      headers: {
+        'Referer': 'https://megavid.buzz/',
+        'Origin': 'https://megavid.buzz',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
+      }
+    })
+      .then(async response => {
+        if (!response.ok) {
+          res.writeHead(response.status, { 'Access-Control-Allow-Origin': '*' });
+          res.end(`Upstream error: ${response.status}`);
+          return;
+        }
+
+        const contentType = response.headers.get('content-type') || '';
+        if (contentType.includes('mpegurl') || streamTarget.includes('.m3u8') || contentType.includes('application/octet-stream') || contentType.includes('text/plain')) {
+          const text = await response.text();
+          // Rewrite nested m3u8 playlists so child playlists also route through proxy
+          const rewritten = text.split('\n').map(line => {
+            const trimmed = line.trim();
+            if (!trimmed || trimmed.startsWith('#')) return line;
+            try {
+              const fullUrl = new URL(trimmed, streamTarget).href;
+              // If it's a playlist or on cp.megavid.buzz, proxy it; if it's a direct .ts on cdn.api-webs.com, leave as-is
+              if (fullUrl.includes('.m3u8') || fullUrl.includes('cp.megavid.buzz')) {
+                return `${baseUrl}/api/anime-m3u8?url=${encodeURIComponent(fullUrl)}`;
+              }
+              return fullUrl;
+            } catch (e) {
+              return line;
+            }
+          }).join('\n');
+
+          res.writeHead(200, {
+            'Content-Type': 'application/vnd.apple.mpegurl',
+            'Access-Control-Allow-Origin': '*',
+            'Cache-Control': 'no-cache'
+          });
+          res.end(rewritten);
+        } else {
+          // Pass-through binary (e.g. segments or keys if proxied)
+          res.writeHead(200, {
+            'Content-Type': contentType || 'video/MP2T',
+            'Access-Control-Allow-Origin': '*'
+          });
+          const arrayBuf = await response.arrayBuffer();
+          res.end(Buffer.from(arrayBuf));
+        }
+      })
+      .catch(err => {
+        res.writeHead(500, { 'Access-Control-Allow-Origin': '*' });
+        res.end(`Proxy error: ${err.message}`);
+      });
+    return;
+  }
+
   // Direct Anime Source Proxy (bypasses CORS restrictions)
   if (safePath === '/api/anime-source') {
     let parsed = new URL(req.url, `http://localhost:${PORT}`);
@@ -63,6 +133,9 @@ const server = http.createServer((req, res) => {
     const ep = parsed.searchParams.get('ep') || '1';
     const mode = parsed.searchParams.get('mode') || 'sub';
     const targetUrl = `https://megavid.buzz/mal/${malId}/${ep}/${mode}/source`;
+    const host = req.headers.host || `localhost:${PORT}`;
+    const proto = req.headers['x-forwarded-proto'] || 'http';
+    const baseUrl = `${proto}://${host}`;
 
     fetch(targetUrl, {
       headers: {
@@ -72,6 +145,13 @@ const server = http.createServer((req, res) => {
     })
       .then(r => r.json())
       .then(data => {
+        if (data && data.source) {
+          data.rawSource = data.source;
+          data.embedUrl = `https://megavid.buzz/mal/${malId}/${ep}/${mode}`;
+          if (data.source.includes('.m3u8') || data.source.includes('cp.megavid.buzz')) {
+            data.source = `${baseUrl}/api/anime-m3u8?url=${encodeURIComponent(data.source)}`;
+          }
+        }
         res.writeHead(200, {
           'Content-Type': 'application/json',
           'Access-Control-Allow-Origin': '*'
