@@ -2367,7 +2367,6 @@ function openDetailsModal(movieId) {
 
       function getEpisodeUrl(ep, seasonData) {
         if (ep.videoUrl) return ep.videoUrl;
-        // We return a special template string so openVideoPlayerWithUrl knows it's a TV embed that can be switched
         const mediaId = movie.cinesrcId || movie.videoUrl;
         if (mediaId) {
           const absEp = ep.absoluteEpisode || "";
@@ -2397,14 +2396,15 @@ function openDetailsModal(movieId) {
           return `
         <div class="episode-row ${resolvedUrl ? "" : "episode-unavailable"}" 
              data-video="${resolvedUrl}" 
-             data-title="${movie.title} ΓÇö S${seasonData.season}E${ep.episode}: ${ep.title}"
+             data-title="${movie.title} — S${seasonData.season}E${ep.episode}: ${ep.title}"
              data-episode="${ep.episode}"
+             data-abs-episode="${ep.absoluteEpisode || ''}"
              title="${resolvedUrl ? "Click to watch" : "Not available yet"}">
           <div class="episode-row-thumb">
             ${thumb ? `<img src="${thumb}" alt="${ep.title}" loading="lazy" class="ep-thumb-img">` : ""}
             <div class="ep-thumb-overlay">
               <span class="ep-num-badge">${ep.episode}</span>
-              ${resolvedUrl ? '<div class="ep-play-circle">Γû╢</div>' : ""}
+              ${resolvedUrl ? '<div class="ep-play-circle">▶</div>' : ""}
             </div>
           </div>
           <div class="episode-row-info">
@@ -2430,11 +2430,6 @@ function openDetailsModal(movieId) {
               const videoUrl = card.dataset.video;
               const epTitle = card.dataset.title;
               const epNum = parseInt(card.dataset.episode);
-              openVideoPlayerWithUrl(videoUrl, epTitle, movie.id, { season: seasonData.season, episode: epNum });
-            };
-          }
-        });
-
 
       }
 
@@ -5016,7 +5011,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   }
 
   const ref = movie || parentMovie;
-  const rawEp = epData?.episode || epData?.absoluteEpisode || 1;
+  const rawEp = epData?.absoluteEpisode || epData?.episode || 1;
   const malId = getAnimeMalId(ref, epData?.id);
   const poster = (movie?.backdrop || movie?.poster || parentMovie?.backdrop || parentMovie?.poster || "");
   let cleanUrl = String(videoUrl || "");
@@ -5027,8 +5022,10 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   if (!cleanUrl || !cleanUrl.startsWith("http") || cleanUrl.includes(".buzz") || cleanUrl.includes("megavid")) {
     const endpoints = [
       `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-      `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
       `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+      `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+      `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+      `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
       `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}/source`
     ];
     for (const epUrl of endpoints) {
@@ -5053,9 +5050,26 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   }
 
   // Setup visible topbar server switcher dropdown
-  setupAnimeServerDropdown(ref, rawEp, curPref, malId);
+  setupAnimeServerDropdown(ref, rawEp, curPref, malId, epData);
 
-  const streamUrl = cleanUrl.startsWith("http") ? cleanUrl : `https://vidlink.pro/anime/${malId}/${rawEp}/${curPref}`;
+  const isDirectStream = cleanUrl.startsWith("http") && (cleanUrl.includes(".m3u8") || cleanUrl.includes(".mp4") || cleanUrl.includes("blob:"));
+
+  if (!isDirectStream) {
+    artContainer.classList.add("hidden");
+    const iframe = document.getElementById("iframeElement");
+    if (iframe) {
+      iframe.classList.remove("hidden");
+      const tmdbId = ref.videoUrl || ref.id || ref.malId;
+      const season = epData?.season || 1;
+      const epNum = epData?.episode || rawEp;
+      iframe.src = `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=e50914`;
+      const centerOverlay = document.getElementById("videoCenterOverlay");
+      if (centerOverlay) centerOverlay.style.display = "none";
+    }
+    return;
+  }
+
+  const streamUrl = cleanUrl;
 
   if (typeof Artplayer === "undefined") {
     console.warn("Artplayer library not yet available");
@@ -5175,8 +5189,10 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
             localStorage.setItem("cw_anime_audio_pref", route);
             const endpoints = [
               `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
-              `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
               `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
+              `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
+              `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
+              `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
               `https://megavid.buzz/mal/${malId}/${rawEp}/${route}/source`
             ];
             (async () => {
@@ -5247,7 +5263,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   }
 }
 
-function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId) {
+function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId, epData) {
   const serverWrap = document.getElementById("serverSelectWrap");
   const serverActiveLabel = document.getElementById("serverActiveLabel");
   const streamTypeBadge = document.getElementById("streamTypeBadge");
@@ -5299,6 +5315,9 @@ function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId) {
       <div class="cw-server-opt" data-server="vidlink">
         ⚡ VidLink Pro Anime (Mirror)
       </div>
+      <div class="cw-server-opt" data-server="vidsrc">
+        🌟 VidSrc HD (Mirror)
+      </div>
     `;
 
     serverSelect.querySelectorAll(".cw-server-opt").forEach(opt => {
@@ -5309,14 +5328,26 @@ function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId) {
         if (serverActiveLabel) serverActiveLabel.textContent = opt.textContent.trim();
         if (serverMenu) serverMenu.classList.add("hidden");
 
+        const artApp = document.getElementById("artplayerApp");
+        const iframe = document.getElementById("iframeElement");
+
         if (chosen === "sub" || chosen === "dub") {
           localStorage.setItem("cw_anime_audio_pref", chosen);
           if (streamTypeBadge) streamTypeBadge.textContent = chosen === 'dub' ? 'MEGA DUB' : 'MEGA SUB';
-          if (typeof showToast === 'function') showToast(`Connecting to ${chosen.toUpperCase()} stream...`);
+          if (typeof showToast === 'function') showToast(`Connecting to Mega Server (${chosen.toUpperCase()})...`);
+
+          if (iframe) {
+            iframe.classList.add("hidden");
+            iframe.src = "";
+          }
+          if (artApp) artApp.classList.remove("hidden");
+
           const endpoints = [
             `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${chosen}`,
-            `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${chosen}`,
             `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${chosen}`,
+            `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${chosen}`,
+            `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${chosen}`,
+            `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${chosen}`,
             `https://megavid.buzz/mal/${malId}/${rawEp}/${chosen}/source`
           ];
           for (const epUrl of endpoints) {
@@ -5339,11 +5370,32 @@ function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId) {
           }
         } else if (chosen === "vidlink") {
           if (streamTypeBadge) streamTypeBadge.textContent = "VIDLINK";
-          const vidUrl = `https://vidlink.pro/anime/${malId}/${rawEp}/${curPref}`;
+          if (artApp) artApp.classList.add("hidden");
           if (window.artPlayerInstance) {
-            window.artPlayerInstance.switchUrl(vidUrl);
+            try { window.artPlayerInstance.pause(); } catch(e) {}
           }
-          if (typeof showToast === 'function') showToast('Switched to VidLink Anime Mirror');
+          if (iframe) {
+            iframe.classList.remove("hidden");
+            const tmdbId = refMovie?.videoUrl || refMovie?.id || malId;
+            const season = epData?.season || 1;
+            const epNum = epData?.episode || rawEp;
+            iframe.src = `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=e50914`;
+          }
+          if (typeof showToast === 'function') showToast('Switched to VidLink Pro Mirror');
+        } else if (chosen === "vidsrc") {
+          if (streamTypeBadge) streamTypeBadge.textContent = "VIDSRC";
+          if (artApp) artApp.classList.add("hidden");
+          if (window.artPlayerInstance) {
+            try { window.artPlayerInstance.pause(); } catch(e) {}
+          }
+          if (iframe) {
+            iframe.classList.remove("hidden");
+            const tmdbId = refMovie?.videoUrl || refMovie?.id || malId;
+            const season = epData?.season || 1;
+            const epNum = epData?.episode || rawEp;
+            iframe.src = `https://vidsrc.cc/v2/embed/tv/${tmdbId}/${season}/${epNum}`;
+          }
+          if (typeof showToast === 'function') showToast('Switched to VidSrc Mirror');
         }
       };
     });
@@ -5355,6 +5407,7 @@ function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId) {
       <option value="sub" ${!isDub ? 'selected' : ''}>Mega Server HD (Sub / Japanese)</option>
       <option value="dub" ${isDub ? 'selected' : ''}>Mega Server HD (English Dub)</option>
       <option value="vidlink">VidLink Pro Anime (Mirror)</option>
+      <option value="vidsrc">VidSrc HD (Mirror)</option>
     `;
     standardSelect.onchange = (e) => {
       const chosen = e.target.value;
