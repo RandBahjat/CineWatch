@@ -486,7 +486,7 @@ window._MOVIES_DATA = [
     title: "One Night Only",
     type: "Movie",
     year: 2026,
-    rating: 6.4,
+    rating: 6.2,
     age: "R",
     duration: "1h 50m",
     genres: [
