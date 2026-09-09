@@ -11,8 +11,8 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260908_224">
-    <link rel="stylesheet" href="browse-fix.css?v=20260908_224">
+    <link rel="stylesheet" href="movie.css?v=20260908_268">
+    <link rel="stylesheet" href="browse-fix.css?v=20260908_268">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -28,10 +28,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_6150" defer></script>
-    <script src="series-data.js?v=20260818_6150" defer></script>
-    <script src="anime-data.js?v=20260818_6150" defer></script>
-    <script src="movie.js?v=20260908_224" defer></script>
+    <script src="movies-data.js?v=20260818_6194" defer></script>
+    <script src="series-data.js?v=20260818_6194" defer></script>
+    <script src="anime-data.js?v=20260818_6194" defer></script>
+    <script src="movie.js?v=20260908_268" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1474,7 +1474,8 @@
             box-shadow: inset 0 1.5px 1px rgba(255, 255, 255, 0.5),
                         0 10px 26px rgba(0, 0, 0, 0.45);
         }
-        .custom-lang-dropdown.open .lang-dropdown-selected {
+        .custom-lang-dropdown.open .lang-dropdown-selected,
+        .custom-lang-dropdown:hover .lang-dropdown-selected {
             background: rgba(229, 9, 20, 0.16);
             border-color: rgba(229, 9, 20, 0.5);
             box-shadow: 0 0 18px rgba(229, 9, 20, 0.35),
@@ -1494,6 +1495,65 @@
         }
         .lang-flag {
             width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .lang-arrow {
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.7);
+            transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+            margin-left: 2px;
+        }
+        .custom-lang-dropdown.open .lang-arrow,
+        .custom-lang-dropdown:hover .lang-arrow {
+            transform: rotate(180deg);
+            color: #ffffff;
+        }
+        .lang-dropdown-options {
+            position: absolute;
+            top: calc(100% + 10px);
+            right: 0;
+            left: auto;
+            width: 220px;
+            padding: 8px;
+            background: rgba(14, 18, 30, 0.95);
+            backdrop-filter: blur(36px) saturate(210%);
+            -webkit-backdrop-filter: blur(36px) saturate(210%);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            border-radius: 18px;
+            box-shadow: 0 24px 60px -6px rgba(0, 0, 0, 0.8),
+                        inset 0 1px 1px rgba(255, 255, 255, 0.2);
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transform: translateY(10px) scale(0.96);
+            transform-origin: top right;
+            transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+                        visibility 0.25s;
+            z-index: 1100;
+        }
+        /* Hover bridge to prevent flickering when mouse moves between trigger and options */
+        .lang-dropdown-options::before {
+            content: '';
+            position: absolute;
+            top: -16px;
+            left: 0;
+            right: 0;
+            height: 18px;
+            background: transparent;
+        }
+        .custom-lang-dropdown.open .lang-dropdown-options,
+        .custom-lang-dropdown:hover .lang-dropdown-options {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transform: translateY(0) scale(1);
+        }
+        .rtl-layout .lang-dropdown-options {
+            right: auto;
+            left: 0;
+            transform-origin: top left;
         }
         .rtl-layout .custom-lang-dropdown {
             margin-right: 0;
@@ -1974,10 +2034,22 @@
                 updateSelectedLangLabel(currentLang);
                 window.addEventListener('resize', () => updateSelectedLangLabel(currentLang));
 
-                // Toggle dropdown
+                // Toggle dropdown on click (supports mobile/touch and desktop)
                 dropdownBtn.addEventListener('click', (e) => {
                     e.stopPropagation();
                     dropdown.classList.toggle('open');
+                });
+
+                // Hover support with smooth debounce
+                let langHoverTimer = null;
+                dropdown.addEventListener('mouseenter', () => {
+                    clearTimeout(langHoverTimer);
+                    dropdown.classList.add('open');
+                });
+                dropdown.addEventListener('mouseleave', () => {
+                    langHoverTimer = setTimeout(() => {
+                        dropdown.classList.remove('open');
+                    }, 200);
                 });
 
                 // Close on click outside
