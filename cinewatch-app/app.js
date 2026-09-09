@@ -1560,11 +1560,11 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
   }
 
   try {
-    window.artPlayerInstance = new Artplayer({
+    const artOptions = {
       container: '#artplayerApp',
       url: streamUrl,
       poster: poster,
-      volume: 0.7,
+      volume: 0.8,
       isLive: false,
       muted: false,
       autoplay: true,
@@ -1573,7 +1573,7 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
       autoMini: true,
       screenshot: true,
       setting: true,
-      loop: true,
+      loop: false,
       flip: true,
       playbackRate: true,
       aspectRatio: true,
@@ -1591,28 +1591,47 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
       moreVideoAttr: {
         crossOrigin: 'anonymous',
       },
-      subtitle: subtitleUrl ? {
-        url: subtitleUrl,
-        type: 'vtt',
-        style: {
-          color: '#ffffff',
-          fontSize: '22px',
-          textShadow: '0 2px 4px rgba(0,0,0,0.8)',
-          fontWeight: '600'
-        },
-        encoding: 'utf-8',
-      } : undefined,
       customType: {
         m3u8: function (video, url, art) {
           if (typeof Hls !== 'undefined' && Hls.isSupported()) {
-            if (art.hls) art.hls.destroy();
-            const hls = new Hls();
+            if (art.hls) {
+              try { art.hls.destroy(); } catch (e) {}
+            }
+            const hls = new Hls({
+              enableWorker: true,
+              lowLatencyMode: true,
+              backBufferLength: 90
+            });
             hls.loadSource(url);
             hls.attachMedia(video);
+            hls.on(Hls.Events.MANIFEST_PARSED, function () {
+              video.play().catch(function() {
+                video.muted = true;
+                video.play().catch(function() {});
+              });
+            });
+            hls.on(Hls.Events.ERROR, function (event, data) {
+              if (data.fatal) {
+                switch (data.type) {
+                  case Hls.ErrorTypes.NETWORK_ERROR:
+                    hls.startLoad();
+                    break;
+                  case Hls.ErrorTypes.MEDIA_ERROR:
+                    hls.recoverMediaError();
+                    break;
+                  default:
+                    hls.destroy();
+                    break;
+                }
+              }
+            });
             art.hls = hls;
-            art.on('destroy', () => hls.destroy());
+            art.on('destroy', () => {
+              try { hls.destroy(); } catch (e) {}
+            });
           } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
             video.src = url;
+            video.play().catch(function() {});
           } else {
             art.notice.show = 'Unsupported video format: m3u8';
           }
