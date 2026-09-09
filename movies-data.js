@@ -498,7 +498,7 @@ window._MOVIES_DATA = [
     videoUrl: "1433367",
     trailerUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSTLIF8MYD7GKbFo0gSOnMTxjoROTiGohOk--MGFvZ-g&s",
     overview: "Two strangers meet by accident in big busy city. They decide to spend just 12 hours together in one wild crazy night, exploring city secrets, sharing deep feelings, and falling in love before morning come and reality split them apart!",
-    overviewKurdish: "دوو کەسی نەناسراو بە ڕێکەوت لە شاری نیویۆرک بە یەکتر دەگەن. ئەوان بڕیار دەدەن تەنها ١٢ کاتژمێر پێکەوە لە شەوێکی شێتانە و پڕ لە ڕووداوی نەبینراودا بەسەر ببەن، بەشە شاراوەکانی شارەکە دەپشکنن و تووشی خۆشەویستی دەبن پێش ئەوەی بەیانی بێتەوە و ژیانی ڕاستەقینەیان لێکیان جیابکاتەوە.",
+    overviewKurdish: "دوو کەسی نەناسراو بە ڕێکەوت لە شاری نیویۆرک بە یەکتر دەگەن. ئەوان بڕیار دەدەن تەنها ١٢ کاتژمێر پێکەوە لە شەوێکی شێتانە و پڕ لە ڕووداوی نەبینراودا بەسەر ببەن، بەشە شاراوەکانی شارەکە دەپشکنن و تووشی خۆشەویستی دەبن پێش ئەوەی بەیانی بێتەوە و ژیانی ڕاستەقینەیان لێکیان جیاکاتەوە.",
     director: "Will Gluck",
     cast: [
       "Monica Barbaro, Callum Turner"
