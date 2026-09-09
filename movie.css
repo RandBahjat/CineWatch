@@ -2650,6 +2650,10 @@ body.rtl-layout .modal-search-clear {
   background-color: var(--bg-dark);
 }
 
+#detailsSection.hidden {
+  display: none !important;
+}
+
 #detailsSection::-webkit-scrollbar {
   display: none;
 }
@@ -4389,9 +4393,16 @@ body.rtl-layout .details-back-btn svg {
     overflow-y: auto !important;
     overflow-x: hidden !important;
     background: #080a0e !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  #detailsSection.hidden {
+    display: none !important;
+  }
+
+  #detailsSection:not(.hidden) {
     display: flex !important;
     flex-direction: column !important;
-    -webkit-overflow-scrolling: touch !important;
   }
 
   /* 1. Top Bar: Floating back & sound button on top of trailer */
