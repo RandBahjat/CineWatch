@@ -11,8 +11,8 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260908_265">
-    <link rel="stylesheet" href="browse-fix.css?v=20260908_265">
+    <link rel="stylesheet" href="movie.css?v=20260908_266">
+    <link rel="stylesheet" href="browse-fix.css?v=20260908_266">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -28,10 +28,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_6191" defer></script>
-    <script src="series-data.js?v=20260818_6191" defer></script>
-    <script src="anime-data.js?v=20260818_6191" defer></script>
-    <script src="movie.js?v=20260908_265" defer></script>
+    <script src="movies-data.js?v=20260818_6192" defer></script>
+    <script src="series-data.js?v=20260818_6192" defer></script>
+    <script src="anime-data.js?v=20260818_6192" defer></script>
+    <script src="movie.js?v=20260908_266" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1474,7 +1474,8 @@
             box-shadow: inset 0 1.5px 1px rgba(255, 255, 255, 0.5),
                         0 10px 26px rgba(0, 0, 0, 0.45);
         }
-        .custom-lang-dropdown.open .lang-dropdown-selected {
+        .custom-lang-dropdown.open .lang-dropdown-selected,
+        .custom-lang-dropdown:hover .lang-dropdown-selected {
             background: rgba(229, 9, 20, 0.16);
             border-color: rgba(229, 9, 20, 0.5);
             box-shadow: 0 0 18px rgba(229, 9, 20, 0.35),
@@ -1503,7 +1504,8 @@
             transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
             margin-left: 2px;
         }
-        .custom-lang-dropdown.open .lang-arrow {
+        .custom-lang-dropdown.open .lang-arrow,
+        .custom-lang-dropdown:hover .lang-arrow {
             transform: rotate(180deg);
             color: #ffffff;
         }
@@ -1531,7 +1533,18 @@
                         visibility 0.25s;
             z-index: 1100;
         }
-        .custom-lang-dropdown.open .lang-dropdown-options {
+        /* Hover bridge to prevent flickering when mouse moves between trigger and options */
+        .lang-dropdown-options::before {
+            content: '';
+            position: absolute;
+            top: -16px;
+            left: 0;
+            right: 0;
+            height: 18px;
+            background: transparent;
+        }
+        .custom-lang-dropdown.open .lang-dropdown-options,
+        .custom-lang-dropdown:hover .lang-dropdown-options {
             opacity: 1;
             visibility: visible;
             pointer-events: auto;
