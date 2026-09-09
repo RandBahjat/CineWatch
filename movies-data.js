@@ -483,7 +483,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Evil Dead Burn",
+    title: "One Night Only",
     type: "Movie",
     year: 2026,
     rating: 6.4,
