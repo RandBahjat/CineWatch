@@ -501,7 +501,7 @@ window._MOVIES_DATA = [
     overviewKurdish: "دوو کەسی نەناسراو بە ڕێکەوت لە شاری نیویۆرک بە یەکتر دەگەن. ئەوان بڕیار دەدەن تەنها ١٢ کاتژمێر پێکەوە لە شەوێکی شێتانە و پڕ لە ڕووداوی نەبینراودا بەسەر ببەن، بەشە شاراوەکانی شارەکە دەپشکنن و تووشی خۆشەویستی دەبن پێش ئەوەی بەیانی بێتەوە و ژیانی ڕاستەقینەیان لێکیان جیابکاتەوە.",
     director: "Will Gluck",
     cast: [
-      "Souheila Yacoub (as Alice), Hunter Doohan (as Joseph), Luciane Buchanan (as Thya), Tandi Wright (as Susan), Erroll Shand (as Edgar), Maude Davey (as Polly)"
+      "Monica Barbaro, Callum Turner"
     ],
     trending: false,
     featured: false,
