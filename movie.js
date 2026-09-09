@@ -2430,7 +2430,11 @@ function openDetailsModal(movieId) {
               const videoUrl = card.dataset.video;
               const epTitle = card.dataset.title;
               const epNum = parseInt(card.dataset.episode);
-
+              const absNum = card.dataset.absEpisode ? parseInt(card.dataset.absEpisode) : epNum;
+              openVideoPlayerWithUrl(videoUrl, epTitle, movie.id, { season: seasonData.season, episode: epNum, absoluteEpisode: absNum });
+            };
+          }
+        });
       }
 
       renderEpisodes(seasonSelect.value);
