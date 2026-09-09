@@ -496,7 +496,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/5HkrK2U1n1cQMymG7sIJ2XbEZPi.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
     videoUrl: "1433367",
-    trailerUrl: "",
+    trailerUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSTLIF8MYD7GKbFo0gSOnMTxjoROTiGohOk--MGFvZ-g&s",
     overview: "The sixth installment in the legendary horror franchise, serving as a direct sequel to Evil Dead Rise. The story follows a young woman named Alice who seeks comfort from her in-laws at a secluded country home following the sudden death of her husband. However, the grieving gathering quickly devolves into a grueling family reunion from hell as members of the household are systematically possessed and transformed into bloodthirsty Deadites.",
     overviewKurdish: "",
     director: "Sébastien Vaniček",
