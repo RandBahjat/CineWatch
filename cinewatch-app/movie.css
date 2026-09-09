@@ -820,7 +820,8 @@ select {
               0 10px 26px rgba(0, 0, 0, 0.45);
 }
 
-.custom-lang-dropdown.open .lang-dropdown-selected {
+.custom-lang-dropdown.open .lang-dropdown-selected,
+.custom-lang-dropdown:hover .lang-dropdown-selected {
   background: rgba(229, 9, 20, 0.16);
   border-color: rgba(229, 9, 20, 0.5);
   box-shadow: 0 0 18px rgba(229, 9, 20, 0.35),
@@ -853,7 +854,8 @@ select {
   margin-left: 2px;
 }
 
-.custom-lang-dropdown.open .lang-arrow {
+.custom-lang-dropdown.open .lang-arrow,
+.custom-lang-dropdown:hover .lang-arrow {
   transform: rotate(180deg);
   color: #ffffff;
 }
@@ -883,7 +885,19 @@ select {
   z-index: 1100;
 }
 
-.custom-lang-dropdown.open .lang-dropdown-options {
+/* Hover bridge to prevent flickering when mouse moves between trigger and options */
+.lang-dropdown-options::before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  left: 0;
+  right: 0;
+  height: 18px;
+  background: transparent;
+}
+
+.custom-lang-dropdown.open .lang-dropdown-options,
+.custom-lang-dropdown:hover .lang-dropdown-options {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
