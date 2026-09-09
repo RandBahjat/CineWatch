@@ -11,8 +11,8 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260908_266">
-    <link rel="stylesheet" href="browse-fix.css?v=20260908_266">
+    <link rel="stylesheet" href="movie.css?v=20260908_267">
+    <link rel="stylesheet" href="browse-fix.css?v=20260908_267">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -28,10 +28,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_6192" defer></script>
-    <script src="series-data.js?v=20260818_6192" defer></script>
-    <script src="anime-data.js?v=20260818_6192" defer></script>
-    <script src="movie.js?v=20260908_266" defer></script>
+    <script src="movies-data.js?v=20260818_6193" defer></script>
+    <script src="series-data.js?v=20260818_6193" defer></script>
+    <script src="anime-data.js?v=20260818_6193" defer></script>
+    <script src="movie.js?v=20260908_267" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1494,6 +1494,202 @@
         }
         .lang-flag {
             width: 100%;
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Translate Engine -->
+    <div id="google_translate_element" style="display:none;"></div>
+    <style>
+        /* Hide Google Translate Bar, Tooltips, and Floating Widget completely */
+        body { top: 0px !important; position: static !important; }
+        .skiptranslate,
+        body > .skiptranslate,
+        iframe.skiptranslate,
+        iframe[id*=":0"],
+        iframe[id*="goog"],
+        iframe[src*="translate.google"],
+        [class*="VIpgJd"],
+        [class*="goog-"],
+        [id*="goog"],
+        #goog-gt-tt,
+        .goog-tooltip,
+        .goog-text-highlight,
+        .goog-te-gadget-icon,
+        .goog-te-banner-frame {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+            position: absolute !important;
+            top: -99999px !important;
+            left: -99999px !important;
+            width: 0 !important;
+            height: 0 !important;
+            z-index: -999999 !important;
+            clip: rect(0, 0, 0, 0) !important;
+        }
+
+        /* Language Toast — Chrome-style compact popup (top-right) */
+        .lang-toast {
+            position: fixed;
+            top: 86px;
+            right: 24px;
+            background: rgba(18, 20, 29, 0.95);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 12px;
+            padding: 12px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            max-width: 340px;
+        }
+        .lang-toast.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .lang-toast-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .lang-toast-globe {
+            width: 18px !important;
+            height: 18px !important;
+            color: var(--primary, #e50914);
+            flex-shrink: 0;
+        }
+        .lang-toast-tabs {
+            display: flex;
+            gap: 4px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2px;
+            border-radius: 8px;
+            flex: 1;
+        }
+        .lang-toast-tab {
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.8rem;
+            padding: 4px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+        .lang-toast-tab.active-tab {
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            font-weight: 600;
+        }
+        .lang-toast-close {
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+        }
+        .lang-toast-close svg {
+            width: 16px;
+            height: 16px;
+        }
+        .lang-toast-close:hover {
+            color: #fff;
+        }
+        .lang-toast-body {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        #langToastMsg {
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+        .lang-toast-translate-btn {
+            background: var(--primary, #e50914);
+            border: none;
+            color: #fff;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .lang-toast-translate-btn:hover {
+            background: #ff1e27;
+        }
+
+        /* Custom Language Dropdown Styles */
+        .custom-lang-dropdown {
+            position: relative;
+            margin-right: 0.5rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif;
+            font-size: 0.88rem;
+            font-weight: 500;
+            z-index: 1050;
+            user-select: none;
+        }
+        .lang-dropdown-selected {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.44rem 0.95rem;
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            color: #ffffff;
+            cursor: pointer;
+            backdrop-filter: blur(24px) saturate(190%);
+            -webkit-backdrop-filter: blur(24px) saturate(190%);
+            box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.35),
+                        0 6px 20px -2px rgba(0, 0, 0, 0.35);
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .lang-dropdown-selected:hover {
+            background: rgba(255, 255, 255, 0.16);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-1.5px);
+            box-shadow: inset 0 1.5px 1px rgba(255, 255, 255, 0.5),
+                        0 10px 26px rgba(0, 0, 0, 0.45);
+        }
+        .custom-lang-dropdown.open .lang-dropdown-selected,
+        .custom-lang-dropdown:hover .lang-dropdown-selected {
+            background: rgba(229, 9, 20, 0.16);
+            border-color: rgba(229, 9, 20, 0.5);
+            box-shadow: 0 0 18px rgba(229, 9, 20, 0.35),
+                        inset 0 1px 1px rgba(255, 255, 255, 0.4);
+        }
+        .lang-flag-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 16px;
+            border-radius: 3px;
+            overflow: hidden;
+            box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            flex-shrink: 0;
+        }
+        .lang-flag {
+            width: 100%;
             height: 100%;
             display: block;
         }
@@ -1503,7 +1699,8 @@
             transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
             margin-left: 2px;
         }
-        .custom-lang-dropdown.open .lang-arrow {
+        .custom-lang-dropdown.open .lang-arrow,
+        .custom-lang-dropdown:hover .lang-arrow {
             transform: rotate(180deg);
             color: #ffffff;
         }
@@ -1531,7 +1728,18 @@
                         visibility 0.25s;
             z-index: 1100;
         }
-        .custom-lang-dropdown.open .lang-dropdown-options {
+        /* Hover bridge to prevent flickering when mouse moves between trigger and options */
+        .lang-dropdown-options::before {
+            content: '';
+            position: absolute;
+            top: -16px;
+            left: 0;
+            right: 0;
+            height: 18px;
+            background: transparent;
+        }
+        .custom-lang-dropdown.open .lang-dropdown-options,
+        .custom-lang-dropdown:hover .lang-dropdown-options {
             opacity: 1;
             visibility: visible;
             pointer-events: auto;
@@ -1979,35 +2187,6 @@
             // Setup Custom Dropdown
             
             const dropdown = document.getElementById('customLangDropdown');
-            const dropdownBtn = document.getElementById('langDropdownBtn');
-            const selectedText = document.getElementById('langSelectedText');
-            const currentFlagEl = document.getElementById('langCurrentFlag');
-            const options = document.querySelectorAll('.lang-option');
-
-            const FLAG_US = `<svg class="lang-flag" viewBox="0 0 64 48" width="22" height="16" aria-hidden="true"><rect width="64" height="48" fill="#B22234"/><path d="M0 3.7h64M0 11.1h64M0 18.5h64M0 25.8h64M0 33.2h64M0 40.6h64" stroke="#FFF" stroke-width="3.7"/><rect width="26" height="26" fill="#3C3B6E"/><circle cx="5" cy="5" r="1.2" fill="#FFF"/><circle cx="13" cy="5" r="1.2" fill="#FFF"/><circle cx="21" cy="5" r="1.2" fill="#FFF"/><circle cx="9" cy="9" r="1.2" fill="#FFF"/><circle cx="17" cy="9" r="1.2" fill="#FFF"/><circle cx="5" cy="13" r="1.2" fill="#FFF"/><circle cx="13" cy="13" r="1.2" fill="#FFF"/><circle cx="21" cy="13" r="1.2" fill="#FFF"/><circle cx="9" cy="17" r="1.2" fill="#FFF"/><circle cx="17" cy="17" r="1.2" fill="#FFF"/><circle cx="5" cy="21" r="1.2" fill="#FFF"/><circle cx="13" cy="21" r="1.2" fill="#FFF"/><circle cx="21" cy="21" r="1.2" fill="#FFF"/></svg>`;
-            const FLAG_CKB = `<svg class="lang-flag" viewBox="0 0 64 48" width="22" height="16" aria-hidden="true"><rect width="64" height="16" fill="#E4002B"/><rect y="16" width="64" height="16" fill="#FFFFFF"/><rect y="32" width="64" height="16" fill="#009639"/><circle cx="32" cy="24" r="4.2" fill="#FFC72C"/><polygon points="32.0,16.0 32.7,19.6 34.4,16.4 34.0,19.9 36.5,17.4 35.1,20.7 38.3,19.0 35.9,21.8 39.4,21.1 36.4,23.0 40.0,23.4 36.5,24.3 39.8,25.8 36.2,25.6 38.9,28.0 35.5,26.8 37.4,29.9 34.5,27.7 35.5,31.2 33.3,28.3 33.2,31.9 32.0,28.5 30.8,31.9 30.7,28.3 28.5,31.2 29.5,27.7 26.6,29.9 28.5,26.8 25.1,28.0 27.8,25.6 24.2,25.8 27.5,24.3 24.0,23.4 27.6,23.0 24.6,21.1 28.1,21.8 25.7,19.0 28.9,20.7 27.5,17.4 30.0,19.9 29.6,16.4 31.3,19.6" fill="#FFC72C"/></svg>`;
-
-            function updateSelectedLangLabel(lang) {
-                if (!selectedText) return;
-                const isMobile = window.innerWidth <= 768;
-                if (lang === 'ckb') {
-                    selectedText.textContent = 'کوردی';
-                    if (currentFlagEl) currentFlagEl.innerHTML = FLAG_CKB;
-                } else {
-                    selectedText.textContent = isMobile ? 'EN' : 'English';
-                    if (currentFlagEl) currentFlagEl.innerHTML = FLAG_US;
-                }
-                options.forEach(opt => {
-                    if (opt.dataset.value === lang) {
-                        opt.classList.add('active');
-                    } else {
-                        opt.classList.remove('active');
-                    }
-                });
-            }
-
-            if (dropdown && dropdownBtn) {
-                options.forEach(opt => {
                     opt.addEventListener('click', (e) => {
                         e.stopPropagation();
                         dropdown.classList.remove('open');
