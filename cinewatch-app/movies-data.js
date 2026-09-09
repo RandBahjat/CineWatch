@@ -488,7 +488,7 @@ window._MOVIES_DATA = [
     year: 2026,
     rating: 6.2,
     age: "R",
-    duration: "1h 50m",
+    duration: "1h 42m",
     genres: [
       "Horror",
       "Supernatural"
