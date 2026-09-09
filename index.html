@@ -11,8 +11,8 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260908_266">
-    <link rel="stylesheet" href="browse-fix.css?v=20260908_266">
+    <link rel="stylesheet" href="movie.css?v=20260908_267">
+    <link rel="stylesheet" href="browse-fix.css?v=20260908_267">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
@@ -28,10 +28,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_6192" defer></script>
-    <script src="series-data.js?v=20260818_6192" defer></script>
-    <script src="anime-data.js?v=20260818_6192" defer></script>
-    <script src="movie.js?v=20260908_266" defer></script>
+    <script src="movies-data.js?v=20260818_6193" defer></script>
+    <script src="series-data.js?v=20260818_6193" defer></script>
+    <script src="anime-data.js?v=20260818_6193" defer></script>
+    <script src="movie.js?v=20260908_267" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -2034,10 +2034,22 @@
                 updateSelectedLangLabel(currentLang);
                 window.addEventListener('resize', () => updateSelectedLangLabel(currentLang));
 
-                // Toggle dropdown
+                // Toggle dropdown on click (supports mobile/touch and desktop)
                 dropdownBtn.addEventListener('click', (e) => {
                     e.stopPropagation();
                     dropdown.classList.toggle('open');
+                });
+
+                // Hover support with smooth debounce
+                let langHoverTimer = null;
+                dropdown.addEventListener('mouseenter', () => {
+                    clearTimeout(langHoverTimer);
+                    dropdown.classList.add('open');
+                });
+                dropdown.addEventListener('mouseleave', () => {
+                    langHoverTimer = setTimeout(() => {
+                        dropdown.classList.remove('open');
+                    }, 200);
                 });
 
                 // Close on click outside
