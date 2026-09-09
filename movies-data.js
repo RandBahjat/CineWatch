@@ -497,7 +497,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
     videoUrl: "1433367",
     trailerUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSTLIF8MYD7GKbFo0gSOnMTxjoROTiGohOk--MGFvZ-g&s",
-    overview: "The sixth installment in the legendary horror franchise, serving as a direct sequel to Evil Dead Rise. The story follows a young woman named Alice who seeks comfort from her in-laws at a secluded country home following the sudden death of her husband. However, the grieving gathering quickly devolves into a grueling family reunion from hell as members of the household are systematically possessed and transformed into bloodthirsty Deadites.",
+    overview: "Two strangers meet by accident in big busy city. They decide to spend just 12 hours together in one wild crazy night, exploring city secrets, sharing deep feelings, and falling in love before morning come and reality split them apart!",
     overviewKurdish: "",
     director: "Sébastien Vaniček",
     cast: [
