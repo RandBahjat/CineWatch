@@ -1753,7 +1753,23 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
           tooltip: 'MegaCloud Direct Engine',
         },
       ],
-    });
+    };
+
+    if (subtitleUrl && typeof subtitleUrl === 'string' && subtitleUrl.trim().length > 0) {
+      artOptions.subtitle = {
+        url: subtitleUrl,
+        type: 'vtt',
+        style: {
+          color: '#ffffff',
+          fontSize: '22px',
+          textShadow: '0 2px 4px rgba(0,0,0,0.8)',
+          fontWeight: '600'
+        },
+        encoding: 'utf-8',
+      };
+    }
+
+    window.artPlayerInstance = new Artplayer(artOptions);
   } catch (err) {
     console.error('Failed to init ArtPlayer in app:', err);
   }
