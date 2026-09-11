@@ -231,10 +231,24 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, '0.0.0.0', () => {
-  console.log(`\n========================================`);
-  console.log(`🚀 CineWatch Local Host Server Running!`);
-  console.log(`📡 Local:    http://localhost:${PORT}`);
-  console.log(`🌐 Network:  http://127.0.0.1:${PORT}`);
-  console.log(`========================================\n`);
+function startServer(portToUse) {
+  server.listen(portToUse, '0.0.0.0', () => {
+    console.log(`\n========================================`);
+    console.log(`🚀 CineWatch Local Host Server Running!`);
+    console.log(`📡 Local:    http://localhost:${portToUse}`);
+    console.log(`🌐 Network:  http://127.0.0.1:${portToUse}`);
+    console.log(`========================================\n`);
+  });
+}
+
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.log(`⚠️ Port ${PORT} is busy, trying port ${PORT + 1}...`);
+    PORT += 1;
+    startServer(PORT);
+  } else {
+    console.error('Server error:', err);
+  }
 });
+
+startServer(PORT);
