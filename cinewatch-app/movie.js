@@ -3290,18 +3290,22 @@ function closeReportModal() {
 // ==========================================
 
 function bindEventListeners() {
-  // Navigation Links
-  document.querySelectorAll(".nav-link").forEach((link) => {
+  // Navigation Links & Footer Explore Links
+  document.querySelectorAll(".nav-link, .footer-explore-link").forEach((link) => {
     link.onclick = (e) => {
       e.preventDefault();
       if (link.dataset.view === "browse") {
         // If clicking browse directly, switch to movies or toggle dropdown
         switchView("movies");
+        window.scrollTo({ top: 0, behavior: "smooth" });
         return;
       }
       const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
       if (mobileMenuOverlay) mobileMenuOverlay.classList.remove("active");
-      switchView(link.dataset.view);
+      if (link.dataset.view) {
+        switchView(link.dataset.view);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
     };
   });
 
