@@ -208,21 +208,19 @@
             align-items: center;
         }
 
-        /* Mode Switcher (Desktop vs Mobile Preview) */
+        /* Showcase Status Header */
         .preview-controls-bar {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             width: 100%;
-            margin-bottom: 1.2rem;
-            flex-wrap: wrap;
-            gap: 12px;
+            margin-bottom: 1.4rem;
         }
         .preview-status-pill {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            padding: 6px 14px;
+            padding: 6px 16px;
             background: rgba(255,255,255,0.04);
             border: 1px solid rgba(255,255,255,0.08);
             border-radius: 50px;
@@ -242,39 +240,6 @@
             0% { transform: scale(0.95); opacity: 0.8; }
             50% { transform: scale(1.25); opacity: 1; }
             100% { transform: scale(0.95); opacity: 0.8; }
-        }
-
-        .preview-switch-pills {
-            display: inline-flex;
-            background: rgba(18, 20, 28, 0.85);
-            border: 1px solid rgba(255,255,255,0.08);
-            border-radius: 12px;
-            padding: 4px;
-            gap: 4px;
-        }
-        .preview-tab-btn {
-            background: transparent;
-            border: none;
-            color: #71717a;
-            padding: 7px 16px;
-            border-radius: 8px;
-            font-size: 0.82rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            cursor: pointer;
-            transition: all 0.25s ease;
-        }
-        .preview-tab-btn ion-icon { font-size: 1rem; }
-        .preview-tab-btn.active {
-            background: #e50914;
-            color: #ffffff;
-            box-shadow: 0 4px 15px rgba(229, 9, 20, 0.35);
-        }
-        .preview-tab-btn:not(.active):hover {
-            color: #ffffff;
-            background: rgba(255,255,255,0.05);
         }
 
         /* ── Desktop Window Showcase (Side-by-side App Layout matching real CineWatch Desktop) ── */
