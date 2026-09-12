@@ -5041,6 +5041,7 @@ const ANIME_MAL_MAP = {
   '61374': 22319,    // Tokyo Ghoul
   '902': 481,        // Yu-Gi-Oh! Duel Monsters
   '12536': 482,      // Yu-Gi-Oh! GX
+  '20695': 4343,     // Yu-Gi-Oh! 5D's
 };
 
 function getAnimeMalId(refMovie, dataId) {
@@ -5049,6 +5050,7 @@ function getAnimeMalId(refMovie, dataId) {
   if (ANIME_MAL_MAP[key]) return ANIME_MAL_MAP[key];
   if (refMovie?.title) {
     const t = refMovie.title.toLowerCase();
+    if (t.includes('5d')) return 4343;
     if (t.includes('gx')) return 482;
     if (t.includes('one piece')) return 21;
     if (t.includes('bleach')) return 269;
