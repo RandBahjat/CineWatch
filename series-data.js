@@ -23,7 +23,7 @@ window._SERIES_DATA = [
     videoUrl: '258230',
     trailerUrl: "https://youtu.be/M8nHySkLb64?si=ncGOGxR7J7r25Gyh",
     overview: 'A dedicated detective investigates mysterious disappearances, untangling a complex web of secrets and hidden motives behind the last known moments of those who vanished without a trace. Every discovery leads to more questions and new dangers.',
-    overviewKurdish: "جێ مون‌جای، ڕۆماننووسێکی گۆشەگیر، هەڵدەستێت و دەبینێت ناسنامەکەی دزراوە، هاوپەیمانی لەگەڵ قەرزدەرێکی دڵڕەق دەکات بۆ ڕاونانی مشکەکە کە هەموو شتێکی لێ بردووە.",
+    overviewKurdish: "",
     director: 'Kim Hong-sun, Lee Jae-gon',
     cast: [
       'Ryu Jun-yeol, Sul Kyung-gu, Lee Kyoo-hyung'
