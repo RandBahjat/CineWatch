@@ -7,7 +7,7 @@ window._MOVIES_DATA = [
     title: "Runner",
     type: "Movie",
     year: 2026,
-    rating: 5.4,
+    rating: 6.6,
     age: "TV-MA",
     duration: "1h 33m",
     genres: [
