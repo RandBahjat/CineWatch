@@ -41,7 +41,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 2,
-            title: 'Trust Fall'
+            title: 'The Call'
           },
           {
             episode: 3,
