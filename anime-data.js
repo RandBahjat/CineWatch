@@ -25141,7 +25141,7 @@ window._ANIME_DATA = [
         "Adventure",
         "Comedy",
         "Fantasy",
-        "Sci-Fi"
+        
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dw9mYcs23tn3gxu2gbsYAfpX2Ye.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1cKV1MXj1D9NJBXS1zlmkEYqGgY.jpg",
