@@ -4136,8 +4136,6 @@ function bindEventListeners() {
       prevWrap.classList.add('hidden');
     }
 
-    const detailsSection = document.getElementById("detailsSection");
-
     detailsSection.style.opacity = "0";
 
     // Clear the deep link from the URL
