@@ -25916,7 +25916,7 @@ window._ANIME_DATA = [
     animeSlug: "yu-gi-oh-5ds",
     overview: "Welcome to New Domino City! Once the playground to legendary duelist Yugi Muto, this sprawling metropolis has since been transformed into a futuristic society where dueling has kicked into overdrive. With recent technological advancements made by KaibaCorp, dueling has undergone a metamorphosis that has revolutionized the makeup and pace of the game! It’s now a heart-pounding, adrenaline-filled and fuel injected competition where duelists ride supercharged hyper cycles called Duel Runners and battle it out in hi-octane contests called “Turbo Duels.”",
     overviewKurdish: "بەخێربێن بۆ شاری نیو دۆمینۆ! ئەم شارە گەورەیە کە سەردەمانێک مەیدانی یاریزانە ئەفسانەییەکە یووگی مووتۆ بوو، ئێستا گۆڕاوە بۆ کۆمەڵگەیەکی پێشکەوتووی سەردەمی کە دوێڵکردن تێیدا گەیشتووەتە لووتکە. لەگەڵ پێشکەوتنی تەکنەلۆژیای کۆمپانیای کایباکۆڕپ، دوێڵکردن گۆڕانکارییەکی گەورەی بەسەردا هاتووە. ئێستا پێشبڕکێیەکی پڕ لە جۆش و خرۆش و خێرایە کە دوێڵستەکان سواری ماتۆڕسکیلی بەهێزی تایبەت بە ناوی دوێڵ ڕەنەرز دەبن و لە کێبڕکێی خێرا و سەرسوڕهێنەردا بە ناوی 'تۆربۆ دوێڵز' ڕووبەڕووی یەکتر دەبنەوە.",
-    director: "Katsumi Ono",
+    director: "Kazuki Takahashi",
     cast: [
         "Yuya Miyashita",
         "Takanori Hoshino",
