@@ -766,11 +766,11 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
 
 async function renderCarousels() {
   const shelfMap = {
-    top10Track: MOVIES.filter((m) => TOP_10_TRENDING_TODAY.includes(m.title)).sort((a, b) => TOP_10_TRENDING_TODAY.indexOf(a.title) - TOP_10_TRENDING_TODAY.indexOf(b.title)),
-    trendingMoviesTrack: MOVIES.filter((m) => TRENDING_THIS_WEEK_MOVIES.includes(m.title) && m.type !== "TV Show").sort((a, b) => TRENDING_THIS_WEEK_MOVIES.indexOf(a.title) - TRENDING_THIS_WEEK_MOVIES.indexOf(b.title)),
-    trendingSeriesTrack: MOVIES.filter((m) => TRENDING_THIS_WEEK_SERIES.includes(m.title) && (m.type === "TV Show" || m.type === "Series")).sort((a, b) => TRENDING_THIS_WEEK_SERIES.indexOf(a.title) - TRENDING_THIS_WEEK_SERIES.indexOf(b.title)),
-    popularMoviesTrack: MOVIES.filter((m) => POPULAR_MOVIES.includes(m.title) && m.type !== "TV Show").sort((a, b) => POPULAR_MOVIES.indexOf(a.title) - POPULAR_MOVIES.indexOf(b.title)),
-    popularSeriesTrack: MOVIES.filter((m) => POPULAR_SERIES.includes(m.title) && (m.type === "TV Show" || m.type === "Series")).sort((a, b) => POPULAR_SERIES.indexOf(a.title) - POPULAR_SERIES.indexOf(b.title)),
+    top10Track: MOVIES.filter((m) => TOP_10_TRENDING_TODAY.some(t => matchMediaTitle(m, t))).sort((a, b) => getMediaListIndex(a, TOP_10_TRENDING_TODAY) - getMediaListIndex(b, TOP_10_TRENDING_TODAY)),
+    trendingMoviesTrack: MOVIES.filter((m) => TRENDING_THIS_WEEK_MOVIES.some(t => matchMediaTitle(m, t)) && m.type !== "TV Show").sort((a, b) => getMediaListIndex(a, TRENDING_THIS_WEEK_MOVIES) - getMediaListIndex(b, TRENDING_THIS_WEEK_MOVIES)),
+    trendingSeriesTrack: MOVIES.filter((m) => TRENDING_THIS_WEEK_SERIES.some(t => matchMediaTitle(m, t)) && (m.type === "TV Show" || m.type === "Series")).sort((a, b) => getMediaListIndex(a, TRENDING_THIS_WEEK_SERIES) - getMediaListIndex(b, TRENDING_THIS_WEEK_SERIES)),
+    popularMoviesTrack: MOVIES.filter((m) => POPULAR_MOVIES.some(t => matchMediaTitle(m, t)) && m.type !== "TV Show").sort((a, b) => getMediaListIndex(a, POPULAR_MOVIES) - getMediaListIndex(b, POPULAR_MOVIES)),
+    popularSeriesTrack: MOVIES.filter((m) => POPULAR_SERIES.some(t => matchMediaTitle(m, t)) && (m.type === "TV Show" || m.type === "Series")).sort((a, b) => getMediaListIndex(a, POPULAR_SERIES) - getMediaListIndex(b, POPULAR_SERIES)),
   };
 
   const tracks = Object.keys(shelfMap);
