@@ -18,8 +18,12 @@
     (navigator.userAgent.includes('Electron') || (typeof window !== 'undefined' && window.process && window.process.type === 'renderer'));
 
   function isVerified() {
-    if (isElectron) return true;
     if (isTestMode) return false;
+    
+    // Only bypass if running as local file in desktop app
+    if (window.location.protocol === 'file:' && typeof navigator !== 'undefined' && navigator.userAgent.includes('Electron')) {
+      return true;
+    }
 
     try {
       if (sessionStorage.getItem(STORAGE_KEY_SESSION) === 'true') {
