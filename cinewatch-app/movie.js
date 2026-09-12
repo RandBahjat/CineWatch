@@ -518,7 +518,7 @@ setTimeout(() => {
 
 function getFeaturedMovies() {
   return MOVIES.filter((m) => m.featured).sort((a, b) => {
-    return FEATURED_TITLES.indexOf(a.title) - FEATURED_TITLES.indexOf(b.title);
+    return getMediaListIndex(a, FEATURED_TITLES) - getMediaListIndex(b, FEATURED_TITLES);
   });
 }
 
