@@ -13985,7 +13985,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/ynQUQE3pQVYsLtrhc3lUtr2maE4.jpg",
     videoUrl: "10625",
     trailerUrl: "https://youtu.be/oDU84nmSDZY?si=WWxn0RTnJf2rOkxD",
-    overview: "Cady Heron is a teenager who spent her childhood home-schooled in Africa before moving to a suburban public high school in America. She quickly gets pulled into the elite, superficial girl clique called The Plastics, led by the ruthless Regina George. When Cady falls for Regina's ex-boyfriend Aaron Samuels, she sets out to secretly sabotage Regina, only to watch herself slowly transform into the very thing she hated.",
+    overview: "Jo Mitchell is a high school senior who moves to a new school and decides to stand up against the dominant clique known as the Plastics. After making a deal with a wealthy father to befriend his unpopular daughter Abby Hanover in exchange for college tuition, Jo forms a new group to challenge the school bullies. However, as secrets come out, Jo must prove her friendship is real and overcome the toxic drama.",
     overviewKurdish: "کیدی هێرۆن کچێکی هەرزەکارە کە منداڵیی بە فێربوونی ماڵەوە لە ئەفریقا بەسەر بردووە پێش ئەوەی ڕووبکاتە قوتابخانەیەکی ئامادەیی گشتی لە ئەمریکا. لەوێ دەکەوێتە ناو گرووپی کچە دەستڕۆیشتوو و ڕووکەشەکانی قوتابخانەکە بە ناوی پلاستیکەکان، کە لەلایەن ڕێجینا جۆرجی بێبەزەیییەوە سەرکردایەتی دەکرێن. کاتێک کیدی دەکەوێتە خۆشەویستی ئارۆن ساموێڵز کە خۆشەویستی پێشووی ڕێجینایە، پیلانی نهێنی دادەنێت بۆ تێکدانی گرووپەکە، بەڵام بێئەوەی هەستی پێبکات بەرەبەرە خۆشی دەبێتە یەکێک لەوان.",
     director: "Mark Waters",
     cast: [
