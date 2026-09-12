@@ -11,8 +11,8 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260908_321">
-    <link rel="stylesheet" href="browse-fix.css?v=20260908_321">
+    <link rel="stylesheet" href="movie.css?v=20260908_322">
+    <link rel="stylesheet" href="browse-fix.css?v=20260908_322">
     <link rel="stylesheet" href="security-gate.css?v=cf_turnstile_v2">
     <script src="security-gate.js?v=cf_turnstile_v2"></script>
     <meta charset="UTF-8" />
@@ -30,10 +30,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_6247" defer></script>
-    <script src="series-data.js?v=20260818_6247" defer></script>
-    <script src="anime-data.js?v=20260818_6247" defer></script>
-    <script src="movie.js?v=20260908_321" defer></script>
+    <script src="movies-data.js?v=20260818_6248" defer></script>
+    <script src="series-data.js?v=20260818_6248" defer></script>
+    <script src="anime-data.js?v=20260818_6248" defer></script>
+    <script src="movie.js?v=20260908_322" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -53,6 +53,84 @@
         </linearGradient>
       </defs>
     </svg>
+
+    <!-- Real Cloudflare Security Gateway -->
+    <script>
+      (function() {
+        try {
+          var isTest = window.location.search.indexOf('verify=1') !== -1 || window.location.search.indexOf('test_captcha') !== -1;
+          var isVerified = sessionStorage.getItem('cw_cf_verified') === 'true' || 
+            (localStorage.getItem('cw_cf_verified_time') && (Date.now() - parseInt(localStorage.getItem('cw_cf_verified_time'), 10) < 86400000));
+          if (isVerified && !isTest) {
+            document.write('<style>#cwSecurityGatekeeper { display: none !important; }</style>');
+          }
+        } catch(e) {}
+      })();
+
+      window.onCloudflareVerify = function(token) {
+        try {
+          sessionStorage.setItem('cw_cf_verified', 'true');
+          localStorage.setItem('cw_cf_verified_time', Date.now().toString());
+        } catch(e) {}
+        var banner = document.getElementById('cfSuccessBanner');
+        if (banner) banner.style.display = 'flex';
+        var gate = document.getElementById('cwSecurityGatekeeper');
+        if (gate) {
+          setTimeout(function() {
+            gate.style.transition = 'opacity 0.4s ease, visibility 0.4s ease';
+            gate.style.opacity = '0';
+            gate.style.visibility = 'hidden';
+            setTimeout(function() { gate.remove(); }, 400);
+          }, 650);
+        }
+      };
+    </script>
+
+    <div id="cwSecurityGatekeeper">
+      <div class="cf-challenge-container">
+        <!-- Site Header -->
+        <div class="cf-site-title">
+          <div class="cf-site-icon"><ion-icon name="ticket"></ion-icon></div>
+          <div><span class="domain-name" id="cfDomainTitle">cinewatch.net</span></div>
+        </div>
+
+        <!-- Managed Challenge Title -->
+        <h1 class="cf-heading">Verify you are human</h1>
+        <p class="cf-subtext">Verify you are human by completing the action below.</p>
+
+        <!-- Success Banner -->
+        <div class="cf-success-banner" id="cfSuccessBanner">
+          <ion-icon name="checkmark-circle" style="font-size: 1.25rem;"></ion-icon>
+          <span>Verification successful! Directing to CineWatch...</span>
+        </div>
+
+        <!-- Real Cloudflare Turnstile Widget -->
+        <div class="cf-turnstile-wrapper">
+          <div class="cf-turnstile" id="cfTurnstileBox" data-sitekey="1x00000000000000000000AA" data-theme="dark" data-callback="onCloudflareVerify"></div>
+        </div>
+
+        <!-- Security Explanation -->
+        <p class="cf-explanation">
+          cinewatch.net needs to review the security of your connection before proceeding.
+        </p>
+
+        <!-- Cloudflare Footer -->
+        <div class="cf-footer">
+          <div class="cf-footer-row">
+            <span class="cf-ray-id" id="cfRayId">Ray ID: <code>91a4b8c02e1792f</code></span>
+            <div class="cf-attribution">
+              Performance &amp; security by 
+              <a href="https://www.cloudflare.com?utm_source=challenge&utm_campaign=m" target="_blank" rel="noopener noreferrer">
+                <svg class="cf-logo-svg" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#F38020" d="M37.5 17c-.3-4-3.5-7.2-7.5-7.2-1 0-2 .2-2.9.6C26 7.7 23.3 5.8 20 5.8c-4.4 0-8 3.6-8 8 0 .5.1 1 .2 1.4C10.4 15.8 8 18.9 8 22.5c0 4.9 4 8.9 8.9 8.9h21.6c4.4 0 8-3.6 8-8 0-3.8-2.6-6.9-6.2-7.8-.3-.6-.6-1.1-1-1.6z"/>
+                </svg>
+                Cloudflare
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Loading Splash Screen -->
     <div class="app-loader" id="appLoader">
