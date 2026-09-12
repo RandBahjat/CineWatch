@@ -13963,7 +13963,7 @@ window._MOVIES_DATA = [
     overviewKurdish: "کیدی هێرۆن کچێکی هەرزەکارە کە منداڵیی بە فێربوونی ماڵەوە لە ئەفریقا بەسەر بردووە پێش ئەوەی ڕووبکاتە قوتابخانەیەکی ئامادەیی گشتی لە ئەمریکا. لەوێ دەکەوێتە ناو گرووپی کچە دەستڕۆیشتوو و ڕووکەشەکانی قوتابخانەکە بە ناوی پلاستیکەکان، کە لەلایەن ڕێجینا جۆرجی بێبەزەیییەوە سەرکردایەتی دەکرێن. کاتێک کیدی دەکەوێتە خۆشەویستی ئارۆن ساموێڵز کە خۆشەویستی پێشووی ڕێجینایە، پیلانی نهێنی دادەنێت بۆ تێکدانی گرووپەکە، بەڵام بێئەوەی هەستی پێبکات بەرەبەرە خۆشی دەبێتە یەکێک لەوان.",
     director: "Mark Waters",
     cast: [
-      "Tom Cruise, Morgan Freeman, Olga Kurylenko, Andrea Riseborough, Nikolaj Coster-Waldau"
+      "Lindsay Lohan, Rachel McAdams, Tina Fey, Tim Meadows, Amy Poehler, Ana Gasteyer, Amanda Seyfried, Lacey Chabert, Jonathan Bennett"
     ],
     trending: false,
     featured: false,
