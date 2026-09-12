@@ -26,7 +26,7 @@ window._SERIES_DATA = [
     overviewKurdish: "ێکۆڵەرێکی دڵسۆز لێکۆڵینەوە لە دیارنەمانی بێشوێنەواری کەسە ونبووەکان دەکات، و بەدوای نهێنییە شاراوەکان و هۆکارە تاریکەکانی پشت دوا جار بینرانی هەر کەسێکدا دەگەڕێت پێش ئەوەی بە تەواوی ون ببن. هەر بەرەوپێشچوونێک لە کەیسەکەدا، نهێنی زیاتر و مەترسی نوێی بۆ دەردەخات.",
     director: 'James Watkins',
     cast: [
-      'Ryu Jun-yeol, Sul Kyung-gu, Lee Kyoo-hyung'
+      'Patrick Brammall, Maxine Peake, Sarah Phelps, Livia De Paolis, Damien Molony, Aimee-Ffion Edwards, Kojo Kamara'
     ],
     trending: false,
     featured: false,
