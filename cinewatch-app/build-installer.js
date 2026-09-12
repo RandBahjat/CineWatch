@@ -42,13 +42,14 @@ builder.build({
     console.log(result);
     
     const rootDir = path.join(__dirname, '..');
-    const files = fs.readdirSync(outputDir);
-    const exeFile = files.find(f => f.endsWith('.exe') && f.includes('Setup'));
+    const exePath = result.find(f => f.endsWith('.exe'));
     
-    if (exeFile) {
-        const srcPath = path.join(outputDir, exeFile);
+    if (exePath && fs.existsSync(exePath)) {
         const destSetup = path.join(rootDir, 'CineWatch-Setup.exe');
         const destVersioned = path.join(rootDir, 'CineWatch-v1.2.6-Setup.exe');
+        
+        fs.copyFileSync(exePath, destSetup);
+        fs.copyFileSync(exePath, destVersioned);
         
         fs.copyFileSync(srcPath, destSetup);
         fs.copyFileSync(srcPath, destVersioned);
