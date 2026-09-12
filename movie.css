@@ -2728,6 +2728,7 @@ body.rtl-layout .modal-search-clear {
 .details-bg-gradient-overlay {
   position: absolute;
   inset: 0;
+  z-index: 2; /* Sits directly over trailer iframe (z-index: 1) for seamless protection */
   background: 
     /* Subtle top vignette for back button */
     linear-gradient(to bottom, rgba(5, 7, 10, 0.75) 0%, rgba(5, 7, 10, 0.15) 12%, transparent 22%),
@@ -2740,131 +2741,66 @@ body.rtl-layout .modal-search-clear {
 }
 
 /* =========================================================
-   Trailer-Active Text Readability & Frosted Protection
-   Activated ONLY when background video trailer is playing
+   Trailer-Active Text Readability — Pure Cinematic Scrim
+   No boxes, no pills, no borders: seamless organic legibility
    ========================================================= */
 
 .details-title-large,
 .details-overview-large,
 .details-meta-row,
-.details-cast-list,
-.rating-block,
-.details-action-buttons {
-  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+.details-cast-list {
+  transition: text-shadow 0.5s ease, color 0.5s ease;
 }
 
-/* Deepen protective gradient under text when trailer is playing */
+/* Deepen left cinematic gradient seamlessly behind the text when trailer plays */
 #detailsSection.trailer-bg-active .details-bg-gradient-overlay {
   background: 
+    /* Top vignette for controls */
     linear-gradient(to bottom, rgba(5, 7, 10, 0.85) 0%, rgba(5, 7, 10, 0.2) 15%, transparent 25%),
-    linear-gradient(to right, rgba(5, 7, 10, 0.96) 0%, rgba(5, 7, 10, 0.85) 35%, rgba(5, 7, 10, 0.5) 60%, rgba(5, 7, 10, 0.18) 78%, transparent 100%),
-    linear-gradient(to top, var(--bg-dark) 0%, rgba(5, 7, 10, 0.9) 10%, rgba(5, 7, 10, 0.3) 22%, transparent 32%);
+    /* Rich seamless left cinematic shadow protecting the entire text column without any boxes */
+    linear-gradient(to right, rgba(5, 7, 10, 0.97) 0%, rgba(5, 7, 10, 0.9) 35%, rgba(5, 7, 10, 0.55) 60%, rgba(5, 7, 10, 0.18) 78%, transparent 100%),
+    /* Bottom fade */
+    linear-gradient(to top, var(--bg-dark) 0%, rgba(5, 7, 10, 0.92) 10%, rgba(5, 7, 10, 0.3) 22%, transparent 34%);
 }
 
-/* RTL layout support for trailer gradient */
+/* RTL layout support for left-to-right inversion */
 body.rtl-layout #detailsSection.trailer-bg-active .details-bg-gradient-overlay {
   background: 
     linear-gradient(to bottom, rgba(5, 7, 10, 0.85) 0%, rgba(5, 7, 10, 0.2) 15%, transparent 25%),
-    linear-gradient(to left, rgba(5, 7, 10, 0.96) 0%, rgba(5, 7, 10, 0.85) 35%, rgba(5, 7, 10, 0.5) 60%, rgba(5, 7, 10, 0.18) 78%, transparent 100%),
-    linear-gradient(to top, var(--bg-dark) 0%, rgba(5, 7, 10, 0.9) 10%, rgba(5, 7, 10, 0.3) 22%, transparent 32%);
+    linear-gradient(to left, rgba(5, 7, 10, 0.97) 0%, rgba(5, 7, 10, 0.9) 35%, rgba(5, 7, 10, 0.55) 60%, rgba(5, 7, 10, 0.18) 78%, transparent 100%),
+    linear-gradient(to top, var(--bg-dark) 0%, rgba(5, 7, 10, 0.92) 10%, rgba(5, 7, 10, 0.3) 22%, transparent 34%);
 }
 
-/* Title: multi-layered high-contrast shadow */
+/* Crisp, natural text shadows so all text stays clear over trailer highlights without any boxy frames */
 #detailsSection.trailer-bg-active .details-title-large {
   text-shadow: 
-    0 2px 5px rgba(0, 0, 0, 0.95),
-    0 6px 20px rgba(0, 0, 0, 0.95),
-    0 12px 36px rgba(0, 0, 0, 0.9),
-    0 0 50px rgba(0, 0, 0, 0.85);
-  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.9));
+    0 2px 6px rgba(0, 0, 0, 0.98),
+    0 8px 24px rgba(0, 0, 0, 0.95),
+    0 0 45px rgba(0, 0, 0, 0.9);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.9));
 }
 
-/* Meta row (Rating, Year, Duration, Genres): sleek frosted glass pill */
 #detailsSection.trailer-bg-active .details-meta-row {
-  background: rgba(8, 12, 20, 0.72);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 999px;
-  padding: 0.4rem 1.1rem;
-  width: fit-content;
-  max-width: 100%;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 3px 12px rgba(0, 0, 0, 0.9);
   color: #f3f4f6;
 }
 
-#detailsSection.trailer-bg-active .details-meta-row .meta-separator {
-  color: rgba(255, 255, 255, 0.4);
-}
-
-/* Bio / Overview: rich frosted glass card with glowing border and crisp white text */
 #detailsSection.trailer-bg-active .details-overview-large {
-  background: rgba(8, 12, 20, 0.76);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 16px;
-  padding: 1.15rem 1.45rem;
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 3px 14px rgba(0, 0, 0, 0.9);
   color: #ffffff !important;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95);
-  line-height: 1.65;
-  margin-bottom: 1.5rem;
 }
 
-/* Director & Cast: sleek frosted badges with clear distinction */
 #detailsSection.trailer-bg-active .details-cast-list {
-  background: rgba(8, 12, 20, 0.74);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 12px;
-  padding: 0.55rem 1.15rem;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-  width: fit-content;
-  max-width: 100%;
-  margin-top: 0.6rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 3px 12px rgba(0, 0, 0, 0.9);
 }
 
 #detailsSection.trailer-bg-active .details-cast-list .cast-label {
-  color: #f59e0b !important; /* Gold accent for immediate distinction */
+  color: #fbbf24 !important;
   font-weight: 700 !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 #detailsSection.trailer-bg-active .details-cast-list .cast-text {
-  color: #f9fafb !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95);
-  font-weight: 500;
-}
-
-/* Rating block: matching frosted glass badge */
-#detailsSection.trailer-bg-active .rating-block {
-  background: rgba(8, 12, 20, 0.72);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 14px;
-  padding: 0.45rem 1.1rem;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-  width: fit-content;
-  max-width: 100%;
-}
-
-@media (max-width: 768px) {
-  #detailsSection.trailer-bg-active .details-overview-large {
-    padding: 0.85rem 1rem !important;
-    font-size: 0.88rem !important;
-    border-radius: 14px;
-  }
-  #detailsSection.trailer-bg-active .details-meta-row {
-    font-size: 0.85rem !important;
-    padding: 0.35rem 0.8rem !important;
-  }
-  #detailsSection.trailer-bg-active .details-cast-list {
-    font-size: 0.85rem !important;
-    padding: 0.45rem 0.85rem !important;
-  }
+  color: #ffffff !important;
 }
 
 .details-hero-bg::after {
