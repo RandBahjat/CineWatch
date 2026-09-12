@@ -13989,7 +13989,7 @@ window._MOVIES_DATA = [
     overviewKurdish: "جۆ میچڵ قوتابییەکی قۆناغی کۆتایی ئامادەیییە کە دەچێتە قوتابخانەیەکی نوێ و بڕیار دەدات ڕووبەڕووی گرووپی دەستڕۆیشتووی پلاستیکەکان ببێتەوە. دوای ئەوەی ڕێککەوتنێک لەگەڵ باوکێکی دەوڵەمەند دەکات بۆ ئەوەی ببێتە هاوڕێی ئابی هانۆڤەری کچە بێناو و پەراوێزخراوەکەی لە بەرامبەر دابینکردنی تێچووی زانکۆدا، جۆ گرووپێکی نوێ پێکدەهێنێت بۆ ئاڵنگاریکردنی زۆردارەکانی قوتابخانەکە. بەڵام کاتێک نهێنییەکان ئاشکرا دەبن، جۆ دەبێت بسەلمێنێت کە هاوڕێیەتییەکەی ڕاستەقینەیە و زاڵ بێت بەسەر کێشەکاندا.",
     director: "Melanie Mayron",
     cast: [
-      "Lindsay Lohan, Rachel McAdams, Tina Fey, Tim Meadows, Amy Poehler, Ana Gasteyer, Amanda Seyfried, Lacey Chabert, Jonathan Bennett"
+      "Meaghan Martin, Maiara Walsh, Jennifer Stone, Nicole Anderson, Claire Holt, Diego Boneta, Tim Meadows"
     ],
     trending: false,
     featured: false,
