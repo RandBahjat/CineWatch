@@ -13948,9 +13948,9 @@ window._MOVIES_DATA = [
     title: "Mean Girls",
     type: "Movie",
     year: 2004,
-    rating: 7.0,
+    rating: 7.1,
     age: "PG-13",
-    duration: "2h 4m",
+    duration: "1h 37m",
     genres: [
       "Action",
       "Adventure",
