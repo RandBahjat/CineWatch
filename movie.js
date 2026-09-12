@@ -155,22 +155,42 @@ function setOverviewElement(el, info) {
 function matchMediaTitle(item, query) {
   if (!item || !query) return false;
   const q = String(query).trim().toLowerCase();
-  const title = String(item.title || '').trim().toLowerCase();
-  const year = item.year ? String(item.year).trim() : '';
+  const rawTitle = String(item.title || '').trim().toLowerCase();
+  const itemYear = item.year ? String(item.year).trim() : '';
   const itemId = item.id ? String(item.id).trim().toLowerCase() : '';
 
-  // 1. Direct ID match: "halloween-2018"
+  // 1. Direct ID match: "moana-2026"
   if (itemId && itemId === q) return true;
 
-  // 2. Specific Title + Year match in parentheses: "Halloween (2018)"
-  if (year && (`${title} (${year})` === q || `${title} (${year})`.toLowerCase() === q)) return true;
+  // 2. Extract 4-digit year from query if specified (e.g. 19xx or 20xx)
+  // Supports formats like: "Moana(2026)", "Moana (2026)", "Moana 2026", "Moana [2026]", "Moana-2026"
+  const yearMatch = q.match(/(?:^|[^\d])(19\d\d|20\d\d)(?:[^\d]|$)/);
+  const queryYear = yearMatch ? yearMatch[1] : null;
 
-  // 3. Title + Year with space: "Halloween 2018"
-  if (year && `${title} ${year}` === q) return true;
+  // Clean query title by stripping year and punctuation
+  const cleanQueryTitle = q
+    .replace(/\s*[\(\[\{]?\s*(19\d\d|20\d\d)\s*[\)\]\}]?\s*/g, ' ')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
 
-  // 4. Exact Title match ("Halloween") ONLY IF query did NOT specify a different year
-  const hasYearInQuery = /\(\d{4}\)|\b(19\d\d|20\d\d)\b/.test(q);
-  if (!hasYearInQuery && title === q) return true;
+  // Clean item title
+  const cleanItemTitle = rawTitle
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+
+  // Normalization for common typos (e.g. whisper vs whispher)
+  const normQuery = cleanQueryTitle.replace(/whispher/g, 'whisper');
+  const normItem = cleanItemTitle.replace(/whispher/g, 'whisper');
+
+  // If query specifies a year: BOTH title and year must match!
+  if (queryYear) {
+    if (normQuery === normItem && itemYear === queryYear) return true;
+    if (itemId && itemId === (cleanQueryTitle.replace(/\s+/g, '-') + '-' + queryYear)) return true;
+    return false;
+  }
+
+  // If query does NOT specify a year, match title cleanly
+  if (normQuery === normItem || rawTitle === q) return true;
 
   return false;
 }
@@ -181,6 +201,27 @@ function getMediaListIndex(item, list) {
     if (matchMediaTitle(item, list[i])) return i;
   }
   return 999;
+}
+
+function getMoviesFromList(list, filterFn) {
+  if (!Array.isArray(list)) return [];
+  const results = [];
+  const seenIds = new Set();
+
+  list.forEach(query => {
+    const match = MOVIES.find(m => {
+      const id = m.id || (m.title + '-' + (m.year || ''));
+      if (seenIds.has(id)) return false;
+      if (filterFn && !filterFn(m)) return false;
+      return matchMediaTitle(m, query);
+    });
+    if (match) {
+      seenIds.add(match.id || (match.title + '-' + (match.year || '')));
+      results.push(match);
+    }
+  });
+
+  return results;
 }
 
 async function loadMediaFromAPI() {
