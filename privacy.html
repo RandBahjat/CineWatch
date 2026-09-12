@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — CineWatch</title>
+  <meta name="description" content="CineWatch Privacy Policy — Learn how we collect, use, and protect your personal information." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red: #e50914;
+      --red-dim: rgba(229, 9, 20, 0.12);
+      --bg: #0a0a0a;
+      --surface: #111113;
+      --border: rgba(255,255,255,0.07);
+      --text: #e0e0e0;
+      --muted: #888;
+      --white: #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.7;
+    }
+
+    /* ── Navbar ──────────────────────────────────────────── */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10,10,10,0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 32px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nav-logo-icon {
+      width: 34px;
+      height: 34px;
+      background: linear-gradient(135deg, #e50914, #b00710);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 14px rgba(229,9,20,0.35);
+    }
+
+    .nav-logo-text {
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--white);
+    }
+
+    .nav-logo-text span { color: var(--red); }
+
+    .nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .nav-back:hover {
+      color: var(--white);
+      border-color: rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.05);
+    }
+
+    /* ── Hero ────────────────────────────────────────────── */
+    .hero {
+      padding: 80px 32px 64px;
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--red-dim);
+      border: 1px solid rgba(229,9,20,0.25);
+      color: var(--red);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 520px;
+      margin: 0 auto 28px;
+    }
+
+    .hero-meta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #555;
+      font-size: 0.82rem;
+    }
+
+    /* ── Content ─────────────────────────────────────────── */
+    .content-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 32px 100px;
+    }
+
+    /* Table of contents */
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-bottom: 48px;
+    }
+
+    .toc-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 16px;
+    }
+
+    .toc-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 8px;
+    }
+
+    .toc-list li a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      padding: 6px 0;
+      transition: color 0.2s;
+    }
+
+    .toc-list li a::before {
+      content: '';
+      width: 4px;
+      height: 4px;
+      background: var(--red);
+      border-radius: 50%;
+      flex-shrink: 0;
+      opacity: 0.6;
+    }
+
+    .toc-list li a:hover { color: var(--white); }
+
+    /* Sections */
+    .policy-section {
+      margin-bottom: 56px;
+      scroll-margin-top: 88px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .section-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--red-dim);
+      border: 1px solid rgba(229,9,20,0.2);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--red);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .section-header h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: -0.02em;
+    }
+
+    .policy-section p {
+      color: var(--text);
+      font-size: 0.95rem;
+      margin-bottom: 14px;
+      line-height: 1.8;
+    }
+
+    .policy-section ul {
+      list-style: none;
+      margin: 8px 0 16px 0;
+    }
+
+    .policy-section ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--text);
+      font-size: 0.93rem;
+      padding: 6px 0;
+      line-height: 1.6;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+
+    .policy-section ul li:last-child { border-bottom: none; }
+
+    .policy-section ul li::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: var(--red);
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 8px;
+      opacity: 0.7;
+    }
+
+    /* Info cards */
+    .info-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin: 20px 0;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .info-card.highlight {
+      border-color: rgba(229,9,20,0.2);
+      background: var(--red-dim);
+    }
+
+    .info-card.success {
+      border-color: rgba(16,185,129,0.2);
+      background: rgba(16,185,129,0.06);
+    }
+
+    .info-card-icon {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .info-card-icon.red { color: var(--red); }
+    .info-card-icon.green { color: #10b981; }
+    .info-card-icon.blue { color: #60a5fa; }
+
+    .info-card p {
+      margin: 0 !important;
+      font-size: 0.9rem !important;
+    }
+
+    .info-card strong {
+      color: var(--white);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* Divider */
+    .section-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 48px 0;
+    }
+
+    /* Contact card */
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px;
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    .contact-card h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .contact-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--red);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 20px rgba(229,9,20,0.3);
+    }
+
+    .contact-btn:hover {
+      background: #c5060f;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 24px rgba(229,9,20,0.4);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid var(--border);
+      padding: 32px;
+      text-align: center;
+      color: #444;
+      font-size: 0.82rem;
+    }
+
+    .footer a { color: #666; text-decoration: none; }
+    .footer a:hover { color: var(--red); }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .nav { padding: 0 20px; }
+      .hero, .content-wrap { padding-left: 20px; padding-right: 20px; }
+      .hero { padding-top: 48px; padding-bottom: 40px; }
+      .toc { padding: 20px; }
+      .toc-list { grid-template-columns: 1fr; }
+      .contact-card { padding: 24px; }
+      .info-card { flex-direction: column; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon"><ion-icon name="ticket"></ion-icon></div>
+      <span class="nav-logo-text">Cine<span>Watch</span></span>
+    </a>
+    <a href="index.html" class="nav-back">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+      Back to CineWatch
+    </a>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-badge">
+      <ion-icon name="shield-checkmark-outline"></ion-icon>
+      Legal
+    </div>
+    <h1>Privacy &amp; Policy</h1>
+    <p>We take your privacy seriously. This page explains what data we collect, how we use it, and how we keep it safe.</p>
+    <div class="hero-meta">
+      <ion-icon name="calendar-outline"></ion-icon>
+      Last updated: September 12, 2026
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="content-wrap">
+
+    <!-- Table of contents -->
+    <div class="toc">
+      <div class="toc-title">Table of Contents</div>
+      <ul class="toc-list">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#data-collected">Data We Collect</a></li>
+        <li><a href="#how-we-use">How We Use Your Data</a></li>
+        <li><a href="#account-security">Account &amp; Security</a></li>
+        <li><a href="#third-party">Third-Party Services</a></li>
+        <li><a href="#cookies">Cookies</a></li>
+        <li><a href="#your-rights">Your Rights</a></li>
+        <li><a href="#children">Children's Privacy</a></li>
+        <li><a href="#changes">Changes to This Policy</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- 1. Overview -->
+    <div class="policy-section" id="overview">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="information-circle-outline"></ion-icon></div>
+        <h2>1. Overview</h2>
+      </div>
+      <p>Welcome to <strong style="color:#fff">CineWatch</strong> ("we", "us", or "our"). CineWatch is a free movie and TV show browsing, rating, and tracking platform available at <strong style="color:#fff">cinewatch.watch</strong>.</p>
+      <p>This Privacy Policy explains how we collect, use, disclose, and protect your personal information when you use our website and services. By using CineWatch, you agree to the practices described in this policy.</p>
+      <div class="info-card success">
+        <div class="info-card-icon green"><ion-icon name="shield-checkmark"></ion-icon></div>
+        <div>
+          <strong>Our commitment to you</strong>
+          <p>We only collect the minimum data necessary to provide our service. We do not sell your personal information to anyone, ever.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 2. Data Collected -->
+    <div class="policy-section" id="data-collected">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="server-outline"></ion-icon></div>
+        <h2>2. Data We Collect</h2>
+      </div>
+      <p>We collect only what's needed to run CineWatch. Here's exactly what we store:</p>
+
+      <div class="info-card">
+        <div class="info-card-icon blue"><ion-icon name="person-circle-outline"></ion-icon></div>
+        <div>
+          <strong>Account Information (if you sign up)</strong>
+          <p>Name, email address, username, and avatar. This is required to create and manage your CineWatch account.</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card-icon blue"><ion-icon name="heart-outline"></ion-icon></div>
+        <div>
+          <strong>Usage Data</strong>
+          <p>Your favorites list, watchlist, ratings you give to titles, and your "continue watching" progress. This data is stored in your account so it's available across devices.</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card-icon blue"><ion-icon name="chatbubble-outline"></ion-icon></div>
+        <div>
+          <strong>Comments</strong>
+          <p>If you post a comment on a title, your comment content, username, and avatar are stored and publicly visible.</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card-icon blue"><ion-icon name="analytics-outline"></ion-icon></div>
+        <div>
+          <strong>Analytics (Anonymous)</strong>
+          <p>We use Google Analytics to understand how people use the site — page views, session duration, and device types. This data is anonymous and cannot identify you personally.</p>
+        </div>
+      </div>
+
+      <p>We do <strong style="color:#fff">NOT</strong> collect payment information, phone numbers, physical addresses, or any government ID.</p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 3. How We Use -->
+    <div class="policy-section" id="how-we-use">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="construct-outline"></ion-icon></div>
+        <h2>3. How We Use Your Data</h2>
+      </div>
+      <p>Your data is used exclusively to operate and improve CineWatch:</p>
+      <ul>
+        <li>Providing your personalized watchlist, favorites, and progress tracking</li>
+        <li>Displaying your profile, username, and avatar across the site</li>
+        <li>Enabling you to post and manage comments on titles</li>
+        <li>Sending password reset emails when you request them</li>
+        <li>Improving the site experience based on anonymous usage patterns</li>
+        <li>Protecting the site from bots and malicious traffic (via Cloudflare)</li>
+      </ul>
+      <div class="info-card highlight">
+        <div class="info-card-icon red"><ion-icon name="close-circle-outline"></ion-icon></div>
+        <div>
+          <strong>We never sell your data</strong>
+          <p>Your personal information is never sold, rented, or traded to third parties for marketing purposes.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 4. Account & Security -->
+    <div class="policy-section" id="account-security">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="lock-closed-outline"></ion-icon></div>
+        <h2>4. Account &amp; Security</h2>
+      </div>
+      <p>Your account security is handled by <strong style="color:#fff">Supabase</strong>, a trusted authentication platform used by thousands of production applications worldwide.</p>
+      <ul>
+        <li>Passwords are <strong style="color:#fff">bcrypt hashed</strong> — even we cannot see your plain-text password</li>
+        <li>Login sessions are managed with <strong style="color:#fff">JWT tokens</strong> that expire automatically</li>
+        <li>All data is protected by <strong style="color:#fff">Row Level Security (RLS)</strong> — users can only access their own data</li>
+        <li>All communication between your browser and our servers is encrypted via <strong style="color:#fff">HTTPS/TLS</strong></li>
+        <li>Password reset links are delivered securely via email and expire after one use</li>
+      </ul>
+      <div class="info-card success">
+        <div class="info-card-icon green"><ion-icon name="checkmark-circle-outline"></ion-icon></div>
+        <div>
+          <strong>Your account data is isolated</strong>
+          <p>No other user or third party can access your favorites, ratings, or personal information through our system.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 5. Third-Party Services -->
+    <div class="policy-section" id="third-party">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="globe-outline"></ion-icon></div>
+        <h2>5. Third-Party Services</h2>
+      </div>
+      <p>CineWatch relies on the following trusted third-party services:</p>
+      <ul>
+        <li><strong style="color:#fff">Supabase</strong> — Database, authentication, and user data storage. Privacy policy at supabase.com/privacy</li>
+        <li><strong style="color:#fff">Cloudflare</strong> — CDN, DDoS protection, and the human verification (Turnstile) on the site entry. Privacy policy at cloudflare.com/privacypolicy</li>
+        <li><strong style="color:#fff">Google Analytics</strong> — Anonymous website usage analytics. You can opt out at tools.google.com/dlpage/gaoptout</li>
+        <li><strong style="color:#fff">Google Fonts</strong> — Fonts are loaded from Google's servers. Their privacy policy applies to font requests</li>
+        <li><strong style="color:#fff">TMDB</strong> — Movie poster and backdrop images are served from The Movie Database. We do not share user data with them</li>
+      </ul>
+      <p>Each third-party service has its own privacy policy. We encourage you to review them independently.</p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 6. Cookies -->
+    <div class="policy-section" id="cookies">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="browsers-outline"></ion-icon></div>
+        <h2>6. Cookies &amp; Local Storage</h2>
+      </div>
+      <p>CineWatch uses browser storage to provide a better experience:</p>
+      <ul>
+        <li><strong style="color:#fff">Authentication session</strong> — Keeps you logged in between visits (stored via Supabase)</li>
+        <li><strong style="color:#fff">Preferences</strong> — Language settings and UI preferences stored locally in your browser</li>
+        <li><strong style="color:#fff">Security verification</strong> — Cloudflare Turnstile uses cookies to verify you are human</li>
+        <li><strong style="color:#fff">Analytics</strong> — Google Analytics uses cookies to distinguish unique visitors (anonymous)</li>
+      </ul>
+      <p>You can clear cookies and local storage at any time through your browser settings. Doing so will log you out and reset any saved preferences.</p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 7. Your Rights -->
+    <div class="policy-section" id="your-rights">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="hand-right-outline"></ion-icon></div>
+        <h2>7. Your Rights</h2>
+      </div>
+      <p>You have full control over your personal data on CineWatch:</p>
+      <ul>
+        <li><strong style="color:#fff">Access</strong> — You can view all data stored in your profile at any time from your account page</li>
+        <li><strong style="color:#fff">Edit</strong> — You can update your name, username, and avatar from your profile settings</li>
+        <li><strong style="color:#fff">Delete comments</strong> — You can delete any comment you've posted from the title page</li>
+        <li><strong style="color:#fff">Delete your account</strong> — Contact us and we will permanently delete your account and all associated data within 30 days</li>
+        <li><strong style="color:#fff">Data export</strong> — Contact us to request an export of your personal data</li>
+      </ul>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 8. Children -->
+    <div class="policy-section" id="children">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="people-outline"></ion-icon></div>
+        <h2>8. Children's Privacy</h2>
+      </div>
+      <p>CineWatch is not directed at children under the age of <strong style="color:#fff">13</strong>. We do not knowingly collect personal information from children under 13.</p>
+      <p>If you believe a child under 13 has provided us with personal information, please contact us immediately and we will take steps to delete it promptly.</p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 9. Changes -->
+    <div class="policy-section" id="changes">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="refresh-outline"></ion-icon></div>
+        <h2>9. Changes to This Policy</h2>
+      </div>
+      <p>We may update this Privacy Policy from time to time as our service evolves. When we make significant changes, we will update the "Last updated" date at the top of this page.</p>
+      <p>We encourage you to review this page periodically. Continued use of CineWatch after any changes constitutes your acceptance of the revised policy.</p>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <!-- 10. Contact -->
+    <div class="policy-section" id="contact">
+      <div class="section-header">
+        <div class="section-icon"><ion-icon name="mail-outline"></ion-icon></div>
+        <h2>10. Contact Us</h2>
+      </div>
+      <p>If you have any questions, concerns, or requests regarding your privacy or this policy, please don't hesitate to reach out.</p>
+    </div>
+
+    <div class="contact-card">
+      <h3>Have a privacy question?</h3>
+      <p>We're here to help. Reach out and we'll respond as soon as possible.</p>
+      <a href="mailto:privacy@cinewatch.watch" class="contact-btn">
+        <ion-icon name="mail-outline"></ion-icon>
+        privacy@cinewatch.watch
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 CineWatch. All rights reserved. &nbsp;·&nbsp;
+      <a href="index.html">Home</a> &nbsp;·&nbsp;
+      <a href="privacy.html">Privacy Policy</a>
+    </p>
+  </footer>
+
+</body>
+</html>
