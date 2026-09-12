@@ -18,7 +18,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/jM8LRvzYIqZqw6Si5xNECiHFDgM.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1hwrvoeqSe6oM59BHR8zFO082kF.jpg",
     videoUrl: "1558568",
-    trailerUrl: "https://youtu.be/raY-TDLE458?si=kl8RoS6tBCeHwgEX",
+    trailerUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSstNnbOb-Luo5kYGhrEMjye4KvwCuZM_RAJJKMpP4Hg&s=10",
     overview: "High-powered London lawyer Maia Marten out on morning jog when mystery man hijack her diabetic son's insulin device. To save kid, Maia must sprint full-speed across London, obey crazy demands, and kill court witness before time run out.",
     overviewKurdish:"مایا مارتن، پارێزەرێکی بەتوانای لۆندۆنە. لە کاتی ڕاکردنی بەیانیان، کەسێکی نادیار ڕاڵێو و دەسەڵات دەگرێت بەسەر ئامێری ئەنسۆلینی کوڕە شەکرەدارەکەی. بۆ ڕزگارکردنی ژیانی کوڕەکەی، پێویستە مایا بە خێرایی لەنێو شاری لۆندۆن ڕابکات، گوێڕایەڵی داواکارییە مەترسیدارەکان بێت و شایەتحاڵێکی دادگا بکوژێت پێش ئەوەی کات تەواو بێت.",
     director: "Kevin Macdonald",
