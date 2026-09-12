@@ -11,8 +11,8 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260908_338">
-    <link rel="stylesheet" href="browse-fix.css?v=20260908_338">
+    <link rel="stylesheet" href="movie.css?v=20260908_339">
+    <link rel="stylesheet" href="browse-fix.css?v=20260908_339">
     <link rel="stylesheet" href="security-gate.css?v=cf_turnstile_v3">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,10 +29,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_6264" defer></script>
-    <script src="series-data.js?v=20260818_6264" defer></script>
-    <script src="anime-data.js?v=20260818_6264" defer></script>
-    <script src="movie.js?v=20260908_338" defer></script>
+    <script src="movies-data.js?v=20260818_6265" defer></script>
+    <script src="series-data.js?v=20260818_6265" defer></script>
+    <script src="anime-data.js?v=20260818_6265" defer></script>
+    <script src="movie.js?v=20260908_339" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -78,22 +78,29 @@
       };
     </script>
 
+
     <div id="cwSecurityGatekeeper">
       <div class="cf-challenge-container">
-        <!-- Site Header -->
+
+        <!-- CineWatch Logo — matches site navbar exactly -->
         <div class="cf-site-title">
-          <div class="cf-site-icon"><ion-icon name="ticket"></ion-icon></div>
-          <div><span class="domain-name" id="cfDomainTitle">cinewatch.net</span></div>
+          <div class="cf-site-icon">
+            <ion-icon name="ticket"></ion-icon>
+          </div>
+          <span class="cf-brand-text">Cine<span>Watch</span></span>
         </div>
 
-        <!-- Managed Challenge Title -->
+        <!-- Accent divider -->
+        <div class="cf-divider"></div>
+
+        <!-- Title -->
         <h1 class="cf-heading">Verify you are human</h1>
-        <p class="cf-subtext">Verify you are human by completing the action below.</p>
+        <p class="cf-subtext">Complete the security check to continue to CineWatch.</p>
 
         <!-- Success Banner -->
         <div class="cf-success-banner" id="cfSuccessBanner">
-          <ion-icon name="checkmark-circle" style="font-size: 1.25rem;"></ion-icon>
-          <span>Verification successful! Directing to CineWatch...</span>
+          <ion-icon name="checkmark-circle" style="font-size: 1.15rem;"></ion-icon>
+          <span>Verification successful! Entering CineWatch...</span>
         </div>
 
         <!-- Real Cloudflare Turnstile Widget -->
@@ -101,17 +108,17 @@
           <div class="cf-turnstile" id="cfTurnstileBox" data-sitekey="0x4AAAAAAEYq2FBWTuFz8998" data-theme="dark" data-callback="onCloudflareVerify"></div>
         </div>
 
-        <!-- Security Explanation -->
+        <!-- Security note -->
         <p class="cf-explanation">
-          cinewatch.net needs to review the security of your connection before proceeding.
+          cinewatch.watch needs to review your connection security before proceeding.
         </p>
 
         <!-- Cloudflare Footer -->
         <div class="cf-footer">
           <div class="cf-footer-row">
-            <span class="cf-ray-id" id="cfRayId">Ray ID: <code>91a4b8c02e1792f</code></span>
+            <span class="cf-ray-id" id="cfRayId">Ray ID: <code id="cfRayCode">—</code></span>
             <div class="cf-attribution">
-              Performance &amp; security by 
+              Performance &amp; security by
               <a href="https://www.cloudflare.com?utm_source=challenge&utm_campaign=m" target="_blank" rel="noopener noreferrer">
                 <svg class="cf-logo-svg" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="#F38020" d="M37.5 17c-.3-4-3.5-7.2-7.5-7.2-1 0-2 .2-2.9.6C26 7.7 23.3 5.8 20 5.8c-4.4 0-8 3.6-8 8 0 .5.1 1 .2 1.4C10.4 15.8 8 18.9 8 22.5c0 4.9 4 8.9 8.9 8.9h21.6c4.4 0 8-3.6 8-8 0-3.8-2.6-6.9-6.2-7.8-.3-.6-.6-1.1-1-1.6z"/>
@@ -121,8 +128,23 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
+
+    <script>
+      // Generate a random Ray ID on every load
+      (function() {
+        var el = document.getElementById('cfRayCode');
+        if (el) {
+          var chars = '0123456789abcdef';
+          var id = '9';
+          for (var i = 0; i < 15; i++) id += chars[Math.floor(Math.random() * chars.length)];
+          el.textContent = id;
+        }
+      })();
+    </script>
+
 
     <!-- Loading Splash Screen -->
     <div class="app-loader" id="appLoader">
