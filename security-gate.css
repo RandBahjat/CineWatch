@@ -3,18 +3,28 @@
    Real Cloudflare Turnstile "Verify you are human"
    ============================================================ */
 
-html.cw-security-pending {
+/* Lock body and hide all background content during Cloudflare Challenge */
+html.cw-security-pending,
+body.cw-cf-locked {
   overflow: hidden !important;
+  height: 100vh !important;
+  background: #131419 !important;
 }
 
-html.cw-security-pending body > *:not(#cwSecurityGatekeeper) {
+html.cw-security-pending body > *:not(#cwSecurityGatekeeper),
+body.cw-cf-locked > *:not(#cwSecurityGatekeeper) {
   display: none !important;
 }
 
 /* Full Screen Cloudflare Interstitial Overlay */
 #cwSecurityGatekeeper {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
   z-index: 2147483647;
   background-color: #131419;
   color: #d9d9d9;
@@ -22,7 +32,7 @@ html.cw-security-pending body > *:not(#cwSecurityGatekeeper) {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  box-sizing: border-box;
   padding: 24px;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
