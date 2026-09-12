@@ -14,13 +14,18 @@ html.cw-security-pending body > *:not(#cwSecurityGatekeeper) {
   display: none !important;
 }
 
-/* ── Fullscreen backdrop ─────────────────────────────────── */
+/* Full Screen Cloudflare Interstitial Overlay */
 #cwSecurityGatekeeper {
+  display: none; /* hidden by default — shown only when gate is active */
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
   z-index: 2147483647;
   background: #0a0a0a;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -29,6 +34,11 @@ html.cw-security-pending body > *:not(#cwSecurityGatekeeper) {
   -webkit-font-smoothing: antialiased;
   animation: cwGateIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
   transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+/* Only show the gate when security check is pending */
+html.cw-security-pending #cwSecurityGatekeeper {
+  display: flex;
 }
 
 /* Radial glow behind the card */
