@@ -291,7 +291,7 @@ window._MOVIES_DATA = [
       "Sci-Fi"
     ],
     poster: "https://image.tmdb.org/t/p/original/ghF1JYv7P5BgWHYfq9dqhqqNfz8.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/7iwUUcKURMT7aKfCwMy6YnGtchD.jpg",
     videoUrl: "969681",
     trailerUrl: "https://www.youtube.com/watch?v=daXaTug8rL4",
     overview: "Peter Parker fight crime full-time as Spider-Man in world that no longer remember him, pressure of watching old friend move on without him spark change he not sure he can control. Transformation might be only thing that can stop shocking new threat to city, and those he love — powerful villain no one can even see",
