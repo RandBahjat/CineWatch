@@ -1116,6 +1116,60 @@
         var pct = max > 0 ? (top / max) * 100 : 0;
         bar.style.width = Math.min(100, Math.max(0, pct)) + '%';
       }, { passive: true });
+
+      // Privacy Contact Form Submission
+      var form = document.getElementById('privacyContactForm');
+      if (form) {
+        form.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          var btn = document.getElementById('contactSubmitBtn');
+          var status = document.getElementById('contactFormStatus');
+          var name = document.getElementById('contactName').value.trim();
+          var email = document.getElementById('contactEmail').value.trim();
+          var subject = document.getElementById('contactSubject').value;
+          var message = document.getElementById('contactMessage').value.trim();
+
+          if (!name || !email || !message) return;
+
+          btn.disabled = true;
+          btn.innerHTML = '<ion-icon name="sync-outline" style="animation: spin 0.8s linear infinite;"></ion-icon> Delivering Message...';
+          status.className = 'form-status';
+          status.style.display = 'none';
+
+          try {
+            var res = await fetch('https://api.web3forms.com/submit', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+              body: JSON.stringify({
+                access_key: '965583ff-4601-49f3-8adf-bf0a881b0686',
+                from_name: name + ' (CineWatch Privacy)',
+                subject: '[CineWatch Privacy] ' + subject + ' from ' + name,
+                email: email,
+                replyto: email,
+                message: 'Name: ' + name + '\nEmail: ' + email + '\nTopic: ' + subject + '\n\nMessage:\n' + message
+              })
+            });
+
+            var data = await res.json();
+            if (res.status === 200 && data.success) {
+              status.className = 'form-status success';
+              status.innerHTML = '<ion-icon name="checkmark-circle" style="font-size: 1.5rem; flex-shrink: 0;"></ion-icon> <div><strong>Inquiry Sent Successfully!</strong><br>Thank you, ' + name + '. Your privacy request has been delivered directly to our team. We will review it and reply to <u>' + email + '</u> promptly.</div>';
+              status.style.display = 'flex';
+              form.reset();
+              status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else {
+              throw new Error(data.message || 'Submission failed');
+            }
+          } catch(err) {
+            status.className = 'form-status error';
+            status.innerHTML = '<ion-icon name="alert-circle" style="font-size: 1.5rem; flex-shrink: 0;"></ion-icon> <div><strong>Message could not be sent.</strong><br>Please email us directly at <a href="mailto:cinewatch.contact@gmail.com" style="color:#fff; font-weight:600; text-decoration:underline;">cinewatch.contact@gmail.com</a>.</div>';
+            status.style.display = 'flex';
+          } finally {
+            btn.disabled = false;
+            btn.innerHTML = '<ion-icon name="paper-plane-outline"></ion-icon> Send Privacy Request';
+          }
+        });
+      }
     })();
   </script>
 
