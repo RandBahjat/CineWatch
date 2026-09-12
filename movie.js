@@ -152,6 +152,37 @@ function setOverviewElement(el, info) {
   }
 }
 
+function matchMediaTitle(item, query) {
+  if (!item || !query) return false;
+  const q = String(query).trim().toLowerCase();
+  const title = String(item.title || '').trim().toLowerCase();
+  const year = item.year ? String(item.year).trim() : '';
+  const itemId = item.id ? String(item.id).trim().toLowerCase() : '';
+
+  // 1. Direct ID match: "halloween-2018"
+  if (itemId && itemId === q) return true;
+
+  // 2. Specific Title + Year match in parentheses: "Halloween (2018)"
+  if (year && (`${title} (${year})` === q || `${title} (${year})`.toLowerCase() === q)) return true;
+
+  // 3. Title + Year with space: "Halloween 2018"
+  if (year && `${title} ${year}` === q) return true;
+
+  // 4. Exact Title match ("Halloween") ONLY IF query did NOT specify a different year
+  const hasYearInQuery = /\(\d{4}\)|\b(19\d\d|20\d\d)\b/.test(q);
+  if (!hasYearInQuery && title === q) return true;
+
+  return false;
+}
+
+function getMediaListIndex(item, list) {
+  if (!item || !Array.isArray(list)) return 999;
+  for (let i = 0; i < list.length; i++) {
+    if (matchMediaTitle(item, list[i])) return i;
+  }
+  return 999;
+}
+
 async function loadMediaFromAPI() {
   try {
     // 1. Load media from local JS files instead of Supabase per user preference
@@ -172,10 +203,9 @@ async function loadMediaFromAPI() {
         m.id = m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + (m.year ? '-' + m.year : '');
       }
 
-      // Apply featured/trending from title lists (case-insensitive matching)
-      const titleLower = m.title.toLowerCase();
-      m.featured = FEATURED_TITLES.some(t => t.toLowerCase() === titleLower);
-      m.trending = TRENDING_THIS_WEEK_MOVIES.some(t => t.toLowerCase() === titleLower) || TRENDING_THIS_WEEK_SERIES.some(t => t.toLowerCase() === titleLower);
+      // Apply featured/trending from title lists (supports "Title", "Title (Year)", and ID)
+      m.featured = FEATURED_TITLES.some(t => matchMediaTitle(m, t));
+      m.trending = TRENDING_THIS_WEEK_MOVIES.some(t => matchMediaTitle(m, t)) || TRENDING_THIS_WEEK_SERIES.some(t => matchMediaTitle(m, t));
 
       // Set duration label for series
       if ((m.type === 'TV Show' || m.type === 'Series') && m.seasons && m.seasons.length) {
