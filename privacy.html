@@ -561,8 +561,28 @@
       .info-card { flex-direction: column; gap: 10px; }
     }
   </style>
-</head>
 <body>
+
+  <!-- Reading Progress Bar -->
+  <div id="readingProgress" class="reading-progress-bar"></div>
+
+  <!-- Smooth Page Loader Screen -->
+  <div id="pageLoader" class="page-loader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-brand">
+        <div class="loader-icon-glow"></div>
+        <div class="loader-icon"><ion-icon name="ticket"></ion-icon></div>
+        <div class="loader-text">Cine<span>Watch</span></div>
+      </div>
+      <div class="loader-badge">
+        <ion-icon name="shield-checkmark"></ion-icon>
+        <span>Privacy &amp; Policy</span>
+      </div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar"></div>
+      </div>
+    </div>
+  </div>
 
   <!-- Navbar -->
   <nav class="nav">
