@@ -13952,10 +13952,7 @@ window._MOVIES_DATA = [
     age: "PG-13",
     duration: "1h 37m",
     genres: [
-      "Comedy",
-      "Adventure",
-      "Mystery",
-      "Sci-Fi"
+      "Comedy"
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bYLM3GpNUZnoFElPXp1zlhDPdtv.jpg",
