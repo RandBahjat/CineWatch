@@ -15,7 +15,7 @@ window._SERIES_DATA = [
     duration: '1h',
     genres: [
       'Drama',
-      '',
+      'Mystery',
       'Mystery'
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/2mwgHfOyrFrmvozjFoEXHRdfGhv.jpg',
