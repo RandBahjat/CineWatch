@@ -19,7 +19,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/1hwrvoeqSe6oM59BHR8zFO082kF.jpg",
     videoUrl: "1558568",
     trailerUrl: "https://youtu.be/VSN8YM6urHo?si=56Fk_-YMpxANshNI",
-    overview: "High-powered London lawyer Maia Marten out on morning jog when mystery man hijack her diabetic son's insulin device. To save kid, Maia must sprint full-speed across London, obey crazy demands, and kill court witness before time run out.",
+    overview: "Group of ragtag misfit athletes assemble to save local community sports complex from greedy real estate developer. Underdog friends must train super hard, overcome crazy hurdles, and defeat arrogant champion rival team in high-stakes big tournament to win prize money and protect home turf!",
     overviewKurdish:"مایا مارتن، پارێزەرێکی بەتوانای لۆندۆنە. لە کاتی ڕاکردنی بەیانیان، کەسێکی نادیار ڕاڵێو و دەسەڵات دەگرێت بەسەر ئامێری ئەنسۆلینی کوڕە شەکرەدارەکەی. بۆ ڕزگارکردنی ژیانی کوڕەکەی، پێویستە مایا بە خێرایی لەنێو شاری لۆندۆن ڕابکات، گوێڕایەڵی داواکارییە مەترسیدارەکان بێت و شایەتحاڵێکی دادگا بکوژێت پێش ئەوەی کات تەواو بێت.",
     director: "Kevin Macdonald",
     cast: ["Gal Gadot, Damian Lewis, Alfred Enoch, Rory Wilmot"],
