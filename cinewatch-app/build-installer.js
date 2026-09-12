@@ -25,7 +25,8 @@ builder.build({
             perMachine: false,
             installerIcon: 'build/icon.ico',
             uninstallerIcon: 'build/icon.ico',
-            runAfterFinish: true
+            runAfterFinish: true,
+            include: path.join(__dirname, 'build/installer.nsh')
         },
         win: {
             target: [
