@@ -22,7 +22,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/84PKxwkBn0OoH5Qj4uq97Nua0Q9.jpg',
     videoUrl: '258230',
     trailerUrl: "https://youtu.be/M8nHySkLb64?si=ncGOGxR7J7r25Gyh",
-    overview: 'Reclusive novelist Je Moon-jae wake to find identity stolen, ally with ruthless loan shark hunt down The Rat who took everything.',
+    overview: 'A dedicated detective investigates mysterious disappearances, untangling a complex web of secrets and hidden motives behind the last known moments of those who vanished without a trace. Every discovery leads to more questions and new dangers.',
     overviewKurdish: "جێ مون‌جای، ڕۆماننووسێکی گۆشەگیر، هەڵدەستێت و دەبینێت ناسنامەکەی دزراوە، هاوپەیمانی لەگەڵ قەرزدەرێکی دڵڕەق دەکات بۆ ڕاونانی مشکەکە کە هەموو شتێکی لێ بردووە.",
     director: 'Kim Hong-sun, Lee Jae-gon',
     cast: [
