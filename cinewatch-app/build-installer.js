@@ -51,11 +51,8 @@ builder.build({
         fs.copyFileSync(exePath, destSetup);
         fs.copyFileSync(exePath, destVersioned);
         
-        fs.copyFileSync(srcPath, destSetup);
-        fs.copyFileSync(srcPath, destVersioned);
-        
-        console.log(`[Build] Copied ${exeFile} -> ${destSetup} (${fs.statSync(destSetup).size} bytes)`);
-        console.log(`[Build] Copied ${exeFile} -> ${destVersioned} (${fs.statSync(destVersioned).size} bytes)`);
+        console.log(`[Build] Copied ${path.basename(exePath)} -> ${destSetup} (${fs.statSync(destSetup).size} bytes)`);
+        console.log(`[Build] Copied ${path.basename(exePath)} -> ${destVersioned} (${fs.statSync(destVersioned).size} bytes)`);
     } else {
         console.error('[Build] No setup exe found in build directory!');
     }
