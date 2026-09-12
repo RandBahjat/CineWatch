@@ -11,8 +11,8 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260908_327">
-    <link rel="stylesheet" href="browse-fix.css?v=20260908_327">
+    <link rel="stylesheet" href="movie.css?v=20260908_328">
+    <link rel="stylesheet" href="browse-fix.css?v=20260908_328">
     <link rel="stylesheet" href="security-gate.css?v=cf_turnstile_v3">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,10 +29,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_6253" defer></script>
-    <script src="series-data.js?v=20260818_6253" defer></script>
-    <script src="anime-data.js?v=20260818_6253" defer></script>
-    <script src="movie.js?v=20260908_327" defer></script>
+    <script src="movies-data.js?v=20260818_6254" defer></script>
+    <script src="series-data.js?v=20260818_6254" defer></script>
+    <script src="anime-data.js?v=20260818_6254" defer></script>
+    <script src="movie.js?v=20260908_328" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -62,6 +62,8 @@
             (localStorage.getItem('cw_cf_verified_time') && (Date.now() - parseInt(localStorage.getItem('cw_cf_verified_time'), 10) < 86400000));
           if (isVerified && !isTest) {
             document.write('<style>#cwSecurityGatekeeper { display: none !important; }</style>');
+          } else {
+            document.documentElement.classList.add('cw-security-pending');
           }
         } catch(e) {}
       })();
@@ -79,6 +81,7 @@
             gate.style.transition = 'opacity 0.4s ease, visibility 0.4s ease';
             gate.style.opacity = '0';
             gate.style.visibility = 'hidden';
+            document.documentElement.classList.remove('cw-security-pending');
             setTimeout(function() { gate.remove(); }, 400);
           }, 650);
         }
