@@ -19,7 +19,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/aKPXvUemWdDu94GNNDoRBhPgr6v.jpg",
     videoUrl: "1377237",
     trailerUrl: "https://youtu.be/m8JUmBgHejI?si=l6C72Y4ZckfjPqTu",
-    overview: "Hank Malone, strong former Navy SEAL turned courier driver, take on urgent job delivering critical organ package to hospital. Hank and talkative medical courier Ben get hunted across city by ruthless cartel hitmen. Duo must survive crazy gunfights, car crashes, and race against clock to save sick little girl life!",
+    overview: "Hank Malone (Alan Ritchson), a former Navy SEAL working as a high-speed courier, takes on an urgent mission to deliver a vital organ and save a young girl's life. Joined by a talkative medical courier named Ben (Owen Wilson), Hank is hunted across the city by a ruthless crime cartel trying to stop the delivery before time runs out.",
     overviewKurdish: "هەنک مالۆن (ئالان ڕیچسۆن)، سەربازێکی پێشووی هێزە تایبەتەکانە کە وەک گەیەنەر کاردەکات. ئەو لەگەڵ گەیەنەرێکی پزیشکی (ئۆوێن ویڵسن) دەکەونە ناو ڕاوەدوونانێکی کوشندە لە کاتی گواستنەوەی ئەندامێکی پزیشکی گرنگ بۆ نەخۆشخانە. لە کاتێکدا کارتێلێکی بێبەزەیی ڕاوەیان دەکات، ئەوان پێویستە بەرەنگاری مەترسییەکان ببەنەوە و پێش تەواوبوونی کات بارەکە بگەیەنن بۆ ڕزگارکردنی ژیانی کچێکی بچووک.",
     director: "Paul Feig",
     cast: ["Marsai Martin, Young Mazino, Terry Crews, Stephanie Beatriz, Kenan Thompson"],
