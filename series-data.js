@@ -72,6 +72,71 @@ window._SERIES_DATA = [
     ]
   },
   {
+    title: "Mousetrap",
+    type: 'TV Show',
+    year: 2026,
+    rating: 7.6,
+    age: 'TV-MA',
+    duration: '1h',
+    genres: [
+      'Crime',
+      'Drama',
+      'Mystery'
+    ],
+    poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/2mwgHfOyrFrmvozjFoEXHRdfGhv.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/bYtQiIibQzvMeXvLMKVcZ5DlT31.jpg',
+    videoUrl: '290193',
+    trailerUrl: "",
+    overview: 'Reclusive novelist Je Moon-jae wake to find identity stolen, ally with ruthless loan shark hunt down The Rat who took everything.',
+    overviewKurdish: "جێ مون‌جای، ڕۆماننووسێکی گۆشەگیر، هەڵدەستێت و دەبینێت ناسنامەکەی دزراوە، هاوپەیمانی لەگەڵ قەرزدەرێکی دڵڕەق دەکات بۆ ڕاونانی مشکەکە کە هەموو شتێکی لێ بردووە.",
+    director: 'Kim Hong-sun, Lee Jae-gon',
+    cast: [
+      'Ryu Jun-yeol, Sul Kyung-gu, Lee Kyoo-hyung'
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: 'Pilot'
+          },
+          {
+            episode: 2,
+            title: 'Trust Fall'
+          },
+          {
+            episode: 3,
+            title: 'Episode #1.3'
+          },
+          {
+            episode: 4,
+            title: 'Episode #1.4'
+          },
+          {
+            episode: 5,
+            title: 'Episode #1.5'
+          },
+          {
+            episode: 6,
+            title: 'Episode #1.6'
+          },
+          {
+            episode: 7,
+            title: 'Episode #1.7'
+          },
+          {
+            episode: 8,
+            title: 'Episode #1.8'
+          }
+        ]
+      }
+    ]
+  },
+  {
     title: 'Lanterns',
     type: 'TV Show',
     year: 2026,
