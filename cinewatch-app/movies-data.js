@@ -13970,6 +13970,32 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Mean Girls 2",
+    type: "Movie",
+    year: 2004,
+    rating: 7.1,
+    age: "PG-13",
+    duration: "1h 37m",
+    genres: [
+      "Comedy"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/2ZkuQXvVhh45uSvkBej4S7Ix1NJ.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/3PiKtDl1s0tGHmqRjnWZbBVgEEr.jpg",
+    videoUrl: "10625",
+    trailerUrl: "https://youtu.be/oDU84nmSDZY?si=WWxn0RTnJf2rOkxD",
+    overview: "Cady Heron is a teenager who spent her childhood home-schooled in Africa before moving to a suburban public high school in America. She quickly gets pulled into the elite, superficial girl clique called The Plastics, led by the ruthless Regina George. When Cady falls for Regina's ex-boyfriend Aaron Samuels, she sets out to secretly sabotage Regina, only to watch herself slowly transform into the very thing she hated.",
+    overviewKurdish: "کیدی هێرۆن کچێکی هەرزەکارە کە منداڵیی بە فێربوونی ماڵەوە لە ئەفریقا بەسەر بردووە پێش ئەوەی ڕووبکاتە قوتابخانەیەکی ئامادەیی گشتی لە ئەمریکا. لەوێ دەکەوێتە ناو گرووپی کچە دەستڕۆیشتوو و ڕووکەشەکانی قوتابخانەکە بە ناوی پلاستیکەکان، کە لەلایەن ڕێجینا جۆرجی بێبەزەیییەوە سەرکردایەتی دەکرێن. کاتێک کیدی دەکەوێتە خۆشەویستی ئارۆن ساموێڵز کە خۆشەویستی پێشووی ڕێجینایە، پیلانی نهێنی دادەنێت بۆ تێکدانی گرووپەکە، بەڵام بێئەوەی هەستی پێبکات بەرەبەرە خۆشی دەبێتە یەکێک لەوان.",
+    director: "Mark Waters",
+    cast: [
+      "Lindsay Lohan, Rachel McAdams, Tina Fey, Tim Meadows, Amy Poehler, Ana Gasteyer, Amanda Seyfried, Lacey Chabert, Jonathan Bennett"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
