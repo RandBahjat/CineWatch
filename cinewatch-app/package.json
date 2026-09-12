@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "serve": "node ../serve-app.js",
-    "build:win": "electron-builder --win",
+    "build:win": "node build-installer.js",
     "dev": "electron ."
   },
   "keywords": [
