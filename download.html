@@ -986,161 +986,192 @@
 
             <!-- 1. DESKTOP APP WINDOW SHOWCASE -->
             <div class="win-chrome" id="desktopShowcase">
-                <!-- Windows Titlebar -->
-                <div class="win-titlebar">
-                    <div class="win-titlebar-left">
-                        <ion-icon name="ticket" style="color:#e50914;font-size:1.05rem;"></ion-icon>
-                        <span>Cine<span style="color:#e50914;">Watch</span> App &mdash; Home</span>
-                        <span class="win-app-badge">DESKTOP</span>
+                <!-- Left Sidebar Navigation -->
+                <aside class="app-sidebar">
+                    <div>
+                        <!-- Brand Logo -->
+                        <div class="sidebar-brand-box">
+                            <div class="sidebar-logo-icon"><ion-icon name="ticket"></ion-icon></div>
+                            <div class="sidebar-brand-text">Cine<span>Watch</span></div>
+                        </div>
+
+                        <!-- Navbar Group -->
+                        <div class="sidebar-nav-group">
+                            <div class="sidebar-group-title">NAVBAR</div>
+                            <button class="sidebar-nav-btn active">
+                                <ion-icon name="home"></ion-icon>
+                                <span>Home</span>
+                            </button>
+                            <button class="sidebar-nav-btn">
+                                <ion-icon name="compass-outline"></ion-icon>
+                                <span>Explore</span>
+                            </button>
+                            <button class="sidebar-nav-btn">
+                                <ion-icon name="people-outline"></ion-icon>
+                                <span>Watch Together</span>
+                            </button>
+                        </div>
+
+                        <!-- Library Group -->
+                        <div class="sidebar-nav-group">
+                            <div class="sidebar-group-title">LIBRARY</div>
+                            <button class="sidebar-nav-btn">
+                                <ion-icon name="heart-outline"></ion-icon>
+                                <span>Watchlist</span>
+                            </button>
+                            <button class="sidebar-nav-btn">
+                                <ion-icon name="settings-outline"></ion-icon>
+                                <span>Settings</span>
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="win-titlebar-center">
-                        <span style="display:flex;align-items:center;gap:6px;">
-                            <ion-icon name="search-outline"></ion-icon>
-                            <span>Search movies, series, anime...</span>
-                        </span>
-                        <kbd>Ctrl+K</kbd>
+                    <!-- Bottom Sign In Button -->
+                    <div class="sidebar-footer">
+                        <button class="sidebar-signin-btn">
+                            <span>Sign In</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
+                                <path d="M14 12h-12" />
+                                <path d="M5 15l-3 -3l3 -3" />
+                            </svg>
+                        </button>
                     </div>
+                </aside>
 
-                    <div class="win-titlebar-controls">
-                        <button class="win-ctrl-btn" title="Minimize" aria-label="Minimize">
+                <!-- Right Main Content Viewport -->
+                <div class="app-main-viewport" id="appViewport">
+                    <!-- Floating Window Controls (Top Right) -->
+                    <div class="floating-win-ctrls">
+                        <button class="float-win-btn" title="Minimize" aria-label="Minimize">
                             <svg width="10" height="1" viewBox="0 0 10 1"><rect width="10" height="1" fill="currentColor"/></svg>
                         </button>
-                        <button class="win-ctrl-btn" title="Maximize" aria-label="Maximize">
-                            <svg width="10" height="10" viewBox="0 0 10 10"><rect x="0.5" y="0.5" width="9" height="9" fill="none" stroke="currentColor"/></svg>
+                        <button class="float-win-btn" title="Maximize" aria-label="Maximize">
+                            <svg width="9" height="9" viewBox="0 0 10 10"><rect x="0.5" y="0.5" width="8" height="8" fill="none" stroke="currentColor"/></svg>
                         </button>
-                        <button class="win-ctrl-btn close" title="Close" aria-label="Close">
-                            <svg width="10" height="10" viewBox="0 0 10 10"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.2"/></svg>
+                        <button class="float-win-btn close" title="Close" aria-label="Close">
+                            <svg width="9" height="9" viewBox="0 0 10 10"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.3"/></svg>
                         </button>
                     </div>
-                </div>
 
-                <!-- Scrollable CineWatch Desktop App Home Screen Viewport -->
-                <div class="app-viewport" id="appViewport">
-                    
-                    <!-- App Navbar -->
-                    <header class="app-header">
-                        <div class="app-header-left">
-                            <div class="app-brand">
-                                <ion-icon name="ticket" style="color:#e50914;"></ion-icon>
-                                <span>Cine<span style="color:#e50914;">Watch</span></span>
-                            </div>
-                            <nav class="app-nav-links">
-                                <span class="app-nav-item active"><ion-icon name="home-outline"></ion-icon> Home</span>
-                                <span class="app-nav-item app-browse-chip"><ion-icon name="grid-outline"></ion-icon> Browse <ion-icon name="chevron-down-outline" style="font-size:0.7rem;"></ion-icon></span>
-                                <span class="app-nav-item">Movies</span>
-                                <span class="app-nav-item">Series</span>
-                                <span class="app-nav-item">Anime</span>
-                            </nav>
-                        </div>
-                        <div class="app-header-right">
-                            <button class="app-icon-btn" title="Search"><ion-icon name="search-outline"></ion-icon></button>
-                            <div class="app-lang-pill">
-                                <span>🇺🇸 EN</span>
-                                <ion-icon name="chevron-down-outline" style="font-size:0.65rem;"></ion-icon>
-                            </div>
-                            <div class="app-user-avatar">CW</div>
-                        </div>
-                    </header>
-
-                    <!-- Hero Spotlight Section -->
-                    <section class="app-hero-spotlight" id="heroSpotlight" style="background-image: url('https://image.tmdb.org/t/p/original/4gyx49ibwQslyrwuUS1c58PJEEd.jpg');">
+                    <!-- Hero Spotlight Section (The Runner) -->
+                    <section class="app-hero-spotlight" id="heroSpotlight" style="background-image: url('https://image.tmdb.org/t/p/original/1KohYajglCHxTgj2NY2WTI7gn9v.jpg');">
                         <div class="app-hero-overlay"></div>
                         <div class="app-hero-info">
-                            <div class="app-spotlight-tag"><ion-icon name="star"></ion-icon> #1 Featured Spotlight</div>
-                            <h2 class="app-hero-title" id="heroTitle">Mayday</h2>
+                            <h2 class="app-hero-title" id="heroTitle">The Runner</h2>
                             <div class="app-hero-meta">
-                                <span class="app-meta-star"><ion-icon name="star"></ion-icon> <span id="heroRating">6.9</span></span>
+                                <span class="app-meta-star"><ion-icon name="star"></ion-icon> <span id="heroRating">4.3</span></span>
                                 <span>&bull;</span>
                                 <span id="heroYear">2026</span>
                                 <span>&bull;</span>
-                                <span id="heroGenres">Action &bull; Adventure &bull; Comedy</span>
-                                <span class="app-meta-badge">4K ULTRA HD</span>
+                                <span id="heroGenres">Animation &bull; Comedy &bull; Family</span>
                             </div>
                             <p class="app-hero-desc" id="heroDesc">
-                                In 1987 Cold War time, American pilot crash land deep inside dangerous Soviet territory! To survive and get back home alive, pilot forced to team up with weird eccentric former KGB agent Nikolai Ustinov on wild buddy mission.
+                                Experience this blockbuster release in full HD quality with crystal-clear audio and lightning-fast multi-server streaming.
                             </p>
                             <div class="app-hero-actions">
-                                <button class="app-btn-play"><ion-icon name="play"></ion-icon> Watch Now</button>
-                                <button class="app-btn-info"><ion-icon name="information-circle-outline"></ion-icon> More Info</button>
+                                <button class="app-btn-play"><ion-icon name="play"></ion-icon> Play</button>
+                                <button class="app-btn-info"><ion-icon name="information-circle-outline"></ion-icon> See More</button>
                             </div>
                         </div>
 
-                        <!-- Hero Carousel Navigation Dots -->
-                        <div class="app-hero-dots">
-                            <span class="app-dot active" onclick="setFeatured(0)"></span>
-                            <span class="app-dot" onclick="setFeatured(1)"></span>
-                            <span class="app-dot" onclick="setFeatured(2)"></span>
+                        <!-- Hero Carousel Navigation Controls -->
+                        <div class="app-hero-carousel-ctrls">
+                            <div class="app-hero-dots-row">
+                                <span class="app-dot active" onclick="setFeatured(0)"></span>
+                                <span class="app-dot" onclick="setFeatured(1)"></span>
+                                <span class="app-dot" onclick="setFeatured(2)"></span>
+                                <span class="app-dot" onclick="setFeatured(3)"></span>
+                                <span class="app-dot" onclick="setFeatured(4)"></span>
+                                <span class="app-dot" onclick="setFeatured(5)"></span>
+                            </div>
+                            <span class="app-hero-counter" id="heroCounter">01 / 06</span>
                         </div>
                     </section>
 
                     <!-- App Home Content Shelves -->
                     <div class="app-shelves-container">
-
-                        <!-- SHELF 1: Top 10 Today (Signature CineWatch Feature) -->
+                        <!-- SHELF 1: Top 10 in World Today -->
                         <div class="app-shelf">
                             <div class="app-shelf-header">
                                 <div class="app-shelf-title-wrap">
                                     <div class="app-shelf-accent-bar"></div>
-                                    <h3 class="app-shelf-title">Top 10 Today</h3>
-                                    <span class="app-shelf-sub">Most watched across CineWatch</span>
+                                    <h3 class="app-shelf-title">Top 10 in World Today</h3>
+                                </div>
+                                <div class="app-shelf-nav-arrows">
+                                    <button class="shelf-circle-btn" onclick="slideAppTrack('top10Track', -1)" aria-label="Slide Left"><ion-icon name="chevron-back-outline"></ion-icon></button>
+                                    <button class="shelf-circle-btn" onclick="slideAppTrack('top10Track', 1)" aria-label="Slide Right"><ion-icon name="chevron-forward-outline"></ion-icon></button>
                                 </div>
                             </div>
                             <div class="app-cards-track" id="top10Track">
-                                <!-- Card 1 -->
-                                <div class="top10-item">
-                                    <div class="top10-rank-num">1</div>
-                                    <div class="top10-poster-wrap">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/hVXjX1jLZ1ljFSNGXpjJfbTUOa7.jpg" alt="Mayday" loading="lazy" />
-                                        <span class="card-badge-top">4K</span>
-                                    </div>
-                                </div>
-                                <!-- Card 2 -->
-                                <div class="top10-item">
-                                    <div class="top10-rank-num">2</div>
-                                    <div class="top10-poster-wrap">
+                                <!-- 1. The Runner -->
+                                <div class="app-top10-card">
+                                    <div class="app-top10-poster">
                                         <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/uxCaBoYXsDC4A0SqTm3SISj0OwK.jpg" alt="The Runner" loading="lazy" />
-                                        <span class="card-badge-top">HD</span>
+                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 1</div>
                                     </div>
                                 </div>
-                                <!-- Card 3 -->
-                                <div class="top10-item">
-                                    <div class="top10-rank-num">3</div>
-                                    <div class="top10-poster-wrap">
+                                <!-- 2. Just Play Dead -->
+                                <div class="app-top10-card">
+                                    <div class="app-top10-poster">
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/glALx6QaIgw1u4joXsnfHTjWi6D.jpg" alt="Just Play Dead" loading="lazy" />
+                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 2</div>
+                                    </div>
+                                </div>
+                                <!-- 3. Coyote vs. Acme -->
+                                <div class="app-top10-card">
+                                    <div class="app-top10-poster">
                                         <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/vhv7lBWYM0DUuNU2a0V7Rhq21dD.jpg" alt="Coyote vs. Acme" loading="lazy" />
-                                        <span class="card-badge-top">4K</span>
+                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 3</div>
                                     </div>
                                 </div>
-                                <!-- Card 4 -->
-                                <div class="top10-item">
-                                    <div class="top10-rank-num">4</div>
-                                    <div class="top10-poster-wrap">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/2mwgHfOyrFrmvozjFoEXHRdfGhv.jpg" alt="Mousetrap" loading="lazy" />
-                                        <span class="card-badge-top">HD</span>
+                                <!-- 4. Mutiny -->
+                                <div class="app-top10-card">
+                                    <div class="app-top10-poster">
+                                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/pu2VxGlpGwffOx292w18b1tv96j.jpg" alt="Mutiny" loading="lazy" />
+                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 4</div>
                                     </div>
                                 </div>
-                                <!-- Card 5 -->
-                                <div class="top10-item">
-                                    <div class="top10-rank-num">5</div>
-                                    <div class="top10-poster-wrap">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg" alt="Avengers: Secret Wars" loading="lazy" />
-                                        <span class="card-badge-top">4K</span>
+                                <!-- 5. Batman: Knightfall Part 1 -->
+                                <div class="app-top10-card">
+                                    <div class="app-top10-poster">
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/9pKPTugulAt0EtH0g4gvJGffPSg.jpg" alt="Batman: Knightfall" loading="lazy" />
+                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 5</div>
                                     </div>
                                 </div>
-                                <!-- Card 6 -->
-                                <div class="top10-item">
-                                    <div class="top10-rank-num">6</div>
-                                    <div class="top10-poster-wrap">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/d5NXSklXo0qyIYkgV94XAgMIckC.jpg" alt="Dune: Part Two" loading="lazy" />
-                                        <span class="card-badge-top">4K</span>
+                                <!-- 6. Reacher -->
+                                <div class="app-top10-card">
+                                    <div class="app-top10-poster">
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg" alt="Reacher" loading="lazy" />
+                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 6</div>
                                     </div>
                                 </div>
-                                <!-- Card 7 -->
-                                <div class="top10-item">
-                                    <div class="top10-rank-num">7</div>
-                                    <div class="top10-poster-wrap">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg" alt="Deadpool &amp; Wolverine" loading="lazy" />
-                                        <span class="card-badge-top">4K</span>
+                                <!-- 7. Spider-Man: Brand New Day -->
+                                <div class="app-top10-card">
+                                    <div class="app-top10-poster">
+                                        <img src="https://image.tmdb.org/t/p/original/ghF1JYv7P5BgWHYfq9dqhqqNfz8.jpg" alt="Spider-Man: Brand New Day" loading="lazy" />
+                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 7</div>
+                                    </div>
+                                </div>
+                                <!-- 8. Lanterns -->
+                                <div class="app-top10-card">
+                                    <div class="app-top10-poster">
+                                        <img src="https://image.tmdb.org/t/p/original/rzyXM5uB2Oci6u7aP3ijPxcTmfV.jpg" alt="Lanterns" loading="lazy" />
+                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 8</div>
+                                    </div>
+                                </div>
+                                <!-- 9. The Odyssey -->
+                                <div class="app-top10-card">
+                                    <div class="app-top10-poster">
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg" alt="The Odyssey" loading="lazy" />
+                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 9</div>
+                                    </div>
+                                </div>
+                                <!-- 10. The Brink of War -->
+                                <div class="app-top10-card">
+                                    <div class="app-top10-poster">
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/vCIQeQ2ynVqEjIvtbOXGnKtcgAX.jpg" alt="The Brink of War" loading="lazy" />
+                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 10</div>
                                     </div>
                                 </div>
                             </div>
@@ -1305,7 +1336,7 @@
                         
                         <!-- Status Bar -->
                         <div class="galaxy-status-bar">
-                            <span style="font-weight:700;">12:45</span>
+                            <span style="font-weight:700;">9:20</span>
                             <div class="galaxy-camera"></div>
                             <div style="display:flex;align-items:center;gap:6px;font-size:0.75rem;">
                                 <span style="font-size:0.55rem;font-weight:800;background:rgba(255,255,255,0.15);padding:1px 3px;border-radius:2px;">5G</span>
@@ -1316,9 +1347,8 @@
 
                         <!-- Mobile Header -->
                         <div style="padding: 10px 14px; display: flex; align-items: center; justify-content: space-between;">
-                            <div style="font-family:'Outfit',sans-serif;font-size:1.15rem;font-weight:800;color:#fff;display:flex;align-items:center;gap:5px;">
-                                <ion-icon name="ticket" style="color:#e50914;"></ion-icon>
-                                <span>Cine<span style="color:#e50914;">Watch</span></span>
+                            <div style="font-size:1.2rem;color:#cbd5e1;cursor:pointer;">
+                                <ion-icon name="arrow-back"></ion-icon>
                             </div>
                             <div style="display:flex;gap:12px;color:#cbd5e1;font-size:1.1rem;">
                                 <ion-icon name="search-outline"></ion-icon>
@@ -1326,20 +1356,27 @@
                             </div>
                         </div>
 
-                        <!-- Mobile Hero -->
-                        <div style="position:relative;height:240px;background-image:url('https://image.tmdb.org/t/p/original/4gyx49ibwQslyrwuUS1c58PJEEd.jpg');background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:14px;border-radius:14px;margin:0 10px 18px;">
+                        <!-- Mobile Hero: The Whisper Man -->
+                        <div style="position:relative;height:245px;background-image:url('https://image.tmdb.org/t/p/original/uauoVKKCkNA9iWjgJCL8TdSfLf5.jpg');background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:14px;border-radius:14px;margin:0 10px 18px;">
                             <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(6,7,10,0.95), transparent 70%);border-radius:14px;"></div>
                             <div style="position:relative;z-index:2;">
-                                <span style="background:#e50914;color:#fff;font-size:0.6rem;font-weight:800;padding:2px 6px;border-radius:3px;">#1 TODAY</span>
-                                <div style="font-family:'Outfit',sans-serif;font-size:1.5rem;font-weight:800;color:#fff;margin:4px 0 2px;">Mayday</div>
-                                <div style="font-size:0.7rem;color:#cbd5e1;margin-bottom:8px;">★ 6.9 &bull; 2026 &bull; Action Comedy</div>
-                                <button style="background:#e50914;border:none;color:#fff;font-size:0.75rem;font-weight:700;padding:5px 14px;border-radius:6px;display:flex;align-items:center;gap:4px;">
-                                    <ion-icon name="play"></ion-icon> Watch Now
-                                </button>
+                                <div style="font-family:'Outfit',sans-serif;font-size:1.55rem;font-weight:800;color:#fff;margin-bottom:3px;">The Whisper Man</div>
+                                <div style="font-size:0.7rem;color:#cbd5e1;margin-bottom:6px;display:flex;align-items:center;gap:5px;">
+                                    <span style="color:#e50914;">★ 6.3</span> &bull; 2028 &bull; <span style="border:1px solid rgba(255,255,255,0.2);padding:1px 3px;border-radius:2px;font-size:0.6rem;">R</span>
+                                </div>
+                                <div style="font-size:0.68rem;color:#94a3b8;margin-bottom:10px;">Crime &bull; Drama &bull; Thriller</div>
+                                <div style="display:flex;gap:8px;">
+                                    <button style="background:#e50914;border:none;color:#fff;font-size:0.76rem;font-weight:700;padding:6px 16px;border-radius:20px;display:flex;align-items:center;gap:5px;cursor:pointer;">
+                                        <ion-icon name="play"></ion-icon> Play
+                                    </button>
+                                    <button style="background:rgba(255,255,255,0.18);border:none;color:#fff;font-size:0.76rem;font-weight:600;padding:6px 14px;border-radius:20px;display:flex;align-items:center;gap:5px;cursor:pointer;">
+                                        <ion-icon name="information-circle-outline"></ion-icon> See More
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- Mobile Shelf: Top 10 -->
+                        <!-- Mobile Shelf: Top 10 in World Today -->
                         <div style="padding: 0 10px 14px;">
                             <div style="font-size:0.92rem;font-weight:700;color:#fff;margin-bottom:8px;display:flex;align-items:center;gap:6px;">
                                 <span style="width:3px;height:14px;background:#e50914;border-radius:2px;display:inline-block;"></span>
@@ -1347,26 +1384,42 @@
                             </div>
                             <div style="display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;">
                                 <div style="flex:0 0 95px;position:relative;">
-                                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/hVXjX1jLZ1ljFSNGXpjJfbTUOa7.jpg" style="width:100%;height:140px;object-fit:cover;border-radius:8px;" />
-                                    <span style="position:absolute;top:4px;right:4px;background:rgba(0,0,0,0.8);font-size:0.55rem;font-weight:800;padding:1px 4px;border-radius:3px;color:#fff;">#1</span>
+                                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/uxCaBoYXsDC4A0SqTm3SISj0OwK.jpg" style="width:100%;height:140px;object-fit:cover;border-radius:8px;" />
+                                    <div class="app-flame-badge" style="top:4px;left:4px;font-size:0.55rem;padding:1px 4px;"><ion-icon name="flame"></ion-icon> TOP 1</div>
                                 </div>
                                 <div style="flex:0 0 95px;position:relative;">
-                                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/uxCaBoYXsDC4A0SqTm3SISj0OwK.jpg" style="width:100%;height:140px;object-fit:cover;border-radius:8px;" />
-                                    <span style="position:absolute;top:4px;right:4px;background:rgba(0,0,0,0.8);font-size:0.55rem;font-weight:800;padding:1px 4px;border-radius:3px;color:#fff;">#2</span>
+                                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/glALx6QaIgw1u4joXsnfHTjWi6D.jpg" style="width:100%;height:140px;object-fit:cover;border-radius:8px;" />
+                                    <div class="app-flame-badge" style="top:4px;left:4px;font-size:0.55rem;padding:1px 4px;"><ion-icon name="flame"></ion-icon> TOP 2</div>
                                 </div>
                                 <div style="flex:0 0 95px;position:relative;">
                                     <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/vhv7lBWYM0DUuNU2a0V7Rhq21dD.jpg" style="width:100%;height:140px;object-fit:cover;border-radius:8px;" />
-                                    <span style="position:absolute;top:4px;right:4px;background:rgba(0,0,0,0.8);font-size:0.55rem;font-weight:800;padding:1px 4px;border-radius:3px;color:#fff;">#3</span>
+                                    <div class="app-flame-badge" style="top:4px;left:4px;font-size:0.55rem;padding:1px 4px;"><ion-icon name="flame"></ion-icon> TOP 3</div>
+                                </div>
+                                <div style="flex:0 0 95px;position:relative;">
+                                    <img src="https://image.tmdb.org/t/p/w600_and_h900_face/pu2VxGlpGwffOx292w18b1tv96j.jpg" style="width:100%;height:140px;object-fit:cover;border-radius:8px;" />
+                                    <div class="app-flame-badge" style="top:4px;left:4px;font-size:0.55rem;padding:1px 4px;"><ion-icon name="flame"></ion-icon> TOP 4</div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Mobile Dock -->
                         <div class="galaxy-mobile-nav">
-                            <div class="galaxy-dock-item active"><ion-icon name="home"></ion-icon></div>
-                            <div class="galaxy-dock-item"><ion-icon name="compass-outline"></ion-icon></div>
-                            <div class="galaxy-dock-item"><ion-icon name="bookmark-outline"></ion-icon></div>
-                            <div class="galaxy-dock-item"><ion-icon name="person-outline"></ion-icon></div>
+                            <div class="galaxy-dock-item active">
+                                <ion-icon name="home"></ion-icon>
+                                <span style="font-size:0.6rem;font-weight:600;margin-top:2px;">Home</span>
+                            </div>
+                            <div class="galaxy-dock-item">
+                                <ion-icon name="compass-outline"></ion-icon>
+                                <span style="font-size:0.6rem;font-weight:600;margin-top:2px;">Explore</span>
+                            </div>
+                            <div class="galaxy-dock-item">
+                                <ion-icon name="bookmark-outline"></ion-icon>
+                                <span style="font-size:0.6rem;font-weight:600;margin-top:2px;">Légendé</span>
+                            </div>
+                            <div class="galaxy-dock-item">
+                                <ion-icon name="person-outline"></ion-icon>
+                                <span style="font-size:0.6rem;font-weight:600;margin-top:2px;">Profile</span>
+                            </div>
                         </div>
 
                     </div>
@@ -1382,28 +1435,52 @@
     <script>
         const featuredData = [
             {
-                title: "Mayday",
-                rating: "6.9",
-                year: "2026",
-                genres: "Action \u2022 Adventure \u2022 Comedy",
-                desc: "In 1987 Cold War time, American pilot crash land deep inside dangerous Soviet territory! To survive and get back home alive, pilot forced to team up with weird eccentric former KGB agent Nikolai Ustinov on wild buddy mission.",
-                backdrop: "https://image.tmdb.org/t/p/original/4gyx49ibwQslyrwuUS1c58PJEEd.jpg"
-            },
-            {
                 title: "The Runner",
-                rating: "7.9",
+                rating: "4.3",
                 year: "2026",
                 genres: "Animation \u2022 Comedy \u2022 Family",
-                desc: "High-powered London lawyer Maia Marten out on morning jog when mystery man hijack her diabetic son's insulin device. To save kid, Maia must sprint full-speed across London, obey crazy demands, and kill court witness.",
+                desc: "Experience this blockbuster release in full HD quality with crystal-clear audio and lightning-fast multi-server streaming.",
                 backdrop: "https://image.tmdb.org/t/p/original/1KohYajglCHxTgj2NY2WTI7gn9v.jpg"
+            },
+            {
+                title: "Just Play Dead",
+                rating: "4.5",
+                year: "2026",
+                genres: "Drama \u2022 Thriller",
+                desc: "Criminal fake death for insurance money, frame wife's lover; wife plot kill him for real, both race outmaneuver each other.",
+                backdrop: "https://image.tmdb.org/t/p/original/7gf2GLNZ6lqbbTRuY9Vvrar0z3k.jpg"
             },
             {
                 title: "Coyote vs. Acme",
                 rating: "7.6",
                 year: "2026",
                 genres: "Animation \u2022 Comedy \u2022 Family",
-                desc: "Wile E. Coyote sues the Acme Corporation after decades of faulty products fail to catch the Road Runner, teaming up with a down-on-his-luck billboard attorney to take down the corporate giant.",
+                desc: "Wile E. Coyote sues the Acme Corporation after decades of faulty products fail to catch the Road Runner, teaming up with a down-on-his-luck billboard attorney.",
                 backdrop: "https://image.tmdb.org/t/p/original/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg"
+            },
+            {
+                title: "Mutiny",
+                rating: "5.7",
+                year: "2026",
+                genres: "Action \u2022 Thriller",
+                desc: "Ex-Special Forces agent Cole Reed see billionaire industrialist boss framed and murdered in front of him. Forced on run as chief suspect, Reed uncover massive conspiracy.",
+                backdrop: "https://image.tmdb.org/t/p/original/qDa0fqDqIBCovRp975RvtGPcuN3.jpg"
+            },
+            {
+                title: "Batman: Knightfall",
+                rating: "8.0",
+                year: "2026",
+                genres: "Action \u2022 Animation \u2022 Crime",
+                desc: "Bane unleashes every dangerous villain from Arkham Asylum loose on Gotham, wearing Batman down with no rest until fateful showdown.",
+                backdrop: "https://image.tmdb.org/t/p/original/caBIySpwuFi2i7ynvHIlnxJLOdN.jpg"
+            },
+            {
+                title: "Mayday",
+                rating: "6.9",
+                year: "2026",
+                genres: "Action \u2022 Adventure \u2022 Comedy",
+                desc: "In 1987 Cold War time, American pilot crash land deep inside dangerous Soviet territory, forced to team up with weird eccentric former KGB agent.",
+                backdrop: "https://image.tmdb.org/t/p/original/4gyx49ibwQslyrwuUS1c58PJEEd.jpg"
             }
         ];
 
@@ -1417,6 +1494,7 @@
             const heroYear = document.getElementById('heroYear');
             const heroGenres = document.getElementById('heroGenres');
             const heroDesc = document.getElementById('heroDesc');
+            const heroCounter = document.getElementById('heroCounter');
 
             if (heroSpotlight) heroSpotlight.style.backgroundImage = `url('${data.backdrop}')`;
             if (heroTitle) heroTitle.textContent = data.title;
@@ -1424,10 +1502,18 @@
             if (heroYear) heroYear.textContent = data.year;
             if (heroGenres) heroGenres.textContent = data.genres;
             if (heroDesc) heroDesc.textContent = data.desc;
+            if (heroCounter) heroCounter.textContent = `0${index + 1} / 06`;
 
-            document.querySelectorAll('.app-hero-dots .app-dot').forEach((d, i) => {
+            document.querySelectorAll('.app-hero-dots-row .app-dot').forEach((d, i) => {
                 d.classList.toggle('active', i === index);
             });
+        }
+
+        function slideAppTrack(trackId, direction) {
+            const track = document.getElementById(trackId);
+            if (track) {
+                track.scrollBy({ left: direction * 320, behavior: 'smooth' });
+            }
         }
 
         function switchPreview(mode) {
@@ -1437,7 +1523,7 @@
             const tabMobileBtn = document.getElementById('tabMobileBtn');
 
             if (mode === 'desktop') {
-                if (desktopShowcase) desktopShowcase.style.display = 'block';
+                if (desktopShowcase) desktopShowcase.style.display = 'flex';
                 if (mobileShowcase) mobileShowcase.classList.remove('active');
                 if (tabDesktopBtn) tabDesktopBtn.classList.add('active');
                 if (tabMobileBtn) tabMobileBtn.classList.remove('active');
