@@ -558,9 +558,7 @@ setTimeout(() => {
 }, 1500);
 
 function getFeaturedMovies() {
-  return MOVIES.filter((m) => m.featured).sort((a, b) => {
-    return getMediaListIndex(a, FEATURED_TITLES) - getMediaListIndex(b, FEATURED_TITLES);
-  });
+  return getMoviesFromList(FEATURED_TITLES);
 }
 
 function setupHeroBanner() {
