@@ -25152,7 +25152,7 @@ window._ANIME_DATA = [
     animeSlug: "yu-gi-oh-duel-monsters-gx",
     overview: "Ten years after the Ceremonial Battle, a teenage boy named Judai Yuuki (Jaden Yuki) heads off in order to join the Duel Academia (Duel Academy) located on a remote island off the coast of Japan. There he meets his fellow students and gains a few friends, along with a few enemies. Judai is put into the lowest rank of Osiris Red (Slifer Red), but he continues to test his skills against the students and faculty to prove his worth as a Duelist and earn the respect of everyone around him.",
     overviewKurdish: "دە ساڵ دوای شەڕی ڕێوڕەسمییەکە، کوڕێکی هەرزەکار بە ناوی جودای یووکی (جەیدن یووکی) بەڕێدەکەوێت بۆ ئەوەی بچێتە ئەکادیمیای دوێڵ کە لەسەر دوورگەیەکی دوورەدەست لە کەناراوەکانی ژاپۆن هەڵکەوتووە. لەوێ چاوی بە خوێندکارانی هاوڕێی دەکەوێت و چەندین هاوڕێ و دوژمن پەیدا دەکات. جودای دەخرێتە نزمترین ئاستەوە کە ئۆسیریس سوور (سلایفەر سوور)ـە، بەڵام بەردەوام دەبێت لە تاقیکردنەوەی تواناکانی بەرامبەر خوێندکاران و مامۆستایان تا بەهای خۆی وەک دوێڵستێک بسەلمێنێت و ڕێزی هەمووان بەدەستبهێنێت.",
-    director: "Hatsuki Tsuji",
+    director: "Kazuki Takahashi",
     cast: [
         "KENN",
         "Sanae Kobayashi",
