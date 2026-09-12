@@ -12,7 +12,7 @@ window._MOVIES_DATA = [
     duration: "1h 37m",
     genres: [
       "Action",
-      "Family",
+      "Comedy",
       "Sport"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/jM8LRvzYIqZqw6Si5xNECiHFDgM.jpg",
@@ -20,7 +20,7 @@ window._MOVIES_DATA = [
     videoUrl: "1558568",
     trailerUrl: "https://youtu.be/VSN8YM6urHo?si=56Fk_-YMpxANshNI",
     overview: "Group of ragtag misfit athletes assemble to save local community sports complex from greedy real estate developer. Underdog friends must train super hard, overcome crazy hurdles, and defeat arrogant champion rival team in high-stakes big tournament to win prize money and protect home turf!",
-    overviewKurdish:"کۆمەڵێک وەرزشەوانی سەرنەکەوتوو و پەراوێزخراو پێکەوە کۆدەبنەوە بۆ ڕزگارکردنی سەنتەری وەرزشی ناوچەکەیان لە دەستی گەشەپێدەرێکی تەماحکاری خانوبەرە. یاریزانە لاوازەکان پێویستە بە سەختی مەشق بکەن، بەسەر ئاستەنگە شێتانەکاندا زاڵ ببن، و لە پاڵەوانێتییەکی گەورەی کۆتاییدا شکست بە تیپی ڕکابەری بەهێزیان بهێنن بۆ بردنی خەڵاتی دارایی و پاراستنی مەیدانەکەیان.",
+    overviewKurdish: "کۆمەڵێک وەرزشەوانی سەرنەکەوتوو و پەراوێزخراو پێکەوە کۆدەبنەوە بۆ ڕزگارکردنی سەنتەری وەرزشی ناوچەکەیان لە دەستی گەشەپێدەرێکی تەماحکاری خانوبەرە. یاریزانە لاوازەکان پێویستە بە سەختی مەشق بکەن، بەسەر ئاستەنگە شێتانەکاندا زاڵ ببن، و لە پاڵەوانێتییەکی گەورەی کۆتاییدا شکست بە تیپی ڕکابەری بەهێزیان بهێنن بۆ بردنی خەڵاتی دارایی و پاراستنی مەیدانەکەیان.",
     director: "Paul Feig",
     cast: ["Marsai Martin, Young Mazino, Terry Crews, Stephanie Beatriz, Kenan Thompson"],
     trending: true,
@@ -45,7 +45,7 @@ window._MOVIES_DATA = [
     videoUrl: "1558568",
     trailerUrl: "https://youtu.be/VSN8YM6urHo?si=56Fk_-YMpxANshNI",
     overview: "Group of ragtag misfit athletes assemble to save local community sports complex from greedy real estate developer. Underdog friends must train super hard, overcome crazy hurdles, and defeat arrogant champion rival team in high-stakes big tournament to win prize money and protect home turf!",
-    overviewKurdish:"کۆمەڵێک وەرزشەوانی سەرنەکەوتوو و پەراوێزخراو پێکەوە کۆدەبنەوە بۆ ڕزگارکردنی سەنتەری وەرزشی ناوچەکەیان لە دەستی گەشەپێدەرێکی تەماحکاری خانوبەرە. یاریزانە لاوازەکان پێویستە بە سەختی مەشق بکەن، بەسەر ئاستەنگە شێتانەکاندا زاڵ ببن، و لە پاڵەوانێتییەکی گەورەی کۆتاییدا شکست بە تیپی ڕکابەری بەهێزیان بهێنن بۆ بردنی خەڵاتی دارایی و پاراستنی مەیدانەکەیان.",
+    overviewKurdish: "کۆمەڵێک وەرزشەوانی سەرنەکەوتوو و پەراوێزخراو پێکەوە کۆدەبنەوە بۆ ڕزگارکردنی سەنتەری وەرزشی ناوچەکەیان لە دەستی گەشەپێدەرێکی تەماحکاری خانوبەرە. یاریزانە لاوازەکان پێویستە بە سەختی مەشق بکەن، بەسەر ئاستەنگە شێتانەکاندا زاڵ ببن، و لە پاڵەوانێتییەکی گەورەی کۆتاییدا شکست بە تیپی ڕکابەری بەهێزیان بهێنن بۆ بردنی خەڵاتی دارایی و پاراستنی مەیدانەکەیان.",
     director: "Paul Feig",
     cast: ["Marsai Martin, Young Mazino, Terry Crews, Stephanie Beatriz, Kenan Thompson"],
     trending: true,
@@ -70,7 +70,7 @@ window._MOVIES_DATA = [
     videoUrl: "1386315",
     trailerUrl: "https://youtu.be/raY-TDLE458?si=kl8RoS6tBCeHwgEX",
     overview: "High-powered London lawyer Maia Marten out on morning jog when mystery man hijack her diabetic son's insulin device. To save kid, Maia must sprint full-speed across London, obey crazy demands, and kill court witness before time run out.",
-    overviewKurdish:"مایا مارتن، پارێزەرێکی بەتوانای لۆندۆنە. لە کاتی ڕاکردنی بەیانیان، کەسێکی نادیار ڕاڵێو و دەسەڵات دەگرێت بەسەر ئامێری ئەنسۆلینی کوڕە شەکرەدارەکەی. بۆ ڕزگارکردنی ژیانی کوڕەکەی، پێویستە مایا بە خێرایی لەنێو شاری لۆندۆن ڕابکات، گوێڕایەڵی داواکارییە مەترسیدارەکان بێت و شایەتحاڵێکی دادگا بکوژێت پێش ئەوەی کات تەواو بێت.",
+    overviewKurdish: "مایا مارتن، پارێزەرێکی بەتوانای لۆندۆنە. لە کاتی ڕاکردنی بەیانیان، کەسێکی نادیار ڕاڵێو و دەسەڵات دەگرێت بەسەر ئامێری ئەنسۆلینی کوڕە شەکرەدارەکەی. بۆ ڕزگارکردنی ژیانی کوڕەکەی، پێویستە مایا بە خێرایی لەنێو شاری لۆندۆن ڕابکات، گوێڕایەڵی داواکارییە مەترسیدارەکان بێت و شایەتحاڵێکی دادگا بکوژێت پێش ئەوەی کات تەواو بێت.",
     director: "Kevin Macdonald",
     cast: ["Gal Gadot, Damian Lewis, Alfred Enoch, Rory Wilmot"],
     trending: true,
@@ -94,7 +94,7 @@ window._MOVIES_DATA = [
     videoUrl: "1440098",
     trailerUrl: "https://www.youtube.com/watch?v=WlGzP8FvsfY",
     overview: "High-powered London lawyer Maia Marten out on morning jog when mystery man hijack her diabetic son's insulin device. To save kid, Maia must sprint full-speed across London, obey crazy demands, and kill court witness before time run out.",
-    overviewKurdish:"مایا مارتن، پارێزەرێکی بەتوانای لۆندۆنە. لە کاتی ڕاکردنی بەیانیان، کەسێکی نادیار ڕاڵێو و دەسەڵات دەگرێت بەسەر ئامێری ئەنسۆلینی کوڕە شەکرەدارەکەی. بۆ ڕزگارکردنی ژیانی کوڕەکەی، پێویستە مایا بە خێرایی لەنێو شاری لۆندۆن ڕابکات، گوێڕایەڵی داواکارییە مەترسیدارەکان بێت و شایەتحاڵێکی دادگا بکوژێت پێش ئەوەی کات تەواو بێت.",
+    overviewKurdish: "مایا مارتن، پارێزەرێکی بەتوانای لۆندۆنە. لە کاتی ڕاکردنی بەیانیان، کەسێکی نادیار ڕاڵێو و دەسەڵات دەگرێت بەسەر ئامێری ئەنسۆلینی کوڕە شەکرەدارەکەی. بۆ ڕزگارکردنی ژیانی کوڕەکەی، پێویستە مایا بە خێرایی لەنێو شاری لۆندۆن ڕابکات، گوێڕایەڵی داواکارییە مەترسیدارەکان بێت و شایەتحاڵێکی دادگا بکوژێت پێش ئەوەی کات تەواو بێت.",
     director: "Kevin Macdonald",
     cast: ["Gal Gadot, Damian Lewis, Alfred Enoch, Rory Wilmot"],
     trending: true,
@@ -119,7 +119,7 @@ window._MOVIES_DATA = [
     videoUrl: "1137844",
     trailerUrl: "https://youtu.be/om5Un9X720M?si=w2Q4Yb_O5B2js4Td",
     overview: "In 1987 Cold War time, American pilot crash land deep inside dangerous Soviet territory! To survive and get back home alive, pilot forced to team up with weird eccentric former KGB agent Nikolai Ustinov on wild buddy mission.",
-    overviewKurdish:"لە سەردەمی جەنگی سارد لە ساڵی ١٩٨٧دا، فڕۆکەوانێکی ئەمریکی لە ناوچەیەکی دوورەدەست و مەترسیداری سۆڤیەتدا تێکدەشکێت و گیر دەخوات. بۆ ئەوەی لە ژیاندا بێنێتەوە و بگەڕێتەوە نیشتمانەکەی، ناچار دەبێت هاوکاری لەگەڵ نیکۆلای ئوستینۆڤ دروست بکات، کە ئەفسەرێکی پێشووی سەیر و سەمەرەی دەزگای سیخوڕی KGBیە.",
+    overviewKurdish: "لە سەردەمی جەنگی سارد لە ساڵی ١٩٨٧دا، فڕۆکەوانێکی ئەمریکی لە ناوچەیەکی دوورەدەست و مەترسیداری سۆڤیەتدا تێکدەشکێت و گیر دەخوات. بۆ ئەوەی لە ژیاندا بێنێتەوە و بگەڕێتەوە نیشتمانەکەی، ناچار دەبێت هاوکاری لەگەڵ نیکۆلای ئوستینۆڤ دروست بکات، کە ئەفسەرێکی پێشووی سەیر و سەمەرەی دەزگای سیخوڕی KGBیە.",
     director: "Jonathan Goldstein, John Francis Daley",
     cast: ["Ryan Reynolds, Kenneth Branagh, Maria Bakalova, Marcin Dorociński"],
     trending: true,
@@ -144,7 +144,7 @@ window._MOVIES_DATA = [
     videoUrl: "1204680",
     trailerUrl: "https://youtu.be/fWKpUCvC_RQ",
     overview: "Wile E. Coyote sue Acme Corporation after decade of faulty product cause endless harm chase Road Runner. Team with down-on-luck lawyer, take corporate giant to court.",
-    overviewKurdish:"وایڵ ئی. کایۆتی دژی کۆمپانیای ئاکمی سکاڵا تۆمار دەکات لەدوای دەیان ساڵ بەرهەمی خراپ کە زیانی زۆری پێگەیاندووە لە کاتی ڕاونانی ڕۆدڕەنەر. لەگەڵ پارێزەرێکی بەختڕەش هاوکاری دەکات بۆ بردنی کۆمپانیا بۆ دادگا.",
+    overviewKurdish: "وایڵ ئی. کایۆتی دژی کۆمپانیای ئاکمی سکاڵا تۆمار دەکات لەدوای دەیان ساڵ بەرهەمی خراپ کە زیانی زۆری پێگەیاندووە لە کاتی ڕاونانی ڕۆدڕەنەر. لەگەڵ پارێزەرێکی بەختڕەش هاوکاری دەکات بۆ بردنی کۆمپانیا بۆ دادگا.",
     director: "Dave Green",
     cast: ["Will Forte, Lana Condor, Peter Dinklage"],
     trending: true,
@@ -152,7 +152,7 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
-  
+
   {
     title: "Just Play Dead",
     type: "Movie",
@@ -169,7 +169,7 @@ window._MOVIES_DATA = [
     videoUrl: "1480574",
     trailerUrl: "https://youtu.be/LlAajeOoFBo?si=l9nAFkBVXTT68_CK",
     overview: "Criminal fake death for insurance money, frame wife's lover; wife plot kill him for real, both race outmaneuver each other.",
-    overviewKurdish:" تاوانبارێک وا دەردەخات کە مردووە بۆ بەدەستهێنانی پارەی بیمە، هاوسەرەکەشی تاوانبار دەکات، بەڵام هاوسەرەکەی پلانی کوشتنی ڕاستەقینەی داناوە، هەردووکیان پێشبڕکێ دەکەن بۆ ئەوەی زاڵ بن بەسەر یەکتریدا.",
+    overviewKurdish: " تاوانبارێک وا دەردەخات کە مردووە بۆ بەدەستهێنانی پارەی بیمە، هاوسەرەکەشی تاوانبار دەکات، بەڵام هاوسەرەکەی پلانی کوشتنی ڕاستەقینەی داناوە، هەردووکیان پێشبڕکێ دەکەن بۆ ئەوەی زاڵ بن بەسەر یەکتریدا.",
     director: "Martin Campbell",
     cast: ["Samuel L. Jackson, Eva Green, María Pedraza, Eoin Macken"],
     trending: true,
@@ -250,7 +250,7 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
-  
+
   {
     title: "Mutiny",
     type: "Movie",
@@ -635,7 +635,7 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
-  
+
   {
     title: "The Dark Knight Rises",
     type: "Movie",
