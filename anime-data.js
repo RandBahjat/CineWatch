@@ -25134,7 +25134,7 @@ window._ANIME_DATA = [
     year: 2004,
     rating: 6.9,
     age: "TV-PG",
-    duration: "24m",
+    duration: "30m",
     genres: [
         "Animation",
         "Action",
