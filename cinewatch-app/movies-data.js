@@ -13944,6 +13944,35 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
+  {
+    title: "Oblivion",
+    type: "Movie",
+    year: 2013,
+    rating: 7.0,
+    age: "PG-13",
+    duration: "2h 4m",
+    genres: [
+      "Action",
+      "Adventure",
+      "Mystery",
+      "Sci-Fi"
+
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bYLM3GpNUZnoFElPXp1zlhDPdtv.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/tenUPIMnLO9QUcvAtakp0xSAYTz.jpg",
+    videoUrl: "75612",
+    trailerUrl: "",
+    overview: "Drone repairman, one of last human left on ravage Earth, question memory, reality while clean up after devastating alien war. Discover truth of past, own identity threaten shatter everything he think he know.",
+    overviewKurdish: "",
+    director: "Joseph Kosinski",
+    cast: [
+      "Tom Cruise, Morgan Freeman, Olga Kurylenko, Andrea Riseborough, Nikolaj Coster-Waldau"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
 
 
 
