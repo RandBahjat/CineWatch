@@ -13986,7 +13986,7 @@ window._MOVIES_DATA = [
     videoUrl: "10625",
     trailerUrl: "https://youtu.be/oDU84nmSDZY?si=WWxn0RTnJf2rOkxD",
     overview: "Jo Mitchell is a high school senior who moves to a new school and decides to stand up against the dominant clique known as the Plastics. After making a deal with a wealthy father to befriend his unpopular daughter Abby Hanover in exchange for college tuition, Jo forms a new group to challenge the school bullies. However, as secrets come out, Jo must prove her friendship is real and overcome the toxic drama.",
-    overviewKurdish: "کیدی هێرۆن کچێکی هەرزەکارە کە منداڵیی بە فێربوونی ماڵەوە لە ئەفریقا بەسەر بردووە پێش ئەوەی ڕووبکاتە قوتابخانەیەکی ئامادەیی گشتی لە ئەمریکا. لەوێ دەکەوێتە ناو گرووپی کچە دەستڕۆیشتوو و ڕووکەشەکانی قوتابخانەکە بە ناوی پلاستیکەکان، کە لەلایەن ڕێجینا جۆرجی بێبەزەیییەوە سەرکردایەتی دەکرێن. کاتێک کیدی دەکەوێتە خۆشەویستی ئارۆن ساموێڵز کە خۆشەویستی پێشووی ڕێجینایە، پیلانی نهێنی دادەنێت بۆ تێکدانی گرووپەکە، بەڵام بێئەوەی هەستی پێبکات بەرەبەرە خۆشی دەبێتە یەکێک لەوان.",
+    overviewKurdish: "جۆ میچڵ قوتابییەکی قۆناغی کۆتایی ئامادەیییە کە دەچێتە قوتابخانەیەکی نوێ و بڕیار دەدات ڕووبەڕووی گرووپی دەستڕۆیشتووی پلاستیکەکان ببێتەوە. دوای ئەوەی ڕێککەوتنێک لەگەڵ باوکێکی دەوڵەمەند دەکات بۆ ئەوەی ببێتە هاوڕێی ئابی هانۆڤەری کچە بێناو و پەراوێزخراوەکەی لە بەرامبەر دابینکردنی تێچووی زانکۆدا، جۆ گرووپێکی نوێ پێکدەهێنێت بۆ ئاڵنگاریکردنی زۆردارەکانی قوتابخانەکە. بەڵام کاتێک نهێنییەکان ئاشکرا دەبن، جۆ دەبێت بسەلمێنێت کە هاوڕێیەتییەکەی ڕاستەقینەیە و زاڵ بێت بەسەر کێشەکاندا.",
     director: "Mark Waters",
     cast: [
       "Lindsay Lohan, Rachel McAdams, Tina Fey, Tim Meadows, Amy Poehler, Ana Gasteyer, Amanda Seyfried, Lacey Chabert, Jonathan Bennett"
