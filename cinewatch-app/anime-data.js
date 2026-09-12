@@ -25911,7 +25911,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/skDqFjFqGtPIqcwLkqzqV4aSlCb.jpg",
     videoUrl: "20695",
     malId: 4343,
-    trailerUrl: "https://youtu.be/0_Vg_f4Z3Bg?si=g7B2z1U5iZ0Zg0_V",
+    trailerUrl: "https://youtu.be/L3Su29yMsNo?si=BkahomkX7KvetEvk",
     anilistId: 4343,
     animeSlug: "yu-gi-oh-5ds",
     overview: "Welcome to New Domino City! Once the playground to legendary duelist Yugi Muto, this sprawling metropolis has since been transformed into a futuristic society where dueling has kicked into overdrive. With recent technological advancements made by KaibaCorp, dueling has undergone a metamorphosis that has revolutionized the makeup and pace of the game! It’s now a heart-pounding, adrenaline-filled and fuel injected competition where duelists ride supercharged hyper cycles called Duel Runners and battle it out in hi-octane contests called “Turbo Duels.”",
