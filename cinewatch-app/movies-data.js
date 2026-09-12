@@ -62,7 +62,7 @@ window._MOVIES_DATA = [
     duration: "1h 44m",
     genres: [
       "Romance",
-      "Thriller",
+      "Thriller"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/uxCaBoYXsDC4A0SqTm3SISj0OwK.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/1KohYajglCHxTgj2NY2WTI7gn9v.jpg",
