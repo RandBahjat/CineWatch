@@ -13,9 +13,9 @@ if (window.location.hash.includes("type=recovery")) {
 // ==========================================
 let FEATURED_TITLES = ["Go Team!","Mayday","The Runner","Coyote vs. Acme","Just Play Dead","Reacher","The Whisper Man","Grand Theft Auto VI: An Extended Look" ,"Batman: Knightfall Part 1: Knightfall", "Mutiny", "Lanterns", "Lioness", "Spider-Man: Brand New Day"];
 let TOP_10_TRENDING_TODAY = ["Moana(2026)","The Runner","Just Play Dead","Coyote vs. Acme" , "Mutiny","Reacher", "Spider-Man: Brand New Day","One Piece", "Lanterns", "The Odyssey"];
-let TRENDING_THIS_WEEK_MOVIES = ["Mayday","The Whispher Man","Batman: Knightfall Part 1: Knightfall", "Mutiny", "Spider-Man: Brand New Day", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Minions & Monsters", "The Last House", "Disclosure Day", "The Invite", "The End of Oak Street", "Backrooms", "Camp Rock 3", "Evil Dead Burn", "Just Play Dead"];
+let TRENDING_THIS_WEEK_MOVIES = ["Mayday","The Whisper Man","Batman: Knightfall Part 1: Knightfall", "Mutiny", "Spider-Man: Brand New Day", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Minions & Monsters", "The Last House", "Disclosure Day", "The Invite", "The End of Oak Street", "Backrooms", "Camp Rock 3", "Evil Dead Burn", "Just Play Dead"];
 let TRENDING_THIS_WEEK_SERIES = ["Lanterns", "Reacher", "Lucky", "Silo", "One Piece", "Ted Lasso", "X-Men '97", "Lioness", "Outer Banks"];
-const POPULAR_MOVIES = ["Mayday", "The Whispher Man", "The Odyssey", "The Runner", "Spider-Man: Brand New Day", "Spider-Man: No Way Home", "The End of Oak Street", "Disclosure Day", "Camp Rock 3", "The Last House", "Michael", "Project Hail Mary"];
+const POPULAR_MOVIES = ["Mayday", "The Whisper Man", "The Odyssey", "The Runner", "Spider-Man: Brand New Day", "Spider-Man: No Way Home", "The End of Oak Street", "Disclosure Day", "Camp Rock 3", "The Last House", "Michael", "Project Hail Mary"];
 const POPULAR_SERIES = ["The Gentlemen","Reacher", "House of the Dragon", "Ted Lasso", "The Mentalist", "Lucky", "Off Campus", "Silo", "Game of Thrones", "The Sopranos", "Stranger Things", "The Boys"];
 
 // Expose globally so apps & modules can sync seamlessly with movie.js
