@@ -1415,25 +1415,6 @@
                 track.scrollBy({ left: direction * 320, behavior: 'smooth' });
             }
         }
-
-        function switchPreview(mode) {
-            const desktopShowcase = document.getElementById('desktopShowcase');
-            const mobileShowcase = document.getElementById('mobileShowcase');
-            const tabDesktopBtn = document.getElementById('tabDesktopBtn');
-            const tabMobileBtn = document.getElementById('tabMobileBtn');
-
-            if (mode === 'desktop') {
-                if (desktopShowcase) desktopShowcase.style.display = 'flex';
-                if (mobileShowcase) mobileShowcase.classList.remove('active');
-                if (tabDesktopBtn) tabDesktopBtn.classList.add('active');
-                if (tabMobileBtn) tabMobileBtn.classList.remove('active');
-            } else {
-                if (desktopShowcase) desktopShowcase.style.display = 'none';
-                if (mobileShowcase) mobileShowcase.classList.add('active');
-                if (tabDesktopBtn) tabDesktopBtn.classList.remove('active');
-                if (tabMobileBtn) tabMobileBtn.classList.add('active');
-            }
-        }
     </script>
 </body>
 </html>
