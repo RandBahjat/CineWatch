@@ -861,7 +861,9 @@
             background: #06070a;
             box-shadow: inset 0 0 0 1px rgba(0,0,0,0.8);
         }
-        .galaxy-screen::-webkit-scrollbar { display: none; }
+        .galaxy-screen::-webkit-scrollbar,
+        .galaxy-screen *::-webkit-scrollbar { display: none; width: 0; height: 0; }
+        .galaxy-screen, .galaxy-screen * { scrollbar-width: none; -ms-overflow-style: none; }
         .galaxy-status-bar {
             position: sticky;
             top: 0;
