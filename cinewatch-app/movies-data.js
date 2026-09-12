@@ -22,7 +22,7 @@ window._MOVIES_DATA = [
     overview: "Group of ragtag misfit athletes assemble to save local community sports complex from greedy real estate developer. Underdog friends must train super hard, overcome crazy hurdles, and defeat arrogant champion rival team in high-stakes big tournament to win prize money and protect home turf!",
     overviewKurdish:"کۆمەڵێک وەرزشەوانی سەرنەکەوتوو و پەراوێزخراو پێکەوە کۆدەبنەوە بۆ ڕزگارکردنی سەنتەری وەرزشی ناوچەکەیان لە دەستی گەشەپێدەرێکی تەماحکاری خانوبەرە. یاریزانە لاوازەکان پێویستە بە سەختی مەشق بکەن، بەسەر ئاستەنگە شێتانەکاندا زاڵ ببن، و لە پاڵەوانێتییەکی گەورەی کۆتاییدا شکست بە تیپی ڕکابەری بەهێزیان بهێنن بۆ بردنی خەڵاتی دارایی و پاراستنی مەیدانەکەیان.",
     director: "Paul Feig",
-    cast: ["Gal Gadot, Damian Lewis, Alfred Enoch, Rory Wilmot"],
+    cast: ["Marsai Martin, Young Mazino, Terry Crews, Stephanie Beatriz, Kenan Thompson"],
     trending: true,
     featured: true,
     is4k: false,
