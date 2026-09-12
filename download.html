@@ -1052,148 +1052,487 @@
                             </div>
                         </div>
 
-                        <!-- SHELF 2: Trending Movies This Week -->
+                        <!-- SHELF 2: Trending Movies -->
                         <div class="app-shelf">
                             <div class="app-shelf-header">
                                 <div class="app-shelf-title-wrap">
                                     <div class="app-shelf-accent-bar"></div>
-                                    <h3 class="app-shelf-title">Trending Movies This Week</h3>
+                                    <h3 class="app-shelf-title">Trending Movies</h3>
                                 </div>
-                                <span class="app-shelf-more">Explore All <ion-icon name="chevron-forward-outline"></ion-icon></span>
+                                <div class="app-shelf-nav-arrows">
+                                    <button class="shelf-circle-btn" onclick="slideAppTrack('trendingMoviesTrack', -1)" aria-label="Slide Left"><ion-icon name="chevron-back-outline"></ion-icon></button>
+                                    <button class="shelf-circle-btn" onclick="slideAppTrack('trendingMoviesTrack', 1)" aria-label="Slide Right"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+                                </div>
                             </div>
-                            <div class="app-cards-track">
+                            <div class="app-cards-track" id="trendingMoviesTrack">
+                                <!-- 1. Just Play Dead -->
                                 <div class="app-movie-card">
                                     <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/uxCaBoYXsDC4A0SqTm3SISj0OwK.jpg" alt="The Runner" loading="lazy" />
-                                        <div class="app-card-rating"><ion-icon name="star"></ion-icon> 7.9</div>
-                                        <span class="card-badge-top">4K</span>
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/glALx6QaIgw1u4joXsnfHTjWi6D.jpg" alt="Just Play Dead" loading="lazy" />
                                     </div>
                                     <div class="app-card-info">
-                                        <div class="app-card-title">The Runner</div>
-                                        <div class="app-card-sub">2026 &bull; Action</div>
+                                        <div class="app-card-title">Just Play Dead</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 4.5</span>
+                                            <span>2026</span>
+                                            <span>1h 36m</span>
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- 2. Batman: Knightfall Part 1... -->
                                 <div class="app-movie-card">
                                     <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/hVXjX1jLZ1ljFSNGXpjJfbTUOa7.jpg" alt="Mayday" loading="lazy" />
-                                        <div class="app-card-rating"><ion-icon name="star"></ion-icon> 6.9</div>
-                                        <span class="card-badge-top">4K</span>
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/9pKPTugulAt0EtH0g4gvJGffPSg.jpg" alt="Batman: Knightfall Part 1: Knightfall" loading="lazy" />
                                     </div>
                                     <div class="app-card-info">
-                                        <div class="app-card-title">Mayday</div>
-                                        <div class="app-card-sub">2026 &bull; Comedy</div>
+                                        <div class="app-card-title">Batman: Knightfall Part 1...</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8</span>
+                                            <span>2022</span>
+                                            <span>1h 19m</span>
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- 3. Mutiny -->
                                 <div class="app-movie-card">
                                     <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/vhv7lBWYM0DUuNU2a0V7Rhq21dD.jpg" alt="Coyote vs. Acme" loading="lazy" />
-                                        <div class="app-card-rating"><ion-icon name="star"></ion-icon> 7.6</div>
-                                        <span class="card-badge-top">HD</span>
+                                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/pu2VxGlpGwffOx292w18b1tv96j.jpg" alt="Mutiny" loading="lazy" />
                                     </div>
                                     <div class="app-card-info">
-                                        <div class="app-card-title">Coyote vs. Acme</div>
-                                        <div class="app-card-sub">2026 &bull; Animation</div>
+                                        <div class="app-card-title">Mutiny</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 5.7</span>
+                                            <span>2026</span>
+                                            <span>1h 35m</span>
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- 4. Spider-Man: Brand New ... -->
                                 <div class="app-movie-card">
                                     <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/d5NXSklXo0qyIYkgV94XAgMIckC.jpg" alt="Dune: Part Two" loading="lazy" />
-                                        <div class="app-card-rating"><ion-icon name="star"></ion-icon> 8.6</div>
-                                        <span class="card-badge-top">4K</span>
+                                        <img src="https://image.tmdb.org/t/p/original/ghF1JYv7P5BgWHYfq9dqhqqNfz8.jpg" alt="Spider-Man: Brand New Day" loading="lazy" />
                                     </div>
                                     <div class="app-card-info">
-                                        <div class="app-card-title">Dune: Part Two</div>
-                                        <div class="app-card-sub">2024 &bull; Sci-Fi</div>
+                                        <div class="app-card-title">Spider-Man: Brand New ...</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.1</span>
+                                            <span>2026</span>
+                                            <span>2h 25m</span>
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- 5. The Odyssey -->
                                 <div class="app-movie-card">
                                     <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg" alt="Deadpool &amp; Wolverine" loading="lazy" />
-                                        <div class="app-card-rating"><ion-icon name="star"></ion-icon> 7.7</div>
-                                        <span class="card-badge-top">4K</span>
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg" alt="The Odyssey" loading="lazy" />
                                     </div>
                                     <div class="app-card-info">
-                                        <div class="app-card-title">Deadpool &amp; Wolverine</div>
-                                        <div class="app-card-sub">2024 &bull; Action</div>
+                                        <div class="app-card-title">The Odyssey</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.5</span>
+                                            <span>2026</span>
+                                            <span>2h 52m</span>
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- 6. Motor City -->
                                 <div class="app-movie-card">
                                     <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg" alt="Avengers: Secret Wars" loading="lazy" />
-                                        <div class="app-card-rating"><ion-icon name="star"></ion-icon> 8.4</div>
-                                        <span class="card-badge-top">4K</span>
+                                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/dx2dblJL3GAKcXXXPjC2FSaMTWW.jpg" alt="Motor City" loading="lazy" />
                                     </div>
                                     <div class="app-card-info">
-                                        <div class="app-card-title">Avengers: Secret Wars</div>
-                                        <div class="app-card-sub">2027 &bull; Sci-Fi</div>
+                                        <div class="app-card-title">Motor City</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 6.1</span>
+                                            <span>2026</span>
+                                            <span>1h 43m</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 7. Toy Story 5 -->
+                                <div class="app-movie-card">
+                                    <div class="app-card-poster">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/0/08/Toy_Story_5_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Toy Story 5" loading="lazy" />
+                                    </div>
+                                    <div class="app-card-info">
+                                        <div class="app-card-title">Toy Story 5</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 7.5</span>
+                                            <span>2026</span>
+                                            <span>1h 42m</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 8. Obsession -->
+                                <div class="app-movie-card">
+                                    <div class="app-card-poster">
+                                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/cUnADM9fsYV69Fk0TkMp7xVLnKj.jpg" alt="Obsession" loading="lazy" />
+                                    </div>
+                                    <div class="app-card-info">
+                                        <div class="app-card-title">Obsession</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 7.4</span>
+                                            <span>2025</span>
+                                            <span>1h 49m</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 9. Minions & Monsters -->
+                                <div class="app-movie-card">
+                                    <div class="app-card-poster">
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg" alt="Minions & Monsters" loading="lazy" />
+                                    </div>
+                                    <div class="app-card-info">
+                                        <div class="app-card-title">Minions & Monsters</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 6.4</span>
+                                            <span>2026</span>
+                                            <span>1h 30m</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 10. The Last House -->
+                                <div class="app-movie-card">
+                                    <div class="app-card-poster">
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/6JU7E8Vv2M11egkctWVOScxWR75.jpg" alt="The Last House" loading="lazy" />
+                                    </div>
+                                    <div class="app-card-info">
+                                        <div class="app-card-title">The Last House</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 5.5</span>
+                                            <span>2026</span>
+                                            <span>1h 52m</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 11. Disclosure Day -->
+                                <div class="app-movie-card">
+                                    <div class="app-card-poster">
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/AnJ8IQJI23hNpYXVNaythu061Ru.jpg" alt="Disclosure Day" loading="lazy" />
+                                    </div>
+                                    <div class="app-card-info">
+                                        <div class="app-card-title">Disclosure Day</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 6.4</span>
+                                            <span>2026</span>
+                                            <span>2h 25m</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- SHELF 3: Trending Series This Week -->
+                        <!-- SHELF 3: Popular Series -->
                         <div class="app-shelf">
                             <div class="app-shelf-header">
                                 <div class="app-shelf-title-wrap">
                                     <div class="app-shelf-accent-bar"></div>
-                                    <h3 class="app-shelf-title">Trending Series This Week</h3>
+                                    <h3 class="app-shelf-title">Popular Series</h3>
                                 </div>
-                                <span class="app-shelf-more">Explore All <ion-icon name="chevron-forward-outline"></ion-icon></span>
+                                <div class="app-shelf-nav-arrows">
+                                    <button class="shelf-circle-btn" onclick="slideAppTrack('popularSeriesTrack', -1)" aria-label="Slide Left"><ion-icon name="chevron-back-outline"></ion-icon></button>
+                                    <button class="shelf-circle-btn" onclick="slideAppTrack('popularSeriesTrack', 1)" aria-label="Slide Right"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+                                </div>
                             </div>
-                            <div class="app-cards-track">
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/2mwgHfOyrFrmvozjFoEXHRdfGhv.jpg" alt="Mousetrap" loading="lazy" />
-                                        <div class="app-card-rating"><ion-icon name="star"></ion-icon> 7.6</div>
-                                        <span class="card-badge-top">HD</span>
+                            <div class="app-track-wrap">
+                                <button class="app-edge-arrow prev" onclick="slideAppTrack('popularSeriesTrack', -1)" aria-label="Slide Left"><ion-icon name="chevron-back-outline"></ion-icon></button>
+                                <div class="app-cards-track" id="popularSeriesTrack">
+                                    <!-- 1. Lanterns -->
+                                    <div class="app-movie-card">
+                                        <div class="app-card-poster">
+                                            <img src="https://image.tmdb.org/t/p/original/rzyXM5uB2Oci6u7aP3ijPxcTmfV.jpg" alt="Lanterns" loading="lazy" />
+                                        </div>
+                                        <div class="app-card-info">
+                                            <div class="app-card-title">Lanterns</div>
+                                            <div class="app-card-meta">
+                                                <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.8</span>
+                                                <span>2026</span>
+                                                <span>1 Season</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Mousetrap</div>
-                                        <div class="app-card-sub">2026 &bull; Season 1</div>
+                                    <!-- 2. Reacher -->
+                                    <div class="app-movie-card">
+                                        <div class="app-card-poster">
+                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg" alt="Reacher" loading="lazy" />
+                                        </div>
+                                        <div class="app-card-info">
+                                            <div class="app-card-title">Reacher</div>
+                                            <div class="app-card-meta">
+                                                <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8</span>
+                                                <span>2022</span>
+                                                <span>4 Seasons</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 3. Lucky -->
+                                    <div class="app-movie-card">
+                                        <div class="app-card-poster">
+                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg" alt="Lucky" loading="lazy" />
+                                        </div>
+                                        <div class="app-card-info">
+                                            <div class="app-card-title">Lucky</div>
+                                            <div class="app-card-meta">
+                                                <span class="app-card-rating"><ion-icon name="star"></ion-icon> 6.7</span>
+                                                <span>2026</span>
+                                                <span>1 Season</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 4. Silo -->
+                                    <div class="app-movie-card">
+                                        <div class="app-card-poster">
+                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg" alt="Silo" loading="lazy" />
+                                        </div>
+                                        <div class="app-card-info">
+                                            <div class="app-card-title">Silo</div>
+                                            <div class="app-card-meta">
+                                                <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.1</span>
+                                                <span>2023</span>
+                                                <span>3 Seasons</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 5. One Piece -->
+                                    <div class="app-movie-card">
+                                        <div class="app-card-poster">
+                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg" alt="One Piece" loading="lazy" />
+                                        </div>
+                                        <div class="app-card-info">
+                                            <div class="app-card-title">One Piece</div>
+                                            <div class="app-card-meta">
+                                                <span class="app-card-rating"><ion-icon name="star"></ion-icon> 9</span>
+                                                <span>1999</span>
+                                                <span>23 Seasons</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 6. Ted Lasso -->
+                                    <div class="app-movie-card">
+                                        <div class="app-card-poster">
+                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg" alt="Ted Lasso" loading="lazy" />
+                                        </div>
+                                        <div class="app-card-info">
+                                            <div class="app-card-title">Ted Lasso</div>
+                                            <div class="app-card-meta">
+                                                <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.7</span>
+                                                <span>2020</span>
+                                                <span>4 Seasons</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 7. X-Men '97 -->
+                                    <div class="app-movie-card">
+                                        <div class="app-card-poster">
+                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg" alt="X-Men '97" loading="lazy" />
+                                        </div>
+                                        <div class="app-card-info">
+                                            <div class="app-card-title">X-Men '97</div>
+                                            <div class="app-card-meta">
+                                                <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.7</span>
+                                                <span>2024</span>
+                                                <span>2 Seasons</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 8. Lioness -->
+                                    <div class="app-movie-card">
+                                        <div class="app-card-poster">
+                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg" alt="Lioness" loading="lazy" />
+                                        </div>
+                                        <div class="app-card-info">
+                                            <div class="app-card-title">Lioness</div>
+                                            <div class="app-card-meta">
+                                                <span class="app-card-rating"><ion-icon name="star"></ion-icon> 6.7</span>
+                                                <span>2023</span>
+                                                <span>3 Seasons</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 9. Outer Banks -->
+                                    <div class="app-movie-card">
+                                        <div class="app-card-poster">
+                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/ovDgO2LPfwdVRfvScAqo9aMiIW.jpg" alt="Outer Banks" loading="lazy" />
+                                        </div>
+                                        <div class="app-card-info">
+                                            <div class="app-card-title">Outer Banks</div>
+                                            <div class="app-card-meta">
+                                                <span class="app-card-rating"><ion-icon name="star"></ion-icon> 7.5</span>
+                                                <span>2020</span>
+                                                <span>5 Seasons</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <button class="app-edge-arrow next" onclick="slideAppTrack('popularSeriesTrack', 1)" aria-label="Slide Right"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+                            </div>
+                        </div>
+
+                        <!-- SHELF 4: Anime Hits -->
+                        <div class="app-shelf">
+                            <div class="app-shelf-header">
+                                <div class="app-shelf-title-wrap">
+                                    <div class="app-shelf-accent-bar"></div>
+                                    <h3 class="app-shelf-title">Anime Hits</h3>
+                                </div>
+                                <div class="app-shelf-nav-arrows">
+                                    <button class="shelf-circle-btn" onclick="slideAppTrack('animeHitsTrack', -1)" aria-label="Slide Left"><ion-icon name="chevron-back-outline"></ion-icon></button>
+                                    <button class="shelf-circle-btn" onclick="slideAppTrack('animeHitsTrack', 1)" aria-label="Slide Right"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+                                </div>
+                            </div>
+                            <div class="app-cards-track" id="animeHitsTrack">
+                                <!-- 1. One Piece -->
                                 <div class="app-movie-card">
                                     <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg" alt="Reacher" loading="lazy" />
-                                        <div class="app-card-rating"><ion-icon name="star"></ion-icon> 8.7</div>
-                                        <span class="card-badge-top">4K</span>
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg" alt="One Piece" loading="lazy" />
                                     </div>
                                     <div class="app-card-info">
-                                        <div class="app-card-title">Reacher</div>
-                                        <div class="app-card-sub">2024 &bull; Season 2</div>
+                                        <div class="app-card-title">One Piece</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 9</span>
+                                            <span>1999</span>
+                                            <span>23 Seasons</span>
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- 2. Dragon Ball Z -->
                                 <div class="app-movie-card">
                                     <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg" alt="Game of Thrones" loading="lazy" />
-                                        <div class="app-card-rating"><ion-icon name="star"></ion-icon> 9.2</div>
-                                        <span class="card-badge-top">4K</span>
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/oQ5CnVj3TRifXl2bIOri6H6rfNe.jpg" alt="Dragon Ball Z" loading="lazy" />
                                     </div>
                                     <div class="app-card-info">
-                                        <div class="app-card-title">Game of Thrones</div>
-                                        <div class="app-card-sub">Complete Series</div>
+                                        <div class="app-card-title">Dragon Ball Z</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.8</span>
+                                            <span>1989</span>
+                                            <span>9 Seasons</span>
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- 3. Dragon Ball DAIMA -->
                                 <div class="app-movie-card">
                                     <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/ggFHVNu6YYI5L9pCfOacjizRGt.jpg" alt="Breaking Bad" loading="lazy" />
-                                        <div class="app-card-rating"><ion-icon name="star"></ion-icon> 9.5</div>
-                                        <span class="card-badge-top">4K</span>
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/lMULbSFZNXUC87MqOZQ4SSV9DXI.jpg" alt="Dragon Ball DAIMA" loading="lazy" />
                                     </div>
                                     <div class="app-card-info">
-                                        <div class="app-card-title">Breaking Bad</div>
-                                        <div class="app-card-sub">5 Seasons</div>
+                                        <div class="app-card-title">Dragon Ball DAIMA</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.5</span>
+                                            <span>2024</span>
+                                            <span>1 Season</span>
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- 4. Dragon Ball Super -->
                                 <div class="app-movie-card">
                                     <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/reKs8y4mPwXgOpA74UVAC7I3km2.jpg" alt="Stranger Things" loading="lazy" />
-                                        <div class="app-card-rating"><ion-icon name="star"></ion-icon> 8.6</div>
-                                        <span class="card-badge-top">4K</span>
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/qEUrbXJ2qt4Rg84Btlx4STOhgte.jpg" alt="Dragon Ball Super" loading="lazy" />
                                     </div>
                                     <div class="app-card-info">
-                                        <div class="app-card-title">Stranger Things</div>
-                                        <div class="app-card-sub">4 Seasons</div>
+                                        <div class="app-card-title">Dragon Ball Super</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 7.8</span>
+                                            <span>2015</span>
+                                            <span>1 Season</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 5. Dragon Ball GT -->
+                                <div class="app-movie-card">
+                                    <div class="app-card-poster">
+                                        <img src="https://image.tmdb.org/t/p/original/fzH3xKyIvLnq1paTrjecNyWQmRh.jpg" alt="Dragon Ball GT" loading="lazy" />
+                                    </div>
+                                    <div class="app-card-info">
+                                        <div class="app-card-title">Dragon Ball GT</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 7.5</span>
+                                            <span>1996</span>
+                                            <span>1 Season</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 6. Dragon Ball Z Kai -->
+                                <div class="app-movie-card">
+                                    <div class="app-card-poster">
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/ojsPI8fNwcecKLhVC4rB4ZZhFMc.jpg" alt="Dragon Ball Z Kai" loading="lazy" />
+                                    </div>
+                                    <div class="app-card-info">
+                                        <div class="app-card-title">Dragon Ball Z Kai</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.3</span>
+                                            <span>2009</span>
+                                            <span>6 Seasons</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 7. Naruto -->
+                                <div class="app-movie-card">
+                                    <div class="app-card-poster">
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/xppeysfvDKVx775MFuH8Z9BlpMk.jpg" alt="Naruto" loading="lazy" />
+                                    </div>
+                                    <div class="app-card-info">
+                                        <div class="app-card-title">Naruto</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.4</span>
+                                            <span>2002</span>
+                                            <span>4 Seasons</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 8. Naruto Shippuden -->
+                                <div class="app-movie-card">
+                                    <div class="app-card-poster">
+                                        <img src="https://image.tmdb.org/t/p/original/3V7kzJX7hvF0H9CDJsgcWKXTSsR.jpg" alt="Naruto Shippuden" loading="lazy" />
+                                    </div>
+                                    <div class="app-card-info">
+                                        <div class="app-card-title">Naruto Shippuden</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.7</span>
+                                            <span>2007</span>
+                                            <span>20 Seasons</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 9. Boruto: Naruto Next Gen... -->
+                                <div class="app-movie-card">
+                                    <div class="app-card-poster">
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/e0B6i48kxdRkMcK4tR4YNfXGWOc.jpg" alt="Boruto: Naruto Next Generations" loading="lazy" />
+                                    </div>
+                                    <div class="app-card-info">
+                                        <div class="app-card-title">Boruto: Naruto Next Gen...</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8</span>
+                                            <span>2017</span>
+                                            <span>1 Season</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 10. Bleach -->
+                                <div class="app-movie-card">
+                                    <div class="app-card-poster">
+                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg" alt="Bleach" loading="lazy" />
+                                    </div>
+                                    <div class="app-card-info">
+                                        <div class="app-card-title">Bleach</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.4</span>
+                                            <span>2004</span>
+                                            <span>9 Seasons</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 11. My Hero Academi... -->
+                                <div class="app-movie-card">
+                                    <div class="app-card-poster">
+                                        <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/phuYuzqWW9ru8EA3HVjE9W2Rr3M.jpg" alt="My Hero Academia" loading="lazy" />
+                                    </div>
+                                    <div class="app-card-info">
+                                        <div class="app-card-title">My Hero Academi...</div>
+                                        <div class="app-card-meta">
+                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.6</span>
+                                            <span>2016</span>
+                                            <span>7 Seasons</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
