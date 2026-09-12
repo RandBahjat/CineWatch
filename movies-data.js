@@ -54,7 +54,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "The Runner",
+    title: "Drawn Together",
     type: "Movie",
     year: 2026,
     rating: 4.3,
