@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Download CineWatch for Windows - Free, Ultra-Fast & Ad-Free Streaming</title>
+    <title>Download CineWatch for Windows - Free, Fast & Ad-Free HD Streaming</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -102,6 +102,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            position: relative;
         }
 
         /* ── Premium Go Back Button ── */
@@ -151,8 +152,11 @@
             transform: translateY(0) scale(0.97);
         }
 
-        /* Brand Logo */
+        /* Brand Logo Centered */
         .brand-logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
             display: flex;
             align-items: center;
             gap: 0.6rem;
@@ -167,7 +171,7 @@
 
         .brand-logo:hover {
             opacity: 0.95;
-            transform: scale(1.02);
+            transform: translateX(-50%) scale(1.02);
         }
 
         .brand-logo ion-icon {
@@ -180,30 +184,8 @@
             color: var(--primary);
         }
 
-        .nav-actions {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .btn-nav-ghost {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 0.6rem 1.1rem;
-            color: var(--text-muted);
-            font-size: 0.88rem;
-            font-weight: 500;
-            text-decoration: none;
-            border-radius: 10px;
-            border: 1px solid transparent;
-            transition: all 0.3s var(--ease-spring);
-        }
-
-        .btn-nav-ghost:hover {
-            color: #ffffff;
-            background: rgba(255, 255, 255, 0.06);
-            border-color: rgba(255, 255, 255, 0.1);
+        .nav-spacer {
+            width: 110px;
         }
 
         /* ── Main Container ── */
@@ -262,10 +244,10 @@
 
         .hero-title {
             font-family: 'Outfit', sans-serif;
-            font-size: clamp(2.8rem, 5.5vw, 4.6rem);
+            font-size: clamp(2.6rem, 5vw, 4.4rem);
             font-weight: 900;
-            line-height: 1.08;
-            letter-spacing: -1.8px;
+            line-height: 1.1;
+            letter-spacing: -1.5px;
             color: #ffffff;
             margin-bottom: 1.4rem;
             animation: fadeInUp 0.8s var(--ease-spring) 0.1s both;
@@ -279,22 +261,20 @@
         }
 
         .hero-subtitle {
-            font-size: clamp(1.05rem, 2vw, 1.22rem);
+            font-size: clamp(1.05rem, 2vw, 1.2rem);
             color: var(--text-muted);
             line-height: 1.65;
-            max-width: 660px;
+            max-width: 650px;
             margin-bottom: 3rem;
             font-weight: 400;
             animation: fadeInUp 0.8s var(--ease-spring) 0.2s both;
         }
 
-        /* ── Button Group (Premium CTA Hub) ── */
+        /* ── Hero Download Button Hub ── */
         .hero-cta-group {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 1.3rem;
-            flex-wrap: wrap;
             margin-bottom: 2rem;
             animation: fadeInUp 0.8s var(--ease-spring) 0.3s both;
         }
@@ -304,7 +284,7 @@
             display: inline-flex;
             align-items: center;
             gap: 16px;
-            padding: 1.1rem 2.4rem;
+            padding: 1.15rem 2.6rem;
             background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
             border: 1px solid rgba(255, 255, 255, 0.9);
             border-radius: 14px;
@@ -349,14 +329,14 @@
         }
 
         .btn-icon-wrap {
-            width: 40px;
-            height: 40px;
+            width: 42px;
+            height: 42px;
             border-radius: 10px;
             background: rgba(0, 0, 0, 0.07);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.45rem;
+            font-size: 1.5rem;
             color: #0f172a;
             transition: transform 0.35s var(--ease-spring);
         }
@@ -376,7 +356,7 @@
 
         .btn-text-main {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.15rem;
+            font-size: 1.18rem;
             font-weight: 800;
             letter-spacing: -0.3px;
             display: flex;
@@ -426,7 +406,7 @@
         }
 
         .btn-premium-glass:hover ion-icon {
-            transform: scale(1.15);
+            transform: translateX(-3px);
         }
 
         .btn-premium-glass:active {
@@ -715,7 +695,7 @@
             position: relative;
             overflow: hidden;
             box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6), 0 0 40px rgba(229, 9, 20, 0.15);
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
         }
 
         .bottom-cta-title {
@@ -741,84 +721,6 @@
             justify-content: center;
             gap: 1.2rem;
             flex-wrap: wrap;
-        }
-
-        /* ── Footer ── */
-        .footer {
-            width: 100%;
-            border-top: 1px solid var(--border-subtle);
-            padding: 3rem 1.75rem 4rem;
-            background: #030406;
-        }
-
-        .footer-container {
-            max-width: 1240px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-        }
-
-        .footer-brand {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.3rem;
-            font-weight: 800;
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        .footer-brand ion-icon {
-            color: var(--primary);
-            font-size: 1.4rem;
-        }
-
-        .footer-copy {
-            font-size: 0.85rem;
-            color: var(--text-dim);
-        }
-
-        .footer-links {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-        }
-
-        .footer-link {
-            color: var(--text-muted);
-            text-decoration: none;
-            font-size: 0.86rem;
-            transition: color 0.25s ease;
-        }
-
-        .footer-link:hover {
-            color: #ffffff;
-        }
-
-        /* Back to top button */
-        .btn-top {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--border-subtle);
-            color: var(--text-muted);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.35s var(--ease-spring);
-        }
-
-        .btn-top:hover {
-            background: var(--primary-soft);
-            border-color: var(--primary);
-            color: #ffffff;
-            transform: translateY(-3px);
         }
 
         /* ── Keyframe Animations ── */
@@ -858,6 +760,16 @@
             .navbar {
                 height: 66px;
             }
+            .brand-logo {
+                position: static;
+                transform: none;
+            }
+            .brand-logo:hover {
+                transform: scale(1.02);
+            }
+            .nav-spacer {
+                display: none;
+            }
             .main-content {
                 padding: 3rem 1.25rem 4rem;
             }
@@ -865,7 +777,6 @@
                 grid-template-columns: 1fr;
             }
             .hero-cta-group {
-                flex-direction: column;
                 width: 100%;
             }
             .btn-premium-download,
@@ -878,11 +789,6 @@
             }
             .bottom-cta-banner {
                 padding: 3rem 1.5rem;
-            }
-            .footer-container {
-                flex-direction: column;
-                text-align: center;
-                gap: 1.2rem;
             }
         }
     </style>
@@ -902,19 +808,14 @@
                 <span>Go Back</span>
             </button>
 
-            <!-- Brand Logo -->
+            <!-- Brand Logo Centered -->
             <a href="index.html" class="brand-logo" title="CineWatch Home">
                 <ion-icon name="ticket"></ion-icon>
                 <span>Cine<span class="accent">Watch</span></span>
             </a>
 
-            <!-- Right Actions -->
-            <div class="nav-actions">
-                <a href="index.html" class="btn-nav-ghost" title="Open CineWatch Web Player">
-                    <ion-icon name="globe-outline"></ion-icon>
-                    <span>Web Version</span>
-                </a>
-            </div>
+            <!-- Right Spacer for Perfect Centering -->
+            <div class="nav-spacer"></div>
         </div>
     </nav>
 
@@ -931,13 +832,13 @@
 
             <!-- Title -->
             <h1 class="hero-title">
-                The Ultimate Cinematic Experience.
-                <span class="gradient-text">Engineered for Windows.</span>
+                Watch Movies, Series &amp; Anime.
+                <span class="gradient-text">Streamlined for Windows.</span>
             </h1>
 
             <!-- Subtitle -->
             <p class="hero-subtitle">
-                Experience an ultra-fast, native streaming hub built directly for PC. Stream thousands of 4K HDR movies, series, and anime with zero ads, synchronized watch parties, and hardware-accelerated fluid playback.
+                Experience a fast, native streaming hub built specifically for your PC. Watch thousands of HD movies, TV shows, and anime with zero ads, seamless playback, and synchronized watch parties.
             </p>
 
             <!-- Premium CTA Hub -->
@@ -955,12 +856,6 @@
                         <span class="btn-text-sub">v1.2.6 • Free & Safe Installer • 84.5 MB</span>
                     </div>
                 </a>
-
-                <!-- Secondary Web Player Button -->
-                <a href="index.html" class="btn-premium-glass" title="Stream directly in your browser">
-                    <ion-icon name="play-circle-outline"></ion-icon>
-                    <span>Launch Web Player</span>
-                </a>
             </div>
 
             <!-- Trust & Verification Badges -->
@@ -977,10 +872,6 @@
                     <ion-icon name="checkmark-circle"></ion-icon>
                     <span>100% Free & No Ads</span>
                 </div>
-                <div class="trust-item">
-                    <ion-icon name="sync-outline"></ion-icon>
-                    <span>Silent Auto-Updates</span>
-                </div>
             </div>
         </section>
 
@@ -990,9 +881,9 @@
         <!-- Features Bento Grid -->
         <section class="features-section" id="features">
             <div class="section-header">
-                <span class="section-eyebrow">Peak Engineering</span>
-                <h2 class="section-title">Built for Performance & Immersion</h2>
-                <p class="section-desc">Every element of CineWatch for desktop has been tuned for fluid playback, minimal CPU overhead, and cinema-grade aesthetics.</p>
+                <span class="section-eyebrow">Peak Performance</span>
+                <h2 class="section-title">Built for Speed & Immersion</h2>
+                <p class="section-desc">Every element of CineWatch for desktop has been tuned for fluid HD playback, minimal CPU overhead, and clean aesthetics.</p>
             </div>
 
             <div class="features-grid">
@@ -1001,8 +892,8 @@
                     <div class="feature-icon-box">
                         <ion-icon name="sparkles-outline"></ion-icon>
                     </div>
-                    <h3 class="feature-title">Native 4K & HDR Decoding</h3>
-                    <p class="feature-text">Hardware-accelerated rendering unlocks silky smooth 60fps playback with true color contrast and zero frame drops.</p>
+                    <h3 class="feature-title">Fluid HD Streaming</h3>
+                    <p class="feature-text">Hardware-accelerated rendering unlocks smooth 60fps playback with crisp HD video quality and zero frame drops.</p>
                 </div>
 
                 <!-- Feature 2 -->
@@ -1075,7 +966,7 @@
                     <div class="spec-item">
                         <span class="spec-label">System Memory</span>
                         <span class="spec-value">4 GB RAM</span>
-                        <span class="spec-sub">8 GB recommended for 4K</span>
+                        <span class="spec-sub">Smooth multitasking</span>
                     </div>
                     <div class="spec-item">
                         <span class="spec-label">Disk Storage</span>
@@ -1121,7 +1012,7 @@
         <!-- Bottom Callout Banner -->
         <section class="bottom-cta-banner">
             <h2 class="bottom-cta-title">Upgrade Your Viewing Experience Today</h2>
-            <p class="bottom-cta-desc">Join thousands of cinema lovers enjoying cinema-quality entertainment with zero ads and unmatched speeds.</p>
+            <p class="bottom-cta-desc">Enjoy high-speed, ad-free streaming with instant playback and watch together sessions.</p>
             <div class="bottom-btn-group">
                 <a href="CineWatch-Setup.exe" class="btn-premium-download" download title="Download CineWatch Setup for Windows">
                     <div class="btn-icon-wrap">
@@ -1144,30 +1035,6 @@
         </section>
 
     </main>
-
-    <!-- Professional Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <a href="index.html" class="footer-brand">
-                <ion-icon name="ticket"></ion-icon>
-                <span>CineWatch</span>
-            </a>
-
-            <div class="footer-copy">
-                &copy; 2026 CineWatch. All rights reserved. Free, personal streaming hub.
-            </div>
-
-            <div class="footer-links">
-                <a href="index.html" class="footer-link">Home</a>
-                <a href="index.html#explore" class="footer-link">Explore</a>
-                <a href="#features" class="footer-link">Features</a>
-                <a href="#requirements" class="footer-link">Requirements</a>
-                <button class="btn-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Back to top" aria-label="Back to top">
-                    <ion-icon name="chevron-up-outline"></ion-icon>
-                </button>
-            </div>
-        </div>
-    </footer>
 
     <!-- Interactive Navigation Scripts -->
     <script>
