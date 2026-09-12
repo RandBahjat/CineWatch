@@ -25891,4 +25891,664 @@ window._ANIME_DATA = [
         }
     ]
 }
+,
+  {
+    title: "Yu-Gi-Oh! 5D's",
+    type: "TV Show",
+    isAnime: true,
+    year: 2008,
+    rating: 8.1,
+    age: "TV-Y7",
+    duration: "24m",
+    genres: [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Sci-Fi",
+        "Fantasy"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1fareX2gQVmpcxoPFHLAHu3ljld.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/skDqFjFqGtPIqcwLkqzqV4aSlCb.jpg",
+    videoUrl: "20695",
+    malId: 4343,
+    trailerUrl: "https://youtu.be/0_Vg_f4Z3Bg?si=g7B2z1U5iZ0Zg0_V",
+    anilistId: 4343,
+    animeSlug: "yu-gi-oh-5ds",
+    overview: "Welcome to New Domino City! Once the playground to legendary duelist Yugi Muto, this sprawling metropolis has since been transformed into a futuristic society where dueling has kicked into overdrive. With recent technological advancements made by KaibaCorp, dueling has undergone a metamorphosis that has revolutionized the makeup and pace of the game! It’s now a heart-pounding, adrenaline-filled and fuel injected competition where duelists ride supercharged hyper cycles called Duel Runners and battle it out in hi-octane contests called “Turbo Duels.”",
+    overviewKurdish: "بەخێربێن بۆ شاری نیو دۆمینۆ! ئەم شارە گەورەیە کە سەردەمانێک مەیدانی یاریزانە ئەفسانەییەکە یووگی مووتۆ بوو، ئێستا گۆڕاوە بۆ کۆمەڵگەیەکی پێشکەوتووی سەردەمی کە دوێڵکردن تێیدا گەیشتووەتە لووتکە. لەگەڵ پێشکەوتنی تەکنەلۆژیای کۆمپانیای کایباکۆڕپ، دوێڵکردن گۆڕانکارییەکی گەورەی بەسەردا هاتووە. ئێستا پێشبڕکێیەکی پڕ لە جۆش و خرۆش و خێرایە کە دوێڵستەکان سواری ماتۆڕسکیلی بەهێزی تایبەت بە ناوی دوێڵ ڕەنەرز دەبن و لە کێبڕکێی خێرا و سەرسوڕهێنەردا بە ناوی 'تۆربۆ دوێڵز' ڕووبەڕووی یەکتر دەبنەوە.",
+    director: "Katsumi Ono",
+    cast: [
+        "Yuya Miyashita",
+        "Takanori Hoshino",
+        "Aki Kanada",
+        "Yuka Terasaki",
+        "Ayumi Kinoshita"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+        {
+            season: 1,
+            episodes: [
+                {
+                    episode: 1,
+                    title: "On Your Mark, Get Set, Duel!"
+                },
+                {
+                    episode: 2,
+                    title: "Creepy Crawlies"
+                },
+                {
+                    episode: 3,
+                    title: "Pipe Dreams"
+                },
+                {
+                    episode: 4,
+                    title: "A Blast from the Past (1)"
+                },
+                {
+                    episode: 5,
+                    title: "A Blast from the Past (2)"
+                },
+                {
+                    episode: 6,
+                    title: "The Facility (1)"
+                },
+                {
+                    episode: 7,
+                    title: "The Facility (2)"
+                },
+                {
+                    episode: 8,
+                    title: "Fire It Up!"
+                },
+                {
+                    episode: 9,
+                    title: "The Lockdown Duel (1)"
+                },
+                {
+                    episode: 10,
+                    title: "The Lockdown Duel (2)"
+                },
+                {
+                    episode: 11,
+                    title: "The Take Back (1)"
+                },
+                {
+                    episode: 12,
+                    title: "The Take Back (2)"
+                },
+                {
+                    episode: 13,
+                    title: "A Duel to Remember"
+                },
+                {
+                    episode: 14,
+                    title: "Bloom of the Black Rose"
+                },
+                {
+                    episode: 15,
+                    title: "Welcome to the Fortune Cup"
+                },
+                {
+                    episode: 16,
+                    title: "Battle with the Black Rose"
+                },
+                {
+                    episode: 17,
+                    title: "Surprise, Surprise"
+                },
+                {
+                    episode: 18,
+                    title: "Return to the Spirit World (1)"
+                },
+                {
+                    episode: 19,
+                    title: "Return to the Spirit World (2)"
+                },
+                {
+                    episode: 20,
+                    title: "Second Round Showdown (1)"
+                },
+                {
+                    episode: 21,
+                    title: "Second Round Showdown (2)"
+                },
+                {
+                    episode: 22,
+                    title: "The Profiler"
+                },
+                {
+                    episode: 23,
+                    title: "Duel of the Dragons (1)"
+                },
+                {
+                    episode: 24,
+                    title: "Duel of the Dragons (2)"
+                },
+                {
+                    episode: 25,
+                    title: "The Fortune Cup Finale (1)"
+                },
+                {
+                    episode: 26,
+                    title: "The Fortune Cup Finale (2)"
+                },
+                {
+                    episode: 27,
+                    title: "A Web of Deceit (1)"
+                },
+                {
+                    episode: 28,
+                    title: "A Web of Deceit (2)"
+                },
+                {
+                    episode: 29,
+                    title: "Good Cop, Bad Cop"
+                },
+                {
+                    episode: 30,
+                    title: "Fight or Flight"
+                },
+                {
+                    episode: 31,
+                    title: "The Reunion Duel"
+                },
+                {
+                    episode: 32,
+                    title: "Dark Signs (1)"
+                },
+                {
+                    episode: 33,
+                    title: "Dark Signs (2)"
+                },
+                {
+                    episode: 34,
+                    title: "Dark Signs (3)"
+                },
+                {
+                    episode: 35,
+                    title: "Dark Signs (4)"
+                },
+                {
+                    episode: 36,
+                    title: "Supersensory Shakedown"
+                },
+                {
+                    episode: 37,
+                    title: "Digging Deeper (1)"
+                },
+                {
+                    episode: 38,
+                    title: "Digging Deeper (2)"
+                },
+                {
+                    episode: 39,
+                    title: "Digging Deeper (3)"
+                },
+                {
+                    episode: 40,
+                    title: "Clash of the Dragons (1)"
+                },
+                {
+                    episode: 41,
+                    title: "Clash of the Dragons (2)"
+                },
+                {
+                    episode: 42,
+                    title: "The Signs of Time"
+                },
+                {
+                    episode: 43,
+                    title: "Surely, You Jest (1)"
+                },
+                {
+                    episode: 44,
+                    title: "Surely, You Jest (2)"
+                },
+                {
+                    episode: 45,
+                    title: "Mark of the Spider (1)"
+                },
+                {
+                    episode: 46,
+                    title: "Mark of the Spider (2)"
+                },
+                {
+                    episode: 47,
+                    title: "Mark of the Monkey (1)"
+                },
+                {
+                    episode: 48,
+                    title: "Mark of the Monkey (2)"
+                },
+                {
+                    episode: 49,
+                    title: "Mark of the Monkey (3)"
+                },
+                {
+                    episode: 50,
+                    title: "Mark of the Monkey (4)"
+                },
+                {
+                    episode: 51,
+                    title: "A Whale of a Ride (1)"
+                },
+                {
+                    episode: 52,
+                    title: "A Whale of a Ride (2)"
+                },
+                {
+                    episode: 53,
+                    title: "A Whale of a Ride (3)"
+                },
+                {
+                    episode: 54,
+                    title: "A Score to Settle (1)"
+                },
+                {
+                    episode: 55,
+                    title: "A Score to Settle (2)"
+                },
+                {
+                    episode: 56,
+                    title: "Destiny's Will (1)"
+                },
+                {
+                    episode: 57,
+                    title: "Destiny's Will (2)"
+                },
+                {
+                    episode: 58,
+                    title: "Shadows of Doubt (1)"
+                },
+                {
+                    episode: 59,
+                    title: "Shadows of Doubt (2)"
+                },
+                {
+                    episode: 60,
+                    title: "Truth and Consequences (1)"
+                },
+                {
+                    episode: 61,
+                    title: "Truth and Consequences (2)"
+                },
+                {
+                    episode: 62,
+                    title: "Signs of Doom (1)"
+                },
+                {
+                    episode: 63,
+                    title: "Signs of Doom (2)"
+                },
+                {
+                    episode: 64,
+                    title: "Signs of Doom (3)"
+                },
+                {
+                    episode: 65,
+                    title: "A New Threat (1)"
+                },
+                {
+                    episode: 66,
+                    title: "A New Threat (2)"
+                },
+                {
+                    episode: 67,
+                    title: "Lessons Learned"
+                },
+                {
+                    episode: 68,
+                    title: "Trash Talk"
+                },
+                {
+                    episode: 69,
+                    title: "A Duel With Interest"
+                },
+                {
+                    episode: 70,
+                    title: "The Wicked Spirit"
+                },
+                {
+                    episode: 71,
+                    title: "French Twist (1)"
+                },
+                {
+                    episode: 72,
+                    title: "French Twist (2)"
+                },
+                {
+                    episode: 73,
+                    title: "Synchro Straits"
+                },
+                {
+                    episode: 74,
+                    title: "Synchro Solution"
+                },
+                {
+                    episode: 75,
+                    title: "Acceleration"
+                },
+                {
+                    episode: 76,
+                    title: "Syd Is Vicious"
+                },
+                {
+                    episode: 77,
+                    title: "Dawn of the Duel Board (1)"
+                },
+                {
+                    episode: 78,
+                    title: "Dawn of the Duel Board (2)"
+                },
+                {
+                    episode: 79,
+                    title: "Putting It All Together"
+                },
+                {
+                    episode: 80,
+                    title: "The Super Genius"
+                },
+                {
+                    episode: 81,
+                    title: "Get With the Program (1)"
+                },
+                {
+                    episode: 82,
+                    title: "Get With the Program (2)"
+                },
+                {
+                    episode: 83,
+                    title: "Will the Real Jack Atlas, Please Stand Up (1)"
+                },
+                {
+                    episode: 84,
+                    title: "Will the Real Jack Atlas, Please Stand Up (2)"
+                },
+                {
+                    episode: 85,
+                    title: "Mother Knows Best"
+                },
+                {
+                    episode: 86,
+                    title: "Duelist for Hire"
+                },
+                {
+                    episode: 87,
+                    title: "Showdown at Sundown (1)"
+                },
+                {
+                    episode: 88,
+                    title: "Showdown at Sundown (2)"
+                },
+                {
+                    episode: 89,
+                    title: "The Race to Escape (1)"
+                },
+                {
+                    episode: 90,
+                    title: "The Race to Escape (2)"
+                },
+                {
+                    episode: 91,
+                    title: "Clash at Crash Town (1)"
+                },
+                {
+                    episode: 92,
+                    title: "Clash at Crash Town (2)"
+                },
+                {
+                    episode: 93,
+                    title: "The Question of the Card"
+                },
+                {
+                    episode: 94,
+                    title: "Keeping a Promise (1)"
+                },
+                {
+                    episode: 95,
+                    title: "Keeping a Promise (2)"
+                },
+                {
+                    episode: 96,
+                    title: "Natural Instincts (1)"
+                },
+                {
+                    episode: 97,
+                    title: "Natural Instincts (2)"
+                },
+                {
+                    episode: 98,
+                    title: "Power Plays"
+                },
+                {
+                    episode: 99,
+                    title: "Trouble for Team 5D's"
+                },
+                {
+                    episode: 100,
+                    title: "The Edge of Elimination (1)"
+                },
+                {
+                    episode: 101,
+                    title: "The Edge of Elimination (2)"
+                },
+                {
+                    episode: 102,
+                    title: "The Edge of Elimination (3)"
+                },
+                {
+                    episode: 103,
+                    title: "Party Crashers"
+                },
+                {
+                    episode: 104,
+                    title: "Knight Takes Pawn"
+                },
+                {
+                    episode: 105,
+                    title: "Rook Takes Knight"
+                },
+                {
+                    episode: 106,
+                    title: "Primo’s Plan (1)"
+                },
+                {
+                    episode: 107,
+                    title: "Primo's Plan (2)"
+                },
+                {
+                    episode: 108,
+                    title: "Primo's Plan (3)"
+                },
+                {
+                    episode: 109,
+                    title: "Primo's Plan (4)"
+                },
+                {
+                    episode: 110,
+                    title: "Primo's Plan (5)"
+                },
+                {
+                    episode: 111,
+                    title: "The Ancient Land - To Nazca!"
+                },
+                {
+                    episode: 112,
+                    title: "The Crimson Devil"
+                },
+                {
+                    episode: 113,
+                    title: "Burning Seething Soul! Scarlet Nova Dragon"
+                },
+                {
+                    episode: 114,
+                    title: "Operation Capture Jaeger II"
+                },
+                {
+                    episode: 115,
+                    title: "Press Him About The Mystery! The Endgame Riding Duel!!"
+                },
+                {
+                    episode: 116,
+                    title: "Momentum Express Development Agency"
+                },
+                {
+                    episode: 117,
+                    title: "The Distorted Past"
+                },
+                {
+                    episode: 118,
+                    title: "The New Rivals"
+                },
+                {
+                    episode: 119,
+                    title: "The Invincible Scrum! Smash The Unbreakable Defense!"
+                },
+                {
+                    episode: 120,
+                    title: "Tie those Feelings! The Hand Tied to the Majin!"
+                },
+                {
+                    episode: 121,
+                    title: "The Miraculous Trump Card - Sleeping Giant Zushin!"
+                },
+                {
+                    episode: 122,
+                    title: "Believe in the Power! The Strongest Giant Zushin vs Shooting Star Dragon"
+                },
+                {
+                    episode: 123,
+                    title: "Eyes on the Prize"
+                },
+                {
+                    episode: 124,
+                    title: "Duel For Redemption"
+                },
+                {
+                    episode: 125,
+                    title: "Soul Solution"
+                },
+                {
+                    episode: 126,
+                    title: "When Nordic Gods Attack"
+                },
+                {
+                    episode: 127,
+                    title: "Tricking The Trickster"
+                },
+                {
+                    episode: 128,
+                    title: "Yusei's Last Stand"
+                },
+                {
+                    episode: 129,
+                    title: "Fight to the Finish Line"
+                },
+                {
+                    episode: 130,
+                    title: "Bound To The Future, Bonds To Our Companions"
+                },
+                {
+                    episode: 131,
+                    title: "The Beginning of the End"
+                },
+                {
+                    episode: 132,
+                    title: "Dawn of the Machines"
+                },
+                {
+                    episode: 133,
+                    title: "Against All Odds"
+                },
+                {
+                    episode: 134,
+                    title: "For Synchro's Sake"
+                },
+                {
+                    episode: 135,
+                    title: "Flight for the Future (1)"
+                },
+                {
+                    episode: 136,
+                    title: "Flight for the Future (2)"
+                },
+                {
+                    episode: 137,
+                    title: "An Approaching Terror - The Citadel of God"
+                },
+                {
+                    episode: 138,
+                    title: "The Path to the Future - The Rainbow Bridge Bifrost!"
+                },
+                {
+                    episode: 139,
+                    title: "The Enchanting Field! École de Zone"
+                },
+                {
+                    episode: 140,
+                    title: "The Soul-Binding Gate! The Forbidden Future!"
+                },
+                {
+                    episode: 141,
+                    title: "The Duel of Despair! Fortissimo the Moving Fortress!"
+                },
+                {
+                    episode: 142,
+                    title: "A Life-or-Death Battle! Machine Divine Emperor Dragon Asterisk"
+                },
+                {
+                    episode: 143,
+                    title: "The Miracle of Life"
+                },
+                {
+                    episode: 144,
+                    title: "Death Battle for the Future! The Beginning of the End"
+                },
+                {
+                    episode: 145,
+                    title: "Faster Than Light!!"
+                },
+                {
+                    episode: 146,
+                    title: "The Last Human , Z-One"
+                },
+                {
+                    episode: 147,
+                    title: "A Hope for the Future!"
+                },
+                {
+                    episode: 148,
+                    title: "Just One Chance to Turn It All Around"
+                },
+                {
+                    episode: 149,
+                    title: "The Revived Hero"
+                },
+                {
+                    episode: 150,
+                    title: "Feelings Entrusted from my Father"
+                },
+                {
+                    episode: 151,
+                    title: "Clustering Wishes"
+                },
+                {
+                    episode: 152,
+                    title: "Moving Towards the Future"
+                },
+                {
+                    episode: 153,
+                    title: "Clashing Souls!"
+                },
+                {
+                    episode: 154,
+                    title: "Shining Forth to the Future"
+                }
+            ]
+        }
+    ]
+}
 ];
