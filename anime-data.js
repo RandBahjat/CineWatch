@@ -25133,7 +25133,7 @@ window._ANIME_DATA = [
     isAnime: true,
     year: 2004,
     rating: 6.9,
-    age: "TV-Y7",
+    age: "TV-PG",
     duration: "24m",
     genres: [
         "Animation",
