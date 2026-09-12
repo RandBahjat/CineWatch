@@ -11,8 +11,8 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260908_388">
-    <link rel="stylesheet" href="browse-fix.css?v=20260908_388">
+    <link rel="stylesheet" href="movie.css?v=20260908_389">
+    <link rel="stylesheet" href="browse-fix.css?v=20260908_389">
     <link rel="stylesheet" href="security-gate.css?v=cf_turnstile_v3">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,10 +29,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_6314" defer></script>
-    <script src="series-data.js?v=20260818_6314" defer></script>
-    <script src="anime-data.js?v=20260818_6314" defer></script>
-    <script src="movie.js?v=20260908_388" defer></script>
+    <script src="movies-data.js?v=20260818_6315" defer></script>
+    <script src="series-data.js?v=20260818_6315" defer></script>
+    <script src="anime-data.js?v=20260818_6315" defer></script>
+    <script src="movie.js?v=20260908_389" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -60,79 +60,80 @@
           // Skip gate on localhost / local development
           var host = window.location.hostname;
           var isLocal = host === 'localhost' || host === '127.0.0.1' || host === '' || window.location.protocol === 'file:';
-          if (!isLocal) {
-            document.documentElement.classList.add('cw-security-pending');
-          }
-        } catch(e) {}
-      })();
-
-      window.onCloudflareVerify = function(token) {
-        var banner = document.getElementById('cfSuccessBanner');
-        if (banner) banner.style.display = 'flex';
-        var gate = document.getElementById('cwSecurityGatekeeper');
-        if (gate) {
-          setTimeout(function() {
-            gate.style.transition = 'opacity 0.4s ease, visibility 0.4s ease';
-            gate.style.opacity = '0';
-            gate.style.visibility = 'hidden';
-            document.documentElement.classList.remove('cw-security-pending');
-            setTimeout(function() { gate.remove(); }, 400);
-          }, 650);
+        var isVerified = false;
+        try { isVerified = sessionStorage.getItem('cw_cf_verified') === 'true'; } catch(e) {}
+        if (!isLocal && !isVerified) {
+          document.documentElement.classList.add('cw-security-pending');
         }
-      };
-    </script>
+      } catch(e) {}
+    })();
 
+    window.onCloudflareVerify = function(token) {
+      try { sessionStorage.setItem('cw_cf_verified', 'true'); } catch(e) {}
+      var banner = document.getElementById('cfSuccessBanner');
+      if (banner) banner.style.display = 'flex';
+      var gate = document.getElementById('cwSecurityGatekeeper');
+      if (gate) {
+        setTimeout(function() {
+          gate.style.transition = 'opacity 0.4s ease, visibility 0.4s ease';
+          gate.style.opacity = '0';
+          gate.style.visibility = 'hidden';
+          document.documentElement.classList.remove('cw-security-pending');
+          setTimeout(function() { gate.remove(); }, 400);
+        }, 650);
+      }
+    };
+  </script>
 
+  <div id="cwSecurityGatekeeper">
+    <div class="cf-challenge-container">
 
-    <div id="cwSecurityGatekeeper">
-      <div class="cf-challenge-container">
+      <!-- CineWatch Logo — matches site navbar exactly -->
+      <div class="cf-site-title">
+        <div class="cf-site-icon">
+          <ion-icon name="ticket"></ion-icon>
+        </div>
+        <span class="cf-brand-text">Cine<span>Watch</span></span>
+      </div>
 
-        <!-- CineWatch Logo — matches site navbar exactly -->
-        <div class="cf-site-title">
-          <div class="cf-site-icon">
-            <ion-icon name="ticket"></ion-icon>
+      <!-- Accent divider -->
+      <div class="cf-divider"></div>
+
+      <!-- Title -->
+      <h1 class="cf-heading">Verify you are human</h1>
+      <p class="cf-subtext">Complete the security check to continue to CineWatch.</p>
+
+      <!-- Success Banner -->
+      <div class="cf-success-banner" id="cfSuccessBanner">
+        <ion-icon name="checkmark-circle" style="font-size: 1.15rem;"></ion-icon>
+        <span>Verification successful! Entering CineWatch...</span>
+      </div>
+
+      <!-- Real Cloudflare Turnstile Widget -->
+      <div class="cf-turnstile-wrapper">
+        <div class="cf-turnstile" id="cfTurnstileBox" data-sitekey="0x4AAAAAAEYq2FBWTuFz8998" data-theme="dark" data-callback="onCloudflareVerify"></div>
+      </div>
+
+      <!-- Security note -->
+      <p class="cf-explanation">
+        cinewatch.watch needs to review your connection security before proceeding.
+      </p>
+
+      <!-- Cloudflare Footer -->
+      <div class="cf-footer">
+        <div class="cf-footer-row">
+          <span class="cf-ray-id" id="cfRayId">Ray ID: <code id="cfRayCode">—</code></span>
+          <div class="cf-attribution">
+            Performance &amp; security by
+            <a href="https://www.cloudflare.com?utm_source=challenge&utm_campaign=m" target="_blank" rel="noopener noreferrer">
+              <svg class="cf-logo-svg" width="22" height="14" style="width: 22px; height: 14px; max-width: 22px; max-height: 14px; vertical-align: middle; display: inline-block;" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#F38020" d="M37.5 17c-.3-4-3.5-7.2-7.5-7.2-1 0-2 .2-2.9.6C26 7.7 23.3 5.8 20 5.8c-4.4 0-8 3.6-8 8 0 .5.1 1 .2 1.4C10.4 15.8 8 18.9 8 22.5c0 4.9 4 8.9 8.9 8.9h21.6c4.4 0 8-3.6 8-8 0-3.8-2.6-6.9-6.2-7.8-.3-.6-.6-1.1-1-1.6z"/>
+              </svg>
+              Cloudflare
+            </a>
           </div>
-          <span class="cf-brand-text">Cine<span>Watch</span></span>
         </div>
-
-        <!-- Accent divider -->
-        <div class="cf-divider"></div>
-
-        <!-- Title -->
-        <h1 class="cf-heading">Verify you are human</h1>
-        <p class="cf-subtext">Complete the security check to continue to CineWatch.</p>
-
-        <!-- Success Banner -->
-        <div class="cf-success-banner" id="cfSuccessBanner">
-          <ion-icon name="checkmark-circle" style="font-size: 1.15rem;"></ion-icon>
-          <span>Verification successful! Entering CineWatch...</span>
-        </div>
-
-        <!-- Real Cloudflare Turnstile Widget -->
-        <div class="cf-turnstile-wrapper">
-          <div class="cf-turnstile" id="cfTurnstileBox" data-sitekey="0x4AAAAAAEYq2FBWTuFz8998" data-theme="dark" data-callback="onCloudflareVerify"></div>
-        </div>
-
-        <!-- Security note -->
-        <p class="cf-explanation">
-          cinewatch.watch needs to review your connection security before proceeding.
-        </p>
-
-        <!-- Cloudflare Footer -->
-        <div class="cf-footer">
-          <div class="cf-footer-row">
-            <span class="cf-ray-id" id="cfRayId">Ray ID: <code id="cfRayCode">—</code></span>
-            <div class="cf-attribution">
-              Performance &amp; security by
-              <a href="https://www.cloudflare.com?utm_source=challenge&utm_campaign=m" target="_blank" rel="noopener noreferrer">
-                <svg class="cf-logo-svg" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#F38020" d="M37.5 17c-.3-4-3.5-7.2-7.5-7.2-1 0-2 .2-2.9.6C26 7.7 23.3 5.8 20 5.8c-4.4 0-8 3.6-8 8 0 .5.1 1 .2 1.4C10.4 15.8 8 18.9 8 22.5c0 4.9 4 8.9 8.9 8.9h21.6c4.4 0 8-3.6 8-8 0-3.8-2.6-6.9-6.2-7.8-.3-.6-.6-1.1-1-1.6z"/>
-                </svg>
-                Cloudflare
-              </a>
-            </div>
-          </div>
-        </div>
+      </div>
 
       </div>
     </div>
