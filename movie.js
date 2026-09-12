@@ -14,7 +14,7 @@ if (window.location.hash.includes("type=recovery")) {
 let FEATURED_TITLES = ["Moana(2026)","Go Team!","Mayday","The Runner","Coyote vs. Acme","Just Play Dead","Spider-Man: Brand New Day","Reacher","The Whisper Man","Grand Theft Auto VI: An Extended Look" ,
   "Drawn Together","Batman: Knightfall Part 1: Knightfall", "Mutiny", "Lanterns", "Lioness"];
 let TOP_10_TRENDING_TODAY = ["Moana(2026)",
-  "Go Team!","The Odyssey","Spider-Man: Brand New Day","Mayday" , "One Night Only","Reacher", "Spider-Man: Brand New Day","One Piece", "Lanterns", "The Odyssey"];
+  "Go Team!","The Odyssey","Spider-Man: Brand New Day","Mayday" , "One Night Only","Reacher", "Spider-Man: Brand New Day","Mutiny", "Lanterns", "The Odyssey"];
 let TRENDING_THIS_WEEK_MOVIES = ["Mayday","The Whisper Man","Batman: Knightfall Part 1: Knightfall", "Mutiny", "Spider-Man: Brand New Day", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Minions & Monsters", "The Last House", "Disclosure Day", "The Invite", "The End of Oak Street", "Backrooms", "Camp Rock 3", "Evil Dead Burn", "Just Play Dead"];
 let TRENDING_THIS_WEEK_SERIES = ["Lanterns", "Reacher", "Lucky", "Silo", "One Piece", "Ted Lasso", "X-Men '97", "Lioness", "Outer Banks"];
 const POPULAR_MOVIES = ["Mayday", "The Whisper Man", "The Odyssey", "The Runner", "Spider-Man: Brand New Day", "Spider-Man: No Way Home", "The End of Oak Street", "Disclosure Day", "Camp Rock 3", "The Last House", "Michael", "Project Hail Mary"];
