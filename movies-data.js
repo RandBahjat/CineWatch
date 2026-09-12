@@ -11,7 +11,7 @@ window._MOVIES_DATA = [
     age: "TV-MA",
     duration: "1h 33m",
     genres: [
-      "Animation",
+      "Comedy",
       "Comedy",
       "Family"
     ],
