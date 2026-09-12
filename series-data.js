@@ -19,7 +19,7 @@ window._SERIES_DATA = [
       'Thriller'
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/2mwgHfOyrFrmvozjFoEXHRdfGhv.jpg',
-    backdrop: 'https://image.tmdb.org/t/p/original/bYtQiIibQzvMeXvLMKVcZ5DlT31.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/84PKxwkBn0OoH5Qj4uq97Nua0Q9.jpg',
     videoUrl: '258230',
     trailerUrl: "https://youtu.be/M8nHySkLb64?si=ncGOGxR7J7r25Gyh",
     overview: 'Reclusive novelist Je Moon-jae wake to find identity stolen, ally with ruthless loan shark hunt down The Rat who took everything.',
