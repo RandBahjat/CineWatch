@@ -275,291 +275,226 @@
             background: rgba(255,255,255,0.05);
         }
 
-        /* Desktop Window Chrome */
+        /* ── Desktop Window Showcase (Side-by-side App Layout matching real CineWatch Desktop) ── */
         .win-chrome {
             width: 100%;
-            background: #090b10;
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 14px;
+            height: 640px;
+            background: #050608;
+            border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 35px 120px rgba(0,0,0,0.95), 0 0 0 1px rgba(255,255,255,0.05);
+            box-shadow: 0 35px 120px rgba(0,0,0,0.95), 0 0 0 1px rgba(255,255,255,0.04);
             text-align: left;
             position: relative;
+            display: flex;
         }
 
-        .win-titlebar {
-            height: 42px;
-            background: rgba(13, 16, 23, 0.98);
-            border-bottom: 1px solid rgba(255,255,255,0.07);
+        /* Desktop Sidebar (Left Navigation) */
+        .app-sidebar {
+            width: 210px;
+            height: 100%;
+            background: #07080c;
+            border-right: 1px solid rgba(255,255,255,0.06);
             display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: space-between;
-            padding: 0 14px;
-            user-select: none;
+            padding: 1.25rem 0.9rem 1.1rem;
+            flex-shrink: 0;
+            z-index: 20;
         }
-        .win-titlebar-left {
+        .sidebar-brand-box {
             display: flex;
             align-items: center;
             gap: 8px;
-            font-size: 0.78rem;
-            font-weight: 700;
-            color: #e2e8f0;
-            letter-spacing: 0.2px;
+            text-decoration: none;
+            color: #ffffff;
+            margin-bottom: 1.6rem;
+            padding-left: 0.3rem;
         }
-        .win-app-badge {
-            font-size: 0.6rem;
+        .sidebar-logo-icon {
+            color: #e50914;
+            font-size: 1.35rem;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar-brand-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.3rem;
             font-weight: 800;
-            letter-spacing: 0.8px;
-            background: rgba(229,9,20,0.18);
-            color: #ff3344;
-            border: 1px solid rgba(229,9,20,0.3);
-            padding: 2px 6px;
-            border-radius: 4px;
+            letter-spacing: -0.3px;
+            color: #ffffff;
         }
-        .win-titlebar-center {
+        .sidebar-brand-text span { color: #e50914; }
+
+        .sidebar-nav-group {
             display: flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.05);
-            border-radius: 8px;
-            padding: 4px 16px;
-            font-size: 0.72rem;
-            color: #64748b;
-            min-width: 260px;
-            justify-content: space-between;
+            flex-direction: column;
+            gap: 3px;
+            margin-bottom: 1.3rem;
         }
-        .win-titlebar-center kbd {
+        .sidebar-group-title {
             font-size: 0.62rem;
-            background: rgba(255,255,255,0.08);
-            padding: 2px 5px;
-            border-radius: 4px;
-            color: #94a3b8;
-            border: 1px solid rgba(255,255,255,0.06);
+            font-weight: 700;
+            letter-spacing: 1.8px;
+            color: #475569;
+            padding: 0 0.6rem 0.35rem;
+            text-transform: uppercase;
         }
-        .win-titlebar-controls {
+        .sidebar-nav-btn {
             display: flex;
             align-items: center;
-            gap: 1px;
-            margin-right: -10px;
+            gap: 11px;
+            padding: 0.65rem 0.8rem;
+            border-radius: 8px;
+            font-size: 0.84rem;
+            font-weight: 500;
+            color: #94a3b8;
+            background: transparent;
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: left;
+            width: 100%;
         }
-        .win-ctrl-btn {
-            width: 44px;
-            height: 38px;
-            display: inline-flex;
+        .sidebar-nav-btn ion-icon { font-size: 1.18rem; color: #94a3b8; }
+        .sidebar-nav-btn:hover {
+            color: #ffffff;
+            background: rgba(255,255,255,0.04);
+        }
+        .sidebar-nav-btn:hover ion-icon { color: #ffffff; }
+        .sidebar-nav-btn.active {
+            color: #ff3344;
+            background: rgba(229, 9, 20, 0.12);
+            border-color: rgba(229, 9, 20, 0.22);
+            font-weight: 600;
+        }
+        .sidebar-nav-btn.active ion-icon { color: #e50914; }
+
+        /* Sidebar Sign In Button */
+        .sidebar-signin-btn {
+            display: flex;
             align-items: center;
             justify-content: center;
-            background: transparent;
+            gap: 9px;
+            width: 100%;
+            padding: 0.72rem;
+            background: #e50914;
+            color: #ffffff;
             border: none;
-            color: #94a3b8;
+            border-radius: 10px;
+            font-size: 0.88rem;
+            font-weight: 700;
             cursor: pointer;
-            transition: background 0.15s, color 0.15s;
+            box-shadow: 0 4px 16px rgba(229, 9, 20, 0.35);
+            transition: all 0.25s cubic-bezier(0.2,0.8,0.2,1);
         }
-        .win-ctrl-btn:hover {
-            background: rgba(255,255,255,0.08);
-            color: #ffffff;
-        }
-        .win-ctrl-btn.close:hover {
-            background: #e81123;
-            color: #ffffff;
+        .sidebar-signin-btn:hover {
+            background: #ff1c2a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 22px rgba(229, 9, 20, 0.5);
         }
 
-        /* The App Screen Inside Desktop Window */
-        .app-viewport {
-            width: 100%;
-            height: 640px;
+        /* Desktop Main Content Area (Right Side) */
+        .app-main-viewport {
+            flex: 1;
+            height: 100%;
             overflow-y: auto;
             overflow-x: hidden;
-            background: #06070a;
+            background: #050608;
             position: relative;
             scroll-behavior: smooth;
         }
-        /* Custom scrollbar for desktop app viewport */
-        .app-viewport::-webkit-scrollbar {
-            width: 7px;
+        .app-main-viewport::-webkit-scrollbar {
+            width: 6px;
         }
-        .app-viewport::-webkit-scrollbar-track {
-            background: #06070a;
+        .app-main-viewport::-webkit-scrollbar-track {
+            background: #050608;
         }
-        .app-viewport::-webkit-scrollbar-thumb {
-            background: rgba(255,255,255,0.18);
-            border-radius: 6px;
-        }
-        .app-viewport::-webkit-scrollbar-thumb:hover {
-            background: rgba(229,9,20,0.6);
+        .app-main-viewport::-webkit-scrollbar-thumb {
+            background: rgba(255,255,255,0.14);
+            border-radius: 4px;
         }
 
-        /* Internal CineWatch Header */
-        .app-header {
-            position: sticky;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 60px;
-            background: rgba(6, 7, 10, 0.88);
-            backdrop-filter: blur(18px);
-            -webkit-backdrop-filter: blur(18px);
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+        /* Floating Window Controls (Top Right) */
+        .floating-win-ctrls {
+            position: absolute;
+            top: 14px;
+            right: 18px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            padding: 0 1.8rem;
-            z-index: 30;
+            gap: 7px;
+            z-index: 40;
         }
-        .app-header-left {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-        .app-brand {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.25rem;
-            font-weight: 800;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .app-nav-links {
-            display: flex;
-            align-items: center;
-            gap: 1.2rem;
-        }
-        .app-nav-item {
-            font-size: 0.84rem;
-            font-weight: 600;
-            color: #94a3b8;
-            cursor: pointer;
-            transition: color 0.2s;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-        .app-nav-item:hover, .app-nav-item.active {
-            color: #ffffff;
-        }
-        .app-nav-item.active {
-            color: #e50914;
-            font-weight: 700;
-        }
-        .app-browse-chip {
-            background: rgba(255,255,255,0.07);
-            border: 1px solid rgba(255,255,255,0.1);
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 0.78rem;
-            color: #e2e8f0;
-        }
-        .app-header-right {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-        }
-        .app-icon-btn {
-            background: transparent;
-            border: none;
-            color: #94a3b8;
-            font-size: 1.15rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            transition: color 0.2s;
-        }
-        .app-icon-btn:hover { color: #fff; }
-        .app-lang-pill {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: #cbd5e1;
-            background: rgba(255,255,255,0.06);
-            padding: 4px 10px;
-            border-radius: 6px;
-            border: 1px solid rgba(255,255,255,0.08);
-        }
-        .app-user-avatar {
+        .float-win-btn {
             width: 28px;
             height: 28px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #e50914, #831843);
-            display: flex;
+            background: rgba(20, 24, 34, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.08);
+            display: inline-flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.75rem;
-            font-weight: 700;
-            color: #fff;
-            border: 1.5px solid rgba(255,255,255,0.2);
+            color: #94a3b8;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .float-win-btn:hover {
+            background: rgba(255,255,255,0.15);
+            color: #ffffff;
+        }
+        .float-win-btn.close:hover {
+            background: #e50914;
+            color: #ffffff;
+            border-color: #e50914;
         }
 
-        /* App Hero Spotlight */
+        /* Desktop Hero Spotlight */
         .app-hero-spotlight {
             position: relative;
-            min-height: 330px;
+            min-height: 350px;
             display: flex;
             align-items: flex-end;
-            padding: 1.8rem 2rem 2.2rem;
+            padding: 2.2rem 2.4rem 2rem;
             background-size: cover;
-            background-position: center 25%;
+            background-position: center 28%;
             transition: background-image 0.5s ease;
         }
         .app-hero-overlay {
             position: absolute;
             inset: 0;
             background: 
-                linear-gradient(to right, rgba(6,7,10,0.95) 0%, rgba(6,7,10,0.7) 45%, rgba(6,7,10,0.15) 100%),
-                linear-gradient(to top, #06070a 0%, transparent 60%);
+                linear-gradient(to right, rgba(5,6,8,0.96) 0%, rgba(5,6,8,0.55) 45%, transparent 100%),
+                linear-gradient(to top, #050608 0%, transparent 65%);
             pointer-events: none;
         }
         .app-hero-info {
             position: relative;
             z-index: 2;
-            max-width: 580px;
-        }
-        .app-spotlight-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 0.72rem;
-            font-weight: 800;
-            letter-spacing: 1px;
-            color: #f59e0b;
-            background: rgba(245, 158, 11, 0.14);
-            border: 1px solid rgba(245, 158, 11, 0.3);
-            padding: 3px 9px;
-            border-radius: 4px;
-            margin-bottom: 0.5rem;
-            text-transform: uppercase;
+            max-width: 540px;
         }
         .app-hero-title {
             font-family: 'Outfit', sans-serif;
-            font-size: 2.4rem;
+            font-size: 2.5rem;
             font-weight: 800;
-            line-height: 1.1;
+            line-height: 1.08;
             color: #ffffff;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.45rem;
             text-shadow: 0 4px 20px rgba(0,0,0,0.8);
         }
         .app-hero-meta {
             display: flex;
             align-items: center;
-            gap: 8px;
-            font-size: 0.82rem;
+            gap: 7px;
+            font-size: 0.83rem;
             font-weight: 600;
             color: #cbd5e1;
-            margin-bottom: 0.6rem;
+            margin-bottom: 0.65rem;
         }
         .app-meta-star { color: #f59e0b; font-size: 0.95rem; }
-        .app-meta-badge {
-            background: rgba(255,255,255,0.12);
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 0.68rem;
-            font-weight: 700;
-        }
         .app-hero-desc {
-            font-size: 0.88rem;
-            line-height: 1.55;
+            font-size: 0.86rem;
+            line-height: 1.5;
             color: #94a3b8;
             margin-bottom: 1.4rem;
             display: -webkit-box;
@@ -576,70 +511,81 @@
             display: inline-flex;
             align-items: center;
             gap: 7px;
-            padding: 0.65rem 1.6rem;
+            padding: 0.6rem 1.6rem;
             background: #e50914;
             color: #ffffff;
             font-size: 0.86rem;
             font-weight: 700;
-            border-radius: 8px;
+            border-radius: 20px;
             border: none;
             cursor: pointer;
-            box-shadow: 0 6px 20px rgba(229, 9, 20, 0.4);
+            box-shadow: 0 5px 18px rgba(229, 9, 20, 0.45);
             transition: all 0.2s ease;
         }
         .app-btn-play:hover {
-            transform: scale(1.04);
-            background: #ff1f2d;
-            box-shadow: 0 8px 25px rgba(229, 9, 20, 0.55);
+            background: #ff1c2a;
+            transform: scale(1.03);
+            box-shadow: 0 7px 22px rgba(229, 9, 20, 0.55);
         }
         .app-btn-info {
             display: inline-flex;
             align-items: center;
             gap: 7px;
-            padding: 0.65rem 1.4rem;
-            background: rgba(255,255,255,0.12);
+            padding: 0.6rem 1.4rem;
+            background: rgba(255,255,255,0.16);
             color: #ffffff;
             font-size: 0.86rem;
             font-weight: 600;
-            border-radius: 8px;
-            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.12);
             cursor: pointer;
             backdrop-filter: blur(10px);
             transition: all 0.2s ease;
         }
         .app-btn-info:hover {
-            background: rgba(255,255,255,0.22);
+            background: rgba(255,255,255,0.24);
         }
-        .app-hero-dots {
+        .app-hero-carousel-ctrls {
             position: absolute;
-            bottom: 1.2rem;
-            right: 2rem;
+            bottom: 1.3rem;
+            right: 2.2rem;
             display: flex;
-            gap: 6px;
+            align-items: center;
+            gap: 10px;
             z-index: 5;
         }
+        .app-hero-dots-row {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
         .app-dot {
-            width: 8px;
-            height: 8px;
+            width: 7px;
+            height: 7px;
             border-radius: 50%;
-            background: rgba(255,255,255,0.3);
+            background: rgba(255,255,255,0.28);
             cursor: pointer;
             transition: all 0.2s;
         }
         .app-dot.active {
             background: #e50914;
-            width: 22px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(229,9,20,0.6);
+            width: 18px;
+            border-radius: 8px;
+        }
+        .app-hero-counter {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: #94a3b8;
+            letter-spacing: 0.5px;
         }
 
         /* ── Shelves Section ── */
         .app-shelves-container {
-            padding: 1.8rem 2rem 3rem;
+            padding: 1.4rem 2rem 2.8rem;
             display: flex;
             flex-direction: column;
-            gap: 2.5rem;
-            background: #06070a;
+            gap: 2.2rem;
+            background: #050608;
         }
         .app-shelf {
             width: 100%;
@@ -648,31 +594,112 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 1rem;
+            margin-bottom: 0.9rem;
         }
         .app-shelf-title-wrap {
             display: flex;
             align-items: center;
-            gap: 9px;
+            gap: 8px;
         }
         .app-shelf-accent-bar {
-            width: 4px;
-            height: 20px;
+            width: 3px;
+            height: 18px;
             background: #e50914;
             border-radius: 2px;
-            box-shadow: 0 0 10px rgba(229, 9, 20, 0.7);
         }
         .app-shelf-title {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.22rem;
+            font-size: 1.18rem;
             font-weight: 700;
             color: #ffffff;
         }
-        .app-shelf-sub {
-            font-size: 0.75rem;
-            color: #64748b;
-            margin-left: 8px;
+        .app-shelf-nav-arrows {
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
+        .shelf-circle-btn {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.08);
+            color: #94a3b8;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.15s;
+            font-size: 0.9rem;
+        }
+        .shelf-circle-btn:hover {
+            background: rgba(255,255,255,0.12);
+            color: #fff;
+        }
+
+        /* Shelf Horizontal Scroll Track */
+        .app-cards-track {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            padding: 4px 2px 10px;
+            scroll-behavior: smooth;
+        }
+        .app-cards-track::-webkit-scrollbar {
+            height: 4px;
+        }
+        .app-cards-track::-webkit-scrollbar-thumb {
+            background: rgba(255,255,255,0.1);
+            border-radius: 3px;
+        }
+
+        /* Top 10 Card (Exact match to app screenshot) */
+        .app-top10-card {
+            flex: 0 0 auto;
+            width: 130px;
+            cursor: pointer;
+            transition: transform 0.25s cubic-bezier(0.2,0.8,0.2,1);
+            position: relative;
+        }
+        .app-top10-card:hover {
+            transform: translateY(-5px) scale(1.03);
+        }
+        .app-top10-poster {
+            width: 100%;
+            height: 195px;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #11141f;
+            position: relative;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .app-top10-poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .app-flame-badge {
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            background: rgba(6, 8, 12, 0.88);
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(245, 158, 11, 0.45);
+            color: #f59e0b;
+            font-size: 0.62rem;
+            font-weight: 800;
+            padding: 2px 6px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            letter-spacing: 0.3px;
+            z-index: 5;
+        }
+        .app-flame-badge ion-icon { font-size: 0.72rem; color: #f59e0b; }
+
         .app-shelf-more {
             font-size: 0.78rem;
             font-weight: 600;
@@ -685,59 +712,27 @@
         }
         .app-shelf-more:hover { text-decoration: underline; }
 
-        /* Shelf Horizontal Scroll Track */
-        .app-cards-track {
-            display: flex;
-            gap: 14px;
-            overflow-x: auto;
-            padding: 6px 4px 14px;
-            scroll-behavior: smooth;
-        }
-        .app-cards-track::-webkit-scrollbar {
-            height: 5px;
-        }
-        .app-cards-track::-webkit-scrollbar-thumb {
-            background: rgba(255,255,255,0.12);
-            border-radius: 4px;
-        }
-
-        /* Top 10 Ranked Card */
-        .top10-item {
+        /* Standard Movie/Series Poster Card */
+        .app-movie-card {
             flex: 0 0 auto;
-            width: 180px;
-            position: relative;
-            display: flex;
-            align-items: flex-end;
+            width: 135px;
             cursor: pointer;
             transition: transform 0.25s cubic-bezier(0.2,0.8,0.2,1);
         }
-        .top10-item:hover {
-            transform: translateY(-6px) scale(1.03);
+        .app-movie-card:hover {
+            transform: translateY(-5px) scale(1.03);
         }
-        .top10-rank-num {
-            font-family: 'Outfit', sans-serif;
-            font-size: 5.5rem;
-            font-weight: 900;
-            line-height: 0.8;
-            color: #06070a;
-            -webkit-text-stroke: 2.5px rgba(229, 9, 20, 0.85);
-            text-shadow: 0 0 16px rgba(229, 9, 20, 0.35);
-            margin-right: -24px;
-            z-index: 1;
-            user-select: none;
-        }
-        .top10-poster-wrap {
-            width: 130px;
-            height: 195px;
+        .app-card-poster {
+            width: 100%;
+            height: 198px;
             border-radius: 10px;
             overflow: hidden;
-            position: relative;
             background: #11141f;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-            border: 1px solid rgba(255,255,255,0.08);
-            z-index: 2;
+            position: relative;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+            border: 1px solid rgba(255,255,255,0.07);
         }
-        .top10-poster-wrap img {
+        .app-card-poster img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -755,33 +750,6 @@
             font-weight: 800;
             padding: 2px 5px;
             border-radius: 4px;
-        }
-
-        /* Standard Movie/Series Poster Card */
-        .app-movie-card {
-            flex: 0 0 auto;
-            width: 140px;
-            cursor: pointer;
-            transition: transform 0.25s cubic-bezier(0.2,0.8,0.2,1);
-        }
-        .app-movie-card:hover {
-            transform: translateY(-6px) scale(1.03);
-        }
-        .app-card-poster {
-            width: 100%;
-            height: 210px;
-            border-radius: 10px;
-            overflow: hidden;
-            background: #11141f;
-            position: relative;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.7);
-            border: 1px solid rgba(255,255,255,0.07);
-        }
-        .app-card-poster img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
         }
         .app-card-rating {
             position: absolute;
@@ -937,13 +905,20 @@
             pointer-events: none;
         }
 
-        @media (max-width: 768px) {
-            .app-viewport { height: 480px; }
-            .app-hero-spotlight { min-height: 320px; padding: 1.5rem 1.2rem; }
-            .app-hero-title { font-size: 2rem; }
-            .app-header { padding: 0 1rem; }
-            .app-nav-links { display: none; }
-            .win-titlebar-center { display: none; }
+        @media (max-width: 900px) {
+            .app-sidebar { width: 66px; padding: 1rem 0.4rem; }
+            .sidebar-brand-text { display: none; }
+            .sidebar-group-title { display: none; }
+            .sidebar-nav-btn span { display: none; }
+            .sidebar-nav-btn { justify-content: center; padding: 0.65rem 0; }
+            .sidebar-signin-btn span { display: none; }
+            .sidebar-signin-btn { padding: 0.65rem 0; }
+        }
+        @media (max-width: 680px) {
+            .app-sidebar { display: none; }
+            .win-chrome { height: 500px; }
+            .app-hero-spotlight { min-height: 290px; padding: 1.4rem 1.2rem; }
+            .app-hero-title { font-size: 1.9rem; }
             .app-shelves-container { padding: 1.2rem 1rem 2rem; }
             .galaxy-frame { width: 280px; height: 580px; }
         }
