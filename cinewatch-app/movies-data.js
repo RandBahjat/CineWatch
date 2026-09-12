@@ -20,7 +20,7 @@ window._MOVIES_DATA = [
     videoUrl: "1377237",
     trailerUrl: "https://youtu.be/m8JUmBgHejI?si=l6C72Y4ZckfjPqTu",
     overview: "Hank Malone, strong former Navy SEAL turned courier driver, take on urgent job delivering critical organ package to hospital. Hank and talkative medical courier Ben get hunted across city by ruthless cartel hitmen. Duo must survive crazy gunfights, car crashes, and race against clock to save sick little girl life!",
-    overviewKurdish: "کۆمەڵێک وەرزشەوانی سەرنەکەوتوو و پەراوێزخراو پێکەوە کۆدەبنەوە بۆ ڕزگارکردنی سەنتەری وەرزشی ناوچەکەیان لە دەستی گەشەپێدەرێکی تەماحکاری خانوبەرە. یاریزانە لاوازەکان پێویستە بە سەختی مەشق بکەن، بەسەر ئاستەنگە شێتانەکاندا زاڵ ببن، و لە پاڵەوانێتییەکی گەورەی کۆتاییدا شکست بە تیپی ڕکابەری بەهێزیان بهێنن بۆ بردنی خەڵاتی دارایی و پاراستنی مەیدانەکەیان.",
+    overviewKurdish: "هەنک مالۆن (ئالان ڕیچسۆن)، سەربازێکی پێشووی هێزە تایبەتەکانە کە وەک گەیەنەر کاردەکات. ئەو لەگەڵ گەیەنەرێکی پزیشکی (ئۆوێن ویڵسن) دەکەونە ناو ڕاوەدوونانێکی کوشندە لە کاتی گواستنەوەی ئەندامێکی پزیشکی گرنگ بۆ نەخۆشخانە. لە کاتێکدا کارتێلێکی بێبەزەیی ڕاوەیان دەکات، ئەوان پێویستە بەرەنگاری مەترسییەکان ببەنەوە و پێش تەواوبوونی کات بارەکە بگەیەنن بۆ ڕزگارکردنی ژیانی کچێکی بچووک.",
     director: "Paul Feig",
     cast: ["Marsai Martin, Young Mazino, Terry Crews, Stephanie Beatriz, Kenan Thompson"],
     trending: true,
