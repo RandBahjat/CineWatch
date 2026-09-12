@@ -16,7 +16,7 @@ let FEATURED_TITLES = ["Runner","Moana(2026)","Go Team!","Mayday","The Runner","
 let TOP_10_TRENDING_TODAY = ["Moana(2026)",
   "Go Team!","The Odyssey","Runner","Spider-Man: Brand New Day","Mayday" , "One Night Only","Reacher", "Spider-Man: Brand New Day","Mutiny", "Lanterns", "The Odyssey"];
 let TRENDING_THIS_WEEK_MOVIES = ["Mayday","The Whisper Man","Batman: Knightfall Part 1: Knightfall", "Mutiny", "Spider-Man: Brand New Day", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Minions & Monsters", "The Last House", "Disclosure Day", "The Invite", "The End of Oak Street", "Backrooms", "Camp Rock 3", "Evil Dead Burn", "Just Play Dead"];
-let TRENDING_THIS_WEEK_SERIES = ["Lanterns", "Reacher", "The Gentlemen", "Silo", "One Piece", "Ted Lasso", "X-Men '97", "Lioness", "Outer Banks"];
+let TRENDING_THIS_WEEK_SERIES = ["Lanterns", "Reacher", "The Gentlemen", "Silo", "One Piece", "Ted Lasso",, "X-Men '97", "Lioness", "Outer Banks"];
 const POPULAR_MOVIES = [,"Coyote vs. Acme","Mayday","Moana(2026)","Batman: Knightfall Part 1: Knightfall", "Mutiny", "The Odyssey", "The Runner", "Spider-Man: Brand New Day","Obsession", "Spider-Man: No Way Home","Backrooms", "Disclosure Day", "The Death of Robin Hood", "The Last House","Drawn Together","The End of Oak Street", "Michael", "Project Hail Mary","Avatar Aang: The Last Airbender","The Shawshank Redemption"];
 const POPULAR_SERIES = ["Reacher","The Mentalist","The Gentlemen", "Breaking Bad","Law & Order: Special Victims Unit", "Ted Lasso","House", "Lucky", "Off Campus", "Silo", "Game of Thrones", "The Sopranos", "Stranger Things", "The Boys","The Rookie","The Good Doctor","Dexter","From","S.W.A.T.","The Walking Dead","Stranger Things"];
 
