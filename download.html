@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Download CineWatch</title>
+    <title>Download CineWatch for Windows - Free, Ultra-Fast & Ad-Free Streaming</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,1621 +12,1170 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --primary: #e50914;
+            --primary-hover: #ff1e27;
+            --primary-glow: rgba(229, 9, 20, 0.35);
+            --primary-soft: rgba(229, 9, 20, 0.12);
+            --bg-dark: #040508;
+            --bg-card: rgba(14, 17, 24, 0.7);
+            --bg-card-hover: rgba(22, 26, 38, 0.85);
+            --border-subtle: rgba(255, 255, 255, 0.08);
+            --border-hover: rgba(255, 255, 255, 0.2);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-dim: #64748b;
+            --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
 
         body {
-            background-color: #030406;
-            color: #f1f5f9;
-            overflow-x: hidden;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
             font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            line-height: 1.6;
+            min-height: 100vh;
         }
 
-        .ambient-glow {
+        /* ── Ambient Background Glows ── */
+        .ambient-glow-top {
             position: fixed;
-            top: 25%;
+            top: -100px;
             left: 50%;
-            transform: translate(-50%, -50%);
-            width: 1000px;
-            height: 700px;
-            background: radial-gradient(circle, rgba(229,9,20,0.12) 0%, transparent 65%);
+            transform: translateX(-50%);
+            width: 1100px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(229, 9, 20, 0.16) 0%, rgba(229, 9, 20, 0.03) 45%, transparent 70%);
             z-index: -1;
-            filter: blur(90px);
+            filter: blur(100px);
             pointer-events: none;
-            animation: pulseGlow 8s ease-in-out infinite alternate;
-        }
-        @keyframes pulseGlow {
-            0%   { opacity: 0.6; transform: translate(-50%, -50%) scale(1);    }
-            100% { opacity: 1;   transform: translate(-50%, -50%) scale(1.15); }
-        }
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(24px); }
-            to   { opacity: 1; transform: translateY(0);    }
+            animation: pulseGlow 10s ease-in-out infinite alternate;
         }
 
-        /* ── Navbar ── */
-        .navbar {
+        .ambient-glow-accent {
             position: fixed;
-            top: 0; left: 0; right: 0;
-            height: 68px;
-            background: rgba(3,4,6,0.85);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+            top: 45%;
+            right: -150px;
+            width: 650px;
+            height: 650px;
+            background: radial-gradient(circle, rgba(56, 189, 248, 0.06) 0%, transparent 65%);
+            z-index: -1;
+            filter: blur(120px);
+            pointer-events: none;
+        }
+
+        @keyframes pulseGlow {
+            0%   { opacity: 0.7; transform: translateX(-50%) scale(0.95); }
+            100% { opacity: 1; transform: translateX(-50%) scale(1.1); }
+        }
+
+        /* ── Navigation Bar ── */
+        .navbar {
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 72px;
+            background: rgba(4, 5, 8, 0.78);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border-bottom: 1px solid var(--border-subtle);
+            z-index: 1000;
+            transition: all 0.3s var(--ease-spring);
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            height: 100%;
+            margin: 0 auto;
+            padding: 0 1.75rem;
             display: flex;
             align-items: center;
-            justify-content: center;
-            z-index: 999;
+            justify-content: space-between;
         }
+
+        /* ── Premium Go Back Button ── */
+        .btn-go-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            padding: 0.65rem 1.25rem;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border-subtle);
+            border-radius: 50px;
+            color: #cbd5e1;
+            font-size: 0.88rem;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            transition: all 0.35s var(--ease-spring);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+        }
+
+        .btn-go-back .back-icon {
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            transition: transform 0.35s var(--ease-spring), color 0.35s ease;
+            color: #94a3b8;
+        }
+
+        .btn-go-back:hover {
+            background: rgba(229, 9, 20, 0.12);
+            border-color: rgba(229, 9, 20, 0.45);
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(229, 9, 20, 0.22);
+        }
+
+        .btn-go-back:hover .back-icon {
+            transform: translateX(-4px);
+            color: #ff3344;
+        }
+
+        .btn-go-back:active {
+            transform: translateY(0) scale(0.97);
+        }
+
+        /* Brand Logo */
         .brand-logo {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.6rem;
             text-decoration: none;
             font-family: 'Outfit', sans-serif;
-            font-size: 1.5rem;
+            font-size: 1.55rem;
             font-weight: 800;
-            color: #fff;
+            letter-spacing: -0.5px;
+            color: #ffffff;
+            transition: opacity 0.25s ease, transform 0.25s ease;
         }
-        .brand-logo .accent { color: #e50914; }
 
-        /* ── Page ── */
-        .page {
+        .brand-logo:hover {
+            opacity: 0.95;
+            transform: scale(1.02);
+        }
+
+        .brand-logo ion-icon {
+            color: var(--primary);
+            font-size: 1.6rem;
+            filter: drop-shadow(0 0 12px rgba(229, 9, 20, 0.5));
+        }
+
+        .brand-logo .accent {
+            color: var(--primary);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .btn-nav-ghost {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.6rem 1.1rem;
+            color: var(--text-muted);
+            font-size: 0.88rem;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 1px solid transparent;
+            transition: all 0.3s var(--ease-spring);
+        }
+
+        .btn-nav-ghost:hover {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* ── Main Container ── */
+        .main-content {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 4rem 1.75rem 6rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* ── Hero Section ── */
+        .hero {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            padding: 130px 2rem 8rem;
-            max-width: 1360px;
-            width: 100%;
-            margin: 0 auto;
+            max-width: 860px;
+            margin-bottom: 5rem;
+            position: relative;
         }
 
-        /* ── Hero ── */
-        .hero-badge {
+        .hero-version-pill {
             display: inline-flex;
             align-items: center;
-            gap: 6px;
-            padding: 5px 14px;
-            background: rgba(229,9,20,0.08);
-            border: 1px solid rgba(229,9,20,0.2);
-            color: #ff3344;
-            font-size: 0.72rem;
+            gap: 9px;
+            padding: 6px 18px;
+            background: rgba(229, 9, 20, 0.08);
+            border: 1px solid rgba(229, 9, 20, 0.25);
+            border-radius: 50px;
+            color: #ff4757;
+            font-size: 0.78rem;
             font-weight: 700;
             letter-spacing: 1.2px;
-            border-radius: 50px;
-            margin-bottom: 1.5rem;
-            opacity: 0;
-            animation: fadeUp 0.7s ease-out 0.1s forwards;
-        }
-        .hero-title {
-            font-family: 'Outfit', sans-serif;
-            font-size: 4.5rem;
-            font-weight: 800;
-            line-height: 1.05;
-            letter-spacing: -2px;
-            margin-bottom: 1.4rem;
-            color: #fff;
-            opacity: 0;
-            animation: fadeUp 0.7s ease-out 0.2s forwards;
-        }
-        .text-dim { color: #71717a; }
-        .hero-desc {
-            font-size: 1.15rem;
-            color: #94a3b8;
-            line-height: 1.65;
-            max-width: 580px;
-            margin-bottom: 2.8rem;
-            opacity: 0;
-            animation: fadeUp 0.7s ease-out 0.3s forwards;
-        }
-
-        /* ── Platform label ── */
-        .platform-row {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 1.8rem;
-            opacity: 0;
-            animation: fadeUp 0.7s ease-out 0.4s forwards;
-        }
-        .platform-label {
-            display: flex;
-            align-items: center;
-            gap: 7px;
-            font-size: 0.72rem;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            color: #52525b;
             text-transform: uppercase;
-            white-space: nowrap;
-        }
-        .platform-row::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: rgba(255,255,255,0.06);
-        }
-
-        /* ── Buttons ── */
-        .dl-btn-row {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.9rem;
-            margin-bottom: 3rem;
-            justify-content: center;
-            opacity: 0;
-            animation: fadeUp 0.7s ease-out 0.45s forwards;
-        }
-        .btn-dl {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 0.95rem 2.2rem;
-            border-radius: 12px;
-            font-family: 'Inter', sans-serif;
-            font-size: 1rem;
-            font-weight: 600;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.2,0.8,0.2,1);
-        }
-        .btn-dl ion-icon { font-size: 1.25rem; }
-        .btn-win {
-            background: #fff;
-            color: #000;
-            box-shadow: 0 8px 28px rgba(255,255,255,0.12);
-        }
-        .btn-win:hover {
-            transform: translateY(-3px) scale(1.03);
-            box-shadow: 0 14px 40px rgba(255,255,255,0.22);
-        }
-        .btn-apk {
-            background: rgba(255,255,255,0.07);
-            color: #f1f5f9;
-            border: 1px solid rgba(255,255,255,0.14);
+            margin-bottom: 1.8rem;
+            box-shadow: 0 4px 20px rgba(229, 9, 20, 0.1);
             backdrop-filter: blur(10px);
-        }
-        .btn-apk:hover {
-            background: rgba(255,255,255,0.14);
-            transform: translateY(-3px) scale(1.02);
-            border-color: rgba(255,255,255,0.3);
-        }
-        .sys-note { font-size: 0.8rem; color: #52525b; }
-
-        /* ── App Screen Review Showcase ── */
-        .showcase-wrap {
-            width: 100%;
-            max-width: 1300px;
-            margin-bottom: 7rem;
-            opacity: 0;
-            animation: fadeUp 0.9s ease-out 0.55s forwards;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            animation: fadeInDown 0.8s var(--ease-spring);
         }
 
-        /* Showcase Status Header */
-        .preview-controls-bar {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            margin-bottom: 1.4rem;
-        }
-        .preview-status-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 6px 16px;
-            background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(255,255,255,0.08);
-            border-radius: 50px;
-            font-size: 0.75rem;
-            color: #94a3b8;
-            font-weight: 500;
-        }
-        .live-dot {
+        .pulse-dot {
             width: 8px;
             height: 8px;
             border-radius: 50%;
             background: #22c55e;
             box-shadow: 0 0 10px #22c55e;
-            animation: livePulse 2s infinite;
-        }
-        @keyframes livePulse {
-            0% { transform: scale(0.95); opacity: 0.8; }
-            50% { transform: scale(1.25); opacity: 1; }
-            100% { transform: scale(0.95); opacity: 0.8; }
+            animation: statusPulse 2s infinite ease-in-out;
         }
 
-        /* ── Desktop Window Showcase (Side-by-side App Layout matching real CineWatch Desktop) ── */
-        .win-chrome {
-            width: 100%;
-            height: 725px;
-            background: #050608;
-            border: 1px solid rgba(255,255,255,0.09);
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 35px 120px rgba(0,0,0,0.95), 0 0 0 1px rgba(255,255,255,0.04);
-            text-align: left;
-            position: relative;
-            display: flex;
+        @keyframes statusPulse {
+            0%, 100% { transform: scale(1); opacity: 0.85; }
+            50% { transform: scale(1.3); opacity: 1; }
         }
 
-        /* Desktop Sidebar (Left Navigation) */
-        .app-sidebar {
-            width: 210px;
-            height: 100%;
-            background: #07080c;
-            border-right: 1px solid rgba(255,255,255,0.06);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 1.25rem 0.9rem 1.1rem;
-            flex-shrink: 0;
-            z-index: 20;
-        }
-        .sidebar-brand-box {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            text-decoration: none;
-            color: #ffffff;
-            margin-bottom: 1.6rem;
-            padding-left: 0.3rem;
-        }
-        .sidebar-logo-icon {
-            color: #e50914;
-            font-size: 1.35rem;
-            display: flex;
-            align-items: center;
-        }
-        .sidebar-brand-text {
+        .hero-title {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.3rem;
-            font-weight: 800;
-            letter-spacing: -0.3px;
+            font-size: clamp(2.8rem, 5.5vw, 4.6rem);
+            font-weight: 900;
+            line-height: 1.08;
+            letter-spacing: -1.8px;
             color: #ffffff;
+            margin-bottom: 1.4rem;
+            animation: fadeInUp 0.8s var(--ease-spring) 0.1s both;
         }
-        .sidebar-brand-text span { color: #e50914; }
 
-        .sidebar-nav-group {
-            display: flex;
-            flex-direction: column;
-            gap: 3px;
-            margin-bottom: 1.3rem;
+        .hero-title .gradient-text {
+            background: linear-gradient(135deg, #ffffff 30%, #ff4b55 75%, #e50914 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: block;
         }
-        .sidebar-group-title {
-            font-size: 0.62rem;
-            font-weight: 700;
-            letter-spacing: 1.8px;
-            color: #475569;
-            padding: 0 0.6rem 0.35rem;
-            text-transform: uppercase;
-        }
-        .sidebar-nav-btn {
-            display: flex;
-            align-items: center;
-            gap: 11px;
-            padding: 0.65rem 0.8rem;
-            border-radius: 8px;
-            font-size: 0.84rem;
-            font-weight: 500;
-            color: #94a3b8;
-            background: transparent;
-            border: 1px solid transparent;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            text-align: left;
-            width: 100%;
-        }
-        .sidebar-nav-btn ion-icon { font-size: 1.18rem; color: #94a3b8; }
-        .sidebar-nav-btn:hover {
-            color: #ffffff;
-            background: rgba(255,255,255,0.04);
-        }
-        .sidebar-nav-btn:hover ion-icon { color: #ffffff; }
-        .sidebar-nav-btn.active {
-            color: #ff3344;
-            background: rgba(229, 9, 20, 0.12);
-            border-color: rgba(229, 9, 20, 0.22);
-            font-weight: 600;
-        }
-        .sidebar-nav-btn.active ion-icon { color: #e50914; }
 
-        /* Sidebar Sign In Button */
-        .sidebar-signin-btn {
+        .hero-subtitle {
+            font-size: clamp(1.05rem, 2vw, 1.22rem);
+            color: var(--text-muted);
+            line-height: 1.65;
+            max-width: 660px;
+            margin-bottom: 3rem;
+            font-weight: 400;
+            animation: fadeInUp 0.8s var(--ease-spring) 0.2s both;
+        }
+
+        /* ── Button Group (Premium CTA Hub) ── */
+        .hero-cta-group {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 9px;
-            width: 100%;
-            padding: 0.72rem;
-            background: #e50914;
-            color: #ffffff;
-            border: none;
-            border-radius: 10px;
-            font-size: 0.88rem;
-            font-weight: 700;
-            cursor: pointer;
-            box-shadow: 0 4px 16px rgba(229, 9, 20, 0.35);
-            transition: all 0.25s cubic-bezier(0.2,0.8,0.2,1);
-        }
-        .sidebar-signin-btn:hover {
-            background: #ff1c2a;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 22px rgba(229, 9, 20, 0.5);
+            gap: 1.3rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s var(--ease-spring) 0.3s both;
         }
 
-        /* Desktop Main Content Area (Right Side) */
-        .app-main-viewport {
-            flex: 1;
-            height: 100%;
-            overflow-y: auto;
-            overflow-x: hidden;
-            background: #050608;
-            position: relative;
-            scroll-behavior: smooth;
-        }
-        .app-main-viewport::-webkit-scrollbar {
-            width: 6px;
-        }
-        .app-main-viewport::-webkit-scrollbar-track {
-            background: #050608;
-        }
-        .app-main-viewport::-webkit-scrollbar-thumb {
-            background: rgba(255,255,255,0.14);
-            border-radius: 4px;
-        }
-
-        /* Floating Window Controls (Top Right) */
-        .floating-win-ctrls {
-            position: absolute;
-            top: 14px;
-            right: 18px;
-            display: flex;
-            align-items: center;
-            gap: 7px;
-            z-index: 40;
-        }
-        .float-win-btn {
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            background: rgba(20, 24, 34, 0.85);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.08);
+        /* Primary Windows Download Button */
+        .btn-premium-download {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
-            color: #94a3b8;
+            gap: 16px;
+            padding: 1.1rem 2.4rem;
+            background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            border-radius: 14px;
+            color: #050608;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 12px 36px rgba(255, 255, 255, 0.15), 0 2px 4px rgba(0,0,0,0.1);
+            transition: all 0.4s var(--ease-spring);
             cursor: pointer;
-            transition: all 0.15s;
-        }
-        .float-win-btn:hover {
-            background: rgba(255,255,255,0.15);
-            color: #ffffff;
-        }
-        .float-win-btn.close:hover {
-            background: #e50914;
-            color: #ffffff;
-            border-color: #e50914;
         }
 
-        /* Desktop Hero Spotlight */
-        .app-hero-spotlight {
-            position: relative;
-            height: 420px;
-            min-height: 420px;
-            display: flex;
-            align-items: flex-end;
-            padding: 2.2rem 2.6rem 2rem;
-            background-size: cover;
-            background-position: center 25%;
-            transition: background-image 0.5s ease;
-        }
-        .app-hero-overlay {
+        /* Button Glossy Sheen Sweep */
+        .btn-premium-download::before {
+            content: '';
             position: absolute;
-            inset: 0;
-            background: 
-                linear-gradient(to right, rgba(5,6,8,0.94) 0%, rgba(5,6,8,0.68) 32%, rgba(5,6,8,0.12) 60%, transparent 85%),
-                linear-gradient(to top, #050608 0%, rgba(5,6,8,0.7) 18%, transparent 55%);
+            top: -60%;
+            left: -60%;
+            width: 220%;
+            height: 220%;
+            background: linear-gradient(60deg, transparent 35%, rgba(255, 255, 255, 0.45) 50%, transparent 65%);
+            transform: rotate(30deg) translateY(-100%);
+            transition: transform 0.85s ease;
             pointer-events: none;
         }
-        .app-hero-info {
-            position: relative;
-            z-index: 2;
-            max-width: 540px;
-        }
-        .app-hero-title {
-            font-family: 'Outfit', sans-serif;
-            font-size: 2.6rem;
-            font-weight: 800;
-            line-height: 1.08;
-            color: #ffffff;
-            margin-bottom: 0.45rem;
-            text-shadow: 0 4px 20px rgba(0,0,0,0.8);
-        }
-        .app-hero-meta {
-            display: flex;
-            align-items: center;
-            gap: 7px;
-            font-size: 0.83rem;
-            font-weight: 600;
-            color: #cbd5e1;
-            margin-bottom: 0.65rem;
-        }
-        .app-meta-star { color: #f59e0b; font-size: 0.95rem; }
-        .app-hero-desc {
-            font-size: 0.86rem;
-            line-height: 1.5;
-            color: #94a3b8;
-            margin-bottom: 1.4rem;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-        .app-hero-actions {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .app-btn-play {
-            display: inline-flex;
-            align-items: center;
-            gap: 7px;
-            padding: 0.6rem 1.6rem;
-            background: #e50914;
-            color: #ffffff;
-            font-size: 0.86rem;
-            font-weight: 700;
-            border-radius: 20px;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 5px 18px rgba(229, 9, 20, 0.45);
-            transition: all 0.2s ease;
-        }
-        .app-btn-play:hover {
-            background: #ff1c2a;
-            transform: scale(1.03);
-            box-shadow: 0 7px 22px rgba(229, 9, 20, 0.55);
-        }
-        .app-btn-info {
-            display: inline-flex;
-            align-items: center;
-            gap: 7px;
-            padding: 0.6rem 1.4rem;
-            background: rgba(255,255,255,0.16);
-            color: #ffffff;
-            font-size: 0.86rem;
-            font-weight: 600;
-            border-radius: 20px;
-            border: 1px solid rgba(255,255,255,0.12);
-            cursor: pointer;
-            backdrop-filter: blur(10px);
-            transition: all 0.2s ease;
-        }
-        .app-btn-info:hover {
-            background: rgba(255,255,255,0.24);
-        }
-        .app-hero-carousel-ctrls {
-            position: absolute;
-            bottom: 1.4rem;
-            right: 2.5rem;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            z-index: 5;
-        }
-        .app-hero-dots-row {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        .app-dot {
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            background: #475569;
-            cursor: pointer;
-            transition: all 0.25s ease;
-        }
-        .app-dot.active {
-            background: #e50914;
-            width: 22px;
-            height: 5px;
-            border-radius: 4px;
-        }
-        .app-hero-counter {
-            font-size: 0.75rem;
-            font-weight: 700;
-            color: #94a3b8;
-            letter-spacing: 0.5px;
-            font-family: 'Inter', sans-serif;
+
+        .btn-premium-download:hover::before {
+            transform: rotate(30deg) translateY(100%);
         }
 
-        /* ── Shelves Section ── */
-        .app-shelves-container {
-            padding: 1.2rem 2.2rem 2.2rem;
+        .btn-premium-download:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(255, 255, 255, 0.28), 0 0 25px rgba(229, 9, 20, 0.2);
+            background: #ffffff;
+        }
+
+        .btn-premium-download:active {
+            transform: translateY(-1px) scale(0.98);
+            box-shadow: 0 8px 24px rgba(255, 255, 255, 0.18);
+        }
+
+        .btn-icon-wrap {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.07);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.45rem;
+            color: #0f172a;
+            transition: transform 0.35s var(--ease-spring);
+        }
+
+        .btn-premium-download:hover .btn-icon-wrap {
+            transform: scale(1.1) rotate(-3deg);
+            background: rgba(229, 9, 20, 0.08);
+            color: var(--primary);
+        }
+
+        .btn-text-content {
             display: flex;
             flex-direction: column;
-            gap: 2rem;
-            background: #050608;
+            align-items: flex-start;
+            text-align: left;
         }
-        .app-shelf {
+
+        .btn-text-main {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 800;
+            letter-spacing: -0.3px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-text-sub {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #64748b;
+            letter-spacing: 0.2px;
+        }
+
+        /* Secondary Glass Button */
+        .btn-premium-glass {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 1.15rem 1.9rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 14px;
+            color: #f1f5f9;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.98rem;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+            transition: all 0.35s var(--ease-spring);
+            cursor: pointer;
+        }
+
+        .btn-premium-glass ion-icon {
+            font-size: 1.35rem;
+            color: var(--primary);
+            transition: transform 0.35s var(--ease-spring);
+        }
+
+        .btn-premium-glass:hover {
+            background: rgba(255, 255, 255, 0.11);
+            border-color: rgba(255, 255, 255, 0.28);
+            transform: translateY(-4px);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45), 0 0 20px rgba(255, 255, 255, 0.06);
+            color: #ffffff;
+        }
+
+        .btn-premium-glass:hover ion-icon {
+            transform: scale(1.15);
+        }
+
+        .btn-premium-glass:active {
+            transform: translateY(-1px) scale(0.98);
+        }
+
+        /* Trust & Specs Bar */
+        .trust-badges-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.75rem;
+            flex-wrap: wrap;
+            margin-top: 0.8rem;
+            animation: fadeInUp 0.8s var(--ease-spring) 0.4s both;
+        }
+
+        .trust-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            font-size: 0.82rem;
+            color: var(--text-dim);
+            font-weight: 500;
+        }
+
+        .trust-item ion-icon {
+            font-size: 1.05rem;
+            color: #38bdf8;
+        }
+
+        .trust-item.verified ion-icon {
+            color: #22c55e;
+        }
+
+        .trust-item.free ion-icon {
+            color: #f59e0b;
+        }
+
+        /* ── Divider ── */
+        .section-divider {
             width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.08) 50%, transparent 100%);
+            margin: 4.5rem 0;
         }
-        .app-shelf-header {
+
+        /* ── Section Header ── */
+        .section-header {
+            text-align: center;
+            max-width: 680px;
+            margin: 0 auto 3.5rem;
+        }
+
+        .section-eyebrow {
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+            display: block;
+        }
+
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(2rem, 3.8vw, 2.75rem);
+            font-weight: 800;
+            letter-spacing: -1px;
+            color: #ffffff;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .section-desc {
+            font-size: 1rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* ── Features Grid (Modern Bento Layout) ── */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            width: 100%;
+            margin-bottom: 5rem;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 18px;
+            padding: 2.2rem 1.8rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: all 0.4s var(--ease-spring);
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(229, 9, 20, 0.6), transparent);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+            background: var(--bg-card-hover);
+            border-color: var(--border-hover);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5), 0 0 25px rgba(229, 9, 20, 0.1);
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-icon-box {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: rgba(229, 9, 20, 0.08);
+            border: 1px solid rgba(229, 9, 20, 0.2);
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            margin-bottom: 0.9rem;
+            justify-content: center;
+            margin-bottom: 1.4rem;
+            color: var(--primary);
+            font-size: 1.65rem;
+            transition: transform 0.4s var(--ease-spring), background 0.4s ease, border-color 0.4s ease;
         }
-        .app-shelf-title-wrap {
+
+        .feature-card:hover .feature-icon-box {
+            transform: scale(1.12) rotate(4deg);
+            background: rgba(229, 9, 20, 0.15);
+            border-color: rgba(229, 9, 20, 0.4);
+            color: #ff3344;
+        }
+
+        .feature-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.65rem;
+            letter-spacing: -0.3px;
+        }
+
+        .feature-text {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* ── System Requirements & Compatibility ── */
+        .specs-section {
+            width: 100%;
+            margin-bottom: 5rem;
+        }
+
+        .specs-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 20px;
+            padding: 2.8rem;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-top: 1.8rem;
+        }
+
+        .spec-item {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding-left: 1.2rem;
+            border-left: 2px solid rgba(229, 9, 20, 0.3);
+            transition: border-color 0.3s ease;
+        }
+
+        .spec-item:hover {
+            border-color: var(--primary);
+        }
+
+        .spec-label {
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-dim);
+        }
+
+        .spec-value {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .spec-sub {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* ── 3-Step Setup Guide ── */
+        .steps-section {
+            width: 100%;
+            margin-bottom: 5.5rem;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.8rem;
+        }
+
+        .step-card {
+            background: rgba(14, 17, 24, 0.5);
+            border: 1px solid var(--border-subtle);
+            border-radius: 18px;
+            padding: 2.2rem 1.8rem;
+            position: relative;
+            transition: all 0.35s var(--ease-spring);
+        }
+
+        .step-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--border-hover);
+            background: rgba(22, 26, 38, 0.7);
+        }
+
+        .step-number {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(229, 9, 20, 0.12);
+            border: 1px solid rgba(229, 9, 20, 0.3);
+            color: #ff3344;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            font-weight: 800;
             display: flex;
             align-items: center;
-            gap: 8px;
+            justify-content: center;
+            margin-bottom: 1.2rem;
         }
-        .app-shelf-accent-bar {
-            width: 3px;
-            height: 18px;
-            background: #e50914;
-            border-radius: 2px;
-        }
-        .app-shelf-title {
+
+        .step-title {
             font-family: 'Outfit', sans-serif;
             font-size: 1.18rem;
             font-weight: 700;
             color: #ffffff;
+            margin-bottom: 0.6rem;
         }
-        .app-shelf-nav-arrows {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .shelf-circle-btn {
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.06);
-            border: 1px solid rgba(255,255,255,0.08);
-            color: #94a3b8;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.15s;
+
+        .step-desc {
             font-size: 0.9rem;
-        }
-        .shelf-circle-btn:hover {
-            background: rgba(255,255,255,0.12);
-            color: #fff;
+            color: var(--text-muted);
+            line-height: 1.55;
         }
 
-        /* Shelf Horizontal Scroll Track */
-        .app-cards-track {
-            display: flex;
-            gap: 10px;
-            overflow-x: auto;
-            padding: 4px 2px 10px;
-            scroll-behavior: smooth;
-        }
-        .app-cards-track::-webkit-scrollbar {
-            height: 4px;
-        }
-        .app-cards-track::-webkit-scrollbar-thumb {
-            background: rgba(255,255,255,0.1);
-            border-radius: 3px;
-        }
-
-        /* Top 10 Card (Exact match to app screenshot) */
-        .app-top10-card {
-            flex: 0 0 96px;
-            width: 96px;
-            cursor: pointer;
-            transition: transform 0.25s cubic-bezier(0.2,0.8,0.2,1);
-            position: relative;
-        }
-        @media (min-width: 1250px) {
-            .app-top10-card {
-                flex: 0 0 100px;
-                width: 100px;
-            }
-        }
-        .app-top10-card:hover {
-            transform: translateY(-5px) scale(1.03);
-        }
-        .app-top10-poster {
+        /* ── Bottom Callout Banner ── */
+        .bottom-cta-banner {
             width: 100%;
-            height: 148px;
-            border-radius: 8px;
+            background: radial-gradient(circle at top center, rgba(229, 9, 20, 0.22) 0%, rgba(14, 17, 24, 0.85) 60%), #07090e;
+            border: 1px solid rgba(229, 9, 20, 0.35);
+            border-radius: 24px;
+            padding: 4.5rem 2.5rem;
+            text-align: center;
+            position: relative;
             overflow: hidden;
-            background: #11141f;
-            position: relative;
-            box-shadow: 0 8px 22px rgba(0,0,0,0.8);
-            border: 1px solid rgba(255,255,255,0.08);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6), 0 0 40px rgba(229, 9, 20, 0.15);
+            margin-bottom: 4rem;
         }
-        @media (min-width: 1250px) {
-            .app-top10-poster {
-                height: 154px;
-            }
+
+        .bottom-cta-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(2rem, 3.8vw, 3rem);
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: -1px;
+            margin-bottom: 1rem;
         }
-        .app-top10-poster img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
+
+        .bottom-cta-desc {
+            font-size: 1.08rem;
+            color: var(--text-muted);
+            max-width: 580px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.6;
         }
-        .app-flame-badge {
-            position: absolute;
-            top: 5px;
-            left: 5px;
-            background: rgba(8, 10, 15, 0.88);
-            backdrop-filter: blur(6px);
-            border: 1px solid rgba(245, 158, 11, 0.45);
-            color: #f59e0b;
-            font-size: 0.58rem;
-            font-weight: 800;
-            padding: 2px 5px;
-            border-radius: 4px;
+
+        .bottom-btn-group {
             display: flex;
             align-items: center;
-            gap: 2.5px;
-            letter-spacing: 0.3px;
-            z-index: 5;
+            justify-content: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
         }
-        .app-flame-badge ion-icon { font-size: 0.68rem; color: #f59e0b; }
 
-        /* Track Wrap with Optional Edge Chevrons */
-        .app-track-wrap {
-            position: relative;
+        /* ── Footer ── */
+        .footer {
             width: 100%;
+            border-top: 1px solid var(--border-subtle);
+            padding: 3rem 1.75rem 4rem;
+            background: #030406;
         }
-        .app-edge-arrow {
-            position: absolute;
-            top: calc(50% - 14px);
-            transform: translateY(-50%);
-            width: 28px;
-            height: 52px;
-            background: rgba(8, 10, 15, 0.85);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.16);
+
+        .footer-container {
+            max-width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 800;
             color: #ffffff;
-            font-size: 1.15rem;
-            z-index: 10;
+            text-decoration: none;
+        }
+
+        .footer-brand ion-icon {
+            color: var(--primary);
+            font-size: 1.4rem;
+        }
+
+        .footer-copy {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+        }
+
+        .footer-links {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .footer-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.86rem;
+            transition: color 0.25s ease;
+        }
+
+        .footer-link:hover {
+            color: #ffffff;
+        }
+
+        /* Back to top button */
+        .btn-top {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-subtle);
+            color: var(--text-muted);
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            transition: all 0.2s;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.65);
-        }
-        .app-edge-arrow.prev {
-            left: -2px;
-            border-top-right-radius: 6px;
-            border-bottom-right-radius: 6px;
-        }
-        .app-edge-arrow.next {
-            right: -2px;
-            border-top-left-radius: 6px;
-            border-bottom-left-radius: 6px;
-        }
-        .app-edge-arrow:hover {
-            background: #e50914;
-            border-color: #ff1c2a;
+            transition: all 0.35s var(--ease-spring);
         }
 
-        /* Standard Movie/Series Poster Card (Matching Real App Screenshot) */
-        .app-movie-card {
-            flex: 0 0 96px;
-            width: 96px;
-            cursor: pointer;
-            transition: transform 0.25s cubic-bezier(0.2,0.8,0.2,1);
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            text-align: left;
-        }
-        @media (min-width: 1250px) {
-            .app-movie-card {
-                flex: 0 0 100px;
-                width: 100px;
-            }
-        }
-        .app-movie-card:hover {
-            transform: translateY(-5px) scale(1.03);
-        }
-        .app-card-poster {
-            width: 100%;
-            height: 148px;
-            border-radius: 8px;
-            overflow: hidden;
-            background: #11141f;
-            position: relative;
-            box-shadow: 0 8px 22px rgba(0,0,0,0.8);
-            border: 1px solid rgba(255,255,255,0.08);
-        }
-        @media (min-width: 1250px) {
-            .app-card-poster {
-                height: 154px;
-            }
-        }
-        .app-card-poster img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        .app-card-info {
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-            padding: 0 1px;
-        }
-        .app-card-title {
-            font-size: 0.76rem;
-            font-weight: 700;
+        .btn-top:hover {
+            background: var(--primary-soft);
+            border-color: var(--primary);
             color: #ffffff;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            line-height: 1.25;
-        }
-        .app-card-meta {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            font-size: 0.65rem;
-            color: #94a3b8;
-            font-weight: 500;
-        }
-        .app-card-rating {
-            display: inline-flex;
-            align-items: center;
-            gap: 2px;
-            color: #f59e0b;
-            font-weight: 700;
-        }
-        .app-card-rating ion-icon {
-            font-size: 0.72rem;
-            color: #f59e0b;
+            transform: translateY(-3px);
         }
 
-        @media (max-width: 900px) {
-            .app-sidebar { width: 66px; padding: 1rem 0.4rem; }
-            .sidebar-brand-text { display: none; }
-            .sidebar-group-title { display: none; }
-            .sidebar-nav-btn span { display: none; }
-            .sidebar-nav-btn { justify-content: center; padding: 0.65rem 0; }
-            .sidebar-signin-btn span { display: none; }
-            .sidebar-signin-btn { padding: 0.65rem 0; }
+        /* ── Keyframe Animations ── */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-        @media (max-width: 680px) {
-            .app-sidebar { display: none; }
-            .win-chrome { height: 500px; }
-            .app-hero-spotlight { min-height: 290px; padding: 1.4rem 1.2rem; }
-            .app-hero-title { font-size: 1.9rem; }
-            .app-shelves-container { padding: 1.2rem 1rem 2rem; }
-            .galaxy-frame { width: 280px; height: 580px; }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-16px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ── Responsiveness ── */
+        @media (max-width: 1024px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                height: 66px;
+            }
+            .main-content {
+                padding: 3rem 1.25rem 4rem;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-cta-group {
+                flex-direction: column;
+                width: 100%;
+            }
+            .btn-premium-download,
+            .btn-premium-glass {
+                width: 100%;
+                justify-content: center;
+            }
+            .specs-card {
+                padding: 1.8rem;
+            }
+            .bottom-cta-banner {
+                padding: 3rem 1.5rem;
+            }
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 1.2rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="ambient-glow"></div>
 
-    <header class="navbar">
-        <a href="index.html" class="brand-logo">
-            <span style="color:#e50914;font-size:1.4rem;display:flex;align-items:center;">
+    <!-- Ambient Glow Backgrounds -->
+    <div class="ambient-glow-top"></div>
+    <div class="ambient-glow-accent"></div>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar" id="topNav">
+        <div class="nav-container">
+            <!-- Premium Go Back Button -->
+            <button class="btn-go-back" onclick="navigateBack()" title="Return to Home or previous page" aria-label="Go Back">
+                <span class="back-icon"><ion-icon name="arrow-back-outline"></ion-icon></span>
+                <span>Go Back</span>
+            </button>
+
+            <!-- Brand Logo -->
+            <a href="index.html" class="brand-logo" title="CineWatch Home">
                 <ion-icon name="ticket"></ion-icon>
-            </span>
-            <span>Cine<span class="accent">Watch</span></span>
-        </a>
-    </header>
-
-    <main class="page">
-
-        <!-- HERO -->
-        <div class="hero-badge"><ion-icon name="flash"></ion-icon>&nbsp; NEW &mdash; V1.2.6</div>
-        <h1 class="hero-title"><span class="text-dim">Streamlined</span> for Windows.</h1>
-        <p class="hero-desc">Experience an ultra-fast, immersive, and ad-free cinematic layout. CineWatch brings the ultimate streaming environment straight to your PC.</p>
-
-        <!-- ══ PLATFORM & DOWNLOADS ══ -->
-        <div class="platform-row">
-            <div class="platform-label"><ion-icon name="cloud-download-outline"></ion-icon> Get CineWatch Free</div>
-        </div>
-
-        <div class="dl-btn-row">
-            <a href="https://github.com/RandBahjat/CineWatch/releases/latest/download/CineWatch-v1.2.6-Setup.exe"
-               class="btn-dl btn-win">
-                <ion-icon name="logo-windows"></ion-icon>
-                <span>Download for Windows</span>
+                <span>Cine<span class="accent">Watch</span></span>
             </a>
-            <div class="sys-note">Windows 10 / 11 (64-bit) &bull; Free &bull; Ad-Free</div>
+
+            <!-- Right Actions -->
+            <div class="nav-actions">
+                <a href="index.html" class="btn-nav-ghost" title="Open CineWatch Web Player">
+                    <ion-icon name="globe-outline"></ion-icon>
+                    <span>Web Version</span>
+                </a>
+            </div>
         </div>
+    </nav>
 
-        <!-- ══ APP SCREEN REVIEW SHOWCASE ══ -->
-        <div class="showcase-wrap">
+    <!-- Main Page Content -->
+    <main class="main-content">
 
-            <!-- Mode Selector Bar -->
-            <div class="preview-controls-bar">
-                <div class="preview-status-pill">
-                    <span class="live-dot"></span>
-                    <span>Live App Home Screen Preview</span>
-                </div>
+        <!-- Hero Section -->
+        <section class="hero">
+            <!-- Official Version Pill -->
+            <div class="hero-version-pill">
+                <span class="pulse-dot"></span>
+                <span>v1.2.6 Official Release • Windows 64-bit</span>
             </div>
 
-            <!-- 1. DESKTOP APP WINDOW SHOWCASE -->
-            <div class="win-chrome" id="desktopShowcase">
-                <!-- Left Sidebar Navigation -->
-                <aside class="app-sidebar">
-                    <div>
-                        <!-- Brand Logo -->
-                        <div class="sidebar-brand-box">
-                            <div class="sidebar-logo-icon"><ion-icon name="ticket"></ion-icon></div>
-                            <div class="sidebar-brand-text">Cine<span>Watch</span></div>
-                        </div>
+            <!-- Title -->
+            <h1 class="hero-title">
+                The Ultimate Cinematic Experience.
+                <span class="gradient-text">Engineered for Windows.</span>
+            </h1>
 
-                        <!-- Navbar Group -->
-                        <div class="sidebar-nav-group">
-                            <div class="sidebar-group-title">NAVBAR</div>
-                            <button class="sidebar-nav-btn active">
-                                <ion-icon name="home"></ion-icon>
-                                <span>Home</span>
-                            </button>
-                            <button class="sidebar-nav-btn">
-                                <ion-icon name="compass-outline"></ion-icon>
-                                <span>Explore</span>
-                            </button>
-                            <button class="sidebar-nav-btn">
-                                <ion-icon name="people-outline"></ion-icon>
-                                <span>Watch Together</span>
-                            </button>
-                        </div>
+            <!-- Subtitle -->
+            <p class="hero-subtitle">
+                Experience an ultra-fast, native streaming hub built directly for PC. Stream thousands of 4K HDR movies, series, and anime with zero ads, synchronized watch parties, and hardware-accelerated fluid playback.
+            </p>
 
-                        <!-- Library Group -->
-                        <div class="sidebar-nav-group">
-                            <div class="sidebar-group-title">LIBRARY</div>
-                            <button class="sidebar-nav-btn">
-                                <ion-icon name="heart-outline"></ion-icon>
-                                <span>Watchlist</span>
-                            </button>
-                            <button class="sidebar-nav-btn">
-                                <ion-icon name="settings-outline"></ion-icon>
-                                <span>Settings</span>
-                            </button>
-                        </div>
+            <!-- Premium CTA Hub -->
+            <div class="hero-cta-group">
+                <!-- Primary Download Button -->
+                <a href="CineWatch-Setup.exe" class="btn-premium-download" id="primaryDownloadBtn" download title="Download CineWatch for Windows 10 & 11">
+                    <div class="btn-icon-wrap">
+                        <ion-icon name="logo-windows"></ion-icon>
                     </div>
-
-                    <!-- Bottom Sign In Button -->
-                    <div class="sidebar-footer">
-                        <button class="sidebar-signin-btn">
-                            <span>Sign In</span>
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
-                                <path d="M14 12h-12" />
-                                <path d="M5 15l-3 -3l3 -3" />
-                            </svg>
-                        </button>
+                    <div class="btn-text-content">
+                        <span class="btn-text-main">
+                            Download for Windows
+                            <ion-icon name="arrow-down-outline" style="font-size: 1.1rem;"></ion-icon>
+                        </span>
+                        <span class="btn-text-sub">v1.2.6 • Free & Safe Installer • 84.5 MB</span>
                     </div>
-                </aside>
+                </a>
 
-                <!-- Right Main Content Viewport -->
-                <div class="app-main-viewport" id="appViewport">
-                    <!-- Floating Window Controls (Top Right) -->
-                    <div class="floating-win-ctrls">
-                        <button class="float-win-btn" title="Minimize" aria-label="Minimize">
-                            <svg width="10" height="1" viewBox="0 0 10 1"><rect width="10" height="1" fill="currentColor"/></svg>
-                        </button>
-                        <button class="float-win-btn" title="Maximize" aria-label="Maximize">
-                            <svg width="9" height="9" viewBox="0 0 10 10"><rect x="0.5" y="0.5" width="8" height="8" fill="none" stroke="currentColor"/></svg>
-                        </button>
-                        <button class="float-win-btn close" title="Close" aria-label="Close">
-                            <svg width="9" height="9" viewBox="0 0 10 10"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.3"/></svg>
-                        </button>
+                <!-- Secondary Web Player Button -->
+                <a href="index.html" class="btn-premium-glass" title="Stream directly in your browser">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                    <span>Launch Web Player</span>
+                </a>
+            </div>
+
+            <!-- Trust & Verification Badges -->
+            <div class="trust-badges-bar">
+                <div class="trust-item verified">
+                    <ion-icon name="shield-checkmark"></ion-icon>
+                    <span>Verified Safe (Clean)</span>
+                </div>
+                <div class="trust-item">
+                    <ion-icon name="hardware-chip-outline"></ion-icon>
+                    <span>64-Bit Hardware Accelerated</span>
+                </div>
+                <div class="trust-item free">
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                    <span>100% Free & No Ads</span>
+                </div>
+                <div class="trust-item">
+                    <ion-icon name="sync-outline"></ion-icon>
+                    <span>Silent Auto-Updates</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Features Bento Grid -->
+        <section class="features-section" id="features">
+            <div class="section-header">
+                <span class="section-eyebrow">Peak Engineering</span>
+                <h2 class="section-title">Built for Performance & Immersion</h2>
+                <p class="section-desc">Every element of CineWatch for desktop has been tuned for fluid playback, minimal CPU overhead, and cinema-grade aesthetics.</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon-box">
+                        <ion-icon name="sparkles-outline"></ion-icon>
                     </div>
+                    <h3 class="feature-title">Native 4K & HDR Decoding</h3>
+                    <p class="feature-text">Hardware-accelerated rendering unlocks silky smooth 60fps playback with true color contrast and zero frame drops.</p>
+                </div>
 
-                    <!-- Hero Spotlight Section (The Runner) -->
-                    <section class="app-hero-spotlight" id="heroSpotlight" style="background-image: url('https://image.tmdb.org/t/p/original/1KohYajglCHxTgj2NY2WTI7gn9v.jpg');">
-                        <div class="app-hero-overlay"></div>
-                        <div class="app-hero-info">
-                            <h2 class="app-hero-title" id="heroTitle">The Runner</h2>
-                            <div class="app-hero-meta">
-                                <span class="app-meta-star"><ion-icon name="star"></ion-icon> <span id="heroRating">4.3</span></span>
-                                <span>&bull;</span>
-                                <span id="heroYear">2026</span>
-                                <span>&bull;</span>
-                                <span id="heroGenres">Animation &bull; Comedy &bull; Family</span>
-                            </div>
-                            <p class="app-hero-desc" id="heroDesc">
-                                Experience this blockbuster release in full HD quality with crystal-clear audio and lightning-fast multi-server streaming.
-                            </p>
-                            <div class="app-hero-actions">
-                                <button class="app-btn-play"><ion-icon name="play"></ion-icon> Play</button>
-                                <button class="app-btn-info"><ion-icon name="information-circle-outline"></ion-icon> See More</button>
-                            </div>
-                        </div>
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon-box">
+                        <ion-icon name="shield-outline"></ion-icon>
+                    </div>
+                    <h3 class="feature-title">100% Ad-Free Experience</h3>
+                    <p class="feature-text">Zero intrusive popups, banners, or video interruptions. Enjoy a clean, distraction-free environment from start to finish.</p>
+                </div>
 
-                        <!-- Hero Carousel Navigation Controls -->
-                        <div class="app-hero-carousel-ctrls">
-                            <div class="app-hero-dots-row">
-                                <span class="app-dot active" onclick="setFeatured(0)"></span>
-                                <span class="app-dot" onclick="setFeatured(1)"></span>
-                                <span class="app-dot" onclick="setFeatured(2)"></span>
-                                <span class="app-dot" onclick="setFeatured(3)"></span>
-                                <span class="app-dot" onclick="setFeatured(4)"></span>
-                                <span class="app-dot" onclick="setFeatured(5)"></span>
-                            </div>
-                            <span class="app-hero-counter" id="heroCounter">01 / 06</span>
-                        </div>
-                    </section>
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon-box">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                    <h3 class="feature-title">Watch Together (Live Sync)</h3>
+                    <p class="feature-text">Create private watch party rooms with your friends. Synchronized video playback and instant chat let you react together in real time.</p>
+                </div>
 
-                    <!-- App Home Content Shelves -->
-                    <div class="app-shelves-container">
-                        <!-- SHELF 1: Top 10 in World Today -->
-                        <div class="app-shelf">
-                            <div class="app-shelf-header">
-                                <div class="app-shelf-title-wrap">
-                                    <div class="app-shelf-accent-bar"></div>
-                                    <h3 class="app-shelf-title">Top 10 in World Today</h3>
-                                </div>
-                                <div class="app-shelf-nav-arrows">
-                                    <button class="shelf-circle-btn" onclick="slideAppTrack('top10Track', -1)" aria-label="Slide Left"><ion-icon name="chevron-back-outline"></ion-icon></button>
-                                    <button class="shelf-circle-btn" onclick="slideAppTrack('top10Track', 1)" aria-label="Slide Right"><ion-icon name="chevron-forward-outline"></ion-icon></button>
-                                </div>
-                            </div>
-                            <div class="app-cards-track" id="top10Track">
-                                <!-- 1. The Runner -->
-                                <div class="app-top10-card">
-                                    <div class="app-top10-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/uxCaBoYXsDC4A0SqTm3SISj0OwK.jpg" alt="The Runner" loading="lazy" />
-                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 1</div>
-                                    </div>
-                                </div>
-                                <!-- 2. Just Play Dead -->
-                                <div class="app-top10-card">
-                                    <div class="app-top10-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/glALx6QaIgw1u4joXsnfHTjWi6D.jpg" alt="Just Play Dead" loading="lazy" />
-                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 2</div>
-                                    </div>
-                                </div>
-                                <!-- 3. Coyote vs. Acme -->
-                                <div class="app-top10-card">
-                                    <div class="app-top10-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/vhv7lBWYM0DUuNU2a0V7Rhq21dD.jpg" alt="Coyote vs. Acme" loading="lazy" />
-                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 3</div>
-                                    </div>
-                                </div>
-                                <!-- 4. Mutiny -->
-                                <div class="app-top10-card">
-                                    <div class="app-top10-poster">
-                                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/pu2VxGlpGwffOx292w18b1tv96j.jpg" alt="Mutiny" loading="lazy" />
-                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 4</div>
-                                    </div>
-                                </div>
-                                <!-- 5. Batman: Knightfall Part 1 -->
-                                <div class="app-top10-card">
-                                    <div class="app-top10-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/9pKPTugulAt0EtH0g4gvJGffPSg.jpg" alt="Batman: Knightfall" loading="lazy" />
-                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 5</div>
-                                    </div>
-                                </div>
-                                <!-- 6. Reacher -->
-                                <div class="app-top10-card">
-                                    <div class="app-top10-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg" alt="Reacher" loading="lazy" />
-                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 6</div>
-                                    </div>
-                                </div>
-                                <!-- 7. Spider-Man: Brand New Day -->
-                                <div class="app-top10-card">
-                                    <div class="app-top10-poster">
-                                        <img src="https://image.tmdb.org/t/p/original/ghF1JYv7P5BgWHYfq9dqhqqNfz8.jpg" alt="Spider-Man: Brand New Day" loading="lazy" />
-                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 7</div>
-                                    </div>
-                                </div>
-                                <!-- 8. Lanterns -->
-                                <div class="app-top10-card">
-                                    <div class="app-top10-poster">
-                                        <img src="https://image.tmdb.org/t/p/original/rzyXM5uB2Oci6u7aP3ijPxcTmfV.jpg" alt="Lanterns" loading="lazy" />
-                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 8</div>
-                                    </div>
-                                </div>
-                                <!-- 9. The Odyssey -->
-                                <div class="app-top10-card">
-                                    <div class="app-top10-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg" alt="The Odyssey" loading="lazy" />
-                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 9</div>
-                                    </div>
-                                </div>
-                                <!-- 10. The Brink of War -->
-                                <div class="app-top10-card">
-                                    <div class="app-top10-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/vCIQeQ2ynVqEjIvtbOXGnKtcgAX.jpg" alt="The Brink of War" loading="lazy" />
-                                        <div class="app-flame-badge"><ion-icon name="flame"></ion-icon> TOP 10</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon-box">
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                    </div>
+                    <h3 class="feature-title">Smart Watchlists & Progress</h3>
+                    <p class="feature-text">Keep track of your favorite shows, watchlists, and auto-resume timestamps so you can jump back in right where you left off.</p>
+                </div>
 
-                        <!-- SHELF 2: Trending Movies -->
-                        <div class="app-shelf">
-                            <div class="app-shelf-header">
-                                <div class="app-shelf-title-wrap">
-                                    <div class="app-shelf-accent-bar"></div>
-                                    <h3 class="app-shelf-title">Trending Movies</h3>
-                                </div>
-                                <div class="app-shelf-nav-arrows">
-                                    <button class="shelf-circle-btn" onclick="slideAppTrack('trendingMoviesTrack', -1)" aria-label="Slide Left"><ion-icon name="chevron-back-outline"></ion-icon></button>
-                                    <button class="shelf-circle-btn" onclick="slideAppTrack('trendingMoviesTrack', 1)" aria-label="Slide Right"><ion-icon name="chevron-forward-outline"></ion-icon></button>
-                                </div>
-                            </div>
-                            <div class="app-cards-track" id="trendingMoviesTrack">
-                                <!-- 1. Just Play Dead -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/glALx6QaIgw1u4joXsnfHTjWi6D.jpg" alt="Just Play Dead" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Just Play Dead</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 4.5</span>
-                                            <span>2026</span>
-                                            <span>1h 36m</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 2. Batman: Knightfall Part 1... -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/9pKPTugulAt0EtH0g4gvJGffPSg.jpg" alt="Batman: Knightfall Part 1: Knightfall" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Batman: Knightfall Part 1...</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8</span>
-                                            <span>2022</span>
-                                            <span>1h 19m</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 3. Mutiny -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/pu2VxGlpGwffOx292w18b1tv96j.jpg" alt="Mutiny" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Mutiny</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 5.7</span>
-                                            <span>2026</span>
-                                            <span>1h 35m</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 4. Spider-Man: Brand New ... -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://image.tmdb.org/t/p/original/ghF1JYv7P5BgWHYfq9dqhqqNfz8.jpg" alt="Spider-Man: Brand New Day" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Spider-Man: Brand New ...</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.1</span>
-                                            <span>2026</span>
-                                            <span>2h 25m</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 5. The Odyssey -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg" alt="The Odyssey" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">The Odyssey</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.5</span>
-                                            <span>2026</span>
-                                            <span>2h 52m</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 6. Motor City -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/dx2dblJL3GAKcXXXPjC2FSaMTWW.jpg" alt="Motor City" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Motor City</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 6.1</span>
-                                            <span>2026</span>
-                                            <span>1h 43m</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 7. Toy Story 5 -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://upload.wikimedia.org/wikipedia/en/0/08/Toy_Story_5_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Toy Story 5" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Toy Story 5</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 7.5</span>
-                                            <span>2026</span>
-                                            <span>1h 42m</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 8. Obsession -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://image.tmdb.org/t/p/w600_and_h900_face/cUnADM9fsYV69Fk0TkMp7xVLnKj.jpg" alt="Obsession" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Obsession</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 7.4</span>
-                                            <span>2025</span>
-                                            <span>1h 49m</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 9. Minions & Monsters -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg" alt="Minions & Monsters" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Minions & Monsters</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 6.4</span>
-                                            <span>2026</span>
-                                            <span>1h 30m</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 10. The Last House -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/6JU7E8Vv2M11egkctWVOScxWR75.jpg" alt="The Last House" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">The Last House</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 5.5</span>
-                                            <span>2026</span>
-                                            <span>1h 52m</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 11. Disclosure Day -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/AnJ8IQJI23hNpYXVNaythu061Ru.jpg" alt="Disclosure Day" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Disclosure Day</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 6.4</span>
-                                            <span>2026</span>
-                                            <span>2h 25m</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon-box">
+                        <ion-icon name="speedometer-outline"></ion-icon>
+                    </div>
+                    <h3 class="feature-title">70% Lower Memory Usage</h3>
+                    <p class="feature-text">Unlike heavy browser tabs that hog memory, CineWatch runs on a streamlined desktop runtime with minimal RAM consumption.</p>
+                </div>
 
-                        <!-- SHELF 3: Popular Series -->
-                        <div class="app-shelf">
-                            <div class="app-shelf-header">
-                                <div class="app-shelf-title-wrap">
-                                    <div class="app-shelf-accent-bar"></div>
-                                    <h3 class="app-shelf-title">Popular Series</h3>
-                                </div>
-                                <div class="app-shelf-nav-arrows">
-                                    <button class="shelf-circle-btn" onclick="slideAppTrack('popularSeriesTrack', -1)" aria-label="Slide Left"><ion-icon name="chevron-back-outline"></ion-icon></button>
-                                    <button class="shelf-circle-btn" onclick="slideAppTrack('popularSeriesTrack', 1)" aria-label="Slide Right"><ion-icon name="chevron-forward-outline"></ion-icon></button>
-                                </div>
-                            </div>
-                            <div class="app-track-wrap">
-                                <button class="app-edge-arrow prev" onclick="slideAppTrack('popularSeriesTrack', -1)" aria-label="Slide Left"><ion-icon name="chevron-back-outline"></ion-icon></button>
-                                <div class="app-cards-track" id="popularSeriesTrack">
-                                    <!-- 1. Lanterns -->
-                                    <div class="app-movie-card">
-                                        <div class="app-card-poster">
-                                            <img src="https://image.tmdb.org/t/p/original/rzyXM5uB2Oci6u7aP3ijPxcTmfV.jpg" alt="Lanterns" loading="lazy" />
-                                        </div>
-                                        <div class="app-card-info">
-                                            <div class="app-card-title">Lanterns</div>
-                                            <div class="app-card-meta">
-                                                <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.8</span>
-                                                <span>2026</span>
-                                                <span>1 Season</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 2. Reacher -->
-                                    <div class="app-movie-card">
-                                        <div class="app-card-poster">
-                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg" alt="Reacher" loading="lazy" />
-                                        </div>
-                                        <div class="app-card-info">
-                                            <div class="app-card-title">Reacher</div>
-                                            <div class="app-card-meta">
-                                                <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8</span>
-                                                <span>2022</span>
-                                                <span>4 Seasons</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 3. Lucky -->
-                                    <div class="app-movie-card">
-                                        <div class="app-card-poster">
-                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg" alt="Lucky" loading="lazy" />
-                                        </div>
-                                        <div class="app-card-info">
-                                            <div class="app-card-title">Lucky</div>
-                                            <div class="app-card-meta">
-                                                <span class="app-card-rating"><ion-icon name="star"></ion-icon> 6.7</span>
-                                                <span>2026</span>
-                                                <span>1 Season</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 4. Silo -->
-                                    <div class="app-movie-card">
-                                        <div class="app-card-poster">
-                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg" alt="Silo" loading="lazy" />
-                                        </div>
-                                        <div class="app-card-info">
-                                            <div class="app-card-title">Silo</div>
-                                            <div class="app-card-meta">
-                                                <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.1</span>
-                                                <span>2023</span>
-                                                <span>3 Seasons</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 5. One Piece -->
-                                    <div class="app-movie-card">
-                                        <div class="app-card-poster">
-                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg" alt="One Piece" loading="lazy" />
-                                        </div>
-                                        <div class="app-card-info">
-                                            <div class="app-card-title">One Piece</div>
-                                            <div class="app-card-meta">
-                                                <span class="app-card-rating"><ion-icon name="star"></ion-icon> 9</span>
-                                                <span>1999</span>
-                                                <span>23 Seasons</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 6. Ted Lasso -->
-                                    <div class="app-movie-card">
-                                        <div class="app-card-poster">
-                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg" alt="Ted Lasso" loading="lazy" />
-                                        </div>
-                                        <div class="app-card-info">
-                                            <div class="app-card-title">Ted Lasso</div>
-                                            <div class="app-card-meta">
-                                                <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.7</span>
-                                                <span>2020</span>
-                                                <span>4 Seasons</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 7. X-Men '97 -->
-                                    <div class="app-movie-card">
-                                        <div class="app-card-poster">
-                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg" alt="X-Men '97" loading="lazy" />
-                                        </div>
-                                        <div class="app-card-info">
-                                            <div class="app-card-title">X-Men '97</div>
-                                            <div class="app-card-meta">
-                                                <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.7</span>
-                                                <span>2024</span>
-                                                <span>2 Seasons</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 8. Lioness -->
-                                    <div class="app-movie-card">
-                                        <div class="app-card-poster">
-                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg" alt="Lioness" loading="lazy" />
-                                        </div>
-                                        <div class="app-card-info">
-                                            <div class="app-card-title">Lioness</div>
-                                            <div class="app-card-meta">
-                                                <span class="app-card-rating"><ion-icon name="star"></ion-icon> 6.7</span>
-                                                <span>2023</span>
-                                                <span>3 Seasons</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 9. Outer Banks -->
-                                    <div class="app-movie-card">
-                                        <div class="app-card-poster">
-                                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/ovDgO2LPfwdVRfvScAqo9aMiIW.jpg" alt="Outer Banks" loading="lazy" />
-                                        </div>
-                                        <div class="app-card-info">
-                                            <div class="app-card-title">Outer Banks</div>
-                                            <div class="app-card-meta">
-                                                <span class="app-card-rating"><ion-icon name="star"></ion-icon> 7.5</span>
-                                                <span>2020</span>
-                                                <span>5 Seasons</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="app-edge-arrow next" onclick="slideAppTrack('popularSeriesTrack', 1)" aria-label="Slide Right"><ion-icon name="chevron-forward-outline"></ion-icon></button>
-                            </div>
-                        </div>
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon-box">
+                        <ion-icon name="server-outline"></ion-icon>
+                    </div>
+                    <h3 class="feature-title">Intelligent Multi-Server Fallback</h3>
+                    <p class="feature-text">Dynamic streaming failover automatically switches streams if a server slows down, ensuring unbroken entertainment.</p>
+                </div>
+            </div>
+        </section>
 
-                        <!-- SHELF 4: Anime Hits -->
-                        <div class="app-shelf">
-                            <div class="app-shelf-header">
-                                <div class="app-shelf-title-wrap">
-                                    <div class="app-shelf-accent-bar"></div>
-                                    <h3 class="app-shelf-title">Anime Hits</h3>
-                                </div>
-                                <div class="app-shelf-nav-arrows">
-                                    <button class="shelf-circle-btn" onclick="slideAppTrack('animeHitsTrack', -1)" aria-label="Slide Left"><ion-icon name="chevron-back-outline"></ion-icon></button>
-                                    <button class="shelf-circle-btn" onclick="slideAppTrack('animeHitsTrack', 1)" aria-label="Slide Right"><ion-icon name="chevron-forward-outline"></ion-icon></button>
-                                </div>
-                            </div>
-                            <div class="app-cards-track" id="animeHitsTrack">
-                                <!-- 1. One Piece -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg" alt="One Piece" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">One Piece</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 9</span>
-                                            <span>1999</span>
-                                            <span>23 Seasons</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 2. Dragon Ball Z -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/oQ5CnVj3TRifXl2bIOri6H6rfNe.jpg" alt="Dragon Ball Z" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Dragon Ball Z</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.8</span>
-                                            <span>1989</span>
-                                            <span>9 Seasons</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 3. Dragon Ball DAIMA -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/lMULbSFZNXUC87MqOZQ4SSV9DXI.jpg" alt="Dragon Ball DAIMA" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Dragon Ball DAIMA</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.5</span>
-                                            <span>2024</span>
-                                            <span>1 Season</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 4. Dragon Ball Super -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/qEUrbXJ2qt4Rg84Btlx4STOhgte.jpg" alt="Dragon Ball Super" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Dragon Ball Super</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 7.8</span>
-                                            <span>2015</span>
-                                            <span>1 Season</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 5. Dragon Ball GT -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://image.tmdb.org/t/p/original/fzH3xKyIvLnq1paTrjecNyWQmRh.jpg" alt="Dragon Ball GT" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Dragon Ball GT</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 7.5</span>
-                                            <span>1996</span>
-                                            <span>1 Season</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 6. Dragon Ball Z Kai -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/ojsPI8fNwcecKLhVC4rB4ZZhFMc.jpg" alt="Dragon Ball Z Kai" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Dragon Ball Z Kai</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.3</span>
-                                            <span>2009</span>
-                                            <span>6 Seasons</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 7. Naruto -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/xppeysfvDKVx775MFuH8Z9BlpMk.jpg" alt="Naruto" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Naruto</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.4</span>
-                                            <span>2002</span>
-                                            <span>4 Seasons</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 8. Naruto Shippuden -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://image.tmdb.org/t/p/original/3V7kzJX7hvF0H9CDJsgcWKXTSsR.jpg" alt="Naruto Shippuden" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Naruto Shippuden</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.7</span>
-                                            <span>2007</span>
-                                            <span>20 Seasons</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 9. Boruto: Naruto Next Gen... -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/e0B6i48kxdRkMcK4tR4YNfXGWOc.jpg" alt="Boruto: Naruto Next Generations" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Boruto: Naruto Next Gen...</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8</span>
-                                            <span>2017</span>
-                                            <span>1 Season</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 10. Bleach -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg" alt="Bleach" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">Bleach</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.4</span>
-                                            <span>2004</span>
-                                            <span>9 Seasons</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 11. My Hero Academi... -->
-                                <div class="app-movie-card">
-                                    <div class="app-card-poster">
-                                        <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/phuYuzqWW9ru8EA3HVjE9W2Rr3M.jpg" alt="My Hero Academia" loading="lazy" />
-                                    </div>
-                                    <div class="app-card-info">
-                                        <div class="app-card-title">My Hero Academi...</div>
-                                        <div class="app-card-meta">
-                                            <span class="app-card-rating"><ion-icon name="star"></ion-icon> 8.6</span>
-                                            <span>2016</span>
-                                            <span>7 Seasons</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <!-- System Requirements Section -->
+        <section class="specs-section" id="requirements">
+            <div class="specs-card">
+                <div class="section-header" style="margin-bottom: 1.5rem; text-align: left; max-width: 100%;">
+                    <span class="section-eyebrow">Compatibility</span>
+                    <h2 class="section-title" style="font-size: 2rem;">System Requirements</h2>
+                    <p class="section-desc">Designed to run effortlessly across modern Windows desktops and laptops.</p>
+                </div>
 
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <span class="spec-label">Operating System</span>
+                        <span class="spec-value">Windows 10 / 11</span>
+                        <span class="spec-sub">64-bit architecture (x64)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Processor</span>
+                        <span class="spec-value">Intel Core i3 / AMD Ryzen 3</span>
+                        <span class="spec-sub">Or equivalent 1.8 GHz+</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">System Memory</span>
+                        <span class="spec-value">4 GB RAM</span>
+                        <span class="spec-sub">8 GB recommended for 4K</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Disk Storage</span>
+                        <span class="spec-value">250 MB Free Space</span>
+                        <span class="spec-sub">Fast SSD recommended</span>
                     </div>
                 </div>
             </div>
+        </section>
 
-        </div>
+        <!-- 3-Step Setup Guide -->
+        <section class="steps-section" id="setup">
+            <div class="section-header">
+                <span class="section-eyebrow">Quick Setup</span>
+                <h2 class="section-title">Ready in Less Than 30 Seconds</h2>
+                <p class="section-desc">Getting started with CineWatch on your PC is completely frictionless.</p>
+            </div>
+
+            <div class="steps-grid">
+                <!-- Step 1 -->
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Download Installer</h3>
+                    <p class="step-desc">Click the download button above to grab the official <code>CineWatch-Setup.exe</code> installer package.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Run the Setup</h3>
+                    <p class="step-desc">Double-click the installer. It configures and installs CineWatch cleanly in just a few seconds.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Launch & Enjoy</h3>
+                    <p class="step-desc">Open CineWatch directly from your desktop or Start Menu and dive into unlimited cinematic entertainment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom Callout Banner -->
+        <section class="bottom-cta-banner">
+            <h2 class="bottom-cta-title">Upgrade Your Viewing Experience Today</h2>
+            <p class="bottom-cta-desc">Join thousands of cinema lovers enjoying cinema-quality entertainment with zero ads and unmatched speeds.</p>
+            <div class="bottom-btn-group">
+                <a href="CineWatch-Setup.exe" class="btn-premium-download" download title="Download CineWatch Setup for Windows">
+                    <div class="btn-icon-wrap">
+                        <ion-icon name="logo-windows"></ion-icon>
+                    </div>
+                    <div class="btn-text-content">
+                        <span class="btn-text-main">
+                            Download CineWatch for Windows
+                            <ion-icon name="arrow-down-outline"></ion-icon>
+                        </span>
+                        <span class="btn-text-sub">Windows 10 / 11 • 64-bit • v1.2.6</span>
+                    </div>
+                </a>
+
+                <button class="btn-premium-glass" onclick="navigateBack()" title="Return to Home or previous page">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                    <span>Go Back to Home</span>
+                </button>
+            </div>
+        </section>
+
     </main>
 
-    <!-- Interactive Showcase Script -->
+    <!-- Professional Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="index.html" class="footer-brand">
+                <ion-icon name="ticket"></ion-icon>
+                <span>CineWatch</span>
+            </a>
+
+            <div class="footer-copy">
+                &copy; 2026 CineWatch. All rights reserved. Free, personal streaming hub.
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="index.html#explore" class="footer-link">Explore</a>
+                <a href="#features" class="footer-link">Features</a>
+                <a href="#requirements" class="footer-link">Requirements</a>
+                <button class="btn-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Back to top" aria-label="Back to top">
+                    <ion-icon name="chevron-up-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Navigation Scripts -->
     <script>
-        const featuredData = [
-            {
-                title: "The Runner",
-                rating: "4.3",
-                year: "2026",
-                genres: "Animation \u2022 Comedy \u2022 Family",
-                desc: "Experience this blockbuster release in full HD quality with crystal-clear audio and lightning-fast multi-server streaming.",
-                backdrop: "https://image.tmdb.org/t/p/original/1KohYajglCHxTgj2NY2WTI7gn9v.jpg"
-            },
-            {
-                title: "Just Play Dead",
-                rating: "4.5",
-                year: "2026",
-                genres: "Drama \u2022 Thriller",
-                desc: "Criminal fake death for insurance money, frame wife's lover; wife plot kill him for real, both race outmaneuver each other.",
-                backdrop: "https://image.tmdb.org/t/p/original/7gf2GLNZ6lqbbTRuY9Vvrar0z3k.jpg"
-            },
-            {
-                title: "Coyote vs. Acme",
-                rating: "7.6",
-                year: "2026",
-                genres: "Animation \u2022 Comedy \u2022 Family",
-                desc: "Wile E. Coyote sues the Acme Corporation after decades of faulty products fail to catch the Road Runner, teaming up with a down-on-his-luck billboard attorney.",
-                backdrop: "https://image.tmdb.org/t/p/original/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg"
-            },
-            {
-                title: "Mutiny",
-                rating: "5.7",
-                year: "2026",
-                genres: "Action \u2022 Thriller",
-                desc: "Ex-Special Forces agent Cole Reed see billionaire industrialist boss framed and murdered in front of him. Forced on run as chief suspect, Reed uncover massive conspiracy.",
-                backdrop: "https://image.tmdb.org/t/p/original/qDa0fqDqIBCovRp975RvtGPcuN3.jpg"
-            },
-            {
-                title: "Batman: Knightfall",
-                rating: "8.0",
-                year: "2026",
-                genres: "Action \u2022 Animation \u2022 Crime",
-                desc: "Bane unleashes every dangerous villain from Arkham Asylum loose on Gotham, wearing Batman down with no rest until fateful showdown.",
-                backdrop: "https://image.tmdb.org/t/p/original/caBIySpwuFi2i7ynvHIlnxJLOdN.jpg"
-            },
-            {
-                title: "Mayday",
-                rating: "6.9",
-                year: "2026",
-                genres: "Action \u2022 Adventure \u2022 Comedy",
-                desc: "In 1987 Cold War time, American pilot crash land deep inside dangerous Soviet territory, forced to team up with weird eccentric former KGB agent.",
-                backdrop: "https://image.tmdb.org/t/p/original/4gyx49ibwQslyrwuUS1c58PJEEd.jpg"
-            }
-        ];
-
-        function setFeatured(index) {
-            const data = featuredData[index];
-            if (!data) return;
-
-            const heroSpotlight = document.getElementById('heroSpotlight');
-            const heroTitle = document.getElementById('heroTitle');
-            const heroRating = document.getElementById('heroRating');
-            const heroYear = document.getElementById('heroYear');
-            const heroGenres = document.getElementById('heroGenres');
-            const heroDesc = document.getElementById('heroDesc');
-            const heroCounter = document.getElementById('heroCounter');
-
-            if (heroSpotlight) heroSpotlight.style.backgroundImage = `url('${data.backdrop}')`;
-            if (heroTitle) heroTitle.textContent = data.title;
-            if (heroRating) heroRating.textContent = data.rating;
-            if (heroYear) heroYear.textContent = data.year;
-            if (heroGenres) heroGenres.textContent = data.genres;
-            if (heroDesc) heroDesc.textContent = data.desc;
-            if (heroCounter) heroCounter.textContent = `0${index + 1} / 06`;
-
-            document.querySelectorAll('.app-hero-dots-row .app-dot').forEach((d, i) => {
-                d.classList.toggle('active', i === index);
-            });
-        }
-
-        function slideAppTrack(trackId, direction) {
-            const track = document.getElementById(trackId);
-            if (track) {
-                track.scrollBy({ left: direction * 320, behavior: 'smooth' });
+        function navigateBack() {
+            if (window.history.length > 1 && document.referrer && document.referrer.indexOf(window.location.host) !== -1) {
+                window.history.back();
+            } else {
+                window.location.href = 'index.html';
             }
         }
     </script>
