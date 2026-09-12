@@ -11,8 +11,8 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260908_407">
-    <link rel="stylesheet" href="browse-fix.css?v=20260908_407">
+    <link rel="stylesheet" href="movie.css?v=20260908_409">
+    <link rel="stylesheet" href="browse-fix.css?v=20260908_409">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -85,6 +85,20 @@
         .cf-heading { font-size: 1.2rem; }
         .cf-brand-text { font-size: 1.4rem; }
       }
+
+      /* ── Top Scroll Progress Bar ────────────────────────── */
+      .cw-scroll-progress-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background: linear-gradient(90deg, #e50914, #ff3b47, #ff6b6b);
+        z-index: 9999999;
+        transition: width 0.08s linear;
+        box-shadow: 0 0 10px rgba(229, 9, 20, 0.85), 0 0 18px rgba(229, 9, 20, 0.45);
+        pointer-events: none;
+      }
     </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -101,10 +115,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_6333" defer></script>
-    <script src="series-data.js?v=20260818_6333" defer></script>
-    <script src="anime-data.js?v=20260818_6333" defer></script>
-    <script src="movie.js?v=20260908_407" defer></script>
+    <script src="movies-data.js?v=20260818_6335" defer></script>
+    <script src="series-data.js?v=20260818_6335" defer></script>
+    <script src="anime-data.js?v=20260818_6335" defer></script>
+    <script src="movie.js?v=20260908_409" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
