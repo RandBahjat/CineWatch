@@ -28,7 +28,7 @@
     "productName": "CineWatch",
     "icon": "icon-512.png",
     "directories": {
-      "output": "dist"
+      "output": "C:\\CinewatchBuild"
     },
     "artifactName": "CineWatch-v${version}-Setup.${ext}",
     "nsis": {
