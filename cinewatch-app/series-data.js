@@ -14,8 +14,8 @@ window._SERIES_DATA = [
     age: 'TV-MA',
     duration: '1h',
     genres: [
-      'Crime',
       'Drama',
+      '',
       'Mystery'
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/2mwgHfOyrFrmvozjFoEXHRdfGhv.jpg',
