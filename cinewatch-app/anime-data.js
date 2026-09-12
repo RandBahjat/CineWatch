@@ -25154,11 +25154,7 @@ window._ANIME_DATA = [
     overviewKurdish: "دە ساڵ دوای شەڕی ڕێوڕەسمییەکە، کوڕێکی هەرزەکار بە ناوی جودای یووکی (جەیدن یووکی) بەڕێدەکەوێت بۆ ئەوەی بچێتە ئەکادیمیای دوێڵ کە لەسەر دوورگەیەکی دوورەدەست لە کەناراوەکانی ژاپۆن هەڵکەوتووە. لەوێ چاوی بە خوێندکارانی هاوڕێی دەکەوێت و چەندین هاوڕێ و دوژمن پەیدا دەکات. جودای دەخرێتە نزمترین ئاستەوە کە ئۆسیریس سوور (سلایفەر سوور)ـە، بەڵام بەردەوام دەبێت لە تاقیکردنەوەی تواناکانی بەرامبەر خوێندکاران و مامۆستایان تا بەهای خۆی وەک دوێڵستێک بسەلمێنێت و ڕێزی هەمووان بەدەستبهێنێت.",
     director: "Kazuki Takahashi",
     cast: [
-        "KENN",
-        "Sanae Kobayashi",
-        "Hiroshi Shimozaki",
-        "Masami Suzuki",
-        "Taiki Matsuno"
+        "KENN, Matthew Labyorteaux, Priscilla Everett, Wayne Grayson, Tony Salerno, Oliver Wyman"
     ],
     trending: false,
     featured: false,
