@@ -18,7 +18,11 @@
     (navigator.userAgent.includes('Electron') || (typeof window !== 'undefined' && window.process && window.process.type === 'renderer'));
 
   function isVerified() {
-    // Always show verification on every page load
+    // Always skip gate on localhost / local development
+    var host = window.location.hostname;
+    if (host === 'localhost' || host === '127.0.0.1' || host === '' || window.location.protocol === 'file:') {
+      return true;
+    }
     // Only bypass for Electron desktop app
     if (window.location.protocol === 'file:' && typeof navigator !== 'undefined' && navigator.userAgent.includes('Electron')) {
       return true;
