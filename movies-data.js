@@ -13973,8 +13973,8 @@ window._MOVIES_DATA = [
   {
     title: "Mean Girls 2",
     type: "Movie",
-    year: 2004,
-    rating: 7.1,
+    year: 2011,
+    rating: 4.1,
     age: "PG-13",
     duration: "1h 37m",
     genres: [
