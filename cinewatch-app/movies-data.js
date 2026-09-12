@@ -13982,7 +13982,7 @@ window._MOVIES_DATA = [
 
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/34zKHT98ZgSCz6ag1ZNBul7f1Wu.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/3PiKtDl1s0tGHmqRjnWZbBVgEEr.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/ynQUQE3pQVYsLtrhc3lUtr2maE4.jpg",
     videoUrl: "10625",
     trailerUrl: "https://youtu.be/oDU84nmSDZY?si=WWxn0RTnJf2rOkxD",
     overview: "Cady Heron is a teenager who spent her childhood home-schooled in Africa before moving to a suburban public high school in America. She quickly gets pulled into the elite, superficial girl clique called The Plastics, led by the ruthless Regina George. When Cady falls for Regina's ex-boyfriend Aaron Samuels, she sets out to secretly sabotage Regina, only to watch herself slowly transform into the very thing she hated.",
