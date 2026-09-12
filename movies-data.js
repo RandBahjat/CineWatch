@@ -13952,7 +13952,7 @@ window._MOVIES_DATA = [
     age: "PG-13",
     duration: "1h 37m",
     genres: [
-      "Action",
+      "Comedy",
       "Adventure",
       "Mystery",
       "Sci-Fi"
