@@ -11,8 +11,8 @@
 
       gtag('config', 'G-LSJ9WDT6RX');
     </script>
-    <link rel="stylesheet" href="movie.css?v=20260908_409">
-    <link rel="stylesheet" href="browse-fix.css?v=20260908_409">
+    <link rel="stylesheet" href="movie.css?v=20260908_411">
+    <link rel="stylesheet" href="browse-fix.css?v=20260908_411">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -115,10 +115,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_6335" defer></script>
-    <script src="series-data.js?v=20260818_6335" defer></script>
-    <script src="anime-data.js?v=20260818_6335" defer></script>
-    <script src="movie.js?v=20260908_409" defer></script>
+    <script src="movies-data.js?v=20260818_6337" defer></script>
+    <script src="series-data.js?v=20260818_6337" defer></script>
+    <script src="anime-data.js?v=20260818_6337" defer></script>
+    <script src="movie.js?v=20260908_411" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -127,6 +127,20 @@
 </head>
 
 <body class="view-home">
+    <!-- Top Scroll Progress Indicator -->
+    <div id="cwScrollProgressBar" class="cw-scroll-progress-bar"></div>
+    <script>
+      (function() {
+        var bar = document.getElementById('cwScrollProgressBar');
+        if (!bar) return;
+        window.addEventListener('scroll', function() {
+          var top = window.pageYOffset || document.documentElement.scrollTop;
+          var max = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var pct = max > 0 ? (top / max) * 100 : 0;
+          bar.style.width = Math.min(100, Math.max(0, pct)) + '%';
+        }, { passive: true });
+      })();
+    </script>
     <svg width="0" height="0" style="position: absolute; visibility: hidden;">
       <defs>
         <linearGradient id="redGradient" x1="0%" y1="0%" x2="0%" y2="100%">
