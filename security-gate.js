@@ -5,9 +5,9 @@
 (function () {
   'use strict';
 
+  // Storage keys kept for token saving only (no persistence bypass)
   const STORAGE_KEY_SESSION = 'cw_cf_verified';
   const STORAGE_KEY_TIME = 'cw_cf_verified_time';
-  const VERIFY_DURATION_MS = 24 * 60 * 60 * 1000; // 24 hours persistence
 
   // Test mode flag support (?verify=1)
   const urlParams = new URLSearchParams(window.location.search);
@@ -18,24 +18,12 @@
     (navigator.userAgent.includes('Electron') || (typeof window !== 'undefined' && window.process && window.process.type === 'renderer'));
 
   function isVerified() {
-    if (isTestMode) return false;
-    
-    // Only bypass if running as local file in desktop app
+    // Always show verification on every page load
+    // Only bypass for Electron desktop app
     if (window.location.protocol === 'file:' && typeof navigator !== 'undefined' && navigator.userAgent.includes('Electron')) {
       return true;
     }
-
-    try {
-      if (sessionStorage.getItem(STORAGE_KEY_SESSION) === 'true') {
-        return true;
-      }
-      const verifiedTime = localStorage.getItem(STORAGE_KEY_TIME);
-      if (verifiedTime && Date.now() - parseInt(verifiedTime, 10) < VERIFY_DURATION_MS) {
-        return true;
-      }
-    } catch (e) {
-      // Storage access blocked fallback
-    }
+    // Always return false to enforce challenge on every reload
     return false;
   }
 
