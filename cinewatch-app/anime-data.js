@@ -25147,7 +25147,7 @@ window._ANIME_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/1cKV1MXj1D9NJBXS1zlmkEYqGgY.jpg",
     videoUrl: "12536",
     malId: 482,
-    trailerUrl: "https://youtu.be/bDfgAKPrfq8?si=WWV7rU5zC-Gq6Wv7",
+    trailerUrl: "https://youtu.be/CN_DjYDHEVU?si=loSMiD0WVLDoCXBm",
     anilistId: 482,
     animeSlug: "yu-gi-oh-duel-monsters-gx",
     overview: "Ten years after the Ceremonial Battle, a teenage boy named Judai Yuuki (Jaden Yuki) heads off in order to join the Duel Academia (Duel Academy) located on a remote island off the coast of Japan. There he meets his fellow students and gains a few friends, along with a few enemies. Judai is put into the lowest rank of Osiris Red (Slifer Red), but he continues to test his skills against the students and faculty to prove his worth as a Duelist and earn the respect of everyone around him.",
