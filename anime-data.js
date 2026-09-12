@@ -25126,4 +25126,769 @@ window._ANIME_DATA = [
       }
     ]
   }
-]
+,
+  {
+    title: "Yu-Gi-Oh! GX",
+    type: "TV Show",
+    isAnime: true,
+    year: 2004,
+    rating: 7.9,
+    age: "TV-Y7",
+    duration: "24m",
+    genres: [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Comedy",
+        "Fantasy",
+        "Sci-Fi"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dw9mYcs23tn3gxu2gbsYAfpX2Ye.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/1cKV1MXj1D9NJBXS1zlmkEYqGgY.jpg",
+    videoUrl: "12536",
+    malId: 482,
+    trailerUrl: "https://youtu.be/bDfgAKPrfq8?si=WWV7rU5zC-Gq6Wv7",
+    anilistId: 482,
+    animeSlug: "yu-gi-oh-duel-monsters-gx",
+    overview: "Ten years after the Ceremonial Battle, a teenage boy named Judai Yuuki (Jaden Yuki) heads off in order to join the Duel Academia (Duel Academy) located on a remote island off the coast of Japan. There he meets his fellow students and gains a few friends, along with a few enemies. Judai is put into the lowest rank of Osiris Red (Slifer Red), but he continues to test his skills against the students and faculty to prove his worth as a Duelist and earn the respect of everyone around him.",
+    overviewKurdish: "دە ساڵ دوای شەڕی ڕێوڕەسمییەکە، کوڕێکی هەرزەکار بە ناوی جودای یووکی (جەیدن یووکی) بەڕێدەکەوێت بۆ ئەوەی بچێتە ئەکادیمیای دوێڵ کە لەسەر دوورگەیەکی دوورەدەست لە کەناراوەکانی ژاپۆن هەڵکەوتووە. لەوێ چاوی بە خوێندکارانی هاوڕێی دەکەوێت و چەندین هاوڕێ و دوژمن پەیدا دەکات. جودای دەخرێتە نزمترین ئاستەوە کە ئۆسیریس سوور (سلایفەر سوور)ـە، بەڵام بەردەوام دەبێت لە تاقیکردنەوەی تواناکانی بەرامبەر خوێندکاران و مامۆستایان تا بەهای خۆی وەک دوێڵستێک بسەلمێنێت و ڕێزی هەمووان بەدەستبهێنێت.",
+    director: "Hatsuki Tsuji",
+    cast: [
+        "KENN",
+        "Sanae Kobayashi",
+        "Hiroshi Shimozaki",
+        "Masami Suzuki",
+        "Taiki Matsuno"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+        {
+            season: 1,
+            episodes: [
+                {
+                    episode: 1,
+                    title: "The Next King of Games"
+                },
+                {
+                    episode: 2,
+                    title: "Welcome to Duel Academy"
+                },
+                {
+                    episode: 3,
+                    title: "A Duel in Love"
+                },
+                {
+                    episode: 4,
+                    title: "Raring to Go"
+                },
+                {
+                    episode: 5,
+                    title: "The Shadow Duelist (1)"
+                },
+                {
+                    episode: 6,
+                    title: "The Shadow Duelist (2)"
+                },
+                {
+                    episode: 7,
+                    title: "Duel and Unusual Punishment"
+                },
+                {
+                    episode: 8,
+                    title: "For the Sake of Syrus"
+                },
+                {
+                    episode: 9,
+                    title: "Family Business"
+                },
+                {
+                    episode: 10,
+                    title: "Tag Team Trial (1)"
+                },
+                {
+                    episode: 11,
+                    title: "Tag Team Trial (2)"
+                },
+                {
+                    episode: 12,
+                    title: "Formula for Success"
+                },
+                {
+                    episode: 13,
+                    title: "Monkey See, Monkey Duel"
+                },
+                {
+                    episode: 14,
+                    title: "A Spirit Summoned"
+                },
+                {
+                    episode: 15,
+                    title: "Courting Alexis"
+                },
+                {
+                    episode: 16,
+                    title: "The Duel Giant"
+                },
+                {
+                    episode: 17,
+                    title: "Nature of the Draw"
+                },
+                {
+                    episode: 18,
+                    title: "The King of Copycats (1)"
+                },
+                {
+                    episode: 19,
+                    title: "The King of Copycats (2)"
+                },
+                {
+                    episode: 20,
+                    title: "The Maiden In Love"
+                },
+                {
+                    episode: 21,
+                    title: "The Duel Off (1)"
+                },
+                {
+                    episode: 22,
+                    title: "The Duel Off (2)"
+                },
+                {
+                    episode: 23,
+                    title: "The Little Belowski"
+                },
+                {
+                    episode: 24,
+                    title: "The New Chazz"
+                },
+                {
+                    episode: 25,
+                    title: "The School Duel (1)"
+                },
+                {
+                    episode: 26,
+                    title: "The School Duel (2)"
+                },
+                {
+                    episode: 27,
+                    title: "Grave Risk (1)"
+                },
+                {
+                    episode: 28,
+                    title: "Grave Risk (2)"
+                },
+                {
+                    episode: 29,
+                    title: "Doomsday Day (1)"
+                },
+                {
+                    episode: 30,
+                    title: "Doomsday Day (2)"
+                },
+                {
+                    episode: 31,
+                    title: "Field of Screams (1)"
+                },
+                {
+                    episode: 32,
+                    title: "Field of Screams (2)"
+                },
+                {
+                    episode: 33,
+                    title: "Field of Screams (3)"
+                },
+                {
+                    episode: 34,
+                    title: "The Fear Factor"
+                },
+                {
+                    episode: 35,
+                    title: "Sibling Rivalry"
+                },
+                {
+                    episode: 36,
+                    title: "Duel Distractions (1)"
+                },
+                {
+                    episode: 37,
+                    title: "Duel Distractions (2)"
+                },
+                {
+                    episode: 38,
+                    title: "Get Yarr Game On!"
+                },
+                {
+                    episode: 39,
+                    title: "The Dark Scorpions"
+                },
+                {
+                    episode: 40,
+                    title: "A Lying Legend"
+                },
+                {
+                    episode: 41,
+                    title: "A Reason to Win"
+                },
+                {
+                    episode: 42,
+                    title: "Duel Monsters Spirit Day"
+                },
+                {
+                    episode: 43,
+                    title: "Hearts Are Wild"
+                },
+                {
+                    episode: 44,
+                    title: "The Seventh Shadow Rider"
+                },
+                {
+                    episode: 45,
+                    title: "Amnael's Endgame (1)"
+                },
+                {
+                    episode: 46,
+                    title: "Amnael's Endgame (2)"
+                },
+                {
+                    episode: 47,
+                    title: "Chazz-anova"
+                },
+                {
+                    episode: 48,
+                    title: "Rise of the Sacred Beasts (1)"
+                },
+                {
+                    episode: 49,
+                    title: "Rise of the Sacred Beasts (2)"
+                },
+                {
+                    episode: 50,
+                    title: "Magna Chum Laude"
+                },
+                {
+                    episode: 51,
+                    title: "The Graduation Match (1)"
+                },
+                {
+                    episode: 52,
+                    title: "The Graduation Match (2)"
+                },
+                {
+                    episode: 53,
+                    title: "Back to Duel"
+                },
+                {
+                    episode: 54,
+                    title: "Champion or Chazz-been"
+                },
+                {
+                    episode: 55,
+                    title: "A Hassleberry Hounding"
+                },
+                {
+                    episode: 56,
+                    title: "Sad But Truesdale"
+                },
+                {
+                    episode: 57,
+                    title: "The Demon"
+                },
+                {
+                    episode: 58,
+                    title: "A New Breed of Hero (1)"
+                },
+                {
+                    episode: 59,
+                    title: "A New Breed of Hero (2)"
+                },
+                {
+                    episode: 60,
+                    title: "Pop Goes the Duel"
+                },
+                {
+                    episode: 61,
+                    title: "I've Seen the Light"
+                },
+                {
+                    episode: 62,
+                    title: "A Greater Porpoise"
+                },
+                {
+                    episode: 63,
+                    title: "Curry Worries"
+                },
+                {
+                    episode: 64,
+                    title: "Camaraderie Contest"
+                },
+                {
+                    episode: 65,
+                    title: "No Pain, No Game"
+                },
+                {
+                    episode: 66,
+                    title: "Going Bananas"
+                },
+                {
+                    episode: 67,
+                    title: "Homecoming Duel (1)"
+                },
+                {
+                    episode: 68,
+                    title: "Homecoming Duel (2)"
+                },
+                {
+                    episode: 69,
+                    title: "Dormitory Demolition"
+                },
+                {
+                    episode: 70,
+                    title: "Obelisk White?"
+                },
+                {
+                    episode: 71,
+                    title: "Duel Fellas"
+                },
+                {
+                    episode: 72,
+                    title: "Not Playing with a Full Deck"
+                },
+                {
+                    episode: 73,
+                    title: "Source of Strength"
+                },
+                {
+                    episode: 74,
+                    title: "Happily Never After"
+                },
+                {
+                    episode: 75,
+                    title: "Taken by Storm (1)"
+                },
+                {
+                    episode: 76,
+                    title: "Taken by Storm (2)"
+                },
+                {
+                    episode: 77,
+                    title: "J-Dawg and T-Bone"
+                },
+                {
+                    episode: 78,
+                    title: "Mirror, Mirror (1)"
+                },
+                {
+                    episode: 79,
+                    title: "Mirror, Mirror (2)"
+                },
+                {
+                    episode: 80,
+                    title: "What a Doll!"
+                },
+                {
+                    episode: 81,
+                    title: "Let's Make a Duel"
+                },
+                {
+                    episode: 82,
+                    title: "Magnetic Personality"
+                },
+                {
+                    episode: 83,
+                    title: "Schooling the Master"
+                },
+                {
+                    episode: 84,
+                    title: "Generation neXt"
+                },
+                {
+                    episode: 85,
+                    title: "Rah, Rah Ra!"
+                },
+                {
+                    episode: 86,
+                    title: "The Art of the Duel"
+                },
+                {
+                    episode: 87,
+                    title: "Blinded by the Light (1)"
+                },
+                {
+                    episode: 88,
+                    title: "Blinded by the Light (2)"
+                },
+                {
+                    episode: 89,
+                    title: "The Darkness Within"
+                },
+                {
+                    episode: 90,
+                    title: "Pro-Dueling"
+                },
+                {
+                    episode: 91,
+                    title: "Don't Fear the Reaper"
+                },
+                {
+                    episode: 92,
+                    title: "Duel for Hire"
+                },
+                {
+                    episode: 93,
+                    title: "Heart of Ice (1)"
+                },
+                {
+                    episode: 94,
+                    title: "Heart of Ice (2)"
+                },
+                {
+                    episode: 95,
+                    title: "Tough Love"
+                },
+                {
+                    episode: 96,
+                    title: "It's All Relative"
+                },
+                {
+                    episode: 97,
+                    title: "The Dark Light"
+                },
+                {
+                    episode: 98,
+                    title: "Ultimate Destiny"
+                },
+                {
+                    episode: 99,
+                    title: "The Key Factor"
+                },
+                {
+                    episode: 100,
+                    title: "The Phoenix Has Landed (1)"
+                },
+                {
+                    episode: 101,
+                    title: "The Phoenix Has Landed (2)"
+                },
+                {
+                    episode: 102,
+                    title: "The Hands of Justice (1)"
+                },
+                {
+                    episode: 103,
+                    title: "The Hands of Justice (2)"
+                },
+                {
+                    episode: 104,
+                    title: "Future Changes"
+                },
+                {
+                    episode: 105,
+                    title: "Third Time's a Charm"
+                },
+                {
+                    episode: 106,
+                    title: "Jewel of a Duel (1)"
+                },
+                {
+                    episode: 107,
+                    title: "Jewel of a Duel (2)"
+                },
+                {
+                    episode: 108,
+                    title: "Hanging with Axel (1)"
+                },
+                {
+                    episode: 109,
+                    title: "Hanging with Axel (2)"
+                },
+                {
+                    episode: 110,
+                    title: "Primal Instinct"
+                },
+                {
+                    episode: 111,
+                    title: "Head in the Clouds (1)"
+                },
+                {
+                    episode: 112,
+                    title: "Head in the Clouds (2)"
+                },
+                {
+                    episode: 113,
+                    title: "Win Mr. Stein's Duel (1)"
+                },
+                {
+                    episode: 114,
+                    title: "Win Mr. Stein's Duel (2)"
+                },
+                {
+                    episode: 115,
+                    title: "Trapper Keeper (1)"
+                },
+                {
+                    episode: 116,
+                    title: "Trapper Keeper (2)"
+                },
+                {
+                    episode: 117,
+                    title: "Snake in the Grass (1)"
+                },
+                {
+                    episode: 118,
+                    title: "Snake in the Grass (2)"
+                },
+                {
+                    episode: 119,
+                    title: "Snake in the Grass (3)"
+                },
+                {
+                    episode: 120,
+                    title: "Inter-Dimensional Detention"
+                },
+                {
+                    episode: 121,
+                    title: "Sub-Desert Duel"
+                },
+                {
+                    episode: 122,
+                    title: "Night of the Living Duelists"
+                },
+                {
+                    episode: 123,
+                    title: "School Ghoul Duels"
+                },
+                {
+                    episode: 124,
+                    title: "Triple Play (1)"
+                },
+                {
+                    episode: 125,
+                    title: "Triple Play (2)"
+                },
+                {
+                    episode: 126,
+                    title: "Return of the Sacred Beasts"
+                },
+                {
+                    episode: 127,
+                    title: "Breaking the Sacred Seal"
+                },
+                {
+                    episode: 128,
+                    title: "A Dimension Deal"
+                },
+                {
+                    episode: 129,
+                    title: "Unleash the Dragon (1)"
+                },
+                {
+                    episode: 130,
+                    title: "Unleash the Dragon (2)"
+                },
+                {
+                    episode: 131,
+                    title: "All for One"
+                },
+                {
+                    episode: 132,
+                    title: "A New World Order"
+                },
+                {
+                    episode: 133,
+                    title: "Friend or Fiend"
+                },
+                {
+                    episode: 134,
+                    title: "Dueling with a Dark Army"
+                },
+                {
+                    episode: 135,
+                    title: "Turning the Page (1)"
+                },
+                {
+                    episode: 136,
+                    title: "Turning the Page (2)"
+                },
+                {
+                    episode: 137,
+                    title: "The State of Syrus"
+                },
+                {
+                    episode: 138,
+                    title: "The Darkness Revealed"
+                },
+                {
+                    episode: 139,
+                    title: "A Sight Unseen (1)"
+                },
+                {
+                    episode: 140,
+                    title: "A Sight Unseen (2)"
+                },
+                {
+                    episode: 141,
+                    title: "What Lies Beneath (1)"
+                },
+                {
+                    episode: 142,
+                    title: "What Lies Beneath (2)"
+                },
+                {
+                    episode: 143,
+                    title: "What Lies Beneath (3)"
+                },
+                {
+                    episode: 144,
+                    title: "The Forbidden Ritual (1)"
+                },
+                {
+                    episode: 145,
+                    title: "The Forbidden Ritual (2)"
+                },
+                {
+                    episode: 146,
+                    title: "Conquering the Past (1)"
+                },
+                {
+                    episode: 147,
+                    title: "Conquering the Past (2)"
+                },
+                {
+                    episode: 148,
+                    title: "Conquering the Past (3)"
+                },
+                {
+                    episode: 149,
+                    title: "The Ultimate Face-Off (1)"
+                },
+                {
+                    episode: 150,
+                    title: "The Ultimate Face-Off (2)"
+                },
+                {
+                    episode: 151,
+                    title: "The Power Within (1)"
+                },
+                {
+                    episode: 152,
+                    title: "The Power Within (2)"
+                },
+                {
+                    episode: 153,
+                    title: "Return of the Supreme King (1)"
+                },
+                {
+                    episode: 154,
+                    title: "Return of the Supreme King (2)"
+                },
+                {
+                    episode: 155,
+                    title: "Return of the Supreme King (3)"
+                },
+                {
+                    episode: 156,
+                    title: "Judai Revived!? A Brand NEW Journey"
+                },
+                {
+                    episode: 157,
+                    title: "A Looming Threat! The Mysterious Visitor"
+                },
+                {
+                    episode: 158,
+                    title: "Farewell, Duel Academia! The Path Judai Chooses!"
+                },
+                {
+                    episode: 159,
+                    title: "The Truth Behind Darkness! Judai vs. Fubuki"
+                },
+                {
+                    episode: 160,
+                    title: "Fusing Souls! Neos vs. Five God Dragon"
+                },
+                {
+                    episode: 161,
+                    title: "Shall We Duel? Invitation to a Pair Duel"
+                },
+                {
+                    episode: 162,
+                    title: "Judai vs. Asuka! Face-down Card of Hidden Emotions"
+                },
+                {
+                    episode: 163,
+                    title: "Challenge from Psycho Shocker"
+                },
+                {
+                    episode: 164,
+                    title: "The Inherited Cyber-Dark Dragon"
+                },
+                {
+                    episode: 165,
+                    title: "Shoot for It! Manjyome, the Path to a Pro Duelist!"
+                },
+                {
+                    episode: 166,
+                    title: "Armed Dragon vs. Dragoon D End"
+                },
+                {
+                    episode: 167,
+                    title: "Graduation Duel! Chronos vs. the Original Dropout Boy"
+                },
+                {
+                    episode: 168,
+                    title: "Graduation Duel Starts! Neos vs. Horus the Black Flame Dragon"
+                },
+                {
+                    episode: 169,
+                    title: "The Price of Decision! O'Brien, Darkness in Fire"
+                },
+                {
+                    episode: 170,
+                    title: "Saiou Returns! Activate!"
+                },
+                {
+                    episode: 171,
+                    title: "The End of Destiny! Magma Neos vs. The Dark Ruler"
+                },
+                {
+                    episode: 172,
+                    title: "Duel Academia Crisis! The Jewel Beasts Blocking the Way"
+                },
+                {
+                    episode: 173,
+                    title: "Darkness Invasion, the Stolen Memories"
+                },
+                {
+                    episode: 174,
+                    title: "Activate, Clear World! Ferocious Negative Effect"
+                },
+                {
+                    episode: 175,
+                    title: "Battle Royale! Judai vs. Johan vs. Fujiwara"
+                },
+                {
+                    episode: 176,
+                    title: "Rainbown Neos, Protector of Bonds vs. Clear Vicious Knight"
+                },
+                {
+                    episode: 177,
+                    title: "Combo of Terror! \"Nihility and Infinity\""
+                },
+                {
+                    episode: 178,
+                    title: "Final Hope! Yuki Judai"
+                },
+                {
+                    episode: 179,
+                    title: "Goodbye Judai! Tears of Graduation"
+                },
+                {
+                    episode: 180,
+                    title: "The True Graduation Duel! Judai vs. Legendary Duelist"
+                }
+            ]
+        }
+    ]
+}
+];
