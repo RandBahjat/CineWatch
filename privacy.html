@@ -835,11 +835,17 @@
 
     <div class="contact-card">
       <h3>Have a privacy question?</h3>
-      <p>We're here to help. Reach out and we'll respond as soon as possible.</p>
-      <a href="mailto:privacy@cinewatch.watch" class="contact-btn">
-        <ion-icon name="mail-outline"></ion-icon>
-        privacy@cinewatch.watch
-      </a>
+      <p>We're here to help. Reach out and our team will respond promptly.</p>
+      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <a href="mailto:privacy@cinewatch.watch" class="contact-btn">
+          <ion-icon name="mail-outline"></ion-icon>
+          privacy@cinewatch.watch
+        </a>
+        <a href="mailto:cinewatch.contact@gmail.com" class="contact-btn" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); box-shadow: none;">
+          <ion-icon name="mail-unread-outline"></ion-icon>
+          cinewatch.contact@gmail.com
+        </a>
+      </div>
     </div>
 
   </div>
@@ -851,6 +857,49 @@
       <a href="privacy.html">Privacy Policy</a>
     </p>
   </footer>
+
+  <script>
+    // Smooth Page Loader & Reading Progress
+    (function() {
+      function dismissLoader() {
+        var loader = document.getElementById('pageLoader');
+        if (!loader || loader.classList.contains('loaded')) return;
+        loader.classList.add('loaded');
+        document.body.classList.add('page-ready');
+        setTimeout(function() {
+          if (loader && loader.parentNode) {
+            loader.parentNode.removeChild(loader);
+          }
+        }, 600);
+      }
+
+      var minTimePassed = false;
+      var pageLoaded = false;
+
+      setTimeout(function() {
+        minTimePassed = true;
+        if (pageLoaded) dismissLoader();
+      }, 420);
+
+      window.addEventListener('load', function() {
+        pageLoaded = true;
+        if (minTimePassed) dismissLoader();
+      });
+
+      // Safety fallback
+      setTimeout(dismissLoader, 1400);
+
+      // Realtime reading progress bar
+      window.addEventListener('scroll', function() {
+        var bar = document.getElementById('readingProgress');
+        if (!bar) return;
+        var top = window.pageYOffset || document.documentElement.scrollTop;
+        var max = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var pct = max > 0 ? (top / max) * 100 : 0;
+        bar.style.width = Math.min(100, Math.max(0, pct)) + '%';
+      }, { passive: true });
+    })();
+  </script>
 
 </body>
 </html>
