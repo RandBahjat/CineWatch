@@ -13957,7 +13957,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/2ZkuQXvVhh45uSvkBej4S7Ix1NJ.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3PiKtDl1s0tGHmqRjnWZbBVgEEr.jpg",
-    videoUrl: "75612",
+    videoUrl: "",
     trailerUrl: "https://youtu.be/oDU84nmSDZY?si=WWxn0RTnJf2rOkxD",
     overview: "Drone repairman, one of last human left on ravage Earth, question memory, reality while clean up after devastating alien war. Discover truth of past, own identity threaten shatter everything he think he know.",
     overviewKurdish: "",
