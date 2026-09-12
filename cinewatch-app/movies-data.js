@@ -19,7 +19,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/aKPXvUemWdDu94GNNDoRBhPgr6v.jpg",
     videoUrl: "1377237",
     trailerUrl: "https://youtu.be/m8JUmBgHejI?si=l6C72Y4ZckfjPqTu",
-    overview: "Group of ragtag misfit athletes assemble to save local community sports complex from greedy real estate developer. Underdog friends must train super hard, overcome crazy hurdles, and defeat arrogant champion rival team in high-stakes big tournament to win prize money and protect home turf!",
+    overview: "Hank Malone, strong former Navy SEAL turned courier driver, take on urgent job delivering critical organ package to hospital. Hank and talkative medical courier Ben get hunted across city by ruthless cartel hitmen. Duo must survive crazy gunfights, car crashes, and race against clock to save sick little girl life!",
     overviewKurdish: "کۆمەڵێک وەرزشەوانی سەرنەکەوتوو و پەراوێزخراو پێکەوە کۆدەبنەوە بۆ ڕزگارکردنی سەنتەری وەرزشی ناوچەکەیان لە دەستی گەشەپێدەرێکی تەماحکاری خانوبەرە. یاریزانە لاوازەکان پێویستە بە سەختی مەشق بکەن، بەسەر ئاستەنگە شێتانەکاندا زاڵ ببن، و لە پاڵەوانێتییەکی گەورەی کۆتاییدا شکست بە تیپی ڕکابەری بەهێزیان بهێنن بۆ بردنی خەڵاتی دارایی و پاراستنی مەیدانەکەیان.",
     director: "Paul Feig",
     cast: ["Marsai Martin, Young Mazino, Terry Crews, Stephanie Beatriz, Kenan Thompson"],
