@@ -16,7 +16,7 @@ window._MOVIES_DATA = [
       "Sport"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/jM8LRvzYIqZqw6Si5xNECiHFDgM.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/1KohYajglCHxTgj2NY2WTI7gn9v.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/1hwrvoeqSe6oM59BHR8zFO082kF.jpg",
     videoUrl: "1386315",
     trailerUrl: "https://youtu.be/raY-TDLE458?si=kl8RoS6tBCeHwgEX",
     overview: "High-powered London lawyer Maia Marten out on morning jog when mystery man hijack her diabetic son's insulin device. To save kid, Maia must sprint full-speed across London, obey crazy demands, and kill court witness before time run out.",
