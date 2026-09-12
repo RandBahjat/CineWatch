@@ -13959,7 +13959,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/3PiKtDl1s0tGHmqRjnWZbBVgEEr.jpg",
     videoUrl: "10625",
     trailerUrl: "https://youtu.be/oDU84nmSDZY?si=WWxn0RTnJf2rOkxD",
-    overview: "Drone repairman, one of last human left on ravage Earth, question memory, reality while clean up after devastating alien war. Discover truth of past, own identity threaten shatter everything he think he know.",
+    overview: "Cady Heron is a teenager who spent her childhood home-schooled in Africa before moving to a suburban public high school in America. She quickly gets pulled into the elite, superficial girl clique called The Plastics, led by the ruthless Regina George. When Cady falls for Regina's ex-boyfriend Aaron Samuels, she sets out to secretly sabotage Regina, only to watch herself slowly transform into the very thing she hated.",
     overviewKurdish: "",
     director: "Joseph Kosinski",
     cast: [
