@@ -2144,6 +2144,8 @@ function openDetailsModal(movieId) {
       
       // Cancel previous trailer timer and remove iframe
       clearTimeout(window._detailsTrailerTimer);
+      const detailsSectionEl = document.getElementById('detailsSection');
+      if (detailsSectionEl) detailsSectionEl.classList.remove('trailer-bg-active');
       const prevTrailer = document.getElementById('detailsTrailerIframe');
       if (prevTrailer) prevTrailer.remove();
       const prevSoundBtn = document.getElementById('detailsSoundBtn');
@@ -2216,6 +2218,8 @@ function openDetailsModal(movieId) {
         requestAnimationFrame(() => {
           setTimeout(() => {
             wrap.classList.add('active');
+            const detailsSection = document.getElementById('detailsSection');
+            if (detailsSection) detailsSection.classList.add('trailer-bg-active');
           }, 150);
         });
 
@@ -4116,6 +4120,8 @@ function bindEventListeners() {
   // Close modals
   if (document.getElementById("closeDetailsBtn")) document.getElementById("closeDetailsBtn").onclick = () => {
     clearTimeout(window._detailsTrailerTimer);
+    const detailsSection = document.getElementById("detailsSection");
+    if (detailsSection) detailsSection.classList.remove('trailer-bg-active');
     const soundBtn = document.getElementById("detailsSoundBtn");
     if (soundBtn) {
       soundBtn.classList.add("hidden");
