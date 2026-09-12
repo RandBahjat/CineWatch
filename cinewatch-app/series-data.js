@@ -7,10 +7,10 @@ window._SERIES_DATA = [
 
 
   {
-    title: "Mousetrap",
+    title: "Last Seen",
     type: 'TV Show',
     year: 2026,
-    rating: 7.6,
+    rating: 7.5,
     age: 'TV-MA',
     duration: '1h',
     genres: [
