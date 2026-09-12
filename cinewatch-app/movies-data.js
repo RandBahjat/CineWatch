@@ -22,7 +22,7 @@ window._MOVIES_DATA = [
     overview: "Hank Malone, a former Navy SEAL working as a high-speed courier, takes on an urgent mission to deliver a vital organ and save a young girl's life. Joined by a talkative medical courier named Ben, Hank is hunted across the city by a ruthless crime cartel trying to stop the delivery before time runs out.",
     overviewKurdish: "هەنک مالۆن ، ئەفسەرێکی پێشووی هێزە تایبەتەکان کە وەک شۆفێری گەیاندنی خێرا کاردەکات، ئەرکێکی گرنگی پێدەسپێردرێت بۆ گواستنەوەی ئەندامێکی جەستە تا ژیانی کچێکی بچووک ڕزگار بکات. لەگەڵ بێن  کە گەیەنەرێکی پزیشکیی قسەخۆشە، لەلایەن باندێکی تاوانکاریی بێبەزەیییەوە لە سەرانسەری شاردا ڕاو دەکرێن و دەبێت کێبڕکێ لەگەڵ کات بکەن بۆ ئەوەی بە سەلامەتی بارەکە بگەیەنن.",
     director: "Scott Waugh",
-    cast: ["Marsai Martin, Young Mazino, Terry Crews, Stephanie Beatriz, Kenan Thompson"],
+    cast: ["Alan Ritchson, Owen Wilson, Rodrigo Santoro, Leila George, Adriana Barraza, Peta Sergeant"],
     trending: true,
     featured: true,
     is4k: false,
