@@ -4,7 +4,7 @@
 
 window._MOVIES_DATA = [
   {
-    title: "The Runner",
+    title: "Go Team!",
     type: "Movie",
     year: 2026,
     rating: 4.3,
