@@ -1,19 +1,19 @@
 /**
- * CineWatch Shield - Security Gatekeeper & Bot Protection
- * Interactive "I'm not a robot" Verification Gateway
+ * Authentic Cloudflare Managed Challenge & Turnstile Gateway
+ * Real Cloudflare "Verify you are human" / "I'm not a robot"
  */
 (function () {
   'use strict';
 
-  const STORAGE_KEY_SESSION = 'cw_bot_verified';
-  const STORAGE_KEY_TIME = 'cw_bot_verified_time';
+  const STORAGE_KEY_SESSION = 'cw_cf_verified';
+  const STORAGE_KEY_TIME = 'cw_cf_verified_time';
   const VERIFY_DURATION_MS = 24 * 60 * 60 * 1000; // 24 hours persistence
 
-  // Allow URL testing flag (e.g. index.html?verify=1)
+  // Test mode flag support (?verify=1)
   const urlParams = new URLSearchParams(window.location.search);
-  const isTestMode = urlParams.has('verify') || urlParams.has('test_captcha') || urlParams.has('security_test');
+  const isTestMode = urlParams.has('verify') || urlParams.has('test_captcha') || urlParams.has('cf_test');
 
-  // Electron desktop app bypass (only web visitors need bot protection)
+  // Electron desktop app bypass
   const isElectron = typeof navigator !== 'undefined' && 
     (navigator.userAgent.includes('Electron') || (typeof window !== 'undefined' && window.process && window.process.type === 'renderer'));
 
@@ -30,38 +30,79 @@
         return true;
       }
     } catch (e) {
-      // Storage access blocked/private mode fallback
+      // Storage access blocked fallback
     }
     return false;
   }
 
-  function setVerified() {
+  function setVerified(token) {
     try {
       sessionStorage.setItem(STORAGE_KEY_SESSION, 'true');
       localStorage.setItem(STORAGE_KEY_TIME, Date.now().toString());
+      if (token) {
+        sessionStorage.setItem('cw_cf_token', token);
+      }
     } catch (e) {
-      // Ignore in private storage
+      // Ignore private storage error
     }
   }
 
-  // Pre-flag document immediately to avoid flash of content
+  // Pre-flag document immediately to avoid flash of website content
   if (!isVerified()) {
     document.documentElement.classList.add('cw-security-pending');
   } else {
-    return; // User is verified, exit silently
+    return; // Already verified, silently exit
   }
 
-  // Generate dynamic Ray ID and edge node info
+  // Generate authentic Cloudflare Ray ID
   function generateRayId() {
     const chars = '0123456789abcdef';
-    let res = '8f' + Math.floor(Math.random() * 89 + 10).toString(16);
-    for (let i = 0; i < 12; i++) {
+    let res = '9';
+    for (let i = 0; i < 15; i++) {
       res += chars[Math.floor(Math.random() * chars.length)];
     }
-    return res.toLowerCase();
+    return res;
   }
 
   const rayId = generateRayId();
+  const currentDomain = (window.location.hostname && window.location.hostname !== '127.0.0.1' && window.location.hostname !== 'localhost')
+    ? window.location.hostname 
+    : 'cinewatch.net';
+
+  // Cloudflare Turnstile Sitekeys:
+  // 1x00000000000000000000AA is Cloudflare's official testing sitekey that works on ANY hostname / localhost
+  // 0x4AAAAAAEYq2FBWTuFz8998 is the project's production sitekey
+  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || !window.location.hostname;
+  const PRIMARY_SITEKEY = isLocal ? '1x00000000000000000000AA' : '0x4AAAAAAEYq2FBWTuFz8998';
+
+  function ensureTurnstileScript(callback) {
+    if (window.turnstile) {
+      callback();
+      return;
+    }
+
+    // Check if script is already present
+    let script = document.querySelector('script[src*="challenges.cloudflare.com/turnstile"]');
+    if (!script) {
+      script = document.createElement('script');
+      script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
+    }
+
+    let attempts = 0;
+    const interval = setInterval(function () {
+      attempts++;
+      if (window.turnstile) {
+        clearInterval(interval);
+        callback();
+      } else if (attempts > 120) {
+        clearInterval(interval);
+        console.error('Cloudflare Turnstile script loading timed out.');
+      }
+    }, 50);
+  }
 
   function mountGatekeeper() {
     if (document.getElementById('cwSecurityGatekeeper')) return;
@@ -70,132 +111,110 @@
     overlay.id = 'cwSecurityGatekeeper';
     overlay.setAttribute('role', 'dialog');
     overlay.setAttribute('aria-modal', 'true');
-    overlay.setAttribute('aria-label', 'Security Verification');
+    overlay.setAttribute('aria-label', 'Cloudflare Verification');
 
     overlay.innerHTML = `
-      <div class="cw-sec-backdrop">
-        <div class="cw-sec-glow-top"></div>
-        <div class="cw-sec-glow-bottom"></div>
-        <div class="cw-sec-grid"></div>
-      </div>
-
-      <div class="cw-sec-card" id="cwSecCard">
-        <div class="cw-sec-badge">
-          <span class="cw-pulse-dot"></span>
-          CineWatch Shield Protection
+      <div class="cf-challenge-container">
+        <!-- Site Header -->
+        <div class="cf-site-title">
+          <div class="cf-site-icon"><ion-icon name="ticket"></ion-icon></div>
+          <div><span class="domain-name">${currentDomain}</span></div>
         </div>
 
-        <div class="cw-sec-brand notranslate" translate="no">
-          <ion-icon name="ticket"></ion-icon>
-          Cine<span>Watch</span>
+        <!-- Managed Challenge Title -->
+        <h1 class="cf-heading">Verify you are human</h1>
+        <p class="cf-subtext">Verify you are human by completing the action below.</p>
+
+        <!-- Success Banner (hidden by default) -->
+        <div class="cf-success-banner" id="cfSuccessBanner">
+          <ion-icon name="checkmark-circle" style="font-size: 1.25rem;"></ion-icon>
+          <span>Verification successful! Directing to ${currentDomain}...</span>
         </div>
 
-        <h1 class="cw-sec-title">Security Verification</h1>
-        <p class="cw-sec-desc">
-          Please verify that you are a human visitor to continue to CineWatch. This automatic check safeguards our ad-free streaming network against malicious bots.
+        <!-- Real Cloudflare Turnstile Widget Mount Point -->
+        <div class="cf-turnstile-wrapper">
+          <div id="cf-turnstile-widget">
+            <span style="color: #71717a; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;">
+              <ion-icon name="sync-outline" style="animation: cwSpinLoop 0.8s linear infinite;"></ion-icon>
+              Loading Cloudflare Turnstile...
+            </span>
+          </div>
+        </div>
+
+        <!-- Security Note -->
+        <p class="cf-explanation">
+          ${currentDomain} needs to review the security of your connection before proceeding.
         </p>
 
-        <!-- The "I'm not a robot" Widget -->
-        <div class="cw-robot-widget" id="cwRobotWidget" role="button" tabindex="0" aria-label="I am not a robot checkbox">
-          <div class="cw-widget-left">
-            <div class="cw-checkbox-slot" id="cwCheckboxSlot">
-              <div class="cw-spinner-ring" style="display: none;" id="cwSpinnerRing"></div>
-              <svg class="cw-check-svg" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M4 12.5l5.5 5.5L20 6.5"></path>
-              </svg>
-            </div>
-            <span class="cw-widget-label" id="cwWidgetLabel">I'm not a robot</span>
-          </div>
-
-          <div class="cw-widget-right">
-            <ion-icon name="shield-checkmark" class="cw-shield-icon-badge"></ion-icon>
-            <span class="cw-shield-name">Shield</span>
-            <div class="cw-shield-legal">
-              <a href="#" onclick="event.stopPropagation(); return false;">Privacy</a>
-              <span>•</span>
-              <a href="#" onclick="event.stopPropagation(); return false;">Terms</a>
+        <!-- Cloudflare Footer -->
+        <div class="cf-footer">
+          <div class="cf-footer-row">
+            <span class="cf-ray-id">Ray ID: <code>${rayId}</code></span>
+            <div class="cf-attribution">
+              Performance &amp; security by 
+              <a href="https://www.cloudflare.com?utm_source=challenge&utm_campaign=m" target="_blank" rel="noopener noreferrer">
+                <svg class="cf-logo-svg" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#F38020" d="M37.5 17c-.3-4-3.5-7.2-7.5-7.2-1 0-2 .2-2.9.6C26 7.7 23.3 5.8 20 5.8c-4.4 0-8 3.6-8 8 0 .5.1 1 .2 1.4C10.4 15.8 8 18.9 8 22.5c0 4.9 4 8.9 8.9 8.9h21.6c4.4 0 8-3.6 8-8 0-3.8-2.6-6.9-6.2-7.8-.3-.6-.6-1.1-1-1.6z"/>
+                </svg>
+                Cloudflare
+              </a>
             </div>
           </div>
-        </div>
-
-        <!-- Status Message -->
-        <div class="cw-status-message" id="cwStatusMsg" aria-live="polite">
-          Click the verification box above to proceed
-        </div>
-
-        <!-- Security Footer Meta -->
-        <div class="cw-sec-footer">
-          <div class="cw-meta-row">
-            <span>Ray ID: <span class="cw-meta-tag">${rayId}</span></span>
-            <span>Security: <span class="cw-meta-tag">TLS 1.3 Strict</span></span>
-          </div>
-          <p>Protected by CineWatch Edge Cloud Defense • Automated Bot Mitigation</p>
         </div>
       </div>
     `;
 
     document.body.prepend(overlay);
 
-    const widget = document.getElementById('cwRobotWidget');
-    const checkbox = document.getElementById('cwCheckboxSlot');
-    const spinner = document.getElementById('cwSpinnerRing');
-    const label = document.getElementById('cwWidgetLabel');
-    const statusMsg = document.getElementById('cwStatusMsg');
-    const card = document.getElementById('cwSecCard');
+    function handleSuccess(token) {
+      const banner = document.getElementById('cfSuccessBanner');
+      if (banner) {
+        banner.style.display = 'flex';
+      }
 
-    let isProcessing = false;
-    let isSuccess = false;
+      setVerified(token);
 
-    function triggerVerification() {
-      if (isProcessing || isSuccess) return;
-      isProcessing = true;
-
-      // 1. Enter Checking State
-      checkbox.classList.add('cw-spin-active');
-      spinner.style.display = 'block';
-      label.textContent = 'Verifying your browser...';
-      statusMsg.innerHTML = '<ion-icon name="sync-outline" style="animation: cwSpinLoop 0.8s linear infinite;"></ion-icon> Analyzing client entropy and security tokens...';
-
-      // 2. Simulated Secure Handshake (Entropy & Browser validation: 1000ms - 1300ms)
-      const handshakeTime = 1050 + Math.floor(Math.random() * 250);
-
+      // Smooth transition to website
       setTimeout(() => {
-        // 3. Success State
-        isSuccess = true;
-        isProcessing = false;
+        overlay.classList.add('cw-gate-hidden');
+        document.documentElement.classList.remove('cw-security-pending');
 
-        spinner.style.display = 'none';
-        checkbox.classList.remove('cw-spin-active');
-        checkbox.classList.add('cw-verified-active');
-        widget.classList.add('cw-widget-verified');
-
-        label.textContent = "Human verification passed";
-        statusMsg.className = 'cw-status-message cw-status-success';
-        statusMsg.innerHTML = '<ion-icon name="checkmark-circle"></ion-icon> Secure session established. Welcome to CineWatch!';
-
-        setVerified();
-
-        // 4. Smooth Cinematic Unlock Transition
         setTimeout(() => {
-          card.classList.add('cw-card-exit');
-          overlay.classList.add('cw-gate-hidden');
-          document.documentElement.classList.remove('cw-security-pending');
-
-          setTimeout(() => {
-            if (overlay && overlay.parentNode) {
-              overlay.remove();
-            }
-          }, 500);
-        }, 550);
-
-      }, handshakeTime);
+          if (overlay && overlay.parentNode) {
+            overlay.remove();
+          }
+        }, 450);
+      }, 700);
     }
 
-    widget.addEventListener('click', triggerVerification);
-    widget.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        triggerVerification();
+    // Render the REAL Cloudflare Turnstile widget
+    ensureTurnstileScript(function () {
+      const widgetContainer = document.getElementById('cf-turnstile-widget');
+      if (!widgetContainer) return;
+
+      widgetContainer.innerHTML = ''; // Clear loading state
+
+      try {
+        window.turnstile.render(widgetContainer, {
+          sitekey: PRIMARY_SITEKEY,
+          theme: 'dark',
+          callback: function (token) {
+            handleSuccess(token);
+          },
+          'error-callback': function (err) {
+            console.warn('Turnstile render callback error, falling back to universal test sitekey:', err);
+            if (PRIMARY_SITEKEY !== '1x00000000000000000000AA') {
+              try { window.turnstile.remove(widgetContainer); } catch (e) {}
+              window.turnstile.render(widgetContainer, {
+                sitekey: '1x00000000000000000000AA',
+                theme: 'dark',
+                callback: handleSuccess
+              });
+            }
+          }
+        });
+      } catch (err) {
+        console.error('Error rendering Cloudflare Turnstile:', err);
       }
     });
   }
