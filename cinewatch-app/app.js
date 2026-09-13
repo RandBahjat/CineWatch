@@ -1921,18 +1921,32 @@ function playMovieDirect(movieId) {
         url: `https://megavid.buzz/mal/${malId}/${epNum}/dub`
       };
 
+      const vidnestSub = {
+        id: 'vidnest-sub',
+        name: '🔥 VidNest HD (Sub / Japanese)',
+        url: `https://vidnest.fun/anime/${aniId}/${epNum}/sub`
+      };
+      const vidnestDub = {
+        id: 'vidnest-dub',
+        name: '🎙️ VidNest HD (English Dub)',
+        url: `https://vidnest.fun/anime/${aniId}/${epNum}/dub`
+      };
+      const vidnestHindi = {
+        id: 'vidnest-hindi',
+        name: '🇮🇳 VidNest HD (Hindi Dub)',
+        url: `https://vidnest.fun/anime/${aniId}/${epNum}/hindi`
+      };
+
       servers = [
+        curPref === 'hindi' ? vidnestHindi : (curPref === 'dub' ? vidnestDub : vidnestSub),
+        curPref === 'dub' ? vidnestSub : vidnestDub,
+        vidnestHindi,
         curPref === 'dub' ? dubOption : subOption,
         curPref === 'dub' ? subOption : dubOption,
         {
           id: 'vidlink',
           name: '⚡ VidLink Pro Anime',
-          url: `https://vidlink.pro/anime/${aniId}/${epNum}/sub?fallback=true&primaryColor=${animeColor}`
-        },
-        {
-          id: 'artplayer',
-          name: '✨ ArtPlayer Glass (Direct Mega Stream)',
-          url: 'artplayer://anime'
+          url: `https://vidlink.pro/tv/${tmdb}/${mappedSeason}/${mappedEpisode}?primaryColor=${animeColor}`
         },
         {
           id: 'vidsrc-sbs',
