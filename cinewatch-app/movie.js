@@ -5496,13 +5496,13 @@ function updateIframeServer() {
   }
 
   // VidNest as the only server:
-  // TV: https://vidnest.fun/tv/${data.id}/${data.season}/${data.episode}
-  // Movie: https://vidnest.fun/movie/${data.id}
+  // TV: https://vidnest.fun/tv/${data.id}/${data.season}/${data.episode}?prevepisode=hide&nextepisode=hide&bottomsettings=off
+  // Movie: https://vidnest.fun/movie/${data.id}?bottomsettings=off
   let newUrl = '';
   if (data.type === 'tv') {
-    newUrl = `https://vidnest.fun/tv/${data.id}/${data.season}/${data.episode}`;
+    newUrl = `https://vidnest.fun/tv/${data.id}/${data.season}/${data.episode}?prevepisode=hide&nextepisode=hide&bottomsettings=off`;
   } else {
-    newUrl = `https://vidnest.fun/movie/${data.id}`;
+    newUrl = `https://vidnest.fun/movie/${data.id}?bottomsettings=off`;
   }
 
   iframe.setAttribute("frameborder", "0");
