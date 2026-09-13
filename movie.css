@@ -3442,10 +3442,17 @@ body.rtl-layout .details-back-btn svg {
 /* Player Top-Right Server Selector Pill - Completely removed per user request */
 .player-server-pill,
 #serverSelectWrap,
-#videoServerSelect {
+#videoServerSelect,
+.cw-server-menu,
+.cw-server-opt,
+.cw-server-dropdown,
+.server-selector-pill {
   display: none !important;
   visibility: hidden !important;
   pointer-events: none !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
 }
 
 /* Inactivity Fading for Video Overlays */
