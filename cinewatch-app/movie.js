@@ -5181,14 +5181,14 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     serverWrap.style.display = "none";
   }
 
-  // VidNest as the only server: https://vidnest.fun/tv/${tmdbId}/${season}/${epNum}
+  // VidNest as the only server: https://vidnest.fun/tv/${tmdbId}/${season}/${epNum}?prevepisode=hide&nextepisode=hide&bottomsettings=off
   if (artContainer) artContainer.classList.add("hidden");
   if (iframe) {
     iframe.classList.remove("hidden");
     iframe.setAttribute("frameborder", "0");
     iframe.setAttribute("scrolling", "no");
     iframe.setAttribute("allowfullscreen", "true");
-    iframe.src = `https://vidnest.fun/tv/${tmdbId}/${season}/${epNum}`;
+    iframe.src = `https://vidnest.fun/tv/${tmdbId}/${season}/${epNum}?prevepisode=hide&nextepisode=hide&bottomsettings=off`;
     iframe.onload = () => {
       const co = document.getElementById("videoCenterOverlay");
       if (co) co.style.display = "none";
