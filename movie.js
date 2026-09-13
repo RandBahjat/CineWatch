@@ -5183,10 +5183,11 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
   const curPref = localStorage.getItem("cw_anime_audio_pref") || "sub";
 
-  // Mega Server for SUB only; VidNest for DUB or fallback
+  // Mega Server: 100% ad-free, all 1100+ episodes, clean soft subtitles & audio
   let targetSrc = '';
-  if (curPref === 'sub' && malId) {
-    targetSrc = `https://megavid.buzz/mal/${malId}/${rawEp}/sub`;
+  if (malId) {
+    const mode = curPref === 'dub' ? 'dub' : 'sub';
+    targetSrc = `https://megavid.buzz/mal/${malId}/${rawEp}/${mode}`;
   } else {
     targetSrc = `https://vidnest.fun/tv/${tmdbId}/${season}/${epNum}?prevepisode=hide&nextepisode=hide&bottomsettings=off`;
   }
