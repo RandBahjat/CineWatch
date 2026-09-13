@@ -5022,7 +5022,7 @@ if (document.readyState === "loading") {
 const ANIME_MAL_MAP = {
   '37854': 21,       // One Piece
   '12971': 813,      // Dragon Ball Z
-  '236994': 56880,   // Dragon Ball DAIMA
+  '236994': 56894,   // Dragon Ball DAIMA
   '62715': 30694,    // Dragon Ball Super
   '12697': 225,      // Dragon Ball GT
   '61709': 6033,     // Dragon Ball Z Kai
@@ -5045,8 +5045,69 @@ const ANIME_MAL_MAP = {
   '61374': 22319,    // Tokyo Ghoul
   '902': 481,        // Yu-Gi-Oh! Duel Monsters
   '12536': 482,      // Yu-Gi-Oh! GX
-  '20695': 4343,     // Yu-Gi-Oh! 5D's
+  '20695': 3972,     // Yu-Gi-Oh! 5D's
 };
+
+const ANIME_ANILIST_MAP = {
+  '37854': 21,       // One Piece
+  '12971': 813,      // Dragon Ball Z
+  '236994': 170083,  // Dragon Ball DAIMA
+  '62715': 21175,    // Dragon Ball Super
+  '12697': 225,      // Dragon Ball GT
+  '61709': 6033,     // Dragon Ball Z Kai
+  '46260': 20,       // Naruto
+  '31910': 1735,     // Naruto Shippuden
+  '70881': 97938,    // Boruto: Naruto Next Generations
+  '30984': 269,      // Bleach
+  '65930': 21459,    // My Hero Academia
+  '1429': 16498,     // Attack on Titan
+  '85937': 101922,   // Demon Slayer
+  '63926': 21087,    // One Punch Man
+  '127532': 151807,  // Solo Leveling
+  '95479': 113415,   // JUJUTSU KAISEN
+  '114410': 127230,  // Chainsaw Man
+  '13916': 1535,     // Death Note
+  '46298': 11061,    // Hunter x Hunter
+  '88803': 101348,   // Vinland Saga
+  '131041': 137822,  // BLUE LOCK
+  '60863': 20464,    // Haikyu!!
+  '61374': 20605,    // Tokyo Ghoul
+  '902': 481,        // Yu-Gi-Oh! Duel Monsters
+  '12536': 482,      // Yu-Gi-Oh! GX
+  '20695': 3972,     // Yu-Gi-Oh! 5D's
+};
+
+function getAnimeAniListId(refMovie, dataId) {
+  if (refMovie?.anilistId) return refMovie.anilistId;
+  const key = String(dataId || refMovie?.videoUrl || refMovie?.id || '');
+  if (ANIME_ANILIST_MAP[key]) return ANIME_ANILIST_MAP[key];
+  if (refMovie?.title) {
+    const t = refMovie.title.toLowerCase();
+    if (t.includes('5d')) return 3972;
+    if (t.includes('gx')) return 482;
+    if (t.includes('daima')) return 170083;
+    if (t.includes('super')) return 21175;
+    if (t.includes('boruto')) return 97938;
+    if (t.includes('hero academia')) return 21459;
+    if (t.includes('demon slayer')) return 101922;
+    if (t.includes('one punch')) return 21087;
+    if (t.includes('solo leveling')) return 151807;
+    if (t.includes('jujutsu')) return 113415;
+    if (t.includes('chainsaw')) return 127230;
+    if (t.includes('vinland')) return 101348;
+    if (t.includes('blue lock')) return 137822;
+    if (t.includes('haikyu')) return 20464;
+    if (t.includes('tokyo ghoul')) return 20605;
+    if (t.includes('shippuden')) return 1735;
+    if (t.includes('naruto')) return 20;
+    if (t.includes('one piece')) return 21;
+    if (t.includes('bleach')) return 269;
+    if (t.includes('death note')) return 1535;
+    if (t.includes('hunter')) return 11061;
+    if (t.includes('attack on titan')) return 16498;
+  }
+  return refMovie?.malId || ANIME_MAL_MAP[key] || 21;
+}
 
 function getAnimeMalId(refMovie, dataId) {
   if (refMovie?.malId) return refMovie.malId;
@@ -5054,8 +5115,9 @@ function getAnimeMalId(refMovie, dataId) {
   if (ANIME_MAL_MAP[key]) return ANIME_MAL_MAP[key];
   if (refMovie?.title) {
     const t = refMovie.title.toLowerCase();
-    if (t.includes('5d')) return 4343;
+    if (t.includes('5d')) return 3972;
     if (t.includes('gx')) return 482;
+    if (t.includes('daima')) return 56894;
     if (t.includes('one piece')) return 21;
     if (t.includes('bleach')) return 269;
     if (t.includes('shippuden')) return 1735;
@@ -5070,8 +5132,6 @@ function getAnimeMalId(refMovie, dataId) {
 
 async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   const artContainer = document.getElementById("artplayerApp");
-  if (!artContainer) return;
-
   const video = document.getElementById("videoElement");
   const iframe = document.getElementById("iframeElement");
   const controlsBar = document.getElementById("playerControlsBar");
@@ -5082,14 +5142,8 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     video.pause();
     video.src = "";
   }
-  if (iframe) {
-    iframe.classList.add("hidden");
-    iframe.src = "";
-  }
   if (controlsBar) controlsBar.classList.add("hidden");
   if (centerOverlay) centerOverlay.style.display = "none";
-
-  artContainer.classList.remove("hidden");
 
   if (window.artPlayerInstance) {
     try {
@@ -5101,56 +5155,42 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   const ref = movie || parentMovie;
   const rawEp = epData?.absoluteEpisode || epData?.episode || 1;
   const malId = getAnimeMalId(ref, epData?.id);
-  const poster = (movie?.backdrop || movie?.poster || parentMovie?.backdrop || parentMovie?.poster || "");
-  let cleanUrl = String(videoUrl || "");
-  let subtitleUrl = "";
+  const aniId = getAnimeAniListId(ref, epData?.id);
+  const tmdbId = ref?.videoUrl || ref?.id || malId;
+  const season = epData?.season || 1;
+  const epNum = epData?.episode || rawEp;
 
   const curPref = localStorage.getItem("cw_anime_audio_pref") || "sub";
-
-  if (!cleanUrl || !cleanUrl.startsWith("http") || cleanUrl.includes(".buzz") || cleanUrl.includes("megavid")) {
-    const endpoints = [
-      `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-      `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-      `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-      `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-      `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-      `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}/source`
-    ];
-    for (const epUrl of endpoints) {
-      try {
-        const res = await fetch(epUrl);
-        if (!res.ok) continue;
-        const srcData = await res.json();
-        if (srcData && srcData.source) {
-          cleanUrl = srcData.source;
-          if (srcData.tracks && srcData.tracks.length > 0) {
-            const enTrack = srcData.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || srcData.tracks[0];
-            if (enTrack && enTrack.file) {
-              subtitleUrl = enTrack.file;
-            }
-          }
-          break;
-        }
-      } catch (e) {
-        console.warn("ArtPlayer Mega fetch failed:", e);
-      }
-    }
-  }
+  const curServer = localStorage.getItem("cw_anime_server_pref") || `vidnest-${curPref === 'hindi' ? 'hindi' : curPref === 'dub' ? 'dub' : 'sub'}`;
 
   // Setup visible topbar server switcher dropdown
-  setupAnimeServerDropdown(ref, rawEp, curPref, malId, epData);
+  setupAnimeServerDropdown(ref, rawEp, curPref, malId, epData, aniId, curServer);
 
-  const isDirectStream = cleanUrl.startsWith("http") && (cleanUrl.includes(".m3u8") || cleanUrl.includes(".mp4") || cleanUrl.includes("blob:"));
-
-  if (!isDirectStream) {
-    artContainer.classList.add("hidden");
-    const iframe = document.getElementById("iframeElement");
-    if (iframe) {
-      iframe.classList.remove("hidden");
-      iframe.src = `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`;
-      const centerOverlay = document.getElementById("videoCenterOverlay");
-      if (centerOverlay) centerOverlay.style.display = "none";
+  // VidNest is our primary, ultra-reliable anime streaming engine
+  if (artContainer) artContainer.classList.add("hidden");
+  if (iframe) {
+    iframe.classList.remove("hidden");
+    let targetSrc = `https://vidnest.fun/anime/${aniId}/${rawEp}/${curPref === 'hindi' ? 'hindi' : curPref === 'dub' ? 'dub' : 'sub'}`;
+    if (curServer === 'vidlink') {
+      targetSrc = `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=e50914`;
+    } else if (curServer === 'vidsrc') {
+      targetSrc = `https://vidsrc.cc/v2/embed/tv/${tmdbId}/${season}/${epNum}`;
+    } else if (curServer === 'vidnest-dub') {
+      targetSrc = `https://vidnest.fun/anime/${aniId}/${rawEp}/dub`;
+    } else if (curServer === 'vidnest-hindi') {
+      targetSrc = `https://vidnest.fun/anime/${aniId}/${rawEp}/hindi`;
+    } else if (curServer === 'vidnest-sub') {
+      targetSrc = `https://vidnest.fun/anime/${aniId}/${rawEp}/sub`;
+    } else if (curServer === 'mega-sub') {
+      targetSrc = `https://megavid.buzz/mal/${malId}/${rawEp}/sub`;
+    } else if (curServer === 'mega-dub') {
+      targetSrc = `https://megavid.buzz/mal/${malId}/${rawEp}/dub`;
     }
+    iframe.src = targetSrc;
+    iframe.onload = () => {
+      const co = document.getElementById("videoCenterOverlay");
+      if (co) co.style.display = "none";
+    };
     return;
   }
 
