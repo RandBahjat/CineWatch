@@ -5155,40 +5155,40 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   const ref = movie || parentMovie;
   const rawEp = epData?.absoluteEpisode || epData?.episode || 1;
   const malId = getAnimeMalId(ref, epData?.id);
-  const aniId = getAnimeAniListId(ref, epData?.id);
-  const tmdbId = ref?.videoUrl || ref?.id || malId;
+  let tmdbId = ref?.videoUrl || ref?.tmdbId || ref?.cinesrcId || ref?.id || malId;
+  if (typeof tmdbId === 'string' && tmdbId.startsWith('tv_embed:')) {
+    tmdbId = tmdbId.split(':')[1];
+  }
+  if (isNaN(Number(tmdbId)) && ref) {
+    if (ref.videoUrl && !isNaN(Number(ref.videoUrl))) tmdbId = ref.videoUrl;
+    else if (ref.tmdbId) tmdbId = ref.tmdbId;
+    else if (ref.cinesrcId) tmdbId = ref.cinesrcId;
+    else if (ref.malId) tmdbId = ref.malId;
+    else if (ref.anilistId) tmdbId = ref.anilistId;
+  }
   const season = epData?.season || 1;
   const epNum = epData?.episode || rawEp;
 
-  const curPref = localStorage.getItem("cw_anime_audio_pref") || "sub";
-  const curServer = localStorage.getItem("cw_anime_server_pref") || `vidnest-${curPref === 'hindi' ? 'hindi' : curPref === 'dub' ? 'dub' : 'sub'}`;
+  const playerTitle = document.getElementById("playerTitle") || document.getElementById("playerMovieTitle");
+  if (playerTitle && ref) {
+    playerTitle.textContent = `${ref.title || 'Anime'} - Ep ${rawEp}`;
+  }
 
-  // Setup visible topbar server switcher dropdown
-  setupAnimeServerDropdown(ref, rawEp, curPref, malId, epData, aniId, curServer);
+  // Ensure server selection UI is completely hidden and removed
+  const serverWrap = document.getElementById("serverSelectWrap");
+  if (serverWrap) {
+    serverWrap.classList.add("hidden");
+    serverWrap.style.display = "none";
+  }
 
-  // VidNest Animepahe is our primary, ultra-reliable anime streaming engine with the clean layout
+  // VidNest as the only server: https://vidnest.fun/tv/${tmdbId}/${season}/${epNum}
   if (artContainer) artContainer.classList.add("hidden");
   if (iframe) {
     iframe.classList.remove("hidden");
-    let targetSrc = `https://vidnest.fun/animepahe/${aniId}/${rawEp}/${curPref === 'hindi' ? 'hindi' : curPref === 'dub' ? 'dub' : 'sub'}`;
-    if (curServer === 'vidlink') {
-      targetSrc = `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=e50914`;
-    } else if (curServer === 'vidsrc') {
-      targetSrc = `https://vidsrc.cc/v2/embed/tv/${tmdbId}/${season}/${epNum}`;
-    } else if (curServer === 'vidnest-dub') {
-      targetSrc = `https://vidnest.fun/animepahe/${aniId}/${rawEp}/dub`;
-    } else if (curServer === 'vidnest-hindi') {
-      targetSrc = `https://vidnest.fun/anime/${aniId}/${rawEp}/hindi`;
-    } else if (curServer === 'vidnest-sub') {
-      targetSrc = `https://vidnest.fun/animepahe/${aniId}/${rawEp}/sub`;
-    } else if (curServer === 'vidnest-aniwave') {
-      targetSrc = `https://vidnest.fun/anime/${aniId}/${rawEp}/${curPref === 'hindi' ? 'hindi' : curPref === 'dub' ? 'dub' : 'sub'}`;
-    } else if (curServer === 'mega-sub') {
-      targetSrc = `https://megavid.buzz/mal/${malId}/${rawEp}/sub`;
-    } else if (curServer === 'mega-dub') {
-      targetSrc = `https://megavid.buzz/mal/${malId}/${rawEp}/dub`;
-    }
-    iframe.src = targetSrc;
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("scrolling", "no");
+    iframe.setAttribute("allowfullscreen", "true");
+    iframe.src = `https://vidnest.fun/tv/${tmdbId}/${season}/${epNum}`;
     iframe.onload = () => {
       const co = document.getElementById("videoCenterOverlay");
       if (co) co.style.display = "none";
