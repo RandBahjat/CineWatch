@@ -5181,14 +5181,23 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     serverWrap.style.display = "none";
   }
 
-  // VidNest as the only server: https://vidnest.fun/tv/${tmdbId}/${season}/${epNum}?prevepisode=hide&nextepisode=hide&bottomsettings=off
+  const curPref = localStorage.getItem("cw_anime_audio_pref") || "sub";
+
+  // Mega Server for SUB only; VidNest for DUB or fallback
+  let targetSrc = '';
+  if (curPref === 'sub' && malId) {
+    targetSrc = `https://megavid.buzz/mal/${malId}/${rawEp}/sub`;
+  } else {
+    targetSrc = `https://vidnest.fun/tv/${tmdbId}/${season}/${epNum}?prevepisode=hide&nextepisode=hide&bottomsettings=off`;
+  }
+
   if (artContainer) artContainer.classList.add("hidden");
   if (iframe) {
     iframe.classList.remove("hidden");
     iframe.setAttribute("frameborder", "0");
     iframe.setAttribute("scrolling", "no");
     iframe.setAttribute("allowfullscreen", "true");
-    iframe.src = `https://vidnest.fun/tv/${tmdbId}/${season}/${epNum}?prevepisode=hide&nextepisode=hide&bottomsettings=off`;
+    iframe.src = targetSrc;
     iframe.onload = () => {
       const co = document.getElementById("videoCenterOverlay");
       if (co) co.style.display = "none";
