@@ -5166,21 +5166,23 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   // Setup visible topbar server switcher dropdown
   setupAnimeServerDropdown(ref, rawEp, curPref, malId, epData, aniId, curServer);
 
-  // VidNest is our primary, ultra-reliable anime streaming engine
+  // VidNest Animepahe is our primary, ultra-reliable anime streaming engine with the clean layout
   if (artContainer) artContainer.classList.add("hidden");
   if (iframe) {
     iframe.classList.remove("hidden");
-    let targetSrc = `https://vidnest.fun/anime/${aniId}/${rawEp}/${curPref === 'hindi' ? 'hindi' : curPref === 'dub' ? 'dub' : 'sub'}`;
+    let targetSrc = `https://vidnest.fun/animepahe/${aniId}/${rawEp}/${curPref === 'hindi' ? 'hindi' : curPref === 'dub' ? 'dub' : 'sub'}`;
     if (curServer === 'vidlink') {
       targetSrc = `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=e50914`;
     } else if (curServer === 'vidsrc') {
       targetSrc = `https://vidsrc.cc/v2/embed/tv/${tmdbId}/${season}/${epNum}`;
     } else if (curServer === 'vidnest-dub') {
-      targetSrc = `https://vidnest.fun/anime/${aniId}/${rawEp}/dub`;
+      targetSrc = `https://vidnest.fun/animepahe/${aniId}/${rawEp}/dub`;
     } else if (curServer === 'vidnest-hindi') {
       targetSrc = `https://vidnest.fun/anime/${aniId}/${rawEp}/hindi`;
     } else if (curServer === 'vidnest-sub') {
-      targetSrc = `https://vidnest.fun/anime/${aniId}/${rawEp}/sub`;
+      targetSrc = `https://vidnest.fun/animepahe/${aniId}/${rawEp}/sub`;
+    } else if (curServer === 'vidnest-aniwave') {
+      targetSrc = `https://vidnest.fun/anime/${aniId}/${rawEp}/${curPref === 'hindi' ? 'hindi' : curPref === 'dub' ? 'dub' : 'sub'}`;
     } else if (curServer === 'mega-sub') {
       targetSrc = `https://megavid.buzz/mal/${malId}/${rawEp}/sub`;
     } else if (curServer === 'mega-dub') {
