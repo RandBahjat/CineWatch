@@ -5469,9 +5469,10 @@ function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId, epData, aniId
   const activeSrv = curServer || (curPref === 'hindi' ? 'vidnest-hindi' : curPref === 'dub' ? 'vidnest-dub' : 'vidnest-sub');
 
   const serverLabels = {
-    'vidnest-sub': '🔥 VidNest HD (Sub / Japanese)',
-    'vidnest-dub': '🎙️ VidNest HD (English Dub)',
-    'vidnest-hindi': '🇮🇳 VidNest HD (Hindi Dub)',
+    'vidnest-sub': '🔥 VidNest Animepahe (Sub / Japanese)',
+    'vidnest-dub': '🎙️ VidNest Animepahe (English Dub)',
+    'vidnest-hindi': '🇮🇳 VidNest Anime (Hindi Dub)',
+    'vidnest-aniwave': '⚡ VidNest Aniwave Server',
     'vidlink': '⚡ VidLink Pro Anime (Mirror)',
     'vidsrc': '🛡️ VidSrc HD (Mirror)',
     'mega-sub': '🟣 Mega Server (Sub)',
@@ -5479,9 +5480,10 @@ function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId, epData, aniId
   };
 
   const badgeLabels = {
-    'vidnest-sub': 'VIDNEST SUB',
-    'vidnest-dub': 'VIDNEST DUB',
+    'vidnest-sub': 'ANIMEPAHE SUB',
+    'vidnest-dub': 'ANIMEPAHE DUB',
     'vidnest-hindi': 'VIDNEST HINDI',
+    'vidnest-aniwave': 'VIDNEST ANIME',
     'vidlink': 'VIDLINK',
     'vidsrc': 'VIDSRC',
     'mega-sub': 'MEGA SUB',
@@ -5489,10 +5491,10 @@ function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId, epData, aniId
   };
 
   if (serverActiveLabel) {
-    serverActiveLabel.textContent = serverLabels[activeSrv] || '🔥 VidNest HD (Sub / Japanese)';
+    serverActiveLabel.textContent = serverLabels[activeSrv] || '🔥 VidNest Animepahe (Sub / Japanese)';
   }
   if (streamTypeBadge) {
-    streamTypeBadge.textContent = badgeLabels[activeSrv] || 'VIDNEST SUB';
+    streamTypeBadge.textContent = badgeLabels[activeSrv] || 'ANIMEPAHE SUB';
   }
 
   if (serverSelectBtn && serverMenu) {
@@ -5513,13 +5515,16 @@ function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId, epData, aniId
   if (serverSelect) {
     serverSelect.innerHTML = `
       <div class="cw-server-opt ${activeSrv === 'vidnest-sub' ? 'active' : ''}" data-server="vidnest-sub">
-        🔥 VidNest HD (Sub / Japanese)
+        🔥 VidNest Animepahe (Sub / Japanese)
       </div>
       <div class="cw-server-opt ${activeSrv === 'vidnest-dub' ? 'active' : ''}" data-server="vidnest-dub">
-        🎙️ VidNest HD (English Dub)
+        🎙️ VidNest Animepahe (English Dub)
       </div>
       <div class="cw-server-opt ${activeSrv === 'vidnest-hindi' ? 'active' : ''}" data-server="vidnest-hindi">
-        🇮🇳 VidNest HD (Hindi Dub)
+        🇮🇳 VidNest Anime (Hindi Dub)
+      </div>
+      <div class="cw-server-opt ${activeSrv === 'vidnest-aniwave' ? 'active' : ''}" data-server="vidnest-aniwave">
+        ⚡ VidNest Aniwave Server
       </div>
       <div class="cw-server-opt ${activeSrv === 'vidlink' ? 'active' : ''}" data-server="vidlink">
         ⚡ VidLink Pro Anime (Mirror)
@@ -5559,16 +5564,20 @@ function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId, epData, aniId
 
         if (chosen === "vidnest-sub") {
           localStorage.setItem("cw_anime_audio_pref", "sub");
-          if (iframe) iframe.src = `https://vidnest.fun/anime/${aniId}/${rawEp}/sub`;
-          if (typeof showToast === 'function') showToast('Switched to VidNest HD (Japanese / English Sub)');
+          if (iframe) iframe.src = `https://vidnest.fun/animepahe/${aniId}/${rawEp}/sub`;
+          if (typeof showToast === 'function') showToast('Switched to VidNest Animepahe (Sub / Japanese)');
         } else if (chosen === "vidnest-dub") {
           localStorage.setItem("cw_anime_audio_pref", "dub");
-          if (iframe) iframe.src = `https://vidnest.fun/anime/${aniId}/${rawEp}/dub`;
-          if (typeof showToast === 'function') showToast('Switched to VidNest HD (English Dub)');
+          if (iframe) iframe.src = `https://vidnest.fun/animepahe/${aniId}/${rawEp}/dub`;
+          if (typeof showToast === 'function') showToast('Switched to VidNest Animepahe (English Dub)');
         } else if (chosen === "vidnest-hindi") {
           localStorage.setItem("cw_anime_audio_pref", "hindi");
           if (iframe) iframe.src = `https://vidnest.fun/anime/${aniId}/${rawEp}/hindi`;
-          if (typeof showToast === 'function') showToast('Switched to VidNest HD (Hindi Dub)');
+          if (typeof showToast === 'function') showToast('Switched to VidNest Anime (Hindi Dub)');
+        } else if (chosen === "vidnest-aniwave") {
+          const mode = curPref === 'hindi' ? 'hindi' : curPref === 'dub' ? 'dub' : 'sub';
+          if (iframe) iframe.src = `https://vidnest.fun/anime/${aniId}/${rawEp}/${mode}`;
+          if (typeof showToast === 'function') showToast('Switched to VidNest Aniwave Server');
         } else if (chosen === "vidlink") {
           if (iframe) iframe.src = `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=e50914`;
           if (typeof showToast === 'function') showToast('Switched to VidLink Pro Anime');
@@ -5591,9 +5600,10 @@ function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId, epData, aniId
   const standardSelect = document.getElementById("videoServerSelect");
   if (standardSelect) {
     standardSelect.innerHTML = `
-      <option value="vidnest-sub" ${activeSrv === 'vidnest-sub' ? 'selected' : ''}>VidNest HD (Sub / Japanese)</option>
-      <option value="vidnest-dub" ${activeSrv === 'vidnest-dub' ? 'selected' : ''}>VidNest HD (English Dub)</option>
-      <option value="vidnest-hindi" ${activeSrv === 'vidnest-hindi' ? 'selected' : ''}>VidNest HD (Hindi Dub)</option>
+      <option value="vidnest-sub" ${activeSrv === 'vidnest-sub' ? 'selected' : ''}>VidNest Animepahe (Sub / Japanese)</option>
+      <option value="vidnest-dub" ${activeSrv === 'vidnest-dub' ? 'selected' : ''}>VidNest Animepahe (English Dub)</option>
+      <option value="vidnest-hindi" ${activeSrv === 'vidnest-hindi' ? 'selected' : ''}>VidNest Anime (Hindi Dub)</option>
+      <option value="vidnest-aniwave" ${activeSrv === 'vidnest-aniwave' ? 'selected' : ''}>VidNest Aniwave Server</option>
       <option value="vidlink" ${activeSrv === 'vidlink' ? 'selected' : ''}>VidLink Pro Anime (Mirror)</option>
       <option value="vidsrc" ${activeSrv === 'vidsrc' ? 'selected' : ''}>VidSrc HD (Mirror)</option>
       <option value="mega-sub" ${activeSrv === 'mega-sub' ? 'selected' : ''}>Mega Server (Sub)</option>
@@ -5641,11 +5651,24 @@ function updateIframeServer() {
   if (window.artPlayerInstance) {
     try { window.artPlayerInstance.pause(); } catch(e) {}
   }
-    if (data.type === 'tv') {
+  const curMovieServer = localStorage.getItem("cw_movie_server_pref") || "vidlink";
+  if (data.type === 'tv') {
+    if (curMovieServer === 'vidnest') {
+      newUrl = `https://vidnest.fun/tv/${data.id}/${data.season}/${data.episode}`;
+    } else if (curMovieServer === 'vidsrc') {
+      newUrl = `https://vidsrc.cc/v2/embed/tv/${data.id}/${data.season}/${data.episode}`;
+    } else {
       newUrl = `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=e50914`;
+    }
+  } else {
+    if (curMovieServer === 'vidnest') {
+      newUrl = `https://vidnest.fun/movie/${data.id}?server=gama`;
+    } else if (curMovieServer === 'vidsrc') {
+      newUrl = `https://vidsrc.cc/v2/embed/movie/${data.id}`;
     } else {
       newUrl = `https://vidlink.pro/movie/${data.id}?primaryColor=e50914`;
     }
+  }
 
   iframe.onload = () => {
     const centerOverlay = document.getElementById('videoCenterOverlay');
