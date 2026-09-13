@@ -5445,7 +5445,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   }
 }
 
-function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId, epData) {
+function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId, epData, aniId, curServer) {
   const serverWrap = document.getElementById("serverSelectWrap");
   const serverActiveLabel = document.getElementById("serverActiveLabel");
   const streamTypeBadge = document.getElementById("streamTypeBadge");
@@ -5463,12 +5463,34 @@ function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId, epData) {
     serverWrap.style.display = "block";
   }
 
-  const isDub = curPref === 'dub';
+  aniId = aniId || getAnimeAniListId(refMovie, epData?.id);
+  const activeSrv = curServer || (curPref === 'hindi' ? 'vidnest-hindi' : curPref === 'dub' ? 'vidnest-dub' : 'vidnest-sub');
+
+  const serverLabels = {
+    'vidnest-sub': '🔥 VidNest HD (Sub / Japanese)',
+    'vidnest-dub': '🎙️ VidNest HD (English Dub)',
+    'vidnest-hindi': '🇮🇳 VidNest HD (Hindi Dub)',
+    'vidlink': '⚡ VidLink Pro Anime (Mirror)',
+    'vidsrc': '🛡️ VidSrc HD (Mirror)',
+    'mega-sub': '🟣 Mega Server (Sub)',
+    'mega-dub': '🎙️ Mega Server (Dub)'
+  };
+
+  const badgeLabels = {
+    'vidnest-sub': 'VIDNEST SUB',
+    'vidnest-dub': 'VIDNEST DUB',
+    'vidnest-hindi': 'VIDNEST HINDI',
+    'vidlink': 'VIDLINK',
+    'vidsrc': 'VIDSRC',
+    'mega-sub': 'MEGA SUB',
+    'mega-dub': 'MEGA DUB'
+  };
+
   if (serverActiveLabel) {
-    serverActiveLabel.textContent = isDub ? "🎙️ Mega Server HD (Dub)" : "🟣 Mega Server HD (Sub)";
+    serverActiveLabel.textContent = serverLabels[activeSrv] || '🔥 VidNest HD (Sub / Japanese)';
   }
   if (streamTypeBadge) {
-    streamTypeBadge.textContent = isDub ? "MEGA DUB" : "MEGA SUB";
+    streamTypeBadge.textContent = badgeLabels[activeSrv] || 'VIDNEST SUB';
   }
 
   if (serverSelectBtn && serverMenu) {
@@ -5488,23 +5510,26 @@ function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId, epData) {
 
   if (serverSelect) {
     serverSelect.innerHTML = `
-      <div class="cw-server-opt ${!isDub ? 'active' : ''}" data-server="sub">
-        🟣 Mega Server HD (Sub / Japanese)
+      <div class="cw-server-opt ${activeSrv === 'vidnest-sub' ? 'active' : ''}" data-server="vidnest-sub">
+        🔥 VidNest HD (Sub / Japanese)
       </div>
-      <div class="cw-server-opt ${isDub ? 'active' : ''}" data-server="dub">
-        🎙️ Mega Server HD (English Dub)
+      <div class="cw-server-opt ${activeSrv === 'vidnest-dub' ? 'active' : ''}" data-server="vidnest-dub">
+        🎙️ VidNest HD (English Dub)
       </div>
-      <div class="cw-server-opt" data-server="mega-embed-sub">
-        ⚡ Mega Server Embed (Sub - JW Player)
+      <div class="cw-server-opt ${activeSrv === 'vidnest-hindi' ? 'active' : ''}" data-server="vidnest-hindi">
+        🇮🇳 VidNest HD (Hindi Dub)
       </div>
-      <div class="cw-server-opt" data-server="mega-embed-dub">
-        ⚡ Mega Server Embed (Dub - JW Player)
-      </div>
-      <div class="cw-server-opt" data-server="vidlink">
+      <div class="cw-server-opt ${activeSrv === 'vidlink' ? 'active' : ''}" data-server="vidlink">
         ⚡ VidLink Pro Anime (Mirror)
       </div>
-      <div class="cw-server-opt" data-server="vidsrc">
-        🌟 VidSrc HD (Mirror)
+      <div class="cw-server-opt ${activeSrv === 'vidsrc' ? 'active' : ''}" data-server="vidsrc">
+        🛡️ VidSrc HD (Mirror)
+      </div>
+      <div class="cw-server-opt ${activeSrv === 'mega-sub' ? 'active' : ''}" data-server="mega-sub">
+        🟣 Mega Server (Sub)
+      </div>
+      <div class="cw-server-opt ${activeSrv === 'mega-dub' ? 'active' : ''}" data-server="mega-dub">
+        🎙️ Mega Server (Dub)
       </div>
     `;
 
@@ -5512,90 +5537,50 @@ function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId, epData) {
       opt.onclick = async (e) => {
         e.stopPropagation();
         const chosen = opt.dataset.server;
+        localStorage.setItem("cw_anime_server_pref", chosen);
         serverSelect.querySelectorAll(".cw-server-opt").forEach(o => o.classList.toggle("active", o === opt));
         if (serverActiveLabel) serverActiveLabel.textContent = opt.textContent.trim();
+        if (streamTypeBadge) streamTypeBadge.textContent = badgeLabels[chosen] || chosen.toUpperCase();
         if (serverMenu) serverMenu.classList.add("hidden");
 
         const artApp = document.getElementById("artplayerApp");
         const iframe = document.getElementById("iframeElement");
+        if (artApp) artApp.classList.add("hidden");
+        if (window.artPlayerInstance) {
+          try { window.artPlayerInstance.pause(); } catch(e) {}
+        }
+        if (iframe) iframe.classList.remove("hidden");
 
-        if (chosen === "sub" || chosen === "dub") {
-          localStorage.setItem("cw_anime_audio_pref", chosen);
-          if (streamTypeBadge) streamTypeBadge.textContent = chosen === 'dub' ? 'MEGA DUB' : 'MEGA SUB';
-          if (typeof showToast === 'function') showToast(`Connecting to Mega Server (${chosen.toUpperCase()})...`);
+        const tmdbId = refMovie?.videoUrl || refMovie?.id || malId;
+        const season = epData?.season || 1;
+        const epNum = epData?.episode || rawEp;
 
-          if (iframe) {
-            iframe.classList.add("hidden");
-            iframe.src = "";
-          }
-          if (artApp) artApp.classList.remove("hidden");
-
-          const endpoints = [
-            `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${chosen}`,
-            `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${chosen}`,
-            `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${chosen}`,
-            `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${chosen}`,
-            `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${chosen}`,
-            `https://megavid.buzz/mal/${malId}/${rawEp}/${chosen}/source`
-          ];
-          for (const epUrl of endpoints) {
-            try {
-              const res = await fetch(epUrl);
-              if (!res.ok) continue;
-              const data = await res.json();
-              if (data && data.source && window.artPlayerInstance) {
-                window.artPlayerInstance.switchUrl(data.source);
-                if (data.tracks && data.tracks.length > 0) {
-                  const en = data.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || data.tracks[0];
-                  if (en && en.file) {
-                    window.artPlayerInstance.subtitle.switch(en.file, { name: en.label || 'English' });
-                  }
-                }
-                if (typeof showToast === 'function') showToast(`Connected to Mega Server HD (${chosen.toUpperCase()})`);
-                break;
-              }
-            } catch(err) {}
-          }
-        } else if (chosen === "mega-embed-sub" || chosen === "mega-embed-dub") {
-          const mode = chosen === "mega-embed-dub" ? "dub" : "sub";
-          if (streamTypeBadge) streamTypeBadge.textContent = "MEGA EMBED";
-          if (artApp) artApp.classList.add("hidden");
-          if (window.artPlayerInstance) {
-            try { window.artPlayerInstance.pause(); } catch(e) {}
-          }
-          if (iframe) {
-            iframe.classList.remove("hidden");
-            iframe.src = `https://megavid.buzz/mal/${malId}/${rawEp}/${mode}`;
-          }
-          if (typeof showToast === 'function') showToast(`Switched to Mega Server Embed (${mode.toUpperCase()})`);
+        if (chosen === "vidnest-sub") {
+          localStorage.setItem("cw_anime_audio_pref", "sub");
+          if (iframe) iframe.src = `https://vidnest.fun/anime/${aniId}/${rawEp}/sub`;
+          if (typeof showToast === 'function') showToast('Switched to VidNest HD (Japanese / English Sub)');
+        } else if (chosen === "vidnest-dub") {
+          localStorage.setItem("cw_anime_audio_pref", "dub");
+          if (iframe) iframe.src = `https://vidnest.fun/anime/${aniId}/${rawEp}/dub`;
+          if (typeof showToast === 'function') showToast('Switched to VidNest HD (English Dub)');
+        } else if (chosen === "vidnest-hindi") {
+          localStorage.setItem("cw_anime_audio_pref", "hindi");
+          if (iframe) iframe.src = `https://vidnest.fun/anime/${aniId}/${rawEp}/hindi`;
+          if (typeof showToast === 'function') showToast('Switched to VidNest HD (Hindi Dub)');
         } else if (chosen === "vidlink") {
-          if (streamTypeBadge) streamTypeBadge.textContent = "VIDLINK";
-          if (artApp) artApp.classList.add("hidden");
-          if (window.artPlayerInstance) {
-            try { window.artPlayerInstance.pause(); } catch(e) {}
-          }
-          if (iframe) {
-            iframe.classList.remove("hidden");
-            const tmdbId = refMovie?.videoUrl || refMovie?.id || malId;
-            const season = epData?.season || 1;
-            const epNum = epData?.episode || rawEp;
-            iframe.src = `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=e50914`;
-          }
-          if (typeof showToast === 'function') showToast('Switched to VidLink Pro Mirror');
+          if (iframe) iframe.src = `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=e50914`;
+          if (typeof showToast === 'function') showToast('Switched to VidLink Pro Anime');
         } else if (chosen === "vidsrc") {
-          if (streamTypeBadge) streamTypeBadge.textContent = "VIDSRC";
-          if (artApp) artApp.classList.add("hidden");
-          if (window.artPlayerInstance) {
-            try { window.artPlayerInstance.pause(); } catch(e) {}
-          }
-          if (iframe) {
-            iframe.classList.remove("hidden");
-            const tmdbId = refMovie?.videoUrl || refMovie?.id || malId;
-            const season = epData?.season || 1;
-            const epNum = epData?.episode || rawEp;
-            iframe.src = `https://vidsrc.cc/v2/embed/tv/${tmdbId}/${season}/${epNum}`;
-          }
+          if (iframe) iframe.src = `https://vidsrc.cc/v2/embed/tv/${tmdbId}/${season}/${epNum}`;
           if (typeof showToast === 'function') showToast('Switched to VidSrc Mirror');
+        } else if (chosen === "mega-sub") {
+          localStorage.setItem("cw_anime_audio_pref", "sub");
+          if (iframe) iframe.src = `https://megavid.buzz/mal/${malId}/${rawEp}/sub`;
+          if (typeof showToast === 'function') showToast('Switched to Mega Server (Sub)');
+        } else if (chosen === "mega-dub") {
+          localStorage.setItem("cw_anime_audio_pref", "dub");
+          if (iframe) iframe.src = `https://megavid.buzz/mal/${malId}/${rawEp}/dub`;
+          if (typeof showToast === 'function') showToast('Switched to Mega Server (Dub)');
         }
       };
     });
@@ -5604,12 +5589,13 @@ function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId, epData) {
   const standardSelect = document.getElementById("videoServerSelect");
   if (standardSelect) {
     standardSelect.innerHTML = `
-      <option value="sub" ${!isDub ? 'selected' : ''}>Mega Server HD (Sub / Japanese)</option>
-      <option value="dub" ${isDub ? 'selected' : ''}>Mega Server HD (English Dub)</option>
-      <option value="mega-embed-sub">Mega Server Embed (Sub - JW Player)</option>
-      <option value="mega-embed-dub">Mega Server Embed (Dub - JW Player)</option>
-      <option value="vidlink">VidLink Pro Anime (Mirror)</option>
-      <option value="vidsrc">VidSrc HD (Mirror)</option>
+      <option value="vidnest-sub" ${activeSrv === 'vidnest-sub' ? 'selected' : ''}>VidNest HD (Sub / Japanese)</option>
+      <option value="vidnest-dub" ${activeSrv === 'vidnest-dub' ? 'selected' : ''}>VidNest HD (English Dub)</option>
+      <option value="vidnest-hindi" ${activeSrv === 'vidnest-hindi' ? 'selected' : ''}>VidNest HD (Hindi Dub)</option>
+      <option value="vidlink" ${activeSrv === 'vidlink' ? 'selected' : ''}>VidLink Pro Anime (Mirror)</option>
+      <option value="vidsrc" ${activeSrv === 'vidsrc' ? 'selected' : ''}>VidSrc HD (Mirror)</option>
+      <option value="mega-sub" ${activeSrv === 'mega-sub' ? 'selected' : ''}>Mega Server (Sub)</option>
+      <option value="mega-dub" ${activeSrv === 'mega-dub' ? 'selected' : ''}>Mega Server (Dub)</option>
     `;
     standardSelect.onchange = (e) => {
       const chosen = e.target.value;
