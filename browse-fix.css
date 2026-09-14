@@ -443,7 +443,7 @@
   }
 }
 
-/* Card Meta Layout — Rating (left), Age (center), Year (right) */
+/* Card Meta Layout — Premium Cinematic Alignment & Micro-Chips */
 .card-meta,
 .movie-card .card-meta,
 #moviesGrid .card-meta,
@@ -457,11 +457,13 @@
   box-sizing: border-box !important;
   flex-wrap: nowrap !important;
   white-space: nowrap !important;
-  gap: 8px !important;
-  line-height: 1.2 !important;
+  gap: 6px !important;
+  line-height: 1 !important;
   position: relative !important;
+  margin-top: 4px !important;
 }
 
+/* Rating Pill — Amber Tinted Glass Capsule */
 .card-meta .card-rating,
 .movie-card .card-rating,
 #moviesGrid .card-rating,
@@ -471,21 +473,31 @@
   flex: 0 0 auto !important;
   display: inline-flex !important;
   align-items: center !important;
-  gap: 3px !important;
+  gap: 3.5px !important;
   margin: 0 !important;
-  font-weight: 600 !important;
-  color: var(--gold, #ffc107) !important;
+  font-weight: 700 !important;
+  font-size: 0.74rem !important;
+  color: #ffc107 !important;
+  background: rgba(255, 193, 7, 0.12) !important;
+  border: 1px solid rgba(255, 193, 7, 0.28) !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
   white-space: nowrap !important;
-  font-size: 0.8rem !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35) !important;
+  line-height: 1.2 !important;
 }
 
 .card-meta .card-rating .star-icon,
 .movie-card .card-rating .star-icon {
   color: #ffc107 !important;
-  margin-right: 2px !important;
+  font-size: 0.72rem !important;
+  margin: 0 !important;
+  line-height: 1 !important;
 }
 
-/* Age beside rating on the left (Plain Text, No Outline, No Red) */
+/* Age Rating Tag — Sleek Frosted Certificate Micro-Chip */
 .card-meta .badge-age,
 .card-meta .card-age {
   display: inline-flex !important;
@@ -493,23 +505,25 @@
   justify-content: center !important;
   margin: 0 !important;
   flex: 0 0 auto !important;
-  padding: 0 !important;
-  border: none !important;
-  outline: none !important;
-  border-radius: 0 !important;
-  color: rgba(255, 255, 255, 0.6) !important;
-  background: transparent !important;
-  font-size: 0.78rem !important;
+  padding: 2px 5.5px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  border-radius: 4px !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  font-size: 0.68rem !important;
   font-weight: 600 !important;
   line-height: 1.2 !important;
-  letter-spacing: 0.3px !important;
+  letter-spacing: 0.4px !important;
   text-transform: uppercase !important;
   vertical-align: middle !important;
   user-select: none !important;
-  box-shadow: none !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
   white-space: nowrap !important;
 }
 
+/* Release Year — Clean Muted Silver Typography */
 .card-meta .card-year,
 .movie-card .card-year,
 #moviesGrid .card-year,
@@ -517,11 +531,16 @@
 #animeGrid .card-year,
 .browse-grid .card-year {
   flex: 0 0 auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
   margin: 0 !important;
-  color: rgba(255, 255, 255, 0.6) !important;
-  font-weight: 600 !important;
-  font-size: 0.8rem !important;
+  padding: 2px 2px !important;
+  color: rgba(255, 255, 255, 0.68) !important;
+  font-weight: 500 !important;
+  font-size: 0.75rem !important;
+  line-height: 1.2 !important;
   white-space: nowrap !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8) !important;
 }
 
 .card-meta .card-type,
@@ -529,7 +548,7 @@
   display: none !important;
 }
 
-/* Mobile optimizations: all on left side with clean gap */
+/* Mobile optimizations */
 @media (max-width: 768px) {
   .movie-card .card-details {
     padding: 0.7rem 0.6rem 0.55rem !important;
@@ -541,29 +560,24 @@
   #animeGrid .card-meta,
   .browse-grid .card-meta {
     justify-content: flex-start !important;
-    gap: 7px !important;
-    font-size: 0.74rem !important;
+    gap: 6px !important;
+    margin-top: 3px !important;
   }
   .card-meta .card-rating,
   .movie-card .card-rating {
-    font-size: 0.74rem !important;
-    margin: 0 !important;
-  }
-  .card-meta .card-year,
-  .movie-card .card-year {
-    font-size: 0.74rem !important;
-    margin: 0 !important;
+    font-size: 0.7rem !important;
+    padding: 1.5px 5px !important;
+    gap: 3px !important;
   }
   .card-meta .badge-age,
   .card-meta .card-age {
+    font-size: 0.65rem !important;
+    padding: 1.5px 5px !important;
+    letter-spacing: 0.3px !important;
+  }
+  .card-meta .card-year,
+  .movie-card .card-year {
     font-size: 0.72rem !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    height: auto !important;
-    border: none !important;
-    outline: none !important;
-    background: transparent !important;
-    box-shadow: none !important;
   }
 }
 
