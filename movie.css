@@ -2441,7 +2441,8 @@ body.rtl-layout .modal-search-clear {
 .card-meta {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: flex-start;
+  gap: 8px;
   font-size: 0.85rem;
   color: var(--color-text-tertiary);
   flex-wrap: nowrap;
