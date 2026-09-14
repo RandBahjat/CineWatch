@@ -2740,68 +2740,7 @@ body.rtl-layout .modal-search-clear {
   transition: background 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* =========================================================
-   Trailer-Active Text Readability — Pure Cinematic Scrim
-   No boxes, no pills, no borders: seamless organic legibility
-   ========================================================= */
 
-.details-title-large,
-.details-overview-large,
-.details-meta-row,
-.details-cast-list {
-  transition: text-shadow 0.5s ease, color 0.5s ease;
-}
-
-/* Deepen left cinematic gradient seamlessly behind the text when trailer plays */
-#detailsSection.trailer-bg-active .details-bg-gradient-overlay {
-  background: 
-    /* Top vignette for controls */
-    linear-gradient(to bottom, rgba(5, 7, 10, 0.85) 0%, rgba(5, 7, 10, 0.2) 15%, transparent 25%),
-    /* Rich seamless left cinematic shadow protecting the entire text column without any boxes */
-    linear-gradient(to right, rgba(5, 7, 10, 0.97) 0%, rgba(5, 7, 10, 0.9) 35%, rgba(5, 7, 10, 0.55) 60%, rgba(5, 7, 10, 0.18) 78%, transparent 100%),
-    /* Bottom fade */
-    linear-gradient(to top, var(--bg-dark) 0%, rgba(5, 7, 10, 0.92) 10%, rgba(5, 7, 10, 0.3) 22%, transparent 34%);
-}
-
-/* RTL layout support for left-to-right inversion */
-body.rtl-layout #detailsSection.trailer-bg-active .details-bg-gradient-overlay {
-  background: 
-    linear-gradient(to bottom, rgba(5, 7, 10, 0.85) 0%, rgba(5, 7, 10, 0.2) 15%, transparent 25%),
-    linear-gradient(to left, rgba(5, 7, 10, 0.97) 0%, rgba(5, 7, 10, 0.9) 35%, rgba(5, 7, 10, 0.55) 60%, rgba(5, 7, 10, 0.18) 78%, transparent 100%),
-    linear-gradient(to top, var(--bg-dark) 0%, rgba(5, 7, 10, 0.92) 10%, rgba(5, 7, 10, 0.3) 22%, transparent 34%);
-}
-
-/* Crisp, natural text shadows so all text stays clear over trailer highlights without any boxy frames */
-#detailsSection.trailer-bg-active .details-title-large {
-  text-shadow: 
-    0 2px 6px rgba(0, 0, 0, 0.98),
-    0 8px 24px rgba(0, 0, 0, 0.95),
-    0 0 45px rgba(0, 0, 0, 0.9);
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.9));
-}
-
-#detailsSection.trailer-bg-active .details-meta-row {
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 3px 12px rgba(0, 0, 0, 0.9);
-  color: #f3f4f6;
-}
-
-#detailsSection.trailer-bg-active .details-overview-large {
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 3px 14px rgba(0, 0, 0, 0.9);
-  color: #ffffff !important;
-}
-
-#detailsSection.trailer-bg-active .details-cast-list {
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 3px 12px rgba(0, 0, 0, 0.9);
-}
-
-#detailsSection.trailer-bg-active .details-cast-list .cast-label {
-  color: #fbbf24 !important;
-  font-weight: 700 !important;
-}
-
-#detailsSection.trailer-bg-active .details-cast-list .cast-text {
-  color: #ffffff !important;
-}
 
 .details-hero-bg::after {
   content: "";
