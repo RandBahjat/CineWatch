@@ -1290,7 +1290,39 @@ window._MOVIES_DATA = [
     seasons: []
   },
 
-  
+   {
+    title: "The Amazing Spider-Man 2",
+    type: "Movie",
+    year: 2014,
+    rating: 6.8,
+    age: "PG-13",
+    duration: "2h 22m",
+    genres: [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    poster: "https://image.tmdb.org/t/p/original/bU7nTmvmy0h3VUP01v1T2imgH6N.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/hDvqcbZhq9ux0euxYxCP9N6m1Rh.jpg",
+    videoUrl: "102382",
+    trailerUrl: "https://www.youtube.com/watch?v=aY6C2VtSTxg",
+    overview: "As Spider-Man, Peter Parker continues protecting the city he loves while struggling to balance his double life with his relationship with Gwen Stacy. When a lonely Oscorp engineer is transformed into the destructive Electro, and Peter's estranged friend Harry Osborn returns to confront his father's dark legacy, Peter must face threats that will test everything he holds dear — and force him to reckon with the cost of being a hero.",
+    overviewKurdish: "",
+    director: "Marc Webb",
+    cast: [
+      "Andrew Garfield",
+      "Emma Stone",
+      "Jamie Foxx",
+      "Dane DeHaan",
+      "Colm Feore",
+      "Sally Field"
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: []
+  },
+
   {
     title: "Iron Man 3",
     type: "Movie",
