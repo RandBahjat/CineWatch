@@ -6645,7 +6645,7 @@ body.rtl-layout .details-back-btn svg {
 .browse-card-year {
   font-weight: 600;
   text-shadow: 0 1px 3px rgba(0,0,0,0.8);
-  margin-left: auto;
+  margin-left: 0;
 }
 
 /* ---- Pagination ---- */
