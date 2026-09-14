@@ -402,7 +402,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/4E5RVsSUG1A4Adwbqupu5w6kofZ.jpg",
     videoUrl: "1375441",
     trailerUrl: "https://youtu.be/5fHXyqQOKL8?si=bYVUPbXvMR8PuEBR",
-    overview: "Kara Zor-El, cousin of Superman, is drawn into a quest for vengeance after a violent attack shatters her fragile peace. Joined by an unexpected ally, she sets out across the galaxy, confronting both a ruthless enemy and her own darker instincts along the way.",
+    overview: "An ambitious television journalist creates a controversial reality investigation show to expose online predators. As the program becomes a massive ratings success, the line between journalism, entertainment, and vigilante justice blurs, triggering a dangerous chain of events that threatens to destroy everyone involved.",
     overviewKurdish: "",
     director: "Craig Gillespie",
     cast: [
