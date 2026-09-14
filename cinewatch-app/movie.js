@@ -5189,7 +5189,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     const mode = curPref === 'dub' ? 'dub' : 'sub';
     targetSrc = `https://megavid.buzz/mal/${malId}/${rawEp}/${mode}`;
   } else {
-    targetSrc = `https://vidnest.fun/tv/${tmdbId}/${season}/${epNum}?prevepisode=hide&nextepisode=hide&bottomsettings=off`;
+    targetSrc = `https://vaplayer.ru/embed/tv/${tmdbId}/${season}/${epNum}?skin=netflix`;
   }
 
   if (artContainer) artContainer.classList.add("hidden");
@@ -5198,6 +5198,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     iframe.setAttribute("frameborder", "0");
     iframe.setAttribute("scrolling", "no");
     iframe.setAttribute("allowfullscreen", "true");
+    iframe.setAttribute("allow", "autoplay; encrypted-media; picture-in-picture");
     iframe.src = targetSrc;
     iframe.onload = () => {
       const co = document.getElementById("videoCenterOverlay");
@@ -5505,19 +5506,20 @@ function updateIframeServer() {
     try { window.artPlayerInstance.pause(); } catch(e) {}
   }
 
-  // VidNest as the only server:
-  // TV: https://vidnest.fun/tv/${data.id}/${data.season}/${data.episode}?prevepisode=hide&nextepisode=hide&bottomsettings=off
-  // Movie: https://vidnest.fun/movie/${data.id}?bottomsettings=off
+  // VaPlayer server for Movies and Series (Netflix Skin)
+  // TV: https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}?skin=netflix
+  // Movie: https://vaplayer.ru/embed/movie/${data.id}?skin=netflix
   let newUrl = '';
   if (data.type === 'tv') {
-    newUrl = `https://vidnest.fun/tv/${data.id}/${data.season}/${data.episode}?prevepisode=hide&nextepisode=hide&bottomsettings=off`;
+    newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}?skin=netflix`;
   } else {
-    newUrl = `https://vidnest.fun/movie/${data.id}?bottomsettings=off`;
+    newUrl = `https://vaplayer.ru/embed/movie/${data.id}?skin=netflix`;
   }
 
   iframe.setAttribute("frameborder", "0");
   iframe.setAttribute("scrolling", "no");
   iframe.setAttribute("allowfullscreen", "true");
+  iframe.setAttribute("allow", "autoplay; encrypted-media; picture-in-picture");
 
   iframe.onload = () => {
     const centerOverlay = document.getElementById('videoCenterOverlay');
