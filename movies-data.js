@@ -345,7 +345,7 @@ window._MOVIES_DATA = [
     poster: "https://image.tmdb.org/t/p/original/diI1NMZ9lkzCUmdDzwyk4Qcqmt5.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
     videoUrl: "1423191",
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/mNd1gb19A-c?si=Ne3W24qSAY1X8Lf1",
     overview: "Kara Zor-El, cousin of Superman, is drawn into a quest for vengeance after a violent attack shatters her fragile peace. Joined by an unexpected ally, she sets out across the galaxy, confronting both a ruthless enemy and her own darker instincts along the way.",
     overviewKurdish: "",
     director: "Craig Gillespie",
