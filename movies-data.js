@@ -390,7 +390,7 @@ window._MOVIES_DATA = [
     title: "Primetime",
     type: "Movie",
     year: 2026,
-    rating: 5.9,
+    rating: 7.6,
     age: "PG-13",
     duration: "2h 5m",
     genres: [
