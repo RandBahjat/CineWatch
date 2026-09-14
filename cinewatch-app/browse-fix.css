@@ -452,12 +452,12 @@
 .browse-grid .card-meta {
   display: flex !important;
   align-items: center !important;
-  justify-content: space-between !important;
+  justify-content: flex-start !important;
   width: 100% !important;
   box-sizing: border-box !important;
   flex-wrap: nowrap !important;
   white-space: nowrap !important;
-  gap: 4px !important;
+  gap: 8px !important;
   line-height: 1.2 !important;
   position: relative !important;
 }
@@ -485,13 +485,13 @@
   margin-right: 2px !important;
 }
 
-/* Age in Dead Center (Plain Text, No Red, No Outline) */
+/* Age beside rating on the left (Plain Text, No Outline, No Red) */
 .card-meta .badge-age,
 .card-meta .card-age {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  margin: 0 auto !important;
+  margin: 0 !important;
   flex: 0 0 auto !important;
   padding: 0 !important;
   border: none !important;
@@ -529,7 +529,7 @@
   display: none !important;
 }
 
-/* Mobile optimizations: prevent any wrapping and ensure comfortable padding */
+/* Mobile optimizations: all on left side with clean gap */
 @media (max-width: 768px) {
   .movie-card .card-details {
     padding: 0.7rem 0.6rem 0.55rem !important;
@@ -540,20 +540,24 @@
   #seriesGrid .card-meta,
   #animeGrid .card-meta,
   .browse-grid .card-meta {
+    justify-content: flex-start !important;
+    gap: 7px !important;
     font-size: 0.74rem !important;
-    gap: 2px !important;
   }
   .card-meta .card-rating,
   .movie-card .card-rating {
     font-size: 0.74rem !important;
+    margin: 0 !important;
   }
   .card-meta .card-year,
   .movie-card .card-year {
     font-size: 0.74rem !important;
+    margin: 0 !important;
   }
   .card-meta .badge-age,
   .card-meta .card-age {
     font-size: 0.72rem !important;
+    margin: 0 !important;
     padding: 0 !important;
     height: auto !important;
     border: none !important;
