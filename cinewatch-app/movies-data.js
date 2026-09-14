@@ -437,7 +437,7 @@ window._MOVIES_DATA = [
     overviewKurdish: "بەهێزترین قارەمانەکانی زەوی لەگەڵ هاوپەیمانە نوێیەکانی سەرانسەری فرەگەردوون کۆدەبنەوە بۆ ڕووبەڕووبوونەوەی گەورەترین مەترسیی تا ئێستا کە ڤیکتۆر ڤۆن دوومە. کاتێک ئەم ستەمکارە بلیمەت و بێبەزەیییە پیلانێک بۆ داگیرکردنی ڕەهەندەکان و دەستکاری کردنی واقیع دادەنێت، قارەمانەکان دەبێت ناکۆکییەکانیان وەلانێن و قوربانی گەورە بدەن بۆ ڕێگریکردن لە لەناوچوونی تەواوەتی.",
     director: "Anthony Russo, Joe Russo",
     cast: [
-      "Anson Mount, Michael Mando, Pablo Schreiber, Jack Giffin, Bruce Boxleitner, David Dastmalchian, Simon Templeman"
+      "Robert Downey Jr., Pedro Pascal, Vanessa Kirby, Joseph Quinn, Ebon Moss-Bachrach, Benedict Cumberbatch"
     ],
     trending: true,
     featured: true,
