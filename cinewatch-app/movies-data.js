@@ -433,7 +433,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/s4v0UX1anfXm0UvloLsTTJ4v222.jpg",
     videoUrl: "1003596",
     trailerUrl: "https://youtu.be/irVNGjRFZGk?si=l5r7wEgaXgw_gpYp",
-    overview: "Bane, cunning and merciless foe, craft careful plan bring down Batman. First he unleash every dangerous villain from Arkham Asylum loose on Gotham, wear Batman down with no rest hunting them all. Batman's strength, endurance slowly fade, until finally he face Bane in fateful showdown.",
+    overview: "The Earth's mightiest heroes reunite alongside new allies across the multiverse to face their ultimate threat, Victor von Doom. As the brilliant and ruthless tyrant unleashes a dark plot to conquer dimensions and reshape reality, the team must put aside their differences and make the ultimate sacrifice to prevent total annihilation.",
     overviewKurdish: "بەین، دوژمنێکی زیرەک و بێ بەزەیی، پلانێکی وردی داڕشتووە بۆ لابردنی باتمان لە گۆو‌‌‌‌‌‌ثام. سەرەتا هەموو دوژمنە مەترسیدارەکانی ئارکهام ئازایلۆم بەڕەلا دەکات بۆ ناو شار، تاکو باتمان بێ پشوو بمێنێتەوە لە ڕاونانیان. هێز و توانای باتمان بەرەبەرە کەم دەبێتەوە، هەتا لە کۆتاییدا ڕووبەڕووی بەین دەبێتەوە بۆ شەڕێکی چارەنووسساز.",
     director: "Jeff Wamester",
     cast: [
