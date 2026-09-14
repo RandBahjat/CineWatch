@@ -395,7 +395,7 @@ window._MOVIES_DATA = [
     duration: "1h 50m",
     genres: [
       "Crime",
-      "Sci-Fi",
+      ",
       "Adventure"
     ],
     poster: "https://image.tmdb.org/t/p/w600_and_h900_face/uhzRnTW4DM13UQBvZP3eVNzQTuz.jpg",
