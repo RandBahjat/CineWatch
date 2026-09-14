@@ -449,7 +449,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 2026,
     rating: "Pending",
-    age: "TBR",
+    age: "Pending",
     duration: "2h 45m",
     genres: [
       "Action",
