@@ -406,9 +406,7 @@ window._MOVIES_DATA = [
     overviewKurdish: "ڕۆژنامەنووسێکی کەناڵی تەلەفزیۆنی بەرنامەیەکی لێکۆڵینەوەیی جەنجاڵباو دروست دەکات بۆ ئاشکراکردنی تاوانبارانی ئۆنلاین. کاتێک بەرنامەکە سەرکەوتنێکی گەورە لە ڕێژەی بینەراندا بەدەستدەهێنێت، سنووری نێوان ڕۆژنامەگەری، کات بەسەربردن و دادپەروەری تێکەڵ دەبێت، ئەمەش زنجیرەیەک ڕووداو دەستپێدەکات کە مەترسی لەسەر ژیانی تەواوی بەشداربووان دروست دەکات.",
     director: "Lance Oppenheim",
     cast: [
-      "Milly Alcock",
-      "Jason Momoa",
-      "Matthias Schoenaerts"
+      "Robert Pattinson, Merritt Wever, Skyler Gisondo, Phoebe Bridgers, Matthew Maher, Anna Faris, Bokeem Woodbine"
     ],
     trending: true,
     featured: true,
