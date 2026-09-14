@@ -347,7 +347,7 @@ window._MOVIES_DATA = [
     videoUrl: "1423191",
     trailerUrl: "https://youtu.be/mNd1gb19A-c?si=Ne3W24qSAY1X8Lf1",
     overview: "Alice wakes up with amnesia in a deserted mansion hiding a secret entrance to the Hive, an underground genetic research facility. When a deadly biological weapon called the T-virus escapes, mutating the facility staff into flesh-eating zombies and turning the supercomputer defense system hostile, a elite commando unit moves in to contain the outbreak before the infection reaches the surface.",
-    overviewKurdish: "",
+    overviewKurdish: "ئالیس بێ بیرەوەری لە کۆشکێکی چۆڵدا بەئاگا دێتەوە کە دەروازەیەکی نهێنی بۆ تاقیگەیەکی ژێر زەوی بە ناوی هایڤ دەشارێتەوە. کاتێک چەکێکی بایۆلۆجی کوشندە بە ناوی تی-ڤایرۆس بڵاودەبێتەوە و کارمەندەکان دەکاتە زۆمبی و سیستەمی ئەمنی کۆمپیوتەرەکە دەکاتە دژبەر، تیمێکی تایبەت دەستوەردان دەکەن بۆ ڕاگرتنی بڵاوبوونەوەکە پێش ئەوەی بگاتە سەر زەوی.",
     director: "Craig Gillespie",
     cast: [
       "Milly Alcock",
