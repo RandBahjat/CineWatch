@@ -331,7 +331,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Supergirl",
+    title: "Resident Evil",
     type: "Movie",
     year: 2026,
     rating: 5.9,
