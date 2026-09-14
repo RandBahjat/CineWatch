@@ -1960,7 +1960,15 @@ function playMovieDirect(movieId) {
         }
       ];
     } else {
+      const vaPlayerUrl = isTv
+        ? `https://vaplayer.ru/embed/tv/${tmdb}/${mappedSeason}/${mappedEpisode}?skin=netflix`
+        : `https://vaplayer.ru/embed/movie/${tmdb}?skin=netflix`;
       servers = [
+        {
+          id: 'vaplayer',
+          name: '🎬 VaPlayer HD (Netflix Skin)',
+          url: vaPlayerUrl
+        },
         {
           id: 'vidlink',
           name: '⚡ VidLink Pro',
