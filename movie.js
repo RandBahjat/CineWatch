@@ -793,6 +793,7 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
     <div class="movie-card" data-id="${movie.id}">
       <div class="card-poster-wrap ${forcePoster ? 'force-poster-wrap' : ''}">
         ${rankHtml}
+        ${movie.age ? `<div class="poster-age-badge notranslate" translate="no">${movie.age}</div>` : ''}
         <picture>
           ${sourceTag}
           <img src="${imgSrc}" alt="${movie.title}" class="card-poster ${forcePoster ? 'force-poster-img' : ''}" loading="lazy">
