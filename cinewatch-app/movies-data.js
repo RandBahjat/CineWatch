@@ -1303,7 +1303,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w1280/jexoNYnPd6vVrmygwF6QZmWPFdu.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/HVcza6tJtWFrLriuh3Ano4Vt46.jpg",
     videoUrl: "1930",
-    trailerUrl: "",
+    trailerUrl: "https://www.youtube.com/watch?v=w4tar0V9B6g",
     overview: "Peter Parker has always felt like an outsider, still haunted by the unexplained disappearance of his parents years ago. Determined to find answers, he investigates his father's old research and crosses paths with Dr. Curt Connors at Oscorp — an encounter that leaves Peter with astonishing new abilities. As he grapples with the responsibilities of his newfound power, a personal tragedy pushes him to become a masked vigilante, just as a monstrous adversary threatens the city he's sworn to protect.",
     overviewKurdish: "",
     director: "Marc Webb",
