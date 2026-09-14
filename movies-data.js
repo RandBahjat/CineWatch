@@ -427,7 +427,7 @@ window._MOVIES_DATA = [
     genres: [
       "Action",
       "Animation",
-      "Crime"
+      "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9pKPTugulAt0EtH0g4gvJGffPSg.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/caBIySpwuFi2i7ynvHIlnxJLOdN.jpg",
