@@ -387,7 +387,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Supergirl",
+    title: "Primetime",
     type: "Movie",
     year: 2026,
     rating: 5.9,
