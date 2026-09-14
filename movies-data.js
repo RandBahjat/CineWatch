@@ -342,7 +342,7 @@ window._MOVIES_DATA = [
       "Horror",
       "Sci-Fi"
     ],
-    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/uhzRnTW4DM13UQBvZP3eVNzQTuz.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qku2uWSoJ9amQV5MWo1Eek29iji.jpg",
     backdrop: "https://images.hdqwalls.com/download/supergirl-team-up-4k-hb-3840x2160.jpg",
     videoUrl: "1081003",
     trailerUrl: "",
