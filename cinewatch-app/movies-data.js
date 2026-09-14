@@ -448,6 +448,8 @@ window._MOVIES_DATA = [
     title: "Avengers: Doomsday",
     type: "Movie",
     year: 2026,
+    rating: "Pending",
+    age: "Pending",
     duration: "2h 45m",
     genres: [
       "Action",
