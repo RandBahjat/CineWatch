@@ -19,7 +19,7 @@ let TRENDING_THIS_WEEK_MOVIES = ["Mayday","The Whisper Man","Batman: Knightfall 
 let TRENDING_THIS_WEEK_SERIES = ["Lanterns", "Reacher", "The Gentlemen", "Silo", "One Piece", "Ted Lasso","Last Seen", "X-Men '97", "Lioness", "Outer Banks"];
 const POPULAR_MOVIES = ["Coyote vs. Acme","Mayday","Moana(2026)","Batman: Knightfall Part 1: Knightfall", "Mutiny", "The Odyssey", "The Runner", "Spider-Man: Brand New Day","Obsession", "Spider-Man: No Way Home","Backrooms", "Disclosure Day", "The Death of Robin Hood", "The Last House","Drawn Together","The End of Oak Street", "Michael", "Project Hail Mary","Avatar Aang: The Last Airbender","The Shawshank Redemption"];
 const POPULAR_SERIES = ["Reacher","The Mentalist","The Gentlemen", "Breaking Bad","Law & Order: Special Victims Unit", "Ted Lasso","House", "Lucky", "Off Campus", "Silo", "Game of Thrones", "The Sopranos", "Stranger Things", "The Boys","The Rookie","The Good Doctor","Dexter","From","S.W.A.T.","The Walking Dead","Stranger Things"];
-let UPCOMING_MOVIES = ["Avengers: Doomsday", "The Odyssey", "Supergirl", "Batman: Knightfall Part 1: Knightfall", "Project Hail Mary", "Michael", "Toy Story 5", "Backrooms", "The Death of Robin Hood", "Coyote vs. Acme", "Motor City", "Grand Theft Auto VI: An Extended Look", "Mayday", "Mutiny"];
+let UPCOMING_MOVIES = ["Avengers: Doomsday", "Resident Evil", "Supergirl", "Batman: Knightfall Part 1: Knightfall", "Project Hail Mary", "Michael", "Toy Story 5", "Backrooms", "The Death of Robin Hood", "Coyote vs. Acme", "Motor City", "Grand Theft Auto VI: An Extended Look", "Mayday", "Mutiny"];
 
 // Expose globally so apps & modules can sync seamlessly with movie.js
 window.FEATURED_TITLES = FEATURED_TITLES;
