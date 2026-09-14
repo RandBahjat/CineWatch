@@ -430,7 +430,7 @@ window._MOVIES_DATA = [
       "Sci-Fi"
     ],
     poster: "https://image.tmdb.org/t/p/original/jzPwsojjFStf5lR5Nm07w2hH56G.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/caBIySpwuFi2i7ynvHIlnxJLOdN.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/s4v0UX1anfXm0UvloLsTTJ4v222.jpg",
     videoUrl: "1560520",
     trailerUrl: "",
     overview: "Bane, cunning and merciless foe, craft careful plan bring down Batman. First he unleash every dangerous villain from Arkham Asylum loose on Gotham, wear Batman down with no rest hunting them all. Batman's strength, endurance slowly fade, until finally he face Bane in fateful showdown.",
