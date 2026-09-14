@@ -418,7 +418,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: ",
+    title: "Avengers: Doomsday",
     type: "Movie",
     year: 2026,
     rating: 8.0,
