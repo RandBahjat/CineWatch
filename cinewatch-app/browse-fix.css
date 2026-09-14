@@ -443,5 +443,27 @@
   }
 }
 
+/* Card Meta Age Badge - Vibrant Red (Between Rating and Year) */
+.card-meta .badge-age,
+.card-meta .card-age {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0px 5px !important;
+  font-size: 0.68rem !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+  border: 1.5px solid #e50914 !important;
+  border-radius: 3px !important;
+  color: #ff3333 !important;
+  background: rgba(229, 9, 20, 0.18) !important;
+  letter-spacing: 0.4px !important;
+  text-transform: uppercase !important;
+  vertical-align: middle !important;
+  user-select: none !important;
+  box-shadow: 0 0 8px rgba(229, 9, 20, 0.25) !important;
+}
+
+
 
 
