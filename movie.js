@@ -121,12 +121,18 @@ function getLocalizedTitle(item) {
 }
 
 function formatRating(rating) {
-  const num = parseFloat(rating).toFixed(1);
+  if (rating === null || rating === undefined || rating === '') return '';
+  const str = String(rating).trim();
+  if (!str) return '';
+  // If it's a non-numeric string (e.g. "TBR", "TBD", "NR", etc.), show it exactly as written in code
+  if (isNaN(Number(str))) {
+    return str;
+  }
   const cookies = document.cookie || '';
   const isSorani = cookies.includes('googtrans=/en/ckb');
-  if (!isSorani) return num;
-  // Convert to Kurdish / Eastern-Arabic numerals: ٠١٢٣٤٥٦٧٨٩
-  return num.replace(/[0-9]/g, d => '٠١٢٣٤٥٦٧٨٩'[d]);
+  if (!isSorani) return str;
+  // Convert digits to Kurdish / Eastern-Arabic numerals: ٠١٢٣٤٥٦٧٨٩
+  return str.replace(/[0-9]/g, d => '٠١٢٣٤٥٦٧٨٩'[d]);
 }
 
 function getLocalizedOverview(item) {
@@ -622,6 +628,7 @@ function setupHeroBanner() {
                 <span class="meta-rating notranslate" translate="no"><span class="star-icon">★</span> ${formatRating(movie.rating)}</span>
                 <span class="meta-dot">•</span>
                 <span class="meta-year notranslate" translate="no">${formatNumber(movie.year)}</span>
+                ${movie.age ? `<span class="meta-dot">•</span><span class="hero-age badge-age notranslate" translate="no">${movie.age}</span>` : ""}
                 ${genresList ? `<span class="meta-dot">•</span><span class="meta-genres-inline">${genresList}</span>` : ""}
             </div>
             <p class="hero-overview ${getLocalizedOverview(movie).isKurdish ? 'notranslate' : ''}" translate="${getLocalizedOverview(movie).isKurdish ? 'no' : 'yes'}">${getLocalizedOverview(movie).text}</p>
@@ -800,6 +807,7 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
         <div class="card-meta">
           <span class="card-rating notranslate" translate="no"><span class="star-icon" style="color: #ffc107; margin-right: 3px;">★</span>${formatRating(movie.rating)}</span>
           <span class="card-year notranslate" translate="no">${formatNumber(movie.year)}</span>
+          ${movie.age ? `<span class="card-age badge-age notranslate" translate="no">${movie.age}</span>` : ''}
           <span class="card-type notranslate" translate="no">${formatMediaType(displayType)}</span>
         </div>
       </div>
@@ -2285,6 +2293,18 @@ function openDetailsModal(movieId) {
       yearEl.textContent = formatNumber(movie.year);
       yearEl.classList.add("notranslate");
       yearEl.setAttribute("translate", "no");
+    }
+    const ageEl = document.getElementById("detailsAge");
+    const ageSep = document.getElementById("detailsAgeSep");
+    if (ageEl) {
+      if (movie.age) {
+        ageEl.textContent = movie.age;
+        ageEl.style.display = "inline-flex";
+        if (ageSep) ageSep.style.display = "inline";
+      } else {
+        ageEl.style.display = "none";
+        if (ageSep) ageSep.style.display = "none";
+      }
     }
     const isCkb = (document.cookie || '').includes('googtrans=/en/ckb');
     const isAr = (document.cookie || '').includes('googtrans=/en/ar');
@@ -3902,7 +3922,9 @@ function bindEventListeners() {
     if (score > 0) {
       if (movie.trending) score += 5;
       if (movie.featured) score += 5;
-      if (movie.rating) score += (movie.rating / 10);
+      if (typeof movie.rating === "number" || (!isNaN(Number(movie.rating)) && movie.rating !== "")) {
+        score += Number(movie.rating) / 10;
+      }
     }
 
     return score;
@@ -4069,6 +4091,7 @@ function bindEventListeners() {
                 <div class="search-item-meta notranslate" translate="no">
                   <span class="search-item-badge">${m.type || (m.seasons ? 'TV Show' : 'Movie')}</span>
                   <span>${m.year || ''}</span>
+                  ${m.age ? `<span class="badge-age">${m.age}</span>` : ''}
                   <span class="search-item-rating">⭐ ${formatRating(m.rating)}</span>
                 </div>
               </div>
