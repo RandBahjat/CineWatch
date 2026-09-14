@@ -403,7 +403,7 @@ window._MOVIES_DATA = [
     videoUrl: "1375441",
     trailerUrl: "https://youtu.be/5fHXyqQOKL8?si=bYVUPbXvMR8PuEBR",
     overview: "An ambitious television journalist creates a controversial reality investigation show to expose online predators. As the program becomes a massive ratings success, the line between journalism, entertainment, and vigilante justice blurs, triggering a dangerous chain of events that threatens to destroy everyone involved.",
-    overviewKurdish: "",
+    overviewKurdish: "ڕۆژنامەنووسێکی کەناڵی تەلەفزیۆنی بەرنامەیەکی لێکۆڵینەوەیی جەنجاڵباو دروست دەکات بۆ ئاشکراکردنی تاوانبارانی ئۆنلاین. کاتێک بەرنامەکە سەرکەوتنێکی گەورە لە ڕێژەی بینەراندا بەدەستدەهێنێت، سنووری نێوان ڕۆژنامەگەری، کات بەسەربردن و دادپەروەری تێکەڵ دەبێت، ئەمەش زنجیرەیەک ڕووداو دەستپێدەکات کە مەترسی لەسەر ژیانی تەواوی بەشداربووان دروست دەکات.",
     director: "Craig Gillespie",
     cast: [
       "Milly Alcock",
