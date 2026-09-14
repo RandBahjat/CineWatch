@@ -1864,7 +1864,7 @@ window._SERIES_DATA = [
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/dCNxOhXT7c4lqYuRpdM3m8s9XDp.jpg',
     backdrop: 'https://images6.alphacoders.com/668/668663.jpg',
     videoUrl: '3854',
-    trailerUrl: "",
+    trailerUrl: "https://youtu.be/JNA6pzYpwH0?si=jlQP4GV3EfbPPfBL",
     overview: "An animated series focusing on a sixteen-year-old Peter Parker navigating high school life while secretly becoming Spider-Man after being bitten by a genetically altered spider. The show explores the origins of his powers, his relationships with Gwen Stacy, Harry Osborn, and Mary Jane Watson, and his growing rogues' gallery of villains in New York City.",
     overviewKurdish: "",
     director: 'Greg Weisman, Victor Cook',
