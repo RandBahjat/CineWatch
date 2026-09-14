@@ -396,7 +396,7 @@ window._MOVIES_DATA = [
     genres: [
       "Crime",
       "Drama",
-      "Adventure"
+      "Thriller"
     ],
     poster: "https://image.tmdb.org/t/p/w600_and_h900_face/uhzRnTW4DM13UQBvZP3eVNzQTuz.jpg",
     backdrop: "https://images.hdqwalls.com/download/supergirl-team-up-4k-hb-3840x2160.jpg",
