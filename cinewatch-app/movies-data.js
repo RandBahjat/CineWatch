@@ -343,7 +343,7 @@ window._MOVIES_DATA = [
       "Sci-Fi"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/qku2uWSoJ9amQV5MWo1Eek29iji.jpg",
-    backdrop: "https://images.hdqwalls.com/download/supergirl-team-up-4k-hb-3840x2160.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
     videoUrl: "1081003",
     trailerUrl: "",
     overview: "Kara Zor-El, cousin of Superman, is drawn into a quest for vengeance after a violent attack shatters her fragile peace. Joined by an unexpected ally, she sets out across the galaxy, confronting both a ruthless enemy and her own darker instincts along the way.",
