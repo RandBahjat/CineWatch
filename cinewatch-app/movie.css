@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CineWatch — Modern Cinematic Styling
+   CineWatch â Modern Cinematic Styling
    Style Foundations & Design Tokens
    ========================================================================== */
 
@@ -136,7 +136,7 @@ select {
   display: none !important;
 }
 
-/* ── Loading Splash Screen ── */
+/* ââ Loading Splash Screen ââ */
 .app-loader {
   position: fixed;
   inset: 0;
@@ -2132,7 +2132,7 @@ body.rtl-layout .modal-search-clear {
   display: none !important;
 }
 
-/* ── Hero Slide Transitions ── */
+/* ââ Hero Slide Transitions ââ */
 .hero-banner.slide-transition .hero-content {
   animation: fadeSlideIn 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -3538,7 +3538,7 @@ body.rtl-layout .details-back-btn svg {
   font-size: 0.8rem;
 }
 
-/* ── Anime Detail Page Server Selector ─────────────────────────── */
+/* ââ Anime Detail Page Server Selector âââââââââââââââââââââââââââ */
 .anime-detail-server-wrap {
   display: flex;
   align-items: center;
@@ -3624,7 +3624,7 @@ body.rtl-layout .details-back-btn svg {
   outline: none;
 }
 
-/* Auth Modal Specifics — Uiverse Animated Card Background */
+/* Auth Modal Specifics â Uiverse Animated Card Background */
 .auth-modal-card {
   position: relative;
   max-width: 440px;
@@ -5497,7 +5497,7 @@ body.rtl-layout .details-back-btn svg {
   background: var(--primary, #e50914);
 }
 
-/* Episode row — the main card */
+/* Episode row â the main card */
 .episode-row {
   display: flex;
   align-items: center;
@@ -6863,7 +6863,7 @@ body.rtl-layout .details-back-btn svg {
   text-decoration: none;
 }
 
-/* Earth / globe shape — dark circle background for the icon */
+/* Earth / globe shape â dark circle background for the icon */
 .logo-globe {
   position: relative;
   width: 38px;
@@ -7678,28 +7678,28 @@ input:-webkit-autofill:active {
     display: none;
   }
 }
- / *   R T L   A d j u s t m e n t s   f o r   S i d e b a r s   * / 
- b o d y . r t l - l a y o u t   . m o b i l e - m e n u   { 
-     l e f t :   a u t o ; 
-     r i g h t :   - 3 0 0 p x ; 
- } 
- b o d y . r t l - l a y o u t   . m o b i l e - m e n u - o v e r l a y . a c t i v e   . m o b i l e - m e n u   { 
-     l e f t :   a u t o ; 
-     r i g h t :   0 ; 
- } 
- b o d y . r t l - l a y o u t   . a c c o u n t - s i d e - p a n e l   { 
-     r i g h t :   a u t o ; 
-     l e f t :   0 ; 
-     b o r d e r - l e f t :   n o n e ; 
-     b o r d e r - r i g h t :   1 p x   s o l i d   r g b a ( 2 5 5 , 2 5 5 , 2 5 5 , 0 . 0 8 ) ; 
-     t r a n s f o r m :   t r a n s l a t e X ( - 1 0 0 % ) ; 
-     b o x - s h a d o w :   8 p x   0   3 2 p x   r g b a ( 0 , 0 , 0 , 0 . 6 ) ; 
- } 
- b o d y . r t l - l a y o u t   . a c c o u n t - s i d e - p a n e l . o p e n   { 
-     t r a n s f o r m :   t r a n s l a t e X ( 0 ) ; 
- } 
-  
- 
+/* RTL Adjustments for Sidebars */
+body.rtl-layout .mobile-menu {
+  left: auto;
+  right: -300px;
+}
+body.rtl-layout .mobile-menu-overlay.active .mobile-menu {
+  left: auto;
+  right: 0;
+}
+body.rtl-layout .account-side-panel {
+  right: auto;
+  left: 0;
+  border-left: none;
+  border-right: 1px solid rgba(255,255,255,0.08);
+  transform: translateX(-100%);
+  box-shadow: 8px 0 32px rgba(0,0,0,0.6);
+}
+body.rtl-layout .account-side-panel.open {
+  transform: translateX(0);
+}
+
+
 
 /* RTL Adjustments for Sidebars */
 body.rtl-layout .mobile-menu {
@@ -7908,7 +7908,7 @@ body.rtl-layout .account-side-panel.open {
   transform: translateX(0);
 }
 /* =============================================
-   LANGUAGE TOAST — Chrome-style compact popup
+   LANGUAGE TOAST â Chrome-style compact popup
    ============================================= */
 .lang-toast {
   position: fixed;
@@ -8061,7 +8061,7 @@ body.rtl-layout .account-side-panel.open {
   text-align: left !important;
 }
 
-/* Cards specifically — keep left-aligned */
+/* Cards specifically â keep left-aligned */
 .card-title,
 .browse-card-title {
   text-align: left !important;
@@ -8410,10 +8410,10 @@ body.rtl-layout .account-side-panel.open {
     font-size: 1rem;
   }
 }
-/ *   L a n g u a g e   O v e r r i d e s   * /  
- h t m l [ l a n g = " k u " ]   . e n - o n l y   {   d i s p l a y :   n o n e   ! i m p o r t a n t ;   }  
- h t m l [ l a n g = " k u " ]   . k u - o n l y   {   d i s p l a y :   i n l i n e   ! i m p o r t a n t ;   }  
- 
+/* Language Overrides */
+html[lang="ku"] .en-only { display: none !important; }
+html[lang="ku"] .ku-only { display: inline !important; }
+
 /* Language Overrides */
 html[lang="ku"] .en-only { display: none !important; }
 html[lang="ku"] .ku-only { display: inline !important; }
@@ -9566,10 +9566,10 @@ min-width: 0;
 
 
 /* ============================================================
-   BROWSE PAGE FINAL OVERRIDES — CINEBY STYLE
+   BROWSE PAGE FINAL OVERRIDES â CINEBY STYLE
    ============================================================ */
 
-/* Grid: 4-column landscape cards — Cineby style */
+/* Grid: 4-column landscape cards â Cineby style */
 .browse-grid,
 #moviesGrid,
 #seriesGrid,
