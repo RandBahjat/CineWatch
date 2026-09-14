@@ -360,6 +360,35 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
+    title: "Supergirl",
+    type: "Movie",
+    year: 2026,
+    rating: 5.9,
+    age: "PG-13",
+    duration: "2h 5m",
+    genres: [
+      "Action",
+      "Sci-Fi",
+      "Adventure"
+    ],
+    poster: "https://image.tmdb.org/t/p/w600_and_h900_face/uhzRnTW4DM13UQBvZP3eVNzQTuz.jpg",
+    backdrop: "https://images.hdqwalls.com/download/supergirl-team-up-4k-hb-3840x2160.jpg",
+    videoUrl: "1081003",
+    trailerUrl: "",
+    overview: "Kara Zor-El, cousin of Superman, is drawn into a quest for vengeance after a violent attack shatters her fragile peace. Joined by an unexpected ally, she sets out across the galaxy, confronting both a ruthless enemy and her own darker instincts along the way.",
+    overviewKurdish: "",
+    director: "Craig Gillespie",
+    cast: [
+      "Milly Alcock",
+      "Jason Momoa",
+      "Matthias Schoenaerts"
+    ],
+    trending: true,
+    featured: true,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "The Odyssey",
     type: "Movie",
     year: 2026,
