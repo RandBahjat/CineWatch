@@ -350,9 +350,7 @@ window._MOVIES_DATA = [
     overviewKurdish: "ئالیس بێ بیرەوەری لە کۆشکێکی چۆڵدا بەئاگا دێتەوە کە دەروازەیەکی نهێنی بۆ تاقیگەیەکی ژێر زەوی بە ناوی هایڤ دەشارێتەوە. کاتێک چەکێکی بایۆلۆجی کوشندە بە ناوی تی-ڤایرۆس بڵاودەبێتەوە و کارمەندەکان دەکاتە زۆمبی و سیستەمی ئەمنی کۆمپیوتەرەکە دەکاتە دژبەر، تیمێکی تایبەت دەستوەردان دەکەن بۆ ڕاگرتنی بڵاوبوونەوەکە پێش ئەوەی بگاتە سەر زەوی.",
     director: "Paul W. S. Anderson",
     cast: [
-      "Milly Alcock",
-      "Jason Momoa",
-      "Matthias Schoenaerts"
+      "Milla Jovovich, Michelle Rodriguez, Eric Mabius, James Purefoy, Martin Crewes, Colin Salmon"
     ],
     trending: true,
     featured: true,
