@@ -1271,7 +1271,7 @@ window._MOVIES_DATA = [
     poster: "https://image.tmdb.org/t/p/original/bU7nTmvmy0h3VUP01v1T2imgH6N.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/hDvqcbZhq9ux0euxYxCP9N6m1Rh.jpg",
     videoUrl: "102382",
-    trailerUrl: "",
+    trailerUrl: "https://www.youtube.com/watch?v=aY6C2VtSTxg",
     overview: "As Spider-Man, Peter Parker continues protecting the city he loves while struggling to balance his double life with his relationship with Gwen Stacy. When a lonely Oscorp engineer is transformed into the destructive Electro, and Peter's estranged friend Harry Osborn returns to confront his father's dark legacy, Peter must face threats that will test everything he holds dear — and force him to reckon with the cost of being a hero.",
     overviewKurdish: "",
     director: "Marc Webb",
