@@ -346,7 +346,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
     videoUrl: "1423191",
     trailerUrl: "https://youtu.be/mNd1gb19A-c?si=Ne3W24qSAY1X8Lf1",
-    overview: "Kara Zor-El, cousin of Superman, is drawn into a quest for vengeance after a violent attack shatters her fragile peace. Joined by an unexpected ally, she sets out across the galaxy, confronting both a ruthless enemy and her own darker instincts along the way.",
+    overview: "Alice wakes up with amnesia in a deserted mansion hiding a secret entrance to the Hive, an underground genetic research facility. When a deadly biological weapon called the T-virus escapes, mutating the facility staff into flesh-eating zombies and turning the supercomputer defense system hostile, a elite commando unit moves in to contain the outbreak before the infection reaches the surface.",
     overviewKurdish: "",
     director: "Craig Gillespie",
     cast: [
