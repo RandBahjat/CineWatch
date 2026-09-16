@@ -6230,4 +6230,3 @@ function triggerPop() {
     star.classList.add('pop');
   });
 }
- 
