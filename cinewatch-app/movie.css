@@ -2366,18 +2366,76 @@ body.rtl-layout .modal-search-clear {
   transform: scale(1.08);
 }
 
-/* Enforce uniform consistent card & backdrop dimensions in all horizontal carousels */
-.carousel-track .movie-card {
+/* Enforce strictly uniform, compatible card & backdrop dimensions in all horizontal carousels */
+.carousel-track:not(.top10-track) .movie-card,
+#becauseYouWatchedTrack .movie-card {
   flex: 0 0 280px !important;
   width: 280px !important;
   min-width: 280px !important;
   max-width: 280px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
 }
 
-.carousel-track .card-poster-wrap {
-  width: 100% !important;
+.carousel-track:not(.top10-track) .card-poster-wrap,
+#becauseYouWatchedTrack .card-poster-wrap {
+  width: 280px !important;
+  min-width: 280px !important;
+  max-width: 280px !important;
+  height: 157.5px !important;
+  min-height: 157.5px !important;
+  max-height: 157.5px !important;
   aspect-ratio: 16 / 9 !important;
-  height: auto !important;
+  overflow: hidden !important;
+  border-radius: var(--radius-xs) !important;
+  box-sizing: border-box !important;
+}
+
+.carousel-track:not(.top10-track) .card-poster-wrap picture,
+.carousel-track:not(.top10-track) .card-poster,
+#becauseYouWatchedTrack .card-poster-wrap picture,
+#becauseYouWatchedTrack .card-poster {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  display: block !important;
+}
+
+.carousel-track:not(.top10-track) .card-details,
+#becauseYouWatchedTrack .card-details {
+  width: 280px !important;
+  max-width: 280px !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  padding: 10px 5px 0 !important;
+}
+
+.carousel-track:not(.top10-track) .card-title,
+#becauseYouWatchedTrack .card-title {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: block !important;
+  box-sizing: border-box !important;
+}
+
+.carousel-track:not(.top10-track) .card-meta,
+#becauseYouWatchedTrack .card-meta {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  display: flex !important;
+  box-sizing: border-box !important;
 }
 
 .top10-track .movie-card {
