@@ -46,7 +46,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 3,
-            title: 'The Lie'
+            title: 'Episode #1.3'
           },
           {
             episode: 4,
