@@ -1111,6 +1111,12 @@ function renderBecauseYouWatchedShelf() {
   const subtitleEl = document.getElementById("becauseYouWatchedSubtitle");
   if (!shelf || !track) return;
 
+  // STRICT RULE: ONLY SHOW ON HOME VIEW
+  if (state.activeView !== "home") {
+    shelf.classList.add("hidden");
+    return;
+  }
+
   // Find latest watched title from watch history or continueWatching
   let latestWatched = null;
   const history = state.watchHistory || [];
@@ -1162,7 +1168,7 @@ function renderBecauseYouWatchedShelf() {
   const isCkb = cookies.includes("googtrans=/en/ckb");
   const isAr = cookies.includes("googtrans=/en/ar");
 
-  // Set title with highlight
+  // Set clean title with watched name highlight
   const titleStr = latestWatched.title;
   if (headingText) {
     if (isCkb) {
@@ -1174,38 +1180,28 @@ function renderBecauseYouWatchedShelf() {
     }
   }
 
-  // Set subtitle based on matching genres of what was watched
+  // Subtitle explaining that AI is used to show related movies and series based on viewing
   if (subtitleEl) {
     const primaryGenres = (latestWatched.genres || []).slice(0, 3).map(translateGenre).join(" &middot; ");
     const isSuperhero = CineAIRecommender.isSuperheroTitle(latestWatched);
 
     if (isCkb) {
       subtitleEl.innerHTML = isSuperhero
-        ? `هەڵبژێردراوەکانی ژیری دەستکرد لە جیهانی سوپەرهیرۆ و ژانەری ${primaryGenres}`
-        : `هەڵبژێردراوەکانی ژیری دەستکرد بەپێی ژانەری ${primaryGenres}`;
+        ? `سیستەمی ژیری دەستکرد شیکاری بۆ سەیرکردنەکانت کردووە بۆ پێشاندانی فیلم و زنجیرەی پەیوەندیدار بە سوپەرهیرۆ`
+        : `سیستەمی ژیری دەستکرد شیکاری بۆ سەیرکردنەکانت کردووە بۆ پێشاندانی فیلم و زنجیرەی هاوشێوە لە ژانەری ${primaryGenres}`;
     } else if (isAr) {
       subtitleEl.innerHTML = isSuperhero
-        ? `ترشيحات الذكاء الاصطناعي لعالم الأبطال الخارقين وتصنيف ${primaryGenres}`
-        : `ترشيحات الذكاء الاصطناعي بناءً على تصنيف ${primaryGenres}`;
+        ? `يستخدم الموقع الذكاء الاصطناعي لتحليل ما شاهدته وعرض أفلام ومسلسلات الأبطال الخارقين المشابهة`
+        : `يستخدم الموقع الذكاء الاصطناعي لتحليل ما شاهدته وعرض أفلام ومسلسلات مشابهة في تصنيف ${primaryGenres}`;
     } else {
       subtitleEl.innerHTML = isSuperhero
-        ? `Curated superhero favorites & top ${primaryGenres} picks based on your watch history`
-        : `More top-rated ${primaryGenres} movies & series picked for you by CineWatch AI`;
+        ? `Our AI analyzed what you watched to discover related superhero movies & series for you`
+        : `Our AI analyzed what you watched to show related movies & series in ${primaryGenres}`;
     }
   }
 
-  // Render cards with AI match badges
-  track.innerHTML = recommendations.map(({ movie, matchPct }) => {
-    let cardHtml = createMovieCardHTML(movie);
-    const badgeHtml = `
-      <div class="ai-match-badge notranslate" translate="no">
-        <ion-icon name="sparkles"></ion-icon>
-        <span>${matchPct}% Match</span>
-      </div>
-    `;
-    cardHtml = cardHtml.replace('<div class="card-gradient"></div>', `${badgeHtml}<div class="card-gradient"></div>`);
-    return cardHtml;
-  }).join("");
+  // Render clean standard movie cards (no match percentage badge)
+  track.innerHTML = recommendations.map(({ movie }) => createMovieCardHTML(movie)).join("");
 
   // Wire click event to open details modal
   track.querySelectorAll(".movie-card").forEach((card) => {
