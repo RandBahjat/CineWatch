@@ -10,7 +10,7 @@ window._SERIES_DATA = [
     title: "Neagley",
     type: 'TV Show',
     year: 2026,
-    rating: 7.5,
+    rating: TBR,
     age: 'TV-MA',
     duration: '1h',
     genres: [
