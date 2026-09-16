@@ -20,7 +20,7 @@ window._SERIES_DATA = [
       
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/1m6CxPAuGv2oHc1ahERrcVWnk2J.jpg',
-    backdrop: 'https://image.tmdb.org/t/p/original/84PKxwkBn0OoH5Qj4uq97Nua0Q9.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/uYOYLFQ4q7asuhdiKXCqGaeAQUH.jpg',
     videoUrl: '258230',
     trailerUrl: "https://youtu.be/M8nHySkLb64?si=ncGOGxR7J7r25Gyh",
     overview: 'A dedicated detective investigates mysterious disappearances, untangling a complex web of secrets and hidden motives behind the last known moments of those who vanished without a trace. Every discovery leads to more questions and new dangers.',
