@@ -16,7 +16,7 @@ window._SERIES_DATA = [
       'Action',
       'Drama',
       'Mystery',
-      'Crime',
+      'Crime'
       
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/vozJZjHv0Yyv4PjoOxF5tVMUGFI.jpg',
