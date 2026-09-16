@@ -1969,6 +1969,16 @@ function playMovieDirect(movieId) {
         }
       ];
     } else {
+      // Remove server selector and title pill beside go back button for movies & series
+      if (playerTitlePill) {
+        playerTitlePill.classList.add('hidden');
+        playerTitlePill.style.display = 'none';
+      }
+      if (serverSelectWrap) {
+        serverSelectWrap.classList.add('hidden');
+        serverSelectWrap.style.display = 'none';
+      }
+
       // Vidrock server (Primary for Movies and Series with Red Theme)
       const vidrockUrl = isTv
         ? `https://vidrock.to/tv/${tmdb}/${mappedSeason}/${mappedEpisode}?autoplay=true&autonext=true&theme=e50914&download=false`
