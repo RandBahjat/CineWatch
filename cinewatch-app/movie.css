@@ -9926,3 +9926,74 @@ min-width: 0;
 .browse-results-bar {
   display: none !important;
 }
+
+/* ============================================================
+   HORIZONTAL BACKDROP CAROUSEL COMPATIBILITY & UNIFORM SIZING
+   ============================================================ */
+@media (min-width: 1025px) {
+  .carousel-track:not(.top10-track) .movie-card,
+  #becauseYouWatchedTrack .movie-card {
+    flex: 0 0 280px !important;
+    width: 280px !important;
+    min-width: 280px !important;
+    max-width: 280px !important;
+  }
+  .carousel-track:not(.top10-track) .card-poster-wrap,
+  #becauseYouWatchedTrack .card-poster-wrap {
+    width: 280px !important;
+    min-width: 280px !important;
+    max-width: 280px !important;
+    height: 157.5px !important;
+    min-height: 157.5px !important;
+    max-height: 157.5px !important;
+    aspect-ratio: 16 / 9 !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .carousel-track:not(.top10-track) .movie-card,
+  #becauseYouWatchedTrack .movie-card {
+    flex: 0 0 240px !important;
+    width: 240px !important;
+    min-width: 240px !important;
+    max-width: 240px !important;
+  }
+  .carousel-track:not(.top10-track) .card-poster-wrap,
+  #becauseYouWatchedTrack .card-poster-wrap {
+    width: 240px !important;
+    min-width: 240px !important;
+    max-width: 240px !important;
+    height: 135px !important;
+    min-height: 135px !important;
+    max-height: 135px !important;
+    aspect-ratio: 16 / 9 !important;
+  }
+  .carousel-track:not(.top10-track) .card-details,
+  #becauseYouWatchedTrack .card-details {
+    width: 240px !important;
+    max-width: 240px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #becauseYouWatchedTrack .movie-card {
+    flex: 0 0 176px !important;
+    width: 176px !important;
+    min-width: 160px !important;
+    max-width: 176px !important;
+  }
+  #becauseYouWatchedTrack .card-poster-wrap {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: 2 / 3 !important;
+  }
+  #becauseYouWatchedTrack .card-details {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
