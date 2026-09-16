@@ -965,6 +965,254 @@ function renderContinueWatchingShelf() {
   });
 }
 
+// ==========================================
+// SMART AI RECOMMENDER (GENRE & THEME ENGINE)
+// ==========================================
+const CineAIRecommender = {
+  superheroKeywords: [
+    "spider-man", "spiderman", "batman", "superman", "avengers", "iron man",
+    "deadpool", "wolverine", "x-men", "superhero", "superheroes", "super hero",
+    "mutant", "mutants", "vigilante", "powers", "superpower", "marvel", "dc",
+    "gotham", "arkham", "justice league", "lanterns", "the boys", "daredevil",
+    "thor", "captain america", "hulk", "thanos", "peter parker", "bruce wayne",
+    "tony stark", "clark kent", "kara zor-el"
+  ],
+
+  isSuperheroTitle(item) {
+    if (!item) return false;
+    const title = (item.title || "").toLowerCase();
+    const overview = (item.overview || "").toLowerCase();
+    for (let i = 0; i < this.superheroKeywords.length; i++) {
+      const kw = this.superheroKeywords[i];
+      if (title.includes(kw) || overview.includes(kw)) return true;
+    }
+    return false;
+  },
+
+  getRecommendationsForMovie(watchedMovie, limit = 20) {
+    if (!watchedMovie || !Array.isArray(MOVIES) || MOVIES.length === 0) return [];
+
+    const watchedId = watchedMovie.id;
+    const watchedGenres = Array.isArray(watchedMovie.genres) ? watchedMovie.genres : [];
+    const watchedGenresLower = watchedGenres.map(g => String(g).toLowerCase().trim());
+    const isWatchedSuperhero = this.isSuperheroTitle(watchedMovie);
+
+    // Franchise keyword detection
+    const watchedTitleLower = (watchedMovie.title || "").toLowerCase();
+    let franchiseKeyword = null;
+    const franchises = ["spider-man", "batman", "avengers", "superman", "iron man", "deadpool", "x-men", "one piece", "reacher"];
+    for (let i = 0; i < franchises.length; i++) {
+      if (watchedTitleLower.includes(franchises[i])) {
+        franchiseKeyword = franchises[i];
+        break;
+      }
+    }
+
+    const watchedCast = Array.isArray(watchedMovie.cast)
+      ? watchedMovie.cast.join(" ").toLowerCase()
+      : String(watchedMovie.cast || "").toLowerCase();
+    const watchedDirector = String(watchedMovie.director || "").toLowerCase().trim();
+
+    const scoredCandidates = [];
+
+    for (let i = 0; i < MOVIES.length; i++) {
+      const candidate = MOVIES[i];
+      if (!candidate || candidate.id === watchedId) continue;
+
+      const candidateGenres = Array.isArray(candidate.genres) ? candidate.genres : [];
+      const candidateGenresLower = candidateGenres.map(g => String(g).toLowerCase().trim());
+
+      // Genre overlap calculation (prioritizing the exact genres of what the user watched)
+      let matchedCount = 0;
+      const matchedGenreNames = [];
+      for (let j = 0; j < candidateGenres.length; j++) {
+        const gName = candidateGenres[j];
+        if (watchedGenresLower.includes(String(gName).toLowerCase().trim())) {
+          matchedCount++;
+          matchedGenreNames.push(gName);
+        }
+      }
+
+      const isCandidateSuperhero = this.isSuperheroTitle(candidate);
+
+      // Must share at least one genre OR both be superhero titles
+      if (matchedCount === 0 && !(isWatchedSuperhero && isCandidateSuperhero)) {
+        continue;
+      }
+
+      let score = 0;
+
+      // 1. Primary genre match weighting
+      if (candidateGenresLower.length > 0 && watchedGenresLower.length > 0 && candidateGenresLower[0] === watchedGenresLower[0]) {
+        score += 35;
+      }
+      score += matchedCount * 22; // Weight each matching genre
+
+      // 2. Superhero affinity (if user watched superhero, strongly favor other superhero movies and series)
+      if (isWatchedSuperhero && isCandidateSuperhero) {
+        score += 48;
+      }
+
+      // 3. Franchise continuity (e.g. Spider-Man, Avengers, Batman)
+      if (franchiseKeyword && (candidate.title || "").toLowerCase().includes(franchiseKeyword)) {
+        score += 32;
+      }
+
+      // 4. Cast overlap
+      if (candidate.cast && watchedCast) {
+        const cCast = Array.isArray(candidate.cast) ? candidate.cast.join(" ").toLowerCase() : String(candidate.cast).toLowerCase();
+        const castList = watchedCast.split(/,\s*/);
+        for (let k = 0; k < castList.length; k++) {
+          const actor = castList[k].trim();
+          if (actor.length > 3 && cCast.includes(actor)) {
+            score += 15;
+            break;
+          }
+        }
+      }
+
+      // 5. Director overlap
+      if (watchedDirector && watchedDirector.length > 2 && String(candidate.director || "").toLowerCase().includes(watchedDirector)) {
+        score += 15;
+      }
+
+      // 6. Quality rating boost
+      const ratingNum = parseFloat(candidate.rating) || 0;
+      score += Math.min(10, Math.max(0, (ratingNum - 5) * 2));
+
+      // Calculate confidence match percentage (82% to 99%)
+      const matchPct = Math.min(99, Math.max(82, Math.round(78 + (score / 160) * 21)));
+
+      scoredCandidates.push({
+        movie: candidate,
+        score,
+        matchPct,
+        matchedGenres: matchedGenreNames,
+        isSuperhero: isCandidateSuperhero
+      });
+    }
+
+    // Sort by highest score, then rating
+    scoredCandidates.sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score;
+      const rA = parseFloat(a.movie.rating) || 0;
+      const rB = parseFloat(b.movie.rating) || 0;
+      return rB - rA;
+    });
+
+    return scoredCandidates.slice(0, limit);
+  }
+};
+
+function renderBecauseYouWatchedShelf() {
+  const shelf = document.getElementById("becauseYouWatchedShelf");
+  const track = document.getElementById("becauseYouWatchedTrack");
+  const headingText = document.getElementById("becauseYouWatchedHeadingText");
+  const subtitleEl = document.getElementById("becauseYouWatchedSubtitle");
+  if (!shelf || !track) return;
+
+  // Find latest watched title from watch history or continueWatching
+  let latestWatched = null;
+  const history = state.watchHistory || [];
+  for (let i = 0; i < history.length; i++) {
+    const item = history[i];
+    if (item && item.movieId) {
+      const m = MOVIES.find(x => x.id === item.movieId);
+      if (m) {
+        latestWatched = m;
+        break;
+      }
+    }
+  }
+
+  // Fallback to latest continueWatching item if history is empty
+  if (!latestWatched && state.continueWatching) {
+    const cwList = Object.values(state.continueWatching)
+      .filter(it => it && it.movieId)
+      .sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+    for (let i = 0; i < cwList.length; i++) {
+      const m = MOVIES.find(x => x.id === cwList[i].movieId);
+      if (m) {
+        latestWatched = m;
+        break;
+      }
+    }
+  }
+
+  // RULE: ONLY SHOW AFTER THE USER WATCHES SOMETHING!
+  if (!latestWatched) {
+    shelf.classList.add("hidden");
+    track.innerHTML = "";
+    return;
+  }
+
+  // Compute AI recommendations based on genres and themes of the watched movie
+  const recommendations = CineAIRecommender.getRecommendationsForMovie(latestWatched, 20);
+  if (!recommendations || recommendations.length === 0) {
+    shelf.classList.add("hidden");
+    track.innerHTML = "";
+    return;
+  }
+
+  // Reveal the shelf
+  shelf.classList.remove("hidden");
+
+  // Determine language
+  const cookies = document.cookie || "";
+  const isCkb = cookies.includes("googtrans=/en/ckb");
+  const isAr = cookies.includes("googtrans=/en/ar");
+
+  // Set title with highlight
+  const titleStr = latestWatched.title;
+  if (headingText) {
+    if (isCkb) {
+      headingText.innerHTML = `چونکە تۆ سەیری <span class="watched-highlight notranslate" translate="no">${titleStr}</span>ت کردووە`;
+    } else if (isAr) {
+      headingText.innerHTML = `لأنك شاهدت <span class="watched-highlight notranslate" translate="no">${titleStr}</span>`;
+    } else {
+      headingText.innerHTML = `Because you watched <span class="watched-highlight notranslate" translate="no">${titleStr}</span>`;
+    }
+  }
+
+  // Set subtitle based on matching genres of what was watched
+  if (subtitleEl) {
+    const primaryGenres = (latestWatched.genres || []).slice(0, 3).map(translateGenre).join(" &middot; ");
+    const isSuperhero = CineAIRecommender.isSuperheroTitle(latestWatched);
+
+    if (isCkb) {
+      subtitleEl.innerHTML = isSuperhero
+        ? `هەڵبژێردراوەکانی ژیری دەستکرد لە جیهانی سوپەرهیرۆ و ژانەری ${primaryGenres}`
+        : `هەڵبژێردراوەکانی ژیری دەستکرد بەپێی ژانەری ${primaryGenres}`;
+    } else if (isAr) {
+      subtitleEl.innerHTML = isSuperhero
+        ? `ترشيحات الذكاء الاصطناعي لعالم الأبطال الخارقين وتصنيف ${primaryGenres}`
+        : `ترشيحات الذكاء الاصطناعي بناءً على تصنيف ${primaryGenres}`;
+    } else {
+      subtitleEl.innerHTML = isSuperhero
+        ? `Curated superhero favorites & top ${primaryGenres} picks based on your watch history`
+        : `More top-rated ${primaryGenres} movies & series picked for you by CineWatch AI`;
+    }
+  }
+
+  // Render cards with AI match badges
+  track.innerHTML = recommendations.map(({ movie, matchPct }) => {
+    let cardHtml = createMovieCardHTML(movie);
+    const badgeHtml = `
+      <div class="ai-match-badge notranslate" translate="no">
+        <ion-icon name="sparkles"></ion-icon>
+        <span>${matchPct}% Match</span>
+      </div>
+    `;
+    cardHtml = cardHtml.replace('<div class="card-gradient"></div>', `${badgeHtml}<div class="card-gradient"></div>`);
+    return cardHtml;
+  }).join("");
+
+  // Wire click event to open details modal
+  track.querySelectorAll(".movie-card").forEach((card) => {
+    card.onclick = () => openDetailsModal(card.dataset.id);
+  });
+}
+
 function renderWatchlistHomeShelf() {
   const shelf = document.getElementById("watchlistHomeShelf");
   const track = document.getElementById("watchlistHomeTrack");
