@@ -1182,17 +1182,10 @@ function renderBecauseYouWatchedShelf() {
     }
   }
 
-  // Subtitle explaining that AI is used to show related movies and series based on viewing
+  // Clear any subtitle if element exists
   if (subtitleEl) {
-    subtitleEl.classList.add("notranslate");
-    subtitleEl.setAttribute("translate", "no");
-    if (isCkb) {
-      subtitleEl.innerHTML = `فیلم و زنجیرەی پێشنیارکراو لەلایەن ژیریی دەستکردەوە بەپێی سەیرکردنەکانت`;
-    } else if (isAr) {
-      subtitleEl.innerHTML = `أفلام ومسلسلات يقترحها الذكاء الاصطناعي بناءً على ما شاهدته`;
-    } else {
-      subtitleEl.innerHTML = `Movies and series recommended by our AI based on what you watched`;
-    }
+    subtitleEl.innerHTML = "";
+    subtitleEl.style.display = "none";
   }
 
   // Render clean standard movie cards (no match percentage badge)
