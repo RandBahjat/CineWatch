@@ -23,7 +23,7 @@ window._SERIES_DATA = [
     backdrop: 'https://image.tmdb.org/t/p/original/uYOYLFQ4q7asuhdiKXCqGaeAQUH.jpg',
     videoUrl: '273207',
     trailerUrl: "https://youtu.be/BOzNaa_o9_g?si=WNpo8Q-nVMnJThO6",
-    overview: 'A dedicated detective investigates mysterious disappearances, untangling a complex web of secrets and hidden motives behind the last known moments of those who vanished without a trace. Every discovery leads to more questions and new dangers.',
+    overview: 'Frances Neagley is a private investigator in Chicago and former military colleague of Jack Reacher in the Armys 110th MP Special Investigations Unit. When she learns that a beloved friend from her past has been killed in a suspicious accident, she becomes hell-bent on justice, using all of her lethal training and cunning resources to track down the killers and uncover a deep conspiracy.',
     overviewKurdish: "ێکۆڵەرێکی دڵسۆز لێکۆڵینەوە لە دیارنەمانی بێشوێنەواری کەسە ونبووەکان دەکات، و بەدوای نهێنییە شاراوەکان و هۆکارە تاریکەکانی پشت دوا جار بینرانی هەر کەسێکدا دەگەڕێت پێش ئەوەی بە تەواوی ون ببن. هەر بەرەوپێشچوونێک لە کەیسەکەدا، نهێنی زیاتر و مەترسی نوێی بۆ دەردەخات.",
     director: 'James Watkins',
     cast: [
