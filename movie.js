@@ -1168,13 +1168,15 @@ function renderBecauseYouWatchedShelf() {
   const isCkb = cookies.includes("googtrans=/en/ckb");
   const isAr = cookies.includes("googtrans=/en/ar");
 
-  // Set clean title with watched name highlight
+  // Set clean title with watched name highlight and bidirectional isolation
   const titleStr = latestWatched.title;
   if (headingText) {
+    headingText.classList.add("notranslate");
+    headingText.setAttribute("translate", "no");
     if (isCkb) {
-      headingText.innerHTML = `چونکە تۆ سەیری <span class="watched-highlight notranslate" translate="no">${titleStr}</span>ت کردووە`;
+      headingText.innerHTML = `چونکە سەیری <bdi class="watched-highlight notranslate" translate="no" dir="ltr">${titleStr}</bdi>ـت کردووە`;
     } else if (isAr) {
-      headingText.innerHTML = `لأنك شاهدت <span class="watched-highlight notranslate" translate="no">${titleStr}</span>`;
+      headingText.innerHTML = `لأنك شاهدت <bdi class="watched-highlight notranslate" translate="no" dir="ltr">${titleStr}</bdi>`;
     } else {
       headingText.innerHTML = `Because you watched <span class="watched-highlight notranslate" translate="no">${titleStr}</span>`;
     }
@@ -1182,8 +1184,10 @@ function renderBecauseYouWatchedShelf() {
 
   // Subtitle explaining that AI is used to show related movies and series based on viewing
   if (subtitleEl) {
+    subtitleEl.classList.add("notranslate");
+    subtitleEl.setAttribute("translate", "no");
     if (isCkb) {
-      subtitleEl.innerHTML = `فیلم و زنجیرەی پێشنیارکراو لەلایەن ژیری دەستکردی CineWatch بەپێی ئەوەی سەیرت کردووە`;
+      subtitleEl.innerHTML = `فیلم و زنجیرەی پێشنیارکراو لەلایەن ژیریی دەستکردەوە بەپێی سەیرکردنەکانت`;
     } else if (isAr) {
       subtitleEl.innerHTML = `أفلام ومسلسلات يقترحها الذكاء الاصطناعي بناءً على ما شاهدته`;
     } else {
