@@ -575,6 +575,7 @@ async function initApp() {
     // Render Shelves
     renderCarousels();
     renderContinueWatchingShelf();
+    if (typeof renderBecauseYouWatchedShelf === "function") renderBecauseYouWatchedShelf();
     if (typeof renderWatchlistHomeShelf === "function") renderWatchlistHomeShelf();
 
     // Start hero auto slide (managed by startHeroAutoplay)
