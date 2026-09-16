@@ -287,12 +287,14 @@ var KEYS = {
   USER: "cinewatch_user",
   FAVORITES: "cinewatch_favorites",
   CONTINUE: "cinewatch_continue_watching",
+  WATCH_HISTORY: "cinewatch_watch_history",
 };
 
 var state = {
   user: null,
   favorites: [],
   continueWatching: {},
+  watchHistory: [],
   isCwSelectionMode: false,
   cwSelectedItems: new Set(),
   currentHeroIndex: 0,
@@ -328,6 +330,19 @@ function loadState() {
 
     const savedContinue = sessionStorage.getItem(KEYS.CONTINUE) || localStorage.getItem(KEYS.CONTINUE);
     if (savedContinue) state.continueWatching = JSON.parse(savedContinue);
+
+    const savedHistory = sessionStorage.getItem(KEYS.WATCH_HISTORY) || localStorage.getItem(KEYS.WATCH_HISTORY);
+    if (savedHistory) {
+      state.watchHistory = JSON.parse(savedHistory);
+    } else if (state.continueWatching && Object.keys(state.continueWatching).length > 0) {
+      // Seed from existing continue watching data if present
+      state.watchHistory = Object.values(state.continueWatching)
+        .filter(it => it && it.movieId)
+        .sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0))
+        .map(it => ({ movieId: it.movieId, timestamp: it.timestamp || Date.now() }));
+    } else {
+      state.watchHistory = [];
+    }
   } catch (e) {
     console.error("Failed to load state from storage", e);
   }
