@@ -1960,10 +1960,21 @@ function playMovieDirect(movieId) {
         }
       ];
     } else {
+      // Vidrock server (Primary for Movies and Series with Red Theme)
+      const vidrockUrl = isTv
+        ? `https://vidrock.to/tv/${tmdb}/${mappedSeason}/${mappedEpisode}?autoplay=true&autonext=true&theme=e50914&download=false`
+        : `https://vidrock.to/movie/${tmdb}?autoplay=true&autonext=true&theme=e50914&download=false`;
+
       const vaPlayerUrl = isTv
         ? `https://vaplayer.ru/embed/tv/${tmdb}/${mappedSeason}/${mappedEpisode}?skin=netflix`
         : `https://vaplayer.ru/embed/movie/${tmdb}?skin=netflix`;
+
       servers = [
+        {
+          id: 'vidrock',
+          name: '🎸 Vidrock HD (Red Theme)',
+          url: vidrockUrl
+        },
         {
           id: 'vaplayer',
           name: '🎬 VaPlayer HD (Netflix Skin)',
@@ -1985,6 +1996,22 @@ function playMovieDirect(movieId) {
           url: isTv ? `https://player.autoembed.cc/embed/tv/${tmdb}/${mappedSeason}/${mappedEpisode}` : `https://player.autoembed.cc/embed/movie/${tmdb}`
         }
       ];
+
+      // Populate Server Dropdown for Movies & Series
+      const serverSelect = document.getElementById('serverSelect');
+      if (serverSelect) {
+        serverSelect.innerHTML = servers.map((s, idx) => `
+          <div class="cw-server-opt ${idx === 0 ? 'active' : ''}" data-server="${s.id}">${s.name}</div>
+        `).join('');
+        serverSelect.querySelectorAll('.cw-server-opt').forEach((opt, idx) => {
+          opt.onclick = () => {
+            const chosen = servers.find(s => s.id === opt.dataset.server) || servers[idx];
+            switchSource(chosen);
+            serverSelect.querySelectorAll('.cw-server-opt').forEach(o => o.classList.toggle('active', o === opt));
+            document.getElementById('serverMenu')?.classList.add('hidden');
+          };
+        });
+      }
     }
   }
 
@@ -2040,9 +2067,19 @@ function playMovieDirect(movieId) {
 
     const serverActiveLabel = document.getElementById('serverActiveLabel');
     if (serverActiveLabel) {
-      serverActiveLabel.textContent = srv ? srv.name : (isAnime ? '🟣 Mega Server' : 'VidLink Pro');
+      serverActiveLabel.textContent = srv ? srv.name : (isAnime ? '🟣 Mega Server' : '🎸 Vidrock HD');
     }
-    if (streamTypeBadge) streamTypeBadge.textContent = isAnime ? 'MEGA HD' : 'VIDLINK PRO';
+    if (streamTypeBadge) {
+      if (srv && srv.id === 'vidrock') {
+        streamTypeBadge.textContent = 'VIDROCK HD';
+      } else if (srv && srv.id === 'vaplayer') {
+        streamTypeBadge.textContent = 'NETFLIX HD';
+      } else if (isAnime) {
+        streamTypeBadge.textContent = 'MEGA HD';
+      } else {
+        streamTypeBadge.textContent = 'VIDLINK PRO';
+      }
+    }
   }
 
   // Setup Player Controls & Listeners
