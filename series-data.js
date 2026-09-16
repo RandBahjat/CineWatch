@@ -61,11 +61,11 @@ window._SERIES_DATA = [
             title: 'Episode #1.6'
           },
           {
-            episode: 6,
+            episode: 7,
             title: 'Episode #1.6'
           },
           {
-            episode: 6,
+            episode: 8,
             title: 'Episode #1.6'
           },
           
