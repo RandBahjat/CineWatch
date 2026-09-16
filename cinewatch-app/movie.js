@@ -1760,6 +1760,7 @@ function switchView(viewName) {
   const heroBanner = document.getElementById("heroBanner");
   const defaultShelves = document.getElementById("defaultShelves");
   const continueShelf = document.getElementById("continueWatchingShelf");
+  const becauseShelf = document.getElementById("becauseYouWatchedShelf");
   const continueSection = document.getElementById("continueSection");
   const watchlistSection = document.getElementById("watchlistSection");
   const filteredSection = document.getElementById("filteredSection");
@@ -1783,6 +1784,7 @@ function switchView(viewName) {
     if (animeSection) animeSection.classList.add("hidden");
     if (detailsSection) detailsSection.classList.add("hidden");
     if (continueShelf) continueShelf.classList.add("hidden");
+    if (becauseShelf) becauseShelf.classList.add("hidden");
     if (watchlistHomeShelf) watchlistHomeShelf.classList.add("hidden");
     const homeFooter = document.getElementById("homeFooter");
     if (homeFooter) homeFooter.classList.add("hidden");
@@ -1823,6 +1825,7 @@ function switchView(viewName) {
     const homeFooter = document.getElementById("homeFooter");
     if (homeFooter) homeFooter.classList.remove("hidden");
     renderContinueWatchingShelf();
+    renderBecauseYouWatchedShelf();
     renderWatchlistHomeShelf();
   } else if (viewName === "movies") {
     hideAll();
