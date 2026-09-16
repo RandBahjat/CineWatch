@@ -27,7 +27,7 @@ window._SERIES_DATA = [
     overviewKurdish: "فرانسیس نیگلی، لێکۆڵەری تایبەتی شارەزا لە شیکاگۆ و هاوکاری پێشووی جاک ڕیچەر لە یەکەی ١١٠ی لێکۆڵینەوەی تایبەتی سوپا، تووشی شۆک دەبێت کاتێک دەزانێت هاوڕێیەکی نزیکی لە ڕووداوێکی گوماناویدا کوژراوە. نیگلی هەموو تواناکانی شەڕکردن و لێکۆڵینەوەی خۆی بەکاردەهێنێت لەپێناو بەدەستهێنانی دادپەروەری، تاوەکو بکوژەکانی هاوڕێکەی بدۆزێتەوە و ڕووبەڕووی ئەو پیلانە گەورەیە ببێتەوە کە ژیانی لە مەترسی ناوە.",
     director: 'Nick Santora, Nicholas Wootton',
     cast: [
-      'Patrick Brammall, Maxine Peake, Sarah Phelps, Livia De Paolis, Damien Molony, Aimee-Ffion Edwards, Kojo Kamara'
+      'Maria Sten, Greyston Holt, Adeline Rudolph, Matthew Del Negro, Damon Herriman, Jasper Jones'
     ],
     trending: false,
     featured: false,
