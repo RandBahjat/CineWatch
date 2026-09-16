@@ -11,7 +11,7 @@ window._SERIES_DATA = [
     type: 'TV Show',
     year: 2026,
     rating: "TBR",
-    age: 'TV-MA',
+    age: 'TBR',
     duration: '1h',
     genres: [
       'Drama',
