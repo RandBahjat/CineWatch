@@ -65,6 +65,64 @@ window._SERIES_DATA = [
     ]
   },
   {
+    title: "Last Seen",
+    type: 'TV Show',
+    year: 2026,
+    rating: 7.5,
+    age: 'TV-MA',
+    duration: '1h',
+    genres: [
+      'Drama',
+      'Mystery',
+      'Thriller'
+    ],
+    poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/vozJZjHv0Yyv4PjoOxF5tVMUGFI.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/84PKxwkBn0OoH5Qj4uq97Nua0Q9.jpg',
+    videoUrl: '258230',
+    trailerUrl: "https://youtu.be/M8nHySkLb64?si=ncGOGxR7J7r25Gyh",
+    overview: 'A dedicated detective investigates mysterious disappearances, untangling a complex web of secrets and hidden motives behind the last known moments of those who vanished without a trace. Every discovery leads to more questions and new dangers.',
+    overviewKurdish: "ێکۆڵەرێکی دڵسۆز لێکۆڵینەوە لە دیارنەمانی بێشوێنەواری کەسە ونبووەکان دەکات، و بەدوای نهێنییە شاراوەکان و هۆکارە تاریکەکانی پشت دوا جار بینرانی هەر کەسێکدا دەگەڕێت پێش ئەوەی بە تەواوی ون ببن. هەر بەرەوپێشچوونێک لە کەیسەکەدا، نهێنی زیاتر و مەترسی نوێی بۆ دەردەخات.",
+    director: 'James Watkins',
+    cast: [
+      'Patrick Brammall, Maxine Peake, Sarah Phelps, Livia De Paolis, Damien Molony, Aimee-Ffion Edwards, Kojo Kamara'
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: 'The Dispatcher'
+          },
+          {
+            episode: 2,
+            title: 'The Call'
+          },
+          {
+            episode: 3,
+            title: 'The Lie'
+          },
+          {
+            episode: 4,
+            title: 'Episode #1.4'
+          },
+          {
+            episode: 5,
+            title: 'Episode #1.5'
+          },
+          {
+            episode: 6,
+            title: 'Episode #1.6'
+          },
+          
+        ]
+      }
+    ]
+  },
+  {
     title: "Mousetrap",
     type: 'TV Show',
     year: 2026,
