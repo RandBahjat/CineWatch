@@ -21,7 +21,7 @@ window._SERIES_DATA = [
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/1m6CxPAuGv2oHc1ahERrcVWnk2J.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/uYOYLFQ4q7asuhdiKXCqGaeAQUH.jpg',
-    videoUrl: '',
+    videoUrl: '273',
     trailerUrl: "https://youtu.be/BOzNaa_o9_g?si=WNpo8Q-nVMnJThO6",
     overview: 'A dedicated detective investigates mysterious disappearances, untangling a complex web of secrets and hidden motives behind the last known moments of those who vanished without a trace. Every discovery leads to more questions and new dangers.',
     overviewKurdish: "ێکۆڵەرێکی دڵسۆز لێکۆڵینەوە لە دیارنەمانی بێشوێنەواری کەسە ونبووەکان دەکات، و بەدوای نهێنییە شاراوەکان و هۆکارە تاریکەکانی پشت دوا جار بینرانی هەر کەسێکدا دەگەڕێت پێش ئەوەی بە تەواوی ون ببن. هەر بەرەوپێشچوونێک لە کەیسەکەدا، نهێنی زیاتر و مەترسی نوێی بۆ دەردەخات.",
