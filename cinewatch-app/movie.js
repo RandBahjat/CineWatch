@@ -3186,6 +3186,8 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
   const movie = MOVIES.find((m) => m.id === movieId);
   if (!movie) return;
 
+  recordWatchEvent(movieId);
+
   // TV Shows with seasons should immediately start from S1 E1
   if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
     const firstSeason = movie.seasons[0];
