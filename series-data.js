@@ -25,7 +25,7 @@ window._SERIES_DATA = [
     trailerUrl: "https://youtu.be/BOzNaa_o9_g?si=WNpo8Q-nVMnJThO6",
     overview: 'Frances Neagley is a private investigator in Chicago and former military colleague of Jack Reacher in the Armys 110th MP Special Investigations Unit. When she learns that a beloved friend from her past has been killed in a suspicious accident, she becomes hell-bent on justice, using all of her lethal training and cunning resources to track down the killers and uncover a deep conspiracy.',
     overviewKurdish: "فرانسیس نیگلی، لێکۆڵەری تایبەتی شارەزا لە شیکاگۆ و هاوکاری پێشووی جاک ڕیچەر لە یەکەی ١١٠ی لێکۆڵینەوەی تایبەتی سوپا، تووشی شۆک دەبێت کاتێک دەزانێت هاوڕێیەکی نزیکی لە ڕووداوێکی گوماناویدا کوژراوە. نیگلی هەموو تواناکانی شەڕکردن و لێکۆڵینەوەی خۆی بەکاردەهێنێت لەپێناو بەدەستهێنانی دادپەروەری، تاوەکو بکوژەکانی هاوڕێکەی بدۆزێتەوە و ڕووبەڕووی ئەو پیلانە گەورەیە ببێتەوە کە ژیانی لە مەترسی ناوە.",
-    director: 'James Watkins',
+    director: 'Nick Santora, Nicholas Wootton',
     cast: [
       'Patrick Brammall, Maxine Peake, Sarah Phelps, Livia De Paolis, Damien Molony, Aimee-Ffion Edwards, Kojo Kamara'
     ],
