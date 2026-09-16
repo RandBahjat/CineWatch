@@ -1817,12 +1817,21 @@ function playMovieDirect(movieId) {
   } else {
     sNum = movie.season || 1;
     epNum = movie.episode || 1;
-  }
-
   const isAnime = !!(movie.isAnime || movie.type === 'Anime');
   const animeColor = isAnime ? '23ade5' : 'e50914';
 
+  const playerTitlePill = document.getElementById('playerTitlePill') || document.querySelector('.cw-player-title-pill');
+  const serverSelectWrap = document.getElementById('serverSelectWrap');
+
   if (isAnime) {
+    if (playerTitlePill) {
+      playerTitlePill.classList.remove('hidden');
+      playerTitlePill.style.display = '';
+    }
+    if (serverSelectWrap) {
+      serverSelectWrap.classList.remove('hidden');
+      serverSelectWrap.style.display = '';
+    }
     const curPref = localStorage.getItem('cw_anime_audio_pref') || 'sub';
     initArtPlayerForAnimeApp(movie, sNum, epNum, curPref);
 
