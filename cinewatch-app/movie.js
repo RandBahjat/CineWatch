@@ -2950,6 +2950,9 @@ async function fetchRawStream(tmdbId, type, season = null, episode = null) {
 // Open the video player with a direct URL (used for TV episodes)
 async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, epData = null) {
   state.currentPlayingMovie = { id: parentId || "_episode_", title: displayTitle, epData };
+  if (parentId && parentId !== "_episode_") {
+    recordWatchEvent(parentId);
+  }
 
   const modal = document.getElementById("videoModal");
   const video = document.getElementById("videoElement");
