@@ -1817,6 +1817,8 @@ function playMovieDirect(movieId) {
   } else {
     sNum = movie.season || 1;
     epNum = movie.episode || 1;
+  }
+
   const isAnime = !!(movie.isAnime || movie.type === 'Anime');
   const animeColor = isAnime ? '23ade5' : 'e50914';
 
