@@ -42,7 +42,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 2,
-            title: 'The Call'
+            title: 'Episode #1.2'
           },
           {
             episode: 3,
