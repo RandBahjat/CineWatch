@@ -1983,8 +1983,8 @@ function playMovieDirect(movieId) {
 
       // Vidrock server (Primary for Movies and Series with Red Theme)
       const vidrockUrl = isTv
-        ? `https://vidrock.to/tv/${tmdb}/${mappedSeason}/${mappedEpisode}?autoplay=true&autonext=true&theme=e50914&download=false`
-        : `https://vidrock.to/movie/${tmdb}?autoplay=true&autonext=true&theme=e50914&download=false`;
+        ? `https://vidrock.to/tv/${tmdb}/${mappedSeason}/${mappedEpisode}?autoplay=true&autonext=true&theme=e50914&download=true`
+        : `https://vidrock.to/movie/${tmdb}?autoplay=true&autonext=true&theme=e50914&download=true`;
 
       const vaPlayerUrl = isTv
         ? `https://vaplayer.ru/embed/tv/${tmdb}/${mappedSeason}/${mappedEpisode}?skin=netflix`
