@@ -1182,21 +1182,12 @@ function renderBecauseYouWatchedShelf() {
 
   // Subtitle explaining that AI is used to show related movies and series based on viewing
   if (subtitleEl) {
-    const primaryGenres = (latestWatched.genres || []).slice(0, 3).map(translateGenre).join(" &middot; ");
-    const isSuperhero = CineAIRecommender.isSuperheroTitle(latestWatched);
-
     if (isCkb) {
-      subtitleEl.innerHTML = isSuperhero
-        ? `سیستەمی ژیری دەستکرد شیکاری بۆ سەیرکردنەکانت کردووە بۆ پێشاندانی فیلم و زنجیرەی پەیوەندیدار بە سوپەرهیرۆ`
-        : `سیستەمی ژیری دەستکرد شیکاری بۆ سەیرکردنەکانت کردووە بۆ پێشاندانی فیلم و زنجیرەی هاوشێوە لە ژانەری ${primaryGenres}`;
+      subtitleEl.innerHTML = `فیلم و زنجیرەی پێشنیارکراو لەلایەن ژیری دەستکردی CineWatch بەپێی ئەوەی سەیرت کردووە`;
     } else if (isAr) {
-      subtitleEl.innerHTML = isSuperhero
-        ? `يستخدم الموقع الذكاء الاصطناعي لتحليل ما شاهدته وعرض أفلام ومسلسلات الأبطال الخارقين المشابهة`
-        : `يستخدم الموقع الذكاء الاصطناعي لتحليل ما شاهدته وعرض أفلام ومسلسلات مشابهة في تصنيف ${primaryGenres}`;
+      subtitleEl.innerHTML = `أفلام ومسلسلات يقترحها الذكاء الاصطناعي بناءً على ما شاهدته`;
     } else {
-      subtitleEl.innerHTML = isSuperhero
-        ? `Our AI analyzed what you watched to discover related superhero movies & series for you`
-        : `Our AI analyzed what you watched to show related movies & series in ${primaryGenres}`;
+      subtitleEl.innerHTML = `Movies and series recommended by our AI based on what you watched`;
     }
   }
 
