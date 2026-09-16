@@ -498,6 +498,7 @@ function updateContinueWatching(movieId, currentTime, duration) {
   if (window.CW_API && state.user) {
     window.CW_API.syncData(state.favorites, state.continueWatching);
   }
+  recordWatchEvent(movieId);
   renderContinueWatchingShelf();
   if (state.activeView === "continue") {
     renderContinueWatchingPage();
@@ -513,6 +514,26 @@ function removeContinueWatching(movieId) {
   renderContinueWatchingShelf();
   if (state.activeView === "continue") {
     renderContinueWatchingPage();
+  }
+}
+
+function recordWatchEvent(movieId) {
+  if (!movieId || movieId === "_episode_") return;
+  try {
+    if (!state.watchHistory) state.watchHistory = [];
+    // Ensure item moves to top of watch history
+    state.watchHistory = state.watchHistory.filter(item => item && item.movieId !== movieId);
+    state.watchHistory.unshift({ movieId: movieId, timestamp: Date.now() });
+    if (state.watchHistory.length > 50) state.watchHistory = state.watchHistory.slice(0, 50);
+    localStorage.setItem(KEYS.WATCH_HISTORY, JSON.stringify(state.watchHistory));
+    sessionStorage.setItem(KEYS.WATCH_HISTORY, JSON.stringify(state.watchHistory));
+    
+    // Live update of Because You Watched shelf
+    if (typeof renderBecauseYouWatchedShelf === "function") {
+      renderBecauseYouWatchedShelf();
+    }
+  } catch (e) {
+    console.warn("recordWatchEvent error:", e);
   }
 }
 
