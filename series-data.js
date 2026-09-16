@@ -7,7 +7,7 @@ window._SERIES_DATA = [
 
 
   {
-    title: "Last Seen",
+    title: "",
     type: 'TV Show',
     year: 2026,
     rating: 7.5,
