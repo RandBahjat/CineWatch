@@ -784,12 +784,31 @@
       </div>
 
       <!-- Player Top Bar (Floating Glass Navigation) -->
-      <div class="cw-player-topbar" id="playerTopBar">
-        <div class="cw-topbar-left">
+      <div class="cw-player-topbar" id="playerTopBar" style="display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 2rem; position: absolute; top: 0; left: 0; right: 0; z-index: 100; pointer-events: none;">
+        <div class="cw-topbar-left" style="pointer-events: auto; display: flex; align-items: center; gap: 0.85rem;">
           <button class="cw-btn-back" id="playerClose" aria-label="Exit Player" title="Back to CineWatch (Esc)">
             <ion-icon name="arrow-back-outline"></ion-icon>
             <span>Back</span>
           </button>
+          <div class="cw-player-title-pill">
+            <h3 class="cw-player-title" id="playerTitle">CineWatch</h3>
+            <div class="cw-player-badges">
+              <span class="cw-badge" id="streamTypeBadge" style="background: rgba(229, 9, 20, 0.25); color: #fff; border: 1px solid #e50914;">VIDROCK HD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cw-topbar-right" style="pointer-events: auto; position: relative;">
+          <div class="cw-server-wrap" id="serverSelectWrap" style="position: relative;">
+            <button class="cw-server-btn" id="serverSelectBtn" style="display: flex; align-items: center; gap: 8px; height: 42px; padding: 0 1.25rem; background: rgba(14, 16, 26, 0.85); backdrop-filter: blur(24px); border: 1px solid rgba(255, 255, 255, 0.16); border-radius: 50px; color: #fff; font-size: 0.88rem; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">
+              <ion-icon name="server-outline" style="color: #e50914;"></ion-icon>
+              <span id="serverActiveLabel">🎸 Vidrock HD</span>
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
+            <div class="cw-server-menu hidden" id="serverMenu" style="position: absolute; top: calc(100% + 8px); right: 0; min-width: 250px; background: rgba(14, 16, 26, 0.96); backdrop-filter: blur(24px); border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 14px; padding: 8px; z-index: 1000; box-shadow: 0 12px 36px rgba(0, 0, 0, 0.85); display: flex; flex-direction: column; gap: 6px;">
+              <div id="serverSelect" style="display: flex; flex-direction: column; gap: 5px;"></div>
+            </div>
+          </div>
         </div>
       </div>
 
