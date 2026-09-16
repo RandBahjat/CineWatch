@@ -38,7 +38,7 @@ window._SERIES_DATA = [
         episodes: [
           {
             episode: 1,
-            title: 'The Dispatcher'
+            title: 'Episode #1.1'
           },
           {
             episode: 2,
