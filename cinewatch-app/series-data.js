@@ -13,6 +13,7 @@ window._SERIES_DATA = [
     rating: "TBR",
     age: 'TBR',
     genres: [
+      'Action',
       'Drama',
       'Mystery',
       'Crime',
