@@ -74,7 +74,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 10,
-            title: 'Chapter Eight: The Party'
+            title: 'Chapter Ten: Countdown'
           },
           
         ]
