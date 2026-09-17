@@ -62,7 +62,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 7,
-            title: 'Episode #1.7'
+            title: 'Lebron's No Jordan'
           },
           {
             episode: 8,
