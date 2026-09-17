@@ -864,14 +864,7 @@ async function renderCarousels() {
     trendingSeriesTrack: getMoviesFromList(TRENDING_THIS_WEEK_SERIES, (m) => m.type === "TV Show" || m.type === "Series"),
     popularMoviesTrack: getMoviesFromList(POPULAR_MOVIES, (m) => m.type !== "TV Show"),
     popularSeriesTrack: getMoviesFromList(POPULAR_SERIES, (m) => m.type === "TV Show" || m.type === "Series"),
-    upcomingMoviesTrack: (() => {
-      let list = getMoviesFromList(UPCOMING_MOVIES, (m) => m.type !== "TV Show");
-      if (list.length < 6) {
-        const autoUpcoming = MOVIES.filter(m => m.type !== "TV Show" && m.year >= 2026 && !list.some(x => x.id === m.id));
-        list = [...list, ...autoUpcoming];
-      }
-      return list;
-    })(),
+    upcomingMoviesTrack: getMoviesFromList(UPCOMING_MOVIES, (m) => m.type !== "TV Show"),
   };
 
   const tracks = Object.keys(shelfMap);
