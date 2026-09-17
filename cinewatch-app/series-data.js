@@ -18,7 +18,7 @@ window._SERIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/tQqbbxBAdW2ql8vbOqMOJbtSQ7O.jpg",
     videoUrl: "247718",
     trailerUrl: "https://youtu.be/qKGgw7Ob5f4",
-    overview: "Deep in the heart of a struggling Dixie town, a desperate family man and his reckless brother-in-law rob a local pill mill, unaware that the business is backed by the ruthless New Orleans mafia. When an unhinged mob enforcer arrives in town to exact brutal retribution, a weary, cancer-stricken local sheriff must race against time to maintain peace and prevent a complete bloodbath.",
+    overview: "Harry Da Souza is a street-smart, formidable "fixer" caught in the brutal crossfire between two warring London crime syndicates. Working directly for the powerful Harrigan family dynasty, Harry is tasked with resolving volatile underworld disputes and making high-stakes problems disappear, all while fighting to keep his own family alive as an all-out gang war threatens to tear the city apart.",
     overviewKurdish: "لە شارۆچکەیەکی بچووک و هەژارنشین، پیاوێکی خێزاندار لەگەڵ برای ژنەکەی بەهۆی بێپارەییەوە بڕیار دەدەن دەست بەسەر کلینیکێکی فرۆشتنی دەرمانی بێهۆشکەردا بگرن، بەڵام بێ ئاگان لەوەی شوێنەکە سەر بە مافیای بەهێزی نیوئۆرلینزە. کاتێک پیاوکوژێکی دڕندەی مافیا دێتە شارەکە بۆ تۆڵەسەندنەوە، شێریفی نەخۆش و ماندووی شارۆچکەکە هەوڵ دەدات پێش ئەوەی خوێنێکی زۆر بڕژێت دۆخەکە کۆنتڕۆڵ بکات.",
     director: "Nicholas Maggio",
     cast: [
