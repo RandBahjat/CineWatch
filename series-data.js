@@ -18,7 +18,7 @@ window._SERIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/tQqbbxBAdW2ql8vbOqMOJbtSQ7O.jpg",
     videoUrl: "247718",
     trailerUrl: "https://youtu.be/qKGgw7Ob5f4",
-    overview: "Power is up for grabs as the Harrigans and Stevensons, two warring London crime families, clash in a kill-or-be-killed battle that threatens to topple empires and ruin lives. Caught in the crossfire is Harry Da Souza, the street-smart fixer whose loyalties are put to the ultimate test when opposing forces collide.",
+    overview: "Deep in the heart of a struggling Dixie town, a desperate family man and his reckless brother-in-law rob a local pill mill, unaware that the business is backed by the ruthless New Orleans mafia. When an unhinged mob enforcer arrives in town to exact brutal retribution, a weary, cancer-stricken local sheriff must race against time to maintain peace and prevent a complete bloodbath.",
     overviewKurdish: "دەسەڵات لە نێوان دوو بنەماڵەی مافیای تاوانکاریی لەندەن دابەش دەبێت کاتێک لە شەڕێکی خوێناویدا ڕووبەڕووی یەکتر دەبنەوە کە هەڕەشە لە ڕووخانی ئیمپراتۆریەت و ژیانیان دەکات. لە نێوان ئەم ئاگرەدا، هاری دا سۆزا، چارەسەرکەرێکی لێهاتوو کە لە شەقامەکاندا پەروەردە بووە، دەکەوێتە تاقیکردنەوەیەکی سەختەوە کە وەفاداری ڕاستەقینەی خۆی بسەلمێنێت.",
     director: "Guy Ritchie, Ronan Bennett",
     cast: [
