@@ -42,7 +42,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 2,
-            title: 'Episode #1.2'
+            title: 'Team Building Exercises'
           },
           {
             episode: 3,
