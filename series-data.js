@@ -69,11 +69,11 @@ window._SERIES_DATA = [
             title: 'Chapter Eight: The Party'
           },
           {
-            episode: 8,
+            episode: 9,
             title: 'Chapter Eight: The Party'
           },
           {
-            episode: 8,
+            episode: 10,
             title: 'Chapter Eight: The Party'
           },
           
