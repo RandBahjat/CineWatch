@@ -54,7 +54,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 5,
-            title: 'Trip'
+            title: 'Chapter Five: The Weekly Watcher'
           },
           {
             episode: 6,
