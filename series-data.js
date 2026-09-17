@@ -14,9 +14,9 @@ window._SERIES_DATA = [
     age: 'TV-PG',
     genres: [
       'Sci-Fi',
+      'Horror',
       'Drama',
-      'Mystery',
-      'Crime'
+      ''
       
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/1m6CxPAuGv2oHc1ahERrcVWnk2J.jpg',

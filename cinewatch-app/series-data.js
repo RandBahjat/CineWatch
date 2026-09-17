@@ -14,8 +14,8 @@ window._SERIES_DATA = [
     age: 'TV-PG',
     genres: [
       'Sci-Fi',
+      'Horror',
       'Drama',
-      'Mystery',
       'Crime'
       
     ],
