@@ -14,7 +14,7 @@ window._MOVIES_DATA = [
       "Crime",
       "Drama",
       "Thriller",
-      ""
+      "Mystery"
     ],
     poster: "https://image.tmdb.org/t/p/original/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/aKPXvUemWdDu94GNNDoRBhPgr6v.jpg",
