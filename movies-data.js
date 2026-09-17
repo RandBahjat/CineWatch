@@ -13,7 +13,8 @@ window._MOVIES_DATA = [
     genres: [
       "Crime",
       "Drama",
-      "Thriller"
+      "Thriller",
+      ""
     ],
     poster: "https://image.tmdb.org/t/p/original/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/aKPXvUemWdDu94GNNDoRBhPgr6v.jpg",
