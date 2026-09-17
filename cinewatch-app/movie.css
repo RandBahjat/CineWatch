@@ -9978,13 +9978,23 @@ min-width: 0;
 }
 
 @media (max-width: 768px) {
-  #becauseYouWatchedTrack .movie-card {
-    flex: 0 0 176px !important;
-    width: 176px !important;
-    min-width: 160px !important;
-    max-width: 176px !important;
+  .carousel-track .movie-card,
+  .carousel-track:not(.top10-track) .movie-card,
+  #becauseYouWatchedTrack .movie-card,
+  #continueTrack .movie-card,
+  .movie-card:not(.continue-card) {
+    flex: 0 0 160px !important;
+    width: 160px !important;
+    min-width: 140px !important;
+    max-width: 175px !important;
   }
-  #becauseYouWatchedTrack .card-poster-wrap {
+
+  .carousel-track .card-poster-wrap,
+  .carousel-track:not(.top10-track) .card-poster-wrap,
+  #becauseYouWatchedTrack .card-poster-wrap,
+  #continueTrack .card-poster-wrap,
+  .continue-card .card-poster-wrap,
+  .movie-card .card-poster-wrap {
     width: 100% !important;
     min-width: 0 !important;
     max-width: 100% !important;
@@ -9992,10 +10002,49 @@ min-width: 0;
     min-height: 0 !important;
     max-height: none !important;
     aspect-ratio: 2 / 3 !important;
+    border-radius: var(--radius-sm, 10px) !important;
   }
-  #becauseYouWatchedTrack .card-details {
+
+  .carousel-track .card-poster-wrap picture,
+  .carousel-track .card-poster,
+  .carousel-track:not(.top10-track) .card-poster-wrap picture,
+  .carousel-track:not(.top10-track) .card-poster,
+  #becauseYouWatchedTrack .card-poster-wrap picture,
+  #becauseYouWatchedTrack .card-poster,
+  #continueTrack .card-poster-wrap picture,
+  #continueTrack .card-poster,
+  .continue-card img.card-poster {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    aspect-ratio: 2 / 3 !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    display: block !important;
+  }
+
+  .carousel-track .card-details,
+  .carousel-track:not(.top10-track) .card-details,
+  #becauseYouWatchedTrack .card-details,
+  #continueTrack .card-details {
     width: 100% !important;
     max-width: 100% !important;
+    min-width: 0 !important;
+    padding: 8px 4px 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-track .movie-card,
+  .carousel-track:not(.top10-track) .movie-card,
+  #becauseYouWatchedTrack .movie-card,
+  #continueTrack .movie-card,
+  .movie-card:not(.continue-card) {
+    flex: 0 0 142px !important;
+    width: 142px !important;
+    min-width: 130px !important;
+    max-width: 155px !important;
   }
 }
 
