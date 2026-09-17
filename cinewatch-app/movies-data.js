@@ -21,7 +21,7 @@ window._MOVIES_DATA = [
     videoUrl: "1124142",
     trailerUrl: "https://youtu.be/GwSvAyaMGMo?si=lNcOoYpHjvEkgQIc",
     overview: "Set against the deep, secluded backwoods of rural Oklahoma, an enigmatic and solitary man named Amziah King takes a troubled young foster child under his wing. When dangerous outside forces and shadowy figures from his past encroach on their quiet mountain sanctuary, Amziah must rely on his sharp survival instincts and violent past to defend their home at any cost.",
-    overviewKurdish: "هەنک مالۆن ، ئەفسەرێکی پێشووی هێزە تایبەتەکان کە وەک شۆفێری گەیاندنی خێرا کاردەکات، ئەرکێکی گرنگی پێدەسپێردرێت بۆ گواستنەوەی ئەندامێکی جەستە تا ژیانی کچێکی بچووک ڕزگار بکات. لەگەڵ بێن  کە گەیەنەرێکی پزیشکیی قسەخۆشە، لەلایەن باندێکی تاوانکاریی بێبەزەیییەوە لە سەرانسەری شاردا ڕاو دەکرێن و دەبێت کێبڕکێ لەگەڵ کات بکەن بۆ ئەوەی بە سەلامەتی بارەکە بگەیەنن.",
+    overviewKurdish: "لە ناو دارستانە دوورەدەست و کێوییەکانی ئۆکلاھۆما، پیاوێکی تەنیا و نامۆ بە ناوی ئەمزیای کینگ منداڵێکی بێکەس دەگرێتە خۆ و فێری ڕێساکانی مانەوەی دەکات. بەڵام کاتێک کەسانی مەترسیدار و سێبەرە تاریکەکانی ڕابردووی دێنەوە سەر ڕێگای و پەلاماری پەناگەکەی دەدەن، ئەمزیای ناچار دەبێت پەنا بۆ توندوتیژی و تواناکانی پێشووی ببات بۆ پاراستنی ژیانی خۆی و ئەو منداڵە.",
     director: "Scott Waugh",
     cast: ["Alan Ritchson, Owen Wilson, Rodrigo Santoro, Leila George, Adriana Barraza, Peta Sergeant"],
     trending: true,
