@@ -216,9 +216,17 @@ function initCatalog() {
       }
     });
 
-    // FIX 4: Build O(1) Map â€” eliminates all N+1 .find() scans across the app
+    // FIX 4: Build O(1) Map â€” includes MOVIES, SERIES, and ANIME
     _movieMap.clear();
-    MOVIES.forEach(m => _movieMap.set(String(m.id), m));
+    if (typeof MOVIES !== 'undefined' && Array.isArray(MOVIES)) {
+      MOVIES.forEach(m => _movieMap.set(String(m.id), m));
+    }
+    if (typeof SERIES !== 'undefined' && Array.isArray(SERIES)) {
+      SERIES.forEach(s => _movieMap.set(String(s.id), s));
+    }
+    if (typeof ANIME !== 'undefined' && Array.isArray(ANIME)) {
+      ANIME.forEach(a => _movieMap.set(String(a.id), a));
+    }
 
     // FIX 5: ASYNC â€” render home on next frame, don't block catalog init
     requestAnimationFrame(() => renderHome());
@@ -1077,7 +1085,11 @@ let _trailerMuted = true;
 function openDetail(movieId) {
   let movie = _movieMap.get(String(movieId));
   if (!movie && typeof movieId === 'object' && movieId) movie = movieId;
-  if (!movie && movieId) movie = MOVIES.find(m => String(m.id) === String(movieId) || m.title === movieId);
+  if (!movie && movieId) {
+    movie = (typeof MOVIES !== 'undefined' ? MOVIES.find(m => String(m.id) === String(movieId) || m.title === movieId) : null)
+      || (typeof SERIES !== 'undefined' ? SERIES.find(s => String(s.id) === String(movieId) || s.title === movieId) : null)
+      || (typeof ANIME !== 'undefined' ? ANIME.find(a => String(a.id) === String(movieId) || a.title === movieId) : null);
+  }
   if (!movie) return;
 
   // Cancel any previous trailer timer and remove existing trailer iframe
@@ -1108,10 +1120,10 @@ function openDetail(movieId) {
       </button>
     `;
 
-    /* Auto-play trailer after 3 seconds of staying in detail */
+    /* Auto-play trailer after 800ms of staying in detail */
     _trailerTimer = setTimeout(() => {
       _startTrailer(hero, movie);
-    }, 3000);
+    }, 800);
   }
 
   /* ── Body: Top Nav + Bottom Content ── */
@@ -1269,23 +1281,28 @@ function _startTrailer(heroEl, movie) {
   const iframe = document.createElement('iframe');
   iframe.className = 'trailer-iframe';
 
-  const customYtId = extractYouTubeId(movie.trailerUrl || movie.trailer || movie.trailerYouTubeId || movie.videoUrl);
+  const customYtId = extractYouTubeId(movie.trailerUrl || movie.trailer || movie.trailerYouTubeId);
   const hostOrigin = (window.location.protocol === 'http:' || window.location.protocol === 'https:') 
     ? window.location.origin 
-    : 'https://www.youtube.com';
+    : '';
+
+  const originParam = hostOrigin ? `&origin=${encodeURIComponent(hostOrigin)}` : '';
+  const cleanParams = `autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3&cc_load_policy=0&cc_lang_pref=off&hl=en&enablejsapi=1&playsinline=1&fs=0&disablekb=1&autohide=1${originParam}`;
 
   let trailerSrc = '';
   if (customYtId) {
-    trailerSrc = `https://www.youtube.com/embed/${customYtId}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${customYtId}&iv_load_policy=3&cc_load_policy=0&cc_lang_pref=off&hl=en&enablejsapi=1`;
+    trailerSrc = `https://www.youtube.com/embed/${customYtId}?${cleanParams}&playlist=${customYtId}`;
   } else {
     const query = encodeURIComponent(`${movie.title} ${movie.year || ''} official trailer`);
-    trailerSrc = `https://www.youtube.com/embed?listType=search&list=${query}&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&iv_load_policy=3&cc_load_policy=0&cc_lang_pref=off&hl=en&enablejsapi=1`;
+    trailerSrc = `https://www.youtube.com/embed?listType=search&list=${query}&${cleanParams}`;
   }
 
   iframe.src = trailerSrc;
   iframe.referrerPolicy = 'strict-origin-when-cross-origin';
   iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
   iframe.allowFullscreen = false;
+  iframe.setAttribute('playsinline', '1');
+  iframe.setAttribute('webkit-playsinline', '1');
 
   function disableSubtitles() {
     try {
@@ -1314,6 +1331,8 @@ function _startTrailer(heroEl, movie) {
     setTimeout(disableSubtitles, 500);
     setTimeout(disableSubtitles, 1200);
     setTimeout(disableSubtitles, 2500);
+    wrap.classList.add('active');
+    if (backdrop) backdrop.classList.add('hidden-bg');
   };
 
   wrap.appendChild(iframe);
@@ -1322,11 +1341,6 @@ function _startTrailer(heroEl, movie) {
   requestAnimationFrame(() => {
     setTimeout(() => {
       wrap.classList.add('active');
-      // Hide the background image completely once the video trailer starts playing so it never shows through or behind!
-      if (backdrop) {
-        backdrop.classList.add('hidden-bg');
-      }
-      heroEl.style.backgroundImage = 'none';
     }, 150);
   });
 
@@ -1781,7 +1795,9 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
 function playMovieDirect(movieId) {
   let movie = _movieMap.get(String(movieId)) || state.currentDetail;
   if (!movie && movieId) {
-    movie = MOVIES.find(m => String(m.id) === String(movieId) || m.title === movieId);
+    movie = (typeof MOVIES !== 'undefined' ? MOVIES.find(m => String(m.id) === String(movieId) || m.title === movieId) : null)
+      || (typeof SERIES !== 'undefined' ? SERIES.find(s => String(s.id) === String(movieId) || s.title === movieId) : null)
+      || (typeof ANIME !== 'undefined' ? ANIME.find(a => String(a.id) === String(movieId) || a.title === movieId) : null);
   }
   if (!movie) return;
 
