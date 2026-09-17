@@ -928,12 +928,16 @@ function renderContinueWatchingShelf() {
         ? `<span class="notranslate" translate="no">${inProgressText}</span>`
         : `<span class="notranslate" translate="no">${formatNumber(Math.max(1, Math.round(((item.duration || 0) - (item.currentTime || 0)) / 60)))} ${leftText}</span><span class="notranslate" translate="no">${formatNumber(percent)}%</span>`;
 
+      const posterImg = movie.poster || movie.backdrop || "";
+      const backdropImg = movie.backdrop || movie.poster || "";
+
       return `
       <div class="movie-card continue-card" data-id="${movie.id}">
         <div class="card-poster-wrap continue-poster-wrap">
           <picture>
-            <source media="(max-width: 768px)" srcset="${movie.poster}">
-            <img src="${movie.backdrop || movie.poster}" alt="${movie.title}" class="card-poster" loading="lazy">
+            <source media="(max-width: 768px)" srcset="${posterImg}">
+            <source media="(min-width: 769px)" srcset="${backdropImg}">
+            <img src="${posterImg}" alt="${movie.title}" class="card-poster" loading="lazy" onerror="if(this.src!=='${backdropImg}')this.src='${backdropImg}'">
           </picture>
           <div class="card-gradient"></div>
           <div class="card-overlay"></div>
