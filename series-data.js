@@ -1,10 +1,103 @@
-﻿// CineWatch â€” Series Data
+// CineWatch â€” Series Data
 // Edit this file to add, remove, or reorder TV shows and series.
 // Push to GitHub (or save â€” auto-sync will handle it) for changes to go live.
 
 window._SERIES_DATA = [
 
-
+  {
+    title: "Slow Horses",
+    type: "TV Show",
+    year: 2022,
+    rating: "8.3",
+    age: "TV-MA",
+    genres: [
+      "Drama",
+      "Thriller",
+      "Crime",
+      "Action"
+    ],
+    poster: "https://image.tmdb.org/t/p/original/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/wrMY8LMEnPiM9dokAUZCGGKLWrm.jpg",
+    videoUrl: "95480",
+    trailerUrl: "https://youtu.be/O9ZydbT11vI",
+    overview: "Follow a dysfunctional team of MI5 agents—and their obnoxious boss, the notorious Jackson Lamb—as they navigate the espionage world's smoke and mirrors to defend England from sinister forces.",
+    overviewKurdish: "بەدواداچوون بۆ تیمێکی ناتەبای بەکرێگیراوانی MI5 دەکات لەگەڵ سەرۆکە توڕە و بێزارکەرەکەیان، جاکسۆن لامب، کاتێک لە جیهانی ئاڵۆزی سیخوڕیدا ڕووبەڕووی پیلانگێڕییەکان دەبنەوە بۆ پاراستنی بەریتانیا لە هێزە خراپەکارەکان.",
+    director: "James Hawes",
+    cast: [
+      "Gary Oldman, Jack Lowden, Kristin Scott Thomas, Saskia Reeves, Rosalind Eleazar, Christopher Chung"
+    ],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Failure's Contagious" },
+          { episode: 2, title: "Work Drinks" },
+          { episode: 3, title: "Bad Tradecraft" },
+          { episode: 4, title: "Visiting Hours" },
+          { episode: 5, title: "Fiasco" },
+          { episode: 6, title: "Follies" }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "Last Stop" },
+          { episode: 2, title: "From Upshott with Love" },
+          { episode: 3, title: "Drinking Games" },
+          { episode: 4, title: "Cicada" },
+          { episode: 5, title: "Boardroom Politics" },
+          { episode: 6, title: "Old Scores" }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: "Strange Games" },
+          { episode: 2, title: "Hard Lessons" },
+          { episode: 3, title: "Negotiating With Tigers" },
+          { episode: 4, title: "Uninvited Guests" },
+          { episode: 5, title: "Cleaning Up" },
+          { episode: 6, title: "Footprints" }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          { episode: 1, title: "Identity Theft" },
+          { episode: 2, title: "A Stranger Comes to Town" },
+          { episode: 3, title: "Penny for Your Thoughts" },
+          { episode: 4, title: "Returns" },
+          { episode: 5, title: "Grave Danger" },
+          { episode: 6, title: "Hello Goodbye" }
+        ]
+      },
+      {
+        season: 5,
+        episodes: [
+          { episode: 1, title: "Bad Dates" },
+          { episode: 2, title: "Incommunicado" },
+          { episode: 3, title: "Tall Tales" },
+          { episode: 4, title: "Missiles" },
+          { episode: 5, title: "Circus" },
+          { episode: 6, title: "Scars" }
+        ]
+      },
+      {
+        season: 6,
+        episodes: [
+          { episode: 1, title: "Circle of Life" },
+          { episode: 2, title: "Daddy Issues" },
+          { episode: 3, title: "Resurrection" },
+          { episode: 4, title: "Lost and Found" },
+          { episode: 5, title: "Sayonara" },
+          { episode: 6, title: "Judgment Day" }
+        ]
+      }
+    ]
+  },
 
   {
     title: "Stranger Things: Tales from '85",
