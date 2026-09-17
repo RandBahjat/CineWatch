@@ -50,7 +50,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 4,
-            title: 'Breaking & Entering'
+            title: 'Chapter Four: The Confession'
           },
           {
             episode: 5,
