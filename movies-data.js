@@ -80,7 +80,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "City of Blood ",
+    title: "City of Blood",
     type: "Movie",
     year: 2026,
     rating: 4.4,
