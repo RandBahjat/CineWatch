@@ -21,7 +21,7 @@ window._SERIES_DATA = [
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/xyVpiSZNA2fYJUuuagkqiSHJqjr.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/A4V6RbNKp5c6MODQLk13oS6w24Q.jpg',
-    videoUrl: '273207',
+    videoUrl: '',
     trailerUrl: "https://youtu.be/kajCUhg36R0?si=ZEi-UpKGufeODWRH",
     overview: 'Frances Neagley is a private investigator in Chicago and former military colleague of Jack Reacher in the Armys 110th MP Special Investigations Unit. When she learns that a beloved friend from her past has been killed in a suspicious accident, she becomes hell-bent on justice, using all of her lethal training and cunning resources to track down the killers and uncover a deep conspiracy.',
     overviewKurdish: "فرانسیس نیگلی، لێکۆڵەری تایبەتی شارەزا لە شیکاگۆ و هاوکاری پێشووی جاک ڕیچەر لە یەکەی ١١٠ی لێکۆڵینەوەی تایبەتی سوپا، تووشی شۆک دەبێت کاتێک دەزانێت هاوڕێیەکی نزیکی لە ڕووداوێکی گوماناویدا کوژراوە. نیگلی هەموو تواناکانی شەڕکردن و لێکۆڵینەوەی خۆی بەکاردەهێنێت لەپێناو بەدەستهێنانی دادپەروەری، تاوەکو بکوژەکانی هاوڕێکەی بدۆزێتەوە و ڕووبەڕووی ئەو پیلانە گەورەیە ببێتەوە کە ژیانی لە مەترسی ناوە.",
