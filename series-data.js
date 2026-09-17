@@ -20,7 +20,7 @@ window._SERIES_DATA = [
       
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/xyVpiSZNA2fYJUuuagkqiSHJqjr.jpg',
-    backdrop: 'https://image.tmdb.org/t/p/original/uYOYLFQ4q7asuhdiKXCqGaeAQUH.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/A4V6RbNKp5c6MODQLk13oS6w24Q.jpg',
     videoUrl: '273207',
     trailerUrl: "https://youtu.be/BOzNaa_o9_g?si=WNpo8Q-nVMnJThO6",
     overview: 'Frances Neagley is a private investigator in Chicago and former military colleague of Jack Reacher in the Armys 110th MP Special Investigations Unit. When she learns that a beloved friend from her past has been killed in a suspicious accident, she becomes hell-bent on justice, using all of her lethal training and cunning resources to track down the killers and uncover a deep conspiracy.',
