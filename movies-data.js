@@ -386,7 +386,7 @@ window._MOVIES_DATA = [
     title: "Resident Evil",
     type: "Movie",
     year: 2026,
-    rating: "TBR",
+    rating: "7.9",
     age: "R",
     duration: "1h 30m",
     genres: [
