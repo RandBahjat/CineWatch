@@ -70,7 +70,8 @@ window._SERIES_DATA = [
           },
           {
             episode: 9,
-            title: 'Chapter Eight: The Party'
+            title: 'Chapter Nine: The Suspect
+'
           },
           {
             episode: 10,
