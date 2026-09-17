@@ -20,7 +20,7 @@ window._SERIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/wrMY8LMEnPiM9dokAUZCGGKLWrm.jpg",
     videoUrl: "95480",
     trailerUrl: "https://youtu.be/O9ZJChzPn0U?si=B8HB3P4tYpt1gwMm",
-    overview: "Follow a dysfunctional team of MI5 agents—and their obnoxious boss, the notorious Jackson Lamb—as they navigate the espionage world's smoke and mirrors to defend England from sinister forces.",
+    overview: "Slough House is a dumping ground for MI5 service rejects who have ruined their careers through clumsy mistakes, but haven't been fired yet. Led by their foul-mouthed, cynical, and flatulent boss Jackson Lamb, this dysfunctional squad of disgraced agents constantly finds themselves unwittingly entangled in dangerous conspiracies and dark espionage plots that threaten the security of Britain.",
     overviewKurdish: "بەدواداچوون بۆ تیمێکی ناتەبای بەکرێگیراوانی MI5 دەکات لەگەڵ سەرۆکە توڕە و بێزارکەرەکەیان، جاکسۆن لامب، کاتێک لە جیهانی ئاڵۆزی سیخوڕیدا ڕووبەڕووی پیلانگێڕییەکان دەبنەوە بۆ پاراستنی بەریتانیا لە هێزە خراپەکارەکان.",
     director: "James Hawes",
     cast: [
