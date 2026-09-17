@@ -54,7 +54,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Go Team!",
+    title: "City of Blood ",
     type: "Movie",
     year: 2026,
     rating: 5.4,
