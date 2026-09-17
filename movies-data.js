@@ -70,7 +70,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/icPBB9V5IX1hggtNs1fvskP2lsi.jpg",
     videoUrl: "332401",
     trailerUrl: "https://youtu.be/zzjxf3ExHc4?si=klwrJDfNf4l_rOel",
-    overview: "Group of ragtag misfit athletes assemble to save local community sports complex from greedy real estate developer. Underdog friends must train super hard, overcome crazy hurdles, and defeat arrogant champion rival team in high-stakes big tournament to win prize money and protect home turf!",
+    overview: "In a crime-infested metropolis rotting from the inside out, an uncompromising veteran detective forms an uneasy alliance with a ruthless underworld figure to investigate a string of gruesome, ritualistic murders. As the body count rises and institutional corruption tightens its grip, the two men uncover a vast conspiracy engineered by the city's highest elite, pushing both into a brutal war of survival and vengeance.",
     overviewKurdish: "کۆمەڵێک وەرزشەوانی سەرنەکەوتوو و پەراوێزخراو پێکەوە کۆدەبنەوە بۆ ڕزگارکردنی سەنتەری وەرزشی ناوچەکەیان لە دەستی گەشەپێدەرێکی تەماحکاری خانوبەرە. یاریزانە لاوازەکان پێویستە بە سەختی مەشق بکەن، بەسەر ئاستەنگە شێتانەکاندا زاڵ ببن، و لە پاڵەوانێتییەکی گەورەی کۆتاییدا شکست بە تیپی ڕکابەری بەهێزیان بهێنن بۆ بردنی خەڵاتی دارایی و پاراستنی مەیدانەکەیان.",
     director: "Paul Feig",
     cast: ["Marsai Martin, Young Mazino, Terry Crews, Stephanie Beatriz, Kenan Thompson"],
