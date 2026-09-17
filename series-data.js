@@ -22,7 +22,7 @@ window._SERIES_DATA = [
     overviewKurdish: "هاری داسۆزا، پیاوێکی لێهاتوو و بەئەزموونی چارەسەرکردنی کێشەکانە (Fixer)، کە لە ناوەڕاستی شەڕێکی خوێناوی و دڕندانەی نێوان دوو بنەماڵەی مافیای گەورەی لەندەندا گیریان خواردووە. هاری لەلایەن بنەماڵەی دەسەڵاتداری هاریگانەوە ڕادەسپێردرێت بۆ چارەسەرکردنی کێشە ئاڵۆزەکان و سڕینەوەی بەڵگەکان، بەڵام لەگەڵ گەورەبوونی شەڕی سەر شەقامەکان، ناچار دەبێت شەڕ بۆ پاراستنی گیانی خێزانەکەی بکات.",
     director: "Ronan Bennett, Guy Ritchie",
     cast: [
-      "Tom Hardy, Pierce Brosnan, Paddy Considine, Helen Mirren, Joanne Froggatt, Lara Pulver, Anson Boon, Jasmine Jobson"
+      "Tom Hardy, Pierce Brosnan, Helen Mirren, Paddy Considine, Joanne Froggatt, Lara Pulver, Anson Boon"
     ],
     trending: true,
     featured: true,
