@@ -21,7 +21,7 @@ window._SERIES_DATA = [
     videoUrl: "95480",
     trailerUrl: "https://youtu.be/O9ZJChzPn0U?si=B8HB3P4tYpt1gwMm",
     overview: "Slough House is a dumping ground for MI5 service rejects who have ruined their careers through clumsy mistakes, but haven't been fired yet. Led by their foul-mouthed, cynical, and flatulent boss Jackson Lamb, this dysfunctional squad of disgraced agents constantly finds themselves unwittingly entangled in dangerous conspiracies and dark espionage plots that threaten the security of Britain.",
-    overviewKurdish: "بەدواداچوون بۆ تیمێکی ناتەبای بەکرێگیراوانی MI5 دەکات لەگەڵ سەرۆکە توڕە و بێزارکەرەکەیان، جاکسۆن لامب، کاتێک لە جیهانی ئاڵۆزی سیخوڕیدا ڕووبەڕووی پیلانگێڕییەکان دەبنەوە بۆ پاراستنی بەریتانیا لە هێزە خراپەکارەکان.",
+    overviewKurdish: "سلۆ هاوس ئەو شوێنەیە کە دەزگای هەواڵگریی بەریتانی (MI5) ئەو سیخوڕانەی تێدا کۆدەکاتەوە کە هەڵەی گەورەیان کردووە و لە کارەکانیان دوورخراونەتەوە. لەژێر سەرپەرشتی جاکسۆن لامب، سەرۆکە بێزارکەر و زمانپیسەکەیان، ئەم تیمە فەرامۆشکراوە لە ناکاو خۆیان لە ناوەڕاستی پیلانگێڕییە مەترسیدارەکان و یارییە سیخوڕییە تاریکەکاندا دەبیننەوە کە ئاسایشی بەریتانیا دەخەنە مەترسییەوە.",
     director: "James Hawes",
     cast: [
       "Gary Oldman, Jack Lowden, Kristin Scott Thomas, Saskia Reeves, Rosalind Eleazar, Christopher Chung"
