@@ -1,4 +1,4 @@
-// CineWatch â€” Series Data
+﻿// CineWatch â€” Series Data
 // Edit this file to add, remove, or reorder TV shows and series.
 // Push to GitHub (or save â€” auto-sync will handle it) for changes to go live.
 
@@ -20,7 +20,7 @@ window._SERIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
     videoUrl: "103516",
     trailerUrl: "https://youtu.be/XL4bL9w8_b8",
-    overview: "Follow Captain Christopher Pike, Science Officer Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy.",
+    overview: "Captain Christopher Pike commands the iconic U.S.S. Enterprise alongside Science Officer Spock and Number One in the years preceding Captain Kirk's legendary mission. Venturing into uncharted quadrants across the galaxy, the crew confronts enigmatic cosmic anomalies, first contacts with unpredictable alien civilizations, and philosophical moral dilemmas in the classic episodic spirit of exploratory space opera.",
     overviewKurdish: "بەدواداچوون بۆ کاپتن کریستۆفەر پایک، ئەفسەری زانستی سپۆک و ژمارە یەک دەکات لە ساڵانی پێش ئەوەی کاپتن کیرک بچێتە سەر کەشتی ئەنتەرپرایز، کاتێک بەدوای گەڕان بەناو جیهانە نوێیەکاندا لە دەوری گەلەئەستێرەکە دەسوڕێنەوە.",
     director: "Akiva Goldsman, Alex Kurtzman",
     cast: [
