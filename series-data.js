@@ -19,7 +19,7 @@ window._SERIES_DATA = [
       'Mystery'
       
     ],
-    poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/xyVpiSZNA2fYJUuuagkqiSHJqjr.jpg',
+    poster: 'https://image.tmdb.org/t/p/original/xyVpiSZNA2fYJUuuagkqiSHJqjr.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/krRJcoEVbkT2fPZDqmj9zWp9ZQR.jpg',
     videoUrl: '224263',
     trailerUrl: "https://youtu.be/kajCUhg36R0?si=ZEi-UpKGufeODWRH",
