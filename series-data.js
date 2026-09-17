@@ -1,11 +1,11 @@
-// CineWatch â€” Series Data
+﻿// CineWatch â€” Series Data
 // Edit this file to add, remove, or reorder TV shows and series.
 // Push to GitHub (or save â€” auto-sync will handle it) for changes to go live.
 
 window._SERIES_DATA = [
 
   {
-    title: "MobLand (The Donovans)",
+    title: "MobLand",
     type: "TV Show",
     year: 2025,
     rating: "8.4",
