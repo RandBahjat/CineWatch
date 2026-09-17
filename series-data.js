@@ -20,7 +20,7 @@ window._SERIES_DATA = [
       
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/xyVpiSZNA2fYJUuuagkqiSHJqjr.jpg',
-    backdrop: 'https://image.tmdb.org/t/p/original/A4V6RbNKp5c6MODQLk13oS6w24Q.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/krRJcoEVbkT2fPZDqmj9zWp9ZQR.jpg',
     videoUrl: '224263',
     trailerUrl: "https://youtu.be/kajCUhg36R0?si=ZEi-UpKGufeODWRH",
     overview: "Set during the pivotal and turbulent summer of 1985 in Hawkins, Indiana, this anthology spinoff dives deeper into the untold encounters, strange local phenomena, and hidden government cover-ups lurking just beyond the main squad's sight. As eerie radio frequencies crackle and shadows stir beneath the town, ordinary residents and unlikely heroes face terrifying supernatural threats bleeding through from the Upside Down.",
