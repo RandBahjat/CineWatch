@@ -21,7 +21,7 @@ window._SERIES_DATA = [
     videoUrl: "103516",
     trailerUrl: "https://youtu.be/XL4bL9w8_b8",
     overview: "Captain Christopher Pike commands the iconic U.S.S. Enterprise alongside Science Officer Spock and Number One in the years preceding Captain Kirk's legendary mission. Venturing into uncharted quadrants across the galaxy, the crew confronts enigmatic cosmic anomalies, first contacts with unpredictable alien civilizations, and philosophical moral dilemmas in the classic episodic spirit of exploratory space opera.",
-    overviewKurdish: "بەدواداچوون بۆ کاپتن کریستۆفەر پایک، ئەفسەری زانستی سپۆک و ژمارە یەک دەکات لە ساڵانی پێش ئەوەی کاپتن کیرک بچێتە سەر کەشتی ئەنتەرپرایز، کاتێک بەدوای گەڕان بەناو جیهانە نوێیەکاندا لە دەوری گەلەئەستێرەکە دەسوڕێنەوە.",
+    overviewKurdish: "کاپتن کریستۆفەر پایک سەرکردایەتی کەشتی ئاسمانی ئەنتەرپرایز دەکات شانبەشانی سپۆک و ژمارە یەک لە ساڵانی پێش دەستبەکاربوونی کاپتن کیرک. دەستەی کەشتییەکە گەشت دەکەن بۆ ناوچە نەناسراو و دوورەدەستەکانی گەردوون، و ڕووبەڕووی بوونەوەرە بێگانەکان، دیاردە سەیرە گەردوونییەکان و کێشە ئەخلاقییە ئاڵۆزەکان دەبنەوە لە چوارچێوەی گەشتێکی پڕ لە سەرکێشی بۆ دۆزینەوەی جیهانی نوێ.",
     director: "Akiva Goldsman, Alex Kurtzman",
     cast: [
       "Anson Mount, Ethan Peck, Christina Chong, Melissa Navia, Babs Olusanmokun, Rebecca Romijn, Celia Rose Gooding"
