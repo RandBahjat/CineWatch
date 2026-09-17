@@ -20,7 +20,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/8MZy4k0NenJDjAEJovBWQmohRFx.jpg",
     videoUrl: "1124142",
     trailerUrl: "https://youtu.be/GwSvAyaMGMo?si=lNcOoYpHjvEkgQIc",
-    overview: "Hank Malone, a former Navy SEAL working as a high-speed courier, takes on an urgent mission to deliver a vital organ and save a young girl's life. Joined by a talkative medical courier named Ben, Hank is hunted across the city by a ruthless crime cartel trying to stop the delivery before time runs out.",
+    overview: "Set against the deep, secluded backwoods of rural Oklahoma, an enigmatic and solitary man named Amziah King takes a troubled young foster child under his wing. When dangerous outside forces and shadowy figures from his past encroach on their quiet mountain sanctuary, Amziah must rely on his sharp survival instincts and violent past to defend their home at any cost.",
     overviewKurdish: "هەنک مالۆن ، ئەفسەرێکی پێشووی هێزە تایبەتەکان کە وەک شۆفێری گەیاندنی خێرا کاردەکات، ئەرکێکی گرنگی پێدەسپێردرێت بۆ گواستنەوەی ئەندامێکی جەستە تا ژیانی کچێکی بچووک ڕزگار بکات. لەگەڵ بێن  کە گەیەنەرێکی پزیشکیی قسەخۆشە، لەلایەن باندێکی تاوانکاریی بێبەزەیییەوە لە سەرانسەری شاردا ڕاو دەکرێن و دەبێت کێبڕکێ لەگەڵ کات بکەن بۆ ئەوەی بە سەلامەتی بارەکە بگەیەنن.",
     director: "Scott Waugh",
     cast: ["Alan Ritchson, Owen Wilson, Rodrigo Santoro, Leila George, Adriana Barraza, Peta Sergeant"],
