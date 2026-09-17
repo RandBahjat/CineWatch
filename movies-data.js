@@ -67,7 +67,7 @@ window._MOVIES_DATA = [
       "Thriller"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/Njr0Rlb4CobAfrGE8NVffYDGqx.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/1hwrvoeqSe6oM59BHR8zFO082kF.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/icPBB9V5IX1hggtNs1fvskP2lsi.jpg",
     videoUrl: "1558568",
     trailerUrl: "https://youtu.be/VSN8YM6urHo?si=56Fk_-YMpxANshNI",
     overview: "Group of ragtag misfit athletes assemble to save local community sports complex from greedy real estate developer. Underdog friends must train super hard, overcome crazy hurdles, and defeat arrogant champion rival team in high-stakes big tournament to win prize money and protect home turf!",
