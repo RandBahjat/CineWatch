@@ -4,62 +4,7 @@
 
 window._SERIES_DATA = [
 
-  {
-    title: "MobLand",
-    type: "TV Show",
-    year: 2025,
-    rating: "8.4",
-    age: "TV-MA",
-    genres: [
-      "Crime",
-      "Drama"
-    ],
-    poster: "https://image.tmdb.org/t/p/original/abeH7n5pcuQcwYcTxG6DTZvXLP1.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/tQqbbxBAdW2ql8vbOqMOJbtSQ7O.jpg",
-    videoUrl: "247718",
-    trailerUrl: "https://youtu.be/qKGgw7Ob5f4",
-    overview: "Harry Da Souza is a street-smart, formidable fixer caught in the brutal crossfire between two warring London crime syndicates. Working directly for the powerful Harrigan family dynasty, Harry is tasked with resolving volatile underworld disputes and making high-stakes problems disappear, all while fighting to keep his own family alive as an all-out gang war threatens to tear the city apart.",
-    overviewKurdish: "هاری داسۆزا، پیاوێکی لێهاتوو و بەئەزموونی چارەسەرکردنی کێشەکانە (Fixer)، کە لە ناوەڕاستی شەڕێکی خوێناوی و دڕندانەی نێوان دوو بنەماڵەی مافیای گەورەی لەندەندا گیریان خواردووە. هاری لەلایەن بنەماڵەی دەسەڵاتداری هاریگانەوە ڕادەسپێردرێت بۆ چارەسەرکردنی کێشە ئاڵۆزەکان و سڕینەوەی بەڵگەکان، بەڵام لەگەڵ گەورەبوونی شەڕی سەر شەقامەکان، ناچار دەبێت شەڕ بۆ پاراستنی گیانی خێزانەکەی بکات.",
-    director: "Ronan Bennett, Guy Ritchie",
-    cast: [
-      "Tom Hardy, Pierce Brosnan, Helen Mirren, Paddy Considine, Joanne Froggatt, Lara Pulver, Anson Boon"
-    ],
-    trending: true,
-    featured: true,
-    is4k: true,
-    seasons: [
-      {
-        season: 1,
-        episodes: [
-          { episode: 1, title: "Stick or Twist" },
-          { episode: 2, title: "Jigsaw Puzzle" },
-          { episode: 3, title: "Plan B" },
-          { episode: 4, title: "Rat Trap" },
-          { episode: 5, title: "Funeral for a Friend" },
-          { episode: 6, title: "Antwerp Blues" },
-          { episode: 7, title: "The Crossroads" },
-          { episode: 8, title: "Helter Skelter" },
-          { episode: 9, title: "Beggars Banquet" },
-          { episode: 10, title: "The Beast in Me" }
-        ]
-      },
-      {
-        season: 2,
-        episodes: [
-          { episode: 1, title: "I Wanna Be Your Dog" },
-          { episode: 2, title: "Song 2" },
-          { episode: 3, title: "Episode 3" },
-          { episode: 4, title: "Episode 4" },
-          { episode: 5, title: "Episode 5" },
-          { episode: 6, title: "Episode 6" },
-          { episode: 7, title: "Episode 7" },
-          { episode: 8, title: "Episode 8" },
-          { episode: 9, title: "Episode 9" },
-          { episode: 10, title: "Episode 10" }
-        ]
-      }
-    ]
-  },
+  
 
   {
     title: "Star Trek: Strange New Worlds",
