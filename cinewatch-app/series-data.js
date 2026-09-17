@@ -74,6 +74,73 @@ window._SERIES_DATA = [
     ]
   },
   {
+    title: "Neagley",
+    type: 'TV Show',
+    year: 2026,
+    rating: "7.6",
+    age: 'TBR',
+    genres: [
+      'Action',
+      'Drama',
+      'Mystery',
+      'Crime'
+      
+    ],
+    poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/1m6CxPAuGv2oHc1ahERrcVWnk2J.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/uYOYLFQ4q7asuhdiKXCqGaeAQUH.jpg',
+    videoUrl: '273207',
+    trailerUrl: "https://youtu.be/BOzNaa_o9_g?si=WNpo8Q-nVMnJThO6",
+    overview: 'Frances Neagley is a private investigator in Chicago and former military colleague of Jack Reacher in the Armys 110th MP Special Investigations Unit. When she learns that a beloved friend from her past has been killed in a suspicious accident, she becomes hell-bent on justice, using all of her lethal training and cunning resources to track down the killers and uncover a deep conspiracy.',
+    overviewKurdish: "فرانسیس نیگلی، لێکۆڵەری تایبەتی شارەزا لە شیکاگۆ و هاوکاری پێشووی جاک ڕیچەر لە یەکەی ١١٠ی لێکۆڵینەوەی تایبەتی سوپا، تووشی شۆک دەبێت کاتێک دەزانێت هاوڕێیەکی نزیکی لە ڕووداوێکی گوماناویدا کوژراوە. نیگلی هەموو تواناکانی شەڕکردن و لێکۆڵینەوەی خۆی بەکاردەهێنێت لەپێناو بەدەستهێنانی دادپەروەری، تاوەکو بکوژەکانی هاوڕێکەی بدۆزێتەوە و ڕووبەڕووی ئەو پیلانە گەورەیە ببێتەوە کە ژیانی لە مەترسی ناوە.",
+    director: 'Nick Santora, Nicholas Wootton',
+    cast: [
+      'Maria Sten, Greyston Holt, Adeline Rudolph, Matthew Del Negro, Damon Herriman, Jasper Jones'
+    ],
+    trending: false,
+    featured: false,
+    is4k: false,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          {
+            episode: 1,
+            title: 'L Train'
+          },
+          {
+            episode: 2,
+            title: 'Team Building Exercises'
+          },
+          {
+            episode: 3,
+            title: 'Hammer Time'
+          },
+          {
+            episode: 4,
+            title: 'Breaking & Entering'
+          },
+          {
+            episode: 5,
+            title: 'Trip'
+          },
+          {
+            episode: 6,
+            title: 'Rocked'
+          },
+          {
+            episode: 7,
+            title: "Lebron's No Jordan"
+          },
+          {
+            episode: 8,
+            title: 'Touched'
+          },
+          
+        ]
+      }
+    ]
+  },
+  {
     title: "Last Seen",
     type: 'TV Show',
     year: 2026,
