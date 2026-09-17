@@ -57,7 +57,7 @@ window._MOVIES_DATA = [
     title: "City of Blood ",
     type: "Movie",
     year: 2026,
-    rating: 5.4,
+    rating: 4.4,
     age: "TV-MA",
     duration: "1h 33m",
     genres: [
