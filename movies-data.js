@@ -341,7 +341,7 @@ window._MOVIES_DATA = [
       "Adventure",
       "Sci-Fi"
     ],
-    poster: "https://image.tmdb.org/t/p/original/ghF1JYv7P5BgWHYfq9dqhqqNfz8.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7iwUUcKURMT7aKfCwMy6YnGtchD.jpg",
     videoUrl: "969681",
     trailerUrl: "https://www.youtube.com/watch?v=daXaTug8rL4",
