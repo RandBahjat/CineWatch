@@ -27,7 +27,7 @@ window._SERIES_DATA = [
     overviewKurdish: "لە هاوینی پڕ لە ڕووداوی ساڵی ١٩٨٥ لە شارۆچکەی هۆکینز، ئەم زنجیرە نوێیە ڕووداوە نەبینراوەکان، دیاردە سەیرەکان و نهێنییە شاردراوەکانی حکومەت ئاشکرا دەکات کە لە پەراوێزی چیرۆکە سەرەکییەکەدا ڕوویانداوە. کاتێک شەپۆلە نادیارەکانی ڕادیۆ تێکدەچن و سێبەری ترسناک لە ژێر زەوییەوە سەرهەڵدەدەن، خەڵکی شارۆچکەکە ڕووبەڕووی بوونەوەرە تۆقێنەرەکانی جیهانی ژێرەوە دەبنەوە.",
     director: 'The Duffer Brothers',
     cast: [
-      'Maria Sten, Greyston Holt, Adeline Rudolph, Matthew Del Negro, Damon Herriman, Jasper Jones'
+      'Joe Keery, Maya Hawke, Priah Ferguson, Brett Gelman, Cary Elwes, Randy Havens'
     ],
     trending: false,
     featured: false,
