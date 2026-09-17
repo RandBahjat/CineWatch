@@ -10,7 +10,7 @@ window._SERIES_DATA = [
     title: "Stranger Things: Tales from '85",
     type: 'TV Show',
     year: 2026,
-    rating: "7.6",
+    rating: "5.9",
     age: 'TBR',
     genres: [
       'Action',
