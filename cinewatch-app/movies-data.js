@@ -12,7 +12,7 @@ window._MOVIES_DATA = [
     duration: "2h 10m",
     genres: [
       "Crime",
-      "Comedy",
+      "Drama",
       "Thriller"
     ],
     poster: "https://image.tmdb.org/t/p/original/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
