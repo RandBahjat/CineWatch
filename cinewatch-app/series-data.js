@@ -13,7 +13,7 @@ window._SERIES_DATA = [
     rating: "5.9",
     age: 'TV-PG',
     genres: [
-      'Action',
+      'Sci-Fi',
       'Drama',
       'Mystery',
       'Crime'
