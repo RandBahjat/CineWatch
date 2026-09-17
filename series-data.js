@@ -38,7 +38,7 @@ window._SERIES_DATA = [
         episodes: [
           {
             episode: 1,
-            title: 'L Train'
+            title: 'Chapter One: Welcome to Hawkins, New Kid'
           },
           {
             episode: 2,
