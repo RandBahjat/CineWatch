@@ -819,19 +819,18 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
     </div>
   ` : "";
 
-  const isMobileScreen = typeof window !== 'undefined' && window.innerWidth <= 768;
-  const usePoster = forcePoster || isMobileScreen;
-  const imgSrc = usePoster ? (movie.poster || movie.backdrop) : (movie.backdrop || movie.poster);
-  // On mobile screen, always show poster instead of backdrop
-  const sourceTag = `<source media="(max-width: 768px)" srcset="${movie.poster || movie.backdrop}">`;
+  const posterImg = movie.poster || movie.backdrop || "";
+  const backdropImg = movie.backdrop || movie.poster || "";
+  const desktopImg = forcePoster ? posterImg : backdropImg;
 
   return `
     <div class="movie-card" data-id="${movie.id}">
       <div class="card-poster-wrap ${forcePoster ? 'force-poster-wrap' : ''}">
         ${rankHtml}
         <picture>
-          ${sourceTag}
-          <img src="${imgSrc}" alt="${movie.title}" class="card-poster ${forcePoster ? 'force-poster-img' : ''}" loading="lazy">
+          <source media="(max-width: 768px)" srcset="${posterImg}">
+          <source media="(min-width: 769px)" srcset="${desktopImg}">
+          <img src="${posterImg}" alt="${movie.title}" class="card-poster ${forcePoster ? 'force-poster-img' : ''}" loading="lazy" onerror="if(this.src!=='${backdropImg}')this.src='${backdropImg}'">
         </picture>
         <div class="card-gradient"></div>
         <div class="card-overlay">
