@@ -29,7 +29,7 @@ window._SERIES_DATA = [
     cast: [
       'Joe Keery, Maya Hawke, Priah Ferguson, Brett Gelman, Cary Elwes, Randy Havens'
     ],
-    trending: false,
+    trending: tren,
     featured: false,
     is4k: false,
     seasons: [
