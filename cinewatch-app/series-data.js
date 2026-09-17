@@ -1,8 +1,65 @@
-﻿// CineWatch â€” Series Data
+// CineWatch â€” Series Data
 // Edit this file to add, remove, or reorder TV shows and series.
 // Push to GitHub (or save â€” auto-sync will handle it) for changes to go live.
 
 window._SERIES_DATA = [
+
+  {
+    title: "MobLand (The Donovans)",
+    type: "TV Show",
+    year: 2025,
+    rating: "8.4",
+    age: "TV-MA",
+    genres: [
+      "Crime",
+      "Drama"
+    ],
+    poster: "https://image.tmdb.org/t/p/original/abeH7n5pcuQcwYcTxG6DTZvXLP1.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/tQqbbxBAdW2ql8vbOqMOJbtSQ7O.jpg",
+    videoUrl: "247718",
+    trailerUrl: "https://youtu.be/qKGgw7Ob5f4",
+    overview: "Power is up for grabs as the Harrigans and Stevensons, two warring London crime families, clash in a kill-or-be-killed battle that threatens to topple empires and ruin lives. Caught in the crossfire is Harry Da Souza, the street-smart fixer whose loyalties are put to the ultimate test when opposing forces collide.",
+    overviewKurdish: "دەسەڵات لە نێوان دوو بنەماڵەی مافیای تاوانکاریی لەندەن دابەش دەبێت کاتێک لە شەڕێکی خوێناویدا ڕووبەڕووی یەکتر دەبنەوە کە هەڕەشە لە ڕووخانی ئیمپراتۆریەت و ژیانیان دەکات. لە نێوان ئەم ئاگرەدا، هاری دا سۆزا، چارەسەرکەرێکی لێهاتوو کە لە شەقامەکاندا پەروەردە بووە، دەکەوێتە تاقیکردنەوەیەکی سەختەوە کە وەفاداری ڕاستەقینەی خۆی بسەلمێنێت.",
+    director: "Guy Ritchie, Ronan Bennett",
+    cast: [
+      "Tom Hardy, Pierce Brosnan, Paddy Considine, Helen Mirren, Joanne Froggatt, Lara Pulver, Anson Boon, Jasmine Jobson"
+    ],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Stick or Twist" },
+          { episode: 2, title: "Jigsaw Puzzle" },
+          { episode: 3, title: "Plan B" },
+          { episode: 4, title: "Rat Trap" },
+          { episode: 5, title: "Funeral for a Friend" },
+          { episode: 6, title: "Antwerp Blues" },
+          { episode: 7, title: "The Crossroads" },
+          { episode: 8, title: "Helter Skelter" },
+          { episode: 9, title: "Beggars Banquet" },
+          { episode: 10, title: "The Beast in Me" }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "I Wanna Be Your Dog" },
+          { episode: 2, title: "Song 2" },
+          { episode: 3, title: "Episode 3" },
+          { episode: 4, title: "Episode 4" },
+          { episode: 5, title: "Episode 5" },
+          { episode: 6, title: "Episode 6" },
+          { episode: 7, title: "Episode 7" },
+          { episode: 8, title: "Episode 8" },
+          { episode: 9, title: "Episode 9" },
+          { episode: 10, title: "Episode 10" }
+        ]
+      }
+    ]
+  },
 
   {
     title: "Star Trek: Strange New Worlds",
