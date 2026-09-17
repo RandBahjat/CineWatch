@@ -1,8 +1,97 @@
-﻿// CineWatch â€” Series Data
+// CineWatch â€” Series Data
 // Edit this file to add, remove, or reorder TV shows and series.
 // Push to GitHub (or save â€” auto-sync will handle it) for changes to go live.
 
 window._SERIES_DATA = [
+
+  {
+    title: "Star Trek: Strange New Worlds",
+    type: "TV Show",
+    year: 2022,
+    rating: "8.1",
+    age: "TV-14",
+    genres: [
+      "Sci-Fi",
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    poster: "https://image.tmdb.org/t/p/original/97TTJuqiSMfU0DuXx1B4NG5QNP7.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
+    videoUrl: "103516",
+    trailerUrl: "https://youtu.be/XL4bL9w8_b8",
+    overview: "Follow Captain Christopher Pike, Science Officer Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy.",
+    overviewKurdish: "بەدواداچوون بۆ کاپتن کریستۆفەر پایک، ئەفسەری زانستی سپۆک و ژمارە یەک دەکات لە ساڵانی پێش ئەوەی کاپتن کیرک بچێتە سەر کەشتی ئەنتەرپرایز، کاتێک بەدوای گەڕان بەناو جیهانە نوێیەکاندا لە دەوری گەلەئەستێرەکە دەسوڕێنەوە.",
+    director: "Akiva Goldsman, Alex Kurtzman",
+    cast: [
+      "Anson Mount, Ethan Peck, Christina Chong, Melissa Navia, Babs Olusanmokun, Rebecca Romijn, Celia Rose Gooding"
+    ],
+    trending: true,
+    featured: true,
+    is4k: true,
+    seasons: [
+      {
+        season: 1,
+        episodes: [
+          { episode: 1, title: "Strange New Worlds" },
+          { episode: 2, title: "Children of the Comet" },
+          { episode: 3, title: "Ghost of Illyria" },
+          { episode: 4, title: "Memento Mori" },
+          { episode: 5, title: "Spock Amok" },
+          { episode: 6, title: "Lift Us Where Suffering Cannot Reach" },
+          { episode: 7, title: "The Serene Squall" },
+          { episode: 8, title: "The Elysian Kingdom" },
+          { episode: 9, title: "All Those Who Wander" },
+          { episode: 10, title: "A Quality of Mercy" }
+        ]
+      },
+      {
+        season: 2,
+        episodes: [
+          { episode: 1, title: "The Broken Circle" },
+          { episode: 2, title: "Ad Astra Per Aspera" },
+          { episode: 3, title: "Tomorrow and Tomorrow and Tomorrow" },
+          { episode: 4, title: "Among the Lotus Eaters" },
+          { episode: 5, title: "Charades" },
+          { episode: 6, title: "Lost in Translation" },
+          { episode: 7, title: "Those Old Scientists" },
+          { episode: 8, title: "Under the Cloak of War" },
+          { episode: 9, title: "Subspace Rhapsody" },
+          { episode: 10, title: "Hegemony" }
+        ]
+      },
+      {
+        season: 3,
+        episodes: [
+          { episode: 1, title: "Hegemony, Part II" },
+          { episode: 2, title: "Through the Mirror of Time" },
+          { episode: 3, title: "The Terran Paradigm" },
+          { episode: 4, title: "Echoes of the Void" },
+          { episode: 5, title: "Starlight Rendezvous" },
+          { episode: 6, title: "Threshold of Infinity" },
+          { episode: 7, title: "Shadows of Vulcan" },
+          { episode: 8, title: "The Cosmic Symphony" },
+          { episode: 9, title: "Legacy of the Stars" },
+          { episode: 10, title: "New Life and New Civilizations" }
+        ]
+      },
+      {
+        season: 4,
+        episodes: [
+          { episode: 1, title: "Valles Marineris" },
+          { episode: 2, title: "The Griffin Incident" },
+          { episode: 3, title: "Human Best Friend" },
+          { episode: 4, title: "A Case of Chiaroscuro" },
+          { episode: 5, title: "Level-Five Transporter Accident" },
+          { episode: 6, title: "Off-Hour" },
+          { episode: 7, title: "Like Chronitons Through the Hourglass" },
+          { episode: 8, title: "Orders of Magnitude" },
+          { episode: 9, title: "Once La'An a Time" },
+          { episode: 10, title: "Tomorrow's Enterprise" }
+        ]
+      }
+    ]
+  },
 
   {
     title: "Slow Horses",
