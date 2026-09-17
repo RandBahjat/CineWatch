@@ -20,7 +20,7 @@ window._SERIES_DATA = [
     trailerUrl: "https://youtu.be/qKGgw7Ob5f4",
     overview: "Harry Da Souza is a street-smart, formidable fixer caught in the brutal crossfire between two warring London crime syndicates. Working directly for the powerful Harrigan family dynasty, Harry is tasked with resolving volatile underworld disputes and making high-stakes problems disappear, all while fighting to keep his own family alive as an all-out gang war threatens to tear the city apart.",
     overviewKurdish: "هاری داسۆزا، پیاوێکی لێهاتوو و بەئەزموونی چارەسەرکردنی کێشەکانە (Fixer)، کە لە ناوەڕاستی شەڕێکی خوێناوی و دڕندانەی نێوان دوو بنەماڵەی مافیای گەورەی لەندەندا گیریان خواردووە. هاری لەلایەن بنەماڵەی دەسەڵاتداری هاریگانەوە ڕادەسپێردرێت بۆ چارەسەرکردنی کێشە ئاڵۆزەکان و سڕینەوەی بەڵگەکان، بەڵام لەگەڵ گەورەبوونی شەڕی سەر شەقامەکان، ناچار دەبێت شەڕ بۆ پاراستنی گیانی خێزانەکەی بکات.",
-    director: "Nicholas Maggio",
+    director: "Ronan Bennett, Jez Butterworth",
     cast: [
       "Tom Hardy, Pierce Brosnan, Paddy Considine, Helen Mirren, Joanne Froggatt, Lara Pulver, Anson Boon, Jasmine Jobson"
     ],
