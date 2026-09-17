@@ -16,7 +16,7 @@ window._MOVIES_DATA = [
       "Thriller",
       "Mystery"
     ],
-    poster: "https://image.tmdb.org/t/p/original/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/3iVDCDS1VwHIm95PjWEPwsfdhaf.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/aKPXvUemWdDu94GNNDoRBhPgr6v.jpg",
     videoUrl: "1377237",
     trailerUrl: "https://youtu.be/m8JUmBgHejI?si=l6C72Y4ZckfjPqTu",
