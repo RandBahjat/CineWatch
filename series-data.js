@@ -46,7 +46,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 3,
-            title: 'Episode #1.3'
+            title: 'Hammer Time'
           },
           {
             episode: 4,
