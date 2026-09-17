@@ -7,7 +7,7 @@ window._SERIES_DATA = [
 
 
   {
-    title: "Neagley",
+    title: "Stranger Things: Tales from '85",
     type: 'TV Show',
     year: 2026,
     rating: "7.6",
