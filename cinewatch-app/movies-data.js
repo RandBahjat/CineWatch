@@ -4,7 +4,7 @@
 
 window._MOVIES_DATA = [
   {
-    title: "Runner",
+    title: "The Rivals of Amziah King",
     type: "Movie",
     year: 2026,
     rating: 6.6,
