@@ -7,7 +7,7 @@ window._MOVIES_DATA = [
     title: "The Rivals of Amziah King",
     type: "Movie",
     year: 2026,
-    rating: 6.6,
+    rating: 7.1,
     age: "PG-13",
     duration: "1h 37m",
     genres: [
