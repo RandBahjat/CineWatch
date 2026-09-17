@@ -66,7 +66,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 8,
-            title: 'Episode #1.8'
+            title: 'Touched'
           },
           
         ]
