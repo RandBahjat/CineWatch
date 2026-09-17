@@ -11,7 +11,7 @@ if (window.location.hash.includes("type=recovery")) {
 // ==========================================
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
-let FEATURED_TITLES = ["Neagley","Runner","Moana(2026)","Go Team!","Mayday","The Runner","Coyote vs. Acme","Just Play Dead","Spider-Man: Brand New Day","Reacher","The Whisper Man","Grand Theft Auto VI: An Extended Look" ,
+let FEATURED_TITLES = ["Neagley","Runner","Moana(2026)","Go Team!","Mayday","The Runner","Coyote vs. Acme","Just Play Dead","Spider-Man: Brand New Day","Reacher","The Whisper Man",
   "Drawn Together", "Mutiny", "Lanterns",];
 let TOP_10_TRENDING_TODAY = ["Moana(2026)",
   "Go Team!","The Odyssey","Runner","Spider-Man: Brand New Day","Mayday" , "One Night Only","Reacher","Mutiny", "Lanterns"];
