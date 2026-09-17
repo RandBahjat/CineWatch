@@ -16,7 +16,7 @@ window._SERIES_DATA = [
       'Sci-Fi',
       'Horror',
       'Drama',
-      ''
+      'Mysetry'
       
     ],
     poster: 'https://www.themoviedb.org/t/p/w600_and_h900_face/1m6CxPAuGv2oHc1ahERrcVWnk2J.jpg',
