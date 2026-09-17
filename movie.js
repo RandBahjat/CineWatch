@@ -188,19 +188,26 @@ function matchMediaTitle(item, query) {
     .replace(/[^a-z0-9]+/g, ' ')
     .trim();
 
+  // Clean item base title (stripping parenthesized subtitles like "(The Donovans)")
+  const cleanItemBase = rawTitle
+    .replace(/\s*\([^)]*\)/g, ' ')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+
   // Normalization for common typos (e.g. whisper vs whispher)
   const normQuery = cleanQueryTitle.replace(/whispher/g, 'whisper');
   const normItem = cleanItemTitle.replace(/whispher/g, 'whisper');
+  const normItemBase = cleanItemBase.replace(/whispher/g, 'whisper');
 
   // If query specifies a year: BOTH title and year must match!
   if (queryYear) {
-    if (normQuery === normItem && itemYear === queryYear) return true;
+    if ((normQuery === normItem || (normItemBase && normQuery === normItemBase)) && itemYear === queryYear) return true;
     if (itemId && itemId === (cleanQueryTitle.replace(/\s+/g, '-') + '-' + queryYear)) return true;
     return false;
   }
 
   // If query does NOT specify a year, match title cleanly
-  if (normQuery === normItem || rawTitle === q) return true;
+  if (normQuery === normItem || (normItemBase && normQuery === normItemBase) || rawTitle === q) return true;
 
   return false;
 }
