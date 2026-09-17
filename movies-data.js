@@ -29,6 +29,31 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
+    title: "Runner",
+    type: "Movie",
+    year: 2026,
+    rating: 6.6,
+    age: "PG-13",
+    duration: "1h 37m",
+    genres: [
+      "Action",
+      "Comedy",
+      "Thriller"
+    ],
+    poster: "https://image.tmdb.org/t/p/original/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/aKPXvUemWdDu94GNNDoRBhPgr6v.jpg",
+    videoUrl: "1377237",
+    trailerUrl: "https://youtu.be/m8JUmBgHejI?si=l6C72Y4ZckfjPqTu",
+    overview: "Hank Malone, a former Navy SEAL working as a high-speed courier, takes on an urgent mission to deliver a vital organ and save a young girl's life. Joined by a talkative medical courier named Ben, Hank is hunted across the city by a ruthless crime cartel trying to stop the delivery before time runs out.",
+    overviewKurdish: "هەنک مالۆن ، ئەفسەرێکی پێشووی هێزە تایبەتەکان کە وەک شۆفێری گەیاندنی خێرا کاردەکات، ئەرکێکی گرنگی پێدەسپێردرێت بۆ گواستنەوەی ئەندامێکی جەستە تا ژیانی کچێکی بچووک ڕزگار بکات. لەگەڵ بێن  کە گەیەنەرێکی پزیشکیی قسەخۆشە، لەلایەن باندێکی تاوانکاریی بێبەزەیییەوە لە سەرانسەری شاردا ڕاو دەکرێن و دەبێت کێبڕکێ لەگەڵ کات بکەن بۆ ئەوەی بە سەلامەتی بارەکە بگەیەنن.",
+    director: "Scott Waugh",
+    cast: ["Alan Ritchson, Owen Wilson, Rodrigo Santoro, Leila George, Adriana Barraza, Peta Sergeant"],
+    trending: true,
+    featured: true,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "Go Team!",
     type: "Movie",
     year: 2026,
