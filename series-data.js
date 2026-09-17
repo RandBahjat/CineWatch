@@ -25,7 +25,7 @@ window._SERIES_DATA = [
     trailerUrl: "https://youtu.be/kajCUhg36R0?si=ZEi-UpKGufeODWRH",
     overview: "Set during the pivotal and turbulent summer of 1985 in Hawkins, Indiana, this anthology spinoff dives deeper into the untold encounters, strange local phenomena, and hidden government cover-ups lurking just beyond the main squad's sight. As eerie radio frequencies crackle and shadows stir beneath the town, ordinary residents and unlikely heroes face terrifying supernatural threats bleeding through from the Upside Down.",
     overviewKurdish: "لە هاوینی پڕ لە ڕووداوی ساڵی ١٩٨٥ لە شارۆچکەی هۆکینز، ئەم زنجیرە نوێیە ڕووداوە نەبینراوەکان، دیاردە سەیرەکان و نهێنییە شاردراوەکانی حکومەت ئاشکرا دەکات کە لە پەراوێزی چیرۆکە سەرەکییەکەدا ڕوویانداوە. کاتێک شەپۆلە نادیارەکانی ڕادیۆ تێکدەچن و سێبەری ترسناک لە ژێر زەوییەوە سەرهەڵدەدەن، خەڵکی شارۆچکەکە ڕووبەڕووی بوونەوەرە تۆقێنەرەکانی جیهانی ژێرەوە دەبنەوە.",
-    director: 'Nick Santora, Nicholas Wootton',
+    director: 'The Duffer Brothers',
     cast: [
       'Maria Sten, Greyston Holt, Adeline Rudolph, Matthew Del Negro, Damon Herriman, Jasper Jones'
     ],
