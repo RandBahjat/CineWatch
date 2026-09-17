@@ -10002,7 +10002,8 @@ min-width: 0;
     min-height: 0 !important;
     max-height: none !important;
     aspect-ratio: 2 / 3 !important;
-    border-radius: var(--radius-sm, 10px) !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
   }
 
   .carousel-track .card-poster-wrap picture,
@@ -10022,6 +10023,7 @@ min-width: 0;
     object-fit: cover !important;
     object-position: center center !important;
     display: block !important;
+    border-radius: 10px !important;
   }
 
   .carousel-track .card-details,
