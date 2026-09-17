@@ -44,10 +44,12 @@ builder.build({
     
     const rootDir = path.join(__dirname, '..');
     const exePath = result.find(f => f.endsWith('.exe'));
+    const pkg = require('./package.json');
+    const version = pkg.version || '1.2.7';
     
     if (exePath && fs.existsSync(exePath)) {
         const destSetup = path.join(rootDir, 'CineWatch-Setup.exe');
-        const destVersioned = path.join(rootDir, 'CineWatch-v1.2.6-Setup.exe');
+        const destVersioned = path.join(rootDir, `CineWatch-v${version}-Setup.exe`);
         
         fs.copyFileSync(exePath, destSetup);
         fs.copyFileSync(exePath, destVersioned);
