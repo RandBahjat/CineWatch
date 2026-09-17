@@ -62,8 +62,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 7,
-            title: "Chapter Seven: Enter the Storm
-"
+            title: "Chapter Seven: Enter the Storm"
           },
           {
             episode: 8,
