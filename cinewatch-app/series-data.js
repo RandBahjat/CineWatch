@@ -50,7 +50,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 4,
-            title: 'Episode #1.4'
+            title: 'Breaking & Entering'
           },
           {
             episode: 5,
