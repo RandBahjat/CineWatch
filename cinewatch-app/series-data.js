@@ -19,7 +19,7 @@ window._SERIES_DATA = [
     videoUrl: "247718",
     trailerUrl: "https://youtu.be/qKGgw7Ob5f4",
     overview: "Deep in the heart of a struggling Dixie town, a desperate family man and his reckless brother-in-law rob a local pill mill, unaware that the business is backed by the ruthless New Orleans mafia. When an unhinged mob enforcer arrives in town to exact brutal retribution, a weary, cancer-stricken local sheriff must race against time to maintain peace and prevent a complete bloodbath.",
-    overviewKurdish: "دەسەڵات لە نێوان دوو بنەماڵەی مافیای تاوانکاریی لەندەن دابەش دەبێت کاتێک لە شەڕێکی خوێناویدا ڕووبەڕووی یەکتر دەبنەوە کە هەڕەشە لە ڕووخانی ئیمپراتۆریەت و ژیانیان دەکات. لە نێوان ئەم ئاگرەدا، هاری دا سۆزا، چارەسەرکەرێکی لێهاتوو کە لە شەقامەکاندا پەروەردە بووە، دەکەوێتە تاقیکردنەوەیەکی سەختەوە کە وەفاداری ڕاستەقینەی خۆی بسەلمێنێت.",
+    overviewKurdish: "لە شارۆچکەیەکی بچووک و هەژارنشین، پیاوێکی خێزاندار لەگەڵ برای ژنەکەی بەهۆی بێپارەییەوە بڕیار دەدەن دەست بەسەر کلینیکێکی فرۆشتنی دەرمانی بێهۆشکەردا بگرن، بەڵام بێ ئاگان لەوەی شوێنەکە سەر بە مافیای بەهێزی نیوئۆرلینزە. کاتێک پیاوکوژێکی دڕندەی مافیا دێتە شارەکە بۆ تۆڵەسەندنەوە، شێریفی نەخۆش و ماندووی شارۆچکەکە هەوڵ دەدات پێش ئەوەی خوێنێکی زۆر بڕژێت دۆخەکە کۆنتڕۆڵ بکات.",
     director: "Guy Ritchie, Ronan Bennett",
     cast: [
       "Tom Hardy, Pierce Brosnan, Paddy Considine, Helen Mirren, Joanne Froggatt, Lara Pulver, Anson Boon, Jasmine Jobson"
