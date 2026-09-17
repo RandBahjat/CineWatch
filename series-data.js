@@ -58,7 +58,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 6,
-            title: 'Rocked'
+            title: 'Chapter Six: A Storm Is Coming'
           },
           {
             episode: 7,
