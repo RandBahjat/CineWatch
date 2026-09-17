@@ -59,7 +59,7 @@ window._MOVIES_DATA = [
     year: 2026,
     rating: 4.4,
     age: "R",
-    duration: "h 33m",
+    duration: "2h 33m",
     genres: [
       "Comedy",
       "Family",
