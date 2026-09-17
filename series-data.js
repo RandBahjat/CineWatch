@@ -24,7 +24,7 @@ window._SERIES_DATA = [
     overviewKurdish: "کاپتن کریستۆفەر پایک سەرکردایەتی کەشتی ئاسمانی ئەنتەرپرایز دەکات شانبەشانی سپۆک و ژمارە یەک لە ساڵانی پێش دەستبەکاربوونی کاپتن کیرک. دەستەی کەشتییەکە گەشت دەکەن بۆ ناوچە نەناسراو و دوورەدەستەکانی گەردوون، و ڕووبەڕووی بوونەوەرە بێگانەکان، دیاردە سەیرە گەردوونییەکان و کێشە ئەخلاقییە ئاڵۆزەکان دەبنەوە لە چوارچێوەی گەشتێکی پڕ لە سەرکێشی بۆ دۆزینەوەی جیهانی نوێ.",
     director: "Akiva Goldsman, Alex Kurtzman, Jenny Lumet",
     cast: [
-      "Anson Mount, Ethan Peck, Christina Chong, Melissa Navia, Babs Olusanmokun, Rebecca Romijn, Celia Rose Gooding"
+      "Anson Mount, Ethan Peck, Christina Chong, Rebecca Romijn, Jess Bush, Celia Rose Gooding, Babs Olusanmokun"
     ],
     trending: true,
     featured: true,
