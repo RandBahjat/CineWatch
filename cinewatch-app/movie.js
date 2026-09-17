@@ -13,7 +13,7 @@ if (window.location.hash.includes("type=recovery")) {
 // ==========================================
 let FEATURED_TITLES = ["Neagley","Reacher","Resident Evil","The End of Oak Street","Stranger Things: Tales from '85","Moana(2026)","Go Team!","Mayday","The Runner","Coyote vs. Acme","Just Play Dead","Spider-Man: Brand New Day","The Whisper Man",
   "Drawn Together", "Mutiny", "Lanterns",];
-let TOP_10_TRENDING_TODAY = ["Moana(2026)",
+let TOP_10_TRENDING_TODAY = ["Neagley",
   "Go Team!","The Odyssey","Runner","Spider-Man: Brand New Day","Mayday" , "One Night Only","Reacher","Mutiny", "Lanterns"];
 let TRENDING_THIS_WEEK_MOVIES = ["Mayday","The Whisper Man","Batman: Knightfall Part 1: Knightfall", "Mutiny", "Spider-Man: Brand New Day", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Minions & Monsters", "The Last House", "Disclosure Day", "The Invite", "The End of Oak Street", "Backrooms", "Camp Rock 3", "Evil Dead Burn", "Just Play Dead"];
 let TRENDING_THIS_WEEK_SERIES = ["Lanterns", "Reacher", "The Gentlemen", "Silo", "One Piece", "Ted Lasso","Last Seen", "X-Men '97", "Lioness", "Outer Banks"];
