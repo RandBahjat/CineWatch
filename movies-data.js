@@ -73,7 +73,7 @@ window._MOVIES_DATA = [
     overview: "In a crime-infested metropolis rotting from the inside out, an uncompromising veteran detective forms an uneasy alliance with a ruthless underworld figure to investigate a string of gruesome, ritualistic murders. As the body count rises and institutional corruption tightens its grip, the two men uncover a vast conspiracy engineered by the city's highest elite, pushing both into a brutal war of survival and vengeance.",
     overviewKurdish: "لە شارێکی گەورە و پڕ لە گەندەڵی و تاوان، لێکۆڵەرێکی بەئەزموون و سەرسەخت ناچار دەبێت هاوپەیمانییەکی مەترسیدار لەگەڵ یەکێک لە سەرۆکە دڵڕەقەکانی مافیا پێکبهێنێت، بە مەبەستی لێکۆڵینەوە لە زنجیرەیەک کوشتنی نامۆ و خوێناوی. لەگەڵ زیادبوونی قوربانییەکان و ئاشکرابوونی دەستی بەرپرسانی باڵای شارەکە لە تاوانەکاندا، هەردووکیان دەکەونە ناو شەڕێکی توندوتیژی مان و نەمانەوە بۆ ڕزگاربوون و تۆڵەسەندنەوە.",
     director: "Justin Kurzel",
-    cast: ["Marsai Martin, Young Mazino, Terry Crews, Stephanie Beatriz, Kenan Thompson"],
+    cast: ["Joel Edgerton, Barry Keoghan, Rebecca Ferguson, Mark Strong, Ben Mendelsohn, Andrea Riseborough"],
     trending: true,
     featured: true,
     is4k: false,
