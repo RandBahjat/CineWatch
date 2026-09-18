@@ -4,13 +4,13 @@
  */
 
 (function () {
-  const STORAGE_KEY = 'cw_cookie_consent';
+  const STORAGE_KEY = 'cw_cookie_consent_v2';
   const DEFAULT_CONSENT = {
     necessary: true,
     preferences: true,
     analytics: true,
     timestamp: null,
-    version: '1.0'
+    version: '2.0'
   };
 
   function getStoredConsent() {
