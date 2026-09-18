@@ -327,6 +327,9 @@
         hideBanner(banner);
         notifyUser('All cookies and preferences accepted');
       };
+    }
+  }
+
   function showBannerDirectly() {
     const banner = document.getElementById('cwCookieBanner');
     if (!banner) return;
