@@ -1,23 +1,87 @@
 /**
- * CineWatch — First-Time Welcome Disclaimer & DMCA Compliance Modal
- * Displays upon opening the site: Non-hosting notice, DMCA compliance, and user agreement.
+ * CineWatch — Welcome & Cookie Privacy Selection Manager
+ * Displays a centered modal for cookie & privacy choices upon first visit.
+ * Fully functional: persists state, enforces Umami analytics, and allows re-opening anytime.
  */
 
 (function () {
-  const STORAGE_KEY = 'cw_welcome_disclaimer_v1';
+  const STORAGE_KEY = 'cw_cookie_consent_v2';
+  const DEFAULT_CONSENT = {
+    necessary: true,
+    preferences: true,
+    analytics: true,
+    timestamp: null,
+    version: '2.0'
+  };
 
-  function isAccepted() {
+  function getStoredConsent() {
     try {
-      return localStorage.getItem(STORAGE_KEY) === 'true';
+      const val = localStorage.getItem(STORAGE_KEY);
+      if (!val) return null;
+      return JSON.parse(val);
     } catch (e) {
-      return false;
+      return null;
     }
   }
 
-  function setAccepted() {
+  function notifyUser(msg) {
+    if (typeof showToast === 'function') {
+      try {
+        showToast(msg);
+        return;
+      } catch (e) {}
+    }
+    let toast = document.getElementById('cwCookieNotification');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'cwCookieNotification';
+      toast.className = 'cw-cookie-notification';
+      toast.setAttribute('role', 'status');
+      toast.setAttribute('aria-live', 'polite');
+      document.body.appendChild(toast);
+    }
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toast._timeout);
+    toast._timeout = setTimeout(() => {
+      toast.classList.remove('show');
+    }, 3200);
+  }
+
+  function applyConsent(data) {
+    if (!data) return;
+
+    // 1. Umami Analytics Control
     try {
-      localStorage.setItem(STORAGE_KEY, 'true');
+      if (data.analytics === false) {
+        localStorage.setItem('umami.disabled', '1');
+      } else {
+        localStorage.removeItem('umami.disabled');
+      }
     } catch (e) {}
+
+    // 2. Preferences Control
+    if (data.preferences === false) {
+      try {
+        localStorage.removeItem('recentSearches');
+      } catch (e) {}
+    }
+  }
+
+  function saveConsent(consent) {
+    try {
+      const data = {
+        ...DEFAULT_CONSENT,
+        ...consent,
+        timestamp: Date.now()
+      };
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      applyConsent(data);
+      window.dispatchEvent(new CustomEvent('cw:cookie-consent-updated', { detail: data }));
+      return data;
+    } catch (e) {
+      console.warn('Failed to save cookie preferences:', e);
+    }
   }
 
   function createModal() {
@@ -38,64 +102,88 @@
             <ion-icon name="shield-checkmark"></ion-icon>
           </div>
           <span class="cw-disclaimer-eyebrow">Welcome to CineWatch</span>
-          <h2 class="cw-disclaimer-title" id="cwDiscTitle">Streaming Notice &amp; Disclaimer</h2>
+          <h2 class="cw-disclaimer-title" id="cwDiscTitle">Cookie &amp; Privacy Choices</h2>
           <p class="cw-disclaimer-subtitle">
-            Please read and agree to our streaming terms and copyright disclaimers before proceeding.
+            We use storage and lightweight cookies to remember your watch progress, save audio preferences, and ensure stream stability.
           </p>
         </div>
 
-        <!-- 3 Feature Points -->
+        <!-- 3 Selection Choice Items -->
         <div class="cw-disclaimer-points">
-          <!-- 1. Non-Hosting -->
+          <!-- 1. Strictly Necessary & Playback (Locked on) -->
           <div class="cw-point-item">
-            <div class="cw-point-icon non-hosting">
-              <ion-icon name="cloud-offline-outline"></ion-icon>
+            <div class="cw-point-header">
+              <div class="cw-point-title-wrap">
+                <div class="cw-point-icon necessary">
+                  <ion-icon name="lock-closed-outline"></ion-icon>
+                </div>
+                <h4>Strictly Necessary &amp; Playback</h4>
+              </div>
+              <span class="cw-badge-always-active">Always Active</span>
             </div>
-            <div class="cw-point-content">
-              <h4>Zero Media Hosting</h4>
-              <p>CineWatch does not host, upload, or store any video files, media streams, or copyrighted content on its servers. All streams are embedded from non-affiliated, publicly available third-party services.</p>
-            </div>
+            <p class="cw-point-desc">
+              Required for core player streaming, video timestamps (Continue Watching), player audio levels, and site security.
+            </p>
           </div>
 
-          <!-- 2. DMCA & Copyright -->
+          <!-- 2. Preferences & Customization -->
           <div class="cw-point-item">
-            <div class="cw-point-icon dmca">
-              <ion-icon name="shield-outline"></ion-icon>
+            <div class="cw-point-header">
+              <div class="cw-point-title-wrap">
+                <div class="cw-point-icon preferences">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
+                <h4>Preferences &amp; Customization</h4>
+              </div>
+              <label class="cw-toggle-switch" aria-label="Toggle Preferences Storage">
+                <input type="checkbox" id="cwDiscTogglePreferences" checked />
+                <span class="cw-toggle-slider"></span>
+              </label>
             </div>
-            <div class="cw-point-content">
-              <h4>DMCA &amp; Rapid Content Removal</h4>
-              <p>We strictly comply with DMCA guidelines and copyright protection laws. Copyright holders can submit prompt takedown notices via our Contact page for immediate response.</p>
-            </div>
+            <p class="cw-point-desc">
+              Remembers your Sub/Dub anime audio choices, watchlist filters, and interface language preferences.
+            </p>
           </div>
 
-          <!-- 3. Safe & Free -->
+          <!-- 3. Anonymous Performance Analytics -->
           <div class="cw-point-item">
-            <div class="cw-point-icon safety">
-              <ion-icon name="lock-closed-outline"></ion-icon>
+            <div class="cw-point-header">
+              <div class="cw-point-title-wrap">
+                <div class="cw-point-icon analytics">
+                  <ion-icon name="analytics-outline"></ion-icon>
+                </div>
+                <h4>Anonymous Performance Analytics</h4>
+              </div>
+              <label class="cw-toggle-switch" aria-label="Toggle Anonymous Performance Analytics">
+                <input type="checkbox" id="cwDiscToggleAnalytics" checked />
+                <span class="cw-toggle-slider"></span>
+              </label>
             </div>
-            <div class="cw-point-content">
-              <h4>Safe &amp; Secure Experience</h4>
-              <p>Enjoy a clean, fast streaming hub without harmful downloads. You have complete control over your preferences and private data at all times.</p>
-            </div>
+            <p class="cw-point-desc">
+              Cookieless, privacy-preserving visitor analytics via Umami to detect broken streams and maintain server responsiveness.
+            </p>
           </div>
         </div>
 
         <!-- Agreement Statement -->
         <div class="cw-disclaimer-notice-box">
-          By clicking <strong>"I Agree &amp; Enter"</strong>, you confirm you are of legal age and agree to our
-          <a href="terms.html" target="_blank">Terms of Service</a> and
-          <a href="privacy.html" target="_blank">Privacy Policy</a>.
+          You can update these choices anytime in the footer. Read our
+          <a href="privacy.html" target="_blank">Privacy Policy</a> and
+          <a href="terms.html" target="_blank">Terms of Service</a>.
         </div>
 
-        <!-- Action Buttons -->
+        <!-- 3 Action Buttons -->
         <div class="cw-disclaimer-actions">
-          <button type="button" class="cw-disclaimer-btn-accept" id="cwDiscAcceptBtn">
-            <ion-icon name="checkmark-circle-outline" style="font-size: 1.25rem;"></ion-icon>
-            I Agree &amp; Enter
+          <button type="button" class="cw-disclaimer-btn-accept" id="cwDiscAcceptAllBtn">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            Accept All
           </button>
-          <button type="button" class="cw-disclaimer-btn-decline" id="cwDiscDeclineBtn">
-            <ion-icon name="exit-outline"></ion-icon>
-            Decline &amp; Exit
+          <button type="button" class="cw-disclaimer-btn-save" id="cwDiscSaveBtn">
+            <ion-icon name="options-outline"></ion-icon>
+            Save Choices
+          </button>
+          <button type="button" class="cw-disclaimer-btn-decline" id="cwDiscEssentialBtn">
+            Essential Only
           </button>
         </div>
       </div>
@@ -106,23 +194,52 @@
   }
 
   function setupEvents(overlay) {
-    const acceptBtn = document.getElementById('cwDiscAcceptBtn');
-    const declineBtn = document.getElementById('cwDiscDeclineBtn');
+    const acceptAllBtn = document.getElementById('cwDiscAcceptAllBtn');
+    const saveBtn = document.getElementById('cwDiscSaveBtn');
+    const essentialBtn = document.getElementById('cwDiscEssentialBtn');
 
-    if (acceptBtn) {
-      acceptBtn.addEventListener('click', function () {
-        setAccepted();
+    // 1. Accept All
+    if (acceptAllBtn) {
+      acceptAllBtn.addEventListener('click', function () {
+        saveConsent({ necessary: true, preferences: true, analytics: true });
         dismissModal(overlay);
-        window.dispatchEvent(new CustomEvent('cw:disclaimer-accepted'));
+        notifyUser('All cookies and preferences accepted');
       });
     }
 
-    if (declineBtn) {
-      declineBtn.addEventListener('click', function () {
-        // Standard streaming action: redirect away if user declines legal terms
-        window.location.href = 'https://www.google.com';
+    // 2. Save Choices
+    if (saveBtn) {
+      saveBtn.addEventListener('click', function () {
+        const prefInput = document.getElementById('cwDiscTogglePreferences');
+        const anaInput = document.getElementById('cwDiscToggleAnalytics');
+        const prefChecked = prefInput ? prefInput.checked : true;
+        const anaChecked = anaInput ? anaInput.checked : true;
+
+        saveConsent({
+          necessary: true,
+          preferences: prefChecked,
+          analytics: anaChecked
+        });
+        dismissModal(overlay);
+        notifyUser('Cookie preferences saved successfully');
       });
     }
+
+    // 3. Essential Only
+    if (essentialBtn) {
+      essentialBtn.addEventListener('click', function () {
+        saveConsent({ necessary: true, preferences: false, analytics: false });
+        dismissModal(overlay);
+        notifyUser('Essential cookies only enabled');
+      });
+    }
+
+    // Keyboard ESC to close modal (if user already made a prior decision)
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && overlay.classList.contains('show')) {
+        dismissModal(overlay);
+      }
+    });
   }
 
   function showModal() {
@@ -130,12 +247,18 @@
     const overlay = document.getElementById('cwDisclaimerModal');
     if (!overlay) return;
 
+    // Pre-populate toggles based on stored consent
+    const current = getStoredConsent() || DEFAULT_CONSENT;
+    const prefInput = document.getElementById('cwDiscTogglePreferences');
+    const anaInput = document.getElementById('cwDiscToggleAnalytics');
+
+    if (prefInput) prefInput.checked = current.preferences !== false;
+    if (anaInput) anaInput.checked = current.analytics !== false;
+
     overlay.style.display = 'flex';
     overlay.classList.remove('closing');
-    // Lock body scrolling while disclaimer is active
     document.body.style.overflow = 'hidden';
 
-    // Force repaint then add visible class
     requestAnimationFrame(() => {
       overlay.classList.add('show');
     });
@@ -153,34 +276,59 @@
   }
 
   function init() {
-    // Attach listener to any trigger links (#openDisclaimerModalBtn or [data-open-disclaimer-modal])
-    document.querySelectorAll('#openDisclaimerModalBtn, [data-open-disclaimer-modal]').forEach(btn => {
+    // Check stored consent
+    const stored = getStoredConsent();
+    if (stored) {
+      applyConsent(stored);
+    }
+
+    // Re-opening listeners for footer / settings buttons
+    document.querySelectorAll('#openCookieSettingsBtn, #openDisclaimerModalBtn, [data-open-cookie-settings], [data-open-disclaimer-modal]').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
         showModal();
       });
     });
 
-    // Check if user has already accepted
-    if (!isAccepted()) {
+    // If user has not chosen cookies yet, show immediately
+    if (!stored) {
       showModal();
     }
   }
 
+  // Pre-flight enforcement
+  const initial = getStoredConsent();
+  if (initial) {
+    applyConsent(initial);
+  }
+
   // Public controls
-  window.CineWatchDisclaimer = {
+  window.CineWatchCookies = {
     show: showModal,
-    accept: () => {
-      setAccepted();
+    openPreferences: showModal,
+    getPreferences: getStoredConsent,
+    acceptAll: () => {
+      saveConsent({ necessary: true, preferences: true, analytics: true });
       dismissModal(document.getElementById('cwDisclaimerModal'));
+      notifyUser('All cookies accepted');
+    },
+    acceptEssential: () => {
+      saveConsent({ necessary: true, preferences: false, analytics: false });
+      dismissModal(document.getElementById('cwDisclaimerModal'));
+      notifyUser('Essential cookies only enabled');
     },
     reset: () => {
+      try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
+      showModal();
+    },
+    resetPreferences: () => {
       try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
       showModal();
     }
   };
 
-  // Launch as soon as body is available
+  window.CineWatchDisclaimer = window.CineWatchCookies;
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
