@@ -23,6 +23,50 @@
     }
   }
 
+  function notifyUser(msg) {
+    if (typeof showToast === 'function') {
+      try {
+        showToast(msg);
+        return;
+      } catch (e) {}
+    }
+    let toast = document.getElementById('cwCookieNotification');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'cwCookieNotification';
+      toast.className = 'cw-cookie-notification';
+      toast.setAttribute('role', 'status');
+      toast.setAttribute('aria-live', 'polite');
+      document.body.appendChild(toast);
+    }
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toast._timeout);
+    toast._timeout = setTimeout(() => {
+      toast.classList.remove('show');
+    }, 3200);
+  }
+
+  function applyConsent(data) {
+    if (!data) return;
+
+    // 1. Umami Analytics Control
+    try {
+      if (data.analytics === false) {
+        localStorage.setItem('umami.disabled', '1');
+      } else {
+        localStorage.removeItem('umami.disabled');
+      }
+    } catch (e) {}
+
+    // 2. Preferences Control
+    if (data.preferences === false) {
+      try {
+        localStorage.removeItem('recentSearches');
+      } catch (e) {}
+    }
+  }
+
   function saveConsent(consent) {
     try {
       const data = {
@@ -31,6 +75,7 @@
         timestamp: Date.now()
       };
       localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      applyConsent(data);
       window.dispatchEvent(new CustomEvent('cw:cookie-consent-updated', { detail: data }));
       return data;
     } catch (e) {
@@ -203,9 +248,7 @@
       acceptAllBtn.onclick = () => {
         saveConsent({ necessary: true, preferences: true, analytics: true });
         hideBanner(banner);
-        if (typeof showToast === 'function') {
-          showToast('Cookie & privacy preferences saved');
-        }
+        notifyUser('All cookies and preferences accepted');
       };
     }
 
@@ -215,9 +258,7 @@
       essentialBtn.onclick = () => {
         saveConsent({ necessary: true, preferences: false, analytics: false });
         hideBanner(banner);
-        if (typeof showToast === 'function') {
-          showToast('Essential cookies accepted');
-        }
+        notifyUser('Essential cookies only enabled');
       };
     }
 
@@ -253,6 +294,13 @@
       }
     };
 
+    // Keyboard ESC to close modal
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('show')) {
+        closeModal(modal);
+      }
+    });
+
     // 6. Modal Save Preferences
     const modalSaveBtn = document.getElementById('cwModalSaveBtn');
     if (modalSaveBtn) {
@@ -266,9 +314,7 @@
         });
         closeModal(modal);
         hideBanner(banner);
-        if (typeof showToast === 'function') {
-          showToast('Preferences updated successfully');
-        }
+        notifyUser('Preferences updated successfully');
       };
     }
 
@@ -279,9 +325,7 @@
         saveConsent({ necessary: true, preferences: true, analytics: true });
         closeModal(modal);
         hideBanner(banner);
-        if (typeof showToast === 'function') {
-          showToast('All cookies accepted');
-        }
+        notifyUser('All cookies and preferences accepted');
       };
     }
   }
@@ -290,6 +334,10 @@
     createElements();
 
     const stored = getStoredConsent();
+    if (stored) {
+      applyConsent(stored);
+    }
+
     const banner = document.getElementById('cwCookieBanner');
     const modal = document.getElementById('cwCookieModal');
 
@@ -309,6 +357,12 @@
     }
   }
 
+  // Immediate check before load
+  const initial = getStoredConsent();
+  if (initial) {
+    applyConsent(initial);
+  }
+
   // Public API
   window.CineWatchCookies = {
     getPreferences: getStoredConsent,
@@ -320,20 +374,24 @@
       saveConsent({ necessary: true, preferences: true, analytics: true });
       const banner = document.getElementById('cwCookieBanner');
       if (banner) hideBanner(banner);
+      notifyUser('All cookies accepted');
     },
     acceptEssential: () => {
       saveConsent({ necessary: true, preferences: false, analytics: false });
       const banner = document.getElementById('cwCookieBanner');
       if (banner) hideBanner(banner);
+      notifyUser('Essential cookies only enabled');
     },
     resetPreferences: () => {
       localStorage.removeItem(STORAGE_KEY);
+      applyConsent(DEFAULT_CONSENT);
       const banner = document.getElementById('cwCookieBanner');
       if (banner) {
         banner.style.display = '';
         banner.classList.remove('closing');
         banner.classList.add('show');
       }
+      notifyUser('Cookie preferences reset');
     }
   };
 
