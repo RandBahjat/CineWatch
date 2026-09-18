@@ -2721,7 +2721,9 @@ function openDetailsModal(movieId) {
           p.onclick = (e) => {
             e.stopPropagation();
             const chosen = p.dataset.audio;
-            localStorage.setItem("cw_anime_audio_pref", chosen);
+            if (window.__cwPreferencesAllowed !== false) {
+              localStorage.setItem("cw_anime_audio_pref", chosen);
+            }
             seasonAudioToggle.querySelectorAll(".anime-audio-pill").forEach(x => x.classList.toggle("active", x.dataset.audio === chosen));
             if (typeof showToast === "function") {
               showToast(chosen === 'sub' ? 'Mega Server (SUB)' : 'Mega Server (DUB)');
@@ -4234,6 +4236,7 @@ function bindEventListeners() {
   }
 
   function saveRecentSearch(query) {
+    if (window.__cwPreferencesAllowed === false) return;
     let recents = getRecentSearches();
     recents = recents.filter(r => r.toLowerCase() !== query.toLowerCase());
     recents.unshift(query);
@@ -5657,7 +5660,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           onSelect(item) {
             const isDub = item.html === 'English Dub';
             const route = isDub ? 'dub' : 'sub';
-            localStorage.setItem("cw_anime_audio_pref", route);
+            if (window.__cwPreferencesAllowed !== false) {
+              localStorage.setItem("cw_anime_audio_pref", route);
+            }
             const endpoints = [
               `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
               `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
