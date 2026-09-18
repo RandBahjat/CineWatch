@@ -51,21 +51,29 @@
   function applyConsent(data) {
     if (!data) return;
 
-    // 1. Umami Analytics Control
+    // 1. Performance & Analytics Enforcement
     try {
       if (data.analytics === false) {
         localStorage.setItem('umami.disabled', '1');
+        if (window.umami) {
+          window.umami.track = function () {};
+          window.umami.identify = function () {};
+        }
       } else {
         localStorage.removeItem('umami.disabled');
       }
     } catch (e) {}
 
-    // 2. Preferences Control
-    if (data.preferences === false) {
-      try {
+    // 2. Personal Preferences Enforcement
+    try {
+      if (data.preferences === false) {
+        window.__cwPreferencesAllowed = false;
         localStorage.removeItem('recentSearches');
-      } catch (e) {}
-    }
+        localStorage.removeItem('cw_anime_audio_pref');
+      } else {
+        window.__cwPreferencesAllowed = true;
+      }
+    } catch (e) {}
   }
 
   function saveConsent(consent) {
