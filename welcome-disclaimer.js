@@ -153,6 +153,14 @@
   }
 
   function init() {
+    // Attach listener to any trigger links (#openDisclaimerModalBtn or [data-open-disclaimer-modal])
+    document.querySelectorAll('#openDisclaimerModalBtn, [data-open-disclaimer-modal]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        showModal();
+      });
+    });
+
     // Check if user has already accepted
     if (!isAccepted()) {
       showModal();
