@@ -13,12 +13,12 @@
 
 /* ── Floating Banner Container ─────────────────────────────────────────── */
 .cw-cookie-banner {
-  position: fixed;
+  position: fixed !important;
   bottom: 24px;
   right: 24px;
   max-width: 440px;
   width: calc(100% - 48px);
-  z-index: 1250;
+  z-index: 2147483646 !important;
   background: var(--cw-cookie-bg);
   backdrop-filter: blur(24px) saturate(190%);
   -webkit-backdrop-filter: blur(24px) saturate(190%);
@@ -32,9 +32,9 @@
   opacity: 0;
   visibility: hidden;
   transform: translateY(28px) scale(0.97);
-  transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
-              visibility 0.45s;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.35s;
   pointer-events: none;
 }
 
@@ -50,10 +50,11 @@
 }
 
 .cw-cookie-banner.show {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0) scale(1);
-  pointer-events: auto;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) scale(1) !important;
+  pointer-events: auto !important;
+  display: block !important;
 }
 
 .cw-cookie-banner.closing {
