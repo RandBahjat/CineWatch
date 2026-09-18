@@ -1142,7 +1142,7 @@
             var data = await res.json();
             if (res.status === 200 && data.success) {
               status.className = 'form-status success';
-              status.innerHTML = '<ion-icon name="checkmark-circle" style="font-size: 1.5rem; flex-shrink: 0;"></ion-icon> <div><strong>Inquiry Sent Successfully!</strong><br>Thank you, ' + name + '. Your privacy request has been delivered directly to our team. We will review it and reply to <u>' + email + '</u> promptly.</div>';
+              status.innerHTML = '<ion-icon name="checkmark-circle" style="font-size: 1.5rem; flex-shrink: 0;"></ion-icon> <div><strong>Inquiry Sent Successfully!</strong><br>Thank you, ' + name + '. Your privacy request has been delivered directly to our team. We will review it and reply to <u>' + email + '</u> as soon as possible.</div>';
               status.style.display = 'flex';
               form.reset();
               status.scrollIntoView({ behavior: 'smooth', block: 'center' });
