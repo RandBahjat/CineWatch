@@ -944,14 +944,20 @@
         <div class="section-icon"><ion-icon name="browsers-outline"></ion-icon></div>
         <h2>6. Cookies &amp; Local Storage</h2>
       </div>
-      <p>CineWatch uses browser storage to provide a better experience:</p>
+      <p>CineWatch uses browser storage and lightweight cookies to provide a smooth, personalized streaming experience:</p>
       <ul>
-        <li><strong style="color:#fff">Authentication session</strong> — Keeps you logged in between visits (stored via Supabase)</li>
-        <li><strong style="color:#fff">Preferences</strong> — Language settings and UI preferences stored locally in your browser</li>
-        <li><strong style="color:#fff">Security verification</strong> — Cloudflare Turnstile uses cookies to verify you are human</li>
-        <li><strong style="color:#fff">Analytics</strong> — Google Analytics uses cookies to distinguish unique visitors (anonymous)</li>
+        <li><strong style="color:#fff">Strictly Necessary &amp; Playback</strong> — Video timestamps, continue-watching progress, and player volume/audio routing.</li>
+        <li><strong style="color:#fff">Authentication &amp; Security</strong> — Keeps you logged in across sessions (via Supabase) and protects against abuse.</li>
+        <li><strong style="color:#fff">Customization Preferences</strong> — Stores your Sub/Dub anime choices, search history, and interface language.</li>
+        <li><strong style="color:#fff">Anonymous Performance Analytics</strong> — Cookieless, privacy-preserving performance metrics (via Umami) to maintain stream stability.</li>
       </ul>
-      <p>You can clear cookies and local storage at any time through your browser settings. Doing so will log you out and reset any saved preferences.</p>
+      <p>You can adjust or withdraw your consent at any time directly through our cookie manager or clear local storage through your browser settings:</p>
+      <div style="margin-top: 16px;">
+        <button type="button" class="form-submit-btn" style="display: inline-flex; width: auto; padding: 10px 20px; font-size: 0.9rem;" data-open-cookie-settings>
+          <ion-icon name="options-outline" style="font-size: 1.1rem;"></ion-icon>
+          Customize Cookie Preferences
+        </button>
+      </div>
     </div>
 
     <div class="section-divider"></div>
