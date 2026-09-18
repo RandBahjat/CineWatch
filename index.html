@@ -13,9 +13,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260916_1762">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_1762">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_20">
+    <link rel="stylesheet" href="movie.css?v=20260916_1763">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_1763">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_21">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -118,10 +118,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_7186" defer></script>
-    <script src="series-data.js?v=20260818_7186" defer></script>
-    <script src="anime-data.js?v=20260818_7186" defer></script>
-    <script src="movie.js?v=20260913_860" defer></script>
+    <script src="movies-data.js?v=20260818_7187" defer></script>
+    <script src="series-data.js?v=20260818_7187" defer></script>
+    <script src="anime-data.js?v=20260818_7187" defer></script>
+    <script src="movie.js?v=20260913_861" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -130,8 +130,27 @@
 </head>
 
 <body class="view-home">
-    <!-- Top Section Loading Progress Bar -->
-    <div id="cwTopLoadingBar" class="cw-top-loading-bar"></div>
+    <!-- Top Section & Site Loading Progress Bar -->
+    <div id="cwTopLoadingBar" class="cw-top-loading-bar active" style="width: 28%; opacity: 1;"></div>
+    <script>
+      (function() {
+        var bar = document.getElementById('cwTopLoadingBar');
+        if (bar) {
+          setTimeout(function() {
+            if (bar && bar.classList.contains('active')) {
+              bar.style.transition = 'width 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
+              bar.style.width = '68%';
+            }
+          }, 220);
+          setTimeout(function() {
+            if (bar && bar.classList.contains('active')) {
+              bar.style.transition = 'width 0.45s ease-out';
+              bar.style.width = '88%';
+            }
+          }, 560);
+        }
+      })();
+    </script>
     <!-- Top Scroll Progress Indicator -->
     <div id="cwScrollProgressBar" class="cw-scroll-progress-bar"></div>
     <script>
@@ -2318,7 +2337,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_20"></script>
+    <script src="welcome-disclaimer.js?v=20260918_21"></script>
 </body>
 
 </html>
