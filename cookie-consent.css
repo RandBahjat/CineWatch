@@ -18,7 +18,7 @@
   right: 24px;
   max-width: 440px;
   width: calc(100% - 48px);
-  z-index: 1150;
+  z-index: 1250;
   background: var(--cw-cookie-bg);
   backdrop-filter: blur(24px) saturate(190%);
   -webkit-backdrop-filter: blur(24px) saturate(190%);
@@ -221,7 +221,7 @@
 .cw-cookie-modal-overlay {
   position: fixed;
   inset: 0;
-  z-index: 1250;
+  z-index: 2500;
   background: rgba(0, 0, 0, 0.78);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -451,10 +451,10 @@
   background: rgba(255, 255, 255, 0.14);
 }
 
-/* ── Mobile Optimization ───────────────────────────────────────────────── */
-@media (max-width: 768px) {
+/* ── Mobile Optimization (Dock Clearance up to 900px) ─────────────────── */
+@media (max-width: 900px) {
   .cw-cookie-banner {
-    bottom: 92px; /* Floats safely above the mobile dock (bottom: 24px + 56px dock + margin) */
+    bottom: calc(env(safe-area-inset-bottom, 0px) + 88px);
     left: 16px;
     right: 16px;
     width: calc(100% - 32px);
@@ -477,4 +477,35 @@
     width: 100%;
     justify-content: center;
   }
+}
+
+/* ── Fallback Toast Notification ───────────────────────────────────────── */
+.cw-cookie-notification {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 99999;
+  background: rgba(18, 20, 26, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  color: #ffffff;
+  border: 1px solid rgba(229, 9, 20, 0.35);
+  border-left: 4px solid var(--cw-cookie-red);
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.65);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-12px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.cw-cookie-notification.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
