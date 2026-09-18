@@ -549,7 +549,31 @@ function recordWatchEvent(movieId) {
 // ==========================================
 
 async function initApp() {
-  const dismissLoader = () => {
+  const initStartTime = Date.now();
+  const MIN_INITIAL_LOAD_TIME = 950; // Match section transitions for unified site loading experience
+
+  const dismissLoader = async () => {
+    const elapsed = Date.now() - initStartTime;
+    const remaining = Math.max(0, MIN_INITIAL_LOAD_TIME - elapsed);
+    if (remaining > 0) {
+      await new Promise((r) => setTimeout(r, remaining));
+    }
+
+    // Complete top loading bar to 100%
+    const bar = document.getElementById("cwTopLoadingBar");
+    if (bar) {
+      bar.style.transition = "width 0.22s ease-out";
+      bar.style.width = "100%";
+      setTimeout(() => {
+        bar.style.opacity = "0";
+        setTimeout(() => {
+          bar.classList.remove("active");
+          bar.style.width = "0%";
+          bar.style.transition = "";
+        }, 300);
+      }, 220);
+    }
+
     const loader = document.getElementById("appLoader");
     if (loader) {
       loader.classList.add("fade-out");
@@ -589,7 +613,7 @@ async function initApp() {
   } catch (err) {
     console.error("InitApp error:", err);
   } finally {
-    dismissLoader();
+    await dismissLoader();
 
     // Check for deep link (e.g., ?v=spider-noir) and open the movie immediately
     const params = new URLSearchParams(window.location.search);
@@ -602,6 +626,18 @@ async function initApp() {
 
 // Fallback auto-dismiss loader in case of any unhandled condition
 setTimeout(() => {
+  const bar = document.getElementById("cwTopLoadingBar");
+  if (bar && bar.classList.contains("active")) {
+    bar.style.transition = "width 0.2s ease-out";
+    bar.style.width = "100%";
+    setTimeout(() => {
+      bar.style.opacity = "0";
+      setTimeout(() => {
+        bar.classList.remove("active");
+        bar.style.width = "0%";
+      }, 300);
+    }, 200);
+  }
   const loader = document.getElementById("appLoader");
   if (loader) {
     loader.classList.add("fade-out");
@@ -609,7 +645,7 @@ setTimeout(() => {
       if (loader && loader.parentNode) loader.remove();
     }, 400);
   }
-}, 1500);
+}, 3000);
 
 function getFeaturedMovies() {
   return getMoviesFromList(FEATURED_TITLES);
