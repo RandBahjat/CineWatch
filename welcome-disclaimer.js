@@ -104,72 +104,72 @@
           <span class="cw-disclaimer-eyebrow">Welcome to CineWatch</span>
           <h2 class="cw-disclaimer-title" id="cwDiscTitle">Cookie &amp; Privacy Choices</h2>
           <p class="cw-disclaimer-subtitle">
-            We use storage and lightweight cookies to remember your watch progress, save audio preferences, and ensure stream stability.
+            We use simple cookies and local storage to give you a smooth, high-speed streaming experience.
           </p>
         </div>
 
         <!-- 3 Selection Choice Items -->
         <div class="cw-disclaimer-points">
-          <!-- 1. Strictly Necessary & Playback (Locked on) -->
+          <!-- 1. Essential Playback (Always Active) -->
           <div class="cw-point-item">
             <div class="cw-point-header">
               <div class="cw-point-title-wrap">
                 <div class="cw-point-icon necessary">
-                  <ion-icon name="lock-closed-outline"></ion-icon>
+                  <ion-icon name="play-circle-outline"></ion-icon>
                 </div>
-                <h4>Strictly Necessary &amp; Playback</h4>
+                <h4>Essential Playback</h4>
               </div>
               <span class="cw-badge-always-active">Always Active</span>
             </div>
             <p class="cw-point-desc">
-              Required for core player streaming, video timestamps (Continue Watching), player audio levels, and site security.
+              Required to play videos smoothly, remember where you paused (Continue Watching), and keep your player volume.
             </p>
           </div>
 
-          <!-- 2. Preferences & Customization -->
+          <!-- 2. Personal Preferences -->
           <div class="cw-point-item">
             <div class="cw-point-header">
               <div class="cw-point-title-wrap">
                 <div class="cw-point-icon preferences">
                   <ion-icon name="color-palette-outline"></ion-icon>
                 </div>
-                <h4>Preferences &amp; Customization</h4>
+                <h4>Personal Preferences</h4>
               </div>
-              <label class="cw-toggle-switch" aria-label="Toggle Preferences Storage">
+              <label class="cw-toggle-switch" aria-label="Toggle Preferences">
                 <input type="checkbox" id="cwDiscTogglePreferences" checked />
                 <span class="cw-toggle-slider"></span>
               </label>
             </div>
             <p class="cw-point-desc">
-              Remembers your Sub/Dub anime audio choices, watchlist filters, and interface language preferences.
+              Saves your chosen anime audio (Sub/Dub), saved watchlist, and favorite filters so you don't have to re-select them.
             </p>
           </div>
 
-          <!-- 3. Anonymous Performance Analytics -->
+          <!-- 3. Performance & Speed -->
           <div class="cw-point-item">
             <div class="cw-point-header">
               <div class="cw-point-title-wrap">
                 <div class="cw-point-icon analytics">
-                  <ion-icon name="analytics-outline"></ion-icon>
+                  <ion-icon name="flash-outline"></ion-icon>
                 </div>
-                <h4>Anonymous Performance Analytics</h4>
+                <h4>Performance &amp; Speed</h4>
               </div>
-              <label class="cw-toggle-switch" aria-label="Toggle Anonymous Performance Analytics">
+              <label class="cw-toggle-switch" aria-label="Toggle Performance & Speed">
                 <input type="checkbox" id="cwDiscToggleAnalytics" checked />
                 <span class="cw-toggle-slider"></span>
               </label>
             </div>
             <p class="cw-point-desc">
-              Cookieless, privacy-preserving visitor analytics via Umami to detect broken streams and maintain server responsiveness.
+              Helps us detect broken streaming links, improve loading speeds, and ensure video servers stay responsive.
             </p>
           </div>
         </div>
 
         <!-- Agreement Statement -->
         <div class="cw-disclaimer-notice-box">
-          You can update these choices anytime in the footer. Read our
-          <a href="privacy.html" target="_blank">Privacy Policy</a> and
-          <a href="terms.html" target="_blank">Terms of Service</a>.
+          You can change your choices anytime in the footer. By continuing, you agree to our
+          <a href="terms.html" target="_blank">Terms of Service</a> and
+          <a href="privacy.html" target="_blank">Privacy Policy</a>.
         </div>
 
         <!-- 3 Action Buttons -->
