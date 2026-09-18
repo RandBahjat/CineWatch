@@ -327,7 +327,12 @@
         hideBanner(banner);
         notifyUser('All cookies and preferences accepted');
       };
-    }
+  function showBannerDirectly() {
+    const banner = document.getElementById('cwCookieBanner');
+    if (!banner) return;
+    banner.style.display = 'block';
+    banner.classList.remove('closing');
+    banner.classList.add('show');
   }
 
   function init() {
@@ -338,7 +343,6 @@
       applyConsent(stored);
     }
 
-    const banner = document.getElementById('cwCookieBanner');
     const modal = document.getElementById('cwCookieModal');
 
     // Attach listeners to any trigger button with #openCookieSettingsBtn or data-open-cookie-settings
@@ -349,11 +353,9 @@
       });
     });
 
-    // If user hasn't made a choice yet, display banner after a short graceful delay
-    if (!stored && banner) {
-      setTimeout(() => {
-        banner.classList.add('show');
-      }, 1200);
+    // If user hasn't made a choice yet, display banner IMMEDIATELY
+    if (!stored) {
+      showBannerDirectly();
     }
   }
 
@@ -397,6 +399,9 @@
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
+    window.addEventListener('load', () => {
+      if (!getStoredConsent()) showBannerDirectly();
+    });
   } else {
     init();
   }
