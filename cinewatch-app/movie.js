@@ -1658,10 +1658,99 @@ function renderAnimeSection() {
 
 
 // ==========================================
-// VIEW SWITCHER
+// VIEW SWITCHER WITH TOP PROGRESS BAR
 // ==========================================
 
-function switchView(viewName) {
+let _topBarTimer = null;
+let _topBarStepTimer = null;
+
+function triggerTopLoadingBar(onComplete) {
+  let bar = document.getElementById("cwTopLoadingBar");
+  if (!bar) {
+    bar = document.createElement("div");
+    bar.id = "cwTopLoadingBar";
+    bar.className = "cw-top-loading-bar";
+    document.body.appendChild(bar);
+  }
+
+  if (_topBarTimer) clearTimeout(_topBarTimer);
+  if (_topBarStepTimer) clearTimeout(_topBarStepTimer);
+
+  // Initialize
+  bar.classList.remove("finishing");
+  bar.style.transition = "none";
+  bar.style.width = "0%";
+  bar.style.opacity = "1";
+  bar.classList.add("active");
+
+  void bar.offsetWidth; // Force reflow
+
+  // Stage 1: Quick burst to 30%
+  bar.style.transition = "width 0.18s cubic-bezier(0.16, 1, 0.3, 1)";
+  bar.style.width = "30%";
+
+  // Soft dim on current content to indicate transition
+  const mainContent = document.getElementById("mainContent");
+  if (mainContent) {
+    mainContent.style.transition = "opacity 0.2s ease";
+    mainContent.style.opacity = "0.75";
+  }
+
+  // Stage 2: Second advance to 80%
+  _topBarStepTimer = setTimeout(() => {
+    bar.style.transition = "width 0.24s cubic-bezier(0.16, 1, 0.3, 1)";
+    bar.style.width = "80%";
+  }, 120);
+
+  // Stage 3: Section reveals & bar completes
+  _topBarTimer = setTimeout(() => {
+    if (typeof onComplete === "function") {
+      onComplete();
+    }
+
+    // Complete to 100%
+    bar.style.transition = "width 0.16s ease-out";
+    bar.style.width = "100%";
+
+    if (mainContent) {
+      mainContent.style.opacity = "1";
+      setTimeout(() => {
+        mainContent.style.transition = "";
+      }, 250);
+    }
+
+    // Fade out and clean up
+    setTimeout(() => {
+      bar.style.opacity = "0";
+      setTimeout(() => {
+        bar.classList.remove("active");
+        bar.style.width = "0%";
+        bar.style.transition = "";
+      }, 250);
+    }, 180);
+  }, 420);
+}
+
+function switchView(viewName, immediate = false) {
+  // If already on this view, just smooth scroll to top
+  if (state.activeView === viewName) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
+
+  // If immediate (initial page boot or details view)
+  if (immediate || !state.activeView || viewName === "details") {
+    _performSwitchView(viewName);
+    return;
+  }
+
+  // Animate with the glowing red progress bar and realistic transition time
+  triggerTopLoadingBar(() => {
+    _performSwitchView(viewName);
+  });
+}
+
+function _performSwitchView(viewName) {
   // Prevent Translation Flicker: hide content briefly while Google Translate parses the new elements
   const mainContent = document.getElementById("mainContent");
   if (mainContent) {
@@ -3671,14 +3760,12 @@ function bindEventListeners() {
       if (link.dataset.view === "browse") {
         // If clicking browse directly, switch to movies or toggle dropdown
         switchView("movies");
-        window.scrollTo({ top: 0, behavior: "smooth" });
         return;
       }
       const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
       if (mobileMenuOverlay) mobileMenuOverlay.classList.remove("active");
       if (link.dataset.view) {
         switchView(link.dataset.view);
-        window.scrollTo({ top: 0, behavior: "smooth" });
       }
     };
   });
