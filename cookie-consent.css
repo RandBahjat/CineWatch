@@ -220,9 +220,9 @@
 
 /* ── Preferences Modal Overlay ─────────────────────────────────────────── */
 .cw-cookie-modal-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 2500;
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2147483647 !important;
   background: rgba(0, 0, 0, 0.78);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
