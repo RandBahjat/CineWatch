@@ -1662,7 +1662,8 @@ function renderAnimeSection() {
 // ==========================================
 
 let _topBarTimer = null;
-let _topBarStepTimer = null;
+let _topBarStep1Timer = null;
+let _topBarStep2Timer = null;
 
 function triggerTopLoadingBar(onComplete) {
   let bar = document.getElementById("cwTopLoadingBar");
@@ -1674,7 +1675,8 @@ function triggerTopLoadingBar(onComplete) {
   }
 
   if (_topBarTimer) clearTimeout(_topBarTimer);
-  if (_topBarStepTimer) clearTimeout(_topBarStepTimer);
+  if (_topBarStep1Timer) clearTimeout(_topBarStep1Timer);
+  if (_topBarStep2Timer) clearTimeout(_topBarStep2Timer);
 
   // Initialize
   bar.classList.remove("finishing");
@@ -1685,38 +1687,44 @@ function triggerTopLoadingBar(onComplete) {
 
   void bar.offsetWidth; // Force reflow
 
-  // Stage 1: Quick burst to 30%
-  bar.style.transition = "width 0.18s cubic-bezier(0.16, 1, 0.3, 1)";
-  bar.style.width = "30%";
+  // Stage 1: Initial jump to 28%
+  bar.style.transition = "width 0.3s cubic-bezier(0.16, 1, 0.3, 1)";
+  bar.style.width = "28%";
 
   // Soft dim on current content to indicate transition
   const mainContent = document.getElementById("mainContent");
   if (mainContent) {
-    mainContent.style.transition = "opacity 0.2s ease";
-    mainContent.style.opacity = "0.75";
+    mainContent.style.transition = "opacity 0.25s ease";
+    mainContent.style.opacity = "0.7";
   }
 
-  // Stage 2: Second advance to 80%
-  _topBarStepTimer = setTimeout(() => {
-    bar.style.transition = "width 0.24s cubic-bezier(0.16, 1, 0.3, 1)";
-    bar.style.width = "80%";
-  }, 120);
+  // Stage 2: Smooth advance to 68%
+  _topBarStep1Timer = setTimeout(() => {
+    bar.style.transition = "width 0.4s cubic-bezier(0.16, 1, 0.3, 1)";
+    bar.style.width = "68%";
+  }, 220);
 
-  // Stage 3: Section reveals & bar completes
+  // Stage 3: Steady creep to 88%
+  _topBarStep2Timer = setTimeout(() => {
+    bar.style.transition = "width 0.45s ease-out";
+    bar.style.width = "88%";
+  }, 560);
+
+  // Stage 4: Section reveals & bar hits 100% (~920ms total duration)
   _topBarTimer = setTimeout(() => {
     if (typeof onComplete === "function") {
       onComplete();
     }
 
     // Complete to 100%
-    bar.style.transition = "width 0.16s ease-out";
+    bar.style.transition = "width 0.2s ease-out";
     bar.style.width = "100%";
 
     if (mainContent) {
       mainContent.style.opacity = "1";
       setTimeout(() => {
         mainContent.style.transition = "";
-      }, 250);
+      }, 300);
     }
 
     // Fade out and clean up
@@ -1726,9 +1734,9 @@ function triggerTopLoadingBar(onComplete) {
         bar.classList.remove("active");
         bar.style.width = "0%";
         bar.style.transition = "";
-      }, 250);
-    }, 180);
-  }, 420);
+      }, 300);
+    }, 220);
+  }, 920);
 }
 
 function switchView(viewName, immediate = false) {
