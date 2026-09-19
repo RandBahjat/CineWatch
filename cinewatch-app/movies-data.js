@@ -16,7 +16,7 @@ window._MOVIES_DATA = [
       "Thriller",
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/yopXjun3ICFfJci2ukcEzceZjUs.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/8MZy4k0NenJDjAEJovBWQmohRFx.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/dJTWIecL2vxsCRl5G0lRhPsfrhc.jpg",
     videoUrl: "1124142",
     trailerUrl: "https://youtu.be/GwSvAyaMGMo?si=lNcOoYpHjvEkgQIc",
     overview: "Set against the deep, secluded backwoods of rural Oklahoma, an enigmatic and solitary man named Amziah King takes a troubled young foster child under his wing. When dangerous outside forces and shadowy figures from his past encroach on their quiet mountain sanctuary, Amziah must rely on his sharp survival instincts and violent past to defend their home at any cost.",
