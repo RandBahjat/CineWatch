@@ -751,13 +751,7 @@ function setupHeroBanner() {
     isDragging = true;
     hasMoved = false;
     startX = e.type.includes("mouse") ? e.pageX : e.touches[0].clientX;
-    const bannerWidth = heroBanner.offsetWidth || window.innerWidth;
 
-    const isRtl = getComputedStyle(document.body).direction === "rtl";
-    const directionSign = isRtl ? 1 : -1;
-    currentTranslate = directionSign * state.currentHeroIndex * bannerWidth;
-
-    heroTrack.style.transition = "none";
     heroBanner.classList.add("is-dragging");
 
     if (state.heroInterval) clearInterval(state.heroInterval);
@@ -770,11 +764,7 @@ function setupHeroBanner() {
 
     if (Math.abs(diffX) > 6) {
       hasMoved = true;
-    }
-
-    if (hasMoved) {
       if (e.cancelable) e.preventDefault(); // Prevent native text/image selection
-      heroTrack.style.transform = `translateX(${currentTranslate + diffX}px)`;
     }
   };
 
