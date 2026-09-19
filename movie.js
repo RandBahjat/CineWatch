@@ -3658,7 +3658,8 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
 
   // --- PLAYBACK ROUTING ---
 
-  if (streamUrl || (!isNumericId && !isEmbedUrl)) {
+  const isDirectFile = movieVideoUrlStr.endsWith(".mp4") || movieVideoUrlStr.includes(".m3u8") || movieVideoUrlStr.startsWith("blob:");
+  if (streamUrl || (isDirectFile && !isNumericId && !isEmbedUrl)) {
     const finalUrl = streamUrl || movie.videoUrl;
 
     if (iframe) {
@@ -3667,7 +3668,13 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     }
     document.querySelector(".video-container")?.classList.remove("is-iframe");
     video.classList.remove("hidden");
-    controlsBar.classList.remove("hidden");
+    if (controlsBar && window.innerWidth > 768) {
+      controlsBar.classList.remove("hidden");
+      controlsBar.style.display = "";
+    } else if (controlsBar) {
+      controlsBar.classList.add("hidden");
+      controlsBar.style.display = "none";
+    }
     const serverBar = document.getElementById("playerServerBar");
     if (serverBar) { serverBar.classList.add("hidden"); serverBar.style.display = "none"; }
 
@@ -3699,7 +3706,10 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
   } else {
     // IFRAME FALLBACK
     video.classList.add("hidden");
-    controlsBar.classList.add("hidden");
+    if (controlsBar) {
+      controlsBar.classList.add("hidden");
+      controlsBar.style.display = "none";
+    }
 
     if (centerOverlay) centerOverlay.style.display = "none";
     if (serverWrap) {
