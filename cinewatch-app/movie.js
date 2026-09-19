@@ -3546,10 +3546,10 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
 }
 
 async function openVideoPlayer(movieId, startAtSec = 0) {
-  const movie = MOVIES.find((m) => m.id === movieId);
+  const movie = findMovieByIdOrTitle(movieId);
   if (!movie) return;
 
-  recordWatchEvent(movieId);
+  recordWatchEvent(movie.id);
 
   // TV Shows with seasons should immediately start from S1 E1
   if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
@@ -3561,8 +3561,8 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
       const aniId = movie.anilistId || '';
       openVideoPlayerWithUrl(
         firstEpisode.videoUrl || `tv_embed:${tmdbId}:${firstSeason.season}:${firstEpisode.episode}:${absEp}:${aniId}`,
-        `${movie.title} - S${firstSeason.season} E${firstEpisode.episode}`,
-        movieId,
+        `${movie.title} - S${firstSeason.season} E${firstEpisode.episode}: ${firstEpisode.title || ''}`,
+        movie.id,
         { ...firstEpisode, season: firstSeason.season }
       );
       return;
