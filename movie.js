@@ -3205,11 +3205,6 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     title.classList.add("notranslate");
     title.setAttribute("translate", "no");
   }
-  
-  const mobileIframeTitle = document.getElementById("mobileIframeTitle");
-  if (mobileIframeTitle) {
-    mobileIframeTitle.textContent = displayTitle;
-  }
 
   if (overviewEl) {
     const epObj = epData && parentMovie ? (() => {
@@ -3226,7 +3221,6 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
 
   // ── Wire Episodes button ──
   const epsBtn = document.getElementById("playerEpisodesBtn");
-  const iframeEpsBtn = document.getElementById("iframeEpisodesBtn");
   
   const isTvShow = !!(parentId && parentMovie && parentMovie.type === "TV Show");
   
@@ -3234,25 +3228,13 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     epsBtn.classList.toggle("hidden", !isTvShow);
     epsBtn.onclick = () => closeVideoPlayer();
   }
-  if (iframeEpsBtn) {
-    iframeEpsBtn.classList.toggle("hidden", !isTvShow);
-    iframeEpsBtn.onclick = () => closeVideoPlayer();
-  }
 
   // ── Wire Next Episode button ──
   const nextEpBtn = document.getElementById("playerNextEpBtn");
-  const iframeNextBtn = document.getElementById("iframeNextBtn");
   
   if (nextEpBtn) {
     nextEpBtn.classList.toggle("hidden", !epData);
     // nextEpBtn onclick is usually bound elsewhere (e.g., renderPlayerDetailsPanel)
-  }
-  if (iframeNextBtn) {
-    iframeNextBtn.classList.toggle("hidden", !epData);
-    // wire next episode click logic directly
-    iframeNextBtn.onclick = () => {
-      if (nextEpBtn) nextEpBtn.click();
-    };
   }
 
   const isAnime = !!(parentMovie?.isAnime || parentMovie?.type === 'Anime');
@@ -3479,11 +3461,6 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
   }
 
   if (title) title.textContent = movie.title;
-  
-  const mobileIframeTitle = document.getElementById("mobileIframeTitle");
-  if (mobileIframeTitle) {
-    mobileIframeTitle.textContent = movie.title;
-  }
 
   if (overviewEl) {
     const info = getLocalizedOverview(movie);
@@ -3492,14 +3469,10 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
 
   // ── Hide TV-only buttons ──
   const epsBtn = document.getElementById("playerEpisodesBtn");
-  const iframeEpsBtn = document.getElementById("iframeEpisodesBtn");
   if (epsBtn) epsBtn.classList.add("hidden");
-  if (iframeEpsBtn) iframeEpsBtn.classList.add("hidden");
 
   const nextEpBtn = document.getElementById("playerNextEpBtn");
-  const iframeNextBtn = document.getElementById("iframeNextBtn");
   if (nextEpBtn) nextEpBtn.classList.add("hidden");
-  if (iframeNextBtn) iframeNextBtn.classList.add("hidden");
 
 
   // Check if it's an embed ID or URL
