@@ -3563,58 +3563,78 @@ body.rtl-layout .details-back-btn svg {
   width: 0 !important;
 }
 
-/* Modern 3-Server Switcher Bar */
-.player-server-bar {
-  position: absolute;
-  top: 1.8rem;
-  right: 2rem;
+/* ===================================================
+   DETAILS VIEW: SERVER SELECTOR (ALL SCREENS)
+   =================================================== */
+.details-server-selector {
   display: flex;
   align-items: center;
-  gap: 6px;
-  background: rgba(12, 12, 18, 0.78);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 9999px;
-  padding: 4px 6px;
-  z-index: 50;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  transition: opacity 0.3s ease;
+  gap: 12px;
+  margin-top: 1.25rem;
+  margin-bottom: 0.25rem;
+  flex-wrap: wrap;
 }
 
-.player-server-bar.hidden {
+.details-server-selector.hidden {
   display: none !important;
 }
 
-.server-btn {
+.details-server-label-wrap {
   display: flex;
   align-items: center;
   gap: 6px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.details-server-label-wrap ion-icon {
+  font-size: 1.05rem;
+  color: #e50914;
+}
+
+.details-server-pills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.details-server-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   padding: 6px 14px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 9999px;
-  border: none;
-  background: transparent;
-  color: #a1a1aa;
+  color: #d1d5db;
   font-size: 0.82rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   user-select: none;
-  white-space: nowrap;
 }
 
-.server-btn:hover {
+.details-server-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.28);
+  transform: translateY(-1px);
 }
 
-.server-btn.active {
-  color: #ffffff;
+.details-server-btn.active {
   background: #e50914;
-  box-shadow: 0 2px 12px rgba(229, 9, 20, 0.45);
+  color: #ffffff;
+  border-color: #e50914;
+  box-shadow: 0 4px 16px rgba(229, 9, 20, 0.45);
 }
 
-.server-dot {
+.details-server-btn .server-dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -3622,22 +3642,25 @@ body.rtl-layout .details-back-btn svg {
   transition: background 0.2s ease;
 }
 
-.server-btn.active .server-dot {
+.details-server-btn.active .server-dot {
   background: #ffffff;
 }
 
-@media (max-width: 640px) {
-  .player-server-bar {
-    top: 1.2rem;
-    right: 1rem;
-    padding: 3px 4px;
-    gap: 3px;
+@media (max-width: 768px) {
+  .details-server-selector {
+    margin-top: 1rem;
+    gap: 8px;
   }
-  .server-btn {
-    padding: 5px 9px;
-    font-size: 0.72rem;
-    gap: 4px;
+  .details-server-btn {
+    padding: 6px 12px;
+    font-size: 0.78rem;
+    gap: 5px;
   }
+}
+
+/* Video Player: Server Switcher completely removed/hidden in player across all devices */
+.player-server-bar {
+  display: none !important;
 }
 
 /* ===================================================
