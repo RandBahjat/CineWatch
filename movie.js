@@ -3540,6 +3540,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
   }
 
   state.currentPlayingMovie = movie;
+  renderPlayerDetailsPanel(movie, null);
   const modal = document.getElementById("videoModal");
   const video = document.getElementById("videoElement");
   const iframe = document.getElementById("iframeElement");
