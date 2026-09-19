@@ -469,7 +469,7 @@ window._SERIES_DATA = [
       'Sci-Fi'
     ],
     poster: 'https://image.tmdb.org/t/p/original/rzyXM5uB2Oci6u7aP3ijPxcTmfV.jpg',
-    backdrop: 'https://image.tmdb.org/t/p/original/ruwzidqanSyhhMEk6kCVd9BLui1.jpg',
+    backdrop: 'https://image.tmdb.org/t/p/original/26U9H5kYAG07LDXAMveecM4ur3f.jpg',
     videoUrl: '95350',
     trailerUrl: "",
     overview: 'John Stewart, new recruit, and Hal Jordan, veteran Lantern, two space cops dragged into dark earth-based mystery investigating murder in American heartland. Story split across two timelines, 2016 and 2026, buddy-cop energy meets superhero stakes.',
