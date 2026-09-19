@@ -3440,15 +3440,21 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   // --- PLAYBACK ROUTING ---
 
   // 1. We got a raw stream from the API OR it was a direct mp4 to begin with
-  if (streamUrl || (!isNumericId && !isEmbedUrl)) {
+  const isDirectFile = videoUrlStr.endsWith(".mp4") || videoUrlStr.includes(".m3u8") || videoUrlStr.startsWith("blob:");
+  if (streamUrl || (isDirectFile && !isNumericId && !isEmbedUrl)) {
     const finalUrl = streamUrl || videoUrl;
 
     if (iframe) { iframe.classList.add("hidden"); iframe.src = ""; }
     document.querySelector(".video-container")?.classList.remove("is-iframe");
     serverWrap.classList.add("hidden");
     video.classList.remove("hidden");
-    controlsBar.classList.remove("hidden");
-
+    if (controlsBar && window.innerWidth > 768) {
+      controlsBar.classList.remove("hidden");
+      controlsBar.style.display = "";
+    } else if (controlsBar) {
+      controlsBar.classList.add("hidden");
+      controlsBar.style.display = "none";
+    }
 
     if (centerOverlay) {
       centerOverlay.innerHTML = '<ion-icon name="play-outline"></ion-icon>';
@@ -3485,7 +3491,10 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   // 2. We failed to get a stream, fallback to IFRAME embed
   else {
     video.classList.add("hidden");
-    controlsBar.classList.add("hidden");
+    if (controlsBar) {
+      controlsBar.classList.add("hidden");
+      controlsBar.style.display = "none";
+    }
 
     if (centerOverlay) {
       centerOverlay.innerHTML = '<ion-icon name="sync-outline" class="spin"></ion-icon>';
