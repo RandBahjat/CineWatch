@@ -55,7 +55,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "The Rivals of Amziah King",
+    title: "You+Me – Against the World",
     type: "Movie",
     year: 2026,
     rating: 7.1,
