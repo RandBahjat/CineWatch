@@ -3479,6 +3479,11 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
   }
 
   if (title) title.textContent = movie.title;
+  
+  const mobileIframeTitle = document.getElementById("mobileIframeTitle");
+  if (mobileIframeTitle) {
+    mobileIframeTitle.textContent = movie.title;
+  }
 
   if (overviewEl) {
     const info = getLocalizedOverview(movie);
@@ -3487,10 +3492,14 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
 
   // ── Hide TV-only buttons ──
   const epsBtn = document.getElementById("playerEpisodesBtn");
+  const iframeEpsBtn = document.getElementById("iframeEpisodesBtn");
   if (epsBtn) epsBtn.classList.add("hidden");
+  if (iframeEpsBtn) iframeEpsBtn.classList.add("hidden");
 
   const nextEpBtn = document.getElementById("playerNextEpBtn");
+  const iframeNextBtn = document.getElementById("iframeNextBtn");
   if (nextEpBtn) nextEpBtn.classList.add("hidden");
+  if (iframeNextBtn) iframeNextBtn.classList.add("hidden");
 
 
   // Check if it's an embed ID or URL
