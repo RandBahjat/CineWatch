@@ -2794,6 +2794,17 @@ function openDetailsModal(movieId) {
       initializeRatingSystem(movie.id);
     }
 
+    // Sync Details Server Selector (Hide for anime since anime uses dedicated ArtPlayer)
+    const serverSelector = document.getElementById("detailsServerSelector");
+    if (serverSelector) {
+      if (movie.isAnime || movie.type === "Anime") {
+        serverSelector.classList.add("hidden");
+      } else {
+        serverSelector.classList.remove("hidden");
+        syncServerPillsUI();
+      }
+    }
+
     renderCommentsSection(movie.id);
 
     const similarsGrid = document.getElementById("detailsSimilarsGrid");
