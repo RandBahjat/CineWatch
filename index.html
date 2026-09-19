@@ -13,9 +13,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260920_6">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_1999">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_257">
+    <link rel="stylesheet" href="movie.css?v=20260920_7">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_2000">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_258">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -118,10 +118,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_7423" defer></script>
-    <script src="series-data.js?v=20260818_7423" defer></script>
-    <script src="anime-data.js?v=20260818_7423" defer></script>
-    <script src="movie.js?v=20260920_5" defer></script>
+    <script src="movies-data.js?v=20260818_7424" defer></script>
+    <script src="series-data.js?v=20260818_7424" defer></script>
+    <script src="anime-data.js?v=20260818_7424" defer></script>
+    <script src="movie.js?v=20260920_6" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -647,6 +647,32 @@
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
                         <span id="detailsSimilarsText" class="notranslate" translate="no">Similars</span>
                     </button>
+                </div>
+
+                <!-- Server Selection Row (All Screens) -->
+                <div class="details-server-selector" id="detailsServerSelector">
+                    <div class="details-server-label-wrap">
+                        <ion-icon name="server-outline"></ion-icon>
+                        <span class="details-server-heading notranslate" translate="no" id="detailsServerHeading">Server:</span>
+                    </div>
+                    <div class="details-server-pills" id="detailsServerPills">
+                        <button class="details-server-btn active" data-server="vidlink" title="Server 1 (VidLink Pro)">
+                            <span class="server-dot"></span>
+                            <span class="server-btn-text notranslate" translate="no">Server 1</span>
+                        </button>
+                        <button class="details-server-btn" data-server="mapple" title="Server 2 (Mapple 4K)">
+                            <span class="server-dot"></span>
+                            <span class="server-btn-text notranslate" translate="no">Server 2</span>
+                        </button>
+                        <button class="details-server-btn" data-server="vidapi" title="Server 3 (VidAPI)">
+                            <span class="server-dot"></span>
+                            <span class="server-btn-text notranslate" translate="no">Server 3</span>
+                        </button>
+                        <button class="details-server-btn" data-server="embedmaster" title="Server 4 (EmbedMaster)">
+                            <span class="server-dot"></span>
+                            <span class="server-btn-text notranslate" translate="no">Server 4</span>
+                        </button>
+                    </div>
                 </div>
                 </div>
 
@@ -2357,7 +2383,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_257"></script>
+    <script src="welcome-disclaimer.js?v=20260918_258"></script>
 </body>
 
 </html>
