@@ -13,9 +13,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260916_1863">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_1863">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_121">
+    <link rel="stylesheet" href="movie.css?v=20260916_1866">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_1866">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_124">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -118,10 +118,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_7287" defer></script>
-    <script src="series-data.js?v=20260818_7287" defer></script>
-    <script src="anime-data.js?v=20260818_7287" defer></script>
-    <script src="movie.js?v=20260913_961" defer></script>
+    <script src="movies-data.js?v=20260818_7290" defer></script>
+    <script src="series-data.js?v=20260818_7290" defer></script>
+    <script src="anime-data.js?v=20260818_7290" defer></script>
+    <script src="movie.js?v=20260913_964" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1140,6 +1140,22 @@
                         <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
                     </svg>
                 </button>
+
+                <!-- Server Selector Bar -->
+                <div class="player-server-bar hidden" id="playerServerBar">
+                    <button class="server-btn active" data-server="mapple" title="Server 1: Mapple 4K">
+                        <span class="server-dot"></span>
+                        <span class="server-label">Mapple 4K</span>
+                    </button>
+                    <button class="server-btn" data-server="vidapi" title="Server 2: VidAPI">
+                        <span class="server-dot"></span>
+                        <span class="server-label">VidAPI</span>
+                    </button>
+                    <button class="server-btn" data-server="embedmaster" title="Server 3: EmbedMaster">
+                        <span class="server-dot"></span>
+                        <span class="server-label">EmbedMaster</span>
+                    </button>
+                </div>
             </div>
 
             <!-- HTML5 Video Player -->
@@ -2337,7 +2353,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_121"></script>
+    <script src="welcome-disclaimer.js?v=20260918_124"></script>
 </body>
 
 </html>
