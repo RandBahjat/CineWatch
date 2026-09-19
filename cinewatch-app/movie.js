@@ -4737,19 +4737,6 @@ function bindEventListeners() {
     };
   });
 
-  // Desktop In-Player Episodes Drawer Toggle Button
-  const desktopEpsBtn = document.getElementById("playerEpisodesToggleBtn");
-  if (desktopEpsBtn) {
-    desktopEpsBtn.onclick = (e) => {
-      e.stopPropagation();
-      const panel = document.getElementById("playerDetailsPanel");
-      if (panel) {
-        panel.classList.toggle("drawer-open");
-        desktopEpsBtn.classList.toggle("active", panel.classList.contains("drawer-open"));
-      }
-    };
-  }
-
   // Report Modal Handlers
   const headerReportBtn = document.getElementById("headerReportBtn");
   const footerReportLink = document.getElementById("footerReportLink");
