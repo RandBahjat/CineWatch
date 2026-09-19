@@ -69,7 +69,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/tWVntLeXNJCT3sX6yZZFzlDvF8.jpg",
     videoUrl: "1641629",
     trailerUrl: "https://youtu.be/GwSvAyaMGMo?si=lNcOoYpHjvEkgQIc",
-    overview: "Set against the deep, secluded backwoods of rural Oklahoma, an enigmatic and solitary man named Amziah King takes a troubled young foster child under his wing. When dangerous outside forces and shadowy figures from his past encroach on their quiet mountain sanctuary, Amziah must rely on his sharp survival instincts and violent past to defend their home at any cost.",
+    overview: "Alma Lancaster, 18, appears to lead a perfect life within a wealthy family who believes she is studying law, but in secret, she is pursuing her true passion for filmmaking. On campus, she crosses paths with Vadim Arcadi, a magnetic, solitary rebel with a turbulent past. Forced to collaborate on a student film project, the two clash, grow closer, and inevitably fall in love—all while an unknown observer watches and threatens to expose the secrets that could tear their worlds apart.",
     overviewKurdish: "لە ناو دارستانە دوورەدەست و کێوییەکانی ئۆکلاھۆما، پیاوێکی تەنیا و نامۆ بە ناوی ئەمزیای کینگ منداڵێکی بێکەس دەگرێتە خۆ و فێری ڕێساکانی مانەوەی دەکات. بەڵام کاتێک کەسانی مەترسیدار و سێبەرە تاریکەکانی ڕابردووی دێنەوە سەر ڕێگای و پەلاماری پەناگەکەی دەدەن، ئەمزیای ناچار دەبێت پەنا بۆ توندوتیژی و تواناکانی پێشووی ببات بۆ پاراستنی ژیانی خۆی و ئەو منداڵە.",
     director: "Andrew Patterson",
     cast: ["Matthew McConaughey, Kurt Russell, Cole Sprouse, Owen Teague, Rob Morgan, Scott Shepherd"],
