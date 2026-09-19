@@ -4828,25 +4828,27 @@ function bindEventListeners() {
   if (document.getElementById("closePlayerX")) document.getElementById("closePlayerX").onclick = closeVideoPlayer;
   if (document.getElementById("closeAuthBtn")) document.getElementById("closeAuthBtn").onclick = closeAuthModal;
 
-  // 3-Server Switcher Bar Handlers
-  const serverBar = document.getElementById("playerServerBar");
-  if (serverBar) {
-    serverBar.querySelectorAll(".server-btn").forEach((btn) => {
-      btn.onclick = (e) => {
-        e.stopPropagation();
-        const srv = btn.dataset.server;
-        if (!srv) return;
-        localStorage.setItem("cw_selected_server", srv);
-        serverBar.querySelectorAll(".server-btn").forEach((b) => b.classList.toggle("active", b === btn));
-        const centerOverlay = document.getElementById("videoCenterOverlay");
-        if (centerOverlay) {
-          centerOverlay.innerHTML = '<ion-icon name="sync-outline" class="spin"></ion-icon>';
-          centerOverlay.style.display = "flex";
-          centerOverlay.style.animation = "none";
-        }
-        updateIframeServer(srv);
-      };
-    });
+  // 3-Server Switcher Bar & Panel Server Pills Handlers
+  document.querySelectorAll(".server-btn, .panel-server-btn").forEach((btn) => {
+    btn.onclick = (e) => {
+      e.stopPropagation();
+      const srv = btn.dataset.server;
+      if (!srv) return;
+      selectPlayerServer(srv);
+    };
+  });
+
+  // Desktop In-Player Episodes Drawer Toggle Button
+  const desktopEpsBtn = document.getElementById("playerEpisodesToggleBtn");
+  if (desktopEpsBtn) {
+    desktopEpsBtn.onclick = (e) => {
+      e.stopPropagation();
+      const panel = document.getElementById("playerDetailsPanel");
+      if (panel) {
+        panel.classList.toggle("drawer-open");
+        desktopEpsBtn.classList.toggle("active", panel.classList.contains("drawer-open"));
+      }
+    };
   }
 
   // Report Modal Handlers
