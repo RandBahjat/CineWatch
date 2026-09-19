@@ -6018,9 +6018,9 @@ function updateIframeServer(serverOverride) {
   if (activeServer === 'mapple') {
     // Server 1: Mapple 4K (https://mapple.fun)
     if (data.type === 'tv') {
-      newUrl = `https://mapple.fun/watch/tv/${data.id}-${data.season}-${data.episode}`;
+      newUrl = `https://mapple.fun/watch/tv/${data.id}-${data.season}-${data.episode}?autoPlay=true&title=true&poster=true&watchParty=true&nextButton=true&theme=E74C3C`;
     } else {
-      newUrl = `https://mapple.fun/watch/movie/${data.id}`;
+      newUrl = `https://mapple.fun/watch/movie/${data.id}?autoPlay=true&title=true&poster=true&watchParty=true&theme=E74C3C`;
     }
     allowAttr = 'encrypted-media; autoplay; fullscreen';
   } else if (activeServer === 'vidapi') {
@@ -6042,9 +6042,9 @@ function updateIframeServer(serverOverride) {
   } else {
     // Default fallback to Mapple
     if (data.type === 'tv') {
-      newUrl = `https://mapple.fun/watch/tv/${data.id}-${data.season}-${data.episode}`;
+      newUrl = `https://mapple.fun/watch/tv/${data.id}-${data.season}-${data.episode}?autoPlay=true&title=true&poster=true&watchParty=true&nextButton=true&theme=E74C3C`;
     } else {
-      newUrl = `https://mapple.fun/watch/movie/${data.id}`;
+      newUrl = `https://mapple.fun/watch/movie/${data.id}?autoPlay=true&title=true&poster=true&watchParty=true&theme=E74C3C`;
     }
     allowAttr = 'encrypted-media; autoplay; fullscreen';
   }
