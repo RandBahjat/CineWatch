@@ -5932,11 +5932,12 @@ function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId, epData, aniId
   }
 }
 
-function updateIframeServer() {
+function updateIframeServer(serverOverride) {
   if (!window.currentIframeData) return;
   const data = window.currentIframeData;
   const iframe = document.getElementById('iframeElement');
   const serverSelectWrap = document.getElementById('serverSelectWrap');
+  const serverBar = document.getElementById('playerServerBar');
 
   if (serverSelectWrap) {
     serverSelectWrap.style.display = 'none';
@@ -5950,6 +5951,10 @@ function updateIframeServer() {
   const isAnime = !!(refMovie?.isAnime || refMovie?.type === 'Anime');
 
   if (isAnime) {
+    if (serverBar) {
+      serverBar.classList.add("hidden");
+      serverBar.style.display = "none";
+    }
     if (iframe) {
       iframe.classList.add("hidden");
       iframe.src = "";
@@ -5964,20 +5969,61 @@ function updateIframeServer() {
     try { window.artPlayerInstance.pause(); } catch(e) {}
   }
 
-  // VaPlayer server for Movies and Series (Netflix Skin)
-  // TV: https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}?skin=netflix
-  // Movie: https://vaplayer.ru/embed/movie/${data.id}?skin=netflix
+  // Determine active server from override or localStorage
+  const activeServer = serverOverride || localStorage.getItem('cw_selected_server') || 'mapple';
+
+  // Update Server Selector UI
+  if (serverBar) {
+    serverBar.classList.remove("hidden");
+    serverBar.style.display = "flex";
+    serverBar.querySelectorAll(".server-btn").forEach(btn => {
+      btn.classList.toggle("active", btn.dataset.server === activeServer);
+    });
+  }
+
   let newUrl = '';
-  if (data.type === 'tv') {
-    newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}?skin=netflix`;
+  let allowAttr = 'autoplay; encrypted-media; fullscreen';
+
+  if (activeServer === 'mapple') {
+    // Server 1: Mapple 4K (https://mapple.fun)
+    if (data.type === 'tv') {
+      newUrl = `https://mapple.fun/watch/tv/${data.id}-${data.season}-${data.episode}`;
+    } else {
+      newUrl = `https://mapple.fun/watch/movie/${data.id}`;
+    }
+    allowAttr = 'encrypted-media; autoplay; fullscreen';
+  } else if (activeServer === 'vidapi') {
+    // Server 2: VidAPI / VaPlayer (https://vaplayer.ru)
+    if (data.type === 'tv') {
+      newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}?skin=netflix`;
+    } else {
+      newUrl = `https://vaplayer.ru/embed/movie/${data.id}?skin=netflix`;
+    }
+    allowAttr = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+  } else if (activeServer === 'embedmaster') {
+    // Server 3: EmbedMaster (https://embedmaster.link)
+    if (data.type === 'tv') {
+      newUrl = `https://embedmaster.link/tv/${data.id}/${data.season}/${data.episode}?skin=aurora&welcome_page=on&autoplay=off`;
+    } else {
+      newUrl = `https://embedmaster.link/movie/${data.id}?skin=aurora&welcome_page=on&autoplay=off`;
+    }
+    allowAttr = 'autoplay *; fullscreen *; picture-in-picture *; encrypted-media *';
   } else {
-    newUrl = `https://vaplayer.ru/embed/movie/${data.id}?skin=netflix`;
+    // Default fallback to Mapple
+    if (data.type === 'tv') {
+      newUrl = `https://mapple.fun/watch/tv/${data.id}-${data.season}-${data.episode}`;
+    } else {
+      newUrl = `https://mapple.fun/watch/movie/${data.id}`;
+    }
+    allowAttr = 'encrypted-media; autoplay; fullscreen';
   }
 
   iframe.setAttribute("frameborder", "0");
   iframe.setAttribute("scrolling", "no");
   iframe.setAttribute("allowfullscreen", "true");
-  iframe.setAttribute("allow", "autoplay; encrypted-media; picture-in-picture");
+  iframe.setAttribute("webkitallowfullscreen", "true");
+  iframe.setAttribute("mozallowfullscreen", "true");
+  iframe.setAttribute("allow", allowAttr);
 
   iframe.onload = () => {
     const centerOverlay = document.getElementById('videoCenterOverlay');
