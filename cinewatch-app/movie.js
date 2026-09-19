@@ -3123,6 +3123,7 @@ function syncServerPillsUI(server) {
 
 function selectPlayerServer(srv) {
   if (!srv) return;
+  localStorage.setItem("cw_selected_server_v2", srv);
   localStorage.setItem("cw_selected_server", srv);
   syncServerPillsUI(srv);
   const centerOverlay = document.getElementById("videoCenterOverlay");
