@@ -58,7 +58,7 @@ window._MOVIES_DATA = [
     title: "You+Me – Against the World",
     type: "Movie",
     year: 2026,
-    rating: 7.1,
+    rating: 5.0,
     age: "R",
     duration: "2h 10m",
     genres: [
