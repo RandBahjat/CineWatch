@@ -468,7 +468,7 @@ window._SERIES_DATA = [
       'Mystery',
       'Sci-Fi'
     ],
-    poster: 'https://image.tmdb.org/t/p/original/rzyXM5uB2Oci6u7aP3ijPxcTmfV.jpg',
+    poster: 'https://image.tmdb.org/t/p/original/uAVR8jRsd0VUBC9lHRdEb38oNSa.jpg',
     backdrop: 'https://image.tmdb.org/t/p/original/26U9H5kYAG07LDXAMveecM4ur3f.jpg',
     videoUrl: '95350',
     trailerUrl: "",
