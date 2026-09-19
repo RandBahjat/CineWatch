@@ -62,7 +62,7 @@ window._MOVIES_DATA = [
     age: "TV-MA",
     duration: "1h 34m",
     genres: [
-      "Crime",
+      "",
       "Drama",
       "Thriller",
       "Mystery"
