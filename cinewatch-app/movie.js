@@ -713,7 +713,7 @@ function setupHeroBanner() {
     const genresList = (movie.genres || []).slice(0, 3).map(translateGenre).join(" • ");
 
     return `
-      <div class="hero-slide">
+      <div class="hero-slide ${idx === 0 ? 'active' : ''}">
         <div class="hero-bg-image" ${bgStyle}></div>
         <div class="hero-bg-overlay"></div>
         <div class="hero-content">
