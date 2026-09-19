@@ -3370,6 +3370,16 @@ body.rtl-layout .details-back-btn svg {
   justify-content: center;
 }
 
+.video-modal-overlay.hidden {
+  display: none !important;
+}
+
+.video-container.is-iframe .player-bottom-area,
+.video-container.is-iframe #playerControlsBar,
+#playerControlsBar.hidden {
+  display: none !important;
+}
+
 .video-container {
   position: relative;
   width: 100%;
