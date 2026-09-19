@@ -3553,6 +3553,83 @@ body.rtl-layout .details-back-btn svg {
   width: 0 !important;
 }
 
+/* Modern 3-Server Switcher Bar */
+.player-server-bar {
+  position: absolute;
+  top: 1.8rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(12, 12, 18, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+  padding: 4px 6px;
+  z-index: 50;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease;
+}
+
+.player-server-bar.hidden {
+  display: none !important;
+}
+
+.server-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  border: none;
+  background: transparent;
+  color: #a1a1aa;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  user-select: none;
+  white-space: nowrap;
+}
+
+.server-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.server-btn.active {
+  color: #ffffff;
+  background: #e50914;
+  box-shadow: 0 2px 12px rgba(229, 9, 20, 0.45);
+}
+
+.server-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #22c55e;
+  transition: background 0.2s ease;
+}
+
+.server-btn.active .server-dot {
+  background: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .player-server-bar {
+    top: 1.2rem;
+    right: 1rem;
+    padding: 3px 4px;
+    gap: 3px;
+  }
+  .server-btn {
+    padding: 5px 9px;
+    font-size: 0.72rem;
+    gap: 4px;
+  }
+}
+
 /* Inactivity Fading for Video Overlays */
 .video-container.idle .video-header {
   opacity: 0;
