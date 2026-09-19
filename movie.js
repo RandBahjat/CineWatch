@@ -3107,18 +3107,10 @@ async function fetchRawStream(tmdbId, type, season = null, episode = null) {
 }
 
 function syncServerPillsUI(server) {
-  const headerBar = document.getElementById("playerServerBar");
-  if (headerBar) {
-    headerBar.querySelectorAll(".server-btn").forEach(b => {
-      b.classList.toggle("active", b.dataset.server === server);
-    });
-  }
-  const panelPills = document.getElementById("playerPanelServerPills");
-  if (panelPills) {
-    panelPills.querySelectorAll(".panel-server-btn").forEach(b => {
-      b.classList.toggle("active", b.dataset.server === server);
-    });
-  }
+  const activeSrv = server || localStorage.getItem("cw_selected_server_v2") || "vidlink";
+  document.querySelectorAll(".details-server-btn, .server-btn, .panel-server-btn").forEach(b => {
+    b.classList.toggle("active", b.dataset.server === activeSrv);
+  });
 }
 
 function selectPlayerServer(srv) {
@@ -3126,13 +3118,16 @@ function selectPlayerServer(srv) {
   localStorage.setItem("cw_selected_server_v2", srv);
   localStorage.setItem("cw_selected_server", srv);
   syncServerPillsUI(srv);
-  const centerOverlay = document.getElementById("videoCenterOverlay");
-  if (centerOverlay) {
-    centerOverlay.innerHTML = '<ion-icon name="sync-outline" class="spin"></ion-icon>';
-    centerOverlay.style.display = "flex";
-    centerOverlay.style.animation = "none";
+  const videoModal = document.getElementById("videoModal");
+  if (videoModal && !videoModal.classList.contains("hidden")) {
+    const centerOverlay = document.getElementById("videoCenterOverlay");
+    if (centerOverlay) {
+      centerOverlay.innerHTML = '<ion-icon name="sync-outline" class="spin"></ion-icon>';
+      centerOverlay.style.display = "flex";
+      centerOverlay.style.animation = "none";
+    }
+    updateIframeServer(srv);
   }
-  updateIframeServer(srv);
 }
 
 function formatPlayerAirDate(dateStr) {
