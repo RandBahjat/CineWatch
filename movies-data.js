@@ -4,7 +4,7 @@
 
 window._MOVIES_DATA = [
   {
-    title: "The Rivals of Amziah King",
+    title: "The Fix",
     type: "Movie",
     year: 2026,
     rating: 7.1,
