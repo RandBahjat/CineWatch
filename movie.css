@@ -5750,7 +5750,8 @@ body.rtl-layout .details-back-btn svg {
 .ep-row-top {
   display: flex;
   align-items: baseline;
-  gap: 0.7rem;
+  justify-content: space-between;
+  gap: 0.75rem;
   margin-bottom: 0.3rem;
 }
 
@@ -5761,6 +5762,23 @@ body.rtl-layout .details-back-btn svg {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  flex: 1;
+  min-width: 0;
+}
+
+.ep-row-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.ep-row-date {
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.52);
+  white-space: nowrap;
+  letter-spacing: 0.2px;
 }
 
 .ep-row-duration {
