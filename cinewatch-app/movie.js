@@ -6075,8 +6075,8 @@ function updateIframeServer(serverOverride) {
     try { window.artPlayerInstance.pause(); } catch(e) {}
   }
 
-  // Determine active server from override or localStorage
-  const activeServer = serverOverride || localStorage.getItem('cw_selected_server') || 'mapple';
+  // Determine active server from override or localStorage (VidLink Pro is primary default)
+  const activeServer = serverOverride || localStorage.getItem('cw_selected_server_v2') || 'vidlink';
 
   // Update Server Selector UI
   if (serverBar) {
@@ -6086,10 +6086,18 @@ function updateIframeServer(serverOverride) {
   syncServerPillsUI(activeServer);
 
   let newUrl = '';
-  let allowAttr = 'autoplay; encrypted-media; fullscreen';
+  let allowAttr = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
 
-  if (activeServer === 'mapple') {
-    // Server 1: Mapple 4K (https://mapple.fun)
+  if (activeServer === 'vidlink') {
+    // Server 1: VidLink Pro (https://vidlink.pro) - PRIMARY
+    if (data.type === 'tv') {
+      newUrl = `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false&nextbutton=true`;
+    } else {
+      newUrl = `https://vidlink.pro/movie/${data.id}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false`;
+    }
+    allowAttr = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
+  } else if (activeServer === 'mapple') {
+    // Server 2: Mapple 4K (https://cineby.rip)
     if (data.type === 'tv') {
       newUrl = `https://cineby.rip/watch/tv/${data.id}-${data.season}-${data.episode}?autoPlay=true&title=true&poster=true&nextButton=true&theme=E74C3C`;
     } else {
@@ -6097,7 +6105,7 @@ function updateIframeServer(serverOverride) {
     }
     allowAttr = 'encrypted-media; autoplay; fullscreen';
   } else if (activeServer === 'vidapi') {
-    // Server 2: VidAPI / VaPlayer (https://vaplayer.ru)
+    // Server 3: VidAPI / VaPlayer (https://vaplayer.ru)
     if (data.type === 'tv') {
       newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}?skin=netflix`;
     } else {
@@ -6105,7 +6113,7 @@ function updateIframeServer(serverOverride) {
     }
     allowAttr = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
   } else if (activeServer === 'embedmaster') {
-    // Server 3: EmbedMaster (https://embedmaster.link)
+    // Server 4: EmbedMaster (https://embedmaster.link)
     if (data.type === 'tv') {
       newUrl = `https://embedmaster.link/tv/${data.id}/${data.season}/${data.episode}?skin=aurora&welcome_page=on&autoplay=off`;
     } else {
@@ -6113,13 +6121,13 @@ function updateIframeServer(serverOverride) {
     }
     allowAttr = 'autoplay *; fullscreen *; picture-in-picture *; encrypted-media *';
   } else {
-    // Default fallback to Mapple
+    // Default fallback to VidLink Pro
     if (data.type === 'tv') {
-      newUrl = `https://cineby.rip/watch/tv/${data.id}-${data.season}-${data.episode}?autoPlay=true&title=true&poster=true&nextButton=true&theme=E74C3C`;
+      newUrl = `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false&nextbutton=true`;
     } else {
-      newUrl = `https://cineby.rip/watch/movie/${data.id}?autoPlay=true&title=true&poster=true&theme=E74C3C`;
+      newUrl = `https://vidlink.pro/movie/${data.id}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false`;
     }
-    allowAttr = 'encrypted-media; autoplay; fullscreen';
+    allowAttr = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
   }
 
   iframe.setAttribute("frameborder", "0");
