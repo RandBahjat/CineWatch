@@ -3611,6 +3611,12 @@ function closeVideoPlayer() {
     artApp.innerHTML = "";
   }
 
+  const serverBar = document.getElementById("playerServerBar");
+  if (serverBar) {
+    serverBar.classList.add("hidden");
+    serverBar.style.display = "none";
+  }
+
   if (state.currentPlayingMovie && video.currentTime > 0 && !video.classList.contains("hidden")) {
     // Native <video> player — save real progress
     updateContinueWatching(
