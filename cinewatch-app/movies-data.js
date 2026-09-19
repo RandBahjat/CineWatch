@@ -71,7 +71,7 @@ window._MOVIES_DATA = [
     trailerUrl: "https://youtu.be/GwSvAyaMGMo?si=lNcOoYpHjvEkgQIc",
     overview: "Alma Lancaster, 18, appears to lead a perfect life within a wealthy family who believes she is studying law, but in secret, she is pursuing her true passion for filmmaking. On campus, she crosses paths with Vadim Arcadi, a magnetic, solitary rebel with a turbulent past. Forced to collaborate on a student film project, the two clash, grow closer, and inevitably fall in love—all while an unknown observer watches and threatens to expose the secrets that could tear their worlds apart.",
     overviewKurdish: "ئالما لانکاستەر، کچێکی ١٨ ساڵەی دەوڵەمەندە کە لە ڕواڵەتدا ژیانێکی بێ کەموکوڕی هەیە و خێزانەکەی وا دەزانن یاسا دەخوێنێت، بەڵام لە ڕاستیدا بە نهێنی بەدوای خەونی سینەما و دەرهێنانی فیلم کەوتووە. لە زانکۆ ئاشنای ڤادیم ئارکادی دەبێت، کە گەنجێکی سەرکەش، نامۆ و تەنیا بە ڕابردوویەکی ئاڵۆزەوەیە. کاتێک ناچار دەکرێن پێکەوە کار لەسەر پرۆژەیەکی سینەمایی خوێندکاری بکەن، لەگەڵ ناکۆکییەکانیان هۆگری یەکتر دەبن و دەکەونە داوی خۆشەویستییەوە، لە هەمان کاتدا کەسێکی نەناسراو چاودێرییان دەکات و هەڕەشەی ئاشکراکردنی نهێنییە تاریکەکانیان دەکات.",
-    director: "Andrew Patterson",
+    director: "Manon Gaurin",
     cast: ["Matthew McConaughey, Kurt Russell, Cole Sprouse, Owen Teague, Rob Morgan, Scott Shepherd"],
     trending: true,
     featured: true,
