@@ -2915,6 +2915,7 @@ function openDetailsModal(movieId) {
           const duration = ep.duration || "";
           const overview = ep.overview || "";
           const airDate = formatEpisodeAirDate(ep.airDate || ep.releaseDate);
+          const ratingVal = (ep.rating !== undefined && ep.rating !== null && !isNaN(ep.rating)) ? Number(ep.rating).toFixed(1) : "";
           return `
         <div class="episode-row ${resolvedUrl ? "" : "episode-unavailable"}" 
              data-video="${resolvedUrl}" 
@@ -2933,6 +2934,7 @@ function openDetailsModal(movieId) {
             <div class="ep-row-top">
               <span class="ep-row-title notranslate" translate="no">${ep.title}</span>
               <div class="ep-row-meta">
+                ${ratingVal ? `<span class="ep-row-rating" title="IMDb Rating: ${ratingVal}">★ ${ratingVal}</span>` : ""}
                 ${airDate ? `<span class="ep-row-date">${airDate}</span>` : ""}
                 ${duration ? `<span class="ep-row-duration">${duration}</span>` : ""}
               </div>
