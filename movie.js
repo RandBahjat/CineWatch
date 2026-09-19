@@ -220,6 +220,20 @@ function getMediaListIndex(item, list) {
   return 999;
 }
 
+function findMovieByIdOrTitle(identifier) {
+  if (!identifier) return null;
+  const raw = String(identifier).trim();
+  const lower = raw.toLowerCase();
+  const slug = lower.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  return MOVIES.find(m => 
+    m.id === raw ||
+    (m.id && m.id.toLowerCase() === lower) ||
+    (m.id && m.id.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug) ||
+    (m.title && m.title.toLowerCase() === lower) ||
+    (m.title && m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug)
+  ) || null;
+}
+
 function getMoviesFromList(list, filterFn) {
   if (!Array.isArray(list)) return [];
   const results = [];
