@@ -3016,14 +3016,14 @@ function openDetailsModal(movieId) {
 
       // Play button plays first available episode of the selected season
       playBtn.onclick = () => {
-        const seasonData = movie.seasons.find((s) => s.season === parseInt(seasonSelect.value));
+        const seasonData = movie.seasons.find((s) => s.season === parseInt(seasonSelect.value)) || movie.seasons[0];
         if (!seasonData) return;
         const firstEp = seasonData.episodes[0];
         if (!firstEp) return;
         const epUrl = getEpisodeUrl(firstEp, seasonData);
         if (epUrl) {
-          const epTitle = `${movie.title} ΓÇö S${seasonData.season}E${firstEp.episode}: ${firstEp.title}`;
-          openVideoPlayerWithUrl(epUrl, epTitle, movie.id);
+          const epTitle = `${movie.title} - S${seasonData.season} E${firstEp.episode}: ${firstEp.title || ''}`;
+          openVideoPlayerWithUrl(epUrl, epTitle, movie.id, { season: seasonData.season, episode: firstEp.episode, ...firstEp });
         }
       };
 
