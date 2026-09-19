@@ -13,9 +13,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260916_1985">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_1985">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_243">
+    <link rel="stylesheet" href="movie.css?v=20260916_1986">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_1986">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_244">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -118,10 +118,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_7409" defer></script>
-    <script src="series-data.js?v=20260818_7409" defer></script>
-    <script src="anime-data.js?v=20260818_7409" defer></script>
-    <script src="movie.js?v=20260913_1083" defer></script>
+    <script src="movies-data.js?v=20260818_7410" defer></script>
+    <script src="series-data.js?v=20260818_7410" defer></script>
+    <script src="anime-data.js?v=20260818_7410" defer></script>
+    <script src="movie.js?v=20260913_1084" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1140,9 +1140,6 @@
                         <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
                     </svg>
                 </button>
-                
-                <!-- Mobile Iframe Title -->
-                <div class="mobile-iframe-title hidden" id="mobileIframeTitle"></div>
 
                 <!-- Server Selector Bar -->
                 <div class="player-server-bar hidden" id="playerServerBar">
@@ -1176,12 +1173,6 @@
             <!-- Center Play/Pause Overlay Animation -->
             <div class="video-center-overlay hidden" id="videoCenterOverlay">
                 <span class="center-play-icon" id="centerPlayIcon"><ion-icon name="play-outline"></ion-icon></span>
-            </div>
-
-            <!-- Mobile Iframe Controls -->
-            <div class="mobile-iframe-controls hidden" id="mobileIframeControls">
-                <button class="iframe-ctrl-btn" id="iframeEpisodesBtn"><ion-icon name="list-outline"></ion-icon> Episodes</button>
-                <button class="iframe-ctrl-btn hidden" id="iframeNextBtn">Next <ion-icon name="play-skip-forward-outline"></ion-icon></button>
             </div>
 
             <!-- Bottom Controls Gradient Overlay -->
@@ -2362,7 +2353,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_243"></script>
+    <script src="welcome-disclaimer.js?v=20260918_244"></script>
 </body>
 
 </html>
