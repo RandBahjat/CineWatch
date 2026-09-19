@@ -3763,61 +3763,6 @@ body.rtl-layout .details-back-btn svg {
   }
 }
 
-/* Desktop drawer styling for player-details-panel */
-@media (min-width: 769px) {
-  .player-details-panel {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 420px;
-    max-width: 90vw;
-    background: rgba(10, 11, 16, 0.96);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    z-index: 90;
-    overflow-y: auto;
-    box-shadow: -8px 0 32px rgba(0, 0, 0, 0.7);
-    transform: translateX(100%);
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-
-  .player-details-panel.drawer-open {
-    transform: translateX(0);
-  }
-
-  .player-episodes-toggle-btn {
-    position: absolute;
-    top: 1.8rem;
-    right: 340px; /* Sits to the left of the server bar */
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    background: rgba(12, 12, 18, 0.78);
-    backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 9999px;
-    padding: 6px 14px;
-    color: #d1d5db;
-    font-size: 0.82rem;
-    font-weight: 600;
-    cursor: pointer;
-    z-index: 50;
-    transition: all 0.2s ease;
-  }
-
-  .player-episodes-toggle-btn:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.12);
-  }
-
-  .player-episodes-toggle-btn.active {
-    background: #e50914;
-    color: #fff;
-  }
-}
-
 /* Inactivity Fading for Video Overlays */
 .video-container.idle .video-header {
   opacity: 0;
