@@ -842,12 +842,9 @@ function updateHeroBanner() {
   const heroTrack = document.getElementById("heroTrack");
   if (!heroTrack) return;
 
-  heroTrack.style.transition = "transform 0.6s cubic-bezier(0.25, 1, 0.5, 1)";
-
-  // Handle RTL layout direction for Sorani
-  const isRtl = getComputedStyle(document.body).direction === "rtl";
-  const directionSign = isRtl ? 1 : -1;
-  heroTrack.style.transform = `translateX(${directionSign * state.currentHeroIndex * 100}%)`;
+  // Clear translateX so crossfade transition takes full effect
+  heroTrack.style.transform = "";
+  heroTrack.style.transition = "";
 
   // Update active slide for fade-in and appear animations
   heroTrack.querySelectorAll(".hero-slide").forEach((slide, i) => {
