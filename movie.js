@@ -2881,9 +2881,10 @@ function openDetailsModal(movieId) {
 
       function formatEpisodeAirDate(dateStr) {
         if (!dateStr || typeof dateStr !== "string") return "";
-        if (/^[A-Za-z]+\s+\d+/.test(dateStr)) return dateStr;
+        if (/^[A-Za-z]+\s+\d+,\s*\d{4}/.test(dateStr)) return dateStr;
         const parts = dateStr.trim().split(/[-/]/);
         if (parts.length >= 3) {
+          const year = parts[0].trim();
           const month = parseInt(parts[1], 10) - 1;
           const day = parseInt(parts[2], 10);
           const months = [
@@ -2891,7 +2892,7 @@ function openDetailsModal(movieId) {
             "July", "August", "September", "October", "November", "December"
           ];
           if (month >= 0 && month < 12 && day > 0 && day <= 31) {
-            return `${months[month]} ${day}`;
+            return `${months[month]} ${day}, ${year}`;
           }
         }
         return "";
