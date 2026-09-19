@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Spider-Man: The Animated Series",
+    "reason": "Partial episode match: 13/65",
+    "unmatched": [
+      "S2E1: Neogenic Nightmare, Chapter 1: The Insidious Six",
+      "S2E2: Neogenic Nightmare, Chapter 2: Battle of the Insidious Six",
+      "S2E3: Neogenic Nightmare, Chapter 3: Hydro-Man",
+      "S2E4: Neogenic Nightmare, Chapter 4: The Mutant Agenda",
+      "S2E5: Neogenic Nightmare, Chapter 5: Mutants' Revenge"
+    ]
+  },
+  {
+    "title": "Daredevil: Born Again",
+    "reason": "Partial episode match: 17/18",
+    "unmatched": [
+      "S1E10: Straight to Hell"
+    ]
+  },
+  {
+    "title": "Ben 10: Ultimate Alien",
+    "reason": "Partial episode match: 32/52",
+    "unmatched": [
+      "S3E1: The Purge",
+      "S3E2: Simian Says",
+      "S3E3: Greetings from Techadon",
+      "S3E4: The Flame Keeper's Circle",
+      "S3E5: Double or Nothing"
+    ]
+  },
+  {
+    "title": "Miraculous: Tales of Ladybug & Cat Noir",
+    "reason": "Partial episode match: 155/157",
+    "unmatched": [
+      "S2E26: Mayura",
+      "S5E27: Action"
+    ]
+  },
+  {
+    "title": "Money Heist",
+    "reason": "Partial episode match: 9/41",
+    "unmatched": [
+      "S2E1: Se acabaron las mÃ¡scaras",
+      "S2E2:  La cabeza del plan",
+      "S2E3: CuestiÃ³n de eficacia",
+      "S2E4: Â¿QuÃ© hemos hecho?",
+      "S2E5: A contrarreloj"
+    ]
+  },
+  {
+    "title": "Marvel's Spider-Man",
+    "reason": "Partial episode match: 57/58",
+    "unmatched": [
+      "S1E0: Origins"
+    ]
+  },
+  {
+    "title": "Teenage Mutant Ninja Turtles",
+    "reason": "Partial episode match: 116/124",
+    "unmatched": [
+      "S5E13: Raphael: Mutant Apocalypse, Part 3 - Carmageddon!",
+      "S5E14: The Curse of Savanti Romero",
+      "S5E15: The Crypt of Dracula",
+      "S5E16: The Frankenstein Experiment",
+      "S5E17: Monsters Among Us!"
+    ]
+  }
+]
