@@ -3454,6 +3454,8 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     document.querySelector(".video-container")?.classList.remove("is-iframe");
     video.classList.remove("hidden");
     controlsBar.classList.remove("hidden");
+    const serverBar = document.getElementById("playerServerBar");
+    if (serverBar) { serverBar.classList.add("hidden"); serverBar.style.display = "none"; }
 
     if (centerOverlay) centerOverlay.style.display = "";
     video.src = movie.videoUrl;
