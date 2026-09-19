@@ -22,7 +22,7 @@ window._MOVIES_DATA = [
     overview: "Haunt by a disastrous botch job during the Afghanistan pullout, a squad of ex-CIA operatives get back together when their veteran mentor Larry drops word about an unclaimed fortune hidden inside the undocumented Hotel Tehran. Led by field commander Tucker, the battle-worn unit slips deep into Iran under hostile fire, turning a reckless $25 million heist into a desperate, high-stakes rescue run behind enemy lines.",
     overviewKurdish: "دوای ئەوەی ئەرکەکەیان لە ئەفغانستان تووشی شکستێکی گەورە دەبێت، تیمێکی پێشووی سیخوڕانی CIA جارێکی تر کۆدەبنەوە کاتێک لاری، سەرپەرشتیار و فەرماندەی دێرینیان، نهێنیی بوونی ٢٥ ملیۆن دۆلاری شاردراوە لە هوتێلێکی نادیاری تاران ئاشکرا دەکات. لەژێر سەرپەرشتی تاکەر، تیمەکە دەچنە ناو جەرگەی ئێران و خۆیان دەخەنە ناو مەترسییەکی گەورەوە، بەڵام دزینی پارەکە دەگۆڕێت بۆ ئۆپەراسیۆنێکی توندوتیژی ڕزگارکردن و هەوڵدان بۆ مانەوە لە ژیان لەناو خاکی دوژمندا.",
     director: "Guy Moshe",
-    cast: ["Matthew McConaughey, Kurt Russell, Cole Sprouse, Owen Teague, Rob Morgan, Scott Shepherd"],
+    cast: ["Zachary Levi, Liam Neeson, Titus Welliver, Wes Chatham, Elnaaz Norouzi, Quincy Isaiah, Annet Mahendru, Augusto Aguilera"],
     trending: true,
     featured: true,
     is4k: false,
