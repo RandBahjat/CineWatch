@@ -3315,7 +3315,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   const serverWrap = document.getElementById("serverSelectWrap");
 
   // ── Populate info area ──
-  const parentMovie = parentId ? MOVIES.find(m => m.id === parentId) : null;
+  const parentMovie = parentId ? (findMovieByIdOrTitle(parentId) || MOVIES.find(m => m.id === parentId || String(m.videoUrl) === String(parentId))) : null;
   renderPlayerDetailsPanel(parentMovie, epData);
   const posterEl = document.getElementById("playerShowPoster");
   const metaEl = document.getElementById("playerMeta");
