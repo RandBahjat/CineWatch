@@ -7,7 +7,7 @@ window._MOVIES_DATA = [
     title: "The Fix",
     type: "Movie",
     year: 2026,
-    rating: 7.1,
+    rating: 4.8,
     age: "R",
     duration: "2h 10m",
     genres: [
