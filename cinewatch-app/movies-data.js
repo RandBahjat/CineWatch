@@ -19,7 +19,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/dJTWIecL2vxsCRl5G0lRhPsfrhc.jpg",
     videoUrl: "1228834",
     trailerUrl: "https://youtu.be/NYC0v8xqQdM?si=mtAix-qrTt6Ecdyb",
-    overview: "Set against the deep, secluded backwoods of rural Oklahoma, an enigmatic and solitary man named Amziah King takes a troubled young foster child under his wing. When dangerous outside forces and shadowy figures from his past encroach on their quiet mountain sanctuary, Amziah must rely on his sharp survival instincts and violent past to defend their home at any cost.",
+    overview: "Haunt by a disastrous botch job during the Afghanistan pullout, a squad of ex-CIA operatives get back together when their veteran mentor Larry drops word about an unclaimed fortune hidden inside the undocumented Hotel Tehran. Led by field commander Tucker, the battle-worn unit slips deep into Iran under hostile fire, turning a reckless $25 million heist into a desperate, high-stakes rescue run behind enemy lines.",
     overviewKurdish: "لە ناو دارستانە دوورەدەست و کێوییەکانی ئۆکلاھۆما، پیاوێکی تەنیا و نامۆ بە ناوی ئەمزیای کینگ منداڵێکی بێکەس دەگرێتە خۆ و فێری ڕێساکانی مانەوەی دەکات. بەڵام کاتێک کەسانی مەترسیدار و سێبەرە تاریکەکانی ڕابردووی دێنەوە سەر ڕێگای و پەلاماری پەناگەکەی دەدەن، ئەمزیای ناچار دەبێت پەنا بۆ توندوتیژی و تواناکانی پێشووی ببات بۆ پاراستنی ژیانی خۆی و ئەو منداڵە.",
     director: "Andrew Patterson",
     cast: ["Matthew McConaughey, Kurt Russell, Cole Sprouse, Owen Teague, Rob Morgan, Scott Shepherd"],
