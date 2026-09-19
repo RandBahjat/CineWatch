@@ -2961,19 +2961,16 @@ function openDetailsModal(movieId) {
 
         // Click to play episode
         episodeGrid.querySelectorAll(".episode-row:not(.episode-unavailable)").forEach((card) => {
-          const thumb = card.querySelector('.episode-row-thumb');
-          if (thumb) {
-            thumb.style.cursor = 'pointer';
-            card.style.cursor = 'default';
-            thumb.onclick = (e) => {
-              e.stopPropagation();
-              const videoUrl = card.dataset.video;
-              const epTitle = card.dataset.title;
-              const epNum = parseInt(card.dataset.episode);
-              const absNum = card.dataset.absEpisode ? parseInt(card.dataset.absEpisode) : epNum;
-              openVideoPlayerWithUrl(videoUrl, epTitle, movie.id, { season: seasonData.season, episode: epNum, absoluteEpisode: absNum });
-            };
-          }
+          card.style.cursor = 'pointer';
+          card.onclick = (e) => {
+            e.stopPropagation();
+            const videoUrl = card.dataset.video;
+            const epTitle = card.dataset.title;
+            const epNum = parseInt(card.dataset.episode);
+            const absNum = card.dataset.absEpisode ? parseInt(card.dataset.absEpisode) : epNum;
+            const targetEp = seasonData.episodes.find(x => x.episode === epNum);
+            openVideoPlayerWithUrl(videoUrl, epTitle, movie.id, { season: seasonData.season, episode: epNum, absoluteEpisode: absNum, ...targetEp });
+          };
         });
       }
 
