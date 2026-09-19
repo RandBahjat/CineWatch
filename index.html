@@ -13,9 +13,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260916_1912">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_1912">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_170">
+    <link rel="stylesheet" href="movie.css?v=20260916_1913">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_1913">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_171">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -118,10 +118,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_7336" defer></script>
-    <script src="series-data.js?v=20260818_7336" defer></script>
-    <script src="anime-data.js?v=20260818_7336" defer></script>
-    <script src="movie.js?v=20260913_1010" defer></script>
+    <script src="movies-data.js?v=20260818_7337" defer></script>
+    <script src="series-data.js?v=20260818_7337" defer></script>
+    <script src="anime-data.js?v=20260818_7337" defer></script>
+    <script src="movie.js?v=20260913_1011" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1243,6 +1243,58 @@
             </div>
 
         </div>
+
+        <!-- Mobile & In-Player Details / Episodes Panel (Directly below video on mobile) -->
+        <div class="player-details-panel hidden" id="playerDetailsPanel">
+            <div class="player-panel-inner">
+                <!-- Title & Meta Header -->
+                <div class="player-panel-header">
+                    <div class="player-panel-title-row">
+                        <h2 class="player-panel-title" id="playerPanelTitle">Title</h2>
+                        <span class="player-panel-ep-badge hidden" id="playerPanelEpBadge">S1 · E1</span>
+                    </div>
+                    <div class="player-panel-sub-title" id="playerPanelSubTitle"></div>
+                    <div class="player-panel-meta" id="playerPanelMeta">
+                        <span class="player-meta-rating" id="playerPanelRating"></span>
+                        <span class="player-meta-date" id="playerPanelDate"></span>
+                        <span class="player-meta-duration" id="playerPanelDuration"></span>
+                    </div>
+                </div>
+
+                <!-- Server Selector Row (Directly below video) -->
+                <div class="player-panel-section player-panel-servers">
+                    <div class="panel-section-title">
+                        <span>SELECT SERVER</span>
+                    </div>
+                    <div class="player-panel-server-pills" id="playerPanelServerPills">
+                        <button class="panel-server-btn active" data-server="mapple">
+                            <span class="server-dot"></span>
+                            <span>Mapple 4K</span>
+                        </button>
+                        <button class="panel-server-btn" data-server="vidapi">
+                            <span class="server-dot"></span>
+                            <span>VidAPI</span>
+                        </button>
+                        <button class="panel-server-btn" data-server="embedmaster">
+                            <span class="server-dot"></span>
+                            <span>EmbedMaster</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Season & Episode Selection (For Series) -->
+                <div class="player-panel-section player-panel-episodes-section hidden" id="playerPanelEpisodesSection">
+                    <div class="panel-episodes-header">
+                        <span class="panel-section-title">EPISODES</span>
+                        <div class="panel-season-select-wrapper" id="playerPanelSeasonWrapper">
+                            <select class="panel-season-select" id="playerPanelSeasonSelect"></select>
+                        </div>
+                    </div>
+                    <!-- Episode Rows Grid -->
+                    <div class="player-panel-episodes-list" id="playerPanelEpisodesList"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -2359,7 +2411,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_170"></script>
+    <script src="welcome-disclaimer.js?v=20260918_171"></script>
 </body>
 
 </html>
