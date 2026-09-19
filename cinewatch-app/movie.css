@@ -2002,6 +2002,31 @@ body.rtl-layout .modal-search-clear {
   will-change: transform;
 }
 
+/* ===================================================
+   HERO SLIDER: FADE IN & APPEAR ANIMATIONS
+   =================================================== */
+@keyframes heroBgFadeIn {
+  0% {
+    opacity: 0.25;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes heroContentAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero-slide {
   flex: 0 0 100%;
   width: 100%;
@@ -2010,6 +2035,7 @@ body.rtl-layout .modal-search-clear {
   display: flex;
   align-items: center;
   padding: 5rem 4.5rem 3rem;
+  overflow: hidden;
 }
 
 .hero-bg-image {
@@ -2021,12 +2047,69 @@ body.rtl-layout .modal-search-clear {
   background-size: cover;
   background-position: center 5%; /* Character face & torso framed at top-center */
   background-repeat: no-repeat;
-  transition: background-image 0.8s ease-in-out;
   z-index: 1;
   overflow: hidden;
   pointer-events: none;
   -webkit-user-drag: none;
   user-select: none;
+  opacity: 0.3;
+  transform: scale(1.04);
+  transition: opacity 0.8s ease, transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.hero-slide.active .hero-bg-image {
+  opacity: 1;
+  transform: scale(1);
+  animation: heroBgFadeIn 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Inactive slide text elements start hidden/shifted down */
+.hero-slide:not(.active) .hero-title,
+.hero-slide:not(.active) .hero-meta,
+.hero-slide:not(.active) .hero-overview,
+.hero-slide:not(.active) .hero-actions {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+/* Active slide: staggered appear animations for title, meta, text, and buttons */
+.hero-slide.active .hero-title {
+  animation: heroContentAppear 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
+  will-change: transform, opacity;
+}
+
+.hero-slide.active .hero-meta {
+  animation: heroContentAppear 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.22s both;
+  will-change: transform, opacity;
+}
+
+.hero-slide.active .hero-overview {
+  animation: heroContentAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.32s both;
+  will-change: transform, opacity;
+}
+
+.hero-slide.active .hero-actions {
+  animation: heroContentAppear 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.42s both;
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide .hero-bg-image,
+  .hero-slide.active .hero-bg-image,
+  .hero-slide:not(.active) .hero-title,
+  .hero-slide:not(.active) .hero-meta,
+  .hero-slide:not(.active) .hero-overview,
+  .hero-slide:not(.active) .hero-actions,
+  .hero-slide.active .hero-title,
+  .hero-slide.active .hero-meta,
+  .hero-slide.active .hero-overview,
+  .hero-slide.active .hero-actions {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }
 
 /* When a local <img> is placed inside hero-bg-image it should fill like a background */
