@@ -3941,7 +3941,11 @@ body.rtl-layout .details-back-btn svg {
    RESPONSIVE: MOBILE DOCKED VIDEO & EPISODES BELOW
    =================================================== */
 @media (max-width: 768px) {
-  .video-modal-overlay {
+  .video-modal-overlay.hidden {
+    display: none !important;
+  }
+
+  .video-modal-overlay:not(.hidden) {
     display: flex !important;
     flex-direction: column !important;
     justify-content: flex-start !important;
@@ -3955,7 +3959,7 @@ body.rtl-layout .details-back-btn svg {
     width: 100% !important;
     aspect-ratio: 16 / 9 !important;
     height: auto !important;
-    max-height: 42vh !important;
+    max-height: 45vh !important;
     flex-shrink: 0 !important;
     position: sticky !important;
     top: 0 !important;
@@ -3965,15 +3969,25 @@ body.rtl-layout .details-back-btn svg {
 
   .video-header {
     height: 50px !important;
-    pointer-events: auto !important;
+    pointer-events: none !important;
   }
 
   .player-back-btn {
-    top: 8px !important;
-    left: 8px !important;
-    width: 36px !important;
-    height: 36px !important;
-    background: rgba(0, 0, 0, 0.65) !important;
+    pointer-events: auto !important;
+    top: 10px !important;
+    left: 10px !important;
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 50% !important;
+    background: rgba(0, 0, 0, 0.75) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    z-index: 150 !important;
+    cursor: pointer !important;
   }
 
   .player-server-bar {
@@ -3984,9 +3998,26 @@ body.rtl-layout .details-back-btn svg {
     display: none !important;
   }
 
-  .player-details-panel {
+  .player-bottom-area,
+  #playerControlsBar {
+    display: none !important; /* In iframe embeds, internal player handles controls */
+  }
+
+  .mouse-catcher {
+    display: none !important;
+  }
+
+  .player-details-panel.hidden {
+    display: none !important;
+  }
+
+  .player-details-panel:not(.hidden) {
     display: flex !important;
-    flex: 1 !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    flex: 1 0 auto !important;
+    background: #08090d !important;
+    padding-bottom: env(safe-area-inset-bottom, 24px) !important;
   }
 }
 
