@@ -60,7 +60,7 @@ window._MOVIES_DATA = [
     year: 2026,
     rating: 5.0,
     age: "TV-MA",
-    duration: "2h 10m",
+    duration: "1h 34m",
     genres: [
       "Crime",
       "Drama",
