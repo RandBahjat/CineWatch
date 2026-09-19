@@ -3761,6 +3761,64 @@ body.rtl-layout .details-back-btn svg {
   .player-details-panel {
     display: none !important;
   }
+
+  /* Mobile Iframe Overlay Controls */
+  .video-container.is-iframe .mobile-iframe-title {
+    display: block !important;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 50%;
+    text-align: center;
+    z-index: 150;
+    pointer-events: none;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  }
+
+  .video-container.is-iframe .mobile-iframe-controls {
+    display: flex !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 14px;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 150;
+    pointer-events: none; /* Let touches pass through the empty space */
+  }
+
+  .iframe-ctrl-btn {
+    pointer-events: auto;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    cursor: pointer;
+  }
+
+  .iframe-ctrl-btn ion-icon {
+    font-size: 1.2rem;
+  }
+
+  .iframe-ctrl-btn.hidden {
+    display: none !important;
+  }
 }
 
 /* Inactivity Fading for Video Overlays */
