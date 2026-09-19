@@ -3191,14 +3191,24 @@ function renderPlayerDetailsPanel(movie, epData) {
     durationEl.textContent = epData?.duration || movie.duration || "";
   }
 
+  // Fallback for epData if it's a TV series with seasons
+  let effectiveEpData = epData;
+  if (!effectiveEpData && movie.seasons && movie.seasons.length > 0) {
+    const firstS = movie.seasons[0];
+    const firstE = firstS?.episodes?.[0];
+    if (firstE) {
+      effectiveEpData = { season: firstS.season, episode: firstE.episode, ...firstE };
+    }
+  }
+
   // TV Episode info
-  if (epData && movie.seasons && movie.seasons.length > 0) {
+  if (effectiveEpData && movie.seasons && movie.seasons.length > 0) {
     if (epBadgeEl) {
       epBadgeEl.classList.remove("hidden");
-      epBadgeEl.textContent = `S${epData.season} · E${epData.episode}`;
+      epBadgeEl.textContent = `S${effectiveEpData.season} · E${effectiveEpData.episode}`;
     }
-    const currentSeason = movie.seasons.find(s => s.season === epData.season);
-    const currentEpObj = currentSeason?.episodes?.find(e => e.episode === epData.episode);
+    const currentSeason = movie.seasons.find(s => s.season === effectiveEpData.season) || movie.seasons[0];
+    const currentEpObj = currentSeason?.episodes?.find(e => e.episode === effectiveEpData.episode);
     if (subTitleEl) {
       subTitleEl.textContent = currentEpObj?.title || "";
     }
@@ -3210,7 +3220,7 @@ function renderPlayerDetailsPanel(movie, epData) {
     // Populate season select
     if (seasonSelect) {
       seasonSelect.innerHTML = movie.seasons
-        .map(s => `<option value="${s.season}" ${s.season === epData.season ? "selected" : ""}>Season ${s.season}</option>`)
+        .map(s => `<option value="${s.season}" ${s.season === effectiveEpData.season ? "selected" : ""}>Season ${s.season}</option>`)
         .join("");
 
       seasonSelect.onchange = () => {
@@ -3224,7 +3234,7 @@ function renderPlayerDetailsPanel(movie, epData) {
       if (!sData) return;
 
       episodesList.innerHTML = sData.episodes.map(ep => {
-        const isCurrent = epData && epData.season === seasonNum && epData.episode === ep.episode;
+        const isCurrent = effectiveEpData && effectiveEpData.season === seasonNum && effectiveEpData.episode === ep.episode;
         const thumb = ep.thumbnail || movie.backdrop || movie.poster || "";
         const rVal = (ep.rating !== undefined && ep.rating !== null && !isNaN(ep.rating)) ? Number(ep.rating).toFixed(1) : "";
         const dateStr = formatPlayerAirDate(ep.airDate || ep.releaseDate);
@@ -3265,7 +3275,7 @@ function renderPlayerDetailsPanel(movie, epData) {
 
           openVideoPlayerWithUrl(
             epUrl,
-            `${movie.title} - S${sNum} E${eNum}`,
+            `${movie.title} - S${sNum} E${eNum}: ${targetEp.title || ''}`,
             movie.id,
             { ...targetEp, season: sNum, episode: eNum }
           );
@@ -3273,7 +3283,7 @@ function renderPlayerDetailsPanel(movie, epData) {
       });
     }
 
-    renderPanelEpisodes(epData.season);
+    renderPanelEpisodes(effectiveEpData.season);
 
   } else {
     // Movie
