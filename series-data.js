@@ -499,7 +499,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 4,
-            title: 'Episode #1.4'
+            title: 'The Weenie'
           },
           {
             episode: 5,
