@@ -4726,8 +4726,8 @@ function bindEventListeners() {
   if (document.getElementById("closePlayerX")) document.getElementById("closePlayerX").onclick = closeVideoPlayer;
   if (document.getElementById("closeAuthBtn")) document.getElementById("closeAuthBtn").onclick = closeAuthModal;
 
-  // 3-Server Switcher Bar & Panel Server Pills Handlers
-  document.querySelectorAll(".server-btn, .panel-server-btn").forEach((btn) => {
+  // Details Server Selector & Panel Server Pills Handlers
+  document.querySelectorAll(".details-server-btn, .server-btn, .panel-server-btn").forEach((btn) => {
     btn.onclick = (e) => {
       e.stopPropagation();
       const srv = btn.dataset.server;
