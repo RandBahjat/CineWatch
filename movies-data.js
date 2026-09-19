@@ -18,7 +18,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/yopXjun3ICFfJci2ukcEzceZjUs.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/dJTWIecL2vxsCRl5G0lRhPsfrhc.jpg",
     videoUrl: "1228834",
-    trailerUrl: "https://youtu.be/GwSvAyaMGMo?si=lNcOoYpHjvEkgQIc",
+    trailerUrl: "https://youtu.be/NYC0v8xqQdM?si=mtAix-qrTt6Ecdyb",
     overview: "Set against the deep, secluded backwoods of rural Oklahoma, an enigmatic and solitary man named Amziah King takes a troubled young foster child under his wing. When dangerous outside forces and shadowy figures from his past encroach on their quiet mountain sanctuary, Amziah must rely on his sharp survival instincts and violent past to defend their home at any cost.",
     overviewKurdish: "لە ناو دارستانە دوورەدەست و کێوییەکانی ئۆکلاھۆما، پیاوێکی تەنیا و نامۆ بە ناوی ئەمزیای کینگ منداڵێکی بێکەس دەگرێتە خۆ و فێری ڕێساکانی مانەوەی دەکات. بەڵام کاتێک کەسانی مەترسیدار و سێبەرە تاریکەکانی ڕابردووی دێنەوە سەر ڕێگای و پەلاماری پەناگەکەی دەدەن، ئەمزیای ناچار دەبێت پەنا بۆ توندوتیژی و تواناکانی پێشووی ببات بۆ پاراستنی ژیانی خۆی و ئەو منداڵە.",
     director: "Andrew Patterson",
