@@ -6203,10 +6203,8 @@ function updateIframeServer(serverOverride) {
   if (serverBar) {
     serverBar.classList.remove("hidden");
     serverBar.style.display = "flex";
-    serverBar.querySelectorAll(".server-btn").forEach(btn => {
-      btn.classList.toggle("active", btn.dataset.server === activeServer);
-    });
   }
+  syncServerPillsUI(activeServer);
 
   let newUrl = '';
   let allowAttr = 'autoplay; encrypted-media; fullscreen';
