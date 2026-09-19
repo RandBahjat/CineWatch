@@ -3203,6 +3203,8 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     if (controlsBar) controlsBar.classList.add("hidden");
     if (centerOverlay) centerOverlay.style.display = "none";
     if (serverWrap) serverWrap.classList.add("hidden");
+    const serverBar = document.getElementById("playerServerBar");
+    if (serverBar) { serverBar.classList.add("hidden"); serverBar.style.display = "none"; }
     modal.classList.remove("hidden");
     document.body.style.overflow = "hidden";
     return;
