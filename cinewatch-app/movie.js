@@ -2547,14 +2547,14 @@ window.submitComment = async function (movieId) {
 };
 
 function openDetailsModal(movieId) {
-  const movie = MOVIES.find((m) => m.id === movieId);
+  const movie = findMovieByIdOrTitle(movieId);
   if (!movie) return;
 
   if (state.activeView !== "details") {
     state.previousView = state.activeView;
   }
 
-  window.history.replaceState(null, '', '?v=' + movieId);
+  window.history.replaceState(null, '', '?v=' + movie.id);
 
   const mainContent = document.getElementById("mainContent");
   const heroBanner = document.getElementById("heroBanner");
