@@ -2932,13 +2932,11 @@ function openDetailsModal(movieId) {
             </div>
           </div>
           <div class="episode-row-info">
-            <div class="ep-row-top">
-              <span class="ep-row-title notranslate" translate="no">${ep.title}</span>
-              <div class="ep-row-meta">
-                ${ratingVal ? `<span class="ep-row-rating" title="IMDb Rating: ${ratingVal}">★ ${ratingVal}</span>` : ""}
-                ${airDate ? `<span class="ep-row-date">${airDate}</span>` : ""}
-                ${duration ? `<span class="ep-row-duration">${duration}</span>` : ""}
-              </div>
+            <h4 class="ep-row-title notranslate" translate="no">${ep.title}</h4>
+            <div class="ep-row-meta">
+              ${ratingVal ? `<span class="ep-row-rating" title="IMDb Rating: ${ratingVal}">★ ${ratingVal}</span>` : ""}
+              ${airDate ? `<span class="ep-row-date">${airDate}</span>` : ""}
+              ${duration ? `<span class="ep-row-duration">${duration}</span>` : ""}
             </div>
             ${overview ? `<p class="ep-row-overview">${overview}</p>` : ""}
           </div>
