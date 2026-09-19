@@ -1,32 +1,27 @@
-async function testEmbedMaster() {
+async function run() {
   try {
-    const res = await fetch('https://embedmaster.link/movie/550', {
-      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' }
-    });
-    console.log('Status:', res.status);
+    const res = await fetch('https://embedmaster.link/movie/575265?welcome_page=off&autoplay=on');
     const html = await res.text();
-    console.log('HTML size:', html.length);
-    console.log('Sample content:\n', html.substring(0, 1500));
-
-    // Check for ad scripts, popups, or trackers
-    const adKeywords = ['ad', 'pop', 'propeller', 'monetag', 'click', 'track', 'histats', 'banner'];
-    const foundAds = [];
-    adKeywords.forEach(k => {
-      if (html.toLowerCase().includes(k)) foundAds.push(k);
-    });
-    console.log('Ad keywords detected:', foundAds);
-
-    // Check player engine
-    const players = ['plyr', 'videojs', 'artplayer', 'vidstack', 'jwplayer', 'clappr', 'hls'];
-    const foundPlayers = [];
-    players.forEach(p => {
-      if (html.toLowerCase().includes(p)) foundPlayers.push(p);
-    });
-    console.log('Player engines detected:', foundPlayers);
-
-  } catch (e) {
-    console.log('Error:', e.message);
+    console.log('Status:', res.status, 'HTML length:', html.length);
+    
+    // Check for player script or video sources
+    const hasVideo = html.includes('<video') || html.includes('video-js') || html.includes('.m3u8') || html.includes('blob:');
+    console.log('Video references found:', hasVideo);
+    
+    // Look for keywords
+    console.log('Includes cf-turnstile:', html.includes('cf-turnstile'));
+    console.log('Includes dtc_sbx (sandbox check):', html.includes('dtc_sbx'));
+    console.log('Includes ad scripts (llvpn):', html.includes('llvpn.com'));
+    
+    // Let's see what happens on standard URL: https://embedmaster.link/movie/575265
+    const resDefault = await fetch('https://embedmaster.link/movie/575265');
+    const htmlDefault = await resDefault.text();
+    console.log('\nDefault URL:');
+    console.log('Status:', resDefault.status, 'HTML length:', htmlDefault.length);
+    console.log('Has welcome form:', htmlDefault.includes('welcome-play-form'));
+    console.log('Has turnstile widget:', htmlDefault.includes('cf-turnstile-widget'));
+  } catch (err) {
+    console.error(err);
   }
 }
-
-testEmbedMaster();
+run();
