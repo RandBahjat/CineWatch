@@ -495,7 +495,7 @@ window._SERIES_DATA = [
           },
           {
             episode: 3,
-            title: 'Episode #1.3'
+            title: 'OutKast'
           },
           {
             episode: 4,
