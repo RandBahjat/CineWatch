@@ -3805,6 +3805,16 @@ function closeVideoPlayer() {
     serverBar.style.display = "none";
   }
 
+  const detailsPanel = document.getElementById("playerDetailsPanel");
+  if (detailsPanel) {
+    detailsPanel.classList.add("hidden");
+    detailsPanel.classList.remove("drawer-open");
+  }
+  const desktopEpsBtn = document.getElementById("playerEpisodesToggleBtn");
+  if (desktopEpsBtn) {
+    desktopEpsBtn.classList.remove("active");
+  }
+
   if (state.currentPlayingMovie && video.currentTime > 0 && !video.classList.contains("hidden")) {
     // Native <video> player — save real progress
     updateContinueWatching(
