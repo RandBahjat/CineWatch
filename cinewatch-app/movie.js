@@ -2879,6 +2879,24 @@ function openDetailsModal(movieId) {
         return "";
       }
 
+      function formatEpisodeAirDate(dateStr) {
+        if (!dateStr || typeof dateStr !== "string") return "";
+        if (/^[A-Za-z]+\s+\d+/.test(dateStr)) return dateStr;
+        const parts = dateStr.trim().split(/[-/]/);
+        if (parts.length >= 3) {
+          const month = parseInt(parts[1], 10) - 1;
+          const day = parseInt(parts[2], 10);
+          const months = [
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+          ];
+          if (month >= 0 && month < 12 && day > 0 && day <= 31) {
+            return `${months[month]} ${day}`;
+          }
+        }
+        return "";
+      }
+
       function renderEpisodes(seasonNum, filter = "") {
         const seasonData = movie.seasons.find((s) => s.season === parseInt(seasonNum));
         if (!seasonData) return;
@@ -2896,6 +2914,7 @@ function openDetailsModal(movieId) {
           const thumb = ep.thumbnail || movie.backdrop || movie.poster || "";
           const duration = ep.duration || "";
           const overview = ep.overview || "";
+          const airDate = formatEpisodeAirDate(ep.airDate || ep.releaseDate);
           return `
         <div class="episode-row ${resolvedUrl ? "" : "episode-unavailable"}" 
              data-video="${resolvedUrl}" 
@@ -2913,7 +2932,10 @@ function openDetailsModal(movieId) {
           <div class="episode-row-info">
             <div class="ep-row-top">
               <span class="ep-row-title notranslate" translate="no">${ep.title}</span>
-              ${duration ? `<span class="ep-row-duration">${duration}</span>` : ""}
+              <div class="ep-row-meta">
+                ${airDate ? `<span class="ep-row-date">${airDate}</span>` : ""}
+                ${duration ? `<span class="ep-row-duration">${duration}</span>` : ""}
+              </div>
             </div>
             ${overview ? `<p class="ep-row-overview">${overview}</p>` : ""}
           </div>
