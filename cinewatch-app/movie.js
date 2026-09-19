@@ -859,6 +859,11 @@ function updateHeroBanner() {
   const directionSign = isRtl ? 1 : -1;
   heroTrack.style.transform = `translateX(${directionSign * state.currentHeroIndex * 100}%)`;
 
+  // Update active slide for fade-in and appear animations
+  heroTrack.querySelectorAll(".hero-slide").forEach((slide, i) => {
+    slide.classList.toggle("active", i === state.currentHeroIndex);
+  });
+
   // Update dots
   document.querySelectorAll("#heroDots .dot").forEach((dot, i) => {
     dot.classList.toggle("active", i === state.currentHeroIndex);
