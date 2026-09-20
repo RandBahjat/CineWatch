@@ -2118,6 +2118,8 @@ function playMovieDirect(movieId) {
     if (streamTypeBadge) {
       if (srv && srv.id === 'vidrock') {
         streamTypeBadge.textContent = 'VIDROCK HD';
+      } else if (srv && srv.id === 'mapple') {
+        streamTypeBadge.textContent = 'MAPPLE TV';
       } else if (srv && srv.id === 'vaplayer') {
         streamTypeBadge.textContent = 'NETFLIX HD';
       } else if (isAnime) {
