@@ -2006,11 +2006,20 @@ function playMovieDirect(movieId) {
         ? `https://vaplayer.ru/embed/tv/${tmdb}/${mappedSeason}/${mappedEpisode}?skin=netflix`
         : `https://vaplayer.ru/embed/movie/${tmdb}?skin=netflix`;
 
+      const mappleUrl = isTv
+        ? `https://mapple.fun/watch/tv/${tmdb}-${mappedSeason}-${mappedEpisode}?autoPlay=true&poster=true&nextButton=true&theme=E74C3C`
+        : `https://mapple.fun/watch/movie/${tmdb}?autoPlay=true&title=true&poster=true&theme=E74C3C`;
+
       servers = [
         {
           id: 'vidrock',
           name: '🎸 Vidrock HD (Red Theme)',
           url: vidrockUrl
+        },
+        {
+          id: 'mapple',
+          name: '🍁 Mapple TV (mapletv.uk)',
+          url: mappleUrl
         },
         {
           id: 'vaplayer',
