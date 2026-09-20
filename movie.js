@@ -6095,13 +6095,13 @@ function updateIframeServer(serverOverride) {
     }
     allowAttr = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
   } else if (activeServer === 'mapple') {
-    // Server 2: Mapple 4K (https://cineby.rip)
+    // Server 2: Mapple TV (mapletv.uk / mapple.fun)
     if (data.type === 'tv') {
-      newUrl = `https://cineby.rip/watch/tv/${data.id}-${data.season}-${data.episode}?autoPlay=true&title=true&poster=true&nextButton=true&theme=E74C3C`;
+      newUrl = `https://mapple.fun/watch/tv/${data.id}-${data.season}-${data.episode}?autoPlay=true&poster=true&nextButton=true&theme=E74C3C`;
     } else {
-      newUrl = `https://cineby.rip/watch/movie/${data.id}?autoPlay=true&title=true&poster=true&theme=E74C3C`;
+      newUrl = `https://mapple.fun/watch/movie/${data.id}?autoPlay=true&title=true&poster=true&theme=E74C3C`;
     }
-    allowAttr = 'encrypted-media; autoplay; fullscreen';
+    allowAttr = 'encrypted-media; autoplay; fullscreen; picture-in-picture';
   } else if (activeServer === 'vidapi') {
     // Server 3: VidAPI / VaPlayer (https://vaplayer.ru)
     if (data.type === 'tv') {
