@@ -383,7 +383,7 @@ window._SERIES_DATA = [
           { "episode": 1, "title": "Pilot", "airDate": "2026-08-16", "rating": 8.2 },
           { "episode": 2, "title": "Trust Fall", "airDate": "2026-08-23", "rating": 8.1 },
           { "episode": 3, "title": "OutKast", "airDate": "2026-08-30", "rating": 7.6 },
-          { "episode": 4, "title": "The Weenie", "airDate": "2026-09-06", "rating": 8.5 },
+          { "episode": 4, "title": "The Weenie", "airDate": "2026-09-06", "rating": 8.4 },
           { "episode": 5, "title": "Lights Out", "airDate": "2026-09-13", "rating": 9.1 },
           { "episode": 6, "title": "Bad Optics", "airDate": "2026-09-20","8.5" },
           { "episode": 7, "title": "Episode #1.7", "airDate": "2026-09-27" },
