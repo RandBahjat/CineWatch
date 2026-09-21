@@ -296,8 +296,8 @@ window._SERIES_DATA = [
     "title": "Neagley",
     "type": "TV Show",
     "year": 2026,
-    "rating": "7.6",
-    "age": "TBR",
+    "rating": "7.8",
+    "age": "TV-MA",
     "genres": [
       "Action",
       "Drama",
