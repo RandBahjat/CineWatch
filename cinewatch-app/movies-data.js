@@ -11,7 +11,7 @@ window._MOVIES_DATA = [
     age: "R",
     duration: "1h 50m",
     genres: [
-      "Action",
+      "Comedy",
       "Thriller"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/niQ4NBh2jqAf1hDZP5m6ReWFAb7.jpg",
