@@ -39,7 +39,7 @@ window._MOVIES_DATA = [
       "Drama",
       "Sci-Fi"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vfZxVHextAGC70zrNhS8lsROqP1.jpg",
+    poster: "https://image.tmdb.org/t/p/original/hw3MKgKWk9ZtpsyI3yX8qALXvF.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/c8hvRzN5nijvp1VcSs8nqHly1bK.jpg",
     videoUrl: "1032863",
     trailerUrl: "https://youtu.be/xwdamnfS6IM?si=ErZcdvylKQWHd3u_",
