@@ -34,7 +34,7 @@ window._SERIES_DATA = [
           { "episode": 2, "title": "The Hunt", "airDate": "2022-09-23", "rating": "TBR" },
           { "episode": 3, "title": "Little Woody", "airDate": "2022-09-30", "rating": "TBR" },
           { "episode": 4, "title": "Episode #1.4", "airDate": "2022-10-7", "rating": },
-          { "episode": 5, "title": "Episode #1.5", "airDate": "2022-10-14", "rating": "" },
+          { "episode": 5, "title": "Episode #1.5", "airDate": "2022-10-14", "rating": "TBR" },
           { "episode": 6, "title": "Episode #1.6", "airDate": "2022-10-21", "rating": },
           { "episode": 7, "title": "Episode #1.7", "airDate": "2022-10-28", "rating":  },
           { "episode": 8, "title": "Episode #1.8", "airDate": "2022-11-4", "rating":  },
