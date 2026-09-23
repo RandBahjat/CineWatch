@@ -28,6 +28,30 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
+    title: "The Love Hypothesis",
+    type: "Movie",
+    year: 2026,
+    rating: "TBR",
+    age: "R",
+    duration: "1h 50m",
+    genres: [
+      "Comedy",
+      "Romance"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vfZxVHextAGC70zrNhS8lsROqP1.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/c8hvRzN5nijvp1VcSs8nqHly1bK.jpg",
+    videoUrl: "1032863",
+    trailerUrl: "https://youtu.be/xwdamnfS6IM?si=ErZcdvylKQWHd3u_",
+    overview: "Olive Smith, a brilliant biology PhD candidate focused entirely on her cancer research, ends up in a bind when she needs to convince her best friend that she has moved on from a guy. In a moment of sheer panic, she impulsively kisses the first man she sees in the lab hallway—who happens to be Dr. Adam Carlsen, the department's most notorious, arrogant, and terrifying young professor. To her shock, Carlsen agrees to keep up a mutually beneficial fake dating arrangement, quickly leading to laboratory experiments where real romantic chemistry threatens to blow up their carefully calculated hypothesis.",
+    overviewKurdish: "ئۆلیڤ سمیس، خوێندکارێکی زیرەکی دکتۆرایە لە بەشی بایۆلۆجی کە تەواوی ژیانی بۆ لێکۆڵینەوەکانی شێرپەنجە تەرخان کردووە. کاتێک دەکەوێتە بارودۆخێکی ناچارکەرەوە بۆ ئەوەی بیسەلمێنێت لە پەیوەندییەکی نوێدایە، لە تاو شڵەژان بەڕێکەوت یەکەم پیاو ماچ دەکات کە دێتە بەردەمی—کە کەس نییە جگە لە دکتۆر ئادەم کارلسن، توندترین و بەناوبانگترین پرۆفیسۆری بەشەکەیان. بەڵام کاتێک پرۆفیسۆرەکە ڕازی دەبێت ببنە خۆشەویستی ساختە لەپێناو بەرژەوەندیی هەردوولایان، سنوری نێوان هاوکاریی دەستکرد و هەستی ڕاستەقینە تێکەڵ دەبێت و هاوکێشە زانستییەکانیان تێکدەچێت.",
+    director: "Claire Scanlon",
+    cast: ["Lili Reinhart, Tom Bateman, Rachel Marsh, Jaboukie Young-White, Nicholas Duvernay, Arty Froushan"],
+    trending: true,
+    featured: true,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "One Last Shot",
     type: "Movie",
     year: 2026,
