@@ -15,7 +15,7 @@ window._MOVIES_DATA = [
       "Romance"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vfZxVHextAGC70zrNhS8lsROqP1.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/8giIQcHpxgsPVP6c7aQtHl3txuh.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/c8hvRzN5nijvp1VcSs8nqHly1bK.jpg",
     videoUrl: "1607127",
     trailerUrl: "https://youtu.be/MqpsP5zGYtM?si=ljq6MUEqBoVmWOFm",
     overview: "Seasoned Navy SEAL Jake Harris is called back into action when the world is threatened by a disillusioned former comrade turned domestic terrorist, Elliot Carter. With the Joint Chiefs of Staff held hostage in a nuclear bunker and the clock ticking before the codes are extracted, Harris must lead his unit straight into enemy territory to stop the mercenaries from hijacking America's missile defense network in a relentless, continuous-take battle.",
