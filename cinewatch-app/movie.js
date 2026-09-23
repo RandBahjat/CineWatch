@@ -597,8 +597,21 @@ window.addEventListener("pageshow", (event) => {
 });
 
 async function initApp() {
+  const params = new URLSearchParams(window.location.search);
+  const targetSection = params.get('section') || params.get('view');
+  let isNavigated = false;
+  try {
+    isNavigated = !!(targetSection && targetSection !== 'home') || !!sessionStorage.getItem('cw_navigated');
+  } catch (e) {}
+
+  // If navigating/refreshing sections, kill the splash screen and logo immediately
+  if (isNavigated) {
+    const loader = document.getElementById("appLoader");
+    if (loader) loader.remove();
+  }
+
   const initStartTime = Date.now();
-  const MIN_INITIAL_LOAD_TIME = 950; // Match section transitions for unified site loading experience
+  const MIN_INITIAL_LOAD_TIME = isNavigated ? 0 : 350;
 
   const dismissLoader = async () => {
     const elapsed = Date.now() - initStartTime;
@@ -610,7 +623,7 @@ async function initApp() {
     // Complete top loading bar to 100%
     const bar = document.getElementById("cwTopLoadingBar");
     if (bar) {
-      bar.style.transition = "width 0.22s ease-out";
+      bar.style.transition = "width 0.18s ease-out";
       bar.style.width = "100%";
       setTimeout(() => {
         bar.style.opacity = "0";
@@ -618,18 +631,13 @@ async function initApp() {
           bar.classList.remove("active");
           bar.style.width = "0%";
           bar.style.transition = "";
-        }, 300);
-      }, 220);
+        }, 200);
+      }, 150);
     }
 
     const loader = document.getElementById("appLoader");
-    if (loader) {
-      loader.classList.add("fade-out");
-      setTimeout(() => {
-        if (loader && loader.parentNode) {
-          loader.remove();
-        }
-      }, 400);
+    if (loader && loader.parentNode) {
+      loader.remove();
     }
   };
 
