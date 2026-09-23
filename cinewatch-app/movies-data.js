@@ -7,8 +7,8 @@ window._MOVIES_DATA = [
     title: "One Last Shot",
     type: "Movie",
     year: 2026,
-    rating: 7.2,
-    age: "PG-13",
+    rating: 5.0,
+    age: "R",
     duration: "1h 41m",
     genres: [
       "Action",
