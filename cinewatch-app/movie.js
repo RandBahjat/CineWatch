@@ -2611,7 +2611,12 @@ function openDetailsModal(movieId) {
     state.previousView = state.activeView;
   }
 
-  window.history.replaceState(null, '', '?v=' + movie.id);
+  const currentUrl = new URL(window.location.href);
+  currentUrl.searchParams.set('v', movie.id);
+  const existingV = new URLSearchParams(window.location.search).get('v');
+  if (existingV !== String(movie.id)) {
+    window.history.pushState({ modal: 'details', movieId: movie.id, previousView: state.previousView }, '', currentUrl.toString());
+  }
 
   const mainContent = document.getElementById("mainContent");
   const heroBanner = document.getElementById("heroBanner");
