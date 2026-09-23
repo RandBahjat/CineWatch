@@ -17,7 +17,7 @@ window._MOVIES_DATA = [
       "Thriller"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/dJTWIecL2vxsCRl5G0lRhPsfrhc.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
     videoUrl: "1228834",
     trailerUrl: "https://youtu.be/NYC0v8xqQdM?si=mtAix-qrTt6Ecdyb",
     overview: "Haunt by a disastrous botch job during the Afghanistan pullout, a squad of ex-CIA operatives get back together when their veteran mentor Larry drops word about an unclaimed fortune hidden inside the undocumented Hotel Tehran. Led by field commander Tucker, the battle-worn unit slips deep into Iran under hostile fire, turning a reckless $25 million heist into a desperate, high-stakes rescue run behind enemy lines.",
