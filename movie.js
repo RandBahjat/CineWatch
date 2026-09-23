@@ -1842,6 +1842,10 @@ function switchView(viewName, immediate = false) {
     const currentParams = new URLSearchParams(window.location.search);
     const currentSection = currentParams.get('section') || currentParams.get('view') || 'home';
 
+    try {
+      sessionStorage.setItem('cw_navigated', '1');
+    } catch (e) {}
+
     // If clicking current section and URL already matches, trigger true browser reload
     if (state.activeView === viewName && currentSection === viewName) {
       window.location.reload();
