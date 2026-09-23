@@ -38,8 +38,7 @@ window._SERIES_DATA = [
           { "episode": 6, "title": "Lift Us Where Suffering Cannot Reach", "airDate": "2022-06-09", "rating": 7.7 },
           { "episode": 7, "title": "The Serene Squall", "airDate": "2022-06-16", "rating": 7.2 },
           { "episode": 8, "title": "The Elysian Kingdom", "airDate": "2022-06-23", "rating": 6.2 },
-          { "episode": 9, "title": "All Those Who Wander", "airDate": "2022-06-30", "rating": 8.2 },
-          { "episode": 10, "title": "A Quality of Mercy", "airDate": "2022-07-07", "rating": 9 }
+         
         ]
       },
   {
