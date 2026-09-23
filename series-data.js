@@ -3,7 +3,46 @@
 // Push to GitHub (or save — auto-sync will handle it) for changes to go live.
 
 window._SERIES_DATA = [
-  
+  {
+    "title": "Monster: The Lizzie Borden Story",
+    "type": "TV Show",
+    "year": 2026,
+    "rating": "7.5",
+    "age": "TV-MA",
+    "duration": "50m",
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "poster": "https://image.tmdb.org/t/p/original/57XScX1aYtKi1LvHYFQLPUxVhTG.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/gaew60NXUxok3Vmls7gkAT7lYW0.jpg",
+    "videoUrl": "299939",
+    "trailerUrl": "https://youtu.be/gYTzF1vna40",
+    "overview": "Trapped in a cruel Victorian-era household, Lizzie Borden kills her parents in a gory ax murder that shocks the nation.",
+    "overviewKurdish": "لیزی بۆردن، کە لە ماڵێکی دڵڕەقی سەردەمی ڤیکتۆریادا دەژی، دایک و باوکی بە شێوەیەکی دڕندانە بە تەور دەکوژێت کە هەموو وڵات تووشی شۆک دەکات.",
+    "director": "Ian Brennan, Ryan Murphy",
+    "cast": [
+      "Ella Beatty, Vicky Krieps, Sarah Paulson, Charlie Hunnam, Rebecca Hall, Billie Lourd, Jessica Barden"
+    ],
+    "trending": true,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          { "episode": 1, "title": "Bloodbath", "airDate": "2026-09-17", "rating": 7.5 },
+          { "episode": 2, "title": "Strong Kitty", "airDate": "2026-09-17", "rating": 7.5 },
+          { "episode": 3, "title": "Whack Job!", "airDate": "2026-09-17", "rating": 7.5 },
+          { "episode": 4, "title": "R.I.P (Rest in Pestilence) Abby Borden", "airDate": "2026-09-17", "rating": 7.5 },
+          { "episode": 5, "title": "41", "airDate": "2026-09-17", "rating": 7.5 },
+          { "episode": 6, "title": "Bed and Breakfast", "airDate": "2026-09-17", "rating": 7.5 },
+          { "episode": 7, "title": "The Trial of the Century", "airDate": "2026-09-17", "rating": 7.5 },
+          { "episode": 8, "title": "Carnival", "airDate": "2026-09-17", "rating": 7.5 }
+        ]
+      }
+    ]
+  },
   {
     "title": "Brothers",
     "type": "TV Show",
