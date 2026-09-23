@@ -36,7 +36,7 @@ window._SERIES_DATA = [
           { "episode": 4, "title": "Episode #1.4", "airDate": "2022-10-7", "rating": },
           { "episode": 5, "title": "Episode #1.5", "airDate": "2022-10-14", "rating":  },
           { "episode": 6, "title": "Episode #1.6", "airDate": "2022-10-21", "rating": },
-          { "episode": 7, "title": "Episode #1.7", "airDate": "2022-06-16", "rating": 7.2 },
+          { "episode": 7, "title": "Episode #1.7", "airDate": "2022-10-16", "rating": 7.2 },
           { "episode": 8, "title": "The Elysian Kingdom", "airDate": "2022-06-23", "rating": 6.2 },
          
         ]
