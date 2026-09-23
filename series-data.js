@@ -41,7 +41,8 @@ window._SERIES_DATA = [
          
         ]
       },
-      
+    ]
+  },
   {
     "title": "Star Trek: Strange New Worlds",
     "type": "TV Show",
