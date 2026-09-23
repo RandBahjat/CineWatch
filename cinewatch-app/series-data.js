@@ -14,7 +14,7 @@ window._SERIES_DATA = [
       "Comedy",
     ],
     "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/jD7ZQpDEZzAVReJzkOtmuFoIl2m.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/aLE7R8QZPpTiWZS48PS22i2OWbl.jpg",
     "videoUrl": "103516",
     "trailerUrl": "https://youtu.be/XL4bL9w8_b8",
     "overview": "Captain Christopher Pike commands the iconic U.S.S. Enterprise alongside Science Officer Spock and Number One in the years preceding Captain Kirk's legendary mission. Venturing into uncharted quadrants across the galaxy, the crew confronts enigmatic cosmic anomalies, first contacts with unpredictable alien civilizations, and philosophical moral dilemmas in the classic episodic spirit of exploratory space opera.",
