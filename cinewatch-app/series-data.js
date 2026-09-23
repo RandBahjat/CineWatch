@@ -45,6 +45,47 @@ window._SERIES_DATA = [
           { "episode": 10, "title": "A Quality of Mercy", "airDate": "2022-07-07", "rating": 9 }
         ]
       },
+  {
+    "title": "Star Trek: Strange New Worlds",
+    "type": "TV Show",
+    "year": 2022,
+    "rating": "8.1",
+    "age": "TV-14",
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "poster": "https://image.tmdb.org/t/p/original/97TTJuqiSMfU0DuXx1B4NG5QNP7.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
+    "videoUrl": "103516",
+    "trailerUrl": "https://youtu.be/XL4bL9w8_b8",
+    "overview": "Captain Christopher Pike commands the iconic U.S.S. Enterprise alongside Science Officer Spock and Number One in the years preceding Captain Kirk's legendary mission. Venturing into uncharted quadrants across the galaxy, the crew confronts enigmatic cosmic anomalies, first contacts with unpredictable alien civilizations, and philosophical moral dilemmas in the classic episodic spirit of exploratory space opera.",
+    "overviewKurdish": "کاپتن کریستۆفەر پایک سەرکردایەتی کەشتی ئاسمانی ئەنتەرپرایز دەکات شانبەشانی سپۆک و ژمارە یەک لە ساڵانی پێش دەستبەکاربوونی کاپتن کیرک. دەستەی کەشتییەکە گەشت دەکەن بۆ ناوچە نەناسراو و دوورەدەستەکانی گەردوون، و ڕووبەڕووی بوونەوەرە بێگانەکان، دیاردە سەیرە گەردوونییەکان و کێشە ئەخلاقییە ئاڵۆزەکان دەبنەوە لە چوارچێوەی گەشتێکی پڕ لە سەرکێشی بۆ دۆزینەوەی جیهانی نوێ.",
+    "director": "Akiva Goldsman, Alex Kurtzman, Jenny Lumet",
+    "cast": [
+      "Anson Mount, Ethan Peck, Christina Chong, Rebecca Romijn, Jess Bush, Celia Rose Gooding, Babs Olusanmokun"
+    ],
+    "trending": true,
+    "featured": true,
+    "is4k": true,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          { "episode": 1, "title": "Strange New Worlds", "airDate": "2022-05-05", "rating": 8.1 },
+          { "episode": 2, "title": "Children of the Comet", "airDate": "2022-05-12", "rating": 7.9 },
+          { "episode": 3, "title": "Ghost of Illyria", "airDate": "2022-05-19", "rating": 7.7 },
+          { "episode": 4, "title": "Memento Mori", "airDate": "2022-05-26", "rating": 8.3 },
+          { "episode": 5, "title": "Spock Amok", "airDate": "2022-06-02", "rating": 8 },
+          { "episode": 6, "title": "Lift Us Where Suffering Cannot Reach", "airDate": "2022-06-09", "rating": 7.7 },
+          { "episode": 7, "title": "The Serene Squall", "airDate": "2022-06-16", "rating": 7.2 },
+          { "episode": 8, "title": "The Elysian Kingdom", "airDate": "2022-06-23", "rating": 6.2 },
+          { "episode": 9, "title": "All Those Who Wander", "airDate": "2022-06-30", "rating": 8.2 },
+          { "episode": 10, "title": "A Quality of Mercy", "airDate": "2022-07-07", "rating": 9 }
+        ]
+      },
       {
         "season": 2,
         "episodes": [
