@@ -8,7 +8,7 @@ window._MOVIES_DATA = [
     type: "Movie",
     year: 2026,
     rating: 7.2,
-    age: "R",
+    age: "PG-13",
     duration: "2h 21m",
     genres: [
       "Crime",
