@@ -13,7 +13,7 @@ window._SERIES_DATA = [
     "genres": [
       "Comedy",
     ],
-    "poster": "https://image.tmdb.org/t/p/original/97TTJuqiSMfU0DuXx1B4NG5QNP7.jpg",
+    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/jD7ZQpDEZzAVReJzkOtmuFoIl2m.jpg",
     "backdrop": "https://image.tmdb.org/t/p/original/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
     "videoUrl": "103516",
     "trailerUrl": "https://youtu.be/XL4bL9w8_b8",
