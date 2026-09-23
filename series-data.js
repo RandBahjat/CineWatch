@@ -33,7 +33,7 @@ window._SERIES_DATA = [
           { "episode": 1, "title": "On the Road", "airDate": "2022-09-23", "rating": "TBR" },
           { "episode": 2, "title": "The Hunt", "airDate": "2022-09-23", "rating": "TBR" },
           { "episode": 3, "title": "Little Woody", "airDate": "2022-09-30", "rating": "TBR" },
-          { "episode": 4, "title": "Episode #1.4", "airDate": "2022-05-26", "rating":  },
+          { "episode": 4, "title": "Episode #1.4", "airDate": "2022-05-26", "rating": },
           { "episode": 5, "title": "Spock Amok", "airDate": "2022-06-02", "rating": 8 },
           { "episode": 6, "title": "Lift Us Where Suffering Cannot Reach", "airDate": "2022-06-09", "rating": 7.7 },
           { "episode": 7, "title": "The Serene Squall", "airDate": "2022-06-16", "rating": 7.2 },
