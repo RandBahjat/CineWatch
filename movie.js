@@ -5513,6 +5513,174 @@ function bindEventListeners() {
       }
     });
   }
+
+  // ==========================================
+  // MOUSE THUMB 4 (BACK) & POPSTATE NAVIGATION
+  // ==========================================
+
+  function handleGoBack() {
+    // 1. If Video Player is open, close it and return to movie/series info
+    const videoModal = document.getElementById("videoModal");
+    const playerModal = document.getElementById("playerModal");
+    const isVideoOpen = (videoModal && !videoModal.classList.contains("hidden")) ||
+                        (playerModal && !playerModal.classList.contains("hidden"));
+    if (isVideoOpen) {
+      if (typeof closeVideoPlayer === "function") {
+        closeVideoPlayer();
+        return true;
+      }
+    }
+
+    // 2. If Details view is open, close it and return smoothly to previous section
+    const detailsSection = document.getElementById("detailsSection");
+    if (state.activeView === "details" || (detailsSection && !detailsSection.classList.contains("hidden"))) {
+      const closeBtn = document.getElementById("closeDetailsBtn");
+      if (closeBtn) {
+        closeBtn.click();
+        return true;
+      }
+    }
+
+    // 3. If Search modal is open, close it
+    const searchModal = document.getElementById("searchModal");
+    if (searchModal && !searchModal.classList.contains("hidden")) {
+      if (typeof closeSearchModal === "function") closeSearchModal();
+      else searchModal.classList.add("hidden");
+      document.body.style.overflow = "";
+      return true;
+    }
+
+    // 4. If AI Assistant modal is open, close it
+    const aiModal = document.getElementById("aiModal");
+    if (aiModal && !aiModal.classList.contains("hidden")) {
+      aiModal.classList.add("hidden");
+      document.body.style.overflow = "";
+      return true;
+    }
+
+    // 5. If Report modal is open, close it
+    const reportModal = document.getElementById("reportModal");
+    if (reportModal && !reportModal.classList.contains("hidden")) {
+      reportModal.classList.add("hidden");
+      document.body.style.overflow = "";
+      return true;
+    }
+
+    // 6. If Auth modal is open, close it
+    const authModal = document.getElementById("authModal");
+    if (authModal && !authModal.classList.contains("hidden")) {
+      if (typeof closeAuthModal === "function") closeAuthModal();
+      else authModal.classList.add("hidden");
+      document.body.style.overflow = "";
+      return true;
+    }
+
+    // 7. If Account side panel is open, close it
+    const accountPanel = document.getElementById("accountSidePanel");
+    if (accountPanel && accountPanel.classList.contains("open")) {
+      accountPanel.classList.remove("open");
+      const overlay = document.getElementById("accountPanelOverlay");
+      if (overlay) overlay.classList.remove("active");
+      document.body.style.overflow = "";
+      return true;
+    }
+
+    // 8. If Mobile menu is open, close it
+    const mobileMenu = document.getElementById("mobileMenuOverlay");
+    if (mobileMenu && mobileMenu.classList.contains("active")) {
+      mobileMenu.classList.remove("active");
+      document.body.style.overflow = "";
+      return true;
+    }
+
+    // 9. Standard history navigation
+    if (window.history.length > 1) {
+      window.history.back();
+      return true;
+    } else if (state.activeView && state.activeView !== "home") {
+      switchView("home");
+      return true;
+    }
+
+    return false;
+  }
+
+  let _lastBackEventTime = 0;
+  function triggerGoBack() {
+    const now = Date.now();
+    if (now - _lastBackEventTime < 350) return; // Prevent double trigger across mouseup & pointerup
+    _lastBackEventTime = now;
+    handleGoBack();
+  }
+
+  // Mouse Thumb 4 (Browser Back / XButton1 / button index 3) and Thumb 5 (Forward / button index 4) support
+  window.addEventListener("mouseup", (e) => {
+    if (e.button === 3) {
+      e.preventDefault();
+      e.stopPropagation();
+      triggerGoBack();
+    } else if (e.button === 4) {
+      e.preventDefault();
+      e.stopPropagation();
+      window.history.forward();
+    }
+  }, true);
+
+  window.addEventListener("pointerup", (e) => {
+    if (e.button === 3) {
+      e.preventDefault();
+      e.stopPropagation();
+      triggerGoBack();
+    } else if (e.button === 4) {
+      e.preventDefault();
+      e.stopPropagation();
+      window.history.forward();
+    }
+  }, true);
+
+  window.addEventListener("auxclick", (e) => {
+    if (e.button === 3) {
+      e.preventDefault();
+      e.stopPropagation();
+      triggerGoBack();
+    } else if (e.button === 4) {
+      e.preventDefault();
+      e.stopPropagation();
+      window.history.forward();
+    }
+  }, true);
+
+  // Global Popstate Handler (browser Back / Forward buttons & Alt+Left/Right)
+  window.addEventListener("popstate", (e) => {
+    const videoModal = document.getElementById("videoModal");
+    const playerModal = document.getElementById("playerModal");
+    if ((videoModal && !videoModal.classList.contains("hidden")) ||
+        (playerModal && !playerModal.classList.contains("hidden"))) {
+      if (typeof closeVideoPlayer === "function") {
+        closeVideoPlayer();
+        return;
+      }
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const deepLinkMovie = params.get('v');
+
+    if (state.activeView === "details" && !deepLinkMovie) {
+      const closeBtn = document.getElementById("closeDetailsBtn");
+      if (closeBtn) {
+        closeBtn.click();
+        return;
+      }
+    } else if (deepLinkMovie && state.activeView !== "details") {
+      openDetailsModal(deepLinkMovie);
+      return;
+    }
+
+    const targetSection = params.get('section') || params.get('view') || 'home';
+    if (state.activeView !== targetSection && SECTION_VIEWS.includes(targetSection)) {
+      _performSwitchView(targetSection);
+    }
+  });
 }
 
 
