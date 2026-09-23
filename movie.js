@@ -6545,4 +6545,6 @@ function triggerPop() {
   stars.forEach(star => {
     star.classList.remove('pop');
     void star.offsetWidth;
-    star.classList.add('pop')
+    star.classList.add('pop');
+  });
+}
