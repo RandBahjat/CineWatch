@@ -35,7 +35,7 @@ window._SERIES_DATA = [
           { "episode": 3, "title": "Little Woody", "airDate": "2022-09-30", "rating": "TBR" },
           { "episode": 4, "title": "Episode #1.4", "airDate": "2022-10-7", "rating": },
           { "episode": 5, "title": "Episode #1.5", "airDate": "2022-10-14", "rating":  },
-          { "episode": 6, "title": "Episode #1.6", "airDate": "2022-06-09", "rating": 7.7 },
+          { "episode": 6, "title": "Episode #1.6", "airDate": "2022-10-09", "rating": 7.7 },
           { "episode": 7, "title": "The Serene Squall", "airDate": "2022-06-16", "rating": 7.2 },
           { "episode": 8, "title": "The Elysian Kingdom", "airDate": "2022-06-23", "rating": 6.2 },
          
