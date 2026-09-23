@@ -12,9 +12,9 @@ window._MOVIES_DATA = [
     duration: "1h 50m",
     genres: [
       "Comedy",
-      "Thriller"
+      "Romance"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/niQ4NBh2jqAf1hDZP5m6ReWFAb7.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/vfZxVHextAGC70zrNhS8lsROqP1.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/8giIQcHpxgsPVP6c7aQtHl3txuh.jpg",
     videoUrl: "1607127",
     trailerUrl: "https://youtu.be/MqpsP5zGYtM?si=ljq6MUEqBoVmWOFm",
@@ -1512,7 +1512,7 @@ window._MOVIES_DATA = [
     is4k: false,
     seasons: []
   },
- 
+
   {
     title: "The Amazing Spider-Man",
     type: "Movie",
@@ -1546,7 +1546,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
 
-   {
+  {
     title: "The Amazing Spider-Man 2",
     type: "Movie",
     year: 2014,
