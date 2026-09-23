@@ -9,7 +9,7 @@ window._MOVIES_DATA = [
     year: 2026,
     rating: 7.2,
     age: "PG-13",
-    duration: "2h 21m",
+    duration: "1h 41m",
     genres: [
       "Crime",
       "Drama",
