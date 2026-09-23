@@ -13,6 +13,7 @@ window._MOVIES_DATA = [
     genres: [
       "Action",
       "Adventure",
+      "Drama",
       "Thriller",
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/yopXjun3ICFfJci2ukcEzceZjUs.jpg",
