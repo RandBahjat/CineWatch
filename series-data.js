@@ -11,10 +11,7 @@ window._SERIES_DATA = [
     "rating": "TBR",
     "age": "TV-MA",
     "genres": [
-      "Sci-Fi",
-      "Action",
-      "Adventure",
-      "Drama"
+      "Comedy",
     ],
     "poster": "https://image.tmdb.org/t/p/original/97TTJuqiSMfU0DuXx1B4NG5QNP7.jpg",
     "backdrop": "https://image.tmdb.org/t/p/original/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
