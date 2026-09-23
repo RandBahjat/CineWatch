@@ -5,9 +5,9 @@
 window._SERIES_DATA = [
   
   {
-    "title": "Star Trek: Strange New Worlds",
+    "title": "Brothers",
     "type": "TV Show",
-    "year": 2022,
+    "year": 2026,
     "rating": "8.1",
     "age": "TV-14",
     "genres": [
