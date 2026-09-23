@@ -20,7 +20,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
     videoUrl: "1263337",
     trailerUrl: "https://youtu.be/uqn8ga1y3ow?si=Y56DTXZBs8J7hua5",
-    overview: "Haunt by a disastrous botch job during the Afghanistan pullout, a squad of ex-CIA operatives get back together when their veteran mentor Larry drops word about an unclaimed fortune hidden inside the undocumented Hotel Tehran. Led by field commander Tucker, the battle-worn unit slips deep into Iran under hostile fire, turning a reckless $25 million heist into a desperate, high-stakes rescue run behind enemy lines.",
+    overview: "After a devastating plane crash leaves them stranded in the freezing Alaskan wilderness, retired Army Special Forces officer James Belmont and his combat dog, Odin, face a brutal battle against nature. With no rescue coming, the two must trek across 58 miles of unforgiving terrain, facing extreme cold, lethal predators, and their own past combat trauma in an unbreakable test of survival and loyalty.",
     overviewKurdish: "دوای ئەوەی ئەرکەکەیان لە ئەفغانستان تووشی شکستێکی گەورە دەبێت، تیمێکی پێشووی سیخوڕانی CIA جارێکی تر کۆدەبنەوە کاتێک لاری، سەرپەرشتیار و فەرماندەی دێرینیان، نهێنیی بوونی ٢٥ ملیۆن دۆلاری شاردراوە لە هوتێلێکی نادیاری تاران ئاشکرا دەکات. لەژێر سەرپەرشتی تاکەر، تیمەکە دەچنە ناو جەرگەی ئێران و خۆیان دەخەنە ناو مەترسییەکی گەورەوە، بەڵام دزینی پارەکە دەگۆڕێت بۆ ئۆپەراسیۆنێکی توندوتیژی ڕزگارکردن و هەوڵدان بۆ مانەوە لە ژیان لەناو خاکی دوژمندا.",
     director: "Guy Moshe",
     cast: ["Zachary Levi, Liam Neeson, Titus Welliver, Wes Chatham, Elnaaz Norouzi, Quincy Isaiah, Annet Mahendru, Augusto Aguilera"],
