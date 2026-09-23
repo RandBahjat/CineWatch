@@ -110,7 +110,7 @@ window._MOVIES_DATA = [
     age: "TBR",
     duration: "1h 26m",
     genres: [
-      "Action",
+      "Horror",
       "Adventure",
       "Drama",
       "Thriller"
