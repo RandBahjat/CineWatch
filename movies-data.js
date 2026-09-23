@@ -119,7 +119,7 @@ window._MOVIES_DATA = [
     trailerUrl: "https://youtu.be/uqn8ga1y3ow?si=Y56DTXZBs8J7hua5",
     overview: "An idyllic summer town descends into utter madness and bloody chaos when a sinister ice cream truck driver serves local children frozen confections with horrifying effects. After consuming the tainted treats, the town's youth are transformed into ravenous, bloodthirsty killers, turning a peaceful suburban neighborhood into a waking nightmare.",
     overviewKurdish: "شارۆچکەیەکی ئارام و بێدەنگ لە وەرزی هاویندا تووشی شێتی و کارەساتی خوێناوی دەبێت، کاتێک شۆفێرێکی نەناسراو و شەڕەنگێزی ئۆتۆمبێلی ئایسکرێم شیرینی بە تام بە منداڵان دەفرۆشێت کە کاریگەرییەکی تۆقێنەریان هەیە. دوای خواردنی ئایسکرێمە ژەهراوییەکان، منداڵەکان دەگۆڕێن بۆ بکوژانی دڕندە و توندوتیژ، و ژیانی گوندەکە دەخەنە ناو کابوسێکی پڕ لە ترس و مەرگەوە.",
-    director: "David Ayer",
+    director: "Eli Roth",
     cast: ["Brad Pitt, J.K. Simmons, Anna Lambe, Uber (Odin)"],
     trending: true,
     featured: true,
