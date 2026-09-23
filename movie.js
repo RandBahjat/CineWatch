@@ -11,7 +11,7 @@ if (window.location.hash.includes("type=recovery")) {
 // ==========================================
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
-let FEATURED_TITLES = ["The Love Hypothesis","Resident Evil","Neagley","Reacher","The End of Oak Street","Stranger Things: Tales from '85","Slow Horses","City of Blood","Mayday","The Runner","Coyote vs. Acme","Lanterns","Spider-Man: Brand New Day","The Whisper Man",
+let FEATURED_TITLES = ["The Love Hypothesis","One Last Shot","Resident Evil","Neagley","Reacher","The End of Oak Street","Stranger Things: Tales from '85","Slow Horses","City of Blood","Mayday","The Runner","Coyote vs. Acme","Lanterns","Spider-Man: Brand New Day","The Whisper Man",
   "Drawn Together"];
 let TOP_10_TRENDING_TODAY = ["The Love Hypothesis","One Last Shot",
   "Resident Evil","Brothers","c","Spider-Man: Brand New Day","Heart of the Beast" , "Digger ","Slow Horses", "Lanterns","MobLand"];
@@ -6545,6 +6545,4 @@ function triggerPop() {
   stars.forEach(star => {
     star.classList.remove('pop');
     void star.offsetWidth;
-    star.classList.add('pop');
-  });
-}
+    star.classList.add('pop')
