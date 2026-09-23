@@ -44,7 +44,7 @@ window._MOVIES_DATA = [
     videoUrl: "1248832",
     trailerUrl: "https://youtu.be/nC0Gu5AXP9M?si=jOEnIIg_UJyOcobR",
     overview: "Digger Rockwell, an eccentric and phenomenally wealthy oil tycoon widely regarded as the most powerful man in the world, unleashes an unprecedented global disaster. In a state of spiraling madness and colossal ego, he embarks on an increasingly erratic, catastrophic mission to prove to the entire planet that he alone is humanity's ultimate savior before the fallout obliterates civilization.",
-    overviewKurdish: "ئۆلیڤ سمیس، خوێندکارێکی زیرەکی دکتۆرایە لە بەشی بایۆلۆجی کە تەواوی ژیانی بۆ لێکۆڵینەوەکانی شێرپەنجە تەرخان کردووە. کاتێک دەکەوێتە بارودۆخێکی ناچارکەرەوە بۆ ئەوەی بیسەلمێنێت لە پەیوەندییەکی نوێدایە، لە تاو شڵەژان بەڕێکەوت یەکەم پیاو ماچ دەکات کە دێتە بەردەمی—کە کەس نییە جگە لە دکتۆر ئادەم کارلسن، توندترین و بەناوبانگترین پرۆفیسۆری بەشەکەیان. بەڵام کاتێک پرۆفیسۆرەکە ڕازی دەبێت ببنە خۆشەویستی ساختە لەپێناو بەرژەوەندیی هەردوولایان، سنوری نێوان هاوکاریی دەستکرد و هەستی ڕاستەقینە تێکەڵ دەبێت و هاوکێشە زانستییەکانیان تێکدەچێت.",
+    overviewKurdish: "دیگەر ڕۆکوێڵ، بازرگانێکی دەوڵەمەندی نەوت و بەهێزترین پیاوی جیهان، بەهۆی بڕیارە کتوپڕەکانیەوە کارەساتێکی گەورەی جیهانی بەرپا دەکات. لە کاتێکدا جیهان بەرەو وێرانی دەچێت، دیگەر دەکەوێتە ناو کێبڕکێیەکی شێتانە لەگەڵ کات تاوەکو بیسەلمێنێت کە تەنها خۆی دەتوانێت مرۆڤایەتی لەو وێرانکارییە ڕزگار بکات کە خۆی بە دەستی خۆی دروستی کردووە.",
     director: "Claire Scanlon",
     cast: ["Lili Reinhart, Tom Bateman, Rachel Marsh, Jaboukie Young-White, Nicholas Duvernay, Arty Froushan"],
     trending: true,
