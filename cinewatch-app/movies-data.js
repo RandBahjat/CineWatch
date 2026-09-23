@@ -16,7 +16,7 @@ window._MOVIES_DATA = [
       "Drama",
       "Thriller"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/yopXjun3ICFfJci2ukcEzceZjUs.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/dJTWIecL2vxsCRl5G0lRhPsfrhc.jpg",
     videoUrl: "1228834",
     trailerUrl: "https://youtu.be/NYC0v8xqQdM?si=mtAix-qrTt6Ecdyb",
