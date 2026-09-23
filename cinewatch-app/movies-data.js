@@ -28,7 +28,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "The Love Hypothesis",
+    title: "Digger",
     type: "Movie",
     year: 2026,
     rating: "TBR",
