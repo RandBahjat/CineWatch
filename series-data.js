@@ -37,7 +37,7 @@ window._SERIES_DATA = [
           { "episode": 5, "title": "Episode #1.5", "airDate": "2022-10-14", "rating":  },
           { "episode": 6, "title": "Episode #1.6", "airDate": "2022-10-21", "rating": },
           { "episode": 7, "title": "Episode #1.7", "airDate": "2022-10-28", "rating":  },
-          { "episode": 8, "title": "Episode #1.8", "airDate": "2022-10-23", "rating": 6.2 },
+          { "episode": 8, "title": "Episode #1.8", "airDate": "2022-11-4", "rating": 6.2 },
          
         ]
       },
