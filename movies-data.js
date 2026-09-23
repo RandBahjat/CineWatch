@@ -18,7 +18,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/8giIQcHpxgsPVP6c7aQtHl3txuh.jpg",
     videoUrl: "1607127",
     trailerUrl: "https://youtu.be/MqpsP5zGYtM?si=ljq6MUEqBoVmWOFm",
-    overview: "After a devastating plane crash leaves them stranded in the freezing Alaskan wilderness, retired Army Special Forces officer James Belmont and his combat dog, Odin, face a brutal battle against nature. With no rescue coming, the two must trek across 58 miles of unforgiving terrain, facing extreme cold, lethal predators, and their own past combat trauma in an unbreakable test of survival and loyalty.",
+    overview: "Seasoned Navy SEAL Jake Harris is called back into action when the world is threatened by a disillusioned former comrade turned domestic terrorist, Elliot Carter. With the Joint Chiefs of Staff held hostage in a nuclear bunker and the clock ticking before the codes are extracted, Harris must lead his unit straight into enemy territory to stop the mercenaries from hijacking America's missile defense network in a relentless, continuous-take battle.",
     overviewKurdish: "دوای کەوتنەخوارەوەی فڕۆکەکەیان لە ناوچە سەهۆڵاوییە چۆڵەوانەکانی ئەلاسکا، جەیمس بێلمۆنت، ئەفسەری پێشووی هێزە تایبەتەکان، لەگەڵ ئۆدینی سەگی سەربازیی خۆیدا لە دۆخێکی سەختدا گیر دەخۆن. بەبێ بوونی هیچ هیوایەکی رزگارکردن، دەبێت ٥٨ میل بەناو بەفر، سەرما و دڕندە کێوییەکاندا ببڕن بۆ مانەوە لە ژیاندا، لە کاتێکدا پەیوەندی و وەفاداریی نێوان ئەم سەربازە و سەگەکەی دەبێتە تاکە هێز بۆ بەرگەگرتنی ئەم جەنگە قورسە.",
     director: "David Ayer",
     cast: ["Brad Pitt, J.K. Simmons, Anna Lambe, Uber (Odin)"],
