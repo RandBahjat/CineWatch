@@ -4,7 +4,7 @@
 
 window._MOVIES_DATA = [
   {
-    title: "Heart of the Beast",
+    title: "One Last Shot",
     type: "Movie",
     year: 2026,
     rating: 7.2,
