@@ -29,6 +29,31 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
+    title: "The Fix",
+    type: "Movie",
+    year: 2026,
+    rating: 4.8,
+    age: "R",
+    duration: "2h 21m",
+    genres: [
+      "Crime",
+      "Drama",
+      "Thriller",
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/yopXjun3ICFfJci2ukcEzceZjUs.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/dJTWIecL2vxsCRl5G0lRhPsfrhc.jpg",
+    videoUrl: "1228834",
+    trailerUrl: "https://youtu.be/NYC0v8xqQdM?si=mtAix-qrTt6Ecdyb",
+    overview: "Haunt by a disastrous botch job during the Afghanistan pullout, a squad of ex-CIA operatives get back together when their veteran mentor Larry drops word about an unclaimed fortune hidden inside the undocumented Hotel Tehran. Led by field commander Tucker, the battle-worn unit slips deep into Iran under hostile fire, turning a reckless $25 million heist into a desperate, high-stakes rescue run behind enemy lines.",
+    overviewKurdish: "دوای ئەوەی ئەرکەکەیان لە ئەفغانستان تووشی شکستێکی گەورە دەبێت، تیمێکی پێشووی سیخوڕانی CIA جارێکی تر کۆدەبنەوە کاتێک لاری، سەرپەرشتیار و فەرماندەی دێرینیان، نهێنیی بوونی ٢٥ ملیۆن دۆلاری شاردراوە لە هوتێلێکی نادیاری تاران ئاشکرا دەکات. لەژێر سەرپەرشتی تاکەر، تیمەکە دەچنە ناو جەرگەی ئێران و خۆیان دەخەنە ناو مەترسییەکی گەورەوە، بەڵام دزینی پارەکە دەگۆڕێت بۆ ئۆپەراسیۆنێکی توندوتیژی ڕزگارکردن و هەوڵدان بۆ مانەوە لە ژیان لەناو خاکی دوژمندا.",
+    director: "Guy Moshe",
+    cast: ["Zachary Levi, Liam Neeson, Titus Welliver, Wes Chatham, Elnaaz Norouzi, Quincy Isaiah, Annet Mahendru, Augusto Aguilera"],
+    trending: true,
+    featured: true,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "The Rivals of Amziah King",
     type: "Movie",
     year: 2026,
