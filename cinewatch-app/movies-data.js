@@ -28,6 +28,30 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
+    title: "One Last Shot",
+    type: "Movie",
+    year: 2026,
+    rating: 5.0,
+    age: "R",
+    duration: "1h 38m",
+    genres: [
+      "Action",
+      "Thriller"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/niQ4NBh2jqAf1hDZP5m6ReWFAb7.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/8giIQcHpxgsPVP6c7aQtHl3txuh.jpg",
+    videoUrl: "1607127",
+    trailerUrl: "https://youtu.be/MqpsP5zGYtM?si=ljq6MUEqBoVmWOFm",
+    overview: "Seasoned Navy SEAL Jake Harris is called back into action when the world is threatened by a disillusioned former comrade turned domestic terrorist, Elliot Carter. With the Joint Chiefs of Staff held hostage in a nuclear bunker and the clock ticking before the codes are extracted, Harris must lead his unit straight into enemy territory to stop the mercenaries from hijacking America's missile defense network in a relentless, continuous-take battle.",
+    overviewKurdish: "جەیک هاریست سەربازی بەئەزموونی هێزە تایبەتەکانی دەریایی (Navy SEAL)، ناچار دەبێتەوە بگەڕێتەوە بۆ ناو مەیدانی جەنگ کاتێک هاوڕێ و سەربازی پێشووی، ئیلیۆت کارتەر، دەبێتە تیرۆریستێکی مەترسیدار و دەست بەسەر ژووری فەرماندەیی چەکی ئەتۆمیدا دەگرێت. لە کاتێکدا کات بەرەو تەواوبوون دەچێت و مەترسیی لەکارخستنی سیستەمی بەرگریی مووشەکی دروست دەبێت، هاریست دەبێت بە تەنیا و لە ڕێگەی شەڕێکی بێوەستان و نەپچڕاوەوە بەرەنگاری ئەم پیلانە مەرگهێنەرە ببێتەوە.",
+    director: "James Nunn",
+    cast: ["Scott Adkins, Steven Cree, Hannah Ware, Dolph Lundgren, Kane Kosugi, Neil Linpow, Ray Fearon"],
+    trending: true,
+    featured: true,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "Heart of the Beast",
     type: "Movie",
     year: 2026,
