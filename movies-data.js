@@ -21,7 +21,7 @@ window._MOVIES_DATA = [
     overview: "Seasoned Navy SEAL Jake Harris is called back into action when the world is threatened by a disillusioned former comrade turned domestic terrorist, Elliot Carter. With the Joint Chiefs of Staff held hostage in a nuclear bunker and the clock ticking before the codes are extracted, Harris must lead his unit straight into enemy territory to stop the mercenaries from hijacking America's missile defense network in a relentless, continuous-take battle.",
     overviewKurdish: "جەیک هاریست سەربازی بەئەزموونی هێزە تایبەتەکانی دەریایی (Navy SEAL)، ناچار دەبێتەوە بگەڕێتەوە بۆ ناو مەیدانی جەنگ کاتێک هاوڕێ و سەربازی پێشووی، ئیلیۆت کارتەر، دەبێتە تیرۆریستێکی مەترسیدار و دەست بەسەر ژووری فەرماندەیی چەکی ئەتۆمیدا دەگرێت. لە کاتێکدا کات بەرەو تەواوبوون دەچێت و مەترسیی لەکارخستنی سیستەمی بەرگریی مووشەکی دروست دەبێت، هاریست دەبێت بە تەنیا و لە ڕێگەی شەڕێکی بێوەستان و نەپچڕاوەوە بەرەنگاری ئەم پیلانە مەرگهێنەرە ببێتەوە.",
     director: "James Nunn",
-    cast: ["Brad Pitt, J.K. Simmons, Anna Lambe, Uber (Odin)"],
+    cast: ["Scott Adkins, Steven Cree, Hannah Ware, Dolph Lundgren, Kane Kosugi, Neil Linpow, Ray Fearon"],
     trending: true,
     featured: true,
     is4k: false,
