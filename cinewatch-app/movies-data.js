@@ -4,7 +4,7 @@
 
 window._MOVIES_DATA = [
   {
-    title: "The Fix",
+    title: "Heart of the Beast",
     type: "Movie",
     year: 2026,
     rating: 4.8,
