@@ -103,7 +103,7 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
-    title: "Heart of the Beast",
+    title: "Ice Cream Man",
     type: "Movie",
     year: 2026,
     rating: 7.2,
