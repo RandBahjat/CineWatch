@@ -114,7 +114,7 @@ window._MOVIES_DATA = [
       "Comedy",
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/vCSLkuWMboVtEsBsRzZgx9pzPfG.jpg",
     videoUrl: "1477712",
     trailerUrl: "https://youtu.be/uqn8ga1y3ow?si=Y56DTXZBs8J7hua5",
     overview: "An idyllic summer town descends into utter madness and bloody chaos when a sinister ice cream truck driver serves local children frozen confections with horrifying effects. After consuming the tainted treats, the town's youth are transformed into ravenous, bloodthirsty killers, turning a peaceful suburban neighborhood into a waking nightmare.",
