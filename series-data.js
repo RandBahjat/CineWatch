@@ -21,7 +21,7 @@ window._SERIES_DATA = [
     "overviewKurdish": "لە زنجیرەیەکی کۆمێدیی سەرنجڕاکێشدا، ماسیۆ مەکانەهەی و وودی هارێڵسن وەک دوو هاوڕێی نزیک ڕۆڵی وەهمیی خۆیان دەگێڕنەوە، کە بڕیار دەدەن لەگەڵ خێزانەکانیاندا لە کێڵگە گەورەکەی مەکانەهەی لە تێکساس پێکەوە بژین. لە کاتێکدا هەردووکیان ڕووبەڕووی کێشە خێزانییەکان و جیاوازییەکانی شێوازی ژیانیان دەبنەوە، نهێنییەکی شۆکهێنەری ڕابردوو ئاشکرا دەبێت کە دەریدەخات ڕەنگە لە ڕاستیدا ئەم دوو هاوڕێیە برای یەکتر بن.",
     "director": "Trent O'Donnell and Jason Winer.",
     "cast": [
-      "Anson Mount, Ethan Peck, Christina Chong, Rebecca Romijn, Jess Bush, Celia Rose Gooding, Babs Olusanmokun"
+      "Matthew McConaughey, Woody Harrelson, Natalie Martinez, Brittany Ishibashi, Holland Taylor, Nolan Almeida, Highdee Kuan"
     ],
     "trending": true,
     "featured": true,
