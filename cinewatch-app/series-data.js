@@ -17,7 +17,7 @@ window._SERIES_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/original/aLE7R8QZPpTiWZS48PS22i2OWbl.jpg",
     "videoUrl": "250203",
     "trailerUrl": "https://youtu.be/fIKFnzIcfcA?si=2So0zvqfa1X2saqf",
-    "overview": "Captain Christopher Pike commands the iconic U.S.S. Enterprise alongside Science Officer Spock and Number One in the years preceding Captain Kirk's legendary mission. Venturing into uncharted quadrants across the galaxy, the crew confronts enigmatic cosmic anomalies, first contacts with unpredictable alien civilizations, and philosophical moral dilemmas in the classic episodic spirit of exploratory space opera.",
+    "overview": "Playing exaggerated, fictionalized versions of themselves, longtime best friends Matthew McConaughey and Woody Harrelson decide to combine their households and move their families onto McConaughey's sprawling Texas ranch. While navigating cultural clashes, parenting chaos, and fragile male egos under one roof, their lifelong bond is tested when a long-hidden family secret comes to light—revealing that the two may actually be biological half-brothers.",
     "overviewKurdish": "کاپتن کریستۆفەر پایک سەرکردایەتی کەشتی ئاسمانی ئەنتەرپرایز دەکات شانبەشانی سپۆک و ژمارە یەک لە ساڵانی پێش دەستبەکاربوونی کاپتن کیرک. دەستەی کەشتییەکە گەشت دەکەن بۆ ناوچە نەناسراو و دوورەدەستەکانی گەردوون، و ڕووبەڕووی بوونەوەرە بێگانەکان، دیاردە سەیرە گەردوونییەکان و کێشە ئەخلاقییە ئاڵۆزەکان دەبنەوە لە چوارچێوەی گەشتێکی پڕ لە سەرکێشی بۆ دۆزینەوەی جیهانی نوێ.",
     "director": "Akiva Goldsman, Alex Kurtzman, Jenny Lumet",
     "cast": [
