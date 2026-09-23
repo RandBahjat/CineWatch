@@ -4753,11 +4753,13 @@ function bindEventListeners() {
 
     detailsSection.style.opacity = "0";
 
-    // Clear the deep link from the URL
-    window.history.replaceState(null, '', window.location.pathname);
+    const returnView = state.previousView || "home";
+    const previousSection = (returnView && returnView !== 'home') ? returnView : null;
+    const restoredUrl = previousSection ? getSectionUrl(previousSection) : window.location.pathname;
+    window.history.replaceState(null, '', restoredUrl);
 
     setTimeout(() => {
-      switchView(state.previousView || "home");
+      switchView(returnView, true);
 
       const mainContent = document.getElementById("mainContent");
       const heroBanner = document.getElementById("heroBanner");
