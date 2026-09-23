@@ -562,6 +562,40 @@ function recordWatchEvent(movieId) {
 // 3. UI RENDERERS & CONTROLLERS
 // ==========================================
 
+const SECTION_VIEWS = ['home', 'movies', 'series', 'anime', 'watchlist', 'continue'];
+
+function getSectionUrl(sectionName) {
+  try {
+    const url = new URL(window.location.href);
+    url.searchParams.delete('v');
+    url.searchParams.delete('movie');
+    url.searchParams.delete('series');
+    if (sectionName === 'home') {
+      url.searchParams.delete('section');
+      url.searchParams.delete('view');
+    } else {
+      url.searchParams.delete('view');
+      url.searchParams.set('section', sectionName);
+    }
+    return url.toString();
+  } catch (e) {
+    return sectionName === 'home' ? './' : `?section=${encodeURIComponent(sectionName)}`;
+  }
+}
+
+// Clear any stuck loader if page was cached/restored via bfcache
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted) {
+    const loader = document.getElementById("appLoader");
+    if (loader) loader.remove();
+    const bar = document.getElementById("cwTopLoadingBar");
+    if (bar) {
+      bar.classList.remove("active");
+      bar.style.width = "0%";
+    }
+  }
+});
+
 async function initApp() {
   const initStartTime = Date.now();
   const MIN_INITIAL_LOAD_TIME = 950; // Match section transitions for unified site loading experience
@@ -622,6 +656,13 @@ async function initApp() {
     renderContinueWatchingShelf();
     if (typeof renderBecauseYouWatchedShelf === "function") renderBecauseYouWatchedShelf();
     if (typeof renderWatchlistHomeShelf === "function") renderWatchlistHomeShelf();
+
+    // Check for target section parameter from full-page reload
+    const params = new URLSearchParams(window.location.search);
+    const targetSection = params.get('section') || params.get('view');
+    if (targetSection && targetSection !== 'home' && SECTION_VIEWS.includes(targetSection)) {
+      _performSwitchView(targetSection);
+    }
 
     // Start hero auto slide (managed by startHeroAutoplay)
   } catch (err) {
