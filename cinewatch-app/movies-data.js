@@ -15,7 +15,7 @@ window._MOVIES_DATA = [
       "Thriller"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/niQ4NBh2jqAf1hDZP5m6ReWFAb7.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/8giIQcHpxgsPVP6c7aQtHl3txuh.jpg",
     videoUrl: "1263337",
     trailerUrl: "https://youtu.be/uqn8ga1y3ow?si=Y56DTXZBs8J7hua5",
     overview: "After a devastating plane crash leaves them stranded in the freezing Alaskan wilderness, retired Army Special Forces officer James Belmont and his combat dog, Odin, face a brutal battle against nature. With no rescue coming, the two must trek across 58 miles of unforgiving terrain, facing extreme cold, lethal predators, and their own past combat trauma in an unbreakable test of survival and loyalty.",
