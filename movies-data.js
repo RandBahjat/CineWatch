@@ -14,7 +14,7 @@ window._MOVIES_DATA = [
       "Action",
       "Adventure",
       "Drama",
-      "Thriller",
+      "Thriller"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/yopXjun3ICFfJci2ukcEzceZjUs.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/dJTWIecL2vxsCRl5G0lRhPsfrhc.jpg",
