@@ -108,7 +108,7 @@ window._MOVIES_DATA = [
     year: 2026,
     rating: 3.9,
     age: "TBR",
-    duration: "1h 41m",
+    duration: "1h 26m",
     genres: [
       "Action",
       "Adventure",
