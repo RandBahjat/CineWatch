@@ -4,7 +4,7 @@
 
 window._MOVIES_DATA = [
   {
-    title: "One Last Shot",
+    title: "The Love Hypothesis",
     type: "Movie",
     year: 2026,
     rating: 5.0,
