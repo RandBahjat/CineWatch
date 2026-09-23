@@ -30,7 +30,7 @@ window._SERIES_DATA = [
       {
         "season": 1,
         "episodes": [
-          { "episode": 1, "title": "On the Road", "airDate": "2022-09-23", "rating":  },
+          { "episode": 1, "title": "On the Road", "airDate": "2022-09-23", "rating": "TBR" },
           { "episode": 2, "title": "Children of the Comet", "airDate": "2022-05-12", "rating": 7.9 },
           { "episode": 3, "title": "Ghost of Illyria", "airDate": "2022-05-19", "rating": 7.7 },
           { "episode": 4, "title": "Memento Mori", "airDate": "2022-05-26", "rating": 8.3 },
