@@ -111,9 +111,7 @@ window._MOVIES_DATA = [
     duration: "1h 26m",
     genres: [
       "Horror",
-      "",
-      "Drama",
-      "Thriller"
+      "Comedy",
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
