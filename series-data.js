@@ -18,7 +18,7 @@ window._SERIES_DATA = [
     "videoUrl": "250203",
     "trailerUrl": "https://youtu.be/fIKFnzIcfcA?si=2So0zvqfa1X2saqf",
     "overview": "Playing exaggerated, fictionalized versions of themselves, longtime best friends Matthew McConaughey and Woody Harrelson decide to combine their households and move their families onto McConaughey's sprawling Texas ranch. While navigating cultural clashes, parenting chaos, and fragile male egos under one roof, their lifelong bond is tested when a long-hidden family secret comes to light—revealing that the two may actually be biological half-brothers.",
-    "overviewKurdish": "کاپتن کریستۆفەر پایک سەرکردایەتی کەشتی ئاسمانی ئەنتەرپرایز دەکات شانبەشانی سپۆک و ژمارە یەک لە ساڵانی پێش دەستبەکاربوونی کاپتن کیرک. دەستەی کەشتییەکە گەشت دەکەن بۆ ناوچە نەناسراو و دوورەدەستەکانی گەردوون، و ڕووبەڕووی بوونەوەرە بێگانەکان، دیاردە سەیرە گەردوونییەکان و کێشە ئەخلاقییە ئاڵۆزەکان دەبنەوە لە چوارچێوەی گەشتێکی پڕ لە سەرکێشی بۆ دۆزینەوەی جیهانی نوێ.",
+    "overviewKurdish": "لە زنجیرەیەکی کۆمێدیی سەرنجڕاکێشدا، ماسیۆ مەکانەهەی و وودی هارێڵسن وەک دوو هاوڕێی نزیک ڕۆڵی وەهمیی خۆیان دەگێڕنەوە، کە بڕیار دەدەن لەگەڵ خێزانەکانیاندا لە کێڵگە گەورەکەی مەکانەهەی لە تێکساس پێکەوە بژین. لە کاتێکدا هەردووکیان ڕووبەڕووی کێشە خێزانییەکان و جیاوازییەکانی شێوازی ژیانیان دەبنەوە، نهێنییەکی شۆکهێنەری ڕابردوو ئاشکرا دەبێت کە دەریدەخات ڕەنگە لە ڕاستیدا ئەم دوو هاوڕێیە برای یەکتر بن.",
     "director": "Akiva Goldsman, Alex Kurtzman, Jenny Lumet",
     "cast": [
       "Anson Mount, Ethan Peck, Christina Chong, Rebecca Romijn, Jess Bush, Celia Rose Gooding, Babs Olusanmokun"
