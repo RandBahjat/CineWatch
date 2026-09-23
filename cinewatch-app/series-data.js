@@ -33,7 +33,7 @@ window._SERIES_DATA = [
           { "episode": 1, "title": "On the Road", "airDate": "2022-09-23", "rating": "TBR" },
           { "episode": 2, "title": "The Hunt", "airDate": "2022-09-23", "rating": "TBR" },
           { "episode": 3, "title": "Little Woody", "airDate": "2022-09-30", "rating": "TBR" },
-          { "episode": 4, "title": "Episode #1.4", "airDate": "2022-10-7", "rating": "" },
+          { "episode": 4, "title": "Episode #1.4", "airDate": "2022-10-7", "rating": "TBR" },
           { "episode": 5, "title": "Episode #1.5", "airDate": "2022-10-14", "rating": "TBR" },
           { "episode": 6, "title": "Episode #1.6", "airDate": "2022-10-21", "rating": "TBR" },
           { "episode": 7, "title": "Episode #1.7", "airDate": "2022-10-28", "rating": "TBR" },
