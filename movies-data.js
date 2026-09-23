@@ -115,7 +115,7 @@ window._MOVIES_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
-    videoUrl: "",
+    videoUrl: "1477712",
     trailerUrl: "https://youtu.be/uqn8ga1y3ow?si=Y56DTXZBs8J7hua5",
     overview: "After a devastating plane crash leaves them stranded in the freezing Alaskan wilderness, retired Army Special Forces officer James Belmont and his combat dog, Odin, face a brutal battle against nature. With no rescue coming, the two must trek across 58 miles of unforgiving terrain, facing extreme cold, lethal predators, and their own past combat trauma in an unbreakable test of survival and loyalty.",
     overviewKurdish: "دوای کەوتنەخوارەوەی فڕۆکەکەیان لە ناوچە سەهۆڵاوییە چۆڵەوانەکانی ئەلاسکا، جەیمس بێلمۆنت، ئەفسەری پێشووی هێزە تایبەتەکان، لەگەڵ ئۆدینی سەگی سەربازیی خۆیدا لە دۆخێکی سەختدا گیر دەخۆن. بەبێ بوونی هیچ هیوایەکی رزگارکردن، دەبێت ٥٨ میل بەناو بەفر، سەرما و دڕندە کێوییەکاندا ببڕن بۆ مانەوە لە ژیاندا، لە کاتێکدا پەیوەندی و وەفاداریی نێوان ئەم سەربازە و سەگەکەی دەبێتە تاکە هێز بۆ بەرگەگرتنی ئەم جەنگە قورسە.",
