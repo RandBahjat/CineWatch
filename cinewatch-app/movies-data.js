@@ -106,7 +106,7 @@ window._MOVIES_DATA = [
     title: "Ice Cream Man",
     type: "Movie",
     year: 2026,
-    rating: 7.2,
+    rating: 3.9,
     age: "PG-13",
     duration: "1h 41m",
     genres: [
