@@ -14,7 +14,7 @@ if (window.location.hash.includes("type=recovery")) {
 let FEATURED_TITLES = ["Resident Evil","Neagley","Reacher","The End of Oak Street","Stranger Things: Tales from '85","Slow Horses","City of Blood","Mayday","The Runner","Coyote vs. Acme","Lanterns","Spider-Man: Brand New Day","The Whisper Man",
   "Drawn Together"];
 let TOP_10_TRENDING_TODAY = ["The Love Hypothesis","One Last Shot",
-  "Resident Evil","The End of Oak Street","Reacher","Spider-Man: Brand New Day","The Fix" , "You+Me – Against the World","Slow Horses", "Lanterns","MobLand"];
+  "Resident Evil","Brothers","Reacher","Spider-Man: Brand New Day","The Fix" , "You+Me – Against the World","Slow Horses", "Lanterns","MobLand"];
 let TRENDING_THIS_WEEK_MOVIES = ["Mayday","The Whisper Man","Batman: Knightfall Part 1: Knightfall", "Mutiny", "Spider-Man: Brand New Day", "The Odyssey", "Motor City", "Toy Story 5", "Obsession", "Minions & Monsters", "The Last House", "Disclosure Day", "The Invite", "The End of Oak Street", "Backrooms", "Camp Rock 3", "Evil Dead Burn", "Just Play Dead"];
 let TRENDING_THIS_WEEK_SERIES = ["MobLand (The Donovans)", "Reacher","Star Trek: Strange New Worlds", "Slow Horses", "Lanterns", "The Gentlemen", "Silo", "One Piece", "Ted Lasso","Last Seen", "X-Men '97", "Lioness", "Outer Banks"];
 const POPULAR_MOVIES = ["Spider-Man: Brand New Day","Resident Evil","The End of Oak Street","Coyote vs. Acme","The Odysessey","Mutiny", "Moana(2026)", "The Runner","Obsession", "Spider-Man: No Way Home","Backrooms", "Disclosure Day", "The Death of Robin Hood", "The Last House","Drawn Together", "Michael", "Project Hail Mary","Avatar Aang: The Last Airbender","The Shawshank Redemption"];
