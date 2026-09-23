@@ -7,7 +7,7 @@ window._MOVIES_DATA = [
     title: "Heart of the Beast",
     type: "Movie",
     year: 2026,
-    rating: 4.8,
+    rating: 7.2,
     age: "R",
     duration: "2h 21m",
     genres: [
