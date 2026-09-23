@@ -22,7 +22,7 @@ window._MOVIES_DATA = [
     trailerUrl: "https://youtu.be/uqn8ga1y3ow?si=Y56DTXZBs8J7hua5",
     overview: "After a devastating plane crash leaves them stranded in the freezing Alaskan wilderness, retired Army Special Forces officer James Belmont and his combat dog, Odin, face a brutal battle against nature. With no rescue coming, the two must trek across 58 miles of unforgiving terrain, facing extreme cold, lethal predators, and their own past combat trauma in an unbreakable test of survival and loyalty.",
     overviewKurdish: "دوای کەوتنەخوارەوەی فڕۆکەکەیان لە ناوچە سەهۆڵاوییە چۆڵەوانەکانی ئەلاسکا، جەیمس بێلمۆنت، ئەفسەری پێشووی هێزە تایبەتەکان، لەگەڵ ئۆدینی سەگی سەربازیی خۆیدا لە دۆخێکی سەختدا گیر دەخۆن. بەبێ بوونی هیچ هیوایەکی رزگارکردن، دەبێت ٥٨ میل بەناو بەفر، سەرما و دڕندە کێوییەکاندا ببڕن بۆ مانەوە لە ژیاندا، لە کاتێکدا پەیوەندی و وەفاداریی نێوان ئەم سەربازە و سەگەکەی دەبێتە تاکە هێز بۆ بەرگەگرتنی ئەم جەنگە قورسە.",
-    director: "Guy Moshe",
+    director: "David Ayer",
     cast: ["Zachary Levi, Liam Neeson, Titus Welliver, Wes Chatham, Elnaaz Norouzi, Quincy Isaiah, Annet Mahendru, Augusto Aguilera"],
     trending: true,
     featured: true,
