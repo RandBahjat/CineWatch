@@ -120,7 +120,7 @@ window._MOVIES_DATA = [
     overview: "An idyllic summer town descends into utter madness and bloody chaos when a sinister ice cream truck driver serves local children frozen confections with horrifying effects. After consuming the tainted treats, the town's youth are transformed into ravenous, bloodthirsty killers, turning a peaceful suburban neighborhood into a waking nightmare.",
     overviewKurdish: "شارۆچکەیەکی ئارام و بێدەنگ لە وەرزی هاویندا تووشی شێتی و کارەساتی خوێناوی دەبێت، کاتێک شۆفێرێکی نەناسراو و شەڕەنگێزی ئۆتۆمبێلی ئایسکرێم شیرینی بە تام بە منداڵان دەفرۆشێت کە کاریگەرییەکی تۆقێنەریان هەیە. دوای خواردنی ئایسکرێمە ژەهراوییەکان، منداڵەکان دەگۆڕێن بۆ بکوژانی دڕندە و توندوتیژ، و ژیانی گوندەکە دەخەنە ناو کابوسێکی پڕ لە ترس و مەرگەوە.",
     director: "Eli Roth",
-    cast: ["Brad Pitt, J.K. Simmons, Anna Lambe, Uber (Odin)"],
+    cast: ["Ari Millen, Charlie Zeltzer, Shiloh O'Reilly, Kiori Mirza Waldman, Sarah Abbott, Benjamin Byron Davis, Karen Cliche, Eli Roth"],
     trending: true,
     featured: true,
     is4k: false,
