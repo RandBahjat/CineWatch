@@ -40,7 +40,7 @@ window._SERIES_DATA = [
           { "episode": 8, "title": "Episode #1.8", "airDate": "2022-11-4", "rating":  },
          
         ]
-      },
+      }
     ]
   },
   {
