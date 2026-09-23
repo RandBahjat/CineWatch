@@ -241,7 +241,7 @@ window._SERIES_DATA = [
       "Mystery",
       "Crime"
     ],
-    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/1m6CxPAuGv2oHc1ahERrcVWnk2J.jpg",
+    "poster": "https://image.tmdb.org/t/p/original/tEPDFIa21VK0Q2YLuzhTt2xrw5W.jpg",
     "backdrop": "https://image.tmdb.org/t/p/original/k1blZfn6loSwog03Fb8kcbQ5uQD.jpg",
     "videoUrl": "273207",
     "trailerUrl": "https://youtu.be/BOzNaa_o9_g?si=WNpo8Q-nVMnJThO6",
