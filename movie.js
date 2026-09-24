@@ -419,20 +419,24 @@ window.addEventListener("cw:authChanged", async (e) => {
     // Auto-restore path: just re-render the UI with loaded data
     updateWatchlistBadge();
     renderUserBadge();
-    // Un-hide the shelf element first — on page load it still has 'hidden' from HTML
-    // because switchView("home") hasn't been called yet to remove it
-    const shelf = document.getElementById("continueWatchingShelf");
-    if (shelf) shelf.classList.remove("hidden");
-    const wlShelf = document.getElementById("watchlistHomeShelf");
-    if (wlShelf) wlShelf.classList.remove("hidden");
+    // Only re-render and un-hide home shelves if currently on the Home view
+    if (state.activeView === "home") {
+      const shelf = document.getElementById("continueWatchingShelf");
+      if (shelf) shelf.classList.remove("hidden");
+      const wlShelf = document.getElementById("watchlistHomeShelf");
+      if (wlShelf) wlShelf.classList.remove("hidden");
 
-    renderContinueWatchingShelf();
-    if (typeof renderWatchlistHomeShelf === "function") renderWatchlistHomeShelf();
+      renderContinueWatchingShelf();
+      if (typeof renderWatchlistHomeShelf === "function") renderWatchlistHomeShelf();
+    }
     if (state.activeView === "watchlist") renderWatchlist();
     if (state.activeView === "continue") renderContinueWatchingPage();
   } else {
     saveUser(null);
-    renderContinueWatchingShelf();
+    if (state.activeView === "home") {
+      renderContinueWatchingShelf();
+      if (typeof renderWatchlistHomeShelf === "function") renderWatchlistHomeShelf();
+    }
     if (state.activeView === "watchlist") renderWatchlist();
     if (state.activeView === "continue") renderContinueWatchingPage();
   }
