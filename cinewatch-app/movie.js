@@ -999,6 +999,12 @@ function renderContinueWatchingShelf() {
   const track = document.getElementById("continueTrack");
   if (!shelf || !track) return;
 
+  // STRICT RULE: Continue Watching shelf only belongs on the Home view
+  if (state.activeView !== "home") {
+    shelf.classList.add("hidden");
+    return;
+  }
+
   const items = Object.values(state.continueWatching || {})
     .filter(item => item && item.movieId && MOVIES.some(m => m.id === item.movieId))
     .sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
