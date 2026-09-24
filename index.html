@@ -13,9 +13,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260920_454">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_2431">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_689">
+    <link rel="stylesheet" href="movie.css?v=20260920_455">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_2432">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_690">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -118,10 +118,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_7855" defer></script>
-    <script src="series-data.js?v=20260818_7855" defer></script>
-    <script src="anime-data.js?v=20260818_7855" defer></script>
-    <script src="movie.js?v=20260920_453" defer></script>
+    <script src="movies-data.js?v=20260818_7856" defer></script>
+    <script src="series-data.js?v=20260818_7856" defer></script>
+    <script src="anime-data.js?v=20260818_7856" defer></script>
+    <script src="movie.js?v=20260920_454" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -448,6 +448,12 @@
                     </div>
                 </div>
                 
+                <!-- VIP Membership Button -->
+                <button class="nav-vip-btn" id="navVipBtn" title="VIP Membership">
+                    <ion-icon name="sparkles" class="vip-icon"></ion-icon>
+                    <span class="vip-text notranslate" translate="no">VIP</span>
+                </button>
+
                 <!-- Search Icon Button -->
                 <button class="nav-action-btn" id="navSearchBtn" onclick="if(window.openSearchModal) window.openSearchModal(); else { document.getElementById('searchModal').classList.remove('hidden'); document.body.style.overflow='hidden'; }" title="Search">
                     <ion-icon name="search-outline"></ion-icon>
@@ -2382,7 +2388,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_689"></script>
+    <script src="welcome-disclaimer.js?v=20260918_690"></script>
 </body>
 
 </html>
