@@ -4093,25 +4093,25 @@ const VIP_WALLETS = {
 
 const VIP_TIER_CONFIG = {
   free: {
-    name: "Free Explorer",
+    name: "Basic",
     monthly: { price: "0", iqd: "", period: "/ forever", btnText: "Current Plan" },
-    yearly: { price: "0", iqd: "0 IQD", period: "/ forever", btnText: "Current Active Plan" }
+    yearly: { price: "0", iqd: "", period: "/ forever", btnText: "Current Plan" }
   },
   bronze: {
-    name: "Bronze Supporter",
-    monthly: { price: "2.99", iqd: "4,000 IQD / mo", period: "/ month", btnText: "Upgrade to Bronze" },
-    yearly: { price: "24", iqd: "32,000 IQD / year", period: "/ year", btnText: "Claim Bronze Annual" }
+    name: "Advanced",
+    monthly: { price: "2.99", iqd: "", period: "/ mo", btnText: "Upgrade to Advanced" },
+    yearly: { price: "24", iqd: "", period: "/ year", btnText: "Claim Advanced Annual" }
   },
   gold: {
-    name: "Gold VIP",
-    monthly: { price: "5.99", iqd: "8,000 IQD / mo", period: "/ month", btnText: "Get Gold VIP" },
-    yearly: { price: "49", iqd: "65,000 IQD / year", period: "/ year", btnText: "Claim Gold Annual" }
+    name: "Pro",
+    monthly: { price: "5.99", iqd: "", period: "/ mo", btnText: "Upgrade to Pro" },
+    yearly: { price: "49", iqd: "", period: "/ year", btnText: "Claim Pro Annual" }
   },
   diamond: {
-    name: "Diamond VIP",
-    yearlyName: "Diamond 1-Year Pass",
-    monthly: { price: "9.99", iqd: "13,500 IQD / mo", period: "/ month", btnText: "Get Diamond VIP" },
-    yearly: { price: "100", iqd: "135,000 IQD / year", period: "/ year", btnText: "Claim 1-Year Pass ($100)" }
+    name: "Ultimate",
+    yearlyName: "Ultimate 1-Year Pass",
+    monthly: { price: "9.99", iqd: "", period: "/ mo", btnText: "Upgrade to Ultimate" },
+    yearly: { price: "100", iqd: "", period: "/ year", btnText: "Claim Ultimate Pass ($100)" }
   }
 };
 
@@ -4119,9 +4119,9 @@ let currentVipBillingCycle = "monthly";
 
 let selectedVipTierData = {
   tier: "diamond",
-  name: "Diamond VIP (Monthly)",
+  name: "Ultimate (Monthly)",
   price: "9.99",
-  iqd: "13,500 IQD"
+  iqd: ""
 };
 
 let currentVipWalletKey = "fastpay";
@@ -4142,7 +4142,7 @@ function setVipBillingCycle(cycle) {
     yearlyBtn.setAttribute("aria-checked", cycle === "yearly");
   }
 
-  // Update Bronze
+  // Update Bronze / Advanced
   const bronzeData = VIP_TIER_CONFIG.bronze[cycle];
   const amtBronze = document.getElementById("vipAmountBronze");
   const periodBronze = document.getElementById("vipPeriodBronze");
@@ -4150,15 +4150,15 @@ function setVipBillingCycle(cycle) {
   const btnBronze = document.getElementById("vipBtnBronze");
   if (amtBronze) amtBronze.textContent = bronzeData.price;
   if (periodBronze) periodBronze.textContent = bronzeData.period;
-  if (localBronze) localBronze.textContent = bronzeData.iqd;
+  if (localBronze) localBronze.textContent = "";
   if (btnBronze) {
     btnBronze.textContent = bronzeData.btnText;
     btnBronze.dataset.price = bronzeData.price;
-    btnBronze.dataset.iqd = bronzeData.iqd;
-    btnBronze.dataset.name = `Bronze Supporter (${cycle === 'yearly' ? 'Annual' : 'Monthly'})`;
+    btnBronze.dataset.iqd = "";
+    btnBronze.dataset.name = `Advanced (${cycle === 'yearly' ? 'Annual' : 'Monthly'})`;
   }
 
-  // Update Gold
+  // Update Gold / Pro
   const goldData = VIP_TIER_CONFIG.gold[cycle];
   const amtGold = document.getElementById("vipAmountGold");
   const periodGold = document.getElementById("vipPeriodGold");
@@ -4166,15 +4166,15 @@ function setVipBillingCycle(cycle) {
   const btnGold = document.getElementById("vipBtnGold");
   if (amtGold) amtGold.textContent = goldData.price;
   if (periodGold) periodGold.textContent = goldData.period;
-  if (localGold) localGold.textContent = goldData.iqd;
+  if (localGold) localGold.textContent = "";
   if (btnGold) {
     btnGold.textContent = goldData.btnText;
     btnGold.dataset.price = goldData.price;
-    btnGold.dataset.iqd = goldData.iqd;
-    btnGold.dataset.name = `Gold VIP (${cycle === 'yearly' ? 'Annual' : 'Monthly'})`;
+    btnGold.dataset.iqd = "";
+    btnGold.dataset.name = `Pro (${cycle === 'yearly' ? 'Annual' : 'Monthly'})`;
   }
 
-  // Update Diamond
+  // Update Diamond / Ultimate
   const diamondData = VIP_TIER_CONFIG.diamond[cycle];
   const amtDiamond = document.getElementById("vipAmountDiamond");
   const periodDiamond = document.getElementById("vipPeriodDiamond");
@@ -4186,21 +4186,21 @@ function setVipBillingCycle(cycle) {
 
   if (amtDiamond) amtDiamond.textContent = diamondData.price;
   if (periodDiamond) periodDiamond.textContent = diamondData.period;
-  if (localDiamond) localDiamond.textContent = diamondData.iqd;
+  if (localDiamond) localDiamond.textContent = "";
   if (diamondTitle) {
-    diamondTitle.textContent = cycle === "yearly" ? "Diamond 1-Year Pass" : "Diamond VIP";
+    diamondTitle.textContent = cycle === "yearly" ? "Ultimate 1-Year Pass" : "Ultimate";
   }
   if (diamondTag) {
     diamondTag.textContent = cycle === "yearly" ? "BEST VALUE • 1-YEAR PASS" : "ULTIMATE VIP";
   }
   if (diamondBadge) {
-    diamondBadge.textContent = cycle === "yearly" ? "1-Year Pass" : "Diamond VIP";
+    diamondBadge.textContent = cycle === "yearly" ? "1-Year Pass" : "Ultimate";
   }
   if (btnDiamond) {
     btnDiamond.textContent = diamondData.btnText;
     btnDiamond.dataset.price = diamondData.price;
-    btnDiamond.dataset.iqd = diamondData.iqd;
-    btnDiamond.dataset.name = cycle === "yearly" ? "Diamond 1-Year Pass" : "Diamond VIP (Monthly)";
+    btnDiamond.dataset.iqd = "";
+    btnDiamond.dataset.name = cycle === "yearly" ? "Ultimate 1-Year Pass" : "Ultimate (Monthly)";
   }
 }
 window.setVipBillingCycle = setVipBillingCycle;
