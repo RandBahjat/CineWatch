@@ -13,9 +13,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260920_533">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_2510">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_768">
+    <link rel="stylesheet" href="movie.css?v=20260920_534">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_2511">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_769">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -118,10 +118,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_7934" defer></script>
-    <script src="series-data.js?v=20260818_7934" defer></script>
-    <script src="anime-data.js?v=20260818_7934" defer></script>
-    <script src="movie.js?v=20260920_532" defer></script>
+    <script src="movies-data.js?v=20260818_7935" defer></script>
+    <script src="series-data.js?v=20260818_7935" defer></script>
+    <script src="anime-data.js?v=20260818_7935" defer></script>
+    <script src="movie.js?v=20260920_533" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1744,25 +1744,30 @@
 
                 <div class="checkout-header">
                     <div class="checkout-title-wrap">
-                        <span class="checkout-label">Selected Plan</span>
+                        <span class="checkout-label">Selected VIP Plan</span>
                         <h3 class="checkout-plan-name notranslate" id="checkoutPlanName">Ultimate (Monthly)</h3>
                     </div>
                     <div class="checkout-price-wrap">
                         <span class="checkout-usd notranslate" id="checkoutPlanUsd">$20</span>
-                        <span class="checkout-iqd notranslate" id="checkoutPlanIqd">135,000 IQD</span>
                     </div>
                 </div>
 
-                <div class="wallet-selector-title">Choose Local Wallet:</div>
+                <div class="wallet-selector-title">Select Payment Method:</div>
                 <div class="wallet-tabs" id="vipWalletTabs">
-                    <button class="wallet-tab active" data-wallet="fastpay">
-                        <span class="wallet-badge-dot" style="background:#e11d48;"></span> FastPay
+                    <button class="wallet-tab active" data-wallet="qicard">
+                        <span class="wallet-badge-dot" style="background:#f59e0b;"></span> Qi Card (Mastercard)
                     </button>
-                    <button class="wallet-tab" data-wallet="fib">
-                        <span class="wallet-badge-dot" style="background:#2563eb;"></span> First Iraqi Bank (FIB)
+                    <button class="wallet-tab" data-wallet="usdt">
+                        <span class="wallet-badge-dot" style="background:#10b981;"></span> USDT / Crypto
+                    </button>
+                    <button class="wallet-tab" data-wallet="fastpay">
+                        <span class="wallet-badge-dot" style="background:#e11d48;"></span> FastPay
                     </button>
                     <button class="wallet-tab" data-wallet="zaincash">
                         <span class="wallet-badge-dot" style="background:#059669;"></span> ZainCash
+                    </button>
+                    <button class="wallet-tab" data-wallet="fib">
+                        <span class="wallet-badge-dot" style="background:#2563eb;"></span> FIB Bank
                     </button>
                 </div>
 
@@ -1770,28 +1775,37 @@
                     <!-- Populated dynamically via JS -->
                 </div>
 
+                <!-- International Help Banner -->
+                <div class="checkout-intl-banner" style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 12px; padding: 12px 16px; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 14px;">
+                    <span style="font-size: 1.6rem;">🌍</span>
+                    <div style="font-size: 0.84rem; color: rgba(255, 255, 255, 0.88); line-height: 1.45;">
+                        <strong style="color: #38bdf8;">Paying from Sweden, UK, US, or International?</strong><br>
+                        Need an international Visa/Mastercard direct link, PayPal, or custom transfer? Contact our VIP Admin directly below!
+                    </div>
+                </div>
+
                 <div class="checkout-instructions">
-                    <h4><ion-icon name="information-circle-outline"></ion-icon> Quick Activation Steps:</h4>
+                    <h4><ion-icon name="information-circle-outline"></ion-icon> How to Complete Your Payment:</h4>
                     <ol>
-                        <li>Open your <strong>FastPay / FIB / ZainCash</strong> app.</li>
-                        <li>Send the exact amount shown above to the wallet number.</li>
-                        <li>Send your payment screenshot via <strong>Telegram</strong> or <strong>WhatsApp</strong> below for fast activation, or submit your Transaction ID.</li>
+                        <li>Select your preferred payment method above.</li>
+                        <li>Send the exact amount shown (<strong>$<span id="checkoutDueAmount">20</span></strong>) to the card or wallet address.</li>
+                        <li>Tap <strong>Telegram</strong> or <strong>WhatsApp</strong> below to send your receipt for instant VIP activation, or submit your Transaction ID below.</li>
                     </ol>
                 </div>
 
                 <div class="checkout-actions">
                     <a href="https://t.me/randibajat" target="_blank" rel="noopener noreferrer" class="btn-vip-action btn-telegram-vip" id="vipTelegramBtn">
-                        <ion-icon name="paper-plane"></ion-icon> Send Receipt via Telegram
+                        <ion-icon name="paper-plane"></ion-icon> Confirm Receipt via Telegram
                     </a>
                     <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="btn-vip-action btn-whatsapp-vip" id="vipWhatsappBtn">
-                        <ion-icon name="logo-whatsapp"></ion-icon> Send Receipt via WhatsApp
+                        <ion-icon name="logo-whatsapp"></ion-icon> Confirm Receipt via WhatsApp
                     </a>
                 </div>
 
                 <div class="checkout-manual-form">
-                    <div class="manual-form-title">Or Submit Transaction Reference:</div>
+                    <div class="manual-form-title">Or Submit Transaction Reference ID:</div>
                     <div class="manual-form-row">
-                        <input type="text" id="vipTxIdInput" class="form-control" placeholder="Transaction ID or Sender Phone Number">
+                        <input type="text" id="vipTxIdInput" class="form-control" placeholder="Transaction ID, Receipt Code, or Sender Name">
                         <button class="btn btn-primary" id="vipSubmitTxBtn">Submit for Review</button>
                     </div>
                     <div class="manual-form-status hidden" id="vipSubmitStatus"></div>
@@ -2626,7 +2640,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_768"></script>
+    <script src="welcome-disclaimer.js?v=20260918_769"></script>
 </body>
 
 </html>

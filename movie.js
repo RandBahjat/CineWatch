@@ -4068,6 +4068,20 @@ function closeReportModal() {
 // ==========================================
 
 const VIP_WALLETS = {
+  qicard: {
+    name: "Qi Card (Mastercard)",
+    number: "5241 0000 0000 0000",
+    holder: "CineWatch VIP Account",
+    note: "Transfer via Qi Services app (خدمات كي) to this card number or account IBAN.",
+    color: "#f59e0b"
+  },
+  usdt: {
+    name: "USDT / Crypto (TRC-20 & Binance)",
+    number: "TYu8kExampleTRC20Address... (Click Copy)",
+    holder: "Network: TRON (TRC-20) / Binance Pay ID",
+    note: "Send USDT from Binance, Trust Wallet, Revolut, or any international crypto app. Instant worldwide.",
+    color: "#10b981"
+  },
   fastpay: {
     name: "FastPay",
     number: "0750 000 0000",
@@ -4075,19 +4089,19 @@ const VIP_WALLETS = {
     note: "Send payment via FastPay mobile app to this number.",
     color: "#e11d48"
   },
-  fib: {
-    name: "First Iraqi Bank (FIB)",
-    number: "IQ00 FIB0 0000 0000 0000",
-    holder: "CineWatch Streaming",
-    note: "Transfer using First Iraqi Bank (FIB) app to this IBAN / Account.",
-    color: "#2563eb"
-  },
   zaincash: {
     name: "ZainCash",
     number: "0780 000 0000",
     holder: "CineWatch VIP",
     note: "Send cash transfer via ZainCash wallet to this phone number.",
     color: "#059669"
+  },
+  fib: {
+    name: "First Iraqi Bank (FIB)",
+    number: "IQ00 FIB0 0000 0000 0000",
+    holder: "CineWatch Streaming",
+    note: "Transfer using First Iraqi Bank (FIB) app to this IBAN / Account.",
+    color: "#2563eb"
   }
 };
 
@@ -4128,7 +4142,7 @@ let selectedVipTierData = {
   iqd: ""
 };
 
-let currentVipWalletKey = "fastpay";
+let currentVipWalletKey = "qicard";
 
 function setVipBillingCycle(cycle) {
   currentVipBillingCycle = cycle;
@@ -4272,6 +4286,8 @@ function selectVipTier(tierData) {
   const iqdEl = document.getElementById("checkoutPlanIqd");
   if (nameEl) nameEl.textContent = tierData.name;
   if (usdEl) usdEl.textContent = "$" + tierData.price;
+  const dueAmountEl = document.getElementById("checkoutDueAmount");
+  if (dueAmountEl) dueAmountEl.textContent = tierData.price;
   if (iqdEl) iqdEl.textContent = tierData.iqd;
 
   const username = state.user?.name || state.user?.email || "Guest User";
@@ -4291,7 +4307,7 @@ function renderVipWalletDetails(walletKey) {
   const container = document.getElementById("walletDetailsBox");
   if (!container) return;
 
-  const w = VIP_WALLETS[walletKey];
+  const w = VIP_WALLETS[walletKey] || VIP_WALLETS.qicard;
   if (!w) return;
 
   document.querySelectorAll("#vipWalletTabs .wallet-tab").forEach(tab => {
@@ -4304,7 +4320,7 @@ function renderVipWalletDetails(walletKey) {
       <span style="font-weight: 700; color: #fff;">${w.name}</span>
     </div>
     <div class="wallet-row">
-      <span class="wallet-row-label">Account / Phone:</span>
+      <span class="wallet-row-label">Account / Address:</span>
       <div class="wallet-number-wrap">
         <span class="wallet-num-val" id="vipWalletVal">${w.number}</span>
         <button class="wallet-copy-btn" id="vipCopyWalletBtn" type="button">
@@ -4313,13 +4329,19 @@ function renderVipWalletDetails(walletKey) {
       </div>
     </div>
     <div class="wallet-row">
-      <span class="wallet-row-label">Account Holder:</span>
+      <span class="wallet-row-label">Account Details:</span>
       <span style="font-weight: 600; color: rgba(255,255,255,0.85);">${w.holder}</span>
     </div>
     <div class="wallet-row">
       <span class="wallet-row-label">Amount Due:</span>
-      <span style="font-weight: 800; color: #fbbf24;">${selectedVipTierData.iqd} ($${selectedVipTierData.price})</span>
+      <span style="font-weight: 800; color: #fbbf24;">${selectedVipTierData.price}</span>
     </div>
+    ${w.note ? `
+    <div class="wallet-note-box" style="margin-top: 12px; padding: 10px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; font-size: 0.82rem; color: rgba(255,255,255,0.8); display: flex; align-items: flex-start; gap: 8px;">
+      <ion-icon name="information-circle-outline" style="font-size: 1.15rem; color: #38bdf8; flex-shrink: 0; margin-top: 1px;"></ion-icon>
+      <span>${w.note}</span>
+    </div>
+    ` : ''}
   `;
 
   const copyBtn = document.getElementById("vipCopyWalletBtn");
