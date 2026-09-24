@@ -11342,6 +11342,18 @@ min-width: 0;
   gap: 1rem;
   padding: 1rem;
   width: 100%; /* Will be controlled by grid */
+  border-radius: 1rem;
+  box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.1) inset;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.card-tier::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
   background-color: hsla(240, 15%, 9%, 1);
   background-image: radial-gradient(at 88% 40%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
     radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
@@ -11349,10 +11361,6 @@ min-width: 0;
     radial-gradient(at 0% 64%, var(--grad1) 0px, transparent 85%),
     radial-gradient(at 41% 94%, var(--grad2) 0px, transparent 85%),
     radial-gradient(at 100% 99%, var(--grad3) 0px, transparent 85%);
-  border-radius: 1rem;
-  box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.1) inset;
-  transition: transform 0.3s ease;
-  z-index: 1;
 }
 
 .card-tier:hover {
