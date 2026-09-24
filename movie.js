@@ -4068,11 +4068,11 @@ function closeReportModal() {
 // ==========================================
 
 const VIP_WALLETS = {
-  qicard: {
-    name: "Qi Card (Mastercard)",
+  mastercard: {
+    name: "Mastercard",
     number: "5241 0000 0000 0000",
     holder: "CineWatch VIP Account",
-    note: "Transfer via Qi Services app (خدمات كي) to this card number or account IBAN.",
+    note: "Send card-to-card transfer via Paysend, Remitly, your banking app, or contact VIP Support.",
     color: "#f59e0b"
   },
   usdt: {
@@ -4142,7 +4142,7 @@ let selectedVipTierData = {
   iqd: ""
 };
 
-let currentVipWalletKey = "qicard";
+let currentVipWalletKey = "mastercard";
 
 function setVipBillingCycle(cycle) {
   currentVipBillingCycle = cycle;
@@ -4308,7 +4308,7 @@ function renderVipWalletDetails(walletKey) {
   const container = document.getElementById("walletDetailsBox");
   if (!container) return;
 
-  const w = VIP_WALLETS[walletKey] || VIP_WALLETS.qicard;
+  const w = VIP_WALLETS[walletKey] || VIP_WALLETS.mastercard;
   if (!w) return;
 
   document.querySelectorAll("#vipWalletTabs .wallet-tab").forEach(tab => {
