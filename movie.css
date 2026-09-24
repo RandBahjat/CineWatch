@@ -10620,6 +10620,9 @@ min-width: 0;
 }
 
 .billing-btn {
+  justify-content: center;
+  flex: 1;
+  width: 140px;
   position: relative;
   z-index: 2;
   display: inline-flex;
@@ -10647,6 +10650,10 @@ min-width: 0;
 }
 
 .billing-discount-badge {
+  position: absolute;
+  top: -12px;
+  right: -5px;
+  white-space: nowrap;
   font-size: 0.72rem;
   font-weight: 800;
   text-transform: uppercase;
