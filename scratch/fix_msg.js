@@ -6,7 +6,7 @@ const fs = require('fs');
 
   code = code.replace(
     'const priceDisplay = tierData.iqd ? `${tierData.price} (${tierData.iqd})` : `${tierData.price}`;',
-    'const priceDisplay = tierData.iqd ? `$' + '{tierData.price} (${tierData.iqd})` : `$' + '{tierData.price}`;'
+    () => 'const priceDisplay = tierData.iqd ? `$' + '{tierData.price} (${tierData.iqd})` : `$' + '{tierData.price}`;'
   );
 
   fs.writeFileSync(file, code, 'utf8');
