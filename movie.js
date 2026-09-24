@@ -4101,7 +4101,7 @@ const VIP_TIER_CONFIG = {
   bronze: {
     name: "Advanced",
     monthly: { price: "8", iqd: "", period: "/ mo", btnText: "Upgrade to Advanced" },
-    quarterly: { price: "25", iqd: "", period: "/ 3 mo", btnText: "Upgrade to Advanced" },
+    quarterly: { price: "18", iqd: "", period: "/ 3 mo", btnText: "Upgrade to Advanced" },
     yearly: { price: "100", iqd: "", period: "/ year", btnText: "Upgrade to Advanced" }
   },
   gold: {
