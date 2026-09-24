@@ -1583,13 +1583,16 @@
 
                     <!-- Billing Period Switch (Month or Year) -->
                     <div class="vip-billing-switch-wrap">
-                        <div class="vip-billing-switch" id="vipBillingSwitch" role="radiogroup" aria-label="Billing cycle">
+                        <div class="vip-billing-switch" id="vipBillingSwitch" role="radiogroup" aria-label="Billing cycle" data-active="monthly">
                             <button type="button" class="billing-btn active" id="billingBtnMonthly" data-period="monthly" aria-checked="true" role="radio">
                                 <span>Month</span>
                             </button>
+                            <button type="button" class="billing-btn" id="billingBtnQuarterly" data-period="quarterly" aria-checked="false" role="radio">
+                                <span>3 Months</span>
+                            </button>
                             <button type="button" class="billing-btn" id="billingBtnYearly" data-period="yearly" aria-checked="false" role="radio">
                                 <span>Year</span>
-                                <span class="billing-discount-badge">Save up to 70%</span>
+                                <span class="billing-discount-badge">Save Best Value</span>
                             </button>
                             <div class="billing-slider-glider" id="billingSliderGlider"></div>
                         </div>

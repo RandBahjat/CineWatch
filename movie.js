@@ -4095,23 +4095,27 @@ const VIP_TIER_CONFIG = {
   free: {
     name: "Basic",
     monthly: { price: "0", iqd: "", period: "/ forever", btnText: "Current Plan" },
+    quarterly: { price: "0", iqd: "", period: "/ forever", btnText: "Current Plan" },
     yearly: { price: "0", iqd: "", period: "/ forever", btnText: "Current Plan" }
   },
   bronze: {
     name: "Advanced",
     monthly: { price: "8", iqd: "", period: "/ mo", btnText: "Upgrade to Advanced" },
-    yearly: { price: "25", iqd: "", period: "/ year", btnText: "Upgrade to Advanced" }
+    quarterly: { price: "25", iqd: "", period: "/ 3 mo", btnText: "Upgrade to Advanced" },
+    yearly: { price: "100", iqd: "", period: "/ year", btnText: "Upgrade to Advanced" }
   },
   gold: {
     name: "Pro",
     monthly: { price: "15", iqd: "", period: "/ mo", btnText: "Upgrade to Pro" },
-    yearly: { price: "50", iqd: "", period: "/ year", btnText: "Upgrade to Pro" }
+    quarterly: { price: "50", iqd: "", period: "/ 3 mo", btnText: "Upgrade to Pro" },
+    yearly: { price: "150", iqd: "", period: "/ year", btnText: "Upgrade to Pro" }
   },
   diamond: {
     name: "Ultimate",
     yearlyName: "Ultimate 1-Year Pass",
     monthly: { price: "20", iqd: "", period: "/ mo", btnText: "Upgrade to Ultimate" },
-    yearly: { price: "100", iqd: "", period: "/ year", btnText: "Upgrade to Ultimate" }
+    quarterly: { price: "100", iqd: "", period: "/ 3 mo", btnText: "Upgrade to Ultimate" },
+    yearly: { price: "200", iqd: "", period: "/ year", btnText: "Upgrade to Ultimate" }
   }
 };
 
@@ -4130,6 +4134,7 @@ function setVipBillingCycle(cycle) {
   currentVipBillingCycle = cycle;
   const switchEl = document.getElementById("vipBillingSwitch");
   const monthlyBtn = document.getElementById("billingBtnMonthly");
+  const quarterlyBtn = document.getElementById("billingBtnQuarterly");
   const yearlyBtn = document.getElementById("billingBtnYearly");
 
   if (switchEl) switchEl.setAttribute("data-active", cycle);
@@ -4137,13 +4142,19 @@ function setVipBillingCycle(cycle) {
     monthlyBtn.classList.toggle("active", cycle === "monthly");
     monthlyBtn.setAttribute("aria-checked", cycle === "monthly");
   }
+  if (quarterlyBtn) {
+    quarterlyBtn.classList.toggle("active", cycle === "quarterly");
+    quarterlyBtn.setAttribute("aria-checked", cycle === "quarterly");
+  }
   if (yearlyBtn) {
     yearlyBtn.classList.toggle("active", cycle === "yearly");
     yearlyBtn.setAttribute("aria-checked", cycle === "yearly");
   }
 
+  const cycleLabel = cycle === "yearly" ? "Annual" : cycle === "quarterly" ? "3 Months" : "Monthly";
+
   // Update Bronze / Advanced
-  const bronzeData = VIP_TIER_CONFIG.bronze[cycle];
+  const bronzeData = VIP_TIER_CONFIG.bronze[cycle] || VIP_TIER_CONFIG.bronze.monthly;
   const amtBronze = document.getElementById("vipAmountBronze");
   const periodBronze = document.getElementById("vipPeriodBronze");
   const localBronze = document.getElementById("vipLocalBronze");
@@ -4155,11 +4166,11 @@ function setVipBillingCycle(cycle) {
     btnBronze.textContent = bronzeData.btnText;
     btnBronze.dataset.price = bronzeData.price;
     btnBronze.dataset.iqd = "";
-    btnBronze.dataset.name = `Advanced (${cycle === 'yearly' ? 'Annual' : 'Monthly'})`;
+    btnBronze.dataset.name = `Advanced (${cycleLabel})`;
   }
 
   // Update Gold / Pro
-  const goldData = VIP_TIER_CONFIG.gold[cycle];
+  const goldData = VIP_TIER_CONFIG.gold[cycle] || VIP_TIER_CONFIG.gold.monthly;
   const amtGold = document.getElementById("vipAmountGold");
   const periodGold = document.getElementById("vipPeriodGold");
   const localGold = document.getElementById("vipLocalGold");
@@ -4171,11 +4182,11 @@ function setVipBillingCycle(cycle) {
     btnGold.textContent = goldData.btnText;
     btnGold.dataset.price = goldData.price;
     btnGold.dataset.iqd = "";
-    btnGold.dataset.name = `Pro (${cycle === 'yearly' ? 'Annual' : 'Monthly'})`;
+    btnGold.dataset.name = `Pro (${cycleLabel})`;
   }
 
   // Update Diamond / Ultimate
-  const diamondData = VIP_TIER_CONFIG.diamond[cycle];
+  const diamondData = VIP_TIER_CONFIG.diamond[cycle] || VIP_TIER_CONFIG.diamond.monthly;
   const amtDiamond = document.getElementById("vipAmountDiamond");
   const periodDiamond = document.getElementById("vipPeriodDiamond");
   const localDiamond = document.getElementById("vipLocalDiamond");
@@ -4191,16 +4202,16 @@ function setVipBillingCycle(cycle) {
     diamondTitle.textContent = cycle === "yearly" ? "Ultimate 1-Year Pass" : "Ultimate";
   }
   if (diamondTag) {
-    diamondTag.textContent = cycle === "yearly" ? "BEST VALUE • 1-YEAR PASS" : "ULTIMATE VIP";
+    diamondTag.textContent = cycle === "yearly" ? "BEST VALUE • 1-YEAR PASS" : cycle === "quarterly" ? "POPULAR • 3 MONTHS" : "ULTIMATE VIP";
   }
   if (diamondBadge) {
-    diamondBadge.textContent = cycle === "yearly" ? "1-Year Pass" : "Ultimate";
+    diamondBadge.textContent = cycle === "yearly" ? "1-Year Pass" : cycle === "quarterly" ? "3-Month Pass" : "Ultimate";
   }
   if (btnDiamond) {
     btnDiamond.textContent = diamondData.btnText;
     btnDiamond.dataset.price = diamondData.price;
     btnDiamond.dataset.iqd = "";
-    btnDiamond.dataset.name = cycle === "yearly" ? "Ultimate 1-Year Pass" : "Ultimate (Monthly)";
+    btnDiamond.dataset.name = cycle === "yearly" ? "Ultimate 1-Year Pass" : `Ultimate (${cycleLabel})`;
   }
 }
 window.setVipBillingCycle = setVipBillingCycle;
@@ -4353,9 +4364,13 @@ function setupVipEventListeners() {
 
   // Month / Year toggle buttons
   const monthlyBtn = document.getElementById("billingBtnMonthly");
+  const quarterlyBtn = document.getElementById("billingBtnQuarterly");
   const yearlyBtn = document.getElementById("billingBtnYearly");
   if (monthlyBtn) {
     monthlyBtn.onclick = () => setVipBillingCycle("monthly");
+  }
+  if (quarterlyBtn) {
+    quarterlyBtn.onclick = () => setVipBillingCycle("quarterly");
   }
   if (yearlyBtn) {
     yearlyBtn.onclick = () => setVipBillingCycle("yearly");

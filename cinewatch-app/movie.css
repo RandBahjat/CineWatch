@@ -10622,7 +10622,8 @@ min-width: 0;
 .billing-btn {
   justify-content: center;
   flex: 1;
-  width: 140px;
+  min-width: 105px;
+  width: auto;
   position: relative;
   z-index: 2;
   display: inline-flex;
@@ -10670,7 +10671,7 @@ min-width: 0;
   top: 4px;
   left: 4px;
   bottom: 4px;
-  width: calc(50% - 4px);
+  width: calc((100% - 8px) / 3);
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.07));
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 999px;
@@ -10680,8 +10681,16 @@ min-width: 0;
   z-index: 1;
 }
 
-.vip-billing-switch[data-active="yearly"] .billing-slider-glider {
+.vip-billing-switch[data-active="monthly"] .billing-slider-glider {
+  transform: translateX(0%);
+}
+
+.vip-billing-switch[data-active="quarterly"] .billing-slider-glider {
   transform: translateX(100%);
+}
+
+.vip-billing-switch[data-active="yearly"] .billing-slider-glider {
+  transform: translateX(200%);
 }
 
 /* 4 Plans Grid */
