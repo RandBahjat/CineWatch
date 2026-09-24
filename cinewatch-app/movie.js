@@ -4099,19 +4099,19 @@ const VIP_TIER_CONFIG = {
   },
   bronze: {
     name: "Advanced",
-    monthly: { price: "2.99", iqd: "", period: "/ mo", btnText: "Upgrade to Advanced" },
-    yearly: { price: "24", iqd: "", period: "/ year", btnText: "Claim Advanced Annual" }
+    monthly: { price: "8", iqd: "", period: "/ mo", btnText: "Upgrade to Advanced" },
+    yearly: { price: "75", iqd: "", period: "/ year", btnText: "Claim Advanced Annual" }
   },
   gold: {
     name: "Pro",
-    monthly: { price: "5.99", iqd: "", period: "/ mo", btnText: "Upgrade to Pro" },
-    yearly: { price: "49", iqd: "", period: "/ year", btnText: "Claim Pro Annual" }
+    monthly: { price: "15", iqd: "", period: "/ mo", btnText: "Upgrade to Pro" },
+    yearly: { price: "140", iqd: "", period: "/ year", btnText: "Claim Pro Annual" }
   },
   diamond: {
     name: "Ultimate",
     yearlyName: "Ultimate 1-Year Pass",
-    monthly: { price: "9.99", iqd: "", period: "/ mo", btnText: "Upgrade to Ultimate" },
-    yearly: { price: "100", iqd: "", period: "/ year", btnText: "Claim Ultimate Pass ($100)" }
+    monthly: { price: "20", iqd: "", period: "/ mo", btnText: "Upgrade to Ultimate" },
+    yearly: { price: "190", iqd: "", period: "/ year", btnText: "Claim Ultimate Pass ($190)" }
   }
 };
 
@@ -4120,7 +4120,7 @@ let currentVipBillingCycle = "monthly";
 let selectedVipTierData = {
   tier: "diamond",
   name: "Ultimate (Monthly)",
-  price: "9.99",
+  price: "20",
   iqd: ""
 };
 
