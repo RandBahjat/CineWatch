@@ -221,7 +221,7 @@ const gridStartIdx = indexHtml.indexOf('<div class="vip-grid">');
 const gridEndIdx = indexHtml.indexOf('<!-- VIP Active Subs List -->');
 
 if (gridStartIdx !== -1 && gridEndIdx !== -1) {
-  const newVipGrid = \`<div class="vip-grid">
+  const newVipGrid = `<div class="vip-grid">
                     
                     <!-- Plan 1: Free Explorer -->
                     <div class="card-tier card-free" data-tier="free">
