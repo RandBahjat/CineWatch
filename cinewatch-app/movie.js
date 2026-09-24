@@ -4681,6 +4681,10 @@ function bindEventListeners() {
       state.animeFilter = genre;
       state.animePage = 1;
       renderAnimeSection();
+    } else if (section === "fourk") {
+      state.fourkFilter = genre;
+      state.fourkPage = 1;
+      render4kSection();
     }
   });
 
