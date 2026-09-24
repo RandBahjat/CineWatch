@@ -2456,6 +2456,15 @@ function renderUserBadge() {
       };
     }
 
+    // VIP Membership Button in side panel
+    const panelVipBtn = document.getElementById("panelVipUpgradeBtn");
+    if (panelVipBtn) {
+      panelVipBtn.onclick = () => {
+        closePanel();
+        openVipModal();
+      };
+    }
+
     // Logout
     document.getElementById("panelLogoutBtn").onclick = () => {
       closePanel();
