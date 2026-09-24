@@ -4052,14 +4052,140 @@ const VIP_WALLETS = {
   }
 };
 
+const VIP_TIER_CONFIG = {
+  free: {
+    name: "Free Explorer",
+    monthly: { price: "0", iqd: "0 IQD", period: "/ forever", btnText: "Current Active Plan" },
+    yearly: { price: "0", iqd: "0 IQD", period: "/ forever", btnText: "Current Active Plan" }
+  },
+  bronze: {
+    name: "Bronze Supporter",
+    monthly: { price: "2.99", iqd: "4,000 IQD / mo", period: "/ month", btnText: "Upgrade to Bronze" },
+    yearly: { price: "24", iqd: "32,000 IQD / year", period: "/ year", btnText: "Claim Bronze Annual" }
+  },
+  gold: {
+    name: "Gold VIP",
+    monthly: { price: "5.99", iqd: "8,000 IQD / mo", period: "/ month", btnText: "Get Gold VIP" },
+    yearly: { price: "49", iqd: "65,000 IQD / year", period: "/ year", btnText: "Claim Gold Annual" }
+  },
+  diamond: {
+    name: "Diamond VIP",
+    yearlyName: "Diamond 1-Year Pass",
+    monthly: { price: "9.99", iqd: "13,500 IQD / mo", period: "/ month", btnText: "Get Diamond VIP" },
+    yearly: { price: "100", iqd: "135,000 IQD / year", period: "/ year", btnText: "Claim 1-Year Pass ($100)" }
+  }
+};
+
+let currentVipBillingCycle = "monthly";
+
 let selectedVipTierData = {
   tier: "diamond",
-  name: "Diamond 1-Year Pass",
-  price: "100",
-  iqd: "135,000 IQD"
+  name: "Diamond VIP (Monthly)",
+  price: "9.99",
+  iqd: "13,500 IQD"
 };
 
 let currentVipWalletKey = "fastpay";
+
+function setVipBillingCycle(cycle) {
+  currentVipBillingCycle = cycle;
+  const switchEl = document.getElementById("vipBillingSwitch");
+  const monthlyBtn = document.getElementById("billingBtnMonthly");
+  const yearlyBtn = document.getElementById("billingBtnYearly");
+
+  if (switchEl) switchEl.setAttribute("data-active", cycle);
+  if (monthlyBtn) {
+    monthlyBtn.classList.toggle("active", cycle === "monthly");
+    monthlyBtn.setAttribute("aria-checked", cycle === "monthly");
+  }
+  if (yearlyBtn) {
+    yearlyBtn.classList.toggle("active", cycle === "yearly");
+    yearlyBtn.setAttribute("aria-checked", cycle === "yearly");
+  }
+
+  // Update Bronze
+  const bronzeData = VIP_TIER_CONFIG.bronze[cycle];
+  const amtBronze = document.getElementById("vipAmountBronze");
+  const periodBronze = document.getElementById("vipPeriodBronze");
+  const localBronze = document.getElementById("vipLocalBronze");
+  const btnBronze = document.getElementById("vipBtnBronze");
+  if (amtBronze) amtBronze.textContent = bronzeData.price;
+  if (periodBronze) periodBronze.textContent = bronzeData.period;
+  if (localBronze) localBronze.textContent = bronzeData.iqd;
+  if (btnBronze) {
+    btnBronze.textContent = bronzeData.btnText;
+    btnBronze.dataset.price = bronzeData.price;
+    btnBronze.dataset.iqd = bronzeData.iqd;
+    btnBronze.dataset.name = `Bronze Supporter (${cycle === 'yearly' ? 'Annual' : 'Monthly'})`;
+  }
+
+  // Update Gold
+  const goldData = VIP_TIER_CONFIG.gold[cycle];
+  const amtGold = document.getElementById("vipAmountGold");
+  const periodGold = document.getElementById("vipPeriodGold");
+  const localGold = document.getElementById("vipLocalGold");
+  const btnGold = document.getElementById("vipBtnGold");
+  if (amtGold) amtGold.textContent = goldData.price;
+  if (periodGold) periodGold.textContent = goldData.period;
+  if (localGold) localGold.textContent = goldData.iqd;
+  if (btnGold) {
+    btnGold.textContent = goldData.btnText;
+    btnGold.dataset.price = goldData.price;
+    btnGold.dataset.iqd = goldData.iqd;
+    btnGold.dataset.name = `Gold VIP (${cycle === 'yearly' ? 'Annual' : 'Monthly'})`;
+  }
+
+  // Update Diamond
+  const diamondData = VIP_TIER_CONFIG.diamond[cycle];
+  const amtDiamond = document.getElementById("vipAmountDiamond");
+  const periodDiamond = document.getElementById("vipPeriodDiamond");
+  const localDiamond = document.getElementById("vipLocalDiamond");
+  const btnDiamond = document.getElementById("vipBtnDiamond");
+  const diamondTitle = document.getElementById("diamondTitle");
+  const diamondTag = document.getElementById("diamondTag");
+  const diamondBadge = document.getElementById("diamondBadge");
+
+  if (amtDiamond) amtDiamond.textContent = diamondData.price;
+  if (periodDiamond) periodDiamond.textContent = diamondData.period;
+  if (localDiamond) localDiamond.textContent = diamondData.iqd;
+  if (diamondTitle) {
+    diamondTitle.textContent = cycle === "yearly" ? "Diamond 1-Year Pass" : "Diamond VIP";
+  }
+  if (diamondTag) {
+    diamondTag.textContent = cycle === "yearly" ? "BEST VALUE • 1-YEAR PASS" : "ULTIMATE VIP";
+  }
+  if (diamondBadge) {
+    diamondBadge.textContent = cycle === "yearly" ? "1-Year Pass" : "Diamond VIP";
+  }
+  if (btnDiamond) {
+    btnDiamond.textContent = diamondData.btnText;
+    btnDiamond.dataset.price = diamondData.price;
+    btnDiamond.dataset.iqd = diamondData.iqd;
+    btnDiamond.dataset.name = cycle === "yearly" ? "Diamond 1-Year Pass" : "Diamond VIP (Monthly)";
+  }
+}
+window.setVipBillingCycle = setVipBillingCycle;
+
+function initVipCardLightEffects() {
+  const cards = document.querySelectorAll(".vip-plan-card");
+  cards.forEach(card => {
+    if (card._lightEffectAttached) return;
+    card._lightEffectAttached = true;
+
+    card.addEventListener("mousemove", (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty("--mouse-x", `${x}px`);
+      card.style.setProperty("--mouse-y", `${y}px`);
+    });
+
+    card.addEventListener("mouseleave", () => {
+      card.style.removeProperty("--mouse-x");
+      card.style.removeProperty("--mouse-y");
+    });
+  });
+}
 
 function openVipModal() {
   const modal = document.getElementById("vipModal");
@@ -4069,6 +4195,8 @@ function openVipModal() {
   const stepCheckout = document.getElementById("vipStepCheckout");
   if (stepPlans) stepPlans.classList.remove("hidden");
   if (stepCheckout) stepCheckout.classList.add("hidden");
+
+  initVipCardLightEffects();
 
   modal.classList.remove("hidden");
   document.body.style.overflow = "hidden";
@@ -4183,6 +4311,19 @@ function setupVipEventListeners() {
       if (e.target.id === "vipModal") closeVipModal();
     };
   }
+
+  // Month / Year toggle buttons
+  const monthlyBtn = document.getElementById("billingBtnMonthly");
+  const yearlyBtn = document.getElementById("billingBtnYearly");
+  if (monthlyBtn) {
+    monthlyBtn.onclick = () => setVipBillingCycle("monthly");
+  }
+  if (yearlyBtn) {
+    yearlyBtn.onclick = () => setVipBillingCycle("yearly");
+  }
+
+  // Init spotlight light effects
+  initVipCardLightEffects();
 
   const backBtn = document.getElementById("vipBackToPlansBtn");
   if (backBtn) {
