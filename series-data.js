@@ -113,49 +113,49 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "On the Road",
             "airDate": "2022-09-23",
-            "rating": "TBR"
+            "rating": 8.6
           },
           {
             "episode": 2,
             "title": "The Hunt",
             "airDate": "2022-09-23",
-            "rating": "TBR"
+            "rating": 9.1
           },
           {
             "episode": 3,
             "title": "Little Woody",
             "airDate": "2022-09-30",
-            "rating": "TBR"
+            "rating": 9
           },
           {
             "episode": 4,
             "title": "Episode #1.4",
             "airDate": "2022-10-7",
-            "rating": "TBR"
+            "rating": 8.8
           },
           {
             "episode": 5,
             "title": "Episode #1.5",
             "airDate": "2022-10-14",
-            "rating": "TBR"
+            "rating": 8.8
           },
           {
             "episode": 6,
             "title": "Episode #1.6",
             "airDate": "2022-10-21",
-            "rating": "TBR"
+            "rating": 9.2
           },
           {
             "episode": 7,
             "title": "Episode #1.7",
             "airDate": "2022-10-28",
-            "rating": "TBR"
+            "rating": 9.4
           },
           {
             "episode": 8,
             "title": "Episode #1.8",
             "airDate": "2022-11-4",
-            "rating": "TBR"
+            "rating": 8.7
           }
         ]
       }
@@ -200,7 +200,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Children of the Comet",
             "airDate": "2022-05-12",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 3,
@@ -212,7 +212,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Memento Mori",
             "airDate": "2022-05-26",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 5,
@@ -248,7 +248,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "A Quality of Mercy",
             "airDate": "2022-07-07",
-            "rating": 9
+            "rating": 9.1
           }
         ]
       },
@@ -324,25 +324,25 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Hegemony, Part II",
             "airDate": "2025-07-17",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 2,
             "title": "Through the Mirror of Time",
             "airDate": "2025-07-17",
-            "rating": 6.4
+            "rating": 6.6
           },
           {
             "episode": 3,
             "title": "The Terran Paradigm",
             "airDate": "2025-07-24",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 4,
             "title": "Echoes of the Void",
             "airDate": "2025-07-31",
-            "rating": 6.3
+            "rating": 6.6
           },
           {
             "episode": 5,
@@ -360,7 +360,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Shadows of Vulcan",
             "airDate": "2025-08-21",
-            "rating": 6.2
+            "rating": 6.3
           },
           {
             "episode": 8,
@@ -686,7 +686,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Circle of Life",
             "airDate": "2026-09-16",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 2,
@@ -990,7 +990,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Pilot",
             "airDate": "2026-08-28",
-            "rating": 7.5
+            "rating": 8.6
           },
           {
             "episode": 2,
@@ -1072,7 +1072,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Pilot",
             "airDate": "2026-08-16",
-            "rating": 8.2
+            "rating": 8.4
           },
           {
             "episode": 2,
@@ -1165,7 +1165,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Kiss of the Catwoman",
             "airDate": "2024-08-01",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 4,
@@ -1177,13 +1177,13 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "The Stress of Her Regard",
             "airDate": "2024-08-01",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 6,
             "title": "Night Ride",
             "airDate": "2024-08-01",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 7,
@@ -1207,7 +1207,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Savage Night",
             "airDate": "2024-08-01",
-            "rating": 8.4
+            "rating": 8.5
           }
         ]
       },
@@ -1350,7 +1350,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "737",
             "airDate": "2022-02-04",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 8,
@@ -1479,7 +1479,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Cage Fight",
             "airDate": "2026-08-12",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 3,
@@ -1503,13 +1503,13 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Plum Out of Luck",
             "airDate": "2026-09-02",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 7,
             "title": "Vote for Sampson",
             "airDate": "2026-09-09",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 8,
@@ -1635,7 +1635,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "The Clock King",
             "airDate": "1992-09-21",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 15,
@@ -1677,7 +1677,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Vendetta",
             "airDate": "1992-10-05",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 22,
@@ -1689,7 +1689,7 @@ window._SERIES_DATA = [
             "episode": 23,
             "title": "The Forgotten",
             "airDate": "1992-10-08",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 24,
@@ -1701,7 +1701,7 @@ window._SERIES_DATA = [
             "episode": 25,
             "title": "The Cape and Cowl Conspiracy",
             "airDate": "1992-10-14",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 26,
@@ -1755,7 +1755,7 @@ window._SERIES_DATA = [
             "episode": 34,
             "title": "I Am the Night",
             "airDate": "1992-11-09",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 35,
@@ -1779,7 +1779,7 @@ window._SERIES_DATA = [
             "episode": 38,
             "title": "Christmas with the Joker",
             "airDate": "1992-11-13",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 39,
@@ -1809,7 +1809,7 @@ window._SERIES_DATA = [
             "episode": 43,
             "title": "His Silicon Soul",
             "airDate": "1992-11-20",
-            "rating": 8.2
+            "rating": 8.1
           },
           {
             "episode": 44,
@@ -1827,7 +1827,7 @@ window._SERIES_DATA = [
             "episode": 46,
             "title": "The Laughing Fish",
             "airDate": "1993-01-10",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 47,
@@ -1875,7 +1875,7 @@ window._SERIES_DATA = [
             "episode": 54,
             "title": "Blind as a Bat",
             "airDate": "1993-02-22",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 55,
@@ -1905,7 +1905,7 @@ window._SERIES_DATA = [
             "episode": 59,
             "title": "Read My Lips",
             "airDate": "1993-05-10",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 60,
@@ -2011,7 +2011,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Time Out of Joint",
             "airDate": "1994-10-08",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 6,
@@ -2029,7 +2029,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Batgirl Returns",
             "airDate": "1994-11-12",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 9,
@@ -2041,7 +2041,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Deep Freeze",
             "airDate": "1994-11-26",
-            "rating": 8.2
+            "rating": 8.1
           }
         ]
       },
@@ -2052,7 +2052,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The Terrible Trio",
             "airDate": "1995-09-11",
-            "rating": 6.7
+            "rating": 6.8
           },
           {
             "episode": 2,
@@ -2466,7 +2466,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "These Fragile Lives",
             "airDate": "2024-11-03",
-            "rating": 6
+            "rating": 5.9
           },
           {
             "episode": 8,
@@ -2478,7 +2478,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Revelations, Chapter One",
             "airDate": "2024-11-17",
-            "rating": 6.8
+            "rating": 6.7
           },
           {
             "episode": 10,
@@ -2507,49 +2507,49 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Merrily We Go",
             "airDate": "2026-05-03",
-            "rating": 6.3
+            "rating": 6.2
           },
           {
             "episode": 4,
             "title": "Of Myths and Monsters",
             "airDate": "2026-05-10",
-            "rating": 6.6
+            "rating": 6.5
           },
           {
             "episode": 5,
             "title": "What a Long Strange Trip It's Been",
             "airDate": "2026-05-17",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 6,
             "title": "The Heart Is a Lonely Hunter",
             "airDate": "2026-05-31",
-            "rating": 6.2
+            "rating": 6.1
           },
           {
             "episode": 7,
             "title": "Best Laid Plans",
             "airDate": "2026-06-07",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 8,
             "title": "Heavy Is the Head",
             "airDate": "2026-06-14",
-            "rating": 6.6
+            "rating": 6.5
           },
           {
             "episode": 9,
             "title": "The Calm Before",
             "airDate": "2026-06-21",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 10,
             "title": "If a Tree Falls in the Forest...",
             "airDate": "2026-06-28",
-            "rating": 7.1
+            "rating": 7
           }
         ]
       }
@@ -2589,7 +2589,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Darkness Rising, Part 1",
             "airDate": "2010-11-26",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 2,
@@ -2607,7 +2607,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Darkness Rising, Part 4",
             "airDate": "2010-12-02",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 5,
@@ -2953,7 +2953,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Thirst",
             "airDate": "2013-06-07",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 9,
@@ -3023,7 +3023,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Night of the Lizard",
             "airDate": "1994-11-19",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 2,
@@ -3273,7 +3273,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "The Sins of the Fathers, Chapter 14: Turning Point",
             "airDate": "1996-11-23",
-            "rating": 9
+            "rating": 8.9
           }
         ]
       },
@@ -3485,7 +3485,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Market Forces",
             "airDate": "2008-03-22",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 5,
@@ -3503,7 +3503,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Catalysts",
             "airDate": "2008-04-26",
-            "rating": 9
+            "rating": 8.9
           },
           {
             "episode": 8,
@@ -3527,7 +3527,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Group Therapy",
             "airDate": "2008-05-31",
-            "rating": 9.3
+            "rating": 9.2
           },
           {
             "episode": 12,
@@ -3539,7 +3539,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Nature vs. Nurture",
             "airDate": "2008-06-14",
-            "rating": 9.5
+            "rating": 9.4
           }
         ]
       },
@@ -3550,7 +3550,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Blueprints",
             "airDate": "2009-06-22",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 2,
@@ -3580,7 +3580,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Growing Pains",
             "airDate": "2009-07-20",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 7,
@@ -3598,7 +3598,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Probable Cause",
             "airDate": "2009-10-14",
-            "rating": 8.3
+            "rating": 8.5
           },
           {
             "episode": 10,
@@ -3665,7 +3665,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Pilot",
             "airDate": "2008-01-20",
-            "rating": 9.1
+            "rating": 9
           },
           {
             "episode": 2,
@@ -3689,7 +3689,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Gray Matter",
             "airDate": "2008-02-24",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 6,
@@ -3754,7 +3754,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Better Call Saul",
             "airDate": "2009-04-26",
-            "rating": 9.3
+            "rating": 9.2
           },
           {
             "episode": 9,
@@ -3784,7 +3784,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "ABQ",
             "airDate": "2009-05-31",
-            "rating": 9.2
+            "rating": 9.3
           }
         ]
       },
@@ -3795,7 +3795,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "No MÃ¡s",
             "airDate": "2010-03-21",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 2,
@@ -3807,13 +3807,13 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "I.F.T.",
             "airDate": "2010-04-04",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 4,
             "title": "Green Light",
             "airDate": "2010-04-11",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 5,
@@ -3843,7 +3843,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Kafkaesque",
             "airDate": "2010-05-16",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 10,
@@ -3950,7 +3950,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Face Off",
             "airDate": "2011-10-09",
-            "rating": 9.8
+            "rating": 9.9
           }
         ]
       },
@@ -3985,7 +3985,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Dead Freight",
             "airDate": "2012-08-12",
-            "rating": 9.6
+            "rating": 9.7
           },
           {
             "episode": 6,
@@ -4003,7 +4003,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Gliding Over All",
             "airDate": "2012-09-02",
-            "rating": 9.5
+            "rating": 9.6
           },
           {
             "episode": 9,
@@ -4033,25 +4033,25 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "To'hajiilee",
             "airDate": "2013-09-08",
-            "rating": 9.7
+            "rating": 9.8
           },
           {
             "episode": 14,
             "title": "Ozymandias",
             "airDate": "2013-09-15",
-            "rating": 9.5
+            "rating": 10
           },
           {
             "episode": 15,
             "title": "Granite State",
             "airDate": "2013-09-22",
-            "rating": 9.6
+            "rating": 9.7
           },
           {
             "episode": 16,
             "title": "Felina",
             "airDate": "2013-09-29",
-            "rating": 9.8
+            "rating": 9.9
           }
         ]
       }
@@ -4286,7 +4286,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "The Insider",
             "airDate": "2024-07-11",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 8,
@@ -4321,7 +4321,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "King of Hell",
             "airDate": "2026-04-22",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 5,
@@ -4333,7 +4333,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Though the Heavens Fall",
             "airDate": "2026-05-06",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 7,
@@ -4576,7 +4576,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "The Bear Is Infected",
             "airDate": "2026-08-16",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 4,
@@ -4588,7 +4588,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "The Idiot Army",
             "airDate": "2026-08-30",
-            "rating": 8.2
+            "rating": 8.1
           },
           {
             "episode": 6,
@@ -4710,13 +4710,13 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "The Rubberface of Comedy",
             "airDate": "2005-04-30",
-            "rating": 7.9
+            "rating": 7.8
           },
           {
             "episode": 13,
             "title": "The Clayface of Tragedy",
             "airDate": "2005-05-07",
-            "rating": 8.3
+            "rating": 8.1
           }
         ]
       },
@@ -4763,7 +4763,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Pets",
             "airDate": "2005-07-09",
-            "rating": 7.8
+            "rating": 7.7
           },
           {
             "episode": 8,
@@ -4923,7 +4923,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Strange New World",
             "airDate": "2006-11-18",
-            "rating": 8.9
+            "rating": 8.8
           },
           {
             "episode": 7,
@@ -4935,13 +4935,13 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Seconds",
             "airDate": "2007-02-10",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 9,
             "title": "Riddler's Revenge",
             "airDate": "2007-02-17",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 10,
@@ -4959,7 +4959,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "The Joining (1)",
             "airDate": "2007-04-28",
-            "rating": 8.2
+            "rating": 8.1
           },
           {
             "episode": 13,
@@ -5099,7 +5099,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Rabbit in a Snowstorm",
             "airDate": "2015-04-10",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 4,
@@ -5194,13 +5194,13 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Kinbaku",
             "airDate": "2016-03-18",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 6,
             "title": "Regrets Only",
             "airDate": "2016-03-18",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 7,
@@ -5230,7 +5230,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": ".380",
             "airDate": "2016-03-18",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 12,
@@ -5325,7 +5325,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "A New Napkin",
             "airDate": "2018-10-19",
-            "rating": 9.6
+            "rating": 9.5
           }
         ]
       }
@@ -5376,7 +5376,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "The Hollow of His Hand",
             "airDate": "2020-07-03",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 4,
@@ -5392,7 +5392,7 @@ window._SERIES_DATA = [
           {
             "episode": 6,
             "title": "Excessive Force",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 7,
@@ -5402,7 +5402,7 @@ window._SERIES_DATA = [
           {
             "episode": 8,
             "title": "Isle of Joy",
-            "rating": 8.9
+            "rating": 9
           },
           {
             "episode": 9,
@@ -5498,7 +5498,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "It's About Time",
             "airDate": "2021-03-26",
-            "rating": 9
+            "rating": 8.9
           },
           {
             "episode": 2,
@@ -5534,13 +5534,13 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "We Need to Talk",
             "airDate": "2021-04-23",
-            "rating": 9.6
+            "rating": 9.5
           },
           {
             "episode": 8,
             "title": "Where I Really Come From",
             "airDate": "2021-04-30",
-            "rating": 9.8
+            "rating": 9.7
           }
         ]
       },
@@ -5563,13 +5563,13 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "This Missive, This Machination!",
             "airDate": "2023-11-17",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 4,
             "title": "It's Been a While",
             "airDate": "2023-11-24",
-            "rating": 9.2
+            "rating": 9.1
           },
           {
             "episode": 5,
@@ -5581,7 +5581,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "It's Not That Simple",
             "airDate": "2024-03-21",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 7,
@@ -5593,7 +5593,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "I Thought You Were Stronger",
             "airDate": "2024-04-04",
-            "rating": 9.1
+            "rating": 9
           }
         ]
       },
@@ -5616,7 +5616,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "You Want a Real Costume, Right?",
             "airDate": "2025-02-06",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 4,
@@ -5740,13 +5740,13 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "And Then There Were 10",
             "airDate": "2005-12-27",
-            "rating": 8.2
+            "rating": 8
           },
           {
             "episode": 2,
             "title": "Washington B.C.",
             "airDate": "2006-01-13",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 3,
@@ -5770,7 +5770,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Tourist Trap",
             "airDate": "2006-02-04",
-            "rating": 6.9
+            "rating": 7
           },
           {
             "episode": 7,
@@ -5782,37 +5782,37 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "The Alliance",
             "airDate": "2006-02-18",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 9,
             "title": "Last Laugh",
             "airDate": "2006-02-25",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 10,
             "title": "Lucky Girl",
             "airDate": "2006-03-04",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 11,
             "title": " A Small Problem",
             "airDate": "2006-03-11",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 12,
             "title": "Side Effects",
             "airDate": "2006-03-18",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 13,
             "title": "Secrets",
             "airDate": "2006-03-25",
-            "rating": 9
+            "rating": 8.8
           }
         ]
       },
@@ -5823,25 +5823,25 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Truth",
             "airDate": "2006-05-29",
-            "rating": 7.6
+            "rating": 7.8
           },
           {
             "episode": 2,
             "title": " The Big Tick",
             "airDate": "2006-05-30",
-            "rating": 7.1
+            "rating": 7.3
           },
           {
             "episode": 3,
             "title": "Framed",
             "airDate": "2006-05-31",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 4,
             "title": "Gwen 10",
             "airDate": "2006-06-01",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 5,
@@ -5859,13 +5859,13 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Camp Fear",
             "airDate": "2006-06-21",
-            "rating": 7.6
+            "rating": 7.8
           },
           {
             "episode": 8,
             "title": "Ultimate Weapon",
             "airDate": "2006-07-06",
-            "rating": 7.4
+            "rating": 7.6
           },
           {
             "episode": 9,
@@ -5906,13 +5906,13 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Ben 10,000",
             "airDate": "2006-11-25",
-            "rating": 8.9
+            "rating": 8.8
           },
           {
             "episode": 2,
             "title": "Midnight Madness",
             "airDate": "2006-12-02",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 3,
@@ -5924,7 +5924,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Merry Christmas",
             "airDate": "2006-12-11",
-            "rating": 6.7
+            "rating": 7
           },
           {
             "episode": 5,
@@ -6085,7 +6085,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Ben 10 Returns, Part One",
             "airDate": "2008-04-18",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 2,
@@ -6168,13 +6168,13 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Darkstar Rising",
             "airDate": "2008-10-10",
-            "rating": 7.9
+            "rating": 7.8
           },
           {
             "episode": 2,
             "title": " Alone Together",
             "airDate": "2008-10-17",
-            "rating": 8.8
+            "rating": 8.7
           },
           {
             "episode": 3,
@@ -6186,7 +6186,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Save the Last Dance",
             "airDate": "2008-11-07",
-            "rating": 7.9
+            "rating": 7.8
           },
           {
             "episode": 5,
@@ -6234,13 +6234,13 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "War of the Worlds: Pt. 1",
             "airDate": "2009-03-27",
-            "rating": 8.9
+            "rating": 8.5
           },
           {
             "episode": 13,
             "title": "War of the Worlds: Pt. 2",
             "airDate": "2009-03-27",
-            "rating": 9.2
+            "rating": 8.9
           }
         ]
       },
@@ -6257,7 +6257,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Vengeance of Vilgax: Pt.2",
             "airDate": "2009-09-11",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 3,
@@ -6359,13 +6359,13 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "The Final Battle: Part 1",
             "airDate": "2010-03-26",
-            "rating": 8.4
+            "rating": 8.3
           },
           {
             "episode": 20,
             "title": "The Final Battle: Part 2",
             "airDate": "2010-03-26",
-            "rating": 9
+            "rating": 8.8
           }
         ]
       }
@@ -6419,13 +6419,13 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Hit 'Em Where They Live",
             "airDate": "2010-05-07",
-            "rating": 7.8
+            "rating": 8
           },
           {
             "episode": 4,
             "title": "Video Games",
             "airDate": "2010-05-14",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 5,
@@ -6449,7 +6449,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Fused",
             "airDate": "2010-06-11",
-            "rating": 8.2
+            "rating": 8.1
           },
           {
             "episode": 9,
@@ -6461,7 +6461,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Ultimate Aggregor",
             "airDate": "2010-10-10",
-            "rating": 8.4
+            "rating": 8.3
           },
           {
             "episode": 11,
@@ -6473,7 +6473,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Reflected Glory",
             "airDate": "2010-10-15",
-            "rating": 6.5
+            "rating": 6.8
           },
           {
             "episode": 13,
@@ -6485,13 +6485,13 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Where the Magic Happens",
             "airDate": "2010-10-29",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 15,
             "title": "Perplexahedron",
             "airDate": "2010-11-05",
-            "rating": 8.8
+            "rating": 8.7
           },
           {
             "episode": 16,
@@ -6503,7 +6503,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "...Nor Iron Bars a Cage",
             "airDate": "2010-11-19",
-            "rating": 8.1
+            "rating": 7.9
           },
           {
             "episode": 18,
@@ -6633,7 +6633,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Double or Nothing",
             "airDate": "2011-10-14",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 6,
@@ -6693,7 +6693,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Catch a Falling Star",
             "airDate": "2012-02-25",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 16,
@@ -6723,7 +6723,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "The Ultimate Enemy: Part 2",
             "airDate": "2012-03-31",
-            "rating": 8.8
+            "rating": 8.6
           }
         ]
       }
@@ -6902,7 +6902,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Showdown, Part 2",
             "airDate": "2013-02-16",
-            "rating": 9.6
+            "rating": 9.5
           },
           {
             "episode": 3,
@@ -6944,7 +6944,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Rad",
             "airDate": "2013-03-30",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 10,
@@ -7032,7 +7032,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Mystery, Incorporeal",
             "airDate": "2014-02-22",
-            "rating": 8.4
+            "rating": 9.1
           },
           {
             "episode": 3,
@@ -7097,7 +7097,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "And Then There Was Ben",
             "airDate": "2014-10-07",
-            "rating": 9.7
+            "rating": 9.8
           },
           {
             "episode": 3,
@@ -7133,7 +7133,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Universe Vs. Tennyson",
             "airDate": "2014-10-15",
-            "rating": 9.2
+            "rating": 9.1
           },
           {
             "episode": 9,
@@ -7269,13 +7269,13 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "The End of an Era",
             "airDate": "2014-11-13",
-            "rating": 9.5
+            "rating": 8.8
           },
           {
             "episode": 10,
             "title": "A New Dawn",
             "airDate": "2014-11-14",
-            "rating": 9.6
+            "rating": 9.4
           }
         ]
       }
@@ -7373,7 +7373,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Le Dislocoeur",
             "airDate": "2015-11-03",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 11,
@@ -7469,7 +7469,7 @@ window._SERIES_DATA = [
             "episode": 26,
             "title": "Ladybug and cat Noir (Origines - Part 2)",
             "airDate": "2016-03-05",
-            "rating": 8.7
+            "rating": 8.6
           }
         ]
       },
@@ -7480,7 +7480,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Pire NoÃ«l",
             "airDate": "2017-10-26",
-            "rating": 6.7
+            "rating": 7.1
           },
           {
             "episode": 2,
@@ -7504,7 +7504,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "La BÃ©fana",
             "airDate": "2017-11-01",
-            "rating": 7.4
+            "rating": 7.6
           },
           {
             "episode": 6,
@@ -7534,7 +7534,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Glaciator",
             "airDate": "2018-01-21",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 11,
@@ -7546,7 +7546,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Gorizilla",
             "airDate": "2018-05-20",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 13,
@@ -7558,7 +7558,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Zombizou",
             "airDate": "2018-06-03",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 15,
@@ -7594,7 +7594,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Inverso",
             "airDate": "2018-10-14",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 21,
@@ -7640,7 +7640,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Rebrousse-Temps",
             "airDate": "2019-04-14",
-            "rating": 7.6
+            "rating": 7.8
           },
           {
             "episode": 2,
@@ -7658,7 +7658,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Animaestro",
             "airDate": "2019-05-05",
-            "rating": 7.6
+            "rating": 7.9
           },
           {
             "episode": 5,
@@ -7682,7 +7682,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Climatika 2",
             "airDate": "2019-06-02",
-            "rating": 5.4
+            "rating": 6.1
           },
           {
             "episode": 9,
@@ -7706,7 +7706,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "La Marionnettiste 2",
             "airDate": "2019-10-23",
-            "rating": 7.4
+            "rating": 7.6
           },
           {
             "episode": 13,
@@ -7724,7 +7724,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Chasseuse de Kwamis",
             "airDate": "2019-10-27",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 16,
@@ -7748,7 +7748,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Trouble FÃªte",
             "airDate": "2019-10-31",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 20,
@@ -7760,7 +7760,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Chat Blanc",
             "airDate": "2019-11-10",
-            "rating": 9.4
+            "rating": 9.3
           },
           {
             "episode": 22,
@@ -7772,7 +7772,7 @@ window._SERIES_DATA = [
             "episode": 23,
             "title": "Ladybug",
             "airDate": "2019-11-24",
-            "rating": 8.5
+            "rating": 8.4
           },
           {
             "episode": 24,
@@ -7801,7 +7801,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "VÃ©ritÃ©",
             "airDate": "2021-04-11",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 2,
@@ -7813,7 +7813,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Le gang des secrets",
             "airDate": "2021-04-25",
-            "rating": 9
+            "rating": 9.1
           },
           {
             "episode": 4,
@@ -7825,7 +7825,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "PsycomÃ©dien",
             "airDate": "2021-05-30",
-            "rating": 7
+            "rating": 7.4
           },
           {
             "episode": 6,
@@ -7837,7 +7837,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Pirkell",
             "airDate": "2021-06-13",
-            "rating": 7.5
+            "rating": 7.7
           },
           {
             "episode": 8,
@@ -7855,19 +7855,19 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Sangsure",
             "airDate": "2021-07-24",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 11,
             "title": "Culpabysse",
             "airDate": "2021-07-31",
-            "rating": 7.5
+            "rating": 7.7
           },
           {
             "episode": 12,
             "title": "Crocoduel",
             "airDate": "2021-08-07",
-            "rating": 8.1
+            "rating": 8.4
           },
           {
             "episode": 13,
@@ -7903,19 +7903,19 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Exauceur",
             "airDate": "2021-11-07",
-            "rating": 9.1
+            "rating": 9.2
           },
           {
             "episode": 19,
             "title": "Simplificator",
             "airDate": "2021-11-14",
-            "rating": 6.1
+            "rating": 6.4
           },
           {
             "episode": 20,
             "title": "Qilin",
             "airDate": "2022-02-13",
-            "rating": 6.6
+            "rating": 7.1
           },
           {
             "episode": 21,
@@ -7927,7 +7927,7 @@ window._SERIES_DATA = [
             "episode": 22,
             "title": "EphÃ©mÃ¨re",
             "airDate": "2022-03-06",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 23,
@@ -8118,7 +8118,7 @@ window._SERIES_DATA = [
             "episode": 27,
             "title": "Action",
             "airDate": "2023-09-17",
-            "rating": 4.3
+            "rating": 5.6
           }
         ]
       },
@@ -8141,19 +8141,19 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Sublimation",
             "airDate": "2025-03-23",
-            "rating": 8.1
+            "rating": 6.8
           },
           {
             "episode": 4,
             "title": "Daddycop",
             "airDate": "2025-04-06",
-            "rating": 7.8
+            "rating": 8.2
           },
           {
             "episode": 5,
             "title": "Papys Garous",
             "airDate": "2025-03-30",
-            "rating": 8.8
+            "rating": 8
           },
           {
             "episode": 6,
@@ -8183,7 +8183,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Le ChÃ¢teau Noir",
             "airDate": "2025-10-19",
-            "rating": 7.1
+            "rating": 8.1
           },
           {
             "episode": 11,
@@ -8201,7 +8201,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Yaksi Gozen",
             "airDate": "2025-10-26",
-            "rating": 9.3
+            "rating": 9.6
           },
           {
             "episode": 14,
@@ -8213,7 +8213,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "La Redresseuse",
             "airDate": "2025-05-04",
-            "rating": 8.1
+            "rating": 8.6
           },
           {
             "episode": 16,
@@ -8360,13 +8360,13 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "When We Are in Need",
             "airDate": "2023-03-05",
-            "rating": 9.2
+            "rating": 9.3
           },
           {
             "episode": 9,
             "title": "Look for the Light",
             "airDate": "2023-03-12",
-            "rating": 8.9
+            "rating": 9
           }
         ]
       },
@@ -8383,7 +8383,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": " Through the Valley",
             "airDate": "2025-04-20",
-            "rating": 9.1
+            "rating": 9.2
           },
           {
             "episode": 3,
@@ -8401,7 +8401,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Feel Her Love",
             "airDate": "2025-05-11",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 6,
@@ -8517,13 +8517,13 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Do You Reject Satan?",
             "airDate": "2026-09-03",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 4,
             "title": "The Bigger Picture",
             "airDate": "2026-09-03",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 5,
@@ -8651,13 +8651,13 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Science/Fiction",
             "airDate": "2023-11-02",
-            "rating": 8.8
+            "rating": 8.7
           },
           {
             "episode": 6,
             "title": "Glorious Purpose",
             "airDate": "2023-11-09",
-            "rating": 9.5
+            "rating": 9.4
           }
         ]
       }
@@ -9002,7 +9002,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Efectuar lo acordado",
             "airDate": "2017-05-02",
-            "rating": 8.2
+            "rating": 8.1
           },
           {
             "episode": 2,
@@ -9050,7 +9050,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "El que la sigue la consigue",
             "airDate": "2017-06-27",
-            "rating": 8.6
+            "rating": 8.5
           }
         ]
       },
@@ -9091,7 +9091,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Bella ciao",
             "airDate": "2017-11-23",
-            "rating": 9.3
+            "rating": 9.2
           }
         ]
       },
@@ -9232,7 +9232,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Vivir muchas vidas",
             "airDate": "2021-09-03",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 6,
@@ -9411,7 +9411,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "An Innocent Man",
             "airDate": "2012-10-31",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 5,
@@ -9423,7 +9423,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Legacies",
             "airDate": "2012-11-14",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 7,
@@ -9566,7 +9566,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Keep Your Enemies Closer",
             "airDate": "2013-11-13",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 7,
@@ -9721,7 +9721,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "The Brave and the Bold",
             "airDate": "2014-12-03",
-            "rating": 9
+            "rating": 9.1
           },
           {
             "episode": 9,
@@ -9781,7 +9781,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Public Enemy",
             "airDate": "2015-04-01",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 19,
@@ -9811,7 +9811,7 @@ window._SERIES_DATA = [
             "episode": 23,
             "title": "My Name is Oliver Queen",
             "airDate": "2015-05-13",
-            "rating": 8.2
+            "rating": 8.1
           }
         ]
       },
@@ -9822,7 +9822,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Green Arrow",
             "airDate": "2015-10-07",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 2,
@@ -9858,7 +9858,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Brotherhood",
             "airDate": "2015-11-18",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 8,
@@ -9876,7 +9876,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Blood Debts",
             "airDate": "2016-01-20",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 11,
@@ -9965,7 +9965,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Legacy",
             "airDate": "2016-10-05",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 2,
@@ -10001,7 +10001,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Vigilante",
             "airDate": "2016-11-16",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 8,
@@ -10174,19 +10174,19 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "All for Nothing",
             "airDate": "2018-02-01",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 13,
             "title": "The Devil's Greatest Trick",
             "airDate": "2018-02-08",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 14,
             "title": "Collision Course",
             "airDate": "2018-03-01",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 15,
@@ -10198,7 +10198,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "The Thanatos Guild",
             "airDate": "2018-03-29",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 17,
@@ -10228,7 +10228,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Docket No. 11-19-41-73",
             "airDate": "2018-05-03",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 22,
@@ -10341,7 +10341,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Star City 2040",
             "airDate": "2019-03-18",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 17,
@@ -10353,13 +10353,13 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Lost Canary",
             "airDate": "2019-04-15",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 19,
             "title": "Spartan",
             "airDate": "2019-04-22",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 20,
@@ -10424,7 +10424,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Purgatory",
             "airDate": "2019-12-03",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 8,
@@ -10436,7 +10436,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Green Arrow & The Canaries",
             "airDate": "2020-01-21",
-            "rating": 6.8
+            "rating": 6.9
           },
           {
             "episode": 10,
@@ -10685,7 +10685,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "The Reverse-Flash Returns",
             "airDate": "2016-01-26",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 12,
@@ -10780,7 +10780,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Magenta",
             "airDate": "2016-10-18",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 4,
@@ -10888,7 +10888,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Cause and Effect",
             "airDate": "2017-05-09",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 22,
@@ -10917,7 +10917,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Mixed Signals",
             "airDate": "2017-10-17",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 3,
@@ -10929,7 +10929,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Elongated Journey Into Night",
             "airDate": "2017-10-31",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 5,
@@ -10947,7 +10947,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Therefore I Am",
             "airDate": "2017-11-21",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 8,
@@ -11001,7 +11001,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Run, Iris, Run",
             "airDate": "2018-03-13",
-            "rating": 5.4
+            "rating": 5.5
           },
           {
             "episode": 17,
@@ -11078,19 +11078,19 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "All Doll'd Up",
             "airDate": "2018-11-13",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 6,
             "title": "The Icicle Cometh",
             "airDate": "2018-11-20",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 7,
             "title": "O Come, All Ye Thankful",
             "airDate": "2018-11-27",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 8,
@@ -11144,7 +11144,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Failure Is an Orphan",
             "airDate": "2019-03-12",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 17,
@@ -11162,7 +11162,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Snow Pack",
             "airDate": "2019-04-23",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 20,
@@ -11174,7 +11174,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "The Girl with the Red Lightning",
             "airDate": "2019-05-07",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 22,
@@ -11203,13 +11203,13 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Dead Man Running",
             "airDate": "2019-10-22",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 4,
             "title": "There Will Be Blood",
             "airDate": "2019-10-29",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 5,
@@ -11233,7 +11233,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "The Last Temptation of Barry Allen, Pt. 2",
             "airDate": "2019-12-03",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 9,
@@ -11245,7 +11245,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Marathon",
             "airDate": "2020-02-04",
-            "rating": 6.8
+            "rating": 6.9
           },
           {
             "episode": 11,
@@ -11257,7 +11257,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "A Girl Named Sue",
             "airDate": "2020-02-18",
-            "rating": 6.9
+            "rating": 7
           },
           {
             "episode": 13,
@@ -11287,13 +11287,13 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Liberation",
             "airDate": "2020-04-28",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 18,
             "title": "Pay the Piper",
             "airDate": "2020-05-05",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 19,
@@ -11316,7 +11316,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "The Speed of Thought",
             "airDate": "2021-03-09",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 3,
@@ -11328,7 +11328,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Central City Strong",
             "airDate": "2021-03-23",
-            "rating": 6.2
+            "rating": 6.3
           },
           {
             "episode": 5,
@@ -11346,13 +11346,13 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Growing Pains",
             "airDate": "2021-04-13",
-            "rating": 6.7
+            "rating": 6.8
           },
           {
             "episode": 8,
             "title": "The People V. Killer Frost",
             "airDate": "2021-05-04",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 9,
@@ -11364,13 +11364,13 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Family Matters, Part 1",
             "airDate": "2021-05-18",
-            "rating": 5.8
+            "rating": 5.9
           },
           {
             "episode": 11,
             "title": "Family Matters, Part 2",
             "airDate": "2021-05-25",
-            "rating": 5.7
+            "rating": 5.8
           },
           {
             "episode": 12,
@@ -11382,37 +11382,37 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Masquerade",
             "airDate": "2021-06-15",
-            "rating": 6
+            "rating": 6.1
           },
           {
             "episode": 14,
             "title": "Rayo de Luz",
             "airDate": "2021-06-22",
-            "rating": 4.7
+            "rating": 4.8
           },
           {
             "episode": 15,
             "title": "Enemy at the Gates",
             "airDate": "2021-06-29",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 16,
             "title": "P.O.W.",
             "airDate": "2021-07-06",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 17,
             "title": "Heart of the Matter, Part 1",
             "airDate": "2021-07-13",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 18,
             "title": "Heart of the Matter, Part 2",
             "airDate": "2021-07-20",
-            "rating": 6.9
+            "rating": 7
           }
         ]
       },
@@ -11429,7 +11429,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Armageddon, Part 2",
             "airDate": "2021-11-23",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 3,
@@ -11453,7 +11453,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Impulsive Excessive Disorder",
             "airDate": "2022-03-09",
-            "rating": 6.3
+            "rating": 6.4
           },
           {
             "episode": 7,
@@ -11465,13 +11465,13 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "The Fire Next Time",
             "airDate": "2022-03-23",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 9,
             "title": "Phantoms",
             "airDate": "2022-03-30",
-            "rating": 6.2
+            "rating": 6.3
           },
           {
             "episode": 10,
@@ -11489,7 +11489,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Death Rises",
             "airDate": "2022-04-27",
-            "rating": 6.8
+            "rating": 6.9
           },
           {
             "episode": 13,
@@ -11507,19 +11507,19 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Into the Still Force",
             "airDate": "2022-05-18",
-            "rating": 6.3
+            "rating": 6.4
           },
           {
             "episode": 16,
             "title": "The Curious Case of Bartholomew Allen",
             "airDate": "2022-05-25",
-            "rating": 6.8
+            "rating": 6.9
           },
           {
             "episode": 17,
             "title": "Keep It Dark",
             "airDate": "2022-06-08",
-            "rating": 6
+            "rating": 6.1
           },
           {
             "episode": 18,
@@ -11537,7 +11537,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Negative, Part Two",
             "airDate": "2022-06-29",
-            "rating": 6.5
+            "rating": 6.6
           }
         ]
       },
@@ -11548,13 +11548,13 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Wednesday Ever After",
             "airDate": "2023-02-08",
-            "rating": 6.7
+            "rating": 6.9
           },
           {
             "episode": 2,
             "title": "Hear No Evil",
             "airDate": "2023-02-15",
-            "rating": 5.5
+            "rating": 5.6
           },
           {
             "episode": 3,
@@ -11566,31 +11566,31 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "The Mask of the Red Death, Part 1",
             "airDate": "2023-03-01",
-            "rating": 5.8
+            "rating": 5.9
           },
           {
             "episode": 5,
             "title": "The Mask of the Red Death, Part 2",
             "airDate": "2023-03-08",
-            "rating": 5.5
+            "rating": 5.7
           },
           {
             "episode": 6,
             "title": "The Good, the Bad and the Lucky",
             "airDate": "2023-03-15",
-            "rating": 3.8
+            "rating": 3.9
           },
           {
             "episode": 7,
             "title": "Wildest Dreams",
             "airDate": "2023-03-29",
-            "rating": 4.6
+            "rating": 4.7
           },
           {
             "episode": 8,
             "title": "Partners in Time",
             "airDate": "2023-04-05",
-            "rating": 5.4
+            "rating": 5.5
           },
           {
             "episode": 9,
@@ -11608,19 +11608,19 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "A New World, Part 2: The Blues",
             "airDate": "2023-05-10",
-            "rating": 6.3
+            "rating": 6.4
           },
           {
             "episode": 12,
             "title": "A New World, Part 3: Changes",
             "airDate": "2023-05-17",
-            "rating": 6.3
+            "rating": 6.4
           },
           {
             "episode": 13,
             "title": "A New World, Part 4: Finale",
             "airDate": "2023-05-24",
-            "rating": 5.2
+            "rating": 5.3
           }
         ]
       }
@@ -11712,7 +11712,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Blood Bonds",
             "airDate": "2016-01-04",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 10,
@@ -11766,7 +11766,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Worlds Finest",
             "airDate": "2016-03-28",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 19,
@@ -11861,7 +11861,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Mr. & Mrs. Mxyzptlk",
             "airDate": "2017-02-20",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 14,
@@ -11909,7 +11909,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Resist",
             "airDate": "2017-05-15",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 22,
@@ -11950,13 +11950,13 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Damage",
             "airDate": "2017-11-06",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 6,
             "title": "Midvale",
             "airDate": "2017-11-13",
-            "rating": 8.2
+            "rating": 8.1
           },
           {
             "episode": 7,
@@ -11968,7 +11968,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Crisis on Earth-X, Part 1",
             "airDate": "2017-11-27",
-            "rating": 8.8
+            "rating": 8.7
           },
           {
             "episode": 9,
@@ -11986,7 +11986,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Fort Rozz",
             "airDate": "2018-01-22",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 12,
@@ -11998,7 +11998,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Both Sides Now",
             "airDate": "2018-02-05",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 14,
@@ -12123,25 +12123,25 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Suspicious Minds",
             "airDate": "2019-01-20",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 11,
             "title": "Blood Memory",
             "airDate": "2019-01-27",
-            "rating": 6.9
+            "rating": 7
           },
           {
             "episode": 12,
             "title": "Menagerie",
             "airDate": "2019-02-17",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 13,
             "title": "What's So Funny About Truth, Justice, and the American Way?",
             "airDate": "2019-03-03",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 14,
@@ -12189,13 +12189,13 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Red Dawn",
             "airDate": "2019-05-12",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 22,
             "title": "The Quest for Peace",
             "airDate": "2019-05-19",
-            "rating": 8.1
+            "rating": 8.2
           }
         ]
       },
@@ -12206,19 +12206,19 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Event Horizon",
             "airDate": "2019-10-06",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 2,
             "title": "Stranger Beside Me",
             "airDate": "2019-10-13",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 3,
             "title": "Blurred Lines",
             "airDate": "2019-10-20",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 4,
@@ -12230,7 +12230,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Dangerous Liaisons",
             "airDate": "2019-11-03",
-            "rating": 6.8
+            "rating": 6.9
           },
           {
             "episode": 6,
@@ -12242,13 +12242,13 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Tremors",
             "airDate": "2019-11-17",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 8,
             "title": "The Wrath of Rama Khan",
             "airDate": "2019-12-01",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 9,
@@ -12284,7 +12284,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "The Bodyguard",
             "airDate": "2020-03-08",
-            "rating": 5.9
+            "rating": 6
           },
           {
             "episode": 15,
@@ -12296,13 +12296,13 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Alex in Wonderland",
             "airDate": "2020-03-22",
-            "rating": 6.9
+            "rating": 7
           },
           {
             "episode": 17,
             "title": "Deus Lex Machina",
             "airDate": "2020-05-03",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 18,
@@ -12325,7 +12325,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Rebirth",
             "airDate": "2021-03-30",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 2,
@@ -12337,7 +12337,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Phantom Menaces",
             "airDate": "2021-04-13",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 4,
@@ -12367,13 +12367,13 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Welcome Back, Kara!",
             "airDate": "2021-08-24",
-            "rating": 6.8
+            "rating": 6.9
           },
           {
             "episode": 9,
             "title": "Dream Weaver",
             "airDate": "2021-08-31",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 10,
@@ -12391,19 +12391,19 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Blind Spots",
             "airDate": "2021-09-21",
-            "rating": 5.6
+            "rating": 5.7
           },
           {
             "episode": 13,
             "title": "The Gauntlet",
             "airDate": "2021-09-28",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 14,
             "title": "Magical Thinking",
             "airDate": "2021-10-05",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 15,
@@ -12591,7 +12591,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "The Inverse Method",
             "airDate": "2022-02-01",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 5,
@@ -12657,7 +12657,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Waiting for Superman",
             "airDate": "2022-06-28",
-            "rating": 8.4
+            "rating": 8.3
           }
         ]
       },
@@ -12686,7 +12686,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Too Close to Home",
             "airDate": "2023-04-04",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 5,
@@ -12763,7 +12763,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Always My Hero",
             "airDate": "2024-10-14",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 4,
@@ -12799,7 +12799,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "To Live and Die Again",
             "airDate": "2024-11-25",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 10,
@@ -12901,7 +12901,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Episode #2.4",
             "airDate": "2014-10-23",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 5,
@@ -12930,7 +12930,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Episode #3.2",
             "airDate": "2016-05-12",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 3,
@@ -12948,7 +12948,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Episode #3.5",
             "airDate": "2016-06-02",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 6,
@@ -12977,7 +12977,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Blackbird",
             "airDate": "2017-11-29",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 4,
@@ -13024,7 +13024,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "The Loop",
             "airDate": "2019-09-08",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 5,
@@ -13265,7 +13265,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "The Diary",
             "airDate": "2023-02-23",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 5,
@@ -13318,7 +13318,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Blackbeard",
             "airDate": "2024-10-10",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 3,
@@ -13377,7 +13377,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The Crossing",
             "airDate": "2026-08-20",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 2,
@@ -13395,13 +13395,13 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": " Inside Job",
             "airDate": "2026-08-20",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 5,
             "title": "The Scytale",
             "airDate": "2026-08-20",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 6,
@@ -13419,7 +13419,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "The Runway Part 2",
             "airDate": "2026-08-20",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 9,
@@ -13561,7 +13561,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Oliver",
             "airDate": "2017-10-09",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 4,
@@ -13591,7 +13591,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Apple",
             "airDate": "2017-11-20",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 9,
@@ -13627,7 +13627,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "She",
             "airDate": "2018-02-05",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 15,
@@ -13692,7 +13692,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Two-Ply (or Not Two-Ply)",
             "airDate": "2018-11-05",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 7,
@@ -13704,7 +13704,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Stories",
             "airDate": "2018-11-19",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 9,
@@ -13793,7 +13793,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Take My Hand",
             "airDate": "2019-10-14",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 5,
@@ -13817,7 +13817,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Moonshot",
             "airDate": "2019-11-18",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 9,
@@ -13859,13 +13859,13 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Unsaid",
             "airDate": "2020-02-17",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 16,
             "title": "Autopsy",
             "airDate": "2020-02-24",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 17,
@@ -13889,7 +13889,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "I Love You",
             "airDate": "2020-03-30",
-            "rating": 8.8
+            "rating": 8.7
           }
         ]
       },
@@ -13906,7 +13906,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Frontline, Part 2",
             "airDate": "2020-11-09",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 3,
@@ -13930,7 +13930,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Lim",
             "airDate": "2021-01-11",
-            "rating": 7.4
+            "rating": 7.3
           },
           {
             "episode": 7,
@@ -13948,7 +13948,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Irresponsible Salad Bar Practices",
             "airDate": "2021-02-15",
-            "rating": 5.1
+            "rating": 5.2
           },
           {
             "episode": 10,
@@ -14037,13 +14037,13 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Measure of Intelligence",
             "airDate": "2021-10-11",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 4,
             "title": "Rationality",
             "airDate": "2021-10-25",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 5,
@@ -14067,7 +14067,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Rebellion",
             "airDate": "2022-02-28",
-            "rating": 7.5
+            "rating": 7.4
           },
           {
             "episode": 9,
@@ -14097,7 +14097,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Growing Pains",
             "airDate": "2022-04-04",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 14,
@@ -14127,7 +14127,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Sons",
             "airDate": "2022-05-16",
-            "rating": 8.1
+            "rating": 8
           }
         ]
       },
@@ -14275,7 +14275,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Baby, Baby, Baby",
             "airDate": "2024-02-20",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 2,
@@ -14293,7 +14293,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Date Night",
             "airDate": "2024-03-26",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 5,
@@ -14305,7 +14305,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "M.C.E.",
             "airDate": "2024-04-09",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 7,
@@ -14317,13 +14317,13 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "The Overview Effect",
             "airDate": "2024-05-07",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 9,
             "title": "Unconditional",
             "airDate": "2024-05-14",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 10,
@@ -14402,7 +14402,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "The Dumpling Paradox",
             "airDate": "2007-11-05",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 8,
@@ -14479,7 +14479,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "The Codpiece Topology",
             "airDate": "2008-09-29",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 3,
@@ -14491,7 +14491,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "The Griffin Equivalency",
             "airDate": "2008-10-13",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 5,
@@ -14503,7 +14503,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "The Cooper-Nowitzki Theorem",
             "airDate": "2008-11-03",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 7,
@@ -14521,7 +14521,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "The White Asparagus Triangulation",
             "airDate": "2008-11-24",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 10,
@@ -14551,7 +14551,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "The Financial Permeability",
             "airDate": "2009-02-02",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 15,
@@ -14587,13 +14587,13 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "The Hofstadter Isotope",
             "airDate": "2009-04-13",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 21,
             "title": "The Vegas Renormalization",
             "airDate": "2009-04-27",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 22,
@@ -14616,7 +14616,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The Electric Can Opener Fluctuation",
             "airDate": "2009-09-21",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 2,
@@ -14676,7 +14676,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "The Maternal Congruence",
             "airDate": "2009-12-14",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 12,
@@ -14968,7 +14968,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "The Speckerman Recurrence",
             "airDate": "2011-12-08",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 12,
@@ -15004,7 +15004,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "The Rothman Disintegration",
             "airDate": "2012-02-16",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 18,
@@ -15022,7 +15022,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "The Transporter Malfunction",
             "airDate": "2012-03-29",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 21,
@@ -15296,7 +15296,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "The Table Polarization",
             "airDate": "2014-02-27",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 17,
@@ -15439,7 +15439,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "The Comic Book Store Regeneration",
             "airDate": "2015-02-19",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 16,
@@ -15552,7 +15552,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "The Platonic Permutation",
             "airDate": "2015-11-19",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 10,
@@ -15600,7 +15600,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "The Celebration Experimentation",
             "airDate": "2016-02-25",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 18,
@@ -15713,7 +15713,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "The Birthday Synchronicity",
             "airDate": "2016-12-15",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 12,
@@ -15785,13 +15785,13 @@ window._SERIES_DATA = [
             "episode": 23,
             "title": "The Gyroscopic Collapse",
             "airDate": "2017-05-04",
-            "rating": 7.2
+            "rating": 7.1
           },
           {
             "episode": 24,
             "title": "The Long Distance Dissonance",
             "airDate": "2017-05-11",
-            "rating": 8.6
+            "rating": 8.5
           }
         ]
       },
@@ -15856,7 +15856,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "The Confidence Erosion",
             "airDate": "2017-12-07",
-            "rating": 7.4
+            "rating": 7.3
           },
           {
             "episode": 11,
@@ -15868,7 +15868,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "The Matrimonial Metric",
             "airDate": "2018-01-04",
-            "rating": 7.5
+            "rating": 7.4
           },
           {
             "episode": 13,
@@ -15916,7 +15916,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "The Reclusive Potential",
             "airDate": "2018-04-12",
-            "rating": 7.2
+            "rating": 7.1
           },
           {
             "episode": 21,
@@ -16005,7 +16005,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "The VCR Illumination",
             "airDate": "2018-12-06",
-            "rating": 7.5
+            "rating": 7.4
           },
           {
             "episode": 11,
@@ -16071,7 +16071,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "The Plagiarism Schism",
             "airDate": "2019-05-02",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 22,
@@ -16164,7 +16164,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "You Win or You Die",
             "airDate": "2011-05-29",
-            "rating": 9.2
+            "rating": 9.1
           },
           {
             "episode": 8,
@@ -16335,7 +16335,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": " Breaker of Chains",
             "airDate": "2014-04-20",
-            "rating": 8.8
+            "rating": 8.7
           },
           {
             "episode": 4,
@@ -16377,7 +16377,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "The Children",
             "airDate": "2014-06-15",
-            "rating": 9.7
+            "rating": 9.6
           }
         ]
       },
@@ -16442,7 +16442,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Mother's Mercy",
             "airDate": "2015-06-14",
-            "rating": 9.2
+            "rating": 9.1
           }
         ]
       },
@@ -16524,7 +16524,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Stormborn",
             "airDate": "2017-07-23",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 3,
@@ -16542,7 +16542,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Eastwatch",
             "airDate": "2017-08-13",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 6,
@@ -16633,7 +16633,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The End's Beginning",
             "airDate": "2019-12-20",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 2,
@@ -16739,13 +16739,13 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Shaerrawedd",
             "airDate": "2023-06-29",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 2,
             "title": "Unbound",
             "airDate": "2023-06-29",
-            "rating": 6
+            "rating": 6.1
           },
           {
             "episode": 3,
@@ -16781,7 +16781,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "The Cost of Chaos",
             "airDate": "2023-07-27",
-            "rating": 5.4
+            "rating": 5.3
           }
         ]
       },
@@ -16792,7 +16792,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "What Doesn't Kill You Makes You Stronger",
             "airDate": "2025-10-30",
-            "rating": 4.3
+            "rating": 4.2
           },
           {
             "episode": 2,
@@ -16810,7 +16810,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": " A Sermon of Survival",
             "airDate": "2025-10-30",
-            "rating": 4.4
+            "rating": 4.3
           },
           {
             "episode": 5,
@@ -16822,7 +16822,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Twilight of the Wolf",
             "airDate": "2025-10-30",
-            "rating": 4.9
+            "rating": 4.8
           },
           {
             "episode": 7,
@@ -16880,7 +16880,7 @@ window._SERIES_DATA = [
             "title": "The Deal",
             "duration": "48m",
             "airDate": "2026-05-13",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 2,
@@ -16901,35 +16901,35 @@ window._SERIES_DATA = [
             "title": "The Bet",
             "duration": "47m",
             "airDate": "2026-05-13",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 5,
             "title": "Rules of the Game",
             "duration": "52m",
             "airDate": "2026-05-13",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 6,
             "title": "Penalty Box",
             "duration": "46m",
             "airDate": "2026-05-13",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 7,
             "title": "Power Play",
             "duration": "51m",
             "airDate": "2026-05-13",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 8,
             "title": "Overtime",
             "duration": "55m",
             "airDate": "2026-05-13",
-            "rating": 8.5
+            "rating": 8.6
           }
         ]
       }
@@ -18165,7 +18165,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Drumroll, Please",
             "airDate": "2006-01-23",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 14,
@@ -18213,13 +18213,13 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Milk",
             "airDate": "2006-05-08",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 22,
             "title": "Come On",
             "airDate": "2006-05-15",
-            "rating": 8.8
+            "rating": 8.7
           }
         ]
       },
@@ -18302,7 +18302,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Columns",
             "airDate": "2007-01-22",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 14,
@@ -18373,7 +18373,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "We're Not from Here",
             "airDate": "2007-10-01",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 3,
@@ -18385,7 +18385,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Little Boys",
             "airDate": "2007-10-15",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 5,
@@ -18403,7 +18403,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Dowisetrepla",
             "airDate": "2007-11-05",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 8,
@@ -18600,13 +18600,13 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Murtaugh",
             "airDate": "2009-03-30",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 20,
             "title": "Mosbius Designs",
             "airDate": "2009-04-13",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 21,
@@ -18743,7 +18743,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Say Cheese",
             "airDate": "2010-03-22",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 19,
@@ -18910,7 +18910,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Hopeless",
             "airDate": "2011-04-18",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 22,
@@ -19202,7 +19202,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "The Time Travelers",
             "airDate": "2013-03-25",
-            "rating": 8.4
+            "rating": 8.3
           },
           {
             "episode": 21,
@@ -19243,7 +19243,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Coming Back",
             "airDate": "2013-09-23",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 3,
@@ -19423,7 +19423,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "The One With the Sonogram at the End",
             "airDate": "1994-09-29",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 3,
@@ -19447,7 +19447,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "The One With the Butt",
             "airDate": "1994-10-27",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 7,
@@ -19501,7 +19501,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "The One With the Stoned Guy",
             "airDate": "1995-02-16",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 16,
@@ -19555,7 +19555,7 @@ window._SERIES_DATA = [
             "episode": 24,
             "title": "The One Where Rachel Finds Out",
             "airDate": "1995-05-18",
-            "rating": 8.8
+            "rating": 8.7
           }
         ]
       },
@@ -19584,7 +19584,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "The One With Phoebe's Husband",
             "airDate": "1995-10-12",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 5,
@@ -19674,7 +19674,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "The One Where Eddie Won't Go",
             "airDate": "1996-03-28",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 20,
@@ -19715,7 +19715,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The One With the Princess Leia Fantasy",
             "airDate": "1996-09-16",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 2,
@@ -19793,7 +19793,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "The One With Phoebe's Ex-Partner",
             "airDate": "1997-02-06",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 15,
@@ -19990,7 +19990,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "The One With the Invitation",
             "airDate": "1998-04-23",
-            "rating": 6.8
+            "rating": 6.9
           },
           {
             "episode": 22,
@@ -20055,7 +20055,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "The One Where Ross Moves In",
             "airDate": "1998-11-12",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 8,
@@ -20103,7 +20103,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "The One With the Girl Who Hits Joey",
             "airDate": "1999-02-18",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 16,
@@ -20121,7 +20121,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "The One Where Rachel Smokes",
             "airDate": "1999-04-08",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 19,
@@ -20347,7 +20347,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "The One With the Engagement Picture",
             "airDate": "2000-11-02",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 6,
@@ -20526,7 +20526,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "The One With Monica's Boots",
             "airDate": "2001-12-06",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 11,
@@ -20580,7 +20580,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "The One With Joey's Interview",
             "airDate": "2002-04-04",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 20,
@@ -20693,7 +20693,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "The One Where Monica Sings",
             "airDate": "2003-01-30",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 14,
@@ -20705,7 +20705,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "The One With the Mugging",
             "airDate": "2003-02-13",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 16,
@@ -20823,7 +20823,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "The One Where Chandler Gets Caught",
             "airDate": "2004-01-15",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 11,
@@ -20870,7 +20870,8 @@ window._SERIES_DATA = [
           {
             "episode": 18,
             "title": "The Last One, Part 2",
-            "airDate": "2004-05-06"
+            "airDate": "2004-05-06",
+            "rating": 8.7
           }
         ]
       }
@@ -20938,7 +20939,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "The Remembering",
             "airDate": "2018-08-01",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 7,
@@ -21031,7 +21032,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "TS-19",
             "airDate": "2010-12-05",
-            "rating": 8.7
+            "rating": 8.6
           }
         ]
       },
@@ -21048,7 +21049,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Bloodletting",
             "airDate": "2011-10-23",
-            "rating": 8
+            "rating": 7.9
           },
           {
             "episode": 3,
@@ -21072,13 +21073,13 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Secrets",
             "airDate": "2011-11-20",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 7,
             "title": "Pretty Much Dead Already",
             "airDate": "2011-11-27",
-            "rating": 9.3
+            "rating": 9.2
           },
           {
             "episode": 8,
@@ -21102,13 +21103,13 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Judge, Jury, Executioner",
             "airDate": "2012-03-04",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 12,
             "title": "Better Angels",
             "airDate": "2012-03-11",
-            "rating": 9.2
+            "rating": 9.1
           },
           {
             "episode": 13,
@@ -21167,7 +21168,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Made to Suffer",
             "airDate": "2012-12-02",
-            "rating": 9
+            "rating": 8.9
           },
           {
             "episode": 9,
@@ -21215,7 +21216,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Welcome to the Tombs",
             "airDate": "2013-03-31",
-            "rating": 8.3
+            "rating": 8.2
           }
         ]
       },
@@ -21298,7 +21299,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Alone",
             "airDate": "2014-03-09",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 14,
@@ -21316,7 +21317,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "A",
             "airDate": "2014-03-30",
-            "rating": 9.2
+            "rating": 9.1
           }
         ]
       },
@@ -21357,7 +21358,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Consumed",
             "airDate": "2014-11-16",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 7,
@@ -21411,13 +21412,13 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Try",
             "airDate": "2015-03-22",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 16,
             "title": "Conquer",
             "airDate": "2015-03-29",
-            "rating": 9.3
+            "rating": 9.2
           }
         ]
       },
@@ -21470,13 +21471,13 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Start to Finish",
             "airDate": "2015-11-29",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 9,
             "title": "No Way Out",
             "airDate": "2016-02-14",
-            "rating": 9.7
+            "rating": 9.6
           },
           {
             "episode": 10,
@@ -21518,7 +21519,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Last Day on Earth",
             "airDate": "2016-04-03",
-            "rating": 7.3
+            "rating": 7.1
           }
         ]
       },
@@ -21529,7 +21530,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The Day Will Come When You Won't Be",
             "airDate": "2016-10-23",
-            "rating": 9.3
+            "rating": 9.2
           },
           {
             "episode": 2,
@@ -21619,7 +21620,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "The First Day of the Rest of Your Life",
             "airDate": "2017-04-02",
-            "rating": 7.9
+            "rating": 7.8
           }
         ]
       },
@@ -21630,7 +21631,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Mercy",
             "airDate": "2017-10-22",
-            "rating": 7.1
+            "rating": 7
           },
           {
             "episode": 2,
@@ -21642,7 +21643,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Monsters",
             "airDate": "2017-11-05",
-            "rating": 6.5
+            "rating": 6.4
           },
           {
             "episode": 4,
@@ -21672,19 +21673,19 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "How It's Gotta Be",
             "airDate": "2017-12-10",
-            "rating": 6.9
+            "rating": 6.8
           },
           {
             "episode": 9,
             "title": "Honor",
             "airDate": "2018-02-25",
-            "rating": 7.1
+            "rating": 7
           },
           {
             "episode": 10,
             "title": "The Lost and the Plunderers",
             "airDate": "2018-03-04",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 11,
@@ -21696,7 +21697,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "The Key",
             "airDate": "2018-03-18",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 13,
@@ -21708,7 +21709,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Still Gotta Mean Something",
             "airDate": "2018-04-01",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 15,
@@ -21755,7 +21756,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "What Comes After",
             "airDate": "2018-11-04",
-            "rating": 9.3
+            "rating": 9.2
           },
           {
             "episode": 6,
@@ -21868,7 +21869,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Open Your Eyes",
             "airDate": "2019-11-17",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 8,
@@ -21922,7 +21923,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "A Certain Doom",
             "airDate": "2020-10-04",
-            "rating": 8.4
+            "rating": 8.3
           },
           {
             "episode": 17,
@@ -21981,7 +21982,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Hunted",
             "airDate": "2021-08-29",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 4,
@@ -21993,7 +21994,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Out of the Ashes",
             "airDate": "2021-09-12",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 6,
@@ -22188,13 +22189,13 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "VIPS",
             "airDate": "2021-09-17",
-            "rating": 8
+            "rating": 7.9
           },
           {
             "episode": 8,
             "title": "Front Man",
             "airDate": "2021-09-17",
-            "rating": 7.9
+            "rating": 7.8
           },
           {
             "episode": 9,
@@ -22276,7 +22277,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "222",
             "airDate": "2025-06-27",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 5,
@@ -22446,7 +22447,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Tonight",
             "airDate": "2006-05-01",
-            "rating": 9.2
+            "rating": 9.1
           },
           {
             "episode": 21,
@@ -22918,13 +22919,13 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Dexter",
             "airDate": "2006-10-01",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 2,
             "title": "Crocodile",
             "airDate": "2006-10-08",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 3,
@@ -22942,7 +22943,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Love American Style",
             "airDate": "2006-10-29",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 6,
@@ -22978,7 +22979,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Truth Be Told",
             "airDate": "2006-12-10",
-            "rating": 9.3
+            "rating": 9.2
           },
           {
             "episode": 12,
@@ -23013,7 +23014,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "See-Through",
             "airDate": "2007-10-21",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 5,
@@ -23037,13 +23038,13 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Morning Comes",
             "airDate": "2007-11-18",
-            "rating": 9.1
+            "rating": 9
           },
           {
             "episode": 9,
             "title": "Resistance is Futile",
             "airDate": "2007-11-25",
-            "rating": 9.5
+            "rating": 9.4
           },
           {
             "episode": 10,
@@ -23072,7 +23073,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Our Father",
             "airDate": "2008-09-28",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 2,
@@ -23132,7 +23133,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "I Had a Dream",
             "airDate": "2008-12-07",
-            "rating": 8.9
+            "rating": 8.8
           },
           {
             "episode": 12,
@@ -23173,7 +23174,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Dirty Harry",
             "airDate": "2009-10-25",
-            "rating": 9
+            "rating": 8.9
           },
           {
             "episode": 6,
@@ -23197,7 +23198,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Hungry Man",
             "airDate": "2009-11-22",
-            "rating": 9.5
+            "rating": 9.4
           },
           {
             "episode": 10,
@@ -23209,7 +23210,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Hello, Dexter Morgan",
             "airDate": "2009-12-06",
-            "rating": 9.6
+            "rating": 9.5
           },
           {
             "episode": 12,
@@ -23226,7 +23227,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "My Bad",
             "airDate": "2010-09-26",
-            "rating": 8.9
+            "rating": 8.8
           },
           {
             "episode": 2,
@@ -23244,13 +23245,13 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Beauty and the Beast",
             "airDate": "2010-10-17",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 5,
             "title": "First Blood",
             "airDate": "2010-10-24",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 6,
@@ -23262,7 +23263,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Circle Us",
             "airDate": "2010-11-07",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 8,
@@ -23339,7 +23340,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Nebraska",
             "airDate": "2011-11-13",
-            "rating": 7.8
+            "rating": 7.7
           },
           {
             "episode": 8,
@@ -23416,7 +23417,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Chemistry",
             "airDate": "2012-11-11",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 8,
@@ -23457,19 +23458,19 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "A Beautiful Day",
             "airDate": "2013-06-30",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 2,
             "title": "Every Silver Lining...",
             "airDate": "2013-07-07",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 3,
             "title": "What's Eating Dexter Morgan?",
             "airDate": "2013-07-14",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 4,
@@ -23481,7 +23482,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "This Little Piggy",
             "airDate": "2013-07-28",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 6,
@@ -23493,19 +23494,19 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Dress Code",
             "airDate": "2013-08-11",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 8,
             "title": "Are We There Yet?",
             "airDate": "2013-08-18",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 9,
             "title": "Make Your Own Kind of Music",
             "airDate": "2013-08-25",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 10,
@@ -23523,7 +23524,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Remember the Monsters?",
             "airDate": "2013-09-22",
-            "rating": 4.9
+            "rating": 4.7
           }
         ]
       }
@@ -23639,25 +23640,25 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Kinetic",
             "airDate": "2002-02-26",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 14,
             "title": "Zero",
             "airDate": "2002-03-12",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 15,
             "title": "Nicodemus",
             "airDate": "2002-03-19",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 16,
             "title": "Stray",
             "airDate": "2002-04-16",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 17,
@@ -23681,7 +23682,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Obscura",
             "airDate": "2002-05-14",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 21,
@@ -23746,7 +23747,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Dichotic",
             "airDate": "2002-11-19",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 10,
@@ -23776,7 +23777,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Rush",
             "airDate": "2003-02-04",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 15,
@@ -23806,19 +23807,19 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Precipice",
             "airDate": "2003-04-22",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 20,
             "title": "Witness",
             "airDate": "2003-04-29",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 21,
             "title": "Accelerate",
             "airDate": "2003-05-06",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 22,
@@ -23847,7 +23848,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Phoenix",
             "airDate": "2003-10-08",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 3,
@@ -23865,7 +23866,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Perry",
             "airDate": "2003-10-29",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 6,
@@ -23877,7 +23878,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Magnetic",
             "airDate": "2003-11-12",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 8,
@@ -23901,7 +23902,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Delete",
             "airDate": "2004-01-28",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 12,
@@ -23913,25 +23914,25 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Velocity",
             "airDate": "2004-02-11",
-            "rating": 7.2
+            "rating": 7.4
           },
           {
             "episode": 14,
             "title": "Obsession",
             "airDate": "2004-02-18",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 15,
             "title": "Resurrection",
             "airDate": "2004-02-25",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 16,
             "title": "Crisis",
             "airDate": "2004-03-03",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 17,
@@ -23943,7 +23944,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Truth",
             "airDate": "2004-04-21",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 19,
@@ -23955,13 +23956,13 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Talisman",
             "airDate": "2004-05-05",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 21,
             "title": "Forsaken",
             "airDate": "2004-05-12",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 22,
@@ -23984,13 +23985,13 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Gone",
             "airDate": "2004-09-29",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 3,
             "title": "Facade",
             "airDate": "2004-10-06",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 4,
@@ -24008,7 +24009,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Transference",
             "airDate": "2004-10-27",
-            "rating": 8.8
+            "rating": 8.9
           },
           {
             "episode": 7,
@@ -24020,31 +24021,31 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Spell",
             "airDate": "2004-11-10",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 9,
             "title": "Bound",
             "airDate": "2004-11-17",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 10,
             "title": "Scare",
             "airDate": "2004-12-01",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 11,
             "title": "Unsafe",
             "airDate": "2005-01-26",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 12,
             "title": "Pariah",
             "airDate": "2005-02-02",
-            "rating": 8.8
+            "rating": 8.9
           },
           {
             "episode": 13,
@@ -24062,7 +24063,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Sacred",
             "airDate": "2005-02-23",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 16,
@@ -24086,19 +24087,19 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Blank",
             "airDate": "2005-04-27",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 20,
             "title": "Ageless",
             "airDate": "2005-05-04",
-            "rating": 7.1
+            "rating": 7.3
           },
           {
             "episode": 21,
             "title": "Forever",
             "airDate": "2005-05-11",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 22,
@@ -24121,7 +24122,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Mortal",
             "airDate": "2005-10-06",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 3,
@@ -24139,13 +24140,13 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Thirst",
             "airDate": "2005-10-27",
-            "rating": 6.4
+            "rating": 6.6
           },
           {
             "episode": 6,
             "title": "Exposed",
             "airDate": "2005-11-03",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 7,
@@ -24163,7 +24164,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Lexmas",
             "airDate": "2005-12-08",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 10,
@@ -24175,7 +24176,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Lockdown",
             "airDate": "2006-01-19",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 12,
@@ -24187,13 +24188,13 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Vengeance",
             "airDate": "2006-02-02",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 14,
             "title": "Tomb",
             "airDate": "2006-02-09",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 15,
@@ -24205,13 +24206,13 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Hypnotic",
             "airDate": "2006-03-30",
-            "rating": 7.3
+            "rating": 7.5
           },
           {
             "episode": 17,
             "title": "Void",
             "airDate": "2006-04-06",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 18,
@@ -24252,7 +24253,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Zod",
             "airDate": "2006-09-28",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 2,
@@ -24282,7 +24283,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Fallout",
             "airDate": "2006-11-02",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 7,
@@ -24294,13 +24295,13 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Static",
             "airDate": "2006-11-16",
-            "rating": 7.2
+            "rating": 7.4
           },
           {
             "episode": 9,
             "title": "Subterranean",
             "airDate": "2006-12-07",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 10,
@@ -24330,7 +24331,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Trespass",
             "airDate": "2007-02-08",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 15,
@@ -24348,37 +24349,37 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Combat",
             "airDate": "2007-03-22",
-            "rating": 7.8
+            "rating": 8
           },
           {
             "episode": 18,
             "title": "Progeny",
             "airDate": "2007-04-19",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 19,
             "title": "Nemesis",
             "airDate": "2007-04-26",
-            "rating": 8.2
+            "rating": 8.1
           },
           {
             "episode": 20,
             "title": "Noir",
             "airDate": "2007-05-03",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 21,
             "title": "Prototype",
             "airDate": "2007-05-10",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 22,
             "title": "Phantom",
             "airDate": "2007-05-17",
-            "rating": 9
+            "rating": 9.1
           }
         ]
       },
@@ -24389,7 +24390,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Bizarro",
             "airDate": "2007-09-27",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 2,
@@ -24407,25 +24408,25 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Cure",
             "airDate": "2007-10-18",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 5,
             "title": "Action",
             "airDate": "2007-10-25",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 6,
             "title": "Lara",
             "airDate": "2007-11-01",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 7,
             "title": "Wrath",
             "airDate": "2007-11-08",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 8,
@@ -24443,13 +24444,13 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Persona",
             "airDate": "2008-01-31",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 11,
             "title": "Siren",
             "airDate": "2008-02-07",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 12,
@@ -24461,19 +24462,19 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Hero",
             "airDate": "2008-03-13",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 14,
             "title": "Traveler",
             "airDate": "2008-03-20",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 15,
             "title": "Veritas",
             "airDate": "2008-03-27",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 16,
@@ -24485,7 +24486,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Sleeper",
             "airDate": "2008-04-24",
-            "rating": 7.2
+            "rating": 7.4
           },
           {
             "episode": 18,
@@ -24497,13 +24498,13 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Quest",
             "airDate": "2008-05-08",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 20,
             "title": "Arctic",
             "airDate": "2008-05-15",
-            "rating": 8.5
+            "rating": 8.6
           }
         ]
       },
@@ -24520,25 +24521,25 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Plastique",
             "airDate": "2008-09-25",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 3,
             "title": "Toxic",
             "airDate": "2008-10-02",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 4,
             "title": "Instinct",
             "airDate": "2008-10-09",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 5,
             "title": "Committed",
             "airDate": "2008-10-16",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 6,
@@ -24556,13 +24557,13 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Bloodline",
             "airDate": "2008-11-06",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 9,
             "title": "Abyss",
             "airDate": "2008-11-13",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 10,
@@ -24574,25 +24575,25 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Legion",
             "airDate": "2009-01-15",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 12,
             "title": "Bulletproof",
             "airDate": "2009-01-22",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 13,
             "title": "Power",
             "airDate": "2009-01-29",
-            "rating": 7.2
+            "rating": 7.4
           },
           {
             "episode": 14,
             "title": "Requiem",
             "airDate": "2009-02-05",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 15,
@@ -24604,7 +24605,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Turbulence",
             "airDate": "2009-03-19",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 17,
@@ -24616,13 +24617,13 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Eternal",
             "airDate": "2009-04-02",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 19,
             "title": "Stiletto",
             "airDate": "2009-04-23",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 20,
@@ -24663,19 +24664,19 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Rabid",
             "airDate": "2009-10-09",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 4,
             "title": "Echo",
             "airDate": "2009-10-16",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 5,
             "title": "Roulette",
             "airDate": "2009-10-23",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 6,
@@ -24687,7 +24688,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Kandor",
             "airDate": "2009-11-06",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 8,
@@ -24705,7 +24706,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Disciple",
             "airDate": "2010-01-29",
-            "rating": 7.6
+            "rating": 7.8
           },
           {
             "episode": 11,
@@ -24717,13 +24718,13 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Warrior",
             "airDate": "2010-02-12",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 13,
             "title": "Persuasion",
             "airDate": "2010-02-19",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 14,
@@ -24735,13 +24736,13 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Escape",
             "airDate": "2010-04-02",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 16,
             "title": "Checkmate",
             "airDate": "2010-04-09",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 17,
@@ -24753,13 +24754,13 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Charade",
             "airDate": "2010-04-23",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 19,
             "title": "Sacrifice",
             "airDate": "2010-04-30",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 20,
@@ -24782,19 +24783,19 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Lazarus",
             "airDate": "2010-09-24",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 2,
             "title": "Shield",
             "airDate": "2010-10-01",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 3,
             "title": "Supergirl",
             "airDate": "2010-10-08",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 4,
@@ -24806,13 +24807,13 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Isis",
             "airDate": "2010-10-22",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 6,
             "title": "Harvest",
             "airDate": "2010-10-29",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 7,
@@ -24842,19 +24843,19 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Icarus",
             "airDate": "2010-12-10",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 12,
             "title": "Collateral",
             "airDate": "2011-02-04",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 13,
             "title": "Beacon",
             "airDate": "2011-02-11",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 14,
@@ -24872,7 +24873,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Scion",
             "airDate": "2011-03-04",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 17,
@@ -25124,7 +25125,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Rise of the Villains: Mommy's Little Monster",
             "airDate": "2015-11-02",
-            "rating": 8.8
+            "rating": 8.9
           },
           {
             "episode": 8,
@@ -25482,7 +25483,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "A Dark Knight: One Bad Day",
             "airDate": "2018-05-10",
-            "rating": 8.9
+            "rating": 8.8
           },
           {
             "episode": 22,
@@ -25547,7 +25548,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "The Trial of Jim Gordon",
             "airDate": "2019-03-07",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 10,
@@ -25559,7 +25560,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "They Did What?",
             "airDate": "2019-04-18",
-            "rating": 8.4
+            "rating": 8.3
           },
           {
             "episode": 12,
@@ -25661,19 +25662,19 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Chapter 01: The Ties That Grind",
             "airDate": "2025-08-21",
-            "rating": 7.9
+            "rating": 8.1
           },
           {
             "episode": 2,
             "title": "Chapter 02: A Man Is Only as Good as His Bird",
             "airDate": "2025-08-28",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 3,
             "title": "Chapter 03: Another Rick Up My Sleeve",
             "airDate": "2025-09-04",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 4,
@@ -25691,7 +25692,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Chapter 06: Ignorance Is Chris",
             "airDate": "2025-09-25",
-            "rating": 9
+            "rating": 9.1
           },
           {
             "episode": 7,
@@ -25746,7 +25747,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Pilot",
             "airDate": "2017-09-25",
-            "rating": 7.4
+            "rating": 7.3
           },
           {
             "episode": 2,
@@ -25782,13 +25783,13 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "A Brisket, Voodoo, and Cannonball Run",
             "airDate": "2017-12-07",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 8,
             "title": "Cape Canaveral, SchrÃ¶dinger's Cat, and Cyndi Lauper's Hair",
             "airDate": "2017-12-14",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 9,
@@ -25800,7 +25801,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "An Eagle Feather, a String Bean, and an Eskimo",
             "airDate": "2018-01-04",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 11,
@@ -25901,13 +25902,13 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "A Financial Secret and Fish Sauce",
             "airDate": "2018-10-11",
-            "rating": 7.5
+            "rating": 7.4
           },
           {
             "episode": 5,
             "title": "A Research Study and Czechoslovakian Wedding Pastries",
             "airDate": "2018-10-18",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 6,
@@ -26020,7 +26021,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Quirky Eggheads and Texas Snow Globes",
             "airDate": "2019-09-26",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 2,
@@ -26151,7 +26152,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Graduation",
             "airDate": "2020-11-05",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 2,
@@ -26247,13 +26248,13 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "A Black Hole",
             "airDate": "2021-05-06",
-            "rating": 8
+            "rating": 7.9
           },
           {
             "episode": 18,
             "title": "The Wild and Woolly World of Nonlinear Dynamics",
             "airDate": "2021-05-13",
-            "rating": 7.9
+            "rating": 7.8
           }
         ]
       },
@@ -26324,7 +26325,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "A Lock-In, a Weather Girl and a Disgusting Habit",
             "airDate": "2022-01-13",
-            "rating": 7.4
+            "rating": 7.3
           },
           {
             "episode": 12,
@@ -26372,13 +26373,13 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "A God-Fearin' Baptist and a Hot Trophy Husband",
             "airDate": "2022-04-21",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 20,
             "title": "Uncle Sheldon and a Hormonal Firecracker",
             "airDate": "2022-04-28",
-            "rating": 7.8
+            "rating": 7.7
           },
           {
             "episode": 21,
@@ -26407,7 +26408,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Future Worf and the Margarita of the South Pacific",
             "airDate": "2022-10-06",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 3,
@@ -26527,7 +26528,7 @@ window._SERIES_DATA = [
             "episode": 22,
             "title": "A Tornado, a 10-Hour Flight and a Darn Fine Ring",
             "airDate": "2023-05-18",
-            "rating": 8.5
+            "rating": 8.4
           }
         ]
       },
@@ -26598,25 +26599,25 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "A Little Snip and Teaching Old Dogs",
             "airDate": "2024-05-09",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 12,
             "title": "A New Home and a Traditional Texas Torture",
             "airDate": "2024-05-09",
-            "rating": 9
+            "rating": 9.1
           },
           {
             "episode": 13,
             "title": "Funeral",
             "airDate": "2024-05-16",
-            "rating": 9.5
+            "rating": 9.4
           },
           {
             "episode": 14,
             "title": "Memoir",
             "airDate": "2024-05-16",
-            "rating": 8.9
+            "rating": 8.8
           }
         ]
       }
@@ -26658,7 +26659,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "A Normal Amount of Rage",
             "airDate": "2022-08-18",
-            "rating": 6.5
+            "rating": 6.6
           },
           {
             "episode": 2,
@@ -26682,7 +26683,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Mean, Green, and Straight Poured into These Jeans",
             "airDate": "2022-09-15",
-            "rating": 5.3
+            "rating": 5.4
           },
           {
             "episode": 6,
@@ -26706,7 +26707,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Whose Show Is This?",
             "airDate": "2022-10-13",
-            "rating": 5.5
+            "rating": 5.6
           }
         ]
       }
@@ -26786,7 +26787,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Bitter Reunions",
             "airDate": "2004-05-07",
-            "rating": 8.2
+            "rating": 8
           },
           {
             "episode": 8,
@@ -26810,7 +26811,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Fanning the Flames",
             "airDate": "2004-10-08",
-            "rating": 8.7
+            "rating": 8.5
           },
           {
             "episode": 12,
@@ -26905,7 +26906,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Identity Crisis!",
             "airDate": "2005-09-23",
-            "rating": 9.3
+            "rating": 9.2
           },
           {
             "episode": 7,
@@ -27112,7 +27113,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Slumber Party Panic",
             "airDate": "2010-04-05",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 2,
@@ -27130,7 +27131,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Tree Trunks",
             "airDate": "2010-04-12",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 5,
@@ -27148,7 +27149,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Ricardio the Heart Guy",
             "airDate": "2010-04-26",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 8,
@@ -27220,13 +27221,13 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "The Duke",
             "airDate": "2010-07-19",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 20,
             "title": "Freak City",
             "airDate": "2010-07-26",
-            "rating": 7.1
+            "rating": 7.3
           },
           {
             "episode": 21,
@@ -27238,7 +27239,7 @@ window._SERIES_DATA = [
             "episode": 22,
             "title": "Henchman",
             "airDate": "2010-08-23",
-            "rating": 8
+            "rating": 7.9
           },
           {
             "episode": 23,
@@ -27303,7 +27304,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Slow Love",
             "airDate": "2010-11-15",
-            "rating": 6.4
+            "rating": 6.6
           },
           {
             "episode": 7,
@@ -27345,7 +27346,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "The Pods",
             "airDate": "2011-01-31",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 14,
@@ -27393,19 +27394,19 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Belly of the Beast",
             "airDate": "2011-04-04",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 22,
             "title": "The Limit",
             "airDate": "2011-04-11",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 23,
             "title": "Video Makers",
             "airDate": "2011-04-18",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 24,
@@ -27434,7 +27435,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The Conquest of Cuteness",
             "airDate": "2011-07-11",
-            "rating": 7.2
+            "rating": 7.4
           },
           {
             "episode": 2,
@@ -27476,25 +27477,25 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Wizard Battle",
             "airDate": "2011-08-29",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 9,
             "title": "Adventure Time with Fionna and Cake",
             "airDate": "2011-09-05",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 10,
             "title": "What Was Missing",
             "airDate": "2011-09-26",
-            "rating": 9
+            "rating": 8.9
           },
           {
             "episode": 11,
             "title": "Apple Thief",
             "airDate": "2011-10-03",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 12,
@@ -27530,7 +27531,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Thank You",
             "airDate": "2011-11-23",
-            "rating": 9.1
+            "rating": 9
           },
           {
             "episode": 18,
@@ -27559,13 +27560,13 @@ window._SERIES_DATA = [
             "episode": 22,
             "title": "Paper Pete",
             "airDate": "2012-01-16",
-            "rating": 6.9
+            "rating": 7
           },
           {
             "episode": 23,
             "title": "Another Way",
             "airDate": "2012-01-23",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 24,
@@ -27600,19 +27601,19 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Five Short Graybles",
             "airDate": "2012-04-09",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 3,
             "title": "Web Weirdos",
             "airDate": "2012-04-16",
-            "rating": 6.4
+            "rating": 6.5
           },
           {
             "episode": 4,
             "title": "Dream of Love",
             "airDate": "2012-04-23",
-            "rating": 5.7
+            "rating": 6
           },
           {
             "episode": 5,
@@ -27636,13 +27637,13 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Hug Wolf",
             "airDate": "2012-05-14",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 9,
             "title": "Princess Monster Wife",
             "airDate": "2012-05-28",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 10,
@@ -27660,7 +27661,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Gotcha!",
             "airDate": "2012-06-18",
-            "rating": 6.7
+            "rating": 6.9
           },
           {
             "episode": 13,
@@ -27684,7 +27685,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Burning Low",
             "airDate": "2012-07-30",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 17,
@@ -27708,7 +27709,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "You Made Me",
             "airDate": "2012-08-27",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 21,
@@ -27773,7 +27774,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Up a Tree",
             "airDate": "2012-11-26",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 5,
@@ -27791,7 +27792,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Davey",
             "airDate": "2013-01-14",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 8,
@@ -27833,13 +27834,13 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Simon & Marcy",
             "airDate": "2013-03-25",
-            "rating": 9.7
+            "rating": 9.6
           },
           {
             "episode": 15,
             "title": "A Glitch is a Glitch",
             "airDate": "2013-04-01",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 16,
@@ -27863,7 +27864,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "James Baxter the Horse",
             "airDate": "2013-05-06",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 20,
@@ -27875,7 +27876,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "The Suitor",
             "airDate": "2013-05-20",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 22,
@@ -27899,7 +27900,7 @@ window._SERIES_DATA = [
             "episode": 25,
             "title": "Candy Streets",
             "airDate": "2013-06-24",
-            "rating": 7.3
+            "rating": 7.5
           },
           {
             "episode": 26,
@@ -27929,7 +27930,7 @@ window._SERIES_DATA = [
             "episode": 30,
             "title": "Frost & Fire",
             "airDate": "2013-08-05",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 31,
@@ -27959,25 +27960,25 @@ window._SERIES_DATA = [
             "episode": 35,
             "title": "Love Games",
             "airDate": "2013-09-23",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 36,
             "title": "Dungeon Train",
             "airDate": "2013-09-30",
-            "rating": 8.2
+            "rating": 8.1
           },
           {
             "episode": 37,
             "title": "The Box Prince",
             "airDate": "2013-10-07",
-            "rating": 6.9
+            "rating": 7
           },
           {
             "episode": 38,
             "title": "Red Starved",
             "airDate": "2013-10-14",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 39,
@@ -28007,7 +28008,7 @@ window._SERIES_DATA = [
             "episode": 43,
             "title": "Root Beer Guy",
             "airDate": "2013-12-02",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 44,
@@ -28031,7 +28032,7 @@ window._SERIES_DATA = [
             "episode": 47,
             "title": "The Red Throne",
             "airDate": "2014-02-10",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 48,
@@ -28102,25 +28103,25 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Breezy",
             "airDate": "2014-06-05",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 7,
             "title": "Food Chain",
             "airDate": "2014-06-12",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 8,
             "title": "Furniture & Meat",
             "airDate": "2014-06-19",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 9,
             "title": "The Prince Who Wanted Everything",
             "airDate": "2014-06-26",
-            "rating": 6.6
+            "rating": 6.9
           },
           {
             "episode": 10,
@@ -28150,7 +28151,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Princess Day",
             "airDate": "2014-07-31",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 15,
@@ -28174,7 +28175,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Everything's Jake",
             "airDate": "2014-11-24",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 19,
@@ -28234,13 +28235,13 @@ window._SERIES_DATA = [
             "episode": 28,
             "title": "The Mountain",
             "airDate": "2015-02-12",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 29,
             "title": "Dark Purple",
             "airDate": "2015-02-19",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 30,
@@ -28252,7 +28253,7 @@ window._SERIES_DATA = [
             "episode": 31,
             "title": "Walnuts & Rain",
             "airDate": "2015-03-05",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 32,
@@ -28264,13 +28265,13 @@ window._SERIES_DATA = [
             "episode": 33,
             "title": "Jermaine",
             "airDate": "2015-04-23",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 34,
             "title": "Chips & Ice Cream",
             "airDate": "2015-04-30",
-            "rating": 6.5
+            "rating": 6.7
           },
           {
             "episode": 35,
@@ -28282,13 +28283,13 @@ window._SERIES_DATA = [
             "episode": 36,
             "title": "Hoots",
             "airDate": "2015-05-14",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 37,
             "title": "Water Park Prank",
             "airDate": "2015-05-21",
-            "rating": 4.6
+            "rating": 4.9
           },
           {
             "episode": 38,
@@ -28353,7 +28354,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Mama Said",
             "airDate": "2015-11-05",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 5,
@@ -28425,7 +28426,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Angel Face",
             "airDate": "2016-01-11",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 17,
@@ -28437,7 +28438,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Blank-Eyed Girl",
             "airDate": "2016-01-13",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 19,
@@ -28610,7 +28611,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Islands Part 4: Imaginary Resources",
             "airDate": "2017-01-31",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 11,
@@ -28675,7 +28676,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Elements Part 5: Slime Central",
             "airDate": "2017-04-26",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 7,
@@ -28699,7 +28700,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Abstract",
             "airDate": "2017-07-17",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 11,
@@ -28746,7 +28747,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Son of Rap Bear",
             "airDate": "2017-09-17",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 4,
@@ -28764,7 +28765,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Ring of Fire",
             "airDate": "2017-12-17",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 7,
@@ -28806,7 +28807,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Come Along with Me",
             "airDate": "2018-09-03",
-            "rating": 9.8
+            "rating": 9.7
           }
         ]
       }
@@ -28851,43 +28852,43 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Tread Lightly",
             "airDate": "2026-05-25",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 3,
             "title": "Double Cross",
             "airDate": "2026-05-25",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 4,
             "title": "A Mistake I'll Never Make Again",
             "airDate": "2026-05-25",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 5,
             "title": "Betrayal",
             "airDate": "2026-05-25",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 6,
             "title": "Nightmare on a Gurney",
             "airDate": "2026-05-25",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 7,
             "title": "Nobody's Hero",
             "airDate": "2026-05-25",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 8,
             "title": "The Man in the Mask",
             "airDate": "2026-05-25",
-            "rating": 8.6
+            "rating": 8.7
           }
         ]
       }
@@ -28992,7 +28993,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "#TeamLucifer",
             "airDate": "2016-04-18",
-            "rating": 8.8
+            "rating": 8.9
           },
           {
             "episode": 13,
@@ -29051,7 +29052,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Trip to Stabby Town",
             "airDate": "2016-11-14",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 9,
@@ -29069,7 +29070,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Stewardess Interruptus",
             "airDate": "2017-01-16",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 12,
@@ -29105,7 +29106,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Sympathy for the Goddess",
             "airDate": "2017-05-22",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 18,
@@ -29206,7 +29207,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "High School Poppycock",
             "airDate": "2018-02-26",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 16,
@@ -29242,7 +29243,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Anything Pierce Can Do I Can Do Better",
             "airDate": "2018-04-23",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 22,
@@ -29266,13 +29267,13 @@ window._SERIES_DATA = [
             "episode": 25,
             "title": "BooNormal",
             "airDate": "2018-05-28",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 26,
             "title": "Once Upon a Time",
             "airDate": "2018-05-28",
-            "rating": 7.5
+            "rating": 7.6
           }
         ]
       },
@@ -29313,7 +29314,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Orgy Pants to Work",
             "airDate": "2019-05-08",
-            "rating": 8.8
+            "rating": 8.9
           },
           {
             "episode": 7,
@@ -29337,7 +29338,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Who's da New King of Hell?",
             "airDate": "2019-05-08",
-            "rating": 9.5
+            "rating": 9.6
           }
         ]
       },
@@ -29354,13 +29355,13 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Lucifer! Lucifer! Lucifer!",
             "airDate": "2020-08-21",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 3,
             "title": "Â¡Diablo!",
             "airDate": "2020-08-21",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 4,
@@ -29372,7 +29373,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Detective Amenadiel",
             "airDate": "2020-08-21",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 6,
@@ -29408,7 +29409,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Resting Devil Face",
             "airDate": "2021-05-28",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 12,
@@ -29438,7 +29439,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "A Chance at a Happy Ending",
             "airDate": "2021-05-28",
-            "rating": 9.2
+            "rating": 9.1
           }
         ]
       },
@@ -29461,7 +29462,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Yabba Dabba Do Me",
             "airDate": "2021-09-10",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 4,
@@ -29485,7 +29486,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "My Best Fiend's Wedding",
             "airDate": "2021-09-10",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 8,
@@ -29497,7 +29498,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Goodbye, Lucifer",
             "airDate": "2021-09-10",
-            "rating": 8.8
+            "rating": 8.9
           },
           {
             "episode": 10,
@@ -29660,19 +29661,19 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Salt and Sea, Fire and Blood",
             "airDate": "2026-06-21",
-            "rating": 9.1
+            "rating": 9.2
           },
           {
             "episode": 2,
             "title": "Queen's Landing",
             "airDate": "2026-06-28",
-            "rating": 9.2
+            "rating": 9.4
           },
           {
             "episode": 3,
             "title": "Rhaenyra Triumphant",
             "airDate": "2026-07-05",
-            "rating": 8.1
+            "rating": 8.4
           },
           {
             "episode": 4,
@@ -29971,13 +29972,13 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Episode #4.3",
             "airDate": "2026-08-19",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 4,
             "title": "Episode #4.4",
             "airDate": "2026-08-26",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 5,
@@ -29989,7 +29990,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Episode #4.6",
             "airDate": "2026-09-09",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 7,
@@ -30053,13 +30054,13 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Stuntin Like My Daddy",
             "airDate": "2019-06-23",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 3,
             "title": "Made You Look",
             "airDate": "2019-06-30",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 4,
@@ -30089,7 +30090,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "And Salt the Earth Behind You",
             "airDate": "2019-08-04",
-            "rating": 8.1
+            "rating": 8.2
           }
         ]
       },
@@ -30100,13 +30101,13 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Trying to Get to Heaven Before They Close the Door",
             "airDate": "2022-01-09",
-            "rating": 9
+            "rating": 9.1
           },
           {
             "episode": 2,
             "title": "Out of Touch",
             "airDate": "2022-01-16",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 3,
@@ -30136,7 +30137,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "The Theater and Its Double",
             "airDate": "2022-02-20",
-            "rating": 8.8
+            "rating": 8.9
           },
           {
             "episode": 8,
@@ -30153,7 +30154,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Ãndale",
             "airDate": "2026-04-12",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 2,
@@ -30786,7 +30787,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Call of the Woe",
             "airDate": "2025-08-06",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 4,
@@ -30810,13 +30811,13 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Woe Me the Money",
             "airDate": "2025-09-03",
-            "rating": 8.2
+            "rating": 8.5
           },
           {
             "episode": 8,
             "title": "This Means Woe",
             "airDate": "2025-09-03",
-            "rating": 8.2
+            "rating": 8.3
           }
         ]
       }
@@ -30907,7 +30908,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "A Hit Is a Hit",
             "airDate": "1999-03-14",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 11,
@@ -30936,19 +30937,19 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Guy Walks Into a Psychiatrist's Office",
             "airDate": "2000-01-16",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 2,
             "title": "Do Not Resuscitate",
             "airDate": "2000-01-23",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 3,
             "title": "Toodle-Fucking-Oo",
             "airDate": "2000-01-30",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 4,
@@ -30990,13 +30991,13 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Bust-Out",
             "airDate": "2000-03-19",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 11,
             "title": "House Arrest",
             "airDate": "2000-03-26",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 12,
@@ -31008,7 +31009,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Funhouse",
             "airDate": "2000-04-09",
-            "rating": 9.5
+            "rating": 9.4
           }
         ]
       },
@@ -31055,13 +31056,13 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Second Opinion",
             "airDate": "2001-04-08",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 8,
             "title": "He Is Risen",
             "airDate": "2001-04-15",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 9,
@@ -31114,7 +31115,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Christopher",
             "airDate": "2002-09-29",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 4,
@@ -31150,7 +31151,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Whoever Did This",
             "airDate": "2002-11-10",
-            "rating": 9.4
+            "rating": 9.3
           },
           {
             "episode": 10,
@@ -31174,7 +31175,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Whitecaps",
             "airDate": "2002-12-08",
-            "rating": 9.4
+            "rating": 9.3
           }
         ]
       },
@@ -31215,13 +31216,13 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Sentimental Education",
             "airDate": "2004-04-11",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 7,
             "title": "In Camelot",
             "airDate": "2004-04-18",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 8,
@@ -31268,7 +31269,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Members Only",
             "airDate": "2006-03-12",
-            "rating": 9.3
+            "rating": 9.2
           },
           {
             "episode": 2,
@@ -31280,7 +31281,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Mayham",
             "airDate": "2006-03-26",
-            "rating": 8.9
+            "rating": 8.8
           },
           {
             "episode": 4,
@@ -31304,7 +31305,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Luxury Lounge",
             "airDate": "2006-04-23",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 8,
@@ -31358,7 +31359,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Chasing It",
             "airDate": "2007-04-29",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 17,
@@ -31439,13 +31440,13 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Defeeted",
             "airDate": "2004-08-16",
-            "rating": 7.4
+            "rating": 7.3
           },
           {
             "episode": 3,
             "title": "Sports Day",
             "airDate": "2004-08-17",
-            "rating": 7.1
+            "rating": 6.5
           },
           {
             "episode": 4,
@@ -31457,7 +31458,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Sleepless in LazyTown",
             "airDate": "2004-08-19",
-            "rating": 6.6
+            "rating": 5.8
           },
           {
             "episode": 6,
@@ -31469,19 +31470,19 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Hero for a Day",
             "airDate": "2004-08-23",
-            "rating": 7.2
+            "rating": 6.4
           },
           {
             "episode": 8,
             "title": "Sportafake",
             "airDate": "2004-08-24",
-            "rating": 7.2
+            "rating": 6.5
           },
           {
             "episode": 9,
             "title": "Happy Brush Day",
             "airDate": "2004-08-25",
-            "rating": 7.4
+            "rating": 6.6
           },
           {
             "episode": 10,
@@ -31493,25 +31494,25 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Dr. Rottenstein",
             "airDate": "2004-09-27",
-            "rating": 7.2
+            "rating": 6.5
           },
           {
             "episode": 12,
             "title": "Rottenbeard",
             "airDate": "2004-10-04",
-            "rating": 7.7
+            "rating": 7.2
           },
           {
             "episode": 13,
             "title": "Cry Dinosaur",
             "airDate": "2004-10-25",
-            "rating": 7.3
+            "rating": 6.6
           },
           {
             "episode": 14,
             "title": "My Treehouse",
             "airDate": "2004-11-11",
-            "rating": 7
+            "rating": 6.5
           },
           {
             "episode": 15,
@@ -31529,7 +31530,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Zap It!",
             "airDate": "2005-06-08",
-            "rating": 7.1
+            "rating": 6.6
           },
           {
             "episode": 18,
@@ -31541,7 +31542,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Prince Stingy",
             "airDate": "2005-06-10",
-            "rating": 6.9
+            "rating": 6.4
           },
           {
             "episode": 20,
@@ -31571,7 +31572,7 @@ window._SERIES_DATA = [
             "episode": 24,
             "title": "Soccer Sucker",
             "airDate": "2005-08-03",
-            "rating": 7.2
+            "rating": 6.7
           },
           {
             "episode": 25,
@@ -31583,13 +31584,13 @@ window._SERIES_DATA = [
             "episode": 26,
             "title": "LazyTown's New Superhero",
             "airDate": "2005-08-15",
-            "rating": 7
+            "rating": 6.5
           },
           {
             "episode": 27,
             "title": "Secret Agent Zero",
             "airDate": "2005-10-21",
-            "rating": 7.8
+            "rating": 7.3
           },
           {
             "episode": 28,
@@ -31601,7 +31602,7 @@ window._SERIES_DATA = [
             "episode": 29,
             "title": "LazyTown's Surprise Santa",
             "airDate": "2005-12-09",
-            "rating": 6.8
+            "rating": 6.3
           },
           {
             "episode": 30,
@@ -31630,7 +31631,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Ziggy's Alien",
             "airDate": "2006-05-17",
-            "rating": 6.7
+            "rating": 6.2
           },
           {
             "episode": 4,
@@ -31648,7 +31649,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Little Sportacus",
             "airDate": "2006-09-26",
-            "rating": 7.4
+            "rating": 7
           },
           {
             "episode": 7,
@@ -31666,37 +31667,37 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Haunted Castle",
             "airDate": "2006-10-24",
-            "rating": 6.6
+            "rating": 6.2
           },
           {
             "episode": 10,
             "title": "The LazyTown Snow Monster",
             "airDate": "2006-12-15",
-            "rating": 7
+            "rating": 6.3
           },
           {
             "episode": 11,
             "title": "The LazyTown Circus",
             "airDate": "2007-02-12",
-            "rating": 7.1
+            "rating": 6.5
           },
           {
             "episode": 12,
             "title": "Friends Forever",
             "airDate": "2007-02-13",
-            "rating": 7
+            "rating": 6.5
           },
           {
             "episode": 13,
             "title": "Pixel TV",
             "airDate": "2007-02-15",
-            "rating": 6.4
+            "rating": 5.9
           },
           {
             "episode": 14,
             "title": "School Scam",
             "airDate": "2007-02-16",
-            "rating": 7
+            "rating": 6.4
           },
           {
             "episode": 15,
@@ -31714,7 +31715,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "LazyTown Goes Digital",
             "airDate": "2007-05-20",
-            "rating": 7.1
+            "rating": 6.8
           },
           {
             "episode": 18,
@@ -31755,7 +31756,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Roboticus",
             "airDate": "2013-05-27",
-            "rating": 6.5
+            "rating": 5.8
           },
           {
             "episode": 2,
@@ -31773,49 +31774,49 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "The Scavenger Hunt",
             "airDate": "2013-06-17",
-            "rating": 6.4
+            "rating": 5.8
           },
           {
             "episode": 5,
             "title": "Who's Who?",
             "airDate": "2013-06-24",
-            "rating": 7.1
+            "rating": 6.4
           },
           {
             "episode": 6,
             "title": "The Purple Panther (1)",
             "airDate": "2013-07-07",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 7,
             "title": "The Purple Panther (2)",
             "airDate": "2013-07-08",
-            "rating": 7
+            "rating": 6.6
           },
           {
             "episode": 8,
             "title": "The Blue Knight",
             "airDate": "2013-07-15",
-            "rating": 6.9
+            "rating": 6.3
           },
           {
             "episode": 9,
             "title": "The First Day of Summer",
             "airDate": "2013-07-22",
-            "rating": 7.4
+            "rating": 7
           },
           {
             "episode": 10,
             "title": "The LazyCup",
             "airDate": "2013-07-29",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 11,
             "title": "Chef Rottenfood",
             "airDate": "2013-08-05",
-            "rating": 6.8
+            "rating": 6.1
           },
           {
             "episode": 12,
@@ -31827,7 +31828,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "The Holiday Spirit",
             "airDate": "2013-08-19",
-            "rating": 7.9
+            "rating": 7.5
           }
         ]
       },
@@ -31838,7 +31839,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Let's Go to the Moon",
             "airDate": "2014-01-10",
-            "rating": 7.9
+            "rating": 7.5
           },
           {
             "episode": 2,
@@ -31850,7 +31851,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Secret Friend Day",
             "airDate": "2014-02-14",
-            "rating": 7.3
+            "rating": 7
           },
           {
             "episode": 4,
@@ -31868,13 +31869,13 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Princess Stephanie",
             "airDate": "2014-05-23",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 7,
             "title": "Ziggi's Talking Teddy",
             "airDate": "2014-06-12",
-            "rating": 8.3
+            "rating": 7.7
           },
           {
             "episode": 8,
@@ -31886,7 +31887,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "The Baby Troll",
             "airDate": "2014-08-04",
-            "rating": 7.4
+            "rating": 6.6
           },
           {
             "episode": 10,
@@ -31984,7 +31985,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "The Enemy Below (1)",
             "airDate": "2001-12-03",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 7,
@@ -32002,7 +32003,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Paradise Lost (2)",
             "airDate": "2002-01-28",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 10,
@@ -32020,13 +32021,13 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "The Brave and the Bold (1)",
             "airDate": "2002-03-10",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 13,
             "title": "The Brave and the Bold (2)",
             "airDate": "2002-03-17",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 14,
@@ -32044,13 +32045,13 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Legends (1)",
             "airDate": "2002-04-21",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 17,
             "title": "Legends (2)",
             "airDate": "2002-04-28",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 18,
@@ -32068,7 +32069,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "A Knight of Shadows (1)",
             "airDate": "2002-09-20",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 21,
@@ -32098,7 +32099,7 @@ window._SERIES_DATA = [
             "episode": 25,
             "title": "The Savage Time (2)",
             "airDate": "2002-11-09",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 26,
@@ -32187,13 +32188,13 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Eclipsed (1)",
             "airDate": "2003-11-08",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 14,
             "title": "Eclipsed (2)",
             "airDate": "2003-11-08",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 15,
@@ -32391,7 +32392,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The Big Leagues",
             "airDate": "2002-01-26",
-            "rating": 7.9
+            "rating": 7.8
           },
           {
             "episode": 2,
@@ -34042,7 +34043,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "The Merge: Part 2",
             "airDate": "2023-06-01",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 3,
@@ -34340,7 +34341,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "The Shatter Dragon",
             "airDate": "2025-04-17",
-            "rating": 9.5
+            "rating": 9.7
           },
           {
             "episode": 11,
@@ -34515,7 +34516,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "For the Man Who Has Everything",
             "airDate": "2004-08-07",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 3,
@@ -34545,19 +34546,19 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "The Greatest Story Never Told",
             "airDate": "2004-09-11",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 8,
             "title": "The Return",
             "airDate": "2004-09-18",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 9,
             "title": "Ultimatum",
             "airDate": "2004-12-04",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 10,
@@ -34581,7 +34582,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "The Once and Future Thing (2): Time, Warped",
             "airDate": "2005-01-29",
-            "rating": 8.8
+            "rating": 8.7
           }
         ]
       },
@@ -34658,13 +34659,13 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Divided We Fall",
             "airDate": "2005-07-16",
-            "rating": 9.4
+            "rating": 9.3
           },
           {
             "episode": 13,
             "title": "Epilogue",
             "airDate": "2005-07-23",
-            "rating": 9.3
+            "rating": 9.2
           }
         ]
       },
@@ -34802,7 +34803,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Spaced Out",
             "airDate": "2001-04-06",
-            "rating": 7.5
+            "rating": 7.4
           },
           {
             "episode": 4,
@@ -34820,7 +34821,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Tiny Timmy",
             "airDate": "2001-04-13",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 7,
@@ -34873,7 +34874,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Hex Games",
             "airDate": "2002-03-01",
-            "rating": 7.2
+            "rating": 7.1
           },
           {
             "episode": 3,
@@ -34885,13 +34886,13 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Inspection Detection",
             "airDate": "2002-03-08",
-            "rating": 7.4
+            "rating": 7.3
           },
           {
             "episode": 5,
             "title": "Action Packed",
             "airDate": "2002-03-22",
-            "rating": 7.2
+            "rating": 7.1
           },
           {
             "episode": 6,
@@ -34903,13 +34904,13 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Timvisible",
             "airDate": "2002-04-26",
-            "rating": 7.5
+            "rating": 7.4
           },
           {
             "episode": 8,
             "title": "That Old Black Magic",
             "airDate": "2002-04-26",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 9,
@@ -34921,7 +34922,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "A Mile in My Shoes",
             "airDate": "2002-05-10",
-            "rating": 6.9
+            "rating": 6.8
           },
           {
             "episode": 11,
@@ -34945,7 +34946,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "The Switch Glitch",
             "airDate": "2002-07-12",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 15,
@@ -35050,7 +35051,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Love Struck",
             "airDate": "2003-02-14",
-            "rating": 6.9
+            "rating": 6.8
           },
           {
             "episode": 5,
@@ -35074,7 +35075,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Engine Blocked",
             "airDate": "2003-05-09",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 9,
@@ -35104,7 +35105,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "The Secret Origin of Denzel Crocker",
             "airDate": "2003-06-27",
-            "rating": 7.2
+            "rating": 7.1
           },
           {
             "episode": 14,
@@ -35235,7 +35236,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Emotion Commotion",
             "airDate": "2004-05-18",
-            "rating": 6.9
+            "rating": 6.8
           },
           {
             "episode": 8,
@@ -35265,7 +35266,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Who's Your Daddy?",
             "airDate": "2004-06-18",
-            "rating": 7.5
+            "rating": 7.4
           },
           {
             "episode": 13,
@@ -35327,13 +35328,13 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Love at First Height",
             "airDate": "2005-02-14",
-            "rating": 6.9
+            "rating": 6.8
           },
           {
             "episode": 3,
             "title": "Truth or Cosmoquences",
             "airDate": "2005-02-15",
-            "rating": 7.1
+            "rating": 7
           },
           {
             "episode": 4,
@@ -35345,19 +35346,19 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Just Desserts",
             "airDate": "2005-02-16",
-            "rating": 7.1
+            "rating": 7
           },
           {
             "episode": 6,
             "title": "You Doo!",
             "airDate": "2005-02-16",
-            "rating": 7.1
+            "rating": 7
           },
           {
             "episode": 7,
             "title": "Catman Meets the Crimson Chin",
             "airDate": "2005-02-17",
-            "rating": 7.2
+            "rating": 7.1
           },
           {
             "episode": 8,
@@ -35381,7 +35382,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Blondas Have More Fun",
             "airDate": "2005-04-02",
-            "rating": 6.8
+            "rating": 6.7
           },
           {
             "episode": 12,
@@ -35405,19 +35406,19 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Timmy's 2-D House of Horror",
             "airDate": "2005-05-10",
-            "rating": 6.9
+            "rating": 6.8
           },
           {
             "episode": 16,
             "title": "It's a Wishful Life",
             "airDate": "2005-05-10",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 17,
             "title": "Escape from Unwish Island",
             "airDate": "2005-05-11",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 18,
@@ -35441,7 +35442,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Talkin' Trash",
             "airDate": "2005-05-13",
-            "rating": 8
+            "rating": 7.9
           },
           {
             "episode": 22,
@@ -35517,7 +35518,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Mission Responsible",
             "airDate": "2008-03-10",
-            "rating": 6.7
+            "rating": 6.6
           },
           {
             "episode": 2,
@@ -35547,13 +35548,13 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "For Emergencies Only",
             "airDate": "2008-05-13",
-            "rating": 6.6
+            "rating": 6.5
           },
           {
             "episode": 7,
             "title": "Cheese and Crockers",
             "airDate": "2008-05-14",
-            "rating": 7.1
+            "rating": 7
           },
           {
             "episode": 8,
@@ -35577,7 +35578,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Sooper Poof",
             "airDate": "2008-08-12",
-            "rating": 6.7
+            "rating": 6.6
           },
           {
             "episode": 12,
@@ -35646,7 +35647,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Mice-Capades",
             "airDate": "2009-07-08",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 4,
@@ -35658,7 +35659,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Birthday Bashed",
             "airDate": "2009-07-09",
-            "rating": 6.6
+            "rating": 6.5
           },
           {
             "episode": 6,
@@ -35700,7 +35701,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Crocker Shocker",
             "airDate": "2009-09-28",
-            "rating": 5.8
+            "rating": 5.7
           },
           {
             "episode": 13,
@@ -35798,7 +35799,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Spellementery School",
             "airDate": "2011-02-26",
-            "rating": 6.2
+            "rating": 6.1
           },
           {
             "episode": 3,
@@ -35946,7 +35947,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Viral Vidiots",
             "airDate": "2013-06-22",
-            "rating": 5.2
+            "rating": 4.6
           },
           {
             "episode": 10,
@@ -36000,7 +36001,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "The Past and the Furious",
             "airDate": "2014-07-11",
-            "rating": 5.2
+            "rating": 5.4
           },
           {
             "episode": 19,
@@ -36144,7 +36145,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The Big Fairy Share Scare",
             "airDate": "2016-01-15",
-            "rating": 3
+            "rating": 3.2
           },
           {
             "episode": 2,
@@ -36252,7 +36253,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Spring Break-Up",
             "airDate": "2016-11-07",
-            "rating": 3.2
+            "rating": 3.4
           },
           {
             "episode": 21,
@@ -36381,13 +36382,13 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Just Set Up The Chairs",
             "airDate": "2010-09-13",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 3,
             "title": "Caffeinated Concert Tickets",
             "airDate": "2010-09-20",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 4,
@@ -36411,7 +36412,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Grilled Cheese Deluxe",
             "airDate": "2010-10-18",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 8,
@@ -36488,13 +36489,13 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "High Score",
             "airDate": "2011-02-07",
-            "rating": 9
+            "rating": 9.1
           },
           {
             "episode": 8,
             "title": "Rage Against the TV",
             "airDate": "2011-02-14",
-            "rating": 9.3
+            "rating": 9.4
           },
           {
             "episode": 9,
@@ -36554,7 +36555,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Do Me a Solid",
             "airDate": "2011-05-02",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 19,
@@ -36572,7 +36573,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Over the Top",
             "airDate": "2011-05-23",
-            "rating": 9.2
+            "rating": 9.1
           },
           {
             "episode": 22,
@@ -36602,7 +36603,7 @@ window._SERIES_DATA = [
             "episode": 26,
             "title": "Go Viral",
             "airDate": "2011-07-18",
-            "rating": 8.8
+            "rating": 8.9
           },
           {
             "episode": 27,
@@ -36649,7 +36650,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Camping Can Be Cool",
             "airDate": "2011-10-17",
-            "rating": 8.8
+            "rating": 8.9
           },
           {
             "episode": 6,
@@ -36667,13 +36668,13 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "House Rules",
             "airDate": "2011-11-14",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 9,
             "title": "Rap It Up",
             "airDate": "2011-11-21",
-            "rating": 8.9
+            "rating": 9
           },
           {
             "episode": 10,
@@ -36763,7 +36764,7 @@ window._SERIES_DATA = [
             "episode": 24,
             "title": "Fists of Justice",
             "airDate": "2012-04-30",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 25,
@@ -36805,7 +36806,7 @@ window._SERIES_DATA = [
             "episode": 31,
             "title": "Out of Commission",
             "airDate": "2012-06-25",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 32,
@@ -36918,7 +36919,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "T.G.I. Tuesday",
             "airDate": "2013-01-07",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 11,
@@ -36930,7 +36931,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "The Longest Weekend",
             "airDate": "2013-01-21",
-            "rating": 6.7
+            "rating": 6.8
           },
           {
             "episode": 13,
@@ -36942,7 +36943,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Ace Balthazar Lives",
             "airDate": "2013-02-04",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 15,
@@ -37074,7 +37075,7 @@ window._SERIES_DATA = [
             "episode": 36,
             "title": "Party Re-Pete",
             "airDate": "2013-08-05",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 37,
@@ -37217,7 +37218,7 @@ window._SERIES_DATA = [
             "episode": 22,
             "title": "Skips' Story",
             "airDate": "2014-04-14",
-            "rating": 9.7
+            "rating": 9.6
           },
           {
             "episode": 23,
@@ -37241,7 +37242,7 @@ window._SERIES_DATA = [
             "episode": 26,
             "title": "I Like You Hi",
             "airDate": "2014-05-12",
-            "rating": 8.7
+            "rating": 8.9
           },
           {
             "episode": 27,
@@ -37259,13 +37260,13 @@ window._SERIES_DATA = [
             "episode": 29,
             "title": "Catching the Wave",
             "airDate": "2014-06-19",
-            "rating": 7.5
+            "rating": 8.6
           },
           {
             "episode": 30,
             "title": "Gold Watch",
             "airDate": "2014-06-26",
-            "rating": 8.6
+            "rating": 7.6
           },
           {
             "episode": 31,
@@ -37384,7 +37385,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Park Managers Lunch",
             "airDate": "2015-01-15",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 13,
@@ -37413,7 +37414,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Happy Birthday Song Contest",
             "airDate": "2015-02-19",
-            "rating": 9.1
+            "rating": 9.2
           },
           {
             "episode": 18,
@@ -37460,7 +37461,7 @@ window._SERIES_DATA = [
             "episode": 25,
             "title": "Not Great Double Date",
             "airDate": "2015-06-22",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 26,
@@ -37472,7 +37473,7 @@ window._SERIES_DATA = [
             "episode": 27,
             "title": "Lunch Break",
             "airDate": "2015-06-24",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 28,
@@ -37489,7 +37490,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Dumptown U.S.A.",
             "airDate": "2015-06-26",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 2,
@@ -37513,7 +37514,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "The Dome Experiment Special",
             "airDate": "2015-08-27",
-            "rating": 8.8
+            "rating": 8.7
           },
           {
             "episode": 6,
@@ -37609,7 +37610,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Gymblonski",
             "airDate": "2016-03-19",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 22,
@@ -37627,7 +37628,7 @@ window._SERIES_DATA = [
             "episode": 24,
             "title": "California King",
             "airDate": "2016-04-09",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 25,
@@ -37699,7 +37700,7 @@ window._SERIES_DATA = [
             "episode": 36,
             "title": "Rigby's Graduation Day",
             "airDate": "2016-06-30",
-            "rating": 9.6
+            "rating": 9.5
           }
         ]
       },
@@ -37866,7 +37867,7 @@ window._SERIES_DATA = [
             "episode": 27,
             "title": "A Regular Show Epic Final Battle (Part 1)",
             "airDate": "2017-01-16",
-            "rating": 9.9
+            "rating": 9.8
           },
           {
             "episode": 28,
@@ -37919,7 +37920,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Pilot",
             "airDate": "2011-06-23",
-            "rating": 8.8
+            "rating": 8.7
           },
           {
             "episode": 2,
@@ -37961,7 +37962,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Identity Crisis",
             "airDate": "2011-08-11",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 9,
@@ -38008,7 +38009,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Meet the New Boss",
             "airDate": "2012-06-28",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 4,
@@ -38068,7 +38069,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Zane vs. Zane",
             "airDate": "2013-01-31",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 14,
@@ -38121,19 +38122,19 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Shadow of a Doubt",
             "airDate": "2013-08-13",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 6,
             "title": "The Other Time",
             "airDate": "2013-08-20",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 7,
             "title": "She's Mine",
             "airDate": "2013-08-27",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 8,
@@ -38151,7 +38152,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Stay",
             "airDate": "2013-09-17",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 11,
@@ -38169,7 +38170,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Moot Point",
             "airDate": "2014-03-20",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 14,
@@ -38181,7 +38182,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Know When to Fold 'Em",
             "airDate": "2014-04-03",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 16,
@@ -38198,13 +38199,13 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "One-Two-Three Go...",
             "airDate": "2014-06-11",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 2,
             "title": "Breakfast, Lunch and Dinner",
             "airDate": "2014-06-18",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 3,
@@ -38216,7 +38217,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Leveraged",
             "airDate": "2014-07-09",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 5,
@@ -38323,7 +38324,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Toe to Toe",
             "airDate": "2015-07-22",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 6,
@@ -38347,7 +38348,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Uninvited Guests",
             "airDate": "2015-08-19",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 10,
@@ -38377,7 +38378,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Self Defense",
             "airDate": "2016-02-17",
-            "rating": 9.2
+            "rating": 9.3
           },
           {
             "episode": 15,
@@ -38430,7 +38431,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Spain",
             "airDate": "2016-08-17",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 7,
@@ -38454,7 +38455,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "P.S.L.",
             "airDate": "2016-09-14",
-            "rating": 9.4
+            "rating": 9.5
           },
           {
             "episode": 11,
@@ -38478,7 +38479,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Admission of Guilt",
             "airDate": "2017-02-15",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 15,
@@ -38501,7 +38502,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Skin in the Game",
             "airDate": "2017-07-12",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 2,
@@ -38519,7 +38520,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Divide and Conquer",
             "airDate": "2017-08-02",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 5,
@@ -38626,7 +38627,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Good Mudding",
             "airDate": "2018-08-15",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 6,
@@ -38656,7 +38657,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Managing Partner",
             "airDate": "2018-09-19",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 11,
@@ -38668,7 +38669,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Whale Hunt",
             "airDate": "2019-01-30",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 13,
@@ -38703,7 +38704,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Everything's Changed",
             "airDate": "2019-07-17",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 2,
@@ -38721,7 +38722,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Cairo",
             "airDate": "2019-08-07",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 5,
@@ -38745,7 +38746,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Prisoner's Dilemma",
             "airDate": "2019-09-11",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 9,
@@ -38806,13 +38807,13 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "I Never Met the Dead Man",
             "airDate": "1999-04-11",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 3,
             "title": "Chitty Chitty Death Bang",
             "airDate": "1999-04-18",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 4,
@@ -38853,7 +38854,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Holy Crap",
             "airDate": "1999-09-30",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 3,
@@ -38871,7 +38872,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Love Thy Trophy",
             "airDate": "2000-03-14",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 6,
@@ -38895,19 +38896,19 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "If I'm Dyin' I'm Lyin'",
             "airDate": "2000-04-04",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 10,
             "title": "Running Mates",
             "airDate": "2000-04-11",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 11,
             "title": "A Picture's Worth a Thousand Bucks",
             "airDate": "2000-04-18",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 12,
@@ -38919,7 +38920,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Road to Rhode Island",
             "airDate": "2000-05-30",
-            "rating": 8.2
+            "rating": 8.1
           },
           {
             "episode": 14,
@@ -38931,7 +38932,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Dammit Janet",
             "airDate": "2000-06-13",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 16,
@@ -38967,7 +38968,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Fore, Father",
             "airDate": "2000-08-01",
-            "rating": 7.1
+            "rating": 7.2
           }
         ]
       },
@@ -39068,13 +39069,13 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "A Very Special Family Guy Freakin' Christmas",
             "airDate": "2001-12-21",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 17,
             "title": "Brian Wallows and Peter's Swallows",
             "airDate": "2002-01-17",
-            "rating": 7.5
+            "rating": 7.4
           },
           {
             "episode": 18,
@@ -39139,7 +39140,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "The Cleveland-Loretta Quagmire",
             "airDate": "2005-06-12",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 6,
@@ -39169,7 +39170,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Model Misbehavior",
             "airDate": "2005-07-24",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 11,
@@ -39384,7 +39385,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Boys Do Cry",
             "airDate": "2007-04-29",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 16,
@@ -39687,7 +39688,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Brian & Stewie",
             "airDate": "2010-05-02",
-            "rating": 7.9
+            "rating": 7.8
           },
           {
             "episode": 18,
@@ -39901,13 +39902,13 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Livin' on a Prayer",
             "airDate": "2012-01-29",
-            "rating": 6.9
+            "rating": 7
           },
           {
             "episode": 13,
             "title": "Tom Tucker: The Man and His Dream",
             "airDate": "2012-02-12",
-            "rating": 6.7
+            "rating": 6.8
           },
           {
             "episode": 14,
@@ -39931,7 +39932,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Forget-Me-Not",
             "airDate": "2012-03-18",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 18,
@@ -40145,13 +40146,13 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Life of Brian",
             "airDate": "2013-11-24",
-            "rating": 4.8
+            "rating": 4.7
           },
           {
             "episode": 7,
             "title": "Into Harmony's Way",
             "airDate": "2013-12-08",
-            "rating": 6.5
+            "rating": 6.4
           },
           {
             "episode": 8,
@@ -40199,13 +40200,13 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Secondhand Spoke",
             "airDate": "2014-03-30",
-            "rating": 6.8
+            "rating": 6.9
           },
           {
             "episode": 16,
             "title": "Herpe the Love Sore",
             "airDate": "2014-04-06",
-            "rating": 5.7
+            "rating": 5.8
           },
           {
             "episode": 17,
@@ -40282,7 +40283,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Stewie, Chris & Brian's Excellent Adventure",
             "airDate": "2015-01-04",
-            "rating": 7.5
+            "rating": 7.4
           },
           {
             "episode": 8,
@@ -40312,7 +40313,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Stewie is Enceinte",
             "airDate": "2015-03-08",
-            "rating": 5.7
+            "rating": 5.8
           },
           {
             "episode": 13,
@@ -40437,7 +40438,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Underage Peter",
             "airDate": "2016-02-21",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 15,
@@ -40455,7 +40456,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Take a Letter",
             "airDate": "2016-04-17",
-            "rating": 6.9
+            "rating": 7
           },
           {
             "episode": 18,
@@ -40496,7 +40497,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "American Gigg-olo",
             "airDate": "2016-10-16",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 4,
@@ -40526,13 +40527,13 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Carter and Tricia",
             "airDate": "2016-12-04",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 9,
             "title": "How the Griffin Stole Christmas",
             "airDate": "2016-12-11",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 10,
@@ -40544,7 +40545,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Gronkowsbees",
             "airDate": "2017-01-15",
-            "rating": 6.5
+            "rating": 6.6
           },
           {
             "episode": 12,
@@ -40592,7 +40593,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Dearly Deported",
             "airDate": "2017-05-21",
-            "rating": 6.8
+            "rating": 6.9
           },
           {
             "episode": 20,
@@ -40639,7 +40640,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "The D in Apartment 23",
             "airDate": "2017-11-12",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 7,
@@ -40699,19 +40700,19 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "'Family Guy' Through the Years",
             "airDate": "2018-04-22",
-            "rating": 6.9
+            "rating": 6.8
           },
           {
             "episode": 17,
             "title": "Switch the Flip",
             "airDate": "2018-04-29",
-            "rating": 8
+            "rating": 7.9
           },
           {
             "episode": 18,
             "title": "HTTPete",
             "airDate": "2018-05-06",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 19,
@@ -40723,7 +40724,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Are You There God? It's Me, Peter",
             "airDate": "2018-05-20",
-            "rating": 6.5
+            "rating": 6.6
           }
         ]
       },
@@ -40824,7 +40825,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "You Can't Handle the Booth",
             "airDate": "2019-03-24",
-            "rating": 4.3
+            "rating": 4.2
           },
           {
             "episode": 17,
@@ -40889,13 +40890,13 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Peter & Lois' Wedding",
             "airDate": "2019-11-10",
-            "rating": 6.9
+            "rating": 7
           },
           {
             "episode": 7,
             "title": "Heart Burn",
             "airDate": "2019-11-17",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 8,
@@ -40931,7 +40932,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Rich Old Stewie",
             "airDate": "2020-03-01",
-            "rating": 7.2
+            "rating": 7.1
           },
           {
             "episode": 14,
@@ -40949,7 +40950,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Start Me Up",
             "airDate": "2020-04-19",
-            "rating": 6.4
+            "rating": 6.3
           },
           {
             "episode": 17,
@@ -40973,7 +40974,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Movin' In (Principal Shepherd's Song)",
             "airDate": "2020-05-17",
-            "rating": 6.6
+            "rating": 6.7
           }
         ]
       },
@@ -41044,7 +41045,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Boy's Best Friend",
             "airDate": "2021-02-21",
-            "rating": 6.7
+            "rating": 6.8
           },
           {
             "episode": 12,
@@ -41068,7 +41069,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Customer of the Week",
             "airDate": "2021-03-28",
-            "rating": 7.4
+            "rating": 7.3
           },
           {
             "episode": 16,
@@ -41080,13 +41081,13 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "The Young Parent Trap",
             "airDate": "2021-04-18",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 18,
             "title": "Meg Goes to College",
             "airDate": "2021-05-02",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 19,
@@ -41098,7 +41099,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Tales of Former Sports Glory",
             "airDate": "2021-05-16",
-            "rating": 6.2
+            "rating": 6.3
           }
         ]
       },
@@ -41151,7 +41152,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "The Birthday Bootlegger",
             "airDate": "2021-11-21",
-            "rating": 6.4
+            "rating": 6.5
           },
           {
             "episode": 9,
@@ -41163,7 +41164,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Christmas Crime",
             "airDate": "2021-12-19",
-            "rating": 6.7
+            "rating": 6.8
           },
           {
             "episode": 11,
@@ -41175,13 +41176,13 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "The Lois Quagmire",
             "airDate": "2022-02-27",
-            "rating": 6.8
+            "rating": 6.9
           },
           {
             "episode": 13,
             "title": "Lawyer Guy",
             "airDate": "2022-03-06",
-            "rating": 6.3
+            "rating": 6.4
           },
           {
             "episode": 14,
@@ -41407,7 +41408,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "The Return of the King (of Queens)",
             "airDate": "2023-12-17",
-            "rating": 5.9
+            "rating": 6
           },
           {
             "episode": 10,
@@ -41443,7 +41444,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Faith No More",
             "airDate": "2024-04-17",
-            "rating": 5.8
+            "rating": 5.6
           }
         ]
       },
@@ -41466,7 +41467,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Drunk With Power",
             "airDate": "2025-03-02",
-            "rating": 4.8
+            "rating": 4.4
           },
           {
             "episode": 4,
@@ -41478,25 +41479,25 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "The Chicken or the Meg",
             "airDate": "2025-03-16",
-            "rating": 6.2
+            "rating": 6.1
           },
           {
             "episode": 6,
             "title": "Dog Is My Co-Pilot",
             "airDate": "2025-03-23",
-            "rating": 6.7
+            "rating": 6.6
           },
           {
             "episode": 7,
             "title": "Pitch Imperfect",
             "airDate": "2025-03-30",
-            "rating": 6.4
+            "rating": 6.3
           },
           {
             "episode": 8,
             "title": "Hard Times at Adam West High",
             "airDate": "2025-04-06",
-            "rating": 6.6
+            "rating": 6.5
           },
           {
             "episode": 9,
@@ -41508,7 +41509,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "A Real Who's Hulu",
             "airDate": "2025-04-27",
-            "rating": 5.7
+            "rating": 5.6
           },
           {
             "episode": 11,
@@ -41532,7 +41533,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Cool Hand Lois",
             "airDate": "2025-05-29",
-            "rating": 5.7
+            "rating": 5.5
           },
           {
             "episode": 15,
@@ -41550,13 +41551,13 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Karenheit 451",
             "airDate": "2025-07-10",
-            "rating": 5.8
+            "rating": 5.7
           },
           {
             "episode": 18,
             "title": "Twain's World",
             "airDate": "2025-07-17",
-            "rating": 5.8
+            "rating": 7.5
           }
         ]
       },
@@ -41567,19 +41568,19 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The Edible Arrangement",
             "airDate": "2026-02-15",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 2,
             "title": "Pumpkin Spice Girls",
             "airDate": "2026-02-22",
-            "rating": 6.8
+            "rating": 7.5
           },
           {
             "episode": 3,
             "title": "Man-Fest Destiny",
             "airDate": "2026-02-22",
-            "rating": 6.3
+            "rating": 6.6
           },
           {
             "episode": 4,
@@ -41639,7 +41640,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Friend's Best Man",
             "airDate": "2026-05-03",
-            "rating": 5.9
+            "rating": 6
           },
           {
             "episode": 14,
@@ -41651,7 +41652,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "High School History",
             "airDate": "2026-05-17",
-            "rating": 6.4
+            "rating": 6.6
           }
         ]
       }
@@ -41695,7 +41696,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Wolf Moon",
             "airDate": "2011-06-05",
-            "rating": 7.8
+            "rating": 7.7
           },
           {
             "episode": 2,
@@ -41731,7 +41732,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Night School",
             "airDate": "2011-07-11",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 8,
@@ -41879,7 +41880,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Motel California",
             "airDate": "2013-07-08",
-            "rating": 9.2
+            "rating": 9.1
           },
           {
             "episode": 7,
@@ -41903,7 +41904,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "The Overlooked",
             "airDate": "2013-08-05",
-            "rating": 8.9
+            "rating": 8.8
           },
           {
             "episode": 11,
@@ -41969,7 +41970,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "The Fox and the Wolf",
             "airDate": "2014-03-03",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 22,
@@ -42141,7 +42142,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Damnatio Memoriae",
             "airDate": "2016-01-12",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 13,
@@ -42177,7 +42178,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "The Maid of GÃ©vaudan",
             "airDate": "2016-02-23",
-            "rating": 8.4
+            "rating": 8.3
           },
           {
             "episode": 19,
@@ -42189,7 +42190,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Apotheosis",
             "airDate": "2016-03-08",
-            "rating": 8.9
+            "rating": 8.8
           }
         ]
       },
@@ -42200,13 +42201,13 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Memory Lost",
             "airDate": "2016-11-15",
-            "rating": 9.3
+            "rating": 9.2
           },
           {
             "episode": 2,
             "title": "Superposition",
             "airDate": "2016-11-22",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 3,
@@ -42365,7 +42366,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "What Ifâ€¦ T'Challa Became a Star-Lord?",
             "airDate": "2021-08-18",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 3,
@@ -42377,7 +42378,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "What Ifâ€¦ Doctor Strange Lost His Heart Instead of His Hands?",
             "airDate": "2021-09-01",
-            "rating": 8.9
+            "rating": 8.8
           },
           {
             "episode": 5,
@@ -42389,7 +42390,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "What Ifâ€¦ Killmonger Rescued Tony Stark?",
             "airDate": "2021-09-15",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 7,
@@ -42418,7 +42419,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "What If... Nebula Joined the Nova Corps?",
             "airDate": "2023-12-22",
-            "rating": 6.9
+            "rating": 7
           },
           {
             "episode": 2,
@@ -42430,13 +42431,13 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "What If... Happy Hogan Saved Christmas?",
             "airDate": "2023-12-24",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 4,
             "title": "What If... Iron Man Crashed into the Grandmaster?",
             "airDate": "2023-12-25",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 5,
@@ -42460,7 +42461,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "What If... The Avengers Assembled in 1602?",
             "airDate": "2023-12-29",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 9,
@@ -42477,7 +42478,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "What If... The Hulk Fought the Mech Avengers?",
             "airDate": "2024-12-22",
-            "rating": 5.6
+            "rating": 5.9
           },
           {
             "episode": 2,
@@ -42495,7 +42496,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "What If... Howard the Duck Got Hitched?",
             "airDate": "2024-12-25",
-            "rating": 5.7
+            "rating": 5.8
           },
           {
             "episode": 5,
@@ -42507,13 +42508,13 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "What If... 1872?",
             "airDate": "2024-12-27",
-            "rating": 6.2
+            "rating": 6.4
           },
           {
             "episode": 7,
             "title": "What If... The Watcher Disappeared?",
             "airDate": "2024-12-28",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 8,
@@ -42569,7 +42570,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Red Hair and Silver Tape",
             "airDate": "2008-09-30",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 3,
@@ -42587,7 +42588,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Redwood",
             "airDate": "2008-10-28",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 6,
@@ -42611,25 +42612,25 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Flame Red",
             "airDate": "2008-12-02",
-            "rating": 8.2
+            "rating": 8.1
           },
           {
             "episode": 10,
             "title": "Red Brick and Ivy",
             "airDate": "2008-12-16",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 11,
             "title": "Red John's Friends",
             "airDate": "2009-01-06",
-            "rating": 8.4
+            "rating": 8.3
           },
           {
             "episode": 12,
             "title": "Red Rum",
             "airDate": "2009-01-13",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 13,
@@ -42653,13 +42654,13 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Bloodshot",
             "airDate": "2009-03-17",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 17,
             "title": "Carnelian Inc.",
             "airDate": "2009-03-24",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 18,
@@ -42671,7 +42672,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "A Dozen Red Roses",
             "airDate": "2009-04-07",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 20,
@@ -42695,7 +42696,7 @@ window._SERIES_DATA = [
             "episode": 23,
             "title": "Red John's Footsteps",
             "airDate": "2009-05-19",
-            "rating": 8.7
+            "rating": 8.5
           }
         ]
       },
@@ -42742,25 +42743,25 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Red Bulls",
             "airDate": "2009-11-12",
-            "rating": 8.2
+            "rating": 8.1
           },
           {
             "episode": 8,
             "title": "His Red Right Hand",
             "airDate": "2009-11-19",
-            "rating": 9.2
+            "rating": 9
           },
           {
             "episode": 9,
             "title": "A Price Above Rubies",
             "airDate": "2009-12-10",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 10,
             "title": "Throwing Fire",
             "airDate": "2009-12-17",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 11,
@@ -42772,7 +42773,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Bleeding Heart",
             "airDate": "2010-01-21",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 13,
@@ -42784,7 +42785,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Blood In, Blood Out",
             "airDate": "2010-02-11",
-            "rating": 7.9
+            "rating": 7.8
           },
           {
             "episode": 15,
@@ -42796,7 +42797,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Code Red",
             "airDate": "2010-03-11",
-            "rating": 8.2
+            "rating": 8.1
           },
           {
             "episode": 17,
@@ -42838,7 +42839,7 @@ window._SERIES_DATA = [
             "episode": 23,
             "title": "Red Sky in the Morning",
             "airDate": "2010-05-20",
-            "rating": 8.7
+            "rating": 8.6
           }
         ]
       },
@@ -42849,7 +42850,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Red Sky at Night",
             "airDate": "2010-09-23",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 2,
@@ -42867,7 +42868,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Red Carpet Treatment",
             "airDate": "2010-10-14",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 5,
@@ -42909,7 +42910,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Bloodsport",
             "airDate": "2011-01-06",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 12,
@@ -42939,7 +42940,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Red Queen",
             "airDate": "2011-02-24",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 17,
@@ -42951,13 +42952,13 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "The Red Mile",
             "airDate": "2011-03-31",
-            "rating": 8.5
+            "rating": 8.4
           },
           {
             "episode": 19,
             "title": "Every Rose Has Its Thorn",
             "airDate": "2011-04-07",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 20,
@@ -42987,7 +42988,7 @@ window._SERIES_DATA = [
             "episode": 24,
             "title": "Strawberries and Cream, Part II",
             "airDate": "2011-05-19",
-            "rating": 9.6
+            "rating": 9.5
           }
         ]
       },
@@ -42998,7 +42999,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Scarlet Ribbons",
             "airDate": "2011-09-22",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 2,
@@ -43022,7 +43023,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Blood and Sand",
             "airDate": "2011-10-20",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 6,
@@ -43034,7 +43035,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Blinking Red Light",
             "airDate": "2011-11-03",
-            "rating": 9.2
+            "rating": 9.1
           },
           {
             "episode": 8,
@@ -43118,7 +43119,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Ruby Slippers",
             "airDate": "2012-04-26",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 22,
@@ -43136,7 +43137,7 @@ window._SERIES_DATA = [
             "episode": 24,
             "title": "The Crimson Hat",
             "airDate": "2012-05-17",
-            "rating": 9.1
+            "rating": 9
           }
         ]
       },
@@ -43153,7 +43154,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Devil's Cherry",
             "airDate": "2012-10-07",
-            "rating": 8.9
+            "rating": 8.8
           },
           {
             "episode": 3,
@@ -43165,13 +43166,13 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Blood Feud",
             "airDate": "2012-10-21",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 5,
             "title": "Red Dawn",
             "airDate": "2012-10-28",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 6,
@@ -43237,7 +43238,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "There Will Be Blood",
             "airDate": "2013-03-10",
-            "rating": 8.5
+            "rating": 8.4
           },
           {
             "episode": 17,
@@ -43267,13 +43268,13 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Red and Itchy",
             "airDate": "2013-04-28",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 22,
             "title": "Red John's Rules",
             "airDate": "2013-05-05",
-            "rating": 8.8
+            "rating": 8.7
           }
         ]
       },
@@ -43290,31 +43291,31 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Black-Winged Redbird",
             "airDate": "2013-10-06",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 3,
             "title": "Wedding in Red",
             "airDate": "2013-10-13",
-            "rating": 8.2
+            "rating": 8.1
           },
           {
             "episode": 4,
             "title": "Red Listed",
             "airDate": "2013-10-20",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 5,
             "title": "The Red Tattoo",
             "airDate": "2013-10-27",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 6,
             "title": "Fire and Brimstone",
             "airDate": "2013-11-10",
-            "rating": 9.2
+            "rating": 9
           },
           {
             "episode": 7,
@@ -43332,7 +43333,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "My Blue Heaven",
             "airDate": "2013-12-01",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 10,
@@ -43350,7 +43351,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "The Golden Hammer",
             "airDate": "2014-01-12",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 13,
@@ -43398,7 +43399,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Il Tavolo Bianco",
             "airDate": "2014-05-04",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 21,
@@ -43469,7 +43470,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Copper Bullet",
             "airDate": "2015-01-28",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 10,
@@ -43493,7 +43494,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "White Orchids",
             "airDate": "2015-02-18",
-            "rating": 9.1
+            "rating": 9
           }
         ]
       }
@@ -44317,7 +44318,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "The Dam Scam",
             "airDate": "2004-01-31",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 19,
@@ -44329,7 +44330,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Cruise Blues",
             "airDate": "2004-02-14",
-            "rating": 7.6
+            "rating": 7.9
           },
           {
             "episode": 21,
@@ -44523,13 +44524,13 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Cosmic Crisis",
             "airDate": "2005-09-17",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 3,
             "title": "H2Whoa",
             "airDate": "2005-09-24",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 4,
@@ -44541,19 +44542,19 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "A Chilling Discovery",
             "airDate": "2005-10-08",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 6,
             "title": "Desperately Seeking Sonic",
             "airDate": "2005-10-15",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 7,
             "title": "Galactic Gumshoes",
             "airDate": "2005-10-22",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 8,
@@ -44661,7 +44662,7 @@ window._SERIES_DATA = [
             "episode": 25,
             "title": "A Fearless Friend",
             "airDate": "2006-04-29",
-            "rating": 8.8
+            "rating": 7.5
           },
           {
             "episode": 26,
@@ -45074,13 +45075,13 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "The Last Son of Krypton Part III",
             "airDate": "1996-09-06",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 4,
             "title": "Fun and Games",
             "airDate": "1996-09-07",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 5,
@@ -45235,7 +45236,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "World's Finest",
             "airDate": "1997-10-04",
-            "rating": 9.1
+            "rating": 9
           },
           {
             "episode": 17,
@@ -45271,7 +45272,7 @@ window._SERIES_DATA = [
             "episode": 22,
             "title": "The Late Mr. Kent",
             "airDate": "1997-11-01",
-            "rating": 9.1
+            "rating": 9
           },
           {
             "episode": 23,
@@ -46111,7 +46112,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Metalhead Rewired",
             "airDate": "2014-02-23",
-            "rating": 8.2
+            "rating": 8.1
           },
           {
             "episode": 12,
@@ -46153,7 +46154,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Pizza Face",
             "airDate": "2014-05-18",
-            "rating": 7.2
+            "rating": 7.4
           },
           {
             "episode": 19,
@@ -46218,7 +46219,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "A Foot Too Big",
             "airDate": "2014-10-10",
-            "rating": 5.7
+            "rating": 5.8
           },
           {
             "episode": 3,
@@ -46745,7 +46746,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Here's Looking A-Choo Kid, Superfied",
             "airDate": "2014-06-11",
-            "rating": 7.8
+            "rating": 8.1
           },
           {
             "episode": 11,
@@ -48112,7 +48113,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Gasquatch",
             "airDate": "2015-02-19",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 14,
@@ -48413,7 +48414,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Darington Saves the Circus",
             "airDate": "2018-03-26",
-            "rating": 6.8
+            "rating": 7.1
           },
           {
             "episode": 2,
@@ -49096,7 +49097,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Christmas Power!: A Monster Machine Super Special (1)",
             "airDate": "2025-12-01",
-            "rating": 8.6
+            "rating": 9.3
           },
           {
             "episode": 15,
@@ -49341,7 +49342,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Enter the Dragon (1)",
             "airDate": "2012-11-12",
-            "rating": 8.4
+            "rating": 8.6
           },
           {
             "episode": 8,
@@ -50318,7 +50319,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Shattered",
             "airDate": "2022-12-15",
-            "rating": 7.5
+            "rating": 7.4
           },
           {
             "episode": 2,
@@ -50383,7 +50384,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Second Wind",
             "airDate": "2023-07-13",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 4,
@@ -50522,7 +50523,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Lockdown",
             "airDate": "2010-05-14",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 5,
@@ -50534,7 +50535,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Frostbite",
             "airDate": "2010-05-28",
-            "rating": 9
+            "rating": 8.8
           },
           {
             "episode": 7,
@@ -50552,7 +50553,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Dark Passage",
             "airDate": "2010-06-18",
-            "rating": 8.9
+            "rating": 8.7
           },
           {
             "episode": 10,
@@ -50564,7 +50565,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Operation: Wingman",
             "airDate": "2010-09-24",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 12,
@@ -50576,13 +50577,13 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "The Hunter",
             "airDate": "2010-10-08",
-            "rating": 8.1
+            "rating": 7.9
           },
           {
             "episode": 14,
             "title": "Gravity",
             "airDate": "2010-10-15",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 15,
@@ -50606,25 +50607,25 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Plague",
             "airDate": "2010-11-12",
-            "rating": 9.1
+            "rating": 9
           },
           {
             "episode": 19,
             "title": "Promises, Promises",
             "airDate": "2010-11-19",
-            "rating": 9.5
+            "rating": 9.1
           },
           {
             "episode": 20,
             "title": "Badlands",
             "airDate": "2010-12-03",
-            "rating": 8.2
+            "rating": 8.5
           },
           {
             "episode": 21,
             "title": "Payback",
             "airDate": "2010-12-10",
-            "rating": 9
+            "rating": 8.9
           }
         ]
       },
@@ -50635,19 +50636,19 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Rampage",
             "airDate": "2011-02-04",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 2,
             "title": "Waste Land",
             "airDate": "2011-02-11",
-            "rating": 8.2
+            "rating": 8.5
           },
           {
             "episode": 3,
             "title": "Lost Weekend",
             "airDate": "2011-02-18",
-            "rating": 8.1
+            "rating": 8.4
           },
           {
             "episode": 4,
@@ -50665,13 +50666,13 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Divide by Six",
             "airDate": "2011-03-18",
-            "rating": 9.2
+            "rating": 8.9
           },
           {
             "episode": 7,
             "title": "Mixed Signals",
             "airDate": "2011-03-25",
-            "rating": 9
+            "rating": 8.8
           },
           {
             "episode": 8,
@@ -50689,7 +50690,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Moonlighting",
             "airDate": "2011-04-15",
-            "rating": 8.2
+            "rating": 8.5
           },
           {
             "episode": 11,
@@ -50701,7 +50702,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Written in Sand",
             "airDate": "2011-04-29",
-            "rating": 9.2
+            "rating": 9.1
           },
           {
             "episode": 13,
@@ -50719,7 +50720,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "A Family Holiday",
             "airDate": "2011-09-30",
-            "rating": 9.3
+            "rating": 9.2
           },
           {
             "episode": 16,
@@ -50731,19 +50732,19 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Grounded",
             "airDate": "2011-10-14",
-            "rating": 7.5
+            "rating": 7.8
           },
           {
             "episode": 18,
             "title": "Six Minus Six",
             "airDate": "2011-10-21",
-            "rating": 9.1
+            "rating": 8.9
           },
           {
             "episode": 19,
             "title": "Lions and Lambs",
             "airDate": "2011-11-04",
-            "rating": 9.7
+            "rating": 9.3
           }
         ]
       },
@@ -50760,7 +50761,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Crash and Burn",
             "airDate": "2011-11-18",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 3,
@@ -50790,7 +50791,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Double Vision",
             "airDate": "2011-12-30",
-            "rating": 7.7
+            "rating": 8.1
           },
           {
             "episode": 8,
@@ -50808,7 +50809,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Deadzone",
             "airDate": "2012-01-20",
-            "rating": 9.4
+            "rating": 9.3
           },
           {
             "episode": 11,
@@ -50820,25 +50821,25 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Remote Control",
             "airDate": "2012-02-03",
-            "rating": 9.4
+            "rating": 9.1
           },
           {
             "episode": 13,
             "title": "A Brief History of Time",
             "airDate": "2012-02-10",
-            "rating": 9
+            "rating": 8.8
           },
           {
             "episode": 14,
             "title": "Mind Games",
             "airDate": "2012-02-17",
-            "rating": 8.6
+            "rating": 8.9
           },
           {
             "episode": 15,
             "title": "Hermanos",
             "airDate": "2012-02-17",
-            "rating": 9.2
+            "rating": 9.1
           },
           {
             "episode": 16,
@@ -50850,19 +50851,19 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Enemies Mine",
             "airDate": "2012-03-02",
-            "rating": 7.7
+            "rating": 8
           },
           {
             "episode": 18,
             "title": "Rock My World",
             "airDate": "2012-03-09",
-            "rating": 9.4
+            "rating": 9.3
           },
           {
             "episode": 19,
             "title": "Endgame (1)",
             "airDate": "2012-03-16",
-            "rating": 9.2
+            "rating": 9.1
           },
           {
             "episode": 20,
@@ -50915,13 +50916,13 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Viral Video",
             "airDate": "2015-07-27",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 3,
             "title": "Food Truck",
             "airDate": "2015-07-28",
-            "rating": 8
+            "rating": 7.9
           },
           {
             "episode": 4,
@@ -50939,7 +50940,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Everyday Bears",
             "airDate": "2015-07-31",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 7,
@@ -51070,7 +51071,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Yard Sale",
             "airDate": "2016-02-25",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 2,
@@ -51649,7 +51650,7 @@ window._SERIES_DATA = [
             "episode": 34,
             "title": "The Mall",
             "airDate": "2019-02-04",
-            "rating": 6.3
+            "rating": 6.5
           },
           {
             "episode": 35,
@@ -51785,19 +51786,19 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The Burger",
             "airDate": "2025-07-28",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 2,
             "title": "The Assistant",
             "airDate": "2025-07-28",
-            "rating": 7.9
+            "rating": 7.8
           },
           {
             "episode": 3,
             "title": "The Distance",
             "airDate": "2025-07-28",
-            "rating": 7.5
+            "rating": 7.8
           },
           {
             "episode": 4,
@@ -51809,37 +51810,37 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "The Butts",
             "airDate": "2025-07-28",
-            "rating": 5.9
+            "rating": 6.1
           },
           {
             "episode": 6,
             "title": "The Traffic",
             "airDate": "2025-07-28",
-            "rating": 8.2
+            "rating": 8.4
           },
           {
             "episode": 7,
             "title": "The Astrological",
             "airDate": "2025-07-28",
-            "rating": 8.2
+            "rating": 8.4
           },
           {
             "episode": 8,
             "title": "The Cheerleader",
             "airDate": "2025-07-28",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 9,
             "title": "The Boring",
             "airDate": "2025-07-28",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 10,
             "title": "The Teacher",
             "airDate": "2025-07-28",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 11,
@@ -51851,7 +51852,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "The Entrance",
             "airDate": "2025-07-28",
-            "rating": 8.4
+            "rating": 8.6
           },
           {
             "episode": 13,
@@ -51863,13 +51864,13 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "The Gut",
             "airDate": "2025-07-28",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 15,
             "title": "The Wrinkle",
             "airDate": "2025-07-28",
-            "rating": 8.7
+            "rating": 8.9
           },
           {
             "episode": 16,
@@ -51881,7 +51882,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "The Pool",
             "airDate": "2025-07-28",
-            "rating": 8
+            "rating": 7.9
           },
           {
             "episode": 18,
@@ -51893,13 +51894,13 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "The Climb",
             "airDate": "2025-07-28",
-            "rating": 7.6
+            "rating": 7.8
           },
           {
             "episode": 20,
             "title": "The Amadain",
             "airDate": "2025-07-28",
-            "rating": 8.5
+            "rating": 8.9
           }
         ]
       },
@@ -51916,7 +51917,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "The Unfollow",
             "airDate": "2025-12-22",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 3,
@@ -51946,7 +51947,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "The Score",
             "airDate": "2025-12-22",
-            "rating": 8.7
+            "rating": 8.9
           },
           {
             "episode": 8,
@@ -52024,7 +52025,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "The Rewrite",
             "airDate": "2025-12-22",
-            "rating": 9.2
+            "rating": 9.4
           }
         ]
       }
@@ -52062,13 +52063,13 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The DVD",
             "airDate": "2011-05-03",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 2,
             "title": "The Responsible",
             "airDate": "2011-05-09",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 3,
@@ -52080,7 +52081,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "The Debt",
             "airDate": "2011-05-16",
-            "rating": 7.4
+            "rating": 7.3
           },
           {
             "episode": 5,
@@ -52098,7 +52099,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "The Quest",
             "airDate": "2011-05-30",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 8,
@@ -52122,7 +52123,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "The Laziest",
             "airDate": "2011-06-20",
-            "rating": 7.1
+            "rating": 7
           },
           {
             "episode": 12,
@@ -52158,7 +52159,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "The Party",
             "airDate": "2011-08-08",
-            "rating": 7.9
+            "rating": 7.8
           },
           {
             "episode": 18,
@@ -52218,7 +52219,7 @@ window._SERIES_DATA = [
             "episode": 27,
             "title": "The Date",
             "airDate": "2011-12-05",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 28,
@@ -52266,7 +52267,7 @@ window._SERIES_DATA = [
             "episode": 35,
             "title": "The Helmet",
             "airDate": "2012-03-05",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 36,
@@ -52283,7 +52284,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The Remote",
             "airDate": "2012-08-07",
-            "rating": 9.3
+            "rating": 9.2
           },
           {
             "episode": 2,
@@ -52325,7 +52326,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "The Job",
             "airDate": "2012-09-18",
-            "rating": 9.5
+            "rating": 9.4
           },
           {
             "episode": 9,
@@ -52367,7 +52368,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Christmas",
             "airDate": "2012-12-04",
-            "rating": 7.7
+            "rating": 7.5
           },
           {
             "episode": 16,
@@ -52409,7 +52410,7 @@ window._SERIES_DATA = [
             "episode": 22,
             "title": "The Hero",
             "airDate": "2013-06-19",
-            "rating": 8.4
+            "rating": 7.7
           },
           {
             "episode": 23,
@@ -52451,7 +52452,7 @@ window._SERIES_DATA = [
             "episode": 29,
             "title": "The Game",
             "airDate": "2013-08-21",
-            "rating": 9.4
+            "rating": 9.2
           },
           {
             "episode": 30,
@@ -52528,7 +52529,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The Kids",
             "airDate": "2014-06-05",
-            "rating": 8.5
+            "rating": 8.4
           },
           {
             "episode": 2,
@@ -52546,7 +52547,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "The Joy",
             "airDate": "2014-06-19",
-            "rating": 9.1
+            "rating": 8.8
           },
           {
             "episode": 5,
@@ -52594,7 +52595,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "The Void",
             "airDate": "2014-08-14",
-            "rating": 9.1
+            "rating": 8.9
           },
           {
             "episode": 13,
@@ -52642,7 +52643,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "The Shell",
             "airDate": "2014-10-09",
-            "rating": 9.4
+            "rating": 9.3
           },
           {
             "episode": 21,
@@ -52654,7 +52655,7 @@ window._SERIES_DATA = [
             "episode": 22,
             "title": "The Bros",
             "airDate": "2014-10-23",
-            "rating": 8.1
+            "rating": 7.9
           },
           {
             "episode": 23,
@@ -52708,13 +52709,13 @@ window._SERIES_DATA = [
             "episode": 31,
             "title": "The Oracle",
             "airDate": "2015-01-29",
-            "rating": 8.9
+            "rating": 8.8
           },
           {
             "episode": 32,
             "title": "The Safety",
             "airDate": "2015-02-05",
-            "rating": 8.9
+            "rating": 8.8
           },
           {
             "episode": 33,
@@ -52744,7 +52745,7 @@ window._SERIES_DATA = [
             "episode": 37,
             "title": "The Downer",
             "airDate": "2015-07-06",
-            "rating": 8.5
+            "rating": 8.2
           },
           {
             "episode": 38,
@@ -52756,13 +52757,13 @@ window._SERIES_DATA = [
             "episode": 39,
             "title": "The Triangle",
             "airDate": "2015-07-08",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 40,
             "title": "The Money",
             "airDate": "2015-07-09",
-            "rating": 9.2
+            "rating": 8.7
           }
         ]
       },
@@ -52845,7 +52846,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "The Comic",
             "airDate": "2015-10-07",
-            "rating": 7.9
+            "rating": 7.8
           },
           {
             "episode": 14,
@@ -52887,7 +52888,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "The Origins Part One",
             "airDate": "2016-02-15",
-            "rating": 9.5
+            "rating": 9.3
           },
           {
             "episode": 21,
@@ -52899,7 +52900,7 @@ window._SERIES_DATA = [
             "episode": 22,
             "title": "The Girlfriend",
             "airDate": "2016-03-30",
-            "rating": 5.4
+            "rating": 5
           },
           {
             "episode": 23,
@@ -52953,7 +52954,7 @@ window._SERIES_DATA = [
             "episode": 31,
             "title": "The Night",
             "airDate": "2016-06-16",
-            "rating": 9
+            "rating": 8.9
           },
           {
             "episode": 32,
@@ -52977,19 +52978,19 @@ window._SERIES_DATA = [
             "episode": 35,
             "title": "The Slap",
             "airDate": "2016-08-17",
-            "rating": 7.5
+            "rating": 7.3
           },
           {
             "episode": 36,
             "title": "The Detective",
             "airDate": "2016-08-18",
-            "rating": 8.5
+            "rating": 8.3
           },
           {
             "episode": 37,
             "title": "The Fury",
             "airDate": "2016-08-19",
-            "rating": 9.4
+            "rating": 9.3
           },
           {
             "episode": 38,
@@ -53018,13 +53019,13 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "The Rerun",
             "airDate": "2016-09-05",
-            "rating": 7.5
+            "rating": 7.4
           },
           {
             "episode": 3,
             "title": "The Guy",
             "airDate": "2016-09-08",
-            "rating": 7.4
+            "rating": 7.3
           },
           {
             "episode": 4,
@@ -53042,7 +53043,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "The Choices",
             "airDate": "2016-10-13",
-            "rating": 9.8
+            "rating": 9.7
           },
           {
             "episode": 7,
@@ -53054,13 +53055,13 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "The Scam",
             "airDate": "2016-10-27",
-            "rating": 8.2
+            "rating": 8.1
           },
           {
             "episode": 9,
             "title": "The Test",
             "airDate": "2016-11-03",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 10,
@@ -53078,19 +53079,19 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "The Copycats",
             "airDate": "2017-02-06",
-            "rating": 9.5
+            "rating": 9.4
           },
           {
             "episode": 13,
             "title": "The Potato",
             "airDate": "2017-02-07",
-            "rating": 8.4
+            "rating": 8.3
           },
           {
             "episode": 14,
             "title": "The Fuss",
             "airDate": "2017-02-08",
-            "rating": 8.2
+            "rating": 7.8
           },
           {
             "episode": 15,
@@ -53108,7 +53109,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "The Matchmaker",
             "airDate": "2017-02-14",
-            "rating": 8.5
+            "rating": 8.3
           },
           {
             "episode": 18,
@@ -53126,7 +53127,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "The Ollie",
             "airDate": "2017-02-20",
-            "rating": 7.8
+            "rating": 7.7
           },
           {
             "episode": 21,
@@ -53138,7 +53139,7 @@ window._SERIES_DATA = [
             "episode": 22,
             "title": "The Cycle",
             "airDate": "2017-02-22",
-            "rating": 8.2
+            "rating": 7.8
           },
           {
             "episode": 23,
@@ -53198,25 +53199,25 @@ window._SERIES_DATA = [
             "episode": 32,
             "title": "The Singing",
             "airDate": "2017-09-01",
-            "rating": 8.8
+            "rating": 8.7
           },
           {
             "episode": 33,
             "title": "The Best",
             "airDate": "2017-09-08",
-            "rating": 8.1
+            "rating": 7.7
           },
           {
             "episode": 34,
             "title": "The Worst",
             "airDate": "2017-09-15",
-            "rating": 7.7
+            "rating": 7.2
           },
           {
             "episode": 35,
             "title": "The Deal",
             "airDate": "2017-09-22",
-            "rating": 8
+            "rating": 7.9
           },
           {
             "episode": 36,
@@ -53228,13 +53229,13 @@ window._SERIES_DATA = [
             "episode": 37,
             "title": "The Puppets",
             "airDate": "2017-10-06",
-            "rating": 7.9
+            "rating": 7.7
           },
           {
             "episode": 38,
             "title": "The Nuisance",
             "airDate": "2017-10-13",
-            "rating": 8.1
+            "rating": 7.8
           },
           {
             "episode": 39,
@@ -53246,7 +53247,7 @@ window._SERIES_DATA = [
             "episode": 40,
             "title": "The List",
             "airDate": "2017-11-03",
-            "rating": 8.8
+            "rating": 8.7
           },
           {
             "episode": 41,
@@ -53262,7 +53263,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The Rival",
             "airDate": "2018-01-05",
-            "rating": 8
+            "rating": 7.7
           },
           {
             "episode": 2,
@@ -53274,19 +53275,19 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "The Sucker",
             "airDate": "2018-01-12",
-            "rating": 8.1
+            "rating": 7.8
           },
           {
             "episode": 4,
             "title": "The Vegging",
             "airDate": "2018-01-15",
-            "rating": 8.4
+            "rating": 8.2
           },
           {
             "episode": 5,
             "title": "The One",
             "airDate": "2018-01-19",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 6,
@@ -53298,25 +53299,25 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "The Cringe",
             "airDate": "2018-02-02",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 8,
             "title": "The Cage",
             "airDate": "2018-02-09",
-            "rating": 7.8
+            "rating": 7.7
           },
           {
             "episode": 9,
             "title": "The Faith",
             "airDate": "2018-02-23",
-            "rating": 8.3
+            "rating": 7.9
           },
           {
             "episode": 10,
             "title": "The Candidate",
             "airDate": "2018-03-02",
-            "rating": 7.5
+            "rating": 7.3
           },
           {
             "episode": 11,
@@ -53334,7 +53335,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "The Neighbor",
             "airDate": "2018-04-13",
-            "rating": 7.9
+            "rating": 7.8
           },
           {
             "episode": 14,
@@ -53346,7 +53347,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "The Brain",
             "airDate": "2018-06-18",
-            "rating": 7.5
+            "rating": 7.4
           },
           {
             "episode": 16,
@@ -53358,7 +53359,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "The Founder",
             "airDate": "2018-06-18",
-            "rating": 8.8
+            "rating": 8.5
           },
           {
             "episode": 18,
@@ -53370,13 +53371,13 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "The Intelligence",
             "airDate": "2018-06-18",
-            "rating": 8.9
+            "rating": 8.8
           },
           {
             "episode": 20,
             "title": "The Potion",
             "airDate": "2018-07-16",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 21,
@@ -53406,13 +53407,13 @@ window._SERIES_DATA = [
             "episode": 25,
             "title": "The Ghouls",
             "airDate": "2018-10-19",
-            "rating": 7.6
+            "rating": 7.4
           },
           {
             "episode": 26,
             "title": "The Stink",
             "airDate": "2018-11-05",
-            "rating": 8.5
+            "rating": 8.4
           },
           {
             "episode": 27,
@@ -53424,7 +53425,7 @@ window._SERIES_DATA = [
             "episode": 28,
             "title": "The Slip",
             "airDate": "2018-11-07",
-            "rating": 8.1
+            "rating": 7.9
           },
           {
             "episode": 29,
@@ -53442,7 +53443,7 @@ window._SERIES_DATA = [
             "episode": 31,
             "title": "The Possession",
             "airDate": "2019-04-15",
-            "rating": 8.4
+            "rating": 8.3
           },
           {
             "episode": 32,
@@ -53454,7 +53455,7 @@ window._SERIES_DATA = [
             "episode": 33,
             "title": "The Silence",
             "airDate": "2019-04-29",
-            "rating": 8.3
+            "rating": 8
           },
           {
             "episode": 34,
@@ -53466,7 +53467,7 @@ window._SERIES_DATA = [
             "episode": 35,
             "title": "The Wish",
             "airDate": "2019-05-13",
-            "rating": 7.3
+            "rating": 7.1
           },
           {
             "episode": 36,
@@ -53484,13 +53485,13 @@ window._SERIES_DATA = [
             "episode": 38,
             "title": "The Web",
             "airDate": "2019-06-03",
-            "rating": 8
+            "rating": 7.8
           },
           {
             "episode": 39,
             "title": "The Mess",
             "airDate": "2019-06-10",
-            "rating": 8.3
+            "rating": 8
           },
           {
             "episode": 40,
@@ -53502,19 +53503,19 @@ window._SERIES_DATA = [
             "episode": 41,
             "title": "The Revolt",
             "airDate": "2019-06-17",
-            "rating": 7.3
+            "rating": 7.1
           },
           {
             "episode": 42,
             "title": "The Decisions",
             "airDate": "2019-06-17",
-            "rating": 8.1
+            "rating": 7.9
           },
           {
             "episode": 43,
             "title": "The BFFS",
             "airDate": "2019-06-24",
-            "rating": 6.7
+            "rating": 6.5
           },
           {
             "episode": 44,
@@ -53913,7 +53914,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Episode 4",
             "airDate": "2020-01-17",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 5,
@@ -53931,7 +53932,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Episode 7",
             "airDate": "2020-01-17",
-            "rating": 8.9
+            "rating": 9
           },
           {
             "episode": 8,
@@ -54001,7 +54002,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Episode 1",
             "airDate": "2023-09-21",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 2,
@@ -54019,25 +54020,25 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Episode 4",
             "airDate": "2023-09-21",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 5,
             "title": "Episode 5",
             "airDate": "2023-09-21",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 6,
             "title": "Episode 6",
             "airDate": "2023-09-21",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 7,
             "title": "Episode 7",
             "airDate": "2023-09-21",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 8,
@@ -54178,7 +54179,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Armory",
             "airDate": "2018-04-12",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 18,
@@ -54202,13 +54203,13 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Hunted",
             "airDate": "2018-05-10",
-            "rating": 7.5
+            "rating": 7.4
           },
           {
             "episode": 22,
             "title": "Hoax",
             "airDate": "2018-05-17",
-            "rating": 7.7
+            "rating": 7.6
           }
         ]
       },
@@ -54225,7 +54226,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Gasoline Drum",
             "airDate": "2018-10-04",
-            "rating": 7.5
+            "rating": 7.4
           },
           {
             "episode": 3,
@@ -54249,7 +54250,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Never Again",
             "airDate": "2018-11-01",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 7,
@@ -54279,7 +54280,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "School",
             "airDate": "2019-01-03",
-            "rating": 9
+            "rating": 8.9
           },
           {
             "episode": 12,
@@ -54339,7 +54340,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Day of Dread",
             "airDate": "2019-05-02",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 22,
@@ -54464,7 +54465,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Stigma",
             "airDate": "2020-04-08",
-            "rating": 8.4
+            "rating": 8.3
           },
           {
             "episode": 19,
@@ -54493,7 +54494,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "3 Seventeen Year Olds",
             "airDate": "2020-11-11",
-            "rating": 6.4
+            "rating": 6.5
           },
           {
             "episode": 2,
@@ -54606,13 +54607,13 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Vagabundo",
             "airDate": "2021-10-01",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 2,
             "title": "Madrugada",
             "airDate": "2021-10-08",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 3,
@@ -54630,7 +54631,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "West Coast Offense",
             "airDate": "2021-11-05",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 6,
@@ -54654,7 +54655,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Survive",
             "airDate": "2022-01-02",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 10,
@@ -54678,7 +54679,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Short Fuse",
             "airDate": "2022-03-13",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 14,
@@ -54690,7 +54691,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Donor",
             "airDate": "2022-03-27",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 16,
@@ -54720,7 +54721,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Quandary",
             "airDate": "2022-05-08",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 21,
@@ -54803,7 +54804,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Atonement",
             "airDate": "2023-01-20",
-            "rating": 7.1
+            "rating": 7
           },
           {
             "episode": 12,
@@ -54880,7 +54881,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The Promise",
             "airDate": "2024-02-16",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 2,
@@ -54904,7 +54905,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "End of the Road",
             "airDate": "2024-03-08",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 6,
@@ -54916,7 +54917,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Last Call",
             "airDate": "2024-04-05",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 8,
@@ -54952,7 +54953,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Twenty Squad",
             "airDate": "2024-05-17",
-            "rating": 8.2
+            "rating": 8.3
           }
         ]
       },
@@ -54987,7 +54988,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Human Interest",
             "airDate": "2024-11-15",
-            "rating": 7.6
+            "rating": 8
           },
           {
             "episode": 6,
@@ -55485,7 +55486,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "The Ricklantis Mixup",
             "airDate": "2017-09-10",
-            "rating": 9.7
+            "rating": 9.8
           },
           {
             "episode": 8,
@@ -55845,7 +55846,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Ricks Days, Seven Nights",
             "airDate": "2026-05-31",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 3,
@@ -55857,7 +55858,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "A Ricker Runs Through It",
             "airDate": "2026-06-14",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 5,
@@ -55869,7 +55870,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Erickerhead",
             "airDate": "2026-06-28",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 7,
@@ -55985,7 +55986,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "The Doctor Dances",
             "airDate": "2005-05-28",
-            "rating": 9.1
+            "rating": 9
           },
           {
             "episode": 11,
@@ -56050,7 +56051,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "The Idiot's Lantern",
             "airDate": "2006-05-27",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 8,
@@ -56263,7 +56264,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The Eleventh Hour",
             "airDate": "2010-04-03",
-            "rating": 8.8
+            "rating": 8.7
           },
           {
             "episode": 2,
@@ -56293,7 +56294,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "The Vampires of Venice",
             "airDate": "2010-05-08",
-            "rating": 6.9
+            "rating": 7
           },
           {
             "episode": 7,
@@ -56453,7 +56454,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "The Angels Take Manhattan",
             "airDate": "2012-09-29",
-            "rating": 9
+            "rating": 8.9
           },
           {
             "episode": 6,
@@ -56495,7 +56496,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Nightmare in Silver",
             "airDate": "2013-05-11",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 13,
@@ -56619,13 +56620,13 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "The Woman Who Lived",
             "airDate": "2015-10-24",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 7,
             "title": "The Zygon Invasion",
             "airDate": "2015-10-31",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 8,
@@ -56637,7 +56638,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Sleep No More",
             "airDate": "2015-11-14",
-            "rating": 5.7
+            "rating": 5.8
           },
           {
             "episode": 10,
@@ -56672,7 +56673,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Smile",
             "airDate": "2017-04-22",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 3,
@@ -56743,7 +56744,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The Woman Who Fell to Earth",
             "airDate": "2018-10-07",
-            "rating": 6.9
+            "rating": 7
           },
           {
             "episode": 2,
@@ -56820,7 +56821,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Orphan 55",
             "airDate": "2020-01-12",
-            "rating": 4.1
+            "rating": 4.2
           },
           {
             "episode": 4,
@@ -57034,7 +57035,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "My Funky Valentine",
             "airDate": "2010-02-10",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 16,
@@ -57231,7 +57232,7 @@ window._SERIES_DATA = [
             "episode": 23,
             "title": "See You Next Fall",
             "airDate": "2011-05-18",
-            "rating": 8.2
+            "rating": 8.1
           },
           {
             "episode": 24,
@@ -57386,7 +57387,7 @@ window._SERIES_DATA = [
             "episode": 24,
             "title": "Baby on Board",
             "airDate": "2012-05-23",
-            "rating": 8.6
+            "rating": 8.5
           }
         ]
       },
@@ -57433,7 +57434,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Arrested",
             "airDate": "2012-11-07",
-            "rating": 8.5
+            "rating": 8.4
           },
           {
             "episode": 8,
@@ -57457,7 +57458,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "New Year's Eve",
             "airDate": "2013-01-09",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 12,
@@ -57475,7 +57476,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "A Slight at the Opera",
             "airDate": "2013-02-06",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 15,
@@ -57535,7 +57536,7 @@ window._SERIES_DATA = [
             "episode": 24,
             "title": "Goodnight, Gracie",
             "airDate": "2013-05-22",
-            "rating": 8.3
+            "rating": 8.2
           }
         ]
       },
@@ -57660,7 +57661,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Australia",
             "airDate": "2014-04-23",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 21,
@@ -57684,7 +57685,7 @@ window._SERIES_DATA = [
             "episode": 24,
             "title": "The Wedding (2)",
             "airDate": "2014-05-21",
-            "rating": 8.7
+            "rating": 8.6
           }
         ]
       },
@@ -57737,7 +57738,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Three Turkeys",
             "airDate": "2014-11-19",
-            "rating": 8.4
+            "rating": 8.3
           },
           {
             "episode": 9,
@@ -57886,7 +57887,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Clean Out Your Junk Drawer",
             "airDate": "2015-12-02",
-            "rating": 8
+            "rating": 7.9
           },
           {
             "episode": 9,
@@ -58029,7 +58030,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Snow Ball",
             "airDate": "2016-12-14",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 10,
@@ -58059,7 +58060,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Heavy Is the Head",
             "airDate": "2017-02-22",
-            "rating": 7.2
+            "rating": 7.1
           },
           {
             "episode": 15,
@@ -58083,7 +58084,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Five Minutes",
             "airDate": "2017-03-29",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 19,
@@ -58101,7 +58102,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Alone Time",
             "airDate": "2017-05-10",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 22,
@@ -58118,7 +58119,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Lake Life",
             "airDate": "2017-09-27",
-            "rating": 8
+            "rating": 7.9
           },
           {
             "episode": 2,
@@ -58136,7 +58137,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Sex, Lies & Kickball",
             "airDate": "2017-10-18",
-            "rating": 7.2
+            "rating": 7.1
           },
           {
             "episode": 5,
@@ -58148,13 +58149,13 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Ten Years Later",
             "airDate": "2017-11-01",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 7,
             "title": "Winner Winner Turkey Dinner",
             "airDate": "2017-11-15",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 8,
@@ -58208,7 +58209,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Wine Weekend",
             "airDate": "2018-03-21",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 17,
@@ -58226,7 +58227,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "CHiPs and Salsa",
             "airDate": "2018-04-11",
-            "rating": 7
+            "rating": 6.9
           },
           {
             "episode": 20,
@@ -58238,13 +58239,13 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "The Escape",
             "airDate": "2018-05-09",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 22,
             "title": "Clash of Swords",
             "airDate": "2018-05-16",
-            "rating": 6.8
+            "rating": 6.7
           }
         ]
       },
@@ -58279,7 +58280,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Good Grief",
             "airDate": "2018-10-24",
-            "rating": 7.4
+            "rating": 7.3
           },
           {
             "episode": 6,
@@ -58303,7 +58304,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Putting Down Roots",
             "airDate": "2018-12-05",
-            "rating": 7.5
+            "rating": 7.4
           },
           {
             "episode": 10,
@@ -58351,7 +58352,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "The Wild",
             "airDate": "2019-03-13",
-            "rating": 7.2
+            "rating": 7.1
           },
           {
             "episode": 18,
@@ -58363,7 +58364,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Yes-Woman",
             "airDate": "2019-04-03",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 20,
@@ -58440,13 +58441,13 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "The Last Christmas",
             "airDate": "2019-12-11",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 10,
             "title": "The Prescott",
             "airDate": "2020-01-08",
-            "rating": 8.2
+            "rating": 8.1
           },
           {
             "episode": 11,
@@ -58476,25 +58477,25 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Baby Steps",
             "airDate": "2020-03-18",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 16,
             "title": "I'm Going to Miss This",
             "airDate": "2020-04-01",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 17,
             "title": "Finale Part 1",
             "airDate": "2020-04-08",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 18,
             "title": "Finale Part 2",
             "airDate": "2020-04-08",
-            "rating": 8.7
+            "rating": 8.6
           }
         ]
       }
@@ -58617,19 +58618,19 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Crash Course",
             "airDate": "2018-10-23",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 3,
             "title": "The Good, the Bad and the Ugly",
             "airDate": "2018-10-30",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 4,
             "title": "The Switch",
             "airDate": "2018-11-13",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 5,
@@ -58641,13 +58642,13 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "The Hawke",
             "airDate": "2018-11-27",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 7,
             "title": "The Ride Along",
             "airDate": "2018-12-04",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 8,
@@ -58671,19 +58672,19 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Redwood",
             "airDate": "2019-01-22",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 12,
             "title": "Heartbreak",
             "airDate": "2019-02-12",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 13,
             "title": "Caught Stealing",
             "airDate": "2019-02-19",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 14,
@@ -58707,13 +58708,13 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "The Shake Up",
             "airDate": "2019-03-26",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 18,
             "title": "Homefront",
             "airDate": "2019-04-02",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 19,
@@ -58736,7 +58737,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Impact",
             "airDate": "2019-09-29",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 2,
@@ -58748,7 +58749,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "The Bet",
             "airDate": "2019-10-13",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 4,
@@ -58760,7 +58761,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Tough Love",
             "airDate": "2019-10-27",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 6,
@@ -58784,7 +58785,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Breaking Point",
             "airDate": "2019-12-01",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 10,
@@ -58796,13 +58797,13 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Day of Death",
             "airDate": "2020-02-23",
-            "rating": 8.8
+            "rating": 8.7
           },
           {
             "episode": 12,
             "title": "Now and Then",
             "airDate": "2020-03-01",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 13,
@@ -58814,19 +58815,19 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Casualties",
             "airDate": "2020-03-15",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 15,
             "title": "Hand-Off",
             "airDate": "2020-03-22",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 16,
             "title": "The Overnight",
             "airDate": "2020-04-05",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 17,
@@ -58838,7 +58839,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Under the Gun",
             "airDate": "2020-04-26",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 19,
@@ -58850,7 +58851,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "The Hunt",
             "airDate": "2020-05-10",
-            "rating": 8
+            "rating": 7.9
           }
         ]
       },
@@ -58873,13 +58874,13 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "La Fiera",
             "airDate": "2021-01-17",
-            "rating": 6.3
+            "rating": 6.2
           },
           {
             "episode": 4,
             "title": "Sabotage",
             "airDate": "2021-01-24",
-            "rating": 6.7
+            "rating": 6.6
           },
           {
             "episode": 5,
@@ -58891,13 +58892,13 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Revelations",
             "airDate": "2021-02-21",
-            "rating": 6.7
+            "rating": 6.6
           },
           {
             "episode": 7,
             "title": "True Crime",
             "airDate": "2021-02-28",
-            "rating": 4.5
+            "rating": 4.4
           },
           {
             "episode": 8,
@@ -58915,7 +58916,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Man of Honor",
             "airDate": "2021-04-11",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 11,
@@ -58968,13 +58969,13 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Red Hot",
             "airDate": "2021-10-17",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 5,
             "title": "A.C.H.",
             "airDate": "2021-10-31",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 6,
@@ -59004,19 +59005,19 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Heart Beat",
             "airDate": "2022-01-02",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 11,
             "title": "End Game",
             "airDate": "2022-01-09",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 12,
             "title": "The Knock",
             "airDate": "2022-01-23",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 13,
@@ -59028,7 +59029,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Long Shot",
             "airDate": "2022-02-27",
-            "rating": 6.7
+            "rating": 6.8
           },
           {
             "episode": 15,
@@ -59052,13 +59053,13 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Backstabbers",
             "airDate": "2022-04-10",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 19,
             "title": "Simone",
             "airDate": "2022-04-24",
-            "rating": 6
+            "rating": 6.1
           },
           {
             "episode": 20,
@@ -59076,7 +59077,7 @@ window._SERIES_DATA = [
             "episode": 22,
             "title": "Day in the Hole",
             "airDate": "2022-05-15",
-            "rating": 7
+            "rating": 6.9
           }
         ]
       },
@@ -59093,25 +59094,25 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Labor Day",
             "airDate": "2022-10-02",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 3,
             "title": "Dye Hard",
             "airDate": "2022-10-09",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 4,
             "title": "The Choice",
             "airDate": "2022-10-16",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 5,
             "title": "The Fugitive",
             "airDate": "2022-10-23",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 6,
@@ -59123,7 +59124,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Crossfire",
             "airDate": "2022-11-06",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 8,
@@ -59141,7 +59142,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "The List",
             "airDate": "2023-01-03",
-            "rating": 7.4
+            "rating": 7.3
           },
           {
             "episode": 11,
@@ -59153,13 +59154,13 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Death Notice",
             "airDate": "2023-01-17",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 13,
             "title": "Daddy Cop",
             "airDate": "2023-01-24",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 14,
@@ -59171,7 +59172,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "The Con",
             "airDate": "2023-02-14",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 16,
@@ -59183,13 +59184,13 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "The Enemy Within",
             "airDate": "2023-02-28",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 18,
             "title": "Double Trouble",
             "airDate": "2023-03-21",
-            "rating": 4.6
+            "rating": 4.5
           },
           {
             "episode": 19,
@@ -59236,25 +59237,25 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Trouble in Paradise",
             "airDate": "2024-03-05",
-            "rating": 6.2
+            "rating": 6.3
           },
           {
             "episode": 4,
             "title": "Training Day",
             "airDate": "2024-03-26",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 5,
             "title": "The Vow",
             "airDate": "2024-04-02",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 6,
             "title": "Secrets and Lies",
             "airDate": "2024-04-09",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 7,
@@ -59272,7 +59273,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "The Squeeze",
             "airDate": "2024-05-14",
-            "rating": 8.1
+            "rating": 8.3
           },
           {
             "episode": 10,
@@ -59289,7 +59290,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The Shot",
             "airDate": "2025-01-07",
-            "rating": 7.8
+            "rating": 8
           },
           {
             "episode": 2,
@@ -59313,7 +59314,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Til Death",
             "airDate": "2025-02-04",
-            "rating": 7.9
+            "rating": 8.1
           },
           {
             "episode": 6,
@@ -59325,13 +59326,13 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "The Mickey",
             "airDate": "2025-02-18",
-            "rating": 7.9
+            "rating": 8.1
           },
           {
             "episode": 8,
             "title": "Wildfire",
             "airDate": "2025-02-25",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 9,
@@ -59349,13 +59350,13 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Speed",
             "airDate": "2025-03-25",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 12,
             "title": "April Fools",
             "airDate": "2025-04-01",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 13,
@@ -59367,25 +59368,25 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Mad About Murder",
             "airDate": "2025-04-15",
-            "rating": 7.7
+            "rating": 8.1
           },
           {
             "episode": 15,
             "title": "A Deadly Secret",
             "airDate": "2025-04-22",
-            "rating": 3.6
+            "rating": 3.5
           },
           {
             "episode": 16,
             "title": "The Return",
             "airDate": "2025-04-29",
-            "rating": 7.9
+            "rating": 8.4
           },
           {
             "episode": 17,
             "title": "Mutiny and the Bounty",
             "airDate": "2025-05-06",
-            "rating": 7.5
+            "rating": 7.7
           },
           {
             "episode": 18,
@@ -59426,19 +59427,19 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "The Network",
             "airDate": "2026-02-02",
-            "rating": 7.6
+            "rating": 7.8
           },
           {
             "episode": 6,
             "title": "Burn 4 Love",
             "airDate": "2026-02-09",
-            "rating": 8.1
+            "rating": 8.4
           },
           {
             "episode": 7,
             "title": "Baja",
             "airDate": "2026-02-16",
-            "rating": 7.9
+            "rating": 8.2
           },
           {
             "episode": 8,
@@ -59554,7 +59555,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Dead in the Water",
             "airDate": "2005-09-27",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 4,
@@ -59578,13 +59579,13 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Hook Man",
             "airDate": "2005-10-25",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 8,
             "title": "Bugs",
             "airDate": "2005-11-08",
-            "rating": 6.7
+            "rating": 6.8
           },
           {
             "episode": 9,
@@ -59608,7 +59609,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Faith",
             "airDate": "2006-01-17",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 13,
@@ -59638,7 +59639,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Hell House",
             "airDate": "2006-03-30",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 18,
@@ -59685,7 +59686,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Everybody Loves a Clown",
             "airDate": "2006-10-05",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 3,
@@ -59697,7 +59698,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Children Shouldn't Play with Dead Things",
             "airDate": "2006-10-19",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 5,
@@ -59709,7 +59710,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "No Exit",
             "airDate": "2006-11-02",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 7,
@@ -59727,7 +59728,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Croatoan",
             "airDate": "2006-12-07",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 10,
@@ -59834,7 +59835,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Sin City",
             "airDate": "2007-10-25",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 5,
@@ -59870,13 +59871,13 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Dream a Little Dream of Me",
             "airDate": "2008-02-07",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 11,
             "title": "Mystery Spot",
             "airDate": "2008-02-14",
-            "rating": 9.5
+            "rating": 9.4
           },
           {
             "episode": 12,
@@ -59894,13 +59895,13 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Long Distance Call",
             "airDate": "2008-05-01",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 15,
             "title": "Time is on My Side",
             "airDate": "2008-05-08",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 16,
@@ -59935,7 +59936,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Metamorphosis",
             "airDate": "2008-10-09",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 5,
@@ -59983,7 +59984,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Criss Angel is a Douchebag",
             "airDate": "2009-01-22",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 13,
@@ -60025,7 +60026,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Jump the Shark",
             "airDate": "2009-04-23",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 20,
@@ -60054,7 +60055,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Sympathy for the Devil",
             "airDate": "2009-09-10",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 2,
@@ -60203,7 +60204,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "The Third Man",
             "airDate": "2010-10-08",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 4,
@@ -60215,7 +60216,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Live Free or Twihard",
             "airDate": "2010-10-22",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 6,
@@ -60233,7 +60234,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "All Dogs Go to Heaven",
             "airDate": "2010-11-12",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 9,
@@ -60263,7 +60264,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Unforgiven",
             "airDate": "2011-02-11",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 14,
@@ -60328,7 +60329,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Meet the New Boss",
             "airDate": "2011-09-23",
-            "rating": 8.9
+            "rating": 9
           },
           {
             "episode": 2,
@@ -60346,7 +60347,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Defending Your Life",
             "airDate": "2011-10-14",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 5,
@@ -60370,7 +60371,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Season 7, Time for a Wedding!",
             "airDate": "2011-11-11",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 9,
@@ -60388,7 +60389,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Adventures in Babysitting",
             "airDate": "2012-01-06",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 12,
@@ -60412,7 +60413,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Repo Man",
             "airDate": "2012-02-17",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 16,
@@ -60442,7 +60443,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "The Girl with the Dungeons and Dragons Tattoo",
             "airDate": "2012-04-27",
-            "rating": 9.1
+            "rating": 9
           },
           {
             "episode": 21,
@@ -60477,13 +60478,13 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "What's Up, Tiger Mommy?",
             "airDate": "2012-10-10",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 3,
             "title": "Heartache",
             "airDate": "2012-10-17",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 4,
@@ -60525,7 +60526,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Torn and Frayed",
             "airDate": "2013-01-16",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 11,
@@ -60549,13 +60550,13 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Trial and Error",
             "airDate": "2013-02-13",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 15,
             "title": "Man's Best Friend with Benefits",
             "airDate": "2013-02-20",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 16,
@@ -60579,7 +60580,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Taxi Driver",
             "airDate": "2013-04-03",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 20,
@@ -60692,7 +60693,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Captives",
             "airDate": "2014-02-25",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 15,
@@ -60716,7 +60717,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Meta Fiction",
             "airDate": "2014-04-15",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 19,
@@ -60734,7 +60735,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "King of the Damned",
             "airDate": "2014-05-06",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 22,
@@ -60829,7 +60830,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Halt & Catch Fire",
             "airDate": "2015-02-10",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 14,
@@ -60865,7 +60866,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "The Werther Project",
             "airDate": "2015-04-22",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 20,
@@ -60924,13 +60925,13 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Thin Lizzie",
             "airDate": "2015-11-04",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 6,
             "title": "Our Little World",
             "airDate": "2015-11-11",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 7,
@@ -60954,7 +60955,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "The Devil in the Details",
             "airDate": "2016-01-20",
-            "rating": 9.1
+            "rating": 9
           },
           {
             "episode": 11,
@@ -60990,7 +60991,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Safe House",
             "airDate": "2016-03-23",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 17,
@@ -61049,19 +61050,19 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Mamma Mia",
             "airDate": "2016-10-20",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 3,
             "title": "The Foundry",
             "airDate": "2016-10-27",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 4,
             "title": "American Nightmare",
             "airDate": "2016-11-03",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 5,
@@ -61109,7 +61110,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Stuck in the Middle (With You)",
             "airDate": "2017-02-16",
-            "rating": 8.9
+            "rating": 9
           },
           {
             "episode": 13,
@@ -61127,19 +61128,19 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Somewhere Between Heaven and Hell",
             "airDate": "2017-03-09",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 16,
             "title": "Ladies Drink Free",
             "airDate": "2017-03-30",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 17,
             "title": "The British Invasion",
             "airDate": "2017-04-06",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 18,
@@ -61157,7 +61158,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Twigs & Twine & Tasha Banes",
             "airDate": "2017-05-04",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 21,
@@ -61169,7 +61170,7 @@ window._SERIES_DATA = [
             "episode": 22,
             "title": "Who We Are",
             "airDate": "2017-05-18",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 23,
@@ -61198,7 +61199,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Patience",
             "airDate": "2017-10-26",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 4,
@@ -61228,7 +61229,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "The Scorpion and the Frog",
             "airDate": "2017-11-30",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 9,
@@ -61276,13 +61277,13 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Scoobynatural",
             "airDate": "2018-03-29",
-            "rating": 9.6
+            "rating": 9.5
           },
           {
             "episode": 17,
             "title": "The Thing",
             "airDate": "2018-04-05",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 18,
@@ -61294,7 +61295,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Funeralia",
             "airDate": "2018-04-19",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 20,
@@ -61318,7 +61319,7 @@ window._SERIES_DATA = [
             "episode": 23,
             "title": "Let the Good Times Roll",
             "airDate": "2018-05-17",
-            "rating": 8.6
+            "rating": 8.5
           }
         ]
       },
@@ -61335,7 +61336,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Gods and Monsters",
             "airDate": "2018-10-18",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 3,
@@ -61425,7 +61426,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Game Night",
             "airDate": "2019-04-04",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 18,
@@ -61502,25 +61503,25 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "The Trap",
             "airDate": "2020-01-16",
-            "rating": 8.2
+            "rating": 8.1
           },
           {
             "episode": 10,
             "title": "The Heroes' Journey",
             "airDate": "2020-01-23",
-            "rating": 8.1
+            "rating": 8
           },
           {
             "episode": 11,
             "title": "The Gamblers",
             "airDate": "2020-01-30",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 12,
             "title": "Galaxy Brain",
             "airDate": "2020-03-16",
-            "rating": 7.4
+            "rating": 7.3
           },
           {
             "episode": 13,
@@ -61532,7 +61533,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Last Holiday",
             "airDate": "2020-10-08",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 15,
@@ -61550,25 +61551,25 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Unity",
             "airDate": "2020-10-29",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 18,
             "title": "Despair",
             "airDate": "2020-11-05",
-            "rating": 8.5
+            "rating": 8.4
           },
           {
             "episode": 19,
             "title": "Inherit the Earth",
             "airDate": "2020-11-12",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 20,
             "title": "Carry On",
             "airDate": "2020-11-19",
-            "rating": 7
+            "rating": 6.9
           }
         ]
       }
@@ -61698,7 +61699,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "There Goes the Neighborhood",
             "airDate": "2010-04-01",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 17,
@@ -61775,7 +61776,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Plan B",
             "airDate": "2010-10-21",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 7,
@@ -61805,7 +61806,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "By the Light of the Moon",
             "airDate": "2010-12-09",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 12,
@@ -61888,7 +61889,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "The Hybrid",
             "airDate": "2011-09-22",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 3,
@@ -61900,7 +61901,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Disturbing Behavior",
             "airDate": "2011-10-06",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 5,
@@ -61972,7 +61973,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "1912",
             "airDate": "2012-03-15",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 17,
@@ -62002,7 +62003,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Before Sunset",
             "airDate": "2012-05-03",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 22,
@@ -62049,7 +62050,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "We All Go a Little Mad Sometimes",
             "airDate": "2012-11-15",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 7,
@@ -62067,7 +62068,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "O Come, All Ye Faithful",
             "airDate": "2012-12-13",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 10,
@@ -62103,7 +62104,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Stand by Me",
             "airDate": "2013-02-21",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 16,
@@ -62162,7 +62163,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "I Know What You Did Last Summer",
             "airDate": "2013-10-03",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 2,
@@ -62186,7 +62187,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Monster's Ball",
             "airDate": "2013-10-31",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 6,
@@ -62222,7 +62223,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "500 Years of Solitude",
             "airDate": "2014-01-23",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 12,
@@ -62311,19 +62312,19 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Welcome to Paradise",
             "airDate": "2014-10-16",
-            "rating": 7.9
+            "rating": 7.8
           },
           {
             "episode": 4,
             "title": "Black Hole Sun",
             "airDate": "2014-10-23",
-            "rating": 7.9
+            "rating": 7.8
           },
           {
             "episode": 5,
             "title": "The World Has Turned and Left Me Here",
             "airDate": "2014-10-30",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 6,
@@ -62383,7 +62384,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Let Her Go",
             "airDate": "2015-02-19",
-            "rating": 8.7
+            "rating": 8.6
           },
           {
             "episode": 16,
@@ -62413,7 +62414,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "I'd Leave My Happy Home for You",
             "airDate": "2015-04-30",
-            "rating": 7.9
+            "rating": 7.8
           },
           {
             "episode": 21,
@@ -62436,19 +62437,19 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Day One of Twenty-Two Thousand, Give or Take",
             "airDate": "2015-10-08",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 2,
             "title": "Never Let Me Go",
             "airDate": "2015-10-15",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 3,
             "title": "Age of Innocence",
             "airDate": "2015-10-22",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 4,
@@ -62478,7 +62479,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Hold Me, Thrill Me, Kiss Me, Kill Me",
             "airDate": "2015-12-03",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 9,
@@ -62502,7 +62503,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Postcards from the Edge",
             "airDate": "2016-02-12",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 13,
@@ -62514,7 +62515,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Moonlight on the Bayou",
             "airDate": "2016-02-26",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 15,
@@ -62538,7 +62539,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "One Way or Another",
             "airDate": "2016-04-15",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 19,
@@ -62591,7 +62592,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "An Eternity of Misery",
             "airDate": "2016-11-11",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 5,
@@ -62639,7 +62640,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "What Are You?",
             "airDate": "2017-02-10",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 13,
@@ -62651,7 +62652,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "It's Been a Hell of a Ride",
             "airDate": "2017-02-24",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 15,
@@ -62711,73 +62712,73 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "A Single Life",
             "airDate": "1999-09-27",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 3,
             "title": "...Or Just Look Like One",
             "airDate": "1999-10-04",
-            "rating": 7.6
+            "rating": 7.8
           },
           {
             "episode": 4,
             "title": "Hysteria",
             "airDate": "1999-10-11",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 5,
             "title": "Wanderlust",
             "airDate": "1999-10-18",
-            "rating": 7.6
+            "rating": 7.8
           },
           {
             "episode": 6,
             "title": "Sophomore Jinx",
             "airDate": "1999-10-25",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 7,
             "title": "Uncivilized",
             "airDate": "1999-11-15",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 8,
             "title": "Stalked",
             "airDate": "1999-11-22",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 9,
             "title": "Stocks & Bondage",
             "airDate": "1999-11-29",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 10,
             "title": "Closure",
             "airDate": "2000-01-07",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 11,
             "title": "Bad Blood",
             "airDate": "2000-01-14",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 12,
             "title": "Russian Love Poem",
             "airDate": "2000-01-21",
-            "rating": 7.1
+            "rating": 7.3
           },
           {
             "episode": 13,
             "title": "Disrobed",
             "airDate": "2000-02-04",
-            "rating": 7.9
+            "rating": 8.1
           },
           {
             "episode": 14,
@@ -62789,13 +62790,13 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Entitled, Part 1",
             "airDate": "2000-02-18",
-            "rating": 7.6
+            "rating": 7.8
           },
           {
             "episode": 16,
             "title": "The Third Guy",
             "airDate": "2000-02-25",
-            "rating": 8.2
+            "rating": 8.4
           },
           {
             "episode": 17,
@@ -62807,7 +62808,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Chat Room",
             "airDate": "2000-04-14",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 19,
@@ -62819,13 +62820,13 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Remorse",
             "airDate": "2000-05-05",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 21,
             "title": "Nocturne",
             "airDate": "2000-05-12",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 22,
@@ -62848,13 +62849,13 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Honor",
             "airDate": "2000-10-27",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 3,
             "title": "Closure, Part 2",
             "airDate": "2000-11-03",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 4,
@@ -62866,19 +62867,19 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Baby Killer",
             "airDate": "2000-11-17",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 6,
             "title": "Noncompliance",
             "airDate": "2000-11-24",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 7,
             "title": "Asunder",
             "airDate": "2000-12-01",
-            "rating": 7.6
+            "rating": 7.8
           },
           {
             "episode": 8,
@@ -62890,37 +62891,37 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Pixies",
             "airDate": "2001-01-12",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 10,
             "title": "Consent",
             "airDate": "2001-01-19",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 11,
             "title": "Abuse",
             "airDate": "2001-01-26",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 12,
             "title": "Secrets",
             "airDate": "2001-02-02",
-            "rating": 7.6
+            "rating": 7.8
           },
           {
             "episode": 13,
             "title": "Victims",
             "airDate": "2001-02-09",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 14,
             "title": "Paranoia",
             "airDate": "2001-02-16",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 15,
@@ -62932,25 +62933,25 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Runaway",
             "airDate": "2001-03-02",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 17,
             "title": "Folly",
             "airDate": "2001-03-23",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 18,
             "title": "Manhunt",
             "airDate": "2001-04-20",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 19,
             "title": "Parasites",
             "airDate": "2001-04-27",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 20,
@@ -62973,43 +62974,43 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Repression",
             "airDate": "2001-09-28",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 2,
             "title": "Wrath",
             "airDate": "2001-10-05",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 3,
             "title": "Stolen",
             "airDate": "2001-10-12",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 4,
             "title": "Rooftop",
             "airDate": "2001-10-19",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 5,
             "title": "Tangled",
             "airDate": "2001-10-26",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 6,
             "title": "Redemption",
             "airDate": "2001-11-02",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 7,
             "title": "Sacrifice",
             "airDate": "2001-11-09",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 8,
@@ -63039,19 +63040,19 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Protection",
             "airDate": "2002-01-11",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 13,
             "title": "Prodigy",
             "airDate": "2002-01-18",
-            "rating": 8
+            "rating": 8.2
           },
           {
             "episode": 14,
             "title": "Counterfeit",
             "airDate": "2002-01-25",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 15,
@@ -63063,13 +63064,13 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Popular",
             "airDate": "2002-03-01",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 17,
             "title": "Surveillance",
             "airDate": "2002-03-08",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 18,
@@ -63087,7 +63088,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Greed",
             "airDate": "2002-04-26",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 21,
@@ -63105,7 +63106,7 @@ window._SERIES_DATA = [
             "episode": 23,
             "title": "Silence",
             "airDate": "2002-05-17",
-            "rating": 7.8
+            "rating": 8
           }
         ]
       },
@@ -63116,13 +63117,13 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Chameleon",
             "airDate": "2002-09-27",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 2,
             "title": "Deception",
             "airDate": "2002-10-04",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 3,
@@ -63134,31 +63135,31 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Lust",
             "airDate": "2002-10-18",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 5,
             "title": "Disappearing Acts",
             "airDate": "2002-10-25",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 6,
             "title": "Angels",
             "airDate": "2002-11-01",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 7,
             "title": "Dolls",
             "airDate": "2002-11-08",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 8,
             "title": "Waste",
             "airDate": "2002-11-15",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 9,
@@ -63170,7 +63171,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Resilience",
             "airDate": "2002-12-06",
-            "rating": 8.1
+            "rating": 8.3
           },
           {
             "episode": 11,
@@ -63182,7 +63183,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Risk",
             "airDate": "2003-01-17",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 13,
@@ -63194,25 +63195,25 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Mercy",
             "airDate": "2003-01-31",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 15,
             "title": "Pandora",
             "airDate": "2003-02-07",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 16,
             "title": "Tortured",
             "airDate": "2003-02-14",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 17,
             "title": "Privilege",
             "airDate": "2003-02-21",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 18,
@@ -63224,31 +63225,31 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Appearances",
             "airDate": "2003-03-28",
-            "rating": 8
+            "rating": 8.2
           },
           {
             "episode": 20,
             "title": "Dominance",
             "airDate": "2003-04-04",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 21,
             "title": "Fallacy",
             "airDate": "2003-04-18",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 22,
             "title": "Futility",
             "airDate": "2003-04-25",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 23,
             "title": "Grief",
             "airDate": "2003-05-02",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 24,
@@ -63271,19 +63272,19 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Tragedy",
             "airDate": "2003-09-23",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 2,
             "title": "Manic",
             "airDate": "2003-09-30",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 3,
             "title": "Mother",
             "airDate": "2003-10-07",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 4,
@@ -63295,7 +63296,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Serendipity",
             "airDate": "2003-10-21",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 6,
@@ -63307,19 +63308,19 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Choice",
             "airDate": "2003-11-04",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 8,
             "title": "Abomination",
             "airDate": "2003-11-11",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 9,
             "title": "Control",
             "airDate": "2003-11-18",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 10,
@@ -63337,19 +63338,19 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Brotherhood",
             "airDate": "2004-01-06",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 13,
             "title": "Hate",
             "airDate": "2004-01-13",
-            "rating": 7.8
+            "rating": 8
           },
           {
             "episode": 14,
             "title": "Ritual",
             "airDate": "2004-02-03",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 15,
@@ -63361,49 +63362,49 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Home",
             "airDate": "2004-02-17",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 17,
             "title": "Mean",
             "airDate": "2004-02-24",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 18,
             "title": "Careless",
             "airDate": "2004-03-02",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 19,
             "title": "Sick",
             "airDate": "2004-03-30",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 20,
             "title": "Lowdown",
             "airDate": "2004-04-06",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 21,
             "title": "Criminal",
             "airDate": "2004-04-20",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 22,
             "title": "Painless",
             "airDate": "2004-04-27",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 23,
             "title": "Bound",
             "airDate": "2004-05-04",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 24,
@@ -63426,7 +63427,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Birthright",
             "airDate": "2004-09-21",
-            "rating": 8.4
+            "rating": 8.6
           },
           {
             "episode": 2,
@@ -63438,19 +63439,19 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Obscene",
             "airDate": "2004-10-12",
-            "rating": 7.6
+            "rating": 7.9
           },
           {
             "episode": 4,
             "title": "Scavenger",
             "airDate": "2004-10-19",
-            "rating": 8.8
+            "rating": 8.9
           },
           {
             "episode": 5,
             "title": "Outcry",
             "airDate": "2004-10-26",
-            "rating": 7.8
+            "rating": 8
           },
           {
             "episode": 6,
@@ -63462,25 +63463,25 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Charisma",
             "airDate": "2004-11-16",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 8,
             "title": "Doubt",
             "airDate": "2004-11-23",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 9,
             "title": "Weak",
             "airDate": "2004-11-30",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 10,
             "title": "Haunted",
             "airDate": "2004-12-07",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 11,
@@ -63492,7 +63493,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Identity",
             "airDate": "2005-01-18",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 13,
@@ -63504,7 +63505,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Game",
             "airDate": "2005-02-08",
-            "rating": 7.3
+            "rating": 7.6
           },
           {
             "episode": 15,
@@ -63516,13 +63517,13 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Ghost",
             "airDate": "2005-02-22",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 17,
             "title": "Rage",
             "airDate": "2005-03-01",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 18,
@@ -63534,13 +63535,13 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Intoxicated",
             "airDate": "2005-03-29",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 20,
             "title": "Night",
             "airDate": "2005-05-03",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 21,
@@ -63552,13 +63553,13 @@ window._SERIES_DATA = [
             "episode": 22,
             "title": "Parts",
             "airDate": "2005-05-17",
-            "rating": 7.9
+            "rating": 8.1
           },
           {
             "episode": 23,
             "title": "Goliath",
             "airDate": "2005-05-24",
-            "rating": 7.9
+            "rating": 8
           }
         ]
       },
@@ -63569,13 +63570,13 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Demons",
             "airDate": "2005-09-20",
-            "rating": 8.2
+            "rating": 8.4
           },
           {
             "episode": 2,
             "title": "Design",
             "airDate": "2005-09-27",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 3,
@@ -63587,13 +63588,13 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Ripped",
             "airDate": "2005-10-11",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 5,
             "title": "Strain",
             "airDate": "2005-10-18",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 6,
@@ -63611,67 +63612,67 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Starved",
             "airDate": "2005-11-15",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 9,
             "title": "Rockabye",
             "airDate": "2005-11-22",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 10,
             "title": "Storm",
             "airDate": "2005-11-29",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 11,
             "title": "Alien",
             "airDate": "2005-12-06",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 12,
             "title": "Infected",
             "airDate": "2006-01-03",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 13,
             "title": "Blast",
             "airDate": "2006-01-10",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 14,
             "title": "Taboo",
             "airDate": "2006-01-17",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 15,
             "title": "Manipulated",
             "airDate": "2006-02-07",
-            "rating": 8.2
+            "rating": 8.4
           },
           {
             "episode": 16,
             "title": "Gone",
             "airDate": "2006-02-28",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 17,
             "title": "Class",
             "airDate": "2006-03-21",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 18,
             "title": "Venom",
             "airDate": "2006-03-28",
-            "rating": 8.4
+            "rating": 8.6
           },
           {
             "episode": 19,
@@ -63683,19 +63684,19 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Fat",
             "airDate": "2006-05-02",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 21,
             "title": "Web",
             "airDate": "2006-05-09",
-            "rating": 8.1
+            "rating": 8.3
           },
           {
             "episode": 22,
             "title": "Influence",
             "airDate": "2006-05-16",
-            "rating": 8
+            "rating": 8.1
           }
         ]
       },
@@ -63712,7 +63713,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Clock",
             "airDate": "2006-09-26",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 3,
@@ -63730,31 +63731,31 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Confrontation",
             "airDate": "2006-10-17",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 6,
             "title": "Infiltrated",
             "airDate": "2006-10-31",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 7,
             "title": "Underbelly",
             "airDate": "2006-11-14",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 8,
             "title": "Cage",
             "airDate": "2006-11-21",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 9,
             "title": "Choreographed",
             "airDate": "2006-11-28",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 10,
@@ -63766,25 +63767,25 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Burned",
             "airDate": "2007-01-09",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 12,
             "title": "Outsider",
             "airDate": "2007-01-16",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 13,
             "title": "Loophole",
             "airDate": "2007-02-06",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 14,
             "title": "Dependent",
             "airDate": "2007-02-13",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 15,
@@ -63802,7 +63803,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Sin",
             "airDate": "2007-03-27",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 18,
@@ -63820,19 +63821,19 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Annihilated",
             "airDate": "2007-05-08",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 21,
             "title": "Pretend",
             "airDate": "2007-05-15",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 22,
             "title": "Screwed",
             "airDate": "2007-05-22",
-            "rating": 8.7
+            "rating": 8.8
           }
         ]
       },
@@ -63849,79 +63850,79 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Avatar",
             "airDate": "2007-10-02",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 3,
             "title": "Impulsive",
             "airDate": "2007-10-09",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 4,
             "title": "Savant",
             "airDate": "2007-10-16",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 5,
             "title": "Harm",
             "airDate": "2007-10-23",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 6,
             "title": "Svengali",
             "airDate": "2007-11-06",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 7,
             "title": "Blinded",
             "airDate": "2007-11-13",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 8,
             "title": "Fight",
             "airDate": "2007-11-20",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 9,
             "title": "Paternity",
             "airDate": "2007-11-27",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 10,
             "title": "Snitch",
             "airDate": "2007-12-04",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 11,
             "title": "Streetwise",
             "airDate": "2008-01-01",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 12,
             "title": "Signature",
             "airDate": "2008-01-08",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 13,
             "title": "Unorthodox",
             "airDate": "2008-01-15",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 14,
             "title": "Inconceivable",
             "airDate": "2008-01-22",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 15,
@@ -63933,7 +63934,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Closet",
             "airDate": "2008-04-22",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 17,
@@ -63945,7 +63946,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Trade",
             "airDate": "2008-05-06",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 19,
@@ -63962,13 +63963,13 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Trials",
             "airDate": "2008-09-23",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 2,
             "title": "Confession",
             "airDate": "2008-09-30",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 3,
@@ -63986,25 +63987,25 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Retro",
             "airDate": "2008-10-28",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 6,
             "title": "Babes",
             "airDate": "2008-11-11",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 7,
             "title": "Wildlife",
             "airDate": "2008-11-18",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 8,
             "title": "Persona",
             "airDate": "2008-11-25",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 9,
@@ -64016,13 +64017,13 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Smut",
             "airDate": "2008-12-09",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 11,
             "title": "Stranger",
             "airDate": "2009-01-06",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 12,
@@ -64040,19 +64041,19 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Transitions",
             "airDate": "2009-02-17",
-            "rating": 8
+            "rating": 8.3
           },
           {
             "episode": 15,
             "title": "Lead",
             "airDate": "2009-03-10",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 16,
             "title": "Ballerina",
             "airDate": "2009-03-17",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 17,
@@ -64070,19 +64071,19 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Selfish",
             "airDate": "2009-04-28",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 20,
             "title": "Crush",
             "airDate": "2009-05-05",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 21,
             "title": "Liberties",
             "airDate": "2009-05-19",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 22,
@@ -64099,67 +64100,67 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Unstable",
             "airDate": "2009-09-23",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 2,
             "title": "Sugar",
             "airDate": "2009-09-30",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 3,
             "title": "Solitary",
             "airDate": "2009-10-07",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 4,
             "title": "Hammered",
             "airDate": "2009-10-14",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 5,
             "title": "Hardwired",
             "airDate": "2009-10-21",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 6,
             "title": "Spooked",
             "airDate": "2009-10-28",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 7,
             "title": "Users",
             "airDate": "2009-11-04",
-            "rating": 7.8
+            "rating": 8
           },
           {
             "episode": 8,
             "title": "Turmoil",
             "airDate": "2009-11-11",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 9,
             "title": "Perverted",
             "airDate": "2009-11-18",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 10,
             "title": "Anchor",
             "airDate": "2009-12-09",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 11,
             "title": "Quickie",
             "airDate": "2010-01-06",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 12,
@@ -64171,19 +64172,19 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "P.C.",
             "airDate": "2010-03-03",
-            "rating": 7.5
+            "rating": 7.7
           },
           {
             "episode": 14,
             "title": "Savior",
             "airDate": "2010-03-03",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 15,
             "title": "Confidential",
             "airDate": "2010-03-10",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 16,
@@ -64195,13 +64196,13 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Disabled",
             "airDate": "2010-03-24",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 18,
             "title": "Bedtime",
             "airDate": "2010-03-31",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 19,
@@ -64213,19 +64214,19 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Beef",
             "airDate": "2010-04-21",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 21,
             "title": "Torch",
             "airDate": "2010-04-28",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 22,
             "title": "Ace",
             "airDate": "2010-05-05",
-            "rating": 8.1
+            "rating": 8.3
           },
           {
             "episode": 23,
@@ -64248,91 +64249,91 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Locum",
             "airDate": "2010-09-22",
-            "rating": 8.5
+            "rating": 8.7
           },
           {
             "episode": 2,
             "title": "Bullseye",
             "airDate": "2010-09-22",
-            "rating": 8.3
+            "rating": 8.5
           },
           {
             "episode": 3,
             "title": "Behave",
             "airDate": "2010-09-29",
-            "rating": 8.9
+            "rating": 9
           },
           {
             "episode": 4,
             "title": "Merchandise",
             "airDate": "2010-10-06",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 5,
             "title": "Wet",
             "airDate": "2010-10-13",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 6,
             "title": "Branded",
             "airDate": "2010-10-20",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 7,
             "title": "Trophy",
             "airDate": "2010-11-03",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 8,
             "title": "Penetration",
             "airDate": "2010-11-10",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 9,
             "title": "Gray",
             "airDate": "2010-11-17",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 10,
             "title": "Rescue",
             "airDate": "2010-12-01",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 11,
             "title": "Pop",
             "airDate": "2011-01-05",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 12,
             "title": "Possessed",
             "airDate": "2011-01-05",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 13,
             "title": "Mask",
             "airDate": "2011-01-12",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 14,
             "title": "Dirty",
             "airDate": "2011-01-19",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 15,
             "title": "Flight",
             "airDate": "2011-02-02",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 16,
@@ -64344,19 +64345,19 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Pursuit",
             "airDate": "2011-02-16",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 18,
             "title": "Bully",
             "airDate": "2011-02-23",
-            "rating": 7.8
+            "rating": 8
           },
           {
             "episode": 19,
             "title": "Bombshell",
             "airDate": "2011-03-23",
-            "rating": 7.6
+            "rating": 7.8
           },
           {
             "episode": 20,
@@ -64368,25 +64369,25 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Reparations",
             "airDate": "2011-04-06",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 22,
             "title": "Bang",
             "airDate": "2011-05-04",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 23,
             "title": "Delinquent",
             "airDate": "2011-05-11",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 24,
             "title": "Smoked",
             "airDate": "2011-05-18",
-            "rating": 8.5
+            "rating": 8.6
           }
         ]
       },
@@ -64397,19 +64398,19 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Scorched Earth",
             "airDate": "2011-09-21",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 2,
             "title": "Personal Fouls",
             "airDate": "2011-09-28",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 3,
             "title": "Blood Brothers",
             "airDate": "2011-10-05",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 4,
@@ -64421,19 +64422,19 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Missing Pieces",
             "airDate": "2011-10-19",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 6,
             "title": "True Believers",
             "airDate": "2011-11-02",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 7,
             "title": "Russian Brides",
             "airDate": "2011-11-09",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 8,
@@ -64445,7 +64446,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Lost Traveler",
             "airDate": "2011-11-30",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 10,
@@ -64457,13 +64458,13 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Theatre Tricks",
             "airDate": "2012-01-11",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 12,
             "title": "Official Story",
             "airDate": "2012-01-18",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 13,
@@ -64475,7 +64476,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Home Invasions",
             "airDate": "2012-02-15",
-            "rating": 7.9
+            "rating": 8.1
           },
           {
             "episode": 15,
@@ -64487,7 +64488,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Child's Welfare",
             "airDate": "2012-02-29",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 17,
@@ -64499,31 +64500,31 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Valentine's Day",
             "airDate": "2012-04-18",
-            "rating": 7.5
+            "rating": 7.7
           },
           {
             "episode": 19,
             "title": "Street Revenge",
             "airDate": "2012-04-25",
-            "rating": 7.2
+            "rating": 7.4
           },
           {
             "episode": 20,
             "title": "Father Dearest",
             "airDate": "2012-05-02",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 21,
             "title": "Learning Curve",
             "airDate": "2012-05-09",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 22,
             "title": "Strange Beauty",
             "airDate": "2012-05-16",
-            "rating": 7.6
+            "rating": 7.8
           },
           {
             "episode": 23,
@@ -64540,7 +64541,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Lost Reputation",
             "airDate": "2012-09-26",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 2,
@@ -64558,31 +64559,31 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Acceptable Loss",
             "airDate": "2012-10-17",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 5,
             "title": "Manhattan Vigil",
             "airDate": "2012-10-24",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 6,
             "title": "Friending Emily",
             "airDate": "2012-10-31",
-            "rating": 7.8
+            "rating": 8
           },
           {
             "episode": 7,
             "title": "Vanity's Bonfire",
             "airDate": "2012-11-14",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 8,
             "title": "Lessons Learned",
             "airDate": "2012-11-21",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 9,
@@ -64594,25 +64595,25 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Presumed Guilty",
             "airDate": "2013-01-02",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 11,
             "title": "Beautiful Frame",
             "airDate": "2013-01-09",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 12,
             "title": "Criminal Hatred",
             "airDate": "2013-01-30",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 13,
             "title": "Monster's Legacy",
             "airDate": "2013-02-06",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 14,
@@ -64648,19 +64649,19 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Born Psychopath",
             "airDate": "2013-04-03",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 20,
             "title": "Girl Dishonored",
             "airDate": "2013-04-24",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 21,
             "title": "Traumatic Wound",
             "airDate": "2013-05-01",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 22,
@@ -64672,13 +64673,13 @@ window._SERIES_DATA = [
             "episode": 23,
             "title": "Brief Interlude",
             "airDate": "2013-05-15",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 24,
             "title": "Her Negotiation",
             "airDate": "2013-05-22",
-            "rating": 8.7
+            "rating": 8.8
           }
         ]
       },
@@ -64695,85 +64696,85 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Imprisoned Lives",
             "airDate": "2013-09-25",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 3,
             "title": "American Tragedy",
             "airDate": "2013-10-02",
-            "rating": 7.5
+            "rating": 7.7
           },
           {
             "episode": 4,
             "title": "Internal Affairs",
             "airDate": "2013-10-09",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 5,
             "title": "Wonderland Story",
             "airDate": "2013-10-16",
-            "rating": 8
+            "rating": 8.2
           },
           {
             "episode": 6,
             "title": "October Surprise",
             "airDate": "2013-10-23",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 7,
             "title": "Dissonant Voices",
             "airDate": "2013-11-06",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 8,
             "title": "Military Justice",
             "airDate": "2013-11-13",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 9,
             "title": "Rapist Anonymous",
             "airDate": "2013-11-20",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 10,
             "title": "Psycho/Therapist",
             "airDate": "2014-01-08",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 11,
             "title": "Amaro's One-Eighty",
             "airDate": "2014-01-15",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 12,
             "title": "Jersey Breakdown",
             "airDate": "2014-01-22",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 13,
             "title": "Betrayal's Climax",
             "airDate": "2014-01-29",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 14,
             "title": "Wednesday's Child",
             "airDate": "2014-02-05",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 15,
             "title": "Comic Perversion",
             "airDate": "2014-02-26",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 16,
@@ -64785,49 +64786,49 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Gambler's Fallacy",
             "airDate": "2014-03-12",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 18,
             "title": "Criminal Stories",
             "airDate": "2014-03-19",
-            "rating": 7.6
+            "rating": 7.8
           },
           {
             "episode": 19,
             "title": "Downloaded Child",
             "airDate": "2014-04-02",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 20,
             "title": "Beast's Obsession",
             "airDate": "2014-04-09",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 21,
             "title": "Post-Mortem Blues",
             "airDate": "2014-04-30",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 22,
             "title": "Reasonable Doubt",
             "airDate": "2014-05-07",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 23,
             "title": "Thought Criminal",
             "airDate": "2014-05-14",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 24,
             "title": "Spring Awakening",
             "airDate": "2014-05-21",
-            "rating": 8.3
+            "rating": 8.4
           }
         ]
       },
@@ -64838,7 +64839,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Girls Disappeared",
             "airDate": "2014-09-24",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 2,
@@ -64850,19 +64851,19 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Producer's Backend",
             "airDate": "2014-10-08",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 4,
             "title": "Holden's Manifesto",
             "airDate": "2014-10-15",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 5,
             "title": "Pornstar's Requiem",
             "airDate": "2014-10-22",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 6,
@@ -64898,7 +64899,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Agent Provocateur",
             "airDate": "2015-01-14",
-            "rating": 7.4
+            "rating": 7.6
           },
           {
             "episode": 12,
@@ -64916,13 +64917,13 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Intimidation Game",
             "airDate": "2015-02-11",
-            "rating": 4.7
+            "rating": 4.4
           },
           {
             "episode": 15,
             "title": "Undercover Mother",
             "airDate": "2015-02-18",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 16,
@@ -64940,7 +64941,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Devastating Story",
             "airDate": "2015-04-01",
-            "rating": 6.7
+            "rating": 6.8
           },
           {
             "episode": 19,
@@ -64964,7 +64965,7 @@ window._SERIES_DATA = [
             "episode": 22,
             "title": "Parent's Nightmare",
             "airDate": "2015-05-13",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 23,
@@ -64993,7 +64994,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Transgender Bridge",
             "airDate": "2015-09-30",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 4,
@@ -65005,13 +65006,13 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Community Policing",
             "airDate": "2015-10-14",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 6,
             "title": "Maternal Instincts",
             "airDate": "2015-10-21",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 7,
@@ -65023,19 +65024,19 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Melancholy Pursuit",
             "airDate": "2015-11-11",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 9,
             "title": "Depravity Standard",
             "airDate": "2015-11-18",
-            "rating": 7.2
+            "rating": 7.1
           },
           {
             "episode": 10,
             "title": "Catfishing Teacher",
             "airDate": "2016-01-06",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 11,
@@ -65047,19 +65048,19 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "A Misunderstanding",
             "airDate": "2016-01-20",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 13,
             "title": "Forty-One Witnesses",
             "airDate": "2016-02-03",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 14,
             "title": "Nationwide Manhunt",
             "airDate": "2016-02-10",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 15,
@@ -65071,25 +65072,25 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Star-Struck Victims",
             "airDate": "2016-02-24",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 17,
             "title": "Manhattan Transfer",
             "airDate": "2016-03-02",
-            "rating": 8.6
+            "rating": 8.7
           },
           {
             "episode": 18,
             "title": "Unholiest Alliance",
             "airDate": "2016-03-23",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 19,
             "title": "Sheltered Outcasts",
             "airDate": "2016-03-30",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 20,
@@ -65101,7 +65102,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Assaulting Reality",
             "airDate": "2016-05-11",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 22,
@@ -65124,7 +65125,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Terrorized",
             "airDate": "2016-09-21",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 2,
@@ -65136,25 +65137,25 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Imposter",
             "airDate": "2016-10-05",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 4,
             "title": "Heightened Emotions",
             "airDate": "2016-10-12",
-            "rating": 6.8
+            "rating": 6.9
           },
           {
             "episode": 5,
             "title": "Rape Interrupted",
             "airDate": "2016-10-26",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 6,
             "title": "Broken Rhymes",
             "airDate": "2016-11-09",
-            "rating": 7.4
+            "rating": 7.6
           },
           {
             "episode": 7,
@@ -65166,7 +65167,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Chasing Theo",
             "airDate": "2017-01-11",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 9,
@@ -65178,61 +65179,61 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Motherly Love",
             "airDate": "2017-02-08",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 11,
             "title": "Great Expectations",
             "airDate": "2017-02-15",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 12,
             "title": "No Surrender",
             "airDate": "2017-02-22",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 13,
             "title": "Genes",
             "airDate": "2017-03-22",
-            "rating": 7.5
+            "rating": 7.7
           },
           {
             "episode": 14,
             "title": "Net Worth",
             "airDate": "2017-03-29",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 15,
             "title": "Know It All",
             "airDate": "2017-04-05",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 16,
             "title": "The Newsroom",
             "airDate": "2017-04-26",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 17,
             "title": "Real Fake News",
             "airDate": "2017-05-03",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 18,
             "title": "Spellbound",
             "airDate": "2017-05-10",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 19,
             "title": "Conversion",
             "airDate": "2017-05-17",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 20,
@@ -65255,49 +65256,49 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Gone Fishin'",
             "airDate": "2017-09-27",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 2,
             "title": "Mood",
             "airDate": "2017-10-04",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 3,
             "title": "Contrapasso",
             "airDate": "2017-10-11",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 4,
             "title": "No Good Reason",
             "airDate": "2017-10-18",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 5,
             "title": "Complicated",
             "airDate": "2017-10-25",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 6,
             "title": "Unintended Consequences",
             "airDate": "2017-11-01",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 7,
             "title": "Something Happened",
             "airDate": "2017-11-29",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 8,
             "title": "Intent",
             "airDate": "2017-12-06",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 9,
@@ -65315,7 +65316,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Flight Risk",
             "airDate": "2018-01-17",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 12,
@@ -65333,13 +65334,13 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Chasing Demons",
             "airDate": "2018-02-28",
-            "rating": 7.8
+            "rating": 8
           },
           {
             "episode": 15,
             "title": "In Loco Parentis",
             "airDate": "2018-03-07",
-            "rating": 7
+            "rating": 7.2
           },
           {
             "episode": 16,
@@ -65351,49 +65352,49 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Send in the Clowns",
             "airDate": "2018-03-21",
-            "rating": 8.1
+            "rating": 8.3
           },
           {
             "episode": 18,
             "title": "Service",
             "airDate": "2018-04-11",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 19,
             "title": "Sunk Cost Fallacy",
             "airDate": "2018-04-18",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 20,
             "title": "The Book of Esther",
             "airDate": "2018-05-02",
-            "rating": 8.1
+            "rating": 8.3
           },
           {
             "episode": 21,
             "title": "Guardian",
             "airDate": "2018-05-09",
-            "rating": 7.9
+            "rating": 8.1
           },
           {
             "episode": 22,
             "title": "Mama",
             "airDate": "2018-05-16",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 23,
             "title": "Remember Me",
             "airDate": "2018-05-23",
-            "rating": 7.2
+            "rating": 7.4
           },
           {
             "episode": 24,
             "title": "Remember Me Too",
             "airDate": "2018-05-23",
-            "rating": 7.2
+            "rating": 7.4
           }
         ]
       },
@@ -65404,133 +65405,133 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Man Up",
             "airDate": "2018-09-27",
-            "rating": 7.9
+            "rating": 8.1
           },
           {
             "episode": 2,
             "title": "Man Down",
             "airDate": "2018-09-27",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 3,
             "title": "Zero Tolerance",
             "airDate": "2018-10-04",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 4,
             "title": "Revenge",
             "airDate": "2018-10-11",
-            "rating": 8
+            "rating": 8.2
           },
           {
             "episode": 5,
             "title": "Accredo",
             "airDate": "2018-10-18",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 6,
             "title": "Exile",
             "airDate": "2018-10-25",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 7,
             "title": "Caretaker",
             "airDate": "2018-11-01",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 8,
             "title": "Hell's Kitchen",
             "airDate": "2018-11-08",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 9,
             "title": "Mea Culpa",
             "airDate": "2018-11-15",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 10,
             "title": "Alta Kockers",
             "airDate": "2018-11-29",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 11,
             "title": "Plastic",
             "airDate": "2019-01-10",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 12,
             "title": "Dear Ben",
             "airDate": "2019-01-17",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 13,
             "title": "A Story of More Woe",
             "airDate": "2019-01-31",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 14,
             "title": "Part 33",
             "airDate": "2019-02-07",
-            "rating": 6.1
+            "rating": 6
           },
           {
             "episode": 15,
             "title": "Brothel",
             "airDate": "2019-02-14",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 16,
             "title": "Facing Demons",
             "airDate": "2019-02-21",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 17,
             "title": "Missing",
             "airDate": "2019-03-14",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 18,
             "title": "Blackout",
             "airDate": "2019-03-21",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 19,
             "title": "Dearly Beloved",
             "airDate": "2019-04-04",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 20,
             "title": "The Good Girl",
             "airDate": "2019-04-11",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 21,
             "title": "Exchange",
             "airDate": "2019-04-25",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 22,
             "title": "Diss",
             "airDate": "2019-05-02",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 23,
@@ -65553,49 +65554,49 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "I'm Going to Make You a Star",
             "airDate": "2019-09-26",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 2,
             "title": "The Darkest Journey Home",
             "airDate": "2019-10-03",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 3,
             "title": "Down Low in Hell's Kitchen",
             "airDate": "2019-10-10",
-            "rating": 7.6
+            "rating": 7.8
           },
           {
             "episode": 4,
             "title": "The Burden of Our Choices",
             "airDate": "2019-10-17",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 5,
             "title": "At Midnight in Manhattan",
             "airDate": "2019-10-24",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 6,
             "title": "Murdered at a Bad Address",
             "airDate": "2019-10-31",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 7,
             "title": "Counselor, It's Chinatown",
             "airDate": "2019-11-07",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 8,
             "title": "We Dream of Machine Elves",
             "airDate": "2019-11-14",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 9,
@@ -65607,7 +65608,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Must Be Held Accountable",
             "airDate": "2020-01-09",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 11,
@@ -65625,7 +65626,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Redemption in Her Corner",
             "airDate": "2020-02-06",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 14,
@@ -65637,13 +65638,13 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Swimming with the Sharks",
             "airDate": "2020-02-20",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 16,
             "title": "Eternal Relief From Pain",
             "airDate": "2020-02-27",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 17,
@@ -65678,19 +65679,19 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Guardians and Gladiators",
             "airDate": "2020-11-12",
-            "rating": 5.8
+            "rating": 5.9
           },
           {
             "episode": 2,
             "title": "The Ballad of Dwight and Irena",
             "airDate": "2020-11-19",
-            "rating": 7.5
+            "rating": 7.7
           },
           {
             "episode": 3,
             "title": "Remember Me in Quarantine",
             "airDate": "2020-12-03",
-            "rating": 7.3
+            "rating": 7.5
           },
           {
             "episode": 4,
@@ -65702,7 +65703,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Turn Me On Take Me Private",
             "airDate": "2021-01-14",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 6,
@@ -65714,13 +65715,13 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Hunt, Trap, Rape and Release",
             "airDate": "2021-02-18",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 8,
             "title": "The Only Way Out Is Through",
             "airDate": "2021-02-25",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 9,
@@ -65732,13 +65733,13 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Welcome to the Pedo Motel",
             "airDate": "2021-04-08",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 11,
             "title": "Our Words Will Not Be Heard",
             "airDate": "2021-04-15",
-            "rating": 6.7
+            "rating": 6.8
           },
           {
             "episode": 12,
@@ -65750,7 +65751,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Trick-Rolled at the Moulin'",
             "airDate": "2021-05-13",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 14,
@@ -65762,13 +65763,13 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "What Can Happen in the Dark",
             "airDate": "2021-05-27",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 16,
             "title": "Wolves in Sheep's Clothing",
             "airDate": "2021-06-03",
-            "rating": 8.3
+            "rating": 8.4
           }
         ]
       },
@@ -65779,37 +65780,37 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "And the Empire Strikes Back",
             "airDate": "2021-09-23",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 2,
             "title": "Never Turn Your Back on Them",
             "airDate": "2021-09-23",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 3,
             "title": "I Thought You Were on My Side",
             "airDate": "2021-09-30",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 4,
             "title": "One More Tale of Two Victims",
             "airDate": "2021-10-07",
-            "rating": 8
+            "rating": 8.2
           },
           {
             "episode": 5,
             "title": "Fast Times @TheWheelhouse",
             "airDate": "2021-10-14",
-            "rating": 7.8
+            "rating": 8
           },
           {
             "episode": 6,
             "title": "The Five Hundredth Episode",
             "airDate": "2021-10-21",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 7,
@@ -65821,25 +65822,25 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Nightmares in Drill City",
             "airDate": "2021-11-11",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 9,
             "title": "People vs Richard Wheatley",
             "airDate": "2021-12-09",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 10,
             "title": "Silent Night, Hateful Night",
             "airDate": "2022-01-06",
-            "rating": 7.9
+            "rating": 8.1
           },
           {
             "episode": 11,
             "title": "Burning With Rage Forever",
             "airDate": "2022-01-13",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 12,
@@ -65851,7 +65852,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "If I Knew Then What I Know Now",
             "airDate": "2022-02-24",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 14,
@@ -65863,49 +65864,49 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Promising Young Gentlemen",
             "airDate": "2022-03-10",
-            "rating": 7.8
+            "rating": 8
           },
           {
             "episode": 16,
             "title": "Sorry If It Got Weird for You",
             "airDate": "2022-03-17",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 17,
             "title": "Once Upon a Time in El Barrio",
             "airDate": "2022-04-07",
-            "rating": 8.1
+            "rating": 8.3
           },
           {
             "episode": 18,
             "title": "Eighteen Wheels a Predator",
             "airDate": "2022-04-14",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 19,
             "title": "Tangled Strands of Justice",
             "airDate": "2022-04-28",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 20,
             "title": "Did You Believe in Miracles?",
             "airDate": "2022-05-05",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 21,
             "title": "Confess Your Sins to Be Free",
             "airDate": "2022-05-12",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 22,
             "title": "A Final Call At Forlini's Bar",
             "airDate": "2022-05-19",
-            "rating": 8.4
+            "rating": 8.5
           }
         ]
       },
@@ -65916,13 +65917,13 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Gimme Shelter, Part II",
             "airDate": "2022-09-22",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 2,
             "title": "The One You Feed",
             "airDate": "2022-09-29",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 3,
@@ -65940,37 +65941,37 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Breakwater",
             "airDate": "2022-10-27",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 6,
             "title": "Controlled Burn",
             "airDate": "2022-11-03",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 7,
             "title": "Dead Ball",
             "airDate": "2022-11-10",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 8,
             "title": "A Better Person",
             "airDate": "2022-11-17",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 9,
             "title": "And a Trauma in a Pear Tree",
             "airDate": "2022-12-08",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 10,
             "title": "Jumped In",
             "airDate": "2023-01-05",
-            "rating": 7.9
+            "rating": 8.1
           },
           {
             "episode": 11,
@@ -66024,7 +66025,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Bend the Law",
             "airDate": "2023-04-27",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 20,
@@ -66036,7 +66037,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Bad Things",
             "airDate": "2023-05-11",
-            "rating": 8.1
+            "rating": 8.3
           },
           {
             "episode": 22,
@@ -66053,13 +66054,13 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Tunnel Blind",
             "airDate": "2024-01-18",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 2,
             "title": "Truth Embargo",
             "airDate": "2024-01-25",
-            "rating": 4.4
+            "rating": 4.2
           },
           {
             "episode": 3,
@@ -66071,7 +66072,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Duty to Report",
             "airDate": "2024-02-08",
-            "rating": 7.9
+            "rating": 8.2
           },
           {
             "episode": 5,
@@ -66119,13 +66120,13 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Marauder",
             "airDate": "2024-05-09",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 13,
             "title": "Duty To Hope",
             "airDate": "2024-05-16",
-            "rating": 7.7
+            "rating": 7.8
           }
         ]
       },
@@ -66136,7 +66137,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Fractured",
             "airDate": "2024-10-03",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 2,
@@ -66184,7 +66185,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "First Light",
             "airDate": "2025-01-16",
-            "rating": 7.6
+            "rating": 7.9
           },
           {
             "episode": 10,
@@ -66202,7 +66203,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Calculated",
             "airDate": "2025-02-13",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 13,
@@ -66220,7 +66221,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Undertow",
             "airDate": "2025-03-13",
-            "rating": 7.1
+            "rating": 7
           },
           {
             "episode": 16,
@@ -66250,7 +66251,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Shock Collar",
             "airDate": "2025-05-01",
-            "rating": 8
+            "rating": 8.3
           },
           {
             "episode": 21,
@@ -66369,25 +66370,25 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Deep Under",
             "airDate": "2026-04-09",
-            "rating": 7.8
+            "rating": 7.7
           },
           {
             "episode": 18,
             "title": "Gimmick",
             "airDate": "2026-04-23",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 19,
             "title": "Impropriety",
             "airDate": "2026-04-30",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 20,
             "title": "Old Friends",
             "airDate": "2026-05-07",
-            "rating": 7.4
+            "rating": 7.3
           },
           {
             "episode": 21,
@@ -66515,19 +66516,19 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Fun Dungeon Face Off",
             "airDate": "2014-04-14",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 2,
             "title": "Pretty Great Day with a Girl",
             "airDate": "2014-04-14",
-            "rating": 7.9
+            "rating": 7.8
           },
           {
             "episode": 3,
             "title": "Money Broom Wizard",
             "airDate": "2014-04-21",
-            "rating": 8.4
+            "rating": 8.1
           },
           {
             "episode": 4,
@@ -66551,13 +66552,13 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Jeff's New Toy",
             "airDate": "2014-05-12",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 8,
             "title": "Dinner Party",
             "airDate": "2014-06-12",
-            "rating": 7.8
+            "rating": 7.5
           },
           {
             "episode": 9,
@@ -66569,13 +66570,13 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Dollar Hunt",
             "airDate": "2014-06-26",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 11,
             "title": "Zoo",
             "airDate": "2014-07-03",
-            "rating": 7.9
+            "rating": 7.5
           },
           {
             "episode": 12,
@@ -66587,13 +66588,13 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Man of the House",
             "airDate": "2014-07-17",
-            "rating": 7.7
+            "rating": 7.4
           },
           {
             "episode": 14,
             "title": "Puddle Eyes",
             "airDate": "2014-07-24",
-            "rating": 7.5
+            "rating": 7.8
           },
           {
             "episode": 15,
@@ -66623,7 +66624,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Lizard Day Afternoon",
             "airDate": "2014-10-09",
-            "rating": 7.5
+            "rating": 7.4
           },
           {
             "episode": 20,
@@ -66641,19 +66642,19 @@ window._SERIES_DATA = [
             "episode": 22,
             "title": "Belson's Sleepover",
             "airDate": "2014-10-30",
-            "rating": 7.8
+            "rating": 7.5
           },
           {
             "episode": 23,
             "title": "Too Gross for Comfort",
             "airDate": "2014-11-06",
-            "rating": 7.5
+            "rating": 7.3
           },
           {
             "episode": 24,
             "title": "Pilot Expansion",
             "airDate": "2014-11-13",
-            "rating": 8.2
+            "rating": 7.9
           },
           {
             "episode": 25,
@@ -66689,13 +66690,13 @@ window._SERIES_DATA = [
             "episode": 30,
             "title": "Suspended",
             "airDate": "2015-04-06",
-            "rating": 7.4
+            "rating": 7.2
           },
           {
             "episode": 31,
             "title": "Turtle Hats",
             "airDate": "2015-04-07",
-            "rating": 7.5
+            "rating": 7.3
           },
           {
             "episode": 32,
@@ -66719,13 +66720,13 @@ window._SERIES_DATA = [
             "episode": 35,
             "title": "Straight Illin",
             "airDate": "2015-04-16",
-            "rating": 5.9
+            "rating": 5.7
           },
           {
             "episode": 36,
             "title": "Dust Buddies",
             "airDate": "2015-04-23",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 37,
@@ -66755,7 +66756,7 @@ window._SERIES_DATA = [
             "episode": 41,
             "title": "Lil' Buddy",
             "airDate": "2015-07-20",
-            "rating": 8.9
+            "rating": 8.5
           },
           {
             "episode": 42,
@@ -66773,7 +66774,7 @@ window._SERIES_DATA = [
             "episode": 44,
             "title": "Water Park!",
             "airDate": "2015-07-23",
-            "rating": 7.9
+            "rating": 7.5
           },
           {
             "episode": 45,
@@ -66815,7 +66816,7 @@ window._SERIES_DATA = [
             "episode": 51,
             "title": "Spooky Boo",
             "airDate": "2015-10-27",
-            "rating": 7.4
+            "rating": 7.1
           }
         ]
       },
@@ -66832,7 +66833,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Lost Playground",
             "airDate": "2016-01-18",
-            "rating": 7.6
+            "rating": 7.3
           },
           {
             "episode": 3,
@@ -66844,7 +66845,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Freedom Cactus",
             "airDate": "2016-01-20",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 5,
@@ -66856,7 +66857,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Escape from Beyond the Cosmic",
             "airDate": "2016-01-22",
-            "rating": 7.8
+            "rating": 7.5
           },
           {
             "episode": 7,
@@ -66868,7 +66869,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Time Crimes",
             "airDate": "2016-02-04",
-            "rating": 7.9
+            "rating": 7.4
           },
           {
             "episode": 9,
@@ -66886,25 +66887,25 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Field Trippin'",
             "airDate": "2016-02-25",
-            "rating": 7.5
+            "rating": 7.1
           },
           {
             "episode": 12,
             "title": "Ice Cream Hunt",
             "airDate": "2016-03-03",
-            "rating": 8.2
+            "rating": 7.6
           },
           {
             "episode": 13,
             "title": "Company Man",
             "airDate": "2016-03-10",
-            "rating": 7.8
+            "rating": 7.6
           },
           {
             "episode": 14,
             "title": "Stump Brothers",
             "airDate": "2016-03-17",
-            "rating": 7.5
+            "rating": 7.1
           },
           {
             "episode": 15,
@@ -66934,7 +66935,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Skater Sumo",
             "airDate": "2016-04-28",
-            "rating": 8
+            "rating": 8.3
           },
           {
             "episode": 20,
@@ -66970,7 +66971,7 @@ window._SERIES_DATA = [
             "episode": 25,
             "title": "Space Race",
             "airDate": "2016-06-09",
-            "rating": 7.7
+            "rating": 7.2
           },
           {
             "episode": 26,
@@ -66982,7 +66983,7 @@ window._SERIES_DATA = [
             "episode": 27,
             "title": "Bucky and the Howl",
             "airDate": "2016-06-23",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 28,
@@ -67006,13 +67007,13 @@ window._SERIES_DATA = [
             "episode": 31,
             "title": "Tree of Life",
             "airDate": "2016-11-04",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 32,
             "title": "Capture the Flag",
             "airDate": "2016-11-14",
-            "rating": 9.1
+            "rating": 9.3
           },
           {
             "episode": 33,
@@ -67024,7 +67025,7 @@ window._SERIES_DATA = [
             "episode": 34,
             "title": "Fishing Trip",
             "airDate": "2016-11-16",
-            "rating": 8.1
+            "rating": 7.9
           },
           {
             "episode": 35,
@@ -67036,13 +67037,13 @@ window._SERIES_DATA = [
             "episode": 36,
             "title": "Motel",
             "airDate": "2016-11-18",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 38,
             "title": "Merry Moochmas",
             "airDate": "2016-12-01",
-            "rating": 8.1
+            "rating": 7.7
           },
           {
             "episode": 39,
@@ -67058,7 +67059,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Sumo Goes West",
             "airDate": "2017-02-10",
-            "rating": 8.5
+            "rating": 8.4
           },
           {
             "episode": 2,
@@ -67076,7 +67077,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Rock Show",
             "airDate": "2017-02-24",
-            "rating": 7.7
+            "rating": 7.9
           },
           {
             "episode": 5,
@@ -67100,7 +67101,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Clarence's Stormy Sleepover Episode 4: Dingus and McNobrain",
             "airDate": "2017-06-05",
-            "rating": 8.8
+            "rating": 8.5
           },
           {
             "episode": 9,
@@ -67118,25 +67119,25 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Pool's Out for Summer",
             "airDate": "2017-06-06",
-            "rating": 7.5
+            "rating": 7.2
           },
           {
             "episode": 12,
             "title": "The Big Game",
             "airDate": "2017-06-07",
-            "rating": 7.3
+            "rating": 7.7
           },
           {
             "episode": 13,
             "title": "The Boxcurse Children",
             "airDate": "2017-06-08",
-            "rating": 7.7
+            "rating": 8.1
           },
           {
             "episode": 14,
             "title": "Karate Mom",
             "airDate": "2017-06-12",
-            "rating": 7.8
+            "rating": 8
           },
           {
             "episode": 15,
@@ -67148,19 +67149,19 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Public Radio",
             "airDate": "2017-06-14",
-            "rating": 7.6
+            "rating": 8.1
           },
           {
             "episode": 17,
             "title": "Chad and the Marathon",
             "airDate": "2017-06-15",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 18,
             "title": "Officer Moody",
             "airDate": "2017-06-19",
-            "rating": 6.7
+            "rating": 7
           },
           {
             "episode": 19,
@@ -67178,7 +67179,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Just Wait in the Car",
             "airDate": "2017-06-22",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 22,
@@ -67190,7 +67191,7 @@ window._SERIES_DATA = [
             "episode": 23,
             "title": "Big Trouble in Little Aberdale",
             "airDate": "2017-06-27",
-            "rating": 7.7
+            "rating": 8
           },
           {
             "episode": 24,
@@ -67202,7 +67203,7 @@ window._SERIES_DATA = [
             "episode": 25,
             "title": "The Trade",
             "airDate": "2017-06-29",
-            "rating": 7.6
+            "rating": 8.2
           },
           {
             "episode": 26,
@@ -67220,7 +67221,7 @@ window._SERIES_DATA = [
             "episode": 28,
             "title": "A Sumoful Mind",
             "airDate": "2018-06-10",
-            "rating": 7.8
+            "rating": 8
           },
           {
             "episode": 29,
@@ -67238,7 +67239,7 @@ window._SERIES_DATA = [
             "episode": 31,
             "title": "Talent Show",
             "airDate": "2018-06-10",
-            "rating": 7.1
+            "rating": 8
           },
           {
             "episode": 32,
@@ -67256,19 +67257,19 @@ window._SERIES_DATA = [
             "episode": 34,
             "title": "Trampoline",
             "airDate": "2018-06-17",
-            "rating": 7.3
+            "rating": 7.8
           },
           {
             "episode": 35,
             "title": "Clarence the Movie",
             "airDate": "2018-06-17",
-            "rating": 7.8
+            "rating": 8.1
           },
           {
             "episode": 36,
             "title": "Belson Gets a Girlfriend",
             "airDate": "2018-06-17",
-            "rating": 7.1
+            "rating": 7.5
           },
           {
             "episode": 37,
@@ -67286,13 +67287,13 @@ window._SERIES_DATA = [
             "episode": 39,
             "title": "Video Store",
             "airDate": "2018-06-24",
-            "rating": 8.1
+            "rating": 8.3
           },
           {
             "episode": 40,
             "title": "Anywhere but Sumo",
             "airDate": "2018-06-24",
-            "rating": 8.5
+            "rating": 8.4
           }
         ]
       }
@@ -67340,7 +67341,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Tiger Trails",
             "airDate": "2013-09-02",
-            "rating": 7.1
+            "rating": 8.3
           },
           {
             "episode": 3,
@@ -67352,7 +67353,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Funny Face",
             "airDate": "2013-09-09",
-            "rating": 6.8
+            "rating": 5.1
           },
           {
             "episode": 5,
@@ -67394,7 +67395,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Afraid of the Dark",
             "airDate": "2013-10-21",
-            "rating": 7.7
+            "rating": 7.5
           },
           {
             "episode": 12,
@@ -67406,7 +67407,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Locked Out",
             "airDate": "2013-11-12",
-            "rating": 7.7
+            "rating": 7.5
           },
           {
             "episode": 14,
@@ -67478,7 +67479,7 @@ window._SERIES_DATA = [
             "episode": 25,
             "title": "Bad Morning",
             "airDate": "2014-03-11",
-            "rating": 7.3
+            "rating": 6.9
           },
           {
             "episode": 26,
@@ -67610,7 +67611,7 @@ window._SERIES_DATA = [
             "episode": 47,
             "title": "Big Trouble for Tiny Miracle",
             "airDate": "2015-01-22",
-            "rating": 7.3
+            "rating": 8
           },
           {
             "episode": 48,
@@ -67759,7 +67760,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Uncle Grandpa Babies",
             "airDate": "2015-08-20",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 20,
@@ -67925,7 +67926,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Except for Cooper",
             "airDate": "2016-06-04",
-            "rating": 6.1
+            "rating": 5.9
           },
           {
             "episode": 21,
@@ -67949,7 +67950,7 @@ window._SERIES_DATA = [
             "episode": 24,
             "title": "G'day Mornin'",
             "airDate": "2016-01-27",
-            "rating": 5.9
+            "rating": 6.4
           },
           {
             "episode": 25,
@@ -68309,7 +68310,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Gem Glow",
             "airDate": "2013-11-04",
-            "rating": 6.9
+            "rating": 7
           },
           {
             "episode": 2,
@@ -68321,7 +68322,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Cheeseburger Backpack",
             "airDate": "2013-11-11",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 4,
@@ -68357,7 +68358,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Tiger Millionaire",
             "airDate": "2014-01-20",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 10,
@@ -68369,7 +68370,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Arcade Mania",
             "airDate": "2014-02-17",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 12,
@@ -68387,19 +68388,19 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Lars and the Cool Kids",
             "airDate": "2014-03-10",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 15,
             "title": "Onion Trade",
             "airDate": "2014-03-17",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 16,
             "title": "Steven the Sword Fighter",
             "airDate": "2014-04-09",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 17,
@@ -68441,7 +68442,7 @@ window._SERIES_DATA = [
             "episode": 23,
             "title": "Monster Buddies",
             "airDate": "2014-09-11",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 24,
@@ -68459,7 +68460,7 @@ window._SERIES_DATA = [
             "episode": 26,
             "title": "Ocean Gem",
             "airDate": "2014-09-25",
-            "rating": 9.3
+            "rating": 9.4
           },
           {
             "episode": 27,
@@ -68513,7 +68514,7 @@ window._SERIES_DATA = [
             "episode": 35,
             "title": "Lion 3: Straight to Video",
             "airDate": "2014-12-04",
-            "rating": 9.3
+            "rating": 9.4
           },
           {
             "episode": 36,
@@ -68573,7 +68574,7 @@ window._SERIES_DATA = [
             "episode": 45,
             "title": "Rose's Scabbard",
             "airDate": "2015-03-09",
-            "rating": 9.4
+            "rating": 9.5
           },
           {
             "episode": 46,
@@ -68591,7 +68592,7 @@ window._SERIES_DATA = [
             "episode": 48,
             "title": "The Return",
             "airDate": "2015-03-12",
-            "rating": 5.4
+            "rating": 5.5
           },
           {
             "episode": 49,
@@ -68626,7 +68627,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Say Uncle",
             "airDate": "2015-04-02",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 2,
@@ -68680,7 +68681,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Chille Tid",
             "airDate": "2015-06-19",
-            "rating": 8.8
+            "rating": 8.9
           },
           {
             "episode": 11,
@@ -68692,7 +68693,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Keystone Motel",
             "airDate": "2015-07-14",
-            "rating": 7.3
+            "rating": 7.5
           },
           {
             "episode": 13,
@@ -68798,7 +68799,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Same Old World",
             "airDate": "2016-05-19",
-            "rating": 8.7
+            "rating": 8.9
           },
           {
             "episode": 4,
@@ -68810,7 +68811,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Hit the Diamond",
             "airDate": "2016-06-02",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 6,
@@ -68828,13 +68829,13 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Mr. Greg",
             "airDate": "2016-07-19",
-            "rating": 9.5
+            "rating": 9.6
           },
           {
             "episode": 9,
             "title": "Too Short to Ride",
             "airDate": "2016-07-20",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 10,
@@ -68846,7 +68847,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Beach City Drift",
             "airDate": "2016-07-22",
-            "rating": 7.4
+            "rating": 7.7
           },
           {
             "episode": 12,
@@ -68864,7 +68865,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Monster Reunion",
             "airDate": "2016-07-27",
-            "rating": 8.7
+            "rating": 8.8
           },
           {
             "episode": 15,
@@ -68953,13 +68954,13 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Mindful Education",
             "airDate": "2016-08-25",
-            "rating": 9.2
+            "rating": 9.4
           },
           {
             "episode": 5,
             "title": "Future Boy Zoltron",
             "airDate": "2016-09-01",
-            "rating": 6.7
+            "rating": 6.9
           },
           {
             "episode": 6,
@@ -68995,7 +68996,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Adventures in Light Distortion",
             "airDate": "2017-01-30",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 12,
@@ -69025,13 +69026,13 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Storm in the Room",
             "airDate": "2017-02-17",
-            "rating": 9.1
+            "rating": 9.2
           },
           {
             "episode": 17,
             "title": "Rocknaldo",
             "airDate": "2017-02-24",
-            "rating": 5
+            "rating": 5.4
           },
           {
             "episode": 18,
@@ -69043,7 +69044,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Room for Ruby",
             "airDate": "2017-03-10",
-            "rating": 7.6
+            "rating": 7.8
           },
           {
             "episode": 20,
@@ -69073,7 +69074,7 @@ window._SERIES_DATA = [
             "episode": 24,
             "title": "I Am My Mom",
             "airDate": "2017-05-11",
-            "rating": 9.2
+            "rating": 9.3
           }
         ]
       },
@@ -69108,19 +69109,19 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Dewey Wins",
             "airDate": "2017-12-15",
-            "rating": 6.5
+            "rating": 6.7
           },
           {
             "episode": 6,
             "title": "Gemcation",
             "airDate": "2017-12-15",
-            "rating": 7.3
+            "rating": 7.5
           },
           {
             "episode": 7,
             "title": "Raising the Barn",
             "airDate": "2017-12-22",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 8,
@@ -69144,7 +69145,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Lars of the Stars",
             "airDate": "2018-01-05",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 12,
@@ -69228,13 +69229,13 @@ window._SERIES_DATA = [
             "episode": 25,
             "title": "Familiar",
             "airDate": "2018-12-24",
-            "rating": 8.4
+            "rating": 8.6
           },
           {
             "episode": 26,
             "title": "Together Alone",
             "airDate": "2018-12-31",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 27,
@@ -69246,7 +69247,7 @@ window._SERIES_DATA = [
             "episode": 28,
             "title": "Change Your Mind",
             "airDate": "2019-01-21",
-            "rating": 9.5
+            "rating": 9.6
           }
         ]
       }
@@ -69285,7 +69286,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Little Homeschool",
             "airDate": "2019-12-07",
-            "rating": 7.9
+            "rating": 8.1
           },
           {
             "episode": 2,
@@ -69309,7 +69310,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Bluebird",
             "airDate": "2019-12-14",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 6,
@@ -69333,7 +69334,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Little Graduation",
             "airDate": "2019-12-28",
-            "rating": 7.9
+            "rating": 7.8
           },
           {
             "episode": 10,
@@ -69399,7 +69400,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "The Future",
             "airDate": "2020-03-27",
-            "rating": 9
+            "rating": 8.9
           }
         ]
       }
@@ -70593,7 +70594,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Wanheda: Part One",
             "airDate": "2016-01-21",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 2,
@@ -70617,7 +70618,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Hakeldama",
             "airDate": "2016-02-18",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 6,
@@ -70629,13 +70630,13 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Thirteen",
             "airDate": "2016-03-03",
-            "rating": 7
+            "rating": 6.9
           },
           {
             "episode": 8,
             "title": "Terms and Conditions",
             "airDate": "2016-03-10",
-            "rating": 7
+            "rating": 6.9
           },
           {
             "episode": 9,
@@ -70665,7 +70666,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "Join or Die",
             "airDate": "2016-04-28",
-            "rating": 7.6
+            "rating": 7.5
           },
           {
             "episode": 14,
@@ -70706,7 +70707,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "The Four Horsemen",
             "airDate": "2017-02-15",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 4,
@@ -70801,7 +70802,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Shifting Sands",
             "airDate": "2018-05-22",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 6,
@@ -70825,7 +70826,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Sic Semper Tyrannis",
             "airDate": "2018-07-10",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 10,
@@ -70860,7 +70861,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Sanctum",
             "airDate": "2019-04-30",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 2,
@@ -70932,7 +70933,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "The Blood of Sanctum",
             "airDate": "2019-08-06",
-            "rating": 8
+            "rating": 8.1
           }
         ]
       },
@@ -70943,7 +70944,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "From the Ashes",
             "airDate": "2020-05-20",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 2,
@@ -70967,7 +70968,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Welcome to Bardo",
             "airDate": "2020-06-17",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 6,
@@ -70979,7 +70980,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "The Queen's Gambit",
             "airDate": "2020-07-01",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 8,
@@ -70991,7 +70992,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "The Flock",
             "airDate": "2020-07-15",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 10,
@@ -71009,7 +71010,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "The Stranger",
             "airDate": "2020-08-19",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 13,
@@ -71027,7 +71028,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "The Dying of the Light",
             "airDate": "2020-09-23",
-            "rating": 6.4
+            "rating": 6.5
           },
           {
             "episode": 16,
@@ -71877,7 +71878,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Episode 1.3",
             "airDate": "2021-07-08",
-            "rating": 6.4
+            "rating": 6.5
           },
           {
             "episode": 4,
@@ -72008,7 +72009,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Bart Gets an F",
             "airDate": "1990-10-11",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 2,
@@ -72044,7 +72045,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Bart vs. Thanksgiving",
             "airDate": "1990-11-22",
-            "rating": 7.6
+            "rating": 7.7
           },
           {
             "episode": 8,
@@ -72056,7 +72057,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Itchy & Scratchy & Marge",
             "airDate": "1990-12-20",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 10,
@@ -72074,7 +72075,7 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "The Way We Was",
             "airDate": "1991-01-31",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 13,
@@ -72122,7 +72123,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "The War of the Simpsons",
             "airDate": "1991-05-02",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 21,
@@ -72175,7 +72176,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Like Father Like Clown",
             "airDate": "1991-10-24",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 7,
@@ -72187,13 +72188,13 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Lisa's Pony",
             "airDate": "1991-11-07",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 9,
             "title": "Saturdays of Thunder",
             "airDate": "1991-11-14",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 10,
@@ -72330,7 +72331,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Marge Gets a Job",
             "airDate": "1992-11-05",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 8,
@@ -72396,7 +72397,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "So It's Come to This: A Simpsons Clip Show",
             "airDate": "1993-04-01",
-            "rating": 6.9
+            "rating": 7
           },
           {
             "episode": 19,
@@ -72515,7 +72516,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Deep Space Homer",
             "airDate": "1994-02-24",
-            "rating": 8.8
+            "rating": 8.9
           },
           {
             "episode": 16,
@@ -72580,7 +72581,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Another Simpsons Clip Show",
             "airDate": "1994-09-25",
-            "rating": 5.7
+            "rating": 5.8
           },
           {
             "episode": 4,
@@ -72616,7 +72617,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Homer Badman",
             "airDate": "1994-11-27",
-            "rating": 9
+            "rating": 8.9
           },
           {
             "episode": 10,
@@ -72676,7 +72677,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Lisa's Wedding",
             "airDate": "1995-03-19",
-            "rating": 8.4
+            "rating": 8.3
           },
           {
             "episode": 20,
@@ -72694,7 +72695,7 @@ window._SERIES_DATA = [
             "episode": 22,
             "title": "Round Springfield",
             "airDate": "1995-04-30",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 23,
@@ -72771,7 +72772,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Sideshow Bob's Last Gleaming",
             "airDate": "1995-11-26",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 10,
@@ -72956,7 +72957,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "The Itchy & Scratchy & Poochie Show",
             "airDate": "1997-02-09",
-            "rating": 8
+            "rating": 7.9
           },
           {
             "episode": 15,
@@ -72980,7 +72981,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Homer vs. the Eighteenth Amendment",
             "airDate": "1997-03-16",
-            "rating": 8.9
+            "rating": 8.8
           },
           {
             "episode": 19,
@@ -73039,7 +73040,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "The Principal and the Pauper",
             "airDate": "1997-09-28",
-            "rating": 6.8
+            "rating": 6.9
           },
           {
             "episode": 3,
@@ -73212,7 +73213,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "When You Dish Upon a Star",
             "airDate": "1998-11-08",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 6,
@@ -73266,7 +73267,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "I'm with Cupid",
             "airDate": "1999-02-14",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 15,
@@ -73308,7 +73309,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Monty Can't Buy Me Love",
             "airDate": "1999-05-02",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 22,
@@ -73439,7 +73440,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Kill the Alligator and Run",
             "airDate": "2000-04-30",
-            "rating": 6.5
+            "rating": 6.6
           },
           {
             "episode": 20,
@@ -73492,7 +73493,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Homer vs. Dignity",
             "airDate": "2000-11-26",
-            "rating": 6.9
+            "rating": 7
           },
           {
             "episode": 6,
@@ -73528,7 +73529,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Worst Episode Ever",
             "airDate": "2001-02-04",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 12,
@@ -73576,7 +73577,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "I'm Goin' to Praise Land",
             "airDate": "2001-05-06",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 20,
@@ -73719,7 +73720,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Frying Game",
             "airDate": "2002-05-19",
-            "rating": 6.9
+            "rating": 7
           },
           {
             "episode": 22,
@@ -73862,7 +73863,7 @@ window._SERIES_DATA = [
             "episode": 22,
             "title": "Moe Baby Blues",
             "airDate": "2003-05-18",
-            "rating": 7.7
+            "rating": 7.6
           }
         ]
       },
@@ -73903,7 +73904,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Today I Am a Klown",
             "airDate": "2003-12-07",
-            "rating": 6.3
+            "rating": 6.4
           },
           {
             "episode": 7,
@@ -73957,7 +73958,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Co-Dependent's Day",
             "airDate": "2004-03-21",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 16,
@@ -73981,7 +73982,7 @@ window._SERIES_DATA = [
             "episode": 19,
             "title": "Simple Simpson",
             "airDate": "2004-05-02",
-            "rating": 7.4
+            "rating": 7.3
           },
           {
             "episode": 20,
@@ -74022,7 +74023,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Sleeping with the Enemy",
             "airDate": "2004-11-21",
-            "rating": 7.2
+            "rating": 7.1
           },
           {
             "episode": 4,
@@ -74052,7 +74053,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Homer and Ned's Hail Mary Pass",
             "airDate": "2005-02-06",
-            "rating": 6.2
+            "rating": 6.3
           },
           {
             "episode": 9,
@@ -74124,7 +74125,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Home Away from Homer",
             "airDate": "2005-05-15",
-            "rating": 7.1
+            "rating": 7
           },
           {
             "episode": 21,
@@ -74189,7 +74190,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Simpsons Christmas Stories",
             "airDate": "2005-12-18",
-            "rating": 6.7
+            "rating": 6.8
           },
           {
             "episode": 10,
@@ -74213,7 +74214,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "The Seemingly Never-Ending Story",
             "airDate": "2006-03-12",
-            "rating": 7.7
+            "rating": 7.6
           },
           {
             "episode": 14,
@@ -74231,7 +74232,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "Million Dollar Abie",
             "airDate": "2006-04-02",
-            "rating": 6.2
+            "rating": 6.3
           },
           {
             "episode": 17,
@@ -74374,13 +74375,13 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Marge Gamer",
             "airDate": "2007-04-22",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 18,
             "title": "The Boys of Bummer",
             "airDate": "2007-04-29",
-            "rating": 5.8
+            "rating": 5.9
           },
           {
             "episode": 19,
@@ -74570,7 +74571,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Homer and Lisa Exchange Cross Words",
             "airDate": "2008-11-16",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 7,
@@ -74618,7 +74619,7 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "In the Name of the Grandfather",
             "airDate": "2009-03-22",
-            "rating": 6.3
+            "rating": 6.4
           },
           {
             "episode": 15,
@@ -74636,7 +74637,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "The Good, the Sad and the Drugly",
             "airDate": "2009-04-19",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 18,
@@ -74654,7 +74655,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Four Great Women and a Manicure",
             "airDate": "2009-05-10",
-            "rating": 6.4
+            "rating": 6.5
           },
           {
             "episode": 21,
@@ -74695,7 +74696,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "The Devil Wears Nada",
             "airDate": "2009-11-15",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 6,
@@ -74719,7 +74720,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Thursdays with Abie",
             "airDate": "2010-01-03",
-            "rating": 6.6
+            "rating": 6.7
           },
           {
             "episode": 10,
@@ -74761,13 +74762,13 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "The Greatest Story Ever Doh'd",
             "airDate": "2010-03-28",
-            "rating": 5.6
+            "rating": 5.7
           },
           {
             "episode": 17,
             "title": "American History X-cellent",
             "airDate": "2010-04-11",
-            "rating": 6.5
+            "rating": 6.6
           },
           {
             "episode": 18,
@@ -74791,7 +74792,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Moe Letter Blues",
             "airDate": "2010-05-09",
-            "rating": 6.9
+            "rating": 7
           },
           {
             "episode": 22,
@@ -74838,7 +74839,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Lisa Simpson, This Isn't Your Life",
             "airDate": "2010-11-14",
-            "rating": 7.1
+            "rating": 7.2
           },
           {
             "episode": 6,
@@ -74951,13 +74952,13 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The Falcon and the D'ohman",
             "airDate": "2011-09-25",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 2,
             "title": "Bart Stops to Smell the Roosevelts",
             "airDate": "2011-10-02",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 3,
@@ -75041,7 +75042,7 @@ window._SERIES_DATA = [
             "episode": 16,
             "title": "How I Wet Your Mother",
             "airDate": "2012-03-11",
-            "rating": 7.3
+            "rating": 7.2
           },
           {
             "episode": 17,
@@ -75148,13 +75149,13 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "The Changing of the Guardian",
             "airDate": "2013-01-27",
-            "rating": 6.4
+            "rating": 6.5
           },
           {
             "episode": 12,
             "title": "Love is a Many-Splintered Thing",
             "airDate": "2013-02-10",
-            "rating": 6.1
+            "rating": 6.2
           },
           {
             "episode": 13,
@@ -75225,19 +75226,19 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Homerland",
             "airDate": "2013-09-29",
-            "rating": 6.8
+            "rating": 6.9
           },
           {
             "episode": 2,
             "title": "Treehouse of Horror XXIV",
             "airDate": "2013-10-06",
-            "rating": 6.8
+            "rating": 6.9
           },
           {
             "episode": 3,
             "title": "Four Regrettings and a Funeral",
             "airDate": "2013-11-03",
-            "rating": 6.3
+            "rating": 6.4
           },
           {
             "episode": 4,
@@ -75255,7 +75256,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "The Kid is All Right",
             "airDate": "2013-11-24",
-            "rating": 6.3
+            "rating": 6.4
           },
           {
             "episode": 7,
@@ -75279,7 +75280,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Married to the Blob",
             "airDate": "2014-01-12",
-            "rating": 6.8
+            "rating": 6.9
           },
           {
             "episode": 11,
@@ -75345,7 +75346,7 @@ window._SERIES_DATA = [
             "episode": 21,
             "title": "Pay Pal",
             "airDate": "2014-05-11",
-            "rating": 6.5
+            "rating": 6.6
           },
           {
             "episode": 22,
@@ -75428,13 +75429,13 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "The Musk Who Fell to Earth",
             "airDate": "2015-01-25",
-            "rating": 4.9
+            "rating": 5.3
           },
           {
             "episode": 13,
             "title": "Walking Big & Tall",
             "airDate": "2015-02-08",
-            "rating": 6.2
+            "rating": 6.3
           },
           {
             "episode": 14,
@@ -75476,7 +75477,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Let's Go Fly a Coot",
             "airDate": "2015-05-03",
-            "rating": 6
+            "rating": 6.1
           },
           {
             "episode": 21,
@@ -75511,7 +75512,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Puffless",
             "airDate": "2015-10-11",
-            "rating": 6.8
+            "rating": 6.9
           },
           {
             "episode": 4,
@@ -75523,7 +75524,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Treehouse of Horror XXVI",
             "airDate": "2015-10-25",
-            "rating": 6.5
+            "rating": 6.6
           },
           {
             "episode": 6,
@@ -75565,13 +75566,13 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Much Apu About Something",
             "airDate": "2016-01-17",
-            "rating": 6.4
+            "rating": 6.5
           },
           {
             "episode": 13,
             "title": "Love is in the N2-O2-Ar-CO2-Ne-He-CH4",
             "airDate": "2016-02-14",
-            "rating": 6.3
+            "rating": 6.4
           },
           {
             "episode": 14,
@@ -75654,13 +75655,13 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Treehouse of Horror XXVII",
             "airDate": "2016-10-16",
-            "rating": 6.7
+            "rating": 6.8
           },
           {
             "episode": 5,
             "title": "Trust But Clarify",
             "airDate": "2016-10-23",
-            "rating": 6.2
+            "rating": 6.3
           },
           {
             "episode": 6,
@@ -75684,7 +75685,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "The Last Traction Hero",
             "airDate": "2016-12-04",
-            "rating": 6.3
+            "rating": 6.4
           },
           {
             "episode": 10,
@@ -75708,13 +75709,13 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "The Great Phatsby, Part Two",
             "airDate": "2017-01-15",
-            "rating": 6.4
+            "rating": 6.5
           },
           {
             "episode": 14,
             "title": "Fatzcarraldo",
             "airDate": "2017-02-12",
-            "rating": 6.3
+            "rating": 6.4
           },
           {
             "episode": 15,
@@ -75875,7 +75876,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Forgive and Regret",
             "airDate": "2018-04-29",
-            "rating": 7.1
+            "rating": 7
           },
           {
             "episode": 19,
@@ -75910,7 +75911,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Heartbreak Hotel",
             "airDate": "2018-10-07",
-            "rating": 6.1
+            "rating": 6.2
           },
           {
             "episode": 3,
@@ -75946,7 +75947,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Krusty the Clown",
             "airDate": "2018-11-25",
-            "rating": 6.4
+            "rating": 6.5
           },
           {
             "episode": 9,
@@ -75976,7 +75977,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "I'm Dancing as Fat as I Can",
             "airDate": "2019-02-10",
-            "rating": 6.9
+            "rating": 6.8
           },
           {
             "episode": 14,
@@ -75988,7 +75989,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "101 Mitigations",
             "airDate": "2019-03-03",
-            "rating": 6.4
+            "rating": 6.5
           },
           {
             "episode": 16,
@@ -76059,7 +76060,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "The Fat Blue Line",
             "airDate": "2019-10-13",
-            "rating": 6.6
+            "rating": 6.5
           },
           {
             "episode": 4,
@@ -76095,7 +76096,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Todd, Todd, Why Hast Thou Forsaken Me?",
             "airDate": "2019-12-01",
-            "rating": 6.6
+            "rating": 6.5
           },
           {
             "episode": 10,
@@ -76161,7 +76162,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Warrin' Priests Part Two",
             "airDate": "2020-05-03",
-            "rating": 5.8
+            "rating": 5.7
           },
           {
             "episode": 21,
@@ -76184,7 +76185,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Undercover Burns",
             "airDate": "2020-09-27",
-            "rating": 6.6
+            "rating": 6.5
           },
           {
             "episode": 2,
@@ -76208,7 +76209,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "The 7 Beer Itch",
             "airDate": "2020-11-08",
-            "rating": 5.7
+            "rating": 5.8
           },
           {
             "episode": 6,
@@ -76250,13 +76251,13 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Diary Queen",
             "airDate": "2021-02-21",
-            "rating": 7
+            "rating": 6.9
           },
           {
             "episode": 13,
             "title": "Wad Goals",
             "airDate": "2021-02-28",
-            "rating": 6.4
+            "rating": 6.3
           },
           {
             "episode": 14,
@@ -76280,7 +76281,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Uncut Femmes",
             "airDate": "2021-03-28",
-            "rating": 6.6
+            "rating": 6.5
           },
           {
             "episode": 18,
@@ -76298,7 +76299,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Mother and Child Reunion",
             "airDate": "2021-05-09",
-            "rating": 6.7
+            "rating": 6.8
           },
           {
             "episode": 21,
@@ -76321,7 +76322,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "The Star of the Backstage",
             "airDate": "2021-09-26",
-            "rating": 4.3
+            "rating": 4.4
           },
           {
             "episode": 2,
@@ -76363,7 +76364,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Portrait of a Lackey on Fire",
             "airDate": "2021-11-21",
-            "rating": 6.3
+            "rating": 6.2
           },
           {
             "episode": 9,
@@ -76387,19 +76388,19 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "Pixelated and Afraid",
             "airDate": "2022-02-27",
-            "rating": 7.8
+            "rating": 7.7
           },
           {
             "episode": 13,
             "title": "Boyz N The Highlands",
             "airDate": "2022-03-06",
-            "rating": 6.8
+            "rating": 6.7
           },
           {
             "episode": 14,
             "title": "You Won't Believe What This Episode is About - Act Three Will Shock You!",
             "airDate": "2022-03-13",
-            "rating": 6.6
+            "rating": 6.5
           },
           {
             "episode": 15,
@@ -76417,7 +76418,7 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "The Sound of Bleeding Gums",
             "airDate": "2022-04-10",
-            "rating": 5.8
+            "rating": 5.9
           },
           {
             "episode": 18,
@@ -76435,7 +76436,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Marge the Meanie",
             "airDate": "2022-05-08",
-            "rating": 6.8
+            "rating": 6.7
           },
           {
             "episode": 21,
@@ -76464,7 +76465,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "One Angry Lisa",
             "airDate": "2022-10-02",
-            "rating": 6.4
+            "rating": 6.3
           },
           {
             "episode": 3,
@@ -76488,7 +76489,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Treehouse of Horror XXXIII",
             "airDate": "2022-10-30",
-            "rating": 8.4
+            "rating": 8.3
           },
           {
             "episode": 7,
@@ -76506,7 +76507,7 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "When Nelson Met Lisa",
             "airDate": "2022-11-27",
-            "rating": 5.8
+            "rating": 5.9
           },
           {
             "episode": 10,
@@ -76542,7 +76543,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Bartless",
             "airDate": "2023-03-05",
-            "rating": 6.9
+            "rating": 6.7
           },
           {
             "episode": 16,
@@ -76560,7 +76561,7 @@ window._SERIES_DATA = [
             "episode": 18,
             "title": "Fan-ily Feud",
             "airDate": "2023-04-23",
-            "rating": 5.5
+            "rating": 5.4
           },
           {
             "episode": 19,
@@ -76595,13 +76596,13 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Homer's Crossing",
             "airDate": "2023-10-01",
-            "rating": 6.8
+            "rating": 6.7
           },
           {
             "episode": 2,
             "title": "A Mid-Childhood Night's Dream",
             "airDate": "2023-10-08",
-            "rating": 7.2
+            "rating": 7.1
           },
           {
             "episode": 3,
@@ -76619,13 +76620,13 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Treehouse of Horror XXXIV",
             "airDate": "2023-11-05",
-            "rating": 7
+            "rating": 6.9
           },
           {
             "episode": 6,
             "title": "Iron Marge",
             "airDate": "2023-11-12",
-            "rating": 6.9
+            "rating": 6.8
           },
           {
             "episode": 7,
@@ -76655,13 +76656,13 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Frinkenstein's Monster",
             "airDate": "2024-02-18",
-            "rating": 6.2
+            "rating": 6.1
           },
           {
             "episode": 12,
             "title": "Lisa Gets an F1",
             "airDate": "2024-02-25",
-            "rating": 6.3
+            "rating": 6.4
           },
           {
             "episode": 13,
@@ -76673,25 +76674,25 @@ window._SERIES_DATA = [
             "episode": 14,
             "title": "Night of the Living Wage",
             "airDate": "2024-04-07",
-            "rating": 7.1
+            "rating": 7
           },
           {
             "episode": 15,
             "title": "Cremains of the Day",
             "airDate": "2024-04-21",
-            "rating": 7.1
+            "rating": 7
           },
           {
             "episode": 16,
             "title": "The Tell-Tale Pants",
             "airDate": "2024-05-05",
-            "rating": 6.3
+            "rating": 6.4
           },
           {
             "episode": 17,
             "title": "The Tipping Point",
             "airDate": "2024-05-12",
-            "rating": 6.2
+            "rating": 6.1
           },
           {
             "episode": 18,
@@ -76708,7 +76709,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Bart's Birthday",
             "airDate": "2024-09-29",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 2,
@@ -76720,7 +76721,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Desperately Seeking Lisa",
             "airDate": "2024-10-20",
-            "rating": 5.8
+            "rating": 6
           },
           {
             "episode": 4,
@@ -76750,7 +76751,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Convenience Airways",
             "airDate": "2024-12-08",
-            "rating": 7
+            "rating": 6.9
           },
           {
             "episode": 9,
@@ -76780,7 +76781,7 @@ window._SERIES_DATA = [
             "episode": 13,
             "title": "The Last Man Expanding",
             "airDate": "2025-04-06",
-            "rating": 6.6
+            "rating": 6.5
           },
           {
             "episode": 14,
@@ -76804,13 +76805,13 @@ window._SERIES_DATA = [
             "episode": 17,
             "title": "Full Heart, Empty Pool",
             "airDate": "2025-05-11",
-            "rating": 6.1
+            "rating": 6.4
           },
           {
             "episode": 18,
             "title": "Estranger Things",
             "airDate": "2025-05-18",
-            "rating": 6.4
+            "rating": 6.5
           }
         ]
       },
@@ -76827,7 +76828,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Keep Chalm and Gary On",
             "airDate": "2025-10-05",
-            "rating": 6.7
+            "rating": 6.5
           },
           {
             "episode": 3,
@@ -76851,7 +76852,7 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Bart 'N' Frink",
             "airDate": "2025-11-09",
-            "rating": 7.2
+            "rating": 7.1
           },
           {
             "episode": 7,
@@ -76881,13 +76882,13 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Parahormonal Activity",
             "airDate": "2025-12-14",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 12,
             "title": "Â¡The Fall Guy-Yi-Yi!",
             "airDate": "2025-12-28",
-            "rating": 7.2
+            "rating": 8.2
           },
           {
             "episode": 13,
@@ -76905,7 +76906,7 @@ window._SERIES_DATA = [
             "episode": 15,
             "title": "Homer? A Cracker Bro?",
             "airDate": "2026-02-15",
-            "rating": 7
+            "rating": 7.3
           }
         ]
       },
@@ -77007,7 +77008,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Bluebeard's Castle",
             "airDate": "2018-11-11",
-            "rating": 8.7
+            "rating": 8.6
           }
         ]
       },
@@ -77054,7 +77055,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "Ex-istential Crisis",
             "airDate": "2019-12-26",
-            "rating": 8.3
+            "rating": 8.2
           },
           {
             "episode": 8,
@@ -77066,13 +77067,13 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "P.I. Joe",
             "airDate": "2019-12-26",
-            "rating": 9.1
+            "rating": 9
           },
           {
             "episode": 10,
             "title": "Love, Actually",
             "airDate": "2019-12-26",
-            "rating": 8.7
+            "rating": 8.6
           }
         ]
       },
@@ -77095,7 +77096,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Missing White Woman Syndrome",
             "airDate": "2021-10-15",
-            "rating": 7.1
+            "rating": 7
           },
           {
             "episode": 4,
@@ -77119,7 +77120,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "We're All Mad Here",
             "airDate": "2021-10-15",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 8,
@@ -77137,7 +77138,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "What is Love?",
             "airDate": "2021-10-15",
-            "rating": 8.8
+            "rating": 8.7
           }
         ]
       },
@@ -77202,7 +77203,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "The Death of Jonathan Moore",
             "airDate": "2023-03-09",
-            "rating": 7.7
+            "rating": 7.6
           }
         ]
       },
@@ -77225,7 +77226,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Episode 3",
             "airDate": "2025-04-24",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 4,
@@ -78232,13 +78233,13 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "The Getaway",
             "airDate": "2023-06-23",
-            "rating": 8.5
+            "rating": 8.4
           },
           {
             "episode": 10,
             "title": "Outside",
             "airDate": "2023-06-30",
-            "rating": 9.1
+            "rating": 9
           }
         ]
       },
@@ -78273,13 +78274,13 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Descent",
             "airDate": "2024-12-13",
-            "rating": 7.2
+            "rating": 7.1
           },
           {
             "episode": 6,
             "title": "Barricades",
             "airDate": "2024-12-20",
-            "rating": 7.2
+            "rating": 7.1
           },
           {
             "episode": 7,
@@ -78303,7 +78304,7 @@ window._SERIES_DATA = [
             "episode": 10,
             "title": "Episode 10",
             "airDate": "2025-01-17",
-            "rating": 8.8
+            "rating": 8.7
           }
         ]
       },
@@ -78314,7 +78315,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Who Are You?",
             "airDate": "2026-07-03",
-            "rating": 7.1
+            "rating": 7.3
           },
           {
             "episode": 2,
@@ -78471,19 +78472,19 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Days of Past Future",
             "airDate": "2026-07-01",
-            "rating": 8.2
+            "rating": 8.4
           },
           {
             "episode": 2,
             "title": "A Force to be Reckoned With",
             "airDate": "2026-07-01",
-            "rating": 8.2
+            "rating": 8.5
           },
           {
             "episode": 3,
             "title": "Rise of Apocalypse: Part 1",
             "airDate": "2026-07-01",
-            "rating": 8.4
+            "rating": 8.6
           },
           {
             "episode": 4,
@@ -78667,25 +78668,25 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Eat at Baratie!",
             "airDate": "2023-08-31",
-            "rating": 8.9
+            "rating": 8.8
           },
           {
             "episode": 6,
             "title": "The Chef and the Chore Boy",
             "airDate": "2023-08-31",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 7,
             "title": "The Girl with the Sawfish Tattoo",
             "airDate": "2023-08-31",
-            "rating": 8.6
+            "rating": 8.5
           },
           {
             "episode": 8,
             "title": "Worst in the East",
             "airDate": "2023-08-31",
-            "rating": 9.1
+            "rating": 9
           }
         ]
       },
@@ -78805,7 +78806,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Three Boys",
             "airDate": "2011-02-06",
-            "rating": 7.8
+            "rating": 7.9
           },
           {
             "episode": 6,
@@ -78882,7 +78883,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Father's Day",
             "airDate": "2012-02-05",
-            "rating": 8.1
+            "rating": 8.2
           },
           {
             "episode": 6,
@@ -78995,7 +78996,7 @@ window._SERIES_DATA = [
             "episode": 11,
             "title": "Order Room Service",
             "airDate": "2013-03-31",
-            "rating": 8.5
+            "rating": 8.6
           },
           {
             "episode": 12,
@@ -79012,7 +79013,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Simple Pleasures",
             "airDate": "2014-01-12",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 2,
@@ -79036,7 +79037,7 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "There's the Rub",
             "airDate": "2014-02-09",
-            "rating": 8.9
+            "rating": 9
           },
           {
             "episode": 6,
@@ -79095,7 +79096,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "I'm the Liver",
             "airDate": "2015-01-18",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 3,
@@ -79178,7 +79179,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "The F Word",
             "airDate": "2016-01-24",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 4,
@@ -79320,7 +79321,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "We Become What We ... Frank!",
             "airDate": "2017-11-05",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 2,
@@ -79344,13 +79345,13 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "The (Mis)Education of Liam Fergus Beircheart Gallagher",
             "airDate": "2017-12-03",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 6,
             "title": "Icarus Fell and Rusty Ate Him",
             "airDate": "2017-12-10",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 7,
@@ -79362,7 +79363,7 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Frank's Northern Southern Express",
             "airDate": "2017-12-31",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 9,
@@ -79403,7 +79404,7 @@ window._SERIES_DATA = [
             "episode": 2,
             "title": "Mo White!",
             "airDate": "2018-09-16",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 3,
@@ -79415,19 +79416,19 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Do Right, Vote White!",
             "airDate": "2018-09-30",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 5,
             "title": "Black Haired Ginger",
             "airDate": "2018-10-07",
-            "rating": 8
+            "rating": 8.1
           },
           {
             "episode": 6,
             "title": "Face It, You're Gorgeous",
             "airDate": "2018-10-14",
-            "rating": 8.8
+            "rating": 8.9
           },
           {
             "episode": 7,
@@ -79445,13 +79446,13 @@ window._SERIES_DATA = [
             "episode": 9,
             "title": "Boooooooooooone!",
             "airDate": "2019-01-27",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 10,
             "title": "Los Diablos!",
             "airDate": "2019-02-10",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 11,
@@ -79463,13 +79464,13 @@ window._SERIES_DATA = [
             "episode": 12,
             "title": "You'll Know the Bottom When You Hit It",
             "airDate": "2019-02-24",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 13,
             "title": "Lost",
             "airDate": "2019-03-03",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 14,
@@ -79498,7 +79499,7 @@ window._SERIES_DATA = [
             "episode": 3,
             "title": "Which America?",
             "airDate": "2019-11-24",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 4,
@@ -79510,13 +79511,13 @@ window._SERIES_DATA = [
             "episode": 5,
             "title": "Sparky",
             "airDate": "2019-12-08",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 6,
             "title": "Adios Gringos",
             "airDate": "2019-12-15",
-            "rating": 7
+            "rating": 7.1
           },
           {
             "episode": 7,
@@ -79528,25 +79529,25 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Debbie Might Be a Prostitute",
             "airDate": "2019-12-29",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 9,
             "title": "O Captain, My Captain",
             "airDate": "2020-01-05",
-            "rating": 6.8
+            "rating": 6.9
           },
           {
             "episode": 10,
             "title": "Now Leaving Illinois",
             "airDate": "2020-01-12",
-            "rating": 7.4
+            "rating": 7.5
           },
           {
             "episode": 11,
             "title": "Location, Location, Location",
             "airDate": "2020-01-19",
-            "rating": 7.5
+            "rating": 7.6
           },
           {
             "episode": 12,
@@ -79593,37 +79594,37 @@ window._SERIES_DATA = [
             "episode": 6,
             "title": "Do Not Go Gentle Into That Good....Eh, Screw It",
             "airDate": "2021-02-14",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 7,
             "title": "Two at a Biker Bar, One in the Lake",
             "airDate": "2021-03-07",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 8,
             "title": "Cancelled",
             "airDate": "2021-03-14",
-            "rating": 7.7
+            "rating": 7.8
           },
           {
             "episode": 9,
             "title": "Survivors",
             "airDate": "2021-03-21",
-            "rating": 7.2
+            "rating": 7.3
           },
           {
             "episode": 10,
             "title": "DNR",
             "airDate": "2021-03-28",
-            "rating": 7.3
+            "rating": 7.4
           },
           {
             "episode": 11,
             "title": "The Fickle Lady is Calling it Quits",
             "airDate": "2021-04-04",
-            "rating": 8.4
+            "rating": 8.5
           },
           {
             "episode": 12,
@@ -79967,7 +79968,7 @@ window._SERIES_DATA = [
             "episode": 4,
             "title": "Rat Trap",
             "airDate": "2025-04-20",
-            "rating": 7.9
+            "rating": 8
           },
           {
             "episode": 5,
@@ -79991,13 +79992,13 @@ window._SERIES_DATA = [
             "episode": 8,
             "title": "Helter Skelter",
             "airDate": "2025-05-18",
-            "rating": 8.3
+            "rating": 8.4
           },
           {
             "episode": 9,
             "title": "Beggars Banquet",
             "airDate": "2025-05-25",
-            "rating": 8.2
+            "rating": 8.3
           },
           {
             "episode": 10,
@@ -80102,7 +80103,7 @@ window._SERIES_DATA = [
             "episode": 1,
             "title": "Beware My Power (Part One)",
             "airDate": "2011-11-11",
-            "rating": 8.4
+            "rating": 8.1
           },
           {
             "episode": 2,
@@ -80216,7 +80217,7 @@ window._SERIES_DATA = [
             "episode": 20,
             "title": "Cold Fury",
             "airDate": "2013-02-02",
-            "rating": 8
+            "rating": 9.3
           },
           {
             "episode": 21,
@@ -80240,7 +80241,7 @@ window._SERIES_DATA = [
             "episode": 24,
             "title": "Scarred",
             "airDate": "2013-03-02",
-            "rating": 8.5
+            "rating": 8.4
           },
           {
             "episode": 25,
