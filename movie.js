@@ -4100,18 +4100,18 @@ const VIP_TIER_CONFIG = {
   bronze: {
     name: "Advanced",
     monthly: { price: "8", iqd: "", period: "/ mo", btnText: "Upgrade to Advanced" },
-    yearly: { price: "25", iqd: "", period: "/ year", btnText: "Claim Advanced Annual" }
+    yearly: { price: "25", iqd: "", period: "/ year", btnText: "Upgrade to Advanced" }
   },
   gold: {
     name: "Pro",
     monthly: { price: "15", iqd: "", period: "/ mo", btnText: "Upgrade to Pro" },
-    yearly: { price: "50", iqd: "", period: "/ year", btnText: "Claim Pro Annual" }
+    yearly: { price: "50", iqd: "", period: "/ year", btnText: "Upgrade to Pro" }
   },
   diamond: {
     name: "Ultimate",
     yearlyName: "Ultimate 1-Year Pass",
     monthly: { price: "20", iqd: "", period: "/ mo", btnText: "Upgrade to Ultimate" },
-    yearly: { price: "100", iqd: "", period: "/ year", btnText: "Claim Ultimate Pass ($100)" }
+    yearly: { price: "100", iqd: "", period: "/ year", btnText: "Upgrade to Ultimate" }
   }
 };
 
