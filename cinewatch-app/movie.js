@@ -4025,10 +4025,233 @@ function closeReportModal() {
 }
 
 // ==========================================
+// VIP MEMBERSHIP & LOCAL WALLET CHECKOUT
+// ==========================================
+
+const VIP_WALLETS = {
+  fastpay: {
+    name: "FastPay",
+    number: "0750 000 0000",
+    holder: "CineWatch VIP",
+    note: "Send payment via FastPay mobile app to this number.",
+    color: "#e11d48"
+  },
+  fib: {
+    name: "First Iraqi Bank (FIB)",
+    number: "IQ00 FIB0 0000 0000 0000",
+    holder: "CineWatch Streaming",
+    note: "Transfer using First Iraqi Bank (FIB) app to this IBAN / Account.",
+    color: "#2563eb"
+  },
+  zaincash: {
+    name: "ZainCash",
+    number: "0780 000 0000",
+    holder: "CineWatch VIP",
+    note: "Send cash transfer via ZainCash wallet to this phone number.",
+    color: "#059669"
+  }
+};
+
+let selectedVipTierData = {
+  tier: "diamond",
+  name: "Diamond 1-Year Pass",
+  price: "100",
+  iqd: "135,000 IQD"
+};
+
+let currentVipWalletKey = "fastpay";
+
+function openVipModal() {
+  const modal = document.getElementById("vipModal");
+  if (!modal) return;
+
+  const stepPlans = document.getElementById("vipStepPlans");
+  const stepCheckout = document.getElementById("vipStepCheckout");
+  if (stepPlans) stepPlans.classList.remove("hidden");
+  if (stepCheckout) stepCheckout.classList.add("hidden");
+
+  modal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+}
+window.openVipModal = openVipModal;
+
+function closeVipModal() {
+  const modal = document.getElementById("vipModal");
+  if (modal) modal.classList.add("hidden");
+  document.body.style.overflow = "";
+}
+window.closeVipModal = closeVipModal;
+
+function selectVipTier(tierData) {
+  selectedVipTierData = tierData;
+  const stepPlans = document.getElementById("vipStepPlans");
+  const stepCheckout = document.getElementById("vipStepCheckout");
+  if (stepPlans) stepPlans.classList.add("hidden");
+  if (stepCheckout) stepCheckout.classList.remove("hidden");
+
+  const nameEl = document.getElementById("checkoutPlanName");
+  const usdEl = document.getElementById("checkoutPlanUsd");
+  const iqdEl = document.getElementById("checkoutPlanIqd");
+  if (nameEl) nameEl.textContent = tierData.name;
+  if (usdEl) usdEl.textContent = "$" + tierData.price;
+  if (iqdEl) iqdEl.textContent = tierData.iqd;
+
+  const username = state.user?.name || state.user?.email || "Guest User";
+  const msg = encodeURIComponent(`Hello CineWatch! I would like to activate ${tierData.name} ($${tierData.price} / ${tierData.iqd}).\nMy CineWatch Username: ${username}`);
+
+  const tgBtn = document.getElementById("vipTelegramBtn");
+  if (tgBtn) tgBtn.href = `https://t.me/randibajat?text=${msg}`;
+
+  const waBtn = document.getElementById("vipWhatsappBtn");
+  if (waBtn) waBtn.href = `https://wa.me/?text=${msg}`;
+
+  renderVipWalletDetails(currentVipWalletKey);
+}
+
+function renderVipWalletDetails(walletKey) {
+  currentVipWalletKey = walletKey;
+  const container = document.getElementById("walletDetailsBox");
+  if (!container) return;
+
+  const w = VIP_WALLETS[walletKey];
+  if (!w) return;
+
+  document.querySelectorAll("#vipWalletTabs .wallet-tab").forEach(tab => {
+    tab.classList.toggle("active", tab.dataset.wallet === walletKey);
+  });
+
+  container.innerHTML = `
+    <div class="wallet-row">
+      <span class="wallet-row-label">Payment Method:</span>
+      <span style="font-weight: 700; color: #fff;">${w.name}</span>
+    </div>
+    <div class="wallet-row">
+      <span class="wallet-row-label">Account / Phone:</span>
+      <div class="wallet-number-wrap">
+        <span class="wallet-num-val" id="vipWalletVal">${w.number}</span>
+        <button class="wallet-copy-btn" id="vipCopyWalletBtn" type="button">
+          <ion-icon name="copy-outline"></ion-icon> Copy
+        </button>
+      </div>
+    </div>
+    <div class="wallet-row">
+      <span class="wallet-row-label">Account Holder:</span>
+      <span style="font-weight: 600; color: rgba(255,255,255,0.85);">${w.holder}</span>
+    </div>
+    <div class="wallet-row">
+      <span class="wallet-row-label">Amount Due:</span>
+      <span style="font-weight: 800; color: #fbbf24;">${selectedVipTierData.iqd} ($${selectedVipTierData.price})</span>
+    </div>
+  `;
+
+  const copyBtn = document.getElementById("vipCopyWalletBtn");
+  if (copyBtn) {
+    copyBtn.onclick = () => {
+      navigator.clipboard.writeText(w.number).then(() => {
+        copyBtn.innerHTML = `<ion-icon name="checkmark-outline"></ion-icon> Copied!`;
+        copyBtn.style.background = "#22c55e";
+        copyBtn.style.color = "#000";
+        setTimeout(() => {
+          copyBtn.innerHTML = `<ion-icon name="copy-outline"></ion-icon> Copy`;
+          copyBtn.style.background = "";
+          copyBtn.style.color = "";
+        }, 2000);
+        showToast("Wallet number copied to clipboard!");
+      }).catch(() => {
+        showToast("Copied: " + w.number);
+      });
+    };
+  }
+}
+
+function setupVipEventListeners() {
+  const navVipBtn = document.getElementById("navVipBtn");
+  if (navVipBtn) navVipBtn.onclick = () => openVipModal();
+
+  const browseVipBtn = document.getElementById("browseCardVip");
+  if (browseVipBtn) browseVipBtn.onclick = (e) => {
+    e.preventDefault();
+    openVipModal();
+  };
+
+  const closeBtn = document.getElementById("closeVipModalBtn");
+  if (closeBtn) closeBtn.onclick = () => closeVipModal();
+
+  const modal = document.getElementById("vipModal");
+  if (modal) {
+    modal.onclick = (e) => {
+      if (e.target.id === "vipModal") closeVipModal();
+    };
+  }
+
+  const backBtn = document.getElementById("vipBackToPlansBtn");
+  if (backBtn) {
+    backBtn.onclick = () => {
+      const stepPlans = document.getElementById("vipStepPlans");
+      const stepCheckout = document.getElementById("vipStepCheckout");
+      if (stepPlans) stepPlans.classList.remove("hidden");
+      if (stepCheckout) stepCheckout.classList.add("hidden");
+    };
+  }
+
+  document.querySelectorAll(".select-plan-btn").forEach(btn => {
+    btn.onclick = () => {
+      selectVipTier({
+        tier: btn.dataset.tier,
+        name: btn.dataset.name,
+        price: btn.dataset.price,
+        iqd: btn.dataset.iqd
+      });
+    };
+  });
+
+  const walletTabs = document.getElementById("vipWalletTabs");
+  if (walletTabs) {
+    walletTabs.querySelectorAll(".wallet-tab").forEach(tab => {
+      tab.onclick = () => {
+        renderVipWalletDetails(tab.dataset.wallet);
+      };
+    });
+  }
+
+  const submitTxBtn = document.getElementById("vipSubmitTxBtn");
+  const txInput = document.getElementById("vipTxIdInput");
+  const statusEl = document.getElementById("vipSubmitStatus");
+  if (submitTxBtn && txInput) {
+    submitTxBtn.onclick = () => {
+      const val = txInput.value.trim();
+      if (!val) {
+        showToast("Please enter your Transaction ID or sender phone number", "error");
+        txInput.focus();
+        return;
+      }
+
+      const pendingTx = {
+        txId: val,
+        plan: selectedVipTierData,
+        wallet: currentVipWalletKey,
+        submittedAt: new Date().toISOString(),
+        username: state.user?.name || "Guest"
+      };
+      localStorage.setItem("cw_pending_vip_tx", JSON.stringify(pendingTx));
+
+      if (statusEl) {
+        statusEl.classList.remove("hidden");
+        statusEl.innerHTML = `✅ <strong>Receipt Submitted!</strong> We will verify your transaction and activate VIP on your account within minutes.`;
+      }
+      txInput.value = "";
+      showToast("Transaction reference submitted! Admin notified.");
+    };
+  }
+}
+
+// ==========================================
 // 5. EVENT BINDINGS & LISTENERS
 // ==========================================
 
 function bindEventListeners() {
+  setupVipEventListeners();
+
   // Navigation Links & Footer Explore Links
   document.querySelectorAll(".nav-link, .footer-explore-link").forEach((link) => {
     link.onclick = (e) => {
