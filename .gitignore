@@ -18,3 +18,5 @@ CineWatch-Setup.exe
 *.zip
 cinewatch-app/dist/
 cinewatch-app/node_modules/
+.omdb_key
+.env
