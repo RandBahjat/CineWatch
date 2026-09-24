@@ -11350,7 +11350,7 @@ min-width: 0;
   padding: 1rem;
   width: 100%; /* Will be controlled by grid */
   border-radius: 1rem;
-  box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.1) inset;
+  box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.08) inset, 0 0 20px -8px var(--border-glow);
   transition: transform 0.3s ease;
   z-index: 1;
 }
@@ -11372,34 +11372,39 @@ min-width: 0;
 
 .card-tier:hover {
   transform: translateY(-5px);
+  box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.12) inset, 0 0 28px -4px var(--border-glow);
 }
 
 .card-tier.card-free {
-  --primary: hsl(0, 0%, 60%);
+  --primary: hsl(0, 0%, 75%);
   --grad1: hsl(0, 0%, 26%);
   --grad2: hsl(0, 0%, 36%);
   --grad3: hsl(0, 0%, 13%);
-  --border-glow: hsl(0, 0%, 50%);
+  --border-glow: #e4e4e7;
 }
 
 .card-tier.card-bronze {
-  --primary: hsl(30, 70%, 50%);
+  --primary: hsl(30, 85%, 55%);
   --grad1: hsl(30, 80%, 26%);
   --grad2: hsl(30, 70%, 36%);
   --grad3: hsl(30, 90%, 13%);
-  --border-glow: hsl(30, 100%, 50%);
+  --border-glow: #fb923c;
 }
 
 .card-tier.card-gold {
-  --primary: hsl(45, 90%, 50%);
+  --primary: hsl(45, 95%, 55%);
   --grad1: hsl(45, 90%, 26%);
   --grad2: hsl(45, 90%, 36%);
   --grad3: hsl(45, 90%, 13%);
-  --border-glow: hsl(45, 100%, 50%);
+  --border-glow: #facc15;
 }
 
 .card-tier.card-diamond {
-  /* Default variables are Diamond */
+  --primary: hsl(189, 95%, 58%);
+  --grad1: hsl(189, 99%, 26%);
+  --grad2: hsl(189, 97%, 36%);
+  --grad3: hsl(188, 94%, 13%);
+  --border-glow: #00f0ff;
 }
 
 .card-tier .card__border {
@@ -11407,38 +11412,42 @@ min-width: 0;
   pointer-events: none;
   position: absolute;
   z-index: -2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-  background-image: linear-gradient(0deg, hsl(0, 0%, 100%) -50%, hsl(0, 0%, 40%) 100%);
-  border-radius: 1rem;
+  inset: -3px;
+  border-radius: calc(1rem + 3px);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .card-tier .card__border::before {
   content: "";
   pointer-events: none;
   position: absolute;
-  z-index: 200;
+  z-index: 1;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%), rotate(0deg);
-  transform-origin: left;
-  width: 200%;
-  height: 10rem;
-  background-image: linear-gradient(
-    0deg,
-    hsla(0, 0%, 100%, 0) 0%,
-    var(--border-glow) 40%,
-    var(--border-glow) 60%,
-    hsla(0, 0%, 40%, 0) 100%
+  width: 900px;
+  height: 900px;
+  transform: translate(-50%, -50%) rotate(0deg);
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    transparent 0deg,
+    transparent 180deg,
+    var(--border-glow) 260deg,
+    #ffffff 345deg,
+    var(--border-glow) 355deg,
+    transparent 360deg
   );
-  animation: rotate-card-border 8s linear infinite;
+  filter: drop-shadow(0 0 10px var(--border-glow));
+  animation: rotate-card-border 4.5s linear infinite;
 }
 
 @keyframes rotate-card-border {
-  to { transform: translate(-50%, -50%) rotate(360deg); }
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
 }
 
 .card-tier .card_title__container {
