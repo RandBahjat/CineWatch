@@ -1309,6 +1309,12 @@ function renderWatchlistHomeShelf() {
   const track = document.getElementById("watchlistHomeTrack");
   if (!shelf || !track) return;
 
+  // STRICT RULE: Watchlist home shelf only belongs on the Home view
+  if (state.activeView !== "home") {
+    shelf.classList.add("hidden");
+    return;
+  }
+
   const validFavorites = (state.favorites || [])
     .map((id) => MOVIES.find((m) => m.id === id))
     .filter(Boolean);
