@@ -11529,6 +11529,11 @@ min-width: 0;
   transition: opacity 0.2s, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.card-tier .button::before,
+.card-tier .button::after {
+  display: none !important;
+}
+
 .card-tier .button:hover {
   opacity: 1;
   transform: scale(1.03);
