@@ -2264,6 +2264,11 @@ function renderUserBadge() {
         <div class="account-panel-section-label">⚙ SETTINGS</div>
 
         <div class="account-panel-actions">
+          <button class="account-panel-action-btn panel-vip-btn" id="panelVipUpgradeBtn" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(239, 68, 68, 0.22)); border: 1px solid rgba(245, 158, 11, 0.55); color: #fbbf24; font-weight: 700; margin-bottom: 8px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span class="notranslate" translate="no">CineWatch VIP Club</span>
+          </button>
+
           <label for="panelAvatarInput" class="account-panel-action-btn" id="uploadAvatarBtn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
             <span class="notranslate" translate="no">${uploadAvatarText}</span>
