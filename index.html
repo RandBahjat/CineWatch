@@ -13,9 +13,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260920_481">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_2458">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_716">
+    <link rel="stylesheet" href="movie.css?v=20260920_482">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_2459">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_717">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -118,10 +118,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_7882" defer></script>
-    <script src="series-data.js?v=20260818_7882" defer></script>
-    <script src="anime-data.js?v=20260818_7882" defer></script>
-    <script src="movie.js?v=20260920_480" defer></script>
+    <script src="movies-data.js?v=20260818_7883" defer></script>
+    <script src="series-data.js?v=20260818_7883" defer></script>
+    <script src="anime-data.js?v=20260818_7883" defer></script>
+    <script src="movie.js?v=20260920_481" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1618,115 +1618,126 @@
                 </div>
 
                 <div class="vip-grid">
+                    
                     <!-- Plan 1: Free Explorer -->
-                    <div class="vip-plan-card free-card" data-tier="free">
-                        <div class="card-light-beam"></div>
-                        <div class="card-border-glow"></div>
-                        <div class="vip-top-shimmer"></div>
-                        <div class="vip-plan-header">
-                            <span class="vip-plan-badge">Standard</span>
-                            <h3 class="vip-plan-name notranslate" translate="no">Free Explorer</h3>
-                            <div class="vip-plan-price">
-                                <span class="vip-currency">$</span>
-                                <span class="vip-amount">0</span>
-                                <span class="vip-period">/ forever</span>
-                            </div>
-                            <span class="vip-local-price">0 IQD</span>
-                        </div>
-                        <ul class="vip-perks-list">
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Standard 720p/1080p stream</span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Standard servers (2, 3, 4)</span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Watchlist & Continue Watching</span></li>
-                            <li class="disabled"><ion-icon name="close-circle-outline"></ion-icon> <span>Ad-free video playback</span></li>
-                            <li class="disabled"><ion-icon name="close-circle-outline"></ion-icon> <span>Unlimited high-speed downloads</span></li>
-                            <li class="disabled"><ion-icon name="close-circle-outline"></ion-icon> <span>VIP Server 1 Priority</span></li>
-                        </ul>
-                        <button class="vip-plan-btn current-plan-btn" disabled>Current Active Plan</button>
+                    <div class="card-tier card-free" data-tier="free">
+                      <div class="card__border"></div>
+                      <div class="card_title__container">
+                        <span class="card_title notranslate" translate="no">Free Explorer</span>
+                        <p class="card_paragraph">
+                          <span class="vip-amount">0</span> <span class="vip-period">/ forever</span>
+                          <br><span style="font-size:0.75rem; color:#888;">0 IQD</span>
+                        </p>
+                      </div>
+                      <hr class="line" />
+                      <ul class="card__list">
+                        <li class="card__list_item">
+                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
+                          <span class="list_text">Standard 720p/1080p stream</span>
+                        </li>
+                        <li class="card__list_item">
+                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
+                          <span class="list_text">Standard servers (2, 3, 4)</span>
+                        </li>
+                        <li class="card__list_item disabled">
+                          <span class="check"><svg class="check_svg" style="fill:#fff;" viewBox="0 0 24 24"><path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></span>
+                          <span class="list_text">Ad-free video playback</span>
+                        </li>
+                        <li class="card__list_item disabled">
+                          <span class="check"><svg class="check_svg" style="fill:#fff;" viewBox="0 0 24 24"><path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></span>
+                          <span class="list_text">Access to 4K Ultra HD Section</span>
+                        </li>
+                      </ul>
+                      <button class="button vip-btn-action" data-tier="free">Current Plan</button>
                     </div>
 
-                    <!-- Plan 2: Supporter (Bronze) -->
-                    <div class="vip-plan-card bronze-card" data-tier="bronze">
-                        <div class="card-light-beam"></div>
-                        <div class="card-border-glow"></div>
-                        <div class="vip-top-shimmer"></div>
-                        <div class="vip-plan-header">
-                            <span class="vip-plan-badge bronze-badge">Supporter</span>
-                            <h3 class="vip-plan-name notranslate" translate="no">Bronze Supporter</h3>
-                            <div class="vip-plan-price">
-                                <span class="vip-currency">$</span>
-                                <span class="vip-amount" id="vipAmountBronze">2.99</span>
-                                <span class="vip-period" id="vipPeriodBronze">/ month</span>
-                            </div>
-                            <span class="vip-local-price" id="vipLocalBronze">4,000 IQD / mo</span>
-                        </div>
-                        <ul class="vip-perks-list">
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Full HD 1080p streaming</span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span><strong>Ad-Free Video Player</strong></span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Faster video buffer speeds</span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Bronze Supporter Profile Badge</span></li>
-                            <li class="disabled"><ion-icon name="close-circle-outline"></ion-icon> <span>Ultra 4K Bitrate</span></li>
-                            <li class="disabled"><ion-icon name="close-circle-outline"></ion-icon> <span>VIP Server 1 Priority Line</span></li>
-                        </ul>
-                        <button class="vip-plan-btn select-plan-btn bronze-btn" id="vipBtnBronze" data-tier="bronze" data-price="2.99" data-iqd="4,000 IQD" data-name="Bronze Supporter (Monthly)">Upgrade to Bronze</button>
+                    <!-- Plan 2: Bronze -->
+                    <div class="card-tier card-bronze" data-tier="bronze">
+                      <div class="card__border"></div>
+                      <div class="card_title__container">
+                        <span class="card_title notranslate" translate="no">Bronze VIP</span>
+                        <p class="card_paragraph">
+                          $<span class="vip-amount">2.99</span> <span class="vip-period">/ mo</span>
+                          <br><span style="font-size:0.75rem; color:#888;">4,500 IQD</span>
+                        </p>
+                      </div>
+                      <hr class="line" />
+                      <ul class="card__list">
+                        <li class="card__list_item">
+                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
+                          <span class="list_text">Ad-free Site Experience</span>
+                        </li>
+                        <li class="card__list_item">
+                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
+                          <span class="list_text">VIP Badge on Profile</span>
+                        </li>
+                        <li class="card__list_item disabled">
+                          <span class="check"><svg class="check_svg" style="fill:#fff;" viewBox="0 0 24 24"><path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></span>
+                          <span class="list_text">Access to 4K Ultra HD Section</span>
+                        </li>
+                      </ul>
+                      <button class="button vip-btn-action" data-tier="bronze">Upgrade to Bronze</button>
                     </div>
 
-                    <!-- Plan 3: VIP Pro (Gold) -->
-                    <div class="vip-plan-card gold-card popular" data-tier="gold">
-                        <div class="card-light-beam"></div>
-                        <div class="card-border-glow"></div>
-                        <div class="vip-top-shimmer"></div>
-                        <div class="vip-popular-tag">MOST POPULAR</div>
-                        <div class="vip-plan-header">
-                            <span class="vip-plan-badge gold-badge">VIP Pro</span>
-                            <h3 class="vip-plan-name notranslate" translate="no">Gold VIP</h3>
-                            <div class="vip-plan-price">
-                                <span class="vip-currency">$</span>
-                                <span class="vip-amount" id="vipAmountGold">5.99</span>
-                                <span class="vip-period" id="vipPeriodGold">/ month</span>
-                            </div>
-                            <span class="vip-local-price" id="vipLocalGold">8,000 IQD / mo</span>
-                        </div>
-                        <ul class="vip-perks-list">
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span><strong>4K Ultra HD & High Bitrate</strong></span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span><strong>100% Zero Ads</strong> on entire site</span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span><strong>Server 1 (VIP Fast Line)</strong></span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span><strong>Unlimited Fast Downloads</strong></span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Priority Movie Requests (within 24h)</span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Golden Glowing Avatar Ring</span></li>
-                        </ul>
-                        <button class="vip-plan-btn select-plan-btn gold-btn" id="vipBtnGold" data-tier="gold" data-price="5.99" data-iqd="8,000 IQD" data-name="Gold VIP (Monthly)">Get Gold VIP</button>
+                    <!-- Plan 3: Gold -->
+                    <div class="card-tier card-gold" data-tier="gold">
+                      <div class="card__border"></div>
+                      <div class="card_title__container">
+                        <span class="card_title notranslate" translate="no" style="display:flex; justify-content:space-between;">Gold VIP <span style="font-size:0.7rem; background:red; color:white; padding:2px 6px; border-radius:10px;">POPULAR</span></span>
+                        <p class="card_paragraph">
+                          $<span class="vip-amount">5.99</span> <span class="vip-period">/ mo</span>
+                          <br><span style="font-size:0.75rem; color:#888;">9,000 IQD</span>
+                        </p>
+                      </div>
+                      <hr class="line" />
+                      <ul class="card__list">
+                        <li class="card__list_item">
+                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
+                          <span class="list_text">All Bronze Features</span>
+                        </li>
+                        <li class="card__list_item">
+                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
+                          <span class="list_text">Access to 4K Ultra HD Section</span>
+                        </li>
+                        <li class="card__list_item">
+                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
+                          <span class="list_text">Download for offline</span>
+                        </li>
+                      </ul>
+                      <button class="button vip-btn-action" data-tier="gold">Upgrade to Gold</button>
                     </div>
 
-                    <!-- Plan 4: 1-Year VIP Pass (Diamond) -->
-                    <div class="vip-plan-card diamond-card best-value" data-tier="diamond">
-                        <div class="card-light-beam"></div>
-                        <div class="card-border-glow"></div>
-                        <div class="vip-top-shimmer"></div>
-                        <div class="vip-popular-tag diamond-tag" id="diamondTag">BEST VALUE • 1-YEAR PASS</div>
-                        <div class="vip-plan-header">
-                            <span class="vip-plan-badge diamond-badge" id="diamondBadge">1-Year Pass</span>
-                            <h3 class="vip-plan-name notranslate" translate="no" id="diamondTitle">Diamond VIP</h3>
-                            <div class="vip-plan-price">
-                                <span class="vip-currency">$</span>
-                                <span class="vip-amount" id="vipAmountDiamond">9.99</span>
-                                <span class="vip-period" id="vipPeriodDiamond">/ month</span>
-                            </div>
-                            <span class="vip-local-price" id="vipLocalDiamond">13,500 IQD / mo</span>
-                        </div>
-                        <ul class="vip-perks-list">
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span><strong>All Gold VIP Perks Included</strong></span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span><strong>No Monthly Renewals</strong> or stress</span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span><strong>Direct WhatsApp / Telegram VIP Line</strong></span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Exclusive Holographic Diamond Badge</span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Early access to newest releases</span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Maximum Dedicated Server Bandwidth</span></li>
-                        </ul>
-                        <button class="vip-plan-btn select-plan-btn diamond-btn" id="vipBtnDiamond" data-tier="diamond" data-price="9.99" data-iqd="13,500 IQD" data-name="Diamond VIP (Monthly)">Get Diamond VIP</button>
+                    <!-- Plan 4: Diamond -->
+                    <div class="card-tier card-diamond" data-tier="diamond">
+                      <div class="card__border"></div>
+                      <div class="card_title__container">
+                        <span class="card_title notranslate" translate="no" style="display:flex; justify-content:space-between;">Diamond VIP <span style="font-size:0.7rem; background:#00ffff; color:black; padding:2px 6px; border-radius:10px;">BEST VALUE</span></span>
+                        <p class="card_paragraph">
+                          $<span class="vip-amount">9.99</span> <span class="vip-period">/ mo</span>
+                          <br><span style="font-size:0.75rem; color:#888;">15,000 IQD</span>
+                        </p>
+                      </div>
+                      <hr class="line" />
+                      <ul class="card__list">
+                        <li class="card__list_item">
+                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
+                          <span class="list_text">All Gold Features</span>
+                        </li>
+                        <li class="card__list_item">
+                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
+                          <span class="list_text">Request missing Movies/Series</span>
+                        </li>
+                        <li class="card__list_item">
+                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
+                          <span class="list_text">Early Access to Features</span>
+                        </li>
+                      </ul>
+                      <button class="button vip-btn-action" data-tier="diamond">Upgrade to Diamond</button>
                     </div>
+
                 </div>
-            </div>
-
-            <!-- STEP 2: Local Wallet Payment View -->
+                
+                <!-- STEP 2: Local Wallet Payment View -->
             <div class="vip-step-checkout hidden" id="vipStepCheckout">
                 <button class="vip-back-btn" id="vipBackToPlansBtn">
                     <ion-icon name="arrow-back-outline"></ion-icon> Back to Plans
@@ -2616,7 +2627,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_716"></script>
+    <script src="welcome-disclaimer.js?v=20260918_717"></script>
 </body>
 
 </html>
