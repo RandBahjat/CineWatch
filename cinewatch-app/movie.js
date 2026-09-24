@@ -660,20 +660,23 @@ async function initApp() {
     renderUserBadge();
     updateWatchlistBadge();
 
-    // Hero Carousel
-    setupHeroBanner();
-
-    // Render Shelves
+    // Render default catalog carousels
     renderCarousels();
-    renderContinueWatchingShelf();
-    if (typeof renderBecauseYouWatchedShelf === "function") renderBecauseYouWatchedShelf();
-    if (typeof renderWatchlistHomeShelf === "function") renderWatchlistHomeShelf();
 
     // Check for target section parameter from full-page reload
     const params = new URLSearchParams(window.location.search);
     const targetSection = params.get('section') || params.get('view');
     if (targetSection && targetSection !== 'home' && SECTION_VIEWS.includes(targetSection)) {
+      state.activeView = targetSection;
       _performSwitchView(targetSection);
+    } else {
+      // Hero Carousel
+      setupHeroBanner();
+
+      // Render Home Shelves
+      renderContinueWatchingShelf();
+      if (typeof renderBecauseYouWatchedShelf === "function") renderBecauseYouWatchedShelf();
+      if (typeof renderWatchlistHomeShelf === "function") renderWatchlistHomeShelf();
     }
 
     // Start hero auto slide (managed by startHeroAutoplay)
