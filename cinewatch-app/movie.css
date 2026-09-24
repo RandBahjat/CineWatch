@@ -11115,7 +11115,7 @@ min-width: 0;
 }
 
 .wallet-tab {
-  flex: 1 1 calc(25% - 0.65rem);
+  flex: 1 1 calc(33.333% - 0.65rem);
   min-width: 140px;
   display: flex;
   align-items: center;
