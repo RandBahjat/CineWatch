@@ -11391,7 +11391,7 @@ min-width: 0;
   overflow: hidden;
   pointer-events: none;
   position: absolute;
-  z-index: -10;
+  z-index: -2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
