@@ -218,7 +218,7 @@ let indexHtml = fs.readFileSync(indexHtmlPath, 'utf8');
 
 // Find the start and end of <div class="vip-grid">
 const gridStartIdx = indexHtml.indexOf('<div class="vip-grid">');
-const gridEndIdx = indexHtml.indexOf('<!-- VIP Active Subs List -->');
+const gridEndIdx = indexHtml.indexOf('<!-- STEP 2: Local Wallet Payment View -->');
 
 if (gridStartIdx !== -1 && gridEndIdx !== -1) {
   const newVipGrid = `<div class="vip-grid">
