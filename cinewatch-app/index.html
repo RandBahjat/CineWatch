@@ -1566,6 +1566,183 @@
         </div>
     </div>
 
+    <!-- VIP Membership & Pricing Modal -->
+    <div class="modal-overlay vip-modal-overlay hidden" id="vipModal">
+        <div class="modal-card vip-modal-card" id="vipModalCard" onclick="event.stopPropagation()">
+            <div class="vip-glow-effect"></div>
+            <button class="modal-close-btn vip-close-btn" id="closeVipModalBtn" aria-label="Close VIP modal">&times;</button>
+
+            <!-- STEP 1: Plan Selection Grid -->
+            <div class="vip-step-plans" id="vipStepPlans">
+                <div class="vip-header">
+                    <div class="vip-badge-pill">
+                        <ion-icon name="sparkles"></ion-icon> CineWatch VIP Club
+                    </div>
+                    <h2 class="vip-title notranslate" translate="no">Choose Your Streaming Experience</h2>
+                    <p class="vip-subtitle">Unlock ultra-fast 4K streaming, zero site ads, unlimited downloads, and VIP priority servers.</p>
+                </div>
+
+                <div class="vip-grid">
+                    <!-- Plan 1: Free Explorer -->
+                    <div class="vip-plan-card free-card">
+                        <div class="vip-plan-header">
+                            <span class="vip-plan-badge">Standard</span>
+                            <h3 class="vip-plan-name notranslate" translate="no">Free Explorer</h3>
+                            <div class="vip-plan-price">
+                                <span class="vip-currency">$</span>
+                                <span class="vip-amount">0</span>
+                                <span class="vip-period">/ forever</span>
+                            </div>
+                            <span class="vip-local-price">0 IQD</span>
+                        </div>
+                        <ul class="vip-perks-list">
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Standard 720p/1080p stream</li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Standard servers (2, 3, 4)</li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Watchlist & Continue Watching</li>
+                            <li class="disabled"><ion-icon name="close-circle-outline"></ion-icon> Ad-free video playback</li>
+                            <li class="disabled"><ion-icon name="close-circle-outline"></ion-icon> Unlimited high-speed downloads</li>
+                            <li class="disabled"><ion-icon name="close-circle-outline"></ion-icon> VIP Server 1 Priority</li>
+                        </ul>
+                        <button class="vip-plan-btn current-plan-btn" disabled>Current Active Plan</button>
+                    </div>
+
+                    <!-- Plan 2: Supporter (Bronze) -->
+                    <div class="vip-plan-card bronze-card">
+                        <div class="vip-plan-header">
+                            <span class="vip-plan-badge bronze-badge">Supporter</span>
+                            <h3 class="vip-plan-name notranslate" translate="no">Bronze Supporter</h3>
+                            <div class="vip-plan-price">
+                                <span class="vip-currency">$</span>
+                                <span class="vip-amount">2.99</span>
+                                <span class="vip-period">/ month</span>
+                            </div>
+                            <span class="vip-local-price">4,000 IQD / mo</span>
+                        </div>
+                        <ul class="vip-perks-list">
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Full HD 1080p streaming</li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> <strong>Ad-Free Video Player</strong></li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Faster video buffer speeds</li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Bronze Supporter Profile Badge</li>
+                            <li class="disabled"><ion-icon name="close-circle-outline"></ion-icon> Ultra 4K Bitrate</li>
+                            <li class="disabled"><ion-icon name="close-circle-outline"></ion-icon> Unlimited high-speed downloads</li>
+                        </ul>
+                        <button class="vip-plan-btn select-plan-btn" data-tier="bronze" data-price="2.99" data-iqd="4,000 IQD" data-name="Bronze Supporter (Monthly)">Upgrade to Bronze</button>
+                    </div>
+
+                    <!-- Plan 3: VIP Pro (Gold) -->
+                    <div class="vip-plan-card gold-card popular">
+                        <div class="vip-popular-tag">MOST POPULAR</div>
+                        <div class="vip-plan-header">
+                            <span class="vip-plan-badge gold-badge">VIP Pro</span>
+                            <h3 class="vip-plan-name notranslate" translate="no">Gold VIP</h3>
+                            <div class="vip-plan-price">
+                                <span class="vip-currency">$</span>
+                                <span class="vip-amount">5.99</span>
+                                <span class="vip-period">/ month</span>
+                            </div>
+                            <span class="vip-local-price">8,000 IQD / mo</span>
+                        </div>
+                        <ul class="vip-perks-list">
+                            <li><ion-icon name="checkmark-circle"></ion-icon> <strong>4K Ultra HD & High Bitrate</strong></li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> <strong>100% Zero Ads</strong> on entire site</li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> <strong>Server 1 (VIP Fast Line)</strong></li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> <strong>Unlimited High-Speed Downloads</strong></li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Priority Movie Requests (within 24h)</li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Golden Glowing Avatar Ring</li>
+                        </ul>
+                        <button class="vip-plan-btn select-plan-btn gold-btn" data-tier="gold" data-price="5.99" data-iqd="8,000 IQD" data-name="Gold VIP (Monthly)">Get Gold VIP</button>
+                    </div>
+
+                    <!-- Plan 4: 1-Year VIP Pass (Diamond) -->
+                    <div class="vip-plan-card diamond-card best-value">
+                        <div class="vip-popular-tag diamond-tag">BEST VALUE • 1 YEAR</div>
+                        <div class="vip-plan-header">
+                            <span class="vip-plan-badge diamond-badge">1-Year Pass</span>
+                            <h3 class="vip-plan-name notranslate" translate="no">Diamond 1-Year Pass</h3>
+                            <div class="vip-plan-price">
+                                <span class="vip-currency">$</span>
+                                <span class="vip-amount">100</span>
+                                <span class="vip-period">/ year</span>
+                            </div>
+                            <span class="vip-local-price">135,000 IQD / year (One-time)</span>
+                        </div>
+                        <ul class="vip-perks-list">
+                            <li><ion-icon name="checkmark-circle"></ion-icon> <strong>All Gold VIP Perks for 365 Days</strong></li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> <strong>No Monthly Renewals</strong> or billing stress</li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> <strong>Direct WhatsApp & Telegram VIP Support</strong></li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Exclusive Holographic Diamond Badge</li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Early access to newest releases</li>
+                            <li><ion-icon name="checkmark-circle"></ion-icon> Maximum Dedicated Server Bandwidth</li>
+                        </ul>
+                        <button class="vip-plan-btn select-plan-btn diamond-btn" data-tier="diamond" data-price="100" data-iqd="135,000 IQD" data-name="Diamond 1-Year VIP Pass">Claim 1-Year Pass</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 2: Local Wallet Payment View -->
+            <div class="vip-step-checkout hidden" id="vipStepCheckout">
+                <button class="vip-back-btn" id="vipBackToPlansBtn">
+                    <ion-icon name="arrow-back-outline"></ion-icon> Back to Plans
+                </button>
+
+                <div class="checkout-header">
+                    <div class="checkout-title-wrap">
+                        <span class="checkout-label">Selected Plan</span>
+                        <h3 class="checkout-plan-name notranslate" id="checkoutPlanName">Diamond 1-Year VIP Pass</h3>
+                    </div>
+                    <div class="checkout-price-wrap">
+                        <span class="checkout-usd notranslate" id="checkoutPlanUsd">$100</span>
+                        <span class="checkout-iqd notranslate" id="checkoutPlanIqd">135,000 IQD</span>
+                    </div>
+                </div>
+
+                <div class="wallet-selector-title">Choose Local Wallet:</div>
+                <div class="wallet-tabs" id="vipWalletTabs">
+                    <button class="wallet-tab active" data-wallet="fastpay">
+                        <span class="wallet-badge-dot" style="background:#e11d48;"></span> FastPay
+                    </button>
+                    <button class="wallet-tab" data-wallet="fib">
+                        <span class="wallet-badge-dot" style="background:#2563eb;"></span> First Iraqi Bank (FIB)
+                    </button>
+                    <button class="wallet-tab" data-wallet="zaincash">
+                        <span class="wallet-badge-dot" style="background:#059669;"></span> ZainCash
+                    </button>
+                </div>
+
+                <div class="wallet-details-box" id="walletDetailsBox">
+                    <!-- Populated dynamically via JS -->
+                </div>
+
+                <div class="checkout-instructions">
+                    <h4><ion-icon name="information-circle-outline"></ion-icon> Quick Activation Steps:</h4>
+                    <ol>
+                        <li>Open your <strong>FastPay / FIB / ZainCash</strong> app.</li>
+                        <li>Send the exact amount shown above to the wallet number.</li>
+                        <li>Send your payment screenshot via <strong>Telegram</strong> or <strong>WhatsApp</strong> below for fast activation, or submit your Transaction ID.</li>
+                    </ol>
+                </div>
+
+                <div class="checkout-actions">
+                    <a href="https://t.me/randibajat" target="_blank" rel="noopener noreferrer" class="btn-vip-action btn-telegram-vip" id="vipTelegramBtn">
+                        <ion-icon name="paper-plane"></ion-icon> Send Receipt via Telegram
+                    </a>
+                    <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="btn-vip-action btn-whatsapp-vip" id="vipWhatsappBtn">
+                        <ion-icon name="logo-whatsapp"></ion-icon> Send Receipt via WhatsApp
+                    </a>
+                </div>
+
+                <div class="checkout-manual-form">
+                    <div class="manual-form-title">Or Submit Transaction Reference:</div>
+                    <div class="manual-form-row">
+                        <input type="text" id="vipTxIdInput" class="form-control" placeholder="Transaction ID or Sender Phone Number">
+                        <button class="btn btn-primary" id="vipSubmitTxBtn">Submit for Review</button>
+                    </div>
+                    <div class="manual-form-status hidden" id="vipSubmitStatus"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Toast Notification Container -->
     <div class="toast-container" id="toastContainer"></div>
 
