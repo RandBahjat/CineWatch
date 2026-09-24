@@ -13,9 +13,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260920_471">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_2448">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_706">
+    <link rel="stylesheet" href="movie.css?v=20260920_472">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_2449">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_707">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -118,10 +118,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_7872" defer></script>
-    <script src="series-data.js?v=20260818_7872" defer></script>
-    <script src="anime-data.js?v=20260818_7872" defer></script>
-    <script src="movie.js?v=20260920_470" defer></script>
+    <script src="movies-data.js?v=20260818_7873" defer></script>
+    <script src="series-data.js?v=20260818_7873" defer></script>
+    <script src="anime-data.js?v=20260818_7873" defer></script>
+    <script src="movie.js?v=20260920_471" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -396,8 +396,8 @@
                             <div class="browse-section-label notranslate" translate="no" id="browseSecMore">MORE</div>
                             <div class="nav-dropdown-grid nav-grid-2">
                                 <a href="#" class="nav-dropdown-card" id="browseCardVip" style="background: rgba(245, 158, 11, 0.08); border-color: rgba(245, 158, 11, 0.25);">
-                                    <div class="nav-dropdown-icon" style="color: #fbbf24;"><ion-icon name="sparkles"></ion-icon></div>
-                                    <span class="nav-dropdown-label notranslate" translate="no" id="browseLabelVip" style="color: #fbbf24; font-weight: 600;">VIP Club</span>
+                                    <div class="nav-dropdown-icon" style="color: #fbbf24;"><ion-icon name="videocam-outline"></ion-icon></div>
+                                    <span class="nav-dropdown-label notranslate" translate="no" id="browseLabelVip" style="color: #fbbf24; font-weight: 600;">4K Ultra HD</span>
                                 </a>
                                 <a href="download.html" class="nav-dropdown-card" id="browseCardDownload">
                                     <div class="nav-dropdown-icon"><ion-icon name="cloud-download-outline"></ion-icon></div>
@@ -453,9 +453,9 @@
                 </div>
                 
                 <!-- VIP Membership Button -->
-                <button class="nav-vip-btn" id="navVipBtn" title="VIP Membership">
-                    <ion-icon name="sparkles" class="vip-icon"></ion-icon>
-                    <span class="vip-text notranslate" translate="no">VIP</span>
+                <button class="nav-vip-btn" id="navVipBtn" title="4K Ultra HD">
+                    <ion-icon name="videocam-outline" class="vip-icon"></ion-icon>
+                    <span class="vip-text notranslate" translate="no">4K</span>
                 </button>
 
                 <!-- Search Icon Button -->
@@ -1040,6 +1040,27 @@
             <div class="browse-grid" id="animeGrid"></div>
             <!-- Pagination -->
             <div class="browse-pagination" id="animePagination"></div>
+        </section>
+
+
+        <!-- ===== 4K SECTION ===== -->
+        <section class="browse-section hidden" id="fourkSection">
+            <div class="browse-section-header">
+                <div class="browse-title-row">
+                    <h1 class="browse-title"><ion-icon name="videocam-outline"></ion-icon> 4K Ultra HD</h1>
+                    <span class="browse-count" id="fourkCount">0 titles</span>
+                </div>
+                <div class="browse-filter-wrapper" style="display: none;">
+                    <div class="browse-filter-bar" id="fourkFilterBar">
+                        <button class="browse-filter-btn active" data-genre="all" data-section="fourk">All</button>
+                    </div>
+                </div>
+            </div>
+            <div class="browse-results-bar">
+                <span id="fourkCountLabel">Showing all titles</span>
+            </div>
+            <div class="browse-grid" id="fourkGrid"></div>
+            <div class="browse-pagination" id="fourkPagination"></div>
         </section>
 
         <!-- Category Shelves Container -->
@@ -2595,7 +2616,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_706"></script>
+    <script src="welcome-disclaimer.js?v=20260918_707"></script>
 </body>
 
 </html>

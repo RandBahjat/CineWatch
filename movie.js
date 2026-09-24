@@ -1646,7 +1646,7 @@ function getMoviesList() {
   return MOVIES.filter((m) => {
     const isAnime = Boolean(m.isAnime || m.type === "Anime" || (m.genres && m.genres.includes("Anime")));
     const isSeries = Boolean(m.type === "TV Show" || m.type === "Series" || (Array.isArray(m.seasons) && m.seasons.length > 0));
-    return !isAnime && !isSeries && (m.type === "Movie" || !m.type);
+    return !m.is4k && !isAnime && !isSeries && (m.type === "Movie" || !m.type);
   });
 }
 
@@ -1654,8 +1654,13 @@ function getMoviesList() {
 function getSeriesList() {
   return MOVIES.filter((m) => {
     const isAnime = Boolean(m.isAnime || m.type === "Anime" || (m.genres && m.genres.includes("Anime")));
-    return !isAnime && (m.type === "TV Show" || m.type === "Series" || (Array.isArray(m.seasons) && m.seasons.length > 0));
+    return !m.is4k && !isAnime && (m.type === "TV Show" || m.type === "Series" || (Array.isArray(m.seasons) && m.seasons.length > 0));
   });
+}
+
+
+function get4kList() {
+  return MOVIES.filter((m) => m.is4k);
 }
 
 function getAnimeList() {
@@ -1736,6 +1741,28 @@ function renderSeriesSection() {
 }
 
 /** Render (or re-render) the full Anime browse section */
+
+function render4kSection() {
+  const all4k = get4kList();
+  const filtered = applyBrowseFilter(all4k, state.fourkFilter || 'all');
+  const totalPages = Math.max(1, Math.ceil(filtered.length / BROWSE_PAGE_SIZE));
+
+  if ((state.fourkPage || 1) > totalPages) state.fourkPage = totalPages;
+  const currPage = state.fourkPage || 1;
+
+  const countEl = document.getElementById("fourkCount");
+  if (countEl) countEl.textContent = `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`;
+
+  const labelEl = document.getElementById("fourkCountLabel");
+  if (labelEl) labelEl.textContent = `Titles: ${filtered.length}`;
+
+  renderBrowseGrid(filtered, "fourkGrid", currPage);
+  renderBrowsePagination("fourkPagination", currPage, totalPages, (p) => {
+    state.fourkPage = p;
+    render4kSection();
+  });
+}
+
 function renderAnimeSection() {
   const allAnime = getAnimeList();
   const filtered = applyBrowseFilter(allAnime, state.animeFilter);
@@ -1914,7 +1941,17 @@ function _performSwitchView(viewName) {
     }
   }
 
-  state.activeView = viewName;
+  
+  if (viewName === '4k') {
+    const tier = window.userVipTier || localStorage.getItem("userVipTier") || "free";
+    if (tier !== "gold" && tier !== "diamond") {
+      openVipModal();
+      if (typeof showToast === "function") showToast("You need Gold or Diamond membership to access 4K Ultra HD.", "warning");
+      _performSwitchView('home');
+      return;
+    }
+  }
+\n  state.activeView = viewName;
   const navLinks = document.querySelectorAll(".nav-link");
   navLinks.forEach((link) => {
     if (link.dataset.view === viewName) link.classList.add("active");
@@ -1931,7 +1968,7 @@ function _performSwitchView(viewName) {
   const browseTrigger = document.getElementById("navBrowseTrigger");
   const browseCards = document.querySelectorAll(".nav-dropdown-card");
   const homeBtn = document.getElementById("navHomeBtn");
-  const isBrowseSubView = (viewName === 'movies' || viewName === 'series' || viewName === 'anime' || viewName === 'continue' || viewName === 'watchlist');
+  const isBrowseSubView = (viewName === 'movies' || viewName === 'series' || viewName === 'anime' || viewName === 'continue' || viewName === 'watchlist' || viewName === '4k');
 
   if (browseTrigger) {
     if (isBrowseSubView) {
@@ -1968,7 +2005,7 @@ function _performSwitchView(viewName) {
 
   const mobileDockBrowse = document.getElementById("mobileDockBrowse");
   if (mobileDockBrowse) {
-    if (viewName === 'movies' || viewName === 'series' || viewName === 'anime' || viewName === 'continue') {
+    if (viewName === 'movies' || viewName === 'series' || viewName === 'anime' || viewName === 'continue' || viewName === '4k') {
       mobileDockBrowse.classList.add("active");
     } else if (viewName === 'home' || viewName === 'watchlist') {
       mobileDockBrowse.classList.remove("active");
@@ -2070,6 +2107,8 @@ function _performSwitchView(viewName) {
       const bar = document.getElementById("seriesFilterBar");
       if (bar && window.updateFilterScrollNav) window.updateFilterScrollNav(bar);
     }, 60);
+  } else if (viewName === "4k") {
+    render4kSection();
   } else if (viewName === "anime") {
     hideAll();
     if (animeSection) animeSection.classList.remove("hidden");
@@ -2266,7 +2305,7 @@ function renderUserBadge() {
         <div class="account-panel-actions">
           <button class="account-panel-action-btn panel-vip-btn" id="panelVipUpgradeBtn" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(239, 68, 68, 0.22)); border: 1px solid rgba(245, 158, 11, 0.55); color: #fbbf24; font-weight: 700; margin-bottom: 8px;">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <span class="notranslate" translate="no">CineWatch VIP Club</span>
+            <span class="notranslate" translate="no">4K Ultra HD</span>
           </button>
 
           <label for="panelAvatarInput" class="account-panel-action-btn" id="uploadAvatarBtn">
@@ -6730,7 +6769,35 @@ function updateIframeServer(serverOverride) {
     serverBar.classList.remove("hidden");
     serverBar.style.display = "flex";
   }
-  syncServerPillsUI(activeServer);
+  syncServerPillsUI(activeServer);\n
+  const is4kMovie = !!data.is4k;
+  const srv1 = document.querySelector('.details-server-btn[data-server="vidlink"]');
+  const srv2 = document.querySelector('.details-server-btn[data-server="mapple"]');
+  const srv3 = document.querySelector('.details-server-btn[data-server="vidapi"]');
+  const srv4 = document.querySelector('.details-server-btn[data-server="embedmaster"]');
+  
+  if (is4kMovie) {
+    if (srv1) srv1.style.display = 'none';
+    if (srv3) srv3.style.display = 'none';
+    if (srv2) srv2.style.display = 'inline-flex';
+    if (srv4) srv4.style.display = 'inline-flex';
+    // Switch to a 4k server if active server is hidden
+    if (activeServer === 'vidlink' || activeServer === 'vidapi') {
+      const avail = [srv2, srv4].find(s => s && s.style.display !== 'none');
+      if(avail) avail.click();
+    }
+  } else {
+    if (srv2) srv2.style.display = 'none';
+    if (srv4) srv4.style.display = 'none';
+    if (srv1) srv1.style.display = 'inline-flex';
+    if (srv3) srv3.style.display = 'inline-flex';
+    // Switch to a standard server if active server is hidden
+    if (activeServer === 'mapple' || activeServer === 'embedmaster') {
+      const avail = [srv1, srv3].find(s => s && s.style.display !== 'none');
+      if(avail) avail.click();
+    }
+  }
+
 
   let newUrl = '';
   let allowAttr = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
@@ -7197,3 +7264,13 @@ function triggerPop() {
     star.classList.add('pop');
   });
 }
+\n
+window.check4KAccess = function() {
+    const tier = window.userVipTier || localStorage.getItem("userVipTier") || "free";
+    if (tier === "gold" || tier === "diamond") {
+        window.location.href = "index.html?section=4k";
+    } else {
+        openVipModal();
+        if (typeof showToast === "function") showToast("You need Gold or Diamond membership to access 4K Ultra HD.", "warning");
+    }
+};
