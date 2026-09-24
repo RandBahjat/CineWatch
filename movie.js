@@ -4334,7 +4334,7 @@ function renderVipWalletDetails(walletKey) {
     </div>
     <div class="wallet-row">
       <span class="wallet-row-label">Amount Due:</span>
-      <span style="font-weight: 800; color: #fbbf24;">${selectedVipTierData.price}</span>
+      <span style="font-weight: 800; color: #fbbf24;">$${selectedVipTierData.price}</span>
     </div>
     ${w.note ? `
     <div class="wallet-note-box" style="margin-top: 12px; padding: 10px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; font-size: 0.82rem; color: rgba(255,255,255,0.8); display: flex; align-items: flex-start; gap: 8px;">
