@@ -1,13 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 
-const rootMovieJs = path.join(__dirname, '..', 'movie.js');
-let content = fs.readFileSync(rootMovieJs, 'utf8');
+const appMovieJs = path.join(__dirname, '..', 'cinewatch-app', 'movie.js');
+if (fs.existsSync(appMovieJs)) {
+  let content = fs.readFileSync(appMovieJs, 'utf8');
 
-// Update VIP_TIER_CONFIG
-const oldConfigRegex = /const VIP_TIER_CONFIG = \{[\s\S]*?\n\};\s*let currentVipBillingCycle = "monthly";\s*let selectedVipTierData = \{[\s\S]*?\};/;
+  const oldConfigRegex = /const VIP_TIER_CONFIG = \{[\s\S]*?\n\};\s*let currentVipBillingCycle = "monthly";\s*let selectedVipTierData = \{[\s\S]*?\};/;
 
-const newConfig = `const VIP_TIER_CONFIG = {
+  const newConfig = `const VIP_TIER_CONFIG = {
   free: {
     name: "Basic",
     monthly: { price: "0", iqd: "", period: "/ forever", btnText: "Current Plan" },
@@ -40,17 +40,14 @@ let selectedVipTierData = {
   iqd: ""
 };`;
 
-if (oldConfigRegex.test(content)) {
-  content = content.replace(oldConfigRegex, newConfig);
-  console.log("VIP_TIER_CONFIG replaced successfully.");
-} else {
-  console.log("oldConfigRegex didn't match!");
-}
+  if (oldConfigRegex.test(content)) {
+    content = content.replace(oldConfigRegex, newConfig);
+    console.log("cinewatch-app VIP_TIER_CONFIG replaced successfully.");
+  }
 
-// Update setVipBillingCycle
-const oldSetCycleRegex = /function setVipBillingCycle\(cycle\) \{[\s\S]*?\n\}\s*window\.setVipBillingCycle = setVipBillingCycle;/;
+  const oldSetCycleRegex = /function setVipBillingCycle\(cycle\) \{[\s\S]*?\n\}\s*window\.setVipBillingCycle = setVipBillingCycle;/;
 
-const newSetCycle = `function setVipBillingCycle(cycle) {
+  const newSetCycle = `function setVipBillingCycle(cycle) {
   currentVipBillingCycle = cycle;
   const switchEl = document.getElementById("vipBillingSwitch");
   const monthlyBtn = document.getElementById("billingBtnMonthly");
@@ -129,12 +126,19 @@ const newSetCycle = `function setVipBillingCycle(cycle) {
 }
 window.setVipBillingCycle = setVipBillingCycle;`;
 
-if (oldSetCycleRegex.test(content)) {
-  content = content.replace(oldSetCycleRegex, newSetCycle);
-  console.log("setVipBillingCycle replaced successfully.");
-} else {
-  console.log("oldSetCycleRegex didn't match!");
+  if (oldSetCycleRegex.test(content)) {
+    content = content.replace(oldSetCycleRegex, newSetCycle);
+    console.log("cinewatch-app setVipBillingCycle replaced successfully.");
+  }
+
+  fs.writeFileSync(appMovieJs, content, 'utf8');
 }
 
-fs.writeFileSync(rootMovieJs, content, 'utf8');
-console.log("Done updating root movie.js");
+const appIndexHtml = path.join(__dirname, '..', 'cinewatch-app', 'index.html');
+if (fs.existsSync(appIndexHtml)) {
+  let html = fs.readFileSync(appIndexHtml, 'utf8');
+  // Remove local-price spans with IQD
+  html = html.replace(/<span class="vip-local-price"[^>]*>[^<]*<\/span>/g, '');
+  fs.writeFileSync(appIndexHtml, html, 'utf8');
+  console.log("cinewatch-app index.html cleaned of IQD successfully.");
+}
