@@ -11144,6 +11144,19 @@ min-width: 0;
   box-shadow: 0 0 16px rgba(245, 158, 11, 0.15);
 }
 
+
+.wallet-tab-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.wallet-tab:hover .wallet-tab-icon {
+  transform: scale(1.08);
+}
+
 .wallet-badge-dot {
   width: 10px;
   height: 10px;
