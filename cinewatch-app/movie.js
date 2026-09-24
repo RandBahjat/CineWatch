@@ -7265,7 +7265,7 @@ function triggerPop() {
     star.classList.add('pop');
   });
 }
-\n
+
 window.check4KAccess = function() {
     const tier = window.userVipTier || localStorage.getItem("userVipTier") || "free";
     if (tier === "gold" || tier === "diamond") {
