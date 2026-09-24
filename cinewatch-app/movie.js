@@ -4291,7 +4291,8 @@ function selectVipTier(tierData) {
   if (iqdEl) iqdEl.textContent = tierData.iqd;
 
   const username = state.user?.name || state.user?.email || "Guest User";
-  const msg = encodeURIComponent(`Hello CineWatch! I would like to activate ${tierData.name} ($${tierData.price} / ${tierData.iqd}).\nMy CineWatch Username: ${username}`);
+  const priceDisplay = tierData.iqd ? `${tierData.price} (${tierData.iqd})` : `${tierData.price}`;
+  const msg = encodeURIComponent(`Hello CineWatch! I would like to activate ${tierData.name} (${priceDisplay}).\nMy CineWatch Username: ${username}`);
 
   const tgBtn = document.getElementById("vipTelegramBtn");
   if (tgBtn) tgBtn.href = `https://t.me/randibajat?text=${msg}`;
