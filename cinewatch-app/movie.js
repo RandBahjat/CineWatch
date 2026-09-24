@@ -4094,7 +4094,7 @@ const VIP_WALLETS = {
 const VIP_TIER_CONFIG = {
   free: {
     name: "Free Explorer",
-    monthly: { price: "0", iqd: "0 IQD", period: "/ forever", btnText: "Current Active Plan" },
+    monthly: { price: "0", iqd: "", period: "/ forever", btnText: "Current Plan" },
     yearly: { price: "0", iqd: "0 IQD", period: "/ forever", btnText: "Current Active Plan" }
   },
   bronze: {
