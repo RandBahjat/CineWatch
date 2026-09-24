@@ -1951,7 +1951,7 @@ function _performSwitchView(viewName) {
       return;
     }
   }
-\n  state.activeView = viewName;
+  state.activeView = viewName;
   const navLinks = document.querySelectorAll(".nav-link");
   navLinks.forEach((link) => {
     if (link.dataset.view === viewName) link.classList.add("active");
