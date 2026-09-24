@@ -73,7 +73,7 @@ async function main() {
 
   console.log('[1/4] Loading series data...');
   const fileContent = fs.readFileSync(seriesDataPath, 'utf8');
-  const mockWindow = {};
+  global.window = {};
 
   try {
     eval(fileContent);
@@ -82,7 +82,7 @@ async function main() {
     process.exit(1);
   }
 
-  const seriesList = mockWindow._SERIES_DATA;
+  const seriesList = global.window._SERIES_DATA;
   if (!Array.isArray(seriesList) || seriesList.length === 0) {
     console.error('❌ Error: No series found in window._SERIES_DATA.');
     process.exit(1);
