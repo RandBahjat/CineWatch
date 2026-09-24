@@ -6769,7 +6769,8 @@ function updateIframeServer(serverOverride) {
     serverBar.classList.remove("hidden");
     serverBar.style.display = "flex";
   }
-  syncServerPillsUI(activeServer);\n
+  syncServerPillsUI(activeServer);
+
   const is4kMovie = !!data.is4k;
   const srv1 = document.querySelector('.details-server-btn[data-server="vidlink"]');
   const srv2 = document.querySelector('.details-server-btn[data-server="mapple"]');
