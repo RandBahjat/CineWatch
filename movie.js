@@ -2104,6 +2104,7 @@ function _performSwitchView(viewName) {
     moviesSection.classList.remove("hidden");
     // Reset filter & page on fresh nav; keep state if already there
     renderMoviesSection();
+    updateSectionSEO('movies');
     setTimeout(() => {
       const bar = document.getElementById("moviesFilterBar");
       if (bar && window.updateFilterScrollNav) window.updateFilterScrollNav(bar);
@@ -2112,6 +2113,7 @@ function _performSwitchView(viewName) {
     hideAll();
     seriesSection.classList.remove("hidden");
     renderSeriesSection();
+    updateSectionSEO('series');
     setTimeout(() => {
       const bar = document.getElementById("seriesFilterBar");
       if (bar && window.updateFilterScrollNav) window.updateFilterScrollNav(bar);
@@ -2122,6 +2124,7 @@ function _performSwitchView(viewName) {
     hideAll();
     if (animeSection) animeSection.classList.remove("hidden");
     renderAnimeSection();
+    updateSectionSEO('anime');
     setTimeout(() => {
       const bar = document.getElementById("animeFilterBar");
       if (bar && window.updateFilterScrollNav) window.updateFilterScrollNav(bar);
