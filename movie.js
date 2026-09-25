@@ -4086,7 +4086,7 @@ const VIP_WALLETS = {
   },
   fastpay: {
     name: "FastPay",
-    number: "0774 820 1148",
+    number: "Contact Support on Telegram",
     holder: "CineWatch VIP",
     note: "Send payment via FastPay mobile app to this number.",
     color: "#e11d48",
@@ -4094,7 +4094,7 @@ const VIP_WALLETS = {
   },
   zaincash: {
     name: "ZainCash",
-    number: "0774 820 1148",
+    number: "Contact Support on Telegram",
     holder: "CineWatch VIP",
     note: "Send cash transfer via ZainCash wallet to this phone number.",
     color: "#007a78",
@@ -4303,7 +4303,7 @@ function selectVipTier(tierData) {
   if (tgBtn) tgBtn.href = `https://t.me/randibajat?text=${msg}`;
 
   const waBtn = document.getElementById("vipWhatsappBtn");
-  if (waBtn) waBtn.href = `https://wa.me/9647748201148?text=${msg}`;
+  if (waBtn) waBtn.href = `https://wa.me/?text=${msg}`;
 
   renderVipWalletDetails(currentVipWalletKey);
 }
