@@ -10588,6 +10588,7 @@ min-width: 0;
   color: #fff;
   letter-spacing: -0.025em;
   margin-bottom: 0.45rem;
+  text-align: center;
   background: linear-gradient(135deg, #ffffff 40%, rgba(255, 255, 255, 0.75) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
