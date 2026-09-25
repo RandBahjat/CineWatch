@@ -4,7 +4,7 @@ if (window.location.hash.includes("type=recovery")) {
 }
 
 /**
- * CineWatch ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Pure Vanilla JavaScript (ES6+)
+ * CineWatch ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Pure Vanilla JavaScript (ES6+)
  * Feature-rich movie streaming platform logic
  */
 
@@ -15,7 +15,7 @@ let FEATURED_TITLES = ["The Love Hypothesis","One Last Shot","Resident Evil","Ne
   "Drawn Together"];
 let TOP_10_TRENDING_TODAY = ["The Love Hypothesis","One Last Shot",
   "Resident Evil","Brothers","c","Spider-Man: Brand New Day","Heart of the Beast" , "Digger ","Slow Horses", "Lanterns","MobLand"];
-let TRENDING_THIS_WEEK_MOVIES = ["Resident Evil","The End of Oak Street","Spider-Man: Brand New Day", "The Odysessey", "Toy Story 5", "Obsession", "The Love Hypothesis", "Moana(2026)", "One Last Shot", "Digger", "The Rivals of Amziah King", "Backrooms", "You+Me ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Against the World", "Coyote vs. Acme", "Just Play Dead"];
+let TRENDING_THIS_WEEK_MOVIES = ["Resident Evil","The End of Oak Street","Spider-Man: Brand New Day", "The Odysessey", "Toy Story 5", "Obsession", "The Love Hypothesis", "Moana(2026)", "One Last Shot", "Digger", "The Rivals of Amziah King", "Backrooms", "You+Me ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ Against the World", "Coyote vs. Acme", "Just Play Dead"];
 let TRENDING_THIS_WEEK_SERIES = ["Monster: The Lizzie Borden Story","MobLand","Neagley", "Reacher", "Lioness", "Lanterns", "Slow Horses", "One Piece", "Ted Lasso","City of Blood", "Stranger Things: Tales from '85", "Silo"];
 const POPULAR_MOVIES = ["Spider-Man: Brand New Day","Resident Evil","The End of Oak Street","Coyote vs. Acme","The Odysessey","Mutiny", "Moana(2026)", "The Runner","Obsession", "Spider-Man: No Way Home","Backrooms", "Disclosure Day", "The Death of Robin Hood", "The Last House","Drawn Together", "Michael", "Project Hail Mary","Avatar Aang: The Last Airbender","The Shawshank Redemption"];
 const POPULAR_SERIES = ["MobLand (The Donovans)", "Star Trek: Strange New Worlds", "Slow Horses", "Reacher","The Mentalist","The Gentlemen", "Breaking Bad","Law & Order: Special Victims Unit", "Ted Lasso","House", "Lucky", "Off Campus", "Silo", "Game of Thrones", "The Sopranos", "Stranger Things", "The Boys","The Rookie","The Good Doctor","Dexter","From","S.W.A.T.","The Walking Dead","Stranger Things"];
@@ -49,42 +49,42 @@ function translateGenre(genre) {
   const isSorani = cookies.includes('googtrans=/en/ckb');
   const isArabic = cookies.includes('googtrans=/en/ar');
   if (isSorani) {
-    if (genre === 'all') return 'Ãƒâ„¢Ã¢â‚¬Â¡Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ„¢Ã¢â‚¬Â¦Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã‹â€  ÃƒËœÃ‚Â¬Ãƒâ€ºÃ¢â‚¬Â ÃƒËœÃ‚Â±Ãƒâ€ºÃ¢â‚¬Â¢ÃƒÅ¡Ã‚Â©ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â ';
-    if (genre === 'Action') return 'ÃƒËœÃ‚Â¦ÃƒËœÃ‚Â§ÃƒÅ¡Ã‚Â©ÃƒËœÃ‚Â´Ãƒâ„¢Ã¢â‚¬Â ';
-    if (genre === 'Adventure') return 'ÃƒËœÃ‚Â³Ãƒâ€ºÃ¢â‚¬Â¢ÃƒËœÃ‚Â±ÃƒÅ¡Ã‚Â©Ãƒâ€ºÃ…Â½ÃƒËœÃ‚Â´Ãƒâ€ºÃ…â€™';
-    if (genre === 'Animation') return 'ÃƒËœÃ‚Â¦Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ…â€™Ãƒâ„¢Ã¢â‚¬Â¦Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ€ºÃ…â€™ÃƒËœÃ‚Â´Ãƒâ„¢Ã¢â‚¬Â ';
-    if (genre === 'Comedy') return 'ÃƒÅ¡Ã‚Â©Ãƒâ€ºÃ¢â‚¬Â Ãƒâ„¢Ã¢â‚¬Â¦Ãƒâ€ºÃ…â€™ÃƒËœÃ‚Â¯Ãƒâ€ºÃ…â€™';
-    if (genre === 'Crime') return 'ÃƒËœÃ‚ÂªÃƒËœÃ‚Â§Ãƒâ„¢Ã‹â€ ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â ÃƒÅ¡Ã‚Â©ÃƒËœÃ‚Â§ÃƒËœÃ‚Â±Ãƒâ€ºÃ…â€™';
-    if (genre === 'Drama') return 'ÃƒËœÃ‚Â¯ÃƒËœÃ‚Â±ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚Â§';
-    if (genre === 'Family') return 'ÃƒËœÃ‚Â®Ãƒâ€ºÃ…Â½ÃƒËœÃ‚Â²ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ…â€™';
-    if (genre === 'Kids') return 'Ãƒâ„¢Ã¢â‚¬Â¦Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â¯ÃƒËœÃ‚Â§ÃƒÅ¡Ã‚ÂµÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â ';
-    if (genre === 'History') return 'Ãƒâ„¢Ã¢â‚¬Â¦Ãƒâ€ºÃ…Â½ÃƒÅ¡Ã‹Å“Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã‹â€ Ãƒâ€ºÃ…â€™Ãƒâ€ºÃ…â€™';
-    if (genre === 'Fantasy') return 'Ãƒâ„¢Ã‚ÂÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚ÂªÃƒËœÃ‚Â§ÃƒËœÃ‚Â²Ãƒâ€ºÃ…â€™ÃƒËœÃ‚Â§';
-    if (genre === 'Horror') return 'ÃƒËœÃ‚ÂªÃƒËœÃ‚Â±ÃƒËœÃ‚Â³Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â§ÃƒÅ¡Ã‚Â©';
-    if (genre === 'Mystery') return 'Ãƒâ„¢Ã¢â‚¬Â Ãƒâ„¢Ã¢â‚¬Â¡Ãƒâ€ºÃ…Â½Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ…â€™';
-    if (genre === 'Romance') return 'ÃƒÅ¡Ã¢â‚¬Â¢Ãƒâ€ºÃ¢â‚¬Â Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â³Ãƒâ€ºÃ…â€™';
-    if (genre === 'Sci-Fi' || genre === 'Science-Fiction' || genre === 'Science Fiction') return 'ÃƒËœÃ‚Â®Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ€ºÃ…â€™ÃƒËœÃ‚Â§ÃƒÅ¡Ã‚ÂµÃƒâ€ºÃ…â€™ ÃƒËœÃ‚Â²ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â³ÃƒËœÃ‚ÂªÃƒâ€ºÃ…â€™';
-    if (genre === 'Thriller') return 'Ãƒâ„¢Ã¢â‚¬Â¡Ãƒâ€ºÃ¢â‚¬Â¢ÃƒËœÃ‚Â³ÃƒËœÃ‚ÂªÃƒËœÃ‚Â¨ÃƒËœÃ‚Â²Ãƒâ„¢Ã‹â€ Ãƒâ€ºÃ…Â½Ãƒâ„¢Ã¢â‚¬Â ';
-    if (genre === 'War') return 'ÃƒËœÃ‚Â¬Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ„¢Ã¢â‚¬Â ÃƒÅ¡Ã‚Â¯';
+    if (genre === 'all') return 'ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â  ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ';
+    if (genre === 'Action') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ';
+    if (genre === 'Adventure') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã‚Â½ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢';
+    if (genre === 'Animation') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ';
+    if (genre === 'Comedy') return 'ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢';
+    if (genre === 'Crime') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢';
+    if (genre === 'Drama') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§';
+    if (genre === 'Family') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã‚Â½ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â²ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢';
+    if (genre === 'Kids') return 'ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ';
+    if (genre === 'History') return 'ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã‚Â½ÃƒÆ’Ã…Â¡Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢';
+    if (genre === 'Fantasy') return 'ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚ÂÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â²ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§';
+    if (genre === 'Horror') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©';
+    if (genre === 'Mystery') return 'ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã‚Â½ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢';
+    if (genre === 'Romance') return 'ÃƒÆ’Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢';
+    if (genre === 'Sci-Fi' || genre === 'Science-Fiction' || genre === 'Science Fiction') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â²ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢';
+    if (genre === 'Thriller') return 'ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â²ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã‚Â½ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ';
+    if (genre === 'War') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â¯';
   }
   if (isArabic) {
-    if (genre === 'all') return 'ÃƒËœÃ‚Â¬Ãƒâ„¢Ã¢â‚¬Â¦Ãƒâ„¢Ã…Â ÃƒËœÃ‚Â¹ ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚Â£Ãƒâ„¢Ã¢â‚¬Â Ãƒâ„¢Ã‹â€ ÃƒËœÃ‚Â§ÃƒËœÃ‚Â¹';
-    if (genre === 'Action') return 'ÃƒËœÃ‚Â£Ãƒâ„¢Ã†â€™ÃƒËœÃ‚Â´Ãƒâ„¢Ã¢â‚¬Â ';
-    if (genre === 'Adventure') return 'Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚ÂºÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚Â±ÃƒËœÃ‚Â©';
-    if (genre === 'Animation') return 'ÃƒËœÃ‚Â±ÃƒËœÃ‚Â³Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Â¦ Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚ÂªÃƒËœÃ‚Â­ÃƒËœÃ‚Â±Ãƒâ„¢Ã†â€™ÃƒËœÃ‚Â©';
-    if (genre === 'Comedy') return 'Ãƒâ„¢Ã†â€™Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Â¦Ãƒâ„¢Ã…Â ÃƒËœÃ‚Â¯Ãƒâ„¢Ã…Â ÃƒËœÃ‚Â§';
-    if (genre === 'Crime') return 'ÃƒËœÃ‚Â¬ÃƒËœÃ‚Â±Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚Â©';
-    if (genre === 'Drama') return 'ÃƒËœÃ‚Â¯ÃƒËœÃ‚Â±ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚Â§';
-    if (genre === 'Family') return 'ÃƒËœÃ‚Â¹ÃƒËœÃ‚Â§ÃƒËœÃ‚Â¦Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã…Â ';
-    if (genre === 'Kids') return 'ÃƒËœÃ‚Â£ÃƒËœÃ‚Â·Ãƒâ„¢Ã‚ÂÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾';
-    if (genre === 'History') return 'ÃƒËœÃ‚ÂªÃƒËœÃ‚Â§ÃƒËœÃ‚Â±Ãƒâ„¢Ã…Â ÃƒËœÃ‚Â®Ãƒâ„¢Ã…Â ';
-    if (genre === 'Fantasy') return 'Ãƒâ„¢Ã‚ÂÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚ÂªÃƒËœÃ‚Â§ÃƒËœÃ‚Â²Ãƒâ„¢Ã…Â ÃƒËœÃ‚Â§';
-    if (genre === 'Horror') return 'ÃƒËœÃ‚Â±ÃƒËœÃ‚Â¹ÃƒËœÃ‚Â¨';
-    if (genre === 'Mystery') return 'ÃƒËœÃ‚ÂºÃƒâ„¢Ã¢â‚¬Â¦Ãƒâ„¢Ã‹â€ ÃƒËœÃ‚Â¶';
-    if (genre === 'Romance') return 'ÃƒËœÃ‚Â±Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â³Ãƒâ„¢Ã…Â ';
-    if (genre === 'Sci-Fi' || genre === 'Science-Fiction' || genre === 'Science Fiction') return 'ÃƒËœÃ‚Â®Ãƒâ„¢Ã…Â ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ ÃƒËœÃ‚Â¹Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã¢â‚¬Â¦Ãƒâ„¢Ã…Â ';
-    if (genre === 'Thriller') return 'ÃƒËœÃ‚Â¥ÃƒËœÃ‚Â«ÃƒËœÃ‚Â§ÃƒËœÃ‚Â±ÃƒËœÃ‚Â©';
-    if (genre === 'War') return 'ÃƒËœÃ‚Â­ÃƒËœÃ‚Â±ÃƒËœÃ‚Â¨';
+    if (genre === 'all') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹';
+    if (genre === 'Action') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ';
+    if (genre === 'Adventure') return 'ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂºÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â©';
+    if (genre === 'Animation') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â­ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â©';
+    if (genre === 'Comedy') return 'ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§';
+    if (genre === 'Crime') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â©';
+    if (genre === 'Drama') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§';
+    if (genre === 'Family') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ';
+    if (genre === 'Kids') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â£ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â·ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚ÂÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾';
+    if (genre === 'History') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ';
+    if (genre === 'Fantasy') return 'ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚ÂÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â²ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§';
+    if (genre === 'Horror') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨';
+    if (genre === 'Mystery') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¶';
+    if (genre === 'Romance') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ';
+    if (genre === 'Sci-Fi' || genre === 'Science-Fiction' || genre === 'Science Fiction') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ';
+    if (genre === 'Thriller') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â«ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â©';
+    if (genre === 'War') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â­ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨';
   }
   return genre;
 }
@@ -95,7 +95,7 @@ function formatNumber(val) {
   const cookies = document.cookie || '';
   const isSorani = cookies.includes('googtrans=/en/ckb');
   if (!isSorani) return str;
-  return str.replace(/[0-9]/g, d => 'Ãƒâ„¢Ã‚Â Ãƒâ„¢Ã‚Â¡Ãƒâ„¢Ã‚Â¢Ãƒâ„¢Ã‚Â£Ãƒâ„¢Ã‚Â¤Ãƒâ„¢Ã‚Â¥Ãƒâ„¢Ã‚Â¦Ãƒâ„¢Ã‚Â§Ãƒâ„¢Ã‚Â¨Ãƒâ„¢Ã‚Â©'[d]);
+  return str.replace(/[0-9]/g, d => 'ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â©'[d]);
 }
 
 function formatMediaType(type) {
@@ -103,14 +103,14 @@ function formatMediaType(type) {
   const isCkb = cookies.includes('googtrans=/en/ckb');
   const isAr = cookies.includes('googtrans=/en/ar');
   if (isCkb) {
-    if (type === 'TV Show' || type === 'Series') return 'ÃƒËœÃ‚Â²Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â¬Ãƒâ€ºÃ…â€™ÃƒËœÃ‚Â±Ãƒâ€ºÃ¢â‚¬Â¢';
-    if (type === 'Anime') return 'ÃƒËœÃ‚Â¦Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ…â€™Ãƒâ„¢Ã¢â‚¬Â¦Ãƒâ€ºÃ…Â½';
-    return 'Ãƒâ„¢Ã‚ÂÃƒâ€ºÃ…â€™Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã¢â‚¬Â¦';
+    if (type === 'TV Show' || type === 'Series') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â²ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢';
+    if (type === 'Anime') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã‚Â½';
+    return 'ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦';
   }
   if (isAr) {
-    if (type === 'TV Show' || type === 'Series') return 'Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚Â³Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚Â³Ãƒâ„¢Ã¢â‚¬Å¾';
-    if (type === 'Anime') return 'ÃƒËœÃ‚Â£Ãƒâ„¢Ã¢â‚¬Â Ãƒâ„¢Ã¢â‚¬Â¦Ãƒâ„¢Ã…Â ';
-    return 'Ãƒâ„¢Ã‚ÂÃƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã¢â‚¬Â¦';
+    if (type === 'TV Show' || type === 'Series') return 'ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾';
+    if (type === 'Anime') return 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ';
+    return 'ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦';
   }
   return type;
 }
@@ -131,8 +131,8 @@ function formatRating(rating) {
   const cookies = document.cookie || '';
   const isSorani = cookies.includes('googtrans=/en/ckb');
   if (!isSorani) return str;
-  // Convert digits to Kurdish / Eastern-Arabic numerals: Ãƒâ„¢Ã‚Â Ãƒâ„¢Ã‚Â¡Ãƒâ„¢Ã‚Â¢Ãƒâ„¢Ã‚Â£Ãƒâ„¢Ã‚Â¤Ãƒâ„¢Ã‚Â¥Ãƒâ„¢Ã‚Â¦Ãƒâ„¢Ã‚Â§Ãƒâ„¢Ã‚Â¨Ãƒâ„¢Ã‚Â©
-  return str.replace(/[0-9]/g, d => 'Ãƒâ„¢Ã‚Â Ãƒâ„¢Ã‚Â¡Ãƒâ„¢Ã‚Â¢Ãƒâ„¢Ã‚Â£Ãƒâ„¢Ã‚Â¤Ãƒâ„¢Ã‚Â¥Ãƒâ„¢Ã‚Â¦Ãƒâ„¢Ã‚Â§Ãƒâ„¢Ã‚Â¨Ãƒâ„¢Ã‚Â©'[d]);
+  // Convert digits to Kurdish / Eastern-Arabic numerals: ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â©
+  return str.replace(/[0-9]/g, d => 'ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â©'[d]);
 }
 
 function getLocalizedOverview(item) {
@@ -409,7 +409,7 @@ window.addEventListener("cw:authChanged", async (e) => {
 
     // Only reload if the user actively just logged in (flag set by login/signup form).
     // Do NOT reload on auto-restore (Firebase fires authChanged on every page load
-    // when the session is already active ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â that would cause an infinite reload loop).
+    // when the session is already active ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â that would cause an infinite reload loop).
     if (sessionStorage.getItem("cw_loginPending")) {
       sessionStorage.removeItem("cw_loginPending");
       window.location.reload();
@@ -483,7 +483,7 @@ function toggleFavorite(movieId) {
   } else {
     state.favorites.push(movieId);
     added = true;
-    showToast("ÃƒÂ¢Ã¢â€žÂ¢Ã‚Â¥ Added to My Watchlist!");
+    showToast("ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢Ãƒâ€šÃ‚Â¥ Added to My Watchlist!");
   }
   localStorage.setItem(KEYS.FAVORITES, JSON.stringify(state.favorites));
   if (window.CW_API && state.user) {
@@ -759,14 +759,14 @@ function setupHeroBanner() {
   const isSorani = currentLang === 'ckb';
   const isArabic = currentLang === 'ar';
 
-  const playText = isSorani ? 'ÃƒËœÃ‚Â³Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ€ºÃ…â€™ÃƒËœÃ‚Â±ÃƒÅ¡Ã‚Â©ÃƒËœÃ‚Â±ÃƒËœÃ‚Â¯Ãƒâ„¢Ã¢â‚¬Â ' : (isArabic ? 'ÃƒËœÃ‚ÂªÃƒËœÃ‚Â´ÃƒËœÃ‚ÂºÃƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Å¾' : 'Play');
-  const moreText = isSorani ? 'ÃƒËœÃ‚Â²Ãƒâ€ºÃ…â€™ÃƒËœÃ‚Â§ÃƒËœÃ‚ÂªÃƒËœÃ‚Â± ÃƒËœÃ‚Â¨ÃƒËœÃ‚Â¨Ãƒâ€ºÃ…â€™Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ¢â‚¬Â¢' : (isArabic ? 'ÃƒËœÃ‚Â¹ÃƒËœÃ‚Â±ÃƒËœÃ‚Â¶ ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚Â²Ãƒâ„¢Ã…Â ÃƒËœÃ‚Â¯' : 'See More');
+  const playText = isSorani ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ' : (isArabic ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾' : 'Play');
+  const moreText = isSorani ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â²ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â± ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢' : (isArabic ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¶ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â²ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯' : 'See More');
 
   // Generate ALL slides dynamically from featured array
   heroTrack.innerHTML = featured.map((movie, idx) => {
     const backdropUrl = movie.backdrop || movie.poster || "";
     const bgStyle = backdropUrl ? `style="background-image: url('${backdropUrl}')"` : "";
-    const genresList = (movie.genres || []).slice(0, 3).map(translateGenre).join(" ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ ");
+    const genresList = (movie.genres || []).slice(0, 3).map(translateGenre).join(" ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ ");
 
     return `
       <div class="hero-slide ${idx === 0 ? 'active' : ''}">
@@ -775,10 +775,10 @@ function setupHeroBanner() {
         <div class="hero-content">
             <h1 class="hero-title notranslate" translate="no">${movie.title}</h1>
             <div class="hero-meta">
-                <span class="meta-rating notranslate" translate="no"><span class="star-icon">ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦</span> ${formatRating(movie.rating)}</span>
-                <span class="meta-dot">ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢</span>
+                <span class="meta-rating notranslate" translate="no"><span class="star-icon">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦</span> ${formatRating(movie.rating)}</span>
+                <span class="meta-dot">ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢</span>
                 <span class="meta-year notranslate" translate="no">${formatNumber(movie.year)}</span>
-                ${genresList ? `<span class="meta-dot">ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢</span><span class="meta-genres-inline">${genresList}</span>` : ""}
+                ${genresList ? `<span class="meta-dot">ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢</span><span class="meta-genres-inline">${genresList}</span>` : ""}
             </div>
             <p class="hero-overview ${getLocalizedOverview(movie).isKurdish ? 'notranslate' : ''}" translate="${getLocalizedOverview(movie).isKurdish ? 'no' : 'yes'}">${getLocalizedOverview(movie).text}</p>
             <div class="hero-actions">
@@ -794,7 +794,7 @@ function setupHeroBanner() {
     `;
   }).join("");
 
-  // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Real-time Smooth Drag / Swipe to change slides ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+  // ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ Real-time Smooth Drag / Swipe to change slides ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬
   const heroBanner = document.getElementById("heroBanner");
   let startX = 0;
   let currentTranslate = 0;
@@ -945,7 +945,7 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
       <div class="card-details">
         <h4 class="card-title notranslate" translate="no">${movie.title}</h4>
         <div class="card-meta">
-          <span class="card-rating notranslate" translate="no"><span class="star-icon" style="color: #ffc107; margin-right: 3px;">ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦</span>${formatRating(movie.rating)}</span>
+          <span class="card-rating notranslate" translate="no"><span class="star-icon" style="color: #ffc107; margin-right: 3px;">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦</span>${formatRating(movie.rating)}</span>
           ${movie.age ? `<span class="card-age badge-age notranslate" translate="no">${movie.age}</span>` : ''}
           <span class="card-year notranslate" translate="no">${formatNumber(movie.year)}</span>
           <span class="card-type notranslate" translate="no">${formatMediaType(displayType)}</span>
@@ -1026,8 +1026,8 @@ function renderContinueWatchingShelf() {
       const cookies = document.cookie || "";
       const isCkb = cookies.includes("googtrans=/en/ckb");
       const isAr = cookies.includes("googtrans=/en/ar");
-      const inProgressText = isCkb ? "ÃƒËœÃ‚Â¨Ãƒâ€ºÃ¢â‚¬Â¢ÃƒËœÃ‚Â±ÃƒËœÃ‚Â¯Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ„¢Ã‹â€ ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â¦ ÃƒËœÃ‚Â¨Ãƒâ€ºÃ¢â‚¬Â¢" : (isAr ? "Ãƒâ„¢Ã¢â‚¬Å¡Ãƒâ„¢Ã…Â ÃƒËœÃ‚Â¯ ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚Â´ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â¡ÃƒËœÃ‚Â¯ÃƒËœÃ‚Â©" : "In Progress");
-      const leftText = isCkb ? "ÃƒËœÃ‚Â®Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ€ºÃ¢â‚¬Â¢ÃƒÅ¡Ã‚Â© Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚Â§Ãƒâ„¢Ã‹â€ Ãƒâ€ºÃ¢â‚¬Â¢" : (isAr ? "ÃƒËœÃ‚Â¯Ãƒâ„¢Ã¢â‚¬Å¡Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Å¡ÃƒËœÃ‚Â© Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚ÂªÃƒËœÃ‚Â¨Ãƒâ„¢Ã¢â‚¬Å¡Ãƒâ„¢Ã…Â ÃƒËœÃ‚Â©" : "m left");
+      const inProgressText = isCkb ? "ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢" : (isAr ? "ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â©" : "In Progress");
+      const leftText = isCkb ? "ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â© ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢" : (isAr ? "ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â© ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â©" : "m left");
       const metaLabel = isIframe
         ? `<span class="notranslate" translate="no">${inProgressText}</span>`
         : `<span class="notranslate" translate="no">${formatNumber(Math.max(1, Math.round(((item.duration || 0) - (item.currentTime || 0)) / 60)))} ${leftText}</span><span class="notranslate" translate="no">${formatNumber(percent)}%</span>`;
@@ -1281,9 +1281,9 @@ function renderBecauseYouWatchedShelf() {
     headingText.classList.add("notranslate");
     headingText.setAttribute("translate", "no");
     if (isCkb) {
-      headingText.innerHTML = `ÃƒÅ¡Ã¢â‚¬Â Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Â ÃƒÅ¡Ã‚Â©Ãƒâ€ºÃ¢â‚¬Â¢ ÃƒËœÃ‚Â³Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ€ºÃ…â€™ÃƒËœÃ‚Â±Ãƒâ€ºÃ…â€™ <bdi class="watched-highlight notranslate" translate="no" dir="ltr">${titleStr}</bdi>Ãƒâ„¢Ã¢â€šÂ¬ÃƒËœÃ‚Âª ÃƒÅ¡Ã‚Â©ÃƒËœÃ‚Â±ÃƒËœÃ‚Â¯Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã‹â€ Ãƒâ€ºÃ¢â‚¬Â¢`;
+      headingText.innerHTML = `ÃƒÆ’Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ <bdi class="watched-highlight notranslate" translate="no" dir="ltr">${titleStr}</bdi>ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Âª ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢`;
     } else if (isAr) {
-      headingText.innerHTML = `Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚Â£Ãƒâ„¢Ã¢â‚¬Â Ãƒâ„¢Ã†â€™ ÃƒËœÃ‚Â´ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â¡ÃƒËœÃ‚Â¯ÃƒËœÃ‚Âª <bdi class="watched-highlight notranslate" translate="no" dir="ltr">${titleStr}</bdi>`;
+      headingText.innerHTML = `ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€ Ã¢â‚¬â„¢ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Âª <bdi class="watched-highlight notranslate" translate="no" dir="ltr">${titleStr}</bdi>`;
     } else {
       headingText.innerHTML = `Because you watched <span class="watched-highlight notranslate" translate="no">${titleStr}</span>`;
     }
@@ -1410,8 +1410,8 @@ function renderContinueWatchingPage() {
       const cookies = document.cookie || "";
       const isCkb = cookies.includes("googtrans=/en/ckb");
       const isAr = cookies.includes("googtrans=/en/ar");
-      const inProgressText = isCkb ? "ÃƒËœÃ‚Â¨Ãƒâ€ºÃ¢â‚¬Â¢ÃƒËœÃ‚Â±ÃƒËœÃ‚Â¯Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ„¢Ã‹â€ ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â¦ ÃƒËœÃ‚Â¨Ãƒâ€ºÃ¢â‚¬Â¢" : (isAr ? "Ãƒâ„¢Ã¢â‚¬Å¡Ãƒâ„¢Ã…Â ÃƒËœÃ‚Â¯ ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚Â´ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â¡ÃƒËœÃ‚Â¯ÃƒËœÃ‚Â©" : "In Progress");
-      const leftText = isCkb ? "ÃƒËœÃ‚Â®Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ€ºÃ¢â‚¬Â¢ÃƒÅ¡Ã‚Â© Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚Â§Ãƒâ„¢Ã‹â€ Ãƒâ€ºÃ¢â‚¬Â¢" : (isAr ? "ÃƒËœÃ‚Â¯Ãƒâ„¢Ã¢â‚¬Å¡Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Å¡ÃƒËœÃ‚Â© Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚ÂªÃƒËœÃ‚Â¨Ãƒâ„¢Ã¢â‚¬Å¡Ãƒâ„¢Ã…Â ÃƒËœÃ‚Â©" : "m left");
+      const inProgressText = isCkb ? "ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢" : (isAr ? "ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â©" : "In Progress");
+      const leftText = isCkb ? "ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â© ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢" : (isAr ? "ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â© ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â©" : "m left");
       const metaLabel = isIframe
         ? `<span class="notranslate" translate="no">${inProgressText}</span>`
         : `<span class="notranslate" translate="no">${formatNumber(Math.max(1, Math.round(((item.duration || 0) - (item.currentTime || 0)) / 60)))} ${leftText}</span><span class="notranslate" translate="no">${formatNumber(percent)}%</span>`;
@@ -1550,7 +1550,7 @@ function renderBrowseGrid(items, gridId, page) {
   if (pageItems.length === 0) {
     grid.innerHTML = `
       <div class="browse-empty">
-        <div class="empty-icon">ÃƒÂ°Ã…Â¸Ã…Â½Ã‚Â¬</div>
+        <div class="empty-icon">ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€¦Ã‚Â½Ãƒâ€šÃ‚Â¬</div>
         <h3>No titles found</h3>
         <p>Try a different filter.</p>
       </div>`;
@@ -1580,23 +1580,23 @@ function renderBrowsePagination(paginationId, currentPage, totalPages, onPageCha
     pages.push(1);
     const start = Math.max(2, currentPage - 2);
     const end = Math.min(totalPages - 1, currentPage + 2);
-    if (start > 2) pages.push("ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦");
+    if (start > 2) pages.push("ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦");
     for (let i = start; i <= end; i++) pages.push(i);
-    if (end < totalPages - 1) pages.push("ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦");
+    if (end < totalPages - 1) pages.push("ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦");
     pages.push(totalPages);
   }
 
   const cookies = document.cookie || '';
   const isCkb = cookies.includes('googtrans=/en/ckb');
   const isAr = cookies.includes('googtrans=/en/ar');
-  const prevText = isCkb ? 'ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹ Ãƒâ„¢Ã‚Â¾Ãƒâ€ºÃ…Â½ÃƒËœÃ‚Â´Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã‹â€ ' : (isAr ? 'ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹ ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚Â³ÃƒËœÃ‚Â§ÃƒËœÃ‚Â¨Ãƒâ„¢Ã¢â‚¬Å¡' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹ Prev');
-  const nextText = isCkb ? 'ÃƒËœÃ‚Â¯Ãƒâ„¢Ã‹â€ ÃƒËœÃ‚Â§ÃƒËœÃ‚ÂªÃƒËœÃ‚Â± ÃƒÂ¢Ã¢â€šÂ¬Ã‚Âº' : (isAr ? 'ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚ÂªÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã…Â  ÃƒÂ¢Ã¢â€šÂ¬Ã‚Âº' : 'Next ÃƒÂ¢Ã¢â€šÂ¬Ã‚Âº');
-  const goText = isCkb ? 'ÃƒËœÃ‚Â¨ÃƒÅ¡Ã¢â‚¬Â¢Ãƒâ€ºÃ¢â‚¬Â ' : (isAr ? 'ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚ÂªÃƒâ„¢Ã¢â‚¬Å¡ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾' : 'Go');
+  const prevText = isCkb ? 'ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¹ ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã‚Â½ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ' : (isAr ? 'ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¹ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡' : 'ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¹ Prev');
+  const nextText = isCkb ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â± ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Âº' : (isAr ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â  ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Âº' : 'Next ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Âº');
+  const goText = isCkb ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ' : (isAr ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾' : 'Go');
 
   let html = `<button class="page-btn prev-btn notranslate" translate="no" ${currentPage === 1 ? "disabled" : ""} data-page="${currentPage - 1}">${prevText}</button>`;
   pages.forEach((p) => {
-    if (p === "ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦") {
-      html += `<span class="page-ellipsis notranslate" translate="no">ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦</span>`;
+    if (p === "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦") {
+      html += `<span class="page-ellipsis notranslate" translate="no">ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦</span>`;
     } else {
       html += `<button class="page-btn notranslate ${p === currentPage ? "active" : ""}" translate="no" data-page="${p}">${formatNumber(p)}</button>`;
     }
@@ -1688,12 +1688,12 @@ function renderMoviesSection() {
 
   // Update count badge (next to heading)
   const countEl = document.getElementById("moviesCount");
-  if (countEl) countEl.textContent = isCkb ? `${formatNumber(filtered.length)} Ãƒâ„¢Ã‚ÂÃƒâ€ºÃ…â€™Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã¢â‚¬Â¦` : (isAr ? `${filtered.length} Ãƒâ„¢Ã‚ÂÃƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã¢â‚¬Â¦` : `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`);
+  if (countEl) countEl.textContent = isCkb ? `${formatNumber(filtered.length)} ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦` : (isAr ? `${filtered.length} ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦` : `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`);
 
   // Update count label (between filters and grid)
   const labelEl = document.getElementById("moviesCountLabel");
   if (labelEl) {
-    labelEl.textContent = isCkb ? `Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â§Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ…â€™ÃƒËœÃ‚Â´ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ¢â‚¬Â¢ÃƒÅ¡Ã‚Â©ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â : ${formatNumber(filtered.length)}` : (isAr ? `ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚Â¹Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â§Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Â : ${filtered.length}` : `Titles: ${filtered.length}`);
+    labelEl.textContent = isCkb ? `ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â : ${formatNumber(filtered.length)}` : (isAr ? `ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â : ${filtered.length}` : `Titles: ${filtered.length}`);
   }
 
   // Sync active filter button
@@ -1721,12 +1721,12 @@ function renderSeriesSection() {
   const isAr = cookies.includes('googtrans=/en/ar');
 
   const countEl = document.getElementById("seriesCount");
-  if (countEl) countEl.textContent = isCkb ? `${formatNumber(filtered.length)} ÃƒËœÃ‚Â²Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â¬Ãƒâ€ºÃ…â€™ÃƒËœÃ‚Â±Ãƒâ€ºÃ¢â‚¬Â¢` : (isAr ? `${filtered.length} Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚Â³Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚Â³Ãƒâ„¢Ã¢â‚¬Å¾` : `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`);
+  if (countEl) countEl.textContent = isCkb ? `${formatNumber(filtered.length)} ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â²ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢` : (isAr ? `${filtered.length} ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾` : `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`);
 
   // Update count label (between filters and grid)
   const labelEl = document.getElementById("seriesCountLabel");
   if (labelEl) {
-    labelEl.textContent = isCkb ? `Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â§Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ…â€™ÃƒËœÃ‚Â´ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ¢â‚¬Â¢ÃƒÅ¡Ã‚Â©ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â : ${formatNumber(filtered.length)}` : (isAr ? `ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚Â¹Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â§Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Â : ${filtered.length}` : `Titles: ${filtered.length}`);
+    labelEl.textContent = isCkb ? `ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â : ${formatNumber(filtered.length)}` : (isAr ? `ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â : ${filtered.length}` : `Titles: ${filtered.length}`);
   }
 
   document.querySelectorAll("#seriesFilterBar .browse-filter-btn").forEach((btn) => {
@@ -1775,11 +1775,11 @@ function renderAnimeSection() {
   const isAr = cookies.includes('googtrans=/en/ar');
 
   const countEl = document.getElementById("animeCount");
-  if (countEl) countEl.textContent = isCkb ? `${formatNumber(filtered.length)} ÃƒËœÃ‚Â¦Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ…â€™Ãƒâ„¢Ã¢â‚¬Â¦Ãƒâ€ºÃ…Â½` : (isAr ? `${filtered.length} ÃƒËœÃ‚Â£Ãƒâ„¢Ã¢â‚¬Â Ãƒâ„¢Ã¢â‚¬Â¦Ãƒâ„¢Ã…Â ` : `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`);
+  if (countEl) countEl.textContent = isCkb ? `${formatNumber(filtered.length)} ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã‚Â½` : (isAr ? `${filtered.length} ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ` : `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`);
 
   const labelEl = document.getElementById("animeCountLabel");
   if (labelEl) {
-    labelEl.textContent = isCkb ? `Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â§Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ…â€™ÃƒËœÃ‚Â´ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ¢â‚¬Â¢ÃƒÅ¡Ã‚Â©ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â : ${formatNumber(filtered.length)}` : (isAr ? `ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚Â¹Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â§Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Â : ${filtered.length}` : `Titles: ${filtered.length}`);
+    labelEl.textContent = isCkb ? `ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â : ${formatNumber(filtered.length)}` : (isAr ? `ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â : ${filtered.length}` : `Titles: ${filtered.length}`);
   }
 
   document.querySelectorAll("#animeFilterBar .browse-filter-btn").forEach((btn) => {
@@ -2139,7 +2139,7 @@ function _performSwitchView(viewName) {
     const bttBtn = document.getElementById("backToTopBtn");
     if (bttBtn) bttBtn.classList.remove("visible");
   }
-  // Snap instantly to top ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the padding-top on .main-content already clears the fixed navbar.
+  // Snap instantly to top ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â the padding-top on .main-content already clears the fixed navbar.
   window.scrollTo({ top: 0, behavior: "instant" });
 }
 
@@ -2176,19 +2176,19 @@ function refreshAllFavButtons(movieId, isFav) {
     `.card-fav-btn[data-id="${movieId}"]`,
   );
   favBtns.forEach((btn) => {
-    btn.innerHTML = isFav ? "ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“" : "+";
+    btn.innerHTML = isFav ? "ÃƒÆ’Ã‚Â¢Ãƒâ€¦Ã¢â‚¬Å“ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ" : "+";
     if (isFav) btn.classList.add("active");
     else btn.classList.remove("active");
   });
 }
 
 function renderAvatarHTML(avatarStr, extraClass = "") {
-  if (avatarStr === "??" || avatarStr === "?") avatarStr = "ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚Â¿";
+  if (avatarStr === "??" || avatarStr === "?") avatarStr = "ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¿";
   const isImg = avatarStr && (avatarStr.startsWith("data:") || avatarStr.startsWith("http"));
   if (isImg) {
     return `<img src="${avatarStr}" class="avatar-custom-img ${extraClass}" alt="User Avatar">`;
   }
-  return `<span class="avatar-icon ${extraClass}">${avatarStr || "ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚Â¿"}</span>`;
+  return `<span class="avatar-icon ${extraClass}">${avatarStr || "ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¿"}</span>`;
 }
 
 function renderUserBadge() {
@@ -2198,7 +2198,7 @@ function renderUserBadge() {
   if (!container && !sidebarFooter) return;
 
   if (state.user) {
-    const userAvatar = state.user.avatar || "ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚Â¿";
+    const userAvatar = state.user.avatar || "ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¿";
     const userName = state.user.name || "User";
     const userEmail = state.user.email || "";
     const createdAt = state.user.createdAt
@@ -2211,8 +2211,8 @@ function renderUserBadge() {
       cookies.includes('googtrans=/en/ar') ? 'ar' : 'en';
 
     let uploadAvatarText = "Upload avatar";
-    if (currentLang === 'ckb') uploadAvatarText = "Ãƒâ„¢Ã‹â€ Ãƒâ€ºÃ…Â½Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ€ºÃ…â€™ Ãƒâ„¢Ã‚Â¾ÃƒÅ¡Ã¢â‚¬Â¢Ãƒâ€ºÃ¢â‚¬Â Ãƒâ„¢Ã‚ÂÃƒËœÃ‚Â§Ãƒâ€ºÃ…â€™Ãƒâ„¢Ã¢â‚¬Å¾";
-    else if (currentLang === 'ar') uploadAvatarText = "ÃƒËœÃ‚ÂªÃƒËœÃ‚ÂºÃƒâ„¢Ã…Â Ãƒâ„¢Ã…Â ÃƒËœÃ‚Â± ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚ÂµÃƒâ„¢Ã‹â€ ÃƒËœÃ‚Â±ÃƒËœÃ‚Â©";
+    if (currentLang === 'ckb') uploadAvatarText = "ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã‚Â½ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚ÂÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾";
+    else if (currentLang === 'ar') uploadAvatarText = "ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â± ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂµÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â©";
 
     if (container) {
       // Render only the avatar icon button in the navbar
@@ -2300,7 +2300,7 @@ function renderUserBadge() {
           <div class="account-panel-date"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#e50914" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Member since ${createdAt || "Unknown"}</div>
         </div>
 
-        <div class="account-panel-section-label">ÃƒÂ¢Ã…Â¡Ã¢â€žÂ¢ SETTINGS</div>
+        <div class="account-panel-section-label">ÃƒÆ’Ã‚Â¢Ãƒâ€¦Ã‚Â¡ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ SETTINGS</div>
 
         <div class="account-panel-actions">
           <button class="account-panel-action-btn panel-vip-btn" id="panelVipUpgradeBtn" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(239, 68, 68, 0.22)); border: 1px solid rgba(245, 158, 11, 0.55); color: #fbbf24; font-weight: 700; margin-bottom: 8px;">
@@ -2569,15 +2569,15 @@ async function renderCommentsSection(movieId) {
 
   const commentsTitleHeading = document.getElementById('commentsTitleHeading');
   if (commentsTitleHeading) {
-    commentsTitleHeading.textContent = isCkb ? 'ÃƒËœÃ‚Â¨Ãƒâ€ºÃ¢â‚¬Â ÃƒÅ¡Ã¢â‚¬Â Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ¢â‚¬Â¢ÃƒÅ¡Ã‚Â©ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â ' : (isAr ? 'ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚ÂªÃƒËœÃ‚Â¹Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Å¡ÃƒËœÃ‚Â§ÃƒËœÃ‚Âª' : 'Comments');
+    commentsTitleHeading.textContent = isCkb ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ' : (isAr ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Âª' : 'Comments');
   }
 
-  const placeholderText = isCkb ? 'ÃƒËœÃ‚Â¨Ãƒâ€ºÃ¢â‚¬Â ÃƒÅ¡Ã¢â‚¬Â Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ…Â½ÃƒÅ¡Ã‚Â© ÃƒËœÃ‚Â¨Ãƒâ„¢Ã¢â‚¬Â Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã‹â€ ÃƒËœÃ‚Â³Ãƒâ€ºÃ¢â‚¬Â¢...' : (isAr ? 'ÃƒËœÃ‚Â§Ãƒâ„¢Ã†â€™ÃƒËœÃ‚ÂªÃƒËœÃ‚Â¨ ÃƒËœÃ‚ÂªÃƒËœÃ‚Â¹Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Å¡ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â¹...' : 'Write a comment...');
-  const postBtnText = isCkb ? 'Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â§ÃƒËœÃ‚Â±ÃƒËœÃ‚Â¯Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ…â€™ ÃƒËœÃ‚Â¨Ãƒâ€ºÃ¢â‚¬Â ÃƒÅ¡Ã¢â‚¬Â Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Â ' : (isAr ? 'ÃƒËœÃ‚Â¥ÃƒËœÃ‚Â±ÃƒËœÃ‚Â³ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚ÂªÃƒËœÃ‚Â¹Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Å¡' : 'Post Comment');
-  const loginNotice = isCkb ? 'ÃƒËœÃ‚ÂªÃƒÅ¡Ã‚Â©ÃƒËœÃ‚Â§Ãƒâ€ºÃ…â€™Ãƒâ€ºÃ¢â‚¬Â¢ ÃƒËœÃ‚Â®Ãƒâ€ºÃ¢â‚¬Â ÃƒËœÃ‚Âª ÃƒËœÃ‚ÂªÃƒâ€ºÃ¢â‚¬Â Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚Â§ÃƒËœÃ‚Â±ÃƒËœÃ‚Â¨ÃƒÅ¡Ã‚Â©Ãƒâ€ºÃ¢â‚¬Â¢ ÃƒËœÃ‚Â³Ãƒâ€ºÃ¢â‚¬Â¢ÃƒËœÃ‚Â±Ãƒâ€ºÃ¢â‚¬Â¢ÃƒËœÃ‚ÂªÃƒËœÃ‚Â§' : (isAr ? 'Ãƒâ„¢Ã…Â ÃƒËœÃ‚Â¬ÃƒËœÃ‚Â¨ ÃƒËœÃ‚ÂªÃƒËœÃ‚Â³ÃƒËœÃ‚Â¬Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Å¾ ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚Â¯ÃƒËœÃ‚Â®Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Å¾ Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚Â¥ÃƒËœÃ‚Â¶ÃƒËœÃ‚Â§Ãƒâ„¢Ã‚ÂÃƒËœÃ‚Â© ÃƒËœÃ‚ÂªÃƒËœÃ‚Â¹Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Å¡.' : 'You must be logged in to post a comment.');
-  const loginBtnText = isCkb ? 'ÃƒÅ¡Ã¢â‚¬Â Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ¢â‚¬Â¢ÃƒÅ¡Ã‹Å“Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã‹â€ ÃƒËœÃ‚Â±Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ„¢Ã‹â€ Ãƒâ€ºÃ¢â‚¬Â¢ Ãƒâ€ºÃ…â€™ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â  ÃƒËœÃ‚Â¯ÃƒËœÃ‚Â±Ãƒâ„¢Ã‹â€ ÃƒËœÃ‚Â³ÃƒËœÃ‚ÂªÃƒÅ¡Ã‚Â©ÃƒËœÃ‚Â±ÃƒËœÃ‚Â¯Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ…â€™ Ãƒâ„¢Ã¢â‚¬Â¡Ãƒâ€ºÃ¢â‚¬Â¢ÃƒÅ¡Ã‹Å“Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚Â§ÃƒËœÃ‚Â±' : (isAr ? 'ÃƒËœÃ‚ÂªÃƒËœÃ‚Â³ÃƒËœÃ‚Â¬Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Å¾ ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚Â¯ÃƒËœÃ‚Â®Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Å¾ ÃƒËœÃ‚Â£Ãƒâ„¢Ã‹â€  ÃƒËœÃ‚Â¥Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â´ÃƒËœÃ‚Â§ÃƒËœÃ‚Â¡ ÃƒËœÃ‚Â­ÃƒËœÃ‚Â³ÃƒËœÃ‚Â§ÃƒËœÃ‚Â¨' : 'Log In or Sign Up');
-  const noCommentsText = isCkb ? 'Ãƒâ„¢Ã¢â‚¬Â¡Ãƒâ€ºÃ…â€™ÃƒÅ¡Ã¢â‚¬Â  ÃƒËœÃ‚Â¨Ãƒâ€ºÃ¢â‚¬Â ÃƒÅ¡Ã¢â‚¬Â Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ…Â½ÃƒÅ¡Ã‚Â© Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ…â€™Ãƒâ€ºÃ…â€™Ãƒâ€ºÃ¢â‚¬Â¢ÃƒËœÃ…â€™ Ãƒâ€ºÃ…â€™Ãƒâ€ºÃ¢â‚¬Â¢ÃƒÅ¡Ã‚Â©Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ„¢Ã¢â‚¬Â¦ ÃƒÅ¡Ã‚Â©Ãƒâ€ºÃ¢â‚¬Â¢ÃƒËœÃ‚Â³ ÃƒËœÃ‚Â¨Ãƒâ€ºÃ¢â‚¬Â¢' : (isAr ? 'Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚Â§ ÃƒËœÃ‚ÂªÃƒâ„¢Ã‹â€ ÃƒËœÃ‚Â¬ÃƒËœÃ‚Â¯ ÃƒËœÃ‚ÂªÃƒËœÃ‚Â¹Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Å¡ÃƒËœÃ‚Â§ÃƒËœÃ‚Âª ÃƒËœÃ‚Â¨ÃƒËœÃ‚Â¹ÃƒËœÃ‚Â¯. Ãƒâ„¢Ã†â€™Ãƒâ„¢Ã¢â‚¬Â  ÃƒËœÃ‚Â£Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Å¾ Ãƒâ„¢Ã¢â‚¬Â¦Ãƒâ„¢Ã¢â‚¬Â  Ãƒâ„¢Ã…Â ÃƒËœÃ‚Â¹Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã¢â‚¬Å¡' : 'No comments yet. Be the first!');
-  const failedText = isCkb ? 'ÃƒËœÃ‚Â¨ÃƒËœÃ‚Â§ÃƒËœÃ‚Â±ÃƒÅ¡Ã‚Â©ÃƒËœÃ‚Â±ÃƒËœÃ‚Â¯Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ…â€™ ÃƒËœÃ‚Â¨Ãƒâ€ºÃ¢â‚¬Â ÃƒÅ¡Ã¢â‚¬Â Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ¢â‚¬Â¢ÃƒÅ¡Ã‚Â©ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â  ÃƒËœÃ‚Â³Ãƒâ€ºÃ¢â‚¬Â¢ÃƒËœÃ‚Â±ÃƒÅ¡Ã‚Â©Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ„¢Ã‹â€ ÃƒËœÃ‚ÂªÃƒâ„¢Ã‹â€ Ãƒâ„¢Ã‹â€  Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ¢â‚¬Â¢ÃƒËœÃ‚Â¨Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã‹â€ .' : (isAr ? 'Ãƒâ„¢Ã‚ÂÃƒËœÃ‚Â´Ãƒâ„¢Ã¢â‚¬Å¾ ÃƒËœÃ‚ÂªÃƒËœÃ‚Â­Ãƒâ„¢Ã¢â‚¬Â¦Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Å¾ ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚ÂªÃƒËœÃ‚Â¹Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Å¡ÃƒËœÃ‚Â§ÃƒËœÃ‚Âª.' : 'Failed to load comments.');
+  const placeholderText = isCkb ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã‚Â½ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â© ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢...' : (isAr ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹...' : 'Write a comment...');
+  const postBtnText = isCkb ? 'ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ' : (isAr ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡' : 'Post Comment');
+  const loginNotice = isCkb ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Âª ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§' : (isAr ? 'ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¶ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚ÂÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â© ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡.' : 'You must be logged in to post a comment.');
+  const loginBtnText = isCkb ? 'ÃƒÆ’Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã…Â¡Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â  ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã…Â¡Ãƒâ€¹Ã…â€œÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±' : (isAr ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â  ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¡ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â­ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨' : 'Log In or Sign Up');
+  const noCommentsText = isCkb ? 'ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â  ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã‚Â½ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â© ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã‹Å“Ãƒâ€¦Ã¢â‚¬â„¢ ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢' : (isAr ? 'ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Âª ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯. ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â  ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â  ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡' : 'No comments yet. Be the first!');
+  const failedText = isCkb ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â  ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â  ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â .' : (isAr ? 'ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚ÂÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â­ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Âª.' : 'Failed to load comments.');
 
   // Show section
   commentsSection.style.display = 'block';
@@ -2619,10 +2619,10 @@ async function renderCommentsSection(movieId) {
   commentsList.innerHTML = data.map(comment => {
     const avatarContent = comment.avatar && comment.avatar.length > 20
       ? `<img src="${comment.avatar}" alt="avatar" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">`
-      : (comment.avatar || 'ÃƒÂ°Ã…Â¸Ã…Â½Ã‚Â¬');
+      : (comment.avatar || 'ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€¦Ã‚Â½Ãƒâ€šÃ‚Â¬');
 
     const isOwner = state.user && comment.user_id === state.user.id;
-    const deleteTitle = isCkb ? 'ÃƒËœÃ‚Â³ÃƒÅ¡Ã¢â‚¬Â¢Ãƒâ€ºÃ…â€™Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ„¢Ã‹â€ Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ€ºÃ…â€™ ÃƒËœÃ‚Â¨Ãƒâ€ºÃ¢â‚¬Â ÃƒÅ¡Ã¢â‚¬Â Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Â ' : (isAr ? 'ÃƒËœÃ‚Â­ÃƒËœÃ‚Â°Ãƒâ„¢Ã‚Â ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚ÂªÃƒËœÃ‚Â¹Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Å¡' : 'Delete comment');
+    const deleteTitle = isCkb ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ' : (isAr ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â­ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â°ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡' : 'Delete comment');
     const deleteBtn = isOwner ? `
       <button class="comment-delete-btn" onclick="deleteComment('${comment.id}', '${movieId}')" title="${deleteTitle}">
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4h6v2"/></svg>
@@ -2664,8 +2664,8 @@ window.submitComment = async function (movieId) {
   const cookies = document.cookie || '';
   const isCkb = cookies.includes('googtrans=/en/ckb');
   const isAr = cookies.includes('googtrans=/en/ar');
-  const postingText = isCkb ? '...Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â§ÃƒËœÃ‚Â±ÃƒËœÃ‚Â¯Ãƒâ„¢Ã¢â‚¬Â ' : (isAr ? '...ÃƒËœÃ‚Â¬ÃƒËœÃ‚Â§ÃƒËœÃ‚Â±Ãƒâ„¢Ã‚Â ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚Â¥ÃƒËœÃ‚Â±ÃƒËœÃ‚Â³ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾' : 'Posting...');
-  const postBtnText = isCkb ? 'Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â§ÃƒËœÃ‚Â±ÃƒËœÃ‚Â¯Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ…â€™ ÃƒËœÃ‚Â¨Ãƒâ€ºÃ¢â‚¬Â ÃƒÅ¡Ã¢â‚¬Â Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã¢â‚¬Â ' : (isAr ? 'ÃƒËœÃ‚Â¥ÃƒËœÃ‚Â±ÃƒËœÃ‚Â³ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚ÂªÃƒËœÃ‚Â¹Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Å¡' : 'Post Comment');
+  const postingText = isCkb ? '...ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ' : (isAr ? '...ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾' : 'Posting...');
+  const postBtnText = isCkb ? 'ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã¢â‚¬â„¢ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã…Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ' : (isAr ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡' : 'Post Comment');
 
   if (postBtn) {
     postBtn.disabled = true;
@@ -2678,7 +2678,7 @@ window.submitComment = async function (movieId) {
     if (textInput) textInput.value = '';
     await renderCommentsSection(movieId);
   } else {
-    alert((isCkb ? 'Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â§ÃƒËœÃ‚Â±ÃƒËœÃ‚Â¯Ãƒâ„¢Ã¢â‚¬Â  ÃƒËœÃ‚Â³Ãƒâ€ºÃ¢â‚¬Â¢ÃƒËœÃ‚Â±ÃƒÅ¡Ã‚Â©Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ„¢Ã‹â€ ÃƒËœÃ‚ÂªÃƒâ„¢Ã‹â€ Ãƒâ„¢Ã‹â€  Ãƒâ„¢Ã¢â‚¬Â Ãƒâ€ºÃ¢â‚¬Â¢ÃƒËœÃ‚Â¨Ãƒâ„¢Ã‹â€ Ãƒâ„¢Ã‹â€ : ' : (isAr ? 'Ãƒâ„¢Ã‚ÂÃƒËœÃ‚Â´Ãƒâ„¢Ã¢â‚¬Å¾ ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â´ÃƒËœÃ‚Â±: ' : 'Failed to post comment: ')) + (error || 'Unknown error'));
+    alert((isCkb ? 'ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â  ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â©ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â  ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â : ' : (isAr ? 'ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€šÃ‚ÂÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±: ' : 'Failed to post comment: ')) + (error || 'Unknown error'));
   }
 
   if (postBtn) {
@@ -2865,7 +2865,7 @@ function openDetailsModal(movieId) {
     const isAr = (document.cookie || '').includes('googtrans=/en/ar');
     if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
       const sCount = formatNumber(movie.seasons.length);
-      document.getElementById("detailsDuration").textContent = isCkb ? `${sCount} Ãƒâ„¢Ã‹â€ Ãƒâ€ºÃ¢â‚¬Â¢ÃƒËœÃ‚Â±ÃƒËœÃ‚Â²` : (isAr ? `${movie.seasons.length} Ãƒâ„¢Ã¢â‚¬Â¦Ãƒâ„¢Ã‹â€ ÃƒËœÃ‚Â§ÃƒËœÃ‚Â³Ãƒâ„¢Ã¢â‚¬Â¦` : `${movie.seasons.length} Season${movie.seasons.length > 1 ? 's' : ''}`);
+      document.getElementById("detailsDuration").textContent = isCkb ? `${sCount} ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â±ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â²` : (isAr ? `${movie.seasons.length} ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦` : `${movie.seasons.length} Season${movie.seasons.length > 1 ? 's' : ''}`);
     } else {
       document.getElementById("detailsDuration").textContent = movie.duration;
     }
@@ -2881,7 +2881,7 @@ function openDetailsModal(movieId) {
 
     const userRatingLabel = document.getElementById("userRatingLabel");
     if (userRatingLabel) {
-      userRatingLabel.textContent = isCkb ? "Ãƒâ„¢Ã¢â‚¬Â¡Ãƒâ€ºÃ¢â‚¬Â¢ÃƒÅ¡Ã‚ÂµÃƒËœÃ‚Â³Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ„¢Ã¢â‚¬Â ÃƒÅ¡Ã‚Â¯ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â¯Ãƒâ„¢Ã¢â‚¬Â " : (isAr ? "ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚ÂªÃƒâ„¢Ã¢â‚¬Å¡Ãƒâ„¢Ã…Â Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Â¦" : "Rate:");
+      userRatingLabel.textContent = isCkb ? "ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â " : (isAr ? "ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦" : "Rate:");
     }
 
     setOverviewElement(document.getElementById("detailsOverview"), getLocalizedOverview(movie));
@@ -2977,7 +2977,7 @@ function openDetailsModal(movieId) {
       }
     }
 
-    // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ TV Show: show season/episode picker ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+    // ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ TV Show: show season/episode picker ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬
     const tvSection = document.getElementById("tvShowSection");
     const playBtn = document.getElementById("detailsPlayBtn");
 
@@ -3091,7 +3091,7 @@ function openDetailsModal(movieId) {
           return `
         <div class="episode-row ${resolvedUrl ? "" : "episode-unavailable"}" 
              data-video="${resolvedUrl}" 
-             data-title="${movie.title} ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â S${seasonData.season}E${ep.episode}: ${ep.title}"
+             data-title="${movie.title} ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â S${seasonData.season}E${ep.episode}: ${ep.title}"
              data-episode="${ep.episode}"
              data-abs-episode="${ep.absoluteEpisode || ''}"
              title="${resolvedUrl ? "Click to watch" : "Not available yet"}">
@@ -3099,13 +3099,13 @@ function openDetailsModal(movieId) {
             ${thumb ? `<img src="${thumb}" alt="${ep.title}" loading="lazy" class="ep-thumb-img">` : ""}
             <div class="ep-thumb-overlay">
               <span class="ep-num-badge">${ep.episode}</span>
-              ${resolvedUrl ? '<div class="ep-play-circle">ÃƒÂ¢Ã¢â‚¬â€œÃ‚Â¶</div>' : ""}
+              ${resolvedUrl ? '<div class="ep-play-circle">ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Ãƒâ€šÃ‚Â¶</div>' : ""}
             </div>
           </div>
           <div class="episode-row-info">
             <h4 class="ep-row-title notranslate" translate="no">${ep.title}</h4>
             <div class="ep-row-meta">
-              ${ratingVal ? `<span class="ep-row-rating" title="IMDb Rating: ${ratingVal}">ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦ ${ratingVal}</span>` : ""}
+              ${ratingVal ? `<span class="ep-row-rating" title="IMDb Rating: ${ratingVal}">ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ ${ratingVal}</span>` : ""}
               ${airDate ? `<span class="ep-row-date">${airDate}</span>` : ""}
               ${duration ? `<span class="ep-row-duration">${duration}</span>` : ""}
             </div>
@@ -3185,7 +3185,7 @@ function openDetailsModal(movieId) {
       };
 
     } else {
-      // Movie ÃƒÅ½Ã¢â‚¬Å“ÃƒÆ’Ã¢â‚¬Â¡ÃƒÆ’Ã‚Â¶ hide TV section
+      // Movie ÃƒÆ’Ã…Â½ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶ hide TV section
       tvSection.classList.add("hidden");
       playBtn.onclick = () => {
         openVideoPlayer(movie.id);
@@ -3198,7 +3198,7 @@ function openDetailsModal(movieId) {
     if (similarsText) {
       const isCkb = document.cookie.includes("googtrans=/en/ckb");
       const isAr = document.cookie.includes("googtrans=/en/ar");
-      similarsText.textContent = isCkb ? "Ãƒâ„¢Ã¢â‚¬Â¡ÃƒËœÃ‚Â§Ãƒâ„¢Ã‹â€ ÃƒËœÃ‚Â´Ãƒâ€ºÃ…Â½Ãƒâ„¢Ã‹â€ Ãƒâ€ºÃ¢â‚¬Â¢" : (isAr ? "ÃƒËœÃ‚Â£ÃƒËœÃ‚Â¹Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚Â´ÃƒËœÃ‚Â§ÃƒËœÃ‚Â¨Ãƒâ„¢Ã¢â‚¬Â¡ÃƒËœÃ‚Â©" : "Similars");
+      similarsText.textContent = isCkb ? "ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã¢â‚¬ÂºÃƒâ€¦Ã‚Â½ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¹Ã¢â‚¬Â ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢" : (isAr ? "ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â£ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¹ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â©" : "Similars");
     }
     if (similarsBtn) {
       similarsBtn.onclick = () => {
@@ -3326,7 +3326,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   const playPauseBtn = document.getElementById("playPauseBtn");
   const serverWrap = document.getElementById("serverSelectWrap");
 
-  // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Populate info area ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+  // ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ Populate info area ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬
   const parentMovie = parentId ? (findMovieByIdOrTitle(parentId) || MOVIES.find(m => m.id === parentId || String(m.videoUrl) === String(parentId))) : null;
   renderPlayerDetailsPanel(parentMovie, epData);
   const posterEl = document.getElementById("playerShowPoster");
@@ -3345,7 +3345,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   if (metaEl) {
     if (epData) {
       const dur = parentMovie ? parentMovie.duration : "";
-      metaEl.textContent = `Season ${epData.season} Ãƒâ€šÃ‚Â· Episode ${epData.episode}${dur ? " Ãƒâ€šÃ‚Â· " + dur : ""}`;
+      metaEl.textContent = `Season ${epData.season} ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Episode ${epData.episode}${dur ? " ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· " + dur : ""}`;
     } else if (parentMovie) {
       metaEl.textContent = parentMovie.year ? String(parentMovie.year) : "";
     } else {
@@ -3372,7 +3372,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     }
   }
 
-  // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Wire Episodes button ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+  // ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ Wire Episodes button ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬
   const epsBtn = document.getElementById("playerEpisodesBtn");
   
   const isTvShow = !!(parentId && parentMovie && parentMovie.type === "TV Show");
@@ -3382,7 +3382,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     epsBtn.onclick = () => closeVideoPlayer();
   }
 
-  // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Wire Next Episode button ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+  // ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ Wire Next Episode button ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬
   const nextEpBtn = document.getElementById("playerNextEpBtn");
   
   if (nextEpBtn) {
@@ -3595,7 +3595,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
   const playPauseBtn = document.getElementById("playPauseBtn");
   const serverWrap = document.getElementById("serverSelectWrap");
 
-  // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Populate info area ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+  // ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ Populate info area ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬
   const posterEl = document.getElementById("playerShowPoster");
   const metaEl = document.getElementById("playerMeta");
   const overviewEl = document.getElementById("playerEpOverview");
@@ -3620,7 +3620,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     setOverviewElement(overviewEl, info);
   }
 
-  // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Hide TV-only buttons ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+  // ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ Hide TV-only buttons ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬
   const epsBtn = document.getElementById("playerEpisodesBtn");
   if (epsBtn) epsBtn.classList.add("hidden");
 
@@ -3713,7 +3713,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
         showToast(`Resumed at ${formatTime(initialTime)}`);
       }
       video.play();
-      playPauseBtn.textContent = "ÃƒÂ¢Ã‚ÂÃ‚Â¸";
+      playPauseBtn.textContent = "ÃƒÆ’Ã‚Â¢Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¸";
     };
 
     setupVideoControls(video);
@@ -3762,7 +3762,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
  *   - Windows local paths: "E:\Movies\subtitle.srt"
  *   - Regular URLs: "https://example.com/sub.vtt"
  *   - Relative paths: "subtitles/movie.srt"
- * Automatically converts SRT ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ VTT format.
+ * Automatically converts SRT ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ VTT format.
  */
 async function loadSubtitleTrack(video, subtitleUrl) {
   try {
@@ -3860,20 +3860,20 @@ function closeVideoPlayer() {
   }
 
   if (state.currentPlayingMovie && video.currentTime > 0 && !video.classList.contains("hidden")) {
-    // Native <video> player ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â save real progress
+    // Native <video> player ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â save real progress
     updateContinueWatching(
       state.currentPlayingMovie.id,
       video.currentTime,
       video.duration,
     );
   } else if (state.currentPlayingMovie && iframe && !iframe.classList.contains("hidden") && iframe.src) {
-    // Iframe embed (CineSrc etc.) ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â we can't read playback time from the iframe,
+    // Iframe embed (CineSrc etc.) ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â we can't read playback time from the iframe,
     // so save with a placeholder so the title appears in Continue Watching.
     const cwId = state.currentPlayingMovie.id;
     if (cwId && cwId !== "_episode_" && state.user) {
       state.continueWatching[cwId] = {
         movieId: cwId,
-        currentTime: 60,   // placeholder ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â "in progress"
+        currentTime: 60,   // placeholder ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â "in progress"
         duration: 7200,    // placeholder 2h duration
         isIframe: true,
         timestamp: Date.now(),
@@ -3925,12 +3925,12 @@ function setupVideoControls(video) {
   function togglePlay() {
     if (video.paused) {
       video.play();
-      playPauseBtn.textContent = "ÃƒÂ¢Ã‚ÂÃ‚Â¸";
-      showCenterAnimation("ÃƒÂ¢Ã¢â‚¬â€œÃ‚Â¶");
+      playPauseBtn.textContent = "ÃƒÆ’Ã‚Â¢Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¸";
+      showCenterAnimation("ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Ãƒâ€šÃ‚Â¶");
     } else {
       video.pause();
-      playPauseBtn.textContent = "ÃƒÂ¢Ã¢â‚¬â€œÃ‚Â¶";
-      showCenterAnimation("ÃƒÂ¢Ã‚ÂÃ‚Â¸");
+      playPauseBtn.textContent = "ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Ãƒâ€šÃ‚Â¶";
+      showCenterAnimation("ÃƒÆ’Ã‚Â¢Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¸");
     }
   }
 
@@ -3952,13 +3952,13 @@ function setupVideoControls(video) {
 
   muteBtn.onclick = () => {
     video.muted = !video.muted;
-    muteBtn.textContent = video.muted ? "ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂÃ¢â‚¬Â¡" : "ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂÃ…Â ";
+    muteBtn.textContent = video.muted ? "ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡" : "ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒâ€¦Ã‚Â ";
   };
 
   volumeBar.oninput = (e) => {
     video.volume = e.target.value;
     video.muted = video.volume === 0;
-    muteBtn.textContent = video.muted ? "ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂÃ¢â‚¬Â¡" : "ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂÃ…Â ";
+    muteBtn.textContent = video.muted ? "ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡" : "ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒâ€¦Ã‚Â ";
   };
 
   if (speedSelect) {
@@ -4074,7 +4074,7 @@ const VIP_WALLETS = {
     number: "9101 1792 5305",
     copyValue: "910117925305",
     holder: "CineWatch VIP",
-    note: "Transfer the plan amount via Qi Services (ÃƒËœÃ‚Â®ÃƒËœÃ‚Â¯Ãƒâ„¢Ã¢â‚¬Â¦ÃƒËœÃ‚Â§ÃƒËœÃ‚Âª Ãƒâ„¢Ã†â€™Ãƒâ„¢Ã…Â ) or any authorized agent to this account.",
+    note: "Transfer the plan amount via Qi Services (ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â®ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Âª ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ) or any authorized agent to this account.",
     color: "#f59e0b",
     logoSvg: '<svg viewBox="0 0 36 24" width="26" height="17" fill="none" style="display:block;"><circle cx="12" cy="12" r="11" fill="#EB001B"/><circle cx="24" cy="12" r="11" fill="#F79E1B"/><path d="M18 4.254a10.965 10.965 0 0 0-4.57 7.746A10.965 10.965 0 0 0 18 19.746 10.965 10.965 0 0 0 22.57 12 10.965 10.965 0 0 0 18 4.254z" fill="#FF5F00"/></svg>'
   },
@@ -4226,7 +4226,7 @@ function setVipBillingCycle(cycle) {
     diamondTitle.textContent = cycle === "yearly" ? "Ultimate 1-Year Pass" : "Ultimate";
   }
   if (diamondTag) {
-    diamondTag.textContent = cycle === "yearly" ? "BEST VALUE ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ 1-YEAR PASS" : cycle === "quarterly" ? "POPULAR ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ 3 MONTHS" : "ULTIMATE VIP";
+    diamondTag.textContent = cycle === "yearly" ? "BEST VALUE ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ 1-YEAR PASS" : cycle === "quarterly" ? "POPULAR ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ 3 MONTHS" : "ULTIMATE VIP";
   }
   if (diamondBadge) {
     diamondBadge.textContent = cycle === "yearly" ? "1-Year Pass" : cycle === "quarterly" ? "3-Month Pass" : "Ultimate";
@@ -4362,14 +4362,14 @@ function selectVipTier(tierData) {
         const TELEGRAM_BOT_TOKEN = '8983731597:AAGJsm6pk2pXjQjaSEzZlF42WIPwjoGn9IA';
         const TELEGRAM_CHAT_ID = '5719338067';
         const msg =
-          `Ã°Å¸Å½Â¬ *New CineWatch VIP Order!*\n\n` +
-          `Ã°Å¸â€ â€ Order: \`` + `${orderData.id}\`` + `\n` +
-          `Ã°Å¸â€˜Â¤ User: ${orderData.username} (${orderData.userEmail})\n` +
-          `Ã°Å¸â€œÂ¦ Plan: ${orderData.plan} Ã¢â‚¬â€ ${orderData.price}\n` +
-          `Ã°Å¸â€™Â³ Payment: ${orderData.wallet}\n` +
-          `Ã°Å¸â€œÅ¾ Reference: ${orderData.reference}\n` +
-          `Ã°Å¸â€œÂ± Device: ${orderData.device}\n` +
-          `Ã°Å¸â€¢â€™ Time: ${orderData.createdAt}`;
+          `ÃƒÂ°Ã…Â¸Ã…Â½Ã‚Â¬ *New CineWatch VIP Order!*\n\n` +
+          `ÃƒÂ°Ã…Â¸Ã¢â‚¬Â Ã¢â‚¬Â Order: \`` + `${orderData.id}\`` + `\n` +
+          `ÃƒÂ°Ã…Â¸Ã¢â‚¬ËœÃ‚Â¤ User: ${orderData.username} (${orderData.userEmail})\n` +
+          `ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã‚Â¦ Plan: ${orderData.plan} ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ${orderData.price}\n` +
+          `ÃƒÂ°Ã…Â¸Ã¢â‚¬â„¢Ã‚Â³ Payment: ${orderData.wallet}\n` +
+          `ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã…Â¾ Reference: ${orderData.reference}\n` +
+          `ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã‚Â± Device: ${orderData.device}\n` +
+          `ÃƒÂ°Ã…Â¸Ã¢â‚¬Â¢Ã¢â‚¬â„¢ Time: ${orderData.createdAt}`;
         fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -4380,10 +4380,12 @@ function selectVipTier(tierData) {
       // Update VIP user state
       if (state.user) {
         state.user.isVip = true;
+        updateAdsVisibility();
         state.user.vipTier = tierData.name;
         if (typeof saveUser === 'function') {
           saveUser(state.user);
         }
+      updateAdsVisibility();
       }
 
       setTimeout(() => {
@@ -4391,9 +4393,9 @@ function selectVipTier(tierData) {
         submitBtn.innerHTML = '<ion-icon name="checkmark-circle-outline" style="font-size: 1.3rem;"></ion-icon> Confirm Payment';
         
         if (typeof showToast === 'function') {
-          showToast("âœ… Payment submitted! Please wait up to 5 minutes for your VIP to activate.");
+          showToast("Ã¢Å“â€¦ Payment submitted! Please wait up to 5 minutes for your VIP to activate.");
         } else {
-          alert("âœ… Payment submitted! Please wait up to 5 minutes for your VIP to activate.");
+          alert("Ã¢Å“â€¦ Payment submitted! Please wait up to 5 minutes for your VIP to activate.");
         }
 
         if (typeof closeVipModal === 'function') {
@@ -4415,7 +4417,7 @@ function selectVipTier(tierData) {
 
 
 // ============================================================
-// Ad Visibility — shown for free users, hidden for VIP
+// Ad Visibility â€” shown for free users, hidden for VIP
 // ============================================================
 function updateAdsVisibility() {
   const isVip = !!(state.user && state.user.isVip);
@@ -4598,7 +4600,7 @@ function setupVipEventListeners() {
 
       if (statusEl) {
         statusEl.classList.remove("hidden");
-        statusEl.innerHTML = `ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¦ <strong>Receipt Submitted!</strong> We will verify your transaction and activate VIP on your account within 5 minutes.`;
+        statusEl.innerHTML = `ÃƒÆ’Ã‚Â¢Ãƒâ€¦Ã¢â‚¬Å“ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ <strong>Receipt Submitted!</strong> We will verify your transaction and activate VIP on your account within 5 minutes.`;
       }
       txInput.value = "";
       showToast("Transaction reference submitted! Admin notified.");
@@ -4838,7 +4840,7 @@ function bindEventListeners() {
       }
     };
   });
-  // Browse Section Genre Filter Buttons (Movies / Series / Anime views) ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â event delegation
+  // Browse Section Genre Filter Buttons (Movies / Series / Anime views) ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â event delegation
   document.addEventListener("click", (e) => {
     const filterBtn = e.target.closest(".browse-filter-btn");
     if (!filterBtn) return;
@@ -5084,14 +5086,14 @@ function bindEventListeners() {
     }
   });
 
-  // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Fuzzy Search Helper ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+  // ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ Fuzzy Search Helper ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬
   // Normalizes a string: lowercase, strip hyphens/special chars/spaces for loose matching
   function norm(str) {
     if (!str) return '';
     return String(str).toLowerCase().replace(/[^a-z0-9]/g, '');
   }
 
-  // Returns a relevance score ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â higher = better match
+  // Returns a relevance score ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â higher = better match
   function searchScore(movie, rawQuery) {
     const q = rawQuery.trim().toLowerCase();
     const qNorm = norm(q);
@@ -5109,7 +5111,7 @@ function bindEventListeners() {
     else if (titleNorm.startsWith(qNorm)) {
       score += 150;
     }
-    // Exact substring match on normalized title (handles "spiderman" ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ "Spider-Man")
+    // Exact substring match on normalized title (handles "spiderman" ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ "Spider-Man")
     else if (titleNorm.includes(qNorm)) {
       score += 100;
     }
@@ -5163,7 +5165,7 @@ function bindEventListeners() {
       .map(({ movie }) => movie);
   }
 
-  // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Search Modal ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+  // ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ Search Modal ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬
   const navSearchBtn = document.getElementById("navSearchBtn");
   const searchModal = document.getElementById("searchModal");
   const searchModalClose = document.getElementById("searchModalClose");
@@ -5312,7 +5314,7 @@ function bindEventListeners() {
                 <div class="search-item-meta notranslate" translate="no">
                   <span class="search-item-badge">${m.type || (m.seasons ? 'TV Show' : 'Movie')}</span>
                   <span>${m.year || ''}</span>
-                  <span class="search-item-rating">ÃƒÂ¢Ã‚Â­Ã‚Â ${formatRating(m.rating)}</span>
+                  <span class="search-item-rating">ÃƒÆ’Ã‚Â¢Ãƒâ€šÃ‚Â­Ãƒâ€šÃ‚Â ${formatRating(m.rating)}</span>
                 </div>
               </div>
               <div class="search-item-action">
@@ -5874,7 +5876,7 @@ function bindEventListeners() {
     handleRecoveryFlow();
   }
 
-  // Login Submit ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Custom Backend API
+  // Login Submit ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Custom Backend API
   loginForm.onsubmit = async (e) => {
     e.preventDefault();
     const email = document.getElementById("loginEmail").value.trim();
@@ -5944,7 +5946,7 @@ function bindEventListeners() {
     submitBtn.disabled = false;
   };
 
-  // Signup Submit ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Firebase Authentication
+  // Signup Submit ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Firebase Authentication
   signupForm.onsubmit = async (e) => {
     e.preventDefault();
     const name = document.getElementById("signupName").value.trim();
@@ -6035,7 +6037,7 @@ function bindEventListeners() {
     };
   }
 
-  // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Mobile Menu ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+  // ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ Mobile Menu ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬
   const mobileMenuBtn = document.getElementById("mobileMenuBtn");
   const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
   const mobileMenuCloseBtn = document.getElementById("mobileMenuCloseBtn");
@@ -6060,7 +6062,7 @@ function bindEventListeners() {
     });
   }
 
-  // Mobile nav link clicks ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ switch view and close menu
+  // Mobile nav link clicks ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ switch view and close menu
   document.querySelectorAll(".mobile-nav-links .nav-link").forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
@@ -6081,7 +6083,7 @@ function bindEventListeners() {
     });
   }
 
-  // Fullscreen button ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â wired once at init so it always works (movies + series)
+  // Fullscreen button ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â wired once at init so it always works (movies + series)
   const fullscreenBtn = document.getElementById("fullscreenBtn");
   if (fullscreenBtn && !fullscreenBtn.dataset.fsBound) {
     fullscreenBtn.dataset.fsBound = "1";
@@ -6404,7 +6406,7 @@ function showToast(msg) {
   }, 3000);
 }
 
-// Initialize on DOM ready ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â loads data from API then starts app
+// Initialize on DOM ready ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â loads data from API then starts app
 
 function setupCwSelectionListeners() {
   document.addEventListener("click", (e) => {
@@ -6814,7 +6816,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                       showToast(`Switched to ${item.html}`);
                     }
                     const activeLbl = document.getElementById('serverActiveLabel');
-                    if (activeLbl) activeLbl.textContent = isDub ? 'ÃƒÂ°Ã…Â¸Ã…Â½Ã¢â€žÂ¢ÃƒÂ¯Ã‚Â¸Ã‚Â Mega Server HD (Dub)' : 'ÃƒÂ°Ã…Â¸Ã…Â¸Ã‚Â£ Mega Server HD (Sub)';
+                    if (activeLbl) activeLbl.textContent = isDub ? 'ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€¦Ã‚Â½ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¸Ãƒâ€šÃ‚Â Mega Server HD (Dub)' : 'ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€¦Ã‚Â¸Ãƒâ€šÃ‚Â£ Mega Server HD (Sub)';
                     const badge = document.getElementById('streamTypeBadge');
                     if (badge) badge.textContent = isDub ? 'MEGA DUB' : 'MEGA SUB';
                     break;
@@ -6847,7 +6849,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       controls: [
         {
           position: 'right',
-          html: '<button style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);color:#fff;border-radius:6px;padding:3px 10px;font-size:0.75rem;cursor:pointer;display:flex;align-items:center;gap:4px;">ÃƒÂ¢Ã‚ÂÃ‚Â© Skip Intro (+85s)</button>',
+          html: '<button style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);color:#fff;border-radius:6px;padding:3px 10px;font-size:0.75rem;cursor:pointer;display:flex;align-items:center;gap:4px;">ÃƒÆ’Ã‚Â¢Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â© Skip Intro (+85s)</button>',
           index: 2,
           tooltip: 'Skip Opening (+85s)',
           click: function() {
@@ -6921,7 +6923,7 @@ function updateIframeServer(serverOverride) {
     serverSelectWrap.classList.add('hidden');
   }
 
-  // Find the parent movie to check isAnime ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â check parentId OR the item itself
+  // Find the parent movie to check isAnime ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â check parentId OR the item itself
   const parentMovie = data.parentId ? MOVIES.find(m => String(m.id) === String(data.parentId) || String(m.videoUrl) === String(data.parentId)) : null;
   const selfMovie = !parentMovie && data.id ? MOVIES.find(m => String(m.videoUrl) === String(data.id) || String(m.id) === String(data.id)) : null;
   const refMovie = parentMovie || selfMovie;
@@ -7130,7 +7132,7 @@ document.getElementById("playerPrevEpBtn")?.addEventListener("click", () => navi
 })();
 
 // ==========================================
-// DYNAMIC GLASSMORPHIÃƒÂÃ‚Â¡ NAVBAR SCROLL HANDLER
+// DYNAMIC GLASSMORPHIÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¡ NAVBAR SCROLL HANDLER
 // ==========================================
 (function initNavbarScroll() {
   const navbar = document.getElementById("navbar");
@@ -7276,7 +7278,7 @@ async function initializeRatingSystem(movieId) {
     const cookies = document.cookie || '';
     const isCkb = cookies.includes('googtrans=/en/ckb');
     const isAr = cookies.includes('googtrans=/en/ar');
-    userRatingLabel.textContent = isCkb ? 'Ãƒâ„¢Ã¢â‚¬Â¡Ãƒâ€ºÃ¢â‚¬Â¢ÃƒÅ¡Ã‚ÂµÃƒËœÃ‚Â³Ãƒâ€ºÃ¢â‚¬Â¢Ãƒâ„¢Ã¢â‚¬Â ÃƒÅ¡Ã‚Â¯ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Â ÃƒËœÃ‚Â¯Ãƒâ„¢Ã¢â‚¬Â ' : (isAr ? 'ÃƒËœÃ‚Â§Ãƒâ„¢Ã¢â‚¬Å¾ÃƒËœÃ‚ÂªÃƒâ„¢Ã¢â‚¬Å¡Ãƒâ„¢Ã…Â Ãƒâ„¢Ã…Â Ãƒâ„¢Ã¢â‚¬Â¦' : 'Rate:');
+    userRatingLabel.textContent = isCkb ? 'ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚ÂµÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â³ÃƒÆ’Ã¢â‚¬ÂºÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã…Â¡Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ' : (isAr ? 'ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚ÂªÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢Ãƒâ€¦Ã‚Â ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦' : 'Rate:');
   }
 
   starsContainer.innerHTML = ''; // Clear container
