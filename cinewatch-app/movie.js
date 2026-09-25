@@ -4369,7 +4369,9 @@ function renderVipWalletDetails(walletKey) {
       });
     };
   }
-}\n\nfunction setupVipEventListeners() {
+}
+
+function setupVipEventListeners() {
   const methodCards = document.querySelectorAll(".checkout-method-card");
   methodCards.forEach(card => {
     card.addEventListener("click", () => {
