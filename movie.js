@@ -2152,6 +2152,75 @@ function _performSwitchView(viewName) {
   window.scrollTo({ top: 0, behavior: "instant" });
 }
 
+// =====================================================
+// Section SEO Updater — updates title/meta per section
+// =====================================================
+function updateSectionSEO(viewName) {
+  const BASE = 'https://cinewatch.watch';
+  const SEO = {
+    home: {
+      title: 'CineWatch - Watch Movies & TV Series Online Free',
+      description: 'CineWatch — Watch the latest movies, TV series, anime and 4K titles online for free. Browse thousands of titles, rate them and track what you watch.',
+      url: `${BASE}/`
+    },
+    movies: {
+      title: 'Watch Movies Online Free | CineWatch',
+      description: 'Browse hundreds of free movies on CineWatch — action, comedy, horror, drama, sci-fi and more. No sign-up required.',
+      url: `${BASE}/?section=movies`
+    },
+    series: {
+      title: 'Watch TV Series Online Free | CineWatch',
+      description: 'Stream full TV series and seasons online for free on CineWatch — drama, thriller, sci-fi, action and more.',
+      url: `${BASE}/?section=series`
+    },
+    anime: {
+      title: 'Watch Anime Online Free | CineWatch',
+      description: 'Stream the best anime series and anime movies free on CineWatch — action, romance, fantasy, isekai and more.',
+      url: `${BASE}/?section=anime`
+    },
+    '4k': {
+      title: 'Watch 4K Ultra HD Movies & Series | CineWatch VIP',
+      description: 'Stream 4K Ultra HD movies and series on CineWatch. Unlock crystal-clear 4K content with a VIP membership.',
+      url: `${BASE}/?section=4k`
+    }
+  };
+
+  const seo = SEO[viewName] || SEO.home;
+
+  // Update <title>
+  document.title = seo.title;
+
+  // Update meta description
+  const metaDesc = document.getElementById('cwMetaDescription');
+  if (metaDesc) metaDesc.setAttribute('content', seo.description);
+
+  // Update Open Graph tags
+  const ogTitle = document.getElementById('cwOgTitle');
+  if (ogTitle) ogTitle.setAttribute('content', seo.title);
+  const ogDesc = document.getElementById('cwOgDescription');
+  if (ogDesc) ogDesc.setAttribute('content', seo.description);
+  const ogUrl = document.getElementById('cwOgUrl');
+  if (ogUrl) ogUrl.setAttribute('content', seo.url);
+
+  // Update Twitter Card
+  const twTitle = document.getElementById('cwTwitterTitle');
+  if (twTitle) twTitle.setAttribute('content', seo.title);
+  const twDesc = document.getElementById('cwTwitterDescription');
+  if (twDesc) twDesc.setAttribute('content', seo.description);
+
+  // Update canonical link
+  const canonical = document.getElementById('cwCanonical');
+  if (canonical) canonical.setAttribute('href', seo.url);
+
+  // Push clean URL to address bar so sharing links reflect the section
+  try {
+    const relPath = viewName === 'home' ? '/' : `/?section=${encodeURIComponent(viewName)}`;
+    if (window.location.pathname + window.location.search !== relPath) {
+      window.history.replaceState({ section: viewName }, seo.title, relPath);
+    }
+  } catch(e) {}
+}
+
 function updateWatchlistBadge() {
   // Prune invalid/stale IDs from favorites that no longer exist in the database
   const validFavorites = state.favorites.filter(id => MOVIES.some(m => m.id === id));
