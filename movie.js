@@ -2120,6 +2120,7 @@ function _performSwitchView(viewName) {
     }, 60);
   } else if (viewName === "4k") {
     render4kSection();
+    updateSectionSEO('4k');
   } else if (viewName === "anime") {
     hideAll();
     if (animeSection) animeSection.classList.remove("hidden");
