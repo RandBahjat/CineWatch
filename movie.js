@@ -7450,3 +7450,22 @@ window.check4KAccess = function() {
         if (typeof showToast === "function") showToast("You need Gold or Diamond membership to access 4K Ultra HD.", "warning");
     }
 };
+
+// ============================================================
+// Ad Visibility — shown for free users, hidden for VIP
+// ============================================================
+function updateAdsVisibility() {
+  const isVip = !!(state.user && state.user.isVip);
+  const adBanner = document.getElementById('cwAdBannerTop');
+  const adSticky = document.getElementById('cwAdSticky');
+  // Only show if the slot has real ad content inside (not empty)
+  const bannerHasAds = adBanner && adBanner.querySelector('.cw-ad-inner')?.children.length > 0;
+  const stickyHasAds = adSticky && adSticky.querySelector('.cw-ad-sticky-inner')?.children.length > 0;
+  if (adBanner) adBanner.style.display = (!isVip && bannerHasAds) ? 'flex' : 'none';
+  if (adSticky) adSticky.style.display = (!isVip && stickyHasAds) ? 'flex' : 'none';
+  if (isVip) {
+    document.body.classList.add('cw-ads-hidden');
+  } else {
+    document.body.classList.remove('cw-ads-hidden');
+  }
+}
