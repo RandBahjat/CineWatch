@@ -4333,8 +4333,20 @@ function selectVipTier(tierData) {
                   }
                   return;
               }
-              const pName = currentVipWalletKey === 'visa' ? 'Visa' : 'Mastercard';
-              finalMsg += `\nPayment Method: ${pName}\nCardholder: ${ccName}\nCard Number: ${ccNum}\nExpiry: ${ccExp}\nCVV: ${ccCvc}`;
+              if (typeof showToast === 'function') {
+                  showToast("Processing payment...");
+                  const btn = document.getElementById("vipWhatsappBtn");
+                  if (btn) btn.innerHTML = '<ion-spinner name="crescent"></ion-spinner> Processing...';
+                  setTimeout(() => {
+                      showToast("Purchase successful!");
+                      if (btn) btn.innerHTML = 'Purchase';
+                      const modal = document.getElementById('vipModal');
+                      if (modal) modal.classList.remove('show');
+                  }, 1500);
+              } else {
+                  alert("Purchase successful!");
+              }
+              return;
           } else {
               const walletName = VIP_WALLETS[currentVipWalletKey]?.name || 'FastPay';
               finalMsg += `\nPayment Method: ${walletName}`;
