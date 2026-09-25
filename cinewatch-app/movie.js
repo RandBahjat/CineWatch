@@ -1618,8 +1618,12 @@ function renderBrowsePagination(paginationId, currentPage, totalPages, onPageCha
     btn.onclick = () => {
       const p = parseInt(btn.dataset.page, 10);
       if (!isNaN(p)) {
-        onPageChange(p);
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        if (typeof window.handlePaginationWithAd === 'function') {
+          window.handlePaginationWithAd(p, onPageChange);
+        } else {
+          onPageChange(p);
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
       }
     };
   });
@@ -1631,8 +1635,12 @@ function renderBrowsePagination(paginationId, currentPage, totalPages, onPageCha
     const jumpToPage = () => {
       const p = parseInt(jumpInput.value, 10);
       if (!isNaN(p) && p >= 1 && p <= totalPages) {
-        onPageChange(p);
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        if (typeof window.handlePaginationWithAd === 'function') {
+          window.handlePaginationWithAd(p, onPageChange);
+        } else {
+          onPageChange(p);
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
       }
     };
     jumpBtn.onclick = jumpToPage;
@@ -7463,9 +7471,46 @@ function updateAdsVisibility() {
   const stickyHasAds = adSticky && adSticky.querySelector('.cw-ad-sticky-inner')?.children.length > 0;
   if (adBanner) adBanner.style.display = (!isVip && bannerHasAds) ? 'flex' : 'none';
   if (adSticky) adSticky.style.display = (!isVip && stickyHasAds) ? 'flex' : 'none';
+
+  // Home Page Ad Slots
+  const homeAd1 = document.getElementById('cwHomeAd1');
+  const homeAd2 = document.getElementById('cwHomeAd2');
+  const homeAd1HasAds = homeAd1 && homeAd1.querySelector('.cw-ad-inner')?.children.length > 0;
+  const homeAd2HasAds = homeAd2 && homeAd2.querySelector('.cw-ad-inner')?.children.length > 0;
+  
+  if (homeAd1) homeAd1.style.display = (!isVip && homeAd1HasAds) ? 'block' : 'none';
+  if (homeAd2) homeAd2.style.display = (!isVip && homeAd2HasAds) ? 'block' : 'none';
+
   if (isVip) {
     document.body.classList.add('cw-ads-hidden');
   } else {
     document.body.classList.remove('cw-ads-hidden');
   }
 }
+
+window.handlePaginationWithAd = function(p, onPageChange) {
+  const isVip = !!(state.user && state.user.isVip);
+  const interstitialModal = document.getElementById('cwInterstitialAdModal');
+  const adInner = document.getElementById('cwInterstitialAdInner');
+  const hasAdContent = adInner && adInner.children.length > 0;
+  
+  if (isVip || !interstitialModal || !hasAdContent) {
+    onPageChange(p);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
+  
+  const proceed = () => {
+    interstitialModal.classList.add('hidden');
+    onPageChange(p);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  
+  const closeBtn = document.getElementById('cwCloseInterstitialBtn');
+  const continueBtn = document.getElementById('cwContinueInterstitialBtn');
+  
+  if(closeBtn) closeBtn.onclick = proceed;
+  if(continueBtn) continueBtn.onclick = proceed;
+  
+  interstitialModal.classList.remove('hidden');
+};
