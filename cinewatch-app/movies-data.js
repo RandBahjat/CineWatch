@@ -566,7 +566,7 @@ window._MOVIES_DATA = [
       "Horror",
       "Sci-Fi"
     ],
-    poster: "https://image.tmdb.org/t/p/original/diI1NMZ9lkzCUmdDzwyk4Qcqmt5.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/oRHuTPN8f5POBWKMM7zWizqhN8E.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
     videoUrl: "1423191",
     trailerUrl: "https://youtu.be/mNd1gb19A-c?si=Ne3W24qSAY1X8Lf1",
