@@ -1807,6 +1807,30 @@
                                 <!-- Populated dynamically via JS -->
                             </div>
 
+                            <div class="cc-form-box" id="ccFormBox" style="display: none;">
+                                <div class="form-group">
+                                    <label>Cardholder Name</label>
+                                    <input type="text" class="form-control" placeholder="John Doe" id="ccName">
+                                </div>
+                                <div class="form-group">
+                                    <label>Card Number</label>
+                                    <div class="input-with-icon">
+                                        <ion-icon name="card-outline"></ion-icon>
+                                        <input type="text" class="form-control" placeholder="0000 0000 0000 0000" id="ccNumber" maxlength="19">
+                                    </div>
+                                </div>
+                                <div style="display: flex; gap: 1rem;">
+                                    <div class="form-group" style="flex: 1;">
+                                        <label>Expiry Date</label>
+                                        <input type="text" class="form-control" placeholder="MM/YY" id="ccExpiry" maxlength="5">
+                                    </div>
+                                    <div class="form-group" style="flex: 1;">
+                                        <label>CVC / CVV</label>
+                                        <input type="password" class="form-control" placeholder="123" id="ccCvc" maxlength="4">
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="checkout-actions-vertical">
                                 <button class="btn-checkout-confirm btn-whatsapp" id="vipWhatsappBtn">
                                     <ion-icon name="logo-whatsapp"></ion-icon> Complete Purchase
