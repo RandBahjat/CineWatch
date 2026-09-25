@@ -4391,9 +4391,9 @@ function selectVipTier(tierData) {
         submitBtn.innerHTML = '<ion-icon name="checkmark-circle-outline" style="font-size: 1.3rem;"></ion-icon> Confirm Payment';
         
         if (typeof showToast === 'function') {
-          showToast("Payment submitted! Your VIP membership is now active.");
+          showToast("✅ Payment submitted! Please wait up to 5 minutes for your VIP to activate.");
         } else {
-          alert("Payment submitted! Your VIP membership is now active.");
+          alert("✅ Payment submitted! Please wait up to 5 minutes for your VIP to activate.");
         }
 
         if (typeof closeVipModal === 'function') {
