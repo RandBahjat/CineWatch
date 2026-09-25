@@ -1581,9 +1581,9 @@ function renderBrowsePagination(paginationId, currentPage, totalPages, onPageCha
     pages.push(1);
     const start = Math.max(2, currentPage - 2);
     const end = Math.min(totalPages - 1, currentPage + 2);
-    if (start > 2) pages.push("â€¦");
+    if (start > 2) pages.push("...");
     for (let i = start; i <= end; i++) pages.push(i);
-    if (end < totalPages - 1) pages.push("â€¦");
+    if (end < totalPages - 1) pages.push("...");
     pages.push(totalPages);
   }
 
@@ -1596,7 +1596,7 @@ function renderBrowsePagination(paginationId, currentPage, totalPages, onPageCha
 
   let html = `<button class="page-btn prev-btn notranslate" translate="no" ${currentPage === 1 ? "disabled" : ""} data-page="${currentPage - 1}">${prevText}</button>`;
   pages.forEach((p) => {
-    if (p === "…") {
+    if (p === "...") {
       html += `<span class="page-ellipsis notranslate" translate="no">&hellip;</span>`;
     } else {
       html += `<button class="page-btn notranslate ${p === currentPage ? "active" : ""}" translate="no" data-page="${p}">${formatNumber(p)}</button>`;
