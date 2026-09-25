@@ -4386,12 +4386,33 @@ function renderVipWalletDetails(walletKey) {
 
   
   const ccForm = document.getElementById("ccFormBox");
+  const waBtn = document.getElementById("vipWhatsappBtn");
+  const actionHint = document.querySelector(".action-hint");
+
   if (walletKey === 'mastercard' || walletKey === 'visa') {
       if (container) container.style.display = 'none';
       if (ccForm) ccForm.style.display = 'block';
+      if (waBtn) {
+          waBtn.innerHTML = 'Purchase';
+          waBtn.classList.remove('btn-whatsapp');
+          waBtn.style.backgroundColor = '#10b981';
+          waBtn.style.color = '#fff';
+      }
+      if (actionHint) {
+          actionHint.style.display = 'none';
+      }
   } else {
       if (container) container.style.display = 'block';
       if (ccForm) ccForm.style.display = 'none';
+      if (waBtn) {
+          waBtn.innerHTML = '<ion-icon name="logo-whatsapp"></ion-icon> Complete Purchase';
+          waBtn.classList.add('btn-whatsapp');
+          waBtn.style.backgroundColor = '';
+          waBtn.style.color = '';
+      }
+      if (actionHint) {
+          actionHint.style.display = 'block';
+      }
   }
 container.innerHTML = `
     <div class="instruction-header">Send Payment To (${w.name}):</div>
