@@ -13,9 +13,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260920_656">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_2633">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_891">
+    <link rel="stylesheet" href="movie.css?v=20260920_657">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_2634">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_892">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -118,10 +118,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_8057" defer></script>
-    <script src="series-data.js?v=20260818_8057" defer></script>
-    <script src="anime-data.js?v=20260818_8057" defer></script>
-    <script src="movie.js?v=20260920_655" defer></script>
+    <script src="movies-data.js?v=20260818_8058" defer></script>
+    <script src="series-data.js?v=20260818_8058" defer></script>
+    <script src="anime-data.js?v=20260818_8058" defer></script>
+    <script src="movie.js?v=20260920_656" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -824,23 +824,22 @@
                 });
             })();
         </script>
-        <!-- ===== AD SLOTS — shown for free users, hidden for VIP ===== -->
-        <!-- In-Feed Top Ad Banner -->
-        <div class="cw-ad-slot cw-ad-banner" id="cwAdBannerTop">
+        <!-- AD SLOT TOP - hidden until real ad code is added -->
+        <div class="cw-ad-slot cw-ad-banner" id="cwAdBannerTop" style="display:none;">
             <span class="cw-ad-label">Advertisement</span>
             <div class="cw-ad-inner">
                 <!-- PASTE YOUR AD NETWORK CODE HERE -->
-                <div class="cw-ad-placeholder"><span>📢 Ad Space</span></div>
             </div>
-            <a href="#" class="cw-ad-upgrade-hint" onclick="openVipModal(); return false;">✨ Go VIP — Remove Ads</a>
+            <a href="#" class="cw-ad-upgrade-hint" onclick="openVipModal(); return false;">Go VIP &mdash; Remove Ads</a>
         </div>
-        <!-- Sticky Bottom Bar Ad -->
-        <div class="cw-ad-sticky" id="cwAdSticky">
+        <!-- STICKY AD - hidden until real ad code is added -->
+        <div class="cw-ad-sticky" id="cwAdSticky" style="display:none;">
             <span class="cw-ad-label">Ad</span>
             <div class="cw-ad-sticky-inner">
                 <!-- PASTE YOUR STICKY AD CODE HERE -->
-                <div class="cw-ad-placeholder cw-ad-placeholder-sticky"><span>📢 Advertisement</span></div>
             </div>
+            <a href="#" class="cw-ad-sticky-close" onclick="openVipModal(); return false;">Remove Ads</a>
+        </div>
             <a href="#" class="cw-ad-sticky-close" onclick="openVipModal(); return false;" title="Go VIP">✨ Remove Ads</a>
         </div>
         <!-- Continue Watching Shelf -->
@@ -2701,7 +2700,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_891"></script>
+    <script src="welcome-disclaimer.js?v=20260918_892"></script>
 </body>
 
 </html>
