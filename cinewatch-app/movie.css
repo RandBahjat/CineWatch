@@ -11195,13 +11195,16 @@ min-width: 0;
 }
 
 .wallet-num-val {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 800;
   color: #fff;
   letter-spacing: 0.03em;
+  word-break: break-all;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 .wallet-copy-btn {
+  flex-shrink: 0;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;

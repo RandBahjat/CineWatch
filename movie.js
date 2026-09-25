@@ -4078,9 +4078,9 @@ const VIP_WALLETS = {
   },
   usdt: {
     name: "USDT / Crypto (TRC-20 & Binance)",
-    number: "TYu8kExampleTRC20Address... (Click Copy)",
-    holder: "Network: TRON (TRC-20) / Binance Pay ID",
-    note: "Send USDT from Binance, Trust Wallet, Revolut, or any international crypto app. Instant worldwide.",
+    number: "TFCWRviskL9EWhC17KxjzKWGf7KqLB8vm5",
+    holder: "Network: TRON (TRC-20) / Binance",
+    note: "Send USDT via TRON (TRC-20) network from Binance, Trust Wallet, Revolut, Cash App, or any exchange. Instant worldwide activation.",
     color: "#10b981",
     logoSvg: '<svg viewBox="0 0 32 32" width="20" height="20" fill="none" style="display:block;"><circle cx="16" cy="16" r="16" fill="#26A17B"/><path d="M17.922 17.383c-.11.008-.68.04-1.637.04-.766 0-1.393-.031-1.57-.04v-2.316h3.207v2.316zm-3.207-3.15v-1.922h7.457v-3.084H9.828v3.084h7.457v1.922H8.383v3.424c1.826.69 4.887 1.15 8.527 1.15 3.652 0 6.703-.46 8.539-1.15v-3.424H14.715z" fill="#FFFFFF"/></svg>'
   },
