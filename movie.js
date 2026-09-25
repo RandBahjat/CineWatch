@@ -4323,18 +4323,37 @@ function selectVipTier(tierData) {
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<ion-spinner name="crescent"></ion-spinner> Verifying Payment...';
 
-      // Save order record locally
+      // Save order record locally with rich device and time tracking
+      function getDeviceType() {
+        const ua = navigator.userAgent;
+        if (/iPhone/i.test(ua)) return "iPhone (Mobile)";
+        if (/iPad/i.test(ua)) return "iPad (Tablet)";
+        if (/Android/i.test(ua)) return "Android (Mobile)";
+        if (/Mac/i.test(ua)) return "Mac (Desktop)";
+        if (/Windows/i.test(ua)) return "Windows (PC)";
+        return "Desktop / Web Browser";
+      }
+
+      const orderId = "CW-" + Math.floor(100000 + Math.random() * 900000);
+      const now = new Date();
+      const timeStr = now.toLocaleDateString('en-GB') + ' ' + now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
       const orderData = {
+        id: orderId,
         username: username,
+        userEmail: state.user?.email || "Guest",
         plan: tierData.name,
-        price: tierData.price,
+        price: "$" + tierData.price + (tierData.iqd ? " (" + tierData.iqd + ")" : ""),
         wallet: VIP_WALLETS[currentVipWalletKey]?.name || currentVipWalletKey,
         reference: refVal,
-        createdAt: new Date().toISOString()
+        device: getDeviceType(),
+        status: "Pending",
+        createdAt: timeStr
       };
+
       try {
         let orders = JSON.parse(localStorage.getItem('cinewatch_vip_orders') || '[]');
-        orders.push(orderData);
+        orders.unshift(orderData); // Latest orders first
         localStorage.setItem('cinewatch_vip_orders', JSON.stringify(orders));
       } catch(e) {}
 
