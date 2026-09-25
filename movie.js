@@ -345,7 +345,7 @@ function loadState() {
 
     const savedUser = sessionStorage.getItem(KEYS.USER);
     if (savedUser) state.user = JSON.parse(savedUser);
-  updateAdsVisibility();
+  if (typeof updateAdsVisibility === "function") updateAdsVisibility();
 
     const savedFavs = sessionStorage.getItem(KEYS.FAVORITES) || localStorage.getItem(KEYS.FAVORITES);
     if (savedFavs) state.favorites = JSON.parse(savedFavs);
