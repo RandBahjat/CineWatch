@@ -7564,26 +7564,20 @@ function updateAdsVisibility() {
 window.handlePaginationWithAd = function(p, onPageChange) {
   const isVip = !!(state.user && state.user.isVip);
   const interstitialModal = document.getElementById('cwInterstitialAdModal');
-  const adInner = document.getElementById('cwInterstitialAdInner');
-  const hasAdContent = adInner && adInner.children.length > 0;
-  
-  if (isVip || !interstitialModal || !hasAdContent) {
+
+  if (isVip || !interstitialModal) {
     onPageChange(p);
     window.scrollTo({ top: 0, behavior: "smooth" });
     return;
   }
-  
-  const proceed = () => {
-    interstitialModal.classList.add('hidden');
+
+  // Store the proceed callback so the buttons in index.html can call it
+  window._cwInterstitialProceed = function() {
+    window._cwInterstitialProceed = null;
     onPageChange(p);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-  
-  const closeBtn = document.getElementById('cwCloseInterstitialBtn');
-  const continueBtn = document.getElementById('cwContinueInterstitialBtn');
-  
-  if(closeBtn) closeBtn.onclick = proceed;
-  if(continueBtn) continueBtn.onclick = proceed;
-  
-  interstitialModal.classList.remove('hidden');
+
+  // Show the modal
+  interstitialModal.style.display = 'flex';
 };
