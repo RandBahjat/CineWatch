@@ -13,9 +13,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260920_612">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_2589">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_847">
+    <link rel="stylesheet" href="movie.css?v=20260920_614">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_2591">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_849">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -118,10 +118,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_8013" defer></script>
-    <script src="series-data.js?v=20260818_8013" defer></script>
-    <script src="anime-data.js?v=20260818_8013" defer></script>
-    <script src="movie.js?v=20260920_611" defer></script>
+    <script src="movies-data.js?v=20260818_8015" defer></script>
+    <script src="series-data.js?v=20260818_8015" defer></script>
+    <script src="anime-data.js?v=20260818_8015" defer></script>
+    <script src="movie.js?v=20260920_613" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1843,7 +1843,14 @@
                                 <!-- Populated dynamically via JS -->
                             </div>
 
-                            <div class="cc-form-box" id="ccFormBox" style="display: none;">
+                            
+                            <div class="cc-form-box" id="cryptoFormBox" style="display: none;">
+                                <div class="form-group">
+                                    <label>Transaction Hash (TXID) / Sender Address</label>
+                                    <input type="text" class="form-control" placeholder="e.g. 0x123...abc or TR7..." id="cryptoTxid">
+                                </div>
+                            </div>
+<div class="cc-form-box" id="ccFormBox" style="display: none;">
                                 <div class="form-group">
                                     <label>Cardholder Name</label>
                                     <input type="text" class="form-control" placeholder="John Doe" id="ccName">
@@ -2703,7 +2710,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_847"></script>
+    <script src="welcome-disclaimer.js?v=20260918_849"></script>
 </body>
 
 </html>
