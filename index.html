@@ -15,9 +15,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260920_684">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_2661">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_919">
+    <link rel="stylesheet" href="movie.css?v=20260920_685">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_2662">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_920">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -135,10 +135,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_8085" defer></script>
-    <script src="series-data.js?v=20260818_8085" defer></script>
-    <script src="anime-data.js?v=20260818_8085" defer></script>
-    <script src="movie.js?v=20260920_683" defer></script>
+    <script src="movies-data.js?v=20260818_8086" defer></script>
+    <script src="series-data.js?v=20260818_8086" defer></script>
+    <script src="anime-data.js?v=20260818_8086" defer></script>
+    <script src="movie.js?v=20260920_684" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -2758,7 +2758,36 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_919"></script>
+    <script src="welcome-disclaimer.js?v=20260918_920"></script>
+
+    <!-- Interstitial Ad Modal — fires on pagination for free users -->
+    <div id="cwInterstitialAdModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.88); align-items:center; justify-content:center;">
+        <div style="background:#161618; border-radius:14px; padding:24px; max-width:420px; width:90%; text-align:center; position:relative; box-shadow:0 8px 40px rgba(0,0,0,0.7);">
+            <button id="cwCloseInterstitialBtn" style="position:absolute; top:12px; right:14px; background:none; border:none; color:#aaa; font-size:22px; cursor:pointer; line-height:1;">&#10005;</button>
+            <p style="color:#aaa; font-size:0.78rem; letter-spacing:1px; text-transform:uppercase; margin-bottom:10px;">Advertisement</p>
+            <!-- Adsterra banner ad inside the popup -->
+            <div id="cwInterstitialAdInner" style="display:flex; align-items:center; justify-content:center; min-height:160px; margin-bottom:16px;">
+                <script>atOptions={'key':'aab2f5b837577d78c557c34438394794','format':'iframe','height':300,'width':160,'params':{}};</script>
+                <script src="https://www.highrevenueformat.com/aab2f5b837577d78c557c34438394794/invoke.js"></script>
+            </div>
+            <p style="color:#888; font-size:0.82rem; margin-bottom:14px;">Support CineWatch by viewing this ad</p>
+            <button id="cwContinueInterstitialBtn" style="background:#e50914; color:#fff; border:none; border-radius:8px; padding:10px 28px; font-size:0.95rem; font-weight:600; cursor:pointer; width:100%; margin-bottom:10px;">Continue to Next Page &#8594;</button>
+            <a href="#" onclick="document.getElementById('cwInterstitialAdModal').style.display='none'; openVipModal(); return false;" style="color:#e50914; font-size:0.82rem; text-decoration:none; display:block;">Go VIP &mdash; Remove All Ads</a>
+        </div>
+    </div>
+    <script>
+      // Wire up interstitial close/continue buttons
+      (function() {
+        document.getElementById('cwCloseInterstitialBtn').onclick = function() {
+          document.getElementById('cwInterstitialAdModal').style.display = 'none';
+          if (window._cwInterstitialProceed) window._cwInterstitialProceed();
+        };
+        document.getElementById('cwContinueInterstitialBtn').onclick = function() {
+          document.getElementById('cwInterstitialAdModal').style.display = 'none';
+          if (window._cwInterstitialProceed) window._cwInterstitialProceed();
+        };
+      })();
+    </script>
 </body>
 
 </html>
