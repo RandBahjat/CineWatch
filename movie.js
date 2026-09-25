@@ -7561,23 +7561,18 @@ function updateAdsVisibility() {
   }
 }
 
+// === PASTE YOUR ADSTERRA SMARTLINK URL HERE ===
+var CW_PAGINATION_AD_URL = "PASTE_YOUR_SMARTLINK_URL_HERE";
+
 window.handlePaginationWithAd = function(p, onPageChange) {
   const isVip = !!(state.user && state.user.isVip);
-  const interstitialModal = document.getElementById('cwInterstitialAdModal');
 
-  if (isVip || !interstitialModal) {
-    onPageChange(p);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    return;
+  // Always change the page first
+  onPageChange(p);
+  window.scrollTo({ top: 0, behavior: "smooth" });
+
+  // Free users only: open the ad in a new tab
+  if (!isVip && CW_PAGINATION_AD_URL && CW_PAGINATION_AD_URL !== "PASTE_YOUR_SMARTLINK_URL_HERE") {
+    window.open(CW_PAGINATION_AD_URL, '_blank');
   }
-
-  // Store the proceed callback so the buttons in index.html can call it
-  window._cwInterstitialProceed = function() {
-    window._cwInterstitialProceed = null;
-    onPageChange(p);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  // Show the modal
-  interstitialModal.style.display = 'flex';
 };
