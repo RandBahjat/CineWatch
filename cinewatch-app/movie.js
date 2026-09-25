@@ -4302,13 +4302,25 @@ function selectVipTier(tierData) {
   const priceDisplay = tierData.iqd ? `$${tierData.price} (${tierData.iqd})` : `$${tierData.price}`;
   const msg = encodeURIComponent(`Hello CineWatch! I would like to activate ${tierData.name} (${priceDisplay}).\nMy CineWatch Username: ${username}`);
 
+  
   const tgBtn = document.getElementById("vipTelegramBtn");
-  if (tgBtn) tgBtn.href = `https://t.me/randibajat?text=${msg}`;
+  if (tgBtn) {
+      tgBtn.onclick = () => window.open(`https://t.me/randibajat?text=${msg}`, '_blank');
+  }
 
   const waBtn = document.getElementById("vipWhatsappBtn");
-  if (waBtn) waBtn.href = `https://wa.me/9647748201148?text=${msg}`;
+  if (waBtn) {
+      waBtn.onclick = () => window.open(`https://wa.me/9647748201148?text=${msg}`, '_blank');
+  }
+
+  // Pre-fill username field in checkout
+  const usernameField = document.getElementById("checkoutUsername");
+  if (usernameField) {
+      usernameField.value = username;
+  }
 
   renderVipWalletDetails(currentVipWalletKey);
+
 }
 
 function renderVipWalletDetails(walletKey) {
@@ -4316,67 +4328,55 @@ function renderVipWalletDetails(walletKey) {
   const container = document.getElementById("walletDetailsBox");
   if (!container) return;
 
-  const w = VIP_WALLETS[walletKey] || VIP_WALLETS.mastercard;
+  const w = VIP_WALLETS[walletKey] || VIP_WALLETS.fastpay;
   if (!w) return;
 
-  document.querySelectorAll("#vipWalletTabs .wallet-tab").forEach(tab => {
-    tab.classList.toggle("active", tab.dataset.wallet === walletKey);
+  // Update tabs active state
+  document.querySelectorAll(".checkout-method-card").forEach(tab => {
+    if(tab.dataset.wallet === walletKey) {
+        tab.classList.add("active");
+        const radio = tab.querySelector('input[type="radio"]');
+        if(radio) radio.checked = true;
+    } else {
+        tab.classList.remove("active");
+    }
   });
 
   container.innerHTML = `
-    <div class="wallet-row">
-      <span class="wallet-row-label">Payment Method:</span>
-      <div style="display: flex; align-items: center; gap: 8px;">
-        <span class="wallet-tab-icon">${w.logoSvg || ''}</span>
-        <span style="font-weight: 700; color: #fff;">${w.name}</span>
-      </div>
+    <div class="instruction-header">Send Payment To (${w.name}):</div>
+    <div class="instruction-number-wrap">
+      <span class="instruction-val" id="vipWalletVal">${w.number}</span>
+      <button class="instruction-copy-btn" id="vipCopyWalletBtn" type="button">Copy</button>
     </div>
-    <div class="wallet-row">
-      <span class="wallet-row-label">Account / Address:</span>
-      <div class="wallet-number-wrap">
-        <span class="wallet-num-val" id="vipWalletVal">${w.number}</span>
-        <button class="wallet-copy-btn" id="vipCopyWalletBtn" type="button">
-          <ion-icon name="copy-outline"></ion-icon> Copy
-        </button>
-      </div>
-    </div>
-    <div class="wallet-row">
-      <span class="wallet-row-label">Account Details:</span>
-      <span style="font-weight: 600; color: rgba(255,255,255,0.85);">${w.holder}</span>
-    </div>
-    <div class="wallet-row">
-      <span class="wallet-row-label">Amount Due:</span>
-      <span style="font-weight: 800; color: #fbbf24;">$${selectedVipTierData.price}</span>
-    </div>
-    ${w.note ? `
-    <div class="wallet-note-box" style="margin-top: 12px; padding: 10px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; font-size: 0.82rem; color: rgba(255,255,255,0.8); display: flex; align-items: flex-start; gap: 8px;">
-      <ion-icon name="information-circle-outline" style="font-size: 1.15rem; color: #38bdf8; flex-shrink: 0; margin-top: 1px;"></ion-icon>
-      <span>${w.note}</span>
-    </div>
-    ` : ''}
+    <div class="instruction-holder">Account Name: ${w.holder}</div>
+    ${w.note ? `<div class="instruction-note"><ion-icon name="information-circle-outline" style="font-size:1.2rem; flex-shrink:0;"></ion-icon> ${w.note}</div>` : ''}
   `;
 
   const copyBtn = document.getElementById("vipCopyWalletBtn");
   if (copyBtn) {
     copyBtn.onclick = () => {
-      navigator.clipboard.writeText(w.copyValue || w.number).then(() => {
-        copyBtn.innerHTML = `<ion-icon name="checkmark-outline"></ion-icon> Copied!`;
+      const copyVal = w.copyValue || w.number;
+      navigator.clipboard.writeText(copyVal).then(() => {
+        copyBtn.innerText = "Copied!";
         copyBtn.style.background = "#22c55e";
-        copyBtn.style.color = "#000";
         setTimeout(() => {
-          copyBtn.innerHTML = `<ion-icon name="copy-outline"></ion-icon> Copy`;
+          copyBtn.innerText = "Copy";
           copyBtn.style.background = "";
-          copyBtn.style.color = "";
         }, 2000);
-        showToast("Wallet number copied to clipboard!");
+        showToast("Wallet number copied!");
       }).catch(() => {
-        showToast("Copied: " + (w.copyValue || w.number));
+        showToast("Copied: " + copyVal);
       });
     };
   }
-}
+}\n\nfunction setupVipEventListeners() {
+  const methodCards = document.querySelectorAll(".checkout-method-card");
+  methodCards.forEach(card => {
+    card.addEventListener("click", () => {
+       renderVipWalletDetails(card.dataset.wallet);
+    });
+  });
 
-function setupVipEventListeners() {
   const navVipBtn = document.getElementById("navVipBtn");
   if (navVipBtn) navVipBtn.onclick = () => openVipModal();
 

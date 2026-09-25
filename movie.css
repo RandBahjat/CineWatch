@@ -11575,3 +11575,269 @@ min-width: 0;
   filter: brightness(1.15);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
+\n
+/* --- New GameMasterz Style Checkout --- */
+.checkout-top-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding-bottom: 1rem;
+}
+.checkout-page-title {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+}
+.checkout-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 24px;
+}
+.checkout-section-block {
+  background: #111827;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+.checkout-section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #94a3b8;
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.checkout-customer-form .form-group {
+  margin-bottom: 16px;
+}
+.checkout-customer-form label {
+  display: block;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  margin-bottom: 6px;
+}
+.checkout-customer-form .form-control {
+  width: 100%;
+  background: #1e293b;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+.input-phone-wrap {
+  display: flex;
+  align-items: center;
+  background: #1e293b;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.phone-prefix {
+  padding: 10px 14px;
+  background: #0f172a;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+.input-phone-wrap .form-control {
+  border: none;
+  border-radius: 0;
+  flex: 1;
+}
+.checkout-methods-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.checkout-method-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background: #1e293b;
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+}
+.checkout-method-card:hover {
+  background: #273549;
+}
+.checkout-method-card.active {
+  background: rgba(56, 189, 248, 0.08);
+  border-color: #38bdf8;
+}
+.checkout-method-card input[type="radio"] {
+  accent-color: #38bdf8;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  cursor: pointer;
+}
+.method-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+.method-info {
+  display: flex;
+  flex-direction: column;
+}
+.method-name {
+  font-weight: 600;
+  color: #fff;
+  font-size: 0.95rem;
+}
+.method-desc {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+.summary-block {
+  background: #0f172a;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+.summary-label {
+  color: #94a3b8;
+}
+.summary-value {
+  color: #fff;
+  font-weight: 600;
+}
+.summary-divider {
+  border: 0;
+  height: 1px;
+  background: rgba(255,255,255,0.08);
+  margin: 16px 0;
+}
+.total-row {
+  font-size: 1.1rem;
+}
+.total-price {
+  color: #fbbf24;
+  font-weight: 800;
+}
+.payment-instruction-box {
+  margin-top: 20px;
+  background: rgba(56, 189, 248, 0.05);
+  border: 1px dashed rgba(56, 189, 248, 0.3);
+  border-radius: 12px;
+  padding: 16px;
+}
+.instruction-header {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.instruction-number-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.instruction-val {
+  font-family: monospace;
+  font-size: 1.05rem;
+  color: #fff;
+  font-weight: 700;
+  word-break: break-all;
+}
+.instruction-copy-btn {
+  background: #38bdf8;
+  color: #000;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.2s;
+  flex-shrink: 0;
+}
+.instruction-copy-btn:hover {
+  background: #0ea5e9;
+}
+.instruction-holder {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+}
+.instruction-note {
+  margin-top: 12px;
+  font-size: 0.75rem;
+  color: #38bdf8;
+  display: flex;
+  gap: 6px;
+  line-height: 1.4;
+  background: rgba(30, 41, 59, 0.8);
+  padding: 8px;
+  border-radius: 6px;
+}
+.checkout-actions-vertical {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.btn-checkout-confirm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+.btn-telegram {
+  background: #2481cc;
+  color: #fff;
+}
+.btn-telegram:hover {
+  background: #1d69a6;
+  color: #fff;
+}
+.btn-whatsapp {
+  background: #25D366;
+  color: #fff;
+}
+.btn-whatsapp:hover {
+  background: #1da851;
+  color: #fff;
+}
+.action-hint {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+@media(max-width: 800px) {
+  .checkout-grid-container {
+    grid-template-columns: 1fr;
+  }
+}
