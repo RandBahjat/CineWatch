@@ -4586,7 +4586,7 @@ function setupVipEventListeners() {
 
       if (statusEl) {
         statusEl.classList.remove("hidden");
-        statusEl.innerHTML = `âœ… <strong>Receipt Submitted!</strong> We will verify your transaction and activate VIP on your account within minutes.`;
+        statusEl.innerHTML = `✅ <strong>Receipt Submitted!</strong> We will verify your transaction and activate VIP on your account within 5 minutes.`;
       }
       txInput.value = "";
       showToast("Transaction reference submitted! Admin notified.");
