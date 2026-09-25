@@ -4342,7 +4342,16 @@ function renderVipWalletDetails(walletKey) {
     }
   });
 
-  container.innerHTML = `
+  
+  const ccForm = document.getElementById("ccFormBox");
+  if (walletKey === 'mastercard') {
+      if (container) container.style.display = 'none';
+      if (ccForm) ccForm.style.display = 'block';
+  } else {
+      if (container) container.style.display = 'block';
+      if (ccForm) ccForm.style.display = 'none';
+  }
+container.innerHTML = `
     <div class="instruction-header">Send Payment To (${w.name}):</div>
     <div class="instruction-number-wrap">
       <span class="instruction-val" id="vipWalletVal">${w.number}</span>
