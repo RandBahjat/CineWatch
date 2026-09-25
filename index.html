@@ -15,9 +15,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260920_681">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_2658">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_916">
+    <link rel="stylesheet" href="movie.css?v=20260920_682">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_2659">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_917">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -135,34 +135,33 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_8082" defer></script>
-    <script src="series-data.js?v=20260818_8082" defer></script>
-    <script src="anime-data.js?v=20260818_8082" defer></script>
-    <script src="movie.js?v=20260920_680" defer></script>
+    <script src="movies-data.js?v=20260818_8083" defer></script>
+    <script src="series-data.js?v=20260818_8083" defer></script>
+    <script src="anime-data.js?v=20260818_8083" defer></script>
+    <script src="movie.js?v=20260920_681" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
 
-    <!-- Popunder Ad Manager -->
+    <!-- Popunder Ad Manager (Adsterra) — Free users only -->
     <script>
       (function() {
         try {
-          // Check if user is VIP. If they are, DO NOT load the popunder.
           var cwState = JSON.parse(localStorage.getItem('cw_state') || '{}');
           if (cwState && cwState.user && cwState.user.isVip) return;
-          
-          // Free users only: Load the Popunder Script here
-          // === REPLACE THE URL BELOW WITH YOUR MONETAG/ADSTERRA POPUNDER URL ===
-          var popunderUrl = "PASTE_YOUR_POPUNDER_SCRIPT_URL_HERE";
-          
-          if (popunderUrl && popunderUrl !== "PASTE_YOUR_POPUNDER_SCRIPT_URL_HERE") {
-              var s = document.createElement('script');
-              s.src = popunderUrl;
-              s.async = true;
-              document.head.appendChild(s);
-          }
+          // Load popunder scripts for free users only
+          var urls = [
+            'https://pl31512881.profitableratecpmnetwork.com/d8/5d/6c/d85d6c3acdc48be84c9ebdbb4493ba31.js',
+            'https://pl31512882.profitableratecpmnetwork.com/f8/0d/c4/f80dc492bcfec156d6ea9919f97e7c11.js'
+          ];
+          urls.forEach(function(url) {
+            var s = document.createElement('script');
+            s.src = url;
+            s.async = true;
+            document.head.appendChild(s);
+          });
         } catch (e) {}
       })();
     </script>
@@ -2759,7 +2758,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_916"></script>
+    <script src="welcome-disclaimer.js?v=20260918_917"></script>
 </body>
 
 </html>
