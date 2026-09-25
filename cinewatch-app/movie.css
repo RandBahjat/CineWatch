@@ -11851,3 +11851,95 @@ min-width: 0;
   border-color: #38bdf8 !important;
   box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.18) !important;
 }
+
+/* ============================================================
+   CineWatch Ad Slots — Free users only, hidden for VIP
+   ============================================================ */
+.cw-ad-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.5rem 5%;
+  position: relative;
+}
+.cw-ad-banner {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 1rem;
+  min-height: 100px;
+}
+.cw-ad-label {
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.25);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  align-self: flex-start;
+}
+.cw-ad-inner, .cw-ad-sticky-inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
+}
+.cw-ad-placeholder {
+  width: 100%;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.03);
+  border: 1px dashed rgba(255,255,255,0.1);
+  border-radius: 8px;
+  color: rgba(255,255,255,0.2);
+  font-size: 0.85rem;
+}
+.cw-ad-placeholder-sticky {
+  min-height: 60px;
+}
+.cw-ad-upgrade-hint {
+  font-size: 0.72rem;
+  color: rgba(245, 158, 11, 0.6);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.cw-ad-upgrade-hint:hover { color: #f59e0b; }
+
+/* Sticky Bottom Bar */
+.cw-ad-sticky {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9000;
+  background: rgba(11, 12, 16, 0.97);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.5);
+}
+.cw-ad-sticky-close {
+  margin-left: auto;
+  font-size: 0.72rem;
+  color: rgba(245, 158, 11, 0.7);
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid rgba(245,158,11,0.3);
+  border-radius: 20px;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+.cw-ad-sticky-close:hover {
+  color: #f59e0b;
+  border-color: rgba(245,158,11,0.6);
+  background: rgba(245,158,11,0.08);
+}
+/* Hidden state for VIP users */
+.cw-ads-hidden .cw-ad-slot,
+.cw-ads-hidden .cw-ad-sticky { display: none !important; }
