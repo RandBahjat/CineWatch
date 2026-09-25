@@ -776,10 +776,10 @@ function setupHeroBanner() {
         <div class="hero-content">
             <h1 class="hero-title notranslate" translate="no">${movie.title}</h1>
             <div class="hero-meta">
-                <span class="meta-rating notranslate" translate="no"><span class="star-icon">★</span> ${formatRating(movie.rating)}</span>
-                <span class="meta-dot">•</span>
+                <span class="meta-rating notranslate" translate="no"><span class="star-icon">&#9733;</span> ${formatRating(movie.rating)}</span>
+                <span class="meta-dot">&bull;</span>
                 <span class="meta-year notranslate" translate="no">${formatNumber(movie.year)}</span>
-                ${genresList ? `<span class="meta-dot">•</span><span class="meta-genres-inline">${genresList}</span>` : ""}
+                ${genresList ? `<span class="meta-dot">&bull;</span><span class="meta-genres-inline">${genresList}</span>` : ""}
             </div>
             <p class="hero-overview ${getLocalizedOverview(movie).isKurdish ? 'notranslate' : ''}" translate="${getLocalizedOverview(movie).isKurdish ? 'no' : 'yes'}">${getLocalizedOverview(movie).text}</p>
             <div class="hero-actions">
@@ -946,7 +946,7 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
       <div class="card-details">
         <h4 class="card-title notranslate" translate="no">${movie.title}</h4>
         <div class="card-meta">
-          <span class="card-rating notranslate" translate="no"><span class="star-icon" style="color: #ffc107; margin-right: 3px;">★</span>${formatRating(movie.rating)}</span>
+          <span class="card-rating notranslate" translate="no"><span class="star-icon" style="color: #ffc107; margin-right: 3px;">&#9733;</span>${formatRating(movie.rating)}</span>
           ${movie.age ? `<span class="card-age badge-age notranslate" translate="no">${movie.age}</span>` : ''}
           <span class="card-year notranslate" translate="no">${formatNumber(movie.year)}</span>
           <span class="card-type notranslate" translate="no">${formatMediaType(displayType)}</span>
@@ -1590,14 +1590,14 @@ function renderBrowsePagination(paginationId, currentPage, totalPages, onPageCha
   const cookies = document.cookie || '';
   const isCkb = cookies.includes('googtrans=/en/ckb');
   const isAr = cookies.includes('googtrans=/en/ar');
-  const prevText = isCkb ? '‹ پێشوو' : (isAr ? '‹ السابق' : '‹ Prev');
-  const nextText = isCkb ? 'دواتر ›' : (isAr ? 'التالي ›' : 'Next ›');
-  const goText = isCkb ? 'بڕۆ' : (isAr ? 'انتقال' : 'Go');
+  const prevText = isCkb ? '&lsaquo; \\u067e\\u06ce\\u0634\\u0648\\u0648' : (isAr ? '&lsaquo; \\u0627\\u0644\\u0633\\u0627\\u0628\\u0642' : '&lsaquo; Prev');
+  const nextText = isCkb ? '\\u062f\\u0648\\u0627\\u062a\\u0631 &rsaquo;' : (isAr ? '\\u0627\\u0644\\u062a\\u0627\\u0644\\u064a &rsaquo;' : 'Next &rsaquo;');
+  const goText = isCkb ? '\\u0628\\u0695\\u06c6' : (isAr ? '\\u0627\\u0646\\u062a\\u0642\\u0627\\u0644' : 'Go');
 
   let html = `<button class="page-btn prev-btn notranslate" translate="no" ${currentPage === 1 ? "disabled" : ""} data-page="${currentPage - 1}">${prevText}</button>`;
   pages.forEach((p) => {
     if (p === "…") {
-      html += `<span class="page-ellipsis notranslate" translate="no">…</span>`;
+      html += `<span class="page-ellipsis notranslate" translate="no">&hellip;</span>`;
     } else {
       html += `<button class="page-btn notranslate ${p === currentPage ? "active" : ""}" translate="no" data-page="${p}">${formatNumber(p)}</button>`;
     }
