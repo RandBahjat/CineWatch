@@ -4194,6 +4194,14 @@ const VIP_WALLETS = {
     note: "Transfer the plan amount via First Iraqi Bank (FIB) app to this registered phone number.",
     color: "#4fb498",
     logoSvg: '<svg viewBox="0 0 32 32" width="22" height="22" fill="none" style="display:block;"><circle cx="16" cy="16" r="16" fill="#0F172A"/><g transform="translate(4, 3) scale(0.68)"><path d="M25.2993 18.1182L19.9895 14.0447L7.87014 4.80315H16.1996C19.1788 4.80315 21.5973 7.22837 21.5973 10.2008C21.5973 11.0182 21.4149 11.7883 21.0906 12.4841L24.948 15.443C25.8667 13.9096 26.4004 12.1193 26.4004 10.2008C26.4004 4.56671 21.8337 0 16.1996 0H0V4.74911L14.0446 15.5309L14.1392 15.5984L21.5027 21.246C21.6108 21.3136 21.7121 21.3811 21.8135 21.4554L21.9148 21.5297C23.2456 22.5633 24.0833 24.2184 24.0023 26.0559C23.8671 28.9473 21.4216 31.1968 18.5303 31.1968H4.8099V20.3948H16.2132H17.0373L10.7818 15.5984H0.0135036V36H18.6114C24.2454 36 28.8122 31.4333 28.8122 25.7992C28.8122 22.7322 27.4611 19.9827 25.3196 18.1115" fill="#4FB498"/></g></svg>'
+  },
+  westernunion: {
+    name: "Western Union",
+    number: "Rand Bahjat",
+    holder: "Iraq — Sulaymaniyah",
+    note: "Go to westernunion.com or the WU app, select 'Send Money', enter the recipient name and country (Iraq), pay with your card or cash, then enter the MTCN tracking number below.",
+    color: "#FFD700",
+    logoSvg: '<svg viewBox="0 0 48 24" width="36" height="18" fill="none" style="display:block;"><rect width="48" height="24" rx="4" fill="#FFD700"/><text x="24" y="16" font-size="8" font-weight="bold" fill="#000" text-anchor="middle" font-family="Arial,sans-serif">WU</text></svg>'
   }
 };
 
