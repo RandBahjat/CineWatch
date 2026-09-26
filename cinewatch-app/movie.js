@@ -4614,7 +4614,13 @@ function renderVipWalletDetails(walletKey) {
       <span class="instruction-val" id="vipWalletVal">${w.number}</span>
       <button class="instruction-copy-btn" id="vipCopyWalletBtn" type="button">Copy</button>
     </div>
-    <div class="instruction-holder">Account Name: ${w.holder}</div>
+    ${walletKey === 'westernunion' ? `
+    <div class="instruction-header" style="margin-top:10px;">Account Name:</div>
+    <div class="instruction-number-wrap">
+      <span class="instruction-val" id="vipWalletHolder" style="font-size:0.85rem; letter-spacing:0.5px;">RAND BAHJAT ALI ALI</span>
+      <button class="instruction-copy-btn" id="vipCopyHolderBtn" type="button">Copy</button>
+    </div>
+    ` : `<div class="instruction-holder">Account Name: ${w.holder}</div>`}
     ${w.note ? `<div class="instruction-note"><ion-icon name="information-circle-outline" style="font-size:1.2rem; flex-shrink:0;"></ion-icon> ${w.note}</div>` : ''}
   `;
 
