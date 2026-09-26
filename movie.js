@@ -4367,6 +4367,16 @@ function closeVipModal() {
 window.closeVipModal = closeVipModal;
 
 function selectVipTier(tierData) {
+  if (!state.user) {
+    if (typeof showToast === 'function') {
+      showToast("A free account is required to activate and manage your VIP membership.", "error");
+    }
+    if (typeof openAuthModal === 'function') {
+      openAuthModal();
+    }
+    return;
+  }
+
   selectedVipTierData = tierData;
   const stepPlans = document.getElementById("vipStepPlans");
   const stepCheckout = document.getElementById("vipStepCheckout");
