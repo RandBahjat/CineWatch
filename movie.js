@@ -7027,17 +7027,12 @@ function updateIframeServer(serverOverride) {
   }
   syncServerPillsUI(activeServer);
 
-  const is4kMovie = !!data.is4k;
   const srv1 = document.querySelector('.details-server-btn[data-server="vidlink"]');
-  const srv2 = document.querySelector('.details-server-btn[data-server="mapple"]');
-  const srv3 = document.querySelector('.details-server-btn[data-server="vidapi"]');
-  const srv4 = document.querySelector('.details-server-btn[data-server="embedmaster"]');
+  const srv2 = document.querySelector('.details-server-btn[data-server="vidapi"]');
 
-  // Show all servers equally regardless of 4K status
+  // Ensure all detail page servers are visible
   if (srv1) srv1.style.display = 'inline-flex';
   if (srv2) srv2.style.display = 'inline-flex';
-  if (srv3) srv3.style.display = 'inline-flex';
-  if (srv4) srv4.style.display = 'inline-flex';
 
 
   let newUrl = '';
