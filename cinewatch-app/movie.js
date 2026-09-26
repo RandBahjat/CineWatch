@@ -7032,28 +7032,12 @@ function updateIframeServer(serverOverride) {
   const srv2 = document.querySelector('.details-server-btn[data-server="mapple"]');
   const srv3 = document.querySelector('.details-server-btn[data-server="vidapi"]');
   const srv4 = document.querySelector('.details-server-btn[data-server="embedmaster"]');
-  
-  if (is4kMovie) {
-    if (srv1) srv1.style.display = 'none';
-    if (srv3) srv3.style.display = 'none';
-    if (srv2) srv2.style.display = 'inline-flex';
-    if (srv4) srv4.style.display = 'inline-flex';
-    // Switch to a 4k server if active server is hidden
-    if (activeServer === 'vidlink' || activeServer === 'vidapi') {
-      const avail = [srv2, srv4].find(s => s && s.style.display !== 'none');
-      if(avail) avail.click();
-    }
-  } else {
-    if (srv2) srv2.style.display = 'none';
-    if (srv4) srv4.style.display = 'none';
-    if (srv1) srv1.style.display = 'inline-flex';
-    if (srv3) srv3.style.display = 'inline-flex';
-    // Switch to a standard server if active server is hidden
-    if (activeServer === 'mapple' || activeServer === 'embedmaster') {
-      const avail = [srv1, srv3].find(s => s && s.style.display !== 'none');
-      if(avail) avail.click();
-    }
-  }
+
+  // Show all servers equally regardless of 4K status
+  if (srv1) srv1.style.display = 'inline-flex';
+  if (srv2) srv2.style.display = 'inline-flex';
+  if (srv3) srv3.style.display = 'inline-flex';
+  if (srv4) srv4.style.display = 'inline-flex';
 
 
   let newUrl = '';
