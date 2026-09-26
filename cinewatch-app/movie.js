@@ -4671,14 +4671,28 @@ function setupVipEventListeners() {
         submittedAt: new Date().toISOString(),
         username: state.user?.name || "Guest"
       };
-      localStorage.setItem("cw_pending_vip_tx", JSON.stringify(pendingTx));
+      // Update VIP user state instantly for Crypto as well
+      if (!state.user) {
+        state.user = { name: state.user?.name || "Guest", email: "", isVip: true, vipTier: selectedVipTierData?.name || "Gold" };
+      } else {
+        state.user.isVip = true;
+        state.user.vipTier = selectedVipTierData?.name || "Gold";
+      }
+      
+      if (typeof saveUser === 'function') {
+        saveUser(state.user);
+      }
+      if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
 
       if (statusEl) {
         statusEl.classList.remove("hidden");
-        statusEl.innerHTML = `✅ <strong>Receipt Submitted!</strong> We will verify your transaction and activate VIP on your account within 5 minutes.`;
+        statusEl.innerHTML = `✅ <strong>Payment Successful!</strong> Your VIP membership is now ACTIVE.`;
       }
       txInput.value = "";
-      showToast("Transaction reference submitted! Admin notified.");
+      showToast("✅ Payment successful! VIP Membership is now ACTIVE.");
+      
+      // Reload page instantly to apply all VIP UI
+      setTimeout(() => window.location.reload(), 1500);
     };
   }
 }
