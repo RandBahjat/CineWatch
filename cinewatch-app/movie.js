@@ -4344,16 +4344,6 @@ function initVipCardLightEffects() {
 }
 
 function openVipModal() {
-  if (!state.user) {
-    if (typeof showToast === 'function') {
-      showToast("You must be logged in to purchase VIP.", "error");
-    }
-    if (typeof openAuthModal === 'function') {
-      openAuthModal();
-    }
-    return;
-  }
-
   const modal = document.getElementById("vipModal");
   if (!modal) return;
 
