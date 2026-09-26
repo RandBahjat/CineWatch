@@ -15,9 +15,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260920_729">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_2706">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_964">
+    <link rel="stylesheet" href="movie.css?v=20260920_730">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_2707">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_965">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -135,10 +135,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_8130" defer></script>
-    <script src="series-data.js?v=20260818_8130" defer></script>
-    <script src="anime-data.js?v=20260818_8130" defer></script>
-    <script src="movie.js?v=20260920_728" defer></script>
+    <script src="movies-data.js?v=20260818_8131" defer></script>
+    <script src="series-data.js?v=20260818_8131" defer></script>
+    <script src="anime-data.js?v=20260818_8131" defer></script>
+    <script src="movie.js?v=20260920_729" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1881,8 +1881,16 @@
                                     <input type="radio" name="payment_method">
                                     <span class="method-icon"><svg viewBox="0 0 36 24" width="26" height="17" fill="none"><circle cx="12" cy="12" r="11" fill="#EB001B"/><circle cx="24" cy="12" r="11" fill="#F79E1B"/><path d="M18 4.254a10.965 10.965 0 0 0-4.57 7.746A10.965 10.965 0 0 0 18 19.746 10.965 10.965 0 0 0 22.57 12 10.965 10.965 0 0 0 18 4.254z" fill="#FF5F00"/></svg></span>
                                     <div class="method-info">
-                                        <span class="method-name">Qi Card / Mastercard</span>
+                                        <span class="method-name">Qi Card</span>
                                         <span class="method-desc">Qi Services Transfer</span>
+                                    </div>
+                                </label>
+                                <label class="checkout-method-card" data-wallet="westernunion">
+                                    <input type="radio" name="payment_method">
+                                    <span class="method-icon" style="background:#FFD700; border-radius:4px; padding:2px 4px; display:inline-flex; align-items:center; justify-content:center; font-weight:900; font-size:11px; color:#000; min-width:32px;">WU</span>
+                                    <div class="method-info">
+                                        <span class="method-name">Western Union</span>
+                                        <span class="method-desc">International Transfer</span>
                                     </div>
                                 </label>
                             </div>
@@ -2758,7 +2766,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_964"></script>
+    <script src="welcome-disclaimer.js?v=20260918_965"></script>
 
     <!-- Interstitial Ad Modal — fires on pagination for free users -->
     <div id="cwInterstitialAdModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.88); align-items:center; justify-content:center;">
