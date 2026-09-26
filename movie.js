@@ -4590,6 +4590,10 @@ function renderVipWalletDetails(walletKey) {
       refLabel.textContent = "Transaction Hash (TXID) / Sender Address";
       refInput.placeholder = "e.g. 0x123...abc or TR7...";
       if (refPrefix) refPrefix.style.display = 'none';
+    } else if (walletKey === 'westernunion') {
+      refLabel.textContent = "Western Union MTCN Tracking Number";
+      refInput.placeholder = "10-digit MTCN number (e.g. 1234567890)";
+      if (refPrefix) refPrefix.style.display = 'none';
     } else if (walletKey === 'mastercard') {
       refLabel.textContent = "Sender Phone Number / Qi Transfer Reference #";
       refInput.placeholder = "77X XXX XXXX or Qi Ref #";
