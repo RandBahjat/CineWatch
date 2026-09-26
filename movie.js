@@ -4459,30 +4459,36 @@ function selectVipTier(tierData) {
         }).catch(() => {});
       } catch(e) {}
 
-      // Update VIP user state
-      if (state.user) {
+      // Update VIP user state instantly
+      if (!state.user) {
+        state.user = { name: username, email: "", isVip: true, vipTier: tierData.name };
+      } else {
         state.user.isVip = true;
         state.user.vipTier = tierData.name;
-        if (typeof saveUser === 'function') {
-          saveUser(state.user);
-        }
-        if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
       }
+      
+      if (typeof saveUser === 'function') {
+        saveUser(state.user);
+      }
+      if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
 
       setTimeout(() => {
         submitBtn.disabled = false;
-        submitBtn.innerHTML = '<ion-icon name="checkmark-circle-outline" style="font-size: 1.3rem;"></ion-icon> Confirm Payment';
+        submitBtn.innerHTML = '<ion-icon name="checkmark-circle-outline" style="font-size: 1.3rem;"></ion-icon> Payment Successful';
         
         if (typeof showToast === 'function') {
-          showToast("✅ Payment submitted! Please wait up to 5 minutes for your VIP to activate.");
+          showToast("✅ Payment successful! VIP Membership is now ACTIVE.");
         } else {
-          alert("✅ Payment submitted! Please wait up to 5 minutes for your VIP to activate.");
+          alert("✅ Payment successful! VIP Membership is now ACTIVE.");
         }
 
         if (typeof closeVipModal === 'function') {
           closeVipModal();
         }
         if (refInput) refInput.value = '';
+        
+        // Reload page instantly to apply all VIP UI and remove ads seamlessly
+        setTimeout(() => window.location.reload(), 1500);
       }, 1600);
     };
   }
