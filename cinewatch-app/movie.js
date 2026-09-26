@@ -4435,9 +4435,55 @@ function selectVipTier(tierData) {
 
       try {
         let orders = JSON.parse(localStorage.getItem('cinewatch_vip_orders') || '[]');
-        orders.unshift(orderData); // Latest orders first
+        orders.unshift(orderData);
         localStorage.setItem('cinewatch_vip_orders', JSON.stringify(orders));
       } catch(e) {}
+
+      // Insert to Supabase if available
+      let sbClient = window.CW_API && window.CW_API.supabase;
+      if (sbClient) {
+        sbClient.from('vip_orders').insert([{
+          order_id: orderId,
+          username: username,
+          plan: tierData.name,
+          price: "$" + tierData.price,
+          wallet: orderData.wallet,
+          reference: refVal,
+          status: 'pending'
+        }]).then(({ error }) => {
+          if (error) console.error("Supabase insert error:", error);
+        });
+
+        // Listen for realtime approval
+        const channel = sbClient
+          .channel('vip_orders_changes')
+          .on(
+            'postgres_changes',
+            { event: 'UPDATE', schema: 'public', table: 'vip_orders', filter: `order_id=eq.${orderId}` },
+            (payload) => {
+              if (payload.new && payload.new.status === 'approved') {
+                if (!state.user) {
+                  state.user = { name: username, email: "", isVip: true, vipTier: tierData.name };
+                } else {
+                  state.user.isVip = true;
+                  state.user.vipTier = tierData.name;
+                }
+                if (typeof saveUser === 'function') saveUser(state.user);
+                if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
+
+                if (typeof showToast === 'function') {
+                  showToast("🎉 VIP Request Approved! Your VIP is now active.", "success");
+                } else {
+                  alert("🎉 VIP Request Approved! Your VIP is now active.");
+                }
+                
+                setTimeout(() => window.location.reload(), 2000);
+                sbClient.removeChannel(channel);
+              }
+            }
+          )
+          .subscribe();
+      }
 
       // Send Telegram notification to admin
       try {
@@ -4451,7 +4497,8 @@ function selectVipTier(tierData) {
           `💳 Payment: ${orderData.wallet}\n` +
           `📞 Reference: ${orderData.reference}\n` +
           `📱 Device: ${orderData.device}\n` +
-          `🕒 Time: ${orderData.createdAt}`;
+          `🕒 Time: ${orderData.createdAt}\n\n` + 
+          `*Approve via Supabase Dashboard -> vip_orders table*`;
         fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -4459,22 +4506,18 @@ function selectVipTier(tierData) {
         }).catch(() => {});
       } catch(e) {}
 
-      // Keep user in pending state - do NOT grant VIP instantly
-      // Admin will manually verify the payment via Telegram
-
+      // Keep user in pending state
       setTimeout(() => {
         submitBtn.disabled = false;
         submitBtn.innerHTML = '<ion-icon name="checkmark-circle-outline" style="font-size: 1.3rem;"></ion-icon> Confirm Payment';
         
         if (typeof showToast === 'function') {
-          showToast("✅ Payment submitted! Your transaction is being verified. We will notify you when it's done.");
+          showToast("✅ Payment submitted! Your transaction is being verified. Please leave this page open.");
         } else {
-          alert("✅ Payment submitted! Your transaction is being verified. We will notify you when it's done.");
+          alert("✅ Payment submitted! Your transaction is being verified. Please leave this page open.");
         }
 
-        if (typeof closeVipModal === 'function') {
-          closeVipModal();
-        }
+        if (typeof closeVipModal === 'function') closeVipModal();
         if (refInput) refInput.value = '';
       }, 1600);
     };
