@@ -4694,8 +4694,10 @@ function setupVipEventListeners() {
         return;
       }
 
+      const txIdVal = txInput.value.trim();
+      const orderId = "CW-" + Math.floor(100000 + Math.random() * 900000);
       const pendingTx = {
-        txId: val,
+        txId: txIdVal,
         plan: selectedVipTierData,
         wallet: currentVipWalletKey,
         submittedAt: new Date().toISOString(),
@@ -4704,9 +4706,51 @@ function setupVipEventListeners() {
       
       localStorage.setItem("cw_pending_vip_tx", JSON.stringify(pendingTx));
 
+      let sbClient = window.CW_API && window.CW_API.supabase;
+      if (sbClient) {
+        sbClient.from('vip_orders').insert([{
+          order_id: orderId,
+          username: pendingTx.username,
+          plan: selectedVipTierData?.name || "Crypto Plan",
+          price: selectedVipTierData?.price ? "$" + selectedVipTierData.price : "Crypto",
+          wallet: currentVipWalletKey,
+          reference: txIdVal,
+          status: 'pending'
+        }]).then(({ error }) => {
+          if (error) console.error("Supabase insert error (Crypto):", error);
+        });
+
+        // Listen for realtime approval
+        const channel = sbClient
+          .channel('crypto_orders_changes')
+          .on(
+            'postgres_changes',
+            { event: 'UPDATE', schema: 'public', table: 'vip_orders', filter: `order_id=eq.${orderId}` },
+            (payload) => {
+              if (payload.new && payload.new.status === 'approved') {
+                if (!state.user) {
+                  state.user = { name: pendingTx.username, email: "", isVip: true, vipTier: selectedVipTierData?.name || "Gold" };
+                } else {
+                  state.user.isVip = true;
+                  state.user.vipTier = selectedVipTierData?.name || "Gold";
+                }
+                if (typeof saveUser === 'function') saveUser(state.user);
+                if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
+
+                if (typeof showToast === 'function') {
+                  showToast("🎉 VIP Request Approved! Your VIP is now active.", "success");
+                }
+                setTimeout(() => window.location.reload(), 2000);
+                sbClient.removeChannel(channel);
+              }
+            }
+          )
+          .subscribe();
+      }
+
       if (statusEl) {
         statusEl.classList.remove("hidden");
-        statusEl.innerHTML = `✅ <strong>Receipt Submitted!</strong> We are verifying your transaction. You will be notified once VIP is active.`;
+        statusEl.innerHTML = `✅ <strong>Receipt Submitted!</strong> We are verifying your transaction. Please leave this page open.`;
       }
       txInput.value = "";
       showToast("Transaction reference submitted! Admin notified.");
