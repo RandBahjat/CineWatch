@@ -4641,6 +4641,24 @@ function renderVipWalletDetails(walletKey) {
       });
     };
   }
+
+  // Copy button for account holder name (Western Union)
+  const copyHolderBtn = document.getElementById("vipCopyHolderBtn");
+  if (copyHolderBtn) {
+    copyHolderBtn.onclick = () => {
+      navigator.clipboard.writeText("RAND BAHJAT ALI ALI").then(() => {
+        copyHolderBtn.innerText = "Copied!";
+        copyHolderBtn.style.background = "#22c55e";
+        setTimeout(() => {
+          copyHolderBtn.innerText = "Copy";
+          copyHolderBtn.style.background = "";
+        }, 2000);
+        showToast("Account name copied!");
+      }).catch(() => {
+        showToast("Copied: RAND BAHJAT ALI ALI");
+      });
+    };
+  }
 }
 
 function setupVipEventListeners() {
