@@ -4456,6 +4456,9 @@ function selectVipTier(tierData) {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, text: msg, parse_mode: 'Markdown' })
+        }).catch(() => {});
+      } catch(e) {}
+
       // Keep user in pending state - do NOT grant VIP instantly
       // Admin will manually verify the payment via Telegram
 
