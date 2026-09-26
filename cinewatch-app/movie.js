@@ -4502,7 +4502,17 @@ function selectVipTier(tierData) {
         fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, text: msg, parse_mode: 'Markdown' })
+          body: JSON.stringify({ 
+            chat_id: TELEGRAM_CHAT_ID, 
+            text: msg, 
+            parse_mode: 'Markdown',
+            reply_markup: {
+              inline_keyboard: [[
+                { text: "✅ Approve", url: `https://cinewatch.net/admin.html?order=${orderId}&action=approved` },
+                { text: "❌ Deny", url: `https://cinewatch.net/admin.html?order=${orderId}&action=denied` }
+              ]]
+            }
+          })
         }).catch(() => {});
       } catch(e) {}
 
