@@ -4456,39 +4456,23 @@ function selectVipTier(tierData) {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, text: msg, parse_mode: 'Markdown' })
-        }).catch(() => {});
-      } catch(e) {}
-
-      // Update VIP user state instantly
-      if (!state.user) {
-        state.user = { name: username, email: "", isVip: true, vipTier: tierData.name };
-      } else {
-        state.user.isVip = true;
-        state.user.vipTier = tierData.name;
-      }
-      
-      if (typeof saveUser === 'function') {
-        saveUser(state.user);
-      }
-      if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
+      // Keep user in pending state - do NOT grant VIP instantly
+      // Admin will manually verify the payment via Telegram
 
       setTimeout(() => {
         submitBtn.disabled = false;
-        submitBtn.innerHTML = '<ion-icon name="checkmark-circle-outline" style="font-size: 1.3rem;"></ion-icon> Payment Successful';
+        submitBtn.innerHTML = '<ion-icon name="checkmark-circle-outline" style="font-size: 1.3rem;"></ion-icon> Confirm Payment';
         
         if (typeof showToast === 'function') {
-          showToast("✅ Payment successful! VIP Membership is now ACTIVE.");
+          showToast("✅ Payment submitted! Please wait up to 5 minutes for your VIP to activate.");
         } else {
-          alert("✅ Payment successful! VIP Membership is now ACTIVE.");
+          alert("✅ Payment submitted! Please wait up to 5 minutes for your VIP to activate.");
         }
 
         if (typeof closeVipModal === 'function') {
           closeVipModal();
         }
         if (refInput) refInput.value = '';
-        
-        // Reload page instantly to apply all VIP UI and remove ads seamlessly
-        setTimeout(() => window.location.reload(), 1500);
       }, 1600);
     };
   }
