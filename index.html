@@ -15,9 +15,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260920_734">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_2711">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_969">
+    <link rel="stylesheet" href="movie.css?v=20260920_736">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_2713">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_971">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -135,10 +135,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_8135" defer></script>
-    <script src="series-data.js?v=20260818_8135" defer></script>
-    <script src="anime-data.js?v=20260818_8135" defer></script>
-    <script src="movie.js?v=20260920_733" defer></script>
+    <script src="movies-data.js?v=20260818_8137" defer></script>
+    <script src="series-data.js?v=20260818_8137" defer></script>
+    <script src="anime-data.js?v=20260818_8137" defer></script>
+    <script src="movie.js?v=20260920_735" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1659,160 +1659,154 @@
     </div>
 
     <!-- VIP Membership & Pricing Modal -->
-    <div class="modal-overlay vip-modal-overlay hidden" id="vipModal">
-        <div class="modal-card vip-modal-card" id="vipModalCard" onclick="event.stopPropagation()">
-            <div class="vip-glow-effect"></div>
-            <button class="modal-close-btn vip-close-btn" id="closeVipModalBtn" aria-label="Close VIP modal">&times;</button>
+    <div class="vip-fullpage hidden" id="vipModal">
+        <!-- Close button top-right -->
+        <button class="vip-fullpage-close" id="closeVipModalBtn" aria-label="Close">&times;</button>
 
-            <!-- STEP 1: Plan Selection Grid -->
-            <div class="vip-step-plans" id="vipStepPlans">
-                <div class="vip-header">
-                    <div class="vip-badge-pill">
-                        <ion-icon name="diamond-outline"></ion-icon> CineWatch Membership
-                    </div>
-                    <h2 class="vip-title notranslate" translate="no">Choose a Plan That's Suitable for You</h2>
-                    <p style="color: #66fcf1; font-size: 0.9rem; margin-top: 10px; font-weight: 500;">
-                        <ion-icon name="information-circle-outline" style="vertical-align: middle; font-size: 1.1rem;"></ion-icon> 
-                        Please note: A free CineWatch account is required to activate and manage your membership.
-                    </p>
-                    <p style="color: #9ca3af; font-size: 0.85rem; max-width: 600px; margin: 10px auto 20px; line-height: 1.4;">
-                        <strong>Disclaimer:</strong> VIP membership completely removes all CineWatch pop-ups and banner ads. However, because we do not host the actual video files, we cannot control or remove ads that are built directly into third-party video servers (e.g., VidSrc, SuperVideo).
-                    </p>
-                    <!-- Billing Period Switch (Month or Year) -->
-                    <div class="vip-billing-switch-wrap">
-                        <div class="vip-billing-switch" id="vipBillingSwitch" role="radiogroup" aria-label="Billing cycle" data-active="monthly">
-                            <button type="button" class="billing-btn active" id="billingBtnMonthly" data-period="monthly" aria-checked="true" role="radio">
-                                <span>Month</span>
-                            </button>
-                            <button type="button" class="billing-btn" id="billingBtnQuarterly" data-period="quarterly" aria-checked="false" role="radio">
-                                <span>3 Months</span>
-                            </button>
-                            <button type="button" class="billing-btn" id="billingBtnYearly" data-period="yearly" aria-checked="false" role="radio">
-                                <span>Year</span>
-                                <span class="billing-discount-badge">Save Best Value</span>
-                            </button>
-                            <div class="billing-slider-glider" id="billingSliderGlider"></div>
-                        </div>
-                    </div>
-                </div>
+        <!-- STEP 1: Plan Selection (new full-page design) -->
+        <div class="vip-step-plans" id="vipStepPlans">
+          <div class="vip-fp-stage">
 
-                <div class="vip-grid">
-                    
-                    <!-- Plan 1: Free Explorer -->
-                    <div class="card-tier card-free" data-tier="free">
-                      <div class="card__border"></div>
-                      <div class="card_title__container">
-                        <span class="card_title notranslate" translate="no">Basic</span>
-                        <p class="card_paragraph">
-                          <span class="vip-amount">0</span> <span class="vip-period">/ forever</span>
-                        </p>
-                      </div>
-                      <hr class="line" />
-                      <ul class="card__list">
-                        <li class="card__list_item">
-                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
-                          <span class="list_text">Standard 720p/1080p stream</span>
-                        </li>
-                        <li class="card__list_item">
-                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
-                          <span class="list_text">Standard servers (2, 3, 4)</span>
-                        </li>
-                        <li class="card__list_item disabled">
-                          <span class="check"><svg class="check_svg" style="fill:#fff;" viewBox="0 0 24 24"><path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></span>
-                          <span class="list_text">Ad-free video playback</span>
-                        </li>
-                        <li class="card__list_item disabled">
-                          <span class="check"><svg class="check_svg" style="fill:#fff;" viewBox="0 0 24 24"><path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></span>
-                          <span class="list_text">Access to 4K Ultra HD Section</span>
-                        </li>
-                      </ul>
-                      <button class="button vip-btn-action" data-tier="free">Current Plan</button>
-                    </div>
+            <div class="vip-fp-badge">⬢ CineWatch Membership</div>
+            <h1 class="vip-fp-title">Watch more. <span>Pay less.</span></h1>
+            <p class="vip-fp-sub">Compare every plan at a glance — from free browsing to zero ads, 4K, and priority requests.</p>
+            <p class="vip-fp-disclaimer"><b>Note:</b> A free CineWatch account is required to activate and manage your membership. We don't host video files ourselves, so ads built into third-party servers (VidSrc, SuperVideo) can't be controlled.</p>
 
-                    <!-- Plan 2: Bronze -->
-                    <div class="card-tier card-bronze" data-tier="bronze">
-                      <div class="card__border"></div>
-                      <div class="card_title__container">
-                        <span class="card_title notranslate" translate="no">Advanced</span>
-                        <p class="card_paragraph">
-                          $<span class="vip-amount" id="vipAmountBronze">8</span> <span class="vip-period" id="vipPeriodBronze">/ mo</span>
-                        </p>
-                      </div>
-                      <hr class="line" />
-                      <ul class="card__list">
-                        <li class="card__list_item">
-                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
-                          <span class="list_text">Ad-free Site Experience</span>
-                        </li>
-                        <li class="card__list_item">
-                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
-                          <span class="list_text">VIP Badge on Profile</span>
-                        </li>
-                        <li class="card__list_item disabled">
-                          <span class="check"><svg class="check_svg" style="fill:#fff;" viewBox="0 0 24 24"><path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></span>
-                          <span class="list_text">Access to 4K Ultra HD Section</span>
-                        </li>
-                      </ul>
-                      <button class="button vip-btn-action select-plan-btn" id="vipBtnBronze" data-tier="bronze" data-price="8" data-name="Advanced (Monthly)">Upgrade to Advanced</button>
-                    </div>
-
-                    <!-- Plan 3: Gold -->
-                    <div class="card-tier card-gold" data-tier="gold">
-                      <div class="card__border"></div>
-                      <div class="card_title__container">
-                        <span class="card_title notranslate" translate="no" style="display:flex; justify-content:space-between;">Pro <span style="font-size:0.7rem; background:red; color:white; padding:2px 6px; border-radius:10px;">POPULAR</span></span>
-                        <p class="card_paragraph">
-                          $<span class="vip-amount" id="vipAmountGold">15</span> <span class="vip-period" id="vipPeriodGold">/ mo</span>
-                        </p>
-                      </div>
-                      <hr class="line" />
-                      <ul class="card__list">
-                        <li class="card__list_item">
-                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
-                          <span class="list_text">All Advanced Features</span>
-                        </li>
-                        <li class="card__list_item">
-                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
-                          <span class="list_text">Access to 4K Ultra HD Section</span>
-                        </li>
-                        <li class="card__list_item">
-                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
-                          <span class="list_text">Download for offline</span>
-                        </li>
-                      </ul>
-                      <button class="button vip-btn-action select-plan-btn" id="vipBtnGold" data-tier="gold" data-price="15" data-name="Pro (Monthly)">Upgrade to Pro</button>
-                    </div>
-
-                    <!-- Plan 4: Diamond -->
-                    <div class="card-tier card-diamond" data-tier="diamond">
-                      <div class="card__border"></div>
-                      <div class="card_title__container">
-                        <span class="card_title notranslate" translate="no" style="display:flex; justify-content:space-between;">Ultimate <span style="font-size:0.7rem; background:#00ffff; color:black; padding:2px 6px; border-radius:10px;">BEST VALUE</span></span>
-                        <p class="card_paragraph">
-                          $<span class="vip-amount" id="vipAmountDiamond">20</span> <span class="vip-period" id="vipPeriodDiamond">/ mo</span>
-                        </p>
-                      </div>
-                      <hr class="line" />
-                      <ul class="card__list">
-                        <li class="card__list_item">
-                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
-                          <span class="list_text">All Pro Features</span>
-                        </li>
-                        <li class="card__list_item">
-                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
-                          <span class="list_text">Request missing Movies/Series</span>
-                        </li>
-                        <li class="card__list_item">
-                          <span class="check"><svg class="check_svg" fill="currentColor" viewBox="0 0 16 16"><path clip-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" fill-rule="evenodd"></path></svg></span>
-                          <span class="list_text">Early Access to Features</span>
-                        </li>
-                      </ul>
-                      <button class="button vip-btn-action select-plan-btn" id="vipBtnDiamond" data-tier="diamond" data-price="20" data-name="Ultimate (Monthly)">Upgrade to Ultimate</button>
-                    </div>
-
-                </div>
-                
+            <!-- Billing Toggle -->
+            <div class="vip-fp-toggle-row">
+              <div class="vip-billing-switch" id="vipBillingSwitch" role="radiogroup" aria-label="Billing cycle" data-active="monthly">
+                <button type="button" class="billing-btn active" id="billingBtnMonthly" data-period="monthly" aria-checked="true" role="radio">Month</button>
+                <button type="button" class="billing-btn" id="billingBtnQuarterly" data-period="quarterly" aria-checked="false" role="radio">3 Months</button>
+                <button type="button" class="billing-btn" id="billingBtnYearly" data-period="yearly" aria-checked="false" role="radio">Year</button>
+                <div class="billing-slider-glider" id="billingSliderGlider"></div>
+              </div>
+              <span class="vip-fp-save-note">Year — Save Best Value</span>
             </div>
+
+            <!-- Comparison Grid -->
+            <div class="vip-fp-grid">
+
+              <!-- Header row -->
+              <div class="vip-fp-head vip-fp-spacer"></div>
+
+              <div class="vip-fp-head">
+                <div class="vip-fp-card">
+                  <div class="vip-fp-tier-name">Basic</div>
+                  <div class="vip-fp-price"><span class="vip-fp-cur">$</span>0</div>
+                  <div class="vip-fp-billed">forever</div>
+                  <button class="vip-fp-cta vip-fp-cta--dim" data-tier="free">Current</button>
+                </div>
+              </div>
+
+              <div class="vip-fp-head">
+                <div class="vip-fp-card">
+                  <div class="vip-fp-tier-name">Advanced</div>
+                  <div class="vip-fp-price"><span class="vip-fp-cur">$</span><span class="vip-amount" id="vipAmountBronze">8</span><span class="vip-fp-per"> /mo</span></div>
+                  <div class="vip-fp-billed" id="vipPeriodBronze">billed monthly</div>
+                  <button class="vip-fp-cta select-plan-btn" id="vipBtnBronze" data-tier="bronze" data-price="8" data-name="Advanced (Monthly)">Upgrade</button>
+                </div>
+              </div>
+
+              <div class="vip-fp-head">
+                <div class="vip-fp-card vip-fp-card--pop">
+                  <div class="vip-fp-tag vip-fp-tag--pop">POPULAR</div>
+                  <div class="vip-fp-tier-name">Pro</div>
+                  <div class="vip-fp-price"><span class="vip-fp-cur">$</span><span class="vip-amount" id="vipAmountGold">15</span><span class="vip-fp-per"> /mo</span></div>
+                  <div class="vip-fp-billed" id="vipPeriodGold">billed monthly</div>
+                  <button class="vip-fp-cta vip-fp-cta--teal select-plan-btn" id="vipBtnGold" data-tier="gold" data-price="15" data-name="Pro (Monthly)">Upgrade</button>
+                </div>
+              </div>
+
+              <div class="vip-fp-head">
+                <div class="vip-fp-card vip-fp-card--best">
+                  <div class="vip-fp-tag vip-fp-tag--best">BEST VALUE</div>
+                  <div class="vip-fp-tier-name">Ultimate</div>
+                  <div class="vip-fp-price"><span class="vip-fp-cur">$</span><span class="vip-amount" id="vipAmountDiamond">20</span><span class="vip-fp-per"> /mo</span></div>
+                  <div class="vip-fp-billed" id="vipPeriodDiamond">billed monthly</div>
+                  <button class="vip-fp-cta vip-fp-cta--amber select-plan-btn" id="vipBtnDiamond" data-tier="diamond" data-price="20" data-name="Ultimate (Monthly)">Upgrade</button>
+                </div>
+              </div>
+
+              <!-- Feature rows -->
+              <div class="vip-fp-row">
+                <div class="vip-fp-rlabel">720p / 1080p streaming</div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">✓</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">✓</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">✓</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">✓</span></div>
+              </div>
+              <div class="vip-fp-row">
+                <div class="vip-fp-rlabel">Ad-free site experience</div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">–</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">✓</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">✓</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">✓</span></div>
+              </div>
+              <div class="vip-fp-row">
+                <div class="vip-fp-rlabel">VIP badge on profile</div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">–</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">✓</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">✓</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">✓</span></div>
+              </div>
+              <div class="vip-fp-row">
+                <div class="vip-fp-rlabel">4K Ultra HD section</div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">–</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">–</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">✓</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">✓</span></div>
+              </div>
+              <div class="vip-fp-row">
+                <div class="vip-fp-rlabel">Download for offline</div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">–</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">–</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">✓</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">✓</span></div>
+              </div>
+              <div class="vip-fp-row">
+                <div class="vip-fp-rlabel">Request missing titles</div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">–</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">–</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">–</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">✓</span></div>
+              </div>
+              <div class="vip-fp-row">
+                <div class="vip-fp-rlabel">Early access to features</div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">–</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">–</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">–</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">✓</span></div>
+              </div>
+
+            </div><!-- /vip-fp-grid -->
+
+            <!-- FAQ -->
+            <h2 class="vip-fp-faq-title">Got questions?</h2>
+            <div class="vip-fp-faq">
+              <details>
+                <summary>Can I cancel any time?</summary>
+                <p>Yes. Cancel from your account settings whenever you like — access continues until the end of the billing period already paid for.</p>
+              </details>
+              <details>
+                <summary>Why do I still see some ads?</summary>
+                <p>Membership removes all CineWatch pop-ups and banner ads. Ads built directly into third-party video servers (VidSrc, SuperVideo) are outside our control since we don't host the files ourselves.</p>
+              </details>
+              <details>
+                <summary>Can I change plans later?</summary>
+                <p>Yes — upgrade or downgrade any time, with billing adjusted immediately for the rest of your cycle.</p>
+              </details>
+              <details>
+                <summary>What payment methods work?</summary>
+                <p>FastPay, FIB Bank direct transfer, ZainCash, USDT/Crypto (TRC-20), Qi Card, and Western Union international bank deposit.</p>
+              </details>
+            </div>
+
+            <footer class="vip-fp-footer">Prices in USD · billing period selected above</footer>
+
+          </div><!-- /vip-fp-stage -->
+        </div><!-- /vipStepPlans -->
+
+
                 <!-- STEP 2: Local Wallet Payment View -->
                         <div class="vip-step-checkout hidden" id="vipStepCheckout">
                 <div class="checkout-top-bar">
@@ -2766,7 +2760,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_969"></script>
+    <script src="welcome-disclaimer.js?v=20260918_971"></script>
 
     <!-- Interstitial Ad Modal — fires on pagination for free users -->
     <div id="cwInterstitialAdModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.88); align-items:center; justify-content:center;">
