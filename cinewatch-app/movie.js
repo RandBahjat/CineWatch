@@ -688,17 +688,12 @@ async function initApp() {
 
     // Check for deep link (e.g., ?v=spider-noir) and open the movie immediately
     const params = new URLSearchParams(window.location.search);
+    // Check for deep link (e.g., ?v=spider-noir) and open the movie immediately
+    const params = new URLSearchParams(window.location.search);
     const deepLinkMovie = params.get('v');
     if (deepLinkMovie) {
       setTimeout(() => openDetailsModal(deepLinkMovie), 300); // slight delay for smooth UI
     }
-
-    // Force Login on Site Visit
-    setTimeout(() => {
-      if (!state.user && typeof openAuthModal === 'function') {
-        openAuthModal();
-      }
-    }, 500); // slight delay to let the UI finish loading first
   }
 }
 
