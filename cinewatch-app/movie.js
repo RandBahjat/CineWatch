@@ -4364,13 +4364,21 @@ function openVipModal() {
   initVipCardLightEffects();
 
   modal.classList.remove("hidden");
+  void modal.offsetWidth; // force reflow
+  modal.classList.add("open");
+
   document.body.style.overflow = "hidden";
 }
 window.openVipModal = openVipModal;
 
 function closeVipModal() {
   const modal = document.getElementById("vipModal");
-  if (modal) modal.classList.add("hidden");
+  if (modal) {
+    modal.classList.remove("open");
+    setTimeout(() => {
+      modal.classList.add("hidden");
+    }, 250);
+  }
   document.body.style.overflow = "";
 }
 window.closeVipModal = closeVipModal;
