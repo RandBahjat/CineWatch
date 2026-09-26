@@ -139,7 +139,7 @@
   <script>
     const API_BASE = "https://cinewatch-maaa.onrender.com/api";
 
-    document.addEventListener("DOMContentLoaded", () => {
+    document.addEventListener("DOMContentLoaded", async () => {
       // Since this file is now local, we don't need to check for a login token!
       document.getElementById("adminContent").classList.remove("hidden");
       
@@ -147,7 +147,30 @@
       if (savedTmdb) document.getElementById("tmdbToken").value = savedTmdb;
       
       fetchAnalytics();
-      renderVipOrders();
+      await renderVipOrders();
+
+      // Magic Link Auto-Approve Logic
+      const urlParams = new URLSearchParams(window.location.search);
+      const autoOrder = urlParams.get('order');
+      const autoAction = urlParams.get('action');
+
+      if (autoOrder && autoAction) {
+        let sbClient = window.CW_API && window.CW_API.supabase;
+        if (sbClient) {
+          const { error } = await sbClient
+            .from('vip_orders')
+            .update({ status: autoAction })
+            .eq('order_id', autoOrder);
+            
+          if (!error) {
+            alert(`✅ Order ${autoOrder} successfully marked as ${autoAction.toUpperCase()}!`);
+            window.history.replaceState({}, document.title, "/admin.html");
+            renderVipOrders();
+          } else {
+            alert(`❌ Failed to update order: ${error.message}`);
+          }
+        }
+      }
     });
 
     function fetchAnalytics() {
