@@ -684,6 +684,7 @@ async function initApp() {
   } catch (err) {
     console.error("InitApp error:", err);
   } finally {
+  } finally {
     await dismissLoader();
 
     // Check for deep link (e.g., ?v=spider-noir) and open the movie immediately
@@ -692,6 +693,13 @@ async function initApp() {
     if (deepLinkMovie) {
       setTimeout(() => openDetailsModal(deepLinkMovie), 300); // slight delay for smooth UI
     }
+
+    // Force Login on Site Visit
+    setTimeout(() => {
+      if (!state.user && typeof openAuthModal === 'function') {
+        openAuthModal();
+      }
+    }, 500); // slight delay to let the UI finish loading first
   }
 }
 
