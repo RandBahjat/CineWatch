@@ -684,7 +684,6 @@ async function initApp() {
   } catch (err) {
     console.error("InitApp error:", err);
   } finally {
-  } finally {
     await dismissLoader();
 
     // Check for deep link (e.g., ?v=spider-noir) and open the movie immediately
