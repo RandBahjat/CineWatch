@@ -15,9 +15,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260920_719">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_2696">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_954">
+    <link rel="stylesheet" href="movie.css?v=20260920_720">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_2697">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_955">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -135,10 +135,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_8120" defer></script>
-    <script src="series-data.js?v=20260818_8120" defer></script>
-    <script src="anime-data.js?v=20260818_8120" defer></script>
-    <script src="movie.js?v=20260920_718" defer></script>
+    <script src="movies-data.js?v=20260818_8121" defer></script>
+    <script src="series-data.js?v=20260818_8121" defer></script>
+    <script src="anime-data.js?v=20260818_8121" defer></script>
+    <script src="movie.js?v=20260920_719" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -870,7 +870,10 @@
             <div class="cw-ad-sticky-inner">
                 <script>atOptions={'key':'aab2f5b837577d78c557c34438394794','format':'iframe','height':300,'width':160,'params':{}};</script><script src="https://www.highrevenueformat.com/aab2f5b837577d78c557c34438394794/invoke.js"></script>
             </div>
-            <a href="#" class="cw-ad-sticky-close" onclick="openVipModal(); return false;" title="Go VIP">Remove Ads</a>
+            <div style="display: flex; flex-direction: column; gap: 6px; margin-left: auto;">
+                <a href="#" class="cw-ad-sticky-close" onclick="document.getElementById('cwAdSticky').style.display='none'; return false;" title="Remove this Ad">Close Ad</a>
+                <a href="#" class="cw-ad-sticky-close" style="color: #cbd5e1; border-color: rgba(255,255,255,0.2);" onclick="openVipModal(); return false;" title="Go VIP">Go VIP</a>
+            </div>
         </div>
         <!-- ===== END AD SLOTS ===== -->
 
@@ -2751,7 +2754,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_954"></script>
+    <script src="welcome-disclaimer.js?v=20260918_955"></script>
 
     <!-- Interstitial Ad Modal — fires on pagination for free users -->
     <div id="cwInterstitialAdModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.88); align-items:center; justify-content:center;">
