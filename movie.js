@@ -4758,6 +4758,35 @@ function setupVipEventListeners() {
           .subscribe();
       }
 
+      // Send Telegram notification to admin for Crypto
+      try {
+        const TELEGRAM_BOT_TOKEN = '8983731597:AAGJsm6pk2pXjQjaSEzZlF42WIPwjoGn9IA';
+        const TELEGRAM_CHAT_ID = '5719338067';
+        const msg =
+          `🎬 *New CineWatch Crypto VIP Order!*\n\n` +
+          `🆔 Order: \`` + `${orderId}\`` + `\n` +
+          `👤 User: ${pendingTx.username}\n` +
+          `📦 Plan: ${selectedVipTierData?.name || "Crypto Plan"}\n` +
+          `💳 Payment: ${currentVipWalletKey}\n` +
+          `📞 Reference (TxID): ${txIdVal}\n` +
+          `🕒 Time: ${pendingTx.submittedAt}`;
+        fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ 
+            chat_id: TELEGRAM_CHAT_ID, 
+            text: msg, 
+            parse_mode: 'Markdown',
+            reply_markup: {
+              inline_keyboard: [[
+                { text: "✅ Approve", url: `https://cinewatch.net/admin.html?order=${orderId}&action=approved` },
+                { text: "❌ Deny", url: `https://cinewatch.net/admin.html?order=${orderId}&action=denied` }
+              ]]
+            }
+          })
+        }).catch(() => {});
+      } catch(e) {}
+
       if (statusEl) {
         statusEl.classList.remove("hidden");
         statusEl.innerHTML = `✅ <strong>Receipt Submitted!</strong> We are verifying your transaction. Please leave this page open.`;
