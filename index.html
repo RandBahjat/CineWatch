@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -91,7 +91,7 @@
         .cf-brand-text { font-size: 1.4rem; }
       }
 
-      /* â”€â”€ Top Scroll Progress Bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+      /* ΓöÇΓöÇ Top Scroll Progress Bar ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ */
       .cw-scroll-progress-bar {
         position: fixed;
         top: 0;
@@ -108,7 +108,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CineWatch - Watch Movies &amp; TV Series Online Free</title>
-    <meta id="cwMetaDescription" name="description" content="CineWatch â€” Watch the latest movies, TV series, anime and 4K titles online for free. Browse thousands of titles, rate them and track what you watch." />
+    <meta id="cwMetaDescription" name="description" content="CineWatch ΓÇö Watch the latest movies, TV series, anime and 4K titles online for free. Browse thousands of titles, rate them and track what you watch." />
     <!-- Open Graph (Facebook, WhatsApp, Telegram previews) -->
     <meta id="cwOgTitle" property="og:title" content="CineWatch - Watch Movies &amp; TV Series Online Free" />
     <meta id="cwOgDescription" property="og:description" content="Watch movies, series and anime online for free on CineWatch. Thousands of titles, no sign-up needed." />
@@ -145,10 +145,11 @@
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
 
-    <!-- Popunder Ad Manager (Adsterra) â€” Free users only (Temporarily Disabled) -->
-    <!--
+    <!-- Popunder Ad Manager (Adsterra) — Free users only -->
     <script>
-      (function() {
+      window.injectPopunders = function() {
+        if (window._cwPopundersInjected) return;
+        window._cwPopundersInjected = true;
         try {
           var cwState = JSON.parse(localStorage.getItem('cw_state') || '{}');
           if (cwState && cwState.user && cwState.user.isVip) return;
@@ -164,9 +165,13 @@
             document.head.appendChild(s);
           });
         } catch (e) {}
-      })();
+      };
+
+      // If already verified, inject immediately
+      if (sessionStorage.getItem('cw_cf_verified') === 'true') {
+        window.injectPopunders();
+      }
     </script>
-    -->
 </head>
 
 <body class="view-home">
@@ -253,6 +258,11 @@
 
     window.onCloudflareVerify = function(token) {
       try { sessionStorage.setItem('cw_cf_verified', 'true'); } catch(e) {}
+      
+      if (typeof window.injectPopunders === 'function') {
+        window.injectPopunders();
+      }
+
       var banner = document.getElementById('cfSuccessBanner');
       if (banner) banner.style.display = 'flex';
       var gate = document.getElementById('cwSecurityGatekeeper');
@@ -271,7 +281,7 @@
   <div id="cwSecurityGatekeeper">
     <div class="cf-challenge-container">
 
-      <!-- CineWatch Logo â€” matches site navbar exactly -->
+      <!-- CineWatch Logo ΓÇö matches site navbar exactly -->
       <div class="cf-site-title">
         <div class="cf-site-icon">
           <ion-icon name="ticket"></ion-icon>
@@ -305,7 +315,7 @@
       <!-- Cloudflare Footer -->
       <div class="cf-footer">
         <div class="cf-footer-row">
-          <span class="cf-ray-id" id="cfRayId">Ray ID: <code id="cfRayCode">â€”</code></span>
+          <span class="cf-ray-id" id="cfRayId">Ray ID: <code id="cfRayCode">ΓÇö</code></span>
           <div class="cf-attribution">
             Performance &amp; security by
             <a href="https://www.cloudflare.com?utm_source=challenge&utm_campaign=m" target="_blank" rel="noopener noreferrer">
@@ -484,8 +494,8 @@
                                 <svg class="lang-flag" viewBox="0 0 64 48" width="22" height="16" aria-hidden="true"><rect width="64" height="16" fill="#E4002B"/><rect y="16" width="64" height="16" fill="#FFFFFF"/><rect y="32" width="64" height="16" fill="#009639"/><circle cx="32" cy="24" r="4.2" fill="#FFC72C"/><polygon points="32.0,16.0 32.7,19.6 34.4,16.4 34.0,19.9 36.5,17.4 35.1,20.7 38.3,19.0 35.9,21.8 39.4,21.1 36.4,23.0 40.0,23.4 36.5,24.3 39.8,25.8 36.2,25.6 38.9,28.0 35.5,26.8 37.4,29.9 34.5,27.7 35.5,31.2 33.3,28.3 33.2,31.9 32.0,28.5 30.8,31.9 30.7,28.3 28.5,31.2 29.5,27.7 26.6,29.9 28.5,26.8 25.1,28.0 27.8,25.6 24.2,25.8 27.5,24.3 24.0,23.4 27.6,23.0 24.6,21.1 28.1,21.8 25.7,19.0 28.9,20.7 27.5,17.4 30.0,19.9 29.6,16.4 31.3,19.6" fill="#FFC72C"/></svg>
                             </span>
                             <div class="lang-meta">
-                                <span class="lang-name">Ú©ÙˆØ±Ø¯ÛŒ</span>
-                                <span class="lang-sub">SoranÃ®</span>
+                                <span class="lang-name">┌⌐┘ê╪▒╪»█î</span>
+                                <span class="lang-sub">Soran├«</span>
                             </div>
                             <div class="lang-check"><ion-icon name="checkmark-outline"></ion-icon></div>
                         </div>
@@ -493,9 +503,9 @@
                 </div>
                 
                 <!-- VIP Membership Button -->
-                <button class="nav-vip-btn" id="navVipBtn" title="Premium Membership">
-                    <ion-icon name="diamond-outline" class="vip-icon"></ion-icon>
-                    <span class="vip-text notranslate" translate="no">Premium</span>
+                <button class="nav-vip-btn" id="navVipBtn" title="4K Ultra HD">
+                    <ion-icon name="videocam-outline" class="vip-icon"></ion-icon>
+                    <span class="vip-text notranslate" translate="no">4K</span>
                 </button>
 
                 <!-- Search Icon Button -->
@@ -860,12 +870,18 @@
         <!-- ===== AD SLOTS - shown for free users, hidden for VIP ===== -->
         <!-- In-Feed Top Ad Banner -->
         <div class="cw-ad-slot cw-ad-banner" id="cwAdBannerTop" style="display:none;">
-            
+            <span class="cw-ad-label">Advertisement</span>
+            <div class="cw-ad-inner">
+                <script>atOptions={'key':'aab2f5b837577d78c557c34438394794','format':'iframe','height':300,'width':160,'params':{}};</script><script src="https://www.highrevenueformat.com/aab2f5b837577d78c557c34438394794/invoke.js"></script>
+            </div>
             <a href="#" class="cw-ad-upgrade-hint" onclick="openVipModal(); return false;">Go VIP &mdash; Remove Ads</a>
         </div>
         <!-- Sticky Bottom Bar Ad -->
         <div class="cw-ad-sticky" id="cwAdSticky" style="display:none;">
-            
+            <span class="cw-ad-label">Ad</span>
+            <div class="cw-ad-sticky-inner">
+                <script>atOptions={'key':'aab2f5b837577d78c557c34438394794','format':'iframe','height':300,'width':160,'params':{}};</script><script src="https://www.highrevenueformat.com/aab2f5b837577d78c557c34438394794/invoke.js"></script>
+            </div>
             <div style="display: flex; flex-direction: column; gap: 6px; margin-left: auto;">
                 <a href="#" class="cw-ad-sticky-close" onclick="document.getElementById('cwAdSticky').style.display='none'; return false;" title="Remove this Ad">Close Ad</a>
                 <a href="#" class="cw-ad-sticky-close" style="color: #cbd5e1; border-color: rgba(255,255,255,0.2);" onclick="openVipModal(); return false;" title="Go VIP">Go VIP</a>
@@ -1131,7 +1147,10 @@
 
             <!-- Home Ad Slot 1 -->
             <div class="cw-ad-slot cw-ad-banner" id="cwHomeAd1" style="display:none; margin: 20px auto; max-width: 1400px; padding: 0 5%;">
-                
+                <span class="cw-ad-label">Advertisement</span>
+                <div class="cw-ad-inner">
+                    <script>atOptions={'key':'aab2f5b837577d78c557c34438394794','format':'iframe','height':300,'width':160,'params':{}};</script><script src="https://www.highrevenueformat.com/aab2f5b837577d78c557c34438394794/invoke.js"></script>
+                </div>
                 <a href="#" class="cw-ad-upgrade-hint" onclick="openVipModal(); return false;">Go VIP &mdash; Remove Ads</a>
             </div>
 
@@ -1153,7 +1172,10 @@
 
             <!-- Home Ad Slot 2 -->
             <div class="cw-ad-slot cw-ad-banner" id="cwHomeAd2" style="display:none; margin: 20px auto; max-width: 1400px; padding: 0 5%;">
-                
+                <span class="cw-ad-label">Advertisement</span>
+                <div class="cw-ad-inner">
+                    <script>atOptions={'key':'aab2f5b837577d78c557c34438394794','format':'iframe','height':300,'width':160,'params':{}};</script><script src="https://www.highrevenueformat.com/aab2f5b837577d78c557c34438394794/invoke.js"></script>
+                </div>
                 <a href="#" class="cw-ad-upgrade-hint" onclick="openVipModal(); return false;">Go VIP &mdash; Remove Ads</a>
             </div>
 
@@ -1491,7 +1513,7 @@
                         <div class="input-with-icon">
                             <ion-icon name="lock-closed-outline"></ion-icon>
                             <input type="password" id="loginPassword" class="form-control notranslate" translate="no"
-                                placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢" autocomplete="current-password" required>
+                                placeholder="ΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇó" autocomplete="current-password" required>
                             <button type="button" class="password-toggle-btn" aria-label="Show/hide password" id="toggleLoginPassword">
                                 <ion-icon name="eye-outline"></ion-icon>
                             </button>
@@ -1533,7 +1555,7 @@
                         <label for="signupPassword" id="signupPwLabel" class="notranslate" translate="no">Password</label>
                         <div class="input-with-icon">
                             <ion-icon name="lock-closed-outline"></ion-icon>
-                            <input type="password" id="signupPassword" class="form-control notranslate" translate="no" placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢" autocomplete="new-password" required>
+                            <input type="password" id="signupPassword" class="form-control notranslate" translate="no" placeholder="ΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇó" autocomplete="new-password" required>
                             <button type="button" class="password-toggle-btn" aria-label="Show/hide password" id="toggleSignupPassword">
                                 <ion-icon name="eye-outline"></ion-icon>
                             </button>
@@ -1657,9 +1679,9 @@
         <div class="vip-step-plans" id="vipStepPlans">
           <div class="vip-fp-stage">
 
-            <div class="vip-fp-badge">â¬¢ CineWatch Membership</div>
+            <div class="vip-fp-badge">Γ¼ó CineWatch Membership</div>
             <h1 class="vip-fp-title">Watch more. <span>Pay less.</span></h1>
-            <p class="vip-fp-sub">Compare every plan at a glance â€” from free browsing to zero ads, 4K, and priority requests.</p>
+            <p class="vip-fp-sub">Compare every plan at a glance ΓÇö from free browsing to zero ads, 4K, and priority requests.</p>
             <p class="vip-fp-disclaimer"><b>Note:</b> A free CineWatch account is required to activate and manage your membership. We don't host video files ourselves, so ads built into third-party servers (VidSrc, SuperVideo) can't be controlled.</p>
 
             <!-- Billing Toggle -->
@@ -1670,164 +1692,112 @@
                 <button type="button" class="billing-btn" id="billingBtnYearly" data-period="yearly" aria-checked="false" role="radio">Year</button>
                 <div class="billing-slider-glider" id="billingSliderGlider"></div>
               </div>
-              <span class="vip-fp-save-note">Year â€” Save Best Value</span>
+              <span class="vip-fp-save-note">Year ΓÇö Save Best Value</span>
             </div>
 
-            <!-- Comparison Grid (Pricing 6 Design) -->
-            <div class="p6-grid">
-              
-              <!-- Plan 1: Free / Basic -->
-              <div class="p6-card">
-                <div class="p6-card-inner p6-slate">
-                  <div class="p6-blobA blobA"></div>
-                  <div class="p6-blobB blobB"></div>
-                  <svg aria-hidden="true" class="p6-noise" xmlns="http://www.w3.org/2000/svg">
-                    <filter id="grain-free"><feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="3" stitchTiles="stitch" /><feColorMatrix type="saturate" values="0" /></filter>
-                    <rect width="100%" height="100%" filter="url(#grain-free)" />
-                  </svg>
-                  <div class="p6-card-content">
-                    <div class="p6-header">
-                      <ion-icon name="rocket-outline" style="font-size: 1.5rem; color: #fff; opacity: 0.8;"></ion-icon>
-                    </div>
-                    <div>
-                      <h3 class="p6-title notranslate" translate="no">Basic</h3>
-                      <p class="p6-desc">Free forever streaming.</p>
-                    </div>
-                    <div>
-                      <div class="p6-price-row">
-                        <span class="p6-price">$0</span>
-                      </div>
-                      <p class="p6-price-note">forever</p>
-                    </div>
-                    <button class="p6-btn" data-tier="free">Current Plan</button>
-                  </div>
-                </div>
-                <div class="p6-features">
-                  <ul class="p6-feature-list">
-                    <li class="p6-feature-item"><ion-icon name="checkmark-outline" class="p6-feature-icon"></ion-icon>Standard 720p/1080p stream</li>
-                    <li class="p6-feature-item"><ion-icon name="checkmark-outline" class="p6-feature-icon"></ion-icon>Standard servers (2, 3, 4)</li>
-                    <li class="p6-feature-item p6-disabled"><ion-icon name="close-outline" class="p6-feature-icon"></ion-icon>Ad-free video playback</li>
-                    <li class="p6-feature-item p6-disabled"><ion-icon name="close-outline" class="p6-feature-icon"></ion-icon>Access to 4K Ultra HD Section</li>
-                  </ul>
+            <!-- Comparison Grid -->
+            <div class="vip-fp-grid">
+
+              <!-- Header row -->
+              <div class="vip-fp-head vip-fp-spacer"></div>
+
+              <div class="vip-fp-head">
+                <div class="vip-fp-card">
+                  <div class="vip-fp-tier-name">Basic</div>
+                  <div class="vip-fp-price"><span class="vip-fp-cur">$</span>0</div>
+                  <div class="vip-fp-billed">forever</div>
+                  <button class="vip-fp-cta vip-fp-cta--dim" data-tier="free">Current</button>
                 </div>
               </div>
 
-              <!-- Plan 2: Bronze / Advanced -->
-              <div class="p6-card">
-                <div class="p6-card-inner p6-teal">
-                  <div class="p6-blobA blobA"></div>
-                  <div class="p6-blobB blobB"></div>
-                  <svg aria-hidden="true" class="p6-noise" xmlns="http://www.w3.org/2000/svg">
-                    <filter id="grain-adv"><feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="3" stitchTiles="stitch" /><feColorMatrix type="saturate" values="0" /></filter>
-                    <rect width="100%" height="100%" filter="url(#grain-adv)" />
-                  </svg>
-                  <div class="p6-card-content">
-                    <div class="p6-header">
-                      <ion-icon name="flash-outline" style="font-size: 1.5rem; color: #fff; opacity: 0.8;"></ion-icon>
-                    </div>
-                    <div>
-                      <h3 class="p6-title notranslate" translate="no">Advanced</h3>
-                      <p class="p6-desc">Remove ads & get VIP badge.</p>
-                    </div>
-                    <div>
-                      <div class="p6-price-row">
-                        <span class="p6-price">$<span id="vipAmountBronze">8</span></span>
-                      </div>
-                      <p class="p6-price-note" id="vipPeriodBronze">billed monthly</p>
-                    </div>
-                    <button class="p6-btn select-plan-btn" id="vipBtnBronze" data-tier="bronze" data-price="8" data-name="Advanced (Monthly)">Upgrade to Advanced</button>
-                  </div>
-                </div>
-                <div class="p6-features">
-                  <ul class="p6-feature-list">
-                    <li class="p6-feature-item"><ion-icon name="checkmark-outline" class="p6-feature-icon"></ion-icon>Ad-free Site Experience</li>
-                    <li class="p6-feature-item"><ion-icon name="checkmark-outline" class="p6-feature-icon"></ion-icon>VIP Badge on Profile</li>
-                    <li class="p6-feature-item p6-disabled"><ion-icon name="close-outline" class="p6-feature-icon"></ion-icon>Access to 4K Ultra HD Section</li>
-                  </ul>
+              <div class="vip-fp-head">
+                <div class="vip-fp-card">
+                  <div class="vip-fp-tier-name">Advanced</div>
+                  <div class="vip-fp-price"><span class="vip-fp-cur">$</span><span class="vip-amount" id="vipAmountBronze">8</span><span class="vip-fp-per"> /mo</span></div>
+                  <div class="vip-fp-billed" id="vipPeriodBronze">billed monthly</div>
+                  <button class="vip-fp-cta select-plan-btn" id="vipBtnBronze" data-tier="bronze" data-price="8" data-name="Advanced (Monthly)">Upgrade</button>
                 </div>
               </div>
 
-              <!-- Plan 3: Gold / Pro -->
-              <div class="p6-card">
-                <div class="p6-card-inner p6-purple">
-                  <div class="p6-blobA blobA"></div>
-                  <div class="p6-blobB blobB"></div>
-                  <svg aria-hidden="true" class="p6-noise" xmlns="http://www.w3.org/2000/svg">
-                    <filter id="grain-pro"><feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="3" stitchTiles="stitch" /><feColorMatrix type="saturate" values="0" /></filter>
-                    <rect width="100%" height="100%" filter="url(#grain-pro)" />
-                  </svg>
-                  <div class="p6-card-content">
-                    <div class="p6-header">
-                      <ion-icon name="star-outline" style="font-size: 1.5rem; color: #fff; opacity: 0.8;"></ion-icon>
-                      <span class="p6-featured-label">POPULAR</span>
-                    </div>
-                    <div>
-                      <h3 class="p6-title notranslate" translate="no">Pro</h3>
-                      <p class="p6-desc">The perfect streaming upgrade.</p>
-                    </div>
-                    <div>
-                      <div class="p6-price-row">
-                        <span class="p6-price">$<span id="vipAmountGold">15</span></span>
-                      </div>
-                      <p class="p6-price-note" id="vipPeriodGold">billed monthly</p>
-                    </div>
-                    <button class="p6-btn select-plan-btn" id="vipBtnGold" data-tier="gold" data-price="15" data-name="Pro (Monthly)">Upgrade to Pro</button>
-                  </div>
-                </div>
-                <div class="p6-features">
-                  <ul class="p6-feature-list">
-                    <li class="p6-feature-item"><ion-icon name="checkmark-outline" class="p6-feature-icon"></ion-icon>All Advanced Features</li>
-                    <li class="p6-feature-item"><ion-icon name="checkmark-outline" class="p6-feature-icon"></ion-icon>Access to 4K Ultra HD Section</li>
-                    <li class="p6-feature-item"><ion-icon name="checkmark-outline" class="p6-feature-icon"></ion-icon>Download for offline</li>
-                  </ul>
+              <div class="vip-fp-head">
+                <div class="vip-fp-card vip-fp-card--pop">
+                  <div class="vip-fp-tag vip-fp-tag--pop">POPULAR</div>
+                  <div class="vip-fp-tier-name">Pro</div>
+                  <div class="vip-fp-price"><span class="vip-fp-cur">$</span><span class="vip-amount" id="vipAmountGold">15</span><span class="vip-fp-per"> /mo</span></div>
+                  <div class="vip-fp-billed" id="vipPeriodGold">billed monthly</div>
+                  <button class="vip-fp-cta vip-fp-cta--teal select-plan-btn" id="vipBtnGold" data-tier="gold" data-price="15" data-name="Pro (Monthly)">Upgrade</button>
                 </div>
               </div>
 
-              <!-- Plan 4: Diamond / Ultimate -->
-              <div class="p6-card">
-                <div class="p6-card-inner p6-amber">
-                  <div class="p6-blobA blobA"></div>
-                  <div class="p6-blobB blobB"></div>
-                  <svg aria-hidden="true" class="p6-noise" xmlns="http://www.w3.org/2000/svg">
-                    <filter id="grain-ult"><feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="3" stitchTiles="stitch" /><feColorMatrix type="saturate" values="0" /></filter>
-                    <rect width="100%" height="100%" filter="url(#grain-ult)" />
-                  </svg>
-                  <div class="p6-card-content">
-                    <div class="p6-header">
-                      <ion-icon name="diamond-outline" style="font-size: 1.5rem; color: #fff; opacity: 0.8;"></ion-icon>
-                      <span class="p6-featured-label" style="background: rgba(255,255,255,0.2); color: #fff;">BEST VALUE</span>
-                    </div>
-                    <div>
-                      <h3 class="p6-title notranslate" translate="no">Ultimate</h3>
-                      <p class="p6-desc">Everything plus early access.</p>
-                    </div>
-                    <div>
-                      <div class="p6-price-row">
-                        <span class="p6-price">$<span id="vipAmountDiamond">20</span></span>
-                      </div>
-                      <p class="p6-price-note" id="vipPeriodDiamond">billed monthly</p>
-                    </div>
-                    <button class="p6-btn p6-btn-dark select-plan-btn" id="vipBtnDiamond" data-tier="diamond" data-price="20" data-name="Ultimate (Monthly)">Upgrade to Ultimate</button>
-                  </div>
-                </div>
-                <div class="p6-features">
-                  <ul class="p6-feature-list">
-                    <li class="p6-feature-item"><ion-icon name="checkmark-outline" class="p6-feature-icon"></ion-icon>All Pro Features</li>
-                    <li class="p6-feature-item"><ion-icon name="checkmark-outline" class="p6-feature-icon"></ion-icon>Request missing Movies/Series</li>
-                    <li class="p6-feature-item"><ion-icon name="checkmark-outline" class="p6-feature-icon"></ion-icon>Early Access to Features</li>
-                  </ul>
+              <div class="vip-fp-head">
+                <div class="vip-fp-card vip-fp-card--best">
+                  <div class="vip-fp-tag vip-fp-tag--best">BEST VALUE</div>
+                  <div class="vip-fp-tier-name">Ultimate</div>
+                  <div class="vip-fp-price"><span class="vip-fp-cur">$</span><span class="vip-amount" id="vipAmountDiamond">20</span><span class="vip-fp-per"> /mo</span></div>
+                  <div class="vip-fp-billed" id="vipPeriodDiamond">billed monthly</div>
+                  <button class="vip-fp-cta vip-fp-cta--amber select-plan-btn" id="vipBtnDiamond" data-tier="diamond" data-price="20" data-name="Ultimate (Monthly)">Upgrade</button>
                 </div>
               </div>
 
-            </div>
+              <!-- Feature rows -->
+              <div class="vip-fp-row">
+                <div class="vip-fp-rlabel">720p / 1080p streaming</div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">Γ£ô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">Γ£ô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">Γ£ô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">Γ£ô</span></div>
+              </div>
+              <div class="vip-fp-row">
+                <div class="vip-fp-rlabel">Ad-free site experience</div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">ΓÇô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">Γ£ô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">Γ£ô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">Γ£ô</span></div>
+              </div>
+              <div class="vip-fp-row">
+                <div class="vip-fp-rlabel">VIP badge on profile</div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">ΓÇô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">Γ£ô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">Γ£ô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">Γ£ô</span></div>
+              </div>
+              <div class="vip-fp-row">
+                <div class="vip-fp-rlabel">4K Ultra HD section</div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">ΓÇô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">ΓÇô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">Γ£ô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">Γ£ô</span></div>
+              </div>
+              <div class="vip-fp-row">
+                <div class="vip-fp-rlabel">Download for offline</div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">ΓÇô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">ΓÇô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">Γ£ô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">Γ£ô</span></div>
+              </div>
+              <div class="vip-fp-row">
+                <div class="vip-fp-rlabel">Request missing titles</div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">ΓÇô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">ΓÇô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">ΓÇô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">Γ£ô</span></div>
+              </div>
+              <div class="vip-fp-row">
+                <div class="vip-fp-rlabel">Early access to features</div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">ΓÇô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">ΓÇô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-no">ΓÇô</span></div>
+                <div class="vip-fp-cell"><span class="vip-fp-yes">Γ£ô</span></div>
+              </div>
 
+            </div><!-- /vip-fp-grid -->
 
             <!-- FAQ -->
             <h2 class="vip-fp-faq-title">Got questions?</h2>
             <div class="vip-fp-faq">
               <details>
                 <summary>Can I cancel any time?</summary>
-                <p>Yes. Cancel from your account settings whenever you like â€” access continues until the end of the billing period already paid for.</p>
+                <p>Yes. Cancel from your account settings whenever you like ΓÇö access continues until the end of the billing period already paid for.</p>
               </details>
               <details>
                 <summary>Why do I still see some ads?</summary>
@@ -1835,7 +1805,7 @@
               </details>
               <details>
                 <summary>Can I change plans later?</summary>
-                <p>Yes â€” upgrade or downgrade any time, with billing adjusted immediately for the rest of your cycle.</p>
+                <p>Yes ΓÇö upgrade or downgrade any time, with billing adjusted immediately for the rest of your cycle.</p>
               </details>
               <details>
                 <summary>What payment methods work?</summary>
@@ -1843,7 +1813,7 @@
               </details>
             </div>
 
-            <footer class="vip-fp-footer">Prices in USD Â· billing period selected above</footer>
+            <footer class="vip-fp-footer">Prices in USD ┬╖ billing period selected above</footer>
 
           </div><!-- /vip-fp-stage -->
         </div><!-- /vipStepPlans -->
@@ -2054,7 +2024,7 @@
             clip: rect(0, 0, 0, 0) !important;
         }
 
-        /* Language Toast â€” Chrome-style compact popup (top-right) */
+        /* Language Toast ΓÇö Chrome-style compact popup (top-right) */
         .lang-toast {
             position: fixed;
             top: 86px;
@@ -2428,43 +2398,43 @@
             const navAiBtnTextMobile = document.getElementById('navAiBtnTextMobile');
 
             const genreMapKurdish = {
-                'all': 'Ù‡Û•Ù…ÙˆÙˆ Ø¬Û†Ø±Û•Ú©Ø§Ù†',
-                'Action': 'Ø¦Ø§Ú©Ø´Ù†',
-                'Adventure': 'Ø³Û•Ø±Ú©ÛŽØ´ÛŒ',
-                'Animation': 'Ø¦Û•Ù†ÛŒÙ…Û•ÛŒØ´Ù†',
-                'Comedy': 'Ú©Û†Ù…ÛŒØ¯ÛŒ',
-                'Crime': 'ØªØ§ÙˆØ§Ù†Ú©Ø§Ø±ÛŒ',
-                'Drama': 'Ø¯Ø±Ø§Ù…Ø§',
-                'Family': 'Ø®ÛŽØ²Ø§Ù†ÛŒ',
-                'Kids': 'Ù…Ù†Ø¯Ø§ÚµØ§Ù†',
-                'History': 'Ù…ÛŽÚ˜ÙˆÙˆÛŒÛŒ',
-                'Fantasy': 'ÙØ§Ù†ØªØ§Ø²ÛŒØ§',
-                'Horror': 'ØªØ±Ø³Ù†Ø§Ú©',
-                'Mystery': 'Ù†Ù‡ÛŽÙ†ÛŒ',
-                'Romance': 'Ú•Û†Ù…Ø§Ù†Ø³ÛŒ',
-                'Sci-Fi': 'Ø®Û•ÛŒØ§ÚµÛŒ Ø²Ø§Ù†Ø³ØªÛŒ',
-                'Thriller': 'Ù‡Û•Ø³ØªØ¨Ø²ÙˆÛŽÙ†',
-                'War': 'Ø¬Û•Ù†Ú¯'
+                'all': '┘ç█ò┘à┘ê┘ê ╪¼█å╪▒█ò┌⌐╪º┘å',
+                'Action': '╪ª╪º┌⌐╪┤┘å',
+                'Adventure': '╪│█ò╪▒┌⌐█Ä╪┤█î',
+                'Animation': '╪ª█ò┘å█î┘à█ò█î╪┤┘å',
+                'Comedy': '┌⌐█å┘à█î╪»█î',
+                'Crime': '╪¬╪º┘ê╪º┘å┌⌐╪º╪▒█î',
+                'Drama': '╪»╪▒╪º┘à╪º',
+                'Family': '╪«█Ä╪▓╪º┘å█î',
+                'Kids': '┘à┘å╪»╪º┌╡╪º┘å',
+                'History': '┘à█Ä┌ÿ┘ê┘ê█î█î',
+                'Fantasy': '┘ü╪º┘å╪¬╪º╪▓█î╪º',
+                'Horror': '╪¬╪▒╪│┘å╪º┌⌐',
+                'Mystery': '┘å┘ç█Ä┘å█î',
+                'Romance': '┌ò█å┘à╪º┘å╪│█î',
+                'Sci-Fi': '╪«█ò█î╪º┌╡█î ╪▓╪º┘å╪│╪¬█î',
+                'Thriller': '┘ç█ò╪│╪¬╪¿╪▓┘ê█Ä┘å',
+                'War': '╪¼█ò┘å┌»'
             };
 
             const genreMapArabic = {
-                'all': 'Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø£Ù†ÙˆØ§Ø¹',
-                'Action': 'Ø£ÙƒØ´Ù†',
-                'Adventure': 'Ù…ØºØ§Ù…Ø±Ø©',
-                'Animation': 'Ø±Ø³ÙˆÙ… Ù…ØªØ­Ø±ÙƒØ©',
-                'Comedy': 'ÙƒÙˆÙ…ÙŠØ¯ÙŠØ§',
-                'Crime': 'Ø¬Ø±ÙŠÙ…Ø©',
-                'Drama': 'Ø¯Ø±Ø§Ù…Ø§',
-                'Family': 'Ø¹Ø§Ø¦Ù„ÙŠ',
-                'Kids': 'Ø£Ø·ÙØ§Ù„',
-                'History': 'ØªØ§Ø±ÙŠØ®ÙŠ',
-                'Fantasy': 'Ø®ÙŠØ§Ù„ÙŠ',
-                'Horror': 'Ø±Ø¹Ø¨',
-                'Mystery': 'ØºÙ…ÙˆØ¶',
-                'Romance': 'Ø±ÙˆÙ…Ø§Ù†Ø³ÙŠ',
-                'Sci-Fi': 'Ø®ÙŠØ§Ù„ Ø¹Ù„Ù…ÙŠ',
-                'Thriller': 'Ø¥Ø«Ø§Ø±Ø©',
-                'War': 'Ø­Ø±Ø¨'
+                'all': '╪¼┘à┘è╪╣ ╪º┘ä╪ú┘å┘ê╪º╪╣',
+                'Action': '╪ú┘â╪┤┘å',
+                'Adventure': '┘à╪║╪º┘à╪▒╪⌐',
+                'Animation': '╪▒╪│┘ê┘à ┘à╪¬╪¡╪▒┘â╪⌐',
+                'Comedy': '┘â┘ê┘à┘è╪»┘è╪º',
+                'Crime': '╪¼╪▒┘è┘à╪⌐',
+                'Drama': '╪»╪▒╪º┘à╪º',
+                'Family': '╪╣╪º╪ª┘ä┘è',
+                'Kids': '╪ú╪╖┘ü╪º┘ä',
+                'History': '╪¬╪º╪▒┘è╪«┘è',
+                'Fantasy': '╪«┘è╪º┘ä┘è',
+                'Horror': '╪▒╪╣╪¿',
+                'Mystery': '╪║┘à┘ê╪╢',
+                'Romance': '╪▒┘ê┘à╪º┘å╪│┘è',
+                'Sci-Fi': '╪«┘è╪º┘ä ╪╣┘ä┘à┘è',
+                'Thriller': '╪Ñ╪½╪º╪▒╪⌐',
+                'War': '╪¡╪▒╪¿'
             };
 
             const genreMapEnglish = {
@@ -2489,148 +2459,148 @@
 
             if (currentLang === 'ckb') {
                 const navBrowseText = document.getElementById('navBrowseText');
-                if (navBrowseText) navBrowseText.textContent = 'Ú¯Û•Ú•Ø§Ù†';
+                if (navBrowseText) navBrowseText.textContent = '┌»█ò┌ò╪º┘å';
                 const browseHeaderTitle = document.getElementById('browseHeaderTitle');
-                if (browseHeaderTitle) browseHeaderTitle.textContent = 'Ú¯Û•Ú•Ø§Ù†';
+                if (browseHeaderTitle) browseHeaderTitle.textContent = '┌»█ò┌ò╪º┘å';
                 const browseSecContent = document.getElementById('browseSecContent');
-                if (browseSecContent) browseSecContent.textContent = 'Ù†Ø§ÙˆÛ•Ú•Û†Ú©';
+                if (browseSecContent) browseSecContent.textContent = '┘å╪º┘ê█ò┌ò█å┌⌐';
                 const browseSecPersonal = document.getElementById('browseSecPersonal');
-                if (browseSecPersonal) browseSecPersonal.textContent = 'ØªØ§ÛŒØ¨Û•Øª';
+                if (browseSecPersonal) browseSecPersonal.textContent = '╪¬╪º█î╪¿█ò╪¬';
                 const browseSecMore = document.getElementById('browseSecMore');
-                if (browseSecMore) browseSecMore.textContent = 'Ø²ÛŒØ§ØªØ±';
+                if (browseSecMore) browseSecMore.textContent = '╪▓█î╪º╪¬╪▒';
                 const browseLabelMovies = document.getElementById('browseLabelMovies');
-                if (browseLabelMovies) browseLabelMovies.textContent = 'ÙÛŒÙ„Ù…Û•Ú©Ø§Ù†';
+                if (browseLabelMovies) browseLabelMovies.textContent = '┘ü█î┘ä┘à█ò┌⌐╪º┘å';
                 const browseLabelSeries = document.getElementById('browseLabelSeries');
-                if (browseLabelSeries) browseLabelSeries.textContent = 'Ø²Ù†Ø¬ÛŒØ±Û•Ú©Ø§Ù†';
+                if (browseLabelSeries) browseLabelSeries.textContent = '╪▓┘å╪¼█î╪▒█ò┌⌐╪º┘å';
                 const browseLabelAnime = document.getElementById('browseLabelAnime');
-                if (browseLabelAnime) browseLabelAnime.textContent = 'Ø¦Û•Ù†ÛŒÙ…ÛŒ';
+                if (browseLabelAnime) browseLabelAnime.textContent = '╪ª█ò┘å█î┘à█î';
                 const browseLabelContinue = document.getElementById('browseLabelContinue');
-                if (browseLabelContinue) browseLabelContinue.textContent = 'Ø¨Û•Ø±Ø¯Û•ÙˆØ§Ù…Ø¨ÙˆÙˆÙ†';
+                if (browseLabelContinue) browseLabelContinue.textContent = '╪¿█ò╪▒╪»█ò┘ê╪º┘à╪¿┘ê┘ê┘å';
                 const browseLabelWatchlist = document.getElementById('browseLabelWatchlist');
-                if (browseLabelWatchlist) browseLabelWatchlist.textContent = 'Ø¯ÚµØ®ÙˆØ§Ø²Û•Ú©Ø§Ù†';
+                if (browseLabelWatchlist) browseLabelWatchlist.textContent = '╪»┌╡╪«┘ê╪º╪▓█ò┌⌐╪º┘å';
                 const browseLabelDownload = document.getElementById('browseLabelDownload');
-                if (browseLabelDownload) browseLabelDownload.textContent = 'Ø¯Ø§Ú¯Ø±ØªÙ†';
+                if (browseLabelDownload) browseLabelDownload.textContent = '╪»╪º┌»╪▒╪¬┘å';
                 const browseLabelAi = document.getElementById('browseLabelAi');
-                if (browseLabelAi) browseLabelAi.textContent = 'ÛŒØ§Ø±Ù…Û•ØªÛŒØ¯Û•Ø±ÛŒ Ø²ÛŒØ±Û•Ú©';
+                if (browseLabelAi) browseLabelAi.textContent = '█î╪º╪▒┘à█ò╪¬█î╪»█ò╪▒█î ╪▓█î╪▒█ò┌⌐';
                 const browseLabelReport = document.getElementById('browseLabelReport');
-                if (browseLabelReport) browseLabelReport.textContent = 'Ø±ÛŒÙ¾Û†Ø±Øª';
+                if (browseLabelReport) browseLabelReport.textContent = '╪▒█î┘╛█å╪▒╪¬';
 
-                if (loginPwLabel) loginPwLabel.textContent = 'ÙˆØ´Û•ÛŒ Ù†Ù‡ÛŽÙ†ÛŒ';
-                if (signupPwLabel) signupPwLabel.textContent = 'ÙˆØ´Û•ÛŒ Ù†Ù‡ÛŽÙ†ÛŒ';
-                if (loginPwInput) loginPwInput.placeholder = 'â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢';
-                if (signupPwInput) signupPwInput.placeholder = 'â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢';
-                if (signupEmailLabel) signupEmailLabel.textContent = 'Ø¦ÛŒÙ…Û•ÛŒÚµ';
-                if (textTabSignup) textTabSignup.textContent = 'Ø¯Ø±ÙˆØ³ØªÚ©Ø±Ø¯Ù†ÛŒ Ù‡Û•Ú˜Ù…Ø§Ø±';
-                if (textBtnSignup) textBtnSignup.textContent = 'Ø¯Ø±ÙˆØ³ØªÚ©Ø±Ø¯Ù†ÛŒ Ù‡Û•Ú˜Ù…Ø§Ø±';
-                if (signupEmailInput) signupEmailInput.placeholder = 'Ø¦ÛŒÙ…Û•ÛŒÚµ';
-                if (labelDirector) labelDirector.textContent = 'Ø¯Û•Ø±Ù‡ÛŽÙ†Û•Ø±:';
-                if (labelCast) labelCast.textContent = 'Ø¦Û•Ú©ØªÛ•Ø±Û•Ú©Ø§Ù†:';
-                if (navSeries1) navSeries1.textContent = 'Ø²Ù†Ø¬ÛŒØ±Û•Ú©Ø§Ù†';
-                if (navSeries2) navSeries2.textContent = 'Ø²Ù†Ø¬ÛŒØ±Û•Ú©Ø§Ù†';
-                if (navHome1) navHome1.textContent = 'Ø³Û•Ø±Û•Ú©ÛŒ';
-                if (navHome2) navHome2.textContent = 'Ø³Û•Ø±Û•Ú©ÛŒ';
-                if (navMovies1) navMovies1.textContent = 'ÙÛŒÙ„Ù…Û•Ú©Ø§Ù†';
-                if (navMovies2) navMovies2.textContent = 'ÙÛŒÙ„Ù…Û•Ú©Ø§Ù†';
-                if (navAnime1) navAnime1.textContent = 'Ø¦Û•Ù†ÛŒÙ…ÛŒ';
-                if (navAnime2) navAnime2.textContent = 'Ø¦Û•Ù†ÛŒÙ…ÛŒ';
-                if (navContinue1) navContinue1.textContent = 'Ø¨Û•Ø±Ø¯Û•ÙˆØ§Ù…Ø¨ÙˆÙˆÙ†';
-                if (navContinue2) navContinue2.textContent = 'Ø¨Û•Ø±Ø¯Û•ÙˆØ§Ù…Ø¨ÙˆÙˆÙ†';
-                if (navWatchlist1) navWatchlist1.textContent = 'Ø¯ÚµØ®ÙˆØ§Ø²Û•Ú©Ø§Ù†';
-                if (navWatchlist2) navWatchlist2.textContent = 'Ø¯ÚµØ®ÙˆØ§Ø²Û•Ú©Ø§Ù†';
-                if (continueShelfTitle) continueShelfTitle.textContent = 'Ø¨Û•Ø±Ø¯Û•ÙˆØ§Ù… Ø¨Û• Ù„Û• Ø³Û•ÛŒØ±Ú©Ø±Ø¯Ù†';
-                if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'Ú•ÛŽÚ© Ù„Û•Ùˆ Ø´ÙˆÛŽÙ†Û• Ø¯Û•Ø³ØªÙ¾ÛŽØ¨Ú©Û•ÙˆÛ• Ú©Û• Ù„ÛŽÛŒ ÙˆÛ•Ø³ØªØ§Ø¨ÙˆÙˆÛŒ';
-                if (navAiBtnText) navAiBtnText.textContent = 'ÛŒØ§Ø±Ù…Û•ØªÛŒØ¯Û•Ø±ÛŒ Ø²ÛŒØ±Û•Ú©';
-                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = 'ÛŒØ§Ø±Ù…Û•ØªÛŒØ¯Û•Ø±ÛŒ Ø²ÛŒØ±Û•Ú©';
+                if (loginPwLabel) loginPwLabel.textContent = '┘ê╪┤█ò█î ┘å┘ç█Ä┘å█î';
+                if (signupPwLabel) signupPwLabel.textContent = '┘ê╪┤█ò█î ┘å┘ç█Ä┘å█î';
+                if (loginPwInput) loginPwInput.placeholder = 'ΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇó';
+                if (signupPwInput) signupPwInput.placeholder = 'ΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇó';
+                if (signupEmailLabel) signupEmailLabel.textContent = '╪ª█î┘à█ò█î┌╡';
+                if (textTabSignup) textTabSignup.textContent = '╪»╪▒┘ê╪│╪¬┌⌐╪▒╪»┘å█î ┘ç█ò┌ÿ┘à╪º╪▒';
+                if (textBtnSignup) textBtnSignup.textContent = '╪»╪▒┘ê╪│╪¬┌⌐╪▒╪»┘å█î ┘ç█ò┌ÿ┘à╪º╪▒';
+                if (signupEmailInput) signupEmailInput.placeholder = '╪ª█î┘à█ò█î┌╡';
+                if (labelDirector) labelDirector.textContent = '╪»█ò╪▒┘ç█Ä┘å█ò╪▒:';
+                if (labelCast) labelCast.textContent = '╪ª█ò┌⌐╪¬█ò╪▒█ò┌⌐╪º┘å:';
+                if (navSeries1) navSeries1.textContent = '╪▓┘å╪¼█î╪▒█ò┌⌐╪º┘å';
+                if (navSeries2) navSeries2.textContent = '╪▓┘å╪¼█î╪▒█ò┌⌐╪º┘å';
+                if (navHome1) navHome1.textContent = '╪│█ò╪▒█ò┌⌐█î';
+                if (navHome2) navHome2.textContent = '╪│█ò╪▒█ò┌⌐█î';
+                if (navMovies1) navMovies1.textContent = '┘ü█î┘ä┘à█ò┌⌐╪º┘å';
+                if (navMovies2) navMovies2.textContent = '┘ü█î┘ä┘à█ò┌⌐╪º┘å';
+                if (navAnime1) navAnime1.textContent = '╪ª█ò┘å█î┘à█î';
+                if (navAnime2) navAnime2.textContent = '╪ª█ò┘å█î┘à█î';
+                if (navContinue1) navContinue1.textContent = '╪¿█ò╪▒╪»█ò┘ê╪º┘à╪¿┘ê┘ê┘å';
+                if (navContinue2) navContinue2.textContent = '╪¿█ò╪▒╪»█ò┘ê╪º┘à╪¿┘ê┘ê┘å';
+                if (navWatchlist1) navWatchlist1.textContent = '╪»┌╡╪«┘ê╪º╪▓█ò┌⌐╪º┘å';
+                if (navWatchlist2) navWatchlist2.textContent = '╪»┌╡╪«┘ê╪º╪▓█ò┌⌐╪º┘å';
+                if (continueShelfTitle) continueShelfTitle.textContent = '╪¿█ò╪▒╪»█ò┘ê╪º┘à ╪¿█ò ┘ä█ò ╪│█ò█î╪▒┌⌐╪▒╪»┘å';
+                if (continueShelfSubtitle) continueShelfSubtitle.textContent = '┌ò█Ä┌⌐ ┘ä█ò┘ê ╪┤┘ê█Ä┘å█ò ╪»█ò╪│╪¬┘╛█Ä╪¿┌⌐█ò┘ê█ò ┌⌐█ò ┘ä█Ä█î ┘ê█ò╪│╪¬╪º╪¿┘ê┘ê█î';
+                if (navAiBtnText) navAiBtnText.textContent = '█î╪º╪▒┘à█ò╪¬█î╪»█ò╪▒█î ╪▓█î╪▒█ò┌⌐';
+                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = '█î╪º╪▒┘à█ò╪¬█î╪»█ò╪▒█î ╪▓█î╪▒█ò┌⌐';
                 const aiOnlineText = document.getElementById('aiOnlineText');
-                if (aiOnlineText) aiOnlineText.textContent = 'ÛŒØ§Ø±Ù…Û•ØªÛŒØ¯Û•Ø±ÛŒ Ø²ÛŒØ±Û•Ú©';
-                if (filterBtnText) filterBtnText.textContent = 'ÙÛŒÙ„Ù… Ùˆ Ø²Ù†Ø¬ÛŒØ±Û•';
-                if (filterOptAll) filterOptAll.textContent = 'ÙÛŒÙ„Ù… Ùˆ Ø²Ù†Ø¬ÛŒØ±Û•';
-                if (filterOptMovie) filterOptMovie.textContent = 'ØªÛ•Ù†Ù‡Ø§ ÙÛŒÙ„Ù…';
-                if (filterOptSeries) filterOptSeries.textContent = 'ØªÛ•Ù†Ù‡Ø§ Ø²Ù†Ø¬ÛŒØ±Û•';
+                if (aiOnlineText) aiOnlineText.textContent = '█î╪º╪▒┘à█ò╪¬█î╪»█ò╪▒█î ╪▓█î╪▒█ò┌⌐';
+                if (filterBtnText) filterBtnText.textContent = '┘ü█î┘ä┘à ┘ê ╪▓┘å╪¼█î╪▒█ò';
+                if (filterOptAll) filterOptAll.textContent = '┘ü█î┘ä┘à ┘ê ╪▓┘å╪¼█î╪▒█ò';
+                if (filterOptMovie) filterOptMovie.textContent = '╪¬█ò┘å┘ç╪º ┘ü█î┘ä┘à';
+                if (filterOptSeries) filterOptSeries.textContent = '╪¬█ò┘å┘ç╪º ╪▓┘å╪¼█î╪▒█ò';
                 document.querySelectorAll('.browse-filter-btn').forEach(btn => {
                     const g = btn.getAttribute('data-genre');
                     if (genreMapKurdish[g]) btn.textContent = genreMapKurdish[g];
                 });
-                document.querySelectorAll('.download-text').forEach(el => el.textContent = 'Ø¯Ø§Ú¯Ø±ØªÙ†');
-                document.querySelectorAll('.report-text').forEach(el => el.textContent = 'Ø±ÛŒÙ¾Û†Ø±Øª');
+                document.querySelectorAll('.download-text').forEach(el => el.textContent = '╪»╪º┌»╪▒╪¬┘å');
+                document.querySelectorAll('.report-text').forEach(el => el.textContent = '╪▒█î┘╛█å╪▒╪¬');
                 const detailsReportBtn = document.getElementById('detailsReportBtn');
-                if (detailsReportBtn) detailsReportBtn.textContent = 'Ø±ÛŒÙ¾Û†Ø±Øª';
+                if (detailsReportBtn) detailsReportBtn.textContent = '╪▒█î┘╛█å╪▒╪¬';
                 const detailsSimilarsText = document.getElementById('detailsSimilarsText');
-                if (detailsSimilarsText) detailsSimilarsText.textContent = 'Ù‡Ø§ÙˆØ´ÛŽÙˆÛ•';
+                if (detailsSimilarsText) detailsSimilarsText.textContent = '┘ç╪º┘ê╪┤█Ä┘ê█ò';
                 const detailsSimilarsHeading = document.getElementById('detailsSimilarsHeading');
-                if (detailsSimilarsHeading) detailsSimilarsHeading.textContent = 'Ø¨Û•Ø±Ù‡Û•Ù…ÛŒ Ù‡Ø§ÙˆØ´ÛŽÙˆÛ•';
+                if (detailsSimilarsHeading) detailsSimilarsHeading.textContent = '╪¿█ò╪▒┘ç█ò┘à█î ┘ç╪º┘ê╪┤█Ä┘ê█ò';
                 const commentsTitleHeading = document.getElementById('commentsTitleHeading');
-                if (commentsTitleHeading) commentsTitleHeading.textContent = 'Ø¨Û†Ú†ÙˆÙˆÙ†Û•Ú©Ø§Ù†';
+                if (commentsTitleHeading) commentsTitleHeading.textContent = '╪¿█å┌å┘ê┘ê┘å█ò┌⌐╪º┘å';
             } else if (currentLang === 'ar') {
                 const navBrowseText = document.getElementById('navBrowseText');
-                if (navBrowseText) navBrowseText.textContent = 'ØªØµÙØ­';
+                if (navBrowseText) navBrowseText.textContent = '╪¬╪╡┘ü╪¡';
                 const browseHeaderTitle = document.getElementById('browseHeaderTitle');
-                if (browseHeaderTitle) browseHeaderTitle.textContent = 'ØªØµÙØ­';
+                if (browseHeaderTitle) browseHeaderTitle.textContent = '╪¬╪╡┘ü╪¡';
                 const browseSecContent = document.getElementById('browseSecContent');
-                if (browseSecContent) browseSecContent.textContent = 'Ø§Ù„Ù…Ø­ØªÙˆÙ‰';
+                if (browseSecContent) browseSecContent.textContent = '╪º┘ä┘à╪¡╪¬┘ê┘ë';
                 const browseSecPersonal = document.getElementById('browseSecPersonal');
-                if (browseSecPersonal) browseSecPersonal.textContent = 'Ø´Ø®ØµÙŠ';
+                if (browseSecPersonal) browseSecPersonal.textContent = '╪┤╪«╪╡┘è';
                 const browseSecMore = document.getElementById('browseSecMore');
-                if (browseSecMore) browseSecMore.textContent = 'Ø§Ù„Ù…Ø²ÙŠØ¯';
+                if (browseSecMore) browseSecMore.textContent = '╪º┘ä┘à╪▓┘è╪»';
                 const browseLabelMovies = document.getElementById('browseLabelMovies');
-                if (browseLabelMovies) browseLabelMovies.textContent = 'Ø£ÙÙ„Ø§Ù…';
+                if (browseLabelMovies) browseLabelMovies.textContent = '╪ú┘ü┘ä╪º┘à';
                 const browseLabelSeries = document.getElementById('browseLabelSeries');
-                if (browseLabelSeries) browseLabelSeries.textContent = 'Ù…Ø³Ù„Ø³Ù„Ø§Øª';
+                if (browseLabelSeries) browseLabelSeries.textContent = '┘à╪│┘ä╪│┘ä╪º╪¬';
                 const browseLabelAnime = document.getElementById('browseLabelAnime');
-                if (browseLabelAnime) browseLabelAnime.textContent = 'Ø§Ù„Ø£Ù†Ù…ÙŠ';
+                if (browseLabelAnime) browseLabelAnime.textContent = '╪º┘ä╪ú┘å┘à┘è';
                 const browseLabelContinue = document.getElementById('browseLabelContinue');
-                if (browseLabelContinue) browseLabelContinue.textContent = 'Ù…ØªØ§Ø¨Ø¹Ø©';
+                if (browseLabelContinue) browseLabelContinue.textContent = '┘à╪¬╪º╪¿╪╣╪⌐';
                 const browseLabelWatchlist = document.getElementById('browseLabelWatchlist');
-                if (browseLabelWatchlist) browseLabelWatchlist.textContent = 'Ù‚Ø§Ø¦Ù…ØªÙŠ';
+                if (browseLabelWatchlist) browseLabelWatchlist.textContent = '┘é╪º╪ª┘à╪¬┘è';
                 const browseLabelDownload = document.getElementById('browseLabelDownload');
-                if (browseLabelDownload) browseLabelDownload.textContent = 'ØªØ­Ù…ÙŠÙ„';
+                if (browseLabelDownload) browseLabelDownload.textContent = '╪¬╪¡┘à┘è┘ä';
                 const browseLabelAi = document.getElementById('browseLabelAi');
-                if (browseLabelAi) browseLabelAi.textContent = 'Ø§Ù„Ø°ÙƒØ§Ø¡ Ø§Ù„Ø§ØµØ·Ù†Ø§Ø¹ÙŠ';
+                if (browseLabelAi) browseLabelAi.textContent = '╪º┘ä╪░┘â╪º╪í ╪º┘ä╪º╪╡╪╖┘å╪º╪╣┘è';
                 const browseLabelReport = document.getElementById('browseLabelReport');
-                if (browseLabelReport) browseLabelReport.textContent = 'Ø¥Ø¨Ù„Ø§Øº';
+                if (browseLabelReport) browseLabelReport.textContent = '╪Ñ╪¿┘ä╪º╪║';
 
-                if (loginPwLabel) loginPwLabel.textContent = 'ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ±';
-                if (signupPwLabel) signupPwLabel.textContent = 'ÙƒÙ„Ù…Ø© Ø§Ù„Ù…Ø±ÙˆØ±';
-                if (loginPwInput) loginPwInput.placeholder = 'â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢';
-                if (signupPwInput) signupPwInput.placeholder = 'â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢';
-                if (signupEmailLabel) signupEmailLabel.textContent = 'Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ';
-                if (textTabSignup) textTabSignup.textContent = 'Ø¥Ù†Ø´Ø§Ø¡ Ø­Ø³Ø§Ø¨';
-                if (textBtnSignup) textBtnSignup.textContent = 'Ø¥Ù†Ø´Ø§Ø¡ Ø­Ø³Ø§Ø¨';
-                if (signupEmailInput) signupEmailInput.placeholder = 'Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ';
-                if (labelDirector) labelDirector.textContent = 'Ø§Ù„Ù…Ø®Ø±Ø¬:';
-                if (labelCast) labelCast.textContent = 'Ø·Ø§Ù‚Ù… Ø§Ù„Ø¹Ù…Ù„:';
-                if (navSeries1) navSeries1.textContent = 'Ù…Ø³Ù„Ø³Ù„Ø§Øª';
-                if (navSeries2) navSeries2.textContent = 'Ù…Ø³Ù„Ø³Ù„Ø§Øª';
-                if (navHome1) navHome1.textContent = 'Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ©';
-                if (navHome2) navHome2.textContent = 'Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ©';
-                if (navMovies1) navMovies1.textContent = 'Ø£ÙÙ„Ø§Ù…';
-                if (navMovies2) navMovies2.textContent = 'Ø£ÙÙ„Ø§Ù…';
-                if (navAnime1) navAnime1.textContent = 'Ø§Ù„Ø£Ù†Ù…ÙŠ';
-                if (navAnime2) navAnime2.textContent = 'Ø§Ù„Ø£Ù†Ù…ÙŠ';
-                if (navContinue1) navContinue1.textContent = 'Ù…ØªØ§Ø¨Ø¹Ø©';
-                if (navContinue2) navContinue2.textContent = 'Ù…ØªØ§Ø¨Ø¹Ø©';
-                if (navWatchlist1) navWatchlist1.textContent = 'Ù‚Ø§Ø¦Ù…ØªÙŠ';
-                if (navWatchlist2) navWatchlist2.textContent = 'Ù‚Ø§Ø¦Ù…ØªÙŠ';
-                if (continueShelfTitle) continueShelfTitle.textContent = 'Ù…ØªØ§Ø¨Ø¹Ø© Ø§Ù„Ù…Ø´Ø§Ù‡Ø¯Ø©';
-                if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'ØªØ§Ø¨Ø¹ Ù…Ù† Ø­ÙŠØ« ØªÙˆÙ‚ÙØª';
-                if (navAiBtnText) navAiBtnText.textContent = 'Ø§Ù„Ø°ÙƒØ§Ø¡ Ø§Ù„Ø§ØµØ·Ù†Ø§Ø¹ÙŠ';
-                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = 'Ø§Ù„Ø°ÙƒØ§Ø¡ Ø§Ù„Ø§ØµØ·Ù†Ø§Ø¹ÙŠ';
-                if (filterBtnText) filterBtnText.textContent = 'Ø£ÙÙ„Ø§Ù… ÙˆÙ…Ø³Ù„Ø³Ù„Ø§Øª';
-                if (filterOptAll) filterOptAll.textContent = 'Ø£ÙÙ„Ø§Ù… ÙˆÙ…Ø³Ù„Ø³Ù„Ø§Øª';
-                if (filterOptMovie) filterOptMovie.textContent = 'Ø£ÙÙ„Ø§Ù… ÙÙ‚Ø·';
-                if (filterOptSeries) filterOptSeries.textContent = 'Ù…Ø³Ù„Ø³Ù„Ø§Øª ÙÙ‚Ø·';
+                if (loginPwLabel) loginPwLabel.textContent = '┘â┘ä┘à╪⌐ ╪º┘ä┘à╪▒┘ê╪▒';
+                if (signupPwLabel) signupPwLabel.textContent = '┘â┘ä┘à╪⌐ ╪º┘ä┘à╪▒┘ê╪▒';
+                if (loginPwInput) loginPwInput.placeholder = 'ΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇó';
+                if (signupPwInput) signupPwInput.placeholder = 'ΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇó';
+                if (signupEmailLabel) signupEmailLabel.textContent = '╪º┘ä╪¿╪▒┘è╪» ╪º┘ä╪Ñ┘ä┘â╪¬╪▒┘ê┘å┘è';
+                if (textTabSignup) textTabSignup.textContent = '╪Ñ┘å╪┤╪º╪í ╪¡╪│╪º╪¿';
+                if (textBtnSignup) textBtnSignup.textContent = '╪Ñ┘å╪┤╪º╪í ╪¡╪│╪º╪¿';
+                if (signupEmailInput) signupEmailInput.placeholder = '╪º┘ä╪¿╪▒┘è╪» ╪º┘ä╪Ñ┘ä┘â╪¬╪▒┘ê┘å┘è';
+                if (labelDirector) labelDirector.textContent = '╪º┘ä┘à╪«╪▒╪¼:';
+                if (labelCast) labelCast.textContent = '╪╖╪º┘é┘à ╪º┘ä╪╣┘à┘ä:';
+                if (navSeries1) navSeries1.textContent = '┘à╪│┘ä╪│┘ä╪º╪¬';
+                if (navSeries2) navSeries2.textContent = '┘à╪│┘ä╪│┘ä╪º╪¬';
+                if (navHome1) navHome1.textContent = '╪º┘ä╪▒╪ª┘è╪│┘è╪⌐';
+                if (navHome2) navHome2.textContent = '╪º┘ä╪▒╪ª┘è╪│┘è╪⌐';
+                if (navMovies1) navMovies1.textContent = '╪ú┘ü┘ä╪º┘à';
+                if (navMovies2) navMovies2.textContent = '╪ú┘ü┘ä╪º┘à';
+                if (navAnime1) navAnime1.textContent = '╪º┘ä╪ú┘å┘à┘è';
+                if (navAnime2) navAnime2.textContent = '╪º┘ä╪ú┘å┘à┘è';
+                if (navContinue1) navContinue1.textContent = '┘à╪¬╪º╪¿╪╣╪⌐';
+                if (navContinue2) navContinue2.textContent = '┘à╪¬╪º╪¿╪╣╪⌐';
+                if (navWatchlist1) navWatchlist1.textContent = '┘é╪º╪ª┘à╪¬┘è';
+                if (navWatchlist2) navWatchlist2.textContent = '┘é╪º╪ª┘à╪¬┘è';
+                if (continueShelfTitle) continueShelfTitle.textContent = '┘à╪¬╪º╪¿╪╣╪⌐ ╪º┘ä┘à╪┤╪º┘ç╪»╪⌐';
+                if (continueShelfSubtitle) continueShelfSubtitle.textContent = '╪¬╪º╪¿╪╣ ┘à┘å ╪¡┘è╪½ ╪¬┘ê┘é┘ü╪¬';
+                if (navAiBtnText) navAiBtnText.textContent = '╪º┘ä╪░┘â╪º╪í ╪º┘ä╪º╪╡╪╖┘å╪º╪╣┘è';
+                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = '╪º┘ä╪░┘â╪º╪í ╪º┘ä╪º╪╡╪╖┘å╪º╪╣┘è';
+                if (filterBtnText) filterBtnText.textContent = '╪ú┘ü┘ä╪º┘à ┘ê┘à╪│┘ä╪│┘ä╪º╪¬';
+                if (filterOptAll) filterOptAll.textContent = '╪ú┘ü┘ä╪º┘à ┘ê┘à╪│┘ä╪│┘ä╪º╪¬';
+                if (filterOptMovie) filterOptMovie.textContent = '╪ú┘ü┘ä╪º┘à ┘ü┘é╪╖';
+                if (filterOptSeries) filterOptSeries.textContent = '┘à╪│┘ä╪│┘ä╪º╪¬ ┘ü┘é╪╖';
                 document.querySelectorAll('.browse-filter-btn').forEach(btn => {
                     const g = btn.getAttribute('data-genre');
                     if (genreMapArabic[g]) btn.textContent = genreMapArabic[g];
                 });
-                document.querySelectorAll('.download-text').forEach(el => el.textContent = 'ØªØ­Ù…ÙŠÙ„');
-                document.querySelectorAll('.report-text').forEach(el => el.textContent = 'Ø¥Ø¨Ù„Ø§Øº');
+                document.querySelectorAll('.download-text').forEach(el => el.textContent = '╪¬╪¡┘à┘è┘ä');
+                document.querySelectorAll('.report-text').forEach(el => el.textContent = '╪Ñ╪¿┘ä╪º╪║');
                 const detailsSimilarsText = document.getElementById('detailsSimilarsText');
-                if (detailsSimilarsText) detailsSimilarsText.textContent = 'Ø£Ø¹Ù…Ø§Ù„ Ù…Ø´Ø§Ø¨Ù‡Ø©';
+                if (detailsSimilarsText) detailsSimilarsText.textContent = '╪ú╪╣┘à╪º┘ä ┘à╪┤╪º╪¿┘ç╪⌐';
                 const detailsSimilarsHeading = document.getElementById('detailsSimilarsHeading');
-                if (detailsSimilarsHeading) detailsSimilarsHeading.textContent = 'Ù‚Ø¯ ÙŠØ¹Ø¬Ø¨Ùƒ Ø£ÙŠØ¶Ø§Ù‹';
+                if (detailsSimilarsHeading) detailsSimilarsHeading.textContent = '┘é╪» ┘è╪╣╪¼╪¿┘â ╪ú┘è╪╢╪º┘ï';
                 const commentsTitleHeading = document.getElementById('commentsTitleHeading');
-                if (commentsTitleHeading) commentsTitleHeading.textContent = 'Ø§Ù„ØªØ¹Ù„ÙŠÙ‚Ø§Øª';
+                if (commentsTitleHeading) commentsTitleHeading.textContent = '╪º┘ä╪¬╪╣┘ä┘è┘é╪º╪¬';
             } else {
                 const navBrowseText = document.getElementById('navBrowseText');
                 if (navBrowseText) navBrowseText.textContent = 'Browse';
@@ -2661,8 +2631,8 @@
 
                 if (loginPwLabel) loginPwLabel.textContent = 'Password';
                 if (signupPwLabel) signupPwLabel.textContent = 'Password';
-                if (loginPwInput) loginPwInput.placeholder = 'â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢';
-                if (signupPwInput) signupPwInput.placeholder = 'â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢';
+                if (loginPwInput) loginPwInput.placeholder = 'ΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇó';
+                if (signupPwInput) signupPwInput.placeholder = 'ΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇó';
                 if (signupEmailLabel) signupEmailLabel.textContent = 'Email Address';
                 if (textTabSignup) textTabSignup.textContent = 'Create Account';
                 if (textBtnSignup) textBtnSignup.textContent = 'Create Account';
@@ -2721,7 +2691,7 @@
                 if (!selectedText) return;
                 const isMobile = window.innerWidth <= 768;
                 if (lang === 'ckb') {
-                    selectedText.textContent = 'Ú©ÙˆØ±Ø¯ÛŒ';
+                    selectedText.textContent = '┌⌐┘ê╪▒╪»█î';
                     if (currentFlagEl) currentFlagEl.innerHTML = FLAG_CKB;
                 } else {
                     selectedText.textContent = isMobile ? 'EN' : 'English';
@@ -2804,13 +2774,16 @@
     </script>
     <script src="welcome-disclaimer.js?v=20260918_977"></script>
 
-    <!-- Interstitial Ad Modal â€” fires on pagination for free users -->
+    <!-- Interstitial Ad Modal ΓÇö fires on pagination for free users -->
     <div id="cwInterstitialAdModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.88); align-items:center; justify-content:center;">
         <div style="background:#161618; border-radius:14px; padding:24px; max-width:420px; width:90%; text-align:center; position:relative; box-shadow:0 8px 40px rgba(0,0,0,0.7);">
             <button id="cwCloseInterstitialBtn" style="position:absolute; top:12px; right:14px; background:none; border:none; color:#aaa; font-size:22px; cursor:pointer; line-height:1;">&#10005;</button>
             <p style="color:#aaa; font-size:0.78rem; letter-spacing:1px; text-transform:uppercase; margin-bottom:10px;">Advertisement</p>
             <!-- Adsterra banner ad inside the popup -->
-            
+            <div id="cwInterstitialAdInner" style="display:flex; align-items:center; justify-content:center; min-height:160px; margin-bottom:16px;">
+                <script>atOptions={'key':'aab2f5b837577d78c557c34438394794','format':'iframe','height':300,'width':160,'params':{}};</script>
+                <script src="https://www.highrevenueformat.com/aab2f5b837577d78c557c34438394794/invoke.js"></script>
+            </div>
             <p style="color:#888; font-size:0.82rem; margin-bottom:14px;">Support CineWatch by viewing this ad</p>
             <button id="cwContinueInterstitialBtn" style="background:#e50914; color:#fff; border:none; border-radius:8px; padding:10px 28px; font-size:0.95rem; font-weight:600; cursor:pointer; width:100%; margin-bottom:10px;">Continue to Next Page &#8594;</button>
             <a href="#" onclick="document.getElementById('cwInterstitialAdModal').style.display='none'; openVipModal(); return false;" style="color:#e50914; font-size:0.82rem; text-decoration:none; display:block;">Go VIP &mdash; Remove All Ads</a>
@@ -2832,5 +2805,3 @@
 </body>
 
 </html>
-
-
