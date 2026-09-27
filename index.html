@@ -1678,151 +1678,157 @@
         <button class="vip-fullpage-close" id="closeVipModalBtn" aria-label="Close">&times;</button>
 
         <!-- STEP 1: Plan Selection (new full-page design) -->
-        <div class="vip-step-plans" id="vipStepPlans">
-          <div class="vip-fp-stage">
-
-            <div class="vip-fp-badge">Î“Â¼Ã³ CineWatch Membership</div>
-            <h1 class="vip-fp-title">Watch more. <span>Pay less.</span></h1>
-            <p class="vip-fp-sub">Compare every plan at a glance Î“Ã‡Ã¶ from free browsing to zero ads, 4K, and priority requests.</p>
-            <p class="vip-fp-disclaimer"><b>Note:</b> A free CineWatch account is required to activate and manage your membership. We don't host video files ourselves, so ads built into third-party servers (VidSrc, SuperVideo) can't be controlled.</p>
-
-            <!-- Billing Toggle -->
-            <div class="vip-fp-toggle-row">
-              <div class="vip-billing-switch" id="vipBillingSwitch" role="radiogroup" aria-label="Billing cycle" data-active="monthly">
-                <button type="button" class="billing-btn active" id="billingBtnMonthly" data-period="monthly" aria-checked="true" role="radio">Month</button>
-                <button type="button" class="billing-btn" id="billingBtnQuarterly" data-period="quarterly" aria-checked="false" role="radio">3 Months</button>
-                <button type="button" class="billing-btn" id="billingBtnYearly" data-period="yearly" aria-checked="false" role="radio">Year</button>
-                <div class="billing-slider-glider" id="billingSliderGlider"></div>
+        
+          <div class="vip-step-plans" id="vipStepPlans">
+            <div class="plan-container">
+              <div style="margin-bottom: 2rem; text-align: center;">
+                <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 0.5rem;">CineWatch VIP</h2>
+                <p style="color: rgba(255,255,255,0.6);">Choose the plan that works for you. No ads, 4K quality, pure cinema.</p>
+                <div class="vip-fp-toggle-row" style="margin-top: 1.5rem; justify-content: center;">
+                  <div class="vip-billing-switch" id="vipBillingSwitch" role="radiogroup" aria-label="Billing cycle" data-active="monthly">
+                    <button type="button" class="billing-btn active" id="billingBtnMonthly" data-period="monthly" aria-checked="true" role="radio">Month</button>
+                    <button type="button" class="billing-btn" id="billingBtnQuarterly" data-period="quarterly" aria-checked="false" role="radio">3 Months</button>
+                    <button type="button" class="billing-btn" id="billingBtnYearly" data-period="yearly" aria-checked="false" role="radio">Year</button>
+                  </div>
+                  <span class="vip-fp-save-note">Save Best Value</span>
+                </div>
               </div>
-              <span class="vip-fp-save-note">Year Î“Ã‡Ã¶ Save Best Value</span>
+
+              <div class="plan-grid">
+                
+                <!-- Basic Plan -->
+                <div class="plan-card palette-slate">
+                  <div class="plan-top">
+                    <div class="plan-blob-a"></div>
+                    <div class="plan-blob-b"></div>
+                    <svg class="plan-grain" xmlns="http://www.w3.org/2000/svg"><filter id="grain-basic"><feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain-basic)"/></svg>
+                    
+                    <div class="plan-content">
+                      <div class="plan-title">Basic</div>
+                      <div class="plan-desc">Free browsing with ads</div>
+                      
+                      <div class="plan-price-row">
+                        <span class="plan-price">$0</span>
+                      </div>
+                      
+                      <button class="plan-cta plan-cta-light" style="opacity:0.5; cursor:not-allowed;">Current Plan</button>
+                    </div>
+                  </div>
+                  
+                  <div class="plan-features">
+                    <ul class="plan-feature-list">
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> 720p / 1080p streaming</li>
+                      <li class="plan-feature-item"><ion-icon name="close-outline"></ion-icon> Ad-free site experience</li>
+                      <li class="plan-feature-item"><ion-icon name="close-outline"></ion-icon> 4K Ultra HD section</li>
+                      <li class="plan-feature-item"><ion-icon name="close-outline"></ion-icon> Download for offline</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Advanced Plan -->
+                <div class="plan-card palette-blue">
+                  <div class="plan-top">
+                    <div class="plan-blob-a"></div>
+                    <div class="plan-blob-b"></div>
+                    <svg class="plan-grain" xmlns="http://www.w3.org/2000/svg"><filter id="grain-advanced"><feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain-advanced)"/></svg>
+                    
+                    <div class="plan-content">
+                      <div class="plan-title">Advanced</div>
+                      <div class="plan-desc">Great for getting started</div>
+                      
+                      <div class="plan-price-row">
+                        <span class="plan-price">$<span id="vipAmountBronze">8</span></span>
+                        <span class="plan-per">/mo</span>
+                      </div>
+                      
+                      <button class="plan-cta plan-cta-light select-plan-btn" id="vipBtnBronze" data-tier="bronze" data-price="8" data-name="Advanced (Monthly)">Upgrade</button>
+                    </div>
+                  </div>
+                  
+                  <div class="plan-features">
+                    <ul class="plan-feature-list">
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> 720p / 1080p streaming</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> Ad-free site experience</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> VIP badge on profile</li>
+                      <li class="plan-feature-item"><ion-icon name="close-outline"></ion-icon> 4K Ultra HD section</li>
+                      <li class="plan-feature-item"><ion-icon name="close-outline"></ion-icon> Download for offline</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="plan-card palette-purple">
+                  <div class="plan-top">
+                    <div class="plan-blob-a"></div>
+                    <div class="plan-blob-b"></div>
+                    <svg class="plan-grain" xmlns="http://www.w3.org/2000/svg"><filter id="grain-pro"><feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain-pro)"/></svg>
+                    
+                    <div class="plan-content">
+                      <div>
+                        <span class="plan-badge">POPULAR</span>
+                      </div>
+                      <div class="plan-title">Pro</div>
+                      <div class="plan-desc">Everything you need</div>
+                      
+                      <div class="plan-price-row">
+                        <span class="plan-price">$<span id="vipAmountGold">15</span></span>
+                        <span class="plan-per">/mo</span>
+                      </div>
+                      
+                      <button class="plan-cta plan-cta-light select-plan-btn" id="vipBtnGold" data-tier="gold" data-price="15" data-name="Pro (Monthly)">Upgrade</button>
+                    </div>
+                  </div>
+                  
+                  <div class="plan-features">
+                    <ul class="plan-feature-list">
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> 720p / 1080p streaming</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> Ad-free site experience</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> VIP badge on profile</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> 4K Ultra HD section</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> Download for offline</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Ultimate Plan -->
+                <div class="plan-card palette-amber">
+                  <div class="plan-top">
+                    <div class="plan-blob-a"></div>
+                    <div class="plan-blob-b"></div>
+                    <svg class="plan-grain" xmlns="http://www.w3.org/2000/svg"><filter id="grain-ultimate"><feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain-ultimate)"/></svg>
+                    
+                    <div class="plan-content">
+                      <div>
+                        <span class="plan-badge" style="background: rgba(0,0,0,0.4);">BEST VALUE</span>
+                      </div>
+                      <div class="plan-title">Ultimate</div>
+                      <div class="plan-desc">The full experience</div>
+                      
+                      <div class="plan-price-row">
+                        <span class="plan-price">$<span id="vipAmountDiamond">20</span></span>
+                        <span class="plan-per">/mo</span>
+                      </div>
+                      
+                      <button class="plan-cta plan-cta-dark select-plan-btn" id="vipBtnDiamond" data-tier="diamond" data-price="20" data-name="Ultimate (Monthly)">Upgrade</button>
+                    </div>
+                  </div>
+                  
+                  <div class="plan-features">
+                    <ul class="plan-feature-list">
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> 720p / 1080p streaming</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> Ad-free site experience</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> VIP badge on profile</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> 4K Ultra HD section</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> Download for offline</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> Request missing titles</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
             </div>
-
-            <!-- Comparison Grid -->
-            <div class="vip-fp-grid">
-
-              <!-- Header row -->
-              <div class="vip-fp-head vip-fp-spacer"></div>
-
-              <div class="vip-fp-head">
-                <div class="vip-fp-card">
-                  <div class="vip-fp-tier-name">Basic</div>
-                  <div class="vip-fp-price"><span class="vip-fp-cur">$</span>0</div>
-                  <div class="vip-fp-billed">forever</div>
-                  <button class="vip-fp-cta vip-fp-cta--dim" data-tier="free">Current</button>
-                </div>
-              </div>
-
-              <div class="vip-fp-head">
-                <div class="vip-fp-card">
-                  <div class="vip-fp-tier-name">Advanced</div>
-                  <div class="vip-fp-price"><span class="vip-fp-cur">$</span><span class="vip-amount" id="vipAmountBronze">8</span><span class="vip-fp-per"> /mo</span></div>
-                  <div class="vip-fp-billed" id="vipPeriodBronze">billed monthly</div>
-                  <button class="vip-fp-cta select-plan-btn" id="vipBtnBronze" data-tier="bronze" data-price="8" data-name="Advanced (Monthly)">Upgrade</button>
-                </div>
-              </div>
-
-              <div class="vip-fp-head">
-                <div class="vip-fp-card vip-fp-card--pop">
-                  <div class="vip-fp-tag vip-fp-tag--pop">POPULAR</div>
-                  <div class="vip-fp-tier-name">Pro</div>
-                  <div class="vip-fp-price"><span class="vip-fp-cur">$</span><span class="vip-amount" id="vipAmountGold">15</span><span class="vip-fp-per"> /mo</span></div>
-                  <div class="vip-fp-billed" id="vipPeriodGold">billed monthly</div>
-                  <button class="vip-fp-cta vip-fp-cta--teal select-plan-btn" id="vipBtnGold" data-tier="gold" data-price="15" data-name="Pro (Monthly)">Upgrade</button>
-                </div>
-              </div>
-
-              <div class="vip-fp-head">
-                <div class="vip-fp-card vip-fp-card--best">
-                  <div class="vip-fp-tag vip-fp-tag--best">BEST VALUE</div>
-                  <div class="vip-fp-tier-name">Ultimate</div>
-                  <div class="vip-fp-price"><span class="vip-fp-cur">$</span><span class="vip-amount" id="vipAmountDiamond">20</span><span class="vip-fp-per"> /mo</span></div>
-                  <div class="vip-fp-billed" id="vipPeriodDiamond">billed monthly</div>
-                  <button class="vip-fp-cta vip-fp-cta--amber select-plan-btn" id="vipBtnDiamond" data-tier="diamond" data-price="20" data-name="Ultimate (Monthly)">Upgrade</button>
-                </div>
-              </div>
-
-              <!-- Feature rows -->
-              <div class="vip-fp-row">
-                <div class="vip-fp-rlabel">720p / 1080p streaming</div>
-                <div class="vip-fp-cell"><span class="vip-fp-yes"><ion-icon name="checkmark"></ion-icon></span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-yes"><ion-icon name="checkmark"></ion-icon></span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-yes"><ion-icon name="checkmark"></ion-icon></span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-yes"><ion-icon name="checkmark"></ion-icon></span></div>
-              </div>
-              <div class="vip-fp-row">
-                <div class="vip-fp-rlabel">Ad-free site experience</div>
-                <div class="vip-fp-cell"><span class="vip-fp-no" style="opacity: 0.3; font-weight: bold;">&mdash;</span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-yes"><ion-icon name="checkmark"></ion-icon></span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-yes"><ion-icon name="checkmark"></ion-icon></span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-yes"><ion-icon name="checkmark"></ion-icon></span></div>
-              </div>
-              <div class="vip-fp-row">
-                <div class="vip-fp-rlabel">VIP badge on profile</div>
-                <div class="vip-fp-cell"><span class="vip-fp-no" style="opacity: 0.3; font-weight: bold;">&mdash;</span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-yes"><ion-icon name="checkmark"></ion-icon></span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-yes"><ion-icon name="checkmark"></ion-icon></span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-yes"><ion-icon name="checkmark"></ion-icon></span></div>
-              </div>
-              <div class="vip-fp-row">
-                <div class="vip-fp-rlabel">4K Ultra HD section</div>
-                <div class="vip-fp-cell"><span class="vip-fp-no" style="opacity: 0.3; font-weight: bold;">&mdash;</span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-no" style="opacity: 0.3; font-weight: bold;">&mdash;</span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-yes"><ion-icon name="checkmark"></ion-icon></span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-yes"><ion-icon name="checkmark"></ion-icon></span></div>
-              </div>
-              <div class="vip-fp-row">
-                <div class="vip-fp-rlabel">Download for offline</div>
-                <div class="vip-fp-cell"><span class="vip-fp-no" style="opacity: 0.3; font-weight: bold;">&mdash;</span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-no" style="opacity: 0.3; font-weight: bold;">&mdash;</span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-yes"><ion-icon name="checkmark"></ion-icon></span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-yes"><ion-icon name="checkmark"></ion-icon></span></div>
-              </div>
-              <div class="vip-fp-row">
-                <div class="vip-fp-rlabel">Request missing titles</div>
-                <div class="vip-fp-cell"><span class="vip-fp-no" style="opacity: 0.3; font-weight: bold;">&mdash;</span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-no" style="opacity: 0.3; font-weight: bold;">&mdash;</span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-no" style="opacity: 0.3; font-weight: bold;">&mdash;</span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-yes"><ion-icon name="checkmark"></ion-icon></span></div>
-              </div>
-              <div class="vip-fp-row">
-                <div class="vip-fp-rlabel">Early access to features</div>
-                <div class="vip-fp-cell"><span class="vip-fp-no" style="opacity: 0.3; font-weight: bold;">&mdash;</span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-no" style="opacity: 0.3; font-weight: bold;">&mdash;</span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-no" style="opacity: 0.3; font-weight: bold;">&mdash;</span></div>
-                <div class="vip-fp-cell"><span class="vip-fp-yes"><ion-icon name="checkmark"></ion-icon></span></div>
-              </div>
-
-            </div><!-- /vip-fp-grid -->
-
-            <!-- FAQ -->
-            <h2 class="vip-fp-faq-title">Got questions?</h2>
-            <div class="vip-fp-faq">
-              <details>
-                <summary>Can I cancel any time?</summary>
-                <p>Yes. Cancel from your account settings whenever you like Î“Ã‡Ã¶ access continues until the end of the billing period already paid for.</p>
-              </details>
-              <details>
-                <summary>Why do I still see some ads?</summary>
-                <p>Membership removes all CineWatch pop-ups and banner ads. Ads built directly into third-party video servers (VidSrc, SuperVideo) are outside our control since we don't host the files ourselves.</p>
-              </details>
-              <details>
-                <summary>Can I change plans later?</summary>
-                <p>Yes Î“Ã‡Ã¶ upgrade or downgrade any time, with billing adjusted immediately for the rest of your cycle.</p>
-              </details>
-              <details>
-                <summary>What payment methods work?</summary>
-                <p>FastPay, FIB Bank direct transfer, ZainCash, USDT/Crypto (TRC-20), Qi Card, and Western Union international bank deposit.</p>
-              </details>
-            </div>
-
-            <footer class="vip-fp-footer">Prices in USD â”¬â•– billing period selected above</footer>
-
-          </div><!-- /vip-fp-stage -->
-        </div><!-- /vipStepPlans -->
-
-
-                <!-- STEP 2: Local Wallet Payment View -->
-                        <div class="vip-step-checkout hidden" id="vipStepCheckout">
+          </div>
+          <div class="vip-step-checkout hidden" id="vipStepCheckout">
                 <div class="checkout-top-bar">
                     <button class="vip-back-btn" id="vipBackToPlansBtn">
                         <ion-icon name="arrow-back-outline"></ion-icon> Back
