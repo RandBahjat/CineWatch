@@ -12060,3 +12060,8 @@ min-width: 0;
 .vip-fp-footer { text-align: center; margin-top: 50px; font-size: 12px; color: #8fa89f; }
 @media (max-width: 800px) { .vip-fp-grid { grid-template-columns: 1fr; } .vip-fp-spacer, .vip-fp-rlabel { display: none; } .vip-fp-row { display: block; } .vip-fp-cell { justify-content: center; } }
 /* ===== END FULL-PAGE VIP STYLES ===== */
+.vip-step-checkout {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 76px 20px 80px;
+}
