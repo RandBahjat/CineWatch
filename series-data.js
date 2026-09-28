@@ -1108,7 +1108,7 @@ window._SERIES_DATA = [
             "episode": 7,
             "title": "The Jordan Boys' Legacy",
             "airDate": "2026-09-27",
-            ""
+            "rating": 
           },
           {
             "episode": 8,
