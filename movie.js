@@ -4535,8 +4535,8 @@ function selectVipTier(tierData) {
             parse_mode: 'Markdown',
             reply_markup: {
               inline_keyboard: [[
-                { text: "✅ Approve", url: `https://cinewatch.net/admin.html?order=${orderId}&action=approved` },
-                { text: "❌ Deny", url: `https://cinewatch.net/admin.html?order=${orderId}&action=denied` }
+                { text: "✅ Approve", url: `/admin.html?order=${orderId}&action=approved` },
+                { text: "❌ Deny", url: `/admin.html?order=${orderId}&action=denied` }
               ]]
             }
           })
@@ -4834,8 +4834,8 @@ function setupVipEventListeners() {
             parse_mode: 'Markdown',
             reply_markup: {
               inline_keyboard: [[
-                { text: "✅ Approve", url: `https://cinewatch.net/admin.html?order=${orderId}&action=approved` },
-                { text: "❌ Deny", url: `https://cinewatch.net/admin.html?order=${orderId}&action=denied` }
+                { text: "✅ Approve", url: `/admin.html?order=${orderId}&action=approved` },
+                { text: "❌ Deny", url: `/admin.html?order=${orderId}&action=denied` }
               ]]
             }
           })
