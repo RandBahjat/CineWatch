@@ -1,0 +1,627 @@
+const fs = require('fs');
+
+const adminHtmlContent = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineWatch Admin Panel</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: #0b0c10; color: #fff; padding: 2rem; max-width: 1000px; margin: 0 auto; }
+    h1 { color: #66fcf1; margin-bottom: 1.5rem; }
+    .card { background: #1f2833; padding: 1.5rem; border-radius: 10px; margin-bottom: 2rem; }
+    label { display: block; margin-bottom: 0.4rem; color: #c5c6c7; font-size: 0.85rem; }
+    input, select, textarea { width: 100%; padding: 0.75rem; margin-bottom: 1rem; background: #0b0c10; border: 1px solid #45a29e; color: #fff; border-radius: 6px; font-size: 0.95rem; }
+    button { background: #45a29e; color: #0b0c10; border: none; padding: 0.7rem 1.4rem; font-weight: bold; border-radius: 6px; cursor: pointer; font-size: 0.95rem; transition: background 0.2s; }
+    button:hover { background: #66fcf1; }
+    .hidden { display: none; }
+    .flex-row { display: flex; gap: 1rem; }
+    .flex-row > div { flex: 1; }
+
+    /* Analytics */
+    .analytics-grid { display: flex; gap: 2rem; flex-wrap: wrap; }
+    .stat-box { flex: 1; min-width: 120px; background: #0b0c10; padding: 1rem 1.5rem; border-radius: 8px; border: 1px solid #45a29e; }
+    .stat-box label { color: #c5c6c7; font-size: 0.8rem; margin-bottom: 0.4rem; }
+    .stat-box h2 { color: #66fcf1; font-size: 2rem; }
+
+    /* Code Generator Area */
+    pre { background: #0b0c10; padding: 1rem; border-radius: 6px; border: 1px solid #45a29e; overflow-x: auto; color: #a5d6a7; font-family: monospace; margin-top: 1rem; }
+    .copy-btn { background: #27ae60; color: white; margin-top: 0.5rem; }
+    .copy-btn:hover { background: #2ecc71; }
+  </style>
+  <link rel="stylesheet" href="movie.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="api.js"></script>
+</head>
+<body>
+
+  <h1>🎬 CineWatch Admin Panel</h1>
+  
+  <div id="authWarning" class="card" style="border: 2px solid #ff6b6b; display: none;">
+    <h3 style="color: #ff6b6b; margin-bottom: 0.5rem;">Access Denied</h3>
+    <p>You must be logged into CineWatch as the administrator to view this page.</p>
+    <br><a href="/" style="color: #66fcf1;">← Go to Home to Login</a>
+  </div>
+
+  <div id="adminContent" class="hidden">
+
+    <!-- Analytics -->
+    <div class="card" style="border: 1px solid #45a29e;">
+      <h3 style="margin-bottom: 1rem;">📊 Site Analytics</h3>
+      <div class="analytics-grid">
+        <div class="stat-box"><label>Today's Views</label><h2 id="analyticsToday">...</h2></div>
+        <div class="stat-box"><label>Yesterday's Views</label><h2 id="analyticsYesterday">...</h2></div>
+        <div class="stat-box"><label>Last 30 Days Views</label><h2 id="analytics30Days">...</h2></div>
+        <div class="stat-box"><label>Total Views (All time)</label><h2 id="analyticsViews">...</h2></div>
+        <div class="stat-box"><label>Registered Users</label><h2 id="analyticsUsers">...</h2></div>
+      </div>
+      <p style="margin-top: 1rem; font-size: 0.85rem; color: #c5c6c7;">
+        * Note: Page views increase every time anyone (including you) refreshes the page.
+      </p>
+    </div>
+
+    <!-- VIP Subscriptions & Payment Orders -->
+    <div class="card" style="border: 1px solid #10b981; background: #111a1e;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 10px;">
+        <div>
+          <h3 style="color: #10b981; margin-bottom: 0.3rem;">💎 VIP Payment Orders & Subscriptions</h3>
+          <p style="color: #94a3b8; font-size: 0.85rem;">Match user transfers with your SuperQi, FastPay, ZainCash, or Crypto notifications.</p>
+        </div>
+        <div style="display: flex; gap: 8px;">
+          <button onclick="renderVipOrders()" style="background: #10b981; color: #fff; font-size: 0.85rem; padding: 0.45rem 0.9rem;">🔄 Refresh</button>
+          <button onclick="clearAllVipOrders()" style="background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); font-size: 0.85rem; padding: 0.45rem 0.9rem;">Clear All</button>
+        </div>
+      </div>
+
+      <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left;">
+          <thead>
+            <tr style="border-bottom: 2px solid rgba(16, 185, 129, 0.4); color: #66fcf1;">
+              <th style="padding: 10px;">Order ID</th>
+              <th style="padding: 10px;">Date & Time</th>
+              <th style="padding: 10px;">Username</th>
+              <th style="padding: 10px;">Plan / Price</th>
+              <th style="padding: 10px;">Method</th>
+              <th style="padding: 10px;">Sender Phone / Ref</th>
+              <th style="padding: 10px;">Device</th>
+              <th style="padding: 10px;">Status</th>
+              <th style="padding: 10px; text-align: right;">Action</th>
+            </tr>
+          </thead>
+          <tbody id="vipOrdersTableBody">
+            <!-- Dynamic rows -->
+          </tbody>
+        </table>
+      </div>
+      <div id="noOrdersMsg" style="display: none; padding: 2rem; text-align: center; color: #64748b; font-size: 0.9rem;">
+        No VIP orders submitted yet. When users click "Confirm Payment", their details will appear here instantly.
+      </div>
+    </div>
+
+    <!-- Twilio SMS Notifications Config -->
+    <div class="card" style="border: 1px solid #38bdf8; background: #0f172a;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 10px;">
+        <div>
+          <h3 style="color: #38bdf8; margin-bottom: 0.3rem;">📱 Twilio SMS Approval / Denial Notifications</h3>
+          <p style="color: #94a3b8; font-size: 0.85rem;">Automatically sends an SMS message to the sender's phone number when you Approve or Deny.</p>
+        </div>
+        <div>
+          <a href="https://www.twilio.com/try-twilio" target="_blank" style="background: rgba(56, 189, 248, 0.2); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); font-size: 0.85rem; padding: 0.45rem 0.9rem; border-radius: 6px; text-decoration: none; display: inline-block;">Get Twilio API Keys ↗</a>
+        </div>
+      </div>
+
+      <div class="flex-row">
+        <div>
+          <label>Twilio Account SID</label>
+          <input type="text" id="twAccountSid" placeholder="e.g. ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+        </div>
+        <div>
+          <label>Twilio Auth Token</label>
+          <input type="password" id="twAuthToken" placeholder="Paste your Auth Token..." />
+        </div>
+      </div>
+
+      <div class="flex-row">
+        <div>
+          <label>Twilio Sender Phone Number</label>
+          <input type="text" id="twFromPhone" placeholder="e.g. +1234567890" />
+        </div>
+        <div>
+          <label>Test Recipient Phone Number</label>
+          <input type="text" id="twTestPhone" placeholder="e.g. +9647701234567" />
+        </div>
+      </div>
+
+      <label>✅ Approval SMS Message Template</label>
+      <textarea id="twMessageTemplate" rows="2" style="resize: vertical;">🎬 CineWatch: Your VIP subscription has been approved! Enjoy unlimited streaming. Thank you for your support!</textarea>
+
+      <label>❌ Denial SMS Message Template</label>
+      <textarea id="twDenyTemplate" rows="2" style="resize: vertical;">🎬 CineWatch: Your VIP payment request could not be verified and was denied. Please contact support or check your reference details.</textarea>
+
+      <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 10px;">
+        <button onclick="saveTwilioSettings()" style="background: #38bdf8; color: #0b0c10;">💾 Save Twilio Settings</button>
+        <button onclick="sendTestTwilioSms()" style="background: rgba(56, 189, 248, 0.2); color: #38bdf8; border: 1px solid #38bdf8;">📤 Send Test SMS</button>
+        <span id="twStatusMsg" style="font-size: 0.85rem; font-weight: 500; color: #10b981;"></span>
+      </div>
+    </div>
+
+    <!-- TMDB Code Generator -->
+    <div class="card">
+      <h3 style="margin-bottom: 0.5rem;">🛠️ TMDB Code Generator</h3>
+      <p style="margin-bottom: 1.5rem; color: #c5c6c7; font-size: 0.9rem;">
+        Generate the exact code block for a movie or series. Copy the result and paste it into your <strong>media-data.js</strong> file!
+      </p>
+
+      <label>TMDB API Read Access Token (v4)</label>
+      <input type="password" id="tmdbToken" placeholder="Paste your long TMDB Bearer Token here..." />
+      
+      <div class="flex-row">
+        <div>
+          <label>TMDB ID</label>
+          <input type="text" id="tmdbId" placeholder="e.g. 533535" />
+        </div>
+        <div>
+          <label>Type</label>
+          <select id="mediaType">
+            <option value="movie">Movie</option>
+            <option value="tv">TV Show / Series</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="flex-row">
+        <button onclick="generateCode()">Generate Code Block</button>
+        <button onclick="syncTrendingLists()" style="background: #e50914;">🔥 Auto-Sync Trending</button>
+      </div>
+      <span id="tmdbMsg" style="margin-left: 1rem;"></span>
+
+      <!-- Output Area -->
+      <div id="outputArea" class="hidden">
+        <pre id="generatedCode"></pre>
+        <button class="copy-btn" onclick="copyCode()">📋 Copy Code to Clipboard</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const API_BASE = "https://cinewatch-maaa.onrender.com/api";
+
+    document.addEventListener("DOMContentLoaded", async () => {
+      document.getElementById("adminContent").classList.remove("hidden");
+      
+      const savedTmdb = localStorage.getItem("tmdb_token");
+      if (savedTmdb) document.getElementById("tmdbToken").value = savedTmdb;
+      
+      fetchAnalytics();
+      loadTwilioSettings();
+      await renderVipOrders();
+
+      // Magic Link Auto-Approve / Auto-Deny from Telegram
+      const urlParams = new URLSearchParams(window.location.search);
+      const autoOrder = urlParams.get('order');
+      const autoAction = urlParams.get('action'); // 'approved' or 'denied'
+      const autoPhone = urlParams.get('phone');
+
+      if (autoOrder && autoAction) {
+        let sbClient = window.CW_API && window.CW_API.supabase;
+        if (sbClient) {
+          const { error } = await sbClient
+            .from('vip_orders')
+            .update({ status: autoAction })
+            .eq('order_id', autoOrder);
+            
+          if (!error) {
+            const isApproved = autoAction === 'approved';
+            const actionLabel = isApproved ? 'APPROVED' : 'DENIED';
+
+            if (autoPhone) {
+              const defaultMsg = isApproved
+                ? (localStorage.getItem('tw_msg_template') || '🎬 CineWatch: Your VIP subscription has been approved! Enjoy unlimited streaming. Thank you for your support!')
+                : (localStorage.getItem('tw_deny_template') || '🎬 CineWatch: Your VIP payment request could not be verified and was denied. Please contact support or check your reference details.');
+
+              sendTwilioSms(autoPhone, defaultMsg).then(smsRes => {
+                if (smsRes.success) {
+                  alert(\`✅ Order \${autoOrder} marked as \${actionLabel}!\\n📱 SMS \${actionLabel.toLowerCase()} notification sent to \${autoPhone}\`);
+                } else {
+                  alert(\`✅ Order \${autoOrder} marked as \${actionLabel}!\\n📱 Note: SMS not sent (\${smsRes.reason})\`);
+                }
+              });
+            } else {
+              alert(\`✅ Order \${autoOrder} successfully marked as \${actionLabel}!\`);
+            }
+            window.history.replaceState({}, document.title, "/admin.html");
+            renderVipOrders();
+          } else {
+            alert(\`❌ Failed to update order: \${error.message}\`);
+          }
+        }
+      }
+    });
+
+    function fetchAnalytics() {
+      fetch(\`\${API_BASE}/stats\`).then(r => r.json()).then(data => {
+        document.getElementById('analyticsToday').textContent = (data.todayViews || 0).toLocaleString();
+        document.getElementById('analyticsYesterday').textContent = (data.yesterdayViews || 0).toLocaleString();
+        document.getElementById('analytics30Days').textContent = (data.last30DaysViews || 0).toLocaleString();
+        document.getElementById('analyticsViews').textContent = (data.totalViews || 0).toLocaleString();
+        document.getElementById('analyticsUsers').textContent = (data.registeredUsers || 0).toLocaleString();
+      }).catch(() => {});
+    }
+
+    // Twilio SMS Integration
+    function loadTwilioSettings() {
+      const sid = localStorage.getItem('tw_account_sid') || '';
+      const token = localStorage.getItem('tw_auth_token') || '';
+      const from = localStorage.getItem('tw_from_phone') || '';
+      const msg = localStorage.getItem('tw_msg_template') || '🎬 CineWatch: Your VIP subscription has been approved! Enjoy unlimited streaming. Thank you for your support!';
+      const denyMsg = localStorage.getItem('tw_deny_template') || '🎬 CineWatch: Your VIP payment request could not be verified and was denied. Please contact support or check your reference details.';
+
+      if (document.getElementById('twAccountSid')) document.getElementById('twAccountSid').value = sid;
+      if (document.getElementById('twAuthToken')) document.getElementById('twAuthToken').value = token;
+      if (document.getElementById('twFromPhone')) document.getElementById('twFromPhone').value = from;
+      if (document.getElementById('twMessageTemplate')) document.getElementById('twMessageTemplate').value = msg;
+      if (document.getElementById('twDenyTemplate')) document.getElementById('twDenyTemplate').value = denyMsg;
+    }
+
+    function saveTwilioSettings() {
+      const sid = document.getElementById('twAccountSid').value.trim();
+      const token = document.getElementById('twAuthToken').value.trim();
+      const from = document.getElementById('twFromPhone').value.trim();
+      const msg = document.getElementById('twMessageTemplate').value.trim();
+      const denyMsg = document.getElementById('twDenyTemplate').value.trim();
+
+      localStorage.setItem('tw_account_sid', sid);
+      localStorage.setItem('tw_auth_token', token);
+      localStorage.setItem('tw_from_phone', from);
+      localStorage.setItem('tw_msg_template', msg);
+      localStorage.setItem('tw_deny_template', denyMsg);
+
+      const statusEl = document.getElementById('twStatusMsg');
+      if (statusEl) {
+        statusEl.textContent = '✅ Twilio settings saved!';
+        statusEl.style.color = '#10b981';
+        setTimeout(() => statusEl.textContent = '', 3000);
+      }
+    }
+
+    async function sendTwilioSms(toPhone, customMsg) {
+      const sid = localStorage.getItem('tw_account_sid');
+      const token = localStorage.getItem('tw_auth_token');
+      const from = localStorage.getItem('tw_from_phone');
+      const msg = customMsg || localStorage.getItem('tw_msg_template') || '🎬 CineWatch: Your VIP subscription has been approved!';
+
+      if (!sid || !token || !from) {
+        console.warn("Twilio credentials not configured in admin panel.");
+        return { success: false, reason: "Twilio credentials not configured in Admin panel." };
+      }
+
+      if (!toPhone) {
+        return { success: false, reason: "No phone number provided." };
+      }
+
+      try {
+        const endpoint = \`https://api.twilio.com/2010-04-01/Accounts/\${encodeURIComponent(sid)}/Messages.json\`;
+        const formData = new URLSearchParams();
+        formData.append('To', toPhone);
+        formData.append('From', from);
+        formData.append('Body', msg);
+
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: {
+            'Authorization': 'Basic ' + btoa(\`\${sid}:\${token}\`),
+            'Content-Type': 'application/x-www-form-urlencoded'
+          },
+          body: formData
+        });
+
+        const data = await res.json();
+        if (res.ok) {
+          console.log("Twilio SMS sent:", data);
+          return { success: true, data };
+        } else {
+          console.error("Twilio API error:", data);
+          return { success: false, reason: data.message || "Twilio error" };
+        }
+      } catch (err) {
+        console.error("Twilio network error:", err);
+        return { success: false, reason: err.message };
+      }
+    }
+
+    async function sendTestTwilioSms() {
+      const testPhone = document.getElementById('twTestPhone').value.trim();
+      const statusEl = document.getElementById('twStatusMsg');
+      if (!testPhone) {
+        alert("Please enter a test recipient phone number (e.g. +9647701234567)");
+        return;
+      }
+      saveTwilioSettings();
+      if (statusEl) {
+        statusEl.textContent = '⏳ Sending SMS via Twilio...';
+        statusEl.style.color = '#38bdf8';
+      }
+      const res = await sendTwilioSms(testPhone, "🎬 CineWatch: This is a test notification from CineWatch Admin! Your setup works!");
+      if (res.success) {
+        alert("🎉 Success! Test SMS sent to " + testPhone);
+        if (statusEl) statusEl.textContent = '✅ Test SMS delivered!';
+      } else {
+        alert("❌ Failed to send SMS: " + res.reason);
+        if (statusEl) {
+          statusEl.textContent = '❌ Failed: ' + res.reason;
+          statusEl.style.color = '#ef4444';
+        }
+      }
+    }
+
+    async function generateCode() {
+      const token = document.getElementById("tmdbToken").value.trim();
+      const id = document.getElementById("tmdbId").value.trim();
+      const type = document.getElementById("mediaType").value;
+      const msg = document.getElementById("tmdbMsg");
+
+      if (!token) { msg.style.color = "#ff6b6b"; msg.textContent = "Please enter your TMDB Token."; return; }
+      if (!id) { msg.style.color = "#ff6b6b"; msg.textContent = "Please enter a TMDB ID."; return; }
+
+      localStorage.setItem("tmdb_token", token);
+      msg.style.color = "#66fcf1"; msg.textContent = "Fetching from TMDB...";
+
+      try {
+        const res = await fetch(\`https://api.themoviedb.org/3/\${type}/\${id}?append_to_response=credits\`, {
+          headers: { Authorization: \`Bearer \${token}\`, Accept: 'application/json' }
+        });
+        if (!res.ok) throw new Error(\`TMDB returned \${res.status}: \${res.statusText}\`);
+
+        const data = await res.json();
+        const credData = data.credits || { cast: [] };
+
+        const payload = {
+          title: data.title || data.name,
+          category: type === 'movie' ? 'Movies' : 'Series',
+          genre: data.genres ? data.genres.map(g => g.name).join(", ") : "Unknown",
+          rating: data.vote_average ? data.vote_average.toFixed(1) : "N/A",
+          image: data.poster_path ? \`https://image.tmdb.org/t/p/w500\${data.poster_path}\` : "",
+          banner: data.backdrop_path ? \`https://image.tmdb.org/t/p/original\${data.backdrop_path}\` : "",
+          duration: type === 'movie' ? \`\${data.runtime || 0} min\` : \`\${data.number_of_seasons || 1} Season\`,
+          releaseDate: data.release_date || data.first_air_date || "Unknown",
+          videoUrl: id,
+          overview: data.overview || "",
+          director: "Unknown",
+          cast: credData.cast.slice(0, 3).map(c => c.name),
+          trending: false,
+          featured: false,
+          is4k: false,
+          seasons: type === 'tv' && data.number_of_seasons ? [{ season: 1, episodes: [{ episode: 1, title: "Ep 1" }] }] : []
+        };
+
+        const jsonStr = JSON.stringify(payload, null, 2);
+        const jsObjectStr = jsonStr.replace(/^\\s*"([a-zA-Z0-9_]+)":/gm, (match, key) => match.replace(\`"\${key}":\`, \`\${key}:\`));
+        
+        document.getElementById("generatedCode").textContent = "  " + jsObjectStr.replace(/\\n/g, '\\n  ') + ",";
+        document.getElementById("outputArea").classList.remove("hidden");
+        msg.textContent = "";
+
+      } catch (err) {
+        msg.style.color = "#ff6b6b"; 
+        msg.textContent = err.message;
+      }
+    }
+
+    async function syncTrendingLists() {
+      const tmdbToken = document.getElementById("tmdbToken").value.trim();
+      const msg = document.getElementById("tmdbMsg");
+      
+      if (!tmdbToken) { 
+        msg.style.color = "#ff6b6b"; 
+        msg.textContent = "TMDB Token is required to sync trending lists."; 
+        return; 
+      }
+      
+      localStorage.setItem("tmdb_token", tmdbToken);
+      msg.style.color = "#66fcf1"; 
+      msg.textContent = "⏳ Fetching trending data from TMDB and syncing...";
+      
+      try {
+        const { data: allMedia, error: mediaErr } = await window.CW_API.supabase.from('media').select('title, "videoUrl"');
+        if (mediaErr) throw mediaErr;
+        
+        const mediaIdToTitle = {};
+        allMedia.forEach(m => {
+          if (m.videoUrl) mediaIdToTitle[m.videoUrl.toString()] = m.title;
+        });
+
+        const headers = { Authorization: \`Bearer \${tmdbToken}\`, Accept: 'application/json' };
+        const [movRes, tvRes] = await Promise.all([
+          fetch('https://api.themoviedb.org/3/trending/movie/day', { headers }),
+          fetch('https://api.themoviedb.org/3/trending/tv/day', { headers })
+        ]);
+
+        const [movieData, seriesData] = await Promise.all([movRes.json(), tvRes.json()]);
+
+        const trendingMovies = [];
+        movieData.results.forEach(m => {
+          const idStr = m.id.toString();
+          if (mediaIdToTitle[idStr]) trendingMovies.push(mediaIdToTitle[idStr]);
+        });
+
+        const trendingSeries = [];
+        seriesData.results.forEach(s => {
+          const idStr = s.id.toString();
+          if (mediaIdToTitle[idStr]) trendingSeries.push(mediaIdToTitle[idStr]);
+        });
+
+        const { error: syncErr } = await window.CW_API.supabase.from('trending_data').upsert({
+          config_id: 'main',
+          trending_movies: trendingMovies,
+          trending_series: trendingSeries,
+          featured_titles: trendingMovies.slice(0, 8)
+        }, { onConflict: 'config_id' });
+
+        if (syncErr) throw syncErr;
+
+        msg.style.color = "#27ae60"; 
+        msg.textContent = \`✅ Synced! Found \${trendingMovies.length} movies and \${trendingSeries.length} series in our database.\`;
+      } catch (err) {
+        msg.style.color = "#ff6b6b"; 
+        msg.textContent = err.message;
+      }
+    }
+
+    function copyCode() {
+      const code = document.getElementById("generatedCode").textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.querySelector(".copy-btn");
+        btn.textContent = "✅ Copied to clipboard!";
+        btn.style.background = "#27ae60";
+        setTimeout(() => {
+          btn.textContent = "📋 Copy Code to Clipboard";
+        }, 2000);
+      });
+    }
+  
+    // VIP Orders Management via Supabase
+    async function renderVipOrders() {
+      const tbody = document.getElementById("vipOrdersTableBody");
+      const noMsg = document.getElementById("noOrdersMsg");
+      if (!tbody) return;
+
+      tbody.innerHTML = "<tr><td colspan='9' style='text-align:center; padding:2rem;'>Loading orders from Supabase...</td></tr>";
+
+      try {
+        let sbClient = window.CW_API && window.CW_API.supabase;
+        if (!sbClient) throw new Error("Supabase not connected");
+
+        const { data: orders, error } = await sbClient
+          .from('vip_orders')
+          .select('*')
+          .order('created_at', { ascending: false });
+
+        if (error) throw error;
+
+        tbody.innerHTML = "";
+
+        if (!orders || orders.length === 0) {
+          noMsg.style.display = "block";
+          return;
+        }
+        noMsg.style.display = "none";
+
+        orders.forEach((o) => {
+          const tr = document.createElement("tr");
+          tr.style.borderBottom = "1px solid rgba(255, 255, 255, 0.08)";
+          
+          const isPending = o.status === "pending";
+          const statusBadge = isPending 
+            ? '<span style="background: rgba(245, 158, 11, 0.2); color: #f59e0b; padding: 3px 8px; border-radius: 4px; font-weight: 600; font-size: 11px;">Pending</span>'
+            : (o.status === 'denied' 
+                ? '<span style="background: rgba(239, 68, 68, 0.2); color: #ef4444; padding: 3px 8px; border-radius: 4px; font-weight: 600; font-size: 11px;">Denied</span>'
+                : '<span style="background: rgba(16, 185, 129, 0.2); color: #10b981; padding: 3px 8px; border-radius: 4px; font-weight: 600; font-size: 11px;">Approved</span>');
+
+          const dateObj = new Date(o.created_at);
+          const timeStr = dateObj.toLocaleDateString() + ' ' + dateObj.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+          const phoneTarget = o.reference || '';
+
+          tr.innerHTML = \`
+            <td style="padding: 10px; font-family: monospace; color: #a5d6a7;">\${o.order_id}</td>
+            <td style="padding: 10px; color: #94a3b8; font-size: 12px;">\${timeStr}</td>
+            <td style="padding: 10px; font-weight: 600; color: #fff;">\${o.username || 'Guest'}</td>
+            <td style="padding: 10px; color: #cbd5e1;">\${o.plan || ''} <strong style="color: #66fcf1;">(\${o.price || ''})</strong></td>
+            <td style="padding: 10px; color: #cbd5e1;">\${o.wallet || ''}</td>
+            <td style="padding: 10px; font-family: monospace; font-size: 13px; font-weight: bold; color: #38bdf8; letter-spacing: 0.5px;">\${o.reference || ''}</td>
+            <td style="padding: 10px; color: #94a3b8; font-size: 12px;">Web</td>
+            <td style="padding: 10px;">\${statusBadge}</td>
+            <td style="padding: 10px; text-align: right; white-space: nowrap;">
+              \${isPending ? \`<button onclick="toggleVipOrderStatus('\${o.id}', 'approved', '\${phoneTarget}')" style="background: #10b981; color: white; padding: 4px 10px; font-size: 11px; margin-right: 5px; border-radius: 4px;">Approve</button>\` : ''}
+              \${isPending ? \`<button onclick="toggleVipOrderStatus('\${o.id}', 'denied', '\${phoneTarget}')" style="background: #f59e0b; color: white; padding: 4px 10px; font-size: 11px; margin-right: 5px; border-radius: 4px;">Deny</button>\` : ''}
+              <button onclick="deleteVipOrder('\${o.id}')" style="background: transparent; color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); padding: 4px 8px; font-size: 11px; border-radius: 4px;">Delete</button>
+            </td>
+          \`;
+          tbody.appendChild(tr);
+        });
+      } catch(e) {
+        tbody.innerHTML = \`<tr><td colspan='9' style='color:#ef4444; padding:1rem;'>Failed to load orders: \${e.message}</td></tr>\`;
+      }
+    }
+
+    async function toggleVipOrderStatus(uuid, newStatus, phoneTarget) {
+      if (!confirm(\`Are you sure you want to mark this order as \${newStatus.toUpperCase()}?\`)) return;
+      try {
+        let sbClient = window.CW_API && window.CW_API.supabase;
+        if (!sbClient) throw new Error("Supabase not connected");
+
+        const { error } = await sbClient
+          .from('vip_orders')
+          .update({ status: newStatus })
+          .eq('id', uuid);
+
+        if (error) throw error;
+
+        // Auto send SMS notification if phone is available
+        if (phoneTarget && phoneTarget.replace(/[^0-9]/g, '').length >= 6) {
+          const isApproved = newStatus === 'approved';
+          const msg = isApproved
+            ? (localStorage.getItem('tw_msg_template') || '🎬 CineWatch: Your VIP subscription has been approved! Enjoy unlimited streaming. Thank you for your support!')
+            : (localStorage.getItem('tw_deny_template') || '🎬 CineWatch: Your VIP payment request could not be verified and was denied. Please contact support or check your reference details.');
+
+          sendTwilioSms(phoneTarget, msg).then(res => {
+            if (res.success) {
+              alert(\`Order \${newStatus.toUpperCase()}! SMS sent to \${phoneTarget}.\`);
+            }
+          });
+        }
+
+        renderVipOrders();
+      } catch(e) {
+        alert("Failed to update status: " + e.message);
+      }
+    }
+
+    async function deleteVipOrder(uuid) {
+      if (!confirm("Are you sure you want to completely delete this order record?")) return;
+      try {
+        let sbClient = window.CW_API && window.CW_API.supabase;
+        if (!sbClient) throw new Error("Supabase not connected");
+
+        const { error } = await sbClient
+          .from('vip_orders')
+          .delete()
+          .eq('id', uuid);
+
+        if (error) throw error;
+        renderVipOrders();
+      } catch(e) {
+        alert("Failed to delete order: " + e.message);
+      }
+    }
+
+    async function clearAllVipOrders() {
+      if (!confirm("Clear all order history from Supabase? This cannot be undone!")) return;
+      try {
+        let sbClient = window.CW_API && window.CW_API.supabase;
+        if (!sbClient) throw new Error("Supabase not connected");
+
+        const { error } = await sbClient
+          .from('vip_orders')
+          .delete()
+          .neq('status', 'x_dummy_status_x');
+
+        if (error) throw error;
+        renderVipOrders();
+      } catch(e) {
+        alert("Failed to clear orders: " + e.message);
+      }
+    }
+
+  </script>
+</body>
+</html>
+`;
+
+fs.writeFileSync('admin.html', adminHtmlContent, 'utf8');
+if (fs.existsSync('cinewatch-app/admin.html')) {
+  fs.writeFileSync('cinewatch-app/admin.html', adminHtmlContent, 'utf8');
+}
+console.log('Saved admin.html and cinewatch-app/admin.html cleanly.');
