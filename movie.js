@@ -4417,22 +4417,23 @@ function selectVipTier(tierData) {
   if (submitBtn) {
     submitBtn.onclick = () => {
       const refInput = document.getElementById("vipRefInput");
-      const smsInput = document.getElementById("vipSmsPhoneInput");
-      const smsPrefixEl = document.getElementById("vipSmsPrefix");
-      const smsPrefix = smsPrefixEl ? (smsPrefixEl.value || "+964") : "+964";
-      const rawSmsVal = smsInput ? smsInput.value.trim() : "";
-      let fullSmsPhone = "";
-      if (rawSmsVal) {
-        let cleaned = rawSmsVal.replace(/[^\d+]/g, "");
-        if (cleaned.startsWith("+")) {
-          fullSmsPhone = cleaned;
-        } else {
-          if (cleaned.startsWith("0")) cleaned = cleaned.substring(1);
-          fullSmsPhone = smsPrefix + cleaned;
-        }
-      }
-      const smsVal = fullSmsPhone;
+      const refPrefixEl = document.getElementById("vipRefPrefix");
+      const refPrefix = refPrefixEl ? (refPrefixEl.value || "+964") : "+964";
       const refVal = refInput ? refInput.value.trim() : "";
+
+      // Determine full international phone from sender phone/ref
+      let senderPhone = "";
+      let cleanedPhone = refVal.replace(/[^\d+]/g, "");
+      if (cleanedPhone.length >= 5) {
+        if (cleanedPhone.startsWith("+")) {
+          senderPhone = cleanedPhone;
+        } else {
+          if (cleanedPhone.startsWith("0")) cleanedPhone = cleanedPhone.substring(1);
+          senderPhone = refPrefix + cleanedPhone;
+        }
+      } else {
+        senderPhone = refVal;
+      }
 
       if (!refVal) {
         if (typeof showToast === 'function') {
@@ -4538,22 +4539,22 @@ function selectVipTier(tierData) {
           `👤 User: ${orderData.username} (${orderData.userEmail})\n` +
           `📦 Plan: ${orderData.plan} — ${orderData.price}\n` +
           `💳 Payment: ${orderData.wallet}\n` +
-          `📞 Reference: ${orderData.reference}\n` +
-          `📱 SMS: ${smsVal}\n` +
+          `📞 Sender Phone / Ref: ${refVal}\n` +
+          (senderPhone && senderPhone !== refVal ? `📱 International Phone: ${senderPhone}\n` : '') +
           `📱 Device: ${orderData.device}\n` +
-          `🕒 Time: ${orderData.createdAt}\n\n` + 
-          `*Approve via Supabase Dashboard -> vip_orders table*`;
+          `🕒 Time: ${orderData.createdAt}\n\n` +
+          `*Click below to Approve or Deny (automatic SMS notify will be sent):*`;
         fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ 
-            chat_id: TELEGRAM_CHAT_ID, 
-            text: msg, 
+          body: JSON.stringify({
+            chat_id: TELEGRAM_CHAT_ID,
+            text: msg,
             parse_mode: 'Markdown',
             reply_markup: {
               inline_keyboard: [[
-                { text: "✅ Approve", url: `${window.location.origin}/admin.html?order=${orderId}&action=approved&phone=${encodeURIComponent(typeof cryptoSmsVal !== 'undefined' ? cryptoSmsVal : smsVal)}` },
-                { text: "❌ Deny", url: `${window.location.origin}/admin.html?order=${orderId}&action=denied` }
+                { text: "✅ Approve", url: `${window.location.origin}/admin.html?order=${orderId}&action=approved&phone=${encodeURIComponent(cryptoSmsVal || txIdVal)}` },
+                { text: "❌ Deny", url: `${window.location.origin}/admin.html?order=${orderId}&action=denied&phone=${encodeURIComponent(cryptoSmsVal || txIdVal)}` }
               ]]
             }
           })
