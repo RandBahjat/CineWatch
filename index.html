@@ -15,9 +15,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260920_766">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_2743">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_1001">
+    <link rel="stylesheet" href="movie.css?v=20260920_767">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_2744">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_1002">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -135,10 +135,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_8167" defer></script>
-    <script src="series-data.js?v=20260818_8167" defer></script>
-    <script src="anime-data.js?v=20260818_8167" defer></script>
-    <script src="movie.js?v=20260920_765" defer></script>
+    <script src="movies-data.js?v=20260818_8168" defer></script>
+    <script src="series-data.js?v=20260818_8168" defer></script>
+    <script src="anime-data.js?v=20260818_8168" defer></script>
+    <script src="movie.js?v=20260920_766" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -2424,43 +2424,43 @@
             const navAiBtnTextMobile = document.getElementById('navAiBtnTextMobile');
 
             const genreMapKurdish = {
-                'all': 'Ã¢â€ËœÃƒÂ§Ã¢â€“Ë†ÃƒÂ²Ã¢â€ËœÃƒÂ Ã¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂª Ã¢â€¢ÂªÃ‚Â¼Ã¢â€“Ë†ÃƒÂ¥Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’ÂÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥',
-                'Action': 'Ã¢â€¢ÂªÃ‚ÂªÃ¢â€¢ÂªÃ‚ÂºÃ¢â€Å’Ã¢Å’ÂÃ¢â€¢ÂªÃ¢â€Â¤Ã¢â€ËœÃƒÂ¥',
-                'Adventure': 'Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€Å’Ã¢Å’ÂÃ¢â€“Ë†Ãƒâ€žÃ¢â€¢ÂªÃ¢â€Â¤Ã¢â€“Ë†ÃƒÂ®',
-                'Animation': 'Ã¢â€¢ÂªÃ‚ÂªÃ¢â€“Ë†ÃƒÂ²Ã¢â€ËœÃƒÂ¥Ã¢â€“Ë†ÃƒÂ®Ã¢â€ËœÃƒÂ Ã¢â€“Ë†ÃƒÂ²Ã¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ¢â€Â¤Ã¢â€ËœÃƒÂ¥',
-                'Comedy': 'Ã¢â€Å’Ã¢Å’ÂÃ¢â€“Ë†ÃƒÂ¥Ã¢â€ËœÃƒÂ Ã¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ‚Â»Ã¢â€“Ë†ÃƒÂ®',
-                'Crime': 'Ã¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥Ã¢â€Å’Ã¢Å’ÂÃ¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ®',
-                'Drama': 'Ã¢â€¢ÂªÃ‚Â»Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚Âº',
-                'Family': 'Ã¢â€¢ÂªÃ‚Â«Ã¢â€“Ë†Ãƒâ€žÃ¢â€¢ÂªÃ¢â€“â€œÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥Ã¢â€“Ë†ÃƒÂ®',
-                'Kids': 'Ã¢â€ËœÃƒÂ Ã¢â€ËœÃƒÂ¥Ã¢â€¢ÂªÃ‚Â»Ã¢â€¢ÂªÃ‚ÂºÃ¢â€Å’Ã¢â€¢Â¡Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥',
-                'History': 'Ã¢â€ËœÃƒÂ Ã¢â€“Ë†Ãƒâ€žÃ¢â€Å’ÃƒÂ¿Ã¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂªÃ¢â€“Ë†ÃƒÂ®Ã¢â€“Ë†ÃƒÂ®',
-                'Fantasy': 'Ã¢â€ËœÃƒÂ¼Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥Ã¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€“â€œÃ¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ‚Âº',
-                'Horror': 'Ã¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€ËœÃƒÂ¥Ã¢â€¢ÂªÃ‚ÂºÃ¢â€Å’Ã¢Å’Â',
-                'Mystery': 'Ã¢â€ËœÃƒÂ¥Ã¢â€ËœÃƒÂ§Ã¢â€“Ë†Ãƒâ€žÃ¢â€ËœÃƒÂ¥Ã¢â€“Ë†ÃƒÂ®',
-                'Romance': 'Ã¢â€Å’ÃƒÂ²Ã¢â€“Ë†ÃƒÂ¥Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€“Ë†ÃƒÂ®',
-                'Sci-Fi': 'Ã¢â€¢ÂªÃ‚Â«Ã¢â€“Ë†ÃƒÂ²Ã¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ‚ÂºÃ¢â€Å’Ã¢â€¢Â¡Ã¢â€“Ë†ÃƒÂ® Ã¢â€¢ÂªÃ¢â€“â€œÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€¢ÂªÃ‚Â¬Ã¢â€“Ë†ÃƒÂ®',
-                'Thriller': 'Ã¢â€ËœÃƒÂ§Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ‚Â¿Ã¢â€¢ÂªÃ¢â€“â€œÃ¢â€ËœÃƒÂªÃ¢â€“Ë†Ãƒâ€žÃ¢â€ËœÃƒÂ¥',
-                'War': 'Ã¢â€¢ÂªÃ‚Â¼Ã¢â€“Ë†ÃƒÂ²Ã¢â€ËœÃƒÂ¥Ã¢â€Å’Ã‚Â»'
+                'all': 'Γöÿ├ºΓûê├▓Γöÿ├áΓöÿ├¬Γöÿ├¬ Γò¬┬╝Γûê├ÑΓò¬ΓûÆΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ',
+                'Action': 'Γò¬┬¬Γò¬┬║ΓöîΓîÉΓò¬ΓöñΓöÿ├Ñ',
+                'Adventure': 'Γò¬ΓöéΓûê├▓Γò¬ΓûÆΓöîΓîÉΓûê├äΓò¬ΓöñΓûê├«',
+                'Animation': 'Γò¬┬¬Γûê├▓Γöÿ├ÑΓûê├«Γöÿ├áΓûê├▓Γûê├«Γò¬ΓöñΓöÿ├Ñ',
+                'Comedy': 'ΓöîΓîÉΓûê├ÑΓöÿ├áΓûê├«Γò¬┬╗Γûê├«',
+                'Crime': 'Γò¬┬¼Γò¬┬║Γöÿ├¬Γò¬┬║Γöÿ├ÑΓöîΓîÉΓò¬┬║Γò¬ΓûÆΓûê├«',
+                'Drama': 'Γò¬┬╗Γò¬ΓûÆΓò¬┬║Γöÿ├áΓò¬┬║',
+                'Family': 'Γò¬┬½Γûê├äΓò¬ΓûôΓò¬┬║Γöÿ├ÑΓûê├«',
+                'Kids': 'Γöÿ├áΓöÿ├ÑΓò¬┬╗Γò¬┬║ΓöîΓòíΓò¬┬║Γöÿ├Ñ',
+                'History': 'Γöÿ├áΓûê├äΓöî├┐Γöÿ├¬Γöÿ├¬Γûê├«Γûê├«',
+                'Fantasy': 'Γöÿ├╝Γò¬┬║Γöÿ├ÑΓò¬┬¼Γò¬┬║Γò¬ΓûôΓûê├«Γò¬┬║',
+                'Horror': 'Γò¬┬¼Γò¬ΓûÆΓò¬ΓöéΓöÿ├ÑΓò¬┬║ΓöîΓîÉ',
+                'Mystery': 'Γöÿ├ÑΓöÿ├ºΓûê├äΓöÿ├ÑΓûê├«',
+                'Romance': 'Γöî├▓Γûê├ÑΓöÿ├áΓò¬┬║Γöÿ├ÑΓò¬ΓöéΓûê├«',
+                'Sci-Fi': 'Γò¬┬½Γûê├▓Γûê├«Γò¬┬║ΓöîΓòíΓûê├« Γò¬ΓûôΓò¬┬║Γöÿ├ÑΓò¬ΓöéΓò¬┬¼Γûê├«',
+                'Thriller': 'Γöÿ├ºΓûê├▓Γò¬ΓöéΓò¬┬¼Γò¬┬┐Γò¬ΓûôΓöÿ├¬Γûê├äΓöÿ├Ñ',
+                'War': 'Γò¬┬╝Γûê├▓Γöÿ├ÑΓöî┬╗'
             };
 
             const genreMapArabic = {
-                'all': 'Ã¢â€¢ÂªÃ‚Â¼Ã¢â€ËœÃƒÂ Ã¢â€ËœÃƒÂ¨Ã¢â€¢ÂªÃ¢â€¢Â£ Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃƒÂºÃ¢â€ËœÃƒÂ¥Ã¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€¢Â£',
-                'Action': 'Ã¢â€¢ÂªÃƒÂºÃ¢â€ËœÃƒÂ¢Ã¢â€¢ÂªÃ¢â€Â¤Ã¢â€ËœÃƒÂ¥',
-                'Adventure': 'Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ¢â€¢â€˜Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ¢Å’Â',
-                'Animation': 'Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂ  Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ‚Â¡Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€ËœÃƒÂ¢Ã¢â€¢ÂªÃ¢Å’Â',
-                'Comedy': 'Ã¢â€ËœÃƒÂ¢Ã¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂ Ã¢â€ËœÃƒÂ¨Ã¢â€¢ÂªÃ‚Â»Ã¢â€ËœÃƒÂ¨Ã¢â€¢ÂªÃ‚Âº',
-                'Crime': 'Ã¢â€¢ÂªÃ‚Â¼Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€ËœÃƒÂ¨Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ¢Å’Â',
-                'Drama': 'Ã¢â€¢ÂªÃ‚Â»Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚Âº',
-                'Family': 'Ã¢â€¢ÂªÃ¢â€¢Â£Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚ÂªÃ¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ¨',
-                'Kids': 'Ã¢â€¢ÂªÃƒÂºÃ¢â€¢ÂªÃ¢â€¢â€“Ã¢â€ËœÃƒÂ¼Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤',
-                'History': 'Ã¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€“â€™Ã¢â€ËœÃƒÂ¨Ã¢â€¢ÂªÃ‚Â«Ã¢â€ËœÃƒÂ¨',
-                'Fantasy': 'Ã¢â€¢ÂªÃ‚Â«Ã¢â€ËœÃƒÂ¨Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ¨',
-                'Horror': 'Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ¢â€¢Â£Ã¢â€¢ÂªÃ‚Â¿',
-                'Mystery': 'Ã¢â€¢ÂªÃ¢â€¢â€˜Ã¢â€ËœÃƒÂ Ã¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ¢â€¢Â¢',
-                'Romance': 'Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€ËœÃƒÂ¨',
-                'Sci-Fi': 'Ã¢â€¢ÂªÃ‚Â«Ã¢â€ËœÃƒÂ¨Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤ Ã¢â€¢ÂªÃ¢â€¢Â£Ã¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ Ã¢â€ËœÃƒÂ¨',
-                'Thriller': 'Ã¢â€¢ÂªÃƒâ€˜Ã¢â€¢ÂªÃ‚Â½Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ¢Å’Â',
-                'War': 'Ã¢â€¢ÂªÃ‚Â¡Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚Â¿'
+                'all': 'Γò¬┬╝Γöÿ├áΓöÿ├¿Γò¬Γòú Γò¬┬║Γöÿ├ñΓò¬├║Γöÿ├ÑΓöÿ├¬Γò¬┬║Γò¬Γòú',
+                'Action': 'Γò¬├║Γöÿ├óΓò¬ΓöñΓöÿ├Ñ',
+                'Adventure': 'Γöÿ├áΓò¬ΓòæΓò¬┬║Γöÿ├áΓò¬ΓûÆΓò¬ΓîÉ',
+                'Animation': 'Γò¬ΓûÆΓò¬ΓöéΓöÿ├¬Γöÿ├á Γöÿ├áΓò¬┬¼Γò¬┬íΓò¬ΓûÆΓöÿ├óΓò¬ΓîÉ',
+                'Comedy': 'Γöÿ├óΓöÿ├¬Γöÿ├áΓöÿ├¿Γò¬┬╗Γöÿ├¿Γò¬┬║',
+                'Crime': 'Γò¬┬╝Γò¬ΓûÆΓöÿ├¿Γöÿ├áΓò¬ΓîÉ',
+                'Drama': 'Γò¬┬╗Γò¬ΓûÆΓò¬┬║Γöÿ├áΓò¬┬║',
+                'Family': 'Γò¬ΓòúΓò¬┬║Γò¬┬¬Γöÿ├ñΓöÿ├¿',
+                'Kids': 'Γò¬├║Γò¬ΓòûΓöÿ├╝Γò¬┬║Γöÿ├ñ',
+                'History': 'Γò¬┬¼Γò¬┬║Γò¬ΓûÆΓöÿ├¿Γò¬┬½Γöÿ├¿',
+                'Fantasy': 'Γò¬┬½Γöÿ├¿Γò¬┬║Γöÿ├ñΓöÿ├¿',
+                'Horror': 'Γò¬ΓûÆΓò¬ΓòúΓò¬┬┐',
+                'Mystery': 'Γò¬ΓòæΓöÿ├áΓöÿ├¬Γò¬Γòó',
+                'Romance': 'Γò¬ΓûÆΓöÿ├¬Γöÿ├áΓò¬┬║Γöÿ├ÑΓò¬ΓöéΓöÿ├¿',
+                'Sci-Fi': 'Γò¬┬½Γöÿ├¿Γò¬┬║Γöÿ├ñ Γò¬ΓòúΓöÿ├ñΓöÿ├áΓöÿ├¿',
+                'Thriller': 'Γò¬├æΓò¬┬╜Γò¬┬║Γò¬ΓûÆΓò¬ΓîÉ',
+                'War': 'Γò¬┬íΓò¬ΓûÆΓò¬┬┐'
             };
 
             const genreMapEnglish = {
@@ -2485,148 +2485,148 @@
 
             if (currentLang === 'ckb') {
                 const navBrowseText = document.getElementById('navBrowseText');
-                if (navBrowseText) navBrowseText.textContent = 'Ã¢â€Å’Ã‚Â»Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’ÃƒÂ²Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥';
+                if (navBrowseText) navBrowseText.textContent = 'Γöî┬╗Γûê├▓Γöî├▓Γò¬┬║Γöÿ├Ñ';
                 const browseHeaderTitle = document.getElementById('browseHeaderTitle');
-                if (browseHeaderTitle) browseHeaderTitle.textContent = 'Ã¢â€Å’Ã‚Â»Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’ÃƒÂ²Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥';
+                if (browseHeaderTitle) browseHeaderTitle.textContent = 'Γöî┬╗Γûê├▓Γöî├▓Γò¬┬║Γöÿ├Ñ';
                 const browseSecContent = document.getElementById('browseSecContent');
-                if (browseSecContent) browseSecContent.textContent = 'Ã¢â€ËœÃƒÂ¥Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂªÃ¢â€“Ë†ÃƒÂ²Ã¢â€Å’ÃƒÂ²Ã¢â€“Ë†ÃƒÂ¥Ã¢â€Å’Ã¢Å’Â';
+                if (browseSecContent) browseSecContent.textContent = 'Γöÿ├ÑΓò¬┬║Γöÿ├¬Γûê├▓Γöî├▓Γûê├ÑΓöîΓîÉ';
                 const browseSecPersonal = document.getElementById('browseSecPersonal');
-                if (browseSecPersonal) browseSecPersonal.textContent = 'Ã¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ‚ÂºÃ¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ‚Â¿Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ‚Â¬';
+                if (browseSecPersonal) browseSecPersonal.textContent = 'Γò¬┬¼Γò¬┬║Γûê├«Γò¬┬┐Γûê├▓Γò¬┬¼';
                 const browseSecMore = document.getElementById('browseSecMore');
-                if (browseSecMore) browseSecMore.textContent = 'Ã¢â€¢ÂªÃ¢â€“â€œÃ¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ¢â€“â€™';
+                if (browseSecMore) browseSecMore.textContent = 'Γò¬ΓûôΓûê├«Γò¬┬║Γò¬┬¼Γò¬ΓûÆ';
                 const browseLabelMovies = document.getElementById('browseLabelMovies');
-                if (browseLabelMovies) browseLabelMovies.textContent = 'Ã¢â€ËœÃƒÂ¼Ã¢â€“Ë†ÃƒÂ®Ã¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’ÂÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥';
+                if (browseLabelMovies) browseLabelMovies.textContent = 'Γöÿ├╝Γûê├«Γöÿ├ñΓöÿ├áΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
                 const browseLabelSeries = document.getElementById('browseLabelSeries');
-                if (browseLabelSeries) browseLabelSeries.textContent = 'Ã¢â€¢ÂªÃ¢â€“â€œÃ¢â€ËœÃƒÂ¥Ã¢â€¢ÂªÃ‚Â¼Ã¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’ÂÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥';
+                if (browseLabelSeries) browseLabelSeries.textContent = 'Γò¬ΓûôΓöÿ├ÑΓò¬┬╝Γûê├«Γò¬ΓûÆΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
                 const browseLabelAnime = document.getElementById('browseLabelAnime');
-                if (browseLabelAnime) browseLabelAnime.textContent = 'Ã¢â€¢ÂªÃ‚ÂªÃ¢â€“Ë†ÃƒÂ²Ã¢â€ËœÃƒÂ¥Ã¢â€“Ë†ÃƒÂ®Ã¢â€ËœÃƒÂ Ã¢â€“Ë†ÃƒÂ®';
+                if (browseLabelAnime) browseLabelAnime.textContent = 'Γò¬┬¬Γûê├▓Γöÿ├ÑΓûê├«Γöÿ├áΓûê├«';
                 const browseLabelContinue = document.getElementById('browseLabelContinue');
-                if (browseLabelContinue) browseLabelContinue.textContent = 'Ã¢â€¢ÂªÃ‚Â¿Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚Â»Ã¢â€“Ë†ÃƒÂ²Ã¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚Â¿Ã¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂ¥';
+                if (browseLabelContinue) browseLabelContinue.textContent = 'Γò¬┬┐Γûê├▓Γò¬ΓûÆΓò¬┬╗Γûê├▓Γöÿ├¬Γò¬┬║Γöÿ├áΓò¬┬┐Γöÿ├¬Γöÿ├¬Γöÿ├Ñ';
                 const browseLabelWatchlist = document.getElementById('browseLabelWatchlist');
-                if (browseLabelWatchlist) browseLabelWatchlist.textContent = 'Ã¢â€¢ÂªÃ‚Â»Ã¢â€Å’Ã¢â€¢Â¡Ã¢â€¢ÂªÃ‚Â«Ã¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€“â€œÃ¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’ÂÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥';
+                if (browseLabelWatchlist) browseLabelWatchlist.textContent = 'Γò¬┬╗ΓöîΓòíΓò¬┬½Γöÿ├¬Γò¬┬║Γò¬ΓûôΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
                 const browseLabelDownload = document.getElementById('browseLabelDownload');
-                if (browseLabelDownload) browseLabelDownload.textContent = 'Ã¢â€¢ÂªÃ‚Â»Ã¢â€¢ÂªÃ‚ÂºÃ¢â€Å’Ã‚Â»Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚Â¬Ã¢â€ËœÃƒÂ¥';
+                if (browseLabelDownload) browseLabelDownload.textContent = 'Γò¬┬╗Γò¬┬║Γöî┬╗Γò¬ΓûÆΓò¬┬¼Γöÿ├Ñ';
                 const browseLabelAi = document.getElementById('browseLabelAi');
-                if (browseLabelAi) browseLabelAi.textContent = 'Ã¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€“â€™Ã¢â€ËœÃƒÂ Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ‚Â¬Ã¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ‚Â»Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ® Ã¢â€¢ÂªÃ¢â€“â€œÃ¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’Â';
+                if (browseLabelAi) browseLabelAi.textContent = 'Γûê├«Γò¬┬║Γò¬ΓûÆΓöÿ├áΓûê├▓Γò¬┬¼Γûê├«Γò¬┬╗Γûê├▓Γò¬ΓûÆΓûê├« Γò¬ΓûôΓûê├«Γò¬ΓûÆΓûê├▓ΓöîΓîÉ';
                 const browseLabelReport = document.getElementById('browseLabelReport');
-                if (browseLabelReport) browseLabelReport.textContent = 'Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ®Ã¢â€ËœÃ¢â€¢â€ºÃ¢â€“Ë†ÃƒÂ¥Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚Â¬';
+                if (browseLabelReport) browseLabelReport.textContent = 'Γò¬ΓûÆΓûê├«ΓöÿΓò¢Γûê├ÑΓò¬ΓûÆΓò¬┬¼';
 
-                if (loginPwLabel) loginPwLabel.textContent = 'Ã¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ¢â€Â¤Ã¢â€“Ë†ÃƒÂ²Ã¢â€“Ë†ÃƒÂ® Ã¢â€ËœÃƒÂ¥Ã¢â€ËœÃƒÂ§Ã¢â€“Ë†Ãƒâ€žÃ¢â€ËœÃƒÂ¥Ã¢â€“Ë†ÃƒÂ®';
-                if (signupPwLabel) signupPwLabel.textContent = 'Ã¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ¢â€Â¤Ã¢â€“Ë†ÃƒÂ²Ã¢â€“Ë†ÃƒÂ® Ã¢â€ËœÃƒÂ¥Ã¢â€ËœÃƒÂ§Ã¢â€“Ë†Ãƒâ€žÃ¢â€ËœÃƒÂ¥Ã¢â€“Ë†ÃƒÂ®';
-                if (loginPwInput) loginPwInput.placeholder = 'ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³';
-                if (signupPwInput) signupPwInput.placeholder = 'ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³';
-                if (signupEmailLabel) signupEmailLabel.textContent = 'Ã¢â€¢ÂªÃ‚ÂªÃ¢â€“Ë†ÃƒÂ®Ã¢â€ËœÃƒÂ Ã¢â€“Ë†ÃƒÂ²Ã¢â€“Ë†ÃƒÂ®Ã¢â€Å’Ã¢â€¢Â¡';
-                if (textTabSignup) textTabSignup.textContent = 'Ã¢â€¢ÂªÃ‚Â»Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ¢â€â€šÃ¢â€¢ÂªÃ‚Â¬Ã¢â€Å’Ã¢Å’ÂÃ¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚Â»Ã¢â€ËœÃƒÂ¥Ã¢â€“Ë†ÃƒÂ® Ã¢â€ËœÃƒÂ§Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’ÃƒÂ¿Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€“â€™';
-                if (textBtnSignup) textBtnSignup.textContent = 'Ã¢â€¢ÂªÃ‚Â»Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ¢â€â€šÃ¢â€¢ÂªÃ‚Â¬Ã¢â€Å’Ã¢Å’ÂÃ¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚Â»Ã¢â€ËœÃƒÂ¥Ã¢â€“Ë†ÃƒÂ® Ã¢â€ËœÃƒÂ§Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’ÃƒÂ¿Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€“â€™';
-                if (signupEmailInput) signupEmailInput.placeholder = 'Ã¢â€¢ÂªÃ‚ÂªÃ¢â€“Ë†ÃƒÂ®Ã¢â€ËœÃƒÂ Ã¢â€“Ë†ÃƒÂ²Ã¢â€“Ë†ÃƒÂ®Ã¢â€Å’Ã¢â€¢Â¡';
-                if (labelDirector) labelDirector.textContent = 'Ã¢â€¢ÂªÃ‚Â»Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€ËœÃƒÂ§Ã¢â€“Ë†Ãƒâ€žÃ¢â€ËœÃƒÂ¥Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ¢â€“â€™:';
-                if (labelCast) labelCast.textContent = 'Ã¢â€¢ÂªÃ‚ÂªÃ¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’ÂÃ¢â€¢ÂªÃ‚Â¬Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’ÂÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥:';
-                if (navSeries1) navSeries1.textContent = 'Ã¢â€¢ÂªÃ¢â€“â€œÃ¢â€ËœÃƒÂ¥Ã¢â€¢ÂªÃ‚Â¼Ã¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’ÂÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥';
-                if (navSeries2) navSeries2.textContent = 'Ã¢â€¢ÂªÃ¢â€“â€œÃ¢â€ËœÃƒÂ¥Ã¢â€¢ÂªÃ‚Â¼Ã¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’ÂÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥';
-                if (navHome1) navHome1.textContent = 'Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’ÂÃ¢â€“Ë†ÃƒÂ®';
-                if (navHome2) navHome2.textContent = 'Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’ÂÃ¢â€“Ë†ÃƒÂ®';
-                if (navMovies1) navMovies1.textContent = 'Ã¢â€ËœÃƒÂ¼Ã¢â€“Ë†ÃƒÂ®Ã¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’ÂÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥';
-                if (navMovies2) navMovies2.textContent = 'Ã¢â€ËœÃƒÂ¼Ã¢â€“Ë†ÃƒÂ®Ã¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’ÂÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥';
-                if (navAnime1) navAnime1.textContent = 'Ã¢â€¢ÂªÃ‚ÂªÃ¢â€“Ë†ÃƒÂ²Ã¢â€ËœÃƒÂ¥Ã¢â€“Ë†ÃƒÂ®Ã¢â€ËœÃƒÂ Ã¢â€“Ë†ÃƒÂ®';
-                if (navAnime2) navAnime2.textContent = 'Ã¢â€¢ÂªÃ‚ÂªÃ¢â€“Ë†ÃƒÂ²Ã¢â€ËœÃƒÂ¥Ã¢â€“Ë†ÃƒÂ®Ã¢â€ËœÃƒÂ Ã¢â€“Ë†ÃƒÂ®';
-                if (navContinue1) navContinue1.textContent = 'Ã¢â€¢ÂªÃ‚Â¿Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚Â»Ã¢â€“Ë†ÃƒÂ²Ã¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚Â¿Ã¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂ¥';
-                if (navContinue2) navContinue2.textContent = 'Ã¢â€¢ÂªÃ‚Â¿Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚Â»Ã¢â€“Ë†ÃƒÂ²Ã¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚Â¿Ã¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂ¥';
-                if (navWatchlist1) navWatchlist1.textContent = 'Ã¢â€¢ÂªÃ‚Â»Ã¢â€Å’Ã¢â€¢Â¡Ã¢â€¢ÂªÃ‚Â«Ã¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€“â€œÃ¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’ÂÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥';
-                if (navWatchlist2) navWatchlist2.textContent = 'Ã¢â€¢ÂªÃ‚Â»Ã¢â€Å’Ã¢â€¢Â¡Ã¢â€¢ÂªÃ‚Â«Ã¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€“â€œÃ¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’ÂÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥';
-                if (continueShelfTitle) continueShelfTitle.textContent = 'Ã¢â€¢ÂªÃ‚Â¿Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚Â»Ã¢â€“Ë†ÃƒÂ²Ã¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ  Ã¢â€¢ÂªÃ‚Â¿Ã¢â€“Ë†ÃƒÂ² Ã¢â€ËœÃƒÂ¤Ã¢â€“Ë†ÃƒÂ² Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€“Ë†ÃƒÂ²Ã¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€Å’Ã¢Å’ÂÃ¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚Â»Ã¢â€ËœÃƒÂ¥';
-                if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'Ã¢â€Å’ÃƒÂ²Ã¢â€“Ë†Ãƒâ€žÃ¢â€Å’Ã¢Å’Â Ã¢â€ËœÃƒÂ¤Ã¢â€“Ë†ÃƒÂ²Ã¢â€ËœÃƒÂª Ã¢â€¢ÂªÃ¢â€Â¤Ã¢â€ËœÃƒÂªÃ¢â€“Ë†Ãƒâ€žÃ¢â€ËœÃƒÂ¥Ã¢â€“Ë†ÃƒÂ² Ã¢â€¢ÂªÃ‚Â»Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€¢ÂªÃ‚Â¬Ã¢â€ËœÃ¢â€¢â€ºÃ¢â€“Ë†Ãƒâ€žÃ¢â€¢ÂªÃ‚Â¿Ã¢â€Å’Ã¢Å’ÂÃ¢â€“Ë†ÃƒÂ²Ã¢â€ËœÃƒÂªÃ¢â€“Ë†ÃƒÂ² Ã¢â€Å’Ã¢Å’ÂÃ¢â€“Ë†ÃƒÂ² Ã¢â€ËœÃƒÂ¤Ã¢â€“Ë†Ãƒâ€žÃ¢â€“Ë†ÃƒÂ® Ã¢â€ËœÃƒÂªÃ¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚Â¿Ã¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂªÃ¢â€“Ë†ÃƒÂ®';
-                if (navAiBtnText) navAiBtnText.textContent = 'Ã¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€“â€™Ã¢â€ËœÃƒÂ Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ‚Â¬Ã¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ‚Â»Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ® Ã¢â€¢ÂªÃ¢â€“â€œÃ¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’Â';
-                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = 'Ã¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€“â€™Ã¢â€ËœÃƒÂ Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ‚Â¬Ã¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ‚Â»Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ® Ã¢â€¢ÂªÃ¢â€“â€œÃ¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’Â';
+                if (loginPwLabel) loginPwLabel.textContent = 'Γöÿ├¬Γò¬ΓöñΓûê├▓Γûê├« Γöÿ├ÑΓöÿ├ºΓûê├äΓöÿ├ÑΓûê├«';
+                if (signupPwLabel) signupPwLabel.textContent = 'Γöÿ├¬Γò¬ΓöñΓûê├▓Γûê├« Γöÿ├ÑΓöÿ├ºΓûê├äΓöÿ├ÑΓûê├«';
+                if (loginPwInput) loginPwInput.placeholder = '╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│';
+                if (signupPwInput) signupPwInput.placeholder = '╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│';
+                if (signupEmailLabel) signupEmailLabel.textContent = 'Γò¬┬¬Γûê├«Γöÿ├áΓûê├▓Γûê├«ΓöîΓòí';
+                if (textTabSignup) textTabSignup.textContent = 'Γò¬┬╗Γò¬ΓûÆΓöÿ├¬Γò¬ΓöéΓò¬┬¼ΓöîΓîÉΓò¬ΓûÆΓò¬┬╗Γöÿ├ÑΓûê├« Γöÿ├ºΓûê├▓Γöî├┐Γöÿ├áΓò¬┬║Γò¬ΓûÆ';
+                if (textBtnSignup) textBtnSignup.textContent = 'Γò¬┬╗Γò¬ΓûÆΓöÿ├¬Γò¬ΓöéΓò¬┬¼ΓöîΓîÉΓò¬ΓûÆΓò¬┬╗Γöÿ├ÑΓûê├« Γöÿ├ºΓûê├▓Γöî├┐Γöÿ├áΓò¬┬║Γò¬ΓûÆ';
+                if (signupEmailInput) signupEmailInput.placeholder = 'Γò¬┬¬Γûê├«Γöÿ├áΓûê├▓Γûê├«ΓöîΓòí';
+                if (labelDirector) labelDirector.textContent = 'Γò¬┬╗Γûê├▓Γò¬ΓûÆΓöÿ├ºΓûê├äΓöÿ├ÑΓûê├▓Γò¬ΓûÆ:';
+                if (labelCast) labelCast.textContent = 'Γò¬┬¬Γûê├▓ΓöîΓîÉΓò¬┬¼Γûê├▓Γò¬ΓûÆΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ:';
+                if (navSeries1) navSeries1.textContent = 'Γò¬ΓûôΓöÿ├ÑΓò¬┬╝Γûê├«Γò¬ΓûÆΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
+                if (navSeries2) navSeries2.textContent = 'Γò¬ΓûôΓöÿ├ÑΓò¬┬╝Γûê├«Γò¬ΓûÆΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
+                if (navHome1) navHome1.textContent = 'Γò¬ΓöéΓûê├▓Γò¬ΓûÆΓûê├▓ΓöîΓîÉΓûê├«';
+                if (navHome2) navHome2.textContent = 'Γò¬ΓöéΓûê├▓Γò¬ΓûÆΓûê├▓ΓöîΓîÉΓûê├«';
+                if (navMovies1) navMovies1.textContent = 'Γöÿ├╝Γûê├«Γöÿ├ñΓöÿ├áΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
+                if (navMovies2) navMovies2.textContent = 'Γöÿ├╝Γûê├«Γöÿ├ñΓöÿ├áΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
+                if (navAnime1) navAnime1.textContent = 'Γò¬┬¬Γûê├▓Γöÿ├ÑΓûê├«Γöÿ├áΓûê├«';
+                if (navAnime2) navAnime2.textContent = 'Γò¬┬¬Γûê├▓Γöÿ├ÑΓûê├«Γöÿ├áΓûê├«';
+                if (navContinue1) navContinue1.textContent = 'Γò¬┬┐Γûê├▓Γò¬ΓûÆΓò¬┬╗Γûê├▓Γöÿ├¬Γò¬┬║Γöÿ├áΓò¬┬┐Γöÿ├¬Γöÿ├¬Γöÿ├Ñ';
+                if (navContinue2) navContinue2.textContent = 'Γò¬┬┐Γûê├▓Γò¬ΓûÆΓò¬┬╗Γûê├▓Γöÿ├¬Γò¬┬║Γöÿ├áΓò¬┬┐Γöÿ├¬Γöÿ├¬Γöÿ├Ñ';
+                if (navWatchlist1) navWatchlist1.textContent = 'Γò¬┬╗ΓöîΓòíΓò¬┬½Γöÿ├¬Γò¬┬║Γò¬ΓûôΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
+                if (navWatchlist2) navWatchlist2.textContent = 'Γò¬┬╗ΓöîΓòíΓò¬┬½Γöÿ├¬Γò¬┬║Γò¬ΓûôΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
+                if (continueShelfTitle) continueShelfTitle.textContent = 'Γò¬┬┐Γûê├▓Γò¬ΓûÆΓò¬┬╗Γûê├▓Γöÿ├¬Γò¬┬║Γöÿ├á Γò¬┬┐Γûê├▓ Γöÿ├ñΓûê├▓ Γò¬ΓöéΓûê├▓Γûê├«Γò¬ΓûÆΓöîΓîÉΓò¬ΓûÆΓò¬┬╗Γöÿ├Ñ';
+                if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'Γöî├▓Γûê├äΓöîΓîÉ Γöÿ├ñΓûê├▓Γöÿ├¬ Γò¬ΓöñΓöÿ├¬Γûê├äΓöÿ├ÑΓûê├▓ Γò¬┬╗Γûê├▓Γò¬ΓöéΓò¬┬¼ΓöÿΓò¢Γûê├äΓò¬┬┐ΓöîΓîÉΓûê├▓Γöÿ├¬Γûê├▓ ΓöîΓîÉΓûê├▓ Γöÿ├ñΓûê├äΓûê├« Γöÿ├¬Γûê├▓Γò¬ΓöéΓò¬┬¼Γò¬┬║Γò¬┬┐Γöÿ├¬Γöÿ├¬Γûê├«';
+                if (navAiBtnText) navAiBtnText.textContent = 'Γûê├«Γò¬┬║Γò¬ΓûÆΓöÿ├áΓûê├▓Γò¬┬¼Γûê├«Γò¬┬╗Γûê├▓Γò¬ΓûÆΓûê├« Γò¬ΓûôΓûê├«Γò¬ΓûÆΓûê├▓ΓöîΓîÉ';
+                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = 'Γûê├«Γò¬┬║Γò¬ΓûÆΓöÿ├áΓûê├▓Γò¬┬¼Γûê├«Γò¬┬╗Γûê├▓Γò¬ΓûÆΓûê├« Γò¬ΓûôΓûê├«Γò¬ΓûÆΓûê├▓ΓöîΓîÉ';
                 const aiOnlineText = document.getElementById('aiOnlineText');
-                if (aiOnlineText) aiOnlineText.textContent = 'Ã¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€“â€™Ã¢â€ËœÃƒÂ Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ‚Â¬Ã¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ‚Â»Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ® Ã¢â€¢ÂªÃ¢â€“â€œÃ¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’Â';
-                if (filterBtnText) filterBtnText.textContent = 'Ã¢â€ËœÃƒÂ¼Ã¢â€“Ë†ÃƒÂ®Ã¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ  Ã¢â€ËœÃƒÂª Ã¢â€¢ÂªÃ¢â€“â€œÃ¢â€ËœÃƒÂ¥Ã¢â€¢ÂªÃ‚Â¼Ã¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ²';
-                if (filterOptAll) filterOptAll.textContent = 'Ã¢â€ËœÃƒÂ¼Ã¢â€“Ë†ÃƒÂ®Ã¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ  Ã¢â€ËœÃƒÂª Ã¢â€¢ÂªÃ¢â€“â€œÃ¢â€ËœÃƒÂ¥Ã¢â€¢ÂªÃ‚Â¼Ã¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ²';
-                if (filterOptMovie) filterOptMovie.textContent = 'Ã¢â€¢ÂªÃ‚Â¬Ã¢â€“Ë†ÃƒÂ²Ã¢â€ËœÃƒÂ¥Ã¢â€ËœÃƒÂ§Ã¢â€¢ÂªÃ‚Âº Ã¢â€ËœÃƒÂ¼Ã¢â€“Ë†ÃƒÂ®Ã¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ ';
-                if (filterOptSeries) filterOptSeries.textContent = 'Ã¢â€¢ÂªÃ‚Â¬Ã¢â€“Ë†ÃƒÂ²Ã¢â€ËœÃƒÂ¥Ã¢â€ËœÃƒÂ§Ã¢â€¢ÂªÃ‚Âº Ã¢â€¢ÂªÃ¢â€“â€œÃ¢â€ËœÃƒÂ¥Ã¢â€¢ÂªÃ‚Â¼Ã¢â€“Ë†ÃƒÂ®Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ²';
+                if (aiOnlineText) aiOnlineText.textContent = 'Γûê├«Γò¬┬║Γò¬ΓûÆΓöÿ├áΓûê├▓Γò¬┬¼Γûê├«Γò¬┬╗Γûê├▓Γò¬ΓûÆΓûê├« Γò¬ΓûôΓûê├«Γò¬ΓûÆΓûê├▓ΓöîΓîÉ';
+                if (filterBtnText) filterBtnText.textContent = 'Γöÿ├╝Γûê├«Γöÿ├ñΓöÿ├á Γöÿ├¬ Γò¬ΓûôΓöÿ├ÑΓò¬┬╝Γûê├«Γò¬ΓûÆΓûê├▓';
+                if (filterOptAll) filterOptAll.textContent = 'Γöÿ├╝Γûê├«Γöÿ├ñΓöÿ├á Γöÿ├¬ Γò¬ΓûôΓöÿ├ÑΓò¬┬╝Γûê├«Γò¬ΓûÆΓûê├▓';
+                if (filterOptMovie) filterOptMovie.textContent = 'Γò¬┬¼Γûê├▓Γöÿ├ÑΓöÿ├ºΓò¬┬║ Γöÿ├╝Γûê├«Γöÿ├ñΓöÿ├á';
+                if (filterOptSeries) filterOptSeries.textContent = 'Γò¬┬¼Γûê├▓Γöÿ├ÑΓöÿ├ºΓò¬┬║ Γò¬ΓûôΓöÿ├ÑΓò¬┬╝Γûê├«Γò¬ΓûÆΓûê├▓';
                 document.querySelectorAll('.browse-filter-btn').forEach(btn => {
                     const g = btn.getAttribute('data-genre');
                     if (genreMapKurdish[g]) btn.textContent = genreMapKurdish[g];
                 });
-                document.querySelectorAll('.download-text').forEach(el => el.textContent = 'Ã¢â€¢ÂªÃ‚Â»Ã¢â€¢ÂªÃ‚ÂºÃ¢â€Å’Ã‚Â»Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚Â¬Ã¢â€ËœÃƒÂ¥');
-                document.querySelectorAll('.report-text').forEach(el => el.textContent = 'Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ®Ã¢â€ËœÃ¢â€¢â€ºÃ¢â€“Ë†ÃƒÂ¥Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚Â¬');
+                document.querySelectorAll('.download-text').forEach(el => el.textContent = 'Γò¬┬╗Γò¬┬║Γöî┬╗Γò¬ΓûÆΓò¬┬¼Γöÿ├Ñ');
+                document.querySelectorAll('.report-text').forEach(el => el.textContent = 'Γò¬ΓûÆΓûê├«ΓöÿΓò¢Γûê├ÑΓò¬ΓûÆΓò¬┬¼');
                 const detailsReportBtn = document.getElementById('detailsReportBtn');
-                if (detailsReportBtn) detailsReportBtn.textContent = 'Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€“Ë†ÃƒÂ®Ã¢â€ËœÃ¢â€¢â€ºÃ¢â€“Ë†ÃƒÂ¥Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚Â¬';
+                if (detailsReportBtn) detailsReportBtn.textContent = 'Γò¬ΓûÆΓûê├«ΓöÿΓò¢Γûê├ÑΓò¬ΓûÆΓò¬┬¼';
                 const detailsSimilarsText = document.getElementById('detailsSimilarsText');
-                if (detailsSimilarsText) detailsSimilarsText.textContent = 'Ã¢â€ËœÃƒÂ§Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ¢â€Â¤Ã¢â€“Ë†Ãƒâ€žÃ¢â€ËœÃƒÂªÃ¢â€“Ë†ÃƒÂ²';
+                if (detailsSimilarsText) detailsSimilarsText.textContent = 'Γöÿ├ºΓò¬┬║Γöÿ├¬Γò¬ΓöñΓûê├äΓöÿ├¬Γûê├▓';
                 const detailsSimilarsHeading = document.getElementById('detailsSimilarsHeading');
-                if (detailsSimilarsHeading) detailsSimilarsHeading.textContent = 'Ã¢â€¢ÂªÃ‚Â¿Ã¢â€“Ë†ÃƒÂ²Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€ËœÃƒÂ§Ã¢â€“Ë†ÃƒÂ²Ã¢â€ËœÃƒÂ Ã¢â€“Ë†ÃƒÂ® Ã¢â€ËœÃƒÂ§Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ¢â€Â¤Ã¢â€“Ë†Ãƒâ€žÃ¢â€ËœÃƒÂªÃ¢â€“Ë†ÃƒÂ²';
+                if (detailsSimilarsHeading) detailsSimilarsHeading.textContent = 'Γò¬┬┐Γûê├▓Γò¬ΓûÆΓöÿ├ºΓûê├▓Γöÿ├áΓûê├« Γöÿ├ºΓò¬┬║Γöÿ├¬Γò¬ΓöñΓûê├äΓöÿ├¬Γûê├▓';
                 const commentsTitleHeading = document.getElementById('commentsTitleHeading');
-                if (commentsTitleHeading) commentsTitleHeading.textContent = 'Ã¢â€¢ÂªÃ‚Â¿Ã¢â€“Ë†ÃƒÂ¥Ã¢â€Å’ÃƒÂ¥Ã¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂ¥Ã¢â€“Ë†ÃƒÂ²Ã¢â€Å’Ã¢Å’ÂÃ¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¥';
+                if (commentsTitleHeading) commentsTitleHeading.textContent = 'Γò¬┬┐Γûê├ÑΓöî├ÑΓöÿ├¬Γöÿ├¬Γöÿ├ÑΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
             } else if (currentLang === 'ar') {
                 const navBrowseText = document.getElementById('navBrowseText');
-                if (navBrowseText) navBrowseText.textContent = 'Ã¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ¢â€¢Â¡Ã¢â€ËœÃƒÂ¼Ã¢â€¢ÂªÃ‚Â¡';
+                if (navBrowseText) navBrowseText.textContent = 'Γò¬┬¼Γò¬ΓòíΓöÿ├╝Γò¬┬í';
                 const browseHeaderTitle = document.getElementById('browseHeaderTitle');
-                if (browseHeaderTitle) browseHeaderTitle.textContent = 'Ã¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ¢â€¢Â¡Ã¢â€ËœÃƒÂ¼Ã¢â€¢ÂªÃ‚Â¡';
+                if (browseHeaderTitle) browseHeaderTitle.textContent = 'Γò¬┬¼Γò¬ΓòíΓöÿ├╝Γò¬┬í';
                 const browseSecContent = document.getElementById('browseSecContent');
-                if (browseSecContent) browseSecContent.textContent = 'Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚Â¡Ã¢â€¢ÂªÃ‚Â¬Ã¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂ«';
+                if (browseSecContent) browseSecContent.textContent = 'Γò¬┬║Γöÿ├ñΓöÿ├áΓò¬┬íΓò¬┬¼Γöÿ├¬Γöÿ├½';
                 const browseSecPersonal = document.getElementById('browseSecPersonal');
-                if (browseSecPersonal) browseSecPersonal.textContent = 'Ã¢â€¢ÂªÃ¢â€Â¤Ã¢â€¢ÂªÃ‚Â«Ã¢â€¢ÂªÃ¢â€¢Â¡Ã¢â€ËœÃƒÂ¨';
+                if (browseSecPersonal) browseSecPersonal.textContent = 'Γò¬ΓöñΓò¬┬½Γò¬ΓòíΓöÿ├¿';
                 const browseSecMore = document.getElementById('browseSecMore');
-                if (browseSecMore) browseSecMore.textContent = 'Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ¢â€“â€œÃ¢â€ËœÃƒÂ¨Ã¢â€¢ÂªÃ‚Â»';
+                if (browseSecMore) browseSecMore.textContent = 'Γò¬┬║Γöÿ├ñΓöÿ├áΓò¬ΓûôΓöÿ├¿Γò¬┬╗';
                 const browseLabelMovies = document.getElementById('browseLabelMovies');
-                if (browseLabelMovies) browseLabelMovies.textContent = 'Ã¢â€¢ÂªÃƒÂºÃ¢â€ËœÃƒÂ¼Ã¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ ';
+                if (browseLabelMovies) browseLabelMovies.textContent = 'Γò¬├║Γöÿ├╝Γöÿ├ñΓò¬┬║Γöÿ├á';
                 const browseLabelSeries = document.getElementById('browseLabelSeries');
-                if (browseLabelSeries) browseLabelSeries.textContent = 'Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚Â¬';
+                if (browseLabelSeries) browseLabelSeries.textContent = 'Γöÿ├áΓò¬ΓöéΓöÿ├ñΓò¬ΓöéΓöÿ├ñΓò¬┬║Γò¬┬¼';
                 const browseLabelAnime = document.getElementById('browseLabelAnime');
-                if (browseLabelAnime) browseLabelAnime.textContent = 'Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃƒÂºÃ¢â€ËœÃƒÂ¥Ã¢â€ËœÃƒÂ Ã¢â€ËœÃƒÂ¨';
+                if (browseLabelAnime) browseLabelAnime.textContent = 'Γò¬┬║Γöÿ├ñΓò¬├║Γöÿ├ÑΓöÿ├áΓöÿ├¿';
                 const browseLabelContinue = document.getElementById('browseLabelContinue');
-                if (browseLabelContinue) browseLabelContinue.textContent = 'Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚Â¿Ã¢â€¢ÂªÃ¢â€¢Â£Ã¢â€¢ÂªÃ¢Å’Â';
+                if (browseLabelContinue) browseLabelContinue.textContent = 'Γöÿ├áΓò¬┬¼Γò¬┬║Γò¬┬┐Γò¬ΓòúΓò¬ΓîÉ';
                 const browseLabelWatchlist = document.getElementById('browseLabelWatchlist');
-                if (browseLabelWatchlist) browseLabelWatchlist.textContent = 'Ã¢â€ËœÃƒÂ©Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚ÂªÃ¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚Â¬Ã¢â€ËœÃƒÂ¨';
+                if (browseLabelWatchlist) browseLabelWatchlist.textContent = 'Γöÿ├⌐Γò¬┬║Γò¬┬¬Γöÿ├áΓò¬┬¼Γöÿ├¿';
                 const browseLabelDownload = document.getElementById('browseLabelDownload');
-                if (browseLabelDownload) browseLabelDownload.textContent = 'Ã¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ‚Â¡Ã¢â€ËœÃƒÂ Ã¢â€ËœÃƒÂ¨Ã¢â€ËœÃƒÂ¤';
+                if (browseLabelDownload) browseLabelDownload.textContent = 'Γò¬┬¼Γò¬┬íΓöÿ├áΓöÿ├¿Γöÿ├ñ';
                 const browseLabelAi = document.getElementById('browseLabelAi');
-                if (browseLabelAi) browseLabelAi.textContent = 'Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ¢â€“â€˜Ã¢â€ËœÃƒÂ¢Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃƒÂ­ Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€¢Â¡Ã¢â€¢ÂªÃ¢â€¢â€“Ã¢â€ËœÃƒÂ¥Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€¢Â£Ã¢â€ËœÃƒÂ¨';
+                if (browseLabelAi) browseLabelAi.textContent = 'Γò¬┬║Γöÿ├ñΓò¬ΓûæΓöÿ├óΓò¬┬║Γò¬├¡ Γò¬┬║Γöÿ├ñΓò¬┬║Γò¬ΓòíΓò¬ΓòûΓöÿ├ÑΓò¬┬║Γò¬ΓòúΓöÿ├¿';
                 const browseLabelReport = document.getElementById('browseLabelReport');
-                if (browseLabelReport) browseLabelReport.textContent = 'Ã¢â€¢ÂªÃƒâ€˜Ã¢â€¢ÂªÃ‚Â¿Ã¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€¢â€˜';
+                if (browseLabelReport) browseLabelReport.textContent = 'Γò¬├æΓò¬┬┐Γöÿ├ñΓò¬┬║Γò¬Γòæ';
 
-                if (loginPwLabel) loginPwLabel.textContent = 'Ã¢â€ËœÃƒÂ¢Ã¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ¢Å’Â Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ¢â€“â€™';
-                if (signupPwLabel) signupPwLabel.textContent = 'Ã¢â€ËœÃƒÂ¢Ã¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ¢Å’Â Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ¢â€“â€™';
-                if (loginPwInput) loginPwInput.placeholder = 'ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³';
-                if (signupPwInput) signupPwInput.placeholder = 'ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³';
-                if (signupEmailLabel) signupEmailLabel.textContent = 'Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚Â¿Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€ËœÃƒÂ¨Ã¢â€¢ÂªÃ‚Â» Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃƒâ€˜Ã¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ¢Ã¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂ¥Ã¢â€ËœÃƒÂ¨';
-                if (textTabSignup) textTabSignup.textContent = 'Ã¢â€¢ÂªÃƒâ€˜Ã¢â€ËœÃƒÂ¥Ã¢â€¢ÂªÃ¢â€Â¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃƒÂ­ Ã¢â€¢ÂªÃ‚Â¡Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚Â¿';
-                if (textBtnSignup) textBtnSignup.textContent = 'Ã¢â€¢ÂªÃƒâ€˜Ã¢â€ËœÃƒÂ¥Ã¢â€¢ÂªÃ¢â€Â¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃƒÂ­ Ã¢â€¢ÂªÃ‚Â¡Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚Â¿';
-                if (signupEmailInput) signupEmailInput.placeholder = 'Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚Â¿Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€ËœÃƒÂ¨Ã¢â€¢ÂªÃ‚Â» Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃƒâ€˜Ã¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ¢Ã¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂ¥Ã¢â€ËœÃƒÂ¨';
-                if (labelDirector) labelDirector.textContent = 'Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚Â«Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚Â¼:';
-                if (labelCast) labelCast.textContent = 'Ã¢â€¢ÂªÃ¢â€¢â€“Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ©Ã¢â€ËœÃƒÂ  Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ¢â€¢Â£Ã¢â€ËœÃƒÂ Ã¢â€ËœÃƒÂ¤:';
-                if (navSeries1) navSeries1.textContent = 'Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚Â¬';
-                if (navSeries2) navSeries2.textContent = 'Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚Â¬';
-                if (navHome1) navHome1.textContent = 'Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚ÂªÃ¢â€ËœÃƒÂ¨Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€ËœÃƒÂ¨Ã¢â€¢ÂªÃ¢Å’Â';
-                if (navHome2) navHome2.textContent = 'Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚ÂªÃ¢â€ËœÃƒÂ¨Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€ËœÃƒÂ¨Ã¢â€¢ÂªÃ¢Å’Â';
-                if (navMovies1) navMovies1.textContent = 'Ã¢â€¢ÂªÃƒÂºÃ¢â€ËœÃƒÂ¼Ã¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ ';
-                if (navMovies2) navMovies2.textContent = 'Ã¢â€¢ÂªÃƒÂºÃ¢â€ËœÃƒÂ¼Ã¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ ';
-                if (navAnime1) navAnime1.textContent = 'Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃƒÂºÃ¢â€ËœÃƒÂ¥Ã¢â€ËœÃƒÂ Ã¢â€ËœÃƒÂ¨';
-                if (navAnime2) navAnime2.textContent = 'Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃƒÂºÃ¢â€ËœÃƒÂ¥Ã¢â€ËœÃƒÂ Ã¢â€ËœÃƒÂ¨';
-                if (navContinue1) navContinue1.textContent = 'Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚Â¿Ã¢â€¢ÂªÃ¢â€¢Â£Ã¢â€¢ÂªÃ¢Å’Â';
-                if (navContinue2) navContinue2.textContent = 'Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚Â¿Ã¢â€¢ÂªÃ¢â€¢Â£Ã¢â€¢ÂªÃ¢Å’Â';
-                if (navWatchlist1) navWatchlist1.textContent = 'Ã¢â€ËœÃƒÂ©Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚ÂªÃ¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚Â¬Ã¢â€ËœÃƒÂ¨';
-                if (navWatchlist2) navWatchlist2.textContent = 'Ã¢â€ËœÃƒÂ©Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚ÂªÃ¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚Â¬Ã¢â€ËœÃƒÂ¨';
-                if (continueShelfTitle) continueShelfTitle.textContent = 'Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚Â¿Ã¢â€¢ÂªÃ¢â€¢Â£Ã¢â€¢ÂªÃ¢Å’Â Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ¢â€Â¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ§Ã¢â€¢ÂªÃ‚Â»Ã¢â€¢ÂªÃ¢Å’Â';
-                if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'Ã¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚Â¿Ã¢â€¢ÂªÃ¢â€¢Â£ Ã¢â€ËœÃƒÂ Ã¢â€ËœÃƒÂ¥ Ã¢â€¢ÂªÃ‚Â¡Ã¢â€ËœÃƒÂ¨Ã¢â€¢ÂªÃ‚Â½ Ã¢â€¢ÂªÃ‚Â¬Ã¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂ©Ã¢â€ËœÃƒÂ¼Ã¢â€¢ÂªÃ‚Â¬';
-                if (navAiBtnText) navAiBtnText.textContent = 'Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ¢â€“â€˜Ã¢â€ËœÃƒÂ¢Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃƒÂ­ Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€¢Â¡Ã¢â€¢ÂªÃ¢â€¢â€“Ã¢â€ËœÃƒÂ¥Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€¢Â£Ã¢â€ËœÃƒÂ¨';
-                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = 'Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ¢â€“â€˜Ã¢â€ËœÃƒÂ¢Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃƒÂ­ Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€¢Â¡Ã¢â€¢ÂªÃ¢â€¢â€“Ã¢â€ËœÃƒÂ¥Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€¢Â£Ã¢â€ËœÃƒÂ¨';
-                if (filterBtnText) filterBtnText.textContent = 'Ã¢â€¢ÂªÃƒÂºÃ¢â€ËœÃƒÂ¼Ã¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ  Ã¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚Â¬';
-                if (filterOptAll) filterOptAll.textContent = 'Ã¢â€¢ÂªÃƒÂºÃ¢â€ËœÃƒÂ¼Ã¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ  Ã¢â€ËœÃƒÂªÃ¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚Â¬';
-                if (filterOptMovie) filterOptMovie.textContent = 'Ã¢â€¢ÂªÃƒÂºÃ¢â€ËœÃƒÂ¼Ã¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ  Ã¢â€ËœÃƒÂ¼Ã¢â€ËœÃƒÂ©Ã¢â€¢ÂªÃ¢â€¢â€“';
-                if (filterOptSeries) filterOptSeries.textContent = 'Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ¢â€â€šÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚Â¬ Ã¢â€ËœÃƒÂ¼Ã¢â€ËœÃƒÂ©Ã¢â€¢ÂªÃ¢â€¢â€“';
+                if (loginPwLabel) loginPwLabel.textContent = 'Γöÿ├óΓöÿ├ñΓöÿ├áΓò¬ΓîÉ Γò¬┬║Γöÿ├ñΓöÿ├áΓò¬ΓûÆΓöÿ├¬Γò¬ΓûÆ';
+                if (signupPwLabel) signupPwLabel.textContent = 'Γöÿ├óΓöÿ├ñΓöÿ├áΓò¬ΓîÉ Γò¬┬║Γöÿ├ñΓöÿ├áΓò¬ΓûÆΓöÿ├¬Γò¬ΓûÆ';
+                if (loginPwInput) loginPwInput.placeholder = '╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│';
+                if (signupPwInput) signupPwInput.placeholder = '╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│';
+                if (signupEmailLabel) signupEmailLabel.textContent = 'Γò¬┬║Γöÿ├ñΓò¬┬┐Γò¬ΓûÆΓöÿ├¿Γò¬┬╗ Γò¬┬║Γöÿ├ñΓò¬├æΓöÿ├ñΓöÿ├óΓò¬┬¼Γò¬ΓûÆΓöÿ├¬Γöÿ├ÑΓöÿ├¿';
+                if (textTabSignup) textTabSignup.textContent = 'Γò¬├æΓöÿ├ÑΓò¬ΓöñΓò¬┬║Γò¬├¡ Γò¬┬íΓò¬ΓöéΓò¬┬║Γò¬┬┐';
+                if (textBtnSignup) textBtnSignup.textContent = 'Γò¬├æΓöÿ├ÑΓò¬ΓöñΓò¬┬║Γò¬├¡ Γò¬┬íΓò¬ΓöéΓò¬┬║Γò¬┬┐';
+                if (signupEmailInput) signupEmailInput.placeholder = 'Γò¬┬║Γöÿ├ñΓò¬┬┐Γò¬ΓûÆΓöÿ├¿Γò¬┬╗ Γò¬┬║Γöÿ├ñΓò¬├æΓöÿ├ñΓöÿ├óΓò¬┬¼Γò¬ΓûÆΓöÿ├¬Γöÿ├ÑΓöÿ├¿';
+                if (labelDirector) labelDirector.textContent = 'Γò¬┬║Γöÿ├ñΓöÿ├áΓò¬┬½Γò¬ΓûÆΓò¬┬╝:';
+                if (labelCast) labelCast.textContent = 'Γò¬ΓòûΓò¬┬║Γöÿ├⌐Γöÿ├á Γò¬┬║Γöÿ├ñΓò¬ΓòúΓöÿ├áΓöÿ├ñ:';
+                if (navSeries1) navSeries1.textContent = 'Γöÿ├áΓò¬ΓöéΓöÿ├ñΓò¬ΓöéΓöÿ├ñΓò¬┬║Γò¬┬¼';
+                if (navSeries2) navSeries2.textContent = 'Γöÿ├áΓò¬ΓöéΓöÿ├ñΓò¬ΓöéΓöÿ├ñΓò¬┬║Γò¬┬¼';
+                if (navHome1) navHome1.textContent = 'Γò¬┬║Γöÿ├ñΓò¬ΓûÆΓò¬┬¬Γöÿ├¿Γò¬ΓöéΓöÿ├¿Γò¬ΓîÉ';
+                if (navHome2) navHome2.textContent = 'Γò¬┬║Γöÿ├ñΓò¬ΓûÆΓò¬┬¬Γöÿ├¿Γò¬ΓöéΓöÿ├¿Γò¬ΓîÉ';
+                if (navMovies1) navMovies1.textContent = 'Γò¬├║Γöÿ├╝Γöÿ├ñΓò¬┬║Γöÿ├á';
+                if (navMovies2) navMovies2.textContent = 'Γò¬├║Γöÿ├╝Γöÿ├ñΓò¬┬║Γöÿ├á';
+                if (navAnime1) navAnime1.textContent = 'Γò¬┬║Γöÿ├ñΓò¬├║Γöÿ├ÑΓöÿ├áΓöÿ├¿';
+                if (navAnime2) navAnime2.textContent = 'Γò¬┬║Γöÿ├ñΓò¬├║Γöÿ├ÑΓöÿ├áΓöÿ├¿';
+                if (navContinue1) navContinue1.textContent = 'Γöÿ├áΓò¬┬¼Γò¬┬║Γò¬┬┐Γò¬ΓòúΓò¬ΓîÉ';
+                if (navContinue2) navContinue2.textContent = 'Γöÿ├áΓò¬┬¼Γò¬┬║Γò¬┬┐Γò¬ΓòúΓò¬ΓîÉ';
+                if (navWatchlist1) navWatchlist1.textContent = 'Γöÿ├⌐Γò¬┬║Γò¬┬¬Γöÿ├áΓò¬┬¼Γöÿ├¿';
+                if (navWatchlist2) navWatchlist2.textContent = 'Γöÿ├⌐Γò¬┬║Γò¬┬¬Γöÿ├áΓò¬┬¼Γöÿ├¿';
+                if (continueShelfTitle) continueShelfTitle.textContent = 'Γöÿ├áΓò¬┬¼Γò¬┬║Γò¬┬┐Γò¬ΓòúΓò¬ΓîÉ Γò¬┬║Γöÿ├ñΓöÿ├áΓò¬ΓöñΓò¬┬║Γöÿ├ºΓò¬┬╗Γò¬ΓîÉ';
+                if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'Γò¬┬¼Γò¬┬║Γò¬┬┐Γò¬Γòú Γöÿ├áΓöÿ├Ñ Γò¬┬íΓöÿ├¿Γò¬┬╜ Γò¬┬¼Γöÿ├¬Γöÿ├⌐Γöÿ├╝Γò¬┬¼';
+                if (navAiBtnText) navAiBtnText.textContent = 'Γò¬┬║Γöÿ├ñΓò¬ΓûæΓöÿ├óΓò¬┬║Γò¬├¡ Γò¬┬║Γöÿ├ñΓò¬┬║Γò¬ΓòíΓò¬ΓòûΓöÿ├ÑΓò¬┬║Γò¬ΓòúΓöÿ├¿';
+                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = 'Γò¬┬║Γöÿ├ñΓò¬ΓûæΓöÿ├óΓò¬┬║Γò¬├¡ Γò¬┬║Γöÿ├ñΓò¬┬║Γò¬ΓòíΓò¬ΓòûΓöÿ├ÑΓò¬┬║Γò¬ΓòúΓöÿ├¿';
+                if (filterBtnText) filterBtnText.textContent = 'Γò¬├║Γöÿ├╝Γöÿ├ñΓò¬┬║Γöÿ├á Γöÿ├¬Γöÿ├áΓò¬ΓöéΓöÿ├ñΓò¬ΓöéΓöÿ├ñΓò¬┬║Γò¬┬¼';
+                if (filterOptAll) filterOptAll.textContent = 'Γò¬├║Γöÿ├╝Γöÿ├ñΓò¬┬║Γöÿ├á Γöÿ├¬Γöÿ├áΓò¬ΓöéΓöÿ├ñΓò¬ΓöéΓöÿ├ñΓò¬┬║Γò¬┬¼';
+                if (filterOptMovie) filterOptMovie.textContent = 'Γò¬├║Γöÿ├╝Γöÿ├ñΓò¬┬║Γöÿ├á Γöÿ├╝Γöÿ├⌐Γò¬Γòû';
+                if (filterOptSeries) filterOptSeries.textContent = 'Γöÿ├áΓò¬ΓöéΓöÿ├ñΓò¬ΓöéΓöÿ├ñΓò¬┬║Γò¬┬¼ Γöÿ├╝Γöÿ├⌐Γò¬Γòû';
                 document.querySelectorAll('.browse-filter-btn').forEach(btn => {
                     const g = btn.getAttribute('data-genre');
                     if (genreMapArabic[g]) btn.textContent = genreMapArabic[g];
                 });
-                document.querySelectorAll('.download-text').forEach(el => el.textContent = 'Ã¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ‚Â¡Ã¢â€ËœÃƒÂ Ã¢â€ËœÃƒÂ¨Ã¢â€ËœÃƒÂ¤');
-                document.querySelectorAll('.report-text').forEach(el => el.textContent = 'Ã¢â€¢ÂªÃƒâ€˜Ã¢â€¢ÂªÃ‚Â¿Ã¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ¢â€¢â€˜');
+                document.querySelectorAll('.download-text').forEach(el => el.textContent = 'Γò¬┬¼Γò¬┬íΓöÿ├áΓöÿ├¿Γöÿ├ñ');
+                document.querySelectorAll('.report-text').forEach(el => el.textContent = 'Γò¬├æΓò¬┬┐Γöÿ├ñΓò¬┬║Γò¬Γòæ');
                 const detailsSimilarsText = document.getElementById('detailsSimilarsText');
-                if (detailsSimilarsText) detailsSimilarsText.textContent = 'Ã¢â€¢ÂªÃƒÂºÃ¢â€¢ÂªÃ¢â€¢Â£Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤ Ã¢â€ËœÃƒÂ Ã¢â€¢ÂªÃ¢â€Â¤Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚Â¿Ã¢â€ËœÃƒÂ§Ã¢â€¢ÂªÃ¢Å’Â';
+                if (detailsSimilarsText) detailsSimilarsText.textContent = 'Γò¬├║Γò¬ΓòúΓöÿ├áΓò¬┬║Γöÿ├ñ Γöÿ├áΓò¬ΓöñΓò¬┬║Γò¬┬┐Γöÿ├ºΓò¬ΓîÉ';
                 const detailsSimilarsHeading = document.getElementById('detailsSimilarsHeading');
-                if (detailsSimilarsHeading) detailsSimilarsHeading.textContent = 'Ã¢â€ËœÃƒÂ©Ã¢â€¢ÂªÃ‚Â» Ã¢â€ËœÃƒÂ¨Ã¢â€¢ÂªÃ¢â€¢Â£Ã¢â€¢ÂªÃ‚Â¼Ã¢â€¢ÂªÃ‚Â¿Ã¢â€ËœÃƒÂ¢ Ã¢â€¢ÂªÃƒÂºÃ¢â€ËœÃƒÂ¨Ã¢â€¢ÂªÃ¢â€¢Â¢Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¯';
+                if (detailsSimilarsHeading) detailsSimilarsHeading.textContent = 'Γöÿ├⌐Γò¬┬╗ Γöÿ├¿Γò¬ΓòúΓò¬┬╝Γò¬┬┐Γöÿ├ó Γò¬├║Γöÿ├¿Γò¬ΓòóΓò¬┬║Γöÿ├»';
                 const commentsTitleHeading = document.getElementById('commentsTitleHeading');
-                if (commentsTitleHeading) commentsTitleHeading.textContent = 'Ã¢â€¢ÂªÃ‚ÂºÃ¢â€ËœÃƒÂ¤Ã¢â€¢ÂªÃ‚Â¬Ã¢â€¢ÂªÃ¢â€¢Â£Ã¢â€ËœÃƒÂ¤Ã¢â€ËœÃƒÂ¨Ã¢â€ËœÃƒÂ©Ã¢â€¢ÂªÃ‚ÂºÃ¢â€¢ÂªÃ‚Â¬';
+                if (commentsTitleHeading) commentsTitleHeading.textContent = 'Γò¬┬║Γöÿ├ñΓò¬┬¼Γò¬ΓòúΓöÿ├ñΓöÿ├¿Γöÿ├⌐Γò¬┬║Γò¬┬¼';
             } else {
                 const navBrowseText = document.getElementById('navBrowseText');
                 if (navBrowseText) navBrowseText.textContent = 'Browse';
@@ -2657,8 +2657,8 @@
 
                 if (loginPwLabel) loginPwLabel.textContent = 'Password';
                 if (signupPwLabel) signupPwLabel.textContent = 'Password';
-                if (loginPwInput) loginPwInput.placeholder = 'ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³';
-                if (signupPwInput) signupPwInput.placeholder = 'ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³';
+                if (loginPwInput) loginPwInput.placeholder = '╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│';
+                if (signupPwInput) signupPwInput.placeholder = '╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│';
                 if (signupEmailLabel) signupEmailLabel.textContent = 'Email Address';
                 if (textTabSignup) textTabSignup.textContent = 'Create Account';
                 if (textBtnSignup) textBtnSignup.textContent = 'Create Account';
@@ -2717,7 +2717,7 @@
                 if (!selectedText) return;
                 const isMobile = window.innerWidth <= 768;
                 if (lang === 'ckb') {
-                    selectedText.textContent = 'Ã¢â€Å’Ã¢Å’ÂÃ¢â€ËœÃƒÂªÃ¢â€¢ÂªÃ¢â€“â€™Ã¢â€¢ÂªÃ‚Â»Ã¢â€“Ë†ÃƒÂ®';
+                    selectedText.textContent = 'ΓöîΓîÉΓöÿ├¬Γò¬ΓûÆΓò¬┬╗Γûê├«';
                     if (currentFlagEl) currentFlagEl.innerHTML = FLAG_CKB;
                 } else {
                     selectedText.textContent = isMobile ? 'EN' : 'English';
@@ -2798,7 +2798,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_1001"></script>
+    <script src="welcome-disclaimer.js?v=20260918_1002"></script>
 
     <!-- Interstitial Ad Modal ÃŽâ€œÃƒâ€¡ÃƒÂ¶ fires on pagination for free users -->
     <div id="cwInterstitialAdModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.88); align-items:center; justify-content:center;">
