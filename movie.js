@@ -4765,7 +4765,20 @@ function setupVipEventListeners() {
 
       const txIdVal = txInput.value.trim();
       const cryptoSmsInput = document.getElementById("vipSmsPhoneInput");
-      const cryptoSmsVal = cryptoSmsInput ? cryptoSmsInput.value.trim() : "";
+      const cryptoSmsPrefixEl = document.getElementById("vipSmsPrefix");
+      const cryptoPrefix = cryptoSmsPrefixEl ? (cryptoSmsPrefixEl.value || "+964") : "+964";
+      const rawCryptoSmsVal = cryptoSmsInput ? cryptoSmsInput.value.trim() : "";
+      let fullCryptoPhone = "";
+      if (rawCryptoSmsVal) {
+        let cleaned = rawCryptoSmsVal.replace(/[^\d+]/g, '');
+        if (cleaned.startsWith("+")) {
+          fullCryptoPhone = cleaned;
+        } else {
+          if (cleaned.startsWith("0")) cleaned = cleaned.substring(1);
+          fullCryptoPhone = cryptoPrefix + cleaned;
+        }
+      }
+      const cryptoSmsVal = fullCryptoPhone;
       const orderId = "CW-" + Math.floor(100000 + Math.random() * 900000);
       const pendingTx = {
         txId: txIdVal,
