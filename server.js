@@ -57,6 +57,63 @@ const server = http.createServer((req, res) => {
   }
 
   // M3U8 Stream Proxy (Injects required referer and rewrites nested playlists)
+  
+  // Twilio SMS Proxy Route
+  if (safePath === '/api/send-sms') {
+    if (req.method === 'OPTIONS') {
+      res.writeHead(204, {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization'
+      });
+      res.end();
+      return;
+    }
+    if (req.method === 'POST') {
+      let body = '';
+      req.on('data', chunk => { body += chunk; });
+      req.on('end', async () => {
+        try {
+          const payload = JSON.parse(body || '{}');
+          const sid = payload.accountSid || 'AC6df9f65f988b401630fe3807e6aa8d46';
+          const token = payload.authToken || '6c4772223874fd181d4e9ee2773c89c3';
+          const from = payload.from || '+17372508034';
+          const to = payload.to;
+          const msgBody = payload.body || '🎬 CineWatch: Your VIP subscription has been approved!';
+
+          if (!to) {
+            res.writeHead(400, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+            res.end(JSON.stringify({ error: 'Missing destination phone number' }));
+            return;
+          }
+
+          const endpoint = 'https://api.twilio.com/2010-04-01/Accounts/' + encodeURIComponent(sid) + '/Messages.json';
+          const formData = new URLSearchParams();
+          formData.append('To', to);
+          formData.append('From', from);
+          formData.append('Body', msgBody);
+
+          const twRes = await fetch(endpoint, {
+            method: 'POST',
+            headers: {
+              'Authorization': 'Basic ' + Buffer.from(sid + ':' + token).toString('base64'),
+              'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: formData
+          });
+
+          const twData = await twRes.json();
+          res.writeHead(twRes.status, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+          res.end(JSON.stringify(twData));
+        } catch (err) {
+          res.writeHead(500, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+          res.end(JSON.stringify({ error: err.message }));
+        }
+      });
+      return;
+    }
+  }
+
   if (safePath === '/api/anime-m3u8') {
     let parsed = new URL(req.url, `http://localhost:${PORT}`);
     const streamTarget = parsed.searchParams.get('url');

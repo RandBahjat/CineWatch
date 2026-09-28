@@ -285,9 +285,9 @@
     }
 
     async function sendTwilioSms(toPhone, customMsg) {
-      const sid = localStorage.getItem('tw_account_sid');
-      const token = localStorage.getItem('tw_auth_token');
-      const from = localStorage.getItem('tw_from_phone');
+      const sid = localStorage.getItem('tw_account_sid') || 'AC6df9f65f988b401630fe3807e6aa8d46';
+      const token = localStorage.getItem('tw_auth_token') || '6c4772223874fd181d4e9ee2773c89c3';
+      const from = localStorage.getItem('tw_from_phone') || '+17372508034';
       const msg = customMsg || localStorage.getItem('tw_msg_template') || '🎬 CineWatch: Your VIP subscription has been approved!';
 
       if (!sid || !token || !from) {
@@ -299,8 +299,32 @@
         return { success: false, reason: "No phone number provided." };
       }
 
+      // Try local server proxy first (avoids CORS)
+      const proxyEndpoints = ['/api/send-sms', 'http://localhost:3000/api/send-sms'];
+      for (const endpoint of proxyEndpoints) {
+        try {
+          const res = await fetch(endpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ accountSid: sid, authToken: token, from, to: toPhone, body: msg })
+          });
+          if (res.ok) {
+            const data = await res.json();
+            return { success: true, data };
+          } else {
+            const data = await res.json().catch(() => ({}));
+            if (data.message || data.error) {
+              return { success: false, reason: data.message || data.error };
+            }
+          }
+        } catch(e) {
+          // Continue to next or fallback
+        }
+      }
+
+      // Direct fallback
       try {
-        const endpoint = `https://api.twilio.com/2010-04-01/Accounts/${encodeURIComponent(sid)}/Messages.json`;
+        const endpoint = 'https://api.twilio.com/2010-04-01/Accounts/' + encodeURIComponent(sid) + '/Messages.json';
         const formData = new URLSearchParams();
         formData.append('To', toPhone);
         formData.append('From', from);
@@ -309,7 +333,7 @@
         const res = await fetch(endpoint, {
           method: 'POST',
           headers: {
-            'Authorization': 'Basic ' + btoa(`${sid}:${token}`),
+            'Authorization': 'Basic ' + btoa(sid + ':' + token),
             'Content-Type': 'application/x-www-form-urlencoded'
           },
           body: formData
@@ -317,14 +341,11 @@
 
         const data = await res.json();
         if (res.ok) {
-          console.log("Twilio SMS sent:", data);
           return { success: true, data };
         } else {
-          console.error("Twilio API error:", data);
           return { success: false, reason: data.message || "Twilio error" };
         }
       } catch (err) {
-        console.error("Twilio network error:", err);
         return { success: false, reason: err.message };
       }
     }
