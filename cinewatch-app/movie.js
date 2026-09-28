@@ -767,7 +767,7 @@ function setupHeroBanner() {
   heroTrack.innerHTML = featured.map((movie, idx) => {
     const backdropUrl = movie.backdrop || movie.poster || "";
     const bgStyle = backdropUrl ? `style="background-image: url('${backdropUrl}')"` : "";
-    const genresList = (movie.genres || []).slice(0, 3).map(translateGenre).join(" â€¢ ");
+    const genresList = (movie.genres || []).slice(0, 3).map(translateGenre).join(" &bull; ");
 
     return `
       <div class="hero-slide ${idx === 0 ? 'active' : ''}">
@@ -2958,7 +2958,7 @@ function openDetailsModal(movieId) {
     }
 
     if (document.getElementById("detailsGenres")) {
-      document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &middot; ");
+      document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &bull; ");
     }
 
     const userRatingLabel = document.getElementById("userRatingLabel");
