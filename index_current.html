@@ -15,9 +15,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260920_768">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_2745">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_1003">
+    <link rel="stylesheet" href="movie.css?v=20260920_767">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_2744">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_1002">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -135,10 +135,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_8169" defer></script>
-    <script src="series-data.js?v=20260818_8169" defer></script>
-    <script src="anime-data.js?v=20260818_8169" defer></script>
-    <script src="movie.js?v=20260920_767" defer></script>
+    <script src="movies-data.js?v=20260818_8168" defer></script>
+    <script src="series-data.js?v=20260818_8168" defer></script>
+    <script src="anime-data.js?v=20260818_8168" defer></script>
+    <script src="movie.js?v=20260920_766" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -2424,43 +2424,43 @@
             const navAiBtnTextMobile = document.getElementById('navAiBtnTextMobile');
 
             const genreMapKurdish = {
-                'all': '┘ç█ò┘à┘ê┘ê ╪¼█å╪▒█ò┌⌐╪º┘å',
-                'Action': '╪ª╪º┌⌐╪┤┘å',
-                'Adventure': '╪│█ò╪▒┌⌐█Ä╪┤█î',
-                'Animation': '╪ª█ò┘å█î┘à█ò█î╪┤┘å',
-                'Comedy': '┌⌐█å┘à█î╪»█î',
-                'Crime': '╪¬╪º┘ê╪º┘å┌⌐╪º╪▒█î',
-                'Drama': '╪»╪▒╪º┘à╪º',
-                'Family': '╪«█Ä╪▓╪º┘å█î',
-                'Kids': '┘à┘å╪»╪º┌╡╪º┘å',
-                'History': '┘à█Ä┌ÿ┘ê┘ê█î█î',
-                'Fantasy': '┘ü╪º┘å╪¬╪º╪▓█î╪º',
-                'Horror': '╪¬╪▒╪│┘å╪º┌⌐',
-                'Mystery': '┘å┘ç█Ä┘å█î',
-                'Romance': '┌ò█å┘à╪º┘å╪│█î',
-                'Sci-Fi': '╪«█ò█î╪º┌╡█î ╪▓╪º┘å╪│╪¬█î',
-                'Thriller': '┘ç█ò╪│╪¬╪¿╪▓┘ê█Ä┘å',
-                'War': '╪¼█ò┘å┌»'
+                'all': 'Γöÿ├ºΓûê├▓Γöÿ├áΓöÿ├¬Γöÿ├¬ Γò¬┬╝Γûê├ÑΓò¬ΓûÆΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ',
+                'Action': 'Γò¬┬¬Γò¬┬║ΓöîΓîÉΓò¬ΓöñΓöÿ├Ñ',
+                'Adventure': 'Γò¬ΓöéΓûê├▓Γò¬ΓûÆΓöîΓîÉΓûê├äΓò¬ΓöñΓûê├«',
+                'Animation': 'Γò¬┬¬Γûê├▓Γöÿ├ÑΓûê├«Γöÿ├áΓûê├▓Γûê├«Γò¬ΓöñΓöÿ├Ñ',
+                'Comedy': 'ΓöîΓîÉΓûê├ÑΓöÿ├áΓûê├«Γò¬┬╗Γûê├«',
+                'Crime': 'Γò¬┬¼Γò¬┬║Γöÿ├¬Γò¬┬║Γöÿ├ÑΓöîΓîÉΓò¬┬║Γò¬ΓûÆΓûê├«',
+                'Drama': 'Γò¬┬╗Γò¬ΓûÆΓò¬┬║Γöÿ├áΓò¬┬║',
+                'Family': 'Γò¬┬½Γûê├äΓò¬ΓûôΓò¬┬║Γöÿ├ÑΓûê├«',
+                'Kids': 'Γöÿ├áΓöÿ├ÑΓò¬┬╗Γò¬┬║ΓöîΓòíΓò¬┬║Γöÿ├Ñ',
+                'History': 'Γöÿ├áΓûê├äΓöî├┐Γöÿ├¬Γöÿ├¬Γûê├«Γûê├«',
+                'Fantasy': 'Γöÿ├╝Γò¬┬║Γöÿ├ÑΓò¬┬¼Γò¬┬║Γò¬ΓûôΓûê├«Γò¬┬║',
+                'Horror': 'Γò¬┬¼Γò¬ΓûÆΓò¬ΓöéΓöÿ├ÑΓò¬┬║ΓöîΓîÉ',
+                'Mystery': 'Γöÿ├ÑΓöÿ├ºΓûê├äΓöÿ├ÑΓûê├«',
+                'Romance': 'Γöî├▓Γûê├ÑΓöÿ├áΓò¬┬║Γöÿ├ÑΓò¬ΓöéΓûê├«',
+                'Sci-Fi': 'Γò¬┬½Γûê├▓Γûê├«Γò¬┬║ΓöîΓòíΓûê├« Γò¬ΓûôΓò¬┬║Γöÿ├ÑΓò¬ΓöéΓò¬┬¼Γûê├«',
+                'Thriller': 'Γöÿ├ºΓûê├▓Γò¬ΓöéΓò¬┬¼Γò¬┬┐Γò¬ΓûôΓöÿ├¬Γûê├äΓöÿ├Ñ',
+                'War': 'Γò¬┬╝Γûê├▓Γöÿ├ÑΓöî┬╗'
             };
 
             const genreMapArabic = {
-                'all': '╪¼┘à┘è╪╣ ╪º┘ä╪ú┘å┘ê╪º╪╣',
-                'Action': '╪ú┘â╪┤┘å',
-                'Adventure': '┘à╪║╪º┘à╪▒╪⌐',
-                'Animation': '╪▒╪│┘ê┘à ┘à╪¬╪¡╪▒┘â╪⌐',
-                'Comedy': '┘â┘ê┘à┘è╪»┘è╪º',
-                'Crime': '╪¼╪▒┘è┘à╪⌐',
-                'Drama': '╪»╪▒╪º┘à╪º',
-                'Family': '╪╣╪º╪ª┘ä┘è',
-                'Kids': '╪ú╪╖┘ü╪º┘ä',
-                'History': '╪¬╪º╪▒┘è╪«┘è',
-                'Fantasy': '╪«┘è╪º┘ä┘è',
-                'Horror': '╪▒╪╣╪¿',
-                'Mystery': '╪║┘à┘ê╪╢',
-                'Romance': '╪▒┘ê┘à╪º┘å╪│┘è',
-                'Sci-Fi': '╪«┘è╪º┘ä ╪╣┘ä┘à┘è',
-                'Thriller': '╪Ñ╪½╪º╪▒╪⌐',
-                'War': '╪¡╪▒╪¿'
+                'all': 'Γò¬┬╝Γöÿ├áΓöÿ├¿Γò¬Γòú Γò¬┬║Γöÿ├ñΓò¬├║Γöÿ├ÑΓöÿ├¬Γò¬┬║Γò¬Γòú',
+                'Action': 'Γò¬├║Γöÿ├óΓò¬ΓöñΓöÿ├Ñ',
+                'Adventure': 'Γöÿ├áΓò¬ΓòæΓò¬┬║Γöÿ├áΓò¬ΓûÆΓò¬ΓîÉ',
+                'Animation': 'Γò¬ΓûÆΓò¬ΓöéΓöÿ├¬Γöÿ├á Γöÿ├áΓò¬┬¼Γò¬┬íΓò¬ΓûÆΓöÿ├óΓò¬ΓîÉ',
+                'Comedy': 'Γöÿ├óΓöÿ├¬Γöÿ├áΓöÿ├¿Γò¬┬╗Γöÿ├¿Γò¬┬║',
+                'Crime': 'Γò¬┬╝Γò¬ΓûÆΓöÿ├¿Γöÿ├áΓò¬ΓîÉ',
+                'Drama': 'Γò¬┬╗Γò¬ΓûÆΓò¬┬║Γöÿ├áΓò¬┬║',
+                'Family': 'Γò¬ΓòúΓò¬┬║Γò¬┬¬Γöÿ├ñΓöÿ├¿',
+                'Kids': 'Γò¬├║Γò¬ΓòûΓöÿ├╝Γò¬┬║Γöÿ├ñ',
+                'History': 'Γò¬┬¼Γò¬┬║Γò¬ΓûÆΓöÿ├¿Γò¬┬½Γöÿ├¿',
+                'Fantasy': 'Γò¬┬½Γöÿ├¿Γò¬┬║Γöÿ├ñΓöÿ├¿',
+                'Horror': 'Γò¬ΓûÆΓò¬ΓòúΓò¬┬┐',
+                'Mystery': 'Γò¬ΓòæΓöÿ├áΓöÿ├¬Γò¬Γòó',
+                'Romance': 'Γò¬ΓûÆΓöÿ├¬Γöÿ├áΓò¬┬║Γöÿ├ÑΓò¬ΓöéΓöÿ├¿',
+                'Sci-Fi': 'Γò¬┬½Γöÿ├¿Γò¬┬║Γöÿ├ñ Γò¬ΓòúΓöÿ├ñΓöÿ├áΓöÿ├¿',
+                'Thriller': 'Γò¬├æΓò¬┬╜Γò¬┬║Γò¬ΓûÆΓò¬ΓîÉ',
+                'War': 'Γò¬┬íΓò¬ΓûÆΓò¬┬┐'
             };
 
             const genreMapEnglish = {
@@ -2485,148 +2485,148 @@
 
             if (currentLang === 'ckb') {
                 const navBrowseText = document.getElementById('navBrowseText');
-                if (navBrowseText) navBrowseText.textContent = '┌»█ò┌ò╪º┘å';
+                if (navBrowseText) navBrowseText.textContent = 'Γöî┬╗Γûê├▓Γöî├▓Γò¬┬║Γöÿ├Ñ';
                 const browseHeaderTitle = document.getElementById('browseHeaderTitle');
-                if (browseHeaderTitle) browseHeaderTitle.textContent = '┌»█ò┌ò╪º┘å';
+                if (browseHeaderTitle) browseHeaderTitle.textContent = 'Γöî┬╗Γûê├▓Γöî├▓Γò¬┬║Γöÿ├Ñ';
                 const browseSecContent = document.getElementById('browseSecContent');
-                if (browseSecContent) browseSecContent.textContent = '┘å╪º┘ê█ò┌ò█å┌⌐';
+                if (browseSecContent) browseSecContent.textContent = 'Γöÿ├ÑΓò¬┬║Γöÿ├¬Γûê├▓Γöî├▓Γûê├ÑΓöîΓîÉ';
                 const browseSecPersonal = document.getElementById('browseSecPersonal');
-                if (browseSecPersonal) browseSecPersonal.textContent = '╪¬╪º█î╪¿█ò╪¬';
+                if (browseSecPersonal) browseSecPersonal.textContent = 'Γò¬┬¼Γò¬┬║Γûê├«Γò¬┬┐Γûê├▓Γò¬┬¼';
                 const browseSecMore = document.getElementById('browseSecMore');
-                if (browseSecMore) browseSecMore.textContent = '╪▓█î╪º╪¬╪▒';
+                if (browseSecMore) browseSecMore.textContent = 'Γò¬ΓûôΓûê├«Γò¬┬║Γò¬┬¼Γò¬ΓûÆ';
                 const browseLabelMovies = document.getElementById('browseLabelMovies');
-                if (browseLabelMovies) browseLabelMovies.textContent = '┘ü█î┘ä┘à█ò┌⌐╪º┘å';
+                if (browseLabelMovies) browseLabelMovies.textContent = 'Γöÿ├╝Γûê├«Γöÿ├ñΓöÿ├áΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
                 const browseLabelSeries = document.getElementById('browseLabelSeries');
-                if (browseLabelSeries) browseLabelSeries.textContent = '╪▓┘å╪¼█î╪▒█ò┌⌐╪º┘å';
+                if (browseLabelSeries) browseLabelSeries.textContent = 'Γò¬ΓûôΓöÿ├ÑΓò¬┬╝Γûê├«Γò¬ΓûÆΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
                 const browseLabelAnime = document.getElementById('browseLabelAnime');
-                if (browseLabelAnime) browseLabelAnime.textContent = '╪ª█ò┘å█î┘à█î';
+                if (browseLabelAnime) browseLabelAnime.textContent = 'Γò¬┬¬Γûê├▓Γöÿ├ÑΓûê├«Γöÿ├áΓûê├«';
                 const browseLabelContinue = document.getElementById('browseLabelContinue');
-                if (browseLabelContinue) browseLabelContinue.textContent = '╪¿█ò╪▒╪»█ò┘ê╪º┘à╪¿┘ê┘ê┘å';
+                if (browseLabelContinue) browseLabelContinue.textContent = 'Γò¬┬┐Γûê├▓Γò¬ΓûÆΓò¬┬╗Γûê├▓Γöÿ├¬Γò¬┬║Γöÿ├áΓò¬┬┐Γöÿ├¬Γöÿ├¬Γöÿ├Ñ';
                 const browseLabelWatchlist = document.getElementById('browseLabelWatchlist');
-                if (browseLabelWatchlist) browseLabelWatchlist.textContent = '╪»┌╡╪«┘ê╪º╪▓█ò┌⌐╪º┘å';
+                if (browseLabelWatchlist) browseLabelWatchlist.textContent = 'Γò¬┬╗ΓöîΓòíΓò¬┬½Γöÿ├¬Γò¬┬║Γò¬ΓûôΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
                 const browseLabelDownload = document.getElementById('browseLabelDownload');
-                if (browseLabelDownload) browseLabelDownload.textContent = '╪»╪º┌»╪▒╪¬┘å';
+                if (browseLabelDownload) browseLabelDownload.textContent = 'Γò¬┬╗Γò¬┬║Γöî┬╗Γò¬ΓûÆΓò¬┬¼Γöÿ├Ñ';
                 const browseLabelAi = document.getElementById('browseLabelAi');
-                if (browseLabelAi) browseLabelAi.textContent = '█î╪º╪▒┘à█ò╪¬█î╪»█ò╪▒█î ╪▓█î╪▒█ò┌⌐';
+                if (browseLabelAi) browseLabelAi.textContent = 'Γûê├«Γò¬┬║Γò¬ΓûÆΓöÿ├áΓûê├▓Γò¬┬¼Γûê├«Γò¬┬╗Γûê├▓Γò¬ΓûÆΓûê├« Γò¬ΓûôΓûê├«Γò¬ΓûÆΓûê├▓ΓöîΓîÉ';
                 const browseLabelReport = document.getElementById('browseLabelReport');
-                if (browseLabelReport) browseLabelReport.textContent = '╪▒█î┘╛█å╪▒╪¬';
+                if (browseLabelReport) browseLabelReport.textContent = 'Γò¬ΓûÆΓûê├«ΓöÿΓò¢Γûê├ÑΓò¬ΓûÆΓò¬┬¼';
 
-                if (loginPwLabel) loginPwLabel.textContent = '┘ê╪┤█ò█î ┘å┘ç█Ä┘å█î';
-                if (signupPwLabel) signupPwLabel.textContent = '┘ê╪┤█ò█î ┘å┘ç█Ä┘å█î';
-                if (loginPwInput) loginPwInput.placeholder = 'ΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇó';
-                if (signupPwInput) signupPwInput.placeholder = 'ΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇó';
-                if (signupEmailLabel) signupEmailLabel.textContent = '╪ª█î┘à█ò█î┌╡';
-                if (textTabSignup) textTabSignup.textContent = '╪»╪▒┘ê╪│╪¬┌⌐╪▒╪»┘å█î ┘ç█ò┌ÿ┘à╪º╪▒';
-                if (textBtnSignup) textBtnSignup.textContent = '╪»╪▒┘ê╪│╪¬┌⌐╪▒╪»┘å█î ┘ç█ò┌ÿ┘à╪º╪▒';
-                if (signupEmailInput) signupEmailInput.placeholder = '╪ª█î┘à█ò█î┌╡';
-                if (labelDirector) labelDirector.textContent = '╪»█ò╪▒┘ç█Ä┘å█ò╪▒:';
-                if (labelCast) labelCast.textContent = '╪ª█ò┌⌐╪¬█ò╪▒█ò┌⌐╪º┘å:';
-                if (navSeries1) navSeries1.textContent = '╪▓┘å╪¼█î╪▒█ò┌⌐╪º┘å';
-                if (navSeries2) navSeries2.textContent = '╪▓┘å╪¼█î╪▒█ò┌⌐╪º┘å';
-                if (navHome1) navHome1.textContent = '╪│█ò╪▒█ò┌⌐█î';
-                if (navHome2) navHome2.textContent = '╪│█ò╪▒█ò┌⌐█î';
-                if (navMovies1) navMovies1.textContent = '┘ü█î┘ä┘à█ò┌⌐╪º┘å';
-                if (navMovies2) navMovies2.textContent = '┘ü█î┘ä┘à█ò┌⌐╪º┘å';
-                if (navAnime1) navAnime1.textContent = '╪ª█ò┘å█î┘à█î';
-                if (navAnime2) navAnime2.textContent = '╪ª█ò┘å█î┘à█î';
-                if (navContinue1) navContinue1.textContent = '╪¿█ò╪▒╪»█ò┘ê╪º┘à╪¿┘ê┘ê┘å';
-                if (navContinue2) navContinue2.textContent = '╪¿█ò╪▒╪»█ò┘ê╪º┘à╪¿┘ê┘ê┘å';
-                if (navWatchlist1) navWatchlist1.textContent = '╪»┌╡╪«┘ê╪º╪▓█ò┌⌐╪º┘å';
-                if (navWatchlist2) navWatchlist2.textContent = '╪»┌╡╪«┘ê╪º╪▓█ò┌⌐╪º┘å';
-                if (continueShelfTitle) continueShelfTitle.textContent = '╪¿█ò╪▒╪»█ò┘ê╪º┘à ╪¿█ò ┘ä█ò ╪│█ò█î╪▒┌⌐╪▒╪»┘å';
-                if (continueShelfSubtitle) continueShelfSubtitle.textContent = '┌ò█Ä┌⌐ ┘ä█ò┘ê ╪┤┘ê█Ä┘å█ò ╪»█ò╪│╪¬┘╛█Ä╪¿┌⌐█ò┘ê█ò ┌⌐█ò ┘ä█Ä█î ┘ê█ò╪│╪¬╪º╪¿┘ê┘ê█î';
-                if (navAiBtnText) navAiBtnText.textContent = '█î╪º╪▒┘à█ò╪¬█î╪»█ò╪▒█î ╪▓█î╪▒█ò┌⌐';
-                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = '█î╪º╪▒┘à█ò╪¬█î╪»█ò╪▒█î ╪▓█î╪▒█ò┌⌐';
+                if (loginPwLabel) loginPwLabel.textContent = 'Γöÿ├¬Γò¬ΓöñΓûê├▓Γûê├« Γöÿ├ÑΓöÿ├ºΓûê├äΓöÿ├ÑΓûê├«';
+                if (signupPwLabel) signupPwLabel.textContent = 'Γöÿ├¬Γò¬ΓöñΓûê├▓Γûê├« Γöÿ├ÑΓöÿ├ºΓûê├äΓöÿ├ÑΓûê├«';
+                if (loginPwInput) loginPwInput.placeholder = '╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│';
+                if (signupPwInput) signupPwInput.placeholder = '╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│';
+                if (signupEmailLabel) signupEmailLabel.textContent = 'Γò¬┬¬Γûê├«Γöÿ├áΓûê├▓Γûê├«ΓöîΓòí';
+                if (textTabSignup) textTabSignup.textContent = 'Γò¬┬╗Γò¬ΓûÆΓöÿ├¬Γò¬ΓöéΓò¬┬¼ΓöîΓîÉΓò¬ΓûÆΓò¬┬╗Γöÿ├ÑΓûê├« Γöÿ├ºΓûê├▓Γöî├┐Γöÿ├áΓò¬┬║Γò¬ΓûÆ';
+                if (textBtnSignup) textBtnSignup.textContent = 'Γò¬┬╗Γò¬ΓûÆΓöÿ├¬Γò¬ΓöéΓò¬┬¼ΓöîΓîÉΓò¬ΓûÆΓò¬┬╗Γöÿ├ÑΓûê├« Γöÿ├ºΓûê├▓Γöî├┐Γöÿ├áΓò¬┬║Γò¬ΓûÆ';
+                if (signupEmailInput) signupEmailInput.placeholder = 'Γò¬┬¬Γûê├«Γöÿ├áΓûê├▓Γûê├«ΓöîΓòí';
+                if (labelDirector) labelDirector.textContent = 'Γò¬┬╗Γûê├▓Γò¬ΓûÆΓöÿ├ºΓûê├äΓöÿ├ÑΓûê├▓Γò¬ΓûÆ:';
+                if (labelCast) labelCast.textContent = 'Γò¬┬¬Γûê├▓ΓöîΓîÉΓò¬┬¼Γûê├▓Γò¬ΓûÆΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ:';
+                if (navSeries1) navSeries1.textContent = 'Γò¬ΓûôΓöÿ├ÑΓò¬┬╝Γûê├«Γò¬ΓûÆΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
+                if (navSeries2) navSeries2.textContent = 'Γò¬ΓûôΓöÿ├ÑΓò¬┬╝Γûê├«Γò¬ΓûÆΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
+                if (navHome1) navHome1.textContent = 'Γò¬ΓöéΓûê├▓Γò¬ΓûÆΓûê├▓ΓöîΓîÉΓûê├«';
+                if (navHome2) navHome2.textContent = 'Γò¬ΓöéΓûê├▓Γò¬ΓûÆΓûê├▓ΓöîΓîÉΓûê├«';
+                if (navMovies1) navMovies1.textContent = 'Γöÿ├╝Γûê├«Γöÿ├ñΓöÿ├áΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
+                if (navMovies2) navMovies2.textContent = 'Γöÿ├╝Γûê├«Γöÿ├ñΓöÿ├áΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
+                if (navAnime1) navAnime1.textContent = 'Γò¬┬¬Γûê├▓Γöÿ├ÑΓûê├«Γöÿ├áΓûê├«';
+                if (navAnime2) navAnime2.textContent = 'Γò¬┬¬Γûê├▓Γöÿ├ÑΓûê├«Γöÿ├áΓûê├«';
+                if (navContinue1) navContinue1.textContent = 'Γò¬┬┐Γûê├▓Γò¬ΓûÆΓò¬┬╗Γûê├▓Γöÿ├¬Γò¬┬║Γöÿ├áΓò¬┬┐Γöÿ├¬Γöÿ├¬Γöÿ├Ñ';
+                if (navContinue2) navContinue2.textContent = 'Γò¬┬┐Γûê├▓Γò¬ΓûÆΓò¬┬╗Γûê├▓Γöÿ├¬Γò¬┬║Γöÿ├áΓò¬┬┐Γöÿ├¬Γöÿ├¬Γöÿ├Ñ';
+                if (navWatchlist1) navWatchlist1.textContent = 'Γò¬┬╗ΓöîΓòíΓò¬┬½Γöÿ├¬Γò¬┬║Γò¬ΓûôΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
+                if (navWatchlist2) navWatchlist2.textContent = 'Γò¬┬╗ΓöîΓòíΓò¬┬½Γöÿ├¬Γò¬┬║Γò¬ΓûôΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
+                if (continueShelfTitle) continueShelfTitle.textContent = 'Γò¬┬┐Γûê├▓Γò¬ΓûÆΓò¬┬╗Γûê├▓Γöÿ├¬Γò¬┬║Γöÿ├á Γò¬┬┐Γûê├▓ Γöÿ├ñΓûê├▓ Γò¬ΓöéΓûê├▓Γûê├«Γò¬ΓûÆΓöîΓîÉΓò¬ΓûÆΓò¬┬╗Γöÿ├Ñ';
+                if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'Γöî├▓Γûê├äΓöîΓîÉ Γöÿ├ñΓûê├▓Γöÿ├¬ Γò¬ΓöñΓöÿ├¬Γûê├äΓöÿ├ÑΓûê├▓ Γò¬┬╗Γûê├▓Γò¬ΓöéΓò¬┬¼ΓöÿΓò¢Γûê├äΓò¬┬┐ΓöîΓîÉΓûê├▓Γöÿ├¬Γûê├▓ ΓöîΓîÉΓûê├▓ Γöÿ├ñΓûê├äΓûê├« Γöÿ├¬Γûê├▓Γò¬ΓöéΓò¬┬¼Γò¬┬║Γò¬┬┐Γöÿ├¬Γöÿ├¬Γûê├«';
+                if (navAiBtnText) navAiBtnText.textContent = 'Γûê├«Γò¬┬║Γò¬ΓûÆΓöÿ├áΓûê├▓Γò¬┬¼Γûê├«Γò¬┬╗Γûê├▓Γò¬ΓûÆΓûê├« Γò¬ΓûôΓûê├«Γò¬ΓûÆΓûê├▓ΓöîΓîÉ';
+                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = 'Γûê├«Γò¬┬║Γò¬ΓûÆΓöÿ├áΓûê├▓Γò¬┬¼Γûê├«Γò¬┬╗Γûê├▓Γò¬ΓûÆΓûê├« Γò¬ΓûôΓûê├«Γò¬ΓûÆΓûê├▓ΓöîΓîÉ';
                 const aiOnlineText = document.getElementById('aiOnlineText');
-                if (aiOnlineText) aiOnlineText.textContent = '█î╪º╪▒┘à█ò╪¬█î╪»█ò╪▒█î ╪▓█î╪▒█ò┌⌐';
-                if (filterBtnText) filterBtnText.textContent = '┘ü█î┘ä┘à ┘ê ╪▓┘å╪¼█î╪▒█ò';
-                if (filterOptAll) filterOptAll.textContent = '┘ü█î┘ä┘à ┘ê ╪▓┘å╪¼█î╪▒█ò';
-                if (filterOptMovie) filterOptMovie.textContent = '╪¬█ò┘å┘ç╪º ┘ü█î┘ä┘à';
-                if (filterOptSeries) filterOptSeries.textContent = '╪¬█ò┘å┘ç╪º ╪▓┘å╪¼█î╪▒█ò';
+                if (aiOnlineText) aiOnlineText.textContent = 'Γûê├«Γò¬┬║Γò¬ΓûÆΓöÿ├áΓûê├▓Γò¬┬¼Γûê├«Γò¬┬╗Γûê├▓Γò¬ΓûÆΓûê├« Γò¬ΓûôΓûê├«Γò¬ΓûÆΓûê├▓ΓöîΓîÉ';
+                if (filterBtnText) filterBtnText.textContent = 'Γöÿ├╝Γûê├«Γöÿ├ñΓöÿ├á Γöÿ├¬ Γò¬ΓûôΓöÿ├ÑΓò¬┬╝Γûê├«Γò¬ΓûÆΓûê├▓';
+                if (filterOptAll) filterOptAll.textContent = 'Γöÿ├╝Γûê├«Γöÿ├ñΓöÿ├á Γöÿ├¬ Γò¬ΓûôΓöÿ├ÑΓò¬┬╝Γûê├«Γò¬ΓûÆΓûê├▓';
+                if (filterOptMovie) filterOptMovie.textContent = 'Γò¬┬¼Γûê├▓Γöÿ├ÑΓöÿ├ºΓò¬┬║ Γöÿ├╝Γûê├«Γöÿ├ñΓöÿ├á';
+                if (filterOptSeries) filterOptSeries.textContent = 'Γò¬┬¼Γûê├▓Γöÿ├ÑΓöÿ├ºΓò¬┬║ Γò¬ΓûôΓöÿ├ÑΓò¬┬╝Γûê├«Γò¬ΓûÆΓûê├▓';
                 document.querySelectorAll('.browse-filter-btn').forEach(btn => {
                     const g = btn.getAttribute('data-genre');
                     if (genreMapKurdish[g]) btn.textContent = genreMapKurdish[g];
                 });
-                document.querySelectorAll('.download-text').forEach(el => el.textContent = '╪»╪º┌»╪▒╪¬┘å');
-                document.querySelectorAll('.report-text').forEach(el => el.textContent = '╪▒█î┘╛█å╪▒╪¬');
+                document.querySelectorAll('.download-text').forEach(el => el.textContent = 'Γò¬┬╗Γò¬┬║Γöî┬╗Γò¬ΓûÆΓò¬┬¼Γöÿ├Ñ');
+                document.querySelectorAll('.report-text').forEach(el => el.textContent = 'Γò¬ΓûÆΓûê├«ΓöÿΓò¢Γûê├ÑΓò¬ΓûÆΓò¬┬¼');
                 const detailsReportBtn = document.getElementById('detailsReportBtn');
-                if (detailsReportBtn) detailsReportBtn.textContent = '╪▒█î┘╛█å╪▒╪¬';
+                if (detailsReportBtn) detailsReportBtn.textContent = 'Γò¬ΓûÆΓûê├«ΓöÿΓò¢Γûê├ÑΓò¬ΓûÆΓò¬┬¼';
                 const detailsSimilarsText = document.getElementById('detailsSimilarsText');
-                if (detailsSimilarsText) detailsSimilarsText.textContent = '┘ç╪º┘ê╪┤█Ä┘ê█ò';
+                if (detailsSimilarsText) detailsSimilarsText.textContent = 'Γöÿ├ºΓò¬┬║Γöÿ├¬Γò¬ΓöñΓûê├äΓöÿ├¬Γûê├▓';
                 const detailsSimilarsHeading = document.getElementById('detailsSimilarsHeading');
-                if (detailsSimilarsHeading) detailsSimilarsHeading.textContent = '╪¿█ò╪▒┘ç█ò┘à█î ┘ç╪º┘ê╪┤█Ä┘ê█ò';
+                if (detailsSimilarsHeading) detailsSimilarsHeading.textContent = 'Γò¬┬┐Γûê├▓Γò¬ΓûÆΓöÿ├ºΓûê├▓Γöÿ├áΓûê├« Γöÿ├ºΓò¬┬║Γöÿ├¬Γò¬ΓöñΓûê├äΓöÿ├¬Γûê├▓';
                 const commentsTitleHeading = document.getElementById('commentsTitleHeading');
-                if (commentsTitleHeading) commentsTitleHeading.textContent = '╪¿█å┌å┘ê┘ê┘å█ò┌⌐╪º┘å';
+                if (commentsTitleHeading) commentsTitleHeading.textContent = 'Γò¬┬┐Γûê├ÑΓöî├ÑΓöÿ├¬Γöÿ├¬Γöÿ├ÑΓûê├▓ΓöîΓîÉΓò¬┬║Γöÿ├Ñ';
             } else if (currentLang === 'ar') {
                 const navBrowseText = document.getElementById('navBrowseText');
-                if (navBrowseText) navBrowseText.textContent = '╪¬╪╡┘ü╪¡';
+                if (navBrowseText) navBrowseText.textContent = 'Γò¬┬¼Γò¬ΓòíΓöÿ├╝Γò¬┬í';
                 const browseHeaderTitle = document.getElementById('browseHeaderTitle');
-                if (browseHeaderTitle) browseHeaderTitle.textContent = '╪¬╪╡┘ü╪¡';
+                if (browseHeaderTitle) browseHeaderTitle.textContent = 'Γò¬┬¼Γò¬ΓòíΓöÿ├╝Γò¬┬í';
                 const browseSecContent = document.getElementById('browseSecContent');
-                if (browseSecContent) browseSecContent.textContent = '╪º┘ä┘à╪¡╪¬┘ê┘ë';
+                if (browseSecContent) browseSecContent.textContent = 'Γò¬┬║Γöÿ├ñΓöÿ├áΓò¬┬íΓò¬┬¼Γöÿ├¬Γöÿ├½';
                 const browseSecPersonal = document.getElementById('browseSecPersonal');
-                if (browseSecPersonal) browseSecPersonal.textContent = '╪┤╪«╪╡┘è';
+                if (browseSecPersonal) browseSecPersonal.textContent = 'Γò¬ΓöñΓò¬┬½Γò¬ΓòíΓöÿ├¿';
                 const browseSecMore = document.getElementById('browseSecMore');
-                if (browseSecMore) browseSecMore.textContent = '╪º┘ä┘à╪▓┘è╪»';
+                if (browseSecMore) browseSecMore.textContent = 'Γò¬┬║Γöÿ├ñΓöÿ├áΓò¬ΓûôΓöÿ├¿Γò¬┬╗';
                 const browseLabelMovies = document.getElementById('browseLabelMovies');
-                if (browseLabelMovies) browseLabelMovies.textContent = '╪ú┘ü┘ä╪º┘à';
+                if (browseLabelMovies) browseLabelMovies.textContent = 'Γò¬├║Γöÿ├╝Γöÿ├ñΓò¬┬║Γöÿ├á';
                 const browseLabelSeries = document.getElementById('browseLabelSeries');
-                if (browseLabelSeries) browseLabelSeries.textContent = '┘à╪│┘ä╪│┘ä╪º╪¬';
+                if (browseLabelSeries) browseLabelSeries.textContent = 'Γöÿ├áΓò¬ΓöéΓöÿ├ñΓò¬ΓöéΓöÿ├ñΓò¬┬║Γò¬┬¼';
                 const browseLabelAnime = document.getElementById('browseLabelAnime');
-                if (browseLabelAnime) browseLabelAnime.textContent = '╪º┘ä╪ú┘å┘à┘è';
+                if (browseLabelAnime) browseLabelAnime.textContent = 'Γò¬┬║Γöÿ├ñΓò¬├║Γöÿ├ÑΓöÿ├áΓöÿ├¿';
                 const browseLabelContinue = document.getElementById('browseLabelContinue');
-                if (browseLabelContinue) browseLabelContinue.textContent = '┘à╪¬╪º╪¿╪╣╪⌐';
+                if (browseLabelContinue) browseLabelContinue.textContent = 'Γöÿ├áΓò¬┬¼Γò¬┬║Γò¬┬┐Γò¬ΓòúΓò¬ΓîÉ';
                 const browseLabelWatchlist = document.getElementById('browseLabelWatchlist');
-                if (browseLabelWatchlist) browseLabelWatchlist.textContent = '┘é╪º╪ª┘à╪¬┘è';
+                if (browseLabelWatchlist) browseLabelWatchlist.textContent = 'Γöÿ├⌐Γò¬┬║Γò¬┬¬Γöÿ├áΓò¬┬¼Γöÿ├¿';
                 const browseLabelDownload = document.getElementById('browseLabelDownload');
-                if (browseLabelDownload) browseLabelDownload.textContent = '╪¬╪¡┘à┘è┘ä';
+                if (browseLabelDownload) browseLabelDownload.textContent = 'Γò¬┬¼Γò¬┬íΓöÿ├áΓöÿ├¿Γöÿ├ñ';
                 const browseLabelAi = document.getElementById('browseLabelAi');
-                if (browseLabelAi) browseLabelAi.textContent = '╪º┘ä╪░┘â╪º╪í ╪º┘ä╪º╪╡╪╖┘å╪º╪╣┘è';
+                if (browseLabelAi) browseLabelAi.textContent = 'Γò¬┬║Γöÿ├ñΓò¬ΓûæΓöÿ├óΓò¬┬║Γò¬├¡ Γò¬┬║Γöÿ├ñΓò¬┬║Γò¬ΓòíΓò¬ΓòûΓöÿ├ÑΓò¬┬║Γò¬ΓòúΓöÿ├¿';
                 const browseLabelReport = document.getElementById('browseLabelReport');
-                if (browseLabelReport) browseLabelReport.textContent = '╪Ñ╪¿┘ä╪º╪║';
+                if (browseLabelReport) browseLabelReport.textContent = 'Γò¬├æΓò¬┬┐Γöÿ├ñΓò¬┬║Γò¬Γòæ';
 
-                if (loginPwLabel) loginPwLabel.textContent = '┘â┘ä┘à╪⌐ ╪º┘ä┘à╪▒┘ê╪▒';
-                if (signupPwLabel) signupPwLabel.textContent = '┘â┘ä┘à╪⌐ ╪º┘ä┘à╪▒┘ê╪▒';
-                if (loginPwInput) loginPwInput.placeholder = 'ΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇó';
-                if (signupPwInput) signupPwInput.placeholder = 'ΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇó';
-                if (signupEmailLabel) signupEmailLabel.textContent = '╪º┘ä╪¿╪▒┘è╪» ╪º┘ä╪Ñ┘ä┘â╪¬╪▒┘ê┘å┘è';
-                if (textTabSignup) textTabSignup.textContent = '╪Ñ┘å╪┤╪º╪í ╪¡╪│╪º╪¿';
-                if (textBtnSignup) textBtnSignup.textContent = '╪Ñ┘å╪┤╪º╪í ╪¡╪│╪º╪¿';
-                if (signupEmailInput) signupEmailInput.placeholder = '╪º┘ä╪¿╪▒┘è╪» ╪º┘ä╪Ñ┘ä┘â╪¬╪▒┘ê┘å┘è';
-                if (labelDirector) labelDirector.textContent = '╪º┘ä┘à╪«╪▒╪¼:';
-                if (labelCast) labelCast.textContent = '╪╖╪º┘é┘à ╪º┘ä╪╣┘à┘ä:';
-                if (navSeries1) navSeries1.textContent = '┘à╪│┘ä╪│┘ä╪º╪¬';
-                if (navSeries2) navSeries2.textContent = '┘à╪│┘ä╪│┘ä╪º╪¬';
-                if (navHome1) navHome1.textContent = '╪º┘ä╪▒╪ª┘è╪│┘è╪⌐';
-                if (navHome2) navHome2.textContent = '╪º┘ä╪▒╪ª┘è╪│┘è╪⌐';
-                if (navMovies1) navMovies1.textContent = '╪ú┘ü┘ä╪º┘à';
-                if (navMovies2) navMovies2.textContent = '╪ú┘ü┘ä╪º┘à';
-                if (navAnime1) navAnime1.textContent = '╪º┘ä╪ú┘å┘à┘è';
-                if (navAnime2) navAnime2.textContent = '╪º┘ä╪ú┘å┘à┘è';
-                if (navContinue1) navContinue1.textContent = '┘à╪¬╪º╪¿╪╣╪⌐';
-                if (navContinue2) navContinue2.textContent = '┘à╪¬╪º╪¿╪╣╪⌐';
-                if (navWatchlist1) navWatchlist1.textContent = '┘é╪º╪ª┘à╪¬┘è';
-                if (navWatchlist2) navWatchlist2.textContent = '┘é╪º╪ª┘à╪¬┘è';
-                if (continueShelfTitle) continueShelfTitle.textContent = '┘à╪¬╪º╪¿╪╣╪⌐ ╪º┘ä┘à╪┤╪º┘ç╪»╪⌐';
-                if (continueShelfSubtitle) continueShelfSubtitle.textContent = '╪¬╪º╪¿╪╣ ┘à┘å ╪¡┘è╪½ ╪¬┘ê┘é┘ü╪¬';
-                if (navAiBtnText) navAiBtnText.textContent = '╪º┘ä╪░┘â╪º╪í ╪º┘ä╪º╪╡╪╖┘å╪º╪╣┘è';
-                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = '╪º┘ä╪░┘â╪º╪í ╪º┘ä╪º╪╡╪╖┘å╪º╪╣┘è';
-                if (filterBtnText) filterBtnText.textContent = '╪ú┘ü┘ä╪º┘à ┘ê┘à╪│┘ä╪│┘ä╪º╪¬';
-                if (filterOptAll) filterOptAll.textContent = '╪ú┘ü┘ä╪º┘à ┘ê┘à╪│┘ä╪│┘ä╪º╪¬';
-                if (filterOptMovie) filterOptMovie.textContent = '╪ú┘ü┘ä╪º┘à ┘ü┘é╪╖';
-                if (filterOptSeries) filterOptSeries.textContent = '┘à╪│┘ä╪│┘ä╪º╪¬ ┘ü┘é╪╖';
+                if (loginPwLabel) loginPwLabel.textContent = 'Γöÿ├óΓöÿ├ñΓöÿ├áΓò¬ΓîÉ Γò¬┬║Γöÿ├ñΓöÿ├áΓò¬ΓûÆΓöÿ├¬Γò¬ΓûÆ';
+                if (signupPwLabel) signupPwLabel.textContent = 'Γöÿ├óΓöÿ├ñΓöÿ├áΓò¬ΓîÉ Γò¬┬║Γöÿ├ñΓöÿ├áΓò¬ΓûÆΓöÿ├¬Γò¬ΓûÆ';
+                if (loginPwInput) loginPwInput.placeholder = '╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│';
+                if (signupPwInput) signupPwInput.placeholder = '╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│';
+                if (signupEmailLabel) signupEmailLabel.textContent = 'Γò¬┬║Γöÿ├ñΓò¬┬┐Γò¬ΓûÆΓöÿ├¿Γò¬┬╗ Γò¬┬║Γöÿ├ñΓò¬├æΓöÿ├ñΓöÿ├óΓò¬┬¼Γò¬ΓûÆΓöÿ├¬Γöÿ├ÑΓöÿ├¿';
+                if (textTabSignup) textTabSignup.textContent = 'Γò¬├æΓöÿ├ÑΓò¬ΓöñΓò¬┬║Γò¬├¡ Γò¬┬íΓò¬ΓöéΓò¬┬║Γò¬┬┐';
+                if (textBtnSignup) textBtnSignup.textContent = 'Γò¬├æΓöÿ├ÑΓò¬ΓöñΓò¬┬║Γò¬├¡ Γò¬┬íΓò¬ΓöéΓò¬┬║Γò¬┬┐';
+                if (signupEmailInput) signupEmailInput.placeholder = 'Γò¬┬║Γöÿ├ñΓò¬┬┐Γò¬ΓûÆΓöÿ├¿Γò¬┬╗ Γò¬┬║Γöÿ├ñΓò¬├æΓöÿ├ñΓöÿ├óΓò¬┬¼Γò¬ΓûÆΓöÿ├¬Γöÿ├ÑΓöÿ├¿';
+                if (labelDirector) labelDirector.textContent = 'Γò¬┬║Γöÿ├ñΓöÿ├áΓò¬┬½Γò¬ΓûÆΓò¬┬╝:';
+                if (labelCast) labelCast.textContent = 'Γò¬ΓòûΓò¬┬║Γöÿ├⌐Γöÿ├á Γò¬┬║Γöÿ├ñΓò¬ΓòúΓöÿ├áΓöÿ├ñ:';
+                if (navSeries1) navSeries1.textContent = 'Γöÿ├áΓò¬ΓöéΓöÿ├ñΓò¬ΓöéΓöÿ├ñΓò¬┬║Γò¬┬¼';
+                if (navSeries2) navSeries2.textContent = 'Γöÿ├áΓò¬ΓöéΓöÿ├ñΓò¬ΓöéΓöÿ├ñΓò¬┬║Γò¬┬¼';
+                if (navHome1) navHome1.textContent = 'Γò¬┬║Γöÿ├ñΓò¬ΓûÆΓò¬┬¬Γöÿ├¿Γò¬ΓöéΓöÿ├¿Γò¬ΓîÉ';
+                if (navHome2) navHome2.textContent = 'Γò¬┬║Γöÿ├ñΓò¬ΓûÆΓò¬┬¬Γöÿ├¿Γò¬ΓöéΓöÿ├¿Γò¬ΓîÉ';
+                if (navMovies1) navMovies1.textContent = 'Γò¬├║Γöÿ├╝Γöÿ├ñΓò¬┬║Γöÿ├á';
+                if (navMovies2) navMovies2.textContent = 'Γò¬├║Γöÿ├╝Γöÿ├ñΓò¬┬║Γöÿ├á';
+                if (navAnime1) navAnime1.textContent = 'Γò¬┬║Γöÿ├ñΓò¬├║Γöÿ├ÑΓöÿ├áΓöÿ├¿';
+                if (navAnime2) navAnime2.textContent = 'Γò¬┬║Γöÿ├ñΓò¬├║Γöÿ├ÑΓöÿ├áΓöÿ├¿';
+                if (navContinue1) navContinue1.textContent = 'Γöÿ├áΓò¬┬¼Γò¬┬║Γò¬┬┐Γò¬ΓòúΓò¬ΓîÉ';
+                if (navContinue2) navContinue2.textContent = 'Γöÿ├áΓò¬┬¼Γò¬┬║Γò¬┬┐Γò¬ΓòúΓò¬ΓîÉ';
+                if (navWatchlist1) navWatchlist1.textContent = 'Γöÿ├⌐Γò¬┬║Γò¬┬¬Γöÿ├áΓò¬┬¼Γöÿ├¿';
+                if (navWatchlist2) navWatchlist2.textContent = 'Γöÿ├⌐Γò¬┬║Γò¬┬¬Γöÿ├áΓò¬┬¼Γöÿ├¿';
+                if (continueShelfTitle) continueShelfTitle.textContent = 'Γöÿ├áΓò¬┬¼Γò¬┬║Γò¬┬┐Γò¬ΓòúΓò¬ΓîÉ Γò¬┬║Γöÿ├ñΓöÿ├áΓò¬ΓöñΓò¬┬║Γöÿ├ºΓò¬┬╗Γò¬ΓîÉ';
+                if (continueShelfSubtitle) continueShelfSubtitle.textContent = 'Γò¬┬¼Γò¬┬║Γò¬┬┐Γò¬Γòú Γöÿ├áΓöÿ├Ñ Γò¬┬íΓöÿ├¿Γò¬┬╜ Γò¬┬¼Γöÿ├¬Γöÿ├⌐Γöÿ├╝Γò¬┬¼';
+                if (navAiBtnText) navAiBtnText.textContent = 'Γò¬┬║Γöÿ├ñΓò¬ΓûæΓöÿ├óΓò¬┬║Γò¬├¡ Γò¬┬║Γöÿ├ñΓò¬┬║Γò¬ΓòíΓò¬ΓòûΓöÿ├ÑΓò¬┬║Γò¬ΓòúΓöÿ├¿';
+                if (navAiBtnTextMobile) navAiBtnTextMobile.textContent = 'Γò¬┬║Γöÿ├ñΓò¬ΓûæΓöÿ├óΓò¬┬║Γò¬├¡ Γò¬┬║Γöÿ├ñΓò¬┬║Γò¬ΓòíΓò¬ΓòûΓöÿ├ÑΓò¬┬║Γò¬ΓòúΓöÿ├¿';
+                if (filterBtnText) filterBtnText.textContent = 'Γò¬├║Γöÿ├╝Γöÿ├ñΓò¬┬║Γöÿ├á Γöÿ├¬Γöÿ├áΓò¬ΓöéΓöÿ├ñΓò¬ΓöéΓöÿ├ñΓò¬┬║Γò¬┬¼';
+                if (filterOptAll) filterOptAll.textContent = 'Γò¬├║Γöÿ├╝Γöÿ├ñΓò¬┬║Γöÿ├á Γöÿ├¬Γöÿ├áΓò¬ΓöéΓöÿ├ñΓò¬ΓöéΓöÿ├ñΓò¬┬║Γò¬┬¼';
+                if (filterOptMovie) filterOptMovie.textContent = 'Γò¬├║Γöÿ├╝Γöÿ├ñΓò¬┬║Γöÿ├á Γöÿ├╝Γöÿ├⌐Γò¬Γòû';
+                if (filterOptSeries) filterOptSeries.textContent = 'Γöÿ├áΓò¬ΓöéΓöÿ├ñΓò¬ΓöéΓöÿ├ñΓò¬┬║Γò¬┬¼ Γöÿ├╝Γöÿ├⌐Γò¬Γòû';
                 document.querySelectorAll('.browse-filter-btn').forEach(btn => {
                     const g = btn.getAttribute('data-genre');
                     if (genreMapArabic[g]) btn.textContent = genreMapArabic[g];
                 });
-                document.querySelectorAll('.download-text').forEach(el => el.textContent = '╪¬╪¡┘à┘è┘ä');
-                document.querySelectorAll('.report-text').forEach(el => el.textContent = '╪Ñ╪¿┘ä╪º╪║');
+                document.querySelectorAll('.download-text').forEach(el => el.textContent = 'Γò¬┬¼Γò¬┬íΓöÿ├áΓöÿ├¿Γöÿ├ñ');
+                document.querySelectorAll('.report-text').forEach(el => el.textContent = 'Γò¬├æΓò¬┬┐Γöÿ├ñΓò¬┬║Γò¬Γòæ');
                 const detailsSimilarsText = document.getElementById('detailsSimilarsText');
-                if (detailsSimilarsText) detailsSimilarsText.textContent = '╪ú╪╣┘à╪º┘ä ┘à╪┤╪º╪¿┘ç╪⌐';
+                if (detailsSimilarsText) detailsSimilarsText.textContent = 'Γò¬├║Γò¬ΓòúΓöÿ├áΓò¬┬║Γöÿ├ñ Γöÿ├áΓò¬ΓöñΓò¬┬║Γò¬┬┐Γöÿ├ºΓò¬ΓîÉ';
                 const detailsSimilarsHeading = document.getElementById('detailsSimilarsHeading');
-                if (detailsSimilarsHeading) detailsSimilarsHeading.textContent = '┘é╪» ┘è╪╣╪¼╪¿┘â ╪ú┘è╪╢╪º┘ï';
+                if (detailsSimilarsHeading) detailsSimilarsHeading.textContent = 'Γöÿ├⌐Γò¬┬╗ Γöÿ├¿Γò¬ΓòúΓò¬┬╝Γò¬┬┐Γöÿ├ó Γò¬├║Γöÿ├¿Γò¬ΓòóΓò¬┬║Γöÿ├»';
                 const commentsTitleHeading = document.getElementById('commentsTitleHeading');
-                if (commentsTitleHeading) commentsTitleHeading.textContent = '╪º┘ä╪¬╪╣┘ä┘è┘é╪º╪¬';
+                if (commentsTitleHeading) commentsTitleHeading.textContent = 'Γò¬┬║Γöÿ├ñΓò¬┬¼Γò¬ΓòúΓöÿ├ñΓöÿ├¿Γöÿ├⌐Γò¬┬║Γò¬┬¼';
             } else {
                 const navBrowseText = document.getElementById('navBrowseText');
                 if (navBrowseText) navBrowseText.textContent = 'Browse';
@@ -2657,8 +2657,8 @@
 
                 if (loginPwLabel) loginPwLabel.textContent = 'Password';
                 if (signupPwLabel) signupPwLabel.textContent = 'Password';
-                if (loginPwInput) loginPwInput.placeholder = 'ΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇó';
-                if (signupPwInput) signupPwInput.placeholder = 'ΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇóΓÇó';
+                if (loginPwInput) loginPwInput.placeholder = '╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│';
+                if (signupPwInput) signupPwInput.placeholder = '╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│╬ô├ç├│';
                 if (signupEmailLabel) signupEmailLabel.textContent = 'Email Address';
                 if (textTabSignup) textTabSignup.textContent = 'Create Account';
                 if (textBtnSignup) textBtnSignup.textContent = 'Create Account';
@@ -2717,7 +2717,7 @@
                 if (!selectedText) return;
                 const isMobile = window.innerWidth <= 768;
                 if (lang === 'ckb') {
-                    selectedText.textContent = '┌⌐┘ê╪▒╪»█î';
+                    selectedText.textContent = 'ΓöîΓîÉΓöÿ├¬Γò¬ΓûÆΓò¬┬╗Γûê├«';
                     if (currentFlagEl) currentFlagEl.innerHTML = FLAG_CKB;
                 } else {
                     selectedText.textContent = isMobile ? 'EN' : 'English';
@@ -2798,7 +2798,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_1003"></script>
+    <script src="welcome-disclaimer.js?v=20260918_1002"></script>
 
     <!-- Interstitial Ad Modal ÃŽâ€œÃƒâ€¡ÃƒÂ¶ fires on pagination for free users -->
     <div id="cwInterstitialAdModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.88); align-items:center; justify-content:center;">
