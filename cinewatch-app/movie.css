@@ -12442,3 +12442,46 @@ min-width: 0;
 .palette-amber .plan-top { background: #451a03; }
 .palette-amber .plan-blob-a { background: #f59e0b; }
 .palette-amber .plan-blob-b { background: #d97706; }
+
+
+/* Worldwide Country Code Select Dropdown */
+select.phone-prefix,
+.vip-country-select {
+  display: inline-flex;
+  align-items: center;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: rgba(255, 255, 255, 0.08);
+  color: #38bdf8 !important;
+  font-weight: 600;
+  font-size: 13px;
+  border: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0 24px 0 10px;
+  outline: none;
+  cursor: pointer;
+  max-width: 145px;
+  min-width: 115px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2338bdf8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 6px center;
+  transition: all 0.2s ease;
+}
+
+select.phone-prefix:focus,
+.vip-country-select:focus {
+  background-color: rgba(56, 189, 248, 0.14);
+  color: #67e8f9 !important;
+}
+
+select.phone-prefix option,
+.vip-country-select option {
+  background: #0f172a !important;
+  color: #f1f5f9 !important;
+  padding: 8px 12px;
+  font-size: 13px;
+}
