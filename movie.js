@@ -4418,7 +4418,20 @@ function selectVipTier(tierData) {
     submitBtn.onclick = () => {
       const refInput = document.getElementById("vipRefInput");
       const smsInput = document.getElementById("vipSmsPhoneInput");
-      const smsVal = smsInput ? smsInput.value.trim() : "";
+      const smsPrefixEl = document.getElementById("vipSmsPrefix");
+      const smsPrefix = smsPrefixEl ? (smsPrefixEl.value || "+964") : "+964";
+      const rawSmsVal = smsInput ? smsInput.value.trim() : "";
+      let fullSmsPhone = "";
+      if (rawSmsVal) {
+        let cleaned = rawSmsVal.replace(/[^\d+]/g, "");
+        if (cleaned.startsWith("+")) {
+          fullSmsPhone = cleaned;
+        } else {
+          if (cleaned.startsWith("0")) cleaned = cleaned.substring(1);
+          fullSmsPhone = smsPrefix + cleaned;
+        }
+      }
+      const smsVal = fullSmsPhone;
       const refVal = refInput ? refInput.value.trim() : "";
 
       if (!refVal) {
@@ -4610,15 +4623,15 @@ function renderVipWalletDetails(walletKey) {
       refLabel.textContent = "Sender Phone Number / Qi Transfer Reference #";
       refInput.placeholder = "77X XXX XXXX or Qi Ref #";
       if (refPrefix) {
-        refPrefix.style.display = 'flex';
-        refPrefix.textContent = '+964';
+        refPrefix.style.display = "inline-flex";
+        if (refPrefix.tagName !== "SELECT") refPrefix.textContent = "+964";
       }
     } else {
       refLabel.textContent = `Sender Phone Number / ${w.name} Reference #`;
       refInput.placeholder = "77X XXX XXXX or Transaction ID";
       if (refPrefix) {
-        refPrefix.style.display = 'flex';
-        refPrefix.textContent = '+964';
+        refPrefix.style.display = "inline-flex";
+        if (refPrefix.tagName !== "SELECT") refPrefix.textContent = "+964";
       }
     }
   }
