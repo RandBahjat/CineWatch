@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-let cleanText = fs.readFileSync('scratch/index_clean.html', 'utf8');
-let currentText = fs.readFileSync('index.html', 'utf8');
+let cleanText = fs.readFileSync('scratch/index_clean.html', 'utf16le');
+let currentText = fs.readFileSync('index.html', 'utf8'); // Wait, is index.html UTF-8? Let's assume yes.
 
 let startMarker = 'function changeLanguage(langCode) {';
 
