@@ -4,7 +4,7 @@ if (window.location.hash.includes("type=recovery")) {
 }
 
 /**
- * CineWatch â€” Pure Vanilla JavaScript (ES6+)
+ * CineWatch - Pure Vanilla JavaScript (ES6+)
  * Feature-rich movie streaming platform logic
  */
 
@@ -767,7 +767,7 @@ function setupHeroBanner() {
   heroTrack.innerHTML = featured.map((movie, idx) => {
     const backdropUrl = movie.backdrop || movie.poster || "";
     const bgStyle = backdropUrl ? `style="background-image: url('${backdropUrl}')"` : "";
-    const genresList = (movie.genres || []).slice(0, 3).map(translateGenre).join(" â€¢ ");
+    const genresList = (movie.genres || []).slice(0, 3).map(translateGenre).join(" &bull; ");
 
     return `
       <div class="hero-slide ${idx === 0 ? 'active' : ''}">
@@ -2958,7 +2958,7 @@ function openDetailsModal(movieId) {
     }
 
     if (document.getElementById("detailsGenres")) {
-      document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &middot; ");
+      document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &bull; ");
     }
 
     const userRatingLabel = document.getElementById("userRatingLabel");
@@ -4215,22 +4215,22 @@ const VIP_TIER_CONFIG = {
   },
   bronze: {
     name: "Advanced",
-    monthly: { price: "8", iqd: "", period: "/ mo", btnText: "Upgrade to Advanced" },
-    quarterly: { price: "18", iqd: "", period: "/ 3 mo", btnText: "Upgrade to Advanced" },
-    yearly: { price: "100", iqd: "", period: "/ year", btnText: "Upgrade to Advanced" }
+    monthly: { price: "7.99", iqd: "", period: "/ mo", btnText: "Upgrade to Advanced" },
+    quarterly: { price: "17.99", iqd: "", period: "/ 3 mo", btnText: "Upgrade to Advanced" },
+    yearly: { price: "99.99", iqd: "", period: "/ year", btnText: "Upgrade to Advanced" }
   },
   gold: {
     name: "Pro",
-    monthly: { price: "15", iqd: "", period: "/ mo", btnText: "Upgrade to Pro" },
-    quarterly: { price: "50", iqd: "", period: "/ 3 mo", btnText: "Upgrade to Pro" },
-    yearly: { price: "150", iqd: "", period: "/ year", btnText: "Upgrade to Pro" }
+    monthly: { price: "14.99", iqd: "", period: "/ mo", btnText: "Upgrade to Pro" },
+    quarterly: { price: "49.99", iqd: "", period: "/ 3 mo", btnText: "Upgrade to Pro" },
+    yearly: { price: "149.99", iqd: "", period: "/ year", btnText: "Upgrade to Pro" }
   },
   diamond: {
     name: "Ultimate",
     yearlyName: "Ultimate 1-Year Pass",
-    monthly: { price: "20", iqd: "", period: "/ mo", btnText: "Upgrade to Ultimate" },
-    quarterly: { price: "100", iqd: "", period: "/ 3 mo", btnText: "Upgrade to Ultimate" },
-    yearly: { price: "200", iqd: "", period: "/ year", btnText: "Upgrade to Ultimate" }
+    monthly: { price: "19.99", iqd: "", period: "/ mo", btnText: "Upgrade to Ultimate" },
+    quarterly: { price: "99.99", iqd: "", period: "/ 3 mo", btnText: "Upgrade to Ultimate" },
+    yearly: { price: "199.99", iqd: "", period: "/ year", btnText: "Upgrade to Ultimate" }
   }
 };
 
@@ -4239,7 +4239,7 @@ let currentVipBillingCycle = "monthly";
 let selectedVipTierData = {
   tier: "diamond",
   name: "Ultimate (Monthly)",
-  price: "20",
+  price: "19.99",
   iqd: ""
 };
 
