@@ -1,29 +1,36 @@
 const fs = require('fs');
+const { execSync } = require('child_process');
 
-let cleanText = fs.readFileSync('scratch/index_clean.html', 'utf16le');
-let currentText = fs.readFileSync('index.html', 'utf8'); // Wait, is index.html UTF-8? Let's assume yes.
+let currentBuf = fs.readFileSync('index.html');
 
-let startMarker = 'function changeLanguage(langCode) {';
-
-let startIndex = cleanText.indexOf(startMarker);
-let endIndex = cleanText.indexOf('</script>', startIndex);
-
-if (startIndex === -1 || endIndex === -1) {
-    console.error('Markers not found in clean text');
-    process.exit(1);
-}
-
-let cleanBlock = cleanText.substring(startIndex, endIndex);
-
-let curStartIndex = currentText.indexOf(startMarker);
-let curEndIndex = currentText.indexOf('</script>', curStartIndex);
+let curStr = currentBuf.toString('utf8');
+let curStartIndex = curStr.indexOf('function changeLanguage(langCode) {');
+let curEndIndex = curStr.indexOf('</script>', curStartIndex);
 
 if (curStartIndex === -1 || curEndIndex === -1) {
     console.error('Markers not found in current text');
     process.exit(1);
 }
 
-let newText = currentText.substring(0, curStartIndex) + cleanBlock + currentText.substring(curEndIndex);
+// Convert string indices to buffer byte indices
+let curStartByte = Buffer.byteLength(curStr.substring(0, curStartIndex), 'utf8');
+let curEndByte = Buffer.byteLength(curStr.substring(0, curEndIndex), 'utf8');
 
-fs.writeFileSync('index.html', newText, 'utf8');
-console.log('Successfully transplanted clean translations!');
+const cleanBuf = execSync('git cat-file -p 8a5fa322:index.html');
+let cleanStr = cleanBuf.toString('utf8');
+let cleanStartIndex = cleanStr.indexOf('function changeLanguage(langCode) {');
+let cleanEndIndex = cleanStr.indexOf('</script>', cleanStartIndex);
+
+let cleanStartByte = Buffer.byteLength(cleanStr.substring(0, cleanStartIndex), 'utf8');
+let cleanEndByte = Buffer.byteLength(cleanStr.substring(0, cleanEndIndex), 'utf8');
+
+let cleanBlockBuf = cleanBuf.slice(cleanStartByte, cleanEndByte);
+
+let newBuf = Buffer.concat([
+    currentBuf.slice(0, curStartByte),
+    cleanBlockBuf,
+    currentBuf.slice(curEndByte)
+]);
+
+fs.writeFileSync('index.html', newBuf);
+console.log('Successfully transplanted clean translations via raw buffers!');
