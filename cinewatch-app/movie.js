@@ -4417,6 +4417,8 @@ function selectVipTier(tierData) {
   if (submitBtn) {
     submitBtn.onclick = () => {
       const refInput = document.getElementById("vipRefInput");
+      const smsInput = document.getElementById("vipSmsPhoneInput");
+      const smsVal = smsInput ? smsInput.value.trim() : "";
       const refVal = refInput ? refInput.value.trim() : "";
 
       if (!refVal) {
@@ -4524,6 +4526,7 @@ function selectVipTier(tierData) {
           `📦 Plan: ${orderData.plan} — ${orderData.price}\n` +
           `💳 Payment: ${orderData.wallet}\n` +
           `📞 Reference: ${orderData.reference}\n` +
+          `📱 SMS: ${smsVal}\n` +
           `📱 Device: ${orderData.device}\n` +
           `🕒 Time: ${orderData.createdAt}\n\n` + 
           `*Approve via Supabase Dashboard -> vip_orders table*`;
@@ -4536,7 +4539,7 @@ function selectVipTier(tierData) {
             parse_mode: 'Markdown',
             reply_markup: {
               inline_keyboard: [[
-                { text: "✅ Approve", url: `${window.location.origin}/admin.html?order=${orderId}&action=approved` },
+                { text: "✅ Approve", url: `${window.location.origin}/admin.html?order=${orderId}&action=approved&phone=${encodeURIComponent(typeof cryptoSmsVal !== 'undefined' ? cryptoSmsVal : smsVal)}` },
                 { text: "❌ Deny", url: `${window.location.origin}/admin.html?order=${orderId}&action=denied` }
               ]]
             }
@@ -4761,6 +4764,8 @@ function setupVipEventListeners() {
       }
 
       const txIdVal = txInput.value.trim();
+      const cryptoSmsInput = document.getElementById("vipSmsPhoneInput");
+      const cryptoSmsVal = cryptoSmsInput ? cryptoSmsInput.value.trim() : "";
       const orderId = "CW-" + Math.floor(100000 + Math.random() * 900000);
       const pendingTx = {
         txId: txIdVal,
@@ -4825,6 +4830,7 @@ function setupVipEventListeners() {
           `📦 Plan: ${selectedVipTierData?.name || "Crypto Plan"}\n` +
           `💳 Payment: ${currentVipWalletKey}\n` +
           `📞 Reference (TxID): ${txIdVal}\n` +
+          `📱 SMS: ${cryptoSmsVal}\n` +
           `🕒 Time: ${pendingTx.submittedAt}`;
         fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
           method: 'POST',
@@ -4835,7 +4841,7 @@ function setupVipEventListeners() {
             parse_mode: 'Markdown',
             reply_markup: {
               inline_keyboard: [[
-                { text: "✅ Approve", url: `${window.location.origin}/admin.html?order=${orderId}&action=approved` },
+                { text: "✅ Approve", url: `${window.location.origin}/admin.html?order=${orderId}&action=approved&phone=${encodeURIComponent(typeof cryptoSmsVal !== 'undefined' ? cryptoSmsVal : smsVal)}` },
                 { text: "❌ Deny", url: `${window.location.origin}/admin.html?order=${orderId}&action=denied` }
               ]]
             }
