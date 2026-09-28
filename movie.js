@@ -1,10 +1,10 @@
-﻿// Capture recovery hash immediately before Supabase clears it
+// Capture recovery hash immediately before Supabase clears it
 if (window.location.hash.includes("type=recovery")) {
   window.CW_PENDING_RECOVERY = true;
 }
 
 /**
- * CineWatch Ã¢â‚¬â€ Pure Vanilla JavaScript (ES6+)
+ * CineWatch â€” Pure Vanilla JavaScript (ES6+)
  * Feature-rich movie streaming platform logic
  */
 
@@ -15,7 +15,7 @@ let FEATURED_TITLES = ["The Love Hypothesis","One Last Shot","Resident Evil","Ne
   "Drawn Together"];
 let TOP_10_TRENDING_TODAY = ["The Love Hypothesis","One Last Shot",
   "Resident Evil","Brothers","c","Spider-Man: Brand New Day","Heart of the Beast" , "Digger ","Slow Horses", "Lanterns","MobLand"];
-let TRENDING_THIS_WEEK_MOVIES = ["Resident Evil","The End of Oak Street","Spider-Man: Brand New Day", "The Odysessey", "Toy Story 5", "Obsession", "The Love Hypothesis", "Moana(2026)", "One Last Shot", "Digger", "The Rivals of Amziah King", "Backrooms", "You+Me Ã¢â‚¬â€œ Against the World", "Coyote vs. Acme", "Just Play Dead"];
+let TRENDING_THIS_WEEK_MOVIES = ["Resident Evil","The End of Oak Street","Spider-Man: Brand New Day", "The Odysessey", "Toy Story 5", "Obsession", "The Love Hypothesis", "Moana(2026)", "One Last Shot", "Digger", "The Rivals of Amziah King", "Backrooms", "You+Me â€“ Against the World", "Coyote vs. Acme", "Just Play Dead"];
 let TRENDING_THIS_WEEK_SERIES = ["Monster: The Lizzie Borden Story","MobLand","Neagley", "Reacher", "Lioness", "Lanterns", "Slow Horses", "One Piece", "Ted Lasso","City of Blood", "Stranger Things: Tales from '85", "Silo"];
 const POPULAR_MOVIES = ["Spider-Man: Brand New Day","Resident Evil","The End of Oak Street","Coyote vs. Acme","The Odysessey","Mutiny", "Moana(2026)", "The Runner","Obsession", "Spider-Man: No Way Home","Backrooms", "Disclosure Day", "The Death of Robin Hood", "The Last House","Drawn Together", "Michael", "Project Hail Mary","Avatar Aang: The Last Airbender","The Shawshank Redemption"];
 const POPULAR_SERIES = ["MobLand (The Donovans)", "Star Trek: Strange New Worlds", "Slow Horses", "Reacher","The Mentalist","The Gentlemen", "Breaking Bad","Law & Order: Special Victims Unit", "Ted Lasso","House", "Lucky", "Off Campus", "Silo", "Game of Thrones", "The Sopranos", "Stranger Things", "The Boys","The Rookie","The Good Doctor","Dexter","From","S.W.A.T.","The Walking Dead","Stranger Things"];
@@ -49,42 +49,42 @@ function translateGenre(genre) {
   const isSorani = cookies.includes('googtrans=/en/ckb');
   const isArabic = cookies.includes('googtrans=/en/ar');
   if (isSorani) {
-    if (genre === 'all') return 'Ã™â€¡Ã›â€¢Ã™â€¦Ã™Ë†Ã™Ë† Ã˜Â¬Ã›â€ Ã˜Â±Ã›â€¢ÃšÂ©Ã˜Â§Ã™â€ ';
-    if (genre === 'Action') return 'Ã˜Â¦Ã˜Â§ÃšÂ©Ã˜Â´Ã™â€ ';
-    if (genre === 'Adventure') return 'Ã˜Â³Ã›â€¢Ã˜Â±ÃšÂ©Ã›Å½Ã˜Â´Ã›Å’';
-    if (genre === 'Animation') return 'Ã˜Â¦Ã›â€¢Ã™â€ Ã›Å’Ã™â€¦Ã›â€¢Ã›Å’Ã˜Â´Ã™â€ ';
-    if (genre === 'Comedy') return 'ÃšÂ©Ã›â€ Ã™â€¦Ã›Å’Ã˜Â¯Ã›Å’';
-    if (genre === 'Crime') return 'Ã˜ÂªÃ˜Â§Ã™Ë†Ã˜Â§Ã™â€ ÃšÂ©Ã˜Â§Ã˜Â±Ã›Å’';
-    if (genre === 'Drama') return 'Ã˜Â¯Ã˜Â±Ã˜Â§Ã™â€¦Ã˜Â§';
-    if (genre === 'Family') return 'Ã˜Â®Ã›Å½Ã˜Â²Ã˜Â§Ã™â€ Ã›Å’';
-    if (genre === 'Kids') return 'Ã™â€¦Ã™â€ Ã˜Â¯Ã˜Â§ÃšÂµÃ˜Â§Ã™â€ ';
-    if (genre === 'History') return 'Ã™â€¦Ã›Å½ÃšËœÃ™Ë†Ã™Ë†Ã›Å’Ã›Å’';
-    if (genre === 'Fantasy') return 'Ã™ÂÃ˜Â§Ã™â€ Ã˜ÂªÃ˜Â§Ã˜Â²Ã›Å’Ã˜Â§';
-    if (genre === 'Horror') return 'Ã˜ÂªÃ˜Â±Ã˜Â³Ã™â€ Ã˜Â§ÃšÂ©';
-    if (genre === 'Mystery') return 'Ã™â€ Ã™â€¡Ã›Å½Ã™â€ Ã›Å’';
-    if (genre === 'Romance') return 'Ãšâ€¢Ã›â€ Ã™â€¦Ã˜Â§Ã™â€ Ã˜Â³Ã›Å’';
-    if (genre === 'Sci-Fi' || genre === 'Science-Fiction' || genre === 'Science Fiction') return 'Ã˜Â®Ã›â€¢Ã›Å’Ã˜Â§ÃšÂµÃ›Å’ Ã˜Â²Ã˜Â§Ã™â€ Ã˜Â³Ã˜ÂªÃ›Å’';
-    if (genre === 'Thriller') return 'Ã™â€¡Ã›â€¢Ã˜Â³Ã˜ÂªÃ˜Â¨Ã˜Â²Ã™Ë†Ã›Å½Ã™â€ ';
-    if (genre === 'War') return 'Ã˜Â¬Ã›â€¢Ã™â€ ÃšÂ¯';
+    if (genre === 'all') return 'Ù‡Û•Ù…ÙˆÙˆ Ø¬Û†Ø±Û•Ú©Ø§Ù†';
+    if (genre === 'Action') return 'Ø¦Ø§Ú©Ø´Ù†';
+    if (genre === 'Adventure') return 'Ø³Û•Ø±Ú©ÛŽØ´ÛŒ';
+    if (genre === 'Animation') return 'Ø¦Û•Ù†ÛŒÙ…Û•ÛŒØ´Ù†';
+    if (genre === 'Comedy') return 'Ú©Û†Ù…ÛŒØ¯ÛŒ';
+    if (genre === 'Crime') return 'ØªØ§ÙˆØ§Ù†Ú©Ø§Ø±ÛŒ';
+    if (genre === 'Drama') return 'Ø¯Ø±Ø§Ù…Ø§';
+    if (genre === 'Family') return 'Ø®ÛŽØ²Ø§Ù†ÛŒ';
+    if (genre === 'Kids') return 'Ù…Ù†Ø¯Ø§ÚµØ§Ù†';
+    if (genre === 'History') return 'Ù…ÛŽÚ˜ÙˆÙˆÛŒÛŒ';
+    if (genre === 'Fantasy') return 'ÙØ§Ù†ØªØ§Ø²ÛŒØ§';
+    if (genre === 'Horror') return 'ØªØ±Ø³Ù†Ø§Ú©';
+    if (genre === 'Mystery') return 'Ù†Ù‡ÛŽÙ†ÛŒ';
+    if (genre === 'Romance') return 'Ú•Û†Ù…Ø§Ù†Ø³ÛŒ';
+    if (genre === 'Sci-Fi' || genre === 'Science-Fiction' || genre === 'Science Fiction') return 'Ø®Û•ÛŒØ§ÚµÛŒ Ø²Ø§Ù†Ø³ØªÛŒ';
+    if (genre === 'Thriller') return 'Ù‡Û•Ø³ØªØ¨Ø²ÙˆÛŽÙ†';
+    if (genre === 'War') return 'Ø¬Û•Ù†Ú¯';
   }
   if (isArabic) {
-    if (genre === 'all') return 'Ã˜Â¬Ã™â€¦Ã™Å Ã˜Â¹ Ã˜Â§Ã™â€žÃ˜Â£Ã™â€ Ã™Ë†Ã˜Â§Ã˜Â¹';
-    if (genre === 'Action') return 'Ã˜Â£Ã™Æ’Ã˜Â´Ã™â€ ';
-    if (genre === 'Adventure') return 'Ã™â€¦Ã˜ÂºÃ˜Â§Ã™â€¦Ã˜Â±Ã˜Â©';
-    if (genre === 'Animation') return 'Ã˜Â±Ã˜Â³Ã™Ë†Ã™â€¦ Ã™â€¦Ã˜ÂªÃ˜Â­Ã˜Â±Ã™Æ’Ã˜Â©';
-    if (genre === 'Comedy') return 'Ã™Æ’Ã™Ë†Ã™â€¦Ã™Å Ã˜Â¯Ã™Å Ã˜Â§';
-    if (genre === 'Crime') return 'Ã˜Â¬Ã˜Â±Ã™Å Ã™â€¦Ã˜Â©';
-    if (genre === 'Drama') return 'Ã˜Â¯Ã˜Â±Ã˜Â§Ã™â€¦Ã˜Â§';
-    if (genre === 'Family') return 'Ã˜Â¹Ã˜Â§Ã˜Â¦Ã™â€žÃ™Å ';
-    if (genre === 'Kids') return 'Ã˜Â£Ã˜Â·Ã™ÂÃ˜Â§Ã™â€ž';
-    if (genre === 'History') return 'Ã˜ÂªÃ˜Â§Ã˜Â±Ã™Å Ã˜Â®Ã™Å ';
-    if (genre === 'Fantasy') return 'Ã™ÂÃ˜Â§Ã™â€ Ã˜ÂªÃ˜Â§Ã˜Â²Ã™Å Ã˜Â§';
-    if (genre === 'Horror') return 'Ã˜Â±Ã˜Â¹Ã˜Â¨';
-    if (genre === 'Mystery') return 'Ã˜ÂºÃ™â€¦Ã™Ë†Ã˜Â¶';
-    if (genre === 'Romance') return 'Ã˜Â±Ã™Ë†Ã™â€¦Ã˜Â§Ã™â€ Ã˜Â³Ã™Å ';
-    if (genre === 'Sci-Fi' || genre === 'Science-Fiction' || genre === 'Science Fiction') return 'Ã˜Â®Ã™Å Ã˜Â§Ã™â€ž Ã˜Â¹Ã™â€žÃ™â€¦Ã™Å ';
-    if (genre === 'Thriller') return 'Ã˜Â¥Ã˜Â«Ã˜Â§Ã˜Â±Ã˜Â©';
-    if (genre === 'War') return 'Ã˜Â­Ã˜Â±Ã˜Â¨';
+    if (genre === 'all') return 'Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø£Ù†ÙˆØ§Ø¹';
+    if (genre === 'Action') return 'Ø£ÙƒØ´Ù†';
+    if (genre === 'Adventure') return 'Ù…ØºØ§Ù…Ø±Ø©';
+    if (genre === 'Animation') return 'Ø±Ø³ÙˆÙ… Ù…ØªØ­Ø±ÙƒØ©';
+    if (genre === 'Comedy') return 'ÙƒÙˆÙ…ÙŠØ¯ÙŠØ§';
+    if (genre === 'Crime') return 'Ø¬Ø±ÙŠÙ…Ø©';
+    if (genre === 'Drama') return 'Ø¯Ø±Ø§Ù…Ø§';
+    if (genre === 'Family') return 'Ø¹Ø§Ø¦Ù„ÙŠ';
+    if (genre === 'Kids') return 'Ø£Ø·ÙØ§Ù„';
+    if (genre === 'History') return 'ØªØ§Ø±ÙŠØ®ÙŠ';
+    if (genre === 'Fantasy') return 'ÙØ§Ù†ØªØ§Ø²ÙŠØ§';
+    if (genre === 'Horror') return 'Ø±Ø¹Ø¨';
+    if (genre === 'Mystery') return 'ØºÙ…ÙˆØ¶';
+    if (genre === 'Romance') return 'Ø±ÙˆÙ…Ø§Ù†Ø³ÙŠ';
+    if (genre === 'Sci-Fi' || genre === 'Science-Fiction' || genre === 'Science Fiction') return 'Ø®ÙŠØ§Ù„ Ø¹Ù„Ù…ÙŠ';
+    if (genre === 'Thriller') return 'Ø¥Ø«Ø§Ø±Ø©';
+    if (genre === 'War') return 'Ø­Ø±Ø¨';
   }
   return genre;
 }
@@ -95,7 +95,7 @@ function formatNumber(val) {
   const cookies = document.cookie || '';
   const isSorani = cookies.includes('googtrans=/en/ckb');
   if (!isSorani) return str;
-  return str.replace(/[0-9]/g, d => 'Ã™Â Ã™Â¡Ã™Â¢Ã™Â£Ã™Â¤Ã™Â¥Ã™Â¦Ã™Â§Ã™Â¨Ã™Â©'[d]);
+  return str.replace(/[0-9]/g, d => 'Ù Ù¡Ù¢Ù£Ù¤Ù¥Ù¦Ù§Ù¨Ù©'[d]);
 }
 
 function formatMediaType(type) {
@@ -103,14 +103,14 @@ function formatMediaType(type) {
   const isCkb = cookies.includes('googtrans=/en/ckb');
   const isAr = cookies.includes('googtrans=/en/ar');
   if (isCkb) {
-    if (type === 'TV Show' || type === 'Series') return 'Ã˜Â²Ã™â€ Ã˜Â¬Ã›Å’Ã˜Â±Ã›â€¢';
-    if (type === 'Anime') return 'Ã˜Â¦Ã›â€¢Ã™â€ Ã›Å’Ã™â€¦Ã›Å½';
-    return 'Ã™ÂÃ›Å’Ã™â€žÃ™â€¦';
+    if (type === 'TV Show' || type === 'Series') return 'Ø²Ù†Ø¬ÛŒØ±Û•';
+    if (type === 'Anime') return 'Ø¦Û•Ù†ÛŒÙ…ÛŽ';
+    return 'ÙÛŒÙ„Ù…';
   }
   if (isAr) {
-    if (type === 'TV Show' || type === 'Series') return 'Ã™â€¦Ã˜Â³Ã™â€žÃ˜Â³Ã™â€ž';
-    if (type === 'Anime') return 'Ã˜Â£Ã™â€ Ã™â€¦Ã™Å ';
-    return 'Ã™ÂÃ™Å Ã™â€žÃ™â€¦';
+    if (type === 'TV Show' || type === 'Series') return 'Ù…Ø³Ù„Ø³Ù„';
+    if (type === 'Anime') return 'Ø£Ù†Ù…ÙŠ';
+    return 'ÙÙŠÙ„Ù…';
   }
   return type;
 }
@@ -131,8 +131,8 @@ function formatRating(rating) {
   const cookies = document.cookie || '';
   const isSorani = cookies.includes('googtrans=/en/ckb');
   if (!isSorani) return str;
-  // Convert digits to Kurdish / Eastern-Arabic numerals: Ã™Â Ã™Â¡Ã™Â¢Ã™Â£Ã™Â¤Ã™Â¥Ã™Â¦Ã™Â§Ã™Â¨Ã™Â©
-  return str.replace(/[0-9]/g, d => 'Ã™Â Ã™Â¡Ã™Â¢Ã™Â£Ã™Â¤Ã™Â¥Ã™Â¦Ã™Â§Ã™Â¨Ã™Â©'[d]);
+  // Convert digits to Kurdish / Eastern-Arabic numerals: Ù Ù¡Ù¢Ù£Ù¤Ù¥Ù¦Ù§Ù¨Ù©
+  return str.replace(/[0-9]/g, d => 'Ù Ù¡Ù¢Ù£Ù¤Ù¥Ù¦Ù§Ù¨Ù©'[d]);
 }
 
 function getLocalizedOverview(item) {
@@ -410,7 +410,7 @@ window.addEventListener("cw:authChanged", async (e) => {
 
     // Only reload if the user actively just logged in (flag set by login/signup form).
     // Do NOT reload on auto-restore (Firebase fires authChanged on every page load
-    // when the session is already active Ã¢â‚¬â€ that would cause an infinite reload loop).
+    // when the session is already active â€” that would cause an infinite reload loop).
     if (sessionStorage.getItem("cw_loginPending")) {
       sessionStorage.removeItem("cw_loginPending");
       window.location.reload();
@@ -484,7 +484,7 @@ function toggleFavorite(movieId) {
   } else {
     state.favorites.push(movieId);
     added = true;
-    showToast("Ã¢â„¢Â¥ Added to My Watchlist!");
+    showToast("â™¥ Added to My Watchlist!");
   }
   localStorage.setItem(KEYS.FAVORITES, JSON.stringify(state.favorites));
   if (window.CW_API && state.user) {
@@ -732,7 +732,7 @@ function setupHeroBanner() {
       (m, idx) =>
         `<div class="dot ${idx === 0 ? "active" : ""}" data-index="${idx}"></div>`,
     )
-    .join(" &bull; ");
+    .join("");
 
   dotsContainer.addEventListener("click", (e) => {
     if (e.target.classList.contains("dot")) {
@@ -760,14 +760,14 @@ function setupHeroBanner() {
   const isSorani = currentLang === 'ckb';
   const isArabic = currentLang === 'ar';
 
-  const playText = isSorani ? 'Ã˜Â³Ã›â€¢Ã›Å’Ã˜Â±ÃšÂ©Ã˜Â±Ã˜Â¯Ã™â€ ' : (isArabic ? 'Ã˜ÂªÃ˜Â´Ã˜ÂºÃ™Å Ã™â€ž' : 'Play');
-  const moreText = isSorani ? 'Ã˜Â²Ã›Å’Ã˜Â§Ã˜ÂªÃ˜Â± Ã˜Â¨Ã˜Â¨Ã›Å’Ã™â€ Ã›â€¢' : (isArabic ? 'Ã˜Â¹Ã˜Â±Ã˜Â¶ Ã˜Â§Ã™â€žÃ™â€¦Ã˜Â²Ã™Å Ã˜Â¯' : 'See More');
+  const playText = isSorani ? 'Ø³Û•ÛŒØ±Ú©Ø±Ø¯Ù†' : (isArabic ? 'ØªØ´ØºÙŠÙ„' : 'Play');
+  const moreText = isSorani ? 'Ø²ÛŒØ§ØªØ± Ø¨Ø¨ÛŒÙ†Û•' : (isArabic ? 'Ø¹Ø±Ø¶ Ø§Ù„Ù…Ø²ÙŠØ¯' : 'See More');
 
   // Generate ALL slides dynamically from featured array
   heroTrack.innerHTML = featured.map((movie, idx) => {
     const backdropUrl = movie.backdrop || movie.poster || "";
     const bgStyle = backdropUrl ? `style="background-image: url('${backdropUrl}')"` : "";
-    const genresList = (movie.genres || []).slice(0, 3).map(translateGenre).join(" &bull; ");
+    const genresList = (movie.genres || []).slice(0, 3).map(translateGenre).join(" â€¢ ");
 
     return `
       <div class="hero-slide ${idx === 0 ? 'active' : ''}">
@@ -793,9 +793,9 @@ function setupHeroBanner() {
         </div>
       </div>
     `;
-  }).join(" &bull; ");
+  }).join("");
 
-  // Ã¢â€â‚¬Ã¢â€â‚¬ Real-time Smooth Drag / Swipe to change slides Ã¢â€â‚¬Ã¢â€â‚¬
+  // â”€â”€ Real-time Smooth Drag / Swipe to change slides â”€â”€
   const heroBanner = document.getElementById("heroBanner");
   let startX = 0;
   let currentTranslate = 0;
@@ -983,9 +983,9 @@ async function renderCarousels() {
 
     const movieList = shelfMap[trackId];
     if (trackId === "top10Track") {
-      track.innerHTML = movieList.map((movie, index) => createMovieCardHTML(movie, index + 1, true)).join(" &bull; ");
+      track.innerHTML = movieList.map((movie, index) => createMovieCardHTML(movie, index + 1, true)).join("");
     } else {
-      track.innerHTML = movieList.map((movie) => createMovieCardHTML(movie)).join(" &bull; ");
+      track.innerHTML = movieList.map((movie) => createMovieCardHTML(movie)).join("");
     }
 
     // Click opens details modal
@@ -1027,8 +1027,8 @@ function renderContinueWatchingShelf() {
       const cookies = document.cookie || "";
       const isCkb = cookies.includes("googtrans=/en/ckb");
       const isAr = cookies.includes("googtrans=/en/ar");
-      const inProgressText = isCkb ? "Ã˜Â¨Ã›â€¢Ã˜Â±Ã˜Â¯Ã›â€¢Ã™Ë†Ã˜Â§Ã™â€¦ Ã˜Â¨Ã›â€¢" : (isAr ? "Ã™â€šÃ™Å Ã˜Â¯ Ã˜Â§Ã™â€žÃ™â€¦Ã˜Â´Ã˜Â§Ã™â€¡Ã˜Â¯Ã˜Â©" : "In Progress");
-      const leftText = isCkb ? "Ã˜Â®Ã™Ë†Ã™â€žÃ›â€¢ÃšÂ© Ã™â€¦Ã˜Â§Ã™Ë†Ã›â€¢" : (isAr ? "Ã˜Â¯Ã™â€šÃ™Å Ã™â€šÃ˜Â© Ã™â€¦Ã˜ÂªÃ˜Â¨Ã™â€šÃ™Å Ã˜Â©" : "m left");
+      const inProgressText = isCkb ? "Ø¨Û•Ø±Ø¯Û•ÙˆØ§Ù… Ø¨Û•" : (isAr ? "Ù‚ÙŠØ¯ Ø§Ù„Ù…Ø´Ø§Ù‡Ø¯Ø©" : "In Progress");
+      const leftText = isCkb ? "Ø®ÙˆÙ„Û•Ú© Ù…Ø§ÙˆÛ•" : (isAr ? "Ø¯Ù‚ÙŠÙ‚Ø© Ù…ØªØ¨Ù‚ÙŠØ©" : "m left");
       const metaLabel = isIframe
         ? `<span class="notranslate" translate="no">${inProgressText}</span>`
         : `<span class="notranslate" translate="no">${formatNumber(Math.max(1, Math.round(((item.duration || 0) - (item.currentTime || 0)) / 60)))} ${leftText}</span><span class="notranslate" translate="no">${formatNumber(percent)}%</span>`;
@@ -1059,7 +1059,7 @@ function renderContinueWatchingShelf() {
       </div>
     `;
     })
-    .join(" &bull; ");
+    .join("");
 
   track.querySelectorAll(".movie-card").forEach((card) => {
     card.onclick = () => {
@@ -1117,7 +1117,7 @@ const CineAIRecommender = {
     }
 
     const watchedCast = Array.isArray(watchedMovie.cast)
-      ? watchedMovie.cast.join(" &bull; ").toLowerCase()
+      ? watchedMovie.cast.join(" ").toLowerCase()
       : String(watchedMovie.cast || "").toLowerCase();
     const watchedDirector = String(watchedMovie.director || "").toLowerCase().trim();
 
@@ -1168,7 +1168,7 @@ const CineAIRecommender = {
 
       // 4. Cast overlap
       if (candidate.cast && watchedCast) {
-        const cCast = Array.isArray(candidate.cast) ? candidate.cast.join(" &bull; ").toLowerCase() : String(candidate.cast).toLowerCase();
+        const cCast = Array.isArray(candidate.cast) ? candidate.cast.join(" ").toLowerCase() : String(candidate.cast).toLowerCase();
         const castList = watchedCast.split(/,\s*/);
         for (let k = 0; k < castList.length; k++) {
           const actor = castList[k].trim();
@@ -1282,9 +1282,9 @@ function renderBecauseYouWatchedShelf() {
     headingText.classList.add("notranslate");
     headingText.setAttribute("translate", "no");
     if (isCkb) {
-      headingText.innerHTML = `Ãšâ€ Ã™Ë†Ã™â€ ÃšÂ©Ã›â€¢ Ã˜Â³Ã›â€¢Ã›Å’Ã˜Â±Ã›Å’ <bdi class="watched-highlight notranslate" translate="no" dir="ltr">${titleStr}</bdi>Ã™â‚¬Ã˜Âª ÃšÂ©Ã˜Â±Ã˜Â¯Ã™Ë†Ã™Ë†Ã›â€¢`;
+      headingText.innerHTML = `Ú†ÙˆÙ†Ú©Û• Ø³Û•ÛŒØ±ÛŒ <bdi class="watched-highlight notranslate" translate="no" dir="ltr">${titleStr}</bdi>Ù€Øª Ú©Ø±Ø¯ÙˆÙˆÛ•`;
     } else if (isAr) {
-      headingText.innerHTML = `Ã™â€žÃ˜Â£Ã™â€ Ã™Æ’ Ã˜Â´Ã˜Â§Ã™â€¡Ã˜Â¯Ã˜Âª <bdi class="watched-highlight notranslate" translate="no" dir="ltr">${titleStr}</bdi>`;
+      headingText.innerHTML = `Ù„Ø£Ù†Ùƒ Ø´Ø§Ù‡Ø¯Øª <bdi class="watched-highlight notranslate" translate="no" dir="ltr">${titleStr}</bdi>`;
     } else {
       headingText.innerHTML = `Because you watched <span class="watched-highlight notranslate" translate="no">${titleStr}</span>`;
     }
@@ -1297,7 +1297,7 @@ function renderBecauseYouWatchedShelf() {
   }
 
   // Render clean standard movie cards (no match percentage badge)
-  track.innerHTML = recommendations.map(({ movie }) => createMovieCardHTML(movie)).join(" &bull; ");
+  track.innerHTML = recommendations.map(({ movie }) => createMovieCardHTML(movie)).join("");
 
   // Wire click event to open details modal
   track.querySelectorAll(".movie-card").forEach((card) => {
@@ -1327,7 +1327,7 @@ function renderWatchlistHomeShelf() {
   }
 
   shelf.classList.remove("hidden");
-  track.innerHTML = validFavorites.map((movie) => createMovieCardHTML(movie)).join(" &bull; ");
+  track.innerHTML = validFavorites.map((movie) => createMovieCardHTML(movie)).join("");
 
   track.querySelectorAll(".movie-card").forEach((card) => {
     card.onclick = () => openDetailsModal(card.dataset.id);
@@ -1411,8 +1411,8 @@ function renderContinueWatchingPage() {
       const cookies = document.cookie || "";
       const isCkb = cookies.includes("googtrans=/en/ckb");
       const isAr = cookies.includes("googtrans=/en/ar");
-      const inProgressText = isCkb ? "Ã˜Â¨Ã›â€¢Ã˜Â±Ã˜Â¯Ã›â€¢Ã™Ë†Ã˜Â§Ã™â€¦ Ã˜Â¨Ã›â€¢" : (isAr ? "Ã™â€šÃ™Å Ã˜Â¯ Ã˜Â§Ã™â€žÃ™â€¦Ã˜Â´Ã˜Â§Ã™â€¡Ã˜Â¯Ã˜Â©" : "In Progress");
-      const leftText = isCkb ? "Ã˜Â®Ã™Ë†Ã™â€žÃ›â€¢ÃšÂ© Ã™â€¦Ã˜Â§Ã™Ë†Ã›â€¢" : (isAr ? "Ã˜Â¯Ã™â€šÃ™Å Ã™â€šÃ˜Â© Ã™â€¦Ã˜ÂªÃ˜Â¨Ã™â€šÃ™Å Ã˜Â©" : "m left");
+      const inProgressText = isCkb ? "Ø¨Û•Ø±Ø¯Û•ÙˆØ§Ù… Ø¨Û•" : (isAr ? "Ù‚ÙŠØ¯ Ø§Ù„Ù…Ø´Ø§Ù‡Ø¯Ø©" : "In Progress");
+      const leftText = isCkb ? "Ø®ÙˆÙ„Û•Ú© Ù…Ø§ÙˆÛ•" : (isAr ? "Ø¯Ù‚ÙŠÙ‚Ø© Ù…ØªØ¨Ù‚ÙŠØ©" : "m left");
       const metaLabel = isIframe
         ? `<span class="notranslate" translate="no">${inProgressText}</span>`
         : `<span class="notranslate" translate="no">${formatNumber(Math.max(1, Math.round(((item.duration || 0) - (item.currentTime || 0)) / 60)))} ${leftText}</span><span class="notranslate" translate="no">${formatNumber(percent)}%</span>`;
@@ -1448,7 +1448,7 @@ function renderContinueWatchingPage() {
       </div>
     `;
     })
-    .join(" &bull; ");
+    .join("");
 
   grid.querySelectorAll(".movie-card").forEach((card) => {
     card.onclick = () => {
@@ -1490,7 +1490,7 @@ function renderWatchlist() {
   }
 
   if (emptyState) emptyState.classList.add("hidden");
-  grid.innerHTML = validFavorites.map((movie) => createMovieCardHTML(movie, null, false)).join(" &bull; ");
+  grid.innerHTML = validFavorites.map((movie) => createMovieCardHTML(movie, null, false)).join("");
 
   grid.querySelectorAll(".movie-card").forEach((card) => {
     card.onclick = () => openDetailsModal(card.dataset.id);
@@ -1530,7 +1530,7 @@ function renderFilteredGrid(movieList, titleText) {
     `;
   } else {
     const isMobileFiltered = typeof window !== 'undefined' && window.innerWidth <= 768;
-    filteredGrid.innerHTML = movieList.map(m => createMovieCardHTML(m, null, isMobileFiltered)).join(" &bull; ");
+    filteredGrid.innerHTML = movieList.map(m => createMovieCardHTML(m, null, isMobileFiltered)).join("");
     filteredGrid.querySelectorAll(".movie-card").forEach((card) => {
       card.onclick = () => openDetailsModal(card.dataset.id);
     });
@@ -1551,13 +1551,13 @@ function renderBrowseGrid(items, gridId, page) {
   if (pageItems.length === 0) {
     grid.innerHTML = `
       <div class="browse-empty">
-        <div class="empty-icon">Ã°Å¸Å½Â¬</div>
+        <div class="empty-icon">ðŸŽ¬</div>
         <h3>No titles found</h3>
         <p>Try a different filter.</p>
       </div>`;
   } else {
     const isMobileGrid = typeof window !== 'undefined' && window.innerWidth <= 768;
-    grid.innerHTML = pageItems.map(m => createMovieCardHTML(m, null, isMobileGrid)).join(" &bull; ");
+    grid.innerHTML = pageItems.map(m => createMovieCardHTML(m, null, isMobileGrid)).join("");
     grid.querySelectorAll(".movie-card").forEach((card) => {
       card.onclick = () => openDetailsModal(card.dataset.id);
     });
@@ -1697,12 +1697,12 @@ function renderMoviesSection() {
 
   // Update count badge (next to heading)
   const countEl = document.getElementById("moviesCount");
-  if (countEl) countEl.textContent = isCkb ? `${formatNumber(filtered.length)} Ã™ÂÃ›Å’Ã™â€žÃ™â€¦` : (isAr ? `${filtered.length} Ã™ÂÃ™Å Ã™â€žÃ™â€¦` : `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`);
+  if (countEl) countEl.textContent = isCkb ? `${formatNumber(filtered.length)} ÙÛŒÙ„Ù…` : (isAr ? `${filtered.length} ÙÙŠÙ„Ù…` : `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`);
 
   // Update count label (between filters and grid)
   const labelEl = document.getElementById("moviesCountLabel");
   if (labelEl) {
-    labelEl.textContent = isCkb ? `Ã™â€ Ã˜Â§Ã™Ë†Ã™â€ Ã›Å’Ã˜Â´Ã˜Â§Ã™â€ Ã›â€¢ÃšÂ©Ã˜Â§Ã™â€ : ${formatNumber(filtered.length)}` : (isAr ? `Ã˜Â§Ã™â€žÃ˜Â¹Ã™â€ Ã˜Â§Ã™Ë†Ã™Å Ã™â€ : ${filtered.length}` : `Titles: ${filtered.length}`);
+    labelEl.textContent = isCkb ? `Ù†Ø§ÙˆÙ†ÛŒØ´Ø§Ù†Û•Ú©Ø§Ù†: ${formatNumber(filtered.length)}` : (isAr ? `Ø§Ù„Ø¹Ù†Ø§ÙˆÙŠÙ†: ${filtered.length}` : `Titles: ${filtered.length}`);
   }
 
   // Sync active filter button
@@ -1730,12 +1730,12 @@ function renderSeriesSection() {
   const isAr = cookies.includes('googtrans=/en/ar');
 
   const countEl = document.getElementById("seriesCount");
-  if (countEl) countEl.textContent = isCkb ? `${formatNumber(filtered.length)} Ã˜Â²Ã™â€ Ã˜Â¬Ã›Å’Ã˜Â±Ã›â€¢` : (isAr ? `${filtered.length} Ã™â€¦Ã˜Â³Ã™â€žÃ˜Â³Ã™â€ž` : `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`);
+  if (countEl) countEl.textContent = isCkb ? `${formatNumber(filtered.length)} Ø²Ù†Ø¬ÛŒØ±Û•` : (isAr ? `${filtered.length} Ù…Ø³Ù„Ø³Ù„` : `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`);
 
   // Update count label (between filters and grid)
   const labelEl = document.getElementById("seriesCountLabel");
   if (labelEl) {
-    labelEl.textContent = isCkb ? `Ã™â€ Ã˜Â§Ã™Ë†Ã™â€ Ã›Å’Ã˜Â´Ã˜Â§Ã™â€ Ã›â€¢ÃšÂ©Ã˜Â§Ã™â€ : ${formatNumber(filtered.length)}` : (isAr ? `Ã˜Â§Ã™â€žÃ˜Â¹Ã™â€ Ã˜Â§Ã™Ë†Ã™Å Ã™â€ : ${filtered.length}` : `Titles: ${filtered.length}`);
+    labelEl.textContent = isCkb ? `Ù†Ø§ÙˆÙ†ÛŒØ´Ø§Ù†Û•Ú©Ø§Ù†: ${formatNumber(filtered.length)}` : (isAr ? `Ø§Ù„Ø¹Ù†Ø§ÙˆÙŠÙ†: ${filtered.length}` : `Titles: ${filtered.length}`);
   }
 
   document.querySelectorAll("#seriesFilterBar .browse-filter-btn").forEach((btn) => {
@@ -1784,11 +1784,11 @@ function renderAnimeSection() {
   const isAr = cookies.includes('googtrans=/en/ar');
 
   const countEl = document.getElementById("animeCount");
-  if (countEl) countEl.textContent = isCkb ? `${formatNumber(filtered.length)} Ã˜Â¦Ã›â€¢Ã™â€ Ã›Å’Ã™â€¦Ã›Å½` : (isAr ? `${filtered.length} Ã˜Â£Ã™â€ Ã™â€¦Ã™Å ` : `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`);
+  if (countEl) countEl.textContent = isCkb ? `${formatNumber(filtered.length)} Ø¦Û•Ù†ÛŒÙ…ÛŽ` : (isAr ? `${filtered.length} Ø£Ù†Ù…ÙŠ` : `${filtered.length} title${filtered.length !== 1 ? "s" : ""}`);
 
   const labelEl = document.getElementById("animeCountLabel");
   if (labelEl) {
-    labelEl.textContent = isCkb ? `Ã™â€ Ã˜Â§Ã™Ë†Ã™â€ Ã›Å’Ã˜Â´Ã˜Â§Ã™â€ Ã›â€¢ÃšÂ©Ã˜Â§Ã™â€ : ${formatNumber(filtered.length)}` : (isAr ? `Ã˜Â§Ã™â€žÃ˜Â¹Ã™â€ Ã˜Â§Ã™Ë†Ã™Å Ã™â€ : ${filtered.length}` : `Titles: ${filtered.length}`);
+    labelEl.textContent = isCkb ? `Ù†Ø§ÙˆÙ†ÛŒØ´Ø§Ù†Û•Ú©Ø§Ù†: ${formatNumber(filtered.length)}` : (isAr ? `Ø§Ù„Ø¹Ù†Ø§ÙˆÙŠÙ†: ${filtered.length}` : `Titles: ${filtered.length}`);
   }
 
   document.querySelectorAll("#animeFilterBar .browse-filter-btn").forEach((btn) => {
@@ -2152,34 +2152,34 @@ function _performSwitchView(viewName) {
     const bttBtn = document.getElementById("backToTopBtn");
     if (bttBtn) bttBtn.classList.remove("visible");
   }
-  // Snap instantly to top Ã¢â‚¬â€ the padding-top on .main-content already clears the fixed navbar.
+  // Snap instantly to top â€” the padding-top on .main-content already clears the fixed navbar.
   window.scrollTo({ top: 0, behavior: "instant" });
 }
 
 // =====================================================
-// Section SEO Updater â€” updates title/meta per section
+// Section SEO Updater — updates title/meta per section
 // =====================================================
 function updateSectionSEO(viewName) {
   const BASE = 'https://cinewatch.watch';
   const SEO = {
     home: {
       title: 'CineWatch - Watch Movies & TV Series Online Free',
-      description: 'CineWatch â€” Watch the latest movies, TV series, anime and 4K titles online for free. Browse thousands of titles, rate them and track what you watch.',
+      description: 'CineWatch — Watch the latest movies, TV series, anime and 4K titles online for free. Browse thousands of titles, rate them and track what you watch.',
       url: `${BASE}/`
     },
     movies: {
       title: 'Watch Movies Online Free | CineWatch',
-      description: 'Browse hundreds of free movies on CineWatch â€” action, comedy, horror, drama, sci-fi and more. No sign-up required.',
+      description: 'Browse hundreds of free movies on CineWatch — action, comedy, horror, drama, sci-fi and more. No sign-up required.',
       url: `${BASE}/?section=movies`
     },
     series: {
       title: 'Watch TV Series Online Free | CineWatch',
-      description: 'Stream full TV series and seasons online for free on CineWatch â€” drama, thriller, sci-fi, action and more.',
+      description: 'Stream full TV series and seasons online for free on CineWatch — drama, thriller, sci-fi, action and more.',
       url: `${BASE}/?section=series`
     },
     anime: {
       title: 'Watch Anime Online Free | CineWatch',
-      description: 'Stream the best anime series and anime movies free on CineWatch â€” action, romance, fantasy, isekai and more.',
+      description: 'Stream the best anime series and anime movies free on CineWatch — action, romance, fantasy, isekai and more.',
       url: `${BASE}/?section=anime`
     },
     '4k': {
@@ -2258,19 +2258,19 @@ function refreshAllFavButtons(movieId, isFav) {
     `.card-fav-btn[data-id="${movieId}"]`,
   );
   favBtns.forEach((btn) => {
-    btn.innerHTML = isFav ? "Ã¢Å“â€œ" : "+";
+    btn.innerHTML = isFav ? "âœ“" : "+";
     if (isFav) btn.classList.add("active");
     else btn.classList.remove("active");
   });
 }
 
 function renderAvatarHTML(avatarStr, extraClass = "") {
-  if (avatarStr === "??" || avatarStr === "?") avatarStr = "Ã°Å¸ÂÂ¿";
+  if (avatarStr === "??" || avatarStr === "?") avatarStr = "ðŸ¿";
   const isImg = avatarStr && (avatarStr.startsWith("data:") || avatarStr.startsWith("http"));
   if (isImg) {
     return `<img src="${avatarStr}" class="avatar-custom-img ${extraClass}" alt="User Avatar">`;
   }
-  return `<span class="avatar-icon ${extraClass}">${avatarStr || "Ã°Å¸ÂÂ¿"}</span>`;
+  return `<span class="avatar-icon ${extraClass}">${avatarStr || "ðŸ¿"}</span>`;
 }
 
 function renderUserBadge() {
@@ -2280,7 +2280,7 @@ function renderUserBadge() {
   if (!container && !sidebarFooter) return;
 
   if (state.user) {
-    const userAvatar = state.user.avatar || "Ã°Å¸ÂÂ¿";
+    const userAvatar = state.user.avatar || "ðŸ¿";
     const userName = state.user.name || "User";
     const userEmail = state.user.email || "";
     const createdAt = state.user.createdAt
@@ -2293,8 +2293,8 @@ function renderUserBadge() {
       cookies.includes('googtrans=/en/ar') ? 'ar' : 'en';
 
     let uploadAvatarText = "Upload avatar";
-    if (currentLang === 'ckb') uploadAvatarText = "Ã™Ë†Ã›Å½Ã™â€ Ã›â€¢Ã›Å’ Ã™Â¾Ãšâ€¢Ã›â€ Ã™ÂÃ˜Â§Ã›Å’Ã™â€ž";
-    else if (currentLang === 'ar') uploadAvatarText = "Ã˜ÂªÃ˜ÂºÃ™Å Ã™Å Ã˜Â± Ã˜Â§Ã™â€žÃ˜ÂµÃ™Ë†Ã˜Â±Ã˜Â©";
+    if (currentLang === 'ckb') uploadAvatarText = "ÙˆÛŽÙ†Û•ÛŒ Ù¾Ú•Û†ÙØ§ÛŒÙ„";
+    else if (currentLang === 'ar') uploadAvatarText = "ØªØºÙŠÙŠØ± Ø§Ù„ØµÙˆØ±Ø©";
 
     if (container) {
       // Render only the avatar icon button in the navbar
@@ -2382,7 +2382,7 @@ function renderUserBadge() {
           <div class="account-panel-date"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#e50914" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Member since ${createdAt || "Unknown"}</div>
         </div>
 
-        <div class="account-panel-section-label">Ã¢Å¡â„¢ SETTINGS</div>
+        <div class="account-panel-section-label">âš™ SETTINGS</div>
 
         <div class="account-panel-actions">
           <button class="account-panel-action-btn panel-vip-btn" id="panelVipUpgradeBtn" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(239, 68, 68, 0.22)); border: 1px solid rgba(245, 158, 11, 0.55); color: #fbbf24; font-weight: 700; margin-bottom: 8px;">
@@ -2651,15 +2651,15 @@ async function renderCommentsSection(movieId) {
 
   const commentsTitleHeading = document.getElementById('commentsTitleHeading');
   if (commentsTitleHeading) {
-    commentsTitleHeading.textContent = isCkb ? 'Ã˜Â¨Ã›â€ Ãšâ€ Ã™Ë†Ã™Ë†Ã™â€ Ã›â€¢ÃšÂ©Ã˜Â§Ã™â€ ' : (isAr ? 'Ã˜Â§Ã™â€žÃ˜ÂªÃ˜Â¹Ã™â€žÃ™Å Ã™â€šÃ˜Â§Ã˜Âª' : 'Comments');
+    commentsTitleHeading.textContent = isCkb ? 'Ø¨Û†Ú†ÙˆÙˆÙ†Û•Ú©Ø§Ù†' : (isAr ? 'Ø§Ù„ØªØ¹Ù„ÙŠÙ‚Ø§Øª' : 'Comments');
   }
 
-  const placeholderText = isCkb ? 'Ã˜Â¨Ã›â€ Ãšâ€ Ã™Ë†Ã™Ë†Ã™â€ Ã›Å½ÃšÂ© Ã˜Â¨Ã™â€ Ã™Ë†Ã™Ë†Ã˜Â³Ã›â€¢...' : (isAr ? 'Ã˜Â§Ã™Æ’Ã˜ÂªÃ˜Â¨ Ã˜ÂªÃ˜Â¹Ã™â€žÃ™Å Ã™â€šÃ˜Â§Ã™â€¹...' : 'Write a comment...');
-  const postBtnText = isCkb ? 'Ã™â€ Ã˜Â§Ã˜Â±Ã˜Â¯Ã™â€ Ã›Å’ Ã˜Â¨Ã›â€ Ãšâ€ Ã™Ë†Ã™Ë†Ã™â€ ' : (isAr ? 'Ã˜Â¥Ã˜Â±Ã˜Â³Ã˜Â§Ã™â€ž Ã˜Â§Ã™â€žÃ˜ÂªÃ˜Â¹Ã™â€žÃ™Å Ã™â€š' : 'Post Comment');
-  const loginNotice = isCkb ? 'Ã˜ÂªÃšÂ©Ã˜Â§Ã›Å’Ã›â€¢ Ã˜Â®Ã›â€ Ã˜Âª Ã˜ÂªÃ›â€ Ã™â€¦Ã˜Â§Ã˜Â±Ã˜Â¨ÃšÂ©Ã›â€¢ Ã˜Â³Ã›â€¢Ã˜Â±Ã›â€¢Ã˜ÂªÃ˜Â§' : (isAr ? 'Ã™Å Ã˜Â¬Ã˜Â¨ Ã˜ÂªÃ˜Â³Ã˜Â¬Ã™Å Ã™â€ž Ã˜Â§Ã™â€žÃ˜Â¯Ã˜Â®Ã™Ë†Ã™â€ž Ã™â€žÃ˜Â¥Ã˜Â¶Ã˜Â§Ã™ÂÃ˜Â© Ã˜ÂªÃ˜Â¹Ã™â€žÃ™Å Ã™â€š.' : 'You must be logged in to post a comment.');
-  const loginBtnText = isCkb ? 'Ãšâ€ Ã™Ë†Ã™Ë†Ã™â€ Ã›â€¢ÃšËœÃ™Ë†Ã™Ë†Ã˜Â±Ã›â€¢Ã™Ë†Ã›â€¢ Ã›Å’Ã˜Â§Ã™â€  Ã˜Â¯Ã˜Â±Ã™Ë†Ã˜Â³Ã˜ÂªÃšÂ©Ã˜Â±Ã˜Â¯Ã™â€ Ã›Å’ Ã™â€¡Ã›â€¢ÃšËœÃ™â€¦Ã˜Â§Ã˜Â±' : (isAr ? 'Ã˜ÂªÃ˜Â³Ã˜Â¬Ã™Å Ã™â€ž Ã˜Â§Ã™â€žÃ˜Â¯Ã˜Â®Ã™Ë†Ã™â€ž Ã˜Â£Ã™Ë† Ã˜Â¥Ã™â€ Ã˜Â´Ã˜Â§Ã˜Â¡ Ã˜Â­Ã˜Â³Ã˜Â§Ã˜Â¨' : 'Log In or Sign Up');
-  const noCommentsText = isCkb ? 'Ã™â€¡Ã›Å’Ãšâ€  Ã˜Â¨Ã›â€ Ãšâ€ Ã™Ë†Ã™Ë†Ã™â€ Ã›Å½ÃšÂ© Ã™â€ Ã›Å’Ã›Å’Ã›â€¢Ã˜Å’ Ã›Å’Ã›â€¢ÃšÂ©Ã›â€¢Ã™â€¦ ÃšÂ©Ã›â€¢Ã˜Â³ Ã˜Â¨Ã›â€¢' : (isAr ? 'Ã™â€žÃ˜Â§ Ã˜ÂªÃ™Ë†Ã˜Â¬Ã˜Â¯ Ã˜ÂªÃ˜Â¹Ã™â€žÃ™Å Ã™â€šÃ˜Â§Ã˜Âª Ã˜Â¨Ã˜Â¹Ã˜Â¯. Ã™Æ’Ã™â€  Ã˜Â£Ã™Ë†Ã™â€ž Ã™â€¦Ã™â€  Ã™Å Ã˜Â¹Ã™â€žÃ™â€š' : 'No comments yet. Be the first!');
-  const failedText = isCkb ? 'Ã˜Â¨Ã˜Â§Ã˜Â±ÃšÂ©Ã˜Â±Ã˜Â¯Ã™â€ Ã›Å’ Ã˜Â¨Ã›â€ Ãšâ€ Ã™Ë†Ã™Ë†Ã™â€ Ã›â€¢ÃšÂ©Ã˜Â§Ã™â€  Ã˜Â³Ã›â€¢Ã˜Â±ÃšÂ©Ã›â€¢Ã™Ë†Ã˜ÂªÃ™Ë†Ã™Ë† Ã™â€ Ã›â€¢Ã˜Â¨Ã™Ë†Ã™Ë†.' : (isAr ? 'Ã™ÂÃ˜Â´Ã™â€ž Ã˜ÂªÃ˜Â­Ã™â€¦Ã™Å Ã™â€ž Ã˜Â§Ã™â€žÃ˜ÂªÃ˜Â¹Ã™â€žÃ™Å Ã™â€šÃ˜Â§Ã˜Âª.' : 'Failed to load comments.');
+  const placeholderText = isCkb ? 'Ø¨Û†Ú†ÙˆÙˆÙ†ÛŽÚ© Ø¨Ù†ÙˆÙˆØ³Û•...' : (isAr ? 'Ø§ÙƒØªØ¨ ØªØ¹Ù„ÙŠÙ‚Ø§Ù‹...' : 'Write a comment...');
+  const postBtnText = isCkb ? 'Ù†Ø§Ø±Ø¯Ù†ÛŒ Ø¨Û†Ú†ÙˆÙˆÙ†' : (isAr ? 'Ø¥Ø±Ø³Ø§Ù„ Ø§Ù„ØªØ¹Ù„ÙŠÙ‚' : 'Post Comment');
+  const loginNotice = isCkb ? 'ØªÚ©Ø§ÛŒÛ• Ø®Û†Øª ØªÛ†Ù…Ø§Ø±Ø¨Ú©Û• Ø³Û•Ø±Û•ØªØ§' : (isAr ? 'ÙŠØ¬Ø¨ ØªØ³Ø¬ÙŠÙ„ Ø§Ù„Ø¯Ø®ÙˆÙ„ Ù„Ø¥Ø¶Ø§ÙØ© ØªØ¹Ù„ÙŠÙ‚.' : 'You must be logged in to post a comment.');
+  const loginBtnText = isCkb ? 'Ú†ÙˆÙˆÙ†Û•Ú˜ÙˆÙˆØ±Û•ÙˆÛ• ÛŒØ§Ù† Ø¯Ø±ÙˆØ³ØªÚ©Ø±Ø¯Ù†ÛŒ Ù‡Û•Ú˜Ù…Ø§Ø±' : (isAr ? 'ØªØ³Ø¬ÙŠÙ„ Ø§Ù„Ø¯Ø®ÙˆÙ„ Ø£Ùˆ Ø¥Ù†Ø´Ø§Ø¡ Ø­Ø³Ø§Ø¨' : 'Log In or Sign Up');
+  const noCommentsText = isCkb ? 'Ù‡ÛŒÚ† Ø¨Û†Ú†ÙˆÙˆÙ†ÛŽÚ© Ù†ÛŒÛŒÛ•ØŒ ÛŒÛ•Ú©Û•Ù… Ú©Û•Ø³ Ø¨Û•' : (isAr ? 'Ù„Ø§ ØªÙˆØ¬Ø¯ ØªØ¹Ù„ÙŠÙ‚Ø§Øª Ø¨Ø¹Ø¯. ÙƒÙ† Ø£ÙˆÙ„ Ù…Ù† ÙŠØ¹Ù„Ù‚' : 'No comments yet. Be the first!');
+  const failedText = isCkb ? 'Ø¨Ø§Ø±Ú©Ø±Ø¯Ù†ÛŒ Ø¨Û†Ú†ÙˆÙˆÙ†Û•Ú©Ø§Ù† Ø³Û•Ø±Ú©Û•ÙˆØªÙˆÙˆ Ù†Û•Ø¨ÙˆÙˆ.' : (isAr ? 'ÙØ´Ù„ ØªØ­Ù…ÙŠÙ„ Ø§Ù„ØªØ¹Ù„ÙŠÙ‚Ø§Øª.' : 'Failed to load comments.');
 
   // Show section
   commentsSection.style.display = 'block';
@@ -2701,10 +2701,10 @@ async function renderCommentsSection(movieId) {
   commentsList.innerHTML = data.map(comment => {
     const avatarContent = comment.avatar && comment.avatar.length > 20
       ? `<img src="${comment.avatar}" alt="avatar" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">`
-      : (comment.avatar || 'Ã°Å¸Å½Â¬');
+      : (comment.avatar || 'ðŸŽ¬');
 
     const isOwner = state.user && comment.user_id === state.user.id;
-    const deleteTitle = isCkb ? 'Ã˜Â³Ãšâ€¢Ã›Å’Ã™â€ Ã›â€¢Ã™Ë†Ã›â€¢Ã›Å’ Ã˜Â¨Ã›â€ Ãšâ€ Ã™Ë†Ã™Ë†Ã™â€ ' : (isAr ? 'Ã˜Â­Ã˜Â°Ã™Â Ã˜Â§Ã™â€žÃ˜ÂªÃ˜Â¹Ã™â€žÃ™Å Ã™â€š' : 'Delete comment');
+    const deleteTitle = isCkb ? 'Ø³Ú•ÛŒÙ†Û•ÙˆÛ•ÛŒ Ø¨Û†Ú†ÙˆÙˆÙ†' : (isAr ? 'Ø­Ø°Ù Ø§Ù„ØªØ¹Ù„ÙŠÙ‚' : 'Delete comment');
     const deleteBtn = isOwner ? `
       <button class="comment-delete-btn" onclick="deleteComment('${comment.id}', '${movieId}')" title="${deleteTitle}">
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4h6v2"/></svg>
@@ -2746,8 +2746,8 @@ window.submitComment = async function (movieId) {
   const cookies = document.cookie || '';
   const isCkb = cookies.includes('googtrans=/en/ckb');
   const isAr = cookies.includes('googtrans=/en/ar');
-  const postingText = isCkb ? '...Ã™â€ Ã˜Â§Ã˜Â±Ã˜Â¯Ã™â€ ' : (isAr ? '...Ã˜Â¬Ã˜Â§Ã˜Â±Ã™Â Ã˜Â§Ã™â€žÃ˜Â¥Ã˜Â±Ã˜Â³Ã˜Â§Ã™â€ž' : 'Posting...');
-  const postBtnText = isCkb ? 'Ã™â€ Ã˜Â§Ã˜Â±Ã˜Â¯Ã™â€ Ã›Å’ Ã˜Â¨Ã›â€ Ãšâ€ Ã™Ë†Ã™Ë†Ã™â€ ' : (isAr ? 'Ã˜Â¥Ã˜Â±Ã˜Â³Ã˜Â§Ã™â€ž Ã˜Â§Ã™â€žÃ˜ÂªÃ˜Â¹Ã™â€žÃ™Å Ã™â€š' : 'Post Comment');
+  const postingText = isCkb ? '...Ù†Ø§Ø±Ø¯Ù†' : (isAr ? '...Ø¬Ø§Ø±Ù Ø§Ù„Ø¥Ø±Ø³Ø§Ù„' : 'Posting...');
+  const postBtnText = isCkb ? 'Ù†Ø§Ø±Ø¯Ù†ÛŒ Ø¨Û†Ú†ÙˆÙˆÙ†' : (isAr ? 'Ø¥Ø±Ø³Ø§Ù„ Ø§Ù„ØªØ¹Ù„ÙŠÙ‚' : 'Post Comment');
 
   if (postBtn) {
     postBtn.disabled = true;
@@ -2760,7 +2760,7 @@ window.submitComment = async function (movieId) {
     if (textInput) textInput.value = '';
     await renderCommentsSection(movieId);
   } else {
-    alert((isCkb ? 'Ã™â€ Ã˜Â§Ã˜Â±Ã˜Â¯Ã™â€  Ã˜Â³Ã›â€¢Ã˜Â±ÃšÂ©Ã›â€¢Ã™Ë†Ã˜ÂªÃ™Ë†Ã™Ë† Ã™â€ Ã›â€¢Ã˜Â¨Ã™Ë†Ã™Ë†: ' : (isAr ? 'Ã™ÂÃ˜Â´Ã™â€ž Ã˜Â§Ã™â€žÃ™â€ Ã˜Â´Ã˜Â±: ' : 'Failed to post comment: ')) + (error || 'Unknown error'));
+    alert((isCkb ? 'Ù†Ø§Ø±Ø¯Ù† Ø³Û•Ø±Ú©Û•ÙˆØªÙˆÙˆ Ù†Û•Ø¨ÙˆÙˆ: ' : (isAr ? 'ÙØ´Ù„ Ø§Ù„Ù†Ø´Ø±: ' : 'Failed to post comment: ')) + (error || 'Unknown error'));
   }
 
   if (postBtn) {
@@ -2947,7 +2947,7 @@ function openDetailsModal(movieId) {
     const isAr = (document.cookie || '').includes('googtrans=/en/ar');
     if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
       const sCount = formatNumber(movie.seasons.length);
-      document.getElementById("detailsDuration").textContent = isCkb ? `${sCount} Ã™Ë†Ã›â€¢Ã˜Â±Ã˜Â²` : (isAr ? `${movie.seasons.length} Ã™â€¦Ã™Ë†Ã˜Â§Ã˜Â³Ã™â€¦` : `${movie.seasons.length} Season${movie.seasons.length > 1 ? 's' : ''}`);
+      document.getElementById("detailsDuration").textContent = isCkb ? `${sCount} ÙˆÛ•Ø±Ø²` : (isAr ? `${movie.seasons.length} Ù…ÙˆØ§Ø³Ù…` : `${movie.seasons.length} Season${movie.seasons.length > 1 ? 's' : ''}`);
     } else {
       document.getElementById("detailsDuration").textContent = movie.duration;
     }
@@ -2958,12 +2958,12 @@ function openDetailsModal(movieId) {
     }
 
     if (document.getElementById("detailsGenres")) {
-      document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &bull; ");
+      document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &middot; ");
     }
 
     const userRatingLabel = document.getElementById("userRatingLabel");
     if (userRatingLabel) {
-      userRatingLabel.textContent = isCkb ? "Ã™â€¡Ã›â€¢ÃšÂµÃ˜Â³Ã›â€¢Ã™â€ ÃšÂ¯Ã˜Â§Ã™â€ Ã˜Â¯Ã™â€ " : (isAr ? "Ã˜Â§Ã™â€žÃ˜ÂªÃ™â€šÃ™Å Ã™Å Ã™â€¦" : "Rate:");
+      userRatingLabel.textContent = isCkb ? "Ù‡Û•ÚµØ³Û•Ù†Ú¯Ø§Ù†Ø¯Ù†" : (isAr ? "Ø§Ù„ØªÙ‚ÙŠÙŠÙ…" : "Rate:");
     }
 
     setOverviewElement(document.getElementById("detailsOverview"), getLocalizedOverview(movie));
@@ -2984,7 +2984,7 @@ function openDetailsModal(movieId) {
 
     if (castContainer && castText) {
       if (movie.cast && movie.cast.length > 0) {
-        castText.textContent = movie.cast.join(" &bull; ");
+        castText.textContent = movie.cast.join(", ");
         castContainer.classList.remove("hidden");
       } else {
         castContainer.classList.add("hidden");
@@ -3050,7 +3050,7 @@ function openDetailsModal(movieId) {
       const limited = similarMovies.slice(0, 12);
       if (limited.length > 0) {
         similarsSection.classList.remove("hidden");
-        similarsGrid.innerHTML = limited.map((m) => createMovieCardHTML(m)).join(" &bull; ");
+        similarsGrid.innerHTML = limited.map((m) => createMovieCardHTML(m)).join("");
         similarsGrid.querySelectorAll(".movie-card").forEach((card) => {
           card.onclick = () => openDetailsModal(card.dataset.id);
         });
@@ -3059,7 +3059,7 @@ function openDetailsModal(movieId) {
       }
     }
 
-    // Ã¢â€â‚¬Ã¢â€â‚¬ TV Show: show season/episode picker Ã¢â€â‚¬Ã¢â€â‚¬
+    // â”€â”€ TV Show: show season/episode picker â”€â”€
     const tvSection = document.getElementById("tvShowSection");
     const playBtn = document.getElementById("detailsPlayBtn");
 
@@ -3075,7 +3075,7 @@ function openDetailsModal(movieId) {
       // Populate custom season dropdown
       seasonSelectOptions.innerHTML = movie.seasons
         .map((s) => `<div class="custom-option" data-value="${s.season}">Season ${s.season}</div>`)
-        .join(" &bull; ");
+        .join("");
 
       if (movie.seasons.length > 0) {
         const initialSeason = movie.seasons[0].season;
@@ -3173,7 +3173,7 @@ function openDetailsModal(movieId) {
           return `
         <div class="episode-row ${resolvedUrl ? "" : "episode-unavailable"}" 
              data-video="${resolvedUrl}" 
-             data-title="${movie.title} Ã¢â‚¬â€ S${seasonData.season}E${ep.episode}: ${ep.title}"
+             data-title="${movie.title} â€” S${seasonData.season}E${ep.episode}: ${ep.title}"
              data-episode="${ep.episode}"
              data-abs-episode="${ep.absoluteEpisode || ''}"
              title="${resolvedUrl ? "Click to watch" : "Not available yet"}">
@@ -3181,13 +3181,13 @@ function openDetailsModal(movieId) {
             ${thumb ? `<img src="${thumb}" alt="${ep.title}" loading="lazy" class="ep-thumb-img">` : ""}
             <div class="ep-thumb-overlay">
               <span class="ep-num-badge">${ep.episode}</span>
-              ${resolvedUrl ? '<div class="ep-play-circle">Ã¢â€“Â¶</div>' : ""}
+              ${resolvedUrl ? '<div class="ep-play-circle">â–¶</div>' : ""}
             </div>
           </div>
           <div class="episode-row-info">
             <h4 class="ep-row-title notranslate" translate="no">${ep.title}</h4>
             <div class="ep-row-meta">
-              ${ratingVal ? `<span class="ep-row-rating" title="IMDb Rating: ${ratingVal}">Ã¢Ëœâ€¦ ${ratingVal}</span>` : ""}
+              ${ratingVal ? `<span class="ep-row-rating" title="IMDb Rating: ${ratingVal}">â˜… ${ratingVal}</span>` : ""}
               ${airDate ? `<span class="ep-row-date">${airDate}</span>` : ""}
               ${duration ? `<span class="ep-row-duration">${duration}</span>` : ""}
             </div>
@@ -3196,7 +3196,7 @@ function openDetailsModal(movieId) {
           ${resolvedUrl ? `` : `<span class="episode-soon">Soon</span>`}
         </div>
       `;
-        }).join(" &bull; ");
+        }).join("");
 
         // Click to play episode
         episodeGrid.querySelectorAll(".episode-row:not(.episode-unavailable)").forEach((card) => {
@@ -3267,7 +3267,7 @@ function openDetailsModal(movieId) {
       };
 
     } else {
-      // Movie ÃŽâ€œÃƒâ€¡ÃƒÂ¶ hide TV section
+      // Movie Î“Ã‡Ã¶ hide TV section
       tvSection.classList.add("hidden");
       playBtn.onclick = () => {
         openVideoPlayer(movie.id);
@@ -3280,7 +3280,7 @@ function openDetailsModal(movieId) {
     if (similarsText) {
       const isCkb = document.cookie.includes("googtrans=/en/ckb");
       const isAr = document.cookie.includes("googtrans=/en/ar");
-      similarsText.textContent = isCkb ? "Ã™â€¡Ã˜Â§Ã™Ë†Ã˜Â´Ã›Å½Ã™Ë†Ã›â€¢" : (isAr ? "Ã˜Â£Ã˜Â¹Ã™â€¦Ã˜Â§Ã™â€ž Ã™â€¦Ã˜Â´Ã˜Â§Ã˜Â¨Ã™â€¡Ã˜Â©" : "Similars");
+      similarsText.textContent = isCkb ? "Ù‡Ø§ÙˆØ´ÛŽÙˆÛ•" : (isAr ? "Ø£Ø¹Ù…Ø§Ù„ Ù…Ø´Ø§Ø¨Ù‡Ø©" : "Similars");
     }
     if (similarsBtn) {
       similarsBtn.onclick = () => {
@@ -3408,7 +3408,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   const playPauseBtn = document.getElementById("playPauseBtn");
   const serverWrap = document.getElementById("serverSelectWrap");
 
-  // Ã¢â€â‚¬Ã¢â€â‚¬ Populate info area Ã¢â€â‚¬Ã¢â€â‚¬
+  // â”€â”€ Populate info area â”€â”€
   const parentMovie = parentId ? (findMovieByIdOrTitle(parentId) || MOVIES.find(m => m.id === parentId || String(m.videoUrl) === String(parentId))) : null;
   renderPlayerDetailsPanel(parentMovie, epData);
   const posterEl = document.getElementById("playerShowPoster");
@@ -3427,7 +3427,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   if (metaEl) {
     if (epData) {
       const dur = parentMovie ? parentMovie.duration : "";
-      metaEl.textContent = `Season ${epData.season} Ã‚Â· Episode ${epData.episode}${dur ? " Ã‚Â· " + dur : ""}`;
+      metaEl.textContent = `Season ${epData.season} Â· Episode ${epData.episode}${dur ? " Â· " + dur : ""}`;
     } else if (parentMovie) {
       metaEl.textContent = parentMovie.year ? String(parentMovie.year) : "";
     } else {
@@ -3454,7 +3454,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     }
   }
 
-  // Ã¢â€â‚¬Ã¢â€â‚¬ Wire Episodes button Ã¢â€â‚¬Ã¢â€â‚¬
+  // â”€â”€ Wire Episodes button â”€â”€
   const epsBtn = document.getElementById("playerEpisodesBtn");
   
   const isTvShow = !!(parentId && parentMovie && parentMovie.type === "TV Show");
@@ -3464,7 +3464,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     epsBtn.onclick = () => closeVideoPlayer();
   }
 
-  // Ã¢â€â‚¬Ã¢â€â‚¬ Wire Next Episode button Ã¢â€â‚¬Ã¢â€â‚¬
+  // â”€â”€ Wire Next Episode button â”€â”€
   const nextEpBtn = document.getElementById("playerNextEpBtn");
   
   if (nextEpBtn) {
@@ -3677,7 +3677,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
   const playPauseBtn = document.getElementById("playPauseBtn");
   const serverWrap = document.getElementById("serverSelectWrap");
 
-  // Ã¢â€â‚¬Ã¢â€â‚¬ Populate info area Ã¢â€â‚¬Ã¢â€â‚¬
+  // â”€â”€ Populate info area â”€â”€
   const posterEl = document.getElementById("playerShowPoster");
   const metaEl = document.getElementById("playerMeta");
   const overviewEl = document.getElementById("playerEpOverview");
@@ -3702,7 +3702,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     setOverviewElement(overviewEl, info);
   }
 
-  // Ã¢â€â‚¬Ã¢â€â‚¬ Hide TV-only buttons Ã¢â€â‚¬Ã¢â€â‚¬
+  // â”€â”€ Hide TV-only buttons â”€â”€
   const epsBtn = document.getElementById("playerEpisodesBtn");
   if (epsBtn) epsBtn.classList.add("hidden");
 
@@ -3795,7 +3795,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
         showToast(`Resumed at ${formatTime(initialTime)}`);
       }
       video.play();
-      playPauseBtn.textContent = "Ã¢ÂÂ¸";
+      playPauseBtn.textContent = "â¸";
     };
 
     setupVideoControls(video);
@@ -3844,7 +3844,7 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
  *   - Windows local paths: "E:\Movies\subtitle.srt"
  *   - Regular URLs: "https://example.com/sub.vtt"
  *   - Relative paths: "subtitles/movie.srt"
- * Automatically converts SRT Ã¢â€ â€™ VTT format.
+ * Automatically converts SRT â†’ VTT format.
  */
 async function loadSubtitleTrack(video, subtitleUrl) {
   try {
@@ -3942,20 +3942,20 @@ function closeVideoPlayer() {
   }
 
   if (state.currentPlayingMovie && video.currentTime > 0 && !video.classList.contains("hidden")) {
-    // Native <video> player Ã¢â‚¬â€ save real progress
+    // Native <video> player â€” save real progress
     updateContinueWatching(
       state.currentPlayingMovie.id,
       video.currentTime,
       video.duration,
     );
   } else if (state.currentPlayingMovie && iframe && !iframe.classList.contains("hidden") && iframe.src) {
-    // Iframe embed (CineSrc etc.) Ã¢â‚¬â€ we can't read playback time from the iframe,
+    // Iframe embed (CineSrc etc.) â€” we can't read playback time from the iframe,
     // so save with a placeholder so the title appears in Continue Watching.
     const cwId = state.currentPlayingMovie.id;
     if (cwId && cwId !== "_episode_" && state.user) {
       state.continueWatching[cwId] = {
         movieId: cwId,
-        currentTime: 60,   // placeholder Ã¢â‚¬â€ "in progress"
+        currentTime: 60,   // placeholder â€” "in progress"
         duration: 7200,    // placeholder 2h duration
         isIframe: true,
         timestamp: Date.now(),
@@ -4007,12 +4007,12 @@ function setupVideoControls(video) {
   function togglePlay() {
     if (video.paused) {
       video.play();
-      playPauseBtn.textContent = "Ã¢ÂÂ¸";
-      showCenterAnimation("Ã¢â€“Â¶");
+      playPauseBtn.textContent = "â¸";
+      showCenterAnimation("â–¶");
     } else {
       video.pause();
-      playPauseBtn.textContent = "Ã¢â€“Â¶";
-      showCenterAnimation("Ã¢ÂÂ¸");
+      playPauseBtn.textContent = "â–¶";
+      showCenterAnimation("â¸");
     }
   }
 
@@ -4034,13 +4034,13 @@ function setupVideoControls(video) {
 
   muteBtn.onclick = () => {
     video.muted = !video.muted;
-    muteBtn.textContent = video.muted ? "Ã°Å¸â€â€¡" : "Ã°Å¸â€Å ";
+    muteBtn.textContent = video.muted ? "ðŸ”‡" : "ðŸ”Š";
   };
 
   volumeBar.oninput = (e) => {
     video.volume = e.target.value;
     video.muted = video.volume === 0;
-    muteBtn.textContent = video.muted ? "Ã°Å¸â€â€¡" : "Ã°Å¸â€Å ";
+    muteBtn.textContent = video.muted ? "ðŸ”‡" : "ðŸ”Š";
   };
 
   if (speedSelect) {
@@ -4156,7 +4156,7 @@ const VIP_WALLETS = {
     number: "9101 1792 5305",
     copyValue: "910117925305",
     holder: "CineWatch VIP",
-    note: "Transfer the plan amount via Qi Services (Ã˜Â®Ã˜Â¯Ã™â€¦Ã˜Â§Ã˜Âª Ã™Æ’Ã™Å ) or any authorized agent to this account.",
+    note: "Transfer the plan amount via Qi Services (Ø®Ø¯Ù…Ø§Øª ÙƒÙŠ) or any authorized agent to this account.",
     color: "#f59e0b",
     logoSvg: '<svg viewBox="0 0 36 24" width="26" height="17" fill="none" style="display:block;"><circle cx="12" cy="12" r="11" fill="#EB001B"/><circle cx="24" cy="12" r="11" fill="#F79E1B"/><path d="M18 4.254a10.965 10.965 0 0 0-4.57 7.746A10.965 10.965 0 0 0 18 19.746 10.965 10.965 0 0 0 22.57 12 10.965 10.965 0 0 0 18 4.254z" fill="#FF5F00"/></svg>'
   },
@@ -4199,8 +4199,8 @@ const VIP_WALLETS = {
     name: "Western Union (Bank Deposit)",
     number: "IQ65 FIQB 0031 5606 8010 001",
     copyValue: "IQ65FIQB003156068010001",
-    holder: "RAND BAHJAT ALI ALI â€” First Iraqi Bank (FIB)",
-    note: "At your local WU agent, select 'Send to Bank Account'. Enter recipient name: RAND BAHJAT ALI ALI, Country: Iraq, Bank: First Iraqi Bank (FIB), IBAN below. Transfer takes 1â€“3 business days.",
+    holder: "RAND BAHJAT ALI ALI — First Iraqi Bank (FIB)",
+    note: "At your local WU agent, select 'Send to Bank Account'. Enter recipient name: RAND BAHJAT ALI ALI, Country: Iraq, Bank: First Iraqi Bank (FIB), IBAN below. Transfer takes 1–3 business days.",
     color: "#FFD700",
     logoSvg: '<svg viewBox="0 0 48 24" width="36" height="18" fill="none" style="display:block;"><rect width="48" height="24" rx="4" fill="#FFD700"/><text x="24" y="16" font-size="8" font-weight="bold" fill="#000" text-anchor="middle" font-family="Arial,sans-serif">WU</text></svg>'
   }
@@ -4317,7 +4317,7 @@ function setVipBillingCycle(cycle) {
     diamondTitle.textContent = cycle === "yearly" ? "Ultimate 1-Year Pass" : "Ultimate";
   }
   if (diamondTag) {
-    diamondTag.textContent = cycle === "yearly" ? "BEST VALUE Ã¢â‚¬Â¢ 1-YEAR PASS" : cycle === "quarterly" ? "POPULAR Ã¢â‚¬Â¢ 3 MONTHS" : "ULTIMATE VIP";
+    diamondTag.textContent = cycle === "yearly" ? "BEST VALUE â€¢ 1-YEAR PASS" : cycle === "quarterly" ? "POPULAR â€¢ 3 MONTHS" : "ULTIMATE VIP";
   }
   if (diamondBadge) {
     diamondBadge.textContent = cycle === "yearly" ? "1-Year Pass" : cycle === "quarterly" ? "3-Month Pass" : "Ultimate";
@@ -4499,9 +4499,9 @@ function selectVipTier(tierData) {
                 if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
 
                 if (typeof showToast === 'function') {
-                  showToast("ðŸŽ‰ VIP Request Approved! Your VIP is now active.", "success");
+                  showToast("🎉 VIP Request Approved! Your VIP is now active.", "success");
                 } else {
-                  alert("ðŸŽ‰ VIP Request Approved! Your VIP is now active.");
+                  alert("🎉 VIP Request Approved! Your VIP is now active.");
                 }
                 
                 setTimeout(() => window.location.reload(), 2000);
@@ -4517,14 +4517,14 @@ function selectVipTier(tierData) {
         const TELEGRAM_BOT_TOKEN = '8983731597:AAGJsm6pk2pXjQjaSEzZlF42WIPwjoGn9IA';
         const TELEGRAM_CHAT_ID = '5719338067';
         const msg =
-          `ðŸŽ¬ *New CineWatch VIP Order!*\n\n` +
-          `ðŸ†” Order: \`` + `${orderData.id}\`` + `\n` +
-          `ðŸ‘¤ User: ${orderData.username} (${orderData.userEmail})\n` +
-          `ðŸ“¦ Plan: ${orderData.plan} â€” ${orderData.price}\n` +
-          `ðŸ’³ Payment: ${orderData.wallet}\n` +
-          `ðŸ“ž Reference: ${orderData.reference}\n` +
-          `ðŸ“± Device: ${orderData.device}\n` +
-          `ðŸ•’ Time: ${orderData.createdAt}\n\n` + 
+          `🎬 *New CineWatch VIP Order!*\n\n` +
+          `🆔 Order: \`` + `${orderData.id}\`` + `\n` +
+          `👤 User: ${orderData.username} (${orderData.userEmail})\n` +
+          `📦 Plan: ${orderData.plan} — ${orderData.price}\n` +
+          `💳 Payment: ${orderData.wallet}\n` +
+          `📞 Reference: ${orderData.reference}\n` +
+          `📱 Device: ${orderData.device}\n` +
+          `🕒 Time: ${orderData.createdAt}\n\n` + 
           `*Approve via Supabase Dashboard -> vip_orders table*`;
         fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
           method: 'POST',
@@ -4535,8 +4535,8 @@ function selectVipTier(tierData) {
             parse_mode: 'Markdown',
             reply_markup: {
               inline_keyboard: [[
-                { text: "âœ… Approve", url: `https://cinewatch.net/admin.html?order=${orderId}&action=approved` },
-                { text: "âŒ Deny", url: `https://cinewatch.net/admin.html?order=${orderId}&action=denied` }
+                { text: "✅ Approve", url: `https://cinewatch.net/admin.html?order=${orderId}&action=approved` },
+                { text: "❌ Deny", url: `https://cinewatch.net/admin.html?order=${orderId}&action=denied` }
               ]]
             }
           })
@@ -4549,9 +4549,9 @@ function selectVipTier(tierData) {
         submitBtn.innerHTML = '<ion-icon name="checkmark-circle-outline" style="font-size: 1.3rem;"></ion-icon> Confirm Payment';
         
         if (typeof showToast === 'function') {
-          showToast("âœ… Payment submitted! Your transaction is being verified. Please leave this page open.");
+          showToast("✅ Payment submitted! Your transaction is being verified. Please leave this page open.");
         } else {
-          alert("âœ… Payment submitted! Your transaction is being verified. Please leave this page open.");
+          alert("✅ Payment submitted! Your transaction is being verified. Please leave this page open.");
         }
 
         if (typeof closeVipModal === 'function') closeVipModal();
@@ -4803,7 +4803,7 @@ function setupVipEventListeners() {
                 if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
 
                 if (typeof showToast === 'function') {
-                  showToast("ðŸŽ‰ VIP Request Approved! Your VIP is now active.", "success");
+                  showToast("🎉 VIP Request Approved! Your VIP is now active.", "success");
                 }
                 setTimeout(() => window.location.reload(), 2000);
                 sbClient.removeChannel(channel);
@@ -4818,13 +4818,13 @@ function setupVipEventListeners() {
         const TELEGRAM_BOT_TOKEN = '8983731597:AAGJsm6pk2pXjQjaSEzZlF42WIPwjoGn9IA';
         const TELEGRAM_CHAT_ID = '5719338067';
         const msg =
-          `ðŸŽ¬ *New CineWatch Crypto VIP Order!*\n\n` +
-          `ðŸ†” Order: \`` + `${orderId}\`` + `\n` +
-          `ðŸ‘¤ User: ${pendingTx.username}\n` +
-          `ðŸ“¦ Plan: ${selectedVipTierData?.name || "Crypto Plan"}\n` +
-          `ðŸ’³ Payment: ${currentVipWalletKey}\n` +
-          `ðŸ“ž Reference (TxID): ${txIdVal}\n` +
-          `ðŸ•’ Time: ${pendingTx.submittedAt}`;
+          `🎬 *New CineWatch Crypto VIP Order!*\n\n` +
+          `🆔 Order: \`` + `${orderId}\`` + `\n` +
+          `👤 User: ${pendingTx.username}\n` +
+          `📦 Plan: ${selectedVipTierData?.name || "Crypto Plan"}\n` +
+          `💳 Payment: ${currentVipWalletKey}\n` +
+          `📞 Reference (TxID): ${txIdVal}\n` +
+          `🕒 Time: ${pendingTx.submittedAt}`;
         fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -4834,8 +4834,8 @@ function setupVipEventListeners() {
             parse_mode: 'Markdown',
             reply_markup: {
               inline_keyboard: [[
-                { text: "âœ… Approve", url: `https://cinewatch.net/admin.html?order=${orderId}&action=approved` },
-                { text: "âŒ Deny", url: `https://cinewatch.net/admin.html?order=${orderId}&action=denied` }
+                { text: "✅ Approve", url: `https://cinewatch.net/admin.html?order=${orderId}&action=approved` },
+                { text: "❌ Deny", url: `https://cinewatch.net/admin.html?order=${orderId}&action=denied` }
               ]]
             }
           })
@@ -4844,7 +4844,7 @@ function setupVipEventListeners() {
 
       if (statusEl) {
         statusEl.classList.remove("hidden");
-        statusEl.innerHTML = `âœ… <strong>Receipt Submitted!</strong> We are verifying your transaction. Please leave this page open.`;
+        statusEl.innerHTML = `✅ <strong>Receipt Submitted!</strong> We are verifying your transaction. Please leave this page open.`;
       }
       txInput.value = "";
       showToast("Transaction reference submitted! Admin notified.");
@@ -5084,7 +5084,7 @@ function bindEventListeners() {
       }
     };
   });
-  // Browse Section Genre Filter Buttons (Movies / Series / Anime views) Ã¢â‚¬â€ event delegation
+  // Browse Section Genre Filter Buttons (Movies / Series / Anime views) â€” event delegation
   document.addEventListener("click", (e) => {
     const filterBtn = e.target.closest(".browse-filter-btn");
     if (!filterBtn) return;
@@ -5330,14 +5330,14 @@ function bindEventListeners() {
     }
   });
 
-  // Ã¢â€â‚¬Ã¢â€â‚¬ Fuzzy Search Helper Ã¢â€â‚¬Ã¢â€â‚¬
+  // â”€â”€ Fuzzy Search Helper â”€â”€
   // Normalizes a string: lowercase, strip hyphens/special chars/spaces for loose matching
   function norm(str) {
     if (!str) return '';
     return String(str).toLowerCase().replace(/[^a-z0-9]/g, '');
   }
 
-  // Returns a relevance score Ã¢â‚¬â€ higher = better match
+  // Returns a relevance score â€” higher = better match
   function searchScore(movie, rawQuery) {
     const q = rawQuery.trim().toLowerCase();
     const qNorm = norm(q);
@@ -5355,7 +5355,7 @@ function bindEventListeners() {
     else if (titleNorm.startsWith(qNorm)) {
       score += 150;
     }
-    // Exact substring match on normalized title (handles "spiderman" Ã¢â€ â€™ "Spider-Man")
+    // Exact substring match on normalized title (handles "spiderman" â†’ "Spider-Man")
     else if (titleNorm.includes(qNorm)) {
       score += 100;
     }
@@ -5409,7 +5409,7 @@ function bindEventListeners() {
       .map(({ movie }) => movie);
   }
 
-  // Ã¢â€â‚¬Ã¢â€â‚¬ Search Modal Ã¢â€â‚¬Ã¢â€â‚¬
+  // â”€â”€ Search Modal â”€â”€
   const navSearchBtn = document.getElementById("navSearchBtn");
   const searchModal = document.getElementById("searchModal");
   const searchModalClose = document.getElementById("searchModalClose");
@@ -5450,7 +5450,7 @@ function bindEventListeners() {
           <ion-icon name="time-outline"></ion-icon>
           <span>${r}</span>
         </div>
-      `).join(" &bull; ");
+      `).join("");
     } else {
       searchRecentSection.classList.add("hidden");
     }
@@ -5558,7 +5558,7 @@ function bindEventListeners() {
                 <div class="search-item-meta notranslate" translate="no">
                   <span class="search-item-badge">${m.type || (m.seasons ? 'TV Show' : 'Movie')}</span>
                   <span>${m.year || ''}</span>
-                  <span class="search-item-rating">Ã¢Â­Â ${formatRating(m.rating)}</span>
+                  <span class="search-item-rating">â­ ${formatRating(m.rating)}</span>
                 </div>
               </div>
               <div class="search-item-action">
@@ -5567,7 +5567,7 @@ function bindEventListeners() {
             </div>
           `,
             )
-            .join(" &bull; ");
+            .join("");
           searchDropdown.classList.remove("hidden");
         } else {
           searchDropdown.innerHTML = `<div class="search-no-results">No titles found matching "<strong>${query}</strong>"</div>`;
@@ -6120,7 +6120,7 @@ function bindEventListeners() {
     handleRecoveryFlow();
   }
 
-  // Login Submit Ã¢â‚¬â€ Custom Backend API
+  // Login Submit â€” Custom Backend API
   loginForm.onsubmit = async (e) => {
     e.preventDefault();
     const email = document.getElementById("loginEmail").value.trim();
@@ -6190,7 +6190,7 @@ function bindEventListeners() {
     submitBtn.disabled = false;
   };
 
-  // Signup Submit Ã¢â‚¬â€ Firebase Authentication
+  // Signup Submit â€” Firebase Authentication
   signupForm.onsubmit = async (e) => {
     e.preventDefault();
     const name = document.getElementById("signupName").value.trim();
@@ -6281,7 +6281,7 @@ function bindEventListeners() {
     };
   }
 
-  // Ã¢â€â‚¬Ã¢â€â‚¬ Mobile Menu Ã¢â€â‚¬Ã¢â€â‚¬
+  // â”€â”€ Mobile Menu â”€â”€
   const mobileMenuBtn = document.getElementById("mobileMenuBtn");
   const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
   const mobileMenuCloseBtn = document.getElementById("mobileMenuCloseBtn");
@@ -6306,7 +6306,7 @@ function bindEventListeners() {
     });
   }
 
-  // Mobile nav link clicks Ã¢â‚¬â€œ switch view and close menu
+  // Mobile nav link clicks â€“ switch view and close menu
   document.querySelectorAll(".mobile-nav-links .nav-link").forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
@@ -6327,7 +6327,7 @@ function bindEventListeners() {
     });
   }
 
-  // Fullscreen button Ã¢â‚¬â€ wired once at init so it always works (movies + series)
+  // Fullscreen button â€” wired once at init so it always works (movies + series)
   const fullscreenBtn = document.getElementById("fullscreenBtn");
   if (fullscreenBtn && !fullscreenBtn.dataset.fsBound) {
     fullscreenBtn.dataset.fsBound = "1";
@@ -6650,7 +6650,7 @@ function showToast(msg) {
   }, 3000);
 }
 
-// Initialize on DOM ready Ã¢â‚¬â€ loads data from API then starts app
+// Initialize on DOM ready â€” loads data from API then starts app
 
 function setupCwSelectionListeners() {
   document.addEventListener("click", (e) => {
@@ -7060,7 +7060,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                       showToast(`Switched to ${item.html}`);
                     }
                     const activeLbl = document.getElementById('serverActiveLabel');
-                    if (activeLbl) activeLbl.textContent = isDub ? 'Ã°Å¸Å½â„¢Ã¯Â¸Â Mega Server HD (Dub)' : 'Ã°Å¸Å¸Â£ Mega Server HD (Sub)';
+                    if (activeLbl) activeLbl.textContent = isDub ? 'ðŸŽ™ï¸ Mega Server HD (Dub)' : 'ðŸŸ£ Mega Server HD (Sub)';
                     const badge = document.getElementById('streamTypeBadge');
                     if (badge) badge.textContent = isDub ? 'MEGA DUB' : 'MEGA SUB';
                     break;
@@ -7093,7 +7093,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       controls: [
         {
           position: 'right',
-          html: '<button style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);color:#fff;border-radius:6px;padding:3px 10px;font-size:0.75rem;cursor:pointer;display:flex;align-items:center;gap:4px;">Ã¢ÂÂ© Skip Intro (+85s)</button>',
+          html: '<button style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);color:#fff;border-radius:6px;padding:3px 10px;font-size:0.75rem;cursor:pointer;display:flex;align-items:center;gap:4px;">â© Skip Intro (+85s)</button>',
           index: 2,
           tooltip: 'Skip Opening (+85s)',
           click: function() {
@@ -7167,7 +7167,7 @@ function updateIframeServer(serverOverride) {
     serverSelectWrap.classList.add('hidden');
   }
 
-  // Find the parent movie to check isAnime Ã¢â‚¬â€ check parentId OR the item itself
+  // Find the parent movie to check isAnime â€” check parentId OR the item itself
   const parentMovie = data.parentId ? MOVIES.find(m => String(m.id) === String(data.parentId) || String(m.videoUrl) === String(data.parentId)) : null;
   const selfMovie = !parentMovie && data.id ? MOVIES.find(m => String(m.videoUrl) === String(data.id) || String(m.id) === String(data.id)) : null;
   const refMovie = parentMovie || selfMovie;
@@ -7355,7 +7355,7 @@ document.getElementById("playerPrevEpBtn")?.addEventListener("click", () => navi
 })();
 
 // ==========================================
-// DYNAMIC GLASSMORPHIÃÂ¡ NAVBAR SCROLL HANDLER
+// DYNAMIC GLASSMORPHIÐ¡ NAVBAR SCROLL HANDLER
 // ==========================================
 (function initNavbarScroll() {
   const navbar = document.getElementById("navbar");
@@ -7501,7 +7501,7 @@ async function initializeRatingSystem(movieId) {
     const cookies = document.cookie || '';
     const isCkb = cookies.includes('googtrans=/en/ckb');
     const isAr = cookies.includes('googtrans=/en/ar');
-    userRatingLabel.textContent = isCkb ? 'Ã™â€¡Ã›â€¢ÃšÂµÃ˜Â³Ã›â€¢Ã™â€ ÃšÂ¯Ã˜Â§Ã™â€ Ã˜Â¯Ã™â€ ' : (isAr ? 'Ã˜Â§Ã™â€žÃ˜ÂªÃ™â€šÃ™Å Ã™Å Ã™â€¦' : 'Rate:');
+    userRatingLabel.textContent = isCkb ? 'Ù‡Û•ÚµØ³Û•Ù†Ú¯Ø§Ù†Ø¯Ù†' : (isAr ? 'Ø§Ù„ØªÙ‚ÙŠÙŠÙ…' : 'Rate:');
   }
 
   starsContainer.innerHTML = ''; // Clear container
@@ -7687,7 +7687,7 @@ window.check4KAccess = function() {
 };
 
 // ============================================================
-// Ad Visibility â€” shown for free users, hidden for VIP
+// Ad Visibility — shown for free users, hidden for VIP
 // ============================================================
 function updateAdsVisibility() {
   const isVip = !!(state.user && state.user.isVip);
@@ -7730,4 +7730,3 @@ window.handlePaginationWithAd = function(p, onPageChange) {
     window.open(CW_PAGINATION_AD_URL, '_blank');
   }
 };
-
