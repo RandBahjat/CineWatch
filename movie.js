@@ -4492,7 +4492,7 @@ function selectVipTier(tierData) {
           plan: tierData.name,
           price: "$" + tierData.price,
           wallet: orderData.wallet,
-          reference: refVal,
+          reference: senderPhone || refVal,
           status: 'pending'
         }]).then(({ error }) => {
           if (error) console.error("Supabase insert error:", error);
@@ -4553,8 +4553,8 @@ function selectVipTier(tierData) {
             parse_mode: 'Markdown',
             reply_markup: {
               inline_keyboard: [[
-                { text: "✅ Approve", url: `${window.location.origin}/admin.html?order=${orderId}&action=approved&phone=${encodeURIComponent(cryptoSmsVal || txIdVal)}` },
-                { text: "❌ Deny", url: `${window.location.origin}/admin.html?order=${orderId}&action=denied&phone=${encodeURIComponent(cryptoSmsVal || txIdVal)}` }
+                { text: "✅ Approve", url: `${window.location.origin}/admin.html?order=${orderId}&action=approved&phone=${encodeURIComponent(senderPhone || refVal)}` },
+                { text: "❌ Deny", url: `${window.location.origin}/admin.html?order=${orderId}&action=denied&phone=${encodeURIComponent(senderPhone || refVal)}` }
               ]]
             }
           })
@@ -4868,8 +4868,8 @@ function setupVipEventListeners() {
             parse_mode: 'Markdown',
             reply_markup: {
               inline_keyboard: [[
-                { text: "✅ Approve", url: `${window.location.origin}/admin.html?order=${orderId}&action=approved&phone=${encodeURIComponent(typeof cryptoSmsVal !== 'undefined' ? cryptoSmsVal : smsVal)}` },
-                { text: "❌ Deny", url: `${window.location.origin}/admin.html?order=${orderId}&action=denied` }
+                { text: "✅ Approve", url: `${window.location.origin}/admin.html?order=${orderId}&action=approved&phone=${encodeURIComponent(cryptoSmsVal || txIdVal)}` },
+                { text: "❌ Deny", url: `${window.location.origin}/admin.html?order=${orderId}&action=denied&phone=${encodeURIComponent(cryptoSmsVal || txIdVal)}` }
               ]]
             }
           })
