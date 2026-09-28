@@ -732,7 +732,7 @@ function setupHeroBanner() {
       (m, idx) =>
         `<div class="dot ${idx === 0 ? "active" : ""}" data-index="${idx}"></div>`,
     )
-    .join("");
+    .join(" &bull; ");
 
   dotsContainer.addEventListener("click", (e) => {
     if (e.target.classList.contains("dot")) {
@@ -767,7 +767,7 @@ function setupHeroBanner() {
   heroTrack.innerHTML = featured.map((movie, idx) => {
     const backdropUrl = movie.backdrop || movie.poster || "";
     const bgStyle = backdropUrl ? `style="background-image: url('${backdropUrl}')"` : "";
-    const genresList = (movie.genres || []).slice(0, 3).map(translateGenre).join(" Ã¢â‚¬Â¢ ");
+    const genresList = (movie.genres || []).slice(0, 3).map(translateGenre).join(" &bull; ");
 
     return `
       <div class="hero-slide ${idx === 0 ? 'active' : ''}">
@@ -793,7 +793,7 @@ function setupHeroBanner() {
         </div>
       </div>
     `;
-  }).join("");
+  }).join(" &bull; ");
 
   // Ã¢â€â‚¬Ã¢â€â‚¬ Real-time Smooth Drag / Swipe to change slides Ã¢â€â‚¬Ã¢â€â‚¬
   const heroBanner = document.getElementById("heroBanner");
@@ -983,9 +983,9 @@ async function renderCarousels() {
 
     const movieList = shelfMap[trackId];
     if (trackId === "top10Track") {
-      track.innerHTML = movieList.map((movie, index) => createMovieCardHTML(movie, index + 1, true)).join("");
+      track.innerHTML = movieList.map((movie, index) => createMovieCardHTML(movie, index + 1, true)).join(" &bull; ");
     } else {
-      track.innerHTML = movieList.map((movie) => createMovieCardHTML(movie)).join("");
+      track.innerHTML = movieList.map((movie) => createMovieCardHTML(movie)).join(" &bull; ");
     }
 
     // Click opens details modal
@@ -1059,7 +1059,7 @@ function renderContinueWatchingShelf() {
       </div>
     `;
     })
-    .join("");
+    .join(" &bull; ");
 
   track.querySelectorAll(".movie-card").forEach((card) => {
     card.onclick = () => {
@@ -1117,7 +1117,7 @@ const CineAIRecommender = {
     }
 
     const watchedCast = Array.isArray(watchedMovie.cast)
-      ? watchedMovie.cast.join(" ").toLowerCase()
+      ? watchedMovie.cast.join(" &bull; ").toLowerCase()
       : String(watchedMovie.cast || "").toLowerCase();
     const watchedDirector = String(watchedMovie.director || "").toLowerCase().trim();
 
@@ -1168,7 +1168,7 @@ const CineAIRecommender = {
 
       // 4. Cast overlap
       if (candidate.cast && watchedCast) {
-        const cCast = Array.isArray(candidate.cast) ? candidate.cast.join(" ").toLowerCase() : String(candidate.cast).toLowerCase();
+        const cCast = Array.isArray(candidate.cast) ? candidate.cast.join(" &bull; ").toLowerCase() : String(candidate.cast).toLowerCase();
         const castList = watchedCast.split(/,\s*/);
         for (let k = 0; k < castList.length; k++) {
           const actor = castList[k].trim();
@@ -1297,7 +1297,7 @@ function renderBecauseYouWatchedShelf() {
   }
 
   // Render clean standard movie cards (no match percentage badge)
-  track.innerHTML = recommendations.map(({ movie }) => createMovieCardHTML(movie)).join("");
+  track.innerHTML = recommendations.map(({ movie }) => createMovieCardHTML(movie)).join(" &bull; ");
 
   // Wire click event to open details modal
   track.querySelectorAll(".movie-card").forEach((card) => {
@@ -1327,7 +1327,7 @@ function renderWatchlistHomeShelf() {
   }
 
   shelf.classList.remove("hidden");
-  track.innerHTML = validFavorites.map((movie) => createMovieCardHTML(movie)).join("");
+  track.innerHTML = validFavorites.map((movie) => createMovieCardHTML(movie)).join(" &bull; ");
 
   track.querySelectorAll(".movie-card").forEach((card) => {
     card.onclick = () => openDetailsModal(card.dataset.id);
@@ -1448,7 +1448,7 @@ function renderContinueWatchingPage() {
       </div>
     `;
     })
-    .join("");
+    .join(" &bull; ");
 
   grid.querySelectorAll(".movie-card").forEach((card) => {
     card.onclick = () => {
@@ -1490,7 +1490,7 @@ function renderWatchlist() {
   }
 
   if (emptyState) emptyState.classList.add("hidden");
-  grid.innerHTML = validFavorites.map((movie) => createMovieCardHTML(movie, null, false)).join("");
+  grid.innerHTML = validFavorites.map((movie) => createMovieCardHTML(movie, null, false)).join(" &bull; ");
 
   grid.querySelectorAll(".movie-card").forEach((card) => {
     card.onclick = () => openDetailsModal(card.dataset.id);
@@ -1530,7 +1530,7 @@ function renderFilteredGrid(movieList, titleText) {
     `;
   } else {
     const isMobileFiltered = typeof window !== 'undefined' && window.innerWidth <= 768;
-    filteredGrid.innerHTML = movieList.map(m => createMovieCardHTML(m, null, isMobileFiltered)).join("");
+    filteredGrid.innerHTML = movieList.map(m => createMovieCardHTML(m, null, isMobileFiltered)).join(" &bull; ");
     filteredGrid.querySelectorAll(".movie-card").forEach((card) => {
       card.onclick = () => openDetailsModal(card.dataset.id);
     });
@@ -1557,7 +1557,7 @@ function renderBrowseGrid(items, gridId, page) {
       </div>`;
   } else {
     const isMobileGrid = typeof window !== 'undefined' && window.innerWidth <= 768;
-    grid.innerHTML = pageItems.map(m => createMovieCardHTML(m, null, isMobileGrid)).join("");
+    grid.innerHTML = pageItems.map(m => createMovieCardHTML(m, null, isMobileGrid)).join(" &bull; ");
     grid.querySelectorAll(".movie-card").forEach((card) => {
       card.onclick = () => openDetailsModal(card.dataset.id);
     });
@@ -2958,7 +2958,7 @@ function openDetailsModal(movieId) {
     }
 
     if (document.getElementById("detailsGenres")) {
-      document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &middot; ");
+      document.getElementById("detailsGenres").innerHTML = movie.genres.map(translateGenre).join(" &bull; ");
     }
 
     const userRatingLabel = document.getElementById("userRatingLabel");
@@ -2984,7 +2984,7 @@ function openDetailsModal(movieId) {
 
     if (castContainer && castText) {
       if (movie.cast && movie.cast.length > 0) {
-        castText.textContent = movie.cast.join(", ");
+        castText.textContent = movie.cast.join(" &bull; ");
         castContainer.classList.remove("hidden");
       } else {
         castContainer.classList.add("hidden");
@@ -3050,7 +3050,7 @@ function openDetailsModal(movieId) {
       const limited = similarMovies.slice(0, 12);
       if (limited.length > 0) {
         similarsSection.classList.remove("hidden");
-        similarsGrid.innerHTML = limited.map((m) => createMovieCardHTML(m)).join("");
+        similarsGrid.innerHTML = limited.map((m) => createMovieCardHTML(m)).join(" &bull; ");
         similarsGrid.querySelectorAll(".movie-card").forEach((card) => {
           card.onclick = () => openDetailsModal(card.dataset.id);
         });
@@ -3075,7 +3075,7 @@ function openDetailsModal(movieId) {
       // Populate custom season dropdown
       seasonSelectOptions.innerHTML = movie.seasons
         .map((s) => `<div class="custom-option" data-value="${s.season}">Season ${s.season}</div>`)
-        .join("");
+        .join(" &bull; ");
 
       if (movie.seasons.length > 0) {
         const initialSeason = movie.seasons[0].season;
@@ -3196,7 +3196,7 @@ function openDetailsModal(movieId) {
           ${resolvedUrl ? `` : `<span class="episode-soon">Soon</span>`}
         </div>
       `;
-        }).join("");
+        }).join(" &bull; ");
 
         // Click to play episode
         episodeGrid.querySelectorAll(".episode-row:not(.episode-unavailable)").forEach((card) => {
@@ -5450,7 +5450,7 @@ function bindEventListeners() {
           <ion-icon name="time-outline"></ion-icon>
           <span>${r}</span>
         </div>
-      `).join("");
+      `).join(" &bull; ");
     } else {
       searchRecentSection.classList.add("hidden");
     }
@@ -5567,7 +5567,7 @@ function bindEventListeners() {
             </div>
           `,
             )
-            .join("");
+            .join(" &bull; ");
           searchDropdown.classList.remove("hidden");
         } else {
           searchDropdown.innerHTML = `<div class="search-no-results">No titles found matching "<strong>${query}</strong>"</div>`;
@@ -7730,4 +7730,5 @@ window.handlePaginationWithAd = function(p, onPageChange) {
     window.open(CW_PAGINATION_AD_URL, '_blank');
   }
 };
+
 
