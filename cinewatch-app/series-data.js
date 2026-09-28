@@ -1051,7 +1051,7 @@ window._SERIES_DATA = [
       "Mystery",
       "Sci-Fi"
     ],
-    "poster": "https://image.tmdb.org/t/p/original/uAVR8jRsd0VUBC9lHRdEb38oNSa.jpg",
+    "poster": "https://image.tmdb.org/t/p/original/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
     "backdrop": "https://images6.alphacoders.com/141/thumb-1920-1414894.jpg",
     "videoUrl": "95350",
     "trailerUrl": "https://youtu.be/7UIBOsuUwc4?si=AAHayMdavZZp0dcD",
