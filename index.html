@@ -15,9 +15,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260920_814">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_2791">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_1049">
+    <link rel="stylesheet" href="movie.css?v=20260920_815">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_2792">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_1050">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -135,10 +135,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_8215" defer></script>
-    <script src="series-data.js?v=20260818_8215" defer></script>
-    <script src="anime-data.js?v=20260818_8215" defer></script>
-    <script src="movie.js?v=20260920_813" defer></script>
+    <script src="movies-data.js?v=20260818_8216" defer></script>
+    <script src="series-data.js?v=20260818_8216" defer></script>
+    <script src="anime-data.js?v=20260818_8216" defer></script>
+    <script src="movie.js?v=20260920_814" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1952,7 +1952,17 @@
                             </div>
 
                             
-                            <div class="vip-ref-box" id="vipRefBox" style="margin-top: 16px; margin-bottom: 16px; text-align: left;">
+                            
+                            <div class="vip-ref-box" id="vipSmsPhoneBox" style="margin-top: 16px; margin-bottom: 0px; text-align: left;">
+                                <div class="form-group" style="margin-bottom: 0;">
+                                    <label id="vipSmsPhoneLabel" style="display: block; font-size: 13px; font-weight: 500; color: #cbd5e1; margin-bottom: 8px;">Your Phone Number (For SMS Approval Notification)</label>
+                                    <div class="input-with-prefix" id="vipSmsInputGroup" style="display: flex; align-items: stretch; border: 1px solid rgba(255, 255, 255, 0.16); border-radius: 8px; overflow: hidden; background: rgba(255, 255, 255, 0.06); transition: border-color 0.2s, box-shadow 0.2s;">
+                                        <span class="phone-prefix" id="vipSmsPrefix" style="display: flex; align-items: center; justify-content: center; padding: 0 14px; background: rgba(255, 255, 255, 0.08); color: #94a3b8; font-weight: 600; font-size: 13px; border-right: 1px solid rgba(255, 255, 255, 0.12); user-select: none; letter-spacing: 0.5px;">+964</span>
+                                        <input type="text" class="form-control" placeholder="77X XXX XXXX" id="vipSmsPhoneInput" style="flex: 1; border: none; background: transparent; padding: 12px 14px; color: #fff; font-size: 14px; outline: none; box-shadow: none;">
+                                    </div>
+                                </div>
+                            </div>
+<div class="vip-ref-box" id="vipRefBox" style="margin-top: 16px; margin-bottom: 16px; text-align: left;">
                                 <div class="form-group" style="margin-bottom: 0;">
                                     <label id="vipRefLabel" style="display: block; font-size: 13px; font-weight: 500; color: #cbd5e1; margin-bottom: 8px;">Sender Phone Number / Transfer Reference #</label>
                                     <div class="input-with-prefix" id="vipRefInputGroup" style="display: flex; align-items: stretch; border: 1px solid rgba(255, 255, 255, 0.16); border-radius: 8px; overflow: hidden; background: rgba(255, 255, 255, 0.06); transition: border-color 0.2s, box-shadow 0.2s;">
@@ -2798,7 +2808,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_1049"></script>
+    <script src="welcome-disclaimer.js?v=20260918_1050"></script>
 
     <!-- Interstitial Ad Modal ÃŽâ€œÃƒâ€¡ÃƒÂ¶ fires on pagination for free users -->
     <div id="cwInterstitialAdModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.88); align-items:center; justify-content:center;">
