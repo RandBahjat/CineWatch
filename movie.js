@@ -760,8 +760,8 @@ function setupHeroBanner() {
   const isSorani = currentLang === 'ckb';
   const isArabic = currentLang === 'ar';
 
-  const playText = isSorani ? 'Ø³Û•ÛŒØ±Ú©Ø±Ø¯Ù†' : (isArabic ? 'ØªØ´ØºÙŠÙ„' : 'Play');
-  const moreText = isSorani ? 'Ø²ÛŒØ§ØªØ± Ø¨Ø¨ÛŒÙ†Û•' : (isArabic ? 'Ø¹Ø±Ø¶ Ø§Ù„Ù…Ø²ÙŠØ¯' : 'See More');
+  const playText = isSorani ? 'سەیرکردن' : (isArabic ? 'تشغيل' : 'Play');
+  const moreText = isSorani ? 'زیاتر ببینە' : (isArabic ? 'عرض المزيد' : 'See More');
 
   // Generate ALL slides dynamically from featured array
   heroTrack.innerHTML = featured.map((movie, idx) => {
