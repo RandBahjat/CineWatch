@@ -337,6 +337,7 @@ function updateBrowseFix(filePath) {
 
 // 4. Update welcome-disclaimer.css & cinewatch-app/welcome-disclaimer.css
 function updateWelcomeDisclaimer(filePath) {
+  if (!fs.existsSync(filePath)) return;
   let content = fs.readFileSync(filePath, 'utf8');
 
   content = content.replace(/--cw-disc-red: #e50914;/g, '--cw-disc-red: var(--primary, #e50914);');
