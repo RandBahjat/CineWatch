@@ -15,7 +15,7 @@ window._MOVIES_DATA = [
       "History",
       "Thriller"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/39aMkR8Y5vhCG9dTkjiqRl8AVqp.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/58D9nalUYW5L5K0guw7hcpsEJBH.jpg",
     videoUrl: "1492640",
     trailerUrl: "https://youtu.be/B3tR6qQjbgI?si=KtjLVp9LynxvVQxv",
