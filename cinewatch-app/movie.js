@@ -4547,7 +4547,8 @@ function selectVipTier(tierData) {
                   alert("🎉 VIP Request Approved! Your VIP is now active.");
                 }
                 
-                setTimeout(() => window.location.reload(), 2000);
+                sessionStorage.setItem('cw_vip_just_approved', 'true');
+                setTimeout(() => window.location.reload(), 1000);
                 sbClient.removeChannel(channel);
               }
             }
@@ -7954,11 +7955,15 @@ async function checkPendingVipStatus() {
     if (data && data.length > 0) {
       const order = data[0];
       activateVip(order.plan || "VIP");
+      sessionStorage.setItem('cw_vip_just_approved', 'true');
+      
       if (typeof showToast === 'function') {
-        showToast("🎉 VIP Request Approved! Your VIP is now active.", "success");
-      } else {
-        alert("🎉 VIP Request Approved! Your VIP is now active.");
+        showToast("🎉 VIP Payment Approved! Refreshing CineWatch with VIP privileges...", "success");
       }
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
+      return;
     }
   } catch(e) {
     console.warn("Error checking VIP status", e);
