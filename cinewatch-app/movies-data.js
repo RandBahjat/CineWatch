@@ -12,7 +12,7 @@ window._MOVIES_DATA = [
     duration: "1h 37m",
     genres: [
       "Drama",
-      "Thriller",
+      "History",
       "Biography"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/39aMkR8Y5vhCG9dTkjiqRl8AVqp.jpg",
