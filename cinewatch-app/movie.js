@@ -2447,6 +2447,24 @@ function renderUserBadge() {
               <span class="panel-btn-text">Change password</span>
               <ion-icon name="chevron-forward-outline" class="panel-btn-arrow"></ion-icon>
             </button>
+
+            ${isVip ? `
+              <button class="account-panel-action-btn panel-cancel-sub-btn" id="cancelSubPanelBtn" style="color: #f87171;">
+                <div class="panel-btn-icon" style="background: rgba(239, 68, 68, 0.12); color: #ef4444;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                </div>
+                <span class="panel-btn-text">Cancel subscription</span>
+                <ion-icon name="chevron-forward-outline" class="panel-btn-arrow"></ion-icon>
+              </button>
+            ` : `
+              <button class="account-panel-action-btn" id="panelUpgradePlanBtn" style="color: #fbbf24;" onclick="if(typeof closePanel==='function')closePanel(); if(typeof openVipModal==='function')openVipModal();">
+                <div class="panel-btn-icon" style="background: rgba(245, 158, 11, 0.12); color: #fbbf24;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"/></svg>
+                </div>
+                <span class="panel-btn-text">Upgrade plan</span>
+                <ion-icon name="chevron-forward-outline" class="panel-btn-arrow"></ion-icon>
+              </button>
+            `}
           </div>
 
           ${renderThemeSelectorHTML()}
@@ -2600,6 +2618,13 @@ function renderUserBadge() {
     }
 
     // New panel change password button
+    const cancelSubBtn = document.getElementById("cancelSubPanelBtn");
+    if (cancelSubBtn) {
+      cancelSubBtn.onclick = () => {
+        openCancelSubModal();
+      };
+    }
+
     const changePasswordPanelBtn = document.getElementById("changePasswordPanelBtn");
     if (changePasswordPanelBtn) {
       changePasswordPanelBtn.onclick = () => {
@@ -7797,6 +7822,7 @@ window.check4KAccess = function() {
 // ============================================================
 
 function isUserVip() {
+  if (localStorage.getItem('cw_user_cancelled_vip') === 'true') return false;
   if (localStorage.getItem('cw_is_vip') === 'true') return true;
   if (sessionStorage.getItem('cw_is_vip') === 'true') return true;
   if (state && state.user && state.user.isVip) return true;
@@ -7822,6 +7848,7 @@ window.isUserVip = isUserVip;
 
 function activateVip(planName) {
   const plan = planName || "VIP";
+  localStorage.removeItem('cw_user_cancelled_vip');
   localStorage.setItem('cw_is_vip', 'true');
   localStorage.setItem('cw_vip_tier', plan);
   localStorage.setItem('cw_state', JSON.stringify({ user: { isVip: true, vipTier: plan } }));
@@ -7852,6 +7879,77 @@ function activateVip(planName) {
   renderUserBadge();
 }
 window.activateVip = activateVip;
+
+function cancelVipSubscription() {
+  localStorage.setItem('cw_user_cancelled_vip', 'true');
+  localStorage.setItem('cw_is_vip', 'false');
+  localStorage.removeItem('cw_is_vip');
+  sessionStorage.removeItem('cw_is_vip');
+  localStorage.setItem('cw_vip_tier', 'free');
+  localStorage.setItem('userVipTier', 'free');
+  window.userVipTier = 'free';
+
+  if (state && state.user) {
+    state.user.isVip = false;
+    state.user.vipTier = 'free';
+    try {
+      sessionStorage.setItem('cinewatch_user', JSON.stringify(state.user));
+      localStorage.setItem('cinewatch_user', JSON.stringify(state.user));
+    } catch(e) {}
+    if (typeof saveUser === 'function') saveUser(state.user);
+  }
+
+  // Update cloud profile if Supabase/API is connected
+  if (window.CW_API && typeof window.CW_API.updateProfile === 'function') {
+    window.CW_API.updateProfile({ isVip: false, vipTier: 'free' }).catch(() => {});
+  }
+
+  // Update UI components
+  if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
+  if (typeof renderVipBadges === 'function') renderVipBadges();
+  if (typeof renderUserBadge === 'function') renderUserBadge();
+
+  if (typeof showToast === 'function') {
+    showToast("Subscription cancelled. You are now on the Free tier.", "info");
+  }
+}
+window.cancelVipSubscription = cancelVipSubscription;
+
+window.openCancelSubModal = function() {
+  let modal = document.getElementById('cwCancelSubModal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'cwCancelSubModal';
+    modal.className = 'cw-confirm-modal-wrap';
+    modal.innerHTML = `
+      <div class="cw-confirm-modal-backdrop" onclick="closeCancelSubModal()"></div>
+      <div class="cw-confirm-modal-card">
+        <div class="cw-confirm-icon-wrap" style="color: #ef4444; background: rgba(239, 68, 68, 0.12);">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <h3 class="cw-confirm-title">Cancel VIP Subscription?</h3>
+        <p class="cw-confirm-desc">Are you sure you want to cancel your VIP subscription? You will lose access to crystal-clear 4K Ultra HD streaming, ad-free playback, and VIP perks.</p>
+        <div class="cw-confirm-actions">
+          <button class="cw-confirm-btn keep-btn" onclick="closeCancelSubModal()">Keep VIP</button>
+          <button class="cw-confirm-btn cancel-btn" onclick="confirmCancelSub()">Yes, Cancel</button>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(modal);
+  }
+  modal.classList.add('open');
+};
+
+window.closeCancelSubModal = function() {
+  const modal = document.getElementById('cwCancelSubModal');
+  if (modal) modal.classList.remove('open');
+};
+
+window.confirmCancelSub = function() {
+  closeCancelSubModal();
+  cancelVipSubscription();
+};
+
 
 function renderVipBadges() {
   const isVip = isUserVip();
