@@ -4,7 +4,7 @@
 
 window._MOVIES_DATA = [
   {
-    title: "Unabomber",
+    title: "",
     type: "Movie",
     year: 2026,
     rating: "6.2",
