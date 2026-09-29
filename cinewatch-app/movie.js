@@ -4416,6 +4416,20 @@ function selectVipTier(tierData) {
   const submitBtn = document.getElementById("vipSubmitPaymentBtn") || document.getElementById("vipWhatsappBtn");
   if (submitBtn) {
     submitBtn.onclick = () => {
+      // Prompt user for OneSignal Push Notification on VIP order submission
+      try {
+        if (window.OneSignalDeferred) {
+          window.OneSignalDeferred.push(async function(OneSignal) {
+            try {
+              if (OneSignal.Slidedown && typeof OneSignal.Slidedown.promptPush === 'function') {
+                await OneSignal.Slidedown.promptPush();
+              }
+              const pushId = OneSignal.User && OneSignal.User.PushSubscription ? OneSignal.User.PushSubscription.id : null;
+              if (pushId) localStorage.setItem('cw_onesignal_push_id', pushId);
+            } catch(e) {}
+          });
+        }
+      } catch(e) {}
       const refInput = document.getElementById("vipRefInput");
       const refPrefixEl = document.getElementById("vipRefPrefix");
       const refPrefix = refPrefixEl ? (refPrefixEl.value || "+964") : "+964";
@@ -4474,7 +4488,8 @@ function selectVipTier(tierData) {
         reference: refVal,
         device: getDeviceType(),
         status: "Pending",
-        createdAt: timeStr
+        createdAt: timeStr,
+        pushId: localStorage.getItem('cw_onesignal_push_id') || ''
       };
 
       try {
@@ -4553,8 +4568,8 @@ function selectVipTier(tierData) {
             parse_mode: 'Markdown',
             reply_markup: {
               inline_keyboard: [[
-                { text: "✅ Approve", url: `${window.location.origin}/admin.html?order=${orderId}&action=approved&phone=${encodeURIComponent(senderPhone || refVal)}` },
-                { text: "❌ Deny", url: `${window.location.origin}/admin.html?order=${orderId}&action=denied&phone=${encodeURIComponent(senderPhone || refVal)}` }
+                { text: "✅ Approve", url: `${window.location.origin}/admin.html?order=${orderId}&action=approved&phone=${encodeURIComponent(senderPhone || refVal)}&pushId=${encodeURIComponent(localStorage.getItem('cw_onesignal_push_id') || '')}` },
+                { text: "❌ Deny", url: `${window.location.origin}/admin.html?order=${orderId}&action=denied&phone=${encodeURIComponent(senderPhone || refVal)}&pushId=${encodeURIComponent(localStorage.getItem('cw_onesignal_push_id') || '')}` }
               ]]
             }
           })

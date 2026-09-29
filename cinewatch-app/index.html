@@ -127,6 +127,21 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
+
+    <!-- OneSignal Web Push SDK -->
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(async function(OneSignal) {
+        await OneSignal.init({
+          appId: "88a941ed-f1be-4f05-86ac-1828bd010eeb",
+          notifyButton: {
+            enable: false,
+          },
+        });
+      });
+    </script>
+
 </head>
 
 <body class="view-home">
