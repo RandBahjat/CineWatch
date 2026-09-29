@@ -11,7 +11,7 @@ if (window.location.hash.includes("type=recovery")) {
 // ==========================================
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
-let FEATURED_TITLES = ["Runner","Lanterns",,"The Love Hypothesis","One Last Shot","Resident Evil","Neagley","Reacher","The End of Oak Street","Stranger Things: Tales from '85","Slow Horses","City of Blood","Mayday","The Runner","Coyote vs. Acme","Spider-Man: Brand New Day",
+let FEATURED_TITLES = ["Runner","Lanterns",,"The Love Hypothesis","Unabomber","Resident Evil","Neagley","Reacher","The End of Oak Street","Stranger Things: Tales from '85","Slow Horses","City of Blood","Mayday","The Runner","Coyote vs. Acme","Spider-Man: Brand New Day",
   "Drawn Together"];
 let TOP_10_TRENDING_TODAY = ["Runner","Lanterns","Resident Evil",
   ,"Brothers","One Piece(1999)","Spider-Man: Brand New Day","Heart of the Beast" , "Digger ","Slow Horses","MobLand"];
