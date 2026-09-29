@@ -22,7 +22,7 @@ window._MOVIES_DATA = [
     trailerUrl: "https://youtu.be/B3tR6qQjbgI?si=KtjLVp9LynxvVQxv",
     overview: "A Harvard student becomes the Unabomber after psychological experiments. Years later, an FBI agent's pursuit reveals how his past shaped his deadly campaign that killed 3 and injured 23 from 1978-1995.",
     overviewKurdish: "خوێندکارێکی زانکۆی هارڤارد دوای ئەنجامدانی تاقیکردنەوەی دەروونی لەسەری، دەگۆڕێت بۆ یوونابۆمبەر. ساڵانێک دواتر، لێکۆڵینەوە و بەدواداچوونی بریکارێکی فیدراڵی (FBI) ئەوە ئاشکرا دەکات کە چۆن ڕابردووەکەی بووەتە هۆی دروستکردنی ئەو هێرشە مەرگهێنەرانەی لە نێوان ساڵانی ١٩٧٨ بۆ ١٩٩٥، ٣ کەسی کوشت و ٢٣ کەسی تریشی بریندار کرد.",
-    director: "Claire Scanlon",
+    director: "Janus Metz",
     cast: ["Lili Reinhart, Tom Bateman, Rachel Marsh, Jaboukie Young-White, Nicholas Duvernay, Arty Froushan"],
     trending: true,
     featured: true,
