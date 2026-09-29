@@ -21,3 +21,4 @@ cinewatch-app/node_modules/
 .omdb_key
 .env
 *.bak
+scratch/

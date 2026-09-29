@@ -170,6 +170,7 @@
 
       <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
         <button onclick="saveOneSignalSettings()" style="background: #10b981; color: #0b0c10;">💾 Save OneSignal Key</button>
+        <button onclick="sendTestOneSignalPush()" style="background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid #10b981;">📢 Send Test Push</button>
         <span id="osStatusMsg" style="font-size: 0.85rem; font-weight: 500; color: #10b981;"></span>
       </div>
     </div>
@@ -626,6 +627,8 @@
               alert(`Order ${newStatus.toUpperCase()}! SMS sent to ${phoneTarget}.`);
             }
           });
+          const pushTitle = isApproved ? "🎬 CineWatch VIP Activated! 🎉" : "🎬 CineWatch VIP Notice";
+          sendOneSignalPush(null, pushTitle, msg);
         }
 
         renderVipOrders();
@@ -690,7 +693,7 @@
     async function sendOneSignalPush(pushId, title, message) {
       const appId = "88a941ed-f1be-4f05-86ac-1828bd010eeb";
       const restApiKey = localStorage.getItem('os_rest_api_key') || '';
-      if (!restApiKey) return false;
+      if (!restApiKey) return { success: false, reason: "REST API Key missing" };
 
       try {
         const payload = {
@@ -701,6 +704,9 @@
         };
         if (pushId) {
           payload.include_subscription_ids = [pushId];
+          payload.include_player_ids = [pushId];
+        } else {
+          payload.included_segments = ["Total Subscriptions"];
         }
 
         const res = await fetch("https://api.onesignal.com/notifications", {
@@ -711,9 +717,32 @@
           },
           body: JSON.stringify(payload)
         });
-        return res.ok;
+        const data = await res.json().catch(() => ({}));
+        return { success: res.ok, data };
       } catch(e) {
-        return false;
+        return { success: false, reason: e.message };
+      }
+    }
+
+    async function sendTestOneSignalPush() {
+      const statusEl = document.getElementById('osStatusMsg');
+      if (statusEl) {
+        statusEl.textContent = '⏳ Sending test push notification...';
+        statusEl.style.color = '#38bdf8';
+      }
+      const res = await sendOneSignalPush(null, "🎬 CineWatch VIP Test", "🎉 Push notifications are working on CineWatch!");
+      if (res.success) {
+        alert("🎉 Success! Test push notification dispatched via OneSignal.");
+        if (statusEl) {
+          statusEl.textContent = '✅ Test notification sent!';
+          statusEl.style.color = '#10b981';
+        }
+      } else {
+        alert("❌ Failed to send push: " + (res.reason || JSON.stringify(res.data)));
+        if (statusEl) {
+          statusEl.textContent = '❌ Failed: ' + (res.reason || 'Check console');
+          statusEl.style.color = '#ef4444';
+        }
       }
     }
   

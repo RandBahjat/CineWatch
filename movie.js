@@ -4421,7 +4421,9 @@ function selectVipTier(tierData) {
         if (window.OneSignalDeferred) {
           window.OneSignalDeferred.push(async function(OneSignal) {
             try {
-              if (OneSignal.Slidedown && typeof OneSignal.Slidedown.promptPush === 'function') {
+              if (OneSignal.Notifications && typeof OneSignal.Notifications.requestPermission === 'function') {
+                await OneSignal.Notifications.requestPermission();
+              } else if (OneSignal.Slidedown && typeof OneSignal.Slidedown.promptPush === 'function') {
                 await OneSignal.Slidedown.promptPush();
               }
               const pushId = OneSignal.User && OneSignal.User.PushSubscription ? OneSignal.User.PushSubscription.id : null;

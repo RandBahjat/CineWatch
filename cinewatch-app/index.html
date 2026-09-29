@@ -140,6 +140,15 @@
             enable: false,
           },
         });
+        try {
+          const pushId = OneSignal.User?.PushSubscription?.id;
+          if (pushId) localStorage.setItem('cw_onesignal_push_id', pushId);
+          OneSignal.User?.PushSubscription?.addEventListener("change", (e) => {
+            if (e && e.current && e.current.id) {
+              localStorage.setItem('cw_onesignal_push_id', e.current.id);
+            }
+          });
+        } catch(e) {}
       });
     </script>
 
