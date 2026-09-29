@@ -176,7 +176,25 @@
         } catch(e) {}
       });
     </script>
-</head>
+    <!-- Instant VIP Theme Color Loader (Zero Flicker) -->
+    <script>
+      (function() {
+        try {
+          var p = localStorage.getItem('cw_theme_primary');
+          var isVip = localStorage.getItem('cw_is_vip') === 'true' || sessionStorage.getItem('cw_is_vip') === 'true';
+          if (p && isVip) {
+            var g = localStorage.getItem('cw_theme_glow') || 'rgba(229, 9, 20, 0.45)';
+            var h = localStorage.getItem('cw_theme_hover') || p;
+            var r = document.documentElement;
+            r.style.setProperty('--primary', p);
+            r.style.setProperty('--primary-hover', h);
+            r.style.setProperty('--primary-glow', g);
+            r.style.setProperty('--shadow-glow', '0 0 20px ' + g);
+          }
+        } catch(e) {}
+      })();
+    </script>
+  </head>
 
 <body class="view-home">
     <script>

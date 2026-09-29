@@ -15,9 +15,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260929_1_vip1">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_2922">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_1180">
+    <link rel="stylesheet" href="movie.css?v=20260929_2_vip1">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_2923">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_1181">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -135,10 +135,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_8346" defer></script>
-    <script src="series-data.js?v=20260818_8346" defer></script>
-    <script src="anime-data.js?v=20260818_8346" defer></script>
-    <script src="movie.js?v=20260929_1_vip1" defer></script>
+    <script src="movies-data.js?v=20260818_8347" defer></script>
+    <script src="series-data.js?v=20260818_8347" defer></script>
+    <script src="anime-data.js?v=20260818_8347" defer></script>
+    <script src="movie.js?v=20260929_2_vip1" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -232,7 +232,25 @@
         } catch(e) {}
       });
     </script>
-</head>
+    <!-- Instant VIP Theme Color Loader (Zero Flicker) -->
+    <script>
+      (function() {
+        try {
+          var p = localStorage.getItem('cw_theme_primary');
+          var isVip = localStorage.getItem('cw_is_vip') === 'true' || sessionStorage.getItem('cw_is_vip') === 'true';
+          if (p && isVip) {
+            var g = localStorage.getItem('cw_theme_glow') || 'rgba(229, 9, 20, 0.45)';
+            var h = localStorage.getItem('cw_theme_hover') || p;
+            var r = document.documentElement;
+            r.style.setProperty('--primary', p);
+            r.style.setProperty('--primary-hover', h);
+            r.style.setProperty('--primary-glow', g);
+            r.style.setProperty('--shadow-glow', '0 0 20px ' + g);
+          }
+        } catch(e) {}
+      })();
+    </script>
+  </head>
 
 <body class="view-home">
     <script>
@@ -1812,6 +1830,7 @@
                       <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> 720p / 1080p streaming</li>
                       <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> Ad-free site experience</li>
                       <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> VIP badge on profile</li>
+                      <li class="plan-feature-item" style="color:#fbbf24;"><ion-icon name="color-palette-outline"></ion-icon> Custom Accent Theme Colors</li>
                     </ul>
                   </div>
                 </div>
@@ -3203,7 +3222,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_1180"></script>
+    <script src="welcome-disclaimer.js?v=20260918_1181"></script>
 
     <!-- Interstitial Ad Modal ÃŽâ€œÃƒâ€¡ÃƒÂ¶ fires on pagination for free users -->
     <div id="cwInterstitialAdModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.88); align-items:center; justify-content:center;">

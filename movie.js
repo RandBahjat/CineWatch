@@ -2383,6 +2383,7 @@ function renderUserBadge() {
           <div class="account-panel-date"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#e50914" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Member since ${createdAt || "Unknown"}</div>
         </div>
 
+        ${renderThemeSelectorHTML()}
         <div class="account-panel-section-label">⚙ SETTINGS</div>
 
         <div class="account-panel-actions">
@@ -7971,3 +7972,167 @@ async function checkPendingVipStatus() {
 }
 window.checkPendingVipStatus = checkPendingVipStatus;
 
+
+
+// ============================================================
+// VIP THEME ACCENT COLOR ENGINE (Available for Advanced, Pro & Ultimate)
+// ============================================================
+
+const CW_THEMES = [
+  { id: 'red', name: 'Crimson Red', primary: '#e50914', hover: '#ff2e38', glow: 'rgba(229, 9, 20, 0.45)' },
+  { id: 'violet', name: 'Cyber Violet', primary: '#8b5cf6', hover: '#a78bfa', glow: 'rgba(139, 92, 246, 0.45)' },
+  { id: 'cyan', name: 'Electric Cyan', primary: '#06b6d4', hover: '#22d3ee', glow: 'rgba(6, 182, 212, 0.45)' },
+  { id: 'emerald', name: 'Emerald Neon', primary: '#10b981', hover: '#34d399', glow: 'rgba(16, 185, 129, 0.45)' },
+  { id: 'gold', name: 'Royal Gold', primary: '#f59e0b', hover: '#fbbf24', glow: 'rgba(245, 158, 11, 0.45)' },
+  { id: 'pink', name: 'Neon Pink', primary: '#ec4899', hover: '#f472b6', glow: 'rgba(236, 72, 153, 0.45)' },
+  { id: 'orange', name: 'Sunset Orange', primary: '#f97316', hover: '#fb923c', glow: 'rgba(249, 115, 22, 0.45)' },
+  { id: 'blue', name: 'Cobalt Blue', primary: '#3b82f6', hover: '#60a5fa', glow: 'rgba(59, 130, 246, 0.45)' }
+];
+
+function canCustomizeTheme() {
+  if (!isUserVip()) return false;
+  const tier = (localStorage.getItem('cw_vip_tier') || state.user?.vipTier || '').toLowerCase();
+  if (tier.includes('basic') || tier.includes('free')) return false;
+  return true; // Advanced, Pro, Ultimate, VIP
+}
+window.canCustomizeTheme = canCustomizeTheme;
+
+function hexToRgb(hex) {
+  let c = hex.replace('#', '');
+  if (c.length === 3) c = c.split('').map(x => x + x).join('');
+  const num = parseInt(c, 16);
+  return { r: (num >> 16) & 255, g: (num >> 8) & 255, b: num & 255 };
+}
+
+function applyThemeColor(themeOrHex, glow, hover, name) {
+  let primaryHex = '#e50914';
+  let glowRgba = 'rgba(229, 9, 20, 0.45)';
+  let hoverHex = '#ff2e38';
+  let themeName = 'Crimson Red';
+
+  if (typeof themeOrHex === 'object' && themeOrHex !== null) {
+    primaryHex = themeOrHex.primary;
+    glowRgba = themeOrHex.glow;
+    hoverHex = themeOrHex.hover;
+    themeName = themeOrHex.name;
+  } else if (typeof themeOrHex === 'string') {
+    const found = CW_THEMES.find(t => t.id === themeOrHex || t.primary.toLowerCase() === themeOrHex.toLowerCase());
+    if (found) {
+      primaryHex = found.primary;
+      glowRgba = found.glow;
+      hoverHex = found.hover;
+      themeName = found.name;
+    } else {
+      primaryHex = themeOrHex;
+      const rgb = hexToRgb(primaryHex);
+      glowRgba = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.45)`;
+      hoverHex = primaryHex;
+      themeName = name || 'Custom';
+    }
+  }
+
+  const root = document.documentElement;
+  root.style.setProperty('--primary', primaryHex);
+  root.style.setProperty('--primary-hover', hoverHex);
+  root.style.setProperty('--primary-glow', glowRgba);
+  root.style.setProperty('--shadow-glow', `0 0 20px ${glowRgba}`);
+
+  localStorage.setItem('cw_theme_primary', primaryHex);
+  localStorage.setItem('cw_theme_glow', glowRgba);
+  localStorage.setItem('cw_theme_hover', hoverHex);
+  localStorage.setItem('cw_theme_name', themeName);
+
+  // Update checkmarks in panel
+  document.querySelectorAll('.cw-theme-swatch').forEach(btn => {
+    const color = btn.dataset.color;
+    if (color) {
+      const isActive = color.toLowerCase() === primaryHex.toLowerCase();
+      btn.classList.toggle('active', isActive);
+      btn.innerHTML = isActive ? '<ion-icon name="checkmark-outline"></ion-icon>' : '';
+    }
+  });
+
+  const customInput = document.getElementById('cwCustomColorInput');
+  if (customInput) customInput.value = primaryHex;
+}
+window.applyThemeColor = applyThemeColor;
+
+window.onThemeSwatchClick = function(themeId) {
+  if (!canCustomizeTheme()) {
+    if (typeof showToast === 'function') {
+      showToast("🔒 Theme colors are unlocked on Advanced, Pro & Ultimate tiers!", "warning");
+    }
+    if (typeof closePanel === 'function') closePanel();
+    if (typeof openVipModal === 'function') openVipModal();
+    return;
+  }
+
+  const theme = CW_THEMES.find(t => t.id === themeId);
+  if (theme) {
+    applyThemeColor(theme);
+    if (typeof showToast === 'function') {
+      showToast(`🎨 Theme changed to ${theme.name}!`, "success");
+    }
+  }
+};
+
+window.onCustomColorChange = function(newHex) {
+  if (!canCustomizeTheme()) {
+    if (typeof showToast === 'function') {
+      showToast("🔒 Theme colors are unlocked on Advanced, Pro & Ultimate tiers!", "warning");
+    }
+    if (typeof closePanel === 'function') closePanel();
+    if (typeof openVipModal === 'function') openVipModal();
+    return;
+  }
+
+  applyThemeColor(newHex, null, null, "Custom");
+  if (typeof showToast === 'function') {
+    showToast(`🎨 Custom theme applied!`, "success");
+  }
+};
+
+function renderThemeSelectorHTML() {
+  const isEligible = canCustomizeTheme();
+  const currentPrimary = localStorage.getItem('cw_theme_primary') || '#e50914';
+
+  const swatchesHtml = CW_THEMES.map(t => {
+    const isActive = currentPrimary.toLowerCase() === t.primary.toLowerCase();
+    return `<button type="button" class="cw-theme-swatch ${isActive ? 'active' : ''}" 
+                   data-color="${t.primary}" 
+                   style="background: ${t.primary}; color: #fff;" 
+                   title="${t.name}" 
+                   onclick="onThemeSwatchClick('${t.id}')">
+              ${isActive ? '<ion-icon name="checkmark-outline"></ion-icon>' : ''}
+            </button>`;
+  }).join('');
+
+  return `
+    <div class="account-panel-section-label" style="display:flex; justify-content:space-between; align-items:center; margin-top:1.2rem;">
+      <span>🎨 ACCENT THEME COLOR</span>
+      ${isEligible ? '<span class="theme-unlocked-badge">👑 UNLOCKED</span>' : '<span class="theme-locked-badge">🔒 ADVANCED+</span>'}
+    </div>
+
+    <div class="cw-theme-selector-box ${isEligible ? 'unlocked' : 'locked'}">
+      <div class="cw-theme-swatches">
+        ${swatchesHtml}
+        <label class="cw-theme-swatch custom-picker-btn" title="Choose Custom Hex Color" style="background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red); cursor:pointer;">
+          <input type="color" id="cwCustomColorInput" value="${currentPrimary}" onchange="onCustomColorChange(this.value)" style="position:absolute; opacity:0; width:0; height:0; pointer-events:none;">
+          <ion-icon name="color-palette-outline" style="color:#fff; font-size:15px; text-shadow:0 1px 3px rgba(0,0,0,0.8);"></ion-icon>
+        </label>
+      </div>
+
+      ${!isEligible ? `
+        <div class="cw-theme-lock-card" onclick="if(typeof closePanel==='function')closePanel(); if(typeof openVipModal==='function')openVipModal();">
+          <div style="font-size:1.1rem; line-height:1;">🔒</div>
+          <div style="flex:1; text-align:left;">
+            <div style="font-size:0.8rem; font-weight:700; color:#fff;">Exclusive VIP Feature</div>
+            <div style="font-size:0.72rem; color:#94a3b8;">Choose your cinema accent color with Advanced, Pro, or Ultimate</div>
+          </div>
+          <button class="cw-theme-upgrade-pill">Unlock</button>
+        </div>
+      ` : ''}
+    </div>
+  `;
+}
+window.renderThemeSelectorHTML = renderThemeSelectorHTML;
