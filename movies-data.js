@@ -21,7 +21,7 @@ window._MOVIES_DATA = [
     videoUrl: "1492640",
     trailerUrl: "https://youtu.be/B3tR6qQjbgI?si=KtjLVp9LynxvVQxv",
     overview: "A Harvard student becomes the Unabomber after psychological experiments. Years later, an FBI agent's pursuit reveals how his past shaped his deadly campaign that killed 3 and injured 23 from 1978-1995.",
-    overviewKurdish: "ئۆلیڤ سمیس، خوێندکارێکی زیرەکی دکتۆرایە لە بەشی بایۆلۆجی کە تەواوی ژیانی بۆ لێکۆڵینەوەکانی شێرپەنجە تەرخان کردووە. کاتێک دەکەوێتە بارودۆخێکی ناچارکەرەوە بۆ ئەوەی بیسەلمێنێت لە پەیوەندییەکی نوێدایە، لە تاو شڵەژان بەڕێکەوت یەکەم پیاو ماچ دەکات کە دێتە بەردەمی—کە کەس نییە جگە لە دکتۆر ئادەم کارلسن، توندترین و بەناوبانگترین پرۆفیسۆری بەشەکەیان. بەڵام کاتێک پرۆفیسۆرەکە ڕازی دەبێت ببنە خۆشەویستی ساختە لەپێناو بەرژەوەندیی هەردوولایان، سنوری نێوان هاوکاریی دەستکرد و هەستی ڕاستەقینە تێکەڵ دەبێت و هاوکێشە زانستییەکانیان تێکدەچێت.",
+    overviewKurdish: "خوێندکارێکی زانکۆی هارڤارد دوای ئەنجامدانی تاقیکردنەوەی دەروونی لەسەری، دەگۆڕێت بۆ یوونابۆمبەر. ساڵانێک دواتر، لێکۆڵینەوە و بەدواداچوونی بریکارێکی فیدراڵی (FBI) ئەوە ئاشکرا دەکات کە چۆن ڕابردووەکەی بووەتە هۆی دروستکردنی ئەو هێرشە مەرگهێنەرانەی لە نێوان ساڵانی ١٩٧٨ بۆ ١٩٩٥، ٣ کەسی کوشت و ٢٣ کەسی تریشی بریندار کرد.",
     director: "Claire Scanlon",
     cast: ["Lili Reinhart, Tom Bateman, Rachel Marsh, Jaboukie Young-White, Nicholas Duvernay, Arty Froushan"],
     trending: true,
