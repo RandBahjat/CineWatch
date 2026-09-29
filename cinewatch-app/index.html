@@ -135,6 +135,7 @@
       OneSignalDeferred.push(async function(OneSignal) {
         await OneSignal.init({
           appId: "88a941ed-f1be-4f05-86ac-1828bd010eeb",
+          allowLocalhostAsSecureOrigin: true,
           notifyButton: {
             enable: false,
           },
