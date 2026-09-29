@@ -22,7 +22,7 @@ window._MOVIES_DATA = [
     overview: "Set against the backdrop of extreme social inequality and industrial exploitation, a passionate and idealistic labor leader sparks a fierce rebellion among the desperate working class. As the grassroots movement rapidly gains momentum and threatens the established order, he must navigate dangerous political betrayals, internal divisions, and violent crackdowns by the ruling elite to secure a better future for his people.",
     overviewKurdish: "لە سەردەمێکی پڕ لە نادادپەروەریی کۆمەڵایەتی و چەوساندنەوەی پیشەسازیدا، سەرکردەیەکی کرێکاریی دڵسۆز و خاوەن پرەنسیپ شۆڕشێکی گەورە و توند لە نێوان چینی کرێکاراندا بەرپا دەکات. لەگەڵ فراوانبوون و بەهێزبوونی بزووتنەوەکە کە هەڕەشە لە دەسەڵاتداران دەکات، ئەم سەرکردەیە دەبێت ڕووبەڕووی خیانەتی سیاسی، دووبەرەکیی ناوخۆیی و سەرکوتکردنی توندوتیژانە ببێتەوە بۆ مسۆگەرکردنی داهاتوویەکی باشتر بۆ گەلەکەی.",
     director: "David Mackenzie",
-    cast: ["Russell Crowe, Shailene Woodley, Jacob Tremblay"],
+    cast: ["Andrew Garfield, Claire Foy, Harris Dickinson, Stephen Graham, Erin Kellyman"],
     trending: true,
     featured: true,
     is4k: false,
