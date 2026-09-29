@@ -17,7 +17,7 @@ window._MOVIES_DATA = [
       "Biography"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/39aMkR8Y5vhCG9dTkjiqRl8AVqp.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/c8hvRzN5nijvp1VcSs8nqHly1bK.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/58D9nalUYW5L5K0guw7hcpsEJBH.jpg",
     videoUrl: "1032863",
     trailerUrl: "https://youtu.be/xwdamnfS6IM?si=ErZcdvylKQWHd3u_",
     overview: "Olive Smith, a brilliant biology PhD candidate focused entirely on her cancer research, ends up in a bind when she needs to convince her best friend that she has moved on from a guy. In a moment of sheer panic, she impulsively kisses the first man she sees in the lab hallway—who happens to be Dr. Adam Carlsen, the department's most notorious, arrogant, and terrifying young professor. To her shock, Carlsen agrees to keep up a mutually beneficial fake dating arrangement, quickly leading to laboratory experiments where real romantic chemistry threatens to blow up their carefully calculated hypothesis.",
