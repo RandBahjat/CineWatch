@@ -744,7 +744,6 @@
       }
     }
 
-    async 
     function updateAdminSubscriptionStatus() {
       if (!window.OneSignal) return;
       const subId = OneSignal.User?.PushSubscription?.id;
@@ -775,7 +774,7 @@
       }
     }
 
-    function sendTestOneSignalPush() {
+    async function sendTestOneSignalPush() {
       const statusEl = document.getElementById('osStatusMsg');
       if (statusEl) {
         statusEl.textContent = '⏳ Sending test push notification...';
