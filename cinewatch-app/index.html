@@ -182,6 +182,10 @@
     <script>
       (function() {
         try {
+          if (localStorage.getItem('cw_is_vip') === 'true' || sessionStorage.getItem('cw_is_vip') === 'true') {
+            document.documentElement.classList.add('cw-ads-hidden');
+            document.body.classList.add('cw-ads-hidden');
+          }
           var params = new URLSearchParams(window.location.search);
           var sec = params.get('section') || params.get('view');
           var isNav = sessionStorage.getItem('cw_navigated');
