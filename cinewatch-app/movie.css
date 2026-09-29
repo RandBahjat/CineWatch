@@ -12755,3 +12755,53 @@ body.cw-ads-hidden script[src*="highrevenueformat"] {
   cursor: pointer;
   white-space: nowrap;
 }
+
+.theme-section-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 1.15rem 0.9rem 0.5rem !important;
+  white-space: nowrap !important;
+}
+
+.theme-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.theme-header-icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.theme-header-title {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.45);
+  text-transform: uppercase;
+}
+
+.theme-current-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 3px 10px;
+  border-radius: 999px;
+  text-transform: capitalize;
+  line-height: 1;
+}
+
+.theme-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px currentColor;
+}
