@@ -7,7 +7,7 @@ window._MOVIES_DATA = [
     title: "The Uprising",
     type: "Movie",
     year: 2026,
-    rating: "6.2",
+    rating: "6.3",
     age: "R",
     duration: "1h 37m",
     genres: [
