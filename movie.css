@@ -13124,3 +13124,24 @@ body.cw-ads-hidden script[src*="highrevenueformat"] {
   background: #dc2626;
   transform: translateY(-1px);
 }
+
+.cw-theme-swatch.locked-swatch {
+  filter: saturate(0.65) opacity(0.75);
+  cursor: pointer;
+  position: relative;
+}
+
+.cw-theme-swatch.locked-swatch:hover {
+  filter: saturate(1) opacity(1);
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.45);
+  border-color: #f59e0b;
+}
+
+.swatch-mini-lock {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  line-height: 1;
+}
