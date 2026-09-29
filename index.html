@@ -15,9 +15,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260920_940">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_2917">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_1175">
+    <link rel="stylesheet" href="movie.css?v=20260920_941">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_2918">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_1176">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -135,10 +135,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_8341" defer></script>
-    <script src="series-data.js?v=20260818_8341" defer></script>
-    <script src="anime-data.js?v=20260818_8341" defer></script>
-    <script src="movie.js?v=20260920_939" defer></script>
+    <script src="movies-data.js?v=20260818_8342" defer></script>
+    <script src="series-data.js?v=20260818_8342" defer></script>
+    <script src="anime-data.js?v=20260818_8342" defer></script>
+    <script src="movie.js?v=20260920_940" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -149,6 +149,17 @@
     <script>
       window.injectPopunders = function() {
         if (window._cwPopundersInjected) return;
+        try {
+          if (localStorage.getItem('cw_is_vip') === 'true' || sessionStorage.getItem('cw_is_vip') === 'true') {
+            window._cwPopundersInjected = true;
+            return;
+          }
+          var savedU = JSON.parse(sessionStorage.getItem('cinewatch_user') || localStorage.getItem('cinewatch_user') || '{}');
+          if (savedU && savedU.isVip) {
+            window._cwPopundersInjected = true;
+            return;
+          }
+        } catch(e) {}
         window._cwPopundersInjected = true;
         try {
           var cwState = JSON.parse(localStorage.getItem('cw_state') || '{}');
@@ -3188,7 +3199,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_1175"></script>
+    <script src="welcome-disclaimer.js?v=20260918_1176"></script>
 
     <!-- Interstitial Ad Modal ÃŽâ€œÃƒâ€¡ÃƒÂ¶ fires on pagination for free users -->
     <div id="cwInterstitialAdModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.88); align-items:center; justify-content:center;">
