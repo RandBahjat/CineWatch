@@ -20,7 +20,7 @@ window._MOVIES_DATA = [
     videoUrl: "977942",
     trailerUrl: "https://youtu.be/ZVkrhHebz1Q?si=AnHMREdvzSWpfQYL",
     overview: "Set against the backdrop of extreme social inequality and industrial exploitation, a passionate and idealistic labor leader sparks a fierce rebellion among the desperate working class. As the grassroots movement rapidly gains momentum and threatens the established order, he must navigate dangerous political betrayals, internal divisions, and violent crackdowns by the ruling elite to secure a better future for his people.",
-    overviewKurdish: "خوێندکارێکی زانکۆی هارڤارد دوای ئەنجامدانی تاقیکردنەوەی دەروونی لەسەری، دەگۆڕێت بۆ یوونابۆمبەر. ساڵانێک دواتر، لێکۆڵینەوە و بەدواداچوونی بریکارێکی فیدراڵی (FBI) ئەوە ئاشکرا دەکات کە چۆن ڕابردووەکەی بووەتە هۆی دروستکردنی ئەو هێرشە مەرگهێنەرانەی لە نێوان ساڵانی ١٩٧٨ بۆ ١٩٩٥، ٣ کەسی کوشت و ٢٣ کەسی تریشی بریندار کرد.",
+    overviewKurdish: "لە سەردەمێکی پڕ لە نادادپەروەریی کۆمەڵایەتی و چەوساندنەوەی پیشەسازیدا، سەرکردەیەکی کرێکاریی دڵسۆز و خاوەن پرەنسیپ شۆڕشێکی گەورە و توند لە نێوان چینی کرێکاراندا بەرپا دەکات. لەگەڵ فراوانبوون و بەهێزبوونی بزووتنەوەکە کە هەڕەشە لە دەسەڵاتداران دەکات، ئەم سەرکردەیە دەبێت ڕووبەڕووی خیانەتی سیاسی، دووبەرەکیی ناوخۆیی و سەرکوتکردنی توندوتیژانە ببێتەوە بۆ مسۆگەرکردنی داهاتوویەکی باشتر بۆ گەلەکەی.",
     director: "Janus Metz",
     cast: ["Russell Crowe, Shailene Woodley, Jacob Tremblay"],
     trending: true,
