@@ -584,7 +584,21 @@
         }
         noMsg.style.display = "none";
 
-        orders.forEach((o) => {
+        // Deduplicate orders by order_id, prioritizing approved/denied over pending
+        const orderMap = {};
+        orders.forEach(o => {
+          const oid = o.order_id || o.id;
+          if (!orderMap[oid]) {
+            orderMap[oid] = o;
+          } else {
+            if (o.status === 'approved' || (o.status === 'denied' && orderMap[oid].status === 'pending')) {
+              orderMap[oid] = o;
+            }
+          }
+        });
+        const finalOrders = Object.values(orderMap);
+
+        finalOrders.forEach((o) => {
           const tr = document.createElement("tr");
           tr.style.borderBottom = "1px solid rgba(255, 255, 255, 0.08)";
           
