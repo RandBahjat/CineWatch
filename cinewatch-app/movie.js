@@ -2370,49 +2370,71 @@ function renderUserBadge() {
       document.body.appendChild(panel);
     }
 
+    const isVip = typeof isUserVip === 'function' ? isUserVip() : false;
+
     panel.innerHTML = `
       <div class="account-panel-inner">
         <div class="account-panel-header">
           <span class="account-panel-title">My Account</span>
-          <button class="account-panel-close" id="accountPanelClose">&times;</button>
+          <button class="account-panel-close" id="accountPanelClose" aria-label="Close">&times;</button>
         </div>
 
-        <div class="account-panel-profile">
-          <div class="account-panel-avatar">${renderAvatarHTML(userAvatar, "panel-avatar-img")}</div>
-          <div class="account-panel-name" id="panelUserName">${userName}</div>
-          <div class="account-panel-date"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#e50914" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Member since ${createdAt || "Unknown"}</div>
+        <div class="account-panel-body">
+          <div class="account-panel-profile">
+            <div class="account-panel-avatar-wrap">
+              <div class="account-panel-avatar">${renderAvatarHTML(userAvatar, "panel-avatar-img")}</div>
+              <label for="panelAvatarInput" class="avatar-edit-badge" title="${uploadAvatarText}">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              </label>
+            </div>
+            <div class="account-panel-name" id="panelUserName">
+              <span>${userName}</span>
+              ${isVip ? '<span class="cw-vip-pill">👑 VIP</span>' : ''}
+            </div>
+            ${userEmail ? `<div class="account-panel-email">${userEmail}</div>` : ''}
+            <div class="account-panel-date">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <span>Member since ${createdAt || "Unknown"}</span>
+            </div>
+          </div>
+
+          <div class="account-panel-section-label">⚙️ ACCOUNT SETTINGS</div>
+
+          <div class="account-panel-actions">
+            <label for="panelAvatarInput" class="account-panel-action-btn" id="uploadAvatarBtn">
+              <div class="panel-btn-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
+              </div>
+              <span class="panel-btn-text notranslate" translate="no">${uploadAvatarText}</span>
+              <ion-icon name="chevron-forward-outline" class="panel-btn-arrow"></ion-icon>
+            </label>
+            <input type="file" id="panelAvatarInput" accept="image/*" style="display:none;">
+
+            <button class="account-panel-action-btn" id="editUsernameBtn">
+              <div class="panel-btn-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+              </div>
+              <span class="panel-btn-text">Edit username</span>
+              <ion-icon name="chevron-forward-outline" class="panel-btn-arrow"></ion-icon>
+            </button>
+            
+            <button class="account-panel-action-btn" id="changePasswordPanelBtn">
+              <div class="panel-btn-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              </div>
+              <span class="panel-btn-text">Change password</span>
+              <ion-icon name="chevron-forward-outline" class="panel-btn-arrow"></ion-icon>
+            </button>
+          </div>
+
+          ${renderThemeSelectorHTML()}
         </div>
 
-        ${renderThemeSelectorHTML()}
-        <div class="account-panel-section-label">⚙ SETTINGS</div>
-
-        <div class="account-panel-actions">
-          <button class="account-panel-action-btn panel-vip-btn" id="panelVipUpgradeBtn" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(239, 68, 68, 0.22)); border: 1px solid rgba(245, 158, 11, 0.55); color: #fbbf24; font-weight: 700; margin-bottom: 8px;">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <span class="notranslate" translate="no">4K Ultra HD</span>
+        <div class="account-panel-footer">
+          <button class="account-panel-logout" id="panelLogoutBtn">
+            <ion-icon name="log-out-outline"></ion-icon> Logout
           </button>
-
-          <label for="panelAvatarInput" class="account-panel-action-btn" id="uploadAvatarBtn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
-            <span class="notranslate" translate="no">${uploadAvatarText}</span>
-          </label>
-          <input type="file" id="panelAvatarInput" accept="image/*" style="display:none;">
-
-          <button class="account-panel-action-btn" id="editUsernameBtn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-            Edit username
-          </button>
-          
-          <button class="account-panel-action-btn" id="changePasswordPanelBtn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-            Change password
-          </button>
-
         </div>
-
-        <button class="account-panel-logout" id="panelLogoutBtn">
-          <ion-icon name="log-out-outline"></ion-icon> Logout
-        </button>
       </div>
     `;
 
@@ -2477,7 +2499,7 @@ function renderUserBadge() {
     // Edit username
     document.getElementById("editUsernameBtn").onclick = () => {
       const nameEl = document.getElementById("panelUserName");
-      const currentName = nameEl ? nameEl.textContent.trim() : (state.user.name || "");
+      const currentName = state.user?.name || (nameEl ? (nameEl.querySelector('span') ? nameEl.querySelector('span').textContent.trim() : nameEl.textContent.trim()) : "");
 
       // Replace name display with inline input
       if (nameEl) {
@@ -8108,12 +8130,12 @@ function renderThemeSelectorHTML() {
   }).join('');
 
   return `
-    <div class="account-panel-section-label" style="display:flex; justify-content:space-between; align-items:center; margin-top:1.2rem;">
+    <div class="account-panel-section-label" style="display:flex; justify-content:space-between; align-items:center; margin-top:1.2rem; padding: 0.8rem 1rem 0.45rem;">
       <span>🎨 ACCENT THEME COLOR</span>
       ${isEligible ? '<span class="theme-unlocked-badge">👑 UNLOCKED</span>' : '<span class="theme-locked-badge">🔒 ADVANCED+</span>'}
     </div>
 
-    <div class="cw-theme-selector-box ${isEligible ? 'unlocked' : 'locked'}">
+    <div class="cw-theme-selector-box ${isEligible ? 'unlocked' : 'locked'}" style="margin: 0 0.6rem 0.8rem;">
       <div class="cw-theme-swatches">
         ${swatchesHtml}
         <label class="cw-theme-swatch custom-picker-btn" title="Choose Custom Hex Color" style="background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red); cursor:pointer;">
