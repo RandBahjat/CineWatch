@@ -18,7 +18,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/4YyuSadBoc5k6krj0REcYH15DXG.jpg",
     videoUrl: "1492640",
-    trailerUrl: "https://youtu.be/B3tR6qQjbgI?si=KtjLVp9LynxvVQxv",
+    trailerUrl: "https://youtu.be/ZVkrhHebz1Q?si=AnHMREdvzSWpfQYL",
     overview: "A Harvard student becomes the Unabomber after psychological experiments. Years later, an FBI agent's pursuit reveals how his past shaped his deadly campaign that killed 3 and injured 23 from 1978-1995.",
     overviewKurdish: "خوێندکارێکی زانکۆی هارڤارد دوای ئەنجامدانی تاقیکردنەوەی دەروونی لەسەری، دەگۆڕێت بۆ یوونابۆمبەر. ساڵانێک دواتر، لێکۆڵینەوە و بەدواداچوونی بریکارێکی فیدراڵی (FBI) ئەوە ئاشکرا دەکات کە چۆن ڕابردووەکەی بووەتە هۆی دروستکردنی ئەو هێرشە مەرگهێنەرانەی لە نێوان ساڵانی ١٩٧٨ بۆ ١٩٩٥، ٣ کەسی کوشت و ٢٣ کەسی تریشی بریندار کرد.",
     director: "Janus Metz",
