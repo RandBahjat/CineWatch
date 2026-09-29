@@ -610,8 +610,8 @@
             <td style="padding: 10px; color: #94a3b8; font-size: 12px;">Web</td>
             <td style="padding: 10px;">${statusBadge}</td>
             <td style="padding: 10px; text-align: right; white-space: nowrap;">
-              ${isPending ? `<button onclick="toggleVipOrderStatus('${o.id}', 'approved', '${phoneTarget}')" style="background: #10b981; color: white; padding: 4px 10px; font-size: 11px; margin-right: 5px; border-radius: 4px;">Approve</button>` : ''}
-              ${isPending ? `<button onclick="toggleVipOrderStatus('${o.id}', 'denied', '${phoneTarget}')" style="background: #f59e0b; color: white; padding: 4px 10px; font-size: 11px; margin-right: 5px; border-radius: 4px;">Deny</button>` : ''}
+              ${isPending ? `<button onclick="toggleVipOrderStatus('${o.id}', 'approved', '${phoneTarget}', '${o.order_id}')" style="background: #10b981; color: white; padding: 4px 10px; font-size: 11px; margin-right: 5px; border-radius: 4px;">Approve</button>` : ''}
+              ${isPending ? `<button onclick="toggleVipOrderStatus('${o.id}', 'denied', '${phoneTarget}', '${o.order_id}')" style="background: #f59e0b; color: white; padding: 4px 10px; font-size: 11px; margin-right: 5px; border-radius: 4px;">Deny</button>` : ''}
               <button onclick="deleteVipOrder('${o.id}')" style="background: transparent; color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); padding: 4px 8px; font-size: 11px; border-radius: 4px;">Delete</button>
             </td>
           `;
@@ -622,7 +622,22 @@
       }
     }
 
-    async function toggleVipOrderStatus(uuid, newStatus, phoneTarget) {
+    async function toggleVipOrderStatus(uuid, newStatus, phoneTarget, orderId) {
+      // Also insert status record into Supabase past RLS
+      try {
+        let sbClient = window.CW_API && window.CW_API.supabase;
+        if (sbClient && orderId) {
+          await sbClient.from('vip_orders').insert([{
+            order_id: orderId,
+            username: phoneTarget || 'Customer',
+            plan: 'VIP',
+            price: '$49.99',
+            wallet: 'Admin Action',
+            reference: phoneTarget || '',
+            status: newStatus
+          }]);
+        }
+      } catch(e) {}
       if (!confirm(`Are you sure you want to mark this order as ${newStatus.toUpperCase()}?`)) return;
       try {
         let sbClient = window.CW_API && window.CW_API.supabase;
@@ -710,7 +725,7 @@
       }
     }
 
-    async function sendOneSignalPush(pushId, title, message) {
+    async function sendOneSignalPush(pushId, title, message, targetUrl) {
       const appId = "88a941ed-f1be-4f05-86ac-1828bd010eeb";
       const restApiKey = localStorage.getItem('os_rest_api_key') || '';
       if (!restApiKey) return { success: false, reason: "REST API Key missing" };
@@ -720,7 +735,7 @@
           app_id: appId,
           headings: { en: title || "🎬 CineWatch VIP" },
           contents: { en: message || "Your VIP subscription status has been updated!" },
-          url: window.location.origin
+          url: targetUrl || window.location.origin
         };
         if (pushId) {
           payload.include_subscription_ids = [pushId];

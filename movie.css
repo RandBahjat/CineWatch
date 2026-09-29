@@ -12485,3 +12485,31 @@ select.phone-prefix option,
   padding: 8px 12px;
   font-size: 13px;
 }
+
+
+/* VIP Ad Removal Guarantee */
+body.cw-ads-hidden #cwAdBannerTop,
+body.cw-ads-hidden #cwAdSticky,
+body.cw-ads-hidden #cwHomeAd1,
+body.cw-ads-hidden #cwHomeAd2,
+body.cw-ads-hidden #cwInterstitialAdModal,
+body.cw-ads-hidden .ad-banner,
+body.cw-ads-hidden .cw-ad-banner,
+body.cw-ads-hidden .cw-ad-sticky,
+body.cw-ads-hidden iframe[src*="profitableratecpmnetwork"],
+body.cw-ads-hidden iframe[src*="highrevenueformat"],
+body.cw-ads-hidden script[src*="profitableratecpmnetwork"],
+body.cw-ads-hidden script[src*="highrevenueformat"] {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  height: 0 !important;
+  opacity: 0 !important;
+}
+
+.nav-vip-btn.vip-active-btn {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.22), rgba(239, 68, 68, 0.22)) !important;
+  border: 1.5px solid #fbbf24 !important;
+  color: #fbbf24 !important;
+  box-shadow: 0 0 15px rgba(251, 191, 36, 0.35) !important;
+}

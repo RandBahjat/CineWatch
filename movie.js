@@ -4477,6 +4477,15 @@ function selectVipTier(tierData) {
       }
 
       const orderId = "CW-" + Math.floor(100000 + Math.random() * 900000);
+      localStorage.setItem('cw_pending_order_id', orderId);
+      localStorage.setItem('cw_pending_order_ref', senderPhone || refVal);
+      localStorage.setItem('cw_pending_vip_tx', JSON.stringify({ txId: senderPhone || refVal, orderId, plan: tierData.name }));
+      
+      // Start auto polling for admin approval
+      if (window._cwVipPollTimer) clearInterval(window._cwVipPollTimer);
+      window._cwVipPollTimer = setInterval(async () => {
+        await checkPendingVipStatus();
+      }, 3000);
       const now = new Date();
       const timeStr = now.toLocaleDateString('en-GB') + ' ' + now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
@@ -7738,94 +7747,222 @@ window.check4KAccess = function() {
 };
 
 // ============================================================
-// Ad Visibility — shown for free users, hidden for VIP
+// VIP & Ad Visibility Engine — Guaranteed Ad Removal & Badges
 // ============================================================
-function updateAdsVisibility() {
-  const isVip = !!(state.user && state.user.isVip);
-  const adBanner = document.getElementById('cwAdBannerTop');
-  const adSticky = document.getElementById('cwAdSticky');
-  // Only show if the slot has real ad content inside (not empty)
-  const bannerHasAds = adBanner && adBanner.querySelector('.cw-ad-inner')?.children.length > 0;
-  const stickyHasAds = adSticky && adSticky.querySelector('.cw-ad-sticky-inner')?.children.length > 0;
-  if (adBanner) adBanner.style.display = (!isVip && bannerHasAds) ? 'flex' : 'none';
-  if (adSticky) adSticky.style.display = (!isVip && stickyHasAds) ? 'flex' : 'none';
 
-  // Home Page Ad Slots
-  const homeAd1 = document.getElementById('cwHomeAd1');
-  const homeAd2 = document.getElementById('cwHomeAd2');
-  const homeAd1HasAds = homeAd1 && homeAd1.querySelector('.cw-ad-inner')?.children.length > 0;
-  const homeAd2HasAds = homeAd2 && homeAd2.querySelector('.cw-ad-inner')?.children.length > 0;
-  
-  if (homeAd1) homeAd1.style.display = (!isVip && homeAd1HasAds) ? 'block' : 'none';
-  if (homeAd2) homeAd2.style.display = (!isVip && homeAd2HasAds) ? 'block' : 'none';
+function isUserVip() {
+  if (localStorage.getItem('cw_is_vip') === 'true') return true;
+  if (sessionStorage.getItem('cw_is_vip') === 'true') return true;
+  if (state && state.user && state.user.isVip) return true;
+  try {
+    const u = JSON.parse(sessionStorage.getItem('cinewatch_user') || localStorage.getItem('cinewatch_user') || '{}');
+    if (u && u.isVip) return true;
+  } catch(e) {}
+  return false;
+}
+window.isUserVip = isUserVip;
+
+function activateVip(planName) {
+  const plan = planName || "VIP";
+  localStorage.setItem('cw_is_vip', 'true');
+  localStorage.setItem('cw_vip_tier', plan);
+  localStorage.setItem('cw_state', JSON.stringify({ user: { isVip: true, vipTier: plan } }));
+  sessionStorage.setItem('cw_is_vip', 'true');
+
+  if (!state.user) {
+    state.user = { name: "VIP Member", email: "", isVip: true, vipTier: plan };
+  } else {
+    state.user.isVip = true;
+    state.user.vipTier = plan;
+  }
+
+  try {
+    sessionStorage.setItem('cinewatch_user', JSON.stringify(state.user));
+    localStorage.setItem('cinewatch_user', JSON.stringify(state.user));
+  } catch(e) {}
+
+  localStorage.removeItem('cw_pending_order_id');
+  localStorage.removeItem('cw_pending_vip_tx');
+
+  if (window._cwVipPollTimer) {
+    clearInterval(window._cwVipPollTimer);
+    window._cwVipPollTimer = null;
+  }
+
+  updateAdsVisibility();
+  renderVipBadges();
+  renderUserBadge();
+}
+window.activateVip = activateVip;
+
+function renderVipBadges() {
+  const isVip = isUserVip();
+
+  // 1. Update Navbar VIP Button
+  const navVip = document.getElementById("navVipBtn");
+  if (navVip) {
+    if (isVip) {
+      navVip.classList.add("vip-active-btn");
+      navVip.style.cssText = "background: linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(239, 68, 68, 0.25)) !important; border: 1.5px solid #fbbf24 !important; color: #fbbf24 !important; box-shadow: 0 0 15px rgba(251, 191, 36, 0.35) !important;";
+      navVip.innerHTML = `
+        <span style="font-size: 1.1rem; line-height: 1;">👑</span>
+        <span class="vip-text notranslate" translate="no" style="color: #fbbf24; font-weight: 800; letter-spacing: 0.5px;">VIP ACTIVE</span>
+      `;
+      navVip.onclick = (e) => {
+        e.preventDefault();
+        if (typeof showToast === 'function') {
+          showToast("👑 VIP Active! Unlimited 4K Ultra HD & Zero Ads.", "success");
+        } else {
+          alert("👑 VIP Active! Unlimited 4K Ultra HD & Zero Ads.");
+        }
+      };
+    } else {
+      navVip.classList.remove("vip-active-btn");
+      navVip.style.cssText = "";
+      navVip.innerHTML = `
+        <svg class="vip-icon" style="width:18px;height:18px;margin-right:2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"></path>
+        </svg>
+        <span class="vip-text notranslate" translate="no">Upgrade</span>
+      `;
+      navVip.onclick = (e) => {
+        e.preventDefault();
+        if (typeof openVipModal === 'function') openVipModal();
+      };
+    }
+  }
+
+  // 2. Update Sidebar user status
+  const userStatusEl = document.querySelector(".sidebar-user .user-status");
+  if (userStatusEl) {
+    if (isVip) {
+      userStatusEl.innerHTML = '👑 <span style="color:#fbbf24; font-weight:bold;">CineWatch VIP</span>';
+    } else {
+      userStatusEl.textContent = 'CineWatch';
+    }
+  }
+
+  // 3. Update Account Side Panel
+  const panelVipBtn = document.getElementById("panelVipUpgradeBtn");
+  if (panelVipBtn && isVip) {
+    panelVipBtn.style.cssText = "background: rgba(245, 158, 11, 0.15) !important; border: 1px solid #fbbf24 !important; color: #fbbf24 !important; font-weight: 800; margin-bottom: 8px; cursor: default;";
+    panelVipBtn.innerHTML = `
+      <span style="font-size: 1.1rem;">👑</span>
+      <span class="notranslate" translate="no" style="letter-spacing: 0.5px;">VIP SUBSCRIPTION ACTIVE</span>
+    `;
+    panelVipBtn.onclick = (e) => { e.preventDefault(); };
+  }
+
+  const panelUserName = document.getElementById("panelUserName");
+  if (panelUserName && isVip && !panelUserName.querySelector(".cw-vip-pill")) {
+    const pill = document.createElement("span");
+    pill.className = "cw-vip-pill";
+    pill.style.cssText = "background: linear-gradient(135deg, #f59e0b, #ef4444); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 2px 8px; border-radius: 999px; margin-left: 8px; vertical-align: middle; box-shadow: 0 0 10px rgba(245, 158, 11, 0.4);";
+    pill.textContent = "👑 VIP";
+    panelUserName.appendChild(pill);
+  }
+}
+window.renderVipBadges = renderVipBadges;
+
+function updateAdsVisibility() {
+  const isVip = isUserVip();
 
   if (isVip) {
     document.body.classList.add('cw-ads-hidden');
+
+    const adIds = [
+      'cwAdBannerTop',
+      'cwAdSticky',
+      'cwHomeAd1',
+      'cwHomeAd2',
+      'cwInterstitialAdModal'
+    ];
+    adIds.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.style.setProperty('display', 'none', 'important');
+        el.style.setProperty('visibility', 'hidden', 'important');
+        el.style.setProperty('pointer-events', 'none', 'important');
+      }
+    });
+
+    document.querySelectorAll('script[src*="profitableratecpmnetwork"], script[src*="highrevenueformat"]').forEach(s => s.remove());
+
+    window._cwPopundersInjected = true;
+    window.injectPopunders = function() {};
   } else {
     document.body.classList.remove('cw-ads-hidden');
   }
 }
-
-// === PASTE YOUR ADSTERRA SMARTLINK URL HERE ===
-var CW_PAGINATION_AD_URL = "PASTE_YOUR_SMARTLINK_URL_HERE";
-
-window.handlePaginationWithAd = function(p, onPageChange) {
-  const isVip = !!(state.user && state.user.isVip);
-
-  // Always change the page first
-  onPageChange(p);
-  window.scrollTo({ top: 0, behavior: "smooth" });
-
-  // Free users only: open the ad in a new tab
-  if (!isVip && CW_PAGINATION_AD_URL && CW_PAGINATION_AD_URL !== "PASTE_YOUR_SMARTLINK_URL_HERE") {
-    window.open(CW_PAGINATION_AD_URL, '_blank');
-  }
-};
-
+window.updateAdsVisibility = updateAdsVisibility;
 
 // Background check for pending VIP orders
 async function checkPendingVipStatus() {
-  const pending = localStorage.getItem("cw_pending_vip_tx");
-  if (!pending) return;
+  // Check URL parameters for instant activation from Push Notification
   try {
-    const tx = JSON.parse(pending);
-    if (!tx || !tx.txId) return;
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('vip_status') === 'approved' || urlParams.get('vip_activated') === 'true') {
+      const orderPlan = urlParams.get('plan') || 'VIP';
+      activateVip(orderPlan);
+      window.history.replaceState({}, document.title, window.location.pathname);
+      if (typeof showToast === 'function') {
+        showToast("🎉 VIP Activated! Welcome to CineWatch VIP — Ad-Free & 4K streaming.", "success");
+      }
+      return;
+    }
+  } catch(e) {}
 
+  // If already verified VIP, ensure state & badges
+  if (isUserVip()) {
+    activateVip(localStorage.getItem('cw_vip_tier') || 'VIP');
+    return;
+  }
+
+  const pendingOrderId = localStorage.getItem('cw_pending_order_id');
+  const pendingTx = localStorage.getItem('cw_pending_vip_tx');
+  const orders = JSON.parse(localStorage.getItem('cinewatch_vip_orders') || '[]');
+
+  let queryId = pendingOrderId;
+  let queryRef = localStorage.getItem('cw_pending_order_ref') || '';
+  if (!queryId && pendingTx) {
+    try {
+      const parsed = JSON.parse(pendingTx);
+      queryId = parsed.orderId;
+      queryRef = parsed.txId || '';
+    } catch(e) {}
+  }
+  if (!queryId && orders.length > 0) {
+    queryId = orders[0].id;
+    queryRef = orders[0].reference || '';
+  }
+
+  if (!queryId && !queryRef) return;
+
+  try {
     let sbClient = window.CW_API && window.CW_API.supabase;
     if (!sbClient) return;
 
-    const { data, error } = await sbClient
-      .from('vip_orders')
-      .select('status, plan')
-      .eq('reference', tx.txId)
-      .order('created_at', { ascending: false })
-      .limit(1);
-    
+    let query = sbClient.from('vip_orders').select('*').eq('status', 'approved');
+    if (queryId) {
+      query = query.eq('order_id', queryId);
+    } else if (queryRef) {
+      query = query.eq('reference', queryRef);
+    }
+
+    const { data, error } = await query.limit(1);
+
     if (data && data.length > 0) {
       const order = data[0];
-      if (order.status === 'approved') {
-        if (!state.user) {
-          state.user = { name: tx.username, email: "", isVip: true, vipTier: order.plan || tx.plan?.name || "Ultimate" };
-        } else {
-          state.user.isVip = true;
-          state.user.vipTier = order.plan || tx.plan?.name || "Ultimate";
-        }
-        if (typeof saveUser === 'function') saveUser(state.user);
-        if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
-        
-        localStorage.removeItem("cw_pending_vip_tx");
-        
-        if (typeof showToast === 'function') {
-          showToast("🎉 VIP Request Approved! Your VIP is now active.", "success");
-        }
-      } else if (order.status === 'denied') {
-        localStorage.removeItem("cw_pending_vip_tx");
-        if (typeof showToast === 'function') {
-          showToast("❌ VIP Request Denied. Please contact support.", "error");
-        }
+      activateVip(order.plan || "VIP");
+      if (typeof showToast === 'function') {
+        showToast("🎉 VIP Request Approved! Your VIP is now active.", "success");
+      } else {
+        alert("🎉 VIP Request Approved! Your VIP is now active.");
       }
     }
   } catch(e) {
     console.warn("Error checking VIP status", e);
   }
 }
+window.checkPendingVipStatus = checkPendingVipStatus;
+
