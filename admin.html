@@ -31,6 +31,20 @@
   <link rel="stylesheet" href="movie.css">
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="api.js"></script>
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+      await OneSignal.init({
+        appId: "88a941ed-f1be-4f05-86ac-1828bd010eeb",
+        allowLocalhostAsSecureOrigin: true,
+      });
+      if (typeof updateAdminSubscriptionStatus === 'function') updateAdminSubscriptionStatus();
+      OneSignal.User?.PushSubscription?.addEventListener("change", () => {
+        if (typeof updateAdminSubscriptionStatus === 'function') updateAdminSubscriptionStatus();
+      });
+    });
+  </script>
 </head>
 <body>
 
@@ -157,20 +171,26 @@
         </div>
       </div>
 
+      <div style="margin-bottom: 1rem; padding: 0.75rem 1rem; background: rgba(255,255,255,0.03); border-radius: 6px; border: 1px solid rgba(255,255,255,0.08);">
+        <label style="margin-bottom: 0.2rem; color: #94a3b8;">This Browser / Device Push Status:</label>
+        <div id="osDeviceStatus" style="font-size: 0.9rem; color: #cbd5e1;">Checking subscription status...</div>
+      </div>
+
       <div class="flex-row">
         <div>
           <label>OneSignal App ID</label>
           <input type="text" id="osAppId" value="88a941ed-f1be-4f05-86ac-1828bd010eeb" readonly style="opacity: 0.8;" />
         </div>
         <div>
-          <label>OneSignal REST API Key (Found in OneSignal Settings → Keys & IDs)</label>
+          <label>OneSignal REST API Key</label>
           <input type="password" id="osRestApiKey" placeholder="Paste your OneSignal REST API Key here..." />
         </div>
       </div>
 
       <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
         <button onclick="saveOneSignalSettings()" style="background: #10b981; color: #0b0c10;">💾 Save OneSignal Key</button>
-        <button onclick="sendTestOneSignalPush()" style="background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid #10b981;">📢 Send Test Push</button>
+        <button onclick="subscribeThisDevice()" style="background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid #10b981;">🔔 Subscribe this Device</button>
+        <button onclick="sendTestOneSignalPush()" style="background: #38bdf8; color: #0b0c10;">📢 Send Test Push</button>
         <span id="osStatusMsg" style="font-size: 0.85rem; font-weight: 500; color: #10b981;"></span>
       </div>
     </div>
@@ -724,7 +744,38 @@
       }
     }
 
-    async function sendTestOneSignalPush() {
+    async 
+    function updateAdminSubscriptionStatus() {
+      if (!window.OneSignal) return;
+      const subId = OneSignal.User?.PushSubscription?.id;
+      const statusEl = document.getElementById('osDeviceStatus');
+      if (statusEl) {
+        if (subId) {
+          statusEl.innerHTML = '<span style="color: #10b981; font-weight: bold;">🟢 Subscribed & Ready to receive push alerts!</span> (ID: <code style="color:#66fcf1;">' + subId.substring(0, 12) + '...</code>)';
+        } else {
+          statusEl.innerHTML = '<span style="color: #ef4444; font-weight: bold;">🔴 Not Subscribed yet.</span> Click the "🔔 Subscribe this Device" button below to allow notifications!';
+        }
+      }
+    }
+
+    async function subscribeThisDevice() {
+      if (!window.OneSignal) {
+        alert("OneSignal SDK is loading, please try again in a moment.");
+        return;
+      }
+      try {
+        if (OneSignal.Notifications && typeof OneSignal.Notifications.requestPermission === 'function') {
+          await OneSignal.Notifications.requestPermission();
+        } else if (OneSignal.Slidedown && typeof OneSignal.Slidedown.promptPush === 'function') {
+          await OneSignal.Slidedown.promptPush({ force: true });
+        }
+        setTimeout(updateAdminSubscriptionStatus, 1500);
+      } catch(e) {
+        alert("Subscription notice: " + e.message);
+      }
+    }
+
+    function sendTestOneSignalPush() {
       const statusEl = document.getElementById('osStatusMsg');
       if (statusEl) {
         statusEl.textContent = '⏳ Sending test push notification...';

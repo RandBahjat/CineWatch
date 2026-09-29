@@ -15,9 +15,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20260920_937">
-    <link rel="stylesheet" href="browse-fix.css?v=20260916_2914">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_1172">
+    <link rel="stylesheet" href="movie.css?v=20260920_938">
+    <link rel="stylesheet" href="browse-fix.css?v=20260916_2915">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_1173">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -135,10 +135,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20260818_8338" defer></script>
-    <script src="series-data.js?v=20260818_8338" defer></script>
-    <script src="anime-data.js?v=20260818_8338" defer></script>
-    <script src="movie.js?v=20260920_936" defer></script>
+    <script src="movies-data.js?v=20260818_8339" defer></script>
+    <script src="series-data.js?v=20260818_8339" defer></script>
+    <script src="anime-data.js?v=20260818_8339" defer></script>
+    <script src="movie.js?v=20260920_937" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -181,11 +181,36 @@
         await OneSignal.init({
           appId: "88a941ed-f1be-4f05-86ac-1828bd010eeb",
           allowLocalhostAsSecureOrigin: true,
-          notifyButton: {
-            enable: false,
-          },
+          promptOptions: {
+            slidedown: {
+              prompts: [
+                {
+                  type: "push",
+                  autoPrompt: true,
+                  text: {
+                    actionMessage: "Allow notifications to receive instant VIP activation alerts and movie updates!",
+                    acceptButton: "Allow Notifications",
+                    cancelButton: "Later"
+                  },
+                  delay: {
+                    pageViews: 1,
+                    timeDelay: 1
+                  }
+                }
+              ]
+            }
+          }
         });
+
+        // Trigger prompt if not subscribed yet
         try {
+          setTimeout(async () => {
+            const hasSub = OneSignal.User?.PushSubscription?.id;
+            if (!hasSub && OneSignal.Slidedown) {
+              await OneSignal.Slidedown.promptPush({ force: true });
+            }
+          }, 1200);
+
           const pushId = OneSignal.User?.PushSubscription?.id;
           if (pushId) localStorage.setItem('cw_onesignal_push_id', pushId);
           OneSignal.User?.PushSubscription?.addEventListener("change", (e) => {
@@ -196,7 +221,6 @@
         } catch(e) {}
       });
     </script>
-
 </head>
 
 <body class="view-home">
@@ -3164,7 +3188,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_1172"></script>
+    <script src="welcome-disclaimer.js?v=20260918_1173"></script>
 
     <!-- Interstitial Ad Modal ÃŽâ€œÃƒâ€¡ÃƒÂ¶ fires on pagination for free users -->
     <div id="cwInterstitialAdModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.88); align-items:center; justify-content:center;">

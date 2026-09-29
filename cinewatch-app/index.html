@@ -136,11 +136,36 @@
         await OneSignal.init({
           appId: "88a941ed-f1be-4f05-86ac-1828bd010eeb",
           allowLocalhostAsSecureOrigin: true,
-          notifyButton: {
-            enable: false,
-          },
+          promptOptions: {
+            slidedown: {
+              prompts: [
+                {
+                  type: "push",
+                  autoPrompt: true,
+                  text: {
+                    actionMessage: "Allow notifications to receive instant VIP activation alerts and movie updates!",
+                    acceptButton: "Allow Notifications",
+                    cancelButton: "Later"
+                  },
+                  delay: {
+                    pageViews: 1,
+                    timeDelay: 1
+                  }
+                }
+              ]
+            }
+          }
         });
+
+        // Trigger prompt if not subscribed yet
         try {
+          setTimeout(async () => {
+            const hasSub = OneSignal.User?.PushSubscription?.id;
+            if (!hasSub && OneSignal.Slidedown) {
+              await OneSignal.Slidedown.promptPush({ force: true });
+            }
+          }, 1200);
+
           const pushId = OneSignal.User?.PushSubscription?.id;
           if (pushId) localStorage.setItem('cw_onesignal_push_id', pushId);
           OneSignal.User?.PushSubscription?.addEventListener("change", (e) => {
@@ -151,7 +176,6 @@
         } catch(e) {}
       });
     </script>
-
 </head>
 
 <body class="view-home">
