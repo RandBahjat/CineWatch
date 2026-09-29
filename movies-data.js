@@ -19,7 +19,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/4YyuSadBoc5k6krj0REcYH15DXG.jpg",
     videoUrl: "977942",
     trailerUrl: "https://youtu.be/ZVkrhHebz1Q?si=AnHMREdvzSWpfQYL",
-    overview: "A Harvard student becomes the Unabomber after psychological experiments. Years later, an FBI agent's pursuit reveals how his past shaped his deadly campaign that killed 3 and injured 23 from 1978-1995.",
+    overview: "Set against the backdrop of extreme social inequality and industrial exploitation, a passionate and idealistic labor leader sparks a fierce rebellion among the desperate working class. As the grassroots movement rapidly gains momentum and threatens the established order, he must navigate dangerous political betrayals, internal divisions, and violent crackdowns by the ruling elite to secure a better future for his people.",
     overviewKurdish: "خوێندکارێکی زانکۆی هارڤارد دوای ئەنجامدانی تاقیکردنەوەی دەروونی لەسەری، دەگۆڕێت بۆ یوونابۆمبەر. ساڵانێک دواتر، لێکۆڵینەوە و بەدواداچوونی بریکارێکی فیدراڵی (FBI) ئەوە ئاشکرا دەکات کە چۆن ڕابردووەکەی بووەتە هۆی دروستکردنی ئەو هێرشە مەرگهێنەرانەی لە نێوان ساڵانی ١٩٧٨ بۆ ١٩٩٥، ٣ کەسی کوشت و ٢٣ کەسی تریشی بریندار کرد.",
     director: "Janus Metz",
     cast: ["Russell Crowe, Shailene Woodley, Jacob Tremblay"],
