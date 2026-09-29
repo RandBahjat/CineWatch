@@ -30,6 +30,32 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
+    title: "Unabomber",
+    type: "Movie",
+    year: 2026,
+    rating: "6.2",
+    age: "R",
+    duration: "1h 37m",
+    genres: [
+      "Crime",
+      "Drama",
+      "Thriller",
+      "Biography"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/39aMkR8Y5vhCG9dTkjiqRl8AVqp.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/58D9nalUYW5L5K0guw7hcpsEJBH.jpg",
+    videoUrl: "1492640",
+    trailerUrl: "https://youtu.be/B3tR6qQjbgI?si=KtjLVp9LynxvVQxv",
+    overview: "A Harvard student becomes the Unabomber after psychological experiments. Years later, an FBI agent's pursuit reveals how his past shaped his deadly campaign that killed 3 and injured 23 from 1978-1995.",
+    overviewKurdish: "خوێندکارێکی زانکۆی هارڤارد دوای ئەنجامدانی تاقیکردنەوەی دەروونی لەسەری، دەگۆڕێت بۆ یوونابۆمبەر. ساڵانێک دواتر، لێکۆڵینەوە و بەدواداچوونی بریکارێکی فیدراڵی (FBI) ئەوە ئاشکرا دەکات کە چۆن ڕابردووەکەی بووەتە هۆی دروستکردنی ئەو هێرشە مەرگهێنەرانەی لە نێوان ساڵانی ١٩٧٨ بۆ ١٩٩٥، ٣ کەسی کوشت و ٢٣ کەسی تریشی بریندار کرد.",
+    director: "Janus Metz",
+    cast: ["Russell Crowe, Shailene Woodley, Jacob Tremblay"],
+    trending: true,
+    featured: true,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "The Love Hypothesis",
     type: "Movie",
     year: 2026,
