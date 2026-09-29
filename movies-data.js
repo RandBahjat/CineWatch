@@ -7,7 +7,7 @@ window._MOVIES_DATA = [
     title: "The Love Hypothesis",
     type: "Movie",
     year: 2026,
-    rating: "TBR",
+    rating: "7.0",
     age: "R",
     duration: "1h 50m",
     genres: [
