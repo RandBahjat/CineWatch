@@ -8084,15 +8084,25 @@ function applyThemeColor(themeOrHex, glow, hover, name) {
     }
   }
 
+  const rgb = hexToRgb(primaryHex);
+  const primaryGlow = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.45)`;
+  const primarySubtle = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.16)`;
+  const primaryBorder = `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 0.45)`;
+  const hoverHexVal = hoverHex || primaryHex;
+
   const root = document.documentElement;
   root.style.setProperty('--primary', primaryHex);
-  root.style.setProperty('--primary-hover', hoverHex);
-  root.style.setProperty('--primary-glow', glowRgba);
-  root.style.setProperty('--shadow-glow', `0 0 20px ${glowRgba}`);
+  root.style.setProperty('--primary-hover', hoverHexVal);
+  root.style.setProperty('--primary-glow', primaryGlow);
+  root.style.setProperty('--primary-subtle', primarySubtle);
+  root.style.setProperty('--primary-border', primaryBorder);
+  root.style.setProperty('--shadow-glow', `0 0 20px ${primaryGlow}`);
 
   localStorage.setItem('cw_theme_primary', primaryHex);
-  localStorage.setItem('cw_theme_glow', glowRgba);
-  localStorage.setItem('cw_theme_hover', hoverHex);
+  localStorage.setItem('cw_theme_glow', primaryGlow);
+  localStorage.setItem('cw_theme_hover', hoverHexVal);
+  localStorage.setItem('cw_theme_subtle', primarySubtle);
+  localStorage.setItem('cw_theme_border', primaryBorder);
   localStorage.setItem('cw_theme_name', themeName);
 
   // Update checkmarks in panel

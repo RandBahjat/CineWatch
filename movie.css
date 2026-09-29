@@ -53,6 +53,8 @@
   --primary: #e50914;
   --primary-hover: #ff1e27;
   --primary-glow: rgba(229, 9, 20, 0.4);
+  --primary-subtle: rgba(229, 9, 20, 0.16);
+  --primary-border: rgba(229, 9, 20, 0.45);
   --gold: #ffc107;
   --text-main: var(--color-text-primary);
   --text-muted: var(--color-text-tertiary);
@@ -12804,4 +12806,208 @@ body.cw-ads-hidden script[src*="highrevenueformat"] {
   border-radius: 50%;
   display: inline-block;
   box-shadow: 0 0 8px currentColor;
+}
+
+/* ==========================================================================
+   DYNAMIC THEME ACCENT SYSTEM — ALL NAVBAR BUTTONS, ICONS & ACCENTS
+   ========================================================================== */
+
+/* Brand Logo Icon & Glow */
+.brand-logo .brand-icon {
+  background: linear-gradient(135deg, var(--primary-hover) 0%, var(--primary) 100%) !important;
+  box-shadow: 0 4px 18px var(--primary-glow), inset 0 1px 1px rgba(255, 255, 255, 0.35) !important;
+}
+.brand-logo .brand-text span {
+  color: var(--primary) !important;
+  text-shadow: 0 0 16px var(--primary-glow) !important;
+}
+
+/* Navbar Home Link & Home Icon */
+.nav-home-link.active {
+  color: var(--primary) !important;
+  background: var(--primary-subtle) !important;
+  border: 1px solid var(--primary-border) !important;
+  text-shadow: 0 0 12px var(--primary-glow) !important;
+}
+.nav-home-link.active ion-icon,
+.nav-home-link.active svg {
+  color: var(--primary) !important;
+  stroke: var(--primary) !important;
+}
+.nav-home-link:hover {
+  color: var(--primary) !important;
+}
+.nav-home-link:hover ion-icon {
+  color: var(--primary) !important;
+}
+
+/* Navbar Browse Pill Button & 4-Square Icon */
+.browse-btn-icon,
+.nav-browse-pill-btn svg {
+  color: var(--primary) !important;
+}
+.browse-btn-icon rect,
+.browse-btn-icon circle {
+  stroke: var(--primary) !important;
+}
+.browse-btn-icon circle {
+  fill: var(--primary) !important;
+}
+.nav-browse-item.active .nav-browse-pill-btn,
+.nav-browse-pill-btn.active,
+.nav-browse-item.is-open .nav-browse-pill-btn {
+  background: var(--primary-subtle) !important;
+  border-color: var(--primary-border) !important;
+  box-shadow: 0 0 16px var(--primary-glow) !important;
+  color: #ffffff !important;
+}
+
+/* Navbar Browse Mega Dropdown Cards & Icons */
+.nav-dropdown-icon {
+  color: var(--primary) !important;
+}
+.nav-dropdown-icon ion-icon,
+.nav-dropdown-icon svg {
+  color: var(--primary) !important;
+  fill: currentColor !important;
+}
+.nav-dropdown-card:hover {
+  background: var(--primary-subtle) !important;
+  border-color: var(--primary-border) !important;
+  box-shadow: 0 6px 20px var(--primary-glow) !important;
+  color: #ffffff !important;
+}
+.nav-dropdown-card.active {
+  background: var(--primary-subtle) !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 14px var(--primary-glow) !important;
+  color: #ffffff !important;
+}
+
+/* Search Lens Button & Modal Search Icon */
+.nav-action-btn:hover {
+  border-color: var(--primary-border) !important;
+  color: var(--primary) !important;
+  box-shadow: 0 0 16px var(--primary-glow) !important;
+}
+.modal-search-icon {
+  color: var(--primary) !important;
+}
+.search-bg-glow {
+  background: radial-gradient(ellipse at 50% 0%, var(--primary-glow), transparent 70%) !important;
+}
+
+/* Language Dropdown Active States & Checkmark */
+.custom-lang-dropdown.open .lang-dropdown-selected,
+.custom-lang-dropdown:hover .lang-dropdown-selected {
+  background: var(--primary-subtle) !important;
+  border-color: var(--primary-border) !important;
+  box-shadow: 0 0 18px var(--primary-glow) !important;
+}
+.lang-option.active {
+  background: var(--primary-subtle) !important;
+  border-color: var(--primary-border) !important;
+  box-shadow: 0 0 14px var(--primary-glow) !important;
+}
+.lang-check {
+  color: var(--primary) !important;
+}
+
+/* Profile Icon Button Hover Ring */
+.profile-icon-btn:hover {
+  box-shadow: 0 0 0 3px var(--primary-border) !important;
+}
+
+/* Mobile Bottom Dock Active & Hover Icons */
+.mobile-dock-btn.active {
+  background: var(--primary) !important;
+  box-shadow: 0 0 16px var(--primary-glow), inset 0 1px 1px rgba(255, 255, 255, 0.4) !important;
+  color: #ffffff !important;
+}
+.mobile-dock-btn:hover {
+  color: var(--primary) !important;
+}
+.mobile-dock-btn.active .dock-browse-icon rect {
+  stroke: #ffffff !important;
+}
+.mobile-dock-btn.active .dock-browse-icon circle {
+  fill: #ffffff !important;
+}
+
+/* Hero Play Buttons, Primary Action Buttons & Hover Glows */
+.btn-primary,
+.hero-play-btn,
+.play-btn-circle {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 4px 18px var(--primary-glow) !important;
+  color: #ffffff !important;
+}
+.btn-primary:hover,
+.hero-play-btn:hover,
+.play-btn-circle:hover {
+  background: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+  box-shadow: 0 6px 24px var(--primary-glow) !important;
+}
+.card-play-btn,
+.play-icon-overlay {
+  background: var(--primary) !important;
+  box-shadow: 0 0 16px var(--primary-glow) !important;
+}
+
+/* Active Filter Chips, Genre Pills, and Tabs */
+.browse-filter-btn.active,
+.filter-btn.active,
+.genre-btn.active,
+.genre-pill.active,
+.browse-tab.active,
+.tab-btn.active {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 4px 18px var(--primary-glow) !important;
+  color: #ffffff !important;
+}
+
+/* Movie Card Title Hover Accent */
+.movie-card:hover .card-title,
+.movie-card:hover .movie-title,
+.movie-card:hover h3 {
+  color: var(--primary) !important;
+}
+
+/* Watchlist & Favorites Active Accent */
+.fav-btn.active,
+.action-btn.active,
+.btn-watchlist-custom.active {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 14px var(--primary-glow) !important;
+  color: #ffffff !important;
+}
+
+/* Top Progress Bar & Slider Indicator */
+.top-loading-bar,
+.top-progress-indicator {
+  background: linear-gradient(90deg, var(--primary) 0%, var(--primary-hover) 70%, #ffffff 100%) !important;
+  box-shadow: 0 0 16px var(--primary-glow) !important;
+}
+
+/* Sidebar Elements Theme Alignment */
+.account-panel-avatar {
+  background: var(--primary) !important;
+  box-shadow: 0 0 0 3px var(--primary-border), 0 6px 20px rgba(0,0,0,0.5) !important;
+}
+.avatar-edit-badge {
+  background: var(--primary) !important;
+}
+.avatar-edit-badge:hover {
+  background: var(--primary-hover) !important;
+}
+.account-panel-action-btn:hover .panel-btn-icon {
+  background: var(--primary) !important;
+  color: #fff !important;
+}
+.account-panel-date svg {
+  color: var(--primary) !important;
 }

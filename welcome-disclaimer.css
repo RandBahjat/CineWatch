@@ -4,9 +4,9 @@
    ========================================================================== */
 
 :root {
-  --cw-disc-red: #e50914;
+  --cw-disc-red: var(--primary, #e50914);
   --cw-disc-red-hover: #ff1f2d;
-  --cw-disc-glow: rgba(229, 9, 20, 0.35);
+  --cw-disc-glow: var(--primary-glow, rgba(229, 9, 20, 0.35));
   --cw-disc-bg: linear-gradient(180deg, rgba(20, 22, 30, 0.98) 0%, rgba(11, 12, 16, 0.99) 100%);
   --cw-disc-border: rgba(255, 255, 255, 0.12);
   --cw-disc-text: #f1f5f9;
