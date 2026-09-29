@@ -7,7 +7,7 @@ window._MOVIES_DATA = [
     title: "Unabomber",
     type: "Movie",
     year: 2026,
-    rating: "7.0",
+    rating: "6.2",
     age: "R",
     duration: "1h 50m",
     genres: [
