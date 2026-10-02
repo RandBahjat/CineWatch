@@ -20,7 +20,7 @@ window._MOVIES_DATA = [
     backdrop: "https://image.tmdb.org/t/p/original/3BoHXmGAfC2qO4wnCpMYV0BzpHD.jpg",
     videoUrl: "1283515",
     trailerUrl: "https://youtu.be/xdPMKhjMSFs?si=AmIojfU_aaCG-Xke",
-    overview: "Set against the backdrop of extreme social inequality and industrial exploitation, a passionate and idealistic labor leader sparks a fierce rebellion among the desperate working class. As the grassroots movement rapidly gains momentum and threatens the established order, he must navigate dangerous political betrayals, internal divisions, and violent crackdowns by the ruling elite to secure a better future for his people.",
+    overview: "Lowen Ashleigh, a struggling writer on the brink of financial ruin, accepts the job offer of a lifetime from Jeremy Crawford, the husband of bestselling author Verity Crawford. After a mysterious accident leaves Verity unable to finish her successful book series, Lowen arrives at the Crawford home to sort through notes and manuscripts. While digging through the office, she discovers an unpublished autobiography containing horrifying admissions about the family's tragedies, drawing Lowen into an intoxicating, dangerous web of obsession and deceit.",
     overviewKurdish: "لە سەردەمێکی پڕ لە نادادپەروەریی کۆمەڵایەتی و چەوساندنەوەی پیشەسازیدا، سەرکردەیەکی کرێکاریی دڵسۆز و خاوەن پرەنسیپ شۆڕشێکی گەورە و توند لە نێوان چینی کرێکاراندا بەرپا دەکات. لەگەڵ فراوانبوون و بەهێزبوونی بزووتنەوەکە کە هەڕەشە لە دەسەڵاتداران دەکات، ئەم سەرکردەیە دەبێت ڕووبەڕووی خیانەتی سیاسی، دووبەرەکیی ناوخۆیی و سەرکوتکردنی توندوتیژانە ببێتەوە بۆ مسۆگەرکردنی داهاتوویەکی باشتر بۆ گەلەکەی.",
     director: "David Mackenzie",
     cast: ["Andrew Garfield, Claire Foy, Harris Dickinson, Stephen Graham, Erin Kellyman"],
