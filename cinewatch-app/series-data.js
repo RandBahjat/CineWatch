@@ -34,7 +34,7 @@ window._SERIES_DATA = [
           {
             "episode": 1,
             "title": "Timshel",
-            "airDate": "2026-09-17",
+            "airDate": "2026-10-1",
             "rating": 7.5
           },
         ]
