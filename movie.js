@@ -2329,6 +2329,13 @@ function renderUserBadge() {
       `;
     }
 
+    const mobileDockLogin = document.getElementById("mobileDockLogin");
+    if (mobileDockLogin) {
+      mobileDockLogin.title = "My Account";
+      mobileDockLogin.setAttribute("aria-label", "My Account");
+      mobileDockLogin.innerHTML = renderAvatarHTML(userAvatar, "dock-avatar-img");
+    }
+
     function logout() {
       if (window.CW_API && typeof window.CW_API.signOut === 'function') {
         window.CW_API.signOut();
@@ -2493,6 +2500,7 @@ function renderUserBadge() {
       overlay.classList.add("active");
       document.body.style.overflow = "hidden";
     }
+    window.openAccountSidePanel = openPanel;
 
     function closePanel() {
       panel.classList.remove("open");
@@ -2677,6 +2685,19 @@ function renderUserBadge() {
         </button>
       `;
       document.getElementById("headerLoginBtn").onclick = () => openAuthModal();
+    }
+
+    const mobileDockLoginOut = document.getElementById("mobileDockLogin");
+    if (mobileDockLoginOut) {
+      mobileDockLoginOut.title = "Sign In";
+      mobileDockLoginOut.setAttribute("aria-label", "Sign In or Account");
+      mobileDockLoginOut.innerHTML = `
+        <svg class="dock-user-icon" width="26" height="26" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="12" cy="9.5" r="2.6" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M6.5 18C7 15.5 9.2 14 12 14C14.8 14 17 15.5 17.5 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      `;
     }
     
     if (sidebarFooter) {
@@ -5170,16 +5191,20 @@ function bindEventListeners() {
       } else if (btn.id === "mobileDockLogin" || btn.id === "mobileDockWatchlist") {
         closeBrowseDropdown();
         if (state.user) {
-          const profileBadge = document.getElementById("profileBadgeToggle");
-          if (profileBadge) {
-            profileBadge.click();
+          if (typeof window.openAccountSidePanel === "function") {
+            window.openAccountSidePanel();
           } else {
-            const panel = document.getElementById("accountSidePanel");
-            const overlay = document.getElementById("accountPanelOverlay");
-            if (panel && overlay) {
-              panel.classList.add("open");
-              overlay.classList.add("active");
-              document.body.style.overflow = "hidden";
+            const profileBadge = document.getElementById("profileBadgeToggle");
+            if (profileBadge) {
+              profileBadge.click();
+            } else {
+              const panel = document.getElementById("accountSidePanel");
+              const overlay = document.getElementById("accountPanelOverlay");
+              if (panel && overlay) {
+                panel.classList.add("open");
+                overlay.classList.add("active");
+                document.body.style.overflow = "hidden";
+              }
             }
           }
         } else {

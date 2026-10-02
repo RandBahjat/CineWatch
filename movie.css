@@ -13145,3 +13145,21 @@ body.cw-ads-hidden script[src*="highrevenueformat"] {
   font-size: 10px;
   line-height: 1;
 }
+
+.dock-avatar-img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+}
+
+.dock-avatar-img.avatar-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
