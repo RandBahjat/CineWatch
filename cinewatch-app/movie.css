@@ -1371,7 +1371,13 @@ body.rtl-layout .modal-search-icon {
   .nav-link,
   .nav-links,
   .nav-glider,
-  #navSearchBtn {
+  #navSearchBtn,
+  .user-profile-container,
+  #userProfileContainer,
+  .profile-icon-btn,
+  .nav-user-icon-btn,
+  #profileBadgeToggle,
+  #headerLoginBtn {
     display: none !important;
   }
 
@@ -4781,10 +4787,13 @@ body.rtl-layout .details-back-btn svg {
     gap: 3px !important;
   }
 
-  .user-profile-container {
-    display: flex !important;
-    align-items: center;
-    flex-shrink: 0;
+  .user-profile-container,
+  #userProfileContainer {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
   }
 
   .user-profile-container .profile-badge .avatar {
@@ -13162,4 +13171,34 @@ body.cw-ads-hidden script[src*="highrevenueformat"] {
   align-items: center;
   justify-content: center;
   border: none;
+}
+
+/* =======================================================
+   MOBILE TOP PROFILE BUTTON REMOVAL (Zero Conflict)
+   ======================================================= */
+@media (max-width: 900px) {
+  .navbar .user-profile-container,
+  .navbar #userProfileContainer,
+  .navbar .profile-icon-btn,
+  .navbar .nav-user-icon-btn,
+  .navbar #profileBadgeToggle,
+  .navbar #headerLoginBtn,
+  .user-profile-container,
+  #userProfileContainer,
+  .profile-icon-btn,
+  .nav-user-icon-btn,
+  #profileBadgeToggle,
+  #headerLoginBtn,
+  .desktop-only-profile {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    overflow: hidden !important;
+  }
 }

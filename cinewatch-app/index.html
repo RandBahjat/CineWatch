@@ -13,8 +13,8 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20261002_nav_fix">
-    <link rel="stylesheet" href="browse-fix.css?v=20261002_nav_fix">
+    <link rel="stylesheet" href="movie.css?v=20261002_hide_top_profile">
+    <link rel="stylesheet" href="browse-fix.css?v=20261002_hide_top_profile">
     <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_668">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
@@ -121,7 +121,7 @@
     <script src="movies-data.js?v=20260818_7834" defer></script>
     <script src="series-data.js?v=20260818_7834" defer></script>
     <script src="anime-data.js?v=20260818_7834" defer></script>
-    <script src="movie.js?v=20261002_nav_fix" defer></script>
+    <script src="movie.js?v=20261002_hide_top_profile" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -194,6 +194,32 @@
         } catch(e) {}
       })();
     </script>
+  
+    <!-- Critical Mobile Rule: Remove Top Profile Button on Mobile -->
+    <style id="mobileTopProfileHide">
+      @media (max-width: 900px) {
+        .navbar .user-profile-container,
+        .navbar #userProfileContainer,
+        .user-profile-container,
+        #userProfileContainer,
+        .desktop-only-profile,
+        .profile-icon-btn,
+        .nav-user-icon-btn,
+        #profileBadgeToggle,
+        #headerLoginBtn {
+          display: none !important;
+          visibility: hidden !important;
+          pointer-events: none !important;
+          opacity: 0 !important;
+          width: 0 !important;
+          height: 0 !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          border: none !important;
+          overflow: hidden !important;
+        }
+      }
+    </style>
   </head>
 
 <body class="view-home">
@@ -535,7 +561,7 @@
                 </button>
 
                 <!-- User Auth Badge / Profile -->
-                <div class="user-profile-container" id="userProfileContainer">
+                <div class="user-profile-container desktop-only-profile" id="userProfileContainer">
                     <!-- Populated by JS -->
                 </div>
             </div>
