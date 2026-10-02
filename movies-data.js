@@ -29,6 +29,31 @@ window._MOVIES_DATA = [
     seasons: []
   },
   {
+    title: "The Uprising",
+    type: "Movie",
+    year: 2026,
+    rating: "6.3",
+    age: "R",
+    duration: "1h 37m",
+    genres: [
+      "Drama",
+      "History",
+      "Thriller"
+    ],
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/4YyuSadBoc5k6krj0REcYH15DXG.jpg",
+    videoUrl: "977942",
+    trailerUrl: "https://youtu.be/ZVkrhHebz1Q?si=AnHMREdvzSWpfQYL",
+    overview: "Set against the backdrop of extreme social inequality and industrial exploitation, a passionate and idealistic labor leader sparks a fierce rebellion among the desperate working class. As the grassroots movement rapidly gains momentum and threatens the established order, he must navigate dangerous political betrayals, internal divisions, and violent crackdowns by the ruling elite to secure a better future for his people.",
+    overviewKurdish: "لە سەردەمێکی پڕ لە نادادپەروەریی کۆمەڵایەتی و چەوساندنەوەی پیشەسازیدا، سەرکردەیەکی کرێکاریی دڵسۆز و خاوەن پرەنسیپ شۆڕشێکی گەورە و توند لە نێوان چینی کرێکاراندا بەرپا دەکات. لەگەڵ فراوانبوون و بەهێزبوونی بزووتنەوەکە کە هەڕەشە لە دەسەڵاتداران دەکات، ئەم سەرکردەیە دەبێت ڕووبەڕووی خیانەتی سیاسی، دووبەرەکیی ناوخۆیی و سەرکوتکردنی توندوتیژانە ببێتەوە بۆ مسۆگەرکردنی داهاتوویەکی باشتر بۆ گەلەکەی.",
+    director: "David Mackenzie",
+    cast: ["Andrew Garfield, Claire Foy, Harris Dickinson, Stephen Graham, Erin Kellyman"],
+    trending: true,
+    featured: true,
+    is4k: false,
+    seasons: []
+  },
+  {
     title: "Unabomber",
     type: "Movie",
     year: 2026,
