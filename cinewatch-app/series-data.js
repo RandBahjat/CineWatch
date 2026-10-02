@@ -12,7 +12,7 @@ window._SERIES_DATA = [
     "duration": "50m",
     "genres": [
       "Drama",
-      "Crime"
+      "History"
     ],
     "poster": "https://image.tmdb.org/t/p/original/57XScX1aYtKi1LvHYFQLPUxVhTG.jpg",
     "backdrop": "https://image.tmdb.org/t/p/original/gaew60NXUxok3Vmls7gkAT7lYW0.jpg",
