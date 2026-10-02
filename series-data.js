@@ -17,7 +17,7 @@ window._SERIES_DATA = [
     "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/axdUor6gLMTrrB1UF4Qfy0TTSyX.jpg",
     "backdrop": "https://image.tmdb.org/t/p/original/70RZX7kNjA0Qjn6HigB1oMvFJ8R.jpg",
     "videoUrl": "258165",
-    "trailerUrl": "https://youtu.be/gYTzF1vna40",
+    "trailerUrl": "https://youtu.be/M9NWvGZViCg?si=BzdvFCv7cFVe08f6",
     "overview": "Trapped in a cruel Victorian-era household, Lizzie Borden kills her parents in a gory ax murder that shocks the nation.",
     "overviewKurdish": "لیزی بۆردن، کە لە ماڵێکی دڵڕەقی سەردەمی ڤیکتۆریادا دەژی، دایک و باوکی بە شێوەیەکی دڕندانە بە تەور دەکوژێت کە هەموو وڵات تووشی شۆک دەکات.",
     "director": "Ian Brennan, Ryan Murphy",
