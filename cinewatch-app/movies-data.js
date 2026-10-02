@@ -14,7 +14,7 @@ window._MOVIES_DATA = [
       "Drama",
       "Mystery",
       "Thriller",
-      "Psy"
+      "Psychological"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/4YyuSadBoc5k6krj0REcYH15DXG.jpg",
