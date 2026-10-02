@@ -818,8 +818,6 @@ function setupHeroBanner() {
         <div class="hero-content">
             <h1 class="hero-title notranslate" translate="no">${movie.title}</h1>
             <div class="hero-meta">
-                <span class="hero-slide-badge notranslate" translate="no">${formatNumber((idx + 1).toString().padStart(2, '0'))} / ${formatNumber(featured.length.toString().padStart(2, '0'))}</span>
-                <span class="meta-dot">&bull;</span>
                 <span class="meta-rating notranslate" translate="no"><span class="star-icon">&#9733;</span> ${formatRating(movie.rating)}</span>
                 <span class="meta-dot">&bull;</span>
                 <span class="meta-year notranslate" translate="no">${formatNumber(movie.year)}</span>
