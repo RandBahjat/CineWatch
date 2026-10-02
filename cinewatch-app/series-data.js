@@ -15,7 +15,7 @@ window._SERIES_DATA = [
       "History"
     ],
     "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/axdUor6gLMTrrB1UF4Qfy0TTSyX.jpg",
-    "backdrop": "https://image.tmdb.org/t/p/original/gaew60NXUxok3Vmls7gkAT7lYW0.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/70RZX7kNjA0Qjn6HigB1oMvFJ8R.jpg",
     "videoUrl": "299939",
     "trailerUrl": "https://youtu.be/gYTzF1vna40",
     "overview": "Trapped in a cruel Victorian-era household, Lizzie Borden kills her parents in a gory ax murder that shocks the nation.",
