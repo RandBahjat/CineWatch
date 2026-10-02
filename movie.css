@@ -4851,11 +4851,11 @@ body.rtl-layout .details-back-btn svg {
   }
 
   .movie-card {
-    flex: 0 0 160px;
+    flex: 0 0 195px;
   }
 
   .continue-card {
-    flex: 0 0 240px;
+    flex: 0 0 270px;
   }
 
   .carousel-nav {
@@ -4868,7 +4868,7 @@ body.rtl-layout .details-back-btn svg {
   }
 
   .movie-card {
-    min-width: 130px;
+    min-width: 180px;
   }
 
   /* ==========================================
@@ -5450,11 +5450,11 @@ body.rtl-layout .details-back-btn svg {
   }
 
   .movie-card {
-    flex: 0 0 130px;
+    flex: 0 0 172px;
   }
 
   .continue-card {
-    flex: 0 0 200px;
+    flex: 0 0 240px;
   }
 
   .movies-grid, .browse-grid {
@@ -9065,7 +9065,7 @@ body.rtl-layout .account-side-panel.open {
     padding-left: 10px;
   }
   .top10-track .movie-card {
-    flex: 0 0 130px;
+    flex: 0 0 172px;
   }
   .top10-rank-badge {
     width: 28px;
@@ -13200,5 +13200,69 @@ body.cw-ads-hidden script[src*="highrevenueformat"] {
     padding: 0 !important;
     border: none !important;
     overflow: hidden !important;
+  }
+}
+
+/* =======================================================
+   CINEMATIC MOBILE POSTER SIZING ENHANCEMENT (Bigger & Richer)
+   ======================================================= */
+@media (max-width: 768px) {
+  .carousel-track:not(.top10-track) .movie-card,
+  #trendingMoviesTrack .movie-card,
+  #trendingSeriesTrack .movie-card,
+  #popularMoviesTrack .movie-card,
+  #popularSeriesTrack .movie-card,
+  #upcomingMoviesTrack .movie-card,
+  #becauseYouWatchedTrack .movie-card,
+  #watchlistHomeTrack .movie-card {
+    flex: 0 0 195px !important;
+    width: 195px !important;
+    min-width: 180px !important;
+    max-width: 215px !important;
+  }
+
+  .card-title {
+    font-size: 0.96rem !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  .card-meta {
+    font-size: 0.82rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-track:not(.top10-track) .movie-card,
+  #trendingMoviesTrack .movie-card,
+  #trendingSeriesTrack .movie-card,
+  #popularMoviesTrack .movie-card,
+  #popularSeriesTrack .movie-card,
+  #upcomingMoviesTrack .movie-card,
+  #becauseYouWatchedTrack .movie-card,
+  #watchlistHomeTrack .movie-card {
+    flex: 0 0 172px !important;
+    width: 172px !important;
+    min-width: 162px !important;
+    max-width: 185px !important;
+  }
+
+  .top10-track .movie-card {
+    flex: 0 0 165px !important;
+    width: 165px !important;
+    min-width: 155px !important;
+  }
+
+  .card-title {
+    font-size: 0.92rem !important;
+    font-weight: 600 !important;
+  }
+
+  .card-meta {
+    font-size: 0.78rem !important;
+  }
+
+  .top10-rank-num {
+    font-size: 1.45rem !important;
   }
 }
