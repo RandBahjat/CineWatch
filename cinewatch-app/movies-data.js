@@ -16,7 +16,7 @@ window._MOVIES_DATA = [
       "Thriller",
       "Psychological"
     ],
-    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
+    poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dGSsPovyUW5XVekXcy7F2GyhTEh.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/4YyuSadBoc5k6krj0REcYH15DXG.jpg",
     videoUrl: "977942",
     trailerUrl: "https://youtu.be/ZVkrhHebz1Q?si=AnHMREdvzSWpfQYL",
