@@ -17,7 +17,7 @@ window._MOVIES_DATA = [
       "Psychological"
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/dGSsPovyUW5XVekXcy7F2GyhTEh.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/4YyuSadBoc5k6krj0REcYH15DXG.jpg",
+    backdrop: "https://image.tmdb.org/t/p/original/3BoHXmGAfC2qO4wnCpMYV0BzpHD.jpg",
     videoUrl: "977942",
     trailerUrl: "https://youtu.be/ZVkrhHebz1Q?si=AnHMREdvzSWpfQYL",
     overview: "Set against the backdrop of extreme social inequality and industrial exploitation, a passionate and idealistic labor leader sparks a fierce rebellion among the desperate working class. As the grassroots movement rapidly gains momentum and threatens the established order, he must navigate dangerous political betrayals, internal divisions, and violent crackdowns by the ruling elite to secure a better future for his people.",
