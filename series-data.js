@@ -4,7 +4,7 @@
 
 window._SERIES_DATA = [
   {
-    "title": "Monster: The Lizzie Borden Story",
+    "title": "East of Eden",
     "type": "TV Show",
     "year": 2026,
     "rating": "7.5",
