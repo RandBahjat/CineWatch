@@ -33,7 +33,7 @@ window._SERIES_DATA = [
         "episodes": [
           {
             "episode": 1,
-            "title": "Bloodbath",
+            "title": "Timshel",
             "airDate": "2026-09-17",
             "rating": 7.5
           },
