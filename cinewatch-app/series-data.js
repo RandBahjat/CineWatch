@@ -19,7 +19,7 @@ window._SERIES_DATA = [
     "videoUrl": "258165",
     "trailerUrl": "https://youtu.be/M9NWvGZViCg?si=BzdvFCv7cFVe08f6",
     "overview": "Set against the rich backdrop of California's Salinas Valley in the early 20th century, a multi-generational epic unfolds exploring the deep-seated rivalries, secrets, and moral struggles of two families. As two estranged brothers desperately vie for the affection and approval of their deeply religious father, the dark shadow and buried truths of their long-lost mother threaten to fracture the family forever.",
-    "overviewKurdish": "لیزی بۆردن، کە لە ماڵێکی دڵڕەقی سەردەمی ڤیکتۆریادا دەژی، دایک و باوکی بە شێوەیەکی دڕندانە بە تەور دەکوژێت کە هەموو وڵات تووشی شۆک دەکات.",
+    "overviewKurdish": "لە دۆڵی سالیناسی کالیفۆرنیا لە سەرەتاکانی سەدەی بیستەمدا، زنجیرەیەکی درامیی مەزن باس لە ڕکابەری و ململانێی نێوان دوو خێزان دەکات لە ڕێگەی نەوە جیاوازەکانەوە. لە کاتێکدا دوو برا بە بەردەوامی لە هەوڵی بەدەستهێنانی سۆز و ڕەزامەندیی باوکیانن کە پیاوێکی باوەڕدارە، دەرکەوتنی نهێنییە تاریکەکان و ڕابردووی شاردراوەی دایکیان هەڕەشە لە لەبەریەکهەڵوەشاندنەوەی تەواوەتیی خێزانەکە دەکات.",
     "director": "Ian Brennan, Ryan Murphy",
     "cast": [
       "Ella Beatty, Vicky Krieps, Sarah Paulson, Charlie Hunnam, Rebecca Hall, Billie Lourd, Jessica Barden"
