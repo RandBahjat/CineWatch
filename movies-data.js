@@ -7,7 +7,7 @@ window._MOVIES_DATA = [
     title: "Verity",
     type: "Movie",
     year: 2026,
-    rating: "6.3",
+    rating: "6.1",
     age: "R",
     duration: "1h 37m",
     genres: [
