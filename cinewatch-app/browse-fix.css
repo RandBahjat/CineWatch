@@ -714,3 +714,170 @@
 
 
 
+
+/* ==========================================================================
+   Hero Slide Counter & Slide Indicator (Big Slide)
+   ========================================================================== */
+.hero-slide-counter {
+  position: absolute !important;
+  right: 2.5rem !important;
+  bottom: 2rem !important;
+  z-index: 15 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+  background: rgba(14, 18, 27, 0.75) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  padding: 5px 9px !important;
+  border-radius: 30px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.55), 0 0 1px 1px rgba(255, 255, 255, 0.08) inset !important;
+  user-select: none !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.hero-slide-counter:hover {
+  background: rgba(20, 26, 38, 0.9) !important;
+  border-color: rgba(255, 255, 255, 0.32) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.65) !important;
+}
+
+.hero-counter-btn {
+  background: transparent !important;
+  border: none !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  width: 26px !important;
+  height: 26px !important;
+  border-radius: 50% !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  padding: 0 !important;
+  transition: all 0.2s ease !important;
+}
+
+.hero-counter-btn:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+  transform: scale(1.1) !important;
+}
+
+.hero-counter-btn:active {
+  transform: scale(0.92) !important;
+}
+
+.hero-counter-btn svg {
+  display: block !important;
+  pointer-events: none !important;
+}
+
+.hero-counter-display {
+  display: inline-flex !important;
+  align-items: center !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  line-height: 1 !important;
+  padding: 0 3px !important;
+}
+
+.hero-current-slide {
+  font-size: 0.95rem !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  letter-spacing: 0.5px !important;
+  min-width: 22px !important;
+  text-align: center !important;
+}
+
+.hero-counter-sep {
+  font-size: 0.78rem !important;
+  font-weight: 400 !important;
+  color: rgba(255, 255, 255, 0.38) !important;
+  margin: 0 5px !important;
+}
+
+.hero-total-slides {
+  font-size: 0.84rem !important;
+  font-weight: 600 !important;
+  color: rgba(255, 255, 255, 0.68) !important;
+  letter-spacing: 0.5px !important;
+  min-width: 22px !important;
+  text-align: center !important;
+}
+
+/* In-slide Meta Badge */
+.hero-slide-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 3px !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 0.74rem !important;
+  padding: 2px 6.5px !important;
+  border-radius: 4px !important;
+  letter-spacing: 0.4px !important;
+  line-height: 1.2 !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* RTL Layout */
+body.rtl-layout .hero-slide-counter {
+  right: auto !important;
+  left: 2.5rem !important;
+  direction: ltr !important;
+}
+
+/* Mobile Screen Specific Positioning */
+@media (max-width: 768px) {
+  .hero-slide-counter {
+    right: 1.2rem !important;
+    bottom: 1.6rem !important;
+    padding: 4px 7px !important;
+    gap: 5px !important;
+  }
+  .hero-counter-btn {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .hero-counter-btn svg {
+    width: 12px !important;
+    height: 12px !important;
+  }
+  .hero-current-slide {
+    font-size: 0.85rem !important;
+    min-width: 18px !important;
+  }
+  .hero-counter-sep {
+    font-size: 0.72rem !important;
+    margin: 0 4px !important;
+  }
+  .hero-total-slides {
+    font-size: 0.78rem !important;
+    min-width: 18px !important;
+  }
+  .hero-slide-badge {
+    font-size: 0.68rem !important;
+    padding: 1.5px 5.5px !important;
+  }
+  body.rtl-layout .hero-slide-counter {
+    left: 1.2rem !important;
+    right: auto !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-slide-counter {
+    right: 0.9rem !important;
+    bottom: 1.2rem !important;
+  }
+  body.rtl-layout .hero-slide-counter {
+    left: 0.9rem !important;
+    right: auto !important;
+  }
+}
