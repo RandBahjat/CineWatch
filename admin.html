@@ -307,9 +307,9 @@
 
     // Twilio SMS Integration
     function loadTwilioSettings() {
-      const sid = localStorage.getItem('tw_account_sid') || 'AC6df9f65f988b401630fe3807e6aa8d46';
-      const token = localStorage.getItem('tw_auth_token') || '6c4772223874fd181d4e9ee2773c89c3';
-      const from = localStorage.getItem('tw_from_phone') || '+17372508034';
+      const sid = localStorage.getItem('tw_account_sid') || '';
+      const token = localStorage.getItem('tw_auth_token') || '';
+      const from = localStorage.getItem('tw_from_phone') || '';
       const msg = localStorage.getItem('tw_msg_template') || '🎬 CineWatch: Your VIP subscription has been approved! Enjoy unlimited streaming. Thank you for your support!';
       const denyMsg = localStorage.getItem('tw_deny_template') || '🎬 CineWatch: Your VIP payment request could not be verified and was denied. Please contact support or check your reference details.';
 
@@ -342,9 +342,9 @@
     }
 
     async function sendTwilioSms(toPhone, customMsg) {
-      const sid = localStorage.getItem('tw_account_sid') || 'AC6df9f65f988b401630fe3807e6aa8d46';
-      const token = localStorage.getItem('tw_auth_token') || '6c4772223874fd181d4e9ee2773c89c3';
-      const from = localStorage.getItem('tw_from_phone') || '+17372508034';
+      const sid = localStorage.getItem('tw_account_sid') || '';
+      const token = localStorage.getItem('tw_auth_token') || '';
+      const from = localStorage.getItem('tw_from_phone') || '';
       const msg = customMsg || localStorage.getItem('tw_msg_template') || '🎬 CineWatch: Your VIP subscription has been approved!';
 
       if (!sid || !token || !from) {

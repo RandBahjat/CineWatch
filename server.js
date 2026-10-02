@@ -75,9 +75,9 @@ const server = http.createServer((req, res) => {
       req.on('end', async () => {
         try {
           const payload = JSON.parse(body || '{}');
-          const sid = payload.accountSid || 'AC6df9f65f988b401630fe3807e6aa8d46';
-          const token = payload.authToken || '6c4772223874fd181d4e9ee2773c89c3';
-          const from = payload.from || '+17372508034';
+          const sid = payload.accountSid || process.env.TWILIO_ACCOUNT_SID || '';
+          const token = payload.authToken || process.env.TWILIO_AUTH_TOKEN || '';
+          const from = payload.from || process.env.TWILIO_FROM_PHONE || '';
           const to = payload.to;
           const msgBody = payload.body || '🎬 CineWatch: Your VIP subscription has been approved!';
 
