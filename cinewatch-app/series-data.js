@@ -22,7 +22,7 @@ window._SERIES_DATA = [
     "overviewKurdish": "لە دۆڵی سالیناسی کالیفۆرنیا لە سەرەتاکانی سەدەی بیستەمدا، زنجیرەیەکی درامیی مەزن باس لە ڕکابەری و ململانێی نێوان دوو خێزان دەکات لە ڕێگەی نەوە جیاوازەکانەوە. لە کاتێکدا دوو برا بە بەردەوامی لە هەوڵی بەدەستهێنانی سۆز و ڕەزامەندیی باوکیانن کە پیاوێکی باوەڕدارە، دەرکەوتنی نهێنییە تاریکەکان و ڕابردووی شاردراوەی دایکیان هەڕەشە لە لەبەریەکهەڵوەشاندنەوەی تەواوەتیی خێزانەکە دەکات.",
     "director": "Garth Davis",
     "cast": [
-      "Ella Beatty, Vicky Krieps, Sarah Paulson, Charlie Hunnam, Rebecca Hall, Billie Lourd, Jessica Barden"
+      "Florence Pugh, Christopher Abbott, Mike Faist, Hoon Lee, Tracy Letts, Martha Plimpton"
     ],
     "trending": true,
     "featured": false,
