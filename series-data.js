@@ -14,7 +14,7 @@ window._SERIES_DATA = [
       "Drama",
       "History"
     ],
-    "poster": "https://image.tmdb.org/t/p/original/57XScX1aYtKi1LvHYFQLPUxVhTG.jpg",
+    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/axdUor6gLMTrrB1UF4Qfy0TTSyX.jpg",
     "backdrop": "https://image.tmdb.org/t/p/original/gaew60NXUxok3Vmls7gkAT7lYW0.jpg",
     "videoUrl": "299939",
     "trailerUrl": "https://youtu.be/gYTzF1vna40",
