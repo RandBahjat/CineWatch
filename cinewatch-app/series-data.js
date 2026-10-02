@@ -18,7 +18,7 @@ window._SERIES_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/original/70RZX7kNjA0Qjn6HigB1oMvFJ8R.jpg",
     "videoUrl": "258165",
     "trailerUrl": "https://youtu.be/M9NWvGZViCg?si=BzdvFCv7cFVe08f6",
-    "overview": "Trapped in a cruel Victorian-era household, Lizzie Borden kills her parents in a gory ax murder that shocks the nation.",
+    "overview": "Set against the rich backdrop of California's Salinas Valley in the early 20th century, a multi-generational epic unfolds exploring the deep-seated rivalries, secrets, and moral struggles of two families. As two estranged brothers desperately vie for the affection and approval of their deeply religious father, the dark shadow and buried truths of their long-lost mother threaten to fracture the family forever.",
     "overviewKurdish": "لیزی بۆردن، کە لە ماڵێکی دڵڕەقی سەردەمی ڤیکتۆریادا دەژی، دایک و باوکی بە شێوەیەکی دڕندانە بە تەور دەکوژێت کە هەموو وڵات تووشی شۆک دەکات.",
     "director": "Ian Brennan, Ryan Murphy",
     "cast": [
@@ -70201,4 +70201,10097 @@ window._SERIES_DATA = [
             "rating": 8.1
           },
           {
-            
+            "episode": 7,
+            "title": "AKA Top Shelf Perverts",
+            "airDate": "2015-11-20",
+            "rating": 8.4
+          },
+          {
+            "episode": 8,
+            "title": "AKA WWJD?",
+            "airDate": "2015-11-20",
+            "rating": 8.8
+          },
+          {
+            "episode": 9,
+            "title": "AKA Sin Bin",
+            "airDate": "2015-11-20",
+            "rating": 9
+          },
+          {
+            "episode": 10,
+            "title": "AKA 1,000 Cuts",
+            "airDate": "2015-11-20",
+            "rating": 8.6
+          },
+          {
+            "episode": 11,
+            "title": "AKA I've Got the Blues",
+            "airDate": "2015-11-20",
+            "rating": 7.9
+          },
+          {
+            "episode": 12,
+            "title": "AKA Take a Bloody Number",
+            "airDate": "2015-11-20",
+            "rating": 8.3
+          },
+          {
+            "episode": 13,
+            "title": "AKA Smile",
+            "airDate": "2015-11-20",
+            "rating": 8.6
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "AKA Start at the Beginning",
+            "airDate": "2018-03-08",
+            "rating": 7.4
+          },
+          {
+            "episode": 2,
+            "title": "AKA Freak Accident",
+            "airDate": "2018-03-08",
+            "rating": 7.3
+          },
+          {
+            "episode": 3,
+            "title": "AKA Sole Survivor",
+            "airDate": "2018-03-08",
+            "rating": 7.6
+          },
+          {
+            "episode": 4,
+            "title": "AKA God Help the Hobo",
+            "airDate": "2018-03-08",
+            "rating": 7.6
+          },
+          {
+            "episode": 5,
+            "title": "AKA The Octopus",
+            "airDate": "2018-03-08",
+            "rating": 7.7
+          },
+          {
+            "episode": 6,
+            "title": "AKA Facetime",
+            "airDate": "2018-03-08",
+            "rating": 7.6
+          },
+          {
+            "episode": 7,
+            "title": "AKA I Want Your Cray Cray",
+            "airDate": "2018-03-08",
+            "rating": 8.2
+          },
+          {
+            "episode": 8,
+            "title": "AKA Ain't We Got Fun",
+            "airDate": "2018-03-08",
+            "rating": 7.5
+          },
+          {
+            "episode": 9,
+            "title": "AKA Shark in the Bathtub, Monster in the Bed",
+            "airDate": "2018-03-08",
+            "rating": 7.6
+          },
+          {
+            "episode": 10,
+            "title": "AKA Pork Chop",
+            "airDate": "2018-03-08",
+            "rating": 7.5
+          },
+          {
+            "episode": 11,
+            "title": "AKA Three Lives and Counting",
+            "airDate": "2018-03-08",
+            "rating": 8.2
+          },
+          {
+            "episode": 12,
+            "title": "AKA Pray for My Patsy",
+            "airDate": "2018-03-08",
+            "rating": 7.6
+          },
+          {
+            "episode": 13,
+            "title": "AKA Playland",
+            "airDate": "2018-03-08",
+            "rating": 7.7
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "A.K.A The Perfect Burger",
+            "airDate": "2019-06-14",
+            "rating": 7.4
+          },
+          {
+            "episode": 2,
+            "title": "A.K.A You're Welcome",
+            "airDate": "2019-06-14",
+            "rating": 7.1
+          },
+          {
+            "episode": 3,
+            "title": "A.K.A I Have No Spleen",
+            "airDate": "2019-06-14",
+            "rating": 7.2
+          },
+          {
+            "episode": 4,
+            "title": "A.K.A Customer Service is Standing By",
+            "airDate": "2019-06-14",
+            "rating": 7.5
+          },
+          {
+            "episode": 5,
+            "title": "A.K.A I Wish",
+            "airDate": "2019-06-14",
+            "rating": 7.6
+          },
+          {
+            "episode": 6,
+            "title": "A.K.A Sorry Face",
+            "airDate": "2019-06-14",
+            "rating": 7.6
+          },
+          {
+            "episode": 7,
+            "title": "A.K.A The Double Half-Wappinger",
+            "airDate": "2019-06-14",
+            "rating": 8
+          },
+          {
+            "episode": 8,
+            "title": "A.K.A Camera Friendly",
+            "airDate": "2019-06-14",
+            "rating": 8.3
+          },
+          {
+            "episode": 9,
+            "title": "A.K.A I Did Something Today",
+            "airDate": "2019-06-14",
+            "rating": 7.5
+          },
+          {
+            "episode": 10,
+            "title": "A.K.A Hero Pants",
+            "airDate": "2019-06-14",
+            "rating": 7.6
+          },
+          {
+            "episode": 11,
+            "title": "A.K.A Hellcat",
+            "airDate": "2019-06-14",
+            "rating": 7.5
+          },
+          {
+            "episode": 12,
+            "title": "A.K.A A Lotta Worms",
+            "airDate": "2019-06-14",
+            "rating": 8.3
+          },
+          {
+            "episode": 13,
+            "title": "A.K.A Everything",
+            "airDate": "2019-06-14",
+            "rating": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The 100",
+    "type": "TV Show",
+    "year": 2014,
+    "rating": 7.5,
+    "age": "TV-14",
+    "duration": "43m",
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Action"
+    ],
+    "poster": "https://image.tmdb.org/t/p/original/aAI6McsjhwggmGdZwOylXraoil.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/muqoT0YgutI02txKRDV8FmuLF9E.jpg",
+    "videoUrl": "48866",
+    "trailerUrl": "",
+    "overview": "100 years in the future, when the Earth has been abandoned due to radioactivity, the last surviving humans live on an ark orbiting the planet â€” but the ark won't last forever. So the repressive regime picks 100 expendable juvenile delinquents to send down to Earth to see if the planet is still habitable.",
+    "overviewKurdish": "",
+    "director": "Jason Rothenberg",
+    "cast": [
+      "Eliza Taylor, Marie Avgeropoulos, Bob Morley, Lindsey Morgan, Richard Harmon"
+    ],
+    "trending": false,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Pilot",
+            "airDate": "2014-03-19",
+            "rating": 7.3
+          },
+          {
+            "episode": 2,
+            "title": "Earth Skills",
+            "airDate": "2014-03-26",
+            "rating": 7.3
+          },
+          {
+            "episode": 3,
+            "title": "Earth Kills",
+            "airDate": "2014-04-02",
+            "rating": 7.7
+          },
+          {
+            "episode": 4,
+            "title": "Murphy's Law",
+            "airDate": "2014-04-09",
+            "rating": 7.7
+          },
+          {
+            "episode": 5,
+            "title": "Twilight's Last Gleaming",
+            "airDate": "2014-04-16",
+            "rating": 8
+          },
+          {
+            "episode": 6,
+            "title": "His Sister's Keeper",
+            "airDate": "2014-04-23",
+            "rating": 7.8
+          },
+          {
+            "episode": 7,
+            "title": "Contents Under Pressure",
+            "airDate": "2014-04-30",
+            "rating": 8
+          },
+          {
+            "episode": 8,
+            "title": "Day Trip",
+            "airDate": "2014-05-07",
+            "rating": 7.7
+          },
+          {
+            "episode": 9,
+            "title": "Unity Day",
+            "airDate": "2014-05-14",
+            "rating": 8.1
+          },
+          {
+            "episode": 10,
+            "title": "I Am Become Death",
+            "airDate": "2014-05-21",
+            "rating": 8.1
+          },
+          {
+            "episode": 11,
+            "title": "The Calm",
+            "airDate": "2014-05-28",
+            "rating": 7.8
+          },
+          {
+            "episode": 12,
+            "title": "We Are Grounders - Part I",
+            "airDate": "2014-06-04",
+            "rating": 8.3
+          },
+          {
+            "episode": 13,
+            "title": "We Are Grounders - Part II",
+            "airDate": "2014-06-11",
+            "rating": 8.8
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The 48",
+            "airDate": "2014-10-22",
+            "rating": 8.2
+          },
+          {
+            "episode": 2,
+            "title": "Inclement Weather",
+            "airDate": "2014-10-29",
+            "rating": 8.1
+          },
+          {
+            "episode": 3,
+            "title": "Reapercussions",
+            "airDate": "2014-11-05",
+            "rating": 8.1
+          },
+          {
+            "episode": 4,
+            "title": "Many Happy Returns",
+            "airDate": "2014-11-12",
+            "rating": 8.1
+          },
+          {
+            "episode": 5,
+            "title": "Human Trials",
+            "airDate": "2014-11-19",
+            "rating": 8.3
+          },
+          {
+            "episode": 6,
+            "title": "Fog of War",
+            "airDate": "2014-12-03",
+            "rating": 8.2
+          },
+          {
+            "episode": 7,
+            "title": "Long Into an Abyss",
+            "airDate": "2014-12-10",
+            "rating": 8.4
+          },
+          {
+            "episode": 8,
+            "title": "Spacewalker",
+            "airDate": "2014-12-17",
+            "rating": 8.8
+          },
+          {
+            "episode": 9,
+            "title": "Remember Me",
+            "airDate": "2015-01-21",
+            "rating": 8.1
+          },
+          {
+            "episode": 10,
+            "title": "Survival of the Fittest",
+            "airDate": "2015-01-28",
+            "rating": 8.1
+          },
+          {
+            "episode": 11,
+            "title": "Coup de GrAce",
+            "airDate": "2015-02-04",
+            "rating": 8.6
+          },
+          {
+            "episode": 12,
+            "title": "Rubicon",
+            "airDate": "2015-02-11",
+            "rating": 8.4
+          },
+          {
+            "episode": 13,
+            "title": "Resurrection",
+            "airDate": "2015-02-18",
+            "rating": 8.5
+          },
+          {
+            "episode": 14,
+            "title": "Bodyguard of Lies",
+            "airDate": "2015-02-25",
+            "rating": 8.7
+          },
+          {
+            "episode": 15,
+            "title": "Blood Must Have Blood, Part One",
+            "airDate": "2015-03-04",
+            "rating": 8.7
+          },
+          {
+            "episode": 16,
+            "title": "Blood Must Have Blood, Part Two",
+            "airDate": "2015-03-11",
+            "rating": 9.2
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Wanheda: Part One",
+            "airDate": "2016-01-21",
+            "rating": 7.8
+          },
+          {
+            "episode": 2,
+            "title": "Wanheda: Part Two",
+            "airDate": "2016-01-28",
+            "rating": 8.1
+          },
+          {
+            "episode": 3,
+            "title": "Ye Who Enter Here",
+            "airDate": "2016-02-04",
+            "rating": 8.6
+          },
+          {
+            "episode": 4,
+            "title": "Watch the Thrones",
+            "airDate": "2016-02-11",
+            "rating": 8.4
+          },
+          {
+            "episode": 5,
+            "title": "Hakeldama",
+            "airDate": "2016-02-18",
+            "rating": 7.9
+          },
+          {
+            "episode": 6,
+            "title": "Bitter Harvest",
+            "airDate": "2016-02-25",
+            "rating": 8
+          },
+          {
+            "episode": 7,
+            "title": "Thirteen",
+            "airDate": "2016-03-03",
+            "rating": 6.9
+          },
+          {
+            "episode": 8,
+            "title": "Terms and Conditions",
+            "airDate": "2016-03-10",
+            "rating": 6.9
+          },
+          {
+            "episode": 9,
+            "title": "Stealing Fire",
+            "airDate": "2016-03-31",
+            "rating": 7.1
+          },
+          {
+            "episode": 10,
+            "title": "Fallen",
+            "airDate": "2016-04-07",
+            "rating": 7.2
+          },
+          {
+            "episode": 11,
+            "title": "Nevermore",
+            "airDate": "2016-04-14",
+            "rating": 7.6
+          },
+          {
+            "episode": 12,
+            "title": "Demons",
+            "airDate": "2016-04-21",
+            "rating": 7.2
+          },
+          {
+            "episode": 13,
+            "title": "Join or Die",
+            "airDate": "2016-04-28",
+            "rating": 7.5
+          },
+          {
+            "episode": 14,
+            "title": "Red Sky at Morning",
+            "airDate": "2016-05-05",
+            "rating": 7.5
+          },
+          {
+            "episode": 15,
+            "title": "Perverse Instantiation - Part One",
+            "airDate": "2016-05-12",
+            "rating": 7.7
+          },
+          {
+            "episode": 16,
+            "title": "Perverse Instantiation - Part Two",
+            "airDate": "2016-05-19",
+            "rating": 7.9
+          }
+        ]
+      },
+      {
+        "season": 4,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Echoes",
+            "airDate": "2017-02-01",
+            "rating": 7.6
+          },
+          {
+            "episode": 2,
+            "title": "Heavy Lies the Crown",
+            "airDate": "2017-02-08",
+            "rating": 7.6
+          },
+          {
+            "episode": 3,
+            "title": "The Four Horsemen",
+            "airDate": "2017-02-15",
+            "rating": 7.9
+          },
+          {
+            "episode": 4,
+            "title": "A Lie Guarded",
+            "airDate": "2017-02-22",
+            "rating": 7.9
+          },
+          {
+            "episode": 5,
+            "title": "The Tinder Box",
+            "airDate": "2017-03-01",
+            "rating": 8.1
+          },
+          {
+            "episode": 6,
+            "title": "We Will Rise",
+            "airDate": "2017-03-15",
+            "rating": 7.7
+          },
+          {
+            "episode": 7,
+            "title": "Gimme Shelter",
+            "airDate": "2017-03-22",
+            "rating": 7.7
+          },
+          {
+            "episode": 8,
+            "title": "God Complex",
+            "airDate": "2017-03-29",
+            "rating": 7.9
+          },
+          {
+            "episode": 9,
+            "title": "DNR",
+            "airDate": "2017-04-26",
+            "rating": 7.9
+          },
+          {
+            "episode": 10,
+            "title": "Die All, Die Merrily",
+            "airDate": "2017-05-03",
+            "rating": 9.1
+          },
+          {
+            "episode": 11,
+            "title": "The Other Side",
+            "airDate": "2017-05-10",
+            "rating": 8.1
+          },
+          {
+            "episode": 12,
+            "title": "The Chosen",
+            "airDate": "2017-05-17",
+            "rating": 8.6
+          },
+          {
+            "episode": 13,
+            "title": "Praimfaya",
+            "airDate": "2017-05-24",
+            "rating": 9.1
+          }
+        ]
+      },
+      {
+        "season": 5,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Eden",
+            "airDate": "2018-04-24",
+            "rating": 8.5
+          },
+          {
+            "episode": 2,
+            "title": "Red Queen",
+            "airDate": "2018-05-01",
+            "rating": 8.6
+          },
+          {
+            "episode": 3,
+            "title": "Sleeping Giants",
+            "airDate": "2018-05-08",
+            "rating": 8.8
+          },
+          {
+            "episode": 4,
+            "title": "Pandora's Box",
+            "airDate": "2018-05-15",
+            "rating": 8.4
+          },
+          {
+            "episode": 5,
+            "title": "Shifting Sands",
+            "airDate": "2018-05-22",
+            "rating": 8.1
+          },
+          {
+            "episode": 6,
+            "title": "Exit Wounds",
+            "airDate": "2018-06-05",
+            "rating": 8
+          },
+          {
+            "episode": 7,
+            "title": "Acceptable Losses",
+            "airDate": "2018-06-19",
+            "rating": 8
+          },
+          {
+            "episode": 8,
+            "title": "How We Get to Peace",
+            "airDate": "2018-06-26",
+            "rating": 8.3
+          },
+          {
+            "episode": 9,
+            "title": "Sic Semper Tyrannis",
+            "airDate": "2018-07-10",
+            "rating": 8.5
+          },
+          {
+            "episode": 10,
+            "title": "The Warriors Will",
+            "airDate": "2018-07-17",
+            "rating": 8
+          },
+          {
+            "episode": 11,
+            "title": "The Dark Year",
+            "airDate": "2018-07-24",
+            "rating": 8.2
+          },
+          {
+            "episode": 12,
+            "title": "Damocles - Part One",
+            "airDate": "2018-07-31",
+            "rating": 8.7
+          },
+          {
+            "episode": 13,
+            "title": "Damocles - Part Two",
+            "airDate": "2018-08-07",
+            "rating": 9.5
+          }
+        ]
+      },
+      {
+        "season": 6,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Sanctum",
+            "airDate": "2019-04-30",
+            "rating": 8.4
+          },
+          {
+            "episode": 2,
+            "title": "Red Sun Rising",
+            "airDate": "2019-05-07",
+            "rating": 8.3
+          },
+          {
+            "episode": 3,
+            "title": "The Children of Gabriel",
+            "airDate": "2019-05-14",
+            "rating": 8.1
+          },
+          {
+            "episode": 4,
+            "title": "The Face Behind the Glass",
+            "airDate": "2019-05-21",
+            "rating": 8.3
+          },
+          {
+            "episode": 5,
+            "title": "The Gospel of Josephine",
+            "airDate": "2019-05-28",
+            "rating": 8.5
+          },
+          {
+            "episode": 6,
+            "title": "Memento Mori",
+            "airDate": "2019-06-11",
+            "rating": 8
+          },
+          {
+            "episode": 7,
+            "title": "Nevermind",
+            "airDate": "2019-06-18",
+            "rating": 8.2
+          },
+          {
+            "episode": 8,
+            "title": "The Old Man and the Anomaly",
+            "airDate": "2019-06-25",
+            "rating": 8
+          },
+          {
+            "episode": 9,
+            "title": "What You Take With You",
+            "airDate": "2019-07-09",
+            "rating": 8.1
+          },
+          {
+            "episode": 10,
+            "title": "Matryoshka",
+            "airDate": "2019-07-16",
+            "rating": 8.2
+          },
+          {
+            "episode": 11,
+            "title": "Ashes to Ashes",
+            "airDate": "2019-07-23",
+            "rating": 8.1
+          },
+          {
+            "episode": 12,
+            "title": "Adjustment Protocol",
+            "airDate": "2019-07-30",
+            "rating": 8.5
+          },
+          {
+            "episode": 13,
+            "title": "The Blood of Sanctum",
+            "airDate": "2019-08-06",
+            "rating": 8.1
+          }
+        ]
+      },
+      {
+        "season": 7,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "From the Ashes",
+            "airDate": "2020-05-20",
+            "rating": 7.6
+          },
+          {
+            "episode": 2,
+            "title": "The Garden",
+            "airDate": "2020-05-27",
+            "rating": 8
+          },
+          {
+            "episode": 3,
+            "title": "False Gods",
+            "airDate": "2020-06-03",
+            "rating": 7.3
+          },
+          {
+            "episode": 4,
+            "title": "Hesperides",
+            "airDate": "2020-06-10",
+            "rating": 7.8
+          },
+          {
+            "episode": 5,
+            "title": "Welcome to Bardo",
+            "airDate": "2020-06-17",
+            "rating": 8.4
+          },
+          {
+            "episode": 6,
+            "title": "Nakara",
+            "airDate": "2020-06-24",
+            "rating": 7.5
+          },
+          {
+            "episode": 7,
+            "title": "The Queen's Gambit",
+            "airDate": "2020-07-01",
+            "rating": 7.5
+          },
+          {
+            "episode": 8,
+            "title": "Anaconda",
+            "airDate": "2020-07-08",
+            "rating": 9
+          },
+          {
+            "episode": 9,
+            "title": "The Flock",
+            "airDate": "2020-07-15",
+            "rating": 7.7
+          },
+          {
+            "episode": 10,
+            "title": "A Little Sacrifice",
+            "airDate": "2020-08-05",
+            "rating": 8
+          },
+          {
+            "episode": 11,
+            "title": "Etherea",
+            "airDate": "2020-08-12",
+            "rating": 7.5
+          },
+          {
+            "episode": 12,
+            "title": "The Stranger",
+            "airDate": "2020-08-19",
+            "rating": 7.6
+          },
+          {
+            "episode": 13,
+            "title": "Blood Giant",
+            "airDate": "2020-09-09",
+            "rating": 4.7
+          },
+          {
+            "episode": 14,
+            "title": "A Sort of Homecoming",
+            "airDate": "2020-09-16",
+            "rating": 6.1
+          },
+          {
+            "episode": 15,
+            "title": "The Dying of the Light",
+            "airDate": "2020-09-23",
+            "rating": 6.5
+          },
+          {
+            "episode": 16,
+            "title": "The Last War",
+            "airDate": "2020-09-30",
+            "rating": 6.7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Sherlock",
+    "type": "TV Show",
+    "year": 2010,
+    "rating": 9.1,
+    "age": "TV-14",
+    "duration": "1h 28m",
+    "genres": [
+      "Mystery",
+      "Crime",
+      "Drama"
+    ],
+    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/7WTsnHkbA0FaG6R9twfFde0I9hl.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/nAHr8BlhRgQbkqj3TiOEa2vSxzA.jpg",
+    "videoUrl": "19885",
+    "trailerUrl": "",
+    "overview": "A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.",
+    "director": "Steven Moffat, Mark Gatiss",
+    "cast": [
+      "Benedict Cumberbatch, Martin Freeman, Una Stubbs, Rupert Graves, Mark Gatiss"
+    ],
+    "trending": false,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "A Study in Pink",
+            "airDate": "2010-07-25",
+            "rating": 8.9
+          },
+          {
+            "episode": 2,
+            "title": "The Blind Banker",
+            "airDate": "2010-08-01",
+            "rating": 7.9
+          },
+          {
+            "episode": 3,
+            "title": "The Great Game",
+            "airDate": "2010-08-08",
+            "rating": 9
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "A Scandal in Belgravia",
+            "airDate": "2012-01-01",
+            "rating": 9.4
+          },
+          {
+            "episode": 2,
+            "title": "The Hounds of Baskerville",
+            "airDate": "2012-01-08",
+            "rating": 8.3
+          },
+          {
+            "episode": 3,
+            "title": "The Reichenbach Fall",
+            "airDate": "2012-01-15",
+            "rating": 9.6
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Empty Hearse",
+            "airDate": "2014-01-01",
+            "rating": 8.8
+          },
+          {
+            "episode": 2,
+            "title": "The Sign of Three",
+            "airDate": "2014-01-05",
+            "rating": 8.9
+          },
+          {
+            "episode": 3,
+            "title": "His Last Vow",
+            "airDate": "2014-01-12",
+            "rating": 9.2
+          }
+        ]
+      },
+      {
+        "season": 4,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Six Thatchers",
+            "airDate": "2017-01-01",
+            "rating": 7.6
+          },
+          {
+            "episode": 2,
+            "title": "The Lying Detective",
+            "airDate": "2017-01-08",
+            "rating": 9.1
+          },
+          {
+            "episode": 3,
+            "title": "The Final Problem",
+            "airDate": "2017-01-15",
+            "rating": 8.2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Marvel's Ultimate Spider-Man",
+    "type": "TV Show",
+    "year": 2012,
+    "rating": 7.2,
+    "age": "TV-Y7",
+    "duration": "22m",
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure",
+      "Sci-Fi",
+      "Fantasy",
+      "Kids"
+    ],
+    "poster": "https://image.tmdb.org/t/p/original/p276PkRJ5Wexq91DA5RkbxTYMDn.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/gXeCzYmCRBlpbbhhKrYM1ZpIDAA.jpg",
+    "videoUrl": "34391",
+    "trailerUrl": "",
+    "overview": "Peter Parker already Spider-Man one year, save lives, fight villain, but still young, still learn how be hero. Nick Fury offer him chance train become real hero, The Ultimate Spider-Man. Peter learn must team up with four other teen hero, fight evil together",
+    "director": "Stan Lee, Steve Ditko",
+    "cast": [
+      "Drake Bell, Ogie Banks, Chi McBride, Clark Gregg, Tom Kenny, J. K. Simmons"
+    ],
+    "trending": false,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Great Power",
+            "airDate": "2012-04-01",
+            "rating": 7.3
+          },
+          {
+            "episode": 2,
+            "title": "Great Responsibility",
+            "airDate": "2012-04-01",
+            "rating": 7.3
+          },
+          {
+            "episode": 3,
+            "title": "Doomed!",
+            "airDate": "2012-04-08",
+            "rating": 7.3
+          },
+          {
+            "episode": 4,
+            "title": "Venom",
+            "airDate": "2012-04-15",
+            "rating": 7.3
+          },
+          {
+            "episode": 5,
+            "title": "Flight of the Iron Spider",
+            "airDate": "2012-04-22",
+            "rating": 7.1
+          },
+          {
+            "episode": 6,
+            "title": "Why I Hate Gym",
+            "airDate": "2012-04-29",
+            "rating": 7.6
+          },
+          {
+            "episode": 7,
+            "title": "Exclusive",
+            "airDate": "2012-05-06",
+            "rating": 7.4
+          },
+          {
+            "episode": 8,
+            "title": "Back in Black",
+            "airDate": "2012-05-13",
+            "rating": 7.7
+          },
+          {
+            "episode": 9,
+            "title": "Field Trip",
+            "airDate": "2012-05-20",
+            "rating": 7.3
+          },
+          {
+            "episode": 10,
+            "title": "Freaky",
+            "airDate": "2012-06-17",
+            "rating": 8.2
+          },
+          {
+            "episode": 11,
+            "title": "Venomous",
+            "airDate": "2012-06-24",
+            "rating": 7.4
+          },
+          {
+            "episode": 12,
+            "title": "Me Time",
+            "airDate": "2012-07-01",
+            "rating": 7.5
+          },
+          {
+            "episode": 13,
+            "title": "Strange",
+            "airDate": "2012-07-08",
+            "rating": 7.7
+          },
+          {
+            "episode": 14,
+            "title": "Awesome",
+            "airDate": "2012-07-15",
+            "rating": 6.8
+          },
+          {
+            "episode": 15,
+            "title": "For Your Eye Only",
+            "airDate": "2012-07-22",
+            "rating": 7.3
+          },
+          {
+            "episode": 16,
+            "title": "Beetle Mania",
+            "airDate": "2012-07-29",
+            "rating": 6.9
+          },
+          {
+            "episode": 17,
+            "title": "Snow Day",
+            "airDate": "2012-08-05",
+            "rating": 7.2
+          },
+          {
+            "episode": 18,
+            "title": "Damage",
+            "airDate": "2012-08-19",
+            "rating": 6.8
+          },
+          {
+            "episode": 19,
+            "title": "Home Sick Hulk",
+            "airDate": "2012-09-09",
+            "rating": 7.3
+          },
+          {
+            "episode": 20,
+            "title": "Run Pig Run",
+            "airDate": "2012-09-16",
+            "rating": 6.8
+          },
+          {
+            "episode": 21,
+            "title": "I Am Spider-Man",
+            "airDate": "2012-09-23",
+            "rating": 6.9
+          },
+          {
+            "episode": 22,
+            "title": "The Iron Octopus",
+            "airDate": "2012-09-30",
+            "rating": 7.4
+          },
+          {
+            "episode": 23,
+            "title": "Not a Toy",
+            "airDate": "2012-10-07",
+            "rating": 7.4
+          },
+          {
+            "episode": 24,
+            "title": "The Attack of the Beetle",
+            "airDate": "2012-10-14",
+            "rating": 7.1
+          },
+          {
+            "episode": 25,
+            "title": "Revealed",
+            "airDate": "2012-10-28",
+            "rating": 7.9
+          },
+          {
+            "episode": 26,
+            "title": "The Rise of the Goblin",
+            "airDate": "2012-10-28",
+            "rating": 7.9
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Lizard",
+            "airDate": "2013-01-21",
+            "rating": 7.5
+          },
+          {
+            "episode": 2,
+            "title": "Electro",
+            "airDate": "2013-01-21",
+            "rating": 7.2
+          },
+          {
+            "episode": 3,
+            "title": "The Rhino",
+            "airDate": "2013-01-27",
+            "rating": 7.2
+          },
+          {
+            "episode": 4,
+            "title": "Kraven the Hunter",
+            "airDate": "2013-02-03",
+            "rating": 7.6
+          },
+          {
+            "episode": 5,
+            "title": "Hawkeye",
+            "airDate": "2013-02-10",
+            "rating": 7.1
+          },
+          {
+            "episode": 6,
+            "title": "The Sinister Six",
+            "airDate": "2013-02-17",
+            "rating": 7.5
+          },
+          {
+            "episode": 7,
+            "title": "Spidah-Man!",
+            "airDate": "2013-03-24",
+            "rating": 7
+          },
+          {
+            "episode": 8,
+            "title": "Carnage",
+            "airDate": "2013-03-31",
+            "rating": 7.7
+          },
+          {
+            "episode": 9,
+            "title": "House Arrest",
+            "airDate": "2013-04-07",
+            "rating": 6.6
+          },
+          {
+            "episode": 10,
+            "title": "The Man-Wolf",
+            "airDate": "2013-04-14",
+            "rating": 6.8
+          },
+          {
+            "episode": 11,
+            "title": "Swarm",
+            "airDate": "2013-06-09",
+            "rating": 6.8
+          },
+          {
+            "episode": 12,
+            "title": "Itsy Bitsy Spider-Man",
+            "airDate": "2013-06-09",
+            "rating": 6.8
+          },
+          {
+            "episode": 13,
+            "title": "Journey of the Iron Fist",
+            "airDate": "2013-06-16",
+            "rating": 7.7
+          },
+          {
+            "episode": 14,
+            "title": "The Incredible Spider-Hulk",
+            "airDate": "2013-06-23",
+            "rating": 7.5
+          },
+          {
+            "episode": 15,
+            "title": "Stan by Me",
+            "airDate": "2013-07-07",
+            "rating": 7.6
+          },
+          {
+            "episode": 16,
+            "title": "Ultimate Deadpool",
+            "airDate": "2013-07-14",
+            "rating": 8.4
+          },
+          {
+            "episode": 17,
+            "title": "Venom Bomb",
+            "airDate": "2013-07-21",
+            "rating": 7.7
+          },
+          {
+            "episode": 18,
+            "title": "Guardians of the Galaxy",
+            "airDate": "2013-07-28",
+            "rating": 8
+          },
+          {
+            "episode": 19,
+            "title": "The Parent Trap",
+            "airDate": "2013-08-04",
+            "rating": 7.6
+          },
+          {
+            "episode": 20,
+            "title": "Game Over",
+            "airDate": "2013-09-29",
+            "rating": 7.7
+          },
+          {
+            "episode": 21,
+            "title": "Blade",
+            "airDate": "2013-10-05",
+            "rating": 7.6
+          },
+          {
+            "episode": 22,
+            "title": "The Howling Commandos",
+            "airDate": "2013-10-05",
+            "rating": 7.5
+          },
+          {
+            "episode": 23,
+            "title": "Second Chance Hero",
+            "airDate": "2013-10-20",
+            "rating": 7.6
+          },
+          {
+            "episode": 24,
+            "title": "Sandman Returns",
+            "airDate": "2013-10-27",
+            "rating": 7.4
+          },
+          {
+            "episode": 25,
+            "title": "Return of the Sinister Six",
+            "airDate": "2013-11-03",
+            "rating": 7.7
+          },
+          {
+            "episode": 26,
+            "title": "Ultimate",
+            "airDate": "2013-11-10",
+            "rating": 7.9
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Return of the Guardians of the Galaxy",
+            "airDate": "2014-07-06",
+            "rating": 7.9
+          },
+          {
+            "episode": 2,
+            "title": "The Avenging Spider-Man, Part One",
+            "airDate": "2014-08-31",
+            "rating": 7.9
+          },
+          {
+            "episode": 3,
+            "title": "The Avenging Spider-Man, Part Two",
+            "airDate": "2014-08-31",
+            "rating": 7.8
+          },
+          {
+            "episode": 4,
+            "title": "Agent Venom",
+            "airDate": "2014-09-07",
+            "rating": 8.1
+          },
+          {
+            "episode": 5,
+            "title": "Cloak and Dagger",
+            "airDate": "2014-09-14",
+            "rating": 7.3
+          },
+          {
+            "episode": 6,
+            "title": "The Next Iron Spider",
+            "airDate": "2014-09-21",
+            "rating": 7.4
+          },
+          {
+            "episode": 7,
+            "title": "The Vulture",
+            "airDate": "2014-09-28",
+            "rating": 7.2
+          },
+          {
+            "episode": 8,
+            "title": "The Savage Spider-Man",
+            "airDate": "2014-10-07",
+            "rating": 7.5
+          },
+          {
+            "episode": 9,
+            "title": "Halloween Night at the Museum",
+            "airDate": "2014-10-10",
+            "rating": 8.5
+          },
+          {
+            "episode": 10,
+            "title": "New Warriors",
+            "airDate": "2014-10-14",
+            "rating": 8.2
+          },
+          {
+            "episode": 11,
+            "title": "Nightmare on Christmas",
+            "airDate": "2014-12-03",
+            "rating": 8.5
+          },
+          {
+            "episode": 12,
+            "title": "The Spider-Verse, Part One",
+            "airDate": "2015-03-05",
+            "rating": 8.4
+          },
+          {
+            "episode": 13,
+            "title": "The Spider-Verse, Part Two",
+            "airDate": "2015-03-12",
+            "rating": 7.6
+          },
+          {
+            "episode": 14,
+            "title": "The Spider-Verse, Part Three",
+            "airDate": "2015-03-19",
+            "rating": 7.1
+          },
+          {
+            "episode": 15,
+            "title": "The Spider-Verse, Part Four",
+            "airDate": "2015-03-26",
+            "rating": 7.1
+          },
+          {
+            "episode": 16,
+            "title": "S.H.I.E.L.D. Academy",
+            "airDate": "2015-07-07",
+            "rating": 6.7
+          },
+          {
+            "episode": 17,
+            "title": "Rampaging Rhino",
+            "airDate": "2015-07-14",
+            "rating": 6.8
+          },
+          {
+            "episode": 18,
+            "title": "Ant-Man",
+            "airDate": "2015-07-21",
+            "rating": 7.3
+          },
+          {
+            "episode": 19,
+            "title": "Burrito Run",
+            "airDate": "2015-07-28",
+            "rating": 7.1
+          },
+          {
+            "episode": 20,
+            "title": "Inhumanity",
+            "airDate": "2015-08-04",
+            "rating": 7.2
+          },
+          {
+            "episode": 21,
+            "title": "Attack of the Synthezoids",
+            "airDate": "2015-09-19",
+            "rating": 6
+          },
+          {
+            "episode": 22,
+            "title": "The Revenge of Arnim Zola",
+            "airDate": "2015-09-26",
+            "rating": 7.3
+          },
+          {
+            "episode": 23,
+            "title": "Contest of Champions, Part One",
+            "airDate": "2015-10-03",
+            "rating": 7.8
+          },
+          {
+            "episode": 24,
+            "title": "Contest of Champions, Part Two",
+            "airDate": "2015-10-10",
+            "rating": 7.6
+          },
+          {
+            "episode": 25,
+            "title": "Contest of Champions, Part Three",
+            "airDate": "2015-10-17",
+            "rating": 7.8
+          },
+          {
+            "episode": 26,
+            "title": "Contest of Champions, Part Four",
+            "airDate": "2015-10-24",
+            "rating": 7.9
+          }
+        ]
+      },
+      {
+        "season": 4,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Hydra Attacks - Part 1",
+            "airDate": "2016-02-21",
+            "rating": 7.4
+          },
+          {
+            "episode": 2,
+            "title": "Hydra Attacks - Part 2",
+            "airDate": "2016-02-21",
+            "rating": 7.6
+          },
+          {
+            "episode": 3,
+            "title": "Miles from Home",
+            "airDate": "2016-02-28",
+            "rating": 7.5
+          },
+          {
+            "episode": 4,
+            "title": "Iron Vulture",
+            "airDate": "2016-03-06",
+            "rating": 7.3
+          },
+          {
+            "episode": 5,
+            "title": "Lizards",
+            "airDate": "2016-03-13",
+            "rating": 7.3
+          },
+          {
+            "episode": 6,
+            "title": "Double Agent Venom",
+            "airDate": "2016-03-20",
+            "rating": 7.1
+          },
+          {
+            "episode": 7,
+            "title": "Beached",
+            "airDate": "2016-03-27",
+            "rating": 6.9
+          },
+          {
+            "episode": 8,
+            "title": "Anti-Venom",
+            "airDate": "2016-04-03",
+            "rating": 7.5
+          },
+          {
+            "episode": 9,
+            "title": "Force of Nature",
+            "airDate": "2016-04-10",
+            "rating": 7.1
+          },
+          {
+            "episode": 10,
+            "title": "The New Sinister Six - Part 1",
+            "airDate": "2016-06-12",
+            "rating": 7.9
+          },
+          {
+            "episode": 11,
+            "title": "The New Sinister Six - Part 2",
+            "airDate": "2016-06-19",
+            "rating": 8.2
+          },
+          {
+            "episode": 12,
+            "title": "Agent Web",
+            "airDate": "2016-06-26",
+            "rating": 7
+          },
+          {
+            "episode": 13,
+            "title": "Symbiote Saga - Part 1",
+            "airDate": "2016-07-03",
+            "rating": 7.6
+          },
+          {
+            "episode": 14,
+            "title": "Symbiote Saga - Part 2",
+            "airDate": "2016-07-10",
+            "rating": 7.7
+          },
+          {
+            "episode": 15,
+            "title": "Symbiote Saga - Part 3",
+            "airDate": "2016-07-17",
+            "rating": 7.7
+          },
+          {
+            "episode": 16,
+            "title": "Return to the Spider-Verse - Part 1",
+            "airDate": "2016-08-27",
+            "rating": 7.8
+          },
+          {
+            "episode": 17,
+            "title": "Return to the Spider-Verse - Part 2",
+            "airDate": "2016-09-03",
+            "rating": 7
+          },
+          {
+            "episode": 18,
+            "title": "Return to the Spider-Verse - Part 3",
+            "airDate": "2016-09-10",
+            "rating": 7.7
+          },
+          {
+            "episode": 19,
+            "title": "Return to the Spider-Verse - Part 4",
+            "airDate": "2016-09-17",
+            "rating": 7.7
+          },
+          {
+            "episode": 20,
+            "title": "Strange Little Halloween",
+            "airDate": "2016-10-01",
+            "rating": 6.9
+          },
+          {
+            "episode": 21,
+            "title": "Spider Slayers - Part 1",
+            "airDate": "2016-10-08",
+            "rating": 7.5
+          },
+          {
+            "episode": 22,
+            "title": "Spider Slayers - Part 2",
+            "airDate": "2016-10-15",
+            "rating": 7.6
+          },
+          {
+            "episode": 23,
+            "title": "Spider Slayers - Part 3",
+            "airDate": "2016-10-22",
+            "rating": 7.1
+          },
+          {
+            "episode": 24,
+            "title": "The Moon Knight Before Christmas",
+            "airDate": "2016-12-17",
+            "rating": 7.3
+          },
+          {
+            "episode": 25,
+            "title": "Graduation Day - Part 1",
+            "airDate": "2017-01-07",
+            "rating": 7.8
+          },
+          {
+            "episode": 26,
+            "title": "Graduation Day - Part 2",
+            "airDate": "2017-01-07",
+            "rating": 7.8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Resident Evil: Infinite Darkness",
+    "type": "TV Show",
+    "year": 2021,
+    "rating": 5.8,
+    "age": "TV-MA",
+    "duration": "26m",
+    "genres": [
+      "Action",
+      "Animation",
+      "Horror",
+      "Sci-Fi"
+    ],
+    "poster": "https://image.tmdb.org/t/p/original/mL9jhMLtw36HfHd0X248uNuKpCs.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/zLf4ASzJklyxLDzcbH2IzEV2Es2.jpg",
+    "videoUrl": "110642",
+    "trailerUrl": "",
+    "overview": "Leon Kennedy find evidence of cyber-terror plot inside White House, Claire Redfield investigate mysterious outbreak at refugee camp near US-Mexico border. Two thread tangle, expose deep conspiracy tied to bioweapon research.",
+    "director": "EiichirÅ Hasumi",
+    "cast": [
+      "Nick Apostolides (Leon Kennedy), Stephanie Panisello (Claire Redfield), Ben Diskin (Jason), Matthew Mercer (Patrick Wilcox)"
+    ],
+    "trending": false,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Episode 1.1",
+            "airDate": "2021-07-08",
+            "rating": 6.6
+          },
+          {
+            "episode": 2,
+            "title": "Episode 1.2",
+            "airDate": "2021-07-08",
+            "rating": 6.8
+          },
+          {
+            "episode": 3,
+            "title": "Episode 1.3",
+            "airDate": "2021-07-08",
+            "rating": 6.5
+          },
+          {
+            "episode": 4,
+            "title": "Episode 1.4",
+            "airDate": "2021-07-08",
+            "rating": 6.3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "The Simpsons",
+    "type": "TV Show",
+    "year": 1989,
+    "rating": 8,
+    "age": "TV-14",
+    "duration": "30m",
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Family"
+    ],
+    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/uWpG7GqfKGQqX4YMAo3nv5OrglV.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/adZ9ldSlkGfLfsHNbh37ZThCcgU.jpg",
+    "videoUrl": "456",
+    "trailerUrl": "",
+    "overview": "Homer, dumb but loveable dad, wife Marge, three kid â€” Bart, Lisa, Maggie â€” live wacky life in Springfield. Satire everyday American life, poke fun at family, work, society, pop culture, still going strong decade after decade.",
+    "director": [
+      "James L.Brooks",
+      "Matt Groening",
+      "Sam Simon"
+    ],
+    "cast": [
+      "Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith, Hank Azaria, Harry Shearer"
+    ],
+    "trending": false,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Simpsons Roasting on an Open Fire",
+            "airDate": "1989-12-17",
+            "rating": 8.1
+          },
+          {
+            "episode": 2,
+            "title": "Bart the Genius",
+            "airDate": "1990-01-14",
+            "rating": 7.6
+          },
+          {
+            "episode": 3,
+            "title": "Homer's Odyssey",
+            "airDate": "1990-01-21",
+            "rating": 7.3
+          },
+          {
+            "episode": 4,
+            "title": "There's No Disgrace Like Home",
+            "airDate": "1990-01-28",
+            "rating": 7.6
+          },
+          {
+            "episode": 5,
+            "title": "Bart the General",
+            "airDate": "1990-02-04",
+            "rating": 7.9
+          },
+          {
+            "episode": 6,
+            "title": "Moaning Lisa",
+            "airDate": "1990-02-11",
+            "rating": 7.6
+          },
+          {
+            "episode": 7,
+            "title": "The Call of the Simpsons",
+            "airDate": "1990-02-18",
+            "rating": 7.7
+          },
+          {
+            "episode": 8,
+            "title": "The Telltale Head",
+            "airDate": "1990-02-25",
+            "rating": 7.6
+          },
+          {
+            "episode": 9,
+            "title": "Life on the Fast Lane",
+            "airDate": "1990-03-18",
+            "rating": 7.4
+          },
+          {
+            "episode": 10,
+            "title": "Homer's Night Out",
+            "airDate": "1990-03-25",
+            "rating": 7.3
+          },
+          {
+            "episode": 11,
+            "title": "The Crepes of Wrath",
+            "airDate": "1990-04-15",
+            "rating": 7.7
+          },
+          {
+            "episode": 12,
+            "title": "Krusty Gets Busted",
+            "airDate": "1990-04-29",
+            "rating": 8.3
+          },
+          {
+            "episode": 13,
+            "title": "Some Enchanted Evening",
+            "airDate": "1990-05-13",
+            "rating": 7.7
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Bart Gets an F",
+            "airDate": "1990-10-11",
+            "rating": 8.2
+          },
+          {
+            "episode": 2,
+            "title": "Simpson and Delilah",
+            "airDate": "1990-10-18",
+            "rating": 8.2
+          },
+          {
+            "episode": 3,
+            "title": "Treehouse of Horror",
+            "airDate": "1990-10-25",
+            "rating": 8.2
+          },
+          {
+            "episode": 4,
+            "title": "Two Cars in Every Garage and Three Eyes on Every Fish",
+            "airDate": "1990-11-01",
+            "rating": 8
+          },
+          {
+            "episode": 5,
+            "title": "Dancin' Homer",
+            "airDate": "1990-11-08",
+            "rating": 7.3
+          },
+          {
+            "episode": 6,
+            "title": "Dead Putting Society",
+            "airDate": "1990-11-15",
+            "rating": 7.9
+          },
+          {
+            "episode": 7,
+            "title": "Bart vs. Thanksgiving",
+            "airDate": "1990-11-22",
+            "rating": 7.7
+          },
+          {
+            "episode": 8,
+            "title": "Bart the Daredevil",
+            "airDate": "1990-12-06",
+            "rating": 8.3
+          },
+          {
+            "episode": 9,
+            "title": "Itchy & Scratchy & Marge",
+            "airDate": "1990-12-20",
+            "rating": 8.1
+          },
+          {
+            "episode": 10,
+            "title": "Bart Gets Hit by a Car",
+            "airDate": "1991-01-10",
+            "rating": 7.7
+          },
+          {
+            "episode": 11,
+            "title": "One Fish, Two Fish, Blowfish, Blue Fish",
+            "airDate": "1991-01-24",
+            "rating": 8.8
+          },
+          {
+            "episode": 12,
+            "title": "The Way We Was",
+            "airDate": "1991-01-31",
+            "rating": 8.2
+          },
+          {
+            "episode": 13,
+            "title": "Homer vs. Lisa and the Eighth Commandment",
+            "airDate": "1991-02-07",
+            "rating": 8
+          },
+          {
+            "episode": 14,
+            "title": "Principal Charming",
+            "airDate": "1991-02-14",
+            "rating": 7.4
+          },
+          {
+            "episode": 15,
+            "title": "Oh Brother, Where Art Thou?",
+            "airDate": "1991-02-21",
+            "rating": 8.3
+          },
+          {
+            "episode": 16,
+            "title": "Bart's Dog Gets an F",
+            "airDate": "1991-03-07",
+            "rating": 7.4
+          },
+          {
+            "episode": 17,
+            "title": "Old Money",
+            "airDate": "1991-03-28",
+            "rating": 7.6
+          },
+          {
+            "episode": 18,
+            "title": "Brush with Greatness",
+            "airDate": "1991-04-11",
+            "rating": 7.9
+          },
+          {
+            "episode": 19,
+            "title": "Lisa's Substitute",
+            "airDate": "1991-04-25",
+            "rating": 8.6
+          },
+          {
+            "episode": 20,
+            "title": "The War of the Simpsons",
+            "airDate": "1991-05-02",
+            "rating": 7.8
+          },
+          {
+            "episode": 21,
+            "title": "Three Men and a Comic Book",
+            "airDate": "1991-05-09",
+            "rating": 8.2
+          },
+          {
+            "episode": 22,
+            "title": "Blood Feud",
+            "airDate": "1991-07-11",
+            "rating": 7.8
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Stark Raving Dad",
+            "airDate": "1991-09-19",
+            "rating": 8.6
+          },
+          {
+            "episode": 2,
+            "title": "Mr. Lisa Goes to Washington",
+            "airDate": "1991-09-26",
+            "rating": 7.7
+          },
+          {
+            "episode": 3,
+            "title": "When Flanders Failed",
+            "airDate": "1991-10-03",
+            "rating": 8.2
+          },
+          {
+            "episode": 4,
+            "title": "Bart the Murderer",
+            "airDate": "1991-10-10",
+            "rating": 8.6
+          },
+          {
+            "episode": 5,
+            "title": "Homer Defined",
+            "airDate": "1991-10-17",
+            "rating": 8.3
+          },
+          {
+            "episode": 6,
+            "title": "Like Father Like Clown",
+            "airDate": "1991-10-24",
+            "rating": 7.6
+          },
+          {
+            "episode": 7,
+            "title": "Treehouse of Horror II",
+            "airDate": "1991-10-31",
+            "rating": 8.2
+          },
+          {
+            "episode": 8,
+            "title": "Lisa's Pony",
+            "airDate": "1991-11-07",
+            "rating": 7.9
+          },
+          {
+            "episode": 9,
+            "title": "Saturdays of Thunder",
+            "airDate": "1991-11-14",
+            "rating": 7.9
+          },
+          {
+            "episode": 10,
+            "title": "Flaming Moe's",
+            "airDate": "1991-11-21",
+            "rating": 8.8
+          },
+          {
+            "episode": 11,
+            "title": "Burns Verkaufen der Kraftwerk",
+            "airDate": "1991-12-05",
+            "rating": 8.2
+          },
+          {
+            "episode": 12,
+            "title": "I Married Marge",
+            "airDate": "1991-12-26",
+            "rating": 8.3
+          },
+          {
+            "episode": 13,
+            "title": "Radio Bart",
+            "airDate": "1992-01-09",
+            "rating": 8.5
+          },
+          {
+            "episode": 14,
+            "title": "Lisa the Greek",
+            "airDate": "1992-01-23",
+            "rating": 8
+          },
+          {
+            "episode": 15,
+            "title": "Homer Alone",
+            "airDate": "1992-02-06",
+            "rating": 8
+          },
+          {
+            "episode": 16,
+            "title": "Bart the Lover",
+            "airDate": "1992-02-13",
+            "rating": 8.3
+          },
+          {
+            "episode": 17,
+            "title": "Homer at the Bat",
+            "airDate": "1992-02-20",
+            "rating": 8.7
+          },
+          {
+            "episode": 18,
+            "title": "Separate Vocations",
+            "airDate": "1992-02-27",
+            "rating": 8.2
+          },
+          {
+            "episode": 19,
+            "title": "Dog of Death",
+            "airDate": "1992-03-12",
+            "rating": 7.7
+          },
+          {
+            "episode": 20,
+            "title": "Colonel Homer",
+            "airDate": "1992-03-26",
+            "rating": 8
+          },
+          {
+            "episode": 21,
+            "title": "Black Widower",
+            "airDate": "1992-04-09",
+            "rating": 8.3
+          },
+          {
+            "episode": 22,
+            "title": "The Otto Show",
+            "airDate": "1992-04-23",
+            "rating": 7.6
+          },
+          {
+            "episode": 23,
+            "title": "Bart's Friend Falls in Love",
+            "airDate": "1992-05-07",
+            "rating": 7.7
+          },
+          {
+            "episode": 24,
+            "title": "Brother, Can You Spare Two Dimes?",
+            "airDate": "1992-08-27",
+            "rating": 8.2
+          }
+        ]
+      },
+      {
+        "season": 4,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Kamp Krusty",
+            "airDate": "1992-09-24",
+            "rating": 8.5
+          },
+          {
+            "episode": 2,
+            "title": "A Streetcar Named Marge",
+            "airDate": "1992-10-01",
+            "rating": 8.1
+          },
+          {
+            "episode": 3,
+            "title": "Homer the Heretic",
+            "airDate": "1992-10-08",
+            "rating": 8.9
+          },
+          {
+            "episode": 4,
+            "title": "Lisa the Beauty Queen",
+            "airDate": "1992-10-15",
+            "rating": 7.7
+          },
+          {
+            "episode": 5,
+            "title": "Treehouse of Horror III",
+            "airDate": "1992-10-29",
+            "rating": 8.4
+          },
+          {
+            "episode": 6,
+            "title": "Itchy & Scratchy: The Movie",
+            "airDate": "1992-11-03",
+            "rating": 8.2
+          },
+          {
+            "episode": 7,
+            "title": "Marge Gets a Job",
+            "airDate": "1992-11-05",
+            "rating": 7.8
+          },
+          {
+            "episode": 8,
+            "title": "The New Kid on the Block",
+            "airDate": "1992-11-12",
+            "rating": 8.2
+          },
+          {
+            "episode": 9,
+            "title": "Mr. Plow",
+            "airDate": "1992-11-19",
+            "rating": 8.8
+          },
+          {
+            "episode": 10,
+            "title": "Lisa's First Word",
+            "airDate": "1992-12-03",
+            "rating": 8.7
+          },
+          {
+            "episode": 11,
+            "title": "Homer's Triple Bypass",
+            "airDate": "1992-12-17",
+            "rating": 8.6
+          },
+          {
+            "episode": 12,
+            "title": "Marge vs. the Monorail",
+            "airDate": "1993-01-14",
+            "rating": 9.1
+          },
+          {
+            "episode": 13,
+            "title": "Selma's Choice",
+            "airDate": "1993-01-21",
+            "rating": 8
+          },
+          {
+            "episode": 14,
+            "title": "Brother from the Same Planet",
+            "airDate": "1993-02-04",
+            "rating": 8.1
+          },
+          {
+            "episode": 15,
+            "title": "I Love Lisa",
+            "airDate": "1993-02-11",
+            "rating": 8.4
+          },
+          {
+            "episode": 16,
+            "title": "Duffless",
+            "airDate": "1993-02-18",
+            "rating": 8.3
+          },
+          {
+            "episode": 17,
+            "title": "Last Exit to Springfield",
+            "airDate": "1993-03-11",
+            "rating": 9
+          },
+          {
+            "episode": 18,
+            "title": "So It's Come to This: A Simpsons Clip Show",
+            "airDate": "1993-04-01",
+            "rating": 7
+          },
+          {
+            "episode": 19,
+            "title": "The Front",
+            "airDate": "1993-04-15",
+            "rating": 8
+          },
+          {
+            "episode": 20,
+            "title": "Whacking Day",
+            "airDate": "1993-04-29",
+            "rating": 8.1
+          },
+          {
+            "episode": 21,
+            "title": "Marge in Chains",
+            "airDate": "1993-05-06",
+            "rating": 7.7
+          },
+          {
+            "episode": 22,
+            "title": "Krusty Gets Kancelled",
+            "airDate": "1993-05-13",
+            "rating": 8.1
+          }
+        ]
+      },
+      {
+        "season": 5,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Homer's Barbershop Quartet",
+            "airDate": "1993-09-30",
+            "rating": 8.5
+          },
+          {
+            "episode": 2,
+            "title": "Cape Feare",
+            "airDate": "1993-10-07",
+            "rating": 9.2
+          },
+          {
+            "episode": 3,
+            "title": "Homer Goes to College",
+            "airDate": "1993-10-14",
+            "rating": 8.6
+          },
+          {
+            "episode": 4,
+            "title": "Rosebud",
+            "airDate": "1993-10-21",
+            "rating": 8.8
+          },
+          {
+            "episode": 5,
+            "title": "Treehouse of Horror IV",
+            "airDate": "1993-10-28",
+            "rating": 8.8
+          },
+          {
+            "episode": 6,
+            "title": "Marge on the Lam",
+            "airDate": "1993-11-04",
+            "rating": 8
+          },
+          {
+            "episode": 7,
+            "title": "Bart's Inner Child",
+            "airDate": "1993-11-11",
+            "rating": 7.6
+          },
+          {
+            "episode": 8,
+            "title": "Boy-Scoutz 'n the Hood",
+            "airDate": "1993-11-18",
+            "rating": 8.6
+          },
+          {
+            "episode": 9,
+            "title": "The Last Temptation of Homer",
+            "airDate": "1993-12-09",
+            "rating": 8.5
+          },
+          {
+            "episode": 10,
+            "title": "$pringfield (or, How I Learned to Stop Worrying and Love Legalized Gambling)",
+            "airDate": "1993-12-16",
+            "rating": 8.6
+          },
+          {
+            "episode": 11,
+            "title": "Homer the Vigilante",
+            "airDate": "1994-01-06",
+            "rating": 8.2
+          },
+          {
+            "episode": 12,
+            "title": "Bart Gets Famous",
+            "airDate": "1994-02-03",
+            "rating": 8.1
+          },
+          {
+            "episode": 13,
+            "title": "Homer and Apu",
+            "airDate": "1994-02-10",
+            "rating": 8.2
+          },
+          {
+            "episode": 14,
+            "title": "Lisa vs. Malibu Stacy",
+            "airDate": "1994-02-17",
+            "rating": 8.1
+          },
+          {
+            "episode": 15,
+            "title": "Deep Space Homer",
+            "airDate": "1994-02-24",
+            "rating": 8.9
+          },
+          {
+            "episode": 16,
+            "title": "Homer Loves Flanders",
+            "airDate": "1994-03-17",
+            "rating": 8.6
+          },
+          {
+            "episode": 17,
+            "title": "Bart Gets an Elephant",
+            "airDate": "1994-03-31",
+            "rating": 7.8
+          },
+          {
+            "episode": 18,
+            "title": "Burns' Heir",
+            "airDate": "1994-04-14",
+            "rating": 8.3
+          },
+          {
+            "episode": 19,
+            "title": "Sweet Seymour Skinner's Baadasssss Song",
+            "airDate": "1994-04-28",
+            "rating": 8.3
+          },
+          {
+            "episode": 20,
+            "title": "The Boy Who Knew Too Much",
+            "airDate": "1994-05-05",
+            "rating": 8.3
+          },
+          {
+            "episode": 21,
+            "title": "Lady Bouvier's Lover",
+            "airDate": "1994-05-12",
+            "rating": 7.5
+          },
+          {
+            "episode": 22,
+            "title": "Secrets of a Successful Marriage",
+            "airDate": "1994-05-19",
+            "rating": 8
+          }
+        ]
+      },
+      {
+        "season": 6,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Bart of Darkness",
+            "airDate": "1994-09-04",
+            "rating": 8.7
+          },
+          {
+            "episode": 2,
+            "title": "Lisa's Rival",
+            "airDate": "1994-09-11",
+            "rating": 8.1
+          },
+          {
+            "episode": 3,
+            "title": "Another Simpsons Clip Show",
+            "airDate": "1994-09-25",
+            "rating": 5.8
+          },
+          {
+            "episode": 4,
+            "title": "Itchy & Scratchy Land",
+            "airDate": "1994-10-02",
+            "rating": 8.6
+          },
+          {
+            "episode": 5,
+            "title": "Sideshow Bob Roberts",
+            "airDate": "1994-10-09",
+            "rating": 8.2
+          },
+          {
+            "episode": 6,
+            "title": "Treehouse of Horror V",
+            "airDate": "1994-10-30",
+            "rating": 9.2
+          },
+          {
+            "episode": 7,
+            "title": "Bart's Girlfriend",
+            "airDate": "1994-11-06",
+            "rating": 8.1
+          },
+          {
+            "episode": 8,
+            "title": "Lisa on Ice",
+            "airDate": "1994-11-13",
+            "rating": 8.6
+          },
+          {
+            "episode": 9,
+            "title": "Homer Badman",
+            "airDate": "1994-11-27",
+            "rating": 8.9
+          },
+          {
+            "episode": 10,
+            "title": "Grandpa vs. Sexual Inadequacy",
+            "airDate": "1994-12-04",
+            "rating": 8
+          },
+          {
+            "episode": 11,
+            "title": "Fear of Flying",
+            "airDate": "1994-12-18",
+            "rating": 7.7
+          },
+          {
+            "episode": 12,
+            "title": "Homer the Great",
+            "airDate": "1995-01-08",
+            "rating": 9
+          },
+          {
+            "episode": 13,
+            "title": "And Maggie Makes Three",
+            "airDate": "1995-01-22",
+            "rating": 8.9
+          },
+          {
+            "episode": 14,
+            "title": "Bart's Comet",
+            "airDate": "1995-02-05",
+            "rating": 8.7
+          },
+          {
+            "episode": 15,
+            "title": "Homie the Clown",
+            "airDate": "1995-02-12",
+            "rating": 8.6
+          },
+          {
+            "episode": 16,
+            "title": "Bart vs. Australia",
+            "airDate": "1995-02-19",
+            "rating": 8.5
+          },
+          {
+            "episode": 17,
+            "title": "Homer vs. Patty and Selma",
+            "airDate": "1995-02-26",
+            "rating": 7.8
+          },
+          {
+            "episode": 18,
+            "title": "A Star is Burns",
+            "airDate": "1995-03-05",
+            "rating": 8.6
+          },
+          {
+            "episode": 19,
+            "title": "Lisa's Wedding",
+            "airDate": "1995-03-19",
+            "rating": 8.3
+          },
+          {
+            "episode": 20,
+            "title": "Two Dozen and One Greyhounds",
+            "airDate": "1995-04-09",
+            "rating": 8.1
+          },
+          {
+            "episode": 21,
+            "title": "The PTA Disbands",
+            "airDate": "1995-04-16",
+            "rating": 8
+          },
+          {
+            "episode": 22,
+            "title": "Round Springfield",
+            "airDate": "1995-04-30",
+            "rating": 8.2
+          },
+          {
+            "episode": 23,
+            "title": "The Springfield Connection",
+            "airDate": "1995-05-07",
+            "rating": 8.2
+          },
+          {
+            "episode": 24,
+            "title": "Lemon of Troy",
+            "airDate": "1995-05-14",
+            "rating": 8.7
+          },
+          {
+            "episode": 25,
+            "title": "Who Shot Mr. Burns? (1)",
+            "airDate": "1995-05-21",
+            "rating": 9.2
+          }
+        ]
+      },
+      {
+        "season": 7,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Who Shot Mr. Burns? (2)",
+            "airDate": "1995-09-17",
+            "rating": 9
+          },
+          {
+            "episode": 2,
+            "title": "Radioactive Man",
+            "airDate": "1995-09-24",
+            "rating": 8.3
+          },
+          {
+            "episode": 3,
+            "title": "Home Sweet Homediddly-Dum-Doodily",
+            "airDate": "1995-10-01",
+            "rating": 8.4
+          },
+          {
+            "episode": 4,
+            "title": "Bart Sells His Soul",
+            "airDate": "1995-10-08",
+            "rating": 8.8
+          },
+          {
+            "episode": 5,
+            "title": "Lisa the Vegetarian",
+            "airDate": "1995-10-15",
+            "rating": 8.5
+          },
+          {
+            "episode": 6,
+            "title": "Treehouse of Horror VI",
+            "airDate": "1995-10-29",
+            "rating": 8.7
+          },
+          {
+            "episode": 7,
+            "title": "King-Size Homer",
+            "airDate": "1995-11-05",
+            "rating": 9
+          },
+          {
+            "episode": 8,
+            "title": "Mother Simpson",
+            "airDate": "1995-11-19",
+            "rating": 8.7
+          },
+          {
+            "episode": 9,
+            "title": "Sideshow Bob's Last Gleaming",
+            "airDate": "1995-11-26",
+            "rating": 8
+          },
+          {
+            "episode": 10,
+            "title": "The Simpsons 138th Episode Spectacular",
+            "airDate": "1995-12-03",
+            "rating": 7.3
+          },
+          {
+            "episode": 11,
+            "title": "Marge Be Not Proud",
+            "airDate": "1995-12-17",
+            "rating": 8.5
+          },
+          {
+            "episode": 12,
+            "title": "Team Homer",
+            "airDate": "1996-01-07",
+            "rating": 8.3
+          },
+          {
+            "episode": 13,
+            "title": "Two Bad Neighbors",
+            "airDate": "1996-01-14",
+            "rating": 8.5
+          },
+          {
+            "episode": 14,
+            "title": "Scenes from the Class Struggle in Springfield",
+            "airDate": "1996-02-04",
+            "rating": 7.7
+          },
+          {
+            "episode": 15,
+            "title": "Bart the Fink",
+            "airDate": "1996-02-11",
+            "rating": 7.6
+          },
+          {
+            "episode": 16,
+            "title": "Lisa the Iconoclast",
+            "airDate": "1996-02-18",
+            "rating": 8.1
+          },
+          {
+            "episode": 17,
+            "title": "Homer the Smithers",
+            "airDate": "1996-02-25",
+            "rating": 8.8
+          },
+          {
+            "episode": 18,
+            "title": "The Day the Violence Died",
+            "airDate": "1996-03-17",
+            "rating": 8
+          },
+          {
+            "episode": 19,
+            "title": "A Fish Called Selma",
+            "airDate": "1996-03-24",
+            "rating": 8.2
+          },
+          {
+            "episode": 20,
+            "title": "Bart on the Road",
+            "airDate": "1996-03-31",
+            "rating": 8.6
+          },
+          {
+            "episode": 21,
+            "title": "22 Short Films About Springfield",
+            "airDate": "1996-04-14",
+            "rating": 9
+          },
+          {
+            "episode": 22,
+            "title": "Raging Abe Simpson and His Grumbling Grandson in 'The Curse of the Flying Hellfish'",
+            "airDate": "1996-04-28",
+            "rating": 8.5
+          },
+          {
+            "episode": 23,
+            "title": "Much Apu About Nothing",
+            "airDate": "1996-05-05",
+            "rating": 8.1
+          },
+          {
+            "episode": 24,
+            "title": "Homerpalooza",
+            "airDate": "1996-05-19",
+            "rating": 7.9
+          },
+          {
+            "episode": 25,
+            "title": "Summer of 4 ft. 2",
+            "airDate": "1996-05-19",
+            "rating": 8.5
+          }
+        ]
+      },
+      {
+        "season": 8,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Treehouse of Horror VII",
+            "airDate": "1996-10-27",
+            "rating": 8.5
+          },
+          {
+            "episode": 2,
+            "title": "You Only Move Twice",
+            "airDate": "1996-11-03",
+            "rating": 9.2
+          },
+          {
+            "episode": 3,
+            "title": "The Homer They Fall",
+            "airDate": "1996-11-10",
+            "rating": 8.1
+          },
+          {
+            "episode": 4,
+            "title": "Burns, Baby Burns",
+            "airDate": "1996-11-17",
+            "rating": 7.6
+          },
+          {
+            "episode": 5,
+            "title": "Bart After Dark",
+            "airDate": "1996-11-24",
+            "rating": 8.3
+          },
+          {
+            "episode": 6,
+            "title": "A Milhouse Divided",
+            "airDate": "1996-12-01",
+            "rating": 8.1
+          },
+          {
+            "episode": 7,
+            "title": "Lisa's Date with Density",
+            "airDate": "1996-12-15",
+            "rating": 7.8
+          },
+          {
+            "episode": 8,
+            "title": "Hurricane Neddy",
+            "airDate": "1996-12-29",
+            "rating": 8.7
+          },
+          {
+            "episode": 9,
+            "title": "El Viaje de Nuestro Jomer (The Mysterious Voyage of Homer)",
+            "airDate": "1997-01-05",
+            "rating": 8.6
+          },
+          {
+            "episode": 10,
+            "title": "The Springfield Files",
+            "airDate": "1997-01-12",
+            "rating": 9.1
+          },
+          {
+            "episode": 11,
+            "title": "The Twisted World of Marge Simpson",
+            "airDate": "1997-01-19",
+            "rating": 7.7
+          },
+          {
+            "episode": 12,
+            "title": "Mountain of Madness",
+            "airDate": "1997-02-02",
+            "rating": 8.5
+          },
+          {
+            "episode": 13,
+            "title": "Simpsoncalifragilisticexpiala (Annoyed Grunt) cious",
+            "airDate": "1997-02-07",
+            "rating": 7.6
+          },
+          {
+            "episode": 14,
+            "title": "The Itchy & Scratchy & Poochie Show",
+            "airDate": "1997-02-09",
+            "rating": 7.9
+          },
+          {
+            "episode": 15,
+            "title": "Homer's Phobia",
+            "airDate": "1997-02-16",
+            "rating": 8.8
+          },
+          {
+            "episode": 16,
+            "title": "Brother from Another Series",
+            "airDate": "1997-02-23",
+            "rating": 8.2
+          },
+          {
+            "episode": 17,
+            "title": "My Sister, My Sitter",
+            "airDate": "1997-03-02",
+            "rating": 7.8
+          },
+          {
+            "episode": 18,
+            "title": "Homer vs. the Eighteenth Amendment",
+            "airDate": "1997-03-16",
+            "rating": 8.8
+          },
+          {
+            "episode": 19,
+            "title": "Grade School Confidential",
+            "airDate": "1997-04-06",
+            "rating": 8.2
+          },
+          {
+            "episode": 20,
+            "title": "The Canine Mutiny",
+            "airDate": "1997-04-13",
+            "rating": 7.6
+          },
+          {
+            "episode": 21,
+            "title": "The Old Man and Lisa",
+            "airDate": "1997-04-20",
+            "rating": 7.8
+          },
+          {
+            "episode": 22,
+            "title": "In Marge We Trust",
+            "airDate": "1997-04-27",
+            "rating": 8.1
+          },
+          {
+            "episode": 23,
+            "title": "Homer's Enemy",
+            "airDate": "1997-05-04",
+            "rating": 9.3
+          },
+          {
+            "episode": 24,
+            "title": "The Simpsons Spin-Off Showcase",
+            "airDate": "1997-05-11",
+            "rating": 7.1
+          },
+          {
+            "episode": 25,
+            "title": "The Secret War of Lisa Simpson",
+            "airDate": "1997-05-18",
+            "rating": 7.8
+          }
+        ]
+      },
+      {
+        "season": 9,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The City of New York vs. Homer Simpson",
+            "airDate": "1997-09-21",
+            "rating": 9
+          },
+          {
+            "episode": 2,
+            "title": "The Principal and the Pauper",
+            "airDate": "1997-09-28",
+            "rating": 6.9
+          },
+          {
+            "episode": 3,
+            "title": "Lisa's Sax",
+            "airDate": "1997-10-19",
+            "rating": 8.1
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror VIII",
+            "airDate": "1997-10-26",
+            "rating": 8.2
+          },
+          {
+            "episode": 5,
+            "title": "The Cartridge Family",
+            "airDate": "1997-11-02",
+            "rating": 8.2
+          },
+          {
+            "episode": 6,
+            "title": "Bart Star",
+            "airDate": "1997-11-09",
+            "rating": 7.6
+          },
+          {
+            "episode": 7,
+            "title": "The Two Mrs. Nahasapeemapetilons",
+            "airDate": "1997-11-16",
+            "rating": 7.6
+          },
+          {
+            "episode": 8,
+            "title": "Lisa the Skeptic",
+            "airDate": "1997-11-23",
+            "rating": 8.1
+          },
+          {
+            "episode": 9,
+            "title": "Realty Bites",
+            "airDate": "1997-12-07",
+            "rating": 7.6
+          },
+          {
+            "episode": 10,
+            "title": "Miracle on Evergreen Terrace",
+            "airDate": "1997-12-21",
+            "rating": 7.6
+          },
+          {
+            "episode": 11,
+            "title": "All Singing, All Dancing",
+            "airDate": "1998-01-04",
+            "rating": 5
+          },
+          {
+            "episode": 12,
+            "title": "Bart Carny",
+            "airDate": "1998-01-11",
+            "rating": 7.6
+          },
+          {
+            "episode": 13,
+            "title": "The Joy of Sect",
+            "airDate": "1998-02-08",
+            "rating": 8.3
+          },
+          {
+            "episode": 14,
+            "title": "Das Bus",
+            "airDate": "1998-02-15",
+            "rating": 8.2
+          },
+          {
+            "episode": 15,
+            "title": "The Last Temptation of Krusty",
+            "airDate": "1998-02-22",
+            "rating": 7.4
+          },
+          {
+            "episode": 16,
+            "title": "Dumbbell Indemnity",
+            "airDate": "1998-03-01",
+            "rating": 7.6
+          },
+          {
+            "episode": 17,
+            "title": "Lisa the Simpson",
+            "airDate": "1998-03-08",
+            "rating": 8
+          },
+          {
+            "episode": 18,
+            "title": "This Little Wiggy",
+            "airDate": "1998-03-22",
+            "rating": 7.8
+          },
+          {
+            "episode": 19,
+            "title": "Simpson Tide",
+            "airDate": "1998-03-29",
+            "rating": 8.1
+          },
+          {
+            "episode": 20,
+            "title": "The Trouble with Trillions",
+            "airDate": "1998-04-05",
+            "rating": 7.8
+          },
+          {
+            "episode": 21,
+            "title": "Girly Edition",
+            "airDate": "1998-04-19",
+            "rating": 7.8
+          },
+          {
+            "episode": 22,
+            "title": "Trash of the Titans",
+            "airDate": "1998-04-26",
+            "rating": 8.4
+          },
+          {
+            "episode": 23,
+            "title": "King of the Hill",
+            "airDate": "1998-05-03",
+            "rating": 8.2
+          },
+          {
+            "episode": 24,
+            "title": "Lost Our Lisa",
+            "airDate": "1998-05-10",
+            "rating": 7.7
+          },
+          {
+            "episode": 25,
+            "title": "Natural Born Kissers",
+            "airDate": "1998-05-17",
+            "rating": 8
+          }
+        ]
+      },
+      {
+        "season": 10,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Lard of the Dance",
+            "airDate": "1998-08-23",
+            "rating": 7.6
+          },
+          {
+            "episode": 2,
+            "title": "The Wizard of Evergreen Terrace",
+            "airDate": "1998-09-20",
+            "rating": 8.1
+          },
+          {
+            "episode": 3,
+            "title": "Bart the Mother",
+            "airDate": "1998-09-27",
+            "rating": 7.6
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror IX",
+            "airDate": "1998-10-25",
+            "rating": 8
+          },
+          {
+            "episode": 5,
+            "title": "When You Dish Upon a Star",
+            "airDate": "1998-11-08",
+            "rating": 7.2
+          },
+          {
+            "episode": 6,
+            "title": "D'Oh-in' in the Wind",
+            "airDate": "1998-11-15",
+            "rating": 7.5
+          },
+          {
+            "episode": 7,
+            "title": "Lisa Gets an 'A'",
+            "airDate": "1998-11-22",
+            "rating": 8.1
+          },
+          {
+            "episode": 8,
+            "title": "Homer Simpson in: 'Kidney Trouble'",
+            "airDate": "1998-12-06",
+            "rating": 7.2
+          },
+          {
+            "episode": 9,
+            "title": "Mayored to the Mob",
+            "airDate": "1998-12-20",
+            "rating": 8.1
+          },
+          {
+            "episode": 10,
+            "title": "Viva Ned Flanders",
+            "airDate": "1999-01-10",
+            "rating": 7.8
+          },
+          {
+            "episode": 11,
+            "title": "Wild Barts Can't Be Broken",
+            "airDate": "1999-01-17",
+            "rating": 7.7
+          },
+          {
+            "episode": 12,
+            "title": "Sunday, Cruddy Sunday",
+            "airDate": "1999-01-31",
+            "rating": 7
+          },
+          {
+            "episode": 13,
+            "title": "Homer to the Max",
+            "airDate": "1999-02-07",
+            "rating": 7.7
+          },
+          {
+            "episode": 14,
+            "title": "I'm with Cupid",
+            "airDate": "1999-02-14",
+            "rating": 7.3
+          },
+          {
+            "episode": 15,
+            "title": "Marge Simpson in: 'Screaming Yellow Honkers'",
+            "airDate": "1999-02-21",
+            "rating": 7.3
+          },
+          {
+            "episode": 16,
+            "title": "Make Room for Lisa",
+            "airDate": "1999-02-28",
+            "rating": 7.5
+          },
+          {
+            "episode": 17,
+            "title": "Maximum Homerdrive",
+            "airDate": "1999-03-28",
+            "rating": 7.7
+          },
+          {
+            "episode": 18,
+            "title": "Simpsons Bible Stories",
+            "airDate": "1999-04-04",
+            "rating": 7.3
+          },
+          {
+            "episode": 19,
+            "title": "Mom and Pop Art",
+            "airDate": "1999-04-11",
+            "rating": 7.6
+          },
+          {
+            "episode": 20,
+            "title": "The Old Man and the 'C' Student",
+            "airDate": "1999-04-25",
+            "rating": 7.2
+          },
+          {
+            "episode": 21,
+            "title": "Monty Can't Buy Me Love",
+            "airDate": "1999-05-02",
+            "rating": 7.1
+          },
+          {
+            "episode": 22,
+            "title": "They Saved Lisa's Brain",
+            "airDate": "1999-05-09",
+            "rating": 7.2
+          },
+          {
+            "episode": 23,
+            "title": "30 Minutes Over Tokyo",
+            "airDate": "1999-05-16",
+            "rating": 8
+          }
+        ]
+      },
+      {
+        "season": 11,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Beyond Blunderdome",
+            "airDate": "1999-09-26",
+            "rating": 7.3
+          },
+          {
+            "episode": 2,
+            "title": "Brother's Little Helper",
+            "airDate": "1999-10-03",
+            "rating": 7.5
+          },
+          {
+            "episode": 3,
+            "title": "Guess Who's Coming to Criticize Dinner",
+            "airDate": "1999-10-24",
+            "rating": 7.5
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror X",
+            "airDate": "1999-10-31",
+            "rating": 7.8
+          },
+          {
+            "episode": 5,
+            "title": "E-I-E-I-(Annoyed Grunt)",
+            "airDate": "1999-11-07",
+            "rating": 7.9
+          },
+          {
+            "episode": 6,
+            "title": "Hello Gutter, Hello Fadder",
+            "airDate": "1999-11-14",
+            "rating": 7.3
+          },
+          {
+            "episode": 7,
+            "title": "Eight Misbehavin",
+            "airDate": "1999-11-21",
+            "rating": 7
+          },
+          {
+            "episode": 8,
+            "title": "Take My Wife, Sleaze",
+            "airDate": "1999-11-28",
+            "rating": 7.1
+          },
+          {
+            "episode": 9,
+            "title": "Grift of the Magi",
+            "airDate": "1999-12-19",
+            "rating": 7.3
+          },
+          {
+            "episode": 10,
+            "title": "Little Big Mom",
+            "airDate": "2000-01-09",
+            "rating": 7.3
+          },
+          {
+            "episode": 11,
+            "title": "Faith Off",
+            "airDate": "2000-01-16",
+            "rating": 6.8
+          },
+          {
+            "episode": 12,
+            "title": "The Mansion Family",
+            "airDate": "2000-01-23",
+            "rating": 7.3
+          },
+          {
+            "episode": 13,
+            "title": "Saddlesore Galactica",
+            "airDate": "2000-02-06",
+            "rating": 6.4
+          },
+          {
+            "episode": 14,
+            "title": "Alone Again Natura-Diddily",
+            "airDate": "2000-02-13",
+            "rating": 7.6
+          },
+          {
+            "episode": 15,
+            "title": "Missionary Impossible",
+            "airDate": "2000-02-20",
+            "rating": 7.3
+          },
+          {
+            "episode": 16,
+            "title": "Pygmoelian",
+            "airDate": "2000-02-27",
+            "rating": 7.3
+          },
+          {
+            "episode": 17,
+            "title": "Bart to the Future",
+            "airDate": "2000-03-19",
+            "rating": 7.2
+          },
+          {
+            "episode": 18,
+            "title": "Days of Wine and D'Ohses",
+            "airDate": "2000-04-09",
+            "rating": 7.4
+          },
+          {
+            "episode": 19,
+            "title": "Kill the Alligator and Run",
+            "airDate": "2000-04-30",
+            "rating": 6.6
+          },
+          {
+            "episode": 20,
+            "title": "Last Tap Dance in Springfield",
+            "airDate": "2000-05-07",
+            "rating": 7.1
+          },
+          {
+            "episode": 21,
+            "title": "It's a Mad, Mad, Mad, Mad Marge",
+            "airDate": "2000-05-14",
+            "rating": 7.1
+          },
+          {
+            "episode": 22,
+            "title": "Behind the Laughter",
+            "airDate": "2000-05-21",
+            "rating": 7.9
+          }
+        ]
+      },
+      {
+        "season": 12,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Treehouse of Horror XI",
+            "airDate": "2000-11-01",
+            "rating": 7.6
+          },
+          {
+            "episode": 2,
+            "title": "A Tale of Two Springfields",
+            "airDate": "2000-11-05",
+            "rating": 7.4
+          },
+          {
+            "episode": 3,
+            "title": "Insane Clown Poppy",
+            "airDate": "2000-11-12",
+            "rating": 6.9
+          },
+          {
+            "episode": 4,
+            "title": "Lisa the Treehugger",
+            "airDate": "2000-11-19",
+            "rating": 7.1
+          },
+          {
+            "episode": 5,
+            "title": "Homer vs. Dignity",
+            "airDate": "2000-11-26",
+            "rating": 7
+          },
+          {
+            "episode": 6,
+            "title": "The Computer Wore Menace Shoes",
+            "airDate": "2000-12-03",
+            "rating": 7.7
+          },
+          {
+            "episode": 7,
+            "title": "The Great Money Caper",
+            "airDate": "2000-12-10",
+            "rating": 7.2
+          },
+          {
+            "episode": 8,
+            "title": "Skinner's Sense of Snow",
+            "airDate": "2000-12-17",
+            "rating": 7.9
+          },
+          {
+            "episode": 9,
+            "title": "HOMR",
+            "airDate": "2001-01-07",
+            "rating": 8.1
+          },
+          {
+            "episode": 10,
+            "title": "Pokey Mom",
+            "airDate": "2001-01-14",
+            "rating": 7.1
+          },
+          {
+            "episode": 11,
+            "title": "Worst Episode Ever",
+            "airDate": "2001-02-04",
+            "rating": 7.4
+          },
+          {
+            "episode": 12,
+            "title": "Tennis the Menace",
+            "airDate": "2001-02-11",
+            "rating": 6.8
+          },
+          {
+            "episode": 13,
+            "title": "Day of the Jackanapes",
+            "airDate": "2001-02-18",
+            "rating": 7.1
+          },
+          {
+            "episode": 14,
+            "title": "New Kids on the Blecch",
+            "airDate": "2001-02-25",
+            "rating": 7.2
+          },
+          {
+            "episode": 15,
+            "title": "Hungry Hungry Homer",
+            "airDate": "2001-03-04",
+            "rating": 7.5
+          },
+          {
+            "episode": 16,
+            "title": "Bye Bye Nerdy",
+            "airDate": "2001-03-11",
+            "rating": 6.6
+          },
+          {
+            "episode": 17,
+            "title": "Simpsons Safari",
+            "airDate": "2001-04-01",
+            "rating": 6.8
+          },
+          {
+            "episode": 18,
+            "title": "Trilogy of Error",
+            "airDate": "2001-04-29",
+            "rating": 8.6
+          },
+          {
+            "episode": 19,
+            "title": "I'm Goin' to Praise Land",
+            "airDate": "2001-05-06",
+            "rating": 7.2
+          },
+          {
+            "episode": 20,
+            "title": "Children of a Lesser Clod",
+            "airDate": "2001-05-13",
+            "rating": 7.2
+          },
+          {
+            "episode": 21,
+            "title": "Simpsons Tall Tales",
+            "airDate": "2001-05-20",
+            "rating": 6.9
+          }
+        ]
+      },
+      {
+        "season": 13,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Treehouse of Horror XII",
+            "airDate": "2001-11-06",
+            "rating": 7.6
+          },
+          {
+            "episode": 2,
+            "title": "The Parent Rap",
+            "airDate": "2001-11-11",
+            "rating": 7.1
+          },
+          {
+            "episode": 3,
+            "title": "Homer the Moe",
+            "airDate": "2001-11-18",
+            "rating": 7.1
+          },
+          {
+            "episode": 4,
+            "title": "Hunka Hunka Burns in Love",
+            "airDate": "2001-12-02",
+            "rating": 7.1
+          },
+          {
+            "episode": 5,
+            "title": "The Blunder Years",
+            "airDate": "2001-12-09",
+            "rating": 7.6
+          },
+          {
+            "episode": 6,
+            "title": "She of Little Faith",
+            "airDate": "2001-12-16",
+            "rating": 7.1
+          },
+          {
+            "episode": 7,
+            "title": "Brawl in the Family",
+            "airDate": "2002-01-06",
+            "rating": 6.8
+          },
+          {
+            "episode": 8,
+            "title": "Sweets and Sour Marge",
+            "airDate": "2002-01-20",
+            "rating": 6.9
+          },
+          {
+            "episode": 9,
+            "title": "Jaws Wired Shut",
+            "airDate": "2002-01-27",
+            "rating": 7.3
+          },
+          {
+            "episode": 10,
+            "title": "Half-Decent Proposal",
+            "airDate": "2002-02-10",
+            "rating": 7.2
+          },
+          {
+            "episode": 11,
+            "title": "The Bart Wants What It Wants",
+            "airDate": "2002-02-17",
+            "rating": 7
+          },
+          {
+            "episode": 12,
+            "title": "The Lastest Gun in the West",
+            "airDate": "2002-02-24",
+            "rating": 6.5
+          },
+          {
+            "episode": 13,
+            "title": "The Old Man and the Key",
+            "airDate": "2002-03-10",
+            "rating": 6.5
+          },
+          {
+            "episode": 14,
+            "title": "Tales from the Public Domain",
+            "airDate": "2002-03-17",
+            "rating": 7.1
+          },
+          {
+            "episode": 15,
+            "title": "Blame It on Lisa",
+            "airDate": "2002-03-31",
+            "rating": 7
+          },
+          {
+            "episode": 16,
+            "title": "Weekend at Burnsies",
+            "airDate": "2002-04-07",
+            "rating": 7.7
+          },
+          {
+            "episode": 17,
+            "title": "Gump Roast",
+            "airDate": "2002-04-21",
+            "rating": 5.4
+          },
+          {
+            "episode": 18,
+            "title": "I Am Furious Yellow",
+            "airDate": "2002-04-28",
+            "rating": 7.7
+          },
+          {
+            "episode": 19,
+            "title": "The Sweetest Apu",
+            "airDate": "2002-05-05",
+            "rating": 6.7
+          },
+          {
+            "episode": 20,
+            "title": "Little Girl in the Big Ten",
+            "airDate": "2002-05-12",
+            "rating": 7.1
+          },
+          {
+            "episode": 21,
+            "title": "Frying Game",
+            "airDate": "2002-05-19",
+            "rating": 7
+          },
+          {
+            "episode": 22,
+            "title": "Papa's Got a Brand New Badge",
+            "airDate": "2002-05-22",
+            "rating": 7.7
+          }
+        ]
+      },
+      {
+        "season": 14,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Treehouse of Horror XIII",
+            "airDate": "2002-11-03",
+            "rating": 7.6
+          },
+          {
+            "episode": 2,
+            "title": "How I Spent My Strummer Vacation",
+            "airDate": "2002-11-10",
+            "rating": 7.4
+          },
+          {
+            "episode": 3,
+            "title": "Bart vs. Lisa vs. 3rd Grade",
+            "airDate": "2002-11-17",
+            "rating": 7.1
+          },
+          {
+            "episode": 4,
+            "title": "Large Marge",
+            "airDate": "2002-11-24",
+            "rating": 7.1
+          },
+          {
+            "episode": 5,
+            "title": "Helter Shelter",
+            "airDate": "2002-12-01",
+            "rating": 6.7
+          },
+          {
+            "episode": 6,
+            "title": "The Great Louse Detective",
+            "airDate": "2002-12-15",
+            "rating": 7.3
+          },
+          {
+            "episode": 7,
+            "title": "Special Edna (a.k.a. Love and Marking)",
+            "airDate": "2003-01-05",
+            "rating": 7
+          },
+          {
+            "episode": 8,
+            "title": "The Dad Who Knew Too Little",
+            "airDate": "2003-01-12",
+            "rating": 7.3
+          },
+          {
+            "episode": 9,
+            "title": "The Strong Arms of the Ma",
+            "airDate": "2003-02-02",
+            "rating": 6.8
+          },
+          {
+            "episode": 10,
+            "title": "Pray Anything",
+            "airDate": "2003-02-09",
+            "rating": 6.7
+          },
+          {
+            "episode": 11,
+            "title": "Barting Over",
+            "airDate": "2003-02-16",
+            "rating": 6.7
+          },
+          {
+            "episode": 12,
+            "title": "I'm Spelling As Fast As I Can",
+            "airDate": "2003-02-16",
+            "rating": 7.2
+          },
+          {
+            "episode": 13,
+            "title": "A Star is Born Again",
+            "airDate": "2003-03-02",
+            "rating": 6.9
+          },
+          {
+            "episode": 14,
+            "title": "Mr. Spritz Goes to Washington",
+            "airDate": "2003-03-09",
+            "rating": 6.8
+          },
+          {
+            "episode": 15,
+            "title": "C. E. D'oh",
+            "airDate": "2003-03-16",
+            "rating": 7.1
+          },
+          {
+            "episode": 16,
+            "title": "'Scuse Me While I Miss the Sky",
+            "airDate": "2003-03-30",
+            "rating": 7.1
+          },
+          {
+            "episode": 17,
+            "title": "Three Gays of the Condo",
+            "airDate": "2003-04-13",
+            "rating": 7.2
+          },
+          {
+            "episode": 18,
+            "title": "Dude, Where's My Ranch?",
+            "airDate": "2003-04-27",
+            "rating": 6.9
+          },
+          {
+            "episode": 19,
+            "title": "Old Yeller-Belly",
+            "airDate": "2003-05-04",
+            "rating": 6.6
+          },
+          {
+            "episode": 20,
+            "title": "Brake My Wife, Please",
+            "airDate": "2003-05-11",
+            "rating": 6.7
+          },
+          {
+            "episode": 21,
+            "title": "The Bart of War",
+            "airDate": "2003-05-18",
+            "rating": 6.6
+          },
+          {
+            "episode": 22,
+            "title": "Moe Baby Blues",
+            "airDate": "2003-05-18",
+            "rating": 7.6
+          }
+        ]
+      },
+      {
+        "season": 15,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Treehouse of Horror XIV",
+            "airDate": "2003-11-02",
+            "rating": 7.5
+          },
+          {
+            "episode": 2,
+            "title": "My Mother the Carjacker",
+            "airDate": "2003-11-09",
+            "rating": 7.2
+          },
+          {
+            "episode": 3,
+            "title": "The President Wore Pearls",
+            "airDate": "2003-11-16",
+            "rating": 6.8
+          },
+          {
+            "episode": 4,
+            "title": "The Regina Monologues",
+            "airDate": "2003-11-23",
+            "rating": 7
+          },
+          {
+            "episode": 5,
+            "title": "The Fat and the Furriest",
+            "airDate": "2003-11-30",
+            "rating": 7.1
+          },
+          {
+            "episode": 6,
+            "title": "Today I Am a Klown",
+            "airDate": "2003-12-07",
+            "rating": 6.4
+          },
+          {
+            "episode": 7,
+            "title": "'Tis the Fifteenth Season",
+            "airDate": "2003-12-14",
+            "rating": 7
+          },
+          {
+            "episode": 8,
+            "title": "Marge vs. Singles, Seniors, Childless Couples and Teens, and Gays",
+            "airDate": "2004-01-04",
+            "rating": 6.6
+          },
+          {
+            "episode": 9,
+            "title": "I, (Annoyed Grunt)-Bot",
+            "airDate": "2004-01-11",
+            "rating": 7.3
+          },
+          {
+            "episode": 10,
+            "title": "Diatribe of a Mad Housewife",
+            "airDate": "2004-01-25",
+            "rating": 7.2
+          },
+          {
+            "episode": 11,
+            "title": "Margical History Tour",
+            "airDate": "2004-02-08",
+            "rating": 7.1
+          },
+          {
+            "episode": 12,
+            "title": "Milhouse Doesn't Live Here Anymore",
+            "airDate": "2004-02-15",
+            "rating": 7.2
+          },
+          {
+            "episode": 13,
+            "title": "Smart & Smarter",
+            "airDate": "2004-02-22",
+            "rating": 7.1
+          },
+          {
+            "episode": 14,
+            "title": "The Ziff Who Came to Dinner",
+            "airDate": "2004-03-14",
+            "rating": 6.6
+          },
+          {
+            "episode": 15,
+            "title": "Co-Dependent's Day",
+            "airDate": "2004-03-21",
+            "rating": 6.7
+          },
+          {
+            "episode": 16,
+            "title": "Wandering Juvie",
+            "airDate": "2004-03-28",
+            "rating": 7
+          },
+          {
+            "episode": 17,
+            "title": "My Big Fat Geek Wedding",
+            "airDate": "2004-04-18",
+            "rating": 6.6
+          },
+          {
+            "episode": 18,
+            "title": "Catch 'Em If You Can",
+            "airDate": "2004-04-25",
+            "rating": 7.1
+          },
+          {
+            "episode": 19,
+            "title": "Simple Simpson",
+            "airDate": "2004-05-02",
+            "rating": 7.3
+          },
+          {
+            "episode": 20,
+            "title": "The Way We Weren't",
+            "airDate": "2004-05-09",
+            "rating": 7.2
+          },
+          {
+            "episode": 21,
+            "title": "Bart-Mangled Banner",
+            "airDate": "2004-05-16",
+            "rating": 6.3
+          },
+          {
+            "episode": 22,
+            "title": "Fraudcast News",
+            "airDate": "2004-05-23",
+            "rating": 7.2
+          }
+        ]
+      },
+      {
+        "season": 16,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Treehouse of Horror XV",
+            "airDate": "2004-11-07",
+            "rating": 7.4
+          },
+          {
+            "episode": 2,
+            "title": "All's Fair in Oven War",
+            "airDate": "2004-11-14",
+            "rating": 6.9
+          },
+          {
+            "episode": 3,
+            "title": "Sleeping with the Enemy",
+            "airDate": "2004-11-21",
+            "rating": 7.1
+          },
+          {
+            "episode": 4,
+            "title": "She Used to Be My Girl",
+            "airDate": "2004-12-05",
+            "rating": 6.5
+          },
+          {
+            "episode": 5,
+            "title": "Fat Man and Little Boy",
+            "airDate": "2004-12-12",
+            "rating": 7
+          },
+          {
+            "episode": 6,
+            "title": "Midnight Rx",
+            "airDate": "2005-01-16",
+            "rating": 7.1
+          },
+          {
+            "episode": 7,
+            "title": "Mommie Beerest",
+            "airDate": "2005-01-30",
+            "rating": 6.8
+          },
+          {
+            "episode": 8,
+            "title": "Homer and Ned's Hail Mary Pass",
+            "airDate": "2005-02-06",
+            "rating": 6.3
+          },
+          {
+            "episode": 9,
+            "title": "Pranksta Rap",
+            "airDate": "2005-02-13",
+            "rating": 6.5
+          },
+          {
+            "episode": 10,
+            "title": "There's Something About Marrying",
+            "airDate": "2005-02-20",
+            "rating": 6.9
+          },
+          {
+            "episode": 11,
+            "title": "On a Clear Day I Can't See My Sister",
+            "airDate": "2005-03-06",
+            "rating": 6.7
+          },
+          {
+            "episode": 12,
+            "title": "Goo Goo Gai Pan",
+            "airDate": "2005-03-13",
+            "rating": 6.9
+          },
+          {
+            "episode": 13,
+            "title": "Mobile Homer",
+            "airDate": "2005-03-20",
+            "rating": 6.7
+          },
+          {
+            "episode": 14,
+            "title": "The Seven-Beer Snitch",
+            "airDate": "2005-04-03",
+            "rating": 6.7
+          },
+          {
+            "episode": 15,
+            "title": "Future-Drama",
+            "airDate": "2005-04-17",
+            "rating": 7.3
+          },
+          {
+            "episode": 16,
+            "title": "Don't Fear the Roofer",
+            "airDate": "2005-05-01",
+            "rating": 7.4
+          },
+          {
+            "episode": 17,
+            "title": "The Heartbroke Kid",
+            "airDate": "2005-05-01",
+            "rating": 7.1
+          },
+          {
+            "episode": 18,
+            "title": "A Star is Torn",
+            "airDate": "2005-05-08",
+            "rating": 6.7
+          },
+          {
+            "episode": 19,
+            "title": "Thank God It's Doomsday",
+            "airDate": "2005-05-08",
+            "rating": 7.2
+          },
+          {
+            "episode": 20,
+            "title": "Home Away from Homer",
+            "airDate": "2005-05-15",
+            "rating": 7
+          },
+          {
+            "episode": 21,
+            "title": "Father, Son and Holy Guest-Star",
+            "airDate": "2005-05-15",
+            "rating": 7.2
+          }
+        ]
+      },
+      {
+        "season": 17,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Bonfire of the Manatees",
+            "airDate": "2005-09-11",
+            "rating": 6.2
+          },
+          {
+            "episode": 2,
+            "title": "The Girl Who Slept Too Little",
+            "airDate": "2005-09-18",
+            "rating": 6.8
+          },
+          {
+            "episode": 3,
+            "title": "Millhouse Of Sand And Fog",
+            "airDate": "2005-09-25",
+            "rating": 6.8
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XVI",
+            "airDate": "2005-11-06",
+            "rating": 7.3
+          },
+          {
+            "episode": 5,
+            "title": "Marge's Son Poisoning",
+            "airDate": "2005-11-13",
+            "rating": 6.9
+          },
+          {
+            "episode": 6,
+            "title": "See Homer Run",
+            "airDate": "2005-11-20",
+            "rating": 6.8
+          },
+          {
+            "episode": 7,
+            "title": "The Last of the Red Hat Mamas",
+            "airDate": "2005-11-27",
+            "rating": 6.6
+          },
+          {
+            "episode": 8,
+            "title": "The Italian Bob",
+            "airDate": "2005-12-11",
+            "rating": 7.2
+          },
+          {
+            "episode": 9,
+            "title": "Simpsons Christmas Stories",
+            "airDate": "2005-12-18",
+            "rating": 6.8
+          },
+          {
+            "episode": 10,
+            "title": "Homer's Paternity Coot",
+            "airDate": "2006-01-08",
+            "rating": 6.6
+          },
+          {
+            "episode": 11,
+            "title": "We're on the Road to D'oh-where",
+            "airDate": "2006-01-29",
+            "rating": 6.9
+          },
+          {
+            "episode": 12,
+            "title": "My Fair Laddy",
+            "airDate": "2006-02-26",
+            "rating": 6.5
+          },
+          {
+            "episode": 13,
+            "title": "The Seemingly Never-Ending Story",
+            "airDate": "2006-03-12",
+            "rating": 7.6
+          },
+          {
+            "episode": 14,
+            "title": "Bart Has Two Mommies",
+            "airDate": "2006-03-19",
+            "rating": 7
+          },
+          {
+            "episode": 15,
+            "title": "Homer Simpson, This is Your Wife",
+            "airDate": "2006-03-26",
+            "rating": 6.4
+          },
+          {
+            "episode": 16,
+            "title": "Million Dollar Abie",
+            "airDate": "2006-04-02",
+            "rating": 6.3
+          },
+          {
+            "episode": 17,
+            "title": "Kiss Kiss Bang Bangalore",
+            "airDate": "2006-04-09",
+            "rating": 7.1
+          },
+          {
+            "episode": 18,
+            "title": "The Wettest Stories Ever Told",
+            "airDate": "2006-04-23",
+            "rating": 6.7
+          },
+          {
+            "episode": 19,
+            "title": "Girls Just Want to Have Sums",
+            "airDate": "2006-04-30",
+            "rating": 7.1
+          },
+          {
+            "episode": 20,
+            "title": "Regarding Margie",
+            "airDate": "2006-05-07",
+            "rating": 6.7
+          },
+          {
+            "episode": 21,
+            "title": "The Monkey Suit",
+            "airDate": "2006-05-14",
+            "rating": 7.1
+          },
+          {
+            "episode": 22,
+            "title": "Marge and Homer Turn a Couple Play",
+            "airDate": "2006-05-21",
+            "rating": 6.3
+          }
+        ]
+      },
+      {
+        "season": 18,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Mook, the Chef, the Wife and Her Homer",
+            "airDate": "2006-09-10",
+            "rating": 7.5
+          },
+          {
+            "episode": 2,
+            "title": "Jazzy and the Pussycats",
+            "airDate": "2006-09-17",
+            "rating": 6.6
+          },
+          {
+            "episode": 3,
+            "title": "Please Homer, Don't Hammer 'em",
+            "airDate": "2006-09-24",
+            "rating": 6.7
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XVII",
+            "airDate": "2006-11-05",
+            "rating": 6.8
+          },
+          {
+            "episode": 5,
+            "title": "GI (Annoyed Grunt)",
+            "airDate": "2006-11-12",
+            "rating": 6.7
+          },
+          {
+            "episode": 6,
+            "title": "Moe 'N' a Lisa",
+            "airDate": "2006-11-19",
+            "rating": 6.7
+          },
+          {
+            "episode": 7,
+            "title": "Ice Cream of Margie (With the Light Blue Hair)",
+            "airDate": "2006-11-26",
+            "rating": 6.9
+          },
+          {
+            "episode": 8,
+            "title": "The Haw-Hawed Couple",
+            "airDate": "2006-12-10",
+            "rating": 7.2
+          },
+          {
+            "episode": 9,
+            "title": "Kill Gil (Parts I & II)",
+            "airDate": "2006-12-17",
+            "rating": 6.2
+          },
+          {
+            "episode": 10,
+            "title": "The Wife Aquatic",
+            "airDate": "2007-01-07",
+            "rating": 6.5
+          },
+          {
+            "episode": 11,
+            "title": "Revenge is a Dish Best Served Three Times",
+            "airDate": "2007-01-28",
+            "rating": 6.9
+          },
+          {
+            "episode": 12,
+            "title": "Little Big Girl",
+            "airDate": "2007-02-11",
+            "rating": 6.7
+          },
+          {
+            "episode": 13,
+            "title": "Springfield Up",
+            "airDate": "2007-02-18",
+            "rating": 7.3
+          },
+          {
+            "episode": 14,
+            "title": "Yokel Chords",
+            "airDate": "2007-03-04",
+            "rating": 6.8
+          },
+          {
+            "episode": 15,
+            "title": "Rome-old and Juli-eh",
+            "airDate": "2007-03-11",
+            "rating": 6.3
+          },
+          {
+            "episode": 16,
+            "title": "Homerazzi",
+            "airDate": "2007-03-25",
+            "rating": 7
+          },
+          {
+            "episode": 17,
+            "title": "Marge Gamer",
+            "airDate": "2007-04-22",
+            "rating": 7.2
+          },
+          {
+            "episode": 18,
+            "title": "The Boys of Bummer",
+            "airDate": "2007-04-29",
+            "rating": 5.9
+          },
+          {
+            "episode": 19,
+            "title": "Crook and Ladder",
+            "airDate": "2007-05-06",
+            "rating": 6.9
+          },
+          {
+            "episode": 20,
+            "title": "Stop or My Dog Will Shoot",
+            "airDate": "2007-05-13",
+            "rating": 6.8
+          },
+          {
+            "episode": 21,
+            "title": "24 Minutes",
+            "airDate": "2007-05-20",
+            "rating": 8.1
+          },
+          {
+            "episode": 22,
+            "title": "You Kent Always Say What You Want",
+            "airDate": "2007-05-20",
+            "rating": 7.1
+          }
+        ]
+      },
+      {
+        "season": 19,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "He Loves to Fly and He D'ohs",
+            "airDate": "2007-09-23",
+            "rating": 6.6
+          },
+          {
+            "episode": 2,
+            "title": "Homer of Seville",
+            "airDate": "2007-09-30",
+            "rating": 6.5
+          },
+          {
+            "episode": 3,
+            "title": "Midnight Towboy",
+            "airDate": "2007-10-07",
+            "rating": 7.1
+          },
+          {
+            "episode": 4,
+            "title": "I Don't Wanna Know Why the Caged Bird Sings",
+            "airDate": "2007-10-14",
+            "rating": 6.7
+          },
+          {
+            "episode": 5,
+            "title": "Treehouse of Horror XVIII",
+            "airDate": "2007-11-04",
+            "rating": 6.9
+          },
+          {
+            "episode": 6,
+            "title": "Little Orphan Millie",
+            "airDate": "2007-11-11",
+            "rating": 6.6
+          },
+          {
+            "episode": 7,
+            "title": "Husbands and Knives",
+            "airDate": "2007-11-18",
+            "rating": 6.9
+          },
+          {
+            "episode": 8,
+            "title": "Funeral for a Fiend",
+            "airDate": "2007-11-25",
+            "rating": 7.1
+          },
+          {
+            "episode": 9,
+            "title": "Eternal Moonshine of the Simpson Mind",
+            "airDate": "2007-12-16",
+            "rating": 8.2
+          },
+          {
+            "episode": 10,
+            "title": "E Pluribus Wiggum",
+            "airDate": "2008-01-06",
+            "rating": 6.7
+          },
+          {
+            "episode": 11,
+            "title": "That 90's Show",
+            "airDate": "2008-01-27",
+            "rating": 6.3
+          },
+          {
+            "episode": 12,
+            "title": "Love, Springfieldian Style",
+            "airDate": "2008-02-17",
+            "rating": 6.5
+          },
+          {
+            "episode": 13,
+            "title": "The Debarted",
+            "airDate": "2008-03-02",
+            "rating": 7.6
+          },
+          {
+            "episode": 14,
+            "title": "Dial 'N' for Nerder",
+            "airDate": "2008-03-09",
+            "rating": 7.4
+          },
+          {
+            "episode": 15,
+            "title": "Smoke on the Daughter",
+            "airDate": "2008-03-30",
+            "rating": 6.6
+          },
+          {
+            "episode": 16,
+            "title": "Papa Don't Leech",
+            "airDate": "2008-04-13",
+            "rating": 6.1
+          },
+          {
+            "episode": 17,
+            "title": "Apocalypse Cow",
+            "airDate": "2008-04-27",
+            "rating": 6.8
+          },
+          {
+            "episode": 18,
+            "title": "Any Given Sundance",
+            "airDate": "2008-05-04",
+            "rating": 7
+          },
+          {
+            "episode": 19,
+            "title": "Mona Leaves-a",
+            "airDate": "2008-05-11",
+            "rating": 7
+          },
+          {
+            "episode": 20,
+            "title": "All About Lisa",
+            "airDate": "2008-05-18",
+            "rating": 6.4
+          }
+        ]
+      },
+      {
+        "season": 20,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Sex, Pies and Idiot Scrapes",
+            "airDate": "2008-09-28",
+            "rating": 7.2
+          },
+          {
+            "episode": 2,
+            "title": "Lost Verizon",
+            "airDate": "2008-10-05",
+            "rating": 6.8
+          },
+          {
+            "episode": 3,
+            "title": "Double, Double, Boy in Trouble",
+            "airDate": "2008-10-19",
+            "rating": 6.8
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XIX",
+            "airDate": "2008-11-02",
+            "rating": 7.1
+          },
+          {
+            "episode": 5,
+            "title": "Dangerous Curves",
+            "airDate": "2008-11-09",
+            "rating": 6.5
+          },
+          {
+            "episode": 6,
+            "title": "Homer and Lisa Exchange Cross Words",
+            "airDate": "2008-11-16",
+            "rating": 7.1
+          },
+          {
+            "episode": 7,
+            "title": "Mypods and Boomsticks",
+            "airDate": "2008-11-30",
+            "rating": 7.1
+          },
+          {
+            "episode": 8,
+            "title": "The Burns and the Bees",
+            "airDate": "2008-12-07",
+            "rating": 6.5
+          },
+          {
+            "episode": 9,
+            "title": "Lisa the Drama Queen",
+            "airDate": "2009-01-25",
+            "rating": 6
+          },
+          {
+            "episode": 10,
+            "title": "Take My Life, Please",
+            "airDate": "2009-02-15",
+            "rating": 6.9
+          },
+          {
+            "episode": 11,
+            "title": "How the Test Was Won",
+            "airDate": "2009-03-01",
+            "rating": 7
+          },
+          {
+            "episode": 12,
+            "title": "No Loan Again, Naturally",
+            "airDate": "2009-03-08",
+            "rating": 6.8
+          },
+          {
+            "episode": 13,
+            "title": "Gone Maggie Gone",
+            "airDate": "2009-03-15",
+            "rating": 7.2
+          },
+          {
+            "episode": 14,
+            "title": "In the Name of the Grandfather",
+            "airDate": "2009-03-22",
+            "rating": 6.4
+          },
+          {
+            "episode": 15,
+            "title": "Wedding for Disaster",
+            "airDate": "2009-03-29",
+            "rating": 6.5
+          },
+          {
+            "episode": 16,
+            "title": "Eeny Teeny Maya Moe",
+            "airDate": "2009-04-05",
+            "rating": 7.2
+          },
+          {
+            "episode": 17,
+            "title": "The Good, the Sad and the Drugly",
+            "airDate": "2009-04-19",
+            "rating": 7.2
+          },
+          {
+            "episode": 18,
+            "title": "Father Knows Worst",
+            "airDate": "2009-04-26",
+            "rating": 6.9
+          },
+          {
+            "episode": 19,
+            "title": "Waverly Hills, 9021-D'Oh",
+            "airDate": "2009-05-03",
+            "rating": 7.1
+          },
+          {
+            "episode": 20,
+            "title": "Four Great Women and a Manicure",
+            "airDate": "2009-05-10",
+            "rating": 6.5
+          },
+          {
+            "episode": 21,
+            "title": "Coming to Homerica",
+            "airDate": "2009-05-17",
+            "rating": 7.2
+          }
+        ]
+      },
+      {
+        "season": 21,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Homer the Whopper",
+            "airDate": "2009-09-27",
+            "rating": 7.1
+          },
+          {
+            "episode": 2,
+            "title": "Bart Gets a 'Z'",
+            "airDate": "2009-10-04",
+            "rating": 6.6
+          },
+          {
+            "episode": 3,
+            "title": "The Great Wife Hope",
+            "airDate": "2009-10-11",
+            "rating": 6.3
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XX",
+            "airDate": "2009-10-18",
+            "rating": 7.3
+          },
+          {
+            "episode": 5,
+            "title": "The Devil Wears Nada",
+            "airDate": "2009-11-15",
+            "rating": 6.7
+          },
+          {
+            "episode": 6,
+            "title": "Pranks and Greens",
+            "airDate": "2009-11-22",
+            "rating": 6.6
+          },
+          {
+            "episode": 7,
+            "title": "Rednecks and Broomsticks",
+            "airDate": "2009-11-29",
+            "rating": 6.7
+          },
+          {
+            "episode": 8,
+            "title": "O Brother, Where Bart Thou?",
+            "airDate": "2009-12-13",
+            "rating": 7.1
+          },
+          {
+            "episode": 9,
+            "title": "Thursdays with Abie",
+            "airDate": "2010-01-03",
+            "rating": 6.7
+          },
+          {
+            "episode": 10,
+            "title": "Once Upon a Time in Springfield",
+            "airDate": "2010-01-10",
+            "rating": 6.5
+          },
+          {
+            "episode": 11,
+            "title": "Million Dollar Maybe",
+            "airDate": "2010-01-31",
+            "rating": 7.1
+          },
+          {
+            "episode": 12,
+            "title": "Boy Meets Curl",
+            "airDate": "2010-02-14",
+            "rating": 6.8
+          },
+          {
+            "episode": 13,
+            "title": "The Color Yellow",
+            "airDate": "2010-02-21",
+            "rating": 6.6
+          },
+          {
+            "episode": 14,
+            "title": "Postcards from the Wedge",
+            "airDate": "2010-03-14",
+            "rating": 6.9
+          },
+          {
+            "episode": 15,
+            "title": "Stealing First Base",
+            "airDate": "2010-03-21",
+            "rating": 7
+          },
+          {
+            "episode": 16,
+            "title": "The Greatest Story Ever Doh'd",
+            "airDate": "2010-03-28",
+            "rating": 5.7
+          },
+          {
+            "episode": 17,
+            "title": "American History X-cellent",
+            "airDate": "2010-04-11",
+            "rating": 6.6
+          },
+          {
+            "episode": 18,
+            "title": "Chief of Hearts",
+            "airDate": "2010-04-18",
+            "rating": 6.8
+          },
+          {
+            "episode": 19,
+            "title": "The Squirt and the Whale",
+            "airDate": "2010-04-25",
+            "rating": 6.8
+          },
+          {
+            "episode": 20,
+            "title": "To Surveil with Love",
+            "airDate": "2010-05-02",
+            "rating": 7.1
+          },
+          {
+            "episode": 21,
+            "title": "Moe Letter Blues",
+            "airDate": "2010-05-09",
+            "rating": 7
+          },
+          {
+            "episode": 22,
+            "title": "The Bob Next Door",
+            "airDate": "2010-05-16",
+            "rating": 7.3
+          },
+          {
+            "episode": 23,
+            "title": "Judge Me Tender",
+            "airDate": "2010-05-23",
+            "rating": 6.4
+          }
+        ]
+      },
+      {
+        "season": 22,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Elementary School Musical",
+            "airDate": "2010-09-26",
+            "rating": 6.1
+          },
+          {
+            "episode": 2,
+            "title": "Loan-a-Lisa",
+            "airDate": "2010-10-03",
+            "rating": 6.7
+          },
+          {
+            "episode": 3,
+            "title": "Money Bart",
+            "airDate": "2010-10-10",
+            "rating": 6.7
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XXI",
+            "airDate": "2010-11-07",
+            "rating": 7.1
+          },
+          {
+            "episode": 5,
+            "title": "Lisa Simpson, This Isn't Your Life",
+            "airDate": "2010-11-14",
+            "rating": 7.2
+          },
+          {
+            "episode": 6,
+            "title": "The Fool Monty",
+            "airDate": "2010-11-21",
+            "rating": 6.5
+          },
+          {
+            "episode": 7,
+            "title": "How Munched is That Birdie in the Window",
+            "airDate": "2010-11-28",
+            "rating": 6.3
+          },
+          {
+            "episode": 8,
+            "title": "The Fight Before Christmas",
+            "airDate": "2010-12-05",
+            "rating": 6.7
+          },
+          {
+            "episode": 9,
+            "title": "Donnie Fatso",
+            "airDate": "2010-12-12",
+            "rating": 7
+          },
+          {
+            "episode": 10,
+            "title": "Moms I'd Like to Forget",
+            "airDate": "2011-01-09",
+            "rating": 6.3
+          },
+          {
+            "episode": 11,
+            "title": "Flaming Moe",
+            "airDate": "2011-01-16",
+            "rating": 6.7
+          },
+          {
+            "episode": 12,
+            "title": "Homer the Father",
+            "airDate": "2011-01-23",
+            "rating": 6.9
+          },
+          {
+            "episode": 13,
+            "title": "The Blue and the Gray",
+            "airDate": "2011-02-13",
+            "rating": 6.7
+          },
+          {
+            "episode": 14,
+            "title": "Angry Dad: The Movie",
+            "airDate": "2011-02-20",
+            "rating": 7.2
+          },
+          {
+            "episode": 15,
+            "title": "The Scorpion's Tale",
+            "airDate": "2011-03-06",
+            "rating": 6.6
+          },
+          {
+            "episode": 16,
+            "title": "A Midsummer's Nice Dream",
+            "airDate": "2011-03-13",
+            "rating": 6
+          },
+          {
+            "episode": 17,
+            "title": "Love is a Many Strangled Thing",
+            "airDate": "2011-03-27",
+            "rating": 6.1
+          },
+          {
+            "episode": 18,
+            "title": "The Great Simpsina",
+            "airDate": "2011-04-10",
+            "rating": 6.8
+          },
+          {
+            "episode": 19,
+            "title": "The Real Housewives of Fat Tony",
+            "airDate": "2011-05-01",
+            "rating": 6.5
+          },
+          {
+            "episode": 20,
+            "title": "Homer Scissorhands",
+            "airDate": "2011-05-08",
+            "rating": 7.1
+          },
+          {
+            "episode": 21,
+            "title": "500 Keys",
+            "airDate": "2011-05-15",
+            "rating": 7.3
+          },
+          {
+            "episode": 22,
+            "title": "The Ned-Liest Catch",
+            "airDate": "2011-05-22",
+            "rating": 7
+          }
+        ]
+      },
+      {
+        "season": 23,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Falcon and the D'ohman",
+            "airDate": "2011-09-25",
+            "rating": 7.1
+          },
+          {
+            "episode": 2,
+            "title": "Bart Stops to Smell the Roosevelts",
+            "airDate": "2011-10-02",
+            "rating": 7.1
+          },
+          {
+            "episode": 3,
+            "title": "Treehouse of Horror XXII",
+            "airDate": "2011-10-30",
+            "rating": 6.4
+          },
+          {
+            "episode": 4,
+            "title": "Replaceable You",
+            "airDate": "2011-11-06",
+            "rating": 6.4
+          },
+          {
+            "episode": 5,
+            "title": "The Food Wife",
+            "airDate": "2011-11-13",
+            "rating": 7.1
+          },
+          {
+            "episode": 6,
+            "title": "The Book Job",
+            "airDate": "2011-11-20",
+            "rating": 7.9
+          },
+          {
+            "episode": 7,
+            "title": "The Man in the Blue Flannel Pants",
+            "airDate": "2011-11-27",
+            "rating": 6.6
+          },
+          {
+            "episode": 8,
+            "title": "The Ten-Per-Cent Solution",
+            "airDate": "2011-12-04",
+            "rating": 6.1
+          },
+          {
+            "episode": 9,
+            "title": "Holidays of Future Passed",
+            "airDate": "2011-12-11",
+            "rating": 8.3
+          },
+          {
+            "episode": 10,
+            "title": "Politically Inept, with Homer Simpson",
+            "airDate": "2012-01-08",
+            "rating": 6
+          },
+          {
+            "episode": 11,
+            "title": "The D'oh-cial Network",
+            "airDate": "2012-01-15",
+            "rating": 6.9
+          },
+          {
+            "episode": 12,
+            "title": "Moe Goes from Rags to Riches",
+            "airDate": "2012-01-29",
+            "rating": 5.7
+          },
+          {
+            "episode": 13,
+            "title": "The Daughter Also Rises",
+            "airDate": "2012-02-12",
+            "rating": 6.3
+          },
+          {
+            "episode": 14,
+            "title": "At Long Last Leave",
+            "airDate": "2012-02-19",
+            "rating": 6.9
+          },
+          {
+            "episode": 15,
+            "title": "Exit Through the Kwik-E-Mart",
+            "airDate": "2012-03-04",
+            "rating": 6.8
+          },
+          {
+            "episode": 16,
+            "title": "How I Wet Your Mother",
+            "airDate": "2012-03-11",
+            "rating": 7.2
+          },
+          {
+            "episode": 17,
+            "title": "Them, Robot",
+            "airDate": "2012-03-18",
+            "rating": 6.9
+          },
+          {
+            "episode": 18,
+            "title": "Beware My Cheating Bart",
+            "airDate": "2012-04-15",
+            "rating": 7.1
+          },
+          {
+            "episode": 19,
+            "title": "A Totally Fun Thing That Bart Will Never Do Again",
+            "airDate": "2012-04-29",
+            "rating": 7.6
+          },
+          {
+            "episode": 20,
+            "title": "The Spy Who Learned Me",
+            "airDate": "2012-05-06",
+            "rating": 6.7
+          },
+          {
+            "episode": 21,
+            "title": "Ned 'n' Edna's Blend",
+            "airDate": "2012-05-13",
+            "rating": 6.6
+          },
+          {
+            "episode": 22,
+            "title": "Lisa Goes Gaga",
+            "airDate": "2012-05-20",
+            "rating": 4
+          }
+        ]
+      },
+      {
+        "season": 24,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Moonshine River",
+            "airDate": "2012-09-30",
+            "rating": 6.3
+          },
+          {
+            "episode": 2,
+            "title": "Treehouse of Horror XXIII",
+            "airDate": "2012-10-07",
+            "rating": 7.2
+          },
+          {
+            "episode": 3,
+            "title": "Adventures in Baby-Getting",
+            "airDate": "2012-11-04",
+            "rating": 6.8
+          },
+          {
+            "episode": 4,
+            "title": "Gone Abie Gone",
+            "airDate": "2012-11-11",
+            "rating": 6.7
+          },
+          {
+            "episode": 5,
+            "title": "Penny-Wiseguys",
+            "airDate": "2012-11-18",
+            "rating": 6.3
+          },
+          {
+            "episode": 6,
+            "title": "A Tree Grows in Springfield",
+            "airDate": "2012-11-25",
+            "rating": 6.3
+          },
+          {
+            "episode": 7,
+            "title": "The Day the Earth Stood Cool",
+            "airDate": "2012-12-09",
+            "rating": 6.9
+          },
+          {
+            "episode": 8,
+            "title": "To Cur with Love",
+            "airDate": "2012-12-16",
+            "rating": 7.2
+          },
+          {
+            "episode": 9,
+            "title": "Homer Goes to Prep School",
+            "airDate": "2013-01-06",
+            "rating": 6.7
+          },
+          {
+            "episode": 10,
+            "title": "A Test Before Trying",
+            "airDate": "2013-01-13",
+            "rating": 6.9
+          },
+          {
+            "episode": 11,
+            "title": "The Changing of the Guardian",
+            "airDate": "2013-01-27",
+            "rating": 6.5
+          },
+          {
+            "episode": 12,
+            "title": "Love is a Many-Splintered Thing",
+            "airDate": "2013-02-10",
+            "rating": 6.2
+          },
+          {
+            "episode": 13,
+            "title": "Hardly Kirk-Ing",
+            "airDate": "2013-02-17",
+            "rating": 7
+          },
+          {
+            "episode": 14,
+            "title": "Gorgeous Grampa",
+            "airDate": "2013-03-03",
+            "rating": 6.2
+          },
+          {
+            "episode": 15,
+            "title": "Black-eyed, Please",
+            "airDate": "2013-03-10",
+            "rating": 6.9
+          },
+          {
+            "episode": 16,
+            "title": "Dark Knight Court",
+            "airDate": "2013-03-17",
+            "rating": 7.1
+          },
+          {
+            "episode": 17,
+            "title": "What Animated Women Want",
+            "airDate": "2013-04-14",
+            "rating": 6.4
+          },
+          {
+            "episode": 18,
+            "title": "Pulpit Friction",
+            "airDate": "2013-04-28",
+            "rating": 6.4
+          },
+          {
+            "episode": 19,
+            "title": "Whiskey Business",
+            "airDate": "2013-05-05",
+            "rating": 6.7
+          },
+          {
+            "episode": 20,
+            "title": "The Fabulous Faker Boy",
+            "airDate": "2013-05-12",
+            "rating": 6.2
+          },
+          {
+            "episode": 21,
+            "title": "The Saga of Carl",
+            "airDate": "2013-05-19",
+            "rating": 7.1
+          },
+          {
+            "episode": 22,
+            "title": "Dangers on a Train",
+            "airDate": "2013-05-19",
+            "rating": 7
+          }
+        ]
+      },
+      {
+        "season": 25,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Homerland",
+            "airDate": "2013-09-29",
+            "rating": 6.9
+          },
+          {
+            "episode": 2,
+            "title": "Treehouse of Horror XXIV",
+            "airDate": "2013-10-06",
+            "rating": 6.9
+          },
+          {
+            "episode": 3,
+            "title": "Four Regrettings and a Funeral",
+            "airDate": "2013-11-03",
+            "rating": 6.4
+          },
+          {
+            "episode": 4,
+            "title": "YOLO",
+            "airDate": "2013-11-10",
+            "rating": 6.5
+          },
+          {
+            "episode": 5,
+            "title": "Labor Pains",
+            "airDate": "2013-11-17",
+            "rating": 6.8
+          },
+          {
+            "episode": 6,
+            "title": "The Kid is All Right",
+            "airDate": "2013-11-24",
+            "rating": 6.4
+          },
+          {
+            "episode": 7,
+            "title": "Yellow Subterfuge",
+            "airDate": "2013-12-08",
+            "rating": 6.7
+          },
+          {
+            "episode": 8,
+            "title": "White Christmas Blues",
+            "airDate": "2013-12-15",
+            "rating": 6.4
+          },
+          {
+            "episode": 9,
+            "title": "Steal This Episode",
+            "airDate": "2014-01-05",
+            "rating": 7.6
+          },
+          {
+            "episode": 10,
+            "title": "Married to the Blob",
+            "airDate": "2014-01-12",
+            "rating": 6.9
+          },
+          {
+            "episode": 11,
+            "title": "Specs and the City",
+            "airDate": "2014-01-26",
+            "rating": 7.1
+          },
+          {
+            "episode": 12,
+            "title": "Diggs",
+            "airDate": "2014-03-09",
+            "rating": 6.3
+          },
+          {
+            "episode": 13,
+            "title": "The Man Who Grew Too Much",
+            "airDate": "2014-03-09",
+            "rating": 6.6
+          },
+          {
+            "episode": 14,
+            "title": "The Winter of His Content",
+            "airDate": "2014-03-16",
+            "rating": 6.6
+          },
+          {
+            "episode": 15,
+            "title": "The War of Art",
+            "airDate": "2014-03-23",
+            "rating": 6.9
+          },
+          {
+            "episode": 16,
+            "title": "You Don't Have to Live Like a Referee",
+            "airDate": "2014-03-30",
+            "rating": 6.7
+          },
+          {
+            "episode": 17,
+            "title": "Luca$",
+            "airDate": "2014-04-06",
+            "rating": 6.3
+          },
+          {
+            "episode": 18,
+            "title": "Days of Future Future",
+            "airDate": "2014-04-13",
+            "rating": 7
+          },
+          {
+            "episode": 19,
+            "title": "What to Expect When Bart's Expecting",
+            "airDate": "2014-04-27",
+            "rating": 5.8
+          },
+          {
+            "episode": 20,
+            "title": "Brick Like Me",
+            "airDate": "2014-05-04",
+            "rating": 8
+          },
+          {
+            "episode": 21,
+            "title": "Pay Pal",
+            "airDate": "2014-05-11",
+            "rating": 6.6
+          },
+          {
+            "episode": 22,
+            "title": "The Yellow Badge of Cowardge",
+            "airDate": "2014-05-18",
+            "rating": 6.6
+          }
+        ]
+      },
+      {
+        "season": 26,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Clown in the Dumps",
+            "airDate": "2014-09-28",
+            "rating": 5.7
+          },
+          {
+            "episode": 2,
+            "title": "The Wreck of the Relationship",
+            "airDate": "2014-10-05",
+            "rating": 6.7
+          },
+          {
+            "episode": 3,
+            "title": "Super Franchise Me",
+            "airDate": "2014-10-12",
+            "rating": 6.4
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XXV",
+            "airDate": "2014-10-19",
+            "rating": 7.4
+          },
+          {
+            "episode": 5,
+            "title": "Opposites A-frack",
+            "airDate": "2014-11-02",
+            "rating": 6.3
+          },
+          {
+            "episode": 6,
+            "title": "Simpsorama",
+            "airDate": "2014-11-09",
+            "rating": 7.9
+          },
+          {
+            "episode": 7,
+            "title": "Blazed and Confused",
+            "airDate": "2014-11-16",
+            "rating": 6.8
+          },
+          {
+            "episode": 8,
+            "title": "Covercraft",
+            "airDate": "2014-11-23",
+            "rating": 6.4
+          },
+          {
+            "episode": 9,
+            "title": "I Won't Be Home for Christmas",
+            "airDate": "2014-12-07",
+            "rating": 6.8
+          },
+          {
+            "episode": 10,
+            "title": "The Man Who Came to Be Dinner",
+            "airDate": "2015-01-04",
+            "rating": 6.6
+          },
+          {
+            "episode": 11,
+            "title": "Bart's New Friend",
+            "airDate": "2015-01-11",
+            "rating": 7.2
+          },
+          {
+            "episode": 12,
+            "title": "The Musk Who Fell to Earth",
+            "airDate": "2015-01-25",
+            "rating": 5.3
+          },
+          {
+            "episode": 13,
+            "title": "Walking Big & Tall",
+            "airDate": "2015-02-08",
+            "rating": 6.3
+          },
+          {
+            "episode": 14,
+            "title": "My Fare Lady",
+            "airDate": "2015-02-15",
+            "rating": 6.6
+          },
+          {
+            "episode": 15,
+            "title": "The Princess Guide",
+            "airDate": "2015-03-01",
+            "rating": 6.4
+          },
+          {
+            "episode": 16,
+            "title": "Sky Police",
+            "airDate": "2015-03-08",
+            "rating": 6.8
+          },
+          {
+            "episode": 17,
+            "title": "Waiting for Duffman",
+            "airDate": "2015-03-15",
+            "rating": 6.6
+          },
+          {
+            "episode": 18,
+            "title": "Peeping Mom",
+            "airDate": "2015-04-19",
+            "rating": 6.6
+          },
+          {
+            "episode": 19,
+            "title": "The Kids Are All Fight",
+            "airDate": "2015-04-26",
+            "rating": 6.7
+          },
+          {
+            "episode": 20,
+            "title": "Let's Go Fly a Coot",
+            "airDate": "2015-05-03",
+            "rating": 6.1
+          },
+          {
+            "episode": 21,
+            "title": "Bull-E",
+            "airDate": "2015-05-10",
+            "rating": 6.5
+          },
+          {
+            "episode": 22,
+            "title": "Mathlete's Feat",
+            "airDate": "2015-05-17",
+            "rating": 6.7
+          }
+        ]
+      },
+      {
+        "season": 27,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Every Man's Dream",
+            "airDate": "2015-09-27",
+            "rating": 5.6
+          },
+          {
+            "episode": 2,
+            "title": "Cue Detective",
+            "airDate": "2015-10-04",
+            "rating": 6.6
+          },
+          {
+            "episode": 3,
+            "title": "Puffless",
+            "airDate": "2015-10-11",
+            "rating": 6.9
+          },
+          {
+            "episode": 4,
+            "title": "Halloween of Horror",
+            "airDate": "2015-10-18",
+            "rating": 7.6
+          },
+          {
+            "episode": 5,
+            "title": "Treehouse of Horror XXVI",
+            "airDate": "2015-10-25",
+            "rating": 6.6
+          },
+          {
+            "episode": 6,
+            "title": "Friend with Benefit",
+            "airDate": "2015-11-08",
+            "rating": 6.6
+          },
+          {
+            "episode": 7,
+            "title": "Lisa with an 'S'",
+            "airDate": "2015-11-22",
+            "rating": 5.9
+          },
+          {
+            "episode": 8,
+            "title": "Paths of Glory",
+            "airDate": "2015-12-06",
+            "rating": 6.8
+          },
+          {
+            "episode": 9,
+            "title": "Barthood",
+            "airDate": "2015-12-13",
+            "rating": 8.4
+          },
+          {
+            "episode": 10,
+            "title": "The Girl Code",
+            "airDate": "2016-01-03",
+            "rating": 6.6
+          },
+          {
+            "episode": 11,
+            "title": "Teenage Mutant Milk-caused Hurdles",
+            "airDate": "2016-01-10",
+            "rating": 6.5
+          },
+          {
+            "episode": 12,
+            "title": "Much Apu About Something",
+            "airDate": "2016-01-17",
+            "rating": 6.5
+          },
+          {
+            "episode": 13,
+            "title": "Love is in the N2-O2-Ar-CO2-Ne-He-CH4",
+            "airDate": "2016-02-14",
+            "rating": 6.4
+          },
+          {
+            "episode": 14,
+            "title": "Gal of Constant Sorrow",
+            "airDate": "2016-02-21",
+            "rating": 6.5
+          },
+          {
+            "episode": 15,
+            "title": "Lisa the Veterinarian",
+            "airDate": "2016-03-06",
+            "rating": 6.4
+          },
+          {
+            "episode": 16,
+            "title": "The Marge-ian Chronicles",
+            "airDate": "2016-03-13",
+            "rating": 7
+          },
+          {
+            "episode": 17,
+            "title": "The Burns Cage",
+            "airDate": "2016-04-03",
+            "rating": 6.4
+          },
+          {
+            "episode": 18,
+            "title": "How Lisa Got Her Marge Back",
+            "airDate": "2016-04-10",
+            "rating": 6.2
+          },
+          {
+            "episode": 19,
+            "title": "Fland Canyon",
+            "airDate": "2016-04-24",
+            "rating": 7.1
+          },
+          {
+            "episode": 20,
+            "title": "To Courier with Love",
+            "airDate": "2016-05-08",
+            "rating": 6.7
+          },
+          {
+            "episode": 21,
+            "title": "Simprovised",
+            "airDate": "2016-05-15",
+            "rating": 6.3
+          },
+          {
+            "episode": 22,
+            "title": "Orange is the New Yellow",
+            "airDate": "2016-05-22",
+            "rating": 6.6
+          }
+        ]
+      },
+      {
+        "season": 28,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Monty Burns' Fleeing Circus",
+            "airDate": "2016-09-25",
+            "rating": 6.1
+          },
+          {
+            "episode": 2,
+            "title": "Friends and Family",
+            "airDate": "2016-10-02",
+            "rating": 6.6
+          },
+          {
+            "episode": 3,
+            "title": "The Town",
+            "airDate": "2016-10-09",
+            "rating": 7
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XXVII",
+            "airDate": "2016-10-16",
+            "rating": 6.8
+          },
+          {
+            "episode": 5,
+            "title": "Trust But Clarify",
+            "airDate": "2016-10-23",
+            "rating": 6.3
+          },
+          {
+            "episode": 6,
+            "title": "There Will Be Buds",
+            "airDate": "2016-11-06",
+            "rating": 6.6
+          },
+          {
+            "episode": 7,
+            "title": "Havana Wild Weekend",
+            "airDate": "2016-11-13",
+            "rating": 6.2
+          },
+          {
+            "episode": 8,
+            "title": "Dad Behavior",
+            "airDate": "2016-11-20",
+            "rating": 6.5
+          },
+          {
+            "episode": 9,
+            "title": "The Last Traction Hero",
+            "airDate": "2016-12-04",
+            "rating": 6.4
+          },
+          {
+            "episode": 10,
+            "title": "The Nightmare After Krustmas",
+            "airDate": "2016-12-11",
+            "rating": 5.9
+          },
+          {
+            "episode": 11,
+            "title": "Pork & Burns",
+            "airDate": "2017-01-08",
+            "rating": 6.7
+          },
+          {
+            "episode": 12,
+            "title": "The Great Phatsby, Part One",
+            "airDate": "2017-01-15",
+            "rating": 6.1
+          },
+          {
+            "episode": 13,
+            "title": "The Great Phatsby, Part Two",
+            "airDate": "2017-01-15",
+            "rating": 6.5
+          },
+          {
+            "episode": 14,
+            "title": "Fatzcarraldo",
+            "airDate": "2017-02-12",
+            "rating": 6.4
+          },
+          {
+            "episode": 15,
+            "title": "The Cad and the Hat",
+            "airDate": "2017-02-19",
+            "rating": 6.5
+          },
+          {
+            "episode": 16,
+            "title": "Kamp Krustier",
+            "airDate": "2017-03-05",
+            "rating": 6.5
+          },
+          {
+            "episode": 17,
+            "title": "22 for 30",
+            "airDate": "2017-03-12",
+            "rating": 6.5
+          },
+          {
+            "episode": 18,
+            "title": "A Father's Watch",
+            "airDate": "2017-03-19",
+            "rating": 6.8
+          },
+          {
+            "episode": 19,
+            "title": "Caper Chase",
+            "airDate": "2017-04-02",
+            "rating": 6.1
+          },
+          {
+            "episode": 20,
+            "title": "Looking for Mr. Goodbart",
+            "airDate": "2017-04-30",
+            "rating": 6.8
+          },
+          {
+            "episode": 21,
+            "title": "Moho House",
+            "airDate": "2017-05-07",
+            "rating": 6.1
+          },
+          {
+            "episode": 22,
+            "title": "Dogtown",
+            "airDate": "2017-05-21",
+            "rating": 6.4
+          }
+        ]
+      },
+      {
+        "season": 29,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Serfsons",
+            "airDate": "2017-10-01",
+            "rating": 6.8
+          },
+          {
+            "episode": 2,
+            "title": "Springfield Splendor",
+            "airDate": "2017-10-08",
+            "rating": 6.6
+          },
+          {
+            "episode": 3,
+            "title": "Whistler's Father",
+            "airDate": "2017-10-15",
+            "rating": 6.1
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XXVIII",
+            "airDate": "2017-10-22",
+            "rating": 7.1
+          },
+          {
+            "episode": 5,
+            "title": "Grampy Can Ya Hear Me",
+            "airDate": "2017-11-05",
+            "rating": 6.4
+          },
+          {
+            "episode": 6,
+            "title": "The Old Blue Mayor She Ain't What She Used to Be",
+            "airDate": "2017-11-12",
+            "rating": 6.3
+          },
+          {
+            "episode": 7,
+            "title": "Singin' in the Lane",
+            "airDate": "2017-11-19",
+            "rating": 6.4
+          },
+          {
+            "episode": 8,
+            "title": "Mr. Lisa's Opus",
+            "airDate": "2017-12-03",
+            "rating": 6.8
+          },
+          {
+            "episode": 9,
+            "title": "Gone Boy",
+            "airDate": "2017-12-10",
+            "rating": 7.2
+          },
+          {
+            "episode": 10,
+            "title": "Haw-Haw Land",
+            "airDate": "2018-01-07",
+            "rating": 6.5
+          },
+          {
+            "episode": 11,
+            "title": "Frink Gets Testy",
+            "airDate": "2018-01-14",
+            "rating": 6.3
+          },
+          {
+            "episode": 12,
+            "title": "Homer is Where the Art Isn't",
+            "airDate": "2018-03-18",
+            "rating": 6.7
+          },
+          {
+            "episode": 13,
+            "title": "3 Scenes Plus a Tag from a Marriage",
+            "airDate": "2018-03-25",
+            "rating": 6.6
+          },
+          {
+            "episode": 14,
+            "title": "Fears of a Clown",
+            "airDate": "2018-04-01",
+            "rating": 6
+          },
+          {
+            "episode": 15,
+            "title": "No Good Read Goes Unpunished",
+            "airDate": "2018-04-08",
+            "rating": 6.3
+          },
+          {
+            "episode": 16,
+            "title": "King Leer",
+            "airDate": "2018-04-15",
+            "rating": 6.3
+          },
+          {
+            "episode": 17,
+            "title": "Lisa Gets the Blues",
+            "airDate": "2018-04-22",
+            "rating": 6.7
+          },
+          {
+            "episode": 18,
+            "title": "Forgive and Regret",
+            "airDate": "2018-04-29",
+            "rating": 7
+          },
+          {
+            "episode": 19,
+            "title": "Left Behind",
+            "airDate": "2018-05-06",
+            "rating": 6.7
+          },
+          {
+            "episode": 20,
+            "title": "Throw Grampa from the Dane",
+            "airDate": "2018-05-13",
+            "rating": 6.7
+          },
+          {
+            "episode": 21,
+            "title": "Flanders' Ladder",
+            "airDate": "2018-05-20",
+            "rating": 7.6
+          }
+        ]
+      },
+      {
+        "season": 30,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Bart's Not Dead",
+            "airDate": "2018-09-30",
+            "rating": 6.3
+          },
+          {
+            "episode": 2,
+            "title": "Heartbreak Hotel",
+            "airDate": "2018-10-07",
+            "rating": 6.2
+          },
+          {
+            "episode": 3,
+            "title": "My Way or the Highway to Heaven",
+            "airDate": "2018-10-14",
+            "rating": 6.3
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XXIX",
+            "airDate": "2018-10-21",
+            "rating": 6
+          },
+          {
+            "episode": 5,
+            "title": "Baby You Can't Drive My Car",
+            "airDate": "2018-11-04",
+            "rating": 7
+          },
+          {
+            "episode": 6,
+            "title": "From Russia Without Love",
+            "airDate": "2018-11-11",
+            "rating": 6.5
+          },
+          {
+            "episode": 7,
+            "title": "Werking Mom",
+            "airDate": "2018-11-18",
+            "rating": 5.8
+          },
+          {
+            "episode": 8,
+            "title": "Krusty the Clown",
+            "airDate": "2018-11-25",
+            "rating": 6.5
+          },
+          {
+            "episode": 9,
+            "title": "Daddicus Finch",
+            "airDate": "2018-12-02",
+            "rating": 6.8
+          },
+          {
+            "episode": 10,
+            "title": "'Tis the 30th Season",
+            "airDate": "2018-12-09",
+            "rating": 6.7
+          },
+          {
+            "episode": 11,
+            "title": "Mad About the Toy",
+            "airDate": "2019-01-06",
+            "rating": 6
+          },
+          {
+            "episode": 12,
+            "title": "The Girl on the Bus",
+            "airDate": "2019-01-13",
+            "rating": 6.5
+          },
+          {
+            "episode": 13,
+            "title": "I'm Dancing as Fat as I Can",
+            "airDate": "2019-02-10",
+            "rating": 6.8
+          },
+          {
+            "episode": 14,
+            "title": "The Clown Stays in the Picture",
+            "airDate": "2019-02-17",
+            "rating": 6.2
+          },
+          {
+            "episode": 15,
+            "title": "101 Mitigations",
+            "airDate": "2019-03-03",
+            "rating": 6.5
+          },
+          {
+            "episode": 16,
+            "title": "I Want You (She's So Heavy)",
+            "airDate": "2019-03-10",
+            "rating": 5.8
+          },
+          {
+            "episode": 17,
+            "title": "E My Sports",
+            "airDate": "2019-03-17",
+            "rating": 6.4
+          },
+          {
+            "episode": 18,
+            "title": "Bart vs. Itchy & Scratchy",
+            "airDate": "2019-03-24",
+            "rating": 5.1
+          },
+          {
+            "episode": 19,
+            "title": "Girl's in the Band",
+            "airDate": "2019-03-31",
+            "rating": 6.5
+          },
+          {
+            "episode": 20,
+            "title": "I'm Just a Girl Who Can't Say D'oh",
+            "airDate": "2019-04-07",
+            "rating": 5.6
+          },
+          {
+            "episode": 21,
+            "title": "D'oh Canada",
+            "airDate": "2019-04-28",
+            "rating": 5.8
+          },
+          {
+            "episode": 22,
+            "title": "Woo-Hoo Dunnit",
+            "airDate": "2019-05-05",
+            "rating": 6.3
+          },
+          {
+            "episode": 23,
+            "title": "Crystal Blue-Haired Persuasion",
+            "airDate": "2019-05-12",
+            "rating": 6.2
+          }
+        ]
+      },
+      {
+        "season": 31,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Winter of Our Monetized Content",
+            "airDate": "2019-09-29",
+            "rating": 5.9
+          },
+          {
+            "episode": 2,
+            "title": "Go Big or Go Homer",
+            "airDate": "2019-10-06",
+            "rating": 6
+          },
+          {
+            "episode": 3,
+            "title": "The Fat Blue Line",
+            "airDate": "2019-10-13",
+            "rating": 6.5
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XXX",
+            "airDate": "2019-10-20",
+            "rating": 6.8
+          },
+          {
+            "episode": 5,
+            "title": "Gorillas on the Mast",
+            "airDate": "2019-11-03",
+            "rating": 6.3
+          },
+          {
+            "episode": 6,
+            "title": "Marge the Lumberjill",
+            "airDate": "2019-11-10",
+            "rating": 5.7
+          },
+          {
+            "episode": 7,
+            "title": "Livin La Pura Vida",
+            "airDate": "2019-11-17",
+            "rating": 6.6
+          },
+          {
+            "episode": 8,
+            "title": "Thanksgiving of Horror",
+            "airDate": "2019-11-24",
+            "rating": 7.4
+          },
+          {
+            "episode": 9,
+            "title": "Todd, Todd, Why Hast Thou Forsaken Me?",
+            "airDate": "2019-12-01",
+            "rating": 6.5
+          },
+          {
+            "episode": 10,
+            "title": "Bobby, It's Cold Outside",
+            "airDate": "2019-12-15",
+            "rating": 6.5
+          },
+          {
+            "episode": 11,
+            "title": "Hail to the Teeth",
+            "airDate": "2020-01-05",
+            "rating": 6.1
+          },
+          {
+            "episode": 12,
+            "title": "The Miseducation of Lisa Simpson",
+            "airDate": "2020-02-16",
+            "rating": 6.6
+          },
+          {
+            "episode": 13,
+            "title": "Frinkcoin",
+            "airDate": "2020-02-23",
+            "rating": 6
+          },
+          {
+            "episode": 14,
+            "title": "Bart the Bad Guy",
+            "airDate": "2020-03-01",
+            "rating": 7.2
+          },
+          {
+            "episode": 15,
+            "title": "Screenless",
+            "airDate": "2020-03-08",
+            "rating": 6.6
+          },
+          {
+            "episode": 16,
+            "title": "Better Off Ned",
+            "airDate": "2020-03-15",
+            "rating": 6.5
+          },
+          {
+            "episode": 17,
+            "title": "Highway to Well",
+            "airDate": "2020-03-22",
+            "rating": 6.9
+          },
+          {
+            "episode": 18,
+            "title": "The Incredible Lightness of Being a Baby",
+            "airDate": "2020-04-19",
+            "rating": 6.4
+          },
+          {
+            "episode": 19,
+            "title": "Warrin' Priests",
+            "airDate": "2020-04-26",
+            "rating": 6.1
+          },
+          {
+            "episode": 20,
+            "title": "Warrin' Priests Part Two",
+            "airDate": "2020-05-03",
+            "rating": 5.7
+          },
+          {
+            "episode": 21,
+            "title": "The Hateful Eight-Year-Olds",
+            "airDate": "2020-05-10",
+            "rating": 6.6
+          },
+          {
+            "episode": 22,
+            "title": "The Way of the Dog",
+            "airDate": "2020-05-17",
+            "rating": 7.5
+          }
+        ]
+      },
+      {
+        "season": 32,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Undercover Burns",
+            "airDate": "2020-09-27",
+            "rating": 6.5
+          },
+          {
+            "episode": 2,
+            "title": "I, Carumbus",
+            "airDate": "2020-10-04",
+            "rating": 6.8
+          },
+          {
+            "episode": 3,
+            "title": "Now Museum, Now You Don't",
+            "airDate": "2020-10-11",
+            "rating": 5.8
+          },
+          {
+            "episode": 4,
+            "title": "Treehouse of Horror XXXI",
+            "airDate": "2020-11-01",
+            "rating": 6.4
+          },
+          {
+            "episode": 5,
+            "title": "The 7 Beer Itch",
+            "airDate": "2020-11-08",
+            "rating": 5.8
+          },
+          {
+            "episode": 6,
+            "title": "Podcast News",
+            "airDate": "2020-11-15",
+            "rating": 6.7
+          },
+          {
+            "episode": 7,
+            "title": "Three Dreams Denied",
+            "airDate": "2020-11-22",
+            "rating": 6.3
+          },
+          {
+            "episode": 8,
+            "title": "The Road To Cincinnati",
+            "airDate": "2020-11-29",
+            "rating": 6.6
+          },
+          {
+            "episode": 9,
+            "title": "Sorry Not Sorry",
+            "airDate": "2020-12-06",
+            "rating": 6.3
+          },
+          {
+            "episode": 10,
+            "title": "A Springfield Summer Christmas for Christmas",
+            "airDate": "2020-12-13",
+            "rating": 6.3
+          },
+          {
+            "episode": 11,
+            "title": "The Dad-Feelings Limited",
+            "airDate": "2021-01-03",
+            "rating": 7.1
+          },
+          {
+            "episode": 12,
+            "title": "Diary Queen",
+            "airDate": "2021-02-21",
+            "rating": 6.9
+          },
+          {
+            "episode": 13,
+            "title": "Wad Goals",
+            "airDate": "2021-02-28",
+            "rating": 6.3
+          },
+          {
+            "episode": 14,
+            "title": "Yokel Hero",
+            "airDate": "2021-03-07",
+            "rating": 5.6
+          },
+          {
+            "episode": 15,
+            "title": "Do PizzaBots Dream of Electric Guitars?",
+            "airDate": "2021-03-14",
+            "rating": 5.9
+          },
+          {
+            "episode": 16,
+            "title": "Manger Things",
+            "airDate": "2021-03-21",
+            "rating": 6.4
+          },
+          {
+            "episode": 17,
+            "title": "Uncut Femmes",
+            "airDate": "2021-03-28",
+            "rating": 6.5
+          },
+          {
+            "episode": 18,
+            "title": "Burger Kings",
+            "airDate": "2021-04-11",
+            "rating": 6.7
+          },
+          {
+            "episode": 19,
+            "title": "Panic On The Streets Of Springfield",
+            "airDate": "2021-04-18",
+            "rating": 6.4
+          },
+          {
+            "episode": 20,
+            "title": "Mother and Child Reunion",
+            "airDate": "2021-05-09",
+            "rating": 6.8
+          },
+          {
+            "episode": 21,
+            "title": "The Man from G.R.A.M.P.A.",
+            "airDate": "2021-05-16",
+            "rating": 6.3
+          },
+          {
+            "episode": 22,
+            "title": "The Last Barfighter",
+            "airDate": "2021-05-23",
+            "rating": 7.4
+          }
+        ]
+      },
+      {
+        "season": 33,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Star of the Backstage",
+            "airDate": "2021-09-26",
+            "rating": 4.4
+          },
+          {
+            "episode": 2,
+            "title": "Bart's in Jail",
+            "airDate": "2021-10-03",
+            "rating": 7
+          },
+          {
+            "episode": 3,
+            "title": "Treehouse of Horror XXXII",
+            "airDate": "2021-10-10",
+            "rating": 6.6
+          },
+          {
+            "episode": 4,
+            "title": "The Wayz We Were",
+            "airDate": "2021-10-17",
+            "rating": 6.7
+          },
+          {
+            "episode": 5,
+            "title": "Lisa's Belly",
+            "airDate": "2021-10-24",
+            "rating": 6.9
+          },
+          {
+            "episode": 6,
+            "title": "A Serious Flanders Part One",
+            "airDate": "2021-11-07",
+            "rating": 8.3
+          },
+          {
+            "episode": 7,
+            "title": "A Serious Flanders Part Two",
+            "airDate": "2021-11-14",
+            "rating": 8.2
+          },
+          {
+            "episode": 8,
+            "title": "Portrait of a Lackey on Fire",
+            "airDate": "2021-11-21",
+            "rating": 6.2
+          },
+          {
+            "episode": 9,
+            "title": "Mothers and Other Strangers",
+            "airDate": "2021-11-28",
+            "rating": 6.3
+          },
+          {
+            "episode": 10,
+            "title": "A Made Maggie",
+            "airDate": "2021-12-19",
+            "rating": 7
+          },
+          {
+            "episode": 11,
+            "title": "The Longest Marge",
+            "airDate": "2022-01-02",
+            "rating": 5.8
+          },
+          {
+            "episode": 12,
+            "title": "Pixelated and Afraid",
+            "airDate": "2022-02-27",
+            "rating": 7.7
+          },
+          {
+            "episode": 13,
+            "title": "Boyz N The Highlands",
+            "airDate": "2022-03-06",
+            "rating": 6.7
+          },
+          {
+            "episode": 14,
+            "title": "You Won't Believe What This Episode is About - Act Three Will Shock You!",
+            "airDate": "2022-03-13",
+            "rating": 6.5
+          },
+          {
+            "episode": 15,
+            "title": "Bart the Cool Kid",
+            "airDate": "2022-03-20",
+            "rating": 6.4
+          },
+          {
+            "episode": 16,
+            "title": "Pretty Whittle Liar",
+            "airDate": "2022-03-27",
+            "rating": 6.3
+          },
+          {
+            "episode": 17,
+            "title": "The Sound of Bleeding Gums",
+            "airDate": "2022-04-10",
+            "rating": 5.9
+          },
+          {
+            "episode": 18,
+            "title": "My Octopus and a Teacher",
+            "airDate": "2022-04-24",
+            "rating": 6.6
+          },
+          {
+            "episode": 19,
+            "title": "Girls Just Shauna Have Fun",
+            "airDate": "2022-05-01",
+            "rating": 6.6
+          },
+          {
+            "episode": 20,
+            "title": "Marge the Meanie",
+            "airDate": "2022-05-08",
+            "rating": 6.7
+          },
+          {
+            "episode": 21,
+            "title": "Meat Is Murder",
+            "airDate": "2022-05-15",
+            "rating": 6.1
+          },
+          {
+            "episode": 22,
+            "title": "Poorhouse Rock",
+            "airDate": "2022-05-22",
+            "rating": 6
+          }
+        ]
+      },
+      {
+        "season": 34,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Habeas Tortoise",
+            "airDate": "2022-09-25",
+            "rating": 6.6
+          },
+          {
+            "episode": 2,
+            "title": "One Angry Lisa",
+            "airDate": "2022-10-02",
+            "rating": 6.3
+          },
+          {
+            "episode": 3,
+            "title": "Lisa the Boy Scout",
+            "airDate": "2022-10-09",
+            "rating": 6.7
+          },
+          {
+            "episode": 4,
+            "title": "The King of Nice",
+            "airDate": "2022-10-16",
+            "rating": 6.4
+          },
+          {
+            "episode": 5,
+            "title": "Treehouse of Horror Presents Not It",
+            "airDate": "2022-10-23",
+            "rating": 7.6
+          },
+          {
+            "episode": 6,
+            "title": "Treehouse of Horror XXXIII",
+            "airDate": "2022-10-30",
+            "rating": 8.3
+          },
+          {
+            "episode": 7,
+            "title": "From Beer to Paternity",
+            "airDate": "2022-11-13",
+            "rating": 6.4
+          },
+          {
+            "episode": 8,
+            "title": "Step Brother from the Same Planet",
+            "airDate": "2022-11-20",
+            "rating": 6.5
+          },
+          {
+            "episode": 9,
+            "title": "When Nelson Met Lisa",
+            "airDate": "2022-11-27",
+            "rating": 5.9
+          },
+          {
+            "episode": 10,
+            "title": "Game Done Changed",
+            "airDate": "2022-12-04",
+            "rating": 6.6
+          },
+          {
+            "episode": 11,
+            "title": "Top Goon",
+            "airDate": "2022-12-11",
+            "rating": 6.7
+          },
+          {
+            "episode": 12,
+            "title": "My Life as a Vlog",
+            "airDate": "2023-01-01",
+            "rating": 5.9
+          },
+          {
+            "episode": 13,
+            "title": "The Many Saints of Springfield",
+            "airDate": "2023-02-19",
+            "rating": 6.5
+          },
+          {
+            "episode": 14,
+            "title": "Carl Carlson Rides Again",
+            "airDate": "2023-02-26",
+            "rating": 6.2
+          },
+          {
+            "episode": 15,
+            "title": "Bartless",
+            "airDate": "2023-03-05",
+            "rating": 6.7
+          },
+          {
+            "episode": 16,
+            "title": "Hostile Kirk Place",
+            "airDate": "2023-03-12",
+            "rating": 6.1
+          },
+          {
+            "episode": 17,
+            "title": "Pin Gal",
+            "airDate": "2023-03-19",
+            "rating": 6.4
+          },
+          {
+            "episode": 18,
+            "title": "Fan-ily Feud",
+            "airDate": "2023-04-23",
+            "rating": 5.4
+          },
+          {
+            "episode": 19,
+            "title": "Write Off This Episode",
+            "airDate": "2023-04-30",
+            "rating": 5.9
+          },
+          {
+            "episode": 20,
+            "title": "The Very Hungry Caterpillars",
+            "airDate": "2023-05-07",
+            "rating": 6.8
+          },
+          {
+            "episode": 21,
+            "title": "Clown V. Board of Education",
+            "airDate": "2023-05-14",
+            "rating": 6.3
+          },
+          {
+            "episode": 22,
+            "title": "Homer's Adventures Through the Windshield Glass",
+            "airDate": "2023-05-21",
+            "rating": 5.9
+          }
+        ]
+      },
+      {
+        "season": 35,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Homer's Crossing",
+            "airDate": "2023-10-01",
+            "rating": 6.7
+          },
+          {
+            "episode": 2,
+            "title": "A Mid-Childhood Night's Dream",
+            "airDate": "2023-10-08",
+            "rating": 7.1
+          },
+          {
+            "episode": 3,
+            "title": "McMansion & Wife",
+            "airDate": "2023-10-22",
+            "rating": 6.3
+          },
+          {
+            "episode": 4,
+            "title": "Thirst Trap: A Corporate Love Story",
+            "airDate": "2023-10-29",
+            "rating": 6
+          },
+          {
+            "episode": 5,
+            "title": "Treehouse of Horror XXXIV",
+            "airDate": "2023-11-05",
+            "rating": 6.9
+          },
+          {
+            "episode": 6,
+            "title": "Iron Marge",
+            "airDate": "2023-11-12",
+            "rating": 6.8
+          },
+          {
+            "episode": 7,
+            "title": "It's a Blunderful Life",
+            "airDate": "2023-11-19",
+            "rating": 6.4
+          },
+          {
+            "episode": 8,
+            "title": "Ae Bonny Romance",
+            "airDate": "2023-12-03",
+            "rating": 6.3
+          },
+          {
+            "episode": 9,
+            "title": "Murder, She Boat",
+            "airDate": "2023-12-17",
+            "rating": 6.7
+          },
+          {
+            "episode": 10,
+            "title": "Do The Wrong Thing",
+            "airDate": "2023-12-24",
+            "rating": 6.5
+          },
+          {
+            "episode": 11,
+            "title": "Frinkenstein's Monster",
+            "airDate": "2024-02-18",
+            "rating": 6.1
+          },
+          {
+            "episode": 12,
+            "title": "Lisa Gets an F1",
+            "airDate": "2024-02-25",
+            "rating": 6.4
+          },
+          {
+            "episode": 13,
+            "title": "Clan of the Cave Mom",
+            "airDate": "2024-03-24",
+            "rating": 6.9
+          },
+          {
+            "episode": 14,
+            "title": "Night of the Living Wage",
+            "airDate": "2024-04-07",
+            "rating": 7
+          },
+          {
+            "episode": 15,
+            "title": "Cremains of the Day",
+            "airDate": "2024-04-21",
+            "rating": 7
+          },
+          {
+            "episode": 16,
+            "title": "The Tell-Tale Pants",
+            "airDate": "2024-05-05",
+            "rating": 6.4
+          },
+          {
+            "episode": 17,
+            "title": "The Tipping Point",
+            "airDate": "2024-05-12",
+            "rating": 6.1
+          },
+          {
+            "episode": 18,
+            "title": "Bart's Brain",
+            "airDate": "2024-05-19",
+            "rating": 6.3
+          }
+        ]
+      },
+      {
+        "season": 36,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Bart's Birthday",
+            "airDate": "2024-09-29",
+            "rating": 8
+          },
+          {
+            "episode": 2,
+            "title": "The Yellow Lotus",
+            "airDate": "2024-10-06",
+            "rating": 6.6
+          },
+          {
+            "episode": 3,
+            "title": "Desperately Seeking Lisa",
+            "airDate": "2024-10-20",
+            "rating": 6
+          },
+          {
+            "episode": 4,
+            "title": "Shoddy Heat",
+            "airDate": "2024-10-27",
+            "rating": 6.4
+          },
+          {
+            "episode": 5,
+            "title": "Treehouse of Horror XXXV",
+            "airDate": "2024-11-03",
+            "rating": 6.4
+          },
+          {
+            "episode": 6,
+            "title": "Women in Shorts",
+            "airDate": "2024-11-10",
+            "rating": 5.8
+          },
+          {
+            "episode": 7,
+            "title": "Treehouse of Horror Presents: Simpsons Wicked This Way Comes",
+            "airDate": "2024-11-24",
+            "rating": 6.9
+          },
+          {
+            "episode": 8,
+            "title": "Convenience Airways",
+            "airDate": "2024-12-08",
+            "rating": 6.9
+          },
+          {
+            "episode": 9,
+            "title": "Homer and Her Sisters",
+            "airDate": "2024-12-15",
+            "rating": 6.6
+          },
+          {
+            "episode": 10,
+            "title": "The Man Who Flew Too Much",
+            "airDate": "2024-12-22",
+            "rating": 6.7
+          },
+          {
+            "episode": 11,
+            "title": "Bottle Episode",
+            "airDate": "2024-12-29",
+            "rating": 6
+          },
+          {
+            "episode": 12,
+            "title": "The Flandshees of Innersimpson",
+            "airDate": "2025-03-30",
+            "rating": 6.5
+          },
+          {
+            "episode": 13,
+            "title": "The Last Man Expanding",
+            "airDate": "2025-04-06",
+            "rating": 6.5
+          },
+          {
+            "episode": 14,
+            "title": "P.S. I Hate You",
+            "airDate": "2025-04-13",
+            "rating": 6.9
+          },
+          {
+            "episode": 15,
+            "title": "Abe League of Their Moe",
+            "airDate": "2025-04-27",
+            "rating": 6.7
+          },
+          {
+            "episode": 16,
+            "title": "Stew Lies",
+            "airDate": "2025-05-04",
+            "rating": 7.2
+          },
+          {
+            "episode": 17,
+            "title": "Full Heart, Empty Pool",
+            "airDate": "2025-05-11",
+            "rating": 6.4
+          },
+          {
+            "episode": 18,
+            "title": "Estranger Things",
+            "airDate": "2025-05-18",
+            "rating": 6.5
+          }
+        ]
+      },
+      {
+        "season": 37,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Thrifty Ways to Thieve Your Mother",
+            "airDate": "2025-09-28",
+            "rating": 6.9
+          },
+          {
+            "episode": 2,
+            "title": "Keep Chalm and Gary On",
+            "airDate": "2025-10-05",
+            "rating": 6.5
+          },
+          {
+            "episode": 3,
+            "title": "Treehouse of Horror XXXVI",
+            "airDate": "2025-10-19",
+            "rating": 6.3
+          },
+          {
+            "episode": 4,
+            "title": "Men Behaving Manly",
+            "airDate": "2025-10-26",
+            "rating": 5.3
+          },
+          {
+            "episode": 5,
+            "title": "Bad Boys... For Life?",
+            "airDate": "2025-11-02",
+            "rating": 6.6
+          },
+          {
+            "episode": 6,
+            "title": "Bart 'N' Frink",
+            "airDate": "2025-11-09",
+            "rating": 7.1
+          },
+          {
+            "episode": 7,
+            "title": "Sashes to Sashes",
+            "airDate": "2025-11-16",
+            "rating": 6.4
+          },
+          {
+            "episode": 8,
+            "title": "The Day of the Jack-up",
+            "airDate": "2025-11-23",
+            "rating": 7.3
+          },
+          {
+            "episode": 9,
+            "title": "Aunt Misbehavin'",
+            "airDate": "2025-11-30",
+            "rating": 6.7
+          },
+          {
+            "episode": 10,
+            "title": "Guess Who's Coming to Skinner",
+            "airDate": "2025-12-07",
+            "rating": 6.7
+          },
+          {
+            "episode": 11,
+            "title": "Parahormonal Activity",
+            "airDate": "2025-12-14",
+            "rating": 7.6
+          },
+          {
+            "episode": 12,
+            "title": "Â¡The Fall Guy-Yi-Yi!",
+            "airDate": "2025-12-28",
+            "rating": 8.2
+          },
+          {
+            "episode": 13,
+            "title": "Seperance",
+            "airDate": "2026-01-04",
+            "rating": 7
+          },
+          {
+            "episode": 14,
+            "title": "Irrational Treasure",
+            "airDate": "2026-02-15",
+            "rating": 7.2
+          },
+          {
+            "episode": 15,
+            "title": "Homer? A Cracker Bro?",
+            "airDate": "2026-02-15",
+            "rating": 7.3
+          }
+        ]
+      },
+      {
+        "season": 38,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Children's Book Job",
+            "airDate": "2026-09-27"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "You",
+    "type": "TV Show",
+    "year": 2018,
+    "rating": 8,
+    "age": "TV-MA",
+    "duration": "45m",
+    "genres": [
+      "Mystery",
+      "Crime",
+      "Drama"
+    ],
+    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/oANi0vEE92nuijiZQgPZ88FSxqQ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/gzOIymABxmetAECXtazEYCpMmfb.jpg",
+    "videoUrl": "78191",
+    "trailerUrl": "",
+    "overview": "Joe Goldberg, charming bookstore manager, become obsess with woman, use tech, manipulation, sometimes murder, get close to her. Each season new target, same dark pattern, love twist into obsession, obsession twist into violence.",
+    "director": "Greg Berlanti, Sera Gamble",
+    "cast": [
+      "Penn Badgley, Elizabeth Lail, Victoria Pedretti, Ambyr Childers, Tati Gabrielle"
+    ],
+    "trending": false,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Pilot",
+            "airDate": "2018-09-09",
+            "rating": 8.1
+          },
+          {
+            "episode": 2,
+            "title": "The Last Nice Guy in New York",
+            "airDate": "2018-09-16",
+            "rating": 7.9
+          },
+          {
+            "episode": 3,
+            "title": "Maybe",
+            "airDate": "2018-09-23",
+            "rating": 7.7
+          },
+          {
+            "episode": 4,
+            "title": "The Captain",
+            "airDate": "2018-09-30",
+            "rating": 7.4
+          },
+          {
+            "episode": 5,
+            "title": "Living with the Enemy",
+            "airDate": "2018-10-07",
+            "rating": 8
+          },
+          {
+            "episode": 6,
+            "title": "Amour Fou",
+            "airDate": "2018-10-14",
+            "rating": 8.1
+          },
+          {
+            "episode": 7,
+            "title": "Everythingship",
+            "airDate": "2018-10-21",
+            "rating": 7.5
+          },
+          {
+            "episode": 8,
+            "title": "You Got Me, Babe",
+            "airDate": "2018-10-28",
+            "rating": 7.7
+          },
+          {
+            "episode": 9,
+            "title": "Candace",
+            "airDate": "2018-11-04",
+            "rating": 8.6
+          },
+          {
+            "episode": 10,
+            "title": "Bluebeard's Castle",
+            "airDate": "2018-11-11",
+            "rating": 8.6
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "A Fresh Start",
+            "airDate": "2019-12-26",
+            "rating": 8.1
+          },
+          {
+            "episode": 2,
+            "title": "Just The Tip",
+            "airDate": "2019-12-26",
+            "rating": 7.8
+          },
+          {
+            "episode": 3,
+            "title": "What Are Friends For?",
+            "airDate": "2019-12-26",
+            "rating": 7.6
+          },
+          {
+            "episode": 4,
+            "title": "The Good, The Bad & The Hendy",
+            "airDate": "2019-12-26",
+            "rating": 8
+          },
+          {
+            "episode": 5,
+            "title": "Have a Good Wellkend, Joe!",
+            "airDate": "2019-12-26",
+            "rating": 7.8
+          },
+          {
+            "episode": 6,
+            "title": "Farewell, My Bunny",
+            "airDate": "2019-12-26",
+            "rating": 7.9
+          },
+          {
+            "episode": 7,
+            "title": "Ex-istential Crisis",
+            "airDate": "2019-12-26",
+            "rating": 8.2
+          },
+          {
+            "episode": 8,
+            "title": "Fear and Loathing in Beverly Hills",
+            "airDate": "2019-12-26",
+            "rating": 8.7
+          },
+          {
+            "episode": 9,
+            "title": "P.I. Joe",
+            "airDate": "2019-12-26",
+            "rating": 9
+          },
+          {
+            "episode": 10,
+            "title": "Love, Actually",
+            "airDate": "2019-12-26",
+            "rating": 8.6
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "And They Lived Happily Ever After",
+            "airDate": "2021-10-15",
+            "rating": 7.8
+          },
+          {
+            "episode": 2,
+            "title": "So I Married An Axe Murderer",
+            "airDate": "2021-10-15",
+            "rating": 8.1
+          },
+          {
+            "episode": 3,
+            "title": "Missing White Woman Syndrome",
+            "airDate": "2021-10-15",
+            "rating": 7
+          },
+          {
+            "episode": 4,
+            "title": "Hands Across Madre Linda",
+            "airDate": "2021-10-15",
+            "rating": 7.7
+          },
+          {
+            "episode": 5,
+            "title": "Into the Woods",
+            "airDate": "2021-10-15",
+            "rating": 7.2
+          },
+          {
+            "episode": 6,
+            "title": "W.O.M.B.",
+            "airDate": "2021-10-15",
+            "rating": 7.1
+          },
+          {
+            "episode": 7,
+            "title": "We're All Mad Here",
+            "airDate": "2021-10-15",
+            "rating": 7.3
+          },
+          {
+            "episode": 8,
+            "title": "Swing and a Miss",
+            "airDate": "2021-10-15",
+            "rating": 7.9
+          },
+          {
+            "episode": 9,
+            "title": "Red Flag",
+            "airDate": "2021-10-15",
+            "rating": 8.2
+          },
+          {
+            "episode": 10,
+            "title": "What is Love?",
+            "airDate": "2021-10-15",
+            "rating": 8.7
+          }
+        ]
+      },
+      {
+        "season": 4,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Joe Takes a Holiday",
+            "airDate": "2023-02-09",
+            "rating": 7.5
+          },
+          {
+            "episode": 2,
+            "title": "Portrait of the Artist",
+            "airDate": "2023-02-09",
+            "rating": 7.4
+          },
+          {
+            "episode": 3,
+            "title": "Eat the Rich",
+            "airDate": "2023-02-09",
+            "rating": 7.4
+          },
+          {
+            "episode": 4,
+            "title": "Hampsie",
+            "airDate": "2023-02-09",
+            "rating": 7.5
+          },
+          {
+            "episode": 5,
+            "title": "The Fox and the Hound",
+            "airDate": "2023-02-09",
+            "rating": 7.3
+          },
+          {
+            "episode": 6,
+            "title": "Best of Friends",
+            "airDate": "2023-03-09",
+            "rating": 7
+          },
+          {
+            "episode": 7,
+            "title": "Good Man, Cruel World",
+            "airDate": "2023-03-09",
+            "rating": 7.6
+          },
+          {
+            "episode": 8,
+            "title": "Where Are You Going, Where Have You Been?",
+            "airDate": "2023-03-09",
+            "rating": 7.6
+          },
+          {
+            "episode": 9,
+            "title": "She's Not There",
+            "airDate": "2023-03-09",
+            "rating": 7.9
+          },
+          {
+            "episode": 10,
+            "title": "The Death of Jonathan Moore",
+            "airDate": "2023-03-09",
+            "rating": 7.6
+          }
+        ]
+      },
+      {
+        "season": 5,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Episode 1",
+            "airDate": "2025-04-24",
+            "rating": 7.3
+          },
+          {
+            "episode": 2,
+            "title": "Episode 2",
+            "airDate": "2025-04-24",
+            "rating": 7.8
+          },
+          {
+            "episode": 3,
+            "title": "Episode 3",
+            "airDate": "2025-04-24",
+            "rating": 7.4
+          },
+          {
+            "episode": 4,
+            "title": "Episode 4",
+            "airDate": "2025-04-24",
+            "rating": 7.6
+          },
+          {
+            "episode": 5,
+            "title": "Episode 5",
+            "airDate": "2025-04-24",
+            "rating": 8.3
+          },
+          {
+            "episode": 6,
+            "title": "Episode 6",
+            "airDate": "2025-04-24",
+            "rating": 7.8
+          },
+          {
+            "episode": 7,
+            "title": "Episode 7",
+            "airDate": "2025-04-24",
+            "rating": 8.1
+          },
+          {
+            "episode": 8,
+            "title": "Episode 8",
+            "airDate": "2025-04-24",
+            "rating": 7.5
+          },
+          {
+            "episode": 9,
+            "title": "Episode 9",
+            "airDate": "2025-04-24",
+            "rating": 8.3
+          },
+          {
+            "episode": 10,
+            "title": "Episode 10",
+            "airDate": "2025-04-24",
+            "rating": 5.3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Marvel's Agents of S.H.I.E.L.D.",
+    "type": "TV Show",
+    "year": 2013,
+    "rating": 7.5,
+    "age": "TV-14",
+    "duration": "45m",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/gHUCCMy1vvj58tzE3dZqeC9SXus.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/3tbKHQEP6BNUC5ZMNqps0rITwO7.jpg",
+    "videoUrl": "1403",
+    "trailerUrl": "",
+    "overview": "Agent Phil Coulson lead team of skilled operative, handle strange, dangerous case too big for regular cop, too small for Avengers. Team dig into world of superhuman, alien tech, secret conspiracy tie back to S.H.I.E.L.D. itself.",
+    "director": "Joss Whedon, Jed Whedon, Maurissa Tancharoen",
+    "cast": [
+      "Clark Gregg, Ming-Na Wen, Brett Dalton, Chloe Bennet, Iain De Caestecker, Elizabeth Henstridge"
+    ],
+    "trending": false,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Pilot",
+            "airDate": "2013-09-24",
+            "rating": 7.5
+          },
+          {
+            "episode": 2,
+            "title": "0-8-4",
+            "airDate": "2013-10-01",
+            "rating": 7.1
+          },
+          {
+            "episode": 3,
+            "title": "The Asset",
+            "airDate": "2013-10-08",
+            "rating": 7.3
+          },
+          {
+            "episode": 4,
+            "title": "Eye Spy",
+            "airDate": "2013-10-15",
+            "rating": 7.5
+          },
+          {
+            "episode": 5,
+            "title": "Girl in the Flower Dress",
+            "airDate": "2013-10-22",
+            "rating": 7.4
+          },
+          {
+            "episode": 6,
+            "title": "FZZT",
+            "airDate": "2013-11-05",
+            "rating": 8
+          },
+          {
+            "episode": 7,
+            "title": "The Hub",
+            "airDate": "2013-11-12",
+            "rating": 7.5
+          },
+          {
+            "episode": 8,
+            "title": "The Well",
+            "airDate": "2013-11-19",
+            "rating": 7.7
+          },
+          {
+            "episode": 9,
+            "title": "Repairs",
+            "airDate": "2013-11-26",
+            "rating": 7.3
+          },
+          {
+            "episode": 10,
+            "title": "The Bridge",
+            "airDate": "2013-12-10",
+            "rating": 7.9
+          },
+          {
+            "episode": 11,
+            "title": "The Magical Place",
+            "airDate": "2014-01-07",
+            "rating": 8.1
+          },
+          {
+            "episode": 12,
+            "title": "Seeds",
+            "airDate": "2014-01-14",
+            "rating": 7.8
+          },
+          {
+            "episode": 13,
+            "title": "T.R.A.C.K.S.",
+            "airDate": "2014-02-04",
+            "rating": 8.5
+          },
+          {
+            "episode": 14,
+            "title": "T.A.H.I.T.I.",
+            "airDate": "2014-03-04",
+            "rating": 8.4
+          },
+          {
+            "episode": 15,
+            "title": "Yes Men",
+            "airDate": "2014-03-11",
+            "rating": 8
+          },
+          {
+            "episode": 16,
+            "title": "End of the Beginning",
+            "airDate": "2014-04-01",
+            "rating": 8.5
+          },
+          {
+            "episode": 17,
+            "title": "Turn, Turn, Turn",
+            "airDate": "2014-04-08",
+            "rating": 9.2
+          },
+          {
+            "episode": 18,
+            "title": "Providence",
+            "airDate": "2014-04-15",
+            "rating": 8.2
+          },
+          {
+            "episode": 19,
+            "title": "The Only Light in the Darkness",
+            "airDate": "2014-04-22",
+            "rating": 8.2
+          },
+          {
+            "episode": 20,
+            "title": "Nothing Personal",
+            "airDate": "2014-04-29",
+            "rating": 8.5
+          },
+          {
+            "episode": 21,
+            "title": "Ragtag",
+            "airDate": "2014-05-06",
+            "rating": 8.3
+          },
+          {
+            "episode": 22,
+            "title": "Beginning of the End",
+            "airDate": "2014-05-13",
+            "rating": 9
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Shadows",
+            "airDate": "2014-09-23",
+            "rating": 8.1
+          },
+          {
+            "episode": 2,
+            "title": "Heavy Is the Head",
+            "airDate": "2014-09-30",
+            "rating": 7.9
+          },
+          {
+            "episode": 3,
+            "title": "Making Friends and Influencing People",
+            "airDate": "2014-10-07",
+            "rating": 8
+          },
+          {
+            "episode": 4,
+            "title": "Face My Enemy",
+            "airDate": "2014-10-14",
+            "rating": 8.1
+          },
+          {
+            "episode": 5,
+            "title": "A Hen in the Wolf House",
+            "airDate": "2014-10-21",
+            "rating": 8.5
+          },
+          {
+            "episode": 6,
+            "title": "A Fractured House",
+            "airDate": "2014-10-28",
+            "rating": 8
+          },
+          {
+            "episode": 7,
+            "title": "The Writing on the Wall",
+            "airDate": "2014-11-11",
+            "rating": 8.3
+          },
+          {
+            "episode": 8,
+            "title": "The Things We Bury",
+            "airDate": "2014-11-18",
+            "rating": 8.5
+          },
+          {
+            "episode": 9,
+            "title": "...Ye Who Enter Here",
+            "airDate": "2014-12-02",
+            "rating": 8.3
+          },
+          {
+            "episode": 10,
+            "title": "What They Become",
+            "airDate": "2014-12-09",
+            "rating": 9.1
+          },
+          {
+            "episode": 11,
+            "title": "Aftershocks",
+            "airDate": "2015-03-03",
+            "rating": 8.3
+          },
+          {
+            "episode": 12,
+            "title": "Who You Really Are",
+            "airDate": "2015-03-10",
+            "rating": 8
+          },
+          {
+            "episode": 13,
+            "title": "One of Us",
+            "airDate": "2015-03-17",
+            "rating": 7.7
+          },
+          {
+            "episode": 14,
+            "title": "Love in the Time of HYDRA",
+            "airDate": "2015-03-24",
+            "rating": 7.6
+          },
+          {
+            "episode": 15,
+            "title": "One Door Closes",
+            "airDate": "2015-03-31",
+            "rating": 8.5
+          },
+          {
+            "episode": 16,
+            "title": "Afterlife",
+            "airDate": "2015-04-07",
+            "rating": 8.1
+          },
+          {
+            "episode": 17,
+            "title": "Melinda",
+            "airDate": "2015-04-14",
+            "rating": 8.4
+          },
+          {
+            "episode": 18,
+            "title": "The Frenemy of My Enemy",
+            "airDate": "2015-04-21",
+            "rating": 8.3
+          },
+          {
+            "episode": 19,
+            "title": "The Dirty Half Dozen",
+            "airDate": "2015-04-28",
+            "rating": 8.7
+          },
+          {
+            "episode": 20,
+            "title": "Scars",
+            "airDate": "2015-05-05",
+            "rating": 8.4
+          },
+          {
+            "episode": 21,
+            "title": "S.O.S.: Part 1",
+            "airDate": "2015-05-12",
+            "rating": 8.9
+          },
+          {
+            "episode": 22,
+            "title": "S.O.S.: Part 2",
+            "airDate": "2015-05-12",
+            "rating": 9.3
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Laws of Nature",
+            "airDate": "2015-09-29",
+            "rating": 8.5
+          },
+          {
+            "episode": 2,
+            "title": "Purpose in the Machine",
+            "airDate": "2015-10-06",
+            "rating": 8.5
+          },
+          {
+            "episode": 3,
+            "title": "A Wanted (Inhu)man",
+            "airDate": "2015-10-13",
+            "rating": 7.8
+          },
+          {
+            "episode": 4,
+            "title": "Devils You Know",
+            "airDate": "2015-10-20",
+            "rating": 8.1
+          },
+          {
+            "episode": 5,
+            "title": "4,722 Hours",
+            "airDate": "2015-10-27",
+            "rating": 9.2
+          },
+          {
+            "episode": 6,
+            "title": "Among Us Hideâ€¦",
+            "airDate": "2015-11-03",
+            "rating": 8.2
+          },
+          {
+            "episode": 7,
+            "title": "Chaos Theory",
+            "airDate": "2015-11-10",
+            "rating": 8.3
+          },
+          {
+            "episode": 8,
+            "title": "Many Heads, One Tale",
+            "airDate": "2015-11-17",
+            "rating": 8.7
+          },
+          {
+            "episode": 9,
+            "title": "Closure",
+            "airDate": "2015-12-01",
+            "rating": 8.8
+          },
+          {
+            "episode": 10,
+            "title": "Maveth",
+            "airDate": "2015-12-08",
+            "rating": 9
+          },
+          {
+            "episode": 11,
+            "title": "Bouncing Back",
+            "airDate": "2016-03-08",
+            "rating": 7.9
+          },
+          {
+            "episode": 12,
+            "title": "The Inside Man",
+            "airDate": "2016-03-15",
+            "rating": 7.9
+          },
+          {
+            "episode": 13,
+            "title": "Parting Shot",
+            "airDate": "2016-03-22",
+            "rating": 8.6
+          },
+          {
+            "episode": 14,
+            "title": "Watchdogs",
+            "airDate": "2016-03-29",
+            "rating": 7.5
+          },
+          {
+            "episode": 15,
+            "title": "Spacetime",
+            "airDate": "2016-04-05",
+            "rating": 8.5
+          },
+          {
+            "episode": 16,
+            "title": "Paradise Lost",
+            "airDate": "2016-04-12",
+            "rating": 8
+          },
+          {
+            "episode": 17,
+            "title": "The Team",
+            "airDate": "2016-04-19",
+            "rating": 8.8
+          },
+          {
+            "episode": 18,
+            "title": "The Singularity",
+            "airDate": "2016-04-26",
+            "rating": 8.1
+          },
+          {
+            "episode": 19,
+            "title": "Failed Experiments",
+            "airDate": "2016-05-03",
+            "rating": 8
+          },
+          {
+            "episode": 20,
+            "title": "Emancipation",
+            "airDate": "2016-05-10",
+            "rating": 8.4
+          },
+          {
+            "episode": 21,
+            "title": "Absolution",
+            "airDate": "2016-05-17",
+            "rating": 8.4
+          },
+          {
+            "episode": 22,
+            "title": "Ascension",
+            "airDate": "2016-05-17",
+            "rating": 8.9
+          }
+        ]
+      },
+      {
+        "season": 4,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Ghost",
+            "airDate": "2016-09-20",
+            "rating": 8.1
+          },
+          {
+            "episode": 2,
+            "title": "Meet the New Boss",
+            "airDate": "2016-09-27",
+            "rating": 7.9
+          },
+          {
+            "episode": 3,
+            "title": "Uprising",
+            "airDate": "2016-10-11",
+            "rating": 8.1
+          },
+          {
+            "episode": 4,
+            "title": "Let Me Stand Next to Your Fire",
+            "airDate": "2016-10-18",
+            "rating": 8.4
+          },
+          {
+            "episode": 5,
+            "title": "Lockup",
+            "airDate": "2016-10-25",
+            "rating": 8.1
+          },
+          {
+            "episode": 6,
+            "title": "The Good Samaritan",
+            "airDate": "2016-11-01",
+            "rating": 8.7
+          },
+          {
+            "episode": 7,
+            "title": "Deals with Our Devils",
+            "airDate": "2016-11-29",
+            "rating": 8.7
+          },
+          {
+            "episode": 8,
+            "title": "The Laws of Inferno Dynamics",
+            "airDate": "2016-12-06",
+            "rating": 8.5
+          },
+          {
+            "episode": 9,
+            "title": "Broken Promises",
+            "airDate": "2017-01-10",
+            "rating": 8.2
+          },
+          {
+            "episode": 10,
+            "title": "The Patriot",
+            "airDate": "2017-01-17",
+            "rating": 8
+          },
+          {
+            "episode": 11,
+            "title": "Wake Up",
+            "airDate": "2017-01-24",
+            "rating": 8.3
+          },
+          {
+            "episode": 12,
+            "title": "Hot Potato Soup",
+            "airDate": "2017-01-31",
+            "rating": 8
+          },
+          {
+            "episode": 13,
+            "title": "BOOM",
+            "airDate": "2017-02-07",
+            "rating": 7.9
+          },
+          {
+            "episode": 14,
+            "title": "The Man Behind the Shield",
+            "airDate": "2017-02-14",
+            "rating": 8.1
+          },
+          {
+            "episode": 15,
+            "title": "Self Control",
+            "airDate": "2017-02-21",
+            "rating": 9.4
+          },
+          {
+            "episode": 16,
+            "title": "What If...",
+            "airDate": "2017-04-04",
+            "rating": 9
+          },
+          {
+            "episode": 17,
+            "title": "Identity and Change",
+            "airDate": "2017-04-11",
+            "rating": 8.8
+          },
+          {
+            "episode": 18,
+            "title": "No Regrets",
+            "airDate": "2017-04-18",
+            "rating": 8.9
+          },
+          {
+            "episode": 19,
+            "title": "All the Madame's Men",
+            "airDate": "2017-04-25",
+            "rating": 8.5
+          },
+          {
+            "episode": 20,
+            "title": "Farewell, Cruel World!",
+            "airDate": "2017-05-02",
+            "rating": 9
+          },
+          {
+            "episode": 21,
+            "title": "The Return",
+            "airDate": "2017-05-09",
+            "rating": 9
+          },
+          {
+            "episode": 22,
+            "title": "World's End",
+            "airDate": "2017-05-16",
+            "rating": 9
+          }
+        ]
+      },
+      {
+        "season": 5,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Orientation (Part One)",
+            "airDate": "2017-12-01",
+            "rating": 8.8
+          },
+          {
+            "episode": 2,
+            "title": "Orientation (Part Two)",
+            "airDate": "2017-12-01",
+            "rating": 8.5
+          },
+          {
+            "episode": 3,
+            "title": "A Life Spent",
+            "airDate": "2017-12-08",
+            "rating": 8
+          },
+          {
+            "episode": 4,
+            "title": "A Life Earned",
+            "airDate": "2017-12-15",
+            "rating": 8.1
+          },
+          {
+            "episode": 5,
+            "title": "Rewind",
+            "airDate": "2017-12-22",
+            "rating": 9
+          },
+          {
+            "episode": 6,
+            "title": "Fun & Games",
+            "airDate": "2018-01-05",
+            "rating": 8.7
+          },
+          {
+            "episode": 7,
+            "title": "Together or Not at All",
+            "airDate": "2018-01-12",
+            "rating": 8.2
+          },
+          {
+            "episode": 8,
+            "title": "The Last Day",
+            "airDate": "2018-01-19",
+            "rating": 8.2
+          },
+          {
+            "episode": 9,
+            "title": "Best Laid Plans",
+            "airDate": "2018-01-26",
+            "rating": 8.1
+          },
+          {
+            "episode": 10,
+            "title": "Past Life",
+            "airDate": "2018-02-02",
+            "rating": 8.5
+          },
+          {
+            "episode": 11,
+            "title": "All the Comforts of Home",
+            "airDate": "2018-03-02",
+            "rating": 8.3
+          },
+          {
+            "episode": 12,
+            "title": "The Real Deal",
+            "airDate": "2018-03-09",
+            "rating": 9.1
+          },
+          {
+            "episode": 13,
+            "title": "Principia",
+            "airDate": "2018-03-16",
+            "rating": 8
+          },
+          {
+            "episode": 14,
+            "title": "The Devil Complex",
+            "airDate": "2018-03-23",
+            "rating": 8.9
+          },
+          {
+            "episode": 15,
+            "title": "Rise and Shine",
+            "airDate": "2018-03-30",
+            "rating": 8.4
+          },
+          {
+            "episode": 16,
+            "title": "Inside Voices",
+            "airDate": "2018-04-06",
+            "rating": 8.1
+          },
+          {
+            "episode": 17,
+            "title": "The Honeymoon",
+            "airDate": "2018-04-13",
+            "rating": 8
+          },
+          {
+            "episode": 18,
+            "title": "All Roads Leadâ€¦",
+            "airDate": "2018-04-20",
+            "rating": 8.2
+          },
+          {
+            "episode": 19,
+            "title": "Option Two",
+            "airDate": "2018-04-27",
+            "rating": 8.5
+          },
+          {
+            "episode": 20,
+            "title": "The One Who Will Save Us All",
+            "airDate": "2018-05-04",
+            "rating": 8.1
+          },
+          {
+            "episode": 21,
+            "title": "The Force of Gravity",
+            "airDate": "2018-05-11",
+            "rating": 8.4
+          },
+          {
+            "episode": 22,
+            "title": "The End",
+            "airDate": "2018-05-18",
+            "rating": 9.1
+          }
+        ]
+      },
+      {
+        "season": 6,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Missing Pieces",
+            "airDate": "2019-05-10",
+            "rating": 7.8
+          },
+          {
+            "episode": 2,
+            "title": "Window of Opportunity",
+            "airDate": "2019-05-17",
+            "rating": 7.9
+          },
+          {
+            "episode": 3,
+            "title": "Fear and Loathing on the Planet of Kitson",
+            "airDate": "2019-05-24",
+            "rating": 8.3
+          },
+          {
+            "episode": 4,
+            "title": "Code Yellow",
+            "airDate": "2019-05-31",
+            "rating": 7.7
+          },
+          {
+            "episode": 5,
+            "title": "The Other Thing",
+            "airDate": "2019-06-14",
+            "rating": 7.9
+          },
+          {
+            "episode": 6,
+            "title": "Inescapable",
+            "airDate": "2019-06-21",
+            "rating": 8.8
+          },
+          {
+            "episode": 7,
+            "title": "Toldja",
+            "airDate": "2019-06-28",
+            "rating": 7.8
+          },
+          {
+            "episode": 8,
+            "title": "Collision Course (Part I)",
+            "airDate": "2019-07-05",
+            "rating": 8.2
+          },
+          {
+            "episode": 9,
+            "title": "Collision Course (Part II)",
+            "airDate": "2019-07-12",
+            "rating": 8.4
+          },
+          {
+            "episode": 10,
+            "title": "Leap",
+            "airDate": "2019-07-19",
+            "rating": 8.4
+          },
+          {
+            "episode": 11,
+            "title": "From the Ashes",
+            "airDate": "2019-07-26",
+            "rating": 7.9
+          },
+          {
+            "episode": 12,
+            "title": "The Sign",
+            "airDate": "2019-08-02",
+            "rating": 8.2
+          },
+          {
+            "episode": 13,
+            "title": "New Life",
+            "airDate": "2019-08-02",
+            "rating": 8.5
+          }
+        ]
+      },
+      {
+        "season": 7,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The New Deal",
+            "airDate": "2020-05-27",
+            "rating": 8.2
+          },
+          {
+            "episode": 2,
+            "title": "Know Your Onions",
+            "airDate": "2020-06-03",
+            "rating": 8
+          },
+          {
+            "episode": 3,
+            "title": "Alien Commies from the Future!",
+            "airDate": "2020-06-10",
+            "rating": 8.4
+          },
+          {
+            "episode": 4,
+            "title": "Out of the Past",
+            "airDate": "2020-06-17",
+            "rating": 8.6
+          },
+          {
+            "episode": 5,
+            "title": "A Trout in the Milk",
+            "airDate": "2020-06-24",
+            "rating": 8.2
+          },
+          {
+            "episode": 6,
+            "title": "Adapt or Die",
+            "airDate": "2020-07-01",
+            "rating": 8.2
+          },
+          {
+            "episode": 7,
+            "title": "The Totally Excellent Adventures of Mack and the D",
+            "airDate": "2020-07-08",
+            "rating": 7.7
+          },
+          {
+            "episode": 8,
+            "title": "After, Before",
+            "airDate": "2020-07-15",
+            "rating": 7.8
+          },
+          {
+            "episode": 9,
+            "title": "As I Have Always Been",
+            "airDate": "2020-07-22",
+            "rating": 9.5
+          },
+          {
+            "episode": 10,
+            "title": "Stolen",
+            "airDate": "2020-07-29",
+            "rating": 8
+          },
+          {
+            "episode": 11,
+            "title": "Brand New Day",
+            "airDate": "2020-08-05",
+            "rating": 8.2
+          },
+          {
+            "episode": 12,
+            "title": "The End Is at Hand",
+            "airDate": "2020-08-12",
+            "rating": 8.8
+          },
+          {
+            "episode": 13,
+            "title": "What We're Fighting For",
+            "airDate": "2020-08-12",
+            "rating": 9.3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Silo",
+    "type": "TV Show",
+    "year": 2023,
+    "rating": 8.1,
+    "age": "TV-MA",
+    "duration": "45m",
+    "genres": [
+      "Drama",
+      "Sci-Fi",
+      "Mystery"
+    ],
+    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/4XccmjsOmQZw8S2iW1wvlvmb5v1.jpg",
+    "videoUrl": "125988",
+    "trailerUrl": "",
+    "overview": "In ruin future, ten thousand people live in giant underground silo, told outside world poison, deadly. Engineer Juliette Nichols dig into mystery of husband death, uncover dark secret silo elder try hide.",
+    "overviewKurdish": "",
+    "director": "Graham Yost",
+    "cast": [
+      "Rebecca Ferguson, Common, Rashida Jones, David Oyelowo, Tim Robbins"
+    ],
+    "trending": false,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Freedom Day",
+            "airDate": "2023-05-05",
+            "rating": 8.2
+          },
+          {
+            "episode": 2,
+            "title": "Holston's Pick",
+            "airDate": "2023-05-05",
+            "rating": 8
+          },
+          {
+            "episode": 3,
+            "title": "Machines",
+            "airDate": "2023-05-12",
+            "rating": 8.3
+          },
+          {
+            "episode": 4,
+            "title": "Truth",
+            "airDate": "2023-05-19",
+            "rating": 7.3
+          },
+          {
+            "episode": 5,
+            "title": "The Janitor's Boy",
+            "airDate": "2023-05-26",
+            "rating": 7.3
+          },
+          {
+            "episode": 6,
+            "title": "The Relic",
+            "airDate": "2023-06-02",
+            "rating": 7.5
+          },
+          {
+            "episode": 7,
+            "title": "The Flamekeepers",
+            "airDate": "2023-06-09",
+            "rating": 8.1
+          },
+          {
+            "episode": 8,
+            "title": "Hanna",
+            "airDate": "2023-06-16",
+            "rating": 8.3
+          },
+          {
+            "episode": 9,
+            "title": "The Getaway",
+            "airDate": "2023-06-23",
+            "rating": 8.4
+          },
+          {
+            "episode": 10,
+            "title": "Outside",
+            "airDate": "2023-06-30",
+            "rating": 9
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Engineer",
+            "airDate": "2024-11-15",
+            "rating": 7.5
+          },
+          {
+            "episode": 2,
+            "title": "Order",
+            "airDate": "2024-11-22",
+            "rating": 7.2
+          },
+          {
+            "episode": 3,
+            "title": "Solo",
+            "airDate": "2024-11-27",
+            "rating": 7.5
+          },
+          {
+            "episode": 4,
+            "title": "The Harmonium",
+            "airDate": "2024-12-06",
+            "rating": 7.5
+          },
+          {
+            "episode": 5,
+            "title": "Descent",
+            "airDate": "2024-12-13",
+            "rating": 7.1
+          },
+          {
+            "episode": 6,
+            "title": "Barricades",
+            "airDate": "2024-12-20",
+            "rating": 7.1
+          },
+          {
+            "episode": 7,
+            "title": "The Dive",
+            "airDate": "2024-12-27",
+            "rating": 7.5
+          },
+          {
+            "episode": 8,
+            "title": "The Book of Quinn",
+            "airDate": "2025-01-03",
+            "rating": 6.9
+          },
+          {
+            "episode": 9,
+            "title": "The Last Resort",
+            "airDate": "2025-01-10",
+            "rating": 8.5
+          },
+          {
+            "episode": 10,
+            "title": "Episode 10",
+            "airDate": "2025-01-17",
+            "rating": 8.7
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Who Are You?",
+            "airDate": "2026-07-03",
+            "rating": 7.3
+          },
+          {
+            "episode": 2,
+            "title": "It's All Good",
+            "airDate": "2026-07-10",
+            "rating": 7.2
+          },
+          {
+            "episode": 3,
+            "title": "A Dark Web",
+            "airDate": "2026-07-17",
+            "rating": 7.2
+          },
+          {
+            "episode": 4,
+            "title": "Whatever You Do, Don't Go Home",
+            "airDate": "2026-07-24",
+            "rating": 7.6
+          },
+          {
+            "episode": 5,
+            "title": "Memory",
+            "airDate": "2026-07-31",
+            "rating": 8.5
+          },
+          {
+            "episode": 6,
+            "title": "The Drive",
+            "airDate": "2026-08-07",
+            "rating": 7.3
+          },
+          {
+            "episode": 7,
+            "title": "Radio",
+            "airDate": "2026-08-14",
+            "rating": 8
+          },
+          {
+            "episode": 8,
+            "title": "Gray Goo",
+            "airDate": "2026-08-21",
+            "rating": 8.1
+          },
+          {
+            "episode": 9,
+            "title": "Farewell",
+            "airDate": "2026-08-28",
+            "rating": 9.3
+          },
+          {
+            "episode": 10,
+            "title": "Troy",
+            "airDate": "2026-09-04",
+            "rating": 9.6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "X-Men '97",
+    "type": "TV Show",
+    "year": 2024,
+    "rating": 8.7,
+    "age": "TV-14",
+    "genres": [
+      "Animation",
+      "Action",
+      "Sci-Fi"
+    ],
+    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/iDnTAeR2WNA62XQG0ivtteDSjd5.jpg",
+    "videoUrl": "138502",
+    "trailerUrl": "",
+    "overview": "X-Men '97 is a revival of the classic animated series, following the iconic mutant team as they navigate high-stakes adventures and emotional challenges in a world that hates and fears them.",
+    "overviewKurdish": "",
+    "director": "Beau DeMayo",
+    "cast": [
+      "Ray Chase, Jennifer Hale, Cal Dodd, Alison Sealy-Smith, Lenore Zann, JP Karliak"
+    ],
+    "trending": false,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "To Me, My X-Men",
+            "airDate": "2024-03-20",
+            "rating": 8.2
+          },
+          {
+            "episode": 2,
+            "title": "Mutant Liberation Begins",
+            "airDate": "2024-03-20",
+            "rating": 9
+          },
+          {
+            "episode": 3,
+            "title": "Fire Made Flesh",
+            "airDate": "2024-03-27",
+            "rating": 8.5
+          },
+          {
+            "episode": 4,
+            "title": "Motendo / Lifedeath â€“ Part 1",
+            "airDate": "2024-04-03",
+            "rating": 6.9
+          },
+          {
+            "episode": 5,
+            "title": "Remember It",
+            "airDate": "2024-04-10",
+            "rating": 9.7
+          },
+          {
+            "episode": 6,
+            "title": "Lifedeath â€“ Part 2",
+            "airDate": "2024-04-17",
+            "rating": 7.7
+          },
+          {
+            "episode": 7,
+            "title": "Bright Eyes",
+            "airDate": "2024-04-24",
+            "rating": 8.5
+          },
+          {
+            "episode": 8,
+            "title": "Tolerance is Extinction â€“ Part 1",
+            "airDate": "2024-05-01",
+            "rating": 9.2
+          },
+          {
+            "episode": 9,
+            "title": "Tolerance is Extinction â€“ Part 2",
+            "airDate": "2024-05-08",
+            "rating": 9.3
+          },
+          {
+            "episode": 10,
+            "title": "Tolerance is Extinction â€“ Part 3",
+            "airDate": "2024-05-15",
+            "rating": 9.3
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Days of Past Future",
+            "airDate": "2026-07-01",
+            "rating": 8.4
+          },
+          {
+            "episode": 2,
+            "title": "A Force to be Reckoned With",
+            "airDate": "2026-07-01",
+            "rating": 8.5
+          },
+          {
+            "episode": 3,
+            "title": "Rise of Apocalypse: Part 1",
+            "airDate": "2026-07-01",
+            "rating": 8.6
+          },
+          {
+            "episode": 4,
+            "title": "Rise of Apocalypse: Part 2",
+            "airDate": "2026-07-08",
+            "rating": 9.4
+          },
+          {
+            "episode": 5,
+            "title": "Weapon X, Lies, and DVDs",
+            "airDate": "2026-07-15",
+            "rating": 7.7
+          },
+          {
+            "episode": 6,
+            "title": "Danger.Exe",
+            "airDate": "2026-07-22",
+            "rating": 7.9
+          },
+          {
+            "episode": 7,
+            "title": "Strange Land, Savage Heart",
+            "airDate": "2026-07-29",
+            "rating": 7.9
+          },
+          {
+            "episode": 8,
+            "title": "The Dead Man's Hand",
+            "airDate": "2026-08-05",
+            "rating": 8.3
+          },
+          {
+            "episode": 9,
+            "title": "Survival of the Fittest",
+            "airDate": "2026-08-12",
+            "rating": 8.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Dutton Ranch",
+    "type": "TV Show",
+    "year": 2026,
+    "rating": 8.2,
+    "age": "TV-MA",
+    "genres": [
+      "Drama",
+      "Western"
+    ],
+    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/wowtdtDM980GjuxCXJY4seeqP2O.jpg",
+    "videoUrl": "299167",
+    "trailerUrl": "",
+    "overview": "Beth Dutton, Rip Wheeler gamble everything on new life in South Texas, but promise of building future far from ghost of Yellowstone quickly collide with brutal new reality, rival ranch that stop at nothing protect its empire.",
+    "overviewKurdish": "",
+    "director": "Chad Feehan",
+    "cast": [
+      "Kelly Reilly, Cole Hauser, Ed Harris, Annette Bening, Finn Little, Jai Courtney"
+    ],
+    "trending": false,
+    "featured": false,
+    "is4k": true,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Untold Want",
+            "airDate": "2026-05-15",
+            "rating": 8.3
+          },
+          {
+            "episode": 2,
+            "title": "Earn Another Day",
+            "airDate": "2026-05-15",
+            "rating": 8.3
+          },
+          {
+            "episode": 3,
+            "title": "Act of God Business",
+            "airDate": "2026-05-22",
+            "rating": 8.1
+          },
+          {
+            "episode": 4,
+            "title": "Start With a Bullet",
+            "airDate": "2026-05-29",
+            "rating": 8.4
+          },
+          {
+            "episode": 5,
+            "title": "Peaceful Find Peace",
+            "airDate": "2026-06-05",
+            "rating": 8.4
+          },
+          {
+            "episode": 6,
+            "title": "A Cowboy Saint",
+            "airDate": "2026-06-12",
+            "rating": 7.9
+          },
+          {
+            "episode": 7,
+            "title": "Den of Sin",
+            "airDate": "2026-06-19",
+            "rating": 8
+          },
+          {
+            "episode": 8,
+            "title": "Whiskey Limits",
+            "airDate": "2026-06-26",
+            "rating": 7.8
+          },
+          {
+            "episode": 9,
+            "title": "El Padrino",
+            "airDate": "2026-07-03",
+            "rating": 8.7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "ONE PIECE",
+    "type": "TV Show",
+    "year": 2023,
+    "rating": 8.3,
+    "age": "TV-14",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Fantasy"
+    ],
+    "poster": "https://image.tmdb.org/t/p/original/yEtSBgugED8XyhqjcKgF6j2zDMf.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/qD211Hb5XwFxrszzBBe5EUYJerh.jpg",
+    "videoUrl": "111110",
+    "trailerUrl": "",
+    "overview": "Live action show based on legendary manga. Young stretchy boy Monkey D. Luffy set sail to assemble pirate crew. Together Straw Hat crew search dangerous ocean for grand treasure left by Gold Roger so Luffy become King of Pirates.",
+    "overviewKurdish": "",
+    "director": "Matt Owens, Steven Maeda",
+    "cast": [
+      "IÃ±aki Godoy, Mackenyu, Emily Rudd, Jacob Romero, Taz Skylar, Vincent Regan, Jeff Ward, Morgan Davies"
+    ],
+    "trending": false,
+    "featured": false,
+    "is4k": true,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Romance Dawn",
+            "airDate": "2023-08-31",
+            "rating": 8.3
+          },
+          {
+            "episode": 2,
+            "title": "The Man in the Straw Hat",
+            "airDate": "2023-08-31",
+            "rating": 8.3
+          },
+          {
+            "episode": 3,
+            "title": "Tell No Tales",
+            "airDate": "2023-08-31",
+            "rating": 7.7
+          },
+          {
+            "episode": 4,
+            "title": "The Pirates Are Coming",
+            "airDate": "2023-08-31",
+            "rating": 8
+          },
+          {
+            "episode": 5,
+            "title": "Eat at Baratie!",
+            "airDate": "2023-08-31",
+            "rating": 8.8
+          },
+          {
+            "episode": 6,
+            "title": "The Chef and the Chore Boy",
+            "airDate": "2023-08-31",
+            "rating": 8.5
+          },
+          {
+            "episode": 7,
+            "title": "The Girl with the Sawfish Tattoo",
+            "airDate": "2023-08-31",
+            "rating": 8.5
+          },
+          {
+            "episode": 8,
+            "title": "Worst in the East",
+            "airDate": "2023-08-31",
+            "rating": 9
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "The Beginning and the End",
+            "airDate": "2026-03-10",
+            "rating": 8.2
+          },
+          {
+            "episode": 2,
+            "title": "Good Whale Hunting",
+            "airDate": "2026-03-10",
+            "rating": 8.4
+          },
+          {
+            "episode": 3,
+            "title": "Whisky Business",
+            "airDate": "2026-03-10",
+            "rating": 8.7
+          },
+          {
+            "episode": 4,
+            "title": "Big Trouble in Little Garden",
+            "airDate": "2026-03-10",
+            "rating": 8.1
+          },
+          {
+            "episode": 5,
+            "title": "Wax On, Wax Off",
+            "airDate": "2026-03-10",
+            "rating": 8.4
+          },
+          {
+            "episode": 6,
+            "title": "Nami Deerest",
+            "airDate": "2026-03-10",
+            "rating": 8.3
+          },
+          {
+            "episode": 7,
+            "title": "Reindeer Shames",
+            "airDate": "2026-03-10",
+            "rating": 9.3
+          },
+          {
+            "episode": 8,
+            "title": "Deer and Loathing in Drum Kingdom",
+            "airDate": "2026-03-10",
+            "rating": 8.8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Shameless",
+    "type": "TV Show",
+    "year": 2011,
+    "age": "TV-MA",
+    "rating": 8.5,
+    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/ifo31fMWLmyOVpdak9K0kY4jldQ.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/8A071YZoKIzoXt4t6aPWEyyuoxw.jpg",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "duration": "45m",
+    "videoUrl": "34307",
+    "trailerUrl": "",
+    "overview": "Chicagoan Frank Gallagher is the proud single dad of six smart, industrious, independent kids, who without him would be... perhaps better off. When Frank's not at the bar spending what little money they have, he's passed out on the floor. But the kids have found ways to grow up in spite of him.",
+    "overviewKurdish": "",
+    "director": "John Wells",
+    "cast": [
+      "William H. Macy",
+      "Emmy Rossum",
+      "Jeremy Allen White",
+      "Ethan Cutkosky",
+      "Shanola Hampton",
+      "Steve Howey",
+      "Emma Kenney",
+      "Cameron Monaghan",
+      "Noel Fisher"
+    ],
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Pilot",
+            "airDate": "2011-01-09",
+            "rating": 8.4
+          },
+          {
+            "episode": 2,
+            "title": "Frank the Plank",
+            "airDate": "2011-01-16",
+            "rating": 8
+          },
+          {
+            "episode": 3,
+            "title": "Aunt Ginger",
+            "airDate": "2011-01-23",
+            "rating": 8.3
+          },
+          {
+            "episode": 4,
+            "title": "Casey Casden",
+            "airDate": "2011-01-30",
+            "rating": 8.3
+          },
+          {
+            "episode": 5,
+            "title": "Three Boys",
+            "airDate": "2011-02-06",
+            "rating": 7.9
+          },
+          {
+            "episode": 6,
+            "title": "Killer Carl",
+            "airDate": "2011-02-13",
+            "rating": 7.9
+          },
+          {
+            "episode": 7,
+            "title": "Frank Gallagher: Loving Husband, Devoted Father",
+            "airDate": "2011-02-20",
+            "rating": 8.2
+          },
+          {
+            "episode": 8,
+            "title": "It's Time to Kill the Turtle",
+            "airDate": "2011-02-27",
+            "rating": 8.4
+          },
+          {
+            "episode": 9,
+            "title": "But at Last Came a Knock",
+            "airDate": "2011-03-06",
+            "rating": 8.6
+          },
+          {
+            "episode": 10,
+            "title": "Nana Gallagher Had an Affair",
+            "airDate": "2011-03-13",
+            "rating": 8.5
+          },
+          {
+            "episode": 11,
+            "title": "Daddyz Girl",
+            "airDate": "2011-03-20",
+            "rating": 8.4
+          },
+          {
+            "episode": 12,
+            "title": "Father Frank, Full of Grace",
+            "airDate": "2011-03-27",
+            "rating": 8.8
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Summertime",
+            "airDate": "2012-01-08",
+            "rating": 8
+          },
+          {
+            "episode": 2,
+            "title": "Summer Loving",
+            "airDate": "2012-01-15",
+            "rating": 7.8
+          },
+          {
+            "episode": 3,
+            "title": "I'll Light a Candle for You Every Day",
+            "airDate": "2012-01-22",
+            "rating": 8
+          },
+          {
+            "episode": 4,
+            "title": "A Beautiful Mess",
+            "airDate": "2012-01-29",
+            "rating": 8.3
+          },
+          {
+            "episode": 5,
+            "title": "Father's Day",
+            "airDate": "2012-02-05",
+            "rating": 8.2
+          },
+          {
+            "episode": 6,
+            "title": "Can I Have a Mother",
+            "airDate": "2012-02-12",
+            "rating": 8.3
+          },
+          {
+            "episode": 7,
+            "title": "A Bottle of Jean Nate",
+            "airDate": "2012-02-19",
+            "rating": 7.9
+          },
+          {
+            "episode": 8,
+            "title": "Parenthood",
+            "airDate": "2012-03-04",
+            "rating": 8.4
+          },
+          {
+            "episode": 9,
+            "title": "Hurricane Monica",
+            "airDate": "2012-03-11",
+            "rating": 8.1
+          },
+          {
+            "episode": 10,
+            "title": "A Great Cause",
+            "airDate": "2012-03-18",
+            "rating": 8.4
+          },
+          {
+            "episode": 11,
+            "title": "Just Like the Pilgrims Intended",
+            "airDate": "2012-03-25",
+            "rating": 9.1
+          },
+          {
+            "episode": 12,
+            "title": "Fiona Interrupted",
+            "airDate": "2012-04-01",
+            "rating": 8.6
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "El Gran Cañon",
+            "airDate": "2013-01-13",
+            "rating": 8.4
+          },
+          {
+            "episode": 2,
+            "title": "The American Dream",
+            "airDate": "2013-01-20",
+            "rating": 8.3
+          },
+          {
+            "episode": 3,
+            "title": "May I Trim Your Hedges?",
+            "airDate": "2013-01-27",
+            "rating": 8.6
+          },
+          {
+            "episode": 4,
+            "title": "The Helpful Gallaghers",
+            "airDate": "2013-02-10",
+            "rating": 8.3
+          },
+          {
+            "episode": 5,
+            "title": "The Sins of My Caretaker",
+            "airDate": "2013-02-17",
+            "rating": 8.6
+          },
+          {
+            "episode": 6,
+            "title": "Cascading Failures",
+            "airDate": "2013-02-24",
+            "rating": 8.8
+          },
+          {
+            "episode": 7,
+            "title": "A Long Way from Home",
+            "airDate": "2013-03-03",
+            "rating": 8.5
+          },
+          {
+            "episode": 8,
+            "title": "Where There's a Will",
+            "airDate": "2013-03-10",
+            "rating": 8.3
+          },
+          {
+            "episode": 9,
+            "title": "Frank the Plumber",
+            "airDate": "2013-03-17",
+            "rating": 8.8
+          },
+          {
+            "episode": 10,
+            "title": "Civil Wrongs",
+            "airDate": "2013-03-24",
+            "rating": 8.2
+          },
+          {
+            "episode": 11,
+            "title": "Order Room Service",
+            "airDate": "2013-03-31",
+            "rating": 8.6
+          },
+          {
+            "episode": 12,
+            "title": "Survival of the Fittest",
+            "airDate": "2013-04-07",
+            "rating": 9.1
+          }
+        ]
+      },
+      {
+        "season": 4,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Simple Pleasures",
+            "airDate": "2014-01-12",
+            "rating": 8.1
+          },
+          {
+            "episode": 2,
+            "title": "My Oldest Daughter",
+            "airDate": "2014-01-19",
+            "rating": 8.3
+          },
+          {
+            "episode": 3,
+            "title": "Like Father, Like Daughter",
+            "airDate": "2014-01-26",
+            "rating": 8.2
+          },
+          {
+            "episode": 4,
+            "title": "Strangers on a Train",
+            "airDate": "2014-02-02",
+            "rating": 8.3
+          },
+          {
+            "episode": 5,
+            "title": "There's the Rub",
+            "airDate": "2014-02-09",
+            "rating": 9
+          },
+          {
+            "episode": 6,
+            "title": "Iron City",
+            "airDate": "2014-02-16",
+            "rating": 8.8
+          },
+          {
+            "episode": 7,
+            "title": "A Jailbird, Invalid, Martyr, Cutter, Retard, and Parasitic Twin",
+            "airDate": "2014-02-23",
+            "rating": 8.8
+          },
+          {
+            "episode": 8,
+            "title": "Hope Springs Paternal",
+            "airDate": "2014-03-09",
+            "rating": 8.6
+          },
+          {
+            "episode": 9,
+            "title": "The Legend of Bonnie and Carl",
+            "airDate": "2014-03-16",
+            "rating": 8.8
+          },
+          {
+            "episode": 10,
+            "title": "Liver, I Hardly Know Her",
+            "airDate": "2014-03-23",
+            "rating": 8.6
+          },
+          {
+            "episode": 11,
+            "title": "Emily",
+            "airDate": "2014-03-30",
+            "rating": 9.3
+          },
+          {
+            "episode": 12,
+            "title": "Lazarus",
+            "airDate": "2014-04-06",
+            "rating": 9.3
+          }
+        ]
+      },
+      {
+        "season": 5,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Milk of the Gods",
+            "airDate": "2015-01-11",
+            "rating": 8.2
+          },
+          {
+            "episode": 2,
+            "title": "I'm the Liver",
+            "airDate": "2015-01-18",
+            "rating": 8.3
+          },
+          {
+            "episode": 3,
+            "title": "The Two Lisas",
+            "airDate": "2015-01-25",
+            "rating": 8.5
+          },
+          {
+            "episode": 4,
+            "title": "A Night to Remem... Wait, What?",
+            "airDate": "2015-02-01",
+            "rating": 8.6
+          },
+          {
+            "episode": 5,
+            "title": "Rite of Passage",
+            "airDate": "2015-02-08",
+            "rating": 8.7
+          },
+          {
+            "episode": 6,
+            "title": "Crazy Love",
+            "airDate": "2015-02-15",
+            "rating": 9.1
+          },
+          {
+            "episode": 7,
+            "title": "Tell Me You Fucking Need Me",
+            "airDate": "2015-03-01",
+            "rating": 8.5
+          },
+          {
+            "episode": 8,
+            "title": "Uncle Carl",
+            "airDate": "2015-03-08",
+            "rating": 8.8
+          },
+          {
+            "episode": 9,
+            "title": "Carl's First Sentencing",
+            "airDate": "2015-03-15",
+            "rating": 9
+          },
+          {
+            "episode": 10,
+            "title": "South Side Rules",
+            "airDate": "2015-03-22",
+            "rating": 8.7
+          },
+          {
+            "episode": 11,
+            "title": "Drugs Actually",
+            "airDate": "2015-03-29",
+            "rating": 8.9
+          },
+          {
+            "episode": 12,
+            "title": "Love Songs (In the Key of Gallagher)",
+            "airDate": "2015-04-05",
+            "rating": 8.2
+          }
+        ]
+      },
+      {
+        "season": 6,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "I Only Miss Her When I'm Breathing",
+            "airDate": "2016-01-10",
+            "rating": 8.3
+          },
+          {
+            "episode": 2,
+            "title": "#AbortionRules",
+            "airDate": "2016-01-17",
+            "rating": 7.8
+          },
+          {
+            "episode": 3,
+            "title": "The F Word",
+            "airDate": "2016-01-24",
+            "rating": 8.4
+          },
+          {
+            "episode": 4,
+            "title": "Going Once, Going Twice",
+            "airDate": "2016-01-31",
+            "rating": 8.4
+          },
+          {
+            "episode": 5,
+            "title": "Refugees",
+            "airDate": "2016-02-07",
+            "rating": 8.2
+          },
+          {
+            "episode": 6,
+            "title": "NSFW",
+            "airDate": "2016-02-14",
+            "rating": 8.5
+          },
+          {
+            "episode": 7,
+            "title": "Pimp's Paradise",
+            "airDate": "2016-02-21",
+            "rating": 7.8
+          },
+          {
+            "episode": 8,
+            "title": "Be a Good Boy. Come for Grandma.",
+            "airDate": "2016-03-06",
+            "rating": 8.2
+          },
+          {
+            "episode": 9,
+            "title": "A Yurt of One's Own",
+            "airDate": "2016-03-13",
+            "rating": 8.4
+          },
+          {
+            "episode": 10,
+            "title": "Paradise Lost",
+            "airDate": "2016-03-20",
+            "rating": 8.2
+          },
+          {
+            "episode": 11,
+            "title": "Sleep No More",
+            "airDate": "2016-03-27",
+            "rating": 8.8
+          },
+          {
+            "episode": 12,
+            "title": "Familia Supra Gallegorious Omnia!",
+            "airDate": "2016-04-03",
+            "rating": 8.9
+          }
+        ]
+      },
+      {
+        "season": 7,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Hiraeth",
+            "airDate": "2016-10-02",
+            "rating": 8.4
+          },
+          {
+            "episode": 2,
+            "title": "Swipe, Fuck, Leave",
+            "airDate": "2016-10-09",
+            "rating": 8
+          },
+          {
+            "episode": 3,
+            "title": "Home Sweet Homeless Shelter",
+            "airDate": "2016-10-16",
+            "rating": 8.2
+          },
+          {
+            "episode": 4,
+            "title": "I Am a Storm",
+            "airDate": "2016-10-23",
+            "rating": 8.3
+          },
+          {
+            "episode": 5,
+            "title": "Own Your Shit",
+            "airDate": "2016-10-30",
+            "rating": 7.8
+          },
+          {
+            "episode": 6,
+            "title": "The Defenestration of Frank",
+            "airDate": "2016-11-06",
+            "rating": 8.3
+          },
+          {
+            "episode": 7,
+            "title": "You'll Never Ever Get a Chicken in Your Whole Entire Life",
+            "airDate": "2016-11-13",
+            "rating": 8
+          },
+          {
+            "episode": 8,
+            "title": "You Sold Me the Laundromat, Remember?",
+            "airDate": "2016-11-20",
+            "rating": 8.9
+          },
+          {
+            "episode": 9,
+            "title": "Ouroboros",
+            "airDate": "2016-11-27",
+            "rating": 8.4
+          },
+          {
+            "episode": 10,
+            "title": "Ride or Die",
+            "airDate": "2016-12-04",
+            "rating": 8.7
+          },
+          {
+            "episode": 11,
+            "title": "Happily Ever After",
+            "airDate": "2016-12-11",
+            "rating": 9.1
+          },
+          {
+            "episode": 12,
+            "title": "Requiem for a Slut",
+            "airDate": "2016-12-18",
+            "rating": 9.2
+          }
+        ]
+      },
+      {
+        "season": 8,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "We Become What We ... Frank!",
+            "airDate": "2017-11-05",
+            "rating": 8.3
+          },
+          {
+            "episode": 2,
+            "title": "Where's My Meth?",
+            "airDate": "2017-11-12",
+            "rating": 8.1
+          },
+          {
+            "episode": 3,
+            "title": "God Bless Her Rotting Soul",
+            "airDate": "2017-11-19",
+            "rating": 8.9
+          },
+          {
+            "episode": 4,
+            "title": "F**k Paying It Forward",
+            "airDate": "2017-11-26",
+            "rating": 8.3
+          },
+          {
+            "episode": 5,
+            "title": "The (Mis)Education of Liam Fergus Beircheart Gallagher",
+            "airDate": "2017-12-03",
+            "rating": 8.1
+          },
+          {
+            "episode": 6,
+            "title": "Icarus Fell and Rusty Ate Him",
+            "airDate": "2017-12-10",
+            "rating": 8.1
+          },
+          {
+            "episode": 7,
+            "title": "Occupy Fiona",
+            "airDate": "2017-12-17",
+            "rating": 7.9
+          },
+          {
+            "episode": 8,
+            "title": "Frank's Northern Southern Express",
+            "airDate": "2017-12-31",
+            "rating": 8
+          },
+          {
+            "episode": 9,
+            "title": "The Fugees",
+            "airDate": "2018-01-07",
+            "rating": 7.7
+          },
+          {
+            "episode": 10,
+            "title": "Church of Gay Jesus",
+            "airDate": "2018-01-14",
+            "rating": 7.7
+          },
+          {
+            "episode": 11,
+            "title": "A Gallagher Pedicure",
+            "airDate": "2018-01-21",
+            "rating": 8.4
+          },
+          {
+            "episode": 12,
+            "title": "Sleepwalking",
+            "airDate": "2018-01-28",
+            "rating": 8.1
+          }
+        ]
+      },
+      {
+        "season": 9,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Are You There Shim? It's Me, Ian",
+            "airDate": "2018-09-09",
+            "rating": 7.9
+          },
+          {
+            "episode": 2,
+            "title": "Mo White!",
+            "airDate": "2018-09-16",
+            "rating": 7.4
+          },
+          {
+            "episode": 3,
+            "title": "Weirdo Gallagher Vortex",
+            "airDate": "2018-09-23",
+            "rating": 7.4
+          },
+          {
+            "episode": 4,
+            "title": "Do Right, Vote White!",
+            "airDate": "2018-09-30",
+            "rating": 7.6
+          },
+          {
+            "episode": 5,
+            "title": "Black Haired Ginger",
+            "airDate": "2018-10-07",
+            "rating": 8.1
+          },
+          {
+            "episode": 6,
+            "title": "Face It, You're Gorgeous",
+            "airDate": "2018-10-14",
+            "rating": 8.9
+          },
+          {
+            "episode": 7,
+            "title": "Down Like the Titanic",
+            "airDate": "2018-10-21",
+            "rating": 8.2
+          },
+          {
+            "episode": 8,
+            "title": "The Apple Doesn't Fall Far from the Alibi",
+            "airDate": "2019-01-20",
+            "rating": 7.5
+          },
+          {
+            "episode": 9,
+            "title": "Boooooooooooone!",
+            "airDate": "2019-01-27",
+            "rating": 7.8
+          },
+          {
+            "episode": 10,
+            "title": "Los Diablos!",
+            "airDate": "2019-02-10",
+            "rating": 7.8
+          },
+          {
+            "episode": 11,
+            "title": "The Hobo Games",
+            "airDate": "2019-02-17",
+            "rating": 8.2
+          },
+          {
+            "episode": 12,
+            "title": "You'll Know the Bottom When You Hit It",
+            "airDate": "2019-02-24",
+            "rating": 8.3
+          },
+          {
+            "episode": 13,
+            "title": "Lost",
+            "airDate": "2019-03-03",
+            "rating": 8.3
+          },
+          {
+            "episode": 14,
+            "title": "Found",
+            "airDate": "2019-03-10",
+            "rating": 9
+          }
+        ]
+      },
+      {
+        "season": 10,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "We Few, We Lucky Few, We Band of Gallaghers!",
+            "airDate": "2019-11-10",
+            "rating": 7.5
+          },
+          {
+            "episode": 2,
+            "title": "Sleep Well My Prince for Tomorrow You Shall Be King",
+            "airDate": "2019-11-17",
+            "rating": 7.3
+          },
+          {
+            "episode": 3,
+            "title": "Which America?",
+            "airDate": "2019-11-24",
+            "rating": 7.4
+          },
+          {
+            "episode": 4,
+            "title": "A Little Gallagher Goes a Long Way",
+            "airDate": "2019-12-01",
+            "rating": 7.1
+          },
+          {
+            "episode": 5,
+            "title": "Sparky",
+            "airDate": "2019-12-08",
+            "rating": 7.5
+          },
+          {
+            "episode": 6,
+            "title": "Adios Gringos",
+            "airDate": "2019-12-15",
+            "rating": 7.1
+          },
+          {
+            "episode": 7,
+            "title": "Citizen Carl",
+            "airDate": "2019-12-22",
+            "rating": 7.5
+          },
+          {
+            "episode": 8,
+            "title": "Debbie Might Be a Prostitute",
+            "airDate": "2019-12-29",
+            "rating": 7.4
+          },
+          {
+            "episode": 9,
+            "title": "O Captain, My Captain",
+            "airDate": "2020-01-05",
+            "rating": 6.9
+          },
+          {
+            "episode": 10,
+            "title": "Now Leaving Illinois",
+            "airDate": "2020-01-12",
+            "rating": 7.5
+          },
+          {
+            "episode": 11,
+            "title": "Location, Location, Location",
+            "airDate": "2020-01-19",
+            "rating": 7.6
+          },
+          {
+            "episode": 12,
+            "title": "\"Gallavich!\"",
+            "airDate": "2020-01-26",
+            "rating": 8.9
+          }
+        ]
+      },
+      {
+        "season": 11,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "This is Chicago!",
+            "airDate": "2020-12-06",
+            "rating": 7.1
+          },
+          {
+            "episode": 2,
+            "title": "Go Home, Gentrifier!",
+            "airDate": "2020-12-13",
+            "rating": 7.3
+          },
+          {
+            "episode": 3,
+            "title": "Frances Francis Franny Frank",
+            "airDate": "2020-12-20",
+            "rating": 7.7
+          },
+          {
+            "episode": 4,
+            "title": "NIMBY",
+            "airDate": "2021-01-10",
+            "rating": 7.3
+          },
+          {
+            "episode": 5,
+            "title": "Slaughter",
+            "airDate": "2021-01-31",
+            "rating": 7.1
+          },
+          {
+            "episode": 6,
+            "title": "Do Not Go Gentle Into That Good....Eh, Screw It",
+            "airDate": "2021-02-14",
+            "rating": 7.8
+          },
+          {
+            "episode": 7,
+            "title": "Two at a Biker Bar, One in the Lake",
+            "airDate": "2021-03-07",
+            "rating": 7.8
+          },
+          {
+            "episode": 8,
+            "title": "Cancelled",
+            "airDate": "2021-03-14",
+            "rating": 7.8
+          },
+          {
+            "episode": 9,
+            "title": "Survivors",
+            "airDate": "2021-03-21",
+            "rating": 7.3
+          },
+          {
+            "episode": 10,
+            "title": "DNR",
+            "airDate": "2021-03-28",
+            "rating": 7.4
+          },
+          {
+            "episode": 11,
+            "title": "The Fickle Lady is Calling it Quits",
+            "airDate": "2021-04-04",
+            "rating": 8.5
+          },
+          {
+            "episode": 12,
+            "title": "Father Frank, Full of Grace",
+            "airDate": "2021-04-11",
+            "rating": 6.7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Beauty in Black",
+    "type": "TV Show",
+    "year": 2024,
+    "rating": 7.2,
+    "age": "TV-MA",
+    "duration": "45m",
+    "genres": [
+      "Drama"
+    ],
+    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/xKk4bFCCpZ9tvjUykvvMYLSBnjo.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/ywJcUIMTCjstPLvvyIiPWP3G3m3.jpg",
+    "videoUrl": "246246",
+    "trailerUrl": "",
+    "overview": "A stripper's fate takes a turn when she crosses paths with the wealthy, dysfunctional family behind a cosmetics dynasty and a devious trafficking scheme.",
+    "overviewKurdish": "",
+    "director": "Tyler Perry",
+    "cast": [
+      "Taylor Polidore Williams",
+      "Amber Reign Smith",
+      "Crystle Stewart",
+      "Ricco Ross"
+    ],
+    "trending": true,
+    "featured": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Make It Rain",
+            "airDate": "2024-10-24",
+            "rating": 6.7
+          },
+          {
+            "episode": 2,
+            "title": "A Dance with Daddy",
+            "airDate": "2024-10-24",
+            "rating": 7
+          },
+          {
+            "episode": 3,
+            "title": "The Aftermath",
+            "airDate": "2024-10-24",
+            "rating": 7.2
+          },
+          {
+            "episode": 4,
+            "title": "A Family Affair",
+            "airDate": "2024-10-24",
+            "rating": 7.2
+          },
+          {
+            "episode": 5,
+            "title": "Unraveling Threads",
+            "airDate": "2024-10-24",
+            "rating": 7.3
+          },
+          {
+            "episode": 6,
+            "title": "Bang Bang",
+            "airDate": "2024-10-24",
+            "rating": 7.1
+          },
+          {
+            "episode": 7,
+            "title": "Even Playing Field",
+            "airDate": "2024-10-24",
+            "rating": 7.5
+          },
+          {
+            "episode": 8,
+            "title": "Killing Karma",
+            "airDate": "2024-10-24",
+            "rating": 7.4
+          },
+          {
+            "episode": 9,
+            "title": "Blind Rage",
+            "airDate": "2025-03-06",
+            "rating": 7.5
+          },
+          {
+            "episode": 10,
+            "title": "Power Struggle",
+            "airDate": "2025-03-06",
+            "rating": 7.3
+          },
+          {
+            "episode": 11,
+            "title": "Up Against the Wall",
+            "airDate": "2025-03-06",
+            "rating": 7.5
+          },
+          {
+            "episode": 12,
+            "title": "Hot Seat",
+            "airDate": "2025-03-06",
+            "rating": 7.2
+          },
+          {
+            "episode": 13,
+            "title": "By Any Means",
+            "airDate": "2025-03-06",
+            "rating": 7.4
+          },
+          {
+            "episode": 14,
+            "title": "Wild Ride",
+            "airDate": "2025-03-06",
+            "rating": 7.3
+          },
+          {
+            "episode": 15,
+            "title": "The Lion's Den",
+            "airDate": "2025-03-06",
+            "rating": 7.3
+          },
+          {
+            "episode": 16,
+            "title": "Now Make It Thunder",
+            "airDate": "2025-03-06",
+            "rating": 7.9
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Crowned in Beauty",
+            "airDate": "2025-09-11",
+            "rating": 7.7
+          },
+          {
+            "episode": 2,
+            "title": "When the Tables Turn",
+            "airDate": "2025-09-11",
+            "rating": 7.6
+          },
+          {
+            "episode": 3,
+            "title": "Blaze of Beauty",
+            "airDate": "2025-09-11",
+            "rating": 7.6
+          },
+          {
+            "episode": 4,
+            "title": "The Next Chapter",
+            "airDate": "2025-09-11",
+            "rating": 7.6
+          },
+          {
+            "episode": 5,
+            "title": "Hunter's Prey",
+            "airDate": "2025-09-11",
+            "rating": 7.7
+          },
+          {
+            "episode": 6,
+            "title": "The Enemy of My Enemy",
+            "airDate": "2025-09-11",
+            "rating": 8
+          },
+          {
+            "episode": 7,
+            "title": "Gloves Off",
+            "airDate": "2025-09-11",
+            "rating": 8
+          },
+          {
+            "episode": 8,
+            "title": "Hold The Pleasantries",
+            "airDate": "2025-09-11",
+            "rating": 8.2
+          },
+          {
+            "episode": 9,
+            "title": "Toxic Vibes",
+            "airDate": "2026-03-19",
+            "rating": 7.9
+          },
+          {
+            "episode": 10,
+            "title": "Playing for Keeps",
+            "airDate": "2026-03-19",
+            "rating": 8.1
+          },
+          {
+            "episode": 11,
+            "title": "Fed Up",
+            "airDate": "2026-03-19",
+            "rating": 8.5
+          },
+          {
+            "episode": 12,
+            "title": "Flames of Fury",
+            "airDate": "2026-03-19",
+            "rating": 8.3
+          },
+          {
+            "episode": 13,
+            "title": "Boom!",
+            "airDate": "2026-03-19",
+            "rating": 8.1
+          },
+          {
+            "episode": 14,
+            "title": "Your Turn Is Coming",
+            "airDate": "2026-03-19",
+            "rating": 8.3
+          },
+          {
+            "episode": 15,
+            "title": "The Power of Us",
+            "airDate": "2026-03-19",
+            "rating": 8.4
+          },
+          {
+            "episode": 16,
+            "title": "Queen's Gambit",
+            "airDate": "2026-03-19",
+            "rating": 9
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "King In Play",
+            "airDate": "2026-08-27",
+            "rating": 8.5
+          },
+          {
+            "episode": 2,
+            "title": "Gotcha",
+            "airDate": "2026-08-27",
+            "rating": 8.4
+          },
+          {
+            "episode": 3,
+            "title": "Throne Of Blood",
+            "airDate": "2026-08-27",
+            "rating": 8.3
+          },
+          {
+            "episode": 4,
+            "title": "A Tender Betrayal",
+            "airDate": "2026-08-27",
+            "rating": 8.4
+          },
+          {
+            "episode": 5,
+            "title": "Devil In The Details",
+            "airDate": "2026-08-27",
+            "rating": 8.4
+          },
+          {
+            "episode": 6,
+            "title": "A Pack Of Wolves",
+            "airDate": "2026-08-27",
+            "rating": 8.6
+          },
+          {
+            "episode": 7,
+            "title": "The Looking Glass",
+            "airDate": "2026-08-27",
+            "rating": 8.6
+          },
+          {
+            "episode": 8,
+            "title": "Dancing In The Rain",
+            "airDate": "2026-08-27",
+            "rating": 8.9
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "MobLand",
+    "type": "TV Show",
+    "year": 2025,
+    "rating": "8.4",
+    "age": "TV-MA",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "poster": "https://image.tmdb.org/t/p/original/abeH7n5pcuQcwYcTxG6DTZvXLP1.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/tQqbbxBAdW2ql8vbOqMOJbtSQ7O.jpg",
+    "videoUrl": "247718",
+    "trailerUrl": "https://youtu.be/qKGgw7Ob5f4",
+    "overview": "Harry Da Souza is a street-smart, formidable fixer caught in the brutal crossfire between two warring London crime syndicates. Working directly for the powerful Harrigan family dynasty, Harry is tasked with resolving volatile underworld disputes and making high-stakes problems disappear, all while fighting to keep his own family alive as an all-out gang war threatens to tear the city apart.",
+    "overviewKurdish": "هاری داسۆزا، پیاوێکی لێهاتوو و بەئەزموونی چارەسەرکردنی کێشەکانە (Fixer)، کە لە ناوەڕاستی شەڕێکی خوێناوی و دڕندانەی نێوان دوو بنەماڵەی مافیای گەورەی لەندەندا گیریان خواردووە. هاری لەلایەن بنەماڵەی دەسەڵاتداری هاریگانەوە ڕادەسپێردرێت بۆ چارەسەرکردنی کێشە ئاڵۆزەکان و سڕینەوەی بەڵگەکان، بەڵام لەگەڵ گەورەبوونی شەڕی سەر شەقامەکان، ناچار دەبێت شەڕ بۆ پاراستنی گیانی خێزانەکەی بکات.",
+    "director": "Ronan Bennett, Guy Ritchie",
+    "cast": [
+      "Tom Hardy, Pierce Brosnan, Helen Mirren, Paddy Considine, Joanne Froggatt, Lara Pulver, Anson Boon"
+    ],
+    "trending": true,
+    "featured": true,
+    "is4k": true,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Stick or Twist",
+            "airDate": "2025-03-30",
+            "rating": 8
+          },
+          {
+            "episode": 2,
+            "title": "Jigsaw Puzzle",
+            "airDate": "2025-04-06",
+            "rating": 8.2
+          },
+          {
+            "episode": 3,
+            "title": "Plan B",
+            "airDate": "2025-04-13",
+            "rating": 8
+          },
+          {
+            "episode": 4,
+            "title": "Rat Trap",
+            "airDate": "2025-04-20",
+            "rating": 8
+          },
+          {
+            "episode": 5,
+            "title": "Funeral for a Friend",
+            "airDate": "2025-04-27",
+            "rating": 8.4
+          },
+          {
+            "episode": 6,
+            "title": "Antwerp Blues",
+            "airDate": "2025-05-04",
+            "rating": 8.3
+          },
+          {
+            "episode": 7,
+            "title": "The Crossroads",
+            "airDate": "2025-05-11",
+            "rating": 8.5
+          },
+          {
+            "episode": 8,
+            "title": "Helter Skelter",
+            "airDate": "2025-05-18",
+            "rating": 8.4
+          },
+          {
+            "episode": 9,
+            "title": "Beggars Banquet",
+            "airDate": "2025-05-25",
+            "rating": 8.3
+          },
+          {
+            "episode": 10,
+            "title": "The Beast in Me",
+            "airDate": "2025-06-01",
+            "rating": 8.6
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "I Wanna Be Your Dog",
+            "airDate": "2026-09-18"
+          },
+          {
+            "episode": 2,
+            "title": "Song 2",
+            "airDate": "2026-09-25"
+          },
+          {
+            "episode": 3,
+            "title": "Episode 3",
+            "airDate": "2026-10-02"
+          },
+          {
+            "episode": 4,
+            "title": "Episode 4",
+            "airDate": "2026-10-09"
+          },
+          {
+            "episode": 5,
+            "title": "Episode 5",
+            "airDate": "2026-10-16"
+          },
+          {
+            "episode": 6,
+            "title": "Episode 6",
+            "airDate": "2026-10-23"
+          },
+          {
+            "episode": 7,
+            "title": "Episode 7",
+            "airDate": "2026-10-30"
+          },
+          {
+            "episode": 8,
+            "title": "Episode 8",
+            "airDate": "2026-11-06"
+          },
+          {
+            "episode": 9,
+            "title": "Episode 9",
+            "airDate": "2026-11-13"
+          },
+          {
+            "episode": 10,
+            "title": "Episode 10",
+            "airDate": "2026-11-20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Green Lantern: The Animated Series",
+    "type": "TV Show",
+    "year": 2011,
+    "rating": "8.1",
+    "age": "TV-PG",
+    "duration": "22m",
+    "genres": [
+      "Animation",
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "poster": "https://image.tmdb.org/t/p/original/xNrJgBSjVLFaQcxkFbkWtjIuq01.jpg",
+    "backdrop": "https://image.tmdb.org/t/p/original/wajrzbvqaKbAnK4MXbPh3FsrbY5.jpg",
+    "videoUrl": "40351",
+    "trailerUrl": "https://youtu.be/lNwRUuYolmU",
+    "overview": "Hal Jordan and his hot-headed partner Kilowog travel to the dangerous Frontier Space to investigate a string of Green Lantern murders. There, they discover the Red Lantern Corps, a vengeful army powered by rage, poised to destroy the Guardians of the Universe.",
+    "overviewKurdish": "هال جۆردن و هاوبەشەکەی کیلۆوۆگ گەشت دەکەن بۆ ناوچە دوورەدەست و مەترسیدارەکانی گەردوون بۆ لێکۆڵینەوە لە زنجیرەیەک کوشتنی ئەندامانی گرین لانتێرن، لەوێ دەستەی ڕێد لانتێرن دەدۆزنەوە کە سوپایەکن بە ڕق و تووڕەیی دەجووڵێن و هەڕەشە لە گەردوون دەکەن.",
+    "director": "Bruce Timm, Giancarlo Volpe",
+    "cast": [
+      "Josh Keaton",
+      "Kevin Michael Richardson",
+      "Jason Spisak",
+      "Grey DeLisle",
+      "Brian George"
+    ],
+    "trending": true,
+    "featured": false,
+    "is4k": false,
+    "seasons": [
+      {
+        "season": 1,
+        "episodes": [
+          {
+            "episode": 1,
+            "title": "Beware My Power (Part One)",
+            "airDate": "2011-11-11",
+            "rating": 8.1
+          },
+          {
+            "episode": 2,
+            "title": "Beware My Power (Part Two)",
+            "airDate": "2011-11-11",
+            "rating": 8
+          },
+          {
+            "episode": 3,
+            "title": "Razer's Edge",
+            "airDate": "2012-03-17",
+            "rating": 8.3
+          },
+          {
+            "episode": 4,
+            "title": "Into the Abyss",
+            "airDate": "2012-03-24",
+            "rating": 8.3
+          },
+          {
+            "episode": 5,
+            "title": "Heir Apparent",
+            "airDate": "2012-03-31",
+            "rating": 7
+          },
+          {
+            "episode": 6,
+            "title": "Lost Planet",
+            "airDate": "2012-04-07",
+            "rating": 9
+          },
+          {
+            "episode": 7,
+            "title": "Reckoning",
+            "airDate": "2012-04-14",
+            "rating": 7.3
+          },
+          {
+            "episode": 8,
+            "title": "Fear Itself",
+            "airDate": "2012-04-21",
+            "rating": 8
+          },
+          {
+            "episode": 9,
+            "title": "...In Love and War",
+            "airDate": "2012-04-28",
+            "rating": 8
+          },
+          {
+            "episode": 10,
+            "title": "Regime Change",
+            "airDate": "2012-05-05",
+            "rating": 6.7
+          },
+          {
+            "episode": 11,
+            "title": "Flight Club",
+            "airDate": "2012-05-12",
+            "rating": 7.3
+          },
+          {
+            "episode": 12,
+            "title": "Invasion",
+            "airDate": "2012-05-19",
+            "rating": 7.3
+          },
+          {
+            "episode": 13,
+            "title": "Homecoming",
+            "airDate": "2012-05-26",
+            "rating": 8.3
+          },
+          {
+            "episode": 14,
+            "title": "The New Guy",
+            "airDate": "2012-09-29",
+            "rating": 8.5
+          },
+          {
+            "episode": 15,
+            "title": "Reboot",
+            "airDate": "2012-10-06",
+            "rating": 8
+          },
+          {
+            "episode": 16,
+            "title": "Steam Lantern",
+            "airDate": "2013-01-05",
+            "rating": 7.5
+          },
+          {
+            "episode": 17,
+            "title": "Blue Hope",
+            "airDate": "2013-01-12",
+            "rating": 7.5
+          },
+          {
+            "episode": 18,
+            "title": "Prisoner of Sinestro",
+            "airDate": "2013-01-19",
+            "rating": 7.5
+          },
+          {
+            "episode": 19,
+            "title": "Loss",
+            "airDate": "2013-01-26",
+            "rating": 7.5
+          },
+          {
+            "episode": 20,
+            "title": "Cold Fury",
+            "airDate": "2013-02-02",
+            "rating": 9.3
+          },
+          {
+            "episode": 21,
+            "title": "Babel",
+            "airDate": "2013-02-09",
+            "rating": 7.5
+          },
+          {
+            "episode": 22,
+            "title": "Love Is a Battlefield",
+            "airDate": "2013-02-16",
+            "rating": 8
+          },
+          {
+            "episode": 23,
+            "title": "Larfleeze",
+            "airDate": "2013-02-23",
+            "rating": 8
+          },
+          {
+            "episode": 24,
+            "title": "Scarred",
+            "airDate": "2013-03-02",
+            "rating": 8.4
+          },
+          {
+            "episode": 25,
+            "title": "Ranx",
+            "airDate": "2013-03-09",
+            "rating": 7.3
+          },
+          {
+            "episode": 26,
+            "title": "Dark Matter",
+            "airDate": "2013-03-16",
+            "rating": 7.7
+          }
+        ]
+      }
+    ]
+  }
+];

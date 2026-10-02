@@ -18,7 +18,7 @@ window._SERIES_DATA = [
     "backdrop": "https://image.tmdb.org/t/p/original/70RZX7kNjA0Qjn6HigB1oMvFJ8R.jpg",
     "videoUrl": "258165",
     "trailerUrl": "https://youtu.be/M9NWvGZViCg?si=BzdvFCv7cFVe08f6",
-    "overview": "Trapped in a cruel Victorian-era household, Lizzie Borden kills her parents in a gory ax murder that shocks the nation.",
+    "overview": "Set against the rich backdrop of California's Salinas Valley in the early 20th century, a multi-generational epic unfolds exploring the deep-seated rivalries, secrets, and moral struggles of two families. As two estranged brothers desperately vie for the affection and approval of their deeply religious father, the dark shadow and buried truths of their long-lost mother threaten to fracture the family forever.",
     "overviewKurdish": "لیزی بۆردن، کە لە ماڵێکی دڵڕەقی سەردەمی ڤیکتۆریادا دەژی، دایک و باوکی بە شێوەیەکی دڕندانە بە تەور دەکوژێت کە هەموو وڵات تووشی شۆک دەکات.",
     "director": "Ian Brennan, Ryan Murphy",
     "cast": [
