@@ -548,36 +548,165 @@
   display: none !important;
 }
 
-/* Mobile optimizations */
+/* Mobile optimizations — Top 10 & Carousel Cards Text Organization */
 @media (max-width: 768px) {
-  .movie-card .card-details {
-    padding: 0.7rem 0.6rem 0.55rem !important;
+  .movie-card .card-details,
+  .top10-track .movie-card .card-details {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    padding: 0.6rem 0.55rem 0.5rem !important;
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    z-index: 3 !important;
+    pointer-events: none !important;
   }
+
+  .movie-card .card-title,
+  .top10-track .card-title {
+    color: #ffffff !important;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 2px 8px rgba(0, 0, 0, 0.8) !important;
+    font-size: 0.92rem !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+    margin: 0 0 4px 0 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    max-width: 100% !important;
+    display: block !important;
+    box-sizing: border-box !important;
+  }
+
   .card-meta,
   .movie-card .card-meta,
+  .top10-track .card-meta,
   #moviesGrid .card-meta,
   #seriesGrid .card-meta,
   #animeGrid .card-meta,
   .browse-grid .card-meta {
+    display: flex !important;
+    align-items: center !important;
     justify-content: flex-start !important;
-    gap: 6px !important;
-    margin-top: 3px !important;
+    gap: 4px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+    line-height: 1 !important;
+    margin-top: 0 !important;
   }
+
   .card-meta .card-rating,
-  .movie-card .card-rating {
-    font-size: 0.7rem !important;
-    padding: 1.5px 5px !important;
+  .movie-card .card-rating,
+  .top10-track .card-rating {
+    display: inline-flex !important;
+    align-items: center !important;
     gap: 3px !important;
+    flex: 0 0 auto !important;
+    font-size: 0.69rem !important;
+    font-weight: 700 !important;
+    color: #ffc107 !important;
+    background: rgba(255, 193, 7, 0.15) !important;
+    border: 1px solid rgba(255, 193, 7, 0.35) !important;
+    padding: 2px 5px !important;
+    border-radius: 4px !important;
+    line-height: 1.15 !important;
+    white-space: nowrap !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4) !important;
   }
+
+  .card-meta .card-rating .star-icon,
+  .movie-card .card-rating .star-icon,
+  .top10-track .card-rating .star-icon {
+    color: #ffc107 !important;
+    font-size: 0.68rem !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+  }
+
   .card-meta .badge-age,
-  .card-meta .card-age {
+  .card-meta .card-age,
+  .movie-card .badge-age,
+  .movie-card .card-age,
+  .top10-track .badge-age,
+  .top10-track .card-age {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 0 0 auto !important;
+    max-width: 52px !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
     font-size: 0.65rem !important;
-    padding: 1.5px 5px !important;
+    font-weight: 600 !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    padding: 2px 5px !important;
+    border-radius: 4px !important;
     letter-spacing: 0.3px !important;
+    line-height: 1.15 !important;
+    text-transform: uppercase !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4) !important;
   }
+
   .card-meta .card-year,
-  .movie-card .card-year {
-    font-size: 0.72rem !important;
+  .movie-card .card-year,
+  .top10-track .card-year {
+    display: inline-flex !important;
+    align-items: center !important;
+    flex: 0 0 auto !important;
+    font-size: 0.70rem !important;
+    font-weight: 500 !important;
+    color: rgba(255, 255, 255, 0.72) !important;
+    white-space: nowrap !important;
+    line-height: 1.15 !important;
+    margin: 0 !important;
+    padding: 2px 1px !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9) !important;
+  }
+
+  .card-meta .card-type,
+  .movie-card .card-type,
+  .top10-track .card-type {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .top10-track .movie-card .card-details {
+    padding: 0.5rem 0.45rem 0.45rem !important;
+  }
+  .top10-track .card-title {
+    font-size: 0.88rem !important;
+  }
+  .top10-track .card-meta {
+    gap: 3.5px !important;
+  }
+  .top10-track .card-rating {
+    font-size: 0.67rem !important;
+    padding: 1.5px 4.5px !important;
+  }
+  .top10-track .badge-age,
+  .top10-track .card-age {
+    font-size: 0.63rem !important;
+    padding: 1.5px 4.5px !important;
+    max-width: 48px !important;
+  }
+  .top10-track .card-year {
+    font-size: 0.68rem !important;
   }
 }
 
