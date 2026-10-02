@@ -8328,7 +8328,10 @@ input:-webkit-autofill:active {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 1.1rem;
+    padding: 0.6rem 0.55rem 0.5rem;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: hidden;
     z-index: 3;
   }
   .movie-card .card-title {
@@ -8515,7 +8518,10 @@ body.rtl-layout .account-side-panel {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 1.1rem;
+    padding: 0.6rem 0.55rem 0.5rem;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: hidden;
     z-index: 3;
   }
   .movie-card .card-title {
