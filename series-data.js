@@ -39,7 +39,7 @@ window._SERIES_DATA = [
           },
         ]
       }
-    
+    ],
   {
     "title": "Monster: The Lizzie Borden Story",
     "type": "TV Show",
