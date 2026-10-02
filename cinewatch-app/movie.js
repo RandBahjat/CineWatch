@@ -766,6 +766,26 @@ function setupHeroBanner() {
     }
   });
 
+  // Slide Counter interactive navigation
+  const prevBtn = document.getElementById("heroPrevBtn");
+  const nextBtn = document.getElementById("heroNextBtn");
+  if (prevBtn) {
+    prevBtn.onclick = (e) => {
+      e.stopPropagation();
+      state.currentHeroIndex = (state.currentHeroIndex - 1 + featured.length) % featured.length;
+      updateHeroBanner();
+      startHeroAutoplay();
+    };
+  }
+  if (nextBtn) {
+    nextBtn.onclick = (e) => {
+      e.stopPropagation();
+      state.currentHeroIndex = (state.currentHeroIndex + 1) % featured.length;
+      updateHeroBanner();
+      startHeroAutoplay();
+    };
+  }
+
   const heroTrack = document.getElementById("heroTrack");
   if (!heroTrack) return;
 
@@ -799,6 +819,8 @@ function setupHeroBanner() {
         <div class="hero-content">
             <h1 class="hero-title notranslate" translate="no">${movie.title}</h1>
             <div class="hero-meta">
+                <span class="hero-slide-badge notranslate" translate="no">${formatNumber((idx + 1).toString().padStart(2, '0'))} / ${formatNumber(featured.length.toString().padStart(2, '0'))}</span>
+                <span class="meta-dot">&bull;</span>
                 <span class="meta-rating notranslate" translate="no"><span class="star-icon">&#9733;</span> ${formatRating(movie.rating)}</span>
                 <span class="meta-dot">&bull;</span>
                 <span class="meta-year notranslate" translate="no">${formatNumber(movie.year)}</span>
@@ -935,6 +957,17 @@ function updateHeroBanner() {
   document.querySelectorAll("#heroDots .dot").forEach((dot, i) => {
     dot.classList.toggle("active", i === state.currentHeroIndex);
   });
+
+  // Update slide counter indicator
+  const currentSlideEl = document.getElementById("heroCurrentSlide");
+  if (currentSlideEl) {
+    currentSlideEl.textContent = formatNumber((state.currentHeroIndex + 1).toString().padStart(2, '0'));
+  }
+  const totalSlidesEl = document.getElementById("heroTotalSlides");
+  const featured = getFeaturedMovies();
+  if (totalSlidesEl && featured.length > 0) {
+    totalSlidesEl.textContent = formatNumber(featured.length.toString().padStart(2, '0'));
+  }
 }
 
 function createMovieCardHTML(movie, rank = null, forcePoster = false) {
