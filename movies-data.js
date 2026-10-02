@@ -108,7 +108,7 @@ window._MOVIES_DATA = [
     title: "Digger",
     type: "Movie",
     year: 2026,
-    rating: "TBR",
+    rating: "7.3",
     age: "R",
     duration: "2h 8m",
     genres: [
