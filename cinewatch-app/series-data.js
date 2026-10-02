@@ -8,7 +8,7 @@ window._SERIES_DATA = [
     "type": "TV Show",
     "year": 2026,
     "rating": "7.7",
-    "age": "TV-MINI SERIES",
+    "age": "TV-MA",
     "duration": "50m",
     "genres": [
       "Drama",
