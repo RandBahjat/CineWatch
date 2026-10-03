@@ -8655,10 +8655,17 @@ let currentSubtitleIframeTitle = null;
 let isKurdishSubEnabled = false;
 let isFetchingSubs = false;
 let customSubParams = null;
-let subtitleTimeOffset = 0; // +/- seconds offset
+let subtitleTimeOffset = 0; // in seconds (+ or -)
+let currentSubTrackIndex = 0;
+let totalSubTracks = 1;
+
+// Timing synchronization variables
+let baseVideoTime = 0;          // last known video seconds from player
+let baseVideoTimestamp = 0;     // performance.now() when baseVideoTime was received
+let lastReportedTime = -1;      // to detect play vs pause
+let isPlayerPlaying = true;     // tracks if video is advancing
 let lastReceivedPostMessageTime = 0;
-let currentPlaybackTime = 0;
-let subtitleFallbackTicker = null;
+let subtitleSyncLoop = null;
 
 function loadCustomSubtitles(title, type, season, ep) {
     const overlay = document.getElementById('customSubtitleOverlay');
@@ -8674,17 +8681,23 @@ function loadCustomSubtitles(title, type, season, ep) {
     isKurdishSubEnabled = false;
     isFetchingSubs = false;
     subtitleTimeOffset = 0;
-    currentPlaybackTime = 0;
+    currentSubTrackIndex = 0;
+    totalSubTracks = 1;
+    baseVideoTime = 0;
+    baseVideoTimestamp = performance.now();
+    lastReportedTime = -1;
+    isPlayerPlaying = true;
     lastReceivedPostMessageTime = 0;
-    if (subtitleFallbackTicker) {
-        clearInterval(subtitleFallbackTicker);
-        subtitleFallbackTicker = null;
+    
+    if (subtitleSyncLoop) {
+        clearInterval(subtitleSyncLoop);
+        subtitleSyncLoop = null;
     }
+    
     customSubParams = { title, type, season, ep };
     
     if (syncWrap) syncWrap.style.display = 'none';
-    const syncLabel = document.getElementById('kurdishSubSyncLabel');
-    if (syncLabel) syncLabel.textContent = '0s';
+    updateSyncDisplay();
 
     toggleBtn.style.display = 'inline-block';
     toggleBtn.style.background = 'rgba(0,0,0,0.65)';
@@ -8705,9 +8718,9 @@ function loadCustomSubtitles(title, type, season, ep) {
             toggleBtn.style.background = 'rgba(0,0,0,0.65)';
             toggleBtn.style.borderColor = 'rgba(255,255,255,0.3)';
             if (syncWrap) syncWrap.style.display = 'none';
-            if (subtitleFallbackTicker) {
-                clearInterval(subtitleFallbackTicker);
-                subtitleFallbackTicker = null;
+            if (subtitleSyncLoop) {
+                clearInterval(subtitleSyncLoop);
+                subtitleSyncLoop = null;
             }
         } else {
             // Turn ON
@@ -8725,7 +8738,6 @@ function loadCustomSubtitles(title, type, season, ep) {
                 if (syncWrap) syncWrap.style.display = 'inline-flex';
                 overlay.style.display = 'block';
 
-                // Display an instant 3-second activation confirmation banner
                 const firstSubSec = Math.floor(currentParsedSubs[0].start);
                 const firstMin = Math.floor(firstSubSec / 60);
                 const firstSec = firstSubSec % 60;
@@ -8733,8 +8745,7 @@ function loadCustomSubtitles(title, type, season, ep) {
                 
                 showSubtitleToast('✓ ژێرنووسی کوردی چالاک کرا (' + currentParsedSubs.length + ' دێڕ - دەستپێک لە ' + timeStr + ')');
 
-                // Start fallback ticker if no postMessage events are received from iframe
-                startFallbackTickerIfNeeded();
+                startSubtitleSyncLoop();
             } else if (isKurdishSubEnabled && currentParsedSubs.length === 0) {
                 toggleBtn.innerHTML = 'CC: Not Found';
                 toggleBtn.style.background = 'rgba(100,100,100,0.6)';
@@ -8750,25 +8761,58 @@ function loadCustomSubtitles(title, type, season, ep) {
 }
 window.loadCustomSubtitles = loadCustomSubtitles;
 
+function updateSyncDisplay() {
+    const syncLabel = document.getElementById('kurdishSubSyncLabel');
+    if (syncLabel) {
+        const sign = subtitleTimeOffset > 0 ? '+' : '';
+        syncLabel.textContent = sign + subtitleTimeOffset.toFixed(1) + 's';
+    }
+    const trackBtn = document.getElementById('kurdishSubTrackBtn');
+    if (trackBtn) {
+        trackBtn.textContent = 'Track ' + (currentSubTrackIndex + 1);
+        trackBtn.style.display = totalSubTracks > 1 ? 'inline-block' : 'none';
+    }
+}
+
 function setupSyncButtons() {
+    const minusBig = document.getElementById('kurdishSubSyncMinusBig');
     const minusBtn = document.getElementById('kurdishSubSyncMinus');
     const plusBtn = document.getElementById('kurdishSubSyncPlus');
+    const plusBig = document.getElementById('kurdishSubSyncPlusBig');
     const syncLabel = document.getElementById('kurdishSubSyncLabel');
-    if (!minusBtn || !plusBtn || !syncLabel) return;
+    const trackBtn = document.getElementById('kurdishSubTrackBtn');
 
-    minusBtn.onclick = (e) => {
-        e.stopPropagation();
-        subtitleTimeOffset -= 1;
-        syncLabel.textContent = (subtitleTimeOffset > 0 ? '+' : '') + subtitleTimeOffset + 's';
-        if (currentPlaybackTime > 0) updateSubtitleOverlay(currentPlaybackTime);
-    };
+    if (minusBig) minusBig.onclick = (e) => { e.stopPropagation(); adjustOffset(-2.0); };
+    if (minusBtn) minusBtn.onclick = (e) => { e.stopPropagation(); adjustOffset(-0.5); };
+    if (plusBtn) plusBtn.onclick = (e) => { e.stopPropagation(); adjustOffset(0.5); };
+    if (plusBig) plusBig.onclick = (e) => { e.stopPropagation(); adjustOffset(2.0); };
+    if (syncLabel) syncLabel.onclick = (e) => { e.stopPropagation(); subtitleTimeOffset = 0; updateSyncDisplay(); renderSubtitlesNow(); showSubtitleToast('Sync offset reset to 0.0s'); };
 
-    plusBtn.onclick = (e) => {
-        e.stopPropagation();
-        subtitleTimeOffset += 1;
-        syncLabel.textContent = (subtitleTimeOffset > 0 ? '+' : '') + subtitleTimeOffset + 's';
-        if (currentPlaybackTime > 0) updateSubtitleOverlay(currentPlaybackTime);
-    };
+    if (trackBtn) {
+        trackBtn.onclick = async (e) => {
+            e.stopPropagation();
+            if (isFetchingSubs) return;
+            currentSubTrackIndex = (currentSubTrackIndex + 1) % totalSubTracks;
+            trackBtn.textContent = 'Loading...';
+            await fetchAndParseSubtitles();
+            updateSyncDisplay();
+            showSubtitleToast('Switched to Sub Track ' + (currentSubTrackIndex + 1));
+        };
+    }
+}
+
+function adjustOffset(delta) {
+    subtitleTimeOffset = Math.round((subtitleTimeOffset + delta) * 10) / 10;
+    updateSyncDisplay();
+    renderSubtitlesNow();
+}
+
+function renderSubtitlesNow() {
+    let nowSec = baseVideoTime;
+    if (isPlayerPlaying && baseVideoTimestamp > 0) {
+        nowSec += (performance.now() - baseVideoTimestamp) / 1000;
+    }
+    updateSubtitleOverlay(nowSec);
 }
 
 function showSubtitleToast(msg) {
@@ -8791,6 +8835,7 @@ async function fetchAndParseSubtitles() {
     let qs = 'title=' + encodeURIComponent(customSubParams.title) + '&type=' + (customSubParams.type || 'movie');
     if (customSubParams.season) qs += '&season=' + customSubParams.season;
     if (customSubParams.ep) qs += '&ep=' + customSubParams.ep;
+    if (currentSubTrackIndex > 0) qs += '&track=' + currentSubTrackIndex;
     
     const candidates = [
         'http://127.0.0.1:3000/api/movie-sub?' + qs,
@@ -8803,6 +8848,10 @@ async function fetchAndParseSubtitles() {
         try {
             const res = await fetch(url);
             if (res.ok) {
+                const totalTracksHeader = res.headers.get('X-Subtitle-Total-Tracks');
+                if (totalTracksHeader) {
+                    totalSubTracks = Math.max(1, parseInt(totalTracksHeader, 10) || 1);
+                }
                 vttText = await res.text();
                 if (vttText && vttText.toUpperCase().includes('WEBVTT')) {
                     break;
@@ -8813,6 +8862,7 @@ async function fetchAndParseSubtitles() {
 
     if (vttText) {
         currentParsedSubs = parseVTTBasic(vttText);
+        updateSyncDisplay();
     } else {
         console.warn('Failed to load Kurdish subtitles from endpoints');
         if (btn) btn.innerHTML = 'CC: Not Found';
@@ -8863,17 +8913,22 @@ function cwTimeToSeconds(t) {
     return isNaN(secs) ? 0 : secs;
 }
 
-function startFallbackTickerIfNeeded() {
-    if (subtitleFallbackTicker) return;
-    subtitleFallbackTicker = setInterval(() => {
+function startSubtitleSyncLoop() {
+    if (subtitleSyncLoop) return;
+    subtitleSyncLoop = setInterval(() => {
         if (!isKurdishSubEnabled) return;
+        
+        let nowSec = baseVideoTime;
         const timeSincePostMsg = Date.now() - lastReceivedPostMessageTime;
-        if (lastReceivedPostMessageTime > 0 && timeSincePostMsg < 2500) {
-            return;
+        if (lastReceivedPostMessageTime === 0 || timeSincePostMsg > 5000) {
+            baseVideoTime += 0.1;
+            nowSec = baseVideoTime;
+        } else if (isPlayerPlaying && baseVideoTimestamp > 0) {
+            nowSec = baseVideoTime + (performance.now() - baseVideoTimestamp) / 1000;
         }
-        currentPlaybackTime += 0.25;
-        updateSubtitleOverlay(currentPlaybackTime);
-    }, 250);
+        
+        updateSubtitleOverlay(nowSec);
+    }, 100);
 }
 
 function updateSubtitleOverlay(currentTime) {
@@ -8885,7 +8940,6 @@ function updateSubtitleOverlay(currentTime) {
     if (seconds > 100000) {
         seconds = seconds / 1000;
     }
-    currentPlaybackTime = seconds;
 
     const effectiveTime = seconds + subtitleTimeOffset;
     const activeSub = currentParsedSubs.find(s => effectiveTime >= s.start && effectiveTime <= s.end);
@@ -8898,7 +8952,7 @@ function updateSubtitleOverlay(currentTime) {
             overlay.style.display = 'block';
         }
     } else {
-        if (!overlay.innerHTML.includes('✓ ژێرنووسی کوردی')) {
+        if (!overlay.innerHTML.includes('✓ ژێرنووسی کوردی') && !overlay.innerHTML.includes('Sync offset')) {
             if (overlay.innerHTML !== '') {
                 overlay.innerHTML = '';
             }
@@ -8906,7 +8960,7 @@ function updateSubtitleOverlay(currentTime) {
     }
 }
 
-// Global listener for cross-origin iframe timeupdate events
+// Global listener for cross-origin iframe events (VidLink MEDIA_DATA, PLAYER_EVENT, etc.)
 window.addEventListener('message', (event) => {
     try {
         let data = event.data;
@@ -8922,35 +8976,53 @@ window.addEventListener('message', (event) => {
 
         let currentTime = undefined;
 
-        // 1. VidLink PRO format: { type: 'PLAYER_EVENT', data: { event: 'timeupdate', currentTime: 12.34, duration: 7200 } }
-        if (data.type === 'PLAYER_EVENT' && data.data && typeof data.data === 'object') {
-            if (typeof data.data.currentTime === 'number') {
-                currentTime = data.data.currentTime;
-            } else if (typeof data.data.time === 'number') {
-                currentTime = data.data.time;
+        // 1. VidLink MEDIA_DATA format: { type: 'MEDIA_DATA', data: { [id]: { progress: { watched: 12.34, duration: ... } } } }
+        if (data.type === 'MEDIA_DATA' && data.data && typeof data.data === 'object') {
+            for (const k in data.data) {
+                const item = data.data[k];
+                if (item && item.progress && typeof item.progress.watched === 'number') {
+                    currentTime = item.progress.watched;
+                    break;
+                }
             }
         }
-        // 2. VidLink alternative / flat format: { type: 'PLAYER_EVENT', event: 'timeupdate', currentTime: 12.34 }
+        // 2. Direct progress.watched format
+        else if (data.progress && typeof data.progress.watched === 'number') {
+            currentTime = data.progress.watched;
+        }
+        // 3. VidLink PLAYER_EVENT format
         else if (data.type === 'PLAYER_EVENT') {
-            if (typeof data.currentTime === 'number') {
+            if (data.data && typeof data.data.currentTime === 'number') {
+                currentTime = data.data.currentTime;
+            } else if (typeof data.currentTime === 'number') {
                 currentTime = data.currentTime;
-            } else if (typeof data.time === 'number') {
-                currentTime = data.time;
             }
         }
-        // 3. VaPlayer / Generic format: { type: 'timeupdate' | 'time_update', currentTime: ... }
+        // 4. Standard timeupdate / time
         else if (data.type === 'timeupdate' || data.type === 'time_update' || data.event === 'timeupdate' || data.event === 'time_update') {
             currentTime = data.currentTime !== undefined ? data.currentTime : data.time;
         }
-        // 4. Direct currentTime / time properties on event.data
         else if (typeof data.currentTime === 'number') {
             currentTime = data.currentTime;
-        } else if (typeof data.time === 'number') {
+        }
+        else if (typeof data.time === 'number') {
             currentTime = data.time;
         }
 
         if (typeof currentTime === 'number' && !isNaN(currentTime)) {
             lastReceivedPostMessageTime = Date.now();
+            
+            // Detect if video is paused (watched didn't change over time)
+            if (lastReportedTime !== -1 && Math.abs(currentTime - lastReportedTime) < 0.05) {
+                isPlayerPlaying = false;
+            } else {
+                isPlayerPlaying = true;
+            }
+            
+            lastReportedTime = currentTime;
+            baseVideoTime = currentTime;
+            baseVideoTimestamp = performance.now();
+            
             updateSubtitleOverlay(currentTime);
         }
     } catch(e) {}
