@@ -7151,6 +7151,94 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       airplay: true,
       theme: '#e50914',
       lang: navigator.language ? navigator.language.toLowerCase() : 'en',
+      plugins: [
+        function animeSkipIntroPlugin(art) {
+          art.on('ready', () => {
+             if (!animeChapters || animeChapters.length === 0) return;
+             
+             // 1. Color progress bar for chapters
+             art.on('video:loadedmetadata', () => {
+                const progressInner = document.querySelector('#artplayerApp .art-progress-inner');
+                if (progressInner) {
+                   const duration = art.duration;
+                   animeChapters.forEach(ch => {
+                      if (ch.title.toLowerCase().includes('intro') || ch.title.toLowerCase().includes('opening') || ch.title.toLowerCase().includes('outro') || ch.title.toLowerCase().includes('ending')) {
+                         const startPercent = (ch.start / duration) * 100;
+                         const widthPercent = ((ch.end - ch.start) / duration) * 100;
+                         const div = document.createElement('div');
+                         div.style.position = 'absolute';
+                         div.style.left = startPercent + '%';
+                         div.style.width = widthPercent + '%';
+                         div.style.height = '100%';
+                         div.style.backgroundColor = 'rgba(255, 255, 255, 0.4)';
+                         div.style.zIndex = '15';
+                         div.style.pointerEvents = 'none';
+                         div.style.borderRadius = '2px';
+                         progressInner.appendChild(div);
+                      }
+                   });
+                }
+             });
+
+             // 2. Floating skip button
+             const skipBtn = document.createElement('button');
+             skipBtn.className = 'cw-skip-intro-btn hidden';
+             skipBtn.innerHTML = '<ion-icon name="play-forward"></ion-icon> Skip Intro';
+             skipBtn.style.position = 'absolute';
+             skipBtn.style.bottom = '90px';
+             skipBtn.style.right = '40px';
+             skipBtn.style.padding = '10px 20px';
+             skipBtn.style.backgroundColor = 'rgba(20,20,20,0.85)';
+             skipBtn.style.color = '#fff';
+             skipBtn.style.border = '1px solid rgba(255,255,255,0.15)';
+             skipBtn.style.borderRadius = '8px';
+             skipBtn.style.cursor = 'pointer';
+             skipBtn.style.zIndex = '50';
+             skipBtn.style.backdropFilter = 'blur(10px)';
+             skipBtn.style.fontFamily = 'Inter, sans-serif';
+             skipBtn.style.fontSize = '14px';
+             skipBtn.style.fontWeight = '600';
+             skipBtn.style.display = 'flex';
+             skipBtn.style.alignItems = 'center';
+             skipBtn.style.gap = '8px';
+             skipBtn.style.transition = 'all 0.25s ease';
+             skipBtn.style.opacity = '0';
+             skipBtn.style.pointerEvents = 'none';
+             skipBtn.style.transform = 'translateY(10px)';
+             
+             skipBtn.onmouseover = () => { skipBtn.style.backgroundColor = 'rgba(255,255,255,1)'; skipBtn.style.color = '#000'; };
+             skipBtn.onmouseout = () => { skipBtn.style.backgroundColor = 'rgba(20,20,20,0.85)'; skipBtn.style.color = '#fff'; };
+             
+             let currentChapter = null;
+             skipBtn.onclick = () => {
+                if (currentChapter) {
+                   art.currentTime = currentChapter.end;
+                }
+             };
+             
+             art.template.$player.appendChild(skipBtn);
+             
+             art.on('video:timeupdate', () => {
+                const ct = art.currentTime;
+                const active = animeChapters.find(ch => (ch.title.toLowerCase().includes('intro') || ch.title.toLowerCase().includes('opening') || ch.title.toLowerCase().includes('outro') || ch.title.toLowerCase().includes('ending')) && ct >= ch.start && ct < ch.end);
+                
+                if (active) {
+                   currentChapter = active;
+                   skipBtn.innerHTML = '<ion-icon name="play-forward"></ion-icon> Skip ' + active.title;
+                   skipBtn.classList.remove('hidden');
+                   skipBtn.style.opacity = '1';
+                   skipBtn.style.pointerEvents = 'auto';
+                   skipBtn.style.transform = 'translateY(0)';
+                } else {
+                   currentChapter = null;
+                   skipBtn.style.opacity = '0';
+                   skipBtn.style.pointerEvents = 'none';
+                   skipBtn.style.transform = 'translateY(10px)';
+                }
+             });
+          });
+        }
+      ],
       moreVideoAttr: {
         crossOrigin: 'anonymous',
       },
