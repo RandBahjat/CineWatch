@@ -3465,7 +3465,8 @@ async function fetchRawStream(tmdbId, type, season = null, episode = null) {
 }
 
 function syncServerPillsUI(server) {
-  const activeSrv = server || localStorage.getItem("cw_selected_server_v2") || "vidlink";
+  let activeSrv = server || localStorage.getItem("cw_selected_server_v2") || "vidlink";
+  if (activeSrv === 'artplayer') activeSrv = 'vidlink';
   document.querySelectorAll(".details-server-btn, .server-btn, .panel-server-btn").forEach(b => {
     b.classList.toggle("active", b.dataset.server === activeSrv);
   });
