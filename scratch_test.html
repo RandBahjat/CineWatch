@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VidLink Message Test</title>
+</head>
+<body style="background:#111; color:#fff; font-family:sans-serif; padding:20px;">
+<h2>VidLink Message Logger</h2>
+<iframe id="vidlinkIframe" src="https://vidlink.pro/movie/550?autoplay=false" width="600" height="350" allow="autoplay; fullscreen; encrypted-media"></iframe>
+<div id="logs" style="margin-top:20px; font-family:monospace; background:#222; padding:10px; max-height:300px; overflow-y:auto; border:1px solid #444;">Listening for messages...</div>
+
+<script>
+const logsDiv = document.getElementById('logs');
+window.addEventListener('message', (event) => {
+    const entry = document.createElement('div');
+    entry.style.borderBottom = '1px solid #333';
+    entry.style.padding = '4px 0';
+    let dataStr = '';
+    try {
+        dataStr = typeof event.data === 'object' ? JSON.stringify(event.data) : event.data;
+    } catch(e) {
+        dataStr = String(event.data);
+    }
+    entry.textContent = `[${event.origin}] ${dataStr}`;
+    logsDiv.prepend(entry);
+});
+</script>
+</body>
+</html>
