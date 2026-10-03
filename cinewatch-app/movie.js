@@ -7079,10 +7079,10 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   // Fallback: If no direct stream was extracted, fall back gracefully to embed
   if (!cleanUrl) {
     let fallbackSrc = '';
-    if (tmdbId && !isNaN(Number(tmdbId))) {
-      fallbackSrc = `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false&nextbutton=true`;
-    } else if (malId) {
+    if (malId) {
       fallbackSrc = `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`;
+    } else if (tmdbId && !isNaN(Number(tmdbId))) {
+      fallbackSrc = `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false&nextbutton=true`;
     } else {
       fallbackSrc = `https://vaplayer.ru/embed/tv/${tmdbId}/${season}/${epNum}?skin=netflix`;
     }
