@@ -344,6 +344,19 @@ const server = http.createServer((req, res) => {
     })
       .then(async r => {
         const data = await r.json();
+        
+        if (mode === 'dub') {
+          try {
+            const subUrl = `https://megavid.buzz/mal/${malId}/${ep}/sub/source`;
+            const subR = await fetch(subUrl, { headers: { 'Referer': 'https://megavid.buzz/', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' } });
+            const subData = await subR.json();
+            if (subData && subData.tracks && subData.tracks.length > 0) {
+              data.tracks = subData.tracks;
+            }
+          } catch(e) {
+            console.error('Failed to fetch sub tracks for dub override:', e);
+          }
+        }
 
         if (data && data.source) {
           data.rawSource = data.source;
