@@ -8866,11 +8866,8 @@ function loadCustomSubtitles(title, type, season, ep) {
                 if (syncWrap) syncWrap.style.display = 'inline-flex';
                 overlay.style.display = 'block';
 
-                if (subClock.currentTime === 0 && subClock.lastPostMsgTime === 0 && playerOpenedTimestamp > 0) {
-                    const elapsed = (Date.now() - playerOpenedTimestamp) / 1000;
-                    if (elapsed > 2) {
-                        subClock.jumpTo(elapsed);
-                    }
+                if (subClock.currentTime === 0 && subClock.hasReceivedPostMsg && subClock.lastReportedTime > 0) {
+                    subClock.jumpTo(subClock.lastReportedTime);
                 }
 
                 const firstSubSec = Math.floor(currentParsedSubs[0].start);
