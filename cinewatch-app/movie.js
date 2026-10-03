@@ -9355,6 +9355,9 @@ function openSubtitleDialogueModal() {
                 if (!isNaN(startSec)) {
                     subClock.jumpTo(startSec);
                     subtitleTimeOffset = 0;
+                    if (window.artPlayerInstance && !window.artPlayerInstance.isDestroy && typeof window.artPlayerInstance.currentTime === 'number') {
+                        try { window.artPlayerInstance.currentTime = startSec; } catch (e) {}
+                    }
                     updateSyncDisplay();
                     renderSubtitlesNow();
                     const min = Math.floor(startSec / 60);
