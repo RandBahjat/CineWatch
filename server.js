@@ -326,6 +326,72 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  if (safePath === '/api/movie-sub') {
+    let parsed = new URL(req.url, `http://localhost:${PORT}`);
+    const title = parsed.searchParams.get('title');
+    const type = parsed.searchParams.get('type') || 'movie';
+    const season = parsed.searchParams.get('season');
+    const ep = parsed.searchParams.get('ep');
+    const targetLang = parsed.searchParams.get('lang') || 'ckb';
+
+    if (!title) {
+      res.writeHead(400, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+      res.end(JSON.stringify({ error: 'Missing title' }));
+      return;
+    }
+
+    (async () => {
+      try {
+        const searchUrl = `https://v3-cinemeta.strem.io/catalog/${type}/top/search=${encodeURIComponent(title)}.json`;
+        const r1 = await fetch(searchUrl);
+        const d1 = await r1.json();
+        if (!d1.metas || d1.metas.length === 0) {
+          throw new Error('Movie/Series not found in Cinemeta');
+        }
+        const imdbId = d1.metas[0].imdb_id;
+        
+        let subUrlReq = `https://opensubtitles-v3.strem.io/subtitles/${type}/${imdbId}`;
+        if (type === 'series') {
+          subUrlReq += `:${season}:${ep}`;
+        }
+        subUrlReq += '.json';
+        
+        const r2 = await fetch(subUrlReq);
+        const d2 = await r2.json();
+        if (!d2.subtitles || d2.subtitles.length === 0) {
+           throw new Error('No subtitles found for this media');
+        }
+        
+        const engSub = d2.subtitles.find(s => s.lang === 'eng') || d2.subtitles[0];
+        if (!engSub) {
+          throw new Error('No English subtitle found to translate');
+        }
+        
+        const r3 = await fetch(engSub.url);
+        let srtText = await r3.text();
+        
+        if (!srtText.toUpperCase().includes('WEBVTT')) {
+          srtText = "WEBVTT\n\n" + srtText.replace(/(\d{2}:\d{2}:\d{2}),(\d{3})/g, '$1.$2');
+        }
+        
+        if (targetLang) {
+          srtText = await translateVTT(srtText, targetLang);
+        }
+        
+        res.writeHead(200, {
+          'Content-Type': 'text/vtt; charset=utf-8',
+          'Access-Control-Allow-Origin': '*',
+          'Cache-Control': 'public, max-age=86400'
+        });
+        res.end(srtText);
+      } catch (err) {
+        res.writeHead(500, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+        res.end(JSON.stringify({ error: err.message }));
+      }
+    })();
+    return;
+  }
+
   if (safePath === '/api/anime-source') {
     let parsed = new URL(req.url, `http://localhost:${PORT}`);
     const malId = parsed.searchParams.get('malId') || '21';

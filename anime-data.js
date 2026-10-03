@@ -7592,7 +7592,7 @@ window._ANIME_DATA = [
     ]
   },
   {
-    "title": "Dragon Ball DAIMA",
+    "title": "Dragon Ball Daima",
     "type": "TV Show",
     "isAnime": true,
     "year": 2024,
