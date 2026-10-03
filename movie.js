@@ -7255,8 +7255,26 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
             });
             hls.loadSource(url);
             hls.attachMedia(video);
-            hls.on(Hls.Events.MANIFEST_PARSED, function () {
+            hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
               console.log('[ArtPlayer] HLS manifest parsed successfully, starting playback');
+              if (art.setting) {
+                const qualities = data.levels.map((level, index) => ({
+                  html: (level.height ? level.height + 'p' : 'Q' + index),
+                  level: index,
+                  default: false
+                }));
+                qualities.unshift({ html: 'Auto', level: -1, default: true });
+                art.setting.add({
+                  html: 'Quality',
+                  icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
+                  tooltip: 'Auto',
+                  selector: qualities,
+                  onSelect: function (item) {
+                    hls.currentLevel = item.level;
+                    return item.html;
+                  }
+                });
+              }
               video.play().catch(function(e) {
                 console.warn('[ArtPlayer] Unmuted autoplay blocked, retrying muted:', e);
                 video.muted = true;
