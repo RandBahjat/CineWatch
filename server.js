@@ -184,6 +184,50 @@ const server = http.createServer((req, res) => {
   }
 
   // Direct Anime Source Proxy (bypasses CORS restrictions)
+  
+  // WebVTT Subtitle Proxy (bypasses 403 & CORS on anime subtitle tracks)
+  if (safePath === '/api/anime-sub') {
+    let parsed = new URL(req.url, `http://localhost:${PORT}`);
+    const subTarget = parsed.searchParams.get('url');
+    if (!subTarget) {
+      res.writeHead(400, { 'Content-Type': 'text/plain', 'Access-Control-Allow-Origin': '*' });
+      res.end('Missing url');
+      return;
+    }
+
+    let origin = 'https://hls.dramahot.top';
+    try {
+      origin = new URL(subTarget).origin;
+    } catch(e) {}
+
+    fetch(subTarget, {
+      headers: {
+        'Referer': `${origin}/`,
+        'Origin': origin,
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
+      }
+    })
+      .then(async response => {
+        if (!response.ok) {
+          res.writeHead(response.status, { 'Access-Control-Allow-Origin': '*' });
+          res.end(`Upstream sub error: ${response.status}`);
+          return;
+        }
+        const text = await response.text();
+        res.writeHead(200, {
+          'Content-Type': 'text/vtt; charset=utf-8',
+          'Access-Control-Allow-Origin': '*',
+          'Cache-Control': 'public, max-age=86400'
+        });
+        res.end(text);
+      })
+      .catch(err => {
+        res.writeHead(500, { 'Access-Control-Allow-Origin': '*' });
+        res.end(err.message);
+      });
+    return;
+  }
+
   if (safePath === '/api/anime-source') {
     let parsed = new URL(req.url, `http://localhost:${PORT}`);
     const malId = parsed.searchParams.get('malId') || '21';
@@ -208,6 +252,13 @@ const server = http.createServer((req, res) => {
           if (data.source.includes('.m3u8') || data.source.includes('cp.megavid.buzz')) {
             data.source = `${baseUrl}/api/anime-m3u8?url=${encodeURIComponent(data.source)}`;
           }
+        }
+        if (data && data.tracks && data.tracks.length > 0) {
+          data.tracks = data.tracks.map(t => ({
+            ...t,
+            rawFile: t.file,
+            file: `${baseUrl}/api/anime-sub?url=${encodeURIComponent(t.file)}`
+          }));
         }
         res.writeHead(200, {
           'Content-Type': 'application/json',
