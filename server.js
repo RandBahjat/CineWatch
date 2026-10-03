@@ -41,9 +41,11 @@ async function translateVTT(vttText, targetLang) {
     }
     const lines = block.split(/\r?\n/);
     if (lines.length >= 2 && lines[0].includes('-->')) {
-      parsed.push({ meta: lines[0], text: lines.slice(1).join('\n') });
+      const text = lines.slice(1).join('\n').replace(/<\/?[^>]+(>|$)/g, "");
+      parsed.push({ meta: lines[0], text });
     } else if (lines.length >= 3 && lines[1].includes('-->')) {
-      parsed.push({ meta: lines.slice(0,2).join('\n'), text: lines.slice(2).join('\n') });
+      const text = lines.slice(2).join('\n').replace(/<\/?[^>]+(>|$)/g, "");
+      parsed.push({ meta: lines.slice(0,2).join('\n'), text });
     } else {
       parsed.push({ meta: '', text: block });
     }
