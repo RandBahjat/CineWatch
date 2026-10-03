@@ -265,9 +265,7 @@ const server = http.createServer((req, res) => {
         if (data && data.source) {
           data.rawSource = data.source;
           data.embedUrl = `https://megavid.buzz/mal/${malId}/${ep}/${mode}`;
-          if (data.source.includes('.m3u8') || data.source.includes('cp.megavid.buzz')) {
-            data.source = `${baseUrl}/api/anime-m3u8?url=${encodeURIComponent(data.source)}`;
-          }
+          data.source = `${baseUrl}/api/anime-m3u8?url=${encodeURIComponent(data.source)}`;
         }
         if (data && data.tracks && data.tracks.length > 0) {
           data.tracks = data.tracks.map(t => ({
