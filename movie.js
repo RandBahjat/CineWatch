@@ -7434,13 +7434,53 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                     window.artPlayerInstance.type = 'm3u8';
                     window.artPlayerInstance.switchUrl(d.source);
                     if (d.tracks && d.tracks.length > 0 && window.artPlayerInstance.subtitle) {
-                      const trk = d.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || d.tracks[0];
-                      if (trk && trk.file) {
-                        window.artPlayerInstance.subtitle.switch(trk.file, { name: 'English Sub' });
+                      window._cwSubtitleTracks = d.tracks;
+                      const items = [
+                        {
+                          html: 'Display',
+                          tooltip: 'Show',
+                          switch: true,
+                          onSwitch(item) {
+                            const next = !item.switch;
+                            item.tooltip = next ? 'Hide' : 'Show';
+                            if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
+                              window.artPlayerInstance.subtitle.show = next;
+                            }
+                            return next;
+                          }
+                        },
+                        { html: 'Off', url: '', default: false }
+                      ];
+                      d.tracks.forEach((t, i) => {
+                        items.push({
+                          html: t.label || `Track ${i + 1}`,
+                          url: t.file || '',
+                          default: i === 0
+                        });
+                      });
+                      const baseTrack = d.tracks.find(t => (t.label||'').toLowerCase().includes('eng')) || d.tracks[0];
+                      if (baseTrack && baseTrack.file) {
+                        let kuUrl = baseTrack.file;
+                        kuUrl += kuUrl.includes('?') ? '&lang=ckb' : '?lang=ckb';
+                        items.push({
+                          html: 'Kurdish (Sorani)',
+                          url: kuUrl,
+                          default: false
+                        });
+                      }
+                      const subSetting = window.artPlayerInstance.setting.find('Subtitle');
+                      if (subSetting) {
+                        subSetting.selector = items;
+                      }
+
+                      if (baseTrack && baseTrack.file) {
+                        window.artPlayerInstance.subtitle.switch(baseTrack.file, { name: baseTrack.label });
                         window.artPlayerInstance.subtitle.show = true;
                       }
                     } else if (window.artPlayerInstance.subtitle && isDub) {
                       window.artPlayerInstance.subtitle.show = false;
+                      const subSetting = window.artPlayerInstance.setting.find('Subtitle');
+                      if (subSetting) subSetting.selector = [];
                     }
                     if (typeof showToast === 'function') {
                       showToast(`Switched to ${item.html}`);
