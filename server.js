@@ -329,13 +329,14 @@ const server = http.createServer((req, res) => {
 
   if (safePath === '/api/movie-sub') {
     let parsed = new URL(req.url, `http://localhost:${PORT}`);
-    const title = parsed.searchParams.get('title');
-    const type = parsed.searchParams.get('type') || 'movie';
-    const season = parsed.searchParams.get('season');
-    const ep = parsed.searchParams.get('ep');
+    const rawTitle = parsed.searchParams.get('title');
+    const rawType = parsed.searchParams.get('type') || 'movie';
+    const cinemetaType = (rawType === 'tv' || rawType === 'series') ? 'series' : 'movie';
+    const season = parsed.searchParams.get('season') || '1';
+    const ep = parsed.searchParams.get('ep') || '1';
     const targetLang = parsed.searchParams.get('lang') || 'ckb';
 
-    if (!title) {
+    if (!rawTitle) {
       res.writeHead(400, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
       res.end(JSON.stringify({ error: 'Missing title' }));
       return;
@@ -343,16 +344,32 @@ const server = http.createServer((req, res) => {
 
     (async () => {
       try {
-        const searchUrl = `https://v3-cinemeta.strem.io/catalog/${type}/top/search=${encodeURIComponent(title)}.json`;
-        const r1 = await fetch(searchUrl);
-        const d1 = await r1.json();
-        if (!d1.metas || d1.metas.length === 0) {
+        const searchTitles = [
+          rawTitle,
+          rawTitle.replace(/\s*[\(\[\{].*?[\)\]\}]/g, '').trim(),
+          rawTitle.replace(/[^a-zA-Z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim()
+        ];
+        
+        let imdbId = null;
+        for (const titleCandidate of searchTitles) {
+          if (!titleCandidate) continue;
+          try {
+            const searchUrl = `https://v3-cinemeta.strem.io/catalog/${cinemetaType}/top/search=${encodeURIComponent(titleCandidate)}.json`;
+            const r1 = await fetch(searchUrl);
+            const d1 = await r1.json();
+            if (d1.metas && d1.metas.length > 0 && d1.metas[0].imdb_id) {
+              imdbId = d1.metas[0].imdb_id;
+              break;
+            }
+          } catch (e) {}
+        }
+
+        if (!imdbId) {
           throw new Error('Movie/Series not found in Cinemeta');
         }
-        const imdbId = d1.metas[0].imdb_id;
         
-        let subUrlReq = `https://opensubtitles-v3.strem.io/subtitles/${type}/${imdbId}`;
-        if (type === 'series') {
+        let subUrlReq = `https://opensubtitles-v3.strem.io/subtitles/${cinemetaType}/${imdbId}`;
+        if (cinemetaType === 'series') {
           subUrlReq += `:${season}:${ep}`;
         }
         subUrlReq += '.json';
@@ -382,6 +399,7 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, {
           'Content-Type': 'text/vtt; charset=utf-8',
           'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Private-Network': 'true',
           'Cache-Control': 'public, max-age=86400'
         });
         res.end(srtText);
