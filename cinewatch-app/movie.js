@@ -7068,10 +7068,15 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         cleanUrl = srcData.source;
         animeChapters = srcData.chapters || [];
         if (srcData.tracks && srcData.tracks.length > 0) {
+          // Store all subtitle tracks for the language selector
+          window._cwSubtitleTracks = srcData.tracks;
+          // Default: prefer English, else first track
           const enTrack = srcData.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || srcData.tracks[0];
           if (enTrack && enTrack.file) {
             subtitleUrl = enTrack.file;
           }
+        } else {
+          window._cwSubtitleTracks = [];
         }
         break;
       }
