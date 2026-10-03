@@ -2,7 +2,10 @@ const puppeteer = require('puppeteer');
 
 (async () => {
     console.log('Launching browser to test Kurdish subtitle sync and anti-stuck engine...');
-    const browser = await puppeteer.launch({ headless: 'new' });
+    const browser = await puppeteer.launch({
+        headless: 'new',
+        args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-web-security']
+    });
     const page = await browser.newPage();
 
     // Catch page console errors
@@ -10,7 +13,7 @@ const puppeteer = require('puppeteer');
         if (msg.type() === 'error') console.log('PAGE ERROR:', msg.text());
     });
 
-    await page.goto('http://127.0.0.1:3000', { waitUntil: 'domcontentloaded', timeout: 15000 });
+    await page.goto('http://localhost:3000', { waitUntil: 'load', timeout: 30000 });
     console.log('Page loaded successfully.');
 
     const result = await page.evaluate(async () => {
