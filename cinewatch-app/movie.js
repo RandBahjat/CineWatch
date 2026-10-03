@@ -7359,6 +7359,18 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                 default: i === 0 && !!subtitleUrl
               });
             });
+            if (tracks.length > 0) {
+              const baseTrack = tracks.find(t => (t.label||'').toLowerCase().includes('eng')) || tracks[0];
+              if (baseTrack && baseTrack.file) {
+                let kuUrl = baseTrack.file;
+                kuUrl += kuUrl.includes('?') ? '&lang=ku' : '?lang=ku';
+                items.push({
+                  html: 'Kurdish (Auto-Translated)',
+                  url: kuUrl,
+                  default: false
+                });
+              }
+            }
             return items;
           })(),
           onSelect(item) {
