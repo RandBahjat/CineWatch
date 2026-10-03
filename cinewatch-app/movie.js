@@ -7140,7 +7140,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       fullscreen: true,
       fullscreenWeb: true,
       subtitleOffset: true,
-      miniProgressBar: true,
+      miniProgressBar: false,
       mutex: true,
       backdrop: false,
       playsInline: true,
@@ -7333,6 +7333,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         {
           position: 'left',
           index: 10,
+          style: { position: 'static' },
           html: `<div class="art-center-title" style="position:absolute;left:50%;transform:translateX(-50%);pointer-events:none;text-align:center;white-space:nowrap;font-size:0.85rem;text-shadow:0 1px 4px rgba(0,0,0,0.9);"><span class="art-title-ep" style="font-weight:700;color:#fff;">EP ${rawEp}</span><span class="art-title-sep" style="color:rgba(255,255,255,0.4);margin:0 5px;">·</span><span class="art-title-name" style="color:rgba(255,255,255,0.72);font-weight:400;">${(ref?.title || 'Anime').replace(/"/g, '&quot;')}</span></div>`,
           tooltip: `${ref?.title || 'Anime'} - Episode ${rawEp}`,
         },
