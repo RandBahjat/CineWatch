@@ -1766,13 +1766,7 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
               if (typeof showToast === 'function') showToast('Skipped Opening (+85s)');
             }
           }
-        },
-        {
-          position: 'right',
-          html: '<span class="art-badge-crimson">MEGA HD</span>',
-          index: 1,
-          tooltip: 'MegaCloud Direct Engine',
-        },
+        }
       ],
 
     };
