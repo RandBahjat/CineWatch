@@ -7123,6 +7123,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     const artOptions = {
       container: '#artplayerApp',
       url: streamUrl,
+      type: 'm3u8',
       poster: poster,
       volume: 0.8,
       isLive: false,
