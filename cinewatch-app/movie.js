@@ -7263,19 +7263,37 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
             hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
               console.log('[ArtPlayer] HLS manifest parsed successfully, starting playback');
               if (art.setting) {
-                const qualities = data.levels.map((level, index) => ({
-                  html: (level.height ? level.height + 'p' : 'Q' + index),
-                  level: index,
-                  default: false
-                }));
-                qualities.unshift({ html: 'Auto', level: -1, default: true });
+                const qualities = [
+                  { html: 'Auto', height: 'auto', default: true },
+                  { html: '1080p', height: 1080, default: false },
+                  { html: '720p', height: 720, default: false },
+                  { html: '480p', height: 480, default: false },
+                  { html: '360p', height: 360, default: false }
+                ];
                 art.setting.add({
                   html: 'Quality',
                   icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
                   tooltip: 'Auto',
                   selector: qualities,
                   onSelect: function (item) {
-                    hls.currentLevel = item.level;
+                    if (item.height === 'auto') {
+                      hls.currentLevel = -1;
+                      return item.html;
+                    }
+                    let bestLevel = -1;
+                    let minDiff = Infinity;
+                    data.levels.forEach((lvl, idx) => {
+                      const h = lvl.height || 0;
+                      if (h > 0) {
+                        const diff = Math.abs(h - item.height);
+                        if (diff < minDiff) {
+                          minDiff = diff;
+                          bestLevel = idx;
+                        }
+                      }
+                    });
+                    if (bestLevel === -1) bestLevel = 0;
+                    hls.currentLevel = bestLevel;
                     return item.html;
                   }
                 });
