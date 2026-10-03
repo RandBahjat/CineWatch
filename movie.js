@@ -7194,9 +7194,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                     if (artApp) artApp.classList.add("hidden");
                     if (ifr) {
                       ifr.classList.remove("hidden");
-                      ifr.src = (tmdbId && !isNaN(Number(tmdbId)))
-        ? `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=db0a0a`
-        : `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`;
+                      ifr.src = malId
+                        ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
+                        : `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=db0a0a`;
                     }
                     break;
                 }
