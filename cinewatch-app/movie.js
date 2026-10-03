@@ -8653,35 +8653,73 @@ window.renderThemeSelectorHTML = renderThemeSelectorHTML;
 let currentParsedSubs = [];
 let currentSubtitleIframeTitle = null;
 
-async function loadCustomSubtitles(title, type, season, ep) {
+let isKurdishSubEnabled = false;
+let isFetchingSubs = false;
+let customSubParams = null;
+
+function loadCustomSubtitles(title, type, season, ep) {
     const overlay = document.getElementById('customSubtitleOverlay');
-    if (!overlay) return;
+    const toggleBtn = document.getElementById('kurdishSubToggleBtn');
+    if (!overlay || !toggleBtn) return;
+    
+    // Reset state for new video
     overlay.style.display = 'none';
     currentParsedSubs = [];
     currentSubtitleIframeTitle = title;
+    isKurdishSubEnabled = false;
+    isFetchingSubs = false;
+    customSubParams = { title, type, season, ep };
+    
+    toggleBtn.style.display = 'inline-block';
+    toggleBtn.innerHTML = 'CC: OFF (Kurdish)';
+    toggleBtn.onclick = async (e) => {
+        e.stopPropagation();
+        if (isKurdishSubEnabled) {
+            // Turn OFF
+            isKurdishSubEnabled = false;
+            overlay.style.display = 'none';
+            toggleBtn.innerHTML = 'CC: OFF (Kurdish)';
+        } else {
+            // Turn ON
+            isKurdishSubEnabled = true;
+            toggleBtn.innerHTML = 'CC: ON (Kurdish)';
+            if (currentParsedSubs.length === 0 && !isFetchingSubs) {
+                await fetchAndParseSubtitles();
+            }
+            if (currentParsedSubs.length > 0) {
+                overlay.style.display = 'block';
+            }
+        }
+    };
+}
+window.loadCustomSubtitles = loadCustomSubtitles;
+
+async function fetchAndParseSubtitles() {
+    if (!customSubParams) return;
+    isFetchingSubs = true;
+    const btn = document.getElementById('kurdishSubToggleBtn');
+    const overlay = document.getElementById('customSubtitleOverlay');
+    if (btn) btn.innerHTML = 'CC: Loading...';
     
     try {
-        let qs = `title=${encodeURIComponent(title)}&type=${type}`;
-        if (season) qs += `&season=${season}`;
-        if (ep) qs += `&ep=${ep}`;
-        
-        // Wait 1 second before fetching so UI doesn't block video load
-        await new Promise(r => setTimeout(r, 1000));
+        let qs = `title=${encodeURIComponent(customSubParams.title)}&type=${customSubParams.type}`;
+        if (customSubParams.season) qs += `&season=${customSubParams.season}`;
+        if (customSubParams.ep) qs += `&ep=${customSubParams.ep}`;
         
         const res = await fetch(`/api/movie-sub?${qs}`);
         if (!res.ok) throw new Error('Subtitles not found');
         const vttText = await res.text();
         currentParsedSubs = parseVTTBasic(vttText);
         
-        if (currentParsedSubs.length > 0) {
-            overlay.style.display = 'block';
-            overlay.innerHTML = '';
-        }
+        if (btn && isKurdishSubEnabled) btn.innerHTML = 'CC: ON (Kurdish)';
+        if (overlay && isKurdishSubEnabled && currentParsedSubs.length > 0) overlay.style.display = 'block';
     } catch (e) {
         console.warn('Failed to load Kurdish subtitles:', e);
+        if (btn) btn.innerHTML = 'CC: Error';
+        isKurdishSubEnabled = false;
     }
+    isFetchingSubs = false;
 }
-window.loadCustomSubtitles = loadCustomSubtitles;
 
 function parseVTTBasic(vtt) {
     const blocks = vtt.split(/\r?\n\r?\n/);
@@ -8715,6 +8753,7 @@ function cwTimeToSeconds(t) {
 }
 
 function updateSubtitleOverlay(currentTime) {
+    if (!isKurdishSubEnabled) return;
     const overlay = document.getElementById('customSubtitleOverlay');
     if (!overlay || currentParsedSubs.length === 0) return;
     
