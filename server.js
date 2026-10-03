@@ -165,11 +165,8 @@ const server = http.createServer((req, res) => {
             }
             try {
               const fullUrl = new URL(trimmed, streamTarget).href;
-              // If it's a master playlist variant or another playlist, proxy it
-              if (isMaster || fullUrl.includes('.m3u8') || fullUrl.includes('cp.megavid.buzz')) {
-                return `${baseUrl}/api/anime-m3u8?url=${encodeURIComponent(fullUrl)}`;
-              }
-              return fullUrl;
+              // Proxy ALL urls (variant playlists, TS segments, etc) to ensure correct Referer
+              return `${baseUrl}/api/anime-m3u8?url=${encodeURIComponent(fullUrl)}`;
             } catch (e) {
               return line;
             }
