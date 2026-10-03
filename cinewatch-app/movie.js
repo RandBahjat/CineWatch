@@ -7639,19 +7639,16 @@ function updateIframeServer(serverOverride) {
     } catch(e) {}
   }
 
-  // Update Server Selector UI
+  // Unified Custom Player: hide server selector bars
   if (serverBar) {
-    serverBar.classList.remove("hidden");
-    serverBar.style.display = "flex";
+    serverBar.classList.add("hidden");
+    serverBar.style.display = "none";
   }
-  syncServerPillsUI(activeServer);
-
-  const srv1 = document.querySelector('.details-server-btn[data-server="vidlink"]');
-  const srv2 = document.querySelector('.details-server-btn[data-server="vidapi"]');
-
-  // Ensure all detail page servers are visible
-  if (srv1) srv1.style.display = 'inline-flex';
-  if (srv2) srv2.style.display = 'inline-flex';
+  const detailsServer = document.getElementById("detailsServerSelector");
+  if (detailsServer) {
+    detailsServer.classList.add("hidden");
+    detailsServer.style.display = "none";
+  }
 
   let newUrl = '';
   let allowAttr = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
