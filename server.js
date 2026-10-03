@@ -272,6 +272,7 @@ const server = http.createServer((req, res) => {
   if (safePath === '/api/anime-sub') {
     let parsed = new URL(req.url, `http://localhost:${PORT}`);
     const subTarget = parsed.searchParams.get('url');
+    const targetLang = parsed.searchParams.get('lang'); // optional
     if (!subTarget) {
       res.writeHead(400, { 'Content-Type': 'text/plain', 'Access-Control-Allow-Origin': '*' });
       res.end('Missing url');
@@ -296,7 +297,16 @@ const server = http.createServer((req, res) => {
           res.end(`Upstream sub error: ${response.status}`);
           return;
         }
-        const text = await response.text();
+        let text = await response.text();
+        
+        if (targetLang) {
+          try {
+            text = await translateVTT(text, targetLang);
+          } catch(e) {
+            console.error('Translation error:', e);
+          }
+        }
+        
         res.writeHead(200, {
           'Content-Type': 'text/vtt; charset=utf-8',
           'Access-Control-Allow-Origin': '*',
