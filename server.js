@@ -27,6 +27,76 @@ const MIME_TYPES = {
   '.txt': 'text/plain; charset=utf-8'
 };
 
+async function translateVTT(vttText, targetLang) {
+  const blocks = vttText.split(/\r?\n\r?\n/);
+  const parsed = [];
+  let header = "";
+  
+  for (let i = 0; i < blocks.length; i++) {
+    const block = blocks[i].trim();
+    if (!block) continue;
+    if (i === 0 && block.toUpperCase().startsWith('WEBVTT')) {
+      header = block;
+      continue;
+    }
+    const lines = block.split(/\r?\n/);
+    if (lines.length >= 2 && lines[0].includes('-->')) {
+      parsed.push({ meta: lines[0], text: lines.slice(1).join('\n') });
+    } else if (lines.length >= 3 && lines[1].includes('-->')) {
+      parsed.push({ meta: lines.slice(0,2).join('\n'), text: lines.slice(2).join('\n') });
+    } else {
+      parsed.push({ meta: '', text: block });
+    }
+  }
+
+  const chunks = [];
+  let curTexts = [];
+  let curLen = 0;
+  for (const p of parsed) {
+    if (curLen + p.text.length > 3000) {
+      chunks.push(curTexts);
+      curTexts = [];
+      curLen = 0;
+    }
+    curTexts.push(p.text);
+    curLen += p.text.length + 10;
+  }
+  if (curTexts.length > 0) chunks.push(curTexts);
+
+  let translatedTexts = [];
+  const results = await Promise.all(chunks.map(async chunk => {
+    try {
+      const q = chunk.join(' \n ~|~ \n ');
+      const params = new URLSearchParams();
+      params.append('q', q);
+      const res = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${targetLang}&dt=t`, {
+        method: 'POST',
+        body: params
+      });
+      const data = await res.json();
+      const combined = data[0].map(x => x[0]).join('');
+      return combined.split(/~\|~/).map(s => s.trim());
+    } catch (e) {
+      return chunk; // fallback to original on error
+    }
+  }));
+
+  translatedTexts = results.flat();
+  
+  let outVTT = header + "\n\n";
+  for (let i = 0; i < parsed.length; i++) {
+    const p = parsed[i];
+    const t = translatedTexts[i] || p.text;
+    if (p.meta) {
+      outVTT += p.meta + "\n" + t + "\n\n";
+    } else {
+      outVTT += t + "\n\n";
+    }
+  }
+  
+  return outVTT.trim();
+}
+
 const server = http.createServer((req, res) => {
   // Enable CORS
   res.setHeader('Access-Control-Allow-Origin', '*');
