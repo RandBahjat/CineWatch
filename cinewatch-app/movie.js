@@ -8648,7 +8648,7 @@ function renderThemeSelectorHTML() {
 window.renderThemeSelectorHTML = renderThemeSelectorHTML;
 
 // ==========================================
-// CUSTOM SUBTITLE ENGINE (STREMIO-BASED)
+// CUSTOM SUBTITLE ENGINE (STREMIO & SUBDL-BASED)
 // ==========================================
 let currentParsedSubs = [];
 let currentSubtitleIframeTitle = null;
@@ -8658,6 +8658,7 @@ let customSubParams = null;
 let subtitleTimeOffset = 0; // in seconds (+ or -)
 let currentSubTrackIndex = 0;
 let totalSubTracks = 1;
+let currentSubSource = 'translated';
 
 // Timing synchronization variables
 let baseVideoTime = 0;          // last known video seconds from player
@@ -8683,6 +8684,7 @@ function loadCustomSubtitles(title, type, season, ep) {
     subtitleTimeOffset = 0;
     currentSubTrackIndex = 0;
     totalSubTracks = 1;
+    currentSubSource = 'translated';
     baseVideoTime = 0;
     baseVideoTimestamp = performance.now();
     lastReportedTime = -1;
@@ -8706,6 +8708,7 @@ function loadCustomSubtitles(title, type, season, ep) {
     toggleBtn.innerHTML = 'CC: OFF (Kurdish)';
 
     setupSyncButtons();
+    setupDropZone();
 
     toggleBtn.onclick = async (e) => {
         e.stopPropagation();
@@ -8734,7 +8737,12 @@ function loadCustomSubtitles(title, type, season, ep) {
             }
 
             if (isKurdishSubEnabled && currentParsedSubs.length > 0) {
-                toggleBtn.innerHTML = 'CC: ON (Kurdish)';
+                const label = currentSubSource === 'subdl-native' ? 'CC: ON (SubDL Native)' : 'CC: ON (Kurdish)';
+                toggleBtn.innerHTML = label;
+                if (currentSubSource === 'subdl-native') {
+                    toggleBtn.style.background = '#00aa55';
+                    toggleBtn.style.borderColor = '#00aa55';
+                }
                 if (syncWrap) syncWrap.style.display = 'inline-flex';
                 overlay.style.display = 'block';
 
@@ -8742,8 +8750,9 @@ function loadCustomSubtitles(title, type, season, ep) {
                 const firstMin = Math.floor(firstSubSec / 60);
                 const firstSec = firstSubSec % 60;
                 const timeStr = String(firstMin).padStart(2,'0') + ':' + String(firstSec).padStart(2,'0');
+                const badge = currentSubSource === 'subdl-native' ? '✓ ژێرنووسی کوردی ڕەسەن لە SubDL' : '✓ ژێرنووسی کوردی چالاک کرا';
                 
-                showSubtitleToast('✓ ژێرنووسی کوردی چالاک کرا (' + currentParsedSubs.length + ' دێڕ - دەستپێک لە ' + timeStr + ')');
+                showSubtitleToast(badge + ' (' + currentParsedSubs.length + ' دێڕ - لە ' + timeStr + ')');
 
                 startSubtitleSyncLoop();
             } else if (isKurdishSubEnabled && currentParsedSubs.length === 0) {
@@ -8781,6 +8790,8 @@ function setupSyncButtons() {
     const plusBig = document.getElementById('kurdishSubSyncPlusBig');
     const syncLabel = document.getElementById('kurdishSubSyncLabel');
     const trackBtn = document.getElementById('kurdishSubTrackBtn');
+    const uploadBtn = document.getElementById('kurdishSubUploadBtn');
+    const fileInput = document.getElementById('kurdishSubFileInput');
 
     if (minusBig) minusBig.onclick = (e) => { e.stopPropagation(); adjustOffset(-2.0); };
     if (minusBtn) minusBtn.onclick = (e) => { e.stopPropagation(); adjustOffset(-0.5); };
@@ -8799,6 +8810,66 @@ function setupSyncButtons() {
             showSubtitleToast('Switched to Sub Track ' + (currentSubTrackIndex + 1));
         };
     }
+
+    if (uploadBtn && fileInput) {
+        uploadBtn.onclick = (e) => {
+            e.stopPropagation();
+            fileInput.click();
+        };
+        fileInput.onchange = (e) => {
+            const file = e.target.files && e.target.files[0];
+            if (file) handleSubtitleFile(file);
+        };
+    }
+}
+
+function setupDropZone() {
+    const container = document.querySelector('.video-container');
+    if (!container || container.dataset.cwDropSet) return;
+    container.dataset.cwDropSet = 'true';
+
+    container.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
+    container.addEventListener('drop', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]) {
+            handleSubtitleFile(e.dataTransfer.files[0]);
+        }
+    });
+}
+
+function handleSubtitleFile(file) {
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+        let content = ev.target.result;
+        if (!content.toUpperCase().includes('WEBVTT')) {
+            content = "WEBVTT\n\n" + content.replace(/(\d{2}:\d{2}:\d{2}),(\d{3})/g, '$1.$2');
+        }
+        currentParsedSubs = parseVTTBasic(content);
+        if (currentParsedSubs.length > 0) {
+            isKurdishSubEnabled = true;
+            currentSubSource = 'uploaded';
+            const toggleBtn = document.getElementById('kurdishSubToggleBtn');
+            const syncWrap = document.getElementById('kurdishSubSyncWrap');
+            const overlay = document.getElementById('customSubtitleOverlay');
+            if (toggleBtn) {
+                toggleBtn.innerHTML = 'CC: ON (' + file.name.substring(0, 15) + '...)';
+                toggleBtn.style.background = '#00aa55';
+                toggleBtn.style.borderColor = '#00aa55';
+            }
+            if (syncWrap) syncWrap.style.display = 'inline-flex';
+            if (overlay) overlay.style.display = 'block';
+            showSubtitleToast('✓ ژێرنووسی داگیراو چالاک کرا (' + currentParsedSubs.length + ' دێڕ)');
+            startSubtitleSyncLoop();
+        } else {
+            showSubtitleToast('Could not parse subtitle file format');
+        }
+    };
+    reader.readAsText(file);
 }
 
 function adjustOffset(delta) {
@@ -8851,6 +8922,10 @@ async function fetchAndParseSubtitles() {
                 const totalTracksHeader = res.headers.get('X-Subtitle-Total-Tracks');
                 if (totalTracksHeader) {
                     totalSubTracks = Math.max(1, parseInt(totalTracksHeader, 10) || 1);
+                }
+                const sourceHeader = res.headers.get('X-Subtitle-Source');
+                if (sourceHeader) {
+                    currentSubSource = sourceHeader;
                 }
                 vttText = await res.text();
                 if (vttText && vttText.toUpperCase().includes('WEBVTT')) {
@@ -8952,7 +9027,7 @@ function updateSubtitleOverlay(currentTime) {
             overlay.style.display = 'block';
         }
     } else {
-        if (!overlay.innerHTML.includes('✓ ژێرنووسی کوردی') && !overlay.innerHTML.includes('Sync offset')) {
+        if (!overlay.innerHTML.includes('✓ ژێرنووس') && !overlay.innerHTML.includes('Sync offset')) {
             if (overlay.innerHTML !== '') {
                 overlay.innerHTML = '';
             }
