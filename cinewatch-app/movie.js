@@ -7353,19 +7353,17 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
     };
 
-    if (subtitleUrl && typeof subtitleUrl === 'string' && subtitleUrl.trim().length > 0) {
-      artOptions.subtitle = {
-        url: subtitleUrl,
-        type: 'vtt',
-        style: {
-          color: '#ffffff',
-          fontSize: '22px',
-          textShadow: '0 2px 4px rgba(0,0,0,0.8)',
-          fontWeight: '600'
-        },
-        encoding: 'utf-8',
-      };
-    }
+    artOptions.subtitle = {
+      url: (subtitleUrl && subtitleUrl.trim().length > 0) ? subtitleUrl : 'data:text/vtt;base64,V0VCVlRUCgo=',
+      type: 'vtt',
+      style: {
+        color: '#ffffff',
+        fontSize: '22px',
+        textShadow: '0 2px 4px rgba(0,0,0,0.8)',
+        fontWeight: '600'
+      },
+      encoding: 'utf-8',
+    };
 
     window.artPlayerInstance = new Artplayer(artOptions);
 
