@@ -8706,7 +8706,8 @@ async function fetchAndParseSubtitles() {
         if (customSubParams.season) qs += `&season=${customSubParams.season}`;
         if (customSubParams.ep) qs += `&ep=${customSubParams.ep}`;
         
-        const res = await fetch(`/api/movie-sub?${qs}`);
+        const baseUrl = window.location.port.startsWith('550') ? 'http://127.0.0.1:3000' : '';
+        const res = await fetch(`${baseUrl}/api/movie-sub?${qs}`);
         if (!res.ok) throw new Error('Subtitles not found');
         const vttText = await res.text();
         currentParsedSubs = parseVTTBasic(vttText);
