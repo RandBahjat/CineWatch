@@ -3754,6 +3754,11 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     }
   }
 
+  const cleanTitle = (parentMovie && parentMovie.title) ? parentMovie.title : (displayTitle ? displayTitle.split(' - S')[0].split(' - Ep')[0].trim() : '');
+  if (typeof loadCustomSubtitles === 'function' && cleanTitle) {
+    loadCustomSubtitles(cleanTitle, epData ? 'tv' : 'movie', epData?.season, epData?.episode);
+  }
+
   modal.classList.remove("hidden");
   document.body.style.overflow = "hidden";
   // Hide back-to-top button while player is open
