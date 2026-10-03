@@ -7286,6 +7286,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                   if (!r.ok) continue;
                   const d = await r.json();
                   if (d && d.source && window.artPlayerInstance) {
+                    window.artPlayerInstance.type = 'm3u8';
                     window.artPlayerInstance.switchUrl(d.source);
                     if (d.tracks && d.tracks.length > 0 && window.artPlayerInstance.subtitle) {
                       const trk = d.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || d.tracks[0];
