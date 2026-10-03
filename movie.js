@@ -7001,6 +7001,279 @@ function getAnimeMalId(refMovie, dataId) {
   return refMovie?.anilistId || 21;
 }
 
+// ==========================================
+// ARTPLAYER DIRECT NATIVE PLAYER (MOVIES & SERIES)
+// ==========================================
+function initArtPlayerForMovie(data, refMovie) {
+  const artContainer = document.getElementById("artplayerApp");
+  const video = document.getElementById("videoElement");
+  const iframe = document.getElementById("iframeElement");
+  const centerOverlay = document.getElementById("videoCenterOverlay");
+  const subOverlay = document.getElementById("customSubtitleOverlay");
+
+  if (video) {
+    video.classList.add("hidden");
+    video.pause();
+    video.src = "";
+  }
+  if (iframe) {
+    iframe.classList.add("hidden");
+    iframe.src = "";
+  }
+  if (centerOverlay) centerOverlay.style.display = "none";
+  if (subOverlay) subOverlay.style.display = "none";
+
+  if (window.artPlayerInstance) {
+    try { window.artPlayerInstance.destroy(); } catch (e) {}
+    window.artPlayerInstance = null;
+  }
+
+  if (artContainer) {
+    artContainer.classList.remove("hidden");
+    artContainer.innerHTML = "";
+  }
+
+  const movieTitle = refMovie?.title || (document.getElementById('playerMovieTitle')?.textContent || '').split(' - S')[0].split(' - Ep')[0].trim();
+  const origin = (typeof window !== 'undefined' && window.location.origin && !window.location.origin.includes('null')) ? window.location.origin : 'http://localhost:3000';
+  let subApi = `${origin}/api/movie-sub?title=${encodeURIComponent(movieTitle)}&type=${data.type || 'movie'}`;
+  if (data.season) subApi += `&season=${data.season}&ep=${data.episode}`;
+
+  (async () => {
+    let streamUrl = '';
+    try {
+      const res = await fetch(`${origin}/api/stream?tmdbId=${data.id}&title=${encodeURIComponent(movieTitle)}&type=${data.type || 'movie'}&season=${data.season || 1}&episode=${data.episode || 1}`, { signal: AbortSignal.timeout(3000) });
+      if (res.ok) {
+        const sData = await res.json();
+        if (sData && sData.streamUrl) streamUrl = sData.streamUrl;
+      }
+    } catch(e) {}
+
+    if (streamUrl) {
+      launchArtPlayerWithSource(streamUrl, subApi, refMovie, data);
+    } else {
+      renderArtPlayerDirectLoader(artContainer, subApi, refMovie, data);
+    }
+  })();
+}
+
+function launchArtPlayerWithSource(videoSource, subtitleUrl, refMovie, data) {
+  const artContainer = document.getElementById("artplayerApp");
+  if (!artContainer) return;
+  artContainer.innerHTML = '';
+  artContainer.classList.remove("hidden");
+
+  if (typeof Artplayer === "undefined") {
+    console.warn("Artplayer library not available");
+    return;
+  }
+
+  if (window.artPlayerInstance) {
+    try { window.artPlayerInstance.destroy(); } catch (e) {}
+    window.artPlayerInstance = null;
+  }
+
+  const isM3u8 = typeof videoSource === 'string' && (videoSource.includes('.m3u8') || videoSource.includes('m3u8'));
+  const poster = refMovie?.backdrop || refMovie?.poster || '';
+
+  const artOptions = {
+    container: '#artplayerApp',
+    url: videoSource,
+    type: isM3u8 ? 'm3u8' : 'auto',
+    poster: poster,
+    volume: 0.8,
+    isLive: false,
+    muted: false,
+    autoplay: true,
+    pip: true,
+    autoSize: false,
+    autoMini: true,
+    screenshot: true,
+    setting: true,
+    playbackRate: true,
+    aspectRatio: true,
+    fullscreen: true,
+    fullscreenWeb: true,
+    subtitleOffset: true,
+    theme: '#00ff88',
+    lang: navigator.language ? navigator.language.toLowerCase() : 'en',
+    moreVideoAttr: {
+      crossOrigin: 'anonymous',
+    },
+    customType: {
+      m3u8: function (video, url, art) {
+        if (typeof Hls !== 'undefined' && Hls.isSupported()) {
+          if (art.hls) {
+            try { art.hls.destroy(); } catch (e) {}
+          }
+          const hls = new Hls({
+            enableWorker: true,
+            lowLatencyMode: true,
+            backBufferLength: 90
+          });
+          hls.loadSource(url);
+          hls.attachMedia(video);
+          hls.on(Hls.Events.MANIFEST_PARSED, function () {
+            video.play().catch(() => {
+              video.muted = true;
+              video.play().catch(() => {});
+            });
+          });
+          art.hls = hls;
+          art.on('destroy', () => {
+            try { hls.destroy(); } catch (e) {}
+          });
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+          video.src = url;
+          video.play().catch(() => {});
+        }
+      }
+    },
+    settings: [
+      {
+        width: 220,
+        html: 'Subtitle / ژێرنووس',
+        tooltip: 'Kurdish',
+        icon: '<ion-icon name="subtitles-outline" style="font-size:1.2rem;"></ion-icon>',
+        selector: [
+          {
+            html: 'Display',
+            tooltip: 'Hide',
+            switch: true,
+            onSwitch(item) {
+              const next = !item.switch;
+              item.tooltip = next ? 'Hide' : 'Show';
+              if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
+                window.artPlayerInstance.subtitle.show = next;
+              }
+              return next;
+            }
+          },
+          { html: 'Kurdish (Sorani) 🟢', url: subtitleUrl, default: true },
+          { html: 'Off', url: '', default: false }
+        ],
+        onSelect(item) {
+          if (!window.artPlayerInstance || !window.artPlayerInstance.subtitle) return item.html;
+          if (!item.url) {
+            window.artPlayerInstance.subtitle.show = false;
+          } else {
+            window.artPlayerInstance.subtitle.switch(item.url, { name: item.html });
+            window.artPlayerInstance.subtitle.show = true;
+          }
+          return item.html;
+        }
+      }
+    ],
+    subtitle: {
+      url: subtitleUrl || 'data:text/vtt;base64,V0VCVlRUCgo=',
+      type: 'vtt',
+      style: {
+        color: '#ffffff',
+        fontSize: '24px',
+        textShadow: '0 2px 5px rgba(0,0,0,0.95)',
+        fontWeight: 'bold',
+        direction: 'rtl'
+      },
+      encoding: 'utf-8'
+    }
+  };
+
+  window.artPlayerInstance = new Artplayer(artOptions);
+
+  window.artPlayerInstance.on('ready', () => {
+    if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
+      window.artPlayerInstance.subtitle.show = true;
+    }
+    if (typeof showSubtitleToast === 'function') {
+      showSubtitleToast('✨ ژێرنووسی کوردی بە ڕاستەوخۆ دەبەسترایەوە لە ArtPlayer (Native Synced)');
+    }
+  });
+}
+
+function renderArtPlayerDirectLoader(artContainer, subApi, refMovie, data) {
+  if (!artContainer) return;
+  const movieTitle = refMovie?.title || (document.getElementById('playerMovieTitle')?.textContent || '').split(' - S')[0].split(' - Ep')[0].trim();
+
+  artContainer.innerHTML = `
+    <div class="artplayer-direct-launcher" style="position: absolute; inset: 0; background: radial-gradient(circle at center, #141721 0%, #090a0f 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; color: #fff; z-index: 10; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center;">
+      <div style="max-width: 580px; width: 100%; background: rgba(22, 26, 38, 0.88); border: 1px solid rgba(0, 255, 136, 0.35); border-radius: 16px; padding: 30px; box-shadow: 0 16px 40px rgba(0,0,0,0.8); backdrop-filter: blur(20px);">
+        
+        <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(0, 255, 136, 0.12); border: 1px solid rgba(0, 255, 136, 0.4); padding: 5px 14px; border-radius: 20px; color: #00ff88; font-size: 13px; font-weight: 700; margin-bottom: 16px;">
+          ⚡ ArtPlayer Direct Native Player
+        </div>
+
+        <h2 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 8px; color: #fff;">
+          ${movieTitle}
+        </h2>
+        
+        <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 20px; line-height: 1.5; direction: rtl;">
+          تەماشاکردن لەڕێگەی پلەیەری ناوەکی ArtPlayer بە تەواوی هاوکات لەگەڵ ژێرنووسی کوردی
+        </p>
+
+        <div style="background: rgba(0, 255, 136, 0.08); border: 1px dashed rgba(0, 255, 136, 0.35); border-radius: 10px; padding: 12px; margin-bottom: 22px; display: flex; align-items: center; justify-content: center; gap: 10px; color: #00ff88; font-size: 13px; direction: rtl;">
+          <span>🟢 ژێرنووسی کوردی بەردەستە و بە شێوەی خۆکارانە دەبەسترێتەوە</span>
+        </div>
+
+        <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+          <input type="text" id="cwArtStreamInput" placeholder="Enter .m3u8 or .mp4 stream URL..." style="flex: 1; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); border-radius: 8px; padding: 12px 14px; color: #fff; font-size: 13px; outline: none;">
+          <button id="cwArtPlayStreamBtn" style="background: #00ff88; color: #000; border: none; border-radius: 8px; padding: 12px 20px; font-weight: 700; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 6px; white-space: nowrap;">
+            ▶ دەستپێکردن
+          </button>
+        </div>
+
+        <div style="display: flex; align-items: center; margin: 16px 0; color: #555;">
+          <div style="flex: 1; height: 1px; background: rgba(255,255,255,0.1);"></div>
+          <span style="padding: 0 12px; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">یان / OR</span>
+          <div style="flex: 1; height: 1px; background: rgba(255,255,255,0.1);"></div>
+        </div>
+
+        <input type="file" id="cwArtFileInput" accept="video/*" style="display: none;">
+        <button id="cwArtChooseFileBtn" style="width: 100%; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); color: #fff; border-radius: 8px; padding: 12px 16px; font-weight: 600; font-size: 13px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 16px; transition: background 0.2s;">
+          📁 ڤیدیۆی داگیراوی ناو کۆمپیوتەرەکەت هەڵبژێرە (Play Local Movie File)
+        </button>
+
+        <button id="cwArtSwitchVidLinkBtn" style="background: none; border: none; color: #888; font-size: 12px; cursor: pointer; text-decoration: underline;">
+          🔄 گۆڕین بۆ سێرڤەری سەرەکی VidLink (Native Subtitles)
+        </button>
+
+      </div>
+    </div>
+  `;
+
+  const streamInput = document.getElementById('cwArtStreamInput');
+  const playBtn = document.getElementById('cwArtPlayStreamBtn');
+  const chooseFileBtn = document.getElementById('cwArtChooseFileBtn');
+  const fileInput = document.getElementById('cwArtFileInput');
+  const switchVidLinkBtn = document.getElementById('cwArtSwitchVidLinkBtn');
+
+  if (playBtn && streamInput) {
+    playBtn.onclick = () => {
+      const url = streamInput.value.trim();
+      if (url) {
+        launchArtPlayerWithSource(url, subApi, refMovie, data);
+      }
+    };
+  }
+
+  if (chooseFileBtn && fileInput) {
+    chooseFileBtn.onclick = () => fileInput.click();
+    fileInput.onchange = (e) => {
+      const file = e.target.files && e.target.files[0];
+      if (file) {
+        const fileUrl = URL.createObjectURL(file);
+        launchArtPlayerWithSource(fileUrl, subApi, refMovie, data);
+      }
+    };
+  }
+
+  if (switchVidLinkBtn) {
+    switchVidLinkBtn.onclick = () => {
+      if (typeof selectPlayerServer === 'function') {
+        selectPlayerServer('vidlink');
+      }
+    };
+  }
+}
+
 async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   const artContainer = document.getElementById("artplayerApp");
   const video = document.getElementById("videoElement");
