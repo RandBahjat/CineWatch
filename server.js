@@ -295,8 +295,11 @@ const server = http.createServer((req, res) => {
     })
       .then(async response => {
         if (!response.ok) {
-          res.writeHead(response.status, { 'Access-Control-Allow-Origin': '*' });
-          res.end(`Upstream sub error: ${response.status}`);
+          if (targetLang) {
+            console.warn(`Upstream block on ${subTarget}, translation may fail`);
+          }
+          res.writeHead(302, { 'Location': subTarget });
+          res.end();
           return;
         }
         let text = await response.text();
