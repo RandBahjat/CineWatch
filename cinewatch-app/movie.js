@@ -7381,9 +7381,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
               const baseTrack = tracks.find(t => (t.label||'').toLowerCase().includes('eng')) || tracks[0];
               if (baseTrack && baseTrack.file) {
                 let kuUrl = baseTrack.file;
-                kuUrl += kuUrl.includes('?') ? '&lang=ku' : '?lang=ku';
+                kuUrl += kuUrl.includes('?') ? '&lang=ckb' : '?lang=ckb';
                 items.push({
-                  html: 'Kurdish (Auto-Translated)',
+                  html: 'Kurdish (Sorani)',
                   url: kuUrl,
                   default: false
                 });
