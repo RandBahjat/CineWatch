@@ -336,6 +336,7 @@ const server = http.createServer((req, res) => {
     const ep = parsed.searchParams.get('ep') || '1';
     const targetLang = parsed.searchParams.get('lang') || 'ckb';
     const trackIndex = Math.max(0, parseInt(parsed.searchParams.get('track') || '0', 10));
+    const SUBDL_API_KEY = process.env.SUBDL_API_KEY || 'subdl_2L68yhBx3c0uQlMPHERfXvgmRKw89akcsNrEhp2SVvs';
 
     if (!rawTitle) {
       res.writeHead(400, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
@@ -365,6 +366,55 @@ const server = http.createServer((req, res) => {
           } catch (e) {}
         }
 
+        // 1. Try fetching official/native human-translated Kurdish subtitles from SubDL
+        if (targetLang === 'ckb' || targetLang === 'ku') {
+          try {
+            let subdlQuery = `https://api.subdl.com/api/v1/subtitles?api_key=${SUBDL_API_KEY}&languages=KU&unpack=1`;
+            if (imdbId) {
+              subdlQuery += `&imdb_id=${imdbId}`;
+            } else {
+              subdlQuery += `&film_name=${encodeURIComponent(searchTitles[1] || rawTitle)}`;
+            }
+            if (cinemetaType === 'series') {
+              subdlQuery += `&season=${season}&episode=${ep}`;
+            }
+
+            const subdlRes = await fetch(subdlQuery);
+            const subdlData = await subdlRes.json();
+
+            if (subdlData.status && subdlData.subtitles && subdlData.subtitles.length > 0) {
+              const totalTracks = subdlData.subtitles.length;
+              const chosenSubdl = (subdlData.subtitles.length > trackIndex ? subdlData.subtitles[trackIndex] : subdlData.subtitles[0]);
+              
+              if (chosenSubdl && chosenSubdl.unpack_files && chosenSubdl.unpack_files.length > 0) {
+                const srtDlUrl = 'https://dl.subdl.com' + chosenSubdl.unpack_files[0].url;
+                const fileRes = await fetch(srtDlUrl);
+                if (fileRes.ok) {
+                  let nativeSrt = await fileRes.text();
+                  if (!nativeSrt.toUpperCase().includes('WEBVTT')) {
+                    nativeSrt = "WEBVTT\n\n" + nativeSrt.replace(/(\d{2}:\d{2}:\d{2}),(\d{3})/g, '$1.$2');
+                  }
+                  
+                  res.writeHead(200, {
+                    'Content-Type': 'text/vtt; charset=utf-8',
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Private-Network': 'true',
+                    'Access-Control-Expose-Headers': 'X-Subtitle-Total-Tracks, X-Subtitle-Source',
+                    'X-Subtitle-Total-Tracks': String(totalTracks),
+                    'X-Subtitle-Source': 'subdl-native',
+                    'Cache-Control': 'public, max-age=86400'
+                  });
+                  res.end(nativeSrt);
+                  return;
+                }
+              }
+            }
+          } catch (subdlErr) {
+            console.warn('[SubDL] Kurdish lookup error, falling back:', subdlErr.message);
+          }
+        }
+
+        // 2. Fallback: Fetch English from Stremio OpenSubtitles and translate
         if (!imdbId) {
           throw new Error('Movie/Series not found in Cinemeta');
         }
@@ -402,8 +452,9 @@ const server = http.createServer((req, res) => {
           'Content-Type': 'text/vtt; charset=utf-8',
           'Access-Control-Allow-Origin': '*',
           'Access-Control-Allow-Private-Network': 'true',
-          'Access-Control-Expose-Headers': 'X-Subtitle-Total-Tracks',
+          'Access-Control-Expose-Headers': 'X-Subtitle-Total-Tracks, X-Subtitle-Source',
           'X-Subtitle-Total-Tracks': String(engSubs.length || 1),
+          'X-Subtitle-Source': 'translated',
           'Cache-Control': 'public, max-age=86400'
         });
         res.end(srtText);
