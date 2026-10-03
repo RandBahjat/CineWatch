@@ -8671,14 +8671,69 @@ let totalSubTracks = 1;
 let currentSubSource = 'translated';
 let currentSubTrackName = '';
 let playerOpenedTimestamp = Date.now();
-
-// Timing synchronization variables
-let baseVideoTime = 0;          // last known video seconds from player
-let baseVideoTimestamp = 0;     // performance.now() when baseVideoTime was received
-let lastReportedTime = -1;      // to detect play vs pause
-let isPlayerPlaying = true;     // tracks if video is advancing
-let lastReceivedPostMessageTime = 0;
 let subtitleSyncLoop = null;
+
+// Anti-stuck watchdog variables
+let currentShowingSubId = null;
+let currentShowingSince = 0;
+
+// High-precision Monotonic Clock for Cross-Origin Embed Players
+const subClock = {
+    currentTime: 0,
+    lastTickTime: performance.now(),
+    isPlaying: true,
+    lastPostMsgTime: 0,
+    lastReportedTime: -1,
+
+    tick: function() {
+        const now = performance.now();
+        const delta = (now - this.lastTickTime) / 1000;
+        this.lastTickTime = now;
+
+        if (this.isPlaying && delta > 0 && delta < 1.0) {
+            this.currentTime += delta;
+        }
+        return this.currentTime;
+    },
+
+    sync: function(videoSec) {
+        if (typeof videoSec !== 'number' || isNaN(videoSec) || videoSec < 0) return;
+        this.lastPostMsgTime = Date.now();
+        this.lastTickTime = performance.now();
+
+        // Detect pause if the reported time hasn't changed over consecutive reports
+        if (this.lastReportedTime !== -1 && Math.abs(videoSec - this.lastReportedTime) < 0.05) {
+            this.isPlaying = false;
+        } else {
+            this.isPlaying = true;
+        }
+        this.lastReportedTime = videoSec;
+
+        // If time diff > 1.5s, user seeked/jumped
+        if (Math.abs(this.currentTime - videoSec) > 1.5) {
+            this.currentTime = videoSec;
+        } else {
+            // Soft convergence to prevent jumping
+            this.currentTime = this.currentTime * 0.75 + videoSec * 0.25;
+        }
+    },
+
+    jumpTo: function(videoSec) {
+        this.currentTime = Math.max(0, videoSec);
+        this.lastTickTime = performance.now();
+        this.isPlaying = true;
+        this.lastReportedTime = videoSec;
+    },
+
+    pause: function() {
+        this.isPlaying = false;
+    },
+
+    play: function() {
+        this.isPlaying = true;
+        this.lastTickTime = performance.now();
+    }
+};
 
 function loadCustomSubtitles(title, type, season, ep) {
     const overlay = document.getElementById('customSubtitleOverlay');
@@ -8708,11 +8763,9 @@ function loadCustomSubtitles(title, type, season, ep) {
     currentSubSource = 'translated';
     currentSubTrackName = '';
     playerOpenedTimestamp = Date.now();
-    baseVideoTime = 0;
-    baseVideoTimestamp = performance.now();
-    lastReportedTime = -1;
-    isPlayerPlaying = true;
-    lastReceivedPostMessageTime = 0;
+    currentShowingSubId = null;
+    currentShowingSince = 0;
+    subClock.jumpTo(0);
     
     if (subtitleSyncLoop) {
         clearInterval(subtitleSyncLoop);
@@ -8744,6 +8797,8 @@ function loadCustomSubtitles(title, type, season, ep) {
             toggleBtn.style.background = 'rgba(0,0,0,0.65)';
             toggleBtn.style.borderColor = 'rgba(255,255,255,0.3)';
             if (syncWrap) syncWrap.style.display = 'none';
+            const diagModal = document.getElementById('kurdishSubDialogModal');
+            if (diagModal) diagModal.style.display = 'none';
             if (subtitleSyncLoop) {
                 clearInterval(subtitleSyncLoop);
                 subtitleSyncLoop = null;
@@ -8768,11 +8823,10 @@ function loadCustomSubtitles(title, type, season, ep) {
                 if (syncWrap) syncWrap.style.display = 'inline-flex';
                 overlay.style.display = 'block';
 
-                if (baseVideoTime === 0 && lastReceivedPostMessageTime === 0 && playerOpenedTimestamp > 0) {
+                if (subClock.currentTime === 0 && subClock.lastPostMsgTime === 0 && playerOpenedTimestamp > 0) {
                     const elapsed = (Date.now() - playerOpenedTimestamp) / 1000;
                     if (elapsed > 2) {
-                        baseVideoTime = elapsed;
-                        baseVideoTimestamp = performance.now();
+                        subClock.jumpTo(elapsed);
                     }
                 }
 
@@ -8814,6 +8868,13 @@ function updateSyncDisplay() {
         trackBtn.title = currentSubTrackName || ('Track ' + (currentSubTrackIndex + 1));
         trackBtn.style.display = totalSubTracks > 1 ? 'inline-block' : 'none';
     }
+    const liveTimeBtn = document.getElementById('kurdishSubLiveTime');
+    if (liveTimeBtn) {
+        const curSecTotal = Math.max(0, subClock.currentTime + subtitleTimeOffset);
+        const curMin = Math.floor(curSecTotal / 60);
+        const curSec = Math.floor(curSecTotal % 60);
+        liveTimeBtn.textContent = '⏱️ ' + String(curMin).padStart(2,'0') + ':' + String(curSec).padStart(2,'0');
+    }
 }
 
 function setupSyncButtons() {
@@ -8826,7 +8887,8 @@ function setupSyncButtons() {
     const uploadBtn = document.getElementById('kurdishSubUploadBtn');
     const fileInput = document.getElementById('kurdishSubFileInput');
     const searchBtn = document.getElementById('kurdishSubSearchBtn');
-    const timeJumpBtn = document.getElementById('kurdishSubTimeJumpBtn');
+    const dialogBtn = document.getElementById('kurdishSubDialogBtn');
+    const liveTimeBtn = document.getElementById('kurdishSubLiveTime');
 
     if (minusBig) minusBig.onclick = (e) => { e.stopPropagation(); adjustOffset(-2.0); };
     if (minusBtn) minusBtn.onclick = (e) => { e.stopPropagation(); adjustOffset(-0.5); };
@@ -8868,32 +8930,85 @@ function setupSyncButtons() {
         };
     }
 
-    if (timeJumpBtn) {
-        timeJumpBtn.onclick = (e) => {
+    if (dialogBtn) {
+        dialogBtn.onclick = (e) => {
             e.stopPropagation();
-            const curMin = Math.floor(baseVideoTime / 60);
-            const curSec = Math.floor(baseVideoTime % 60);
-            const curTimeStr = String(curMin).padStart(2,'0') + ':' + String(curSec).padStart(2,'0');
-            const userTime = prompt('کاتی ئێستای ڤیدیۆکە بنووسە بۆ ڕێکخستنی ژێرنووس (وەک 05:30 یان 12:00):\nEnter current video time to sync subtitles (e.g. 05:30 or 12:00):', curTimeStr);
-            if (userTime && userTime.trim()) {
-                const parts = userTime.trim().split(':');
-                let parsedSec = 0;
-                if (parts.length === 2) {
-                    parsedSec = parseFloat(parts[0]) * 60 + parseFloat(parts[1]);
-                } else if (parts.length === 3) {
-                    parsedSec = parseFloat(parts[0]) * 3600 + parseFloat(parts[1]) * 60 + parseFloat(parts[2]);
-                } else if (parts.length === 1) {
-                    parsedSec = parseFloat(parts[0]);
-                }
-                if (!isNaN(parsedSec) && parsedSec >= 0) {
-                    baseVideoTime = parsedSec;
-                    baseVideoTimestamp = performance.now();
-                    lastReceivedPostMessageTime = 0;
-                    renderSubtitlesNow();
-                    showSubtitleToast('⏱️ Subtitles synced to ' + userTime.trim());
-                }
-            }
+            openSubtitleDialogueModal();
         };
+    }
+
+    if (liveTimeBtn) {
+        liveTimeBtn.onclick = (e) => {
+            e.stopPropagation();
+            openSubtitleDialogueModal();
+        };
+    }
+}
+
+function openSubtitleDialogueModal() {
+    const modal = document.getElementById('kurdishSubDialogModal');
+    const list = document.getElementById('kurdishSubDialogList');
+    const searchInput = document.getElementById('kurdishSubSearchInput');
+    if (!modal || !list) return;
+
+    if (currentParsedSubs.length === 0) {
+        showSubtitleToast('تکایە سەرەتا ژێرنووس چالاک بکە (Turn on Kurdish CC first)');
+        return;
+    }
+
+    modal.style.display = 'flex';
+
+    function renderList(query = '') {
+        const q = (query || '').toLowerCase().trim();
+        const filtered = q ? currentParsedSubs.filter(s => s.text.toLowerCase().includes(q)) : currentParsedSubs;
+        const curTime = subClock.currentTime + subtitleTimeOffset;
+
+        if (filtered.length === 0) {
+            list.innerHTML = '<div style="padding: 20px; text-align: center; color: #888; font-size: 13px;">هیچ دێڕێک نەدۆزرایەوە (No dialogues found)</div>';
+            return;
+        }
+
+        list.innerHTML = filtered.map(cue => {
+            const min = Math.floor(cue.start / 60);
+            const sec = Math.floor(cue.start % 60);
+            const timeStr = String(min).padStart(2,'0') + ':' + String(sec).padStart(2,'0');
+            const isNear = Math.abs(curTime - cue.start) < 4.0;
+            const bg = isNear ? 'rgba(0,255,136,0.18)' : 'rgba(255,255,255,0.04)';
+            const border = isNear ? '1px solid rgba(0,255,136,0.5)' : '1px solid rgba(255,255,255,0.06)';
+
+            return `<div class="sub-cue-row" data-start="${cue.start}" style="padding: 7px 10px; margin-bottom: 5px; border-radius: 6px; cursor: pointer; font-size: 13px; color: #eee; background: ${bg}; border: ${border}; display: flex; justify-content: space-between; align-items: center; transition: background 0.15s;">
+                <span style="flex: 1; margin-left: 10px; line-height: 1.35;">${cue.text.replace(/<br>/g, ' ')}</span>
+                <span style="color: #00ff88; font-size: 11px; font-family: monospace; direction: ltr; font-weight: 600;">${timeStr}</span>
+            </div>`;
+        }).join('');
+
+        list.querySelectorAll('.sub-cue-row').forEach(row => {
+            row.onclick = () => {
+                const startSec = parseFloat(row.dataset.start);
+                if (!isNaN(startSec)) {
+                    subClock.jumpTo(startSec);
+                    renderSubtitlesNow();
+                    const min = Math.floor(startSec / 60);
+                    const sec = Math.floor(startSec % 60);
+                    const timeStr = String(min).padStart(2,'0') + ':' + String(sec).padStart(2,'0');
+                    showSubtitleToast('⏱️ ژێرنووس ڕێکخرا لە ' + timeStr);
+                    modal.style.display = 'none';
+                }
+            };
+        });
+    }
+
+    renderList();
+
+    if (searchInput) {
+        searchInput.value = '';
+        searchInput.oninput = (e) => renderList(e.target.value);
+        setTimeout(() => searchInput.focus(), 100);
+    }
+
+    const closeBtn = document.getElementById('closeSubDialogBtn');
+    if (closeBtn) {
+        closeBtn.onclick = () => { modal.style.display = 'none'; };
     }
 }
 
@@ -8955,17 +9070,14 @@ function adjustOffset(delta) {
 }
 
 function renderSubtitlesNow() {
-    let nowSec = baseVideoTime;
-    if (isPlayerPlaying && baseVideoTimestamp > 0) {
-        nowSec += (performance.now() - baseVideoTimestamp) / 1000;
-    }
+    let nowSec = subClock.currentTime;
     updateSubtitleOverlay(nowSec);
 }
 
 function showSubtitleToast(msg) {
     const overlay = document.getElementById('customSubtitleOverlay');
     if (!overlay) return;
-    overlay.innerHTML = '<span style="display:inline-block; background:rgba(0,0,0,0.85); color:#00ff88; border:1px solid rgba(0,255,136,0.4); padding:6px 16px; border-radius:8px; font-size:16px; font-family:sans-serif; font-weight:700;">' + msg + '</span>';
+    overlay.innerHTML = '<span style="display:inline-block; background:rgba(0,0,0,0.88); color:#00ff88; border:1px solid rgba(0,255,136,0.4); padding:6px 16px; border-radius:8px; font-size:16px; font-family:sans-serif; font-weight:700;">' + msg + '</span>';
     overlay.style.display = 'block';
     setTimeout(() => {
         if (overlay && overlay.innerHTML.includes(msg)) {
@@ -9042,30 +9154,47 @@ async function fetchAndParseSubtitles() {
 }
 
 function parseVTTBasic(vtt) {
+    if (!vtt) return [];
     const blocks = vtt.split(/\r?\n\r?\n/);
     const subs = [];
+    let cueId = 0;
+
     blocks.forEach(block => {
         const lines = block.trim().split(/\r?\n/);
         let timeLineIdx = lines.findIndex(l => l.includes('-->'));
         if (timeLineIdx !== -1) {
             const timeLine = lines[timeLineIdx];
-            const textLines = lines.slice(timeLineIdx + 1);
+            const textLines = lines.slice(timeLineIdx + 1).map(l => {
+                return l.replace(/<\/?[^>]+(>|$)/g, '').trim();
+            }).filter(Boolean);
+
             const arrowParts = timeLine.split('-->');
-            if (arrowParts.length >= 2) {
+            if (arrowParts.length >= 2 && textLines.length > 0) {
                 const startToken = arrowParts[0].trim().split(/\s+/)[0];
                 const endToken = arrowParts[1].trim().split(/\s+/)[0];
                 const sSec = cwTimeToSeconds(startToken);
-                const eSec = cwTimeToSeconds(endToken);
-                if (eSec > sSec) {
-                    subs.push({
-                        start: sSec,
-                        end: eSec,
-                        text: textLines.join('<br>')
-                    });
+                let eSec = cwTimeToSeconds(endToken);
+
+                // Anti-stuck safety rules:
+                if (eSec <= sSec) {
+                    eSec = sSec + 3.0;
                 }
+                // Cap any dialogue longer than 7.5s at 6.5s to prevent watermark/credit cues from freezing on screen
+                if (eSec - sSec > 7.5) {
+                    eSec = sSec + 6.5;
+                }
+
+                subs.push({
+                    id: ++cueId,
+                    start: sSec,
+                    end: eSec,
+                    text: textLines.join('<br>')
+                });
             }
         }
     });
+
+    subs.sort((a, b) => a.start - b.start);
     return subs;
 }
 
@@ -9086,18 +9215,10 @@ function cwTimeToSeconds(t) {
 
 function startSubtitleSyncLoop() {
     if (subtitleSyncLoop) return;
+    subClock.play();
     subtitleSyncLoop = setInterval(() => {
         if (!isKurdishSubEnabled) return;
-        
-        let nowSec = baseVideoTime;
-        const timeSincePostMsg = Date.now() - lastReceivedPostMessageTime;
-        if (lastReceivedPostMessageTime === 0 || timeSincePostMsg > 5000) {
-            baseVideoTime += 0.1;
-            nowSec = baseVideoTime;
-        } else if (isPlayerPlaying && baseVideoTimestamp > 0) {
-            nowSec = baseVideoTime + (performance.now() - baseVideoTimestamp) / 1000;
-        }
-        
+        const nowSec = subClock.tick();
         updateSubtitleOverlay(nowSec);
     }, 100);
 }
@@ -9112,20 +9233,52 @@ function updateSubtitleOverlay(currentTime) {
         seconds = seconds / 1000;
     }
 
+    // Update live clock badge in sync bar
+    const liveTimeBtn = document.getElementById('kurdishSubLiveTime');
+    if (liveTimeBtn) {
+        const curSecTotal = Math.max(0, seconds + subtitleTimeOffset);
+        const curMin = Math.floor(curSecTotal / 60);
+        const curSec = Math.floor(curSecTotal % 60);
+        liveTimeBtn.textContent = '⏱️ ' + String(curMin).padStart(2,'0') + ':' + String(curSec).padStart(2,'0');
+    }
+
     const effectiveTime = seconds + subtitleTimeOffset;
-    const activeSub = currentParsedSubs.find(s => effectiveTime >= s.start && effectiveTime <= s.end);
     
+    // Find all matching cues at this timestamp
+    const matches = currentParsedSubs.filter(s => effectiveTime >= s.start && effectiveTime <= s.end);
+    let activeSub = null;
+    if (matches.length > 0) {
+        // Pick the latest-started cue so newer spoken dialogues immediately take precedence
+        matches.sort((a, b) => b.start - a.start);
+        activeSub = matches[0];
+    }
+    
+    // Anti-stuck watchdog: Auto-expire cue if it has been on screen > 7.5s
     if (activeSub) {
+        if (activeSub.id !== currentShowingSubId) {
+            currentShowingSubId = activeSub.id;
+            currentShowingSince = performance.now();
+        } else if (performance.now() - currentShowingSince > 7500) {
+            if (overlay.innerHTML !== '') {
+                overlay.innerHTML = '';
+                overlay.style.display = 'none';
+            }
+            return;
+        }
+
         const text = activeSub.text.trim();
-        const formatted = '<span style="display:inline-block; background:rgba(0,0,0,0.78); color:#ffffff; padding:6px 16px; border-radius:6px; font-family:sans-serif; font-size:24px; font-weight:700; line-height:1.45; text-shadow:0 1px 3px rgba(0,0,0,0.9); max-width:85%;">' + text + '</span>';
+        const formatted = '<span style="display:inline-block; background:rgba(0,0,0,0.82); color:#ffffff; padding:6px 18px; border-radius:8px; font-family:sans-serif; font-size:24px; font-weight:700; line-height:1.45; text-shadow:0 1px 4px rgba(0,0,0,0.95); max-width:85%;">' + text + '</span>';
         if (overlay.innerHTML !== formatted) {
             overlay.innerHTML = formatted;
             overlay.style.display = 'block';
         }
     } else {
-        if (!overlay.innerHTML.includes('✓ ژێرنووس') && !overlay.innerHTML.includes('Sync offset')) {
+        currentShowingSubId = null;
+        currentShowingSince = 0;
+        if (!overlay.innerHTML.includes('✓ ژێرنووس') && !overlay.innerHTML.includes('Sync offset') && !overlay.innerHTML.includes('⏱️')) {
             if (overlay.innerHTML !== '') {
                 overlay.innerHTML = '';
+                overlay.style.display = 'none';
             }
         }
     }
@@ -9144,6 +9297,16 @@ window.addEventListener('message', (event) => {
         }
         
         if (!data || typeof data !== 'object') return;
+
+        // Check for pause/play explicit events
+        if (data.event === 'pause' || data.type === 'pause') {
+            subClock.pause();
+            return;
+        }
+        if (data.event === 'play' || data.type === 'play') {
+            subClock.play();
+            return;
+        }
 
         let currentTime = undefined;
 
@@ -9181,20 +9344,8 @@ window.addEventListener('message', (event) => {
         }
 
         if (typeof currentTime === 'number' && !isNaN(currentTime)) {
-            lastReceivedPostMessageTime = Date.now();
-            
-            // Detect if video is paused (watched didn't change over time)
-            if (lastReportedTime !== -1 && Math.abs(currentTime - lastReportedTime) < 0.05) {
-                isPlayerPlaying = false;
-            } else {
-                isPlayerPlaying = true;
-            }
-            
-            lastReportedTime = currentTime;
-            baseVideoTime = currentTime;
-            baseVideoTimestamp = performance.now();
-            
-            updateSubtitleOverlay(currentTime);
+            subClock.sync(currentTime);
+            updateSubtitleOverlay(subClock.currentTime);
         }
     } catch(e) {}
 });
