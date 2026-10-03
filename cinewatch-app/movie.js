@@ -7446,18 +7446,6 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           style: { position: 'static' },
           html: `<div class="art-center-title" style="position:absolute;left:50%;transform:translateX(-50%);pointer-events:none;text-align:center;white-space:nowrap;font-size:0.85rem;text-shadow:0 1px 4px rgba(0,0,0,0.9);"><span class="art-title-ep" style="font-weight:700;color:#fff;">EP ${rawEp}</span><span class="art-title-sep" style="color:rgba(255,255,255,0.4);margin:0 5px;">·</span><span class="art-title-name" style="color:rgba(255,255,255,0.72);font-weight:400;">${(ref?.title || 'Anime').replace(/"/g, '&quot;')}</span></div>`,
           tooltip: `${ref?.title || 'Anime'} - Episode ${rawEp}`,
-        },
-        {
-          position: 'right',
-          html: '<button class="art-btn-skip">⏩ Skip Intro</button>',
-          index: 2,
-          tooltip: 'Skip Opening (+85s)',
-          click: function() {
-            if (window.artPlayerInstance) {
-              window.artPlayerInstance.currentTime += 85;
-              if (typeof showToast === 'function') showToast('Skipped Opening (+85s)');
-            }
-          }
         }
       ],
 
