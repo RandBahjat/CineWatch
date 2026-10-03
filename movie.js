@@ -7045,28 +7045,71 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
   const curPref = localStorage.getItem("cw_anime_audio_pref") || "sub";
 
-  // Mega Server: 100% ad-free, all 1100+ episodes, clean soft subtitles & audio
-  let targetSrc = '';
-  if (malId) {
-    const mode = curPref === 'dub' ? 'dub' : 'sub';
-    targetSrc = `https://megavid.buzz/mal/${malId}/${rawEp}/${mode}`;
-  } else {
-    targetSrc = `https://vaplayer.ru/embed/tv/${tmdbId}/${season}/${epNum}?skin=netflix`;
+  const poster = ref?.backdrop || ref?.poster || '';
+  let cleanUrl = '';
+  let subtitleUrl = '';
+
+  // 1. Fetch direct anime stream (.m3u8) & subtitle tracks (.vtt)
+  const endpoints = [
+    `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+    `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+    `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+    `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+    `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`
+  ];
+
+  for (const epUrl of endpoints) {
+    try {
+      const res = await fetch(epUrl, { signal: AbortSignal.timeout(3500) });
+      if (!res.ok) continue;
+      const srcData = await res.json();
+      if (srcData && srcData.source) {
+        cleanUrl = srcData.source;
+        if (srcData.tracks && srcData.tracks.length > 0) {
+          const enTrack = srcData.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || srcData.tracks[0];
+          if (enTrack && enTrack.file) {
+            subtitleUrl = enTrack.file;
+          }
+        }
+        break;
+      }
+    } catch (e) {}
   }
 
-  if (artContainer) artContainer.classList.add("hidden");
-  if (iframe) {
-    iframe.classList.remove("hidden");
-    iframe.setAttribute("frameborder", "0");
-    iframe.setAttribute("scrolling", "no");
-    iframe.setAttribute("allowfullscreen", "true");
-    iframe.setAttribute("allow", "autoplay; encrypted-media; picture-in-picture");
-    iframe.src = targetSrc;
-    iframe.onload = () => {
-      const co = document.getElementById("videoCenterOverlay");
-      if (co) co.style.display = "none";
-    };
+  // Fallback: If no direct stream was extracted, fall back gracefully to embed
+  if (!cleanUrl) {
+    let fallbackSrc = '';
+    if (tmdbId && !isNaN(Number(tmdbId))) {
+      fallbackSrc = `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false&nextbutton=true`;
+    } else if (malId) {
+      fallbackSrc = `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`;
+    } else {
+      fallbackSrc = `https://vaplayer.ru/embed/tv/${tmdbId}/${season}/${epNum}?skin=netflix`;
+    }
+
+    if (artContainer) artContainer.classList.add("hidden");
+    if (iframe) {
+      iframe.classList.remove("hidden");
+      iframe.setAttribute("frameborder", "0");
+      iframe.setAttribute("scrolling", "no");
+      iframe.setAttribute("allowfullscreen", "true");
+      iframe.setAttribute("allow", "autoplay; encrypted-media; picture-in-picture");
+      iframe.src = fallbackSrc;
+      iframe.onload = () => {
+        const co = document.getElementById("videoCenterOverlay");
+        if (co) co.style.display = "none";
+      };
+    }
     return;
+  }
+
+  // Direct stream found! Show native ArtPlayer with subtitles
+  if (iframe) {
+    iframe.classList.add("hidden");
+    iframe.src = "";
+  }
+  if (artContainer) {
+    artContainer.classList.remove("hidden");
   }
 
   const streamUrl = cleanUrl;
@@ -7151,7 +7194,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                     if (artApp) artApp.classList.add("hidden");
                     if (ifr) {
                       ifr.classList.remove("hidden");
-                      ifr.src = `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`;
+                      ifr.src = (tmdbId && !isNaN(Number(tmdbId)))
+        ? `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=db0a0a`
+        : `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`;
                     }
                     break;
                 }
@@ -7239,6 +7284,12 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                   const d = await r.json();
                   if (d && d.source && window.artPlayerInstance) {
                     window.artPlayerInstance.switchUrl(d.source);
+                    if (d.tracks && d.tracks.length > 0 && window.artPlayerInstance.subtitle) {
+                      const trk = d.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || d.tracks[0];
+                      if (trk && trk.file) {
+                        window.artPlayerInstance.subtitle.switch(trk.file, { name: 'English Sub' });
+                      }
+                    }
                     if (typeof showToast === 'function') {
                       showToast(`Switched to ${item.html}`);
                     }
