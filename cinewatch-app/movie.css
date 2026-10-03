@@ -3505,6 +3505,31 @@ body.rtl-layout .details-back-btn svg {
   display: none !important;
 }
 
+/* ArtPlayer Subtitle Visibility & Netflix-grade readability */
+.artplayer-app .art-subtitle,
+.art-video-player .art-subtitle {
+  z-index: 25 !important;
+}
+
+.artplayer-app.art-subtitle-show .art-subtitle,
+.art-video-player.art-subtitle-show .art-subtitle {
+  display: flex !important;
+}
+
+.art-subtitle-line {
+  background: rgba(0, 0, 0, 0.75) !important;
+  padding: 4px 14px !important;
+  border-radius: 6px !important;
+  line-height: 1.45 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 1.25rem !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+  display: inline-block !important;
+  margin: 3px 0 !important;
+}
+
 .cw-server-opt {
   display: flex;
   align-items: center;
