@@ -8646,3 +8646,127 @@ function renderThemeSelectorHTML() {
   `;
 }
 window.renderThemeSelectorHTML = renderThemeSelectorHTML;
+
+// ==========================================
+// CUSTOM SUBTITLE ENGINE (STREMIO-BASED)
+// ==========================================
+let currentParsedSubs = [];
+let currentSubtitleIframeTitle = null;
+
+async function loadCustomSubtitles(title, type, season, ep) {
+    const overlay = document.getElementById('customSubtitleOverlay');
+    if (!overlay) return;
+    overlay.style.display = 'none';
+    currentParsedSubs = [];
+    currentSubtitleIframeTitle = title;
+    
+    try {
+        let qs = `title=${encodeURIComponent(title)}&type=${type}`;
+        if (season) qs += `&season=${season}`;
+        if (ep) qs += `&ep=${ep}`;
+        
+        // Wait 1 second before fetching so UI doesn't block video load
+        await new Promise(r => setTimeout(r, 1000));
+        
+        const res = await fetch(`/api/movie-sub?${qs}`);
+        if (!res.ok) throw new Error('Subtitles not found');
+        const vttText = await res.text();
+        currentParsedSubs = parseVTTBasic(vttText);
+        
+        if (currentParsedSubs.length > 0) {
+            overlay.style.display = 'block';
+            overlay.innerHTML = '';
+        }
+    } catch (e) {
+        console.warn('Failed to load Kurdish subtitles:', e);
+    }
+}
+window.loadCustomSubtitles = loadCustomSubtitles;
+
+function parseVTTBasic(vtt) {
+    const blocks = vtt.split(/\r?\n\r?\n/);
+    const subs = [];
+    blocks.forEach(block => {
+        const lines = block.trim().split(/\r?\n/);
+        let timeLineIdx = lines.findIndex(l => l.includes('-->'));
+        if (timeLineIdx !== -1) {
+            const timeLine = lines[timeLineIdx];
+            const textLines = lines.slice(timeLineIdx + 1);
+            const [start, end] = timeLine.split('-->').map(s => s.trim());
+            subs.push({
+                start: cwTimeToSeconds(start),
+                end: cwTimeToSeconds(end),
+                text: textLines.join('<br>')
+            });
+        }
+    });
+    return subs;
+}
+
+function cwTimeToSeconds(t) {
+    const parts = t.split(':');
+    let secs = 0;
+    if (parts.length === 3) {
+        secs = parseInt(parts[0]) * 3600 + parseInt(parts[1]) * 60 + parseFloat(parts[2].replace(',','.'));
+    } else if (parts.length === 2) {
+        secs = parseInt(parts[0]) * 60 + parseFloat(parts[1].replace(',','.'));
+    }
+    return secs;
+}
+
+function updateSubtitleOverlay(currentTime) {
+    const overlay = document.getElementById('customSubtitleOverlay');
+    if (!overlay || currentParsedSubs.length === 0) return;
+    
+    // Some video players send time as milliseconds, we need seconds
+    let seconds = currentTime;
+    if (seconds > 100000) { // e.g. 120000 ms is 2 minutes
+        seconds = seconds / 1000; 
+    }
+    
+    const activeSub = currentParsedSubs.find(s => seconds >= s.start && seconds <= s.end);
+    if (activeSub) {
+        if (overlay.innerHTML !== activeSub.text) {
+            overlay.innerHTML = activeSub.text;
+        }
+    } else {
+        if (overlay.innerHTML !== '') {
+            overlay.innerHTML = '';
+        }
+    }
+}
+
+// Global listener for cross-origin iframe timeupdate events
+window.addEventListener('message', (event) => {
+    try {
+        let data = event.data;
+        if (typeof data === 'string') {
+            // Check if it looks like JSON before parsing to avoid unnecessary errors
+            if (data.startsWith('{') || data.startsWith('[')) {
+                data = JSON.parse(data);
+            } else {
+                return;
+            }
+        }
+        
+        if (!data) return;
+
+        // VidLink / VaPlayer event normalizer
+        let currentTime = undefined;
+        let isTimeUpdate = false;
+
+        if (data.type === 'timeupdate' || data.event === 'timeupdate' || data.event === 'time_update') {
+            isTimeUpdate = true;
+            currentTime = data.currentTime !== undefined ? data.currentTime : data.time;
+        }
+        // EmbedMaster support or others that just send `time`
+        else if (data.time !== undefined && !data.event && !data.type) {
+            isTimeUpdate = true;
+            currentTime = data.time;
+        }
+        
+        if (isTimeUpdate && typeof currentTime === 'number') {
+            updateSubtitleOverlay(currentTime);
+        }
+    } catch(e) {}
+});
