@@ -141,17 +141,32 @@ const server = http.createServer((req, res) => {
           return;
         }
 
-        const contentType = response.headers.get('content-type') || '';
-        if (contentType.includes('mpegurl') || streamTarget.includes('.m3u8') || contentType.includes('application/octet-stream') || contentType.includes('text/plain')) {
-          const text = await response.text();
-          // Rewrite nested m3u8 playlists so child playlists also route through proxy
+        const arrayBuf = await response.arrayBuffer();
+        const buf = Buffer.from(arrayBuf);
+        const head = buf.subarray(0, 100).toString('utf8');
+        const isM3u8 = head.includes('#EXTM3U') || streamTarget.includes('.m3u8');
+
+        if (isM3u8) {
+          const text = buf.toString('utf8');
+          const isMaster = text.includes('#EXT-X-STREAM-INF');
+          // Rewrite nested playlists so child playlists also route through proxy
           const rewritten = text.split('\n').map(line => {
             const trimmed = line.trim();
-            if (!trimmed || trimmed.startsWith('#')) return line;
+            if (!trimmed || trimmed.startsWith('#')) {
+              if (trimmed.startsWith('#EXT-X-KEY:') && trimmed.includes('URI="')) {
+                return trimmed.replace(/URI="([^"]+)"/, (m, uri) => {
+                  try {
+                    const fullKey = new URL(uri, streamTarget).href;
+                    return `URI="${baseUrl}/api/anime-m3u8?url=${encodeURIComponent(fullKey)}"`;
+                  } catch (e) { return m; }
+                });
+              }
+              return line;
+            }
             try {
               const fullUrl = new URL(trimmed, streamTarget).href;
-              // If it's a playlist or on cp.megavid.buzz, proxy it; if it's a direct .ts on cdn.api-webs.com, leave as-is
-              if (fullUrl.includes('.m3u8') || fullUrl.includes('cp.megavid.buzz')) {
+              // If it's a master playlist variant or another playlist, proxy it
+              if (isMaster || fullUrl.includes('.m3u8') || fullUrl.includes('cp.megavid.buzz')) {
                 return `${baseUrl}/api/anime-m3u8?url=${encodeURIComponent(fullUrl)}`;
               }
               return fullUrl;
@@ -167,13 +182,14 @@ const server = http.createServer((req, res) => {
           });
           res.end(rewritten);
         } else {
-          // Pass-through binary (e.g. segments or keys if proxied)
+          // Pass-through binary (e.g. segments or keys)
+          const contentType = response.headers.get('content-type') || 'video/MP2T';
           res.writeHead(200, {
-            'Content-Type': contentType || 'video/MP2T',
-            'Access-Control-Allow-Origin': '*'
+            'Content-Type': contentType === 'image/jpeg' ? 'video/MP2T' : contentType,
+            'Access-Control-Allow-Origin': '*',
+            'Cache-Control': 'public, max-age=86400'
           });
-          const arrayBuf = await response.arrayBuffer();
-          res.end(Buffer.from(arrayBuf));
+          res.end(buf);
         }
       })
       .catch(err => {
