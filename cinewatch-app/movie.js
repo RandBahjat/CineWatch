@@ -3141,15 +3141,11 @@ function openDetailsModal(movieId) {
       initializeRatingSystem(movie.id);
     }
 
-    // Sync Details Server Selector (Hide for anime since anime uses dedicated ArtPlayer)
+    // Server selector hidden for unified custom player
     const serverSelector = document.getElementById("detailsServerSelector");
     if (serverSelector) {
-      if (movie.isAnime || movie.type === "Anime") {
-        serverSelector.classList.add("hidden");
-      } else {
-        serverSelector.classList.remove("hidden");
-        syncServerPillsUI();
-      }
+      serverSelector.classList.add("hidden");
+      serverSelector.style.display = "none";
     }
 
     renderCommentsSection(movie.id);
