@@ -7048,6 +7048,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   const poster = ref?.backdrop || ref?.poster || '';
   let cleanUrl = '';
   let subtitleUrl = '';
+  let animeChapters = null;
 
   // 1. Fetch direct anime stream (.m3u8) & subtitle tracks (.vtt)
   const endpoints = [
@@ -7065,6 +7066,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       const srcData = await res.json();
       if (srcData && srcData.source) {
         cleanUrl = srcData.source;
+        animeChapters = srcData.chapters || [];
         if (srcData.tracks && srcData.tracks.length > 0) {
           const enTrack = srcData.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || srcData.tracks[0];
           if (enTrack && enTrack.file) {
