@@ -1784,6 +1784,22 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     }
 
     window.artPlayerInstance = new Artplayer(artOptions);
+
+    if (subtitleUrl) {
+      window.artPlayerInstance.on('ready', () => {
+        if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
+          window.artPlayerInstance.subtitle.show = true;
+        }
+      });
+      window.artPlayerInstance.on('subtitleLoad', () => {
+        if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
+          window.artPlayerInstance.subtitle.show = true;
+        }
+      });
+      if (window.artPlayerInstance.subtitle) {
+        window.artPlayerInstance.subtitle.show = true;
+      }
+    }
   } catch (err) {
     console.error('Failed to init ArtPlayer in app:', err);
   }
