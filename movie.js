@@ -7917,11 +7917,23 @@ function updateIframeServer(serverOverride) {
 
   const srv1 = document.querySelector('.details-server-btn[data-server="vidlink"]');
   const srv2 = document.querySelector('.details-server-btn[data-server="vidapi"]');
+  const srvArt = document.querySelector('.details-server-btn[data-server="artplayer"]');
 
   // Ensure all detail page servers are visible
   if (srv1) srv1.style.display = 'inline-flex';
   if (srv2) srv2.style.display = 'inline-flex';
+  if (srvArt) srvArt.style.display = 'inline-flex';
 
+  if (activeServer === 'artplayer') {
+    if (iframe) {
+      iframe.classList.add("hidden");
+      iframe.src = "";
+    }
+    const centerOverlay = document.getElementById('videoCenterOverlay');
+    if (centerOverlay) centerOverlay.style.display = 'none';
+    initArtPlayerForMovie(data, refMovie);
+    return;
+  }
 
   let newUrl = '';
   let allowAttr = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
