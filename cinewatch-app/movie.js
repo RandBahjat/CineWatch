@@ -3955,6 +3955,10 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
     }
   }
 
+  if (typeof loadCustomSubtitles === 'function' && movie && movie.title) {
+    loadCustomSubtitles(movie.title, 'movie', null, null);
+  }
+
   modal.classList.remove("hidden");
   document.body.style.overflow = "hidden";
   // Hide back-to-top button while player is open
