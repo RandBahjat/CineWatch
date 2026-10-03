@@ -335,6 +335,7 @@ const server = http.createServer((req, res) => {
     const season = parsed.searchParams.get('season') || '1';
     const ep = parsed.searchParams.get('ep') || '1';
     const targetLang = parsed.searchParams.get('lang') || 'ckb';
+    const trackIndex = Math.max(0, parseInt(parsed.searchParams.get('track') || '0', 10));
 
     if (!rawTitle) {
       res.writeHead(400, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
@@ -380,12 +381,13 @@ const server = http.createServer((req, res) => {
            throw new Error('No subtitles found for this media');
         }
         
-        const engSub = d2.subtitles.find(s => s.lang === 'eng') || d2.subtitles[0];
-        if (!engSub) {
+        const engSubs = d2.subtitles.filter(s => s.lang === 'eng');
+        const chosenSub = (engSubs.length > trackIndex ? engSubs[trackIndex] : engSubs[0]) || d2.subtitles[0];
+        if (!chosenSub) {
           throw new Error('No English subtitle found to translate');
         }
         
-        const r3 = await fetch(engSub.url);
+        const r3 = await fetch(chosenSub.url);
         let srtText = await r3.text();
         
         if (!srtText.toUpperCase().includes('WEBVTT')) {
@@ -400,6 +402,8 @@ const server = http.createServer((req, res) => {
           'Content-Type': 'text/vtt; charset=utf-8',
           'Access-Control-Allow-Origin': '*',
           'Access-Control-Allow-Private-Network': 'true',
+          'Access-Control-Expose-Headers': 'X-Subtitle-Total-Tracks',
+          'X-Subtitle-Total-Tracks': String(engSubs.length || 1),
           'Cache-Control': 'public, max-age=86400'
         });
         res.end(srtText);
