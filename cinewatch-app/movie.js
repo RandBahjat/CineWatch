@@ -7697,6 +7697,11 @@ function updateIframeServer(serverOverride) {
     const centerOverlay = document.getElementById('videoCenterOverlay');
     if (centerOverlay) centerOverlay.style.display = 'none';
   };
+  
+  if (typeof loadCustomSubtitles === 'function') {
+    loadCustomSubtitles(refMovie.title, data.type, data.season, data.episode);
+  }
+  
   iframe.src = newUrl;
 }
 
