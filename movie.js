@@ -7653,12 +7653,21 @@ function updateIframeServer(serverOverride) {
   let newUrl = '';
   let allowAttr = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
 
+  const movieTitle = refMovie?.title || (document.getElementById('playerMovieTitle')?.textContent || '').split(' - S')[0].split(' - Ep')[0].trim();
+  let subParam = '';
+  if (movieTitle) {
+    const origin = (typeof window !== 'undefined' && window.location.origin && !window.location.origin.includes('null')) ? window.location.origin : 'http://localhost:3000';
+    let subApi = `${origin}/api/movie-sub?title=${encodeURIComponent(movieTitle)}&type=${data.type || 'movie'}`;
+    if (data.season) subApi += `&season=${data.season}&ep=${data.episode}`;
+    subParam = `&subtitles=${encodeURIComponent(subApi)}&subtitleLabel=Kurdish`;
+  }
+
   if (activeServer === 'vidlink') {
-    // Server 1: VidLink Pro (https://vidlink.pro) - PRIMARY
+    // Server 1: VidLink Pro (https://vidlink.pro) - PRIMARY with Native In-Player Subtitles
     if (data.type === 'tv') {
-      newUrl = `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false&nextbutton=true`;
+      newUrl = `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false&nextbutton=true${subParam}`;
     } else {
-      newUrl = `https://vidlink.pro/movie/${data.id}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false`;
+      newUrl = `https://vidlink.pro/movie/${data.id}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false${subParam}`;
     }
     allowAttr = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
   } else if (activeServer === 'mapple') {
@@ -7688,9 +7697,9 @@ function updateIframeServer(serverOverride) {
   } else {
     // Default fallback to VidLink Pro
     if (data.type === 'tv') {
-      newUrl = `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false&nextbutton=true`;
+      newUrl = `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false&nextbutton=true${subParam}`;
     } else {
-      newUrl = `https://vidlink.pro/movie/${data.id}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false`;
+      newUrl = `https://vidlink.pro/movie/${data.id}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false${subParam}`;
     }
     allowAttr = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
   }
