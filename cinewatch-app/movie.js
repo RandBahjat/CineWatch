@@ -8774,7 +8774,7 @@ function setupSyncButtons() {
 function showSubtitleToast(msg) {
     const overlay = document.getElementById('customSubtitleOverlay');
     if (!overlay) return;
-    overlay.innerHTML = '<span style="display:inline-block; background:rgba(0,0,0,0.85); color:#00ff88; border:1px solid rgba(0,255,136,0.4); padding:6px 16px; border-radius:8px; font-size:16px; font-family:'Noto Sans Arabic', 'Segoe UI', sans-serif; font-weight:700;">' + msg + '</span>';
+    overlay.innerHTML = '<span style="display:inline-block; background:rgba(0,0,0,0.85); color:#00ff88; border:1px solid rgba(0,255,136,0.4); padding:6px 16px; border-radius:8px; font-size:16px; font-family:sans-serif; font-weight:700;">' + msg + '</span>';
     overlay.style.display = 'block';
     setTimeout(() => {
         if (overlay && overlay.innerHTML.includes(msg)) {
@@ -8892,7 +8892,7 @@ function updateSubtitleOverlay(currentTime) {
     
     if (activeSub) {
         const text = activeSub.text.trim();
-        const formatted = '<span style="display:inline-block; background:rgba(0,0,0,0.78); color:#ffffff; padding:6px 16px; border-radius:6px; font-family:'Noto Sans Arabic', 'Segoe UI', Tahoma, sans-serif; font-size:24px; font-weight:700; line-height:1.45; text-shadow:0 1px 3px rgba(0,0,0,0.9); max-width:85%;">' + text + '</span>';
+        const formatted = '<span style="display:inline-block; background:rgba(0,0,0,0.78); color:#ffffff; padding:6px 16px; border-radius:6px; font-family:sans-serif; font-size:24px; font-weight:700; line-height:1.45; text-shadow:0 1px 3px rgba(0,0,0,0.9); max-width:85%;">' + text + '</span>';
         if (overlay.innerHTML !== formatted) {
             overlay.innerHTML = formatted;
             overlay.style.display = 'block';
