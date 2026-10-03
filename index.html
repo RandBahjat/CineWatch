@@ -15,9 +15,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20261003_95_progressbar_fix">
-    <link rel="stylesheet" href="browse-fix.css?v=20261003_142_hero_counter">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_1437">
+    <link rel="stylesheet" href="movie.css?v=20261003_97_progressbar_fix">
+    <link rel="stylesheet" href="browse-fix.css?v=20261003_144_hero_counter">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_1439">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -135,10 +135,10 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20261003_147_top10_mobile" defer></script>
-    <script src="series-data.js?v=20261003_147_top10_mobile" defer></script>
-    <script src="anime-data.js?v=20260818_8603" defer></script>
-    <script src="movie.js?v=20261003_102_dubfix" defer></script>
+    <script src="movies-data.js?v=20261003_149_top10_mobile" defer></script>
+    <script src="series-data.js?v=20261003_149_top10_mobile" defer></script>
+    <script src="anime-data.js?v=20260818_8605" defer></script>
+    <script src="movie.js?v=20261003_104_dubfix" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -1389,7 +1389,14 @@
                         <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
                     </svg>
                 </button>
-                <button id="kurdishSubToggleBtn" title="Toggle Kurdish Subtitles" style="margin-left:auto; background: rgba(0,0,0,0.6); color: #fff; border: 1px solid rgba(255,255,255,0.3); border-radius: 6px; padding: 6px 12px; cursor: pointer; font-family: sans-serif; font-weight: 600; font-size: 14px; transition: all 0.2s; display: none;">CC: OFF (Kurdish)</button>
+                <div style="margin-left:auto; display: flex; align-items: center; gap: 8px;">
+                    <button id="kurdishSubToggleBtn" title="Toggle Kurdish Subtitles" style="background: rgba(0,0,0,0.65); color: #fff; border: 1px solid rgba(255,255,255,0.3); border-radius: 6px; padding: 6px 14px; cursor: pointer; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 600; font-size: 13px; transition: all 0.2s; display: none;">CC: OFF (Kurdish)</button>
+                    <div id="kurdishSubSyncWrap" style="display: none; align-items: center; gap: 4px; background: rgba(0,0,0,0.65); border: 1px solid rgba(255,255,255,0.25); border-radius: 6px; padding: 2px 6px;">
+                        <button id="kurdishSubSyncMinus" title="Delay subtitles by -1 second" style="background: none; border: none; color: #fff; cursor: pointer; font-size: 12px; font-weight: bold; padding: 2px 5px;">-1s</button>
+                        <span id="kurdishSubSyncLabel" style="font-size: 11px; color: #ccc; min-width: 24px; text-align: center;">0s</span>
+                        <button id="kurdishSubSyncPlus" title="Advance subtitles by +1 second" style="background: none; border: none; color: #fff; cursor: pointer; font-size: 12px; font-weight: bold; padding: 2px 5px;">+1s</button>
+                    </div>
+                </div>
             </div>
 
             <!-- HTML5 Video Player -->
@@ -3230,7 +3237,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_1437"></script>
+    <script src="welcome-disclaimer.js?v=20260918_1439"></script>
 
     <!-- Interstitial Ad Modal ÃŽâ€œÃƒâ€¡ÃƒÂ¶ fires on pagination for free users -->
     <div id="cwInterstitialAdModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.88); align-items:center; justify-content:center;">
