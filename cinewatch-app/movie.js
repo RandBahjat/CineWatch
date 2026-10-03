@@ -7716,7 +7716,6 @@ function updateIframeServer(serverOverride) {
     if (centerOverlay) centerOverlay.style.display = 'none';
   };
   
-  const movieTitle = refMovie?.title || (document.getElementById('playerMovieTitle')?.textContent || '').split(' - S')[0].split(' - Ep')[0].trim();
   if (typeof loadCustomSubtitles === 'function' && movieTitle) {
     loadCustomSubtitles(movieTitle, data.type, data.season, data.episode);
   }
