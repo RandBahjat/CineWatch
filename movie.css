@@ -3684,7 +3684,7 @@ body.rtl-layout .details-back-btn svg {
    DETAILS VIEW: SERVER SELECTOR (ALL SCREENS)
    =================================================== */
 .details-server-selector {
-  display: flex;
+  display: none !important;
   align-items: center;
   gap: 12px;
   margin-top: 1.25rem;
