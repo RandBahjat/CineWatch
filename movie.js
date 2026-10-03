@@ -7051,9 +7051,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
   // 1. Fetch direct anime stream (.m3u8) & subtitle tracks (.vtt)
   const endpoints = [
-    `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
     `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
     `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+    `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
     `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
     `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`
   ];
@@ -7223,14 +7223,15 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           selector: [
             {
               html: 'Display',
-              tooltip: 'Show',
-              switch: true,
+              tooltip: subtitleUrl ? 'Hide' : 'Show',
+              switch: !!subtitleUrl,
               onSwitch(item) {
-                item.tooltip = item.switch ? 'Hide' : 'Show';
-                if (window.artPlayerInstance) {
-                  window.artPlayerInstance.subtitle.show = !item.switch;
+                const next = !item.switch;
+                item.tooltip = next ? 'Hide' : 'Show';
+                if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
+                  window.artPlayerInstance.subtitle.show = next;
                 }
-                return !item.switch;
+                return next;
               },
             },
             {
@@ -7248,8 +7249,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
             },
           ],
           onSelect(item) {
-            if (item.url && window.artPlayerInstance) {
+            if (item.url && window.artPlayerInstance && window.artPlayerInstance.subtitle) {
               window.artPlayerInstance.subtitle.switch(item.url, { name: item.html });
+              window.artPlayerInstance.subtitle.show = true;
             }
             return item.html;
           },
@@ -7269,9 +7271,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
               localStorage.setItem("cw_anime_audio_pref", route);
             }
             const endpoints = [
-              `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
               `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
               `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
+              `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
               `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
               `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
               `https://megavid.buzz/mal/${malId}/${rawEp}/${route}/source`
@@ -7288,7 +7290,10 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                       const trk = d.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || d.tracks[0];
                       if (trk && trk.file) {
                         window.artPlayerInstance.subtitle.switch(trk.file, { name: 'English Sub' });
+                        window.artPlayerInstance.subtitle.show = true;
                       }
+                    } else if (window.artPlayerInstance.subtitle && isDub) {
+                      window.artPlayerInstance.subtitle.show = false;
                     }
                     if (typeof showToast === 'function') {
                       showToast(`Switched to ${item.html}`);
@@ -7361,6 +7366,22 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     }
 
     window.artPlayerInstance = new Artplayer(artOptions);
+
+    if (subtitleUrl) {
+      window.artPlayerInstance.on('ready', () => {
+        if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
+          window.artPlayerInstance.subtitle.show = true;
+        }
+      });
+      window.artPlayerInstance.on('subtitleLoad', () => {
+        if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
+          window.artPlayerInstance.subtitle.show = true;
+        }
+      });
+      if (window.artPlayerInstance.subtitle) {
+        window.artPlayerInstance.subtitle.show = true;
+      }
+    }
   } catch (err) {
     console.error("Failed to init ArtPlayer:", err);
     const artApp = document.getElementById("artplayerApp");
