@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    CineWatch Ã¢Â€Â” Modern Cinematic Styling
    Style Foundations & Design Tokens
    ========================================================================== */
@@ -13299,109 +13299,175 @@ body.cw-ads-hidden script[src*="highrevenueformat"] {
 }
 
 
+
 /* ========================================================
-   CineWatch ArtPlayer - Crimson Glassmorphism Theme
+   CineWatch ArtPlayer — Apple TV+ Minimal Style
+   Clean, centered title, thin controls, red accent
    ======================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 .artplayer-app,
 .art-video-player {
   --art-theme: #e50914 !important;
   --art-progress-color: #e50914 !important;
-  --art-hover-color: rgba(255, 255, 255, 0.35) !important;
-  --art-loaded-color: rgba(255, 255, 255, 0.22) !important;
-  --art-state-size: 78px !important;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  --art-hover-color: rgba(255, 255, 255, 0.15) !important;
+  --art-loaded-color: rgba(255, 255, 255, 0.25) !important;
+  --art-state-size: 0px !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
 }
 
-/* Glassy Crimson Bottom Control Bar */
+/* ── Bottom Control Bar ── */
 .artplayer-app .art-bottom,
 .art-video-player .art-bottom {
-  background: linear-gradient(180deg, rgba(8, 8, 12, 0) 0%, rgba(12, 12, 18, 0.6) 24%, rgba(12, 12, 18, 0.88) 100%) !important;
-  backdrop-filter: blur(20px) saturate(190%) !important;
-  -webkit-backdrop-filter: blur(20px) saturate(190%) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
-  box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.7) !important;
-  padding-bottom: 6px !important;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.18) 70%,
+    transparent 100%
+  ) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-top: none !important;
+  box-shadow: none !important;
+  padding: 0 20px 14px !important;
 }
 
-/* Crimson Glow Progress Bar */
+/* ── Progress Bar Track ── */
+.artplayer-app .art-progress,
+.art-video-player .art-progress {
+  height: 3px !important;
+  margin-bottom: 10px !important;
+}
+
+.artplayer-app .art-progress-inner,
+.art-video-player .art-progress-inner {
+  height: 3px !important;
+  border-radius: 3px !important;
+  background: rgba(255, 255, 255, 0.3) !important;
+  transition: height 0.15s ease !important;
+}
+
+.artplayer-app .art-progress:hover .art-progress-inner,
+.art-video-player .art-progress:hover .art-progress-inner {
+  height: 5px !important;
+}
+
+/* Played portion */
 .artplayer-app .art-progress-played,
 .art-video-player .art-progress-played {
-  background: linear-gradient(90deg, #ff2a3a 0%, #e50914 100%) !important;
-  box-shadow: 0 0 12px rgba(229, 9, 20, 0.7) !important;
-  border-radius: 4px !important;
+  background: #e50914 !important;
+  box-shadow: none !important;
+  border-radius: 3px !important;
 }
 
+/* Buffered portion */
+.artplayer-app .art-progress-loaded,
+.art-video-player .art-progress-loaded {
+  background: rgba(255, 255, 255, 0.35) !important;
+}
+
+/* Scrub dot indicator */
 .artplayer-app .art-progress-indicator,
 .art-video-player .art-progress-indicator {
+  width: 12px !important;
+  height: 12px !important;
   background: #ffffff !important;
-  border: 2px solid #e50914 !important;
-  box-shadow: 0 0 10px #e50914, 0 0 20px rgba(229, 9, 20, 0.8) !important;
-  transform: scale(1.15) !important;
+  border: none !important;
+  box-shadow: 0 0 6px rgba(0,0,0,0.5) !important;
+  transform: scale(1) !important;
+  opacity: 0 !important;
+  transition: opacity 0.15s ease, transform 0.15s ease !important;
 }
 
-.artplayer-app .art-progress-highlight,
-.art-video-player .art-progress-highlight {
-  background-color: #ff3b4e !important;
+.artplayer-app .art-progress:hover .art-progress-indicator,
+.art-video-player .art-progress:hover .art-progress-indicator {
+  opacity: 1 !important;
+  transform: scale(1.1) !important;
 }
 
-/* Center Play/Pause Glassy Crimson Orb */
-.artplayer-app .art-state,
-.art-video-player .art-state {
-  width: 78px !important;
-  height: 78px !important;
-  border-radius: 50% !important;
-  background: radial-gradient(circle at 35% 35%, rgba(229, 9, 20, 0.28) 0%, rgba(15, 15, 22, 0.72) 100%) !important;
-  backdrop-filter: blur(18px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(18px) saturate(180%) !important;
-  border: 1.5px solid rgba(229, 9, 20, 0.65) !important;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.75), 0 0 32px rgba(229, 9, 20, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.2) !important;
-  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  cursor: pointer !important;
+/* ── Controls Row ── */
+.artplayer-app .art-controls,
+.art-video-player .art-controls {
+  align-items: center !important;
+  padding: 0 !important;
 }
 
-.artplayer-app .art-state:hover,
-.art-video-player .art-state:hover {
-  transform: scale(1.12) !important;
-  border-color: #ff334b !important;
-  background: radial-gradient(circle at 35% 35%, rgba(229, 9, 20, 0.42) 0%, rgba(20, 20, 30, 0.85) 100%) !important;
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.9), 0 0 44px rgba(229, 9, 20, 0.75) !important;
-}
-
-.artplayer-app .art-state svg,
-.art-video-player .art-state svg {
-  fill: #ff2a3a !important;
-  filter: drop-shadow(0 0 12px rgba(229, 9, 20, 0.85)) !important;
-  width: 32px !important;
-  height: 32px !important;
-  margin-left: 4px;
-}
-
-/* Glassy Control Buttons */
+/* ── Individual Buttons ── */
 .artplayer-app .art-control,
 .art-video-player .art-control {
-  border-radius: 8px !important;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  color: #e5e7eb !important;
+  color: rgba(255, 255, 255, 0.92) !important;
+  background: none !important;
+  border-radius: 4px !important;
+  transition: color 0.15s ease, opacity 0.15s ease !important;
+  padding: 0 6px !important;
 }
 
 .artplayer-app .art-control:hover,
 .art-video-player .art-control:hover {
-  background: rgba(255, 255, 255, 0.1) !important;
-  color: #ff3b4e !important;
-  backdrop-filter: blur(8px) !important;
+  color: #ffffff !important;
+  background: none !important;
+  opacity: 0.85 !important;
 }
 
-/* Glassy Settings & Context Menus */
+/* ── Center Play/Pause State Icon — Hidden (minimal style) ── */
+.artplayer-app .art-state,
+.art-video-player .art-state {
+  display: none !important;
+}
+
+/* ── Centered Title in controls bar ── */
+.art-center-title {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  pointer-events: none !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.85rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.01em !important;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.8) !important;
+  animation: artTitleFadeIn 0.3s ease !important;
+}
+
+.art-center-title .art-title-ep {
+  font-weight: 700 !important;
+  color: #ffffff !important;
+}
+
+.art-center-title .art-title-sep {
+  color: rgba(255, 255, 255, 0.4) !important;
+  font-weight: 300 !important;
+  margin: 0 4px !important;
+}
+
+.art-center-title .art-title-name {
+  color: rgba(255, 255, 255, 0.72) !important;
+  font-weight: 400 !important;
+}
+
+/* ── Time Display ── */
+.artplayer-app .art-control-time,
+.art-video-player .art-control-time {
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-size: 0.78rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.02em !important;
+}
+
+/* ── Settings & Context Menus ── */
 .artplayer-app .art-settings,
 .art-video-player .art-settings,
 .artplayer-app .art-contextmenu,
 .art-video-player .art-contextmenu {
-  background: rgba(15, 15, 22, 0.84) !important;
-  backdrop-filter: blur(24px) saturate(200%) !important;
-  -webkit-backdrop-filter: blur(24px) saturate(200%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  border-radius: 14px !important;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(229, 9, 20, 0.25) !important;
+  background: rgba(22, 22, 24, 0.92) !important;
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.7) !important;
   overflow: hidden !important;
   padding: 6px !important;
 }
@@ -13410,112 +13476,93 @@ body.cw-ads-hidden script[src*="highrevenueformat"] {
 .art-video-player .art-setting-item:hover,
 .artplayer-app .art-contextmenu-item:hover,
 .art-video-player .art-contextmenu-item:hover {
-  background: rgba(229, 9, 20, 0.22) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
   color: #ffffff !important;
-  border-radius: 8px !important;
+  border-radius: 7px !important;
 }
 
 .artplayer-app .art-setting-item.art-current,
 .art-video-player .art-setting-item.art-current {
-  color: #ff3b4e !important;
-  font-weight: 700 !important;
+  color: #e50914 !important;
+  font-weight: 600 !important;
 }
 
 .artplayer-app .art-switch input:checked + .art-switch-slider,
 .art-video-player .art-switch input:checked + .art-switch-slider {
   background-color: #e50914 !important;
-  box-shadow: 0 0 10px rgba(229, 9, 20, 0.6) !important;
 }
 
-/* Glassy Volume Panel */
+/* ── Volume Panel ── */
 .artplayer-app .art-volume-slider-panel,
 .art-video-player .art-volume-slider-panel {
-  background: rgba(16, 16, 24, 0.82) !important;
-  backdrop-filter: blur(18px) !important;
-  -webkit-backdrop-filter: blur(18px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  background: rgba(22, 22, 24, 0.9) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
   border-radius: 10px !important;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.6) !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5) !important;
 }
 
 .artplayer-app .art-volume-slider-handle,
 .art-video-player .art-volume-slider-handle {
   background: #e50914 !important;
-  box-shadow: 0 0 10px #e50914 !important;
+  box-shadow: none !important;
 }
 
-/* Glassy Tooltips */
+/* ── Tooltips ── */
 .artplayer-app .art-tip,
 .art-video-player .art-tip {
-  background: rgba(18, 18, 26, 0.85) !important;
-  backdrop-filter: blur(14px) !important;
-  -webkit-backdrop-filter: blur(14px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  background: rgba(22, 22, 24, 0.88) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
   border-radius: 6px !important;
   color: #fff !important;
-  font-weight: 600 !important;
-  font-size: 12px !important;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.5) !important;
+  font-weight: 500 !important;
+  font-size: 0.75rem !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.4) !important;
+  padding: 4px 10px !important;
 }
 
-/* Bottom Title Badge in Controls Bar */
-.art-bottom-title {
-  display: flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-  margin-left: 12px !important;
-  padding: 3px 12px 3px 6px !important;
-  background: rgba(255, 255, 255, 0.08) !important;
-  border: 1px solid rgba(255, 255, 255, 0.14) !important;
-  border-radius: 20px !important;
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35) !important;
-  max-width: 360px !important;
-  pointer-events: none !important;
-  animation: artTitleFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
-}
-
-@keyframes artTitleFadeIn {
-  from { opacity: 0; transform: translateY(4px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Crimson Badges & Buttons */
-.art-badge-crimson {
-  padding: 3px 10px !important;
-  background: rgba(229, 9, 20, 0.18) !important;
-  border: 1px solid rgba(229, 9, 20, 0.6) !important;
-  border-radius: 6px !important;
-  font-size: 0.72rem !important;
-  font-weight: 700 !important;
-  color: #ff3b4e !important;
-  letter-spacing: 0.5px !important;
-  box-shadow: 0 0 10px rgba(229, 9, 20, 0.35) !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-}
-
+/* ── Skip Intro Button (minimal pill) ── */
 .art-btn-skip {
-  background: rgba(229, 9, 20, 0.15) !important;
-  border: 1px solid rgba(229, 9, 20, 0.45) !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
   color: #fff !important;
-  border-radius: 6px !important;
-  padding: 3px 10px !important;
+  border-radius: 20px !important;
+  padding: 4px 14px !important;
   font-size: 0.75rem !important;
   font-weight: 600 !important;
   cursor: pointer !important;
   display: flex !important;
   align-items: center !important;
-  gap: 4px !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  gap: 5px !important;
+  letter-spacing: 0.01em !important;
+  transition: background 0.15s ease, border-color 0.15s ease !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 .art-btn-skip:hover {
-  background: rgba(229, 9, 20, 0.32) !important;
-  border-color: #ff334b !important;
-  box-shadow: 0 0 14px rgba(229, 9, 20, 0.5) !important;
-  transform: translateY(-1px) !important;
+  background: rgba(255, 255, 255, 0.22) !important;
+  border-color: rgba(255, 255, 255, 0.55) !important;
+}
+
+/* ── MEGA HD Badge (subtle, small) ── */
+.art-badge-crimson {
+  padding: 2px 8px !important;
+  background: rgba(229, 9, 20, 0.12) !important;
+  border: 1px solid rgba(229, 9, 20, 0.4) !important;
+  border-radius: 4px !important;
+  font-size: 0.62rem !important;
+  font-weight: 700 !important;
+  color: rgba(255, 80, 80, 0.85) !important;
+  letter-spacing: 0.08em !important;
+  backdrop-filter: none !important;
+}
+
+/* ── Fade-in animation ── */
+@keyframes artTitleFadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(3px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
 }
