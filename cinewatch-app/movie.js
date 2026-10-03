@@ -7244,6 +7244,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           });
         }
       ],
+      subtitleOffset: true,
       moreVideoAttr: {
         crossOrigin: 'anonymous',
       },
