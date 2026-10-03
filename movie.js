@@ -8741,22 +8741,13 @@ const subClock = {
         } else if (isPausedExplicit === false) {
             this.isPlaying = true;
         } else {
-            // Detect pause only if identical time repeated 4+ times (>800ms)
-            if (this.lastReportedTime !== -1 && Math.abs(videoSec - this.lastReportedTime) < 0.02) {
-                this.sameTimeCount = (this.sameTimeCount || 0) + 1;
-                if (this.sameTimeCount >= 4) {
-                    this.isPlaying = false;
-                }
-            } else {
-                this.sameTimeCount = 0;
-                this.isPlaying = true;
-            }
+            this.isPlaying = true;
         }
 
         this.lastReportedTime = videoSec;
 
-        // If time difference > 0.25s, snap to true video time immediately (no laggy blending)
-        if (Math.abs(this.currentTime - videoSec) > 0.25) {
+        // Snap immediately if difference > 0.15s
+        if (Math.abs(this.currentTime - videoSec) > 0.15) {
             this.currentTime = videoSec;
         }
         this.lastTickTime = performance.now();
