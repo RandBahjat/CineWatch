@@ -7334,36 +7334,38 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           html: 'Subtitle',
           tooltip: 'Subtitles',
           icon: '<ion-icon name="subtitles-outline" style="font-size:1.2rem;"></ion-icon>',
-          selector: [
-            {
-              html: 'Display',
-              tooltip: subtitleUrl ? 'Hide' : 'Show',
-              switch: !!subtitleUrl,
-              onSwitch(item) {
-                const next = !item.switch;
-                item.tooltip = next ? 'Hide' : 'Show';
-                if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
-                  window.artPlayerInstance.subtitle.show = next;
-                }
-                return next;
+          selector: (() => {
+            const items = [
+              {
+                html: 'Display',
+                tooltip: subtitleUrl ? 'Hide' : 'Show',
+                switch: !!subtitleUrl,
+                onSwitch(item) {
+                  const next = !item.switch;
+                  item.tooltip = next ? 'Hide' : 'Show';
+                  if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
+                    window.artPlayerInstance.subtitle.show = next;
+                  }
+                  return next;
+                },
               },
-            },
-            {
-              default: true,
-              html: 'English Sub',
-              url: subtitleUrl || '',
-            },
-            {
-              html: 'Kurdish Sub',
-              url: '',
-            },
-            {
-              html: 'Japanese (Raw)',
-              url: '',
-            },
-          ],
+              { html: 'Off', url: '', default: !subtitleUrl }
+            ];
+            const tracks = window._cwSubtitleTracks || [];
+            tracks.forEach((t, i) => {
+              items.push({
+                html: t.label || `Track ${i + 1}`,
+                url: t.file || '',
+                default: i === 0 && !!subtitleUrl
+              });
+            });
+            return items;
+          })(),
           onSelect(item) {
-            if (item.url && window.artPlayerInstance && window.artPlayerInstance.subtitle) {
+            if (!window.artPlayerInstance || !window.artPlayerInstance.subtitle) return item.html;
+            if (!item.url) {
+              window.artPlayerInstance.subtitle.show = false;
+            } else {
               window.artPlayerInstance.subtitle.switch(item.url, { name: item.html });
               window.artPlayerInstance.subtitle.show = true;
             }
