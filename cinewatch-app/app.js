@@ -1749,8 +1749,14 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
       ],
       controls: [
         {
+          position: 'left',
+          index: 10,
+          html: `<div class="art-bottom-title" style="display: flex; align-items: center; gap: 8px; margin-left: 12px; padding: 3px 10px 3px 6px; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 20px; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 2px 10px rgba(0,0,0,0.35); max-width: 360px; pointer-events: none;"><span style="font-size: 0.65rem; font-weight: 800; background: linear-gradient(135deg, #ff2a3a, #e50914); color: #fff; padding: 2px 8px; border-radius: 10px; letter-spacing: 0.5px; box-shadow: 0 2px 6px rgba(229,9,20,0.5); text-transform: uppercase;">EP ${epNum}</span><span style="font-size: 0.82rem; font-weight: 700; color: #f9fafb; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-shadow: 0 1px 3px rgba(0,0,0,0.85);">${(movie?.title || 'Anime').replace(/"/g, '&quot;')}</span></div>`,
+          tooltip: `${movie?.title || 'Anime'} - Episode ${epNum}`,
+        },
+        {
           position: 'right',
-          html: '<button style="background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);color:#fff;border-radius:6px;padding:3px 10px;font-size:0.75rem;cursor:pointer;display:flex;align-items:center;gap:4px;">⏩ Skip Intro (+85s)</button>',
+          html: '<button class="art-btn-skip" style="background: rgba(229, 9, 20, 0.15); border: 1px solid rgba(229, 9, 20, 0.45); color: #fff; border-radius: 6px; padding: 3px 10px; font-size: 0.75rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 4px; backdrop-filter: blur(8px); transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);">⏩ Skip Intro (+85s)</button>',
           index: 2,
           tooltip: 'Skip Opening (+85s)',
           click: function() {
@@ -1762,7 +1768,7 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
         },
         {
           position: 'right',
-          html: '<span style="padding: 3px 10px; background: rgba(35,173,229,0.2); border: 1px solid #23ade5; border-radius: 6px; font-size: 0.72rem; font-weight: 700; color: #23ade5; letter-spacing: 0.5px;">MEGA HD</span>',
+          html: '<span class="art-badge-crimson" style="padding: 3px 10px; background: rgba(229, 9, 20, 0.18); border: 1px solid rgba(229, 9, 20, 0.6); border-radius: 6px; font-size: 0.72rem; font-weight: 700; color: #ff3b4e; letter-spacing: 0.5px; box-shadow: 0 0 10px rgba(229, 9, 20, 0.3); backdrop-filter: blur(8px);">MEGA HD</span>',
           index: 1,
           tooltip: 'MegaCloud Direct Engine',
         },
