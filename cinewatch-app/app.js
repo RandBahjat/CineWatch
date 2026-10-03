@@ -1600,7 +1600,7 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
       playsInline: true,
       autoPlayback: true,
       airplay: true,
-      theme: '#23ade5',
+      theme: '#e50914',
       lang: navigator.language ? navigator.language.toLowerCase() : 'en',
       moreVideoAttr: {
         crossOrigin: 'anonymous',
