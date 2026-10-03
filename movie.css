@@ -13310,7 +13310,6 @@ body.cw-ads-hidden script[src*="highrevenueformat"] {
 .artplayer-app,
 .art-video-player {
   --art-theme: #e50914 !important;
-  --art-progress-color: #e50914 !important;
   --art-hover-color: rgba(255, 255, 255, 0.15) !important;
   --art-loaded-color: rgba(255, 255, 255, 0.25) !important;
   --art-state-size: 0px !important;
