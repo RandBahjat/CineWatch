@@ -366,98 +366,132 @@ const server = http.createServer((req, res) => {
           } catch (e) {}
         }
 
-        // 1. Try fetching official/native human-translated Kurdish subtitles from SubDL
+        // 1. Fetch official human-translated Kurdish subtitles from SubDL
         if (targetLang === 'ckb' || targetLang === 'ku') {
           try {
-            let subdlQuery = `https://api.subdl.com/api/v1/subtitles?api_key=${SUBDL_API_KEY}&languages=KU&unpack=1`;
+            const candidateUrls = [];
+            const cleanTitle = searchTitles[1] || rawTitle;
+
+            // Search by film_name
+            candidateUrls.push(`https://api.subdl.com/api/v1/subtitles?api_key=${SUBDL_API_KEY}&languages=KU&film_name=${encodeURIComponent(cleanTitle)}&unpack=1`);
+            
+            // Search by imdb_id if available
             if (imdbId) {
-              subdlQuery += `&imdb_id=${imdbId}`;
-            } else {
-              subdlQuery += `&film_name=${encodeURIComponent(searchTitles[1] || rawTitle)}`;
-            }
-            if (cinemetaType === 'series') {
-              subdlQuery += `&season=${season}&episode=${ep}`;
+              candidateUrls.push(`https://api.subdl.com/api/v1/subtitles?api_key=${SUBDL_API_KEY}&languages=KU&imdb_id=${imdbId}&unpack=1`);
             }
 
-            const subdlRes = await fetch(subdlQuery);
-            const subdlData = await subdlRes.json();
+            let allMatchingTracks = [];
 
-            if (subdlData.status && subdlData.subtitles && subdlData.subtitles.length > 0) {
-              const totalTracks = subdlData.subtitles.length;
-              const chosenSubdl = (subdlData.subtitles.length > trackIndex ? subdlData.subtitles[trackIndex] : subdlData.subtitles[0]);
-              
-              if (chosenSubdl && chosenSubdl.unpack_files && chosenSubdl.unpack_files.length > 0) {
-                const srtDlUrl = 'https://dl.subdl.com' + chosenSubdl.unpack_files[0].url;
-                const fileRes = await fetch(srtDlUrl);
-                if (fileRes.ok) {
-                  let nativeSrt = await fileRes.text();
-                  if (!nativeSrt.toUpperCase().includes('WEBVTT')) {
-                    nativeSrt = "WEBVTT\n\n" + nativeSrt.replace(/(\d{2}:\d{2}:\d{2}),(\d{3})/g, '$1.$2');
+            for (const queryUrl of candidateUrls) {
+              try {
+                const subdlRes = await fetch(queryUrl);
+                const subdlData = await subdlRes.json();
+                if (subdlData.status && subdlData.subtitles && subdlData.subtitles.length > 0) {
+                  for (const subItem of subdlData.subtitles) {
+                    if (!subItem.unpack_files || subItem.unpack_files.length === 0) continue;
+
+                    if (cinemetaType === 'series') {
+                      const reqSeason = parseInt(season, 10);
+                      const reqEp = parseInt(ep, 10);
+
+                      // Find matching file in unpack_files
+                      for (const upFile of subItem.unpack_files) {
+                        const fileSeason = upFile.season !== undefined ? parseInt(upFile.season, 10) : parseInt(subItem.season, 10);
+                        const fileEp = upFile.episode !== undefined ? parseInt(upFile.episode, 10) : parseInt(subItem.episode, 10);
+
+                        let isMatch = false;
+                        if (fileSeason === reqSeason && fileEp === reqEp) {
+                          isMatch = true;
+                        } else {
+                          // Check filename pattern (e.g. S01E01 or 1x01)
+                          const fileName = (upFile.name || '').toLowerCase();
+                          const sPattern = `s${String(reqSeason).padStart(2,'0')}e${String(reqEp).padStart(2,'0')}`;
+                          const altPattern = `${reqSeason}x${String(reqEp).padStart(2,'0')}`;
+                          if (fileName.includes(sPattern) || fileName.includes(altPattern)) {
+                            isMatch = true;
+                          }
+                        }
+
+                        if (isMatch) {
+                          allMatchingTracks.push({
+                            release_name: subItem.release_name || upFile.name || cleanTitle,
+                            author: subItem.author || '',
+                            url: upFile.url
+                          });
+                        }
+                      }
+                    } else {
+                      // Movie: add first valid unpack file
+                      const upFile = subItem.unpack_files[0];
+                      if (upFile && upFile.url) {
+                        allMatchingTracks.push({
+                          release_name: subItem.release_name || subItem.name || cleanTitle,
+                          author: subItem.author || '',
+                          url: upFile.url
+                        });
+                      }
+                    }
                   }
-                  
-                  res.writeHead(200, {
-                    'Content-Type': 'text/vtt; charset=utf-8',
-                    'Access-Control-Allow-Origin': '*',
-                    'Access-Control-Allow-Private-Network': 'true',
-                    'Access-Control-Expose-Headers': 'X-Subtitle-Total-Tracks, X-Subtitle-Source',
-                    'X-Subtitle-Total-Tracks': String(totalTracks),
-                    'X-Subtitle-Source': 'subdl-native',
-                    'Cache-Control': 'public, max-age=86400'
-                  });
-                  res.end(nativeSrt);
-                  return;
                 }
+              } catch (e) {}
+              if (allMatchingTracks.length > 0) break;
+            }
+
+            // Deduplicate tracks by url
+            const seenUrls = new Set();
+            allMatchingTracks = allMatchingTracks.filter(t => {
+              if (seenUrls.has(t.url)) return false;
+              seenUrls.add(t.url);
+              return true;
+            });
+
+            if (allMatchingTracks.length > 0) {
+              const totalTracks = allMatchingTracks.length;
+              const chosen = (allMatchingTracks.length > trackIndex ? allMatchingTracks[trackIndex] : allMatchingTracks[0]);
+              const srtDlUrl = 'https://dl.subdl.com' + chosen.url;
+              const fileRes = await fetch(srtDlUrl);
+              if (fileRes.ok) {
+                let nativeSrt = await fileRes.text();
+                if (!nativeSrt.toUpperCase().includes('WEBVTT')) {
+                  nativeSrt = "WEBVTT\n\n" + nativeSrt.replace(/(\d{2}:\d{2}:\d{2}),(\d{3})/g, '$1.$2');
+                }
+
+                const trackName = (chosen.author ? `${chosen.author} - ` : '') + (chosen.release_name || `Track ${trackIndex + 1}`);
+
+                res.writeHead(200, {
+                  'Content-Type': 'text/vtt; charset=utf-8',
+                  'Access-Control-Allow-Origin': '*',
+                  'Access-Control-Allow-Private-Network': 'true',
+                  'Access-Control-Expose-Headers': 'X-Subtitle-Total-Tracks, X-Subtitle-Source, X-Subtitle-Track-Name',
+                  'X-Subtitle-Total-Tracks': String(totalTracks),
+                  'X-Subtitle-Source': 'subdl-native',
+                  'X-Subtitle-Track-Name': encodeURIComponent(trackName),
+                  'Cache-Control': 'public, max-age=86400'
+                });
+                res.end(nativeSrt);
+                return;
               }
             }
           } catch (subdlErr) {
-            console.warn('[SubDL] Kurdish lookup error, falling back:', subdlErr.message);
+            console.warn('[SubDL] Kurdish lookup error:', subdlErr.message);
           }
+
+          // If no SubDL Kurdish subtitle exists, respond with 404 and search hints
+          res.writeHead(404, {
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Private-Network': 'true'
+          });
+          res.end(JSON.stringify({
+            error: 'No Kurdish subtitle found on SubDL',
+            title: rawTitle,
+            kurdSubtitleSearch: `https://www.google.com/search?q=site%3Akurdsubtitle.net+${encodeURIComponent(rawTitle)}`
+          }));
+          return;
         }
 
-        // 2. Fallback: Fetch English from Stremio OpenSubtitles and translate
-        if (!imdbId) {
-          throw new Error('Movie/Series not found in Cinemeta');
-        }
-        
-        let subUrlReq = `https://opensubtitles-v3.strem.io/subtitles/${cinemetaType}/${imdbId}`;
-        if (cinemetaType === 'series') {
-          subUrlReq += `:${season}:${ep}`;
-        }
-        subUrlReq += '.json';
-        
-        const r2 = await fetch(subUrlReq);
-        const d2 = await r2.json();
-        if (!d2.subtitles || d2.subtitles.length === 0) {
-           throw new Error('No subtitles found for this media');
-        }
-        
-        const engSubs = d2.subtitles.filter(s => s.lang === 'eng');
-        const chosenSub = (engSubs.length > trackIndex ? engSubs[trackIndex] : engSubs[0]) || d2.subtitles[0];
-        if (!chosenSub) {
-          throw new Error('No English subtitle found to translate');
-        }
-        
-        const r3 = await fetch(chosenSub.url);
-        let srtText = await r3.text();
-        
-        if (!srtText.toUpperCase().includes('WEBVTT')) {
-          srtText = "WEBVTT\n\n" + srtText.replace(/(\d{2}:\d{2}:\d{2}),(\d{3})/g, '$1.$2');
-        }
-        
-        if (targetLang) {
-          srtText = await translateVTT(srtText, targetLang);
-        }
-        
-        res.writeHead(200, {
-          'Content-Type': 'text/vtt; charset=utf-8',
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Private-Network': 'true',
-          'Access-Control-Expose-Headers': 'X-Subtitle-Total-Tracks, X-Subtitle-Source',
-          'X-Subtitle-Total-Tracks': String(engSubs.length || 1),
-          'X-Subtitle-Source': 'translated',
-          'Cache-Control': 'public, max-age=86400'
-        });
-        res.end(srtText);
+        res.writeHead(404, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+        res.end(JSON.stringify({ error: 'Unsupported language' }));
       } catch (err) {
         res.writeHead(500, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
         res.end(JSON.stringify({ error: err.message }));
