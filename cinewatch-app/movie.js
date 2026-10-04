@@ -7489,12 +7489,18 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
             if (window.__cwPreferencesAllowed !== false) {
               localStorage.setItem("cw_anime_audio_pref", route);
             }
+            const curOrigin = (typeof window !== 'undefined' && window.location.origin && !window.location.origin.includes('null') && !window.location.origin.startsWith('file')) ? window.location.origin : 'http://localhost:3000';
+            const curHost = (typeof window !== 'undefined' && window.location.hostname && !window.location.hostname.includes('null')) ? window.location.hostname : 'localhost';
             const endpoints = [
+              `${curOrigin}/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
+              `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
+              `http://${curHost}:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
               `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
               `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
-              `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
+              `http://${curHost}:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
               `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
               `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
+              `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
               `https://megavid.buzz/mal/${malId}/${rawEp}/${route}/source`
             ];
             (async () => {
