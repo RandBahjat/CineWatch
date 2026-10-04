@@ -1935,34 +1935,53 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
       ],
     };
 
+    const isInitialSrt = Boolean(subtitleUrl && subtitleUrl.includes('.srt'));
     artOptions.subtitle = {
       url: (subtitleUrl && subtitleUrl.trim().length > 0) ? subtitleUrl : 'data:text/vtt;base64,V0VCVlRUCgo=',
-      type: 'vtt',
+      type: isInitialSrt ? 'srt' : 'vtt',
       style: {
         color: '#ffffff',
         fontSize: '22px',
-        textShadow: '0 2px 4px rgba(0,0,0,0.8)',
+        textShadow: '0 2px 4px rgba(0,0,0,0.9), 0 0 2px #000',
         fontWeight: '600'
       },
+      escape: false,
       encoding: 'utf-8',
     };
 
     window.artPlayerInstance = new Artplayer(artOptions);
 
-    if (subtitleUrl) {
-      window.artPlayerInstance.on('ready', () => {
-        if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
-          window.artPlayerInstance.subtitle.show = true;
+    window.artPlayerInstance.on('ready', () => {
+      try {
+        if (window.artPlayerInstance && window.artPlayerInstance.notice) {
+          window.artPlayerInstance.notice.show = function() {};
         }
-      });
-      window.artPlayerInstance.on('subtitleLoad', () => {
-        if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
-          window.artPlayerInstance.subtitle.show = true;
-        }
-      });
-      if (window.artPlayerInstance.subtitle) {
+      } catch (e) {}
+      if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
         window.artPlayerInstance.subtitle.show = true;
       }
+    });
+
+    window.artPlayerInstance.on('subtitleLoad', () => {
+      if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
+        window.artPlayerInstance.subtitle.show = true;
+      }
+    });
+
+    window.artPlayerInstance.on('error', () => {
+      try {
+        const tracks = window._cwSubtitleTracks || [];
+        const enTrack = tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng'));
+        if (enTrack && enTrack.file && window.artPlayerInstance?.subtitle?.url !== enTrack.file) {
+          const isSrt = enTrack.file.includes('.srt');
+          window.artPlayerInstance.subtitle.switch(enTrack.file, { name: enTrack.label || 'English', type: isSrt ? 'srt' : 'vtt' });
+          window.artPlayerInstance.subtitle.show = true;
+        }
+      } catch (e) {}
+    });
+
+    if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
+      window.artPlayerInstance.subtitle.show = true;
     }
   } catch (err) {
     console.error('Failed to init ArtPlayer in app:', err);
