@@ -680,35 +680,58 @@ const server = http.createServer((req, res) => {
     }
 
     const range = req.headers.range;
-    const fetchHeaders = {
-      'User-Agent': VIDLINK_UA,
-      'Referer': referer,
-      'Origin': referer.replace(/\/$/, '')
-    };
-    if (range) fetchHeaders['Range'] = range;
+    const isBcdnNoXw = targetUrl.includes('bcdn.hakunaymatata.com');
+    const headerAttempts = isBcdnNoXw
+      ? [
+          { 'User-Agent': 'curl/8.21.0' },
+          { 'User-Agent': VIDLINK_UA, 'Referer': referer, 'Origin': referer.replace(/\/$/, '') }
+        ]
+      : [
+          { 'User-Agent': VIDLINK_UA, 'Referer': referer, 'Origin': referer.replace(/\/$/, '') },
+          { 'User-Agent': 'curl/8.21.0' }
+        ];
 
-    fetch(targetUrl, { headers: fetchHeaders })
-      .then(async upstream => {
-        const outHeaders = {
-          'Content-Type': upstream.headers.get('content-type') || 'video/mp4',
-          'Accept-Ranges': 'bytes',
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Headers': '*'
-        };
-        const cl = upstream.headers.get('content-length');
-        if (cl) outHeaders['Content-Length'] = cl;
-        const cr = upstream.headers.get('content-range');
-        if (cr) outHeaders['Content-Range'] = cr;
+    (async () => {
+      let upstream = null;
+      for (const h of headerAttempts) {
+        try {
+          const opt = { ...h };
+          if (range) opt['Range'] = range;
+          const uRes = await fetch(targetUrl, { headers: opt });
+          if (uRes.status === 200 || uRes.status === 206) {
+            upstream = uRes;
+            break;
+          }
+          if (!upstream) upstream = uRes;
+        } catch (e) {}
+      }
 
-        res.writeHead(upstream.status, outHeaders);
-        const reader = upstream.body.getReader();
-        while (true) {
-          const { done, value } = await reader.read();
-          if (done) break;
-          res.write(Buffer.from(value));
-        }
-        res.end();
-      })
+      if (!upstream) {
+        res.writeHead(502, { 'Content-Type': 'text/plain', 'Access-Control-Allow-Origin': '*' });
+        res.end('Upstream error');
+        return;
+      }
+
+      const outHeaders = {
+        'Content-Type': upstream.headers.get('content-type') || 'video/mp4',
+        'Accept-Ranges': 'bytes',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': '*'
+      };
+      const cl = upstream.headers.get('content-length');
+      if (cl) outHeaders['Content-Length'] = cl;
+      const cr = upstream.headers.get('content-range');
+      if (cr) outHeaders['Content-Range'] = cr;
+
+      res.writeHead(upstream.status, outHeaders);
+      const reader = upstream.body.getReader();
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        res.write(Buffer.from(value));
+      }
+      res.end();
+    })().catch(err => {
       .catch(err => {
         console.error('Stream media proxy error:', err.message);
         if (!res.headersSent) {
