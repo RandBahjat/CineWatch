@@ -7439,17 +7439,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           const isSrt = enTrack.file.includes('.srt');
           window.artPlayerInstance.subtitle.switch(enTrack.file, { name: enTrack.label || 'English', type: isSrt ? 'srt' : 'vtt' });
           window.artPlayerInstance.subtitle.show = true;
-        }
       } catch (e) {}
     });
-        const enTrack = tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng'));
-        if (enTrack && enTrack.file && window.artPlayerInstance?.subtitle?.url !== enTrack.file) {
-          const isSrt = enTrack.file.includes('.srt');
-          window.artPlayerInstance.subtitle.switch(enTrack.file, { name: enTrack.label || 'English', type: isSrt ? 'srt' : 'vtt' });
-          window.artPlayerInstance.subtitle.show = true;
-        }
-      } catch (e) {}
-    });
+
 
     if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
       window.artPlayerInstance.subtitle.show = true;
