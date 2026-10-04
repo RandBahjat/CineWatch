@@ -7414,6 +7414,17 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
         window.artPlayerInstance.subtitle.show = true;
       }
+      try {
+        const p = window.artPlayerInstance.play();
+        if (p !== undefined) {
+          p.catch(() => {
+            if (window.artPlayerInstance) {
+              window.artPlayerInstance.muted = true;
+              window.artPlayerInstance.play().catch(() => {});
+            }
+          });
+        }
+      } catch (e) {}
     });
 
     window.artPlayerInstance.on('subtitleLoad', () => {
