@@ -6912,10 +6912,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                 sData.streamUrl = h264Qualities[0].url;
               }
             } else {
-              // ONLY H.265 IS AVAILABLE
+              // ONLY H.265 IS AVAILABLE - Must fallback to iframe because Artplayer cannot play H.265
               window._cwQualities = [];
               sData.streamUrl = '';
-              alert("Error: The streaming provider only has H.265 (HEVC) versions of this movie, which your browser cannot play. Please use Safari or an external player.");
             }
           }
           
@@ -6930,14 +6929,25 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         }
       }
     } catch (e) {
-      alert("Stream Error: " + (e.errors ? e.errors[0]?.message : e.message) + "\nThis may be a rate limit from the streaming provider.");
+      console.warn("Stream Error: " + (e.errors ? e.errors[0]?.message : e.message));
     }
   }
 
-  // Removed fallback iframe logic per user strict rule.
-  // If no cleanUrl is found, ArtPlayer will be initialized with empty url and handle the error natively.
+  const streamUrl = cleanUrl || (isAnime && malId
+    ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
+    : '');
 
-  // If we have a direct clean stream (or anime source), strictly play inside CineWatch Custom ArtPlayer
+  // If no H.264 stream is available (because of H.265 limitation or rate limit), use the iframe
+  if (!streamUrl && iframe) {
+    iframe.src = isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : `https://vidsrc.to/embed/movie/${tmdbId}`;
+    iframe.classList.remove("hidden");
+    if (artContainer) {
+      artContainer.classList.add("hidden");
+    }
+    return; // Do not initialize ArtPlayer
+  }
+
+  // We have a direct stream (or anime source), play strictly inside CineWatch Custom ArtPlayer
   if (iframe) {
     iframe.classList.add("hidden");
     iframe.src = "";
@@ -6945,10 +6955,6 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   if (artContainer) {
     artContainer.classList.remove("hidden");
   }
-
-  const streamUrl = cleanUrl || (isAnime && malId
-    ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
-    : '');
 
 
   if (typeof Artplayer === "undefined") {
