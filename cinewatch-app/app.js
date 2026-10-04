@@ -1635,6 +1635,12 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     if (artContainer) {
       artContainer.classList.add('hidden');
     }
+    const wmLogo = document.getElementById('playerWatermarkLogo');
+    if (wmLogo) {
+      wmLogo.style.display = 'inline-flex';
+      wmLogo.style.zIndex = '50';
+      wmLogo.style.pointerEvents = 'none';
+    }
     if (iframeEl) {
       iframeEl.classList.remove('hidden');
       iframeEl.setAttribute('frameborder', '0');
