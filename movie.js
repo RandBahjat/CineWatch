@@ -6924,10 +6924,6 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     : '');
 
 
-  const streamUrl = cleanUrl || (isAnime && malId
-    ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
-    : '');
-
   if (typeof Artplayer === "undefined") {
     console.warn("Artplayer library not yet available");
     return;
