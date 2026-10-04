@@ -6732,15 +6732,34 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     window.artPlayerInstance = null;
   }
 
-  const ref = movie || parentMovie;
+  let ref = movie || parentMovie;
+
+  let parsedTmdbId = '';
+  let parsedSeason = epData?.season || 1;
+  let parsedEp = epData?.absoluteEpisode || epData?.episode || 1;
+
+  if (typeof videoUrl === 'string' && videoUrl.startsWith('tv_embed:')) {
+    const parts = videoUrl.split(':');
+    if (parts[1]) parsedTmdbId = parts[1];
+    if (parts[2]) parsedSeason = parseInt(parts[2], 10) || parsedSeason;
+    if (parts[3]) parsedEp = parseInt(parts[3], 10) || parsedEp;
+  }
+
+  if (!ref && parsedTmdbId) {
+    ref = MOVIES.find(m => String(m.videoUrl) === String(parsedTmdbId) || String(m.id) === String(parsedTmdbId) || String(m.cinesrcId) === String(parsedTmdbId));
+  }
+  if (!ref && typeof videoUrl === 'string' && !videoUrl.startsWith('tv_embed:') && !videoUrl.startsWith('http')) {
+    ref = MOVIES.find(m => String(m.videoUrl) === String(videoUrl) || String(m.id) === String(videoUrl) || m.title === videoUrl);
+  }
+
   const isAnime = !!(ref?.isAnime || ref?.type === 'Anime');
-  const isTv = !!(ref?.type === 'TV Show' || ref?.seasons?.length > 0 || (epData && epData.season));
-  const rawEp = epData?.absoluteEpisode || epData?.episode || 1;
-  const season = epData?.season || 1;
-  const epNum = epData?.episode || rawEp;
+  const isTv = !!(ref?.type === 'TV Show' || ref?.type === 'Series' || (ref?.seasons && ref?.seasons.length > 0) || (epData && epData.season) || (typeof videoUrl === 'string' && videoUrl.startsWith('tv_embed:')));
+  const rawEp = epData?.absoluteEpisode || epData?.episode || parsedEp || 1;
+  const season = epData?.season || parsedSeason || 1;
+  const epNum = epData?.episode || parsedEp || rawEp;
   const malId = isAnime ? getAnimeMalId(ref, epData?.id) : null;
 
-  let tmdbId = ref?.videoUrl || ref?.tmdbId || ref?.cinesrcId || ref?.id || (malId ? malId : '');
+  let tmdbId = ref?.videoUrl || ref?.tmdbId || ref?.cinesrcId || ref?.id || parsedTmdbId || (malId ? malId : '');
   if (typeof tmdbId === 'string' && tmdbId.startsWith('tv_embed:')) {
     tmdbId = tmdbId.split(':')[1];
   }
