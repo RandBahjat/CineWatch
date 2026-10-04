@@ -28222,7 +28222,7 @@ window._ANIME_DATA = [
         ]
       }
     ]
-  }
+  },
 
 {
     "title": "Black Clover",
