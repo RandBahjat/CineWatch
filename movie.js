@@ -6879,6 +6879,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     const tvQuery = isTv ? `&season=${season}&episode=${epNum}` : '';
     const endpoints = [
       `${curOrigin}/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
+      `https://cinewatch-maaa.onrender.com/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
       `http://${curHost}:3000/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
       `http://localhost:3000/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
       `http://127.0.0.1:3000/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
@@ -6908,7 +6909,33 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     }
   }
 
-  // 3. Always show native ArtPlayer with custom controls and CineWatch watermark; completely suppress 3rd party iframe
+  // 3. Fallback: If no direct stream was extracted, fall back gracefully to clean embed
+  if (!cleanUrl && !isAnime) {
+    const tmdb = tmdbId;
+    let fallbackSrc = '';
+    if (isTv) {
+      fallbackSrc = `https://vidlink.pro/tv/${tmdb}/${season}/${epNum}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=true&nextbutton=true${subParam}`;
+    } else {
+      fallbackSrc = `https://vidlink.pro/movie/${tmdb}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=true${subParam}`;
+    }
+
+    if (artContainer) artContainer.classList.add("hidden");
+    if (iframe) {
+      iframe.classList.remove("hidden");
+      iframe.setAttribute("frameborder", "0");
+      iframe.setAttribute("scrolling", "no");
+      iframe.setAttribute("allowfullscreen", "true");
+      iframe.setAttribute("allow", "autoplay; encrypted-media; picture-in-picture");
+      iframe.src = fallbackSrc;
+      iframe.onload = () => {
+        const pl = document.getElementById("playerLoading");
+        if (pl) pl.classList.add("hidden");
+      };
+    }
+    return;
+  }
+
+  // Always show native ArtPlayer with custom controls and CineWatch watermark when cleanUrl is available
   if (iframe) {
     iframe.classList.add("hidden");
     iframe.src = "";
