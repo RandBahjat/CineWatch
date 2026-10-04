@@ -7406,8 +7406,14 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
               try { hls.destroy(); } catch(e) {}
             });
           } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+            video.setAttribute('playsinline', '');
+            video.setAttribute('webkit-playsinline', '');
             video.src = url;
-            video.play().catch(function() {});
+            video.play().catch(function(e) {
+              console.warn('[ArtPlayer] Native iOS autoplay blocked, retrying muted:', e);
+              video.muted = true;
+              video.play().catch(function() {});
+            });
           } else {
             art.notice.show = 'Unsupported video format: m3u8';
           }
