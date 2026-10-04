@@ -7447,13 +7447,20 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     window.artPlayerInstance.on('error', (err) => {
       try {
         console.warn("ArtPlayer stream notice/error:", err);
-        // Never switch to 3rd party iframe; preserve custom CineWatch ArtPlayer
-        if (iframe) {
-          iframe.classList.add("hidden");
-          iframe.src = "";
-        }
-        if (artContainer) {
-          artContainer.classList.remove("hidden");
+        if (fallbackSrc && iframe && artContainer) {
+          if (window.artPlayerInstance) {
+            try { window.artPlayerInstance.destroy(); } catch (e) {}
+            window.artPlayerInstance = null;
+          }
+          artContainer.classList.add("hidden");
+          iframe.classList.remove("hidden");
+          iframe.setAttribute("frameborder", "0");
+          iframe.setAttribute("scrolling", "no");
+          iframe.setAttribute("allowfullscreen", "true");
+          iframe.setAttribute("allow", "autoplay; fullscreen; encrypted-media; picture-in-picture");
+          iframe.setAttribute("sandbox", "allow-scripts allow-same-origin allow-forms allow-presentation");
+          iframe.src = fallbackSrc;
+          return;
         }
         const tracks = window._cwSubtitleTracks || [];
         const enTrack = tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng'));
