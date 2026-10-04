@@ -3622,6 +3622,7 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   const bttBtn = document.getElementById("backToTopBtn");
   if (bttBtn) bttBtn.style.display = "none";
   return;
+}
 
 async function openVideoPlayer(movieId, startAtSec = 0) {
   const movie = findMovieByIdOrTitle(movieId);
