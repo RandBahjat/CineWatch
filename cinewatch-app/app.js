@@ -1624,41 +1624,16 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     } catch (e) {}
   }
 
-  // Prepare fallback embed URL in case direct stream extraction is not available for this specific title
-  let fallbackSrc = '';
-  if (isAnime && malId) {
-    fallbackSrc = `https://megavid.buzz/mal/${malId}/${epNum}/${curPref}`;
-  } else if (isTv && tmdbId) {
-    fallbackSrc = `https://vidlink.pro/tv/${tmdbId}/${sNum}/${epNum}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=true${subParam}`;
-  } else if (tmdbId) {
-    fallbackSrc = `https://vidlink.pro/movie/${tmdbId}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=true${subParam}`;
+  // CineWatch Strict Rule: NEVER switch to external 3rd-party servers or iframe embeds.
+  // All movies, series, episodes, and seasons MUST strictly play inside CineWatch Custom ArtPlayer.
+  if (iframeEl) {
+    iframeEl.classList.add('hidden');
+    iframeEl.src = '';
+  }
+  if (artContainer) {
+    artContainer.classList.remove('hidden');
   }
 
-  // 1. Direct stream available: always use native ArtPlayer with custom controls and CineWatch watermark
-  if (cleanUrl) {
-    if (iframeEl) {
-      iframeEl.classList.add('hidden');
-      iframeEl.src = '';
-    }
-    if (artContainer) {
-      artContainer.classList.remove('hidden');
-    }
-  } else {
-    // 2. Direct stream not available: fall back seamlessly so the episode plays instead of infinite loading
-    if (fallbackSrc) {
-      if (artContainer) artContainer.classList.add('hidden');
-      if (iframeEl) {
-        iframeEl.classList.remove('hidden');
-        iframeEl.setAttribute('frameborder', '0');
-        iframeEl.setAttribute('scrolling', 'no');
-        iframeEl.setAttribute('allowfullscreen', 'true');
-        iframeEl.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture');
-        iframeEl.src = fallbackSrc;
-      }
-      playerModal?.classList.remove('hidden');
-      return;
-    }
-  }
 
   const streamUrl = cleanUrl;
 
