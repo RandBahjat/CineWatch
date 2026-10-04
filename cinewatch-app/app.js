@@ -1624,13 +1624,40 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     } catch (e) {}
   }
 
-  // Always show native ArtPlayer with custom controls and CineWatch watermark — never fall back to third-party server embeds
-  if (iframeEl) {
-    iframeEl.classList.add('hidden');
-    iframeEl.src = '';
+  // Prepare fallback embed URL in case direct stream extraction is not available for this specific title
+  let fallbackSrc = '';
+  if (isAnime && malId) {
+    fallbackSrc = `https://megavid.buzz/mal/${malId}/${epNum}/${curPref}`;
+  } else if (isTv && tmdbId) {
+    fallbackSrc = `https://vidlink.pro/tv/${tmdbId}/${sNum}/${epNum}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=true${subParam}`;
+  } else if (tmdbId) {
+    fallbackSrc = `https://vidlink.pro/movie/${tmdbId}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=true${subParam}`;
   }
-  if (artContainer) {
-    artContainer.classList.remove('hidden');
+
+  // 1. Direct stream available: always use native ArtPlayer with custom controls and CineWatch watermark
+  if (cleanUrl) {
+    if (iframeEl) {
+      iframeEl.classList.add('hidden');
+      iframeEl.src = '';
+    }
+    if (artContainer) {
+      artContainer.classList.remove('hidden');
+    }
+  } else {
+    // 2. Direct stream not available: fall back seamlessly so the episode plays instead of infinite loading
+    if (fallbackSrc) {
+      if (artContainer) artContainer.classList.add('hidden');
+      if (iframeEl) {
+        iframeEl.classList.remove('hidden');
+        iframeEl.setAttribute('frameborder', '0');
+        iframeEl.setAttribute('scrolling', 'no');
+        iframeEl.setAttribute('allowfullscreen', 'true');
+        iframeEl.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture');
+        iframeEl.src = fallbackSrc;
+      }
+      playerModal?.classList.remove('hidden');
+      return;
+    }
   }
 
   const streamUrl = cleanUrl;
@@ -1973,8 +2000,23 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
       }
     });
 
-    window.artPlayerInstance.on('error', () => {
+    window.artPlayerInstance.on('error', (err) => {
       try {
+        if (fallbackSrc && iframeEl && artContainer) {
+          console.warn('Direct stream error, switching to backup server:', err);
+          if (window.artPlayerInstance) {
+            try { window.artPlayerInstance.destroy(); } catch (e) {}
+            window.artPlayerInstance = null;
+          }
+          artContainer.classList.add('hidden');
+          iframeEl.classList.remove('hidden');
+          iframeEl.setAttribute('frameborder', '0');
+          iframeEl.setAttribute('scrolling', 'no');
+          iframeEl.setAttribute('allowfullscreen', 'true');
+          iframeEl.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture');
+          iframeEl.src = fallbackSrc;
+          return;
+        }
         const tracks = window._cwSubtitleTracks || [];
         const enTrack = tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng'));
         if (enTrack && enTrack.file && window.artPlayerInstance?.subtitle?.url !== enTrack.file) {
