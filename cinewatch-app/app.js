@@ -1977,20 +1977,14 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
 
     window.artPlayerInstance.on('error', (err) => {
       try {
-        if (fallbackSrc && iframeEl && artContainer) {
-          console.warn('Direct stream error, switching to backup server:', err);
-          if (window.artPlayerInstance) {
-            try { window.artPlayerInstance.destroy(); } catch (e) {}
-            window.artPlayerInstance = null;
-          }
-          artContainer.classList.add('hidden');
-          iframeEl.classList.remove('hidden');
-          iframeEl.setAttribute('frameborder', '0');
-          iframeEl.setAttribute('scrolling', 'no');
-          iframeEl.setAttribute('allowfullscreen', 'true');
-          iframeEl.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture');
-          iframeEl.src = fallbackSrc;
-          return;
+        console.warn('ArtPlayer stream notice/error:', err);
+        // Never switch to 3rd party iframe; preserve custom CineWatch ArtPlayer
+        if (iframeEl) {
+          iframeEl.classList.add('hidden');
+          iframeEl.src = '';
+        }
+        if (artContainer) {
+          artContainer.classList.remove('hidden');
         }
         const tracks = window._cwSubtitleTracks || [];
         const enTrack = tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng'));
