@@ -7083,13 +7083,14 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   let subtitleUrl = '';
   let animeChapters = null;
 
-  // 1. Fetch direct anime stream (.m3u8) & subtitle tracks (.vtt)
+  const curOrigin = (typeof window !== 'undefined' && window.location.origin && !window.location.origin.includes('null') && !window.location.origin.startsWith('file')) ? window.location.origin : 'http://localhost:3000';
   const endpoints = [
+    `${curOrigin}/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
     `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
     `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-    `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
     `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-    `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`
+    `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+    `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`
   ];
 
   for (const epUrl of endpoints) {
