@@ -6932,7 +6932,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       iframe.setAttribute("scrolling", "no");
       iframe.setAttribute("allowfullscreen", "true");
       iframe.setAttribute("allow", "autoplay; fullscreen; encrypted-media; picture-in-picture");
-      iframe.setAttribute("sandbox", "allow-scripts allow-same-origin allow-forms allow-presentation");
+      iframe.removeAttribute("sandbox");
       iframe.src = fallbackSrc;
     }
     return;
