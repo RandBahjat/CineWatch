@@ -6932,7 +6932,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         width: 200,
         html: 'Subtitle',
         tooltip: 'Subtitles',
-        icon: '<ion-icon name="subtitles-outline" style="font-size:1.2rem;"></ion-icon>',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:20px;height:20px;fill:currentColor;"><path d="M416 96H96a64 64 0 00-64 64v192a64 64 0 0064 64h320a64 64 0 0064-64V160a64 64 0 00-64-64zm-192 96h64v32h-64zm-96 0h64v32h-64zm288 128H96v-32h320zm0-64h-96v-32h96z"/></svg>',
         selector: (() => {
           const items = [
             {
@@ -6977,7 +6977,11 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           if (!item.url) {
             window.artPlayerInstance.subtitle.show = false;
           } else {
-            window.artPlayerInstance.subtitle.switch(item.url, { name: item.html });
+            const isSrt = item.url.includes('.srt');
+            window.artPlayerInstance.subtitle.switch(item.url, {
+              name: item.html,
+              type: isSrt ? 'srt' : 'vtt'
+            });
             window.artPlayerInstance.subtitle.show = true;
           }
           return item.html;
