@@ -3588,21 +3588,16 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     // nextEpBtn onclick is usually bound elsewhere (e.g., renderPlayerDetailsPanel)
   }
 
-  const isAnime = !!(
-    parentMovie?.isAnime || 
-    parentMovie?.type === 'Anime' ||
-    epData?.isAnime ||
-    (typeof videoUrl === 'string' && (videoUrl.includes(':ani_') || videoUrl.startsWith('tv_embed:34572') || videoUrl.startsWith('tv_embed:38000') || videoUrl.startsWith('tv_embed:21'))) ||
-    (typeof parentId === 'string' && (parentId.includes('mal_') || parentId.includes('anime_') || parentId.includes('black-clover') || parentId.includes('naruto') || parentId.includes('dragon-ball') || parentId.includes('one-piece')))
-  );
-  if (isAnime) {
+  const videoUrlStr = String(videoUrl || "");
+  const ytVideoId = extractYouTubeId(videoUrlStr);
+  if (ytVideoId) {
     if (video) { video.classList.add("hidden"); video.pause(); video.src = ""; }
-    if (iframe) { iframe.classList.add("hidden"); iframe.src = ""; }
+    if (iframe) {
+      iframe.classList.remove("hidden");
+      iframe.src = `https://www.youtube.com/embed/${ytVideoId}?autoplay=1&rel=0&modestbranding=1`;
+    }
     if (controlsBar) controlsBar.classList.add("hidden");
     if (centerOverlay) centerOverlay.style.display = "none";
-  const wmLogo = document.getElementById("playerWatermarkLogo");
-  if (wmLogo) wmLogo.style.display = "none";
-    initArtPlayerForAnime(videoUrl, parentMovie, parentMovie, epData);
     if (modal) modal.classList.remove("hidden");
     const playerModal = document.getElementById("playerModal");
     if (playerModal) playerModal.classList.remove("hidden");
@@ -3612,18 +3607,21 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     return;
   }
 
-  const videoUrlStr = String(videoUrl || "");
-  const ytVideoId = extractYouTubeId(videoUrlStr);
-  if (ytVideoId) {
-    if (video) {
-      video.classList.add("hidden");
-      video.pause();
-      video.src = "";
-    }
-    if (iframe) {
-      iframe.classList.remove("hidden");
-      iframe.src = `https://www.youtube.com/embed/${ytVideoId}?autoplay=1&rel=0&modestbranding=1`;
-    }
+  // Unified Custom Player for all media (Anime, Movies, TV Series)
+  if (video) { video.classList.add("hidden"); video.pause(); video.src = ""; }
+  if (iframe) { iframe.classList.add("hidden"); iframe.src = ""; }
+  if (controlsBar) controlsBar.classList.add("hidden");
+  if (centerOverlay) centerOverlay.style.display = "none";
+  const wmLogo = document.getElementById("playerWatermarkLogo");
+  if (wmLogo) wmLogo.style.display = "none";
+  initArtPlayerForAnime(videoUrl, parentMovie, parentMovie, epData);
+  if (modal) modal.classList.remove("hidden");
+  const playerModal = document.getElementById("playerModal");
+  if (playerModal) playerModal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+  const bttBtn = document.getElementById("backToTopBtn");
+  if (bttBtn) bttBtn.style.display = "none";
+  return;
     document.querySelector(".video-container")?.classList.add("is-iframe");
     if (controlsBar) controlsBar.classList.add("hidden");
     if (centerOverlay) centerOverlay.style.display = "none";
