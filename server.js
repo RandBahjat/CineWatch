@@ -773,36 +773,60 @@ const server = http.createServer((req, res) => {
         const data = await resolveVidlinkStream(tmdbId, isTv ? (season || 1) : null, isTv ? (episode || 1) : null);
         const qualitiesObj = data?.stream?.qualities;
 
-        if (!qualitiesObj || Object.keys(qualitiesObj).length === 0) {
-          if (data?.stream?.playlist) {
-            res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
-            res.end(JSON.stringify({
-              success: true,
-              streamUrl: data.stream.playlist,
-              qualities: [{ quality: 'Auto', url: data.stream.playlist }],
-              tracks: []
-            }));
-            return;
+        let primaryStreamUrl = '';
+        let qualities = [];
+
+        // Prefer the M3U8 playlist directly for HLS, which handles resolution switching and H.264 cleanly.
+        if (data?.stream?.playlist) {
+          primaryStreamUrl = data.stream.playlist;
+          qualities = [{ quality: 'Auto', url: data.stream.playlist }];
+          
+          if (qualitiesObj && Object.keys(qualitiesObj).length > 0) {
+            // Include MP4 proxies as alternative qualities, but filter out H.265 so browsers don't choke
+            const sortedKeys = Object.keys(qualitiesObj)
+              .filter(k => {
+                const u = (qualitiesObj[k].url || '').toLowerCase();
+                return !u.includes('h265') && !u.includes('hevc');
+              })
+              .sort((a, b) => parseInt(b, 10) - parseInt(a, 10));
+            
+            const extraQualities = sortedKeys.map(k => {
+              const qData = qualitiesObj[k];
+              const referer = qData.headers?.referer || 'https://filmboom.top/';
+              return {
+                quality: k + 'p',
+                url: `${baseUrl}/api/stream-media?url=${encodeURIComponent(qData.url)}&referer=${encodeURIComponent(referer)}`,
+                rawUrl: qData.url
+              };
+            });
+            qualities = [...qualities, ...extraQualities];
           }
+        } else if (qualitiesObj && Object.keys(qualitiesObj).length > 0) {
+          const sortedKeys = Object.keys(qualitiesObj)
+            .filter(k => {
+              const u = (qualitiesObj[k].url || '').toLowerCase();
+              return !u.includes('h265') && !u.includes('hevc');
+            })
+            .sort((a, b) => parseInt(b, 10) - parseInt(a, 10));
+            
+          // If everything was H.265 (rare), fallback to unfiltered
+          const safeKeys = sortedKeys.length > 0 ? sortedKeys : Object.keys(qualitiesObj).sort((a, b) => parseInt(b, 10) - parseInt(a, 10));
+          
+          qualities = safeKeys.map(k => {
+            const qData = qualitiesObj[k];
+            const referer = qData.headers?.referer || 'https://filmboom.top/';
+            return {
+              quality: k + 'p',
+              url: `${baseUrl}/api/stream-media?url=${encodeURIComponent(qData.url)}&referer=${encodeURIComponent(referer)}`,
+              rawUrl: qData.url
+            };
+          });
+          primaryStreamUrl = qualities[0].url;
+        } else {
           res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
           res.end(JSON.stringify({ success: false, error: 'No stream available' }));
           return;
         }
-
-        // Sort descending by resolution (1080 -> 720 -> 480 -> 360)
-        const sortedKeys = Object.keys(qualitiesObj).sort((a, b) => parseInt(b, 10) - parseInt(a, 10));
-        const qualities = sortedKeys.map(k => {
-          const qData = qualitiesObj[k];
-          const referer = qData.headers?.referer || 'https://filmboom.top/';
-          const proxiedUrl = `${baseUrl}/api/stream-media?url=${encodeURIComponent(qData.url)}&referer=${encodeURIComponent(referer)}`;
-          return {
-            quality: k + 'p',
-            url: proxiedUrl,
-            rawUrl: qData.url
-          };
-        });
-
-        const primaryStreamUrl = qualities[0].url;
 
         // Subtitle tracks: Kurdish from SubDL engine / translation fallback + English and other tracks from stream
         let tracks = [];
