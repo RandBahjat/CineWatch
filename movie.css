@@ -3680,6 +3680,97 @@ body.rtl-layout .details-back-btn svg {
   width: 0 !important;
 }
 
+/* ══════════════════════════════════════════════════════════
+   VIDEO PLAYER BRAND WATERMARK LOGO
+   ══════════════════════════════════════════════════════════ */
+.player-watermark-logo,
+.art-brand-watermark {
+  position: absolute;
+  top: 1.8rem;
+  right: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  z-index: 46;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  opacity: 0.85;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.85));
+}
+
+.player-watermark-icon,
+.art-brand-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #ff3b44 0%, #e50914 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(229, 9, 20, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.player-watermark-icon svg,
+.art-brand-icon svg {
+  width: 17px;
+  height: 17px;
+  fill: #ffffff;
+  display: block;
+}
+
+.player-watermark-icon ion-icon,
+.art-brand-icon ion-icon {
+  font-size: 18px;
+  display: block;
+  color: #ffffff;
+}
+
+.player-watermark-text,
+.art-brand-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+  line-height: 1;
+}
+
+.player-watermark-text span,
+.art-brand-text span {
+  color: #ff3b44;
+  text-shadow: 0 0 14px rgba(255, 59, 68, 0.7), 0 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+/* Subtle opacity when video is playing / player is idle */
+.video-container.idle .player-watermark-logo {
+  opacity: 0.65;
+}
+
+/* When ArtPlayer is active, hide the outer watermark so only the ArtPlayer layer shows */
+.video-container:has(#artplayerApp:not(.hidden)) #playerWatermarkLogo,
+.video-container.has-artplayer #playerWatermarkLogo {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .player-watermark-logo,
+  .art-brand-watermark {
+    top: 14px;
+    right: 14px;
+    gap: 0.45rem;
+    transform: scale(0.82);
+    transform-origin: top right;
+    opacity: 0.78;
+  }
+}
+
+
 /* ===================================================
    DETAILS VIEW: SERVER SELECTOR (ALL SCREENS)
    =================================================== */
