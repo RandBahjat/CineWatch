@@ -1589,25 +1589,33 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     const tvQuery = isTv ? `&season=${sNum}&episode=${epNum}` : '';
     const endpoints = [
       `${curOrigin}/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
-      `https://cinewatch-maaa.onrender.com/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
       `http://${curHost}:3000/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
       `http://localhost:3000/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
       `http://127.0.0.1:3000/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
-      `/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`
+      `/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
+      `https://cinewatch-maaa.onrender.com/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`
     ];
 
     const uniqueEndpoints = [...new Set(endpoints)];
     try {
-      const sData = await Promise.any(
-        uniqueEndpoints.map(epUrl =>
-          fetch(epUrl, { signal: AbortSignal.timeout(12000) }).then(async res => {
-            if (!res.ok) throw new Error('HTTP ' + res.status);
-            const data = await res.json();
-            if (data && data.success && data.streamUrl) return data;
-            throw new Error('Invalid stream data');
-          })
-        )
-      );
+      let sData = null;
+      for (const epUrl of uniqueEndpoints) {
+        try {
+          const res = await fetch(epUrl, { signal: AbortSignal.timeout(6000) });
+          if (!res.ok) continue;
+          const data = await res.json();
+          if (data && data.success && data.streamUrl) {
+            sData = data;
+            break;
+          }
+        } catch (e) {
+          continue;
+        }
+      }
+      
+      if (!sData) {
+        throw new Error('All stream endpoints failed or returned invalid data.');
+      }
       if (sData && sData.streamUrl) {
         if (sData.qualities && sData.qualities.length > 0) {
           const h264Qualities = sData.qualities.filter(q => {
