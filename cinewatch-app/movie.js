@@ -7098,10 +7098,14 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   let animeChapters = null;
 
   const curOrigin = (typeof window !== 'undefined' && window.location.origin && !window.location.origin.includes('null') && !window.location.origin.startsWith('file')) ? window.location.origin : 'http://localhost:3000';
+  const curHost = (typeof window !== 'undefined' && window.location.hostname && !window.location.hostname.includes('null')) ? window.location.hostname : 'localhost';
   const endpoints = [
     `${curOrigin}/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+    `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+    `http://${curHost}:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
     `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
     `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+    `http://${curHost}:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
     `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
     `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
     `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`
@@ -7109,7 +7113,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
   for (const epUrl of endpoints) {
     try {
-      const res = await fetch(epUrl, { signal: AbortSignal.timeout(3500) });
+      const res = await fetch(epUrl, { signal: AbortSignal.timeout(6000) });
       if (!res.ok) continue;
       const srcData = await res.json();
       if (srcData && srcData.source) {
