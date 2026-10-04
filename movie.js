@@ -3672,6 +3672,11 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
   openVideoPlayerWithUrl(movie.videoUrl || movie.id, movie.title, mediaId, null);
 }
 
+window.openDetailsModal = openDetailsModal;
+window.openVideoPlayer = openVideoPlayer;
+window.openVideoPlayerWithUrl = openVideoPlayerWithUrl;
+window.findMovieByIdOrTitle = findMovieByIdOrTitle;
+
 /**
  * Loads a subtitle file into the video element.
  * Supports:
