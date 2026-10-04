@@ -6876,12 +6876,13 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
   // 2b. If Movies or TV Series: fetch direct stream from custom server endpoints
   if (!isAnime && !cleanUrl && tmdbId) {
+    const tvQuery = isTv ? `&season=${season}&episode=${epNum}` : '';
     const endpoints = [
-      `${curOrigin}/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}&season=${season}&episode=${epNum}&title=${encodeURIComponent(cleanName)}`,
-      `http://${curHost}:3000/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}&season=${season}&episode=${epNum}&title=${encodeURIComponent(cleanName)}`,
-      `http://localhost:3000/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}&season=${season}&episode=${epNum}&title=${encodeURIComponent(cleanName)}`,
-      `http://127.0.0.1:3000/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}&season=${season}&episode=${epNum}&title=${encodeURIComponent(cleanName)}`,
-      `/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}&season=${season}&episode=${epNum}&title=${encodeURIComponent(cleanName)}`
+      `${curOrigin}/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
+      `http://${curHost}:3000/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
+      `http://localhost:3000/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
+      `http://127.0.0.1:3000/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
+      `/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`
     ];
 
     for (const epUrl of endpoints) {
