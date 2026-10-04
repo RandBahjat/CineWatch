@@ -7457,8 +7457,9 @@ function navigateToEpisode(offset) {
     }
 
     if (epUrl) {
+      const mediaId = movie.id || movie.videoUrl || movie.title;
       const epTitle = `${movie.title} - S${nextSeason.season}E${nextEp.episode}: ${nextEp.title}`;
-      openVideoPlayerWithUrl(epUrl, epTitle, movie.id, { season: nextSeason.season, episode: nextEp.episode });
+      openVideoPlayerWithUrl(epUrl, epTitle, mediaId, { season: nextSeason.season, episode: nextEp.episode });
     }
   } else {
     showToast(offset > 0 ? "You've reached the end of the series!" : "You are at the very first episode.");
