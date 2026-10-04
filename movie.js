@@ -6837,7 +6837,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     }
   }
 
-  // 2. If Anime: fetch direct stream from anime endpoints
+  // 2. If Anime: fetch direct stream from anime endpoints in parallel
   if (isAnime && !cleanUrl && malId) {
     const endpoints = [
       `${curOrigin}/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
@@ -6851,30 +6851,35 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`
     ];
 
-    for (const epUrl of endpoints) {
-      try {
-        const res = await fetch(epUrl, { signal: AbortSignal.timeout(6000) });
-        if (!res.ok) continue;
-        const srcData = await res.json();
-        if (srcData && srcData.source) {
-          cleanUrl = srcData.source;
-          animeChapters = srcData.chapters || [];
-          if (srcData.tracks && srcData.tracks.length > 0) {
-            window._cwSubtitleTracks = srcData.tracks;
-            const enTrack = srcData.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || srcData.tracks[0];
-            if (enTrack && enTrack.file) {
-              subtitleUrl = enTrack.file;
-            }
-          } else {
-            window._cwSubtitleTracks = [];
+    const uniqueAnimeEndpoints = [...new Set(endpoints)];
+    try {
+      const srcData = await Promise.any(
+        uniqueAnimeEndpoints.map(epUrl =>
+          fetch(epUrl, { signal: AbortSignal.timeout(8000) }).then(async res => {
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            const data = await res.json();
+            if (data && data.source) return data;
+            throw new Error('Invalid anime data');
+          })
+        )
+      );
+      if (srcData && srcData.source) {
+        cleanUrl = srcData.source;
+        animeChapters = srcData.chapters || [];
+        if (srcData.tracks && srcData.tracks.length > 0) {
+          window._cwSubtitleTracks = srcData.tracks;
+          const enTrack = srcData.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || srcData.tracks[0];
+          if (enTrack && enTrack.file) {
+            subtitleUrl = enTrack.file;
           }
-          break;
+        } else {
+          window._cwSubtitleTracks = [];
         }
-      } catch (e) {}
-    }
+      }
+    } catch (e) {}
   }
 
-  // 2b. If Movies or TV Series: fetch direct stream from custom server endpoints
+  // 2b. If Movies or TV Series: fetch direct stream from custom server endpoints in parallel
   if (!isAnime && !cleanUrl && tmdbId) {
     const tvQuery = isTv ? `&season=${season}&episode=${epNum}` : '';
     const endpoints = [
@@ -6886,56 +6891,35 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       `/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`
     ];
 
-    for (const epUrl of endpoints) {
-      try {
-        const res = await fetch(epUrl, { signal: AbortSignal.timeout(8000) });
-        if (!res.ok) continue;
-        const sData = await res.json();
-        if (sData && sData.success && sData.streamUrl) {
-          cleanUrl = sData.streamUrl;
-          if (sData.qualities && sData.qualities.length > 0) {
-            window._cwQualities = sData.qualities;
-          }
-          if (sData.tracks && sData.tracks.length > 0) {
-            window._cwSubtitleTracks = sData.tracks;
-            const kuTrack = sData.tracks.find(t => t.srclang === 'ku') || sData.tracks[0];
-            if (kuTrack && kuTrack.file) {
-              subtitleUrl = kuTrack.file;
-            }
-          }
-          break;
+    const uniqueEndpoints = [...new Set(endpoints)];
+    try {
+      const sData = await Promise.any(
+        uniqueEndpoints.map(epUrl =>
+          fetch(epUrl, { signal: AbortSignal.timeout(12000) }).then(async res => {
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            const data = await res.json();
+            if (data && data.success && data.streamUrl) return data;
+            throw new Error('Invalid stream data');
+          })
+        )
+      );
+      if (sData && sData.streamUrl) {
+        cleanUrl = sData.streamUrl;
+        if (sData.qualities && sData.qualities.length > 0) {
+          window._cwQualities = sData.qualities;
         }
-      } catch (e) {}
-    }
+        if (sData.tracks && sData.tracks.length > 0) {
+          window._cwSubtitleTracks = sData.tracks;
+          const kuTrack = sData.tracks.find(t => t.srclang === 'ku') || sData.tracks[0];
+          if (kuTrack && kuTrack.file) {
+            subtitleUrl = kuTrack.file;
+          }
+        }
+      }
+    } catch (e) {}
   }
 
-  // 3. Fallback: If no direct stream was extracted, fall back gracefully to clean embed
-  if (!cleanUrl && !isAnime) {
-    const tmdb = tmdbId;
-    let fallbackSrc = '';
-    if (isTv) {
-      fallbackSrc = `https://vidlink.pro/tv/${tmdb}/${season}/${epNum}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=true&nextbutton=true${subParam}`;
-    } else {
-      fallbackSrc = `https://vidlink.pro/movie/${tmdb}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=true${subParam}`;
-    }
-
-    if (artContainer) artContainer.classList.add("hidden");
-    if (iframe) {
-      iframe.classList.remove("hidden");
-      iframe.setAttribute("frameborder", "0");
-      iframe.setAttribute("scrolling", "no");
-      iframe.setAttribute("allowfullscreen", "true");
-      iframe.setAttribute("allow", "autoplay; encrypted-media; picture-in-picture");
-      iframe.src = fallbackSrc;
-      iframe.onload = () => {
-        const pl = document.getElementById("playerLoading");
-        if (pl) pl.classList.add("hidden");
-      };
-    }
-    return;
-  }
-
-  // Always show native ArtPlayer with custom controls and CineWatch watermark when cleanUrl is available
+  // Always show native ArtPlayer with custom controls and CineWatch watermark — never fall back to third-party server embeds
   if (iframe) {
     iframe.classList.add("hidden");
     iframe.src = "";
