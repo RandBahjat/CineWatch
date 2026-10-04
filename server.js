@@ -135,48 +135,91 @@ function bootVidlinkWasm() {
 }
 
 const streamCache = new Map();
+const inflightStreams = new Map();
 
 async function resolveVidlinkStream(id, season, episode) {
   const cacheKey = `${id}_${season || ''}_${episode || ''}`;
   if (streamCache.has(cacheKey)) {
     const cached = streamCache.get(cacheKey);
-    if (Date.now() - cached.timestamp < 30 * 60 * 1000) {
+    if (Date.now() - cached.timestamp < 60 * 60 * 1000) {
       return cached.data;
     }
   }
 
-  await bootVidlinkWasm();
-  const token = globalThis.getAdv(String(id));
-  if (!token) throw new Error('Failed to generate stream token');
+  // Deduplicate concurrent requests for the exact same stream
+  if (inflightStreams.has(cacheKey)) {
+    return inflightStreams.get(cacheKey);
+  }
 
-  const apiUrl = season
-    ? `https://vidlink.pro/api/b/tv/${token}/${season}/${episode || 1}?multiLang=0`
-    : `https://vidlink.pro/api/b/movie/${token}?multiLang=0`;
+  const fetchPromise = (async () => {
+    await bootVidlinkWasm();
+    const token = globalThis.getAdv(String(id));
+    if (!token) throw new Error('Failed to generate stream token');
 
-  let res = null;
-  for (let attempt = 0; attempt < 2; attempt++) {
-    try {
-      res = await fetch(apiUrl, {
-        headers: { Referer: VIDLINK_REFERER, Origin: VIDLINK_ORIGIN, 'User-Agent': VIDLINK_UA },
-        signal: AbortSignal.timeout(6000)
-      });
-      if (res && res.status === 429) {
-        await new Promise(r => setTimeout(r, 800));
-        continue;
+    const apiUrl = season
+      ? `https://vidlink.pro/api/b/tv/${token}/${season}/${episode || 1}?multiLang=0`
+      : `https://vidlink.pro/api/b/movie/${token}?multiLang=0`;
+
+    let data = null;
+    let lastErr = null;
+
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        if (attempt > 0) {
+          await new Promise(r => setTimeout(r, 600 * attempt));
+        }
+        const res = await fetch(apiUrl, {
+          headers: { Referer: VIDLINK_REFERER, Origin: VIDLINK_ORIGIN, 'User-Agent': VIDLINK_UA },
+          signal: AbortSignal.timeout(8000)
+        });
+
+        if (res.status === 429) {
+          lastErr = new Error('HTTP 429 rate limit');
+          continue;
+        }
+
+        if (!res.ok) {
+          lastErr = new Error(`VidLink API responded with HTTP ${res.status}`);
+          continue;
+        }
+
+        const text = await res.text();
+        if (!text || text.trim().startsWith('<')) {
+          // Cloudflare challenge or HTML block
+          lastErr = new Error('Non-JSON response from upstream');
+          continue;
+        }
+
+        try {
+          data = JSON.parse(text);
+          break;
+        } catch (jsonErr) {
+          lastErr = jsonErr;
+          continue;
+        }
+      } catch (e) {
+        lastErr = e;
       }
-      break;
-    } catch (e) {
-      if (attempt === 1) throw e;
     }
-  }
 
-  if (!res || !res.ok) throw new Error(`VidLink API responded with HTTP ${res ? res.status : 'timeout'}`);
-  const data = await res.json();
-  if (data) {
-    streamCache.set(cacheKey, { timestamp: Date.now(), data });
+    if (!data && lastErr) {
+      throw lastErr;
+    }
+
+    if (data) {
+      streamCache.set(cacheKey, { timestamp: Date.now(), data });
+    }
+    return data;
+  })();
+
+  inflightStreams.set(cacheKey, fetchPromise);
+  try {
+    return await fetchPromise;
+  } finally {
+    inflightStreams.delete(cacheKey);
   }
-  return data;
 }
+
 
 const server = http.createServer((req, res) => {
   // Enable CORS
