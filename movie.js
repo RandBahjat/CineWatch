@@ -6893,10 +6893,30 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       if (res && res.ok) {
         const sData = await res.json();
         if (sData && sData.success && sData.streamUrl) {
-          cleanUrl = sData.streamUrl;
+          
+          // CRITICAL: Filter out H.265/HEVC codecs on the client side because standard browsers
+          // (Chrome, Firefox, Edge) do not natively support them and will fail to play the video.
+          // This ensures playback works even if hitting a legacy backend endpoint.
           if (sData.qualities && sData.qualities.length > 0) {
-            window._cwQualities = sData.qualities;
+            const h264Qualities = sData.qualities.filter(q => {
+               const u = (q.url || '').toLowerCase();
+               const r = (q.rawUrl || '').toLowerCase();
+               return !u.includes('h265') && !u.includes('hevc') && !r.includes('h265') && !r.includes('hevc');
+            });
+            
+            if (h264Qualities.length > 0) {
+              window._cwQualities = h264Qualities;
+              // If the main streamUrl is H.265, force it to the highest available H.264 quality
+              const mainIsH265 = sData.streamUrl.toLowerCase().includes('h265') || sData.streamUrl.toLowerCase().includes('hevc');
+              if (mainIsH265) {
+                sData.streamUrl = h264Qualities[0].url;
+              }
+            } else {
+              window._cwQualities = sData.qualities; // Fallback to unfiltered if nothing else is available
+            }
           }
+          
+          cleanUrl = sData.streamUrl;
           if (sData.tracks && sData.tracks.length > 0) {
             window._cwSubtitleTracks = sData.tracks;
             const kuTrack = sData.tracks.find(t => t.srclang === 'ku') || sData.tracks[0];
