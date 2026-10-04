@@ -7613,7 +7613,7 @@ window._ANIME_DATA = [
     "anilistId": 97940,
     "trailerUrl": "https://youtu.be/QwNWY6z93O4?si=dFKD7nRKy0UAHM5s",
     "animeSlug": "black-clover",
-    "overview": "Asta and Yuno are two orphans who want the same thing: to become the Wizard King. Locked in a friendly rivalry, they work hard towards their goal. While Yuno excels at magic, Asta has a problem uncommon in this world: he has no powers! But, on the day they receive their grimoires, they surprise everyone. To reach their goal, they’ll each find their own path to greatness—with or without magic.",
+    "overview": "In a fantasy kingdom where everyone is born with magical aptitude, Asta is a rare exception born with none at all. Alongside his naturally gifted foster-brother and rival Yuno, Asta trains relentlessly to pursue the ultimate title of Wizard King. When Yuno receives a rare four-leaf clover grimoire, Asta unexpectedly awakens a legendary five-leaf grimoire containing the mysterious power of Anti-Magic, kicking off his journey within the misfit Magic Knight squad, the Black Bulls.",
     "overviewKurdish": "",
     "director": "Tatsuya Yoshihara",
     "cast": [
