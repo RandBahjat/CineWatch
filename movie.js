@@ -261,6 +261,7 @@ async function loadMediaFromAPI() {
     const localAnime = window._ANIME_DATA || [];
 
     MOVIES = [...localMovies, ...localSeries, ...localAnime];
+    window.MOVIES = MOVIES;
 
     if (MOVIES.length === 0) {
       console.warn('CineWatch: No media data found in local files.');
