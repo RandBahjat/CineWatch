@@ -13316,6 +13316,17 @@ body.cw-ads-hidden script[src*="highrevenueformat"] {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
 }
 
+/* ── Disable Top-Left Pause/Resume/State Notice ── */
+.artplayer-app .art-notice,
+.art-video-player .art-notice,
+.art-notice,
+.art-notice-inner {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
 /* ── Bottom Control Bar ── */
 .artplayer-app .art-bottom,
 .art-video-player .art-bottom {
