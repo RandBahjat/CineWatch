@@ -6815,7 +6815,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
   // 1. Direct stream check from videoUrl or movie data
   const rawVideoStr = String(videoUrl || ref?.videoUrl || '');
-  if (rawVideoStr.startsWith('http') && (rawVideoStr.includes('.mp4') || rawVideoStr.includes('.m3u8') || rawVideoStr.includes('.webm'))) {
+  if (rawVideoStr.startsWith('http') && (rawVideoStr.includes('.mp4') || rawVideoStr.includes('m3u8') || rawVideoStr.includes('.webm'))) {
     cleanUrl = rawVideoStr;
   }
 
@@ -7036,8 +7036,13 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                 if (!r.ok) continue;
                 const d = await r.json();
                 if (d && d.source && window.artPlayerInstance) {
-                  window.artPlayerInstance.type = 'm3u8';
-                  window.artPlayerInstance.switchUrl(d.source);
+                  const isM3u8Src = isAnime || d.source.includes('m3u8');
+                  window.artPlayerInstance.type = isM3u8Src ? 'm3u8' : 'auto';
+                  try {
+                    window.artPlayerInstance.switchUrl(d.source, isM3u8Src ? 'm3u8' : 'auto');
+                  } catch (e) {
+                    window.artPlayerInstance.switchUrl(d.source);
+                  }
                   if (d.tracks && d.tracks.length > 0 && window.artPlayerInstance.subtitle) {
                     window._cwSubtitleTracks = d.tracks;
                     const items = [
@@ -7137,10 +7142,13 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           : `<div class="art-center-title" style="position:absolute;left:50%;transform:translateX(-50%);pointer-events:none;text-align:center;white-space:nowrap;font-size:0.85rem;text-shadow:0 1px 4px rgba(0,0,0,0.9);"><span class="art-title-name" style="font-weight:700;color:#fff;">${(ref?.title || 'Movie').replace(/"/g, '&quot;')}</span></div>`
         );
 
+    const isM3u8Stream = isAnime || (streamUrl && streamUrl.includes('m3u8')) || (window._cwQualities && window._cwQualities.some(q => (q.url || '').includes('m3u8')));
+    const playerType = isM3u8Stream ? 'm3u8' : (streamUrl.includes('stream-media') || streamUrl.includes('.mp4') ? 'mp4' : 'auto');
+
     const artOptions = {
       container: '#artplayerApp',
       url: streamUrl,
-      type: streamUrl.includes('.m3u8') ? 'm3u8' : (streamUrl.includes('stream-media') || streamUrl.includes('.mp4') ? 'mp4' : 'auto'),
+      type: playerType,
       poster: poster,
       volume: 0.8,
       isLive: false,
@@ -7350,6 +7358,11 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
               video.muted = true;
               video.play().catch(function() {});
             });
+          }
+        },
+        'anime-m3u8': function (video, url, art) {
+          if (art.customType && typeof art.customType.m3u8 === 'function') {
+            return art.customType.m3u8(video, url, art);
           }
         },
       },
