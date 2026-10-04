@@ -305,9 +305,13 @@ const server = http.createServer((req, res) => {
         }
         let text = await response.text();
         
+        // Strip formatting tags (like <i>, </i>, <b>, </b>, <u>, </u>, <font...>, </font>) that render as literal text
+        text = text.replace(/<\/?(i|b|u|font|c|v)[^>]*>/gi, '');
+        
         if (targetLang) {
           try {
             text = await translateVTT(text, targetLang);
+            text = text.replace(/<\/?(i|b|u|font|c|v)[^>]*>/gi, '');
           } catch(e) {
             console.error('Translation error:', e);
           }
