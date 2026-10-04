@@ -1596,59 +1596,39 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
       `/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`
     ];
 
-    for (const epUrl of endpoints) {
-      try {
-        const res = await fetch(epUrl, { signal: AbortSignal.timeout(8000) });
-        if (!res.ok) continue;
-        const sData = await res.json();
-        if (sData && sData.success && sData.streamUrl) {
-          cleanUrl = sData.streamUrl;
-          if (sData.qualities && sData.qualities.length > 0) {
-            window._cwQualities = sData.qualities;
-          }
-          if (sData.tracks && sData.tracks.length > 0) {
-            window._cwSubtitleTracks = sData.tracks;
-            const kuTrack = sData.tracks.find(t => t.srclang === 'ku') || sData.tracks[0];
-            if (kuTrack && kuTrack.file) {
-              subtitleUrl = kuTrack.file;
-            }
-          }
-          break;
+    const uniqueEndpoints = [...new Set(endpoints)];
+    try {
+      const sData = await Promise.any(
+        uniqueEndpoints.map(epUrl =>
+          fetch(epUrl, { signal: AbortSignal.timeout(12000) }).then(async res => {
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            const data = await res.json();
+            if (data && data.success && data.streamUrl) return data;
+            throw new Error('Invalid stream data');
+          })
+        )
+      );
+      if (sData && sData.streamUrl) {
+        cleanUrl = sData.streamUrl;
+        if (sData.qualities && sData.qualities.length > 0) {
+          window._cwQualities = sData.qualities;
         }
-      } catch (e) {}
-    }
+        if (sData.tracks && sData.tracks.length > 0) {
+          window._cwSubtitleTracks = sData.tracks;
+          const kuTrack = sData.tracks.find(t => t.srclang === 'ku') || sData.tracks[0];
+          if (kuTrack && kuTrack.file) {
+            subtitleUrl = kuTrack.file;
+          }
+        }
+      }
+    } catch (e) {}
   }
 
-  // Fallback: If no direct stream was extracted, fall back gracefully to clean embed
-  if (!cleanUrl) {
-    let fallbackSrc = '';
-    const tmdb = movie.videoUrl || movie.tmdbId || movie.cinesrcId || movie.id;
-    if (isAnime && malId) {
-      fallbackSrc = `https://megavid.buzz/mal/${malId}/${epNum}/${curPref}`;
-    } else if (isTv) {
-      fallbackSrc = `https://vidlink.pro/tv/${tmdb}/${sNum}/${epNum}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false&nextbutton=true${subParam}`;
-    } else {
-      fallbackSrc = `https://vidlink.pro/movie/${tmdb}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false${subParam}`;
-    }
-
-    if (artContainer) artContainer.classList.add('hidden');
-    if (iframeEl) {
-      iframeEl.classList.remove('hidden');
-      iframeEl.setAttribute('frameborder', '0');
-      iframeEl.setAttribute('scrolling', 'no');
-      iframeEl.setAttribute('allowfullscreen', 'true');
-      iframeEl.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture');
-      iframeEl.src = fallbackSrc;
-      iframeEl.onload = () => {
-        const pl = document.getElementById('playerLoading');
-        if (pl) pl.classList.add('hidden');
-      };
-    }
-    playerModal?.classList.remove('hidden');
-    resetPlayerIdleTimer();
-    return;
+  // Always show native ArtPlayer with custom controls and CineWatch watermark — never fall back to third-party server embeds
+  if (iframeEl) {
+    iframeEl.classList.add('hidden');
+    iframeEl.src = '';
   }
-
   if (artContainer) {
     artContainer.classList.remove('hidden');
   }
