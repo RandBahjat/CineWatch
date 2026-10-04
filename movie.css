@@ -13549,6 +13549,12 @@ body.cw-ads-hidden script[src*="highrevenueformat"] {
   }
 }
 
+@media (max-width: 640px) {
+  .art-center-title {
+    display: none !important;
+  }
+}
+
 .art-center-title .art-title-ep {
   font-weight: 700 !important;
   color: #ffffff !important;
