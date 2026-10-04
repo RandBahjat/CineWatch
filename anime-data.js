@@ -7614,7 +7614,7 @@ window._ANIME_DATA = [
     "trailerUrl": "https://youtu.be/QwNWY6z93O4?si=dFKD7nRKy0UAHM5s",
     "animeSlug": "black-clover",
     "overview": "In a fantasy kingdom where everyone is born with magical aptitude, Asta is a rare exception born with none at all. Alongside his naturally gifted foster-brother and rival Yuno, Asta trains relentlessly to pursue the ultimate title of Wizard King. When Yuno receives a rare four-leaf clover grimoire, Asta unexpectedly awakens a legendary five-leaf grimoire containing the mysterious power of Anti-Magic, kicking off his journey within the misfit Magic Knight squad, the Black Bulls.",
-    "overviewKurdish": "",
+    "overviewKurdish": "لە شانشینێکی خەیاڵیدا کە جادوو و هێز هەموو شتێکە و هەموو کەسێک توانای جادوویی هەیە، ئاستا بەبێ هیچ هێزێکی جادوویی لەدایک دەبێت. سەرەڕای ئەمەش، شانبەشانی یونۆی برای و ڕکابەری کە خاوەنی بەهرەیەکی بێوێنەیە، بە بەردەوامی مەشق دەکات بەو ئامانجەی ببێت بە پاشای جادووگەرەکان. لە کاتێکدا یونۆ پەڕتووکی دەگمەنی چوارپەڕە وەردەگرێت، ئاستا پەڕتووکێکی نەفرەتلێکراوی پێنج‌پەڕە بەدەستدەهێنێت کە هێزی دژە-جادووی تێدایە، و لەگەڵ تیمی «گاکانی ڕەش» دەست دەکات بە گەشتە سەختەکەی.",
     "director": "Tatsuya Yoshihara",
     "cast": [
       "Gakuto Kajiwara",
