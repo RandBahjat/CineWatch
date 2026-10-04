@@ -3377,8 +3377,9 @@ function openDetailsModal(movieId) {
         if (!firstEp) return;
         const epUrl = getEpisodeUrl(firstEp, seasonData);
         if (epUrl) {
+          const mediaId = movie.id || movie.videoUrl || movie.title;
           const epTitle = `${movie.title} - S${seasonData.season} E${firstEp.episode}: ${firstEp.title || ''}`;
-          openVideoPlayerWithUrl(epUrl, epTitle, movie.id, { season: seasonData.season, episode: firstEp.episode, ...firstEp });
+          openVideoPlayerWithUrl(epUrl, epTitle, mediaId, { season: seasonData.season, episode: firstEp.episode, ...firstEp });
         }
       };
 
