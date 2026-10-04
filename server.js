@@ -24,8 +24,9 @@ const MIME_TYPES = {
   '.woff2': 'font/woff2',
   '.ttf': 'font/ttf',
   '.otf': 'font/otf',
-  '.txt': 'text/plain; charset=utf-8'
 };
+
+const movieSubCache = new Map();
 
 async function translateVTT(vttText, targetLang) {
   const blocks = vttText.split(/\r?\n\r?\n/);
