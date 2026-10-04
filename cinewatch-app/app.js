@@ -1589,6 +1589,7 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     const tvQuery = isTv ? `&season=${sNum}&episode=${epNum}` : '';
     const endpoints = [
       `${curOrigin}/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
+      `https://cinewatch-maaa.onrender.com/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
       `http://${curHost}:3000/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
       `http://localhost:3000/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
       `http://127.0.0.1:3000/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
@@ -1792,7 +1793,7 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     const artOptions = {
       container: '#artplayerApp',
       url: streamUrl,
-      type: streamUrl.includes('.m3u8') ? 'm3u8' : 'auto',
+      type: streamUrl.includes('.m3u8') ? 'm3u8' : (streamUrl.includes('stream-media') || streamUrl.includes('.mp4') ? 'mp4' : 'auto'),
       poster: poster,
       volume: 0.8,
       isLive: false,
@@ -1960,6 +1961,17 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
       if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
         window.artPlayerInstance.subtitle.show = true;
       }
+      try {
+        const p = window.artPlayerInstance.play();
+        if (p !== undefined) {
+          p.catch(() => {
+            if (window.artPlayerInstance) {
+              window.artPlayerInstance.muted = true;
+              window.artPlayerInstance.play().catch(() => {});
+            }
+          });
+        }
+      } catch (e) {}
     });
 
     window.artPlayerInstance.on('subtitleLoad', () => {
