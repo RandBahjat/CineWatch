@@ -574,6 +574,7 @@ const server = http.createServer((req, res) => {
     const title = parsed.searchParams.get('title') || '';
     const type = parsed.searchParams.get('type') || 'movie';
     const season = parsed.searchParams.get('season') || '';
+    const episode = parsed.searchParams.get('episode') || '';
     const isTv = type !== 'movie' && (type === 'tv' || type === 'series' || Boolean(season));
 
     const host = req.headers.host || `localhost:${PORT}`;
