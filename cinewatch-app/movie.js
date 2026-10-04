@@ -6879,80 +6879,50 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     } catch (e) {}
   }
 
-  // 2b. If Movies or TV Series: fetch direct stream from custom server endpoints in parallel
+  // 2b. If Movies or TV Series: fetch direct stream from custom server endpoints
   if (!isAnime && !cleanUrl && tmdbId) {
     const tvQuery = isTv ? `&season=${season}&episode=${epNum}` : '';
-    const endpoints = [
-      `${curOrigin}/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
-      `https://cinewatch-maaa.onrender.com/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
-      `http://${curHost}:3000/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
-      `http://localhost:3000/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
-      `http://127.0.0.1:3000/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`,
-      `/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`
-    ];
-
-    const uniqueEndpoints = [...new Set(endpoints)];
+    const cleanQuery = `tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`;
     try {
-      const sData = await Promise.any(
-        uniqueEndpoints.map(epUrl =>
-          fetch(epUrl, { signal: AbortSignal.timeout(12000) }).then(async res => {
-            if (!res.ok) throw new Error('HTTP ' + res.status);
-            const data = await res.json();
-            if (data && data.success && data.streamUrl) return data;
-            throw new Error('Invalid stream data');
-          })
-        )
-      );
-      if (sData && sData.streamUrl) {
-        cleanUrl = sData.streamUrl;
-        if (sData.qualities && sData.qualities.length > 0) {
-          window._cwQualities = sData.qualities;
-        }
-        if (sData.tracks && sData.tracks.length > 0) {
-          window._cwSubtitleTracks = sData.tracks;
-          const kuTrack = sData.tracks.find(t => t.srclang === 'ku') || sData.tracks[0];
-          if (kuTrack && kuTrack.file) {
-            subtitleUrl = kuTrack.file;
+      let res = await fetch(`${curOrigin}/api/stream?${cleanQuery}`, { signal: AbortSignal.timeout(12000) });
+      if ((!res || !res.ok) && !curOrigin.includes('cinewatch-maaa.onrender.com')) {
+        try {
+          res = await fetch(`https://cinewatch-maaa.onrender.com/api/stream?${cleanQuery}`, { signal: AbortSignal.timeout(10000) });
+        } catch(re) {}
+      }
+      if (res && res.ok) {
+        const sData = await res.json();
+        if (sData && sData.success && sData.streamUrl) {
+          cleanUrl = sData.streamUrl;
+          if (sData.qualities && sData.qualities.length > 0) {
+            window._cwQualities = sData.qualities;
+          }
+          if (sData.tracks && sData.tracks.length > 0) {
+            window._cwSubtitleTracks = sData.tracks;
+            const kuTrack = sData.tracks.find(t => t.srclang === 'ku') || sData.tracks[0];
+            if (kuTrack && kuTrack.file) {
+              subtitleUrl = kuTrack.file;
+            }
           }
         }
       }
     } catch (e) {}
   }
 
-  // Prepare fallback embed URL in case direct stream extraction is not available for this specific title
-  let fallbackSrc = '';
-  if (isAnime && malId) {
-    fallbackSrc = `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`;
-  } else if (isTv && tmdbId) {
-    fallbackSrc = `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=true${subParam}`;
-  } else if (tmdbId) {
-    fallbackSrc = `https://vidlink.pro/movie/${tmdbId}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=true${subParam}`;
+  // CineWatch Strict Rule: NEVER switch to external 3rd-party servers or iframe embeds.
+  // All movies, series, episodes, and seasons MUST strictly play inside CineWatch Custom ArtPlayer.
+  if (iframe) {
+    iframe.classList.add("hidden");
+    iframe.src = "";
+  }
+  if (artContainer) {
+    artContainer.classList.remove("hidden");
   }
 
-  // 1. Direct stream available: always use native CineWatch ArtPlayer with custom controls & watermark
-  if (cleanUrl) {
-    if (iframe) {
-      iframe.classList.add("hidden");
-      iframe.src = "";
-    }
-    if (artContainer) {
-      artContainer.classList.remove("hidden");
-    }
-  } else {
-    // 2. Direct stream not available for this title: fall back seamlessly so the episode actually plays instead of infinite loading
-    if (fallbackSrc) {
-      if (artContainer) artContainer.classList.add("hidden");
-      if (iframe) {
-        iframe.classList.remove("hidden");
-        iframe.setAttribute("frameborder", "0");
-        iframe.setAttribute("scrolling", "no");
-        iframe.setAttribute("allowfullscreen", "true");
-        iframe.setAttribute("allow", "autoplay; encrypted-media; picture-in-picture");
-        iframe.src = fallbackSrc;
-      }
-      return;
-    }
-  }
+  const streamUrl = cleanUrl || (isAnime && malId
+    ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
+    : '');
+
 
   const streamUrl = cleanUrl || (isAnime && malId
     ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
