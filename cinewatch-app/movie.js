@@ -6883,21 +6883,35 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   if (!isAnime && !cleanUrl && tmdbId) {
     const tvQuery = isTv ? `&season=${season}&episode=${epNum}` : '';
     const cleanQuery = `tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}${tvQuery}&title=${encodeURIComponent(cleanName)}`;
+    const endpoints = [
+      `${curOrigin}/api/stream?${cleanQuery}`,
+      `http://${curHost}:3000/api/stream?${cleanQuery}`,
+      `http://localhost:3000/api/stream?${cleanQuery}`,
+      `http://127.0.0.1:3000/api/stream?${cleanQuery}`,
+      `/api/stream?${cleanQuery}`,
+      `https://cinewatch-maaa.onrender.com/api/stream?${cleanQuery}`
+    ];
+    
+    const uniqueEndpoints = [...new Set(endpoints)];
+
     try {
-      let res = await fetch(`${curOrigin}/api/stream?${cleanQuery}`, { signal: AbortSignal.timeout(12000) });
-      if ((!res || !res.ok) && !curOrigin.includes('cinewatch-maaa.onrender.com')) {
+      let sData = null;
+      for (const epUrl of uniqueEndpoints) {
         try {
-          res = await fetch(`https://cinewatch-maaa.onrender.com/api/stream?${cleanQuery}`, { signal: AbortSignal.timeout(10000) });
-        } catch(re) {}
+          const res = await fetch(epUrl, { signal: AbortSignal.timeout(6000) });
+          if (!res.ok) continue;
+          const data = await res.json();
+          if (data && data.success && data.streamUrl) {
+            sData = data;
+            break;
+          }
+        } catch (e) {
+          continue;
+        }
       }
-      if (res && res.ok) {
-        const sData = await res.json();
-        if (sData && sData.success && sData.streamUrl) {
-          
-          // CRITICAL: Filter out H.265/HEVC codecs on the client side because standard browsers
-          // (Chrome, Firefox, Edge) do not natively support them and will fail to play the video.
-          // This ensures playback works even if hitting a legacy backend endpoint.
-          if (sData.qualities && sData.qualities.length > 0) {
+
+      if (sData && sData.streamUrl) {
+        if (sData.qualities && sData.qualities.length > 0) {
             const h264Qualities = sData.qualities.filter(q => {
                const u = (q.url || '').toLowerCase();
                const r = (q.rawUrl || '').toLowerCase();
