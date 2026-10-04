@@ -3527,7 +3527,20 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
   const serverWrap = document.getElementById("serverSelectWrap");
 
   // ── Populate info area ──
-  const parentMovie = parentId ? (findMovieByIdOrTitle(parentId) || MOVIES.find(m => m.id === parentId || String(m.videoUrl) === String(parentId))) : null;
+  let parentMovie = null;
+  if (parentId && parentId !== "_episode_") {
+    parentMovie = MOVIES.find(m => m.id === parentId || String(m.videoUrl) === String(parentId) || m.title === parentId);
+  }
+  if (!parentMovie && typeof videoUrl === 'string' && videoUrl.startsWith('tv_embed:')) {
+    const parts = videoUrl.split(':');
+    const mid = parts[1];
+    if (mid) {
+      parentMovie = MOVIES.find(m => String(m.videoUrl) === String(mid) || String(m.id) === String(mid) || String(m.cinesrcId) === String(mid));
+    }
+  }
+  if (!parentMovie && displayTitle) {
+    parentMovie = MOVIES.find(m => displayTitle.toLowerCase().includes((m.title || '').toLowerCase()));
+  }
   renderPlayerDetailsPanel(parentMovie, epData);
   const posterEl = document.getElementById("playerShowPoster");
   const metaEl = document.getElementById("playerMeta");
