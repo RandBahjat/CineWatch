@@ -395,6 +395,58 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  // Universal Subtitle Proxy and VTT Normalizer (bypasses CORS, strips formatting tags, normalizes to WebVTT)
+  if (safePath === '/api/sub-proxy') {
+    let parsed = new URL(req.url, `http://localhost:${PORT}`);
+    const subTarget = parsed.searchParams.get('url');
+    if (!subTarget) {
+      res.writeHead(400, { 'Content-Type': 'text/plain', 'Access-Control-Allow-Origin': '*' });
+      res.end('Missing url');
+      return;
+    }
+
+    (async () => {
+      try {
+        let origin = 'https://vidlink.pro';
+        try {
+          origin = new URL(subTarget).origin;
+        } catch(e) {}
+
+        const response = await fetch(subTarget, {
+          headers: {
+            'Referer': `${origin}/`,
+            'Origin': origin,
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+          }
+        });
+
+        if (!response.ok) {
+          res.writeHead(302, { 'Location': subTarget });
+          res.end();
+          return;
+        }
+
+        let text = await response.text();
+        if (!text.toUpperCase().includes('WEBVTT')) {
+          text = "WEBVTT\n\n" + text.replace(/(\d{2}:\d{2}:\d{2}),(\d{3})/g, '$1.$2');
+        }
+        text = text.replace(/<\/?(i|b|u|font|c|v)[^>]*>/gi, '');
+
+        res.writeHead(200, {
+          'Content-Type': 'text/vtt; charset=utf-8',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Private-Network': 'true',
+          'Cache-Control': 'public, max-age=86400'
+        });
+        res.end(text);
+      } catch (err) {
+        res.writeHead(500, { 'Access-Control-Allow-Origin': '*' });
+        res.end(err.message);
+      }
+    })();
+    return;
+  }
+
   if (safePath === '/api/movie-sub') {
     let parsed = new URL(req.url, `http://localhost:${PORT}`);
     const rawTitle = parsed.searchParams.get('title');
@@ -403,12 +455,25 @@ const server = http.createServer((req, res) => {
     const season = parsed.searchParams.get('season') || '1';
     const ep = parsed.searchParams.get('ep') || '1';
     const targetLang = parsed.searchParams.get('lang') || 'ckb';
+    const enUrl = parsed.searchParams.get('enUrl');
     const trackIndex = Math.max(0, parseInt(parsed.searchParams.get('track') || '0', 10));
     const SUBDL_API_KEY = process.env.SUBDL_API_KEY || 'subdl_2L68yhBx3c0uQlMPHERfXvgmRKw89akcsNrEhp2SVvs';
 
     if (!rawTitle) {
       res.writeHead(400, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
       res.end(JSON.stringify({ error: 'Missing title' }));
+      return;
+    }
+
+    const cacheKey = `${cinemetaType}_${rawTitle}_s${season}_e${ep}_${targetLang}`;
+    if (movieSubCache.has(cacheKey)) {
+      res.writeHead(200, {
+        'Content-Type': 'text/vtt; charset=utf-8',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Private-Network': 'true',
+        'Cache-Control': 'public, max-age=86400'
+      });
+      res.end(movieSubCache.get(cacheKey));
       return;
     }
 
@@ -523,8 +588,11 @@ const server = http.createServer((req, res) => {
                 if (!nativeSrt.toUpperCase().includes('WEBVTT')) {
                   nativeSrt = "WEBVTT\n\n" + nativeSrt.replace(/(\d{2}:\d{2}:\d{2}),(\d{3})/g, '$1.$2');
                 }
+                nativeSrt = nativeSrt.replace(/<\/?(i|b|u|font|c|v)[^>]*>/gi, '');
 
                 const trackName = (chosen.author ? `${chosen.author} - ` : '') + (chosen.release_name || `Track ${trackIndex + 1}`);
+
+                movieSubCache.set(cacheKey, nativeSrt);
 
                 res.writeHead(200, {
                   'Content-Type': 'text/vtt; charset=utf-8',
@@ -544,7 +612,62 @@ const server = http.createServer((req, res) => {
             console.warn('[SubDL] Kurdish lookup error:', subdlErr.message);
           }
 
-          // If no SubDL Kurdish subtitle exists, respond with 404 and search hints
+          // Fallback: If no SubDL Kurdish subtitle exists, translate English subtitle to Kurdish Sorani
+          let baseEnglishSrt = '';
+          if (enUrl) {
+            try {
+              const enRes = await fetch(enUrl, {
+                headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' },
+                signal: AbortSignal.timeout(6000)
+              });
+              if (enRes.ok) {
+                baseEnglishSrt = await enRes.text();
+              }
+            } catch (e) {}
+          }
+
+          // If no enUrl or failed, try SubDL English search
+          if (!baseEnglishSrt) {
+            try {
+              const cleanTitle = searchTitles[1] || rawTitle;
+              const enSearchUrl = `https://api.subdl.com/api/v1/subtitles?api_key=${SUBDL_API_KEY}&languages=EN&film_name=${encodeURIComponent(cleanTitle)}&unpack=1`;
+              const enSubdlRes = await fetch(enSearchUrl, { signal: AbortSignal.timeout(5000) });
+              const enSubdlData = await enSubdlRes.json();
+              if (enSubdlData.status && enSubdlData.subtitles && enSubdlData.subtitles.length > 0) {
+                const enItem = enSubdlData.subtitles[0];
+                if (enItem.unpack_files && enItem.unpack_files.length > 0) {
+                  const enFileRes = await fetch('https://dl.subdl.com' + enItem.unpack_files[0].url, { signal: AbortSignal.timeout(5000) });
+                  if (enFileRes.ok) {
+                    baseEnglishSrt = await enFileRes.text();
+                  }
+                }
+              }
+            } catch (e) {}
+          }
+
+          if (baseEnglishSrt) {
+            let vttText = baseEnglishSrt;
+            if (!vttText.toUpperCase().includes('WEBVTT')) {
+              vttText = "WEBVTT\n\n" + vttText.replace(/(\d{2}:\d{2}:\d{2}),(\d{3})/g, '$1.$2');
+            }
+            vttText = vttText.replace(/<\/?(i|b|u|font|c|v)[^>]*>/gi, '');
+            try {
+              const kuVtt = await translateVTT(vttText, 'ckb');
+              movieSubCache.set(cacheKey, kuVtt);
+              res.writeHead(200, {
+                'Content-Type': 'text/vtt; charset=utf-8',
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Private-Network': 'true',
+                'Cache-Control': 'public, max-age=86400'
+              });
+              res.end(kuVtt);
+              return;
+            } catch (trErr) {
+              console.warn('[Translate] Error translating to Kurdish:', trErr.message);
+            }
+          }
+
+          // If no Kurdish subtitle found and no translation available
           res.writeHead(404, {
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*',
@@ -552,8 +675,7 @@ const server = http.createServer((req, res) => {
           });
           res.end(JSON.stringify({
             error: 'No Kurdish subtitle found on SubDL',
-            title: rawTitle,
-            kurdSubtitleSearch: `https://www.google.com/search?q=site%3Akurdsubtitle.net+${encodeURIComponent(rawTitle)}`
+            title: rawTitle
           }));
           return;
         }
