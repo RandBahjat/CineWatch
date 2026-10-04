@@ -6909,8 +6909,30 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     } catch (e) {}
   }
 
-  // CineWatch Strict Rule: NEVER switch to external 3rd-party servers or iframe embeds.
-  // All movies, series, episodes, and seasons MUST strictly play inside CineWatch Custom ArtPlayer.
+  const fallbackSrc = isAnime && malId
+    ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
+    : (isTv
+        ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}`
+        : `https://vidsrc.to/embed/movie/${tmdbId}`);
+
+  // If no direct clean stream URL was found, seamlessly use the fallback player within CineWatch container
+  if (!cleanUrl && fallbackSrc && (!isAnime || !malId)) {
+    if (artContainer) {
+      artContainer.classList.add("hidden");
+    }
+    if (iframe) {
+      iframe.classList.remove("hidden");
+      iframe.setAttribute("frameborder", "0");
+      iframe.setAttribute("scrolling", "no");
+      iframe.setAttribute("allowfullscreen", "true");
+      iframe.setAttribute("allow", "autoplay; fullscreen; encrypted-media; picture-in-picture");
+      iframe.setAttribute("sandbox", "allow-scripts allow-same-origin allow-forms allow-presentation");
+      iframe.src = fallbackSrc;
+    }
+    return;
+  }
+
+  // If we have a direct clean stream (or anime source), strictly play inside CineWatch Custom ArtPlayer
   if (iframe) {
     iframe.classList.add("hidden");
     iframe.src = "";
