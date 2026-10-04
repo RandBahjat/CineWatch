@@ -228,7 +228,9 @@ function findMovieByIdOrTitle(identifier) {
     (m.id && m.id.toLowerCase() === lower) ||
     (m.id && m.id.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug) ||
     (m.title && m.title.toLowerCase() === lower) ||
-    (m.title && m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug)
+    (m.title && m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug) ||
+    String(m.videoUrl) === raw ||
+    String(m.cinesrcId) === raw
   ) || null;
 }
 
