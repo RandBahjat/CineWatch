@@ -6909,34 +6909,8 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     } catch (e) {}
   }
 
-  const fallbackSrc = isAnime && malId
-    ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
-    : (isTv
-        ? `https://vidsrc.to/embed/tv/${tmdbId}/${season}/${epNum}`
-        : `https://vidsrc.to/embed/movie/${tmdbId}`);
-
-  // If no direct clean stream URL was found, seamlessly use the fallback player within CineWatch container
-  if (!cleanUrl && fallbackSrc && (!isAnime || !malId)) {
-    if (artContainer) {
-      artContainer.classList.add("hidden");
-    }
-    const wmLogo = document.getElementById("playerWatermarkLogo");
-    if (wmLogo) {
-      wmLogo.style.display = "inline-flex";
-      wmLogo.style.zIndex = "50";
-      wmLogo.style.pointerEvents = "none";
-    }
-    if (iframe) {
-      iframe.classList.remove("hidden");
-      iframe.setAttribute("frameborder", "0");
-      iframe.setAttribute("scrolling", "no");
-      iframe.setAttribute("allowfullscreen", "true");
-      iframe.setAttribute("allow", "autoplay; fullscreen; encrypted-media; picture-in-picture");
-      iframe.removeAttribute("sandbox");
-      iframe.src = fallbackSrc;
-    }
-    return;
-  }
+  // Removed fallback iframe logic per user strict rule.
+  // If no cleanUrl is found, ArtPlayer will be initialized with empty url and handle the error natively.
 
   // If we have a direct clean stream (or anime source), strictly play inside CineWatch Custom ArtPlayer
   if (iframe) {
@@ -7163,7 +7137,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         );
 
     const isM3u8Stream = isAnime || (streamUrl && streamUrl.includes('m3u8')) || (window._cwQualities && window._cwQualities.some(q => (q.url || '').includes('m3u8')));
-    const playerType = isM3u8Stream ? 'm3u8' : (streamUrl.includes('stream-media') || streamUrl.includes('.mp4') ? 'mp4' : 'auto');
+    const playerType = isM3u8Stream ? 'm3u8' : (streamUrl && (streamUrl.includes('stream-media') || streamUrl.includes('.mp4')) ? 'mp4' : 'auto');
 
     const artOptions = {
       container: '#artplayerApp',
