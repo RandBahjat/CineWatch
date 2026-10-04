@@ -732,13 +732,12 @@ const server = http.createServer((req, res) => {
       }
       res.end();
     })().catch(err => {
-      .catch(err => {
-        console.error('Stream media proxy error:', err.message);
-        if (!res.headersSent) {
-          res.writeHead(502, { 'Content-Type': 'text/plain', 'Access-Control-Allow-Origin': '*' });
-        }
-        res.end(err.message);
-      });
+      console.error('Stream media proxy error:', err.message);
+      if (!res.headersSent) {
+        res.writeHead(502, { 'Content-Type': 'text/plain', 'Access-Control-Allow-Origin': '*' });
+      }
+      res.end(err.message);
+    });
     return;
   }
 
