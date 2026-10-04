@@ -1665,8 +1665,6 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     artContainer.classList.remove('hidden');
   }
 
-  const streamUrl = cleanUrl || '';
-
   if (typeof Artplayer === 'undefined') {
     console.warn('Artplayer library not yet available');
     return;
