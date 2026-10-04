@@ -2000,13 +2000,20 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     window.artPlayerInstance.on('error', (err) => {
       try {
         console.warn('ArtPlayer stream notice/error:', err);
-        // Never switch to 3rd party iframe; preserve custom CineWatch ArtPlayer
-        if (iframeEl) {
-          iframeEl.classList.add('hidden');
-          iframeEl.src = '';
-        }
-        if (artContainer) {
-          artContainer.classList.remove('hidden');
+        if (fallbackSrc && iframeEl && artContainer) {
+          if (window.artPlayerInstance) {
+            try { window.artPlayerInstance.destroy(); } catch (e) {}
+            window.artPlayerInstance = null;
+          }
+          artContainer.classList.add('hidden');
+          iframeEl.classList.remove('hidden');
+          iframeEl.setAttribute('frameborder', '0');
+          iframeEl.setAttribute('scrolling', 'no');
+          iframeEl.setAttribute('allowfullscreen', 'true');
+          iframeEl.setAttribute('allow', 'autoplay; fullscreen; encrypted-media; picture-in-picture');
+          iframeEl.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-forms allow-presentation');
+          iframeEl.src = fallbackSrc;
+          return;
         }
         const tracks = window._cwSubtitleTracks || [];
         const enTrack = tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng'));
