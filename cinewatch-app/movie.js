@@ -6945,6 +6945,7 @@ const ANIME_MAL_MAP = {
   '902': 481,        // Yu-Gi-Oh! Duel Monsters
   '12536': 482,      // Yu-Gi-Oh! GX
   '20695': 3972,     // Yu-Gi-Oh! 5D's
+  '73223': 34572,    // Black Clover
 };
 
 const ANIME_ANILIST_MAP = {
@@ -6974,6 +6975,7 @@ const ANIME_ANILIST_MAP = {
   '902': 481,        // Yu-Gi-Oh! Duel Monsters
   '12536': 482,      // Yu-Gi-Oh! GX
   '20695': 3972,     // Yu-Gi-Oh! 5D's
+  '73223': 97940,    // Black Clover
 };
 
 function getAnimeAniListId(refMovie, dataId) {
@@ -6989,6 +6991,7 @@ function getAnimeAniListId(refMovie, dataId) {
     if (t.includes('boruto')) return 97938;
     if (t.includes('hero academia')) return 21459;
     if (t.includes('demon slayer')) return 101922;
+    if (t.includes('black clover')) return 97940;
     if (t.includes('one punch')) return 21087;
     if (t.includes('solo leveling')) return 151807;
     if (t.includes('jujutsu')) return 113415;
@@ -7025,6 +7028,7 @@ function getAnimeMalId(refMovie, dataId) {
     if (t.includes('hunter')) return 11061;
     if (t.includes('attack on titan')) return 16498;
     if (t.includes('demon slayer')) return 38000;
+    if (t.includes('black clover')) return 34572;
   }
   return refMovie?.anilistId || 21;
 }

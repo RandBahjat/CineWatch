@@ -1466,6 +1466,7 @@ function getAnimeMalId(refMovie, dataId) {
     if (t.includes('hunter')) return 11061;
     if (t.includes('attack on titan')) return 16498;
     if (t.includes('demon slayer')) return 38000;
+    if (t.includes('black clover')) return 34572;
   }
   return refMovie?.anilistId || 21;
 }
