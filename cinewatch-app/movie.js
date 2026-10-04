@@ -3323,7 +3323,8 @@ function openDetailsModal(movieId) {
             const epNum = parseInt(card.dataset.episode);
             const absNum = card.dataset.absEpisode ? parseInt(card.dataset.absEpisode) : epNum;
             const targetEp = seasonData.episodes.find(x => x.episode === epNum);
-            openVideoPlayerWithUrl(videoUrl, epTitle, movie.id, { season: seasonData.season, episode: epNum, absoluteEpisode: absNum, ...targetEp });
+            const mediaId = movie.id || movie.videoUrl || movie.title;
+            openVideoPlayerWithUrl(videoUrl, epTitle, mediaId, { season: seasonData.season, episode: epNum, absoluteEpisode: absNum, ...targetEp });
           };
         });
       }
