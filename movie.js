@@ -6912,7 +6912,10 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                 sData.streamUrl = h264Qualities[0].url;
               }
             } else {
-              window._cwQualities = sData.qualities; // Fallback to unfiltered if nothing else is available
+              // ONLY H.265 IS AVAILABLE
+              window._cwQualities = [];
+              sData.streamUrl = '';
+              alert("Error: The streaming provider only has H.265 (HEVC) versions of this movie, which your browser cannot play. Please use Safari or an external player.");
             }
           }
           
@@ -6926,7 +6929,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           }
         }
       }
-    } catch (e) {}
+    } catch (e) {
+      alert("Stream Error: " + (e.errors ? e.errors[0]?.message : e.message) + "\nThis may be a rate limit from the streaming provider.");
+    }
   }
 
   // Removed fallback iframe logic per user strict rule.
