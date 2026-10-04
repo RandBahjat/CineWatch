@@ -1,6 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const { Readable } = require('stream');
 
 let PORT = parseInt(process.env.PORT, 10) || 3000;
 const ROOT_DIR = __dirname;
@@ -855,14 +856,18 @@ const server = http.createServer((req, res) => {
       const cr = upstream.headers.get('content-range');
       if (cr) outHeaders['Content-Range'] = cr;
 
-      res.writeHead(upstream.status, outHeaders);
-      const reader = upstream.body.getReader();
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        res.write(Buffer.from(value));
+      if (req.method === 'HEAD' || !upstream.body) {
+        res.writeHead(upstream.status, outHeaders);
+        res.end();
+        return;
       }
-      res.end();
+
+      res.writeHead(upstream.status, outHeaders);
+      const nodeStream = Readable.fromWeb(upstream.body);
+      nodeStream.pipe(res);
+      req.on('close', () => {
+        try { nodeStream.destroy(); } catch (e) {}
+      });
     })().catch(err => {
       console.error('Stream media proxy error:', err.message);
       if (!res.headersSent) {
