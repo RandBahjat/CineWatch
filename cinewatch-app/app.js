@@ -1647,7 +1647,7 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
       iframeEl.setAttribute('scrolling', 'no');
       iframeEl.setAttribute('allowfullscreen', 'true');
       iframeEl.setAttribute('allow', 'autoplay; fullscreen; encrypted-media; picture-in-picture');
-      iframeEl.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-forms allow-presentation');
+      iframeEl.removeAttribute('sandbox');
       iframeEl.src = fallbackSrc;
     }
     playerModal?.classList.remove('hidden');
@@ -2017,7 +2017,7 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
           iframeEl.setAttribute('scrolling', 'no');
           iframeEl.setAttribute('allowfullscreen', 'true');
           iframeEl.setAttribute('allow', 'autoplay; fullscreen; encrypted-media; picture-in-picture');
-          iframeEl.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-forms allow-presentation');
+          iframeEl.removeAttribute('sandbox');
           iframeEl.src = fallbackSrc;
           return;
         }
