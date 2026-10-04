@@ -7427,21 +7427,6 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     window.artPlayerInstance.on('error', (err) => {
       try {
         console.warn("ArtPlayer stream notice/error:", err);
-        if (fallbackSrc && iframe && artContainer) {
-          if (window.artPlayerInstance) {
-            try { window.artPlayerInstance.destroy(); } catch (e) {}
-            window.artPlayerInstance = null;
-          }
-          artContainer.classList.add("hidden");
-          iframe.classList.remove("hidden");
-          iframe.setAttribute("frameborder", "0");
-          iframe.setAttribute("scrolling", "no");
-          iframe.setAttribute("allowfullscreen", "true");
-          iframe.setAttribute("allow", "autoplay; fullscreen; encrypted-media; picture-in-picture");
-          iframe.removeAttribute("sandbox");
-          iframe.src = fallbackSrc;
-          return;
-        }
         const tracks = window._cwSubtitleTracks || [];
         const enTrack = tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng'));
         if (enTrack && enTrack.file && window.artPlayerInstance?.subtitle?.url !== enTrack.file) {
