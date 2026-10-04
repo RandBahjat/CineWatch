@@ -570,61 +570,152 @@ const server = http.createServer((req, res) => {
   // Direct Stream Resolver for ArtPlayer (Movies and Series)
   if (safePath === '/api/stream') {
     let parsed = new URL(req.url, `http://localhost:${PORT}`);
-    const tmdbId = parsed.searchParams.get('tmdbId');
+    const tmdbId = parsed.searchParams.get('tmdbId') || parsed.searchParams.get('id');
     const title = parsed.searchParams.get('title') || '';
     const type = parsed.searchParams.get('type') || 'movie';
-    const season = parsed.searchParams.get('season') || '1';
-    const episode = parsed.searchParams.get('episode') || '1';
+    const season = parsed.searchParams.get('season') || '';
+    const episode = parsed.searchParams.get('episode') || '';
+    const isTv = type === 'tv' || type === 'series' || Boolean(season);
 
-    const queryProviders = async () => {
-      const endpoints = [
-        `https://consumet-api-production-e852.up.railway.app/movies/flixhq/${encodeURIComponent(title)}`,
-        `https://api-consumet.onrender.com/movies/flixhq/${encodeURIComponent(title)}`,
-        `https://c.delusionz.xyz/movies/flixhq/${encodeURIComponent(title)}`
-      ];
+    const host = req.headers.host || `localhost:${PORT}`;
+    const proto = req.headers['x-forwarded-proto'] || 'http';
+    const baseUrl = `${proto}://${host}`;
 
-      for (const ep of endpoints) {
-        try {
-          const r = await fetch(ep, { signal: AbortSignal.timeout(3500) });
-          if (!r.ok) continue;
-          const data = await r.json();
-          if (data && data.results && data.results.length > 0) {
-            const match = data.results[0];
-            const baseUrl = ep.split('/movies/flixhq/')[0];
-            const infoRes = await fetch(`${baseUrl}/movies/flixhq/info?id=${encodeURIComponent(match.id)}`, { signal: AbortSignal.timeout(3500) });
-            if (!infoRes.ok) continue;
-            const infoData = await infoRes.json();
+    (async () => {
+      try {
+        if (!tmdbId) {
+          res.writeHead(400, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+          res.end(JSON.stringify({ success: false, error: 'Missing tmdbId' }));
+          return;
+        }
 
-            let epId = infoData.id;
-            if (infoData.episodes && infoData.episodes.length > 0) {
-              const targetEp = infoData.episodes.find(e => e.season === parseInt(season) && e.number === parseInt(episode)) || infoData.episodes[0];
-              if (targetEp) epId = targetEp.id;
-            }
+        const data = await resolveVidlinkStream(tmdbId, isTv ? (season || 1) : null, isTv ? (episode || 1) : null);
+        const qualitiesObj = data?.stream?.qualities;
 
-            const watchRes = await fetch(`${baseUrl}/movies/flixhq/watch?episodeId=${encodeURIComponent(epId)}&mediaId=${encodeURIComponent(match.id)}`, { signal: AbortSignal.timeout(3500) });
-            if (!watchRes.ok) continue;
-            const watchData = await watchRes.json();
-            if (watchData && watchData.sources && watchData.sources.length > 0) {
-              const master = watchData.sources.find(s => s.quality === 'auto' || s.isM3U8) || watchData.sources[0];
-              return {
-                success: true,
-                streamUrl: master.url,
-                subtitles: watchData.subtitles || []
-              };
+        if (!qualitiesObj || Object.keys(qualitiesObj).length === 0) {
+          if (data?.stream?.playlist) {
+            res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+            res.end(JSON.stringify({
+              success: true,
+              streamUrl: data.stream.playlist,
+              qualities: [{ quality: 'Auto', url: data.stream.playlist }],
+              tracks: []
+            }));
+            return;
+          }
+          res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+          res.end(JSON.stringify({ success: false, error: 'No stream available' }));
+          return;
+        }
+
+        // Sort descending by resolution (1080 -> 720 -> 480 -> 360)
+        const sortedKeys = Object.keys(qualitiesObj).sort((a, b) => parseInt(b, 10) - parseInt(a, 10));
+        const qualities = sortedKeys.map(k => {
+          const qData = qualitiesObj[k];
+          const referer = qData.headers?.referer || 'https://filmboom.top/';
+          const proxiedUrl = `${baseUrl}/api/stream-media?url=${encodeURIComponent(qData.url)}&referer=${encodeURIComponent(referer)}`;
+          return {
+            quality: k + 'p',
+            url: proxiedUrl,
+            rawUrl: qData.url
+          };
+        });
+
+        const primaryStreamUrl = qualities[0].url;
+
+        // Subtitle tracks: Kurdish from SubDL engine + English and other tracks from stream
+        let tracks = [];
+        if (title) {
+          let kuApi = `${baseUrl}/api/movie-sub?title=${encodeURIComponent(title)}&type=${isTv ? 'series' : 'movie'}`;
+          if (isTv) kuApi += `&season=${season || 1}&ep=${episode || 1}`;
+          tracks.push({
+            label: 'Kurdish (Sorani)',
+            file: kuApi,
+            srclang: 'ku',
+            default: true
+          });
+        }
+
+        if (data.stream.captions && Array.isArray(data.stream.captions)) {
+          for (const cap of data.stream.captions) {
+            if (cap.url) {
+              tracks.push({
+                label: cap.language || 'English',
+                file: cap.url,
+                srclang: (cap.language || '').toLowerCase().slice(0, 2) || 'en'
+              });
             }
           }
-        } catch (e) {}
-      }
-      return { success: false };
-    };
+        }
 
-    queryProviders().then(result => {
-      res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
-      res.end(JSON.stringify(result));
-    }).catch(err => {
-      res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
-      res.end(JSON.stringify({ success: false, error: err.message }));
-    });
+        res.writeHead(200, {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
+        });
+        res.end(JSON.stringify({
+          success: true,
+          streamUrl: primaryStreamUrl,
+          qualities: qualities,
+          tracks: tracks
+        }));
+      } catch (err) {
+        console.error('Error resolving movie/tv stream:', err.message);
+        res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+        res.end(JSON.stringify({ success: false, error: err.message }));
+      }
+    })();
+    return;
+  }
+
+  // Streaming Media Proxy with Range and Referer bypass for ArtPlayer
+  if (safePath === '/api/stream-media') {
+    let parsed = new URL(req.url, `http://localhost:${PORT}`);
+    const targetUrl = parsed.searchParams.get('url');
+    const referer = parsed.searchParams.get('referer') || 'https://filmboom.top/';
+
+    if (!targetUrl) {
+      res.writeHead(400, { 'Content-Type': 'text/plain' });
+      res.end('Missing url parameter');
+      return;
+    }
+
+    const range = req.headers.range;
+    const fetchHeaders = {
+      'User-Agent': VIDLINK_UA,
+      'Referer': referer,
+      'Origin': referer.replace(/\/$/, '')
+    };
+    if (range) fetchHeaders['Range'] = range;
+
+    fetch(targetUrl, { headers: fetchHeaders })
+      .then(async upstream => {
+        const outHeaders = {
+          'Content-Type': upstream.headers.get('content-type') || 'video/mp4',
+          'Accept-Ranges': 'bytes',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Headers': '*'
+        };
+        const cl = upstream.headers.get('content-length');
+        if (cl) outHeaders['Content-Length'] = cl;
+        const cr = upstream.headers.get('content-range');
+        if (cr) outHeaders['Content-Range'] = cr;
+
+        res.writeHead(upstream.status, outHeaders);
+        const reader = upstream.body.getReader();
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          res.write(Buffer.from(value));
+        }
+        res.end();
+      })
+      .catch(err => {
+        console.error('Stream media proxy error:', err.message);
+        if (!res.headersSent) {
+          res.writeHead(502, { 'Content-Type': 'text/plain', 'Access-Control-Allow-Origin': '*' });
+        }
+        res.end(err.message);
+      });
     return;
   }
 
