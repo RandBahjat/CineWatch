@@ -6941,7 +6941,6 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
             }
           }
         }
-      }
     } catch (e) {
       console.warn("Stream Error: " + (e.errors ? e.errors[0]?.message : e.message));
     }
