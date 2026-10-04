@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "libsodium-wrappers": "^0.8.4",
     "puppeteer": "^25.12.0",
     "tweetnacl": "^1.0.3"
   }
