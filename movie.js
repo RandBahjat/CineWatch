@@ -7156,7 +7156,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     const artOptions = {
       container: '#artplayerApp',
       url: streamUrl,
-      type: streamUrl.includes('.m3u8') ? 'm3u8' : 'auto',
+      type: streamUrl.includes('.m3u8') ? 'm3u8' : (streamUrl.includes('stream-media') || streamUrl.includes('.mp4') ? 'mp4' : 'auto'),
       poster: poster,
       volume: 0.8,
       isLive: false,
