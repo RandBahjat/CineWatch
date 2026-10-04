@@ -6827,6 +6827,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           break;
         }
       } catch (e) {}
+    }
+  }
+
   // 2b. If Movies or TV Series: fetch direct stream from custom server endpoints
   if (!isAnime && !cleanUrl && tmdbId) {
     const endpoints = [
