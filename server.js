@@ -153,10 +153,24 @@ async function resolveVidlinkStream(id, season, episode) {
     ? `https://vidlink.pro/api/b/tv/${token}/${season}/${episode || 1}?multiLang=0`
     : `https://vidlink.pro/api/b/movie/${token}?multiLang=0`;
 
-  const res = await fetch(apiUrl, {
-    headers: { Referer: VIDLINK_REFERER, Origin: VIDLINK_ORIGIN, 'User-Agent': VIDLINK_UA }
-  });
-  if (!res.ok) throw new Error(`VidLink API responded with HTTP ${res.status}`);
+  let res = null;
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      res = await fetch(apiUrl, {
+        headers: { Referer: VIDLINK_REFERER, Origin: VIDLINK_ORIGIN, 'User-Agent': VIDLINK_UA },
+        signal: AbortSignal.timeout(6000)
+      });
+      if (res && res.status === 429) {
+        await new Promise(r => setTimeout(r, 800));
+        continue;
+      }
+      break;
+    } catch (e) {
+      if (attempt === 1) throw e;
+    }
+  }
+
+  if (!res || !res.ok) throw new Error(`VidLink API responded with HTTP ${res ? res.status : 'timeout'}`);
   const data = await res.json();
   if (data) {
     streamCache.set(cacheKey, { timestamp: Date.now(), data });
