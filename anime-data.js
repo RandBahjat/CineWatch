@@ -7611,7 +7611,7 @@ window._ANIME_DATA = [
     "videoUrl": "73223",
     "malId": 34572,
     "anilistId": 97940,
-    "trailerUrl": "https://youtu.be/prbcmoSmIIg",
+    "trailerUrl": "https://youtu.be/QwNWY6z93O4?si=dFKD7nRKy0UAHM5s",
     "animeSlug": "black-clover",
     "overview": "Asta and Yuno are two orphans who want the same thing: to become the Wizard King. Locked in a friendly rivalry, they work hard towards their goal. While Yuno excels at magic, Asta has a problem uncommon in this world: he has no powers! But, on the day they receive their grimoires, they surprise everyone. To reach their goal, they’ll each find their own path to greatness—with or without magic.",
     "overviewKurdish": "",
