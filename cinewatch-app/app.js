@@ -1623,10 +1623,9 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
               sData.streamUrl = h264Qualities[0].url;
             }
           } else {
-            // ONLY H.265 IS AVAILABLE
+            // ONLY H.265 IS AVAILABLE - Must fallback to iframe because Artplayer cannot play H.265
             window._cwQualities = [];
             sData.streamUrl = '';
-            alert("Error: The streaming provider only has H.265 (HEVC) versions of this episode, which your browser cannot play. Please use Safari or an external player.");
           }
         }
         cleanUrl = sData.streamUrl;
@@ -1639,13 +1638,25 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
         }
       }
     } catch (e) {
-      alert("Stream Error: " + (e.errors ? e.errors[0]?.message : e.message) + "\nThis may be a rate limit from the streaming provider.");
+      console.warn("Stream Error: " + (e.errors ? e.errors[0]?.message : e.message));
     }
   }
 
-  // Removed fallback iframe logic per user strict rule.
-  // If no cleanUrl is found, ArtPlayer will be initialized with empty url and handle the error natively.
+  const streamUrl = cleanUrl || '';
 
+  // If no H.264 stream is available (because of H.265 limitation or rate limit), use the iframe
+  if (!streamUrl) {
+    if (iframeEl) {
+      iframeEl.src = `https://vidsrc.to/embed/tv/${tmdb}/${sNum}/${epNum}`;
+      iframeEl.classList.remove('hidden');
+    }
+    if (artContainer) {
+      artContainer.classList.add('hidden');
+    }
+    return; // Do not initialize ArtPlayer
+  }
+
+  // We have a direct stream, play inside CineWatch Custom ArtPlayer
   if (iframeEl) {
     iframeEl.classList.add('hidden');
     iframeEl.src = '';
