@@ -7572,6 +7572,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         textShadow: '0 2px 4px rgba(0,0,0,0.8)',
         fontWeight: '600'
       },
+      escape: false,
       encoding: 'utf-8',
     };
 
