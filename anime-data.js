@@ -7606,7 +7606,7 @@ window._ANIME_DATA = [
       "Comedy",
       "Fantasy"
     ],
-    "poster": "https://www.themoviedb.org/t/p/w600_and_h900_face/kaMisKeOoTBPxPkbC3OW7Wgt6ON.jpg",
+    "poster": "https://image.tmdb.org/t/p/original/kaMisKeOoTBPxPkbC3OW7Wgt6ON.jpg",
     "backdrop": "https://image.tmdb.org/t/p/original/4RzRtLMlTeJvpvvdXDe854VLEG8.jpg",
     "videoUrl": "73223",
     "malId": 34572,
