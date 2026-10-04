@@ -3588,7 +3588,13 @@ async function openVideoPlayerWithUrl(videoUrl, displayTitle, parentId = null, e
     // nextEpBtn onclick is usually bound elsewhere (e.g., renderPlayerDetailsPanel)
   }
 
-  const isAnime = !!(parentMovie?.isAnime || parentMovie?.type === 'Anime');
+  const isAnime = !!(
+    parentMovie?.isAnime || 
+    parentMovie?.type === 'Anime' ||
+    epData?.isAnime ||
+    (typeof videoUrl === 'string' && (videoUrl.includes(':ani_') || videoUrl.startsWith('tv_embed:34572') || videoUrl.startsWith('tv_embed:38000') || videoUrl.startsWith('tv_embed:21'))) ||
+    (typeof parentId === 'string' && (parentId.includes('mal_') || parentId.includes('anime_') || parentId.includes('black-clover') || parentId.includes('naruto') || parentId.includes('dragon-ball') || parentId.includes('one-piece')))
+  );
   if (isAnime) {
     if (video) { video.classList.add("hidden"); video.pause(); video.src = ""; }
     if (iframe) { iframe.classList.add("hidden"); iframe.src = ""; }
