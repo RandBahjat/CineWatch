@@ -2371,7 +2371,7 @@ window._MOVIES_DATA = [
       "Sci-Fi"
     ],
     poster: "https://image.tmdb.org/t/p/original/plvv0gzpYXJTnkaiLboFDc7KfYJ.jpg",
-    backdrop: "https://image.tmdb.org/t/p/original/8G6HCS82vNxgg5wp7oBDSk32XpF.jpg",
+    backdrop: "https://wallpaper.forfun.com/fetch/62/6265925bc0435e8d156b27809d97101f.jpeg?w=1200&r=0.5625&f=webp",
     videoUrl: "558",
     trailerUrl: "",
     overview: "Two years into his life as Spider-Man, Peter Parker is exhausted — his grades are slipping, his relationships are fraying, and Mary Jane seems to be moving on without him. Just as he considers giving up the mask altogether, a failed fusion experiment transforms respected scientist Otto Octavius into the ruthless Doctor Octopus. As Doc Ock's rampage threatens the city, Peter must rediscover what it truly means to carry the responsibility of being a hero.",
