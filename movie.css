@@ -3683,6 +3683,16 @@ body.rtl-layout .details-back-btn svg {
 /* ══════════════════════════════════════════════════════════
    VIDEO PLAYER BRAND WATERMARK LOGO
    ══════════════════════════════════════════════════════════ */
+
+/* Offset Kurdish Subtitle Controls to avoid overlapping the Watermark Logo */
+.video-header-right-controls {
+  margin-right: 180px !important;
+}
+@media (max-width: 768px) {
+  .video-header-right-controls {
+    margin-right: 140px !important;
+  }
+}
 .player-watermark-logo,
 .art-brand-watermark {
   position: absolute;
