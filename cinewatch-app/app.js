@@ -1624,8 +1624,31 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     } catch (e) {}
   }
 
-  // CineWatch Strict Rule: NEVER switch to external 3rd-party servers or iframe embeds.
-  // All movies, series, episodes, and seasons MUST strictly play inside CineWatch Custom ArtPlayer.
+  const fallbackSrc = isAnime && malId
+    ? `https://megavid.buzz/mal/${malId}/${epNum}/${curPref}`
+    : (isTv
+        ? `https://vidsrc.to/embed/tv/${tmdb}/${sNum}/${epNum}`
+        : `https://vidsrc.to/embed/movie/${tmdb}`);
+
+  // If no direct clean stream URL was found, seamlessly use the fallback player within CineWatch container
+  if (!cleanUrl && fallbackSrc && (!isAnime || !malId)) {
+    if (artContainer) {
+      artContainer.classList.add('hidden');
+    }
+    if (iframeEl) {
+      iframeEl.classList.remove('hidden');
+      iframeEl.setAttribute('frameborder', '0');
+      iframeEl.setAttribute('scrolling', 'no');
+      iframeEl.setAttribute('allowfullscreen', 'true');
+      iframeEl.setAttribute('allow', 'autoplay; fullscreen; encrypted-media; picture-in-picture');
+      iframeEl.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-forms allow-presentation');
+      iframeEl.src = fallbackSrc;
+    }
+    playerModal?.classList.remove('hidden');
+    resetPlayerIdleTimer();
+    return;
+  }
+
   if (iframeEl) {
     iframeEl.classList.add('hidden');
     iframeEl.src = '';
@@ -1633,7 +1656,6 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
   if (artContainer) {
     artContainer.classList.remove('hidden');
   }
-
 
   const streamUrl = cleanUrl;
 
