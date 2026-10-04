@@ -6920,6 +6920,12 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     if (artContainer) {
       artContainer.classList.add("hidden");
     }
+    const wmLogo = document.getElementById("playerWatermarkLogo");
+    if (wmLogo) {
+      wmLogo.style.display = "inline-flex";
+      wmLogo.style.zIndex = "50";
+      wmLogo.style.pointerEvents = "none";
+    }
     if (iframe) {
       iframe.classList.remove("hidden");
       iframe.setAttribute("frameborder", "0");
