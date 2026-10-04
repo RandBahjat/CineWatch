@@ -6827,37 +6827,40 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           break;
         }
       } catch (e) {}
+  // 2b. If Movies or TV Series: fetch direct stream from custom server endpoints
+  if (!isAnime && !cleanUrl && tmdbId) {
+    const endpoints = [
+      `${curOrigin}/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}&season=${season}&episode=${epNum}&title=${encodeURIComponent(cleanName)}`,
+      `http://${curHost}:3000/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}&season=${season}&episode=${epNum}&title=${encodeURIComponent(cleanName)}`,
+      `http://localhost:3000/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}&season=${season}&episode=${epNum}&title=${encodeURIComponent(cleanName)}`,
+      `http://127.0.0.1:3000/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}&season=${season}&episode=${epNum}&title=${encodeURIComponent(cleanName)}`,
+      `/api/stream?tmdbId=${tmdbId}&type=${isTv ? 'tv' : 'movie'}&season=${season}&episode=${epNum}&title=${encodeURIComponent(cleanName)}`
+    ];
+
+    for (const epUrl of endpoints) {
+      try {
+        const res = await fetch(epUrl, { signal: AbortSignal.timeout(8000) });
+        if (!res.ok) continue;
+        const sData = await res.json();
+        if (sData && sData.success && sData.streamUrl) {
+          cleanUrl = sData.streamUrl;
+          if (sData.qualities && sData.qualities.length > 0) {
+            window._cwQualities = sData.qualities;
+          }
+          if (sData.tracks && sData.tracks.length > 0) {
+            window._cwSubtitleTracks = sData.tracks;
+            const kuTrack = sData.tracks.find(t => t.srclang === 'ku') || sData.tracks[0];
+            if (kuTrack && kuTrack.file) {
+              subtitleUrl = kuTrack.file;
+            }
+          }
+          break;
+        }
+      } catch (e) {}
     }
   }
 
-  // 3. Fallback: If no direct stream was extracted, fall back gracefully to clean embed
-  if (!cleanUrl) {
-    let fallbackSrc = '';
-    if (isAnime && malId) {
-      fallbackSrc = `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`;
-    } else if (isTv) {
-      fallbackSrc = `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false&nextbutton=true${subParam}`;
-    } else {
-      fallbackSrc = `https://vidlink.pro/movie/${tmdbId}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false${subParam}`;
-    }
-
-    if (artContainer) artContainer.classList.add("hidden");
-    if (iframe) {
-      iframe.classList.remove("hidden");
-      iframe.setAttribute("frameborder", "0");
-      iframe.setAttribute("scrolling", "no");
-      iframe.setAttribute("allowfullscreen", "true");
-      iframe.setAttribute("allow", "autoplay; encrypted-media; picture-in-picture");
-      iframe.src = fallbackSrc;
-      iframe.onload = () => {
-        const co = document.getElementById("videoCenterOverlay");
-        if (co) co.style.display = "none";
-      };
-    }
-    return;
-  }
-
-  // 4. Direct stream found! Show native ArtPlayer with subtitles and branding
+  // 3. Always show native ArtPlayer with custom controls and CineWatch watermark; completely suppress 3rd party iframe
   if (iframe) {
     iframe.classList.add("hidden");
     iframe.src = "";
@@ -6866,7 +6869,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     artContainer.classList.remove("hidden");
   }
 
-  const streamUrl = cleanUrl;
+  const streamUrl = cleanUrl || (isAnime && malId
+    ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
+    : '');
 
   if (typeof Artplayer === "undefined") {
     console.warn("Artplayer library not yet available");
