@@ -7037,6 +7037,25 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       });
     }
 
+    if (window._cwQualities && window._cwQualities.length > 0) {
+      artSettings.push({
+        html: 'Quality',
+        icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
+        tooltip: window._cwQualities[0].quality,
+        selector: window._cwQualities.map((q, idx) => ({
+          default: idx === 0,
+          html: q.quality,
+          url: q.url
+        })),
+        onSelect(item) {
+          if (window.artPlayerInstance && item.url) {
+            window.artPlayerInstance.switchUrl(item.url);
+          }
+          return item.html;
+        }
+      });
+    }
+
     artSettings.push({
       html: 'Playback Speed',
       icon: '<ion-icon name="speedometer-outline" style="font-size:1.2rem;"></ion-icon>',
@@ -7251,18 +7270,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                     hls.recoverMediaError();
                     break;
                   default:
-                    hls.destroy();
-                    const artApp = document.getElementById("artplayerApp");
-                    const ifr = document.getElementById("iframeElement");
-                    if (artApp) artApp.classList.add("hidden");
-                    if (ifr) {
-                      ifr.classList.remove("hidden");
-                      ifr.src = isAnime && malId
-                        ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
-                        : (isTv
-                            ? `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=db0a0a${subParam}`
-                            : `https://vidlink.pro/movie/${tmdbId}?primaryColor=db0a0a${subParam}`);
-                    }
+                    try { hls.recoverMediaError(); } catch(e) {}
                     break;
                 }
               }
@@ -7339,17 +7347,6 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     }
   } catch (err) {
     console.error("Failed to init ArtPlayer:", err);
-    const artApp = document.getElementById("artplayerApp");
-    const ifr = document.getElementById("iframeElement");
-    if (artApp) artApp.classList.add("hidden");
-    if (ifr) {
-      ifr.classList.remove("hidden");
-      ifr.src = isAnime && malId
-        ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
-        : (isTv
-            ? `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=db0a0a${subParam}`
-            : `https://vidlink.pro/movie/${tmdbId}?primaryColor=db0a0a${subParam}`);
-    }
   }
 }
 
