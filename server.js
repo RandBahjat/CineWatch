@@ -157,8 +157,8 @@ async function resolveVidlinkStream(id, season, episode) {
     if (!token) throw new Error('Failed to generate stream token');
 
     const apiUrl = season
-      ? `https://vidlink.pro/api/b/tv/${token}/${season}/${episode || 1}?multiLang=0`
-      : `https://vidlink.pro/api/b/movie/${token}?multiLang=0`;
+      ? `https://vidlink.pro/api/b/tv/${token}/${season}/${episode || 1}?multiLang=1`
+      : `https://vidlink.pro/api/b/movie/${token}?multiLang=1`;
 
     let data = null;
     let lastErr = null;
