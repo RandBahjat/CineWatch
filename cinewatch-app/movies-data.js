@@ -760,7 +760,7 @@ window._MOVIES_DATA = [
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/9pKPTugulAt0EtH0g4gvJGffPSg.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/caBIySpwuFi2i7ynvHIlnxJLOdN.jpg",
     videoUrl: "1560520",
-    trailerUrl: "https://youtu.be/90HAqMk7qv0?si=6zrtm-Jz1yYJrGSR",
+    trailerUrl: "https://www.youtube.com/watch?v=90HAqMk7qv0",
     overview: "Bane, cunning and merciless foe, craft careful plan bring down Batman. First he unleash every dangerous villain from Arkham Asylum loose on Gotham, wear Batman down with no rest hunting them all. Batman's strength, endurance slowly fade, until finally he face Bane in fateful showdown.",
     overviewKurdish: "بەین، دوژمنێکی زیرەک و بێ بەزەیی، پلانێکی وردی داڕشتووە بۆ لابردنی باتمان لە گۆو‌‌‌‌‌‌ثام. سەرەتا هەموو دوژمنە مەترسیدارەکانی ئارکهام ئازایلۆم بەڕەلا دەکات بۆ ناو شار، تاکو باتمان بێ پشوو بمێنێتەوە لە ڕاونانیان. هێز و توانای باتمان بەرەبەرە کەم دەبێتەوە، هەتا لە کۆتاییدا ڕووبەڕووی بەین دەبێتەوە بۆ شەڕێکی چارەنووسساز.",
     director: "Jeff Wamester",
