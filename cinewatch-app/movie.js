@@ -3769,6 +3769,33 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
 
   recordWatchEvent(movie.id);
 
+  // Anime items (movies or series) should always open in ArtPlayer
+  if (movie.isAnime || movie.type === "Anime") {
+    if (movie.seasons && movie.seasons.length > 0) {
+      const firstSeason = movie.seasons[0];
+      const firstEpisode = firstSeason.episodes[0];
+      if (firstEpisode) {
+        const tmdbId = movie.videoUrl || movie.cinesrcId || movie.id;
+        const absEp = firstEpisode.absoluteEpisode || '';
+        const aniId = movie.anilistId || '';
+        openVideoPlayerWithUrl(
+          firstEpisode.videoUrl || `tv_embed:${tmdbId}:${firstSeason.season}:${firstEpisode.episode}:${absEp}:${aniId}`,
+          `${movie.title} - S${firstSeason.season} E${firstEpisode.episode}: ${firstEpisode.title || ''}`,
+          movie.id,
+          { ...firstEpisode, season: firstSeason.season }
+        );
+        return;
+      }
+    }
+    initArtPlayerForAnime(movie.videoUrl || movie.id, movie, movie, { episode: 1, absoluteEpisode: 1 });
+    const modal = document.getElementById("videoModal");
+    if (modal) modal.classList.remove("hidden");
+    const playerModal = document.getElementById("playerModal");
+    if (playerModal) playerModal.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+    return;
+  }
+
   // TV Shows with seasons should immediately start from S1 E1
   if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
     const firstSeason = movie.seasons[0];
