@@ -6716,9 +6716,14 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   }
 
   const ref = movie || parentMovie;
+  const isAnime = !!(ref?.isAnime || ref?.type === 'Anime');
+  const isTv = !!(ref?.type === 'TV Show' || ref?.seasons?.length > 0 || (epData && epData.season));
   const rawEp = epData?.absoluteEpisode || epData?.episode || 1;
-  const malId = getAnimeMalId(ref, epData?.id);
-  let tmdbId = ref?.videoUrl || ref?.tmdbId || ref?.cinesrcId || ref?.id || malId;
+  const season = epData?.season || 1;
+  const epNum = epData?.episode || rawEp;
+  const malId = isAnime ? getAnimeMalId(ref, epData?.id) : null;
+
+  let tmdbId = ref?.videoUrl || ref?.tmdbId || ref?.cinesrcId || ref?.id || (malId ? malId : '');
   if (typeof tmdbId === 'string' && tmdbId.startsWith('tv_embed:')) {
     tmdbId = tmdbId.split(':')[1];
   }
@@ -6729,12 +6734,16 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     else if (ref.malId) tmdbId = ref.malId;
     else if (ref.anilistId) tmdbId = ref.anilistId;
   }
-  const season = epData?.season || 1;
-  const epNum = epData?.episode || rawEp;
 
   const playerTitle = document.getElementById("playerTitle") || document.getElementById("playerMovieTitle");
   if (playerTitle && ref) {
-    playerTitle.textContent = `${ref.title || 'Anime'} - Ep ${rawEp}`;
+    if (isAnime) {
+      playerTitle.textContent = `${ref.title || 'Anime'} - Ep ${rawEp}`;
+    } else if (isTv) {
+      playerTitle.textContent = `${ref.title || 'Series'} - S${season} E${epNum}`;
+    } else {
+      playerTitle.textContent = ref.title || 'Movie';
+    }
   }
 
   // Ensure server selection UI is completely hidden and removed
@@ -6743,61 +6752,93 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     serverWrap.classList.add("hidden");
     serverWrap.style.display = "none";
   }
+  const serverBar = document.getElementById("playerServerBar");
+  if (serverBar) {
+    serverBar.classList.add("hidden");
+    serverBar.style.display = "none";
+  }
+  const detailsServer = document.getElementById("detailsServerSelector");
+  if (detailsServer) {
+    detailsServer.classList.add("hidden");
+    detailsServer.style.display = "none";
+  }
 
   const curPref = localStorage.getItem("cw_anime_audio_pref") || "sub";
-
   const poster = ref?.backdrop || ref?.poster || '';
   let cleanUrl = '';
   let subtitleUrl = '';
   let animeChapters = null;
 
-  const curOrigin = (typeof window !== 'undefined' && window.location.origin && !window.location.origin.includes('null') && !window.location.origin.startsWith('file')) ? window.location.origin : 'http://localhost:3000';
-  const curHost = (typeof window !== 'undefined' && window.location.hostname && !window.location.hostname.includes('null')) ? window.location.hostname : 'localhost';
-  const endpoints = [
-    `${curOrigin}/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-    `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-    `http://${curHost}:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-    `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-    `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-    `http://${curHost}:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-    `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-    `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-    `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`
-  ];
-
-  for (const epUrl of endpoints) {
-    try {
-      const res = await fetch(epUrl, { signal: AbortSignal.timeout(6000) });
-      if (!res.ok) continue;
-      const srcData = await res.json();
-      if (srcData && srcData.source) {
-        cleanUrl = srcData.source;
-        animeChapters = srcData.chapters || [];
-        if (srcData.tracks && srcData.tracks.length > 0) {
-          // Store all subtitle tracks for the language selector
-          window._cwSubtitleTracks = srcData.tracks;
-          // Default: prefer English, else first track
-          const enTrack = srcData.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || srcData.tracks[0];
-          if (enTrack && enTrack.file) {
-            subtitleUrl = enTrack.file;
-          }
-        } else {
-          window._cwSubtitleTracks = [];
-        }
-        break;
-      }
-    } catch (e) {}
+  // 1. Direct stream check from videoUrl or movie data
+  const rawVideoStr = String(videoUrl || ref?.videoUrl || '');
+  if (rawVideoStr.startsWith('http') && (rawVideoStr.includes('.mp4') || rawVideoStr.includes('.m3u8') || rawVideoStr.includes('.webm'))) {
+    cleanUrl = rawVideoStr;
   }
 
-  // Fallback: If no direct stream was extracted, fall back gracefully to embed
+  const curOrigin = (typeof window !== 'undefined' && window.location.origin && !window.location.origin.includes('null') && !window.location.origin.startsWith('file')) ? window.location.origin : 'http://localhost:3000';
+  const curHost = (typeof window !== 'undefined' && window.location.hostname && !window.location.hostname.includes('null')) ? window.location.hostname : 'localhost';
+
+  // Subtitle parameters
+  let subParam = '';
+  const cleanName = ref?.title ? ref.title.split(' - S')[0].split(' - Ep')[0].trim() : '';
+  if (cleanName) {
+    let subApi = `${curOrigin}/api/movie-sub?title=${encodeURIComponent(cleanName)}&type=${isTv ? 'series' : 'movie'}`;
+    if (isTv) subApi += `&season=${season}&ep=${epNum}`;
+    subParam = `&subtitles=${encodeURIComponent(subApi)}&subtitleLabel=Kurdish`;
+    if (!isAnime) {
+      subtitleUrl = subApi;
+      window._cwSubtitleTracks = [
+        { label: 'Kurdish (Sorani)', file: subApi, srclang: 'ku' }
+      ];
+    }
+  }
+
+  // 2. If Anime: fetch direct stream from anime endpoints
+  if (isAnime && !cleanUrl && malId) {
+    const endpoints = [
+      `${curOrigin}/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+      `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+      `http://${curHost}:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+      `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+      `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+      `http://${curHost}:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+      `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+      `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+      `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`
+    ];
+
+    for (const epUrl of endpoints) {
+      try {
+        const res = await fetch(epUrl, { signal: AbortSignal.timeout(6000) });
+        if (!res.ok) continue;
+        const srcData = await res.json();
+        if (srcData && srcData.source) {
+          cleanUrl = srcData.source;
+          animeChapters = srcData.chapters || [];
+          if (srcData.tracks && srcData.tracks.length > 0) {
+            window._cwSubtitleTracks = srcData.tracks;
+            const enTrack = srcData.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || srcData.tracks[0];
+            if (enTrack && enTrack.file) {
+              subtitleUrl = enTrack.file;
+            }
+          } else {
+            window._cwSubtitleTracks = [];
+          }
+          break;
+        }
+      } catch (e) {}
+    }
+  }
+
+  // 3. Fallback: If no direct stream was extracted, fall back gracefully to clean embed
   if (!cleanUrl) {
     let fallbackSrc = '';
-    if (malId) {
+    if (isAnime && malId) {
       fallbackSrc = `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`;
-    } else if (tmdbId && !isNaN(Number(tmdbId))) {
-      fallbackSrc = `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false&nextbutton=true`;
+    } else if (isTv) {
+      fallbackSrc = `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false&nextbutton=true${subParam}`;
     } else {
-      fallbackSrc = `https://vaplayer.ru/embed/tv/${tmdbId}/${season}/${epNum}?skin=netflix`;
+      fallbackSrc = `https://vidlink.pro/movie/${tmdbId}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false${subParam}`;
     }
 
     if (artContainer) artContainer.classList.add("hidden");
@@ -6816,7 +6857,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     return;
   }
 
-  // Direct stream found! Show native ArtPlayer with subtitles
+  // 4. Direct stream found! Show native ArtPlayer with subtitles and branding
   if (iframe) {
     iframe.classList.add("hidden");
     iframe.src = "";
@@ -6833,10 +6874,186 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   }
 
   try {
+    const artSettings = [
+      {
+        width: 200,
+        html: 'Subtitle',
+        tooltip: 'Subtitles',
+        icon: '<ion-icon name="subtitles-outline" style="font-size:1.2rem;"></ion-icon>',
+        selector: (() => {
+          const items = [
+            {
+              html: 'Display',
+              tooltip: subtitleUrl ? 'Hide' : 'Show',
+              switch: !!subtitleUrl,
+              onSwitch(item) {
+                const next = !item.switch;
+                item.tooltip = next ? 'Hide' : 'Show';
+                if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
+                  window.artPlayerInstance.subtitle.show = next;
+                }
+                return next;
+              },
+            },
+            { html: 'Off', url: '', default: !subtitleUrl }
+          ];
+          const tracks = window._cwSubtitleTracks || [];
+          tracks.forEach((t, i) => {
+            items.push({
+              html: t.label || `Track ${i + 1}`,
+              url: t.file || '',
+              default: i === 0 && !!subtitleUrl
+            });
+          });
+          if (tracks.length > 0 && isAnime) {
+            const baseTrack = tracks.find(t => (t.label||'').toLowerCase().includes('eng')) || tracks[0];
+            if (baseTrack && baseTrack.file) {
+              let kuUrl = baseTrack.file;
+              kuUrl += kuUrl.includes('?') ? '&lang=ckb' : '?lang=ckb';
+              items.push({
+                html: 'Kurdish (Sorani)',
+                url: kuUrl,
+                default: false
+              });
+            }
+          }
+          return items;
+        })(),
+        onSelect(item) {
+          if (!window.artPlayerInstance || !window.artPlayerInstance.subtitle) return item.html;
+          if (!item.url) {
+            window.artPlayerInstance.subtitle.show = false;
+          } else {
+            window.artPlayerInstance.subtitle.switch(item.url, { name: item.html });
+            window.artPlayerInstance.subtitle.show = true;
+          }
+          return item.html;
+        },
+      }
+    ];
+
+    if (isAnime) {
+      artSettings.push({
+        html: 'Audio / Dub',
+        icon: '<ion-icon name="volume-high-outline" style="font-size:1.2rem;"></ion-icon>',
+        tooltip: curPref === 'dub' ? 'English Dub' : 'Japanese (Sub)',
+        selector: [
+          { default: curPref !== 'dub', html: 'Japanese (Sub)' },
+          { default: curPref === 'dub', html: 'English Dub' },
+        ],
+        onSelect(item) {
+          const isDub = item.html === 'English Dub';
+          const route = isDub ? 'dub' : 'sub';
+          if (window.__cwPreferencesAllowed !== false) {
+            localStorage.setItem("cw_anime_audio_pref", route);
+          }
+          const curOrigin = (typeof window !== 'undefined' && window.location.origin && !window.location.origin.includes('null') && !window.location.origin.startsWith('file')) ? window.location.origin : 'http://localhost:3000';
+          const curHost = (typeof window !== 'undefined' && window.location.hostname && !window.location.hostname.includes('null')) ? window.location.hostname : 'localhost';
+          const endpoints = [
+            `${curOrigin}/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
+            `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
+            `http://${curHost}:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
+            `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
+            `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
+            `http://${curHost}:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
+            `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
+            `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
+            `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
+            `https://megavid.buzz/mal/${malId}/${rawEp}/${route}/source`
+          ];
+          (async () => {
+            for (const epUrl of endpoints) {
+              try {
+                const r = await fetch(epUrl);
+                if (!r.ok) continue;
+                const d = await r.json();
+                if (d && d.source && window.artPlayerInstance) {
+                  window.artPlayerInstance.type = 'm3u8';
+                  window.artPlayerInstance.switchUrl(d.source);
+                  if (d.tracks && d.tracks.length > 0 && window.artPlayerInstance.subtitle) {
+                    window._cwSubtitleTracks = d.tracks;
+                    const items = [
+                      {
+                        html: 'Display',
+                        tooltip: 'Show',
+                        switch: true,
+                        onSwitch(item) {
+                          const next = !item.switch;
+                          item.tooltip = next ? 'Hide' : 'Show';
+                          if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
+                            window.artPlayerInstance.subtitle.show = next;
+                          }
+                          return next;
+                        }
+                      },
+                      { html: 'Off', url: '', default: false }
+                    ];
+                    d.tracks.forEach((t, i) => {
+                      items.push({
+                        html: t.label || `Track ${i + 1}`,
+                        url: t.file || '',
+                        default: i === 0
+                      });
+                    });
+                    const baseTrack = d.tracks.find(t => (t.label||'').toLowerCase().includes('eng')) || d.tracks[0];
+                    if (baseTrack && baseTrack.file) {
+                      let kuUrl = baseTrack.file;
+                      kuUrl += kuUrl.includes('?') ? '&lang=ckb' : '?lang=ckb';
+                      items.push({
+                        html: 'Kurdish (Sorani)',
+                        url: kuUrl,
+                        default: false
+                      });
+                    }
+                    const subSetting = window.artPlayerInstance.setting.find('Subtitle');
+                    if (subSetting) {
+                      subSetting.selector = items;
+                    }
+
+                    if (baseTrack && baseTrack.file) {
+                      window.artPlayerInstance.subtitle.switch(baseTrack.file, { name: baseTrack.label });
+                      window.artPlayerInstance.subtitle.show = true;
+                    }
+                  } else if (window.artPlayerInstance.subtitle && isDub) {
+                    window.artPlayerInstance.subtitle.show = false;
+                    const subSetting = window.artPlayerInstance.setting.find('Subtitle');
+                    if (subSetting) subSetting.selector = [];
+                  }
+                  if (typeof showToast === 'function') {
+                    showToast(`Switched to ${item.html}`);
+                  }
+                  break;
+                }
+              } catch (err) {}
+            }
+          })();
+          return item.html;
+        },
+      });
+    }
+
+    artSettings.push({
+      html: 'Playback Speed',
+      icon: '<ion-icon name="speedometer-outline" style="font-size:1.2rem;"></ion-icon>',
+      tooltip: '1x',
+      range: [1, 0.5, 3, 0.25],
+      onRange(item) {
+        if (window.artPlayerInstance) window.artPlayerInstance.playbackRate = item.range[0];
+        return `${item.range[0]}x`;
+      },
+    });
+
+    const centerTitleHtml = isAnime
+      ? `<div class="art-center-title" style="position:absolute;left:50%;transform:translateX(-50%);pointer-events:none;text-align:center;white-space:nowrap;font-size:0.85rem;text-shadow:0 1px 4px rgba(0,0,0,0.9);"><span class="art-title-ep" style="font-weight:700;color:#fff;">EP ${rawEp}</span><span class="art-title-sep" style="color:rgba(255,255,255,0.4);margin:0 5px;">·</span><span class="art-title-name" style="color:rgba(255,255,255,0.72);font-weight:400;">${(ref?.title || 'Anime').replace(/"/g, '&quot;')}</span></div>`
+      : (isTv
+          ? `<div class="art-center-title" style="position:absolute;left:50%;transform:translateX(-50%);pointer-events:none;text-align:center;white-space:nowrap;font-size:0.85rem;text-shadow:0 1px 4px rgba(0,0,0,0.9);"><span class="art-title-ep" style="font-weight:700;color:#fff;">S${season} E${epNum}</span><span class="art-title-sep" style="color:rgba(255,255,255,0.4);margin:0 5px;">·</span><span class="art-title-name" style="color:rgba(255,255,255,0.72);font-weight:400;">${(ref?.title || 'Series').replace(/"/g, '&quot;')}</span></div>`
+          : `<div class="art-center-title" style="position:absolute;left:50%;transform:translateX(-50%);pointer-events:none;text-align:center;white-space:nowrap;font-size:0.85rem;text-shadow:0 1px 4px rgba(0,0,0,0.9);"><span class="art-title-name" style="font-weight:700;color:#fff;">${(ref?.title || 'Movie').replace(/"/g, '&quot;')}</span></div>`
+        );
+
     const artOptions = {
       container: '#artplayerApp',
       url: streamUrl,
-      type: 'm3u8',
+      type: streamUrl.includes('.m3u8') ? 'm3u8' : 'auto',
       poster: poster,
       volume: 0.8,
       isLive: false,
@@ -6880,8 +7097,6 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         function animeSkipIntroPlugin(art) {
           art.on('ready', () => {
              if (!animeChapters || animeChapters.length === 0) return;
-             
-             // 1. Color progress bar for chapters
              art.on('video:loadedmetadata', () => {
                 const progressInner = document.querySelector('#artplayerApp .art-progress-inner');
                 if (progressInner) {
@@ -6905,7 +7120,6 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                 }
              });
 
-             // 2. Floating skip button
              const skipBtn = document.createElement('button');
              skipBtn.className = 'cw-skip-intro-btn hidden';
              skipBtn.innerHTML = '<ion-icon name="play-forward"></ion-icon> Skip Intro';
@@ -6930,23 +7144,23 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
              skipBtn.style.opacity = '0';
              skipBtn.style.pointerEvents = 'none';
              skipBtn.style.transform = 'translateY(10px)';
-             
+
              skipBtn.onmouseover = () => { skipBtn.style.backgroundColor = 'rgba(255,255,255,1)'; skipBtn.style.color = '#000'; };
              skipBtn.onmouseout = () => { skipBtn.style.backgroundColor = 'rgba(20,20,20,0.85)'; skipBtn.style.color = '#fff'; };
-             
+
              let currentChapter = null;
              skipBtn.onclick = () => {
                 if (currentChapter) {
                    art.currentTime = currentChapter.end;
                 }
              };
-             
+
              art.template.$player.appendChild(skipBtn);
-             
+
              art.on('video:timeupdate', () => {
                 const ct = art.currentTime;
                 const active = animeChapters.find(ch => (ch.title.toLowerCase().includes('intro') || ch.title.toLowerCase().includes('opening') || ch.title.toLowerCase().includes('outro') || ch.title.toLowerCase().includes('ending')) && ct >= ch.start && ct < ch.end);
-                
+
                 if (active) {
                    currentChapter = active;
                    skipBtn.innerHTML = '<ion-icon name="play-forward"></ion-icon> Skip ' + active.title;
@@ -6964,7 +7178,6 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           });
         }
       ],
-      subtitleOffset: true,
       moreVideoAttr: {
         crossOrigin: 'anonymous',
       },
@@ -6982,7 +7195,6 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
             hls.loadSource(url);
             hls.attachMedia(video);
             hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
-              console.log('[ArtPlayer] HLS manifest parsed successfully, starting playback');
               if (art.setting) {
                 const qualities = [
                   { html: 'Auto', height: 'auto', default: true },
@@ -7020,36 +7232,31 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                 });
               }
               video.play().catch(function(e) {
-                console.warn('[ArtPlayer] Unmuted autoplay blocked, retrying muted:', e);
                 video.muted = true;
-                video.play().catch(function(err) {
-                  console.warn('[ArtPlayer] Muted playback also blocked:', err);
-                });
+                video.play().catch(function() {});
               });
             });
             hls.on(Hls.Events.ERROR, function (event, data) {
-              console.warn('[ArtPlayer] HLS error event:', data.type, data.details);
               if (data.fatal) {
                 switch (data.type) {
                   case Hls.ErrorTypes.NETWORK_ERROR:
-                    console.warn('[ArtPlayer] HLS fatal network error, reloading...');
                     hls.startLoad();
                     break;
                   case Hls.ErrorTypes.MEDIA_ERROR:
-                    console.warn('[ArtPlayer] HLS fatal media error, recovering...');
                     hls.recoverMediaError();
                     break;
                   default:
-                    console.error('[ArtPlayer] HLS fatal error unrecoverable:', data);
                     hls.destroy();
                     const artApp = document.getElementById("artplayerApp");
                     const ifr = document.getElementById("iframeElement");
                     if (artApp) artApp.classList.add("hidden");
                     if (ifr) {
                       ifr.classList.remove("hidden");
-                      ifr.src = malId
+                      ifr.src = isAnime && malId
                         ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
-                        : `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=db0a0a`;
+                        : (isTv
+                            ? `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=db0a0a${subParam}`
+                            : `https://vidlink.pro/movie/${tmdbId}?primaryColor=db0a0a${subParam}`);
                     }
                     break;
                 }
@@ -7064,186 +7271,16 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
             video.setAttribute('webkit-playsinline', '');
             video.src = url;
             video.play().catch(function(e) {
-              console.warn('[ArtPlayer] Native iOS autoplay blocked, retrying muted:', e);
               video.muted = true;
               video.play().catch(function() {});
             });
-          } else {
-            art.notice.show = 'Unsupported video format: m3u8';
           }
         },
       },
-      settings: [
-        {
-          width: 200,
-          html: 'Subtitle',
-          tooltip: 'Subtitles',
-          icon: '<ion-icon name="subtitles-outline" style="font-size:1.2rem;"></ion-icon>',
-          selector: (() => {
-            const items = [
-              {
-                html: 'Display',
-                tooltip: subtitleUrl ? 'Hide' : 'Show',
-                switch: !!subtitleUrl,
-                onSwitch(item) {
-                  const next = !item.switch;
-                  item.tooltip = next ? 'Hide' : 'Show';
-                  if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
-                    window.artPlayerInstance.subtitle.show = next;
-                  }
-                  return next;
-                },
-              },
-              { html: 'Off', url: '', default: !subtitleUrl }
-            ];
-            const tracks = window._cwSubtitleTracks || [];
-            tracks.forEach((t, i) => {
-              items.push({
-                html: t.label || `Track ${i + 1}`,
-                url: t.file || '',
-                default: i === 0 && !!subtitleUrl
-              });
-            });
-            if (tracks.length > 0) {
-              const baseTrack = tracks.find(t => (t.label||'').toLowerCase().includes('eng')) || tracks[0];
-              if (baseTrack && baseTrack.file) {
-                let kuUrl = baseTrack.file;
-                kuUrl += kuUrl.includes('?') ? '&lang=ckb' : '?lang=ckb';
-                items.push({
-                  html: 'Kurdish (Sorani)',
-                  url: kuUrl,
-                  default: false
-                });
-              }
-            }
-            return items;
-          })(),
-          onSelect(item) {
-            if (!window.artPlayerInstance || !window.artPlayerInstance.subtitle) return item.html;
-            if (!item.url) {
-              window.artPlayerInstance.subtitle.show = false;
-            } else {
-              window.artPlayerInstance.subtitle.switch(item.url, { name: item.html });
-              window.artPlayerInstance.subtitle.show = true;
-            }
-            return item.html;
-          },
-        },
-        {
-          html: 'Audio / Dub',
-          icon: '<ion-icon name="volume-high-outline" style="font-size:1.2rem;"></ion-icon>',
-          tooltip: curPref === 'dub' ? 'English Dub' : 'Japanese (Sub)',
-          selector: [
-            { default: curPref !== 'dub', html: 'Japanese (Sub)' },
-            { default: curPref === 'dub', html: 'English Dub' },
-          ],
-          onSelect(item) {
-            const isDub = item.html === 'English Dub';
-            const route = isDub ? 'dub' : 'sub';
-            if (window.__cwPreferencesAllowed !== false) {
-              localStorage.setItem("cw_anime_audio_pref", route);
-            }
-            const curOrigin = (typeof window !== 'undefined' && window.location.origin && !window.location.origin.includes('null') && !window.location.origin.startsWith('file')) ? window.location.origin : 'http://localhost:3000';
-            const curHost = (typeof window !== 'undefined' && window.location.hostname && !window.location.hostname.includes('null')) ? window.location.hostname : 'localhost';
-            const endpoints = [
-              `${curOrigin}/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
-              `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
-              `http://${curHost}:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
-              `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
-              `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
-              `http://${curHost}:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
-              `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
-              `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
-              `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${route}`,
-              `https://megavid.buzz/mal/${malId}/${rawEp}/${route}/source`
-            ];
-            (async () => {
-              for (const epUrl of endpoints) {
-                try {
-                  const r = await fetch(epUrl);
-                  if (!r.ok) continue;
-                  const d = await r.json();
-                  if (d && d.source && window.artPlayerInstance) {
-                    window.artPlayerInstance.type = 'm3u8';
-                    window.artPlayerInstance.switchUrl(d.source);
-                    if (d.tracks && d.tracks.length > 0 && window.artPlayerInstance.subtitle) {
-                      window._cwSubtitleTracks = d.tracks;
-                      const items = [
-                        {
-                          html: 'Display',
-                          tooltip: 'Show',
-                          switch: true,
-                          onSwitch(item) {
-                            const next = !item.switch;
-                            item.tooltip = next ? 'Hide' : 'Show';
-                            if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
-                              window.artPlayerInstance.subtitle.show = next;
-                            }
-                            return next;
-                          }
-                        },
-                        { html: 'Off', url: '', default: false }
-                      ];
-                      d.tracks.forEach((t, i) => {
-                        items.push({
-                          html: t.label || `Track ${i + 1}`,
-                          url: t.file || '',
-                          default: i === 0
-                        });
-                      });
-                      const baseTrack = d.tracks.find(t => (t.label||'').toLowerCase().includes('eng')) || d.tracks[0];
-                      if (baseTrack && baseTrack.file) {
-                        let kuUrl = baseTrack.file;
-                        kuUrl += kuUrl.includes('?') ? '&lang=ckb' : '?lang=ckb';
-                        items.push({
-                          html: 'Kurdish (Sorani)',
-                          url: kuUrl,
-                          default: false
-                        });
-                      }
-                      const subSetting = window.artPlayerInstance.setting.find('Subtitle');
-                      if (subSetting) {
-                        subSetting.selector = items;
-                      }
-
-                      if (baseTrack && baseTrack.file) {
-                        window.artPlayerInstance.subtitle.switch(baseTrack.file, { name: baseTrack.label });
-                        window.artPlayerInstance.subtitle.show = true;
-                      }
-                    } else if (window.artPlayerInstance.subtitle && isDub) {
-                      window.artPlayerInstance.subtitle.show = false;
-                      const subSetting = window.artPlayerInstance.setting.find('Subtitle');
-                      if (subSetting) subSetting.selector = [];
-                    }
-                    if (typeof showToast === 'function') {
-                      showToast(`Switched to ${item.html}`);
-                    }
-                    const activeLbl = document.getElementById('serverActiveLabel');
-                    if (activeLbl) activeLbl.textContent = isDub ? '🎙️ Mega Server HD (Dub)' : '🟣 Mega Server HD (Sub)';
-                    const badge = document.getElementById('streamTypeBadge');
-                    if (badge) badge.textContent = isDub ? 'MEGA DUB' : 'MEGA SUB';
-                    break;
-                  }
-                } catch (err) {}
-              }
-            })();
-            return item.html;
-          },
-        },
-        {
-          html: 'Playback Speed',
-          icon: '<ion-icon name="speedometer-outline" style="font-size:1.2rem;"></ion-icon>',
-          tooltip: '1x',
-          range: [1, 0.5, 3, 0.25],
-          onRange(item) {
-            if (window.artPlayerInstance) window.artPlayerInstance.playbackRate = item.range[0];
-            return `${item.range[0]}x`;
-          },
-        },
-      ],
+      settings: artSettings,
       contextmenu: [
         {
-          html: 'CineWatch Anime Mega Player',
+          html: 'CineWatch Custom Player',
           click(contextmenu) {
             contextmenu.show = false;
           },
@@ -7254,11 +7291,10 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           position: 'left',
           index: 50,
           style: { position: 'static' },
-          html: `<div class="art-center-title" style="position:absolute;left:50%;transform:translateX(-50%);pointer-events:none;text-align:center;white-space:nowrap;font-size:0.85rem;text-shadow:0 1px 4px rgba(0,0,0,0.9);"><span class="art-title-ep" style="font-weight:700;color:#fff;">EP ${rawEp}</span><span class="art-title-sep" style="color:rgba(255,255,255,0.4);margin:0 5px;">·</span><span class="art-title-name" style="color:rgba(255,255,255,0.72);font-weight:400;">${(ref?.title || 'Anime').replace(/"/g, '&quot;')}</span></div>`,
-          tooltip: `${ref?.title || 'Anime'} - Episode ${rawEp}`,
+          html: centerTitleHtml,
+          tooltip: isAnime ? `${ref?.title || 'Anime'} - Episode ${rawEp}` : (isTv ? `${ref?.title || 'Series'} - S${season} E${epNum}` : `${ref?.title || 'Movie'}`),
         }
       ],
-
     };
 
     artOptions.subtitle = {
@@ -7303,24 +7339,12 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     if (artApp) artApp.classList.add("hidden");
     if (ifr) {
       ifr.classList.remove("hidden");
-      ifr.src = `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`;
+      ifr.src = isAnime && malId
+        ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
+        : (isTv
+            ? `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=db0a0a${subParam}`
+            : `https://vidlink.pro/movie/${tmdbId}?primaryColor=db0a0a${subParam}`);
     }
-  }
-}
-
-function setupAnimeServerDropdown(refMovie, rawEp, curPref, malId, epData, aniId, curServer) {
-  const serverWrap = document.getElementById("serverSelectWrap");
-  if (serverWrap) {
-    serverWrap.classList.add("hidden");
-    serverWrap.style.display = "none";
-  }
-  const standardSelect = document.getElementById("videoServerSelect");
-  if (standardSelect) {
-    standardSelect.style.display = "none";
-  }
-  const playerTitle = document.getElementById("playerTitle") || document.getElementById("playerMovieTitle");
-  if (playerTitle && refMovie) {
-    playerTitle.textContent = `${refMovie.title || 'Anime'} - Ep ${rawEp}`;
   }
 }
 
@@ -7330,134 +7354,28 @@ function updateIframeServer(serverOverride) {
   const iframe = document.getElementById('iframeElement');
   const serverSelectWrap = document.getElementById('serverSelectWrap');
   const serverBar = document.getElementById('playerServerBar');
+  const detailsServer = document.getElementById("detailsServerSelector");
 
   if (serverSelectWrap) {
     serverSelectWrap.style.display = 'none';
     serverSelectWrap.classList.add('hidden');
   }
+  if (serverBar) {
+    serverBar.style.display = 'none';
+    serverBar.classList.add('hidden');
+  }
+  if (detailsServer) {
+    detailsServer.style.display = 'none';
+    detailsServer.classList.add('hidden');
+  }
 
-  // Find the parent movie to check isAnime — check parentId OR the item itself
   const parentMovie = data.parentId ? MOVIES.find(m => String(m.id) === String(data.parentId) || String(m.videoUrl) === String(data.parentId)) : null;
   const selfMovie = !parentMovie && data.id ? MOVIES.find(m => String(m.videoUrl) === String(data.id) || String(m.id) === String(data.id)) : null;
   const refMovie = parentMovie || selfMovie;
-  const isAnime = !!(refMovie?.isAnime || refMovie?.type === 'Anime');
 
-  if (isAnime) {
-    if (serverBar) {
-      serverBar.classList.add("hidden");
-      serverBar.style.display = "none";
-    }
-    if (iframe) {
-      iframe.classList.add("hidden");
-      iframe.src = "";
-    }
-    initArtPlayerForAnime(data.id, refMovie, parentMovie, data);
-    return;
-  }
-
-  const artApp = document.getElementById("artplayerApp");
-  if (artApp) artApp.classList.add("hidden");
-  if (window.artPlayerInstance) {
-    try { window.artPlayerInstance.pause(); } catch(e) {}
-  }
-
-  // Determine active server from override or localStorage (VidLink Pro is primary default)
-  let activeServer = serverOverride || localStorage.getItem('cw_selected_server_v2') || 'vidlink';
-  if (activeServer === 'artplayer') {
-    activeServer = 'vidlink';
-    try {
-      localStorage.setItem('cw_selected_server_v2', 'vidlink');
-      localStorage.setItem('cw_selected_server', 'vidlink');
-    } catch(e) {}
-  }
-
-  // Unified Custom Player: hide server selector bars
-  if (serverBar) {
-    serverBar.classList.add("hidden");
-    serverBar.style.display = "none";
-  }
-  const detailsServer = document.getElementById("detailsServerSelector");
-  if (detailsServer) {
-    detailsServer.classList.add("hidden");
-    detailsServer.style.display = "none";
-  }
-
-  let newUrl = '';
-  let allowAttr = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
-
-  const movieTitle = refMovie?.title || (document.getElementById('playerMovieTitle')?.textContent || '').split(' - S')[0].split(' - Ep')[0].trim();
-  let subParam = '';
-  if (movieTitle) {
-    const origin = (typeof window !== 'undefined' && window.location.origin && !window.location.origin.includes('null')) ? window.location.origin : 'http://localhost:3000';
-    let subApi = `${origin}/api/movie-sub?title=${encodeURIComponent(movieTitle)}&type=${data.type || 'movie'}`;
-    if (data.season) subApi += `&season=${data.season}&ep=${data.episode}`;
-    subParam = `&subtitles=${encodeURIComponent(subApi)}&subtitleLabel=Kurdish`;
-  }
-
-  if (activeServer === 'vidlink') {
-    // Server 1: VidLink Pro (https://vidlink.pro) - PRIMARY with Native In-Player Subtitles
-    if (data.type === 'tv') {
-      newUrl = `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false&nextbutton=true${subParam}`;
-    } else {
-      newUrl = `https://vidlink.pro/movie/${data.id}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false${subParam}`;
-    }
-    allowAttr = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
-  } else if (activeServer === 'mapple') {
-    // Server 2: Mapple TV (mapletv.uk / mapple.fun)
-    if (data.type === 'tv') {
-      newUrl = `https://mapple.fun/watch/tv/${data.id}-${data.season}-${data.episode}?autoPlay=true&poster=true&nextButton=true&theme=E74C3C`;
-    } else {
-      newUrl = `https://mapple.fun/watch/movie/${data.id}?autoPlay=true&title=true&poster=true&theme=E74C3C`;
-    }
-    allowAttr = 'encrypted-media; autoplay; fullscreen; picture-in-picture';
-  } else if (activeServer === 'vidapi') {
-    // Server 3: VidAPI / VaPlayer (https://vaplayer.ru)
-    if (data.type === 'tv') {
-      newUrl = `https://vaplayer.ru/embed/tv/${data.id}/${data.season}/${data.episode}?skin=netflix`;
-    } else {
-      newUrl = `https://vaplayer.ru/embed/movie/${data.id}?skin=netflix`;
-    }
-    allowAttr = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
-  } else if (activeServer === 'embedmaster') {
-    // Server 4: EmbedMaster (https://embedmaster.link)
-    if (data.type === 'tv') {
-      newUrl = `https://embedmaster.link/tv/${data.id}/${data.season}/${data.episode}?skin=aurora&welcome_page=on&autoplay=off`;
-    } else {
-      newUrl = `https://embedmaster.link/movie/${data.id}?skin=aurora&welcome_page=on&autoplay=off`;
-    }
-    allowAttr = 'autoplay *; fullscreen *; picture-in-picture *; encrypted-media *';
-  } else {
-    // Default fallback to VidLink Pro
-    if (data.type === 'tv') {
-      newUrl = `https://vidlink.pro/tv/${data.id}/${data.season}/${data.episode}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false&nextbutton=true${subParam}`;
-    } else {
-      newUrl = `https://vidlink.pro/movie/${data.id}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false${subParam}`;
-    }
-    allowAttr = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
-  }
-
-  iframe.setAttribute("frameborder", "0");
-  iframe.setAttribute("scrolling", "no");
-  iframe.setAttribute("allowfullscreen", "true");
-  iframe.setAttribute("webkitallowfullscreen", "true");
-  iframe.setAttribute("mozallowfullscreen", "true");
-  iframe.setAttribute("allow", allowAttr);
-
-  iframe.onload = () => {
-    const centerOverlay = document.getElementById('videoCenterOverlay');
-    if (centerOverlay) centerOverlay.style.display = 'none';
-  };
-  
-  if (typeof loadCustomSubtitles === 'function' && movieTitle) {
-    loadCustomSubtitles(movieTitle, data.type, data.season, data.episode);
-  }
-  
-  iframe.src = newUrl;
+  initArtPlayerForAnime(data.id, refMovie, parentMovie, data);
 }
 
-// ==========================================
-// EPISODE NAVIGATION
-// ==========================================
 function navigateToEpisode(offset) {
   const current = state.currentPlayingMovie;
   if (!current || !current.epData) return;
