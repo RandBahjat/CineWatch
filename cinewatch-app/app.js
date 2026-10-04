@@ -1524,6 +1524,7 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
 
   const curPref = audioPref || localStorage.getItem('cw_anime_audio_pref') || 'sub';
 
+  if (!cleanUrl.startsWith('http') || cleanUrl.includes('.buzz') || cleanUrl.includes('megavid')) {
     const curOrigin = (typeof window !== 'undefined' && window.location.origin && !window.location.origin.includes('null') && !window.location.origin.startsWith('file')) ? window.location.origin : 'http://localhost:3000';
     const curHost = (typeof window !== 'undefined' && window.location.hostname && !window.location.hostname.includes('null')) ? window.location.hostname : 'localhost';
     const endpoints = [
