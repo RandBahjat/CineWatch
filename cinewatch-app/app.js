@@ -1583,6 +1583,40 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     }
   }
 
+  // 2b. If Movies or TV Series: fetch direct stream from custom server endpoints
+  const tmdb = movie.videoUrl || movie.tmdbId || movie.cinesrcId || movie.id;
+  if (!isAnime && !cleanUrl && tmdb) {
+    const endpoints = [
+      `${curOrigin}/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}&season=${sNum}&episode=${epNum}&title=${encodeURIComponent(cleanName)}`,
+      `http://${curHost}:3000/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}&season=${sNum}&episode=${epNum}&title=${encodeURIComponent(cleanName)}`,
+      `http://localhost:3000/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}&season=${sNum}&episode=${epNum}&title=${encodeURIComponent(cleanName)}`,
+      `http://127.0.0.1:3000/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}&season=${sNum}&episode=${epNum}&title=${encodeURIComponent(cleanName)}`,
+      `/api/stream?tmdbId=${tmdb}&type=${isTv ? 'tv' : 'movie'}&season=${sNum}&episode=${epNum}&title=${encodeURIComponent(cleanName)}`
+    ];
+
+    for (const epUrl of endpoints) {
+      try {
+        const res = await fetch(epUrl, { signal: AbortSignal.timeout(8000) });
+        if (!res.ok) continue;
+        const sData = await res.json();
+        if (sData && sData.success && sData.streamUrl) {
+          cleanUrl = sData.streamUrl;
+          if (sData.qualities && sData.qualities.length > 0) {
+            window._cwQualities = sData.qualities;
+          }
+          if (sData.tracks && sData.tracks.length > 0) {
+            window._cwSubtitleTracks = sData.tracks;
+            const kuTrack = sData.tracks.find(t => t.srclang === 'ku') || sData.tracks[0];
+            if (kuTrack && kuTrack.file) {
+              subtitleUrl = kuTrack.file;
+            }
+          }
+          break;
+        }
+      } catch (e) {}
+    }
+  }
+
   // Fallback: If no direct stream was extracted, fall back gracefully to clean embed
   if (!cleanUrl) {
     let fallbackSrc = '';
