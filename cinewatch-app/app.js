@@ -1486,12 +1486,25 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
   const playerTitle = document.getElementById('playerTitle');
   const playerLoading = document.getElementById('playerLoading');
 
-  if (playerTitle) playerTitle.textContent = `${movie.title} - S${sNum} E${epNum}`;
+  const isAnime = !!(movie.isAnime || movie.type === 'Anime');
+  const isTv = !!(movie.type === 'TV Show' || movie.type === 'Series' || (movie.seasons && movie.seasons.length));
+
+  if (playerTitle) {
+    if (isAnime) playerTitle.textContent = `${movie.title} - S${sNum} E${epNum}`;
+    else if (isTv) playerTitle.textContent = `${movie.title} - S${sNum} E${epNum}`;
+    else playerTitle.textContent = movie.title;
+  }
   if (playerLoading) playerLoading.classList.add('hidden');
   if (playerControls) playerControls.classList.add('hidden');
   if (centerPlayBadge) centerPlayBadge.classList.add('hidden');
   if (seekLeftZone) seekLeftZone.classList.add('hidden');
   if (seekRightZone) seekRightZone.classList.add('hidden');
+
+  const serverSelectWrap = document.getElementById('serverSelectWrap');
+  if (serverSelectWrap) {
+    serverSelectWrap.classList.add('hidden');
+    serverSelectWrap.style.display = 'none';
+  }
 
   if (vidstackPlayer) {
     vidstackPlayer.pause();
@@ -1508,25 +1521,37 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     iframeEl.classList.add('hidden');
   }
 
-  if (artContainer) {
-    artContainer.classList.remove('hidden');
-  }
-
   if (window.artPlayerInstance) {
     try { window.artPlayerInstance.destroy(); } catch (e) {}
     window.artPlayerInstance = null;
   }
 
-  const malId = getAnimeMalId(movie, movie.videoUrl || movie.id);
+  const malId = isAnime ? getAnimeMalId(movie, movie.videoUrl || movie.id) : null;
   const poster = movie.backdrop || movie.poster || '';
-  let cleanUrl = String(movie.videoUrl || '');
+  let cleanUrl = '';
   let subtitleUrl = '';
 
-  const curPref = audioPref || localStorage.getItem('cw_anime_audio_pref') || 'sub';
+  const rawVideoStr = String(movie.videoUrl || '');
+  if (rawVideoStr.startsWith('http') && (rawVideoStr.includes('.mp4') || rawVideoStr.includes('.m3u8') || rawVideoStr.includes('.webm'))) {
+    cleanUrl = rawVideoStr;
+  }
 
-  if (!cleanUrl.startsWith('http') || cleanUrl.includes('.buzz') || cleanUrl.includes('megavid')) {
-    const curOrigin = (typeof window !== 'undefined' && window.location.origin && !window.location.origin.includes('null') && !window.location.origin.startsWith('file')) ? window.location.origin : 'http://localhost:3000';
-    const curHost = (typeof window !== 'undefined' && window.location.hostname && !window.location.hostname.includes('null')) ? window.location.hostname : 'localhost';
+  const curPref = audioPref || localStorage.getItem('cw_anime_audio_pref') || 'sub';
+  const curOrigin = (typeof window !== 'undefined' && window.location.origin && !window.location.origin.includes('null') && !window.location.origin.startsWith('file')) ? window.location.origin : 'http://localhost:3000';
+  const curHost = (typeof window !== 'undefined' && window.location.hostname && !window.location.hostname.includes('null')) ? window.location.hostname : 'localhost';
+
+  let subParam = '';
+  const cleanName = movie.title || '';
+  if (cleanName) {
+    let subApi = `${curOrigin}/api/movie-sub?title=${encodeURIComponent(cleanName)}&type=${isTv ? 'series' : 'movie'}`;
+    if (isTv) subApi += `&season=${sNum}&ep=${epNum}`;
+    subParam = `&subtitles=${encodeURIComponent(subApi)}&subtitleLabel=Kurdish`;
+    if (!isAnime) {
+      subtitleUrl = subApi;
+    }
+  }
+
+  if (isAnime && !cleanUrl && malId) {
     const endpoints = [
       `${curOrigin}/api/anime-source?malId=${malId}&ep=${epNum}&mode=${curPref}`,
       `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${epNum}&mode=${curPref}`,
@@ -1558,25 +1583,41 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     }
   }
 
-  // Wire Server Selector Dropdown Trigger
-  const serverSelectBtn = document.getElementById('serverSelectBtn');
-  const serverMenu = document.getElementById('serverMenu');
-  if (serverSelectBtn && serverMenu) {
-    serverSelectBtn.onclick = (e) => {
-      e.stopPropagation();
-      serverMenu.classList.toggle('hidden');
-    };
-    if (!window._cwServerMenuListener) {
-      window._cwServerMenuListener = true;
-      document.addEventListener('click', (e) => {
-        if (!e.target.closest('#serverSelectWrap')) {
-          serverMenu.classList.add('hidden');
-        }
-      });
+  // Fallback: If no direct stream was extracted, fall back gracefully to clean embed
+  if (!cleanUrl) {
+    let fallbackSrc = '';
+    const tmdb = movie.videoUrl || movie.tmdbId || movie.cinesrcId || movie.id;
+    if (isAnime && malId) {
+      fallbackSrc = `https://megavid.buzz/mal/${malId}/${epNum}/${curPref}`;
+    } else if (isTv) {
+      fallbackSrc = `https://vidlink.pro/tv/${tmdb}/${sNum}/${epNum}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false&nextbutton=true${subParam}`;
+    } else {
+      fallbackSrc = `https://vidlink.pro/movie/${tmdb}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=false${subParam}`;
     }
+
+    if (artContainer) artContainer.classList.add('hidden');
+    if (iframeEl) {
+      iframeEl.classList.remove('hidden');
+      iframeEl.setAttribute('frameborder', '0');
+      iframeEl.setAttribute('scrolling', 'no');
+      iframeEl.setAttribute('allowfullscreen', 'true');
+      iframeEl.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture');
+      iframeEl.src = fallbackSrc;
+      iframeEl.onload = () => {
+        const pl = document.getElementById('playerLoading');
+        if (pl) pl.classList.add('hidden');
+      };
+    }
+    playerModal?.classList.remove('hidden');
+    resetPlayerIdleTimer();
+    return;
   }
 
-  const streamUrl = cleanUrl.startsWith('http') ? cleanUrl : `https://vidlink.pro/anime/${malId}/${epNum}/${curPref}`;
+  if (artContainer) {
+    artContainer.classList.remove('hidden');
+  }
+
+  const streamUrl = cleanUrl;
 
   if (typeof Artplayer === 'undefined') {
     console.warn('Artplayer library not yet available');
@@ -1584,10 +1625,116 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
   }
 
   try {
+    const artSettings = [
+      {
+        width: 200,
+        html: 'Subtitle',
+        tooltip: 'Subtitles',
+        icon: '<ion-icon name="subtitles-outline" style="font-size:1.2rem;"></ion-icon>',
+        selector: [
+          {
+            html: 'Display',
+            tooltip: 'Show',
+            switch: true,
+            onSwitch(item) {
+              item.tooltip = item.switch ? 'Hide' : 'Show';
+              if (window.artPlayerInstance) {
+                window.artPlayerInstance.subtitle.show = !item.switch;
+              }
+              return !item.switch;
+            },
+          },
+          {
+            default: !subtitleUrl.includes('lang=ckb'),
+            html: isAnime ? 'English Sub' : 'Kurdish Sub',
+            url: subtitleUrl || '',
+          },
+          ...(isAnime ? [{
+            html: 'Kurdish (Sorani)',
+            url: subtitleUrl ? (subtitleUrl.includes('?') ? subtitleUrl + '&lang=ckb' : subtitleUrl + '?lang=ckb') : '',
+          }] : [])
+        ],
+        onSelect(item) {
+          if (item.url && window.artPlayerInstance) {
+            window.artPlayerInstance.subtitle.switch(item.url, { name: item.html });
+            window.artPlayerInstance.subtitle.show = true;
+          }
+          return item.html;
+        },
+      }
+    ];
+
+    if (isAnime) {
+      artSettings.push({
+        html: 'Audio / Dub',
+        icon: '<ion-icon name="volume-high-outline" style="font-size:1.2rem;"></ion-icon>',
+        tooltip: curPref === 'dub' ? 'English Dub' : 'Japanese (Sub)',
+        selector: [
+          { default: curPref !== 'dub', html: 'Japanese (Sub)' },
+          { default: curPref === 'dub', html: 'English Dub' },
+        ],
+        onSelect(item) {
+          const isDub = item.html === 'English Dub';
+          const route = isDub ? 'dub' : 'sub';
+          localStorage.setItem('cw_anime_audio_pref', route);
+          const epEndpoints = [
+            `${curOrigin}/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
+            `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
+            `http://${curHost}:3000/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
+            `http://localhost:3000/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
+            `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
+            `http://${curHost}:3500/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
+            `http://localhost:3500/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
+            `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
+            `/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`
+          ];
+          (async () => {
+            for (const epUrl of epEndpoints) {
+              try {
+                const r = await fetch(epUrl);
+                if (!r.ok) continue;
+                const d = await r.json();
+                if (d && d.source && window.artPlayerInstance) {
+                  window.artPlayerInstance.type = 'm3u8';
+                  window.artPlayerInstance.switchUrl(d.source);
+                  if (d.tracks && d.tracks.length > 0 && window.artPlayerInstance.subtitle) {
+                    const enTrack = d.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || d.tracks[0];
+                    if (enTrack && enTrack.file) {
+                      window.artPlayerInstance.subtitle.switch(enTrack.file, { name: enTrack.label });
+                    }
+                  }
+                  break;
+                }
+              } catch (err) {}
+            }
+          })();
+          return item.html;
+        },
+      });
+    }
+
+    artSettings.push({
+      html: 'Playback Speed',
+      icon: '<ion-icon name="speedometer-outline" style="font-size:1.2rem;"></ion-icon>',
+      tooltip: '1x',
+      range: [1, 0.5, 3, 0.25],
+      onRange(item) {
+        if (window.artPlayerInstance) window.artPlayerInstance.playbackRate = item.range[0];
+        return `${item.range[0]}x`;
+      },
+    });
+
+    const centerTitleHtml = isAnime
+      ? `<div class="art-center-title" style="position:absolute;left:50%;transform:translateX(-50%);pointer-events:none;text-align:center;white-space:nowrap;font-size:0.85rem;text-shadow:0 1px 4px rgba(0,0,0,0.9);"><span class="art-title-ep" style="font-weight:700;color:#fff;">EP ${epNum}</span><span class="art-title-sep" style="color:rgba(255,255,255,0.4);margin:0 5px;">·</span><span class="art-title-name" style="color:rgba(255,255,255,0.72);font-weight:400;">${(movie?.title || 'Anime').replace(/"/g, '&quot;')}</span></div>`
+      : (isTv
+          ? `<div class="art-center-title" style="position:absolute;left:50%;transform:translateX(-50%);pointer-events:none;text-align:center;white-space:nowrap;font-size:0.85rem;text-shadow:0 1px 4px rgba(0,0,0,0.9);"><span class="art-title-ep" style="font-weight:700;color:#fff;">S${sNum} E${epNum}</span><span class="art-title-sep" style="color:rgba(255,255,255,0.4);margin:0 5px;">·</span><span class="art-title-name" style="color:rgba(255,255,255,0.72);font-weight:400;">${(movie?.title || 'Series').replace(/"/g, '&quot;')}</span></div>`
+          : `<div class="art-center-title" style="position:absolute;left:50%;transform:translateX(-50%);pointer-events:none;text-align:center;white-space:nowrap;font-size:0.85rem;text-shadow:0 1px 4px rgba(0,0,0,0.9);"><span class="art-title-name" style="font-weight:700;color:#fff;">${(movie?.title || 'Movie').replace(/"/g, '&quot;')}</span></div>`
+        );
+
     const artOptions = {
       container: '#artplayerApp',
       url: streamUrl,
-      type: 'm3u8',
+      type: streamUrl.includes('.m3u8') ? 'm3u8' : 'auto',
       poster: poster,
       volume: 0.8,
       isLive: false,
@@ -1643,7 +1790,43 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
             });
             hls.loadSource(url);
             hls.attachMedia(video);
-            hls.on(Hls.Events.MANIFEST_PARSED, function () {
+            hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+              if (art.setting) {
+                const qualities = [
+                  { html: 'Auto', height: 'auto', default: true },
+                  { html: '1080p', height: 1080, default: false },
+                  { html: '720p', height: 720, default: false },
+                  { html: '480p', height: 480, default: false },
+                  { html: '360p', height: 360, default: false }
+                ];
+                art.setting.add({
+                  html: 'Quality',
+                  icon: '<ion-icon name="options-outline" style="font-size:1.2rem;"></ion-icon>',
+                  tooltip: 'Auto',
+                  selector: qualities,
+                  onSelect: function (item) {
+                    if (item.height === 'auto') {
+                      hls.currentLevel = -1;
+                      return item.html;
+                    }
+                    let bestLevel = -1;
+                    let minDiff = Infinity;
+                    data.levels.forEach((lvl, idx) => {
+                      const h = lvl.height || 0;
+                      if (h > 0) {
+                        const diff = Math.abs(h - item.height);
+                        if (diff < minDiff) {
+                          minDiff = diff;
+                          bestLevel = idx;
+                        }
+                      }
+                    });
+                    if (bestLevel === -1) bestLevel = 0;
+                    hls.currentLevel = bestLevel;
+                    return item.html;
+                  }
+                });
+              }
               video.play().catch(function() {
                 video.muted = true;
                 video.play().catch(function() {});
@@ -1671,109 +1854,13 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
           } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
             video.src = url;
             video.play().catch(function() {});
-          } else {
-            art.notice.show = 'Unsupported video format: m3u8';
           }
         },
       },
-      settings: [
-        {
-          width: 200,
-          html: 'Subtitle',
-          tooltip: 'Subtitles',
-          icon: '<ion-icon name="subtitles-outline" style="font-size:1.2rem;"></ion-icon>',
-          selector: [
-            {
-              html: 'Display',
-              tooltip: 'Show',
-              switch: true,
-              onSwitch(item) {
-                item.tooltip = item.switch ? 'Hide' : 'Show';
-                if (window.artPlayerInstance) {
-                  window.artPlayerInstance.subtitle.show = !item.switch;
-                }
-                return !item.switch;
-              },
-            },
-            {
-              default: true,
-              html: 'English Sub',
-              url: subtitleUrl || '',
-            },
-            {
-              html: 'Kurdish Sub',
-              url: '',
-            },
-            {
-              html: 'Japanese (Raw)',
-              url: '',
-            },
-          ],
-          onSelect(item) {
-            if (item.url && window.artPlayerInstance) {
-              window.artPlayerInstance.subtitle.switch(item.url, { name: item.html });
-            }
-            return item.html;
-          },
-        },
-        {
-          html: 'Audio / Dub',
-          icon: '<ion-icon name="volume-high-outline" style="font-size:1.2rem;"></ion-icon>',
-          tooltip: curPref === 'dub' ? 'English Dub' : 'Japanese (Sub)',
-          selector: [
-            { default: curPref !== 'dub', html: 'Japanese (Sub)' },
-            { default: curPref === 'dub', html: 'English Dub' },
-          ],
-          onSelect(item) {
-            const isDub = item.html === 'English Dub';
-            const route = isDub ? 'dub' : 'sub';
-            localStorage.setItem('cw_anime_audio_pref', route);
-            const curOrigin = (typeof window !== 'undefined' && window.location.origin && !window.location.origin.includes('null') && !window.location.origin.startsWith('file')) ? window.location.origin : 'http://localhost:3000';
-            const curHost = (typeof window !== 'undefined' && window.location.hostname && !window.location.hostname.includes('null')) ? window.location.hostname : 'localhost';
-            const epEndpoints = [
-              `${curOrigin}/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
-              `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
-              `http://${curHost}:3000/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
-              `http://localhost:3000/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
-              `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
-              `http://${curHost}:3500/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
-              `http://localhost:3500/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
-              `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`,
-              `/api/anime-source?malId=${malId}&ep=${epNum}&mode=${route}`
-            ];
-            (async () => {
-              for (const epUrl of epEndpoints) {
-                try {
-                  const r = await fetch(epUrl);
-                  if (!r.ok) continue;
-                  const d = await r.json();
-                  if (d && d.source && window.artPlayerInstance) {
-                    window.artPlayerInstance.switchUrl(d.source);
-                    if (typeof showToast === 'function') {
-                      showToast(`Switched to ${item.html}`);
-                    }
-                    break;
-                  }
-                } catch(e) {}
-              }
-            })();
-            return item.html;
-          },
-        },
-        {
-          html: 'Playback Speed',
-          icon: '<ion-icon name="speedometer-outline" style="font-size:1.2rem;"></ion-icon>',
-          tooltip: '1x',
-          range: [1, 0.5, 3, 0.25],
-          onRange(item) {
-            if (window.artPlayerInstance) window.artPlayerInstance.playbackRate = item.range[0];
-            return `${item.range[0]}x`;
-          },
-        },
-      ],
+      settings: artSettings,
       contextmenu: [
         {
-          html: 'CineWatch Anime Mega Player',
+          html: 'CineWatch Custom Player',
           click(contextmenu) {
             contextmenu.show = false;
           },
@@ -1784,11 +1871,10 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
           position: 'left',
           index: 50,
           style: { position: 'static' },
-          html: `<div class="art-center-title" style="position:absolute;left:50%;transform:translateX(-50%);pointer-events:none;text-align:center;white-space:nowrap;font-size:0.85rem;text-shadow:0 1px 4px rgba(0,0,0,0.9);"><span class="art-title-ep" style="font-weight:700;color:#fff;">EP ${epNum}</span><span class="art-title-sep" style="color:rgba(255,255,255,0.4);margin:0 5px;">·</span><span class="art-title-name" style="color:rgba(255,255,255,0.72);font-weight:400;">${(movie?.title || 'Anime').replace(/"/g, '&quot;')}</span></div>`,
-          tooltip: `${movie?.title || 'Anime'} - Episode ${epNum}`,
+          html: centerTitleHtml,
+          tooltip: isAnime ? `${movie?.title || 'Anime'} - Episode ${epNum}` : (isTv ? `${movie?.title || 'Series'} - S${sNum} E${epNum}` : `${movie?.title || 'Movie'}`),
         }
       ],
-
     };
 
     artOptions.subtitle = {
@@ -1842,25 +1928,18 @@ function playMovieDirect(movieId) {
 
   const playerModal = document.getElementById('playerModal');
   const playerTitle = document.getElementById('playerTitle');
-  const videoEl = document.getElementById('videoEl');
-  const iframeEl = document.getElementById('iframeEl');
-  const serverSelect = document.getElementById('serverSelect');
-  const streamTypeBadge = document.getElementById('streamTypeBadge');
   const nextEpBtn = document.getElementById('nextEpBtn');
-
-  if (playerTitle) playerTitle.textContent = `${movie.title} (${movie.year || '2026'})`;
+  const serverSelectWrap = document.getElementById('serverSelectWrap');
+  const playerTitlePill = document.getElementById('playerTitlePill') || document.querySelector('.cw-player-title-pill');
 
   const movieVideoUrlStr = String(movie.videoUrl || '');
   const ytVideoId = extractYouTubeId(movieVideoUrlStr);
-
-  const tmdb = movie.tmdbId || movie.videoUrl || movie.cinesrcId || '550';
   const isTv = movie.type === 'TV Show' || movie.type === 'Series' || (movie.seasons && movie.seasons.length);
 
   if (nextEpBtn) {
     nextEpBtn.classList.toggle('hidden', !isTv || !!ytVideoId);
   }
 
-  // Dedicated Streaming Engine
   let sNum = 1;
   let epNum = 1;
   if (movie.seasons && movie.seasons.length > 0 && movie.seasons[0].episodes && movie.seasons[0].episodes.length > 0) {
@@ -1871,1627 +1950,29 @@ function playMovieDirect(movieId) {
     epNum = movie.episode || 1;
   }
 
-  const isAnime = !!(movie.isAnime || movie.type === 'Anime');
-  const animeColor = isAnime ? '23ade5' : 'e50914';
-
-  const playerTitlePill = document.getElementById('playerTitlePill') || document.querySelector('.cw-player-title-pill');
-  const serverSelectWrap = document.getElementById('serverSelectWrap');
-
-  if (isAnime) {
-    if (playerTitlePill) {
-      playerTitlePill.classList.remove('hidden');
-      playerTitlePill.style.display = '';
-    }
-    if (serverSelectWrap) {
-      serverSelectWrap.classList.remove('hidden');
-      serverSelectWrap.style.display = '';
-    }
-    const curPref = localStorage.getItem('cw_anime_audio_pref') || 'sub';
-    initArtPlayerForAnimeApp(movie, sNum, epNum, curPref);
-
-    if (playerTitle) playerTitle.textContent = `${movie.title} - S${sNum} E${epNum}`;
-    const serverActiveLabel = document.getElementById('serverActiveLabel');
-    if (serverActiveLabel) serverActiveLabel.textContent = curPref === 'dub' ? '🎙️ Mega Server HD (Dub)' : '🟣 Mega Server HD (Sub)';
-    if (streamTypeBadge) streamTypeBadge.textContent = curPref === 'dub' ? 'MEGA DUB' : 'MEGA SUB';
-
-    const serverSelect = document.getElementById('serverSelect');
-    if (serverSelect) {
-      serverSelect.innerHTML = `
-        <div class="cw-server-opt ${curPref !== 'dub' ? 'active' : ''}" data-server="sub">🟣 Mega Server HD (Sub / Japanese)</div>
-        <div class="cw-server-opt ${curPref === 'dub' ? 'active' : ''}" data-server="dub">🎙️ Mega Server HD (English Dub)</div>
-      `;
-      serverSelect.querySelectorAll('.cw-server-opt').forEach(opt => {
-        opt.onclick = () => {
-          const chosen = opt.dataset.server;
-          localStorage.setItem('cw_anime_audio_pref', chosen);
-          initArtPlayerForAnimeApp(movie, sNum, epNum, chosen);
-          serverSelect.querySelectorAll('.cw-server-opt').forEach(o => o.classList.toggle('active', o === opt));
-          if (serverActiveLabel) serverActiveLabel.textContent = opt.textContent;
-          if (streamTypeBadge) streamTypeBadge.textContent = chosen === 'dub' ? 'MEGA DUB' : 'MEGA SUB';
-          document.getElementById('serverMenu')?.classList.add('hidden');
-        };
-      });
-    }
-
-    playerModal?.classList.remove('hidden');
-    resetPlayerIdleTimer();
-    return;
+  if (serverSelectWrap) {
+    serverSelectWrap.classList.add('hidden');
+    serverSelectWrap.style.display = 'none';
+  }
+  if (playerTitlePill) {
+    playerTitlePill.classList.remove('hidden');
+    playerTitlePill.style.display = '';
   }
 
-  let mappedSeason = sNum;
-  let mappedEpisode = epNum;
+  const curPref = localStorage.getItem('cw_anime_audio_pref') || 'sub';
+  initArtPlayerForAnimeApp(movie, sNum, epNum, curPref);
 
-  // Fix Bleach episode mapping for TMDB-based servers
-  if (String(tmdb) === "30984" || String(tmdb) === "tt0436992" || String(movie.title).toLowerCase().includes("bleach")) {
-    const bleachSeasons = [20, 21, 22, 28, 18, 22, 20, 16, 22, 16, 7, 17, 36, 51, 26, 24];
-    let ep = parseInt(epNum) || 1;
-    for (let s = 0; s < bleachSeasons.length; s++) {
-      if (ep <= bleachSeasons[s]) {
-        mappedSeason = s + 1;
-        mappedEpisode = ep;
-        break;
-      }
-      ep -= bleachSeasons[s];
-    }
+  if (playerTitle) {
+    if (movie.isAnime || movie.type === 'Anime') playerTitle.textContent = `${movie.title} - S${sNum} E${epNum}`;
+    else if (isTv) playerTitle.textContent = `${movie.title} - S${sNum} E${epNum}`;
+    else playerTitle.textContent = `${movie.title} (${movie.year || '2026'})`;
   }
 
-  // Fix One Piece episode mapping for TMDB-based servers (One Piece has 21+ seasons on TMDB!)
-  if (String(tmdb) === "37854" || String(movie.title).toLowerCase().includes("one piece")) {
-    const onePieceSeasons = [61, 16, 14, 39, 13, 52, 33, 33, 61, 45, 26, 14, 26, 47, 62, 50, 118, 50, 109, 181, 67, 100];
-    let ep = parseInt(epNum) || 1;
-    for (let s = 0; s < onePieceSeasons.length; s++) {
-      if (ep <= onePieceSeasons[s]) {
-        mappedSeason = s + 1;
-        mappedEpisode = ep;
-        break;
-      }
-      ep -= onePieceSeasons[s];
-    }
-  }
-
-  let vidLinkUrl = '';
-  let servers = [];
-
-  if (ytVideoId) {
-    vidLinkUrl = `https://www.youtube.com/embed/${ytVideoId}?autoplay=1&rel=0&modestbranding=1`;
-    servers = [
-      {
-        id: 'youtube',
-        name: '▶ YouTube HD Stream',
-        url: vidLinkUrl
-      }
-    ];
-  } else {
-    const malId = getAnimeMalId(movie, tmdb);
-    const aniId = movie.anilistId || malId || 21;
-    const megaUrl = `https://megavid.buzz/mal/${malId}/${epNum}/sub`;
-    vidLinkUrl = isAnime
-      ? megaUrl
-      : (isTv
-          ? `https://vidlink.pro/tv/${tmdb}/${mappedSeason}/${mappedEpisode}?primaryColor=${animeColor}`
-          : `https://vidlink.pro/movie/${tmdb}?primaryColor=${animeColor}`);
-
-    if (isAnime) {
-      const curPref = localStorage.getItem('cw_anime_audio_pref') || 'sub';
-      const subOption = {
-        id: 'mega',
-        name: '🟣 Mega Server (English Sub / Japanese)',
-        url: megaUrl
-      };
-      const dubOption = {
-        id: 'mega-dub',
-        name: '🎙️ Mega Server (English Dub)',
-        url: `https://megavid.buzz/mal/${malId}/${epNum}/dub`
-      };
-
-      const vidnestSub = {
-        id: 'vidnest-sub',
-        name: '🔥 VidNest HD (Sub / Japanese)',
-        url: `https://vidnest.fun/anime/${aniId}/${epNum}/sub`
-      };
-      const vidnestDub = {
-        id: 'vidnest-dub',
-        name: '🎙️ VidNest HD (English Dub)',
-        url: `https://vidnest.fun/anime/${aniId}/${epNum}/dub`
-      };
-      const vidnestHindi = {
-        id: 'vidnest-hindi',
-        name: '🇮🇳 VidNest HD (Hindi Dub)',
-        url: `https://vidnest.fun/anime/${aniId}/${epNum}/hindi`
-      };
-
-      servers = [
-        curPref === 'hindi' ? vidnestHindi : (curPref === 'dub' ? vidnestDub : vidnestSub),
-        curPref === 'dub' ? vidnestSub : vidnestDub,
-        vidnestHindi,
-        curPref === 'dub' ? dubOption : subOption,
-        curPref === 'dub' ? subOption : dubOption,
-        {
-          id: 'vidlink',
-          name: '⚡ VidLink Pro Anime',
-          url: `https://vidlink.pro/tv/${tmdb}/${mappedSeason}/${mappedEpisode}?primaryColor=${animeColor}`
-        },
-        {
-          id: 'vidsrc-sbs',
-          name: '🛡️ VidSrc (All Episodes)',
-          url: isTv ? `https://vidsrc.sbs/embed/tv/${tmdb}/1/${epNum}` : `https://vidsrc.sbs/embed/movie/${tmdb}`
-        },
-        {
-          id: 'autoembed',
-          name: '🚀 AutoEmbed HD',
-          url: isTv ? `https://player.autoembed.cc/embed/tv/${tmdb}/${mappedSeason}/${mappedEpisode}` : `https://player.autoembed.cc/embed/movie/${tmdb}`
-        }
-      ];
-    } else {
-      // Remove server selector and title pill beside go back button for movies & series
-      if (playerTitlePill) {
-        playerTitlePill.classList.add('hidden');
-        playerTitlePill.style.display = 'none';
-      }
-      if (serverSelectWrap) {
-        serverSelectWrap.classList.add('hidden');
-        serverSelectWrap.style.display = 'none';
-      }
-
-      // Vidrock server (Primary for Movies and Series with Red Theme)
-      const vidrockUrl = isTv
-        ? `https://vidrock.to/tv/${tmdb}/${mappedSeason}/${mappedEpisode}?autoplay=true&autonext=true&theme=e50914&download=true`
-        : `https://vidrock.to/movie/${tmdb}?autoplay=true&autonext=true&theme=e50914&download=true`;
-
-      const vaPlayerUrl = isTv
-        ? `https://vaplayer.ru/embed/tv/${tmdb}/${mappedSeason}/${mappedEpisode}?skin=netflix`
-        : `https://vaplayer.ru/embed/movie/${tmdb}?skin=netflix`;
-
-      const mappleUrl = isTv
-        ? `https://mapple.fun/watch/tv/${tmdb}-${mappedSeason}-${mappedEpisode}?autoPlay=true&poster=true&nextButton=true&theme=E74C3C`
-        : `https://mapple.fun/watch/movie/${tmdb}?autoPlay=true&title=true&poster=true&theme=E74C3C`;
-
-      servers = [
-        {
-          id: 'vidrock',
-          name: '🎸 Vidrock HD (Red Theme)',
-          url: vidrockUrl
-        },
-        {
-          id: 'mapple',
-          name: '🍁 Mapple TV (mapletv.uk)',
-          url: mappleUrl
-        },
-        {
-          id: 'vaplayer',
-          name: '🎬 VaPlayer HD (Netflix Skin)',
-          url: vaPlayerUrl
-        },
-        {
-          id: 'vidlink',
-          name: '⚡ VidLink Pro',
-          url: vidLinkUrl
-        },
-        {
-          id: 'vidsrc-sbs',
-          name: '🛡️ VidSrc (All Episodes)',
-          url: isTv ? `https://vidsrc.sbs/embed/tv/${tmdb}/${mappedSeason}/${mappedEpisode}` : `https://vidsrc.sbs/embed/movie/${tmdb}`
-        },
-        {
-          id: 'autoembed',
-          name: '🚀 AutoEmbed HD',
-          url: isTv ? `https://player.autoembed.cc/embed/tv/${tmdb}/${mappedSeason}/${mappedEpisode}` : `https://player.autoembed.cc/embed/movie/${tmdb}`
-        }
-      ];
-
-      // Populate Server Dropdown for Movies & Series
-      const serverSelect = document.getElementById('serverSelect');
-      if (serverSelect) {
-        serverSelect.innerHTML = servers.map((s, idx) => `
-          <div class="cw-server-opt ${idx === 0 ? 'active' : ''}" data-server="${s.id}">${s.name}</div>
-        `).join('');
-        serverSelect.querySelectorAll('.cw-server-opt').forEach((opt, idx) => {
-          opt.onclick = () => {
-            const chosen = servers.find(s => s.id === opt.dataset.server) || servers[idx];
-            switchSource(chosen);
-            serverSelect.querySelectorAll('.cw-server-opt').forEach(o => o.classList.toggle('active', o === opt));
-            document.getElementById('serverMenu')?.classList.add('hidden');
-          };
-        });
-      }
-    }
-  }
-
-  function switchSource(srv) {
-    const vidstackPlayer = document.getElementById('vidstackPlayer');
-    const iframeEl = document.getElementById('iframeEl');
-    const streamTypeBadge = document.getElementById('streamTypeBadge');
-    const playerLoading = document.getElementById('playerLoading');
-    const artContainer = document.getElementById('artplayerApp');
-
-    // Never show duplicate custom spinner
-    if (playerLoading) playerLoading.classList.add('hidden');
-
-    const playerControls = document.getElementById('playerControls');
-    const centerPlayBadge = document.getElementById('centerPlayBadge');
-    const seekLeftZone = document.getElementById('seekLeftZone');
-    const seekRightZone = document.getElementById('seekRightZone');
-
-    if (playerControls) playerControls.classList.add('hidden');
-    if (centerPlayBadge) centerPlayBadge.classList.add('hidden');
-    if (seekLeftZone) seekLeftZone.classList.add('hidden');
-    if (seekRightZone) seekRightZone.classList.add('hidden');
-
-    if (srv && srv.id === 'artplayer') {
-      initArtPlayerForAnimeApp(movie, sNum, epNum);
-      const serverActiveLabel = document.getElementById('serverActiveLabel');
-      if (serverActiveLabel) serverActiveLabel.textContent = srv.name;
-      if (streamTypeBadge) streamTypeBadge.textContent = 'ARTPLAYER';
-      return;
-    }
-
-    if (srv && srv.id === 'mega-dub') {
-      localStorage.setItem('cw_anime_audio_pref', 'dub');
-    } else if (srv && srv.id === 'mega') {
-      localStorage.setItem('cw_anime_audio_pref', 'sub');
-    }
-
-    if (artContainer) artContainer.classList.add('hidden');
-    if (window.artPlayerInstance) {
-      try { window.artPlayerInstance.pause(); } catch(e) {}
-    }
-
-    if (vidstackPlayer) {
-      vidstackPlayer.pause();
-      vidstackPlayer.src = '';
-      vidstackPlayer.classList.add('hidden');
-    }
-
-    if (iframeEl) {
-      iframeEl.classList.remove('hidden');
-      iframeEl.src = srv ? srv.url : vidLinkUrl;
-    }
-
-    const serverActiveLabel = document.getElementById('serverActiveLabel');
-    if (serverActiveLabel) {
-      serverActiveLabel.textContent = srv ? srv.name : (isAnime ? '🟣 Mega Server' : '🎸 Vidrock HD');
-    }
-    if (streamTypeBadge) {
-      if (srv && srv.id === 'vidrock') {
-        streamTypeBadge.textContent = 'VIDROCK HD';
-      } else if (srv && srv.id === 'mapple') {
-        streamTypeBadge.textContent = 'MAPPLE TV';
-      } else if (srv && srv.id === 'vaplayer') {
-        streamTypeBadge.textContent = 'NETFLIX HD';
-      } else if (isAnime) {
-        streamTypeBadge.textContent = 'MEGA HD';
-      } else {
-        streamTypeBadge.textContent = 'VIDLINK PRO';
-      }
-    }
-  }
-
-  // Setup Player Controls & Listeners
-  initPlayerControllers();
-
-  switchSource(servers[0]);
   playerModal?.classList.remove('hidden');
   resetPlayerIdleTimer();
 }
 
-function initPlayerControllers() {
-  const videoEl = document.getElementById('videoEl');
-  const playPause = document.getElementById('playPause');
-  const playIcon = document.getElementById('playIcon');
-  const rewind10 = document.getElementById('rewind10');
-  const forward10 = document.getElementById('forward10');
-  const seekBar = document.getElementById('seekBar');
-  const progressFill = document.getElementById('progressFill');
-  const progressBuffer = document.getElementById('progressBuffer');
-  const progressThumb = document.getElementById('progressThumb');
-  const progressTooltip = document.getElementById('progressTooltip');
-  const progressContainer = document.getElementById('progressContainer');
-  const curTime = document.getElementById('curTime');
-  const durTime = document.getElementById('durTime');
-  const volumeBtn = document.getElementById('volumeBtn');
-  const volumeIcon = document.getElementById('volumeIcon');
-  const volumeBar = document.getElementById('volumeBar');
-  const fullscreenBtn = document.getElementById('fullscreenBtn');
-  const pipBtn = document.getElementById('pipBtn');
-  const skipIntroBtn = document.getElementById('skipIntroBtn');
-  const centerPlayBadge = document.getElementById('centerPlayBadge');
-  const centerPlayIcon = document.getElementById('centerPlayIcon');
-  const seekLeftZone = document.getElementById('seekLeftZone');
-  const seekRightZone = document.getElementById('seekRightZone');
-  const seekLeftRipple = document.getElementById('seekLeftRipple');
-  const seekRightRipple = document.getElementById('seekRightRipple');
-  const speedBtn = document.getElementById('speedBtn');
-  const speedMenu = document.getElementById('speedMenu');
-  const speedLabel = document.getElementById('speedLabel');
-  const subtitlesBtn = document.getElementById('subtitlesBtn');
-  const subtitlesMenu = document.getElementById('subtitlesMenu');
-
-  // Center Play / Pause Pop helper
-  function triggerCenterPop(isPlay) {
-    if (!centerPlayBadge || !centerPlayIcon) return;
-    centerPlayIcon.setAttribute('name', isPlay ? 'play' : 'pause');
-    centerPlayBadge.classList.remove('pop');
-    void centerPlayBadge.offsetWidth;
-    centerPlayBadge.classList.add('pop');
-    setTimeout(() => centerPlayBadge.classList.remove('pop'), 600);
-  }
-
-  // Play / Pause Toggle
-  function togglePlay() {
-    if (!videoEl || videoEl.classList.contains('hidden')) return;
-    if (videoEl.paused) {
-      videoEl.play();
-      playIcon?.setAttribute('name', 'pause');
-      triggerCenterPop(true);
-    } else {
-      videoEl.pause();
-      playIcon?.setAttribute('name', 'play');
-      triggerCenterPop(false);
-    }
-  }
-
-  if (playPause) playPause.onclick = togglePlay;
-
-  // 10s Seek Helpers
-  function seekRelative(delta) {
-    if (!videoEl || videoEl.classList.contains('hidden')) return;
-    videoEl.currentTime = Math.max(0, Math.min(videoEl.duration || 0, videoEl.currentTime + delta));
-  }
-
-  if (rewind10) rewind10.onclick = () => seekRelative(-10);
-  if (forward10) forward10.onclick = () => seekRelative(10);
-
-  // Double Click / Tap Seek Zones
-  if (seekLeftZone) {
-    seekLeftZone.ondblclick = (e) => {
-      e.stopPropagation();
-      seekRelative(-10);
-      seekLeftRipple?.classList.add('active');
-      setTimeout(() => seekLeftRipple?.classList.remove('active'), 500);
-    };
-  }
-  if (seekRightZone) {
-    seekRightZone.ondblclick = (e) => {
-      e.stopPropagation();
-      seekRelative(10);
-      seekRightRipple?.classList.add('active');
-      setTimeout(() => seekRightRipple?.classList.remove('active'), 500);
-    };
-  }
-
-  // Video Time Updates
-  if (videoEl) {
-    videoEl.ontimeupdate = () => {
-      if (_cwPlayerState.isScrubbing) return;
-      const current = videoEl.currentTime || 0;
-      const duration = videoEl.duration || 0;
-      const percent = duration > 0 ? (current / duration) * 100 : 0;
-
-      if (curTime) curTime.textContent = formatPlayerTime(current);
-      if (durTime) durTime.textContent = formatPlayerTime(duration);
-      if (progressFill) progressFill.style.width = `${percent}%`;
-      if (progressThumb) progressThumb.style.left = `${percent}%`;
-      if (seekBar) seekBar.value = percent;
-
-      // Show Skip Intro button between 10s and 95s
-      if (skipIntroBtn) {
-        skipIntroBtn.classList.toggle('hidden', !(current >= 10 && current <= 95));
-      }
-    };
-
-    videoEl.onprogress = () => {
-      if (videoEl.buffered.length > 0 && videoEl.duration) {
-        const bufferedEnd = videoEl.buffered.end(videoEl.buffered.length - 1);
-        const bufPercent = (bufferedEnd / videoEl.duration) * 100;
-        if (progressBuffer) progressBuffer.style.width = `${bufPercent}%`;
-      }
-    };
-
-    videoEl.onplay = () => playIcon?.setAttribute('name', 'pause');
-    videoEl.onpause = () => playIcon?.setAttribute('name', 'play');
-  }
-
-  // Skip Intro (+85s)
-  if (skipIntroBtn) {
-    skipIntroBtn.onclick = () => {
-      seekRelative(85);
-      skipIntroBtn.classList.add('hidden');
-      showToast('⏩ Skipped Intro (+85s)');
-    };
-  }
-
-  // Seekbar scrubbing
-  if (seekBar) {
-    seekBar.oninput = () => {
-      _cwPlayerState.isScrubbing = true;
-      const percent = parseFloat(seekBar.value);
-      if (progressFill) progressFill.style.width = `${percent}%`;
-      if (progressThumb) progressThumb.style.left = `${percent}%`;
-      if (videoEl && videoEl.duration) {
-        const targetTime = (percent / 100) * videoEl.duration;
-        if (curTime) curTime.textContent = formatPlayerTime(targetTime);
-      }
-    };
-
-    seekBar.onchange = () => {
-      _cwPlayerState.isScrubbing = false;
-      const percent = parseFloat(seekBar.value);
-      if (videoEl && videoEl.duration) {
-        videoEl.currentTime = (percent / 100) * videoEl.duration;
-      }
-    };
-  }
-
-  // Progress bar hover tooltip
-  if (progressContainer) {
-    progressContainer.onmousemove = (e) => {
-      const rect = progressContainer.getBoundingClientRect();
-      const pos = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
-      if (progressTooltip) {
-        progressTooltip.style.left = `${pos * 100}%`;
-        const dur = videoEl?.duration || 0;
-        progressTooltip.textContent = formatPlayerTime(pos * dur);
-      }
-    };
-  }
-
-  // Volume Controller
-  function updateVolume(val) {
-    _cwPlayerState.savedVolume = val;
-    localStorage.setItem('cw_player_volume', String(val));
-    if (videoEl) {
-      videoEl.volume = val;
-      videoEl.muted = val === 0;
-    }
-    if (volumeBar) volumeBar.value = val;
-    if (volumeIcon) {
-      if (val === 0) volumeIcon.setAttribute('name', 'volume-mute-outline');
-      else if (val < 0.5) volumeIcon.setAttribute('name', 'volume-low-outline');
-      else volumeIcon.setAttribute('name', 'volume-high-outline');
-    }
-  }
-
-  if (volumeBar) {
-    volumeBar.value = _cwPlayerState.savedVolume;
-    volumeBar.oninput = () => updateVolume(parseFloat(volumeBar.value));
-  }
-
-  if (volumeBtn) {
-    volumeBtn.onclick = () => {
-      if (!videoEl) return;
-      if (videoEl.muted || videoEl.volume === 0) {
-        updateVolume(_cwPlayerState.savedVolume || 1);
-      } else {
-        updateVolume(0);
-      }
-    };
-  }
-
-  // Speed Selector Menu
-  if (speedBtn && speedMenu) {
-    speedBtn.onclick = (e) => {
-      e.stopPropagation();
-      speedMenu.classList.toggle('hidden');
-      subtitlesMenu?.classList.add('hidden');
-    };
-
-    speedMenu.querySelectorAll('.cw-menu-item').forEach(item => {
-      item.onclick = () => {
-        const spd = parseFloat(item.dataset.speed || '1');
-        _cwPlayerState.activeSpeed = spd;
-        if (videoEl) videoEl.playbackRate = spd;
-        if (speedLabel) speedLabel.textContent = `${spd}x`;
-        speedMenu.querySelectorAll('.cw-menu-item').forEach(i => i.classList.remove('active'));
-        item.classList.add('active');
-        speedMenu.classList.add('hidden');
-      };
-    });
-  }
-
-  // Subtitles Selector Menu
-  if (subtitlesBtn && subtitlesMenu) {
-    subtitlesBtn.onclick = (e) => {
-      e.stopPropagation();
-      subtitlesMenu.classList.toggle('hidden');
-      speedMenu?.classList.add('hidden');
-    };
-
-    subtitlesMenu.querySelectorAll('.cw-menu-item').forEach(item => {
-      item.onclick = () => {
-        const sub = item.dataset.sub || 'off';
-        _cwPlayerState.activeSub = sub;
-        subtitlesMenu.querySelectorAll('.cw-menu-item').forEach(i => i.classList.remove('active'));
-        item.classList.add('active');
-        subtitlesMenu.classList.add('hidden');
-        showToast(`Subtitles: ${item.textContent}`);
-      };
-    });
-  }
-
-  // PiP (Picture in Picture)
-  if (pipBtn) {
-    pipBtn.onclick = async () => {
-      if (!videoEl || videoEl.classList.contains('hidden')) return;
-      try {
-        if (document.pictureInPictureElement) {
-          await document.exitPictureInPicture();
-        } else {
-          await videoEl.requestPictureInPicture();
-        }
-      } catch (err) {}
-    };
-  }
-
-  // Fullscreen
-  if (fullscreenBtn) {
-    fullscreenBtn.onclick = (e) => {
-      e?.preventDefault();
-      if (typeof toggleFullscreen === 'function') {
-        toggleFullscreen();
-      } else {
-        if (window.electronAPI && typeof window.electronAPI.toggleFullscreen === 'function') {
-          window.electronAPI.toggleFullscreen();
-        }
-        const target = document.getElementById('playerModal') || document.getElementById('cwPlayerShell') || document.documentElement;
-        if (!document.fullscreenElement) {
-          target.requestFullscreen().catch(() => document.documentElement.requestFullscreen().catch(() => {}));
-          document.getElementById('fullscreenIcon')?.setAttribute('name', 'contract-outline');
-        } else {
-          document.exitFullscreen().catch(() => {});
-          document.getElementById('fullscreenIcon')?.setAttribute('name', 'expand-outline');
-        }
-      }
-    };
-  }
-
-  // Auto-hide controls on mouse idle
-  const playerShell = document.getElementById('cwPlayerShell');
-  if (playerShell) {
-    playerShell.onmousemove = resetPlayerIdleTimer;
-    playerShell.onclick = (e) => {
-      // Close popups on click outside
-      if (!e.target.closest('.cw-dropdown-wrap')) {
-        speedMenu?.classList.add('hidden');
-        subtitlesMenu?.classList.add('hidden');
-      }
-      resetPlayerIdleTimer();
-    };
-  }
-}
-
-function resetPlayerIdleTimer() {
-  const topbar = document.getElementById('playerTopBar');
-  const controls = document.getElementById('playerControls');
-  if (!topbar || !controls) return;
-
-  topbar.classList.remove('autohide');
-  controls.classList.remove('autohide');
-
-  clearTimeout(_cwPlayerState.idleTimer);
-  _cwPlayerState.idleTimer = setTimeout(() => {
-    // Only hide if video is playing and user is not scrubbing
-    const videoEl = document.getElementById('videoEl');
-    if (videoEl && !videoEl.paused && !_cwPlayerState.isScrubbing) {
-      topbar.classList.add('autohide');
-      controls.classList.add('autohide');
-    }
-  }, 3500);
-}
-
-// Global Keyboard Hotkeys for Player
-window.addEventListener('keydown', (e) => {
-  const playerModal = document.getElementById('playerModal');
-  if (!playerModal || playerModal.classList.contains('hidden')) return;
-
-  if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
-
-  switch (e.key.toLowerCase()) {
-    case ' ':
-    case 'k':
-      e.preventDefault();
-      document.getElementById('playPause')?.click();
-      break;
-    case 'arrowleft':
-    case 'j':
-      e.preventDefault();
-      document.getElementById('rewind10')?.click();
-      break;
-    case 'arrowright':
-    case 'l':
-      e.preventDefault();
-      document.getElementById('forward10')?.click();
-      break;
-    case 'f':
-      e.preventDefault();
-      document.getElementById('fullscreenBtn')?.click();
-      break;
-    case 'm':
-      e.preventDefault();
-      document.getElementById('volumeBtn')?.click();
-      break;
-    case 'p':
-      e.preventDefault();
-      document.getElementById('pipBtn')?.click();
-      break;
-    case 'escape':
-      closePlayer();
-      break;
-  }
-});
-
-function closePlayer() {
-  const playerModal = document.getElementById('playerModal');
-  const iframeEl = document.getElementById('iframeEl');
-  const videoEl = document.getElementById('videoEl');
-  const vidstackPlayer = document.getElementById('vidstackPlayer');
-
-  if (vidstackPlayer) {
-    vidstackPlayer.pause();
-    vidstackPlayer.src = '';
-    vidstackPlayer.classList.add('hidden');
-  }
-  if (window.artPlayerInstance) {
-    try {
-      window.artPlayerInstance.destroy();
-    } catch (e) {}
-    window.artPlayerInstance = null;
-  }
-  const artApp = document.getElementById('artplayerApp');
-  if (artApp) {
-    artApp.classList.add('hidden');
-    artApp.innerHTML = '';
-    const wmLogo = document.getElementById("playerWatermarkLogo");
-    if (wmLogo) wmLogo.style.display = "";
-  }
-  if (_cwPlayerState.hlsInstance) {
-    _cwPlayerState.hlsInstance.destroy();
-    _cwPlayerState.hlsInstance = null;
-  }
-  if (videoEl) {
-    videoEl.pause();
-    videoEl.src = '';
-  }
-  if (iframeEl) {
-    iframeEl.src = '';
-    iframeEl.classList.add('hidden');
-  }
-
-  playerModal?.classList.add('hidden');
-}
-
-// App Initialization
-function startApp() {
-  loadFavorites();
-  initCatalog();
-  setupNavigation();
-
-  document.getElementById('detailClose')?.addEventListener('click', closeDetail);
-  document.getElementById('detailModal')?.addEventListener('click', (e) => {
-    if (e.target.id === 'detailModal') closeDetail();
-  });
-
-  document.getElementById('playerClose')?.addEventListener('click', closePlayer);
-  document.getElementById('playerModal')?.addEventListener('click', (e) => {
-    if (e.target.id === 'playerModal') closePlayer();
-  });
-
-  // Window Controls (Minimize, Maximize/Restore, Close)
-  const winMinBtn = document.getElementById('winMinBtn');
-  const winMaxBtn = document.getElementById('winMaxBtn');
-  const winCloseBtn = document.getElementById('winCloseBtn');
-
-  if (winMinBtn) {
-    winMinBtn.onclick = (e) => {
-      e.stopPropagation();
-      e.preventDefault();
-      if (window.electronAPI && typeof window.electronAPI.windowMinimize === 'function') {
-        window.electronAPI.windowMinimize();
-      }
-    };
-  }
-
-  if (winMaxBtn) {
-    winMaxBtn.onclick = (e) => {
-      e.stopPropagation();
-      e.preventDefault();
-      if (window.electronAPI && typeof window.electronAPI.windowMaximize === 'function') {
-        window.electronAPI.windowMaximize();
-      } else if (document.fullscreenElement) {
-        document.exitFullscreen().catch(() => {});
-      } else {
-        document.documentElement.requestFullscreen().catch(() => {});
-      }
-    };
-  }
-
-  if (winCloseBtn) {
-    winCloseBtn.onclick = (e) => {
-      e.stopPropagation();
-      e.preventDefault();
-      if (window.electronAPI && typeof window.electronAPI.windowClose === 'function') {
-        window.electronAPI.windowClose();
-      } else {
-        window.close();
-      }
-    };
-  }
-
-  // Sync Maximize icon state dynamically from Electron
-  if (window.electronAPI && typeof window.electronAPI.onWindowStateChange === 'function') {
-    window.electronAPI.onWindowStateChange((state) => {
-      const maxIcon = winMaxBtn?.querySelector('ion-icon');
-      if (maxIcon) {
-        maxIcon.setAttribute('name', state.isMaximized ? 'copy-outline' : 'stop-outline');
-      }
-      if (winMaxBtn) {
-        winMaxBtn.setAttribute('title', state.isMaximized ? 'Restore' : 'Maximize');
-      }
-    });
-  }
-
-  // Hide desktop window controls when loaded in a web browser
-  if (!window.electronAPI) {
-    const wc = document.querySelector('.window-controls');
-    if (wc) wc.style.display = 'none';
-  }
-
-  // Settings & Account overlay handlers
-  const openSettingsBtn = document.getElementById('openSettingsBtn');
-  const closeSettingsBtn = document.getElementById('closeSettingsBtn');
-  const settingsOverlay = document.getElementById('settingsOverlay');
-  const accountOverlay = document.getElementById('accountOverlay');
-  const closeAccountBtn = document.getElementById('closeAccountBtn');
-  const mobileProfileBtn = document.getElementById('mobileProfileBtn');
-
-  function syncSettingsProfile() {
-    try {
-      const user = getActiveUser();
-      const profileCard = document.getElementById('settingsHeroProfileCard');
-      const logoutBtn = document.getElementById('logoutBtn');
-      const loginBtn = document.getElementById('settingsLoginBtn');
-      const socialCard = document.getElementById('settingsSocialCard');
-      const nameEl = document.getElementById('settingsUserName');
-      const metaEl = document.getElementById('settingsUserPlan');
-      const avatarEl = document.getElementById('settingsAvatarImg');
-
-      if (user) {
-        // User IS signed in: show account profile section, social card, and logout button
-        if (profileCard) profileCard.classList.remove('hidden');
-        if (logoutBtn) logoutBtn.classList.remove('hidden');
-        if (loginBtn) loginBtn.classList.add('hidden');
-        if (socialCard) socialCard.classList.remove('hidden');
-
-        if (nameEl) nameEl.textContent = user.name || user.username || 'User';
-        if (metaEl) metaEl.textContent = `Premium Plan • Member since ${user.createdAt ? new Date(user.createdAt).getFullYear() : '2026'}`;
-        if (avatarEl) {
-          if (user.avatar && (user.avatar.startsWith('data:') || user.avatar.startsWith('http'))) {
-            avatarEl.src = user.avatar;
-          } else {
-            avatarEl.src = 'icon-256.png';
-          }
-        }
-      } else {
-        // User is NOT signed in: HIDE everything related to the account!
-        if (profileCard) profileCard.classList.add('hidden');
-        if (logoutBtn) logoutBtn.classList.add('hidden');
-        if (loginBtn) loginBtn.classList.remove('hidden');
-        if (socialCard) socialCard.classList.add('hidden');
-        if (nameEl) nameEl.textContent = '';
-        if (metaEl) metaEl.textContent = '';
-      }
-    } catch(e) {}
-  }
-
-  function syncAccountData() {
-    try {
-      const stored = sessionStorage.getItem('cw_user');
-      const user = (window.state && window.state.user) || (stored ? JSON.parse(stored) : null);
-      const nameInput = document.getElementById('accountDisplayNameInput');
-      const emailDisplay = document.getElementById('accountEmailDisplay');
-      const avatarImg = document.getElementById('accountAvatarImg');
-      const memberSince = document.getElementById('accountMemberSince');
-      if (user) {
-        if (nameInput) nameInput.value = user.name || 'Cinephile99';
-        if (emailDisplay) emailDisplay.textContent = user.email || 'user@example.com';
-        if (memberSince) memberSince.textContent = `Member since: ${user.createdAt ? new Date(user.createdAt).toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) : 'Oct 2021'}`;
-        if (avatarImg && user.avatar && (user.avatar.startsWith('data:') || user.avatar.startsWith('http'))) {
-          avatarImg.src = user.avatar;
-        }
-      }
-    } catch(e) {}
-  }
-
-  if (openSettingsBtn) {
-    openSettingsBtn.addEventListener('click', () => {
-      syncSettingsProfile();
-      accountOverlay?.classList.add('hidden');
-      settingsOverlay?.classList.remove('hidden');
-      document.activeElement?.blur();
-    });
-  }
-  
-  if (mobileProfileBtn) {
-    mobileProfileBtn.addEventListener('click', async () => {
-      // Show auth screen if not logged in, otherwise show settings
-      let activeUser = null;
-      if (window.CW_API) {
-        activeUser = await window.CW_API.getCurrentUser();
-      }
-      
-      // Mark profile tab as active
-      document.querySelectorAll('.mobile-bottom-nav .nav-item').forEach(btn => {
-        btn.classList.toggle('active', btn.id === 'mobileProfileBtn');
-      });
-
-      if (activeUser) {
-        syncSettingsProfile();
-        accountOverlay?.classList.add('hidden');
-        settingsOverlay?.classList.remove('hidden');
-      } else {
-        showAuth();
-      }
-    });
-  }
-
-  if (closeSettingsBtn) {
-    closeSettingsBtn.addEventListener('click', () => {
-      settingsOverlay?.classList.add('hidden');
-    });
-  }
-
-  // Manage Account -> Opens Account Management section
-  document.getElementById('settingsManageAccBtn')?.addEventListener('click', () => {
-    syncAccountData();
-    settingsOverlay?.classList.add('hidden');
-    accountOverlay?.classList.remove('hidden');
-  });
-
-  // Close Account Management -> Returns to Settings
-  if (closeAccountBtn) {
-    closeAccountBtn.addEventListener('click', () => {
-      accountOverlay?.classList.add('hidden');
-      syncSettingsProfile();
-      settingsOverlay?.classList.remove('hidden');
-    });
-  }
-
-  // Account Avatar Upload
-  const accountEditAvatarBtn = document.getElementById('accountEditAvatarBtn');
-  const accountAvatarFileInput = document.getElementById('accountAvatarFileInput');
-  if (accountEditAvatarBtn && accountAvatarFileInput) {
-    accountEditAvatarBtn.addEventListener('click', () => accountAvatarFileInput.click());
-    accountAvatarFileInput.addEventListener('change', (e) => {
-      const file = e.target.files[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        const dataUrl = event.target.result;
-        const img = document.getElementById('accountAvatarImg');
-        if (img) img.src = dataUrl;
-        const settingsImg = document.getElementById('settingsAvatarImg');
-        if (settingsImg) settingsImg.src = dataUrl;
-        if (window.state && window.state.user) {
-          window.state.user.avatar = dataUrl;
-          if (typeof saveUser === 'function') saveUser(window.state.user);
-          if (typeof renderUserBadge === 'function') renderUserBadge();
-        }
-        showToast('Profile photo updated!');
-      };
-      reader.readAsDataURL(file);
-    });
-  }
-
-  // Account Edit Name
-  const accountEditNameBtn = document.getElementById('accountEditNameBtn');
-  const accountDisplayNameInput = document.getElementById('accountDisplayNameInput');
-  if (accountEditNameBtn && accountDisplayNameInput) {
-    accountEditNameBtn.addEventListener('click', () => {
-      if (accountDisplayNameInput.hasAttribute('readonly')) {
-        accountDisplayNameInput.removeAttribute('readonly');
-        accountDisplayNameInput.focus();
-        accountDisplayNameInput.select();
-        accountEditNameBtn.textContent = 'Save';
-        accountEditNameBtn.style.backgroundColor = '#e50914';
-        accountEditNameBtn.style.color = '#ffffff';
-      } else {
-        accountDisplayNameInput.setAttribute('readonly', 'true');
-        accountEditNameBtn.textContent = 'Edit';
-        accountEditNameBtn.style.backgroundColor = '';
-        accountEditNameBtn.style.color = '';
-        const newName = accountDisplayNameInput.value.trim();
-        if (newName) {
-          const settingsName = document.getElementById('settingsUserName');
-          if (settingsName) settingsName.textContent = newName;
-          if (window.state && window.state.user) {
-            window.state.user.name = newName;
-            if (typeof saveUser === 'function') saveUser(window.state.user);
-            if (typeof renderUserBadge === 'function') renderUserBadge();
-          }
-          showToast('Display name updated!');
-        }
-      }
-    });
-  }
-
-  // Account Change Password
-  document.getElementById('accountChangePasswordBtn')?.addEventListener('click', () => {
-    showToast('Password reset link sent to your email.');
-  });
-
-  // Account 2FA Toggle
-  const account2faToggle = document.getElementById('account2faToggle');
-  if (account2faToggle) {
-    account2faToggle.addEventListener('click', () => {
-      account2faToggle.classList.toggle('off');
-      const isEnabled = !account2faToggle.classList.contains('off');
-      showToast(`Two-Factor Authentication (2FA) ${isEnabled ? 'enabled' : 'disabled'}`);
-    });
-  }
-
-  // Account Sign Out of All Devices
-  document.getElementById('signOutAllDevicesBtn')?.addEventListener('click', () => {
-    showToast('Successfully signed out of all other devices');
-  });
-
-  // Change Background
-  const changeBgBtn = document.getElementById('settingsChangeBgBtn');
-  const bgFileInput = document.getElementById('settingsBgFileInput');
-  if (changeBgBtn && bgFileInput) {
-    changeBgBtn.addEventListener('click', () => bgFileInput.click());
-    bgFileInput.addEventListener('change', (e) => {
-      const file = e.target.files[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        const dataUrl = event.target.result;
-        const heroImg = document.getElementById('settingsHeroBgImg');
-        if (heroImg) heroImg.style.backgroundImage = `url('${dataUrl}')`;
-        localStorage.setItem('cinewatch_settings_bg', dataUrl);
-        showToast('Background updated!');
-      };
-      reader.readAsDataURL(file);
-    });
-  }
-
-  // Load custom background if saved
-  try {
-    const savedBg = localStorage.getItem('cinewatch_settings_bg');
-    if (savedBg) {
-      const heroImg = document.getElementById('settingsHeroBgImg');
-      if (heroImg) heroImg.style.backgroundImage = `url('${savedBg}')`;
-    }
-  } catch(e) {}
-
-  // Avatar Upload
-  const editAvatarBtn = document.getElementById('settingsEditAvatarBtn');
-  const avatarFileInput = document.getElementById('settingsAvatarFileInput');
-  if (editAvatarBtn && avatarFileInput) {
-    editAvatarBtn.addEventListener('click', () => avatarFileInput.click());
-    avatarFileInput.addEventListener('change', (e) => {
-      const file = e.target.files[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        const dataUrl = event.target.result;
-        const img = document.getElementById('settingsAvatarImg');
-        if (img) img.src = dataUrl;
-        if (window.state && window.state.user) {
-          window.state.user.avatar = dataUrl;
-          if (typeof saveUser === 'function') saveUser(window.state.user);
-          if (typeof renderUserBadge === 'function') renderUserBadge();
-        }
-        showToast('Profile photo updated!');
-      };
-      reader.readAsDataURL(file);
-    });
-  }
-
-  // Interface Scale Select
-  document.getElementById('interfaceScaleSelect')?.addEventListener('change', (e) => {
-    const scale = e.target.value;
-    document.body.style.zoom = scale === '110' ? '1.05' : scale === '90' ? '0.95' : '1';
-    showToast(`Interface scale set to ${scale}%`);
-  });
-
-  // Find Friends & Watch Party Row
-  document.getElementById('findFriendsBtn')?.addEventListener('click', () => {
-    if (typeof window.switchTab === 'function') {
-      settingsOverlay?.classList.add('hidden');
-      window.switchTab('together');
-    } else {
-      showToast('Finding friends on Watch Together...');
-    }
-  });
-
-  document.getElementById('watchPartySettingsRow')?.addEventListener('click', () => {
-    if (typeof window.switchTab === 'function') {
-      settingsOverlay?.classList.add('hidden');
-      window.switchTab('together');
-    }
-  });
-
-  // Theme Mode Controller
-  function applyThemeMode(selected) {
-    const pills = document.querySelectorAll('.settings-theme-pill');
-    pills.forEach(p => {
-      p.classList.toggle('active', p.getAttribute('data-theme') === selected);
-    });
-
-    if (selected === 'light') {
-      document.documentElement.classList.add('light-mode');
-      document.documentElement.classList.remove('dark');
-    } else if (selected === 'dark') {
-      document.documentElement.classList.remove('light-mode');
-      document.documentElement.classList.add('dark');
-    } else {
-      // System
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      document.documentElement.classList.toggle('light-mode', !prefersDark);
-      document.documentElement.classList.toggle('dark', prefersDark);
-    }
-    localStorage.setItem('cinewatch_theme_pref', selected);
-  }
-
-  // OS theme changes listener when in system mode
-  try {
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-      const current = localStorage.getItem('cinewatch_theme_pref') || 'dark';
-      if (current === 'system') {
-        document.documentElement.classList.toggle('light-mode', !e.matches);
-        document.documentElement.classList.toggle('dark', e.matches);
-      }
-    });
-  } catch(e) {}
-
-  // Theme Pills click
-  const themePills = document.querySelectorAll('.settings-theme-pill');
-  themePills.forEach(pill => {
-    pill.addEventListener('click', () => {
-      const selected = pill.getAttribute('data-theme');
-      applyThemeMode(selected);
-      showToast(`Switched to ${selected.charAt(0).toUpperCase() + selected.slice(1)} Mode`);
-    });
-  });
-
-  // Restore saved theme on startup
-  try {
-    const savedTheme = localStorage.getItem('cinewatch_theme_pref') || 'dark';
-    applyThemeMode(savedTheme);
-  } catch(e) {}
-
-  // Check for updates
-  document.getElementById('pageCheckUpdateBtn')?.addEventListener('click', () => {
-    showToast('Checking for updates...');
-    setTimeout(() => {
-      showToast('CineWatch is up to date (v2.4.1)');
-    }, 800);
-  });
-
-  // Save Settings
-  document.getElementById('saveSettingsBtn')?.addEventListener('click', () => {
-    const quality = document.getElementById('videoQualitySelect')?.value || 'auto';
-    const reducedMotion = document.getElementById('reducedMotionToggle')?.checked || false;
-    const autoplay = document.getElementById('autoplayToggle')?.checked ?? true;
-    const spatialAudio = document.getElementById('spatialAudioToggle')?.checked ?? true;
-
-    localStorage.setItem('cinewatch_settings', JSON.stringify({
-      quality, reducedMotion, autoplay, spatialAudio
-    }));
-
-    showToast('Settings saved successfully!');
-    setTimeout(() => {
-      settingsOverlay?.classList.add('hidden');
-    }, 600);
-  });
-
-  // Log Out button
-  document.getElementById('logoutBtn')?.addEventListener('click', () => {
-    settingsOverlay?.classList.add('hidden');
-    if (typeof window.logout === 'function') {
-      window.logout();
-    } else if (window.CW_API && typeof window.CW_API.signOut === 'function') {
-      window.CW_API.signOut();
-      if (typeof saveUser === 'function') saveUser(null);
-      if (typeof renderUserBadge === 'function') renderUserBadge();
-    }
-    syncSettingsProfile();
-    showToast('Signed out successfully');
-  });
-
-  // Sign In button inside Settings when logged out
-  document.getElementById('settingsLoginBtn')?.addEventListener('click', () => {
-    settingsOverlay?.classList.add('hidden');
-    if (typeof openAuthOverlay === 'function') {
-      openAuthOverlay('signin');
-    } else {
-      showAuth();
-    }
-  });
-
-  // ── Auth overlay fade helpers ─────────────────────────────────────────
-  const authOverlay = document.getElementById('authOverlay');
-
-  function showAuth(mode = 'signin') {
-    const authOverlay = document.getElementById('authOverlay');
-    if (!authOverlay) return;
-    if (typeof switchAuthTab === 'function') {
-      switchAuthTab(mode === 'signup' ? 'signup' : 'signin');
-    }
-    authOverlay.style.display = 'flex';
-    authOverlay.style.visibility = 'visible';
-    authOverlay.style.pointerEvents = 'auto';
-    authOverlay.style.opacity = '0';
-    authOverlay.classList.remove('hidden');
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        authOverlay.style.opacity = '1';
-      });
-    });
-    document.body.style.overflow = 'hidden';
-  }
-  window.showAuth = showAuth;
-  window.openAuthOverlay = showAuth;
-  window.openAuthModal = showAuth;
-
-  function hideAuth() {
-    const authOverlay = document.getElementById('authOverlay');
-    if (!authOverlay) return;
-    authOverlay.style.opacity = '0';
-    authOverlay.style.pointerEvents = 'none';
-    const onEnd = () => {
-      authOverlay.classList.add('hidden');
-      authOverlay.style.display = '';
-      authOverlay.style.opacity = '';
-      authOverlay.style.visibility = '';
-      authOverlay.style.pointerEvents = '';
-      authOverlay.removeEventListener('transitionend', onEnd);
-    };
-    authOverlay.addEventListener('transitionend', onEnd);
-    document.body.style.overflow = '';
-  }
-  window.hideAuth = hideAuth;
-  window.closeAuthModal = hideAuth;
-  // ────────────────────────────────────────────────────────────────────────
-
-  // Robust document-level event delegation for ANY Sign In buttons
-  document.addEventListener('click', (e) => {
-    const trigger = e.target.closest('#openAuthBtn, .sidebar-signin-btn, #headerLoginBtn, #settingsLoginBtn');
-    if (trigger) {
-      e.preventDefault();
-      e.stopPropagation();
-      document.getElementById('settingsOverlay')?.classList.add('hidden');
-      showAuth();
-      document.activeElement?.blur();
-    }
-  });
-
-  document.getElementById('closeAuthBtn')?.addEventListener('click', () => {
-    hideAuth();
-    // Force-deactivate profile btn (it has no data-tab so switchTab can't catch it)
-    document.getElementById('mobileProfileBtn')?.classList.remove('active');
-    switchTab('home');
-  });
-
-  document.getElementById('desktopCloseAuthBtn')?.addEventListener('click', () => {
-    hideAuth();
-  });
-
-  // Tab switching — staggered CSS transitions
-  let _authCurrentTab = 'signin';
-
-  function switchAuthTab(tab) {
-    if (tab === _authCurrentTab) return;
-
-    // Update mobile pill tabs
-    document.querySelectorAll('.auth-tab').forEach(t =>
-      t.classList.toggle('active', t.dataset.tab === tab)
-    );
-
-    // Right panel forms — stagger: fade out → wait → fade in
-    const outFormId = _authCurrentTab === 'signin' ? 'formSignIn' : 'formSignUp';
-    const inFormId  = tab === 'signin' ? 'formSignIn' : 'formSignUp';
-    document.getElementById(outFormId)?.classList.remove('active');
-    // Wait for out-fade to progress before bringing in the new one
-    setTimeout(() => document.getElementById(inFormId)?.classList.add('active'), 180);
-
-    // Left panel content — same stagger
-    const outLeftId = _authCurrentTab === 'signin' ? 'leftContentSignIn' : 'leftContentSignUp';
-    const inLeftId  = tab === 'signin' ? 'leftContentSignIn' : 'leftContentSignUp';
-    document.getElementById(outLeftId)?.classList.remove('active');
-    setTimeout(() => document.getElementById(inLeftId)?.classList.add('active'), 180);
-
-    _authCurrentTab = tab;
-  }
-
-  document.getElementById('tabSignIn')?.addEventListener('click', () => switchAuthTab('signin'));
-  document.getElementById('tabSignUp')?.addEventListener('click', () => switchAuthTab('signup'));
-  document.getElementById('switchToSignUp')?.addEventListener('click', (e) => { e.preventDefault(); switchAuthTab('signup'); });
-  document.getElementById('switchToSignIn')?.addEventListener('click', (e) => { e.preventDefault(); switchAuthTab('signin'); });
-
-    // Password toggle
-  document.querySelectorAll('.toggle-password').forEach(icon => {
-    icon.addEventListener('click', () => {
-      const input = icon.previousElementSibling;
-      if (input.type === 'password') {
-        input.type = 'text';
-        icon.name = 'eye-off-outline';
-      } else {
-        input.type = 'password';
-        icon.name = 'eye-outline';
-      }
-    });
-  });
-
-  // Desktop left-panel toggle buttons
-  document.getElementById('panelSwitchToSignUp')?.addEventListener('click', () => switchAuthTab('signup'));
-  document.getElementById('panelSwitchToSignIn')?.addEventListener('click', () => switchAuthTab('signin'));
-
-  // Supabase Auth System
-  async function updateProfileUI() {
-    let activeUser = null;
-    if (window.CW_API) {
-      activeUser = await window.CW_API.getCurrentUser();
-    }
-    const profileName = document.querySelector('.profile-name h2');
-    if (activeUser && profileName) {
-      profileName.textContent = activeUser.user_metadata?.name || activeUser.email.split('@')[0];
-      
-      const savedAvatar = localStorage.getItem('cw_avatar');
-      const savedBanner = localStorage.getItem('cw_banner');
-      if (savedAvatar) {
-        const avatar = document.getElementById('profileAvatar');
-        if (avatar) {
-          avatar.style.backgroundImage = `url(${savedAvatar})`;
-          avatar.style.backgroundSize = 'cover';
-          avatar.style.backgroundPosition = 'center';
-          const icon = avatar.querySelector('ion-icon');
-          if (icon) icon.style.display = 'none';
-        }
-        updateMobileNavAvatar(savedAvatar);
-      }
-      if (savedBanner) {
-        const banner = document.getElementById('profileBanner');
-        if (banner) banner.style.backgroundImage = `url(${savedBanner})`;
-      }
-    } else {
-      if (profileName) profileName.textContent = 'Guest';
-      
-      const avatar = document.getElementById('profileAvatar');
-      if (avatar) {
-        avatar.style.backgroundImage = 'none';
-        const icon = avatar.querySelector('ion-icon');
-        if (icon) icon.style.display = 'block';
-      }
-      updateMobileNavAvatar(null);
-      
-      const banner = document.getElementById('profileBanner');
-      if (banner) {
-        banner.style.backgroundImage = `url('https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=2070&auto=format&fit=crop')`;
-      }
-    }
-    syncSettingsProfile();
-  }
-  
-  // Call on load
-  setTimeout(() => {
-    updateProfileUI();
-    syncSettingsProfile();
-  }, 1000); // give API time to load
-
-  // Listen for auth changes from API
-  window.addEventListener('cw:authChanged', (e) => {
-    updateProfileUI();
-    syncSettingsProfile();
-  });
-
-  // Log Out Action
-  document.getElementById('logoutBtn')?.addEventListener('click', async () => {
-    if (window.CW_API) {
-      await window.CW_API.signOut();
-    }
-    showToast('Logged out successfully');
-    updateProfileUI();
-    
-    // Redirect to home/sign in if needed, or open auth overlay
-    document.getElementById('settingsOverlay')?.classList.add('hidden');
-    showAuth();
-  });
-
-  // Form submissions
-  document.getElementById('formSignIn')?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const email = document.getElementById('signinEmail')?.value.trim();
-    const pass = document.getElementById('signinPass')?.value;
-    
-    if (!email || !pass) return showToast('Please enter both email and password');
-    
-    if (window.CW_API) {
-      const { user, error } = await window.CW_API.signIn(email, pass);
-      if (user) {
-        showToast(`Welcome back!`);
-        updateProfileUI();
-        hideAuth();
-        e.target.reset();
-      } else {
-        showToast(error || 'Invalid email or password');
-      }
-    } else {
-      showToast('Backend API not loaded.');
-    }
-  });
-
-  document.getElementById('formSignUp')?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const name = document.getElementById('signupName')?.value.trim();
-    const email = document.getElementById('signupEmail')?.value.trim();
-    const pass = document.getElementById('signupPass')?.value;
-    
-    if (!name || !email || !pass) return showToast('Please fill all fields');
-    if (pass.length < 6) return showToast('Password must be at least 6 characters');
-    
-    if (window.CW_API) {
-      const { user, error } = await window.CW_API.signUp(name, email, pass);
-      if (user) {
-        showToast(`Account created! Welcome, ${name}.`);
-        updateProfileUI();
-        hideAuth();
-        e.target.reset();
-      } else {
-        showToast(error || 'Failed to create account');
-      }
-    } else {
-      showToast('Backend API not loaded.');
-    }
-  });
-
-  // â”€â”€ Restore saved profile data on load â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-  const savedTheme  = localStorage.getItem('cw_theme') || 'dark';
-
-  function updateMobileNavAvatar(dataUrl) {
-    const mobileIcon = document.getElementById('mobileProfileIcon');
-    const mobileImg = document.getElementById('mobileProfileImg');
-    if (mobileIcon && mobileImg) {
-      if (dataUrl) {
-        mobileImg.src = dataUrl;
-        mobileImg.style.display = 'block';
-        mobileIcon.style.display = 'none';
-      } else {
-        mobileImg.style.display = 'none';
-        mobileIcon.style.display = 'block';
-      }
-    }
-  }
-
-  // Apply saved theme
-  function applyTheme(mode) {
-    const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-    if (mode === 'light') {
-      document.documentElement.classList.add('light-mode');
-    } else if (mode === 'dark') {
-      document.documentElement.classList.remove('light-mode');
-    } else {
-      prefersLight ? document.documentElement.classList.add('light-mode')
-                   : document.documentElement.classList.remove('light-mode');
-    }
-    // Update active pill
-    document.querySelectorAll('.theme-pill').forEach(p => {
-      p.classList.toggle('active', p.dataset.theme === mode);
-    });
-  }
-  applyTheme(savedTheme);
-
-  // Theme pills
-  document.querySelectorAll('.theme-pill').forEach(pill => {
-    pill.addEventListener('click', () => {
-      const mode = pill.dataset.theme;
-      localStorage.setItem('cw_theme', mode);
-      applyTheme(mode);
-      const labels = { system: 'Using System Default', dark: 'Switched to Dark Mode', light: 'Switched to Light Mode' };
-      showToast(labels[mode]);
-    });
-  });
-
-  // Listen for system theme changes when mode = system
-  window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
-    if ((localStorage.getItem('cw_theme') || 'dark') === 'system') {
-      e.matches ? document.documentElement.classList.add('light-mode')
-                : document.documentElement.classList.remove('light-mode');
-    }
-  });
-
-  // â”€â”€ Avatar file picker â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-  const avatarInput = document.getElementById('avatarFileInput');
-  if (avatarInput) {
-    avatarInput.addEventListener('change', (e) => {
-      const file = e.target.files[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = (ev) => {
-        const dataUrl = ev.target.result;
-        localStorage.setItem('cw_avatar', dataUrl);
-        const avatar = document.getElementById('profileAvatar');
-        if (avatar) {
-          avatar.style.backgroundImage = `url(${dataUrl})`;
-          avatar.style.backgroundSize = 'cover';
-          avatar.style.backgroundPosition = 'center';
-          const icon = avatar.querySelector('ion-icon');
-          if (icon) icon.style.display = 'none';
-        }
-        updateMobileNavAvatar(dataUrl);
-        showToast('Profile picture saved!');
-      };
-      reader.readAsDataURL(file);
-    });
-  }
-
-  // â”€â”€ Banner file picker â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-  const bannerInput = document.getElementById('bannerFileInput');
-  if (bannerInput) {
-    bannerInput.addEventListener('change', (e) => {
-      const file = e.target.files[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = (ev) => {
-        const dataUrl = ev.target.result;
-        localStorage.setItem('cw_banner', dataUrl);
-        const banner = document.getElementById('profileBanner');
-        if (banner) banner.style.backgroundImage = `url(${dataUrl})`;
-        showToast('Cover photo saved!');
-      };
-      reader.readAsDataURL(file);
-    });
-  }
-
-  // Save button â€” show success animation, stay on settings page
-  document.getElementById('saveSettingsBtn')?.addEventListener('click', () => {
-    const btn = document.getElementById('saveSettingsBtn');
-    if (!btn || btn.classList.contains('saving')) return;
-
-    btn.classList.add('saving');
-    btn.innerHTML = '<ion-icon name="checkmark-circle"></ion-icon> Saved!';
-    btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
-    btn.style.boxShadow = '0 4px 20px rgba(34, 197, 94, 0.45)';
-
-    setTimeout(() => {
-      btn.classList.remove('saving');
-      btn.innerHTML = '<ion-icon name="checkmark-circle-outline"></ion-icon> Save Changes';
-      btn.style.background = '';
-      btn.style.boxShadow = '';
-    }, 2500);
-  });
-
-  // Settings page buttons
-  const updateBtn = document.getElementById('pageCheckUpdateBtn');
-  if (updateBtn) {
-    updateBtn.addEventListener('click', () => {
-      showToast('You are on the latest version â€” CineWatch v1.0.0');
-    });
-  }
-
-  // Watch Together features
-  const partyMainScreen = document.getElementById('partyMainScreen');
-  const partyCreateScreen = document.getElementById('partyCreateScreen');
-  const partyActiveScreen = document.getElementById('partyActiveScreen');
-  
-  const roomCodeGroup = document.getElementById('roomCodeGroup');
-  const roomCodeInput = document.getElementById('roomCodeInput');
-  const activeRoomName = document.getElementById('activeRoomName');
-  const activeRoomCode = document.getElementById('activeRoomCode');
-  const activeRoomCodeRow = document.getElementById('activeRoomCodeRow');
-
-  function generateRoomCode() {
-    return Math.random().toString(36).substring(2, 10).toUpperCase();
-  }
-
-  // Formatting for room code input (uppercase, max 8 chars)
-  if (roomCodeInput) {
-    roomCodeInput.addEventListener('input', (e) => {
-      e.target.value = e.target.value.toUpperCase().replace(/[^A-Z0-9]/g, '').substring(0, 8);
-    });
-  }
-
-  document.querySelector('.create-room-btn')?.addEventListener('click', () => {
-    partyMainScreen?.classList.add('hidden');
-    partyCreateScreen?.classList.remove('hidden');
-  });
-
-  document.getElementById('cancelCreateRoomBtn')?.addEventListener('click', () => {
-    partyCreateScreen?.classList.add('hidden');
-    partyMainScreen?.classList.remove('hidden');
-  });
-
-  // Privacy Pills
-  document.querySelectorAll('#roomPrivacyPills .theme-pill').forEach(pill => {
-    pill.addEventListener('click', () => {
-      document.querySelectorAll('#roomPrivacyPills .theme-pill').forEach(p => p.classList.remove('active'));
-      pill.classList.add('active');
-      
-      if (pill.dataset.privacy === 'private') {
-        roomCodeGroup?.classList.remove('hidden');
-        if (roomCodeInput && !roomCodeInput.value) roomCodeInput.value = generateRoomCode();
-      } else {
-        roomCodeGroup?.classList.add('hidden');
-      }
-    });
-  });
-
-  // Create Room Confirm Action
-  document.querySelector('.create-room-confirm-btn')?.addEventListener('click', () => {
-    const roomName = document.getElementById('roomNameInput')?.value.trim() || 'My Room';
-    const isPrivate = document.querySelector('#roomPrivacyPills .theme-pill.active')?.dataset.privacy === 'private';
-    
-    let finalCode = '';
-    if (isPrivate) {
-      finalCode = roomCodeInput?.value.trim() || generateRoomCode();
-      if (finalCode.length < 4) {
-        showToast('Room code must be at least 4 characters');
-        return;
-      }
-    }
-    
-    // Set active room details
-    if (activeRoomName) activeRoomName.textContent = roomName;
-    if (activeRoomCodeRow) {
-      if (isPrivate) {
-        activeRoomCodeRow.style.display = 'flex';
-        if (activeRoomCode) activeRoomCode.textContent = finalCode;
-      } else {
-        activeRoomCodeRow.style.display = 'none';
-      }
-    }
-    
-    showToast(`Created ${isPrivate ? 'private' : 'public'} room: ${roomName}`);
-    
-    // Transition to Active Room
-    partyCreateScreen?.classList.add('hidden');
-    partyActiveScreen?.classList.remove('hidden');
-  });
-
-  // Leave Room Action
-  document.getElementById('leaveRoomBtn')?.addEventListener('click', () => {
-    partyActiveScreen?.classList.add('hidden');
-    partyMainScreen?.classList.remove('hidden');
-    showToast('Left the room');
-  });
-
-  // Back Button Action
-  document.getElementById('goBackFromActiveRoom')?.addEventListener('click', () => {
-    partyActiveScreen?.classList.add('hidden');
-    partyMainScreen?.classList.remove('hidden');
-  });
-
-  // Join Room Action (from main screen)
-  document.querySelector('.join-room-btn')?.addEventListener('click', () => {
-    const input = document.querySelector('.party-join-box input');
-    if (input && input.value.trim() !== '') {
-      const code = input.value.toUpperCase();
-      showToast('Joined room ' + code);
-      input.value = '';
-      
-      // Set active room details
-      if (activeRoomName) activeRoomName.textContent = 'Joined Room';
-      if (activeRoomCodeRow) activeRoomCodeRow.style.display = 'flex';
-      if (activeRoomCode) activeRoomCode.textContent = code;
-      
-      // Transition to Active Room
-      partyMainScreen?.classList.add('hidden');
-      partyActiveScreen?.classList.remove('hidden');
-    } else {
-      showToast('Please enter a room code');
-    }
-  });
-}
-
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', startApp);
-} else {
-  startApp();
-}
-
-
-
-  // Global window exports for HTML onclick handlers
-  window.playMovieDirect = playMovieDirect;
+window.playMovieDirect = playMovieDirect;
   window.openDetail = openDetail;
   window.closeDetail = closeDetail;
   window.slideShelf = slideShelf;
