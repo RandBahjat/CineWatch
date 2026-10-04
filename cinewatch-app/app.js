@@ -1665,33 +1665,56 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
         width: 200,
         html: 'Subtitle',
         tooltip: 'Subtitles',
-        icon: '<ion-icon name="subtitles-outline" style="font-size:1.2rem;"></ion-icon>',
-        selector: [
-          {
-            html: 'Display',
-            tooltip: 'Show',
-            switch: true,
-            onSwitch(item) {
-              item.tooltip = item.switch ? 'Hide' : 'Show';
-              if (window.artPlayerInstance) {
-                window.artPlayerInstance.subtitle.show = !item.switch;
-              }
-              return !item.switch;
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:20px;height:20px;fill:currentColor;"><path d="M416 96H96a64 64 0 00-64 64v192a64 64 0 0064 64h320a64 64 0 0064-64V160a64 64 0 00-64-64zm-192 96h64v32h-64zm-96 0h64v32h-64zm288 128H96v-32h320zm0-64h-96v-32h96z"/></svg>',
+        selector: (() => {
+          const items = [
+            {
+              html: 'Display',
+              tooltip: subtitleUrl ? 'Hide' : 'Show',
+              switch: !!subtitleUrl,
+              onSwitch(item) {
+                const next = !item.switch;
+                item.tooltip = next ? 'Hide' : 'Show';
+                if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
+                  window.artPlayerInstance.subtitle.show = next;
+                }
+                return next;
+              },
             },
-          },
-          {
-            default: !subtitleUrl.includes('lang=ckb'),
-            html: isAnime ? 'English Sub' : 'Kurdish Sub',
-            url: subtitleUrl || '',
-          },
-          ...(isAnime ? [{
-            html: 'Kurdish (Sorani)',
-            url: subtitleUrl ? (subtitleUrl.includes('?') ? subtitleUrl + '&lang=ckb' : subtitleUrl + '?lang=ckb') : '',
-          }] : [])
-        ],
+            { html: 'Off', url: '', default: !subtitleUrl }
+          ];
+          const tracks = window._cwSubtitleTracks || [];
+          tracks.forEach((t, i) => {
+            items.push({
+              html: t.label || `Track ${i + 1}`,
+              url: t.file || '',
+              default: i === 0 && !!subtitleUrl
+            });
+          });
+          if (tracks.length > 0 && isAnime) {
+            const baseTrack = tracks.find(t => (t.label||'').toLowerCase().includes('eng')) || tracks[0];
+            if (baseTrack && baseTrack.file) {
+              let kuUrl = baseTrack.file;
+              kuUrl += kuUrl.includes('?') ? '&lang=ckb' : '?lang=ckb';
+              items.push({
+                html: 'Kurdish (Sorani)',
+                url: kuUrl,
+                default: false
+              });
+            }
+          }
+          return items;
+        })(),
         onSelect(item) {
-          if (item.url && window.artPlayerInstance) {
-            window.artPlayerInstance.subtitle.switch(item.url, { name: item.html });
+          if (!window.artPlayerInstance || !window.artPlayerInstance.subtitle) return item.html;
+          if (!item.url) {
+            window.artPlayerInstance.subtitle.show = false;
+          } else {
+            const isSrt = item.url.includes('.srt');
+            window.artPlayerInstance.subtitle.switch(item.url, {
+              name: item.html,
+              type: isSrt ? 'srt' : 'vtt'
+            });
             window.artPlayerInstance.subtitle.show = true;
           }
           return item.html;
