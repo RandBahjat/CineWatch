@@ -746,11 +746,20 @@ const server = http.createServer((req, res) => {
 
         const primaryStreamUrl = qualities[0].url;
 
-        // Subtitle tracks: Kurdish from SubDL engine + English and other tracks from stream
+        // Subtitle tracks: Kurdish from SubDL engine / translation fallback + English and other tracks from stream
         let tracks = [];
+        let enCapUrl = '';
+        if (data.stream.captions && Array.isArray(data.stream.captions)) {
+          const enCap = data.stream.captions.find(c => (c.language || '').toLowerCase().includes('eng'));
+          if (enCap && enCap.url) {
+            enCapUrl = enCap.url;
+          }
+        }
+
         if (title) {
           let kuApi = `${baseUrl}/api/movie-sub?title=${encodeURIComponent(title)}&type=${isTv ? 'series' : 'movie'}`;
           if (isTv) kuApi += `&season=${season || 1}&ep=${episode || 1}`;
+          if (enCapUrl) kuApi += `&enUrl=${encodeURIComponent(enCapUrl)}`;
           tracks.push({
             label: 'Kurdish (Sorani)',
             file: kuApi,
@@ -764,7 +773,7 @@ const server = http.createServer((req, res) => {
             if (cap.url) {
               tracks.push({
                 label: cap.language || 'English',
-                file: cap.url,
+                file: `${baseUrl}/api/sub-proxy?url=${encodeURIComponent(cap.url)}`,
                 srclang: (cap.language || '').toLowerCase().slice(0, 2) || 'en'
               });
             }
