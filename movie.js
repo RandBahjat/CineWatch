@@ -6919,13 +6919,39 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     } catch (e) {}
   }
 
-  // Always show native ArtPlayer with custom controls and CineWatch watermark — never fall back to third-party server embeds
-  if (iframe) {
-    iframe.classList.add("hidden");
-    iframe.src = "";
+  // Prepare fallback embed URL in case direct stream extraction is not available for this specific title
+  let fallbackSrc = '';
+  if (isAnime && malId) {
+    fallbackSrc = `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`;
+  } else if (isTv && tmdbId) {
+    fallbackSrc = `https://vidlink.pro/tv/${tmdbId}/${season}/${epNum}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=true${subParam}`;
+  } else if (tmdbId) {
+    fallbackSrc = `https://vidlink.pro/movie/${tmdbId}?primaryColor=db0a0a&secondaryColor=a2a2a2&iconColor=eefdec&icons=default&player=default&title=true&poster=true&autoplay=true${subParam}`;
   }
-  if (artContainer) {
-    artContainer.classList.remove("hidden");
+
+  // 1. Direct stream available: always use native CineWatch ArtPlayer with custom controls & watermark
+  if (cleanUrl) {
+    if (iframe) {
+      iframe.classList.add("hidden");
+      iframe.src = "";
+    }
+    if (artContainer) {
+      artContainer.classList.remove("hidden");
+    }
+  } else {
+    // 2. Direct stream not available for this title: fall back seamlessly so the episode actually plays instead of infinite loading
+    if (fallbackSrc) {
+      if (artContainer) artContainer.classList.add("hidden");
+      if (iframe) {
+        iframe.classList.remove("hidden");
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("scrolling", "no");
+        iframe.setAttribute("allowfullscreen", "true");
+        iframe.setAttribute("allow", "autoplay; encrypted-media; picture-in-picture");
+        iframe.src = fallbackSrc;
+      }
+      return;
+    }
   }
 
   const streamUrl = cleanUrl || (isAnime && malId
@@ -7430,8 +7456,23 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       }
     });
 
-    window.artPlayerInstance.on('error', () => {
+    window.artPlayerInstance.on('error', (err) => {
       try {
+        if (fallbackSrc && iframe && artContainer) {
+          console.warn("Direct stream error, switching to backup server:", err);
+          if (window.artPlayerInstance) {
+            try { window.artPlayerInstance.destroy(); } catch (e) {}
+            window.artPlayerInstance = null;
+          }
+          artContainer.classList.add("hidden");
+          iframe.classList.remove("hidden");
+          iframe.setAttribute("frameborder", "0");
+          iframe.setAttribute("scrolling", "no");
+          iframe.setAttribute("allowfullscreen", "true");
+          iframe.setAttribute("allow", "autoplay; encrypted-media; picture-in-picture");
+          iframe.src = fallbackSrc;
+          return;
+        }
         const tracks = window._cwSubtitleTracks || [];
         const enTrack = tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng'));
         if (enTrack && enTrack.file && window.artPlayerInstance?.subtitle?.url !== enTrack.file) {
