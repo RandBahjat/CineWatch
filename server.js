@@ -99,6 +99,69 @@ async function translateVTT(vttText, targetLang) {
   return outVTT.trim();
 }
 
+// ==========================================
+// VIDLINK NATIVE WASM STREAM RESOLVER & CACHE
+// ==========================================
+const VIDLINK_REFERER = 'https://vidlink.pro/';
+const VIDLINK_ORIGIN = 'https://vidlink.pro';
+const VIDLINK_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
+
+let wasmBootPromise = null;
+function bootVidlinkWasm() {
+  if (wasmBootPromise) return wasmBootPromise;
+  wasmBootPromise = (async () => {
+    globalThis.window = globalThis;
+    globalThis.self = globalThis;
+    globalThis.document = { createElement: () => ({}), body: { appendChild: () => {} } };
+
+    const sodium = require('libsodium-wrappers');
+    await sodium.ready;
+    globalThis.sodium = sodium;
+
+    const engineDir = path.join(__dirname, 'vidlink-engine');
+    eval(fs.readFileSync(path.join(engineDir, 'script.js'), 'utf8'));
+
+    const go = new Dm();
+    const wasmBuf = fs.readFileSync(path.join(engineDir, 'fu.wasm'));
+    const { instance } = await WebAssembly.instantiate(wasmBuf, go.importObject);
+    go.run(instance);
+
+    await new Promise(r => setTimeout(r, 600));
+    if (typeof globalThis.getAdv !== 'function') throw new Error('getAdv not found after WASM boot');
+  })();
+  return wasmBootPromise;
+}
+
+const streamCache = new Map();
+
+async function resolveVidlinkStream(id, season, episode) {
+  const cacheKey = `${id}_${season || ''}_${episode || ''}`;
+  if (streamCache.has(cacheKey)) {
+    const cached = streamCache.get(cacheKey);
+    if (Date.now() - cached.timestamp < 30 * 60 * 1000) {
+      return cached.data;
+    }
+  }
+
+  await bootVidlinkWasm();
+  const token = globalThis.getAdv(String(id));
+  if (!token) throw new Error('Failed to generate stream token');
+
+  const apiUrl = season
+    ? `https://vidlink.pro/api/b/tv/${token}/${season}/${episode || 1}?multiLang=0`
+    : `https://vidlink.pro/api/b/movie/${token}?multiLang=0`;
+
+  const res = await fetch(apiUrl, {
+    headers: { Referer: VIDLINK_REFERER, Origin: VIDLINK_ORIGIN, 'User-Agent': VIDLINK_UA }
+  });
+  if (!res.ok) throw new Error(`VidLink API responded with HTTP ${res.status}`);
+  const data = await res.json();
+  if (data) {
+    streamCache.set(cacheKey, { timestamp: Date.now(), data });
+  }
+  return data;
+}
+
 const server = http.createServer((req, res) => {
   // Enable CORS
   res.setHeader('Access-Control-Allow-Origin', '*');
