@@ -1572,6 +1572,7 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
         if (srcData && srcData.source) {
           cleanUrl = srcData.source;
           if (srcData.tracks && srcData.tracks.length > 0) {
+            window._cwSubtitleTracks = srcData.tracks;
             const enTrack = srcData.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || srcData.tracks[0];
             if (enTrack && enTrack.file) {
               subtitleUrl = enTrack.file;
