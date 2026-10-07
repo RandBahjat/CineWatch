@@ -1069,6 +1069,15 @@ const server = http.createServer((req, res) => {
             rawFile: t.file,
             file: `${baseUrl}/api/anime-sub?url=${encodeURIComponent(t.file)}`
           }));
+          const engTrack = data.tracks.find(t => (t.label || '').toLowerCase().includes('eng')) || data.tracks[0];
+          if (engTrack && !data.tracks.some(t => t.srclang === 'ku' || (t.label || '').includes('Kurdish'))) {
+            data.tracks.push({
+              label: 'Kurdish (Sorani)',
+              file: `${engTrack.file}&lang=ckb`,
+              rawFile: engTrack.rawFile,
+              srclang: 'ku'
+            });
+          }
         }
         res.writeHead(200, {
           'Content-Type': 'application/json',
