@@ -1731,7 +1731,7 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
               default: i === 0 && !!subtitleUrl
             });
           });
-          if (tracks.length > 0 && isAnime) {
+          if (tracks.length > 0 && isAnime && !items.some(it => it.html.includes('Kurdish'))) {
             const baseTrack = tracks.find(t => (t.label||'').toLowerCase().includes('eng')) || tracks[0];
             if (baseTrack && baseTrack.file) {
               let kuUrl = baseTrack.file;
@@ -1747,8 +1747,14 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
         })(),
         onSelect(item) {
           if (!window.artPlayerInstance || !window.artPlayerInstance.subtitle) return item.html;
+          const video = window.artPlayerInstance.video;
           if (!item.url) {
             window.artPlayerInstance.subtitle.show = false;
+            if (video && video.textTracks) {
+              for (let i = 0; i < video.textTracks.length; i++) {
+                video.textTracks[i].mode = 'disabled';
+              }
+            }
           } else {
             const isSrt = item.url.includes('.srt');
             window.artPlayerInstance.subtitle.switch(item.url, {
@@ -1756,6 +1762,23 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
               type: isSrt ? 'srt' : 'vtt'
             });
             window.artPlayerInstance.subtitle.show = true;
+
+            // Synchronize native video text tracks (crucial for iOS, mobile & desktop browsers)
+            if (video && video.textTracks) {
+              const isKurdish = item.html.toLowerCase().includes('kurdish');
+              for (let i = 0; i < video.textTracks.length; i++) {
+                const track = video.textTracks[i];
+                const label = (track.label || '').toLowerCase();
+                const lang = (track.language || '').toLowerCase();
+                if (isKurdish && (label.includes('kurdish') || lang === 'ku' || lang === 'ckb')) {
+                  track.mode = 'showing';
+                } else if (!isKurdish && (label.includes(item.html.toLowerCase()) || label === item.html.toLowerCase())) {
+                  track.mode = 'showing';
+                } else {
+                  track.mode = 'disabled';
+                }
+              }
+            }
           }
           return item.html;
         },
