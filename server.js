@@ -28,35 +28,6 @@ const MIME_TYPES = {
 };
 
 const movieSubCache = new Map();
-
-async function translateVTT(vttText, targetLang) {
-  const blocks = vttText.split(/\r?\n\r?\n/);
-  const parsed = [];
-  let header = "";
-  
-  for (let i = 0; i < blocks.length; i++) {
-    const block = blocks[i].trim();
-    if (!block) continue;
-    if (i === 0 && block.toUpperCase().startsWith('WEBVTT')) {
-      header = block;
-      continue;
-    }
-    const lines = block.split(/\r?\n/);
-    if (lines.length >= 2 && lines[0].includes('-->')) {
-      const text = lines.slice(1).join('\n').replace(/<\/?[^>]+(>|$)/g, "");
-      parsed.push({ meta: lines[0], text });
-    } else if (lines.length >= 3 && lines[1].includes('-->')) {
-      const text = lines.slice(2).join('\n').replace(/<\/?[^>]+(>|$)/g, "");
-      parsed.push({ meta: lines.slice(0,2).join('\n'), text });
-    } else {
-      parsed.push({ meta: '', text: block });
-    }
-  }
-
-  const chunks = [];
-  let curTexts = [];
-  let curLen = 0;
-  for (const p of parsed) {
 // In-memory cache for translated WebVTT subtitles
 const vttTranslationCache = new Map();
 
