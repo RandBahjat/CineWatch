@@ -1989,6 +1989,30 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
           window.artPlayerInstance.notice.show = function() {};
         }
       } catch (e) {}
+      
+      // Inject native tracks for iOS and mobile native players
+      try {
+        const video = window.artPlayerInstance.video;
+        if (video) {
+          const tracks = window._cwSubtitleTracks || [];
+          tracks.forEach((t, i) => {
+            if (t.file) {
+              const trackEl = document.createElement('track');
+              trackEl.kind = 'subtitles';
+              trackEl.label = t.label || `Track ${i+1}`;
+              trackEl.srclang = t.srclang || (t.label && t.label.toLowerCase().includes('kurdish') ? 'ku' : 'en');
+              trackEl.src = t.file;
+              if (t.default) {
+                trackEl.default = true;
+              }
+              video.appendChild(trackEl);
+            }
+          });
+        }
+      } catch (e) {
+        console.error("Failed to inject native tracks:", e);
+      }
+      
       if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
         window.artPlayerInstance.subtitle.show = true;
       }
@@ -2014,13 +2038,6 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
     window.artPlayerInstance.on('error', (err) => {
       try {
         console.warn('ArtPlayer stream notice/error:', err);
-        const tracks = window._cwSubtitleTracks || [];
-        const enTrack = tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng'));
-        if (enTrack && enTrack.file && window.artPlayerInstance?.subtitle?.url !== enTrack.file) {
-          const isSrt = enTrack.file.includes('.srt');
-          window.artPlayerInstance.subtitle.switch(enTrack.file, { name: enTrack.label || 'English', type: isSrt ? 'srt' : 'vtt' });
-          window.artPlayerInstance.subtitle.show = true;
-        }
       } catch (e) {}
     });
 
