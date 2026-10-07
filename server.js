@@ -68,7 +68,8 @@ async function translateVTT(vttText, targetLang) {
   if (curTexts.length > 0) chunks.push(curTexts);
 
   let translatedTexts = [];
-  const results = await Promise.all(chunks.map(async chunk => {
+  for (let c = 0; c < chunks.length; c++) {
+    const chunk = chunks[c];
     try {
       const q = chunk.join(' \n ~|~ \n ');
       const params = new URLSearchParams();
@@ -77,15 +78,22 @@ async function translateVTT(vttText, targetLang) {
         method: 'POST',
         body: params
       });
+      if (!res.ok) {
+        translatedTexts.push(...chunk);
+        continue;
+      }
       const data = await res.json();
       const combined = data[0].map(x => x[0]).join('');
-      return combined.split(/~\|~/).map(s => s.trim());
+      const translatedChunk = combined.split(/~\|~/).map(s => s.trim());
+      translatedTexts.push(...translatedChunk);
     } catch (e) {
-      return chunk; // fallback to original on error
+      translatedTexts.push(...chunk); // fallback to original on error
     }
-  }));
-
-  translatedTexts = results.flat();
+    // Small delay to avoid rate limit
+    if (c < chunks.length - 1) {
+      await new Promise(resolve => setTimeout(resolve, 250));
+    }
+  }
   
   let outVTT = header + "\n\n";
   for (let i = 0; i < parsed.length; i++) {
