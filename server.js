@@ -57,7 +57,38 @@ async function translateVTT(vttText, targetLang) {
   let curTexts = [];
   let curLen = 0;
   for (const p of parsed) {
-    if (curLen + p.text.length > 3000) {
+// In-memory cache for translated WebVTT subtitles
+const vttTranslationCache = new Map();
+
+async function translateVTT(vttText, targetLang) {
+  if (!vttText || !targetLang) return vttText;
+  
+  const blocks = vttText.replace(/\r\n/g, '\n').split('\n\n');
+  if (blocks.length <= 1) return vttText;
+  
+  const header = blocks[0];
+  const parsed = [];
+  
+  for (let i = 1; i < blocks.length; i++) {
+    const block = blocks[i].trim();
+    if (!block) continue;
+    const lines = block.split('\n');
+    if (lines.length >= 2 && lines[1].includes('-->')) {
+      const text = lines.slice(2).join(' ').replace(/<\/?(i|b|u|font|c|v)[^>]*>/gi, '');
+      parsed.push({ meta: lines.slice(0,2).join('\n'), text });
+    } else if (lines.length >= 1 && lines[0].includes('-->')) {
+      const text = lines.slice(1).join(' ').replace(/<\/?(i|b|u|font|c|v)[^>]*>/gi, '');
+      parsed.push({ meta: lines[0], text });
+    } else {
+      parsed.push({ meta: '', text: block.replace(/<\/?(i|b|u|font|c|v)[^>]*>/gi, '') });
+    }
+  }
+
+  const chunks = [];
+  let curTexts = [];
+  let curLen = 0;
+  for (const p of parsed) {
+    if (curLen + p.text.length > 2500) {
       chunks.push(curTexts);
       curTexts = [];
       curLen = 0;
@@ -70,28 +101,71 @@ async function translateVTT(vttText, targetLang) {
   let translatedTexts = [];
   for (let c = 0; c < chunks.length; c++) {
     const chunk = chunks[c];
+    let translatedChunk = null;
+
+    // Strategy 1: clients5.google.com (Chrome extension endpoint - highly reliable & permissive)
     try {
       const q = chunk.join(' \n ~|~ \n ');
       const params = new URLSearchParams();
       params.append('q', q);
-      const res = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${targetLang}&dt=t`, {
+      const res = await fetch(`https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=auto&tl=${targetLang}`, {
         method: 'POST',
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
         body: params
       });
-      if (!res.ok) {
-        translatedTexts.push(...chunk);
-        continue;
+      if (res.ok) {
+        const data = await res.json();
+        if (Array.isArray(data) && data[0]) {
+          const raw = typeof data[0] === 'string' ? data[0] : (Array.isArray(data[0]) ? data[0][0] : '');
+          if (raw) {
+            const parts = raw.split(/~\|~/).map(s => s.trim().replace(/<\/?(i|b|u|font|c|v)[^>]*>/gi, ''));
+            if (parts.length > 0) {
+              translatedChunk = parts;
+            }
+          }
+        }
       }
-      const data = await res.json();
-      const combined = data[0].map(x => x[0]).join('');
-      const translatedChunk = combined.split(/~\|~/).map(s => s.trim());
-      translatedTexts.push(...translatedChunk);
     } catch (e) {
-      translatedTexts.push(...chunk); // fallback to original on error
+      console.warn('clients5 translation attempt failed:', e.message);
     }
-    // Small delay to avoid rate limit
+
+    // Strategy 2: translate.googleapis.com (single client gtx) fallback
+    if (!translatedChunk) {
+      try {
+        const q = chunk.join(' \n ~|~ \n ');
+        const params = new URLSearchParams();
+        params.append('q', q);
+        const res = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${targetLang}&dt=t`, {
+          method: 'POST',
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+          },
+          body: params
+        });
+        if (res.ok) {
+          const data = await res.json();
+          const combined = data[0].map(x => x[0]).join('');
+          const parts = combined.split(/~\|~/).map(s => s.trim().replace(/<\/?(i|b|u|font|c|v)[^>]*>/gi, ''));
+          if (parts.length > 0) {
+            translatedChunk = parts;
+          }
+        }
+      } catch (e) {
+        console.warn('googleapis translation attempt failed:', e.message);
+      }
+    }
+
+    if (translatedChunk) {
+      translatedTexts.push(...translatedChunk);
+    } else {
+      translatedTexts.push(...chunk);
+    }
+
     if (c < chunks.length - 1) {
-      await new Promise(resolve => setTimeout(resolve, 250));
+      await new Promise(resolve => setTimeout(resolve, 150));
     }
   }
   
