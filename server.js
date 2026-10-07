@@ -457,6 +457,18 @@ const server = http.createServer((req, res) => {
       return;
     }
 
+    const cacheKey = `${subTarget}_${targetLang || 'orig'}`;
+    if (vttTranslationCache.has(cacheKey)) {
+      res.writeHead(200, {
+        'Content-Type': 'text/vtt; charset=utf-8',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Private-Network': 'true',
+        'Cache-Control': 'public, max-age=86400'
+      });
+      res.end(vttTranslationCache.get(cacheKey));
+      return;
+    }
+
     let origin = 'https://hls.dramahot.top';
     try {
       origin = new URL(subTarget).origin;
@@ -492,9 +504,11 @@ const server = http.createServer((req, res) => {
           }
         }
         
+        vttTranslationCache.set(cacheKey, text);
         res.writeHead(200, {
           'Content-Type': 'text/vtt; charset=utf-8',
           'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Private-Network': 'true',
           'Cache-Control': 'public, max-age=86400'
         });
         res.end(text);
