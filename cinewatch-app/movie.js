@@ -6841,32 +6841,54 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   if (isAnime && !cleanUrl && malId) {
     const endpoints = [
       `${curOrigin}/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-      `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-      `http://${curHost}:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
       `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
       `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-      `http://${curHost}:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-      `http://localhost:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-      `http://127.0.0.1:3500/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+      `http://${curHost}:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
+      `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
       `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`
     ];
 
     const uniqueAnimeEndpoints = [...new Set(endpoints)];
     try {
-      const srcData = await Promise.any(
-        uniqueAnimeEndpoints.map(epUrl =>
-          fetch(epUrl, { signal: AbortSignal.timeout(8000) }).then(async res => {
-            if (!res.ok) throw new Error('HTTP ' + res.status);
-            const data = await res.json();
-            if (data && data.source) return data;
-            throw new Error('Invalid anime data');
-          })
-        )
-      );
+      let srcData = null;
+      for (const epUrl of uniqueAnimeEndpoints) {
+        try {
+          const res = await fetch(epUrl, { signal: AbortSignal.timeout(3000) });
+          if (!res.ok) continue;
+          const data = await res.json();
+          if (data && data.source) {
+            srcData = data;
+            break;
+          }
+        } catch (e) {
+          continue;
+        }
+      }
+
       if (srcData && srcData.source) {
         cleanUrl = srcData.source;
         animeChapters = srcData.chapters || [];
         if (srcData.tracks && srcData.tracks.length > 0) {
+          const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+          if (isLocal) {
+            srcData.tracks.forEach(t => {
+              if (t.file && t.file.includes('cinewatch-maaa.onrender.com')) {
+                t.file = t.file.replace('https://cinewatch-maaa.onrender.com', 'http://localhost:3000');
+              }
+            });
+          }
+          const baseTrack = srcData.tracks.find(t => (t.label||'').toLowerCase().includes('eng')) || srcData.tracks[0];
+          if (baseTrack && baseTrack.file) {
+            let kuUrl = baseTrack.file;
+            kuUrl += kuUrl.includes('?') ? '&lang=ckb' : '?lang=ckb';
+            if (!srcData.tracks.some(t => t.srclang === 'ku' || (t.label||'').includes('Kurdish'))) {
+              srcData.tracks.push({
+                label: 'Kurdish (Sorani)',
+                file: kuUrl,
+                srclang: 'ku'
+              });
+            }
+          }
           window._cwSubtitleTracks = srcData.tracks;
           const enTrack = srcData.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || srcData.tracks[0];
           if (enTrack && enTrack.file) {
