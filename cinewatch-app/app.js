@@ -1572,6 +1572,26 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
         if (srcData && srcData.source) {
           cleanUrl = srcData.source;
           if (srcData.tracks && srcData.tracks.length > 0) {
+            const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+            if (isLocal) {
+              srcData.tracks.forEach(t => {
+                if (t.file && t.file.includes('cinewatch-maaa.onrender.com')) {
+                  t.file = t.file.replace('https://cinewatch-maaa.onrender.com', 'http://localhost:3000');
+                }
+              });
+            }
+            const baseTrack = srcData.tracks.find(t => (t.label||'').toLowerCase().includes('eng')) || srcData.tracks[0];
+            if (baseTrack && baseTrack.file) {
+              let kuUrl = baseTrack.file;
+              kuUrl += kuUrl.includes('?') ? '&lang=ckb' : '?lang=ckb';
+              if (!srcData.tracks.some(t => t.srclang === 'ku' || (t.label||'').includes('Kurdish'))) {
+                srcData.tracks.push({
+                  label: 'Kurdish (Sorani)',
+                  file: kuUrl,
+                  srclang: 'ku'
+                });
+              }
+            }
             window._cwSubtitleTracks = srcData.tracks;
             const enTrack = srcData.tracks.find(t => t.srclang === 'en' || (t.label || '').toLowerCase().includes('eng')) || srcData.tracks[0];
             if (enTrack && enTrack.file) {
