@@ -2038,6 +2038,9 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
       try {
         const video = window.artPlayerInstance.video;
         if (video) {
+          const oldTracks = video.querySelectorAll('track');
+          oldTracks.forEach(ot => ot.remove());
+
           const tracks = window._cwSubtitleTracks || [];
           tracks.forEach((t, i) => {
             if (t.file) {
@@ -2046,12 +2049,14 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
               trackEl.label = t.label || `Track ${i+1}`;
               trackEl.srclang = t.srclang || (t.label && t.label.toLowerCase().includes('kurdish') ? 'ku' : 'en');
               trackEl.src = t.file;
-              if (t.default) {
-                trackEl.default = true;
-              }
               video.appendChild(trackEl);
             }
           });
+          if (video.textTracks) {
+            for (let i = 0; i < video.textTracks.length; i++) {
+              video.textTracks[i].mode = 'disabled';
+            }
+          }
         }
       } catch (e) {
         console.error("Failed to inject native tracks:", e);
