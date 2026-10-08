@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSJ9WDT6RX"></script>
     <script>
@@ -13,9 +15,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20261003_progressbar_fix">
-    <link rel="stylesheet" href="browse-fix.css?v=20261003_hero_counter">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_668">
+    <link rel="stylesheet" href="movie.css?v=20261003_482_progressbar_fix">
+    <link rel="stylesheet" href="browse-fix.css?v=20261003_529_hero_counter">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_1824">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -89,7 +91,7 @@
         .cf-brand-text { font-size: 1.4rem; }
       }
 
-      /* ── Top Scroll Progress Bar ────────────────────────── */
+      /* ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ Top Scroll Progress Bar ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ÃŽâ€œÃƒÂ¶Ãƒâ€¡ */
       .cw-scroll-progress-bar {
         position: fixed;
         top: 0;
@@ -105,7 +107,22 @@
     </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CineWatch - is a place to browse, rate, and track movies and TV shows — all in one simple, easy-to-use site.</title>
+    <title>CineWatch - Watch Movies &amp; TV Series Online Free</title>
+    <meta id="cwMetaDescription" name="description" content="CineWatch ÃŽâ€œÃƒâ€¡ÃƒÂ¶ Watch the latest movies, TV series, anime and 4K titles online for free. Browse thousands of titles, rate them and track what you watch." />
+    <!-- Open Graph (Facebook, WhatsApp, Telegram previews) -->
+    <meta id="cwOgTitle" property="og:title" content="CineWatch - Watch Movies &amp; TV Series Online Free" />
+    <meta id="cwOgDescription" property="og:description" content="Watch movies, series and anime online for free on CineWatch. Thousands of titles, no sign-up needed." />
+    <meta property="og:image" content="https://cinewatch.watch/og-image.jpg" />
+    <meta id="cwOgUrl" property="og:url" content="https://cinewatch.watch/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CineWatch" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta id="cwTwitterTitle" name="twitter:title" content="CineWatch - Watch Movies &amp; TV Series Online Free" />
+    <meta id="cwTwitterDescription" name="twitter:description" content="Watch movies, series and anime online for free on CineWatch." />
+    <!-- Canonical URL (updated dynamically per section) -->
+    <link id="cwCanonical" rel="canonical" href="https://cinewatch.watch/" />
+    <!-- Robots -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <!-- Google Fonts: Inter & Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -118,16 +135,59 @@
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="api.js?v=v6" defer></script>
-    <script src="movies-data.js?v=20261003_top10_mobile" defer></script>
-    <script src="series-data.js?v=20261003_top10_mobile" defer></script>
-    <script src="anime-data.js?v=20260818_7834" defer></script>
-    <script src="fourk-data.js?v=20261008_spiderman_only" defer></script>
-    <script src="movie.js?v=20261008_spiderman_only" defer></script>
+    <script src="movies-data.js?v=20261003_534_top10_mobile" defer></script>
+    <script src="series-data.js?v=20261003_534_top10_mobile" defer></script>
+    <script src="anime-data.js?v=20260818_8990" defer></script>
+    <script src="fourk-data.js?v=20261008_35_hd_and_4k" defer></script>
+    <script src="movie.js?v=20261008_35_hd_and_4k" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
+
+    <!-- Popunder Ad Manager (Adsterra) Ã¢â‚¬â€ Free users only -->
+    <script>
+      window.injectPopunders = function() {
+        if (window._cwPopundersInjected) return;
+        try {
+          if (localStorage.getItem('cw_is_vip') === 'true' || sessionStorage.getItem('cw_is_vip') === 'true') {
+            window._cwPopundersInjected = true;
+            return;
+          }
+          var savedU = JSON.parse(sessionStorage.getItem('cinewatch_user') || localStorage.getItem('cinewatch_user') || '{}');
+          if (savedU && savedU.isVip) {
+            window._cwPopundersInjected = true;
+            return;
+          }
+        } catch(e) {}
+        window._cwPopundersInjected = true;
+        try {
+          var cwState = JSON.parse(localStorage.getItem('cw_state') || '{}');
+          if (cwState && cwState.user && cwState.user.isVip) return;
+          // Load popunder scripts for free users only
+          var urls = [
+            'https://pl31512881.profitableratecpmnetwork.com/d8/5d/6c/d85d6c3acdc48be84c9ebdbb4493ba31.js',
+            'https://pl31512882.profitableratecpmnetwork.com/f8/0d/c4/f80dc492bcfec156d6ea9919f97e7c11.js'
+          ];
+          urls.forEach(function(url) {
+            var s = document.createElement('script');
+            s.src = url;
+            s.async = true;
+            document.head.appendChild(s);
+          });
+        } catch (e) {}
+      };
+
+      // If already verified, inject immediately
+      try {
+        if (sessionStorage.getItem('cw_cf_verified') === 'true' ||
+            localStorage.getItem('cw_cf_verified') === 'true' ||
+            document.cookie.indexOf('cw_cf_verified=true') !== -1) {
+          window.injectPopunders();
+        }
+      } catch (e) {}
+    </script>
 
     <!-- OneSignal Web Push SDK -->
     <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
@@ -351,7 +411,7 @@
   <div id="cwSecurityGatekeeper">
     <div class="cf-challenge-container">
 
-      <!-- CineWatch Logo — matches site navbar exactly -->
+      <!-- CineWatch Logo ÃŽâ€œÃƒâ€¡ÃƒÂ¶ matches site navbar exactly -->
       <div class="cf-site-title">
         <div class="cf-site-icon">
           <ion-icon name="ticket"></ion-icon>
@@ -385,7 +445,7 @@
       <!-- Cloudflare Footer -->
       <div class="cf-footer">
         <div class="cf-footer-row">
-          <span class="cf-ray-id" id="cfRayId">Ray ID: <code id="cfRayCode">—</code></span>
+          <span class="cf-ray-id" id="cfRayId">Ray ID: <code id="cfRayCode">ÃŽâ€œÃƒâ€¡ÃƒÂ¶</code></span>
           <div class="cf-attribution">
             Performance &amp; security by
             <a href="https://www.cloudflare.com?utm_source=challenge&utm_campaign=m" target="_blank" rel="noopener noreferrer">
@@ -514,9 +574,9 @@
                         <!-- Section: MORE / APPS -->
                         <div class="browse-dropdown-section">
                             <div class="browse-section-label notranslate" translate="no" id="browseSecMore">MORE</div>
-                            <div class="nav-dropdown-grid nav-grid-4">
+                            <div class="nav-dropdown-grid nav-grid-2">
                                 <a href="#" class="nav-dropdown-card" data-view="4k" id="browseCardVip" onclick="if(window.closeBrowseDropdown)closeBrowseDropdown();if(window.switchView){switchView('4k');}else{window.location.href='index.html?section=4k';}return false;" style="background: rgba(245, 158, 11, 0.08); border-color: rgba(245, 158, 11, 0.25);">
-                                    <div class="nav-dropdown-icon" style="color: #fbbf24;"><ion-icon name="diamond-outline"></ion-icon></div>
+                                    <div class="nav-dropdown-icon" style="color: #fbbf24;"><ion-icon name="videocam-outline"></ion-icon></div>
                                     <span class="nav-dropdown-label notranslate" translate="no" id="browseLabelVip" style="color: #fbbf24; font-weight: 600;">4K</span>
                                 </a>
                                 <a href="download.html" class="nav-dropdown-card" id="browseCardDownload">
@@ -564,8 +624,8 @@
                                 <svg class="lang-flag" viewBox="0 0 64 48" width="22" height="16" aria-hidden="true"><rect width="64" height="16" fill="#E4002B"/><rect y="16" width="64" height="16" fill="#FFFFFF"/><rect y="32" width="64" height="16" fill="#009639"/><circle cx="32" cy="24" r="4.2" fill="#FFC72C"/><polygon points="32.0,16.0 32.7,19.6 34.4,16.4 34.0,19.9 36.5,17.4 35.1,20.7 38.3,19.0 35.9,21.8 39.4,21.1 36.4,23.0 40.0,23.4 36.5,24.3 39.8,25.8 36.2,25.6 38.9,28.0 35.5,26.8 37.4,29.9 34.5,27.7 35.5,31.2 33.3,28.3 33.2,31.9 32.0,28.5 30.8,31.9 30.7,28.3 28.5,31.2 29.5,27.7 26.6,29.9 28.5,26.8 25.1,28.0 27.8,25.6 24.2,25.8 27.5,24.3 24.0,23.4 27.6,23.0 24.6,21.1 28.1,21.8 25.7,19.0 28.9,20.7 27.5,17.4 30.0,19.9 29.6,16.4 31.3,19.6" fill="#FFC72C"/></svg>
                             </span>
                             <div class="lang-meta">
-                                <span class="lang-name">کوردی</span>
-                                <span class="lang-sub">Soranî</span>
+                                <span class="lang-name">کوردی (سۆرانی)</span>
+                                <span class="lang-sub">Sorani</span>
                             </div>
                             <div class="lang-check"><ion-icon name="checkmark-outline"></ion-icon></div>
                         </div>
@@ -573,9 +633,11 @@
                 </div>
                 
                 <!-- VIP Membership Button -->
-                <button class="nav-vip-btn" id="navVipBtn" title="VIP Membership">
-                    <ion-icon name="sparkles" class="vip-icon"></ion-icon>
-                    <span class="vip-text notranslate" translate="no">VIP</span>
+                <button class="nav-vip-btn" id="navVipBtn" title="Upgrade to VIP">
+                    <svg class="vip-icon" style="width:18px;height:18px;margin-right:2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"></path>
+                    </svg>
+                    <span class="vip-text notranslate" translate="no">Upgrade</span>
                 </button>
 
                 <!-- Search Icon Button -->
@@ -897,6 +959,29 @@
 
     <!-- Main Views & Shelves Container -->
     <main class="main-content" id="mainContent">
+
+        <!-- ===== AD SLOTS - shown for free users, hidden for VIP ===== -->
+        <!-- In-Feed Top Ad Banner -->
+        <div class="cw-ad-slot cw-ad-banner" id="cwAdBannerTop" style="display:none;">
+            <span class="cw-ad-label">Advertisement</span>
+            <div class="cw-ad-inner">
+                <script>atOptions={'key':'aab2f5b837577d78c557c34438394794','format':'iframe','height':300,'width':160,'params':{}};</script><script src="https://www.highrevenueformat.com/aab2f5b837577d78c557c34438394794/invoke.js"></script>
+            </div>
+            <a href="#" class="cw-ad-upgrade-hint" onclick="openVipModal(); return false;">Go VIP &mdash; Remove Ads</a>
+        </div>
+        <!-- Sticky Bottom Bar Ad -->
+        <div class="cw-ad-sticky" id="cwAdSticky" style="display:none;">
+            <span class="cw-ad-label">Ad</span>
+            <div class="cw-ad-sticky-inner">
+                <script>atOptions={'key':'aab2f5b837577d78c557c34438394794','format':'iframe','height':300,'width':160,'params':{}};</script><script src="https://www.highrevenueformat.com/aab2f5b837577d78c557c34438394794/invoke.js"></script>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 6px; margin-left: auto;">
+                <a href="#" class="cw-ad-sticky-close" onclick="document.getElementById('cwAdSticky').style.display='none'; return false;" title="Remove this Ad">Close Ad</a>
+                <a href="#" class="cw-ad-sticky-close" style="color: #cbd5e1; border-color: rgba(255,255,255,0.2);" onclick="openVipModal(); return false;" title="Go VIP">Go VIP</a>
+            </div>
+        </div>
+        <!-- ===== END AD SLOTS ===== -->
+
         <!-- Continue Watching Shelf -->
         <section class="shelf-section hidden" id="continueWatchingShelf">
             <div class="shelf-header">
@@ -1115,6 +1200,7 @@
             <div class="browse-pagination" id="animePagination"></div>
         </section>
 
+
         <!-- ===== 4K SECTION ===== -->
         <section class="browse-section hidden" id="fourkSection">
             <div class="browse-section-header">
@@ -1152,6 +1238,15 @@
                 </div>
             </section>
 
+            <!-- Home Ad Slot 1 -->
+            <div class="cw-ad-slot cw-ad-banner" id="cwHomeAd1" style="display:none; margin: 20px auto; max-width: 1400px; padding: 0 5%;">
+                <span class="cw-ad-label">Advertisement</span>
+                <div class="cw-ad-inner">
+                    <script>atOptions={'key':'aab2f5b837577d78c557c34438394794','format':'iframe','height':300,'width':160,'params':{}};</script><script src="https://www.highrevenueformat.com/aab2f5b837577d78c557c34438394794/invoke.js"></script>
+                </div>
+                <a href="#" class="cw-ad-upgrade-hint" onclick="openVipModal(); return false;">Go VIP &mdash; Remove Ads</a>
+            </div>
+
             <!-- Shelf 1: Trending Movies -->
             <section class="shelf-section">
                 <div class="shelf-header">
@@ -1167,6 +1262,15 @@
                     <button class="carousel-nav next" data-target="trendingMoviesTrack"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
                 </div>
             </section>
+
+            <!-- Home Ad Slot 2 -->
+            <div class="cw-ad-slot cw-ad-banner" id="cwHomeAd2" style="display:none; margin: 20px auto; max-width: 1400px; padding: 0 5%;">
+                <span class="cw-ad-label">Advertisement</span>
+                <div class="cw-ad-inner">
+                    <script>atOptions={'key':'aab2f5b837577d78c557c34438394794','format':'iframe','height':300,'width':160,'params':{}};</script><script src="https://www.highrevenueformat.com/aab2f5b837577d78c557c34438394794/invoke.js"></script>
+                </div>
+                <a href="#" class="cw-ad-upgrade-hint" onclick="openVipModal(); return false;">Go VIP &mdash; Remove Ads</a>
+            </div>
 
             <!-- Shelf 2: Trending Series -->
             <section class="shelf-section">
@@ -1544,7 +1648,7 @@
                         <div class="input-with-icon">
                             <ion-icon name="lock-closed-outline"></ion-icon>
                             <input type="password" id="loginPassword" class="form-control notranslate" translate="no"
-                                placeholder="••••••••" autocomplete="current-password" required>
+                                placeholder="ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³" autocomplete="current-password" required>
                             <button type="button" class="password-toggle-btn" aria-label="Show/hide password" id="toggleLoginPassword">
                                 <ion-icon name="eye-outline"></ion-icon>
                             </button>
@@ -1586,7 +1690,7 @@
                         <label for="signupPassword" id="signupPwLabel" class="notranslate" translate="no">Password</label>
                         <div class="input-with-icon">
                             <ion-icon name="lock-closed-outline"></ion-icon>
-                            <input type="password" id="signupPassword" class="form-control notranslate" translate="no" placeholder="••••••••" autocomplete="new-password" required>
+                            <input type="password" id="signupPassword" class="form-control notranslate" translate="no" placeholder="ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³ÃŽâ€œÃƒâ€¡ÃƒÂ³" autocomplete="new-password" required>
                             <button type="button" class="password-toggle-btn" aria-label="Show/hide password" id="toggleSignupPassword">
                                 <ion-icon name="eye-outline"></ion-icon>
                             </button>
@@ -1702,150 +1806,181 @@
     </div>
 
     <!-- VIP Membership & Pricing Modal -->
-    <div class="modal-overlay vip-modal-overlay hidden" id="vipModal">
-        <div class="modal-card vip-modal-card" id="vipModalCard" onclick="event.stopPropagation()">
-            <div class="vip-glow-effect"></div>
-            <button class="modal-close-btn vip-close-btn" id="closeVipModalBtn" aria-label="Close VIP modal">&times;</button>
+    <div class="vip-fullpage hidden" id="vipModal">
+        <!-- Close button top-right -->
+        <button class="vip-fullpage-close" id="closeVipModalBtn" aria-label="Close">&times;</button>
 
-            <!-- STEP 1: Plan Selection Grid -->
-            <div class="vip-step-plans" id="vipStepPlans">
-                <div class="vip-header">
-                    <div class="vip-badge-pill">
-                        <ion-icon name="diamond-outline"></ion-icon> CineWatch Membership
+        <!-- STEP 1: Plan Selection (new full-page design) -->
+        
+          <div class="vip-step-plans" id="vipStepPlans">
+            <div class="plan-container">
+              <div style="margin-bottom: 2rem; text-align: center;">
+                <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 0.5rem;">CineWatch VIP</h2>
+                <p style="color: rgba(255,255,255,0.6);">Choose the plan that works for you. No ads, 4K quality, pure cinema.</p>
+                <div class="vip-fp-toggle-row" style="margin-top: 1.5rem; justify-content: center;">
+                  <div class="vip-billing-switch" id="vipBillingSwitch" role="radiogroup" aria-label="Billing cycle" data-active="monthly">
+                    <button type="button" class="billing-btn active" id="billingBtnMonthly" data-period="monthly" aria-checked="true" role="radio">Month</button>
+                    <button type="button" class="billing-btn" id="billingBtnQuarterly" data-period="quarterly" aria-checked="false" role="radio">3 Months</button>
+                    <button type="button" class="billing-btn" id="billingBtnYearly" data-period="yearly" aria-checked="false" role="radio">Year</button>
+                  </div>
+                  <span class="vip-fp-save-note">Save Best Value</span>
+                </div>
+              </div>
+
+              <div class="plan-grid">
+                
+                <!-- Basic Plan -->
+                <div class="plan-card palette-slate">
+                  <div class="plan-top">
+                    <div class="plan-blob-a"></div>
+                    <div class="plan-blob-b"></div>
+                    <svg class="plan-grain" xmlns="http://www.w3.org/2000/svg"><filter id="grain-basic"><feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain-basic)"/></svg>
+                    
+                    <div class="plan-content">
+                      <div class="plan-title">Basic</div>
+                      <div class="plan-desc">Free browsing with ads</div>
+                      
+                      <div class="plan-price-row">
+                        <span class="plan-price">$0</span>
+                      </div>
+                      
+                      <button class="plan-cta plan-cta-light" style="opacity:0.5; cursor:not-allowed;">Current Plan</button>
                     </div>
-                    <h2 class="vip-title notranslate" translate="no">Choose a Plan That's Suitable for You</h2>
-
-
-                    <!-- Billing Period Switch (Month or Year) -->
-                    <div class="vip-billing-switch-wrap">
-                        <div class="vip-billing-switch" id="vipBillingSwitch" role="radiogroup" aria-label="Billing cycle" data-active="monthly">
-                            <button type="button" class="billing-btn active" id="billingBtnMonthly" data-period="monthly" aria-checked="true" role="radio">
-                                <span>Month</span>
-                            </button>
-                            <button type="button" class="billing-btn" id="billingBtnQuarterly" data-period="quarterly" aria-checked="false" role="radio">
-                                <span>3 Months</span>
-                            </button>
-                            <button type="button" class="billing-btn" id="billingBtnYearly" data-period="yearly" aria-checked="false" role="radio">
-                                <span>Year</span>
-                                <span class="billing-discount-badge">Save Best Value</span>
-                            </button>
-                            <div class="billing-slider-glider" id="billingSliderGlider"></div>
-                        </div>
-                    </div>
+                  </div>
+                  
+                  <div class="plan-features">
+                    <ul class="plan-feature-list">
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> 720p / 1080p streaming</li>
+                      <li class="plan-feature-item"><ion-icon name="close-outline"></ion-icon> Ad-free site experience</li>
+                    </ul>
+                  </div>
                 </div>
 
-                <div class="vip-grid">
-                    <!-- Plan 1: Free Explorer -->
-                    <div class="vip-plan-card free-card" data-tier="free">
-                        <div class="card-light-beam"></div>
-                        <div class="card-border-glow"></div>
-                        <div class="vip-top-shimmer"></div>
-                        <div class="vip-plan-header">
-                            <span class="vip-plan-badge">Standard</span>
-                            <h3 class="vip-plan-name notranslate" translate="no">Free Explorer</h3>
-                            <div class="vip-plan-price">
-                                <span class="vip-currency">$</span>
-                                <span class="vip-amount">0</span>
-                                <span class="vip-period">/ forever</span>
-                            </div>
-                            
-                        </div>
-                        <ul class="vip-perks-list">
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Standard 720p/1080p stream</span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Standard servers (2, 3, 4)</span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Watchlist & Continue Watching</span></li>
-                            <li class="disabled"><ion-icon name="close-circle-outline"></ion-icon> <span>Ad-free video playback</span></li>
-                            <li class="disabled"><ion-icon name="close-circle-outline"></ion-icon> <span>Unlimited high-speed downloads</span></li>
-                            <li class="disabled"><ion-icon name="close-circle-outline"></ion-icon> <span>VIP Server 1 Priority</span></li>
-                        </ul>
-                        <button class="vip-plan-btn current-plan-btn" disabled>Current Active Plan</button>
+                <!-- Advanced Plan -->
+                <div class="plan-card palette-blue">
+                  <div class="plan-top">
+                    <div class="plan-blob-a"></div>
+                    <div class="plan-blob-b"></div>
+                    <svg class="plan-grain" xmlns="http://www.w3.org/2000/svg"><filter id="grain-advanced"><feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain-advanced)"/></svg>
+                    
+                    <div class="plan-content">
+                      <div class="plan-title">Advanced</div>
+                      <div class="plan-desc">Great for getting started</div>
+                      
+                      <div class="plan-price-row">
+                        <span class="plan-price">$<span id="vipAmountBronze">7.99</span></span>
+                        <span class="plan-per">/mo</span>
+                      </div>
+                      
+                      <button class="plan-cta plan-cta-light select-plan-btn" id="vipBtnBronze" data-tier="bronze" data-price="7.99" data-name="Advanced (Monthly)">Upgrade</button>
                     </div>
-
-                    <!-- Plan 2: Supporter (Bronze) -->
-                    <div class="vip-plan-card bronze-card" data-tier="bronze">
-                        <div class="card-light-beam"></div>
-                        <div class="card-border-glow"></div>
-                        <div class="vip-top-shimmer"></div>
-                        <div class="vip-plan-header">
-                            <span class="vip-plan-badge bronze-badge">Supporter</span>
-                            <h3 class="vip-plan-name notranslate" translate="no">Bronze Supporter</h3>
-                            <div class="vip-plan-price">
-                                <span class="vip-currency">$</span>
-                                <span class="vip-amount" id="vipAmountBronze">8</span>
-                                <span class="vip-period" id="vipPeriodBronze">/ month</span>
-                            </div>
-                            
-                        </div>
-                        <ul class="vip-perks-list">
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Full HD 1080p streaming</span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span><strong>Ad-Free Video Player</strong></span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Faster video buffer speeds</span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Bronze Supporter Profile Badge</span></li>
-                            <li class="disabled"><ion-icon name="close-circle-outline"></ion-icon> <span>Ultra 4K Bitrate</span></li>
-                            <li class="disabled"><ion-icon name="close-circle-outline"></ion-icon> <span>VIP Server 1 Priority Line</span></li>
-                        </ul>
-                        <button class="vip-plan-btn select-plan-btn bronze-btn" id="vipBtnBronze" data-tier="bronze" data-price="8" data-iqd="4,000 IQD" data-name="Bronze Supporter (Monthly)">Upgrade to Bronze</button>
-                    </div>
-
-                    <!-- Plan 3: VIP Pro (Gold) -->
-                    <div class="vip-plan-card gold-card popular" data-tier="gold">
-                        <div class="card-light-beam"></div>
-                        <div class="card-border-glow"></div>
-                        <div class="vip-top-shimmer"></div>
-                        <div class="vip-popular-tag">MOST POPULAR</div>
-                        <div class="vip-plan-header">
-                            <span class="vip-plan-badge gold-badge">VIP Pro</span>
-                            <h3 class="vip-plan-name notranslate" translate="no">Gold VIP</h3>
-                            <div class="vip-plan-price">
-                                <span class="vip-currency">$</span>
-                                <span class="vip-amount" id="vipAmountGold">15</span>
-                                <span class="vip-period" id="vipPeriodGold">/ month</span>
-                            </div>
-                            
-                        </div>
-                        <ul class="vip-perks-list">
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span><strong>4K Ultra HD & High Bitrate</strong></span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span><strong>100% Zero Ads</strong> on entire site</span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span><strong>Server 1 (VIP Fast Line)</strong></span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span><strong>Unlimited Fast Downloads</strong></span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Priority Movie Requests (within 24h)</span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Golden Glowing Avatar Ring</span></li>
-                        </ul>
-                        <button class="vip-plan-btn select-plan-btn gold-btn" id="vipBtnGold" data-tier="gold" data-price="15" data-iqd="8,000 IQD" data-name="Gold VIP (Monthly)">Get Gold VIP</button>
-                    </div>
-
-                    <!-- Plan 4: 1-Year VIP Pass (Diamond) -->
-                    <div class="vip-plan-card diamond-card best-value" data-tier="diamond">
-                        <div class="card-light-beam"></div>
-                        <div class="card-border-glow"></div>
-                        <div class="vip-top-shimmer"></div>
-                        <div class="vip-popular-tag diamond-tag" id="diamondTag">BEST VALUE • 1-YEAR PASS</div>
-                        <div class="vip-plan-header">
-                            <span class="vip-plan-badge diamond-badge" id="diamondBadge">1-Year Pass</span>
-                            <h3 class="vip-plan-name notranslate" translate="no" id="diamondTitle">Diamond VIP</h3>
-                            <div class="vip-plan-price">
-                                <span class="vip-currency">$</span>
-                                <span class="vip-amount" id="vipAmountDiamond">20</span>
-                                <span class="vip-period" id="vipPeriodDiamond">/ month</span>
-                            </div>
-                            
-                        </div>
-                        <ul class="vip-perks-list">
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span><strong>All Gold VIP Perks Included</strong></span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span><strong>No Monthly Renewals</strong> or stress</span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span><strong>Direct WhatsApp / Telegram VIP Line</strong></span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Exclusive Holographic Diamond Badge</span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Early access to newest releases</span></li>
-                            <li><ion-icon name="checkmark-circle"></ion-icon> <span>Maximum Dedicated Server Bandwidth</span></li>
-                        </ul>
-                        <button class="vip-plan-btn select-plan-btn diamond-btn" id="vipBtnDiamond" data-tier="diamond" data-price="20" data-iqd="13,500 IQD" data-name="Diamond VIP (Monthly)">Get Diamond VIP</button>
-                    </div>
+                  </div>
+                  
+                  <div class="plan-features">
+                    <ul class="plan-feature-list">
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> 720p / 1080p streaming</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> Ad-free site experience</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> VIP badge on profile</li>
+                      <li class="plan-feature-item" style="color:#fbbf24;"><ion-icon name="color-palette-outline"></ion-icon> Custom Accent Theme Colors</li>
+                    </ul>
+                  </div>
                 </div>
-            </div>
 
+                <!-- Pro Plan -->
+                <div class="plan-card palette-purple">
+                  <div class="plan-top">
+                    <div class="plan-blob-a"></div>
+                    <div class="plan-blob-b"></div>
+                    <svg class="plan-grain" xmlns="http://www.w3.org/2000/svg"><filter id="grain-pro"><feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain-pro)"/></svg>
+                    
+                    <div class="plan-content">
+                      <div>
+                        <span class="plan-badge">POPULAR</span>
+                      </div>
+                      <div class="plan-title">Pro</div>
+                      <div class="plan-desc">Everything you need</div>
+                      
+                      <div class="plan-price-row">
+                        <span class="plan-price">$<span id="vipAmountGold">14.99</span></span>
+                        <span class="plan-per">/mo</span>
+                      </div>
+                      
+                      <button class="plan-cta plan-cta-light select-plan-btn" id="vipBtnGold" data-tier="gold" data-price="14.99" data-name="Pro (Monthly)">Upgrade</button>
+                    </div>
+                  </div>
+                  
+                  <div class="plan-features">
+                    <ul class="plan-feature-list">
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> 720p / 1080p streaming</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> Ad-free site experience</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> VIP badge on profile</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> 4K Ultra HD section</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> Download for offline</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Ultimate Plan -->
+                <div class="plan-card palette-amber">
+                  <div class="plan-top">
+                    <div class="plan-blob-a"></div>
+                    <div class="plan-blob-b"></div>
+                    <svg class="plan-grain" xmlns="http://www.w3.org/2000/svg"><filter id="grain-ultimate"><feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#grain-ultimate)"/></svg>
+                    
+                    <div class="plan-content">
+                      <div>
+                        <span class="plan-badge" style="background: rgba(0,0,0,0.4);">BEST VALUE</span>
+                      </div>
+                      <div class="plan-title">Ultimate</div>
+                      <div class="plan-desc">The full experience</div>
+                      
+                      <div class="plan-price-row">
+                        <span class="plan-price">$<span id="vipAmountDiamond">19.99</span></span>
+                        <span class="plan-per">/mo</span>
+                      </div>
+                      
+                      <button class="plan-cta plan-cta-dark select-plan-btn" id="vipBtnDiamond" data-tier="diamond" data-price="19.99" data-name="Ultimate (Monthly)">Upgrade</button>
+                    </div>
+                  </div>
+                  
+                  <div class="plan-features">
+                    <ul class="plan-feature-list">
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> 720p / 1080p streaming</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> Ad-free site experience</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> VIP badge on profile</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> 4K Ultra HD section</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> Download for offline</li>
+                      <li class="plan-feature-item"><ion-icon name="checkmark-outline"></ion-icon> Request missing titles</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
             </div>
-            <!-- STEP 2: Local Wallet Payment View -->
-                        <div class="vip-step-checkout hidden" id="vipStepCheckout">
+          </div>
+          <div style="margin-top: 3rem; padding-bottom: 3rem;">
+            <h2 class="vip-fp-faq-title">Got questions?</h2>
+            <div class="vip-fp-faq">
+              <details>
+                <summary>Can I cancel any time?</summary>
+                <p>Yes. Cancel from your account settings whenever you like &mdash; access continues until the end of the billing period already paid for.</p>
+              </details>
+              <details>
+                <summary>Why do I still see some ads?</summary>
+                <p>Membership removes all CineWatch pop-ups and banner ads. Ads built directly into third-party video servers (VidSrc, SuperVideo) are outside our control since we don't host the files ourselves.</p>
+              </details>
+              <details>
+                <summary>Can I change plans later?</summary>
+                <p>Yes &mdash; upgrade or downgrade any time, with billing adjusted immediately for the rest of your cycle.</p>
+              </details>
+              <details>
+                <summary>What payment methods work?</summary>
+                <p>FastPay, FIB Bank direct transfer, ZainCash, USDT/Crypto (TRC-20), Qi Card, and Western Union international bank deposit.</p>
+              </details>
+            </div>
+            <footer class="vip-fp-footer" style="text-align: center; color: rgba(255,255,255,0.4); font-size: 0.85rem; margin-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">Prices in USD &bull; billing period selected above</footer>
+          </div>
+          <div class="vip-step-checkout hidden" id="vipStepCheckout">
                 <div class="checkout-top-bar">
                     <button class="vip-back-btn" id="vipBackToPlansBtn">
                         <ion-icon name="arrow-back-outline"></ion-icon> Back
@@ -2082,8 +2217,16 @@
                                     <input type="radio" name="payment_method">
                                     <span class="method-icon"><svg viewBox="0 0 36 24" width="26" height="17" fill="none"><circle cx="12" cy="12" r="11" fill="#EB001B"/><circle cx="24" cy="12" r="11" fill="#F79E1B"/><path d="M18 4.254a10.965 10.965 0 0 0-4.57 7.746A10.965 10.965 0 0 0 18 19.746 10.965 10.965 0 0 0 22.57 12 10.965 10.965 0 0 0 18 4.254z" fill="#FF5F00"/></svg></span>
                                     <div class="method-info">
-                                        <span class="method-name">Qi Card / Mastercard</span>
+                                        <span class="method-name">Qi Card</span>
                                         <span class="method-desc">Qi Services Transfer</span>
+                                    </div>
+                                </label>
+                                <label class="checkout-method-card" data-wallet="westernunion">
+                                    <input type="radio" name="payment_method">
+                                    <span class="method-icon" style="background:#FFD700; border-radius:4px; padding:2px 4px; display:inline-flex; align-items:center; justify-content:center; font-weight:900; font-size:11px; color:#000; min-width:32px;">WU</span>
+                                    <div class="method-info">
+                                        <span class="method-name">Western Union</span>
+                                        <span class="method-desc">International Transfer</span>
                                     </div>
                                 </label>
                             </div>
@@ -2382,7 +2525,7 @@
             clip: rect(0, 0, 0, 0) !important;
         }
 
-        /* Language Toast — Chrome-style compact popup (top-right) */
+        /* Language Toast ÃŽâ€œÃƒâ€¡ÃƒÂ¶ Chrome-style compact popup (top-right) */
         .lang-toast {
             position: fixed;
             top: 86px;
@@ -3130,7 +3273,42 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_668"></script>
+    <script src="welcome-disclaimer.js?v=20260918_1824"></script>
+
+    <!-- Interstitial Ad Modal ÃŽâ€œÃƒâ€¡ÃƒÂ¶ fires on pagination for free users -->
+    <div id="cwInterstitialAdModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.88); align-items:center; justify-content:center;">
+        <div style="background:#161618; border-radius:14px; padding:24px; max-width:420px; width:90%; text-align:center; position:relative; box-shadow:0 8px 40px rgba(0,0,0,0.7);">
+            <button id="cwCloseInterstitialBtn" style="position:absolute; top:12px; right:14px; background:none; border:none; color:#aaa; font-size:22px; cursor:pointer; line-height:1;">&#10005;</button>
+            <p style="color:#aaa; font-size:0.78rem; letter-spacing:1px; text-transform:uppercase; margin-bottom:10px;">Advertisement</p>
+            <!-- Adsterra banner ad inside the popup -->
+            <div id="cwInterstitialAdInner" style="display:flex; align-items:center; justify-content:center; min-height:160px; margin-bottom:16px;">
+                <script>atOptions={'key':'aab2f5b837577d78c557c34438394794','format':'iframe','height':300,'width':160,'params':{}};</script>
+                <script src="https://www.highrevenueformat.com/aab2f5b837577d78c557c34438394794/invoke.js"></script>
+            </div>
+            <p style="color:#888; font-size:0.82rem; margin-bottom:14px;">Support CineWatch by viewing this ad</p>
+            <button id="cwContinueInterstitialBtn" style="background:#e50914; color:#fff; border:none; border-radius:8px; padding:10px 28px; font-size:0.95rem; font-weight:600; cursor:pointer; width:100%; margin-bottom:10px;">Continue to Next Page &#8594;</button>
+            <a href="#" onclick="document.getElementById('cwInterstitialAdModal').style.display='none'; openVipModal(); return false;" style="color:#e50914; font-size:0.82rem; text-decoration:none; display:block;">Go VIP &mdash; Remove All Ads</a>
+        </div>
+    </div>
+    <script>
+      // Wire up interstitial close/continue buttons
+      (function() {
+        document.getElementById('cwCloseInterstitialBtn').onclick = function() {
+          document.getElementById('cwInterstitialAdModal').style.display = 'none';
+          if (window._cwInterstitialProceed) window._cwInterstitialProceed();
+        };
+        document.getElementById('cwContinueInterstitialBtn').onclick = function() {
+          document.getElementById('cwInterstitialAdModal').style.display = 'none';
+          if (window._cwInterstitialProceed) window._cwInterstitialProceed();
+        };
+      })();
+    </script>
 </body>
 
 </html>
+
+
+
+
+
+
