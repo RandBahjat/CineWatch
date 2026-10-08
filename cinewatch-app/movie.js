@@ -6817,7 +6817,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
   // 1. Direct stream check from videoUrl or movie data
   const rawVideoStr = String(videoUrl || ref?.videoUrl || '');
-  if (rawVideoStr.startsWith('http') && (rawVideoStr.includes('.mp4') || rawVideoStr.includes('m3u8') || rawVideoStr.includes('.webm'))) {
+  if ((rawVideoStr.startsWith('http') || rawVideoStr.startsWith('/') || rawVideoStr.startsWith('./') || rawVideoStr.includes('.mp4') || rawVideoStr.includes('.m3u8')) && (rawVideoStr.includes('.mp4') || rawVideoStr.includes('m3u8') || rawVideoStr.includes('.webm'))) {
     cleanUrl = rawVideoStr;
   }
 
