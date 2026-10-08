@@ -380,30 +380,24 @@ function loadState() {
       try { userObj = typeof savedUser === 'string' ? JSON.parse(savedUser) : savedUser; } catch(e) {}
     }
 
-    if (!userObj || (userObj.name && userObj.name.toLowerCase().includes('rand')) || (userObj.email && userObj.email.toLowerCase().includes('rand'))) {
-      userObj = {
-        id: "rand-bahjat-owner",
-        name: "Rand Bahjat",
-        username: "RandBahjat",
-        email: "rand.bahjat@cinewatch.watch",
-        avatar: "👑",
-        isVip: true,
-        vipTier: "Ultimate",
-        role: "admin",
-        createdAt: "2024-01-01"
-      };
-      localStorage.setItem('cw_is_vip', 'true');
-      sessionStorage.setItem('cw_is_vip', 'true');
-      localStorage.setItem('cw_vip_tier', 'Ultimate');
-      localStorage.setItem('userVipTier', 'ultimate');
-      window.userVipTier = 'ultimate';
-      localStorage.removeItem('cw_user_cancelled_vip');
-    } else if (userObj.isVip) {
-      localStorage.setItem('cw_is_vip', 'true');
-      sessionStorage.setItem('cw_is_vip', 'true');
-      localStorage.setItem('cw_vip_tier', userObj.vipTier || 'VIP');
-      localStorage.setItem('userVipTier', (userObj.vipTier || 'VIP').toLowerCase());
-      window.userVipTier = (userObj.vipTier || 'VIP').toLowerCase();
+    if (userObj) {
+      if ((userObj.name && userObj.name.toLowerCase().includes('rand')) || (userObj.email && userObj.email.toLowerCase().includes('rand'))) {
+        userObj.isVip = true;
+        userObj.vipTier = "Ultimate";
+        userObj.role = "admin";
+        localStorage.setItem('cw_is_vip', 'true');
+        sessionStorage.setItem('cw_is_vip', 'true');
+        localStorage.setItem('cw_vip_tier', 'Ultimate');
+        localStorage.setItem('userVipTier', 'ultimate');
+        window.userVipTier = 'ultimate';
+        localStorage.removeItem('cw_user_cancelled_vip');
+      } else if (userObj.isVip) {
+        localStorage.setItem('cw_is_vip', 'true');
+        sessionStorage.setItem('cw_is_vip', 'true');
+        localStorage.setItem('cw_vip_tier', userObj.vipTier || 'VIP');
+        localStorage.setItem('userVipTier', (userObj.vipTier || 'VIP').toLowerCase());
+        window.userVipTier = (userObj.vipTier || 'VIP').toLowerCase();
+      }
     }
 
     state.user = userObj;
