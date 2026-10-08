@@ -280,8 +280,9 @@ async function loadMediaFromAPI() {
     allMedia.forEach(m => {
       const match = localFourK.find(f => (f.title || '').trim().toLowerCase() === (m.title || '').trim().toLowerCase());
       if (match) {
-        m.is4k = true;
-        if (match.videoUrl) m.videoUrl = match.videoUrl;
+        m.has4k = true;
+        m.fourkVideoUrl = match.videoUrl;
+        if (!m.hdVideoUrl) m.hdVideoUrl = m.videoUrl;
       }
     });
 
