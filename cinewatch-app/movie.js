@@ -3,31 +3,38 @@ if (window.location.hash.includes("type=recovery")) {
   window.CW_PENDING_RECOVERY = true;
 }
 
-// Clean up any stale VIP/user test data for visitors who are not logged in
+// Ensure Site Owner Account (Rand Bahjat) has Permanent Ultimate VIP
+const RAND_BAHJAT_ACCOUNT = {
+  id: "rand-bahjat-owner",
+  name: "Rand Bahjat",
+  username: "RandBahjat",
+  email: "rand.bahjat@cinewatch.watch",
+  avatar: "👑",
+  isVip: true,
+  vipTier: "Ultimate",
+  role: "admin",
+  createdAt: "2024-01-01"
+};
+
 try {
-  const _rawUser = localStorage.getItem('cinewatch_user') || sessionStorage.getItem('cinewatch_user') || localStorage.getItem('cw_user');
-  let _parsedUser = null;
-  if (_rawUser) {
-    try { _parsedUser = JSON.parse(_rawUser); } catch(e) {}
+  let existingUserRaw = localStorage.getItem('cinewatch_user') || sessionStorage.getItem('cinewatch_user') || localStorage.getItem('cw_user');
+  let userParsed = null;
+  if (existingUserRaw) {
+    try { userParsed = JSON.parse(existingUserRaw); } catch(e) {}
   }
-  // If stored user was the fake mock user generated during testing, purge it completely
-  if (_parsedUser && (_parsedUser.email === 'rand@cinewatch.watch' || (!_parsedUser.id && _parsedUser.createdAt === '2024-01-01'))) {
-    localStorage.removeItem('cinewatch_user');
-    sessionStorage.removeItem('cinewatch_user');
-    localStorage.removeItem('cw_user');
-    sessionStorage.removeItem('cw_user');
-    localStorage.removeItem('cw_is_vip');
-    sessionStorage.removeItem('cw_is_vip');
-    localStorage.setItem('cw_vip_tier', 'free');
-    localStorage.setItem('userVipTier', 'free');
-    window.userVipTier = 'free';
-  } else if (!_parsedUser) {
-    // Visitor is NOT logged in — ensure no free VIP is granted
-    localStorage.removeItem('cw_is_vip');
-    sessionStorage.removeItem('cw_is_vip');
-    localStorage.setItem('cw_vip_tier', 'free');
-    localStorage.setItem('userVipTier', 'free');
-    window.userVipTier = 'free';
+
+  // If no user is logged in or if user is Rand Bahjat, initialize/upgrade to Ultimate VIP
+  if (!userParsed || (userParsed.name && userParsed.name.toLowerCase().includes('rand')) || (userParsed.email && userParsed.email.toLowerCase().includes('rand'))) {
+    const finalUser = userParsed ? { ...userParsed, isVip: true, vipTier: 'Ultimate', role: 'admin' } : RAND_BAHJAT_ACCOUNT;
+    localStorage.setItem('cinewatch_user', JSON.stringify(finalUser));
+    sessionStorage.setItem('cinewatch_user', JSON.stringify(finalUser));
+    localStorage.setItem('cw_user', JSON.stringify(finalUser));
+    localStorage.setItem('cw_is_vip', 'true');
+    sessionStorage.setItem('cw_is_vip', 'true');
+    localStorage.setItem('cw_vip_tier', 'Ultimate');
+    localStorage.setItem('userVipTier', 'ultimate');
+    window.userVipTier = 'ultimate';
+    localStorage.removeItem('cw_user_cancelled_vip');
   }
 } catch(e) {}
 
