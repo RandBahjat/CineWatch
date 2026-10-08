@@ -739,6 +739,9 @@ async function initApp() {
     // Render default catalog carousels
     renderCarousels();
 
+    // ALWAYS initialize hero banner so it is populated and ready for Home view
+    setupHeroBanner();
+
     // Check for target section parameter from full-page reload
     const params = new URLSearchParams(window.location.search);
     const targetSection = params.get('section') || params.get('view');
@@ -746,13 +749,12 @@ async function initApp() {
       state.activeView = targetSection;
       _performSwitchView(targetSection);
     } else {
-      // Hero Carousel
-      setupHeroBanner();
-
+      state.activeView = 'home';
       // Render Home Shelves
       renderContinueWatchingShelf();
       if (typeof renderBecauseYouWatchedShelf === "function") renderBecauseYouWatchedShelf();
       if (typeof renderWatchlistHomeShelf === "function") renderWatchlistHomeShelf();
+      updateSectionSEO('home');
     }
 
     // Start hero auto slide (managed by startHeroAutoplay)
