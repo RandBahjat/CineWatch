@@ -17,7 +17,7 @@ window._FOURK_DATA = [
     ],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/7iwUUcKURMT7aKfCwMy6YnGtchD.jpg",
-    videoUrl: "E:\spider-manbnd.mkv"",
+    videoUrl: "E:\spider-manbnd.mkv",
     trailerUrl: "https://www.youtube.com/watch?v=daXaTug8rL4",
     overview: "Peter Parker fight crime full-time as Spider-Man in world that no longer remember him, pressure of watching old friend move on without him spark change he not sure he can control. Transformation might be only thing that can stop shocking new threat to city, and those he love — powerful villain no one can even see",
     overviewKurdish: "پیتەر پارکەر بە تەواوی کاتی خۆی وەک سپایدەرمان تەرخان دەکات، لە جیهانێکدا کە چیتر ئەو ناناسێتەوە. گوشاری بینینی هاوڕێیەکی کۆن کە بێ ئەو بەردەوامە لە ژیانیدا، دەبێتە هۆی گۆڕانێک کە دڵنیا نییە بتوانێت بەڕێوەی ببات.",
