@@ -394,37 +394,62 @@ function loadState() {
       try { userObj = typeof savedUser === 'string' ? JSON.parse(savedUser) : savedUser; } catch(e) {}
     }
 
-    // Default account for Rand Bahjat (Site Owner) with Ultimate VIP
-    if (!userObj || !userObj.name) {
-      userObj = {
-        name: "Rand Bahjat",
-        displayName: "Rand Bahjat",
-        email: "rand@cinewatch.watch",
-        isVip: true,
-        vipTier: "Ultimate",
-        role: "admin",
-        createdAt: "2024-01-01"
-      };
+    // Purge fake mock user if present from earlier testing
+    if (userObj && (userObj.email === 'rand@cinewatch.watch' || (!userObj.id && userObj.createdAt === '2024-01-01'))) {
+      userObj = null;
+      localStorage.removeItem(KEYS.USER);
+      sessionStorage.removeItem(KEYS.USER);
+      localStorage.removeItem('cinewatch_user');
+      sessionStorage.removeItem('cinewatch_user');
+      localStorage.removeItem('cw_user');
     }
 
-    const uName = (userObj.name || userObj.displayName || '').toLowerCase();
-    const uEmail = (userObj.email || '').toLowerCase();
-    if (uName.includes('rand') || uEmail.includes('rand') || uName.includes('admin') || uEmail.includes('admin')) {
-      userObj.isVip = true;
-      userObj.vipTier = 'Ultimate';
-      userObj.role = 'admin';
-    }
+    if (userObj && (userObj.name || userObj.email || userObj.username)) {
+      // User is logged in — check if account is Rand Bahjat (Site Owner => Ultimate VIP)
+      const uName = (userObj.name || userObj.displayName || userObj.username || '').toLowerCase().trim();
+      const uEmail = (userObj.email || '').toLowerCase().trim();
+      const isOwner = uName.includes('rand') || uEmail.includes('rand') || uName.includes('admin') || uEmail.includes('admin');
 
-    state.user = userObj;
-    localStorage.setItem(KEYS.USER, JSON.stringify(userObj));
-    sessionStorage.setItem(KEYS.USER, JSON.stringify(userObj));
-    localStorage.setItem('cinewatch_user', JSON.stringify(userObj));
-    sessionStorage.setItem('cinewatch_user', JSON.stringify(userObj));
-    localStorage.setItem('cw_is_vip', 'true');
-    sessionStorage.setItem('cw_is_vip', 'true');
-    localStorage.setItem('cw_vip_tier', 'Ultimate');
-    localStorage.setItem('userVipTier', 'ultimate');
-    localStorage.removeItem('cw_user_cancelled_vip');
+      if (isOwner) {
+        userObj.isVip = true;
+        userObj.vipTier = 'Ultimate';
+        userObj.role = 'admin';
+        localStorage.setItem('cw_is_vip', 'true');
+        sessionStorage.setItem('cw_is_vip', 'true');
+        localStorage.setItem('cw_vip_tier', 'Ultimate');
+        localStorage.setItem('userVipTier', 'ultimate');
+        window.userVipTier = 'ultimate';
+        localStorage.removeItem('cw_user_cancelled_vip');
+      } else if (userObj.isVip) {
+        localStorage.setItem('cw_is_vip', 'true');
+        sessionStorage.setItem('cw_is_vip', 'true');
+        localStorage.setItem('cw_vip_tier', userObj.vipTier || 'VIP');
+        localStorage.setItem('userVipTier', (userObj.vipTier || 'VIP').toLowerCase());
+        window.userVipTier = (userObj.vipTier || 'VIP').toLowerCase();
+      } else {
+        localStorage.removeItem('cw_is_vip');
+        sessionStorage.removeItem('cw_is_vip');
+        localStorage.setItem('cw_vip_tier', 'free');
+        localStorage.setItem('userVipTier', 'free');
+        window.userVipTier = 'free';
+      }
+
+      state.user = userObj;
+      sessionStorage.setItem(KEYS.USER, JSON.stringify(userObj));
+    } else {
+      // Unauthenticated visitor / Guest — NO free VIP!
+      state.user = null;
+      localStorage.removeItem(KEYS.USER);
+      sessionStorage.removeItem(KEYS.USER);
+      localStorage.removeItem('cinewatch_user');
+      sessionStorage.removeItem('cinewatch_user');
+      localStorage.removeItem('cw_user');
+      localStorage.removeItem('cw_is_vip');
+      sessionStorage.removeItem('cw_is_vip');
+      localStorage.setItem('cw_vip_tier', 'free');
+      localStorage.setItem('userVipTier', 'free');
+      window.userVipTier = 'free';
+    }
 
     if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
 
@@ -453,22 +478,56 @@ function loadState() {
 
 function saveUser(userObj) {
   if (userObj) {
-    const uName = (userObj.name || userObj.displayName || '').toLowerCase();
-    const uEmail = (userObj.email || '').toLowerCase();
-    if (uName.includes('rand') || uEmail.includes('rand') || uName.includes('admin') || uEmail.includes('admin')) {
+    const uName = (userObj.name || userObj.displayName || userObj.username || '').toLowerCase().trim();
+    const uEmail = (userObj.email || '').toLowerCase().trim();
+    const isOwner = uName.includes('rand') || uEmail.includes('rand') || uName.includes('admin') || uEmail.includes('admin');
+    if (isOwner) {
       userObj.isVip = true;
       userObj.vipTier = 'Ultimate';
+      userObj.role = 'admin';
       localStorage.setItem('cw_is_vip', 'true');
       localStorage.setItem('cw_vip_tier', 'Ultimate');
       sessionStorage.setItem('cw_is_vip', 'true');
+      sessionStorage.setItem('cw_vip_tier', 'Ultimate');
+      localStorage.setItem('userVipTier', 'ultimate');
+      window.userVipTier = 'ultimate';
+      localStorage.removeItem('cw_user_cancelled_vip');
+    } else if (userObj.isVip) {
+      localStorage.setItem('cw_is_vip', 'true');
+      localStorage.setItem('cw_vip_tier', userObj.vipTier || 'VIP');
+      sessionStorage.setItem('cw_is_vip', 'true');
+      sessionStorage.setItem('cw_vip_tier', userObj.vipTier || 'VIP');
+      localStorage.setItem('userVipTier', (userObj.vipTier || 'VIP').toLowerCase());
+      window.userVipTier = (userObj.vipTier || 'VIP').toLowerCase();
+    } else {
+      userObj.isVip = false;
+      userObj.vipTier = 'free';
+      localStorage.removeItem('cw_is_vip');
+      sessionStorage.removeItem('cw_is_vip');
+      localStorage.setItem('cw_vip_tier', 'free');
+      localStorage.setItem('userVipTier', 'free');
+      window.userVipTier = 'free';
     }
-  }
-  state.user = userObj;
-  localStorage.removeItem(KEYS.USER);
-  if (userObj) {
+    state.user = userObj;
     sessionStorage.setItem(KEYS.USER, JSON.stringify(userObj));
+    localStorage.setItem(KEYS.USER, JSON.stringify(userObj));
+    sessionStorage.setItem('cinewatch_user', JSON.stringify(userObj));
+    localStorage.setItem('cinewatch_user', JSON.stringify(userObj));
   } else {
+    // Visitor logged out or unauthenticated
+    state.user = null;
     sessionStorage.removeItem(KEYS.USER);
+    localStorage.removeItem(KEYS.USER);
+    sessionStorage.removeItem('cinewatch_user');
+    localStorage.removeItem('cinewatch_user');
+    sessionStorage.removeItem('cw_user');
+    localStorage.removeItem('cw_user');
+    localStorage.removeItem('cw_is_vip');
+    sessionStorage.removeItem('cw_is_vip');
+    localStorage.setItem('cw_vip_tier', 'free');
+    localStorage.setItem('userVipTier', 'free');
+    window.userVipTier = 'free';
+
     // Clear local data on sign-out so another user doesn't see it
     state.favorites = [];
     state.continueWatching = {};
@@ -477,6 +536,8 @@ function saveUser(userObj) {
     localStorage.removeItem(KEYS.FAVORITES);
     localStorage.removeItem(KEYS.CONTINUE);
   }
+  if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
+  if (typeof renderVipBadges === 'function') renderVipBadges();
   renderUserBadge();
   updateWatchlistBadge();
 }
