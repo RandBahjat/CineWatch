@@ -23,5 +23,5 @@ window._FOURK_DATA = [
     featured: true,
     is4k: true,
     seasons: []
-  },
-  
+  }
+];
