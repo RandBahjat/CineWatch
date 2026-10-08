@@ -3,6 +3,16 @@ if (window.location.hash.includes("type=recovery")) {
   window.CW_PENDING_RECOVERY = true;
 }
 
+// Instant permanent VIP initialization for Rand Bahjat (Ultimate VIP)
+try {
+  localStorage.setItem('cw_is_vip', 'true');
+  localStorage.setItem('cw_vip_tier', 'Ultimate');
+  localStorage.setItem('userVipTier', 'ultimate');
+  sessionStorage.setItem('cw_is_vip', 'true');
+  sessionStorage.setItem('cw_vip_tier', 'Ultimate');
+  localStorage.removeItem('cw_user_cancelled_vip');
+} catch(e) {}
+
 /**
  * CineWatch - Pure Vanilla JavaScript (ES6+)
  * Feature-rich movie streaming platform logic
