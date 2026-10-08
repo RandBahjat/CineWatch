@@ -21,7 +21,7 @@ try {
 // ==========================================
 // 1. HIGHLIGHTS & TRENDING
 // ==========================================
-let FEATURED_TITLES = ["Runner","Lanterns","The Love Hypothesis","Unabomber","Resident Evil","Neagley","Reacher","The End of Oak Street","Verity","Slow Horses","City of Blood","Mayday","The Runner","Coyote vs. Acme","Spider-Man: Brand New Day"];
+let FEATURED_TITLES = ["Runner","Lanterns","The Love Hypothesis","Unabomber","Resident Evil","Neagley","Reacher","The End of Oak Street","Verity","Slow Horses","City of Blood","Mayday","The Runner","Coyote vs. Acme",];
 let TOP_10_TRENDING_TODAY = ["Spider-Man: Brand New Day", "Digger","Lanterns","East of Eden", "Runner",  "Resident Evil", "The Uprising", "One Piece(1999)",  "Verity", "MobLand"];
 let TRENDING_THIS_WEEK_MOVIES = ["Spider-Man: Brand New Day","Resident Evil","The End of Oak Street", "The Odysessey", "Toy Story 5", "Obsession", "The Love Hypothesis", "Moana(2026)", "One Last Shot", "Digger", "The Rivals of Amziah King", "Backrooms", "You+Me – Against the World", "Coyote vs. Acme", "Just Play Dead"];
 let TRENDING_THIS_WEEK_SERIES = ["Monster: The Lizzie Borden Story","MobLand","Neagley", "Reacher", "Lioness", "Lanterns", "Slow Horses", "One Piece", "Ted Lasso","City of Blood", "Stranger Things: Tales from '85", "Silo"];
