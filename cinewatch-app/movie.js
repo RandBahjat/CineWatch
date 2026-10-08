@@ -1775,7 +1775,9 @@ function getSeriesList() {
 
 
 function get4kList() {
-  return MOVIES.filter((m) => m.is4k);
+  const fromMovies = MOVIES.filter((m) => m.is4k);
+  if (fromMovies.length > 0) return fromMovies;
+  return (window._FOURK_DATA || []).map(item => ({ ...item, is4k: true }));
 }
 
 function getAnimeList() {
