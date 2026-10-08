@@ -4683,7 +4683,14 @@ function setupVipEventListeners() {
   });
 
   const navVipBtn = document.getElementById("navVipBtn");
-  if (navVipBtn) navVipBtn.onclick = () => openVipModal();
+  if (navVipBtn) navVipBtn.onclick = (e) => {
+    e.preventDefault();
+    if (isUserVip()) {
+      switchView("4k");
+    } else {
+      openVipModal();
+    }
+  };
 
   const browseFourKBtn = document.getElementById("browseCard4k") || document.getElementById("browseCardVip");
   if (browseFourKBtn) browseFourKBtn.onclick = (e) => {
