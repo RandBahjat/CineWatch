@@ -21,6 +21,8 @@ const MIME_TYPES = {
   '.ico': 'image/x-icon',
   '.mp4': 'video/mp4',
   '.webm': 'video/webm',
+  '.mkv': 'video/x-matroska',
+  '.m4v': 'video/mp4',
   '.woff': 'font/woff',
   '.woff2': 'font/woff2',
   '.ttf': 'font/ttf',
