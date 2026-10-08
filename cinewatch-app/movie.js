@@ -8027,24 +8027,10 @@ function triggerPop() {
 }
 
 window.check4KAccess = function() {
-    if (typeof isUserVip === 'function' && isUserVip()) {
-        if (typeof switchView === 'function') {
-            switchView('4k');
-        } else {
-            window.location.href = "index.html?section=4k";
-        }
-        return;
-    }
-    const tier = (window.userVipTier || localStorage.getItem("userVipTier") || localStorage.getItem("cw_vip_tier") || (state?.user?.vipTier) || "free").toLowerCase();
-    if (tier === "gold" || tier === "diamond" || tier === "ultimate" || tier === "vip" || tier === "pro") {
-        if (typeof switchView === 'function') {
-            switchView('4k');
-        } else {
-            window.location.href = "index.html?section=4k";
-        }
+    if (typeof switchView === 'function') {
+        switchView('4k');
     } else {
-        openVipModal();
-        if (typeof showToast === "function") showToast("You need Gold, Diamond, or Ultimate membership to access 4K Ultra HD.", "warning");
+        window.location.href = "index.html?section=4k";
     }
 };
 
