@@ -48,10 +48,6 @@
       // Ignore private storage error
     }
   }
-    } catch (e) {
-      // Ignore private storage error
-    }
-  }
 
   // Pre-flag document immediately to avoid flash of website content
   if (!isVerified()) {
