@@ -27,17 +27,27 @@
     if (window.location.protocol === 'file:' && typeof navigator !== 'undefined' && navigator.userAgent.includes('Electron')) {
       return true;
     }
-    // Always return false to enforce challenge on every reload
+    try {
+      if (sessionStorage.getItem(STORAGE_KEY_SESSION) === 'true') return true;
+      if (localStorage.getItem(STORAGE_KEY_SESSION) === 'true') return true;
+      if (document.cookie.indexOf('cw_cf_verified=true') !== -1) return true;
+    } catch (e) {}
     return false;
   }
 
   function setVerified(token) {
     try {
       sessionStorage.setItem(STORAGE_KEY_SESSION, 'true');
+      localStorage.setItem(STORAGE_KEY_SESSION, 'true');
       localStorage.setItem(STORAGE_KEY_TIME, Date.now().toString());
+      document.cookie = 'cw_cf_verified=true; max-age=2592000; path=/; SameSite=Lax';
       if (token) {
         sessionStorage.setItem('cw_cf_token', token);
       }
+    } catch (e) {
+      // Ignore private storage error
+    }
+  }
     } catch (e) {
       // Ignore private storage error
     }

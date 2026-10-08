@@ -1948,43 +1948,16 @@ function switchView(viewName, immediate = false) {
     return;
   }
 
-  // Major sections: trigger an authentic full-site reload with real asset and data loading
-  if (SECTION_VIEWS.includes(viewName)) {
-    const currentParams = new URLSearchParams(window.location.search);
-    const currentSection = currentParams.get('section') || currentParams.get('view') || 'home';
-
-    try {
-      sessionStorage.setItem('cw_navigated', '1');
-    } catch (e) {}
-
-    // If clicking current section and URL already matches, trigger true browser reload
-    if (state.activeView === viewName && currentSection === viewName) {
-      window.location.reload();
-      return;
-    }
-
-    // Immediately trigger top loading bar so user receives instant visual feedback
-    const bar = document.getElementById("cwTopLoadingBar");
-    if (bar) {
-      bar.classList.add("active");
-      bar.style.transition = "width 0.25s ease-out";
-      bar.style.width = "45%";
-      bar.style.opacity = "1";
-    }
-
-    window.location.href = getSectionUrl(viewName);
-    return;
-  }
-
-  // If already on this non-section view (e.g. search, genres), smooth scroll to top
+  // If already on this view, smooth scroll to top
   if (state.activeView === viewName) {
     window.scrollTo({ top: 0, behavior: "smooth" });
     return;
   }
 
-  // Animate with the glowing red progress bar for in-page sub-views
+  // Animate with the glowing red progress bar for smooth in-page transitions without full page reload
   triggerTopLoadingBar(() => {
     _performSwitchView(viewName);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
 
