@@ -3,14 +3,32 @@ if (window.location.hash.includes("type=recovery")) {
   window.CW_PENDING_RECOVERY = true;
 }
 
-// Instant permanent VIP initialization for Rand Bahjat (Ultimate VIP)
+// Clean up any stale VIP/user test data for visitors who are not logged in
 try {
-  localStorage.setItem('cw_is_vip', 'true');
-  localStorage.setItem('cw_vip_tier', 'Ultimate');
-  localStorage.setItem('userVipTier', 'ultimate');
-  sessionStorage.setItem('cw_is_vip', 'true');
-  sessionStorage.setItem('cw_vip_tier', 'Ultimate');
-  localStorage.removeItem('cw_user_cancelled_vip');
+  const _rawUser = localStorage.getItem('cinewatch_user') || sessionStorage.getItem('cinewatch_user') || localStorage.getItem('cw_user');
+  let _parsedUser = null;
+  if (_rawUser) {
+    try { _parsedUser = JSON.parse(_rawUser); } catch(e) {}
+  }
+  // If stored user was the fake mock user generated during testing, purge it completely
+  if (_parsedUser && (_parsedUser.email === 'rand@cinewatch.watch' || (!_parsedUser.id && _parsedUser.createdAt === '2024-01-01'))) {
+    localStorage.removeItem('cinewatch_user');
+    sessionStorage.removeItem('cinewatch_user');
+    localStorage.removeItem('cw_user');
+    sessionStorage.removeItem('cw_user');
+    localStorage.removeItem('cw_is_vip');
+    sessionStorage.removeItem('cw_is_vip');
+    localStorage.setItem('cw_vip_tier', 'free');
+    localStorage.setItem('userVipTier', 'free');
+    window.userVipTier = 'free';
+  } else if (!_parsedUser) {
+    // Visitor is NOT logged in — ensure no free VIP is granted
+    localStorage.removeItem('cw_is_vip');
+    sessionStorage.removeItem('cw_is_vip');
+    localStorage.setItem('cw_vip_tier', 'free');
+    localStorage.setItem('userVipTier', 'free');
+    window.userVipTier = 'free';
+  }
 } catch(e) {}
 
 /**
