@@ -3693,7 +3693,13 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
 
   // Single Movies / Standalone Titles
   const mediaId = movie.id || movie.videoUrl || movie.cinesrcId || movie.title;
-  openVideoPlayerWithUrl(movie.videoUrl || movie.id, movie.title, mediaId, null);
+  let targetUrl = movie.videoUrl || movie.id;
+  if (state.activeView === '4k' && movie.fourkVideoUrl) {
+    targetUrl = movie.fourkVideoUrl;
+  } else if (state.activeView !== '4k' && movie.hdVideoUrl) {
+    targetUrl = movie.hdVideoUrl;
+  }
+  openVideoPlayerWithUrl(targetUrl, movie.title, mediaId, null);
 }
 
 window.openDetailsModal = openDetailsModal;
