@@ -628,7 +628,7 @@ window._MOVIES_DATA = [
     ],
     trending: true,
     featured: true,
-    is4k: true,
+    is4k: false,
     seasons: []
   },
   {
