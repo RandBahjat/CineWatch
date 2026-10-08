@@ -38,6 +38,12 @@ try {
   localStorage.setItem('cinewatch_user', JSON.stringify(finalUser));
   sessionStorage.setItem('cinewatch_user', JSON.stringify(finalUser));
   localStorage.setItem('cw_user', JSON.stringify(finalUser));
+  if (document.documentElement) document.documentElement.classList.add('cw-ads-hidden');
+  if (document.body) document.body.classList.add('cw-ads-hidden');
+  document.addEventListener('DOMContentLoaded', () => {
+    if (document.body) document.body.classList.add('cw-ads-hidden');
+    if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
+  });
 } catch(e) {}
 
 /**
