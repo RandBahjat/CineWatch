@@ -2105,6 +2105,10 @@ function _performSwitchView(viewName) {
 
   // Helper: hide all dynamic sections
   const hideAll = () => {
+    if (state.heroInterval) {
+      clearInterval(state.heroInterval);
+      state.heroInterval = null;
+    }
     heroBanner.classList.add("hidden");
     defaultShelves.classList.add("hidden");
     if (continueSection) continueSection.classList.add("hidden");
@@ -2142,23 +2146,24 @@ function _performSwitchView(viewName) {
   }
 
   if (viewName === "home") {
+    hideAll();
     heroBanner.classList.remove("hidden");
     defaultShelves.classList.remove("hidden");
-    filteredSection.classList.add("hidden");
-    watchlistSection.classList.add("hidden");
-    if (continueSection) continueSection.classList.add("hidden");
-    moviesSection.classList.add("hidden");
-    seriesSection.classList.add("hidden");
-    if (animeSection) animeSection.classList.add("hidden");
-    if (detailsSection) detailsSection.classList.add("hidden");
     // Explicitly un-hide the shelves before rendering so they re-appear after navigating away
     if (continueShelf) continueShelf.classList.remove("hidden");
     if (watchlistHomeShelf) watchlistHomeShelf.classList.remove("hidden");
     const homeFooter = document.getElementById("homeFooter");
     if (homeFooter) homeFooter.classList.remove("hidden");
+    const heroTrack = document.getElementById("heroTrack");
+    if (!heroTrack || !heroTrack.children.length) {
+      setupHeroBanner();
+    } else {
+      if (typeof startHeroAutoplay === "function") startHeroAutoplay();
+    }
     renderContinueWatchingShelf();
-    renderBecauseYouWatchedShelf();
-    renderWatchlistHomeShelf();
+    if (typeof renderBecauseYouWatchedShelf === "function") renderBecauseYouWatchedShelf();
+    if (typeof renderWatchlistHomeShelf === "function") renderWatchlistHomeShelf();
+    updateSectionSEO('home');
   } else if (viewName === "movies") {
     hideAll();
     moviesSection.classList.remove("hidden");
