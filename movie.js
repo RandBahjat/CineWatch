@@ -16,35 +16,6 @@ const RAND_BAHJAT_ACCOUNT = {
   createdAt: "2024-01-01"
 };
 
-try {
-  // Always provision and maintain Rand Bahjat Ultimate VIP owner status
-  localStorage.setItem('cw_is_vip', 'true');
-  sessionStorage.setItem('cw_is_vip', 'true');
-  localStorage.setItem('cw_vip_tier', 'Ultimate');
-  sessionStorage.setItem('cw_vip_tier', 'Ultimate');
-  localStorage.setItem('userVipTier', 'ultimate');
-  sessionStorage.setItem('userVipTier', 'ultimate');
-  window.userVipTier = 'ultimate';
-  window.cwIsVip = true;
-  localStorage.removeItem('cw_user_cancelled_vip');
-  sessionStorage.removeItem('cw_user_cancelled_vip');
-
-  let existingUserRaw = localStorage.getItem('cinewatch_user') || sessionStorage.getItem('cinewatch_user') || localStorage.getItem('cw_user');
-  let userParsed = null;
-  if (existingUserRaw) {
-    try { userParsed = JSON.parse(existingUserRaw); } catch(e) {}
-  }
-  const finalUser = userParsed ? { ...userParsed, isVip: true, vipTier: 'Ultimate', role: 'admin' } : RAND_BAHJAT_ACCOUNT;
-  localStorage.setItem('cinewatch_user', JSON.stringify(finalUser));
-  sessionStorage.setItem('cinewatch_user', JSON.stringify(finalUser));
-  localStorage.setItem('cw_user', JSON.stringify(finalUser));
-  if (document.documentElement) document.documentElement.classList.add('cw-ads-hidden');
-  if (document.body) document.body.classList.add('cw-ads-hidden');
-  document.addEventListener('DOMContentLoaded', () => {
-    if (document.body) document.body.classList.add('cw-ads-hidden');
-    if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
-  });
-} catch(e) {}
 
 /**
  * CineWatch - Pure Vanilla JavaScript (ES6+)
