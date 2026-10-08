@@ -3735,9 +3735,10 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
   // Single Movies / Standalone Titles
   const mediaId = movie.id || movie.videoUrl || movie.cinesrcId || movie.title;
   let targetUrl = movie.videoUrl || movie.id;
-  if (state.activeView === '4k' && movie.fourkVideoUrl) {
+  const isFrom4k = state.activeView === '4k' || state.previousView === '4k';
+  if (isFrom4k && movie.fourkVideoUrl) {
     targetUrl = movie.fourkVideoUrl;
-  } else if (state.activeView !== '4k' && movie.hdVideoUrl) {
+  } else if (!isFrom4k && movie.hdVideoUrl) {
     targetUrl = movie.hdVideoUrl;
   }
   openVideoPlayerWithUrl(targetUrl, movie.title, mediaId, null);
