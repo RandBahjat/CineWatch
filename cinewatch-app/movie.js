@@ -2102,9 +2102,14 @@ function _performSwitchView(viewName) {
   }
 
   
-  // 4K Ultra HD Showcase View — fully accessible
+  // 4K Ultra HD Showcase View — VIP Protected
   if (viewName === '4k') {
-    // Smoothly enter 4K section
+    if (!isUserVip()) {
+      if (typeof openVipModal === 'function') {
+        openVipModal();
+      }
+      return;
+    }
   }
   state.activeView = viewName;
   const navLinks = document.querySelectorAll(".nav-link");
