@@ -7,8 +7,17 @@ const puppeteer = require('puppeteer');
   page.on('console', msg => console.log('BROWSER CONSOLE:', msg.type(), msg.text()));
   page.on('pageerror', err => console.log('BROWSER PAGEERROR:', err.message, err.stack));
 
+  await page.evaluateOnNewDocument(() => {
+    localStorage.setItem('cw_cookie_consent_v1', JSON.stringify({
+      necessary: true, preferences: true, analytics: true, timestamp: Date.now()
+    }));
+    localStorage.setItem('cw_is_vip', 'true');
+    localStorage.setItem('cw_vip_tier', 'Ultimate');
+  });
+
   console.log('Navigating to http://127.0.0.1:5500/?section=4k ...');
-  await page.goto('http://127.0.0.1:5500/?section=4k', { waitUntil: 'networkidle2' });
+  await page.goto('http://127.0.0.1:5500/?section=4k', { waitUntil: 'domcontentloaded' });
+  await new Promise(r => setTimeout(r, 2000));
 
   const initialDiag = await page.evaluate(() => {
     return {
