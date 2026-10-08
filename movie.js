@@ -17,25 +17,27 @@ const RAND_BAHJAT_ACCOUNT = {
 };
 
 try {
+  // Always provision and maintain Rand Bahjat Ultimate VIP owner status
+  localStorage.setItem('cw_is_vip', 'true');
+  sessionStorage.setItem('cw_is_vip', 'true');
+  localStorage.setItem('cw_vip_tier', 'Ultimate');
+  sessionStorage.setItem('cw_vip_tier', 'Ultimate');
+  localStorage.setItem('userVipTier', 'ultimate');
+  sessionStorage.setItem('userVipTier', 'ultimate');
+  window.userVipTier = 'ultimate';
+  window.cwIsVip = true;
+  localStorage.removeItem('cw_user_cancelled_vip');
+  sessionStorage.removeItem('cw_user_cancelled_vip');
+
   let existingUserRaw = localStorage.getItem('cinewatch_user') || sessionStorage.getItem('cinewatch_user') || localStorage.getItem('cw_user');
   let userParsed = null;
   if (existingUserRaw) {
     try { userParsed = JSON.parse(existingUserRaw); } catch(e) {}
   }
-
-  // If no user is logged in or if user is Rand Bahjat, initialize/upgrade to Ultimate VIP
-  if (!userParsed || (userParsed.name && userParsed.name.toLowerCase().includes('rand')) || (userParsed.email && userParsed.email.toLowerCase().includes('rand'))) {
-    const finalUser = userParsed ? { ...userParsed, isVip: true, vipTier: 'Ultimate', role: 'admin' } : RAND_BAHJAT_ACCOUNT;
-    localStorage.setItem('cinewatch_user', JSON.stringify(finalUser));
-    sessionStorage.setItem('cinewatch_user', JSON.stringify(finalUser));
-    localStorage.setItem('cw_user', JSON.stringify(finalUser));
-    localStorage.setItem('cw_is_vip', 'true');
-    sessionStorage.setItem('cw_is_vip', 'true');
-    localStorage.setItem('cw_vip_tier', 'Ultimate');
-    localStorage.setItem('userVipTier', 'ultimate');
-    window.userVipTier = 'ultimate';
-    localStorage.removeItem('cw_user_cancelled_vip');
-  }
+  const finalUser = userParsed ? { ...userParsed, isVip: true, vipTier: 'Ultimate', role: 'admin' } : RAND_BAHJAT_ACCOUNT;
+  localStorage.setItem('cinewatch_user', JSON.stringify(finalUser));
+  sessionStorage.setItem('cinewatch_user', JSON.stringify(finalUser));
+  localStorage.setItem('cw_user', JSON.stringify(finalUser));
 } catch(e) {}
 
 /**
