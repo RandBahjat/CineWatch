@@ -1944,56 +1944,39 @@ function triggerTopLoadingBar(onComplete) {
 
   void bar.offsetWidth; // Force reflow
 
-  // Stage 1: Initial jump to 28%
-  bar.style.transition = "width 0.3s cubic-bezier(0.16, 1, 0.3, 1)";
-  bar.style.width = "28%";
+  // Stage 1: Fast jump to 45%
+  bar.style.transition = "width 0.15s cubic-bezier(0.16, 1, 0.3, 1)";
+  bar.style.width = "45%";
 
-  // Soft dim on current content to indicate transition
-  const mainContent = document.getElementById("mainContent");
-  if (mainContent) {
-    mainContent.style.transition = "opacity 0.25s ease";
-    mainContent.style.opacity = "0.7";
+  if (typeof onComplete === "function") {
+    try { onComplete(); } catch(e) { console.error(e); }
   }
 
-  // Stage 2: Smooth advance to 68%
+  // Stage 2: Advance to 85%
   _topBarStep1Timer = setTimeout(() => {
-    bar.style.transition = "width 0.4s cubic-bezier(0.16, 1, 0.3, 1)";
-    bar.style.width = "68%";
-  }, 220);
+    bar.style.transition = "width 0.2s cubic-bezier(0.16, 1, 0.3, 1)";
+    bar.style.width = "85%";
+  }, 100);
 
-  // Stage 3: Steady creep to 88%
-  _topBarStep2Timer = setTimeout(() => {
-    bar.style.transition = "width 0.45s ease-out";
-    bar.style.width = "88%";
-  }, 560);
-
-  // Stage 4: Section reveals & bar hits 100% (~920ms total duration)
+  // Stage 3: Hit 100% and fade out
   _topBarTimer = setTimeout(() => {
-    if (typeof onComplete === "function") {
-      onComplete();
-    }
-
-    // Complete to 100%
-    bar.style.transition = "width 0.2s ease-out";
+    bar.style.transition = "width 0.15s ease-out";
     bar.style.width = "100%";
 
+    const mainContent = document.getElementById("mainContent");
     if (mainContent) {
       mainContent.style.opacity = "1";
-      setTimeout(() => {
-        mainContent.style.transition = "";
-      }, 300);
     }
 
-    // Fade out and clean up
     setTimeout(() => {
       bar.style.opacity = "0";
       setTimeout(() => {
         bar.classList.remove("active");
         bar.style.width = "0%";
         bar.style.transition = "";
-      }, 300);
-    }, 220);
-  }, 920);
+      }, 200);
+    }, 150);
+  }, 220);
 }
 
 function switchView(viewName, immediate = false) {
@@ -2009,11 +1992,10 @@ function switchView(viewName, immediate = false) {
     return;
   }
 
-  // Animate with the glowing red progress bar for smooth in-page transitions without full page reload
-  triggerTopLoadingBar(() => {
-    _performSwitchView(viewName);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+  // Instant view switch for maximum responsiveness
+  _performSwitchView(viewName);
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  triggerTopLoadingBar();
 }
 
 function _performSwitchView(viewName) {
