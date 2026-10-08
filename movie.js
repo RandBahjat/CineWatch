@@ -4596,8 +4596,8 @@ function setupVipEventListeners() {
   const navVipBtn = document.getElementById("navVipBtn");
   if (navVipBtn) navVipBtn.onclick = () => openVipModal();
 
-  const browseVipBtn = document.getElementById("browseCardVip");
-  if (browseVipBtn) browseVipBtn.onclick = (e) => {
+  const browseFourKBtn = document.getElementById("browseCard4k") || document.getElementById("browseCardVip");
+  if (browseFourKBtn) browseFourKBtn.onclick = (e) => {
     e.preventDefault();
     if (typeof closeBrowseDropdown === "function") closeBrowseDropdown();
     switchView("4k");
