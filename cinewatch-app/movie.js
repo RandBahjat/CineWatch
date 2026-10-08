@@ -8283,11 +8283,7 @@ function renderVipBadges() {
       `;
       navVip.onclick = (e) => {
         e.preventDefault();
-        if (typeof showToast === 'function') {
-          showToast("👑 VIP Active! Unlimited 4K Ultra HD & Zero Ads.", "success");
-        } else {
-          alert("👑 VIP Active! Unlimited 4K Ultra HD & Zero Ads.");
-        }
+        switchView("4k");
       };
     } else {
       navVip.classList.remove("vip-active-btn");
@@ -8296,11 +8292,11 @@ function renderVipBadges() {
         <svg class="vip-icon" style="width:18px;height:18px;margin-right:2px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"></path>
         </svg>
-        <span class="vip-text notranslate" translate="no">Upgrade</span>
+        <span class="vip-text notranslate" translate="no">4K VIP</span>
       `;
       navVip.onclick = (e) => {
         e.preventDefault();
-        if (typeof openVipModal === 'function') openVipModal();
+        switchView("4k");
       };
     }
   }
