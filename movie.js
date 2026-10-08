@@ -590,7 +590,7 @@ function recordWatchEvent(movieId) {
 // 3. UI RENDERERS & CONTROLLERS
 // ==========================================
 
-const SECTION_VIEWS = ['home', 'movies', 'series', 'anime', 'watchlist', 'continue'];
+const SECTION_VIEWS = ['home', 'movies', 'series', 'anime', '4k', 'watchlist', 'continue'];
 
 function getSectionUrl(sectionName) {
   try {
@@ -2051,7 +2051,7 @@ function _performSwitchView(viewName) {
   }
 
   document.body.classList.remove("mobile-browse-open");
-  document.body.classList.remove("view-home", "view-movies", "view-series", "view-anime", "view-watchlist", "view-continue", "view-genres", "view-search", "view-details");
+  document.body.classList.remove("view-home", "view-movies", "view-series", "view-anime", "view-4k", "view-watchlist", "view-continue", "view-genres", "view-search", "view-details");
   document.body.classList.add("view-" + viewName);
 
   if (window.updateNavGlider) window.updateNavGlider(true);
@@ -2085,6 +2085,8 @@ function _performSwitchView(viewName) {
     if (continueShelf) continueShelf.classList.add("hidden");
     if (becauseShelf) becauseShelf.classList.add("hidden");
     if (watchlistHomeShelf) watchlistHomeShelf.classList.add("hidden");
+    const fourkSec = document.getElementById("fourkSection");
+    if (fourkSec) fourkSec.classList.add("hidden");
     const homeFooter = document.getElementById("homeFooter");
     if (homeFooter) homeFooter.classList.add("hidden");
   };
@@ -2145,8 +2147,15 @@ function _performSwitchView(viewName) {
       if (bar && window.updateFilterScrollNav) window.updateFilterScrollNav(bar);
     }, 60);
   } else if (viewName === "4k") {
+    hideAll();
+    const fourkSection = document.getElementById("fourkSection");
+    if (fourkSection) fourkSection.classList.remove("hidden");
     render4kSection();
     updateSectionSEO('4k');
+    setTimeout(() => {
+      const bar = document.getElementById("fourkFilterBar");
+      if (bar && window.updateFilterScrollNav) window.updateFilterScrollNav(bar);
+    }, 60);
   } else if (viewName === "anime") {
     hideAll();
     if (animeSection) animeSection.classList.remove("hidden");
@@ -4545,7 +4554,8 @@ function setupVipEventListeners() {
   const browseVipBtn = document.getElementById("browseCardVip");
   if (browseVipBtn) browseVipBtn.onclick = (e) => {
     e.preventDefault();
-    openVipModal();
+    if (typeof closeBrowseDropdown === "function") closeBrowseDropdown();
+    switchView("4k");
   };
 
   const closeBtn = document.getElementById("closeVipModalBtn");
