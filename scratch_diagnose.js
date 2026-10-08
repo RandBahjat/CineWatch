@@ -22,9 +22,28 @@ const puppeteer = require('puppeteer');
   });
   console.log('Initial diag on ?section=4k:', JSON.stringify(initialDiag, null, 2));
 
-  console.log('Clicking Home button...');
-  await page.click('#navHomeBtn');
-  await new Promise(r => setTimeout(r, 1500));
+  console.log('Evaluating navHomeBtn and switching view...');
+  const navHomeInfo = await page.evaluate(() => {
+    const btn = document.getElementById('navHomeBtn');
+    const rect = btn?.getBoundingClientRect();
+    const elAtPoint = rect ? document.elementFromPoint(rect.x + rect.width / 2, rect.y + rect.height / 2) : null;
+    return {
+      exists: !!btn,
+      visible: btn?.offsetParent !== null,
+      rect,
+      elAtPointTag: elAtPoint?.tagName,
+      elAtPointId: elAtPoint?.id,
+      elAtPointClass: elAtPoint?.className
+    };
+  });
+  console.log('navHomeInfo:', navHomeInfo);
+
+  await page.evaluate(() => {
+    if (typeof switchView === 'function') {
+      switchView('home', true);
+    }
+  });
+  await new Promise(r => setTimeout(r, 2000));
 
   const afterHomeDiag = await page.evaluate(() => {
     const hero = document.getElementById('heroBanner');
