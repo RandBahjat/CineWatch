@@ -1764,7 +1764,7 @@ function getMoviesList() {
   return MOVIES.filter((m) => {
     const isAnime = Boolean(m.isAnime || m.type === "Anime" || (m.genres && m.genres.includes("Anime")));
     const isSeries = Boolean(m.type === "TV Show" || m.type === "Series" || (Array.isArray(m.seasons) && m.seasons.length > 0));
-    return !m.is4k && !isAnime && !isSeries && (m.type === "Movie" || !m.type);
+    return !isAnime && !isSeries && (m.type === "Movie" || !m.type);
   });
 }
 
@@ -1772,7 +1772,7 @@ function getMoviesList() {
 function getSeriesList() {
   return MOVIES.filter((m) => {
     const isAnime = Boolean(m.isAnime || m.type === "Anime" || (m.genres && m.genres.includes("Anime")));
-    return !m.is4k && !isAnime && (m.type === "TV Show" || m.type === "Series" || (Array.isArray(m.seasons) && m.seasons.length > 0));
+    return !isAnime && (m.type === "TV Show" || m.type === "Series" || (Array.isArray(m.seasons) && m.seasons.length > 0));
   });
 }
 
@@ -1781,7 +1781,11 @@ function get4kList() {
   if (Array.isArray(window._FOURK_DATA) && window._FOURK_DATA.length > 0) {
     return window._FOURK_DATA.map(item => ({ ...item, is4k: true }));
   }
-  return MOVIES.filter((m) => m.is4k);
+  return MOVIES.filter((m) => m.is4k || m.has4k).map(m => ({
+    ...m,
+    is4k: true,
+    videoUrl: m.fourkVideoUrl || m.videoUrl
+  }));
 }
 
 function getAnimeList() {
