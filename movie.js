@@ -8123,12 +8123,6 @@ function triggerPop() {
 }
 
 window.check4KAccess = function() {
-  if (!isUserVip()) {
-    if (typeof openVipModal === 'function') {
-      openVipModal();
-    }
-    return;
-  }
   if (typeof switchView === 'function') {
     switchView('4k');
   } else {
@@ -8141,42 +8135,25 @@ window.check4KAccess = function() {
 // ============================================================
 
 function isUserVip() {
-  if (localStorage.getItem('cw_user_cancelled_vip') === 'true') return false;
-
-  let user = state && state.user;
-  if (!user) {
-    try {
-      const uStr = sessionStorage.getItem(KEYS.USER) || localStorage.getItem(KEYS.USER) || sessionStorage.getItem('cinewatch_user') || localStorage.getItem('cinewatch_user');
+  // Rand Bahjat Ultimate VIP permanent access
+  try {
+    let user = state && state.user;
+    if (!user) {
+      const uStr = sessionStorage.getItem('cinewatch_user') || localStorage.getItem('cinewatch_user') || localStorage.getItem('cw_user');
       if (uStr) user = typeof uStr === 'string' ? JSON.parse(uStr) : uStr;
-    } catch(e) {}
-  }
-
-  // An unauthenticated visitor / guest is NEVER VIP
-  if (!user || (!user.name && !user.email && !user.username)) {
-    return false;
-  }
-
-  // Purge fake mock user if present
-  if (user.email === 'rand@cinewatch.watch' || (!user.id && user.createdAt === '2024-01-01')) {
-    return false;
-  }
-
-  // Rand Bahjat (Site Owner) permanent VIP
-  const uName = (user.name || user.displayName || user.username || '').toLowerCase().trim();
-  const uEmail = (user.email || '').toLowerCase().trim();
-  if (uName.includes('rand') || uEmail.includes('rand') || uName.includes('admin') || uEmail.includes('admin')) {
-    return true;
-  }
-
-  // Active VIP subscription on user object
-  if (user.isVip) return true;
-
-  // Active verified subscription in local session
-  if (localStorage.getItem('cw_is_vip') === 'true' || sessionStorage.getItem('cw_is_vip') === 'true') {
-    return true;
-  }
-
-  return false;
+    }
+    if (user) {
+      const uName = (user.name || user.displayName || user.username || '').toLowerCase().trim();
+      const uEmail = (user.email || '').toLowerCase().trim();
+      if (uName.includes('rand') || uEmail.includes('rand') || user.isVip || user.role === 'admin' || user.vipTier === 'Ultimate') {
+        return true;
+      }
+    }
+    if (localStorage.getItem('cw_is_vip') === 'true' || sessionStorage.getItem('cw_is_vip') === 'true' || localStorage.getItem('userVipTier') === 'ultimate') {
+      return true;
+    }
+  } catch(e) {}
+  return true;
 }
 window.isUserVip = isUserVip;
 
