@@ -1775,9 +1775,10 @@ function getSeriesList() {
 
 
 function get4kList() {
-  const fromMovies = MOVIES.filter((m) => m.is4k);
-  if (fromMovies.length > 0) return fromMovies;
-  return (window._FOURK_DATA || []).map(item => ({ ...item, is4k: true }));
+  if (Array.isArray(window._FOURK_DATA) && window._FOURK_DATA.length > 0) {
+    return window._FOURK_DATA.map(item => ({ ...item, is4k: true }));
+  }
+  return MOVIES.filter((m) => m.is4k);
 }
 
 function getAnimeList() {
