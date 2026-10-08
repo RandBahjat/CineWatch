@@ -6815,14 +6815,21 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   let subtitleUrl = '';
   let animeChapters = null;
 
-  // 1. Direct stream check from videoUrl or movie data
-  const rawVideoStr = String(videoUrl || ref?.videoUrl || '');
-  if ((rawVideoStr.startsWith('http') || rawVideoStr.startsWith('/') || rawVideoStr.startsWith('./') || rawVideoStr.includes('.mp4') || rawVideoStr.includes('.m3u8')) && (rawVideoStr.includes('.mp4') || rawVideoStr.includes('m3u8') || rawVideoStr.includes('.webm'))) {
-    cleanUrl = rawVideoStr;
-  }
-
   const curOrigin = (typeof window !== 'undefined' && window.location.origin && !window.location.origin.includes('null') && !window.location.origin.startsWith('file')) ? window.location.origin : 'http://localhost:3000';
   const curHost = (typeof window !== 'undefined' && window.location.hostname && !window.location.hostname.includes('null')) ? window.location.hostname : 'localhost';
+
+  // 1. Direct stream check from videoUrl or movie data
+  let rawVideoStr = String(videoUrl || ref?.videoUrl || '').trim();
+  if (/^[a-zA-Z]:/.test(rawVideoStr)) {
+    const fixedPath = rawVideoStr.replace(/^([a-zA-Z]):(?![/\\])/, (m, drive) => drive + ':/').replace(/\\/g, '/');
+    rawVideoStr = `${curOrigin}/api/stream-local?path=${encodeURIComponent(fixedPath)}`;
+  } else if (!rawVideoStr.startsWith('http') && !rawVideoStr.startsWith('/') && (rawVideoStr.endsWith('.mp4') || rawVideoStr.endsWith('.mkv') || rawVideoStr.endsWith('.webm'))) {
+    rawVideoStr = `${curOrigin}/api/stream-local?file=${encodeURIComponent(rawVideoStr)}`;
+  }
+
+  if (rawVideoStr.includes('.mp4') || rawVideoStr.includes('m3u8') || rawVideoStr.includes('.webm') || rawVideoStr.includes('.mkv') || rawVideoStr.includes('stream-local') || rawVideoStr.includes('stream-media')) {
+    cleanUrl = rawVideoStr;
+  }
 
   // Subtitle parameters
   let subParam = '';
