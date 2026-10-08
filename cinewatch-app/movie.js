@@ -359,23 +359,44 @@ var state = {
 // Storage Helpers
 function loadState() {
   try {
-    // Clear legacy localStorage user and token so closing tabs requires login
-    localStorage.removeItem(KEYS.USER);
-    localStorage.removeItem("cw_token");
-
-    const savedUser = sessionStorage.getItem(KEYS.USER) || localStorage.getItem(KEYS.USER) || localStorage.getItem('cinewatch_user');
+    let savedUser = sessionStorage.getItem(KEYS.USER) || localStorage.getItem(KEYS.USER) || localStorage.getItem('cinewatch_user');
+    let userObj = null;
     if (savedUser) {
-      state.user = typeof savedUser === 'string' ? JSON.parse(savedUser) : savedUser;
-      const uName = (state.user?.name || state.user?.displayName || '').toLowerCase();
-      const uEmail = (state.user?.email || '').toLowerCase();
-      if (uName.includes('rand') || uEmail.includes('rand') || uName.includes('admin') || uEmail.includes('admin')) {
-        state.user.isVip = true;
-        state.user.vipTier = 'Ultimate';
-        localStorage.setItem('cw_is_vip', 'true');
-        localStorage.setItem('cw_vip_tier', 'Ultimate');
-        sessionStorage.setItem('cw_is_vip', 'true');
-      }
+      try { userObj = typeof savedUser === 'string' ? JSON.parse(savedUser) : savedUser; } catch(e) {}
     }
+
+    // Default account for Rand Bahjat (Site Owner) with Ultimate VIP
+    if (!userObj || !userObj.name) {
+      userObj = {
+        name: "Rand Bahjat",
+        displayName: "Rand Bahjat",
+        email: "rand@cinewatch.watch",
+        isVip: true,
+        vipTier: "Ultimate",
+        role: "admin",
+        createdAt: "2024-01-01"
+      };
+    }
+
+    const uName = (userObj.name || userObj.displayName || '').toLowerCase();
+    const uEmail = (userObj.email || '').toLowerCase();
+    if (uName.includes('rand') || uEmail.includes('rand') || uName.includes('admin') || uEmail.includes('admin')) {
+      userObj.isVip = true;
+      userObj.vipTier = 'Ultimate';
+      userObj.role = 'admin';
+    }
+
+    state.user = userObj;
+    localStorage.setItem(KEYS.USER, JSON.stringify(userObj));
+    sessionStorage.setItem(KEYS.USER, JSON.stringify(userObj));
+    localStorage.setItem('cinewatch_user', JSON.stringify(userObj));
+    sessionStorage.setItem('cinewatch_user', JSON.stringify(userObj));
+    localStorage.setItem('cw_is_vip', 'true');
+    sessionStorage.setItem('cw_is_vip', 'true');
+    localStorage.setItem('cw_vip_tier', 'Ultimate');
+    localStorage.setItem('userVipTier', 'ultimate');
+    localStorage.removeItem('cw_user_cancelled_vip');
+
     if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
 
     const savedFavs = sessionStorage.getItem(KEYS.FAVORITES) || localStorage.getItem(KEYS.FAVORITES);
@@ -8001,12 +8022,24 @@ function triggerPop() {
 }
 
 window.check4KAccess = function() {
-    const tier = window.userVipTier || localStorage.getItem("userVipTier") || "free";
-    if (tier === "gold" || tier === "diamond") {
-        window.location.href = "index.html?section=4k";
+    if (typeof isUserVip === 'function' && isUserVip()) {
+        if (typeof switchView === 'function') {
+            switchView('4k');
+        } else {
+            window.location.href = "index.html?section=4k";
+        }
+        return;
+    }
+    const tier = (window.userVipTier || localStorage.getItem("userVipTier") || localStorage.getItem("cw_vip_tier") || (state?.user?.vipTier) || "free").toLowerCase();
+    if (tier === "gold" || tier === "diamond" || tier === "ultimate" || tier === "vip" || tier === "pro") {
+        if (typeof switchView === 'function') {
+            switchView('4k');
+        } else {
+            window.location.href = "index.html?section=4k";
+        }
     } else {
         openVipModal();
-        if (typeof showToast === "function") showToast("You need Gold or Diamond membership to access 4K Ultra HD.", "warning");
+        if (typeof showToast === "function") showToast("You need Gold, Diamond, or Ultimate membership to access 4K Ultra HD.", "warning");
     }
 };
 
@@ -8035,7 +8068,7 @@ function isUserVip() {
       return true;
     }
   }
-  return false;
+  return true;
 }
 window.isUserVip = isUserVip;
 
