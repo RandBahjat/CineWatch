@@ -2030,16 +2030,9 @@ function _performSwitchView(viewName) {
   }
 
   
+  // 4K Ultra HD Showcase View — fully accessible
   if (viewName === '4k') {
-    if (!isUserVip()) {
-      const tier = (window.userVipTier || localStorage.getItem("userVipTier") || localStorage.getItem("cw_vip_tier") || (state?.user?.vipTier) || "free").toLowerCase();
-      if (tier !== "gold" && tier !== "diamond" && tier !== "ultimate" && tier !== "vip" && tier !== "pro") {
-        openVipModal();
-        if (typeof showToast === "function") showToast("You need Gold, Diamond, or Ultimate membership to access 4K Ultra HD.", "warning");
-        _performSwitchView('home');
-        return;
-      }
-    }
+    // Smoothly enter 4K section
   }
   state.activeView = viewName;
   const navLinks = document.querySelectorAll(".nav-link");
