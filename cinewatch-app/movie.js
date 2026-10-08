@@ -2021,12 +2021,14 @@ function _performSwitchView(viewName) {
 
   
   if (viewName === '4k') {
-    const tier = window.userVipTier || localStorage.getItem("userVipTier") || "free";
-    if (tier !== "gold" && tier !== "diamond") {
-      openVipModal();
-      if (typeof showToast === "function") showToast("You need Gold or Diamond membership to access 4K Ultra HD.", "warning");
-      _performSwitchView('home');
-      return;
+    if (!isUserVip()) {
+      const tier = (window.userVipTier || localStorage.getItem("userVipTier") || localStorage.getItem("cw_vip_tier") || (state?.user?.vipTier) || "free").toLowerCase();
+      if (tier !== "gold" && tier !== "diamond" && tier !== "ultimate" && tier !== "vip" && tier !== "pro") {
+        openVipModal();
+        if (typeof showToast === "function") showToast("You need Gold, Diamond, or Ultimate membership to access 4K Ultra HD.", "warning");
+        _performSwitchView('home');
+        return;
+      }
     }
   }
   state.activeView = viewName;
