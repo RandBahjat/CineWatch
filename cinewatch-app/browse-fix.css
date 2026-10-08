@@ -497,9 +497,11 @@
   line-height: 1 !important;
 }
 
-/* Age Rating Tag — Sleek Frosted Certificate Micro-Chip */
+/* Age & Quality Rating Tags — Sleek Frosted Certificate Micro-Chip */
 .card-meta .badge-age,
-.card-meta .card-age {
+.card-meta .card-age,
+.card-meta .badge-quality,
+.card-meta .card-quality {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
