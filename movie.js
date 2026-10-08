@@ -261,8 +261,27 @@ async function loadMediaFromAPI() {
     const localMovies = window._MOVIES_DATA || [];
     const localSeries = window._SERIES_DATA || [];
     const localAnime = window._ANIME_DATA || [];
+    const localFourK = (window._FOURK_DATA || []).map(item => ({ ...item, is4k: true }));
 
-    MOVIES = [...localMovies, ...localSeries, ...localAnime];
+    // Merge media sources, ensuring items in fourk-data are marked is4k: true
+    const allMedia = [...localMovies, ...localSeries, ...localAnime];
+    const existingTitles = new Set(allMedia.map(m => (m.title || '').trim().toLowerCase()));
+
+    allMedia.forEach(m => {
+      const match = localFourK.find(f => (f.title || '').trim().toLowerCase() === (m.title || '').trim().toLowerCase());
+      if (match) {
+        m.is4k = true;
+        if (match.videoUrl) m.videoUrl = match.videoUrl;
+      }
+    });
+
+    localFourK.forEach(f => {
+      if (!existingTitles.has((f.title || '').trim().toLowerCase())) {
+        allMedia.push(f);
+      }
+    });
+
+    MOVIES = allMedia;
     window.MOVIES = MOVIES;
 
     if (MOVIES.length === 0) {
