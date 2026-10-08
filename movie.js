@@ -3092,11 +3092,31 @@ function openDetailsModal(movieId) {
     }
     const isCkb = (document.cookie || '').includes('googtrans=/en/ckb');
     const isAr = (document.cookie || '').includes('googtrans=/en/ar');
+    const durationEl = document.getElementById("detailsDuration");
     if (movie.type === "TV Show" && movie.seasons && movie.seasons.length > 0) {
       const sCount = formatNumber(movie.seasons.length);
-      document.getElementById("detailsDuration").textContent = isCkb ? `${sCount} وەرز` : (isAr ? `${movie.seasons.length} مواسم` : `${movie.seasons.length} Season${movie.seasons.length > 1 ? 's' : ''}`);
+      if (durationEl) durationEl.textContent = isCkb ? `${sCount} وەرز` : (isAr ? `${movie.seasons.length} مواسم` : `${movie.seasons.length} Season${movie.seasons.length > 1 ? 's' : ''}`);
     } else {
-      document.getElementById("detailsDuration").textContent = movie.duration;
+      if (durationEl) durationEl.textContent = movie.duration;
+    }
+
+    let qualityBadge = document.getElementById("detailsQualityBadge");
+    if (!qualityBadge && durationEl && durationEl.parentNode) {
+      qualityBadge = document.createElement("span");
+      qualityBadge.id = "detailsQualityBadge";
+      qualityBadge.className = "meta-quality badge-quality notranslate";
+      const sep = document.createElement("span");
+      sep.className = "meta-separator";
+      sep.innerHTML = "&nbsp;&middot;&nbsp;";
+      durationEl.parentNode.insertBefore(sep, durationEl.nextSibling);
+      durationEl.parentNode.insertBefore(qualityBadge, sep.nextSibling);
+    }
+    if (qualityBadge) {
+      const is4kActive = state.activeView === '4k' || (movie.is4k && state.activeView !== 'movies');
+      qualityBadge.textContent = is4kActive ? "4K UHD" : "HD";
+      qualityBadge.style.cssText = is4kActive
+        ? "margin-left: 2px; font-weight: 700; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; border: 1px solid rgba(229,9,20,0.5); background: rgba(229,9,20,0.22); color: #ff5252;"
+        : "margin-left: 2px; font-weight: 700; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); color: #fff;";
     }
     if (titleEl) {
       titleEl.textContent = movie.title;
