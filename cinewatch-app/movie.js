@@ -468,31 +468,18 @@ function saveUser(userObj) {
     sessionStorage.setItem('cinewatch_user', JSON.stringify(userObj));
     localStorage.setItem('cinewatch_user', JSON.stringify(userObj));
   } else {
-    // Fallback: Maintain Site Owner Rand Bahjat Ultimate VIP account by default
-    const ownerUser = {
-      id: "rand-bahjat-owner",
-      name: "Rand Bahjat",
-      username: "RandBahjat",
-      email: "rand.bahjat@cinewatch.watch",
-      avatar: "👑",
-      isVip: true,
-      vipTier: "Ultimate",
-      role: "admin",
-      createdAt: "2024-01-01"
-    };
-    state.user = ownerUser;
-    sessionStorage.setItem(KEYS.USER, JSON.stringify(ownerUser));
-    localStorage.setItem(KEYS.USER, JSON.stringify(ownerUser));
-    sessionStorage.setItem('cinewatch_user', JSON.stringify(ownerUser));
-    localStorage.setItem('cinewatch_user', JSON.stringify(ownerUser));
-    localStorage.setItem('cw_is_vip', 'true');
-    sessionStorage.setItem('cw_is_vip', 'true');
-    localStorage.setItem('cw_vip_tier', 'Ultimate');
-    sessionStorage.setItem('cw_vip_tier', 'Ultimate');
-    localStorage.setItem('userVipTier', 'ultimate');
-    sessionStorage.setItem('userVipTier', 'ultimate');
-    window.userVipTier = 'ultimate';
-    localStorage.removeItem('cw_user_cancelled_vip');
+    state.user = null;
+    sessionStorage.removeItem(KEYS.USER);
+    localStorage.removeItem(KEYS.USER);
+    sessionStorage.removeItem('cinewatch_user');
+    localStorage.removeItem('cinewatch_user');
+    localStorage.removeItem('cw_is_vip');
+    sessionStorage.removeItem('cw_is_vip');
+    localStorage.removeItem('cw_vip_tier');
+    sessionStorage.removeItem('cw_vip_tier');
+    localStorage.setItem('userVipTier', 'free');
+    sessionStorage.setItem('userVipTier', 'free');
+    window.userVipTier = 'free';
   }
   if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
   if (typeof renderVipBadges === 'function') renderVipBadges();
