@@ -1057,6 +1057,7 @@ function createMovieCardHTML(movie, rank = null, forcePoster = false) {
         <div class="card-meta">
           <span class="card-rating notranslate" translate="no"><span class="star-icon" style="color: #ffc107; margin-right: 3px;">&#9733;</span>${formatRating(movie.rating)}</span>
           ${movie.age ? `<span class="card-age badge-age notranslate" translate="no">${movie.age}</span>` : ''}
+          <span class="card-quality badge-quality notranslate" translate="no" ${state.activeView === '4k' || (movie.is4k && state.activeView !== 'movies') ? 'style="border-color: rgba(229,9,20,0.45); color: #ff5252;"' : ''}>${state.activeView === '4k' || (movie.is4k && state.activeView !== 'movies') ? '4K' : 'HD'}</span>
           <span class="card-year notranslate" translate="no">${formatNumber(movie.year)}</span>
           <span class="card-type notranslate" translate="no">${formatMediaType(displayType)}</span>
         </div>
