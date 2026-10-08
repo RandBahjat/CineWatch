@@ -8111,7 +8111,7 @@ function isUserVip() {
       return true;
     }
   } catch(e) {}
-  return true;
+  return false;
 }
 window.isUserVip = isUserVip;
 
