@@ -948,6 +948,75 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  // Stream local video directly from hard drive with Range requests
+  if (safePath === '/api/stream-local') {
+    let parsed = new URL(req.url, `http://localhost:${PORT}`);
+    let targetPath = parsed.searchParams.get('path') || parsed.searchParams.get('file');
+    if (!targetPath) {
+      res.writeHead(400, { 'Content-Type': 'text/plain' });
+      res.end('Missing path or file parameter');
+      return;
+    }
+
+    let resolvedPath = targetPath;
+    if (!path.isAbsolute(resolvedPath)) {
+      const candidates = [
+        path.join(ROOT_DIR, 'videos', targetPath),
+        path.join(ROOT_DIR, targetPath),
+        path.join(process.env.USERPROFILE || '', 'Downloads', targetPath),
+        path.join(process.env.USERPROFILE || '', 'Videos', targetPath),
+      ];
+      for (const cand of candidates) {
+        if (fs.existsSync(cand)) {
+          resolvedPath = cand;
+          break;
+        }
+      }
+    }
+
+    if (!fs.existsSync(resolvedPath)) {
+      res.writeHead(404, { 'Content-Type': 'text/plain' });
+      res.end(`File not found: ${resolvedPath}`);
+      return;
+    }
+
+    try {
+      const stat = fs.statSync(resolvedPath);
+      const ext = path.extname(resolvedPath).toLowerCase();
+      const contentType = MIME_TYPES[ext] || 'video/mp4';
+      const range = req.headers.range;
+
+      if (range) {
+        const parts = range.replace(/bytes=/, '').split('-');
+        const start = parseInt(parts[0], 10);
+        const end = parts[1] ? parseInt(parts[1], 10) : stat.size - 1;
+        const chunksize = (end - start) + 1;
+        const fileStream = fs.createReadStream(resolvedPath, { start, end });
+
+        res.writeHead(206, {
+          'Content-Range': `bytes ${start}-${end}/${stat.size}`,
+          'Accept-Ranges': 'bytes',
+          'Content-Length': chunksize,
+          'Content-Type': contentType,
+          'Access-Control-Allow-Origin': '*'
+        });
+        fileStream.pipe(res);
+      } else {
+        res.writeHead(200, {
+          'Content-Length': stat.size,
+          'Content-Type': contentType,
+          'Accept-Ranges': 'bytes',
+          'Access-Control-Allow-Origin': '*'
+        });
+        fs.createReadStream(resolvedPath).pipe(res);
+      }
+    } catch (e) {
+      res.writeHead(500, { 'Content-Type': 'text/plain' });
+      res.end(`Streaming error: ${e.message}`);
+    }
+    return;
+  }
+
   // Streaming Media Proxy with Range and Referer bypass for ArtPlayer
   if (safePath === '/api/stream-media') {
     let parsed = new URL(req.url, `http://localhost:${PORT}`);
