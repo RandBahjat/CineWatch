@@ -2082,16 +2082,8 @@ function _performSwitchView(viewName) {
     }
   }
 
-  
-  // 4K Ultra HD Showcase View — VIP Protected
-  if (viewName === '4k') {
-    if (!isUserVip()) {
-      if (typeof openVipModal === 'function') {
-        openVipModal();
-      }
-      return;
-    }
-  }
+  // 4K Ultra HD Showcase View
+  // Unconditionally allow entering the 4K showcase section
   state.activeView = viewName;
   const navLinks = document.querySelectorAll(".nav-link");
   navLinks.forEach((link) => {
