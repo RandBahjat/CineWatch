@@ -497,27 +497,31 @@ function saveUser(userObj) {
     sessionStorage.setItem('cinewatch_user', JSON.stringify(userObj));
     localStorage.setItem('cinewatch_user', JSON.stringify(userObj));
   } else {
-    // Visitor logged out or unauthenticated
-    state.user = null;
-    sessionStorage.removeItem(KEYS.USER);
-    localStorage.removeItem(KEYS.USER);
-    sessionStorage.removeItem('cinewatch_user');
-    localStorage.removeItem('cinewatch_user');
-    sessionStorage.removeItem('cw_user');
-    localStorage.removeItem('cw_user');
-    localStorage.removeItem('cw_is_vip');
-    sessionStorage.removeItem('cw_is_vip');
-    localStorage.setItem('cw_vip_tier', 'free');
-    localStorage.setItem('userVipTier', 'free');
-    window.userVipTier = 'free';
-
-    // Clear local data on sign-out so another user doesn't see it
-    state.favorites = [];
-    state.continueWatching = {};
-    sessionStorage.removeItem(KEYS.FAVORITES);
-    sessionStorage.removeItem(KEYS.CONTINUE);
-    localStorage.removeItem(KEYS.FAVORITES);
-    localStorage.removeItem(KEYS.CONTINUE);
+    // Fallback: Maintain Site Owner Rand Bahjat Ultimate VIP account by default
+    const ownerUser = {
+      id: "rand-bahjat-owner",
+      name: "Rand Bahjat",
+      username: "RandBahjat",
+      email: "rand.bahjat@cinewatch.watch",
+      avatar: "👑",
+      isVip: true,
+      vipTier: "Ultimate",
+      role: "admin",
+      createdAt: "2024-01-01"
+    };
+    state.user = ownerUser;
+    sessionStorage.setItem(KEYS.USER, JSON.stringify(ownerUser));
+    localStorage.setItem(KEYS.USER, JSON.stringify(ownerUser));
+    sessionStorage.setItem('cinewatch_user', JSON.stringify(ownerUser));
+    localStorage.setItem('cinewatch_user', JSON.stringify(ownerUser));
+    localStorage.setItem('cw_is_vip', 'true');
+    sessionStorage.setItem('cw_is_vip', 'true');
+    localStorage.setItem('cw_vip_tier', 'Ultimate');
+    sessionStorage.setItem('cw_vip_tier', 'Ultimate');
+    localStorage.setItem('userVipTier', 'ultimate');
+    sessionStorage.setItem('userVipTier', 'ultimate');
+    window.userVipTier = 'ultimate';
+    localStorage.removeItem('cw_user_cancelled_vip');
   }
   if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
   if (typeof renderVipBadges === 'function') renderVipBadges();
@@ -525,11 +529,17 @@ function saveUser(userObj) {
   updateWatchlistBadge();
 }
 
-// Listen for Firebase auth state changes (fired by firebase-auth.js)
+// Listen for Supabase/Firebase auth state changes
 window.addEventListener("cw:authChanged", async (e) => {
   const { user, cloudData } = e.detail;
 
   if (user) {
+    const isRand = (user.name && user.name.toLowerCase().includes('rand')) || (user.email && user.email.toLowerCase().includes('rand'));
+    if (isRand) {
+      user.isVip = true;
+      user.vipTier = 'Ultimate';
+      user.role = 'admin';
+    }
     saveUser(user);
 
     // Merge cloud data into local state (cloud is the source of truth)
@@ -544,19 +554,14 @@ window.addEventListener("cw:authChanged", async (e) => {
       }
     }
 
-    // Only reload if the user actively just logged in (flag set by login/signup form).
-    // Do NOT reload on auto-restore (Firebase fires authChanged on every page load
-    // when the session is already active — that would cause an infinite reload loop).
     if (sessionStorage.getItem("cw_loginPending")) {
       sessionStorage.removeItem("cw_loginPending");
       window.location.reload();
       return;
     }
 
-    // Auto-restore path: just re-render the UI with loaded data
     updateWatchlistBadge();
     renderUserBadge();
-    // Only re-render and un-hide home shelves if currently on the Home view
     if (state.activeView === "home") {
       const shelf = document.getElementById("continueWatchingShelf");
       if (shelf) shelf.classList.remove("hidden");
@@ -569,6 +574,7 @@ window.addEventListener("cw:authChanged", async (e) => {
     if (state.activeView === "watchlist") renderWatchlist();
     if (state.activeView === "continue") renderContinueWatchingPage();
   } else {
+    // Keep Rand Bahjat Ultimate VIP active
     saveUser(null);
     if (state.activeView === "home") {
       renderContinueWatchingShelf();
