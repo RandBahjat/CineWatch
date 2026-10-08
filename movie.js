@@ -8098,8 +8098,14 @@ function isUserVip() {
     let user = state && state.user;
     if (!user) {
       const uStr = sessionStorage.getItem('cinewatch_user') || localStorage.getItem('cinewatch_user') || localStorage.getItem('cw_user');
-      if (uStr) user = typeof uStr === 'string' ? JSON.parse(uStr) : uStr;
+      if (uStr && uStr !== 'null') user = typeof uStr === 'string' ? JSON.parse(uStr) : uStr;
     }
+    
+    // If there is no user logged in, they cannot be VIP
+    if (!user || user === 'null') {
+      return false;
+    }
+
     if (user) {
       const uName = (user.name || user.displayName || user.username || '').toLowerCase().trim();
       const uEmail = (user.email || '').toLowerCase().trim();
