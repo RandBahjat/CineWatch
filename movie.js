@@ -233,7 +233,7 @@ function getMediaListIndex(item, list) {
 }
 
 function findMovieByIdOrTitle(identifier) {
-  if (!identifier) return null;
+  if (!identifier || identifier === 'undefined' || identifier === 'null') return null;
   const raw = String(identifier).trim();
   const lower = raw.toLowerCase();
   const slug = lower.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -243,8 +243,8 @@ function findMovieByIdOrTitle(identifier) {
     (m.id && m.id.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug) ||
     (m.title && m.title.toLowerCase() === lower) ||
     (m.title && m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug) ||
-    String(m.videoUrl) === raw ||
-    String(m.cinesrcId) === raw
+    (m.videoUrl && String(m.videoUrl) === raw) ||
+    (m.cinesrcId && String(m.cinesrcId) === raw)
   ) || null;
 }
 
@@ -1805,9 +1805,6 @@ function getSeriesList() {
 
 
 function get4kList() {
-  if (Array.isArray(window._FOURK_DATA) && window._FOURK_DATA.length > 0) {
-    return window._FOURK_DATA.map(item => ({ ...item, is4k: true }));
-  }
   return MOVIES.filter((m) => m.is4k || m.has4k).map(m => ({
     ...m,
     is4k: true,
