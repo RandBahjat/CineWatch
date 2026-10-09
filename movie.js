@@ -482,8 +482,8 @@ function saveUser(userObj) {
     window.userVipTier = 'free';
   }
   if (typeof updateAdsVisibility === 'function') updateAdsVisibility();
-  if (typeof renderVipBadges === 'function') renderVipBadges();
   renderUserBadge();
+  if (typeof renderVipBadges === 'function') renderVipBadges();
   updateWatchlistBadge();
 }
 
