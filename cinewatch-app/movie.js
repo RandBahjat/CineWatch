@@ -8100,7 +8100,7 @@ function isUserVip() {
     }
     
     // If there is no user logged in, they cannot be VIP
-    if (!user || user === 'null') {
+    if (!user || user === 'null' || typeof user !== 'object' || Object.keys(user).length === 0 || (!user.email && !user.name && !user.username)) {
       return false;
     }
 
