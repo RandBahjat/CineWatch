@@ -8106,6 +8106,10 @@ function isUserVip() {
       return false;
     }
 
+    if (localStorage.getItem('cw_user_cancelled_vip') === 'true') {
+      return false;
+    }
+
     if (user) {
       const uName = (user.name || user.displayName || user.username || '').toLowerCase().trim();
       const uEmail = (user.email || '').toLowerCase().trim();
