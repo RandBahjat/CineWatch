@@ -8109,7 +8109,7 @@ function isUserVip() {
     if (user) {
       const uName = (user.name || user.displayName || user.username || '').toLowerCase().trim();
       const uEmail = (user.email || '').toLowerCase().trim();
-      if (uName.includes('rand') || uEmail.includes('rand') || user.isVip || user.role === 'admin' || user.vipTier === 'Ultimate') {
+      if (uName === 'rand' || uName === 'rand bahjat' || uEmail === 'randibajat@github.com' || uName === 'admin' || user.isVip || user.role === 'admin' || user.vipTier === 'Ultimate') {
         return true;
       }
     }
