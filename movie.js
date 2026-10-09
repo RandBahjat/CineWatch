@@ -473,6 +473,8 @@ function saveUser(userObj) {
     localStorage.removeItem(KEYS.USER);
     sessionStorage.removeItem('cinewatch_user');
     localStorage.removeItem('cinewatch_user');
+    localStorage.removeItem('cw_user');
+    sessionStorage.removeItem('cw_user');
     localStorage.removeItem('cw_is_vip');
     sessionStorage.removeItem('cw_is_vip');
     localStorage.removeItem('cw_vip_tier');
