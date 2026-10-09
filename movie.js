@@ -8241,7 +8241,8 @@ function renderVipBadges() {
   } catch(e) {}
   
   const isMockUser = user && user.name === "VIP Member" && (!user.email || user.email === "");
-  const isLoggedIn = !!(user && user !== 'null' && typeof user === 'object' && Object.keys(user).length > 0 && !isMockUser && (user.email || user.name || user.username));
+  let isLoggedIn = !!(user && user !== 'null' && typeof user === 'object' && Object.keys(user).length > 0 && !isMockUser && (user.email || user.name || user.username));
+  if (document.getElementById("headerLoginBtn")) { isLoggedIn = false; }
   const isVip = isLoggedIn && isUserVip();
 
   // 1. Update Navbar VIP Button
