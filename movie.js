@@ -8181,8 +8181,13 @@ function cancelVipSubscription() {
   }
 
   // Update cloud profile if Supabase/API is connected
-  if (window.CW_API && typeof window.CW_API.updateProfile === 'function') {
-    window.CW_API.updateProfile({ isVip: false, vipTier: 'free' }).catch(() => {});
+  if (window.CW_API) {
+    if (typeof window.CW_API.updateProfile === 'function') {
+      window.CW_API.updateProfile({ isVip: false, vipTier: 'free' }).catch(() => {});
+    }
+    if (typeof window.CW_API.cancelVipSubscription === 'function') {
+      window.CW_API.cancelVipSubscription().catch(() => {});
+    }
   }
 
   // Update UI components
