@@ -2049,7 +2049,13 @@ function _performSwitchView(viewName) {
   }
 
   // 4K Ultra HD Showcase View
-  // Unconditionally allow entering the 4K showcase section
+  if (viewName === "4k") {
+    const tier = (window.userVipTier || '').toLowerCase();
+    if (tier !== 'pro' && tier !== 'ultimate') {
+      if (typeof openVipModal === 'function') openVipModal();
+      return;
+    }
+  }
   state.activeView = viewName;
   const navLinks = document.querySelectorAll(".nav-link");
   navLinks.forEach((link) => {
