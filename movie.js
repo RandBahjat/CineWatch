@@ -8290,10 +8290,8 @@ function renderVipBadges() {
         `;
         navVip.onclick = (e) => {
           e.preventDefault();
-          if (typeof openAuthModal === 'function') {
-            openAuthModal();
-          } else {
-            switchView("4k");
+          if (typeof openVipModal === 'function') {
+            openVipModal();
           }
         };
       } else {
