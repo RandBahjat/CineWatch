@@ -381,7 +381,7 @@ function loadState() {
     }
 
     if (userObj) {
-      if ((userObj.name && userObj.name.toLowerCase().includes('rand')) || (userObj.email && userObj.email.toLowerCase().includes('rand'))) {
+      if (userObj.name === 'rand' || userObj.name === 'rand bahjat' || userObj.email === 'randibajat@github.com' || userObj.name === 'admin') {
         userObj.isVip = true;
         userObj.vipTier = "Ultimate";
         userObj.role = "admin";
