@@ -381,7 +381,8 @@ function loadState() {
     }
 
     if (userObj) {
-      if (userObj.name === 'rand' || userObj.name === 'rand bahjat' || userObj.email === 'randibajat@github.com' || userObj.name === 'admin') {
+      const isOwner = userObj.name === 'rand' || userObj.name === 'rand bahjat' || userObj.email === 'randibajat@github.com' || userObj.name === 'admin';
+      if (isOwner && localStorage.getItem('cw_user_cancelled_vip') !== 'true') {
         userObj.isVip = true;
         userObj.vipTier = "Ultimate";
         userObj.role = "admin";
