@@ -436,7 +436,7 @@ function saveUser(userObj) {
     const uName = (userObj.name || userObj.displayName || userObj.username || '').toLowerCase().trim();
     const uEmail = (userObj.email || '').toLowerCase().trim();
     const isOwner = uName === 'rand' || uName === 'rand bahjat' || uEmail === 'randibajat@github.com' || uName === 'admin' || uEmail === 'admin@cinewatch.watch';
-    if (isOwner) {
+    if (isOwner && localStorage.getItem('cw_user_cancelled_vip') !== 'true') {
       userObj.isVip = true;
       userObj.vipTier = 'Ultimate';
       userObj.role = 'admin';
