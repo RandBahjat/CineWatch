@@ -127,6 +127,22 @@ window.CW_API = {
       const { data: profile, error: profErr } = await supabaseClient.from('profiles').select('*').eq('id', user.id).single();
       if (profErr || !profile) return null;
 
+      // Check VIP status from backend to prevent false VIP activation on new logins
+      let isVip = profile.is_vip || profile.isVip || false;
+      let vipTier = profile.vip_tier || profile.vipTier || 'Free';
+      try {
+        const { data: vipOrders } = await supabaseClient
+          .from('vip_orders')
+          .select('plan, status')
+          .eq('username', profile.username)
+          .eq('status', 'approved')
+          .limit(1);
+        if (vipOrders && vipOrders.length > 0) {
+          isVip = true;
+          vipTier = vipOrders[0].plan;
+        }
+      } catch (e) {}
+
       return {
         id: profile.id,
         name: profile.name,
@@ -135,7 +151,9 @@ window.CW_API = {
         avatar: profile.avatar,
         createdAt: profile.created_at,
         favorites: profile.favorites,
-        continueWatching: profile.continue_watching
+        continueWatching: profile.continue_watching,
+        isVip: isVip,
+        vipTier: vipTier
       };
     } catch (e) {
       console.error("Error in getCurrentUser:", e);
