@@ -3142,7 +3142,7 @@ function openDetailsModal(movieId) {
       durationEl.parentNode.insertBefore(qualityBadge, sep.nextSibling);
     }
     if (qualityBadge) {
-      const is4kActive = state.activeView === '4k' || (movie.is4k && state.activeView !== 'movies');
+      const is4kActive = state.activeView === '4k' || state.previousView === '4k' || new URLSearchParams(window.location.search).get('section') === '4k' || (movie.is4k && state.activeView !== 'movies');
       qualityBadge.textContent = is4kActive ? "4K UHD" : "HD";
       qualityBadge.style.cssText = is4kActive
         ? "margin-left: 2px; font-weight: 700; font-size: 0.72rem; padding: 2px 7px; border-radius: 4px; border: 1px solid rgba(229,9,20,0.5); background: rgba(229,9,20,0.22); color: #ff5252;"
