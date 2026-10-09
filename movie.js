@@ -434,7 +434,7 @@ function saveUser(userObj) {
   if (userObj) {
     const uName = (userObj.name || userObj.displayName || userObj.username || '').toLowerCase().trim();
     const uEmail = (userObj.email || '').toLowerCase().trim();
-    const isOwner = uName.includes('rand') || uEmail.includes('rand') || uName.includes('admin') || uEmail.includes('admin');
+    const isOwner = uName === 'rand' || uName === 'rand bahjat' || uEmail === 'randibajat@github.com' || uName === 'admin' || uEmail === 'admin@cinewatch.watch';
     if (isOwner) {
       userObj.isVip = true;
       userObj.vipTier = 'Ultimate';
