@@ -1808,7 +1808,8 @@ function getSeriesList() {
 
 
 function get4kList() {
-  return MOVIES.filter((m) => m.is4k || m.has4k).map(m => ({
+  // Only show explicitly downloaded 4K content from fourk-data.js
+  return (window._FOURK_DATA || []).map(m => ({
     ...m,
     is4k: true,
     videoUrl: m.fourkVideoUrl || m.videoUrl
