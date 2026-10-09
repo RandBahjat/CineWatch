@@ -285,6 +285,24 @@ window.CW_API = {
     }
   },
 
+  async cancelVipSubscription() {
+    try {
+      const user = await this.getCurrentUser();
+      if (!user) return { success: false, error: 'Not logged in' };
+
+      const { error } = await supabaseClient
+        .from('vip_orders')
+        .update({ status: 'cancelled' })
+        .eq('username', user.username)
+        .eq('status', 'approved');
+
+      if (error) throw error;
+      return { success: true };
+    } catch (e) {
+      return { success: false, error: e.message };
+    }
+  },
+
   async postRating(movieId, rating) {
     try {
       const user = await this.getCurrentUser();
