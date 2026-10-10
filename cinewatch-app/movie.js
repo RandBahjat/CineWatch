@@ -7069,9 +7069,18 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     ? `https://megavid.buzz/mal/${malId}/${rawEp}/${curPref}`
     : '');
 
+  let driveIframeUrl = '';
+  const rawVidString = String(videoUrl || ref?.videoUrl || '');
+  if (rawVidString.includes('drive.google.com')) {
+      const driveIdMatch = rawVidString.match(/id=([a-zA-Z0-9_-]+)/) || rawVidString.match(/\/d\/([a-zA-Z0-9_-]+)/);
+      if (driveIdMatch && driveIdMatch[1]) {
+          driveIframeUrl = `https://drive.google.com/file/d/${driveIdMatch[1]}/preview`;
+      }
+  }
+
   // If no H.264 stream is available (because of H.265 limitation or rate limit), use the iframe
-  if (!streamUrl && iframe) {
-    iframe.src = isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : `https://vidsrc.to/embed/movie/${tmdbId}`;
+  if ((!streamUrl && iframe) || driveIframeUrl) {
+    iframe.src = driveIframeUrl || (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : `https://vidsrc.to/embed/movie/${tmdbId}`);
     iframe.classList.remove("hidden");
     if (artContainer) {
       artContainer.classList.add("hidden");
