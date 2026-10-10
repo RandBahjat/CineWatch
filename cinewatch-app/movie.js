@@ -6921,8 +6921,13 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
   // Subtitle parameters
   let subParam = '';
-  const cleanName = ref?.title ? ref.title.split(' - S')[0].split(' - Ep')[0].trim() : '';
-  if (cleanName) {
+  if (ref?.subtitles && Array.isArray(ref.subtitles) && ref.subtitles.length > 0) {
+    window._cwSubtitleTracks = ref.subtitles;
+    const defaultSub = ref.subtitles.find(s => s.default) || ref.subtitles[0];
+    if (defaultSub && defaultSub.file) {
+      subtitleUrl = defaultSub.file;
+    }
+  } else if (cleanName) {
     let subApi = `${curOrigin}/api/movie-sub?title=${encodeURIComponent(cleanName)}&type=${isTv ? 'series' : 'movie'}`;
     if (isTv) subApi += `&season=${season}&ep=${epNum}`;
     subParam = `&subtitles=${encodeURIComponent(subApi)}&subtitleLabel=Kurdish`;
