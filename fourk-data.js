@@ -14,7 +14,7 @@ window._FOURK_DATA = [
     genres: ["Action", "Adventure", "Sci-Fi"],
     poster: "https://www.themoviedb.org/t/p/w600_and_h900_face/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
     backdrop: "https://image.tmdb.org/t/p/original/dqhG3aCdBZxXikAQH9M8AUiIceQ.jpg",
-    videoUrl: "https://drive.google.com/file/d/1eFb_YwiIYS3JnHoV4Rh3C5bnXovZZt77/view?usp=sharing",
+    videoUrl: "https://drive.google.com/uc?export=download&id=1eFb_YwiIYS3JnHoV4Rh3C5bnXovZZt77",
     trailerUrl: "https://www.youtube.com/watch?v=daXaTug8rL4",
     overview: "Peter Parker fights crime full-time as Spider-Man in a world that no longer remembers him. The pressure of watching old friends move on without him sparks changes he is not sure he can control. This transformation might be the only thing that can stop a shocking new threat to the city — a powerful villain no one can even see.",
     overviewKurdish: "پیتەر پارکەر بە تەواوی کاتی خۆی وەک سپایدەرمان تەرخان دەکات، لە جیهانێکدا کە چیتر ئەو ناناسێتەوە. گوشاری بینینی هاوڕێیەکی کۆن کە بێ ئەو بەردەوامە لە ژیانیدا، دەبێتە هۆی گۆڕانێک کە دڵنیا نییە بتوانێت بەڕێوەی ببات.",
