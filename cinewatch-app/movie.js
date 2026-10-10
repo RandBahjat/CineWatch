@@ -6921,6 +6921,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
   // Subtitle parameters
   let subParam = '';
+  const cleanName = ref?.title ? ref.title.split(' - S')[0].split(' - Ep')[0].trim() : '';
   if (ref?.subtitles && Array.isArray(ref.subtitles) && ref.subtitles.length > 0) {
     window._cwSubtitleTracks = ref.subtitles;
     const defaultSub = ref.subtitles.find(s => s.default) || ref.subtitles[0];
