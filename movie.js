@@ -6721,6 +6721,7 @@ const ANIME_MAL_MAP = {
   '12536': 482,      // Yu-Gi-Oh! GX
   '20695': 3972,     // Yu-Gi-Oh! 5D's
   '73223': 34572,    // Black Clover
+  '63367': 63367,    // Dragon Ball Super: Beerus
 };
 
 const ANIME_ANILIST_MAP = {
@@ -6728,6 +6729,7 @@ const ANIME_ANILIST_MAP = {
   '12971': 813,      // Dragon Ball Z
   '236994': 170083,  // Dragon Ball DAIMA
   '62715': 21175,    // Dragon Ball Super
+  '63367': 63367,    // Dragon Ball Super: Beerus
   '12697': 225,      // Dragon Ball GT
   '61709': 6033,     // Dragon Ball Z Kai
   '46260': 20,       // Naruto
@@ -6759,6 +6761,7 @@ function getAnimeAniListId(refMovie, dataId) {
   if (ANIME_ANILIST_MAP[key]) return ANIME_ANILIST_MAP[key];
   if (refMovie?.title) {
     const t = refMovie.title.toLowerCase();
+    if (t.includes('beerus')) return 63367;
     if (t.includes('5d')) return 3972;
     if (t.includes('gx')) return 482;
     if (t.includes('daima')) return 170083;
@@ -6792,6 +6795,7 @@ function getAnimeMalId(refMovie, dataId) {
   if (ANIME_MAL_MAP[key]) return ANIME_MAL_MAP[key];
   if (refMovie?.title) {
     const t = refMovie.title.toLowerCase();
+    if (t.includes('beerus')) return 63367;
     if (t.includes('5d')) return 3972;
     if (t.includes('gx')) return 482;
     if (t.includes('daima')) return 56894;
