@@ -20,7 +20,7 @@ window._ANIME_DATA = [
       "Adventure",
       "Fantasy"
     ],
-    "poster": "https://cdn.myanimelist.net/images/anime/1624/159991.jpg",
+    "poster": "https://image.tmdb.org/t/p/original/57CiOXaO6OoUF96pBWXJxw19OGs.jpg",
     "backdrop": "https://image.tmdb.org/t/p/original/8phLVFEXOe02JgFmH9ldn3j4tXW.jpg",
     "videoUrl": "63367",
     "malId": 63367,
