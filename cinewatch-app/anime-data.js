@@ -25,7 +25,7 @@ window._ANIME_DATA = [
     "videoUrl": "63367",
     "malId": 63367,
     "anilistId": 63367,
-    "trailerUrl": "https://youtu.be/QinoGlZP_V4?si=Ob-Tr0BnRIKiYkUq",
+    "trailerUrl": "https://youtu.be/W9W5CLUGjbU?si=0ljmntCslpiU679B",
     "animeSlug": "dragon-ball-super-beerus",
     "id": "dragon-ball-super-beerus-2026",
     "overview": "Dragon Ball Super: Beerus is the newly enhanced and reconstructed edition of the anime Dragon Ball Super. Enhanced by the latest visual expression, every scene, especially the battle scenes, is even more immersive, providing a more faithful and detailed reproduction of the original work by Akira Toriyama. Set several years after the defeat of Majin Buu, Beerus, the God of Destruction, awakens from a long slumber searching for the legendary Super Saiyan God, leading to a cosmic battle that decides the fate of Earth and the entire universe.",
