@@ -3750,12 +3750,10 @@ async function openVideoPlayer(movieId, startAtSec = 0) {
   if (isFrom4k && movie.fourkVideoUrl) {
     targetUrl = movie.fourkVideoUrl;
   } else if (!isFrom4k && movie.hdVideoUrl) {
-    if (movie.fourkVideoUrl && typeof movie.fourkVideoUrl === 'string' && (movie.fourkVideoUrl.startsWith('http') || movie.fourkVideoUrl.endsWith('.mp4')) && (!movie.hdVideoUrl || !movie.hdVideoUrl.startsWith('http'))) {
-      targetUrl = movie.fourkVideoUrl;
-    } else {
-      targetUrl = movie.hdVideoUrl;
-    }
-  } else if (movie.fourkVideoUrl && typeof movie.fourkVideoUrl === 'string' && (movie.fourkVideoUrl.startsWith('http') || movie.fourkVideoUrl.endsWith('.mp4'))) {
+    targetUrl = movie.hdVideoUrl;
+  } else if (!isFrom4k && movie.videoUrl) {
+    targetUrl = movie.videoUrl;
+  } else if (movie.fourkVideoUrl) {
     targetUrl = movie.fourkVideoUrl;
   }
   openVideoPlayerWithUrl(targetUrl, movie.title, mediaId, null);
