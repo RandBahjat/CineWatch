@@ -4357,8 +4357,6 @@ function closeDownloadModal() {
 }
 window.openDownloadModal = openDownloadModal;
 window.closeDownloadModal = closeDownloadModal;
-window.openDownloadModal = openDownloadModal;
-window.closeDownloadModal = closeDownloadModal;
 
 // ==========================================
 // VIP MEMBERSHIP & LOCAL WALLET CHECKOUT
