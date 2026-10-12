@@ -3949,6 +3949,31 @@ function closeVideoPlayer() {
     if (wmLogo) wmLogo.style.display = "";
   }
 
+  // Clear external subtitle overlays and sync loop on close
+  const customOverlay = document.getElementById('customSubtitleOverlay');
+  if (customOverlay) {
+    customOverlay.style.display = 'none';
+    customOverlay.innerHTML = '';
+  }
+  const artOverlay = document.getElementById('artCustomSubtitleOverlay');
+  if (artOverlay) {
+    artOverlay.style.display = 'none';
+    artOverlay.innerHTML = '';
+  }
+  const syncWrap = document.getElementById('kurdishSubSyncWrap');
+  if (syncWrap) syncWrap.style.display = 'none';
+  const kurdishBtn = document.getElementById('kurdishSubToggleBtn');
+  if (kurdishBtn) kurdishBtn.style.display = 'none';
+  const diagModal = document.getElementById('kurdishSubDialogModal');
+  if (diagModal) diagModal.style.display = 'none';
+  if (typeof subtitleSyncLoop !== 'undefined' && subtitleSyncLoop) {
+    clearInterval(subtitleSyncLoop);
+    subtitleSyncLoop = null;
+  }
+  if (typeof isKurdishSubEnabled !== 'undefined') {
+    isKurdishSubEnabled = false;
+  }
+
   const serverBar = document.getElementById("playerServerBar");
   if (serverBar) {
     serverBar.classList.add("hidden");
@@ -7219,6 +7244,14 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     artContainer.classList.remove("hidden");
   }
 
+  // Initialize external CineWatch Subtitles bar (Kurdish/English CC, sync bar, dialogue picker)
+  if (typeof loadCustomSubtitles === 'function' && cleanName) {
+    loadCustomSubtitles(cleanName, isAnime ? 'anime' : (isTv ? 'series' : 'movie'), season, rawEp);
+    const headerRight = document.getElementById("videoHeaderRightControls");
+    if (headerRight) {
+      headerRight.style.display = "flex";
+    }
+  }
 
   if (typeof Artplayer === "undefined") {
     console.warn("Artplayer library not yet available");
@@ -7481,6 +7514,18 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
             pointerEvents: 'none',
             userSelect: 'none',
           },
+        },
+        {
+          name: 'customSubtitleOverlay',
+          html: '<div id="artCustomSubtitleOverlay" style="position: absolute; bottom: 85px; left: 0; width: 100%; text-align: center; pointer-events: none; display: none; z-index: 30; direction: rtl; padding: 0 20px; box-sizing: border-box;"></div>',
+          style: {
+            position: 'absolute',
+            bottom: '0',
+            left: '0',
+            width: '100%',
+            pointerEvents: 'none',
+            zIndex: 25,
+          },
         }
       ],
       plugins: [
@@ -7677,6 +7722,16 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           style: { position: 'static' },
           html: centerTitleHtml,
           tooltip: isAnime ? `${ref?.title || 'Anime'} - Episode ${rawEp}` : (isTv ? `${ref?.title || 'Series'} - S${season} E${epNum}` : `${ref?.title || 'Movie'}`),
+        },
+        {
+          position: 'right',
+          index: 25,
+          html: '<button id="artCwCcBtn" class="art-cw-cc-btn" style="background: rgba(0,0,0,0.6); color: #fff; border: 1px solid rgba(255,255,255,0.3); border-radius: 4px; padding: 2px 7px; font-size: 11px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; margin-right: 6px;">CC <span id="artCwCcStatus" style="color: #00ff88; font-size: 10px;">Kurdish</span></button>',
+          tooltip: 'Toggle External CineWatch Subtitles',
+          click: function() {
+            const toggleBtn = document.getElementById('kurdishSubToggleBtn');
+            if (toggleBtn) toggleBtn.click();
+          }
         }
       ],
     };
@@ -7704,8 +7759,48 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         }
       } catch (e) {}
       
+      // Wire ArtPlayer events to subClock for external subtitle synchronization
+      window.artPlayerInstance.on('video:timeupdate', () => {
+        if (typeof subClock !== 'undefined' && subClock.sync) {
+          subClock.sync(window.artPlayerInstance.currentTime, false);
+        }
+      });
+      window.artPlayerInstance.on('video:play', () => {
+        if (typeof subClock !== 'undefined' && subClock.play) {
+          subClock.play();
+        }
+      });
+      window.artPlayerInstance.on('video:pause', () => {
+        if (typeof subClock !== 'undefined' && subClock.pause) {
+          subClock.pause();
+        }
+      });
+      window.artPlayerInstance.on('video:seeked', () => {
+        if (typeof subClock !== 'undefined' && subClock.jumpTo) {
+          subClock.jumpTo(window.artPlayerInstance.currentTime);
+          if (typeof renderSubtitlesNow === 'function') {
+            renderSubtitlesNow();
+          }
+        }
+      });
+
+      // Maintain dialogue picker and toast modals across fullscreen
+      window.artPlayerInstance.on('fullscreen', (fsState) => {
+        const modal = document.getElementById('kurdishSubDialogModal');
+        const toast = document.getElementById('kurdishSubToast');
+        const playerEl = window.artPlayerInstance?.template?.$player;
+        const videoContainer = document.querySelector('.video-container');
+        if (fsState && playerEl) {
+          if (modal) playerEl.appendChild(modal);
+          if (toast) playerEl.appendChild(toast);
+        } else if (videoContainer) {
+          if (modal) videoContainer.appendChild(modal);
+          if (toast) videoContainer.appendChild(toast);
+        }
+      });
+
+      // Keep internal subtitles hidden when external CineWatch subtitles are active
       if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
-        window.artPlayerInstance.subtitle.show = true;
         if (subtitleUrl && subtitleUrl.trim().length > 0) {
           const isSrt = subtitleUrl.includes('.srt');
           window.artPlayerInstance.subtitle.switch(subtitleUrl, {
@@ -7713,11 +7808,21 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
             type: isSrt ? 'srt' : 'vtt'
           }).then(() => {
             if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
-              window.artPlayerInstance.subtitle.show = true;
+              window.artPlayerInstance.subtitle.show = !isKurdishSubEnabled;
             }
           }).catch(() => {});
         }
+        window.artPlayerInstance.subtitle.show = !isKurdishSubEnabled;
       }
+
+      // Auto-enable external CineWatch subtitles so the user gets the floating badge and sync controls
+      setTimeout(() => {
+        const toggleBtn = document.getElementById('kurdishSubToggleBtn');
+        if (toggleBtn && typeof isKurdishSubEnabled !== 'undefined' && !isKurdishSubEnabled) {
+          toggleBtn.click();
+        }
+      }, 350);
+
       try {
         const p = window.artPlayerInstance.play();
         if (p !== undefined) {
@@ -7733,7 +7838,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
 
     window.artPlayerInstance.on('subtitleLoad', () => {
       if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
-        window.artPlayerInstance.subtitle.show = true;
+        window.artPlayerInstance.subtitle.show = !isKurdishSubEnabled;
       }
     });
 
@@ -7749,10 +7854,8 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       } catch (e) {}
     });
 
-
-
     if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
-      window.artPlayerInstance.subtitle.show = true;
+      window.artPlayerInstance.subtitle.show = !isKurdishSubEnabled;
     }
   } catch (err) {
     console.error("Failed to init ArtPlayer:", err);
@@ -8923,6 +9026,8 @@ function loadCustomSubtitles(title, type, season, ep) {
     setupDropZone();
 
     toggleBtn.onclick = async () => {
+        const artCcStatus = document.getElementById('artCwCcStatus');
+        const artOverlay = document.getElementById('artCustomSubtitleOverlay');
         if (isKurdishSubEnabled) {
             // Turn OFF
             isKurdishSubEnabled = false;
@@ -8931,6 +9036,14 @@ function loadCustomSubtitles(title, type, season, ep) {
             toggleBtn.style.borderColor = 'rgba(255,255,255,0.3)';
             overlay.style.display = 'none';
             overlay.innerHTML = '';
+            if (artOverlay) {
+                artOverlay.style.display = 'none';
+                artOverlay.innerHTML = '';
+            }
+            if (artCcStatus) {
+                artCcStatus.textContent = 'OFF';
+                artCcStatus.style.color = '#888';
+            }
             if (syncWrap) syncWrap.style.display = 'none';
             const diagModal = document.getElementById('kurdishSubDialogModal');
             if (diagModal) diagModal.style.display = 'none';
@@ -8944,19 +9057,32 @@ function loadCustomSubtitles(title, type, season, ep) {
             toggleBtn.innerHTML = 'CC: Loading...';
             toggleBtn.style.background = '#e50914';
             toggleBtn.style.borderColor = '#e50914';
+            if (artCcStatus) {
+                artCcStatus.textContent = '...';
+                artCcStatus.style.color = '#e50914';
+            }
             
             if (currentParsedSubs.length === 0 && !isFetchingSubs) {
                 await fetchAndParseSubtitles();
             }
 
             if (isKurdishSubEnabled && currentParsedSubs.length > 0) {
+                // Ensure ArtPlayer internal subtitle is hidden to prevent duplicate text
+                if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
+                    window.artPlayerInstance.subtitle.show = false;
+                }
                 const label = currentSubSource === 'subdl-native' ? 'CC: ON (SubDL)' : (currentSubSource === 'uploaded' ? 'CC: ON (File)' : 'CC: ON (Kurdish)');
                 toggleBtn.innerHTML = label;
                 toggleBtn.style.background = '#00aa55';
                 toggleBtn.style.borderColor = '#00aa55';
+                if (artCcStatus) {
+                    artCcStatus.textContent = currentSubSource === 'subdl-native' ? 'SubDL' : (currentSubSource === 'uploaded' ? 'File' : 'ON');
+                    artCcStatus.style.color = '#00ff88';
+                }
 
                 if (syncWrap) syncWrap.style.display = 'inline-flex';
                 overlay.style.display = 'block';
+                if (artOverlay) artOverlay.style.display = 'block';
 
                 if (subClock.currentTime === 0 && subClock.hasReceivedPostMsg && subClock.lastReportedTime > 0) {
                     subClock.jumpTo(subClock.lastReportedTime);
@@ -8976,8 +9102,12 @@ function loadCustomSubtitles(title, type, season, ep) {
                 toggleBtn.innerHTML = 'CC: No SubDL (Use 📁)';
                 toggleBtn.style.background = 'rgba(80,80,80,0.85)';
                 toggleBtn.style.borderColor = 'rgba(255,255,255,0.4)';
+                if (artCcStatus) {
+                    artCcStatus.textContent = 'None';
+                    artCcStatus.style.color = '#aaa';
+                }
                 if (syncWrap) syncWrap.style.display = 'inline-flex';
-                showSubtitleToast('⚠️ ژێرنووسی ئەم فیلمە لە SubDL نییە. دەتوانیت لە KurdSubtitle دایبەزێنیت و دایبنێیت 📁');
+                showSubtitleToast('⚠️ ژێرنووسی ئەم ناونیشانە لە SubDL نییە. دەتوانیت لە KurdSubtitle دایبەزێنیت و دایبنێیت 📁');
             }
         }
     };
@@ -9286,6 +9416,43 @@ async function fetchAndParseSubtitles() {
     }
     isFetchingSubs = true;
     const btn = document.getElementById('kurdishSubToggleBtn');
+
+    // Priority 1: Check if window._cwSubtitleTracks already contains subtitle tracks (e.g. from Anime endpoint or stream resolver)
+    if (window._cwSubtitleTracks && window._cwSubtitleTracks.length > 0) {
+        totalSubTracks = window._cwSubtitleTracks.length;
+        let selectedTrack = null;
+        if (currentSubTrackIndex >= 0 && currentSubTrackIndex < window._cwSubtitleTracks.length) {
+            selectedTrack = window._cwSubtitleTracks[currentSubTrackIndex];
+        } else {
+            // Prefer Kurdish track if available
+            selectedTrack = window._cwSubtitleTracks.find(t => t.srclang === 'ku' || (t.label || '').toLowerCase().includes('kurd')) || window._cwSubtitleTracks[0];
+            currentSubTrackIndex = window._cwSubtitleTracks.indexOf(selectedTrack);
+            if (currentSubTrackIndex < 0) currentSubTrackIndex = 0;
+        }
+
+        if (selectedTrack && selectedTrack.file) {
+            try {
+                const trRes = await fetch(selectedTrack.file);
+                if (trRes.ok) {
+                    let vtt = await trRes.text();
+                    if (vtt && (vtt.toUpperCase().includes('WEBVTT') || vtt.includes('-->'))) {
+                        if (!vtt.toUpperCase().includes('WEBVTT')) {
+                            vtt = "WEBVTT\n\n" + vtt.replace(/(\d{2}:\d{2}:\d{2}),(\d{3})/g, '$1.$2');
+                        }
+                        currentParsedSubs = parseVTTBasic(vtt);
+                        currentSubTrackName = selectedTrack.label || ('Track ' + (currentSubTrackIndex + 1));
+                        const isKurdish = (selectedTrack.srclang === 'ku' || (selectedTrack.label || '').toLowerCase().includes('kurd'));
+                        currentSubSource = isKurdish ? 'kurdish' : 'external';
+                        updateSyncDisplay();
+                        isFetchingSubs = false;
+                        return;
+                    }
+                }
+            } catch (e) {
+                console.warn('Notice: direct _cwSubtitleTracks fetch fallback:', e);
+            }
+        }
+    }
     
     let qs = 'title=' + encodeURIComponent(customSubParams.title) + '&type=' + (customSubParams.type || 'movie');
     if (customSubParams.season) qs += '&season=' + customSubParams.season;
@@ -9435,7 +9602,8 @@ function startSubtitleSyncLoop() {
 function updateSubtitleOverlay(currentTime) {
     if (!isKurdishSubEnabled) return;
     const overlay = document.getElementById('customSubtitleOverlay');
-    if (!overlay || currentParsedSubs.length === 0) return;
+    const artOverlay = document.getElementById('artCustomSubtitleOverlay');
+    if ((!overlay && !artOverlay) || currentParsedSubs.length === 0) return;
     
     let seconds = currentTime;
     if (seconds > 100000) {
@@ -9470,31 +9638,43 @@ function updateSubtitleOverlay(currentTime) {
             currentShowingSince = now;
         } else if (now - currentShowingSince > 5500) {
             // Anti-stuck watchdog: Auto-expire cue if it has been on screen > 5.5s
-            if (overlay.style.display !== 'none') {
+            if (overlay && overlay.style.display !== 'none') {
                 overlay.innerHTML = '';
                 overlay.style.display = 'none';
+            }
+            if (artOverlay && artOverlay.style.display !== 'none') {
+                artOverlay.innerHTML = '';
+                artOverlay.style.display = 'none';
             }
             return;
         }
 
         const combinedText = matches.map(m => m.text.trim()).filter(Boolean).join('<br>');
         if (!combinedText) {
-            overlay.innerHTML = '';
-            overlay.style.display = 'none';
+            if (overlay) { overlay.innerHTML = ''; overlay.style.display = 'none'; }
+            if (artOverlay) { artOverlay.innerHTML = ''; artOverlay.style.display = 'none'; }
             return;
         }
 
         const formatted = '<span style="display:inline-block; background:rgba(0,0,0,0.85); color:#ffffff; padding:6px 20px; border-radius:8px; font-family:sans-serif; font-size:24px; font-weight:700; line-height:1.45; text-shadow:0 2px 5px rgba(0,0,0,0.95); max-width:85%; border:1px solid rgba(255,255,255,0.1);">' + combinedText + '</span>';
-        if (overlay.innerHTML !== formatted) {
+        if (overlay && overlay.innerHTML !== formatted) {
             overlay.innerHTML = formatted;
             overlay.style.display = 'block';
+        }
+        if (artOverlay && artOverlay.innerHTML !== formatted) {
+            artOverlay.innerHTML = formatted;
+            artOverlay.style.display = 'block';
         }
     } else {
         currentShowingSubId = null;
         currentShowingSince = 0;
-        if (overlay.innerHTML !== '') {
+        if (overlay && overlay.innerHTML !== '') {
             overlay.innerHTML = '';
             overlay.style.display = 'none';
+        }
+        if (artOverlay && artOverlay.innerHTML !== '') {
+            artOverlay.innerHTML = '';
+            artOverlay.style.display = 'none';
         }
     }
 }
