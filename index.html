@@ -15,9 +15,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20261003_740_progressbar_fix">
-    <link rel="stylesheet" href="browse-fix.css?v=20261003_787_hero_counter">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_2082">
+    <link rel="stylesheet" href="movie.css?v=20261003_742_progressbar_fix">
+    <link rel="stylesheet" href="browse-fix.css?v=20261003_789_hero_counter">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_2084">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -134,12 +134,12 @@
     <script src="https://cdn.jsdelivr.net/npm/artplayer/dist/artplayer.js"></script>
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="api.js?v=20261009_165_auth_vip" defer></script>
-    <script src="movies-data.js?v=20261003_792_top10_mobile" defer></script>
-    <script src="series-data.js?v=20261003_792_top10_mobile" defer></script>
-    <script src="anime-data.js?v=20260818_9248" defer></script>
-    <script src="fourk-data.js?v=20261009_294_hd_and_4k" defer></script>
-    <script src="movie.js?v=20261012_57_kurdish_sub_fix_1" defer></script>
+    <script src="api.js?v=20261009_167_auth_vip" defer></script>
+    <script src="movies-data.js?v=20261003_794_top10_mobile" defer></script>
+    <script src="series-data.js?v=20261003_794_top10_mobile" defer></script>
+    <script src="anime-data.js?v=20260818_9250" defer></script>
+    <script src="fourk-data.js?v=20261009_296_hd_and_4k" defer></script>
+    <script src="movie.js?v=20261012_59_kurdish_sub_fix_1" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -857,6 +857,16 @@
                         <ion-icon class="icon-check" name="checkmark-outline"></ion-icon>
                       </label>
                     </div>
+
+                    <!-- Download Offline Button -->
+                    <button class="btn btn-secondary-pill" id="detailsDownloadBtn" title="Download for offline viewing">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span id="detailsDownloadText" class="notranslate" translate="no">Download</span>
+                    </button>
                     
                     <button class="btn btn-secondary-pill" id="detailsReportBtn" title="Report an issue">
                         Report
@@ -3288,7 +3298,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_2082"></script>
+    <script src="welcome-disclaimer.js?v=20260918_2084"></script>
 
     <!-- Interstitial Ad Modal ÃŽâ€œÃƒâ€¡ÃƒÂ¶ fires on pagination for free users -->
     <div id="cwInterstitialAdModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.88); align-items:center; justify-content:center;">
