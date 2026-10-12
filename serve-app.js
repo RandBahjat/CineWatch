@@ -181,6 +181,22 @@ const server = http.createServer((req, res) => {
             data.source = `${baseUrl}/api/anime-m3u8?url=${encodeURIComponent(data.source)}`;
           }
         }
+        if (data && data.tracks && data.tracks.length > 0) {
+          data.tracks = data.tracks.map(t => ({
+            ...t,
+            rawFile: t.file,
+            file: `${baseUrl}/api/anime-sub?url=${encodeURIComponent(t.file)}`
+          }));
+          const engTrack = data.tracks.find(t => (t.label || '').toLowerCase().includes('eng')) || data.tracks[0];
+          if (engTrack && !data.tracks.some(t => t.srclang === 'ku' || (t.label || '').includes('Kurdish'))) {
+            data.tracks.push({
+              label: 'Kurdish (Sorani)',
+              file: `${engTrack.file}&lang=ckb`,
+              rawFile: engTrack.rawFile,
+              srclang: 'ku'
+            });
+          }
+        }
         res.writeHead(200, {
           'Content-Type': 'application/json',
           'Access-Control-Allow-Origin': '*'
@@ -193,6 +209,39 @@ const server = http.createServer((req, res) => {
           'Access-Control-Allow-Origin': '*'
         });
         res.end(JSON.stringify({ error: err.message }));
+      });
+    return;
+  }
+
+  // WebVTT Subtitle Proxy & Translation
+  if (pathname === '/api/anime-sub') {
+    const subTarget = parsedUrl.searchParams.get('url');
+    const targetLang = parsedUrl.searchParams.get('lang');
+    if (!subTarget) {
+      res.writeHead(400, { 'Content-Type': 'text/plain', 'Access-Control-Allow-Origin': '*' });
+      res.end('Missing url');
+      return;
+    }
+    // Forward to Render proxy for high-fidelity extraction & Sorani Kurdish translation
+    const renderSubUrl = `https://cinewatch-maaa.onrender.com/api/anime-sub?url=${encodeURIComponent(subTarget)}${targetLang ? `&lang=${encodeURIComponent(targetLang)}` : ''}`;
+    fetch(renderSubUrl)
+      .then(async r => {
+        if (!r.ok) {
+          res.writeHead(r.status, { 'Access-Control-Allow-Origin': '*' });
+          res.end(await r.text());
+          return;
+        }
+        const text = await r.text();
+        res.writeHead(200, {
+          'Content-Type': 'text/vtt; charset=utf-8',
+          'Access-Control-Allow-Origin': '*',
+          'Cache-Control': 'public, max-age=86400'
+        });
+        res.end(text);
+      })
+      .catch(err => {
+        res.writeHead(500, { 'Access-Control-Allow-Origin': '*' });
+        res.end(`Proxy error: ${err.message}`);
       });
     return;
   }
