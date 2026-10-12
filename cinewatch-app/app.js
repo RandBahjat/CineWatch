@@ -1537,6 +1537,9 @@ async function initArtPlayerForAnimeApp(movie, sNum, epNum, audioPref) {
   if (rawVideoStr.startsWith('http') && (rawVideoStr.includes('.mp4') || rawVideoStr.includes('m3u8') || rawVideoStr.includes('.webm'))) {
     cleanUrl = rawVideoStr;
   }
+  if (!cleanUrl && movie.fourkVideoUrl && typeof movie.fourkVideoUrl === 'string' && (movie.fourkVideoUrl.startsWith('http') || movie.fourkVideoUrl.includes('.mp4'))) {
+    cleanUrl = movie.fourkVideoUrl;
+  }
 
   const curPref = audioPref || localStorage.getItem('cw_anime_audio_pref') || 'sub';
   const curOrigin = (typeof window !== 'undefined' && window.location.origin && !window.location.origin.includes('null') && !window.location.origin.startsWith('file')) ? window.location.origin : 'http://localhost:3000';
