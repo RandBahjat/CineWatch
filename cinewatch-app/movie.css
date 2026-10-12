@@ -8495,7 +8495,7 @@ body.rtl-layout .account-side-panel {
 body.rtl-layout .account-side-panel.open {
   transform: translateX(0);
 }
-
+
 
 
 /* RTL Adjustments for Sidebars */
@@ -9210,9 +9210,9 @@ body.rtl-layout .account-side-panel.open {
     font-size: 1rem;
   }
 }
-/* Language Overrides */
-html[lang="ku"] .en-only { display: none !important; }
-html[lang="ku"] .ku-only { display: inline !important; }
+/* Language Overrides */
+html[lang="ku"] .en-only { display: none !important; }
+html[lang="ku"] .ku-only { display: inline !important; }
 
 /* Language Overrides */
 html[lang="ku"] .en-only { display: none !important; }
