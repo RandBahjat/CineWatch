@@ -21,7 +21,7 @@ window._ANIME_DATA = [
       "Fantasy"
     ],
     "poster": "https://image.tmdb.org/t/p/original/57CiOXaO6OoUF96pBWXJxw19OGs.jpg",
-    "backdrop": "dragonball",
+    "backdrop": "",
     "videoUrl": "63367",
     "malId": 63367,
     "anilistId": 63367,
