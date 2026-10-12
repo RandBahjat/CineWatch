@@ -237,15 +237,20 @@ function findMovieByIdOrTitle(identifier) {
   const raw = String(identifier).trim();
   const lower = raw.toLowerCase();
   const slug = lower.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  return MOVIES.find(m => 
-    m.id === raw ||
-    (m.id && m.id.toLowerCase() === lower) ||
-    (m.id && m.id.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug) ||
-    (m.title && m.title.toLowerCase() === lower) ||
-    (m.title && m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug) ||
-    (m.videoUrl && String(m.videoUrl) === raw) ||
-    (m.cinesrcId && String(m.cinesrcId) === raw)
-  ) || null;
+  // 1. Exact ID match (case-sensitive or insensitive)
+  const matchById = MOVIES.find(m => m.id === raw || (m.id && m.id.toLowerCase() === lower));
+  if (matchById) return matchById;
+  // 2. ID slug match
+  const matchBySlugId = MOVIES.find(m => m.id && m.id.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug);
+  if (matchBySlugId) return matchBySlugId;
+  // 3. Video / Cinesrc ID match
+  const matchByVideo = MOVIES.find(m => (m.videoUrl && String(m.videoUrl) === raw) || (m.cinesrcId && String(m.cinesrcId) === raw));
+  if (matchByVideo) return matchByVideo;
+  // 4. Exact Title match
+  const matchByTitle = MOVIES.find(m => m.title && m.title.toLowerCase() === lower);
+  if (matchByTitle) return matchByTitle;
+  // 5. Title slug match
+  return MOVIES.find(m => m.title && m.title.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug) || null;
 }
 
 function getMoviesFromList(list, filterFn) {
@@ -3353,7 +3358,18 @@ function openDetailsModal(movieId) {
           if (targetSeason.episodes.some(e => Boolean(e.thumbnail))) return;
         }
 
-        const cacheKey = `cw_ep_cache_${encodeURIComponent(m.title || '')}`;
+        const isAnimeItem = Boolean(m.isAnime || m.type === 'Anime');
+        const cleanTitle = (m.title || '').split(' - ')[0].split(' (')[0].trim();
+        const cacheKey = `cw_ep_cache_${isAnimeItem ? 'anime_' : ''}${encodeURIComponent(m.id || cleanTitle || '')}`;
+
+        // Clear any old/polluted cache for One Piece that might contain live action data
+        if (cleanTitle.toLowerCase() === 'one piece' && isAnimeItem) {
+          try {
+            sessionStorage.removeItem('cw_ep_cache_One%20Piece');
+            sessionStorage.removeItem('cw_ep_cache_ONE%20PIECE');
+          } catch(e) {}
+        }
+
         try {
           const cached = sessionStorage.getItem(cacheKey);
           if (cached) {
@@ -3366,18 +3382,53 @@ function openDetailsModal(movieId) {
         } catch(e) {}
 
         try {
-          const cleanTitle = (m.title || '').split(' - ')[0].split(' (')[0].trim();
           if (!cleanTitle) return;
-          const url = `https://api.tvmaze.com/singlesearch/shows?q=${encodeURIComponent(cleanTitle)}&embed=episodes`;
-          const res = await fetch(url);
-          if (!res.ok) return;
-          const data = await res.json();
-          const eps = data._embedded?.episodes || [];
+          let eps = [];
+          if (isAnimeItem) {
+            if (cleanTitle.toLowerCase() === 'one piece') {
+              const res = await fetch('https://api.tvmaze.com/shows/1505?embed=episodes');
+              if (res.ok) {
+                const data = await res.json();
+                eps = data._embedded?.episodes || [];
+              }
+            } else {
+              const searchRes = await fetch(`https://api.tvmaze.com/search/shows?q=${encodeURIComponent(cleanTitle)}`);
+              if (searchRes.ok) {
+                const results = await searchRes.json();
+                const animMatch = results.find(r => r.show && (r.show.type === 'Animation' || (m.year && r.show.premiered && r.show.premiered.startsWith(String(m.year)))));
+                const chosenShow = animMatch ? animMatch.show : results[0]?.show;
+                if (chosenShow) {
+                  const showRes = await fetch(`https://api.tvmaze.com/shows/${chosenShow.id}?embed=episodes`);
+                  if (showRes.ok) {
+                    const data = await showRes.json();
+                    eps = data._embedded?.episodes || [];
+                  }
+                }
+              }
+            }
+          } else {
+            if (cleanTitle.toLowerCase() === 'one piece') {
+              const res = await fetch('https://api.tvmaze.com/shows/46065?embed=episodes');
+              if (res.ok) {
+                const data = await res.json();
+                eps = data._embedded?.episodes || [];
+              }
+            } else {
+              const url = `https://api.tvmaze.com/singlesearch/shows?q=${encodeURIComponent(cleanTitle)}&embed=episodes`;
+              const res = await fetch(url);
+              if (res.ok) {
+                const data = await res.json();
+                eps = data._embedded?.episodes || [];
+              }
+            }
+          }
+
           if (!eps.length) return;
 
-          const leanList = eps.map(e => ({
+          const leanList = eps.map((e, idx) => ({
             season: e.season,
             number: e.number,
+            absNumber: idx + 1,
             thumb: e.image ? (e.image.original || e.image.medium) : '',
             runtime: e.runtime ? `${e.runtime} min` : '',
             summary: e.summary ? e.summary.replace(/<[^>]*>/g, '').trim() : ''
@@ -3398,23 +3449,39 @@ function openDetailsModal(movieId) {
       function applyEpisodesData(m, epsList) {
         if (!m || !m.seasons || !Array.isArray(epsList)) return false;
         let updatedAny = false;
-        epsList.forEach(item => {
-          const s = m.seasons.find(sec => sec.season === item.season);
-          if (s && s.episodes) {
-            const ep = s.episodes.find(e => e.episode === item.number);
-            if (ep) {
-              if (item.thumb && !ep.thumbnail) {
-                ep.thumbnail = item.thumb;
-                updatedAny = true;
+        const isAnimeItem = Boolean(m.isAnime || m.type === 'Anime');
+
+        epsList.forEach((item, idx) => {
+          let ep = null;
+          if (isAnimeItem) {
+            const targetAbs = item.absNumber || (idx + 1);
+            for (const sec of m.seasons) {
+              if (sec.episodes) {
+                ep = sec.episodes.find(e => (e.absoluteEpisode && e.absoluteEpisode === targetAbs) || e.episode === targetAbs);
+                if (ep) break;
               }
-              if (item.runtime && !ep.duration) {
-                ep.duration = item.runtime;
-                updatedAny = true;
-              }
-              if (item.summary && !ep.overview) {
-                ep.overview = item.summary;
-                updatedAny = true;
-              }
+            }
+          }
+          if (!ep) {
+            const s = m.seasons.find(sec => sec.season === item.season);
+            if (s && s.episodes) {
+              ep = s.episodes.find(e => e.episode === item.number);
+            }
+          }
+
+          if (ep) {
+            const isLiveActionImage = typeof item.thumb === 'string' && item.thumb.includes('1187145');
+            if (item.thumb && !isLiveActionImage && (!ep.thumbnail || (isAnimeItem && ep.thumbnail.includes('1187145')))) {
+              ep.thumbnail = item.thumb;
+              updatedAny = true;
+            }
+            if (item.runtime && !ep.duration) {
+              ep.duration = item.runtime;
+              updatedAny = true;
+            }
+            if (item.summary && !ep.overview) {
+              ep.overview = item.summary;
+              updatedAny = true;
             }
           }
         });
