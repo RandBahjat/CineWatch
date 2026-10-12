@@ -15,9 +15,9 @@
     </script>
     <!-- Umami Analytics -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="aed82f9a-f28d-4e21-95cf-0ffc15c1a725"></script>
-    <link rel="stylesheet" href="movie.css?v=20261003_717_progressbar_fix">
-    <link rel="stylesheet" href="browse-fix.css?v=20261003_764_hero_counter">
-    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_2059">
+    <link rel="stylesheet" href="movie.css?v=20261003_748_progressbar_fix">
+    <link rel="stylesheet" href="browse-fix.css?v=20261003_795_hero_counter">
+    <link rel="stylesheet" href="welcome-disclaimer.css?v=20260918_2090">
     <style id="cwSecurityGateInlineCss">
       html.cw-security-pending,
       html.cw-security-pending body {
@@ -134,12 +134,12 @@
     <script src="https://cdn.jsdelivr.net/npm/artplayer/dist/artplayer.js"></script>
     <!-- Supabase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="api.js?v=20261009_142_auth_vip" defer></script>
-    <script src="movies-data.js?v=20261003_769_top10_mobile" defer></script>
-    <script src="series-data.js?v=20261003_769_top10_mobile" defer></script>
-    <script src="anime-data.js?v=20260818_9225" defer></script>
-    <script src="fourk-data.js?v=20261009_271_hd_and_4k" defer></script>
-    <script src="movie.js?v=20261012_34_kurdish_sub_fix_1" defer></script>
+    <script src="api.js?v=20261009_173_auth_vip" defer></script>
+    <script src="movies-data.js?v=20261003_800_top10_mobile" defer></script>
+    <script src="series-data.js?v=20261003_800_top10_mobile" defer></script>
+    <script src="anime-data.js?v=20260818_9256" defer></script>
+    <script src="fourk-data.js?v=20261009_302_hd_and_4k" defer></script>
+    <script src="movie.js?v=20261012_65_kurdish_sub_fix_1" defer></script>
     <script src="ai-assistant.js?v=v11" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -857,6 +857,16 @@
                         <ion-icon class="icon-check" name="checkmark-outline"></ion-icon>
                       </label>
                     </div>
+
+                    <!-- Download Offline Button -->
+                    <button class="btn btn-secondary-pill" id="detailsDownloadBtn" title="Download for offline viewing">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span id="detailsDownloadText" class="notranslate" translate="no">Download</span>
+                    </button>
                     
                     <button class="btn btn-secondary-pill" id="detailsReportBtn" title="Report an issue">
                         Report
@@ -2466,6 +2476,107 @@
     <div class="toast-container" id="toastContainer"></div>
 
 
+    <!-- Offline Download Modal -->
+    <div class="modal-overlay hidden" id="downloadModal" style="z-index: 100000;">
+        <div class="modal-card auth-modal-card" style="max-width: 500px; padding: 2rem 1.8rem 1.8rem;">
+            <div class="bg"></div>
+            <div class="blob"></div>
+            <div class="blob blob2"></div>
+            <button class="modal-close-btn" id="closeDownloadModalBtn">&times;</button>
+            
+            <div class="auth-modal-body">
+                <div class="auth-header" style="margin-bottom: 1.5rem; text-align: center;">
+                    <div class="auth-logo notranslate" translate="no" style="display: flex; align-items: center; justify-content: center; gap: 0.6rem; color: #fff; font-size: 1.35rem; font-weight: 800;">
+                        <ion-icon name="cloud-download-outline" style="color: var(--primary); font-size: 1.5rem;"></ion-icon>
+                        <span id="dlModalHeaderTitle">Download Offline</span>
+                    </div>
+                    <p class="auth-subtitle" id="dlModalSubtitle" style="color: var(--text-muted); font-size: 0.88rem; margin-top: 6px;">Select download quality or Kurdish subtitles</p>
+                </div>
+
+                <!-- TV Show Season / Episode Picker (if series) -->
+                <div id="dlTvEpisodeSelectorWrap" class="hidden" style="margin-bottom: 1.2rem; background: rgba(255,255,255,0.03); padding: 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08);">
+                    <label style="display: block; font-size: 0.82rem; font-weight: 600; color: #cbd5e1; margin-bottom: 6px;">Episode to Download:</label>
+                    <div style="display: flex; gap: 8px;">
+                        <select id="dlSeasonSelect" class="form-control" style="flex: 1; background: rgba(0,0,0,0.5); color: #fff; border: 1px solid rgba(255,255,255,0.18); border-radius: 8px; padding: 8px; font-size: 0.88rem;"></select>
+                        <select id="dlEpisodeSelect" class="form-control" style="flex: 1.5; background: rgba(0,0,0,0.5); color: #fff; border: 1px solid rgba(255,255,255,0.18); border-radius: 8px; padding: 8px; font-size: 0.88rem;"></select>
+                    </div>
+                </div>
+
+                <!-- Download Options List -->
+                <div class="dl-options-list" style="display: flex; flex-direction: column; gap: 10px;">
+                    <!-- Option 4K (shown dynamically if 4K is available) -->
+                    <a id="dlOpt4kBtn" href="#" target="_blank" rel="noopener noreferrer" class="dl-option-card hidden" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: rgba(229,9,20,0.08); border: 1px solid rgba(229,9,20,0.35); border-radius: 12px; color: #fff; text-decoration: none; transition: all 0.2s;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div style="width: 38px; height: 38px; border-radius: 10px; background: linear-gradient(135deg, #e50914, #ff3b47); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.15rem; font-weight: 800;">
+                                4K
+                            </div>
+                            <div>
+                                <div style="font-weight: 700; font-size: 0.95rem; color: #fff;">Ultra HD 4K (Direct MP4)</div>
+                                <div style="font-size: 0.78rem; color: #cbd5e1;">Master copy · Pristine bitrate</div>
+                            </div>
+                        </div>
+                        <span style="display: inline-flex; align-items: center; gap: 4px; background: #e50914; color: #fff; padding: 6px 12px; border-radius: 8px; font-size: 0.82rem; font-weight: 700;">
+                            <ion-icon name="download-outline"></ion-icon> Save 4K
+                        </span>
+                    </a>
+
+                    <!-- Option 1: 1080p Full HD -->
+                    <a id="dlOpt1080Btn" href="#" target="_blank" rel="noopener noreferrer" class="dl-option-card" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; color: #fff; text-decoration: none; transition: all 0.2s;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(229,9,20,0.15); color: #e50914; display: flex; align-items: center; justify-content: center; font-size: 1.15rem;">
+                                <ion-icon name="film-outline"></ion-icon>
+                            </div>
+                            <div>
+                                <div style="font-weight: 700; font-size: 0.95rem; color: #fff;">Server 1 (Full HD 1080p)</div>
+                                <div style="font-size: 0.78rem; color: #94a3b8;">High quality · 5.1 Audio</div>
+                            </div>
+                        </div>
+                        <span style="display: inline-flex; align-items: center; gap: 4px; background: var(--primary); color: #fff; padding: 6px 12px; border-radius: 8px; font-size: 0.82rem; font-weight: 700;">
+                            <ion-icon name="download-outline"></ion-icon> 1080p
+                        </span>
+                    </a>
+
+                    <!-- Option 2: 720p Fast Mobile -->
+                    <a id="dlOpt720Btn" href="#" target="_blank" rel="noopener noreferrer" class="dl-option-card" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; color: #fff; text-decoration: none; transition: all 0.2s;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(56,189,248,0.15); color: #38bdf8; display: flex; align-items: center; justify-content: center; font-size: 1.15rem;">
+                                <ion-icon name="phone-portrait-outline"></ion-icon>
+                            </div>
+                            <div>
+                                <div style="font-weight: 700; font-size: 0.95rem; color: #fff;">Server 2 (Fast HD 720p)</div>
+                                <div style="font-size: 0.78rem; color: #94a3b8;">Fast download · Compact size</div>
+                            </div>
+                        </div>
+                        <span style="display: inline-flex; align-items: center; gap: 4px; background: rgba(255,255,255,0.1); color: #fff; padding: 6px 12px; border-radius: 8px; font-size: 0.82rem; font-weight: 600;">
+                            <ion-icon name="download-outline"></ion-icon> 720p
+                        </span>
+                    </a>
+
+                    <!-- Option 3: Kurdish Subtitles -->
+                    <a id="dlOptSubBtn" href="#" target="_blank" rel="noopener noreferrer" class="dl-option-card" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; color: #fff; text-decoration: none; transition: all 0.2s;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div style="width: 38px; height: 38px; border-radius: 10px; background: rgba(16,185,129,0.15); color: #10b981; display: flex; align-items: center; justify-content: center; font-size: 1.15rem;">
+                                <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                            </div>
+                            <div>
+                                <div style="font-weight: 700; font-size: 0.95rem; color: #fff;">Kurdish Subtitles (.srt)</div>
+                                <div style="font-size: 0.78rem; color: #94a3b8;">KurdSubtitle community file</div>
+                            </div>
+                        </div>
+                        <span style="display: inline-flex; align-items: center; gap: 4px; background: rgba(16,185,129,0.18); color: #34d399; border: 1px solid rgba(16,185,129,0.35); padding: 6px 12px; border-radius: 8px; font-size: 0.82rem; font-weight: 700;">
+                            <ion-icon name="document-text-outline"></ion-icon> .SRT
+                        </span>
+                    </a>
+                </div>
+
+                <div style="margin-top: 1.2rem; padding: 10px 12px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; font-size: 0.8rem; color: #94a3b8; display: flex; gap: 8px; align-items: flex-start;">
+                    <ion-icon name="information-circle-outline" style="color: var(--primary); font-size: 1.15rem; flex-shrink: 0; margin-top: 1px;"></ion-icon>
+                    <div>Downloaded video &amp; subtitles can be watched offline anytime on VLC Player, Windows Media Player, iPhone, or Android.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Report / Contact Issue Modal -->
     <div class="modal-overlay hidden" id="reportModal">
         <div class="modal-card auth-modal-card" style="padding-bottom: 2rem;">
@@ -3288,7 +3399,7 @@
         setInterval(suppressGoogleFloatingUI, 100);
         window.addEventListener('load', suppressGoogleFloatingUI);
     </script>
-    <script src="welcome-disclaimer.js?v=20260918_2059"></script>
+    <script src="welcome-disclaimer.js?v=20260918_2090"></script>
 
     <!-- Interstitial Ad Modal ÃŽâ€œÃƒâ€¡ÃƒÂ¶ fires on pagination for free users -->
     <div id="cwInterstitialAdModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(0,0,0,0.88); align-items:center; justify-content:center;">
