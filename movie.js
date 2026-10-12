@@ -6933,6 +6933,9 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   if (rawVideoStr.includes('.mp4') || rawVideoStr.includes('m3u8') || rawVideoStr.includes('.webm') || rawVideoStr.includes('.mkv') || rawVideoStr.includes('stream-local') || rawVideoStr.includes('stream-media')) {
     cleanUrl = rawVideoStr;
   }
+  if (!cleanUrl && ref?.fourkVideoUrl && typeof ref.fourkVideoUrl === 'string' && (ref.fourkVideoUrl.startsWith('http') || ref.fourkVideoUrl.includes('.mp4'))) {
+    cleanUrl = ref.fourkVideoUrl;
+  }
 
   // Subtitle parameters
   let subParam = '';
