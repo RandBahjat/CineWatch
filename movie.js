@@ -7027,13 +7027,19 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
       subtitleUrl = defaultSub.file;
     }
   } else if (cleanName) {
-    let subApi = `${curOrigin}/api/movie-sub?title=${encodeURIComponent(cleanName)}&type=${isTv ? 'series' : 'movie'}`;
-    if (isTv) subApi += `&season=${season}&ep=${epNum}`;
-    subParam = `&subtitles=${encodeURIComponent(subApi)}&subtitleLabel=Kurdish`;
-    if (!isAnime) {
-      subtitleUrl = subApi;
+    const subBase = (curOrigin && curOrigin.includes(':3000')) ? curOrigin : 'https://cinewatch-maaa.onrender.com';
+    let kuApi = `${subBase}/api/movie-sub?title=${encodeURIComponent(cleanName)}&type=${isTv ? 'series' : 'movie'}&lang=ckb`;
+    let enApi = `${subBase}/api/movie-sub?title=${encodeURIComponent(cleanName)}&type=${isTv ? 'series' : 'movie'}&lang=en`;
+    if (isTv || isAnime) {
+      kuApi += `&season=${season}&ep=${epNum}`;
+      enApi += `&season=${season}&ep=${epNum}`;
+    }
+    subParam = `&subtitles=${encodeURIComponent(kuApi)}&subtitleLabel=Kurdish`;
+    if (!subtitleUrl) {
+      subtitleUrl = isAnime ? enApi : kuApi;
       window._cwSubtitleTracks = [
-        { label: 'Kurdish (Sorani)', file: subApi, srclang: 'ku' }
+        { label: 'English', file: enApi, srclang: 'en', default: isAnime },
+        { label: 'Kurdish (Sorani)', file: kuApi, srclang: 'ku', default: !isAnime }
       ];
     }
   }
@@ -7041,20 +7047,20 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
   // 2. If Anime: fetch direct stream from anime endpoints in parallel
   if (isAnime && !cleanUrl && malId) {
     const endpoints = [
+      (window.location.port === '3000' ? `${curOrigin}/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}` : null),
+      `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
       `${curOrigin}/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
       `http://localhost:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
       `http://127.0.0.1:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-      `http://${curHost}:3000/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
-      `https://cinewatch-maaa.onrender.com/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`,
       `/api/anime-source?malId=${malId}&ep=${rawEp}&mode=${curPref}`
-    ];
+    ].filter(Boolean);
 
     const uniqueAnimeEndpoints = [...new Set(endpoints)];
     try {
       let srcData = null;
       for (const epUrl of uniqueAnimeEndpoints) {
         try {
-          const res = await fetch(epUrl, { signal: AbortSignal.timeout(3000) });
+          const res = await fetch(epUrl, { signal: AbortSignal.timeout(6000) });
           if (!res.ok) continue;
           const data = await res.json();
           if (data && data.source) {
@@ -7070,19 +7076,21 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         cleanUrl = srcData.source;
         animeChapters = srcData.chapters || [];
         if (srcData.tracks && srcData.tracks.length > 0) {
-          const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-          if (isLocal) {
+          const isLocal3000 = (window.location.origin === 'http://localhost:3000' || window.location.origin === 'http://127.0.0.1:3000');
+          if (isLocal3000) {
             srcData.tracks.forEach(t => {
               if (t.file && t.file.includes('cinewatch-maaa.onrender.com')) {
-                t.file = t.file.replace('https://cinewatch-maaa.onrender.com', 'http://localhost:3000');
+                t.file = t.file.replace('https://cinewatch-maaa.onrender.com', window.location.origin);
               }
             });
           }
           const baseTrack = srcData.tracks.find(t => (t.label||'').toLowerCase().includes('eng')) || srcData.tracks[0];
           if (baseTrack && baseTrack.file) {
             let kuUrl = baseTrack.file;
-            kuUrl += kuUrl.includes('?') ? '&lang=ckb' : '?lang=ckb';
-            if (!srcData.tracks.some(t => t.srclang === 'ku' || (t.label||'').includes('Kurdish'))) {
+            if (!kuUrl.includes('lang=ckb')) {
+              kuUrl += kuUrl.includes('?') ? '&lang=ckb' : '?lang=ckb';
+            }
+            if (!srcData.tracks.some(t => t.srclang === 'ku' || (t.label||'').toLowerCase().includes('kurdish'))) {
               srcData.tracks.push({
                 label: 'Kurdish (Sorani)',
                 file: kuUrl,
@@ -7095,6 +7103,16 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           if (enTrack && enTrack.file) {
             subtitleUrl = enTrack.file;
           }
+        } else if (cleanName) {
+          const subBase = (window.location.origin && window.location.origin.includes(':3000')) ? window.location.origin : 'https://cinewatch-maaa.onrender.com';
+          const kuSub = `${subBase}/api/movie-sub?title=${encodeURIComponent(cleanName)}&type=series&season=1&ep=${rawEp}&lang=ckb`;
+          const enSub = `${subBase}/api/movie-sub?title=${encodeURIComponent(cleanName)}&type=series&season=1&ep=${rawEp}&lang=en`;
+          srcData.tracks = [
+            { label: 'English', file: enSub, srclang: 'en', default: true },
+            { label: 'Kurdish (Sorani)', file: kuSub, srclang: 'ku', default: false }
+          ];
+          window._cwSubtitleTracks = srcData.tracks;
+          subtitleUrl = enSub;
         } else {
           window._cwSubtitleTracks = [];
         }
@@ -7233,17 +7251,20 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
           ];
           const tracks = window._cwSubtitleTracks || [];
           tracks.forEach((t, i) => {
+            const isDef = Boolean(t.file && subtitleUrl && (t.file === subtitleUrl || i === 0));
             items.push({
               html: t.label || `Track ${i + 1}`,
               url: t.file || '',
-              default: i === 0 && !!subtitleUrl
+              default: isDef
             });
           });
-          if (tracks.length > 0 && isAnime && !items.some(it => it.html.includes('Kurdish'))) {
+          if (tracks.length > 0 && isAnime && !items.some(it => (it.html || '').toLowerCase().includes('kurdish'))) {
             const baseTrack = tracks.find(t => (t.label||'').toLowerCase().includes('eng')) || tracks[0];
             if (baseTrack && baseTrack.file) {
               let kuUrl = baseTrack.file;
-              kuUrl += kuUrl.includes('?') ? '&lang=ckb' : '?lang=ckb';
+              if (!kuUrl.includes('lang=ckb')) {
+                kuUrl += kuUrl.includes('?') ? '&lang=ckb' : '?lang=ckb';
+              }
               items.push({
                 html: 'Kurdish (Sorani)',
                 url: kuUrl,
@@ -7255,38 +7276,19 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         })(),
         onSelect(item) {
           if (!window.artPlayerInstance || !window.artPlayerInstance.subtitle) return item.html;
-          const video = window.artPlayerInstance.video;
           if (!item.url) {
             window.artPlayerInstance.subtitle.show = false;
-            if (video && video.textTracks) {
-              for (let i = 0; i < video.textTracks.length; i++) {
-                video.textTracks[i].mode = 'disabled';
-              }
-            }
           } else {
             const isSrt = item.url.includes('.srt');
             window.artPlayerInstance.subtitle.switch(item.url, {
               name: item.html,
               type: isSrt ? 'srt' : 'vtt'
-            });
-            window.artPlayerInstance.subtitle.show = true;
-
-            // Synchronize native video text tracks (crucial for iOS, mobile & desktop browsers)
-            if (video && video.textTracks) {
-              const isKurdish = item.html.toLowerCase().includes('kurdish');
-              for (let i = 0; i < video.textTracks.length; i++) {
-                const track = video.textTracks[i];
-                const label = (track.label || '').toLowerCase();
-                const lang = (track.language || '').toLowerCase();
-                if (isKurdish && (label.includes('kurdish') || lang === 'ku' || lang === 'ckb')) {
-                  track.mode = 'showing';
-                } else if (!isKurdish && (label.includes(item.html.toLowerCase()) || label === item.html.toLowerCase())) {
-                  track.mode = 'showing';
-                } else {
-                  track.mode = 'disabled';
-                }
+            }).then(() => {
+              if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
+                window.artPlayerInstance.subtitle.show = true;
               }
-            }
+            }).catch(e => console.warn('ArtPlayer subtitle switch notice:', e));
+            window.artPlayerInstance.subtitle.show = true;
           }
           return item.html;
         },
@@ -7377,7 +7379,7 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
                     }
 
                     if (baseTrack && baseTrack.file) {
-                      window.artPlayerInstance.subtitle.switch(baseTrack.file, { name: baseTrack.label });
+                      window.artPlayerInstance.subtitle.switch(baseTrack.file, { name: baseTrack.label, type: 'vtt' });
                       window.artPlayerInstance.subtitle.show = true;
                     }
                   } else if (window.artPlayerInstance.subtitle && isDub) {
@@ -7702,36 +7704,19 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
         }
       } catch (e) {}
       
-      // Inject native tracks for iOS and mobile native players
-      try {
-        const video = window.artPlayerInstance.video;
-        if (video) {
-          const oldTracks = video.querySelectorAll('track');
-          oldTracks.forEach(ot => ot.remove());
-
-          const tracks = window._cwSubtitleTracks || [];
-          tracks.forEach((t, i) => {
-            if (t.file) {
-              const trackEl = document.createElement('track');
-              trackEl.kind = 'subtitles';
-              trackEl.label = t.label || `Track ${i+1}`;
-              trackEl.srclang = t.srclang || (t.label && t.label.toLowerCase().includes('kurdish') ? 'ku' : 'en');
-              trackEl.src = t.file;
-              video.appendChild(trackEl);
-            }
-          });
-          if (video.textTracks) {
-            for (let i = 0; i < video.textTracks.length; i++) {
-              video.textTracks[i].mode = 'disabled';
-            }
-          }
-        }
-      } catch (e) {
-        console.error("Failed to inject native tracks:", e);
-      }
-      
       if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
         window.artPlayerInstance.subtitle.show = true;
+        if (subtitleUrl && subtitleUrl.trim().length > 0) {
+          const isSrt = subtitleUrl.includes('.srt');
+          window.artPlayerInstance.subtitle.switch(subtitleUrl, {
+            name: 'Subtitles',
+            type: isSrt ? 'srt' : 'vtt'
+          }).then(() => {
+            if (window.artPlayerInstance && window.artPlayerInstance.subtitle) {
+              window.artPlayerInstance.subtitle.show = true;
+            }
+          }).catch(() => {});
+        }
       }
       try {
         const p = window.artPlayerInstance.play();
@@ -9308,6 +9293,7 @@ async function fetchAndParseSubtitles() {
     if (currentSubTrackIndex > 0) qs += '&track=' + currentSubTrackIndex;
     
     const candidates = [
+        'https://cinewatch-maaa.onrender.com/api/movie-sub?' + qs,
         'http://127.0.0.1:3000/api/movie-sub?' + qs,
         'http://localhost:3000/api/movie-sub?' + qs,
         '/api/movie-sub?' + qs
