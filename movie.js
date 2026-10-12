@@ -287,11 +287,6 @@ async function loadMediaFromAPI() {
         m.has4k = true;
         m.fourkVideoUrl = match.videoUrl;
         if (!m.hdVideoUrl) m.hdVideoUrl = m.videoUrl;
-        if (typeof match.videoUrl === 'string' && (match.videoUrl.startsWith('http') || match.videoUrl.endsWith('.mp4'))) {
-          if (!m.videoUrl || !m.videoUrl.startsWith('http')) {
-            m.videoUrl = match.videoUrl;
-          }
-        }
       }
     });
 
