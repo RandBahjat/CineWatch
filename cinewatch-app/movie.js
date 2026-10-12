@@ -7675,6 +7675,12 @@ async function initArtPlayerForAnime(videoUrl, movie, parentMovie, epData) {
     window.artPlayerInstance.on('error', (err) => {
       try {
         console.warn("ArtPlayer stream notice/error:", err);
+        if (iframe && tmdbId && !cleanUrl.includes('pub-') && !cleanUrl.includes('r2.dev')) {
+          console.info("Falling back to external server iframe due to player error");
+          iframe.src = driveIframeUrl || (isAnime ? `https://vidsrc.to/embed/anime/${tmdbId}/${rawEp}` : `https://vidsrc.to/embed/movie/${tmdbId}`);
+          iframe.classList.remove("hidden");
+          if (artContainer) artContainer.classList.add("hidden");
+        }
       } catch (e) {}
     });
 
